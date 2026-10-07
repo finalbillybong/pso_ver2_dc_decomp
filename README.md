@@ -46,6 +46,7 @@ function range must match completely, including literals and padding.
 Checks that need no game dump or compiler:
 
 ```sh
+python3 -m pip install -r requirements-dev.txt
 python3 -B -m unittest discover -s tests -v
 python3 -B tools/progress.py --check
 python3 -B tools/check_publication.py

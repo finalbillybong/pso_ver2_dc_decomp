@@ -7,6 +7,16 @@ GCC/G++, zlib development headers, and standard GNU binutils build prerequisites
 (including bison, flex and texinfo). Decoder compilation requires a C++23-capable
 G++. Other host platforms have not been verified.
 
+For host tests, use a virtual environment and install the pinned dependency:
+
+```sh
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -r requirements-dev.txt
+```
+
+Pillow is used only for synthetic screenshot tests; CI does not run an emulator.
+
 ## Private inputs
 
 ```sh

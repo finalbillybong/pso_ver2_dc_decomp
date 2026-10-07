@@ -11,7 +11,7 @@ CONFIG = {'analysis.json', 'compiler-packages.json', 'decoded.json',
           'project.json', 'reconstruction-targets.json', 'reference.json',
           'samples.json', 'toolchain.example.json'}
 TOP = {'.gitignore', '.gitattributes', 'README.md', 'CONTRIBUTING.md', 'NOTICE.md',
-       'configure.py', 'pso.py', 'progress.json'}
+       'configure.py', 'pso.py', 'progress.json', 'requirements-dev.txt'}
 # Match credential assignments rather than discussions of credentials. Values and
 # matching lines are deliberately never included in diagnostics.
 SENSITIVE = re.compile(
