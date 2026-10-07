@@ -4002,6 +4002,194 @@
       "boundary_review": "Raw little-endian SH4; complete range through adjacent entry including literal pools and alignment. Two independent final matches; reconstruction-stage49.",
       "status": "matched",
       "reason": "Complete checked motion-profile entry; divisor reuse and square scheduling resolved. SDK root callee and original primary candidates remain reference backed."
+    },
+    {
+      "id": "construct_integer_field",
+      "source": "src/ui/construct_integer_field.c",
+      "address": "0x8c042dd4",
+      "entry": "_construct_integer_field",
+      "ranges": [
+        {
+          "offset": 208340,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_integer_field",
+          "address": "0x8c042dd4",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "9dec42d9a21ba7c0c8b1556edcde569b7abc754f7448dd47f85342db24c026c3",
+      "headers": [
+        "src/include/integer_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry through next entry; complete range, including literals and alignment, independently exact twice. reconstruction-stage50.",
+      "status": "matched",
+      "reason": "Complete integer-field editor helper; checked partial layout and observed call ABI. Base class, dispatch table, format string and original primary candidates remain reference backed."
+    },
+    {
+      "id": "destroy_integer_field",
+      "source": "src/ui/destroy_integer_field.c",
+      "address": "0x8c042dfc",
+      "entry": "_destroy_integer_field",
+      "ranges": [
+        {
+          "offset": 208380,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_integer_field",
+          "address": "0x8c042dfc",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "0c73715badb4a49c4bfc6d585f18eb605c8ec3d8962bf5fb8133a39e2fa18355",
+      "headers": [
+        "src/include/integer_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry through next entry; complete range, including literals and alignment, independently exact twice. reconstruction-stage50.",
+      "status": "matched",
+      "reason": "Complete integer-field editor helper; checked partial layout and observed call ABI. Base class, dispatch table, format string and original primary candidates remain reference backed."
+    },
+    {
+      "id": "configure_integer_field",
+      "source": "src/ui/configure_integer_field.c",
+      "address": "0x8c042e38",
+      "entry": "_configure_integer_field",
+      "ranges": [
+        {
+          "offset": 208440,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_integer_field",
+          "address": "0x8c042e38",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "f17258b718c7cac94c021f0fdcffc522b2a832b9de05422a69113d2a4d97e3b0",
+      "symbols": {
+        "_format_at": "0x8c12b048"
+      },
+      "headers": [
+        "src/include/integer_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry through next entry; complete range, including literals and alignment, independently exact twice. reconstruction-stage50.",
+      "status": "matched",
+      "reason": "Complete integer-field editor helper; checked partial layout and observed call ABI. Base class, dispatch table, format string and original primary candidates remain reference backed."
+    },
+    {
+      "id": "clear_integer_field",
+      "source": "src/ui/clear_integer_field.c",
+      "address": "0x8c042e74",
+      "entry": "_clear_integer_field",
+      "ranges": [
+        {
+          "offset": 208500,
+          "size": 8
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_integer_field",
+          "address": "0x8c042e74",
+          "size": 8
+        }
+      ],
+      "reference_sha256": "7b8af18edc5f7414955e67d332da66944fc38f511f16353e86f486443c34726b",
+      "headers": [
+        "src/include/integer_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry through next entry; complete range, including literals and alignment, independently exact twice. reconstruction-stage50.",
+      "status": "matched",
+      "reason": "Complete integer-field editor helper; checked partial layout and observed call ABI. Base class, dispatch table, format string and original primary candidates remain reference backed."
+    },
+    {
+      "id": "move_integer_field_cursor",
+      "source": "src/ui/move_integer_field_cursor.c",
+      "address": "0x8c042e7c",
+      "entry": "_move_integer_field_cursor",
+      "ranges": [
+        {
+          "offset": 208508,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "move_integer_field_cursor",
+          "address": "0x8c042e7c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "ea1eb69b8d080f3ae171f1c77e2768879019f0397fcb9c23fb8f7411d8786872",
+      "headers": [
+        "src/include/integer_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry through next entry; complete range, including literals and alignment, independently exact twice. reconstruction-stage50.",
+      "status": "matched",
+      "reason": "Complete integer-field editor helper; checked partial layout and observed call ABI. Base class, dispatch table, format string and original primary candidates remain reference backed."
+    },
+    {
+      "id": "adjust_integer_field",
+      "source": "src/ui/adjust_integer_field.c",
+      "address": "0x8c042e9c",
+      "entry": "_adjust_integer_field",
+      "ranges": [
+        {
+          "offset": 208540,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "adjust_integer_field",
+          "address": "0x8c042e9c",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "734683ef33e0a5d50e78e4fa5477c077d4e6de77f296610ab5bee9b17c89642a",
+      "headers": [
+        "src/include/integer_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry through next entry; complete range, including literals and alignment, independently exact twice. reconstruction-stage50.",
+      "status": "matched",
+      "reason": "Complete integer-field editor helper; checked partial layout and observed call ABI. Base class, dispatch table, format string and original primary candidates remain reference backed."
+    },
+    {
+      "id": "draw_integer_field",
+      "source": "src/ui/draw_integer_field.c",
+      "address": "0x8c042ed4",
+      "entry": "_draw_integer_field",
+      "ranges": [
+        {
+          "offset": 208596,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_integer_field",
+          "address": "0x8c042ed4",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "6bf2add13a0e73dbbdb2d58324286b9038f3c9f29e8d71b4708c8f750c2a9607",
+      "symbols": {
+        "_draw_at": "0x8c38cf80"
+      },
+      "headers": [
+        "src/include/integer_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry through next entry; complete range, including literals and alignment, independently exact twice. reconstruction-stage50.",
+      "status": "matched",
+      "reason": "Complete integer-field editor helper; checked partial layout and observed call ABI. Base class, dispatch table, format string and original primary candidates remain reference backed."
     }
   ]
 }

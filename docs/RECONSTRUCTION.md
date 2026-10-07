@@ -2530,3 +2530,62 @@ the original database remains unchanged. Compiler, flags and default GNU linking
 are unchanged. Primary emission remains **388/8**, related reuse **448/4**, and
 manager initialization **280/8**. Both original primary targets remain incomplete;
 these supporting matches do not replace their acceptance criteria.
+
+
+## Integer-field editor helpers, stage 50
+
+Seven complete ordinary-C entries add **316 bytes**: construction
+**0x8c042dd4..0x8c042dfc** (40), conditional destruction
+**0x8c042dfc..0x8c042e38** (60), configuration **0x8c042e38..0x8c042e74** (60),
+clear **0x8c042e74..0x8c042e7c** (8), cursor movement
+**0x8c042e7c..0x8c042e9c** (32), value adjustment
+**0x8c042e9c..0x8c042ed4** (56), and drawing **0x8c042ed4..0x8c042f10** (60).
+Totals are **184 functions / 170 modules / 21,500 compiled range bytes /
+4,141,412 retained reference bytes**, or **0.5165% whole-image coverage**.
+All 177 previous matches, module definitions and source/header hashes are
+preserved. Since the initial 34-function checkpoint, 150 functions replace
+17,856 bytes. Separately reconstructed static data remains zero; code-only
+completion remains unknown.
+
+The new checked IntegerField header models only the first 20 bytes, with checked
+state/cursor/dispatch/value/digit offsets. The trailing format buffer begins at
+20, but neither its capacity nor the full allocation extent is claimed. The
+constructor and destructor preserve the base calls, dispatch pointer and
+signed-short deletion control. Configuration clamps digit count to 0..8; cursor
+movement preserves the resulting negative cursor case when digits are zero.
+Clearing, signed decimal-place adjustment and packed-coordinate drawing retain
+the observed accesses and arithmetic. Base implementation, dispatch table, format
+string and power/format/draw callees remain reference backed.
+
+Four first candidates match. Configuration and drawing need the verified
+**two named arguments plus varargs** declarations already used by the matching
+manager editors; a one-named-argument declaration incorrectly pushes an extra
+argument. Value adjustment improves from six differences to three by keeping the
+power result in a local, then matches by retaining that product as the left operand
+of the final sum. All seven readable sources with declared header dependencies
+independently match twice, including literals, delay slots and alignment.
+
+Primary angle experiments keep the better **512/30** candidate: division output
+reuse changes the literal order, and introducing the divisor later restores the
+same 30 differences. Effect update stays **536/25**. Similar random-component
+experiments leave the constructor at **732/89** or enlarge it. Frame aggregate and
+union locals introduce stack traffic; the prior **332/8** candidate remains best.
+No failed diagnostic is admitted or used to modify output bytes.
+
+The signed SDK root helpers at 0x8c37f6c0 and 0x8c37f6d8 were reviewed through their
+24-byte ranges, including trailing return instructions. Ordinary sqrt/fabs
+spellings remain external calls under the pinned configuration, despite math
+intrinsic descriptions in the available compiler manual. Six such experiments
+fail strict linking on unresolved math calls. No pragma, compiler option, assembly
+substitution, shortened range or SDK object is used to bypass that result. The
+raw instructions and manual locations remain in scratch for later investigation.
+
+All **62 trials**, including **six link rejections**, retain source snapshots,
+hypotheses and comparisons in `reconstruction-stage50`. Two fresh exact builds,
+integrated-image comparison, five-function proof and all **53 original-workspace
+tests** pass; the public suite remains **58 tests**. Source-only rejects
+4,141,412 retained bytes without altering artifacts. Focused exports are refreshed
+on a disposable database copy; the original database remains unchanged. Compiler,
+flags and acceptance rules are unchanged. Primary emission remains **388/8**,
+related reuse **448/4**, and manager initialization **280/8**. The original primary
+batch remains incomplete; supporting functions do not substitute for its targets.
