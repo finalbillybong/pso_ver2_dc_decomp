@@ -28,3 +28,9 @@ Never attach game dumps, SDK/compiler binaries, credentials, emulator configurat
 VMU saves, screenshots of registration screens, or raw private logs to commits,
 issues, PRs or Actions artifacts. The publication check is an additional safeguard;
 review staged content and metadata before pushing.
+
+
+C++ is accepted under the same full-range matching rule. Use a `.cpp` source and
+an explicit `"language": "c++"` manifest entry. Keep declared header dependencies
+and checked provisional layouts; do not add assembly, copied objects or padding
+to force a match. The base compiler flags and optimization settings remain pinned.

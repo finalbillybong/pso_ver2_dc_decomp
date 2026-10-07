@@ -12,9 +12,9 @@ Other releases are not currently supported.
 
 ## Progress
 
-**86 exact matching functions in 75 modules**, replacing **10,404 bytes** of the
-4,162,912-byte decoded executable (**0.2499% image coverage**). Function ranges
-include their literals and padding. **4,152,508 bytes still come from the original
+**90 exact matching functions in 78 modules**, replacing **10,772 bytes** of the
+4,162,912-byte decoded executable (**0.2588% image coverage**). Function ranges
+include their literals and padding. **4,152,140 bytes still come from the original
 reference**; separately reconstructed static data is zero.
 
 This is an early hybrid reconstruction. It cannot yet build from source alone.
@@ -41,7 +41,8 @@ python3 -B tools/candidates.py
 
 The admitted compiler is CodeWarrior for Dreamcast 2.4, Engineering Build
 March 21, 2000, with SH-4 hardware floating point and `-O2`. Every admitted
-function range must match completely, including literals and padding.
+function range must match completely, including literals and padding. C++ modules
+explicitly declare `"language": "c++"` and add only `-lang c++` to these settings.
 
 Checks that need no game dump or compiler:
 
@@ -59,7 +60,7 @@ verified locally; CI does not claim to rebuild the game.
 
 | Path | Purpose |
 | --- | --- |
-| `src/objects`, `src/effects`, `src/math`, `src/runtime` | Admitted matching C modules |
+| `src/objects`, `src/effects`, `src/math`, `src/runtime` | Admitted matching C/C++ modules |
 | `src/include` | Provisional types with checked offsets |
 | `src/samples` | Five-function compiler proof |
 | `src/provisional` | Unmatched candidates, excluded from progress |

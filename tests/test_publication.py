@@ -28,6 +28,9 @@ class PublicationTests(unittest.TestCase):
             self.assertNotIn(value, str(errors))
         self.assertTrue(issues('src/example.c', b'elsewhere', '120000'))
         self.assertFalse(issues('src/example.c', b'int example(void) { return 1; }'))
+        self.assertFalse(issues('src/example.cpp', b'extern "C" int example() { return 1; }'))
+        self.assertTrue(issues('src/example.cpp', b'\x00binary'))
+        self.assertTrue(issues('src/example.cpp', ('access_' + 'key = ' + value).encode()))
 
     def test_changed_source_cannot_keep_old_progress(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -57,6 +60,20 @@ class PublicationTests(unittest.TestCase):
             proof['checks'] = ['integrated_image_exact']
             (root / 'config/progress-proof.json').write_text(json.dumps(proof))
             with self.assertRaisesRegex(ValueError, 'Incomplete exact-build verification'):
+                progress.summary(root)
+
+    def test_changed_module_language_settings_rejected(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            for name in progress.read(ROOT, 'config/progress-proof.json')['inputs_sha256']:
+                dest = root / name
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(ROOT / name, dest)
+            proof = progress.read(ROOT, 'config/progress-proof.json')
+            first = next(iter(proof['unit_flags']))
+            proof['unit_flags'][first] = progress.FLAGS + ['-O0']
+            (root / 'config/progress-proof.json').write_text(json.dumps(proof))
+            with self.assertRaisesRegex(ValueError, 'module language settings changed'):
                 progress.summary(root)
 
 

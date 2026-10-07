@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compile reviewed C samples and link at their original PSO addresses."""
+"""Compile reviewed C/C++ modules and link at their original PSO addresses."""
 import argparse
 import hashlib
 import json
@@ -14,6 +14,14 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 FLAGS = ['-proc', 'SH4', '-endian', 'little', '-mw_fp', 'hardware',
          '-Cpp_exceptions', 'off', '-O2']
+
+
+def unit_flags(sample):
+    """Keep the pinned settings; C++ requires an explicit manifest selector."""
+    language = sample.get('language', 'c')
+    if language not in ('c', 'c++'):
+        raise ValueError('Unsupported matching source language')
+    return FLAGS + (['-lang', 'c++'] if language == 'c++' else [])
 
 
 def sha(path):
@@ -101,10 +109,14 @@ def text_section(data, base):
 
 
 def compile_unit(source, output, sample, flags=None):
-    flags = list(FLAGS if flags is None else flags)
+    configured_flags = unit_flags(sample)
+    # Explicit overrides are for scratch diagnostics. Project builds always use
+    # the fixed settings and the manifest language, with no per-unit flag override.
+    flags = list(configured_flags if flags is None else flags)
     source, output = Path(source).resolve(), Path(output).resolve()
-    if source.suffix != '.c' or output.suffix != '.bin':
-        raise ValueError('Matching adapter expects a self-contained .c source and .bin output')
+    extension = '.cpp' if sample.get('language', 'c') == 'c++' else '.c'
+    if source.suffix != extension or output.suffix != '.bin':
+        raise ValueError('Source extension must agree with the manifest language; output must be .bin')
     output.parent.mkdir(parents=True, exist_ok=True)
     output.unlink(missing_ok=True)
     receipt_path = output.with_suffix('.compiler.json')
@@ -117,7 +129,8 @@ def compile_unit(source, output, sample, flags=None):
     work_root.mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='cw-', dir=work_root) as temp:
         work = Path(temp)
-        shutil.copyfile(source, work / 'unit.c')
+        unit_source = 'unit' + extension
+        shutil.copyfile(source, work / unit_source)
         for name in headers:
             destination = work / name
             destination.parent.mkdir(parents=True, exist_ok=True)
@@ -138,7 +151,7 @@ def compile_unit(source, output, sample, flags=None):
         # This Dreamcast driver compiles without a -c switch. Its -nolink switch
         # unexpectedly invokes the linker; do not use it.
         run([tools['runner'], tools['compiler'], *flags,
-             *(['-I.'] if headers else []), '-o', 'unit.o', 'unit.c'])
+             *(['-I.'] if headers else []), '-o', 'unit.o', unit_source])
         base = int(sample['address'], 0)
         if not 0 <= base <= 0xffffffff or base % 4:
             raise ValueError('Invalid sample address')

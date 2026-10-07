@@ -1347,3 +1347,53 @@ database is unchanged. Two fresh exact builds, full-image comparison, the
 five-function proof and all 43 original tests pass. Source-only rejects 4,152,508
 retained bytes without changing artifacts. Continue source-level call/angle
 scheduling work and the observed hierarchy, effect and vector dependencies.
+
+
+## Authorized C++ hierarchy reconstruction, stage 30
+
+Following explicit authorization to admit fully matching C++ functions, four
+functions in three modules add **368 bytes**: child release at `0x8c0331c0` (36),
+hierarchy update at `0x8c0331e4` (192), visitor at `0x8c0332a4` (52), and the
+three-level visitor at `0x8c0332d8` (88). Totals are **90 functions / 78 modules /
+10,772 compiled range bytes / 4,152,140 retained reference bytes**. All 86 prior
+C functions, sources and headers are unchanged. Since the original 34-function
+checkpoint, 56 supporting functions replace 7,128 bytes.
+
+The build adapter now accepts `.cpp` only when its manifest explicitly declares
+`"language": "c++"`. Existing `.c` modules retain their original invocation.
+C++ adds only `-lang c++` to the same pinned compiler and base settings, including
+`-O2` and disabled C++ exceptions. Complete linked-section comparison remains
+mandatory. Build provenance now binds the adapter hash and each module's effective
+flags; portable progress also verifies those per-module settings. The public
+allowlist admits text `.cpp` sources with the same credential/binary checks.
+Machine-local adapter pins were refreshed after review; compiler/tool binaries
+and base flags are unchanged. No assembly, copied objects or fabricated padding
+is used.
+
+The checked provisional C++ hierarchy view produces the observed dispatch
+pointer at offset 24. The 192-byte update first differed only in saved-register
+assignment; declaring the current node before the two clear masks fixes it.
+The adjoining release helper emits 34 instruction bytes. Compiling it with the
+update in original order naturally supplies the two alignment bytes and matches
+the entire 228-byte module. Both visitors reproduce their prior diagnostic
+matches through the normal build path. All final sources match independently
+twice, including every return delay, literal and padding byte.
+
+The active `operation_45f04` candidate is now checked C++ and improves from
+512/46 to **512/30**, first difference `0x8c045fdd`. Its radius and virtual
+dispatch regions match; both angle-conversion regions remain unresolved. The
+older C source is preserved as evidence. The operation is still excluded from
+the matching manifest. Emission remains 388/8 and related emission/reuse 448/4;
+both original primary targets remain incomplete. Earlier C-only diagnostic
+restrictions in this document describe historical checkpoints and are superseded
+by this explicit language authorization.
+
+Four new host tests cover C/C++ compiler invocation, invalid or implicit language
+selection, changed-language evidence and changed-adapter evidence. All 43 existing
+tests plus those four pass. Two fresh exact project builds, full-image comparison
+and the five-function compiler proof pass. Source-only rejects 4,152,140 retained
+bytes without changing artifacts. Fourteen source trials, hypotheses and receipts
+are retained in `reconstruction-stage30`; focused evidence is
+`function-dossiers/run-p5pyeoar/receipt.json`, with the original database unchanged.
+Continue the active C++ angle-conversion work, emission scheduling and observed
+effect/vector dependencies.

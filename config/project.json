@@ -279,6 +279,89 @@
       "boundary_review": "Raw little-endian SH4: Return delay0x8c0331b2 and three literal words0x8c0331b4-0x8c0331c0; next entry0x8c0331c0. Complete fixed-C match independently twice; see reconstruction-stage25."
     },
     {
+      "id": "hierarchy_child_update",
+      "source": "src/objects/hierarchy_child_update.cpp",
+      "language": "c++",
+      "address": "0x8c0331c0",
+      "entry": "_release_hierarchy_children",
+      "headers": [
+        "src/include/hierarchy_virtual.h"
+      ],
+      "ranges": [
+        {
+          "offset": 143808,
+          "size": 228
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_hierarchy_children",
+          "address": "0x8c0331c0",
+          "size": 36
+        },
+        {
+          "name": "update_hierarchy",
+          "address": "0x8c0331e4",
+          "size": 192
+        }
+      ],
+      "reference_sha256": "c3a97bdb8477e25f88a1c5facc14eb3eca5929ceb2dd9710176f10fe02ba9bc8",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: release entry0x8c0331c0, return delay0x8c0331e0, compiler alignment0x8c0331e2; update entry0x8c0331e4, return delay0x8c03329a, two literal words0x8c03329c..0x8c0332a4. Complete fixed-compiler C++ match independently twice; see reconstruction-stage30."
+    },
+    {
+      "id": "visit_hierarchy_10",
+      "source": "src/objects/visit_hierarchy_10.cpp",
+      "address": "0x8c0332a4",
+      "entry": "_visit_hierarchy_10",
+      "headers": [
+        "src/include/hierarchy_virtual.h"
+      ],
+      "ranges": [
+        {
+          "offset": 144036,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "visit_hierarchy_10",
+          "address": "0x8c0332a4",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "b6b3e61fe973fb4437f91bd0da480e29d341876463051fe85cf07271858dc4b3",
+      "symbols": {},
+      "language": "c++",
+      "boundary_review": "Raw little-endian SH4: entry0x8c0332a4, return delay0x8c0332d0, padding0x8c0332d2, recursion literal0x8c0332d4; next entry0x8c0332d8. Complete fixed-compiler C++ match independently twice; see reconstruction-stage30."
+    },
+    {
+      "id": "visit_hierarchy_14",
+      "source": "src/objects/visit_hierarchy_14.cpp",
+      "address": "0x8c0332d8",
+      "entry": "_visit_hierarchy_14",
+      "headers": [
+        "src/include/hierarchy_virtual.h"
+      ],
+      "ranges": [
+        {
+          "offset": 144088,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "visit_hierarchy_14",
+          "address": "0x8c0332d8",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "f2d0302c766d4f1e3cb079b15528e9ebef4470be23699a37459e7222738a1177",
+      "symbols": {},
+      "language": "c++",
+      "boundary_review": "Raw little-endian SH4: entry0x8c0332d8, return delay0x8c03332a, recursion literal0x8c03332c; next entry0x8c033330. Complete fixed-compiler C++ match independently twice; see reconstruction-stage30."
+    },
+    {
       "id": "describe_hierarchy_node",
       "source": "src/objects/describe_hierarchy_node.c",
       "address": "0x8c033330",

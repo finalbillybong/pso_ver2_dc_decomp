@@ -1,22 +1,23 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **86 exact functions in 75 modules**, replacing
-10,404 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **90 exact functions in 78 modules**, replacing
+10,772 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
 
 | Target | Complete range | Current result | Next focus |
 | --- | --- | --- | --- |
-| `operation_45f04` at `0x8c045f04` | 512 bytes | 46 differing bytes; first `0x8c045fdd` | Angle conversions and indirect dispatch |
+| `operation_45f04` at `0x8c045f04` | 512 bytes | 30 differing bytes; first `0x8c045fdd` | Two angle-conversion regions; virtual dispatch matches |
 | `emit_5fbf8` at `0x8c05fbf8` | 388 bytes | 8 differing bytes; first `0x8c05fc56` | Two instruction-order pairs in the loop and final call |
 | `emit_or_update_slot` at `0x8c05fd7c` | 448 bytes | 4 differing bytes; first `0x8c05feba` | Shared final-call delay-slot order |
 | `signed_remainder` at `0x8c18e8a0` | 180 bytes | No complete match | Carry state, preserved registers and zero-divisor behavior |
 
-The queue is in `config/reconstruction-targets.json`. Scratch C++ virtual dispatch
-reduces the operation diagnostic to 30 differing bytes, but is not admitted. Keep
-the fixed C compiler contract unchanged. Preserve repeated radius squaring and
-the observed skipped vector initialization; do not introduce speculative fixes.
+The queue is in `config/reconstruction-targets.json`. Fully matching C++ is now
+authorized. The operation's active C++ candidate improves to 30 differing bytes
+but remains unadmitted. Preserve the pinned compiler and optimization settings;
+C++ modules explicitly declare their language and add only `-lang c++`. Preserve
+repeated radius squaring and the observed skipped vector initialization.
 
 An earlier five-function dependency batch included `angle_difference` (28 bytes),
 `operation_43fb4` (100), `angle_halfway` (24), `angle_step` (56), and
@@ -198,7 +199,7 @@ all 43 original tests pass; source-only rejects gaps. Both original primary
 targets remain incomplete. See RECONSTRUCTION.md for 49 trials and next work.
 
 
-## Latest verified checkpoint: stage 29
+## Stage 29 checkpoint
 
 Six timed hierarchy/group operations add 860 exact C bytes. Totals are 86
 functions, 75 modules, 10,404 compiled bytes and 4,152,508 retained bytes.
@@ -206,3 +207,14 @@ All prior matching sources and headers are preserved. Two fresh exact builds,
 full-image comparison, five-function proof and all 43 original tests pass;
 source-only rejects gaps. Both original primary targets remain incomplete.
 See RECONSTRUCTION.md for the 47 trials and continuing source hypotheses.
+
+
+## Latest verified checkpoint: stage 30
+
+Four C++ hierarchy functions in three modules add 368 complete bytes. Totals are
+90 functions, 78 modules, 10,772 compiled bytes and 4,152,140 retained bytes.
+All 86 prior C functions and headers are unchanged. Two fresh exact builds,
+full-image comparison, five-function proof and all 47 original-workspace tests
+pass. Source-only rejects gaps. Both original primary targets remain incomplete;
+the active operation is now 512/30. See RECONSTRUCTION.md for language admission,
+compiler-generated alignment and continuing hypotheses.

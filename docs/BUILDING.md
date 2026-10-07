@@ -111,3 +111,14 @@ that are intentionally not shipped. Generate fresh evidence for your machine.
 Runtime and disc-packaging utilities are retained for research, but their private
 configuration, scenarios, screenshots and saves are excluded. They are not part
 of the build instructions, CI or current reconstruction acceptance criteria.
+
+
+## C and C++ matching modules
+
+C remains the default for `.c` sources. A `.cpp` module must explicitly declare
+`"language": "c++"` in the matching manifest; the adapter adds only `-lang c++`
+to the pinned base flags. No per-module optimization override is admitted. Every
+module must match its complete linked range, including literals and alignment.
+After a reviewed adapter update, refresh local pins with
+`python3 -B configure.py --refresh`, then run `tools/verify_source.py` before
+recording progress. Compiler and installed-tool hashes are still verified.

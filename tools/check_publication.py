@@ -28,7 +28,7 @@ def allowed(name):
     if len(p.parts) == 2 and p.parts[0] == 'docs':
         return p.suffix == '.md' or p.name == 'progress.svg'
     if p.parts[0] == 'src':
-        return p.suffix in {'.c', '.h'}
+        return p.suffix in {'.c', '.cpp', '.h'}
     if len(p.parts) == 2 and p.parts[0] == 'tools':
         return p.suffix in {'.py', '.java', '.cc'}
     if len(p.parts) == 2 and p.parts[0] == 'tests':

@@ -61,6 +61,8 @@ class HeaderTests(unittest.TestCase):
 
     def test_project_report_rejects_changed_header(self):
         (self.root / 'config').mkdir()
+        (self.root / 'tools').mkdir()
+        (self.root / 'tools/matching.py').write_text('fixture')
         for name in ('project.json', 'toolchain.json'):
             (self.root / 'config' / name).write_text('{}')
         self.unit.update(id='test', source='test.c')

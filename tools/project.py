@@ -65,6 +65,8 @@ def inputs():
 def provenance(manifest):
     return {'project_sha256': pso.file_hash(ROOT / 'config/project.json'),
             'driver_sha256': pso.file_hash(Path(__file__)),
+            'matching_driver_sha256': pso.file_hash(ROOT / 'tools/matching.py'),
+            'compiler_flags': {u['id']: matching.unit_flags(u) for u in manifest['units']},
             'toolchain_sha256': pso.file_hash(ROOT / 'config/toolchain.json'),
             'headers_sha256': {u['id']: matching.dependencies(ROOT / u['source'], u)
                                for u in manifest['units']},
@@ -110,7 +112,7 @@ def build(source_only=False):
     for unit in manifest['units']:
         source = ROOT / unit['source']
         if any(t in source.read_text() for t in ('__asm', 'asm(', 'asm (', '.incbin')):
-            raise ValueError('Assembly cannot count as reconstructed C')
+            raise ValueError('Assembly cannot count as reconstructed C/C++')
         target = out / (unit['id'] + '.bin')
         matching.compile_unit(source, target, unit)
         r = unit['ranges'][0]

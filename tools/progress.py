@@ -8,7 +8,7 @@ import subprocess
 import sys
 
 import project
-from matching import FLAGS, dependencies, sha
+from matching import FLAGS, dependencies, sha, unit_flags
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -35,6 +35,8 @@ def summary(root=ROOT):
         raise ValueError('Progress checkpoint is stale; reproduce exact verification and use --record')
     if proof['flags'] != FLAGS or proof['integrated_image_sha256'] != decoded['sha256']:
         raise ValueError('Verification compiler settings or reference changed')
+    if proof.get('unit_flags') != {u['id']: unit_flags(u) for u in manifest['units']}:
+        raise ValueError('Verification module language settings changed')
     required = {'two_fresh_exact_builds', 'integrated_image_exact', 'five_function_compiler_proof'}
     if not required <= set(proof['checks']):
         raise ValueError('Incomplete exact-build verification')
@@ -125,6 +127,7 @@ def record(root=ROOT):
     result = {'schema_version': 1, 'verification_date': date.today().isoformat(),
               'checks': proof['checks'], 'inputs_sha256': inputs(root, manifest),
               'compiler': tc['compiler'], 'flags': tc['flags'],
+              'unit_flags': {u['id']: unit_flags(u) for u in manifest['units']},
               'integrated_image_sha256': decoded['sha256'],
               'source_only_build_available': retained == 0,
               'source_only_rejected_retained_bytes': retained,
