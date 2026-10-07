@@ -122,3 +122,15 @@ module must match its complete linked range, including literals and alignment.
 After a reviewed adapter update, refresh local pins with
 `python3 -B configure.py --refresh`, then run `tools/verify_source.py` before
 recording progress. Compiler and installed-tool hashes are still verified.
+
+
+## Linker selection
+
+GNU SH linking remains the default. An explicit manifest `"linker": "codewarrior"`
+uses `mwldshx.exe` 2.4 (March 3, 2000), already included and hash-pinned by the
+existing setup. This handles the compiler's explicit SH RELA addends in switch
+tables. Compiler settings are identical. Extra allocated data is rejected before
+linking; resolved metadata is stripped with the pinned objcopy and every code
+byte must remain unchanged. The complete final ELF section still must match the
+reference, including all tables, literals and padding. See reconstruction stage
+38 for compatibility evidence and negative checks.

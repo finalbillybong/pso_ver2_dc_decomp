@@ -2896,6 +2896,34 @@
       "boundary_review": "Raw SH4 0x8c01e2fc..0x8c01e5c0: initializer return delay0x8c01e328, natural alignment0x8c01e32a, update entry0x8c01e32c, final return delay0x8c01e5aa and literals through0x8c01e5bc. Adjacent entry0x8c01e5c0. Complete708-byte section matches independently twice; reconstruction-stage37.",
       "status": "matched",
       "reason": "Two complete adjacent text-buffer functions with natural alignment. Manager initializer and both original primary targets remain unresolved."
+    },
+    {
+      "id": "keyboard_character",
+      "source": "src/ui/keyboard_character.c",
+      "address": "0x8c01e1f4",
+      "entry": "_keyboard_character",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 57844,
+          "size": 264
+        }
+      ],
+      "functions": [
+        {
+          "name": "keyboard_character",
+          "address": "0x8c01e1f4",
+          "size": 264
+        }
+      ],
+      "reference_sha256": "cc32948560e987a5c87be9e5d92ed0c214f1db087609a1498a3f2ddfb782ffca",
+      "symbols": {
+        "_key_state": "0x8c41ccec"
+      },
+      "linker": "codewarrior",
+      "boundary_review": "Raw SH4 0x8c01e1f4..0x8c01e2fc:17 compiler-emitted jump-table entries0x8c01e24c..0x8c01e290; final return delay0x8c01e2f0, alignment0x8c01e2f2 and literals0x8c01e2f4/2f8 precede admitted text initializer. Native linker preserves explicit RELA addends; complete range twice exact with unchanged compiler/base flags; reconstruction-stage38.",
+      "status": "matched",
+      "reason": "Complete ordinary-C keyboard conversion with explicit pinned native linker for compiler-generated jump-table relocations. Compiler/base flags and full-range comparison unchanged."
     }
   ]
 }

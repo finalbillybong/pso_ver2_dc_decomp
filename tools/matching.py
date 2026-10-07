@@ -18,10 +18,19 @@ FLAGS = ['-proc', 'SH4', '-endian', 'little', '-mw_fp', 'hardware',
 
 def unit_flags(sample):
     """Keep the pinned settings; C++ requires an explicit manifest selector."""
+    unit_linker(sample)
     language = sample.get('language', 'c')
     if language not in ('c', 'c++'):
         raise ValueError('Unsupported matching source language')
     return FLAGS + (['-lang', 'c++'] if language == 'c++' else [])
+
+
+def unit_linker(sample):
+    """GNU remains the default; explicit CodeWarrior linking preserves RELA addends."""
+    linker = sample.get('linker', 'gnu')
+    if linker not in ('gnu', 'codewarrior'):
+        raise ValueError('Unsupported matching linker')
+    return linker
 
 
 def sha(path):
@@ -71,14 +80,10 @@ def load_tools():
     return {k: Path(v) for k, v in receipt['roles'].items()}
 
 
-def text_section(data, base):
-    """Require one complete, relocated code section at the exact entry address."""
+def elf_sections(data):
+    """Read bounded ELF32 little-endian section records, including empty sections."""
     if len(data) < 52 or data[:7] != b'\x7fELF\x01\x01\x01':
         raise ValueError('Expected ELF32 little-endian output')
-    if struct.unpack_from('<HHI', data, 16) != (2, 42, 1):
-        raise ValueError('Expected linked SuperH executable')
-    if struct.unpack_from('<I', data, 24)[0] != base:
-        raise ValueError('Linked entry does not equal sample address')
     offset = struct.unpack_from('<I', data, 32)[0]
     size, count, names_index = struct.unpack_from('<HHH', data, 46)
     if size != 40 or count == 0 or names_index >= count or offset + count * size > len(data):
@@ -88,13 +93,36 @@ def text_section(data, base):
     if names[4] + names[5] > len(data):
         raise ValueError('Truncated ELF string table')
     strings = data[names[4]:names[4] + names[5]]
-    result = None
+    result = []
     for s in sections:
         if s[0] >= len(strings):
             raise ValueError('Invalid ELF section name')
         name = strings[s[0]:].split(b'\0', 1)[0]
         if s[1] != 8 and s[4] + s[5] > len(data):
             raise ValueError('Truncated ELF section')
+        result.append((name, s))
+    return result
+
+
+def require_text_only_object(data):
+    """Do not let a native linker script silently omit compiler-emitted data."""
+    sections = elf_sections(data)
+    if struct.unpack_from('<HHI', data, 16) != (1, 42, 1):
+        raise ValueError('Expected relocatable SuperH compiler object')
+    for name, section in sections:
+        if section[2] & 2 and section[5] and name != b'.text':
+            raise ValueError('Unexpected allocated data outside sample code and literal pool')
+
+
+def text_section(data, base):
+    """Require one complete, relocated code section at the exact entry address."""
+    sections = elf_sections(data)
+    if struct.unpack_from('<HHI', data, 16) != (2, 42, 1):
+        raise ValueError('Expected linked SuperH executable')
+    if struct.unpack_from('<I', data, 24)[0] != base:
+        raise ValueError('Linked entry does not equal sample address')
+    result = None
+    for name, s in sections:
         if s[1] in (4, 9) and s[5]:
             raise ValueError('Unexpected remaining relocations')
         if name == b'.text':
@@ -165,9 +193,33 @@ def compile_unit(source, output, sample, flags=None):
         for name, address in symbols.items():
             if not re.fullmatch(r'[A-Za-z_][A-Za-z_0-9]*', name) or not 0 <= int(address, 0) <= 0xffffffff:
                 raise ValueError('Invalid external symbol')
-        run([tools['linker'], '-m', 'shlelf', '-T', 'unit.ld', '-e', sample['entry'],
-             *['--defsym=' + name + '=' + address for name, address in symbols.items()],
-             '-Map=unit.map', 'unit.o', '-o', 'unit.elf'])
+        linker = unit_linker(sample)
+        if linker == 'gnu':
+            run([tools['linker'], '-m', 'shlelf', '-T', 'unit.ld', '-e', sample['entry'],
+                 *['--defsym=' + name + '=' + address for name, address in symbols.items()],
+                 '-Map=unit.map', 'unit.o', '-o', 'unit.elf'])
+        else:
+            # Already distributed and pinned by setup_matching.py. Do not use an
+            # unrecorded executable merely because it sits beside the compiler.
+            native = tools['compiler'].with_name('mwldshx.exe')
+            installed = json.loads((ROOT / 'config/matching-installed.json').read_text())
+            if str(native) not in installed['files'] or sha(native) != installed['files'][str(native)]:
+                raise ValueError('Native linker is not pinned by the installation receipt')
+            require_text_only_object((work / 'unit.o').read_bytes())
+            declarations = ' '.join(name + ' = ' + address + ';' for name, address in symbols.items())
+            (work / 'unit.lcf').write_text('MEMORY { .text (RWX) : ORIGIN = ' + hex(base)
+                + ', LENGTH = 0 }\nSECTIONS { .text : { ' + declarations + ' *(.text) } > .text }\n')
+            run([tools['runner'], native, '-nostdlib', '-nodeadstrip', '-Cpp_exceptions',
+                 'off', '-main', sample['entry'], 'unit.o', 'unit.lcf', '-map', '-o', 'unit.native.elf'])
+            # The native executable keeps already-resolved relocation metadata.
+            # Strip that metadata using the pinned objcopy, then prove that the
+            # complete code/literal bytes are unchanged and use the same validator.
+            run([tools['objcopy'], '-O', 'binary', '-j', '.text', 'unit.native.elf', 'unit.native.bin'])
+            run([tools['objcopy'], '--strip-all', 'unit.native.elf', 'unit.elf'])
+            if text_section((work / 'unit.elf').read_bytes(), base) != (work / 'unit.native.bin').read_bytes():
+                raise ValueError('Removing native linker metadata changed code bytes')
+            shutil.copyfile(work / 'unit.native.elf.xMAP', work / 'unit.map')
+            shutil.copyfile(work / 'unit.native.elf', output.with_suffix('.native.elf'))
         expected_output = text_section((work / 'unit.elf').read_bytes(), base)
         run([tools['objcopy'], '-O', 'binary', '-j', '.text', 'unit.elf', 'unit.bin'])
         if (work / 'unit.bin').read_bytes() != expected_output:
@@ -182,6 +234,7 @@ def compile_unit(source, output, sample, flags=None):
         output.write_bytes(expected_output)
         receipt = {'compiler': 'CodeWarrior Dreamcast 2.4 Engineering Build, Mar 21 2000',
                    'flags': flags, 'address': hex(base), 'entry': sample['entry'],
+                   'linker': linker, 'compiler_object_sha256': sha(work / 'unit.o'),
                    'source_sha256': sha(source), 'output_sha256': sha(output),
                    'headers_sha256': headers,
                    'symbols': symbols,

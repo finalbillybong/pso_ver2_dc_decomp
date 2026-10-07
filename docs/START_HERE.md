@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **137 exact functions in 123 modules**, replacing
-15,428 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **138 exact functions in 124 modules**, replacing
+15,692 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -289,7 +289,7 @@ targets remain incomplete. See RECONSTRUCTION.md for 59 trials, checked layouts
 and failed scheduling hypotheses. Continue the iteration commands above.
 
 
-## Latest verified checkpoint: stage 37
+## Stage 37 checkpoint
 
 Two complete adjacent text-buffer functions add 708 bytes, including natural
 compiler alignment. Totals are 137 functions, 123 modules, 15,428 compiled bytes
@@ -299,3 +299,17 @@ proof and all 47 original-workspace tests pass. Source-only rejects the remainin
 gaps. Primary targets and manager initialization remain incomplete. See
 RECONSTRUCTION.md for 58 trials and the checked text-buffer view. Continue the
 iteration commands above; supporting matches do not replace primary acceptance.
+
+
+## Latest verified checkpoint: stage 38
+
+One complete keyboard conversion adds 264 bytes. Totals are 138 functions,
+124 modules, 15,692 compiled bytes and 4,147,220 retained bytes. It explicitly
+uses the already-pinned native linker for compiler-generated RELA addends;
+all 137 previous matches/module definitions/source/header hashes retain the
+default GNU path. Compiler flags and full-range acceptance are unchanged.
+Two fresh builds, image comparison, compiler proof and 53 original-workspace
+checks pass; the public suite has 58 tests. Source-only rejects remaining gaps.
+Primary targets and manager initialization remain incomplete. See stage 38 in
+RECONSTRUCTION.md for 18 trials, 123-module linker compatibility evidence and
+negative tests. Continue the iteration commands above.

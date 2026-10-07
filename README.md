@@ -12,9 +12,9 @@ Other releases are not currently supported.
 
 ## Progress
 
-**137 exact matching functions in 123 modules**, replacing **15,428 bytes** of the
-4,162,912-byte decoded executable (**0.3706% image coverage**). Function ranges
-include their literals and padding. **4,147,484 bytes still come from the original
+**138 exact matching functions in 124 modules**, replacing **15,692 bytes** of the
+4,162,912-byte decoded executable (**0.3769% image coverage**). Function ranges
+include their literals and padding. **4,147,220 bytes still come from the original
 reference**; separately reconstructed static data is zero.
 
 This is an early hybrid reconstruction. It cannot yet build from source alone.
@@ -43,6 +43,9 @@ The admitted compiler is CodeWarrior for Dreamcast 2.4, Engineering Build
 March 21, 2000, with SH-4 hardware floating point and `-O2`. Every admitted
 function range must match completely, including literals and padding. C++ modules
 explicitly declare `"language": "c++"` and add only `-lang c++` to these settings.
+Modules requiring the compiler's explicit relocation addends declare
+`"linker": "codewarrior"` to use the already-pinned native linker; GNU remains
+the default. Complete code/literal bytes must survive metadata stripping unchanged.
 
 Checks that need no game dump or compiler:
 

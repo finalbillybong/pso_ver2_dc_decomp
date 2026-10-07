@@ -1849,3 +1849,72 @@ manager initialization **280/8**. The signed-remainder exceptional-ABI blocker
 and other documented scratch mismatches remain. Continue the START_HERE.md loop,
 using the now-recovered text-call ABI to investigate manager scheduling and
 preserving primary acceptance criteria.
+
+
+## Keyboard translation and explicit native linking, stage 38
+
+One complete C function, `keyboard_character` at **0x8c01e1f4–0x8c01e2fc**, adds
+**264 bytes**. Totals are **138 functions / 124 modules / 15,692 compiled range
+bytes / 4,147,220 retained reference bytes**, or **0.3769% whole-image coverage**.
+All 137 previous matches, module definitions and source/header hashes remain
+unchanged. Since the initial 34-function checkpoint, 104 functions replace
+12,048 bytes. Code-only completion remains unknown; primary acceptance remains
+incomplete.
+
+The function translates the observed first key byte and modifier mask 0x22 into
+characters. Numeric, letter and punctuation mappings are preserved exactly.
+Its complete range includes a compiler-generated 17-entry switch table, return
+delay slots, alignment and two final literals. Conditional-expression returns
+reproduce the punctuation paths; ordinary if/return forms are eight bytes shorter.
+The table is generated from the C switch, not copied from reference bytes.
+
+The fixed compiler produces the correct switch object, but the default GNU SH
+link path does not apply its explicit nonzero `R_SH_DIR32` RELA addends. All 17
+linked entries then point to the function entry, leaving 34 differing table
+bytes despite matching instructions. The saved compiler object contains each
+correct target offset. Local binutils 2.44 source identifies the normal SH
+`partial_inplace` relocation handling, whereas this object carries explicit
+addends. A standard objcopy round trip does not resolve the discrepancy.
+
+The already-installed, hash-pinned **CodeWarrior linker 2.4, March 3 2000** resolves
+that untouched object into all 264 exact bytes. It also reproduced all **123
+previous modules / 137 functions** from their saved compiler objects in a
+separate diagnostic. No compiler binary, compiler flag, optimization setting,
+source byte or generated instruction was altered for that comparison.
+
+The matching driver now accepts explicit `"linker": "codewarrior"` for this
+module; the default GNU path and every previous module definition remain
+unchanged. The native executable must already be present in the verified
+installation receipt. It is part of the existing pinned package, so no new
+binary download or package-version change is required. A bounded ELF check
+rejects compiler-emitted allocated data outside `.text` before the native linker
+can omit it. The native linker keeps resolved relocation metadata; the pinned
+objcopy strips that metadata, and the driver verifies that every code/literal
+byte remains unchanged. The original strict final ELF validator and complete
+reference comparison still apply. No reference-informed patching is performed.
+Compiler receipts record the linker selection, compiler-object hash and commands;
+the native executable is retained in private scratch for review. The adapter
+hash pin is deliberately refreshed; all executable hashes and base flags stay
+unchanged.
+
+Six host tests cover selection, unchanged compiler flags, allocated data/BSS
+rejection, object type, native command/receipt behavior, metadata mutation and
+unrecorded-linker rejection. Real compiler negative trials also reject data,
+BSS and an undefined symbol. The existing five-function proof and its negative
+checks pass again. Both final-source native compilations match completely.
+
+Stage 38 records **18 source trials**, including the three deliberate negative
+rejections, plus the separately receipted 123-module native compatibility run
+and linker metadata diagnostics. Recovered text types, callee reference/pointer
+forms and five emission constant-lifetime transfers do not improve the active
+manager or primary candidates. Operation remains **512/30**, emission **388/8**,
+related reuse **448/4**, manager initialization **280/8**. Signed remainder and
+other scratch blockers remain as documented. Supporting matches do not replace
+primary acceptance.
+
+Two fresh project builds, exact integrated-image comparison and all **53
+original-workspace tests** pass; the public suite now has **58 tests**. Source-only
+rejects 4,147,220 retained bytes without changing artifacts. Focused exports are
+refreshed on a disposable database copy after manifest/driver changes. Current
+receipt is in `config/analysis-workflow.json`. Continue START_HERE.md iteration
+commands with the same compiler flags and whole-range rules.
