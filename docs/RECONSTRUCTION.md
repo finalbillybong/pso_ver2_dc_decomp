@@ -1465,3 +1465,61 @@ The next source hypotheses concern the shared angle schedule, emission argument
 order, effect motion/frame-table lifetimes and the adjacent resource-copy caller.
 Compiler version, optimization, complete-range rules and private-data exclusions
 are unchanged.
+
+
+## Resource-copy and load wrappers, stage 32
+
+Four complete ordinary-C functions add **596 bytes**, preserving all 98 previous
+matches and source/header hashes. Totals are **102 functions / 90 modules /
+11,860 compiled range bytes / 4,151,052 retained reference bytes**. Whole-image
+coverage is 0.2849%; this is not code-only completion. Since the initial
+34-function checkpoint, 68 supporting functions replace 8,216 bytes. Both
+original primary targets remain incomplete at 512/30 and 388/8.
+
+| Function | Address | Complete bytes |
+| --- | --- | ---: |
+| `copy_resource_fields` | `0x8c033c84` | 148 |
+| `load_resource_sized` | `0x8c033d18` | 176 |
+| `load_resource_small` | `0x8c033dc8` | 136 |
+| `load_resource_large` | `0x8c033e50` | 136 |
+
+The provisional resource descriptor checks an entry pointer at zero, count at
+four and an eight-byte extent. The twelve-byte entry view checks fields zero,
+four and eight. Copying clears the first twelve shared-buffer bytes, prepares a
+local descriptor, and returns zero if applying it returns -1. It copies fields
+eight then four for the destination count; field zero is untouched. The shared
+buffer is reloaded between stores, preserving possible alias effects. Separate
+source-field scopes fix indexed addressing. Destination-column declaration order
+fixes register choices, and initializing the explicit twelve-byte stride after
+the loop index fixes the final delay-slot pair. No padding or assembly is used.
+
+The sized loader formats the input name into its observed shared name buffer,
+queries length, rounds through arithmetic right shift and multiplication, reads,
+transforms and consumes the result. A named failure sentinel scoped after the
+length query reproduces its separate comparison register. An early sentinel
+lifetime, unsigned/pointer declarations, reversed comparison and a const sentinel
+do not match. A valid length leads to return one even if the later read returns
+-1; this observed path is preserved. The two other loaders allocate different
+scratch sizes and use different name buffers. Their failed-load paths still call
+release with the null pointer before returning zero. No speculative allocation
+checks or altered return behavior were introduced. Formatting strings, buffers,
+called implementations and other data remain reference dependencies.
+
+All 86 trials retain snapshots, hypotheses, compiler receipts and full comparisons
+in `reconstruction-stage32`. Six rejected trials came from a generator replacing
+struct declarations while inserting local stride variables; their receipts remain,
+and corrected trials restrict edits to the function body. Every final source
+matches independently twice. Two fresh exact project builds, integrated-image
+comparison, five-function proof and all 47 original-workspace tests pass.
+Source-only rejects 4,151,052 remaining bytes without altering artifacts. Focused
+evidence is `function-dossiers/run-byr1i55j/receipt.json`; exported bytes match the
+pinned reference and the original database is unchanged.
+
+Primary operation/emission and related emission/reuse remain **512/30**, **388/8**
+and **448/4**. Scratch effect candidates remain **800/46** and **536/25**; the signed
+remainder still has its documented exceptional-ABI blocker. These supporting
+matches do not fulfill the original two-target acceptance criteria. Continue the
+shared scheduling work and adjacent resource/matrix dependencies using
+`python3 -B tools/verify_source.py --check`, `python3 -B tools/candidates.py` and
+the START_HERE.md iteration commands. Compiler, optimization, full-range checks
+and private-data exclusions are unchanged.

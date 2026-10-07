@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **98 exact functions in 86 modules**, replacing
-11,264 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **102 exact functions in 90 modules**, replacing
+11,860 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -220,7 +220,7 @@ the active operation is now 512/30. See RECONSTRUCTION.md for language admission
 compiler-generated alignment and continuing hypotheses.
 
 
-## Latest verified checkpoint: stage 31
+## Stage 31 checkpoint
 
 Eight complete hierarchy-array/resource-buffer functions add 492 bytes. Totals
 are 98 functions, 86 modules, 11,264 compiled bytes and 4,151,648 retained bytes.
@@ -230,3 +230,14 @@ tests pass. Source-only rejects gaps. Both original primary targets remain
 incomplete at 512/30 and 388/8. Effect advance improves to 800/46 in scratch;
 no partial candidate receives matching credit. See RECONSTRUCTION.md for the
 74 preserved trials, corrected reporting branch and continuing hypotheses.
+
+
+## Latest verified checkpoint: stage 32
+
+Four complete resource-copy/load functions add 596 bytes. Totals are 102 functions,
+90 modules, 11,860 compiled bytes and 4,151,052 retained bytes. All 98 prior matches,
+sources and headers are preserved. Two fresh exact builds, integrated-image
+comparison, five-function proof and all 47 original-workspace tests pass.
+Source-only rejects gaps. Both original primary targets remain incomplete at
+512/30 and 388/8; related emission/reuse remains448/4. See RECONSTRUCTION.md for
+86 trials, observed failure-path behavior and continuing hypotheses.

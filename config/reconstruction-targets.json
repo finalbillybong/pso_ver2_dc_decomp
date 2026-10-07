@@ -1825,6 +1825,121 @@
       "boundary_review": "Raw little-endian SH4: entry0x8c033c68, return delay0x8c033c7e, call literal0x8c033c80; next entry0x8c033c84. Complete fixed-C match independently twice; see reconstruction-stage31.",
       "status": "matched",
       "reason": "Complete ordinary-C hierarchy-array/resource-buffer function; both original primary targets remain unresolved."
+    },
+    {
+      "id": "copy_resource_fields",
+      "source": "src/objects/copy_resource_fields.c",
+      "address": "0x8c033c84",
+      "entry": "_copy_resource_fields",
+      "headers": [
+        "src/include/resource_list.h"
+      ],
+      "ranges": [
+        {
+          "offset": 146564,
+          "size": 148
+        }
+      ],
+      "functions": [
+        {
+          "name": "copy_resource_fields",
+          "address": "0x8c033c84",
+          "size": 148
+        }
+      ],
+      "reference_sha256": "2470fed35370c64224008416139688523c4906226f2786ac36e00b1479601b6e",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033c84, return delay0x8c033cfe, six literal words0x8c033d00..0x8c033d18. Complete fixed-C match independently twice; see reconstruction-stage32.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource-copy/load wrapper; original primary targets remain unresolved."
+    },
+    {
+      "id": "load_resource_sized",
+      "source": "src/objects/load_resource_sized.c",
+      "address": "0x8c033d18",
+      "entry": "_load_resource_sized",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 146712,
+          "size": 176
+        }
+      ],
+      "functions": [
+        {
+          "name": "load_resource_sized",
+          "address": "0x8c033d18",
+          "size": 176
+        }
+      ],
+      "reference_sha256": "e75fef550660c0caf200c00ecd6c81009bac98d2726d3181ab004ebe3b423db8",
+      "symbols": {
+        "_format_at": "0x8c12b048",
+        "_allocate_at": "0x8c36cd16",
+        "_size_at": "0x8c104d50",
+        "_read_at": "0x8c104d00"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c033d18, return delay0x8c033d96, twelve literal words0x8c033d98..0x8c033dc8. Complete fixed-C match independently twice; see reconstruction-stage32.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource-copy/load wrapper; original primary targets remain unresolved."
+    },
+    {
+      "id": "load_resource_small",
+      "source": "src/objects/load_resource_small.c",
+      "address": "0x8c033dc8",
+      "entry": "_load_resource_small",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 146888,
+          "size": 136
+        }
+      ],
+      "functions": [
+        {
+          "name": "load_resource_small",
+          "address": "0x8c033dc8",
+          "size": 136
+        }
+      ],
+      "reference_sha256": "f944280eccfab2c0c011cd58e639ae59b391b668283ad7d8cff1aa4222dc42d7",
+      "symbols": {
+        "_format_at": "0x8c12b048",
+        "_allocate_at": "0x8c011e9c",
+        "_load_at": "0x8c104d70"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c033dc8, return delay0x8c033e2a, nine literal words0x8c033e2c..0x8c033e50. Complete fixed-C match independently twice; see reconstruction-stage32.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource-copy/load wrapper; original primary targets remain unresolved."
+    },
+    {
+      "id": "load_resource_large",
+      "source": "src/objects/load_resource_large.c",
+      "address": "0x8c033e50",
+      "entry": "_load_resource_large",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147024,
+          "size": 136
+        }
+      ],
+      "functions": [
+        {
+          "name": "load_resource_large",
+          "address": "0x8c033e50",
+          "size": 136
+        }
+      ],
+      "reference_sha256": "524501d7cf517e09eaaa2ae91400049cc267795e7adeb36a7051d2d1bb915a3e",
+      "symbols": {
+        "_format_at": "0x8c12b048",
+        "_allocate_at": "0x8c011e9c",
+        "_load_at": "0x8c104d70"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c033e50, return delay0x8c033eb2, nine literal words0x8c033eb4..0x8c033ed8. Complete fixed-C match independently twice; see reconstruction-stage32.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource-copy/load wrapper; original primary targets remain unresolved."
     }
   ]
 }
