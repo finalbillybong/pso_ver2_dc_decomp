@@ -1588,6 +1588,56 @@
       "boundary_review": "Raw SH4 entry through next adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage57."
     },
     {
+      "id": "refresh_random_state",
+      "source": "src/random/refresh_random_state.c",
+      "address": "0x8c037e04",
+      "entry": "_refresh_random_state",
+      "ranges": [
+        {
+          "offset": 163332,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_random_state",
+          "address": "0x8c037e04",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "f193edfe9aa2988fa181e5f5f5a792006c5cfb6c09a5b28823f5e2624a2f7dab",
+      "headers": [
+        "src/include/random_refresh_impl.h",
+        "src/include/random_state.h"
+      ],
+      "boundary_review": "Raw SH4 entry to adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage58."
+    },
+    {
+      "id": "next_random_state",
+      "source": "src/random/next_random_state.c",
+      "address": "0x8c037e50",
+      "entry": "_next_random_state",
+      "ranges": [
+        {
+          "offset": 163408,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "next_random_state",
+          "address": "0x8c037e50",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "04da727656a2cfb8dd7d2647d309b24faf40ccf32b1aa8d91f07cc5ac66abf27",
+      "headers": [
+        "src/include/random_refresh_impl.h",
+        "src/include/random_state.h"
+      ],
+      "boundary_review": "Raw SH4 entry to adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage58."
+    },
+    {
       "id": "distance_xz",
       "address": "0x8c03f0a0",
       "source": "src/samples/distance_xz.c",

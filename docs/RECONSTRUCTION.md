@@ -2991,3 +2991,55 @@ full-range acceptance are unchanged. Original primary operation/emission remain
 **512/30 and 388/8**, related reuse **448/4**, and manager initialization **280/8**.
 The primary batch remains incomplete; these supporting matches do not replace
 its acceptance criteria.
+
+
+## Subtractive random-table generation, stage 58
+
+Two complete ordinary-C functions add **180 bytes**: table refresh at
+**0x8c037e04..0x8c037e50** (76) and next-word generation at
+**0x8c037e50..0x8c037eb8** (104). Totals are **219 functions / 203 modules /
+24,216 compiled full-range bytes / 4,138,696 retained reference bytes**, or
+**0.5817% whole-image coverage**. All 217 earlier matches, module definitions and
+source/header hashes are preserved. Since the initial checkpoint, 185 functions
+replace 20,572 bytes. Code-only completion remains unknown; separately
+reconstructed static data remains zero.
+
+The shared inline refresh body performs unsigned subtraction for slots 1..24
+against slots 32..55, then slots 25..55 against slots 1..31. Capturing the current
+word before computing the source base reproduces register lifetimes. An explicit
+integer offset temporary of -92 reproduces the second loop's register-mediated
+address addition. The adjusted base remains a 32-bit integer until the final
+in-state address is formed, avoiding an intermediate C pointer before the state.
+The checked RandomState layout is unchanged; the new shared implementation header
+also checks address width. Next-word generation increments the index, refreshes
+and resets it to one only when it exceeds 55, then reads the indexed word. Both
+final readable source/header combinations match independently twice, including
+all literals, alignment and delay slots. No compiler, linker or base flags change.
+
+The same integer-offset hypothesis does not improve the neighboring velocity
+stores: direction setter **120/29**, segment setter's new trials **244/88** (the
+previous scoped-base candidate remains **240/20**), motion wrapper **512/22**, and
+reverse wrapper **624/22**. These remain unadmitted. Random-word XOR reaches
+**104/20**, first **0x8c037ef1**, after expressing its store as XOR assignment;
+subtractive word transformation remains 100 versus 104 expected. Both preserve
+the observed signed rounded word count and retained signed-division dependency.
+The byte shuffle remains **132/45** after fixing its loop-bound lifetime; typed
+bound helpers and short/full-width temporaries do not recover all narrowing.
+Forward and inverse block transforms reach **124/37** each after preserving the
+unsigned-division call with a scoped divisor and expressing component pointer
+bases before block offsets. Their register allocation remains unresolved. The
+mapping arrays and division runtimes remain reference dependencies and receive
+no reconstructed-data credit.
+
+All **101 trials** retain source snapshots, hypotheses and comparisons in
+`reconstruction-stage58`; successful compilations retain compiler receipts. One
+C89 declaration-order rejection is recorded. Two fresh exact builds, integrated
+image comparison, five-function proof and all **53 research tests** pass; the
+public suite remains **58 tests**. Source-only rejects 4,138,696 retained bytes
+without changing existing artifacts. Focused exports are regenerated after
+manifest/queue changes on a disposable database copy and validated against
+current inputs; the original database remains unchanged. Original primary
+operation/emission remain **512/30 and 388/8**, related reuse **448/4**, and manager
+initialization **280/8**. The signed-remainder helper still lacks a complete
+180-byte match. The primary batch remains incomplete; supporting matches never
+replace its acceptance criteria.

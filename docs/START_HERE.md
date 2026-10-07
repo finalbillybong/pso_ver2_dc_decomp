@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **217 exact functions in 201 modules**, replacing
-**24,036 bytes** of the 4,162,912-byte decoded executable (**0.5774% image coverage**).
-It retains **4,138,876 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **219 exact functions in 203 modules**, replacing
+**24,216 bytes** of the 4,162,912-byte decoded executable (**0.5817% image coverage**).
+It retains **4,138,696 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,16 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 57
+## Latest batch: stage 58
 
-Six random-state and ID operations add 348 bytes. All 211 prior matches, module
-definitions and source/header hashes are preserved. Since the initial checkpoint,
-183 functions replace 20,392 bytes. All 133 trials are retained, including nine
-compiler/linker rejections. The reverse-motion wrapper improves to 624/22; both
-motion wrappers still differ at their final velocity stores. Random-table refresh
-and next-word routines remain unresolved. The seed routine calls the retained
-signed-remainder runtime helper, which receives no matching credit. Both original
-primary targets remain incomplete.
+Random-table refresh and next-word generation add two functions and 180 bytes.
+All 217 prior matches, module definitions and source/header hashes are preserved.
+Since the initial checkpoint, 185 functions replace 20,572 bytes. All 101 trials
+are retained, including one compiler rejection. The two routines share a checked
+inline table-refresh body. Random-word XOR remains 104/20; the byte shuffle
+remains 132/45; forward and inverse block transforms remain 124/37. Motion stores,
+both original primary targets and the signed-remainder runtime remain unresolved.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only
