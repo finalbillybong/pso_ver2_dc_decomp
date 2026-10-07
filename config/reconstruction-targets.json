@@ -1038,6 +1038,58 @@
       "boundary_review": "Raw little-endian SH4: Return delay 0x8c0abece, four literal words 0x8c0abed0-0x8c0abee0, adjacent admitted spawn wrapper at 0x8c0abee0. Complete fixed-C match independently twice; see reconstruction-stage23.",
       "status": "matched",
       "reason": "Complete ordinary-C spawned-effect dependency including literals/alignment. Both original primary targets remain unresolved."
+    },
+    {
+      "id": "step_vector_toward",
+      "source": "src/math/step_vector_toward.c",
+      "address": "0x8c0c51d8",
+      "entry": "_step_vector_toward",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 741848,
+          "size": 268
+        }
+      ],
+      "functions": [
+        {
+          "name": "step_vector_toward",
+          "address": "0x8c0c51d8",
+          "size": 268
+        }
+      ],
+      "reference_sha256": "ae5513aa585ae8f72a7f65b6cf6ff31053b9a3ffe86c9b200a5d505dfb227899",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Return delay0x8c0c52d8, zero alignment0x8c0c52da, measure/normalize literals0x8c0c52dc and0x8c0c52e0; next entry0x8c0c52e4. Complete fixed-C match independently twice; see reconstruction-stage24.",
+      "status": "matched",
+      "reason": "Complete ordinary-C math dependency including literals/alignment. Both original primary candidates remain unresolved."
+    },
+    {
+      "id": "signed_angle_delta",
+      "source": "src/math/signed_angle_delta.c",
+      "address": "0x8c0c52e4",
+      "entry": "_signed_angle_delta",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 742116,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "signed_angle_delta",
+          "address": "0x8c0c52e4",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "e2ac5017e1ce25aaad457aba8e3e07b344c8c67a5a5059ecb7e97d19d2f9d87e",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Return delay0x8c0c52ee, mask literal0x8c0c52f0; adjacent admitted angle_difference begins0x8c0c52f4. Complete fixed-C match independently twice; see reconstruction-stage24.",
+      "status": "matched",
+      "reason": "Complete ordinary-C math dependency including literals/alignment. Both original primary candidates remain unresolved."
     }
   ]
 }

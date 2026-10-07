@@ -1099,3 +1099,47 @@ operation 512/46, emission 388/8, related emission/reuse 448/4. Supporting match
 do not replace the two original targets. Static-data replacement remains zero.
 Continue the angle/dispatch and call-scheduling investigations alongside observed
 spawned-effect dependencies; use the standard commands in START_HERE.md.
+
+
+## Vector stepping and signed angular delta, stage 24
+
+Two exact math helpers replace **284 bytes**, preserving all 70 previous matches,
+sources and headers. Totals are **72 functions / 61 modules / 8,288 compiled range
+bytes / 4,154,624 retained reference bytes**. Since the original 34-function
+checkpoint, 38 supporting functions replace 4,644 bytes.
+
+| Function | Complete range | Bytes |
+| --- | --- | ---: |
+| `step_vector_toward` | `0x8c0c51d8–0x8c0c52e4` | 268 |
+| `signed_angle_delta` | `0x8c0c52e4–0x8c0c52f4` | 16 |
+
+Vector stepping preserves the ordered length comparison and zero test, including
+NaN behavior. It copies the target when indicated; otherwise it normalizes the
+separate delta, scales it, adds the current position and writes components in
+the observed order. Keeping these stages separate preserves aliasing behavior.
+The declared `vector3.h` checks the 12-byte layout and offsets 0, 4 and 8.
+The signed angular helper preserves 16-bit wrapping: its half-turn result is
+-32768, unlike the existing absolute difference helper's 32768. Both full ranges,
+literals and alignment match independently twice.
+
+The spawned-effect update at `0x8c0ab92c–0x8c0abb44` first generated 536 bytes
+with 46 differences. Reordering automatic vector declarations reproduces its
+stack slots; naming the table base before the alternate-bank offset fixes the
+literal order. It now differs in 25 bytes beginning at `0x8c0aba4f`, around angle
+conversion and the following destination/address schedule. Twenty-four lifetime
+variants and typed resource-field views do not resolve that region. It remains
+scratch-only. Its true entry saves a floating register and has no function seed
+in the existing Ghidra project; raw instructions establish behavior and boundary.
+
+Eighteen scalar-value qualifier diagnostics leave emission at 388/8 and related
+emission/reuse at 448/4. Operation remains 512/46. These supporting matches do
+not complete the two primary targets. Signed remainder retains its exceptional
+ABI blocker. No compiler settings, expected bytes or comparison rules changed.
+
+All 59 trials and receipts remain in private `reconstruction-stage24`, with no
+compiler rejections. Current focused evidence is
+`function-dossiers/run-zhc90d92/receipt.json`; the original database is unchanged.
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+43 original tests pass. Source-only rejects 4,154,624 retained bytes and leaves
+existing artifacts intact. Continue the shared angle schedule and emission call
+order investigation, then the observed effect, matrix/vector and data dependencies.
