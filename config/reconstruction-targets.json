@@ -3221,6 +3221,78 @@
       "boundary_review": "Raw SH4 entry 0x8c0a9178 through 0x8c0a91c4 includes all literals, return delay and alignment; next entry immediately follows. Independent full matches repeated twice; reconstruction-stage42.",
       "status": "matched",
       "reason": "Complete manager editor dispatcher or conversion callback; primary operation/emission and remaining field-editor candidates unresolved."
+    },
+    {
+      "id": "edit_manager_integer",
+      "source": "src/effects/edit_manager_integer.c",
+      "address": "0x8c0a8b74",
+      "entry": "_edit_manager_integer",
+      "headers": [
+        "src/include/effect_manager.h",
+        "src/include/effect.h",
+        "src/include/manager_scalar_edit.h"
+      ],
+      "ranges": [
+        {
+          "offset": 625524,
+          "size": 440
+        }
+      ],
+      "functions": [
+        {
+          "name": "edit_manager_integer",
+          "address": "0x8c0a8b74",
+          "size": 440
+        }
+      ],
+      "reference_sha256": "c58e0a4b792d844f400cc87de96f3c69b0d2c34d1aea9d2b2f7ca5c02c6af38c",
+      "symbols": {
+        "_format_base": "0x8c3044f4",
+        "_input_state": "0x8c41cba0",
+        "_draw_at": "0x8c38cf80",
+        "_set_color": "0x8c38c5b6",
+        "_format_text": "0x8c12b048",
+        "_power": "0x8c12b8f4"
+      },
+      "boundary_review": "Raw SH4 entry 0x8c0a8b74, return delay 0x8c0a8ce8, zero alignment 0x8c0a8cea, literal pool 0x8c0a8cec..0x8c0a8d2c. Complete range matched independently twice with checked metadata header; reconstruction-stage43.",
+      "status": "matched",
+      "reason": "Complete scalar manager editor including literals and padding. Primary operation/emission and display candidates remain unresolved."
+    },
+    {
+      "id": "edit_manager_float",
+      "source": "src/effects/edit_manager_float.c",
+      "address": "0x8c0a89a4",
+      "entry": "_edit_manager_float",
+      "headers": [
+        "src/include/effect_manager.h",
+        "src/include/effect.h",
+        "src/include/manager_scalar_edit.h"
+      ],
+      "ranges": [
+        {
+          "offset": 625060,
+          "size": 464
+        }
+      ],
+      "functions": [
+        {
+          "name": "edit_manager_float",
+          "address": "0x8c0a89a4",
+          "size": 464
+        }
+      ],
+      "reference_sha256": "1141052a9ca6a00e7407b3511304082869f8d84b0143b73ec30681f549022d4c",
+      "symbols": {
+        "_format_base": "0x8c3044f4",
+        "_input_state": "0x8c41cba0",
+        "_draw_at": "0x8c38cf80",
+        "_set_color": "0x8c38c5b6",
+        "_format_text": "0x8c12b048",
+        "_power": "0x8c12b8f4"
+      },
+      "boundary_review": "Raw SH4 entry 0x8c0a89a4, return delay 0x8c0a8b30, zero alignment 0x8c0a8b32, literal pool 0x8c0a8b34..0x8c0a8b74. Complete range matched independently twice with checked metadata header; reconstruction-stage43.",
+      "status": "matched",
+      "reason": "Complete scalar manager editor including literals and padding. Primary operation/emission and display candidates remain unresolved."
     }
   ]
 }

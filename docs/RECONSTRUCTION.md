@@ -2146,3 +2146,55 @@ Focused exports are refreshed after the manifest change using a disposable
 copy; the original database remains unchanged. Both primary candidates remain
 512/30 and 388/8, related reuse 448/4, and manager initialization 280/8. Supporting
 matches do not satisfy primary acceptance. Continue the recorded iteration loop.
+
+
+## Scalar manager editors, stage 43
+
+Two complete ordinary-C functions add **904 bytes**: the floating editor at
+**0x8c0a89a4..0x8c0a8b74** (464 bytes) and integer editor at
+**0x8c0a8b74..0x8c0a8d2c** (440 bytes). Totals are **150 functions / 136 modules /
+18,816 compiled range bytes / 4,144,096 retained reference bytes**, or **0.4520%
+whole-image coverage**. All 148 previous matches, module definitions and
+source/header hashes remain unchanged. Since the original 34-function checkpoint,
+116 functions replace 15,172 bytes. Code-only completion remains unknown and
+both original primary targets are incomplete.
+
+Both editors lazily initialize a format string, draw the current value, gate
+editing on selection and input masks, clamp the selected decimal digit, apply a
+power-scaled increment, clamp the result and highlight its selected character.
+The provisional metadata views have checked sizes of 44 and 40 bytes and checks
+for every accessed field offset. Existing manager and effect headers are unchanged.
+The signed character accesses and floating comparison ordering, including NaN
+behavior, follow the raw instructions. Static metadata, strings and input state
+remain reference inputs with no separately reconstructed data credit.
+
+The integer baseline already matched all 440 bytes. The floating baseline had the
+correct length but 356 differing bytes: a repeated precision load shifted most of
+the instruction stream. Capturing that precision reduced the differences to seven.
+Separating change scaling from value addition and capturing precision for the
+highlight calculation resolved the remaining register/lifetime differences.
+Both final sources match twice independently, including literal pools and zero
+alignment, with the same pinned compiler, base flags and default GNU linker.
+
+The manager display at 0x8c0a8624 remains unadmitted at **896 bytes / 9 differing**,
+first **0x8c0a87f9**. Its 35 fixed draws and subsequent variadic draws match except
+for the local two-pointer label copy schedule. Pointer lifetimes, scopes, explicit
+stores, inline helpers, C++ references and memcpy forms do not finish that block.
+Automatic constant-pointer initialization emits an extra eight-byte allocated
+section and is correctly rejected. Retaining the failed compiler/link artifacts
+for diagnosis showed that its copy schedule was still nonmatching; it does not
+justify broadening accepted output sections. No driver or acceptance rule changed.
+
+The manager initializer remains **280/8** after using the observed text-buffer call
+signature and checked pointers. This stage retains **60 trials**, including
+**9 compiler/link rejections**, with source snapshots, hypotheses, available
+compiler receipts and comparisons in `reconstruction-stage43`. Failed compilations
+are preserved as failures and never receive matching credit.
+
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+**53 original-workspace tests** pass. The public suite remains **58 tests**.
+Source-only rejects 4,144,096 retained bytes without altering existing artifacts.
+Focused exports are refreshed after the manifest change on a disposable copy;
+the original database is unchanged. Original primary candidates remain 512/30 and
+388/8, related reuse 448/4, and manager initialization 280/8. These supporting
+matches do not satisfy primary acceptance. Continue the recorded iteration loop.

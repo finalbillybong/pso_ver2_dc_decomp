@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "688308b4d6be5adb4c2cab451c78673e90d68f66add8b349bc3a2ae39e8f63f7",
+    "config/project.json": "62226c771d65c4fdccd6ae54067324f9cb54365db1a7f5ad3c435e4bd6a4aaf3",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -38,6 +38,8 @@
     "src/effects/destroy_spawn_effect_2.c": "c2ce7debeaf007a07b40aefc9133bdde160220e04207d7afc51ee96fe048145f",
     "src/effects/edit_effect_manager.cpp": "0cbc4a7c42279d10e86406e62428e53b8a5f2c6c95a63d7b9813b3a4fbe6f68e",
     "src/effects/edit_manager_fields_9178.c": "3d7e1c3589152093a73079a0923f8da15e93ea8706f8d8c73cde7a3473dc69ab",
+    "src/effects/edit_manager_float.c": "74603473ad429c7ba5cd11831fc050e7bf0f02a684d287cdfc122ea0ae691e85",
+    "src/effects/edit_manager_integer.c": "e08d241660ec66bf8150892287bdcf6bb2be791caa9c5a999bebba2ebbd1deb8",
     "src/effects/effect_bit0.c": "34062dbd9792d8f272143cfe9152ef36e5c498a6520e2cec62e2033068c9ab41",
     "src/effects/effect_bits_and_words.c": "5ef17c48900533d2d7952e8892fbbe5d84819a58e4b6b4a6e52567bfaf68dd01",
     "src/effects/effect_release_and_create.c": "fd8352da2371d86dc6697cddd8adf2d872f00762309963e2f594836cb959161f",
@@ -79,6 +81,7 @@
     "src/include/hierarchy_description.h": "1af54b737cead69edcb78b821e273efa00ce22d8c82d76f490b088b789f09489",
     "src/include/hierarchy_root.h": "4d704ed7effefd648f5bb230070ca3c2d35f10e5776bcc5df8790a9fe0ed10cc",
     "src/include/hierarchy_virtual.h": "e57e0012145a039c1589c96023bc435f05dd951992e771983136cc1be583ccd9",
+    "src/include/manager_scalar_edit.h": "44b241d2b3b2479a8de059fce92285edc8e42b9ef4c4600f7d7a01766fba185b",
     "src/include/object.h": "7b250e7a1d638d6683570839e5b82b074c759a48a390381ac5fa53cbe1020999",
     "src/include/proximity_object.h": "e8e2af88f37f02cf66df2a0a376b79fa61141bc856cdea2a04a7704ea9676046",
     "src/include/resource_callbacks.h": "1b9d17153cacba5cd644849c81ff73d03143c4de5c3ecca5e5e1d8aa2a2464c7",
@@ -1396,6 +1399,28 @@
       "-lang",
       "c++"
     ],
+    "edit_manager_float": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "edit_manager_integer": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "edit_manager_fields_9178": [
       "-proc",
       "SH4",
@@ -1674,6 +1699,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4145000,
+  "source_only_rejected_retained_bytes": 4144096,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

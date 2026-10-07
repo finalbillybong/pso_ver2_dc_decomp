@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **148 exact functions in 134 modules**, replacing
-**17,912 bytes** of the 4,162,912-byte decoded executable (**0.4303% image coverage**).
-It retains **4,145,000 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **150 exact functions in 136 modules**, replacing
+**18,816 bytes** of the 4,162,912-byte decoded executable (**0.4520% image coverage**).
+It retains **4,144,096 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 42
+## Latest batch: stage 43
 
-The C++ member-pointer editor dispatcher at `0x8c0a841c` and C callback at
-`0x8c0a9178` add 596 bytes. The compiler emits the observed member dispatch from
-ordinary C++ syntax; referenced descriptors, metadata and runtime remain reference
-inputs. All 146 previous matches, module definitions and source/header hashes
-remain unchanged. Since the original 34-function checkpoint, 114 functions
-replace 14,268 bytes. All 141 source trials are retained, including nine compiler
-rejections. Other field editors and both primary candidates remain unadmitted.
+The C floating and integer manager editors at `0x8c0a89a4` and `0x8c0a8b74`
+add 904 bytes. Their metadata layouts have checked sizes and field offsets;
+reference metadata and strings remain unreconstructed. All 148 previous matches,
+module definitions and source/header hashes remain unchanged. Since the original
+34-function checkpoint, 116 functions replace 15,172 bytes. All 60 source trials
+are retained, including nine compiler/link rejections. The display helper remains
+896/9; both original primary candidates remain unadmitted.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only
