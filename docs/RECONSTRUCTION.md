@@ -996,3 +996,46 @@ Ghidra pseudocode retains unresolved FPSCR branches. All source snapshots,
 hypotheses, compiler receipts and comparisons remain in private
 `reconstruction-stage21`. Continue the primary scheduling investigation, randomized
 spawn constructors, matrix/vector helpers and their referenced static data.
+
+
+## Further scheduling diagnostics, stage 22
+
+Another **223 preserved trials** add no matching functions. Totals remain
+**68 functions / 57 modules / 7,880 compiled bytes / 4,155,032 retained bytes**.
+The current exact source receipt still validates; no admitted source, manifest,
+header, compiler flag or reference byte changed. Stage 21's two exact builds,
+five-function proof, 43 original tests and source-only rejection remain current.
+The published checkpoint also passed all 47 public tests and GitHub CI.
+
+Inline random conversion helpers, shared or scoped random locals, 30 numeric
+literal/conversion combinations, compound field stores, homed-pointer qualifiers,
+four-byte float/double views and 48 inline component-helper forms did not improve
+the larger constructor. Its best remains stage 21's **488/137**. The adjacent
+constructor at `0x8c0ab558–0x8c0ab700` repeats the same randomized-position
+instruction pattern; it supplies comparison evidence but is not admitted.
+
+Qualified orientation reads and address-taken angle intermediates did not improve
+the primary operation. Ten initial mixed-declaration trials were rejected by the
+C89 compiler; corrected nested-scope trials are saved separately. The smaller
+actual angle caller remains **136/15**. Homed intermediates increased the full
+operation to 524 or 540 bytes; ordinary argument captures remain **512/46**.
+
+A further 64 emission trials combine signed/unsigned packed-kind declarations,
+narrow high/low/zero formals and direct versus numeric function declarations on
+the current best sources. Every trial retains **388/8** or **448/4**. This excludes
+those declaration combinations as the remaining scheduler cause. ABI diagnostics
+are not admitted merely because their parameter widths appear compatible.
+
+The primary batch remains incomplete. Private `reconstruction-stage22` contains
+each source snapshot, hypothesis, compiler receipt, exact comparison, hashed
+experiment index and `diagnostic-receipt.json`. Resume by validating current source
+receipts, then compare only new hypotheses against these saved failures:
+
+```sh
+python3 -B tools/verify_source.py --check
+python3 -B tools/candidates.py
+```
+
+Continue raw instruction and call-context analysis for the two primary targets,
+and the unresolved randomized constructors and vector dependencies. Do not repeat
+these unsuccessful expression/type families without new evidence.

@@ -122,3 +122,12 @@ Source-only still rejects the remaining gaps. The primary candidates remain
 512/46 and 388/8, with related emission/reuse 448/4 after 96 further scheduling
 trials. The larger randomized constructor is scratch-only at 488/137. See
 RECONSTRUCTION.md for the failed hypotheses and next dependency work.
+
+
+## Latest diagnostics: stage 22
+
+223 additional scratch trials produce no new match. The verified checkpoint
+remains 68 functions and 7,880 compiled bytes. Primary results remain 512/46 and
+388/8, related emission/reuse 448/4, and the randomized constructor 488/137.
+No admitted sources or build inputs changed; existing exact-build receipts are
+current. See stage 22 in RECONSTRUCTION.md before repeating these hypotheses.
