@@ -2926,3 +2926,68 @@ Original primary operation/emission remain **512/30 and 388/8**, related reuse
 **448/4**, manager initialization **280/8**, scratch frame **332/8**, hexadecimal
 highlighting **144/8** and movement/target update **328/34**. The primary batch
 remains incomplete; supporting matches do not replace its acceptance criteria.
+
+
+## Random-state and ID operations, stage 57
+
+Six complete ordinary-C functions add **348 bytes**: random-state construction
+at **0x8c037d5c** (24), seeded construction at **0x8c037d74** (24), table seeding at
+**0x8c037d8c** (120), object random fraction at **0x8c04aa9c** (104), optional ID
+copy at **0x8c04ab04** (24), and ID-field update at **0x8c04ab1c** (52). Totals are
+**217 functions / 201 modules / 24,036 compiled full-range bytes / 4,138,876 retained
+reference bytes**, or **0.5774% whole-image coverage**. All 211 earlier matches,
+module definitions and source/header hashes remain unchanged. Since the initial
+34-function checkpoint, 183 functions replace 20,392 bytes. Code-only completion
+remains unknown; separately reconstructed static data remains zero.
+
+RandomState checks index at zero, 56 unsigned words at offset 4, seed at 228 and
+size 232. ObjectRandomView checks the embedded state at 0x1d4. Seeding preserves
+unsigned subtraction wraparound, the untouched slot zero, 54 indexed assignments,
+four refresh calls and final index 55. Expressing the remainder result as a byte
+offset before the table accesses reproduces the entire 120-byte range. Ordinary
+C `%` references compiler runtime symbol `__l_mods`, resolved to the existing
+0x8c18e8a0 reference entry using the default GNU linker. Initial experiments used
+an incorrect single-underscore symbol; the pinned native linker diagnostic
+identified the actual name. No linker or compiler change was needed for admission.
+The signed-remainder implementation itself remains unresolved and receives no
+matching credit. Constructors seed and return the original state pointer.
+
+The fraction routine selects the global signed generator divided by 32768 for
+object type 15; otherwise it converts the unsigned high half of the object
+random word and divides by 65536. The compiler's unsigned-to-float correction is
+preserved. ID-field names remain offset-based because their gameplay roles are
+not established. Checked fields are unsigned halfwords at 0x1b6 and 0x306, with a
+signed source halfword at 0x20. The setter ignores 65535, stores then reloads the
+first field, and conditionally copies it using the existing global comparison.
+A full-width temporary followed by a halfword cast reproduces both observed zero
+extensions; short temporaries and inline accessors do not. The wrapper preserves
+its null-source guard and signed load. Every final readable source and declared
+checked header combination matches independently twice, including all literals,
+alignment and delay slots.
+
+Motion experiments retain the 512-byte wrapper at **512/22** and reconstruct the
+reverse-motion wrapper **0x8c044964..0x8c044bd4** to **624/22**, first **0x8c044af0**.
+A borrowed input pointer removes an extra aggregate copy; an external rotation
+callee declaration resolves its literal preparation order. Both remaining
+mismatches are final X/Z stores. C++ members, scalar-copy helpers, alternative
+field layouts, register hints and source/destination lifetime variants do not
+resolve them. The adjacent roaming update remains 624 versus 620 expected.
+Subtractive random-table refresh and next-word routines remain unresolved;
+ordinary array indexing, unsigned indexes, expanded subtraction, byte offsets,
+base-address grouping and C++ variants fail full-range comparison. SDK vector
+length uses FIPR and retains an additional return/alignment sequence; it is not
+replaced with speculative ordinary arithmetic or copied instructions.
+
+All **133 trials** retain sources, hypotheses and comparisons in
+`reconstruction-stage57`; successful compilations retain complete compiler
+receipts. **Nine compiler/linker rejections** are recorded, including the wrong
+runtime symbol and illegal C register/return forms. Two fresh exact builds,
+integrated-image comparison, five-function proof and all **53 research tests**
+pass. The public suite remains **58 tests**. Source-only rejects 4,138,876 retained
+bytes without changing artifacts. Focused exports are regenerated after the
+manifest/queue changes on a disposable database copy and checked against current
+inputs; the original database is unchanged. Compiler binary, base flags and
+full-range acceptance are unchanged. Original primary operation/emission remain
+**512/30 and 388/8**, related reuse **448/4**, and manager initialization **280/8**.
+The primary batch remains incomplete; these supporting matches do not replace
+its acceptance criteria.

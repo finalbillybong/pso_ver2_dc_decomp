@@ -4895,6 +4895,166 @@
       "boundary_review": "Raw little-endian SH4 entry to adjacent0x8c0444f8, including literal pool. Final source/header independently exact twice; reconstruction-stage56.",
       "status": "matched",
       "reason": "Complete previous-position snapshot, velocity addition and movement-conditional position update; referenced SDK/movement callees remain reference dependencies."
+    },
+    {
+      "id": "object_random_fraction",
+      "source": "src/objects/object_random_fraction.c",
+      "address": "0x8c04aa9c",
+      "entry": "_object_random_fraction",
+      "ranges": [
+        {
+          "offset": 240284,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "object_random_fraction",
+          "address": "0x8c04aa9c",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "3c3bf6934a6fe7dfe0ad4b538da7dce66bad2cf509e98fbca63705c0f911e019",
+      "headers": [
+        "src/include/object_random.h",
+        "src/include/random_state.h"
+      ],
+      "boundary_review": "Raw SH4 entry through next adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage57.",
+      "status": "matched",
+      "reason": "Complete checked random-state or ID-field operation; called routines and static globals remain retained reference dependencies unless separately admitted."
+    },
+    {
+      "id": "set_object_id_1b6",
+      "source": "src/objects/set_object_id_1b6.c",
+      "address": "0x8c04ab1c",
+      "entry": "_set_object_id_1b6",
+      "ranges": [
+        {
+          "offset": 240412,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_object_id_1b6",
+          "address": "0x8c04ab1c",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "b9f177aa6f9fa40a5edea9f59318e7bef090fe07a3268953ef779d40991cf68f",
+      "headers": [
+        "src/include/object_id_fields.h"
+      ],
+      "boundary_review": "Raw SH4 entry through next adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage57.",
+      "status": "matched",
+      "reason": "Complete checked random-state or ID-field operation; called routines and static globals remain retained reference dependencies unless separately admitted."
+    },
+    {
+      "id": "copy_object_id_1b6",
+      "source": "src/objects/copy_object_id_1b6.c",
+      "address": "0x8c04ab04",
+      "entry": "_copy_object_id_1b6",
+      "ranges": [
+        {
+          "offset": 240388,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "copy_object_id_1b6",
+          "address": "0x8c04ab04",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "8e8204dcb15e33a83e15b88ad2861d101f83954a2b292577359c52d43f746a5d",
+      "headers": [
+        "src/include/object_id_fields.h"
+      ],
+      "boundary_review": "Raw SH4 entry through next adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage57.",
+      "status": "matched",
+      "reason": "Complete checked random-state or ID-field operation; called routines and static globals remain retained reference dependencies unless separately admitted."
+    },
+    {
+      "id": "construct_random_state",
+      "source": "src/random/construct_random_state.c",
+      "address": "0x8c037d5c",
+      "entry": "_construct_random_state",
+      "ranges": [
+        {
+          "offset": 163164,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_random_state",
+          "address": "0x8c037d5c",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "05bd38e13e117d5e15ddff3d7d67fbe04bb9029e4ff94dadc36f9dfe38c50775",
+      "headers": [
+        "src/include/random_state.h"
+      ],
+      "boundary_review": "Raw SH4 entry through next adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage57.",
+      "status": "matched",
+      "reason": "Complete checked random-state or ID-field operation; called routines and static globals remain retained reference dependencies unless separately admitted."
+    },
+    {
+      "id": "construct_seeded_random_state",
+      "source": "src/random/construct_seeded_random_state.c",
+      "address": "0x8c037d74",
+      "entry": "_construct_seeded_random_state",
+      "ranges": [
+        {
+          "offset": 163188,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_seeded_random_state",
+          "address": "0x8c037d74",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "ec8b33cac5ecf464c69b1c8583a0b615d832fc073e5034a3d1aa7f7d6cc03cc7",
+      "headers": [
+        "src/include/random_state.h"
+      ],
+      "boundary_review": "Raw SH4 entry through next adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage57.",
+      "status": "matched",
+      "reason": "Complete checked random-state or ID-field operation; called routines and static globals remain retained reference dependencies unless separately admitted."
+    },
+    {
+      "id": "seed_random_state",
+      "source": "src/random/seed_random_state.c",
+      "address": "0x8c037d8c",
+      "entry": "_seed_random_state",
+      "ranges": [
+        {
+          "offset": 163212,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "seed_random_state",
+          "address": "0x8c037d8c",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "e716f50b021ca75ff5e8ecb1beb7fa0265dcb8cc9c4fa997ebf8cb47981b3182",
+      "symbols": {
+        "__l_mods": "0x8c18e8a0"
+      },
+      "headers": [
+        "src/include/random_state.h"
+      ],
+      "boundary_review": "Raw SH4 entry through next adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage57.",
+      "status": "matched",
+      "reason": "Complete checked random-state or ID-field operation; called routines and static globals remain retained reference dependencies unless separately admitted."
     }
   ]
 }
