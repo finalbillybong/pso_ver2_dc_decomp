@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **41 exact functions in 32 modules**, replacing
-4,572 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **47 exact functions in 38 modules**, replacing
+4,944 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -10,6 +10,7 @@ verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 | --- | --- | --- | --- |
 | `operation_45f04` at `0x8c045f04` | 512 bytes | 46 differing bytes; first `0x8c045fdd` | Angle conversions and indirect dispatch |
 | `emit_5fbf8` at `0x8c05fbf8` | 388 bytes | 8 differing bytes; first `0x8c05fc56` | Two instruction-order pairs in the loop and final call |
+| `emit_or_update_slot` at `0x8c05fd7c` | 448 bytes | 4 differing bytes; first `0x8c05feba` | Shared final-call delay-slot order |
 | `signed_remainder` at `0x8c18e8a0` | 180 bytes | No complete match | Carry state, preserved registers and zero-divisor behavior |
 
 The queue is in `config/reconstruction-targets.json`. Scratch C++ virtual dispatch
@@ -17,7 +18,7 @@ reduces the operation diagnostic to 30 differing bytes, but is not admitted. Kee
 the fixed C compiler contract unchanged. Preserve repeated radius squaring and
 the observed skipped vector initialization; do not introduce speculative fixes.
 
-The last five admitted dependencies were `angle_difference` (28 bytes),
+An earlier five-function dependency batch included `angle_difference` (28 bytes),
 `operation_43fb4` (100), `angle_halfway` (24), `angle_step` (56), and
 `choose_emit_slot` (88). They preserve the original 34 matches and replace 296
 reference bytes. The two primary targets remain incomplete.
@@ -55,3 +56,18 @@ and final-call argument order at `8c05fd08/0e` remain. The operation is unchange
 All original 39 matches are preserved. Full details are in RECONSTRUCTION.md.
 The new listener layout uses declared, checked offsets. No compiler settings,
 comparison rules, game assets, runtime data or registration details changed.
+
+
+## Stage 17 checkpoint
+
+Six adjacent emission-control entries add 372 exact compiled bytes, preserving
+all previous 41 matches. Totals are 47 functions, 38 modules, 4,944 compiled bytes
+and 4,157,968 retained reference bytes. The related `emit_or_update_slot` is now
+448/4 and explicitly remains provisional. Both primary targets remain incomplete.
+All 174 trials and three rejected signed-division experiments are preserved in
+private scratch; sources and hypotheses are summarized in RECONSTRUCTION.md.
+Two fresh exact project builds, full-image comparison, the five-function proof
+and all 43 original tests pass. Source-only rejects the remaining gaps.
+Continue the shared call-order and angle-conversion investigations, then follow
+observed effect initialization and matrix/vector dependencies. Registration data,
+private runtime files and generated game content remain outside this repository.

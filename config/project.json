@@ -675,6 +675,156 @@
       "boundary_review": "Raw SH4 little-endian review: entry 0x8c0601a8, return delay slot at 0x8c0601f8, zero alignment at 0x8c0601fa, four literals 0x8c0601fc-0x8c06020c, adjacent entry 0x8c06020c. Full 100-byte C/O2 match independently twice with declared emit.h offsets; see reconstruction-stage16."
     },
     {
+      "id": "emission_setup_6020c",
+      "source": "src/effects/emission_setup_6020c.c",
+      "address": "0x8c06020c",
+      "entry": "_emission_setup_6020c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 328204,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "emission_setup_6020c",
+          "address": "0x8c06020c",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "83c2d30b1358af29549dd38a5a1735f6867b81d98d9076b20da63f8e1ff18190",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry 0x8c06020c; return delay 0x8c060268; alignment 0x8c06026a; eight literals 0x8c06026c-0x8c06028c; adjacent entry 0x8c06028c. Full 128-byte ordinary-C match independently twice with unchanged flags; see reconstruction-stage17."
+    },
+    {
+      "id": "emit_alternate_6028c",
+      "source": "src/effects/emit_alternate_6028c.c",
+      "address": "0x8c06028c",
+      "entry": "_emit_alternate_6028c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 328332,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "emit_alternate_6028c",
+          "address": "0x8c06028c",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "3bb38357e4c95ac922b586b09efac3fa8bae27deb0fc70c8b9a8b2a760b88895",
+      "symbols": {
+        "_emit_or_update_at": "0x8c05fd7c"
+      },
+      "boundary_review": "Raw little-endian SH4: entry 0x8c06028c; return delay 0x8c0602a4; alignment 0x8c0602a6; two literals 0x8c0602a8-0x8c0602b0; adjacent entry 0x8c0602b0. Full 36-byte ordinary-C match independently twice with unchanged flags; see reconstruction-stage17."
+    },
+    {
+      "id": "emit_lookup_602b0",
+      "source": "src/effects/emit_lookup_602b0.c",
+      "address": "0x8c0602b0",
+      "entry": "_emit_lookup_602b0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 328368,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "emit_lookup_602b0",
+          "address": "0x8c0602b0",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "3a9b03fab80ac617a628d74a9eab04717cea4cb88fee75f4e0ecf4c25fb1d7d3",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry 0x8c0602b0; tail-jump delay 0x8c0602ba; two literals 0x8c0602bc-0x8c0602c4; adjacent entry 0x8c0602c4. Full 20-byte ordinary-C match independently twice with unchanged flags; see reconstruction-stage17."
+    },
+    {
+      "id": "clear_emit_slot",
+      "source": "src/effects/clear_emit_slot.c",
+      "address": "0x8c0602c4",
+      "entry": "_clear_emit_slot",
+      "headers": [
+        "src/include/emit.h"
+      ],
+      "ranges": [
+        {
+          "offset": 328388,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_emit_slot",
+          "address": "0x8c0602c4",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "7a969481bf99eed45e39f0859c3b13dfc70b43d2d11d576867a7731321e42903",
+      "symbols": {
+        "_emit_slots": "0x8c468138",
+        "_emit_handles": "0x8c467a78"
+      },
+      "boundary_review": "Raw little-endian SH4: entry 0x8c0602c4; return delay 0x8c06030e; four literals 0x8c060310-0x8c060320; adjacent entry 0x8c060320. Full 92-byte ordinary-C match independently twice with unchanged flags; see reconstruction-stage17."
+    },
+    {
+      "id": "emit_control_60320",
+      "source": "src/effects/emit_control_60320.c",
+      "address": "0x8c060320",
+      "entry": "_emit_control_60320",
+      "headers": [
+        "src/include/emit.h"
+      ],
+      "ranges": [
+        {
+          "offset": 328480,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "emit_control_60320",
+          "address": "0x8c060320",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "2cfeb3fa51e7ebc60dd8aac8d458fd5ca433023e5151fe3a3f30ce8722d8ca06",
+      "symbols": {
+        "_emit_slots": "0x8c468138",
+        "_emit_handles": "0x8c467a78"
+      },
+      "boundary_review": "Raw little-endian SH4: entry 0x8c060320; return delay 0x8c060344; alignment 0x8c060346; three literals 0x8c060348-0x8c060354; adjacent entry 0x8c060354. Full 52-byte ordinary-C match independently twice with unchanged flags; see reconstruction-stage17."
+    },
+    {
+      "id": "reset_emit_control",
+      "source": "src/effects/reset_emit_control.c",
+      "address": "0x8c060354",
+      "entry": "_reset_emit_control",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 328532,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_emit_control",
+          "address": "0x8c060354",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "48b95a0cebf4419a7bbb1ae41f8f59f17a0a99ae1ef012033fe11fd5c71e0f1f",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry 0x8c060354; return delay 0x8c060372; three literals 0x8c060374-0x8c060380; adjacent entry 0x8c060380. Full 44-byte ordinary-C match independently twice with unchanged flags; see reconstruction-stage17."
+    },
+    {
       "id": "bind_id",
       "source": "src/effects/bind_id.c",
       "address": "0x8c0a7628",

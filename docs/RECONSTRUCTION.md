@@ -1,7 +1,3 @@
-> Historical reconstruction notes. Paths under `<scratch>` and local receipt files
-> refer to private, machine-specific evidence excluded from this repository.
-> See [BUILDING.md](BUILDING.md) to generate your own evidence.
-
 # Source reconstruction evidence
 
 The objective is source that compiles and links into the exact original decoded
@@ -748,3 +744,67 @@ preserves existing build artifacts. The new focused export is
 `function-dossiers/run-wi0p2pe3/receipt.json`; the original database is unchanged.
 The intermediate 40-function export `run-uk1huepw` is retained as historical evidence.
 These supporting matches do not replace either primary target's acceptance gate.
+
+
+## Adjacent emission controls and a shared scheduling blocker, stage 17
+
+Six more ordinary-C entries match their entire ranges, including literals and
+padding, with the compiler and flags unchanged:
+
+| Provisional entry | Address | Bytes |
+| --- | --- | ---: |
+| `emission_setup_6020c` | `0x8c06020c` | 128 |
+| `emit_alternate_6028c` | `0x8c06028c` | 36 |
+| `emit_lookup_602b0` | `0x8c0602b0` | 20 |
+| `clear_emit_slot` | `0x8c0602c4` | 92 |
+| `emit_control_60320` | `0x8c060320` | 52 |
+| `reset_emit_control` | `0x8c060354` | 44 |
+
+Setup retains the observed bounded poll and last state written by the callee;
+the reference does not initialize that output local. A named saved bound,
+postincrement and count initialization after the initial call reproduce it.
+The alternate wrapper requires a direct declaration to reproduce its fifth
+stack argument and call delay slot. The lookup uses the observed explicit byte
+stride. Slot control retains signed bounds 0..53, and reset preserves independent
+field stores and call order. Checked `emit.h` dependencies remain declared.
+Every final source matched in two independent compilations before integration.
+The manifest records return/tail-call delay slots, padding and adjacent boundaries.
+
+The related `emit_or_update_slot` at `0x8c05fd7c` is now a **448-byte candidate
+with four differing bytes** at `0x8c05feba` and `0x8c05fec0`. Delaying the saved
+reuse-argument copy, declaring offset before slot and scoping the kind column
+inside the loop reproduce the rest of the complete range. The remaining pair
+exchanges `mov #0,r7` with `mov r10,r5` across the final call's delay slot—the
+same blocker as the primary emission candidate. It remains provisional and is
+explicitly unresolved in the queue.
+
+The primary targets remain **512/46** and **388/8**; the scratch C++ operation
+remains 512/30. Register hints, parameter categories, typed row/array/union
+address forms, argument-copy orders, equivalent high-half expressions and
+ignored-result return declarations did not finish them. Three signed-division
+experiments introduced an unresolved `_l_divs` dependency and were rejected.
+All **174 trials**, source snapshots, hypotheses and comparison/compiler receipts
+are preserved in `reconstruction-stage17`; failed hypotheses should not be repeated
+without a new source or ABI reason. The signed-remainder exceptional ABI remains
+unresolved; no assembly or copied runtime was substituted.
+
+Verified totals: **47 matching functions / 38 modules / 4,944 compiled bytes /
+4,157,968 retained reference bytes**. All prior 41 matches are preserved. This
+stage replaces 372 bytes; continuous work since the original 34-function
+checkpoint adds 13 functions and 1,300 bytes. Two fresh exact project builds,
+the integrated-image comparison, five-function compiler proof and all 43 original
+tests pass. Source-only rejects remaining gaps and preserves existing artifacts.
+Focused export `function-dossiers/run-blqf0m8u/receipt.json` is current; the original
+database is unchanged. The primary batch remains incomplete.
+
+Reproduce the active comparisons with:
+
+```sh
+python3 -B tools/verify_source.py --check
+python3 -B tools/candidates.py operation_45f04 emit_5fbf8 emit_or_update_slot
+```
+
+Continue investigating the shared call scheduling and angle conversions; follow
+observed dependencies into effect initialization at `0x8c0a6ff0`, matrix/vector
+helpers and static data. Keep private settings, registration details and evidence
+out of the public repository. No gameplay or disc repacking was performed.
