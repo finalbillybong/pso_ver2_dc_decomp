@@ -1229,6 +1229,113 @@
       "boundary_review": "Raw little-endian SH4: entry0x8c033330, return delay0x8c0333e0, padding0x8c0333e2, six literal words0x8c0333e4..0x8c0333fc; adjacent reparent entry0x8c0333fc. Complete fixed-C match independently twice; see reconstruction-stage27.",
       "status": "matched",
       "reason": "Complete ordinary-C node description and recursive child traversal; referenced strings remain retained. Original primary targets remain unresolved."
+    },
+    {
+      "id": "initialize_hierarchy_root",
+      "source": "src/objects/initialize_hierarchy_root.c",
+      "address": "0x8c033498",
+      "entry": "_initialize_hierarchy_root",
+      "headers": [
+        "src/include/hierarchy_root.h"
+      ],
+      "ranges": [
+        {
+          "offset": 144536,
+          "size": 560
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_hierarchy_root",
+          "address": "0x8c033498",
+          "size": 560
+        }
+      ],
+      "reference_sha256": "f0c7a766a7930d41164775450cca848c2b0003408f283967d0dbbbfa8a78d2af",
+      "symbols": {
+        "_init_at": "0x8c0330e4",
+        "_heap_new_at": "0x8c12267c",
+        "_heap_init_at": "0x8c122688",
+        "_alloc_at": "0x8c122700",
+        "_heap_0": "0x8c4d97e0",
+        "_heap_1": "0x8c4d97e4",
+        "_root_child_0": "0x8c44be80",
+        "_root_child_1": "0x8c44be84",
+        "_root_child_2": "0x8c44be88",
+        "_root_child_3": "0x8c44be8c",
+        "_root_child_4": "0x8c44be90",
+        "_root_child_5": "0x8c44be94",
+        "_root_child_6": "0x8c44be98",
+        "_root_child_7": "0x8c44be9c",
+        "_root_child_8": "0x8c44bea0",
+        "_root_child_9": "0x8c44bea4",
+        "_root_name_0": "0x8c2e89d4",
+        "_root_name_1": "0x8c2e89d8",
+        "_root_name_2": "0x8c2e89dc",
+        "_root_name_3": "0x8c2e89e0",
+        "_root_name_4": "0x8c2e89e4",
+        "_root_name_5": "0x8c2e89e8",
+        "_root_name_6": "0x8c2e89ec",
+        "_root_name_7": "0x8c2e89f0",
+        "_root_name_8": "0x8c2e89f4",
+        "_root_name_9": "0x8c2e89f8",
+        "_root_name_10": "0x8c2e89fc"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c033498, return delay0x8c03364c, padding0x8c03364e, literal pool0x8c033650..0x8c0336c8, adjacent destructor0x8c0336c8. Complete fixed-C match independently twice; see reconstruction-stage28.",
+      "status": "matched",
+      "reason": "Complete ordinary-C hierarchy root lifecycle/output range; original primary targets remain unresolved."
+    },
+    {
+      "id": "destroy_hierarchy_root",
+      "source": "src/objects/destroy_hierarchy_root.c",
+      "address": "0x8c0336c8",
+      "entry": "_destroy_hierarchy_root",
+      "headers": [
+        "src/include/hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 145096,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_hierarchy_root",
+          "address": "0x8c0336c8",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "37d326acebda4f8363306e8c4e4c344a843aa731e281c5785e738342f1a9365d",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c0336c8, return delay0x8c033722, six literal words0x8c033724..0x8c03373c, adjacent entry0x8c03373c. Complete fixed-C match independently twice; see reconstruction-stage28.",
+      "status": "matched",
+      "reason": "Complete ordinary-C hierarchy root lifecycle/output range; original primary targets remain unresolved."
+    },
+    {
+      "id": "hierarchy_output",
+      "source": "src/objects/hierarchy_output.c",
+      "address": "0x8c033470",
+      "entry": "_hierarchy_output",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 144496,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "hierarchy_output",
+          "address": "0x8c033470",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "1d34a245e26e387bc504a512dd670aed784904459c96939975ca9b4ebf90623a",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033470, tail-call delay0x8c033474, padding0x8c033476, address literal0x8c033478, adjacent active gate0x8c03347c. Complete fixed-C match independently twice; see reconstruction-stage28.",
+      "status": "matched",
+      "reason": "Complete ordinary-C hierarchy root lifecycle/output range; original primary targets remain unresolved."
     }
   ]
 }

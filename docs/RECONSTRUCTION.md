@@ -1258,3 +1258,51 @@ incomplete: operation 512/46, emission 388/8, related emission/reuse 448/4.
 The two complete C++ visitor diagnostics remain unadmitted under the C-only
 requirement. Continue shared call scheduling, hierarchy dependencies and the
 referenced vector/matrix helpers.
+
+
+## Hierarchy root lifecycle, stage 28
+
+Three complete ordinary-C functions add **688 bytes**: root initialization at
+`0x8c033498–0x8c0336c8` (560), root destruction at `0x8c0336c8–0x8c03373c`
+(116), and output forwarding at `0x8c033470–0x8c03347c` (12). Totals are
+**80 functions / 69 modules / 9,544 compiled range bytes / 4,153,368 retained
+reference bytes**. All prior 77 functions, sources and headers are preserved.
+Since the original 34-function checkpoint, 46 supporting functions replace
+5,900 bytes. Referenced names, dispatch tables and global data remain retained.
+
+The root constructor homes its receiver, initializes two 12-byte heap objects,
+then creates ten 32-byte children and assigns their observed globals and names.
+The allocation checks and unconditional subsequent stores are preserved exactly;
+no speculative failure handling is added. A provisional root view checks name,
+dispatch and final short-field offsets. External declarations for observed calls,
+globals and name pointers reduce the initial 560/254 comparison to 560/5.
+Independent heap temporaries, scoped temporaries or an inline allocation helper
+resolve the last store/call scheduling difference. The scoped form is admitted.
+Comma expressions, a destination-pointer scope and an opaque heap type alone
+leave those five bytes unresolved. All literals and alignment match.
+
+The destructor restores dispatch, releases children, releases the two heaps,
+invokes the base destructor and tests the signed short release argument before
+freeing. Its return delay and six literal words match. The output wrapper's
+tail-call delay, alignment and address literal also match. Each final source was
+compiled independently twice before admission.
+
+Sixteen packed-argument lifetime trials do not improve emission: 388/8 and
+related 448/4 remain best. Nine C receiver experiments on the 52-byte visitor
+also fail: aggregate arguments use stack passing, and a variadic declaration
+emits 52 bytes but has nine differences and the wrong argument ABI. It is not a
+substitute for the observed virtual call. The exact C++ visitor diagnostics remain
+unadmitted. Operation remains 512/46; both original primary targets are incomplete.
+
+Raw vector-helper inspection records FIPR in the length and squared-length
+entries, and FIPR/FSRRA plus a floating return in the in-place normalization entry.
+These observations require further source reconstruction; no assembly or runtime
+object is admitted. The previously matched caller ignores that normalization
+return, as observed. Raw evidence remains private alongside 49 source trials,
+hypotheses and compiler/comparison receipts in `reconstruction-stage28`.
+
+Focused evidence is `function-dossiers/run-giwe1hme/receipt.json`; the original
+database is unchanged. Two fresh exact builds, full-image comparison, the
+five-function proof and all 43 original tests pass. Source-only rejects 4,153,368
+retained bytes without changing artifacts. Continue the shared call/angle
+scheduling investigation and the observed hierarchy and vector dependencies.
