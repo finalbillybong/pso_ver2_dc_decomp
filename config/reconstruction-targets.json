@@ -4808,6 +4808,65 @@
       "boundary_review": "Raw little-endian SH4 range through adjacent entry, including literals/alignment. Final readable source and checked provisional header independently exact twice; reconstruction-stage54.",
       "status": "matched",
       "reason": "Complete ID/context-filtered and direct squared XZ distance helpers. Object lookup, context global and vector subtract remain reference dependencies; original primary targets unresolved."
+    },
+    {
+      "id": "move_and_capture_position",
+      "source": "src/objects/move_and_capture_position.c",
+      "address": "0x8c0440a0",
+      "entry": "_move_and_capture_position",
+      "ranges": [
+        {
+          "offset": 213152,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "move_and_capture_position",
+          "address": "0x8c0440a0",
+          "size": 60
+        }
+      ],
+      "headers": [
+        "src/include/object_movement.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "87a765898af6ca0f22b7dbd2e4e051dede77f986f2fd48d79847bad6234bd2f7",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4 range through adjacent entry including literals/alignment. Final source and declared checked headers independently exact twice; reconstruction-stage55.",
+      "status": "matched",
+      "reason": "Complete vector turning, movement capture and capped-segment query helpers. Referenced angle, movement, matrix/query callees and static matrix remain reference dependencies; original primary targets unresolved."
+    },
+    {
+      "id": "query_capped_segment",
+      "source": "src/objects/query_capped_segment.c",
+      "address": "0x8c0440dc",
+      "entry": "_query_capped_segment",
+      "ranges": [
+        {
+          "offset": 213212,
+          "size": 252
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_capped_segment",
+          "address": "0x8c0440dc",
+          "size": 252
+        }
+      ],
+      "headers": [
+        "src/include/object_state.h",
+        "src/include/vector_query.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "17c66d0a88d201075a4961aa0561ae032dc03a609538eaec5730673a34222f31",
+      "symbols": {
+        "_push_at": "0x8c38ade4"
+      },
+      "boundary_review": "Raw little-endian SH4 range through adjacent entry including literals/alignment. Final source and declared checked headers independently exact twice; reconstruction-stage55.",
+      "status": "matched",
+      "reason": "Complete vector turning, movement capture and capped-segment query helpers. Referenced angle, movement, matrix/query callees and static matrix remain reference dependencies; original primary targets unresolved."
     }
   ]
 }

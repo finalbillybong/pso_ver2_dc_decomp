@@ -2813,3 +2813,64 @@ unchanged. Original primary operation/emission remain **512/30 and 388/8**,
 related reuse **448/4**, manager initialization **280/8**, scratch frame **332/8**
 and hexadecimal highlighting **144/8**. The primary batch remains incomplete;
 supporting matches do not replace its acceptance criteria.
+
+
+## Movement capture and capped segment query, stage 55
+
+Two complete ordinary-C functions add **312 bytes**: movement with position
+capture at **0x8c0440a0..0x8c0440dc** (60), and capped segment query at
+**0x8c0440dc..0x8c0441d8** (252). Totals are **210 functions / 194 modules /
+23,576 compiled range bytes / 4,139,336 retained reference bytes**, or **0.5663%
+whole-image coverage**. All 208 previous matches, module definitions and
+source/header hashes are preserved. Since the initial checkpoint, 176 functions
+replace 19,932 bytes. Code-only completion remains unknown; separately
+reconstructed static data remains zero.
+
+The new provisional ObjectMovementView checks position at 0x3c, orientation at
+0x64, captured position at 0x158 and target at 0x164. The header describes an
+observed prefix, not a full object allocation. Movement receives its Vector3
+argument by value in the caller's stack area, passes its address to the existing
+movement callee, and copies the object's post-call position only on success.
+The capped query reuses the existing checked ObjectStateView center field. It
+preserves a 90000 squared-XZ threshold, the 300-unit vector, original angle
+scale/divisor, matrix push/rotation/transform/pop, center addition and final
+query-to-boolean conversion. Recopying the input in the short-distance branch
+preserves the observed post-subtraction reads and possible alias behavior.
+Matrix data and unreconstructed movement, angle and query callees remain
+reference dependencies.
+
+Movement capture matches immediately. The capped query initially has eight
+mismatching bytes from push-callee/global-matrix literal order. An external push
+declaration reproduces the full range. External angle, rotate or transform
+declarations alone do not resolve it. Final readable sources with declared,
+checked header dependencies match twice independently before integration.
+
+An independently reconstructed 100-byte vector turning helper also matched,
+but the pre-integration overlap check found it already admitted as
+**operation_43fb4**. The first admission attempt stopped before any mutation;
+the duplicate was excluded, and its existing source/module remain unchanged.
+It receives no additional function or byte credit. Inlining that complete helper
+into the unmatched target-vector wrapper still produces 144 rather than 140
+bytes, so this source decomposition does not resolve the angle-conversion blocker.
+
+The next movement/target routine at **0x8c0441d8..0x8c044320** improves from
+332 versus 328 expected / 227 differences to **328/34**, first **0x8c044235**.
+Declaring the shared vector as an external aggregate restores base-plus-member
+addressing and removes extra absolute member-address literals; an external vector
+add declaration further fixes call ordering. The angle-conversion region remains
+unmatched. Reversing product operands, divisor constant expressions and scoped
+scale temporaries leave 34 differences; divide-before-multiply is worse, and
+reusing a stack vector component adds stores. This routine is not admitted.
+
+All **20 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage55`, with **no compiler/linker rejections**;
+the separate overlap-rejection receipt records the excluded duplicate. Two fresh
+exact builds, integrated-image comparison, five-function proof and all **53
+original-workspace tests** pass; the public suite remains **58 tests**. Source-only
+rejects 4,139,336 reference bytes without modifying artifacts. Focused exports use
+a disposable database copy after manifest/queue changes; the original database,
+compiler, base flags and full-range acceptance rules remain unchanged.
+Original primary operation/emission remain **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, scratch frame **332/8** and hexadecimal
+highlighting **144/8**. The primary batch remains incomplete; supporting matches
+do not replace its acceptance criteria.
