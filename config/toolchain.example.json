@@ -1,0 +1,32 @@
+{
+  "status": "unconfigured",
+  "reason": "CodeWarrior reproduces the five reviewed PSO samples. This identifies a compatible compiler/settings combination, not a unique original release or whole-game build configuration.",
+  "command": [
+    "python3",
+    "-B",
+    "{root}/tools/matching.py",
+    "--sample",
+    "{sample}",
+    "--source",
+    "{source}",
+    "--output",
+    "{output}"
+  ],
+  "executables": {},
+  "flags": [
+    "-proc",
+    "SH4",
+    "-endian",
+    "little",
+    "-mw_fp",
+    "hardware",
+    "-Cpp_exceptions",
+    "off",
+    "-O2"
+  ],
+  "load_address": "0x8c010000",
+  "compiler": "CodeWarrior Dreamcast 2.4 Engineering Build, Mar 21 2000",
+  "linker": "GNU binutils 2.44, shlelf, no relaxation",
+  "installation_receipt": "config/matching-installed.json",
+  "original_compiler_uniquely_identified": false
+}

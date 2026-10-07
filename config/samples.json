@@ -1,0 +1,157 @@
+{
+  "status": "frozen",
+  "required_categories": [
+    "integer",
+    "branch",
+    "loop",
+    "structure_and_call",
+    "floating_point"
+  ],
+  "selection_note": "Five small independent functions selected before GCC experiments. Diagnostic coverage only, not a statistical sample of the game. Complete instructions and local literal pools included. The first inferred name was corrected from mask_clear to mask_any after reviewing TST/SUBC semantics; addresses and compared ranges did not change.",
+  "samples": [
+    {
+      "id": "mask_any",
+      "category": "integer",
+      "source": "src/samples/mask_any.c",
+      "entry": "_mask_any",
+      "address": "0x8c027064",
+      "instruction_bytes": 12,
+      "ranges": [
+        {
+          "offset": 94308,
+          "size": 12
+        }
+      ],
+      "reference_sha256": "1230490039c36c0e696cb015ad3abc87b832ebd4d69539d88911108b55948dce",
+      "boundary_review": {
+        "method": "Manual review of contiguous SH-4 instructions, control-flow exits, delay slots, referenced literal pools, and next function start; cross-checked against Ghidra function entries.",
+        "reference_sites": [
+          "0x8c026f54",
+          "0x8c027038"
+        ],
+        "literal_pool": [],
+        "alignment_bytes": 0,
+        "confidence": "high for byte boundaries; names, types, and gameplay meanings inferred",
+        "runtime_verified": false
+      }
+    },
+    {
+      "id": "clamp_int",
+      "category": "branch",
+      "source": "src/samples/clamp_int.c",
+      "entry": "_clamp_int",
+      "address": "0x8c0c51c8",
+      "instruction_bytes": 16,
+      "ranges": [
+        {
+          "offset": 741832,
+          "size": 16
+        }
+      ],
+      "reference_sha256": "c69927a4bcf8926e1e764b24886c69bfe5034f96e8f4473071d7341d9b0e1257",
+      "boundary_review": {
+        "method": "Manual review of contiguous SH-4 instructions, control-flow exits, delay slots, referenced literal pools, and next function start; cross-checked against Ghidra function entries.",
+        "reference_sites": [
+          "0x8c02289a",
+          "0x8c218fc2"
+        ],
+        "literal_pool": [],
+        "alignment_bytes": 0,
+        "confidence": "high for byte boundaries; names, types, and gameplay meanings inferred",
+        "runtime_verified": false
+      }
+    },
+    {
+      "id": "init_bytes",
+      "category": "loop",
+      "source": "src/samples/init_bytes.c",
+      "entry": "_init_bytes",
+      "address": "0x8c027cd4",
+      "instruction_bytes": 36,
+      "ranges": [
+        {
+          "offset": 97492,
+          "size": 40
+        }
+      ],
+      "reference_sha256": "4476af1323b42197f92c2782b8f5cdc4df1ef578c4fb6a1be3923efa6f7f663e",
+      "boundary_review": {
+        "method": "Manual review of contiguous SH-4 instructions, control-flow exits, delay slots, referenced literal pools, and next function start; cross-checked against Ghidra function entries.",
+        "reference_sites": [
+          "0x8c027a7e",
+          "0x8c027ab0"
+        ],
+        "literal_pool": [
+          {
+            "address": "0x8c027cf8",
+            "size": 4,
+            "value": "0x00000080",
+            "role": "flag mask"
+          }
+        ],
+        "alignment_bytes": 0,
+        "confidence": "high for byte boundaries; names, types, and gameplay meanings inferred",
+        "runtime_verified": false
+      }
+    },
+    {
+      "id": "query_flag",
+      "category": "structure_and_call",
+      "source": "src/samples/query_flag.c",
+      "entry": "_query_flag",
+      "address": "0x8c029f80",
+      "instruction_bytes": 30,
+      "ranges": [
+        {
+          "offset": 106368,
+          "size": 36
+        }
+      ],
+      "reference_sha256": "94fcf0cc0d23f2c86b4eb0d0355e61a4f1a9a3004c43b4cb0b1cc028eff506dc",
+      "boundary_review": {
+        "method": "Manual review of contiguous SH-4 instructions, control-flow exits, delay slots, referenced literal pools, and next function start; cross-checked against Ghidra function entries.",
+        "reference_sites": [
+          "0x8c029b00",
+          "0x8c03b4c8"
+        ],
+        "literal_pool": [
+          {
+            "address": "0x8c029fa0",
+            "size": 4,
+            "value": "0x8c02a980",
+            "role": "external call target"
+          }
+        ],
+        "alignment_bytes": 2,
+        "confidence": "high for byte boundaries; names, types, and gameplay meanings inferred",
+        "runtime_verified": false
+      }
+    },
+    {
+      "id": "distance_xz",
+      "category": "floating_point",
+      "source": "src/samples/distance_xz.c",
+      "entry": "_distance_xz",
+      "address": "0x8c03f0a0",
+      "instruction_bytes": 24,
+      "ranges": [
+        {
+          "offset": 192672,
+          "size": 24
+        }
+      ],
+      "reference_sha256": "69c62bd0af36d2f49303729aa7fe7d2daa8beaeda06968da2607d44d1ed55e88",
+      "boundary_review": {
+        "method": "Manual review of contiguous SH-4 instructions, control-flow exits, delay slots, referenced literal pools, and next function start; cross-checked against Ghidra function entries.",
+        "reference_sites": [
+          "0x8c032668",
+          "0x8c05069c"
+        ],
+        "literal_pool": [],
+        "alignment_bytes": 0,
+        "confidence": "high for byte boundaries; names, types, and gameplay meanings inferred",
+        "runtime_verified": false
+      }
+    }
+  ]
+}

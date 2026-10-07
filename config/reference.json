@@ -1,0 +1,47 @@
+{
+  "base_lba": 45000,
+  "files": {
+    "1ST_READ.BIN": {
+      "directory": false,
+      "iso_offset": 1032034304,
+      "lba": 548923,
+      "raw_track_verified": true,
+      "sha256": "f1178af0a4ec1b117a8ebd620b38ea7556cb20b451951dbb3ed06c7ea7069b4a",
+      "size": 156976
+    },
+    "DP_ADDRESS.JPN": {
+      "directory": false,
+      "iso_offset": 1029672960,
+      "lba": 547770,
+      "raw_track_verified": true,
+      "sha256": "cb7f08b10c0c08245a52e88a1ed643d02c607337889568b7cfdda82a631316a3",
+      "size": 2326823
+    },
+    "IWASHI.SEA": {
+      "directory": false,
+      "iso_offset": 1032017920,
+      "lba": 548915,
+      "raw_track_verified": true,
+      "sha256": "bd7af8ab7aa43e0cc3720a64d556af42a6d474edc419b54de58a27ea9b1134f5",
+      "size": 16384
+    },
+    "KATSUO.SEA": {
+      "directory": false,
+      "iso_offset": 1032001536,
+      "lba": 548907,
+      "raw_track_verified": true,
+      "sha256": "62f1d5552206bd59d958eb5364a5d57cd6d9139f0e1fd50ac4a14d1d53982f5f",
+      "size": 15360
+    }
+  },
+  "identity": {
+    "boot_file": "1ST_READ.BIN",
+    "date": "20020110",
+    "product": "MK-5119350",
+    "title": "PSO VER.2",
+    "version": "V1.000"
+  },
+  "inventory_entries": 6201,
+  "iso_sha256": "04822f966887317fbf4016754804be8a8423eeb0bc20097dfaf3dcf6d4cc60f2",
+  "track_sha256": "bc9b33f6cc3be5951abb138fb153d5450bfa78c9774cf79992cd56922af48cc5"
+}

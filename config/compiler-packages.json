@@ -1,0 +1,31 @@
+{
+  "compilers": [
+    {
+      "id": "shc-v5.0r31",
+      "url": "https://github.com/decompme/compilers/releases/download/compilers/shc-v5.0r31.tar.gz",
+      "sha256": "1b67fce972207f3c72c72e1fd85db0371a5ef504f886a618079b25f1889e936b",
+      "published_digest": "sha256:1b67fce972207f3c72c72e1fd85db0371a5ef504f886a618079b25f1889e936b",
+      "asset_id": 303427503
+    },
+    {
+      "id": "shc-v5.1r01",
+      "url": "https://github.com/decompme/compilers/releases/download/compilers/shc-v5.1r01.tar.gz",
+      "sha256": "d42a0ff0f7c43bd19319cbc926cfb5b96f76827d6aafb995857b60b76c863cc0",
+      "published_digest": "sha256:d42a0ff0f7c43bd19319cbc926cfb5b96f76827d6aafb995857b60b76c863cc0",
+      "asset_id": 303427497
+    },
+    {
+      "id": "shc-v5.1r13",
+      "url": "https://github.com/decompme/compilers/releases/download/compilers/shc-v5.1r13.tar.gz",
+      "sha256": "0da9982adc576171d93ceeeedff15c946fc570b0473e39b388e18d9e4ee1427a",
+      "published_digest": "sha256:0da9982adc576171d93ceeeedff15c946fc570b0473e39b388e18d9e4ee1427a",
+      "asset_id": 304535031
+    }
+  ],
+  "runner": {
+    "url": "https://github.com/decompals/wibo/releases/download/1.2.0/wibo-x86_64",
+    "sha256": "13f86a2d618f0dbe67179d349625345eabf9b46450295cb4c904e49f6aff85af",
+    "published_digest": "sha256:13f86a2d618f0dbe67179d349625345eabf9b46450295cb4c904e49f6aff85af",
+    "version": "1.2.0"
+  }
+}

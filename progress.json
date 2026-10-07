@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "version": "pal",
+  "status": "hybrid_reconstruction",
+  "verification_date": "2026-10-07",
+  "matching_functions": 39,
+  "matching_modules": 30,
+  "compiled_range_bytes": 3940,
+  "decoded_image_bytes": 4162912,
+  "retained_reference_bytes": 4158972,
+  "image_coverage_percent": 0.09464529,
+  "standalone_reconstructed_data_bytes": 0,
+  "code_completion_percent": null,
+  "total_functions": null,
+  "source_only_build_available": false,
+  "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
+  "metric": "Complete compiled function ranges, including literals and padding, divided by the entire decoded image. Not a code-only completion percentage.",
+  "verification": "Locally verified exact builds; CI validates the recorded input hashes and progress accounting."
+}

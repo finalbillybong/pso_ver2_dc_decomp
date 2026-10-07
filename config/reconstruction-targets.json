@@ -1,0 +1,202 @@
+{
+  "targets": [
+    {
+      "id": "operation_45f04",
+      "source": "src/provisional/operation_45f04.c",
+      "address": "0x8c045f04",
+      "entry": "_operation_45f04",
+      "headers": [
+        "src/include/spatial.h"
+      ],
+      "ranges": [
+        {
+          "offset": 220932,
+          "size": 512
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_45f04",
+          "address": "0x8c045f04",
+          "size": 512
+        }
+      ],
+      "reference_sha256": "ba0d9c64726f46c36f3a7e2da70ef522ae4a4920692279c88129f93df7424f95",
+      "symbols": {
+        "_matrix_translate_at": "0x8c3829bc",
+        "_matrix_transform_at": "0x8c3be280",
+        "_angle_difference_at": "0x8c0c52f4"
+      },
+      "status": "unresolved",
+      "reason": "Full 512-byte candidate, 46 bytes differ; first at 0x8c045fdd. Explicit entry-radius temporary resolves the radius region. Angle-conversion scheduling and indirect dispatch remain unresolved."
+    },
+    {
+      "id": "emit_5fbf8",
+      "source": "src/provisional/emit_5fbf8.c",
+      "address": "0x8c05fbf8",
+      "entry": "_emit_5fbf8",
+      "headers": [
+        "src/include/emit.h"
+      ],
+      "ranges": [
+        {
+          "offset": 326648,
+          "size": 388
+        }
+      ],
+      "functions": [
+        {
+          "name": "emit_5fbf8",
+          "address": "0x8c05fbf8",
+          "size": 388
+        }
+      ],
+      "reference_sha256": "0c2040ec10a5b6b83cf479a9ca4e87ffac71bfe30c6dae84ee18e3f10cbeaec6",
+      "symbols": {
+        "_emit_slots": "0x8c468138",
+        "_emit_handles": "0x8c467a78"
+      },
+      "status": "unresolved",
+      "reason": "Full 388-byte candidate, 18 bytes differ; first at 0x8c05fc43. Verified second prepare-slot argument and signed-byte call types resolve zero-store and byte-load differences. Remaining: 14 loop register/scheduling bytes and 4 final-call scheduling bytes. No full-range match."
+    },
+    {
+      "id": "signed_remainder",
+      "address": "0x8c18e8a0",
+      "end": "0x8c18e954",
+      "status": "unresolved",
+      "reason": "180-byte __l_mods uses 32 rotcl/div1 pairs, preserves r4, returns remainder in r0 with T=0; zero divisor leaves incoming r0 unchanged with T=1. Nonrecursive ordinary-C trials emit 68/72 bytes, not exact, and do not reproduce the exceptional ABI. Percent expression emits a call to this same retained helper. See config/candidate-batch-validation.json."
+    },
+    {
+      "id": "angle_difference",
+      "source": "src/math/angle_difference.c",
+      "address": "0x8c0c52f4",
+      "entry": "_angle_difference",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 742132,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "angle_difference",
+          "address": "0x8c0c52f4",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "774822b451f992f6ab1c1229d5004ef1ac3eae4ecc4a99f7db4e1a1ac52978a7",
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c52f4, return delay slot through 0x8c0c5308, zero alignment word at 0x8c0c530a, 0x0000ffff literal at 0x8c0c530c, adjacent entry 0x8c0c5310. Full 28-byte match at unchanged compiler/flags; see reconstruction-stage11 and docs/RECONSTRUCTION.md.",
+      "status": "matched",
+      "reason": "Complete 28-byte fixed-C match, including return delay slot, alignment and literal; admitted as an operation_45f04 dependency. The primary operation and emission targets remain unresolved."
+    },
+    {
+      "id": "operation_43fb4",
+      "source": "src/objects/operation_43fb4.c",
+      "address": "0x8c043fb4",
+      "entry": "_operation_43fb4",
+      "headers": [
+        "src/include/spatial.h"
+      ],
+      "ranges": [
+        {
+          "offset": 212916,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_43fb4",
+          "address": "0x8c043fb4",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "7e9b0beb76ec7fd0a6c46d23b55a8511f23803643cd6ee4cafe63525f22ade66",
+      "symbols": {
+        "_angle_difference": "0x8c0c52f4"
+      },
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c043fb4, return delay slot through 0x8c044002, five 4-byte literals at 0x8c044004\u20130x8c044018, next entry 0x8c044018. Full 100-byte fixed-C match with checked SpatialObject angle and Vec3 layout; see reconstruction-stage12.",
+      "status": "matched",
+      "reason": "Complete 100-byte fixed-C match, including all five literals and return delay slot; identified while reducing the operation angle-scheduling mismatch. Both primary targets remain unresolved."
+    },
+    {
+      "id": "angle_halfway",
+      "source": "src/math/angle_halfway.c",
+      "address": "0x8c0c4fc8",
+      "entry": "_angle_halfway",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 741320,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "angle_halfway",
+          "address": "0x8c0c4fc8",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "50e3c599d467baa9e1c268e978475b93aa0746f1516249ac386a7afdb67ca08d",
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c4fc8, return delay slot at 0x8c0c4fd8, zero alignment word at 0x8c0c4fda, 0x0000ffff literal at 0x8c0c4fdc, next entry 0x8c0c4fe0. Full 24-byte fixed-C match. See reconstruction-stage13.",
+      "status": "matched",
+      "reason": "Complete fixed-C match including literals/padding, identified while examining the two actual angle callers. Supporting match; neither primary target is resolved."
+    },
+    {
+      "id": "angle_step",
+      "source": "src/math/angle_step.c",
+      "address": "0x8c0c4f90",
+      "entry": "_angle_step",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 741264,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "angle_step",
+          "address": "0x8c0c4f90",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "6551fb1820a78259c9b32f8c7e090e367f97727804bdbccb6d540951538eb305",
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c4f90; early return at 0x8c0c4fa6 with nop delay slot; final return delay slot at 0x8c0c4fbc; zero alignment at 0x8c0c4fbe; literals 0x0000ffff and 0x00008000 at 0x8c0c4fc0/0x8c0c4fc4; next entry 0x8c0c4fc8. Full 56-byte fixed-C match. See reconstruction-stage13.",
+      "status": "matched",
+      "reason": "Complete fixed-C match including literals/padding, identified while examining the two actual angle callers. Supporting match; neither primary target is resolved."
+    },
+    {
+      "id": "choose_emit_slot",
+      "source": "src/effects/choose_emit_slot.c",
+      "address": "0x8c05ff3c",
+      "entry": "_choose_emit_slot",
+      "headers": [
+        "src/include/emit.h",
+        "src/include/emit_secondary.h"
+      ],
+      "ranges": [
+        {
+          "offset": 327484,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "choose_emit_slot",
+          "address": "0x8c05ff3c",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "79c74d0f8726212233a0197a7c0642c4c868e36330dfc44591da0f948d9d32de",
+      "symbols": {
+        "_secondary_table": "0x8c467b50",
+        "_emit_slots": "0x8c468138"
+      },
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c05ff3c; return and delay slot at 0x8c05ff82/84; zero alignment word at 0x8c05ff86; literals at 0x8c05ff88/8c/90; adjacent prepare-slot entry starts 0x8c05ff94. Full 88-byte fixed-C match. See reconstruction-stage14.",
+      "status": "matched",
+      "reason": "Complete 88-byte ordinary-C match, including all literals and padding. Both table layouts checked; direct dependency of unresolved emit_5fbf8. Supporting match does not resolve either primary target."
+    }
+  ]
+}

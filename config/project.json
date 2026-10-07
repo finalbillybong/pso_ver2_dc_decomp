@@ -1,0 +1,807 @@
+{
+  "objective": "Complete matching source reconstruction of the original decoded European Dreamcast PSO Ver. 2 executable",
+  "status": "in_progress",
+  "base_address": "0x8c010000",
+  "decoded_reference": "config/decoded.json",
+  "units": [
+    {
+      "id": "mask_any",
+      "address": "0x8c027064",
+      "source": "src/samples/mask_any.c",
+      "entry": "_mask_any",
+      "ranges": [
+        {
+          "offset": 94308,
+          "size": 12
+        }
+      ],
+      "reference_sha256": "1230490039c36c0e696cb015ad3abc87b832ebd4d69539d88911108b55948dce",
+      "functions": [
+        {
+          "name": "mask_any",
+          "address": "0x8c027064",
+          "size": 12
+        }
+      ]
+    },
+    {
+      "id": "init_bytes",
+      "address": "0x8c027cd4",
+      "source": "src/samples/init_bytes.c",
+      "entry": "_init_bytes",
+      "ranges": [
+        {
+          "offset": 97492,
+          "size": 40
+        }
+      ],
+      "reference_sha256": "4476af1323b42197f92c2782b8f5cdc4df1ef578c4fb6a1be3923efa6f7f663e",
+      "functions": [
+        {
+          "name": "init_bytes",
+          "address": "0x8c027cd4",
+          "size": 40
+        }
+      ]
+    },
+    {
+      "id": "object_flags",
+      "address": "0x8c029f80",
+      "source": "src/objects/object_flags.c",
+      "entry": "_query_flag_8",
+      "ranges": [
+        {
+          "offset": 106368,
+          "size": 108
+        }
+      ],
+      "reference_sha256": "4d873b0154617a9e680449ad3953f69f90d958b7a3eb4ff9f795356fffebda9d",
+      "functions": [
+        {
+          "name": "query_flag_8",
+          "address": "0x8c029f80",
+          "size": 36
+        },
+        {
+          "name": "query_flag_16",
+          "address": "0x8c029fa4",
+          "size": 36
+        },
+        {
+          "name": "query_flag_32",
+          "address": "0x8c029fc8",
+          "size": 36
+        }
+      ],
+      "boundary_review": "Manually reviewed instruction sequence, returns and delay slots, local literal pools, inter-function alignment and adjacent entries. Whole module byte comparison. Names/types inferred; runtime roles not established.",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ]
+    },
+    {
+      "id": "object_actions",
+      "address": "0x8c029fec",
+      "source": "src/objects/object_actions.c",
+      "entry": "_object_action_0",
+      "ranges": [
+        {
+          "offset": 106476,
+          "size": 336
+        }
+      ],
+      "reference_sha256": "2ed549dea7eeac4b346274f6b3c2e1a7d8ae607237836f119560a743621c0167",
+      "functions": [
+        {
+          "name": "object_action_0",
+          "address": "0x8c029fec",
+          "size": 56
+        },
+        {
+          "name": "object_action_1",
+          "address": "0x8c02a024",
+          "size": 56
+        },
+        {
+          "name": "object_action_2",
+          "address": "0x8c02a05c",
+          "size": 56
+        },
+        {
+          "name": "object_action_3",
+          "address": "0x8c02a094",
+          "size": 56
+        },
+        {
+          "name": "object_action_4",
+          "address": "0x8c02a0cc",
+          "size": 56
+        },
+        {
+          "name": "object_action_5",
+          "address": "0x8c02a104",
+          "size": 56
+        }
+      ],
+      "boundary_review": "Manually reviewed instruction sequence, returns and delay slots, local literal pools, inter-function alignment and adjacent entries. Whole module byte comparison. Names/types inferred; runtime roles not established.",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ]
+    },
+    {
+      "id": "object_forward",
+      "address": "0x8c02a13c",
+      "source": "src/objects/object_forward.c",
+      "entry": "_object_forward_0",
+      "ranges": [
+        {
+          "offset": 106812,
+          "size": 88
+        }
+      ],
+      "reference_sha256": "1001dd915f53ffd7e94e7f8a1fce1b5ad2064b7521dc40699d9403ae16bc7bd8",
+      "functions": [
+        {
+          "name": "object_forward_0",
+          "address": "0x8c02a13c",
+          "size": 44
+        },
+        {
+          "name": "object_forward_1",
+          "address": "0x8c02a168",
+          "size": 44
+        }
+      ],
+      "boundary_review": "Manually reviewed instruction sequence, returns and delay slots, local literal pools, inter-function alignment and adjacent entries. Whole module byte comparison. Names/types inferred; runtime roles not established.",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ]
+    },
+    {
+      "id": "object_visit",
+      "address": "0x8c02a94c",
+      "source": "src/objects/object_visit.c",
+      "entry": "_object_visit",
+      "ranges": [
+        {
+          "offset": 108876,
+          "size": 52
+        }
+      ],
+      "reference_sha256": "a4b45e42bd0bb10f0564f45c5e1a0588343be98b75c250555e1e2768405c6c77",
+      "functions": [
+        {
+          "name": "object_visit",
+          "address": "0x8c02a94c",
+          "size": 52
+        }
+      ],
+      "boundary_review": "Manually reviewed instruction sequence, returns and delay slots, local literal pools, inter-function alignment and adjacent entries. Whole module byte comparison. Names/types inferred; runtime roles not established."
+    },
+    {
+      "id": "object_ready",
+      "address": "0x8c02a980",
+      "source": "src/objects/object_ready.c",
+      "entry": "_object_ready",
+      "ranges": [
+        {
+          "offset": 108928,
+          "size": 24
+        }
+      ],
+      "reference_sha256": "1a94216f29b9cb963ec2fdcad2dae4892cf107d037cddd9f261fd5bc98d0e31a",
+      "functions": [
+        {
+          "name": "object_ready",
+          "address": "0x8c02a980",
+          "size": 24
+        }
+      ],
+      "boundary_review": "Manually reviewed instruction sequence, returns and delay slots, local literal pools, inter-function alignment and adjacent entries. Whole module byte comparison. Names/types inferred; runtime roles not established.",
+      "headers": [
+        "src/include/object.h"
+      ]
+    },
+    {
+      "id": "object_blocked",
+      "address": "0x8c02b008",
+      "source": "src/objects/object_blocked.c",
+      "entry": "_object_blocked",
+      "ranges": [
+        {
+          "offset": 110600,
+          "size": 12
+        }
+      ],
+      "reference_sha256": "e637fceec8ef0f9660f9959ad6b6fa20adaadd1ca663b01d48109bc0db8e6836",
+      "functions": [
+        {
+          "name": "object_blocked",
+          "address": "0x8c02b008",
+          "size": 12
+        }
+      ],
+      "boundary_review": "Manually reviewed instruction sequence, returns and delay slots, local literal pools, inter-function alignment and adjacent entries. Whole module byte comparison. Names/types inferred; runtime roles not established.",
+      "headers": [
+        "src/include/object.h"
+      ]
+    },
+    {
+      "id": "distance_xz",
+      "address": "0x8c03f0a0",
+      "source": "src/samples/distance_xz.c",
+      "entry": "_distance_xz",
+      "ranges": [
+        {
+          "offset": 192672,
+          "size": 24
+        }
+      ],
+      "reference_sha256": "69c62bd0af36d2f49303729aa7fe7d2daa8beaeda06968da2607d44d1ed55e88",
+      "functions": [
+        {
+          "name": "distance_xz",
+          "address": "0x8c03f0a0",
+          "size": 24
+        }
+      ]
+    },
+    {
+      "id": "clamp_int",
+      "address": "0x8c0c51c8",
+      "source": "src/samples/clamp_int.c",
+      "entry": "_clamp_int",
+      "ranges": [
+        {
+          "offset": 741832,
+          "size": 16
+        }
+      ],
+      "reference_sha256": "c69927a4bcf8926e1e764b24886c69bfe5034f96e8f4473071d7341d9b0e1257",
+      "functions": [
+        {
+          "name": "clamp_int",
+          "address": "0x8c0c51c8",
+          "size": 16
+        }
+      ]
+    },
+    {
+      "id": "operation_455ac",
+      "address": "0x8c0455ac",
+      "source": "src/objects/operation_455ac.c",
+      "entry": "_operation_455ac",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ],
+      "symbols": {
+        "__l_mods": "0x8c18e8a0",
+        "_effect_emit_at": "0x8c05fbf8",
+        "_effect_extra_at": "0x8c0b6394"
+      },
+      "ranges": [
+        {
+          "offset": 218540,
+          "size": 248
+        }
+      ],
+      "reference_sha256": "668a02c11a9c2f8cb4b2e8a2c2843c97ec335a1f4eced50c53cf50a82d50f0e3",
+      "functions": [
+        {
+          "name": "operation_455ac",
+          "address": "0x8c0455ac",
+          "size": 248
+        }
+      ],
+      "boundary_review": "Reviewed branches, returns and delay slots, local literal references, alignment, adjacent entries and callers. Full range through next entry, including literal pool. See docs/OBJECT_OPERATIONS.md."
+    },
+    {
+      "id": "operation_456a4",
+      "address": "0x8c0456a4",
+      "source": "src/objects/operation_456a4.c",
+      "entry": "_operation_456a4",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ],
+      "symbols": {
+        "__l_mods": "0x8c18e8a0",
+        "_effect_emit_at": "0x8c05fbf8",
+        "_effect_extra_at": "0x8c0b6394"
+      },
+      "ranges": [
+        {
+          "offset": 218788,
+          "size": 416
+        }
+      ],
+      "reference_sha256": "d21d5f699f0e0042de1d31f6f3674672bd922c96d1dbacad7cd90f1edba869f2",
+      "functions": [
+        {
+          "name": "operation_456a4",
+          "address": "0x8c0456a4",
+          "size": 416
+        }
+      ],
+      "boundary_review": "Reviewed branches, returns and delay slots, local literal references, alignment, adjacent entries and callers. Full range through next entry, including literal pool. See docs/OBJECT_OPERATIONS.md."
+    },
+    {
+      "id": "operation_45844",
+      "address": "0x8c045844",
+      "source": "src/objects/operation_45844.c",
+      "entry": "_operation_45844",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ],
+      "symbols": {
+        "__l_mods": "0x8c18e8a0",
+        "_effect_emit_at": "0x8c05fbf8",
+        "_effect_extra_at": "0x8c0b6394"
+      },
+      "ranges": [
+        {
+          "offset": 219204,
+          "size": 204
+        }
+      ],
+      "reference_sha256": "bced6fc05a8ae9aa941fed7a7843ddd0ad9199f0cc3c1ca0fd6a1e5200cdadc2",
+      "functions": [
+        {
+          "name": "operation_45844",
+          "address": "0x8c045844",
+          "size": 204
+        }
+      ],
+      "boundary_review": "Reviewed branches, returns and delay slots, local literal references, alignment, adjacent entries and callers. Full range through next entry, including literal pool. See docs/OBJECT_OPERATIONS.md."
+    },
+    {
+      "id": "operation_45910",
+      "address": "0x8c045910",
+      "source": "src/objects/operation_45910.c",
+      "entry": "_operation_45910",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ],
+      "symbols": {
+        "__l_mods": "0x8c18e8a0",
+        "_effect_emit_at": "0x8c05fbf8",
+        "_effect_extra_at": "0x8c0b6394"
+      },
+      "ranges": [
+        {
+          "offset": 219408,
+          "size": 200
+        }
+      ],
+      "reference_sha256": "e1f61ca673576a445daa3c1de6b729706510b254ab6b6783089e6749148473a9",
+      "functions": [
+        {
+          "name": "operation_45910",
+          "address": "0x8c045910",
+          "size": 200
+        }
+      ],
+      "boundary_review": "Reviewed branches, returns and delay slots, local literal references, alignment, adjacent entries and callers. Full range through next entry, including literal pool. See docs/OBJECT_OPERATIONS.md."
+    },
+    {
+      "id": "operation_459d8",
+      "address": "0x8c0459d8",
+      "source": "src/objects/operation_459d8.c",
+      "entry": "_operation_459d8",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ],
+      "symbols": {
+        "__l_mods": "0x8c18e8a0",
+        "_effect_emit_at": "0x8c05fbf8",
+        "_effect_extra_at": "0x8c0b6394"
+      },
+      "ranges": [
+        {
+          "offset": 219608,
+          "size": 180
+        }
+      ],
+      "reference_sha256": "079ed15658b09e8d65198739ea62da6269fe603ec6dd05630a95359984f4a4a7",
+      "functions": [
+        {
+          "name": "operation_459d8",
+          "address": "0x8c0459d8",
+          "size": 180
+        }
+      ],
+      "boundary_review": "Reviewed branches, returns and delay slots, local literal references, alignment, adjacent entries and callers. Full range through next entry, including literal pool. See docs/OBJECT_OPERATIONS.md."
+    },
+    {
+      "id": "operation_45a8c",
+      "address": "0x8c045a8c",
+      "source": "src/objects/operation_45a8c.c",
+      "entry": "_operation_45a8c",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ],
+      "symbols": {
+        "__l_mods": "0x8c18e8a0",
+        "_effect_emit_at": "0x8c05fbf8",
+        "_effect_extra_at": "0x8c0b6394"
+      },
+      "ranges": [
+        {
+          "offset": 219788,
+          "size": 256
+        }
+      ],
+      "reference_sha256": "272568bd50f61c6ec77f06fba7d0e9a5e28b9c77b814ace0bd5d35f73de2ca17",
+      "functions": [
+        {
+          "name": "operation_45a8c",
+          "address": "0x8c045a8c",
+          "size": 256
+        }
+      ],
+      "boundary_review": "Reviewed branches, returns and delay slots, local literal references, alignment, adjacent entries and callers. Full range through next entry, including literal pool. See docs/OBJECT_OPERATIONS.md."
+    },
+    {
+      "id": "operation_45b8c",
+      "address": "0x8c045b8c",
+      "source": "src/objects/operation_45b8c.c",
+      "entry": "_operation_45b8c",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ],
+      "symbols": {
+        "__l_mods": "0x8c18e8a0",
+        "_effect_emit_at": "0x8c05fbf8",
+        "_effect_extra_at": "0x8c0b6394"
+      },
+      "ranges": [
+        {
+          "offset": 220044,
+          "size": 480
+        }
+      ],
+      "reference_sha256": "2589f4458e0b1d3565714e203698d612b9251361288c7ac7bb3fa092522d0774",
+      "functions": [
+        {
+          "name": "operation_45b8c",
+          "address": "0x8c045b8c",
+          "size": 480
+        }
+      ],
+      "boundary_review": "Reviewed branches, returns and delay slots, local literal references, alignment, adjacent entries and callers. Full range through next entry, including literal pool. See docs/OBJECT_OPERATIONS.md."
+    },
+    {
+      "id": "operation_45d6c",
+      "address": "0x8c045d6c",
+      "source": "src/objects/operation_45d6c.c",
+      "entry": "_operation_45d6c",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ],
+      "symbols": {
+        "__l_mods": "0x8c18e8a0",
+        "_effect_emit_at": "0x8c05fbf8",
+        "_effect_extra_at": "0x8c0b6394"
+      },
+      "ranges": [
+        {
+          "offset": 220524,
+          "size": 408
+        }
+      ],
+      "reference_sha256": "ea409b697b29d9816719b85e779d76a37e87ced19f130f6513587dc16e7280b6",
+      "functions": [
+        {
+          "name": "operation_45d6c",
+          "address": "0x8c045d6c",
+          "size": 408
+        }
+      ],
+      "boundary_review": "Reviewed branches, returns and delay slots, local literal references, alignment, adjacent entries and callers. Full range through next entry, including literal pool. See docs/OBJECT_OPERATIONS.md."
+    },
+    {
+      "id": "adjust_330",
+      "source": "src/objects/adjust_330.c",
+      "address": "0x8c04a770",
+      "entry": "_adjust_330",
+      "headers": [
+        "src/include/object.h"
+      ],
+      "ranges": [
+        {
+          "offset": 239472,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "adjust_330",
+          "address": "0x8c04a770",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "ebfe75042db1eb8c22e0bfa99439248752ff630149fb6687b837bec77b650043",
+      "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
+    },
+    {
+      "id": "set_330",
+      "source": "src/objects/set_330.c",
+      "address": "0x8c04a7d8",
+      "entry": "_set_330",
+      "headers": [
+        "src/include/object.h"
+      ],
+      "ranges": [
+        {
+          "offset": 239576,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_330",
+          "address": "0x8c04a7d8",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "fde6501ab80e7355eac30470cc7bca3c847a6737f755d0155eb31024ffb638ac",
+      "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
+    },
+    {
+      "id": "clamp_330",
+      "source": "src/objects/clamp_330.c",
+      "address": "0x8c04a7ec",
+      "entry": "_clamp_330",
+      "headers": [
+        "src/include/object.h"
+      ],
+      "ranges": [
+        {
+          "offset": 239596,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "clamp_330",
+          "address": "0x8c04a7ec",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "4f2f639a216474b3b38bcb33bda9b6d2c19800a3972c4abbd555562cc588f774",
+      "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
+    },
+    {
+      "id": "bind_id",
+      "source": "src/effects/bind_id.c",
+      "address": "0x8c0a7628",
+      "entry": "_bind_id",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 620072,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "bind_id",
+          "address": "0x8c0a7628",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "f60f720db3516c1aa5d733cff353135b178a51fcf6fdfc96edfda83457a5dc11",
+      "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
+    },
+    {
+      "id": "create_effect",
+      "source": "src/effects/create.c",
+      "address": "0x8c0a77e8",
+      "entry": "_create_effect",
+      "headers": [
+        "src/include/object.h",
+        "src/include/calls.h"
+      ],
+      "ranges": [
+        {
+          "offset": 620520,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect",
+          "address": "0x8c0a77e8",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "f7ee3a12a7fffce46e5d266f5f4eac63872a76c78ee6807facbb10695b5d6a78",
+      "symbols": {
+        "_effect_init_at": "0x8c0a6ff0"
+      },
+      "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
+    },
+    {
+      "id": "allocate_block",
+      "source": "src/runtime/allocate_block.c",
+      "address": "0x8c122700",
+      "entry": "_allocate_block",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1124096,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "allocate_block",
+          "address": "0x8c122700",
+          "size": 68
+        },
+        {
+          "name": "allocate_zeroed_block",
+          "address": "0x8c122744",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "643c4ab25d053a7e51565889417cb3c4bc25389f5f73ee91d644d266f3fbe083",
+      "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
+    },
+    {
+      "id": "extra_b6394",
+      "source": "src/effects/extra_b6394.c",
+      "address": "0x8c0b6394",
+      "entry": "_extra_b6394",
+      "headers": [
+        "src/include/object.h"
+      ],
+      "ranges": [
+        {
+          "offset": 680852,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "extra_b6394",
+          "address": "0x8c0b6394",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "78a8df4065a813bbf64164b72a057e218c5d73192e66b247ae9d044ee5a6eada",
+      "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
+    },
+    {
+      "id": "angle_difference",
+      "source": "src/math/angle_difference.c",
+      "address": "0x8c0c52f4",
+      "entry": "_angle_difference",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 742132,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "angle_difference",
+          "address": "0x8c0c52f4",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "774822b451f992f6ab1c1229d5004ef1ac3eae4ecc4a99f7db4e1a1ac52978a7",
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c52f4, return delay slot through 0x8c0c5308, zero alignment word at 0x8c0c530a, 0x0000ffff literal at 0x8c0c530c, adjacent entry 0x8c0c5310. Full 28-byte match at unchanged compiler/flags; see reconstruction-stage11 and docs/RECONSTRUCTION.md."
+    },
+    {
+      "id": "operation_43fb4",
+      "source": "src/objects/operation_43fb4.c",
+      "address": "0x8c043fb4",
+      "entry": "_operation_43fb4",
+      "headers": [
+        "src/include/spatial.h"
+      ],
+      "ranges": [
+        {
+          "offset": 212916,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_43fb4",
+          "address": "0x8c043fb4",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "7e9b0beb76ec7fd0a6c46d23b55a8511f23803643cd6ee4cafe63525f22ade66",
+      "symbols": {
+        "_angle_difference": "0x8c0c52f4"
+      },
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c043fb4, return delay slot through 0x8c044002, five 4-byte literals at 0x8c044004\u20130x8c044018, next entry 0x8c044018. Full 100-byte fixed-C match with checked SpatialObject angle and Vec3 layout; see reconstruction-stage12."
+    },
+    {
+      "id": "angle_halfway",
+      "source": "src/math/angle_halfway.c",
+      "address": "0x8c0c4fc8",
+      "entry": "_angle_halfway",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 741320,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "angle_halfway",
+          "address": "0x8c0c4fc8",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "50e3c599d467baa9e1c268e978475b93aa0746f1516249ac386a7afdb67ca08d",
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c4fc8, return delay slot at 0x8c0c4fd8, zero alignment word at 0x8c0c4fda, 0x0000ffff literal at 0x8c0c4fdc, next entry 0x8c0c4fe0. Full 24-byte fixed-C match. See reconstruction-stage13."
+    },
+    {
+      "id": "angle_step",
+      "source": "src/math/angle_step.c",
+      "address": "0x8c0c4f90",
+      "entry": "_angle_step",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 741264,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "angle_step",
+          "address": "0x8c0c4f90",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "6551fb1820a78259c9b32f8c7e090e367f97727804bdbccb6d540951538eb305",
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c4f90; early return at 0x8c0c4fa6 with nop delay slot; final return delay slot at 0x8c0c4fbc; zero alignment at 0x8c0c4fbe; literals 0x0000ffff and 0x00008000 at 0x8c0c4fc0/0x8c0c4fc4; next entry 0x8c0c4fc8. Full 56-byte fixed-C match. See reconstruction-stage13."
+    },
+    {
+      "id": "choose_emit_slot",
+      "source": "src/effects/choose_emit_slot.c",
+      "address": "0x8c05ff3c",
+      "entry": "_choose_emit_slot",
+      "headers": [
+        "src/include/emit.h",
+        "src/include/emit_secondary.h"
+      ],
+      "ranges": [
+        {
+          "offset": 327484,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "choose_emit_slot",
+          "address": "0x8c05ff3c",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "79c74d0f8726212233a0197a7c0642c4c868e36330dfc44591da0f948d9d32de",
+      "symbols": {
+        "_secondary_table": "0x8c467b50",
+        "_emit_slots": "0x8c468138"
+      },
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c05ff3c; return and delay slot at 0x8c05ff82/84; zero alignment word at 0x8c05ff86; literals at 0x8c05ff88/8c/90; adjacent prepare-slot entry starts 0x8c05ff94. Full 88-byte fixed-C match. See reconstruction-stage14."
+    }
+  ]
+}

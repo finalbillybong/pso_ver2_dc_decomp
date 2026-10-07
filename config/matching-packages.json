@@ -1,0 +1,34 @@
+{
+  "codewarrior": {
+    "label": "Dreamcast R2 archive; mwshc 2.4 Engineering Build, Mar 21 2000",
+    "upstream_commit": "58027aeb669a80aa783a6d2cdcd2d161fd50d359",
+    "files": {
+      "mwshc.exe": {
+        "url": "https://raw.githubusercontent.com/Kochise/dreamcast-docs/58027aeb669a80aa783a6d2cdcd2d161fd50d359/SDK/EXES/INSTALL%20KATANA%20SDK/INPUT/R10.1_000518/Utl/Dev/CodeWarrior/Tools/Command_Line_Tools/mwshc.exe",
+        "sha256": "23fd6265e00e054e7746c58859f02d841dbcbc73d7310d524e55bab5c5a0c0f3"
+      },
+      "mwldshx.exe": {
+        "url": "https://raw.githubusercontent.com/Kochise/dreamcast-docs/58027aeb669a80aa783a6d2cdcd2d161fd50d359/SDK/EXES/INSTALL%20KATANA%20SDK/INPUT/R10.1_000518/Utl/Dev/CodeWarrior/Tools/Command_Line_Tools/mwldshx.exe",
+        "sha256": "01b1e25ba407a60e3ee56e8dcaf5eabb63b3f0d770368b87b074a57cf369cbaa"
+      },
+      "lmgr326b.dll": {
+        "url": "https://raw.githubusercontent.com/Kochise/dreamcast-docs/58027aeb669a80aa783a6d2cdcd2d161fd50d359/SDK/EXES/INSTALL%20KATANA%20SDK/INPUT/R10.1_000518/Utl/Dev/CodeWarrior/Tools/Command_Line_Tools/lmgr326b.dll",
+        "sha256": "ad92f23eade61be42076fa3cacca3f4db6843d046593c6a2221c822dacd4dfd0"
+      },
+      "CLT_Dreamcast_SH_Tools_Notes.txt": {
+        "url": "https://raw.githubusercontent.com/Kochise/dreamcast-docs/58027aeb669a80aa783a6d2cdcd2d161fd50d359/SDK/EXES/INSTALL%20KATANA%20SDK/INPUT/R10.1_000518/Utl/Dev/CodeWarrior/Tools/Command_Line_Tools/CLT_Dreamcast_SH_Tools_Notes.txt",
+        "sha256": "18e7ed024de2150e2224bb87abb92340d3e39f2aa7086cfede3715a5bcbdd4d0"
+      },
+      "CLT_Usage_Notes.txt": {
+        "url": "https://raw.githubusercontent.com/Kochise/dreamcast-docs/58027aeb669a80aa783a6d2cdcd2d161fd50d359/SDK/EXES/INSTALL%20KATANA%20SDK/INPUT/R10.1_000518/Utl/Dev/CodeWarrior/Tools/Command_Line_Tools/CLT_Usage_Notes.txt",
+        "sha256": "025ad4450eb1ef2829c41d23bbbebc17c22f9f8fd18014702b4466de1bda7768"
+      }
+    }
+  },
+  "binutils": {
+    "version": "2.44",
+    "url": "https://mirrors.kernel.org/gnu/binutils/binutils-2.44.tar.xz",
+    "sha256": "ce2017e059d63e67ddb9240e9d4ec49c2893605035cd60e92ad53177f4377237"
+  },
+  "runner": "config/installed-compilers.json"
+}

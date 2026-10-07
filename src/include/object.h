@@ -1,0 +1,82 @@
+#ifndef PSO_OBJECT_H
+#define PSO_OBJECT_H
+/* Partial observed layout; names do not assert gameplay semantics. */
+typedef struct Object {
+    unsigned char unknown_0[0x20];
+    unsigned short id;
+    unsigned char unknown_22[0x12];
+    unsigned int flags;
+    unsigned char unknown_38[0x4];
+    float position[3];
+    unsigned char unknown_48[0x150];
+    short limit_198;
+    unsigned char unknown_19a[0x8];
+    short base_1a2;
+    short base_1a4;
+    short base_1a6;
+    short base_1a8;
+    short value_1aa;
+    short value_1ac;
+    short value_1ae;
+    short value_1b0;
+    unsigned char unknown_1b2[0x10e];
+    int field_2c0;
+    float field_2c4;
+    int field_2c8;
+    int field_2cc;
+    float field_2d0;
+    int field_2d4;
+    int field_2d8;
+    float field_2dc;
+    int field_2e0;
+    int field_2e4;
+    float field_2e8;
+    int field_2ec;
+    int field_2f0;
+    float field_2f4;
+    int field_2f8;
+    unsigned char unknown_2fc[0xc];
+    short mode_308;
+    unsigned char unknown_30a[0x1a];
+    float effect_position[3];
+    short value_330;
+    unsigned char unknown_332[0x1a];
+    unsigned int flags_34c;
+    unsigned char unknown_350[0x2c];
+    int state;
+} Object;
+#define FIELD_OFFSET(field) ((unsigned long)&((Object *)0)->field)
+typedef char check_id[(FIELD_OFFSET(id) == 0x20) ? 1 : -1];
+typedef char check_flags[(FIELD_OFFSET(flags) == 0x34) ? 1 : -1];
+typedef char check_position[(FIELD_OFFSET(position) == 0x3c) ? 1 : -1];
+typedef char check_limit_198[(FIELD_OFFSET(limit_198) == 0x198) ? 1 : -1];
+typedef char check_base_1a2[(FIELD_OFFSET(base_1a2) == 0x1a2) ? 1 : -1];
+typedef char check_base_1a4[(FIELD_OFFSET(base_1a4) == 0x1a4) ? 1 : -1];
+typedef char check_base_1a6[(FIELD_OFFSET(base_1a6) == 0x1a6) ? 1 : -1];
+typedef char check_base_1a8[(FIELD_OFFSET(base_1a8) == 0x1a8) ? 1 : -1];
+typedef char check_value_1aa[(FIELD_OFFSET(value_1aa) == 0x1aa) ? 1 : -1];
+typedef char check_value_1ac[(FIELD_OFFSET(value_1ac) == 0x1ac) ? 1 : -1];
+typedef char check_value_1ae[(FIELD_OFFSET(value_1ae) == 0x1ae) ? 1 : -1];
+typedef char check_value_1b0[(FIELD_OFFSET(value_1b0) == 0x1b0) ? 1 : -1];
+typedef char check_field_2c0[(FIELD_OFFSET(field_2c0) == 0x2c0) ? 1 : -1];
+typedef char check_field_2c4[(FIELD_OFFSET(field_2c4) == 0x2c4) ? 1 : -1];
+typedef char check_field_2c8[(FIELD_OFFSET(field_2c8) == 0x2c8) ? 1 : -1];
+typedef char check_field_2cc[(FIELD_OFFSET(field_2cc) == 0x2cc) ? 1 : -1];
+typedef char check_field_2d0[(FIELD_OFFSET(field_2d0) == 0x2d0) ? 1 : -1];
+typedef char check_field_2d4[(FIELD_OFFSET(field_2d4) == 0x2d4) ? 1 : -1];
+typedef char check_field_2d8[(FIELD_OFFSET(field_2d8) == 0x2d8) ? 1 : -1];
+typedef char check_field_2dc[(FIELD_OFFSET(field_2dc) == 0x2dc) ? 1 : -1];
+typedef char check_field_2e0[(FIELD_OFFSET(field_2e0) == 0x2e0) ? 1 : -1];
+typedef char check_field_2e4[(FIELD_OFFSET(field_2e4) == 0x2e4) ? 1 : -1];
+typedef char check_field_2e8[(FIELD_OFFSET(field_2e8) == 0x2e8) ? 1 : -1];
+typedef char check_field_2ec[(FIELD_OFFSET(field_2ec) == 0x2ec) ? 1 : -1];
+typedef char check_field_2f0[(FIELD_OFFSET(field_2f0) == 0x2f0) ? 1 : -1];
+typedef char check_field_2f4[(FIELD_OFFSET(field_2f4) == 0x2f4) ? 1 : -1];
+typedef char check_field_2f8[(FIELD_OFFSET(field_2f8) == 0x2f8) ? 1 : -1];
+typedef char check_mode_308[(FIELD_OFFSET(mode_308) == 0x308) ? 1 : -1];
+typedef char check_effect_position[(FIELD_OFFSET(effect_position) == 0x324) ? 1 : -1];
+typedef char check_value_330[(FIELD_OFFSET(value_330) == 0x330) ? 1 : -1];
+typedef char check_flags_34c[(FIELD_OFFSET(flags_34c) == 0x34c) ? 1 : -1];
+typedef char check_state[(FIELD_OFFSET(state) == 0x37c) ? 1 : -1];
+
+#endif

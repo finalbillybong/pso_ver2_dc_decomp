@@ -1,0 +1,33 @@
+name: Checks and progress
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check publication contents
+        run: python3 -B tools/check_publication.py
+      - name: Test host tools with synthetic fixtures
+        run: python3 -B -m unittest discover -s tests -v
+      - name: Validate recorded exact progress
+        run: python3 -B tools/progress.py --check
+      - name: Publish progress metadata
+        uses: actions/upload-artifact@v4
+        with:
+          name: pal-progress
+          path: |
+            progress.json
+            docs/PROGRESS.md
+            docs/progress.svg
+          if-no-files-found: error

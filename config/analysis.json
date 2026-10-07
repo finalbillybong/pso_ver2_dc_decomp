@@ -1,0 +1,35 @@
+{
+  "language": "SuperH4:LE:32:default",
+  "ghidra": "12.1.4",
+  "main_load_address": "0x8c010000",
+  "main_startup_address": "0x8c340848",
+  "validation": "static_loader_analysis_not_runtime_verified",
+  "evidence": [
+    "1ST_READ function 0x8c012e78 loads IWASHI.SEA to 0x8c004000, KATSUO.SEA to 0x8c008400, packed DP_ADDRESS.JPN to 0x8c800000.",
+    "Loader entry 0x8c012dc0 transfers through the KATSUO entry table; KATSUO+0x24 points to 0x8c008428.",
+    "KATSUO function 0x8c008428 flushes the decoded region at 0x8c010000 and jumps through the pointer at 0x8c01002c.",
+    "Decoded executable offset 0x2c contains 0x8c340848; its initial stub also jumps through that pointer."
+  ],
+  "compiler_identified": false,
+  "runtime_verified": false,
+  "inferred_functions": 11385,
+  "ghidra_analysis_completed": true,
+  "instruction_reference_warnings": [
+    "0x8c18e520",
+    "0x8c18e6f8"
+  ],
+  "output_hashes": {
+    "functions.tsv": "87bc11326d125eb09ff1e70677b14e5fe720f562192e75c5cbf73932f114e79f",
+    "listing.txt": "7759a09e6d145d6b83c3866381b229386512a31f15bf32b7e99a3463d5c5724c",
+    "selected.c": "8bef28dfddd3546f56234a92f517f9cbca9eeb7a8b99bd07249f8f02766ab0dc"
+  },
+  "selected_addresses": [
+    "0x8c027064",
+    "0x8c0c51c8",
+    "0x8c027cd4",
+    "0x8c029f80",
+    "0x8c03f0a0"
+  ],
+  "compatible_compiler_found": "CodeWarrior Dreamcast 2.4 Engineering Build, Mar 21 2000; five exact C samples",
+  "compiler_identification_note": "Exact original release is not uniquely identified by these samples."
+}
