@@ -1273,6 +1273,81 @@
       "boundary_review": "Raw little-endian SH4: Return delay 0x8c0ab3aa; four literals 0x8c0ab3ac-0x8c0ab3bc; adjacent entry 0x8c0ab3bc. Complete fixed-C match independently twice; see reconstruction-stage20."
     },
     {
+      "id": "initialize_spawn_base",
+      "source": "src/effects/initialize_spawn_base.c",
+      "address": "0x8c0ab3bc",
+      "entry": "_initialize_spawn_base",
+      "ranges": [
+        {
+          "offset": 635836,
+          "size": 340
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_spawn_base",
+          "address": "0x8c0ab3bc",
+          "size": 340
+        }
+      ],
+      "reference_sha256": "56bf174ff8af61766629d82fbf5d6d092ae609d6dd9d650114bb080189ce321e",
+      "symbols": {},
+      "headers": [
+        "src/include/spawn_effect.h"
+      ],
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0ab4d4, alignment 0x8c0ab4d6, fourteen literals 0x8c0ab4d8-0x8c0ab510; adjacent destructor at 0x8c0ab510. Complete fixed-C match independently twice; see reconstruction-stage21."
+    },
+    {
+      "id": "destroy_spawn_base",
+      "source": "src/effects/destroy_spawn_base.c",
+      "address": "0x8c0ab510",
+      "entry": "_destroy_spawn_base",
+      "ranges": [
+        {
+          "offset": 636176,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_spawn_base",
+          "address": "0x8c0ab510",
+          "size": 72
+        }
+      ],
+      "headers": [
+        "src/include/spawn_effect.h"
+      ],
+      "reference_sha256": "1d4b128a4587e240cc238967796adc73b8f471b9493ccd0e2b83b37866b14303",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0ab544, alignment 0x8c0ab546, four literals 0x8c0ab548-0x8c0ab558; adjacent entry at 0x8c0ab558. Complete fixed-C match independently twice; see reconstruction-stage21."
+    },
+    {
+      "id": "destroy_spawn_effect_2",
+      "source": "src/effects/destroy_spawn_effect_2.c",
+      "address": "0x8c0ab8e8",
+      "entry": "_destroy_spawn_effect_2",
+      "ranges": [
+        {
+          "offset": 637160,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_spawn_effect_2",
+          "address": "0x8c0ab8e8",
+          "size": 68
+        }
+      ],
+      "headers": [
+        "src/include/spawn_effect.h"
+      ],
+      "reference_sha256": "f681f9e96575d7b9c39bf104720ce25523fc2ca22075b9aba52d74dbd41dd81c",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0ab918, alignment 0x8c0ab91a, four literals 0x8c0ab91c-0x8c0ab92c; adjacent entry begins floating-register save at 0x8c0ab92c. Complete fixed-C match independently twice; see reconstruction-stage21."
+    },
+    {
       "id": "spawn_effect_2",
       "source": "src/effects/spawn_effect_2.c",
       "address": "0x8c0abee0",

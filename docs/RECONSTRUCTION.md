@@ -941,3 +941,58 @@ Continue the scheduling investigation and constructors at `0x8c0a9934`,
 Saved analysis body sizes do not establish complete boundaries; inspect raw
 instructions, literals and adjacent entries before admission. Static data remains
 reference-backed and is not counted as reconstructed.
+
+
+## Shared spawned-effect initializer and lifecycle, stage 21
+
+Three functions replace **480 more bytes**, preserving all 65 prior matching
+functions and their sources. Current totals are **68 functions / 57 modules /
+7,880 compiled range bytes / 4,155,032 retained reference bytes**. Since the
+original 34-function checkpoint, 34 functions replace 4,236 bytes.
+
+| Function | Complete range | Bytes |
+| --- | --- | ---: |
+| `initialize_spawn_base` | `0x8c0ab3bc–0x8c0ab510` | 340 |
+| `destroy_spawn_base` | `0x8c0ab510–0x8c0ab558` | 72 |
+| `destroy_spawn_effect_2` | `0x8c0ab8e8–0x8c0ab92c` | 68 |
+
+The initializer first generated 344 bytes. Taking the incoming object's address
+makes this compiler retain its observed stack home slot. Keeping a scoped object
+snapshot across each positive-only reciprocal conditional removes two redundant
+reloads. Separating the resource-ID argument from the call resolves the final six
+register-selection bytes. The complete match includes the return delay, alignment
+and all fourteen literal words. The two lifecycle routines preserve null handling,
+dispatch restoration, resource clearing in the base routine, signed-short release
+tests and the observed heap. Their four-word literal pools and alignment also match.
+
+The declared `spawn_effect.h` checks every exposed object/resource field offset
+and the 0xa0-byte object extent. Resource and field meanings remain provisional;
+the resource view does not claim a complete resource size. Existing headers and
+sources are unchanged. Each final source matches independently twice.
+
+The larger constructor at `0x8c0ab700–0x8c0ab8e8` remains scratch-only. Its first
+ordinary-C trial generated 476 versus 488 bytes. Address-taking and explicit table
+byte offsets reproduce 488 bytes; the best current trial still differs in 137
+bytes. Volatile storage, aggregate arguments, typed views, arithmetic operand
+order and temporary captures did not produce a complete match. Aggregate incoming
+parameters were ABI diagnostics only. Nonconstant aggregate initializers are
+rejected by the fixed compiler; ordinary declarations followed by assignments were
+tested separately. No compiler flags or expected bytes were changed.
+
+Applying scoped call-argument captures to the current emission candidates produced
+96 more trials, covering declaration order and register hints. Their best results
+remain **388/8** and **448/4**. The original operation remains **512/46**. Supporting
+matches do not replace these incomplete primary acceptance criteria. Signed
+remainder retains its documented exceptional-ABI blocker. Static data remains
+reference-backed and separately reconstructed static-data bytes remain zero.
+
+Two fresh exact project builds, full-image comparison, five-function compiler
+proof and all 43 original tests pass. Source-only rejects 4,155,032 retained bytes
+without changing existing artifacts. Current focused evidence is
+`function-dossiers/run-1lk27rxx/receipt.json`; the original database is unchanged.
+Dependency export `run-h_0xqpvk` records the earlier input snapshot, not current
+manifest validity. Raw SH4 instructions control floating semantics where saved
+Ghidra pseudocode retains unresolved FPSCR branches. All source snapshots,
+hypotheses, compiler receipts and comparisons remain in private
+`reconstruction-stage21`. Continue the primary scheduling investigation, randomized
+spawn constructors, matrix/vector helpers and their referenced static data.

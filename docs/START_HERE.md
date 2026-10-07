@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **65 exact functions in 54 modules**, replacing
-7,400 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **68 exact functions in 57 modules**, replacing
+7,880 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -109,3 +109,16 @@ comparison, five-function proof and all 43 original tests pass. Source-only reje
 remaining gaps. Primary results remain 512/46 and 388/8, with related emission/reuse
 448/4. Continue scheduling hypotheses and spawned-effect constructors; see
 RECONSTRUCTION.md for boundaries, behavior and reproducible comparisons.
+
+
+## Stage 21 checkpoint
+
+Three spawned-effect lifecycle functions add 480 bytes. Current totals are
+68 functions, 57 modules, 7,880 compiled bytes and 4,155,032 retained bytes.
+All 65 previous matches and sources are unchanged. Checked provisional layouts,
+complete literal pools and alignment match independently twice. Two fresh exact
+builds, full-image comparison, five-function proof and all 43 original tests pass.
+Source-only still rejects the remaining gaps. The primary candidates remain
+512/46 and 388/8, with related emission/reuse 448/4 after 96 further scheduling
+trials. The larger randomized constructor is scratch-only at 488/137. See
+RECONSTRUCTION.md for the failed hypotheses and next dependency work.
