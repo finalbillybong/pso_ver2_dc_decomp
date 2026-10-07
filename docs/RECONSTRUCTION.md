@@ -1523,3 +1523,68 @@ shared scheduling work and adjacent resource/matrix dependencies using
 `python3 -B tools/verify_source.py --check`, `python3 -B tools/candidates.py` and
 the START_HERE.md iteration commands. Compiler, optimization, full-range checks
 and private-data exclusions are unchanged.
+
+
+## Resource callbacks, record and allocation wrappers, stage 33
+
+Thirteen complete ordinary-C functions add **720 bytes**. All 102 previous
+matches and source/header hashes are preserved. Totals are **115 functions /
+103 modules / 12,580 compiled range bytes / 4,150,332 retained reference bytes**,
+or 0.3022% of the entire decoded image, not code-only completion. Since the
+original 34-function checkpoint, 81 supporting functions replace 8,936 bytes.
+
+| Function | Address | Complete bytes |
+| --- | --- | ---: |
+| `apply_resource_3827d8` | `0x8c033ed8` | 28 |
+| `run_current_resource_start` | `0x8c033ef4` | 32 |
+| `run_resource_start` | `0x8c033f14` | 40 |
+| `run_current_resource_end` | `0x8c033f3c` | 32 |
+| `run_resource_end` | `0x8c033f5c` | 64 |
+| `initialize_resource_record` | `0x8c033f9c` | 48 |
+| `spawn_object_0893a8` | `0x8c033fcc` | 68 |
+| `spawn_object_088ce0` | `0x8c034010` | 68 |
+| `spawn_object_1e7964` | `0x8c034054` | 68 |
+| `spawn_object_19d108` | `0x8c034098` | 68 |
+| `spawn_object_19d270` | `0x8c0340dc` | 68 |
+| `spawn_object_1a9c84` | `0x8c034120` | 68 |
+| `spawn_object_1ab324` | `0x8c034164` | 68 |
+
+The two current-resource wrappers obtain the current identifier and invoke the
+corresponding table traversal. The provisional eight-byte callback pair checks
+start at zero and end at four. Start traversal has an early null-table return,
+loads and tests each callback once, invokes it, then advances eight bytes.
+Capturing the tested pointer removes the extra load emitted by the initial
+source. End traversal initializes its count after the null check, scans to its
+own end-callback sentinel, and calls the preceding entries in reverse order.
+The start and end scans deliberately use their respective sentinel fields.
+Static callback entries remain reference bytes.
+
+The checked sixty-byte record view is cleared, then receives signed -1 at zero,
+the low sixteen bits of a shared value at two, and literal 0xffff at four. The
+seven allocation wrappers request their observed sizes, call their initializer
+only for a non-null result, forward the observed parent pointer and caller
+argument, and return the allocated pointer. Objects remain opaque; provisional
+names use initializer addresses. The null-guarded resource wrapper preserves its
+original zero/one return behavior. These matches include every delay slot,
+literal and alignment byte; no assembly, copied objects or padding is added.
+
+Eighteen further active-C++ operation trials test late float assignments, reused
+factors, comma expressions, sibling scopes and explicit orientation offsets.
+They do not improve 512/30; explicit offsets regress to 508 bytes. These trials
+transfer the declaration/lifetime lessons from the newly matched resource copy
+but do not resolve either angle region. Emission remains388/8 and related
+emission/reuse448/4. Scratch effects remain800/46 and536/25, and signed remainder
+retains its exceptional-ABI blocker. Both original primary targets remain
+incomplete; supporting matches do not replace their acceptance criteria.
+
+All 60 source trials, hypotheses, fixed compiler receipts and full comparisons
+are retained in `reconstruction-stage33`, with no compiler rejections. Every
+final source matches independently twice. Two fresh exact project builds,
+integrated-image comparison, five-function proof and all 47 original-workspace
+tests pass. Source-only rejects 4,150,332 retained bytes without changing
+artifacts. Focused evidence is `function-dossiers/run-ic27wsx3/receipt.json`;
+exports match the pinned reference and the original database is unchanged.
+Continue with `python3 -B tools/verify_source.py --check`,
+`python3 -B tools/candidates.py`, and the START_HERE.md iteration commands.
+Next work follows the allocation callers and their effect initializers while
+retaining the primary angle/argument-scheduling investigations.

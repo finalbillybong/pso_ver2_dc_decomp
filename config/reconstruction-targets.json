@@ -1940,6 +1940,337 @@
       "boundary_review": "Raw little-endian SH4: entry0x8c033e50, return delay0x8c033eb2, nine literal words0x8c033eb4..0x8c033ed8. Complete fixed-C match independently twice; see reconstruction-stage32.",
       "status": "matched",
       "reason": "Complete ordinary-C resource-copy/load wrapper; original primary targets remain unresolved."
+    },
+    {
+      "id": "apply_resource_3827d8",
+      "source": "src/objects/apply_resource_3827d8.c",
+      "address": "0x8c033ed8",
+      "entry": "_apply_resource_3827d8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147160,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_resource_3827d8",
+          "address": "0x8c033ed8",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "a69cbb9b839d8f4c079036a38415b3e14d672a86c76c1db350b75306d165aecb",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033ed8, return delay0x8c033eee, call literal0x8c033ef0; next entry0x8c033ef4. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "run_current_resource_start",
+      "source": "src/objects/run_current_resource_start.c",
+      "address": "0x8c033ef4",
+      "entry": "_run_current_resource_start",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147188,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_current_resource_start",
+          "address": "0x8c033ef4",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "3d6d41a8cb1585a1acb8a3083ae7da7e4edc5bf91dda9ab688b1f5dcb968b8c0",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033ef4, return delay0x8c033f08, zero alignment0x8c033f0a, two literal words0x8c033f0c..0x8c033f14. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "run_resource_start",
+      "source": "src/objects/run_resource_start.c",
+      "address": "0x8c033f14",
+      "entry": "_run_resource_start",
+      "headers": [
+        "src/include/resource_callbacks.h"
+      ],
+      "ranges": [
+        {
+          "offset": 147220,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_resource_start",
+          "address": "0x8c033f14",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "3edb22a9ccdec490ab76d945a00442107a54c6855b8b0e3623f21dcf0ebcbba9",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033f14, return delay0x8c033f36, table literal0x8c033f38; next entry0x8c033f3c. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "run_current_resource_end",
+      "source": "src/objects/run_current_resource_end.c",
+      "address": "0x8c033f3c",
+      "entry": "_run_current_resource_end",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147260,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_current_resource_end",
+          "address": "0x8c033f3c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "25d6696eb473605cf6bce64d9d09a728672a90a579c85e6da3975e1aa6d5ddaf",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033f3c, return delay0x8c033f50, zero alignment0x8c033f52, two literal words0x8c033f54..0x8c033f5c. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "run_resource_end",
+      "source": "src/objects/run_resource_end.c",
+      "address": "0x8c033f5c",
+      "entry": "_run_resource_end",
+      "headers": [
+        "src/include/resource_callbacks.h"
+      ],
+      "ranges": [
+        {
+          "offset": 147292,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_resource_end",
+          "address": "0x8c033f5c",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "8b910cd4943cb19c4a9d7b0d13d1c78515236c615091d2d70c73ae5cd5d270e0",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033f5c, return delay0x8c033f96, table literal0x8c033f98; next entry0x8c033f9c. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "initialize_resource_record",
+      "source": "src/objects/initialize_resource_record.c",
+      "address": "0x8c033f9c",
+      "entry": "_initialize_resource_record",
+      "headers": [
+        "src/include/resource_record.h"
+      ],
+      "ranges": [
+        {
+          "offset": 147356,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_resource_record",
+          "address": "0x8c033f9c",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "e00361b0d486151ab86edf3f6c77a33e50f31c9dad96de62d44667001bc351c5",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033f9c, return delay0x8c033fbc, zero alignment0x8c033fbe, three literal words0x8c033fc0..0x8c033fcc. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "spawn_object_088ce0",
+      "source": "src/objects/spawn_object_088ce0.c",
+      "address": "0x8c034010",
+      "entry": "_spawn_object_088ce0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147472,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_088ce0",
+          "address": "0x8c034010",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "6592eb358b3797edd503f03c31a70b639fe51e8efdb0788e45a6daeac65896de",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c034010, return delay0x8c03403e, five literal words0x8c034040..0x8c034054; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "spawn_object_0893a8",
+      "source": "src/objects/spawn_object_0893a8.c",
+      "address": "0x8c033fcc",
+      "entry": "_spawn_object_0893a8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147404,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8",
+          "address": "0x8c033fcc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "581b8ff0e445213bb0b17aa59012fe53ffe2f9c3af2f990d1f9741af70a2aafb",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033fcc, return delay0x8c033ffa, five literal words0x8c033ffc..0x8c034010; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "spawn_object_19d108",
+      "source": "src/objects/spawn_object_19d108.c",
+      "address": "0x8c034098",
+      "entry": "_spawn_object_19d108",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147608,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_19d108",
+          "address": "0x8c034098",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "96ce6cbaa583082df16d98d6d15f1d7aa4283f4cbe51235593e90474d9cd9510",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c034098, return delay0x8c0340c6, five literal words0x8c0340c8..0x8c0340dc; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "spawn_object_19d270",
+      "source": "src/objects/spawn_object_19d270.c",
+      "address": "0x8c0340dc",
+      "entry": "_spawn_object_19d270",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147676,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_19d270",
+          "address": "0x8c0340dc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c132f4d72f40aa92f037d18f409c8a93500cbcb19e0a45aefa76f07b20bc5fd7",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c0340dc, return delay0x8c03410a, five literal words0x8c03410c..0x8c034120; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "spawn_object_1a9c84",
+      "source": "src/objects/spawn_object_1a9c84.c",
+      "address": "0x8c034120",
+      "entry": "_spawn_object_1a9c84",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147744,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_1a9c84",
+          "address": "0x8c034120",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "590672a6778124515cc5b08b8fc5222d664f83f2eb86b235b6d68c1b58b412d4",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c034120, return delay0x8c03414e, five literal words0x8c034150..0x8c034164; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "spawn_object_1ab324",
+      "source": "src/objects/spawn_object_1ab324.c",
+      "address": "0x8c034164",
+      "entry": "_spawn_object_1ab324",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147812,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_1ab324",
+          "address": "0x8c034164",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "bd56e0a3493593439f33191027aaaa7d2817042351e9926ce44d2aa7e3b55741",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c034164, return delay0x8c034192, five literal words0x8c034194..0x8c0341a8; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
+    },
+    {
+      "id": "spawn_object_1e7964",
+      "source": "src/objects/spawn_object_1e7964.c",
+      "address": "0x8c034054",
+      "entry": "_spawn_object_1e7964",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147540,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_1e7964",
+          "address": "0x8c034054",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "bf7cf139e11589a1aec0b0c2bb049e2e6f6c85a5d9d317164d06a1e8fd2e6cd2",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c034054, return delay0x8c034082, five literal words0x8c034084..0x8c034098; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage33.",
+      "status": "matched",
+      "reason": "Complete ordinary-C resource callback/record or allocation wrapper; both original primary targets remain unresolved."
     }
   ]
 }
