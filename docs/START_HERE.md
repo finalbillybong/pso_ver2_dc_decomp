@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **130 exact functions in 117 modules**, replacing
-14,284 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **135 exact functions in 122 modules**, replacing
+14,720 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -11,6 +11,7 @@ verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 | `operation_45f04` at `0x8c045f04` | 512 bytes | 30 differing bytes; first `0x8c045fdd` | Two angle-conversion regions; virtual dispatch matches |
 | `emit_5fbf8` at `0x8c05fbf8` | 388 bytes | 8 differing bytes; first `0x8c05fc56` | Two instruction-order pairs in the loop and final call |
 | `emit_or_update_slot` at `0x8c05fd7c` | 448 bytes | 4 differing bytes; first `0x8c05feba` | Shared final-call delay-slot order |
+| `initialize_effect_manager` at `0x8c0a7db8` | 280 bytes | 8 differing bytes; first `0x8c0a7e6e` | Five-argument call scheduling; resource loop matches |
 | `signed_remainder` at `0x8c18e8a0` | 180 bytes | No complete match | Carry state, preserved registers and zero-divisor behavior |
 
 The queue is in `config/reconstruction-targets.json`. Fully matching C++ is now
@@ -265,7 +266,7 @@ An overlapping diagnostic effect-setter module was excluded; no duplicate bytes
 or functions are counted. See RECONSTRUCTION.md for 44 trials and next hypotheses.
 
 
-## Latest verified checkpoint: stage 35
+## Stage 35 checkpoint
 
 Nine complete effect creation/release functions add 1,008 bytes. Totals are
 130 functions, 117 modules, 14,284 compiled bytes and 4,148,628 retained bytes.
@@ -274,3 +275,15 @@ Two fresh exact builds, integrated-image comparison, five-function proof and all
 47 original-workspace tests pass. Source-only rejects gaps. Both original primary
 targets remain incomplete. See RECONSTRUCTION.md for 41 trials, natural module
 alignment and continuing source hypotheses.
+
+
+## Latest verified checkpoint: stage 36
+
+Five complete effect wrappers and manager lifecycle functions add 436 bytes.
+Totals are 135 functions, 122 modules, 14,720 compiled bytes and 4,148,192 retained
+reference bytes. All 130 prior matches, module definitions and source/header
+hashes are preserved. Two fresh builds, image comparison, compiler proof and all
+47 original-workspace tests pass. Source-only rejects remaining gaps. The new
+manager initializer is explicit and unresolved at 280/8. Both original primary
+targets remain incomplete. See RECONSTRUCTION.md for 59 trials, checked layouts
+and failed scheduling hypotheses. Continue the iteration commands above.

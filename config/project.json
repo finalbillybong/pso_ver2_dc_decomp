@@ -2593,6 +2593,141 @@
       "boundary_review": "Raw little-endian SH4: entry0x8c0a7c3c, six final literal words0x8c0a7ca8..0x8c0a7cc0; adjacent entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage35."
     },
     {
+      "id": "create_effect_7cc0",
+      "source": "src/effects/create_effect_7cc0.c",
+      "address": "0x8c0a7cc0",
+      "entry": "_create_effect_7cc0",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 621760,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_7cc0",
+          "address": "0x8c0a7cc0",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "9de1955a1b13138b74f0a68404bc3056d760ee7898d291f701bec460cbbf6bca",
+      "symbols": {
+        "_initialize_at": "0x8c0a6f38"
+      },
+      "boundary_review": "Raw SH4 entry 0x8c0a7cc0 through 0x8c0a7d38; return/tail-call delay slots and complete literal pool precede adjacent entry. Two complete fixed-C matches in reconstruction-stage36."
+    },
+    {
+      "id": "create_effect_7d38",
+      "source": "src/effects/create_effect_7d38.c",
+      "address": "0x8c0a7d38",
+      "entry": "_create_effect_7d38",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 621880,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_7d38",
+          "address": "0x8c0a7d38",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "984d41764530f8d0f4012784cd3d02e0b888e9346bc2148077b6b9525eb08727",
+      "symbols": {
+        "_initialize_at": "0x8c0a6ff0"
+      },
+      "boundary_review": "Raw SH4 entry 0x8c0a7d38 through 0x8c0a7db4; return/tail-call delay slots and complete literal pool precede adjacent entry. Two complete fixed-C matches in reconstruction-stage36."
+    },
+    {
+      "id": "destroy_effect_manager",
+      "source": "src/effects/destroy_effect_manager.c",
+      "address": "0x8c0a7ed0",
+      "entry": "_destroy_effect_manager",
+      "headers": [
+        "src/include/effect_manager.h",
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 622288,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_manager",
+          "address": "0x8c0a7ed0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "ed8efa9d192fccebba9beff3b334b4c516e0b8a4fa9ff7b48fc07c546d407a33",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry 0x8c0a7ed0 through 0x8c0a7f14; return/tail-call delay slots and complete literal pool precede adjacent entry. Two complete fixed-C matches in reconstruction-stage36."
+    },
+    {
+      "id": "start_effect_manager",
+      "source": "src/effects/start_effect_manager.c",
+      "address": "0x8c0a7f14",
+      "entry": "_start_effect_manager",
+      "headers": [
+        "src/include/effect_manager.h",
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 622356,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "start_effect_manager",
+          "address": "0x8c0a7f14",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "b335447f19d0d08e4486025811977ea29aaca98b104cb933772a45f463aed414",
+      "symbols": {
+        "_initialize_at": "0x8c0a6f38"
+      },
+      "boundary_review": "Raw SH4 entry 0x8c0a7f14 through 0x8c0a7f7c; return/tail-call delay slots and complete literal pool precede adjacent entry. Two complete fixed-C matches in reconstruction-stage36."
+    },
+    {
+      "id": "stop_effect_manager",
+      "source": "src/effects/stop_effect_manager.c",
+      "address": "0x8c0a7f7c",
+      "entry": "_stop_effect_manager",
+      "headers": [
+        "src/include/effect_manager.h",
+        "src/include/effect.h",
+        "src/include/hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 622460,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "stop_effect_manager",
+          "address": "0x8c0a7f7c",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "106c3abeef75bc07fd27b390ccefb17372ccecf2465119c72bc4da3814d1b93d",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry 0x8c0a7f7c through 0x8c0a7f90; return/tail-call delay slots and complete literal pool precede adjacent entry. Two complete fixed-C matches in reconstruction-stage36."
+    },
+    {
       "id": "spawn_effect_0",
       "source": "src/effects/spawn_effect_0.c",
       "address": "0x8c0aa77c",

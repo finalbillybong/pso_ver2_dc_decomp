@@ -1725,3 +1725,64 @@ exceptional-ABI blocker. Supporting matches do not replace the original primary
 acceptance criteria. Continue the shared scheduling investigations and remaining
 effect callers with `python3 -B tools/verify_source.py --check`,
 `python3 -B tools/candidates.py`, and the START_HERE.md iteration commands.
+
+
+## Effect manager lifecycle and remaining wrappers, stage 36
+
+Five complete C functions add **436 bytes**. Totals are **135 functions / 122
+modules / 14,720 compiled range bytes / 4,148,192 retained reference bytes**.
+Whole-image coverage is **0.3536%**; code-only completion remains unknown. All
+130 previous matches, module definitions and source/header hashes are unchanged.
+Since the initial 34-function checkpoint, 101 functions replace 11,076 bytes.
+
+| Function | Address | Complete bytes |
+| --- | --- | ---: |
+| `create_effect_7cc0` | `0x8c0a7cc0` | 120 |
+| `create_effect_7d38` | `0x8c0a7d38` | 124 |
+| `destroy_effect_manager` | `0x8c0a7ed0` | 68 |
+| `start_effect_manager` | `0x8c0a7f14` | 104 |
+| `stop_effect_manager` | `0x8c0a7f7c` | 20 |
+
+The two remaining wrappers preserve the signed upper-bound-only index check,
+104-byte allocation and 152-byte resource stride. They call the existing
+non-orientation initializers with the observed arguments, including the narrow
+stack field in the second wrapper. The manager destructor preserves its null
+guard and signed-short disposal test. Start creates an effect using the manager's
+position, stores even a null allocation, resets the observed state fields and
+calls its base operation. Stop sets the effect's hierarchy flag and calls its
+base operation, preserving the original assumption that the effect is non-null.
+
+`effect_manager.h` checks the 136-byte manager view, all accessed field offsets,
+and the 152-byte resource view. Existing effect and hierarchy declarations are
+reused; names remain provisional. Typed hierarchy access reproduces the stop
+function's word displacement instructions and complete 20-byte range; explicit
+byte-pointer addition emitted an extra instruction and alignment word.
+
+The adjacent manager initializer at `0x8c0a7db8` remains **280 bytes / 8 differing
+bytes**, first `0x8c0a7e6e`. Its new explicit unresolved queue entry and provisional
+source receive no progress credit. A block-scoped 512-entry limit makes its
+resource-copy loop exact, reducing the initial 57 differences to 16. Direct call
+declarations and a captured object reduce the remainder to eight bytes in one
+five-argument call. Other temporary lifetimes, inline wrappers, nested views and
+actual C++ member calls do not finish that scheduling. The one linker rejection
+records a missing leading underscore on a C++ member binding; correcting the
+symbol still leaves a mismatch. No compiler flags or comparison rules changed.
+
+All 59 scratch trials preserve source, hypothesis and comparison; one has a
+linker error instead of a successful compiler receipt. Each admitted final source
+matches twice independently. Two fresh project builds, exact integrated-image
+comparison, the five-function proof and all 47 original-workspace tests pass.
+Source-only rejects the remaining 4,148,192 reference bytes without changing
+existing artifacts. Focused exports are pinned in
+`function-dossiers/run-b1q9giad/receipt.json`; full exported ranges match the
+reference and the original database remains unchanged. Ghidra has no completed
+pseudocode for these manager entries; raw instructions establish their behavior
+and boundaries. No original database reanalysis was performed.
+
+Both original primary targets remain incomplete: operation **512/30**, emission
+**388/8**, related emission/reuse **448/4**. Scratch effects remain **800/46** and
+**536/25**, shared-base initialization **200 versus 196 expected / 170 differences**,
+and the position setter **30 versus 32 expected**. Signed remainder retains its
+exceptional-ABI blocker. Supporting matches do not replace primary acceptance.
+Continue with the START_HERE.md commands, the eight-byte manager call scheduling,
+and the two primary regions; preserve failed hypotheses before new trials.
