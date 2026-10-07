@@ -2694,3 +2694,63 @@ Original primary operation/emission remain **512/30 and 388/8**, related reuse
 **448/4**, manager initialization **280/8**, scratch frame setup **332/8**, and
 hexadecimal highlighting **144/8**. The primary batch remains incomplete;
 supporting matches do not replace its acceptance criteria.
+
+
+## Object-state destruction and height helpers, stage 53
+
+Four complete ordinary-C functions add **384 bytes**: destruction at
+**0x8c0436e0..0x8c043724** (68), object-height query at **0x8c043880..0x8c0438ec**
+(108), supplied-position height query at **0x8c0438ec..0x8c043950** (100), and
+center update at **0x8c043950..0x8c0439bc** (108). Totals are **206 functions /
+190 modules / 23,028 compiled range bytes / 4,139,884 retained reference bytes**,
+or **0.5532% whole-image coverage**. All 202 previous matches, module definitions
+and source/header hashes are preserved. Since the initial checkpoint, 172
+functions replace 19,384 bytes. Code-only completion remains unknown, and
+separately reconstructed static data remains zero.
+
+The new provisional ObjectStateView checks dispatch at 0x18, position at 0x3c,
+query argument start at 0x94, height-source pointer at 0x184, and center at 0x324.
+ObjectHeightView checks its height at 0x10. These are observed prefixes, not full
+allocation sizes; the query argument's internal layout remains unknown. Existing
+vector/result views and all older headers remain unchanged. Destruction preserves
+the null guard, dispatch reset, base call, signed-short positive release test and
+heap-global indirection. Height queries preserve component reads, resource-height
+addition, selector 21, null result and successful Y update. Center update retains
+half-height addition when the resource exists and whole-vector assignment when
+it does not. No speculative guards or behavioral repairs are added.
+
+The destructor, object query and center-update baselines match completely. The
+supplied-position query initially has 26 differing bytes; an external callee
+declaration reproduces call preparation and delay-slot scheduling. A scoped
+query-argument temporary also matches, while capturing it before the Z read
+produces 104 bytes instead of 100. Final readable sources and checked headers
+match twice independently over each complete range, including literals and
+alignment, before integration. Dispatch data, allocator and query implementation
+remain reference dependencies.
+
+The adjacent constructor **0x8c043418..0x8c0436e0** remains unadmitted. Initial
+C/C++ candidates produce 732 bytes against 712 expected. Direct parameter homes,
+typed fields, explicit component bases and separate loop lifetimes restore the
+712-byte size, but **233 bytes still differ**, first **0x8c043441**. Its bind call
+requires full-width zero extension of a short field; a narrow argument declaration
+omits the observed extension. Return-type changes, scoped argument captures,
+ordinary C++ constructor syntax and callback declarations do not resolve the
+remaining register allocation and call scheduling. Array and field initialization
+order remains preserved. The adjacent initializer at **0x8c043724..0x8c043880**
+produces the full 348 bytes with **137 differences**, first **0x8c043746**;
+individual and combined chained assignments do not improve it.
+
+All **74 trials**, including **two compiler rejections** from a source-generator
+replacement of the address-of declaration, retain snapshots, hypotheses, receipts
+where compilation completed, and comparisons in `reconstruction-stage53`.
+Corrected trials are separate records. Two fresh exact builds, integrated-image
+comparison, five-function proof and all **53 original-workspace tests** pass;
+the public suite remains **58 tests**. Source-only rejects 4,139,884 reference
+bytes without modifying artifacts. Focused exports are regenerated on a disposable
+copy after manifest/queue changes; the original database is unchanged. Compiler,
+base flags, linker defaults and full-range acceptance remain unchanged.
+
+Original primary operation/emission remain **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, scratch frame setup **332/8**, and
+hexadecimal highlighting **144/8**. The primary batch remains incomplete;
+supporting matches do not replace its acceptance criteria.

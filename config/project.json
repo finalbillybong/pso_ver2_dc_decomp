@@ -2752,6 +2752,116 @@
       "boundary_review": "Raw little-endian SH4 entry ranges through following entry, including literals and alignment. Cursor/adjustment module preserves natural interfunction alignment. Final sources independently exact twice; reconstruction-stage52."
     },
     {
+      "id": "destroy_object_state",
+      "source": "src/objects/destroy_object_state.c",
+      "address": "0x8c0436e0",
+      "entry": "_destroy_object_state",
+      "ranges": [
+        {
+          "offset": 210656,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_state",
+          "address": "0x8c0436e0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "3bbe5aa0923a3b68f3d232dc939a10d8dde9a916f2c491da1abcf2c078fa84e3",
+      "symbols": {},
+      "headers": [
+        "src/include/object_state.h",
+        "src/include/vector_query.h",
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 range through adjacent entry, including literals/alignment. Final readable source and checked provisional header independently exact twice; reconstruction-stage53."
+    },
+    {
+      "id": "query_object_height",
+      "source": "src/objects/query_object_height.c",
+      "address": "0x8c043880",
+      "entry": "_query_object_height",
+      "ranges": [
+        {
+          "offset": 211072,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_object_height",
+          "address": "0x8c043880",
+          "size": 108
+        }
+      ],
+      "headers": [
+        "src/include/object_state.h",
+        "src/include/vector_query.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "78226f180f798205adcf00eb3c6a9bc9099ce3ccf292fb1b0f237228910b83a7",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4 range through adjacent entry, including literals/alignment. Final readable source and checked provisional header independently exact twice; reconstruction-stage53."
+    },
+    {
+      "id": "query_position_height",
+      "source": "src/objects/query_position_height.c",
+      "address": "0x8c0438ec",
+      "entry": "_query_position_height",
+      "ranges": [
+        {
+          "offset": 211180,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_position_height",
+          "address": "0x8c0438ec",
+          "size": 100
+        }
+      ],
+      "headers": [
+        "src/include/object_state.h",
+        "src/include/vector_query.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "7830a16c3b615d979bd0eb70a55dcd6a5142aafcb369f92eb44906f6d6da80a5",
+      "symbols": {
+        "_query_at": "0x8c011308"
+      },
+      "boundary_review": "Raw little-endian SH4 range through adjacent entry, including literals/alignment. Final readable source and checked provisional header independently exact twice; reconstruction-stage53."
+    },
+    {
+      "id": "update_object_center",
+      "source": "src/objects/update_object_center.c",
+      "address": "0x8c043950",
+      "entry": "_update_object_center",
+      "ranges": [
+        {
+          "offset": 211280,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_object_center",
+          "address": "0x8c043950",
+          "size": 108
+        }
+      ],
+      "headers": [
+        "src/include/object_state.h",
+        "src/include/vector_query.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "b77b077e8c27680b443e0e79a50a9721b7a7fb9f6070c0adea26540b80eb4ca5",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4 range through adjacent entry, including literals/alignment. Final readable source and checked provisional header independently exact twice; reconstruction-stage53."
+    },
+    {
       "id": "operation_43fb4",
       "source": "src/objects/operation_43fb4.c",
       "address": "0x8c043fb4",
