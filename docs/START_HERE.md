@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **206 exact functions in 190 modules**, replacing
-**23,028 bytes** of the 4,162,912-byte decoded executable (**0.5532% image coverage**).
-It retains **4,139,884 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **208 exact functions in 192 modules**, replacing
+**23,264 bytes** of the 4,162,912-byte decoded executable (**0.5588% image coverage**).
+It retains **4,139,648 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 53
+## Latest batch: stage 54
 
-Object-state destruction, two height queries and center update add four functions
-and 384 bytes. All 202 prior matches, module definitions and source/header hashes
-are preserved. Since the initial checkpoint, 172 functions replace 19,384 bytes.
-All 74 trials are retained, including two corrected generator failures. The
-adjacent constructor remains 712/233 and initializer 348/137; neither is admitted.
-Both original primary targets remain unresolved. Dispatch data, heap and query
-callees remain reference dependencies.
+ID/context-filtered object lookup and direct squared XZ distance add two functions
+and 236 bytes. All 206 prior matches, module definitions and source/header hashes
+are preserved. Since the initial checkpoint, 174 functions replace 19,620 bytes.
+All 86 trials are retained with no compiler/linker rejections. Output Y=0.01 and
+the large failure sentinel are preserved. Resource configuration and the adjacent
+angle wrapper remain unmatched, as do both original primary targets. Object lookup,
+context data and vector subtraction remain reference dependencies.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

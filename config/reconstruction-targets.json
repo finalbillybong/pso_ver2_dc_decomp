@@ -4752,6 +4752,62 @@
       "boundary_review": "Raw little-endian SH4 range through adjacent entry, including literals/alignment. Final readable source and checked provisional header independently exact twice; reconstruction-stage53.",
       "status": "matched",
       "reason": "Complete object-state destruction, height-query and center-update helpers. Dispatch data, allocator and query callee remain reference dependencies; original primary candidates unresolved."
+    },
+    {
+      "id": "object_distance_by_id",
+      "source": "src/objects/object_distance_by_id.c",
+      "address": "0x8c043e3c",
+      "entry": "_object_distance_by_id",
+      "ranges": [
+        {
+          "offset": 212540,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "object_distance_by_id",
+          "address": "0x8c043e3c",
+          "size": 132
+        }
+      ],
+      "headers": [
+        "src/include/object_distance.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "b52ed93772557767eea0e0394ebb9d061d4bbdd67bae4700d94a1f7d5e02ef0e",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4 range through adjacent entry, including literals/alignment. Final readable source and checked provisional header independently exact twice; reconstruction-stage54.",
+      "status": "matched",
+      "reason": "Complete ID/context-filtered and direct squared XZ distance helpers. Object lookup, context global and vector subtract remain reference dependencies; original primary targets unresolved."
+    },
+    {
+      "id": "object_distance_xz",
+      "source": "src/objects/object_distance_xz.c",
+      "address": "0x8c043ec0",
+      "entry": "_object_distance_xz",
+      "ranges": [
+        {
+          "offset": 212672,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "object_distance_xz",
+          "address": "0x8c043ec0",
+          "size": 104
+        }
+      ],
+      "headers": [
+        "src/include/object_distance.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "554834206ab0f35738e60f52ab7addc377cc9a797df2066611522cb616cfeeef",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4 range through adjacent entry, including literals/alignment. Final readable source and checked provisional header independently exact twice; reconstruction-stage54.",
+      "status": "matched",
+      "reason": "Complete ID/context-filtered and direct squared XZ distance helpers. Object lookup, context global and vector subtract remain reference dependencies; original primary targets unresolved."
     }
   ]
 }

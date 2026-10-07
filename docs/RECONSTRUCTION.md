@@ -2754,3 +2754,62 @@ Original primary operation/emission remain **512/30 and 388/8**, related reuse
 **448/4**, manager initialization **280/8**, scratch frame setup **332/8**, and
 hexadecimal highlighting **144/8**. The primary batch remains incomplete;
 supporting matches do not replace its acceptance criteria.
+
+
+## Object distance lookup and squared XZ distance, stage 54
+
+Two complete ordinary-C functions add **236 bytes**: object-distance lookup at
+**0x8c043e3c..0x8c043ec0** (132), and direct squared XZ distance at
+**0x8c043ec0..0x8c043f28** (104). Totals are **208 functions / 192 modules /
+23,264 compiled range bytes / 4,139,648 retained reference bytes**, or **0.5588%
+whole-image coverage**. All 206 previous matches, module definitions and
+source/header hashes are preserved. Since the initial checkpoint, 174 functions
+replace 19,620 bytes. Code-only completion remains unknown; separately
+reconstructed static data remains zero.
+
+The new provisional ObjectDistanceView checks flags at 0x34, position at 0x3c
+and context at 0x37c. It represents an observed prefix, not a full allocation.
+Lookup preserves unsigned-short ID narrowing, the 4096 cutoff, lookup/null test,
+0x800 exclusion flag, context comparison, distance call and optional output copy.
+The direct helper subtracts object positions, replaces output Y with **0.01f**,
+and returns **squared** XZ distance. Its null-other result is **100000000.0f**;
+lookup retains the same sentinel for rejected IDs/objects. These observed values
+and unusual output-Y behavior are not normalized or repaired. Object lookup,
+context data and vector subtraction remain reference dependencies.
+
+The lookup baseline matches immediately. Direct distance initially produces
+108 bytes instead of 104 because its successful early return leaves a NOP in
+a branch delay slot. A common return after explicit if/else reproduces the final
+vector-copy store in that slot and matches the entire 104-byte range. Both final
+readable sources match twice independently with declared checked headers before
+integration. No bytes are inserted, omitted or patched.
+
+The adjacent 712-byte constructor remains at 233 differences. Ordinary member
+calls, automatic C++ base/member/array construction and separate/shared index
+lifetimes do not improve its best result. Full resource configuration at
+**0x8c0439bc..0x8c043ca4** produces 740 or 736 bytes against 744 expected. Base
+configuration at **0x8c043ca4..0x8c043e3c** reaches **408/27**, first
+**0x8c043cbb**, by capturing the first resource pointer; the existing-resource
+branch and remaining field updates already match in that candidate. Other scoped
+sums, operand regrouping and inline helpers do not resolve replacement-branch
+register allocation. Neither configuration routine is admitted.
+
+Target turning at **0x8c043f28..0x8c043fb4** produces 144 bytes against 140 expected
+(126 differences for the direct candidate). Its angle conversion retains an
+extra saved integer register and uses separate float scale/divisor registers,
+resembling the unresolved primary conversion region. Current-angle capture,
+inline call expressions, register hints, step/angle lifetimes, all sixteen callee
+declaration combinations, literal precision and float casts do not yield a full
+match. These experiments remain scratch evidence, not progress credit.
+
+All **86 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage54`, with **no compiler/linker rejections**.
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+**53 original-workspace tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,139,648 reference bytes without altering artifacts. Focused
+exports are regenerated on a disposable copy after manifest/queue changes;
+the original database, pinned compiler, base flags and acceptance rules remain
+unchanged. Original primary operation/emission remain **512/30 and 388/8**,
+related reuse **448/4**, manager initialization **280/8**, scratch frame **332/8**
+and hexadecimal highlighting **144/8**. The primary batch remains incomplete;
+supporting matches do not replace its acceptance criteria.
