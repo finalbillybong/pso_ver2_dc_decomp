@@ -1662,3 +1662,66 @@ blocker. Both original primary targets remain incomplete. Continue shared-base
 vector-copy lifetimes, the observed effect initialization dependencies and primary
 scheduling work with `python3 -B tools/verify_source.py --check`,
 `python3 -B tools/candidates.py` and the START_HERE.md iteration commands.
+
+
+## Effect creation and release wrappers, stage 35
+
+Nine complete C functions in eight modules add **1,008 bytes**. All 121 previous
+matches, modules and source/header hashes are preserved. Totals are **130
+functions / 117 modules / 14,284 compiled range bytes / 4,148,628 retained
+reference bytes**. Whole-image coverage is 0.3431%, not code-only completion.
+Since the original 34-function checkpoint, 96 supporting functions replace
+10,640 bytes. Both original primary targets remain incomplete.
+
+| Function | Address | Complete bytes |
+| --- | --- | ---: |
+| `create_effect_78d0` | `0x8c0a78d0` | 124 |
+| `create_effect_794c` | `0x8c0a794c` | 124 |
+| `create_effect_79c8` | `0x8c0a79c8` | 128 |
+| `create_effect_7a48` | `0x8c0a7a48` | 112 |
+| `create_effect_7ab8` | `0x8c0a7ab8` | 120 |
+| `create_effect_7b30` | `0x8c0a7b30` | 128 |
+| `mark_effect_for_release` | `0x8c0a7bb0` | 16 |
+| `create_effect_7bc0` | `0x8c0a7bc0` | 124 |
+| `create_effect_7c3c` | `0x8c0a7c3c` | 132 |
+
+These callers connect the matched proximity initializer to the already-matched
+effect initializers. They retain the signed upper-bound-only resource-index
+comparison, allocate 0x68 bytes from the observed heap, skip initialization for
+null allocations, compute the resource address using stride 0x98, and forward
+their original zero/one flags and extra arguments. No lower-bound or allocation
+behavior is added. The final sources reuse checked `Effect`/`EffectVector` types
+and the initializer's unsigned-short stack parameter where present. The wrapper
+with its own narrow stack input preserves the explicit load and zero extension.
+All wrappers match with the same compiler and base flags.
+
+The release helper at 0x8c0a7bb0 sets hierarchy flag bit one for a non-null effect;
+it does not directly free storage. Its fourteen instruction bytes plus natural
+two-byte alignment match when compiled with the adjacent 124-byte wrapper in
+original order. The complete module is 140 bytes. Existing hierarchy field
+checks are reused. Old and proposed intervals were checked for overlap before
+integration, and all prior modules remain unchanged. No manual padding, assembly,
+new header definitions, copied runtime objects or reconstructed data is added.
+
+Seventeen additional shared-base initializer trials remain unsuccessful.
+Expression grouping, C++ references and typed late displacement lifetimes do not
+remove the extra saved address register. The best still emits 200 bytes versus
+196 expected, with 170 differences. A local initialized zero vector emitted
+allocated data outside the allowed text/literal section and was correctly
+rejected. It receives no matching credit. Position-setter alignment remains the
+previously documented 30/32-byte blocker.
+
+All 41 trials retain source, hypothesis, compiler receipt and full comparison in
+`reconstruction-stage35`; one was rejected. Each admitted final source matches
+twice independently. Two fresh exact project builds, integrated-image comparison,
+five-function proof and all 47 original-workspace tests pass. Source-only rejects
+4,148,628 retained bytes without changing artifacts. Focused evidence is
+`function-dossiers/run-ya7ksxq_/receipt.json`; exported ranges match the pinned
+reference and the original database is unchanged.
+
+Operation remains 512/30, emission 388/8 and related emission/reuse 448/4.
+Scratch effects remain 800/46 and 536/25. Signed remainder retains its documented
+exceptional-ABI blocker. Supporting matches do not replace the original primary
+acceptance criteria. Continue the shared scheduling investigations and remaining
+effect callers with `python3 -B tools/verify_source.py --check`,
+`python3 -B tools/candidates.py`, and the START_HERE.md iteration commands.

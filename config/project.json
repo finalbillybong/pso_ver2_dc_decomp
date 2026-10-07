@@ -2371,6 +2371,228 @@
       "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
     },
     {
+      "id": "create_effect_78d0",
+      "source": "src/effects/create_effect_78d0.c",
+      "address": "0x8c0a78d0",
+      "entry": "_create_effect_78d0",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 620752,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_78d0",
+          "address": "0x8c0a78d0",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "e89d2839a9f47a80558bfd3e268c600a57bfb5ad4ba9cd04f2744e0969921062",
+      "symbols": {
+        "_initialize_at": "0x8c0a7170"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c0a78d0, six final literal words0x8c0a7934..0x8c0a794c; adjacent entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage35."
+    },
+    {
+      "id": "create_effect_794c",
+      "source": "src/effects/create_effect_794c.c",
+      "address": "0x8c0a794c",
+      "entry": "_create_effect_794c",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 620876,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_794c",
+          "address": "0x8c0a794c",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "e616529ea956d4caf0e16e52da11a471c542c8b9ce5176bb46f5e28efb9a63a9",
+      "symbols": {
+        "_initialize_at": "0x8c0a70b0"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c0a794c, six final literal words0x8c0a79b0..0x8c0a79c8; adjacent entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage35."
+    },
+    {
+      "id": "create_effect_79c8",
+      "source": "src/effects/create_effect_79c8.c",
+      "address": "0x8c0a79c8",
+      "entry": "_create_effect_79c8",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 621000,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_79c8",
+          "address": "0x8c0a79c8",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "a1ea5608b9b4e66b405bf21b754d59bbf63befd0937cc05196dd705ab56351c4",
+      "symbols": {
+        "_initialize_at": "0x8c0a7170"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c0a79c8, six final literal words0x8c0a7a30..0x8c0a7a48; adjacent entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage35."
+    },
+    {
+      "id": "create_effect_7a48",
+      "source": "src/effects/create_effect_7a48.c",
+      "address": "0x8c0a7a48",
+      "entry": "_create_effect_7a48",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 621128,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_7a48",
+          "address": "0x8c0a7a48",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "4c2f6500218187b8dfaa89fd031b6903f700cb89b4637aac78caa7ba04f12e65",
+      "symbols": {
+        "_initialize_at": "0x8c0a6f38"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c0a7a48, six final literal words0x8c0a7aa0..0x8c0a7ab8; adjacent entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage35."
+    },
+    {
+      "id": "create_effect_7ab8",
+      "source": "src/effects/create_effect_7ab8.c",
+      "address": "0x8c0a7ab8",
+      "entry": "_create_effect_7ab8",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 621240,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_7ab8",
+          "address": "0x8c0a7ab8",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "ba0d63d875b607352f996d9fbae8373c2d5624c999f07c281202fb59d35db4c7",
+      "symbols": {
+        "_initialize_at": "0x8c0a70b0"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c0a7ab8, six final literal words0x8c0a7b18..0x8c0a7b30; adjacent entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage35."
+    },
+    {
+      "id": "create_effect_7b30",
+      "source": "src/effects/create_effect_7b30.c",
+      "address": "0x8c0a7b30",
+      "entry": "_create_effect_7b30",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 621360,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_7b30",
+          "address": "0x8c0a7b30",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "868d5492f6092ee21749a2d4a6c7086b1e6ff55f15a91054d4fbf0be1db15ace",
+      "symbols": {
+        "_initialize_at": "0x8c0a7170"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c0a7b30, six final literal words0x8c0a7b98..0x8c0a7bb0; adjacent entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage35."
+    },
+    {
+      "id": "effect_release_and_create",
+      "source": "src/effects/effect_release_and_create.c",
+      "address": "0x8c0a7bb0",
+      "entry": "_mark_effect_for_release",
+      "headers": [
+        "src/include/effect.h",
+        "src/include/hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 621488,
+          "size": 140
+        }
+      ],
+      "functions": [
+        {
+          "name": "mark_effect_for_release",
+          "address": "0x8c0a7bb0",
+          "size": 16
+        },
+        {
+          "name": "create_effect_7bc0",
+          "address": "0x8c0a7bc0",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "de69b548816f08e30876ad01abacc53fe7172e67a3141cd792241dc7d0037fd1",
+      "symbols": {
+        "_initialize_at": "0x8c0a70b0"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c0a7bb0, release return delay0x8c0a7bbc, natural alignment0x8c0a7bbe, create entry0x8c0a7bc0, return delay0x8c0a7c22, six literals0x8c0a7c24..0x8c0a7c3c. Complete fixed-C match independently twice; see reconstruction-stage35."
+    },
+    {
+      "id": "create_effect_7c3c",
+      "source": "src/effects/create_effect_7c3c.c",
+      "address": "0x8c0a7c3c",
+      "entry": "_create_effect_7c3c",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 621628,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_7c3c",
+          "address": "0x8c0a7c3c",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "1ddc0cbecbc8312c828cfcf6017f6e72fe75a60867e2891d53743c72745e7fc5",
+      "symbols": {
+        "_initialize_at": "0x8c0a7170"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c0a7c3c, six final literal words0x8c0a7ca8..0x8c0a7cc0; adjacent entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage35."
+    },
+    {
       "id": "spawn_effect_0",
       "source": "src/effects/spawn_effect_0.c",
       "address": "0x8c0aa77c",
