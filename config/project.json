@@ -1513,6 +1513,151 @@
       "boundary_review": "Raw little-endian SH4: entry0x8c034164, return delay0x8c034192, five literal words0x8c034194..0x8c0341a8; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage33."
     },
     {
+      "id": "operation_37c3c",
+      "source": "src/objects/operation_37c3c.c",
+      "address": "0x8c037c3c",
+      "entry": "_operation_37c3c",
+      "ranges": [
+        {
+          "offset": 162876,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_37c3c",
+          "address": "0x8c037c3c",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "c69f5c580c45a9436833693693bc65f404b6581586c1607726c6f82a730fcfde",
+      "headers": [
+        "src/include/object_effect_view.h",
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_post_emit_at": "0x8c060770"
+      },
+      "boundary_review": "Raw SH4 range through next entry, including literal pools/alignment. Empty entries independently referenced from static tables. Final source exact twice; reconstruction-stage59."
+    },
+    {
+      "id": "operation_37c84",
+      "source": "src/objects/operation_37c84.c",
+      "address": "0x8c037c84",
+      "entry": "_operation_37c84",
+      "ranges": [
+        {
+          "offset": 162948,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_37c84",
+          "address": "0x8c037c84",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "c31991df30baefec05003e58ceba957c61cd82e6fdd0c3e3e06e3fcc1030ca9c",
+      "headers": [
+        "src/include/object_effect_view.h",
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 range through next entry, including literal pools/alignment. Empty entries independently referenced from static tables. Final source exact twice; reconstruction-stage59."
+    },
+    {
+      "id": "operation_37cbc",
+      "source": "src/objects/operation_37cbc.c",
+      "address": "0x8c037cbc",
+      "entry": "_operation_37cbc",
+      "ranges": [
+        {
+          "offset": 163004,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_37cbc",
+          "address": "0x8c037cbc",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "c69f5c580c45a9436833693693bc65f404b6581586c1607726c6f82a730fcfde",
+      "headers": [
+        "src/include/object_effect_view.h",
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_post_emit_at": "0x8c060770"
+      },
+      "boundary_review": "Raw SH4 range through next entry, including literal pools/alignment. Empty entries independently referenced from static tables. Final source exact twice; reconstruction-stage59."
+    },
+    {
+      "id": "operation_37d04",
+      "source": "src/objects/operation_37d04.c",
+      "address": "0x8c037d04",
+      "entry": "_operation_37d04",
+      "ranges": [
+        {
+          "offset": 163076,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_37d04",
+          "address": "0x8c037d04",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "10cb2f4aa3f50b47a33f6d332ed52146c4b198e956908e5e8a274d8db93d5c9b",
+      "headers": [
+        "src/include/object_effect_view.h",
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_post_emit_at": "0x8c060770"
+      },
+      "boundary_review": "Raw SH4 range through next entry, including literal pools/alignment. Empty entries independently referenced from static tables. Final source exact twice; reconstruction-stage59."
+    },
+    {
+      "id": "empty_operations_37d4c",
+      "source": "src/objects/empty_operations_37d4c.c",
+      "address": "0x8c037d4c",
+      "entry": "_operation_37d4c",
+      "ranges": [
+        {
+          "offset": 163148,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_37d4c",
+          "address": "0x8c037d4c",
+          "size": 4
+        },
+        {
+          "name": "operation_37d50",
+          "address": "0x8c037d50",
+          "size": 4
+        },
+        {
+          "name": "operation_37d54",
+          "address": "0x8c037d54",
+          "size": 4
+        },
+        {
+          "name": "operation_37d58",
+          "address": "0x8c037d58",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "a4a19f3fbb18a2373621306da063627754d4c6a1e1e293a95235943faaa60d5f",
+      "boundary_review": "Raw SH4 range through next entry, including literal pools/alignment. Empty entries independently referenced from static tables. Final source exact twice; reconstruction-stage59."
+    },
+    {
       "id": "construct_random_state",
       "source": "src/random/construct_random_state.c",
       "address": "0x8c037d5c",

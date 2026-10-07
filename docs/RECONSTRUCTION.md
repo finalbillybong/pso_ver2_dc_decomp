@@ -3043,3 +3043,51 @@ operation/emission remain **512/30 and 388/8**, related reuse **448/4**, and man
 initialization **280/8**. The signed-remainder helper still lacks a complete
 180-byte match. The primary batch remains incomplete; supporting matches never
 replace its acceptance criteria.
+
+
+## Effect callers and referenced virtual entries, stage 59
+
+Eight complete ordinary-C functions in five modules add **288 bytes**. Four
+wrappers at **0x8c037c3c** (72), **0x8c037c84** (56), **0x8c037cbc** (72) and
+**0x8c037d04** (72) resolve an effect kind from the object's context and emit it
+at its position. Four adjacent entries at **0x8c037d4c, 0x8c037d50, 0x8c037d54 and
+0x8c037d58** contribute four bytes each: three empty functions and one returning
+zero. Totals are **227 functions / 208 modules / 24,504 compiled full-range bytes /
+4,138,408 retained reference bytes**, or **0.5886% whole-image coverage**. All 219
+previous matches, module definitions and source/header hashes are unchanged.
+Since the initial checkpoint, 193 functions replace 20,860 bytes. Code-only
+completion remains unknown; separately reconstructed static data remains zero.
+
+The checked provisional ObjectEffectView contains position at 0x3c and a context
+word at 0x38c. Wrappers preserve kinds 0x3000b, 0x3000d, 0x3000b and 0x3000c,
+zero emission argument/flags, and the optional post-emission call with -768.
+External declarations for that post-call reproduce its literal preparation order,
+resolving ten differences in each 72-byte wrapper. The 56-byte wrapper matches
+immediately. Callees and context semantics remain provisional; no behavior fixes
+are introduced. Each four-byte entry has independent static-table references,
+recorded with the reference image hash in scratch. They are callable entries,
+not alignment counted as functions. The compiler naturally emits their combined
+16-byte range. Every final readable source with declared checked headers matches
+independently twice, including literals, delay slots and alignment.
+
+The forward/inverse random block transforms improve to **124/32** through an
+explicit loop-bound and block-offset lifetime. Further forward-map scoping reaches
+**124/23**, first **0x8c037fc9**; register allocation remains different. Scoped
+counters, register hints, external arrays, reversed indexing, integer-address
+forms and source/destination pointer variants do not give a complete match.
+These candidates remain unadmitted. The prior random-word XOR **104/20**, shuffle
+**132/45**, motion **512/22**, reverse motion **624/22**, segment velocity **240/20**
+and direction velocity **120/29** are preserved without matching credit.
+
+All **44 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage59`, with no compiler/linker rejections.
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+**53 research tests** pass; the public suite remains **58 tests**. Source-only
+rejects 4,138,408 retained bytes without altering existing artifacts. Focused
+exports are regenerated after manifest/queue changes on a disposable database
+copy and validated against current inputs; the original database remains
+unchanged. Compiler binary, flags, default linker and whole-range rules are
+unchanged. The original operation/emission targets remain **512/30 and 388/8**;
+related reuse **448/4**, manager initialization **280/8**, and the signed-remainder
+helper remain unresolved. These supporting callers do not complete the primary
+batch or remove its acceptance criteria.

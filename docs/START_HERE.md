@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **219 exact functions in 203 modules**, replacing
-**24,216 bytes** of the 4,162,912-byte decoded executable (**0.5817% image coverage**).
-It retains **4,138,696 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **227 exact functions in 208 modules**, replacing
+**24,504 bytes** of the 4,162,912-byte decoded executable (**0.5886% image coverage**).
+It retains **4,138,408 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 58
+## Latest batch: stage 59
 
-Random-table refresh and next-word generation add two functions and 180 bytes.
-All 217 prior matches, module definitions and source/header hashes are preserved.
-Since the initial checkpoint, 185 functions replace 20,572 bytes. All 101 trials
-are retained, including one compiler rejection. The two routines share a checked
-inline table-refresh body. Random-word XOR remains 104/20; the byte shuffle
-remains 132/45; forward and inverse block transforms remain 124/37. Motion stores,
-both original primary targets and the signed-remainder runtime remain unresolved.
+Four effect callers and four separately referenced virtual entries add eight
+functions and 288 bytes in five modules. All 219 previous matches, module
+definitions and source/header hashes are preserved. Since the initial checkpoint,
+193 functions replace 20,860 bytes. All 44 trials are retained with no compiler
+rejections. The forward random-block transform improves to 124/23 but remains
+unadmitted. The emission routine called by the new wrappers still differs in
+eight bytes. Both original primary targets remain incomplete.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only
