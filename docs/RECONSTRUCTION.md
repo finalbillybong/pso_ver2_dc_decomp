@@ -2589,3 +2589,57 @@ on a disposable database copy; the original database remains unchanged. Compiler
 flags and acceptance rules are unchanged. Primary emission remains **388/8**,
 related reuse **448/4**, and manager initialization **280/8**. The original primary
 batch remains incomplete; supporting functions do not substitute for its targets.
+
+
+## Integer highlighting and hexadecimal fields, stage 51
+
+Eight complete functions in seven ordinary-C modules add **460 bytes**: integer
+highlighting **0x8c042f10..0x8c042fd4** (196), hexadecimal construction
+**0x8c042fd4..0x8c043000** (44), destruction **0x8c043000..0x8c04303c** (60),
+configuration/clear **0x8c04303c..0x8c043064** (32+8), cursor movement
+**0x8c043064..0x8c043088** (36), adjustment **0x8c043088..0x8c0430a4** (28), and
+drawing **0x8c0430a4..0x8c0430dc** (56). Totals are **192 functions / 177 modules /
+21,960 compiled range bytes / 4,140,952 retained reference bytes**, or **0.5275%
+whole-image coverage**. All 184 previous matches, module definitions and
+source/header hashes are preserved. Since the initial 34-function checkpoint,
+158 functions replace 18,316 bytes. Code-only completion remains unknown;
+separately reconstructed static data remains zero.
+
+Integer highlighting retains the ten-byte formatted buffer, two-byte character
+buffer, three color changes and one draw per character. Reversing column/index
+local declarations resolves its twelve register differences. The hexadecimal
+helpers share the already checked 20-byte field prefix through a declared alias
+header; no full allocation extent is inferred. They preserve the 1..8 digit clamp,
+zero-step early exits, explicit nibble shifts and post-read integer accumulation.
+An explicit shift reproduces the short nibble-offset instruction, and capturing
+the value pointer before the calculation resolves the adjustment registers.
+
+Hexadecimal configuration alone produces 30 bytes against its 32-byte complete
+range. Compiling its immediately adjacent clear function in the same source
+produces the original alignment naturally and matches the complete 40-byte module.
+The manifest declares both function ranges and credits every byte once. No padding
+is manually inserted, no existing range is overlapped, and the independently
+matching clear function is not counted again as a separate module. All seven
+readable final sources independently match twice, including literal pools and
+return-delay instructions. All old headers remain unchanged.
+
+Hexadecimal highlighting at **0x8c0430dc..0x8c04316c** remains unadmitted. Explicit
+nibble shifts and corrected local declaration order reproduce the loop. Declaring
+the fifth color parameter `register` then reproduces its observed stack addressing
+and restores the full **144-byte** size. Only **eight bytes** differ: both digit
+draws swap the constant-width move and coordinate-OR delay-slot scheduling.
+Best scratch: `highlight-hex-call-register-selected`. Return types, local function
+pointers, inline wrappers, C++ mode, scoped count/coordinate locals and narrow digit
+prototypes do not resolve it. Packed-color aggregate views and selected-color
+pointer/qualifier trials do not improve the final candidate.
+
+All **66 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage51`, with **no compiler or linker rejections**.
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+**53 original-workspace tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,140,952 retained bytes without altering artifacts. Focused
+exports are refreshed on a disposable database copy, preserving the original
+database. Compiler, flags and full-range acceptance rules are unchanged.
+Original primary operation/emission remain **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, and scratch frame setup **332/8**.
+The primary batch is still incomplete; supporting matches do not replace it.

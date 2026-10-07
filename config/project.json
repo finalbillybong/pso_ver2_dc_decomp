@@ -2340,6 +2340,188 @@
       "boundary_review": "Raw little-endian SH4 entry through next entry; complete range, including literals and alignment, independently exact twice. reconstruction-stage50."
     },
     {
+      "id": "highlight_integer_field",
+      "source": "src/ui/highlight_integer_field.c",
+      "address": "0x8c042f10",
+      "entry": "_highlight_integer_field",
+      "ranges": [
+        {
+          "offset": 208656,
+          "size": 196
+        }
+      ],
+      "functions": [
+        {
+          "name": "highlight_integer_field",
+          "address": "0x8c042f10",
+          "size": 196
+        }
+      ],
+      "reference_sha256": "7b5670bb1e9374f172371343c50815002f85aa5a35420a7cce9e2d613de099aa",
+      "headers": [
+        "src/include/integer_field.h"
+      ],
+      "symbols": {
+        "_format_at": "0x8c12b048"
+      },
+      "boundary_review": "Raw little-endian SH4 complete entry ranges through adjacent entry; final sources match independently twice. Configuration/clear has natural compiler alignment between entries; reconstruction-stage51."
+    },
+    {
+      "id": "construct_hex_field",
+      "source": "src/ui/construct_hex_field.c",
+      "address": "0x8c042fd4",
+      "entry": "_construct_hex_field",
+      "ranges": [
+        {
+          "offset": 208852,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_hex_field",
+          "address": "0x8c042fd4",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "0c7bde278fca7bc96a53f0d8e71c4bd996ee3c51dfe3bc9230b3c0afc7303f15",
+      "headers": [
+        "src/include/integer_field.h",
+        "src/include/hex_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 complete entry ranges through adjacent entry; final sources match independently twice. Configuration/clear has natural compiler alignment between entries; reconstruction-stage51."
+    },
+    {
+      "id": "destroy_hex_field",
+      "source": "src/ui/destroy_hex_field.c",
+      "address": "0x8c043000",
+      "entry": "_destroy_hex_field",
+      "ranges": [
+        {
+          "offset": 208896,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_hex_field",
+          "address": "0x8c043000",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "79bd2b0d7cfa657f8f91615ade21ea03d58f22068e89d54aaa0d5502d86163fe",
+      "headers": [
+        "src/include/integer_field.h",
+        "src/include/hex_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 complete entry ranges through adjacent entry; final sources match independently twice. Configuration/clear has natural compiler alignment between entries; reconstruction-stage51."
+    },
+    {
+      "id": "configure_and_clear_hex_field",
+      "source": "src/ui/configure_and_clear_hex_field.c",
+      "address": "0x8c04303c",
+      "entry": "_configure_hex_field",
+      "ranges": [
+        {
+          "offset": 208956,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_hex_field",
+          "address": "0x8c04303c",
+          "size": 32
+        },
+        {
+          "name": "clear_hex_field",
+          "address": "0x8c04305c",
+          "size": 8
+        }
+      ],
+      "reference_sha256": "b20949f13dc7ff9db3373dc79b11d7bae3ad88c2dbc0360fc8b4de4f306f6a1b",
+      "headers": [
+        "src/include/integer_field.h",
+        "src/include/hex_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 complete entry ranges through adjacent entry; final sources match independently twice. Configuration/clear has natural compiler alignment between entries; reconstruction-stage51."
+    },
+    {
+      "id": "move_hex_field_cursor",
+      "source": "src/ui/move_hex_field_cursor.c",
+      "address": "0x8c043064",
+      "entry": "_move_hex_field_cursor",
+      "ranges": [
+        {
+          "offset": 208996,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "move_hex_field_cursor",
+          "address": "0x8c043064",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "a207b906e32fcb24c791cf4216dbedd6d4c3081fa60da848a1979739ee022939",
+      "headers": [
+        "src/include/integer_field.h",
+        "src/include/hex_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 complete entry ranges through adjacent entry; final sources match independently twice. Configuration/clear has natural compiler alignment between entries; reconstruction-stage51."
+    },
+    {
+      "id": "adjust_hex_field",
+      "source": "src/ui/adjust_hex_field.c",
+      "address": "0x8c043088",
+      "entry": "_adjust_hex_field",
+      "ranges": [
+        {
+          "offset": 209032,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "adjust_hex_field",
+          "address": "0x8c043088",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "6083b604c65776b85b0684199dcc30760d706038961fd6ec8ec8751df48a8a71",
+      "headers": [
+        "src/include/integer_field.h",
+        "src/include/hex_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 complete entry ranges through adjacent entry; final sources match independently twice. Configuration/clear has natural compiler alignment between entries; reconstruction-stage51."
+    },
+    {
+      "id": "draw_hex_field",
+      "source": "src/ui/draw_hex_field.c",
+      "address": "0x8c0430a4",
+      "entry": "_draw_hex_field",
+      "ranges": [
+        {
+          "offset": 209060,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_hex_field",
+          "address": "0x8c0430a4",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "81ef8d3c6916478d5c68024073382388eb14149057194f2e074ede7a5fe1bef3",
+      "headers": [
+        "src/include/integer_field.h",
+        "src/include/hex_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 complete entry ranges through adjacent entry; final sources match independently twice. Configuration/clear has natural compiler alignment between entries; reconstruction-stage51."
+    },
+    {
       "id": "operation_43fb4",
       "source": "src/objects/operation_43fb4.c",
       "address": "0x8c043fb4",
