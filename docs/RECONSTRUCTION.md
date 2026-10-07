@@ -3091,3 +3091,56 @@ unchanged. The original operation/emission targets remain **512/30 and 388/8**;
 related reuse **448/4**, manager initialization **280/8**, and the signed-remainder
 helper remain unresolved. These supporting callers do not complete the primary
 batch or remove its acceptance criteria.
+
+
+## Effect selection, last-handle forwarding and list helpers, stage 60
+
+Five complete ordinary-C functions in four modules add **232 bytes**: effect
+selection at **0x8c24e6a4** (52), last-handle forwarding at **0x8c060770** (80),
+list detach at **0x8c0607c0** (36), list append at **0x8c0607e4** (28), and nullable
+release at **0x8c060800** (36). Totals are **232 functions / 212 modules /
+24,736 compiled full-range bytes / 4,138,176 retained reference bytes**, or
+**0.5942% whole-image coverage**. All 227 earlier matches, module definitions and
+source/header hashes remain unchanged. Since the initial checkpoint, 198 functions
+replace 21,092 bytes. Code-only completion remains unknown; separately
+reconstructed static data remains zero.
+
+The selector preserves the requested kind except in modes 16/17, where it returns
+0x30043. Explicitly initializing a mode flag, conditionally setting it, and using
+a conditional expression reproduces the reference's boolean and branch shape;
+direct if/ternary forms are shorter. The last-handle routine preserves its active
+check, both enabled/last reads, signed bounds 0..53, handle lookup and final value
+plus zero arguments. Capturing the last-index pointer before the enabled read
+resolves seven address-scheduling differences. Its call at 0x8c3457b0 remains a
+reference dependency.
+
+EffectListNode checks links at offsets zero/four and an eight-byte observed
+prefix. Detach preserves head/tail updates without clearing the removed links;
+append preserves the tail reload and final null next link. Compiled alone,
+detach emits 34 bytes, short of its 36-byte full range. Compiling it with the
+adjacent append function in original order naturally emits the required alignment
+and matches all 64 bytes; no manual padding is added. Release checks both the
+object and signed short release flag, calls the retained free routine only when
+required, and returns the original pointer. All final readable sources and
+checked headers match independently twice, including literals and delay slots.
+
+Effect remapping at **0x8c24e644..0x8c24e6a4** improves from 88 versus 96 expected
+to **96/31**, first **0x8c24e648**. Its mode/category exits, signed table sentinel
+and unsigned kind adjustment are reconstructed, but saved-register selection and
+second-field address lifetime differ. Late table bases, conditional results,
+external declarations and scalar offset temporaries do not complete the match.
+One redundant-conditional experiment is marked diagnostic-only and ineligible
+for admission. The table itself remains retained static data.
+
+All **45 trials** retain sources, hypotheses and comparisons in
+`reconstruction-stage60`; successful compilations retain compiler receipts. One
+C89 declaration-order rejection is recorded. Two fresh exact builds, integrated
+image comparison, five-function proof and all **53 research tests** pass; the
+public suite remains **58 tests**. Source-only rejects 4,138,176 retained bytes
+without changing artifacts. Focused exports are regenerated after manifest/queue
+changes on a disposable copy and checked against current inputs; the original
+database remains unchanged. Compiler binary, base flags, default linker and
+full-range rules are unchanged. Original operation/emission remain **512/30 and
+388/8**, related reuse **448/4**, manager initialization **280/8**, and the
+signed-remainder helper remains unresolved. The primary batch is still incomplete;
+these supporting matches do not replace its acceptance criteria.

@@ -3914,6 +3914,77 @@
       "boundary_review": "Raw little-endian SH4: entry 0x8c060354; return delay 0x8c060372; three literals 0x8c060374-0x8c060380; adjacent entry 0x8c060380. Full 44-byte ordinary-C match independently twice with unchanged flags; see reconstruction-stage17."
     },
     {
+      "id": "update_last_effect",
+      "source": "src/effects/update_last_effect.c",
+      "address": "0x8c060770",
+      "entry": "_update_last_effect",
+      "ranges": [
+        {
+          "offset": 329584,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_last_effect",
+          "address": "0x8c060770",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "08f46fb354ff98eedfd20a336c22dfe85fbf87c724a1ed86bc34b2cbc854ad99",
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literals/alignment. Link functions combined in original order for natural alignment; no padding inserted. Final source exact twice; reconstruction-stage60."
+    },
+    {
+      "id": "effect_node_links",
+      "source": "src/effects/node_links.c",
+      "address": "0x8c0607c0",
+      "entry": "_detach_effect_node",
+      "ranges": [
+        {
+          "offset": 329664,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "detach_effect_node",
+          "address": "0x8c0607c0",
+          "size": 36
+        },
+        {
+          "name": "append_effect_node",
+          "address": "0x8c0607e4",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "c31af1b84f1f215266f020ae019a1cd23a30ddc1baf67230189711aed38726d1",
+      "headers": [
+        "src/include/effect_list_node.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literals/alignment. Link functions combined in original order for natural alignment; no padding inserted. Final source exact twice; reconstruction-stage60."
+    },
+    {
+      "id": "release_effect_node",
+      "source": "src/effects/release_node.c",
+      "address": "0x8c060800",
+      "entry": "_release_effect_node",
+      "ranges": [
+        {
+          "offset": 329728,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_effect_node",
+          "address": "0x8c060800",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "444e960b71d5d487758368ffdcadad9fba205735ca93aaf1e733029e00b8d20d",
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literals/alignment. Link functions combined in original order for natural alignment; no padding inserted. Final source exact twice; reconstruction-stage60."
+    },
+    {
       "id": "initialize_effect_default",
       "source": "src/effects/initialize_default.c",
       "address": "0x8c0a6f38",
@@ -5452,6 +5523,27 @@
         "_format_base": "0x8c324f4c"
       },
       "boundary_review": "Raw little-endian SH4: entry0x8c1ab4b8, return delay0x8c1ab4e8, zero alignment0x8c1ab4ea, seven literal words0x8c1ab4ec..0x8c1ab508. Complete fixed-C match independently twice; see reconstruction-stage34."
+    },
+    {
+      "id": "select_effect_kind",
+      "source": "src/effects/select_effect_kind.c",
+      "address": "0x8c24e6a4",
+      "entry": "_select_effect_kind",
+      "ranges": [
+        {
+          "offset": 2352804,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "select_effect_kind",
+          "address": "0x8c24e6a4",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "33c8b7380f355e6d7939e1480d1eac5e4f598cda136896047fa387ee97797a50",
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literals/alignment. Link functions combined in original order for natural alignment; no padding inserted. Final source exact twice; reconstruction-stage60."
     }
   ]
 }
