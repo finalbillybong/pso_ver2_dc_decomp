@@ -986,6 +986,58 @@
       "boundary_review": "Raw little-endian SH4: Return delay 0x8c0ab918, alignment 0x8c0ab91a, four literals 0x8c0ab91c-0x8c0ab92c; adjacent entry begins floating-register save at 0x8c0ab92c. Complete fixed-C match independently twice; see reconstruction-stage21.",
       "status": "matched",
       "reason": "Complete ordinary-C range with literals and padding; shared spawned-effect initialization/lifecycle dependency. Primary operation/emission candidates remain unresolved."
+    },
+    {
+      "id": "finish_spawn_motion",
+      "source": "src/effects/finish_spawn_motion.c",
+      "address": "0x8c0abe64",
+      "entry": "_finish_spawn_motion",
+      "headers": [
+        "src/include/spawn_motion.h"
+      ],
+      "ranges": [
+        {
+          "offset": 638564,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "finish_spawn_motion",
+          "address": "0x8c0abe64",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "a208ef52885fe05536a0b81fb3cca459ec9dd8b73a023d0c89132d4fc0338f5a",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0abe8c, zero alignment 0x8c0abe8e, helper literal 0x8c0abe90, adjacent entry 0x8c0abe94. Complete fixed-C match independently twice; see reconstruction-stage23.",
+      "status": "matched",
+      "reason": "Complete ordinary-C spawned-effect dependency including literals/alignment. Both original primary targets remain unresolved."
+    },
+    {
+      "id": "spawn_effect_alt",
+      "source": "src/effects/spawn_effect_alt.c",
+      "address": "0x8c0abe94",
+      "entry": "_spawn_effect_alt",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 638612,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_alt",
+          "address": "0x8c0abe94",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "258f7e8b9a058b970f60162b244904bae1e6c7cd08b732ab2500df531378e9b4",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0abece, four literal words 0x8c0abed0-0x8c0abee0, adjacent admitted spawn wrapper at 0x8c0abee0. Complete fixed-C match independently twice; see reconstruction-stage23.",
+      "status": "matched",
+      "reason": "Complete ordinary-C spawned-effect dependency including literals/alignment. Both original primary targets remain unresolved."
     }
   ]
 }

@@ -1039,3 +1039,63 @@ python3 -B tools/candidates.py
 Continue raw instruction and call-context analysis for the two primary targets,
 and the unresolved randomized constructors and vector dependencies. Do not repeat
 these unsuccessful expression/type families without new evidence.
+
+
+## Spawn completion and alternate allocation, stage 23
+
+Two complete ordinary-C matches add **124 bytes**, preserving all 68 previous
+matching functions, sources and headers. Totals are **70 functions / 59 modules /
+8,004 compiled range bytes / 4,154,908 retained reference bytes**. Since the
+original 34-function checkpoint, 36 functions replace 4,360 bytes.
+
+| Function | Complete range | Bytes |
+| --- | --- | ---: |
+| `finish_spawn_motion` | `0x8c0abe64–0x8c0abe94` | 48 |
+| `spawn_effect_alt` | `0x8c0abe94–0x8c0abee0` | 76 |
+
+The completion check preserves the ordered `field_4c < 1.0f` test, including its
+NaN branch behavior, the vector-helper call and the 16-bit flag update at offset
+4. An offset-checked provisional view in `spawn_motion.h` permits the original
+short displacement instructions without claiming the complete object size or
+final field meanings. The allocation wrapper preserves the observed heap,
+0xa0-byte allocation, null handling and constructor argument order. Return delay
+slots, alignment and all literals match. Both final sources matched independently
+twice before admission.
+
+The smaller paired-angle helper at `0x8c0c5094–0x8c0c510c` generates 120 bytes
+with seven differences: its first conversion is exact, while its second retains
+the unresolved constant-register schedule. Return-flow changes, shared factors,
+inline scalar arithmetic and aggregate temporaries do not fix it. The two other
+paired helpers remain 124/15 and 120/12. Scoped emission-control variants also
+fail to improve the primary candidates. Raw handle-start evidence confirms that
+its full bank argument reaches the lookup; a narrower declaration cannot be
+justified merely to alter scheduling.
+
+The adjacent constructor at `0x8c0ab558–0x8c0ab700` improves from 428 generated
+bytes to the expected 424. Capturing the radius destination and operands after
+the random call removes an extra instruction and alignment padding. Further Y
+operand captures reduce its mismatch to 79 bytes. Combining separate Y and Z
+improvements regresses to 81, demonstrating allocation coupling. The count,
+reciprocal branch and final initialization already match at the correct extent.
+The flagged constructor remains 488/137. Neither constructor is admitted.
+
+Runtime diagnostics retain specific evidence: the 44-byte random helper saves
+and restores MACL, and tested ordinary C does not reproduce its complete bytes.
+The 80-byte angle wrapper classifies IEEE-754 exponent/mantissa bits and records
+1101 for NaN or 1100 for infinity; tested C emits 84 bytes. No assembly, copied
+runtime objects or compiler changes were substituted. The signed-remainder
+exceptional-ABI blocker remains.
+
+All 116 source/hypothesis/compiler/comparison trials are preserved in private
+`reconstruction-stage23`, with no compiler rejections. Current focused evidence
+is `function-dossiers/run-azvdk4b1/receipt.json`; the original database is unchanged.
+Earlier call and effect exports retain their historical input snapshots. Broad
+analysis windows do not establish accepted function boundaries.
+
+Two fresh exact project builds, full integrated-image comparison, the five-function
+proof and all 43 original tests pass. Source-only rejects 4,154,908 retained bytes
+without modifying existing artifacts. Primary acceptance remains **incomplete**:
+operation 512/46, emission 388/8, related emission/reuse 448/4. Supporting matches
+do not replace the two original targets. Static-data replacement remains zero.
+Continue the angle/dispatch and call-scheduling investigations alongside observed
+spawned-effect dependencies; use the standard commands in START_HERE.md.
