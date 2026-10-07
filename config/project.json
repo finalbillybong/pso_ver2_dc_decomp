@@ -2864,6 +2864,115 @@
       "boundary_review": "Raw SH4 entry 0x8c0a7f7c through 0x8c0a7f90; return/tail-call delay slots and complete literal pool precede adjacent entry. Two complete fixed-C matches in reconstruction-stage36."
     },
     {
+      "id": "create_effect_manager",
+      "source": "src/effects/create_effect_manager.c",
+      "address": "0x8c0a9510",
+      "entry": "_create_effect_manager",
+      "headers": [
+        "src/include/effect_manager.h",
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 627984,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_manager",
+          "address": "0x8c0a9510",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "c89e5c1282c0286a0bf99d08b36718537d2f8617295ddc84afdbe42fce84c976",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry 0x8c0a9510 through 0x8c0a9548 includes return delay, alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage40."
+    },
+    {
+      "id": "load_effect_resources",
+      "source": "src/effects/load_effect_resources.c",
+      "address": "0x8c0a9548",
+      "entry": "_load_effect_resources",
+      "headers": [
+        "src/include/effect_manager.h",
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 628040,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "load_effect_resources",
+          "address": "0x8c0a9548",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "064be0a40ec8a8957f49ace87aecc30e52c7d7100bc5f2de462698c8f369af93",
+      "symbols": {
+        "_allocate_at": "0x8c18de4c",
+        "_divide_at": "0x8c18e808",
+        "_resource_name": "0x8c303c08",
+        "_resource_table": "0x8c46f100"
+      },
+      "boundary_review": "Raw SH4 entry 0x8c0a9548 through 0x8c0a95a0 includes return delay, alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage40."
+    },
+    {
+      "id": "free_effect_resources",
+      "source": "src/effects/free_effect_resources.c",
+      "address": "0x8c0a95a0",
+      "entry": "_free_effect_resources",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 628128,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "free_effect_resources",
+          "address": "0x8c0a95a0",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "13beb27d4f17425fa05a232631f57d6480066fc7418b40cf8d53e714d9b7d5ae",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry 0x8c0a95a0 through 0x8c0a95b4 includes return delay, alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage40."
+    },
+    {
+      "id": "apply_effect_manager_resource",
+      "source": "src/effects/apply_effect_manager_resource.c",
+      "address": "0x8c0a95b4",
+      "entry": "_apply_effect_manager_resource",
+      "headers": [
+        "src/include/effect_manager.h",
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 628148,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_effect_manager_resource",
+          "address": "0x8c0a95b4",
+          "size": 160
+        }
+      ],
+      "reference_sha256": "e0611fac0f6a498c3eb16b90e035f3e4a47d9803b313cbd1cb388526a78be7fb",
+      "symbols": {
+        "_manager_data": "0x8c46f104",
+        "_bind_at": "0x8c0a75f0"
+      },
+      "boundary_review": "Raw SH4 entry 0x8c0a95b4 through 0x8c0a9654 includes return delay, alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage40."
+    },
+    {
       "id": "spawn_effect_0",
       "source": "src/effects/spawn_effect_0.c",
       "address": "0x8c0aa77c",

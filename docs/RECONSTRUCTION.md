@@ -1975,3 +1975,62 @@ blocker. Supporting matches do not replace primary acceptance. Continue the
 START_HERE.md source/compile/compare loop and preserve failed hypotheses before
 new experiments. No compiler, linker implementation, flags, packaging, gameplay
 or original database change is made in this stage.
+
+
+## Manager resource operations, stage 40
+
+Four complete C functions add **324 bytes**. Totals are **145 functions / 131
+modules / 16,152 compiled range bytes / 4,146,760 retained reference bytes**, or
+**0.3880% whole-image coverage**. All 141 previous matches, module definitions
+and source/header hashes are unchanged. Since the initial 34-function
+checkpoint, 111 functions replace 12,508 bytes. Code-only completion remains
+unknown; both original primary targets remain incomplete.
+
+| Function | Address | Complete bytes |
+| --- | --- | ---: |
+| create_effect_manager | 0x8c0a9510 | 56 |
+| load_effect_resources | 0x8c0a9548 | 88 |
+| free_effect_resources | 0x8c0a95a0 | 20 |
+| apply_effect_manager_resource | 0x8c0a95b4 | 160 |
+
+The allocation wrapper requests the checked 136-byte manager size and calls its
+initializer only for a nonnull allocation. Its void declaration does not assert
+unverified return semantics. The resource loader allocates 512 records of 152
+bytes, stores the table pointer, invokes the observed loader and clears the
+count. A nonnegative loader result is divided by 152 through the observed helper.
+The free wrapper tail-calls the observed deallocator with the table pointer; it
+does not clear the pointer. These routines preserve the reference's allocation
+and index handling without speculative guards.
+
+Manager update preserves its three-way mode switch, resource index arithmetic,
+resource-pointer reload before binding, mode reset, field conversions and copy
+call ordering. The global array declaration has no invented complete extent.
+Existing offset-checked manager/resource headers are unchanged. External
+allocation/division and global declarations resolve the loader's literal and
+instruction ordering. An external global-array declaration restores the update
+routine's shared base addressing; an external bind declaration resolves its last
+11 differing bytes. All four final sources match twice independently with the
+unchanged compiler, flags, default GNU linker and full-range acceptance rules.
+
+The adjacent resource field copier at 0x8c0a939c remains unresolved: 372 bytes
+expected, best current ordinary source 380 bytes with 341 differing, first
+0x8c0a93a2. Raw instructions copy a terminated name, observed integer/float fields,
+six floats and sixteen unsigned bytes. Scalar temporaries improve the comparison
+but do not remove two extra saved registers. Array/vector layouts, C++ member
+and free-function forms, scalar access qualifiers, loop bases/bounds/counter
+lifetimes and explicit addresses do not resolve it. All failed variants remain
+in scratch; no partial source or padding workaround is admitted.
+
+All **73 trials**, with no compiler rejections, preserve source, hypothesis,
+compiler receipt and comparison in `reconstruction-stage40`. Two fresh project
+builds, exact integrated-image comparison, five-function proof and all **53
+original-workspace tests** pass. The public suite remains **58 tests**. Source-only
+rejects 4,146,760 retained bytes without changing artifacts. Focused exports are
+refreshed after the manifest change using a disposable database copy; the original
+database is unchanged and the current receipt is recorded in the local workflow.
+
+Operation remains **512/30**, emission **388/8**, related reuse **448/4**, and
+manager initialization **280/8**. Signed remainder retains its exceptional-ABI
+blocker. Supporting matches do not replace primary acceptance. Continue the
+START_HERE.md source/compile/compare loop; retain failed hypotheses before new
+experiments. No compiler, driver, flags, packaging or gameplay change is made.
