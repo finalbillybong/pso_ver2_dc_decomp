@@ -716,6 +716,203 @@
       "boundary_review": "Raw little-endian SH4: entry0x8c033a10, return delay0x8c033a72, nine literal words0x8c033a74..0x8c033a98; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage29."
     },
     {
+      "id": "destroy_hierarchy_array",
+      "source": "src/objects/destroy_hierarchy_array.c",
+      "address": "0x8c033a98",
+      "entry": "_destroy_hierarchy_array",
+      "headers": [
+        "src/include/hierarchy_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 146072,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_hierarchy_array",
+          "address": "0x8c033a98",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "130d5c6a73fb7a8bc04b89d4f7a3768ac31ac5c458269ced9d099d3e61a7cc37",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033a98, return delay0x8c033ad0, zero alignment0x8c033ad2, five literal words0x8c033ad4..0x8c033ae8. Complete fixed-C match independently twice; see reconstruction-stage31."
+    },
+    {
+      "id": "submit_hierarchy_array",
+      "source": "src/objects/submit_hierarchy_array.c",
+      "address": "0x8c033ae8",
+      "entry": "_submit_hierarchy_array",
+      "headers": [
+        "src/include/hierarchy_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 146152,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "submit_hierarchy_array",
+          "address": "0x8c033ae8",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "6c4737341cdd517c4fe98c8f396cdd162ebb72349b6d9f77ac0bf79878096f3e",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033ae8, return delay0x8c033b1a, two literal words0x8c033b1c..0x8c033b24. Complete fixed-C match independently twice; see reconstruction-stage31."
+    },
+    {
+      "id": "destroy_hierarchy_values",
+      "source": "src/objects/destroy_hierarchy_values.c",
+      "address": "0x8c033b24",
+      "entry": "_destroy_hierarchy_values",
+      "headers": [
+        "src/include/hierarchy_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 146212,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_hierarchy_values",
+          "address": "0x8c033b24",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "77cd38102fdb42b4f339c79bfedc2792695313847229e91afa37ba3d77d0c8e3",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033b24, return delay0x8c033b6a, six literal words0x8c033b6c..0x8c033b84. Complete fixed-C match independently twice; see reconstruction-stage31."
+    },
+    {
+      "id": "report_hierarchy_values",
+      "source": "src/objects/report_hierarchy_values.c",
+      "address": "0x8c033b84",
+      "entry": "_report_hierarchy_values",
+      "headers": [
+        "src/include/hierarchy_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 146308,
+          "size": 148
+        }
+      ],
+      "functions": [
+        {
+          "name": "report_hierarchy_values",
+          "address": "0x8c033b84",
+          "size": 148
+        }
+      ],
+      "reference_sha256": "a7e0fd21871a594048c1c7782a92582bcfcb8bfdd94a589360ea17ead9b978c6",
+      "symbols": {
+        "_format_base": "0x8c2e8a37",
+        "_output_at": "0x8c011ef4"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c033b84, return delay0x8c033c0a, three literal words0x8c033c0c..0x8c033c18. Complete fixed-C match independently twice; see reconstruction-stage31."
+    },
+    {
+      "id": "initialize_shared_buffer",
+      "source": "src/objects/initialize_shared_buffer.c",
+      "address": "0x8c033c18",
+      "entry": "_initialize_shared_buffer",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 146456,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_shared_buffer",
+          "address": "0x8c033c18",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "b97c1b84058206dc7c99fee475e3a50f0e2bb1112fd4a48ab9983457500de54c",
+      "symbols": {
+        "_allocate_at": "0x8c36cd16"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c033c18, return delay0x8c033c2a, three literal words0x8c033c2c..0x8c033c38. Complete fixed-C match independently twice; see reconstruction-stage31."
+    },
+    {
+      "id": "release_shared_buffer",
+      "source": "src/objects/release_shared_buffer.c",
+      "address": "0x8c033c38",
+      "entry": "_release_shared_buffer",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 146488,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_shared_buffer",
+          "address": "0x8c033c38",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "8f8c788edfef6e49a1c34b4ede61c4a6421af453a291bfab6cff93472bd6b4eb",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033c38, tail-call delay0x8c033c40, zero alignment0x8c033c42, two literal words0x8c033c44..0x8c033c4c. Complete fixed-C match independently twice; see reconstruction-stage31."
+    },
+    {
+      "id": "apply_resource_118780",
+      "source": "src/objects/apply_resource_118780.c",
+      "address": "0x8c033c4c",
+      "entry": "_apply_resource_118780",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 146508,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_resource_118780",
+          "address": "0x8c033c4c",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "f01276879b68542524e906c51f2d613a5c4e94e15088f4ccc67023175273b51a",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033c4c, return delay0x8c033c62, call literal0x8c033c64; next entry0x8c033c68. Complete fixed-C match independently twice; see reconstruction-stage31."
+    },
+    {
+      "id": "apply_resource_37d534",
+      "source": "src/objects/apply_resource_37d534.c",
+      "address": "0x8c033c68",
+      "entry": "_apply_resource_37d534",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 146536,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_resource_37d534",
+          "address": "0x8c033c68",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "c4d98d3068f7d7702066b8c3ac5e4b9212b7e2bcfc6afec76a13578e39d61ea7",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033c68, return delay0x8c033c7e, call literal0x8c033c80; next entry0x8c033c84. Complete fixed-C match independently twice; see reconstruction-stage31."
+    },
+    {
       "id": "distance_xz",
       "address": "0x8c03f0a0",
       "source": "src/samples/distance_xz.c",

@@ -1397,3 +1397,71 @@ are retained in `reconstruction-stage30`; focused evidence is
 `function-dossiers/run-p5pyeoar/receipt.json`, with the original database unchanged.
 Continue the active C++ angle-conversion work, emission scheduling and observed
 effect/vector dependencies.
+
+
+## Hierarchy arrays and shared resource buffer, stage 31
+
+Eight complete ordinary-C functions add **492 bytes**, preserving all 90 previous
+matching functions and their source/header hashes. Totals are **98 functions /
+86 modules / 11,264 compiled range bytes / 4,151,648 retained reference bytes**.
+This is 0.2706% of the entire decoded image, not a code-only completion measure.
+Since the original 34-function checkpoint, 64 supporting functions replace 7,620
+bytes. Both original primary targets remain incomplete.
+
+| Function | Address | Complete bytes |
+| --- | --- | ---: |
+| `destroy_hierarchy_array` | `0x8c033a98` | 80 |
+| `submit_hierarchy_array` | `0x8c033ae8` | 60 |
+| `destroy_hierarchy_values` | `0x8c033b24` | 96 |
+| `report_hierarchy_values` | `0x8c033b84` | 148 |
+| `initialize_shared_buffer` | `0x8c033c18` | 32 |
+| `release_shared_buffer` | `0x8c033c38` | 20 |
+| `apply_resource_118780` | `0x8c033c4c` | 28 |
+| `apply_resource_37d534` | `0x8c033c68` | 28 |
+
+The declared provisional array view checks dispatch at 24, capacity/count at
+32/36, items at 40, first index at 44, values at 48 and total at 52. It does not
+claim a complete runtime object size. The destructors restore observed dispatch
+addresses, destroy their arrays, invoke base destruction and conditionally free
+the object for a positive signed-short disposal argument. The second preserves
+the repeated null check present in the instructions. Submission visits ten
+entries with tag `index | 0x20000` and argument 8. Explicit byte-offset shifts
+reproduce the observed indexing; ordinary typed indexing emitted multiplication.
+
+Reporting preserves the observed `first + index` access while iterating from
+`first` under both count and capacity bounds. Raw `cmp/eq`, `movt`, `tst`, `bf`
+skips entries whose first field equals the shared value; an initial equality
+interpretation was corrected before admission. Materializing equality as an
+integer and comparing that result to zero reproduces all instructions. Separate
+loop-variable scopes and an external output declaration fix lifetime/scheduling.
+The function sums the value array, reports its total and clears the count.
+Buffer setup requests 0x1800 bytes and stores the returned pointer. Teardown
+forwards that pointer without clearing it. The final two wrappers reject null,
+otherwise invoke their bound routine and return one. Data and called routines
+remain reference dependencies; no strings, assets or runtime data are copied.
+
+The active operation stays **512/30**, emission **388/8** and related emission/reuse
+**448/4**. Six direct C++ member-call variants on the corrected emission source
+produce the same eight differences. Eight scalar C++ operator/member angle trials
+regress in size and scheduling. Applying a checked C++ virtual position accessor
+to the larger effect advance improves **800/51 to 800/46**; motion scheduling and
+the final frame-table load still differ. The typed frame, owner/index, address and
+lifetime variants do not improve that result. All these candidates remain outside
+the matching manifest. The other effect update remains 536/25 and the signed
+remainder retains its documented exceptional-ABI blocker.
+
+All 74 trials retain source snapshots, hypotheses, fixed compiler receipts and
+full-range comparisons in `reconstruction-stage31`; none was compiler-rejected.
+Every admitted final source matches independently twice, including all literals
+and alignment. Two fresh exact project builds, integrated-image comparison,
+the five-function compiler proof and all 47 original-workspace tests pass.
+Source-only rejects 4,151,648 retained bytes without changing existing artifacts.
+Focused evidence is `function-dossiers/run-6loyom3y/receipt.json`; all exported
+ranges match the pinned reference and the original database is unchanged.
+
+Continue with `python3 -B tools/verify_source.py --check`,
+`python3 -B tools/candidates.py`, and the iteration commands in START_HERE.md.
+The next source hypotheses concern the shared angle schedule, emission argument
+order, effect motion/frame-table lifetimes and the adjacent resource-copy caller.
+Compiler version, optimization, complete-range rules and private-data exclusions
+are unchanged.

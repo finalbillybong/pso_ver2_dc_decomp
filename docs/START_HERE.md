@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **90 exact functions in 78 modules**, replacing
-10,772 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **98 exact functions in 86 modules**, replacing
+11,264 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -209,7 +209,7 @@ source-only rejects gaps. Both original primary targets remain incomplete.
 See RECONSTRUCTION.md for the 47 trials and continuing source hypotheses.
 
 
-## Latest verified checkpoint: stage 30
+## Stage 30 checkpoint
 
 Four C++ hierarchy functions in three modules add 368 complete bytes. Totals are
 90 functions, 78 modules, 10,772 compiled bytes and 4,152,140 retained bytes.
@@ -218,3 +218,15 @@ full-image comparison, five-function proof and all 47 original-workspace tests
 pass. Source-only rejects gaps. Both original primary targets remain incomplete;
 the active operation is now 512/30. See RECONSTRUCTION.md for language admission,
 compiler-generated alignment and continuing hypotheses.
+
+
+## Latest verified checkpoint: stage 31
+
+Eight complete hierarchy-array/resource-buffer functions add 492 bytes. Totals
+are 98 functions, 86 modules, 11,264 compiled bytes and 4,151,648 retained bytes.
+All 90 prior matches, sources and headers are preserved. Two fresh exact builds,
+integrated-image comparison, five-function proof and all 47 original-workspace
+tests pass. Source-only rejects gaps. Both original primary targets remain
+incomplete at 512/30 and 388/8. Effect advance improves to 800/46 in scratch;
+no partial candidate receives matching credit. See RECONSTRUCTION.md for the
+74 preserved trials, corrected reporting branch and continuing hypotheses.
