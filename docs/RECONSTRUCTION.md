@@ -1918,3 +1918,60 @@ rejects 4,147,220 retained bytes without changing artifacts. Focused exports are
 refreshed on a disposable database copy after manifest/driver changes. Current
 receipt is in `config/analysis-workflow.json`. Continue START_HERE.md iteration
 commands with the same compiler flags and whole-range rules.
+
+
+## Angle-sample record helpers, stage 39
+
+Three complete C functions add **136 bytes**. Totals are **141 functions / 127
+modules / 15,828 compiled range bytes / 4,147,084 retained reference bytes**, or
+**0.3802% whole-image coverage**. All 138 previous matches, module definitions
+and source/header hashes are unchanged. Since the initial 34-function
+checkpoint, 107 functions replace 12,184 bytes. Code-only completion remains
+unknown; both original primary targets remain incomplete.
+
+| Function | Address | Complete bytes |
+| --- | --- | ---: |
+| initialize_angle_sample_record | 0x8c01e5c0 | 12 |
+| bind_angle_sample_record | 0x8c01e5cc | 28 |
+| check_angle_sample_record | 0x8c01e5e8 | 96 |
+
+The provisional record stores an angle, a sampled global counter and a pointer
+to a partial sample view. Initialization clears all three fields and returns the
+record. Binding does nothing for a null sample; otherwise it stores the pointer
+and captures the observed angle and global counter. The checker returns early
+for a null sample or magnitude below 0.5. It updates the saved angle, wraps the
+difference to sixteen bits and tests the strict interval 0x5000..0xb000. Only
+within that interval does it update the counter and test a signed difference
+below eight. Observed field reloads and floating-point NaN behavior are preserved.
+These names describe the observed arithmetic, not established gameplay meaning.
+
+A direct unsigned-short local produces two unsigned comparison instructions;
+widening the wrapped value to `int` reproduces the reference's signed comparisons.
+The complete 96-byte range then matches. The new header checks the 12-byte record,
+its field offsets, and the accessed 32-byte sample view; it does not claim the
+sample's full object extent. All three functions retain default GNU linking and
+match twice independently, including all literals and alignment. The explicit
+native link selector introduced in stage 38 is unchanged.
+
+Fourteen further shared-base initializer trials do not resolve it. Vector-array
+and nested-record layouts, assignment grouping and inline aggregate-copy wrappers
+retain the extra address-register lifetime. A two-copy loop emits the required
+196-byte size but differs in 156 bytes and introduces a loop absent from the
+reference; it remains unadmitted. The prior straight-line best remains 200 bytes
+versus 196 expected with 170 differences. No failed source replaces a verified
+module or the preserved best candidate.
+
+All **26 trials**, with no compiler rejections, preserve source, hypothesis,
+compiler receipt and comparison in `reconstruction-stage39`. Two fresh project
+builds, exact integrated-image comparison, five-function proof and all **53
+original-workspace tests** pass. The public suite remains **58 tests**. Source-only
+rejects 4,147,084 retained bytes without changing artifacts. Focused exports are
+refreshed after the manifest change using a disposable database copy; current
+receipt is recorded in `config/analysis-workflow.json`.
+
+Operation remains **512/30**, emission **388/8**, related reuse **448/4**, and
+manager initialization **280/8**. Signed remainder retains its exceptional-ABI
+blocker. Supporting matches do not replace primary acceptance. Continue the
+START_HERE.md source/compile/compare loop and preserve failed hypotheses before
+new experiments. No compiler, linker implementation, flags, packaging, gameplay
+or original database change is made in this stage.

@@ -118,6 +118,81 @@
       "boundary_review": "Raw SH4 0x8c01e2fc..0x8c01e5c0: initializer return delay0x8c01e328, natural alignment0x8c01e32a, update entry0x8c01e32c, final return delay0x8c01e5aa and literals through0x8c01e5bc. Adjacent entry0x8c01e5c0. Complete708-byte section matches independently twice; reconstruction-stage37."
     },
     {
+      "id": "initialize_angle_sample_record",
+      "source": "src/objects/initialize_angle_sample_record.c",
+      "address": "0x8c01e5c0",
+      "entry": "_initialize_angle_sample_record",
+      "headers": [
+        "src/include/angle_sample_record.h"
+      ],
+      "ranges": [
+        {
+          "offset": 58816,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_angle_sample_record",
+          "address": "0x8c01e5c0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d1ddbc18d3125ce2cecc3a07b2384d56f35da15e2be7f0f7eb8b763c911d086b",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry 0x8c01e5c0 through 0x8c01e5cc includes return delay, any alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage39."
+    },
+    {
+      "id": "bind_angle_sample_record",
+      "source": "src/objects/bind_angle_sample_record.c",
+      "address": "0x8c01e5cc",
+      "entry": "_bind_angle_sample_record",
+      "headers": [
+        "src/include/angle_sample_record.h"
+      ],
+      "ranges": [
+        {
+          "offset": 58828,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "bind_angle_sample_record",
+          "address": "0x8c01e5cc",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "968091a1969509da698e48b3cd7e768634d839891a79ce191ac47bc07d779f2e",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry 0x8c01e5cc through 0x8c01e5e8 includes return delay, any alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage39."
+    },
+    {
+      "id": "check_angle_sample_record",
+      "source": "src/objects/check_angle_sample_record.c",
+      "address": "0x8c01e5e8",
+      "entry": "_check_angle_sample_record",
+      "headers": [
+        "src/include/angle_sample_record.h"
+      ],
+      "ranges": [
+        {
+          "offset": 58856,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "check_angle_sample_record",
+          "address": "0x8c01e5e8",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "97f8c6b98d66aed72e7d8b187d7ad9958a11d759f86079d74e19ad830660cb50",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry 0x8c01e5e8 through 0x8c01e648 includes return delay, any alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage39."
+    },
+    {
       "id": "mask_any",
       "address": "0x8c027064",
       "source": "src/samples/mask_any.c",

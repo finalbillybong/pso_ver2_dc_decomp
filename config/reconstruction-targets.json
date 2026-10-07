@@ -2924,6 +2924,87 @@
       "boundary_review": "Raw SH4 0x8c01e1f4..0x8c01e2fc:17 compiler-emitted jump-table entries0x8c01e24c..0x8c01e290; final return delay0x8c01e2f0, alignment0x8c01e2f2 and literals0x8c01e2f4/2f8 precede admitted text initializer. Native linker preserves explicit RELA addends; complete range twice exact with unchanged compiler/base flags; reconstruction-stage38.",
       "status": "matched",
       "reason": "Complete ordinary-C keyboard conversion with explicit pinned native linker for compiler-generated jump-table relocations. Compiler/base flags and full-range comparison unchanged."
+    },
+    {
+      "id": "initialize_angle_sample_record",
+      "source": "src/objects/initialize_angle_sample_record.c",
+      "address": "0x8c01e5c0",
+      "entry": "_initialize_angle_sample_record",
+      "headers": [
+        "src/include/angle_sample_record.h"
+      ],
+      "ranges": [
+        {
+          "offset": 58816,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_angle_sample_record",
+          "address": "0x8c01e5c0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d1ddbc18d3125ce2cecc3a07b2384d56f35da15e2be7f0f7eb8b763c911d086b",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry 0x8c01e5c0 through 0x8c01e5cc includes return delay, any alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage39.",
+      "status": "matched",
+      "reason": "Complete ordinary-C angle-sample record helper; original primary and manager targets remain unresolved."
+    },
+    {
+      "id": "bind_angle_sample_record",
+      "source": "src/objects/bind_angle_sample_record.c",
+      "address": "0x8c01e5cc",
+      "entry": "_bind_angle_sample_record",
+      "headers": [
+        "src/include/angle_sample_record.h"
+      ],
+      "ranges": [
+        {
+          "offset": 58828,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "bind_angle_sample_record",
+          "address": "0x8c01e5cc",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "968091a1969509da698e48b3cd7e768634d839891a79ce191ac47bc07d779f2e",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry 0x8c01e5cc through 0x8c01e5e8 includes return delay, any alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage39.",
+      "status": "matched",
+      "reason": "Complete ordinary-C angle-sample record helper; original primary and manager targets remain unresolved."
+    },
+    {
+      "id": "check_angle_sample_record",
+      "source": "src/objects/check_angle_sample_record.c",
+      "address": "0x8c01e5e8",
+      "entry": "_check_angle_sample_record",
+      "headers": [
+        "src/include/angle_sample_record.h"
+      ],
+      "ranges": [
+        {
+          "offset": 58856,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "check_angle_sample_record",
+          "address": "0x8c01e5e8",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "97f8c6b98d66aed72e7d8b187d7ad9958a11d759f86079d74e19ad830660cb50",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry 0x8c01e5e8 through 0x8c01e648 includes return delay, any alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage39.",
+      "status": "matched",
+      "reason": "Complete ordinary-C angle-sample record helper; original primary and manager targets remain unresolved."
     }
   ]
 }
