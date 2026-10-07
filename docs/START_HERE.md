@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **162 exact functions in 148 modules**, replacing
-**19,748 bytes** of the 4,162,912-byte decoded executable (**0.4744% image coverage**).
-It retains **4,143,164 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **164 exact functions in 150 modules**, replacing
+**19,916 bytes** of the 4,162,912-byte decoded executable (**0.4784% image coverage**).
+It retains **4,142,996 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,14 +28,14 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 46
+## Latest batch: stage 47
 
-Four matrix/vector wrappers add 252 bytes, preserving call order and scalar
-snapshots for potentially aliased stores. All 158 previous matches, module
-definitions and source/header hashes remain unchanged. Since the original
-34-function checkpoint, 128 functions replace 16,104 bytes. All 49 source trials
-are retained with no compiler rejections. The larger frame setup remains 332/9;
-primary operation/emission remain 512/30 and 388/8. Neither is admitted.
+Two checked normalization wrappers add 168 bytes. Their shared classifier uses
+an offset-checked float/word union and preserves the original nonfinite handling;
+SDK callees remain reference inputs. All 162 previous matches, module definitions
+and source/header hashes remain unchanged. Since the original 34-function
+checkpoint, 130 functions replace 16,272 bytes. All 41 source trials are retained
+with no compiler rejections. Both primary targets and frame setup remain unresolved.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

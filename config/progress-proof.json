@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "e41afa2590a39fc2d9167f1ed1c779af7863e9b086e4635f4b8f149ccf43100e",
+    "config/project.json": "bc20c4f033557e78f3881ac0586d622761feb18e6fdfcf0f96f21206ae82f571",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -77,6 +77,7 @@
     "src/include/emit.h": "c138a48dfc6827380794a25ec2c02d3fdbf76dde801340426ac8321bf4fffb25",
     "src/include/emit_listener.h": "6d3bdc6f4c56009d5b486867b8dd4c3c33c5990f85161713a7d359ea18f1ea66",
     "src/include/emit_secondary.h": "a0ac2c431098223e8585e7876482201fc3700d9866d5c16713f549b7621a15d7",
+    "src/include/float_classify.h": "dab7d8051f6d50a280de06cc178f6510d4408068e3436874e3edeecfd956eaae",
     "src/include/hierarchy.h": "9b0e0f1e91b9446dcc7d324bfb47ea347441ab989194d7455e51099a89d2df66",
     "src/include/hierarchy_array.h": "771131a2e4c97fedc989307139b5c335ea7bb9e0d457b015a733610ae5824e61",
     "src/include/hierarchy_description.h": "1af54b737cead69edcb78b821e273efa00ce22d8c82d76f490b088b789f09489",
@@ -101,6 +102,8 @@
     "src/math/angle_halfway.c": "566aef942ebe20d3c677ff0a433dd41f93bee2b96c74c2647d3eeca06431958c",
     "src/math/angle_step.c": "258cc41bd647950e4932452643e24e0b6444427fd2a921324f4a5ee8e6acaba9",
     "src/math/cross_xz_negative.c": "8c00fdfc1e36c2e6b7a3175409fa34da182f334636dc9932e34c05fb0269fb81",
+    "src/math/normalize_vector_checked.c": "b930f2fd1bf54d6a7c54db165e599bbcca30702f1d6a3c85f3abe7db775bc3e3",
+    "src/math/normalize_xz_checked.c": "e2455e0a2a245250270fc6f86e51432d01a7f6adc75cb30c14ff1930723288d1",
     "src/math/query_vector_position.c": "2f0ea19d6bfa1e8884265c0fc092c9617c8e40684e84d725ad2da4ec4a221abd",
     "src/math/query_vector_position_normal.c": "f81c4f8cff5d718c4a05edc08bd7bfd20fd5119fd7d1a22438b669493023a3f5",
     "src/math/rotate_and_submit_vector_xz.c": "048fa96be7e3f7390fe070793f939c927d9de408d54e9f87c617ecf65c64681f",
@@ -840,6 +843,28 @@
       "-O2"
     ],
     "distance_xz": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "normalize_vector_checked": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "normalize_xz_checked": [
       "-proc",
       "SH4",
       "-endian",
@@ -1845,6 +1870,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4143164,
+  "source_only_rejected_retained_bytes": 4142996,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

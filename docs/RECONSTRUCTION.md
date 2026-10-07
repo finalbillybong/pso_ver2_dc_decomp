@@ -2370,3 +2370,51 @@ proof and all **53 original-workspace tests** pass. The public suite remains
 artifacts. Focused exports are refreshed on a disposable copy; the original
 database is unchanged. Supporting matches do not replace primary acceptance.
 Continue the recorded source/compile/compare loop.
+
+
+## Checked vector normalization, stage 47
+
+Two complete ordinary-C wrappers add **168 bytes**: `normalize_vector_checked`
+at **0x8c041d40..0x8c041d80** (64 bytes) and `normalize_xz_checked` at
+**0x8c041d80..0x8c041de8** (104 bytes). Totals are **164 functions / 150 modules /
+19,916 compiled range bytes / 4,142,996 retained reference bytes**, or **0.4784%
+whole-image coverage**. All 162 previous matches, module definitions and
+source/header hashes remain unchanged. Since the original 34-function checkpoint,
+130 functions replace 16,272 bytes. Code-only completion remains unknown and
+separately reconstructed static data remains zero. The original primary batch
+is still incomplete.
+
+The full-vector wrapper calls the observed normalization entry, tests the returned
+float's exponent and clears all three components when it is all ones. The XZ
+wrapper captures both inputs, calls the observed inverse-root entry, clears only
+X/Z and returns zero for a nonfinite inverse, otherwise stores the normalized
+components and returns `squared * inverse`. Y is untouched. Infinity and NaN are
+both classified by the same exponent mask, exactly as in the raw instructions.
+The SDK callees remain reference backed; no substitute implementation is admitted.
+
+Initial baselines were four bytes short. An explicit `!= 0` classifier test
+preserves the observed materialized integer result. A local mask with mask-first
+operand order reproduces the remaining register copy and comparison. Narrow
+predicate return types give the right size but add an unwanted extension and
+remain nine bytes different. An explicit float/word union also matches, so the
+final shared header uses that representation view with four-byte size and union
+offset checks. Both final sources independently match twice through all literal
+and return-delay bytes; the existing Vector3 header is unchanged.
+
+The frame-setup return-lifetime tests (four-byte double/long-double views, identity
+helper, reference store and comma condition) leave **332/9**, first 0x8c041e3b.
+Transferring the local-mask lesson to emission does not improve **388/8**: reversed
+loop operands and added low-word mask locals make the output larger. These failed
+hypotheses remain scratch-only. All **41 trials** retain source snapshots,
+hypotheses, compiler receipts and comparisons in `reconstruction-stage47`, with
+**no compiler rejections**.
+
+Compiler, base flags, default GNU linker and full-range acceptance remain
+unchanged. Two fresh exact builds, integrated-image comparison, five-function
+proof and all **53 original-workspace tests** pass; the public suite remains
+**58 tests**. Source-only rejects 4,142,996 retained bytes without changing
+artifacts. Focused exports are refreshed on a disposable copy; the original
+database remains unchanged. Primary operation/emission remain 512/30 and 388/8,
+related reuse 448/4, manager initialization 280/8, manager display 896/9 and the
+732-byte constructor 89 different. Supporting matches do not satisfy the primary
+acceptance criteria. Continue the source/compile/compare loop.

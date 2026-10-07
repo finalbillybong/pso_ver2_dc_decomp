@@ -3608,6 +3608,62 @@
       "boundary_review": "Raw little-endian SH4. Return delay 0x8c042024, zero alignment 0x8c042026, two literals 0x8c042028..0x8c042030. Complete match independently twice; reconstruction-stage46.",
       "status": "matched",
       "reason": "Complete surrounding matrix/vector helper; larger frame setup and primary candidates remain unresolved."
+    },
+    {
+      "id": "normalize_vector_checked",
+      "source": "src/math/normalize_vector_checked.c",
+      "address": "0x8c041d40",
+      "entry": "_normalize_vector_checked",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/float_classify.h"
+      ],
+      "ranges": [
+        {
+          "offset": 204096,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "normalize_vector_checked",
+          "address": "0x8c041d40",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "3606e564ff16b206f91ebf11e96a37dd014882aa619a5ae54ef53ac4c14cc3a8",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c041d76, two literals 0x8c041d78..0x8c041d80. Complete match independently twice; reconstruction-stage47.",
+      "status": "matched",
+      "reason": "Complete checked normalization wrapper; SDK callees, frame setup and primary candidates remain unresolved."
+    },
+    {
+      "id": "normalize_xz_checked",
+      "source": "src/math/normalize_xz_checked.c",
+      "address": "0x8c041d80",
+      "entry": "_normalize_xz_checked",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/float_classify.h"
+      ],
+      "ranges": [
+        {
+          "offset": 204160,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "normalize_xz_checked",
+          "address": "0x8c041d80",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "8a8ca8012109ad0189631444daa2dfadbac13da3d0887e72729a51250bd0c192",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c041dde, two literals 0x8c041de0..0x8c041de8. Complete match independently twice; reconstruction-stage47.",
+      "status": "matched",
+      "reason": "Complete checked normalization wrapper; SDK callees, frame setup and primary candidates remain unresolved."
     }
   ]
 }
