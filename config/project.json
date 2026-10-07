@@ -2864,6 +2864,40 @@
       "boundary_review": "Raw SH4 entry 0x8c0a7f7c through 0x8c0a7f90; return/tail-call delay slots and complete literal pool precede adjacent entry. Two complete fixed-C matches in reconstruction-stage36."
     },
     {
+      "id": "update_effect_manager",
+      "source": "src/effects/update_effect_manager.c",
+      "address": "0x8c0a7f90",
+      "entry": "_update_effect_manager",
+      "headers": [
+        "src/include/effect_manager.h",
+        "src/include/effect.h",
+        "src/include/text_buffer.h"
+      ],
+      "ranges": [
+        {
+          "offset": 622480,
+          "size": 1164
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_effect_manager",
+          "address": "0x8c0a7f90",
+          "size": 1164
+        }
+      ],
+      "reference_sha256": "dcb52309473a150714ebe152ec3dd05f9ebd737d32ef3329b824a150062683cd",
+      "symbols": {
+        "_input_state": "0x8c41cba0",
+        "_format_base": "0x8c3044f4",
+        "_color_at": "0x8c38c5b6",
+        "_draw_at": "0x8c38cf80",
+        "_presets": "0x8c303ddc",
+        "_save_at": "0x8c03cbd8"
+      },
+      "boundary_review": "Raw SH4 entry 0x8c0a7f90 through next entry 0x8c0a841c: complete1164 bytes include all embedded literal pools, return delay and alignment. Independently matched twice; reconstruction-stage41."
+    },
+    {
       "id": "create_effect_manager",
       "source": "src/effects/create_effect_manager.c",
       "address": "0x8c0a9510",

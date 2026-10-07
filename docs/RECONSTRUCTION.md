@@ -2034,3 +2034,61 @@ manager initialization **280/8**. Signed remainder retains its exceptional-ABI
 blocker. Supporting matches do not replace primary acceptance. Continue the
 START_HERE.md source/compile/compare loop; retain failed hypotheses before new
 experiments. No compiler, driver, flags, packaging or gameplay change is made.
+
+
+## Complete manager update, stage 41
+
+The complete ordinary-C manager update at **0x8c0a7f90..0x8c0a841c** adds
+**1,164 bytes**. Totals are **146 functions / 132 modules / 17,316 compiled range
+bytes / 4,145,596 retained reference bytes**, or **0.4160% whole-image coverage**.
+All 145 previous matches, module definitions and source/header hashes remain
+unchanged. Since the original 34-function checkpoint, 112 functions replace
+13,672 bytes. Code-only completion remains unknown; both original primary
+targets are incomplete.
+
+The manager routine preserves its two explicit mode cases, duplicated input
+navigation, resource selection and reloads, text-buffer copy/cursor order,
+status drawing, preset copy, signed index clamp, conditional resource-field
+store, mode transitions, effect position/pause/advance calls and final display.
+The save call passes the observed address of the global table pointer, not its
+value. Names remain provisional; reconstruction introduces no speculative
+allocation/index guards or gameplay fixes. Existing manager, resource and text
+views are reused, with an explicit check that the nested text cursor is at
+manager offset 60 + 16 = 76. Format strings and referenced globals remain
+reference data and receive no source-data credit.
+
+Correcting the draw declaration to two named arguments restores the observed
+mixed register/stack variadic ABI. Direct checked cursor addressing removes
+extra address arithmetic. An external save declaration matches call ordering;
+explicit two-bit preset-table indexing removes the compiler's multiply-by-four
+sequence. The final five differing bytes are resolved by capturing the resource
+pointer followed by the manager field value in a scoped block before comparing
+and conditionally storing. Reversed capture order and reversed comparison
+operands fail. The final readable source matches twice independently, including
+all embedded literal pools, branch reach, delay slots and alignment.
+
+The primary emission remains 388/8 after sixteen combinations of ordinary C++
+nonvirtual handle methods and seven accessor/scan trials. Eight initial member
+byte-call experiments failed linking because the signed-char mangled symbol is
+`FSci`, not `Fci`; corrected symbol bindings compile but do not improve the bytes.
+Seven inline literal/orientation accessor trials leave the primary operation at
+512/30. No failed trial replaces either best source.
+
+Resource-copy experiments improve the complete-size candidate from 380 versus
+372 expected / 341 differing to **372/150**, first **0x8c0a93ba**. Inline scalar
+accessors eliminate the two extra saved registers, and separate loop counters
+improve register assignment further. C and C++ pointer/reference accessor forms
+were compared; the remaining scalar address lifetimes and loop registers do not
+match. This function is unadmitted. Manager initialization remains 280/8,
+related emission reuse 448/4, and signed remainder retains its exceptional-ABI
+blocker. Supporting matches do not replace primary acceptance.
+
+All **103 source trials**, including **8 linker rejections**, retain snapshots,
+hypotheses, compiler receipts where compilation/linking completed, and comparison
+results in `reconstruction-stage41`. Two fresh exact project builds, integrated
+image comparison, five-function proof and all **53 original-workspace tests**
+pass; the public suite remains **58 tests**. Source-only rejects 4,145,596 retained
+bytes without altering built artifacts. Focused exports are regenerated after
+the manifest change on a disposable database copy; original evidence is unchanged.
+Compiler, driver, base flags and default GNU linking are unchanged. Continue the
+source/compile/compare loop from START_HERE.md.
