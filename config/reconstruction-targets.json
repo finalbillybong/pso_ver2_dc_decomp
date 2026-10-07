@@ -450,6 +450,114 @@
       },
       "status": "unresolved",
       "reason": "Full 448-byte candidate; four differing bytes. mov #0,r7 and mov r10,r5 exchange positions at 0x8c05feba/0x8c05fec0, including the final call delay slot. Same remaining call scheduling as emit_5fbf8. No admission."
+    },
+    {
+      "id": "initialize_effect",
+      "source": "src/effects/initialize.c",
+      "address": "0x8c0a6ff0",
+      "entry": "_initialize_effect",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 618480,
+          "size": 192
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect",
+          "address": "0x8c0a6ff0",
+          "size": 192
+        }
+      ],
+      "reference_sha256": "e3177a43a0a3e5cf7b60fac6c34310885565bd7c52e06d9e01d0c7f0df877332",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry 0x8c0a6ff0; return delay 0x8c0a709a; five literals 0x8c0a709c-0x8c0a70b0; adjacent entry 0x8c0a70b0. Full-range C match independently twice with declared checked effect.h; see reconstruction-stage18.",
+      "status": "matched",
+      "reason": "Complete ordinary-C function including literal pool and padding; checked effect layout. Direct creation dependency or adjacent initializer/destructor. No copied static data; primary targets remain unresolved."
+    },
+    {
+      "id": "initialize_effect_vector",
+      "source": "src/effects/initialize_effect_vector.c",
+      "address": "0x8c0a70b0",
+      "entry": "_initialize_effect_vector",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 618672,
+          "size": 192
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect_vector",
+          "address": "0x8c0a70b0",
+          "size": 192
+        }
+      ],
+      "reference_sha256": "7aab5400626a8c6724a56bcfa80a56b1e71d683c13754b2dd0c57ff7a39e5cb7",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry 0x8c0a70b0; return delay 0x8c0a7158; alignment 0x8c0a715a; five literals 0x8c0a715c-0x8c0a7170; adjacent entry 0x8c0a7170. Full-range C match independently twice with declared checked effect.h; see reconstruction-stage18.",
+      "status": "matched",
+      "reason": "Complete ordinary-C function including literal pool and padding; checked effect layout. Direct creation dependency or adjacent initializer/destructor. No copied static data; primary targets remain unresolved."
+    },
+    {
+      "id": "initialize_effect_vector_field30",
+      "source": "src/effects/initialize_effect_vector_field30.c",
+      "address": "0x8c0a7170",
+      "entry": "_initialize_effect_vector_field30",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 618864,
+          "size": 200
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect_vector_field30",
+          "address": "0x8c0a7170",
+          "size": 200
+        }
+      ],
+      "reference_sha256": "6887c33c7b5d7e4e29bc5be8ed871be24478a568556d36dd7a5ab94d280a0b46",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry 0x8c0a7170; return delay 0x8c0a7222; five literals 0x8c0a7224-0x8c0a7238; adjacent entry 0x8c0a7238. Full-range C match independently twice with declared checked effect.h; see reconstruction-stage18.",
+      "status": "matched",
+      "reason": "Complete ordinary-C function including literal pool and padding; checked effect layout. Direct creation dependency or adjacent initializer/destructor. No copied static data; primary targets remain unresolved."
+    },
+    {
+      "id": "destroy_effect",
+      "source": "src/effects/destroy.c",
+      "address": "0x8c0a7238",
+      "entry": "_destroy_effect",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 619064,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect",
+          "address": "0x8c0a7238",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "0339ae98f39a8b602c068c5fc59d2e4ec01844b6b4b15220eff4fe95e7f5bfa2",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry 0x8c0a7238; return delay 0x8c0a7268; alignment 0x8c0a726a; four literals 0x8c0a726c-0x8c0a727c; adjacent entry 0x8c0a727c. Full-range C match independently twice with declared checked effect.h; see reconstruction-stage18.",
+      "status": "matched",
+      "reason": "Complete ordinary-C function including literal pool and padding; checked effect layout. Direct creation dependency or adjacent initializer/destructor. No copied static data; primary targets remain unresolved."
     }
   ]
 }

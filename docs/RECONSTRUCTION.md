@@ -808,3 +808,42 @@ Continue investigating the shared call scheduling and angle conversions; follow
 observed dependencies into effect initialization at `0x8c0a6ff0`, matrix/vector
 helpers and static data. Keep private settings, registration details and evidence
 out of the public repository. No gameplay or disc repacking was performed.
+
+
+## Effect initialization and destruction, stage 18
+
+Following the direct dependency of `create_effect` produces four complete
+ordinary-C matches: `initialize_effect` at `0x8c0a6ff0` (192 bytes),
+`initialize_effect_vector` at `0x8c0a70b0` (192),
+`initialize_effect_vector_field30` at `0x8c0a7170` (200), and `destroy_effect`
+at `0x8c0a7238` (68). The last entry ends at the adjacent `0x8c0a727c` entry.
+Every range includes its literals and any alignment word. The initial candidates
+matched; each final source matched twice again with the new declared `effect.h`.
+All 12 trial sources and exact receipts are preserved in `reconstruction-stage18`.
+
+The provisional layout is 0x68 bytes, with checked offsets for every accessed
+field. Constructors preserve dispatch/global reads, individual floating and
+integer defaults, the three-word position copy, untouched fields, resource
+assignment and conditional owner selection. Two variants copy three additional
+words in observed index order 0,2,1. Narrow stack arguments supply field 0x30;
+its final meaning is not asserted. Destruction preserves the null guard, dispatch
+restoration, detach call and positive signed-short condition for releasing memory,
+then returns the original pointer. No assembly, runtime objects, or static-data
+bytes were substituted. Existing headers and all 47 prior source matches are
+unchanged.
+
+Current verified totals are **51 functions / 42 modules / 5,596 compiled range
+bytes / 4,157,316 retained reference bytes**. This stage replaces 652 bytes.
+Since the original 34-function checkpoint, 17 functions replace 1,952 bytes.
+Two fresh exact builds, full-image comparison, the five-function compiler proof
+and all 43 original tests pass. Source-only rejects remaining gaps while keeping
+existing artifacts intact. The focused export is
+`function-dossiers/run-qa4bdx6c/receipt.json`; its inputs and artifacts validate,
+and the original Ghidra database is unchanged.
+
+Fresh candidate builds still reproduce **512/46**, **388/8** and **448/4** for
+`operation_45f04`, `emit_5fbf8` and `emit_or_update_slot` respectively. The primary
+batch remains incomplete. The scratch C++ diagnostic and signed-remainder
+exceptional-ABI blocker are unchanged. Continue investigating these differences
+and follow the now-explicit effect dispatch, matrix/vector and static-data
+dependencies. Supporting matches do not replace primary acceptance criteria.

@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **47 exact functions in 38 modules**, replacing
-4,944 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **51 exact functions in 42 modules**, replacing
+5,596 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -71,3 +71,15 @@ and all 43 original tests pass. Source-only rejects the remaining gaps.
 Continue the shared call-order and angle-conversion investigations, then follow
 observed effect initialization and matrix/vector dependencies. Registration data,
 private runtime files and generated game content remain outside this repository.
+
+
+## Stage 18 checkpoint
+
+Four complete effect routines add 652 bytes, preserving all 47 previous matches.
+Current totals: 51 functions, 42 modules, 5,596 compiled bytes and 4,157,316
+retained reference bytes. A declared provisional 0x68-byte effect layout checks
+every accessed offset. All 12 compile comparisons are exact. Two fresh project
+builds, integrated-image comparison, five-function proof and all 43 original
+tests pass; source-only rejects remaining gaps. Primary candidates remain
+512/46 and 388/8, and the related emission/reuse candidate remains 448/4.
+See RECONSTRUCTION.md for boundaries, behavior and continuing hypotheses.
