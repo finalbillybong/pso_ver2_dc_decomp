@@ -2469,3 +2469,64 @@ original database remains unchanged. Compiler, base flags and exact acceptance
 rules are unchanged. Primary operation/emission remain **512/30 and 388/8**, related
 reuse **448/4**, manager initialization **280/8**. The original primary batch is
 still incomplete; these supporting matches do not replace its acceptance criteria.
+
+
+## Complete motion setup and running profiles, stage 49
+
+Eight complete ordinary-C functions add **1,032 bytes**. Scalar motion setup now
+matches **0x8c042950..0x8c042a60** (272 bytes). The adjacent running-profile group
+matches construction **0x8c042adc..0x8c042af4** (24), conditional destruction
+**0x8c042af4..0x8c042b18** (36), reset **0x8c042b18..0x8c042b58** (64), setup
+**0x8c042b58..0x8c042cd8** (384), velocity **0x8c042cd8..0x8c042d2c** (84),
+sampling **0x8c042d2c..0x8c042dac** (128), and step
+**0x8c042dac..0x8c042dd4** (40). Totals are **177 functions / 163 modules /
+21,184 compiled range bytes / 4,141,728 retained reference bytes**, or **0.5089%
+whole-image coverage**. All 169 prior matches, module definitions and source/header
+hashes are preserved. Since the initial 34-function checkpoint, 143 functions
+replace 17,540 bytes. Code-only completion remains unknown; separately
+reconstructed static data remains zero.
+
+The scalar setup's last ten differences were resolved by reading acceleration
+into the ramp-distance temporary and then reusing it as the divisor. Capturing
+the same value in a separate local with its lifetime ending at the root call also
+matches. Capturing it across later field writes did not match in the preceding
+batch. The speed square is computed before the chained time stores. This preserves
+the observed arithmetic and reloads while reproducing the floating allocation.
+
+The running profile adds initial velocity and a stored time counter. Its checked
+44-byte header declares all eleven field offsets; the prior MotionProfile header
+is unchanged. The setup initially differed in 38 bytes. Moving the peak square
+before the initial-speed branch reduces that to eight, and reusing the braking
+divisor resolves the rest. It retains the observed deceleration-only branch,
+clamps and successive products, without repairing unusual or exceptional inputs.
+The velocity function initially had an extra result move: reusing its time local
+for the braking calculation gives the exact 84-byte range. Sampling writes the
+position and returns a completion flag. Step calls it using the current time,
+then reloads and increments stored time, preserving possible output aliasing.
+All eight final readable sources independently match twice, through literals,
+return-delay instructions and alignment.
+
+Transferring divisor reuse to the primary operation does not help: constants held
+across calls change allocation widely. Those three 512-byte diagnostic candidates
+have 331 or 335 differences and remain scratch-only; active operation stays
+**512/30**. Frame continuation helpers leave 332/9 or worsen it. A local zero after
+the second root call improves frame setup to **332/8**, first **0x8c041e3c**,
+with the remaining difference confined to zero-load, return-copy and branch-delay
+scheduling. Best scratch: `frame-reuse-direction-zero-reuse`. It remains unadmitted.
+Manager-display union/64-bit pair and C++ copy-constructor variants do not improve
+its 896/9. These results are retained rather than replacing better candidates.
+
+All **72 trials**, including **four compiler rejections**, retain source snapshots,
+hypotheses and comparisons in `reconstruction-stage49`. The four rejections came
+from an experiment generator selecting a macro definition instead of the later
+rotation call as a continuation boundary; corrected trials are separate and fully
+recorded. There are no output patches or altered comparison rules.
+
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+**53 original-workspace tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,141,728 retained bytes without altering artifacts. Focused
+exports are refreshed on a disposable database copy after manifest/queue changes;
+the original database remains unchanged. Compiler, flags and default GNU linking
+are unchanged. Primary emission remains **388/8**, related reuse **448/4**, and
+manager initialization **280/8**. Both original primary targets remain incomplete;
+these supporting matches do not replace their acceptance criteria.

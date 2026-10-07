@@ -1926,6 +1926,30 @@
       "boundary_review": "Raw little-endian SH4 entry 0x8c04291c through next entry 0x8c042950. Complete literal/alignment range matches twice; reconstruction-stage48."
     },
     {
+      "id": "configure_motion_profile",
+      "source": "src/math/configure_motion_profile.c",
+      "address": "0x8c042950",
+      "entry": "_configure_motion_profile",
+      "ranges": [
+        {
+          "offset": 207184,
+          "size": 272
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_motion_profile",
+          "address": "0x8c042950",
+          "size": 272
+        }
+      ],
+      "reference_sha256": "dc8aac4ef4497a0efbdcd7c549a20db4e4868b630fa726c8b7b6dc0803ac6e87",
+      "headers": [
+        "src/include/motion_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4; complete range through adjacent entry including literal pools and alignment. Two independent final matches; reconstruction-stage49."
+    },
+    {
       "id": "motion_profile_finished",
       "source": "src/math/motion_profile_finished.c",
       "address": "0x8c042a60",
@@ -1972,6 +1996,174 @@
         "src/include/motion_profile.h"
       ],
       "boundary_review": "Raw little-endian SH4 entry 0x8c042a6c through next entry 0x8c042adc. Complete literal/alignment range matches twice; reconstruction-stage48."
+    },
+    {
+      "id": "construct_running_profile",
+      "source": "src/math/construct_running_profile.c",
+      "address": "0x8c042adc",
+      "entry": "_construct_running_profile",
+      "ranges": [
+        {
+          "offset": 207580,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_running_profile",
+          "address": "0x8c042adc",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "abda206abda0e5326a2b05b18ab73e4b228fd0f44db1a0f33f71e4d65726cc72",
+      "headers": [
+        "src/include/running_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4; complete range through adjacent entry including literal pools and alignment. Two independent final matches; reconstruction-stage49."
+    },
+    {
+      "id": "destroy_running_profile",
+      "source": "src/math/destroy_running_profile.c",
+      "address": "0x8c042af4",
+      "entry": "_destroy_running_profile",
+      "ranges": [
+        {
+          "offset": 207604,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_running_profile",
+          "address": "0x8c042af4",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "444e960b71d5d487758368ffdcadad9fba205735ca93aaf1e733029e00b8d20d",
+      "headers": [
+        "src/include/running_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4; complete range through adjacent entry including literal pools and alignment. Two independent final matches; reconstruction-stage49."
+    },
+    {
+      "id": "clear_running_profile",
+      "source": "src/math/clear_running_profile.c",
+      "address": "0x8c042b18",
+      "entry": "_clear_running_profile",
+      "ranges": [
+        {
+          "offset": 207640,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_running_profile",
+          "address": "0x8c042b18",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "887acba03069df45aed408e599db90dec42efd9e9dfd73329c111e5ca3b06252",
+      "headers": [
+        "src/include/running_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4; complete range through adjacent entry including literal pools and alignment. Two independent final matches; reconstruction-stage49."
+    },
+    {
+      "id": "configure_running_profile",
+      "source": "src/math/configure_running_profile.c",
+      "address": "0x8c042b58",
+      "entry": "_configure_running_profile",
+      "ranges": [
+        {
+          "offset": 207704,
+          "size": 384
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_running_profile",
+          "address": "0x8c042b58",
+          "size": 384
+        }
+      ],
+      "reference_sha256": "ebccf4d8817d5bd149b8428fd1dd706d3a3784542da7bbe6b98ce0f54ca956ea",
+      "headers": [
+        "src/include/running_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4; complete range through adjacent entry including literal pools and alignment. Two independent final matches; reconstruction-stage49."
+    },
+    {
+      "id": "running_profile_velocity",
+      "source": "src/math/running_profile_velocity.c",
+      "address": "0x8c042cd8",
+      "entry": "_running_profile_velocity",
+      "ranges": [
+        {
+          "offset": 208088,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "running_profile_velocity",
+          "address": "0x8c042cd8",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "0bdff126642230cd391572a0dde32db60dc70840294702489f410abede2339a5",
+      "headers": [
+        "src/include/running_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4; complete range through adjacent entry including literal pools and alignment. Two independent final matches; reconstruction-stage49."
+    },
+    {
+      "id": "evaluate_running_profile",
+      "source": "src/math/evaluate_running_profile.c",
+      "address": "0x8c042d2c",
+      "entry": "_evaluate_running_profile",
+      "ranges": [
+        {
+          "offset": 208172,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "evaluate_running_profile",
+          "address": "0x8c042d2c",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "a24b5475330df99dd6c632aef069a87f90fc4385e8ccbb4efd7d4a3131728d39",
+      "headers": [
+        "src/include/running_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4; complete range through adjacent entry including literal pools and alignment. Two independent final matches; reconstruction-stage49."
+    },
+    {
+      "id": "step_running_profile",
+      "source": "src/math/step_running_profile.c",
+      "address": "0x8c042dac",
+      "entry": "_step_running_profile",
+      "ranges": [
+        {
+          "offset": 208300,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "step_running_profile",
+          "address": "0x8c042dac",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "e7fd00bcb712b664b9fef578d9174a88327612bdce287e8148d2484e4f8968d6",
+      "headers": [
+        "src/include/running_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4; complete range through adjacent entry including literal pools and alignment. Two independent final matches; reconstruction-stage49."
     },
     {
       "id": "operation_43fb4",
