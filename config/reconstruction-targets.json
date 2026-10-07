@@ -3664,6 +3664,136 @@
       "boundary_review": "Raw little-endian SH4. Return delay 0x8c041dde, two literals 0x8c041de0..0x8c041de8. Complete match independently twice; reconstruction-stage47.",
       "status": "matched",
       "reason": "Complete checked normalization wrapper; SDK callees, frame setup and primary candidates remain unresolved."
+    },
+    {
+      "id": "construct_motion_profile",
+      "source": "src/math/construct_motion_profile.c",
+      "address": "0x8c0428e0",
+      "entry": "_construct_motion_profile",
+      "ranges": [
+        {
+          "offset": 207072,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_motion_profile",
+          "address": "0x8c0428e0",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "0332a1d314868709162f13b313e2865d564274880a170bbbac7c316e38d40946",
+      "headers": [
+        "src/include/motion_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry 0x8c0428e0 through next entry 0x8c0428f8. Complete literal/alignment range matches twice; reconstruction-stage48.",
+      "status": "matched",
+      "reason": "Complete checked scalar motion-profile helper. Configuration routine remains scratch-only at 272/10; original primary candidates unresolved."
+    },
+    {
+      "id": "destroy_motion_profile",
+      "source": "src/math/destroy_motion_profile.c",
+      "address": "0x8c0428f8",
+      "entry": "_destroy_motion_profile",
+      "ranges": [
+        {
+          "offset": 207096,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_motion_profile",
+          "address": "0x8c0428f8",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "444e960b71d5d487758368ffdcadad9fba205735ca93aaf1e733029e00b8d20d",
+      "headers": [
+        "src/include/motion_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry 0x8c0428f8 through next entry 0x8c04291c. Complete literal/alignment range matches twice; reconstruction-stage48.",
+      "status": "matched",
+      "reason": "Complete checked scalar motion-profile helper. Configuration routine remains scratch-only at 272/10; original primary candidates unresolved."
+    },
+    {
+      "id": "clear_motion_profile",
+      "source": "src/math/clear_motion_profile.c",
+      "address": "0x8c04291c",
+      "entry": "_clear_motion_profile",
+      "ranges": [
+        {
+          "offset": 207132,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_motion_profile",
+          "address": "0x8c04291c",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "b895d024ea0577a9ba2ab838171f98eab91b44194aa4a204d528531628f1fadd",
+      "headers": [
+        "src/include/motion_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry 0x8c04291c through next entry 0x8c042950. Complete literal/alignment range matches twice; reconstruction-stage48.",
+      "status": "matched",
+      "reason": "Complete checked scalar motion-profile helper. Configuration routine remains scratch-only at 272/10; original primary candidates unresolved."
+    },
+    {
+      "id": "motion_profile_finished",
+      "source": "src/math/motion_profile_finished.c",
+      "address": "0x8c042a60",
+      "entry": "_motion_profile_finished",
+      "ranges": [
+        {
+          "offset": 207456,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "motion_profile_finished",
+          "address": "0x8c042a60",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "0b3f452db17f09029107b3843d3d4fefdd72f257e1e763fece87056856ed9b2e",
+      "headers": [
+        "src/include/motion_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry 0x8c042a60 through next entry 0x8c042a6c. Complete literal/alignment range matches twice; reconstruction-stage48.",
+      "status": "matched",
+      "reason": "Complete checked scalar motion-profile helper. Configuration routine remains scratch-only at 272/10; original primary candidates unresolved."
+    },
+    {
+      "id": "evaluate_motion_profile",
+      "source": "src/math/evaluate_motion_profile.c",
+      "address": "0x8c042a6c",
+      "entry": "_evaluate_motion_profile",
+      "ranges": [
+        {
+          "offset": 207468,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "evaluate_motion_profile",
+          "address": "0x8c042a6c",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "4d7cac99c1e390aa6df3428a88911455b8a8f943f150b9acff61f13b327cf638",
+      "headers": [
+        "src/include/motion_profile.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry 0x8c042a6c through next entry 0x8c042adc. Complete literal/alignment range matches twice; reconstruction-stage48.",
+      "status": "matched",
+      "reason": "Complete checked scalar motion-profile helper. Configuration routine remains scratch-only at 272/10; original primary candidates unresolved."
     }
   ]
 }

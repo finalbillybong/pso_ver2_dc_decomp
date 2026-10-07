@@ -2418,3 +2418,54 @@ database remains unchanged. Primary operation/emission remain 512/30 and 388/8,
 related reuse 448/4, manager initialization 280/8, manager display 896/9 and the
 732-byte constructor 89 different. Supporting matches do not satisfy the primary
 acceptance criteria. Continue the source/compile/compare loop.
+
+
+## Scalar motion-profile helpers, stage 48
+
+Five complete ordinary-C functions add **236 bytes**: construction at
+**0x8c0428e0..0x8c0428f8** (24), conditional destruction at
+**0x8c0428f8..0x8c04291c** (36), reset at **0x8c04291c..0x8c042950** (52),
+completion query at **0x8c042a60..0x8c042a6c** (12), and sampling at
+**0x8c042a6c..0x8c042adc** (112). Totals are **169 functions / 155 modules /
+20,152 compiled range bytes / 4,142,760 retained reference bytes**, or **0.4841%
+whole-image coverage**. All 164 previous matches, module definitions and
+source/header hashes are preserved. Since the initial 34-function checkpoint,
+135 functions replace 16,508 bytes. Code-only completion remains unknown;
+separately reconstructed static data remains zero.
+
+The provisional MotionProfile view has nine four-byte fields, each offset checked,
+and a checked 36-byte extent. Reset preserves the observed chained store order.
+Construction calls that reset and returns the receiver. Conditional destruction
+retains both the null test and signed-short positive deletion flag. The sampler
+preserves the four regions: negative time returns zero, acceleration uses the
+observed successive products, cruise uses the stored ramp distance, and braking
+uses the remaining time squared before returning the final distance. No algebraic
+reassociation or edge-case repair is introduced. All five first candidates and
+both independent compilations of each final readable source match exactly,
+including return-delay instructions, literal pools and alignment.
+
+The intervening **272-byte setup routine remains unadmitted**. Its first candidate
+had 35 differing bytes; capturing the adjusted speed square before the chained
+time stores reduces that to **10**, first **0x8c04298f**. The remaining differences
+are floating register choices in the initial ramp/braking calculation and their
+subsequent uses. Local renaming, parameter reuse, constant operand order, direct
+root declaration, inline helper and an actual C++ member definition do not improve
+that result. Regrouped expressions are worse and remain diagnostic scratch only.
+Two generated local-capture variants had scope errors; two parameter-reuse variants
+incorrectly renamed structure members. Their compiler failures and corrected
+follow-up trials are retained, with no integration of rejected sources.
+
+Further frame-setup scope, returned-aggregate and sign-temporary experiments do
+not improve **332/9**, first **0x8c041e3b**. All **54 trials**, including **four
+compiler rejections**, retain source snapshots, hypotheses and comparison evidence
+in `reconstruction-stage48`. The best motion setup is
+`profile-capture-square-first-only`; the five admitted sources are under `src/math`.
+
+Two fresh exact builds, integrated-image comparison, the five-function proof and
+all **53 original-workspace tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,142,760 retained bytes without changing artifacts. Focused
+exports are regenerated on a disposable copy after manifest/queue changes; the
+original database remains unchanged. Compiler, base flags and exact acceptance
+rules are unchanged. Primary operation/emission remain **512/30 and 388/8**, related
+reuse **448/4**, manager initialization **280/8**. The original primary batch is
+still incomplete; these supporting matches do not replace its acceptance criteria.
