@@ -1198,6 +1198,37 @@
       "boundary_review": "Raw little-endian SH4: entry0x8c0333fc, return delays0x8c03344e/0x8c033464/0x8c03346e, adjacent entry0x8c033470. No literals/padding. Complete fixed-C match independently twice; see reconstruction-stage26.",
       "status": "matched",
       "reason": "Complete ordinary-C hierarchy reparent operation preserves link removal/insertion order. Original primary targets remain unresolved."
+    },
+    {
+      "id": "describe_hierarchy_node",
+      "source": "src/objects/describe_hierarchy_node.c",
+      "address": "0x8c033330",
+      "entry": "_describe_hierarchy_node",
+      "headers": [
+        "src/include/hierarchy_description.h"
+      ],
+      "ranges": [
+        {
+          "offset": 144176,
+          "size": 204
+        }
+      ],
+      "functions": [
+        {
+          "name": "describe_hierarchy_node",
+          "address": "0x8c033330",
+          "size": 204
+        }
+      ],
+      "reference_sha256": "ae0906c31305756c5dcaf29022a31e9059b93e0b31e64c7794c1ac8206777f6a",
+      "symbols": {
+        "_length_at": "0x8c12b0cc",
+        "_output_at": "0x8c011ef4",
+        "_format_base": "0x8c2e8a37"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c033330, return delay0x8c0333e0, padding0x8c0333e2, six literal words0x8c0333e4..0x8c0333fc; adjacent reparent entry0x8c0333fc. Complete fixed-C match independently twice; see reconstruction-stage27.",
+      "status": "matched",
+      "reason": "Complete ordinary-C node description and recursive child traversal; referenced strings remain retained. Original primary targets remain unresolved."
     }
   ]
 }

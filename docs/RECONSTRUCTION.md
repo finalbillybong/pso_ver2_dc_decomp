@@ -1225,3 +1225,36 @@ five-function proof and all 43 original tests pass. Source-only rejects 4,154,26
 retained bytes without changing artifacts. Primary acceptance remains incomplete:
 operation 512/46, emission 388/8, related emission/reuse 448/4. Continue the shared
 angle/call scheduling work and the observed hierarchy dependencies.
+
+
+## Hierarchy description, stage 27
+
+The complete **204-byte** description/traversal function at
+`0x8c033330–0x8c0333fc` matches in ordinary C. Totals are **77 functions /
+66 modules / 8,856 compiled range bytes / 4,154,056 retained reference bytes**.
+All 76 prior functions, sources and headers are unchanged. Since the original
+34-function checkpoint, 43 supporting functions replace 5,212 bytes.
+
+The provisional description view checks the observed argument and traversal
+offsets. The code preserves two explicit traversal levels followed by recursion,
+unsigned indentation arithmetic, depth updates, unsigned-short arguments and
+variadic call order. Referenced strings remain reference-backed; no static data
+replacement is credited. Return delay `0x8c0333e0`, padding at `0x8c0333e2` and
+all six literal words through `0x8c0333fc` match independently twice.
+
+The initial C form emitted 208 bytes. Making the length call explicit, doubling
+depth with an unsigned shift and rematerializing the indentation address reduced
+it to 204 bytes with 46 differences. Declaring the observed format base as an
+external array preserves its base-plus-100 expression and fixes the literal/call
+schedule. Folding it to an absolute format pointer emits 200 bytes; retaining a
+local pointer across calls also fails. Fifteen trials, snapshots, hypotheses and
+compiler/comparison receipts are retained in private `reconstruction-stage27`.
+
+Current focused evidence is `function-dossiers/run-axrwidzq/receipt.json`; the
+original database is unchanged. Two fresh exact builds, full-image comparison,
+the five-function proof and all 43 original tests pass. Source-only rejects
+4,154,056 retained bytes without changing artifacts. Primary acceptance remains
+incomplete: operation 512/46, emission 388/8, related emission/reuse 448/4.
+The two complete C++ visitor diagnostics remain unadmitted under the C-only
+requirement. Continue shared call scheduling, hierarchy dependencies and the
+referenced vector/matrix helpers.

@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **76 exact functions in 65 modules**, replacing
-8,652 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **77 exact functions in 66 modules**, replacing
+8,856 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -168,7 +168,7 @@ advance candidate improves to 800/51 and remains unadmitted. See RECONSTRUCTION.
 for 113 trials, corrected color behavior and the continuing hypotheses.
 
 
-## Latest verified checkpoint: stage 26
+## Stage 26 checkpoint
 
 Hierarchy reparenting adds 116 exact ordinary-C bytes. Totals are 76 functions,
 65 modules, 8,652 compiled bytes and 4,154,260 retained bytes. All previous matches
@@ -176,3 +176,13 @@ and headers are preserved. Two fresh exact builds, full-image comparison,
 five-function proof and all 43 original tests pass; source-only rejects gaps.
 The two primary targets remain incomplete. Two complete C++ visitor diagnostics
 remain unadmitted under the current C-only requirement; see RECONSTRUCTION.md.
+
+
+## Latest verified checkpoint: stage 27
+
+Hierarchy description and traversal add 204 exact ordinary-C bytes. Totals are
+77 functions, 66 modules, 8,856 compiled bytes and 4,154,056 retained bytes.
+All prior matching sources and headers are preserved. Two fresh exact builds,
+full-image comparison, five-function proof and all 43 original tests pass;
+source-only rejects gaps. Both original primary targets remain incomplete.
+See RECONSTRUCTION.md for the successful and failed source hypotheses.
