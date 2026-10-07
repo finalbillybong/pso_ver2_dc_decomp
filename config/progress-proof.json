@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "e8effdbab479c34ec5c2d0a1dfdc6bd7dae7fba2a956b98f0f24fa9ee05af247",
+    "config/project.json": "b433a210aa412d1eed68c1160d5ce00edd4d2e9c39e22ea9ec091d8449ff7845",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/bind_id.c": "a62a5f3716a3d5c31563c4c7acf2def192a6dca08507c9cb5e0c30572222b0bb",
@@ -80,6 +80,7 @@
     "src/include/spatial.h": "811dcebb99d43554b84427c3fdb02800396b7489f7646d4bc20f4c9ffb4a6e57",
     "src/include/spawn_effect.h": "e166ff4d39424a1217936bdcb2c9dd9e20a78dc96f912139e5f605b216b74963",
     "src/include/spawn_motion.h": "c5f22e94f1e98c4d795cd3ea35affdeb85aefde53fd6240bc9c1b2493f0d2ae8",
+    "src/include/text_buffer.h": "8064f1f7d788bcb598816408980b4683d192b152d54bb623f4015c539811082e",
     "src/include/timed_hierarchy.h": "0c3526f8acd040a35e1f3e5a3823e342b37620c22fcb14f62e7bce484e209551",
     "src/include/vector3.h": "faff67bf729a7d9ac45803ed65a2d629520c4b22f72b08affa2e07e7a17e8262",
     "src/math/angle_difference.c": "815de2106556eb2ab7953449876fbb544aaf4ab45056a97bfd5a8c58dbf53df8",
@@ -158,6 +159,7 @@
     "src/samples/distance_xz.c": "0b19755f9b4a04b22e14175a634c3a2109e26f77939f73fcdbe7364f65f1aa09",
     "src/samples/init_bytes.c": "fad10d35a4c4b916c9928bc920492a1cf880496fff9994480ec603fcc0d6037b",
     "src/samples/mask_any.c": "7623e7d4ba491002de5f0fcaa39eae8f29046a2a2f1d83f83b60e612115391a7",
+    "src/ui/text_buffer.c": "eaaef84bfc17a69c251e5b002df4092d6a49507a6c90cfcb2d9c1a0916f4f59a",
     "tools/matching.py": "795fd81eb12b959474b5bef326f6b346d316dc37fe589a6f7255665fe8dd67f5",
     "tools/project.py": "51fe54aa0b1e8fa6895882cfbe9e1d0b31666db6e1a2e5115bf4e77a9922934a",
     "tools/verify_source.py": "2bf90001699f096d4589a30e25d52d983ea50a25f60b8290a9be58b11ca9e7f3"
@@ -187,6 +189,17 @@
       "-O2"
     ],
     "reset_shared_object": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "text_buffer": [
       "-proc",
       "SH4",
       "-endian",
@@ -1526,6 +1539,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4148192,
+  "source_only_rejected_retained_bytes": 4147484,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

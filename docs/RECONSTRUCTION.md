@@ -1786,3 +1786,66 @@ and the position setter **30 versus 32 expected**. Signed remainder retains its
 exceptional-ABI blocker. Supporting matches do not replace primary acceptance.
 Continue with the START_HERE.md commands, the eight-byte manager call scheduling,
 and the two primary regions; preserve failed hypotheses before new trials.
+
+
+## Text-buffer initialization and update, stage 37
+
+Two complete C functions in one module add **708 bytes**. Totals are **137
+functions / 123 modules / 15,428 compiled range bytes / 4,147,484 retained
+reference bytes**, or **0.3706% whole-image coverage**. Code-only completion
+remains unknown. All 135 prior matches, module definitions and source/header
+hashes are unchanged. Since the initial 34-function checkpoint, 103 functions
+replace 11,784 bytes. Both original primary targets remain incomplete.
+
+| Function | Address | Complete bytes |
+| --- | --- | ---: |
+| initialize_text_buffer | 0x8c01e2fc | 48 |
+| update_text_buffer | 0x8c01e32c | 660 |
+
+Following the manager's five-argument call identifies a 24-byte text-buffer
+view. Initialization stores its buffer and five integer fields and replaces
+trailing zero bytes with spaces. Declaring the stack length parameter `register`
+reproduces the single early load before aliasing stores. Its standalone output
+matches 46 instruction bytes but lacks two bytes of alignment; it was not
+admitted alone. Compiling with the fully reconstructed adjacent update in
+original order naturally supplies the alignment. The entire 708-byte section,
+including all update literals and padding, matches independently twice. No
+manual padding or prefix comparison is used.
+
+Update preserves the observed cached input-disabled byte, four inlined six-key
+scans, cursor movement, deletion/insertion, enter/escape control dispatch and
+text display calls. The raw inclusive shift and `buffer[length]` terminator
+remain unchanged; storage is supplied externally. Enter returns the first byte
+position at or below space and clears subsequent positions; escape returns zero;
+the normal display path returns minus one. The new header checks the full
+24-byte view and each accessed field offset. Field names remain provisional.
+
+A scoped key-array base prevents premature address hoisting. Explicit shifted
+buffer bases reproduce indexed byte accesses, and the control-character switch
+reproduces dispatch before case bodies. These refinements reduce the initial
+696-byte output to the exact 660-byte size with eleven register differences.
+Giving the six-entry bound a local and initializing index zero before that bound
+resolves the final allocation/scheduling differences. External declarations
+preserve the observed variadic text-call ABI.
+
+The same register-storage clue was tested on six emission declarations and four
+manager declarations, without improvement. Six manager scalar-capture orders
+leave ten differences, worse than the retained eight. C++ placement construction
+also fails to improve the manager: its first declaration was compiler-rejected,
+and the corrected size-type/default-constructor declaration emits 284 bytes
+versus 280 expected. These trials receive no credit. All 58 trials, including
+one rejected compile, retain source, hypothesis and comparison in
+`reconstruction-stage37`.
+
+Two fresh project builds, exact integrated-image comparison, five-function proof
+and all 47 original-workspace tests pass. Source-only rejects the remaining
+4,147,484 bytes without changing artifacts. Focused exports are refreshed after
+the manifest change on a disposable database copy; current receipt is recorded
+in `config/analysis-workflow.json`. No compiler/base-flag, gameplay, packaging or
+original analysis-database change is made.
+
+Operation remains **512/30**, emission **388/8**, related reuse **448/4**, and
+manager initialization **280/8**. The signed-remainder exceptional-ABI blocker
+and other documented scratch mismatches remain. Continue the START_HERE.md loop,
+using the now-recovered text-call ABI to investigate manager scheduling and
+preserving primary acceptance criteria.

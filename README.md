@@ -12,9 +12,9 @@ Other releases are not currently supported.
 
 ## Progress
 
-**135 exact matching functions in 122 modules**, replacing **14,720 bytes** of the
-4,162,912-byte decoded executable (**0.3536% image coverage**). Function ranges
-include their literals and padding. **4,148,192 bytes still come from the original
+**137 exact matching functions in 123 modules**, replacing **15,428 bytes** of the
+4,162,912-byte decoded executable (**0.3706% image coverage**). Function ranges
+include their literals and padding. **4,147,484 bytes still come from the original
 reference**; separately reconstructed static data is zero.
 
 This is an early hybrid reconstruction. It cannot yet build from source alone.
@@ -60,7 +60,7 @@ verified locally; CI does not claim to rebuild the game.
 
 | Path | Purpose |
 | --- | --- |
-| `src/objects`, `src/effects`, `src/math`, `src/runtime` | Admitted matching C/C++ modules |
+| `src/objects`, `src/effects`, `src/math`, `src/runtime`, `src/ui` | Admitted matching C/C++ modules |
 | `src/include` | Provisional types with checked offsets |
 | `src/samples` | Five-function compiler proof |
 | `src/provisional` | Unmatched candidates, excluded from progress |

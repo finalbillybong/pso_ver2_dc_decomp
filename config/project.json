@@ -57,6 +57,41 @@
       "boundary_review": "Raw little-endian SH4: entry0x8c01d32c, return delay0x8c01d37a, two literal words0x8c01d37c..0x8c01d384. Complete fixed-C match independently twice; see reconstruction-stage34."
     },
     {
+      "id": "text_buffer",
+      "source": "src/ui/text_buffer.c",
+      "address": "0x8c01e2fc",
+      "entry": "_initialize_text_buffer",
+      "headers": [
+        "src/include/text_buffer.h"
+      ],
+      "ranges": [
+        {
+          "offset": 58108,
+          "size": 708
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_text_buffer",
+          "address": "0x8c01e2fc",
+          "size": 48
+        },
+        {
+          "name": "update_text_buffer",
+          "address": "0x8c01e32c",
+          "size": 660
+        }
+      ],
+      "reference_sha256": "6e8f1c8c64946c0138e32c192a88e53886f4be795b99f669e82ef5ff42e69b73",
+      "symbols": {
+        "_key_state": "0x8c41ccec",
+        "_format_base": "0x8c2e34f0",
+        "_color_at": "0x8c38c5b6",
+        "_text_at": "0x8c38cf80"
+      },
+      "boundary_review": "Raw SH4 0x8c01e2fc..0x8c01e5c0: initializer return delay0x8c01e328, natural alignment0x8c01e32a, update entry0x8c01e32c, final return delay0x8c01e5aa and literals through0x8c01e5bc. Adjacent entry0x8c01e5c0. Complete708-byte section matches independently twice; reconstruction-stage37."
+    },
+    {
       "id": "mask_any",
       "address": "0x8c027064",
       "source": "src/samples/mask_any.c",

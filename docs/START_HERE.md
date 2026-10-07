@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **135 exact functions in 122 modules**, replacing
-14,720 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **137 exact functions in 123 modules**, replacing
+15,428 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -277,7 +277,7 @@ targets remain incomplete. See RECONSTRUCTION.md for 41 trials, natural module
 alignment and continuing source hypotheses.
 
 
-## Latest verified checkpoint: stage 36
+## Stage 36 checkpoint
 
 Five complete effect wrappers and manager lifecycle functions add 436 bytes.
 Totals are 135 functions, 122 modules, 14,720 compiled bytes and 4,148,192 retained
@@ -287,3 +287,15 @@ hashes are preserved. Two fresh builds, image comparison, compiler proof and all
 manager initializer is explicit and unresolved at 280/8. Both original primary
 targets remain incomplete. See RECONSTRUCTION.md for 59 trials, checked layouts
 and failed scheduling hypotheses. Continue the iteration commands above.
+
+
+## Latest verified checkpoint: stage 37
+
+Two complete adjacent text-buffer functions add 708 bytes, including natural
+compiler alignment. Totals are 137 functions, 123 modules, 15,428 compiled bytes
+and 4,147,484 retained bytes. All 135 prior matches, module definitions and
+source/header hashes are unchanged. Two fresh builds, image comparison, compiler
+proof and all 47 original-workspace tests pass. Source-only rejects the remaining
+gaps. Primary targets and manager initialization remain incomplete. See
+RECONSTRUCTION.md for 58 trials and the checked text-buffer view. Continue the
+iteration commands above; supporting matches do not replace primary acceptance.
