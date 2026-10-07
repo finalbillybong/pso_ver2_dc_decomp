@@ -847,3 +847,56 @@ batch remains incomplete. The scratch C++ diagnostic and signed-remainder
 exceptional-ABI blocker are unchanged. Continue investigating these differences
 and follow the now-explicit effect dispatch, matrix/vector and static-data
 dependencies. Supporting matches do not replace primary acceptance criteria.
+
+
+## Complete effect update and adjacent controls, stage 19
+
+Ten functions in eight modules replace **1,336 more bytes**, preserving every
+previous 51 match. Current verified totals are **61 functions / 50 modules /
+6,932 compiled range bytes / 4,155,980 retained reference bytes**. Continuous
+work since the original 34-function checkpoint adds 27 functions and 3,288 bytes.
+
+| Module | Range | Functions | Bytes |
+| --- | --- | ---: | ---: |
+| `effect_bit0` | `0x8c0a727c–0x8c0a72a0` | 2 | 36 |
+| `update_effect` | `0x8c0a72a0–0x8c0a75f0` | 1 | 848 |
+| `reset_effect_resource` | `0x8c0a75f0–0x8c0a7608` | 1 | 24 |
+| `effect_bits_and_words` | `0x8c0a763c–0x8c0a7660` | 2 | 36 |
+| `reset_effect_by_index` | `0x8c0a7660–0x8c0a769c` | 1 | 60 |
+| `create_effect_769c` | `0x8c0a769c–0x8c0a7708` | 1 | 108 |
+| `create_effect_7708` | `0x8c0a7708–0x8c0a777c` | 1 | 116 |
+| `create_effect_777c` | `0x8c0a777c–0x8c0a77e8` | 1 | 108 |
+
+Adjacent controls are compiled together where the compiler naturally emits the
+interfunction alignment. No padding bytes are supplied. The isolated position
+setter remains scratch-only at 30 generated versus 32 reference bytes; its
+neighbor `bind_id` remains in its original admitted module. All previous units,
+sources and headers are unchanged.
+
+The complete update first generated 856 bytes with 804 differing bytes. Keeping
+the no-binding constant local to the spawn loop and reloading the resource after
+callbacks fixes saved-register lifetimes. An inverse if/else countdown form
+reproduces the early branch join and literal placement. Direct spawn declarations
+correct stack arguments; a typed base flag field and symbolic dispatch-table base
+reproduce the remaining addressing. Reading both scale inputs before writes
+reduces the mismatch to 48 bytes, all the same register permutation in six blocks.
+Naming the first destination pointer before the value captures resolves them.
+The full 848-byte match includes eight literal islands and all alignment words.
+
+The declared `effect_update.h` checks base flags at offset 4, resource mode and
+floating fields, destination scales at 0x98/0x9c, and the 8-byte dispatch entries
+with callback at offset 4. Existing effect and listener layouts remain declared
+and unchanged. These are provisional views; static table contents remain retained
+reference data. Preserve the observed ordered comparisons, including NaN behavior,
+postdecrement, resource reload, missing lower mode/index bounds and untouched fields.
+Each final source matches independently twice. All **127 trials** and hypotheses
+are indexed in private `reconstruction-stage19`; none was a compiler rejection.
+
+Two fresh exact builds, full-image comparison, the five-function compiler proof
+and all 43 original tests pass. Source-only rejects the remaining 4,155,980 bytes
+without changing artifacts. Focused export `function-dossiers/run-tneh30lb/receipt.json`
+validates current inputs; the original database is unchanged. Primary candidates
+remain **512/46**, **388/8**, and related emission/reuse **448/4**. The original
+primary batch is incomplete; these supporting matches do not replace its gates.
+Continue the shared scheduling investigation, direct initializer `0x8c0a6f38`,
+spawned-effect dependencies, matrix/vector routines and referenced static data.

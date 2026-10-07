@@ -558,6 +558,245 @@
       "boundary_review": "Raw little-endian SH4: entry 0x8c0a7238; return delay 0x8c0a7268; alignment 0x8c0a726a; four literals 0x8c0a726c-0x8c0a727c; adjacent entry 0x8c0a727c. Full-range C match independently twice with declared checked effect.h; see reconstruction-stage18.",
       "status": "matched",
       "reason": "Complete ordinary-C function including literal pool and padding; checked effect layout. Direct creation dependency or adjacent initializer/destructor. No copied static data; primary targets remain unresolved."
+    },
+    {
+      "id": "effect_bit0",
+      "source": "src/effects/effect_bit0.c",
+      "address": "0x8c0a727c",
+      "entry": "_set_effect_bit0",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 619132,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_effect_bit0",
+          "address": "0x8c0a727c",
+          "size": 20
+        },
+        {
+          "name": "clear_effect_bit0",
+          "address": "0x8c0a7290",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "35a0c5c5578389da445a302b0e156295c8d1ed5f9303975989dc10da94830a86",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Two adjacent bit controls; first return delay 0x8c0a728c, compiler alignment at 0x8c0a728e, second delay 0x8c0a729e, next entry 0x8c0a72a0. Complete fixed-C match independently twice; see reconstruction-stage19.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range, including all literal pools and compiler-generated padding. No original source/manifest entries replaced; primary operation/emission mismatches remain unresolved."
+    },
+    {
+      "id": "reset_effect_resource",
+      "source": "src/effects/reset_effect_resource.c",
+      "address": "0x8c0a75f0",
+      "entry": "_reset_effect_resource",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 620016,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_effect_resource",
+          "address": "0x8c0a75f0",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "2c8579c3dd0095d6de1f7b6b6719ef752af4deb907d83779c5c341fc66f3541f",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0a7606; adjacent position entry 0x8c0a7608; no literals or added padding. Complete fixed-C match independently twice; see reconstruction-stage19.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range, including all literal pools and compiler-generated padding. No original source/manifest entries replaced; primary operation/emission mismatches remain unresolved."
+    },
+    {
+      "id": "effect_bits_and_words",
+      "source": "src/effects/effect_bits_and_words.c",
+      "address": "0x8c0a763c",
+      "entry": "_set_effect_bits",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 620092,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_effect_bits",
+          "address": "0x8c0a763c",
+          "size": 16
+        },
+        {
+          "name": "set_effect_words",
+          "address": "0x8c0a764c",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "b25b7154fe517948e1e8c807862cb0b302318ca7248d378a0f4e31ff3d232461",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Two adjacent entries; bit setter return delay 0x8c0a7648, compiler alignment 0x8c0a764a, word setter delay 0x8c0a765e; next entry 0x8c0a7660. Complete fixed-C match independently twice; see reconstruction-stage19.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range, including all literal pools and compiler-generated padding. No original source/manifest entries replaced; primary operation/emission mismatches remain unresolved."
+    },
+    {
+      "id": "reset_effect_by_index",
+      "source": "src/effects/reset_effect_by_index.c",
+      "address": "0x8c0a7660",
+      "entry": "_reset_effect_by_index",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 620128,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_effect_by_index",
+          "address": "0x8c0a7660",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "0fce9270b870c85a625972a1d36d39fbab812fb3a0b6dfdce5a583ed660cf160",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Last return delay 0x8c0a768e; three literals 0x8c0a7690-0x8c0a769c; adjacent entry 0x8c0a769c. Complete fixed-C match independently twice; see reconstruction-stage19.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range, including all literal pools and compiler-generated padding. No original source/manifest entries replaced; primary operation/emission mismatches remain unresolved."
+    },
+    {
+      "id": "create_effect_769c",
+      "source": "src/effects/create_effect_769c.c",
+      "address": "0x8c0a769c",
+      "entry": "_create_effect_769c",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 620188,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_769c",
+          "address": "0x8c0a769c",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "78fb0358d7e4bc71f6a12b12c397f72a2c9cf7776ebd96db712c6217d558913f",
+      "symbols": {
+        "_initialize_at": "0x8c0a6f38"
+      },
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0a76ec; alignment 0x8c0a76ee; six literals 0x8c0a76f0-0x8c0a7708; adjacent entry 0x8c0a7708. Complete fixed-C match independently twice; see reconstruction-stage19.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range, including all literal pools and compiler-generated padding. No original source/manifest entries replaced; primary operation/emission mismatches remain unresolved."
+    },
+    {
+      "id": "create_effect_7708",
+      "source": "src/effects/create_effect_7708.c",
+      "address": "0x8c0a7708",
+      "entry": "_create_effect_7708",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 620296,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_7708",
+          "address": "0x8c0a7708",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "3a8d5da1a577907450540b07930c7c13dd9982b62f4c77ff74703ae54f4144c8",
+      "symbols": {
+        "_initialize_at": "0x8c0a6ff0"
+      },
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0a7760; alignment 0x8c0a7762; six literals 0x8c0a7764-0x8c0a777c; adjacent entry 0x8c0a777c. Complete fixed-C match independently twice; see reconstruction-stage19.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range, including all literal pools and compiler-generated padding. No original source/manifest entries replaced; primary operation/emission mismatches remain unresolved."
+    },
+    {
+      "id": "create_effect_777c",
+      "source": "src/effects/create_effect_777c.c",
+      "address": "0x8c0a777c",
+      "entry": "_create_effect_777c",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 620412,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_777c",
+          "address": "0x8c0a777c",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "45c68cb0bee6ddf2d2a3c90ad4552d190a197ca9788874d5102b757553cf7f0c",
+      "symbols": {
+        "_initialize_at": "0x8c0a6f38"
+      },
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0a77ce; six literals 0x8c0a77d0-0x8c0a77e8; adjacent admitted create_effect entry 0x8c0a77e8. Complete fixed-C match independently twice; see reconstruction-stage19.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range, including all literal pools and compiler-generated padding. No original source/manifest entries replaced; primary operation/emission mismatches remain unresolved."
+    },
+    {
+      "id": "update_effect",
+      "source": "src/effects/update.c",
+      "address": "0x8c0a72a0",
+      "entry": "_update_effect",
+      "headers": [
+        "src/include/effect.h",
+        "src/include/effect_update.h",
+        "src/include/emit_listener.h"
+      ],
+      "ranges": [
+        {
+          "offset": 619168,
+          "size": 848
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_effect",
+          "address": "0x8c0a72a0",
+          "size": 848
+        }
+      ],
+      "reference_sha256": "125252e4b80819f88d5cceeec843121755cf15b98f09913919ab76f60844fa80",
+      "symbols": {
+        "_spawn0_at": "0x8c0aa77c",
+        "_spawn1_at": "0x8c0ab360",
+        "_spawn2_at": "0x8c0abee0",
+        "_effect_spawn_table": "0x8c304710"
+      },
+      "boundary_review": "Raw little-endian SH4: 0x8c0a72a0-0x8c0a75f0, complete 848 bytes. Includes eight literal islands beginning at 0x8c0a72cc, 0x8c0a739c, 0x8c0a741c, 0x8c0a747c, 0x8c0a74cc, 0x8c0a7518, 0x8c0a7560 and 0x8c0a75e4; return delay 0x8c0a75e0, final alignment 0x8c0a75e2; adjacent reset entry 0x8c0a75f0. Exact twice with declared checked effect/update/listener layouts; see reconstruction-stage19.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range, including all literal pools and compiler-generated padding. No original source/manifest entries replaced; primary operation/emission mismatches remain unresolved."
     }
   ]
 }
