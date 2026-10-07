@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "1a76e5af6e274f38a6c5a8487f3dd6377687a2388c2014a579cbbb79fc289e86",
+    "config/project.json": "7790e0b863256bf9f3926896b1bc04f84dbd6dde1a46b2e4054ffd1c74d55d11",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/bind_id.c": "a62a5f3716a3d5c31563c4c7acf2def192a6dca08507c9cb5e0c30572222b0bb",
@@ -83,6 +83,7 @@
     "src/objects/operation_45a8c.c": "39ab63c7c6e605eb3f7431469b99ebfb971d1d903e105eb1b6a79f28ee803d21",
     "src/objects/operation_45b8c.c": "6335460625ec8386ab9bdf1312a736a3d17973d25bfc7af56be17f94a4a20a30",
     "src/objects/operation_45d6c.c": "87b27af7b353a34193307d9004fc33c62cb91649223118603113c21c26a235f9",
+    "src/objects/reparent_hierarchy_node.c": "62753e195a9dfe5c07ee22a1ddf6d4a82d78b47984e9d21d229d15fc9c1a90f4",
     "src/objects/set_330.c": "8ee5610ba3bf989d3782fb066a47f2ee84b466ce473b879200f0baff77bf187a",
     "src/runtime/allocate_block.c": "26b0bf4edd80b832d938b35c9af840b2c171b122b65b9627f6f4811befb71abf",
     "src/samples/clamp_int.c": "3733940081778d37ed5e05dd3320011094c02637d2ea06aab4b703f91e90a17a",
@@ -107,6 +108,6 @@
   ],
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4154376,
+  "source_only_rejected_retained_bytes": 4154260,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

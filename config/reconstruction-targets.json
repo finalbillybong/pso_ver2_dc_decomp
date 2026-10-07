@@ -1171,6 +1171,33 @@
       "boundary_review": "Raw little-endian SH4: Loop entry0x8c03347c, early return delay0x8c03348c, final return delay0x8c033496; next entry0x8c033498. No literal pool or trailing alignment. Complete fixed-C match independently twice; see reconstruction-stage25.",
       "status": "matched",
       "reason": "Complete ordinary-C hierarchy dependency of effect initialization/destruction/update; includes full literals/boundary. Original primary targets remain unresolved."
+    },
+    {
+      "id": "reparent_hierarchy_node",
+      "source": "src/objects/reparent_hierarchy_node.c",
+      "address": "0x8c0333fc",
+      "entry": "_reparent_hierarchy_node",
+      "headers": [
+        "src/include/hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 144380,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "reparent_hierarchy_node",
+          "address": "0x8c0333fc",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "6bf1fc23872bac466a5a8ee1986326848e14596f603e9abb128453ae7c68ff43",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c0333fc, return delays0x8c03344e/0x8c033464/0x8c03346e, adjacent entry0x8c033470. No literals/padding. Complete fixed-C match independently twice; see reconstruction-stage26.",
+      "status": "matched",
+      "reason": "Complete ordinary-C hierarchy reparent operation preserves link removal/insertion order. Original primary targets remain unresolved."
     }
   ]
 }

@@ -1194,3 +1194,34 @@ changing existing artifacts. Primary acceptance remains incomplete: operation
 512/46, emission 388/8, related emission/reuse 448/4. The signed-remainder blocker
 and zero separately reconstructed static-data bytes remain unchanged. Continue
 the primary scheduling investigation and the observed hierarchy/effect dependencies.
+
+
+## Hierarchy reparenting and virtual-call evidence, stage 26
+
+The complete **116-byte** reparent operation at `0x8c0333fc–0x8c033470` now
+matches in ordinary C. Totals are **76 functions / 65 modules / 8,652 compiled
+range bytes / 4,154,260 retained reference bytes**. All 75 prior matches, sources
+and headers are unchanged. Since the original 34-function checkpoint, 42 supporting
+functions replace 5,008 bytes. The existing checked `hierarchy.h` is reused.
+
+Reparenting preserves removal from the old parent's links, all observed reloads,
+destination assignment and insertion into the new child chain. All three return
+delay slots match; this range has no literals or trailing padding. The final
+source matches independently twice.
+
+Two adjoining visitors isolate the virtual-call issue. The 52-byte visitor at
+`0x8c0332a4` compiles to 80 bytes with named C recursion, or 48 with fixed-address
+recursion. The 88-byte visitor at `0x8c0332d8` visits three explicit levels before
+recurring; the corresponding C form emits 84 bytes. C++ virtual-call diagnostics
+match both complete ranges, including literals and alignment. They remain
+**unadmitted** under the supplied C-only requirement and earn no progress credit.
+Those diagnostics retain the same compiler and optimization settings, with a
+recorded language selector. They do not change the accepted compiler contract.
+
+All ten trials and receipts are preserved in private `reconstruction-stage26`.
+Current focused evidence is `function-dossiers/run-bx349hiz/receipt.json`; the
+original database is unchanged. Two fresh exact builds, full-image comparison,
+five-function proof and all 43 original tests pass. Source-only rejects 4,154,260
+retained bytes without changing artifacts. Primary acceptance remains incomplete:
+operation 512/46, emission 388/8, related emission/reuse 448/4. Continue the shared
+angle/call scheduling work and the observed hierarchy dependencies.

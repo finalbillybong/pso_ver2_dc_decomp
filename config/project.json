@@ -279,6 +279,31 @@
       "boundary_review": "Raw little-endian SH4: Return delay0x8c0331b2 and three literal words0x8c0331b4-0x8c0331c0; next entry0x8c0331c0. Complete fixed-C match independently twice; see reconstruction-stage25."
     },
     {
+      "id": "reparent_hierarchy_node",
+      "source": "src/objects/reparent_hierarchy_node.c",
+      "address": "0x8c0333fc",
+      "entry": "_reparent_hierarchy_node",
+      "headers": [
+        "src/include/hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 144380,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "reparent_hierarchy_node",
+          "address": "0x8c0333fc",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "6bf1fc23872bac466a5a8ee1986326848e14596f603e9abb128453ae7c68ff43",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c0333fc, return delays0x8c03344e/0x8c033464/0x8c03346e, adjacent entry0x8c033470. No literals/padding. Complete fixed-C match independently twice; see reconstruction-stage26."
+    },
+    {
       "id": "hierarchy_is_active",
       "source": "src/objects/hierarchy_is_active.c",
       "address": "0x8c03347c",
