@@ -5,6 +5,58 @@
   "decoded_reference": "config/decoded.json",
   "units": [
     {
+      "id": "destroy_shared_object",
+      "source": "src/objects/destroy_shared_object.c",
+      "address": "0x8c01d2b0",
+      "entry": "_destroy_shared_object",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/shared_object.h"
+      ],
+      "ranges": [
+        {
+          "offset": 53936,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_shared_object",
+          "address": "0x8c01d2b0",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "fc1edf994dd306664311864ac48e248a30271de227a6aa48c8a22edcba22d371",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c01d2b0, return delay0x8c01d30a, eight literal words0x8c01d30c..0x8c01d32c. Complete fixed-C match independently twice; see reconstruction-stage34."
+    },
+    {
+      "id": "reset_shared_object",
+      "source": "src/objects/reset_shared_object.c",
+      "address": "0x8c01d32c",
+      "entry": "_reset_shared_object",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/shared_object.h"
+      ],
+      "ranges": [
+        {
+          "offset": 54060,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_shared_object",
+          "address": "0x8c01d32c",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "03fb4855173a38ccb1bbc306e673c297d42060d38365bd2d1e4b4d0f1bc34e9c",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c01d32c, return delay0x8c01d37a, two literal words0x8c01d37c..0x8c01d384. Complete fixed-C match independently twice; see reconstruction-stage34."
+    },
+    {
       "id": "mask_any",
       "address": "0x8c027064",
       "source": "src/samples/mask_any.c",
@@ -2700,6 +2752,116 @@
       ],
       "reference_sha256": "643c4ab25d053a7e51565889417cb3c4bc25389f5f73ee91d644d266f3fbe083",
       "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
+    },
+    {
+      "id": "initialize_proximity_object",
+      "source": "src/objects/initialize_proximity_object.c",
+      "address": "0x8c1ab324",
+      "entry": "_initialize_proximity_object",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/proximity_object.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1684260,
+          "size": 156
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_proximity_object",
+          "address": "0x8c1ab324",
+          "size": 156
+        }
+      ],
+      "reference_sha256": "8f9572bf79e3e6296b2b91863ce8e1ea31b8802aac13fadc69f2d92c4c357bea",
+      "symbols": {
+        "_create_at": "0x8c0a78d0"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c1ab324, return delay0x8c1ab39a, nine literal words0x8c1ab39c..0x8c1ab3c0. Complete fixed-C match independently twice; see reconstruction-stage34."
+    },
+    {
+      "id": "destroy_proximity_object",
+      "source": "src/objects/destroy_proximity_object.c",
+      "address": "0x8c1ab3c0",
+      "entry": "_destroy_proximity_object",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/proximity_object.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1684416,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_proximity_object",
+          "address": "0x8c1ab3c0",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "23c8d86891510f0784f8cf119d0dae9c050bae9419f22adcc26ccafb8342db84",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c1ab3c0, return delay0x8c1ab406, six literal words0x8c1ab408..0x8c1ab420. Complete fixed-C match independently twice; see reconstruction-stage34."
+    },
+    {
+      "id": "update_proximity_object",
+      "source": "src/objects/update_proximity_object.c",
+      "address": "0x8c1ab420",
+      "entry": "_update_proximity_object",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/proximity_object.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1684512,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_proximity_object",
+          "address": "0x8c1ab420",
+          "size": 152
+        }
+      ],
+      "reference_sha256": "242c773b4452941f021523a580f7217c5ccc3e60c915540a73c21809d112b3cb",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c1ab420, return delay0x8c1ab494, zero alignment0x8c1ab496, eight literal words0x8c1ab498..0x8c1ab4b8. Complete fixed-C match independently twice; see reconstruction-stage34."
+    },
+    {
+      "id": "display_proximity_object",
+      "source": "src/objects/display_proximity_object.c",
+      "address": "0x8c1ab4b8",
+      "entry": "_display_proximity_object",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/proximity_object.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1684664,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "display_proximity_object",
+          "address": "0x8c1ab4b8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "918fb3c5ce93731a0ff207a4f4cdc2fc96489c97eea45c9e042361152661d076",
+      "symbols": {
+        "_color_at": "0x8c38c5b6",
+        "_text_at": "0x8c38cf80",
+        "_format_base": "0x8c324f4c"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c1ab4b8, return delay0x8c1ab4e8, zero alignment0x8c1ab4ea, seven literal words0x8c1ab4ec..0x8c1ab508. Complete fixed-C match independently twice; see reconstruction-stage34."
     }
   ]
 }

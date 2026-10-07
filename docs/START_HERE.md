@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **115 exact functions in 103 modules**, replacing
-12,580 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **121 exact functions in 109 modules**, replacing
+13,276 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -243,12 +243,23 @@ Source-only rejects gaps. Both original primary targets remain incomplete at
 86 trials, observed failure-path behavior and continuing hypotheses.
 
 
-## Latest verified checkpoint: stage 33
+## Stage 33 checkpoint
 
 Thirteen complete resource/allocation functions add 720 bytes. Totals are 115
 functions, 103 modules, 12,580 compiled bytes and 4,150,332 retained bytes.
 All 102 prior matches, sources and headers are preserved. Two fresh exact builds,
 integrated-image comparison, five-function proof and all 47 original-workspace
 tests pass. Source-only rejects gaps. Both original primary targets remain
-incomplete at512/30 and388/8; related emission/reuse remains448/4. See
+incomplete at512/30 and 388/8; related emission/reuse remains448/4. See
 RECONSTRUCTION.md for 60 trials and continuing source hypotheses.
+
+
+## Latest verified checkpoint: stage 34
+
+Six complete proximity/shared-base functions add 696 bytes. Totals are 121 functions,
+109 modules, 13,276 compiled bytes and 4,149,636 retained bytes. All 115 previous matches,
+modules and source/header hashes are preserved. Two fresh exact builds,
+integrated-image comparison, five-function proof and all 47 original-workspace tests
+pass. Source-only rejects gaps. Both original primary targets remain incomplete.
+An overlapping diagnostic effect-setter module was excluded; no duplicate bytes
+or functions are counted. See RECONSTRUCTION.md for 44 trials and next hypotheses.

@@ -1573,7 +1573,7 @@ factors, comma expressions, sibling scopes and explicit orientation offsets.
 They do not improve 512/30; explicit offsets regress to 508 bytes. These trials
 transfer the declaration/lifetime lessons from the newly matched resource copy
 but do not resolve either angle region. Emission remains388/8 and related
-emission/reuse448/4. Scratch effects remain800/46 and536/25, and signed remainder
+emission/reuse 448/4. Scratch effects remain800/46 and 536/25, and signed remainder
 retains its exceptional-ABI blocker. Both original primary targets remain
 incomplete; supporting matches do not replace their acceptance criteria.
 
@@ -1588,3 +1588,77 @@ Continue with `python3 -B tools/verify_source.py --check`,
 `python3 -B tools/candidates.py`, and the START_HERE.md iteration commands.
 Next work follows the allocation callers and their effect initializers while
 retaining the primary angle/argument-scheduling investigations.
+
+
+## Proximity object and shared-base lifecycle, stage 34
+
+Six complete C functions add **696 bytes**, preserving all 115 previous matches,
+modules and source/header hashes. Totals are **121 functions / 109 modules /
+13,276 compiled range bytes / 4,149,636 retained reference bytes**. Whole-image
+coverage is 0.3189%, not code-only completion. Since the original 34-function
+checkpoint, 87 supporting functions replace 9,632 bytes.
+
+| Function | Address | Complete bytes |
+| --- | --- | ---: |
+| `destroy_shared_object` | `0x8c01d2b0` | 124 |
+| `reset_shared_object` | `0x8c01d32c` | 88 |
+| `initialize_proximity_object` | `0x8c1ab324` | 156 |
+| `destroy_proximity_object` | `0x8c1ab3c0` | 96 |
+| `update_proximity_object` | `0x8c1ab420` | 152 |
+| `display_proximity_object` | `0x8c1ab4b8` | 80 |
+
+The matched `spawn_object_1ab324` leads to this provisional proximity-object view.
+Its observed allocation and extent field are 0x9c bytes. Offset checks cover name,
+flags, dispatch, extent, position, integer angle words, source field at 0x6c,
+radius at 0x94 and effect pointer at 0x98. The initializer calls the shared base,
+restores dispatch/name/extent, applies the argument through slot 0x20, clears the
+effect pointer, copies the source field to radius, substitutes 30 only if radius
+is negative, and creates the observed effect. An external create declaration
+fixes the last ten differing literal/argument bytes. The destructor releases a
+non-null effect, clears the pointer, invokes base destruction, and conditionally
+frees the object for a positive signed-short argument.
+
+The update first copies position and angle fields to a live effect. Unless the
+state query blocks the scan, it visits four object slots, compares the returned
+distance against radius squared, triggers argument 8 for the first qualifying
+object, sets flag bit one, and exits the scan. Display copies the source field
+back to radius and performs the observed color/text/color calls. Names remain
+provisional, and no pointed-to text or data is copied into source.
+
+The shared-base destructor checks the pointer at 0x84 and identifier range
+0x4000 through 0xfffe before its release call with -3. It then clears that pointer,
+invokes hierarchy destruction, and optionally frees the object. Its reset helper
+preserves chained store order while clearing the observed vectors, angle words,
+mode and pointer. The checked shared view covers observed fields only and does
+not assert the complete derived-object extent.
+
+The shared-base initializer remains scratch-only: the straightforward source
+is 200 bytes versus 196 expected, with 171 differences. Aggregate-copy chains,
+scoped addresses, inline helpers, explicit offsets, C++ constructor/free-function
+forms and representation/lifetime trials do not produce a match. One rejected
+named-zero generator trial needed explicit pointer casts; both the rejected and
+corrected receipts remain. Diagnostic memcpy forms also fail and are not admitted.
+
+A complete 88-byte adjacent effect-setter module matched in scratch, but the
+integrated range check correctly rejected it: 56 bytes were already admitted as
+`bind_id` and `effect_bits_and_words`. That overlapping module was removed, all
+prior modules retained, and no duplicate progress counted. Its new position
+setter alone emits 30 of the required 32 bytes. It remains unadmitted because
+manual alignment is not allowed. The failed integration logs are preserved;
+fresh builds after removing the overlap pass. Direct setter inspection also
+supports integer angle words in the final checked proximity view.
+
+All 44 trials retain source, hypothesis, compiler receipt and full comparison in
+`reconstruction-stage34`; one was compiler-rejected. Every admitted final source
+matches twice. Two fresh exact project builds, integrated-image comparison,
+five-function proof and all 47 original-workspace tests pass. Source-only rejects
+4,149,636 retained bytes without changing artifacts. Focused evidence is
+`function-dossiers/run-8uykrj0v/receipt.json`, with exact exported ranges and an
+unchanged original database.
+
+Primary operation/emission remain 512/30 and 388/8, related emission/reuse 448/4,
+and scratch effects 800/46 and 536/25. Signed remainder retains its exceptional-ABI
+blocker. Both original primary targets remain incomplete. Continue shared-base
+vector-copy lifetimes, the observed effect initialization dependencies and primary
+scheduling work with `python3 -B tools/verify_source.py --check`,
+`python3 -B tools/candidates.py` and the START_HERE.md iteration commands.
