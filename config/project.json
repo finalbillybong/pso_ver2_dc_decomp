@@ -2996,6 +2996,32 @@
       "boundary_review": "Raw little-endian SH4 range through adjacent entry including literals/alignment. Final source and declared checked headers independently exact twice; reconstruction-stage55."
     },
     {
+      "id": "apply_object_velocity",
+      "source": "src/objects/apply_object_velocity.c",
+      "address": "0x8c044488",
+      "entry": "_apply_object_velocity",
+      "ranges": [
+        {
+          "offset": 214152,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_object_velocity",
+          "address": "0x8c044488",
+          "size": 112
+        }
+      ],
+      "headers": [
+        "src/include/object_velocity.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "e3d981c1c1fa00a26a0edc9b46e94d6600e279a4e492ee544ce04862991edc7f",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4 entry to adjacent0x8c0444f8, including literal pool. Final source/header independently exact twice; reconstruction-stage56."
+    },
+    {
       "id": "operation_455ac",
       "address": "0x8c0455ac",
       "source": "src/objects/operation_455ac.c",

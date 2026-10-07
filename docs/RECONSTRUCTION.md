@@ -2874,3 +2874,55 @@ Original primary operation/emission remain **512/30 and 388/8**, related reuse
 **448/4**, manager initialization **280/8**, scratch frame **332/8** and hexadecimal
 highlighting **144/8**. The primary batch remains incomplete; supporting matches
 do not replace its acceptance criteria.
+
+
+## Object velocity application, stage 56
+
+The complete ordinary-C function at **0x8c044488..0x8c0444f8** adds **112 bytes**.
+Totals are **211 functions / 195 modules / 23,688 compiled range bytes /
+4,139,224 retained reference bytes**, or **0.5690% whole-image coverage**. All 210
+previous matches, module definitions and source/header hashes are preserved.
+Since the initial checkpoint, 177 functions replace 20,044 bytes. Code-only
+completion remains unknown; separately reconstructed static data remains zero.
+
+ObjectVelocityView checks position at 0x3c, previous position at 0x48, velocity at
+0x318 and center at 0x324. It is an observed prefix rather than a full allocation.
+The function snapshots position before either call, adds velocity to a local copy
+of center, calls the existing movement routine with mode zero, and copies the
+local result into position only on success. This preserves callback-visible
+ordering and partial state updates on failure. Vector addition and the movement
+callee remain reference dependencies. The baseline matches immediately; final
+readable source with declared checked headers matches the full range twice before
+integration, including literals, aggregate copies and branch delay slots.
+
+The neighboring segment-velocity setter at **0x8c044320..0x8c044410** improves from
+244 versus 240 expected / 88 differences to **240/20**, first **0x8c0443be**, using
+a scoped destination vector base. The supplied-direction setter at
+**0x8c044410..0x8c044488** remains **120/29**, first **0x8c04444e**; its scoped-base
+variant is only 116 bytes and is not acceptable. Both preserve Y while updating
+X/Z, but final stack-component reads and destination-address lifetimes still differ.
+Pointer/scalar temporaries, vector accessors, array/union views, step reuse,
+volatile accesses, equivalent blocks and source renaming do not produce full
+matches. These failed hypotheses are retained, not admitted.
+
+The complete motion wrapper at **0x8c0444f8..0x8c0446f8** is reconstructed using an
+ordinary C++ virtual call and inline capture, segment-velocity and apply-velocity
+helpers. Its initial candidate is **512/52**. External declarations for both
+movement callees resolve their aggregate-call preparation and reduce it to
+**512/22**, first **0x8c044626**; only the inline velocity stores differ. The return
+ABI is corrected to float, consistent with its final distance callee. Additional
+nested setter helpers increase code size; they do not replace this best candidate.
+This wrapper and both velocity setters remain unadmitted. Six step-type variants
+also leave the earlier 140-byte angle wrapper at 144 bytes.
+
+All **68 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage56`, with **no compiler/linker rejections**.
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+**53 original-workspace tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,139,224 reference bytes without altering artifacts. Focused
+exports use a disposable database copy after manifest/queue changes; the original
+database, compiler, base flags and full-range acceptance remain unchanged.
+Original primary operation/emission remain **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, scratch frame **332/8**, hexadecimal
+highlighting **144/8** and movement/target update **328/34**. The primary batch
+remains incomplete; supporting matches do not replace its acceptance criteria.

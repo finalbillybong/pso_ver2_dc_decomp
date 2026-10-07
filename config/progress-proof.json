@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "7041e46895c5463bf764f107ad718713ef8edce5df1d02dda6f18fd47f40040c",
+    "config/project.json": "cd4bbee7d52772a13833beaf5e7751e6222972b7f838822569986fb23eb1b9bb",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -94,6 +94,7 @@
     "src/include/object_distance.h": "58fcc3f4ad49214a47952248ea8f32378d3307e623db6903b7178e4ba8c61d5f",
     "src/include/object_movement.h": "da88c236f6b1b4b0a8369ee6ab9fb0041fbf9b70b6d7dde3ca34547a5ad7e6f1",
     "src/include/object_state.h": "4d7fafa28f4190b124d849b24f19d3b36283280612515479f702da0d7e4362e7",
+    "src/include/object_velocity.h": "c5c66692412420b050826aa91b00734a913919c5530b89fbf60821054dfe1590",
     "src/include/proximity_object.h": "e8e2af88f37f02cf66df2a0a376b79fa61141bc856cdea2a04a7704ea9676046",
     "src/include/resource_callbacks.h": "1b9d17153cacba5cd644849c81ff73d03143c4de5c3ecca5e5e1d8aa2a2464c7",
     "src/include/resource_list.h": "50f6536b2743f97e1e3484bbeca8e405b39917a040e59e349b88e75ace84af7a",
@@ -138,6 +139,7 @@
     "src/math/submit_in_vector_frame.c": "df6b5fbe8aaa277f249b434e17233975be158a668398e8b1942801c14972abaf",
     "src/math/transform_in_vector_frame.c": "ce561f55fba8a4b7ed7f8e539ca36dacd4325e4e2953d98df39f57d5733fbf21",
     "src/objects/adjust_330.c": "abd866c6197d75fbfc52c4055f50c125d9f2e16b067f7f44e3c7c4ee6d3ea2c3",
+    "src/objects/apply_object_velocity.c": "aa584d9c746bd26e4fae19787275125fe360873c32d188402218b654b7429399",
     "src/objects/apply_resource_118780.c": "95bc9daf685de8ba42b3592cf6a2d11caf2d890d34d33c256fbfdb296ba9eac1",
     "src/objects/apply_resource_37d534.c": "2d66045796ab86c4e6d131caeb6d4742e67619c88bd4254ee4d3a8b0808d21a8",
     "src/objects/apply_resource_3827d8.c": "67b1e3c603cd9821486b558c231ae5380a3e663a8af0a510bc6312e863a461fb",
@@ -1544,6 +1546,17 @@
       "off",
       "-O2"
     ],
+    "apply_object_velocity": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_455ac": [
       "-proc",
       "SH4",
@@ -2407,6 +2420,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4139336,
+  "source_only_rejected_retained_bytes": 4139224,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

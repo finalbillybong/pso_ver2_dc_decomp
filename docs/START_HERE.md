@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **210 exact functions in 194 modules**, replacing
-**23,576 bytes** of the 4,162,912-byte decoded executable (**0.5663% image coverage**).
-It retains **4,139,336 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **211 exact functions in 195 modules**, replacing
+**23,688 bytes** of the 4,162,912-byte decoded executable (**0.5690% image coverage**).
+It retains **4,139,224 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 55
+## Latest batch: stage 56
 
-Movement capture and capped segment query add two functions and 312 bytes.
-All 208 prior matches, module definitions and source/header hashes are preserved.
-Since the initial checkpoint, 176 functions replace 19,932 bytes. All 20 trials
-are retained with no compiler/linker rejections. A separately matched turning
-helper was excluded as an existing module before mutation; it receives no duplicate
-credit. The next movement routine remains 328/34. Both original primary targets
-remain unresolved. Matrix data and several callees remain reference dependencies.
+Object velocity application adds one function and 112 bytes. All 210 prior
+matches, module definitions and source/header hashes are preserved. Since the
+initial checkpoint, 177 functions replace 20,044 bytes. All 68 trials are retained
+with no compiler/linker rejections. Neighboring velocity setters remain 240/20
+and 120/29; the complete C++ motion wrapper improves to 512/22. None receives
+matching credit. Both original primary targets remain unresolved. Vector addition
+and the movement callee remain reference dependencies.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only
