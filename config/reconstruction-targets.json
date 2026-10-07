@@ -5491,6 +5491,226 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literal pools/alignment; empty entry independently referenced at0x8c27e4ac. Final source exact twice; reconstruction-stage61.",
       "status": "matched",
       "reason": "Complete checked controller lifecycle/dispatch entry or context-mode query; retained base/update callees and static tables receive no source credit."
+    },
+    {
+      "id": "update_effect_controller_one",
+      "source": "src/effects/update_controller_one.c",
+      "address": "0x8c24e95c",
+      "entry": "_update_effect_controller_one",
+      "ranges": [
+        {
+          "offset": 2353500,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_effect_controller_one",
+          "address": "0x8c24e95c",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "53270f2fd087bce9b6895c30f0a8293aae1c261eab41f5b9aa617ea78d84e142",
+      "headers": [
+        "src/include/effect_controller.h",
+        "src/include/controller_flags.h"
+      ],
+      "symbols": {
+        "_construct_b_at": "0x8c24ed04",
+        "_display_at": "0x8c244014"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and compiler alignment; final checked source exact twice; reconstruction-stage62.",
+      "status": "matched",
+      "reason": "Complete controller timeline or child lifecycle/tick routine; static data and unresolved display/base dependencies receive no source credit."
+    },
+    {
+      "id": "update_effect_controller_zero",
+      "source": "src/effects/update_controller_zero.c",
+      "address": "0x8c24e79c",
+      "entry": "_update_effect_controller_zero",
+      "ranges": [
+        {
+          "offset": 2353052,
+          "size": 448
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_effect_controller_zero",
+          "address": "0x8c24e79c",
+          "size": 448
+        }
+      ],
+      "reference_sha256": "1a6daabf5299dede3599cc25df90b7805e0a599def21822e5683602939503637",
+      "headers": [
+        "src/include/effect_controller.h",
+        "src/include/controller_flags.h"
+      ],
+      "symbols": {
+        "_construct_a_at": "0x8c24e9c0",
+        "_construct_b_at": "0x8c24ed04",
+        "_emit_at": "0x8c05fbf8",
+        "_notice_at": "0x8c0a77e8"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and compiler alignment; final checked source exact twice; reconstruction-stage62.",
+      "status": "matched",
+      "reason": "Complete controller timeline or child lifecycle/tick routine; static data and unresolved display/base dependencies receive no source credit."
+    },
+    {
+      "id": "construct_controller_child_a",
+      "source": "src/effects/construct_controller_child_a.c",
+      "address": "0x8c24e9c0",
+      "entry": "_construct_controller_child_a",
+      "ranges": [
+        {
+          "offset": 2353600,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_controller_child_a",
+          "address": "0x8c24e9c0",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "f4d43f8edbac9daf553a560ace64c632610c296b87819f134c1565939a9d0e2d",
+      "headers": [
+        "src/include/controller_child.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and compiler alignment; final checked source exact twice; reconstruction-stage62.",
+      "status": "matched",
+      "reason": "Complete controller timeline or child lifecycle/tick routine; static data and unresolved display/base dependencies receive no source credit."
+    },
+    {
+      "id": "destroy_controller_child_a",
+      "source": "src/effects/destroy_controller_child_a.c",
+      "address": "0x8c24ea2c",
+      "entry": "_destroy_controller_child_a",
+      "ranges": [
+        {
+          "offset": 2353708,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_controller_child_a",
+          "address": "0x8c24ea2c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "14b265d5034d261dd603cec7a6c7d2edc7fe95350106d43076fa9dc7b4755fd5",
+      "headers": [
+        "src/include/controller_child.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and compiler alignment; final checked source exact twice; reconstruction-stage62.",
+      "status": "matched",
+      "reason": "Complete controller timeline or child lifecycle/tick routine; static data and unresolved display/base dependencies receive no source credit."
+    },
+    {
+      "id": "update_controller_child_a",
+      "source": "src/effects/update_controller_child_a.c",
+      "address": "0x8c24ea70",
+      "entry": "_update_controller_child_a",
+      "ranges": [
+        {
+          "offset": 2353776,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_controller_child_a",
+          "address": "0x8c24ea70",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "dde2c4951fed487f85b414f28b82ff86ef5deb4813ae0bc1e751e5545d515a15",
+      "headers": [
+        "src/include/controller_child.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and compiler alignment; final checked source exact twice; reconstruction-stage62.",
+      "status": "matched",
+      "reason": "Complete controller timeline or child lifecycle/tick routine; static data and unresolved display/base dependencies receive no source credit."
+    },
+    {
+      "id": "construct_controller_child_b",
+      "source": "src/effects/construct_controller_child_b.c",
+      "address": "0x8c24ed04",
+      "entry": "_construct_controller_child_b",
+      "ranges": [
+        {
+          "offset": 2354436,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_controller_child_b",
+          "address": "0x8c24ed04",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "35c8c0c8d5ce43e7685b910b36f9771ef7bcb4284cc4faeeb5c08089169cf2b4",
+      "headers": [
+        "src/include/controller_child.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and compiler alignment; final checked source exact twice; reconstruction-stage62.",
+      "status": "matched",
+      "reason": "Complete controller timeline or child lifecycle/tick routine; static data and unresolved display/base dependencies receive no source credit."
+    },
+    {
+      "id": "destroy_controller_child_b",
+      "source": "src/effects/destroy_controller_child_b.c",
+      "address": "0x8c24ed70",
+      "entry": "_destroy_controller_child_b",
+      "ranges": [
+        {
+          "offset": 2354544,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_controller_child_b",
+          "address": "0x8c24ed70",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "1b446082c25ed2bbf11a09cd40212a16fc0c0fa242ceaf36c790a87264dad456",
+      "headers": [
+        "src/include/controller_child.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and compiler alignment; final checked source exact twice; reconstruction-stage62.",
+      "status": "matched",
+      "reason": "Complete controller timeline or child lifecycle/tick routine; static data and unresolved display/base dependencies receive no source credit."
+    },
+    {
+      "id": "update_controller_child_b",
+      "source": "src/effects/update_controller_child_b.c",
+      "address": "0x8c24edb4",
+      "entry": "_update_controller_child_b",
+      "ranges": [
+        {
+          "offset": 2354612,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_controller_child_b",
+          "address": "0x8c24edb4",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "dde2c4951fed487f85b414f28b82ff86ef5deb4813ae0bc1e751e5545d515a15",
+      "headers": [
+        "src/include/controller_child.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and compiler alignment; final checked source exact twice; reconstruction-stage62.",
+      "status": "matched",
+      "reason": "Complete controller timeline or child lifecycle/tick routine; static data and unresolved display/base dependencies receive no source credit."
     }
   ]
 }

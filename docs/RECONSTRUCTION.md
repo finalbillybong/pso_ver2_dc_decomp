@@ -3190,3 +3190,52 @@ manager initialization **280/8**, and the signed-remainder helper remains
 unresolved. The primary batch is still incomplete; supporting matches do not
 replace its acceptance criteria. The public README's stale function/module
 counts are also corrected to the verified manifest totals.
+
+
+## Controller timelines and child lifecycle, stage 62
+
+Eight complete ordinary-C functions add **972 bytes**: controller mode-zero
+and mode-one timelines at **0x8c24e79c** (448) and **0x8c24e95c** (100), child-A
+construction/destruction/update at **0x8c24e9c0** (108), **0x8c24ea2c** (68),
+**0x8c24ea70** (36), and corresponding child-B routines at **0x8c24ed04** (108),
+**0x8c24ed70** (68), **0x8c24edb4** (36). Totals are **245 functions / 225
+modules / 25,948 compiled full-range bytes / 4,136,964 retained reference bytes**,
+or **0.6233% whole-image coverage**. All 237 prior matches, module definitions
+and source/header hashes remain unchanged. Since the initial checkpoint, 211
+functions replace 22,304 bytes. Code-only completion remains unknown; separately
+reconstructed static data remains zero.
+
+Mode zero preserves all eight timed cases. At ticks 0/30/60/90/120 it attempts
+52-byte child allocations with values 5/4/3/2/1 and emits kind 0x40010 even when
+allocation fails. Tick 150 attempts the other child type, tick 160 makes the two
+observed text calls, and tick 180 sets flag bit zero. Mode one attempts its child
+and displays text at tick zero, then sets that flag at tick 30. Literal addresses,
+text offsets and signed tick comparisons remain as observed. Starting the text
+base lifetime after the prior call removes an extra saved register. A checked
+halfword field at offset four permits the exact displacement access. Direct
+external call declarations resolve the remaining literal/call scheduling; neither
+compiler nor optimization settings change.
+
+ControllerFlags is a separately checked header view, preserving the existing
+controller header unchanged. ControllerChild checks the common observed 52-byte
+prefix, including coordinates at 32/36, rate at 40, value at 44 and ticks at 48.
+Both constructors preserve their base calls, distinct dispatch/tag globals, two
+coordinate copies, negative reciprocal rate and zero ticks. Both destructors
+preserve nullable objects and signed short release tests. Updates increment and
+reload ticks, convert to float and set the flag unless the result is below 30.
+No static table or string bytes receive source credit. Names remain provisional.
+
+All **34 trials** retain sources, hypotheses, compiler receipts and comparisons
+in `reconstruction-stage62`; none were compiler/linker rejections. Final readable
+sources and declared checked headers match independently twice. Two fresh exact
+builds, integrated-image comparison, five-function proof and all **53 research
+tests** pass; the public suite remains **58 tests**. Source-only rejects 4,136,964
+retained bytes without changing artifacts. Focused exports are regenerated after
+manifest/queue changes on a disposable copy and checked against current inputs;
+the original database remains unchanged. Full-range comparison includes natural
+alignment and all literal pools. Child rendering and parameter helpers are next.
+
+Original operation/emission remain **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and the signed-remainder helper remains
+unresolved. The primary batch is still incomplete; supporting matches do not
+replace its acceptance criteria.
