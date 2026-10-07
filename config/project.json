@@ -459,6 +459,180 @@
       "boundary_review": "Raw little-endian SH4: entry0x8c0336c8, return delay0x8c033722, six literal words0x8c033724..0x8c03373c, adjacent entry0x8c03373c. Complete fixed-C match independently twice; see reconstruction-stage28."
     },
     {
+      "id": "time_hierarchy_update",
+      "source": "src/objects/time_hierarchy_update.c",
+      "address": "0x8c03373c",
+      "entry": "_time_hierarchy_update",
+      "headers": [
+        "src/include/hierarchy.h",
+        "src/include/timed_hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 145212,
+          "size": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "time_hierarchy_update",
+          "address": "0x8c03373c",
+          "size": 144
+        }
+      ],
+      "reference_sha256": "5a447ee503d876f4f47ac8f532add418399c12dae82d3d5c85b934c3a6779b23",
+      "symbols": {
+        "_root_object": "0x8c44bec8"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c03373c, return delay0x8c0337ac, padding0x8c0337ae, seven literal words0x8c0337b0..0x8c0337cc; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage29."
+    },
+    {
+      "id": "time_hierarchy_visit",
+      "source": "src/objects/time_hierarchy_visit.c",
+      "address": "0x8c0337cc",
+      "entry": "_time_hierarchy_visit",
+      "headers": [
+        "src/include/hierarchy.h",
+        "src/include/timed_hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 145356,
+          "size": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "time_hierarchy_visit",
+          "address": "0x8c0337cc",
+          "size": 144
+        }
+      ],
+      "reference_sha256": "9dad4656a841d2fd57104e9b4463750290affaab7ffe778986b7b37734cc0e77",
+      "symbols": {
+        "_root_object": "0x8c44bec8"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c0337cc, return delay0x8c03383c, padding0x8c03383e, seven literal words0x8c033840..0x8c03385c; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage29."
+    },
+    {
+      "id": "hierarchy_output_cycle",
+      "source": "src/objects/hierarchy_output_cycle.c",
+      "address": "0x8c03385c",
+      "entry": "_hierarchy_output_cycle",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 145500,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "hierarchy_output_cycle",
+          "address": "0x8c03385c",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "0a4a776135ca68f844ec78e39669171619f05b9f1bf775f51714924406e7688c",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c03385c, return delay0x8c03386e, two literal words0x8c033870..0x8c033878; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage29."
+    },
+    {
+      "id": "clear_hierarchy_groups",
+      "source": "src/objects/clear_hierarchy_groups.c",
+      "address": "0x8c033878",
+      "entry": "_clear_hierarchy_groups",
+      "headers": [
+        "src/include/hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 145528,
+          "size": 264
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_hierarchy_groups",
+          "address": "0x8c033878",
+          "size": 264
+        }
+      ],
+      "reference_sha256": "c78b43787b673867a96d1e9735ec5ce64e06461fc7edf9af970345714b6005e8",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: entry0x8c033878, return delay0x8c033958, padding0x8c03395a, nine literal words0x8c03395c..0x8c033980; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage29."
+    },
+    {
+      "id": "clear_group_flag_08",
+      "source": "src/objects/clear_group_flag_08.c",
+      "address": "0x8c033980",
+      "entry": "_clear_group_flag_08",
+      "headers": [
+        "src/include/hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 145792,
+          "size": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_group_flag_08",
+          "address": "0x8c033980",
+          "size": 144
+        }
+      ],
+      "reference_sha256": "a14ea719770d1ddd15866b3b089b7e9d848ca6d2bdb26736e247918df0d214c1",
+      "symbols": {
+        "_group_1": "0x8c44be84",
+        "_group_2": "0x8c44be88",
+        "_group_3": "0x8c44be8c",
+        "_group_4": "0x8c44be90",
+        "_group_5": "0x8c44be94",
+        "_group_6": "0x8c44be98",
+        "_group_7": "0x8c44be9c",
+        "_group_8": "0x8c44bea0",
+        "_group_9": "0x8c44bea4"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c033980, return delay0x8c0339e8, padding0x8c0339ea, nine literal words0x8c0339ec..0x8c033a10; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage29."
+    },
+    {
+      "id": "toggle_group_flag_08",
+      "source": "src/objects/toggle_group_flag_08.c",
+      "address": "0x8c033a10",
+      "entry": "_toggle_group_flag_08",
+      "headers": [
+        "src/include/hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 145936,
+          "size": 136
+        }
+      ],
+      "functions": [
+        {
+          "name": "toggle_group_flag_08",
+          "address": "0x8c033a10",
+          "size": 136
+        }
+      ],
+      "reference_sha256": "c6a01bdad6a7c4698ef2b4e7527443f4b93f4d4949d8d867635d0fa6f1cb064e",
+      "symbols": {
+        "_group_1": "0x8c44be84",
+        "_group_2": "0x8c44be88",
+        "_group_3": "0x8c44be8c",
+        "_group_4": "0x8c44be90",
+        "_group_5": "0x8c44be94",
+        "_group_6": "0x8c44be98",
+        "_group_7": "0x8c44be9c",
+        "_group_8": "0x8c44bea0",
+        "_group_9": "0x8c44bea4"
+      },
+      "boundary_review": "Raw little-endian SH4: entry0x8c033a10, return delay0x8c033a72, nine literal words0x8c033a74..0x8c033a98; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage29."
+    },
+    {
       "id": "distance_xz",
       "address": "0x8c03f0a0",
       "source": "src/samples/distance_xz.c",

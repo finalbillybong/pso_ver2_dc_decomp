@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **80 exact functions in 69 modules**, replacing
-9,544 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **86 exact functions in 75 modules**, replacing
+10,404 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -188,7 +188,7 @@ source-only rejects gaps. Both original primary targets remain incomplete.
 See RECONSTRUCTION.md for the successful and failed source hypotheses.
 
 
-## Latest verified checkpoint: stage 28
+## Stage 28 checkpoint
 
 Root initialization, destruction and output forwarding add three exact C
 functions and 688 bytes. Totals are 80 functions, 69 modules, 9,544 compiled bytes
@@ -196,3 +196,13 @@ and 4,153,368 retained bytes. All previous matching sources and headers are
 preserved. Two fresh exact builds, full-image comparison, five-function proof and
 all 43 original tests pass; source-only rejects gaps. Both original primary
 targets remain incomplete. See RECONSTRUCTION.md for 49 trials and next work.
+
+
+## Latest verified checkpoint: stage 29
+
+Six timed hierarchy/group operations add 860 exact C bytes. Totals are 86
+functions, 75 modules, 10,404 compiled bytes and 4,152,508 retained bytes.
+All prior matching sources and headers are preserved. Two fresh exact builds,
+full-image comparison, five-function proof and all 43 original tests pass;
+source-only rejects gaps. Both original primary targets remain incomplete.
+See RECONSTRUCTION.md for the 47 trials and continuing source hypotheses.

@@ -1306,3 +1306,44 @@ database is unchanged. Two fresh exact builds, full-image comparison, the
 five-function proof and all 43 original tests pass. Source-only rejects 4,153,368
 retained bytes without changing artifacts. Continue the shared call/angle
 scheduling investigation and the observed hierarchy and vector dependencies.
+
+
+## Timed hierarchy and group operations, stage 29
+
+Six complete ordinary-C functions add **860 bytes**: timed update at `0x8c03373c`
+(144), timed visit at `0x8c0337cc` (144), output cycle at `0x8c03385c` (28), group
+child cleanup at `0x8c033878` (264), clearing group flag 8 at `0x8c033980` (144),
+and toggling group flag 8 at `0x8c033a10` (136). Totals are **86 functions /
+75 modules / 10,404 compiled range bytes / 4,152,508 retained reference bytes**.
+All 80 prior functions, sources and headers are preserved. Since the original
+34-function checkpoint, 52 supporting functions replace 6,760 bytes.
+
+Both timed wrappers compare a current and prior mask, update child flags in the
+observed chain, run the appropriate traversal and store a converted elapsed time
+as a short field. The provisional timing view checks both result offsets and its
+embedded hierarchy base. The timer reader is confirmed to load the hardware
+counter and subtract it from all ones; the elapsed helper subtracts its first
+argument from its second. The conversion remains an external call. Declaring the
+global root object preserves its base-plus-20 addressing; a distinct clear-mask
+temporary reproduces the register allocation. Both initial 144/16 candidates
+then match completely. Reordering mask/child declarations alone does not suffice.
+
+The cleanup and flag operations explicitly address groups 1 through 9, preserving
+the omitted group 0, link reloads and individual flag updates. Clear and toggle
+forms match with either literal globals or external declarations; external names
+are admitted for the flag functions. A named toggle mask emits 144 instead of
+136 bytes and is rejected. The output cycle preserves both calls and its return.
+All return delays, address literals and alignment match independently twice.
+
+Nine inline emission-scan trials combine the corrected field scopes with earlier
+helper hypotheses. All emit 400 instead of 388 bytes and do not improve the
+primary candidate. The 47 scratch trials, hypotheses and compiler/comparison
+receipts are retained in `reconstruction-stage29`. Primary acceptance remains
+incomplete: operation 512/46, emission 388/8 and related emission/reuse 448/4.
+Exact C++ visitor diagnostics remain unadmitted under the C-only requirement.
+
+Focused evidence is `function-dossiers/run-0vmhgt6_/receipt.json`; the original
+database is unchanged. Two fresh exact builds, full-image comparison, the
+five-function proof and all 43 original tests pass. Source-only rejects 4,152,508
+retained bytes without changing artifacts. Continue source-level call/angle
+scheduling work and the observed hierarchy, effect and vector dependencies.
