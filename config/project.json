@@ -417,6 +417,30 @@
       ]
     },
     {
+      "id": "current_effect_mode",
+      "source": "src/effects/current_mode.c",
+      "address": "0x8c032b10",
+      "entry": "_current_effect_mode",
+      "ranges": [
+        {
+          "offset": 142096,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "current_effect_mode",
+          "address": "0x8c032b10",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "7150fceee14f8c3c08541f822e541daa298d4335c77478afef96a7da3b453dd1",
+      "headers": [
+        "src/include/context_mode_record.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools/alignment; empty entry independently referenced at0x8c27e4ac. Final source exact twice; reconstruction-stage61."
+    },
+    {
       "id": "initialize_hierarchy_node",
       "source": "src/objects/initialize_hierarchy_node.c",
       "address": "0x8c0330e4",
@@ -5544,6 +5568,99 @@
       ],
       "reference_sha256": "33c8b7380f355e6d7939e1480d1eac5e4f598cda136896047fa387ee97797a50",
       "boundary_review": "Raw SH4 entry through adjacent entry, including literals/alignment. Link functions combined in original order for natural alignment; no padding inserted. Final source exact twice; reconstruction-stage60."
+    },
+    {
+      "id": "construct_effect_controller",
+      "source": "src/effects/construct_controller.c",
+      "address": "0x8c24e6d8",
+      "entry": "_construct_effect_controller",
+      "ranges": [
+        {
+          "offset": 2352856,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_effect_controller",
+          "address": "0x8c24e6d8",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "cc92e47f97bc8dca66a777c7230bb41ac74999850cd8698513c19a5e9af7577c",
+      "headers": [
+        "src/include/effect_controller.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools/alignment; empty entry independently referenced at0x8c27e4ac. Final source exact twice; reconstruction-stage61."
+    },
+    {
+      "id": "destroy_effect_controller",
+      "source": "src/effects/destroy_controller.c",
+      "address": "0x8c24e714",
+      "entry": "_destroy_effect_controller",
+      "ranges": [
+        {
+          "offset": 2352916,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_controller",
+          "address": "0x8c24e714",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "fcfe4d8c1c6a4ccb3359a39185548394400b3e62311c25c2f345ace0607d95f5",
+      "headers": [
+        "src/include/effect_controller.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools/alignment; empty entry independently referenced at0x8c27e4ac. Final source exact twice; reconstruction-stage61."
+    },
+    {
+      "id": "update_effect_controller",
+      "source": "src/effects/update_controller.c",
+      "address": "0x8c24e758",
+      "entry": "_update_effect_controller",
+      "ranges": [
+        {
+          "offset": 2352984,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_effect_controller",
+          "address": "0x8c24e758",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "e71a63d464f4a02997bfc69c6ce6eced6fa8ee261c31c9af087a82ff5f10398f",
+      "headers": [
+        "src/include/effect_controller.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools/alignment; empty entry independently referenced at0x8c27e4ac. Final source exact twice; reconstruction-stage61."
+    },
+    {
+      "id": "operation_24e798",
+      "source": "src/effects/operation_24e798.c",
+      "address": "0x8c24e798",
+      "entry": "_operation_24e798",
+      "ranges": [
+        {
+          "offset": 2353048,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_24e798",
+          "address": "0x8c24e798",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools/alignment; empty entry independently referenced at0x8c27e4ac. Final source exact twice; reconstruction-stage61."
     }
   ]
 }

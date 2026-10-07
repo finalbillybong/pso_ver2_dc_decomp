@@ -3144,3 +3144,49 @@ full-range rules are unchanged. Original operation/emission remain **512/30 and
 388/8**, related reuse **448/4**, manager initialization **280/8**, and the
 signed-remainder helper remains unresolved. The primary batch is still incomplete;
 these supporting matches do not replace its acceptance criteria.
+
+
+## Controller lifecycle, dispatch and mode query, stage 61
+
+Five complete ordinary-C functions in five modules add **240 bytes**: controller
+construction at **0x8c24e6d8** (60), destruction at **0x8c24e714** (68), update
+dispatch at **0x8c24e758** (64), current-mode query at **0x8c032b10** (44), and
+the referenced empty entry at **0x8c24e798** (4). Totals are **237 functions /
+217 modules / 24,976 compiled full-range bytes / 4,137,936 retained reference
+bytes**, or **0.6000% whole-image coverage**. All 232 prior matches, module
+definitions and source/header hashes remain unchanged. Since the initial
+checkpoint, 203 functions replace 21,332 bytes. Code-only completion remains
+unknown; separately reconstructed static data remains zero.
+
+EffectController checks its observed 40-byte prefix: tag at zero, dispatch at
+24, unsigned short size at 30, mode byte at 32 and signed ticks at 36. Construction
+preserves the base call, static dispatch/tag dependencies, size, incoming mode
+and zero tick count. Destruction preserves the nullable object, dispatch reset,
+base destructor and signed short release test. The dispatcher calls one of two
+retained timeline routines for modes zero/one and increments ticks for every
+mode. A full-width unsigned local produces the reference's two byte extensions;
+an explicit byte switch cast produces an extra extension and four extra bytes.
+
+The mode query preserves the enabled global, index global and first word of the
+12-byte record table. ContextModeRecord checks that stride and field offset.
+Using a common result variable with one final return reproduces the return delay
+slot; early returns differ in five bytes. The query name is provisional: its
+wider context-table role remains unknown. The empty entry has an independent
+static reference at 0x8c27e4ac, recorded in private evidence. It is not credited
+as arbitrary padding. Every final readable source matches independently twice.
+
+All **23 trials** retain sources, hypotheses, compiler receipts and comparisons
+in `reconstruction-stage61`; none were compiler/linker rejections. Two fresh
+exact builds, integrated-image comparison, five-function proof and all **53
+research tests** pass; the public suite remains **58 tests**. Source-only rejects
+4,137,936 retained bytes without changing artifacts. Focused exports are
+regenerated after manifest/queue changes on a disposable copy and checked against
+current inputs; the original database remains unchanged. Compiler binary, base
+flags, default linker and full-range rules are unchanged. Both timeline routines
+remain retained dependencies and are the next controller targets.
+
+Original operation/emission remain **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and the signed-remainder helper remains
+unresolved. The primary batch is still incomplete; supporting matches do not
+replace its acceptance criteria. The public README's stale function/module
+counts are also corrected to the verified manifest totals.
