@@ -2522,6 +2522,236 @@
       "boundary_review": "Raw little-endian SH4 complete entry ranges through adjacent entry; final sources match independently twice. Configuration/clear has natural compiler alignment between entries; reconstruction-stage51."
     },
     {
+      "id": "construct_float_field",
+      "source": "src/ui/construct_float_field.c",
+      "address": "0x8c04316c",
+      "entry": "_construct_float_field",
+      "ranges": [
+        {
+          "offset": 209260,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_float_field",
+          "address": "0x8c04316c",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "4c4030f95a5aee6a36f1fb44876d405ac0607f39dc0bb5d6fd2e6fd0b962cee0",
+      "headers": [
+        "src/include/float_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry ranges through following entry, including literals and alignment. Cursor/adjustment module preserves natural interfunction alignment. Final sources independently exact twice; reconstruction-stage52."
+    },
+    {
+      "id": "destroy_float_field",
+      "source": "src/ui/destroy_float_field.c",
+      "address": "0x8c043198",
+      "entry": "_destroy_float_field",
+      "ranges": [
+        {
+          "offset": 209304,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_float_field",
+          "address": "0x8c043198",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "60e76336ca49fd8677a8e4a54f95efc7a5114f3565b9f5b8ad3ed456066e0829",
+      "headers": [
+        "src/include/float_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry ranges through following entry, including literals and alignment. Cursor/adjustment module preserves natural interfunction alignment. Final sources independently exact twice; reconstruction-stage52."
+    },
+    {
+      "id": "configure_float_field",
+      "source": "src/ui/configure_float_field.c",
+      "address": "0x8c0431d4",
+      "entry": "_configure_float_field",
+      "ranges": [
+        {
+          "offset": 209364,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_float_field",
+          "address": "0x8c0431d4",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "123d1336cfb1c73347dc4e4bedb61680a2bf5f505ead54b350a374b3b7849ffd",
+      "symbols": {
+        "_format_at": "0x8c12b048"
+      },
+      "headers": [
+        "src/include/float_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry ranges through following entry, including literals and alignment. Cursor/adjustment module preserves natural interfunction alignment. Final sources independently exact twice; reconstruction-stage52."
+    },
+    {
+      "id": "clear_float_field",
+      "source": "src/ui/clear_float_field.c",
+      "address": "0x8c04323c",
+      "entry": "_clear_float_field",
+      "ranges": [
+        {
+          "offset": 209468,
+          "size": 8
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_float_field",
+          "address": "0x8c04323c",
+          "size": 8
+        }
+      ],
+      "reference_sha256": "5062f0d8f99c2e252c82d07d0a49111a2afa7210698aff7e4a584cc134261020",
+      "headers": [
+        "src/include/float_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry ranges through following entry, including literals and alignment. Cursor/adjustment module preserves natural interfunction alignment. Final sources independently exact twice; reconstruction-stage52."
+    },
+    {
+      "id": "move_and_adjust_float_field",
+      "source": "src/ui/move_and_adjust_float_field.c",
+      "address": "0x8c043244",
+      "entry": "_move_float_field_cursor",
+      "ranges": [
+        {
+          "offset": 209476,
+          "size": 148
+        }
+      ],
+      "functions": [
+        {
+          "name": "move_float_field_cursor",
+          "address": "0x8c043244",
+          "size": 60
+        },
+        {
+          "name": "adjust_float_field",
+          "address": "0x8c043280",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "a6d07ef48987adda8ee5e2044dc2762a1d5919a91650361ca17967623d2e44c8",
+      "headers": [
+        "src/include/float_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry ranges through following entry, including literals and alignment. Cursor/adjustment module preserves natural interfunction alignment. Final sources independently exact twice; reconstruction-stage52."
+    },
+    {
+      "id": "draw_float_field",
+      "source": "src/ui/draw_float_field.c",
+      "address": "0x8c0432d8",
+      "entry": "_draw_float_field",
+      "ranges": [
+        {
+          "offset": 209624,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_float_field",
+          "address": "0x8c0432d8",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "9dc946a546962854cfaa453f2f00b0e6a0a774ff9a6e36e9f7986c45cc720693",
+      "symbols": {
+        "_draw_at": "0x8c38cf80"
+      },
+      "headers": [
+        "src/include/float_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry ranges through following entry, including literals and alignment. Cursor/adjustment module preserves natural interfunction alignment. Final sources independently exact twice; reconstruction-stage52."
+    },
+    {
+      "id": "highlight_float_field",
+      "source": "src/ui/highlight_float_field.c",
+      "address": "0x8c043314",
+      "entry": "_highlight_float_field",
+      "ranges": [
+        {
+          "offset": 209684,
+          "size": 196
+        }
+      ],
+      "functions": [
+        {
+          "name": "highlight_float_field",
+          "address": "0x8c043314",
+          "size": 196
+        }
+      ],
+      "reference_sha256": "c407e8acc60002c0c6c89b1295b8571cd4dfa4ca9b92e6bfa201fc0571190299",
+      "symbols": {
+        "_format_at": "0x8c12b048"
+      },
+      "headers": [
+        "src/include/float_field.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry ranges through following entry, including literals and alignment. Cursor/adjustment module preserves natural interfunction alignment. Final sources independently exact twice; reconstruction-stage52."
+    },
+    {
+      "id": "construct_field_base",
+      "source": "src/ui/construct_field_base.c",
+      "address": "0x8c0433d8",
+      "entry": "_construct_field_base",
+      "ranges": [
+        {
+          "offset": 209880,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_field_base",
+          "address": "0x8c0433d8",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "fb8d93244c895c6a3659f225af8abdc266da50ec043c0c51a2c643045a9d4c33",
+      "headers": [
+        "src/include/field_base.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry ranges through following entry, including literals and alignment. Cursor/adjustment module preserves natural interfunction alignment. Final sources independently exact twice; reconstruction-stage52."
+    },
+    {
+      "id": "destroy_field_base",
+      "source": "src/ui/destroy_field_base.c",
+      "address": "0x8c0433ec",
+      "entry": "_destroy_field_base",
+      "ranges": [
+        {
+          "offset": 209900,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_base",
+          "address": "0x8c0433ec",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "e846967f2a368d38b59a9980d365dccb0750bb1e2c5cc2df622a2f76afb38a5f",
+      "headers": [
+        "src/include/field_base.h"
+      ],
+      "boundary_review": "Raw little-endian SH4 entry ranges through following entry, including literals and alignment. Cursor/adjustment module preserves natural interfunction alignment. Final sources independently exact twice; reconstruction-stage52."
+    },
+    {
       "id": "operation_43fb4",
       "source": "src/objects/operation_43fb4.c",
       "address": "0x8c043fb4",

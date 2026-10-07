@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **192 exact functions in 177 modules**, replacing
-**21,960 bytes** of the 4,162,912-byte decoded executable (**0.5275% image coverage**).
-It retains **4,140,952 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **202 exact functions in 186 modules**, replacing
+**22,644 bytes** of the 4,162,912-byte decoded executable (**0.5439% image coverage**).
+It retains **4,140,268 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 51
+## Latest batch: stage 52
 
-Integer highlighting and hexadecimal field helpers add eight functions in seven
-modules, totaling 460 bytes. Adjacent hexadecimal configuration/clear entries
-share their natural compiler alignment in one module. All 184 previous matches,
-module definitions and source/header hashes are preserved. Since the original
-checkpoint, 158 functions replace 18,316 bytes. All 66 trials are retained with no
-compiler/linker rejections. Hexadecimal highlighting remains 144/8; both original
-primary targets and frame setup remain unresolved.
+Floating-point editors and their common base add ten functions in nine modules,
+totaling 684 bytes. Adjacent cursor/adjustment entries share their natural compiler
+alignment in one module. All 192 previous matches, module definitions and
+source/header hashes are preserved. Since the original checkpoint, 168 functions
+replace 19,000 bytes. All 29 trials are retained with no compiler/linker rejections.
+Both original primary targets, frame setup and hexadecimal highlighting remain
+unresolved. Dispatch tables and format strings are still reference inputs.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

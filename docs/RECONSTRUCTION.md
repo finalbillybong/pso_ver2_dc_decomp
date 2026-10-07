@@ -2643,3 +2643,54 @@ database. Compiler, flags and full-range acceptance rules are unchanged.
 Original primary operation/emission remain **512/30 and 388/8**, related reuse
 **448/4**, manager initialization **280/8**, and scratch frame setup **332/8**.
 The primary batch is still incomplete; supporting matches do not replace it.
+
+
+## Floating-point field editors and common base, stage 52
+
+Ten complete functions in nine ordinary-C modules add **684 bytes**, covering
+**0x8c04316c..0x8c043418**: floating-field construction (44), destruction (60),
+configuration (104), clear (8), cursor movement/adjustment (60+88), drawing (60),
+highlighting (196), and common-base construction/destruction (20+44). Totals are
+**202 functions / 186 modules / 22,644 compiled range bytes / 4,140,268 retained
+reference bytes**, or **0.5439% whole-image coverage**. All 192 previous matches,
+module definitions and source/header hashes are preserved. Since the initial
+34-function checkpoint, 168 functions replace exactly 19,000 bytes. Code-only
+completion remains unknown; separately reconstructed static data remains zero.
+
+The new FloatField header checks the known 40-byte prefix, including its 12-byte
+format buffer, digit counts, display width and value pointer. A separate FieldBase
+header checks the common 12-byte prefix. Neither claims a larger object allocation
+extent, and all previously admitted headers remain unchanged. Base constructors
+and destructors retain their dispatch pointers, zero stores, null checks and
+signed-short positive release tests. This replaces the actual common base
+implementations called by the existing integer and hexadecimal constructors.
+Their dispatch tables and format strings still come from reference data.
+
+Floating configuration preserves whole-digit and fractional-digit clamps, the
+width calculation, variadic format ABI, and precision reload after formatting.
+Cursor movement skips the decimal point in the direction of travel after clamping.
+Adjustment preserves separate power-call branches on either side of the decimal
+point and accumulates the product before the old pointed-to value. Highlighting
+retains the observed 18-byte text buffer plus two-byte character buffer, local
+order, color changes and per-character draws. No extra range checks, reassociation
+or unusual-input repair is introduced.
+
+Nine standalone first candidates match immediately. Cursor movement alone
+produces 58 bytes against its 60-byte complete range. Compiling its adjacent
+adjustment routine in the same source naturally supplies the original alignment
+and matches the full 148-byte two-function module. No bytes are inserted manually,
+no existing range overlaps, and the adjustment function receives no duplicate
+credit. All nine final readable sources independently match twice with declared
+header dependencies, including literal pools and delay slots.
+
+All **29 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage52`, with **no compiler/linker rejections**.
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+**53 original-workspace tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,140,268 retained bytes without altering artifacts. Focused
+exports are refreshed on a disposable database copy; the original database is
+unchanged. Compiler, flags and complete-range acceptance are unchanged.
+Original primary operation/emission remain **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, scratch frame setup **332/8**, and
+hexadecimal highlighting **144/8**. The primary batch remains incomplete;
+supporting matches do not replace its acceptance criteria.
