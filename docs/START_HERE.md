@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **72 exact functions in 61 modules**, replacing
-8,288 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **75 exact functions in 64 modules**, replacing
+8,536 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -146,7 +146,7 @@ constructor to 424/79; neither earns matching-byte credit. See RECONSTRUCTION.md
 for 116 preserved trials, boundaries and continuing hypotheses.
 
 
-## Latest verified checkpoint: stage 24
+## Stage 24 checkpoint
 
 Vector stepping and signed angular delta add 284 exact bytes. Totals are 72
 functions, 61 modules, 8,288 compiled bytes and 4,154,624 retained bytes. All prior
@@ -155,3 +155,14 @@ five-function proof and all 43 original tests pass; source-only rejects gaps.
 Primary results remain 512/46 and 388/8, related emission/reuse 448/4. The new
 spawned-effect update candidate is 536/25 and remains scratch-only. See
 RECONSTRUCTION.md for 59 preserved trials and continuing hypotheses.
+
+
+## Latest verified checkpoint: stage 25
+
+Three shared hierarchy routines add 248 exact bytes. Totals are 75 functions,
+64 modules, 8,536 compiled bytes and 4,154,376 retained bytes. All prior 72 matches,
+sources and headers are preserved. Two fresh exact builds, full-image comparison,
+five-function proof and all 43 original tests pass; source-only rejects gaps.
+Primary results remain 512/46 and 388/8, related emission/reuse 448/4. The effect
+advance candidate improves to 800/51 and remains unadmitted. See RECONSTRUCTION.md
+for 113 trials, corrected color behavior and the continuing hypotheses.

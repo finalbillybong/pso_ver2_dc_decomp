@@ -1090,6 +1090,87 @@
       "boundary_review": "Raw little-endian SH4: Return delay0x8c0c52ee, mask literal0x8c0c52f0; adjacent admitted angle_difference begins0x8c0c52f4. Complete fixed-C match independently twice; see reconstruction-stage24.",
       "status": "matched",
       "reason": "Complete ordinary-C math dependency including literals/alignment. Both original primary candidates remain unresolved."
+    },
+    {
+      "id": "initialize_hierarchy_node",
+      "source": "src/objects/initialize_hierarchy_node.c",
+      "address": "0x8c0330e4",
+      "entry": "_initialize_hierarchy_node",
+      "headers": [
+        "src/include/hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 143588,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_hierarchy_node",
+          "address": "0x8c0330e4",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "d18372c223d9ce67ffdeaeed183f1c871570efe765b522cfeb56c68e0a272030",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Return delay0x8c033116 and dispatch literal0x8c033118; next entry0x8c03311c. Complete fixed-C match independently twice; see reconstruction-stage25.",
+      "status": "matched",
+      "reason": "Complete ordinary-C hierarchy dependency of effect initialization/destruction/update; includes full literals/boundary. Original primary targets remain unresolved."
+    },
+    {
+      "id": "destroy_hierarchy_node",
+      "source": "src/objects/destroy_hierarchy_node.c",
+      "address": "0x8c03311c",
+      "entry": "_destroy_hierarchy_node",
+      "headers": [
+        "src/include/hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 143644,
+          "size": 164
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_hierarchy_node",
+          "address": "0x8c03311c",
+          "size": 164
+        }
+      ],
+      "reference_sha256": "d8d686116a4299bbfe0adf7e01cbe8dd6422784327d6880f25a5454488330029",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Return delay0x8c0331b2 and three literal words0x8c0331b4-0x8c0331c0; next entry0x8c0331c0. Complete fixed-C match independently twice; see reconstruction-stage25.",
+      "status": "matched",
+      "reason": "Complete ordinary-C hierarchy dependency of effect initialization/destruction/update; includes full literals/boundary. Original primary targets remain unresolved."
+    },
+    {
+      "id": "hierarchy_is_active",
+      "source": "src/objects/hierarchy_is_active.c",
+      "address": "0x8c03347c",
+      "entry": "_hierarchy_is_active",
+      "headers": [
+        "src/include/hierarchy.h"
+      ],
+      "ranges": [
+        {
+          "offset": 144508,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "hierarchy_is_active",
+          "address": "0x8c03347c",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "c7b4ae62d315855cece14877a3f8f4c60df419336e0e78522506603a16926f74",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Loop entry0x8c03347c, early return delay0x8c03348c, final return delay0x8c033496; next entry0x8c033498. No literal pool or trailing alignment. Complete fixed-C match independently twice; see reconstruction-stage25.",
+      "status": "matched",
+      "reason": "Complete ordinary-C hierarchy dependency of effect initialization/destruction/update; includes full literals/boundary. Original primary targets remain unresolved."
     }
   ]
 }
