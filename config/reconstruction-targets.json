@@ -3506,6 +3506,108 @@
       "boundary_review": "Raw little-endian SH4. Return delay 0x8c0422c4, zero alignment 0x8c0422c6, three literals 0x8c0422c8..0x8c0422d4. Complete match independently twice; reconstruction-stage45.",
       "status": "matched",
       "reason": "Complete adjacent model/vector/angle helper; original primary candidates remain unresolved."
+    },
+    {
+      "id": "submit_in_vector_frame",
+      "source": "src/math/submit_in_vector_frame.c",
+      "address": "0x8c041f34",
+      "entry": "_submit_in_vector_frame",
+      "ranges": [
+        {
+          "offset": 204596,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "submit_in_vector_frame",
+          "address": "0x8c041f34",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "700e6f256f2cb557998c44a7383b719c7aebbdfd78cd10d2136a391bf6889f04",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c041f5c, zero alignment 0x8c041f5e, four literals 0x8c041f60..0x8c041f70. Complete match independently twice; reconstruction-stage46.",
+      "status": "matched",
+      "reason": "Complete surrounding matrix/vector helper; larger frame setup and primary candidates remain unresolved."
+    },
+    {
+      "id": "transform_in_vector_frame",
+      "source": "src/math/transform_in_vector_frame.c",
+      "address": "0x8c041f70",
+      "entry": "_transform_in_vector_frame",
+      "ranges": [
+        {
+          "offset": 204656,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "transform_in_vector_frame",
+          "address": "0x8c041f70",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "49724d60e7c6c6526befff70012ca3b788764515b87da5fd356e14a1669c7449",
+      "symbols": {},
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c041fae, six literals 0x8c041fb0..0x8c041fc8. Complete match independently twice; reconstruction-stage46.",
+      "status": "matched",
+      "reason": "Complete surrounding matrix/vector helper; larger frame setup and primary candidates remain unresolved."
+    },
+    {
+      "id": "cross_xz_negative",
+      "source": "src/math/cross_xz_negative.c",
+      "address": "0x8c041fc8",
+      "entry": "_cross_xz_negative",
+      "ranges": [
+        {
+          "offset": 204744,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "cross_xz_negative",
+          "address": "0x8c041fc8",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "af79f33726a00e14e4e000f3bcbf1a4a0c8d0fa9e454d1f9e2b299f3ddd91d95",
+      "symbols": {},
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c041fe2; next entry 0x8c041fe4. Complete match independently twice; reconstruction-stage46.",
+      "status": "matched",
+      "reason": "Complete surrounding matrix/vector helper; larger frame setup and primary candidates remain unresolved."
+    },
+    {
+      "id": "rotate_scalar_pair",
+      "source": "src/math/rotate_scalar_pair.c",
+      "address": "0x8c041fe4",
+      "entry": "_rotate_scalar_pair",
+      "ranges": [
+        {
+          "offset": 204772,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "rotate_scalar_pair",
+          "address": "0x8c041fe4",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "ba52729bd5d24e5074621fc4a2569097b95de4353f32e1c86c99dda3a7344092",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c042024, zero alignment 0x8c042026, two literals 0x8c042028..0x8c042030. Complete match independently twice; reconstruction-stage46.",
+      "status": "matched",
+      "reason": "Complete surrounding matrix/vector helper; larger frame setup and primary candidates remain unresolved."
     }
   ]
 }

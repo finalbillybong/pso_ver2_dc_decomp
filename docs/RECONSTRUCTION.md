@@ -2310,3 +2310,63 @@ the original database is unchanged. Primary candidates remain 512/30 and 388/8,
 related reuse 448/4, manager initialization 280/8, manager display 896/9 and the
 new constructor 732/89. Supporting matches do not replace primary acceptance.
 Continue the recorded source/compile/compare loop.
+
+
+## Matrix and vector wrappers, stage 46
+
+Four complete ordinary-C functions add **252 bytes**:
+
+| Function | Complete range | Bytes |
+| --- | --- | ---: |
+| `submit_in_vector_frame` | `0x8c041f34..0x8c041f70` | 60 |
+| `transform_in_vector_frame` | `0x8c041f70..0x8c041fc8` | 88 |
+| `cross_xz_negative` | `0x8c041fc8..0x8c041fe4` | 28 |
+| `rotate_scalar_pair` | `0x8c041fe4..0x8c042030` | 76 |
+
+Totals are **162 functions / 148 modules / 19,748 compiled range bytes /
+4,143,164 retained reference bytes**, or **0.4744% whole-image coverage**.
+All 158 previous matches, module definitions and source/header hashes remain
+unchanged. Since the original 34-function checkpoint, 128 functions replace
+16,104 bytes. Code-only completion remains unknown and separately reconstructed
+static data remains zero. Both original primary targets remain incomplete.
+
+The wrappers retain matrix push/setup/call/pop ordering and the observed previous-
+matrix pointer adjustment of 64 bytes. The cross-product helper preserves its
+floating comparison order. Scalar rotation captures both values before either
+potentially aliased store, matching the neighboring vector rotation. Existing
+Vector3 checks are declared where used; no prior header changes. All four
+baselines match, and final readable sources match twice independently through
+all literals, return delays and alignment.
+
+The larger frame setup at **0x8c041de8..0x8c041f34** is reduced from **332/39** to
+**332/9**, first **0x8c041e3b**. Reversing the two float local declarations fixes
+saved-register assignment; external translation and root declarations fix their
+argument schedules. Only the first sign test and root-result capture differ.
+Comparison spelling, scoped component capture, register hints and an inline
+predicate do not resolve the final nine bytes. Independent sign branches,
+reused angle state, repeated conversions and zero-vector behavior remain as
+observed; this candidate is not admitted.
+
+Primary C++ scalar-wrapper angle experiments produce larger nonmatching output
+and are rejected. C++ default-zero handle arguments leave emission at **388/8**
+and related reuse at **448/4**. The historical effect update is freshly reproduced
+at **536/25**, first **0x8c0aba4f**, with its angle/extent schedule unchanged.
+
+The direct SDK vector subtraction dependency at 0x8c37f6f0 has a complete 28-byte
+range including its final NOP. Ordinary snapshot/component sources produce
+40 bytes, while a postincrement form produces 46. Neither is admitted. Raw matrix
+translation at 0x8c382a40 uses XMTRX/FTRV and floating-bank state; this stage does
+not replace that behavior with scalar code or copied assembly. The adjacent
+436-byte RGB565 cross filter is also unresolved: its baseline produces 380 bytes.
+Byte-return helpers, signed storage, pointer increments and captures do not
+reproduce the retained narrowing operations and pointer lifetimes.
+
+All **49 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage46`; there are **no compiler rejections**.
+Compiler, base flags, default GNU linker and complete-range acceptance are
+unchanged. Two fresh exact builds, integrated-image comparison, five-function
+proof and all **53 original-workspace tests** pass. The public suite remains
+**58 tests**. Source-only rejects 4,143,164 retained bytes without altering existing
+artifacts. Focused exports are refreshed on a disposable copy; the original
+database is unchanged. Supporting matches do not replace primary acceptance.
+Continue the recorded source/compile/compare loop.
