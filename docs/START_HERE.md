@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **146 exact functions in 132 modules**, replacing
-**17,316 bytes** of the 4,162,912-byte decoded executable (**0.4160% image coverage**).
-It retains **4,145,596 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **148 exact functions in 134 modules**, replacing
+**17,912 bytes** of the 4,162,912-byte decoded executable (**0.4303% image coverage**).
+It retains **4,145,000 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,16 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 41
+## Latest batch: stage 42
 
-The complete ordinary-C manager update at `0x8c0a7f90..0x8c0a841c` adds 1,164
-bytes, including its embedded literal pools. Checked cursor addressing, explicit
-preset indexing and scoped comparison values reproduce the reference exactly.
-All 145 previous matches, module definitions and source/header hashes remain
-unchanged. Since the original 34-function checkpoint, 112 functions replace
-13,672 bytes. All 103 trials are retained, including eight corrected linker
-binding failures. The resource copier improves to 372 bytes / 150 differing;
-it remains unadmitted alongside the unchanged original primary targets.
+The C++ member-pointer editor dispatcher at `0x8c0a841c` and C callback at
+`0x8c0a9178` add 596 bytes. The compiler emits the observed member dispatch from
+ordinary C++ syntax; referenced descriptors, metadata and runtime remain reference
+inputs. All 146 previous matches, module definitions and source/header hashes
+remain unchanged. Since the original 34-function checkpoint, 114 functions
+replace 14,268 bytes. All 141 source trials are retained, including nine compiler
+rejections. Other field editors and both primary candidates remain unadmitted.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

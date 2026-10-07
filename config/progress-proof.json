@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "2aca66a7b291288dd520a09ca72bdccc7b687f9a44d7062a090379b979d4c9b8",
+    "config/project.json": "688308b4d6be5adb4c2cab451c78673e90d68f66add8b349bc3a2ae39e8f63f7",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -36,6 +36,8 @@
     "src/effects/destroy_effect_manager.c": "2f538c6c47fb0b3096d28fde758740b76bf4ef5a2c853b09c0989f849406efec",
     "src/effects/destroy_spawn_base.c": "b2dbae7fd2809d3a95f5a89e9985e823069155a3b476989d78d9ab6a1c42cb18",
     "src/effects/destroy_spawn_effect_2.c": "c2ce7debeaf007a07b40aefc9133bdde160220e04207d7afc51ee96fe048145f",
+    "src/effects/edit_effect_manager.cpp": "0cbc4a7c42279d10e86406e62428e53b8a5f2c6c95a63d7b9813b3a4fbe6f68e",
+    "src/effects/edit_manager_fields_9178.c": "3d7e1c3589152093a73079a0923f8da15e93ea8706f8d8c73cde7a3473dc69ab",
     "src/effects/effect_bit0.c": "34062dbd9792d8f272143cfe9152ef36e5c498a6520e2cec62e2033068c9ab41",
     "src/effects/effect_bits_and_words.c": "5ef17c48900533d2d7952e8892fbbe5d84819a58e4b6b4a6e52567bfaf68dd01",
     "src/effects/effect_release_and_create.c": "fd8352da2371d86dc6697cddd8adf2d872f00762309963e2f594836cb959161f",
@@ -1381,6 +1383,30 @@
       "off",
       "-O2"
     ],
+    "edit_effect_manager": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
+    "edit_manager_fields_9178": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "create_effect_manager": [
       "-proc",
       "SH4",
@@ -1648,6 +1674,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4145596,
+  "source_only_rejected_retained_bytes": 4145000,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

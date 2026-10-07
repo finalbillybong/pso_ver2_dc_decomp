@@ -2898,6 +2898,65 @@
       "boundary_review": "Raw SH4 entry 0x8c0a7f90 through next entry 0x8c0a841c: complete1164 bytes include all embedded literal pools, return delay and alignment. Independently matched twice; reconstruction-stage41."
     },
     {
+      "id": "edit_effect_manager",
+      "source": "src/effects/edit_effect_manager.cpp",
+      "language": "c++",
+      "address": "0x8c0a841c",
+      "entry": "_edit_effect_manager",
+      "headers": [
+        "src/include/effect_manager.h",
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 623644,
+          "size": 520
+        }
+      ],
+      "functions": [
+        {
+          "name": "edit_effect_manager",
+          "address": "0x8c0a841c",
+          "size": 520
+        }
+      ],
+      "reference_sha256": "592995b0a2584cab6919609f4cab02a604c89ec6ad10751796b4ab191ed39bd2",
+      "symbols": {
+        "_input_state": "0x8c41cba0",
+        "___ptmf_scall": "0x8c18e6e4"
+      },
+      "boundary_review": "Raw SH4 entry 0x8c0a841c through 0x8c0a8624 includes all literals, return delay and alignment; next entry immediately follows. Independent full matches repeated twice; reconstruction-stage42."
+    },
+    {
+      "id": "edit_manager_fields_9178",
+      "source": "src/effects/edit_manager_fields_9178.c",
+      "address": "0x8c0a9178",
+      "entry": "_edit_manager_fields_9178",
+      "headers": [
+        "src/include/effect_manager.h",
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 627064,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "edit_manager_fields_9178",
+          "address": "0x8c0a9178",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "008ea84be767f82d8d697ad7f8b0583ef02e147036c57dcb0dc902aa047e0340",
+      "symbols": {
+        "_metadata": "0x8c304398",
+        "_int_edit_at": "0x8c0a8b74"
+      },
+      "boundary_review": "Raw SH4 entry 0x8c0a9178 through 0x8c0a91c4 includes all literals, return delay and alignment; next entry immediately follows. Independent full matches repeated twice; reconstruction-stage42."
+    },
+    {
       "id": "create_effect_manager",
       "source": "src/effects/create_effect_manager.c",
       "address": "0x8c0a9510",

@@ -2092,3 +2092,57 @@ bytes without altering built artifacts. Focused exports are regenerated after
 the manifest change on a disposable database copy; original evidence is unchanged.
 Compiler, driver, base flags and default GNU linking are unchanged. Continue the
 source/compile/compare loop from START_HERE.md.
+
+
+## Member-pointer editor dispatch, stage 42
+
+Two complete functions add **596 bytes**: the C++ editor dispatcher at
+**0x8c0a841c..0x8c0a8624** (520 bytes) and ordinary-C callback at
+**0x8c0a9178..0x8c0a91c4** (76 bytes). Totals are **148 functions / 134 modules /
+17,912 compiled range bytes / 4,145,000 retained reference bytes**, or **0.4303%
+whole-image coverage**. All 146 previous matches, module definitions and
+source/header hashes remain unchanged. Since the original 34-function checkpoint,
+114 functions replace 14,268 bytes. Code-only completion remains unknown and
+both original primary targets are incomplete.
+
+The dispatcher first copies a 132-byte reference table to local storage, then
+assigns eleven 12-byte member descriptors from the observed globals. It preserves
+input/key short-circuiting, signed selection wrap, the mode-bit toggle, conditional
+resource application and eleven member invocations. Ordinary C++ pointer-to-member
+syntax emits the observed R0 descriptor / R4 receiver call through the existing
+runtime entry at 0x8c18e6e4. Size and first-field offset assertions check the
+provisional member/table view. Descriptor inspection confirms eleven zero this
+adjustments and negative virtual offsets with direct callback addresses. The
+reference table, descriptors and runtime implementation remain unreconstructed;
+none is copied into source output or credited as source data.
+
+The C callback edits manager field 0x7c with the observed metadata and mode
+difference, converts its updated value and stores it at resource offset 0x14.
+Its existing checked manager/resource views are unchanged. External integer-editor
+declaration resolves call scheduling. Both final readable sources match twice
+independently, including all literals and alignment, using the pinned compiler
+and base flags; only the dispatcher declares C++ and adds `-lang c++`.
+
+Nine adjacent three-field callbacks remain unadmitted. The closest at 0x8c0a8d2c
+has the correct 116-byte size with ten differing bytes, first 0x8c0a8d55. The
+remaining callbacks retain first-call constant/register and argument-lifetime
+differences. External and member declarations, scoped captures, selector locals,
+inline facades and arithmetic/predicate variants do not finish them. Nine `bool`
+formal diagnostics are rejected because this pinned compiler configuration does
+not recognize that built-in type; no flag or compiler change is made.
+
+The final flag editor at 0x8c0a91c4 produces the expected 472 bytes but differs in
+235, first 0x8c0a9284. Its raw reverse loop visits indices six through one and
+skips zero when rebuilding the flag byte. Preserve that observed bound; do not
+silently fix it. Its local seven-value table and all metadata remain reference
+inputs. The 372-byte resource copier retains stage 41's best 150 differing bytes.
+
+All **141 trials**, including **9 compiler rejections**, retain source snapshots,
+hypotheses, available compiler receipts and comparisons in `reconstruction-stage42`.
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+**53 original-workspace tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,145,000 retained bytes without altering existing artifacts.
+Focused exports are refreshed after the manifest change using a disposable
+copy; the original database remains unchanged. Both primary candidates remain
+512/30 and 388/8, related reuse 448/4, and manager initialization 280/8. Supporting
+matches do not satisfy primary acceptance. Continue the recorded iteration loop.
