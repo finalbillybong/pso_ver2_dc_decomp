@@ -685,3 +685,66 @@ Both primary targets remain incomplete at fixed-C 512/46 and 388/18; the scratch
 virtual-call operation remains 512/30. The signed-remainder exceptional ABI blocker
 is unchanged. Supporting matches do not replace the original acceptance criteria.
 No gameplay, repacking, assembly substitution, compiler change, commit or push.
+
+
+## Emission field scopes and two complete callees, stage 16
+
+The emission candidate improves from **388/18 to 388/8**. Keeping the kind
+column inside the loop and the counter column inside its conditional use fixes
+all remaining loop register choices. The only differences are two instruction
+pairs: shift/base-copy scheduling at `8c05fc56/58` (four bytes) and final-call
+argument scheduling at `8c05fd08/0e` (four bytes). The complete range, including
+all literals and padding, remains compared. This candidate is still provisional.
+The operation remains **512/46** in C and **512/30** in the existing scratch C++
+virtual-call diagnostic. Neither primary acceptance criterion is satisfied.
+
+`clear_emit_slots` matches **100 bytes** at `8c0601a8–8c06020c`.
+If the enabled flag is set it calls the two observed reset routines, then always
+scans 54 rows, retaining flag bit 0 and clearing the counter and position fields.
+Each store needs its own field-base scope to reproduce allocation. A row-pointer
+baseline emits only 80 bytes; separately scoped columns produce the exact full
+range. Return/delay slot at `8c0601f6/1f8`, zero word at `8c0601fa` and all four
+literals through `8c06020c` are included. Final readable source with declared
+`emit.h` layout checks matches independently twice.
+
+`prepare_emit_slot` matches **532 bytes** at `8c05ff94–8c0601a8`.
+This direct emission dependency calculates distance-dependent attenuation unless
+flag `0x2000` or absent position/listener selects zero attenuation. Squared X/Z
+distance must compare less than 90000; otherwise the -256 sentinel sets flag
+`0x100` and returns zero. The accepted path clears that flag, adds the row argument
+and one of two observed global adjustments, clips to [-127,127], and stores the
+result at row offset 24. It computes a direction-dependent signed byte at offset
+28, or an alternate scaled position value when the observed flag permits it.
+A nonzero second argument forwards both values to the handle; the function returns
+one. Gain/pan and listener names remain provisional.
+
+Preserve the lower floating clamp as `a > 0 ? a : 0`, including its ordered
+comparison behavior for NaN. No speculative behavior fixes were introduced.
+The new `emit_listener.h` checks observed offsets X=0x90, Z=0x98 and angle=0xac;
+its offset macros are used in source and both it and `emit.h` are declared headers.
+Separately scoped field bases correct a 520-byte first candidate to 532 bytes;
+direct declarations for the distance and direction helpers fix the remaining
+literal/call register choices. The final source matches twice independently.
+Return/delay slot at `8c06012a/12c`, zero word at `8c06012e` and all 30 literals
+at `8c060130–8c0601a8` are included. No static data or SDK code was copied.
+
+Additional hypotheses did not finish the primaries: extended field lifetimes,
+integer address round-trips, comparison forms, scalar factor scopes, angle address
+lifetimes, index decompositions, qualified reads, forwarding argument permutations
+and equivalent loop control flow. Four initial scope trials were rejected for
+C89 declaration placement and rerun with proper blocks. Two wide-argument ABI
+diagnostics require an unresolved `__rt_ultoi64` helper and were rejected; a
+by-value pair adds stack traffic. No such diagnostic types were admitted.
+The signed-remainder dependency remains blocked by its complete 180-byte range
+and exceptional incoming-r0/carry convention; no assembly/runtime substitution.
+
+Current totals: **41 matching functions / 32 modules / 4,572 compiled range
+bytes / 4,158,340 retained reference bytes**. This stage replaces **632 bytes**
+while preserving all prior 39 matches; the continuous work since the original
+34-function checkpoint replaces 928 bytes across seven additional functions.
+Two fresh exact builds, the integrated-image comparison, five-function proof and
+all 43 existing tests pass. Source-only rejects the remaining reference gaps and
+preserves existing build artifacts. The new focused export is
+`function-dossiers/run-wi0p2pe3/receipt.json`; the original database is unchanged.
+The intermediate 40-function export `run-uk1huepw` is retained as historical evidence.
+These supporting matches do not replace either primary target's acceptance gate.

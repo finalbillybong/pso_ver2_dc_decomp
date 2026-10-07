@@ -249,24 +249,31 @@
       ]
     },
     {
-      "id": "clamp_int",
-      "address": "0x8c0c51c8",
-      "source": "src/samples/clamp_int.c",
-      "entry": "_clamp_int",
+      "id": "operation_43fb4",
+      "source": "src/objects/operation_43fb4.c",
+      "address": "0x8c043fb4",
+      "entry": "_operation_43fb4",
+      "headers": [
+        "src/include/spatial.h"
+      ],
       "ranges": [
         {
-          "offset": 741832,
-          "size": 16
+          "offset": 212916,
+          "size": 100
         }
       ],
-      "reference_sha256": "c69927a4bcf8926e1e764b24886c69bfe5034f96e8f4473071d7341d9b0e1257",
       "functions": [
         {
-          "name": "clamp_int",
-          "address": "0x8c0c51c8",
-          "size": 16
+          "name": "operation_43fb4",
+          "address": "0x8c043fb4",
+          "size": 100
         }
-      ]
+      ],
+      "reference_sha256": "7e9b0beb76ec7fd0a6c46d23b55a8511f23803643cd6ee4cafe63525f22ade66",
+      "symbols": {
+        "_angle_difference": "0x8c0c52f4"
+      },
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c043fb4, return delay slot through 0x8c044002, five 4-byte literals at 0x8c044004\u20130x8c044018, next entry 0x8c044018. Full 100-byte fixed-C match with checked SpatialObject angle and Vec3 layout; see reconstruction-stage12."
     },
     {
       "id": "operation_455ac",
@@ -581,6 +588,93 @@
       "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
     },
     {
+      "id": "choose_emit_slot",
+      "source": "src/effects/choose_emit_slot.c",
+      "address": "0x8c05ff3c",
+      "entry": "_choose_emit_slot",
+      "headers": [
+        "src/include/emit.h",
+        "src/include/emit_secondary.h"
+      ],
+      "ranges": [
+        {
+          "offset": 327484,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "choose_emit_slot",
+          "address": "0x8c05ff3c",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "79c74d0f8726212233a0197a7c0642c4c868e36330dfc44591da0f948d9d32de",
+      "symbols": {
+        "_secondary_table": "0x8c467b50",
+        "_emit_slots": "0x8c468138"
+      },
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c05ff3c; return and delay slot at 0x8c05ff82/84; zero alignment word at 0x8c05ff86; literals at 0x8c05ff88/8c/90; adjacent prepare-slot entry starts 0x8c05ff94. Full 88-byte fixed-C match. See reconstruction-stage14."
+    },
+    {
+      "id": "prepare_emit_slot",
+      "source": "src/effects/prepare_emit_slot.c",
+      "address": "0x8c05ff94",
+      "entry": "_prepare_emit_slot",
+      "headers": [
+        "src/include/emit.h",
+        "src/include/emit_listener.h"
+      ],
+      "ranges": [
+        {
+          "offset": 327572,
+          "size": 532
+        }
+      ],
+      "functions": [
+        {
+          "name": "prepare_emit_slot",
+          "address": "0x8c05ff94",
+          "size": 532
+        }
+      ],
+      "reference_sha256": "650ad23e33de4b0bfc46e22f945ce180839f66b6cd037a37c619045c2ae4828c",
+      "symbols": {
+        "_emit_slots": "0x8c468138",
+        "_emit_handles": "0x8c467a78",
+        "_distance_xz_at": "0x8c03f0a0",
+        "_direction_at": "0x8c37eb0c"
+      },
+      "boundary_review": "Raw little-endian SH4: entry 0x8c05ff94, return delay slot at 0x8c06012c, zero alignment word at 0x8c06012e, 30 four-byte literals 0x8c060130-0x8c0601a8, adjacent clear_emit_slots entry 0x8c0601a8. Complete 532-byte fixed-C match independently twice with declared checked emission/listener layouts; see reconstruction-stage16."
+    },
+    {
+      "id": "clear_emit_slots",
+      "source": "src/effects/clear_emit_slots.c",
+      "address": "0x8c0601a8",
+      "entry": "_clear_emit_slots",
+      "headers": [
+        "src/include/emit.h"
+      ],
+      "ranges": [
+        {
+          "offset": 328104,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_emit_slots",
+          "address": "0x8c0601a8",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "a3efd0e05a5b0e0f67f505a870e08b01d7423b14c379f36ef8524d2c4ede8c0c",
+      "symbols": {
+        "_emit_slots": "0x8c468138"
+      },
+      "boundary_review": "Raw SH4 little-endian review: entry 0x8c0601a8, return delay slot at 0x8c0601f8, zero alignment at 0x8c0601fa, four literals 0x8c0601fc-0x8c06020c, adjacent entry 0x8c06020c. Full 100-byte C/O2 match independently twice with declared emit.h offsets; see reconstruction-stage16."
+    },
+    {
       "id": "bind_id",
       "source": "src/effects/bind_id.c",
       "address": "0x8c0a7628",
@@ -631,6 +725,116 @@
       "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
     },
     {
+      "id": "extra_b6394",
+      "source": "src/effects/extra_b6394.c",
+      "address": "0x8c0b6394",
+      "entry": "_extra_b6394",
+      "headers": [
+        "src/include/object.h"
+      ],
+      "ranges": [
+        {
+          "offset": 680852,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "extra_b6394",
+          "address": "0x8c0b6394",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "78a8df4065a813bbf64164b72a057e218c5d73192e66b247ae9d044ee5a6eada",
+      "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
+    },
+    {
+      "id": "angle_step",
+      "source": "src/math/angle_step.c",
+      "address": "0x8c0c4f90",
+      "entry": "_angle_step",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 741264,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "angle_step",
+          "address": "0x8c0c4f90",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "6551fb1820a78259c9b32f8c7e090e367f97727804bdbccb6d540951538eb305",
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c4f90; early return at 0x8c0c4fa6 with nop delay slot; final return delay slot at 0x8c0c4fbc; zero alignment at 0x8c0c4fbe; literals 0x0000ffff and 0x00008000 at 0x8c0c4fc0/0x8c0c4fc4; next entry 0x8c0c4fc8. Full 56-byte fixed-C match. See reconstruction-stage13."
+    },
+    {
+      "id": "angle_halfway",
+      "source": "src/math/angle_halfway.c",
+      "address": "0x8c0c4fc8",
+      "entry": "_angle_halfway",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 741320,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "angle_halfway",
+          "address": "0x8c0c4fc8",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "50e3c599d467baa9e1c268e978475b93aa0746f1516249ac386a7afdb67ca08d",
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c4fc8, return delay slot at 0x8c0c4fd8, zero alignment word at 0x8c0c4fda, 0x0000ffff literal at 0x8c0c4fdc, next entry 0x8c0c4fe0. Full 24-byte fixed-C match. See reconstruction-stage13."
+    },
+    {
+      "id": "clamp_int",
+      "address": "0x8c0c51c8",
+      "source": "src/samples/clamp_int.c",
+      "entry": "_clamp_int",
+      "ranges": [
+        {
+          "offset": 741832,
+          "size": 16
+        }
+      ],
+      "reference_sha256": "c69927a4bcf8926e1e764b24886c69bfe5034f96e8f4473071d7341d9b0e1257",
+      "functions": [
+        {
+          "name": "clamp_int",
+          "address": "0x8c0c51c8",
+          "size": 16
+        }
+      ]
+    },
+    {
+      "id": "angle_difference",
+      "source": "src/math/angle_difference.c",
+      "address": "0x8c0c52f4",
+      "entry": "_angle_difference",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 742132,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "angle_difference",
+          "address": "0x8c0c52f4",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "774822b451f992f6ab1c1229d5004ef1ac3eae4ecc4a99f7db4e1a1ac52978a7",
+      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c52f4, return delay slot through 0x8c0c5308, zero alignment word at 0x8c0c530a, 0x0000ffff literal at 0x8c0c530c, adjacent entry 0x8c0c5310. Full 28-byte match at unchanged compiler/flags; see reconstruction-stage11 and docs/RECONSTRUCTION.md."
+    },
+    {
       "id": "allocate_block",
       "source": "src/runtime/allocate_block.c",
       "address": "0x8c122700",
@@ -656,152 +860,6 @@
       ],
       "reference_sha256": "643c4ab25d053a7e51565889417cb3c4bc25389f5f73ee91d644d266f3fbe083",
       "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
-    },
-    {
-      "id": "extra_b6394",
-      "source": "src/effects/extra_b6394.c",
-      "address": "0x8c0b6394",
-      "entry": "_extra_b6394",
-      "headers": [
-        "src/include/object.h"
-      ],
-      "ranges": [
-        {
-          "offset": 680852,
-          "size": 180
-        }
-      ],
-      "functions": [
-        {
-          "name": "extra_b6394",
-          "address": "0x8c0b6394",
-          "size": 180
-        }
-      ],
-      "reference_sha256": "78a8df4065a813bbf64164b72a057e218c5d73192e66b247ae9d044ee5a6eada",
-      "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
-    },
-    {
-      "id": "angle_difference",
-      "source": "src/math/angle_difference.c",
-      "address": "0x8c0c52f4",
-      "entry": "_angle_difference",
-      "headers": [],
-      "ranges": [
-        {
-          "offset": 742132,
-          "size": 28
-        }
-      ],
-      "functions": [
-        {
-          "name": "angle_difference",
-          "address": "0x8c0c52f4",
-          "size": 28
-        }
-      ],
-      "reference_sha256": "774822b451f992f6ab1c1229d5004ef1ac3eae4ecc4a99f7db4e1a1ac52978a7",
-      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c52f4, return delay slot through 0x8c0c5308, zero alignment word at 0x8c0c530a, 0x0000ffff literal at 0x8c0c530c, adjacent entry 0x8c0c5310. Full 28-byte match at unchanged compiler/flags; see reconstruction-stage11 and docs/RECONSTRUCTION.md."
-    },
-    {
-      "id": "operation_43fb4",
-      "source": "src/objects/operation_43fb4.c",
-      "address": "0x8c043fb4",
-      "entry": "_operation_43fb4",
-      "headers": [
-        "src/include/spatial.h"
-      ],
-      "ranges": [
-        {
-          "offset": 212916,
-          "size": 100
-        }
-      ],
-      "functions": [
-        {
-          "name": "operation_43fb4",
-          "address": "0x8c043fb4",
-          "size": 100
-        }
-      ],
-      "reference_sha256": "7e9b0beb76ec7fd0a6c46d23b55a8511f23803643cd6ee4cafe63525f22ade66",
-      "symbols": {
-        "_angle_difference": "0x8c0c52f4"
-      },
-      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c043fb4, return delay slot through 0x8c044002, five 4-byte literals at 0x8c044004\u20130x8c044018, next entry 0x8c044018. Full 100-byte fixed-C match with checked SpatialObject angle and Vec3 layout; see reconstruction-stage12."
-    },
-    {
-      "id": "angle_halfway",
-      "source": "src/math/angle_halfway.c",
-      "address": "0x8c0c4fc8",
-      "entry": "_angle_halfway",
-      "headers": [],
-      "ranges": [
-        {
-          "offset": 741320,
-          "size": 24
-        }
-      ],
-      "functions": [
-        {
-          "name": "angle_halfway",
-          "address": "0x8c0c4fc8",
-          "size": 24
-        }
-      ],
-      "reference_sha256": "50e3c599d467baa9e1c268e978475b93aa0746f1516249ac386a7afdb67ca08d",
-      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c4fc8, return delay slot at 0x8c0c4fd8, zero alignment word at 0x8c0c4fda, 0x0000ffff literal at 0x8c0c4fdc, next entry 0x8c0c4fe0. Full 24-byte fixed-C match. See reconstruction-stage13."
-    },
-    {
-      "id": "angle_step",
-      "source": "src/math/angle_step.c",
-      "address": "0x8c0c4f90",
-      "entry": "_angle_step",
-      "headers": [],
-      "ranges": [
-        {
-          "offset": 741264,
-          "size": 56
-        }
-      ],
-      "functions": [
-        {
-          "name": "angle_step",
-          "address": "0x8c0c4f90",
-          "size": 56
-        }
-      ],
-      "reference_sha256": "6551fb1820a78259c9b32f8c7e090e367f97727804bdbccb6d540951538eb305",
-      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c4f90; early return at 0x8c0c4fa6 with nop delay slot; final return delay slot at 0x8c0c4fbc; zero alignment at 0x8c0c4fbe; literals 0x0000ffff and 0x00008000 at 0x8c0c4fc0/0x8c0c4fc4; next entry 0x8c0c4fc8. Full 56-byte fixed-C match. See reconstruction-stage13."
-    },
-    {
-      "id": "choose_emit_slot",
-      "source": "src/effects/choose_emit_slot.c",
-      "address": "0x8c05ff3c",
-      "entry": "_choose_emit_slot",
-      "headers": [
-        "src/include/emit.h",
-        "src/include/emit_secondary.h"
-      ],
-      "ranges": [
-        {
-          "offset": 327484,
-          "size": 88
-        }
-      ],
-      "functions": [
-        {
-          "name": "choose_emit_slot",
-          "address": "0x8c05ff3c",
-          "size": 88
-        }
-      ],
-      "reference_sha256": "79c74d0f8726212233a0197a7c0642c4c868e36330dfc44591da0f948d9d32de",
-      "symbols": {
-        "_secondary_table": "0x8c467b50",
-        "_emit_slots": "0x8c468138"
-      },
-      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c05ff3c; return and delay slot at 0x8c05ff82/84; zero alignment word at 0x8c05ff86; literals at 0x8c05ff88/8c/90; adjacent prepare-slot entry starts 0x8c05ff94. Full 88-byte fixed-C match. See reconstruction-stage14."
     }
   ]
 }

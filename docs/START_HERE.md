@@ -1,7 +1,7 @@
 # Current reconstruction checkpoint
 
-The public repository starts from **39 exact functions in 30 modules**, replacing
-3,940 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
+The current public checkpoint has **41 exact functions in 32 modules**, replacing
+4,572 bytes. See [PROGRESS.md](PROGRESS.md) for definitions and the source-bound
 verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 
 ## Unresolved targets
@@ -9,7 +9,7 @@ verification summary. Start a new checkout with [BUILDING.md](BUILDING.md).
 | Target | Complete range | Current result | Next focus |
 | --- | --- | --- | --- |
 | `operation_45f04` at `0x8c045f04` | 512 bytes | 46 differing bytes; first `0x8c045fdd` | Angle conversions and indirect dispatch |
-| `emit_5fbf8` at `0x8c05fbf8` | 388 bytes | 18 differing bytes; first `0x8c05fc43` | Loop register allocation and final-call scheduling |
+| `emit_5fbf8` at `0x8c05fbf8` | 388 bytes | 8 differing bytes; first `0x8c05fc56` | Two instruction-order pairs in the loop and final call |
 | `signed_remainder` at `0x8c18e8a0` | 180 bytes | No complete match | Carry state, preserved registers and zero-divisor behavior |
 
 The queue is in `config/reconstruction-targets.json`. Scratch C++ virtual dispatch
@@ -44,3 +44,14 @@ After resolving these targets, follow their dependencies into effect initializat
 matrix/vector helpers and referenced static data. Full source-only reconstruction
 remains the objective. Gameplay, disc repacking and analysis-tool integration are
 outside the current batch.
+
+## Stage 16 checkpoint
+
+309 preserved compile/compare trials produced two complete fixed-C matches:
+`clear_emit_slots` (100 bytes) and the direct dependency `prepare_emit_slot`
+(532 bytes). Independently scoping the emission field bases also reduces its
+mismatch from 18 to 8 bytes; only the shift/base-copy order at `8c05fc56/58`
+and final-call argument order at `8c05fd08/0e` remain. The operation is unchanged.
+All original 39 matches are preserved. Full details are in RECONSTRUCTION.md.
+The new listener layout uses declared, checked offsets. No compiler settings,
+comparison rules, game assets, runtime data or registration details changed.

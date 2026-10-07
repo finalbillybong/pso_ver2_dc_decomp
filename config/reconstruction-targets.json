@@ -57,7 +57,7 @@
         "_emit_handles": "0x8c467a78"
       },
       "status": "unresolved",
-      "reason": "Full 388-byte candidate, 18 bytes differ; first at 0x8c05fc43. Verified second prepare-slot argument and signed-byte call types resolve zero-store and byte-load differences. Remaining: 14 loop register/scheduling bytes and 4 final-call scheduling bytes. No full-range match."
+      "reason": "Full 388-byte candidate, 8 bytes differ; first at 0x8c05fc56. Independently scoping both field bases fixes all loop register choices. Remaining: shift/base-move ordering at 0x8c05fc56/58 and final-call argument scheduling at 0x8c05fd08/0e. No full-range match."
     },
     {
       "id": "signed_remainder",
@@ -197,6 +197,68 @@
       "boundary_review": "Raw little-endian SH-4 review: entry 0x8c05ff3c; return and delay slot at 0x8c05ff82/84; zero alignment word at 0x8c05ff86; literals at 0x8c05ff88/8c/90; adjacent prepare-slot entry starts 0x8c05ff94. Full 88-byte fixed-C match. See reconstruction-stage14.",
       "status": "matched",
       "reason": "Complete 88-byte ordinary-C match, including all literals and padding. Both table layouts checked; direct dependency of unresolved emit_5fbf8. Supporting match does not resolve either primary target."
+    },
+    {
+      "id": "clear_emit_slots",
+      "source": "src/effects/clear_emit_slots.c",
+      "address": "0x8c0601a8",
+      "entry": "_clear_emit_slots",
+      "headers": [
+        "src/include/emit.h"
+      ],
+      "ranges": [
+        {
+          "offset": 328104,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_emit_slots",
+          "address": "0x8c0601a8",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "a3efd0e05a5b0e0f67f505a870e08b01d7423b14c379f36ef8524d2c4ede8c0c",
+      "symbols": {
+        "_emit_slots": "0x8c468138"
+      },
+      "boundary_review": "Raw SH4 little-endian review: entry 0x8c0601a8, return delay slot at 0x8c0601f8, zero alignment at 0x8c0601fa, four literals 0x8c0601fc-0x8c06020c, adjacent entry 0x8c06020c. Full 100-byte C/O2 match independently twice with declared emit.h offsets; see reconstruction-stage16.",
+      "status": "matched",
+      "reason": "Complete 100-byte fixed-C match including literals and padding. Same-table reset caller confirms separate field-base scopes; neither primary target is complete."
+    },
+    {
+      "id": "prepare_emit_slot",
+      "source": "src/effects/prepare_emit_slot.c",
+      "address": "0x8c05ff94",
+      "entry": "_prepare_emit_slot",
+      "headers": [
+        "src/include/emit.h",
+        "src/include/emit_listener.h"
+      ],
+      "ranges": [
+        {
+          "offset": 327572,
+          "size": 532
+        }
+      ],
+      "functions": [
+        {
+          "name": "prepare_emit_slot",
+          "address": "0x8c05ff94",
+          "size": 532
+        }
+      ],
+      "reference_sha256": "650ad23e33de4b0bfc46e22f945ce180839f66b6cd037a37c619045c2ae4828c",
+      "symbols": {
+        "_emit_slots": "0x8c468138",
+        "_emit_handles": "0x8c467a78",
+        "_distance_xz_at": "0x8c03f0a0",
+        "_direction_at": "0x8c37eb0c"
+      },
+      "boundary_review": "Raw little-endian SH4: entry 0x8c05ff94, return delay slot at 0x8c06012c, zero alignment word at 0x8c06012e, 30 four-byte literals 0x8c060130-0x8c0601a8, adjacent clear_emit_slots entry 0x8c0601a8. Complete 532-byte fixed-C match independently twice with declared checked emission/listener layouts; see reconstruction-stage16.",
+      "status": "matched",
+      "reason": "Complete 532-byte fixed-C match. Direct emission dependency computes spatial attenuation, clips its level, computes/stores a signed pan byte, and optionally forwards both to a handle. Names provisional. Neither primary target is complete."
     }
   ]
 }

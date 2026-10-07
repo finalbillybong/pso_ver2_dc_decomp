@@ -1,4 +1,4 @@
-/* Unresolved: complete 388-byte candidate, never integrated until exact.
+/* Unresolved: complete 388-byte candidate; 8 bytes differ. Never integrated until exact.
  * Field and routine names remain provisional; the observed table has 54 slots.
  * Separate field bases preserve the reference indexed-addressing shape. */
 #include "src/include/emit.h"
@@ -27,16 +27,18 @@ int emit_5fbf8(unsigned int kind, void *position, int argument, unsigned int fla
     slot = choose_slot_at();
     if (slot < 0) return -1;
     {
-        register unsigned char *kind_base = emit_slots + 4;
         int i;
         register unsigned int mask = 0x400;
         register int threshold = 148;
-        register unsigned char *counter_base = emit_slots + 12;
         for (i = 0; i < 54; i++) {
             int scan_offset = i << 5;
-            if ((*(unsigned int *)(emit_slots + scan_offset) & mask) &&
-                *(unsigned int *)(kind_base + scan_offset) == kind &&
-                !(*(int *)(counter_base + scan_offset) < threshold)) return -1;
+            register unsigned char *kind_base = emit_slots + 4;
+            if (*(unsigned int *)(emit_slots + scan_offset) & mask) {
+                if (*(unsigned int *)(kind_base + scan_offset) == kind) {
+                    register unsigned char *counter_base = emit_slots + 12;
+                    if (!(*(int *)(counter_base + scan_offset) < threshold)) return -1;
+                }
+            }
         }
     }
     offset = slot << 5;
