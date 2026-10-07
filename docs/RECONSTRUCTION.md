@@ -900,3 +900,44 @@ remain **512/46**, **388/8**, and related emission/reuse **448/4**. The original
 primary batch is incomplete; these supporting matches do not replace its gates.
 Continue the shared scheduling investigation, direct initializer `0x8c0a6f38`,
 spawned-effect dependencies, matrix/vector routines and referenced static data.
+
+
+## Default initializer and spawn wrappers, stage 20
+
+Four direct dependencies add **468 bytes**. Current totals are **65 exact
+functions / 54 modules / 7,400 compiled range bytes / 4,155,512 retained bytes**.
+Since the original 34-function checkpoint, 31 functions replace 3,756 bytes.
+
+| Function | Complete range | Bytes |
+| --- | --- | ---: |
+| `initialize_effect_default` | `0x8c0a6f38–0x8c0a6ff0` | 184 |
+| `spawn_effect_0` | `0x8c0aa77c–0x8c0aa7e0` | 100 |
+| `spawn_effect_1` | `0x8c0ab360–0x8c0ab3bc` | 92 |
+| `spawn_effect_2` | `0x8c0abee0–0x8c0abf3c` | 92 |
+
+The default initializer uses the declared, checked Effect layout and zeros
+field_30. Spawn wrappers allocate the observed 0xac, 0xb4 and 0xa0 bytes, return
+null after allocation failure and forward the original arguments. Unsigned-short
+stack arguments and narrow constructor formals reproduce the single zero extension
+per forwarded word. Wide formals duplicated extensions and changed saved registers;
+signed-short incoming arguments removed required extensions. Register hints had no
+effect. Constructor signedness remains provisional where only low words are used.
+
+All 61 previous function ranges are preserved. The update routine's three spawn
+prototypes now use unsigned short, consistent with these callees; its complete
+848-byte output remains exact in two independent comparisons. No other previously
+admitted source or header changed. Private source-refinement receipts pin both
+source hashes. Each new source also matches independently twice, including all
+literals and alignment. All 38 trials and hypotheses are retained in private
+`reconstruction-stage20`; none was a compiler rejection.
+
+Two fresh exact builds, full-image comparison, five-function compiler proof and
+all 43 original tests pass. Source-only rejects the remaining 4,155,512 bytes
+without changing artifacts. Focused export `run-9muoe080` validates current inputs;
+the original analysis database is unchanged. Primary candidates remain **512/46**,
+**388/8**, and related emission/reuse **448/4**. The primary batch remains incomplete.
+Continue the scheduling investigation and constructors at `0x8c0a9934`,
+`0x8c0aaa7c` and `0x8c0ab700`, then vector helpers and referenced static data.
+Saved analysis body sizes do not establish complete boundaries; inspect raw
+instructions, literals and adjacent entries before admission. Static data remains
+reference-backed and is not counted as reconstructed.

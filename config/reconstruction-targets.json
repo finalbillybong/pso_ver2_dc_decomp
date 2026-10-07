@@ -797,6 +797,114 @@
       "boundary_review": "Raw little-endian SH4: 0x8c0a72a0-0x8c0a75f0, complete 848 bytes. Includes eight literal islands beginning at 0x8c0a72cc, 0x8c0a739c, 0x8c0a741c, 0x8c0a747c, 0x8c0a74cc, 0x8c0a7518, 0x8c0a7560 and 0x8c0a75e4; return delay 0x8c0a75e0, final alignment 0x8c0a75e2; adjacent reset entry 0x8c0a75f0. Exact twice with declared checked effect/update/listener layouts; see reconstruction-stage19.",
       "status": "matched",
       "reason": "Complete ordinary-C range, including all literal pools and compiler-generated padding. No original source/manifest entries replaced; primary operation/emission mismatches remain unresolved."
+    },
+    {
+      "id": "initialize_effect_default",
+      "source": "src/effects/initialize_default.c",
+      "address": "0x8c0a6f38",
+      "entry": "_initialize_effect_default",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 618296,
+          "size": 184
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect_default",
+          "address": "0x8c0a6f38",
+          "size": 184
+        }
+      ],
+      "reference_sha256": "d1d57a9dd440fa38bff6a64ed4cf16622f41920dfc944eaa85b13045557a9507",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0a6fd8; alignment 0x8c0a6fda; five literals 0x8c0a6fdc-0x8c0a6ff0; adjacent initialize_effect entry 0x8c0a6ff0. Complete fixed-C match independently twice; see reconstruction-stage20.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range with all literals and padding; direct effect creation/spawn dependency. Primary operation/emission candidates remain unresolved."
+    },
+    {
+      "id": "spawn_effect_0",
+      "source": "src/effects/spawn_effect_0.c",
+      "address": "0x8c0aa77c",
+      "entry": "_spawn_effect_0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 632700,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_0",
+          "address": "0x8c0aa77c",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "d5130bb0fc871e6090026ec6529d6067d704bf79aef6e7249ca8b5746527b5e5",
+      "symbols": {
+        "_initialize_at": "0x8c0a9934"
+      },
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0aa7cc; alignment 0x8c0aa7ce; four literals 0x8c0aa7d0-0x8c0aa7e0; adjacent entry 0x8c0aa7e0. Complete fixed-C match independently twice; see reconstruction-stage20.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range with all literals and padding; direct effect creation/spawn dependency. Primary operation/emission candidates remain unresolved."
+    },
+    {
+      "id": "spawn_effect_1",
+      "source": "src/effects/spawn_effect_1.c",
+      "address": "0x8c0ab360",
+      "entry": "_spawn_effect_1",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 635744,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_1",
+          "address": "0x8c0ab360",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "84c92214d98b453c2f4743e56ac6051edd874123786da894ca7ded19b8e3870a",
+      "symbols": {
+        "_initialize_at": "0x8c0aaa7c"
+      },
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0ab3aa; four literals 0x8c0ab3ac-0x8c0ab3bc; adjacent entry 0x8c0ab3bc. Complete fixed-C match independently twice; see reconstruction-stage20.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range with all literals and padding; direct effect creation/spawn dependency. Primary operation/emission candidates remain unresolved."
+    },
+    {
+      "id": "spawn_effect_2",
+      "source": "src/effects/spawn_effect_2.c",
+      "address": "0x8c0abee0",
+      "entry": "_spawn_effect_2",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 638688,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_2",
+          "address": "0x8c0abee0",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "c6b2e010ffb94294727fddce8bd07065dc69d100278a27ecd103c4b8b9c98ef8",
+      "symbols": {
+        "_initialize_at": "0x8c0ab700"
+      },
+      "boundary_review": "Raw little-endian SH4: Return delay 0x8c0abf2a; four literals 0x8c0abf2c-0x8c0abf3c; adjacent entry 0x8c0abf3c. Complete fixed-C match independently twice; see reconstruction-stage20.",
+      "status": "matched",
+      "reason": "Complete ordinary-C range with all literals and padding; direct effect creation/spawn dependency. Primary operation/emission candidates remain unresolved."
     }
   ]
 }

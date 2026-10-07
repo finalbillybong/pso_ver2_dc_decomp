@@ -11,9 +11,9 @@ extern unsigned char effect_spawn_table[];
 #define absolute_at ((float (*)(float))0x8c12c714)
 #define distance_at ((float (*)(void *,void *))0x8c0c5460)
 #define listener ((unsigned char **)0x8c46ee80)
-extern void *spawn0_at(void *,void *,void *,void *,short,short);
-extern void *spawn1_at(void *,void *,void *,int,short);
-extern void *spawn2_at(void *,void *,void *,int,short);
+extern void *spawn0_at(void *,void *,void *,void *,unsigned short,unsigned short);
+extern void *spawn1_at(void *,void *,void *,int,unsigned short);
+extern void *spawn2_at(void *,void *,void *,int,unsigned short);
 static inline void scale_spawn(Effect *e,void *p) {
  float *first_address=(float *)((unsigned char *)p+EFFECT_UPDATE_OFFSET(EffectSpawnView, field_98));float second=e->field_48;float first=e->field_44;
  *first_address=first; *(float *)((unsigned char *)p+EFFECT_UPDATE_OFFSET(EffectSpawnView, field_9c))=second;
