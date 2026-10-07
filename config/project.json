@@ -1580,6 +1580,53 @@
       "boundary_review": "Raw little-endian SH4. Return delay 0x8c0420a2, three literals 0x8c0420a4..0x8c0420b0. Complete fixed-toolchain match independently twice; reconstruction-stage44."
     },
     {
+      "id": "count_model_nodes",
+      "source": "src/objects/count_model_nodes.c",
+      "address": "0x8c0420b0",
+      "entry": "_count_model_nodes",
+      "ranges": [
+        {
+          "offset": 204976,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "count_model_nodes",
+          "address": "0x8c0420b0",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "956b8c183d3803be2418f04654e68a1fcfb07b372e80912e572425899c5d1adc",
+      "symbols": {},
+      "headers": [
+        "src/include/model_node.h"
+      ],
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c04210c, zero alignment 0x8c04210e, self-address literal 0x8c042110..0x8c042114. Complete match independently twice; reconstruction-stage45."
+    },
+    {
+      "id": "step_clamped_angle_velocity",
+      "source": "src/math/step_clamped_angle_velocity.c",
+      "address": "0x8c042114",
+      "entry": "_step_clamped_angle_velocity",
+      "ranges": [
+        {
+          "offset": 205076,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "step_clamped_angle_velocity",
+          "address": "0x8c042114",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "38e369a5be1b286c3c681ebef111903c70cda2b1917f7163fb3a302d54fc799b",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c04218c, zero alignment 0x8c04218e, two literals 0x8c042190..0x8c042198. Complete match independently twice; reconstruction-stage45."
+    },
+    {
       "id": "rotate_and_submit_vector_xz",
       "source": "src/math/rotate_and_submit_vector_xz.c",
       "address": "0x8c042198",
@@ -1603,6 +1650,62 @@
       "reference_sha256": "04135e21b7a99ae08d4d893ef75c953f83739925b9116369f3d7b1ce28f548cc",
       "symbols": {},
       "boundary_review": "Raw little-endian SH4. Return delay 0x8c0421e4, zero alignment 0x8c0421e6, three literals 0x8c0421e8..0x8c0421f4. Complete fixed-toolchain match independently twice; reconstruction-stage44."
+    },
+    {
+      "id": "query_vector_position",
+      "source": "src/math/query_vector_position.c",
+      "address": "0x8c0421f4",
+      "entry": "_query_vector_position",
+      "ranges": [
+        {
+          "offset": 205300,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_vector_position",
+          "address": "0x8c0421f4",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "d65c06fb6f6f8fc7df26b3410d4ab486b5cfdfe3dab2cd633f2ebd627737b2b8",
+      "symbols": {
+        "_query_at": "0x8c011290"
+      },
+      "headers": [
+        "src/include/vector_query.h",
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c04224a, three literals 0x8c04224c..0x8c042258. Complete match independently twice; reconstruction-stage45."
+    },
+    {
+      "id": "query_vector_position_normal",
+      "source": "src/math/query_vector_position_normal.c",
+      "address": "0x8c042258",
+      "entry": "_query_vector_position_normal",
+      "ranges": [
+        {
+          "offset": 205400,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_vector_position_normal",
+          "address": "0x8c042258",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "a9837b3e1dec67d3beeb017b0a586b0da5b677bd5f0d74cacf3ecb660df6a870",
+      "symbols": {
+        "_query_at": "0x8c011290"
+      },
+      "headers": [
+        "src/include/vector_query.h",
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c0422c4, zero alignment 0x8c0422c6, three literals 0x8c0422c8..0x8c0422d4. Complete match independently twice; reconstruction-stage45."
     },
     {
       "id": "operation_43fb4",

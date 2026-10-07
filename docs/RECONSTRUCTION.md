@@ -2254,3 +2254,59 @@ Focused exports are refreshed after the manifest change on a disposable copy;
 the original database is unchanged. Original primary candidates remain 512/30 and
 388/8, related reuse 448/4, manager initialization 280/8 and manager display 896/9.
 Supporting matches do not satisfy primary acceptance. Continue the recorded loop.
+
+
+## Adjacent model, angle and query helpers, stage 45
+
+Four complete ordinary-C functions add **456 bytes**:
+
+| Function | Complete range | Bytes |
+| --- | --- | ---: |
+| `count_model_nodes` | `0x8c0420b0..0x8c042114` | 100 |
+| `step_clamped_angle_velocity` | `0x8c042114..0x8c042198` | 132 |
+| `query_vector_position` | `0x8c0421f4..0x8c042258` | 100 |
+| `query_vector_position_normal` | `0x8c042258..0x8c0422d4` | 124 |
+
+Totals are **158 functions / 144 modules / 19,496 compiled range bytes /
+4,143,416 retained reference bytes**, or **0.4683% whole-image coverage**.
+All 154 previous matches, module definitions and source/header hashes remain
+unchanged. Since the original 34-function checkpoint, 124 functions replace
+15,852 bytes. Code-only completion remains unknown; the original primary batch
+is incomplete. Separately reconstructed static data remains zero.
+
+The model counter reads each node's flags once, counts when bit 8 is clear,
+recurses when bit 16 is clear and follows the next pointer. Its ordinary recursive
+C naturally causes this compiler to inline one level. Capturing the flags once
+resolved the initial 96-versus-100-byte mismatch. Preserve the do-while assumption
+that the initial node and any followed child are valid; no null check is added.
+A new provisional header checks flags at 0 and child/next pointers at 44/48,
+without claiming the complete model-object extent.
+
+The angle helper clamps the signed difference, retains both product sign tests,
+uses the existing step/delta entries and returns the observed signed-short wrap.
+Reusing the incoming desired argument for the difference reproduces the saved
+register lifetime and resolves the 128-versus-132-byte baseline. No arithmetic
+or overflow behavior is repaired speculatively.
+
+Both query wrappers copy the source, add 20 to destination Y, query with mask
+0x16ef and copy the returned position on success. One also copies the normal.
+On failure they recopy the original source and leave the normal untouched,
+preserving the observed behavior even when source and destination alias.
+External query declarations resolve the ten differing call/literal bytes in each
+baseline. The checked result/data prefix header declares the nested pointer at
+4 and vectors at 0/12, using the existing checked Vector3 type.
+
+All final sources match twice independently, including literals, self-address
+relocation, return delays and alignment. Compiler, base flags, default GNU linker
+and complete-range acceptance remain unchanged. All **19 trials** retain source
+snapshots, hypotheses, compiler receipts and comparisons in
+`reconstruction-stage45`; there are **no compiler rejections**.
+
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+**53 original-workspace tests** pass. The public suite remains **58 tests**.
+Source-only rejects 4,143,416 retained bytes without altering existing artifacts.
+Focused exports are refreshed after the manifest change on a disposable copy;
+the original database is unchanged. Primary candidates remain 512/30 and 388/8,
+related reuse 448/4, manager initialization 280/8, manager display 896/9 and the
+new constructor 732/89. Supporting matches do not replace primary acceptance.
+Continue the recorded source/compile/compare loop.

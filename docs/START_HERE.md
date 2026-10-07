@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **154 exact functions in 140 modules**, replacing
-**19,040 bytes** of the 4,162,912-byte decoded executable (**0.4574% image coverage**).
-It retains **4,143,872 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **158 exact functions in 144 modules**, replacing
+**19,496 bytes** of the 4,162,912-byte decoded executable (**0.4683% image coverage**).
+It retains **4,143,416 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 44
+## Latest batch: stage 45
 
-Three vector/angle helpers and the empty entry at `0x8c0a9654` add 224 bytes.
-Vector loads preserve in-place behavior and leave Y untouched. Runtime and static
-data dependencies remain reference inputs. All 150 previous matches, module
-definitions and source/header hashes remain unchanged. Since the original
-34-function checkpoint, 120 functions replace 15,396 bytes. All 86 source trials
-are retained, including one compiler rejection. The newly followed constructor
-remains 732/89; manager display remains 896/9. Both primary targets are incomplete.
+The model-node counter, clamped angle update and two vector-query wrappers add
+456 bytes. New partial model/query types check each accessed offset. The sources
+preserve traversal assumptions, signed arithmetic and vector alias behavior.
+All 154 previous matches, module definitions and source/header hashes remain
+unchanged. Since the original 34-function checkpoint, 124 functions replace
+15,852 bytes. All 19 source trials are retained with no compiler rejections.
+Both original primary targets remain incomplete.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only
