@@ -2198,3 +2198,59 @@ Focused exports are refreshed after the manifest change on a disposable copy;
 the original database is unchanged. Original primary candidates remain 512/30 and
 388/8, related reuse 448/4, and manager initialization 280/8. These supporting
 matches do not satisfy primary acceptance. Continue the recorded iteration loop.
+
+
+## Constructor dependencies and vector helpers, stage 44
+
+Four complete ordinary-C functions add **224 bytes**:
+
+| Function | Complete range | Bytes |
+| --- | --- | ---: |
+| `rotate_vector_xz` | `0x8c042030..0x8c042080` | 80 |
+| `scale_by_half_angle` | `0x8c042080..0x8c0420b0` | 48 |
+| `rotate_and_submit_vector_xz` | `0x8c042198..0x8c0421f4` | 92 |
+| `effect_noop_9654` | `0x8c0a9654..0x8c0a9658` | 4 |
+
+Totals are **154 functions / 140 modules / 19,040 compiled range bytes /
+4,143,872 retained reference bytes**, or **0.4574% whole-image coverage**.
+All 150 previous matches, module definitions and source/header hashes remain
+unchanged. Since the original 34-function checkpoint, 120 functions replace
+15,396 bytes. Code-only completion remains unknown; both original primary
+candidates are still incomplete. Separately reconstructed static data remains zero.
+
+The vector helpers capture source X and Z before either store, preserving in-place
+use, and leave Y untouched. One writes to a destination vector; the other updates
+the source and calls the observed submission entry. Both use the existing checked
+Vector3 header. The scalar helper preserves the explicit signed quotient call
+with divisor two, then the observed trigonometric call and multiply/divide order.
+Its runtime dependency at 0x8c18e768 remains reference backed. Raw inspection
+confirms signed division setup and the zero-divisor path; no runtime body is
+copied or admitted. The empty entry is the complete return/NOP pair between the
+manager and next constructor. Function and angle names remain provisional.
+
+All four baselines matched. Final readable sources independently match twice,
+including every literal, return delay and alignment byte. Compiler, base flags,
+linker selection and complete-range acceptance are unchanged.
+
+The newly followed constructor at **0x8c0a9658..0x8c0a9934** produces the complete
+**732-byte** size with **89 differing bytes**, first **0x8c0a96ba**. Differences
+are confined to randomized Z initialization, integer-count/flag scheduling and
+the second randomized vector component. Preserve the repeated degree conversion,
+random-call order and duplicated position branches. Checked resource/object views,
+local captures, arithmetic trees, inline pointer accessors, external declarations
+and C++ compilation do not improve its baseline. It remains scratch-only.
+
+Using the now-matched scalar editor signatures, checked metadata arrays and actual
+C++ member definitions does not resolve the nine field callbacks. One declaration-
+order trial was rejected, corrected and retained. Their prior best comparisons
+remain unchanged. All **86 trials**, including **1 compiler rejection**, retain
+source snapshots, hypotheses, available compiler receipts and comparisons in
+`reconstruction-stage44`.
+
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+**53 original-workspace tests** pass. The public suite remains **58 tests**.
+Source-only rejects 4,143,872 retained bytes without altering existing artifacts.
+Focused exports are refreshed after the manifest change on a disposable copy;
+the original database is unchanged. Original primary candidates remain 512/30 and
+388/8, related reuse 448/4, manager initialization 280/8 and manager display 896/9.
+Supporting matches do not satisfy primary acceptance. Continue the recorded loop.

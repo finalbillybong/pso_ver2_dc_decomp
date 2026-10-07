@@ -1533,6 +1533,78 @@
       ]
     },
     {
+      "id": "rotate_vector_xz",
+      "source": "src/math/rotate_vector_xz.c",
+      "address": "0x8c042030",
+      "entry": "_rotate_vector_xz",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 204848,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "rotate_vector_xz",
+          "address": "0x8c042030",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "a53b68f6f06d94e6ac4d054d29fc09a62b147b08f30b6f3f669c23724f104380",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c042076, two literals 0x8c042078..0x8c042080. Complete fixed-toolchain match independently twice; reconstruction-stage44."
+    },
+    {
+      "id": "scale_by_half_angle",
+      "source": "src/math/scale_by_half_angle.c",
+      "address": "0x8c042080",
+      "entry": "_scale_by_half_angle",
+      "ranges": [
+        {
+          "offset": 204928,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "scale_by_half_angle",
+          "address": "0x8c042080",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "103eb7e1d8d92314dc4a5cf4ab81ad01ae1f8c8c1a713ae81f02dc12b5aba321",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c0420a2, three literals 0x8c0420a4..0x8c0420b0. Complete fixed-toolchain match independently twice; reconstruction-stage44."
+    },
+    {
+      "id": "rotate_and_submit_vector_xz",
+      "source": "src/math/rotate_and_submit_vector_xz.c",
+      "address": "0x8c042198",
+      "entry": "_rotate_and_submit_vector_xz",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 205208,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "rotate_and_submit_vector_xz",
+          "address": "0x8c042198",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "04135e21b7a99ae08d4d893ef75c953f83739925b9116369f3d7b1ce28f548cc",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4. Return delay 0x8c0421e4, zero alignment 0x8c0421e6, three literals 0x8c0421e8..0x8c0421f4. Complete fixed-toolchain match independently twice; reconstruction-stage44."
+    },
+    {
       "id": "operation_43fb4",
       "source": "src/objects/operation_43fb4.c",
       "address": "0x8c043fb4",
@@ -3132,6 +3204,28 @@
         "_bind_at": "0x8c0a75f0"
       },
       "boundary_review": "Raw SH4 entry 0x8c0a95b4 through 0x8c0a9654 includes return delay, alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage40."
+    },
+    {
+      "id": "effect_noop_9654",
+      "source": "src/effects/effect_noop_9654.c",
+      "address": "0x8c0a9654",
+      "entry": "_effect_noop_9654",
+      "ranges": [
+        {
+          "offset": 628308,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "effect_noop_9654",
+          "address": "0x8c0a9654",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "symbols": {},
+      "boundary_review": "Raw little-endian SH4. Return at 0x8c0a9654 and NOP delay at 0x8c0a9656; adjacent constructor at 0x8c0a9658. Complete fixed-toolchain match independently twice; reconstruction-stage44."
     },
     {
       "id": "spawn_effect_0",
