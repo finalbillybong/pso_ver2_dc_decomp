@@ -39785,6 +39785,1956 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes.",
       "status": "matched",
       "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0104a0",
+      "source": "src/objects/spawn_object_0893a8_8c0104a0.c",
+      "address": "0x8c0104a0",
+      "entry": "_spawn_object_0893a8_8c0104a0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1184,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0104a0",
+          "address": "0x8c0104a0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "1e12a537f970a6c16a39ca357b0ea930441ef223d4f3fcce51f1062cc70c297f",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c034230",
+      "source": "src/objects/spawn_object_0893a8_8c034230.c",
+      "address": "0x8c034230",
+      "entry": "_spawn_object_0893a8_8c034230",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 148016,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c034230",
+          "address": "0x8c034230",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "081a0e24aa9d59271564991cf036d479b33727669be672ea47ab9441d5abac99",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c034274",
+      "source": "src/objects/spawn_object_0893a8_8c034274.c",
+      "address": "0x8c034274",
+      "entry": "_spawn_object_0893a8_8c034274",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 148084,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c034274",
+          "address": "0x8c034274",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "268e2e5752247115f3495c734795435600f366c796f0ebb9a01e52a672f142be",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0343fc",
+      "source": "src/objects/spawn_object_0893a8_8c0343fc.c",
+      "address": "0x8c0343fc",
+      "entry": "_spawn_object_0893a8_8c0343fc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 148476,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0343fc",
+          "address": "0x8c0343fc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8352125d81a9b15c66e51154175be3534bb3708c0e63a4615ed8e5d749e50ecc",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c057c00",
+      "source": "src/objects/spawn_object_0893a8_8c057c00.c",
+      "address": "0x8c057c00",
+      "entry": "_spawn_object_0893a8_8c057c00",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 293888,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c057c00",
+          "address": "0x8c057c00",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "9fec4decfae0dcc4bb31891ec210f50654906c51243208751fd51299dba0595c",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c05c974",
+      "source": "src/objects/spawn_object_0893a8_8c05c974.c",
+      "address": "0x8c05c974",
+      "entry": "_spawn_object_0893a8_8c05c974",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 313716,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c05c974",
+          "address": "0x8c05c974",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "f982cc06d3e7fbe31f6a24c749c72d9075302f9f97eddcb3a46d25d3eaaa8cce",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c06092c",
+      "source": "src/objects/spawn_object_0893a8_8c06092c.c",
+      "address": "0x8c06092c",
+      "entry": "_spawn_object_0893a8_8c06092c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 330028,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c06092c",
+          "address": "0x8c06092c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "6a600c4926ffd14d5d04b4418829bc174b29d0b0c3644bef8ffec6f9df8def5a",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c079270",
+      "source": "src/objects/spawn_object_0893a8_8c079270.c",
+      "address": "0x8c079270",
+      "entry": "_spawn_object_0893a8_8c079270",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 430704,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c079270",
+          "address": "0x8c079270",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "076a508918708acec860f8ed908802fb56577db7eb12cc7dfe99f5770c56ebec",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0800a8",
+      "source": "src/objects/spawn_object_0893a8_8c0800a8.c",
+      "address": "0x8c0800a8",
+      "entry": "_spawn_object_0893a8_8c0800a8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 458920,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0800a8",
+          "address": "0x8c0800a8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e996d400a0fce09548b15c50d85b0103f1a691d4bad8fdb3765586298a3895f5",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c080abc",
+      "source": "src/objects/spawn_object_0893a8_8c080abc.c",
+      "address": "0x8c080abc",
+      "entry": "_spawn_object_0893a8_8c080abc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 461500,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c080abc",
+          "address": "0x8c080abc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "d3035325abaa2fb131ee40a3599dee8d581d649bbb74d15fa868f55a55dd69ec",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c081080",
+      "source": "src/objects/spawn_object_0893a8_8c081080.c",
+      "address": "0x8c081080",
+      "entry": "_spawn_object_0893a8_8c081080",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 462976,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c081080",
+          "address": "0x8c081080",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "ec6296e222c2940548beaa041a619f85e0a74731820d70400e01402e3f62a97f",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c081790",
+      "source": "src/objects/spawn_object_0893a8_8c081790.c",
+      "address": "0x8c081790",
+      "entry": "_spawn_object_0893a8_8c081790",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 464784,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c081790",
+          "address": "0x8c081790",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "5a1f3324724cfb43bdc9ddfe262006992c3dda84677f55bd91557f9d99c506ab",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c081a78",
+      "source": "src/objects/spawn_object_0893a8_8c081a78.c",
+      "address": "0x8c081a78",
+      "entry": "_spawn_object_0893a8_8c081a78",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 465528,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c081a78",
+          "address": "0x8c081a78",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "76066ce7a7060143a0054552c9a3f51f9c5b5b351299b512f0873e2d6b836cf4",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c083434",
+      "source": "src/objects/spawn_object_0893a8_8c083434.c",
+      "address": "0x8c083434",
+      "entry": "_spawn_object_0893a8_8c083434",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 472116,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c083434",
+          "address": "0x8c083434",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "f33d909806d884b20bf9d1f972c38a94504b9f7cfd268fd0e6aa292c6b6fd3f7",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c085ec8",
+      "source": "src/objects/spawn_object_0893a8_8c085ec8.c",
+      "address": "0x8c085ec8",
+      "entry": "_spawn_object_0893a8_8c085ec8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 483016,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c085ec8",
+          "address": "0x8c085ec8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "626e5411504d06cf10ed7f67a00004c65ea923bfd2354711f28ae29d7f102ff8",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c086104",
+      "source": "src/objects/spawn_object_0893a8_8c086104.c",
+      "address": "0x8c086104",
+      "entry": "_spawn_object_0893a8_8c086104",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 483588,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c086104",
+          "address": "0x8c086104",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "385dcd4e8d635688e98851cb1800b825c9e8f21e62d8ba00cb1b575ba04f59b4",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c09515c",
+      "source": "src/objects/spawn_object_0893a8_8c09515c.c",
+      "address": "0x8c09515c",
+      "entry": "_spawn_object_0893a8_8c09515c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 545116,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c09515c",
+          "address": "0x8c09515c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "cadfde9e866b88ff2d5bfd800bce6d7df067f26357a0776a245fb15b80b79848",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0c8b80",
+      "source": "src/objects/spawn_object_0893a8_8c0c8b80.c",
+      "address": "0x8c0c8b80",
+      "entry": "_spawn_object_0893a8_8c0c8b80",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 756608,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0c8b80",
+          "address": "0x8c0c8b80",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "3d7aa3dca132a6e04ee2358f3380ad851f5c1233c1a38c1732d0fae9d399e89b",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0d15dc",
+      "source": "src/objects/spawn_object_0893a8_8c0d15dc.c",
+      "address": "0x8c0d15dc",
+      "entry": "_spawn_object_0893a8_8c0d15dc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 792028,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0d15dc",
+          "address": "0x8c0d15dc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "fc6dd594257cf827f50d5148e8df8752d43d1f5f285e45a68a5c77bdf6abb4a3",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0d7ba8",
+      "source": "src/objects/spawn_object_0893a8_8c0d7ba8.c",
+      "address": "0x8c0d7ba8",
+      "entry": "_spawn_object_0893a8_8c0d7ba8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 818088,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0d7ba8",
+          "address": "0x8c0d7ba8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "6d275991cea41729626e6606c41dad0641391c9b278a234fdafc920736ac1fb9",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0ed844",
+      "source": "src/objects/spawn_object_0893a8_8c0ed844.c",
+      "address": "0x8c0ed844",
+      "entry": "_spawn_object_0893a8_8c0ed844",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 907332,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0ed844",
+          "address": "0x8c0ed844",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "25f76a97d195671da2d0eb9144021e2a3173404df0ce97403b08bc45d6a5488d",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0f1b60",
+      "source": "src/objects/spawn_object_0893a8_8c0f1b60.c",
+      "address": "0x8c0f1b60",
+      "entry": "_spawn_object_0893a8_8c0f1b60",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 924512,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0f1b60",
+          "address": "0x8c0f1b60",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "fdd243cb6629bf49f1041571cbedceca7ae8560d9179e84d9b08cab74a7f48b3",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0f2158",
+      "source": "src/objects/spawn_object_0893a8_8c0f2158.c",
+      "address": "0x8c0f2158",
+      "entry": "_spawn_object_0893a8_8c0f2158",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 926040,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0f2158",
+          "address": "0x8c0f2158",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "ce724b942fa2f843a150c05b9bbe1bb2cd320c112f68f262314adb89a0c8ffb0",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0f2870",
+      "source": "src/objects/spawn_object_0893a8_8c0f2870.c",
+      "address": "0x8c0f2870",
+      "entry": "_spawn_object_0893a8_8c0f2870",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 927856,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0f2870",
+          "address": "0x8c0f2870",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "aee85ae304b1166868da4b6d2f5a58a1b12a33535ca9d536d4150717cc1b0f98",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0f2bc0",
+      "source": "src/objects/spawn_object_0893a8_8c0f2bc0.c",
+      "address": "0x8c0f2bc0",
+      "entry": "_spawn_object_0893a8_8c0f2bc0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 928704,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0f2bc0",
+          "address": "0x8c0f2bc0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "d16a7c870af65d3d2afc0bb4050c5d051b6753396a23c9ec9eab2f8c54bf7326",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0f2f10",
+      "source": "src/objects/spawn_object_0893a8_8c0f2f10.c",
+      "address": "0x8c0f2f10",
+      "entry": "_spawn_object_0893a8_8c0f2f10",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 929552,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0f2f10",
+          "address": "0x8c0f2f10",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "7cb1d8b94a4814bd050e1484708076e42b50fd0af947f3903d7062cbdf25ebed",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0f32a8",
+      "source": "src/objects/spawn_object_0893a8_8c0f32a8.c",
+      "address": "0x8c0f32a8",
+      "entry": "_spawn_object_0893a8_8c0f32a8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 930472,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0f32a8",
+          "address": "0x8c0f32a8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "ff211d7c025c6cfbc702460df70a00e60223fd8bf75c1cb1498f98c11bbe59fd",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0f4820",
+      "source": "src/objects/spawn_object_0893a8_8c0f4820.c",
+      "address": "0x8c0f4820",
+      "entry": "_spawn_object_0893a8_8c0f4820",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 935968,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0f4820",
+          "address": "0x8c0f4820",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "39c9fb128e45fb96a2503ba08ff0ba643856bc91316a4f0540b50d28ee726da0",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1139e0",
+      "source": "src/objects/spawn_object_0893a8_8c1139e0.c",
+      "address": "0x8c1139e0",
+      "entry": "_spawn_object_0893a8_8c1139e0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1063392,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1139e0",
+          "address": "0x8c1139e0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "5c8b180a7a9334342da5cc9750482727c78dd02a33f8d13f5af48a10a037d3c2",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c114058",
+      "source": "src/objects/spawn_object_0893a8_8c114058.c",
+      "address": "0x8c114058",
+      "entry": "_spawn_object_0893a8_8c114058",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1065048,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c114058",
+          "address": "0x8c114058",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "512278a51d97782ac57b299dbdcaa498d6d891208ac226e71b9d8f0990f85d25",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c114610",
+      "source": "src/objects/spawn_object_0893a8_8c114610.c",
+      "address": "0x8c114610",
+      "entry": "_spawn_object_0893a8_8c114610",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1066512,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c114610",
+          "address": "0x8c114610",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "78bd66ddf775a1df3bfff1c3075ea9ce9da20bb95720f1173a0bea9f47dd3ae5",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c11d878",
+      "source": "src/objects/spawn_object_0893a8_8c11d878.c",
+      "address": "0x8c11d878",
+      "entry": "_spawn_object_0893a8_8c11d878",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1103992,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c11d878",
+          "address": "0x8c11d878",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "aa91b36cac9ed75cadaf1b716c8063d494c8f6bcf34f3bce7681314c8d79c42c",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c12911c",
+      "source": "src/objects/spawn_object_0893a8_8c12911c.c",
+      "address": "0x8c12911c",
+      "entry": "_spawn_object_0893a8_8c12911c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1151260,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c12911c",
+          "address": "0x8c12911c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "dc9ac54273b1201e6a6215b9290668b927282b068597b661855f1759b818f819",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c130714",
+      "source": "src/objects/spawn_object_0893a8_8c130714.c",
+      "address": "0x8c130714",
+      "entry": "_spawn_object_0893a8_8c130714",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1181460,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c130714",
+          "address": "0x8c130714",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "867f146e43e955a83109110e45990e0097bad5a6db53b739320e5142874216b6",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c130bb4",
+      "source": "src/objects/spawn_object_0893a8_8c130bb4.c",
+      "address": "0x8c130bb4",
+      "entry": "_spawn_object_0893a8_8c130bb4",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1182644,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c130bb4",
+          "address": "0x8c130bb4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "08c9996dd7613b0c4fb1ecbb9f02eb26630ec7eb22680914c7ec013f23c22a58",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1326c4",
+      "source": "src/objects/spawn_object_0893a8_8c1326c4.c",
+      "address": "0x8c1326c4",
+      "entry": "_spawn_object_0893a8_8c1326c4",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1189572,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1326c4",
+          "address": "0x8c1326c4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "74b5bf40938a7bde167780384cc927f8fa373dd388d9e41d268b57b456fb7ce6",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c134bd8",
+      "source": "src/objects/spawn_object_0893a8_8c134bd8.c",
+      "address": "0x8c134bd8",
+      "entry": "_spawn_object_0893a8_8c134bd8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1199064,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c134bd8",
+          "address": "0x8c134bd8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "a42b339be6cdc0102a2fb74033317af98da544bbca26b42ee5584e6b4fedef3a",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c135174",
+      "source": "src/objects/spawn_object_0893a8_8c135174.c",
+      "address": "0x8c135174",
+      "entry": "_spawn_object_0893a8_8c135174",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1200500,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c135174",
+          "address": "0x8c135174",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "d59eb1a99240a678680d89b2adfd3e3b2c57727ef1b6128e991c06661a0f7a3b",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1357e8",
+      "source": "src/objects/spawn_object_0893a8_8c1357e8.c",
+      "address": "0x8c1357e8",
+      "entry": "_spawn_object_0893a8_8c1357e8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1202152,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1357e8",
+          "address": "0x8c1357e8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "0d60219421a371fecf9ef435bf8745afb729c71f4a5aad6bf416d6a77bdb9c1e",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1363b8",
+      "source": "src/objects/spawn_object_0893a8_8c1363b8.c",
+      "address": "0x8c1363b8",
+      "entry": "_spawn_object_0893a8_8c1363b8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1205176,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1363b8",
+          "address": "0x8c1363b8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "47c9323db7d1ec5220935d13a1446452c37c2feda7d9f9eb07dd47993758d451",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c136e20",
+      "source": "src/objects/spawn_object_0893a8_8c136e20.c",
+      "address": "0x8c136e20",
+      "entry": "_spawn_object_0893a8_8c136e20",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1207840,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c136e20",
+          "address": "0x8c136e20",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "80fffd9fa04dddd80ebca9f6f55874f7a9fcc6ba9bb2e7af450b07b39e378b29",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c13ddcc",
+      "source": "src/objects/spawn_object_0893a8_8c13ddcc.c",
+      "address": "0x8c13ddcc",
+      "entry": "_spawn_object_0893a8_8c13ddcc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1236428,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c13ddcc",
+          "address": "0x8c13ddcc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "6b8060799c3bb82ba766eb18eafc69088a364753a7037b2f1ffbcdbb22ac1f19",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c13e090",
+      "source": "src/objects/spawn_object_0893a8_8c13e090.c",
+      "address": "0x8c13e090",
+      "entry": "_spawn_object_0893a8_8c13e090",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1237136,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c13e090",
+          "address": "0x8c13e090",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "5057cf900f20ead31a7ba65f6ab8357cff0dcdd4aa0f10529a1721e0151370ad",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c13e37c",
+      "source": "src/objects/spawn_object_0893a8_8c13e37c.c",
+      "address": "0x8c13e37c",
+      "entry": "_spawn_object_0893a8_8c13e37c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1237884,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c13e37c",
+          "address": "0x8c13e37c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c6a722ea03506f0f99ace00f38d1be9f537bf1e90056912711cdbda6f709627e",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c13e668",
+      "source": "src/objects/spawn_object_0893a8_8c13e668.c",
+      "address": "0x8c13e668",
+      "entry": "_spawn_object_0893a8_8c13e668",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1238632,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c13e668",
+          "address": "0x8c13e668",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "035dc2264f0e590f70ab6f12ef50d9743c46f5dc0b977185e93c44d69acbe5a7",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c141594",
+      "source": "src/objects/spawn_object_0893a8_8c141594.c",
+      "address": "0x8c141594",
+      "entry": "_spawn_object_0893a8_8c141594",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1250708,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c141594",
+          "address": "0x8c141594",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "dbfcaf969d68b2bc2c26536e0059b9c000f3de8b3ef78a39eb3c6d6856e54c07",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c14348c",
+      "source": "src/objects/spawn_object_0893a8_8c14348c.c",
+      "address": "0x8c14348c",
+      "entry": "_spawn_object_0893a8_8c14348c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1258636,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c14348c",
+          "address": "0x8c14348c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "00667fd6fed9d56ab0812c442012c51027e66780fff4ac1f19b621aa60088116",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c14ce24",
+      "source": "src/objects/spawn_object_0893a8_8c14ce24.c",
+      "address": "0x8c14ce24",
+      "entry": "_spawn_object_0893a8_8c14ce24",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1297956,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c14ce24",
+          "address": "0x8c14ce24",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "dd489fbddab2f03a4644e2db4556166b1f090fc45f1b2aa30b4655dec1de27cd",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c157f64",
+      "source": "src/objects/spawn_object_0893a8_8c157f64.c",
+      "address": "0x8c157f64",
+      "entry": "_spawn_object_0893a8_8c157f64",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1343332,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c157f64",
+          "address": "0x8c157f64",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "405ce8a61c97805d9955ffac7ff3a282e88c9d7246741f4f04b5ac5c1c470e56",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c15ce68",
+      "source": "src/objects/spawn_object_0893a8_8c15ce68.c",
+      "address": "0x8c15ce68",
+      "entry": "_spawn_object_0893a8_8c15ce68",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1363560,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c15ce68",
+          "address": "0x8c15ce68",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e08ddf1063145977cd454400f4dd30e8469badd61b4368c12e4ceb5f878fbb4b",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c15d450",
+      "source": "src/objects/spawn_object_0893a8_8c15d450.c",
+      "address": "0x8c15d450",
+      "entry": "_spawn_object_0893a8_8c15d450",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1365072,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c15d450",
+          "address": "0x8c15d450",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "325387a0614eb952825ff1b984c6e3658e0c6d4410c258cbbdd4bf7a43d05dac",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c161fd8",
+      "source": "src/objects/spawn_object_0893a8_8c161fd8.c",
+      "address": "0x8c161fd8",
+      "entry": "_spawn_object_0893a8_8c161fd8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1384408,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c161fd8",
+          "address": "0x8c161fd8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "4e393699aab9b4eca4af96c81991951d7bdc0e6fbe38930e477eb013dd603b88",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c162864",
+      "source": "src/objects/spawn_object_0893a8_8c162864.c",
+      "address": "0x8c162864",
+      "entry": "_spawn_object_0893a8_8c162864",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1386596,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c162864",
+          "address": "0x8c162864",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "f5d7386f9de81ea086849b5ad5ce35def905c014329d77804cb2540aa587fe69",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c164f94",
+      "source": "src/objects/spawn_object_0893a8_8c164f94.c",
+      "address": "0x8c164f94",
+      "entry": "_spawn_object_0893a8_8c164f94",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1396628,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c164f94",
+          "address": "0x8c164f94",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "ae497aa7f069039d066f49fc15f48e41b5277395e51d707346582947c4603a0c",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c185394",
+      "source": "src/objects/spawn_object_0893a8_8c185394.c",
+      "address": "0x8c185394",
+      "entry": "_spawn_object_0893a8_8c185394",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1528724,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c185394",
+          "address": "0x8c185394",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "6adcffaf567e05d4ed58191d5e50feea84bc9d61650631dfc793ee7fbbd6537f",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c191a3c",
+      "source": "src/objects/spawn_object_0893a8_8c191a3c.c",
+      "address": "0x8c191a3c",
+      "entry": "_spawn_object_0893a8_8c191a3c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1579580,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c191a3c",
+          "address": "0x8c191a3c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "79db8357436106f1f8d0d29c85b8bf8a5187fd43c902097fb5f363e0fb3e0124",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1a08fc",
+      "source": "src/objects/spawn_object_0893a8_8c1a08fc.c",
+      "address": "0x8c1a08fc",
+      "entry": "_spawn_object_0893a8_8c1a08fc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1640700,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1a08fc",
+          "address": "0x8c1a08fc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b6cabfd29fe3b2319df369e336f653c7e754fd6e853ac83c0cae3c87c8ee3768",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1a1400",
+      "source": "src/objects/spawn_object_0893a8_8c1a1400.c",
+      "address": "0x8c1a1400",
+      "entry": "_spawn_object_0893a8_8c1a1400",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1643520,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1a1400",
+          "address": "0x8c1a1400",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c18dd50a06ba7bf38d4f65657a26c9ab707fc5cce273e359d4acebb423b09193",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1aa2dc",
+      "source": "src/objects/spawn_object_0893a8_8c1aa2dc.c",
+      "address": "0x8c1aa2dc",
+      "entry": "_spawn_object_0893a8_8c1aa2dc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1680092,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1aa2dc",
+          "address": "0x8c1aa2dc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "dd4272f934cbd0c44afa4f4d75360eb186e97a187797a3fa7990f582ab103d3c",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1aeb94",
+      "source": "src/objects/spawn_object_0893a8_8c1aeb94.c",
+      "address": "0x8c1aeb94",
+      "entry": "_spawn_object_0893a8_8c1aeb94",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1698708,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1aeb94",
+          "address": "0x8c1aeb94",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "1c107efec317397227444fc5f1860f8ef9370433ff573e4e845aa4f42c107c2f",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1af14c",
+      "source": "src/objects/spawn_object_0893a8_8c1af14c.c",
+      "address": "0x8c1af14c",
+      "entry": "_spawn_object_0893a8_8c1af14c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1700172,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1af14c",
+          "address": "0x8c1af14c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "cc843449c9501ec9f40f1163f923a34836ddffff69de2ccb8034f0b98365064a",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1af6e8",
+      "source": "src/objects/spawn_object_0893a8_8c1af6e8.c",
+      "address": "0x8c1af6e8",
+      "entry": "_spawn_object_0893a8_8c1af6e8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1701608,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1af6e8",
+          "address": "0x8c1af6e8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "87e5edd09ca644ec37c3001736245ce3bf8aa6f9b13da49b6732acaba1669463",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1c2420",
+      "source": "src/objects/spawn_object_0893a8_8c1c2420.c",
+      "address": "0x8c1c2420",
+      "entry": "_spawn_object_0893a8_8c1c2420",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1778720,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1c2420",
+          "address": "0x8c1c2420",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "280956cf93d4fb3683ffb3f26aec1dc6708df11e5b230b090a5516bfa48f932a",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c1d8444",
+      "source": "src/objects/spawn_object_0893a8_8c1d8444.c",
+      "address": "0x8c1d8444",
+      "entry": "_spawn_object_0893a8_8c1d8444",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1868868,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c1d8444",
+          "address": "0x8c1d8444",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "35f0e2a04824056c98b9e1b009d0e0277e509eac8437ee7803b90cdb9602ae8f",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c22a8ec",
+      "source": "src/objects/spawn_object_0893a8_8c22a8ec.c",
+      "address": "0x8c22a8ec",
+      "entry": "_spawn_object_0893a8_8c22a8ec",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2205932,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c22a8ec",
+          "address": "0x8c22a8ec",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "a2e63cfe3de9ab2e59bb627a1f8aa9e003c68f6d6071d1f84804e10e195830b3",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c24a0bc",
+      "source": "src/objects/spawn_object_0893a8_8c24a0bc.c",
+      "address": "0x8c24a0bc",
+      "entry": "_spawn_object_0893a8_8c24a0bc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2334908,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c24a0bc",
+          "address": "0x8c24a0bc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "52c64a598160195a429607a92694b8c6c9702210546f2d03bd00349c79c99231",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c24a7ec",
+      "source": "src/objects/spawn_object_0893a8_8c24a7ec.c",
+      "address": "0x8c24a7ec",
+      "entry": "_spawn_object_0893a8_8c24a7ec",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2336748,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c24a7ec",
+          "address": "0x8c24a7ec",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c5480c841f5a1f64459e7492947ebcc8102587793d4fb525fd762b012dc7bc9e",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c24ab2c",
+      "source": "src/objects/spawn_object_0893a8_8c24ab2c.c",
+      "address": "0x8c24ab2c",
+      "entry": "_spawn_object_0893a8_8c24ab2c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2337580,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c24ab2c",
+          "address": "0x8c24ab2c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "29f32d04e04f66bb589ec2d74c3afd7b10bc6434f363179fbd766cf9038c7847",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c24ae90",
+      "source": "src/objects/spawn_object_0893a8_8c24ae90.c",
+      "address": "0x8c24ae90",
+      "entry": "_spawn_object_0893a8_8c24ae90",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2338448,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c24ae90",
+          "address": "0x8c24ae90",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e21401975f404bfba3249637d74687543308db6e41ee66e357ffee9f72061b05",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_object_0893a8_8c259140",
+      "source": "src/objects/spawn_object_0893a8_8c259140.c",
+      "address": "0x8c259140",
+      "entry": "_spawn_object_0893a8_8c259140",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2396480,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c259140",
+          "address": "0x8c259140",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "758892c27868b966b1c868c2a882eccdcb2563d2fb91147ba19b08fa60272315",
+      "symbols": {},
+      "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_effect_alt_8c08b538",
+      "source": "src/effects/spawn_effect_alt_8c08b538.c",
+      "address": "0x8c08b538",
+      "entry": "_spawn_effect_alt_8c08b538",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 505144,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_alt_8c08b538",
+          "address": "0x8c08b538",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "e14b8b92db10f51c031f62974a8c95a67b36fd25039a25198ad6ba799311fc65",
+      "symbols": {},
+      "boundary_review": "Reviewed complete 76-byte allocation-wrapper raw range against proven spawn_effect_alt: saved R14/R13/R12/R11 and PR, heap/size pool load, allocation null guard, preserved three incoming pointer arguments passed to four-argument initializer, returned object and full four-word pool. Only observed heap/size/allocator/initializer words vary. All eight entries have catalog or aligned reference evidence and reviewed valid adjacent entry prologues. No shortened comparison or padding added.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_effect_alt_8c0aa730",
+      "source": "src/effects/spawn_effect_alt_8c0aa730.c",
+      "address": "0x8c0aa730",
+      "entry": "_spawn_effect_alt_8c0aa730",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 632624,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_alt_8c0aa730",
+          "address": "0x8c0aa730",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "d4950aab77bf1a65599e840f1865a5884279a5ddf37246b1c12017b9d1e8f646",
+      "symbols": {},
+      "boundary_review": "Reviewed complete 76-byte allocation-wrapper raw range against proven spawn_effect_alt: saved R14/R13/R12/R11 and PR, heap/size pool load, allocation null guard, preserved three incoming pointer arguments passed to four-argument initializer, returned object and full four-word pool. Only observed heap/size/allocator/initializer words vary. All eight entries have catalog or aligned reference evidence and reviewed valid adjacent entry prologues. No shortened comparison or padding added.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_effect_alt_8c21b968",
+      "source": "src/effects/spawn_effect_alt_8c21b968.c",
+      "address": "0x8c21b968",
+      "entry": "_spawn_effect_alt_8c21b968",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2144616,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_alt_8c21b968",
+          "address": "0x8c21b968",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "d6d083eb1864776e92f10bf7add008322747473f3d61109dfcce83b3601f2ea1",
+      "symbols": {},
+      "boundary_review": "Reviewed complete 76-byte allocation-wrapper raw range against proven spawn_effect_alt: saved R14/R13/R12/R11 and PR, heap/size pool load, allocation null guard, preserved three incoming pointer arguments passed to four-argument initializer, returned object and full four-word pool. Only observed heap/size/allocator/initializer words vary. All eight entries have catalog or aligned reference evidence and reviewed valid adjacent entry prologues. No shortened comparison or padding added.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_effect_alt_8c2285cc",
+      "source": "src/effects/spawn_effect_alt_8c2285cc.c",
+      "address": "0x8c2285cc",
+      "entry": "_spawn_effect_alt_8c2285cc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2196940,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_alt_8c2285cc",
+          "address": "0x8c2285cc",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "33ad7ca1c4452ae4cce97fe7821a9d3415f62fa41a784b25a8df0208e0e6f761",
+      "symbols": {},
+      "boundary_review": "Reviewed complete 76-byte allocation-wrapper raw range against proven spawn_effect_alt: saved R14/R13/R12/R11 and PR, heap/size pool load, allocation null guard, preserved three incoming pointer arguments passed to four-argument initializer, returned object and full four-word pool. Only observed heap/size/allocator/initializer words vary. All eight entries have catalog or aligned reference evidence and reviewed valid adjacent entry prologues. No shortened comparison or padding added.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_effect_alt_8c229538",
+      "source": "src/effects/spawn_effect_alt_8c229538.c",
+      "address": "0x8c229538",
+      "entry": "_spawn_effect_alt_8c229538",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2200888,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_alt_8c229538",
+          "address": "0x8c229538",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "dcbef66aaef4642a06c1993a09a33e490a3a433954e87b725d130f9a56d76add",
+      "symbols": {},
+      "boundary_review": "Reviewed complete 76-byte allocation-wrapper raw range against proven spawn_effect_alt: saved R14/R13/R12/R11 and PR, heap/size pool load, allocation null guard, preserved three incoming pointer arguments passed to four-argument initializer, returned object and full four-word pool. Only observed heap/size/allocator/initializer words vary. All eight entries have catalog or aligned reference evidence and reviewed valid adjacent entry prologues. No shortened comparison or padding added.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_effect_alt_8c229a4c",
+      "source": "src/effects/spawn_effect_alt_8c229a4c.c",
+      "address": "0x8c229a4c",
+      "entry": "_spawn_effect_alt_8c229a4c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2202188,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_alt_8c229a4c",
+          "address": "0x8c229a4c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "ad575b6fe04efa0366702c0eaff3abd68dbfc5a155a138954e665526ceeeab9d",
+      "symbols": {},
+      "boundary_review": "Reviewed complete 76-byte allocation-wrapper raw range against proven spawn_effect_alt: saved R14/R13/R12/R11 and PR, heap/size pool load, allocation null guard, preserved three incoming pointer arguments passed to four-argument initializer, returned object and full four-word pool. Only observed heap/size/allocator/initializer words vary. All eight entries have catalog or aligned reference evidence and reviewed valid adjacent entry prologues. No shortened comparison or padding added.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_effect_alt_8c22a16c",
+      "source": "src/effects/spawn_effect_alt_8c22a16c.c",
+      "address": "0x8c22a16c",
+      "entry": "_spawn_effect_alt_8c22a16c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2204012,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_alt_8c22a16c",
+          "address": "0x8c22a16c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "9bdcaa24f3746f59d3994264beaa6fd7debedba60224308c8e8c5f1ef7778fe3",
+      "symbols": {},
+      "boundary_review": "Reviewed complete 76-byte allocation-wrapper raw range against proven spawn_effect_alt: saved R14/R13/R12/R11 and PR, heap/size pool load, allocation null guard, preserved three incoming pointer arguments passed to four-argument initializer, returned object and full four-word pool. Only observed heap/size/allocator/initializer words vary. All eight entries have catalog or aligned reference evidence and reviewed valid adjacent entry prologues. No shortened comparison or padding added.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "spawn_effect_alt_8c246528",
+      "source": "src/effects/spawn_effect_alt_8c246528.c",
+      "address": "0x8c246528",
+      "entry": "_spawn_effect_alt_8c246528",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2319656,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_effect_alt_8c246528",
+          "address": "0x8c246528",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "12921727cb271621896c2110bcd50a347382a2799684ab1f434d2e216cec2953",
+      "symbols": {},
+      "boundary_review": "Reviewed complete 76-byte allocation-wrapper raw range against proven spawn_effect_alt: saved R14/R13/R12/R11 and PR, heap/size pool load, allocation null guard, preserved three incoming pointer arguments passed to four-argument initializer, returned object and full four-word pool. Only observed heap/size/allocator/initializer words vary. All eight entries have catalog or aligned reference evidence and reviewed valid adjacent entry prologues. No shortened comparison or padding added.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
     }
   ]
 }

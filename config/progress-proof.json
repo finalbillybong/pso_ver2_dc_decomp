@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "c214f9ae754030b30d0a9c4aec4ab1f9462deb075c2c257937abc7d97972dae6",
+    "config/project.json": "21d94dbdab15a6cd7025c4fe3387147699483338515ed030edf1d8864fd5056b",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/actor_mode_noop.c": "091e6fbf33d49b3ac1981b122742334eb3466776c1dbc6f65de3c8d221490738",
@@ -836,6 +836,14 @@
     "src/effects/spawn_effect_1.c": "cac14aaeb41fc657fefd94e2ec9282b5363adabc047d15df06758a277a4d5f54",
     "src/effects/spawn_effect_2.c": "2ebb65c6db800fec643da1930ab5fafd6f67978d7524b8fdb4f5814f49504d34",
     "src/effects/spawn_effect_alt.c": "5e397bf1bb439487ccf19c4c2be09187f7603bf9f50ca4c19354f4e9fdf0b41d",
+    "src/effects/spawn_effect_alt_8c08b538.c": "ea982d1c18bbd9c92d925e01aa295c52bc3eb513ff5139b273d25bbcdc485b4b",
+    "src/effects/spawn_effect_alt_8c0aa730.c": "e909bfaead4783ac42947df99467937365d2d196c6a145df0025a3cef94e9812",
+    "src/effects/spawn_effect_alt_8c21b968.c": "acb561b476d6c9671924073ba0493faebd899fbf37fc46b7a5961195f7d3f81f",
+    "src/effects/spawn_effect_alt_8c2285cc.c": "a8ba5972af26227c533c0e5f066795c70e4786b8b1155d12d1896a9f5704d6b3",
+    "src/effects/spawn_effect_alt_8c229538.c": "d2949cd3603007d734e89c4cdfd23725cdc75c520df8123c4557f9f071c14655",
+    "src/effects/spawn_effect_alt_8c229a4c.c": "16cfaa1c5ec36b2a521b1687edd2e037c42b6016d3f845415f9ad94e41586149",
+    "src/effects/spawn_effect_alt_8c22a16c.c": "f78c0702d60aa1e1de453cf5f4f05426a16d85f8bfd3ac8d736d927a094b4db0",
+    "src/effects/spawn_effect_alt_8c246528.c": "79fb6412b78973633bfa943e9b2d5378c9f6ab85cb47225e883369b6bf4d4124",
     "src/effects/start_effect_manager.c": "abd65f000125dbae277911a4581065b9f630159dbdc907cb1b7ab74e2f5873b5",
     "src/effects/start_fade_state.c": "5551dbaeeda3358c1be79309b44c7e3b304b0664d911da7847f1f0dbaa108435",
     "src/effects/start_reverse_fade.c": "8448ad95f39ba0aa061cb222fe800875c19eafeba1173388d69ea3c2a70836b4",
@@ -1335,10 +1343,80 @@
     "src/objects/settings_scalar_access.c": "baed82bd0258c932d98d507e6a0c2e49510a9b286a9927740fa28040bc989935",
     "src/objects/spawn_object_088ce0.c": "59a8a8d2bb7ad037bac6b8b1bc8488f6fffc0a46d5f5ad07b1a119c3f6f31c0f",
     "src/objects/spawn_object_0893a8.c": "c7007a751223a7920acdbe3825b0ba269b035f1909685fd8197a1689a9251872",
+    "src/objects/spawn_object_0893a8_8c0104a0.c": "38e0d744925f6d5060cb3ac32e484c4fa4803d1016ee2f1deb49bf82ce702f89",
+    "src/objects/spawn_object_0893a8_8c034230.c": "57ed70423b34119ba675dd1aff450d2fc18a59532673fda91b06f9960404aac8",
+    "src/objects/spawn_object_0893a8_8c034274.c": "2a3e2865d86f8d8f808e1af3ded60eaf5d829c2f7e745a07879acd900f1d4320",
     "src/objects/spawn_object_0893a8_8c0343b8.c": "568dba68fe5595cc15b182ad2422170e5a425b8554e93dd27675e4c63ccd18ed",
+    "src/objects/spawn_object_0893a8_8c0343fc.c": "8acecedcd1d624f2b3663002279baa4587f578a7af3f351e4d6c7048a3f950c6",
     "src/objects/spawn_object_0893a8_8c034440.c": "d78e51f784c6e37e86c32424cc76a1cd661e578a3dab3e91771f467598af5bf5",
+    "src/objects/spawn_object_0893a8_8c057c00.c": "9581db721af2d0fdbc69dad9315264b86efac2ca199e4c114258807bd3811f54",
+    "src/objects/spawn_object_0893a8_8c05c974.c": "7185c1c141a557bf861ccbc43a2353f21f59bd988abac00b52a1b7403c7718fa",
+    "src/objects/spawn_object_0893a8_8c06092c.c": "ee6be5a2d198a6aa9dfe2a97ad64d9e2157c59fdd123ad46a811f69c0242707f",
+    "src/objects/spawn_object_0893a8_8c079270.c": "090453dd7ed413c4a1bb805a8825e0591ce0f9ceb104183212cfa188f53662ca",
+    "src/objects/spawn_object_0893a8_8c0800a8.c": "1f6d0211f334e55ae5b21c674aa03c61a7b56b9121ace0ff0368e3c04906764f",
+    "src/objects/spawn_object_0893a8_8c080abc.c": "eec20044c99cb1c90dfa128cacc7be568173ba853dddd2d6f426e616e2257dfb",
+    "src/objects/spawn_object_0893a8_8c081080.c": "aa05e7803e5012f01b3df2e23458a3e445118e0922bf8cb4a14e123662c1de37",
+    "src/objects/spawn_object_0893a8_8c081790.c": "aec59b6d55073e717044c48f3fb8673e213c00b029982ba39ed23adbc10496ed",
+    "src/objects/spawn_object_0893a8_8c081a78.c": "185628353b04390e31a774245112e605b9d900e54ba45fbae206726e58122d3f",
     "src/objects/spawn_object_0893a8_8c08213c.c": "8c85a8e1723fa0642a0438730b51bdc3b73fd7ee3acd3ba57ded70a1dfa65450",
+    "src/objects/spawn_object_0893a8_8c083434.c": "8f0a2f0af1895c61cf701dbfd2c98cf92e722cf1ad9b366a0dcba11eb05a67f6",
+    "src/objects/spawn_object_0893a8_8c085ec8.c": "dcfd98c981e28aa55010ef78c1d430384158398e995f6069b7c645aa0dbd02a6",
+    "src/objects/spawn_object_0893a8_8c086104.c": "6aa230ffc681a050e81cf64795d516b3f78d2178e9bfb2be26b17fe0bb7a4d86",
+    "src/objects/spawn_object_0893a8_8c09515c.c": "6533a4c8f2e7be818ec6bd85d30311669e4a77c3db3fd25b179495e595520eb9",
+    "src/objects/spawn_object_0893a8_8c0c8b80.c": "5d9715ac4de2daac1dd026daa0733a4c43c5a5355d69b3abad612b73dab5dc74",
+    "src/objects/spawn_object_0893a8_8c0d15dc.c": "bd56c0017fbbdfd6e16f317b2d6873447e428ee7e3ff9324c2e69fed11ec0e16",
+    "src/objects/spawn_object_0893a8_8c0d7ba8.c": "27edb9c83cc8a39cae5e2c98197ab2d5c51a992c468c09d33cf1a24e3a30bd02",
+    "src/objects/spawn_object_0893a8_8c0ed844.c": "2f2dcf0a2441ca901f024bdd7396961a595503a6910e81f56faad0c3bf78cc07",
+    "src/objects/spawn_object_0893a8_8c0f1b60.c": "4cf58d5f100a934dea01102a55482084715fa341163c833caffc74e3ee35e061",
+    "src/objects/spawn_object_0893a8_8c0f2158.c": "18d50a5c3fe51b59dec1cf105e3aeecebfe957812199e5285aff34ca6ab470bf",
+    "src/objects/spawn_object_0893a8_8c0f2870.c": "0936d0e345c787bf286219142950ae96430ee1a4b5a935bcddaf5f3b829d7d20",
+    "src/objects/spawn_object_0893a8_8c0f2bc0.c": "c491ae9e23cd94cd39a577e2d18e161d6a59998008dedeeffd3d65be264cffc5",
+    "src/objects/spawn_object_0893a8_8c0f2f10.c": "eb608793b9e3301c06f1e602b03faf0b138d56d068550d1593c10a65de972dc3",
+    "src/objects/spawn_object_0893a8_8c0f32a8.c": "e3a613a6a5174011f514c56f6da94758c7b64f9104c632f765e783603d45a205",
+    "src/objects/spawn_object_0893a8_8c0f4820.c": "bad30327488502895d4fd1e52d03e00aeb256cc849dba09a4dde26f8cbad9d87",
     "src/objects/spawn_object_0893a8_8c10b7d0.c": "2dc8a29770ce04b48482b49742ce51d3d5086258c90d0e79927bc56797372c41",
+    "src/objects/spawn_object_0893a8_8c1139e0.c": "6efcf35517a3e0b4342c330a5436f7c9523c76337abd3df711676b8cc5fd2eb3",
+    "src/objects/spawn_object_0893a8_8c114058.c": "a2e2b4db03747d086076ee8fd7def4fe140c67f375f93d94fc16ca42ae7fe900",
+    "src/objects/spawn_object_0893a8_8c114610.c": "5a7604d52935cf53bf70eb0d2d5d625a0d48504c042b7b4e52a9c52fe852dcfc",
+    "src/objects/spawn_object_0893a8_8c11d878.c": "6d0f99d4ca9c2d588b9690d4baa9b2c5edb613b2e33522eb290e26bf75f4e69c",
+    "src/objects/spawn_object_0893a8_8c12911c.c": "bbe2d49eb4972c2ae35441b1f60895cb3b4fc2958818e9b36228fff85ec70720",
+    "src/objects/spawn_object_0893a8_8c130714.c": "eb0d70a22772d6bfe68d924c557051f539307cb112ba608a880d6d4bac41ac73",
+    "src/objects/spawn_object_0893a8_8c130bb4.c": "e4229480826115e27a73114192804ca93dc5059cc3bc88e957a12fd58147a22d",
+    "src/objects/spawn_object_0893a8_8c1326c4.c": "9af4a831777ef9c1eede90e01f21d306751ac5fc38c12e7927634cfe1d43b0c4",
+    "src/objects/spawn_object_0893a8_8c134bd8.c": "59851850e62937be404a98da980ba4b7f985ec0885437164db9cb33d63be15d0",
+    "src/objects/spawn_object_0893a8_8c135174.c": "504f9293d3343baa839ad3b10f33ed6cf0ab6a299b8b6d6cd0c4f0c200ae93d1",
+    "src/objects/spawn_object_0893a8_8c1357e8.c": "845ff75da2d41af877c7e54de488d7d788eb7879e0c3c7b07fce0bc39d2a065b",
+    "src/objects/spawn_object_0893a8_8c1363b8.c": "90091851cd3ab3cca96a882a2b6db9c01c97b71df4feefb9f1f9761607a12370",
+    "src/objects/spawn_object_0893a8_8c136e20.c": "66f5d4a4ce82946d7e39ef54147abf0620a9561379d16fd22a754e846d5e030b",
+    "src/objects/spawn_object_0893a8_8c13ddcc.c": "da8c8f3e3000977e7064b0e48dca3b30ba5bb63d0ad28ddcbcc6014552211634",
+    "src/objects/spawn_object_0893a8_8c13e090.c": "e859e506290bb000e4f20cf89e9ea5f7c2d956fae582dada72c607d527a287bb",
+    "src/objects/spawn_object_0893a8_8c13e37c.c": "ac37f5c12d057539bdeeedc960cf7834d3d060813fd251e41f412559ceb4172c",
+    "src/objects/spawn_object_0893a8_8c13e668.c": "ea6332e22028b5d9067ce5aec884609466a1189830fb4217d3d2ab14e8a6d6e2",
+    "src/objects/spawn_object_0893a8_8c141594.c": "2720c7354e8c5d433b75a70d91831bf59f02edc5505113fee0cec688b0c73e79",
+    "src/objects/spawn_object_0893a8_8c14348c.c": "2b28b7cfd175fdea8913d8f7be50e3cf97bb4c058a981f3d683c005e24ce9a35",
+    "src/objects/spawn_object_0893a8_8c14ce24.c": "5db2bfe90f5de1eeb24f88543e7c020ef6c1070fb70f5ac9fa05c30dc0403f4c",
+    "src/objects/spawn_object_0893a8_8c157f64.c": "03ec0faa66150d0b1f2650bfc7442bb13c5bf3e6867ccc93bcc62ff8c0096aff",
+    "src/objects/spawn_object_0893a8_8c15ce68.c": "c259b06826b8f3c69271003d4604a87036cf876b707c268a6e5429db4269b38a",
+    "src/objects/spawn_object_0893a8_8c15d450.c": "6ea5deb01ddb0ee809cadecd41bc64b7390f4b209fb8df271a9aa9aec8ec13bd",
+    "src/objects/spawn_object_0893a8_8c161fd8.c": "c3f08d6deea2396f5b840c344ea6b0f8e2a0f86fa51c6e0df83ce1dfdd40e802",
+    "src/objects/spawn_object_0893a8_8c162864.c": "695256b1e62132fe83a125f93b2cec3afd1b4fb245dc05b5f937278e353b1506",
+    "src/objects/spawn_object_0893a8_8c164f94.c": "c33bc20cb74c3d95ff52db2e4bdbb8d8c58ffdf7243bae80201511abf8902fb6",
+    "src/objects/spawn_object_0893a8_8c185394.c": "5cc9dacde595afcbc330d1b93cfc69a324d3d12276eb4aa590468a63eaaf7ddf",
+    "src/objects/spawn_object_0893a8_8c191a3c.c": "c53d1f1d9452b835ec043d86a77197b1f34739d85102f5d49a331fa881131cf1",
+    "src/objects/spawn_object_0893a8_8c1a08fc.c": "b77ca6c150eabc56626c94d60ef78733e23353f400c5611ff8d0875bc38ec9a4",
+    "src/objects/spawn_object_0893a8_8c1a1400.c": "e9c73fe6e8e8192507cedd7fb124a9128f24ec98ed31223f351f2b98171aeafe",
+    "src/objects/spawn_object_0893a8_8c1aa2dc.c": "aea17f31926eb9060c84c57ddc3ec90cf8b0e06e72b9c79aa3484cb74cbc9540",
+    "src/objects/spawn_object_0893a8_8c1aeb94.c": "af4b33413a860abbf098a8191985b841ee4374471ea04f4a79abf3fea68fe2de",
+    "src/objects/spawn_object_0893a8_8c1af14c.c": "953abba451bcd5994a6d24bec38edbbf1a0e69997c66900167f9570b473ac2fb",
+    "src/objects/spawn_object_0893a8_8c1af6e8.c": "6577afcf05b4e78bddf2c904310565bfd0c33ad59395baf239117c7cd9bcac01",
+    "src/objects/spawn_object_0893a8_8c1c2420.c": "4be3ba6367addd6b87c238cc44313c8503cc005dc54f8cb31ef478386a933c73",
+    "src/objects/spawn_object_0893a8_8c1d8444.c": "00cca67a3debfb4960d9419bbffee0d47cedd7455287759959f044c88740ec97",
+    "src/objects/spawn_object_0893a8_8c22a8ec.c": "fa61bb1e32d3214277096ada6ffe1c3f5b723ab4b37a7afa390a6695304e3c10",
+    "src/objects/spawn_object_0893a8_8c24a0bc.c": "73da0e4290c211e05ed1b4ba7d5e3579d9c331413fe1137e7440d61156e129f9",
+    "src/objects/spawn_object_0893a8_8c24a7ec.c": "a54b7834cc359b308d9a2fcce3180f8dfcbd131a7b0dbb2c21b6b21102c3276b",
+    "src/objects/spawn_object_0893a8_8c24ab2c.c": "080d93377a76498bc1b34955137735b90013e40104d8a386c715d9e1f7b127b3",
+    "src/objects/spawn_object_0893a8_8c24ae90.c": "3543ed70393bf3bad20bf761f89bcad591a5a635f0d10462c924480efcdd4f59",
+    "src/objects/spawn_object_0893a8_8c259140.c": "32dd69b9743a3a8330245c688130df9a84e3294ee1fa9d980198584a57ab9e89",
     "src/objects/spawn_object_19d108.c": "b104a5265a3377df9c58cd43787607f7a05f0d2436b92b2e9ae6bbad11e50141",
     "src/objects/spawn_object_19d108_8c034374.c": "8cfa61b9da29a0f90b035b01f5b074e26b88f544890fd61d8b737e707499c31a",
     "src/objects/spawn_object_19d270.c": "94eb8907835b71626bf1d409ca1e64c80bea21d4d0d076306997e4e9e245f44f",
@@ -1477,6 +1555,17 @@
     "-O2"
   ],
   "unit_flags": {
+    "spawn_object_0893a8_8c0104a0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c0111d0": [
       "-proc",
       "SH4",
@@ -2453,6 +2542,28 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c034230": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c034274": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_1ab324_8c0342b8": [
       "-proc",
       "SH4",
@@ -2476,6 +2587,17 @@
       "-O2"
     ],
     "spawn_object_0893a8_8c0343b8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c0343fc": [
       "-proc",
       "SH4",
       "-endian",
@@ -3951,6 +4073,17 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c057c00": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c059c30": [
       "-proc",
       "SH4",
@@ -3985,6 +4118,17 @@
       "-O2"
     ],
     "destroy_color_rise_8c05bd84": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c05c974": [
       "-proc",
       "SH4",
       "-endian",
@@ -4160,6 +4304,17 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c06092c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c0651e8": [
       "-proc",
       "SH4",
@@ -4325,6 +4480,17 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c079270": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c07b480": [
       "-proc",
       "SH4",
@@ -4391,6 +4557,17 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c0800a8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c080280": [
       "-proc",
       "SH4",
@@ -4424,6 +4601,39 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c080abc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c081080": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c081790": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c081864": [
       "-proc",
       "SH4",
@@ -4435,7 +4645,51 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c081a78": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c08213c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c083434": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c085ec8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c086104": [
       "-proc",
       "SH4",
       "-endian",
@@ -4523,6 +4777,17 @@
       "off",
       "-O2"
     ],
+    "spawn_effect_alt_8c08b538": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_color_rise_8c08b714": [
       "-proc",
       "SH4",
@@ -4568,6 +4833,17 @@
       "-O2"
     ],
     "destroy_object_8c08de2c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c09515c": [
       "-proc",
       "SH4",
       "-endian",
@@ -5916,6 +6192,17 @@
       "-O2"
     ],
     "check_effect_motion_gate": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_effect_alt_8c0aa730": [
       "-proc",
       "SH4",
       "-endian",
@@ -8406,6 +8693,17 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c0c8b80": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "enter_actor_mode_9": [
       "-proc",
       "SH4",
@@ -8626,7 +8924,29 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c0d15dc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "handle_actor_idle_event_8c0d22bc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c0d7ba8": [
       "-proc",
       "SH4",
       "-endian",
@@ -8747,6 +9067,17 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c0ed844": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c0ee430": [
       "-proc",
       "SH4",
@@ -8813,7 +9144,84 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c0f1b60": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c0f2158": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c0f22f8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c0f2870": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c0f2bc0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c0f2f10": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c0f32a8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c0f4820": [
       "-proc",
       "SH4",
       "-endian",
@@ -9176,6 +9584,39 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c1139e0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c114058": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c114610": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c118918": [
       "-proc",
       "SH4",
@@ -9221,6 +9662,17 @@
       "-O2"
     ],
     "destroy_object_8c119e28": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c11d878": [
       "-proc",
       "SH4",
       "-endian",
@@ -9495,7 +9947,40 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c12911c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c12ae0c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c130714": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c130bb4": [
       "-proc",
       "SH4",
       "-endian",
@@ -9528,7 +10013,29 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c1326c4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c133718": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c134bd8": [
       "-proc",
       "SH4",
       "-endian",
@@ -9550,7 +10057,40 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c135174": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c1357e8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c1362a8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c1363b8": [
       "-proc",
       "SH4",
       "-endian",
@@ -9605,6 +10145,17 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c136e20": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c13735c": [
       "-proc",
       "SH4",
@@ -9627,7 +10178,62 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c13ddcc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c13e090": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c13e37c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c13e668": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c140b8c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c141594": [
       "-proc",
       "SH4",
       "-endian",
@@ -9649,7 +10255,29 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c14348c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c14b6cc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c14ce24": [
       "-proc",
       "SH4",
       "-endian",
@@ -9726,6 +10354,17 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c157f64": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c15b004": [
       "-proc",
       "SH4",
@@ -9759,7 +10398,29 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c15ce68": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c15d340": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c15d450": [
       "-proc",
       "SH4",
       "-endian",
@@ -9814,7 +10475,40 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c161fd8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c162754": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c162864": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c164f94": [
       "-proc",
       "SH4",
       "-endian",
@@ -10298,6 +10992,17 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c185394": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c185448": [
       "-proc",
       "SH4",
@@ -10464,6 +11169,17 @@
       "-O2"
     ],
     "destroy_object_8c1914c0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c191a3c": [
       "-proc",
       "SH4",
       "-endian",
@@ -11477,6 +12193,28 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c1a08fc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c1a1400": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c1a1874": [
       "-proc",
       "SH4",
@@ -11687,6 +12425,17 @@
       "-O2"
     ],
     "destroy_object_8c1a9d14": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c1aa2dc": [
       "-proc",
       "SH4",
       "-endian",
@@ -11954,6 +12703,39 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c1aeb94": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c1af14c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c1af6e8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_view_effect_8c1afa0c": [
       "-proc",
       "SH4",
@@ -12098,6 +12880,17 @@
       "-O2"
     ],
     "destroy_object_8c1c0e34": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c1c2420": [
       "-proc",
       "SH4",
       "-endian",
@@ -12439,6 +13232,17 @@
       "-O2"
     ],
     "operation_194098_8c1d5be4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c1d8444": [
       "-proc",
       "SH4",
       "-endian",
@@ -12801,6 +13605,17 @@
       "off",
       "-O2"
     ],
+    "spawn_effect_alt_8c21b968": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c21c23c": [
       "-proc",
       "SH4",
@@ -13109,7 +13924,40 @@
       "off",
       "-O2"
     ],
+    "spawn_effect_alt_8c2285cc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "refresh_follow_effect_8c228ae8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_effect_alt_8c229538": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_effect_alt_8c229a4c": [
       "-proc",
       "SH4",
       "-endian",
@@ -13131,7 +13979,29 @@
       "off",
       "-O2"
     ],
+    "spawn_effect_alt_8c22a16c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "refresh_follow_effect_8c22a53c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c22a8ec": [
       "-proc",
       "SH4",
       "-endian",
@@ -14310,6 +15180,17 @@
       "off",
       "-O2"
     ],
+    "spawn_effect_alt_8c246528": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c246780": [
       "-proc",
       "SH4",
@@ -14453,7 +15334,51 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c24a0bc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c24a220": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c24a7ec": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c24ab2c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "spawn_object_0893a8_8c24ae90": [
       "-proc",
       "SH4",
       "-endian",
@@ -15608,6 +16533,17 @@
       "off",
       "-O2"
     ],
+    "spawn_object_0893a8_8c259140": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c2591fc": [
       "-proc",
       "SH4",
@@ -15809,6 +16745,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4053828,
+  "source_only_rejected_retained_bytes": 4048460,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }
