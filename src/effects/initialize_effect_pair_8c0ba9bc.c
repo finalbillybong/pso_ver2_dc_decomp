@@ -1,0 +1,2 @@
+#include "src/include/effect_template_init.h"
+EffectPairInit *initialize_effect_pair_8c0ba9bc(EffectPairInit *effect,Vector3 *first,Vector3 *second,void *context,unsigned short value,void *resource){((void (*)(EffectPairInit *,void *))0x8c0330e4)(effect,resource);effect->dispatch=(void *)0x8c266228;effect->first=*first;effect->second=*second;effect->context=context;effect->zero32=0;effect->value64=value;return effect;}
