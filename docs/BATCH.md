@@ -1,87 +1,68 @@
-# Reconstruction batch: 164: dispatch-referenced destructor family
+# Reconstruction batch: 165: dispatch-referenced destructor family
 
-50 new matching functions / 3,400 bytes. All 729 prior functions preserved.
+50 new matching functions / 3,400 bytes. All 779 prior functions preserved.
 
-779 exact functions in 721 modules; 69,996 compiled function-range bytes; 0 reconstructed data bytes; 4,092,916 retained reference bytes. Whole-image coverage 1.6814% is not code completion.
+829 exact functions in 771 modules; 73,396 compiled function-range bytes; 0 reconstructed data bytes; 4,089,516 retained reference bytes. Whole-image coverage 1.7631% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| destroy_object_8c0111d0 | 0x8c0111d0 | 68 |
-| destroy_object_8c011fc4 | 0x8c011fc4 | 68 |
-| destroy_object_8c0130e8 | 0x8c0130e8 | 68 |
-| destroy_object_8c013570 | 0x8c013570 | 68 |
-| destroy_object_8c0135b8 | 0x8c0135b8 | 68 |
-| destroy_object_8c013f10 | 0x8c013f10 | 68 |
-| destroy_object_8c01410c | 0x8c01410c | 68 |
-| destroy_object_8c01bb30 | 0x8c01bb30 | 68 |
-| destroy_object_8c02d110 | 0x8c02d110 | 68 |
-| destroy_object_8c032e38 | 0x8c032e38 | 68 |
-| destroy_object_8c033050 | 0x8c033050 | 68 |
-| destroy_object_8c03b8b8 | 0x8c03b8b8 | 68 |
-| destroy_object_8c03c1d0 | 0x8c03c1d0 | 68 |
-| destroy_object_8c03c214 | 0x8c03c214 | 68 |
-| destroy_object_8c03c258 | 0x8c03c258 | 68 |
-| destroy_object_8c03c29c | 0x8c03c29c | 68 |
-| destroy_object_8c03c2e0 | 0x8c03c2e0 | 68 |
-| destroy_object_8c03c324 | 0x8c03c324 | 68 |
-| destroy_object_8c03c368 | 0x8c03c368 | 68 |
-| destroy_object_8c040284 | 0x8c040284 | 68 |
-| destroy_object_8c04074c | 0x8c04074c | 68 |
-| destroy_object_8c0407c0 | 0x8c0407c0 | 68 |
-| destroy_object_8c040a74 | 0x8c040a74 | 68 |
-| destroy_object_8c040d40 | 0x8c040d40 | 68 |
-| destroy_object_8c0419e8 | 0x8c0419e8 | 68 |
-| destroy_object_8c04bb2c | 0x8c04bb2c | 68 |
-| destroy_object_8c0577b4 | 0x8c0577b4 | 68 |
-| destroy_object_8c05ec70 | 0x8c05ec70 | 68 |
-| destroy_object_8c05edd8 | 0x8c05edd8 | 68 |
-| destroy_object_8c05f30c | 0x8c05f30c | 68 |
-| destroy_object_8c0651e8 | 0x8c0651e8 | 68 |
-| destroy_object_8c077908 | 0x8c077908 | 68 |
-| destroy_object_8c077a08 | 0x8c077a08 | 68 |
-| destroy_object_8c077ba0 | 0x8c077ba0 | 68 |
-| destroy_object_8c077be4 | 0x8c077be4 | 68 |
-| destroy_object_8c077d9c | 0x8c077d9c | 68 |
-| destroy_object_8c077e84 | 0x8c077e84 | 68 |
-| destroy_object_8c077f60 | 0x8c077f60 | 68 |
-| destroy_object_8c07805c | 0x8c07805c | 68 |
-| destroy_object_8c078134 | 0x8c078134 | 68 |
-| destroy_object_8c078320 | 0x8c078320 | 68 |
-| destroy_object_8c0785b4 | 0x8c0785b4 | 68 |
-| destroy_object_8c07868c | 0x8c07868c | 68 |
-| destroy_object_8c078788 | 0x8c078788 | 68 |
-| destroy_object_8c07b480 | 0x8c07b480 | 68 |
-| destroy_object_8c07b5a8 | 0x8c07b5a8 | 68 |
-| destroy_object_8c07ca70 | 0x8c07ca70 | 68 |
-| destroy_object_8c07cd48 | 0x8c07cd48 | 68 |
-| destroy_object_8c07d168 | 0x8c07d168 | 68 |
-| destroy_object_8c07fdb8 | 0x8c07fdb8 | 68 |
+| destroy_object_8c080280 | 0x8c080280 | 68 |
+| destroy_object_8c081864 | 0x8c081864 | 68 |
+| destroy_object_8c0861cc | 0x8c0861cc | 68 |
+| destroy_object_8c086db0 | 0x8c086db0 | 68 |
+| destroy_object_8c08a398 | 0x8c08a398 | 68 |
+| destroy_object_8c08a3dc | 0x8c08a3dc | 68 |
+| destroy_object_8c08a63c | 0x8c08a63c | 68 |
+| destroy_object_8c08b35c | 0x8c08b35c | 68 |
+| destroy_object_8c08b900 | 0x8c08b900 | 68 |
+| destroy_object_8c08de2c | 0x8c08de2c | 68 |
+| destroy_object_8c096514 | 0x8c096514 | 68 |
+| destroy_object_8c09674c | 0x8c09674c | 68 |
+| destroy_object_8c0986b0 | 0x8c0986b0 | 68 |
+| destroy_object_8c098d54 | 0x8c098d54 | 68 |
+| destroy_object_8c09a0ec | 0x8c09a0ec | 68 |
+| destroy_object_8c09a954 | 0x8c09a954 | 68 |
+| destroy_object_8c09ae88 | 0x8c09ae88 | 68 |
+| destroy_object_8c09ce5c | 0x8c09ce5c | 68 |
+| destroy_object_8c09d6fc | 0x8c09d6fc | 68 |
+| destroy_object_8c09fc3c | 0x8c09fc3c | 68 |
+| destroy_object_8c09fe00 | 0x8c09fe00 | 68 |
+| destroy_object_8c0a9c78 | 0x8c0a9c78 | 68 |
+| destroy_object_8c0aad54 | 0x8c0aad54 | 68 |
+| destroy_object_8c0abf3c | 0x8c0abf3c | 68 |
+| destroy_object_8c0ac240 | 0x8c0ac240 | 68 |
+| destroy_object_8c0ac630 | 0x8c0ac630 | 68 |
+| destroy_object_8c0ac8e0 | 0x8c0ac8e0 | 68 |
+| destroy_object_8c0adbc8 | 0x8c0adbc8 | 68 |
+| destroy_object_8c0b0380 | 0x8c0b0380 | 68 |
+| destroy_object_8c0b05ec | 0x8c0b05ec | 68 |
+| destroy_object_8c0b2984 | 0x8c0b2984 | 68 |
+| destroy_object_8c0b3048 | 0x8c0b3048 | 68 |
+| destroy_object_8c0b36f4 | 0x8c0b36f4 | 68 |
+| destroy_object_8c0b650c | 0x8c0b650c | 68 |
+| destroy_object_8c0b67a0 | 0x8c0b67a0 | 68 |
+| destroy_object_8c0b691c | 0x8c0b691c | 68 |
+| destroy_object_8c0b7c5c | 0x8c0b7c5c | 68 |
+| destroy_object_8c0b83c0 | 0x8c0b83c0 | 68 |
+| destroy_object_8c0b8c24 | 0x8c0b8c24 | 68 |
+| destroy_object_8c0b91c8 | 0x8c0b91c8 | 68 |
+| destroy_object_8c0b95fc | 0x8c0b95fc | 68 |
+| destroy_object_8c0ba7bc | 0x8c0ba7bc | 68 |
+| destroy_object_8c0baa20 | 0x8c0baa20 | 68 |
+| destroy_object_8c0bad1c | 0x8c0bad1c | 68 |
+| destroy_object_8c0baf2c | 0x8c0baf2c | 68 |
+| destroy_object_8c0bb658 | 0x8c0bb658 | 68 |
+| destroy_object_8c0cb374 | 0x8c0cb374 | 68 |
+| destroy_object_8c0cb410 | 0x8c0cb410 | 68 |
+| destroy_object_8c0cb578 | 0x8c0cb578 | 68 |
+| destroy_object_8c0cb7e0 | 0x8c0cb7e0 | 68 |
 
-## Evidence and measured work
+All 50 hypotheses predict only four observed address-literal changes in the proven nullable destructor. Each complete 68-byte match includes all instructions, delay slots, literals and natural alignment. All entries have independent dispatch-table references and reviewed adjacent boundaries; offset-checked provisional types and dependencies are preserved.
 
-Fifty previously unattempted entries omitted from the Ghidra function catalog
-match the proven 68-byte destructor shape. Each is independently referenced at
-its own dispatch-table slot eight. All instructions, branch/call/return delays,
-natural padding, four address literals and adjacent entry boundaries were
-reviewed. Ordinary generated C preserves the null guard, dispatch assignment,
-base call with zero and signed release condition. No binary output is substituted.
+50 candidate trials produced 50 exact matches and zero duplicate outputs, with 1.485 seconds of recorded compilation. A further 100 compilations reproduce admission twice; they are verification, not additional experiments or gains. No failed investigation or parked-target retry occurred.
 
-All 50 first hypotheses matched, with zero duplicate trial outputs and no new
-parked targets. The additional inventory of 448 matching instruction shapes is
-not admitted and receives no completion credit. Previously parked investigations
-remain parked. Referenced dispatch tables are not reconstructed static data.
+Verification ran once for this integration: four fresh project builds across both checkouts, exact integrated images, five-function proofs, 58 research tests and 63 public tests. Source-only rejection preserved artifacts. Verification commands took 48.805 seconds in research and 50.058 seconds in public, running concurrently. Unchanged focused evidence was reused; only new ranges were exported.
 
-Candidate compilation recorded 1.48 seconds. Reproductions are validation, not new hypotheses. This batch used four fresh project builds, two integrated-image checks and two
-five-function proofs, with 58 research and 63 public tests. Source-only rejection
-preserved existing build artifacts. Prior source/header hashes and all 729
-published matches were preserved. Only new ranges were exported; unchanged
-focused evidence was reused with its full provenance checks.
+The representative five earlier small batches added 19 functions / 1,936 bytes with 38 hypotheses, four duplicate outputs, 20 full builds and 555 test executions. This batch adds 50 functions / 3,400 bytes with 50 hypotheses, no duplicates, four full builds and 121 test executions. The measured verification overhead per gained byte is lower; task-attributed token/cost records and historical timings are unavailable, so no cost or runtime saving is claimed. See [EFFICIENCY.md](EFFICIENCY.md) for the original bounded-pass comparison.
 
-Verification commands recorded 45.30 seconds in research and 46.43 seconds in public, run concurrently. Token and cost measurements remain unavailable. See [EFFICIENCY.md](EFFICIENCY.md)
-for the original measured comparison, including sunk small-batch work.
-
-The sole workflow adjustment permits explicitly reviewed entries missing from
-the catalog; an existing synthetic guard test covers this case. Automatic
-historical exclusion, exact comparisons, dependencies, offset checks and privacy
-checks remain unchanged. Continue with the next reviewed group, accumulating
-20–50 functions before full verification and publication.
+Tooling-only work fixes automatic refresh of the research pickup paragraph; it receives no byte credit. The two primary targets remain parked and incomplete. Zero standalone data bytes are added. Another 398 shapes remain in the candidate inventory, including 50 already under cheap trial; none count until admitted and verified. Reproduce with `tools/reconstruct.py verify` and the commands in [RECONSTRUCTION_WORKFLOW.md](RECONSTRUCTION_WORKFLOW.md).

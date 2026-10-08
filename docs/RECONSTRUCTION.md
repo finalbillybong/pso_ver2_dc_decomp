@@ -7839,3 +7839,7 @@ rejection. Continue into matrix setup, vector transforms and model-node helpers.
 ## Dispatch-referenced destructor family, batch 164
 
 50 complete exact functions add 3,400 bytes. All 729 prior matches remain unchanged. Totals: 779 functions / 721 modules / 69,996 compiled function-range bytes / zero reconstructed data bytes / 4,092,916 retained reference bytes. All first hypotheses matched. Each catalog-omitted entry has a self dispatch-table reference and reviewed adjacent boundary. See [BATCH.md](BATCH.md) for measured verification and remaining candidate inventory.
+
+## Dispatch-referenced destructor family, batch 165
+
+50 complete exact functions add 3,400 bytes, preserving all 779 prior matches. Totals: 829 functions / 771 modules / 73,396 compiled function-range bytes / zero reconstructed data bytes / 4,089,516 retained reference bytes. All first hypotheses matched with zero duplicate outputs. Four fresh builds and 121 test executions cover this larger batch. See [BATCH.md](BATCH.md) for measured verification and [EFFICIENCY.md](EFFICIENCY.md) for the earlier comparison.

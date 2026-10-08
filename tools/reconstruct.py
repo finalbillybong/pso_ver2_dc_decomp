@@ -253,7 +253,7 @@ def report_batch(baseline, findings, verification, name):
             content = content.replace(f'{previous_size:,}', f'{size:,}').replace(f'{total-previous_size:,}', f'{total-size:,}').replace(f'{previous_size/total*100:.4f}%', f'{size/total*100:.4f}%')
         if filename.endswith('START_HERE.md'):
             content = re.sub(r'(\| Matching functions / modules \| )[^|]+', lambda m: m[1] + f'{count} / {len(current)} ', content)
-            content = re.sub(r'(?s)Stage \d+ adds.*?(?=## Active work)', f'{name}: {new_functions} new functions / {added:,} bytes. See [BATCH.md](BATCH.md) for the measured batch report.\n\n', content)
+            content = re.sub(r'(?s)(?:Stage \d+ adds|\d+: [^\n]+new functions).*?(?=## Active work)', f'{name}: {new_functions} new functions / {added:,} bytes. See [BATCH.md](BATCH.md) for the measured batch report.\n\n', content)
             latest = f'## Latest integration batch: {name}\n\n{new_functions} new functions / {added:,} bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.\n\n'
             content = re.sub(r'(?s)## Latest integration batch:.*?(?=## Autonomous iteration)', latest, content)
             content = content.replace('After ten unsuccessful distinct hypotheses on a target, or sooner when evidence\nruns out,', 'After two or three unsuccessful distinct hypotheses, park unless concrete new\nevidence justifies more; never exceed ten cumulative hypotheses. Then')

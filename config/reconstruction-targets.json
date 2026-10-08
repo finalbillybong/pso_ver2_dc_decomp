@@ -23821,6 +23821,1406 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
       "status": "matched",
       "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c080280",
+      "source": "src/effects/destroy_object_8c080280.c",
+      "address": "0x8c080280",
+      "entry": "_destroy_object_8c080280",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 459392,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c080280",
+          "address": "0x8c080280",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "0015858fc24e3857c9bbf846a42ab5cc17ea7fbf3ae03a8608774accfe5d4760",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c081864",
+      "source": "src/effects/destroy_object_8c081864.c",
+      "address": "0x8c081864",
+      "entry": "_destroy_object_8c081864",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 464996,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c081864",
+          "address": "0x8c081864",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b1686b77f4f7ea05dbe17784cb8e2b88480598bb9fb4b3455a8aa36c7deeb8d7",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0861cc",
+      "source": "src/effects/destroy_object_8c0861cc.c",
+      "address": "0x8c0861cc",
+      "entry": "_destroy_object_8c0861cc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 483788,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0861cc",
+          "address": "0x8c0861cc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "01cc4c186479744cba9d47573982bfcafcfbf5b2447f2f5c3d8fc9361922da21",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c086db0",
+      "source": "src/effects/destroy_object_8c086db0.c",
+      "address": "0x8c086db0",
+      "entry": "_destroy_object_8c086db0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 486832,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c086db0",
+          "address": "0x8c086db0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "1048ef6eefef499c188e6b0c2732685b7fbf278df8fe90448693cc1ae2269b5b",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c08a398",
+      "source": "src/effects/destroy_object_8c08a398.c",
+      "address": "0x8c08a398",
+      "entry": "_destroy_object_8c08a398",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 500632,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c08a398",
+          "address": "0x8c08a398",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "960ae9aff8073678affc12edbd5c1c5d7acd5a9378102273437518b58036ef0c",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c08a3dc",
+      "source": "src/effects/destroy_object_8c08a3dc.c",
+      "address": "0x8c08a3dc",
+      "entry": "_destroy_object_8c08a3dc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 500700,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c08a3dc",
+          "address": "0x8c08a3dc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "12d7c7df34d9da2ecebf298c78bf97f1bd26e83aacd3712acaa2d489872a2f38",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c08a63c",
+      "source": "src/effects/destroy_object_8c08a63c.c",
+      "address": "0x8c08a63c",
+      "entry": "_destroy_object_8c08a63c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 501308,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c08a63c",
+          "address": "0x8c08a63c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "68b9c5f70d9b53132e88e03cfdf550c349d32d66e9387bb595f902809d971132",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c08b35c",
+      "source": "src/effects/destroy_object_8c08b35c.c",
+      "address": "0x8c08b35c",
+      "entry": "_destroy_object_8c08b35c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 504668,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c08b35c",
+          "address": "0x8c08b35c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "526c2b2eb28176b5dc41f809e097555f63bafc88745e51a4ca0669e3a3e31d1c",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c08b900",
+      "source": "src/effects/destroy_object_8c08b900.c",
+      "address": "0x8c08b900",
+      "entry": "_destroy_object_8c08b900",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 506112,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c08b900",
+          "address": "0x8c08b900",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "7314a6e592ddc3ea5948cb4be80bcb329a28d98ff96a499e3e38c2b1e5373932",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c08de2c",
+      "source": "src/effects/destroy_object_8c08de2c.c",
+      "address": "0x8c08de2c",
+      "entry": "_destroy_object_8c08de2c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 515628,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c08de2c",
+          "address": "0x8c08de2c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8effae8d5a23707b0a6609044ab2ead6d070b0b66d5ed667ef772cb2fc925457",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c096514",
+      "source": "src/effects/destroy_object_8c096514.c",
+      "address": "0x8c096514",
+      "entry": "_destroy_object_8c096514",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 550164,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c096514",
+          "address": "0x8c096514",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "f6ca9bfe17078583d3d0faf113adf4fe7b053d5157bedbec253cfa04a6ba6c1c",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c09674c",
+      "source": "src/effects/destroy_object_8c09674c.c",
+      "address": "0x8c09674c",
+      "entry": "_destroy_object_8c09674c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 550732,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c09674c",
+          "address": "0x8c09674c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "530cafc4b1b16909e32ee20c17226254116783c4186b3fabe0554853faa9c9a6",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0986b0",
+      "source": "src/effects/destroy_object_8c0986b0.c",
+      "address": "0x8c0986b0",
+      "entry": "_destroy_object_8c0986b0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 558768,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0986b0",
+          "address": "0x8c0986b0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "be9b2f57b5ab69f370ff8e03880cacad561b14de1a01774d4483b920e3777692",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c098d54",
+      "source": "src/effects/destroy_object_8c098d54.c",
+      "address": "0x8c098d54",
+      "entry": "_destroy_object_8c098d54",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 560468,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c098d54",
+          "address": "0x8c098d54",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "a4288784ff57fb3dc23e5e90b3ef2c20834122a6f4fa88d37ece2109cd0cd67e",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c09a0ec",
+      "source": "src/effects/destroy_object_8c09a0ec.c",
+      "address": "0x8c09a0ec",
+      "entry": "_destroy_object_8c09a0ec",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 565484,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c09a0ec",
+          "address": "0x8c09a0ec",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c29ff8204f0fa9a19ee992d63ef917add6e4ccf31103098ab25affca1c98feca",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c09a954",
+      "source": "src/effects/destroy_object_8c09a954.c",
+      "address": "0x8c09a954",
+      "entry": "_destroy_object_8c09a954",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 567636,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c09a954",
+          "address": "0x8c09a954",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "17ff144f2320d83dfaaaf3b911b79d090578b72c7e0b5fa546efbf19b4073564",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c09ae88",
+      "source": "src/effects/destroy_object_8c09ae88.c",
+      "address": "0x8c09ae88",
+      "entry": "_destroy_object_8c09ae88",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 568968,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c09ae88",
+          "address": "0x8c09ae88",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b98efac3548b993443da2c3adcf0324c3a01327623fd60e7b59abf5e030ca9ba",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c09ce5c",
+      "source": "src/effects/destroy_object_8c09ce5c.c",
+      "address": "0x8c09ce5c",
+      "entry": "_destroy_object_8c09ce5c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 577116,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c09ce5c",
+          "address": "0x8c09ce5c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8f8999563f7bafe1fa247836ed5a33612d59861cd48cde5c8a8a683d1485c00b",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c09d6fc",
+      "source": "src/effects/destroy_object_8c09d6fc.c",
+      "address": "0x8c09d6fc",
+      "entry": "_destroy_object_8c09d6fc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 579324,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c09d6fc",
+          "address": "0x8c09d6fc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "33163de714723d2ff72df30e06d38bb920a7ccbf16df4e5957159830a16e6e93",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c09fc3c",
+      "source": "src/effects/destroy_object_8c09fc3c.c",
+      "address": "0x8c09fc3c",
+      "entry": "_destroy_object_8c09fc3c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 588860,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c09fc3c",
+          "address": "0x8c09fc3c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "a4d8dd58bae5de450bf26fe1088aa783080acf5f22ea5b19b0283e6a4d991c78",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c09fe00",
+      "source": "src/effects/destroy_object_8c09fe00.c",
+      "address": "0x8c09fe00",
+      "entry": "_destroy_object_8c09fe00",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 589312,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c09fe00",
+          "address": "0x8c09fe00",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c3d4f3408c80506d83fb1240fc4b2701170d98ed8ae1123aff6170b6d970a6ae",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0a9c78",
+      "source": "src/effects/destroy_object_8c0a9c78.c",
+      "address": "0x8c0a9c78",
+      "entry": "_destroy_object_8c0a9c78",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 629880,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0a9c78",
+          "address": "0x8c0a9c78",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8f93f908d711a9f727eaa503919a15b6ff95bff21fb6f81cb55898e0ccd1f31a",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0aad54",
+      "source": "src/effects/destroy_object_8c0aad54.c",
+      "address": "0x8c0aad54",
+      "entry": "_destroy_object_8c0aad54",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 634196,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0aad54",
+          "address": "0x8c0aad54",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "89a66969702b93b5a0aa161c95872df80e7522498d08fc773a4d2808ff668472",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0abf3c",
+      "source": "src/effects/destroy_object_8c0abf3c.c",
+      "address": "0x8c0abf3c",
+      "entry": "_destroy_object_8c0abf3c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 638780,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0abf3c",
+          "address": "0x8c0abf3c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c28aa56df30e31c96466fe8ee90b1f11983b24a159a52ea94f40a5169174ec3f",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0ac240",
+      "source": "src/effects/destroy_object_8c0ac240.c",
+      "address": "0x8c0ac240",
+      "entry": "_destroy_object_8c0ac240",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 639552,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0ac240",
+          "address": "0x8c0ac240",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "f1f133654c9e15b18b7df760ee46ddb0d3bc793d4cf5546afa3fa4149f819c83",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0ac630",
+      "source": "src/effects/destroy_object_8c0ac630.c",
+      "address": "0x8c0ac630",
+      "entry": "_destroy_object_8c0ac630",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 640560,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0ac630",
+          "address": "0x8c0ac630",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "858b9e57b1436c28094c92d2f774a0377ce9a0283218caca676ca8b7f50579cd",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0ac8e0",
+      "source": "src/effects/destroy_object_8c0ac8e0.c",
+      "address": "0x8c0ac8e0",
+      "entry": "_destroy_object_8c0ac8e0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 641248,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0ac8e0",
+          "address": "0x8c0ac8e0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "0d377e38e07500272caf391b6c7a73da916338d191c3961f5cf8ce131d8998aa",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0adbc8",
+      "source": "src/effects/destroy_object_8c0adbc8.c",
+      "address": "0x8c0adbc8",
+      "entry": "_destroy_object_8c0adbc8",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 646088,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0adbc8",
+          "address": "0x8c0adbc8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "14e0e9058d517bc4642b0355457ebe1433118385da00ff7593b5412a55427107",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b0380",
+      "source": "src/effects/destroy_object_8c0b0380.c",
+      "address": "0x8c0b0380",
+      "entry": "_destroy_object_8c0b0380",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 656256,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b0380",
+          "address": "0x8c0b0380",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "a5b0b9436b415e5788b23f9e6da3d3de92672a41a7cfc7d68b246e9a61b1d4ea",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b05ec",
+      "source": "src/effects/destroy_object_8c0b05ec.c",
+      "address": "0x8c0b05ec",
+      "entry": "_destroy_object_8c0b05ec",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 656876,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b05ec",
+          "address": "0x8c0b05ec",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "ad667aebafea5979f03fec2609185fde989a7daad7dbad131a466713444e6223",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b2984",
+      "source": "src/effects/destroy_object_8c0b2984.c",
+      "address": "0x8c0b2984",
+      "entry": "_destroy_object_8c0b2984",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 665988,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b2984",
+          "address": "0x8c0b2984",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "2bd72696d2d31c8bedf0754e9e09f7472a8a7c988ddf042b53231c26638273d0",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b3048",
+      "source": "src/effects/destroy_object_8c0b3048.c",
+      "address": "0x8c0b3048",
+      "entry": "_destroy_object_8c0b3048",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 667720,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b3048",
+          "address": "0x8c0b3048",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "fad2d07ed4881fc91e56fd6b45b08fed02a6063e9466c2163785f57df3fc2476",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b36f4",
+      "source": "src/effects/destroy_object_8c0b36f4.c",
+      "address": "0x8c0b36f4",
+      "entry": "_destroy_object_8c0b36f4",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 669428,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b36f4",
+          "address": "0x8c0b36f4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "d99f995f8b8ec48ea82338e786a73fbee5720f1d8d7a2a065d9a9df0591dd409",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b650c",
+      "source": "src/effects/destroy_object_8c0b650c.c",
+      "address": "0x8c0b650c",
+      "entry": "_destroy_object_8c0b650c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 681228,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b650c",
+          "address": "0x8c0b650c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "273027f023bf8bebf5e8a0a5de649d7b22abd579fa59b655a81bc672cdb1df7f",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b67a0",
+      "source": "src/effects/destroy_object_8c0b67a0.c",
+      "address": "0x8c0b67a0",
+      "entry": "_destroy_object_8c0b67a0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 681888,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b67a0",
+          "address": "0x8c0b67a0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "96cee3aa2a18307e13b2a11668cb652f0a6612f2c5c7edd76eb003dd7eb88083",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b691c",
+      "source": "src/effects/destroy_object_8c0b691c.c",
+      "address": "0x8c0b691c",
+      "entry": "_destroy_object_8c0b691c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 682268,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b691c",
+          "address": "0x8c0b691c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "80bc3b662291f6863b756b50fc271795039d0843887b20fb5962322b32a2b049",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b7c5c",
+      "source": "src/effects/destroy_object_8c0b7c5c.c",
+      "address": "0x8c0b7c5c",
+      "entry": "_destroy_object_8c0b7c5c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 687196,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b7c5c",
+          "address": "0x8c0b7c5c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "64f0948693444fe493ecb61285924c2e0ac75d793cbb489c8cd97b1689ed9b34",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b83c0",
+      "source": "src/effects/destroy_object_8c0b83c0.c",
+      "address": "0x8c0b83c0",
+      "entry": "_destroy_object_8c0b83c0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 689088,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b83c0",
+          "address": "0x8c0b83c0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "452096af0dac471d839bb079e6441abfaf39f7bd4b812c4f7581ca5bdd9f46a8",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b8c24",
+      "source": "src/effects/destroy_object_8c0b8c24.c",
+      "address": "0x8c0b8c24",
+      "entry": "_destroy_object_8c0b8c24",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 691236,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b8c24",
+          "address": "0x8c0b8c24",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "24343ae46a3696d4901123b7adecf81a3d23ebe1c44a2549a04d8b51367620ec",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b91c8",
+      "source": "src/effects/destroy_object_8c0b91c8.c",
+      "address": "0x8c0b91c8",
+      "entry": "_destroy_object_8c0b91c8",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 692680,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b91c8",
+          "address": "0x8c0b91c8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b0db5262f2ff7a33ac7724190e76d07d0a51b6230ab7c0563dd564f06f73d153",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0b95fc",
+      "source": "src/effects/destroy_object_8c0b95fc.c",
+      "address": "0x8c0b95fc",
+      "entry": "_destroy_object_8c0b95fc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 693756,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0b95fc",
+          "address": "0x8c0b95fc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "3a6fa5cd1aa0f3435700e853a1b158f496222bec3aff501a7f058341794e88d4",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0ba7bc",
+      "source": "src/effects/destroy_object_8c0ba7bc.c",
+      "address": "0x8c0ba7bc",
+      "entry": "_destroy_object_8c0ba7bc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 698300,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0ba7bc",
+          "address": "0x8c0ba7bc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "a7b6e48fdae78928071e857f8fdbb9909c1bfab7d6f6ba6e867f38b064a1bbee",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0baa20",
+      "source": "src/effects/destroy_object_8c0baa20.c",
+      "address": "0x8c0baa20",
+      "entry": "_destroy_object_8c0baa20",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 698912,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0baa20",
+          "address": "0x8c0baa20",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8942a140661fe7dd2e1e4b8da374502f1d7644eae6bcda47d5fc19d9f51f025b",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0bad1c",
+      "source": "src/effects/destroy_object_8c0bad1c.c",
+      "address": "0x8c0bad1c",
+      "entry": "_destroy_object_8c0bad1c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 699676,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0bad1c",
+          "address": "0x8c0bad1c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "dd7c6ee4c161a412e1113a9a8222b5cfdfeb2baa2c9386da1c39001bc3362334",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0baf2c",
+      "source": "src/effects/destroy_object_8c0baf2c.c",
+      "address": "0x8c0baf2c",
+      "entry": "_destroy_object_8c0baf2c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 700204,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0baf2c",
+          "address": "0x8c0baf2c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "3be992e9d0dc19d476083892a1f809d9834933a9f992075f8eba0dc22c1b0102",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0bb658",
+      "source": "src/effects/destroy_object_8c0bb658.c",
+      "address": "0x8c0bb658",
+      "entry": "_destroy_object_8c0bb658",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 702040,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0bb658",
+          "address": "0x8c0bb658",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "9a83041795d244c6374406672d8c59622fc36a4358603008e42b6ffd1f0b73f0",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0cb374",
+      "source": "src/effects/destroy_object_8c0cb374.c",
+      "address": "0x8c0cb374",
+      "entry": "_destroy_object_8c0cb374",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 766836,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0cb374",
+          "address": "0x8c0cb374",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "9c71bf8eef4765071117ec6fce66974a69e142b837c27fb1691757e3bdf78f89",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0cb410",
+      "source": "src/effects/destroy_object_8c0cb410.c",
+      "address": "0x8c0cb410",
+      "entry": "_destroy_object_8c0cb410",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 766992,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0cb410",
+          "address": "0x8c0cb410",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8054b09fd9e9e17c4594a2b0ff322b292dde849ab3a509379f50c2eb4098beeb",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0cb578",
+      "source": "src/effects/destroy_object_8c0cb578.c",
+      "address": "0x8c0cb578",
+      "entry": "_destroy_object_8c0cb578",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 767352,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0cb578",
+          "address": "0x8c0cb578",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "03726b880644e58310090e68f96157f0990bc3a11f216a760fc600e78e9f8043",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_object_8c0cb7e0",
+      "source": "src/effects/destroy_object_8c0cb7e0.c",
+      "address": "0x8c0cb7e0",
+      "entry": "_destroy_object_8c0cb7e0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 767968,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0cb7e0",
+          "address": "0x8c0cb7e0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e325839e0cc54dd9b47b0835497cf1e941e6e4df6a2ec40c5503b1644a72ddb9",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
     }
   ]
 }
