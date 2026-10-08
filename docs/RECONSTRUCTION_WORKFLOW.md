@@ -47,7 +47,10 @@ candidate generator; recompilation and full comparison remain mandatory.
 
 ## Integration and verification
 
-Collect roughly 20–50 functions or several KB where practical. List the reviewed
+Collect roughly 20–50 functions or several KB where practical. After the batch 169
+measurement, prefer at least 4 KiB of collected exact candidates before another
+full integration where practical; a count of short wrappers alone does not
+justify repeated full verification. List the reviewed
 trial directories in a JSON plan, then reproduce them twice and admit them together:
 
 ```

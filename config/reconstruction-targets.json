@@ -41735,6 +41735,1051 @@
       "boundary_review": "Reviewed complete 76-byte allocation-wrapper raw range against proven spawn_effect_alt: saved R14/R13/R12/R11 and PR, heap/size pool load, allocation null guard, preserved three incoming pointer arguments passed to four-argument initializer, returned object and full four-word pool. Only observed heap/size/allocator/initializer words vary. All eight entries have catalog or aligned reference evidence and reviewed valid adjacent entry prologues. No shortened comparison or padding added.",
       "status": "matched",
       "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "review_wrapper_8c04c2d4",
+      "address": "0x8c04c2d4",
+      "entry": "_review_wrapper_8c04c2d4",
+      "ranges": [
+        {
+          "offset": 246484,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c04c2d4",
+          "address": "0x8c04c2d4",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "57fa720383c8e9c5fc872e8c483ea1974f3cb9a1dbe7030d8192b4f2ef47e033",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Provisional zero-argument/void-return signature needs callee and consumer evidence; exact instruction shape alone does not establish ABI.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c051fb8",
+      "address": "0x8c051fb8",
+      "entry": "_review_wrapper_8c051fb8",
+      "ranges": [
+        {
+          "offset": 270264,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c051fb8",
+          "address": "0x8c051fb8",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "23a1105e4b80c7fc1efbfd59d1aa25d2c9e91773a130ed5fa8c9c25be7619372",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Provisional zero-argument/void-return signature needs callee and consumer evidence; exact instruction shape alone does not establish ABI.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c05fbdc",
+      "address": "0x8c05fbdc",
+      "entry": "_review_wrapper_8c05fbdc",
+      "ranges": [
+        {
+          "offset": 326620,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c05fbdc",
+          "address": "0x8c05fbdc",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "490471377ad6a738df57a7722f4e4670504cab3dea6db59e1fc739428760ab0b",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Provisional zero-argument/void-return signature needs callee and consumer evidence; exact instruction shape alone does not establish ABI.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c09a498",
+      "address": "0x8c09a498",
+      "entry": "_review_wrapper_8c09a498",
+      "ranges": [
+        {
+          "offset": 566424,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c09a498",
+          "address": "0x8c09a498",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "752f27d3cf4d8cc4d73985813dfaa643ec3ba560717b2be4f7cd21629c2c1c25",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Provisional zero-argument/void-return signature needs callee and consumer evidence; exact instruction shape alone does not establish ABI.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c14f800",
+      "address": "0x8c14f800",
+      "entry": "_review_wrapper_8c14f800",
+      "ranges": [
+        {
+          "offset": 1308672,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c14f800",
+          "address": "0x8c14f800",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "3c148290aab422bd3bd5e7739d9e9eaee5e4409518416d1f3024b7fcca1aa5f7",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Provisional zero-argument/void-return signature needs callee and consumer evidence; exact instruction shape alone does not establish ABI.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c167a74",
+      "address": "0x8c167a74",
+      "entry": "_review_wrapper_8c167a74",
+      "ranges": [
+        {
+          "offset": 1407604,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c167a74",
+          "address": "0x8c167a74",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "3c148290aab422bd3bd5e7739d9e9eaee5e4409518416d1f3024b7fcca1aa5f7",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Provisional zero-argument/void-return signature needs callee and consumer evidence; exact instruction shape alone does not establish ABI.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c167dd8",
+      "address": "0x8c167dd8",
+      "entry": "_review_wrapper_8c167dd8",
+      "ranges": [
+        {
+          "offset": 1408472,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c167dd8",
+          "address": "0x8c167dd8",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "3c148290aab422bd3bd5e7739d9e9eaee5e4409518416d1f3024b7fcca1aa5f7",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Provisional zero-argument/void-return signature needs callee and consumer evidence; exact instruction shape alone does not establish ABI.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c16e414",
+      "address": "0x8c16e414",
+      "entry": "_review_wrapper_8c16e414",
+      "ranges": [
+        {
+          "offset": 1434644,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c16e414",
+          "address": "0x8c16e414",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "212d2eae7e71f24ca70634b139fb9f072bb129454a717891fa66fee2ac21eb59",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Provisional zero-argument/void-return signature needs callee and consumer evidence; exact instruction shape alone does not establish ABI.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c1bdde4",
+      "address": "0x8c1bdde4",
+      "entry": "_review_wrapper_8c1bdde4",
+      "ranges": [
+        {
+          "offset": 1760740,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c1bdde4",
+          "address": "0x8c1bdde4",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "d4514b10454f12f4de1a4bfec5c9727596ca2a90ceee845b8a176df4832b45fc",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Provisional zero-argument/void-return signature needs callee and consumer evidence; exact instruction shape alone does not establish ABI.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c027a24",
+      "address": "0x8c027a24",
+      "entry": "_review_wrapper_8c027a24",
+      "ranges": [
+        {
+          "offset": 96804,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c027a24",
+          "address": "0x8c027a24",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "df8937bd5fe3384bee463dcac8718245f9cda9d118420baac0405965fc9c984f",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Tail callee parameter/return behavior not established; verify incoming argument uses and caller consumption before candidate compilation.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c027d54",
+      "address": "0x8c027d54",
+      "entry": "_review_wrapper_8c027d54",
+      "ranges": [
+        {
+          "offset": 97620,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c027d54",
+          "address": "0x8c027d54",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "701a195132a0ed669abc9b4e17d9c88e7f7381938a2918cce2853efaa08b4d80",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Tail callee parameter/return behavior not established; verify incoming argument uses and caller consumption before candidate compilation.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c027f34",
+      "address": "0x8c027f34",
+      "entry": "_review_wrapper_8c027f34",
+      "ranges": [
+        {
+          "offset": 98100,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c027f34",
+          "address": "0x8c027f34",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "4cb4c38beaee9c6df9de1b2fddf0d0486b8ddd119973f891d05e221998187fcb",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Tail callee parameter/return behavior not established; verify incoming argument uses and caller consumption before candidate compilation.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c04c5f0",
+      "address": "0x8c04c5f0",
+      "entry": "_review_wrapper_8c04c5f0",
+      "ranges": [
+        {
+          "offset": 247280,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c04c5f0",
+          "address": "0x8c04c5f0",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "99fa277a2dfd190b609fabf0624f8fb8fb7937bdb37dfcf69d35d708cbab5adb",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Tail callee parameter/return behavior not established; verify incoming argument uses and caller consumption before candidate compilation.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c21f454",
+      "address": "0x8c21f454",
+      "entry": "_review_wrapper_8c21f454",
+      "ranges": [
+        {
+          "offset": 2159700,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c21f454",
+          "address": "0x8c21f454",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "f7aec46be92c29f84b89aa2197c638a07e6f1221bee507d56b54277108bc8b10",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Tail callee parameter/return behavior not established; verify incoming argument uses and caller consumption before candidate compilation.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "review_wrapper_8c21f468",
+      "address": "0x8c21f468",
+      "entry": "_review_wrapper_8c21f468",
+      "ranges": [
+        {
+          "offset": 2159720,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "review_wrapper_8c21f468",
+          "address": "0x8c21f468",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "84c2f4f3637c7d17b9506c1cc4e6b445404fe01dbdf3e1a34eccb180c1f01f35",
+      "status": "parked",
+      "hypotheses_tested": 0,
+      "reason": "Tail callee parameter/return behavior not established; verify incoming argument uses and caller consumption before candidate compilation.",
+      "revisit_when": "Independent callee/consumer instruction evidence establishes all incoming arguments and return-value use. Then form an ordinary-source hypothesis."
+    },
+    {
+      "id": "check_resource_entries",
+      "source": "src/provisional/check_resource_entries.c",
+      "address": "0x8c37d534",
+      "entry": "_check_resource_entries",
+      "symbols": {},
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 3593524,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "check_resource_entries",
+          "address": "0x8c37d534",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "c8d948fa6ef7ad6c4738b0cf399b0050f52d2c647c550970a5664b3fc08cb508",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "H1 unsigned indexed loop produces 72 bytes versus 88 expected, 84 differing, first 0x8c37d538. Generated code saves three GPRs and uses MUL.L by12 plus per-iteration literal loads; raw saves six GPRs R14..R9, forms stride12 by shifts/add and hoists callback/global/failure constants.",
+      "revisit_when": "Verified SDK producer context or independent exact loop demonstrates the six-register invariant-hoisting and shift/add sequence under the pinned compiler; no spelling sweep."
+    },
+    {
+      "id": "cache_actor_position_8c058238",
+      "source": "src/objects/cache_actor_position_8c058238.c",
+      "address": "0x8c058238",
+      "entry": "_cache_actor_position_8c058238",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_state_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 295480,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "cache_actor_position_8c058238",
+          "address": "0x8c058238",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "ad79fac5d11d30716820d3bbaa244802fccc5077552d3bc4376237cac20f7332",
+      "symbols": {},
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "cache_actor_position_8c0d4c34",
+      "source": "src/objects/cache_actor_position_8c0d4c34.c",
+      "address": "0x8c0d4c34",
+      "entry": "_cache_actor_position_8c0d4c34",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_state_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 805940,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "cache_actor_position_8c0d4c34",
+          "address": "0x8c0d4c34",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "ad79fac5d11d30716820d3bbaa244802fccc5077552d3bc4376237cac20f7332",
+      "symbols": {},
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "cache_actor_position_8c165a1c",
+      "source": "src/objects/cache_actor_position_8c165a1c.c",
+      "address": "0x8c165a1c",
+      "entry": "_cache_actor_position_8c165a1c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_state_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1399324,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "cache_actor_position_8c165a1c",
+          "address": "0x8c165a1c",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "ad79fac5d11d30716820d3bbaa244802fccc5077552d3bc4376237cac20f7332",
+      "symbols": {},
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "construct_seeded_random_state_8c0daf18",
+      "source": "src/random/construct_seeded_random_state_8c0daf18.c",
+      "address": "0x8c0daf18",
+      "entry": "_construct_seeded_random_state_8c0daf18",
+      "ranges": [
+        {
+          "offset": 831256,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "construct_seeded_random_state_8c0daf18",
+          "address": "0x8c0daf18",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "dcf944db5946536a2986ac6a22be2401777141a5ea5882b3260d7caa39c34bfc",
+      "headers": [
+        "src/include/random_state.h"
+      ],
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_effect_a1448_8c03d218",
+      "source": "src/render/create_effect_a1448_8c03d218.c",
+      "address": "0x8c03d218",
+      "entry": "_create_effect_a1448_8c03d218",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 184856,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a1448_8c03d218",
+          "address": "0x8c03d218",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "9530428fee7f87e0e20dd5013f9161662faf1773f72871a777ef7fb689db1d90",
+      "symbols": {},
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_effect_a1448_8c08b80c",
+      "source": "src/render/create_effect_a1448_8c08b80c.c",
+      "address": "0x8c08b80c",
+      "entry": "_create_effect_a1448_8c08b80c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 505868,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a1448_8c08b80c",
+          "address": "0x8c08b80c",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "e5160a92984d3525b455b975f7377a630f94ce1747877c8035f1e853bf97ea80",
+      "symbols": {},
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_effect_a1448_8c08dd38",
+      "source": "src/render/create_effect_a1448_8c08dd38.c",
+      "address": "0x8c08dd38",
+      "entry": "_create_effect_a1448_8c08dd38",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 515384,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a1448_8c08dd38",
+          "address": "0x8c08dd38",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "797f97bda1d81e92f316e1a1b3f13540814b3a609084dbf8b3c58166ad71153c",
+      "symbols": {},
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "emit_lookup_602b0_8c16d5bc",
+      "source": "src/effects/emit_lookup_602b0_8c16d5bc.c",
+      "address": "0x8c16d5bc",
+      "entry": "_emit_lookup_602b0_8c16d5bc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1430972,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "emit_lookup_602b0_8c16d5bc",
+          "address": "0x8c16d5bc",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "5cbc48eae62fa382799a36fd096e0f56f097ec2c6c7bb219ad69004a680e396c",
+      "symbols": {},
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "operation_03cf50_8c09cd3c",
+      "source": "src/runtime/operation_03cf50_8c09cd3c.c",
+      "address": "0x8c09cd3c",
+      "entry": "_operation_03cf50_8c09cd3c",
+      "ranges": [
+        {
+          "offset": 576828,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03cf50_8c09cd3c",
+          "address": "0x8c09cd3c",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "98ac47b0b71322572cdfebeac600ae94c0a459da58b343324d4a33305a2c0aac",
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "operation_1ac3cc_8c14f3b4",
+      "source": "src/objects/operation_1ac3cc_8c14f3b4.c",
+      "address": "0x8c14f3b4",
+      "entry": "_operation_1ac3cc_8c14f3b4",
+      "ranges": [
+        {
+          "offset": 1307572,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1ac3cc_8c14f3b4",
+          "address": "0x8c14f3b4",
+          "size": 20
+        }
+      ],
+      "headers": [
+        "src/include/matrix_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "2067d5e396187129f095a7e309b7a1b1d965526465fd0d142cf2560da3cffc9c",
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "operation_1ac3cc_8c23caf0",
+      "source": "src/objects/operation_1ac3cc_8c23caf0.c",
+      "address": "0x8c23caf0",
+      "entry": "_operation_1ac3cc_8c23caf0",
+      "ranges": [
+        {
+          "offset": 2280176,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1ac3cc_8c23caf0",
+          "address": "0x8c23caf0",
+          "size": 20
+        }
+      ],
+      "headers": [
+        "src/include/matrix_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "084058fb1fc16fd651bb02a2e9cbb3dbf2f045bae783746a5a7b800f18ccc18c",
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "operation_1ac3cc_8c23da48",
+      "source": "src/objects/operation_1ac3cc_8c23da48.c",
+      "address": "0x8c23da48",
+      "entry": "_operation_1ac3cc_8c23da48",
+      "ranges": [
+        {
+          "offset": 2284104,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1ac3cc_8c23da48",
+          "address": "0x8c23da48",
+          "size": 20
+        }
+      ],
+      "headers": [
+        "src/include/matrix_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "ed4b4dc735ad563e662e692333ab35541d3a4bc4be54ea612b7f3fd3f24f1169",
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_fade_active_8c22eb9c",
+      "source": "src/effects/query_fade_active_8c22eb9c.c",
+      "address": "0x8c22eb9c",
+      "entry": "_query_fade_active_8c22eb9c",
+      "headers": [
+        "src/include/fade_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2223004,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_fade_active_8c22eb9c",
+          "address": "0x8c22eb9c",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "41bc96411f0ccc62cea20f20102baff68021e98f8d096b3502c2dfedefdbaf4e",
+      "symbols": {},
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "release_shared_buffer_8c09cb34",
+      "source": "src/objects/release_shared_buffer_8c09cb34.c",
+      "address": "0x8c09cb34",
+      "entry": "_release_shared_buffer_8c09cb34",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 576308,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_shared_buffer_8c09cb34",
+          "address": "0x8c09cb34",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "9e84094ebea7cffbbeaa0b48deb373355068c5a80ded904efa8235360254eecc",
+      "symbols": {},
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "release_shared_buffer_8c256378",
+      "source": "src/objects/release_shared_buffer_8c256378.c",
+      "address": "0x8c256378",
+      "entry": "_release_shared_buffer_8c256378",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2384760,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_shared_buffer_8c256378",
+          "address": "0x8c256378",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "b8a5210a10fa909e0bd14a4d98334337967cbf33a044ffdadeffb58caef9036a",
+      "symbols": {},
+      "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_object_8c23ca68",
+      "source": "src/objects/create_object_8c23ca68.c",
+      "address": "0x8c23ca68",
+      "entry": "_create_object_8c23ca68",
+      "ranges": [
+        {
+          "offset": 2280040,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_object_8c23ca68",
+          "address": "0x8c23ca68",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "5972e57b83de3b49498256dd7802c88b71be27717039fa881d88f5cbe41266b4",
+      "headers": [
+        "src/include/resource_child.h",
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Reviewed complete raw range, incoming GPR/FR4 lifetimes, calls/delay slots and adjacent initializer entry; preserved original guard and Vector3 arguments. Literal pool and natural padding included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_object_8c23d9b8",
+      "source": "src/objects/create_object_8c23d9b8.c",
+      "address": "0x8c23d9b8",
+      "entry": "_create_object_8c23d9b8",
+      "ranges": [
+        {
+          "offset": 2283960,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_object_8c23d9b8",
+          "address": "0x8c23d9b8",
+          "size": 92
+        }
+      ],
+      "headers": [
+        "src/include/matrix_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "621b5a0920d9da7eb09ccbab543abe30b62ff0738b72108291feee56428b9a0a",
+      "boundary_review": "Reviewed complete raw range, incoming GPR/FR4 lifetimes, calls/delay slots and adjacent initializer entry; preserved original guard and Vector3 arguments. Literal pool and natural padding included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_global_entries_8c0e8e28",
+      "source": "src/resources/query_global_entries_8c0e8e28.c",
+      "address": "0x8c0e8e28",
+      "entry": "_query_global_entries_8c0e8e28",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 888360,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_global_entries_8c0e8e28",
+          "address": "0x8c0e8e28",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "7cf9ecf3a3e8869dc1601aba7f2ae579ad29fb5c3736cae0f151c155f2a056ff",
+      "symbols": {},
+      "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_global_entries_8c0ea724",
+      "source": "src/resources/query_global_entries_8c0ea724.c",
+      "address": "0x8c0ea724",
+      "entry": "_query_global_entries_8c0ea724",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 894756,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_global_entries_8c0ea724",
+          "address": "0x8c0ea724",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "81f5b165351558a1fde83276a6b35cb9cdc54545e9bd4ae9857e2e74497699ed",
+      "symbols": {},
+      "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_global_entries_8c0eb6e0",
+      "source": "src/resources/query_global_entries_8c0eb6e0.c",
+      "address": "0x8c0eb6e0",
+      "entry": "_query_global_entries_8c0eb6e0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 898784,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_global_entries_8c0eb6e0",
+          "address": "0x8c0eb6e0",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "e279b7bd167d8ea574a473c5320cc3d06069e879afdaeb5688e175a5d25b4f91",
+      "symbols": {},
+      "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_global_entries_8c0ec374",
+      "source": "src/resources/query_global_entries_8c0ec374.c",
+      "address": "0x8c0ec374",
+      "entry": "_query_global_entries_8c0ec374",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 902004,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_global_entries_8c0ec374",
+          "address": "0x8c0ec374",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "8bd8782109d3aa71c3cb4404193eaf1da3f8fb8f8601037159a1df08a43dc68c",
+      "symbols": {},
+      "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_global_entries_8c199674",
+      "source": "src/resources/query_global_entries_8c199674.c",
+      "address": "0x8c199674",
+      "entry": "_query_global_entries_8c199674",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1611380,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_global_entries_8c199674",
+          "address": "0x8c199674",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "c583674fdd2462bb9b436782dab328a572c2c47dbe343b514bc99e255f267661",
+      "symbols": {},
+      "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_global_entries_8c19a6ec",
+      "source": "src/resources/query_global_entries_8c19a6ec.c",
+      "address": "0x8c19a6ec",
+      "entry": "_query_global_entries_8c19a6ec",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1615596,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_global_entries_8c19a6ec",
+          "address": "0x8c19a6ec",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "4bfec514de6d5c55175370e329ae5bf1f246505af0d0acb48ffee586f1682e88",
+      "symbols": {},
+      "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_global_entries_8c1afd44",
+      "source": "src/resources/query_global_entries_8c1afd44.c",
+      "address": "0x8c1afd44",
+      "entry": "_query_global_entries_8c1afd44",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1703236,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_global_entries_8c1afd44",
+          "address": "0x8c1afd44",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "cf23a49e2021cbe398ad33013acb3c1727c3e09b3710741bc13f4dcc9b224c6c",
+      "symbols": {},
+      "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_global_entries_8c1dd704",
+      "source": "src/resources/query_global_entries_8c1dd704.c",
+      "address": "0x8c1dd704",
+      "entry": "_query_global_entries_8c1dd704",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1890052,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_global_entries_8c1dd704",
+          "address": "0x8c1dd704",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "1937d41511b4dac3b11be6bbb7b97da26daa2eec4353705a5a60966b896e9adc",
+      "symbols": {},
+      "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_global_entries_8c22f1a8",
+      "source": "src/resources/query_global_entries_8c22f1a8.c",
+      "address": "0x8c22f1a8",
+      "entry": "_query_global_entries_8c22f1a8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2224552,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_global_entries_8c22f1a8",
+          "address": "0x8c22f1a8",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "6ea4027f7e3fff8af4897b3eb45356f90d3d7469e1a7c26acbb05a9419c1ba2d",
+      "symbols": {},
+      "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
     }
   ]
 }

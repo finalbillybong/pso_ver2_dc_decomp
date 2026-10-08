@@ -1,96 +1,44 @@
-# Reconstruction batch: 168: proven reconstruction families
+# Reconstruction batch: 169: proven reconstruction families
 
-78 new matching functions / 5,368 bytes. All 1357 prior functions preserved.
+26 new matching functions / 796 bytes. All 1435 prior functions preserved.
 
-1435 exact functions in 1377 modules; 114,452 compiled function-range bytes; 0 reconstructed data bytes; 4,048,460 retained reference bytes. Whole-image coverage 2.7493% is not code completion.
+1461 exact functions in 1403 modules; 115,248 compiled function-range bytes; 0 reconstructed data bytes; 4,047,664 retained reference bytes. Whole-image coverage 2.7684% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| spawn_object_0893a8_8c0104a0 | 0x8c0104a0 | 68 |
-| spawn_object_0893a8_8c034230 | 0x8c034230 | 68 |
-| spawn_object_0893a8_8c034274 | 0x8c034274 | 68 |
-| spawn_object_0893a8_8c0343fc | 0x8c0343fc | 68 |
-| spawn_object_0893a8_8c057c00 | 0x8c057c00 | 68 |
-| spawn_object_0893a8_8c05c974 | 0x8c05c974 | 68 |
-| spawn_object_0893a8_8c06092c | 0x8c06092c | 68 |
-| spawn_object_0893a8_8c079270 | 0x8c079270 | 68 |
-| spawn_object_0893a8_8c0800a8 | 0x8c0800a8 | 68 |
-| spawn_object_0893a8_8c080abc | 0x8c080abc | 68 |
-| spawn_object_0893a8_8c081080 | 0x8c081080 | 68 |
-| spawn_object_0893a8_8c081790 | 0x8c081790 | 68 |
-| spawn_object_0893a8_8c081a78 | 0x8c081a78 | 68 |
-| spawn_object_0893a8_8c083434 | 0x8c083434 | 68 |
-| spawn_object_0893a8_8c085ec8 | 0x8c085ec8 | 68 |
-| spawn_object_0893a8_8c086104 | 0x8c086104 | 68 |
-| spawn_effect_alt_8c08b538 | 0x8c08b538 | 76 |
-| spawn_object_0893a8_8c09515c | 0x8c09515c | 68 |
-| spawn_effect_alt_8c0aa730 | 0x8c0aa730 | 76 |
-| spawn_object_0893a8_8c0c8b80 | 0x8c0c8b80 | 68 |
-| spawn_object_0893a8_8c0d15dc | 0x8c0d15dc | 68 |
-| spawn_object_0893a8_8c0d7ba8 | 0x8c0d7ba8 | 68 |
-| spawn_object_0893a8_8c0ed844 | 0x8c0ed844 | 68 |
-| spawn_object_0893a8_8c0f1b60 | 0x8c0f1b60 | 68 |
-| spawn_object_0893a8_8c0f2158 | 0x8c0f2158 | 68 |
-| spawn_object_0893a8_8c0f2870 | 0x8c0f2870 | 68 |
-| spawn_object_0893a8_8c0f2bc0 | 0x8c0f2bc0 | 68 |
-| spawn_object_0893a8_8c0f2f10 | 0x8c0f2f10 | 68 |
-| spawn_object_0893a8_8c0f32a8 | 0x8c0f32a8 | 68 |
-| spawn_object_0893a8_8c0f4820 | 0x8c0f4820 | 68 |
-| spawn_object_0893a8_8c1139e0 | 0x8c1139e0 | 68 |
-| spawn_object_0893a8_8c114058 | 0x8c114058 | 68 |
-| spawn_object_0893a8_8c114610 | 0x8c114610 | 68 |
-| spawn_object_0893a8_8c11d878 | 0x8c11d878 | 68 |
-| spawn_object_0893a8_8c12911c | 0x8c12911c | 68 |
-| spawn_object_0893a8_8c130714 | 0x8c130714 | 68 |
-| spawn_object_0893a8_8c130bb4 | 0x8c130bb4 | 68 |
-| spawn_object_0893a8_8c1326c4 | 0x8c1326c4 | 68 |
-| spawn_object_0893a8_8c134bd8 | 0x8c134bd8 | 68 |
-| spawn_object_0893a8_8c135174 | 0x8c135174 | 68 |
-| spawn_object_0893a8_8c1357e8 | 0x8c1357e8 | 68 |
-| spawn_object_0893a8_8c1363b8 | 0x8c1363b8 | 68 |
-| spawn_object_0893a8_8c136e20 | 0x8c136e20 | 68 |
-| spawn_object_0893a8_8c13ddcc | 0x8c13ddcc | 68 |
-| spawn_object_0893a8_8c13e090 | 0x8c13e090 | 68 |
-| spawn_object_0893a8_8c13e37c | 0x8c13e37c | 68 |
-| spawn_object_0893a8_8c13e668 | 0x8c13e668 | 68 |
-| spawn_object_0893a8_8c141594 | 0x8c141594 | 68 |
-| spawn_object_0893a8_8c14348c | 0x8c14348c | 68 |
-| spawn_object_0893a8_8c14ce24 | 0x8c14ce24 | 68 |
-| spawn_object_0893a8_8c157f64 | 0x8c157f64 | 68 |
-| spawn_object_0893a8_8c15ce68 | 0x8c15ce68 | 68 |
-| spawn_object_0893a8_8c15d450 | 0x8c15d450 | 68 |
-| spawn_object_0893a8_8c161fd8 | 0x8c161fd8 | 68 |
-| spawn_object_0893a8_8c162864 | 0x8c162864 | 68 |
-| spawn_object_0893a8_8c164f94 | 0x8c164f94 | 68 |
-| spawn_object_0893a8_8c185394 | 0x8c185394 | 68 |
-| spawn_object_0893a8_8c191a3c | 0x8c191a3c | 68 |
-| spawn_object_0893a8_8c1a08fc | 0x8c1a08fc | 68 |
-| spawn_object_0893a8_8c1a1400 | 0x8c1a1400 | 68 |
-| spawn_object_0893a8_8c1aa2dc | 0x8c1aa2dc | 68 |
-| spawn_object_0893a8_8c1aeb94 | 0x8c1aeb94 | 68 |
-| spawn_object_0893a8_8c1af14c | 0x8c1af14c | 68 |
-| spawn_object_0893a8_8c1af6e8 | 0x8c1af6e8 | 68 |
-| spawn_object_0893a8_8c1c2420 | 0x8c1c2420 | 68 |
-| spawn_object_0893a8_8c1d8444 | 0x8c1d8444 | 68 |
-| spawn_effect_alt_8c21b968 | 0x8c21b968 | 76 |
-| spawn_effect_alt_8c2285cc | 0x8c2285cc | 76 |
-| spawn_effect_alt_8c229538 | 0x8c229538 | 76 |
-| spawn_effect_alt_8c229a4c | 0x8c229a4c | 76 |
-| spawn_effect_alt_8c22a16c | 0x8c22a16c | 76 |
-| spawn_object_0893a8_8c22a8ec | 0x8c22a8ec | 68 |
-| spawn_effect_alt_8c246528 | 0x8c246528 | 76 |
-| spawn_object_0893a8_8c24a0bc | 0x8c24a0bc | 68 |
-| spawn_object_0893a8_8c24a7ec | 0x8c24a7ec | 68 |
-| spawn_object_0893a8_8c24ab2c | 0x8c24ab2c | 68 |
-| spawn_object_0893a8_8c24ae90 | 0x8c24ae90 | 68 |
-| spawn_object_0893a8_8c259140 | 0x8c259140 | 68 |
+| create_effect_a1448_8c03d218 | 0x8c03d218 | 56 |
+| cache_actor_position_8c058238 | 0x8c058238 | 28 |
+| create_effect_a1448_8c08b80c | 0x8c08b80c | 56 |
+| create_effect_a1448_8c08dd38 | 0x8c08dd38 | 56 |
+| release_shared_buffer_8c09cb34 | 0x8c09cb34 | 20 |
+| operation_03cf50_8c09cd3c | 0x8c09cd3c | 20 |
+| cache_actor_position_8c0d4c34 | 0x8c0d4c34 | 28 |
+| construct_seeded_random_state_8c0daf18 | 0x8c0daf18 | 24 |
+| query_global_entries_8c0e8e28 | 0x8c0e8e28 | 20 |
+| query_global_entries_8c0ea724 | 0x8c0ea724 | 20 |
+| query_global_entries_8c0eb6e0 | 0x8c0eb6e0 | 20 |
+| query_global_entries_8c0ec374 | 0x8c0ec374 | 20 |
+| operation_1ac3cc_8c14f3b4 | 0x8c14f3b4 | 20 |
+| cache_actor_position_8c165a1c | 0x8c165a1c | 28 |
+| emit_lookup_602b0_8c16d5bc | 0x8c16d5bc | 20 |
+| query_global_entries_8c199674 | 0x8c199674 | 20 |
+| query_global_entries_8c19a6ec | 0x8c19a6ec | 20 |
+| query_global_entries_8c1afd44 | 0x8c1afd44 | 20 |
+| query_global_entries_8c1dd704 | 0x8c1dd704 | 20 |
+| query_fade_active_8c22eb9c | 0x8c22eb9c | 24 |
+| query_global_entries_8c22f1a8 | 0x8c22f1a8 | 20 |
+| create_object_8c23ca68 | 0x8c23ca68 | 84 |
+| operation_1ac3cc_8c23caf0 | 0x8c23caf0 | 20 |
+| create_object_8c23d9b8 | 0x8c23d9b8 | 92 |
+| operation_1ac3cc_8c23da48 | 0x8c23da48 | 20 |
+| release_shared_buffer_8c256378 | 0x8c256378 | 20 |
 
-78 complete allocation-wrapper functions add 5,368 bytes: 70 three-argument initializer wrappers (68 bytes each) and eight four-argument wrappers (76 bytes each). All 1,357 prior functions and their source/header hashes are preserved. Reviewed instruction sequences keep allocation failure guards, incoming argument lifetimes, return objects, observed globals and allocation sizes. Entry references, adjacent boundaries, full pools and natural alignment are checked.
+26 complete exact functions add 796 bytes: field/vector helpers, allocation wrappers and status-return wrappers. All 1,435 prior matches, their sources/headers and manifest entries are preserved. Nine wrappers explicitly return the signed status from callee 0x8c37d534; raw instructions establish its one-pointer argument and 1/-1 return. Fifteen other structural wrapper candidates remain uncompiled and parked pending argument/return evidence. Matching instruction shape alone does not establish a source-level calling convention.
 
-78 first hypotheses produced 78 exact matches and zero duplicate outputs. Recorded candidate compilation totaled 2.205 seconds. A further 156 compilation comparisons reproduce admission twice; they are verification, not new hypotheses or gains. No failed target was retried. Reusable local source generation now handles reviewed decimal as well as hexadecimal constants; emitted ordinary C is still compiled and compared by the unchanged pinned toolchain.
+27 first hypotheses produced 26 exact matches and one mismatch, with 0.808 seconds of recorded compilation. Two duplicate outputs belong to distinct exact field-copy entries. Another 52 compilations reproduce the admissions twice. The failed SDK loop at 0x8c37d534 produced 72 bytes versus 88 expected, with 84 differing bytes, first at 0x8c37d538. Generated code saves three GPRs and uses MUL.L by 12 with loop-local literal loads; raw code saves six GPRs, uses shift/add addressing and hoists the callback, failure-index pointer and -1 constant. It is parked after H1 until independent exact compiler/context evidence explains that lowering. No original primary target was retried.
 
-Four fresh project builds passed across both checkouts, with integrated-image comparisons, five-function proofs, 58 research tests and 63 public tests. Source-only rejection preserved artifacts. Verification commands totaled 85.741 seconds in research and 87.713 seconds in public, running concurrently. Only new focused ranges were exported; unchanged analysis was reused.
+Four successful fresh full builds passed across both checkouts, with integrated-image comparisons, five-function proofs, 58 research tests and 63 public tests. Source-only rejection preserved artifacts. Successful verification commands totaled 85.787 seconds in research and 87.091 seconds in public. Unchanged focused evidence was reused; new matches and the newly inspected SDK range were exported once.
 
-The representative earlier five-small-batch sample added 19 functions / 1,936 bytes from 38 hypotheses, four duplicates, 20 full builds and 555 test executions. This batch adds 78 functions / 5,368 bytes from 78 hypotheses, no duplicates, four builds and 121 test executions. Verification overhead per gained byte remains lower. Task-attributed token/cost records and historical timing records are unavailable; no cost or runtime estimate is claimed. See [EFFICIENCY.md](EFFICIENCY.md) for the original comparison.
+This batch was less efficient per gained byte than the baseline. A missing destination directory interrupted the first public sync; its stale-checkout verification was stopped after 1,138 recorded module comparisons. The corrected explicit sync creates source directories before copying. The four successful builds required 5,612 module comparisons, totaling at least 6,750 including the interrupted attempt: 8.48 comparisons per new byte. The five-stage baseline had 12,544 comparisons for 1,936 bytes, or 6.48 per byte. Even without the interrupted attempt, this small batch required more comparisons per gained byte. Earlier large-family batches improved overhead, but that does not conceal this regression.
 
-Tooling and screening receive no reconstruction credit. Static data remains zero, and whole-image coverage is not code-completion percentage. The original two targets remain parked and incomplete. Most straightforward literal-only patterns are now exhausted; remaining short families and two allocation-immediate variants are candidates for a combined future batch. Reproduce with `tools/reconstruct.py verify` and [RECONSTRUCTION_WORKFLOW.md](RECONSTRUCTION_WORKFLOW.md).
+The next integration will collect several KB of exact candidates where practical and prioritize larger effect/constructor families. Do not repeat full verification for isolated short wrappers. Cheap trials continue immediately; unavailable ABI evidence remains a recorded blocker. Task-attributed token/cost records and baseline command timings are unavailable, so no cost/runtime estimate is claimed. Static data remains zero; whole-image coverage is not code completion. Original primary targets remain parked and incomplete. Reproduce with `tools/reconstruct.py verify` and [RECONSTRUCTION_WORKFLOW.md](RECONSTRUCTION_WORKFLOW.md).

@@ -111,3 +111,9 @@ justifies more; never exceed ten cumulative unsuccessful hypotheses. Continue
 with proven related families and larger credible helpers. Generated source,
 receipts and documentation still require exact staged review and privacy checks
 before an authorized commit/push.
+
+## Batch 169: measured regression and adjustment
+
+This batch gained 26 functions / 796 bytes from 27 hypotheses (26 exact, one SDK loop mismatch), with two duplicate outputs across distinct exact entries. Four successful full builds performed 5,612 module comparisons. An interrupted stale public-checkout verification added 1,138 recorded comparisons after a missing source directory stopped synchronization. Total recorded verification work was at least 6,750 comparisons, or 8.48 per new byte, versus 6.48 in the five-stage baseline (12,544 / 1,936). Even excluding that interruption, the small batch was less efficient per gained byte. All 121 tests passed after the corrected sync.
+
+Subsequent integration should collect several KB, preferably at least 4 KiB, before full validation where practical. Prioritize larger effect/constructor families; keep cheap candidates and unresolved ABI review separate from integration. The successful larger batches do not erase this regression. Token/cost and historical timing records remain unavailable.
