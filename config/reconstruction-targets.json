@@ -9144,6 +9144,124 @@
       "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource state prefix offsets checked; complete final source exact twice; reconstruction-stage84.",
       "status": "matched",
       "reason": "Complete resource flag-state callback; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_193a9c",
+      "source": "src/objects/operation_193a9c.c",
+      "address": "0x8c193a9c",
+      "entry": "_operation_193a9c",
+      "ranges": [
+        {
+          "offset": 1587868,
+          "size": 348
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193a9c",
+          "address": "0x8c193a9c",
+          "size": 348
+        }
+      ],
+      "reference_sha256": "7ecb886ecffc230c379c12c579dd576e7f52809fef7a36f3a7efd711bbf77c73",
+      "symbols": {
+        "_chunk_at": "0x8c1334f0"
+      },
+      "headers": [
+        "src/include/resource_chunks.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource chunk and texture prefixes checked; complete final source exact twice; reconstruction-stage85.",
+      "status": "matched",
+      "reason": "Complete resource chunk load or paired allocation/cleanup/dispatch; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_193bf8",
+      "source": "src/objects/operation_193bf8.c",
+      "address": "0x8c193bf8",
+      "entry": "_operation_193bf8",
+      "ranges": [
+        {
+          "offset": 1588216,
+          "size": 208
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193bf8",
+          "address": "0x8c193bf8",
+          "size": 208
+        }
+      ],
+      "reference_sha256": "4e727aa420ad19bc979b2ed67b6c4e204601cc64ca2a446438548309e3f4c168",
+      "symbols": {
+        "_first": "0x8c4dc318",
+        "_second": "0x8c4dc31c",
+        "_buffer": "0x8c4dc320",
+        "_buffer_allocate_at": "0x8c18de4c"
+      },
+      "headers": [
+        "src/include/resource_chunks.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource chunk and texture prefixes checked; complete final source exact twice; reconstruction-stage85.",
+      "status": "matched",
+      "reason": "Complete resource chunk load or paired allocation/cleanup/dispatch; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_193cc8",
+      "source": "src/objects/operation_193cc8.c",
+      "address": "0x8c193cc8",
+      "entry": "_operation_193cc8",
+      "ranges": [
+        {
+          "offset": 1588424,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193cc8",
+          "address": "0x8c193cc8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "e4b189dd5c1dc1b32fe89bff1cd3dac8c5ad1ef8a23b6c7a9d4b94427e00480d",
+      "symbols": {
+        "_first": "0x8c4dc318",
+        "_second": "0x8c4dc31c",
+        "_buffer": "0x8c4dc320"
+      },
+      "headers": [
+        "src/include/resource_chunks.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource chunk and texture prefixes checked; complete final source exact twice; reconstruction-stage85.",
+      "status": "matched",
+      "reason": "Complete resource chunk load or paired allocation/cleanup/dispatch; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_193d18",
+      "source": "src/objects/operation_193d18.c",
+      "address": "0x8c193d18",
+      "entry": "_operation_193d18",
+      "ranges": [
+        {
+          "offset": 1588504,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193d18",
+          "address": "0x8c193d18",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "0568b6f3995714b802b456b84035cf75fefa9c825f1d87afda2695b62a8606f5",
+      "headers": [
+        "src/include/resource_chunks.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource chunk and texture prefixes checked; complete final source exact twice; reconstruction-stage85.",
+      "status": "matched",
+      "reason": "Complete resource chunk load or paired allocation/cleanup/dispatch; static dispatch and globals remain reference-dependent."
     }
   ]
 }

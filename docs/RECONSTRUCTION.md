@@ -4402,3 +4402,55 @@ remains **172/4**, root child construction **316/28**, larger child construction
 dependence. Compiler, base flags, default GNU linking and full-range acceptance
 are unchanged. Publication retains all default scanner rules and the narrowly
 verified source-hash exception with its stage-75 detection control.
+
+
+## Resource chunk and paired-owner operations, stage 85
+
+Four complete functions add **768 bytes**: chunk completion **0x8c193a9c** (348),
+paired allocation **0x8c193bf8** (208), paired cleanup **0x8c193cc8** (80), and
+state dispatch **0x8c193d18** (132). Totals are **400 functions / 353 modules /
+37,956 compiled full-range bytes / 4,124,956 retained reference bytes**, or
+**0.9118% whole-image coverage**. All 396 previous matches, module definitions
+and source/header hashes remain unchanged. Since the initial checkpoint,
+366 functions replace 34,312 bytes. Code-only completion remains unknown;
+separately reconstructed static data is zero.
+
+Chunk completion preserves the unsigned offset/length loop, three stack outputs,
+32-byte cursor rounding, four model slots, first texture-list assignment and
+motion pointer. Explicit shift addressing, stack declaration order, late counter
+and mask initialization recover saved registers and setup. An external chunk
+callee and texture-list local reloaded in each loop condition finish the match;
+the latter removes a redundant generated reload while preserving observed reads.
+Entry type substitutions alone do not. The checked texture entries are 12 bytes,
+texture-list prefix eight bytes, and full resource view 64 bytes. The first
+paired allocation uses only its observed 40-byte prefix.
+
+Allocation preserves separately nullable 40/64-byte owners, root calls, duplicate
+flag/state/dispatch assignments, four-slot clearing and final shared allocation.
+Typed external globals and buffer allocator reduce the mismatch to five bytes;
+separate source lifetimes for the two owners recover the final call delay slot.
+Reusing the owner, merely capturing size/callee or adding a second declaration
+does not. Cleanup releases the buffer, invokes two nullable dispatch slot-eight
+calls, then clears three globals. External globals recover all address loads;
+chained assignments and captured addresses alone fail. Dispatch preserves both
+nullable owners, fixed start/poll calls for states one/two and slot-twelve calls
+for state four, skipping other states.
+
+All **46 trials** retain source snapshots, hypotheses and comparisons. One
+scratch substitution accidentally changed a structure declaration and was
+compiler-rejected; its companion altered the scratch layout and was excluded.
+Corrected local-only experiments are separately retained. Final checked sources
+match twice independently. Two fresh exact project builds, integrated image
+comparison, five-function proof and all **53 research tests** pass; the public
+suite remains **58 tests**. Source-only rejects 4,124,956 retained bytes without
+changing artifacts. Focused exports use a disposable copy, are validated against
+current inputs, and leave the original database unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Supporting
+matches do not replace primary acceptance. Earlier buffer initialization remains
+**172/4**, root child construction **316/28**, larger child construction **496/362**.
+Static dispatch, globals and remaining callees retain reference dependence.
+Compiler, base flags, default GNU linker and full-range acceptance are unchanged.
+Publication retains all default scanner rules and the narrowly verified
+source-hash exception with its stage-75 detection control.

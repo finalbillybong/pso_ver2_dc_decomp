@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **396 exact functions in 349 modules**, replacing
-**37,188 bytes** of the 4,162,912-byte decoded executable (**0.8933% image coverage**).
-It retains **4,125,724 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **400 exact functions in 353 modules**, replacing
+**37,956 bytes** of the 4,162,912-byte decoded executable (**0.9118% image coverage**).
+It retains **4,124,956 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 84
+## Latest batch: stage 85
 
-Resource flag-state callbacks add six functions and 676 bytes in six modules.
-All 390 earlier matches, module definitions and source/header hashes are
-preserved. Since the initial checkpoint, 362 functions replace 33,544 bytes.
-All 27 trials are retained. Start/poll/completion paths preserve observed state,
-flag, handle and global ordering; both destructors retain all three null checks.
-Buffer initialization remains 172/4; primary targets remain 512/30 and 388/8.
-Signed remainder, global allocation and static data remain unresolved.
+Resource chunk and paired-owner operations add four functions and 768 bytes.
+All 396 earlier matches, module definitions and source/header hashes are
+preserved. Since the initial checkpoint, 366 functions replace 34,312 bytes.
+All 46 trials are retained, including one compiler rejection and an excluded
+scratch layout change. Final checked chunk, allocation, cleanup and dispatch
+functions match completely. Primary targets remain 512/30 and 388/8.
+Signed remainder, earlier buffer initialization and static data remain unresolved.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only
