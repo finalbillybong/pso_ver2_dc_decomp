@@ -28,12 +28,12 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 121
+## Latest integration batch: stage 122
 
-Stage 121 adds **1 function / 180 bytes**: quaternion blending with the pinned
-compiler's reciprocal-square-root intrinsic. Its genuine adjacent draw function
-supplies natural alignment in a combined module. All 521 preceding functions
-and source/header files are preserved. Required verification passes.
+Stage 122 is investigation-only: **0 new functions / 0 new bytes**. Two Euler
+converters remain at270/272 bytes with36 differences each; quaternion interpolation
+is324/320 with252 differences. They are parked after four, four and three hypotheses.
+All existing matches are preserved and required verification passes.
 
 ## Autonomous iteration
 

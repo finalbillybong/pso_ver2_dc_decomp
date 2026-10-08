@@ -6210,3 +6210,44 @@ staged review and privacy scans; private data and original saves are preserved.
 Research remains uncommitted. Reproduce with `python3 -B tools/verify_source.py`,
 the test suite and expected source-only rejection. Continue into related sine/cosine
 and Euler conversion routines using compiler evidence, without changing flags.
+
+
+## Bounded Euler and quaternion investigation, stage 122
+
+**No new matching functions and no new compiled bytes.** Coverage remains
+522 functions / 469 modules / 50,868 compiled bytes / 4,112,044 retained reference
+bytes (1.2219% whole-image coverage). The matching manifest and every existing
+source/header remain unchanged. Three incomplete targets are explicitly parked.
+
+| Target | Complete-range result | First difference | Persistent hypotheses |
+| --- | --- | --- | ---: |
+| euler_to_quaternion_0, 0x8c0c3704 | 270 generated /272 expected;36 differing including missing bytes | 0x8c0c37b7 | 4 |
+| euler_to_quaternion_1, 0x8c0c3814 | 270 generated /272 expected;36 differing including missing bytes | 0x8c0c38c5 | 4 |
+| interpolate_quaternion, 0x8c0c3c14 | 324 generated /320 expected;252 differing including length | 0x8c0c3c2a | 3 |
+
+Compiler diagnostics establish the built-in __fsca signature as long/void*/void*,
+rather than the manual's float-pointer form. Correcting the declaration reproduces
+the paired sine/cosine and first two Euler components. The last two components still
+have 34 instruction-byte differences; two alignment bytes are also absent. Splitting
+the first product gives40 differences; right-grouping the second gives38. Park both
+until independent exact sequential triple-product/FR reuse evidence appears. Genuine
+adjacent grouping is appropriate only after the instruction differences are resolved.
+
+Quaternion interpolation preserves twenty-byte keys, signed-dot fraction adjustment,
+weighted components and external square-root normalization. Baseline324/254 improves
+to324/252 by reversing commutative dot operands. A direct condition instead of a named
+dot temporary reproduces the baseline. Dot/fraction lifetimes and first-component
+pointer retention still differ. Revisit only with independent exact escaped-fraction
+lifetime evidence or verified different call/source context.
+
+Fourteen snapshots include two compile failures and eight distinct successful binaries.
+Checked provisional sources reproduce the best incomplete results without admission.
+All complete mismatch offsets and persistent counts are in the unresolved queue.
+Two fresh exact builds per checkout, exact integrated image, five-function proof,
+53 research tests and58 public tests pass. Source-only rejection preserves existing
+artifacts. Refreshed focused exports validate on a disposable database copy.
+
+Stage121 commit e581b1b is published and remote checks passed. This checkpoint records
+failed hypotheses, not increased completion. Compiler flags, private data, original
+saves and unrelated work remain preserved. Continue immediately to other credible
+functions; do not repeat equivalent source variations on these parked targets.
