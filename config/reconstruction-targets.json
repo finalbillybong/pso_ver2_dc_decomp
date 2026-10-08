@@ -13815,6 +13815,257 @@
       "boundary_review": "Raw target cleanup, effect-table reset, three factories, resource destructor and coordinate binding reviewed with adjacent entries, signed accesses, call delays, literals and natural alignment. Full checked match twice; stage123.",
       "status": "matched",
       "reason": "Complete effect/target helper, preserving observed allocation, cleanup, sentinel or coordinate mutation behavior."
+    },
+    {
+      "id": "destroy_effect_base",
+      "source": "src/effects/destroy_effect_base.c",
+      "address": "0x8c0a0104",
+      "entry": "_destroy_effect_base",
+      "headers": [
+        "src/include/effect_resource_views.h"
+      ],
+      "ranges": [
+        {
+          "offset": 590084,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_base",
+          "address": "0x8c0a0104",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "d481e1698292573d8bd8d54c4a206c7c85cb2b62c05f51e1f4afc49fb249d6cb",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124.",
+      "status": "matched",
+      "reason": "Complete effect base destruction, resource release/search or factory range; preserve observed behavior."
+    },
+    {
+      "id": "release_effect_resources",
+      "source": "src/effects/release_effect_resources.c",
+      "address": "0x8c0a01cc",
+      "entry": "_release_effect_resources",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 590284,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_effect_resources",
+          "address": "0x8c0a01cc",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "cf72dcf1b1fba8a6c5f973bab45cfbe8bd5634f0ef6b851d2657722807b0ebba",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124.",
+      "status": "matched",
+      "reason": "Complete effect base destruction, resource release/search or factory range; preserve observed behavior."
+    },
+    {
+      "id": "create_effect_b03c8",
+      "source": "src/effects/create_effect_b03c8.c",
+      "address": "0x8c0b03c8",
+      "entry": "_create_effect_b03c8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 656328,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b03c8",
+          "address": "0x8c0b03c8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "309faa6de7c65f361864f66c8976f0946ff114579cfe4eb68e88f29eb7e962a0",
+      "symbols": {
+        "_initialize_at": "0x8c0afe6c"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124.",
+      "status": "matched",
+      "reason": "Complete effect base destruction, resource release/search or factory range; preserve observed behavior."
+    },
+    {
+      "id": "create_effect_b040c",
+      "source": "src/effects/create_effect_b040c.c",
+      "address": "0x8c0b040c",
+      "entry": "_create_effect_b040c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 656396,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b040c",
+          "address": "0x8c0b040c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "41331f17f063614a390a3f7fd46bf64bdd1e16f4da73f5ed6f5354159cb7ed4e",
+      "symbols": {
+        "_initialize_at": "0x8c0b0058"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124.",
+      "status": "matched",
+      "reason": "Complete effect base destruction, resource release/search or factory range; preserve observed behavior."
+    },
+    {
+      "id": "find_effect_resource",
+      "source": "src/effects/find_effect_resource.c",
+      "address": "0x8c0a02cc",
+      "entry": "_find_effect_resource",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 590540,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "find_effect_resource",
+          "address": "0x8c0a02cc",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "dba835fbcee3880a2fc86579cd5aa072d034078abad73462b2c0fcca74534287",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124.",
+      "status": "matched",
+      "reason": "Complete effect base destruction, resource release/search or factory range; preserve observed behavior."
+    },
+    {
+      "id": "copy_effect_resource_forward",
+      "source": "src/provisional/copy_effect_resource_forward.c",
+      "address": "0x8c0a0214",
+      "entry": "_copy_effect_resource_forward",
+      "headers": [
+        "src/include/effect_resource_views.h"
+      ],
+      "ranges": [
+        {
+          "offset": 590356,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "copy_effect_resource_forward",
+          "address": "0x8c0a0214",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "107fe98a0352c038e731c4f1fb634d3e343d9a84118b6e8ef1845f8ee6908859",
+      "symbols": {},
+      "status": "parked",
+      "reason": "90 generated /92 expected;19 instruction differences in final field load schedule plus2 missing natural alignment bytes. First 0x8c0a0254. First two field transfers are exact.",
+      "unsuccessful_distinct_hypotheses": 4,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact final destination-base/source-index lifetime pattern; after instruction match test genuine adjacent grouping for natural alignment.",
+      "comparison": {
+        "name": "copy_effect_resource_forward-checked-0",
+        "size": 90,
+        "expected_size": 92,
+        "exact": false,
+        "differing_bytes": 21,
+        "first_difference": "0x8c0a0254",
+        "offsets": [
+          64,
+          65,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          89
+        ],
+        "source_sha256": "88d3e52c31b17fb20a6a75af9d4e11db843324c5c3b8d796cf56923094aec892",
+        "compiler_receipt_sha256": "3fbb571b765a9ad34af8b6fd5ad73249ec4d5b6a52239a3a382b59c8e791c31c"
+      }
+    },
+    {
+      "id": "copy_effect_resource_back",
+      "source": "src/provisional/copy_effect_resource_back.c",
+      "address": "0x8c0a0270",
+      "entry": "_copy_effect_resource_back",
+      "headers": [
+        "src/include/effect_resource_views.h"
+      ],
+      "ranges": [
+        {
+          "offset": 590448,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "copy_effect_resource_back",
+          "address": "0x8c0a0270",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "e5e312450cae01d19fb9e257e916f239acfc3f9feae3730e964d5c33876d0eb6",
+      "symbols": {},
+      "status": "parked",
+      "reason": "90 generated /92 expected;19 instruction differences in final field load schedule plus2 missing natural alignment bytes. First 0x8c0a02b0. First two field transfers are exact.",
+      "unsuccessful_distinct_hypotheses": 4,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact final destination-base/source-index lifetime pattern; after instruction match test genuine adjacent grouping for natural alignment.",
+      "comparison": {
+        "name": "copy_effect_resource_back-checked-0",
+        "size": 90,
+        "expected_size": 92,
+        "exact": false,
+        "differing_bytes": 21,
+        "first_difference": "0x8c0a02b0",
+        "offsets": [
+          64,
+          65,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          89
+        ],
+        "source_sha256": "0a962e917c349bd1376a343612e1d22329e05e5113660d81106a473851eec03d",
+        "compiler_receipt_sha256": "a38bc284e5209229d5c77ae355a188c8a544cd7bc6c91be920a0153dc96abe3c"
+      }
     }
   ]
 }

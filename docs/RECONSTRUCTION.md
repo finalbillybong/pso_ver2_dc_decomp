@@ -6297,3 +6297,49 @@ remain preserved. Only reviewed, privacy-scanned public changes are committed.
 
 Reproduce with `python3 -B tools/verify_source.py`, the current test suite and expected
 source-only rejection. Continue into effect base destruction and neighboring factories.
+
+
+## Effect base destruction and resource helpers, stage 124
+
+Five new exact functions replace **332 bytes** in five modules. Totals are
+**534 functions / 481 modules / 51,656 compiled bytes / 4,111,256 retained reference
+bytes**, or **1.2409% whole-image coverage**. All 529 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| destroy_effect_base | 0x8c0a0104 | 72 |
+| release_effect_resources | 0x8c0a01cc | 72 |
+| create_effect_b03c8 | 0x8c0b03c8 | 68 |
+| create_effect_b040c | 0x8c0b040c | 80 |
+| find_effect_resource | 0x8c0a02cc | 40 |
+
+Base destruction preserves dispatch replacement, state at offset 32 clearing, parent destruction
+and signed-short conditional pool release. Resource release preserves the one-entry
+counted loop and global pointer reset. Factories preserve three/four arguments and
+allocation failure. Resource lookup retains its zero default and first equality in
+55 entries. Explicit shifted byte addressing replaces the baseline MUL.L/STS stride,
+reducing the lookup from 44/40 bytes with 40 differences to the complete exact range.
+The other four admissions match on their first candidates.
+
+Investigation-only: forward/back resource copying at 0x8c0a0214/0x8c0a0270 remains
+90/92 bytes with 21 differences each: 19 instruction bytes plus 2 missing alignment
+bytes. First differences are 0x8c0a0254/0x8c0a02b0. Four distinct hypotheses per target
+are recorded. Struct indexing gives 86/92 with 75 differences. Forming each field's
+base before byte indexing makes the first two transfers exact. Capturing the final
+complete destination changes its addressing and worsens the result to 23 differences;
+capturing only its base produces the same binary as field-base indexing. Both targets
+are parked. Revisit only with an independent exact final destination-base/source-index
+lifetime pattern, then consider genuine adjacent grouping once instructions match.
+No copy-function bytes receive completion credit.
+
+Twenty-six snapshots form twelve binary groups. Checked admissions match twice.
+Two fresh exact builds per checkout, exact integrated image, five-function proof,
+53 research tests and 58 public tests pass. Source-only rejects 4,111,256 bytes without
+altering existing artifacts. Refreshed focused exports validate on a disposable copy.
+The two original primary targets remain incomplete and were not reopened.
+
+Stage 123 commit 6608052 is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into neighboring effect factories and their initializer dependencies.

@@ -4795,6 +4795,77 @@
       "boundary_review": "Raw SH4 entry through adjacent entry, including literals/alignment. Link functions combined in original order for natural alignment; no padding inserted. Final source exact twice; reconstruction-stage60."
     },
     {
+      "id": "destroy_effect_base",
+      "source": "src/effects/destroy_effect_base.c",
+      "address": "0x8c0a0104",
+      "entry": "_destroy_effect_base",
+      "headers": [
+        "src/include/effect_resource_views.h"
+      ],
+      "ranges": [
+        {
+          "offset": 590084,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_base",
+          "address": "0x8c0a0104",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "d481e1698292573d8bd8d54c4a206c7c85cb2b62c05f51e1f4afc49fb249d6cb",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124."
+    },
+    {
+      "id": "release_effect_resources",
+      "source": "src/effects/release_effect_resources.c",
+      "address": "0x8c0a01cc",
+      "entry": "_release_effect_resources",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 590284,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_effect_resources",
+          "address": "0x8c0a01cc",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "cf72dcf1b1fba8a6c5f973bab45cfbe8bd5634f0ef6b851d2657722807b0ebba",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124."
+    },
+    {
+      "id": "find_effect_resource",
+      "source": "src/effects/find_effect_resource.c",
+      "address": "0x8c0a02cc",
+      "entry": "_find_effect_resource",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 590540,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "find_effect_resource",
+          "address": "0x8c0a02cc",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "dba835fbcee3880a2fc86579cd5aa072d034078abad73462b2c0fcca74534287",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124."
+    },
+    {
       "id": "reset_effect_table_state",
       "source": "src/effects/reset_effect_table_state.c",
       "address": "0x8c0a6bdc",
@@ -6425,6 +6496,56 @@
       "reference_sha256": "aa0cb51149c52793cb9e35efc2b3b892371b4b9001f8b2cee6e936216680cb64",
       "symbols": {},
       "boundary_review": "Raw target cleanup, effect-table reset, three factories, resource destructor and coordinate binding reviewed with adjacent entries, signed accesses, call delays, literals and natural alignment. Full checked match twice; stage123."
+    },
+    {
+      "id": "create_effect_b03c8",
+      "source": "src/effects/create_effect_b03c8.c",
+      "address": "0x8c0b03c8",
+      "entry": "_create_effect_b03c8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 656328,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b03c8",
+          "address": "0x8c0b03c8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "309faa6de7c65f361864f66c8976f0946ff114579cfe4eb68e88f29eb7e962a0",
+      "symbols": {
+        "_initialize_at": "0x8c0afe6c"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124."
+    },
+    {
+      "id": "create_effect_b040c",
+      "source": "src/effects/create_effect_b040c.c",
+      "address": "0x8c0b040c",
+      "entry": "_create_effect_b040c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 656396,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b040c",
+          "address": "0x8c0b040c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "41331f17f063614a390a3f7fd46bf64bdd1e16f4da73f5ed6f5354159cb7ed4e",
+      "symbols": {
+        "_initialize_at": "0x8c0b0058"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124."
     },
     {
       "id": "extra_b6394",
