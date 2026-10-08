@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **320 exact functions in 295 modules**, replacing
-**32,128 bytes** of the 4,162,912-byte decoded executable (**0.7718% image coverage**).
-It retains **4,130,784 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **347 exact functions in 300 modules**, replacing
+**32,828 bytes** of the 4,162,912-byte decoded executable (**0.7886% image coverage**).
+It retains **4,130,084 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 74
+## Latest batch: stage 75
 
-Guarded update, a weighted accumulator and four bounded byte queries add six
-functions and 376 bytes in three modules. All 314 earlier matches, module
-definitions and source/header hashes are preserved. Since the initial checkpoint,
-286 functions replace 28,484 bytes. All 71 trials are retained, including one
-compiler rejection. The related formatting routine remains 268 versus 272 bytes;
-effect initializer/update remain 484/92 and 668/22 in scratch. The original
-primary targets remain 512/30 and 388/8; signed remainder is unresolved.
+Bounded queries/accessors, owner reset and child handling, and list/factory
+routines add 27 functions and 700 bytes in five modules. All 320 earlier matches,
+module definitions and source/header hashes are preserved. Since the initial
+checkpoint, 313 functions replace 29,184 bytes. All 56 trials are retained,
+including one compiler/linker rejection. The neighboring owner constructor and
+four trailing accessors remain excluded. Original primary targets remain 512/30
+and 388/8; signed remainder is unresolved.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

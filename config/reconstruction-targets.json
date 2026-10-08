@@ -7577,6 +7577,246 @@
       "boundary_review": "Raw SH4 complete entry ranges and adjacent boundaries, including natural inter-function alignment for four byte queries; checked source exact twice; reconstruction-stage74.",
       "status": "matched",
       "reason": "Complete guarded update, weighted accumulator or four adjacent bounded byte queries; unresolved formatting routine remains unadmitted."
+    },
+    {
+      "id": "settings_queries",
+      "source": "src/objects/settings_queries.c",
+      "address": "0x8c239238",
+      "entry": "_operation_239238",
+      "ranges": [
+        {
+          "offset": 2265656,
+          "size": 196
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_239238",
+          "address": "0x8c239238",
+          "size": 16
+        },
+        {
+          "name": "operation_239248",
+          "address": "0x8c239248",
+          "size": 16
+        },
+        {
+          "name": "operation_239258",
+          "address": "0x8c239258",
+          "size": 16
+        },
+        {
+          "name": "operation_239268",
+          "address": "0x8c239268",
+          "size": 16
+        },
+        {
+          "name": "operation_239278",
+          "address": "0x8c239278",
+          "size": 16
+        },
+        {
+          "name": "operation_239288",
+          "address": "0x8c239288",
+          "size": 16
+        },
+        {
+          "name": "operation_239298",
+          "address": "0x8c239298",
+          "size": 16
+        },
+        {
+          "name": "operation_2392a8",
+          "address": "0x8c2392a8",
+          "size": 16
+        },
+        {
+          "name": "operation_2392b8",
+          "address": "0x8c2392b8",
+          "size": 16
+        },
+        {
+          "name": "operation_2392c8",
+          "address": "0x8c2392c8",
+          "size": 16
+        },
+        {
+          "name": "operation_2392d8",
+          "address": "0x8c2392d8",
+          "size": 20
+        },
+        {
+          "name": "operation_2392ec",
+          "address": "0x8c2392ec",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "e50de28e41bbb238c8af243de4c9a3648766c9d7a9aef7953541a61d970e14f7",
+      "headers": [
+        "src/include/bounded_fields.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry ranges and adjacent boundaries, including natural inter-function alignment; checked source exact twice; reconstruction-stage75.",
+      "status": "matched",
+      "reason": "Complete bounded accessors, owner reset/child handling or list/factory group; unrelated trailing accessors and owner constructor remain reference-dependent."
+    },
+    {
+      "id": "settings_scalar_access",
+      "source": "src/objects/settings_scalar_access.c",
+      "address": "0x8c2392fc",
+      "entry": "_operation_2392fc",
+      "ranges": [
+        {
+          "offset": 2265852,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_2392fc",
+          "address": "0x8c2392fc",
+          "size": 20
+        },
+        {
+          "name": "operation_239310",
+          "address": "0x8c239310",
+          "size": 24
+        },
+        {
+          "name": "operation_239328",
+          "address": "0x8c239328",
+          "size": 24
+        },
+        {
+          "name": "operation_239340",
+          "address": "0x8c239340",
+          "size": 24
+        },
+        {
+          "name": "operation_239358",
+          "address": "0x8c239358",
+          "size": 24
+        },
+        {
+          "name": "operation_239370",
+          "address": "0x8c239370",
+          "size": 16
+        },
+        {
+          "name": "operation_239380",
+          "address": "0x8c239380",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "44ddddf964db13ef91cda68e659286b5811df22a698ae1b62cd7cc1f0e7b1826",
+      "headers": [
+        "src/include/bounded_fields.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry ranges and adjacent boundaries, including natural inter-function alignment; checked source exact twice; reconstruction-stage75.",
+      "status": "matched",
+      "reason": "Complete bounded accessors, owner reset/child handling or list/factory group; unrelated trailing accessors and owner constructor remain reference-dependent."
+    },
+    {
+      "id": "state_owner_reset_group",
+      "source": "src/objects/state_owner_reset_group.c",
+      "address": "0x8c2394a8",
+      "entry": "_operation_2394a8",
+      "ranges": [
+        {
+          "offset": 2266280,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_2394a8",
+          "address": "0x8c2394a8",
+          "size": 52
+        },
+        {
+          "name": "operation_2394dc",
+          "address": "0x8c2394dc",
+          "size": 16
+        },
+        {
+          "name": "operation_2394ec",
+          "address": "0x8c2394ec",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "b6c26ea7bdaf127859650f7fb6de5559c3ec439dabcf74d50e673063217c8f0d",
+      "headers": [
+        "src/include/state_owner.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry ranges and adjacent boundaries, including natural inter-function alignment; checked source exact twice; reconstruction-stage75.",
+      "status": "matched",
+      "reason": "Complete bounded accessors, owner reset/child handling or list/factory group; unrelated trailing accessors and owner constructor remain reference-dependent."
+    },
+    {
+      "id": "state_owner_child_group",
+      "source": "src/objects/state_owner_child_group.c",
+      "address": "0x8c239540",
+      "entry": "_operation_239540",
+      "ranges": [
+        {
+          "offset": 2266432,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_239540",
+          "address": "0x8c239540",
+          "size": 24
+        },
+        {
+          "name": "operation_239558",
+          "address": "0x8c239558",
+          "size": 36
+        },
+        {
+          "name": "operation_23957c",
+          "address": "0x8c23957c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "6619d109d4c7335ccb9776a3ed3e21b224e801034f2dcb7f98a852430cf46d68",
+      "headers": [
+        "src/include/state_owner.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry ranges and adjacent boundaries, including natural inter-function alignment; checked source exact twice; reconstruction-stage75.",
+      "status": "matched",
+      "reason": "Complete bounded accessors, owner reset/child handling or list/factory group; unrelated trailing accessors and owner constructor remain reference-dependent."
+    },
+    {
+      "id": "state_list_and_factory",
+      "source": "src/objects/state_list_and_factory.c",
+      "address": "0x8c2395d0",
+      "entry": "_operation_2395d0",
+      "ranges": [
+        {
+          "offset": 2266576,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_2395d0",
+          "address": "0x8c2395d0",
+          "size": 32
+        },
+        {
+          "name": "operation_2395f0",
+          "address": "0x8c2395f0",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "25f5c86529b1da23780c3141e9a5b379512acafa258b4625003134272746c333",
+      "headers": [
+        "src/include/state_owner.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry ranges and adjacent boundaries, including natural inter-function alignment; checked source exact twice; reconstruction-stage75.",
+      "status": "matched",
+      "reason": "Complete bounded accessors, owner reset/child handling or list/factory group; unrelated trailing accessors and owner constructor remain reference-dependent."
     }
   ]
 }

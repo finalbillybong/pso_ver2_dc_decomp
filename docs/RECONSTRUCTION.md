@@ -3855,3 +3855,74 @@ research tests** pass; the public suite remains **58 tests**. Source-only reject
 on a disposable database copy after manifest changes and validated against current
 inputs. The original database, compiler, base flags, default GNU linker and
 whole-range acceptance rules remain unchanged.
+
+
+## Bounded fields and state-owner lifecycle, stage 75
+
+Twenty-seven complete functions add **700 bytes** in five modules: twelve bounded
+queries at **0x8c239238–0x8c2392fc** (196), seven scalar accessors at
+**0x8c2392fc–0x8c239394** (152), three owner reset/destruction routines at
+**0x8c2394a8–0x8c239540** (152), three timer/child routines at
+**0x8c239540–0x8c23959c** (92), and list initialization plus its adjacent factory at
+**0x8c2395d0–0x8c23963c** (108). Totals are **347 functions / 300 modules / 32,828
+compiled full-range bytes / 4,130,084 retained reference bytes**, or **0.7886%
+whole-image coverage**. All 320 previous matches, module definitions and
+source/header hashes remain unchanged. Since the initial checkpoint, 313 functions
+replace 29,184 bytes. Code-only completion remains unknown; separately reconstructed
+static data is zero.
+
+The bounded-field view checks every accessed offset in its 32-byte prefix.
+Unsigned byte queries keep their individual bounds. Signed short queries preserve
+negative values where only an upper bound is observed. Scalar setters/getters
+preserve their distinct accepted ranges, zero fallback and signed -1 sentinel;
+no uniform validation rule is imposed. Names remain provisional and do not establish
+gameplay semantics. Only the first seven scalar accessors are admitted: the four
+following accessors and the owner constructor retain their full reference ranges.
+
+The state-owner view checks the timer, child pointer, five four-float records and
+child tag/flag prefix. Reset clears only each record's first two floats, leaving
+its factors unchanged. Child validation clears a mismatched tag before returning
+the pointer; flagging follows that validation. The timer decrements, reads back,
+clamps negative results to zero and returns the observed status. Destruction keeps
+the nullable object check and positive signed release flag. The list initializer
+uses explicit shifted index addressing for four zero words and clears two trailing
+words. Its standalone candidate emits 30 bytes against a 32-byte interval; the
+adjacent factory supplies natural alignment and the complete 108-byte group matches.
+The factory preserves its input null check, allocation pool and size, allocation
+failure return and three initializer inputs. No explicit padding is inserted.
+
+The unadmitted four trailing accessors match their instruction bytes after an
+explicit trailing-base pointer helper, but the final alignment requires the next
+constructor. That **168-byte constructor** remains unresolved: direct field stores
+generate 188 bytes, inline/member construction generates 168/140, and ordinary
+loops generate 84 or 92 bytes. Named records, chained/comma stores, inline stores,
+placement construction and actual C++ constructors do not resolve it. An automatic
+array-construction trial requires an unresolved runtime helper and is rejected.
+No matching prefix or size-only result is admitted.
+
+The successful float-declaration-order pattern from stage 74 was transferred to
+both primary angle conversions. All twelve declaration/expression trials remain
+**512/30**, with first difference **0x8c045fdd**. Inline formatting-body hypotheses
+leave the neighboring formatting routine at 268 versus 272 bytes. Primary emission
+remains **388/8**, related reuse **448/4**, manager initialization **280/8**, and
+signed remainder unresolved. The original primary batch remains incomplete;
+supporting matches do not replace its acceptance criteria.
+
+All **56 trials**, including **one compiler/linker rejection**, retain source
+snapshots, hypotheses and comparisons in `reconstruction-stage75`; completed
+compilations retain compiler receipts. Final checked sources match independently
+twice. Identifiers, source paths and intervals are checked before admission. Two
+fresh exact builds, integrated-image comparison, five-function proof and all **53
+research tests** pass; the public suite remains **58 tests**. Source-only rejects
+4,130,084 retained bytes without changing artifacts. Focused exports are regenerated
+on a disposable copy after manifest changes and validated against current inputs.
+The original database, compiler, base flags, default GNU linker and complete-range
+acceptance rules remain unchanged.
+
+
+Stage 75 publication scan: the generic API-key rule flagged the generated source
+SHA-256 associated with `settings_scalar_access.c`. The value was verified against
+the actual public source file. A local exception permits only that exact hash,
+with all default rules retained; a separate synthetic credential control is still
+detected. The full redacted history scan then passes. The original finding and
+verification receipts are preserved privately; no serial/access key was published.
