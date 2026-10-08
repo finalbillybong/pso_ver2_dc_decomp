@@ -42780,6 +42780,2164 @@
       "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding.",
       "status": "matched",
       "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_object_8c164fd8",
+      "address": "0x8c164fd8",
+      "entry": "_initialize_object_8c164fd8",
+      "ranges": [
+        {
+          "offset": 1396696,
+          "size": 364
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_object_8c164fd8",
+          "address": "0x8c164fd8",
+          "size": 364
+        }
+      ],
+      "reference_sha256": "e8a34f72013af8a8d358b6d2c22f0a9cfbca5284b0ef9d82e8d91cf63387d085",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch170 H1/H2 identical372-byte output. H3 explicit byte scaling yields368bytes/212 differing. Remaining RNG temporary/float-register and call scheduling does not match. Revisit only with independently exact same RNG calculation/assignment context; all3 hypotheses preserved in scratch.",
+      "source": "src/provisional/initialize_object_8c164fd8.c",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {}
+    },
+    {
+      "id": "initialize_object_8c1a129c",
+      "address": "0x8c1a129c",
+      "entry": "_initialize_object_8c1a129c",
+      "ranges": [
+        {
+          "offset": 1643164,
+          "size": 264
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_object_8c1a129c",
+          "address": "0x8c1a129c",
+          "size": 264
+        }
+      ],
+      "reference_sha256": "74277b9c86f3b129e6a934b6b720c517cde80f74cb5a4b088a73c5dd548f7340",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "H1/H3 identical264-byte output,26 differing bytes from0x8c1a131f; H2 worsened75. Scoped radius floating operations match, but object/x/z/destination pointer allocation and scheduling differ. Revisit only with independently exact matching radius-pointer schedule or verified original source context. Batch170 scratch preserves all hypotheses and receipts.",
+      "source": "src/provisional/initialize_object_8c1a129c.cpp",
+      "language": "c++",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {}
+    },
+    {
+      "id": "initialize_object_8c21b9b4",
+      "address": "0x8c21b9b4",
+      "entry": "_initialize_object_8c21b9b4",
+      "ranges": [
+        {
+          "offset": 2144692,
+          "size": 660
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_object_8c21b9b4",
+          "address": "0x8c21b9b4",
+          "size": 660
+        }
+      ],
+      "reference_sha256": "4c43c7ad76ee6f412db5d69b29731b21db76b337bb14c92dd1cff3079f865015",
+      "status": "raw_review",
+      "hypotheses_tested": 0,
+      "reason": "Called by a newly exact allocation wrapper. Single final RTS/delay at catalog body end; every PC-relative literal reference fits the reviewed pool; next entry has saved-register prologue. Ordinary source not yet tested."
+    },
+    {
+      "id": "initialize_object_8c228618",
+      "address": "0x8c228618",
+      "entry": "_initialize_object_8c228618",
+      "ranges": [
+        {
+          "offset": 2197016,
+          "size": 560
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_object_8c228618",
+          "address": "0x8c228618",
+          "size": 560
+        }
+      ],
+      "reference_sha256": "38a6f0f1e75f4347674eacfef4e7f52a0813b2006c8286733450f7846096cd74",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch170 H1 resource loops568/560 bytes477 differing; H2 source-index snapshot548/560,475 differing; H3 strided column views556/560,432 differing. Loop addressing/register lifetimes remain unresolved. Revisit only independently exact equivalent strided resource loop, retaining observed single index snapshot and homed object reloads.",
+      "source": "src/provisional/initialize_object_8c228618.c",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {}
+    },
+    {
+      "id": "initialize_object_8c229584",
+      "address": "0x8c229584",
+      "entry": "_initialize_object_8c229584",
+      "ranges": [
+        {
+          "offset": 2200964,
+          "size": 500
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_object_8c229584",
+          "address": "0x8c229584",
+          "size": 500
+        }
+      ],
+      "reference_sha256": "306433cae583f782b41214ee9db163d41cd2dcd1d0347a0fdc308bf85445d902",
+      "status": "raw_review",
+      "hypotheses_tested": 0,
+      "reason": "Called by a newly exact allocation wrapper. Single final RTS/delay at catalog body end; every PC-relative literal reference fits the reviewed pool; next entry has saved-register prologue. Ordinary source not yet tested."
+    },
+    {
+      "id": "initialize_object_8c229a98",
+      "address": "0x8c229a98",
+      "entry": "_initialize_object_8c229a98",
+      "ranges": [
+        {
+          "offset": 2202264,
+          "size": 580
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_object_8c229a98",
+          "address": "0x8c229a98",
+          "size": 580
+        }
+      ],
+      "reference_sha256": "5c0ce83df8db71fa5c37105d6a37629c7f377f5d9792af37f4822d2186237a45",
+      "status": "raw_review",
+      "hypotheses_tested": 0,
+      "reason": "Called by a newly exact allocation wrapper. Single final RTS/delay at catalog body end; every PC-relative literal reference fits the reviewed pool; next entry has saved-register prologue. Ordinary source not yet tested."
+    },
+    {
+      "id": "initialize_object_8c22a1b8",
+      "address": "0x8c22a1b8",
+      "entry": "_initialize_object_8c22a1b8",
+      "ranges": [
+        {
+          "offset": 2204088,
+          "size": 564
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_object_8c22a1b8",
+          "address": "0x8c22a1b8",
+          "size": 564
+        }
+      ],
+      "reference_sha256": "96c951f8262a89a44843f375f369deba5f2e63d23e96b02fd728343cdde0f315",
+      "status": "raw_review",
+      "hypotheses_tested": 0,
+      "reason": "Called by a newly exact allocation wrapper. Single final RTS/delay at catalog body end; every PC-relative literal reference fits the reviewed pool; next entry has saved-register prologue. Ordinary source not yet tested."
+    },
+    {
+      "id": "initialize_object_8c246638",
+      "address": "0x8c246638",
+      "entry": "_initialize_object_8c246638",
+      "ranges": [
+        {
+          "offset": 2319928,
+          "size": 328
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_object_8c246638",
+          "address": "0x8c246638",
+          "size": 328
+        }
+      ],
+      "reference_sha256": "722d095790b65eb16105e9149abbcab0d3bc3066be65dc103b625ecf635a6ad4",
+      "status": "parked",
+      "hypotheses_tested": 7,
+      "reason": "Best H5/H6 is full328 bytes with18 differing, first0x8c246677. Address-taking and explicit early return fix the 40-byte stack-home/control-flow deficit. Remaining differences: resource/model R4/R5 allocation, SHLD/destination setup and final zero/global flag scheduling. H6 declared globals repeats output; H7 scoped angle temporary regresses to320/282. H1/H2/H3 identical288/306; one H3 linkage correction is not a new hypothesis.",
+      "source": "src/provisional/initialize_object_8c246638.c",
+      "symbols": {},
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "revisit_when": "Independent exact source reproduces these three register/scheduling regions with the same addressed parameter, or verified source/callee context supports a distinct explanation. Do not retry spelling variants; seven cumulative hypotheses retained."
+    },
+    {
+      "id": "initialize_effect8_template",
+      "source": "src/effects/initialize_effect8_template.c",
+      "address": "0x8c0b8cf0",
+      "entry": "_initialize_effect8_template",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_template_init.h",
+        "src/include/indexed_effect_template.h"
+      ],
+      "ranges": [
+        {
+          "offset": 691440,
+          "size": 216
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect8_template",
+          "address": "0x8c0b8cf0",
+          "size": 216
+        }
+      ],
+      "reference_sha256": "193c91a277aa271c99027b87b7be584dce9124997dac62b846a8832c91795ef9",
+      "symbols": {
+        "_get_effect_template": "0x8c0adc1c",
+        "_effect_scale_pairs": "0x8c304cb8",
+        "_effect_scale_values": "0x8c304d04"
+      },
+      "boundary_review": "Catalog entry and body192; six32-bit literals exactly match template; adjacent entry0x8c0b8dc8. Existing3 checked dependent headers retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c01c1c4",
+      "source": "src/objects/clear_global_8c01c1c4.c",
+      "address": "0x8c01c1c4",
+      "entry": "_clear_global_8c01c1c4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 49604,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c01c1c4",
+          "address": "0x8c01c1c4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "81e3fc0bd56446ff7d590d319a9bac8ad738ce99864e79c6146e4c50219cde6c",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c01c1e8",
+      "source": "src/objects/clear_global_8c01c1e8.c",
+      "address": "0x8c01c1e8",
+      "entry": "_clear_global_8c01c1e8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 49640,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c01c1e8",
+          "address": "0x8c01c1e8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "c14c4dd3a6c4297dd507cfebf0ffaf35ddfe55e5ac96bf5db7cf5f7619701f98",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c01c210",
+      "source": "src/objects/clear_global_8c01c210.c",
+      "address": "0x8c01c210",
+      "entry": "_clear_global_8c01c210",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 49680,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c01c210",
+          "address": "0x8c01c210",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "a372818e7592f5ff0fd4b7199334b3a5a45b457e1bc14ecda6d7903edc4364ea",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c08a584",
+      "source": "src/objects/clear_global_8c08a584.c",
+      "address": "0x8c08a584",
+      "entry": "_clear_global_8c08a584",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 501124,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c08a584",
+          "address": "0x8c08a584",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "37232ee0624cc521e3717b437baa4f2412cec95cdc93db4074e3a05136fab469",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c0d0354",
+      "source": "src/objects/clear_global_8c0d0354.c",
+      "address": "0x8c0d0354",
+      "entry": "_clear_global_8c0d0354",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 787284,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c0d0354",
+          "address": "0x8c0d0354",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "e0f51ad77c392180428db28cf49b86128c40c2163a7e90691fd8a7c977b591ee",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c0de424",
+      "source": "src/objects/clear_global_8c0de424.c",
+      "address": "0x8c0de424",
+      "entry": "_clear_global_8c0de424",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 844836,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c0de424",
+          "address": "0x8c0de424",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "e65a237a342dd397fb2c82ae3520a8bc18877ebf8dcded86ade49f885b276eeb",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c104e70",
+      "source": "src/objects/clear_global_8c104e70.c",
+      "address": "0x8c104e70",
+      "entry": "_clear_global_8c104e70",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1003120,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c104e70",
+          "address": "0x8c104e70",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "75b77330a2225be5b86e1853ddcbf5085836da16066b9bb28749ba0d3bc5ae59",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c1086f0",
+      "source": "src/objects/clear_global_8c1086f0.c",
+      "address": "0x8c1086f0",
+      "entry": "_clear_global_8c1086f0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1017584,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1086f0",
+          "address": "0x8c1086f0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "85508d7ee1164ba2a3c892c107257fcab7647482803645bc73a1661b50905943",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c10ae90",
+      "source": "src/objects/clear_global_8c10ae90.c",
+      "address": "0x8c10ae90",
+      "entry": "_clear_global_8c10ae90",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1027728,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10ae90",
+          "address": "0x8c10ae90",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "762f13e05ec4ab787485689eda0d730eed4a54d3bffd40e091834cb4ba2562a2",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c159204",
+      "source": "src/objects/clear_global_8c159204.c",
+      "address": "0x8c159204",
+      "entry": "_clear_global_8c159204",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1348100,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c159204",
+          "address": "0x8c159204",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ea436ed2bbd0aa4b2b22739b74f3a3715faf1f3c6d651f56bc1354666719a322",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c159210",
+      "source": "src/objects/clear_global_8c159210.c",
+      "address": "0x8c159210",
+      "entry": "_clear_global_8c159210",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1348112,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c159210",
+          "address": "0x8c159210",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ea436ed2bbd0aa4b2b22739b74f3a3715faf1f3c6d651f56bc1354666719a322",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c18bad4",
+      "source": "src/objects/clear_global_8c18bad4.c",
+      "address": "0x8c18bad4",
+      "entry": "_clear_global_8c18bad4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1555156,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c18bad4",
+          "address": "0x8c18bad4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "e632e257a953e94507a9f84a66b82bc2a28144c42ae9ea5e3b4ef7c4f9c861a0",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c19b29c",
+      "source": "src/objects/clear_global_8c19b29c.c",
+      "address": "0x8c19b29c",
+      "entry": "_clear_global_8c19b29c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1618588,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c19b29c",
+          "address": "0x8c19b29c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "3a748c2b8ff6c34755d76455df9565394f0240bd2f95a8fa18f3958d345d3f83",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c1aa7e4",
+      "source": "src/objects/clear_global_8c1aa7e4.c",
+      "address": "0x8c1aa7e4",
+      "entry": "_clear_global_8c1aa7e4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1681380,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1aa7e4",
+          "address": "0x8c1aa7e4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "3b6b9973b04d037c3afb160074dcbc2e0fec8afc2fe8c7e183ec252953d21c4f",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c1acff8",
+      "source": "src/objects/clear_global_8c1acff8.c",
+      "address": "0x8c1acff8",
+      "entry": "_clear_global_8c1acff8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1691640,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1acff8",
+          "address": "0x8c1acff8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "3acc0207c653a940c969cfdc9d029613f602f53679f9b39851c5b7ed2a7f546f",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c1bded0",
+      "source": "src/objects/clear_global_8c1bded0.c",
+      "address": "0x8c1bded0",
+      "entry": "_clear_global_8c1bded0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1760976,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1bded0",
+          "address": "0x8c1bded0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "9f76ec1273567a419231f39fb55f20cf4111e8d8a5457dc856f9c09736b28812",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c208540",
+      "source": "src/objects/clear_global_8c208540.c",
+      "address": "0x8c208540",
+      "entry": "_clear_global_8c208540",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2065728,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c208540",
+          "address": "0x8c208540",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "352bfef090cebd8ad7e315968f37daeab4545842629582b1f920b5539e76c66a",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c208e18",
+      "source": "src/objects/clear_global_8c208e18.c",
+      "address": "0x8c208e18",
+      "entry": "_clear_global_8c208e18",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2067992,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c208e18",
+          "address": "0x8c208e18",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "544d6d4842b5cb0f9569a8f4723ae52ffd2ec57a8ef62a631dbeb7d342cdea06",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c220b1c",
+      "source": "src/objects/clear_global_8c220b1c.c",
+      "address": "0x8c220b1c",
+      "entry": "_clear_global_8c220b1c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2165532,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c220b1c",
+          "address": "0x8c220b1c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ffc8b4ce63e6bf807c38a7dad80ea090bb4e914303ee4604a45148ae171b9bf7",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c220b28",
+      "source": "src/objects/clear_global_8c220b28.c",
+      "address": "0x8c220b28",
+      "entry": "_clear_global_8c220b28",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2165544,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c220b28",
+          "address": "0x8c220b28",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ffc8b4ce63e6bf807c38a7dad80ea090bb4e914303ee4604a45148ae171b9bf7",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c256b24",
+      "source": "src/objects/clear_global_8c256b24.c",
+      "address": "0x8c256b24",
+      "entry": "_clear_global_8c256b24",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2386724,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c256b24",
+          "address": "0x8c256b24",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "99b982430b75ec3335f87e7833c5062b88b5dcbd8db77c07555f1b62eeff56be",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_effect_8c09fd4c",
+      "source": "src/objects/create_effect_8c09fd4c.c",
+      "address": "0x8c09fd4c",
+      "entry": "_create_effect_8c09fd4c",
+      "headers": [],
+      "symbols": {
+        "_initialize_at": "0x8c09fd7c"
+      },
+      "ranges": [
+        {
+          "offset": 589132,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_8c09fd4c",
+          "address": "0x8c09fd4c",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "d3961cf056a6adab9d2f059d72cb7522f2aea4bb0652a9a84e21e2e652508b3a",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_field_8c0e156c",
+      "source": "src/objects/destroy_field_8c0e156c.c",
+      "address": "0x8c0e156c",
+      "entry": "_destroy_field_8c0e156c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 857452,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c0e156c",
+          "address": "0x8c0e156c",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "44ed6dcdb091edf40fc2dd35af5e0dfd957ac1b8c5172051461333210527d785",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_field_8c0fbfa4",
+      "source": "src/objects/destroy_field_8c0fbfa4.c",
+      "address": "0x8c0fbfa4",
+      "entry": "_destroy_field_8c0fbfa4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 966564,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c0fbfa4",
+          "address": "0x8c0fbfa4",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "e8d0c4f94003ece22e157c7c6392dcc02bd0b2a320214c6ff7b8e54362dae8ab",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_field_8c114790",
+      "source": "src/objects/destroy_field_8c114790.c",
+      "address": "0x8c114790",
+      "entry": "_destroy_field_8c114790",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1066896,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c114790",
+          "address": "0x8c114790",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "40f711b21e15933f1bb7dee92431c58a4f711aac53cc5cc5487ed4a998db0b84",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_field_8c17e6c0",
+      "source": "src/objects/query_field_8c17e6c0.c",
+      "address": "0x8c17e6c0",
+      "entry": "_query_field_8c17e6c0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1500864,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_field_8c17e6c0",
+          "address": "0x8c17e6c0",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "60c00a04f5a57817bdbd9048b754afdc1b20cf74d7b206803bff19ae7c3b3304",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_field_8c17e6d8",
+      "source": "src/objects/query_field_8c17e6d8.c",
+      "address": "0x8c17e6d8",
+      "entry": "_query_field_8c17e6d8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1500888,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_field_8c17e6d8",
+          "address": "0x8c17e6d8",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "4e8f8d79c3335606b4dedf6f13892985c9bf2fc9b12d6537ff13f9035ce1b2cc",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "query_field_8c209364",
+      "source": "src/objects/query_field_8c209364.c",
+      "address": "0x8c209364",
+      "entry": "_query_field_8c209364",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2069348,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_field_8c209364",
+          "address": "0x8c209364",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "aab05d8ebc415e50ddffd58b68c8db237acd52084bf00228962b7fb51f27582f",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_field_8c05af48",
+      "source": "src/objects/set_field_8c05af48.c",
+      "address": "0x8c05af48",
+      "entry": "_set_field_8c05af48",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 307016,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c05af48",
+          "address": "0x8c05af48",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ac0b403b62417d81b5fd6898827f62bcd5c6b689fe23ce302fb6d61b5838373f",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_field_8c1e22c8",
+      "source": "src/objects/set_field_8c1e22c8.c",
+      "address": "0x8c1e22c8",
+      "entry": "_set_field_8c1e22c8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1909448,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c1e22c8",
+          "address": "0x8c1e22c8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "4520bac72ca6b2cad40bd9371d7e09f7c9098cfe3f1197331859bc75db97d650",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c106048",
+      "source": "src/objects/clear_global_8c106048.c",
+      "address": "0x8c106048",
+      "entry": "_clear_global_8c106048",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1007688,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c106048",
+          "address": "0x8c106048",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "de108308f6584dc9314941c8713e1b203bdde28a99a11fc8336f09dd93a885b5",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c10b024",
+      "source": "src/objects/clear_global_8c10b024.c",
+      "address": "0x8c10b024",
+      "entry": "_clear_global_8c10b024",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1028132,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10b024",
+          "address": "0x8c10b024",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "309412c3313108e466587ee95e3a27127d2f8c087483b5a20c3f51ec83223ca5",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c10b030",
+      "source": "src/objects/clear_global_8c10b030.c",
+      "address": "0x8c10b030",
+      "entry": "_clear_global_8c10b030",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1028144,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10b030",
+          "address": "0x8c10b030",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "309412c3313108e466587ee95e3a27127d2f8c087483b5a20c3f51ec83223ca5",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c10b0d4",
+      "source": "src/objects/clear_global_8c10b0d4.c",
+      "address": "0x8c10b0d4",
+      "entry": "_clear_global_8c10b0d4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1028308,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10b0d4",
+          "address": "0x8c10b0d4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "cbc944f582c8b5de0726d7bf8a51efaefc789b5b3b1190985424e69b5cb5c7c8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c10b0e0",
+      "source": "src/objects/clear_global_8c10b0e0.c",
+      "address": "0x8c10b0e0",
+      "entry": "_clear_global_8c10b0e0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1028320,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10b0e0",
+          "address": "0x8c10b0e0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "cbc944f582c8b5de0726d7bf8a51efaefc789b5b3b1190985424e69b5cb5c7c8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c10b184",
+      "source": "src/objects/clear_global_8c10b184.c",
+      "address": "0x8c10b184",
+      "entry": "_clear_global_8c10b184",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1028484,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10b184",
+          "address": "0x8c10b184",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ec5f0bb9de782b04f78486b19dd607efdc3f6699f6e430b06f3d9fb1f1de13f2",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c10be4c",
+      "source": "src/objects/clear_global_8c10be4c.c",
+      "address": "0x8c10be4c",
+      "entry": "_clear_global_8c10be4c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1031756,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10be4c",
+          "address": "0x8c10be4c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "790edabb6705f502797a6d81a9610067b874cbd521d271e3b3bde278d1f63270",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c112464",
+      "source": "src/objects/clear_global_8c112464.c",
+      "address": "0x8c112464",
+      "entry": "_clear_global_8c112464",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1057892,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c112464",
+          "address": "0x8c112464",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "745f5645450e05fbab22e7b3f207b62dd63c81758598b9338f465bb99e905c70",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c112470",
+      "source": "src/objects/clear_global_8c112470.c",
+      "address": "0x8c112470",
+      "entry": "_clear_global_8c112470",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1057904,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c112470",
+          "address": "0x8c112470",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "745f5645450e05fbab22e7b3f207b62dd63c81758598b9338f465bb99e905c70",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c162ccc",
+      "source": "src/objects/clear_global_8c162ccc.c",
+      "address": "0x8c162ccc",
+      "entry": "_clear_global_8c162ccc",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1387724,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c162ccc",
+          "address": "0x8c162ccc",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "c9e142be191e381e19b337a696374dd7d28064d70e9bee982712dcb8bd2bb2cb",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c16fc1c",
+      "source": "src/objects/clear_global_8c16fc1c.c",
+      "address": "0x8c16fc1c",
+      "entry": "_clear_global_8c16fc1c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1440796,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c16fc1c",
+          "address": "0x8c16fc1c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "53f8c946d8d0f52acdb79f4c03cf8d1502c36cdca011f0ab17343798428c7f16",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c16fddc",
+      "source": "src/objects/clear_global_8c16fddc.c",
+      "address": "0x8c16fddc",
+      "entry": "_clear_global_8c16fddc",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1441244,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c16fddc",
+          "address": "0x8c16fddc",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d9b1b4334a31adc53bbe4a861a536ccfffb785e55afe17ae43ea4a1455b6c6d8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c1708b8",
+      "source": "src/objects/clear_global_8c1708b8.c",
+      "address": "0x8c1708b8",
+      "entry": "_clear_global_8c1708b8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1444024,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1708b8",
+          "address": "0x8c1708b8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "b2c51044ea25611022f657588f2a2ce79bf2af9bb38c7db0c29f151fa3f37f1f",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c1708d0",
+      "source": "src/objects/clear_global_8c1708d0.c",
+      "address": "0x8c1708d0",
+      "entry": "_clear_global_8c1708d0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1444048,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1708d0",
+          "address": "0x8c1708d0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "cdbc0287233d60aa6a144c1b22dafe360c3f6bb314793d443e13b1c59b364b9e",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c1708f4",
+      "source": "src/objects/clear_global_8c1708f4.c",
+      "address": "0x8c1708f4",
+      "entry": "_clear_global_8c1708f4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1444084,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1708f4",
+          "address": "0x8c1708f4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "769b08ae79962f3392d1087523a7256c208ef5368a6a655d6e375a2609e89706",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c170ef4",
+      "source": "src/objects/clear_global_8c170ef4.c",
+      "address": "0x8c170ef4",
+      "entry": "_clear_global_8c170ef4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1445620,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c170ef4",
+          "address": "0x8c170ef4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "400dd5ff3a50bf958daddfc20892d41a8af0bdfee98ab15c069901f9b4ff44d5",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c1715b8",
+      "source": "src/objects/clear_global_8c1715b8.c",
+      "address": "0x8c1715b8",
+      "entry": "_clear_global_8c1715b8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1447352,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1715b8",
+          "address": "0x8c1715b8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "8ef549cf68ca17d25d9588158a2a86ba56d9b3db7870e63977b3755527234aff",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c2199c0",
+      "source": "src/objects/clear_global_8c2199c0.c",
+      "address": "0x8c2199c0",
+      "entry": "_clear_global_8c2199c0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2136512,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c2199c0",
+          "address": "0x8c2199c0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "fc485ef1d988a493f1c5b1a7663206fabeae1690ef63ba747922085a7f361537",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c219a1c",
+      "source": "src/objects/clear_global_8c219a1c.c",
+      "address": "0x8c219a1c",
+      "entry": "_clear_global_8c219a1c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2136604,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c219a1c",
+          "address": "0x8c219a1c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "b867678cd01c2ffd6be9c57c4fa4b32e35a0dcff39105b3a4b53fd5af868bdb8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c22ab08",
+      "source": "src/objects/clear_global_8c22ab08.c",
+      "address": "0x8c22ab08",
+      "entry": "_clear_global_8c22ab08",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2206472,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c22ab08",
+          "address": "0x8c22ab08",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "6ebf0a52cb3fe9a9a5db52065c787277df40e103986644dcd3d74a11713b1289",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c253474",
+      "source": "src/objects/clear_global_8c253474.c",
+      "address": "0x8c253474",
+      "entry": "_clear_global_8c253474",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2372724,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c253474",
+          "address": "0x8c253474",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d7ff538c4635528304207fd1e0e4e507a02b4d8dfef2db460d5fb155b373c5f6",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c253480",
+      "source": "src/objects/clear_global_8c253480.c",
+      "address": "0x8c253480",
+      "entry": "_clear_global_8c253480",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2372736,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c253480",
+          "address": "0x8c253480",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d7ff538c4635528304207fd1e0e4e507a02b4d8dfef2db460d5fb155b373c5f6",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c25f890",
+      "source": "src/objects/clear_global_8c25f890.c",
+      "address": "0x8c25f890",
+      "entry": "_clear_global_8c25f890",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2422928,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c25f890",
+          "address": "0x8c25f890",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ceb7302944845f9f87bb632a9b58a3168233b665eacd21235d2f0e9c6692eaec",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c282094",
+      "source": "src/objects/clear_global_8c282094.c",
+      "address": "0x8c282094",
+      "entry": "_clear_global_8c282094",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2564244,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c282094",
+          "address": "0x8c282094",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "70e7228d4003e1efb210d9ec6d8156b11e862d34d64ece96370ef52d42364783",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c282d2c",
+      "source": "src/objects/clear_global_8c282d2c.c",
+      "address": "0x8c282d2c",
+      "entry": "_clear_global_8c282d2c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2567468,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c282d2c",
+          "address": "0x8c282d2c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "23e4890634061fb8b7302919d2eb2f9b15ac439f1b3f581c939ea6dde1cd2ed9",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "clear_global_8c282d70",
+      "source": "src/objects/clear_global_8c282d70.c",
+      "address": "0x8c282d70",
+      "entry": "_clear_global_8c282d70",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2567536,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c282d70",
+          "address": "0x8c282d70",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "8c94188b25f64adc08b659de30fcb688743a9e2d233d016550f96676375f6b57",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_field_8c0b403c",
+      "source": "src/objects/destroy_field_8c0b403c.c",
+      "address": "0x8c0b403c",
+      "entry": "_destroy_field_8c0b403c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 671804,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c0b403c",
+          "address": "0x8c0b403c",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "abafa25be3878e4b347e64cbbaa21fcdfef190bb4f13439635596e39ed93364b",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_field_8c0f72a8",
+      "source": "src/objects/destroy_field_8c0f72a8.c",
+      "address": "0x8c0f72a8",
+      "entry": "_destroy_field_8c0f72a8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 946856,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c0f72a8",
+          "address": "0x8c0f72a8",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "44cd77f29ab15ff9fd52afe576c910997bc31d961533e9945272a9c39fc84261",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_field_8c0fcbe4",
+      "source": "src/objects/destroy_field_8c0fcbe4.c",
+      "address": "0x8c0fcbe4",
+      "entry": "_destroy_field_8c0fcbe4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 969700,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c0fcbe4",
+          "address": "0x8c0fcbe4",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "f518487f53aee6994f9d24ef3d8d2b9bab0acadbe61547288656d451c49675fc",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_field_8c1049ec",
+      "source": "src/objects/destroy_field_8c1049ec.c",
+      "address": "0x8c1049ec",
+      "entry": "_destroy_field_8c1049ec",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1001964,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c1049ec",
+          "address": "0x8c1049ec",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "e88e7c87b1d5a9e677e61f79372ef8dc0ed3402927c055ffc1a89822aa2b14ea",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_field_8c11499c",
+      "source": "src/objects/destroy_field_8c11499c.c",
+      "address": "0x8c11499c",
+      "entry": "_destroy_field_8c11499c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1067420,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c11499c",
+          "address": "0x8c11499c",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "c25d982a65ef25e4b939f1df04d4c1d9af4669430f2be9e80dc4630e0addb1f3",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_field_8c17bb90",
+      "source": "src/objects/destroy_field_8c17bb90.c",
+      "address": "0x8c17bb90",
+      "entry": "_destroy_field_8c17bb90",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1489808,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c17bb90",
+          "address": "0x8c17bb90",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "3ed9e99757dd5cc39e7800f5204f1461b5474fd5af449c00c41db77740040905",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_field_8c1d58a4",
+      "source": "src/objects/destroy_field_8c1d58a4.c",
+      "address": "0x8c1d58a4",
+      "entry": "_destroy_field_8c1d58a4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1857700,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c1d58a4",
+          "address": "0x8c1d58a4",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "d77339a1635daac8dc0d1ba6d1ad51bec80e159b948381983e32214ee1a80fdf",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_linked_8c0f00c0",
+      "source": "src/objects/destroy_linked_8c0f00c0.c",
+      "address": "0x8c0f00c0",
+      "entry": "_destroy_linked_8c0f00c0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 917696,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_linked_8c0f00c0",
+          "address": "0x8c0f00c0",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "55e157b4270134540143b81c2127eb303e283d59005343103b8aadf9d5a609fc",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_field_8c0b4d28",
+      "source": "src/objects/set_field_8c0b4d28.c",
+      "address": "0x8c0b4d28",
+      "entry": "_set_field_8c0b4d28",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 675112,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c0b4d28",
+          "address": "0x8c0b4d28",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "6a0b95975e05d5fcdf08c39781d177c9b3903e99b5bd3c51250c38480feed36b",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_field_8c175afc",
+      "source": "src/objects/set_field_8c175afc.c",
+      "address": "0x8c175afc",
+      "entry": "_set_field_8c175afc",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1465084,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c175afc",
+          "address": "0x8c175afc",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "468b2f36c7ae8d345d43c575a0e481627feab2a5ef1384ddb468c36974c14d36",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_field_8c1ae1e0",
+      "source": "src/objects/set_field_8c1ae1e0.c",
+      "address": "0x8c1ae1e0",
+      "entry": "_set_field_8c1ae1e0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1696224,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c1ae1e0",
+          "address": "0x8c1ae1e0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "0f09ce08935ccddbd446ea61701c7fc0875b3f6477f1af414cb2d8461dd8621f",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_field_8c1b2014",
+      "source": "src/objects/set_field_8c1b2014.c",
+      "address": "0x8c1b2014",
+      "entry": "_set_field_8c1b2014",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1712148,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c1b2014",
+          "address": "0x8c1b2014",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "7d75384c641aa835297f4b2f17fb99bf36ac9087c4f6570a1dbda60ad85c0ad0",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_field_8c1b5048",
+      "source": "src/objects/set_field_8c1b5048.c",
+      "address": "0x8c1b5048",
+      "entry": "_set_field_8c1b5048",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1724488,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c1b5048",
+          "address": "0x8c1b5048",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "7d75384c641aa835297f4b2f17fb99bf36ac9087c4f6570a1dbda60ad85c0ad0",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_field_8c1b5750",
+      "source": "src/objects/set_field_8c1b5750.c",
+      "address": "0x8c1b5750",
+      "entry": "_set_field_8c1b5750",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1726288,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c1b5750",
+          "address": "0x8c1b5750",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "7d75384c641aa835297f4b2f17fb99bf36ac9087c4f6570a1dbda60ad85c0ad0",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_field_8c23c99c",
+      "source": "src/objects/set_field_8c23c99c.c",
+      "address": "0x8c23c99c",
+      "entry": "_set_field_8c23c99c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2279836,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c23c99c",
+          "address": "0x8c23c99c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "7fd57ea5837a4ffce80e0713945e9b5f559959121ffb8735d097b9bb5b8b5df8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_field_8c23ce74",
+      "source": "src/objects/set_field_8c23ce74.c",
+      "address": "0x8c23ce74",
+      "entry": "_set_field_8c23ce74",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2281076,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c23ce74",
+          "address": "0x8c23ce74",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d32cf8ba8026698d5f0fdebcb06200fca8bf6e69e49dce9c048240ef36f2ded8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_field_8c252964",
+      "source": "src/objects/set_field_8c252964.c",
+      "address": "0x8c252964",
+      "entry": "_set_field_8c252964",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2369892,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c252964",
+          "address": "0x8c252964",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "468b2f36c7ae8d345d43c575a0e481627feab2a5ef1384ddb468c36974c14d36",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_global_8c16ca8c",
+      "source": "src/objects/set_global_8c16ca8c.c",
+      "address": "0x8c16ca8c",
+      "entry": "_set_global_8c16ca8c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1428108,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_global_8c16ca8c",
+          "address": "0x8c16ca8c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ed21d840d0fbc14bf28142c9775829f042f36b9d04a3699f89af5f156f45f2ae",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_global_8c16efd4",
+      "source": "src/objects/set_global_8c16efd4.c",
+      "address": "0x8c16efd4",
+      "entry": "_set_global_8c16efd4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1437652,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_global_8c16efd4",
+          "address": "0x8c16efd4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "96a2177680df39fd72b25c1bb11546fa9bc735ee714549741d2473882acd1e0f",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_global_8c1aa2c4",
+      "source": "src/objects/set_global_8c1aa2c4.c",
+      "address": "0x8c1aa2c4",
+      "entry": "_set_global_8c1aa2c4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1680068,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_global_8c1aa2c4",
+          "address": "0x8c1aa2c4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "25b71ccf295f526b634d5d6ea401b97026f7cbf7857be41586df52c577b7238e",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_global_8c1aa2d0",
+      "source": "src/objects/set_global_8c1aa2d0.c",
+      "address": "0x8c1aa2d0",
+      "entry": "_set_global_8c1aa2d0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1680080,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_global_8c1aa2d0",
+          "address": "0x8c1aa2d0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "25b71ccf295f526b634d5d6ea401b97026f7cbf7857be41586df52c577b7238e",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
     }
   ]
 }

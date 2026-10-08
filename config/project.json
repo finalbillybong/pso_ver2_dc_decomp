@@ -409,6 +409,75 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "clear_global_8c01c1c4",
+      "source": "src/objects/clear_global_8c01c1c4.c",
+      "address": "0x8c01c1c4",
+      "entry": "_clear_global_8c01c1c4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 49604,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c01c1c4",
+          "address": "0x8c01c1c4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "81e3fc0bd56446ff7d590d319a9bac8ad738ce99864e79c6146e4c50219cde6c",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c01c1e8",
+      "source": "src/objects/clear_global_8c01c1e8.c",
+      "address": "0x8c01c1e8",
+      "entry": "_clear_global_8c01c1e8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 49640,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c01c1e8",
+          "address": "0x8c01c1e8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "c14c4dd3a6c4297dd507cfebf0ffaf35ddfe55e5ac96bf5db7cf5f7619701f98",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c01c210",
+      "source": "src/objects/clear_global_8c01c210.c",
+      "address": "0x8c01c210",
+      "entry": "_clear_global_8c01c210",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 49680,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c01c210",
+          "address": "0x8c01c210",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "a372818e7592f5ff0fd4b7199334b3a5a45b457e1bc14ecda6d7903edc4364ea",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c01c500",
       "source": "src/effects/destroy_object_8c01c500.c",
       "address": "0x8c01c500",
@@ -5957,6 +6026,29 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "set_field_8c05af48",
+      "source": "src/objects/set_field_8c05af48.c",
+      "address": "0x8c05af48",
+      "entry": "_set_field_8c05af48",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 307016,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c05af48",
+          "address": "0x8c05af48",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ac0b403b62417d81b5fd6898827f62bcd5c6b689fe23ce302fb6d61b5838373f",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "refresh_follow_effect_8c05af60",
       "source": "src/effects/refresh_follow_effect_8c05af60.c",
       "address": "0x8c05af60",
@@ -7444,6 +7536,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "clear_global_8c08a584",
+      "source": "src/objects/clear_global_8c08a584.c",
+      "address": "0x8c08a584",
+      "entry": "_clear_global_8c08a584",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 501124,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c08a584",
+          "address": "0x8c08a584",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "37232ee0624cc521e3717b437baa4f2412cec95cdc93db4074e3a05136fab469",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c08a63c",
       "source": "src/effects/destroy_object_8c08a63c.c",
       "address": "0x8c08a63c",
@@ -8059,6 +8174,31 @@
       ],
       "reference_sha256": "a4d8dd58bae5de450bf26fe1088aa783080acf5f22ea5b19b0283e6a4d991c78",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_effect_8c09fd4c",
+      "source": "src/objects/create_effect_8c09fd4c.c",
+      "address": "0x8c09fd4c",
+      "entry": "_create_effect_8c09fd4c",
+      "headers": [],
+      "symbols": {
+        "_initialize_at": "0x8c09fd7c"
+      },
+      "ranges": [
+        {
+          "offset": 589132,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_8c09fd4c",
+          "address": "0x8c09fd4c",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "d3961cf056a6adab9d2f059d72cb7522f2aea4bb0652a9a84e21e2e652508b3a",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c09fe00",
@@ -12121,6 +12261,29 @@
       "boundary_review": "Raw template-effect destructor, empty entry and aggregate refresh reviewed through adjacent entries, signed accesses, copy loop, calls, literals and natural alignment. Full range independently checked twice; stage126."
     },
     {
+      "id": "destroy_field_8c0b403c",
+      "source": "src/objects/destroy_field_8c0b403c.c",
+      "address": "0x8c0b403c",
+      "entry": "_destroy_field_8c0b403c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 671804,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c0b403c",
+          "address": "0x8c0b403c",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "abafa25be3878e4b347e64cbbaa21fcdfef190bb4f13439635596e39ed93364b",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "create_effect_b44f4",
       "source": "src/effects/create_effect_b44f4.c",
       "address": "0x8c0b44f4",
@@ -12277,6 +12440,29 @@
         "_initialize_at": "0x8c0b3df8"
       },
       "boundary_review": "Raw event and factory entries reviewed through adjacent entries, signed accesses, call delays, aggregate copies, literals and natural alignment. Genuine adjacent reset/distance grouping; no inserted padding. Full checked match twice; stage127."
+    },
+    {
+      "id": "set_field_8c0b4d28",
+      "source": "src/objects/set_field_8c0b4d28.c",
+      "address": "0x8c0b4d28",
+      "entry": "_set_field_8c0b4d28",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 675112,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c0b4d28",
+          "address": "0x8c0b4d28",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "6a0b95975e05d5fcdf08c39781d177c9b3903e99b5bd3c51250c38480feed36b",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "create_effect_b55a0",
@@ -12746,6 +12932,37 @@
       ],
       "reference_sha256": "24343ae46a3696d4901123b7adecf81a3d23ebe1c44a2549a04d8b51367620ec",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "initialize_effect8_template",
+      "source": "src/effects/initialize_effect8_template.c",
+      "address": "0x8c0b8cf0",
+      "entry": "_initialize_effect8_template",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_template_init.h",
+        "src/include/indexed_effect_template.h"
+      ],
+      "ranges": [
+        {
+          "offset": 691440,
+          "size": 216
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect8_template",
+          "address": "0x8c0b8cf0",
+          "size": 216
+        }
+      ],
+      "reference_sha256": "193c91a277aa271c99027b87b7be584dce9124997dac62b846a8832c91795ef9",
+      "symbols": {
+        "_get_effect_template": "0x8c0adc1c",
+        "_effect_scale_pairs": "0x8c304cb8",
+        "_effect_scale_values": "0x8c304d04"
+      },
+      "boundary_review": "Catalog entry and body192; six32-bit literals exactly match template; adjacent entry0x8c0b8dc8. Existing3 checked dependent headers retained."
     },
     {
       "id": "destroy_object_8c0b91c8",
@@ -17240,6 +17457,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "clear_global_8c0d0354",
+      "source": "src/objects/clear_global_8c0d0354.c",
+      "address": "0x8c0d0354",
+      "entry": "_clear_global_8c0d0354",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 787284,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c0d0354",
+          "address": "0x8c0d0354",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "e0f51ad77c392180428db28cf49b86128c40c2163a7e90691fd8a7c977b591ee",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c0d0bac",
       "source": "src/effects/destroy_object_8c0d0bac.c",
       "address": "0x8c0d0bac",
@@ -17484,6 +17724,52 @@
       "reference_sha256": "c01749ede7d157ef77edbce769c6806a8772a5e53888affaaf430d058cef22a7",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "clear_global_8c0de424",
+      "source": "src/objects/clear_global_8c0de424.c",
+      "address": "0x8c0de424",
+      "entry": "_clear_global_8c0de424",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 844836,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c0de424",
+          "address": "0x8c0de424",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "e65a237a342dd397fb2c82ae3520a8bc18877ebf8dcded86ade49f885b276eeb",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "destroy_field_8c0e156c",
+      "source": "src/objects/destroy_field_8c0e156c.c",
+      "address": "0x8c0e156c",
+      "entry": "_destroy_field_8c0e156c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 857452,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c0e156c",
+          "address": "0x8c0e156c",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "44ed6dcdb091edf40fc2dd35af5e0dfd957ac1b8c5172051461333210527d785",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c0e3814",
@@ -17835,6 +18121,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_linked_8c0f00c0",
+      "source": "src/objects/destroy_linked_8c0f00c0.c",
+      "address": "0x8c0f00c0",
+      "entry": "_destroy_linked_8c0f00c0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 917696,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_linked_8c0f00c0",
+          "address": "0x8c0f00c0",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "55e157b4270134540143b81c2127eb303e283d59005343103b8aadf9d5a609fc",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c0f0efc",
       "source": "src/effects/destroy_object_8c0f0efc.c",
       "address": "0x8c0f0efc",
@@ -18100,6 +18409,29 @@
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
     },
     {
+      "id": "destroy_field_8c0f72a8",
+      "source": "src/objects/destroy_field_8c0f72a8.c",
+      "address": "0x8c0f72a8",
+      "entry": "_destroy_field_8c0f72a8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 946856,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c0f72a8",
+          "address": "0x8c0f72a8",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "44cd77f29ab15ff9fd52afe576c910997bc31d961533e9945272a9c39fc84261",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c0fb694",
       "source": "src/effects/destroy_object_8c0fb694.c",
       "address": "0x8c0fb694",
@@ -18124,6 +18456,29 @@
       ],
       "reference_sha256": "82c76208dbe9a9a651f46529bf28560d90d0ce3d800918f565a826f733a11ee6",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_field_8c0fbfa4",
+      "source": "src/objects/destroy_field_8c0fbfa4.c",
+      "address": "0x8c0fbfa4",
+      "entry": "_destroy_field_8c0fbfa4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 966564,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c0fbfa4",
+          "address": "0x8c0fbfa4",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "e8d0c4f94003ece22e157c7c6392dcc02bd0b2a320214c6ff7b8e54362dae8ab",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c0fc1c4",
@@ -18176,6 +18531,29 @@
       ],
       "reference_sha256": "4374f852a480808fdbdbfadaaed45b0d5221e3a386f113cb9013d9ddbf179d6b",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_field_8c0fcbe4",
+      "source": "src/objects/destroy_field_8c0fcbe4.c",
+      "address": "0x8c0fcbe4",
+      "entry": "_destroy_field_8c0fcbe4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 969700,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c0fcbe4",
+          "address": "0x8c0fcbe4",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "f518487f53aee6994f9d24ef3d8d2b9bab0acadbe61547288656d451c49675fc",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c0fce4c",
@@ -18614,6 +18992,75 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_field_8c1049ec",
+      "source": "src/objects/destroy_field_8c1049ec.c",
+      "address": "0x8c1049ec",
+      "entry": "_destroy_field_8c1049ec",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1001964,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c1049ec",
+          "address": "0x8c1049ec",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "e88e7c87b1d5a9e677e61f79372ef8dc0ed3402927c055ffc1a89822aa2b14ea",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c104e70",
+      "source": "src/objects/clear_global_8c104e70.c",
+      "address": "0x8c104e70",
+      "entry": "_clear_global_8c104e70",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1003120,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c104e70",
+          "address": "0x8c104e70",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "75b77330a2225be5b86e1853ddcbf5085836da16066b9bb28749ba0d3bc5ae59",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c106048",
+      "source": "src/objects/clear_global_8c106048.c",
+      "address": "0x8c106048",
+      "entry": "_clear_global_8c106048",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1007688,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c106048",
+          "address": "0x8c106048",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "de108308f6584dc9314941c8713e1b203bdde28a99a11fc8336f09dd93a885b5",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c106598",
       "source": "src/effects/destroy_object_8c106598.c",
       "address": "0x8c106598",
@@ -18794,6 +19241,29 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "clear_global_8c1086f0",
+      "source": "src/objects/clear_global_8c1086f0.c",
+      "address": "0x8c1086f0",
+      "entry": "_clear_global_8c1086f0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1017584,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1086f0",
+          "address": "0x8c1086f0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "85508d7ee1164ba2a3c892c107257fcab7647482803645bc73a1661b50905943",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "request_actor_mode_five_8c109768",
       "source": "src/effects/request_actor_mode_five_8c109768.c",
       "address": "0x8c109768",
@@ -18845,6 +19315,144 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "clear_global_8c10ae90",
+      "source": "src/objects/clear_global_8c10ae90.c",
+      "address": "0x8c10ae90",
+      "entry": "_clear_global_8c10ae90",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1027728,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10ae90",
+          "address": "0x8c10ae90",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "762f13e05ec4ab787485689eda0d730eed4a54d3bffd40e091834cb4ba2562a2",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c10b024",
+      "source": "src/objects/clear_global_8c10b024.c",
+      "address": "0x8c10b024",
+      "entry": "_clear_global_8c10b024",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1028132,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10b024",
+          "address": "0x8c10b024",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "309412c3313108e466587ee95e3a27127d2f8c087483b5a20c3f51ec83223ca5",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c10b030",
+      "source": "src/objects/clear_global_8c10b030.c",
+      "address": "0x8c10b030",
+      "entry": "_clear_global_8c10b030",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1028144,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10b030",
+          "address": "0x8c10b030",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "309412c3313108e466587ee95e3a27127d2f8c087483b5a20c3f51ec83223ca5",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c10b0d4",
+      "source": "src/objects/clear_global_8c10b0d4.c",
+      "address": "0x8c10b0d4",
+      "entry": "_clear_global_8c10b0d4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1028308,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10b0d4",
+          "address": "0x8c10b0d4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "cbc944f582c8b5de0726d7bf8a51efaefc789b5b3b1190985424e69b5cb5c7c8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c10b0e0",
+      "source": "src/objects/clear_global_8c10b0e0.c",
+      "address": "0x8c10b0e0",
+      "entry": "_clear_global_8c10b0e0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1028320,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10b0e0",
+          "address": "0x8c10b0e0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "cbc944f582c8b5de0726d7bf8a51efaefc789b5b3b1190985424e69b5cb5c7c8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c10b184",
+      "source": "src/objects/clear_global_8c10b184.c",
+      "address": "0x8c10b184",
+      "entry": "_clear_global_8c10b184",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1028484,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10b184",
+          "address": "0x8c10b184",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ec5f0bb9de782b04f78486b19dd607efdc3f6699f6e430b06f3d9fb1f1de13f2",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c10b344",
       "source": "src/effects/destroy_object_8c10b344.c",
       "address": "0x8c10b344",
@@ -18892,6 +19500,75 @@
       "reference_sha256": "35abf56b37b31c32022eef9d60af2ffbb6b605496668923452d45563d947ea96",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "clear_global_8c10be4c",
+      "source": "src/objects/clear_global_8c10be4c.c",
+      "address": "0x8c10be4c",
+      "entry": "_clear_global_8c10be4c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1031756,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c10be4c",
+          "address": "0x8c10be4c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "790edabb6705f502797a6d81a9610067b874cbd521d271e3b3bde278d1f63270",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c112464",
+      "source": "src/objects/clear_global_8c112464.c",
+      "address": "0x8c112464",
+      "entry": "_clear_global_8c112464",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1057892,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c112464",
+          "address": "0x8c112464",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "745f5645450e05fbab22e7b3f207b62dd63c81758598b9338f465bb99e905c70",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c112470",
+      "source": "src/objects/clear_global_8c112470.c",
+      "address": "0x8c112470",
+      "entry": "_clear_global_8c112470",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1057904,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c112470",
+          "address": "0x8c112470",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "745f5645450e05fbab22e7b3f207b62dd63c81758598b9338f465bb99e905c70",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c112efc",
@@ -18987,6 +19664,52 @@
       "reference_sha256": "78bd66ddf775a1df3bfff1c3075ea9ce9da20bb95720f1173a0bea9f47dd3ae5",
       "symbols": {},
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
+    },
+    {
+      "id": "destroy_field_8c114790",
+      "source": "src/objects/destroy_field_8c114790.c",
+      "address": "0x8c114790",
+      "entry": "_destroy_field_8c114790",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1066896,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c114790",
+          "address": "0x8c114790",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "40f711b21e15933f1bb7dee92431c58a4f711aac53cc5cc5487ed4a998db0b84",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "destroy_field_8c11499c",
+      "source": "src/objects/destroy_field_8c11499c.c",
+      "address": "0x8c11499c",
+      "entry": "_destroy_field_8c11499c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1067420,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c11499c",
+          "address": "0x8c11499c",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "c25d982a65ef25e4b939f1df04d4c1d9af4669430f2be9e80dc4630e0addb1f3",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c118918",
@@ -20715,6 +21438,52 @@
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
     },
     {
+      "id": "clear_global_8c159204",
+      "source": "src/objects/clear_global_8c159204.c",
+      "address": "0x8c159204",
+      "entry": "_clear_global_8c159204",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1348100,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c159204",
+          "address": "0x8c159204",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ea436ed2bbd0aa4b2b22739b74f3a3715faf1f3c6d651f56bc1354666719a322",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c159210",
+      "source": "src/objects/clear_global_8c159210.c",
+      "address": "0x8c159210",
+      "entry": "_clear_global_8c159210",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1348112,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c159210",
+          "address": "0x8c159210",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ea436ed2bbd0aa4b2b22739b74f3a3715faf1f3c6d651f56bc1354666719a322",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c15b004",
       "source": "src/effects/destroy_object_8c15b004.c",
       "address": "0x8c15b004",
@@ -21041,6 +21810,29 @@
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
     },
     {
+      "id": "clear_global_8c162ccc",
+      "source": "src/objects/clear_global_8c162ccc.c",
+      "address": "0x8c162ccc",
+      "entry": "_clear_global_8c162ccc",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1387724,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c162ccc",
+          "address": "0x8c162ccc",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "c9e142be191e381e19b337a696374dd7d28064d70e9bee982712dcb8bd2bb2cb",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "spawn_object_0893a8_8c164f94",
       "source": "src/objects/spawn_object_0893a8_8c164f94.c",
       "address": "0x8c164f94",
@@ -21271,6 +22063,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "set_global_8c16ca8c",
+      "source": "src/objects/set_global_8c16ca8c.c",
+      "address": "0x8c16ca8c",
+      "entry": "_set_global_8c16ca8c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1428108,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_global_8c16ca8c",
+          "address": "0x8c16ca8c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ed21d840d0fbc14bf28142c9775829f042f36b9d04a3699f89af5f156f45f2ae",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "emit_lookup_602b0_8c16d5bc",
       "source": "src/effects/emit_lookup_602b0_8c16d5bc.c",
       "address": "0x8c16d5bc",
@@ -21292,6 +22107,190 @@
       "reference_sha256": "5cbc48eae62fa382799a36fd096e0f56f097ec2c6c7bb219ad69004a680e396c",
       "symbols": {},
       "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately."
+    },
+    {
+      "id": "set_global_8c16efd4",
+      "source": "src/objects/set_global_8c16efd4.c",
+      "address": "0x8c16efd4",
+      "entry": "_set_global_8c16efd4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1437652,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_global_8c16efd4",
+          "address": "0x8c16efd4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "96a2177680df39fd72b25c1bb11546fa9bc735ee714549741d2473882acd1e0f",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c16fc1c",
+      "source": "src/objects/clear_global_8c16fc1c.c",
+      "address": "0x8c16fc1c",
+      "entry": "_clear_global_8c16fc1c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1440796,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c16fc1c",
+          "address": "0x8c16fc1c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "53f8c946d8d0f52acdb79f4c03cf8d1502c36cdca011f0ab17343798428c7f16",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c16fddc",
+      "source": "src/objects/clear_global_8c16fddc.c",
+      "address": "0x8c16fddc",
+      "entry": "_clear_global_8c16fddc",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1441244,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c16fddc",
+          "address": "0x8c16fddc",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d9b1b4334a31adc53bbe4a861a536ccfffb785e55afe17ae43ea4a1455b6c6d8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c1708b8",
+      "source": "src/objects/clear_global_8c1708b8.c",
+      "address": "0x8c1708b8",
+      "entry": "_clear_global_8c1708b8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1444024,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1708b8",
+          "address": "0x8c1708b8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "b2c51044ea25611022f657588f2a2ce79bf2af9bb38c7db0c29f151fa3f37f1f",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c1708d0",
+      "source": "src/objects/clear_global_8c1708d0.c",
+      "address": "0x8c1708d0",
+      "entry": "_clear_global_8c1708d0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1444048,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1708d0",
+          "address": "0x8c1708d0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "cdbc0287233d60aa6a144c1b22dafe360c3f6bb314793d443e13b1c59b364b9e",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c1708f4",
+      "source": "src/objects/clear_global_8c1708f4.c",
+      "address": "0x8c1708f4",
+      "entry": "_clear_global_8c1708f4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1444084,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1708f4",
+          "address": "0x8c1708f4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "769b08ae79962f3392d1087523a7256c208ef5368a6a655d6e375a2609e89706",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c170ef4",
+      "source": "src/objects/clear_global_8c170ef4.c",
+      "address": "0x8c170ef4",
+      "entry": "_clear_global_8c170ef4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1445620,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c170ef4",
+          "address": "0x8c170ef4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "400dd5ff3a50bf958daddfc20892d41a8af0bdfee98ab15c069901f9b4ff44d5",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c1715b8",
+      "source": "src/objects/clear_global_8c1715b8.c",
+      "address": "0x8c1715b8",
+      "entry": "_clear_global_8c1715b8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1447352,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1715b8",
+          "address": "0x8c1715b8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "8ef549cf68ca17d25d9588158a2a86ba56d9b3db7870e63977b3755527234aff",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "operation_172c14",
@@ -21417,6 +22416,29 @@
       ],
       "reference_sha256": "da6ffc876b09903a9cccd80fd4e72f599f71d141fda93bcda7dfda939e6e89c3",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "set_field_8c175afc",
+      "source": "src/objects/set_field_8c175afc.c",
+      "address": "0x8c175afc",
+      "entry": "_set_field_8c175afc",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1465084,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c175afc",
+          "address": "0x8c175afc",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "468b2f36c7ae8d345d43c575a0e481627feab2a5ef1384ddb468c36974c14d36",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c175cb4",
@@ -22169,6 +23191,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_field_8c17bb90",
+      "source": "src/objects/destroy_field_8c17bb90.c",
+      "address": "0x8c17bb90",
+      "entry": "_destroy_field_8c17bb90",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1489808,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c17bb90",
+          "address": "0x8c17bb90",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "3ed9e99757dd5cc39e7800f5204f1461b5474fd5af449c00c41db77740040905",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c17beb8",
       "source": "src/effects/destroy_object_8c17beb8.c",
       "address": "0x8c17beb8",
@@ -22219,6 +23264,52 @@
       ],
       "reference_sha256": "868eb2e0daf43847477a8b5ea45fbadb8298d46ec9d32596e949a90c7351ed6b",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "query_field_8c17e6c0",
+      "source": "src/objects/query_field_8c17e6c0.c",
+      "address": "0x8c17e6c0",
+      "entry": "_query_field_8c17e6c0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1500864,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_field_8c17e6c0",
+          "address": "0x8c17e6c0",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "60c00a04f5a57817bdbd9048b754afdc1b20cf74d7b206803bff19ae7c3b3304",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "query_field_8c17e6d8",
+      "source": "src/objects/query_field_8c17e6d8.c",
+      "address": "0x8c17e6d8",
+      "entry": "_query_field_8c17e6d8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1500888,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_field_8c17e6d8",
+          "address": "0x8c17e6d8",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "4e8f8d79c3335606b4dedf6f13892985c9bf2fc9b12d6537ff13f9035ce1b2cc",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "spawn_object_0893a8_8c185394",
@@ -22554,6 +23645,29 @@
       ],
       "reference_sha256": "0a474628e6e6702e2dd13dcd2b9c89e1478aeeb270c8b95ce3bd6510f9ea019f",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "clear_global_8c18bad4",
+      "source": "src/objects/clear_global_8c18bad4.c",
+      "address": "0x8c18bad4",
+      "entry": "_clear_global_8c18bad4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1555156,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c18bad4",
+          "address": "0x8c18bad4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "e632e257a953e94507a9f84a66b82bc2a28144c42ae9ea5e3b4ef7c4f9c861a0",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "operation_194098_8c18cc18",
@@ -24914,6 +26028,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "clear_global_8c19b29c",
+      "source": "src/objects/clear_global_8c19b29c.c",
+      "address": "0x8c19b29c",
+      "entry": "_clear_global_8c19b29c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1618588,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c19b29c",
+          "address": "0x8c19b29c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "3a748c2b8ff6c34755d76455df9565394f0240bd2f95a8fa18f3958d345d3f83",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c19cf34",
       "source": "src/effects/destroy_object_8c19cf34.c",
       "address": "0x8c19cf34",
@@ -25584,6 +26721,52 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "set_global_8c1aa2c4",
+      "source": "src/objects/set_global_8c1aa2c4.c",
+      "address": "0x8c1aa2c4",
+      "entry": "_set_global_8c1aa2c4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1680068,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_global_8c1aa2c4",
+          "address": "0x8c1aa2c4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "25b71ccf295f526b634d5d6ea401b97026f7cbf7857be41586df52c577b7238e",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "set_global_8c1aa2d0",
+      "source": "src/objects/set_global_8c1aa2d0.c",
+      "address": "0x8c1aa2d0",
+      "entry": "_set_global_8c1aa2d0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1680080,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_global_8c1aa2d0",
+          "address": "0x8c1aa2d0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "25b71ccf295f526b634d5d6ea401b97026f7cbf7857be41586df52c577b7238e",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "spawn_object_0893a8_8c1aa2dc",
       "source": "src/objects/spawn_object_0893a8_8c1aa2dc.c",
       "address": "0x8c1aa2dc",
@@ -25605,6 +26788,29 @@
       "reference_sha256": "dd4272f934cbd0c44afa4f4d75360eb186e97a187797a3fa7990f582ab103d3c",
       "symbols": {},
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
+    },
+    {
+      "id": "clear_global_8c1aa7e4",
+      "source": "src/objects/clear_global_8c1aa7e4.c",
+      "address": "0x8c1aa7e4",
+      "entry": "_clear_global_8c1aa7e4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1681380,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1aa7e4",
+          "address": "0x8c1aa7e4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "3b6b9973b04d037c3afb160074dcbc2e0fec8afc2fe8c7e183ec252953d21c4f",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c1aac68",
@@ -26218,6 +27424,52 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "clear_global_8c1acff8",
+      "source": "src/objects/clear_global_8c1acff8.c",
+      "address": "0x8c1acff8",
+      "entry": "_clear_global_8c1acff8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1691640,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1acff8",
+          "address": "0x8c1acff8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "3acc0207c653a940c969cfdc9d029613f602f53679f9b39851c5b7ed2a7f546f",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "set_field_8c1ae1e0",
+      "source": "src/objects/set_field_8c1ae1e0.c",
+      "address": "0x8c1ae1e0",
+      "entry": "_set_field_8c1ae1e0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1696224,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c1ae1e0",
+          "address": "0x8c1ae1e0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "0f09ce08935ccddbd446ea61701c7fc0875b3f6477f1af414cb2d8461dd8621f",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "spawn_object_0893a8_8c1aeb94",
       "source": "src/objects/spawn_object_0893a8_8c1aeb94.c",
       "address": "0x8c1aeb94",
@@ -26413,6 +27665,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "set_field_8c1b2014",
+      "source": "src/objects/set_field_8c1b2014.c",
+      "address": "0x8c1b2014",
+      "entry": "_set_field_8c1b2014",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1712148,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c1b2014",
+          "address": "0x8c1b2014",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "7d75384c641aa835297f4b2f17fb99bf36ac9087c4f6570a1dbda60ad85c0ad0",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c1b3158",
       "source": "src/effects/destroy_object_8c1b3158.c",
       "address": "0x8c1b3158",
@@ -26460,6 +27735,52 @@
       "reference_sha256": "21dc763048da29627c65dabd70c706464310c97d9325284b6f8e6fb70cda4b86",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "set_field_8c1b5048",
+      "source": "src/objects/set_field_8c1b5048.c",
+      "address": "0x8c1b5048",
+      "entry": "_set_field_8c1b5048",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1724488,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c1b5048",
+          "address": "0x8c1b5048",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "7d75384c641aa835297f4b2f17fb99bf36ac9087c4f6570a1dbda60ad85c0ad0",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "set_field_8c1b5750",
+      "source": "src/objects/set_field_8c1b5750.c",
+      "address": "0x8c1b5750",
+      "entry": "_set_field_8c1b5750",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1726288,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c1b5750",
+          "address": "0x8c1b5750",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "7d75384c641aa835297f4b2f17fb99bf36ac9087c4f6570a1dbda60ad85c0ad0",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c1b7270",
@@ -26512,6 +27833,29 @@
       ],
       "reference_sha256": "e9a3b5696d3a1258327ba3fd04daa8ba0555047a36a36dd55685fc7747fb089b",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "clear_global_8c1bded0",
+      "source": "src/objects/clear_global_8c1bded0.c",
+      "address": "0x8c1bded0",
+      "entry": "_clear_global_8c1bded0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1760976,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c1bded0",
+          "address": "0x8c1bded0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "9f76ec1273567a419231f39fb55f20cf4111e8d8a5457dc856f9c09736b28812",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c1bdf1c",
@@ -27465,6 +28809,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_field_8c1d58a4",
+      "source": "src/objects/destroy_field_8c1d58a4.c",
+      "address": "0x8c1d58a4",
+      "entry": "_destroy_field_8c1d58a4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1857700,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_field_8c1d58a4",
+          "address": "0x8c1d58a4",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "d77339a1635daac8dc0d1ba6d1ad51bec80e159b948381983e32214ee1a80fdf",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "operation_194098_8c1d5be4",
       "source": "src/objects/operation_194098_8c1d5be4.c",
       "address": "0x8c1d5be4",
@@ -27817,6 +29184,29 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "set_field_8c1e22c8",
+      "source": "src/objects/set_field_8c1e22c8.c",
+      "address": "0x8c1e22c8",
+      "entry": "_set_field_8c1e22c8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1909448,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c1e22c8",
+          "address": "0x8c1e22c8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "4520bac72ca6b2cad40bd9371d7e09f7c9098cfe3f1197331859bc75db97d650",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c1e6118",
       "source": "src/effects/destroy_object_8c1e6118.c",
       "address": "0x8c1e6118",
@@ -28072,6 +29462,75 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "clear_global_8c208540",
+      "source": "src/objects/clear_global_8c208540.c",
+      "address": "0x8c208540",
+      "entry": "_clear_global_8c208540",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2065728,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c208540",
+          "address": "0x8c208540",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "352bfef090cebd8ad7e315968f37daeab4545842629582b1f920b5539e76c66a",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c208e18",
+      "source": "src/objects/clear_global_8c208e18.c",
+      "address": "0x8c208e18",
+      "entry": "_clear_global_8c208e18",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2067992,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c208e18",
+          "address": "0x8c208e18",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "544d6d4842b5cb0f9569a8f4723ae52ffd2ec57a8ef62a631dbeb7d342cdea06",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "query_field_8c209364",
+      "source": "src/objects/query_field_8c209364.c",
+      "address": "0x8c209364",
+      "entry": "_query_field_8c209364",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2069348,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_field_8c209364",
+          "address": "0x8c209364",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "aab05d8ebc415e50ddffd58b68c8db237acd52084bf00228962b7fb51f27582f",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c215060",
       "source": "src/effects/destroy_object_8c215060.c",
       "address": "0x8c215060",
@@ -28272,6 +29731,52 @@
       ],
       "reference_sha256": "6f25481db6dbfe2f321ae43d15b91b29e19a5e87963bbe9a9b90dc163831fd6e",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "clear_global_8c2199c0",
+      "source": "src/objects/clear_global_8c2199c0.c",
+      "address": "0x8c2199c0",
+      "entry": "_clear_global_8c2199c0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2136512,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c2199c0",
+          "address": "0x8c2199c0",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "fc485ef1d988a493f1c5b1a7663206fabeae1690ef63ba747922085a7f361537",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c219a1c",
+      "source": "src/objects/clear_global_8c219a1c.c",
+      "address": "0x8c219a1c",
+      "entry": "_clear_global_8c219a1c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2136604,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c219a1c",
+          "address": "0x8c219a1c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "b867678cd01c2ffd6be9c57c4fa4b32e35a0dcff39105b3a4b53fd5af868bdb8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c21a8c4",
@@ -28646,6 +30151,52 @@
       "reference_sha256": "78262af3c019cdc24b0359fb5aa6d843da6a0059aa9d3466a66596bf8aa4b390",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "clear_global_8c220b1c",
+      "source": "src/objects/clear_global_8c220b1c.c",
+      "address": "0x8c220b1c",
+      "entry": "_clear_global_8c220b1c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2165532,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c220b1c",
+          "address": "0x8c220b1c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ffc8b4ce63e6bf807c38a7dad80ea090bb4e914303ee4604a45148ae171b9bf7",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c220b28",
+      "source": "src/objects/clear_global_8c220b28.c",
+      "address": "0x8c220b28",
+      "entry": "_clear_global_8c220b28",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2165544,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c220b28",
+          "address": "0x8c220b28",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ffc8b4ce63e6bf807c38a7dad80ea090bb4e914303ee4604a45148ae171b9bf7",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c221580",
@@ -29289,6 +30840,29 @@
       ],
       "reference_sha256": "91a5d39b6fa8e4c80e7dc916ac3858007a12c18404e44cee4484c70d0e4526dd",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "clear_global_8c22ab08",
+      "source": "src/objects/clear_global_8c22ab08.c",
+      "address": "0x8c22ab08",
+      "entry": "_clear_global_8c22ab08",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2206472,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c22ab08",
+          "address": "0x8c22ab08",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "6ebf0a52cb3fe9a9a5db52065c787277df40e103986644dcd3d74a11713b1289",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c22b324",
@@ -30912,6 +32486,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "set_field_8c23c99c",
+      "source": "src/objects/set_field_8c23c99c.c",
+      "address": "0x8c23c99c",
+      "entry": "_set_field_8c23c99c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2279836,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c23c99c",
+          "address": "0x8c23c99c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "7fd57ea5837a4ffce80e0713945e9b5f559959121ffb8735d097b9bb5b8b5df8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "create_object_8c23ca68",
       "source": "src/objects/create_object_8c23ca68.c",
       "address": "0x8c23ca68",
@@ -31012,6 +32609,29 @@
       ],
       "reference_sha256": "5d1c5c410e401aacc87e0d02e56f136a81ac093203e2d8fb9acf9a4b76327380",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "set_field_8c23ce74",
+      "source": "src/objects/set_field_8c23ce74.c",
+      "address": "0x8c23ce74",
+      "entry": "_set_field_8c23ce74",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2281076,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c23ce74",
+          "address": "0x8c23ce74",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d32cf8ba8026698d5f0fdebcb06200fca8bf6e69e49dce9c048240ef36f2ded8",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c23d16c",
@@ -34340,6 +35960,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "set_field_8c252964",
+      "source": "src/objects/set_field_8c252964.c",
+      "address": "0x8c252964",
+      "entry": "_set_field_8c252964",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2369892,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_field_8c252964",
+          "address": "0x8c252964",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "468b2f36c7ae8d345d43c575a0e481627feab2a5ef1384ddb468c36974c14d36",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c252970",
       "source": "src/effects/destroy_object_8c252970.c",
       "address": "0x8c252970",
@@ -34572,6 +36215,52 @@
       ],
       "reference_sha256": "801b0d6fcb41f4a26e651e5ef582392368497622042755f379095a136dc6c692",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "clear_global_8c253474",
+      "source": "src/objects/clear_global_8c253474.c",
+      "address": "0x8c253474",
+      "entry": "_clear_global_8c253474",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2372724,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c253474",
+          "address": "0x8c253474",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d7ff538c4635528304207fd1e0e4e507a02b4d8dfef2db460d5fb155b373c5f6",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c253480",
+      "source": "src/objects/clear_global_8c253480.c",
+      "address": "0x8c253480",
+      "entry": "_clear_global_8c253480",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2372736,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c253480",
+          "address": "0x8c253480",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d7ff538c4635528304207fd1e0e4e507a02b4d8dfef2db460d5fb155b373c5f6",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
       "id": "destroy_object_8c2536c8",
@@ -35268,6 +36957,29 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "clear_global_8c256b24",
+      "source": "src/objects/clear_global_8c256b24.c",
+      "address": "0x8c256b24",
+      "entry": "_clear_global_8c256b24",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2386724,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c256b24",
+          "address": "0x8c256b24",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "99b982430b75ec3335f87e7833c5062b88b5dcbd8db77c07555f1b62eeff56be",
+      "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c256c38",
       "source": "src/effects/destroy_object_8c256c38.c",
       "address": "0x8c256c38",
@@ -35806,6 +37518,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "clear_global_8c25f890",
+      "source": "src/objects/clear_global_8c25f890.c",
+      "address": "0x8c25f890",
+      "entry": "_clear_global_8c25f890",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2422928,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c25f890",
+          "address": "0x8c25f890",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "ceb7302944845f9f87bb632a9b58a3168233b665eacd21235d2f0e9c6692eaec",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
       "id": "destroy_object_8c25f8dc",
       "source": "src/effects/destroy_object_8c25f8dc.c",
       "address": "0x8c25f8dc",
@@ -35908,6 +37643,75 @@
       ],
       "reference_sha256": "b3c96b02f3fe1d7bf9efe30d294f5f7188a19fd39fb5fa3598d1b2abb24c031b",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "clear_global_8c282094",
+      "source": "src/objects/clear_global_8c282094.c",
+      "address": "0x8c282094",
+      "entry": "_clear_global_8c282094",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2564244,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c282094",
+          "address": "0x8c282094",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "70e7228d4003e1efb210d9ec6d8156b11e862d34d64ece96370ef52d42364783",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c282d2c",
+      "source": "src/objects/clear_global_8c282d2c.c",
+      "address": "0x8c282d2c",
+      "entry": "_clear_global_8c282d2c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2567468,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c282d2c",
+          "address": "0x8c282d2c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "23e4890634061fb8b7302919d2eb2f9b15ac439f1b3f581c939ea6dde1cd2ed9",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clear_global_8c282d70",
+      "source": "src/objects/clear_global_8c282d70.c",
+      "address": "0x8c282d70",
+      "entry": "_clear_global_8c282d70",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2567536,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_8c282d70",
+          "address": "0x8c282d70",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "8c94188b25f64adc08b659de30fcb688743a9e2d233d016550f96676375f6b57",
+      "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     }
   ]
 }

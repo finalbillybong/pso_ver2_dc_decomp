@@ -7861,3 +7861,7 @@ rejection. Continue into matrix setup, vector transforms and model-node helpers.
 26 complete exact functions add 796 bytes, preserving all 1435 prior matches. Totals: 1461 functions / 1403 modules / 115,248 compiled function-range bytes / zero reconstructed data bytes / 4,047,664 retained reference bytes. See [BATCH.md](BATCH.md) for measured experiments and verification; historical efficiency evidence remains in [EFFICIENCY.md](EFFICIENCY.md).
 
 Batch169 investigation: SDK helper 0x8c37d534 is parked after one hypothesis (72/88 bytes, 84 differing, first0x8c37d538); six-register invariant hoisting and shift/add addressing remain unexplained. Fifteen wrapper candidates await independent ABI evidence, without compilation credit. Verification comparisons per new byte worsened to 8.48 versus the 6.48 baseline; see EFFICIENCY.md for the interrupted-sync overhead and several-KB integration threshold.
+
+## Proven reconstruction families, batch 170
+
+78 complete exact functions add 1,732 bytes, preserving all 1461 prior matches. Totals: 1539 functions / 1481 modules / 116,980 compiled function-range bytes / zero reconstructed data bytes / 4,045,932 retained reference bytes. See [BATCH.md](BATCH.md) for measured experiments and verification; historical efficiency evidence remains in [EFFICIENCY.md](EFFICIENCY.md).

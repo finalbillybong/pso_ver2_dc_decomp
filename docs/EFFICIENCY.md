@@ -117,3 +117,22 @@ before an authorized commit/push.
 This batch gained 26 functions / 796 bytes from 27 hypotheses (26 exact, one SDK loop mismatch), with two duplicate outputs across distinct exact entries. Four successful full builds performed 5,612 module comparisons. An interrupted stale public-checkout verification added 1,138 recorded comparisons after a missing source directory stopped synchronization. Total recorded verification work was at least 6,750 comparisons, or 8.48 per new byte, versus 6.48 in the five-stage baseline (12,544 / 1,936). Even excluding that interruption, the small batch was less efficient per gained byte. All 121 tests passed after the corrected sync.
 
 Subsequent integration should collect several KB, preferably at least 4 KiB, before full validation where practical. Prioritize larger effect/constructor families; keep cheap candidates and unresolved ABI review separate from integration. The successful larger batches do not erase this regression. Token/cost and historical timing records remain unavailable.
+
+## Batch 170: consolidated immediate variants
+
+78 exact functions replace 1,732 bytes; static-data gains remain zero. Thirty cataloged variants, 47 independently referenced entries and one larger effect initializer each matched at the first hypothesis. The separate constructor investigation added no matches: 16 unsuccessful hypotheses across four targets, with one additional linker-spelling correction. Its late rediscovery of an already documented stack-home pattern was avoidable. All failed hypotheses and cumulative limits are retained.
+
+| Measurement | Baseline batches 156–160 | Batch 170 |
+| --- | ---: | ---: |
+| New matching functions |19 |78 |
+| New compiled function-range bytes |1,936 |1,732 |
+| Distinct hypotheses |38 |94 |
+| Duplicate outputs |4 |15 |
+| Fresh full builds |20 |4 |
+| Test executions |555 |121 |
+| Measured module comparisons |12,544 |5,924 |
+| Comparisons per new byte |6.48 |3.42 |
+
+This reduced integration overhead per gained byte from both the baseline and batch 169. It did not improve every metric: unsuccessful constructor reasoning increased hypothesis count. The complete collection was below the preferred 4KiB threshold; 78 functions were consolidated after the bounded family screen found no further larger immediate variants. Preserve the larger threshold as a preference and avoid publishing its component groups separately.
+
+All four builds, integrated images, five-function proofs, 121 tests and source-only artifact checks passed. Recorded candidate compilation totaled 2.811 seconds; verification totaled 90.946/93.034 seconds in concurrently checked research/public repositories. Historical timings and task-attributed token/cost records remain unavailable. The public workflow/compiler did not change; scratch screening and a reused generator removed repetitive constant substitution while preserving complete source/receipt comparisons.
