@@ -7787,3 +7787,45 @@ copy; original data and prior parked targets remain unchanged.
 Stage 158 commit a3874d6 is published with successful remote checks. Reproduce
 with `python3 -B tools/verify_source.py`, current tests and expected source-only
 rejection. Continue into adjacent signed countdown and virtual mode handlers.
+
+
+## Signed countdown and virtual mode handlers, stage 160
+
+Four complete matches add **496 bytes**: **694 functions / 636 modules / 64,124
+compiled bytes / 4,098,788 retained reference bytes / 1.5404% whole-image coverage**.
+All 690 prior matches and source/header hashes remain unchanged. Standalone
+reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| update_actor_mode_two | 0x8c0c275c | 240 |
+| actor_mode_noop | 0x8c0c284c | 4 |
+| update_actor_mode_three | 0x8c0c2850 | 196 |
+| request_actor_mode_four | 0x8c0c2914 | 56 |
+
+The C++ mode-two handler preserves dispatch pointer24 and virtual slots96/104/116,
+including reloading the target before each call. Its virtual paths matched on the
+first hypothesis; declaring the first nonvirtual callee fixed the remaining six
+bytes. The permitted language selection is the only compiler setting addition.
+The signed mode-three countdown tests the old value and stores the decremented
+short in the branch delay. The empty RTS/NOP entry is omitted from the Ghidra
+catalog; raw instructions and both complete adjacent functions establish its range.
+
+Investigation-only: mode-five update remains parked after three hypotheses at
+180 bytes with eight differences, first 0x8c0c2ae7. Raw code reuses FR0 for both
+constants with the partial product in FR1; the candidate keeps the product in FR2.
+Splitting the multiplication produces identical output. Reversing the comparison
+changes allocation without reducing the mismatch. Revisit only with independent
+exact sequential constant reuse in matching field/comparison context or verified
+inline context. This resembles earlier float-lifetime blockers; those remain
+parked and no equivalent expression sweep is justified.
+
+Seventeen snapshots form seven binary groups. All admissions reproduce twice.
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,098,788
+bytes without changing artifacts. Focused exports validate from a disposable
+copy. No speculative behavior changes or additional data credit are included.
+
+Stage 159 commit 87efa36 is published with successful remote checks. Reproduce
+with `python3 -B tools/verify_source.py`, the current tests and expected source-only
+rejection. Continue into matrix setup, vector transforms and model-node helpers.

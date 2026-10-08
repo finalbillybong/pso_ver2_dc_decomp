@@ -1,0 +1,2 @@
+#include "src/include/actor_mode_handlers.h"
+void update_actor_mode_five(ActorModeFiveView *actor){switch(actor->state){case 0:actor->animation=4;actor->state=1;case 1:((void (*)(ActorModeFiveView *))0x8c01c5f0)(actor);((void (*)(ActorModeFiveView *,float,int))0x8c04a43c)(actor,0.0f,0);((void (*)(ActorModeFiveView *))0x8c052180)(actor);if(30.0f*actor->rate*0.5f>actor->frame){((void (*)(ActorModeFiveView *))0x8c044488)(actor);actor->velocity.x*=0.5f;actor->velocity.z*=0.5f;}break;case -1:break;}}

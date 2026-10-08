@@ -1,0 +1,3 @@
+#include "src/include/actor_mode_handlers.h"
+extern "C" void configure_actor_target(ActorModeTwoView *,int);
+extern "C" void update_actor_mode_two(ActorModeTwoView *actor){switch(actor->state){case 0:actor->animation=2;actor->motion_flags|=0x200000;actor->state=1;case 1:configure_actor_target(actor,actor->parameters[2]);((void (*)(ActorModeTwoView *))0x8c01c5f0)(actor);if(((int (*)(ActorModeTwoView *,float))0x8c01cf68)(actor,10.0f)){if(actor->target->check(actor,1.0f)){actor->target->apply(actor,1.0f);actor->target->finish(actor,3.0f);}}((void (*)(ActorModeTwoView *))0x8c052180)(actor);if(actor->action!=4)actor->state=-1;break;case -1:actor->requested=1;actor->motion_flags&=~0x200000;break;}}

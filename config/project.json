@@ -9304,6 +9304,110 @@
       "boundary_review": "Raw actor mode requests and zero handler reviewed through adjacent entries, signed short accesses, switch fallthrough, separate float/integer argument banks, delay slots, literals and natural padding. Complete checked match twice; stage159."
     },
     {
+      "id": "update_actor_mode_two",
+      "source": "src/effects/update_actor_mode_two.cpp",
+      "language": "c++",
+      "address": "0x8c0c275c",
+      "entry": "_update_actor_mode_two",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_mode_handlers.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730972,
+          "size": 240
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_actor_mode_two",
+          "address": "0x8c0c275c",
+          "size": 240
+        }
+      ],
+      "reference_sha256": "a076cd5472603e3940b41060ab282a1db38d64622b3c772a9d5d466794701446",
+      "symbols": {
+        "_configure_actor_target": "0x8c043f28"
+      },
+      "boundary_review": "Raw adjacent actor mode handlers, signed countdown, vptr24 slots96/104/116, callback reloads, literals and natural padding reviewed. RTS/NOP entry0c284c is omitted from Ghidra catalog but delimited by complete adjacent functions. Whole checked match twice; stage160."
+    },
+    {
+      "id": "actor_mode_noop",
+      "source": "src/effects/actor_mode_noop.c",
+      "address": "0x8c0c284c",
+      "entry": "_actor_mode_noop",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 731212,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "actor_mode_noop",
+          "address": "0x8c0c284c",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "symbols": {},
+      "boundary_review": "Raw adjacent actor mode handlers, signed countdown, vptr24 slots96/104/116, callback reloads, literals and natural padding reviewed. RTS/NOP entry0c284c is omitted from Ghidra catalog but delimited by complete adjacent functions. Whole checked match twice; stage160."
+    },
+    {
+      "id": "update_actor_mode_three",
+      "source": "src/effects/update_actor_mode_three.c",
+      "address": "0x8c0c2850",
+      "entry": "_update_actor_mode_three",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_mode_handlers.h"
+      ],
+      "ranges": [
+        {
+          "offset": 731216,
+          "size": 196
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_actor_mode_three",
+          "address": "0x8c0c2850",
+          "size": 196
+        }
+      ],
+      "reference_sha256": "6a1f055af36e3b04d9063954499fbd9403ad48c72c73207f452af80581e288fb",
+      "symbols": {},
+      "boundary_review": "Raw adjacent actor mode handlers, signed countdown, vptr24 slots96/104/116, callback reloads, literals and natural padding reviewed. RTS/NOP entry0c284c is omitted from Ghidra catalog but delimited by complete adjacent functions. Whole checked match twice; stage160."
+    },
+    {
+      "id": "request_actor_mode_four",
+      "source": "src/effects/request_actor_mode_four.c",
+      "address": "0x8c0c2914",
+      "entry": "_request_actor_mode_four",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 731412,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_four",
+          "address": "0x8c0c2914",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "fd5d6f8bef75a60c229c7e0c100512539085546d38a28f18af68a6416495e1d9",
+      "symbols": {},
+      "boundary_review": "Raw adjacent actor mode handlers, signed countdown, vptr24 slots96/104/116, callback reloads, literals and natural padding reviewed. RTS/NOP entry0c284c is omitted from Ghidra catalog but delimited by complete adjacent functions. Whole checked match twice; stage160."
+    },
+    {
       "id": "request_actor_mode_five",
       "source": "src/effects/request_actor_mode_five.c",
       "address": "0x8c0c2a2c",

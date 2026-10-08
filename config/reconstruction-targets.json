@@ -21143,6 +21143,168 @@
         "source_sha256": "d81b3b612eb7e8d414669dbc9b56e86acbc77ef479d462ccc4c49813643231dc",
         "compiler_receipt_sha256": "1f666983f05a1295d07deff2e87447f621d1239887bc25724750c105cda5894c"
       }
+    },
+    {
+      "id": "update_actor_mode_two",
+      "source": "src/effects/update_actor_mode_two.cpp",
+      "language": "c++",
+      "address": "0x8c0c275c",
+      "entry": "_update_actor_mode_two",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_mode_handlers.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730972,
+          "size": 240
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_actor_mode_two",
+          "address": "0x8c0c275c",
+          "size": 240
+        }
+      ],
+      "reference_sha256": "a076cd5472603e3940b41060ab282a1db38d64622b3c772a9d5d466794701446",
+      "symbols": {
+        "_configure_actor_target": "0x8c043f28"
+      },
+      "boundary_review": "Raw adjacent actor mode handlers, signed countdown, vptr24 slots96/104/116, callback reloads, literals and natural padding reviewed. RTS/NOP entry0c284c is omitted from Ghidra catalog but delimited by complete adjacent functions. Whole checked match twice; stage160.",
+      "status": "matched",
+      "reason": "Complete actor mode handler/request range; observed behavior preserved."
+    },
+    {
+      "id": "actor_mode_noop",
+      "source": "src/effects/actor_mode_noop.c",
+      "address": "0x8c0c284c",
+      "entry": "_actor_mode_noop",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 731212,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "actor_mode_noop",
+          "address": "0x8c0c284c",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "symbols": {},
+      "boundary_review": "Raw adjacent actor mode handlers, signed countdown, vptr24 slots96/104/116, callback reloads, literals and natural padding reviewed. RTS/NOP entry0c284c is omitted from Ghidra catalog but delimited by complete adjacent functions. Whole checked match twice; stage160.",
+      "status": "matched",
+      "reason": "Complete actor mode handler/request range; observed behavior preserved."
+    },
+    {
+      "id": "update_actor_mode_three",
+      "source": "src/effects/update_actor_mode_three.c",
+      "address": "0x8c0c2850",
+      "entry": "_update_actor_mode_three",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_mode_handlers.h"
+      ],
+      "ranges": [
+        {
+          "offset": 731216,
+          "size": 196
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_actor_mode_three",
+          "address": "0x8c0c2850",
+          "size": 196
+        }
+      ],
+      "reference_sha256": "6a1f055af36e3b04d9063954499fbd9403ad48c72c73207f452af80581e288fb",
+      "symbols": {},
+      "boundary_review": "Raw adjacent actor mode handlers, signed countdown, vptr24 slots96/104/116, callback reloads, literals and natural padding reviewed. RTS/NOP entry0c284c is omitted from Ghidra catalog but delimited by complete adjacent functions. Whole checked match twice; stage160.",
+      "status": "matched",
+      "reason": "Complete actor mode handler/request range; observed behavior preserved."
+    },
+    {
+      "id": "request_actor_mode_four",
+      "source": "src/effects/request_actor_mode_four.c",
+      "address": "0x8c0c2914",
+      "entry": "_request_actor_mode_four",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 731412,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_four",
+          "address": "0x8c0c2914",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "fd5d6f8bef75a60c229c7e0c100512539085546d38a28f18af68a6416495e1d9",
+      "symbols": {},
+      "boundary_review": "Raw adjacent actor mode handlers, signed countdown, vptr24 slots96/104/116, callback reloads, literals and natural padding reviewed. RTS/NOP entry0c284c is omitted from Ghidra catalog but delimited by complete adjacent functions. Whole checked match twice; stage160.",
+      "status": "matched",
+      "reason": "Complete actor mode handler/request range; observed behavior preserved."
+    },
+    {
+      "id": "update_actor_mode_five",
+      "source": "src/provisional/update_actor_mode_five.c",
+      "address": "0x8c0c2a9c",
+      "entry": "_update_actor_mode_five",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_mode_handlers.h"
+      ],
+      "ranges": [
+        {
+          "offset": 731804,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_actor_mode_five",
+          "address": "0x8c0c2a9c",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "fea383df5b294de5b9f7656fe8f589525f70b404512f1a8eb34f4a5f7c8dfbbc",
+      "symbols": {},
+      "status": "parked",
+      "reason": "180/180bytes,8 differing,first0x8c0c2ae7. Threshold expression assigns productFR2 and constantsFR0/FR1; raw reusesFR0 for constants and productFR1/frameFR2. Split partial product and compound multiplication produce identical output; reversed comparison differs but does not reduce mismatch.",
+      "unsuccessful_distinct_hypotheses": 3,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact sequential float constant reuse with the same comparison/field context, or verified source-level inline context. Do not repeat expression splitting or comparison reversal.",
+      "comparison": {
+        "name": "update_actor_mode_five-checked-0",
+        "size": 180,
+        "expected_size": 180,
+        "exact": false,
+        "differing_bytes": 8,
+        "first_difference": "0x8c0c2ae7",
+        "offsets": [
+          75,
+          83,
+          85,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "source_sha256": "055b617140dc7830c50a7692b73ac08af20ec2e8cd079d092b2c24b785c05ee2",
+        "compiler_receipt_sha256": "7b51ae14fefde634d5a702375c145c91adf46c166a716e9fd9d59c8873117ab1"
+      }
     }
   ]
 }
