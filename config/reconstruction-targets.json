@@ -20885,6 +20885,264 @@
       "boundary_review": "Raw actor state initialization/destruction, parameter copies, modezero request and switch dispatch reviewed through adjacent entries, signed fields, gates, all seven jump-table relocations, literals and natural alignment. Full checked match twice; stage158.",
       "status": "matched",
       "reason": "Complete actor state helper range; observed behavior and data references preserved."
+    },
+    {
+      "id": "request_actor_mode_one",
+      "source": "src/effects/request_actor_mode_one.c",
+      "address": "0x8c0c2630",
+      "entry": "_request_actor_mode_one",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730672,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_one",
+          "address": "0x8c0c2630",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "02cd88412bc3620df331e0c0732625b568c984854ea9d957300953b8ec2eb903",
+      "symbols": {},
+      "boundary_review": "Raw actor mode requests and zero handler reviewed through adjacent entries, signed short accesses, switch fallthrough, separate float/integer argument banks, delay slots, literals and natural padding. Complete checked match twice; stage159.",
+      "status": "matched",
+      "reason": "Complete actor mode request/update range; observed behavior preserved."
+    },
+    {
+      "id": "request_actor_mode_two",
+      "source": "src/effects/request_actor_mode_two.c",
+      "address": "0x8c0c2728",
+      "entry": "_request_actor_mode_two",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730920,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_two",
+          "address": "0x8c0c2728",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "9f116e08d1347c03784982378000e2f596b2e4e087cf159d5b88f1b1f0f8f144",
+      "symbols": {},
+      "boundary_review": "Raw actor mode requests and zero handler reviewed through adjacent entries, signed short accesses, switch fallthrough, separate float/integer argument banks, delay slots, literals and natural padding. Complete checked match twice; stage159.",
+      "status": "matched",
+      "reason": "Complete actor mode request/update range; observed behavior preserved."
+    },
+    {
+      "id": "request_actor_mode_five",
+      "source": "src/effects/request_actor_mode_five.c",
+      "address": "0x8c0c2a2c",
+      "entry": "_request_actor_mode_five",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 731692,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_five",
+          "address": "0x8c0c2a2c",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "3c88293e6e63aaa23a68e5dd3fd530c76c6fd2303e9f3978291cacb7ee9e2acd",
+      "symbols": {},
+      "boundary_review": "Raw actor mode requests and zero handler reviewed through adjacent entries, signed short accesses, switch fallthrough, separate float/integer argument banks, delay slots, literals and natural padding. Complete checked match twice; stage159.",
+      "status": "matched",
+      "reason": "Complete actor mode request/update range; observed behavior preserved."
+    },
+    {
+      "id": "request_actor_mode_seven",
+      "source": "src/effects/request_actor_mode_seven.c",
+      "address": "0x8c0c2a64",
+      "entry": "_request_actor_mode_seven",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 731748,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_seven",
+          "address": "0x8c0c2a64",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "a8bf7e07a60509d6b1c7bee1b514dcea166e5f44c9e40979e5f278ea528e6458",
+      "symbols": {},
+      "boundary_review": "Raw actor mode requests and zero handler reviewed through adjacent entries, signed short accesses, switch fallthrough, separate float/integer argument banks, delay slots, literals and natural padding. Complete checked match twice; stage159.",
+      "status": "matched",
+      "reason": "Complete actor mode request/update range; observed behavior preserved."
+    },
+    {
+      "id": "update_actor_mode_zero",
+      "source": "src/effects/update_actor_mode_zero.c",
+      "address": "0x8c0c25c4",
+      "entry": "_update_actor_mode_zero",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_mode_update.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730564,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_actor_mode_zero",
+          "address": "0x8c0c25c4",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "4a2c9a05c88e6908ecaa493da92d73c7e0fff2c39a5d588b2259f4454b18e319",
+      "symbols": {},
+      "boundary_review": "Raw actor mode requests and zero handler reviewed through adjacent entries, signed short accesses, switch fallthrough, separate float/integer argument banks, delay slots, literals and natural padding. Complete checked match twice; stage159.",
+      "status": "matched",
+      "reason": "Complete actor mode request/update range; observed behavior preserved."
+    },
+    {
+      "id": "update_actor_mode_one",
+      "source": "src/provisional/update_actor_mode_one.c",
+      "address": "0x8c0c2664",
+      "entry": "_update_actor_mode_one",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_mode_update.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730724,
+          "size": 196
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_actor_mode_one",
+          "address": "0x8c0c2664",
+          "size": 196
+        }
+      ],
+      "reference_sha256": "36fc37c9039828ab9a956e801589f1af13a079009922f31a947d23336f7656db",
+      "symbols": {
+        "_measure_actor_target": "0x8c0444f8"
+      },
+      "status": "parked",
+      "reason": "196/196bytes,6 differing,first0x8c0c269e. Declared measurement call fixes18bytes and preserves stack Vector3 copy; offset876 loads after first aggregate load and actor move instead of before them. Reordered logical aggregate/float arguments produce identical output.",
+      "unsuccessful_distinct_hypotheses": 3,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact by-value Vector3 call with offset load before aggregate-copy temporaries, or verified original parameter/inline context.",
+      "comparison": {
+        "name": "update_actor_mode_one-checked-0",
+        "size": 196,
+        "expected_size": 196,
+        "exact": false,
+        "differing_bytes": 6,
+        "first_difference": "0x8c0c269e",
+        "offsets": [
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "source_sha256": "6d90b2c7404fb96fa53b0eeacbd045c94eb93da2bb29979f0db0acd87d845a94",
+        "compiler_receipt_sha256": "11a21417317835fffd54bbd32afbe193672edb09acae4c7441de7ade3b4d4b4b"
+      }
+    },
+    {
+      "id": "update_actor_mode_four",
+      "source": "src/provisional/update_actor_mode_four.c",
+      "address": "0x8c0c294c",
+      "entry": "_update_actor_mode_four",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_mode_update.h"
+      ],
+      "ranges": [
+        {
+          "offset": 731468,
+          "size": 224
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_actor_mode_four",
+          "address": "0x8c0c294c",
+          "size": 224
+        }
+      ],
+      "reference_sha256": "2a610186b8d864a32027a10f3b863cae72992804c1d40b453a9424024e8b6294",
+      "symbols": {},
+      "status": "parked",
+      "reason": "224/224bytes,26 differing,first0x8c0c298b. Velocity x/z scaling uses R4/R1 address temporaries and final store in JSR delay instead of R3/R0 and FLDI0 delay. Declared call and constant-first multiplication produce identical outputs.",
+      "unsuccessful_distinct_hypotheses": 3,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact two-field float scaling before a mixed float/integer call with matching address lifetimes, or verified inline context.",
+      "comparison": {
+        "name": "update_actor_mode_four-checked-0",
+        "size": 224,
+        "expected_size": 224,
+        "exact": false,
+        "differing_bytes": 26,
+        "first_difference": "0x8c0c298b",
+        "offsets": [
+          63,
+          67,
+          68,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          77,
+          78,
+          79,
+          80,
+          81,
+          83,
+          84,
+          85,
+          86,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          96,
+          97
+        ],
+        "source_sha256": "d81b3b612eb7e8d414669dbc9b56e86acbc77ef479d462ccc4c49813643231dc",
+        "compiler_receipt_sha256": "1f666983f05a1295d07deff2e87447f621d1239887bc25724750c105cda5894c"
+      }
     }
   ]
 }

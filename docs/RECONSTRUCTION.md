@@ -7742,3 +7742,48 @@ a disposable database copy. Parked targets were not reopened.
 Stage 157 commit ba27ef4 is published with successful remote checks. Reproduce
 with `python3 -B tools/verify_source.py`, the current tests and expected source-only
 rejection. Continue along the mode handlers and transition requests.
+
+
+## Actor mode requests and update, stage 159
+
+Five complete matches add **324 bytes**: **690 functions / 632 modules / 63,628
+compiled bytes / 4,099,284 retained reference bytes / 1.5284% whole-image coverage**.
+All 685 prior matches and their source/header hashes remain unchanged. Standalone
+reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| update_actor_mode_zero | 0x8c0c25c4 | 108 |
+| request_actor_mode_one | 0x8c0c2630 | 52 |
+| request_actor_mode_two | 0x8c0c2728 | 52 |
+| request_actor_mode_five | 0x8c0c2a2c | 56 |
+| request_actor_mode_seven | 0x8c0c2a64 | 56 |
+
+The mode-zero switch preserves initialization fallthrough, motion flag gates and
+the separate -1 path. Its initial four differences were the integer-zero and
+float-zero call instructions. Placing the float before the integer in the logical
+prototype preserves the SH-4 argument banks (actor R4, integer R5, float FR4) and
+reproduces FLDI0 in the delay slot. Modes one/two retain their flag gate; requests
+five/seven set bit one after their conditional state copies.
+
+Investigation-only: update_actor_mode_one is parked at 196 bytes with six
+differences, first 0x8c0c269e. A declared measurement call fixed 18 bytes, but the
+parameter offset loads after the first aggregate-copy load and actor move instead
+of before them. Swapping aggregate/float arguments gives identical output. Revisit
+only with an independent exact by-value vector call with matching offset lifetime
+or verified original context. update_actor_mode_four remains 224 bytes with 26
+differences, first 0x8c0c298b: velocity address lifetimes and the call delay differ.
+Declared-call and constant-first multiply hypotheses produced identical outputs.
+Revisit only with an independently exact two-field scaling pattern before the
+mixed-argument call or verified inline context. Each has three unsuccessful
+hypotheses, retained across sessions; neither earns completion credit.
+
+Twenty-four snapshots form nine binary groups. Final admissions reproduce twice.
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,099,284
+bytes without altering artifacts. Focused exports validate from a disposable
+copy; original data and prior parked targets remain unchanged.
+
+Stage 158 commit a3874d6 is published with successful remote checks. Reproduce
+with `python3 -B tools/verify_source.py`, current tests and expected source-only
+rejection. Continue into adjacent signed countdown and virtual mode handlers.

@@ -9226,6 +9226,136 @@
       "boundary_review": "Raw actor state initialization/destruction, parameter copies, modezero request and switch dispatch reviewed through adjacent entries, signed fields, gates, all seven jump-table relocations, literals and natural alignment. Full checked match twice; stage158."
     },
     {
+      "id": "update_actor_mode_zero",
+      "source": "src/effects/update_actor_mode_zero.c",
+      "address": "0x8c0c25c4",
+      "entry": "_update_actor_mode_zero",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_mode_update.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730564,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_actor_mode_zero",
+          "address": "0x8c0c25c4",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "4a2c9a05c88e6908ecaa493da92d73c7e0fff2c39a5d588b2259f4454b18e319",
+      "symbols": {},
+      "boundary_review": "Raw actor mode requests and zero handler reviewed through adjacent entries, signed short accesses, switch fallthrough, separate float/integer argument banks, delay slots, literals and natural padding. Complete checked match twice; stage159."
+    },
+    {
+      "id": "request_actor_mode_one",
+      "source": "src/effects/request_actor_mode_one.c",
+      "address": "0x8c0c2630",
+      "entry": "_request_actor_mode_one",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730672,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_one",
+          "address": "0x8c0c2630",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "02cd88412bc3620df331e0c0732625b568c984854ea9d957300953b8ec2eb903",
+      "symbols": {},
+      "boundary_review": "Raw actor mode requests and zero handler reviewed through adjacent entries, signed short accesses, switch fallthrough, separate float/integer argument banks, delay slots, literals and natural padding. Complete checked match twice; stage159."
+    },
+    {
+      "id": "request_actor_mode_two",
+      "source": "src/effects/request_actor_mode_two.c",
+      "address": "0x8c0c2728",
+      "entry": "_request_actor_mode_two",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730920,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_two",
+          "address": "0x8c0c2728",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "9f116e08d1347c03784982378000e2f596b2e4e087cf159d5b88f1b1f0f8f144",
+      "symbols": {},
+      "boundary_review": "Raw actor mode requests and zero handler reviewed through adjacent entries, signed short accesses, switch fallthrough, separate float/integer argument banks, delay slots, literals and natural padding. Complete checked match twice; stage159."
+    },
+    {
+      "id": "request_actor_mode_five",
+      "source": "src/effects/request_actor_mode_five.c",
+      "address": "0x8c0c2a2c",
+      "entry": "_request_actor_mode_five",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 731692,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_five",
+          "address": "0x8c0c2a2c",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "3c88293e6e63aaa23a68e5dd3fd530c76c6fd2303e9f3978291cacb7ee9e2acd",
+      "symbols": {},
+      "boundary_review": "Raw actor mode requests and zero handler reviewed through adjacent entries, signed short accesses, switch fallthrough, separate float/integer argument banks, delay slots, literals and natural padding. Complete checked match twice; stage159."
+    },
+    {
+      "id": "request_actor_mode_seven",
+      "source": "src/effects/request_actor_mode_seven.c",
+      "address": "0x8c0c2a64",
+      "entry": "_request_actor_mode_seven",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 731748,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_seven",
+          "address": "0x8c0c2a64",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "a8bf7e07a60509d6b1c7bee1b514dcea166e5f44c9e40979e5f278ea528e6458",
+      "symbols": {},
+      "boundary_review": "Raw actor mode requests and zero handler reviewed through adjacent entries, signed short accesses, switch fallthrough, separate float/integer argument banks, delay slots, literals and natural padding. Complete checked match twice; stage159."
+    },
+    {
       "id": "clear_inactive_target",
       "source": "src/objects/clear_inactive_target.c",
       "address": "0x8c0c36d4",

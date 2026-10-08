@@ -1,0 +1,3 @@
+#include "src/include/actor_mode_update.h"
+extern float measure_actor_target(ActorModeUpdateView *,float,Vector3);
+void update_actor_mode_one(ActorModeUpdateView *actor){switch(actor->state){case 0:actor->animation=1;actor->state=1;case 1:((void (*)(ActorModeUpdateView *))0x8c01c5f0)(actor);if(actor->target){float distance=measure_actor_target(actor,actor->parameters[1],actor->target->target_position);if(distance>actor->parameters[0]||actor->parameters[1]>distance)actor->target=0;((void (*)(ActorModeUpdateView *,int,Vector3 *))0x8c043fb4)(actor,((int *)actor->parameters)[2],&actor->velocity);}((void (*)(ActorModeUpdateView *,float,int))0x8c04a43c)(actor,0.0f,0);((void (*)(ActorModeUpdateView *))0x8c052180)(actor);break;case -1:break;}}
