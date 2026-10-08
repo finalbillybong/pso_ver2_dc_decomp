@@ -6175,3 +6175,38 @@ privacy-scanned public changes are committed; research remains uncommitted.
 
 Reproduce with `python3 -B tools/verify_source.py`, the current test suite and expected
 source-only rejection. Continue into quaternion and matrix dependencies.
+
+
+## Quaternion blend with compiler intrinsic, stage 121
+
+One new exact function replaces **180 bytes**. Totals are **522 functions /
+469 modules / 50,868 compiled bytes / 4,112,044 retained reference bytes**, or
+**1.2219% whole-image coverage**. All 521 preceding functions and their source/header
+files are preserved. Standalone reconstructed data remains zero.
+
+The quaternion blend at **0x8c0c4324** captures both four-float inputs, selects addition
+or subtraction from the dot-product sign, and normalizes using the observed reciprocal
+square-root instruction. Zero and unordered dot products retain the subtraction path.
+No runtime object or assembly source is substituted.
+
+The local CodeWarrior manual lists reciprocal-square-root support, but its public
+fsrra spelling produces an unresolved external call. Inspection of the pinned compiler
+identifies __fsrra; this intrinsic emits every one of the 178 instruction bytes under
+the unchanged compiler and flags. The standalone unit omits two natural alignment
+bytes. Compiling with the actual adjacent, already-matched draw function produces
+**228 exact bytes**, including the complete 180-byte blend and existing 48-byte draw.
+No artificial padding is added. The manifest replaces the old draw module with this
+combined source; its original source and declared dependencies remain preserved.
+The draw function is not credited again, and module count remains unchanged.
+
+Five source snapshots include one link failure and two distinct successful binaries.
+Final combined source matches twice independently. Two fresh exact builds per checkout,
+exact integrated image, five-function proof, 53 research tests and 58 public tests pass.
+Source-only rejects 4,112,044 bytes without altering artifacts. Refreshed focused exports
+validate on a disposable database copy. All parked blockers retain their counts.
+
+Stage 120 commit 807099e is published and remote checks passed. Public changes receive
+staged review and privacy scans; private data and original saves are preserved.
+Research remains uncommitted. Reproduce with `python3 -B tools/verify_source.py`,
+the test suite and expected source-only rejection. Continue into related sine/cosine
+and Euler conversion routines using compiler evidence, without changing flags.

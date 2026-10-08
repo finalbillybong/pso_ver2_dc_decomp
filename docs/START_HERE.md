@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **521 exact functions in 469 modules**, replacing
-**50,688 bytes** of the 4,162,912-byte decoded executable (**1.2176% image coverage**).
-It retains **4,112,224 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **522 exact functions in 469 modules**, replacing
+**50,868 bytes** of the 4,162,912-byte decoded executable (**1.2219% image coverage**).
+It retains **4,112,044 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,12 +28,12 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 120
+## Latest integration batch: stage 121
 
-Stage 120 adds **3 functions / 556 bytes**: blended transform preparation,
-decomposition and application. All 518 preceding matches remain unchanged.
-Required exact builds, proof, tests and source-only rejection pass. Existing
-parked targets retain their counts and evidence-based revisit conditions.
+Stage 121 adds **1 function / 180 bytes**: quaternion blending with the pinned
+compiler's reciprocal-square-root intrinsic. Its genuine adjacent draw function
+supplies natural alignment in a combined module. All 521 preceding functions
+and source/header files are preserved. Required verification passes.
 
 ## Autonomous iteration
 

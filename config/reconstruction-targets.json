@@ -13016,7 +13016,7 @@
       "symbols": {},
       "boundary_review": "Raw draw wrappers0x8c0c3924..3974 and blended tree0x8c0c43d8..44c8 reviewed including tail-call literals, inlined recursion and natural alignment. Complete source exact twice; stage119.",
       "status": "matched",
-      "reason": "Complete draw forwarding or blended traversal; recursive C supplies observed inlining. Existing checked node and dispatch dependencies preserved."
+      "reason": "Existing exact48-byte function retained unchanged within quaternion_blend_and_draw. Original standalone source and dependencies preserved; no duplicate coverage."
     },
     {
       "id": "visit_blended_transform_tree",
@@ -13158,6 +13158,39 @@
       "boundary_review": "Raw contiguous blended-transform entries0x8c0c40f8/4140/42a8/4324 reviewed including stack104/52 layouts, saved factors, conversion paths, call delays, literals and alignment. Complete checked source exact twice; stage120.",
       "status": "matched",
       "reason": "Complete blended transform preparation, decomposition or application; state order, Euler conversion branches and weighted components preserved."
+    },
+    {
+      "id": "quaternion_blend_and_draw",
+      "source": "src/math/quaternion_blend_and_draw.c",
+      "address": "0x8c0c4324",
+      "entry": "_blend_quaternion",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 738084,
+          "size": 228
+        }
+      ],
+      "functions": [
+        {
+          "name": "blend_quaternion",
+          "address": "0x8c0c4324",
+          "size": 180
+        },
+        {
+          "name": "draw_blended_transform_tree",
+          "address": "0x8c0c43d8",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "e565d32ed41e64729bb30e1884e1f027d9a49b86ea9ff9b01b2bda15d3b2c045",
+      "symbols": {},
+      "boundary_review": "Full0x8c0c4324..4408 range includes180-byte quaternion blend and48-byte previously matched draw. Compiler __fsrra emits observed instruction; real adjacent entry supplies natural2-byte alignment. Exact twice; stage121.",
+      "status": "matched",
+      "reason": "Quaternion blend exact in full combined range;180 net new bytes. Existing draw function preserved, not counted again. No assembly or artificial padding."
     }
   ]
 }
