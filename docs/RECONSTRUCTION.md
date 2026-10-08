@@ -6704,3 +6704,46 @@ Stage 131 commit 406d2a9 is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into node-array lifecycle and its counting/filling helpers.
+
+
+## Node-array destruction and recursive walks, stage 133
+
+Three new exact functions replace **280 bytes** in three modules. Totals are
+**586 functions / 530 modules / 55,116 compiled bytes / 4,107,796 retained reference
+bytes**, or **1.3240% whole-image coverage**. All 583 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| destroy_node_array | 0x8c0cd5fc | 64 |
+| count_node_array_tree | 0x8c0cd7b4 | 108 |
+| fill_node_array_tree | 0x8c0cd920 | 108 |
+
+All three match on their first candidates. The destructor preserves reverse
+release order, pointer clearing, null guard and signed short deletion flag.
+The two walks use the existing checked transform tree layout, guard resource/data
+pointers, visit siblings and recurse into children. Ordinary recursive C generates
+the observed two-level inline expansion under the unchanged compiler settings.
+The array prefix and resource data pointer have checked sizes and offsets.
+
+Investigation-only: initialize_node_array remains parked after five distinct
+unsuccessful hypotheses. Its best complete result is 116 bytes with 47 differences,
+first at 0x8c0cd5b4. Explicit unsigned byte-count shifts remove multiplication,
+but the second allocation emits one SHLL2 where two SHLLs are observed. Final
+global cursor stores and argument lifetimes also differ. sizeof products repeat
+the baseline; a paired-16-bit sizing expression is worse; declaring the independently
+matched void fill callee repeats the best binary. Revisit only with new evidence
+for two-stage allocation scaling and cursor-store scheduling or verified element
+context. Precise offsets and persistent count are recorded in the queue.
+
+Fifteen snapshots form six binary groups. All checked admissions independently
+match twice; the checked initializer retains its exact mismatch without credit.
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,107,796
+bytes without changing build artifacts. Focused exports validate on a disposable
+copy. All prior parked targets retain their counts and revisit conditions.
+
+Stage 132 commit 197d0b4 is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into the count/fill walkers' command-stream helpers.

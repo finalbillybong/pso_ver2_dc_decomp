@@ -9834,6 +9834,85 @@
       "boundary_review": "Raw motion reset, signed mode setter, raised vector copy and offset-effect lifecycle reviewed through adjacent entries, virtual slot436, literals and natural alignment. Three adjacent control functions retain genuine compiler alignment. Checked full match twice; stage132."
     },
     {
+      "id": "destroy_node_array",
+      "source": "src/objects/destroy_node_array.c",
+      "address": "0x8c0cd5fc",
+      "entry": "_destroy_node_array",
+      "headers": [
+        "src/include/node_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 775676,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_node_array",
+          "address": "0x8c0cd5fc",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "fdefd896b51611fb585510b7c39a173d2f6aecf047a7c60ec8f69d3d338c14bb",
+      "symbols": {},
+      "boundary_review": "Raw node-array destructor and recursive count/fill tree walks reviewed through adjacent entries, signed release test, null guards, compiler recursion expansion, literals and padding. Full checked match twice; stage133."
+    },
+    {
+      "id": "count_node_array_tree",
+      "source": "src/objects/count_node_array_tree.c",
+      "address": "0x8c0cd7b4",
+      "entry": "_count_node_array_tree",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/transform_node.h",
+        "src/include/node_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 776116,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "count_node_array_tree",
+          "address": "0x8c0cd7b4",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "0560954a2e842d6655e987859387144a65c9e28649a10ce0a62cfc78fb77dddb",
+      "symbols": {},
+      "boundary_review": "Raw node-array destructor and recursive count/fill tree walks reviewed through adjacent entries, signed release test, null guards, compiler recursion expansion, literals and padding. Full checked match twice; stage133."
+    },
+    {
+      "id": "fill_node_array_tree",
+      "source": "src/objects/fill_node_array_tree.c",
+      "address": "0x8c0cd920",
+      "entry": "_fill_node_array_tree",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/transform_node.h",
+        "src/include/node_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 776480,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "fill_node_array_tree",
+          "address": "0x8c0cd920",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "6fe97524d31a944e678688b25cc38ef6547d013fc2d6416405ace3d4bc5b8041",
+      "symbols": {},
+      "boundary_review": "Raw node-array destructor and recursive count/fill tree walks reviewed through adjacent entries, signed release test, null guards, compiler recursion expansion, literals and padding. Full checked match twice; stage133."
+    },
+    {
       "id": "allocate_block",
       "source": "src/runtime/allocate_block.c",
       "address": "0x8c122700",

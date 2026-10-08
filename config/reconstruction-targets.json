@@ -16045,6 +16045,179 @@
       "boundary_review": "Raw motion reset, signed mode setter, raised vector copy and offset-effect lifecycle reviewed through adjacent entries, virtual slot436, literals and natural alignment. Three adjacent control functions retain genuine compiler alignment. Checked full match twice; stage132.",
       "status": "matched",
       "reason": "Complete actor position/state helper or offset-effect initialization/control range; all observed accesses and float comparison behavior preserved."
+    },
+    {
+      "id": "destroy_node_array",
+      "source": "src/objects/destroy_node_array.c",
+      "address": "0x8c0cd5fc",
+      "entry": "_destroy_node_array",
+      "headers": [
+        "src/include/node_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 775676,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_node_array",
+          "address": "0x8c0cd5fc",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "fdefd896b51611fb585510b7c39a173d2f6aecf047a7c60ec8f69d3d338c14bb",
+      "symbols": {},
+      "boundary_review": "Raw node-array destructor and recursive count/fill tree walks reviewed through adjacent entries, signed release test, null guards, compiler recursion expansion, literals and padding. Full checked match twice; stage133.",
+      "status": "matched",
+      "reason": "Complete destructor or recursive tree walk; preserve resource guards, sibling order, child recursion and signed deletion behavior."
+    },
+    {
+      "id": "count_node_array_tree",
+      "source": "src/objects/count_node_array_tree.c",
+      "address": "0x8c0cd7b4",
+      "entry": "_count_node_array_tree",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/transform_node.h",
+        "src/include/node_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 776116,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "count_node_array_tree",
+          "address": "0x8c0cd7b4",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "0560954a2e842d6655e987859387144a65c9e28649a10ce0a62cfc78fb77dddb",
+      "symbols": {},
+      "boundary_review": "Raw node-array destructor and recursive count/fill tree walks reviewed through adjacent entries, signed release test, null guards, compiler recursion expansion, literals and padding. Full checked match twice; stage133.",
+      "status": "matched",
+      "reason": "Complete destructor or recursive tree walk; preserve resource guards, sibling order, child recursion and signed deletion behavior."
+    },
+    {
+      "id": "fill_node_array_tree",
+      "source": "src/objects/fill_node_array_tree.c",
+      "address": "0x8c0cd920",
+      "entry": "_fill_node_array_tree",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/transform_node.h",
+        "src/include/node_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 776480,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "fill_node_array_tree",
+          "address": "0x8c0cd920",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "6fe97524d31a944e678688b25cc38ef6547d013fc2d6416405ace3d4bc5b8041",
+      "symbols": {},
+      "boundary_review": "Raw node-array destructor and recursive count/fill tree walks reviewed through adjacent entries, signed release test, null guards, compiler recursion expansion, literals and padding. Full checked match twice; stage133.",
+      "status": "matched",
+      "reason": "Complete destructor or recursive tree walk; preserve resource guards, sibling order, child recursion and signed deletion behavior."
+    },
+    {
+      "id": "initialize_node_array",
+      "source": "src/provisional/initialize_node_array.c",
+      "address": "0x8c0cd588",
+      "entry": "_initialize_node_array",
+      "headers": [
+        "src/include/node_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 775560,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_node_array",
+          "address": "0x8c0cd588",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "035fd8c7f76445bc12c84de1254354bffab35dd7f797acf1fde1a23f307a2886",
+      "symbols": {},
+      "status": "parked",
+      "reason": "116 bytes /47 differing; first0x8c0cd5b4. Target index allocation uses two SHLLs; explicit shift emits one SHLL2. Final global cursor setup uses R13/R7 and different argument/global lifetimes. sizeof products retain MUL; paired16bit-size expression is worse; declared exact void fill callee is binary-identical. Five unsuccessful distinct hypotheses.",
+      "unsuccessful_distinct_hypotheses": 5,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact two-stage allocation scaling and final cursor-store scheduling pattern, or verified array element/source context. Do not repeat sizeof spelling or direct-fill declarations.",
+      "comparison": {
+        "name": "initialize_node_array-checked-0",
+        "size": 116,
+        "expected_size": 116,
+        "exact": false,
+        "differing_bytes": 47,
+        "first_difference": "0x8c0cd5b4",
+        "offsets": [
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "source_sha256": "625dc99d15e29c5ff45648d83cf0a6008aa6aa576642bd09c4381dff2fc82645",
+        "compiler_receipt_sha256": "588cb5542272065f1977a675d52332fbbde02e45fa6709da8d453983d5f494b3"
+      }
     }
   ]
 }
