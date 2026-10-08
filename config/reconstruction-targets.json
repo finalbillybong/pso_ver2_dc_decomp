@@ -7480,6 +7480,103 @@
       "boundary_review": "Raw SH4 entry through adjacent entry with literals, switch table and natural alignment; complete checked source exact twice; reconstruction-stage73.",
       "status": "matched",
       "reason": "Complete guarded dispatch, notice construction or five-way virtual notice handler; static data and unresolved callees remain reference-dependent."
+    },
+    {
+      "id": "operation_02be50",
+      "source": "src/objects/operation_02be50.c",
+      "address": "0x8c02be50",
+      "entry": "_operation_02be50",
+      "ranges": [
+        {
+          "offset": 114256,
+          "size": 256
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_02be50",
+          "address": "0x8c02be50",
+          "size": 256
+        }
+      ],
+      "reference_sha256": "fe847997cdbbb7d5a92f43440219b80171b756baeff2d5ad636125d1da0ba5a5",
+      "symbols": {
+        "_query_at": "0x8c2391f4",
+        "_update_at": "0x8c23959c"
+      },
+      "headers": [
+        "src/include/dispatch_state.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry ranges and adjacent boundaries, including natural inter-function alignment for four byte queries; checked source exact twice; reconstruction-stage74.",
+      "status": "matched",
+      "reason": "Complete guarded update, weighted accumulator or four adjacent bounded byte queries; unresolved formatting routine remains unadmitted."
+    },
+    {
+      "id": "bounded_byte_queries",
+      "source": "src/objects/bounded_byte_queries.c",
+      "address": "0x8c2391f4",
+      "entry": "_operation_2391f4",
+      "ranges": [
+        {
+          "offset": 2265588,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_2391f4",
+          "address": "0x8c2391f4",
+          "size": 20
+        },
+        {
+          "name": "operation_239208",
+          "address": "0x8c239208",
+          "size": 16
+        },
+        {
+          "name": "operation_239218",
+          "address": "0x8c239218",
+          "size": 16
+        },
+        {
+          "name": "operation_239228",
+          "address": "0x8c239228",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "4c34fb45d144ba0689f1b33d7748a41f2e4c8d0a38f4062fa33e2cbd21114a4d",
+      "headers": [
+        "src/include/dispatch_state.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry ranges and adjacent boundaries, including natural inter-function alignment for four byte queries; checked source exact twice; reconstruction-stage74.",
+      "status": "matched",
+      "reason": "Complete guarded update, weighted accumulator or four adjacent bounded byte queries; unresolved formatting routine remains unadmitted."
+    },
+    {
+      "id": "operation_23959c",
+      "source": "src/objects/operation_23959c.c",
+      "address": "0x8c23959c",
+      "entry": "_operation_23959c",
+      "ranges": [
+        {
+          "offset": 2266524,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_23959c",
+          "address": "0x8c23959c",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "0553d81f769a484815e0b7e173edcf2127409930d6f1c13ed69212ff68a0347e",
+      "headers": [
+        "src/include/dispatch_state.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry ranges and adjacent boundaries, including natural inter-function alignment for four byte queries; checked source exact twice; reconstruction-stage74.",
+      "status": "matched",
+      "reason": "Complete guarded update, weighted accumulator or four adjacent bounded byte queries; unresolved formatting routine remains unadmitted."
     }
   ]
 }

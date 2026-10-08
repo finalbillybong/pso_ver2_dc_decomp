@@ -3800,3 +3800,58 @@ five-function proof and all **53 research tests** pass; the public suite remains
 artifacts. Focused exports were regenerated on a disposable database copy after
 manifest changes and validated against current inputs. The original database,
 compiler, base flags and whole-range acceptance rules remain unchanged.
+
+
+## Guarded update and bounded state queries, stage 74
+
+Six complete functions add **376 bytes** in three modules: guarded update at
+**0x8c02be50** (256), four adjacent bounded byte queries at **0x8c2391f4**,
+**0x8c239208**, **0x8c239218**, **0x8c239228** (68 combined), and weighted
+state update at **0x8c23959c** (52). Totals are **320 functions / 295 modules /
+32,128 compiled full-range bytes / 4,130,784 retained reference bytes**, or
+**0.7718% whole-image coverage**. All 314 previous matches, module definitions and
+source/header hashes remain unchanged. Since the initial checkpoint, 286 functions
+replace 28,484 bytes. Code-only completion remains unknown; separately reconstructed
+static data is zero.
+
+The guarded update preserves the global enable test, signed byte interpretation,
+repeated active-ID tests, object flag 0x10000000 and late mode/null checks. Its
+notice retains default header, sentinel and zero stores before explicit values.
+Capturing the source ID as unsigned short avoids a packet reload and reproduces
+all 256 bytes; signed short differs in one extension byte and full-width captures
+differ in 33 bytes. No guard is moved or added despite the observed late null
+check. Raw callee inspection establishes that the embedded state occupies four
+floats, not a scalar: checked offsets are 0, 4, 8 and 12, embedded at 0x704.
+
+The weighted updater converts the signed amount once, adds it to the total,
+selects a factor using the source flag and updates the value in observed operand
+order. Capturing the converted float recovers the 52-byte size; declaring it
+before the factor fixes the remaining eight register-allocation bytes. Repeated
+casts generate 56 bytes. A late declaration trial is rejected by the pinned C89
+compiler and retained as evidence. The bounded byte queries preserve bounds
+2, 3, 4 and 2. The first query alone emits 18 bytes against its 20-byte interval;
+compiling the four adjacent functions together supplies natural alignment and
+matches all 68 bytes. No explicit padding or shortened range is used.
+
+The related formatting routine at **0x8c02bd40** remains unresolved at **268
+bytes versus 272 expected**, with 199 differing/missing bytes in the aligned
+comparison. Its ordinary candidate uses a short conditional return where the
+reference uses an inverted condition and long branch; downstream instructions
+and literals consequently move. Early returns, nested guards, goto forms,
+ignored return types, direct/extern calls, inline getters, result widths and
+long conversion hypotheses are recorded. Narrow predicates produce 272 bytes
+but incorrect instructions; size alone receives no credit. This routine is not
+admitted. The primary candidates remain **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, and signed remainder unresolved.
+The primary batch remains incomplete; supporting matches do not replace it.
+
+All **71 trials**, including **one compiler rejection**, retain source snapshots,
+hypotheses and comparisons in `reconstruction-stage74`; completed compilations
+retain compiler receipts. Final checked sources match independently twice.
+Identifiers, source paths and intervals are checked before admission. Two fresh
+exact builds, integrated-image comparison, five-function proof and all **53
+research tests** pass; the public suite remains **58 tests**. Source-only rejects
+4,130,784 retained bytes without changing artifacts. Focused exports are regenerated
+on a disposable database copy after manifest changes and validated against current
+inputs. The original database, compiler, base flags, default GNU linker and
+whole-range acceptance rules remain unchanged.
