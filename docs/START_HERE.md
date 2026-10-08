@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **290 exact functions in 268 modules**, replacing
-**29,288 bytes** of the 4,162,912-byte decoded executable (**0.7035% image coverage**).
-It retains **4,133,624 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **297 exact functions in 275 modules**, replacing
+**29,816 bytes** of the 4,162,912-byte decoded executable (**0.7162% image coverage**).
+It retains **4,133,096 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,14 +28,14 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 67
+## Latest batch: stage 68
 
-Flag-object, bit-table query/update and buffer-copy operations add eleven
-functions and 664 bytes in eleven modules. All 279 earlier matches, module
-definitions and source/header hashes are preserved. Since the initial checkpoint,
-256 functions replace 25,644 bytes. All 48 trials are retained, with no
-compiler/linker rejections. The original primary targets remain 512/30 and
-388/8; signed remainder is unresolved.
+Sampling, polling and indexed notification routines add seven functions and
+528 bytes in seven modules. All 290 earlier matches, module definitions and
+source/header hashes are preserved. Since the initial checkpoint, 263 functions
+replace 26,172 bytes. All 34 trials are retained, with no compiler/linker
+rejections. The original primary targets remain 512/30 and 388/8; signed
+remainder is unresolved.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

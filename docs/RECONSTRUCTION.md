@@ -3504,3 +3504,48 @@ unchanged. Original primary targets remain **512/30 and 388/8**, related reuse
 **448/4**, manager initialization **280/8**, and signed remainder unresolved.
 The primary batch is still incomplete; these supporting matches do not replace
 its acceptance criteria.
+
+
+## Sampling, polling and indexed notifications, stage 68
+
+Seven complete ordinary-C functions add **528 bytes**: **0x8c0c63c4** (72),
+**0x8c0c640c** and **0x8c0c6468** (92 each), **0x8c0c64c4** (36),
+**0x8c0c64ec** (68), **0x8c0c6530** (60) and **0x8c0c656c** (108).
+Totals are **297 functions / 275 modules / 29,816 compiled full-range bytes /
+4,133,096 retained reference bytes**, or **0.7162% whole-image coverage**.
+All 290 previous matches, module definitions and source/header hashes remain
+unchanged. Since the initial checkpoint, 263 functions replace 26,172 bytes.
+Code-only completion remains unknown; separately reconstructed static data is zero.
+
+The sampling caller preserves its 12-byte stack storage, unsigned conversion,
+division by 440, increment and multiplication. Raw callees access mixed byte and
+halfword fields; Sample12 describes caller storage only, not a decoded field
+layout. Both polling loops preserve same-value retries, unsigned comparisons,
+threshold offsets 170/356, global update and callback order. Capturing the
+converted value in a full-width local removes an unwanted reload and finishes
+the first loop. Giving the second threshold an outer lifetime reproduces its
+saved register. Applying that lifetime to the first loop fails and is recorded.
+
+The 128-entry zeroing loop needs an explicit shifted byte offset to preserve
+shift addressing instead of multiplication. Notification operations likewise
+match when byte offsets remain separate from the table base. The single-record
+entry marks its slot before lookup and adds no speculative ID bound. The loop
+stops at the first missing object and emits a four-byte 9/1/id record only for
+unseen objects with flag 0x800. Checked provisional headers cover record offsets,
+object flags and the minimal dispatch prefix; destructor matching does not imply
+a complete object allocation layout. Callees and static table contents remain
+reference-dependent unless separately admitted.
+
+All **34 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage68`; none were compiler/linker rejections.
+Final sources match independently twice. Identifiers, source paths and intervals
+are checked before integration. Two fresh exact builds, integrated-image
+comparison, five-function proof and all **53 research tests** pass; the public
+suite remains **58 tests**. Source-only rejects 4,133,096 retained bytes without
+changing artifacts. Focused exports are regenerated after manifest/queue changes
+on a disposable copy and checked against current inputs; the original database
+remains unchanged. Compiler, base flags, default linker and full-range rules are
+unchanged. Original primary targets remain **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, and signed remainder unresolved.
+The primary batch is still incomplete; these supporting matches do not replace
+its acceptance criteria.

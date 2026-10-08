@@ -6838,6 +6838,191 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67.",
       "status": "matched",
       "reason": "Complete provisional flag-object or buffer operation; static buffer and unresolved runtime helpers receive no source credit."
+    },
+    {
+      "id": "operation_0c63c4",
+      "source": "src/runtime/operation_0c63c4.c",
+      "address": "0x8c0c63c4",
+      "entry": "_operation_0c63c4",
+      "ranges": [
+        {
+          "offset": 746436,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c63c4",
+          "address": "0x8c0c63c4",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "cc14b8d6f504467be6f29c521d76c099d6fdaaf841589ce5bc9aa1a07c1d3452",
+      "symbols": {
+        "__l_divu": "0x8c18e808"
+      },
+      "headers": [
+        "src/include/sample_storage.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage68.",
+      "status": "matched",
+      "reason": "Complete provisional sampling/polling, indexed state or notice operation; retained callees/static data receive no source credit."
+    },
+    {
+      "id": "operation_0c640c",
+      "source": "src/runtime/operation_0c640c.c",
+      "address": "0x8c0c640c",
+      "entry": "_operation_0c640c",
+      "ranges": [
+        {
+          "offset": 746508,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c640c",
+          "address": "0x8c0c640c",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "fead0541c806fb9f2b376a2e2009fb6775ef84713ed46d2a0143c56979029c3b",
+      "headers": [
+        "src/include/sample_storage.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage68.",
+      "status": "matched",
+      "reason": "Complete provisional sampling/polling, indexed state or notice operation; retained callees/static data receive no source credit."
+    },
+    {
+      "id": "operation_0c6468",
+      "source": "src/runtime/operation_0c6468.c",
+      "address": "0x8c0c6468",
+      "entry": "_operation_0c6468",
+      "ranges": [
+        {
+          "offset": 746600,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c6468",
+          "address": "0x8c0c6468",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "a1900885b16207fbaeec61d44b2f08c92f99c158b7840addf56487421386cca4",
+      "symbols": {
+        "_yield_at": "0x8c380516"
+      },
+      "headers": [
+        "src/include/sample_storage.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage68.",
+      "status": "matched",
+      "reason": "Complete provisional sampling/polling, indexed state or notice operation; retained callees/static data receive no source credit."
+    },
+    {
+      "id": "operation_0c64c4",
+      "source": "src/runtime/operation_0c64c4.c",
+      "address": "0x8c0c64c4",
+      "entry": "_operation_0c64c4",
+      "ranges": [
+        {
+          "offset": 746692,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c64c4",
+          "address": "0x8c0c64c4",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "60330dcbd48eb21e346797a918ff88b6ab59ab418add9538f168d0c57f258ed1",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage68.",
+      "status": "matched",
+      "reason": "Complete provisional sampling/polling, indexed state or notice operation; retained callees/static data receive no source credit."
+    },
+    {
+      "id": "operation_0c64ec",
+      "source": "src/runtime/operation_0c64ec.c",
+      "address": "0x8c0c64ec",
+      "entry": "_operation_0c64ec",
+      "ranges": [
+        {
+          "offset": 746732,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c64ec",
+          "address": "0x8c0c64ec",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "46af86d77a92640601152360bd1504d9ad2f95ac6277c15ca9e949e8c4915f8f",
+      "headers": [
+        "src/include/notice_views.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage68.",
+      "status": "matched",
+      "reason": "Complete provisional sampling/polling, indexed state or notice operation; retained callees/static data receive no source credit."
+    },
+    {
+      "id": "operation_0c6530",
+      "source": "src/runtime/operation_0c6530.c",
+      "address": "0x8c0c6530",
+      "entry": "_operation_0c6530",
+      "ranges": [
+        {
+          "offset": 746800,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c6530",
+          "address": "0x8c0c6530",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "43591ded56c85eae3a950121db8ac42620ed3377162dbf5ab8b954bcaf306ac5",
+      "headers": [
+        "src/include/notice_views.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage68.",
+      "status": "matched",
+      "reason": "Complete provisional sampling/polling, indexed state or notice operation; retained callees/static data receive no source credit."
+    },
+    {
+      "id": "operation_0c656c",
+      "source": "src/runtime/operation_0c656c.c",
+      "address": "0x8c0c656c",
+      "entry": "_operation_0c656c",
+      "ranges": [
+        {
+          "offset": 746860,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c656c",
+          "address": "0x8c0c656c",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "5ed257830ee3279be53fcd63b2841e7805885a3cb146a0cee17268f913b367bd",
+      "headers": [
+        "src/include/notice_views.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage68.",
+      "status": "matched",
+      "reason": "Complete provisional sampling/polling, indexed state or notice operation; retained callees/static data receive no source credit."
     }
   ]
 }
