@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "189d9353bbfcd8641a7ad59776e433ea599b6b40882c417134ecf5d04e983a2a",
+    "config/project.json": "33fd328f4df3d781f731cd12b46db9cf20575ffbd140137205105a7f1f60127e",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -179,6 +179,7 @@
     "src/include/vector3.h": "faff67bf729a7d9ac45803ed65a2d629520c4b22f72b08affa2e07e7a17e8262",
     "src/include/vector_query.h": "68cc21fdbd03789eb193b85eacc189eda0657019dc1a45880ae552f2587266c9",
     "src/include/widget_child.h": "8b4960de6fe0f72a652b74d0d55a63de189275603f3e170cf69eaf71c557e3f7",
+    "src/include/widget_stat_values.h": "32acbc44e221506e445c99d9a1a1b7e3e3f21c7c9f22e7cda2a33b788a2c0a90",
     "src/math/angle_difference.c": "815de2106556eb2ab7953449876fbb544aaf4ab45056a97bfd5a8c58dbf53df8",
     "src/math/angle_halfway.c": "566aef942ebe20d3c677ff0a433dd41f93bee2b96c74c2647d3eeca06431958c",
     "src/math/angle_step.c": "258cc41bd647950e4932452643e24e0b6444427fd2a921324f4a5ee8e6acaba9",
@@ -312,6 +313,11 @@
     "src/objects/operation_1941c0.c": "9c07a0737c3e717367f4822816f46c028edee8650b79f700027dd0a112b83153",
     "src/objects/operation_194250.c": "c35d572c3a77c28fb98d1a8babadf19c63d3b5b16c3e45ebf664bb971a80f9b2",
     "src/objects/operation_1943f0.cpp": "199aeb25e7a71f9a658e3f689932a5ebfdfc4959fbd687dc1607e78ca43cbc6c",
+    "src/objects/operation_194570.c": "cd0aef8de9bcd7998b5083273b91c9747e4a75ec644fe1bc629fd177b0390aad",
+    "src/objects/operation_194838.c": "04f8d1159f2f834825572cc6a6409d603bef31f70325645069f8a7a699026974",
+    "src/objects/operation_194988.c": "f0412146cccb70ecaaa3f7a3dc8d536ef2ad45884dec05176528ee69c18b448d",
+    "src/objects/operation_194b44.c": "027b30e2b4161b2293d4fa8f8aa83b862f14ee38cff7168731af43dfb8df7613",
+    "src/objects/operation_194c70.c": "783ba92adda8817f8019cb02d35bfb7f698d51ec69af74c3bc5ef866449e1096",
     "src/objects/operation_1abb78.c": "b9d5379ef632a39f53e4d24e904af17a7ebef8db7d98c4d8f98a533da85adc5e",
     "src/objects/operation_1abbcc.cpp": "6c367e175bd863afea760e8df8b60fea717d3c235011dd1bd6a21d53d691fd63",
     "src/objects/operation_1abc6c.c": "bd29e14a36cb7c1bbd60cadbd9ad8a55b6ccfb1d64abf7dc88eb4e6bf22fe305",
@@ -3834,6 +3840,61 @@
       "-lang",
       "c++"
     ],
+    "operation_194570": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_194838": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_194988": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_194b44": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_194c70": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "initialize_proximity_object": [
       "-proc",
       "SH4",
@@ -4525,6 +4586,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4123388,
+  "source_only_rejected_retained_bytes": 4122780,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

@@ -9614,6 +9614,130 @@
       "boundary_review": "Raw complete entry/adjacent entries including literals and alignment; child constructor/destructor compiled as full56-byte bundle; native linker only for switch relocation; reconstruction-stage88.",
       "status": "matched",
       "reason": "Complete widget dispatch/value or child-state range; first case initializer remains unresolved and static data remains reference-dependent."
+    },
+    {
+      "id": "operation_194570",
+      "source": "src/objects/operation_194570.c",
+      "address": "0x8c194570",
+      "entry": "_operation_194570",
+      "ranges": [
+        {
+          "offset": 1590640,
+          "size": 476
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194570",
+          "address": "0x8c194570",
+          "size": 476
+        }
+      ],
+      "reference_sha256": "2c0d17dabf32718b6c0c1b4b0651b94ffd330253f32f8c3bca48393fb608b591",
+      "symbols": {
+        "_selected_actor": "0x8c418248"
+      },
+      "headers": [
+        "src/include/widget_stat_values.h"
+      ],
+      "boundary_review": "Complete entry through adjacent entry reviewed from raw SH4, including literals and compiler alignment; reconstruction-stage89.",
+      "status": "matched",
+      "reason": "Complete signed widget value or empty dispatch callback range; text setup and static data remain reference-dependent."
+    },
+    {
+      "id": "operation_194838",
+      "source": "src/objects/operation_194838.c",
+      "address": "0x8c194838",
+      "entry": "_operation_194838",
+      "ranges": [
+        {
+          "offset": 1591352,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194838",
+          "address": "0x8c194838",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "0253444e5a562d96c1d15134cbaf7ea76cdce572db00aebd99cd9dd2301f0a3c",
+      "headers": [
+        "src/include/widget_stat_values.h"
+      ],
+      "boundary_review": "Complete entry through adjacent entry reviewed from raw SH4, including literals and compiler alignment; reconstruction-stage89.",
+      "status": "matched",
+      "reason": "Complete signed widget value or empty dispatch callback range; text setup and static data remain reference-dependent."
+    },
+    {
+      "id": "operation_194988",
+      "source": "src/objects/operation_194988.c",
+      "address": "0x8c194988",
+      "entry": "_operation_194988",
+      "ranges": [
+        {
+          "offset": 1591688,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194988",
+          "address": "0x8c194988",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "boundary_review": "Complete entry through adjacent entry reviewed from raw SH4, including literals and compiler alignment; reconstruction-stage89.",
+      "status": "matched",
+      "reason": "Complete signed widget value or empty dispatch callback range; text setup and static data remain reference-dependent."
+    },
+    {
+      "id": "operation_194b44",
+      "source": "src/objects/operation_194b44.c",
+      "address": "0x8c194b44",
+      "entry": "_operation_194b44",
+      "ranges": [
+        {
+          "offset": 1592132,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194b44",
+          "address": "0x8c194b44",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "boundary_review": "Complete entry through adjacent entry reviewed from raw SH4, including literals and compiler alignment; reconstruction-stage89.",
+      "status": "matched",
+      "reason": "Complete signed widget value or empty dispatch callback range; text setup and static data remain reference-dependent."
+    },
+    {
+      "id": "operation_194c70",
+      "source": "src/objects/operation_194c70.c",
+      "address": "0x8c194c70",
+      "entry": "_operation_194c70",
+      "ranges": [
+        {
+          "offset": 1592432,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194c70",
+          "address": "0x8c194c70",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "boundary_review": "Complete entry through adjacent entry reviewed from raw SH4, including literals and compiler alignment; reconstruction-stage89.",
+      "status": "matched",
+      "reason": "Complete signed widget value or empty dispatch callback range; text setup and static data remain reference-dependent."
     }
   ]
 }

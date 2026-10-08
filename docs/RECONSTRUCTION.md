@@ -4617,3 +4617,53 @@ dispatch, globals and remaining callees retain reference dependence. Compiler,
 base flags and full-range rules remain unchanged. Publication retains all default
 scanner rules and the narrowly verified source-hash exception with its stage-75
 detection control.
+
+
+## Signed widget values and empty callbacks, stage 89
+
+Five complete functions add **608 bytes**: stats update **0x8c194570** (476),
+five signed values **0x8c194838** (120), and empty dispatch callbacks
+**0x8c194988**, **0x8c194b44**, **0x8c194c70** (4 each). Totals are
+**419 functions / 371 modules / 40,132 compiled full-range bytes /
+4,122,780 retained reference bytes**, or **0.9640% whole-image coverage**.
+All 414 previous matches, module definitions and source/header hashes remain
+unchanged. Since the initial checkpoint, 385 functions replace 36,488 bytes.
+Code-only completion remains unknown; separately reconstructed static data is zero.
+
+The stats handler uses two 22-byte signed-value records on a 44-byte stack.
+Aggregate zero initialization emitted an allocated data section and was rejected.
+Explicit initialization follows the observed descending first-six and last-five
+fields; a captured stats pointer recovers the 476-byte length. Maximum-first
+comparisons recover signed halfword load ordering, and a declared selected-actor
+global recovers the final 14 scheduling bytes. Both current-value and maximum-value
+helper calls retain their original order. The current-value call remains outside
+the actor-null guard, as observed; no speculative guard is added.
+
+Checked provisional views cover all accessed actor halfwords, the stats pointer
+at388, row color28/value32, owner table48, and both stack records. Current values
+update six rows with the exact yellow/white comparison branches. The adjacent
+handler preserves its nullable actor lookup and all five signed halfword accesses.
+The three empty dispatch entries are complete RTS/NOP ranges; they are not gaps
+or manually inserted padding.
+
+Text setup **0x8c194468** remains unadmitted at **264/54**, first difference
+**0x8c1944a4**. External string-table storage, shared row variables, table captures,
+and direct calls do not recover the remaining per-call register scheduling.
+Earlier setup **0x8c1942e0** remains **272/25**; pointer-table and C++ frontend
+experiments make no improvement. These failed hypotheses remain in scratch.
+
+All **35 trials** retain sources, hypotheses and comparisons; the aggregate
+initializer trial was rejected before a complete compiler receipt could be made.
+The other trials retain compiler receipts. Final checked sources match twice
+independently. Two fresh exact project builds, integrated image comparison,
+five-function proof and all **53 research tests** pass; the public suite remains
+**58 tests**. Source-only rejects 4,122,780 retained bytes without changing
+artifacts. Focused exports are regenerated on a disposable copy after manifest
+changes and checked against current inputs; the original database is unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Supporting
+matches do not replace those acceptance criteria. Static data and unmatched
+callees retain reference dependence. Compiler, base flags and complete-range
+comparison rules are unchanged. Publication uses the default secret-scanner rules
+with the single verified source-hash exception and stage-75 detection control.

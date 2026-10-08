@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **414 exact functions in 366 modules**, replacing
-**39,524 bytes** of the 4,162,912-byte decoded executable (**0.9494% image coverage**).
-It retains **4,123,388 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **419 exact functions in 371 modules**, replacing
+**40,132 bytes** of the 4,162,912-byte decoded executable (**0.9640% image coverage**).
+It retains **4,122,780 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,14 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 88
+## Latest batch: stage 89
 
-Widget value and child-state callbacks add six functions in five modules,
-replacing 532 bytes. All 408 earlier matches and source/header hashes remain
-unchanged. Since the initial checkpoint, 380 functions replace 35,880 bytes.
-All 45 trials are retained. The second six-case dispatch uses the pinned native
-linker; adjacent child construction/destruction include compiler-made alignment.
-First-case setup remains 272/25. Primary targets remain 512/30 and 388/8;
-widget constructor/notification remain 108/4 and 104/4.
+Signed widget stats, five-value update and three empty dispatch callbacks add
+five functions, replacing 608 bytes. All 414 earlier matches and source/header
+hashes remain unchanged. Since the initial checkpoint, 385 functions replace
+36,488 bytes. All 35 trials are retained. Checked stack records and signed fields
+preserve the reference's initialization and comparison order. Text setup remains
+264/54 and 272/25. Primary targets remain 512/30 and 388/8.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only
