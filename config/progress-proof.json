@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "457969058df5db7a01c5e85362e7215635e5b802d9dc2a02c278919a85ebb1a9",
+    "config/project.json": "803076dd8c4b31b8a575bf5e6045449132d3c7882d726c3978719106eb8fce79",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -106,6 +106,7 @@
     "src/include/controller_child.h": "fb204eb7331167d36b510635ead9ec7bbb15583631f353da80345c69eaf57525",
     "src/include/controller_flags.h": "3fd7b0aa673923f8e8fd179729f64f014c63717bce38bf5ad378cddb459460cd",
     "src/include/effect.h": "14ed3316fb42bac3a8e591e6761a212a4a8d47fc082dee94a19ad13ee880a439",
+    "src/include/effect_child_prefix.h": "a0a5ae12810a0c5c8301a1083dab8c350388ca16c733b77e1db0686bc8e82dd6",
     "src/include/effect_controller.h": "fec34a2514a303280e4189fc34f0d964135d9b9a49b9ff1701bd0e4bc7d414b4",
     "src/include/effect_list_node.h": "a2deaf0f34a1c3714718a083197f53a3001856b7cdcb7f7235ca5ec99cea74de",
     "src/include/effect_manager.h": "07439b751434e7b641fe7a6bd6c6a1f5362185a03d6c88d7ad0850e2d0cf4237",
@@ -165,6 +166,7 @@
     "src/math/cross_xz_negative.c": "8c00fdfc1e36c2e6b7a3175409fa34da182f334636dc9932e34c05fb0269fb81",
     "src/math/destroy_motion_profile.c": "afc21b0aaca0bf96deec8befbce9566ef763cbbd280f765101afc424b9cb74fa",
     "src/math/destroy_running_profile.c": "927ef6ac47e6ac23f51a212a7e5afc4df87035e3d695bd2cfdc8417fc5c1c019",
+    "src/math/distance_xz_root.c": "3e37de878da388616d4f2ae9b6fbb51a00cd005584b9531ee3384a4528362b6b",
     "src/math/evaluate_motion_profile.c": "824425a557ebcfd24f378219741fefd3e6136a4ed27999393bc7e8c5b3529a95",
     "src/math/evaluate_running_profile.c": "91f23750bca88cfba227f4c746eed0bfe6d98552301590e05291fa0ccda36fe0",
     "src/math/float_casts_and_angle.c": "e837ff7c0abaec6a3db3d65dee9d1bd0ea91a594ab4c17b3f62ba4b5249b6277",
@@ -180,6 +182,7 @@
     "src/math/rotate_vector_xz.c": "3f333ba3425ee15575b2bdfa6d7b7ee5484cb29653b28e10bc6667a9df9079cb",
     "src/math/running_profile_velocity.c": "66351798875ac3ca8ac762e463bd9505abf0c1e09251cc44ab5226d9f1a30d39",
     "src/math/scale_by_half_angle.c": "d2bf752885c27909dbb727e27a4f45ed22df52cdf535418ddbfc5743637864ee",
+    "src/math/scale_vector_to_length.c": "d44cd49955db897f98121299a101c182806a1960f9254a67105401d6d352881a",
     "src/math/signed_angle_delta.c": "f087d1109b6b70640633bc9c072ba7e7060192e4b5aafd8c28e3164ee6998014",
     "src/math/squared_distance_xz.c": "f7eeb722a5ef6726c3c2eca39902f82560767ae01fc0c82043976b5fa4420aa0",
     "src/math/step_clamped_angle_velocity.c": "a6306dd922ac576e98f34282afe014bcaec2bbc2b658bda2ed3cffb4572398f6",
@@ -313,6 +316,7 @@
     "src/runtime/operation_0c64ec.c": "8de64aee3296074e20ef5365178c5e54c08287cb8386dc5bb27b8afdbbf42466",
     "src/runtime/operation_0c6530.c": "de270663bab3813c5bca5ce22f7321654911ac188ac610fee2bd992c5841c865",
     "src/runtime/operation_0c656c.c": "790fdbe623d0a21383fbed62d7a96ab89a7587216e917532f1f70cf2decdc97e",
+    "src/runtime/operation_0c67c0.c": "685e0cd18658323af09c40d4960e855ae24181d2eb4c4e1e27c07002b1789396",
     "src/samples/clamp_int.c": "3733940081778d37ed5e05dd3320011094c02637d2ea06aab4b703f91e90a17a",
     "src/samples/distance_xz.c": "0b19755f9b4a04b22e14175a634c3a2109e26f77939f73fcdbe7364f65f1aa09",
     "src/samples/init_bytes.c": "fad10d35a4c4b916c9928bc920492a1cf880496fff9994480ec603fcc0d6037b",
@@ -1257,6 +1261,28 @@
       "-O2"
     ],
     "distance_xz": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "distance_xz_root": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "scale_vector_to_length": [
       "-proc",
       "SH4",
       "-endian",
@@ -3095,6 +3121,17 @@
       "off",
       "-O2"
     ],
+    "operation_0c67c0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "allocate_block": [
       "-proc",
       "SH4",
@@ -3395,6 +3432,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4133096,
+  "source_only_rejected_retained_bytes": 4132896,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

@@ -7023,6 +7023,85 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage68.",
       "status": "matched",
       "reason": "Complete provisional sampling/polling, indexed state or notice operation; retained callees/static data receive no source credit."
+    },
+    {
+      "id": "distance_xz_root",
+      "source": "src/math/distance_xz_root.c",
+      "address": "0x8c03f0b8",
+      "entry": "_distance_xz_root",
+      "ranges": [
+        {
+          "offset": 192696,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "distance_xz_root",
+          "address": "0x8c03f0b8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "1adb035a512cd651a9eb30d6b9143a1390855092b9f4e287b495a5e95f215210",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage69.",
+      "status": "matched",
+      "reason": "Complete vector dependency or nullable child-marking destructor; unresolved initializer and other callees retain reference dependence."
+    },
+    {
+      "id": "scale_vector_to_length",
+      "source": "src/math/scale_vector_to_length.c",
+      "address": "0x8c03f0d8",
+      "entry": "_scale_vector_to_length",
+      "ranges": [
+        {
+          "offset": 192728,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "scale_vector_to_length",
+          "address": "0x8c03f0d8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "99776d88cb92662491762cf3aaff5a91168c46d1c7a240542948d67730e5b534",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage69.",
+      "status": "matched",
+      "reason": "Complete vector dependency or nullable child-marking destructor; unresolved initializer and other callees retain reference dependence."
+    },
+    {
+      "id": "operation_0c67c0",
+      "source": "src/runtime/operation_0c67c0.c",
+      "address": "0x8c0c67c0",
+      "entry": "_operation_0c67c0",
+      "ranges": [
+        {
+          "offset": 747456,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c67c0",
+          "address": "0x8c0c67c0",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "64054eac00af3843c8294eba56d79e3143736fe44f94cbf5aa94e60cb073260e",
+      "headers": [
+        "src/include/controller_flags.h",
+        "src/include/effect_child_prefix.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage69.",
+      "status": "matched",
+      "reason": "Complete vector dependency or nullable child-marking destructor; unresolved initializer and other callees retain reference dependence."
     }
   ]
 }

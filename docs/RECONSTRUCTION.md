@@ -3549,3 +3549,50 @@ unchanged. Original primary targets remain **512/30 and 388/8**, related reuse
 **448/4**, manager initialization **280/8**, and signed remainder unresolved.
 The primary batch is still incomplete; these supporting matches do not replace
 its acceptance criteria.
+
+
+## Vector dependencies and child-marking destructor, stage 69
+
+Three complete ordinary-C functions add **200 bytes**: XZ distance with square
+root at **0x8c03f0b8** (32), vector scaling at **0x8c03f0d8** (80), and the
+child-marking destructor at **0x8c0c67c0** (88). Totals are **300 functions / 278
+modules / 30,016 compiled full-range bytes / 4,132,896 retained reference bytes**,
+or **0.7210% whole-image coverage**. All 297 previous matches, module definitions
+and source/header hashes remain unchanged. Since the initial checkpoint, 266
+functions replace 26,372 bytes. Code-only completion remains unknown; separately
+reconstructed static data is zero.
+
+The distance helper preserves XZ subtraction order, separate squares and its
+square-root tail call. Vector scaling preserves the exact threshold bits
+0x3727c5ac, the strict greater-than comparison, the requested-length/root factor
+and ordered XYZ stores. It returns the original length on the scaling path and
+zero on the other path without modifying the vector. The destructor preserves
+nullable input, dispatch replacement, optional child's flag1, base destruction,
+positive signed-short release flag and original object return. A new checked
+prefix declares only observed dispatch/child offsets and reuses the existing
+checked child-flags header; it does not establish a full allocation layout.
+
+Following these dependencies identifies a **484-byte initializer at 0x8c0c65dc**.
+Its best scratch source remains **484/92**, first **0x8c0c662b**, and receives no
+credit. Baseline ordinary C and C++ both produce 476 bytes. A volatile local
+pointer diagnostic reproduces observed incoming-object stack accesses and size;
+external push/rotation declarations improve scheduling, but aggregate-copy and
+two angle-conversion regions still differ. Plain pointer aliases, arrays,
+aggregate storage, alternate vector-copy forms, angle-record fields and inline
+conversion do not finish it. No partial initializer or unsupported layout is
+integrated. One trial-generation script stopped on its declaration regex before
+creating a lookup experiment; all completed compiler trials retain their receipts.
+
+All **34 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage69`; none were compiler/linker rejections.
+Final admitted sources match independently twice. Identifiers, source paths and
+intervals are checked before integration. Two fresh exact builds, integrated-image
+comparison, five-function proof and all **53 research tests** pass; the public
+suite remains **58 tests**. Source-only rejects 4,132,896 retained bytes without
+changing artifacts. Focused exports are regenerated after manifest/queue changes
+on a disposable copy and checked against current inputs; the original database
+remains unchanged. Compiler, base flags, default linker and full-range rules are
+unchanged. Original primary targets remain **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, and signed remainder unresolved.
+The primary batch is still incomplete; these supporting matches do not replace
+its acceptance criteria.
