@@ -6388,3 +6388,51 @@ Stage 124 commit d57ff81 is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into the template-effect family and initializer dependencies.
+
+
+## Template effect refresh and lifecycle, stage 126
+
+Three new exact functions replace **168 bytes** in three modules. Totals are
+**545 functions / 492 modules / 52,436 compiled bytes / 4,110,476 retained reference
+bytes**, or **1.2596% whole-image coverage**. All 542 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| destroy_template_effect | 0x8c0b3af8 | 68 |
+| template_effect_noop | 0x8c0b3b7c | 4 |
+| refresh_effect_template | 0x8c0b3d98 | 96 |
+
+Refresh copies an entire 64-byte template, converts its signed variant to float,
+stores that value, then stores the conversion dependency's return value. The first
+candidate's narrow indirect lookup argument omits caller sign extension. Widening
+the argument restores the instruction but leaves four register differences; declaring
+the direct lookup recovers the complete range. Destruction and the independently
+listed empty callback match on their first candidates. Checked provisional types
+preserve every accessed offset; the byte/short owner prefix is 34 bytes, corrected
+from an initially rejected 36-byte size assertion without changing its offset 32.
+
+Investigation-only: update_template_effect at 0x8c0b3b3c remains 64 bytes with two
+differences, first 0x8c0b3b4a. Five hypotheses cover narrow/wide indirect calls,
+wide direct calls, the verified unsigned-short direct signature and an explicit
+register-qualified id. Narrow calls leave NOP where EXTU.W R4,R4 is observed;
+wide direct calls normalize through R1. The register local repeats that output.
+It is parked pending an independent exact argument-coalescing pattern or verified
+original caller context. No update bytes receive credit.
+
+The initializer at 0x8c0b39cc remains 288/300 bytes with 279 differences, first
+0x8c0b39d0. Ordinary C retains the effect in R14 instead of the observed stack home;
+actual C++ placement construction produces 320 bytes with 300 differences. It is
+parked after two hypotheses, pending an independently exact constructor stack-home
+and base-call pattern or verified original context. No initializer bytes receive credit.
+
+Twenty-one snapshots include one failed layout assertion; ten successful binary
+groups are recorded. Admissions match twice independently. Two fresh exact builds
+per checkout, exact integrated image, five-function proof, 53 research tests and
+58 public tests pass. Source-only rejects 4,110,476 bytes without altering artifacts.
+Focused exports validate on a disposable copy. Primary targets remain incomplete.
+
+Stage 125 commit 29eb8fb is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into effect-event records and their referenced helpers.

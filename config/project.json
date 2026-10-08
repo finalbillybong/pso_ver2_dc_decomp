@@ -6648,6 +6648,55 @@
       "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125."
     },
     {
+      "id": "destroy_template_effect",
+      "source": "src/effects/destroy_template_effect.c",
+      "address": "0x8c0b3af8",
+      "entry": "_destroy_template_effect",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/template_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 670456,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_template_effect",
+          "address": "0x8c0b3af8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8f946fa6dac7c0918bdff8abc1afea0bfba8c44a02cba28fb31f209a3291afee",
+      "symbols": {},
+      "boundary_review": "Raw template-effect destructor, empty entry and aggregate refresh reviewed through adjacent entries, signed accesses, copy loop, calls, literals and natural alignment. Full range independently checked twice; stage126."
+    },
+    {
+      "id": "template_effect_noop",
+      "source": "src/effects/template_effect_noop.c",
+      "address": "0x8c0b3b7c",
+      "entry": "_template_effect_noop",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 670588,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "template_effect_noop",
+          "address": "0x8c0b3b7c",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "symbols": {},
+      "boundary_review": "Raw template-effect destructor, empty entry and aggregate refresh reviewed through adjacent entries, signed accesses, copy loop, calls, literals and natural alignment. Full range independently checked twice; stage126."
+    },
+    {
       "id": "create_effect_b3b80",
       "source": "src/effects/create_effect_b3b80.c",
       "address": "0x8c0b3b80",
@@ -6751,6 +6800,34 @@
         "__l_mods": "0x8c18e8a0"
       },
       "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125."
+    },
+    {
+      "id": "refresh_effect_template",
+      "source": "src/effects/refresh_effect_template.c",
+      "address": "0x8c0b3d98",
+      "entry": "_refresh_effect_template",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/template_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 671128,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_effect_template",
+          "address": "0x8c0b3d98",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "afad2e91ca3366cd4aee6e8ffc3f66a9a80b46a88461bdd1f7ee182b9b07b32c",
+      "symbols": {
+        "_lookup_at": "0x8c0adc1c"
+      },
+      "boundary_review": "Raw template-effect destructor, empty entry and aggregate refresh reviewed through adjacent entries, signed accesses, copy loop, calls, literals and natural alignment. Full range independently checked twice; stage126."
     },
     {
       "id": "extra_b6394",
