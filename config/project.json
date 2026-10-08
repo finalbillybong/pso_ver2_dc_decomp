@@ -1140,6 +1140,32 @@
       ]
     },
     {
+      "id": "visit_object_links",
+      "source": "src/objects/visit_object_links.c",
+      "address": "0x8c0276b0",
+      "entry": "_visit_object_links",
+      "headers": [],
+      "symbols": {
+        "_visit_at": "0x8c02a94c",
+        "_callback_at": "0x8c0276c0"
+      },
+      "ranges": [
+        {
+          "offset": 95920,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "visit_object_links",
+          "address": "0x8c0276b0",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "e0039d9a52c9d210e7df1fcd48715b1d5ad94c6004178124259daedff688756d",
+      "boundary_review": "Wrapper raw entry, JMP delay, complete pools and adjacent entry reviewed; full callee bodies establish input and return signature. Lookup callee remains unmatched and gets no completion credit."
+    },
+    {
       "id": "init_bytes",
       "address": "0x8c027cd4",
       "source": "src/samples/init_bytes.c",
@@ -6374,6 +6400,34 @@
       ],
       "reference_sha256": "f052f992baca060798f05681690912b5e426d250b2cb36cf07a7cf48166c6999",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "change_signed_mode",
+      "source": "src/objects/change_signed_mode.c",
+      "address": "0x8c04c3e8",
+      "entry": "_change_signed_mode",
+      "headers": [],
+      "symbols": {
+        "_reset_at": "0x8c04c604",
+        "_clear_at": "0x8c04c5f0",
+        "_apply_at": "0x8c04c448",
+        "_refresh_at": "0x8c04c4d8"
+      },
+      "ranges": [
+        {
+          "offset": 246760,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "change_signed_mode",
+          "address": "0x8c04c3e8",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "b82f1201d0f4c81fefaff747379b4b3047b97836b63a8eeb9181839da34a634c",
+      "boundary_review": "Raw entry through return, referenced pool and next independent entry reviewed. Callee156d14 reads two floats and integer argument; callback276c0 consumes one object pointer. Signed negative lookup remains unchecked; child transfer uses addition of negative five."
     },
     {
       "id": "destroy_effect_d870_8c04f904",
@@ -14804,6 +14858,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "forward_scene_record",
+      "source": "src/objects/forward_scene_record.c",
+      "address": "0x8c0bb998",
+      "entry": "_forward_scene_record",
+      "headers": [],
+      "symbols": {
+        "_lookup_at": "0x8c032a08"
+      },
+      "ranges": [
+        {
+          "offset": 702872,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_scene_record",
+          "address": "0x8c0bb998",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "8c8cb45b4bd45b2e365b5a742b74cae21ee829303894c3c8f21f2b3c51f32757",
+      "boundary_review": "Wrapper raw entry, JMP delay, complete pools and adjacent entry reviewed; full callee bodies establish input and return signature. Lookup callee remains unmatched and gets no completion credit."
+    },
+    {
       "id": "destroy_context_8c0bbb98",
       "source": "src/objects/destroy_context_8c0bbb98.c",
       "address": "0x8c0bbb98",
@@ -19277,6 +19356,31 @@
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436e07d0. No empty neighboring function included."
     },
     {
+      "id": "request_resource_release",
+      "source": "src/resources/request_resource_release.c",
+      "address": "0x8c0dc7f4",
+      "entry": "_request_resource_release",
+      "headers": [],
+      "symbols": {
+        "_emit_at": "0x8c05fbf8"
+      },
+      "ranges": [
+        {
+          "offset": 837620,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_resource_release",
+          "address": "0x8c0dc7f4",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "bf06320b2cf89202834366c4cf689894681aa532260a5493c56acc8357a9ccf6",
+      "boundary_review": "Full raw callee body reviewed during prior destructor ABI analysis; return delay, complete referenced pool and adjacent entry checked. No speculative release or null-check changes."
+    },
+    {
       "id": "refresh_follow_effect_8c0dcdd8",
       "source": "src/effects/refresh_follow_effect_8c0dcdd8.c",
       "address": "0x8c0dcdd8",
@@ -19321,6 +19425,147 @@
       ],
       "reference_sha256": "e65a237a342dd397fb2c82ae3520a8bc18877ebf8dcded86ade49f885b276eeb",
       "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "clip_and_scale_rectangle",
+      "source": "src/math/clip_and_scale_rectangle.c",
+      "address": "0x8c0de664",
+      "entry": "_clip_and_scale_rectangle",
+      "headers": [],
+      "symbols": {
+        "_clip_at": "0x8c0de698",
+        "_scale_at": "0x8c0de7d4"
+      },
+      "ranges": [
+        {
+          "offset": 845412,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "clip_and_scale_rectangle",
+          "address": "0x8c0de664",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "2a1e97f1164f8dd61559d930e35fe9ac7281bbdf45fe65828b6f25273463e75a",
+      "boundary_review": "Contiguous reviewed entries0de560/664/698/778/7a0/7bc/7d4 establish exact boundaries. No catalog gap assumed; small entries and all floating literals decoded directly."
+    },
+    {
+      "id": "clip_rectangle_quad",
+      "source": "src/math/clip_rectangle_quad.c",
+      "address": "0x8c0de698",
+      "entry": "_clip_rectangle_quad",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 845464,
+          "size": 224
+        }
+      ],
+      "functions": [
+        {
+          "name": "clip_rectangle_quad",
+          "address": "0x8c0de698",
+          "size": 224
+        }
+      ],
+      "reference_sha256": "fd7ffab6581b8641ca7215f18da445870fe461cd30a2e79401a358e4b1004da8",
+      "boundary_review": "Contiguous reviewed entries0de560/664/698/778/7a0/7bc/7d4 establish exact boundaries. No catalog gap assumed; small entries and all floating literals decoded directly."
+    },
+    {
+      "id": "adjust_rectangle_top",
+      "source": "src/math/adjust_rectangle_top.c",
+      "address": "0x8c0de778",
+      "entry": "_adjust_rectangle_top",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 845688,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "adjust_rectangle_top",
+          "address": "0x8c0de778",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "e0cc5097fc859f0ee17dac8c85d17dbbe3814cb8e2999f1c3ff24ae06f3dcf3a",
+      "boundary_review": "Contiguous reviewed entries0de560/664/698/778/7a0/7bc/7d4 establish exact boundaries. No catalog gap assumed; small entries and all floating literals decoded directly."
+    },
+    {
+      "id": "adjust_rectangle_right",
+      "source": "src/math/adjust_rectangle_right.c",
+      "address": "0x8c0de7a0",
+      "entry": "_adjust_rectangle_right",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 845728,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "adjust_rectangle_right",
+          "address": "0x8c0de7a0",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "893a8a7bb20f916df5252c017fe2c0f23fb2a903bdf45762eefa07c12794afe3",
+      "boundary_review": "Contiguous reviewed entries0de560/664/698/778/7a0/7bc/7d4 establish exact boundaries. No catalog gap assumed; small entries and all floating literals decoded directly."
+    },
+    {
+      "id": "set_rectangle_clip",
+      "source": "src/math/set_rectangle_clip.c",
+      "address": "0x8c0de7bc",
+      "entry": "_set_rectangle_clip",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 845756,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_rectangle_clip",
+          "address": "0x8c0de7bc",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "212e0f4d1c92d767469af92de3218e33e9747ae20a055080d8948520a9d711fd",
+      "boundary_review": "Contiguous reviewed entries0de560/664/698/778/7a0/7bc/7d4 establish exact boundaries. No catalog gap assumed; small entries and all floating literals decoded directly."
+    },
+    {
+      "id": "scale_rectangle_fields",
+      "source": "src/math/scale_rectangle_fields.c",
+      "address": "0x8c0de7d4",
+      "entry": "_scale_rectangle_fields",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 845780,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "scale_rectangle_fields",
+          "address": "0x8c0de7d4",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "b4f4ad59b1aff4b55d744b962591e88fa1c826b2eb7b5e29d4a1e079499234b6",
+      "boundary_review": "Raw normalized leaf ends at104c28 including256.0 literal; scale leaf ends0de834 before independent saved-FR prologue. No neighboring code admitted."
     },
     {
       "id": "destroy_field_8c0e14bc",
@@ -20594,6 +20839,34 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "clear_global_render_resources",
+      "source": "src/resources/clear_global_render_resources.c",
+      "address": "0x8c1004cc",
+      "entry": "_clear_global_render_resources",
+      "headers": [],
+      "symbols": {
+        "_release_at": "0x8c35049c",
+        "_state_a": "0x8c4d528c",
+        "_state_b": "0x8c4d518c",
+        "_state_c": "0x8c4d5190"
+      },
+      "ranges": [
+        {
+          "offset": 984268,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_global_render_resources",
+          "address": "0x8c1004cc",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "a406fdec64388abf6c037010cb8bfb13f684393d8456de4cafb9ed0a2b0f62d6",
+      "boundary_review": "Full raw callee body reviewed during prior destructor ABI analysis; return delay, complete referenced pool and adjacent entry checked. No speculative release or null-check changes."
+    },
+    {
       "id": "destroy_object_8c100c38",
       "source": "src/effects/destroy_object_8c100c38.c",
       "address": "0x8c100c38",
@@ -20871,6 +21144,52 @@
       ],
       "reference_sha256": "e88e7c87b1d5a9e677e61f79372ef8dc0ed3402927c055ffc1a89822aa2b14ea",
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "normalize_rectangle_fields",
+      "source": "src/math/normalize_rectangle_fields.c",
+      "address": "0x8c104bec",
+      "entry": "_normalize_rectangle_fields",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1002476,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "normalize_rectangle_fields",
+          "address": "0x8c104bec",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "2afc0f573dab40caf6ae0f0ca5597b04997ff8ef0101afa63b345a364210b87b",
+      "boundary_review": "Raw normalized leaf ends at104c28 including256.0 literal; scale leaf ends0de834 before independent saved-FR prologue. No neighboring code admitted."
+    },
+    {
+      "id": "set_normalized_rectangle",
+      "source": "src/math/set_normalized_rectangle.c",
+      "address": "0x8c104c28",
+      "entry": "_set_normalized_rectangle",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1002536,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_normalized_rectangle",
+          "address": "0x8c104c28",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "56f48146345b4b976d200dd544feed962f863f8cfda5535acf9a4c85196591e0",
+      "boundary_review": "Raw full entries and referenced pools reviewed. Grid ends1884/47bc have saved-FR adjacent prologues; interpolation ends1f26b8 at next GPR-save prologue; setter ends104c40 at separately referenced adjacent entry."
     },
     {
       "id": "clear_global_8c104d84",
@@ -23281,6 +23600,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "advance_scaled_position",
+      "source": "src/math/advance_scaled_position.c",
+      "address": "0x8c137bcc",
+      "entry": "_advance_scaled_position",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1211340,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "advance_scaled_position",
+          "address": "0x8c137bcc",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "a8dc61a069cf2a97eba2b47d04fd3e84676ccfa79c6c96496de62959fc6e8d7f",
+      "boundary_review": "Raw complete body and every referenced literal endpoint:137bcc..137c3c and18a330..18a398. Hidden aggregate-return convention inferred from final three-word copy through incoming stack pointer."
+    },
+    {
       "id": "destroy_object_8c137f78",
       "source": "src/effects/destroy_object_8c137f78.c",
       "address": "0x8c137f78",
@@ -23468,6 +23812,31 @@
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62fc62f436d. No empty neighboring function included."
     },
     {
+      "id": "release_optional_member",
+      "source": "src/resources/release_optional_member.c",
+      "address": "0x8c13ee5c",
+      "entry": "_release_optional_member",
+      "headers": [],
+      "symbols": {
+        "_release_at": "0x8c18de08"
+      },
+      "ranges": [
+        {
+          "offset": 1240668,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_optional_member",
+          "address": "0x8c13ee5c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "8591941c02eeaed9c3c01ac1f6ceaf3a8511c6b5f9ad2ecd8c3da1dcfe2a83df",
+      "boundary_review": "Full raw callee body reviewed during prior destructor ABI analysis; return delay, complete referenced pool and adjacent entry checked. No speculative release or null-check changes."
+    },
+    {
       "id": "destroy_context_8c140270",
       "source": "src/objects/destroy_context_8c140270.c",
       "address": "0x8c140270",
@@ -23587,6 +23956,31 @@
       "reference_sha256": "00667fd6fed9d56ab0812c442012c51027e66780fff4ac1f19b621aa60088116",
       "symbols": {},
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
+    },
+    {
+      "id": "forward_child_transfer",
+      "source": "src/objects/forward_child_transfer.c",
+      "address": "0x8c145178",
+      "entry": "_forward_child_transfer",
+      "headers": [],
+      "symbols": {
+        "_transfer_at": "0x8c1857f4"
+      },
+      "ranges": [
+        {
+          "offset": 1266040,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_child_transfer",
+          "address": "0x8c145178",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "1b1205643d7bf690846f407d4ced85ba443e820b8e7d1276f5fbb6da4860e22e",
+      "boundary_review": "Wrapper raw entry, JMP delay, complete pools and adjacent entry reviewed; full callee bodies establish input and return signature. Lookup callee remains unmatched and gets no completion credit."
     },
     {
       "id": "destroy_object_8c14b6cc",
@@ -26540,6 +26934,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "transfer_lowered_children",
+      "source": "src/objects/transfer_lowered_children.c",
+      "address": "0x8c1857f4",
+      "entry": "_transfer_lowered_children",
+      "headers": [],
+      "symbols": {
+        "_reparent_at": "0x8c0333fc"
+      },
+      "ranges": [
+        {
+          "offset": 1529844,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "transfer_lowered_children",
+          "address": "0x8c1857f4",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "b4440a4de06952bade60ac97502f9c96051b83180911ff4004315ccf5ff5a50f",
+      "boundary_review": "Raw entry through return, referenced pool and next independent entry reviewed. Callee156d14 reads two floats and integer argument; callback276c0 consumes one object pointer. Signed negative lookup remains unchecked; child transfer uses addition of negative five."
+    },
+    {
       "id": "destroy_object_8c185990",
       "source": "src/effects/destroy_object_8c185990.c",
       "address": "0x8c185990",
@@ -26717,6 +27136,33 @@
       ],
       "reference_sha256": "434969c406a52ef8682690740830941d2ffeccd0bdbc8c9266ee2745abf32e13",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "read_projected_position",
+      "source": "src/math/read_projected_position.c",
+      "address": "0x8c18a330",
+      "entry": "_read_projected_position",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_projection": "0x8c46ee84"
+      },
+      "ranges": [
+        {
+          "offset": 1549104,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "read_projected_position",
+          "address": "0x8c18a330",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "5616879555f7310da4fe22ac47ee768340ef52e4f5b9fa789392d06b7bf1b3f0",
+      "boundary_review": "Raw complete body and every referenced literal endpoint:137bcc..137c3c and18a330..18a398. Hidden aggregate-return convention inferred from final three-word copy through incoming stack pointer."
     },
     {
       "id": "destroy_object_8c18a9dc",
@@ -31028,6 +31474,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "grid_position_8c1b1814",
+      "source": "src/math/grid_position_8c1b1814.c",
+      "address": "0x8c1b1814",
+      "entry": "_grid_position_8c1b1814",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1710100,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "grid_position_8c1b1814",
+          "address": "0x8c1b1814",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "89d5b9b80a164864a7c4324f0f39adaaa6cce01314edda91df53f6e0425fe692",
+      "boundary_review": "Raw full entries and referenced pools reviewed. Grid ends1884/47bc have saved-FR adjacent prologues; interpolation ends1f26b8 at next GPR-save prologue; setter ends104c40 at separately referenced adjacent entry."
+    },
+    {
       "id": "set_field_8c1b2014",
       "source": "src/objects/set_field_8c1b2014.c",
       "address": "0x8c1b2014",
@@ -31098,6 +31567,29 @@
       "reference_sha256": "21dc763048da29627c65dabd70c706464310c97d9325284b6f8e6fb70cda4b86",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "grid_position_8c1b474c",
+      "source": "src/math/grid_position_8c1b474c.c",
+      "address": "0x8c1b474c",
+      "entry": "_grid_position_8c1b474c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1722188,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "grid_position_8c1b474c",
+          "address": "0x8c1b474c",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "4d49154664eb24a298bbbcf421b4edd9976219463a0a313ee0a1bb2c7e7214fa",
+      "boundary_review": "Raw full entries and referenced pools reviewed. Grid ends1884/47bc have saved-FR adjacent prologues; interpolation ends1f26b8 at next GPR-save prologue; setter ends104c40 at separately referenced adjacent entry."
     },
     {
       "id": "set_field_8c1b5048",
@@ -32143,6 +32635,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_default_configured_object",
+      "source": "src/objects/create_default_configured_object.c",
+      "address": "0x8c1d4590",
+      "entry": "_create_default_configured_object",
+      "headers": [],
+      "symbols": {
+        "_create_at": "0x8c2070f0"
+      },
+      "ranges": [
+        {
+          "offset": 1852816,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_default_configured_object",
+          "address": "0x8c1d4590",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "23a150e93393f5534bea69649480a8f75bc084fa419f0ec17af547841c24359a",
+      "boundary_review": "Wrapper raw entry, JMP delay, complete pools and adjacent entry reviewed; full callee bodies establish input and return signature. Lookup callee remains unmatched and gets no completion credit."
+    },
+    {
       "id": "destroy_object_8c1d4cdc",
       "source": "src/effects/destroy_object_8c1d4cdc.c",
       "address": "0x8c1d4cdc",
@@ -33008,6 +33525,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "interpolate_vector_by_pointer",
+      "source": "src/math/interpolate_vector_by_pointer.c",
+      "address": "0x8c1f2680",
+      "entry": "_interpolate_vector_by_pointer",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1975936,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "interpolate_vector_by_pointer",
+          "address": "0x8c1f2680",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "f9619f55974bc36342a821a025273188d50ff6eaf143764d3fdd3d9fa1e19e11",
+      "boundary_review": "Raw full entries and referenced pools reviewed. Grid ends1884/47bc have saved-FR adjacent prologues; interpolation ends1f26b8 at next GPR-save prologue; setter ends104c40 at separately referenced adjacent entry."
+    },
+    {
       "id": "destroy_object_8c206c7c",
       "source": "src/effects/destroy_object_8c206c7c.c",
       "address": "0x8c206c7c",
@@ -33058,6 +33600,33 @@
       ],
       "reference_sha256": "abf9d379c5f90a34c308293046d7a186867389412bb0c1c7c9cfd329b5e4308f",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_configured_object",
+      "source": "src/objects/create_configured_object.c",
+      "address": "0x8c2070f0",
+      "entry": "_create_configured_object",
+      "headers": [],
+      "symbols": {
+        "_configure_at": "0x8c156d14",
+        "_allocate_at": "0x8c122700",
+        "_initialize_at": "0x8c206ee4"
+      },
+      "ranges": [
+        {
+          "offset": 2060528,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_configured_object",
+          "address": "0x8c2070f0",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "148deb954ec5b5e5be812ae45503dc14b760027c77d66fd36b416cb240708b30",
+      "boundary_review": "Raw entry through return, referenced pool and next independent entry reviewed. Callee156d14 reads two floats and integer argument; callback276c0 consumes one object pointer. Signed negative lookup remains unchecked; child transfer uses addition of negative five."
     },
     {
       "id": "destroy_object_8c2083b4",
@@ -33222,6 +33791,31 @@
       ],
       "reference_sha256": "fbaf8e1a465f99f31710a27f7f09e6c5817c31fed9919742978d71a8c997e413",
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62fc62f436d. No empty neighboring function included."
+    },
+    {
+      "id": "release_resource_member_arrays",
+      "source": "src/resources/release_resource_member_arrays.c",
+      "address": "0x8c2110d8",
+      "entry": "_release_resource_member_arrays",
+      "headers": [],
+      "symbols": {
+        "_release_at": "0x8c0dc7f4"
+      },
+      "ranges": [
+        {
+          "offset": 2101464,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_resource_member_arrays",
+          "address": "0x8c2110d8",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "3758f01344e2025aa8ba2b3bd4fd28360ba83040b805a837312e5e94e9a8f0a1",
+      "boundary_review": "Full raw callee body reviewed during prior destructor ABI analysis; return delay, complete referenced pool and adjacent entry checked. No speculative release or null-check changes."
     },
     {
       "id": "destroy_object_8c215060",
@@ -34440,6 +35034,31 @@
       ],
       "reference_sha256": "67919d69ed262bb0f2f50cd08fb10c5d737dfb047591cd5d7867674187e1935f",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "forward_signed_mode",
+      "source": "src/objects/forward_signed_mode.c",
+      "address": "0x8c227398",
+      "entry": "_forward_signed_mode",
+      "headers": [],
+      "symbols": {
+        "_change_at": "0x8c04c3e8"
+      },
+      "ranges": [
+        {
+          "offset": 2192280,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_signed_mode",
+          "address": "0x8c227398",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "36aa9bf75d2367f90f09fa2a113d702614a631ac6698cca0f18e00678188884d",
+      "boundary_review": "Wrapper raw entry, JMP delay, complete pools and adjacent entry reviewed; full callee bodies establish input and return signature. Lookup callee remains unmatched and gets no completion credit."
     },
     {
       "id": "destroy_object_8c227860",

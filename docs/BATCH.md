@@ -1,79 +1,47 @@
-# Reconstruction batch: 172: proven reconstruction families
+# Reconstruction batch: 173: proven reconstruction families
 
-59 new matching functions / 4,112 bytes. All 1654 prior functions preserved.
+25 new matching functions / 1,724 bytes. All 1713 prior functions preserved.
 
-1713 exact functions in 1655 modules; 125,264 compiled function-range bytes; 0 reconstructed data bytes; 4,037,648 retained reference bytes. Whole-image coverage 3.0090% is not code completion.
+1738 exact functions in 1680 modules; 126,988 compiled function-range bytes; 0 reconstructed data bytes; 4,035,924 retained reference bytes. Whole-image coverage 3.0505% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| destroy_virtual_context_8c010edc | 0x8c010edc | 88 |
-| destroy_virtual_context_8c01116c | 0x8c01116c | 88 |
-| forward_reviewed_8c01c2a0 | 0x8c01c2a0 | 16 |
-| destroy_context_8c03c454 | 0x8c03c454 | 76 |
-| forward_reviewed_8c03f1bc | 0x8c03f1bc | 16 |
-| destroy_context_8c03f2e8 | 0x8c03f2e8 | 76 |
-| destroy_context_8c04fee4 | 0x8c04fee4 | 76 |
-| destroy_context_8c051f28 | 0x8c051f28 | 84 |
-| destroy_context_8c084258 | 0x8c084258 | 88 |
-| destroy_virtual_context_8c0888e0 | 0x8c0888e0 | 92 |
-| destroy_context_8c0a127c | 0x8c0a127c | 76 |
-| forward_reviewed_8c0a36ec | 0x8c0a36ec | 12 |
-| destroy_context_8c0a47dc | 0x8c0a47dc | 76 |
-| destroy_context_8c0b9ce8 | 0x8c0b9ce8 | 96 |
-| destroy_context_8c0bbb98 | 0x8c0bbb98 | 88 |
-| destroy_context_8c0db244 | 0x8c0db244 | 88 |
-| forward_reviewed_8c0e9ac4 | 0x8c0e9ac4 | 32 |
-| forward_reviewed_8c0e9ae4 | 0x8c0e9ae4 | 32 |
-| check_resource_table_lengths | 0x8c0e9b04 | 132 |
-| destroy_context_8c0e9c78 | 0x8c0e9c78 | 76 |
-| destroy_context_8c0f34a0 | 0x8c0f34a0 | 76 |
-| destroy_context_8c0f7db4 | 0x8c0f7db4 | 76 |
-| destroy_context_8c0fb0d0 | 0x8c0fb0d0 | 96 |
-| relocate_resource_trailer | 0x8c104e00 | 60 |
-| relocate_resource_header | 0x8c104e3c | 52 |
-| forward_reviewed_8c104e7c | 0x8c104e7c | 16 |
-| forward_reviewed_8c104e8c | 0x8c104e8c | 16 |
-| load_named_resource | 0x8c104f68 | 144 |
-| destroy_context_8c11208c | 0x8c11208c | 76 |
-| destroy_context_8c11dc84 | 0x8c11dc84 | 88 |
-| destroy_context_8c120328 | 0x8c120328 | 76 |
-| destroy_context_8c127918 | 0x8c127918 | 76 |
-| destroy_context_8c13c24c | 0x8c13c24c | 76 |
-| destroy_context_8c13e8ac | 0x8c13e8ac | 76 |
-| destroy_context_8c140270 | 0x8c140270 | 76 |
-| destroy_context_8c1505b0 | 0x8c1505b0 | 76 |
-| destroy_context_8c15107c | 0x8c15107c | 76 |
-| destroy_context_8c15a9dc | 0x8c15a9dc | 76 |
-| destroy_context_8c1658c4 | 0x8c1658c4 | 76 |
-| destroy_context_8c174a10 | 0x8c174a10 | 76 |
-| destroy_context_8c174ed0 | 0x8c174ed0 | 76 |
-| destroy_context_8c191b38 | 0x8c191b38 | 96 |
-| destroy_context_8c198f08 | 0x8c198f08 | 104 |
-| destroy_context_8c1ccd60 | 0x8c1ccd60 | 104 |
-| destroy_context_8c1d57d0 | 0x8c1d57d0 | 88 |
-| destroy_context_8c1dbd44 | 0x8c1dbd44 | 104 |
-| forward_reviewed_8c1e608c | 0x8c1e608c | 16 |
-| forward_reviewed_8c1e62f0 | 0x8c1e62f0 | 16 |
-| destroy_context_8c21108c | 0x8c21108c | 76 |
-| destroy_context_8c215cdc | 0x8c215cdc | 96 |
-| destroy_context_8c21e478 | 0x8c21e478 | 88 |
-| load_global_resource_8c21edc8 | 0x8c21edc8 | 32 |
-| forward_reviewed_8c2213dc | 0x8c2213dc | 16 |
-| destroy_context_8c2248d0 | 0x8c2248d0 | 104 |
-| destroy_context_8c22b6d0 | 0x8c22b6d0 | 76 |
-| load_global_resource_8c2327cc | 0x8c2327cc | 32 |
-| destroy_context_8c250714 | 0x8c250714 | 88 |
-| forward_reviewed_8c282d60 | 0x8c282d60 | 16 |
-| forward_reviewed_8c28455c | 0x8c28455c | 16 |
+| visit_object_links | 0x8c0276b0 | 16 |
+| change_signed_mode | 0x8c04c3e8 | 96 |
+| forward_scene_record | 0x8c0bb998 | 12 |
+| request_resource_release | 0x8c0dc7f4 | 96 |
+| clip_and_scale_rectangle | 0x8c0de664 | 52 |
+| clip_rectangle_quad | 0x8c0de698 | 224 |
+| adjust_rectangle_top | 0x8c0de778 | 40 |
+| adjust_rectangle_right | 0x8c0de7a0 | 28 |
+| set_rectangle_clip | 0x8c0de7bc | 24 |
+| scale_rectangle_fields | 0x8c0de7d4 | 96 |
+| clear_global_render_resources | 0x8c1004cc | 88 |
+| normalize_rectangle_fields | 0x8c104bec | 60 |
+| set_normalized_rectangle | 0x8c104c28 | 24 |
+| advance_scaled_position | 0x8c137bcc | 112 |
+| release_optional_member | 0x8c13ee5c | 32 |
+| forward_child_transfer | 0x8c145178 | 12 |
+| transfer_lowered_children | 0x8c1857f4 | 56 |
+| read_projected_position | 0x8c18a330 | 104 |
+| grid_position_8c1b1814 | 0x8c1b1814 | 112 |
+| grid_position_8c1b474c | 0x8c1b474c | 112 |
+| create_default_configured_object | 0x8c1d4590 | 16 |
+| interpolate_vector_by_pointer | 0x8c1f2680 | 56 |
+| create_configured_object | 0x8c2070f0 | 64 |
+| release_resource_member_arrays | 0x8c2110d8 | 180 |
+| forward_signed_mode | 0x8c227398 | 12 |
 
-The batch adds 41 destructor functions (3,440 bytes), four resource-table/loading/relocation functions (388 bytes), and 14 reviewed forwarding wrappers (284 bytes). All ranges include their complete literals and natural alignment. Three destructors use ordinary C++ virtual calls with checked provisional layouts. Static-data reconstruction adds zero bytes.
+The batch adds 25 complete exact functions / 1,724 compiled function-range bytes: rectangle clipping/scaling and setters, grid/vector/position operations, resource release helpers, three object/mode callees and five ABI-reviewed wrappers. Reconstructed static data adds zero bytes. All 1,713 prior matching functions and source/header hashes are preserved. Total: 1,738 exact functions / 1,680 modules / 126,988 compiled function-range bytes / 4,035,924 retained reference bytes. Whole-image coverage is not code-completion percentage; the code-only denominator remains unknown.
 
-Cheap trials used 77 distinct hypotheses and 78 compiler attempts, with seven duplicate outputs and 2.342 seconds of measured compiler execution. One invalid attempt came from an overbroad local-declaration substitution that changed a checked header; offset checks rejected it, and the corrected source matched under the same hypothesis. A separate generator syntax error stopped before any compilation. These errors add no progress. Integration independently reproduced all 59 matches twice (118 additional compiler runs).
+Candidate work used 52 distinct hypotheses / 53 compiler attempts, including one rejected C90 declaration-order attempt corrected under the same hypothesis. Five duplicate outputs were grouped automatically. Recorded compilation totaled 1.650 seconds. Twenty-five new matches reproduced twice for admission. An avoidable rediscovery of already-matched object_visit consumed three hypotheses, and the admission overlap guard stopped an initial pass after 16 additional reproductions, before source or manifest writes. The rediscovery receives no progress credit. A small scratch preflight now rejects range overlaps regardless of identifier before compilation; its negative check rejects this exact failure. No public tools or compiler settings changed.
 
-The workflow reused the trial, comparison, output-grouping, integration, verification and publication tools. The scratch family scanner gained an input for already-exact trial templates, allowing family screening before integration without modifying the project manifest. A small reviewed destructor generator handles the newly observed cleanup sequences and checked field offsets. This tooling work is separate from reconstructed bytes. No compiler settings or public tools changed.
+Nine targets remain parked with cumulative counts and specific revisit conditions. Proximity collectors remain 120/42 and 132-of 128/112; segment-radius remains 104/12; rectangle initialization remains 272-of 260/244; packed color update best 256-of 260/218; nearest-entry search 272/99; indexed vertical placement 104/13; quad row placement 88/44. Each used two or three hypotheses. Scene-record lookup stopped after one credible hypothesis at 32-of 36/13: return scheduling removes the expected natural alignment. Its ABI-reviewed wrapper matched, but the callee remains incomplete. The original primary targets also remain unresolved.
 
-The action-selection target remains 452 bytes / 33 differing after three hypotheses. The level reader remains 56 generated / 72 expected, 66 differing, after two identical-output hypotheses. The paired-resource loader remains 224 bytes / 18 differing after two identical-output hypotheses. Both decode wrappers remain four bytes off (132-byte and 108-byte complete ranges), with three identical-output hypotheses each. All five are explicitly parked with cumulative counts and evidence-based revisit conditions. The original primary targets remain unresolved; supporting matches do not resolve them.
+Scoped float-bound temporaries proved exact in clipping and enabled the related scaling function. An extern global aggregate restored projected-vector getter addressing. Related-family screens reused exact candidate templates and found only one further normalized-rectangle setter; completed unchanged screens were not rerun. These compiler observations and the preflight improvement are investigation/tooling work, separate from reconstructed bytes.
 
-Verification ran once for this integration: two fresh exact builds in each checkout, four integrated-image comparisons, both five-function proofs, 58 research tests plus 63 public tests, and source-only rejection with unchanged-artifact guards. All 1,654 prior exact functions and their source/header provenance were preserved. New focused exports cover only the 59 additions and five newly parked targets; unchanged primary-target evidence was reused.
+Verification ran once for this integration: two fresh exact builds per checkout, four integrated-image comparisons, both five-function proofs, 58 research plus 63 public tests, and source-only rejection with unchanged-artifact guards. All passed. Focused exports cover 25 new ranges and 9 parked targets; unchanged primary-target evidence was reused after checking its inputs.
 
-Measured verification performed 6,620 module comparisons for 4,112 new bytes: 1.61 comparisons per byte, versus 6.48 in the five-batch baseline. Research verification took 100.757 seconds and public verification 102.996 seconds, running concurrently. The baseline had 38 hypotheses / 19 functions / 1,936 bytes across five batches, 20 fresh builds and 555 test executions; this batch has 77 hypotheses / 59 functions / 4,112 bytes, four builds and 121 tests. This improves measured integration overhead, but does not establish token or financial savings: token/cost records and comparable historical timings are unavailable. Whole-image coverage is not code-completion percentage; the code-only denominator remains unknown.
+Full verification performed 6,720 module comparisons for 1,724 new bytes: 3.90 per byte versus 6.48 in baseline batches 156–160 and 1.61 in batch 172. This improves on the original baseline but is less efficient than the preceding 4 KiB batch. Research/public verification took 102.744/104.937 seconds, run concurrently. The sampled baseline used 38 hypotheses / 19 matches / 1,936 bytes / 20 full builds / 555 test executions; this batch used 52 / 25 / 1,724 / 4 / 121, plus the wasted admission work disclosed above. Token/cost records and comparable baseline timings remain unavailable; no financial or token saving is claimed.
+
+This batch meets the 20–50-function collection target but is below the preferred 4 KiB. Simple family opportunities are exhausted for these templates. Next work should prioritize larger initialization contexts and use the range preflight before trials, keeping two-or-three-hypothesis parking and avoiding further isolated float-register substitutions. Reproduce with tools/reconstruct.py verify after configuring the checkout per BUILDING.md; tools/dossier.py --check validates retained focused receipts without re-exporting.
