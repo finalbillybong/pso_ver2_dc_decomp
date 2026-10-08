@@ -6662,3 +6662,45 @@ Stage 130 commit ca6706c is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into actor position reset and neighboring effects/helpers.
+
+
+## Actor motion and offset-effect controls, stage 132
+
+Seven new exact functions replace **400 bytes** in five modules. Totals are
+**583 functions / 527 modules / 54,836 compiled bytes / 4,108,076 retained reference
+bytes**, or **1.3173% whole-image coverage**. All 576 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| reset_actor_motion | 0x8c0c7f20 | 164 |
+| enter_actor_mode_9 | 0x8c0c9114 | 32 |
+| set_actor_raised_position | 0x8c0c9174 | 80 |
+| initialize_offset_effect | 0x8c0ccdc0 | 80 |
+| activate_offset_effect | 0x8c0cce10 | 8 |
+| activate_offset_effect_immediately | 0x8c0cce18 | 12 |
+| offset_effect_threshold_reached | 0x8c0cce24 | 24 |
+
+All first candidates match. Motion reset copies origin into position, clears
+three velocity floats, passes a stack copy to virtual slot 436, updates flag
+0x800 from the result and calls the observed finalizer. It extends the independently
+matched actor virtual layout; accessed offsets and total prefix size are checked.
+The signed mode helper requests mode 9 only when needed. Raised-position copying
+adds 22 to the base Y component and then copies the complete position to its cache.
+
+Offset-effect initialization preserves the chained negative-30 assignments,
+conditional allocation/initialization of an 84-byte child and final zero store.
+Three genuine adjacent control functions share a module, supplying their natural
+alignment. The threshold test is the negation of less-than negative 10, preserving
+its unordered floating-point behavior. No bytes or stores were added for padding.
+
+Fifteen snapshots form five binary groups. All checked admissions independently
+match twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,108,076 bytes without changing build artifacts. Focused exports validate on a
+disposable copy. All parked targets retain their counts and revisit conditions.
+
+Stage 131 commit 406d2a9 is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into node-array lifecycle and its counting/filling helpers.

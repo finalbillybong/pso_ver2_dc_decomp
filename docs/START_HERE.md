@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **576 exact functions in 522 modules**, replacing
-**54,436 bytes** of the 4,162,912-byte decoded executable (**1.3076% image coverage**).
-It retains **4,108,476 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **583 exact functions in 527 modules**, replacing
+**54,836 bytes** of the 4,162,912-byte decoded executable (**1.3173% image coverage**).
+It retains **4,108,076 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,13 +28,12 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 131
+## Latest integration batch: stage 132
 
-Stage 131 adds **5 functions / 404 bytes**: actor virtual callbacks, transition
-update, action dispatch and idle-event handling. All 571 prior matches remain
-unchanged. Four separate flag-transition candidates are parked with persistent
-counts and exact mismatch receipts; they receive no completion credit.
-Required builds, proof, tests and source-only rejection pass.
+Stage 132 adds **7 functions / 400 bytes** in five modules: actor motion reset,
+mode and raised-position helpers, and offset-effect initialization/controls.
+All 576 prior matches remain unchanged. Every first candidate matches; checked
+admissions reproduce twice. Required builds, proof, tests and source-only rejection pass.
 
 ## Autonomous iteration
 

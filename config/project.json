@@ -9621,6 +9621,34 @@
       "boundary_review": "Raw actor-state helpers reviewed through adjacent entries, signed accesses, switch branches, aggregate copy, return delays, literals and natural alignment. Full checked match twice; stage130."
     },
     {
+      "id": "reset_actor_motion",
+      "source": "src/objects/reset_actor_motion.cpp",
+      "address": "0x8c0c7f20",
+      "entry": "_reset_actor_motion",
+      "language": "c++",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_callbacks.h",
+        "src/include/actor_motion.h"
+      ],
+      "ranges": [
+        {
+          "offset": 753440,
+          "size": 164
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_actor_motion",
+          "address": "0x8c0c7f20",
+          "size": 164
+        }
+      ],
+      "reference_sha256": "2c3fb56de1c56458aa6619361fb4c8e5ba0d3de6b4d1165dae30d30438e44d26",
+      "symbols": {},
+      "boundary_review": "Raw motion reset, signed mode setter, raised vector copy and offset-effect lifecycle reviewed through adjacent entries, virtual slot436, literals and natural alignment. Three adjacent control functions retain genuine compiler alignment. Checked full match twice; stage132."
+    },
+    {
       "id": "update_actor_transition",
       "source": "src/objects/update_actor_transition.cpp",
       "address": "0x8c0c7fc4",
@@ -9692,6 +9720,118 @@
       "reference_sha256": "c06ef2f90ec22133a0a31a75adc3e13061bfc5b74a552c53ea0bc084e0e1f498",
       "symbols": {},
       "boundary_review": "Raw actor callbacks, transition update, action jump table and idle event reviewed through adjacent entries, virtual ABI offsets, literals, branch delays and natural padding. Checked full match twice; stage131."
+    },
+    {
+      "id": "enter_actor_mode_9",
+      "source": "src/objects/enter_actor_mode_9.c",
+      "address": "0x8c0c9114",
+      "entry": "_enter_actor_mode_9",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_state_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 758036,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "enter_actor_mode_9",
+          "address": "0x8c0c9114",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "6cdbcbf7e2a059dee61d52cd34aea5293fc748bee721c09349cfa25a7bc972dc",
+      "symbols": {},
+      "boundary_review": "Raw motion reset, signed mode setter, raised vector copy and offset-effect lifecycle reviewed through adjacent entries, virtual slot436, literals and natural alignment. Three adjacent control functions retain genuine compiler alignment. Checked full match twice; stage132."
+    },
+    {
+      "id": "set_actor_raised_position",
+      "source": "src/objects/set_actor_raised_position.c",
+      "address": "0x8c0c9174",
+      "entry": "_set_actor_raised_position",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_raised_position.h"
+      ],
+      "ranges": [
+        {
+          "offset": 758132,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_actor_raised_position",
+          "address": "0x8c0c9174",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "7a3103cd4a5188c00ac226226f04265f14878ebf6785d520ed586ed8a89213d6",
+      "symbols": {},
+      "boundary_review": "Raw motion reset, signed mode setter, raised vector copy and offset-effect lifecycle reviewed through adjacent entries, virtual slot436, literals and natural alignment. Three adjacent control functions retain genuine compiler alignment. Checked full match twice; stage132."
+    },
+    {
+      "id": "initialize_offset_effect",
+      "source": "src/objects/initialize_offset_effect.c",
+      "address": "0x8c0ccdc0",
+      "entry": "_initialize_offset_effect",
+      "headers": [
+        "src/include/offset_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 773568,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_offset_effect",
+          "address": "0x8c0ccdc0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "2e5859340cebc065452250c7b2de39f761f6fd7a76d0ab51f0e8fc5dd295fb9b",
+      "symbols": {},
+      "boundary_review": "Raw motion reset, signed mode setter, raised vector copy and offset-effect lifecycle reviewed through adjacent entries, virtual slot436, literals and natural alignment. Three adjacent control functions retain genuine compiler alignment. Checked full match twice; stage132."
+    },
+    {
+      "id": "offset_effect_controls",
+      "source": "src/objects/offset_effect_controls.c",
+      "address": "0x8c0cce10",
+      "entry": "_activate_offset_effect",
+      "headers": [
+        "src/include/offset_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 773648,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "activate_offset_effect",
+          "address": "0x8c0cce10",
+          "size": 8
+        },
+        {
+          "name": "activate_offset_effect_immediately",
+          "address": "0x8c0cce18",
+          "size": 12
+        },
+        {
+          "name": "offset_effect_threshold_reached",
+          "address": "0x8c0cce24",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "0a1a1b46f75d584fd2f2dd01135e03d01fd87e47ac806c7857139279621467de",
+      "symbols": {},
+      "boundary_review": "Raw motion reset, signed mode setter, raised vector copy and offset-effect lifecycle reviewed through adjacent entries, virtual slot436, literals and natural alignment. Three adjacent control functions retain genuine compiler alignment. Checked full match twice; stage132."
     },
     {
       "id": "allocate_block",
