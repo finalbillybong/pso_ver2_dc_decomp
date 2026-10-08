@@ -7201,3 +7201,41 @@ disposable database copy. No parked target was reopened.
 Stage 143 commit 3a7845b is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into render state backup/restore and effect resource initialization.
+
+
+## Effect resources and render-state copies, stage 145
+
+Three complete matches replace **312 bytes**. Totals are **640 functions / 582
+modules / 59,580 compiled bytes / 4,103,332 retained reference bytes / 1.4312%
+whole-image coverage**. All 637 prior matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| initialize_effect_resources | 0x8c0a014c | 128 |
+| backup_render_state | 0x8c0a2d30 | 80 |
+| restore_render_state | 0x8c0a2d80 | 104 |
+
+Resource initialization loads the named reference string at offset 18, invokes the
+one-entry pair table, then extracts 55 values through 12-byte records. Capturing
+the resource field base before the loop reproduces the observed pointer lifetime
+and restores four missing bytes. Direct destination assignment then fixes the
+remaining nine register-selection differences. All source table/string contents
+remain reference-dependent. The already matched resource-release function was
+found by the historical audit and was not re-experimented or counted again.
+
+Backup copies a 16-byte parameter record to the stack and the 44-byte state to its
+backup. Restore reverses the copy, applies it, sets the observed 1.0 and 0.85 scalar
+values, applies the view and passes field 20 to the parameter call. Declaring that
+view callee fixes the eight differing bytes of argument/callee literal order.
+Checked provisional record layouts preserve the complete aggregate copy sizes.
+
+Twelve snapshots form six binary groups. Every final admission reproduces twice.
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,103,332
+bytes while preserving existing artifacts. Focused exports validate using a
+disposable database copy. No parked target was reopened.
+
+Stage 144 commit 98d72e7 is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into temporary render-state setup, view initialization and effect lifecycle.

@@ -4820,6 +4820,38 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124."
     },
     {
+      "id": "initialize_effect_resources",
+      "source": "src/render/initialize_effect_resources.c",
+      "address": "0x8c0a014c",
+      "entry": "_initialize_effect_resources",
+      "headers": [
+        "src/include/effect_resource_records.h"
+      ],
+      "ranges": [
+        {
+          "offset": 590156,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect_resources",
+          "address": "0x8c0a014c",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "a8fafda650e861c53fea46b66fe9423c63e5e546a30d76d8715e5343ea00cad7",
+      "symbols": {
+        "_resource_pairs": "0x8c285100",
+        "_resource_handle": "0x8c46eda0",
+        "_resource_name": "0x8c3021ec",
+        "_resource_records": "0x8c3024a4",
+        "_resource_outputs": "0x8c46eda4",
+        "_load_resource": "0x8c104e9c"
+      },
+      "boundary_review": "Raw resource initialization and render backup/restore reviewed through adjacent entries, one-pair and55entry loops, observed cached field base, 44byte aggregate copies, call/return delays, float literal and natural alignment. Full checked match twice; stage145."
+    },
+    {
       "id": "release_effect_resources",
       "source": "src/effects/release_effect_resources.c",
       "address": "0x8c0a01cc",
@@ -5411,6 +5443,67 @@
         "_configure_a": "0x8c37e91c"
       },
       "boundary_review": "Raw render helpers and vector adjustment reviewed through adjacent entries, argument and return delays, predicate T/SUBC truth, unsigned field widths, stack vector, mixed integer/float ABI, literal pools and natural alignment. Full checked match twice; stage144."
+    },
+    {
+      "id": "backup_render_state",
+      "source": "src/render/backup_render_state.c",
+      "address": "0x8c0a2d30",
+      "entry": "_backup_render_state",
+      "headers": [
+        "src/include/render_state_blocks.h"
+      ],
+      "ranges": [
+        {
+          "offset": 601392,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "backup_render_state",
+          "address": "0x8c0a2d30",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "c500949d5828c04cd51d1d90f6c09540c3b08715a98ba454c0a89bcee2aff93c",
+      "symbols": {
+        "_render_current": "0x8c46efd4",
+        "_render_backup": "0x8c46f000",
+        "_render_parameters": "0x8c303344",
+        "_set_parameters": "0x8c380c5a"
+      },
+      "boundary_review": "Raw resource initialization and render backup/restore reviewed through adjacent entries, one-pair and55entry loops, observed cached field base, 44byte aggregate copies, call/return delays, float literal and natural alignment. Full checked match twice; stage145."
+    },
+    {
+      "id": "restore_render_state",
+      "source": "src/render/restore_render_state.c",
+      "address": "0x8c0a2d80",
+      "entry": "_restore_render_state",
+      "headers": [
+        "src/include/render_state_blocks.h"
+      ],
+      "ranges": [
+        {
+          "offset": 601472,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "restore_render_state",
+          "address": "0x8c0a2d80",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "58636c63031c56500f5980879076c85adadbb0ea2d5b0738a3d1a32c7348f128",
+      "symbols": {
+        "_render_current": "0x8c46efd4",
+        "_render_backup": "0x8c46f000",
+        "_apply_state": "0x8c37e990",
+        "_set_parameters": "0x8c380c5a",
+        "_set_view": "0x8c37e4c0"
+      },
+      "boundary_review": "Raw resource initialization and render backup/restore reviewed through adjacent entries, one-pair and55entry loops, observed cached field base, 44byte aggregate copies, call/return delays, float literal and natural alignment. Full checked match twice; stage145."
     },
     {
       "id": "reset_effect_table_state",
