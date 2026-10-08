@@ -6527,3 +6527,47 @@ Stage 127 commit 5538f64 is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into the exact recursive fillers and render-state helpers in the next batch.
+
+
+## Recursive vector filling and alternate rendering, stage 129
+
+Eight new exact functions replace **636 bytes** in eight modules. Totals are
+**564 functions / 510 modules / 53,848 compiled bytes / 4,109,064 retained reference
+bytes**, or **1.2935% whole-image coverage**. All 556 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| fill_vector_array | 0x8c0c70dc | 196 |
+| fill_scaled_vector_array | 0x8c0c71a0 | 172 |
+| draw_with_alternate_dispatch | 0x8c0c76d0 | 88 |
+| select_alternate_render_dispatch | 0x8c0c7728 | 20 |
+| enable_alternate_render_state | 0x8c0c773c | 36 |
+| disable_alternate_render_state | 0x8c0c7760 | 36 |
+| configure_alternate_render_state | 0x8c0c7784 | 48 |
+| restore_current_render_state | 0x8c0c77b4 | 40 |
+
+The recursive fillers preserve do/while sibling traversal, captured flag bits,
+child recursion and the updated entry count. Each 28-byte filled entry contains
+its resource and two vectors. Matrix operations, aggregate copies and dependency
+calls remain in the observed order; no starting-node null guard is introduced.
+Both functions match on their first candidates using the existing checked tree
+and array layouts plus a separately checked filled-entry view.
+
+Render helpers preserve flag masks, scalar constants, repeated global loads and
+temporary replacement/restoration of the object's dispatch. Five match first try.
+The dispatch selector initially folds field addresses into three literals and
+produces 28/20 bytes with 22 differences. Named external aggregate globals preserve
+base-plus-field relocations, yielding the exact 20 bytes. Their runtime contents
+remain unresolved; declarations do not add standalone reconstructed data credit.
+
+Twenty-five snapshots form nine binary groups. Checked admissions match twice.
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,109,064 bytes
+without altering artifacts. Focused exports validate on a disposable database copy.
+All parked targets retain their persistent counts and revisit conditions.
+
+Stage 128 commit 8b46da2 is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into neighboring actor-state and position helpers.

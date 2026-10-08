@@ -9182,6 +9182,211 @@
       "boundary_review": "Raw vector lookup and array lifecycle entries reviewed through adjacent entries, copy loop, field addressing, signed deletion flag, literals and natural alignment. Full range independently checked twice; stage128."
     },
     {
+      "id": "fill_vector_array",
+      "source": "src/math/fill_vector_array.c",
+      "address": "0x8c0c70dc",
+      "entry": "_fill_vector_array",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/vector_array.h",
+        "src/include/transform_node.h",
+        "src/include/filled_vector_entry.h"
+      ],
+      "ranges": [
+        {
+          "offset": 749788,
+          "size": 196
+        }
+      ],
+      "functions": [
+        {
+          "name": "fill_vector_array",
+          "address": "0x8c0c70dc",
+          "size": 196
+        }
+      ],
+      "reference_sha256": "93100ff6f6a6b712613486c872a22e2151ca511bb3fbf1dfe04f162fbc7ef685",
+      "symbols": {},
+      "boundary_review": "Raw recursive array fillers and render-state helpers reviewed through adjacent entries, branches, recursion, field accesses, return/tail-call delays, literal pools and natural alignment. Full checked match twice; stage129."
+    },
+    {
+      "id": "fill_scaled_vector_array",
+      "source": "src/math/fill_scaled_vector_array.c",
+      "address": "0x8c0c71a0",
+      "entry": "_fill_scaled_vector_array",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/vector_array.h",
+        "src/include/transform_node.h",
+        "src/include/filled_vector_entry.h"
+      ],
+      "ranges": [
+        {
+          "offset": 749984,
+          "size": 172
+        }
+      ],
+      "functions": [
+        {
+          "name": "fill_scaled_vector_array",
+          "address": "0x8c0c71a0",
+          "size": 172
+        }
+      ],
+      "reference_sha256": "3548cf030dc444a0924a60bbe99c90417fc1acd1ea8b0a46811bf12fbc453580",
+      "symbols": {},
+      "boundary_review": "Raw recursive array fillers and render-state helpers reviewed through adjacent entries, branches, recursion, field accesses, return/tail-call delays, literal pools and natural alignment. Full checked match twice; stage129."
+    },
+    {
+      "id": "draw_with_alternate_dispatch",
+      "source": "src/render/draw_with_alternate_dispatch.c",
+      "address": "0x8c0c76d0",
+      "entry": "_draw_with_alternate_dispatch",
+      "headers": [
+        "src/include/alternate_render.h"
+      ],
+      "ranges": [
+        {
+          "offset": 751312,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_with_alternate_dispatch",
+          "address": "0x8c0c76d0",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "3b48326717e322df2b74af420e56c5f45d8037d1c02afd59db00a51335ab6662",
+      "symbols": {},
+      "boundary_review": "Raw recursive array fillers and render-state helpers reviewed through adjacent entries, branches, recursion, field accesses, return/tail-call delays, literal pools and natural alignment. Full checked match twice; stage129."
+    },
+    {
+      "id": "select_alternate_render_dispatch",
+      "source": "src/render/select_alternate_render_dispatch.c",
+      "address": "0x8c0c7728",
+      "entry": "_select_alternate_render_dispatch",
+      "headers": [
+        "src/include/alternate_render.h"
+      ],
+      "ranges": [
+        {
+          "offset": 751400,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "select_alternate_render_dispatch",
+          "address": "0x8c0c7728",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "c48b3d64bbd31b20b7f1d1da1b492ed96025c74450edfd050bdbcd2c7d2628aa",
+      "symbols": {
+        "_alternate_parameter": "0x8c46f98c",
+        "_alternate_dispatch": "0x8c46f940"
+      },
+      "boundary_review": "Raw recursive array fillers and render-state helpers reviewed through adjacent entries, branches, recursion, field accesses, return/tail-call delays, literal pools and natural alignment. Full checked match twice; stage129."
+    },
+    {
+      "id": "enable_alternate_render_state",
+      "source": "src/render/enable_alternate_render_state.c",
+      "address": "0x8c0c773c",
+      "entry": "_enable_alternate_render_state",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 751420,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "enable_alternate_render_state",
+          "address": "0x8c0c773c",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "ac81a5add778739f5f86c93bf96e8611eff95235a23b03b9a3a4f10acb2d185e",
+      "symbols": {
+        "_mask_at": "0x8c38c0e6"
+      },
+      "boundary_review": "Raw recursive array fillers and render-state helpers reviewed through adjacent entries, branches, recursion, field accesses, return/tail-call delays, literal pools and natural alignment. Full checked match twice; stage129."
+    },
+    {
+      "id": "disable_alternate_render_state",
+      "source": "src/render/disable_alternate_render_state.c",
+      "address": "0x8c0c7760",
+      "entry": "_disable_alternate_render_state",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 751456,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "disable_alternate_render_state",
+          "address": "0x8c0c7760",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "bf34ac7f7e1d866736b72100060cf60357c7b09656ebe75b3c56dfd2b9abacf0",
+      "symbols": {
+        "_mask_at": "0x8c38c0e6"
+      },
+      "boundary_review": "Raw recursive array fillers and render-state helpers reviewed through adjacent entries, branches, recursion, field accesses, return/tail-call delays, literal pools and natural alignment. Full checked match twice; stage129."
+    },
+    {
+      "id": "configure_alternate_render_state",
+      "source": "src/render/configure_alternate_render_state.c",
+      "address": "0x8c0c7784",
+      "entry": "_configure_alternate_render_state",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 751492,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_alternate_render_state",
+          "address": "0x8c0c7784",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "2f51b9e39f158681b6716ab4d4a699a0df23658f27b69d3dbf9b6519893d1b6f",
+      "symbols": {},
+      "boundary_review": "Raw recursive array fillers and render-state helpers reviewed through adjacent entries, branches, recursion, field accesses, return/tail-call delays, literal pools and natural alignment. Full checked match twice; stage129."
+    },
+    {
+      "id": "restore_current_render_state",
+      "source": "src/render/restore_current_render_state.c",
+      "address": "0x8c0c77b4",
+      "entry": "_restore_current_render_state",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 751540,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "restore_current_render_state",
+          "address": "0x8c0c77b4",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "e078abbc03a487f2d991d9015cc3fd401b506ce5129e460fc5b8da45fde31206",
+      "symbols": {},
+      "boundary_review": "Raw recursive array fillers and render-state helpers reviewed through adjacent entries, branches, recursion, field accesses, return/tail-call delays, literal pools and natural alignment. Full checked match twice; stage129."
+    },
+    {
       "id": "allocate_block",
       "source": "src/runtime/allocate_block.c",
       "address": "0x8c122700",
