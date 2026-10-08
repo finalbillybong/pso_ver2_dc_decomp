@@ -4829,3 +4829,54 @@ manager initialization **280/8**, and signed remainder unresolved. Supporting
 matches do not replace those acceptance criteria. Compiler, base flags and
 complete-range rules are unchanged. Publication retains default scanner rules
 and the single verified source-hash exception with its stage-75 detection control.
+
+
+## Compact packets and counter helpers, stage 93
+
+Seven complete functions add **676 bytes**: compact packet builder **0x8c19531c**
+(416), counter helper **0x8c19528c** (48), forwarding **0x8c195280/0x8c195310**
+(12 each), state setter **0x8c195508** (12), mode-dependent identifier
+**0x8c195514** (92), and confirmation packet **0x8c1952bc** (84). Totals are
+**438 functions / 390 modules / 42,340 compiled full-range bytes /
+4,120,572 retained reference bytes**, or **1.0171% whole-image coverage**.
+All 431 previous matches, module definitions and source/header hashes remain
+unchanged. Since the initial checkpoint, 404 functions replace 38,696 bytes.
+Code-only completion remains unknown; standalone reconstructed static data is zero.
+
+The compact builder follows the proven four-byte record and 68-byte stack layout.
+It preserves signed index checks, unsigned-short sentinels, captured row offset,
+and unconditional payload loading before the actor-null check. When the actor's
+float field is zero, it saves two unsigned bytes, reinitializes the payload,
+restores those bytes and runs the alternate configuration call. Validation,
+finalization and packet construction retain their order. The checked actor view
+covers its halfword at8 and float fields at12,20,44; the packet retains actor
+coordinates and argument fields without speculative behavior changes.
+
+The counter helper retains its unsigned-short sentinel branch and old-counter
+result. Postincrement, signedness changes, separate old/new variables and external
+storage all leave three bytes different. Computing the return value before
+storing the increment recovers the complete48-byte range. Forwarding preserves
+both input registers; the callee's raw instructions confirm use of both arguments
+and integer status returns. Mode-dependent identifier construction retains all
+three bit patterns and its two independent global flag checks.
+
+Confirmation preserves its initial check, 12-byte local packet, default sentinels,
+repeated input halfword load and final send call. Checked views cover every used
+field and complete prefix size. No runtime, gameplay or network execution is
+claimed by source comparison.
+
+All **31 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons; none were compiler-rejected. Final checked sources match twice
+independently. Two fresh exact builds, integrated image comparison, five-function
+proof and all **53 research tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,120,572 retained bytes without changing artifacts. Focused
+exports use a disposable copy and are validated against current inputs; the
+original database remains unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. The nearby
+dispatcher remains **144/3** and earlier text setup remains **264/54** and
+**272/25**. Supporting matches do not replace primary acceptance. Compiler,
+base flags and complete-range rules are unchanged. Publication retains default
+scanner rules and the single verified source-hash exception with its stage-75
+detection control.

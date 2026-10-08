@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **431 exact functions in 383 modules**, replacing
-**41,664 bytes** of the 4,162,912-byte decoded executable (**1.0008% image coverage**).
-It retains **4,121,248 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **438 exact functions in 390 modules**, replacing
+**42,340 bytes** of the 4,162,912-byte decoded executable (**1.0171% image coverage**).
+It retains **4,120,572 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,14 +28,14 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 92
+## Latest batch: stage 93
 
-Record cleanup, notice initialization and two packet builders add four functions,
-replacing 936 bytes. All 427 earlier matches and source/header hashes remain
-unchanged. Since the initial checkpoint, 397 functions replace 38,020 bytes.
-Whole-image coverage has passed one percent; this remains a hybrid build. All
-54 trials are retained. The adjacent dispatcher remains 144/3; both original
-primary targets remain 512/30 and 388/8.
+Compact packet construction and counter/confirmation helpers add seven functions,
+replacing 676 bytes. All 431 earlier matches and source/header hashes remain
+unchanged. Since the initial checkpoint, 404 functions replace 38,696 bytes. All
+31 trials are retained. Whole-image coverage is 1.0171%; code-only completion
+remains unknown. Primary targets remain 512/30 and 388/8, and the nearby
+dispatcher remains 144/3.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

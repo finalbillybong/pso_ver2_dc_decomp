@@ -10071,6 +10071,178 @@
       "boundary_review": "Complete raw SH4 entry through adjacent entry, all literals/alignment;4/12-byte rows,36-byte notice and44-byte packet; reconstruction-stage92.",
       "status": "matched",
       "reason": "Complete record cleanup, notice initialization or packet-building range; adjacent dispatcher remains unmatched and static data retains reference dependence."
+    },
+    {
+      "id": "operation_19531c",
+      "source": "src/objects/operation_19531c.c",
+      "address": "0x8c19531c",
+      "entry": "_operation_19531c",
+      "ranges": [
+        {
+          "offset": 1594140,
+          "size": 416
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_19531c",
+          "address": "0x8c19531c",
+          "size": 416
+        }
+      ],
+      "reference_sha256": "236bc1b3651758362a36ac5cac415a8a184df12dab47837ff8e1105d70258983",
+      "headers": [
+        "src/include/widget_confirmation.h",
+        "src/include/widget_record_tables.h",
+        "src/include/widget_notice_record.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; compact416-byte path and counter/confirmation helpers; reconstruction-stage93.",
+      "status": "matched",
+      "reason": "Complete compact packet, forwarding, counter, mode or confirmation callback range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_19528c",
+      "source": "src/objects/operation_19528c.c",
+      "address": "0x8c19528c",
+      "entry": "_operation_19528c",
+      "ranges": [
+        {
+          "offset": 1593996,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_19528c",
+          "address": "0x8c19528c",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "a127ba9f023805e75ddf00fab79ec0a3cf9517b6e89cdf2e426cc9aa22a384b7",
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; compact416-byte path and counter/confirmation helpers; reconstruction-stage93.",
+      "status": "matched",
+      "reason": "Complete compact packet, forwarding, counter, mode or confirmation callback range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_195280",
+      "source": "src/objects/operation_195280.c",
+      "address": "0x8c195280",
+      "entry": "_operation_195280",
+      "ranges": [
+        {
+          "offset": 1593984,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195280",
+          "address": "0x8c195280",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d974d403460c2a746a4a08c2d5ea5608a566fc22cd3b04be65fa40b8bd70a02f",
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; compact416-byte path and counter/confirmation helpers; reconstruction-stage93.",
+      "status": "matched",
+      "reason": "Complete compact packet, forwarding, counter, mode or confirmation callback range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_195310",
+      "source": "src/objects/operation_195310.c",
+      "address": "0x8c195310",
+      "entry": "_operation_195310",
+      "ranges": [
+        {
+          "offset": 1594128,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195310",
+          "address": "0x8c195310",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "7fdfa2c7358962c9adaafa51085effbcfb8c6f537fa46a685218abb39db41edb",
+      "headers": [
+        "src/include/widget_confirmation.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; compact416-byte path and counter/confirmation helpers; reconstruction-stage93.",
+      "status": "matched",
+      "reason": "Complete compact packet, forwarding, counter, mode or confirmation callback range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_195508",
+      "source": "src/objects/operation_195508.c",
+      "address": "0x8c195508",
+      "entry": "_operation_195508",
+      "ranges": [
+        {
+          "offset": 1594632,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195508",
+          "address": "0x8c195508",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "3310d57cb355463bcefc46757dc8677073d76430cbad81b0bc0ecfb40d91d5c5",
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; compact416-byte path and counter/confirmation helpers; reconstruction-stage93.",
+      "status": "matched",
+      "reason": "Complete compact packet, forwarding, counter, mode or confirmation callback range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_195514",
+      "source": "src/objects/operation_195514.c",
+      "address": "0x8c195514",
+      "entry": "_operation_195514",
+      "ranges": [
+        {
+          "offset": 1594644,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195514",
+          "address": "0x8c195514",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "d03e64e4f48b03e0e9ac003d903ca4ddf2b755cf313a1c262c29069152cdd165",
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; compact416-byte path and counter/confirmation helpers; reconstruction-stage93.",
+      "status": "matched",
+      "reason": "Complete compact packet, forwarding, counter, mode or confirmation callback range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_1952bc",
+      "source": "src/objects/operation_1952bc.c",
+      "address": "0x8c1952bc",
+      "entry": "_operation_1952bc",
+      "ranges": [
+        {
+          "offset": 1594044,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1952bc",
+          "address": "0x8c1952bc",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "02e571c67f9aa20e03f0be60ed8e7cb592140c167331f6aaaeaee2222dd331fd",
+      "headers": [
+        "src/include/widget_confirmation.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; compact416-byte path and counter/confirmation helpers; reconstruction-stage93.",
+      "status": "matched",
+      "reason": "Complete compact packet, forwarding, counter, mode or confirmation callback range; remaining dependencies stay reference-backed."
     }
   ]
 }
