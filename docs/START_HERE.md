@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **694 exact functions in 636 modules**, replacing
-**64,124 bytes** of the 4,162,912-byte decoded executable (**1.5404% image coverage**).
-It retains **4,098,788 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **729 exact functions in 671 modules**, replacing
+**66,596 bytes** of the 4,162,912-byte decoded executable (**1.5997% image coverage**).
+It retains **4,096,316 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,20 +28,17 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 160
+## Latest integration batch: 163: consolidated reconstruction
 
-Stage 160 adds **4 functions / 496 bytes**: virtual mode-two and signed countdown
-handlers, a mode-four request and an empty entry. All 690 previous matches remain
-unchanged. Mode-five update is parked after three hypotheses at 180 bytes with
-eight differences and receives no completion credit.
+35 new functions / 2,472 bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.
 
 ## Autonomous iteration
 
 Inspect → implement → compile → compare → verify → commit → push → repeat.
 Prioritize credible exact-match opportunities. Record each distinct hypothesis
 and its predicted instruction change; consult history and group identical outputs.
-After ten unsuccessful distinct hypotheses on a target, or sooner when evidence
-runs out, park it with a precise blocker and evidence-based revisit condition.
+After two or three unsuccessful distinct hypotheses, park unless concrete new
+evidence justifies more; never exceed ten cumulative hypotheses. Record its precise blocker and evidence-based revisit condition.
 Counts persist across sessions. Prior parked targets remain parked; this policy
 does not reset their history. Continue to another productive target after each
 checkpoint. Publish only reviewed public source and sanitized receipts; preserve

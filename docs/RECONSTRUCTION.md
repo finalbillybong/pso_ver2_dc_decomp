@@ -7829,3 +7829,8 @@ copy. No speculative behavior changes or additional data credit are included.
 Stage 159 commit 87efa36 is published with successful remote checks. Reproduce
 with `python3 -B tools/verify_source.py`, the current tests and expected source-only
 rejection. Continue into matrix setup, vector transforms and model-node helpers.
+
+
+## Consolidated reconstruction and efficiency pass, batch 163
+
+35 exact functions add 2,472 bytes, including 27 generated destructor matches / 1,836 bytes newly reconstructed during the efficiency pass. Totals: 729 functions, 66,596 compiled function-range bytes, zero reconstructed data bytes and 4,096,316 retained reference bytes. All 694 previously published functions are preserved. The two unpublished small batches are consolidated here. See [BATCH.md](BATCH.md) for measured overhead, failed hypotheses, source-bound verification and continuation rules.

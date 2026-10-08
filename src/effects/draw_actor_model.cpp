@@ -1,0 +1,3 @@
+#include "src/include/actor_render_callbacks.h"
+extern "C" void draw_actor_marker(void *);
+extern "C" void draw_actor_model(ActorDrawView *actor){if(actor->visible(400.0f,20.0f)){((void (*)(void *))0x8c3827d8)(actor->resource);((void (*)(void))0x8c38ae68)();((void (*)(Vector3 *))0x8c382a40)(&actor->position);((void (*)(int,int))0x8c37df90)(0,actor->angle);*(unsigned int *)0x8c575570&=~0x400;if(((int (*)(void))0x8c03d338)()==1)((void (*)(void *))0x8c3aa716)(actor->model);else ((void (*)(ActorDrawView *))0x8c01cc90)(actor);if(!(actor->flags&0x800)){*(unsigned int *)0x8c575570|=0x400;draw_actor_marker((void *)0x8c2e8988);}((void (*)(void))0x8c38ad10)();}}
