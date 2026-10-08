@@ -3456,3 +3456,51 @@ unchanged. Original primary targets remain **512/30 and 388/8**, related reuse
 **448/4**, manager initialization **280/8**, and signed remainder unresolved.
 The primary batch is still incomplete; these supporting matches do not replace
 its acceptance criteria.
+
+
+## Flag-object and bit-table operations, stage 67
+
+Eleven complete ordinary-C functions add **664 bytes**: the provisional object
+constructor **0x8c03cf18** (56), current-group wrappers **0x8c03cf50**,
+**0x8c03cfe4** and **0x8c03d080** (20 each), bit set **0x8c03cf64** (128),
+bit clear **0x8c03cff8** (136), Boolean conversion **0x8c03d094** (28), bit
+query **0x8c03d0b0** (136), buffer copies **0x8c03d138** (32) and
+**0x8c03d158** (20), and destructor **0x8c03d174** (68). Totals are **290
+functions / 268 modules / 29,288 compiled full-range bytes / 4,133,624 retained
+reference bytes**, or **0.7035% whole-image coverage**. All 279 previous matches,
+module definitions and source/header hashes remain unchanged. Since the initial
+checkpoint, 256 functions replace 25,644 bytes. Code-only completion remains
+unknown; separately reconstructed static data remains zero.
+
+The table operations preserve signed group bounds 0..17, unsigned ID bounds
+0..255, the incremented 16-bit ID, separate signed divide/remainder helpers and
+MSB-first bit ordering. A full-width temporary after the 16-bit increment removes
+six differing bytes. Decrementing the byte pointer in the zero-remainder branch
+finishes the setter; combining this with an explicit 254 mask finishes the
+clearer. Equivalent combined pointer/index expressions instead extend the ranges
+and are rejected. The query returns -1 for invalid inputs. Its Boolean wrapper
+maps any nonzero result, including -1, to true; that observed behavior is preserved.
+The copy-out routine copies 576 bytes and returns 576. Copy-in forwards its
+observed caller-supplied length without adding a speculative bound. Direct
+external copy declarations resolve literal placement in both wrappers.
+
+The new provisional FlagObject header checks every accessed offset and its
+44-byte extent. Construction and destruction preserve base calls, dispatch
+replacement, signed-short release flag, nullable object handling and return value.
+No static buffer contents, unresolved callee bodies or runtime helper bytes
+receive source credit. Both division dependencies remain explicit reference
+symbols; matching callers does not resolve the signed-remainder ABI blocker.
+
+All **48 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage67`; none were compiler/linker rejections.
+Final sources match independently twice. Identifiers, source paths and intervals
+are checked before integration. Two fresh exact builds, integrated-image
+comparison, five-function proof and all **53 research tests** pass; the public
+suite remains **58 tests**. Source-only rejects 4,133,624 retained bytes without
+changing artifacts. Focused exports are regenerated after manifest/queue changes
+on a disposable copy and checked against current inputs; the original database
+remains unchanged. Compiler, base flags, default linker and full-range rules are
+unchanged. Original primary targets remain **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, and signed remainder unresolved.
+The primary batch is still incomplete; these supporting matches do not replace
+its acceptance criteria.

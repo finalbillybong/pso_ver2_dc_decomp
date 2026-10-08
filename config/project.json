@@ -1855,6 +1855,261 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including all literal words and natural alignment; final source exact twice; reconstruction-stage66."
     },
     {
+      "id": "operation_03cf18",
+      "source": "src/runtime/operation_03cf18.c",
+      "address": "0x8c03cf18",
+      "entry": "_operation_03cf18",
+      "ranges": [
+        {
+          "offset": 184088,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03cf18",
+          "address": "0x8c03cf18",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "7c34090cb3620370fc5279d565dbc4fee7c86d19d88593e2c1fa7f954871047f",
+      "headers": [
+        "src/include/flag_object.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
+    },
+    {
+      "id": "operation_03cf50",
+      "source": "src/runtime/operation_03cf50.c",
+      "address": "0x8c03cf50",
+      "entry": "_operation_03cf50",
+      "ranges": [
+        {
+          "offset": 184144,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03cf50",
+          "address": "0x8c03cf50",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "616fabea6195c5d6452ae13723f941dbfd6c0838c88feefa2d6a5078165e8bb0",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
+    },
+    {
+      "id": "operation_03cf64",
+      "source": "src/runtime/operation_03cf64.c",
+      "address": "0x8c03cf64",
+      "entry": "_operation_03cf64",
+      "ranges": [
+        {
+          "offset": 184164,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03cf64",
+          "address": "0x8c03cf64",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "eaa8f9bc40dc7c453709b0ee5dadaebcdfa51e9e993c619efd4ac757ee104854",
+      "symbols": {
+        "__l_divs": "0x8c18e768",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
+    },
+    {
+      "id": "operation_03cfe4",
+      "source": "src/runtime/operation_03cfe4.c",
+      "address": "0x8c03cfe4",
+      "entry": "_operation_03cfe4",
+      "ranges": [
+        {
+          "offset": 184292,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03cfe4",
+          "address": "0x8c03cfe4",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "26346f55c7b1b28059528f554b92818d5754312c15881e3cfc41bc2491be3b35",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
+    },
+    {
+      "id": "operation_03cff8",
+      "source": "src/runtime/operation_03cff8.c",
+      "address": "0x8c03cff8",
+      "entry": "_operation_03cff8",
+      "ranges": [
+        {
+          "offset": 184312,
+          "size": 136
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03cff8",
+          "address": "0x8c03cff8",
+          "size": 136
+        }
+      ],
+      "reference_sha256": "bc36e5becfa0bf8064be6a68008ba99f81fae7fe6ac363c5e78f270f1ba276c4",
+      "symbols": {
+        "__l_divs": "0x8c18e768",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
+    },
+    {
+      "id": "operation_03d080",
+      "source": "src/runtime/operation_03d080.c",
+      "address": "0x8c03d080",
+      "entry": "_operation_03d080",
+      "ranges": [
+        {
+          "offset": 184448,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03d080",
+          "address": "0x8c03d080",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "f6034481bad84ab5fa4702ba6b2081c4e39ee0ea76e3474b87ed640358cc881c",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
+    },
+    {
+      "id": "operation_03d094",
+      "source": "src/runtime/operation_03d094.c",
+      "address": "0x8c03d094",
+      "entry": "_operation_03d094",
+      "ranges": [
+        {
+          "offset": 184468,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03d094",
+          "address": "0x8c03d094",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "4cf4b7053552f46c658cd2a85430223e57c1c08f2b2bb46629e458846134ed40",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
+    },
+    {
+      "id": "operation_03d0b0",
+      "source": "src/runtime/operation_03d0b0.c",
+      "address": "0x8c03d0b0",
+      "entry": "_operation_03d0b0",
+      "ranges": [
+        {
+          "offset": 184496,
+          "size": 136
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03d0b0",
+          "address": "0x8c03d0b0",
+          "size": 136
+        }
+      ],
+      "reference_sha256": "036881193fc8f6482625cb567ea7351df01895300faacfe35d01c628fb6e1d6b",
+      "symbols": {
+        "__l_divs": "0x8c18e768",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
+    },
+    {
+      "id": "operation_03d138",
+      "source": "src/runtime/operation_03d138.c",
+      "address": "0x8c03d138",
+      "entry": "_operation_03d138",
+      "ranges": [
+        {
+          "offset": 184632,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03d138",
+          "address": "0x8c03d138",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "9e9e1a6d28fe90d78edbb70c39ec35c2d9f2b3586dbc3d78e3c69c3c5dccce7f",
+      "symbols": {
+        "_copy_at": "0x8c12b77c"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
+    },
+    {
+      "id": "operation_03d158",
+      "source": "src/runtime/operation_03d158.c",
+      "address": "0x8c03d158",
+      "entry": "_operation_03d158",
+      "ranges": [
+        {
+          "offset": 184664,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03d158",
+          "address": "0x8c03d158",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "7c2534534a21db13d5f339625eb1a9a1f467fb6ef6b384c6d80a013f00894784",
+      "symbols": {
+        "_copy_at": "0x8c12b77c"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
+    },
+    {
+      "id": "operation_03d174",
+      "source": "src/runtime/operation_03d174.c",
+      "address": "0x8c03d174",
+      "entry": "_operation_03d174",
+      "ranges": [
+        {
+          "offset": 184692,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03d174",
+          "address": "0x8c03d174",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "571b97f57f1ec81aaae4743beef241cd05f1499ca695e141619509671a912024",
+      "headers": [
+        "src/include/flag_object.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
+    },
+    {
       "id": "distance_xz",
       "address": "0x8c03f0a0",
       "source": "src/samples/distance_xz.c",
