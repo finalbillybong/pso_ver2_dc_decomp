@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **645 exact functions in 587 modules**, replacing
-**60,056 bytes** of the 4,162,912-byte decoded executable (**1.4426% image coverage**).
-It retains **4,102,856 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **647 exact functions in 589 modules**, replacing
+**60,152 bytes** of the 4,162,912-byte decoded executable (**1.4450% image coverage**).
+It retains **4,102,760 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,12 +28,12 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 147
+## Latest integration batch: stage 148
 
-Stage 147 adds **3 functions / 240 bytes**: view-effect destruction, child
-deactivation and motion-field initialization. All 642 prior matches remain
-unchanged. Constructor and reset candidates are parked at 168/62 and 100/23
-respectively after two hypotheses each; they receive no completion credit.
+Stage 148 adds **2 functions / 96 bytes**: a genuine C++ virtual view update
+and C render-mode release. All 645 prior matches remain unchanged. The byte
+getter remains incomplete at 12/16 bytes with 13 differing; its conversion blocker
+is parked after one hypothesis and receives no completion credit.
 
 ## Autonomous iteration
 

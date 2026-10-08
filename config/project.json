@@ -5322,6 +5322,33 @@
       "boundary_review": "Raw render helpers and vector adjustment reviewed through adjacent entries, argument and return delays, predicate T/SUBC truth, unsigned field widths, stack vector, mixed integer/float ABI, literal pools and natural alignment. Full checked match twice; stage144."
     },
     {
+      "id": "release_render_mode",
+      "source": "src/render/release_render_mode.c",
+      "address": "0x8c0a22dc",
+      "entry": "_release_render_mode",
+      "headers": [
+        "src/include/render_flags_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 598748,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_render_mode",
+          "address": "0x8c0a22dc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "aa22f65409cfff6ea50595aeb1996896164fb2892462383201f2e59c05aa0060",
+      "symbols": {
+        "_render_flags": "0x8c46efc8"
+      },
+      "boundary_review": "Raw view-effect virtual update and conditional mode release reviewed through adjacent entries, ticks208, vptr24/virtualslot32, all call/return delays, separate flag stores, literals and natural alignment. Full checked match twice; stage148."
+    },
+    {
       "id": "render_flag_400_set",
       "source": "src/render/render_flag_400_set.c",
       "address": "0x8c0a2c50",
@@ -5606,6 +5633,32 @@
       "reference_sha256": "36c2b25968d4179ef1f310be4010512d998eda8343883741914f1862e87f916b",
       "symbols": {},
       "boundary_review": "Raw view-effect destructor, child deactivation and motion-field initializer reviewed through adjacent entries, signed/null branches, field widths, global clears, call/return delays, scalar/literal offsets and natural alignment. Full checked match twice; stage147."
+    },
+    {
+      "id": "update_view_effect",
+      "source": "src/effects/update_view_effect.cpp",
+      "language": "c++",
+      "address": "0x8c0a3060",
+      "entry": "_update_view_effect",
+      "headers": [
+        "src/include/view_update.h"
+      ],
+      "ranges": [
+        {
+          "offset": 602208,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_view_effect",
+          "address": "0x8c0a3060",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "18d443dccdfb7fc9e97027cf0cf6b357d04f6ef583b2d3d2beb4b83fddfd3e28",
+      "symbols": {},
+      "boundary_review": "Raw view-effect virtual update and conditional mode release reviewed through adjacent entries, ticks208, vptr24/virtualslot32, all call/return delays, separate flag stores, literals and natural alignment. Full checked match twice; stage148."
     },
     {
       "id": "initialize_view_motion_fields",

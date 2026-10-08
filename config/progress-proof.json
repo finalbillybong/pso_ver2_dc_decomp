@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "460e819a711afdc3ce1ef1b31a70e13c9dc86330efbcb8e96ac03d7743708a8d",
+    "config/project.json": "b02e3463e2c3754eb5541c3b42ad934e35275c9b80c0570ddb17d5c9c1b8ba13",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_15_value.c": "14ef1a96130df680ee07289fe39c85760f085c48337653c8d72de7f0e5d85c3c",
@@ -194,6 +194,7 @@
     "src/effects/update_particle_entries.c": "33eabc33f4f653aa0051f9338a474fc1acf3a9f20af78a020ba812b24629799f",
     "src/effects/update_short_effect_a05bc.c": "a2a186ba84a44e8e0425a18e1140258a326c43a0d1ef9d9b186804ba4b85764b",
     "src/effects/update_short_effect_a06dc.c": "9c6df55cbec94a8c3eea17919645f82bd08ca2139aa097818f72796ff61cc32f",
+    "src/effects/update_view_effect.cpp": "6a8aadf0b658b27c8ced4e30f9676414f19af502d9768c8555576d7ac60e9025",
     "src/include/actor_callbacks.h": "20515a91e6e523cd307d7127f62e0ae57771e82f458b2dd6d00b5120d542103c",
     "src/include/actor_motion.h": "45a50835d674442ef6300a5dbb0086d2f8dd0cde2885e5dc0287a573f044176e",
     "src/include/actor_raised_position.h": "f08f46ba77841e7f78ab28365faf44e60019419591da606396db5df378b2133e",
@@ -317,6 +318,7 @@
     "src/include/vector_array.h": "fcd5531d6415a45c02ed89ab708cd01a73cf170961c61854521a3997a65abeec",
     "src/include/vector_query.h": "68cc21fdbd03789eb193b85eacc189eda0657019dc1a45880ae552f2587266c9",
     "src/include/view_effect.h": "6505cd8d20eab818448ad519e6b9eb6b60d16a8b9d5cb8a2e9ec72a0c6bc158e",
+    "src/include/view_update.h": "62e34a79826414292b60ab88ac8fb292844c08ae8509eeb46c5f7ff31a2a8988",
     "src/include/widget_child.h": "8b4960de6fe0f72a652b74d0d55a63de189275603f3e170cf69eaf71c557e3f7",
     "src/include/widget_confirmation.h": "c52e54967eef375560e17ce61ed5571a2e44f8613b8e061053ef903a01fe5301",
     "src/include/widget_counter_buffers.h": "fc1633441d29fa2affb6a8836aefc9bb4c43214a451669702e90dc834abdeb0c",
@@ -660,6 +662,7 @@
     "src/render/enable_alternate_render_state.c": "f159a78ec0106ff60c08a72562c8c944e178104d00baae9ad0ce34eaf02d7809",
     "src/render/get_render_state.c": "2f464cc224de704718f13646561be98ab4d0570a7b0d868070106b4a8231dd2b",
     "src/render/initialize_effect_resources.c": "2666bfb8ff4ee15f59a7e432d2a68d18ffbefb5824677a647f51f1fad2639078",
+    "src/render/release_render_mode.c": "14df9400835726789a70608071da259eb82ae451d38e30ad14ae0d7f8ce630c4",
     "src/render/render_flag_400_set.c": "f981aebd0efaf3c37ddf7d634a6b4cec71dd18fa933453cc5d9de0e0882e8424",
     "src/render/restore_current_render_state.c": "0a991df69e865601c3fa6f08bc851f57ab0db71662ad6e8f9ac45931fae2e67e",
     "src/render/restore_render_state.c": "f870f7c460f06fcca3c93a61c59588ffb5f6791c268a9a70c4c5eaf6bdea816c",
@@ -3028,6 +3031,17 @@
       "off",
       "-O2"
     ],
+    "release_render_mode": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "render_flag_400_set": [
       "-proc",
       "SH4",
@@ -3148,6 +3162,19 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "update_view_effect": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
     ],
     "initialize_view_motion_fields": [
       "-proc",
@@ -7244,6 +7271,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4102856,
+  "source_only_rejected_retained_bytes": 4102760,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

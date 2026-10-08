@@ -7313,3 +7313,35 @@ exports validate using a disposable copy; original data remains untouched.
 Stage 146 commit 0024429 is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue following the effect's virtual update calls and render-mode helpers.
+
+
+## Virtual view update and mode release, stage 148
+
+Two complete matches replace **96 bytes**: `update_view_effect` at `0x8c0a3060`
+(64 bytes) and `release_render_mode` at `0x8c0a22dc` (32 bytes). Totals are **647
+functions / 589 modules / 60,152 compiled bytes / 4,102,760 retained reference
+bytes / 1.4450% whole-image coverage**. All 645 prior matches and source/header
+hashes remain unchanged. Standalone reconstructed data remains zero.
+
+The C++ update increments field 208, calls the observed helper, invokes the genuine
+virtual method at vtable offset 32, and calls two further helpers. The checked
+prefix puts the vptr at offset 24 using the established compiler layout. Only the
+permitted C++ language flag is added; base compiler settings remain unchanged.
+Mode release conditionally clears bit 8, then sets bit 32 with the two observed
+stores, and returns zero. Both first candidates and checked repetitions match.
+
+Investigation-only work: `get_render_mode`, `0x8c0a1b68`, is parked after one
+hypothesis at **12/16 bytes, 13 differing**, first `0x8c0a1b68`. The unsigned-byte
+return emits one EXTUB instead of the two observed conversions. Related cast and
+inline variations have already failed elsewhere, so none were repeated. Revisit
+only with independent exact redundant byte-conversion or verified source-context
+evidence. The candidate earns no completion credit.
+
+Eight snapshots form three binary groups. Two fresh exact builds per checkout,
+integrated-image comparison, five-function proof, 53 research tests and 58 public
+tests pass. Source-only rejects 4,102,760 bytes while preserving artifacts. Focused
+exports validate using a disposable database copy.
+
+Stage 147 commit 5b48603 is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into actor-context loops, effect factories and view message helpers.

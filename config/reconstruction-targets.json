@@ -19132,6 +19132,115 @@
         "source_sha256": "367358901e34f815aa25241a0043105d7532bba724d2de999570715ec0766d5c",
         "compiler_receipt_sha256": "a8b9828c06ea07449a592be8f8b197f03661e1fc7ca180e019b8907776011378"
       }
+    },
+    {
+      "id": "update_view_effect",
+      "source": "src/effects/update_view_effect.cpp",
+      "language": "c++",
+      "address": "0x8c0a3060",
+      "entry": "_update_view_effect",
+      "headers": [
+        "src/include/view_update.h"
+      ],
+      "ranges": [
+        {
+          "offset": 602208,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_view_effect",
+          "address": "0x8c0a3060",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "18d443dccdfb7fc9e97027cf0cf6b357d04f6ef583b2d3d2beb4b83fddfd3e28",
+      "symbols": {},
+      "boundary_review": "Raw view-effect virtual update and conditional mode release reviewed through adjacent entries, ticks208, vptr24/virtualslot32, all call/return delays, separate flag stores, literals and natural alignment. Full checked match twice; stage148.",
+      "status": "matched",
+      "reason": "Complete C++ virtual-update or C mode-release range; observed fields, calling convention and scalar stores preserved."
+    },
+    {
+      "id": "release_render_mode",
+      "source": "src/render/release_render_mode.c",
+      "address": "0x8c0a22dc",
+      "entry": "_release_render_mode",
+      "headers": [
+        "src/include/render_flags_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 598748,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_render_mode",
+          "address": "0x8c0a22dc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "aa22f65409cfff6ea50595aeb1996896164fb2892462383201f2e59c05aa0060",
+      "symbols": {
+        "_render_flags": "0x8c46efc8"
+      },
+      "boundary_review": "Raw view-effect virtual update and conditional mode release reviewed through adjacent entries, ticks208, vptr24/virtualslot32, all call/return delays, separate flag stores, literals and natural alignment. Full checked match twice; stage148.",
+      "status": "matched",
+      "reason": "Complete C++ virtual-update or C mode-release range; observed fields, calling convention and scalar stores preserved."
+    },
+    {
+      "id": "get_render_mode",
+      "source": "src/provisional/get_render_mode.c",
+      "address": "0x8c0a1b68",
+      "entry": "_get_render_mode",
+      "headers": [
+        "src/include/render_flags_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 596840,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "get_render_mode",
+          "address": "0x8c0a1b68",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "313f353aee7a3b5b6f034d3995e8757b33f48febf722779ce9332569ccaabec0",
+      "symbols": {
+        "_render_flags": "0x8c46efc8"
+      },
+      "status": "parked",
+      "reason": "12/16bytes,13 differing,first0x8c0a1b68. Unsigned-byte standalone getter emits only one EXTUB while raw uses load promotion plus redundant return conversion. No new evidence supports equivalent cast/inline variants already exhausted in related targets.",
+      "unsuccessful_distinct_hypotheses": 1,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact narrow getter with both EXTUB conversions, or verified declaration/inline context. Do not repeat known cast/inline variants without new evidence.",
+      "comparison": {
+        "name": "get_render_mode-checked-0",
+        "size": 12,
+        "expected_size": 16,
+        "exact": false,
+        "differing_bytes": 13,
+        "first_difference": "0x8c0a1b68",
+        "offsets": [
+          0,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "source_sha256": "93f6f51dcf236af635a875831a94fb5298bef113cdd96bd9837f5c13acf34520",
+        "compiler_receipt_sha256": "55b10a541fc7a6d689d241d1e45f9a28fcd34860f5b97d5bd77985ac542da3ee"
+      }
     }
   ]
 }
