@@ -8221,6 +8221,178 @@
       "boundary_review": "Raw SH4 through adjacent entry, all literals/alignment; forwarded vector inputs verified at 1aba3c; final checked source exact twice; reconstruction-stage77.",
       "status": "matched",
       "reason": "Complete resource-owner callback or child lifecycle; remaining emission callback, base constructors and static data reference-dependent."
+    },
+    {
+      "id": "operation_1abb78",
+      "source": "src/objects/operation_1abb78.c",
+      "address": "0x8c1abb78",
+      "entry": "_operation_1abb78",
+      "ranges": [
+        {
+          "offset": 1686392,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1abb78",
+          "address": "0x8c1abb78",
+          "size": 84
+        }
+      ],
+      "headers": [
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "bff421982a004dfccc3a1ea58e540996cbe2beef360796f8ee1fe6cc59a082fd",
+      "boundary_review": "Raw SH4 entry through adjacent entry, literals and alignment; root vector/scalar inputs established at 1aba3c; complete checked source exact twice; reconstruction-stage78.",
+      "status": "matched",
+      "reason": "Complete base-child lifecycle/update/draw callback; root initialization, static data and remaining callbacks reference-dependent."
+    },
+    {
+      "id": "operation_1abc6c",
+      "source": "src/objects/operation_1abc6c.c",
+      "address": "0x8c1abc6c",
+      "entry": "_operation_1abc6c",
+      "ranges": [
+        {
+          "offset": 1686636,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1abc6c",
+          "address": "0x8c1abc6c",
+          "size": 4
+        }
+      ],
+      "headers": [
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "boundary_review": "Raw SH4 entry through adjacent entry, literals and alignment; root vector/scalar inputs established at 1aba3c; complete checked source exact twice; reconstruction-stage78.",
+      "status": "matched",
+      "reason": "Complete base-child lifecycle/update/draw callback; root initialization, static data and remaining callbacks reference-dependent."
+    },
+    {
+      "id": "operation_1abd98",
+      "source": "src/objects/operation_1abd98.c",
+      "address": "0x8c1abd98",
+      "entry": "_operation_1abd98",
+      "ranges": [
+        {
+          "offset": 1686936,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1abd98",
+          "address": "0x8c1abd98",
+          "size": 104
+        }
+      ],
+      "headers": [
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "7435c62db1bda1c6adca6bf43eb5f354d01e2879d460528487a3ed9ffbe0d4ea",
+      "boundary_review": "Raw SH4 entry through adjacent entry, literals and alignment; root vector/scalar inputs established at 1aba3c; complete checked source exact twice; reconstruction-stage78.",
+      "status": "matched",
+      "reason": "Complete base-child lifecycle/update/draw callback; root initialization, static data and remaining callbacks reference-dependent."
+    },
+    {
+      "id": "operation_1abe00",
+      "source": "src/objects/operation_1abe00.c",
+      "address": "0x8c1abe00",
+      "entry": "_operation_1abe00",
+      "ranges": [
+        {
+          "offset": 1687040,
+          "size": 184
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1abe00",
+          "address": "0x8c1abe00",
+          "size": 184
+        }
+      ],
+      "headers": [
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "9baa7fe91339d750521729df6837d6d74bef3af1110b24a09ffc6ffb89700184",
+      "symbols": {
+        "_angle_at": "0x8c130334"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry, literals and alignment; root vector/scalar inputs established at 1aba3c; complete checked source exact twice; reconstruction-stage78.",
+      "status": "matched",
+      "reason": "Complete base-child lifecycle/update/draw callback; root initialization, static data and remaining callbacks reference-dependent."
+    },
+    {
+      "id": "operation_1abbcc",
+      "source": "src/objects/operation_1abbcc.cpp",
+      "language": "c++",
+      "address": "0x8c1abbcc",
+      "entry": "_operation_1abbcc",
+      "ranges": [
+        {
+          "offset": 1686476,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1abbcc",
+          "address": "0x8c1abbcc",
+          "size": 160
+        }
+      ],
+      "headers": [
+        "src/include/base_child_virtual.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "3fed6a645aad1df02568415f9dd6db45ec80da4e06262f131f68fb4c11a43098",
+      "boundary_review": "Raw SH4 entry through adjacent entry, literals and alignment; root vector/scalar inputs established at 1aba3c; complete checked source exact twice; reconstruction-stage78.",
+      "status": "matched",
+      "reason": "Complete base-child lifecycle/update/draw callback; root initialization, static data and remaining callbacks reference-dependent."
+    },
+    {
+      "id": "operation_1abeb8",
+      "source": "src/objects/operation_1abeb8.cpp",
+      "language": "c++",
+      "address": "0x8c1abeb8",
+      "entry": "_operation_1abeb8",
+      "ranges": [
+        {
+          "offset": 1687224,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1abeb8",
+          "address": "0x8c1abeb8",
+          "size": 120
+        }
+      ],
+      "headers": [
+        "src/include/base_child_virtual.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "e2853192cfe5f61f390fd1634b70cd42bbe9a982629e63d7eb96665153f0ff0a",
+      "symbols": {
+        "_rotate_at": "0x8c37e0c8"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry, literals and alignment; root vector/scalar inputs established at 1aba3c; complete checked source exact twice; reconstruction-stage78.",
+      "status": "matched",
+      "reason": "Complete base-child lifecycle/update/draw callback; root initialization, static data and remaining callbacks reference-dependent."
     }
   ]
 }

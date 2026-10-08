@@ -4036,3 +4036,58 @@ initialization **280/8**, and signed remainder unresolved. The primary batch
 remains incomplete; these supporting matches do not replace its acceptance
 criteria. Publication uses the existing default secret-scanner rules and only
 the exact source-hash exception verified with a detection control in stage 75.
+
+
+## Base-child construction and callbacks, stage 78
+
+Six complete functions add **656 bytes**: destruction **0x8c1abb78** (84),
+update **0x8c1abbcc** (160), empty callback **0x8c1abc6c** (4), factory
+**0x8c1abd98** (104), construction **0x8c1abe00** (184), and draw **0x8c1abeb8**
+(120). Totals are **368 functions / 321 modules / 34,584 compiled full-range
+bytes / 4,128,328 retained reference bytes**, or **0.8308% whole-image coverage**.
+All 362 previous matches, module definitions and source/header hashes remain
+unchanged. Since the initial checkpoint, 334 functions replace 30,940 bytes.
+Code-only completion remains unknown; separately reconstructed static data is zero.
+
+New provisional C and C++ views check the 100-byte child, linked flags and parent
+resources, plus the mode field and virtual update slot. Destruction preserves
+nullable owner and linked-object checks, dispatch reset, root destruction and
+positive signed release. The factory checks its floating scalar, parent and
+global before allocation, forwarding both vector pointers and the scalar. NaN
+passes its observed nonzero test. The empty callback includes its RTS delay slot.
+
+The constructor installs the observed dispatch, tag and size, copies parent
+mesh/matrix pointers and calculates an angle only when velocity Y differs from
+zero. It retains the exact floating multiply/divide constants, negation and
+zero-write order. Direct C keeps the object in a register and emits 168 rather
+than 184 bytes. A scoped address-taken object parameter reproduces the observed
+stack residence without volatile qualification. An external angle declaration
+then fixes the remaining ten scheduling bytes. The final unused address alias
+is explicitly consumed with a void cast; it preserves compiler allocation and
+adds no instructions. Loaded return aliases produce an extra move; a volatile
+pointer diagnostic emits 196 bytes and is rejected.
+
+Update preserves separate missing-parent and wrong-mode paths, each with two
+flag writes; clears bit 16 on the valid path; applies velocity; conditionally
+updates the linked position; calls virtual slot 28; and decrements/reloads its
+floating lifetime. Its final comparison retains the observed NaN termination
+behavior. Drawing guards only the mesh, retaining the unchecked matrix pointer,
+state calls, push/translate/three-angle rotation/draw/pop order. An external
+rotation declaration fixes four scheduling bytes; captured-angle alternatives
+leave eight differences or grow the function.
+
+All **43 trials** retain hypotheses, snapshots and comparisons. One C89 compiler
+rejection for a nonconstant local aggregate initializer is retained. Final checked
+sources match independently twice. Two fresh exact builds, integrated-image
+comparison, five-function proof and all **53 research tests** pass; the public
+suite remains **58 tests**. Source-only rejects 4,128,328 retained bytes without
+changing artifacts. Focused exports use a disposable database copy and are
+validated against current inputs. Original data, pinned compiler, base flags,
+default GNU linking and full-range rules remain unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, and signed remainder unresolved.
+Supporting matches do not replace those acceptance criteria. Root initialization,
+remaining child callbacks and static data retain reference dependence. Publication
+retains all default scanner rules and the single verified exact source-hash
+exception with its stage-75 detection control.
