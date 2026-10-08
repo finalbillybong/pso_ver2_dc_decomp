@@ -5558,6 +5558,81 @@
       "boundary_review": "Raw temporary render-state and adjacent factory reviewed:44byte stackrecord with observed fields36/40 untouched, all literal floats, global stores and call/return delays,220byte allocation/nullguard, complete literal pools and natural alignment. Full checked match twice; stage146."
     },
     {
+      "id": "destroy_view_effect",
+      "source": "src/effects/destroy_view_effect.c",
+      "address": "0x8c0a2f7c",
+      "entry": "_destroy_view_effect",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 601980,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect",
+          "address": "0x8c0a2f7c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "0b34e9ec1a2f661ca1df598d20956230f7e508bba8d8da011ec4241c7dd6e35e",
+      "symbols": {},
+      "boundary_review": "Raw view-effect destructor, child deactivation and motion-field initializer reviewed through adjacent entries, signed/null branches, field widths, global clears, call/return delays, scalar/literal offsets and natural alignment. Full checked match twice; stage147."
+    },
+    {
+      "id": "deactivate_view_effect",
+      "source": "src/effects/deactivate_view_effect.c",
+      "address": "0x8c0a302c",
+      "entry": "_deactivate_view_effect",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 602156,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "deactivate_view_effect",
+          "address": "0x8c0a302c",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "36c2b25968d4179ef1f310be4010512d998eda8343883741914f1862e87f916b",
+      "symbols": {},
+      "boundary_review": "Raw view-effect destructor, child deactivation and motion-field initializer reviewed through adjacent entries, signed/null branches, field widths, global clears, call/return delays, scalar/literal offsets and natural alignment. Full checked match twice; stage147."
+    },
+    {
+      "id": "initialize_view_motion_fields",
+      "source": "src/effects/initialize_view_motion_fields.c",
+      "address": "0x8c0a4470",
+      "entry": "_initialize_view_motion_fields",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 607344,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_view_motion_fields",
+          "address": "0x8c0a4470",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "7a1c7bc28f5c33b35b1d5f7a7f71d0013c91e5fc66292a5c5c807edbc5f2c074",
+      "symbols": {},
+      "boundary_review": "Raw view-effect destructor, child deactivation and motion-field initializer reviewed through adjacent entries, signed/null branches, field widths, global clears, call/return delays, scalar/literal offsets and natural alignment. Full checked match twice; stage147."
+    },
+    {
       "id": "reset_effect_table_state",
       "source": "src/effects/reset_effect_table_state.c",
       "address": "0x8c0a6bdc",

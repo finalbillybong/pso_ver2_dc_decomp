@@ -7273,3 +7273,43 @@ exports validate using a disposable copy; original data remains untouched.
 Stage 145 commit 7b767f5 is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into the adjacent effect lifecycle and motion-field helpers.
+
+
+## View-effect destruction and motion fields, stage 147
+
+Three complete matches replace **240 bytes**. Totals are **645 functions / 587
+modules / 60,056 compiled bytes / 4,102,856 retained reference bytes / 1.4426%
+whole-image coverage**. All 642 prior matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| destroy_view_effect | 0x8c0a2f7c | 76 |
+| deactivate_view_effect | 0x8c0a302c | 52 |
+| initialize_view_motion_fields | 0x8c0a4470 | 112 |
+
+Destruction preserves the null guard, dispatch store, global clear, base call and
+signed-short release decision. Deactivation marks a non-null child's unsigned
+flags, clears the child pointer, calls the mode helper and clears the global flag.
+Motion initialization preserves integer zeros and 65, floating zeros and one,
+all field offsets and the final return-delay store. All first candidates match;
+checked prefixes independently reproduce each complete range twice.
+
+Investigation-only work is parked with two persistent hypotheses per target:
+`initialize_view_effect`, `0x8c0a2ed4`, remains **168 bytes / 62 differing**, first
+`0x8c0a2ee5`; grouping zero assignments by vector produces the identical binary.
+Integer-zero and floating-field address lifetimes differ after the dispatch store.
+`reset_view_effect`, `0x8c0a2fc8`, remains **100 bytes / 23 differing**, first
+`0x8c0a2fe3`; declaring the refresh callee also produces the identical binary.
+Its position/zero registers and global-store/call-delay schedule remain unresolved.
+The queue records specific independent-pattern or source-context revisit conditions.
+Neither candidate receives completion credit.
+
+Fifteen snapshots form five binary groups. Two fresh exact builds per checkout,
+integrated-image comparison, five-function proof, 53 research tests and 58 public
+tests pass. Source-only rejects 4,102,856 bytes while preserving artifacts. Focused
+exports validate using a disposable copy; original data remains untouched.
+
+Stage 146 commit 0024429 is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue following the effect's virtual update calls and render-mode helpers.

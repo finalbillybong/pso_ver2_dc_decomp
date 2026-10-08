@@ -18884,6 +18884,254 @@
         "source_sha256": "1d69b7ac2ad1e721815a31042b74a5dd514e905237bb11d97f1abdfd4cd4873c",
         "compiler_receipt_sha256": "0e5a3758ad40bb001b837f6c98f4710f0cc21b2212cc959c1c4aa81335a6f577"
       }
+    },
+    {
+      "id": "destroy_view_effect",
+      "source": "src/effects/destroy_view_effect.c",
+      "address": "0x8c0a2f7c",
+      "entry": "_destroy_view_effect",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 601980,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect",
+          "address": "0x8c0a2f7c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "0b34e9ec1a2f661ca1df598d20956230f7e508bba8d8da011ec4241c7dd6e35e",
+      "symbols": {},
+      "boundary_review": "Raw view-effect destructor, child deactivation and motion-field initializer reviewed through adjacent entries, signed/null branches, field widths, global clears, call/return delays, scalar/literal offsets and natural alignment. Full checked match twice; stage147.",
+      "status": "matched",
+      "reason": "Complete view-effect helper range; checked provisional prefixes and observed behavior preserved."
+    },
+    {
+      "id": "deactivate_view_effect",
+      "source": "src/effects/deactivate_view_effect.c",
+      "address": "0x8c0a302c",
+      "entry": "_deactivate_view_effect",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 602156,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "deactivate_view_effect",
+          "address": "0x8c0a302c",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "36c2b25968d4179ef1f310be4010512d998eda8343883741914f1862e87f916b",
+      "symbols": {},
+      "boundary_review": "Raw view-effect destructor, child deactivation and motion-field initializer reviewed through adjacent entries, signed/null branches, field widths, global clears, call/return delays, scalar/literal offsets and natural alignment. Full checked match twice; stage147.",
+      "status": "matched",
+      "reason": "Complete view-effect helper range; checked provisional prefixes and observed behavior preserved."
+    },
+    {
+      "id": "initialize_view_motion_fields",
+      "source": "src/effects/initialize_view_motion_fields.c",
+      "address": "0x8c0a4470",
+      "entry": "_initialize_view_motion_fields",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 607344,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_view_motion_fields",
+          "address": "0x8c0a4470",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "7a1c7bc28f5c33b35b1d5f7a7f71d0013c91e5fc66292a5c5c807edbc5f2c074",
+      "symbols": {},
+      "boundary_review": "Raw view-effect destructor, child deactivation and motion-field initializer reviewed through adjacent entries, signed/null branches, field widths, global clears, call/return delays, scalar/literal offsets and natural alignment. Full checked match twice; stage147.",
+      "status": "matched",
+      "reason": "Complete view-effect helper range; checked provisional prefixes and observed behavior preserved."
+    },
+    {
+      "id": "initialize_view_effect",
+      "source": "src/provisional/initialize_view_effect.c",
+      "address": "0x8c0a2ed4",
+      "entry": "_initialize_view_effect",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 601812,
+          "size": 168
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_view_effect",
+          "address": "0x8c0a2ed4",
+          "size": 168
+        }
+      ],
+      "reference_sha256": "f2e669e2587d2a03fb1b350566ab935f95d933c34793994d79ec97c8aadf28bd",
+      "symbols": {},
+      "status": "parked",
+      "reason": "168bytes /62 differing,first0x8c0a2ee5. Integer-zero lifetime and float-field address register allocation/scheduling differ after dispatch store. Chained assignments grouped into three observed vectors yield identical binary.",
+      "unsuccessful_distinct_hypotheses": 2,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact constructor with this scalar/vector-zero field pattern, or verified constructor/inline context; no repeated zero-assignment spelling variants.",
+      "comparison": {
+        "name": "initialize_view_effect-checked-0",
+        "size": 168,
+        "expected_size": 168,
+        "exact": false,
+        "differing_bytes": 62,
+        "first_difference": "0x8c0a2ee5",
+        "offsets": [
+          17,
+          21,
+          25,
+          30,
+          31,
+          32,
+          33,
+          36,
+          37,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          54,
+          55,
+          56,
+          58,
+          59,
+          61,
+          62,
+          63,
+          65,
+          67,
+          69,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          85,
+          86,
+          87,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          102,
+          106,
+          110,
+          114,
+          118,
+          122,
+          126
+        ],
+        "source_sha256": "ebd1bf3b7b169441f4151177d687d5f854441cb35808bd1e4fd14c523e1c9414",
+        "compiler_receipt_sha256": "09401909d723ee3d0bf854f901cbe6f63922cea2f70dd1d73fe25bf46f5527dc"
+      }
+    },
+    {
+      "id": "reset_view_effect",
+      "source": "src/provisional/reset_view_effect.c",
+      "address": "0x8c0a2fc8",
+      "entry": "_reset_view_effect",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 602056,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_view_effect",
+          "address": "0x8c0a2fc8",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "e41b14c4f698c3f67a6b852a7c6e96f9ea0d47a75906e7d9ea4d95ce91879472",
+      "symbols": {},
+      "status": "parked",
+      "reason": "100bytes /23 differing,first0x8c0a2fe3. Last position component/intzero registers and globalflag store versus refresh this-argument delay differ. Declared refresh produces identical binary.",
+      "unsuccessful_distinct_hypotheses": 2,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact reset/globalflag/this-call scheduling, or verified inline context; callee spelling alone is exhausted.",
+      "comparison": {
+        "name": "reset_view_effect-checked-0",
+        "size": 100,
+        "expected_size": 100,
+        "exact": false,
+        "differing_bytes": 23,
+        "first_difference": "0x8c0a2fe3",
+        "offsets": [
+          27,
+          33,
+          35,
+          37,
+          40,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          60,
+          61
+        ],
+        "source_sha256": "367358901e34f815aa25241a0043105d7532bba724d2de999570715ec0766d5c",
+        "compiler_receipt_sha256": "a8b9828c06ea07449a592be8f8b197f03661e1fc7ca180e019b8907776011378"
+      }
     }
   ]
 }

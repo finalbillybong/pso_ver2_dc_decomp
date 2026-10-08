@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "55b939e78a957049e3cfce8e95bb125ecccbd01ea36302637e02e0fcc47c8be2",
+    "config/project.json": "460e819a711afdc3ce1ef1b31a70e13c9dc86330efbcb8e96ac03d7743708a8d",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_15_value.c": "14ef1a96130df680ee07289fe39c85760f085c48337653c8d72de7f0e5d85c3c",
@@ -66,6 +66,7 @@
     "src/effects/create_effect_for_owner.c": "d2a6d901c5bd81d051a37bb79c3b37f1984388ad6cb0b00c13cc8ac2910f39ab",
     "src/effects/create_effect_manager.c": "93477753b568726e7b932cd8e1b477268e4ffbc638c28cef6e345c2e784f9bc3",
     "src/effects/current_mode.c": "1333f58be98e04de3ad6d97d46718859cb5b6d5a2459da149ca61f30d7e62683",
+    "src/effects/deactivate_view_effect.c": "021d5135dcbc5adaaf0e6d2ceb1cd3f4909a23e2de5da5411b788e1ada35e217",
     "src/effects/destroy.c": "8c19c83004ea17a8b793ba2dd30476a1a0d3269cacc4c2efc080d0d777f9d0b2",
     "src/effects/destroy_color_base.c": "33f1f29db21339b9c879f71e3d10748792f86621a1d19f2366c3d349bb1edf58",
     "src/effects/destroy_color_blue.c": "f786f0cfac7fdd1af1f86a69a0c340f19796886ac2f02a7012365a729b15fd13",
@@ -87,6 +88,7 @@
     "src/effects/destroy_spawn_base.c": "b2dbae7fd2809d3a95f5a89e9985e823069155a3b476989d78d9ab6a1c42cb18",
     "src/effects/destroy_spawn_effect_2.c": "c2ce7debeaf007a07b40aefc9133bdde160220e04207d7afc51ee96fe048145f",
     "src/effects/destroy_template_effect.c": "6ec617e14c32048750e953cff1329f844a98b6fd4a8ee5d620dd4070e4de12a7",
+    "src/effects/destroy_view_effect.c": "6dd98ac91dbc3afc5638addb1105d1c1e672c8fcb5941f787489ef24f74cf126",
     "src/effects/draw_child_part.c": "6513619329dcc3eac3b5f2031fe4263bcf6bdaab4ba51862aa03e4d264401a43",
     "src/effects/draw_child_primary_layer.c": "a5b8cab6e060e6fc44ba607cd5d2f47223d96ac6957ec878f3b39c310a1e7cde",
     "src/effects/draw_child_rectangle.c": "6f68181c0d1977e0aa42ad52b6867557bf6a4e76df6b66cee527df9379fefa22",
@@ -132,6 +134,7 @@
     "src/effects/initialize_render_resource_lookups.c": "5f1e5ec717132881bffdcb34727af7f6ffa8ac26d3b2e675b0d9e2bda3884f55",
     "src/effects/initialize_resource_entry_pointers.c": "48d6065b9f1b923ce592c2bd48b932040b3b7396325b7514eacbb00c009587d7",
     "src/effects/initialize_spawn_base.c": "0ccfbc1060fcdf23165767b1a9ad9947fa06bf8fa055705c23f69f5b02a20174",
+    "src/effects/initialize_view_motion_fields.c": "35168412adc336fb4d343ff7c0379b87852b34eef6941fe3915201e96ed1be68",
     "src/effects/load_effect_resources.c": "5b283fa3f6f217834d6461d0d15b2de665f4445670e2c7a2c7daba63915c6f83",
     "src/effects/mark_effect_table_pending.c": "1c9981ef328ebf4dadc015ab3457b168f531c19f7eb90cbca10b32947ea3eed4",
     "src/effects/node_links.c": "437bf2fc4169e4ef8c114940b376aa1a5c24428c2c55b9f26854ffc055a18435",
@@ -313,6 +316,7 @@
     "src/include/vector3.h": "faff67bf729a7d9ac45803ed65a2d629520c4b22f72b08affa2e07e7a17e8262",
     "src/include/vector_array.h": "fcd5531d6415a45c02ed89ab708cd01a73cf170961c61854521a3997a65abeec",
     "src/include/vector_query.h": "68cc21fdbd03789eb193b85eacc189eda0657019dc1a45880ae552f2587266c9",
+    "src/include/view_effect.h": "6505cd8d20eab818448ad519e6b9eb6b60d16a8b9d5cb8a2e9ec72a0c6bc158e",
     "src/include/widget_child.h": "8b4960de6fe0f72a652b74d0d55a63de189275603f3e170cf69eaf71c557e3f7",
     "src/include/widget_confirmation.h": "c52e54967eef375560e17ce61ed5571a2e44f8613b8e061053ef903a01fe5301",
     "src/include/widget_counter_buffers.h": "fc1633441d29fa2affb6a8836aefc9bb4c43214a451669702e90dc834abdeb0c",
@@ -3113,6 +3117,39 @@
       "-O2"
     ],
     "create_effect_a2ed4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_view_effect": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "deactivate_view_effect": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_view_motion_fields": [
       "-proc",
       "SH4",
       "-endian",
@@ -7207,6 +7244,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4103096,
+  "source_only_rejected_retained_bytes": 4102856,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }
