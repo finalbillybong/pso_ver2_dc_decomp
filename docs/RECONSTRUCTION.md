@@ -6041,3 +6041,54 @@ Stage 117 privacy review: the generic-key heuristic also flags the progress-proo
 SHA-256 for find_track_key.c. The value was verified against that source file.
 The scanner now has two exact source-hash exceptions and retains every default
 rule, with no path exclusions. A fresh synthetic credential control is detected.
+
+
+## Angular track interpolation, stage 118
+
+Two new exact functions replace **240 bytes** in two modules. Totals are
+**510 functions / 458 modules / 49,812 compiled bytes / 4,113,100 retained reference
+bytes**, or **1.1966% whole-image coverage**. All 508 preceding matches and prior
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| interpolate_track_angle | 0x8c0c3e38 | 84 |
+| interpolate_track_angles | 0x8c0c3e8c | 156 |
+
+The checked scalar key is eight bytes; the three-component angular key is sixteen.
+Both preserve the interval helper, signed-short delta wraparound, floating multiply
+and addition, and final integer truncation. Fraction-first local declaration gives
+the observed stack homes. Captured integer base and short delta recover the complete
+sizes; delta*fraction then corrects two floating-register operands per component.
+The unchanged compiler produces every instruction, literal and alignment byte.
+
+Investigation-only float variants add no completed bytes:
+
+- interpolate_track_vector, 0x8c0c3d54: **124 / 42**, first difference 0x8c0c3d76.
+- interpolate_track_xy, 0x8c0c3dd0: **104 / 27**, first difference 0x8c0c3df2.
+
+Each is parked after six hypotheses. Local ordering improved their first results
+of 124 / 103 and 104 / 88. Addition/multiplication operand-order variants reproduce
+the same binaries. Explicit delta and captured operand variants produce identical
+longer 132 / 92 and 108 / 69 ranges. Remaining blockers are end/base floating-load
+order and fraction-addressing lifetimes. Revisit only with independent exact float
+interpolation evidence or verified different source context; do not repeat these
+expression variants. Earlier track and primary blockers remain parked.
+
+Thirty snapshots form fourteen binary groups. Admitted checked sources match twice
+independently. Two fresh exact builds per checkout, exact integrated image,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,113,100 bytes without altering artifacts. Refreshed focused exports validate on
+a disposable database copy. Original data and private saves remain preserved.
+
+Stage 117 commit 0470a85 is published and remote checks passed. The scanner retains
+all default rules with three exact verified source-hash exceptions and a successful
+synthetic credential detection control. Only reviewed public changes are published;
+research remains uncommitted.
+
+Reproduce with `python3 -B tools/verify_source.py`, the current test suite and expected
+source-only rejection. Continue into remaining transform wrappers and helpers.
+
+Stage 118 scanner review: track_keys.h adds a third verified source-hash false
+positive in progress-proof.json. Only that exact digest is excepted; default rules
+and the fresh synthetic credential detection control remain effective.

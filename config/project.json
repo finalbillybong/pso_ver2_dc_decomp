@@ -6459,6 +6459,60 @@
       "boundary_review": "Raw entries0x8c0c3974/3998/3a40/3a58/3a8c/3b44/3b88/3bcc/3c14 reviewed including indexed loads, callback delay slots, literals and alignment. Complete checked source exact twice; stage117."
     },
     {
+      "id": "interpolate_track_angle",
+      "source": "src/math/interpolate_track_angle.c",
+      "address": "0x8c0c3e38",
+      "entry": "_interpolate_track_angle",
+      "headers": [
+        "src/include/track_keys.h"
+      ],
+      "ranges": [
+        {
+          "offset": 736824,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "interpolate_track_angle",
+          "address": "0x8c0c3e38",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "9280d44ae8809b4f5345fa5811269a405044682814008cee26be569daea49cc1",
+      "symbols": {
+        "_find_track_interval": "0x8c0c3a8c"
+      },
+      "boundary_review": "Raw interpolation entries0x8c0c3d54/3dd0/3e38/3e8c/3f28 reviewed including signed-short deltas, conversion order, stack homes, literals and alignment. Complete checked source exact twice; stage118."
+    },
+    {
+      "id": "interpolate_track_angles",
+      "source": "src/math/interpolate_track_angles.c",
+      "address": "0x8c0c3e8c",
+      "entry": "_interpolate_track_angles",
+      "headers": [
+        "src/include/track_keys.h"
+      ],
+      "ranges": [
+        {
+          "offset": 736908,
+          "size": 156
+        }
+      ],
+      "functions": [
+        {
+          "name": "interpolate_track_angles",
+          "address": "0x8c0c3e8c",
+          "size": 156
+        }
+      ],
+      "reference_sha256": "0810734570a758f02570b4c80f1f2beb4b9396db5b4fb9afeb91f1924a111677",
+      "symbols": {
+        "_find_track_interval": "0x8c0c3a8c"
+      },
+      "boundary_review": "Raw interpolation entries0x8c0c3d54/3dd0/3e38/3e8c/3f28 reviewed including signed-short deltas, conversion order, stack homes, literals and alignment. Complete checked source exact twice; stage118."
+    },
+    {
       "id": "prepare_transform_state",
       "source": "src/math/prepare_transform_state.c",
       "address": "0x8c0c44c8",

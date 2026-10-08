@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "ec068aa41247e9f0644624e5b3321f0a9a2a22dd426a41879de48e2aeaa6f4d9",
+    "config/project.json": "b79130e672fac4f8733e853cd77ca21ca5aad8b8debe2a1f7482405f2e49eb3a",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -208,6 +208,7 @@
     "src/include/state_query_views.h": "98d1dbfb1c718eb749a15db8cabddbe463ba2fdfda68569221c8069141f6fe40",
     "src/include/text_buffer.h": "8064f1f7d788bcb598816408980b4683d192b152d54bb623f4015c539811082e",
     "src/include/timed_hierarchy.h": "0c3526f8acd040a35e1f3e5a3823e342b37620c22fcb14f62e7bce484e209551",
+    "src/include/track_keys.h": "ebbebeb021f425578cb5e68140240fa63c09abfafc3159f346190c26c39682f8",
     "src/include/transform_node.h": "bf3f280f18127619f7ddcda94bdc7001982409a1f81785e37f38f20dbce3a326",
     "src/include/transform_state.h": "a0c06013dc5659e1a420c1a77eb27df7f728a561c4e86820b41b196a229fec5e",
     "src/include/transform_tracks.h": "7185c3047fb53fc5cd3247c590dff522f6a455a6107b23829c5937b44904090a",
@@ -246,6 +247,8 @@
     "src/math/evaluate_running_profile.c": "91f23750bca88cfba227f4c746eed0bfe6d98552301590e05291fa0ccda36fe0",
     "src/math/find_track_key.c": "243aed26424a772c1b1d64e3b8775aff895fcee070e34ea0438ddb2b0135255a",
     "src/math/float_casts_and_angle.c": "e837ff7c0abaec6a3db3d65dee9d1bd0ea91a594ab4c17b3f62ba4b5249b6277",
+    "src/math/interpolate_track_angle.c": "0ec5bf41c465b360d38b3c5c78ca1889ae7ab95e36007b2eaaf77124ff064b4c",
+    "src/math/interpolate_track_angles.c": "2538eb613ffbd4109c54efd196a76c67bfcb5f99a32810d369ebf6f909cd5f70",
     "src/math/motion_profile_finished.c": "cd3de55d757ab34dbf8c285d0c4a63a28b67e698d1664d3ea8b07d09084aec1f",
     "src/math/normalize_vector_checked.c": "b930f2fd1bf54d6a7c54db165e599bbcca30702f1d6a3c85f3abe7db775bc3e3",
     "src/math/normalize_vector_tiny.c": "ba895cc0f559bcb45f73175b431384fbf595a06c72521c2c46d754b5b855680b",
@@ -3329,6 +3332,28 @@
       "off",
       "-O2"
     ],
+    "interpolate_track_angle": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "interpolate_track_angles": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "prepare_transform_state": [
       "-proc",
       "SH4",
@@ -5628,6 +5653,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4113340,
+  "source_only_rejected_retained_bytes": 4113100,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

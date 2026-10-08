@@ -12626,6 +12626,219 @@
         "source_sha256": "b01ebbf44e53ff5842f1358315b8621b8eb4faf6ec73a8d84dca4367e2d49306",
         "compiler_receipt_sha256": "c838fd5bed1ba75bbcef4e093a67c1591e4e870a79eb0053285d7d61d2318069"
       }
+    },
+    {
+      "id": "interpolate_track_angle",
+      "source": "src/math/interpolate_track_angle.c",
+      "address": "0x8c0c3e38",
+      "entry": "_interpolate_track_angle",
+      "headers": [
+        "src/include/track_keys.h"
+      ],
+      "ranges": [
+        {
+          "offset": 736824,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "interpolate_track_angle",
+          "address": "0x8c0c3e38",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "9280d44ae8809b4f5345fa5811269a405044682814008cee26be569daea49cc1",
+      "symbols": {
+        "_find_track_interval": "0x8c0c3a8c"
+      },
+      "boundary_review": "Raw interpolation entries0x8c0c3d54/3dd0/3e38/3e8c/3f28 reviewed including signed-short deltas, conversion order, stack homes, literals and alignment. Complete checked source exact twice; stage118.",
+      "status": "matched",
+      "reason": "Complete angular interpolation; observed signed-short delta, float operations and final integer truncation preserved."
+    },
+    {
+      "id": "interpolate_track_angles",
+      "source": "src/math/interpolate_track_angles.c",
+      "address": "0x8c0c3e8c",
+      "entry": "_interpolate_track_angles",
+      "headers": [
+        "src/include/track_keys.h"
+      ],
+      "ranges": [
+        {
+          "offset": 736908,
+          "size": 156
+        }
+      ],
+      "functions": [
+        {
+          "name": "interpolate_track_angles",
+          "address": "0x8c0c3e8c",
+          "size": 156
+        }
+      ],
+      "reference_sha256": "0810734570a758f02570b4c80f1f2beb4b9396db5b4fb9afeb91f1924a111677",
+      "symbols": {
+        "_find_track_interval": "0x8c0c3a8c"
+      },
+      "boundary_review": "Raw interpolation entries0x8c0c3d54/3dd0/3e38/3e8c/3f28 reviewed including signed-short deltas, conversion order, stack homes, literals and alignment. Complete checked source exact twice; stage118.",
+      "status": "matched",
+      "reason": "Complete angular interpolation; observed signed-short delta, float operations and final integer truncation preserved."
+    },
+    {
+      "id": "interpolate_track_vector",
+      "source": "src/provisional/interpolate_track_vector.c",
+      "address": "0x8c0c3d54",
+      "entry": "_interpolate_track_vector",
+      "headers": [
+        "src/include/track_keys.h"
+      ],
+      "ranges": [
+        {
+          "offset": 736596,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "interpolate_track_vector",
+          "address": "0x8c0c3d54",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "bd84935f14ceee3cb0b59f28b5f3598c1d71db05e435975229449ed7c3d6c1a2",
+      "symbols": {
+        "_find_track_interval": "0x8c0c3a8c"
+      },
+      "status": "parked",
+      "reason": "124 bytes /42 differing; first0x8c0c3d76. End/base floating loads and register order differ. Operand-order variants are identical; explicit temporaries lengthen fraction addressing.",
+      "unsuccessful_distinct_hypotheses": 6,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact float component interpolation evaluation/lifetime pattern or verified different source context.",
+      "comparison": {
+        "name": "interpolate_track_vector-checked-parked",
+        "size": 124,
+        "expected_size": 124,
+        "exact": false,
+        "differing_bytes": 42,
+        "first_difference": "0x8c0c3d76",
+        "offsets": [
+          34,
+          35,
+          37,
+          38,
+          39,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          57,
+          58,
+          59,
+          60,
+          62,
+          63,
+          66,
+          67,
+          73,
+          74,
+          80,
+          81,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          104,
+          105,
+          107,
+          108,
+          109,
+          110
+        ],
+        "source_sha256": "af40ff0ffc5a00dd47134eb0a868e0c8b40396edf06cc1de7120c4de5a49a622",
+        "compiler_receipt_sha256": "845ac512764ce5f86272fb33d3d32aadf514532f7b7a52d6b9c4b8d7fd3014cd"
+      }
+    },
+    {
+      "id": "interpolate_track_xy",
+      "source": "src/provisional/interpolate_track_xy.c",
+      "address": "0x8c0c3dd0",
+      "entry": "_interpolate_track_xy",
+      "headers": [
+        "src/include/track_keys.h"
+      ],
+      "ranges": [
+        {
+          "offset": 736720,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "interpolate_track_xy",
+          "address": "0x8c0c3dd0",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "1c586ab2ed04c9e409731aefd01b3ffe9609f2dcaaea113c5f63ea8f2a37fd3c",
+      "symbols": {
+        "_find_track_interval": "0x8c0c3a8c"
+      },
+      "status": "parked",
+      "reason": "104 bytes /27 differing; first0x8c0c3df2. End/base floating loads and register order differ. Operand-order variants are identical; explicit temporaries lengthen fraction addressing.",
+      "unsuccessful_distinct_hypotheses": 6,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact float component interpolation evaluation/lifetime pattern or verified different source context.",
+      "comparison": {
+        "name": "interpolate_track_xy-checked-parked",
+        "size": 104,
+        "expected_size": 104,
+        "exact": false,
+        "differing_bytes": 27,
+        "first_difference": "0x8c0c3df2",
+        "offsets": [
+          34,
+          35,
+          37,
+          38,
+          39,
+          45,
+          46,
+          52,
+          53,
+          55,
+          57,
+          58,
+          59,
+          60,
+          64,
+          65,
+          68,
+          69,
+          75,
+          76,
+          82,
+          83,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "source_sha256": "9e8c756ca18e2982cd926932b3d24c1a22aec9a2f344c16ab13036ae71289af5",
+        "compiler_receipt_sha256": "02c33a83036d1c653ccb9f8b89159f1d688dbf57697c31bb05ce320e9be230ad"
+      }
     }
   ]
 }
