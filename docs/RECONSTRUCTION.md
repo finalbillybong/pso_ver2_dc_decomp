@@ -3296,3 +3296,64 @@ manager initialization **280/8**, and the signed-remainder helper remains
 unresolved. The primary batch is still incomplete; these supporting matches do
 not replace its acceptance criteria. Next work revisits those original call and
 float scheduling blockers using the additional source-level evidence.
+
+
+## Render setup, float casts and vector helpers, stage 64
+
+Ten complete ordinary-C functions in eight modules add **360 bytes**. Four
+render-state wrappers at **0x8c0c5310**, **0x8c0c532c**, **0x8c0c5348** and
+**0x8c0c5364** contribute 28 bytes each. Integer/float bit-casts at **0x8c0c5380**
+(12) and **0x8c0c538c** (16) share an 88-byte module with the XZ angle helper at
+**0x8c0c539c** (60). Vector offset at **0x8c0c53d8** adds 84 bytes, tiny-threshold
+normalization at **0x8c0c542c** adds 52, and XZ squared distance at **0x8c0c5460**
+adds 24. Totals are **264 functions / 242 modules / 27,504 compiled full-range
+bytes / 4,135,408 retained reference bytes**, or **0.6607% whole-image coverage**.
+All 254 previous matches, module definitions and source/header hashes remain
+unchanged. Since the initial checkpoint, 230 functions replace 23,860 bytes.
+Code-only completion remains unknown; separately reconstructed static data is zero.
+
+The render wrappers preserve the observed pairs (0,8)/(1,10), (0,8)/(1,6),
+(0,5)/(1,7) and (0,5)/(1,6); names are provisional. The bit-casts use ordinary
+unions, preserving the raw bits rather than performing numeric conversion.
+Compiled by themselves, the pair emits 26 versus 28 required bytes. Including
+the adjacent angle routine in original order naturally supplies its alignment
+and matches all 88 bytes without manual padding. The angle routine preserves
+subtraction order and the exact multiply/divide constants; a direct external
+atan declaration resolves eight register-selection differences.
+
+Vector offset preserves sine/cosine calls, source reloads, the Y copy and
+multiplication order. Normalization compares squared length against the float
+with bits 0x283424dc (approximately 1e-14), retains its small-length return and
+calls the existing normalizer otherwise. Squared distance uses X/Z only and
+preserves the final return delay-slot addition. All use the unchanged checked
+Vector3 header. Project validation caught a duplicate provisional normalization
+name before building; the old source was restored to its recorded hash, the new
+routine was renamed normalize_vector_tiny, and its full range was verified twice
+again. The failed validation logs and repair receipt remain in scratch.
+
+The primary candidates were freshly reproduced: **operation 512/30**, first
+**0x8c045fdd**; **emission 388/8**, first **0x8c05fc56**; related reuse **448/4**,
+first **0x8c05feba**. Applying the newly successful integer-base representation
+to independently scoped emission columns and the operation's orientation address
+does not improve them; extending it to every scan base worsens size to 392.
+Best candidates remain unchanged. Raw handle-start inspection confirms signed
+byte checks in the callee, without establishing a different full caller ABI.
+Nearby renderer entries share a later literal pool and remain reference-dependent.
+
+The signed-remainder 180-byte reference hash and saved opcode-model receipt are
+unchanged. The normal path returns signed remainder with T clear; the zero-divisor
+path preserves incoming R0 and sets T. Ordinary C candidates do not reproduce
+that complete exceptional ABI or the instruction range. No runtime object or
+assembly substitution is admitted. Prior model checks remain evidence, not a
+claim of hardware execution.
+
+All **38 trials** retain sources, hypotheses, compiler receipts and comparisons
+in `reconstruction-stage64`; none were compiler/linker rejections. Final sources
+match independently twice. Two fresh exact builds, integrated-image comparison,
+five-function proof and all **53 research tests** pass; the public suite remains
+**58 tests**. Source-only rejects 4,135,408 retained bytes without changing
+artifacts. Focused exports are regenerated after manifest/queue changes on a
+disposable copy and checked against current inputs; the original database remains
+unchanged. Compiler, base flags, default linker and full-range rules are unchanged.
+Both original primary targets and manager initialization **280/8** remain
+incomplete. Supporting matches do not replace the primary acceptance criteria.

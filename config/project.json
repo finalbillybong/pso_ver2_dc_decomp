@@ -5412,6 +5412,199 @@
       "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c52f4, return delay slot through 0x8c0c5308, zero alignment word at 0x8c0c530a, 0x0000ffff literal at 0x8c0c530c, adjacent entry 0x8c0c5310. Full 28-byte match at unchanged compiler/flags; see reconstruction-stage11 and docs/RECONSTRUCTION.md."
     },
     {
+      "id": "set_child_blend",
+      "source": "src/effects/set_child_blend.c",
+      "address": "0x8c0c5310",
+      "entry": "_set_child_blend",
+      "ranges": [
+        {
+          "offset": 742160,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_child_blend",
+          "address": "0x8c0c5310",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "1a57a7ee453d7a8fdb62e858fdff1aa424ae4d66b23ff4b45c55b68273232374",
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literal pools; bit casts and angle helper compiled together in original order for natural alignment. Final source exact twice; reconstruction-stage64."
+    },
+    {
+      "id": "restore_child_blend",
+      "source": "src/effects/restore_child_blend.c",
+      "address": "0x8c0c532c",
+      "entry": "_restore_child_blend",
+      "ranges": [
+        {
+          "offset": 742188,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "restore_child_blend",
+          "address": "0x8c0c532c",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "01da1d19d66a793bcc9f1df8a10d2d29dd90e26ea859e6f4572bba3f52c11d49",
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literal pools; bit casts and angle helper compiled together in original order for natural alignment. Final source exact twice; reconstruction-stage64."
+    },
+    {
+      "id": "set_blend_5_7",
+      "source": "src/effects/set_blend_5_7.c",
+      "address": "0x8c0c5348",
+      "entry": "_set_blend_5_7",
+      "ranges": [
+        {
+          "offset": 742216,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_blend_5_7",
+          "address": "0x8c0c5348",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "3010f56f1cd49c941c604605f65e97bf6c94897a263a716dd7326487422dec31",
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literal pools; bit casts and angle helper compiled together in original order for natural alignment. Final source exact twice; reconstruction-stage64."
+    },
+    {
+      "id": "set_blend_5_6",
+      "source": "src/effects/set_blend_5_6.c",
+      "address": "0x8c0c5364",
+      "entry": "_set_blend_5_6",
+      "ranges": [
+        {
+          "offset": 742244,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_blend_5_6",
+          "address": "0x8c0c5364",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "e62b780ee0836d6789f2c90a64694cd0387b4b9d47cf9d81fa6240d4b05900b5",
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literal pools; bit casts and angle helper compiled together in original order for natural alignment. Final source exact twice; reconstruction-stage64."
+    },
+    {
+      "id": "float_casts_and_angle",
+      "source": "src/math/float_casts_and_angle.c",
+      "address": "0x8c0c5380",
+      "entry": "_float_from_bits",
+      "ranges": [
+        {
+          "offset": 742272,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "float_from_bits",
+          "address": "0x8c0c5380",
+          "size": 12
+        },
+        {
+          "name": "float_to_bits",
+          "address": "0x8c0c538c",
+          "size": 16
+        },
+        {
+          "name": "angle_between_xz",
+          "address": "0x8c0c539c",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "8628c926e48bf4f48f47953f50fa2d2be812dfcadbdc36ec30d37c5c61511898",
+      "symbols": {
+        "_angle_at": "0x8c130334"
+      },
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literal pools; bit casts and angle helper compiled together in original order for natural alignment. Final source exact twice; reconstruction-stage64."
+    },
+    {
+      "id": "offset_vector_xz",
+      "source": "src/math/offset_vector_xz.c",
+      "address": "0x8c0c53d8",
+      "entry": "_offset_vector_xz",
+      "ranges": [
+        {
+          "offset": 742360,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "offset_vector_xz",
+          "address": "0x8c0c53d8",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "0710bc7be3884606d11c8f1c4a03d21c2599e849be9d46509a47702e65e7d982",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literal pools; bit casts and angle helper compiled together in original order for natural alignment. Final source exact twice; reconstruction-stage64."
+    },
+    {
+      "id": "normalize_vector_tiny",
+      "source": "src/math/normalize_vector_tiny.c",
+      "address": "0x8c0c542c",
+      "entry": "_normalize_vector_tiny",
+      "ranges": [
+        {
+          "offset": 742444,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "normalize_vector_tiny",
+          "address": "0x8c0c542c",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "6442e9efa4c44b4f32c5a1e01a5b8738d8a51bda3689fb9fce88a216ec13d8f2",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literal pools; bit casts and angle helper compiled together in original order for natural alignment. Final source exact twice; reconstruction-stage64."
+    },
+    {
+      "id": "squared_distance_xz",
+      "source": "src/math/squared_distance_xz.c",
+      "address": "0x8c0c5460",
+      "entry": "_squared_distance_xz",
+      "ranges": [
+        {
+          "offset": 742496,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "squared_distance_xz",
+          "address": "0x8c0c5460",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "740e60c221dbf0a2e1af38ebb6fae414a52a298ceb5376899db70597200275f2",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry, including literal pools; bit casts and angle helper compiled together in original order for natural alignment. Final source exact twice; reconstruction-stage64."
+    },
+    {
       "id": "allocate_block",
       "source": "src/runtime/allocate_block.c",
       "address": "0x8c122700",

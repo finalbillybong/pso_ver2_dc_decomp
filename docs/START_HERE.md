@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **254 exact functions in 234 modules**, replacing
-**27,144 bytes** of the 4,162,912-byte decoded executable (**0.6520% image coverage**).
-It retains **4,135,768 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **264 exact functions in 242 modules**, replacing
+**27,504 bytes** of the 4,162,912-byte decoded executable (**0.6607% image coverage**).
+It retains **4,135,408 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 63
+## Latest batch: stage 64
 
-Child rendering, animation parameters and coordinate helpers add nine functions
-and 1,196 bytes in nine modules. All 245 previous matches, module definitions
-and source/header hashes are preserved. Since the initial checkpoint, 220
-functions replace 23,500 bytes. All 75 trials are retained, including two C89
-compiler rejections. Child-A drawing remains 124/4 and is unadmitted. Next work
-revisits the original float and call scheduling blockers; both primary targets
-and the signed-remainder runtime remain unresolved.
+Render setup and float/vector helpers add ten functions and 360 bytes in eight
+modules. All 254 earlier matches, module definitions and source/header hashes
+are preserved. Since the initial checkpoint, 230 functions replace 23,860 bytes.
+All 38 compiler trials are retained. A provisional naming collision was caught
+and repaired before verification. The adjacent bit-casts and angle helper use
+natural compiler alignment. Fresh primary-target experiments leave their best
+results unchanged at 512/30 and 388/8; the signed-remainder blocker remains.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only
