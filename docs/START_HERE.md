@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **355 exact functions in 308 modules**, replacing
-**33,340 bytes** of the 4,162,912-byte decoded executable (**0.8009% image coverage**).
-It retains **4,129,572 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **362 exact functions in 315 modules**, replacing
+**33,928 bytes** of the 4,162,912-byte decoded executable (**0.8150% image coverage**).
+It retains **4,128,984 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 76
+## Latest batch: stage 77
 
-Specialized resource-owner operations and their angle-step dependency add eight
-functions and 512 bytes in eight modules. All 347 earlier matches, module
-definitions and source/header hashes are preserved. Since the initial checkpoint,
-321 functions replace 29,696 bytes. All 33 trials are retained, with no compiler
-rejection. The original primary targets remain 512/30 and 388/8; signed remainder
-is unresolved. Remaining callbacks, base initialization and static data retain
-reference dependence.
+Resource-owner callbacks and child lifecycle add seven functions and 588 bytes
+in seven modules. All 355 earlier matches, module definitions and source/header
+hashes are preserved. Since the initial checkpoint, 328 functions replace
+30,284 bytes. All 52 trials are retained, including one rejected header-path
+check before compilation. The original primary targets remain 512/30 and 388/8;
+signed remainder is unresolved. Emission callback, base initialization and
+static data retain reference dependence.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

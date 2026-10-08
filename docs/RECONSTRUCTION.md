@@ -3981,3 +3981,58 @@ initialization **280/8**, and signed remainder unresolved. The primary batch
 remains incomplete; supporting matches do not replace its acceptance criteria.
 The history scanner retains all default rules and the single exact source-hash
 exception verified in stage 75, including its synthetic detection-control receipt.
+
+
+## Resource-owner callbacks and child lifecycle, stage 77
+
+Seven complete functions add **588 bytes**: owner update **0x8c239820** (220),
+delayed state callback **0x8c2398fc** (20), child factory **0x8c239998** (84),
+constructor **0x8c2399ec** (52), angle increment **0x8c239a20** (16), draw
+**0x8c239a30** (116), and destructor **0x8c239aa4** (80). Totals are **362 functions /
+315 modules / 33,928 compiled full-range bytes / 4,128,984 retained reference
+bytes**, or **0.8150% whole-image coverage**. All 355 previous matches, module
+definitions and source/header hashes remain unchanged. Since the initial
+checkpoint, 328 functions replace 30,284 bytes. Code-only completion remains
+unknown; separately reconstructed static data is zero.
+
+Checked provisional views describe the 100-byte child, target position/mode,
+owner fields and virtual dispatch slots. Raw root initialization at 0x8c1aba3c
+establishes that the two forwarded values in R6/R7 are vector pointers and FR4
+is a scalar. The final factory and constructor use those corrected pointer types.
+Construction retains base initialization, dispatch/tag writes, size and angle
+zeroing. The angle increment adds 0xccc without introducing wrapping. Drawing
+preserves both resource guards and push, matrix, translation, Y/Z rotation, mesh
+and pop order. Destruction preserves both null checks, both dispatch writes,
+base destruction and positive signed release through the original pool.
+
+Owner update retains the target mode query, signed part, output position,
+virtual query, scalar threshold, reset, allocation and delayed callback. Its
+late redundant owner null check remains. External mode and delayed-constructor
+declarations recover 10 and 8 scheduling bytes, respectively. The callback sets
+state only for a nonnull owner. Static tables, base constructors and remaining
+callbacks still depend on reference bytes.
+
+The emission callback **0x8c239910** remains unadmitted: 136 expected/generated
+bytes, best 16 differing from 0x8c23994e. External emission/configuration
+prototypes improve 39 differences to 21; a local position pointer improves to
+16 but calculates it before the stack argument. Inline getters, wrappers,
+reference arguments, formal permutations, integer widths and an actual C++
+member do not reproduce the reference scheduling. Snapshots prevent repeating
+these hypotheses without new evidence.
+
+All **52 trials** retain hypotheses, sources and comparisons. One driver check
+rejected an undeclared relative header include before compilation; the include
+was corrected to its declared project path. All successful compiler invocations
+retain compiler receipts. Final checked sources match independently twice.
+Two fresh exact builds, integrated-image comparison, five-function proof and
+all **53 research tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,128,984 retained bytes without changing artifacts. Focused
+exports use a disposable copy and are checked against current inputs; the
+original database, pinned compiler, base flags and complete-range rules remain
+unchanged. All new units use the existing default GNU linker.
+
+Primary candidates remain **512/30 and 388/8**, related reuse **448/4**, manager
+initialization **280/8**, and signed remainder unresolved. The primary batch
+remains incomplete; these supporting matches do not replace its acceptance
+criteria. Publication uses the existing default secret-scanner rules and only
+the exact source-hash exception verified with a detection control in stage 75.

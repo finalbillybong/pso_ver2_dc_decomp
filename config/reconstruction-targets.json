@@ -8028,6 +8028,199 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; checked prefix and callee inputs; final source exact twice; reconstruction-stage76.",
       "status": "matched",
       "reason": "Complete specialized owner operation or single-subtraction angle step; static data, base initializer and unresolved callbacks remain reference-dependent."
+    },
+    {
+      "id": "operation_239998",
+      "source": "src/objects/operation_239998.c",
+      "address": "0x8c239998",
+      "entry": "_operation_239998",
+      "ranges": [
+        {
+          "offset": 2267544,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_239998",
+          "address": "0x8c239998",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "9d34c67f84924fae702d00fee8b78b455f34b3963a26fda7cf4445a9f756d056",
+      "headers": [
+        "src/include/resource_child.h",
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 through adjacent entry, all literals/alignment; forwarded vector inputs verified at 1aba3c; final checked source exact twice; reconstruction-stage77.",
+      "status": "matched",
+      "reason": "Complete resource-owner callback or child lifecycle; remaining emission callback, base constructors and static data reference-dependent."
+    },
+    {
+      "id": "operation_2399ec",
+      "source": "src/objects/operation_2399ec.c",
+      "address": "0x8c2399ec",
+      "entry": "_operation_2399ec",
+      "ranges": [
+        {
+          "offset": 2267628,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_2399ec",
+          "address": "0x8c2399ec",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "61e4de97716fc3f0c79cb0d61936212d8085604e3f6e270c8ed26759fa22a981",
+      "headers": [
+        "src/include/resource_child.h",
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 through adjacent entry, all literals/alignment; forwarded vector inputs verified at 1aba3c; final checked source exact twice; reconstruction-stage77.",
+      "status": "matched",
+      "reason": "Complete resource-owner callback or child lifecycle; remaining emission callback, base constructors and static data reference-dependent."
+    },
+    {
+      "id": "operation_239a20",
+      "source": "src/objects/operation_239a20.c",
+      "address": "0x8c239a20",
+      "entry": "_operation_239a20",
+      "ranges": [
+        {
+          "offset": 2267680,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_239a20",
+          "address": "0x8c239a20",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "58afbb2a519777c5d5ff4658401637767cdba2c26d8817ae61b0a72437beced6",
+      "headers": [
+        "src/include/resource_child.h",
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 through adjacent entry, all literals/alignment; forwarded vector inputs verified at 1aba3c; final checked source exact twice; reconstruction-stage77.",
+      "status": "matched",
+      "reason": "Complete resource-owner callback or child lifecycle; remaining emission callback, base constructors and static data reference-dependent."
+    },
+    {
+      "id": "operation_239a30",
+      "source": "src/objects/operation_239a30.c",
+      "address": "0x8c239a30",
+      "entry": "_operation_239a30",
+      "ranges": [
+        {
+          "offset": 2267696,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_239a30",
+          "address": "0x8c239a30",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "c5fd560d203bdf20e6ca51373d0f89bca6caa256b1d1d8e8854d157714e7c1a2",
+      "headers": [
+        "src/include/resource_child.h",
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 through adjacent entry, all literals/alignment; forwarded vector inputs verified at 1aba3c; final checked source exact twice; reconstruction-stage77.",
+      "status": "matched",
+      "reason": "Complete resource-owner callback or child lifecycle; remaining emission callback, base constructors and static data reference-dependent."
+    },
+    {
+      "id": "operation_239aa4",
+      "source": "src/objects/operation_239aa4.c",
+      "address": "0x8c239aa4",
+      "entry": "_operation_239aa4",
+      "ranges": [
+        {
+          "offset": 2267812,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_239aa4",
+          "address": "0x8c239aa4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "364e003ae49de7b1b47b25f1ed0415390997489bde1c2d34d91d47e2100286d1",
+      "headers": [
+        "src/include/resource_child.h",
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Raw SH4 through adjacent entry, all literals/alignment; forwarded vector inputs verified at 1aba3c; final checked source exact twice; reconstruction-stage77.",
+      "status": "matched",
+      "reason": "Complete resource-owner callback or child lifecycle; remaining emission callback, base constructors and static data reference-dependent."
+    },
+    {
+      "id": "operation_2398fc",
+      "source": "src/objects/operation_2398fc.c",
+      "address": "0x8c2398fc",
+      "entry": "_operation_2398fc",
+      "ranges": [
+        {
+          "offset": 2267388,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_2398fc",
+          "address": "0x8c2398fc",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "7acc7110b35e8c3974c0d211225d84ac01a32b3bb6c861a9bfbc4efa2d320a9c",
+      "headers": [
+        "src/include/resource_owner.h"
+      ],
+      "boundary_review": "Raw SH4 through adjacent entry, all literals/alignment; forwarded vector inputs verified at 1aba3c; final checked source exact twice; reconstruction-stage77.",
+      "status": "matched",
+      "reason": "Complete resource-owner callback or child lifecycle; remaining emission callback, base constructors and static data reference-dependent."
+    },
+    {
+      "id": "operation_239820",
+      "source": "src/objects/operation_239820.cpp",
+      "language": "c++",
+      "address": "0x8c239820",
+      "entry": "_operation_239820",
+      "headers": [
+        "src/include/resource_owner_virtual.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2267168,
+          "size": 220
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_239820",
+          "address": "0x8c239820",
+          "size": 220
+        }
+      ],
+      "reference_sha256": "6fa44ecf66d9f85194d9d21050b4bd260b292463f4776e5a940434c48745daa9",
+      "symbols": {
+        "_mode_at": "0x8c1aaabc",
+        "_delay_at": "0x8c1ab01c"
+      },
+      "boundary_review": "Raw SH4 through adjacent entry, all literals/alignment; forwarded vector inputs verified at 1aba3c; final checked source exact twice; reconstruction-stage77.",
+      "status": "matched",
+      "reason": "Complete resource-owner callback or child lifecycle; remaining emission callback, base constructors and static data reference-dependent."
     }
   ]
 }

@@ -1,0 +1,67 @@
+#ifndef PSO_RESOURCE_OWNER_VIRTUAL_H
+#define PSO_RESOURCE_OWNER_VIRTUAL_H
+/* Provisional dispatch slots and prefixes, independent of the nonvirtual view. */
+#include "src/include/vector3.h"
+struct ResourceTargetView {char unknown00[60];Vector3 position;char unknown48[820];int mode;};
+class ResourceVirtualBase {public:char unknown00[24];
+virtual void unknown_0();
+virtual void unknown_1();
+virtual void unknown_2();
+virtual void unknown_3();
+virtual void unknown_4();
+virtual void unknown_5();
+virtual void unknown_6();
+virtual void unknown_7();
+virtual void unknown_8();
+virtual void unknown_9();
+virtual void unknown_10();
+virtual void unknown_11();
+virtual void unknown_12();
+virtual void unknown_13();
+virtual void unknown_14();
+virtual void unknown_15();
+virtual void unknown_16();
+virtual void unknown_17();
+virtual void unknown_18();
+virtual void unknown_19();
+virtual void unknown_20();
+virtual void unknown_21();
+virtual void unknown_22();
+virtual void unknown_23();
+virtual void unknown_24();
+virtual void unknown_25();
+virtual void unknown_26();
+virtual void unknown_27();
+virtual void unknown_28();
+virtual void unknown_29();
+virtual void unknown_30();
+virtual void unknown_31();
+virtual void unknown_32();
+virtual int query();
+virtual void unknown_34();
+virtual void unknown_35();
+virtual void unknown_36();
+virtual void unknown_37();
+virtual void unknown_38();
+virtual void unknown_39();
+virtual void unknown_40();
+virtual void unknown_41();
+virtual void unknown_42();
+virtual void unknown_43();
+virtual void unknown_44();
+virtual void unknown_45();
+virtual void unknown_46();
+virtual void unknown_47();
+virtual void notify(Vector3 *,int,int,int);};
+class ResourceOwnerView:public ResourceVirtualBase {public:char unknown1c[288];ResourceTargetView *target;char unknown140[228];short part;char unknown226[18];int speed;char unknown23c[4];int state;Vector3 position;};
+typedef char check_ResourceTargetView_position[(unsigned long)&((ResourceTargetView *)0)->position == 60 ? 1 : -1];
+typedef char check_ResourceTargetView_mode[(unsigned long)&((ResourceTargetView *)0)->mode == 892 ? 1 : -1];
+typedef char check_ResourceTargetView_prefix[sizeof(ResourceTargetView) == 896 ? 1 : -1];
+typedef char check_ResourceVirtualBase_prefix[sizeof(ResourceVirtualBase) == 28 ? 1 : -1];
+typedef char check_ResourceOwnerView_target[(unsigned long)&((ResourceOwnerView *)0)->target == 316 ? 1 : -1];
+typedef char check_ResourceOwnerView_part[(unsigned long)&((ResourceOwnerView *)0)->part == 548 ? 1 : -1];
+typedef char check_ResourceOwnerView_speed[(unsigned long)&((ResourceOwnerView *)0)->speed == 568 ? 1 : -1];
+typedef char check_ResourceOwnerView_state[(unsigned long)&((ResourceOwnerView *)0)->state == 576 ? 1 : -1];
+typedef char check_ResourceOwnerView_position[(unsigned long)&((ResourceOwnerView *)0)->position == 580 ? 1 : -1];
+typedef char check_ResourceOwnerView_prefix[sizeof(ResourceOwnerView) == 592 ? 1 : -1];
+#endif
