@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **306 exact functions in 284 modules**, replacing
-**30,692 bytes** of the 4,162,912-byte decoded executable (**0.7373% image coverage**).
-It retains **4,132,220 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **310 exact functions in 288 modules**, replacing
+**30,916 bytes** of the 4,162,912-byte decoded executable (**0.7427% image coverage**).
+It retains **4,131,996 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 71
+## Latest batch: stage 72
 
-Low-ID lookup/replacement and field transition add three functions and 212 bytes
-in three modules, including one fully matching C++ module. All 303 earlier
-matches, module definitions and source/header hashes are preserved. Since the
-initial checkpoint, 272 functions replace 27,048 bytes. All 23 trials are retained,
-including two compiler/linker rejections. Related initializer/update candidates
-remain 484/92 and 668/22 in scratch. The original primary targets remain 512/30
-and 388/8; signed remainder is unresolved.
+State transition, signed index, banked lookup and conditional float query add
+four functions and 224 bytes in four modules. All 306 earlier matches, module
+definitions and source/header hashes are preserved. Since the initial checkpoint,
+276 functions replace 27,272 bytes. All 28 trials are retained, including one
+compiler rejection. Related initializer/update candidates remain 484/92 and
+668/22 in scratch. The original primary targets remain 512/30 and 388/8;
+signed remainder is unresolved.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

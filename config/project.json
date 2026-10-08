@@ -263,6 +263,30 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage71."
     },
     {
+      "id": "operation_021fcc",
+      "source": "src/objects/operation_021fcc.c",
+      "address": "0x8c021fcc",
+      "entry": "_operation_021fcc",
+      "ranges": [
+        {
+          "offset": 73676,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_021fcc",
+          "address": "0x8c021fcc",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "bc092ad3a894f9d3533548c21880cb0f941e2a1b6cbcde98983ff09ff621495f",
+      "headers": [
+        "src/include/state_query_views.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; raw callees checked for incoming arguments; final source exact twice; reconstruction-stage72."
+    },
+    {
       "id": "mask_any",
       "address": "0x8c027064",
       "source": "src/samples/mask_any.c",
@@ -485,6 +509,54 @@
       "headers": [
         "src/include/object.h"
       ]
+    },
+    {
+      "id": "operation_02c350",
+      "source": "src/objects/operation_02c350.c",
+      "address": "0x8c02c350",
+      "entry": "_operation_02c350",
+      "ranges": [
+        {
+          "offset": 115536,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_02c350",
+          "address": "0x8c02c350",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "00b5956dbf7b7086d2c4f391a75f3e4e638232581358e7c2683f1361267eed70",
+      "headers": [
+        "src/include/state_query_views.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; raw callees checked for incoming arguments; final source exact twice; reconstruction-stage72."
+    },
+    {
+      "id": "operation_02c368",
+      "source": "src/objects/operation_02c368.c",
+      "address": "0x8c02c368",
+      "entry": "_operation_02c368",
+      "ranges": [
+        {
+          "offset": 115560,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_02c368",
+          "address": "0x8c02c368",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "a7d94813136405c12aafcbdb1f29930643bbff9659f106b2220666ec63ef0dcc",
+      "headers": [
+        "src/include/state_query_views.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; raw callees checked for incoming arguments; final source exact twice; reconstruction-stage72."
     },
     {
       "id": "current_effect_mode",
@@ -6739,6 +6811,30 @@
         "_format_base": "0x8c324f4c"
       },
       "boundary_review": "Raw little-endian SH4: entry0x8c1ab4b8, return delay0x8c1ab4e8, zero alignment0x8c1ab4ea, seven literal words0x8c1ab4ec..0x8c1ab508. Complete fixed-C match independently twice; see reconstruction-stage34."
+    },
+    {
+      "id": "operation_1e9610",
+      "source": "src/objects/operation_1e9610.c",
+      "address": "0x8c1e9610",
+      "entry": "_operation_1e9610",
+      "ranges": [
+        {
+          "offset": 1938960,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1e9610",
+          "address": "0x8c1e9610",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "e2bbdab860effce982a5ac8463215b23360a57d3b9a01aa73fc85b97e5344785",
+      "headers": [
+        "src/include/state_query_views.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; raw callees checked for incoming arguments; final source exact twice; reconstruction-stage72."
     },
     {
       "id": "select_effect_kind",

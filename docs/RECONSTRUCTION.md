@@ -3699,3 +3699,50 @@ default linker and full-range rules are unchanged. Original primary targets
 remain **512/30 and 388/8**, related reuse **448/4**, manager initialization
 **280/8**, and signed remainder unresolved. The primary batch is still incomplete;
 these supporting matches do not replace its acceptance criteria.
+
+
+## State transition and query helpers, stage 72
+
+Four complete functions add **224 bytes**: state transition at **0x8c021fcc**
+(104), signed index at **0x8c02c350** (24), conditional float query at
+**0x8c02c368** (40), and banked table lookup at **0x8c1e9610** (56).
+Totals are **310 functions / 288 modules / 30,916 compiled full-range bytes /
+4,131,996 retained reference bytes**, or **0.7427% whole-image coverage**.
+All 306 previous matches, module definitions and source/header hashes remain
+unchanged. Since the initial checkpoint, 276 functions replace 27,272 bytes.
+Code-only completion remains unknown; separately reconstructed static data is zero.
+
+The checked provisional header describes only observed prefixes. The transition
+preserves the 0x1e000 guard at offset 0x310, flag 0x10000 at offset 52, mode 16,
+signed short state/value and saved angle. Raw inspection establishes that its
+lookup helper consumes the object argument. The signed index helper preserves
+negative values and maps values at least 15 to 1. The banked lookup selects a
+retained pointer table using flag 0x100000; explicit two-byte index arithmetic
+matches all 56 bytes, while ordinary array indexing generates 60.
+
+The float query returns zero for mode 2 and otherwise forwards the object,
+second pointer and float argument. Raw callee instructions save R4, R5 and FR4,
+so a one-argument declaration would be incorrect even if caller registers
+happened to persist. An ordinary C inline predicate followed by explicit != 0
+reproduces MOVT/TST and the entire 40-byte range. A direct predicate generates
+36 bytes; == 1 differs by three bytes and bit masking generates 44. Unsigned int,
+long and unsigned long predicate results also match. The C++ bool experiment was
+rejected because bool is unavailable with the pinned flags; flags were not
+changed. Other C++ predicate experiments did not match.
+
+Long conversion, angle-local and angle-difference prototype experiments on the
+primary operation remain **512/30**. The emission remains **388/8**, related reuse
+**448/4**, and manager initialization **280/8**. Signed remainder remains unresolved.
+The primary batch is incomplete; these supporting matches do not replace its
+acceptance criteria. Related effect initializer/update remain 484/92 and 668/22.
+
+All **28 trials**, including **one compiler rejection**, retain source snapshots,
+hypotheses and comparisons in `reconstruction-stage72`; completed compilations
+retain compiler receipts. Final sources match independently twice. Identifiers,
+source paths and intervals are checked before admission. Two fresh exact builds,
+integrated-image comparison, five-function proof and all **53 research tests**
+pass; the public suite remains **58 tests**. Source-only rejects 4,131,996 retained
+bytes without changing artifacts. Focused exports were regenerated after manifest
+changes on a disposable copy and checked against current inputs; the original
+database is unchanged. Compiler, base flags, linker and full-range rules remain
+unchanged.
