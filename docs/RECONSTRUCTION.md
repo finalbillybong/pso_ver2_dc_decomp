@@ -5721,3 +5721,43 @@ Reproduce with `python3 -B tools/verify_source.py`, run tests with
 `python3 -B -m unittest discover -s tests -v`, and expect rejection from
 `python3 -B tools/project.py build --source-only`. Public progress is refreshed
 with `python3 -B tools/progress.py --record`; check it using `--check`.
+
+
+## Effect view table and virtual dispatch, stage 111
+
+Three new exact functions replace **264 bytes**: mark_effect_table_pending at
+0x8c0a6c08 (44), set_effect_view at0x8c0a6c34 (156), and forward_effect_view at
+0x8c0a6cd0 (64). Totals are **473 functions /423 modules /46,960 compiled bytes /
+4,115,952 retained reference bytes**, or **1.1281% whole-image coverage**. All470
+previous matches and source/header files are preserved. Standalone data remains zero.
+
+The pending marker preserves its zero-index-only guard, nullable table entry and
+write at offset152. The forwarder preserves nullable actor lookup and addition of
+0x8000 to the angle at offset100 before passing both vector pointers. Each first
+ordinary-C candidate matches its full range.
+
+The middle routine accepts table modes0 or8, checks the selected pointer, ORs8
+into flags144, dispatches orientation through vptr24/slot60, then writes position124
+and target112 component by component. C++ naturally reproduces the call context.
+The initial twelve preceding method declarations generate slot56 and156/1.
+A mistaken slot calculation tested fourteen declarations, yielding slot64 and
+160/109; the corrected thirteen declarations match156/0. Both variants and the
+incorrect prediction are retained as evidence. This is a slot-layout correction,
+not a compiler setting change or a reason to revisit unrelated parked targets.
+
+New provisional C/C++ prefixes assert every accessed offset and prefix size.
+All final checked sources compile independently twice to exact complete ranges,
+including return delay slots and literals. Two fresh builds in each checkout,
+exact integrated image, five-function proof,53 research tests and58 public tests
+pass. Source-only rejects4,115,952 bytes without altering build artifacts. Focused
+exports are regenerated on a disposable database copy and validated.
+
+There is no primary-target or standalone-data improvement. Parked results remain
+512/30 and388/8 with unchanged evidence-based revisit conditions. The ten-hypothesis
+per-target limit and earlier parking rule persist across sessions. The preceding
+stage110 commit e674285 is published and its remote checks passed. No gameplay,
+disc repacking, private data changes or research-workspace commit occurs.
+
+Reproduce with `python3 -B tools/verify_source.py`, then run the current tests and
+`python3 -B tools/project.py build --source-only` (expected rejection). Public
+progress uses `python3 -B tools/progress.py --record` after exact verification.

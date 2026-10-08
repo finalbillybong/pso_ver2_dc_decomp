@@ -11149,6 +11149,88 @@
       "boundary_review": "Raw entries0x8c03f414/444/480 bound48/60byte routines; return delay and both literals included; source exact twice; stage110.",
       "status": "matched",
       "reason": "Complete range independently exact twice, including literals. Stage110; primary targets remain parked."
+    },
+    {
+      "id": "mark_effect_table_pending",
+      "source": "src/effects/mark_effect_table_pending.c",
+      "address": "0x8c0a6c08",
+      "entry": "_mark_effect_table_pending",
+      "headers": [
+        "src/include/effect_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 617480,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "mark_effect_table_pending",
+          "address": "0x8c0a6c08",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "3d777a36c399097e3e6c77d5bc962b70ed2e37162efb71e4e85032f135b07c68",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entries0x8c0a6c08/34/d0 and0x8c0a6d10 bound44/156/64byte functions including return delays and complete literal pools; checked source exact twice; stage111.",
+      "status": "matched",
+      "reason": "Complete checked effect table/view operation. Primary targets remain parked; no compiler changes."
+    },
+    {
+      "id": "forward_effect_view",
+      "source": "src/effects/forward_effect_view.c",
+      "address": "0x8c0a6cd0",
+      "entry": "_forward_effect_view",
+      "headers": [
+        "src/include/effect_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 617680,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_effect_view",
+          "address": "0x8c0a6cd0",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "cd5568ca2d34a8eacb0ea90bf51699ad6411d48c765a90d501773bb2d77b263c",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entries0x8c0a6c08/34/d0 and0x8c0a6d10 bound44/156/64byte functions including return delays and complete literal pools; checked source exact twice; stage111.",
+      "status": "matched",
+      "reason": "Complete checked effect table/view operation. Primary targets remain parked; no compiler changes."
+    },
+    {
+      "id": "set_effect_view",
+      "source": "src/effects/set_effect_view.cpp",
+      "address": "0x8c0a6c34",
+      "entry": "_set_effect_view",
+      "headers": [
+        "src/include/effect_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 617524,
+          "size": 156
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_effect_view",
+          "address": "0x8c0a6c34",
+          "size": 156
+        }
+      ],
+      "reference_sha256": "a365afdc84bcf0a6c0471c4043960261f11b9a223b407d8cb10a234c8a87161b",
+      "symbols": {},
+      "language": "c++",
+      "boundary_review": "Raw SH4 entries0x8c0a6c08/34/d0 and0x8c0a6d10 bound44/156/64byte functions including return delays and complete literal pools; checked source exact twice; stage111.",
+      "status": "matched",
+      "reason": "Complete checked effect table/view operation. Primary targets remain parked; no compiler changes."
     }
   ]
 }
