@@ -5930,6 +5930,78 @@
       "boundary_review": "Raw two effect destructors and angle/vector helpers reviewed through adjacent entries, signed/null branches, shared-result merge, multiply grouping, unordered comparisons, reverse-copy path, all call/return delays, literals and natural alignment. Full checked match twice; stage150."
     },
     {
+      "id": "adjust_scalar_scaled",
+      "source": "src/math/adjust_scalar_scaled.c",
+      "address": "0x8c0a4e4c",
+      "entry": "_adjust_scalar_scaled",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 609868,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "adjust_scalar_scaled",
+          "address": "0x8c0a4e4c",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "b1b79161bd69f4b239689eb94a33b3010cfe3569efbc15fab852ebe40717b27b",
+      "symbols": {},
+      "boundary_review": "Raw scalar adjustment, slot release and effect destruction reviewed through adjacent entries, repeated absolute call and unordered conditions, signed/null branches, loop offsets, call/return delays, literals and natural padding. Full checked match twice; stage151."
+    },
+    {
+      "id": "release_view_slots",
+      "source": "src/effects/release_view_slots.c",
+      "address": "0x8c0a4f4c",
+      "entry": "_release_view_slots",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 610124,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_view_slots",
+          "address": "0x8c0a4f4c",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "a4d7cea130256da343a0cbacdbf4e913f03d6327a569dc60d91c03304ee252f9",
+      "symbols": {},
+      "boundary_review": "Raw scalar adjustment, slot release and effect destruction reviewed through adjacent entries, repeated absolute call and unordered conditions, signed/null branches, loop offsets, call/return delays, literals and natural padding. Full checked match twice; stage151."
+    },
+    {
+      "id": "destroy_effect_a504c",
+      "source": "src/effects/destroy_effect_a504c.c",
+      "address": "0x8c0a504c",
+      "entry": "_destroy_effect_a504c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 610380,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_a504c",
+          "address": "0x8c0a504c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "1ae6b3787afb80de7bec81aa5fa5c53cc80efd801a941830d6354592a689762a",
+      "symbols": {},
+      "boundary_review": "Raw scalar adjustment, slot release and effect destruction reviewed through adjacent entries, repeated absolute call and unordered conditions, signed/null branches, loop offsets, call/return delays, literals and natural padding. Full checked match twice; stage151."
+    },
+    {
       "id": "reset_effect_table_state",
       "source": "src/effects/reset_effect_table_state.c",
       "address": "0x8c0a6bdc",

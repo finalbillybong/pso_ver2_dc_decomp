@@ -7424,3 +7424,49 @@ validated against a disposable database copy. Parked targets remain incomplete.
 Stage 149 commit 6958006 is published with successful remote checks. Reproduce
 with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into scalar adjustment, slot lifetime and referenced resource tables.
+
+
+## Scalar adjustment and view slot lifetime, stage 151
+
+Three complete matches replace **244 bytes**. Totals are **660 functions / 602
+modules / 61,072 compiled bytes / 4,101,840 retained reference bytes / 1.4670%
+whole-image coverage**. All 657 prior matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| adjust_scalar_scaled | 0x8c0a4e4c | 116 |
+| release_view_slots | 0x8c0a4f4c | 60 |
+| destroy_effect_a504c | 0x8c0a504c | 68 |
+
+The scalar helper preserves repeated absolute-value calls, exact multiplier,
+product grouping and unordered conditions. Writing first < second instead of
+second > first reproduces the floating operand load order and resolves eight
+bytes. The slot-release loop explicitly retains its unsigned byte offset across
+the nullable destructor call, replacing repeated MUL4 operations with the observed
+SHLL2. The destructor preserves its null guard and signed release test.
+
+Investigation-only work remains separate. vector_to_view_angles is parked after
+two hypotheses at 120/120 bytes with seven differences, first 0x8c0a4e23. Splitting
+the second conversion into compound operations produces identical output. It
+requires evidence for sequential FR1 factor reuse or verified inline context;
+this does not resolve or reopen the original primary angle target.
+
+initialize_view_slots is parked after five hypotheses. Its full-size baseline is
+140/140 bytes with 89 differences, first 0x8c0a4ec8. Explicit unsigned offsets fix
+stride instructions but produce 136/140 bytes with 101 differences. Declaring the
+initializer fixes its stack-call schedule but leaves 136/117. Declaring allocation
+does not hoist size 1088 into the fifth saved register; negating the count guard
+produces identical output. Revisit only with independently exact allocation-loop
+hoisting or verified C++ context. Provisional table records have checked offsets
+and sizes; their original contents remain reference-dependent.
+
+Twenty snapshots form eleven binary groups. Every final admission independently
+matches twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,101,840 bytes without changing artifacts. Focused exports validate using a
+disposable database copy. Neither parked investigation earns completion credit.
+
+Stage 150 commit 7148371 is published with successful remote checks. Reproduce
+with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into view parameter access, vector copies and adjacent effect factories.

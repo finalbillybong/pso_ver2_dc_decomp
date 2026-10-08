@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "6f1dea23e74b3c03b2498f5af6de31415d4db1049a26de884f217e8ed67a8985",
+    "config/project.json": "3185052031c1141f7dd866f9ea5a30b336df817afaba761bd878e7d8bf4c4fed",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/adjust_vector_scaled.c": "2bc8ad32f193d55a348ce64032cf6850bb892542629f77a45f05a492309bbd9a",
@@ -83,6 +83,7 @@
     "src/effects/destroy_effect_a0698.c": "31095757ad1aa80c8d4e2a4eff251e4709a2349d5a0c7d68ff4e086b94af5b6b",
     "src/effects/destroy_effect_a4910.c": "eb8a99fc662d830f9ec5d768e389d6773f4ad5e681ea90685c42adbfcf33f9ab",
     "src/effects/destroy_effect_a4b1c.c": "a092a65c7a3182723cd6a3e5aa8eb692222a5adf55969eeacf14250997110810",
+    "src/effects/destroy_effect_a504c.c": "1c491ffca067b3dd6bc986ede4bc9169d4aab0f37a2bf6aa06f2101d7b32f1e1",
     "src/effects/destroy_effect_base.c": "df663573c430aefab18d80d5223334384b7f15e0c7c16a76d8ce45ccba3f510f",
     "src/effects/destroy_effect_d870.c": "94eda1ecef8c879f9fcf38b14bdf146a0f3e41342fa281c364338bbeeeb31410",
     "src/effects/destroy_effect_manager.c": "2f538c6c47fb0b3096d28fde758740b76bf4ef5a2c853b09c0989f849406efec",
@@ -152,6 +153,7 @@
     "src/effects/release_effect_resources.c": "d68776116ce15537b85704aeafaa2f3b59c3fc91f7fd1637ccf64eb4dbaf7542",
     "src/effects/release_node.c": "9a565d91c9749261ba1daff4ea25e56e26a77ab57e0055716d5cd4ddb08cbb57",
     "src/effects/release_render_mode_four.c": "982a68ec382d3c9feaf31a904975638e50e15f520d66387bc90c7706727ce629",
+    "src/effects/release_view_slots.c": "2ea2e85ca1a3f7253ef6a49a1d13288a29cbf2d1b044670ae8e62545296cce64",
     "src/effects/reset_effect_by_index.c": "5c4a10830326ecd49a1b4cf1a36492b329ebbe8ea0840bc8f7503c5ab8e5cb41",
     "src/effects/reset_effect_resource.c": "54d4822af7203a7af110f7580c61a6df9ace3160c2574c970ea8694d2919f9d7",
     "src/effects/reset_effect_table_state.c": "cab2ddccb54de0faf48dfb18697a9fa0b2b7887aa905a4e81c3eb94a7f559103",
@@ -340,6 +342,7 @@
     "src/include/widget_panel_render.h": "be21adbfba1ea7da9f08356da0dbbf6064ef89446d435225686def38d81c8f81",
     "src/include/widget_record_tables.h": "2a90337a05c3d2f33a2a9c3bd615c2fb110adcfccd5e3527826a4308ceb54730",
     "src/include/widget_stat_values.h": "32acbc44e221506e445c99d9a1a1b7e3e3f21c7c9f22e7cda2a33b788a2c0a90",
+    "src/math/adjust_scalar_scaled.c": "2116a5de4da295722b0bb5d1efe6cbbd19a66720e1f201f4c4b2011a98f82d26",
     "src/math/advance_transform_tracks.c": "d5ef371e96c98474e296f13d1fd7553457fb9130603fad069132a4e1ef1b3eb6",
     "src/math/allocate_vector_entries.c": "ce087657dc99a7514aa7519eb2bda415223a57d1c06e49ec6a28fc40689f26a3",
     "src/math/angle_difference.c": "815de2106556eb2ab7953449876fbb544aaf4ab45056a97bfd5a8c58dbf53df8",
@@ -3298,6 +3301,39 @@
       "-O2"
     ],
     "adjust_vector_scaled": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "adjust_scalar_scaled": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "release_view_slots": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_effect_a504c": [
       "-proc",
       "SH4",
       "-endian",
@@ -7392,6 +7428,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4102084,
+  "source_only_rejected_retained_bytes": 4101840,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

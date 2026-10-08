@@ -1,0 +1,2 @@
+#include "src/include/view_slot_table.h"
+void initialize_view_slots(void){ViewSlotTable *table=((ViewSlotTable *)0x8c303864)+((unsigned int (*)(void))0x8c032b10)();unsigned int count,index;if(table->records){count=table->count;if(count<8){for(index=0;index<count;index++){void *slot=((void *(*)(unsigned int))0x8c011ecc)(1088);if(slot)((void (*)(void *,int,void *,int,int,int))0x8c03d610)(slot,1,table->records[index].resource,0,0,0);((void **)0x8c46f0c8)[index]=slot;}}}}

@@ -1,0 +1,1 @@
+void release_view_slots(void){int i;for(i=0;i<8;i++){unsigned int offset=(unsigned int)i<<2;void *slot=*(void **)((char *)0x8c46f0c8+offset);if(slot){((void (*)(void *,int))0x8c03dc40)(slot,1);*(void **)((char *)0x8c46f0c8+offset)=0;}}}

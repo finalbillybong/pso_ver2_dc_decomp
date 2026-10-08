@@ -1,0 +1,2 @@
+#define absolute_at ((float (*)(float))0x8c12c714)
+int adjust_scalar_scaled(float *first,float *second,float scale){float distance=absolute_at(*first-*second);float step=distance*0.1599999964237213f;step*=scale;if(distance>step){float again=absolute_at(*first-*second);if(again==0.0f||!(again>step))*first=*second;else if(*first<*second)*first+=step;else *first-=step;return 0;}*first=*second;return 1;}

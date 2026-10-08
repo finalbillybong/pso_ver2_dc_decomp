@@ -19505,6 +19505,262 @@
       "boundary_review": "Raw two effect destructors and angle/vector helpers reviewed through adjacent entries, signed/null branches, shared-result merge, multiply grouping, unordered comparisons, reverse-copy path, all call/return delays, literals and natural alignment. Full checked match twice; stage150.",
       "status": "matched",
       "reason": "Complete effect/math helper range; unusual observed vector behavior preserved."
+    },
+    {
+      "id": "adjust_scalar_scaled",
+      "source": "src/math/adjust_scalar_scaled.c",
+      "address": "0x8c0a4e4c",
+      "entry": "_adjust_scalar_scaled",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 609868,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "adjust_scalar_scaled",
+          "address": "0x8c0a4e4c",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "b1b79161bd69f4b239689eb94a33b3010cfe3569efbc15fab852ebe40717b27b",
+      "symbols": {},
+      "boundary_review": "Raw scalar adjustment, slot release and effect destruction reviewed through adjacent entries, repeated absolute call and unordered conditions, signed/null branches, loop offsets, call/return delays, literals and natural padding. Full checked match twice; stage151.",
+      "status": "matched",
+      "reason": "Complete scalar/slot lifetime helper range; observed behavior preserved."
+    },
+    {
+      "id": "destroy_effect_a504c",
+      "source": "src/effects/destroy_effect_a504c.c",
+      "address": "0x8c0a504c",
+      "entry": "_destroy_effect_a504c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 610380,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_a504c",
+          "address": "0x8c0a504c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "1ae6b3787afb80de7bec81aa5fa5c53cc80efd801a941830d6354592a689762a",
+      "symbols": {},
+      "boundary_review": "Raw scalar adjustment, slot release and effect destruction reviewed through adjacent entries, repeated absolute call and unordered conditions, signed/null branches, loop offsets, call/return delays, literals and natural padding. Full checked match twice; stage151.",
+      "status": "matched",
+      "reason": "Complete scalar/slot lifetime helper range; observed behavior preserved."
+    },
+    {
+      "id": "release_view_slots",
+      "source": "src/effects/release_view_slots.c",
+      "address": "0x8c0a4f4c",
+      "entry": "_release_view_slots",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 610124,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_view_slots",
+          "address": "0x8c0a4f4c",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "a4d7cea130256da343a0cbacdbf4e913f03d6327a569dc60d91c03304ee252f9",
+      "symbols": {},
+      "boundary_review": "Raw scalar adjustment, slot release and effect destruction reviewed through adjacent entries, repeated absolute call and unordered conditions, signed/null branches, loop offsets, call/return delays, literals and natural padding. Full checked match twice; stage151.",
+      "status": "matched",
+      "reason": "Complete scalar/slot lifetime helper range; observed behavior preserved."
+    },
+    {
+      "id": "vector_to_view_angles",
+      "source": "src/provisional/vector_to_view_angles.c",
+      "address": "0x8c0a4dd4",
+      "entry": "_vector_to_view_angles",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 609748,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "vector_to_view_angles",
+          "address": "0x8c0a4dd4",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "953cee89b02d737c089f49aa375be62eda5ddeec6753db8ff70f603f63bfc1da",
+      "symbols": {},
+      "status": "parked",
+      "reason": "120/120bytes,7 differing,first0x8c0a4e23. Second angle conversion allocates FR2 numerator and FR1 denominator; raw reuses FR1 sequentially. Separate compound conversion emits identical bytes. Primary angle target remains parked.",
+      "unsuccessful_distinct_hypotheses": 2,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact sequential FR1 factor reuse, or verified angle-conversion inline context. Do not repeat equivalent compound-expression variants.",
+      "comparison": {
+        "name": "vector_to_view_angles-checked-0",
+        "size": 120,
+        "expected_size": 120,
+        "exact": false,
+        "differing_bytes": 7,
+        "first_difference": "0x8c0a4e23",
+        "offsets": [
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85
+        ],
+        "source_sha256": "302c0174e3085ff0244619603c8ed17586cb7ecd67e5d0b6d5a52cb695661ec2",
+        "compiler_receipt_sha256": "d370fabcccf5f1232f03a2131bdc363618ac3e06b8ef52495e22f6b930ce0333"
+      }
+    },
+    {
+      "id": "initialize_view_slots",
+      "source": "src/provisional/initialize_view_slots.c",
+      "address": "0x8c0a4ec0",
+      "entry": "_initialize_view_slots",
+      "headers": [
+        "src/include/view_slot_table.h"
+      ],
+      "ranges": [
+        {
+          "offset": 609984,
+          "size": 140
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_view_slots",
+          "address": "0x8c0a4ec0",
+          "size": 140
+        }
+      ],
+      "reference_sha256": "67adfddf395d0616d8299e6ec5a05816ae8bb34a2650b27ca3332bb7279e1313",
+      "symbols": {},
+      "status": "parked",
+      "reason": "Best full-size baseline140/140bytes,89 differing,first0x8c0a4ec8. Explicit byte offsets fix multiply instructions but produce136/140bytes,101 differences. Declared initializer fixes stack call schedule but136/117; allocator declaration does not hoist1088 into fifth saved GPR, and negated guard is identical. Raw uses CMP/HS count>=8 and hoisted sizeR10; candidate CMP/HI reverse operands and per-iteration allocation literal.",
+      "unsuccessful_distinct_hypotheses": 5,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact loop hoisting an allocation size into saved GPR, or verified C++ allocation context; combine with proven byte offsets and declared initializer only then.",
+      "comparison": {
+        "name": "initialize_view_slots-checked-0",
+        "size": 140,
+        "expected_size": 140,
+        "exact": false,
+        "differing_bytes": 89,
+        "first_difference": "0x8c0a4ec8",
+        "offsets": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          30,
+          36,
+          37,
+          38,
+          39,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          81,
+          82,
+          83,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          107,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131
+        ],
+        "source_sha256": "7f0b9efcc6acb4fdeee9d5f75065bac6e59476b1132efbd11c4a383caf5fb3ee",
+        "compiler_receipt_sha256": "cb036c9e30b73b02466aa2443ba998698e1d9f475c18f5abbfad7c0a3d699a52"
+      }
     }
   ]
 }
