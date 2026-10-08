@@ -4091,3 +4091,59 @@ Supporting matches do not replace those acceptance criteria. Root initialization
 remaining child callbacks and static data retain reference dependence. Publication
 retains all default scanner rules and the single verified exact source-hash
 exception with its stage-75 detection control.
+
+
+## Two-slot derived-child lifecycle, stage 79
+
+Four complete functions add **408 bytes**: factory **0x8c1abf30** (104),
+construction **0x8c1abf98** (80), destruction **0x8c1abfe8** (132), and effect-slot
+update **0x8c1ac0c4** (92). Totals are **372 functions / 325 modules / 34,992
+compiled full-range bytes / 4,127,920 retained reference bytes**, or **0.8406%
+whole-image coverage**. All 368 previous matches, module definitions and
+source/header hashes remain unchanged. Since the initial checkpoint, 338
+functions replace 31,348 bytes. Code-only completion remains unknown; separately
+reconstructed static data is zero.
+
+The provisional 104-byte child view checks all accessed offsets and its two effect
+slots. Factory guards and branch-local allocation result preserve the nonzero
+floating test, including NaN, parent/global checks and vector/scalar forwarding.
+Construction retains dispatch/tag/size writes, zero flags, both slot clears and
+the final object flag OR. Destruction calls release for both slots, retains the
+inlined base null check and linked flag write, then conditionally releases the
+owner for a positive signed flag. Update rereads each slot after position update,
+queries activity and clears only inactive slots.
+
+Direct array expressions generate MUL.L addressing and larger functions. Byte
+addressing relative to the checked array base with explicit index shift matches
+the constructor and destructor. Keeping the shifted offset live across calls
+while independently recalculating each array base matches all 92 update bytes.
+Hoisting the base instead emits 88 bytes and remains rejected.
+
+Effect replacement **0x8c1ac06c** remains unadmitted: 88 bytes, four differences
+from **0x8c1ac0a2** in final argument scheduling. Shifted slot addressing and a
+narrow flags prototype reproduce the preceding instructions. The existing
+admitted factory forwards flags to an unsigned-short initializer field; these
+prototype experiments remain provisional. External declarations, captured
+position/angle pointers, inline getters and a nonvirtual member-call form do
+not complete the match.
+
+The primary C++ operation was revalidated and external angle/difference callee
+declarations were tested independently and together on its current source; all
+remain **512/30**. Modeling the emission start call as a nonvirtual C++ member
+likewise leaves **388/8** and related reuse **448/4** unchanged. These failed
+hypotheses are retained with source and compiler evidence.
+
+All **42 trials**, with no compiler rejection, retain hypotheses, snapshots,
+compiler receipts and comparisons. Final checked sources match independently
+twice. Two fresh exact builds, integrated-image comparison, five-function proof
+and all **53 research tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,127,920 retained bytes without changing artifacts. Focused
+exports are regenerated on a disposable copy and validated against current
+inputs; the original database, pinned compiler, base flags, default GNU linker
+and complete-range rules remain unchanged.
+
+The primary batch remains incomplete. Manager initialization remains **280/8**;
+signed remainder, root initialization, effect replacement and static data remain
+reference-dependent. Supporting matches do not replace primary acceptance.
+Publication retains the default secret-scanner rules and the single verified
+exact source-hash exception with its stage-75 detection control.

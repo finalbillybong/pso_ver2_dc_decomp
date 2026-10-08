@@ -7131,6 +7131,110 @@
       "boundary_review": "Raw SH4 entry through adjacent entry, literals and alignment; root vector/scalar inputs established at 1aba3c; complete checked source exact twice; reconstruction-stage78."
     },
     {
+      "id": "operation_1abf30",
+      "source": "src/objects/operation_1abf30.c",
+      "address": "0x8c1abf30",
+      "entry": "_operation_1abf30",
+      "ranges": [
+        {
+          "offset": 1687344,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1abf30",
+          "address": "0x8c1abf30",
+          "size": 104
+        }
+      ],
+      "headers": [
+        "src/include/derived_effect_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "2ae986f21028625ac98124431b56eadf1f606884d545c21af925d644f35aa865",
+      "boundary_review": "Raw SH4 to adjacent entry including all literals/alignment; root vector/scalar ABI previously established; two-slot field offsets checked; final source exact twice; reconstruction-stage79."
+    },
+    {
+      "id": "operation_1abf98",
+      "source": "src/objects/operation_1abf98.c",
+      "address": "0x8c1abf98",
+      "entry": "_operation_1abf98",
+      "ranges": [
+        {
+          "offset": 1687448,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1abf98",
+          "address": "0x8c1abf98",
+          "size": 80
+        }
+      ],
+      "headers": [
+        "src/include/derived_effect_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "1a7c3625f2404c4fc3371c5d7bac69dc2fd6fd5465485d8c8b8518ecc51010f5",
+      "boundary_review": "Raw SH4 to adjacent entry including all literals/alignment; root vector/scalar ABI previously established; two-slot field offsets checked; final source exact twice; reconstruction-stage79."
+    },
+    {
+      "id": "operation_1abfe8",
+      "source": "src/objects/operation_1abfe8.c",
+      "address": "0x8c1abfe8",
+      "entry": "_operation_1abfe8",
+      "ranges": [
+        {
+          "offset": 1687528,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1abfe8",
+          "address": "0x8c1abfe8",
+          "size": 132
+        }
+      ],
+      "headers": [
+        "src/include/derived_effect_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "fe45a69256291d6c4b11b5d1fbdbfe78221790872ccfee8bddcadce56bcc9496",
+      "boundary_review": "Raw SH4 to adjacent entry including all literals/alignment; root vector/scalar ABI previously established; two-slot field offsets checked; final source exact twice; reconstruction-stage79."
+    },
+    {
+      "id": "operation_1ac0c4",
+      "source": "src/objects/operation_1ac0c4.c",
+      "address": "0x8c1ac0c4",
+      "entry": "_operation_1ac0c4",
+      "ranges": [
+        {
+          "offset": 1687748,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1ac0c4",
+          "address": "0x8c1ac0c4",
+          "size": 92
+        }
+      ],
+      "headers": [
+        "src/include/derived_effect_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "1df583c009dde7eba6f0ea207b20b9f79055f4e9959aff9edd5a25f89553ffb6",
+      "boundary_review": "Raw SH4 to adjacent entry including all literals/alignment; root vector/scalar ABI previously established; two-slot field offsets checked; final source exact twice; reconstruction-stage79."
+    },
+    {
       "id": "operation_1e9610",
       "source": "src/objects/operation_1e9610.c",
       "address": "0x8c1e9610",
