@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **390 exact functions in 343 modules**, replacing
-**36,512 bytes** of the 4,162,912-byte decoded executable (**0.8771% image coverage**).
-It retains **4,126,400 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **396 exact functions in 349 modules**, replacing
+**37,188 bytes** of the 4,162,912-byte decoded executable (**0.8933% image coverage**).
+It retains **4,125,724 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,13 +28,13 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 83
+## Latest batch: stage 84
 
-Resource state loop and cleanup add four functions and 496 bytes in four modules.
-All 386 earlier matches, module definitions and source/header hashes are
-preserved. Since the initial checkpoint, 356 functions replace 32,868 bytes.
-All 30 trials are retained, including one linker rejection. State transitions,
-stack-context cleanup and flag predicate materialization remain as observed.
+Resource flag-state callbacks add six functions and 676 bytes in six modules.
+All 390 earlier matches, module definitions and source/header hashes are
+preserved. Since the initial checkpoint, 362 functions replace 33,544 bytes.
+All 27 trials are retained. Start/poll/completion paths preserve observed state,
+flag, handle and global ordering; both destructors retain all three null checks.
 Buffer initialization remains 172/4; primary targets remain 512/30 and 388/8.
 Signed remainder, global allocation and static data remain unresolved.
 

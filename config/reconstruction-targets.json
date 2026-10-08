@@ -8988,6 +8988,162 @@
       "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; context64 and resource prefix offsets checked; complete final source exact twice; reconstruction-stage83.",
       "status": "matched",
       "reason": "Complete resource state loop or cleanup callback; buffer initialization/global allocation and static data remain reference-dependent."
+    },
+    {
+      "id": "operation_1937f8",
+      "source": "src/objects/operation_1937f8.c",
+      "address": "0x8c1937f8",
+      "entry": "_operation_1937f8",
+      "ranges": [
+        {
+          "offset": 1587192,
+          "size": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1937f8",
+          "address": "0x8c1937f8",
+          "size": 144
+        }
+      ],
+      "reference_sha256": "f8759df9e2f3dd6f10894c91d0887ee61a92565a670ae2bfdff1033dd68ae46c",
+      "headers": [
+        "src/include/resource_flag_state.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource state prefix offsets checked; complete final source exact twice; reconstruction-stage84.",
+      "status": "matched",
+      "reason": "Complete resource flag-state callback; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_193888",
+      "source": "src/objects/operation_193888.c",
+      "address": "0x8c193888",
+      "entry": "_operation_193888",
+      "ranges": [
+        {
+          "offset": 1587336,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193888",
+          "address": "0x8c193888",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "f455a80e064ebc07c058d07c10dac1c06dce7db270b26442fda52deef1d01e54",
+      "headers": [
+        "src/include/resource_flag_state.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource state prefix offsets checked; complete final source exact twice; reconstruction-stage84.",
+      "status": "matched",
+      "reason": "Complete resource flag-state callback; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_1938e8",
+      "source": "src/objects/operation_1938e8.c",
+      "address": "0x8c1938e8",
+      "entry": "_operation_1938e8",
+      "ranges": [
+        {
+          "offset": 1587432,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1938e8",
+          "address": "0x8c1938e8",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "headers": [
+        "src/include/resource_flag_state.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource state prefix offsets checked; complete final source exact twice; reconstruction-stage84.",
+      "status": "matched",
+      "reason": "Complete resource flag-state callback; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_1938ec",
+      "source": "src/objects/operation_1938ec.c",
+      "address": "0x8c1938ec",
+      "entry": "_operation_1938ec",
+      "ranges": [
+        {
+          "offset": 1587436,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1938ec",
+          "address": "0x8c1938ec",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "3dc1edc1a96ee7149f38ae0d6bd3c6503bec1749dd7f3231937a82fa7934a13b",
+      "headers": [
+        "src/include/resource_flag_state.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource state prefix offsets checked; complete final source exact twice; reconstruction-stage84.",
+      "status": "matched",
+      "reason": "Complete resource flag-state callback; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_19396c",
+      "source": "src/objects/operation_19396c.c",
+      "address": "0x8c19396c",
+      "entry": "_operation_19396c",
+      "ranges": [
+        {
+          "offset": 1587564,
+          "size": 176
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_19396c",
+          "address": "0x8c19396c",
+          "size": 176
+        }
+      ],
+      "reference_sha256": "8505afb28a95d1742665e0baefbb21ace145e915d686a29295f247708d676ee5",
+      "headers": [
+        "src/include/resource_flag_state.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource state prefix offsets checked; complete final source exact twice; reconstruction-stage84.",
+      "status": "matched",
+      "reason": "Complete resource flag-state callback; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_193a1c",
+      "source": "src/objects/operation_193a1c.c",
+      "address": "0x8c193a1c",
+      "entry": "_operation_193a1c",
+      "ranges": [
+        {
+          "offset": 1587740,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193a1c",
+          "address": "0x8c193a1c",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "5645b4771bfade79bb09b20a0bf9712e3a1584d70dde3818beed7ee48c23d9ee",
+      "headers": [
+        "src/include/resource_flag_state.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource state prefix offsets checked; complete final source exact twice; reconstruction-stage84.",
+      "status": "matched",
+      "reason": "Complete resource flag-state callback; static dispatch and globals remain reference-dependent."
     }
   ]
 }

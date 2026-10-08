@@ -4354,3 +4354,51 @@ matches do not replace primary acceptance. Runtime callees, static dispatch,
 resource tables and global contents retain reference dependence. Publication
 retains all default scanner rules and the exact source-hash exception verified
 with its stage-75 detection control.
+
+
+## Resource flag-state callbacks, stage 84
+
+Six complete functions add **676 bytes**: start **0x8c1937f8** (144), poll
+**0x8c193888** (96), empty callback **0x8c1938e8** (4), derived destruction
+**0x8c1938ec** (128), completion **0x8c19396c** (176), and adjacent derived
+destruction **0x8c193a1c** (128). Totals are **396 functions / 349 modules /
+37,188 compiled full-range bytes / 4,125,724 retained reference bytes**, or
+**0.8933% whole-image coverage**. All 390 previous matches, module definitions
+and source/header hashes are preserved. Since the initial checkpoint,
+362 functions replace 33,544 bytes. Code-only completion remains unknown;
+separately reconstructed static data is zero.
+
+The start routine retains the materialized bit-four predicate, shared busy gate,
+argument capture before opening, repeated ready check and conditional cleanup.
+Capturing both the global buffer address and length recovers the final five
+bytes of call scheduling; capturing either alone, external declarations and
+capturing the buffer value do not. The complete range now matches, including
+its literals and alignment. The new 40-byte provisional prefix checks every
+observed field offset and does not change the earlier resource headers.
+
+Poll preserves status-two early return, status-three success, error bit updates,
+conditional reset and materialized error predicate selecting states one/four.
+Both derived destructors retain three null checks, three dispatch assignments,
+shared-state cleanup and positive signed release. Flattening the intermediate
+inline destructor recovers the compiler's inline depth; flattening only reset
+still emits out-of-line helpers and fails the complete-range comparison.
+Completion preserves the readiness gate, nullable copy, unconditional conversion,
+finish call, output clear, conditional handle cleanup, done bit, ownership release
+and final idle state. No extra guards, timeout or speculative behavior fixes.
+
+All **27 trials** retain source snapshots, hypotheses, comparisons and compiler
+receipts; none were rejected by the compiler. Each final checked source matches
+twice independently. Two fresh exact project builds, integrated image comparison,
+five-function proof and all **53 research tests** pass; the public suite remains
+**58 tests**. Source-only rejects 4,125,724 retained bytes without changing
+artifacts. Focused exports are regenerated on a disposable copy and validated
+against changed manifest inputs; the original database is unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Supporting
+matches do not replace those acceptance criteria. Earlier buffer initialization
+remains **172/4**, root child construction **316/28**, larger child construction
+**496/362**. Static dispatch, globals and remaining callees retain reference
+dependence. Compiler, base flags, default GNU linking and full-range acceptance
+are unchanged. Publication retains all default scanner rules and the narrowly
+verified source-hash exception with its stage-75 detection control.
