@@ -6343,3 +6343,48 @@ Stage 123 commit 6608052 is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into neighboring effect factories and their initializer dependencies.
+
+
+## Effect factories and timed lifecycle, stage 125
+
+Eight new exact functions replace **612 bytes** in eight modules. Totals are
+**542 functions / 489 modules / 52,268 compiled bytes / 4,110,644 retained reference
+bytes**, or **1.2556% whole-image coverage**. All 534 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| create_effect_b0fac | 0x8c0b0fac | 80 |
+| create_effect_b0ffc | 0x8c0b0ffc | 80 |
+| create_effect_b1aa0 | 0x8c0b1aa0 | 80 |
+| create_effect_b1af0 | 0x8c0b1af0 | 80 |
+| create_effect_b3b80 | 0x8c0b3b80 | 80 |
+| initialize_delayed_effect | 0x8c0b3cc4 | 68 |
+| destroy_delayed_effect | 0x8c0b3d08 | 68 |
+| update_delayed_effect | 0x8c0b3d4c | 76 |
+
+The five factories use the established declared initializer pattern with observed
+336-, 404- and 264-byte allocations. Each preserves four forwarded arguments and
+allocation failure. The checked 52-byte timed-effect layout contains a dispatch
+pointer at 24, signed identity at 32, ticks at 36 and position at 40. Initialization
+preserves parent attachment, aggregate vector copying and field-store order.
+Destruction preserves the signed-short deletion flag and pool release.
+
+Update increments the stored tick counter and spawns on multiples of 15 while the
+counter is at most 45, binding its signed identity only after successful allocation.
+Ordinary signed remainder emits the existing runtime dependency. Two initial link
+attempts used incorrect symbol spellings; the established project binding
+`__l_mods` resolves it without changing source or compiler settings. The helper's
+180-byte implementation remains unreconstructed and earns no additional credit.
+
+All eight functions match with their first source hypotheses. Twenty-six snapshots
+include two link failures; successful outputs form eight binary groups. Checked
+sources match independently twice. Two fresh exact builds per checkout, integrated
+image comparison, five-function proof, 53 research tests and 58 public tests pass.
+Source-only rejects 4,110,644 bytes without altering artifacts. Focused exports
+validate on a disposable database copy. All parked targets retain their counts.
+
+Stage 124 commit d57ff81 is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into the template-effect family and initializer dependencies.

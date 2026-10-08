@@ -14066,6 +14066,227 @@
         "source_sha256": "0a962e917c349bd1376a343612e1d22329e05e5113660d81106a473851eec03d",
         "compiler_receipt_sha256": "a38bc284e5209229d5c77ae355a188c8a544cd7bc6c91be920a0153dc96abe3c"
       }
+    },
+    {
+      "id": "create_effect_b0fac",
+      "source": "src/effects/create_effect_b0fac.c",
+      "address": "0x8c0b0fac",
+      "entry": "_create_effect_b0fac",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 659372,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b0fac",
+          "address": "0x8c0b0fac",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "74cdf67b8d64c1d4d6cc722ae3b22f5d822b1888a75c51ac44be5557f4f9da11",
+      "symbols": {
+        "_initialize_at": "0x8c0b07b8"
+      },
+      "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125.",
+      "status": "matched",
+      "reason": "Complete factory or delayed-effect lifecycle, preserving observed allocation, cleanup, signed identity and tick behavior."
+    },
+    {
+      "id": "create_effect_b0ffc",
+      "source": "src/effects/create_effect_b0ffc.c",
+      "address": "0x8c0b0ffc",
+      "entry": "_create_effect_b0ffc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 659452,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b0ffc",
+          "address": "0x8c0b0ffc",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "92a97aa93eff764df84e8877cf8dd2d37c48e494d3067e998488e45ec08146ea",
+      "symbols": {
+        "_initialize_at": "0x8c0b0b3c"
+      },
+      "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125.",
+      "status": "matched",
+      "reason": "Complete factory or delayed-effect lifecycle, preserving observed allocation, cleanup, signed identity and tick behavior."
+    },
+    {
+      "id": "create_effect_b1aa0",
+      "source": "src/effects/create_effect_b1aa0.c",
+      "address": "0x8c0b1aa0",
+      "entry": "_create_effect_b1aa0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 662176,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b1aa0",
+          "address": "0x8c0b1aa0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "287ba5c3045ced0f843c2e31b29b8858b9b6a491c5334ca8505d5c547154f035",
+      "symbols": {
+        "_initialize_at": "0x8c0b11f4"
+      },
+      "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125.",
+      "status": "matched",
+      "reason": "Complete factory or delayed-effect lifecycle, preserving observed allocation, cleanup, signed identity and tick behavior."
+    },
+    {
+      "id": "create_effect_b1af0",
+      "source": "src/effects/create_effect_b1af0.c",
+      "address": "0x8c0b1af0",
+      "entry": "_create_effect_b1af0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 662256,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b1af0",
+          "address": "0x8c0b1af0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "04faa0d0f4568e75b35ae29d3faac2de8f89377e398826495172ed7db583bf5d",
+      "symbols": {
+        "_initialize_at": "0x8c0b15d4"
+      },
+      "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125.",
+      "status": "matched",
+      "reason": "Complete factory or delayed-effect lifecycle, preserving observed allocation, cleanup, signed identity and tick behavior."
+    },
+    {
+      "id": "create_effect_b3b80",
+      "source": "src/effects/create_effect_b3b80.c",
+      "address": "0x8c0b3b80",
+      "entry": "_create_effect_b3b80",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 670592,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b3b80",
+          "address": "0x8c0b3b80",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "6fb41277cca2d751cc3fd52c03162b04629c8998e89fb18ca6488a0d7af662ae",
+      "symbols": {
+        "_initialize_at": "0x8c0b39cc"
+      },
+      "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125.",
+      "status": "matched",
+      "reason": "Complete factory or delayed-effect lifecycle, preserving observed allocation, cleanup, signed identity and tick behavior."
+    },
+    {
+      "id": "initialize_delayed_effect",
+      "source": "src/effects/initialize_delayed_effect.c",
+      "address": "0x8c0b3cc4",
+      "entry": "_initialize_delayed_effect",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/delayed_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 670916,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_delayed_effect",
+          "address": "0x8c0b3cc4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "6dff2baf0766e4fdb9a2ed039a52d42ff1146681b7e5f06c96157665e497cd75",
+      "symbols": {},
+      "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125.",
+      "status": "matched",
+      "reason": "Complete factory or delayed-effect lifecycle, preserving observed allocation, cleanup, signed identity and tick behavior."
+    },
+    {
+      "id": "destroy_delayed_effect",
+      "source": "src/effects/destroy_delayed_effect.c",
+      "address": "0x8c0b3d08",
+      "entry": "_destroy_delayed_effect",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/delayed_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 670984,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_delayed_effect",
+          "address": "0x8c0b3d08",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c749634cef6e3f280b1f06ef9f30641c5782b73fa76b34a9bef998cfb2e628b9",
+      "symbols": {},
+      "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125.",
+      "status": "matched",
+      "reason": "Complete factory or delayed-effect lifecycle, preserving observed allocation, cleanup, signed identity and tick behavior."
+    },
+    {
+      "id": "update_delayed_effect",
+      "source": "src/effects/update_delayed_effect.c",
+      "address": "0x8c0b3d4c",
+      "entry": "_update_delayed_effect",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/delayed_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 671052,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_delayed_effect",
+          "address": "0x8c0b3d4c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "d25f11093e34d43de01c148e387fbd8aee80c6f22df0f8a31f154fc468623523",
+      "symbols": {
+        "__l_mods": "0x8c18e8a0"
+      },
+      "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125.",
+      "status": "matched",
+      "reason": "Complete factory or delayed-effect lifecycle, preserving observed allocation, cleanup, signed identity and tick behavior."
     }
   ]
 }
