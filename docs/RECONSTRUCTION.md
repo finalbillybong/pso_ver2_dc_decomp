@@ -4667,3 +4667,52 @@ matches do not replace those acceptance criteria. Static data and unmatched
 callees retain reference dependence. Compiler, base flags and complete-range
 comparison rules are unchanged. Publication uses the default secret-scanner rules
 with the single verified source-hash exception and stage-75 detection control.
+
+
+## Paired counter-buffer callbacks, stage 90
+
+Five complete functions add **316 bytes**: allocation **0x8c194c74** (76),
+release **0x8c194cc0** (84), initialization **0x8c194d14** (76), next value
+**0x8c194d60** (76), and empty callback **0x8c194dac** (4). Totals are
+**424 functions / 376 modules / 40,448 compiled full-range bytes /
+4,122,464 retained reference bytes**, or **0.9716% whole-image coverage**.
+All 419 previous matches, module definitions and source/header hashes remain
+unchanged. Since the initial checkpoint, 390 functions replace 36,804 bytes.
+Code-only completion remains unknown; separately reconstructed static data is zero.
+
+The paired buffers each contain twelve 32-bit counters and receive separate
+48-byte allocations. Allocation preserves the initialization call, both state
+resets and owner return. External state declarations and independent zero stores
+recover literal scheduling; a chained assignment does not match. Cleanup retains
+nullable owner, both buffer frees and pointer clears, positive signed release,
+and owner return. External buffer declarations recover the complete cleanup.
+
+Initialization reloads each buffer pointer for every iteration. It stores
+(index shifted left21)+0x10000 and the corresponding +0x10010000 value in the
+other buffer. Explicit byte offsets shifted left2 recover the reference's SHLL2
+addressing; ordinary array indexing emits a general multiply and extra saved
+registers. Next-value selection retains the mode-equals15 branch, unsigned-short
+index, separate value read and increment, and old-value return. It also requires
+explicit shifted byte offsets. No bounds check or allocation-failure handling is
+added beyond the reference. The empty callback is a complete RTS/NOP entry.
+
+The original emission target was revisited with explicit packed-kind views.
+Union-local and union-helper forms emit396 bytes; C++ accessors emit396 and
+nested start methods432. A const-reference helper retains388/8. None match the
+complete range, and none enter the manifest. Earlier register/type, halfword,
+inline-forwarding and table-address hypotheses were reviewed before these trials.
+
+All **37 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons; none were compiler-rejected. Final checked sources match twice
+independently. Two fresh exact project builds, integrated image comparison,
+five-function proof and all **53 research tests** pass; the public suite remains
+**58 tests**. Source-only rejects 4,122,464 retained bytes without changing
+artifacts. Focused exports use a disposable copy and are validated against current
+inputs; the original database remains unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Supporting
+matches do not replace those acceptance criteria. Static data and unmatched
+callees retain reference dependence. Compiler, base flags and complete-range
+comparison rules are unchanged. Publication retains default scanner rules and
+the single verified source-hash exception with its stage-75 detection control.
