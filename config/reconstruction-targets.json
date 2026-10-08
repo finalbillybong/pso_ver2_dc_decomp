@@ -16218,6 +16218,261 @@
         "source_sha256": "625dc99d15e29c5ff45648d83cf0a6008aa6aa576642bd09c4381dff2fc82645",
         "compiler_receipt_sha256": "588cb5542272065f1977a675d52332fbbde02e45fa6709da8d453983d5f494b3"
       }
+    },
+    {
+      "id": "handle_actor_wait_event",
+      "source": "src/objects/handle_actor_wait_event.c",
+      "address": "0x8c0c9910",
+      "entry": "_handle_actor_wait_event",
+      "headers": [
+        "src/include/actor_wait_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 760080,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "handle_actor_wait_event",
+          "address": "0x8c0c9910",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "c89d4202e69886c223cae68fcb41d81449923f791ee62573df18817b50afc9ce",
+      "symbols": {},
+      "boundary_review": "Raw wait-event switch, circular position append and destructor reviewed through adjacent entries, signed tests, repeated field-base accesses, literals and natural alignment. Full checked match twice; stage134.",
+      "status": "matched",
+      "reason": "Complete actor wait-event or position-ring append/destruction range; preserve signed comparisons, pointer reloads and release order."
+    },
+    {
+      "id": "append_position_ring",
+      "source": "src/objects/append_position_ring.c",
+      "address": "0x8c0cbb44",
+      "entry": "_append_position_ring",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/position_ring.h"
+      ],
+      "ranges": [
+        {
+          "offset": 768836,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "append_position_ring",
+          "address": "0x8c0cbb44",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "ab88b059d3f9531e26dbf24a6be32c89e842b6258fa833cdfec2dbe914072553",
+      "symbols": {},
+      "boundary_review": "Raw wait-event switch, circular position append and destructor reviewed through adjacent entries, signed tests, repeated field-base accesses, literals and natural alignment. Full checked match twice; stage134.",
+      "status": "matched",
+      "reason": "Complete actor wait-event or position-ring append/destruction range; preserve signed comparisons, pointer reloads and release order."
+    },
+    {
+      "id": "destroy_position_ring",
+      "source": "src/objects/destroy_position_ring.c",
+      "address": "0x8c0cbae8",
+      "entry": "_destroy_position_ring",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/position_ring.h"
+      ],
+      "ranges": [
+        {
+          "offset": 768744,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_position_ring",
+          "address": "0x8c0cbae8",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "7d4b0b86925f3a42fb47ca410e8b4bab67c1deb89bedea78e97938913f99c0be",
+      "symbols": {},
+      "boundary_review": "Raw wait-event switch, circular position append and destructor reviewed through adjacent entries, signed tests, repeated field-base accesses, literals and natural alignment. Full checked match twice; stage134.",
+      "status": "matched",
+      "reason": "Complete actor wait-event or position-ring append/destruction range; preserve signed comparisons, pointer reloads and release order."
+    },
+    {
+      "id": "count_node_array_chunks",
+      "source": "src/provisional/count_node_array_chunks.c",
+      "address": "0x8c0cd6e8",
+      "entry": "_count_node_array_chunks",
+      "headers": [
+        "src/include/node_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 775912,
+          "size": 204
+        }
+      ],
+      "functions": [
+        {
+          "name": "count_node_array_chunks",
+          "address": "0x8c0cd6e8",
+          "size": 204
+        }
+      ],
+      "reference_sha256": "c4054cfbaea5d47454afd83405177ee2b855375b5f91531977b5224054906828",
+      "symbols": {},
+      "status": "parked",
+      "reason": "204 bytes /131 differing; first0x8c0cd6f7. Byte-span arithmetic eliminates unwanted MUL2 and matches complete size; widened shared span/counter reduces differences. Hoisted masks/global-address registers and inner signed-length store schedule remain different. Named external selection state repeats best binary. Four distinct unsuccessful hypotheses.",
+      "unsuccessful_distinct_hypotheses": 4,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact command-stream parser with equivalent mask/global/span lifetimes or verified different source context. Do not repeat typed-pointer spans or named-selection variants.",
+      "comparison": {
+        "name": "count_node_array_chunks-checked-0",
+        "size": 204,
+        "expected_size": 204,
+        "exact": false,
+        "differing_bytes": 131,
+        "first_difference": "0x8c0cd6f7",
+        "offsets": [
+          15,
+          17,
+          19,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          104,
+          105,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          116,
+          117,
+          119,
+          120,
+          121,
+          123,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          148,
+          149,
+          157,
+          158,
+          161,
+          164,
+          165,
+          167,
+          168,
+          188,
+          189,
+          190,
+          191,
+          193,
+          196,
+          197,
+          198,
+          199
+        ],
+        "source_sha256": "054923570dea362fd0575080d5163691957920be0cde84407a7be9899e2d21ed",
+        "compiler_receipt_sha256": "75086d22a3c13532ad5ce6638f1e14d74444e88a04a0c4ca2ddd1b670ede6d79"
+      }
     }
   ]
 }

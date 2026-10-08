@@ -6747,3 +6747,48 @@ Stage 132 commit 197d0b4 is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into the count/fill walkers' command-stream helpers.
+
+
+## Actor wait event and position ring, stage 134
+
+Three new exact functions replace **228 bytes** in three modules. Totals are
+**589 functions / 533 modules / 55,344 compiled bytes / 4,107,568 retained reference
+bytes**, or **1.3295% whole-image coverage**. All 586 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| handle_actor_wait_event | 0x8c0c9910 | 76 |
+| destroy_position_ring | 0x8c0cbae8 | 92 |
+| append_position_ring | 0x8c0cbb44 | 60 |
+
+All three match on their first candidates. The event helper preserves counter
+1196, event-specific increment/reset, signed threshold 2 and state request 1.
+The ring writer stores a scalar, kind and vector in the current 20-byte entry,
+reloads the entry pointer between writes, then advances and wraps the signed
+index. Field-base byte addressing reproduces the observed order. The destructor
+resets dispatch, releases/clears entries and auxiliary buffer, destroys the base
+and conditionally frees through the allocator on a positive signed short flag.
+Accessed prefixes, fields and entry sizes are checked.
+
+Investigation-only: count_node_array_chunks remains incomplete at 204 bytes with
+131 differences, first 0x8c0cd6f7. Four distinct hypotheses establish that byte-span
+arithmetic removes extra MUL2 operations and a widened shared span/counter improves
+lifetimes. Named external selection state repeats the best binary. Hoisted masks,
+global-address registers and signed-length store scheduling still differ. The
+candidate preserves command categories, selection, short negation/truncation and
+stream advancement; no match credit is given. It is parked pending independent
+exact parser lifetime evidence or verified different source context. The queue
+records the persistent count, exact offsets and explicit revisit condition.
+
+Fourteen snapshots form six binary groups. All checked admissions independently
+match twice; the checked parser retains its exact mismatch. Two fresh exact builds
+per checkout, integrated-image comparison, five-function proof, 53 research tests
+and 58 public tests pass. Source-only rejects 4,107,568 bytes without changing
+artifacts. Focused exports validate on a disposable copy. Prior parked targets
+retain their counts and revisit conditions.
+
+Stage 133 commit 97ed799 is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into additional effect factories and their initialization dependencies.

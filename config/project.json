@@ -9774,6 +9774,83 @@
       "boundary_review": "Raw motion reset, signed mode setter, raised vector copy and offset-effect lifecycle reviewed through adjacent entries, virtual slot436, literals and natural alignment. Three adjacent control functions retain genuine compiler alignment. Checked full match twice; stage132."
     },
     {
+      "id": "handle_actor_wait_event",
+      "source": "src/objects/handle_actor_wait_event.c",
+      "address": "0x8c0c9910",
+      "entry": "_handle_actor_wait_event",
+      "headers": [
+        "src/include/actor_wait_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 760080,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "handle_actor_wait_event",
+          "address": "0x8c0c9910",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "c89d4202e69886c223cae68fcb41d81449923f791ee62573df18817b50afc9ce",
+      "symbols": {},
+      "boundary_review": "Raw wait-event switch, circular position append and destructor reviewed through adjacent entries, signed tests, repeated field-base accesses, literals and natural alignment. Full checked match twice; stage134."
+    },
+    {
+      "id": "destroy_position_ring",
+      "source": "src/objects/destroy_position_ring.c",
+      "address": "0x8c0cbae8",
+      "entry": "_destroy_position_ring",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/position_ring.h"
+      ],
+      "ranges": [
+        {
+          "offset": 768744,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_position_ring",
+          "address": "0x8c0cbae8",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "7d4b0b86925f3a42fb47ca410e8b4bab67c1deb89bedea78e97938913f99c0be",
+      "symbols": {},
+      "boundary_review": "Raw wait-event switch, circular position append and destructor reviewed through adjacent entries, signed tests, repeated field-base accesses, literals and natural alignment. Full checked match twice; stage134."
+    },
+    {
+      "id": "append_position_ring",
+      "source": "src/objects/append_position_ring.c",
+      "address": "0x8c0cbb44",
+      "entry": "_append_position_ring",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/position_ring.h"
+      ],
+      "ranges": [
+        {
+          "offset": 768836,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "append_position_ring",
+          "address": "0x8c0cbb44",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "ab88b059d3f9531e26dbf24a6be32c89e842b6258fa833cdfec2dbe914072553",
+      "symbols": {},
+      "boundary_review": "Raw wait-event switch, circular position append and destructor reviewed through adjacent entries, signed tests, repeated field-base accesses, literals and natural alignment. Full checked match twice; stage134."
+    },
+    {
       "id": "initialize_offset_effect",
       "source": "src/objects/initialize_offset_effect.c",
       "address": "0x8c0ccdc0",
