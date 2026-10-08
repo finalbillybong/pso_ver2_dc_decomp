@@ -1,0 +1,2 @@
+#include "src/include/indexed_effect_template.h"
+void create_actor_effects_for_area(void){int area=((int (*)(void))0x8c032b10)();int index;if(area==15||area==0)return;for(index=0;index<4;index++){AreaEffectActor *actor=((AreaEffectActor *(*)(int))0x8c021ef8)(index);if(actor&&actor->area==area){void *effect=((void *(*)(void *,unsigned int))0x8c122700)(*(void **)0x8c4d97e0,300);if(effect)((void (*)(void *,AreaEffectActor *,Vector3 *,void *,int))0x8c0b3df8)(effect,actor,&actor->position,&actor->context,10);}}}

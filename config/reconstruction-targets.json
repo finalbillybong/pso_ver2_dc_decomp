@@ -20328,6 +20328,287 @@
       "boundary_review": "Raw pair and template initializers reviewed through adjacent entries, sixargument stack offsets, signedshort fields, eight-iteration copy loops, staticbase offsets, repeated predicate, literals and natural alignment. Full checked match twice; stage155.",
       "status": "matched",
       "reason": "Complete initializer range; observed behavior and data references preserved."
+    },
+    {
+      "id": "initialize_effect1_template",
+      "source": "src/effects/initialize_effect1_template.c",
+      "address": "0x8c0b2558",
+      "entry": "_initialize_effect1_template",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_template_init.h",
+        "src/include/indexed_effect_template.h"
+      ],
+      "ranges": [
+        {
+          "offset": 664920,
+          "size": 208
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect1_template",
+          "address": "0x8c0b2558",
+          "size": 208
+        }
+      ],
+      "reference_sha256": "9c26d620db811faa794828c4c5ced3c82cb52927cd8559ebffe7b59695c4e443",
+      "symbols": {
+        "_get_effect_template": "0x8c0adc1c",
+        "_effect_scale_pairs": "0x8c304cb8",
+        "_effect_scale_values": "0x8c304d04"
+      },
+      "boundary_review": "Raw indexed template initialization reviewed through adjacent entries, signed126field, copy144, scale pair offsets, signed products, repeated predicate, literals and natural alignment. Full checked match twice; stage156.",
+      "status": "matched",
+      "reason": "Complete indexed template initializer; observed behavior preserved."
+    },
+    {
+      "id": "initialize_effect9_template",
+      "source": "src/effects/initialize_effect9_template.c",
+      "address": "0x8c0b38f4",
+      "entry": "_initialize_effect9_template",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_template_init.h",
+        "src/include/indexed_effect_template.h"
+      ],
+      "ranges": [
+        {
+          "offset": 669940,
+          "size": 216
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect9_template",
+          "address": "0x8c0b38f4",
+          "size": 216
+        }
+      ],
+      "reference_sha256": "e9e7aad33cc18465b3ebe8ecd66e4bdeaa20bfef4e710a74c7e42421c70873fb",
+      "symbols": {
+        "_get_effect_template": "0x8c0adc1c",
+        "_effect_scale_pairs": "0x8c304cb8",
+        "_effect_scale_values": "0x8c304d04"
+      },
+      "boundary_review": "Raw indexed template initialization reviewed through adjacent entries, signed126field, copy144, scale pair offsets, signed products, repeated predicate, literals and natural alignment. Full checked match twice; stage156.",
+      "status": "matched",
+      "reason": "Complete indexed template initializer; observed behavior preserved."
+    },
+    {
+      "id": "effect_short_is_nonzero",
+      "source": "src/provisional/effect_short_is_nonzero.c",
+      "address": "0x8c0b49b0",
+      "entry": "_effect_short_is_nonzero",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_template_init.h",
+        "src/include/indexed_effect_template.h"
+      ],
+      "ranges": [
+        {
+          "offset": 674224,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "effect_short_is_nonzero",
+          "address": "0x8c0b49b0",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "3804491d2a2f4cc8bb71ca8dd94d9327045002b4cbc1d42c4f821e5b9381024a",
+      "symbols": {},
+      "status": "parked",
+      "reason": "14/16bytes; all14generatedbytes match, final2referencealignmentbytes at0x8c0b49be missing. Whole range not admitted; adjacent actorloop remains incomplete.",
+      "unsuccessful_distinct_hypotheses": 1,
+      "hypothesis_limit": 10,
+      "revisit_when": "Complete adjacent function becomes exact and ordinary source grouping naturally reproduces2byte alignment, or independent evidence for original source grouping. No artificial padding.",
+      "comparison": {
+        "name": "effect_short_is_nonzero-checked-0",
+        "size": 14,
+        "expected_size": 16,
+        "exact": false,
+        "differing_bytes": 2,
+        "first_difference": null,
+        "offsets": [],
+        "source_sha256": "177d2dd05c03ebdec0364d2233f90d051c9885d580bbe015d61dab793039cdcd",
+        "compiler_receipt_sha256": "feb34e283298b50ee2061fdfb3186bdd6375891f17b14db962bdd7b26902deb8"
+      }
+    },
+    {
+      "id": "create_actor_effects_for_area",
+      "source": "src/provisional/create_actor_effects_for_area.c",
+      "address": "0x8c0b49c0",
+      "entry": "_create_actor_effects_for_area",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_template_init.h",
+        "src/include/indexed_effect_template.h"
+      ],
+      "ranges": [
+        {
+          "offset": 674240,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_actor_effects_for_area",
+          "address": "0x8c0b49c0",
+          "size": 160
+        }
+      ],
+      "reference_sha256": "081d0045ae18abf946e99edb2bbe6f21fb705b35f77dc284168f9a23cd6541b5",
+      "symbols": {},
+      "status": "parked",
+      "reason": "144/160bytes,146 differing,first0x8c0b49c6. Three savedGPRs versus six, with area/context offsets and300allocation size loaded inside loop instead of hoisted into R11/R10/R9. Same established loop-hoisting blocker; no actionable new evidence.",
+      "unsuccessful_distinct_hypotheses": 1,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact large-offset/allocation-constant loop hoisting, or verified C++ allocation context. Do not repeat declaration variants already tested for analogous parked initialization.",
+      "comparison": {
+        "name": "create_actor_effects_for_area-checked-0",
+        "size": 144,
+        "expected_size": 160,
+        "exact": false,
+        "differing_bytes": 146,
+        "first_difference": "0x8c0b49c6",
+        "offsets": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139
+        ],
+        "source_sha256": "157872e59cb73073a821fc9552fc0f7ddfe3660fcb67ee6cf39654a646d8f03a",
+        "compiler_receipt_sha256": "663b2fc812176e679adb551b9ef4a602d9b1f5eaf80d2f6c8f76ff5f778bffbf"
+      }
     }
   ]
 }

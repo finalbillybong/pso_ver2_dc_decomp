@@ -7627,3 +7627,44 @@ Stage 154 commit e1107d7 is published with successful remote checks. Reproduce
 with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue following the template pattern into type-one and type-nine helpers and
 recording any remaining whole-range alignment and loop-hoisting blockers.
+
+
+## Indexed effect templates, stage 156
+
+Two complete matches replace **424 bytes**. Totals are **677 functions / 619
+modules / 62,612 compiled bytes / 4,100,300 retained reference bytes / 1.5040%
+whole-image coverage**. All 675 prior matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| initialize_effect1_template | 0x8c0b2558 | 208 |
+| initialize_effect9_template | 0x8c0b38f4 | 216 |
+
+The shared template-copy and conditional-scaling pattern extends to signed index
+126 and parameters at 144. Type nine matches on its first hypothesis. Type one
+requires the observed left-shift product instead of MUL8: shifting the unsigned
+representation and converting back to the pinned 32-bit signed type preserves
+negative short inputs and reproduces the entire 208-byte range. Both retain the
+repeated predicate and distinct static scale-pair/factor offsets. Referenced scale
+contents remain original data and receive no reconstructed-data credit.
+
+Investigation-only: effect_short_is_nonzero produces 14 matching bytes but misses
+the two alignment bytes beginning 0x8c0b49be. Its complete 16-byte range is not
+admitted. Revisit only with an exact adjacent function and natural source grouping,
+or independent evidence of original grouping. create_actor_effects_for_area is
+parked at 144/160 bytes with 146 differences, first 0x8c0b49c6. It saves three GPRs
+instead of six and reloads the area/context offsets and allocation size inside the
+loop. Revisit only with independently exact constant hoisting or verified C++
+allocation context. Each target has one unsuccessful hypothesis; neither earns
+completion credit or resets the counts of analogous parked targets.
+
+Eleven snapshots form five binary groups. All final admissions independently match
+twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,100,300 bytes without changing artifacts. Focused exports validate using a
+disposable database copy. Previously parked targets were not reopened.
+
+Stage 155 commit 9aa7aac is published with successful remote checks. Reproduce
+with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into actor effect requests, countdowns, scans and initialization.

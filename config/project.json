@@ -8177,6 +8177,37 @@
       "boundary_review": "Raw pair and template initializers reviewed through adjacent entries, sixargument stack offsets, signedshort fields, eight-iteration copy loops, staticbase offsets, repeated predicate, literals and natural alignment. Full checked match twice; stage155."
     },
     {
+      "id": "initialize_effect1_template",
+      "source": "src/effects/initialize_effect1_template.c",
+      "address": "0x8c0b2558",
+      "entry": "_initialize_effect1_template",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_template_init.h",
+        "src/include/indexed_effect_template.h"
+      ],
+      "ranges": [
+        {
+          "offset": 664920,
+          "size": 208
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect1_template",
+          "address": "0x8c0b2558",
+          "size": 208
+        }
+      ],
+      "reference_sha256": "9c26d620db811faa794828c4c5ced3c82cb52927cd8559ebffe7b59695c4e443",
+      "symbols": {
+        "_get_effect_template": "0x8c0adc1c",
+        "_effect_scale_pairs": "0x8c304cb8",
+        "_effect_scale_values": "0x8c304d04"
+      },
+      "boundary_review": "Raw indexed template initialization reviewed through adjacent entries, signed126field, copy144, scale pair offsets, signed products, repeated predicate, literals and natural alignment. Full checked match twice; stage156."
+    },
+    {
       "id": "create_effect_b29c8",
       "source": "src/effects/create_effect_b29c8.c",
       "address": "0x8c0b29c8",
@@ -8200,6 +8231,37 @@
         "_initialize_at": "0x8c0b262c"
       },
       "boundary_review": "Raw allocation factories and scalar effect helper reviewed through adjacent entries, null allocation path, initializer result, signed multiply/float conversion, conditional scaling, literal pools and natural padding. Complete checked match twice; stage137."
+    },
+    {
+      "id": "initialize_effect9_template",
+      "source": "src/effects/initialize_effect9_template.c",
+      "address": "0x8c0b38f4",
+      "entry": "_initialize_effect9_template",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_template_init.h",
+        "src/include/indexed_effect_template.h"
+      ],
+      "ranges": [
+        {
+          "offset": 669940,
+          "size": 216
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect9_template",
+          "address": "0x8c0b38f4",
+          "size": 216
+        }
+      ],
+      "reference_sha256": "e9e7aad33cc18465b3ebe8ecd66e4bdeaa20bfef4e710a74c7e42421c70873fb",
+      "symbols": {
+        "_get_effect_template": "0x8c0adc1c",
+        "_effect_scale_pairs": "0x8c304cb8",
+        "_effect_scale_values": "0x8c304d04"
+      },
+      "boundary_review": "Raw indexed template initialization reviewed through adjacent entries, signed126field, copy144, scale pair offsets, signed products, repeated predicate, literals and natural alignment. Full checked match twice; stage156."
     },
     {
       "id": "destroy_template_effect",
