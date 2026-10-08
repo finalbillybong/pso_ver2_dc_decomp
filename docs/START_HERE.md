@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **600 exact functions in 544 modules**, replacing
-**56,124 bytes** of the 4,162,912-byte decoded executable (**1.3482% image coverage**).
-It retains **4,106,788 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **605 exact functions in 549 modules**, replacing
+**56,524 bytes** of the 4,162,912-byte decoded executable (**1.3578% image coverage**).
+It retains **4,106,388 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,12 +28,12 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 136
+## Latest integration batch: stage 137
 
-Stage 136 adds **2 functions / 252 bytes**: a four-target effect scan and a
-normalized query predicate. All 598 prior matches remain unchanged. The companion
-scan and kind predicate are parked after three and four hypotheses respectively;
-their precise blockers and revisit conditions are recorded without matching credit.
+Stage 137 adds **5 functions / 400 bytes**: four effect factories and a scalar
+value update. All 600 preceding matches remain unchanged. Separate load and
+compound accumulation resolves the scalar helper's floating-register assignment;
+all final ranges, literals and natural padding match completely.
 
 ## Autonomous iteration
 

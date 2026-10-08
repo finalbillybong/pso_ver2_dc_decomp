@@ -6881,3 +6881,40 @@ the original database is preserved. All earlier parked counts remain unchanged.
 Stage 135 commit 7c34120 is published with successful remote checks. Reproduce
 with `python3 -B tools/verify_source.py`, the current tests and expected source-only
 rejection. Continue through other effect factories and scalar/vector dependencies.
+
+
+## Effect factories and scalar value update, stage 137
+
+Five complete matches replace **400 bytes** in five modules. Totals are
+**605 functions / 549 modules / 56,524 compiled bytes / 4,106,388 retained reference
+bytes / 1.3578% whole-image coverage**. All 600 preceding matches and source/header
+hashes remain unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| create_effect_b29c8 | 0x8c0b29c8 | 80 |
+| create_effect_b9488 | 0x8c0b9488 | 80 |
+| apply_effect_15_value | 0x8c0b96e0 | 80 |
+| create_effect_ba96c | 0x8c0ba96c | 80 |
+| create_effect_bada4 | 0x8c0bada4 | 80 |
+
+The four factories match on their first candidate, preserving allocations of 424,
+348, 348 and 264 bytes, null returns, stack-passed arguments and initializer results.
+Their initializer bodies remain reference-dependent.
+
+The scalar helper obtains category 15's value, adds signed index times five
+converted to float, conditionally multiplies by data field 120 and applies the
+result. The first candidate differed in two bytes: the loaded value and converted
+integer occupied opposite floating registers. Separate loading and compound
+accumulation establishes the observed FR15 lifetime and matches all 80 bytes.
+The accessed data prefix has checked offset/size; its contents remain unreconstructed.
+
+Sixteen snapshots form six binary groups. Each final admission matches twice.
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,106,388
+bytes while preserving existing artifacts. Focused exports validate on a disposable
+copy. No parked target was reopened and no failed experiment earns byte credit.
+
+Stage 136 commit ee1d591 is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue effect initialization, adjacent color/vector helpers and referenced data.

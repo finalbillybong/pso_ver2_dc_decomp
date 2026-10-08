@@ -6648,6 +6648,31 @@
       "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125."
     },
     {
+      "id": "create_effect_b29c8",
+      "source": "src/effects/create_effect_b29c8.c",
+      "address": "0x8c0b29c8",
+      "entry": "_create_effect_b29c8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 666056,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b29c8",
+          "address": "0x8c0b29c8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "e35e15258b5777db510d020f22d90c18fa1ddd34c2b86287a0ba5dc38d68f1c7",
+      "symbols": {
+        "_initialize_at": "0x8c0b262c"
+      },
+      "boundary_review": "Raw allocation factories and scalar effect helper reviewed through adjacent entries, null allocation path, initializer result, signed multiply/float conversion, conditional scaling, literal pools and natural padding. Complete checked match twice; stage137."
+    },
+    {
       "id": "destroy_template_effect",
       "source": "src/effects/destroy_template_effect.c",
       "address": "0x8c0b3af8",
@@ -7299,6 +7324,108 @@
         "_initialize_at": "0x8c0b7a68"
       },
       "boundary_review": "Raw effect factories and operation wrappers reviewed through adjacent entries, stack fifth argument, tail-call forwarding, literal pools and natural alignment. Complete checked match twice; stage135."
+    },
+    {
+      "id": "create_effect_b9488",
+      "source": "src/effects/create_effect_b9488.c",
+      "address": "0x8c0b9488",
+      "entry": "_create_effect_b9488",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 693384,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b9488",
+          "address": "0x8c0b9488",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "c64b26344869716f4969e25aa5a04f38cec3a3746eafd9b02862e58e43debc47",
+      "symbols": {
+        "_initialize_at": "0x8c0b8fb0"
+      },
+      "boundary_review": "Raw allocation factories and scalar effect helper reviewed through adjacent entries, null allocation path, initializer result, signed multiply/float conversion, conditional scaling, literal pools and natural padding. Complete checked match twice; stage137."
+    },
+    {
+      "id": "apply_effect_15_value",
+      "source": "src/effects/apply_effect_15_value.c",
+      "address": "0x8c0b96e0",
+      "entry": "_apply_effect_15_value",
+      "headers": [
+        "src/include/effect_value_context.h"
+      ],
+      "ranges": [
+        {
+          "offset": 693984,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_effect_15_value",
+          "address": "0x8c0b96e0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "fce673821ef90c0c93633554809bc8d51d36fda9912632cf812139ccaf1d4f66",
+      "symbols": {
+        "_effect_value_context": "0x8c304d04"
+      },
+      "boundary_review": "Raw allocation factories and scalar effect helper reviewed through adjacent entries, null allocation path, initializer result, signed multiply/float conversion, conditional scaling, literal pools and natural padding. Complete checked match twice; stage137."
+    },
+    {
+      "id": "create_effect_ba96c",
+      "source": "src/effects/create_effect_ba96c.c",
+      "address": "0x8c0ba96c",
+      "entry": "_create_effect_ba96c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 698732,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_ba96c",
+          "address": "0x8c0ba96c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "10759d573c86f0edb46bd1cab8d3eaac26e531a22b1596e0f27cea3955d4d514",
+      "symbols": {
+        "_initialize_at": "0x8c0ba4b8"
+      },
+      "boundary_review": "Raw allocation factories and scalar effect helper reviewed through adjacent entries, null allocation path, initializer result, signed multiply/float conversion, conditional scaling, literal pools and natural padding. Complete checked match twice; stage137."
+    },
+    {
+      "id": "create_effect_bada4",
+      "source": "src/effects/create_effect_bada4.c",
+      "address": "0x8c0bada4",
+      "entry": "_create_effect_bada4",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 699812,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_bada4",
+          "address": "0x8c0bada4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "27b959b80a4a2826ebf8be7dc5c9a7a5f96022d7d4ec0c25d500f012983bb56c",
+      "symbols": {
+        "_initialize_at": "0x8c0babf0"
+      },
+      "boundary_review": "Raw allocation factories and scalar effect helper reviewed through adjacent entries, null allocation path, initializer result, signed multiply/float conversion, conditional scaling, literal pools and natural padding. Complete checked match twice; stage137."
     },
     {
       "id": "clear_inactive_target",
