@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "41caee1efebe3dd6608b6b79b431950e00dda477525f84f8a10c64c80ef78c90",
+    "config/project.json": "e312e5f3e8333b47fe0a97b6ddd3a3f47006621addf32cf5d9f3201b6efd12b7",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -92,6 +92,7 @@
     "src/effects/effect_event_reset_and_distance.c": "2efc73644832c7401c664789b7d3d51b2ff90aca7aad3732aaef0ef943c46524",
     "src/effects/effect_noop_9654.c": "e1e0f4f24981e1054295f5e8b4af6482779690875ad68cd8856a6167f9dfca8a",
     "src/effects/effect_phase_and_factory.c": "94f399e376521c30cfb306ac21bcce5069ade08f67d0c40c1b243d75ff6a16c9",
+    "src/effects/effect_query_is_true.cpp": "ecf3c42347783174cdf8cd8f5f826122223bc78ee6f8d88e86f5fa01e4c11bcd",
     "src/effects/effect_release_and_create.c": "fd8352da2371d86dc6697cddd8adf2d872f00762309963e2f594836cb959161f",
     "src/effects/emission_setup_6020c.c": "d7c9f7327150139b3fd286ba5850b269b011fb27d3ffde4440c550b80f8b6eec",
     "src/effects/emit_alternate_6028c.c": "32c9471680b06935802410184437beb72df44cd12175521a01381b7002b9c762",
@@ -132,6 +133,7 @@
     "src/effects/run_effect_operation_5f6c.c": "6529925cf264610afd67db2d1a1037fd43a4c6ed273aafc4ab5a32d1b74f4671",
     "src/effects/run_effect_operation_609c.c": "2370a5ca5289dd9b4b3f1055cbb70f8aa9a1c0800945e68cc1546f2d78bf516f",
     "src/effects/run_effect_operation_6174.c": "4b1cb44e9201060ce2d5b1b730d26579dc9c00aca3e5d715fc34fadc0df87975",
+    "src/effects/scan_four_effect_targets.c": "012d0ba643ee7e29fc768b0de91db57527f4db21e13b4ded85bb9b461454a935",
     "src/effects/select_effect_kind.c": "be23b11813dca2ca807f441f3119e77e49deec70bf92bcdc85ed944d6b59d262",
     "src/effects/send_effect_event.c": "0e7fb1dc6aa307f3d82a5a4fef6cb52bc9cfa2008934566d6ff8f3a9ed215a5c",
     "src/effects/set_blend_5_6.c": "f3181cec734876a6c49b3622575ab8e50996e843ece4fa75c9a0720262f22c46",
@@ -194,6 +196,7 @@
     "src/include/effect_motion_gate.h": "43f9b8422899cee2f8288f0c416583bd4b751b8fd04f590fb21d298cac742832",
     "src/include/effect_operation_view.h": "1e1a291bfe3a311eee62a6759b9e8cc2bf06c1894d4b0ca66fa32d6f51a0b223",
     "src/include/effect_resource_views.h": "1d4ec0b49b020089afa5f8a525a1a61c5954a96b52bc35e599e26cfe4a8481b3",
+    "src/include/effect_scan.h": "936769aba0071dc73fd3b04e2bb021826c13e22713a1c105adc9981cc43f1f3e",
     "src/include/effect_update.h": "107613e65e2c0982cde01c72af62baa40d9917e571f84c601568ab9c4cddb1f5",
     "src/include/effect_view.h": "9969a97780088fd5c7e0b3dae3c90cf0240c6f9d3afef843c6573eb97086ca39",
     "src/include/emit.h": "c138a48dfc6827380794a25ec2c02d3fdbf76dde801340426ac8321bf4fffb25",
@@ -3732,6 +3735,30 @@
       "off",
       "-O2"
     ],
+    "scan_four_effect_targets": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "effect_query_is_true": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
     "extra_b6394": [
       "-proc",
       "SH4",
@@ -6688,6 +6715,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4107040,
+  "source_only_rejected_retained_bytes": 4106788,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

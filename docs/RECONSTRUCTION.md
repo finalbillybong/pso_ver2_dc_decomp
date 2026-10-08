@@ -6836,3 +6836,48 @@ Stage 134 commit 4a58f8f is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into the operation wrappers' target scans and their vector dependencies.
+
+
+## Effect target scan and query predicate, stage 136
+
+Two complete matches replace **252 bytes**: `scan_four_effect_targets` at
+0x8c0b609c (216 bytes) and `effect_query_is_true` at 0x8c0b62b0 (36 bytes).
+Totals: **600 functions / 544 modules / 56,124 compiled bytes / 4,106,788 retained
+reference bytes / 1.3482% whole-image coverage**. All 598 previous matches and
+source/header hashes are preserved. Standalone reconstructed data remains zero.
+
+The scanner clears the shared 16-entry result buffer, copies the observed vector,
+checks four targets with squared radius 10000, records nonzero results and retains
+the signed count clamp to 15. Field-base addressing with explicit unsigned byte
+offsets removes compiler-generated MUL4 indexing and exactly matches the complete
+range. Accessed fields and sizes are checked. The shared result address lies
+outside the decoded image; its declaration does not reconstruct static data.
+
+The query predicate preserves its null return and normalizes the callee result to
+integer zero or one. The pinned compiler disables the C++ bool keyword; no flag
+was changed. Integer conditional normalization matches the observed SUBC/add-one
+sequence and complete 36-byte range.
+
+Investigation-only work adds no credit:
+
+- `scan_active_effect_targets`, 0x8c0b6174: **276/280 bytes, 260 differing**, first
+  0x8c0b617c. Three distinct unsuccessful hypotheses. Explicit byte offsets remove
+  MUL4; separate clear/scan indices still save three GPRs instead of four and leave
+  the flag mask loaded within the loop. Revisit only with independently exact
+  scan/index/resource/mask lifetimes or verified source context.
+- `effect_kind_is_one`, 0x8c0b628c: **32/36 bytes, 21 differing**, first 0x8c0b6294.
+  Four hypotheses, including the unsupported bool declaration. A single inline
+  comparison preserves outer truth normalization but emits one EXTUW where the
+  reference emits two. A nested getter exceeds the existing inline depth and
+  produces an out-of-line call. Revisit only with independent exact redundant
+  unsigned-word promotion evidence or verified source context.
+
+Seventeen snapshots form nine binary groups. Final admitted sources match twice.
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,106,788
+bytes without altering existing artifacts. Focused exports use a disposable copy;
+the original database is preserved. All earlier parked counts remain unchanged.
+
+Stage 135 commit 7c34120 is published with successful remote checks. Reproduce
+with `python3 -B tools/verify_source.py`, the current tests and expected source-only
+rejection. Continue through other effect factories and scalar/vector dependencies.

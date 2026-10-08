@@ -7150,6 +7150,58 @@
       "boundary_review": "Raw effect factories and operation wrappers reviewed through adjacent entries, stack fifth argument, tail-call forwarding, literal pools and natural alignment. Complete checked match twice; stage135."
     },
     {
+      "id": "scan_four_effect_targets",
+      "source": "src/effects/scan_four_effect_targets.c",
+      "address": "0x8c0b609c",
+      "entry": "_scan_four_effect_targets",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_scan.h"
+      ],
+      "ranges": [
+        {
+          "offset": 680092,
+          "size": 216
+        }
+      ],
+      "functions": [
+        {
+          "name": "scan_four_effect_targets",
+          "address": "0x8c0b609c",
+          "size": 216
+        }
+      ],
+      "reference_sha256": "abdc640696cc174d58cc32f50dec8aa1da130d19107745de3954449b94b62709",
+      "symbols": {
+        "_scan_results": "0x8c46f2c0"
+      },
+      "boundary_review": "Raw scanner and predicate reviewed through adjacent entries, shared-result pointer, null paths, floating radius, signed clamp, literals and natural alignment. Complete checked match twice; stage136."
+    },
+    {
+      "id": "effect_query_is_true",
+      "source": "src/effects/effect_query_is_true.cpp",
+      "address": "0x8c0b62b0",
+      "entry": "_effect_query_is_true",
+      "language": "c++",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 680624,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "effect_query_is_true",
+          "address": "0x8c0b62b0",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "ba6fa0357757c942a5b978dced76c7529a5710a7ac6769309210d22d14e25183",
+      "symbols": {},
+      "boundary_review": "Raw scanner and predicate reviewed through adjacent entries, shared-result pointer, null paths, floating radius, signed clamp, literals and natural alignment. Complete checked match twice; stage136."
+    },
+    {
       "id": "extra_b6394",
       "source": "src/effects/extra_b6394.c",
       "address": "0x8c0b6394",
