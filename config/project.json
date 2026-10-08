@@ -4194,6 +4194,115 @@
       "boundary_review": "Raw SH4 entry through next adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage57."
     },
     {
+      "id": "operation_04ab50",
+      "source": "src/objects/operation_04ab50.c",
+      "address": "0x8c04ab50",
+      "entry": "_operation_04ab50",
+      "ranges": [
+        {
+          "offset": 240464,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_04ab50",
+          "address": "0x8c04ab50",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "6d5e184b3996d766dcde1d10e6dace5cad2ca7eb2c76cafe6e77fb8107751582",
+      "symbols": {
+        "_query_at": "0x8c2391f4"
+      },
+      "headers": [
+        "src/include/notice_dispatch.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry with literals, switch table and natural alignment; complete checked source exact twice; reconstruction-stage73."
+    },
+    {
+      "id": "operation_04abb4",
+      "source": "src/objects/operation_04abb4.c",
+      "address": "0x8c04abb4",
+      "entry": "_operation_04abb4",
+      "ranges": [
+        {
+          "offset": 240564,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_04abb4",
+          "address": "0x8c04abb4",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "dc63dca9b78ee180dde18adb53d0479e38830eeb19a07200accefe2438a97677",
+      "symbols": {
+        "_query_at": "0x8c2391f4"
+      },
+      "headers": [
+        "src/include/notice_dispatch.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry with literals, switch table and natural alignment; complete checked source exact twice; reconstruction-stage73."
+    },
+    {
+      "id": "operation_04ac1c",
+      "source": "src/objects/operation_04ac1c.c",
+      "address": "0x8c04ac1c",
+      "entry": "_operation_04ac1c",
+      "ranges": [
+        {
+          "offset": 240668,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_04ac1c",
+          "address": "0x8c04ac1c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "7c4f21e3fa341173551ebdab5d33fa993b313f97be82be6a277c75a71a9e3caa",
+      "headers": [
+        "src/include/notice_dispatch.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry with literals, switch table and natural alignment; complete checked source exact twice; reconstruction-stage73."
+    },
+    {
+      "id": "operation_04ac60",
+      "source": "src/objects/operation_04ac60.cpp",
+      "language": "c++",
+      "address": "0x8c04ac60",
+      "entry": "_operation_04ac60",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/notice_dispatch.h",
+        "src/include/notice_actor.h"
+      ],
+      "ranges": [
+        {
+          "offset": 240736,
+          "size": 564
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_04ac60",
+          "address": "0x8c04ac60",
+          "size": 564
+        }
+      ],
+      "reference_sha256": "fd5722bc7d21c58efb4902a8a2a6d6dc87080b1b410651124cfbde9795d9ce87",
+      "linker": "codewarrior",
+      "symbols": {
+        "_effect_at": "0x8c0a7d38"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry with literals, switch table and natural alignment; complete checked source exact twice; reconstruction-stage73."
+    },
+    {
       "id": "lookup_object_by_id",
       "source": "src/objects/lookup_object_by_id.c",
       "address": "0x8c053d84",

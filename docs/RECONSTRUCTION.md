@@ -3746,3 +3746,57 @@ bytes without changing artifacts. Focused exports were regenerated after manifes
 changes on a disposable copy and checked against current inputs; the original
 database is unchanged. Compiler, base flags, linker and full-range rules remain
 unchanged.
+
+
+## Guarded dispatch and virtual notice handler, stage 73
+
+Four complete functions add **836 bytes**: guarded dispatch at **0x8c04ab50**
+(100) and **0x8c04abb4** (104), eight-byte notice construction at **0x8c04ac1c**
+(68), and its five-way C++ handler at **0x8c04ac60** (564). Totals are **314
+functions / 292 modules / 31,752 compiled full-range bytes / 4,131,160 retained
+reference bytes**, or **0.7627% whole-image coverage**. All 310 previous matches,
+module definitions and source/header hashes remain unchanged. Since the initial
+checkpoint, 280 functions replace 28,108 bytes. Code-only completion remains
+unknown; separately reconstructed static data is zero.
+
+The guarded routines preserve ordered global, byte-query, signed-mode and
+pointer/value checks. External declaration of the byte-query callee reproduces
+its address/literal ordering; direct function-pointer declarations differ by eight
+bytes. The callee consumes only the observed object pointer and returns a clamped
+byte. Raw dispatch entries confirm all three forwarded integer-register inputs.
+The notice builder retains the sentinel and zero stores before overwriting them
+with arguments. Ordinary C reproduces the complete sequence; C++ and a default
+constructor also match, but the simpler C source is admitted. Checked notice
+fields occupy offsets 0, 1, 2, 4, 6 and 7 with total size eight.
+
+The handler preserves the null check, source-ID bound, five-entry switch, signed
+short field arithmetic, observed clamp conditions, three virtual slots and
+conditional five-argument effect calls. Deferred notice-pointer assignment,
+full-width byte capture, explicit field pointers, signed limit captures and a
+separate counter-pointer/amount scope recover register allocation. The final
+counter scope resolves the last six differing bytes. No additional guard, clamp
+or semantic correction is introduced. Provisional C++ views check the base size,
+flag, counter, limits, vector and short-field offsets. Virtual slots 0x8c, 0x90 and
+0x94 are represented by declarations; their bodies and tables remain reference
+inputs. The pinned native linker handles this compiler's switch-table RELA
+addends. GNU incorrectly resolves those entries; no code or table patching is
+used. Both linkers use the established compiler and base flags; C++ adds only
+-lang c++.
+
+The related effect update remains **668/22**. Bitfield and const/volatile ID
+representations do not improve it; two-byte C++ ID wrappers generate 684 or 690
+bytes. Narrow call formals replace needed delay-slot zero extension with NOP and
+are rejected. Diagnostic volatile trials are not admitted. Primary candidates
+remain **512/30 and 388/8**, related reuse **448/4**, manager initialization
+**280/8**, and signed remainder unresolved. The primary batch remains incomplete;
+supporting matches do not replace its acceptance criteria.
+
+All **52 trials**, with **no compiler rejection**, retain source snapshots,
+hypotheses, compiler receipts and comparisons in `reconstruction-stage73`.
+Final checked sources match independently twice. Identifiers, paths and intervals
+are checked before admission. Two fresh exact builds, integrated-image comparison,
+five-function proof and all **53 research tests** pass; the public suite remains
+**58 tests**. Source-only rejects 4,131,160 retained bytes without changing
+artifacts. Focused exports were regenerated on a disposable database copy after
+manifest changes and validated against current inputs. The original database,
+compiler, base flags and whole-range acceptance rules remain unchanged.
