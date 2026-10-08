@@ -5671,3 +5671,53 @@ The current user authorization includes reviewed commits and pushes. The current
 per-target limit is ten distinct unsuccessful hypotheses, with earlier parking
 when no useful evidence remains. Historical counts and parked blockers persist.
 Research receipts remain private; public progress binds the exact source inputs.
+
+
+## Channel tables and panel geometry, stage 110
+
+Four newly admitted exact functions replace **660 bytes**: initialize_channel_handles
+at0x8c03f414 (48), select_available_channel at0x8c03f444 (60), operation_1960fc
+at0x8c1960fc (376), and operation_196274 at0x8c196274 (176). Totals are **470
+functions /420 modules /46,696 compiled full-range bytes /4,116,216 retained bytes**,
+or **1.1217% whole-image coverage**. All466 prior matches and source/header files
+remain unchanged. Standalone reconstructed static data remains zero.
+
+The two channel routines use eight-entry scans with unsigned-byte induction.
+Selection calls zero for each empty entry before breaking at the first nonnull
+handle. Direct pointer indexing and an external array declaration produce the
+same52/64-byte outputs; explicit shifted byte offsets recover the complete48/60
+bytes, including the call argument delay slots and literals. Three distinct
+hypotheses per channel target are recorded; identical outputs are grouped.
+
+The two rendering functions revalidate earlier stage98 scratch matches, which
+were never counted or published. Existing checked rendering records and a new
+checked52-byte owner prefix preserve the exact output. The frame renderer updates
+scaled global strips then draws four static and eight translated local quads.
+The sliding renderer preserves descending alpha-byte stores, repeated owner-field
+reads, paired vertex assignments and both draw calls. Their writable referenced
+tables remain reference-backed; these function matches earn no separate data credit.
+
+Each final source matches independently twice. Two fresh builds in each checkout,
+exact integrated-image comparison, the independent five-function proof, all53
+research tests and58 public tests pass. Source-only rejects4,116,216 bytes without
+changing build artifacts. Focused exports are refreshed on a disposable database
+copy and validated. The compiler and base flags are unchanged; no assembly,
+copied runtime objects, artificial padding or gameplay changes are used.
+
+Investigation-only work adds no primary progress. Both primary targets stay parked
+at512/30 and388/8 with the existing evidence-based revisit conditions. Current
+policy parks a target after ten unsuccessful distinct hypotheses, or sooner when
+no productive evidence remains; counts persist across sessions. Continue to the
+next useful target after verification and publication.
+
+The preceding publication checkpoint04f81cd includes the nine stage106–108
+matches (980bytes); remote commit and GitHub checks passed. Its first public test
+run exposed an obsolete hard-coded angle_step source path after module regrouping.
+The mutation test now selects an admitted source from the manifest, and progress
+also hashes independent proof sources. All58 public tests pass after the correction.
+No private research receipts or settings are published.
+
+Reproduce with `python3 -B tools/verify_source.py`, run tests with
+`python3 -B -m unittest discover -s tests -v`, and expect rejection from
+`python3 -B tools/project.py build --source-only`. Public progress is refreshed
+with `python3 -B tools/progress.py --record`; check it using `--check`.

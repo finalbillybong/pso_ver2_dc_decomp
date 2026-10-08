@@ -11037,6 +11037,118 @@
       "boundary_review": "Raw0x8c03f128-0x8c03f14c: RTS delay144, alignment146, pointer literal148, next entry14c; complete36-byte source exact twice; stage108.",
       "status": "matched",
       "reason": "Complete source-based resource pointer initializer; target runtime storage remains reference-dependent."
+    },
+    {
+      "id": "operation_1960fc",
+      "source": "src/ui/operation_1960fc.c",
+      "address": "0x8c1960fc",
+      "entry": "_operation_1960fc",
+      "ranges": [
+        {
+          "offset": 1597692,
+          "size": 376
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1960fc",
+          "address": "0x8c1960fc",
+          "size": 376
+        }
+      ],
+      "reference_sha256": "88453f36245c718dd58057592cd8cc719eea06e3df9be62a77ea3fb807a61024",
+      "symbols": {
+        "_vertical_scale": "0x8c31bf88",
+        "_points": "0x8c31c130"
+      },
+      "headers": [
+        "src/include/panel_geometry.h",
+        "src/include/widget_draw.h"
+      ],
+      "boundary_review": "Raw SH4 entry through next entry, return delay and entire literal pool reviewed; checked source exact independently twice; stage110 revalidates earlier unadmitted stage98 evidence.",
+      "status": "matched",
+      "reason": "Complete range independently exact twice, including literals. Stage110; primary targets remain parked."
+    },
+    {
+      "id": "operation_196274",
+      "source": "src/ui/operation_196274.c",
+      "address": "0x8c196274",
+      "entry": "_operation_196274",
+      "ranges": [
+        {
+          "offset": 1598068,
+          "size": 176
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_196274",
+          "address": "0x8c196274",
+          "size": 176
+        }
+      ],
+      "reference_sha256": "b894441cfb2c598d1d2e2d2d18a7ebe72a6a08d9f2c0c349a77b6d91db02833a",
+      "symbols": {
+        "_points": "0x8c31c1c0",
+        "_colors": "0x8c31c1b0"
+      },
+      "headers": [
+        "src/include/panel_geometry.h",
+        "src/include/widget_draw.h"
+      ],
+      "boundary_review": "Raw SH4 entry through next entry, return delay and entire literal pool reviewed; checked source exact independently twice; stage110 revalidates earlier unadmitted stage98 evidence.",
+      "status": "matched",
+      "reason": "Complete range independently exact twice, including literals. Stage110; primary targets remain parked."
+    },
+    {
+      "id": "initialize_channel_handles",
+      "source": "src/runtime/initialize_channel_handles.c",
+      "address": "0x8c03f414",
+      "entry": "_initialize_channel_handles",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 193556,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_channel_handles",
+          "address": "0x8c03f414",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "71b32231e3e13f5fb74e0fd4b734e5facede8dd82e29e9e6ccf5222d9e9ce05e",
+      "symbols": {},
+      "boundary_review": "Raw entries0x8c03f414/444/480 bound48/60byte routines; return delay and both literals included; source exact twice; stage110.",
+      "status": "matched",
+      "reason": "Complete range independently exact twice, including literals. Stage110; primary targets remain parked."
+    },
+    {
+      "id": "select_available_channel",
+      "source": "src/runtime/select_available_channel.c",
+      "address": "0x8c03f444",
+      "entry": "_select_available_channel",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 193604,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "select_available_channel",
+          "address": "0x8c03f444",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "623de9395687115b76bbb8b8ad532dcfbc727fc4ed53c1d9cc214545ad1ed15a",
+      "symbols": {},
+      "boundary_review": "Raw entries0x8c03f414/444/480 bound48/60byte routines; return delay and both literals included; source exact twice; stage110.",
+      "status": "matched",
+      "reason": "Complete range independently exact twice, including literals. Stage110; primary targets remain parked."
     }
   ]
 }

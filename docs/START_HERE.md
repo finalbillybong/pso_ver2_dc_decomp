@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **466 exact functions in 416 modules**, replacing
-**46,036 bytes** of the 4,162,912-byte decoded executable (**1.1059% image coverage**).
-It retains **4,116,876 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **470 exact functions in 420 modules**, replacing
+**46,696 bytes** of the 4,162,912-byte decoded executable (**1.1217% image coverage**).
+It retains **4,116,216 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,23 +28,17 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest published batch: stages 106–108
+## Latest integration batch: stage 110
 
-Nine exact functions replace 980 additional reference bytes: vector subtraction,
-signed angle stepping, effect motion/control and creation, XYZ distance, and
-resource-entry initialization. All 457 previously published function ranges and
-source/header files are preserved. Genuine adjacent functions are regrouped for
-natural compiler alignment without duplicate credit or artificial padding.
+Four newly admitted functions replace660bytes: two channel table helpers and two
+panel rendering routines. All466 prior matches and source/header files remain
+unchanged. The rendering candidates were exact in stage98 scratch but had never
+been admitted; they are revalidated with checked types before receiving credit.
 
-The primary targets remain parked at 512/30 and 388/8. Revisit only with new
-independent evidence of the missing factor-reuse or call-scheduling patterns.
-Stages 98–105 added no matches; their investigation does not increase completion.
-Referenced runtime addresses outside the decoded image supply no static-data credit.
-
-Two fresh exact builds, integrated-image comparison, the five-function proof,
-53 research tests and 58 public tests are required before publication. Source-only
-must reject the remaining gaps without changing artifacts. See
-[RECONSTRUCTION.md](RECONSTRUCTION.md) for behavior and failed hypotheses.
+Both primary targets remain parked at512/30 and388/8. There is no primary or
+standalone-data improvement. Two fresh builds in each checkout, exact image
+comparison, five-function proof,53 research tests,58 public tests and source-only
+rejection pass. See [RECONSTRUCTION.md](RECONSTRUCTION.md) for failed hypotheses.
 
 ## Autonomous iteration
 
