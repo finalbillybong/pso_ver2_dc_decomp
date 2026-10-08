@@ -4902,6 +4902,31 @@
       "boundary_review": "Raw entries, neighboring functions, observed color comparisons, vector temporary, resource/dispatch fields, signed release, allocation and emit order, literals and natural alignment reviewed. Complete checked match twice; stage138."
     },
     {
+      "id": "adjust_vector_by_metric",
+      "source": "src/render/adjust_vector_by_metric.c",
+      "address": "0x8c0a0478",
+      "entry": "_adjust_vector_by_metric",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 590968,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "adjust_vector_by_metric",
+          "address": "0x8c0a0478",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "331ad5119e4c250f8c0f21d0248c1b1071cdbc25034fa8a2e0b36846e4f20c4c",
+      "symbols": {},
+      "boundary_review": "Raw render helpers and vector adjustment reviewed through adjacent entries, argument and return delays, predicate T/SUBC truth, unsigned field widths, stack vector, mixed integer/float ABI, literal pools and natural alignment. Full checked match twice; stage144."
+    },
+    {
       "id": "create_and_emit_effect_a04e8",
       "source": "src/effects/create_and_emit_effect_a04e8.c",
       "address": "0x8c0a04e8",
@@ -5236,6 +5261,156 @@
       "reference_sha256": "9eedaf3ca3a739bfc56e8847a6a652aa9ead0dd67c1ede7814c6490aae71d142",
       "symbols": {},
       "boundary_review": "Raw follow-base initialization and destruction reviewed through adjacent entries, ordered scalar/short stores, resource field, float literal, null and signed release paths, literal pools and natural alignment. Complete checked match twice; stage140."
+    },
+    {
+      "id": "clear_render_flags",
+      "source": "src/render/clear_render_flags.c",
+      "address": "0x8c0a1cf4",
+      "entry": "_clear_render_flags",
+      "headers": [
+        "src/include/render_flags_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 597236,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_render_flags",
+          "address": "0x8c0a1cf4",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "586324ed4eb2510f846c46534adf6549486a6d4f1a0c3b86d26ab45eaec3972a",
+      "symbols": {
+        "_render_flags": "0x8c46efc8"
+      },
+      "boundary_review": "Raw render helpers and vector adjustment reviewed through adjacent entries, argument and return delays, predicate T/SUBC truth, unsigned field widths, stack vector, mixed integer/float ABI, literal pools and natural alignment. Full checked match twice; stage144."
+    },
+    {
+      "id": "render_flag_400_set",
+      "source": "src/render/render_flag_400_set.c",
+      "address": "0x8c0a2c50",
+      "entry": "_render_flag_400_set",
+      "headers": [
+        "src/include/render_flags_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 601168,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "render_flag_400_set",
+          "address": "0x8c0a2c50",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "3b680c06d72d15e8068319a3db3e1f2ac020484e940e581358f224827c7eaeb1",
+      "symbols": {
+        "_render_flags": "0x8c46efc8"
+      },
+      "boundary_review": "Raw render helpers and vector adjustment reviewed through adjacent entries, argument and return delays, predicate T/SUBC truth, unsigned field widths, stack vector, mixed integer/float ABI, literal pools and natural alignment. Full checked match twice; stage144."
+    },
+    {
+      "id": "get_render_state",
+      "source": "src/render/get_render_state.c",
+      "address": "0x8c0a2c68",
+      "entry": "_get_render_state",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 601192,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "get_render_state",
+          "address": "0x8c0a2c68",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "f71ab4a178cd55d20455157806df1c79aaeacf3de96924898516fae4d58a6999",
+      "symbols": {},
+      "boundary_review": "Raw render helpers and vector adjustment reviewed through adjacent entries, argument and return delays, predicate T/SUBC truth, unsigned field widths, stack vector, mixed integer/float ABI, literal pools and natural alignment. Full checked match twice; stage144."
+    },
+    {
+      "id": "create_effect_a1448",
+      "source": "src/render/create_effect_a1448.c",
+      "address": "0x8c0a2c74",
+      "entry": "_create_effect_a1448",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 601204,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a1448",
+          "address": "0x8c0a2c74",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "7510cd5803ac4c4367bd60e7bf6806b26a6e759eb6883a9b96f86863284c1e29",
+      "symbols": {},
+      "boundary_review": "Raw render helpers and vector adjustment reviewed through adjacent entries, argument and return delays, predicate T/SUBC truth, unsigned field widths, stack vector, mixed integer/float ABI, literal pools and natural alignment. Full checked match twice; stage144."
+    },
+    {
+      "id": "configure_render_buffers",
+      "source": "src/render/configure_render_buffers.c",
+      "address": "0x8c0a2cac",
+      "entry": "_configure_render_buffers",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 601260,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_render_buffers",
+          "address": "0x8c0a2cac",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "53bf3051b7a07539d9dcaa38e70633069dd25f86091afedcc1bf7afc2f000a6f",
+      "symbols": {
+        "_configure_a": "0x8c37e91c"
+      },
+      "boundary_review": "Raw render helpers and vector adjustment reviewed through adjacent entries, argument and return delays, predicate T/SUBC truth, unsigned field widths, stack vector, mixed integer/float ABI, literal pools and natural alignment. Full checked match twice; stage144."
+    },
+    {
+      "id": "submit_render_buffers",
+      "source": "src/render/submit_render_buffers.c",
+      "address": "0x8c0a2cd8",
+      "entry": "_submit_render_buffers",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 601304,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "submit_render_buffers",
+          "address": "0x8c0a2cd8",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "45f665eab2ba3e676536dd9cc7da8b14ac1226d7a880cd3218bf64058ad3c312",
+      "symbols": {
+        "_configure_a": "0x8c37e91c"
+      },
+      "boundary_review": "Raw render helpers and vector adjustment reviewed through adjacent entries, argument and return delays, predicate T/SUBC truth, unsigned field widths, stack vector, mixed integer/float ABI, literal pools and natural alignment. Full checked match twice; stage144."
     },
     {
       "id": "reset_effect_table_state",

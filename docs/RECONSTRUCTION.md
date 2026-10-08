@@ -7159,3 +7159,45 @@ disposable copy; original data and database remain untouched.
 Stage 142 commit d5a4ea2 is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue following render buffer calls, effect factories and vector helpers.
+
+
+## Render buffer and vector helpers, stage 144
+
+Seven complete matches replace **372 bytes**. Totals are **637 functions / 579
+modules / 59,268 compiled bytes / 4,103,644 retained reference bytes / 1.4237%
+whole-image coverage**. All 630 prior matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| adjust_vector_by_metric | 0x8c0a0478 | 112 |
+| clear_render_flags | 0x8c0a1cf4 | 36 |
+| render_flag_400_set | 0x8c0a2c50 | 24 |
+| get_render_state | 0x8c0a2c68 | 12 |
+| create_effect_a1448 | 0x8c0a2c74 | 56 |
+| configure_render_buffers | 0x8c0a2cac | 44 |
+| submit_render_buffers | 0x8c0a2cd8 | 88 |
+
+The vector helper preserves its local difference vector, metric comparison and
+metric-times-limit argument. A declared callee alone produces the same four-byte
+mismatch. Interleaving the float before the last pointer in the provisional call
+signature reproduces the final argument schedule. SH4's separate float/integer
+argument registers preserve the observed R4/R5/R6/FR4 interface. The exact source
+order is provisional; no compiler setting or arithmetic changed.
+
+Declaring the first buffer configure callee fixes its argument/callee literal
+order in both wrappers. The factory allocates 248 bytes and initializes only a
+non-null result. Clearing calls the observed callback before byte/word/long stores
+and leaves byte 1 untouched. The flag predicate's initial zero interpretation was
+wrong: TST/SUBC/add-one returns one for nonzero. Correcting that interpretation
+matches the full predicate. The incorrect candidate was never admitted.
+
+Twenty-six snapshots form eleven binary groups. Every final admission reproduces
+twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,103,644 bytes while preserving artifacts. Focused exports validate using a
+disposable database copy. No parked target was reopened.
+
+Stage 143 commit 3a7845b is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into render state backup/restore and effect resource initialization.
