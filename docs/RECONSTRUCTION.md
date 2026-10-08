@@ -7119,3 +7119,43 @@ using a disposable database copy. No parked target was reopened.
 Stage 141 commit ce9b633 is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into uncovered render initialization, time-field and vector helpers.
+
+
+## Time-field wrapper and bounded render investigations, stage 143
+
+One complete match replaces **68 bytes**: `read_time_fields` at `0x8c0c5184`.
+Totals are **630 functions / 572 modules / 58,896 compiled bytes / 4,104,016
+retained reference bytes / 1.4148% whole-image coverage**. All 629 prior matches
+and source/header hashes remain unchanged. Standalone reconstructed data is zero.
+
+The wrapper copies one unsigned word and six unsigned bytes from a local record.
+Raw callee inspection proves a write through byte 8, supporting a naturally
+10-byte word-aligned local record and the compiler's 12-byte stack allocation.
+The extra output stays local. The first candidate and both checked repetitions
+match the entire 68-byte range, including its literal. Field names are provisional.
+
+Investigation-only work receives no completion credit:
+
+| Target | Persistent hypotheses | Best complete comparison | Blocker |
+| --- | ---: | --- | --- |
+| select_actor_target, 0x8c0c3128 | 3 | 92/92 bytes, 31 differing; first 0x8c0c313e | Redundant unsigned-word extension and return-path scheduling |
+| initialize_render_sequence, 0x8c0c5c1c | 5 | 268/268 bytes, 6 differing; first 0x8c0c5c72 | Two global argument loads and literal-zero call delay |
+| initialize_particle_render_state, 0x8c0c7628 | 2 | 172/168 bytes, 153 differing; first 0x8c0c762a | Extra saved register and address/zero lifetimes |
+
+All three are parked before the limit because current evidence is exhausted.
+The queue records specific revisit conditions. An integer lookup declaration fixes
+saved-register allocation but a C++ inline getter gives the same binary and still
+omits one EXTUW. Declaring the render allocator removes 15 differing bytes;
+ordered argument locals remove three more. Declaring its configure call worsens
+the result, alone and with ordered locals. Removing an unused final material
+cursor increment changes no output. Equivalent binaries are grouped in scratch.
+These results do not reopen the original primary targets.
+
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,104,016
+bytes while preserving existing artifacts. Focused exports validate against a
+disposable copy; original data and database remain untouched.
+
+Stage 142 commit d5a4ea2 is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue following render buffer calls, effect factories and vector helpers.

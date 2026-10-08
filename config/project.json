@@ -9074,6 +9074,31 @@
       "boundary_review": "Raw0x8c0c4fe0-0x8c0c5018: return delay0x8c0c500a; three literals500c/5010/5014; next entry5018. Final complete56-byte source exact twice; stage107."
     },
     {
+      "id": "read_time_fields",
+      "source": "src/system/read_time_fields.c",
+      "address": "0x8c0c5184",
+      "entry": "_read_time_fields",
+      "headers": [
+        "src/include/time_fields.h"
+      ],
+      "ranges": [
+        {
+          "offset": 741764,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "read_time_fields",
+          "address": "0x8c0c5184",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "419bdaf2ee4be9c5773ac082357a92fbe805f143ef8c0ce6496e3f6b09800523",
+      "symbols": {},
+      "boundary_review": "Raw time-field wrapper and callee reviewed: callee writes byte8 of naturally10byte local record, rounded12byte stack; seven unsigned scalar copies, saved-register and return delays, literal and adjacent clamp boundary. Full checked match twice; stage143."
+    },
+    {
       "id": "clamp_int",
       "address": "0x8c0c51c8",
       "source": "src/samples/clamp_int.c",
