@@ -7239,3 +7239,37 @@ disposable database copy. No parked target was reopened.
 Stage 144 commit 98d72e7 is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into temporary render-state setup, view initialization and effect lifecycle.
+
+
+## Temporary render setup and bounded view investigation, stage 146
+
+Two complete matches replace **236 bytes**: `configure_temporary_render_state`
+at `0x8c0a2de8` (180 bytes) and `create_effect_a2ed4` at `0x8c0a2e9c` (56 bytes).
+Totals are **642 functions / 584 modules / 59,816 compiled bytes / 4,103,096
+retained reference bytes / 1.4369% whole-image coverage**. All 640 prior matches
+and source/header hashes remain unchanged. Standalone reconstructed data is zero.
+
+Temporary setup initializes only the observed fields 0 through 32 of a 44-byte
+stack record. Fields 36 and 40 remain untouched, as in the reference. It sets the
+global scalar values, applies the state and view, then passes field 20 to the
+parameter call. All float literals and padding match. The adjacent factory
+allocates 220 bytes and initializes only a non-null result. Both first candidates
+match; both checked final sources independently reproduce twice.
+
+Investigation-only work: `initialize_render_view`, `0x8c0a1bf8`, is parked after
+three persistent hypotheses at **252/252 bytes, 19 differing**, first
+`0x8c0a1c5f`. Separate field 20/24 byte-offset addressing restores the instruction
+count and improves 79 differences to 19. Multiply-result/global-load/fixed-view
+argument scheduling still differs. Moving the pointer last in the mixed projection
+signature yields the identical binary. Revisit only with independent exact indexed
+projection-call evidence or verified declarations/inline context. No completion
+credit is awarded for this candidate, and the original primary targets stay parked.
+
+Ten snapshots form four binary groups. Two fresh exact builds per checkout,
+integrated-image comparison, five-function proof, 53 research tests and 58 public
+tests pass. Source-only rejects 4,103,096 bytes while preserving artifacts. Focused
+exports validate using a disposable copy; original data remains untouched.
+
+Stage 145 commit 7b767f5 is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into the adjacent effect lifecycle and motion-field helpers.

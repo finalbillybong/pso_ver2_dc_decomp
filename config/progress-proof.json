@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "fcac205eb01faf1b3e79f238a33035a4c7f7b126c01ea47f2b169113b3ffb8ec",
+    "config/project.json": "55b939e78a957049e3cfce8e95bb125ecccbd01ea36302637e02e0fcc47c8be2",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_15_value.c": "14ef1a96130df680ee07289fe39c85760f085c48337653c8d72de7f0e5d85c3c",
@@ -648,7 +648,9 @@
     "src/render/clear_render_flags.c": "fddede83ff653f19ab1de12f3e24833af2337758f008322c700235d7768e55d2",
     "src/render/configure_alternate_render_state.c": "1cb9541380e489badade20e2f9c4446c5b2fcd996c1bace79c174f1afd905ea5",
     "src/render/configure_render_buffers.c": "0c4d4cd0262aa8b0f5fce8cd23816bd12cb69da262847a01650afb43ee7310eb",
+    "src/render/configure_temporary_render_state.c": "bc9c5996cfc9fda29df1f23447318d65589bf57b8eafcb05f2880e7c63cf19e6",
     "src/render/create_effect_a1448.c": "785b9f4b31e26e1ee57cc594e174108005e689779296e731bcea8ec71f309351",
+    "src/render/create_effect_a2ed4.c": "f37ffe0da949e7b1ce33d677e806b3e16e53756de5f8f92fde40d89d526aec7c",
     "src/render/disable_alternate_render_state.c": "1402d13928f2ae0dba10ef7aff17df8aefd22de03a6b2b30e0f7d32dc001bf4f",
     "src/render/draw_with_alternate_dispatch.c": "816c23ecddb00f49321e5d750251a3cde198d7bc380ac1747b0679f5b573c44e",
     "src/render/enable_alternate_render_state.c": "f159a78ec0106ff60c08a72562c8c944e178104d00baae9ad0ce34eaf02d7809",
@@ -3089,6 +3091,28 @@
       "-O2"
     ],
     "restore_render_state": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "configure_temporary_render_state": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_effect_a2ed4": [
       "-proc",
       "SH4",
       "-endian",
@@ -7183,6 +7207,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4103332,
+  "source_only_rejected_retained_bytes": 4103096,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

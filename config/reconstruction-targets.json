@@ -18757,6 +18757,133 @@
       "boundary_review": "Raw resource initialization and render backup/restore reviewed through adjacent entries, one-pair and55entry loops, observed cached field base, 44byte aggregate copies, call/return delays, float literal and natural alignment. Full checked match twice; stage145.",
       "status": "matched",
       "reason": "Complete resource/render-state helper range; referenced table contents remain reference-dependent."
+    },
+    {
+      "id": "configure_temporary_render_state",
+      "source": "src/render/configure_temporary_render_state.c",
+      "address": "0x8c0a2de8",
+      "entry": "_configure_temporary_render_state",
+      "headers": [
+        "src/include/render_state_blocks.h"
+      ],
+      "ranges": [
+        {
+          "offset": 601576,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_temporary_render_state",
+          "address": "0x8c0a2de8",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "134a8e80d9a451261ec0b622d88e72a5819192462d6878b964581247304de5a5",
+      "symbols": {
+        "_apply_state": "0x8c37e990",
+        "_apply_view": "0x8c37e4c0",
+        "_set_parameters": "0x8c380c5a"
+      },
+      "boundary_review": "Raw temporary render-state and adjacent factory reviewed:44byte stackrecord with observed fields36/40 untouched, all literal floats, global stores and call/return delays,220byte allocation/nullguard, complete literal pools and natural alignment. Full checked match twice; stage146.",
+      "status": "matched",
+      "reason": "Complete temporary render-state/factory range; no speculative initialization of untouched fields."
+    },
+    {
+      "id": "create_effect_a2ed4",
+      "source": "src/render/create_effect_a2ed4.c",
+      "address": "0x8c0a2e9c",
+      "entry": "_create_effect_a2ed4",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 601756,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a2ed4",
+          "address": "0x8c0a2e9c",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "93fc8ad4f3476a92612c1d8ef7c80db93ff14d63cfeb3596d9df50a1a396fddf",
+      "symbols": {},
+      "boundary_review": "Raw temporary render-state and adjacent factory reviewed:44byte stackrecord with observed fields36/40 untouched, all literal floats, global stores and call/return delays,220byte allocation/nullguard, complete literal pools and natural alignment. Full checked match twice; stage146.",
+      "status": "matched",
+      "reason": "Complete temporary render-state/factory range; no speculative initialization of untouched fields."
+    },
+    {
+      "id": "initialize_render_view",
+      "source": "src/provisional/initialize_render_view.c",
+      "address": "0x8c0a1bf8",
+      "entry": "_initialize_render_view",
+      "headers": [
+        "src/include/render_view_parameters.h",
+        "src/include/render_flags_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 596984,
+          "size": 252
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_render_view",
+          "address": "0x8c0a1bf8",
+          "size": 252
+        }
+      ],
+      "reference_sha256": "b6b060d63454ec6cbcf4836806e830c83023de5f015f0cf9e8434f30c7205dca",
+      "symbols": {
+        "_render_flags": "0x8c46efc8",
+        "_render_current": "0x8c46efd4",
+        "_initialize_view": "0x8c384504",
+        "_view_parameters": "0x8c303298",
+        "_set_projection": "0x8c37e774",
+        "_set_angle": "0x8c37e76c",
+        "_set_translation": "0x8c382a24",
+        "_set_direction": "0x8c38abb8",
+        "_apply_view": "0x8c37e4c0"
+      },
+      "status": "parked",
+      "reason": "252bytes /19 differing, first0x8c0a1c5f. Separate field20/24 byte-offset addressing restores instruction count and reduces79to19 differences, but multiply-result/global pointer/view argument scheduling remains different. Moving view pointer last in mixed projection signature produces identical binary.",
+      "unsuccessful_distinct_hypotheses": 3,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact indexed two-float projection call with separate field bases and fixed view pointer, or verified declaration/inline context. No repeated mixed-argument spelling variants.",
+      "comparison": {
+        "name": "initialize_render_view-checked-0",
+        "size": 252,
+        "expected_size": 252,
+        "exact": false,
+        "differing_bytes": 19,
+        "first_difference": "0x8c0a1c5f",
+        "offsets": [
+          103,
+          104,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          121,
+          122,
+          123
+        ],
+        "source_sha256": "1d69b7ac2ad1e721815a31042b74a5dd514e905237bb11d97f1abdfd4cd4873c",
+        "compiler_receipt_sha256": "0e5a3758ad40bb001b837f6c98f4710f0cc21b2212cc959c1c4aa81335a6f577"
+      }
     }
   ]
 }

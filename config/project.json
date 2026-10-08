@@ -5506,6 +5506,58 @@
       "boundary_review": "Raw resource initialization and render backup/restore reviewed through adjacent entries, one-pair and55entry loops, observed cached field base, 44byte aggregate copies, call/return delays, float literal and natural alignment. Full checked match twice; stage145."
     },
     {
+      "id": "configure_temporary_render_state",
+      "source": "src/render/configure_temporary_render_state.c",
+      "address": "0x8c0a2de8",
+      "entry": "_configure_temporary_render_state",
+      "headers": [
+        "src/include/render_state_blocks.h"
+      ],
+      "ranges": [
+        {
+          "offset": 601576,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_temporary_render_state",
+          "address": "0x8c0a2de8",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "134a8e80d9a451261ec0b622d88e72a5819192462d6878b964581247304de5a5",
+      "symbols": {
+        "_apply_state": "0x8c37e990",
+        "_apply_view": "0x8c37e4c0",
+        "_set_parameters": "0x8c380c5a"
+      },
+      "boundary_review": "Raw temporary render-state and adjacent factory reviewed:44byte stackrecord with observed fields36/40 untouched, all literal floats, global stores and call/return delays,220byte allocation/nullguard, complete literal pools and natural alignment. Full checked match twice; stage146."
+    },
+    {
+      "id": "create_effect_a2ed4",
+      "source": "src/render/create_effect_a2ed4.c",
+      "address": "0x8c0a2e9c",
+      "entry": "_create_effect_a2ed4",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 601756,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a2ed4",
+          "address": "0x8c0a2e9c",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "93fc8ad4f3476a92612c1d8ef7c80db93ff14d63cfeb3596d9df50a1a396fddf",
+      "symbols": {},
+      "boundary_review": "Raw temporary render-state and adjacent factory reviewed:44byte stackrecord with observed fields36/40 untouched, all literal floats, global stores and call/return delays,220byte allocation/nullguard, complete literal pools and natural alignment. Full checked match twice; stage146."
+    },
+    {
       "id": "reset_effect_table_state",
       "source": "src/effects/reset_effect_table_state.c",
       "address": "0x8c0a6bdc",
