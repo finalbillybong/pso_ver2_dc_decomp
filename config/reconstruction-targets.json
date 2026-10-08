@@ -15284,6 +15284,202 @@
       "boundary_review": "Raw recursive array fillers and render-state helpers reviewed through adjacent entries, branches, recursion, field accesses, return/tail-call delays, literal pools and natural alignment. Full checked match twice; stage129.",
       "status": "matched",
       "reason": "Complete recursive vector-array filler or alternate render helper, preserving observed transforms, count, masks and temporary dispatch behavior."
+    },
+    {
+      "id": "cache_actor_position",
+      "source": "src/objects/cache_actor_position.c",
+      "address": "0x8c0c7d14",
+      "entry": "_cache_actor_position",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_state_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 752916,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "cache_actor_position",
+          "address": "0x8c0c7d14",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "ad79fac5d11d30716820d3bbaa244802fccc5077552d3bc4376237cac20f7332",
+      "symbols": {},
+      "boundary_review": "Raw actor-state helpers reviewed through adjacent entries, signed accesses, switch branches, aggregate copy, return delays, literals and natural alignment. Full checked match twice; stage130.",
+      "status": "matched",
+      "reason": "Complete actor-state accessor or update, preserving observed signed tests, flags, switch default and vector copy behavior."
+    },
+    {
+      "id": "actor_mode_allows_action",
+      "source": "src/objects/actor_mode_allows_action.c",
+      "address": "0x8c0c7d50",
+      "entry": "_actor_mode_allows_action",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_state_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 752976,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "actor_mode_allows_action",
+          "address": "0x8c0c7d50",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "3bc9bba53ffa1e9a63e23ed29a51df3b6d78c7c2e6956b60e91b41ad17deac1a",
+      "symbols": {},
+      "boundary_review": "Raw actor-state helpers reviewed through adjacent entries, signed accesses, switch branches, aggregate copy, return delays, literals and natural alignment. Full checked match twice; stage130.",
+      "status": "matched",
+      "reason": "Complete actor-state accessor or update, preserving observed signed tests, flags, switch default and vector copy behavior."
+    },
+    {
+      "id": "get_actor_state_value",
+      "source": "src/objects/get_actor_state_value.c",
+      "address": "0x8c0c7d6c",
+      "entry": "_get_actor_state_value",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_state_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 753004,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "get_actor_state_value",
+          "address": "0x8c0c7d6c",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "60aea97109c2c3facd5ff299e71311a02d1320397642a7e20c041b83f484e610",
+      "symbols": {},
+      "boundary_review": "Raw actor-state helpers reviewed through adjacent entries, signed accesses, switch branches, aggregate copy, return delays, literals and natural alignment. Full checked match twice; stage130.",
+      "status": "matched",
+      "reason": "Complete actor-state accessor or update, preserving observed signed tests, flags, switch default and vector copy behavior."
+    },
+    {
+      "id": "get_actor_position",
+      "source": "src/objects/get_actor_position.c",
+      "address": "0x8c0c7d78",
+      "entry": "_get_actor_position",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_state_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 753016,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "get_actor_position",
+          "address": "0x8c0c7d78",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "0681f0230f2c62048b23d7cb1f01718ecea41304fc225b3db9414a00178480b5",
+      "symbols": {},
+      "boundary_review": "Raw actor-state helpers reviewed through adjacent entries, signed accesses, switch branches, aggregate copy, return delays, literals and natural alignment. Full checked match twice; stage130.",
+      "status": "matched",
+      "reason": "Complete actor-state accessor or update, preserving observed signed tests, flags, switch default and vector copy behavior."
+    },
+    {
+      "id": "set_actor_action_kind",
+      "source": "src/objects/set_actor_action_kind.c",
+      "address": "0x8c0c7d84",
+      "entry": "_set_actor_action_kind",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_state_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 753028,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_actor_action_kind",
+          "address": "0x8c0c7d84",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "2993880b208ae4e9276b369ff35b30f1bc27adb7b8b6d24e70bcfb3ef5be3a88",
+      "symbols": {},
+      "boundary_review": "Raw actor-state helpers reviewed through adjacent entries, signed accesses, switch branches, aggregate copy, return delays, literals and natural alignment. Full checked match twice; stage130.",
+      "status": "matched",
+      "reason": "Complete actor-state accessor or update, preserving observed signed tests, flags, switch default and vector copy behavior."
+    },
+    {
+      "id": "mark_actor_flag_2",
+      "source": "src/objects/mark_actor_flag_2.c",
+      "address": "0x8c0c7dc4",
+      "entry": "_mark_actor_flag_2",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_state_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 753092,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "mark_actor_flag_2",
+          "address": "0x8c0c7dc4",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "d749d12b823b6fba04b09ddadd95d5df966fff125fdb00c76e99876ffaeb284e",
+      "symbols": {},
+      "boundary_review": "Raw actor-state helpers reviewed through adjacent entries, signed accesses, switch branches, aggregate copy, return delays, literals and natural alignment. Full checked match twice; stage130.",
+      "status": "matched",
+      "reason": "Complete actor-state accessor or update, preserving observed signed tests, flags, switch default and vector copy behavior."
+    },
+    {
+      "id": "mark_actor_flag_2000",
+      "source": "src/objects/mark_actor_flag_2000.c",
+      "address": "0x8c0c7f0c",
+      "entry": "_mark_actor_flag_2000",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_state_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 753420,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "mark_actor_flag_2000",
+          "address": "0x8c0c7f0c",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "b3fd6fb67e487b3667fa38e0569188a5c131a0d4d02e1d28f73bb417e4c0eaf9",
+      "symbols": {},
+      "boundary_review": "Raw actor-state helpers reviewed through adjacent entries, signed accesses, switch branches, aggregate copy, return delays, literals and natural alignment. Full checked match twice; stage130.",
+      "status": "matched",
+      "reason": "Complete actor-state accessor or update, preserving observed signed tests, flags, switch default and vector copy behavior."
     }
   ]
 }

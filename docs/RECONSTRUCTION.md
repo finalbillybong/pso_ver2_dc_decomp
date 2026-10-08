@@ -6571,3 +6571,43 @@ Stage 128 commit 8b46da2 is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into neighboring actor-state and position helpers.
+
+
+## Actor-state access and updates, stage 130
+
+Seven new exact functions replace **184 bytes** in seven modules. Totals are
+**571 functions / 517 modules / 54,032 compiled bytes / 4,108,880 retained reference
+bytes**, or **1.2979% whole-image coverage**. All 564 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| cache_actor_position | 0x8c0c7d14 | 28 |
+| actor_mode_allows_action | 0x8c0c7d50 | 28 |
+| get_actor_state_value | 0x8c0c7d6c | 12 |
+| get_actor_position | 0x8c0c7d78 | 12 |
+| set_actor_action_kind | 0x8c0c7d84 | 64 |
+| mark_actor_flag_2 | 0x8c0c7dc4 | 20 |
+| mark_actor_flag_2000 | 0x8c0c7f0c | 20 |
+
+The checked provisional actor prefix preserves vector offsets 120/804, signed
+mode at 778, flags at 1000, action at 1008 and the returned pointer at 1056.
+Position caching is an aggregate copy. The action helper sets flag 1 and maps
+0/1/2 to 4/5/6, preserving the previous action for other inputs. Other helpers
+preserve flag bits and pointer identity.
+
+Six baseline candidates match. The mode predicate initially produces 28 bytes
+with 13 differences: two return paths replace the observed common return. A
+zero-initialized result assigned only when mode is neither 5 nor 6 reproduces
+the common return and branch-delay initialization exactly. Twenty-two snapshots
+form eight binary groups; all seven checked admissions match independently twice.
+
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,108,880
+bytes without changing existing build artifacts. Focused exports validate on a
+disposable database copy. All parked targets retain their counts and conditions.
+
+Stage 129 commit a1b6643 is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into neighboring state-transition and virtual-call helpers.
