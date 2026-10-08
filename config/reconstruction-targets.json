@@ -6176,6 +6176,212 @@
       "boundary_review": "Raw SH4 entry through adjacent entry, including literal pools; bit casts and angle helper compiled together in original order for natural alignment. Final source exact twice; reconstruction-stage64.",
       "status": "matched",
       "reason": "Complete render setup or float/vector helper; SDK calls and remaining reference data receive no credit."
+    },
+    {
+      "id": "operation_0c548c",
+      "source": "src/runtime/operation_0c548c.c",
+      "address": "0x8c0c548c",
+      "entry": "_operation_0c548c",
+      "ranges": [
+        {
+          "offset": 742540,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c548c",
+          "address": "0x8c0c548c",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "fe874bfe4d857d45162dac66bcca08e5fb6d6c9cf9db3ef29c36a1d541dffff2",
+      "symbols": {
+        "_construct_at": "0x8c08aefc"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including complete literal pool and natural alignment; final source exact twice; reconstruction-stage65.",
+      "status": "matched",
+      "reason": "Complete provisional setup/update/cleanup wrapper or resource preparation/selection helper; static records and other callees receive no source credit."
+    },
+    {
+      "id": "operation_0c5508",
+      "source": "src/runtime/operation_0c5508.c",
+      "address": "0x8c0c5508",
+      "entry": "_operation_0c5508",
+      "ranges": [
+        {
+          "offset": 742664,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c5508",
+          "address": "0x8c0c5508",
+          "size": 160
+        }
+      ],
+      "reference_sha256": "dc957b784a439f8081c6b7bb1daba24bf7d839056ea1554368bcd35139a4c335",
+      "symbols": {
+        "_operation_0331e4": "0x8c0331e4",
+        "_operation_0332a4": "0x8c0332a4"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including complete literal pool and natural alignment; final source exact twice; reconstruction-stage65.",
+      "status": "matched",
+      "reason": "Complete provisional setup/update/cleanup wrapper or resource preparation/selection helper; static records and other callees receive no source credit."
+    },
+    {
+      "id": "operation_0c55a8",
+      "source": "src/runtime/operation_0c55a8.c",
+      "address": "0x8c0c55a8",
+      "entry": "_operation_0c55a8",
+      "ranges": [
+        {
+          "offset": 742824,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c55a8",
+          "address": "0x8c0c55a8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "d3b6fc4e570d73f03ea667a49cdf16cd18e3c93f012d6f881402aa0932122e4d",
+      "boundary_review": "Raw SH4 entry through adjacent entry including complete literal pool and natural alignment; final source exact twice; reconstruction-stage65.",
+      "status": "matched",
+      "reason": "Complete provisional setup/update/cleanup wrapper or resource preparation/selection helper; static records and other callees receive no source credit."
+    },
+    {
+      "id": "operation_0c55b4",
+      "source": "src/runtime/operation_0c55b4.c",
+      "address": "0x8c0c55b4",
+      "entry": "_operation_0c55b4",
+      "ranges": [
+        {
+          "offset": 742836,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c55b4",
+          "address": "0x8c0c55b4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "26618a3ec329342686525958f2f02e2ed12b081dfe5d22b456408bbb1bc6834c",
+      "symbols": {
+        "_operation_033878": "0x8c033878"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including complete literal pool and natural alignment; final source exact twice; reconstruction-stage65.",
+      "status": "matched",
+      "reason": "Complete provisional setup/update/cleanup wrapper or resource preparation/selection helper; static records and other callees receive no source credit."
+    },
+    {
+      "id": "operation_0c6270",
+      "source": "src/runtime/operation_0c6270.c",
+      "address": "0x8c0c6270",
+      "entry": "_operation_0c6270",
+      "ranges": [
+        {
+          "offset": 746096,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c6270",
+          "address": "0x8c0c6270",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "df0ed89a150ae55d4eb51ac8e0440349b697c351a7e11f1eb5731b4809ed2354",
+      "symbols": {
+        "_finish_at": "0x8c38278e"
+      },
+      "headers": [
+        "src/include/resource_slot.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including complete literal pool and natural alignment; final source exact twice; reconstruction-stage65.",
+      "status": "matched",
+      "reason": "Complete provisional setup/update/cleanup wrapper or resource preparation/selection helper; static records and other callees receive no source credit."
+    },
+    {
+      "id": "operation_0c62d0",
+      "source": "src/runtime/operation_0c62d0.c",
+      "address": "0x8c0c62d0",
+      "entry": "_operation_0c62d0",
+      "ranges": [
+        {
+          "offset": 746192,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c62d0",
+          "address": "0x8c0c62d0",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "727428aff4af920c1a3b152c81d9af095bf1db1d5d6561012c30ee3c7fc4dcca",
+      "symbols": {
+        "_release_at": "0x8c37d534"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including complete literal pool and natural alignment; final source exact twice; reconstruction-stage65.",
+      "status": "matched",
+      "reason": "Complete provisional setup/update/cleanup wrapper or resource preparation/selection helper; static records and other callees receive no source credit."
+    },
+    {
+      "id": "operation_0c62e0",
+      "source": "src/runtime/operation_0c62e0.c",
+      "address": "0x8c0c62e0",
+      "entry": "_operation_0c62e0",
+      "ranges": [
+        {
+          "offset": 746208,
+          "size": 172
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c62e0",
+          "address": "0x8c0c62e0",
+          "size": 172
+        }
+      ],
+      "reference_sha256": "51f3872a545a453dc7514b9f8c0c5656e6da9187a1c3fdc337a593d7b15ab0a9",
+      "symbols": {
+        "_records": "0x8c306244"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including complete literal pool and natural alignment; final source exact twice; reconstruction-stage65.",
+      "status": "matched",
+      "reason": "Complete provisional setup/update/cleanup wrapper or resource preparation/selection helper; static records and other callees receive no source credit."
+    },
+    {
+      "id": "operation_0c638c",
+      "source": "src/runtime/operation_0c638c.c",
+      "address": "0x8c0c638c",
+      "entry": "_operation_0c638c",
+      "ranges": [
+        {
+          "offset": 746380,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c638c",
+          "address": "0x8c0c638c",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "4b9361c9d85a70c23d717cdb8c65e80720741810bf4994bbeaa1165b4f3ea593",
+      "boundary_review": "Raw SH4 entry through adjacent entry including complete literal pool and natural alignment; final source exact twice; reconstruction-stage65.",
+      "status": "matched",
+      "reason": "Complete provisional setup/update/cleanup wrapper or resource preparation/selection helper; static records and other callees receive no source credit."
     }
   ]
 }

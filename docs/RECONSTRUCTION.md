@@ -3357,3 +3357,57 @@ disposable copy and checked against current inputs; the original database remain
 unchanged. Compiler, base flags, default linker and full-range rules are unchanged.
 Both original primary targets and manager initialization **280/8** remain
 incomplete. Supporting matches do not replace the primary acceptance criteria.
+
+
+## Provisional setup, update and resource helpers, stage 65
+
+Eight complete ordinary-C functions add **704 bytes**: **0x8c0c548c** (124),
+**0x8c0c5508** (160), **0x8c0c55a8** (12), **0x8c0c55b4** (68),
+**0x8c0c6270** (96), **0x8c0c62d0** (16), **0x8c0c62e0** (172), and
+**0x8c0c638c** (56). Address-based names remain provisional because their wider
+setup/update roles are not yet established. Totals are **272 functions / 250
+modules / 28,208 compiled full-range bytes / 4,134,704 retained reference bytes**,
+or **0.6776% whole-image coverage**. All 264 earlier matches, module definitions
+and source/header hashes remain unchanged. Since the initial checkpoint, 238
+functions replace 24,564 bytes. Code-only completion remains unknown; separately
+reconstructed static data remains zero.
+
+The first group preserves initialization call order, the nullable 108-byte child
+allocation and installed callback, signed-byte update predicate, conditional
+counter increment and repeated cleanup calls. Direct external declarations for
+the constructor and selected object routines resolve literal/call scheduling
+without changing argument values or the pinned compiler. The callback preserves
+its tail call with argument 25. Static strings, globals and remaining callees
+continue to come from the reference.
+
+ResourceSlot checks the observed 12-byte destination stride. Preparation visits
+eight slots, reading a 32-byte indexed row of pointers and preserving the final
+descriptor call. Another routine retains eight explicit calls to 32-byte-spaced
+records with indices zero through seven and float value -150. Expressing the
+record base as an external array prevents folding each pointer into a separate
+absolute literal and yields the exact 172-byte function. No loop is substituted
+for those observed unrolled calls, and the static records receive no source credit.
+
+Selection refreshes the state, scans four flags from index three downward and
+preserves the existing selection when no flag equals one. A separate 16-byte
+field-base offset is required. Scoping that invariant base inside the loop gives
+the reference's index/base register allocation after compiler hoisting; early
+index initialization, register hints, integer bases and a while loop remain
+eight bytes different. Final source uses the complete matching form.
+
+All **40 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage65`; none were compiler/linker rejections.
+Final sources match independently twice. Proposed identifiers, source paths and
+byte intervals are checked before integration. Two fresh exact builds,
+integrated-image comparison, five-function proof and all **53 research tests**
+pass; the public suite remains **58 tests**. Source-only rejects 4,134,704 retained
+bytes without changing artifacts. Focused exports are regenerated after
+manifest/queue changes on a disposable copy and checked against current inputs;
+the original database remains unchanged. Compiler, base flags, default linker
+and complete-range rules remain unchanged.
+
+Original operation/emission remain **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder remains unresolved. The
+primary batch is still incomplete; supporting matches do not replace its
+acceptance criteria. Follow the newly resolved setup calls into their remaining
+initialization helpers while preserving these exact blocker receipts.
