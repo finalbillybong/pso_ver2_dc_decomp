@@ -5035,3 +5035,54 @@ declarations, their combination and reversed addition operands did not help.
 Supporting matches do not replace primary acceptance. Compiler, base flags and
 complete-range rules are unchanged. Publication retains default scanner rules
 and the single verified source-hash exception with its stage-75 detection control.
+
+
+## Weighted grid and panel owner lifecycle, stage 97
+
+Five complete functions add **1,144 bytes**: weighted grid **0x8c195c84** (416),
+factory **0x8c195e68** (172), destructor **0x8c195e24** (68), draw coordinator
+**0x8c1960a0** (92), and owner update **0x8c195f14** (396). Totals are **457 functions /
+409 modules / 45,056 compiled full-range bytes / 4,117,856 retained reference
+bytes**, or **1.0823% whole-image coverage**. All 452 previous matches, module
+definitions and source/header hashes remain unchanged. Since the initial
+checkpoint, 423 functions replace 41,412 bytes. Code-only completion remains
+unknown; standalone reconstructed static data is zero.
+
+The weighted grid retains three queried indices, three local weights and seven
+rows of eight drawn bits. It preserves first-match lookup, unsigned-byte truncation
+of prior state, weight times255 conversion and one-bit convergence every eighth
+frame. A separate search index recovers the last four differing bytes without
+changing the draw loop. Checked views cover the global actor/weight input and all
+shared position/state fields; transitive header dependencies are explicit.
+
+The factory preserves nullable60-byte allocation, inline root construction,
+dispatch/tag/size assignments, setup, signed nine-item wrap and three independent
+float stores. Separating the allocated pointer parameter from an address-exposed
+local owner reproduces the observed stack loads. Reusing the tag owner for setup
+recovers the original R4 lifetime through the size-store delay slot. The destructor
+retains nullable cleanup and positive signed-short pool release. The draw
+coordinator preserves all three color arguments and six callbacks in order.
+
+The owner update retains asymmetric opacity changes, both mode-indexed float
+deltas, copied two-item selection lists, nine-state resets and its final counter
+increment. A nested inline reset initially remained an out-of-line call under
+the pinned compiler. Writing that loop within the selection helper recovers the
+call-free reference. A compound subtraction in the wrap condition resolves the
+last eight differing bytes and places the store in the observed branch delay
+slot. Captured-index, plain assignment and pointer variants fail and remain in
+scratch. The new checked60-byte owner view leaves every old header unchanged.
+
+All **30 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons; none were compiler-rejected. Final checked sources match twice
+independently. Two fresh exact builds, integrated image comparison, five-function
+proof and all **53 research tests** pass; the public suite remains **58 tests**.
+Source-only rejects4,117,856 retained bytes without changing artifacts. Focused
+exports use a disposable copy and are checked against current inputs; the original
+database remains unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. The earlier
+panel draw remains244 bytes versus240 expected. Supporting matches do not replace
+primary acceptance. Compiler, base flags and complete-range rules are unchanged.
+Publication retains default scanner rules and the single verified source-hash
+exception with its stage-75 detection control.

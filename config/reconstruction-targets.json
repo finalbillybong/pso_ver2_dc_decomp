@@ -10637,6 +10637,151 @@
       "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; panel renderer, background and bit-grid drawing; reconstruction-stage96.",
       "status": "matched",
       "reason": "Complete panel renderer, background or bit-grid drawing range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_195c84",
+      "source": "src/objects/operation_195c84.c",
+      "address": "0x8c195c84",
+      "entry": "_operation_195c84",
+      "ranges": [
+        {
+          "offset": 1596548,
+          "size": 416
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195c84",
+          "address": "0x8c195c84",
+          "size": 416
+        }
+      ],
+      "reference_sha256": "6991b40a972aaae833dee9a9a61114dcb8f687e5dac2337ca58b8ba3e623a7d4",
+      "symbols": {
+        "_initialized": "0x8c4dc3f0",
+        "_counter": "0x8c4dc3ec",
+        "_input": "0x8c46b044"
+      },
+      "headers": [
+        "src/include/widget_panel_owner.h",
+        "src/include/widget_draw.h",
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; weighted grid and panel owner lifecycle/update; reconstruction-stage97.",
+      "status": "matched",
+      "reason": "Complete weighted grid or panel owner lifecycle/update range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_195e68",
+      "source": "src/objects/operation_195e68.c",
+      "address": "0x8c195e68",
+      "entry": "_operation_195e68",
+      "ranges": [
+        {
+          "offset": 1597032,
+          "size": 172
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195e68",
+          "address": "0x8c195e68",
+          "size": 172
+        }
+      ],
+      "reference_sha256": "58c3d6539698d768339eab7d89d8432f1a28c6805974a3a4780bf964e988e0f2",
+      "headers": [
+        "src/include/widget_panel_owner.h",
+        "src/include/widget_draw.h",
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; weighted grid and panel owner lifecycle/update; reconstruction-stage97.",
+      "status": "matched",
+      "reason": "Complete weighted grid or panel owner lifecycle/update range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_195e24",
+      "source": "src/objects/operation_195e24.c",
+      "address": "0x8c195e24",
+      "entry": "_operation_195e24",
+      "ranges": [
+        {
+          "offset": 1596964,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195e24",
+          "address": "0x8c195e24",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b0a54beb570a5eba972229ff279237ea209fb06696b4fad5eea025ddda7541f9",
+      "headers": [
+        "src/include/widget_panel_owner.h",
+        "src/include/widget_draw.h",
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; weighted grid and panel owner lifecycle/update; reconstruction-stage97.",
+      "status": "matched",
+      "reason": "Complete weighted grid or panel owner lifecycle/update range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_1960a0",
+      "source": "src/objects/operation_1960a0.c",
+      "address": "0x8c1960a0",
+      "entry": "_operation_1960a0",
+      "ranges": [
+        {
+          "offset": 1597600,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1960a0",
+          "address": "0x8c1960a0",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "2e9217a822272da0a4c223793e086b0c5426e082beccb7a78303801e5fd9cdc4",
+      "headers": [
+        "src/include/widget_panel_owner.h",
+        "src/include/widget_draw.h",
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; weighted grid and panel owner lifecycle/update; reconstruction-stage97.",
+      "status": "matched",
+      "reason": "Complete weighted grid or panel owner lifecycle/update range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_195f14",
+      "source": "src/objects/operation_195f14.c",
+      "address": "0x8c195f14",
+      "entry": "_operation_195f14",
+      "ranges": [
+        {
+          "offset": 1597204,
+          "size": 396
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195f14",
+          "address": "0x8c195f14",
+          "size": 396
+        }
+      ],
+      "reference_sha256": "2c5cc3f13792ccf2a5dd36f18328bd05b84bc3cb00d1da43930a6922ad278594",
+      "headers": [
+        "src/include/widget_panel_owner.h",
+        "src/include/widget_draw.h",
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; weighted grid and panel owner lifecycle/update; reconstruction-stage97.",
+      "status": "matched",
+      "reason": "Complete weighted grid or panel owner lifecycle/update range; remaining dependencies stay reference-backed."
     }
   ]
 }
