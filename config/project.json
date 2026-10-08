@@ -4866,6 +4866,197 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124."
     },
     {
+      "id": "effect_color_steps",
+      "source": "src/effects/effect_color_steps.c",
+      "address": "0x8c0a030c",
+      "entry": "_step_effect_color_components",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_color.h"
+      ],
+      "ranges": [
+        {
+          "offset": 590604,
+          "size": 364
+        }
+      ],
+      "functions": [
+        {
+          "name": "step_effect_color_components",
+          "address": "0x8c0a030c",
+          "size": 232
+        },
+        {
+          "name": "step_effect_color_alpha",
+          "address": "0x8c0a03f4",
+          "size": 76
+        },
+        {
+          "name": "interpolate_effect_vector",
+          "address": "0x8c0a0440",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "d4c3ed58bb999884726c0287d3bdd6f32fa4818a8bceeaaa91b25675a626a66a",
+      "symbols": {},
+      "boundary_review": "Raw entries, neighboring functions, observed color comparisons, vector temporary, resource/dispatch fields, signed release, allocation and emit order, literals and natural alignment reviewed. Complete checked match twice; stage138."
+    },
+    {
+      "id": "create_and_emit_effect_a04e8",
+      "source": "src/effects/create_and_emit_effect_a04e8.c",
+      "address": "0x8c0a04e8",
+      "entry": "_create_and_emit_effect_a04e8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 591080,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_and_emit_effect_a04e8",
+          "address": "0x8c0a04e8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b21a89965cce49d1133288bc63f69ca573ae74217ee2c28cb95f3772a5af32b8",
+      "symbols": {
+        "_initialize_at": "0x8c0a052c",
+        "_emit_at": "0x8c05fbf8"
+      },
+      "boundary_review": "Raw entries, neighboring functions, observed color comparisons, vector temporary, resource/dispatch fields, signed release, allocation and emit order, literals and natural alignment reviewed. Complete checked match twice; stage138."
+    },
+    {
+      "id": "initialize_effect_a052c",
+      "source": "src/effects/initialize_effect_a052c.c",
+      "address": "0x8c0a052c",
+      "entry": "_initialize_effect_a052c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/short_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591148,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect_a052c",
+          "address": "0x8c0a052c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "1b2972d522722bc44398a1556ddf30f8d820f4e671f9fdd43761508532f6d2c1",
+      "symbols": {},
+      "boundary_review": "Raw entries, neighboring functions, observed color comparisons, vector temporary, resource/dispatch fields, signed release, allocation and emit order, literals and natural alignment reviewed. Complete checked match twice; stage138."
+    },
+    {
+      "id": "destroy_effect_a0578",
+      "source": "src/effects/destroy_effect_a0578.c",
+      "address": "0x8c0a0578",
+      "entry": "_destroy_effect_a0578",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/short_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591224,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_a0578",
+          "address": "0x8c0a0578",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "cc78fc1e51c14fd1ed038cb99d0ec4305dcc2c320157b7ba9591d2788af83396",
+      "symbols": {},
+      "boundary_review": "Raw entries, neighboring functions, observed color comparisons, vector temporary, resource/dispatch fields, signed release, allocation and emit order, literals and natural alignment reviewed. Complete checked match twice; stage138."
+    },
+    {
+      "id": "create_effect_a061c",
+      "source": "src/effects/create_effect_a061c.c",
+      "address": "0x8c0a061c",
+      "entry": "_create_effect_a061c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 591388,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a061c",
+          "address": "0x8c0a061c",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "b0a84be6ee37d670ea40ac9c81e89b2e71e9fd679f4c912aa371b0b262fe295b",
+      "symbols": {
+        "_initialize_at": "0x8c0a064c"
+      },
+      "boundary_review": "Raw entries, neighboring functions, observed color comparisons, vector temporary, resource/dispatch fields, signed release, allocation and emit order, literals and natural alignment reviewed. Complete checked match twice; stage138."
+    },
+    {
+      "id": "initialize_effect_a064c",
+      "source": "src/effects/initialize_effect_a064c.c",
+      "address": "0x8c0a064c",
+      "entry": "_initialize_effect_a064c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/short_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591436,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect_a064c",
+          "address": "0x8c0a064c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "8c4cac5f60b6686f0ea0f8eb69260269dbbd16197fd42a2e82dcbc00c641bbf8",
+      "symbols": {},
+      "boundary_review": "Raw entries, neighboring functions, observed color comparisons, vector temporary, resource/dispatch fields, signed release, allocation and emit order, literals and natural alignment reviewed. Complete checked match twice; stage138."
+    },
+    {
+      "id": "destroy_effect_a0698",
+      "source": "src/effects/destroy_effect_a0698.c",
+      "address": "0x8c0a0698",
+      "entry": "_destroy_effect_a0698",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/short_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591512,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_a0698",
+          "address": "0x8c0a0698",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "bdc42946f0a4ff26e4c4a32b1ecf0f987f7f3e6c16aff18868f5e08d9a343675",
+      "symbols": {},
+      "boundary_review": "Raw entries, neighboring functions, observed color comparisons, vector temporary, resource/dispatch fields, signed release, allocation and emit order, literals and natural alignment reviewed. Complete checked match twice; stage138."
+    },
+    {
       "id": "reset_effect_table_state",
       "source": "src/effects/reset_effect_table_state.c",
       "address": "0x8c0a6bdc",

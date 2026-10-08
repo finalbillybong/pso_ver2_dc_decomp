@@ -6918,3 +6918,55 @@ copy. No parked target was reopened and no failed experiment earns byte credit.
 Stage 136 commit ee1d591 is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue effect initialization, adjacent color/vector helpers and referenced data.
+
+
+## Adjacent color helpers and short-effect lifecycle, stage 138
+
+Nine complete functions in seven modules replace **768 bytes**. Totals are
+**614 functions / 556 modules / 57,292 compiled bytes / 4,105,620 retained reference
+bytes / 1.3762% whole-image coverage**. All 605 earlier matches and source/header
+hashes remain unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Full range bytes |
+| --- | --- | ---: |
+| step_effect_color_components | 0x8c0a030c | 232 |
+| step_effect_color_alpha | 0x8c0a03f4 | 76 |
+| interpolate_effect_vector | 0x8c0a0440 | 56 |
+| create_and_emit_effect_a04e8 | 0x8c0a04e8 | 68 |
+| initialize_effect_a052c | 0x8c0a052c | 76 |
+| destroy_effect_a0578 | 0x8c0a0578 | 68 |
+| create_effect_a061c | 0x8c0a061c | 48 |
+| initialize_effect_a064c | 0x8c0a064c | 76 |
+| destroy_effect_a0698 | 0x8c0a0698 | 68 |
+
+Color helpers preserve the observed nested comparisons, including unordered float
+behavior, rising zero/target clamp and falling target/one clamp. Alpha returns one
+only on initial equality. Their first candidates match all instructions but lack
+two trailing alignment bytes each. Compiling the actual adjacent color helpers and
+already exact vector wrapper together produces the full 364-byte range naturally.
+No padding directives or assembly are used. The vector wrapper preserves its stack
+temporary and scalar floating copies.
+
+The short-effect constructors install observed resource/dispatch pointers, short
+size 120, vector field 36 and zero state 116. Destructors preserve null guards,
+base calls and signed-short positive release tests. The first factory always calls
+emission after conditional initialization, even if allocation failed. Declaring
+the emission callee resolves its literal and argument-load ordering. Checked
+provisional headers preserve all accessed offsets and sizes.
+
+Investigation-only: `lookup_effect_index` at 0x8c0a02f4 remains **24 bytes /3
+differing**, first 0x8c0a0302. Its load occupies the return delay slot; the reference
+loads before RTS and has a NOP delay. Named external array and absolute byte-offset
+forms produce identical binaries. Parked after two distinct hypotheses; revisit
+only with exact equivalent return-load scheduling or verified source/type/volatile
+evidence. No volatile declaration was invented to alter scheduling.
+
+Twenty-eight snapshots form twelve binary groups. Every final admission matches
+twice. Two fresh builds per checkout, exact integrated image, five-function proof,
+53 research tests and 58 public tests pass. Source-only rejects 4,105,620 bytes and
+preserves prior artifacts. Focused evidence validates using a disposable database
+copy. Earlier parked counts remain unchanged.
+
+Stage 137 commit cc45fef is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue the matched initializers into their state updates and follow effects.

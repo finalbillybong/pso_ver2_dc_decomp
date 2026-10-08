@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **605 exact functions in 549 modules**, replacing
-**56,524 bytes** of the 4,162,912-byte decoded executable (**1.3578% image coverage**).
-It retains **4,106,388 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **614 exact functions in 556 modules**, replacing
+**57,292 bytes** of the 4,162,912-byte decoded executable (**1.3762% image coverage**).
+It retains **4,105,620 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,12 +28,12 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 137
+## Latest integration batch: stage 138
 
-Stage 137 adds **5 functions / 400 bytes**: four effect factories and a scalar
-value update. All 600 preceding matches remain unchanged. Separate load and
-compound accumulation resolves the scalar helper's floating-register assignment;
-all final ranges, literals and natural padding match completely.
+Stage 138 adds **9 functions / 768 bytes**: adjacent color/vector helpers and
+short-effect factories, initializers and destructors. All 605 earlier matches remain
+unchanged. Real adjacent functions supply natural compiler alignment. One table
+lookup is parked at 24 bytes /3 differing after two hypotheses with identical output.
 
 ## Autonomous iteration
 
