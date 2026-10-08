@@ -4300,3 +4300,57 @@ matches do not replace primary acceptance. Division/runtime helpers, allocation
 and status callees, dispatch data and resource contents remain reference inputs.
 Publication retains all default scanner rules and the exact source-hash exception
 verified with its stage-75 detection control.
+
+
+## Resource state loop and cleanup, stage 83
+
+Four complete functions add **496 bytes**: state loop **0x8c193530** (296), buffer
+owner destruction **0x8c193704** (52), global buffer release **0x8c193764** (32),
+and flag-owner destruction **0x8c193784** (116). Totals are **390 functions /
+343 modules / 36,512 compiled full-range bytes / 4,126,400 retained reference
+bytes**, or **0.8771% whole-image coverage**. All 386 previous matches, module
+definitions and source/header hashes remain unchanged. Since the initial
+checkpoint, 356 functions replace 32,868 bytes. Code-only completion remains
+unknown; separately reconstructed static data is zero.
+
+The state routine preserves its ready gate, three attempts, repeated ready check,
+conditional handle cleanup, open/length operations and immediate failure for a
+missing handle. Its inner status loop retains states one/three/four completion,
+state-three success, state-two wait and continued polling for other values.
+There is no added timeout. After closing the handle, success builds the observed
+64-byte stack context, writes dispatch/buffer/size fields, queries a result,
+resets dispatch and destroys the context before returning. Checked prefixes cover
+that context, the eight-byte buffer owner and the flag-based resource view.
+
+Buffer destruction retains nullable owner and positive signed release. Global
+release unconditionally frees its buffer and clears only that pointer. Flag-owner
+destruction preserves bit-four boolean materialization, conditional shared-state
+clear and inlined base cleanup. An explicit nonzero comparison of the inline
+predicate recovers all 116 bytes; a direct condition collapses the boolean
+sequence and emits 112, while comparison with one emits 120.
+
+Buffer initialization **0x8c193658** remains unadmitted at **172/4**, first difference
+**0x8c1936c0**, around context destruction. External declaration, release local,
+inline helper and C++ member cleanup do not resolve it. Automatic C++ destruction
+requires an unresolved delete symbol and is rejected. Global allocation
+**0x8c193738** remains unadmitted: ordinary void source 44/8 after an external
+allocator declaration; a provisional pointer-return experiment reaches 44/5 but
+does not establish the original return type. Captured outputs, result and zero
+lifetimes do not finish it. No size-only candidate is admitted.
+
+All **30 trials** retain hypotheses, source snapshots and comparisons, including
+one linker rejection; completed compilations retain compiler receipts. Final
+checked sources match independently twice. Two fresh exact builds, integrated
+image comparison, five-function proof and all **53 research tests** pass; the
+public suite remains **58 tests**. Source-only rejects 4,126,400 retained bytes
+without changing artifacts. Focused exports use a disposable copy and are checked
+against current inputs. Original data, compiler, base flags, default GNU linker
+and complete-range acceptance remain unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Root child
+initialization remains **316/28**, larger child construction **496/362**. Supporting
+matches do not replace primary acceptance. Runtime callees, static dispatch,
+resource tables and global contents retain reference dependence. Publication
+retains all default scanner rules and the exact source-hash exception verified
+with its stage-75 detection control.

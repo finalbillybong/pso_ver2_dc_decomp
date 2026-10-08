@@ -8884,6 +8884,110 @@
       "boundary_review": "Raw SH4 complete entry through adjacent entry, all literal words and return delay slots; checked root/derived field offsets; final exact twice; reconstruction-stage82.",
       "status": "matched",
       "reason": "Complete resource lifecycle constructor/destructor/reset; retained runtime division, allocators, state callees and static dispatch remain reference dependencies."
+    },
+    {
+      "id": "operation_193530",
+      "source": "src/objects/operation_193530.c",
+      "address": "0x8c193530",
+      "entry": "_operation_193530",
+      "ranges": [
+        {
+          "offset": 1586480,
+          "size": 296
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193530",
+          "address": "0x8c193530",
+          "size": 296
+        }
+      ],
+      "headers": [
+        "src/include/resource_state.h",
+        "src/include/resource_lifecycle.h"
+      ],
+      "reference_sha256": "278e7a5c0d476e43ea92ef7ebfc3a665128c671b13ed6b71a788a574a8d4fc38",
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; context64 and resource prefix offsets checked; complete final source exact twice; reconstruction-stage83.",
+      "status": "matched",
+      "reason": "Complete resource state loop or cleanup callback; buffer initialization/global allocation and static data remain reference-dependent."
+    },
+    {
+      "id": "operation_193704",
+      "source": "src/objects/operation_193704.c",
+      "address": "0x8c193704",
+      "entry": "_operation_193704",
+      "ranges": [
+        {
+          "offset": 1586948,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193704",
+          "address": "0x8c193704",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "e570815447d2ae83d59fde04a25a7e20c3d937186d18edee31aaaa8ed3ddeae7",
+      "headers": [
+        "src/include/resource_state.h",
+        "src/include/resource_lifecycle.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; context64 and resource prefix offsets checked; complete final source exact twice; reconstruction-stage83.",
+      "status": "matched",
+      "reason": "Complete resource state loop or cleanup callback; buffer initialization/global allocation and static data remain reference-dependent."
+    },
+    {
+      "id": "operation_193764",
+      "source": "src/objects/operation_193764.c",
+      "address": "0x8c193764",
+      "entry": "_operation_193764",
+      "ranges": [
+        {
+          "offset": 1587044,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193764",
+          "address": "0x8c193764",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "1bb252c19223b2f29915411c02f7f03c7dd9380029767f1c08ff58ee83914f09",
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; context64 and resource prefix offsets checked; complete final source exact twice; reconstruction-stage83.",
+      "status": "matched",
+      "reason": "Complete resource state loop or cleanup callback; buffer initialization/global allocation and static data remain reference-dependent."
+    },
+    {
+      "id": "operation_193784",
+      "source": "src/objects/operation_193784.c",
+      "address": "0x8c193784",
+      "entry": "_operation_193784",
+      "ranges": [
+        {
+          "offset": 1587076,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193784",
+          "address": "0x8c193784",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "d6658fd13ec52ad9ec2f3cf775c4aa27d6cda2d7bcdfeaef59104754a4e5c422",
+      "headers": [
+        "src/include/resource_state.h",
+        "src/include/resource_lifecycle.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; context64 and resource prefix offsets checked; complete final source exact twice; reconstruction-stage83.",
+      "status": "matched",
+      "reason": "Complete resource state loop or cleanup callback; buffer initialization/global allocation and static data remain reference-dependent."
     }
   ]
 }
