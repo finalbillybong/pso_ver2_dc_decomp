@@ -6301,6 +6301,164 @@
       "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
     },
     {
+      "id": "advance_transform_tracks",
+      "source": "src/math/advance_transform_tracks.c",
+      "address": "0x8c0c3974",
+      "entry": "_advance_transform_tracks",
+      "headers": [
+        "src/include/transform_tracks.h",
+        "src/include/transform_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 735604,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "advance_transform_tracks",
+          "address": "0x8c0c3974",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "6e2b81d376802a7c815a4fdbf18208915067414670cbae762344d6692fee0a6f",
+      "symbols": {},
+      "boundary_review": "Raw entries0x8c0c3974/3998/3a40/3a58/3a8c/3b44/3b88/3bcc/3c14 reviewed including indexed loads, callback delay slots, literals and alignment. Complete checked source exact twice; stage117."
+    },
+    {
+      "id": "select_transform_state",
+      "source": "src/math/select_transform_state.c",
+      "address": "0x8c0c3a40",
+      "entry": "_select_transform_state",
+      "headers": [
+        "src/include/transform_tracks.h",
+        "src/include/transform_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 735808,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "select_transform_state",
+          "address": "0x8c0c3a40",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "d9fee5e250f5f0f40d81f0dcde7a3e12e6a00ef8f4910756d820b613b09ece8b",
+      "symbols": {},
+      "boundary_review": "Raw entries0x8c0c3974/3998/3a40/3a58/3a8c/3b44/3b88/3bcc/3c14 reviewed including indexed loads, callback delay slots, literals and alignment. Complete checked source exact twice; stage117."
+    },
+    {
+      "id": "find_track_key",
+      "source": "src/math/find_track_key.c",
+      "address": "0x8c0c3a58",
+      "entry": "_find_track_key",
+      "headers": [
+        "src/include/transform_tracks.h",
+        "src/include/transform_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 735832,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "find_track_key",
+          "address": "0x8c0c3a58",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "1015ab41b005d7aaee84c1a86bb8c5255f57e88031b2475caf37e0c42fa2381a",
+      "symbols": {},
+      "boundary_review": "Raw entries0x8c0c3974/3998/3a40/3a58/3a8c/3b44/3b88/3bcc/3c14 reviewed including indexed loads, callback delay slots, literals and alignment. Complete checked source exact twice; stage117."
+    },
+    {
+      "id": "sample_transform_vector",
+      "source": "src/math/sample_transform_vector.c",
+      "address": "0x8c0c3b44",
+      "entry": "_sample_transform_vector",
+      "headers": [
+        "src/include/transform_tracks.h",
+        "src/include/transform_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 736068,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "sample_transform_vector",
+          "address": "0x8c0c3b44",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "07c3374dda6a5c65510f271720acf07cec49fc750767038585eca2a32edb9865",
+      "symbols": {},
+      "boundary_review": "Raw entries0x8c0c3974/3998/3a40/3a58/3a8c/3b44/3b88/3bcc/3c14 reviewed including indexed loads, callback delay slots, literals and alignment. Complete checked source exact twice; stage117."
+    },
+    {
+      "id": "sample_transform_angles",
+      "source": "src/math/sample_transform_angles.c",
+      "address": "0x8c0c3b88",
+      "entry": "_sample_transform_angles",
+      "headers": [
+        "src/include/transform_tracks.h",
+        "src/include/transform_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 736136,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "sample_transform_angles",
+          "address": "0x8c0c3b88",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e1641ae1e3caafcd81501d7f06dca67aecd1e735ebd626773e13bc56d245a5b5",
+      "symbols": {},
+      "boundary_review": "Raw entries0x8c0c3974/3998/3a40/3a58/3a8c/3b44/3b88/3bcc/3c14 reviewed including indexed loads, callback delay slots, literals and alignment. Complete checked source exact twice; stage117."
+    },
+    {
+      "id": "sample_transform_quaternion",
+      "source": "src/math/sample_transform_quaternion.c",
+      "address": "0x8c0c3bcc",
+      "entry": "_sample_transform_quaternion",
+      "headers": [
+        "src/include/transform_tracks.h",
+        "src/include/transform_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 736204,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "sample_transform_quaternion",
+          "address": "0x8c0c3bcc",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "f9f8f0d3efec10918b3d4e89b14b11b431fe4e79a67d732d8c2ac72a643e9f15",
+      "symbols": {
+        "_interpolate_quaternion": "0x8c0c3c14"
+      },
+      "boundary_review": "Raw entries0x8c0c3974/3998/3a40/3a58/3a8c/3b44/3b88/3bcc/3c14 reviewed including indexed loads, callback delay slots, literals and alignment. Complete checked source exact twice; stage117."
+    },
+    {
       "id": "prepare_transform_state",
       "source": "src/math/prepare_transform_state.c",
       "address": "0x8c0c44c8",

@@ -5980,3 +5980,64 @@ Research is uncommitted; only reviewed public sources, manifests and docs are pu
 
 Reproduce with `python3 -B tools/verify_source.py`, the current test suite and expected
 source-only rejection. Continue into transform state and interpolation dependencies.
+
+
+## Transform track helpers, stage 117
+
+Six new exact functions replace **320 bytes** in six modules. Totals are
+**508 functions / 456 modules / 49,572 compiled bytes / 4,113,340 retained reference
+bytes**, or **1.1908% whole-image coverage**. All 502 preceding matches and prior
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| advance_transform_tracks | 0x8c0c3974 | 36 |
+| select_transform_state | 0x8c0c3a40 | 24 |
+| find_track_key | 0x8c0c3a58 | 52 |
+| sample_transform_vector | 0x8c0c3b44 | 68 |
+| sample_transform_angles | 0x8c0c3b88 | 68 |
+| sample_transform_quaternion | 0x8c0c3bcc | 72 |
+
+The checked detailed 64-byte state view agrees with the previously admitted
+TransformState prefix. Track advancement retains the cursor across aliased global
+loads. State selection uses a shifted byte offset; implicit structure scaling emits
+MUL.L. The unsigned binary search preserves unchecked input/count behavior.
+
+Vector and angle callbacks need both explicit shifted offsets and a captured local
+index. Implicit indexing produces 72 bytes / 69 differences; shifted offsets give
+68 / 6; changing index signedness reproduces the first binary. The local index gives
+both complete 68-byte matches. Quaternion sampling matches after declaring its
+external callee: the literal call produces 72 / 4 with swapped registers. Index
+increments and global pointer reloads after callbacks preserve observed behavior.
+
+Investigation-only work adds no completed bytes. Two targets are explicitly parked:
+
+- initialize_transform_tracks, 0x8c0c3998: **168 / 8**, first difference 0x8c0c3a08.
+  Four hypotheses tested. Baseline is 176 / 159; doubled stride by addition gives
+  168 / 41; retaining the cursor gives 168 / 8. External table symbols reproduce
+  that binary. The first callback fetch/global-state reload still has the wrong
+  scheduling and registers. Revisit only with independent exact alias/table-fetch
+  scheduling evidence or verified different source context.
+- find_track_interval, 0x8c0c3a8c: **184 / 35**, first difference 0x8c0c3a95.
+  Three hypotheses tested. Baseline is 180 / 149; a register output parameter fixes
+  the complete size but differs in output/high/low lifetimes and key-load order.
+  An inline search reproduces the baseline. Revisit only with an independent exact
+  output-pointer lifetime pattern or verified inline/calling context.
+
+Thirty-five source snapshots form eighteen binary groups. Final admitted sources
+match independently twice. Two fresh exact builds per checkout, exact integrated
+image, five-function proof, 53 research tests and 58 public tests pass. Source-only
+rejects 4,113,340 bytes without altering existing artifacts. Refreshed focused exports
+validate on a disposable database copy. Original primary targets remain parked.
+
+Stage 116 commit e1fdafa is published and remote checks passed. Public changes receive
+staged review and privacy scans; research remains uncommitted. Compiler settings,
+original data, private saves and unrelated work are preserved.
+
+Reproduce with `python3 -B tools/verify_source.py`, the current test suite and expected
+source-only rejection. Continue into remaining interpolation and matrix helpers.
+
+Stage 117 privacy review: the generic-key heuristic also flags the progress-proof
+SHA-256 for find_track_key.c. The value was verified against that source file.
+The scanner now has two exact source-hash exceptions and retains every default
+rule, with no path exclusions. A fresh synthetic credential control is detected.
