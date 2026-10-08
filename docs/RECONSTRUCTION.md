@@ -6436,3 +6436,47 @@ Stage 125 commit 29eb8fb is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into effect-event records and their referenced helpers.
+
+
+## Effect event records and factories, stage 127
+
+Seven new exact functions replace **488 bytes** in six modules. Totals are
+**552 functions / 498 modules / 52,924 compiled bytes / 4,109,988 retained reference
+bytes**, or **1.2713% whole-image coverage**. All 545 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| create_effect_b44f4 | 0x8c0b44f4 | 80 |
+| initialize_effect_event | 0x8c0b48c4 | 68 |
+| send_effect_event | 0x8c0b4908 | 68 |
+| reset_effect_event | 0x8c0b494c | 12 |
+| effect_event_is_distant | 0x8c0b4958 | 88 |
+| create_effect_for_owner | 0x8c0b4b00 | 88 |
+| create_effect_at_position | 0x8c0b4b58 | 84 |
+
+Checked event and packet layouts preserve unsigned owner ids, signed indices,
+vector positions and tokens. Initialization updates the token only for an owner id
+at most four with a nonnull lookup. Packet construction preserves the two untouched
+bytes at offset two; no speculative initialization is added. Reset changes only
+the first eight bytes. Distance checking retains signed index equality, zero Y,
+and the strict 0.2f threshold. An initial transcription used 100.0f; correcting the
+independently read 0x3e4ccccd literal changes only its four bytes. Reset's ten-byte
+body and the genuine adjacent distance function compile together into the exact
+100-byte range, including natural alignment without inserted padding.
+
+The factories preserve 300-byte allocation, nullable owner/allocation paths and
+caller-specific position arguments. The fifth initializer argument is provisionally
+an integer, as supported by the observed zero/ten call sites; independently checked
+sources preserve the same output after declaring that scalar type.
+
+Twenty-one snapshots form nine binary groups. Final checked modules match twice.
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,109,988 bytes
+without altering artifacts. Focused exports validate on a disposable database copy.
+No parked target is reopened or credited as complete.
+
+Stage 126 commit 4d89db5 is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into vector-array allocation and transform helpers.

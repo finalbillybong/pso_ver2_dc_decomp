@@ -14727,6 +14727,176 @@
         "source_sha256": "364904db43ba316a8d39e626f3ae23afb95a424f22e12e37e9a81717f95b5893",
         "compiler_receipt_sha256": "01f9e22cd6779d1d3418dc254c4ea2289f4bdf1a6754af7417641ae798788541"
       }
+    },
+    {
+      "id": "initialize_effect_event",
+      "source": "src/effects/initialize_effect_event.c",
+      "address": "0x8c0b48c4",
+      "entry": "_initialize_effect_event",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_event.h"
+      ],
+      "ranges": [
+        {
+          "offset": 673988,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect_event",
+          "address": "0x8c0b48c4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b1a497e16cfd9f62699ec6dab7100082182d90f4963db6a8f6ce2804829fef0c",
+      "symbols": {},
+      "boundary_review": "Raw event and factory entries reviewed through adjacent entries, signed accesses, call delays, aggregate copies, literals and natural alignment. Genuine adjacent reset/distance grouping; no inserted padding. Full checked match twice; stage127.",
+      "status": "matched",
+      "reason": "Complete event helper or factory, preserving observed field updates, packet contents, distance comparison and nullable allocation behavior."
+    },
+    {
+      "id": "send_effect_event",
+      "source": "src/effects/send_effect_event.c",
+      "address": "0x8c0b4908",
+      "entry": "_send_effect_event",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_event.h"
+      ],
+      "ranges": [
+        {
+          "offset": 674056,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "send_effect_event",
+          "address": "0x8c0b4908",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "5dc89407e5080705b612ec1eed65b639e57adfe719d4f47febfa31aa47aa297d",
+      "symbols": {},
+      "boundary_review": "Raw event and factory entries reviewed through adjacent entries, signed accesses, call delays, aggregate copies, literals and natural alignment. Genuine adjacent reset/distance grouping; no inserted padding. Full checked match twice; stage127.",
+      "status": "matched",
+      "reason": "Complete event helper or factory, preserving observed field updates, packet contents, distance comparison and nullable allocation behavior."
+    },
+    {
+      "id": "effect_event_reset_and_distance",
+      "source": "src/effects/effect_event_reset_and_distance.c",
+      "address": "0x8c0b494c",
+      "entry": "_reset_effect_event",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_event.h"
+      ],
+      "ranges": [
+        {
+          "offset": 674124,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_effect_event",
+          "address": "0x8c0b494c",
+          "size": 12
+        },
+        {
+          "name": "effect_event_is_distant",
+          "address": "0x8c0b4958",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "eedb7bf1040e06be401ed688eb7c5043ad98f16c834e42ddf861796410f0bb95",
+      "symbols": {},
+      "boundary_review": "Raw event and factory entries reviewed through adjacent entries, signed accesses, call delays, aggregate copies, literals and natural alignment. Genuine adjacent reset/distance grouping; no inserted padding. Full checked match twice; stage127.",
+      "status": "matched",
+      "reason": "Complete event helper or factory, preserving observed field updates, packet contents, distance comparison and nullable allocation behavior."
+    },
+    {
+      "id": "create_effect_b44f4",
+      "source": "src/effects/create_effect_b44f4.c",
+      "address": "0x8c0b44f4",
+      "entry": "_create_effect_b44f4",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 673012,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b44f4",
+          "address": "0x8c0b44f4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "df3a04968f332ec12c761d9e39be1f6f5dcc4f580eaba36c4369fcf235ae35fd",
+      "symbols": {
+        "_initialize_at": "0x8c0b3df8"
+      },
+      "boundary_review": "Raw event and factory entries reviewed through adjacent entries, signed accesses, call delays, aggregate copies, literals and natural alignment. Genuine adjacent reset/distance grouping; no inserted padding. Full checked match twice; stage127.",
+      "status": "matched",
+      "reason": "Complete event helper or factory, preserving observed field updates, packet contents, distance comparison and nullable allocation behavior."
+    },
+    {
+      "id": "create_effect_for_owner",
+      "source": "src/effects/create_effect_for_owner.c",
+      "address": "0x8c0b4b00",
+      "entry": "_create_effect_for_owner",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 674560,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_for_owner",
+          "address": "0x8c0b4b00",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "1844301c2f16446164b826ab38d56223539fcfbf5f59170d2d6f43d0ca0419be",
+      "symbols": {
+        "_initialize_at": "0x8c0b3df8"
+      },
+      "boundary_review": "Raw event and factory entries reviewed through adjacent entries, signed accesses, call delays, aggregate copies, literals and natural alignment. Genuine adjacent reset/distance grouping; no inserted padding. Full checked match twice; stage127.",
+      "status": "matched",
+      "reason": "Complete event helper or factory, preserving observed field updates, packet contents, distance comparison and nullable allocation behavior."
+    },
+    {
+      "id": "create_effect_at_position",
+      "source": "src/effects/create_effect_at_position.c",
+      "address": "0x8c0b4b58",
+      "entry": "_create_effect_at_position",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 674648,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_at_position",
+          "address": "0x8c0b4b58",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "ebf9eec01b06fc2f40ee9e10dc7f93f2b38bb315c537fd3919661a50e962618e",
+      "symbols": {
+        "_initialize_at": "0x8c0b3df8"
+      },
+      "boundary_review": "Raw event and factory entries reviewed through adjacent entries, signed accesses, call delays, aggregate copies, literals and natural alignment. Genuine adjacent reset/distance grouping; no inserted padding. Full checked match twice; stage127.",
+      "status": "matched",
+      "reason": "Complete event helper or factory, preserving observed field updates, packet contents, distance comparison and nullable allocation behavior."
     }
   ]
 }
