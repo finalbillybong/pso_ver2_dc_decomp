@@ -7470,3 +7470,48 @@ disposable database copy. Neither parked investigation earns completion credit.
 Stage 150 commit 7148371 is published with successful remote checks. Reproduce
 with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into view parameter access, vector copies and adjacent effect factories.
+
+
+## View parameter access and vector copies, stage 152
+
+Four complete matches replace **212 bytes**. Totals are **664 functions / 606
+modules / 61,284 compiled bytes / 4,101,628 retained reference bytes / 1.4721%
+whole-image coverage**. All 660 previous matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| create_effect_a4f88 | 0x8c0a53ac | 56 |
+| get_view_motion_parameters | 0x8c0a53e4 | 28 |
+| set_view_offsets | 0x8c0a56a0 | 60 |
+| destroy_effect_a56dc | 0x8c0a56dc | 68 |
+
+The factory preserves its original nullable allocation across initialization.
+A conditional result in the getter reproduces MOV0 followed by RTS/NOP on its
+null path; separate early returns placed MOV0 in the return delay and left five
+differences. This applies the independently successful shared-result pattern from
+stage 150. The vector helper uses ordinary structure assignments for the observed
+integer copies at 112 and 124, then writes the pointer from source field four to
+field 140. Provisional prefix offsets, sizes and transitive headers are checked.
+
+Investigation-only: the documented inner-product intrinsic produces 70 bytes
+against a 16-byte vector-length target, with 70 differences from 0x8c37e480. It
+materializes the local four-float vector on the stack, reloads two vector register
+groups and emits FIPR FV4,FV0 instead of the reference self-product. This target is
+parked after one instruction hypothesis. Its prototype was corrected from the
+compiler diagnostic to float(void *,void *). Revisit only with independently
+exact register promotion or a verified scalar-operand builtin. Reading a fourth
+source word, assembly and flag changes are not acceptable substitutes. Prior
+signed-root investigations were found in stage 50 and were not repeated.
+
+Nineteen snapshots form six binary groups; two record precompile errors for the
+intrinsic prototype and a transitive include spelling. Those corrections do not
+count as new instruction hypotheses. All final admissions independently match
+twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,101,628 bytes without changing artifacts. Focused exports validate using a
+disposable database copy. The intrinsic investigation earns no completion credit.
+
+Stage 151 commit f4b899e is published with successful remote checks. Reproduce
+with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into follow-effect factories, field initialization and capture helpers.

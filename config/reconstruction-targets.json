@@ -19761,6 +19761,171 @@
         "source_sha256": "7f0b9efcc6acb4fdeee9d5f75065bac6e59476b1132efbd11c4a383caf5fb3ee",
         "compiler_receipt_sha256": "cb036c9e30b73b02466aa2443ba998698e1d9f475c18f5abbfad7c0a3d699a52"
       }
+    },
+    {
+      "id": "create_effect_a4f88",
+      "source": "src/effects/create_effect_a4f88.c",
+      "address": "0x8c0a53ac",
+      "entry": "_create_effect_a4f88",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 611244,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a4f88",
+          "address": "0x8c0a53ac",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "54959e93689e42f83259222a539d94b568a3966a56f73048884d6b4b51742caa",
+      "symbols": {},
+      "boundary_review": "Raw factory, null parameter getter, integer vector copies and signed destructor reviewed through adjacent entries, complete literal pools and natural padding. Full checked match twice; stage152.",
+      "status": "matched",
+      "reason": "Complete view effect helper range including literals and padding."
+    },
+    {
+      "id": "get_view_motion_parameters",
+      "source": "src/effects/get_view_motion_parameters.c",
+      "address": "0x8c0a53e4",
+      "entry": "_get_view_motion_parameters",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 611300,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "get_view_motion_parameters",
+          "address": "0x8c0a53e4",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "f9446e9c6fc9fdea00ee57265a235a18136bba22b9df97caa57a4c1173ed3619",
+      "symbols": {
+        "_view_effect_slots": "0x8c3032d8"
+      },
+      "boundary_review": "Raw factory, null parameter getter, integer vector copies and signed destructor reviewed through adjacent entries, complete literal pools and natural padding. Full checked match twice; stage152.",
+      "status": "matched",
+      "reason": "Complete view effect helper range including literals and padding."
+    },
+    {
+      "id": "set_view_offsets",
+      "source": "src/effects/set_view_offsets.c",
+      "address": "0x8c0a56a0",
+      "entry": "_set_view_offsets",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/view_offsets.h"
+      ],
+      "ranges": [
+        {
+          "offset": 612000,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_view_offsets",
+          "address": "0x8c0a56a0",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "8bbb5c447c9ded264b83f628b79be0772cd3aea73469cb531659c9428f06e3c6",
+      "symbols": {
+        "_view_effect_slots": "0x8c3032d8"
+      },
+      "boundary_review": "Raw factory, null parameter getter, integer vector copies and signed destructor reviewed through adjacent entries, complete literal pools and natural padding. Full checked match twice; stage152.",
+      "status": "matched",
+      "reason": "Complete view effect helper range including literals and padding."
+    },
+    {
+      "id": "destroy_effect_a56dc",
+      "source": "src/effects/destroy_effect_a56dc.c",
+      "address": "0x8c0a56dc",
+      "entry": "_destroy_effect_a56dc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 612060,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_a56dc",
+          "address": "0x8c0a56dc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c906f73e833d2aa835fbf3364c14c7e220480e1f2dfe76d125da5fc9ffd53410",
+      "symbols": {},
+      "boundary_review": "Raw factory, null parameter getter, integer vector copies and signed destructor reviewed through adjacent entries, complete literal pools and natural padding. Full checked match twice; stage152.",
+      "status": "matched",
+      "reason": "Complete view effect helper range including literals and padding."
+    },
+    {
+      "id": "vector_length_intrinsic",
+      "source": "src/provisional/vector_length_intrinsic.c",
+      "address": "0x8c37e480",
+      "entry": "_vector_length_intrinsic",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 3597440,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "vector_length_intrinsic",
+          "address": "0x8c37e480",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "184ec57b105022cf5a5df589f52fed8dc017109b7c0ff5626bfaf6c31c5a39dd",
+      "symbols": {},
+      "status": "parked",
+      "reason": "70/16bytes,70 differing,first0x8c37e480. Documented fipr intrinsic materializes local16byte array and loads both FV4 and FV0 instead of self-FIPR in registers. Correcting declaration to compiler-proven void* prototype does not constitute a new instruction hypothesis.",
+      "unsuccessful_distinct_hypotheses": 1,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact ordinary-C register-promoted three-vector self-FIPR, or verified supported scalar-operand builtin. Do not read a fourth source word, change flags or substitute assembly.",
+      "comparison": {
+        "name": "vector_length_intrinsic-checked-0",
+        "size": 70,
+        "expected_size": 16,
+        "exact": false,
+        "differing_bytes": 70,
+        "first_difference": "0x8c37e480",
+        "offsets": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "source_sha256": "ce2077bee72b1331b2f0fe041ebe04d34c8e0dad832ff6c40bfd3fd539635b04",
+        "compiler_receipt_sha256": "b79e50bf9ef064b6c1edaf0664a4b51f3b898ca463c54b3e4032e94475efa4a9"
+      }
     }
   ]
 }

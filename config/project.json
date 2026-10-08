@@ -6002,6 +6002,108 @@
       "boundary_review": "Raw scalar adjustment, slot release and effect destruction reviewed through adjacent entries, repeated absolute call and unordered conditions, signed/null branches, loop offsets, call/return delays, literals and natural padding. Full checked match twice; stage151."
     },
     {
+      "id": "create_effect_a4f88",
+      "source": "src/effects/create_effect_a4f88.c",
+      "address": "0x8c0a53ac",
+      "entry": "_create_effect_a4f88",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 611244,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a4f88",
+          "address": "0x8c0a53ac",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "54959e93689e42f83259222a539d94b568a3966a56f73048884d6b4b51742caa",
+      "symbols": {},
+      "boundary_review": "Raw factory, null parameter getter, integer vector copies and signed destructor reviewed through adjacent entries, complete literal pools and natural padding. Full checked match twice; stage152."
+    },
+    {
+      "id": "get_view_motion_parameters",
+      "source": "src/effects/get_view_motion_parameters.c",
+      "address": "0x8c0a53e4",
+      "entry": "_get_view_motion_parameters",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 611300,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "get_view_motion_parameters",
+          "address": "0x8c0a53e4",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "f9446e9c6fc9fdea00ee57265a235a18136bba22b9df97caa57a4c1173ed3619",
+      "symbols": {
+        "_view_effect_slots": "0x8c3032d8"
+      },
+      "boundary_review": "Raw factory, null parameter getter, integer vector copies and signed destructor reviewed through adjacent entries, complete literal pools and natural padding. Full checked match twice; stage152."
+    },
+    {
+      "id": "set_view_offsets",
+      "source": "src/effects/set_view_offsets.c",
+      "address": "0x8c0a56a0",
+      "entry": "_set_view_offsets",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/view_offsets.h"
+      ],
+      "ranges": [
+        {
+          "offset": 612000,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_view_offsets",
+          "address": "0x8c0a56a0",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "8bbb5c447c9ded264b83f628b79be0772cd3aea73469cb531659c9428f06e3c6",
+      "symbols": {
+        "_view_effect_slots": "0x8c3032d8"
+      },
+      "boundary_review": "Raw factory, null parameter getter, integer vector copies and signed destructor reviewed through adjacent entries, complete literal pools and natural padding. Full checked match twice; stage152."
+    },
+    {
+      "id": "destroy_effect_a56dc",
+      "source": "src/effects/destroy_effect_a56dc.c",
+      "address": "0x8c0a56dc",
+      "entry": "_destroy_effect_a56dc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 612060,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_a56dc",
+          "address": "0x8c0a56dc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c906f73e833d2aa835fbf3364c14c7e220480e1f2dfe76d125da5fc9ffd53410",
+      "symbols": {},
+      "boundary_review": "Raw factory, null parameter getter, integer vector copies and signed destructor reviewed through adjacent entries, complete literal pools and natural padding. Full checked match twice; stage152."
+    },
+    {
       "id": "reset_effect_table_state",
       "source": "src/effects/reset_effect_table_state.c",
       "address": "0x8c0a6bdc",
