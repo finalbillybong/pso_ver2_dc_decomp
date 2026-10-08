@@ -7515,3 +7515,39 @@ disposable database copy. The intrinsic investigation earns no completion credit
 Stage 151 commit f4b899e is published with successful remote checks. Reproduce
 with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into follow-effect factories, field initialization and capture helpers.
+
+
+## Follow-effect factories and capture, stage 153
+
+Five complete matches replace **348 bytes**. Totals are **669 functions / 611
+modules / 61,632 compiled bytes / 4,101,280 retained reference bytes / 1.4805%
+whole-image coverage**. All 664 prior matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| capture_follow_view | 0x8c0a5720 | 144 |
+| create_follow_mode_four | 0x8c0a57b0 | 60 |
+| noop_a57ec | 0x8c0a57ec | 4 |
+| destroy_effect_a57f0 | 0x8c0a57f0 | 68 |
+| create_follow_distance | 0x8c0a5a88 | 72 |
+
+Both factories preserve nullable allocation, base initialization and ordered
+writes to dispatch and mode fields. The distance factory additionally writes
+20.0f at offset 112. The capture helper checks context and actor availability,
+then copies actor coordinates with the exact 0x419e6666 Y offset, source coordinates
+at 28 and source value 16. It retains the observed absence of an additional source
+null check. Types extend only the provisional accessed prefixes, with checked
+field offsets, sizes and declared transitive headers. The adjacent RTS/NOP entry
+is independently bounded and compiled from an ordinary empty C function.
+
+All five first hypotheses matched. Fifteen snapshots form five binary groups,
+including two independent final repetitions for each admission. Two fresh exact
+builds per checkout, integrated-image comparison, five-function proof, 53 research
+tests and 58 public tests pass. Source-only rejects 4,101,280 reference bytes
+without changing artifacts. Focused exports validate using a disposable database
+copy. No parked target was reopened and no investigation-only bytes are credited.
+
+Stage 152 commit 6e87ea0 is published with successful remote checks. Reproduce
+with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into slot-state lifetime, matrix-offset helpers and effect initialization.

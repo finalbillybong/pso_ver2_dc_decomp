@@ -6104,6 +6104,136 @@
       "boundary_review": "Raw factory, null parameter getter, integer vector copies and signed destructor reviewed through adjacent entries, complete literal pools and natural padding. Full checked match twice; stage152."
     },
     {
+      "id": "capture_follow_view",
+      "source": "src/effects/capture_follow_view.c",
+      "address": "0x8c0a5720",
+      "entry": "_capture_follow_view",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_base.h",
+        "src/include/follow_effect.h",
+        "src/include/follow_capture.h"
+      ],
+      "ranges": [
+        {
+          "offset": 612128,
+          "size": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "capture_follow_view",
+          "address": "0x8c0a5720",
+          "size": 144
+        }
+      ],
+      "reference_sha256": "132191daacab499410b8a4ec87a78e35078679cb475244488fcb7a14a173e3ac",
+      "symbols": {},
+      "boundary_review": "Raw follow-effect capture, inlined initialization factories, adjacent empty entry and signed destructor reviewed through adjacent entries; checked field layouts, literal bits, call and return delays and natural alignment. Full checked match twice; stage153."
+    },
+    {
+      "id": "create_follow_mode_four",
+      "source": "src/effects/create_follow_mode_four.c",
+      "address": "0x8c0a57b0",
+      "entry": "_create_follow_mode_four",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_base.h"
+      ],
+      "ranges": [
+        {
+          "offset": 612272,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_follow_mode_four",
+          "address": "0x8c0a57b0",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "368a412392cd62c5b846a4dbd2e8078b094766713bdc56241a44694bb5ad3373",
+      "symbols": {},
+      "boundary_review": "Raw follow-effect capture, inlined initialization factories, adjacent empty entry and signed destructor reviewed through adjacent entries; checked field layouts, literal bits, call and return delays and natural alignment. Full checked match twice; stage153."
+    },
+    {
+      "id": "noop_a57ec",
+      "source": "src/effects/noop_a57ec.c",
+      "address": "0x8c0a57ec",
+      "entry": "_noop_a57ec",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 612332,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "noop_a57ec",
+          "address": "0x8c0a57ec",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "symbols": {},
+      "boundary_review": "Raw follow-effect capture, inlined initialization factories, adjacent empty entry and signed destructor reviewed through adjacent entries; checked field layouts, literal bits, call and return delays and natural alignment. Full checked match twice; stage153."
+    },
+    {
+      "id": "destroy_effect_a57f0",
+      "source": "src/effects/destroy_effect_a57f0.c",
+      "address": "0x8c0a57f0",
+      "entry": "_destroy_effect_a57f0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 612336,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_a57f0",
+          "address": "0x8c0a57f0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "177ab70a13723288bebd42a0154a4dacdc37ed10e98b5d9676fe5cf3a856c42f",
+      "symbols": {},
+      "boundary_review": "Raw follow-effect capture, inlined initialization factories, adjacent empty entry and signed destructor reviewed through adjacent entries; checked field layouts, literal bits, call and return delays and natural alignment. Full checked match twice; stage153."
+    },
+    {
+      "id": "create_follow_distance",
+      "source": "src/effects/create_follow_distance.c",
+      "address": "0x8c0a5a88",
+      "entry": "_create_follow_distance",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_base.h",
+        "src/include/follow_capture.h"
+      ],
+      "ranges": [
+        {
+          "offset": 613000,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_follow_distance",
+          "address": "0x8c0a5a88",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "4bcf210d496b90f2b55fc03dffa83efc3300dc370e84529bceafb8e09ca8d76a",
+      "symbols": {},
+      "boundary_review": "Raw follow-effect capture, inlined initialization factories, adjacent empty entry and signed destructor reviewed through adjacent entries; checked field layouts, literal bits, call and return delays and natural alignment. Full checked match twice; stage153."
+    },
+    {
       "id": "reset_effect_table_state",
       "source": "src/effects/reset_effect_table_state.c",
       "address": "0x8c0a6bdc",
