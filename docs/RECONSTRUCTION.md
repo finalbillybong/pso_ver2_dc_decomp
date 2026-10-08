@@ -5804,3 +5804,42 @@ Reproduce using `python3 -B tools/verify_source.py` and the current unittest sui
 `python3 -B tools/project.py build --source-only` must reject the remaining gaps.
 Public progress recording follows fresh exact verification. Continue target rotation
 and reviewed publication without resetting parked-target experiment counts.
+
+
+## Fade lifecycle and state updates, stage 113
+
+Six new exact functions replace **424 bytes**: initialization0x8c0c4c88 (44),
+destruction0x8c0c4cb4 (76), active query0x8c0c4d00 (24), start0x8c0c4d18 (60),
+reverse start0x8c0c4d54 (52), and update0x8c0c4d88 (168). Totals are **481 functions /
+430 modules /47,484 compiled bytes /4,115,428 reference bytes**, or **1.1406% image
+coverage**. All475 previous matches and prior source/header files remain unchanged.
+
+The checked48-byte provisional state preserves dispatch24, amount32, three color
+bytes36–38, state40 and callback44. The update's indirect call establishes that44
+is a callback, correcting an initial scratch-only duration interpretation. No
+published prior layout is modified. Start operations preserve every global reload
+and descending color write. The reverse setter's chained assignments recover the
+MOV-zero/offset ordering; separate clears produce52/4. An explicit local-result
+if/else makes the query24/0; direct returns produce20/13 and are rejected.
+
+Update retains its four-case switch and three endpoint paths: subtract8 to0,
+add8 to255, and add1 to128. Unordered comparisons take the observed clamp/callback
+path. The callback executes before the final state clear. Destruction preserves
+the nullable pointer, dispatch/global writes, detach call and positive signed-short
+release condition. Complete checked sources match independently twice.
+
+Two fresh exact builds in each checkout, integrated-image comparison, five-function
+proof,53 research tests and58 public tests pass. Source-only rejects4,115,428 bytes
+without changing existing artifacts. Focused exports use a disposable database
+copy and validate against the current manifest/queue. Compiler flags and full-range
+rules remain unchanged. Stage112 commitcfe7739 is published with remote checks passed.
+
+No primary-target or standalone-data improvement is claimed. The primary pair
+remains parked at512/30 and388/8; create_effect_bf80 remains parked at280/24 after
+nine distinct unsuccessful hypotheses. Their evidence-based revisit conditions
+and persistent counts are unchanged. Continue with further effect/render helpers.
+
+Reproduce with `python3 -B tools/verify_source.py`, the current unittest suite and
+`python3 -B tools/project.py build --source-only` (expected rejection). Refresh
+public progress only after exact verification; review and scan intended public
+changes before commit/push. Research data and original inputs remain private.

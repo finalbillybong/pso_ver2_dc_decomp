@@ -11333,6 +11333,168 @@
           105
         ]
       }
+    },
+    {
+      "id": "initialize_fade_state",
+      "source": "src/effects/initialize_fade_state.c",
+      "address": "0x8c0c4c88",
+      "entry": "_initialize_fade_state",
+      "headers": [
+        "src/include/fade_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740488,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_fade_state",
+          "address": "0x8c0c4c88",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "f0f764aeb4bc6201d432ea86cd408ddead9f9361a25e73eef465b3ff1023f013",
+      "symbols": {},
+      "boundary_review": "Raw SH4 contiguous entries0x8c0c4c88/cb4/d00/d18/d54/d88/e30; each complete range includes return delays, literals and natural alignment; checked source exact twice; stage113.",
+      "status": "matched",
+      "reason": "Complete checked fade lifecycle/state range; callback behavior and floating unordered comparisons preserved."
+    },
+    {
+      "id": "destroy_fade_state",
+      "source": "src/effects/destroy_fade_state.c",
+      "address": "0x8c0c4cb4",
+      "entry": "_destroy_fade_state",
+      "headers": [
+        "src/include/fade_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740532,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_fade_state",
+          "address": "0x8c0c4cb4",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "704d8babece7298519e7632ff4c13c98485a959b4c7d4c5c90179652e0bf09da",
+      "symbols": {},
+      "boundary_review": "Raw SH4 contiguous entries0x8c0c4c88/cb4/d00/d18/d54/d88/e30; each complete range includes return delays, literals and natural alignment; checked source exact twice; stage113.",
+      "status": "matched",
+      "reason": "Complete checked fade lifecycle/state range; callback behavior and floating unordered comparisons preserved."
+    },
+    {
+      "id": "query_fade_active",
+      "source": "src/effects/query_fade_active.c",
+      "address": "0x8c0c4d00",
+      "entry": "_query_fade_active",
+      "headers": [
+        "src/include/fade_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740608,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_fade_active",
+          "address": "0x8c0c4d00",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "0d4e978e7d299c44568cecb4ee9bb66e1efc0eb408d2c2bfe3cb9e77b99b959a",
+      "symbols": {},
+      "boundary_review": "Raw SH4 contiguous entries0x8c0c4c88/cb4/d00/d18/d54/d88/e30; each complete range includes return delays, literals and natural alignment; checked source exact twice; stage113.",
+      "status": "matched",
+      "reason": "Complete checked fade lifecycle/state range; callback behavior and floating unordered comparisons preserved."
+    },
+    {
+      "id": "start_fade_state",
+      "source": "src/effects/start_fade_state.c",
+      "address": "0x8c0c4d18",
+      "entry": "_start_fade_state",
+      "headers": [
+        "src/include/fade_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740632,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "start_fade_state",
+          "address": "0x8c0c4d18",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "3397d12101bfa35260b79a4ba9f1296af2497cac2c82b363f91aa67b444a9096",
+      "symbols": {},
+      "boundary_review": "Raw SH4 contiguous entries0x8c0c4c88/cb4/d00/d18/d54/d88/e30; each complete range includes return delays, literals and natural alignment; checked source exact twice; stage113.",
+      "status": "matched",
+      "reason": "Complete checked fade lifecycle/state range; callback behavior and floating unordered comparisons preserved."
+    },
+    {
+      "id": "start_reverse_fade",
+      "source": "src/effects/start_reverse_fade.c",
+      "address": "0x8c0c4d54",
+      "entry": "_start_reverse_fade",
+      "headers": [
+        "src/include/fade_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740692,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "start_reverse_fade",
+          "address": "0x8c0c4d54",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "4c768dc9a8febe854d44f1afbb9564d8a5c5514ef75e28a63d04f9ae6a6ef3fc",
+      "symbols": {},
+      "boundary_review": "Raw SH4 contiguous entries0x8c0c4c88/cb4/d00/d18/d54/d88/e30; each complete range includes return delays, literals and natural alignment; checked source exact twice; stage113.",
+      "status": "matched",
+      "reason": "Complete checked fade lifecycle/state range; callback behavior and floating unordered comparisons preserved."
+    },
+    {
+      "id": "update_fade_state",
+      "source": "src/effects/update_fade_state.c",
+      "address": "0x8c0c4d88",
+      "entry": "_update_fade_state",
+      "headers": [
+        "src/include/fade_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740744,
+          "size": 168
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_fade_state",
+          "address": "0x8c0c4d88",
+          "size": 168
+        }
+      ],
+      "reference_sha256": "60150fd3c8d62901a3517b765b0cd65a86f05693461ab6bbc6efb762de56ab17",
+      "symbols": {},
+      "boundary_review": "Raw SH4 contiguous entries0x8c0c4c88/cb4/d00/d18/d54/d88/e30; each complete range includes return delays, literals and natural alignment; checked source exact twice; stage113.",
+      "status": "matched",
+      "reason": "Complete checked fade lifecycle/state range; callback behavior and floating unordered comparisons preserved."
     }
   ]
 }

@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **475 exact functions in 424 modules**, replacing
-**47,060 bytes** of the 4,162,912-byte decoded executable (**1.1305% image coverage**).
-It retains **4,115,852 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **481 exact functions in 430 modules**, replacing
+**47,484 bytes** of the 4,162,912-byte decoded executable (**1.1406% image coverage**).
+It retains **4,115,428 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,13 +28,13 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 112
+## Latest integration batch: stage 113
 
-Stage112 adds **2 functions /100 bytes**: the phase check and adjacent nullable
-factory. All473 previous matches and prior sources/headers are preserved. Required
-exact builds, proof, tests and source-only rejection pass. The larger factory is
-parked at280/24 after nine distinct hypotheses; its improvement earns no completed
-bytes. The original two primary targets remain parked. See reconstruction findings.
+Stage113 adds **6 functions /424 bytes**: fade initialization/destruction,
+queries, start modes and update. All475 previous matches and prior sources/headers
+are preserved. Required exact builds, proof, tests and source-only rejection pass.
+The original primary targets and larger factory remain parked. See reconstruction
+findings for the two rejected query/clear forms and verified callback layout.
 
 ## Autonomous iteration
 
