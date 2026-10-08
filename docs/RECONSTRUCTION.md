@@ -4771,3 +4771,61 @@ matches do not replace those acceptance criteria. Static data and unmatched
 callees retain reference dependence. Compiler, base flags and complete-range
 comparison rules are unchanged. Publication retains default scanner rules and
 the single verified source-hash exception with its stage-75 detection control.
+
+
+## Record cleanup and packet construction, stage 92
+
+Four complete functions add **936 bytes**: cleanup **0x8c194e48** (204), general
+packet builder **0x8c194fa4** (356), notice initializer **0x8c195108** (44), and
+small-record packet builder **0x8c195134** (332). Totals are **431 functions /
+383 modules / 41,664 compiled full-range bytes / 4,121,248 retained reference
+bytes**, or **1.0008% whole-image coverage**. All 427 previous matches, module
+definitions and source/header hashes remain unchanged. Since the initial
+checkpoint, 397 functions replace 38,020 bytes. This passes one percent of the
+whole image; code-only completion remains unknown. Separately reconstructed
+static data remains zero, and the executable still depends on reference gaps.
+
+Cleanup preserves payload calls, signed tag interpretation, both record widths,
+copy-before-bound behavior, sentinel writes and final clear. Independent base,
+copy-pointer and index captures recover register allocation; direct named-stack
+sentinel writes recover the last two bytes. Pointer-only sentinel stores differ.
+When sharing the checked packet layout, explicit signed interpretation of its
+flag byte is necessary: the initial unsigned view differed by one instruction
+byte and was rejected. The corrected checked source matches twice. Existing
+notice headers and their hashes remain unchanged.
+
+The general builder retains a 76-byte stack containing a 12-byte row, 20-byte
+payload and 44-byte packet. Capturing the row offset across lookup recovers its
+saved register. Unsigned-short value and sentinel temporaries recover the exact
+extension sequence and reduce the full range to356 bytes. The small-record path
+uses the corresponding four-byte row, a68-byte stack and shifted offset; the
+same source-level findings recover its entire332-byte range. Both preserve
+validation, payload finalization, conditional row writeback, duplicate packet
+header writes, distinct notice tags and original submission order. No game or
+network execution is part of this verification.
+
+The standalone notice initializer matches44 bytes with the previously established
+zero-first field order and a tail call to payload initialization. New checked
+views cover both record sizes, the packet's nested notice, and its four trailing
+bytes. Transitive header dependencies are declared for every affected module.
+
+The adjacent dispatcher **0x8c194f14** remains unadmitted at **144/3**, first
+difference **0x8c194f2d**. Promoted byte-derived arguments and external callee
+declarations recover the length and most scheduling; owner aliases, byte cursors
+and payload pointers do not recover the remaining shared-address instruction
+order. Separate record getter/setter helpers and index reloads were also tested
+for cleanup; those failed forms remain in scratch.
+
+All **54 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons; none were compiler-rejected. Final checked sources match twice
+independently. Two fresh exact builds, integrated image comparison, five-function
+proof and all **53 research tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,121,248 retained bytes without changing artifacts. Focused
+exports are regenerated on a disposable copy and validated against current
+inputs; the original database remains unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Supporting
+matches do not replace those acceptance criteria. Compiler, base flags and
+complete-range rules are unchanged. Publication retains default scanner rules
+and the single verified source-hash exception with its stage-75 detection control.

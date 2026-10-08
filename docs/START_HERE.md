@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **427 exact functions in 379 modules**, replacing
-**40,728 bytes** of the 4,162,912-byte decoded executable (**0.9784% image coverage**).
-It retains **4,122,184 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **431 exact functions in 383 modules**, replacing
+**41,664 bytes** of the 4,162,912-byte decoded executable (**1.0008% image coverage**).
+It retains **4,121,248 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,14 +28,14 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 91
+## Latest batch: stage 92
 
-Notice record construction and its payload/counter dependencies add three
-functions, replacing 280 bytes. All 424 earlier matches and source/header hashes
-remain unchanged. Since the initial checkpoint, 393 functions replace 37,084
-bytes. All 38 trials are retained, including three corrected scratch linkage
-errors. Exact stack initialization, payload copying and counter selection are
-preserved. Primary targets remain 512/30 and 388/8.
+Record cleanup, notice initialization and two packet builders add four functions,
+replacing 936 bytes. All 427 earlier matches and source/header hashes remain
+unchanged. Since the initial checkpoint, 397 functions replace 38,020 bytes.
+Whole-image coverage has passed one percent; this remains a hybrid build. All
+54 trials are retained. The adjacent dispatcher remains 144/3; both original
+primary targets remain 512/30 and 388/8.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

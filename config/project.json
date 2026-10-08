@@ -8059,6 +8059,105 @@
       "boundary_review": "Raw complete entry/adjacent boundaries reviewed;36-byte notice,20-byte payload, signed counter selector; reconstruction-stage91."
     },
     {
+      "id": "operation_194e48",
+      "source": "src/objects/operation_194e48.c",
+      "address": "0x8c194e48",
+      "entry": "_operation_194e48",
+      "ranges": [
+        {
+          "offset": 1592904,
+          "size": 204
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194e48",
+          "address": "0x8c194e48",
+          "size": 204
+        }
+      ],
+      "reference_sha256": "650c190b30a75794627de9cbd05cb2d4504c7dd6cad167d34233597931ed174d",
+      "headers": [
+        "src/include/widget_record_tables.h",
+        "src/include/widget_notice_record.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry through adjacent entry, all literals/alignment;4/12-byte rows,36-byte notice and44-byte packet; reconstruction-stage92."
+    },
+    {
+      "id": "operation_194fa4",
+      "source": "src/objects/operation_194fa4.c",
+      "address": "0x8c194fa4",
+      "entry": "_operation_194fa4",
+      "ranges": [
+        {
+          "offset": 1593252,
+          "size": 356
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194fa4",
+          "address": "0x8c194fa4",
+          "size": 356
+        }
+      ],
+      "reference_sha256": "d8e112741f47b1174ab0ceee906e4afd35994eaa58d84a065e64060a779a1c6e",
+      "headers": [
+        "src/include/widget_record_tables.h",
+        "src/include/widget_notice_record.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry through adjacent entry, all literals/alignment;4/12-byte rows,36-byte notice and44-byte packet; reconstruction-stage92."
+    },
+    {
+      "id": "operation_195108",
+      "source": "src/objects/operation_195108.c",
+      "address": "0x8c195108",
+      "entry": "_operation_195108",
+      "ranges": [
+        {
+          "offset": 1593608,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195108",
+          "address": "0x8c195108",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "7f0b98373aca735cc6cd05d00e01e1e70b2e3b207823206cf07b1dc3f4c908da",
+      "headers": [
+        "src/include/widget_notice_record.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry through adjacent entry, all literals/alignment;4/12-byte rows,36-byte notice and44-byte packet; reconstruction-stage92."
+    },
+    {
+      "id": "operation_195134",
+      "source": "src/objects/operation_195134.c",
+      "address": "0x8c195134",
+      "entry": "_operation_195134",
+      "ranges": [
+        {
+          "offset": 1593652,
+          "size": 332
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195134",
+          "address": "0x8c195134",
+          "size": 332
+        }
+      ],
+      "reference_sha256": "58e1fb33523c499f5d1f7c081235323806c1c4f6c1239cb22e6daedac1349873",
+      "headers": [
+        "src/include/widget_record_tables.h",
+        "src/include/widget_notice_record.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry through adjacent entry, all literals/alignment;4/12-byte rows,36-byte notice and44-byte packet; reconstruction-stage92."
+    },
+    {
       "id": "operation_1954bc",
       "source": "src/objects/operation_1954bc.c",
       "address": "0x8c1954bc",
