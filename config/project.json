@@ -9019,6 +9019,84 @@
       "boundary_review": "Raw allocation factories and scalar effect helper reviewed through adjacent entries, null allocation path, initializer result, signed multiply/float conversion, conditional scaling, literal pools and natural padding. Complete checked match twice; stage137."
     },
     {
+      "id": "request_actor_mode_twelve",
+      "source": "src/effects/request_actor_mode_twelve.c",
+      "address": "0x8c0c1b54",
+      "entry": "_request_actor_mode_twelve",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 727892,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_twelve",
+          "address": "0x8c0c1b54",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "60c1332605ca26d2b31ad36a8d7b40e4cc38f2536136cd4769219eb4a6888a46",
+      "symbols": {},
+      "boundary_review": "Raw actor mode/countdown/scan helpers reviewed through adjacent entries, signed fields, flag gates, count reloads, call/return delays, literals and natural alignment. Full checked match twice; stage157."
+    },
+    {
+      "id": "trigger_actor_view_countdown",
+      "source": "src/effects/trigger_actor_view_countdown.c",
+      "address": "0x8c0c1db8",
+      "entry": "_trigger_actor_view_countdown",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 728504,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "trigger_actor_view_countdown",
+          "address": "0x8c0c1db8",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "e1534dfa42607d1cb789b8a35a06dee7ae5238307e1a1dfb28b001e32277ddac",
+      "symbols": {},
+      "boundary_review": "Raw actor mode/countdown/scan helpers reviewed through adjacent entries, signed fields, flag gates, count reloads, call/return delays, literals and natural alignment. Full checked match twice; stage157."
+    },
+    {
+      "id": "scan_actor_view_entries",
+      "source": "src/effects/scan_actor_view_entries.c",
+      "address": "0x8c0c1fbc",
+      "entry": "_scan_actor_view_entries",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 729020,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "scan_actor_view_entries",
+          "address": "0x8c0c1fbc",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "71ed4152a40789890a4a7a5edb319a87d3d80ca29939246d7f985f11acedac01",
+      "symbols": {},
+      "boundary_review": "Raw actor mode/countdown/scan helpers reviewed through adjacent entries, signed fields, flag gates, count reloads, call/return delays, literals and natural alignment. Full checked match twice; stage157."
+    },
+    {
       "id": "clear_inactive_target",
       "source": "src/objects/clear_inactive_target.c",
       "address": "0x8c0c36d4",

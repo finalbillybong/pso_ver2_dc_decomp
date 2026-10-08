@@ -20609,6 +20609,143 @@
         "source_sha256": "157872e59cb73073a821fc9552fc0f7ddfe3660fcb67ee6cf39654a646d8f03a",
         "compiler_receipt_sha256": "663b2fc812176e679adb551b9ef4a602d9b1f5eaf80d2f6c8f76ff5f778bffbf"
       }
+    },
+    {
+      "id": "request_actor_mode_twelve",
+      "source": "src/effects/request_actor_mode_twelve.c",
+      "address": "0x8c0c1b54",
+      "entry": "_request_actor_mode_twelve",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 727892,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_twelve",
+          "address": "0x8c0c1b54",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "60c1332605ca26d2b31ad36a8d7b40e4cc38f2536136cd4769219eb4a6888a46",
+      "symbols": {},
+      "boundary_review": "Raw actor mode/countdown/scan helpers reviewed through adjacent entries, signed fields, flag gates, count reloads, call/return delays, literals and natural alignment. Full checked match twice; stage157.",
+      "status": "matched",
+      "reason": "Complete actor view helper range; observed behavior preserved."
+    },
+    {
+      "id": "trigger_actor_view_countdown",
+      "source": "src/effects/trigger_actor_view_countdown.c",
+      "address": "0x8c0c1db8",
+      "entry": "_trigger_actor_view_countdown",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 728504,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "trigger_actor_view_countdown",
+          "address": "0x8c0c1db8",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "e1534dfa42607d1cb789b8a35a06dee7ae5238307e1a1dfb28b001e32277ddac",
+      "symbols": {},
+      "boundary_review": "Raw actor mode/countdown/scan helpers reviewed through adjacent entries, signed fields, flag gates, count reloads, call/return delays, literals and natural alignment. Full checked match twice; stage157.",
+      "status": "matched",
+      "reason": "Complete actor view helper range; observed behavior preserved."
+    },
+    {
+      "id": "scan_actor_view_entries",
+      "source": "src/effects/scan_actor_view_entries.c",
+      "address": "0x8c0c1fbc",
+      "entry": "_scan_actor_view_entries",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 729020,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "scan_actor_view_entries",
+          "address": "0x8c0c1fbc",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "71ed4152a40789890a4a7a5edb319a87d3d80ca29939246d7f985f11acedac01",
+      "symbols": {},
+      "boundary_review": "Raw actor mode/countdown/scan helpers reviewed through adjacent entries, signed fields, flag gates, count reloads, call/return delays, literals and natural alignment. Full checked match twice; stage157.",
+      "status": "matched",
+      "reason": "Complete actor view helper range; observed behavior preserved."
+    },
+    {
+      "id": "emit_actor_point_effect",
+      "source": "src/provisional/emit_actor_point_effect.c",
+      "address": "0x8c0c1a4c",
+      "entry": "_emit_actor_point_effect",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 727628,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "emit_actor_point_effect",
+          "address": "0x8c0c1a4c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "ebaf7f62b2fa5062422808277256ab6f7aaae02435aa14c12a5fe834a761eda1",
+      "symbols": {
+        "_emit_point": "0x8c0a7ab8"
+      },
+      "status": "parked",
+      "reason": "68/68bytes,9 differing,first0x8c0c1a5b. Declared emitter fixes call/literal order, but angle100 value/shared16384 constant allocate R3/R1 instead of R1/R3 with different zero scheduling. Runtime aggregate C initializer rejected as nonconstant; permitted C++ initializer produces extra allocated data and is rejected by exact validator.",
+      "unsuccessful_distinct_hypotheses": 4,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact three-angle local initialization with same shared-constant/register lifetime, or verified source-level inline context. Do not repeat direct/aggregate initialization, change flags or copy generated data.",
+      "comparison": {
+        "name": "emit_actor_point_effect-checked-0",
+        "size": 68,
+        "expected_size": 68,
+        "exact": false,
+        "differing_bytes": 9,
+        "first_difference": "0x8c0c1a5b",
+        "offsets": [
+          15,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          30
+        ],
+        "source_sha256": "5d36ee21b4cbe15009881cd50f984d2a705c50e030a48aa3ea4f04eb90a89127",
+        "compiler_receipt_sha256": "30789c7c9f57e1ac010aceea4e623559b6eab0fe8b8d5163722c18cfb1559e8a"
+      }
     }
   ]
 }

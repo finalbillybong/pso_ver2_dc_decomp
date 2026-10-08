@@ -7668,3 +7668,42 @@ disposable database copy. Previously parked targets were not reopened.
 Stage 155 commit 9aa7aac is published with successful remote checks. Reproduce
 with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into actor effect requests, countdowns, scans and initialization.
+
+
+## Actor view requests and scans, stage 157
+
+Three complete matches add **220 bytes**: **680 functions / 622 modules / 62,832
+compiled bytes / 4,100,080 retained reference bytes / 1.5093% whole-image coverage**.
+All 677 prior matches and their source/header hashes are unchanged. Standalone
+reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| request_actor_mode_twelve | 0x8c0c1b54 | 80 |
+| trigger_actor_view_countdown | 0x8c0c1db8 | 60 |
+| scan_actor_view_entries | 0x8c0c1fbc | 80 |
+
+Offset-checked provisional prefixes preserve signed mode and countdown accesses,
+mode/flag gates, and unconditional scan callbacks. The scan reloads both global
+counts after every callback; it does not add a null check. The countdown changes
+to 30 only for actor zero with a nonpositive prior countdown.
+
+Investigation-only: emit_actor_point_effect remains parked at 68 bytes with nine
+differences, first 0x8c0c1a5b, after four hypotheses. A declared emitter fixes the
+call/literal ordering, but angle100 and the shared 16384 constant still use
+R3/R1 instead of R1/R3 and schedule zero differently. Ordinary C rejects the
+runtime aggregate initializer; the permitted C++ experiment emits additional
+allocated data and fails strict validation. Neither is admitted. Revisit only
+with an independently exact local three-angle initialization pattern or verified
+inline context. Equivalent initialization variants must not reset its count.
+
+Fourteen snapshots form five binary groups; compilation/validation failures are
+retained separately. All admissions match independently twice. Two fresh exact
+builds per checkout, integrated-image comparison, five-function proof, 53 research
+tests and 58 public tests pass. Source-only rejects 4,100,080 bytes without altering
+existing artifacts. Focused exports validate from a disposable database copy.
+The original primary targets remain parked and earn no new credit.
+
+Stage 156 commit 282eaf1 is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, the current tests and expected source-only
+rejection. Continue into actor mode initialization and dispatch.
