@@ -7847,3 +7847,7 @@ rejection. Continue into matrix setup, vector transforms and model-node helpers.
 ## Proven reconstruction families, batch 166
 
 403 complete exact functions add 27,484 bytes, preserving all 829 prior matches. Totals: 1232 functions / 1174 modules / 100,880 compiled function-range bytes / zero reconstructed data bytes / 4,062,032 retained reference bytes. See [BATCH.md](BATCH.md) for measured experiments and verification; historical efficiency evidence remains in [EFFICIENCY.md](EFFICIENCY.md).
+
+## Proven reconstruction families, batch 167
+
+125 complete exact functions add 8,204 bytes, preserving all 1232 prior matches. Totals: 1357 functions / 1299 modules / 109,084 compiled function-range bytes / zero reconstructed data bytes / 4,053,828 retained reference bytes. See [BATCH.md](BATCH.md) for measured experiments and verification; historical efficiency evidence remains in [EFFICIENCY.md](EFFICIENCY.md).

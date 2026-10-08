@@ -57,6 +57,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "refresh_follow_effect_8c0129f4",
+      "source": "src/effects/refresh_follow_effect_8c0129f4.c",
+      "address": "0x8c0129f4",
+      "entry": "_refresh_follow_effect_8c0129f4",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 10740,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c0129f4",
+          "address": "0x8c0129f4",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "08eddfdd30077e6d709478a7ba0752e433f9ead4d74adbea79b46cf015c70b0d",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c0130e8",
       "source": "src/effects/destroy_object_8c0130e8.c",
       "address": "0x8c0130e8",
@@ -185,6 +208,156 @@
       ],
       "reference_sha256": "b3dec276b3e5c2e05887d4c16a27116680e4b5584e63bc6a22f9a70b4b69c9c4",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_color_rise_8c015064",
+      "source": "src/effects/destroy_color_rise_8c015064.c",
+      "address": "0x8c015064",
+      "entry": "_destroy_color_rise_8c015064",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 20580,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c015064",
+          "address": "0x8c015064",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "85e5c926079a4ff2d38adb00b34ead59816925e01ef2059b4347f07246cff5f0",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c0150b4",
+      "source": "src/effects/destroy_color_rise_8c0150b4.c",
+      "address": "0x8c0150b4",
+      "entry": "_destroy_color_rise_8c0150b4",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 20660,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c0150b4",
+          "address": "0x8c0150b4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "afe5efd9dd73fabee252320fe00fa813a13f340e1883afce44b574f379c1fd39",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c015104",
+      "source": "src/effects/destroy_color_rise_8c015104.c",
+      "address": "0x8c015104",
+      "entry": "_destroy_color_rise_8c015104",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 20740,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c015104",
+          "address": "0x8c015104",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "801bd22d7dbc763ba34b7da9a606a25495ccbcf0ecc4b11945e9f16935264399",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c015154",
+      "source": "src/effects/destroy_color_rise_8c015154.c",
+      "address": "0x8c015154",
+      "entry": "_destroy_color_rise_8c015154",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 20820,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c015154",
+          "address": "0x8c015154",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "ec449be02d809ce126fdee73e6bee0584f94065786c186f331f88f33d9ff7ab7",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c0151a4",
+      "source": "src/effects/destroy_color_rise_8c0151a4.c",
+      "address": "0x8c0151a4",
+      "entry": "_destroy_color_rise_8c0151a4",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 20900,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c0151a4",
+          "address": "0x8c0151a4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "f76344532ac8fe42cd3332d1857bafc30093884a24957daf7554ab7748329615",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c0151f4",
+      "source": "src/effects/destroy_color_rise_8c0151f4.c",
+      "address": "0x8c0151f4",
+      "entry": "_destroy_color_rise_8c0151f4",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 20980,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c0151f4",
+          "address": "0x8c0151f4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "e859893f26e4e92837f2ab6b59c2c16105caeeddd50e96dc2733cac3012ce0c0",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c01bb30",
@@ -847,6 +1020,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "refresh_follow_effect_8c0316cc",
+      "source": "src/effects/refresh_follow_effect_8c0316cc.c",
+      "address": "0x8c0316cc",
+      "entry": "_refresh_follow_effect_8c0316cc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 136908,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c0316cc",
+          "address": "0x8c0316cc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "80b827f596599b7d615fef3382ef82747386923494c8544c5f6553cec82b397d",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "current_effect_mode",
       "source": "src/effects/current_mode.c",
       "address": "0x8c032b10",
@@ -921,6 +1117,31 @@
       ],
       "reference_sha256": "3fcc49a4e2956de398caccb24735b00a64e77621e9d7d5292ee7ac96da257d66",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_color_rise_8c033094",
+      "source": "src/effects/destroy_color_rise_8c033094.c",
+      "address": "0x8c033094",
+      "entry": "_destroy_color_rise_8c033094",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 143508,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c033094",
+          "address": "0x8c033094",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "154de59ef45cff603b3234a0b4970ab0bd0bbedff22fb6c46f7cc1fb8387110d",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "initialize_hierarchy_node",
@@ -2019,6 +2240,169 @@
       "boundary_review": "Raw little-endian SH4: entry0x8c034164, return delay0x8c034192, five literal words0x8c034194..0x8c0341a8; next entry immediately follows. Complete fixed-C match independently twice; see reconstruction-stage33."
     },
     {
+      "id": "spawn_object_1e7964_8c0341a8",
+      "source": "src/objects/spawn_object_1e7964_8c0341a8.c",
+      "address": "0x8c0341a8",
+      "entry": "_spawn_object_1e7964_8c0341a8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147880,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_1e7964_8c0341a8",
+          "address": "0x8c0341a8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "22c67bba2777e2d671694c8905ca1a080386a989511ecef45126d3cd38267b3c",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "spawn_object_1a9c84_8c0341ec",
+      "source": "src/objects/spawn_object_1a9c84_8c0341ec.c",
+      "address": "0x8c0341ec",
+      "entry": "_spawn_object_1a9c84_8c0341ec",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 147948,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_1a9c84_8c0341ec",
+          "address": "0x8c0341ec",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "bfdc88096714b3989d70a95ae56908449c8ecf02c947073f819ab201041d42a1",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "spawn_object_1ab324_8c0342b8",
+      "source": "src/objects/spawn_object_1ab324_8c0342b8.c",
+      "address": "0x8c0342b8",
+      "entry": "_spawn_object_1ab324_8c0342b8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 148152,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_1ab324_8c0342b8",
+          "address": "0x8c0342b8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8cb84df94184ea31c22c7be4ae84458f7d76e6f6608164178b7383a279880373",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "spawn_object_19d108_8c034374",
+      "source": "src/objects/spawn_object_19d108_8c034374.c",
+      "address": "0x8c034374",
+      "entry": "_spawn_object_19d108_8c034374",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 148340,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_19d108_8c034374",
+          "address": "0x8c034374",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "430a3f8a29d9cb330b8e707d0188b104aa09336e6064ec485dbb97e753a4ac5a",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "spawn_object_0893a8_8c0343b8",
+      "source": "src/objects/spawn_object_0893a8_8c0343b8.c",
+      "address": "0x8c0343b8",
+      "entry": "_spawn_object_0893a8_8c0343b8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 148408,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c0343b8",
+          "address": "0x8c0343b8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "5dd8fd3f169106e5c0c5396a4b1270b90bc503f9821a780448be5b59508387f4",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "spawn_object_0893a8_8c034440",
+      "source": "src/objects/spawn_object_0893a8_8c034440.c",
+      "address": "0x8c034440",
+      "entry": "_spawn_object_0893a8_8c034440",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 148544,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c034440",
+          "address": "0x8c034440",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e5d108da86a07762c0927eef1b5792f99f5079ce26daf58eedbb262c1f1ecfc9",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_view_effect_8c036a7c",
+      "source": "src/effects/destroy_view_effect_8c036a7c.c",
+      "address": "0x8c036a7c",
+      "entry": "_destroy_view_effect_8c036a7c",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 158332,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c036a7c",
+          "address": "0x8c036a7c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "d9973c50822af367ce1266b7a088b3ffc12f2d52dfb2cfc5b5d8b07014365270",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "operation_37c3c",
       "source": "src/objects/operation_37c3c.c",
       "address": "0x8c037c3c",
@@ -2495,6 +2879,102 @@
       ],
       "reference_sha256": "a5233860a641e31d68b32bd52647d98c73bd257271f236a0a2be3f92f0ac9069",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "run_current_resource_start_8c03c3ac",
+      "source": "src/objects/run_current_resource_start_8c03c3ac.c",
+      "address": "0x8c03c3ac",
+      "entry": "_run_current_resource_start_8c03c3ac",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 181164,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_current_resource_start_8c03c3ac",
+          "address": "0x8c03c3ac",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "89b06833541d06266788fe37edb44872a20afacdbe770ec5d8fde186e5957553",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "run_current_resource_start_8c03c3cc",
+      "source": "src/objects/run_current_resource_start_8c03c3cc.c",
+      "address": "0x8c03c3cc",
+      "entry": "_run_current_resource_start_8c03c3cc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 181196,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_current_resource_start_8c03c3cc",
+          "address": "0x8c03c3cc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "5f9af1caa3f63324a9194439fbfb3de9e7c145d59054dbeb392591900bcba71c",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "run_resource_start_8c03c3ec",
+      "source": "src/objects/run_resource_start_8c03c3ec.c",
+      "address": "0x8c03c3ec",
+      "entry": "_run_resource_start_8c03c3ec",
+      "headers": [
+        "src/include/resource_callbacks.h"
+      ],
+      "ranges": [
+        {
+          "offset": 181228,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_resource_start_8c03c3ec",
+          "address": "0x8c03c3ec",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "3ee6a595cd89a905d4d5099b2f1bb7000f5d19756a5207843276f1ead9d42f0b",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "run_resource_end_8c03c414",
+      "source": "src/objects/run_resource_end_8c03c414.c",
+      "address": "0x8c03c414",
+      "entry": "_run_resource_end_8c03c414",
+      "headers": [
+        "src/include/resource_callbacks.h"
+      ],
+      "ranges": [
+        {
+          "offset": 181268,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_resource_end_8c03c414",
+          "address": "0x8c03c414",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "ac04927fffc02a4076d491bb1f505d3be6a76dd609aa205b1380d633aa737e04",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c03ca10",
@@ -5140,6 +5620,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "refresh_follow_effect_8c052180",
+      "source": "src/effects/refresh_follow_effect_8c052180.c",
+      "address": "0x8c052180",
+      "entry": "_refresh_follow_effect_8c052180",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 270720,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c052180",
+          "address": "0x8c052180",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "c5cee72b62db94995c77b935669b1a8f92a4c0905388c192da757d7b3488863e",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "lookup_object_by_id",
       "source": "src/objects/lookup_object_by_id.c",
       "address": "0x8c053d84",
@@ -5265,6 +5768,52 @@
       ],
       "reference_sha256": "2613bad9be9ad06908907d0e2976867fc31b39a2a1620864de64052920e319b5",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "refresh_follow_effect_8c05a194",
+      "source": "src/effects/refresh_follow_effect_8c05a194.c",
+      "address": "0x8c05a194",
+      "entry": "_refresh_follow_effect_8c05a194",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 303508,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c05a194",
+          "address": "0x8c05a194",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "22f4c35eb7fb0ee6145c203cdb4c66aec065b3247a19ec8cbb4be777692737d9",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "refresh_follow_effect_8c05af60",
+      "source": "src/effects/refresh_follow_effect_8c05af60.c",
+      "address": "0x8c05af60",
+      "entry": "_refresh_follow_effect_8c05af60",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 307040,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c05af60",
+          "address": "0x8c05af60",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "5de9a478f46481241cb6c290e742d06510204453b8d523ce7f039911131eff88",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_color_rise_8c05bd84",
@@ -6276,6 +6825,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "spawn_object_1ab324_8c0804a8",
+      "source": "src/objects/spawn_object_1ab324_8c0804a8.c",
+      "address": "0x8c0804a8",
+      "entry": "_spawn_object_1ab324_8c0804a8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 459944,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_1ab324_8c0804a8",
+          "address": "0x8c0804a8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "536d362dcc6b626379815402f2968a6296d14254a3a8c52dbf9769ca87d888c3",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c081864",
       "source": "src/effects/destroy_object_8c081864.c",
       "address": "0x8c081864",
@@ -6300,6 +6872,29 @@
       ],
       "reference_sha256": "b1686b77f4f7ea05dbe17784cb8e2b88480598bb9fb4b3455a8aa36c7deeb8d7",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "spawn_object_0893a8_8c08213c",
+      "source": "src/objects/spawn_object_0893a8_8c08213c.c",
+      "address": "0x8c08213c",
+      "entry": "_spawn_object_0893a8_8c08213c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 467260,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c08213c",
+          "address": "0x8c08213c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "d2bdfe9b1bcfc6d60025e3a1d46685e3efce10c7c3a232bd398f35be714e2ba4",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c0861cc",
@@ -6352,6 +6947,32 @@
       ],
       "reference_sha256": "1048ef6eefef499c188e6b0c2732685b7fbf278df8fe90448693cc1ae2269b5b",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_effect_a4910_8c086e30",
+      "source": "src/effects/destroy_effect_a4910_8c086e30.c",
+      "address": "0x8c086e30",
+      "entry": "_destroy_effect_a4910_8c086e30",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 486960,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_a4910_8c086e30",
+          "address": "0x8c086e30",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "a3c9e6abc02e4c69b9db79bff1589587ee0bdbaea0a0734546d1d5e972ff44fa",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c08a398",
@@ -6458,6 +7079,52 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_color_rise_8c08b714",
+      "source": "src/effects/destroy_color_rise_8c08b714.c",
+      "address": "0x8c08b714",
+      "entry": "_destroy_color_rise_8c08b714",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 505620,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c08b714",
+          "address": "0x8c08b714",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "b7d0bba0a4bba0f043bd9b721c7bda7eabef0c221a90221bcf48ee1baab5dd66",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "operation_193764_8c08b89c",
+      "source": "src/objects/operation_193764_8c08b89c.c",
+      "address": "0x8c08b89c",
+      "entry": "_operation_193764_8c08b89c",
+      "ranges": [
+        {
+          "offset": 506012,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193764_8c08b89c",
+          "address": "0x8c08b89c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "5f22bd1672b539ed9416d4ce63975f2680ba1f4b78076e03aefeea5c48d7acd1",
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c08b900",
       "source": "src/effects/destroy_object_8c08b900.c",
       "address": "0x8c08b900",
@@ -6482,6 +7149,27 @@
       ],
       "reference_sha256": "7314a6e592ddc3ea5948cb4be80bcb329a28d98ff96a499e3e38c2b1e5373932",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_193764_8c08ddc8",
+      "source": "src/objects/operation_193764_8c08ddc8.c",
+      "address": "0x8c08ddc8",
+      "entry": "_operation_193764_8c08ddc8",
+      "ranges": [
+        {
+          "offset": 515528,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193764_8c08ddc8",
+          "address": "0x8c08ddc8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "49a04ba25a4f3b9b0a3283da7b7a16ed847987aa027ea74fd261575538998846",
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c08de2c",
@@ -6692,6 +7380,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_view_effect_8c09cd90",
+      "source": "src/effects/destroy_view_effect_8c09cd90.c",
+      "address": "0x8c09cd90",
+      "entry": "_destroy_view_effect_8c09cd90",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 576912,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c09cd90",
+          "address": "0x8c09cd90",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "58b3869e9e4b5571d7f871d3399160b261da33e8a2b44bd221c04a7972ea2c47",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c09ce5c",
       "source": "src/effects/destroy_object_8c09ce5c.c",
       "address": "0x8c09ce5c",
@@ -6742,6 +7455,31 @@
       ],
       "reference_sha256": "33163de714723d2ff72df30e06d38bb920a7ccbf16df4e5957159830a16e6e93",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_view_effect_8c09f2ac",
+      "source": "src/effects/destroy_view_effect_8c09f2ac.c",
+      "address": "0x8c09f2ac",
+      "entry": "_destroy_view_effect_8c09f2ac",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 586412,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c09f2ac",
+          "address": "0x8c09f2ac",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "c880d64cef7f3b55cb87f89287e54f8c263e2603c1f0253ce6be4808badfb6d7",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c09fc3c",
@@ -7735,6 +8473,31 @@
       "reference_sha256": "7a1c7bc28f5c33b35b1d5f7a7f71d0013c91e5fc66292a5c5c807edbc5f2c074",
       "symbols": {},
       "boundary_review": "Raw view-effect destructor, child deactivation and motion-field initializer reviewed through adjacent entries, signed/null branches, field widths, global clears, call/return delays, scalar/literal offsets and natural alignment. Full checked match twice; stage147."
+    },
+    {
+      "id": "destroy_view_effect_8c0a44e0",
+      "source": "src/effects/destroy_view_effect_8c0a44e0.c",
+      "address": "0x8c0a44e0",
+      "entry": "_destroy_view_effect_8c0a44e0",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 607456,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c0a44e0",
+          "address": "0x8c0a44e0",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "747f280c531cf8898e716cb94b91ccaef8b7861bb886203ecb904456a74db7e7",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "create_effect_a460c",
@@ -11511,6 +12274,29 @@
         "_effect_value_context": "0x8c304d04"
       },
       "boundary_review": "Raw allocation factories and scalar effect helper reviewed through adjacent entries, null allocation path, initializer result, signed multiply/float conversion, conditional scaling, literal pools and natural padding. Complete checked match twice; stage137."
+    },
+    {
+      "id": "refresh_follow_effect_8c0b9d48",
+      "source": "src/effects/refresh_follow_effect_8c0b9d48.c",
+      "address": "0x8c0b9d48",
+      "entry": "_refresh_follow_effect_8c0b9d48",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 695624,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c0b9d48",
+          "address": "0x8c0b9d48",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "c4fe771e0573ebf36dd863d62539cebf5db318af0f80b16fa15c3e78603c2605",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c0ba7bc",
@@ -15881,6 +16667,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "handle_actor_idle_event_8c0d22bc",
+      "source": "src/objects/handle_actor_idle_event_8c0d22bc.c",
+      "address": "0x8c0d22bc",
+      "entry": "_handle_actor_idle_event_8c0d22bc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 795324,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "handle_actor_idle_event_8c0d22bc",
+          "address": "0x8c0d22bc",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "c06ef2f90ec22133a0a31a75adc3e13061bfc5b74a552c53ea0bc084e0e1f498",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c0d7cd0",
       "source": "src/effects/destroy_object_8c0d7cd0.c",
       "address": "0x8c0d7cd0",
@@ -15957,6 +16766,29 @@
       ],
       "reference_sha256": "81203343bb093871f45ea4be28cdfa067836394a465d89f2713bbe9ef8544cfd",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "refresh_follow_effect_8c0dcdd8",
+      "source": "src/effects/refresh_follow_effect_8c0dcdd8.c",
+      "address": "0x8c0dcdd8",
+      "entry": "_refresh_follow_effect_8c0dcdd8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 839128,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c0dcdd8",
+          "address": "0x8c0dcdd8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "c01749ede7d157ef77edbce769c6806a8772a5e53888affaaf430d058cef22a7",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c0e3814",
@@ -16531,6 +17363,30 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_motion_profile_8c0ffdcc",
+      "source": "src/math/destroy_motion_profile_8c0ffdcc.c",
+      "address": "0x8c0ffdcc",
+      "entry": "_destroy_motion_profile_8c0ffdcc",
+      "ranges": [
+        {
+          "offset": 982476,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_motion_profile_8c0ffdcc",
+          "address": "0x8c0ffdcc",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "444e960b71d5d487758368ffdcadad9fba205735ca93aaf1e733029e00b8d20d",
+      "headers": [
+        "src/include/motion_profile.h"
+      ],
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c100c38",
       "source": "src/effects/destroy_object_8c100c38.c",
       "address": "0x8c100c38",
@@ -16555,6 +17411,54 @@
       ],
       "reference_sha256": "5eea4b5157cda377fe226ee4a3bf381f95c9708003452364c838f69441167bfc",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "spawn_object_1a9c84_8c100dd0",
+      "source": "src/objects/spawn_object_1a9c84_8c100dd0.c",
+      "address": "0x8c100dd0",
+      "entry": "_spawn_object_1a9c84_8c100dd0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 986576,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_1a9c84_8c100dd0",
+          "address": "0x8c100dd0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "1fd772e228036694de1bb633ca4240152ddaabfda3bab008854d59c44a3b0cc2",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_view_effect_8c101548",
+      "source": "src/effects/destroy_view_effect_8c101548.c",
+      "address": "0x8c101548",
+      "entry": "_destroy_view_effect_8c101548",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 988488,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c101548",
+          "address": "0x8c101548",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "275598256bc1db2ad0a64f40ab2181448fcbb8ef45e9ac1105ae04ee3fde0ad6",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c1032d0",
@@ -16843,6 +17747,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_color_rise_8c10766c",
+      "source": "src/effects/destroy_color_rise_8c10766c.c",
+      "address": "0x8c10766c",
+      "entry": "_destroy_color_rise_8c10766c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1013356,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c10766c",
+          "address": "0x8c10766c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "f57b8c3a6934638418a1e8c804d9cafe09a5c995d7eb124e644a8062d069565c",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c107c8c",
       "source": "src/effects/destroy_object_8c107c8c.c",
       "address": "0x8c107c8c",
@@ -16869,6 +17798,82 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_color_rise_8c107ee4",
+      "source": "src/effects/destroy_color_rise_8c107ee4.c",
+      "address": "0x8c107ee4",
+      "entry": "_destroy_color_rise_8c107ee4",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1015524,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c107ee4",
+          "address": "0x8c107ee4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "2c48701f52f7b7539d55b640e3664b56a080bf8a06002a3d475dd0c77bb71c16",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "request_actor_mode_five_8c109768",
+      "source": "src/effects/request_actor_mode_five_8c109768.c",
+      "address": "0x8c109768",
+      "entry": "_request_actor_mode_five_8c109768",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1021800,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_five_8c109768",
+          "address": "0x8c109768",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "3c88293e6e63aaa23a68e5dd3fd530c76c6fd2303e9f3978291cacb7ee9e2acd",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_view_effect_8c10ae44",
+      "source": "src/effects/destroy_view_effect_8c10ae44.c",
+      "address": "0x8c10ae44",
+      "entry": "_destroy_view_effect_8c10ae44",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1027652,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c10ae44",
+          "address": "0x8c10ae44",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "2bbea150891ed54c508fc3fda6f103cf75d2552acac702fa7cf738ef67edcd98",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c10b344",
       "source": "src/effects/destroy_object_8c10b344.c",
       "address": "0x8c10b344",
@@ -16893,6 +17898,29 @@
       ],
       "reference_sha256": "7402583571f91f4cbaea8837c7e817341e246db8544af9120eee300297cce0ec",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "spawn_object_0893a8_8c10b7d0",
+      "source": "src/objects/spawn_object_0893a8_8c10b7d0.c",
+      "address": "0x8c10b7d0",
+      "entry": "_spawn_object_0893a8_8c10b7d0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1030096,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_0893a8_8c10b7d0",
+          "address": "0x8c10b7d0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "35abf56b37b31c32022eef9d60af2ffbb6b605496668923452d45563d947ea96",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c112efc",
@@ -16947,6 +17975,56 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_color_rise_8c1189f0",
+      "source": "src/effects/destroy_color_rise_8c1189f0.c",
+      "address": "0x8c1189f0",
+      "entry": "_destroy_color_rise_8c1189f0",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1083888,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c1189f0",
+          "address": "0x8c1189f0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "91b69188f1250411128177ddb3ca9dbc81dadb2b7073616c1591e05d232d1c77",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c118c60",
+      "source": "src/effects/destroy_color_rise_8c118c60.c",
+      "address": "0x8c118c60",
+      "entry": "_destroy_color_rise_8c118c60",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1084512,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c118c60",
+          "address": "0x8c118c60",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "4658e746666ae6ae2330bba0233f53be18901f6506a5930ae82dd44da403e966",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c11924c",
       "source": "src/effects/destroy_object_8c11924c.c",
       "address": "0x8c11924c",
@@ -16997,6 +18075,32 @@
       ],
       "reference_sha256": "86efb54d42e794f5d01beee9c6280d44aa1867e22ebeb0e832cd2ed62f73125a",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "request_actor_mode_four_8c11deb4",
+      "source": "src/effects/request_actor_mode_four_8c11deb4.c",
+      "address": "0x8c11deb4",
+      "entry": "_request_actor_mode_four_8c11deb4",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1105588,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_four_8c11deb4",
+          "address": "0x8c11deb4",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "fd5d6f8bef75a60c229c7e0c100512539085546d38a28f18af68a6416495e1d9",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c11f084",
@@ -17546,6 +18650,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "request_actor_mode_zero_8c1275a8",
+      "source": "src/effects/request_actor_mode_zero_8c1275a8.c",
+      "address": "0x8c1275a8",
+      "entry": "_request_actor_mode_zero_8c1275a8",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1144232,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_zero_8c1275a8",
+          "address": "0x8c1275a8",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "aa49c0a57b972d003b9c9960e10d65450b0179a9b50ff7637c6bbae0a13321b3",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "request_actor_mode_zero_8c128b44",
+      "source": "src/effects/request_actor_mode_zero_8c128b44.c",
+      "address": "0x8c128b44",
+      "entry": "_request_actor_mode_zero_8c128b44",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1149764,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_zero_8c128b44",
+          "address": "0x8c128b44",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "aa49c0a57b972d003b9c9960e10d65450b0179a9b50ff7637c6bbae0a13321b3",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c12ae0c",
       "source": "src/effects/destroy_object_8c12ae0c.c",
       "address": "0x8c12ae0c",
@@ -17596,6 +18752,31 @@
       ],
       "reference_sha256": "e233d7495df21b20f171ff968ac68ecd13328792f55c21eddfd96cc40cc7eb83",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_color_rise_8c1322b4",
+      "source": "src/effects/destroy_color_rise_8c1322b4.c",
+      "address": "0x8c1322b4",
+      "entry": "_destroy_color_rise_8c1322b4",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1188532,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c1322b4",
+          "address": "0x8c1322b4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "10a813fc47a00e865acdd2720c0d4b28cf0460e5bc31c11b44b24aaadefea8b2",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c133718",
@@ -17676,6 +18857,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "spawn_object_1ab324_8c136738",
+      "source": "src/objects/spawn_object_1ab324_8c136738.c",
+      "address": "0x8c136738",
+      "entry": "_spawn_object_1ab324_8c136738",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1206072,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_1ab324_8c136738",
+          "address": "0x8c136738",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "a21406fe8344225a63c9759c79120e6ecbebd5f872802b5ecf7399dce6be7477",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c1367f0",
       "source": "src/effects/destroy_object_8c1367f0.c",
       "address": "0x8c1367f0",
@@ -17700,6 +18904,54 @@
       ],
       "reference_sha256": "d721154907ad3e92b065171435075c273af8d8cae8dd5ab3b631a1d94d1daa2f",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "spawn_object_1ab324_8c136b34",
+      "source": "src/objects/spawn_object_1ab324_8c136b34.c",
+      "address": "0x8c136b34",
+      "entry": "_spawn_object_1ab324_8c136b34",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1207092,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_object_1ab324_8c136b34",
+          "address": "0x8c136b34",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "4e48d58747b7d12a6ff1b47e859a35b4bf963a077c90a2c8462e458e04c0e3fd",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c136c08",
+      "source": "src/effects/destroy_color_rise_8c136c08.c",
+      "address": "0x8c136c08",
+      "entry": "_destroy_color_rise_8c136c08",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1207304,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c136c08",
+          "address": "0x8c136c08",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "976af34ede27e6e6b8e1b2d3a946a2897973546717390fdefcd0ea9addb5c329",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c13735c",
@@ -17882,6 +19134,27 @@
       ],
       "reference_sha256": "2c8550e3a2f482f66d77123c218deea1b044ef01f91c4a301ed7ee02f42af1d9",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_193764_8c1513d8",
+      "source": "src/objects/operation_193764_8c1513d8.c",
+      "address": "0x8c1513d8",
+      "entry": "_operation_193764_8c1513d8",
+      "ranges": [
+        {
+          "offset": 1315800,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193764_8c1513d8",
+          "address": "0x8c1513d8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "76cdbda559649b26c3c487038b016200428a09968310652c4ee39c0938f1b4ff",
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c157860",
@@ -18326,6 +19599,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_color_rise_8c16bc90",
+      "source": "src/effects/destroy_color_rise_8c16bc90.c",
+      "address": "0x8c16bc90",
+      "entry": "_destroy_color_rise_8c16bc90",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1424528,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c16bc90",
+          "address": "0x8c16bc90",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "8572eedb0458c41eadeb63bf5d0bee3e5d59fb3144c99ccfec40abf919a54ae7",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c16bf08",
       "source": "src/effects/destroy_object_8c16bf08.c",
       "address": "0x8c16bf08",
@@ -18555,6 +19853,56 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_color_rise_8c1761cc",
+      "source": "src/effects/destroy_color_rise_8c1761cc.c",
+      "address": "0x8c1761cc",
+      "entry": "_destroy_color_rise_8c1761cc",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1466828,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c1761cc",
+          "address": "0x8c1761cc",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "077293f78de882c5928a819a8edba69bddf56fd4266135f430c445493f0232e3",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c176680",
+      "source": "src/effects/destroy_color_rise_8c176680.c",
+      "address": "0x8c176680",
+      "entry": "_destroy_color_rise_8c176680",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1468032,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c176680",
+          "address": "0x8c176680",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "ea66138050f86fcad5ad9d2b62897dafa77b5cce1370578f0647220b0690653b",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c176914",
       "source": "src/effects/destroy_object_8c176914.c",
       "address": "0x8c176914",
@@ -18735,6 +20083,56 @@
       ],
       "reference_sha256": "e3199c1c1c01a6298a785d27276946a45ede3b5ec29e4ea795b19f058bfae5ef",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_color_rise_8c1791cc",
+      "source": "src/effects/destroy_color_rise_8c1791cc.c",
+      "address": "0x8c1791cc",
+      "entry": "_destroy_color_rise_8c1791cc",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1479116,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c1791cc",
+          "address": "0x8c1791cc",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "e2a2bcc21293954f5c9cac21e6acdc224a9e437a7b9c8350617b97a54834c6a2",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c1792c0",
+      "source": "src/effects/destroy_color_rise_8c1792c0.c",
+      "address": "0x8c1792c0",
+      "entry": "_destroy_color_rise_8c1792c0",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1479360,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c1792c0",
+          "address": "0x8c1792c0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "50a61b692373361c6090ed97983ad03ed7a8c34215aec41df3fb7e18cfd0feb1",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c1797e0",
@@ -19489,6 +20887,30 @@
       ],
       "reference_sha256": "0a474628e6e6702e2dd13dcd2b9c89e1478aeeb270c8b95ce3bd6510f9ea019f",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_194098_8c18cc18",
+      "source": "src/objects/operation_194098_8c18cc18.c",
+      "address": "0x8c18cc18",
+      "entry": "_operation_194098_8c18cc18",
+      "ranges": [
+        {
+          "offset": 1559576,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194098_8c18cc18",
+          "address": "0x8c18cc18",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "f92ee75364de1ba2ffcb296b03ae4b5bb80db580a43731a0a684d68be38af8b4",
+      "headers": [
+        "src/include/resource_widget.h"
+      ],
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c18ee2c",
@@ -21682,6 +23104,54 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_motion_profile_8c199ba0",
+      "source": "src/math/destroy_motion_profile_8c199ba0.c",
+      "address": "0x8c199ba0",
+      "entry": "_destroy_motion_profile_8c199ba0",
+      "ranges": [
+        {
+          "offset": 1612704,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_motion_profile_8c199ba0",
+          "address": "0x8c199ba0",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "444e960b71d5d487758368ffdcadad9fba205735ca93aaf1e733029e00b8d20d",
+      "headers": [
+        "src/include/motion_profile.h"
+      ],
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_motion_profile_8c199ef0",
+      "source": "src/math/destroy_motion_profile_8c199ef0.c",
+      "address": "0x8c199ef0",
+      "entry": "_destroy_motion_profile_8c199ef0",
+      "ranges": [
+        {
+          "offset": 1613552,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_motion_profile_8c199ef0",
+          "address": "0x8c199ef0",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "444e960b71d5d487758368ffdcadad9fba205735ca93aaf1e733029e00b8d20d",
+      "headers": [
+        "src/include/motion_profile.h"
+      ],
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c19a7f8",
       "source": "src/effects/destroy_object_8c19a7f8.c",
       "address": "0x8c19a7f8",
@@ -22918,6 +24388,56 @@
       "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; root vector/scalar ABI established; checked child and mesh-chain prefixes; final exact twice; reconstruction-stage80."
     },
     {
+      "id": "operation_1abd98_8c1ac468",
+      "source": "src/objects/operation_1abd98_8c1ac468.c",
+      "address": "0x8c1ac468",
+      "entry": "_operation_1abd98_8c1ac468",
+      "ranges": [
+        {
+          "offset": 1688680,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1abd98_8c1ac468",
+          "address": "0x8c1ac468",
+          "size": 104
+        }
+      ],
+      "headers": [
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "4e1a0ac15f32e70697c91c80760ae5f33aa292edea125670494bf2ce5ec64617",
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_view_effect_8c1afa0c",
+      "source": "src/effects/destroy_view_effect_8c1afa0c.c",
+      "address": "0x8c1afa0c",
+      "entry": "_destroy_view_effect_8c1afa0c",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1702412,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c1afa0c",
+          "address": "0x8c1afa0c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "aff41c5f83d86987c2750efd11864e559fcd1ae583a947c881219e33a2e66beb",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c1b0108",
       "source": "src/effects/destroy_object_8c1b0108.c",
       "address": "0x8c1b0108",
@@ -23020,6 +24540,29 @@
       ],
       "reference_sha256": "26484d73689b219499eba28def4831b52d94dafab1c991cc1644c03a3904bc2d",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "refresh_follow_effect_8c1b3c60",
+      "source": "src/effects/refresh_follow_effect_8c1b3c60.c",
+      "address": "0x8c1b3c60",
+      "entry": "_refresh_follow_effect_8c1b3c60",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1719392,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c1b3c60",
+          "address": "0x8c1b3c60",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "21dc763048da29627c65dabd70c706464310c97d9325284b6f8e6fb70cda4b86",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c1b7270",
@@ -23541,6 +25084,31 @@
       "boundary_review": "Reviewed complete raw instructions, control flow, delay slots, literal pool and adjacent entry. Initializers end at previously matched destructor entries; other ends agree with catalog entries."
     },
     {
+      "id": "destroy_color_rise_8c1c61c0",
+      "source": "src/effects/destroy_color_rise_8c1c61c0.c",
+      "address": "0x8c1c61c0",
+      "entry": "_destroy_color_rise_8c1c61c0",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1794496,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c1c61c0",
+          "address": "0x8c1c61c0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "0bd0f660bf44d70c9a00a9155d2875069485667a0616eaf031e9168ae5fa5ac6",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c1c64d8",
       "source": "src/effects/destroy_object_8c1c64d8.c",
       "address": "0x8c1c64d8",
@@ -23565,6 +25133,56 @@
       ],
       "reference_sha256": "1cde04f5f497429e512ef211da1ffe23b9cf410a57379ef6eb991d9b20a2b7e7",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_color_rise_8c1c678c",
+      "source": "src/effects/destroy_color_rise_8c1c678c.c",
+      "address": "0x8c1c678c",
+      "entry": "_destroy_color_rise_8c1c678c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1795980,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c1c678c",
+          "address": "0x8c1c678c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "fd9b160168c7c04cba5b62b1bb38e18152845e8faba5fd80bbf5997887b8786e",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c1c67dc",
+      "source": "src/effects/destroy_color_rise_8c1c67dc.c",
+      "address": "0x8c1c67dc",
+      "entry": "_destroy_color_rise_8c1c67dc",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1796060,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c1c67dc",
+          "address": "0x8c1c67dc",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "d75296d9fcfe62337ab27f480e0a42213abbbf7b403418b0046aa9985fc6d35d",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c1c6a74",
@@ -23747,6 +25365,56 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_color_rise_8c1cdfc8",
+      "source": "src/effects/destroy_color_rise_8c1cdfc8.c",
+      "address": "0x8c1cdfc8",
+      "entry": "_destroy_color_rise_8c1cdfc8",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1826760,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c1cdfc8",
+          "address": "0x8c1cdfc8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "cfd835068f3f1e09c666d2df639e4c95ec68694aac24485a329b0e799e549659",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c1ce08c",
+      "source": "src/effects/destroy_color_rise_8c1ce08c.c",
+      "address": "0x8c1ce08c",
+      "entry": "_destroy_color_rise_8c1ce08c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1826956,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c1ce08c",
+          "address": "0x8c1ce08c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "16595ce320e20b4e75ef7d5411ab93573d9e94904f62eba016d22b47ca35ce91",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c1cf9e8",
       "source": "src/effects/destroy_object_8c1cf9e8.c",
       "address": "0x8c1cf9e8",
@@ -23875,6 +25543,30 @@
       ],
       "reference_sha256": "e7bd0736924c9f44e948aff969517a93fa9839d6e263552be4913826160f2c78",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_194098_8c1d5be4",
+      "source": "src/objects/operation_194098_8c1d5be4.c",
+      "address": "0x8c1d5be4",
+      "entry": "_operation_194098_8c1d5be4",
+      "ranges": [
+        {
+          "offset": 1858532,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194098_8c1d5be4",
+          "address": "0x8c1d5be4",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "0a33e3c27c51829161270459d29c37d65fb9db4332830916231dab2e8762ed1b",
+      "headers": [
+        "src/include/resource_widget.h"
+      ],
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c1d8a88",
@@ -24007,6 +25699,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_color_rise_8c1da974",
+      "source": "src/effects/destroy_color_rise_8c1da974.c",
+      "address": "0x8c1da974",
+      "entry": "_destroy_color_rise_8c1da974",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 1878388,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c1da974",
+          "address": "0x8c1da974",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "87c09ad4a3484d24907b07940e22b2a6df7f1998134e14701c621b26cacc442e",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c1db480",
       "source": "src/effects/destroy_object_8c1db480.c",
       "address": "0x8c1db480",
@@ -24111,6 +25828,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "refresh_follow_effect_8c1e1094",
+      "source": "src/effects/refresh_follow_effect_8c1e1094.c",
+      "address": "0x8c1e1094",
+      "entry": "_refresh_follow_effect_8c1e1094",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1904788,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c1e1094",
+          "address": "0x8c1e1094",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "4e79f4f784d013a05689d56bf376c9c7544ac448f05df03a1b89560c99acb950",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c1e6118",
       "source": "src/effects/destroy_object_8c1e6118.c",
       "address": "0x8c1e6118",
@@ -24211,6 +25951,29 @@
         "src/include/state_query_views.h"
       ],
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; raw callees checked for incoming arguments; final source exact twice; reconstruction-stage72."
+    },
+    {
+      "id": "refresh_follow_effect_8c1ededc",
+      "source": "src/effects/refresh_follow_effect_8c1ededc.c",
+      "address": "0x8c1ededc",
+      "entry": "_refresh_follow_effect_8c1ededc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 1957596,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c1ededc",
+          "address": "0x8c1ededc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "e628ffeb4d62175a60760eea37cd5d40ff6301cc4fe6d8503a142c7034124ec7",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c1f19e8",
@@ -24369,6 +26132,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "refresh_follow_effect_8c2151b0",
+      "source": "src/effects/refresh_follow_effect_8c2151b0.c",
+      "address": "0x8c2151b0",
+      "entry": "_refresh_follow_effect_8c2151b0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2118064,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c2151b0",
+          "address": "0x8c2151b0",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "4e79f4f784d013a05689d56bf376c9c7544ac448f05df03a1b89560c99acb950",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c2154ac",
       "source": "src/effects/destroy_object_8c2154ac.c",
       "address": "0x8c2154ac",
@@ -24393,6 +26179,29 @@
       ],
       "reference_sha256": "baa3d82993b7c544960debd0f172e25aa9bc14e2e88468343567fb2b450859d0",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "refresh_follow_effect_8c21551c",
+      "source": "src/effects/refresh_follow_effect_8c21551c.c",
+      "address": "0x8c21551c",
+      "entry": "_refresh_follow_effect_8c21551c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2118940,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c21551c",
+          "address": "0x8c21551c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "4e79f4f784d013a05689d56bf376c9c7544ac448f05df03a1b89560c99acb950",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c215a54",
@@ -24655,6 +26464,51 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_194098_8c21e690",
+      "source": "src/objects/operation_194098_8c21e690.c",
+      "address": "0x8c21e690",
+      "entry": "_operation_194098_8c21e690",
+      "ranges": [
+        {
+          "offset": 2156176,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194098_8c21e690",
+          "address": "0x8c21e690",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "0dfa3cc27079a24c76655b07393924508e79f3594f4466989bb4e8c034aaedda",
+      "headers": [
+        "src/include/resource_widget.h"
+      ],
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "operation_193764_8c21ede8",
+      "source": "src/objects/operation_193764_8c21ede8.c",
+      "address": "0x8c21ede8",
+      "entry": "_operation_193764_8c21ede8",
+      "ranges": [
+        {
+          "offset": 2158056,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193764_8c21ede8",
+          "address": "0x8c21ede8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "ed6ff4ace1411394baf97e5be23b96c9f048c56a84a47db7c3d9c6c5dd0ea611",
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c21f1d0",
       "source": "src/effects/destroy_object_8c21f1d0.c",
       "address": "0x8c21f1d0",
@@ -24733,6 +26587,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "refresh_follow_effect_8c2206fc",
+      "source": "src/effects/refresh_follow_effect_8c2206fc.c",
+      "address": "0x8c2206fc",
+      "entry": "_refresh_follow_effect_8c2206fc",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2164476,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c2206fc",
+          "address": "0x8c2206fc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "fe142734f3c8b9eb3b166097db6a4da482b4a031b75410d8395ca0c086fbfbda",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c2207f8",
       "source": "src/effects/destroy_object_8c2207f8.c",
       "address": "0x8c2207f8",
@@ -24757,6 +26634,29 @@
       ],
       "reference_sha256": "480448d738d48cc9b2d445a474e53d0cdf229a2298d32aa3a78505d491f75888",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "refresh_follow_effect_8c22083c",
+      "source": "src/effects/refresh_follow_effect_8c22083c.c",
+      "address": "0x8c22083c",
+      "entry": "_refresh_follow_effect_8c22083c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2164796,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c22083c",
+          "address": "0x8c22083c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "78262af3c019cdc24b0359fb5aa6d843da6a0059aa9d3466a66596bf8aa4b390",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c221580",
@@ -24835,6 +26735,231 @@
       ],
       "reference_sha256": "2ea8d88f2d3f0b54a7b64c5df442133d83cd048ac460649062d38f7a9d274b51",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_color_rise_8c223adc",
+      "source": "src/effects/destroy_color_rise_8c223adc.c",
+      "address": "0x8c223adc",
+      "entry": "_destroy_color_rise_8c223adc",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2177756,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c223adc",
+          "address": "0x8c223adc",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "e48403502cb9187a4b8a9ddaabab9eac3fc1759c1e6db7e4a177c0e2de9bb83d",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c223b2c",
+      "source": "src/effects/destroy_color_rise_8c223b2c.c",
+      "address": "0x8c223b2c",
+      "entry": "_destroy_color_rise_8c223b2c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2177836,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c223b2c",
+          "address": "0x8c223b2c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "ce54d17615aace33989ef9c389a257195d0fb82065c7277209f86c2db627ab04",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c223b7c",
+      "source": "src/effects/destroy_color_rise_8c223b7c.c",
+      "address": "0x8c223b7c",
+      "entry": "_destroy_color_rise_8c223b7c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2177916,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c223b7c",
+          "address": "0x8c223b7c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "b7ba53e444d57892ee4cc262de5b92e452c48c984022ff1091f1d1e4fd77d830",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c223bcc",
+      "source": "src/effects/destroy_color_rise_8c223bcc.c",
+      "address": "0x8c223bcc",
+      "entry": "_destroy_color_rise_8c223bcc",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2177996,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c223bcc",
+          "address": "0x8c223bcc",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "1e705bf631ba52ec0aeb0df01afe5bdede65c15cbdb37fc9e973416d701df09e",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c223c1c",
+      "source": "src/effects/destroy_color_rise_8c223c1c.c",
+      "address": "0x8c223c1c",
+      "entry": "_destroy_color_rise_8c223c1c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2178076,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c223c1c",
+          "address": "0x8c223c1c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "ca64e0fb6a7d609e6f9b7e355cfa7992883c87644c48cb7965b07691f4be2d93",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c223c6c",
+      "source": "src/effects/destroy_color_rise_8c223c6c.c",
+      "address": "0x8c223c6c",
+      "entry": "_destroy_color_rise_8c223c6c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2178156,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c223c6c",
+          "address": "0x8c223c6c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "6ec9a5927dc7a2ec1cd5b2f63cce8802203e398ff7eedcd06c3da057aca21272",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c223cbc",
+      "source": "src/effects/destroy_color_rise_8c223cbc.c",
+      "address": "0x8c223cbc",
+      "entry": "_destroy_color_rise_8c223cbc",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2178236,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c223cbc",
+          "address": "0x8c223cbc",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "4c011134b060554eae8a6607b7acb5b03af7f7ed25b996176013f87ae6039d04",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c223d0c",
+      "source": "src/effects/destroy_color_rise_8c223d0c.c",
+      "address": "0x8c223d0c",
+      "entry": "_destroy_color_rise_8c223d0c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2178316,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c223d0c",
+          "address": "0x8c223d0c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "3a75a7e3afa0f1f4e075243df0e8cbb9d61f4971378440c9e4dae9d55d44565f",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c223d5c",
+      "source": "src/effects/destroy_color_rise_8c223d5c.c",
+      "address": "0x8c223d5c",
+      "entry": "_destroy_color_rise_8c223d5c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2178396,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c223d5c",
+          "address": "0x8c223d5c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "0b13c4561a04e0528c278b70c6715a4493a806410ae30acdd3526ecb22786748",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c22607c",
@@ -24965,6 +27090,75 @@
       ],
       "reference_sha256": "dbd31167f0bbf5082ce0d4e6a320440b023f55e2343d6f9b18eb6c47f9ec23df",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "refresh_follow_effect_8c228ae8",
+      "source": "src/effects/refresh_follow_effect_8c228ae8.c",
+      "address": "0x8c228ae8",
+      "entry": "_refresh_follow_effect_8c228ae8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2198248,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c228ae8",
+          "address": "0x8c228ae8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "74693c162e202acaee7711940ce3a44c2112af2d42acab35f2e8b3438d8239bb",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "refresh_follow_effect_8c229f80",
+      "source": "src/effects/refresh_follow_effect_8c229f80.c",
+      "address": "0x8c229f80",
+      "entry": "_refresh_follow_effect_8c229f80",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2203520,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c229f80",
+          "address": "0x8c229f80",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "9dab9e37344fb943d4929df02627fefad1b05e6b6a21249b07ca00a632693a59",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "refresh_follow_effect_8c22a53c",
+      "source": "src/effects/refresh_follow_effect_8c22a53c.c",
+      "address": "0x8c22a53c",
+      "entry": "_refresh_follow_effect_8c22a53c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2204988,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c22a53c",
+          "address": "0x8c22a53c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "8aa723af67c1d3f27206a0713afaab1ea8ee23c70e9f9b20bfde3cb9cf6cfa3e",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c22a978",
@@ -25123,6 +27317,29 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "refresh_follow_effect_8c22ed9c",
+      "source": "src/effects/refresh_follow_effect_8c22ed9c.c",
+      "address": "0x8c22ed9c",
+      "entry": "_refresh_follow_effect_8c22ed9c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 2223516,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect_8c22ed9c",
+          "address": "0x8c22ed9c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "5c18754e23fff94ec2a2ba33b32dd52f526c5c304969947a8daf82011d94041a",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c22f0c4",
       "source": "src/effects/destroy_object_8c22f0c4.c",
       "address": "0x8c22f0c4",
@@ -25225,6 +27442,27 @@
       ],
       "reference_sha256": "e41ebcc72d395936c893b0cdc339d512a6651fb1e58b438f8ad4a8b89256b19d",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_193764_8c2327ec",
+      "source": "src/objects/operation_193764_8c2327ec.c",
+      "address": "0x8c2327ec",
+      "entry": "_operation_193764_8c2327ec",
+      "ranges": [
+        {
+          "offset": 2238444,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193764_8c2327ec",
+          "address": "0x8c2327ec",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "78a0b4b9ffff7ecad032af4c427d1ac966213a5f53b4e8a57994dc6b6225ea54",
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c23499c",
@@ -26419,6 +28657,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_color_rise_8c23c030",
+      "source": "src/effects/destroy_color_rise_8c23c030.c",
+      "address": "0x8c23c030",
+      "entry": "_destroy_color_rise_8c23c030",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2277424,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c23c030",
+          "address": "0x8c23c030",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "dc8810bcb02f07a9e49fdd5c94768cecf956944b5d23602b136b5e435cc5d7d4",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c23c158",
       "source": "src/effects/destroy_object_8c23c158.c",
       "address": "0x8c23c158",
@@ -26495,6 +28758,31 @@
       ],
       "reference_sha256": "59482a863ecbe013b643b397f257c4af5d6c8c91f202236bb21e7825d1a314e5",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_color_rise_8c23cc70",
+      "source": "src/effects/destroy_color_rise_8c23cc70.c",
+      "address": "0x8c23cc70",
+      "entry": "_destroy_color_rise_8c23cc70",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2280560,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c23cc70",
+          "address": "0x8c23cc70",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "6f425ccc6b62049137adc371b4bf8e048950aa39aa17872c7a9d2fb1cdf09650",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c23cd64",
@@ -26625,6 +28913,31 @@
       ],
       "reference_sha256": "d0a0da539f411202278a71ffe176aa68e2efcc8024169a10114dc0b41dd91595",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_color_rise_8c23daf0",
+      "source": "src/effects/destroy_color_rise_8c23daf0.c",
+      "address": "0x8c23daf0",
+      "entry": "_destroy_color_rise_8c23daf0",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2284272,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c23daf0",
+          "address": "0x8c23daf0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "82074a00a6c860f60742904385369ab96c4a529798e9183bfae9d12e50de3d7f",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c23dbc0",
@@ -27199,6 +29512,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_color_rise_8c23fc14",
+      "source": "src/effects/destroy_color_rise_8c23fc14.c",
+      "address": "0x8c23fc14",
+      "entry": "_destroy_color_rise_8c23fc14",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2292756,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c23fc14",
+          "address": "0x8c23fc14",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "608c0f9353315185cbe09a7252a665b33d3334f806978c1acb901cebb60ed360",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c23fd18",
       "source": "src/effects/destroy_object_8c23fd18.c",
       "address": "0x8c23fd18",
@@ -27745,6 +30083,56 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_239998_8c248e3c",
+      "source": "src/objects/operation_239998_8c248e3c.c",
+      "address": "0x8c248e3c",
+      "entry": "_operation_239998_8c248e3c",
+      "ranges": [
+        {
+          "offset": 2330172,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_239998_8c248e3c",
+          "address": "0x8c248e3c",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "cbfc1a4875c197cc029aea8a4fe78b9450d75e1e31dd814b3ab477a4fda25f9e",
+      "headers": [
+        "src/include/resource_child.h",
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c248f54",
+      "source": "src/effects/destroy_color_rise_8c248f54.c",
+      "address": "0x8c248f54",
+      "entry": "_destroy_color_rise_8c248f54",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2330452,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c248f54",
+          "address": "0x8c248f54",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "7f95d9de87e5c3bdd3a0d780d335585c9f375c17279ece5cad122d2814e39e52",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c249024",
       "source": "src/effects/destroy_object_8c249024.c",
       "address": "0x8c249024",
@@ -28003,6 +30391,306 @@
       ],
       "reference_sha256": "77a051ad593d87c38fa78177724ae77bdcf3edc26103bf3e91a3445156fd5dfc",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_color_rise_8c24cf64",
+      "source": "src/effects/destroy_color_rise_8c24cf64.c",
+      "address": "0x8c24cf64",
+      "entry": "_destroy_color_rise_8c24cf64",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2346852,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24cf64",
+          "address": "0x8c24cf64",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "669bad9a375291f5329960d3f1e6619dcc603861152ac0ab507fc5fb9a400544",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c24d0b8",
+      "source": "src/effects/destroy_color_rise_8c24d0b8.c",
+      "address": "0x8c24d0b8",
+      "entry": "_destroy_color_rise_8c24d0b8",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2347192,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24d0b8",
+          "address": "0x8c24d0b8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "ed657f5ceec2203c7db451d44a52329f95495cc19bb02deca58415b35a4091fc",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c24d1c8",
+      "source": "src/effects/destroy_color_rise_8c24d1c8.c",
+      "address": "0x8c24d1c8",
+      "entry": "_destroy_color_rise_8c24d1c8",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2347464,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24d1c8",
+          "address": "0x8c24d1c8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "94de72e9f1fe3ae4f7e58daeffdfff34c2ee40a1b2896500c4567ff3474b9a42",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c24d3e4",
+      "source": "src/effects/destroy_color_rise_8c24d3e4.c",
+      "address": "0x8c24d3e4",
+      "entry": "_destroy_color_rise_8c24d3e4",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2348004,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24d3e4",
+          "address": "0x8c24d3e4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "3322f13e39606a31af0a2906caf3139a519d5fa4ee3c99f4dd36fe8a050d64c4",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c24d538",
+      "source": "src/effects/destroy_color_rise_8c24d538.c",
+      "address": "0x8c24d538",
+      "entry": "_destroy_color_rise_8c24d538",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2348344,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24d538",
+          "address": "0x8c24d538",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "f837bc54f9ee2625135e26120bad13c11c0591073d6c99ecea43056c5fca6c99",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c24d61c",
+      "source": "src/effects/destroy_color_rise_8c24d61c.c",
+      "address": "0x8c24d61c",
+      "entry": "_destroy_color_rise_8c24d61c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2348572,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24d61c",
+          "address": "0x8c24d61c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "1006ac5544c09bb8921eceb89e3cdda6ac82b2e8246a8c503ba536b026226e8f",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c24d70c",
+      "source": "src/effects/destroy_color_rise_8c24d70c.c",
+      "address": "0x8c24d70c",
+      "entry": "_destroy_color_rise_8c24d70c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2348812,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24d70c",
+          "address": "0x8c24d70c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "59aa298141af42752c36a0197fa36da376ba4c2b5c6d13a7cc7dcc02a555f285",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c24d92c",
+      "source": "src/effects/destroy_color_rise_8c24d92c.c",
+      "address": "0x8c24d92c",
+      "entry": "_destroy_color_rise_8c24d92c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2349356,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24d92c",
+          "address": "0x8c24d92c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "1c709efaa6331d1211b1114b4d8ff603a2f0eaa9c75e78e087687ae1ca5b896f",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c24da94",
+      "source": "src/effects/destroy_color_rise_8c24da94.c",
+      "address": "0x8c24da94",
+      "entry": "_destroy_color_rise_8c24da94",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2349716,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24da94",
+          "address": "0x8c24da94",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "42e69a8af4bb3409ff6ba675cab63a93a2237db5408d0857e9125c8b7acc4492",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c24db7c",
+      "source": "src/effects/destroy_color_rise_8c24db7c.c",
+      "address": "0x8c24db7c",
+      "entry": "_destroy_color_rise_8c24db7c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2349948,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24db7c",
+          "address": "0x8c24db7c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "4fd24bc757bf22b6fe7262551b30d1c7eca776a6e20d6b15c064668a586cd22d",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c24dc9c",
+      "source": "src/effects/destroy_color_rise_8c24dc9c.c",
+      "address": "0x8c24dc9c",
+      "entry": "_destroy_color_rise_8c24dc9c",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2350236,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24dc9c",
+          "address": "0x8c24dc9c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "daebfe185db512fb4f3bd85ba4feeb92919f5d5aecc6b2bd4d9454575bb98804",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c24dddc",
+      "source": "src/effects/destroy_color_rise_8c24dddc.c",
+      "address": "0x8c24dddc",
+      "entry": "_destroy_color_rise_8c24dddc",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2350556,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c24dddc",
+          "address": "0x8c24dddc",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "2517f1b02211228ddec4b342a83ff18beb166d2b8be3af8904c0c625d153ec6e",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c24dfdc",
@@ -28769,6 +31457,78 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_239734_8c250ccc",
+      "source": "src/objects/operation_239734_8c250ccc.c",
+      "address": "0x8c250ccc",
+      "entry": "_operation_239734_8c250ccc",
+      "ranges": [
+        {
+          "offset": 2362572,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_239734_8c250ccc",
+          "address": "0x8c250ccc",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "d81c51a1ef56fa0e8a0ddb170ca13015e9ead1f95428b22f9e947163013b683a",
+      "headers": [
+        "src/include/resource_owner.h"
+      ],
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "operation_23976c_8c250d04",
+      "source": "src/objects/operation_23976c_8c250d04.c",
+      "address": "0x8c250d04",
+      "entry": "_operation_23976c_8c250d04",
+      "ranges": [
+        {
+          "offset": 2362628,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_23976c_8c250d04",
+          "address": "0x8c250d04",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "586995debb49d431abe5caf7b7da0fa832ffc6908e7c0107d46fdf5573cd42ce",
+      "headers": [
+        "src/include/resource_owner.h"
+      ],
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "operation_2397f8_8c250d90",
+      "source": "src/objects/operation_2397f8_8c250d90.c",
+      "address": "0x8c250d90",
+      "entry": "_operation_2397f8_8c250d90",
+      "ranges": [
+        {
+          "offset": 2362768,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_2397f8_8c250d90",
+          "address": "0x8c250d90",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "11528139066670fdb6a397b94673878fb7427caca5b3584479a4ac0301b3018e",
+      "headers": [
+        "src/include/resource_owner.h"
+      ],
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c250ea4",
       "source": "src/effects/destroy_object_8c250ea4.c",
       "address": "0x8c250ea4",
@@ -29027,6 +31787,31 @@
       ],
       "reference_sha256": "ab337384e68f6671c8f4f5aa0ba96959514302452541979561db7a426c73bba7",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_color_rise_8c251c74",
+      "source": "src/effects/destroy_color_rise_8c251c74.c",
+      "address": "0x8c251c74",
+      "entry": "_destroy_color_rise_8c251c74",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2366580,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c251c74",
+          "address": "0x8c251c74",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "12b17f8b30f4a22460a0585f00013bbf58b945ae67ec7e595c5b4376fd3a9329",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c251d7c",
@@ -29861,6 +32646,106 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_color_rise_8c255124",
+      "source": "src/effects/destroy_color_rise_8c255124.c",
+      "address": "0x8c255124",
+      "entry": "_destroy_color_rise_8c255124",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2380068,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c255124",
+          "address": "0x8c255124",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "7ab867824820e3bafe5a8153f7ceb99f54559f79fa794f38b3fa2fbb5ac6a255",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c255534",
+      "source": "src/effects/destroy_color_rise_8c255534.c",
+      "address": "0x8c255534",
+      "entry": "_destroy_color_rise_8c255534",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2381108,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c255534",
+          "address": "0x8c255534",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "112a94300c1ee45c8a55bd5374cb7b49b22de06010b6432c3d1b72bf10bcddca",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c2558e0",
+      "source": "src/effects/destroy_color_rise_8c2558e0.c",
+      "address": "0x8c2558e0",
+      "entry": "_destroy_color_rise_8c2558e0",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2382048,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c2558e0",
+          "address": "0x8c2558e0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "821c3ef098995211ce7b2dc798a107680f53cebe67d28769a1a0ffdc7cbb13c6",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_color_rise_8c255970",
+      "source": "src/effects/destroy_color_rise_8c255970.c",
+      "address": "0x8c255970",
+      "entry": "_destroy_color_rise_8c255970",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2382192,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise_8c255970",
+          "address": "0x8c255970",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "15d95d2bd1efc97af0beb4c8cbf3412068f43650808bb7a4c0f4797fd267ad7b",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c255dac",
       "source": "src/effects/destroy_object_8c255dac.c",
       "address": "0x8c255dac",
@@ -29965,6 +32850,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_view_effect_8c256940",
+      "source": "src/effects/destroy_view_effect_8c256940.c",
+      "address": "0x8c256940",
+      "entry": "_destroy_view_effect_8c256940",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2386240,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c256940",
+          "address": "0x8c256940",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "2950e77ee485eea053f9db27cfd17b73599620d45ac1c67e19d0b27c143b30f5",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c256c38",
       "source": "src/effects/destroy_object_8c256c38.c",
       "address": "0x8c256c38",
@@ -30015,6 +32925,31 @@
       ],
       "reference_sha256": "8c5c0515ad5ccd5fe8a509b9e08599eb839187219beba7e222e6a9eb56d06620",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_view_effect_8c257f00",
+      "source": "src/effects/destroy_view_effect_8c257f00.c",
+      "address": "0x8c257f00",
+      "entry": "_destroy_view_effect_8c257f00",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2391808,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c257f00",
+          "address": "0x8c257f00",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "8f880912df27a1448adcba436b2a07a416b907b4899d20bfea34f299d871c01e",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c2580d8",
@@ -30119,6 +33054,31 @@
       ],
       "reference_sha256": "10e5f387e0f896223f0481d07f1a5746d98cb2b0b041ae6836592346bbe66d2a",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_view_effect_8c259674",
+      "source": "src/effects/destroy_view_effect_8c259674.c",
+      "address": "0x8c259674",
+      "entry": "_destroy_view_effect_8c259674",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2397812,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c259674",
+          "address": "0x8c259674",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "c5a71d9f1db04bcdd619907ee5f801ceeb2c4df674c4fbc25011021ce816af67",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c25af94",
@@ -30303,6 +33263,56 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_view_effect_8c25dde4",
+      "source": "src/effects/destroy_view_effect_8c25dde4.c",
+      "address": "0x8c25dde4",
+      "entry": "_destroy_view_effect_8c25dde4",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2416100,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c25dde4",
+          "address": "0x8c25dde4",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "6dd26fd178f4981c2ae56ba57c68c9d721b1005d694a3d5e256c95ee6155a4ba",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_view_effect_8c25de80",
+      "source": "src/effects/destroy_view_effect_8c25de80.c",
+      "address": "0x8c25de80",
+      "entry": "_destroy_view_effect_8c25de80",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2416256,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c25de80",
+          "address": "0x8c25de80",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "dbd170bd04480cc9fc50f99f388c04b3e362374fa018a61283da52fc1dabec6c",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
       "id": "destroy_object_8c25e5d8",
       "source": "src/effects/destroy_object_8c25e5d8.c",
       "address": "0x8c25e5d8",
@@ -30327,6 +33337,31 @@
       ],
       "reference_sha256": "db928f6ed2da4658f9eabf4127daf59ab049de04727c135aeeaa6b99ab99610c",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_view_effect_8c25eea8",
+      "source": "src/effects/destroy_view_effect_8c25eea8.c",
+      "address": "0x8c25eea8",
+      "entry": "_destroy_view_effect_8c25eea8",
+      "headers": [
+        "src/include/view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 2420392,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_view_effect_8c25eea8",
+          "address": "0x8c25eea8",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "2b63c972f48b4ce7dd080193df01417b129460b7d504c9954202e2b3ecd11540",
+      "symbols": {},
+      "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
       "id": "destroy_object_8c25f1d8",
