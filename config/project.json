@@ -193,6 +193,76 @@
       "boundary_review": "Raw SH4 entry 0x8c01e5e8 through 0x8c01e648 includes return delay, any alignment and all literals; next entry immediately follows. Full fixed-C/GNU comparison repeated twice; reconstruction-stage39."
     },
     {
+      "id": "lookup_low_id",
+      "source": "src/objects/lookup_low_id.c",
+      "address": "0x8c021ef8",
+      "entry": "_lookup_low_id",
+      "ranges": [
+        {
+          "offset": 73464,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "lookup_low_id",
+          "address": "0x8c021ef8",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "18b6a182161525599eb8343523ab0d8cbf3e008bea8650fff9b3cf01f515a021",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage71."
+    },
+    {
+      "id": "replace_low_id_object",
+      "source": "src/objects/replace_low_id_object.cpp",
+      "address": "0x8c021f20",
+      "entry": "_replace_low_id_object",
+      "ranges": [
+        {
+          "offset": 73504,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "replace_low_id_object",
+          "address": "0x8c021f20",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "fb9b4de8b4bb5aa474dd1c0f8c52dd22fb7f5db4d7f26ca8a95dc4f19a9754ff",
+      "language": "c++",
+      "headers": [
+        "src/include/low_id_virtual.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage71."
+    },
+    {
+      "id": "operation_021f88",
+      "source": "src/objects/operation_021f88.c",
+      "address": "0x8c021f88",
+      "entry": "_operation_021f88",
+      "ranges": [
+        {
+          "offset": 73608,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_021f88",
+          "address": "0x8c021f88",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b93e4086b705f8eb061de4cc7441aa6d7995b41219ca82521e0c86deefe451a6",
+      "headers": [
+        "src/include/transition_state.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage71."
+    },
+    {
       "id": "mask_any",
       "address": "0x8c027064",
       "source": "src/samples/mask_any.c",

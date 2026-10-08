@@ -3567,7 +3567,7 @@ square-root tail call. Vector scaling preserves the exact threshold bits
 0x3727c5ac, the strict greater-than comparison, the requested-length/root factor
 and ordered XYZ stores. It returns the original length on the scaling path and
 zero on the other path without modifying the vector. The destructor preserves
-nullable input, dispatch replacement, optional child's flag1, base destruction,
+nullable input, dispatch replacement, optional child's flag 1, base destruction,
 positive signed-short release flag and original object return. A new checked
 prefix declares only observed dispatch/child offsets and reuses the existing
 checked child-flags header; it does not establish a full allocation layout.
@@ -3618,7 +3618,7 @@ low/high before count reproduces the saved-register assignment. A locally scoped
 -1 value after the count load reproduces its shared arithmetic/comparison use;
 placing it earlier changes branch scheduling and fails. No speculative empty-table,
 capacity or ID guards are added. The checked LookupObject header describes only
-the observed ID field at offset32 and its prefix, not complete object size.
+the observed ID field at offset 32 and its prefix, not complete object size.
 
 Fresh primary emission and reuse comparisons remain **388/8 and 448/4**. Seven
 signed-byte call-prototype combinations for each current caller, full-width kind
@@ -3647,5 +3647,55 @@ changing artifacts. Focused exports are regenerated after manifest/queue changes
 on a disposable copy and checked against current inputs; the original database
 remains unchanged. Compiler, base flags, default linker and full-range rules are
 unchanged. Original primary operation remains **512/30**, manager initialization
+**280/8**, and signed remainder unresolved. The primary batch is still incomplete;
+these supporting matches do not replace its acceptance criteria.
+
+
+## Low-ID replacement and field transition, stage 71
+
+Three complete functions add **212 bytes**: low-ID lookup at **0x8c021ef8** (40),
+C++ object replacement at **0x8c021f20** (104), and field transition at
+**0x8c021f88** (68). Totals are **306 functions / 284 modules / 30,692 compiled
+full-range bytes / 4,132,220 retained reference bytes**, or **0.7373% whole-image
+coverage**. All 303 previous matches, module definitions and source/header hashes
+remain unchanged. Since the initial checkpoint, 272 functions replace 27,048
+bytes. Code-only completion remains unknown; separately reconstructed static data
+is zero.
+
+Low-ID lookup preserves its signed-int input, sentinel 0xffff and upper bound 12;
+no negative-ID guard is invented. A shared result variable reproduces the observed
+return delay slot and complete 40-byte range; direct returns generate 36 bytes and
+are rejected. Object replacement preserves the inlined lookup, both null checks,
+virtual deleting-destructor call at slot 8 with release flag 1, unchecked table
+replacement and insertion-result comparison. Declaring the derived destructor
+without defining it prevents an unrelated implicit destructor body from being
+emitted. Its actual body and virtual table remain reference-dependent. The new
+provisional C++ header checks base/prefix sizes and ID offset 32. User authorization
+permits fully matching C++; this module adds only the established -lang c++ option.
+
+The field-transition view checks all accessed offsets: optional signed short at
+0xf0, mode at 0x30a, previous mode at 0x30e, mask at 0x310 and flags at 0x350.
+Typing the flag field recovers indexed load/store addressing, and the final fully
+typed source preserves all 68 bytes. It retains the optional write, dynamic shift
+and flag 0x10, without speculative clamps or additional state changes.
+
+The related 668-byte effect update remains **668/22**, first **0x8c0c6827**.
+Capturing subsequent vector-call pointers, integer bases and an inline paired
+update leaves the bytes unchanged. Defining it as an actual C++ member worsens
+the result to 668/80. A first member trial was rejected for a helper/field name
+collision; renaming the helper fixes that compilation error but not the match.
+No partial update is admitted.
+
+All **23 trials**, including **two compiler/linker rejections**, retain source
+snapshots, hypotheses and comparisons in `reconstruction-stage71`; completed
+compilations retain compiler receipts. Final admitted sources match independently
+twice. Identifiers, source paths and intervals are checked before integration.
+Two fresh exact builds, integrated-image comparison, five-function proof and all
+**53 research tests** pass; the public suite remains **58 tests**. Source-only
+rejects 4,132,220 retained bytes without changing artifacts. Focused exports are
+regenerated after manifest/queue changes on a disposable copy and checked against
+current inputs; the original database remains unchanged. Compiler, base flags,
+default linker and full-range rules are unchanged. Original primary targets
+remain **512/30 and 388/8**, related reuse **448/4**, manager initialization
 **280/8**, and signed remainder unresolved. The primary batch is still incomplete;
 these supporting matches do not replace its acceptance criteria.
