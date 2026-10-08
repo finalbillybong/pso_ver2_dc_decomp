@@ -9072,6 +9072,116 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage69."
     },
     {
+      "id": "resolve_vector_reference",
+      "source": "src/math/resolve_vector_reference.c",
+      "address": "0x8c0c6e64",
+      "entry": "_resolve_vector_reference",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/vector_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 749156,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "resolve_vector_reference",
+          "address": "0x8c0c6e64",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "73e7552e6885f0a716e340290d520adc6f0051d74e9fbc9d6d141b2d5cde43c0",
+      "symbols": {
+        "_lookup_at": "0x8c011290"
+      },
+      "boundary_review": "Raw vector lookup and array lifecycle entries reviewed through adjacent entries, copy loop, field addressing, signed deletion flag, literals and natural alignment. Full range independently checked twice; stage128."
+    },
+    {
+      "id": "initialize_vector_array",
+      "source": "src/math/initialize_vector_array.c",
+      "address": "0x8c0c6f8c",
+      "entry": "_initialize_vector_array",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/vector_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 749452,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_vector_array",
+          "address": "0x8c0c6f8c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "d23617f1d388c0e2ce02b92dc7d8cd5d9873449d78b706391bf8a445a306a809",
+      "symbols": {
+        "_begin_at": "0x8c38ade4"
+      },
+      "boundary_review": "Raw vector lookup and array lifecycle entries reviewed through adjacent entries, copy loop, field addressing, signed deletion flag, literals and natural alignment. Full range independently checked twice; stage128."
+    },
+    {
+      "id": "allocate_vector_entries",
+      "source": "src/math/allocate_vector_entries.c",
+      "address": "0x8c0c703c",
+      "entry": "_allocate_vector_entries",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/vector_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 749628,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "allocate_vector_entries",
+          "address": "0x8c0c703c",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "b10bca689c686b4de5fe44419e243927512cc81981493cc381877bd40e646f51",
+      "symbols": {
+        "_allocate_at": "0x8c18de4c"
+      },
+      "boundary_review": "Raw vector lookup and array lifecycle entries reviewed through adjacent entries, copy loop, field addressing, signed deletion flag, literals and natural alignment. Full range independently checked twice; stage128."
+    },
+    {
+      "id": "destroy_vector_array",
+      "source": "src/math/destroy_vector_array.c",
+      "address": "0x8c0c709c",
+      "entry": "_destroy_vector_array",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/vector_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 749724,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_vector_array",
+          "address": "0x8c0c709c",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "5ffc65b229e5d021365b787be22a8fc4897c8a6f42fb4dbb7e2cd9e1abc6413e",
+      "symbols": {},
+      "boundary_review": "Raw vector lookup and array lifecycle entries reviewed through adjacent entries, copy loop, field addressing, signed deletion flag, literals and natural alignment. Full range independently checked twice; stage128."
+    },
+    {
       "id": "allocate_block",
       "source": "src/runtime/allocate_block.c",
       "address": "0x8c122700",

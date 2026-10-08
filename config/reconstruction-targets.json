@@ -14897,6 +14897,172 @@
       "boundary_review": "Raw event and factory entries reviewed through adjacent entries, signed accesses, call delays, aggregate copies, literals and natural alignment. Genuine adjacent reset/distance grouping; no inserted padding. Full checked match twice; stage127.",
       "status": "matched",
       "reason": "Complete event helper or factory, preserving observed field updates, packet contents, distance comparison and nullable allocation behavior."
+    },
+    {
+      "id": "resolve_vector_reference",
+      "source": "src/math/resolve_vector_reference.c",
+      "address": "0x8c0c6e64",
+      "entry": "_resolve_vector_reference",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/vector_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 749156,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "resolve_vector_reference",
+          "address": "0x8c0c6e64",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "73e7552e6885f0a716e340290d520adc6f0051d74e9fbc9d6d141b2d5cde43c0",
+      "symbols": {
+        "_lookup_at": "0x8c011290"
+      },
+      "boundary_review": "Raw vector lookup and array lifecycle entries reviewed through adjacent entries, copy loop, field addressing, signed deletion flag, literals and natural alignment. Full range independently checked twice; stage128.",
+      "status": "matched",
+      "reason": "Complete vector lookup or array lifecycle range; preserve observed behavior and reference-dependent callees."
+    },
+    {
+      "id": "initialize_vector_array",
+      "source": "src/math/initialize_vector_array.c",
+      "address": "0x8c0c6f8c",
+      "entry": "_initialize_vector_array",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/vector_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 749452,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_vector_array",
+          "address": "0x8c0c6f8c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "d23617f1d388c0e2ce02b92dc7d8cd5d9873449d78b706391bf8a445a306a809",
+      "symbols": {
+        "_begin_at": "0x8c38ade4"
+      },
+      "boundary_review": "Raw vector lookup and array lifecycle entries reviewed through adjacent entries, copy loop, field addressing, signed deletion flag, literals and natural alignment. Full range independently checked twice; stage128.",
+      "status": "matched",
+      "reason": "Complete vector lookup or array lifecycle range; preserve observed behavior and reference-dependent callees."
+    },
+    {
+      "id": "allocate_vector_entries",
+      "source": "src/math/allocate_vector_entries.c",
+      "address": "0x8c0c703c",
+      "entry": "_allocate_vector_entries",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/vector_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 749628,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "allocate_vector_entries",
+          "address": "0x8c0c703c",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "b10bca689c686b4de5fe44419e243927512cc81981493cc381877bd40e646f51",
+      "symbols": {
+        "_allocate_at": "0x8c18de4c"
+      },
+      "boundary_review": "Raw vector lookup and array lifecycle entries reviewed through adjacent entries, copy loop, field addressing, signed deletion flag, literals and natural alignment. Full range independently checked twice; stage128.",
+      "status": "matched",
+      "reason": "Complete vector lookup or array lifecycle range; preserve observed behavior and reference-dependent callees."
+    },
+    {
+      "id": "destroy_vector_array",
+      "source": "src/math/destroy_vector_array.c",
+      "address": "0x8c0c709c",
+      "entry": "_destroy_vector_array",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/vector_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 749724,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_vector_array",
+          "address": "0x8c0c709c",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "5ffc65b229e5d021365b787be22a8fc4897c8a6f42fb4dbb7e2cd9e1abc6413e",
+      "symbols": {},
+      "boundary_review": "Raw vector lookup and array lifecycle entries reviewed through adjacent entries, copy loop, field addressing, signed deletion flag, literals and natural alignment. Full range independently checked twice; stage128.",
+      "status": "matched",
+      "reason": "Complete vector lookup or array lifecycle range; preserve observed behavior and reference-dependent callees."
+    },
+    {
+      "id": "initialize_scaled_vector_array",
+      "source": "src/provisional/initialize_scaled_vector_array.c",
+      "address": "0x8c0c6fd8",
+      "entry": "_initialize_scaled_vector_array",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/vector_array.h"
+      ],
+      "ranges": [
+        {
+          "offset": 749528,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_scaled_vector_array",
+          "address": "0x8c0c6fd8",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "cdc7c03234e25a8626809ee86506d86767f08e946893d46bc020db3969c4f392",
+      "symbols": {
+        "_begin_at": "0x8c38ade4"
+      },
+      "status": "parked",
+      "reason": "100 bytes /4 differing; first0x8c0c7006. MOV R13,R4 and MOV zero,R6 exchange between argument setup and fill-call delay. Direct declaration and nonvirtual C++ member context repeat the same binary. Newly exact fill callee confirms int return; correcting ignored return type also produces the same binary. Persistent hypothesis count is five.",
+      "unsuccessful_distinct_hypotheses": 5,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact outgoing zero/this fill-call scheduling pattern with FR15 and three saved GPRs, or verified different call context.",
+      "comparison": {
+        "name": "initialize_scaled_vector_array-return-checked-0",
+        "size": 100,
+        "expected_size": 100,
+        "exact": false,
+        "differing_bytes": 4,
+        "first_difference": "0x8c0c7006",
+        "offsets": [
+          46,
+          47,
+          50,
+          51
+        ],
+        "source_sha256": "1e59bed064943254a183e12478097147e9ee4f45c0298cab6c84b0860960f673",
+        "compiler_receipt_sha256": "383e51b207123417cceec2085e320309f09b7034f16cfb37d19af11ef4ea7773"
+      }
     }
   ]
 }

@@ -6480,3 +6480,50 @@ Stage 126 commit 4d89db5 is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into vector-array allocation and transform helpers.
+
+
+## Vector lookup and array lifecycle, stage 128
+
+Four new exact functions replace **288 bytes** in four modules. Totals are
+**556 functions / 502 modules / 53,212 compiled bytes / 4,109,700 retained reference
+bytes**, or **1.2782% whole-image coverage**. All 552 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| resolve_vector_reference | 0x8c0c6e64 | 52 |
+| initialize_vector_array | 0x8c0c6f8c | 76 |
+| allocate_vector_entries | 0x8c0c703c | 96 |
+| destroy_vector_array | 0x8c0c709c | 64 |
+
+Checked layouts cover the lookup result, 28-byte entry and 12-byte array prefix.
+Lookup copies the vector only after a successful tagged lookup. Initialization
+preserves dispatch, allocation, matrix-context setup and fill/end order. Allocation
+initializes only the first 16 bytes of each entry; the 12-byte tail is untouched.
+Destruction releases the entries, clears their pointer and conditionally releases
+the object according to its signed-short deletion flag.
+
+Direct callee declarations fix literal ordering in lookup and initialization.
+The allocator additionally requires field-base addressing before the scaled byte
+index, recovering three observed ADD orders while preserving alias reloads. The
+destructor matches first try. Newly reconstructed recursive fillers confirm an
+integer return count; correcting the callers' ignored return declarations leaves
+all bytes unchanged. Builds and focused evidence were refreshed after this correction.
+
+Investigation-only: scaled initialization at 0x8c0c6fd8 remains 100 bytes with four
+differences, first 0x8c0c7006. Its zero/R6 and this/R4 moves trade places around the
+fill call. Declared fill calls, a nonvirtual C++ member context and the verified
+integer return type produce the same output. Five persistent hypotheses are recorded.
+It is parked pending an independently exact equivalent call schedule or verified
+different call context. No scaled-initializer bytes receive completion credit.
+
+Twenty-six snapshots form ten binary groups. Admissions match twice independently.
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,109,700 bytes
+without altering artifacts. Focused exports validate on a disposable database copy.
+The two original primary targets remain incomplete and were not reopened.
+
+Stage 127 commit 5538f64 is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into the exact recursive fillers and render-state helpers in the next batch.
