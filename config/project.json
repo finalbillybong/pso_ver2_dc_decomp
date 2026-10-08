@@ -5661,6 +5661,33 @@
       "boundary_review": "Raw view-effect virtual update and conditional mode release reviewed through adjacent entries, ticks208, vptr24/virtualslot32, all call/return delays, separate flag stores, literals and natural alignment. Full checked match twice; stage148."
     },
     {
+      "id": "invoke_view_message",
+      "source": "src/effects/invoke_view_message.c",
+      "address": "0x8c0a4360",
+      "entry": "_invoke_view_message",
+      "headers": [
+        "src/include/view_message_owner.h"
+      ],
+      "ranges": [
+        {
+          "offset": 607072,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "invoke_view_message",
+          "address": "0x8c0a4360",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "164577b14a21f4852b1807994682327a3b1349c12f77ea953d5eabea4ad70a7f",
+      "symbols": {
+        "_view_message_data": "0x8c3034f8"
+      },
+      "boundary_review": "Raw actor-context loops, mode wrappers, factory and message helper reviewed through adjacent entries, signed loop/global reload, conditional calls, stackargument, call/return delays, reference offset/counterfield, literals and natural alignment. Full checked match twice; stage149."
+    },
+    {
       "id": "initialize_view_motion_fields",
       "source": "src/effects/initialize_view_motion_fields.c",
       "address": "0x8c0a4470",
@@ -5684,6 +5711,123 @@
       "reference_sha256": "7a1c7bc28f5c33b35b1d5f7a7f71d0013c91e5fc66292a5c5c807edbc5f2c074",
       "symbols": {},
       "boundary_review": "Raw view-effect destructor, child deactivation and motion-field initializer reviewed through adjacent entries, signed/null branches, field widths, global clears, call/return delays, scalar/literal offsets and natural alignment. Full checked match twice; stage147."
+    },
+    {
+      "id": "create_effect_a460c",
+      "source": "src/effects/create_effect_a460c.c",
+      "address": "0x8c0a48c4",
+      "entry": "_create_effect_a460c",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 608452,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a460c",
+          "address": "0x8c0a48c4",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "d770eaa08b108a67a833350615e4077b58c5070eadab34767b1cde097d30b36f",
+      "symbols": {
+        "_initialize_at": "0x8c0a460c"
+      },
+      "boundary_review": "Raw actor-context loops, mode wrappers, factory and message helper reviewed through adjacent entries, signed loop/global reload, conditional calls, stackargument, call/return delays, reference offset/counterfield, literals and natural alignment. Full checked match twice; stage149."
+    },
+    {
+      "id": "visit_actor_context_a",
+      "source": "src/effects/visit_actor_context_a.c",
+      "address": "0x8c0a4a78",
+      "entry": "_visit_actor_context_a",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 608888,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "visit_actor_context_a",
+          "address": "0x8c0a4a78",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "906c83912caa8b58a19bfc11ba06b3e2d5ad71ef08a6e1329f6a1bec25b0ac80",
+      "symbols": {},
+      "boundary_review": "Raw actor-context loops, mode wrappers, factory and message helper reviewed through adjacent entries, signed loop/global reload, conditional calls, stackargument, call/return delays, reference offset/counterfield, literals and natural alignment. Full checked match twice; stage149."
+    },
+    {
+      "id": "visit_actor_context_b",
+      "source": "src/effects/visit_actor_context_b.c",
+      "address": "0x8c0a4ab0",
+      "entry": "_visit_actor_context_b",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 608944,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "visit_actor_context_b",
+          "address": "0x8c0a4ab0",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "7ddda2800fe23179d5b8d7a5abf7eb3119f7edbe91b6c5330d6139aec7e911f1",
+      "symbols": {},
+      "boundary_review": "Raw actor-context loops, mode wrappers, factory and message helper reviewed through adjacent entries, signed loop/global reload, conditional calls, stackargument, call/return delays, reference offset/counterfield, literals and natural alignment. Full checked match twice; stage149."
+    },
+    {
+      "id": "configure_render_mode_six",
+      "source": "src/effects/configure_render_mode_six.c",
+      "address": "0x8c0a4ae8",
+      "entry": "_configure_render_mode_six",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 609000,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_render_mode_six",
+          "address": "0x8c0a4ae8",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "0e334d282b71f9a02a5f835a74fed7da85624f6753fb8639d2343052ef8a0007",
+      "symbols": {},
+      "boundary_review": "Raw actor-context loops, mode wrappers, factory and message helper reviewed through adjacent entries, signed loop/global reload, conditional calls, stackargument, call/return delays, reference offset/counterfield, literals and natural alignment. Full checked match twice; stage149."
+    },
+    {
+      "id": "release_render_mode_four",
+      "source": "src/effects/release_render_mode_four.c",
+      "address": "0x8c0a4b10",
+      "entry": "_release_render_mode_four",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 609040,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_render_mode_four",
+          "address": "0x8c0a4b10",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "14dda256639a3ea10b53cd555693bb76155574dbe14778018210bf6d2331bd54",
+      "symbols": {},
+      "boundary_review": "Raw actor-context loops, mode wrappers, factory and message helper reviewed through adjacent entries, signed loop/global reload, conditional calls, stackargument, call/return delays, reference offset/counterfield, literals and natural alignment. Full checked match twice; stage149."
     },
     {
       "id": "reset_effect_table_state",

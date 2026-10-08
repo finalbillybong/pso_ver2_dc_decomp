@@ -7345,3 +7345,41 @@ exports validate using a disposable database copy.
 Stage 147 commit 5b48603 is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into actor-context loops, effect factories and view message helpers.
+
+
+## Actor-context loops and effect wrappers, stage 149
+
+Six complete matches replace **284 bytes**. Totals are **653 functions / 595
+modules / 60,436 compiled bytes / 4,102,476 retained reference bytes / 1.4518%
+whole-image coverage**. All 647 prior matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| invoke_view_message | 0x8c0a4360 | 44 |
+| create_effect_a460c | 0x8c0a48c4 | 76 |
+| visit_actor_context_a | 0x8c0a4a78 | 56 |
+| visit_actor_context_b | 0x8c0a4ab0 | 56 |
+| configure_render_mode_six | 0x8c0a4ae8 | 40 |
+| release_render_mode_four | 0x8c0a4b10 | 12 |
+
+The actor loops retain signed indexing, reload the global limit each iteration
+and invoke distinct callbacks only for non-null lookups. The mode wrapper saves
+two incoming register arguments across its mode-six call; the release wrapper
+is the observed tail call. Their provisional names do not assert original APIs.
+
+The factory preserves three incoming arguments across a 68-byte allocation and
+passes the resource as the initializer's fifth, stack argument. Declaring the
+initializer removes an early callee-address lifetime and fixes all 15 differing
+bytes. The message helper passes the referenced data base plus 390 and literal
+16, then decrements owner field 60. The data contents remain reference-dependent.
+
+Nineteen snapshots form seven binary groups. Every final admission independently
+reproduces twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,102,476 bytes while preserving artifacts. Focused exports validate using a
+disposable database copy. No parked target was reopened.
+
+Stage 148 commit 22f408a is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into adjacent destruction, angle/vector adjustment and scalar helpers.
