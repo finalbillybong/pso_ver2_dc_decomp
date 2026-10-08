@@ -6092,3 +6092,46 @@ source-only rejection. Continue into remaining transform wrappers and helpers.
 Stage 118 scanner review: track_keys.h adds a third verified source-hash false
 positive in progress-proof.json. Only that exact digest is excepted; default rules
 and the fresh synthetic credential detection control remain effective.
+
+
+## Draw wrappers and blended tree traversal, stage 119
+
+Eight new exact functions replace **320 bytes** in eight modules. Totals are
+**518 functions / 466 modules / 50,132 compiled bytes / 4,112,780 retained reference
+bytes**, or **1.2043% whole-image coverage**. All 510 preceding matches and prior
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| draw_tree_9436 | 0x8c0c3924 | 16 |
+| draw_blended_tree_9436 | 0x8c0c3934 | 16 |
+| draw_blended_tree_a702 | 0x8c0c3944 | 16 |
+| draw_blended_tree_b44a | 0x8c0c3954 | 16 |
+| draw_tree_a702 | 0x8c0c3964 | 16 |
+| draw_blended_transform_tree | 0x8c0c43d8 | 48 |
+| visit_blended_transform_tree | 0x8c0c4408 | 180 |
+| forward_prepare_transform_tree | 0x8c0c44bc | 12 |
+
+The existing checked node/dispatch layout supports the second traversal without
+changes. Its ordinary recursive C preserves matrix push/apply/pop, optional node
+callbacks, resource/flag checks and child/sibling order, including one inlined level.
+The draw entry selects its prepare/apply path and installs the requested callback.
+Small wrappers retain original input/float forwarding and fixed callback addresses.
+Names remain provisional; callback identity follows the referenced entry address.
+
+The five 16-byte draw wrappers initially differ by eight bytes: a literal callee
+expression reverses argument/callee load order and their literals. Declared external
+callees recover each complete range. The other three first candidates are exact.
+Twenty-nine snapshots form thirteen binary groups. Each final source matches twice.
+
+Two fresh exact builds per checkout, exact integrated image, five-function proof,
+53 research tests and 58 public tests pass. Source-only rejects 4,112,780 bytes
+without altering artifacts. Focused exports validate on a disposable database copy.
+No parked target is reopened and no investigation-only bytes are credited.
+
+Stage 118 commit 3152dde is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work are preserved. Reviewed public
+changes receive privacy scans before publication; research remains uncommitted.
+
+Reproduce with `python3 -B tools/verify_source.py`, the current test suite and expected
+source-only rejection. Continue into the blended transform preparation dependencies.

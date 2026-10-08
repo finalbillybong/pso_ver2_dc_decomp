@@ -12839,6 +12839,240 @@
         "source_sha256": "9e8c756ca18e2982cd926932b3d24c1a22aec9a2f344c16ab13036ae71289af5",
         "compiler_receipt_sha256": "02c33a83036d1c653ccb9f8b89159f1d688dbf57697c31bb05ce320e9be230ad"
       }
+    },
+    {
+      "id": "draw_tree_9436",
+      "source": "src/math/draw_tree_9436.c",
+      "address": "0x8c0c3924",
+      "entry": "_draw_tree_9436",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 735524,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_tree_9436",
+          "address": "0x8c0c3924",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "f9f3931b345984793ef01197064d00ed015b3b5f36c8fefb0600d4758d6934dc",
+      "symbols": {
+        "_draw_at": "0x8c0c4760"
+      },
+      "boundary_review": "Raw draw wrappers0x8c0c3924..3974 and blended tree0x8c0c43d8..44c8 reviewed including tail-call literals, inlined recursion and natural alignment. Complete source exact twice; stage119.",
+      "status": "matched",
+      "reason": "Complete draw forwarding or blended traversal; recursive C supplies observed inlining. Existing checked node and dispatch dependencies preserved."
+    },
+    {
+      "id": "draw_blended_tree_9436",
+      "source": "src/math/draw_blended_tree_9436.c",
+      "address": "0x8c0c3934",
+      "entry": "_draw_blended_tree_9436",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 735540,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_blended_tree_9436",
+          "address": "0x8c0c3934",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "83d93ea03eb0aa0069c766444f77de5aa94ebda1edfe16052ad716d4d7b975a6",
+      "symbols": {
+        "_draw_at": "0x8c0c43d8"
+      },
+      "boundary_review": "Raw draw wrappers0x8c0c3924..3974 and blended tree0x8c0c43d8..44c8 reviewed including tail-call literals, inlined recursion and natural alignment. Complete source exact twice; stage119.",
+      "status": "matched",
+      "reason": "Complete draw forwarding or blended traversal; recursive C supplies observed inlining. Existing checked node and dispatch dependencies preserved."
+    },
+    {
+      "id": "draw_blended_tree_a702",
+      "source": "src/math/draw_blended_tree_a702.c",
+      "address": "0x8c0c3944",
+      "entry": "_draw_blended_tree_a702",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 735556,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_blended_tree_a702",
+          "address": "0x8c0c3944",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "4cfcc30c80f8a64929e2b09262f816c235eb59ea6a0fa8d28d012ffc02aa7207",
+      "symbols": {
+        "_draw_at": "0x8c0c43d8"
+      },
+      "boundary_review": "Raw draw wrappers0x8c0c3924..3974 and blended tree0x8c0c43d8..44c8 reviewed including tail-call literals, inlined recursion and natural alignment. Complete source exact twice; stage119.",
+      "status": "matched",
+      "reason": "Complete draw forwarding or blended traversal; recursive C supplies observed inlining. Existing checked node and dispatch dependencies preserved."
+    },
+    {
+      "id": "draw_blended_tree_b44a",
+      "source": "src/math/draw_blended_tree_b44a.c",
+      "address": "0x8c0c3954",
+      "entry": "_draw_blended_tree_b44a",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 735572,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_blended_tree_b44a",
+          "address": "0x8c0c3954",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "f7b39245ecd49c834c4a0171fcfb03080034d54da3e3c89e093bca9865bcb010",
+      "symbols": {
+        "_draw_at": "0x8c0c43d8"
+      },
+      "boundary_review": "Raw draw wrappers0x8c0c3924..3974 and blended tree0x8c0c43d8..44c8 reviewed including tail-call literals, inlined recursion and natural alignment. Complete source exact twice; stage119.",
+      "status": "matched",
+      "reason": "Complete draw forwarding or blended traversal; recursive C supplies observed inlining. Existing checked node and dispatch dependencies preserved."
+    },
+    {
+      "id": "draw_tree_a702",
+      "source": "src/math/draw_tree_a702.c",
+      "address": "0x8c0c3964",
+      "entry": "_draw_tree_a702",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 735588,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_tree_a702",
+          "address": "0x8c0c3964",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "b8e52e71f3809fe8f4d8c8069748b07500420d3913146e44eed4b79cbfb96971",
+      "symbols": {
+        "_draw_at": "0x8c0c4760"
+      },
+      "boundary_review": "Raw draw wrappers0x8c0c3924..3974 and blended tree0x8c0c43d8..44c8 reviewed including tail-call literals, inlined recursion and natural alignment. Complete source exact twice; stage119.",
+      "status": "matched",
+      "reason": "Complete draw forwarding or blended traversal; recursive C supplies observed inlining. Existing checked node and dispatch dependencies preserved."
+    },
+    {
+      "id": "draw_blended_transform_tree",
+      "source": "src/math/draw_blended_transform_tree.c",
+      "address": "0x8c0c43d8",
+      "entry": "_draw_blended_transform_tree",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 738264,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_blended_transform_tree",
+          "address": "0x8c0c43d8",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "7b3bc37a51fc482a9ec7fcd8c9b577bee223ea9a8801cb67f814c3c1e2278c93",
+      "symbols": {},
+      "boundary_review": "Raw draw wrappers0x8c0c3924..3974 and blended tree0x8c0c43d8..44c8 reviewed including tail-call literals, inlined recursion and natural alignment. Complete source exact twice; stage119.",
+      "status": "matched",
+      "reason": "Complete draw forwarding or blended traversal; recursive C supplies observed inlining. Existing checked node and dispatch dependencies preserved."
+    },
+    {
+      "id": "visit_blended_transform_tree",
+      "source": "src/math/visit_blended_transform_tree.c",
+      "address": "0x8c0c4408",
+      "entry": "_visit_blended_transform_tree",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 738312,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "visit_blended_transform_tree",
+          "address": "0x8c0c4408",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "91eafa4baeafd5a9b679c17e015994cc82faa06368ce14c032006ee72340430c",
+      "symbols": {},
+      "boundary_review": "Raw draw wrappers0x8c0c3924..3974 and blended tree0x8c0c43d8..44c8 reviewed including tail-call literals, inlined recursion and natural alignment. Complete source exact twice; stage119.",
+      "status": "matched",
+      "reason": "Complete draw forwarding or blended traversal; recursive C supplies observed inlining. Existing checked node and dispatch dependencies preserved."
+    },
+    {
+      "id": "forward_prepare_transform_tree",
+      "source": "src/math/forward_prepare_transform_tree.c",
+      "address": "0x8c0c44bc",
+      "entry": "_forward_prepare_transform_tree",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 738492,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_prepare_transform_tree",
+          "address": "0x8c0c44bc",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "19c0ceab6644842969a4f8bcac721b36cca94307940ac50fb54b1fda08e013ef",
+      "symbols": {},
+      "boundary_review": "Raw draw wrappers0x8c0c3924..3974 and blended tree0x8c0c43d8..44c8 reviewed including tail-call literals, inlined recursion and natural alignment. Complete source exact twice; stage119.",
+      "status": "matched",
+      "reason": "Complete draw forwarding or blended traversal; recursive C supplies observed inlining. Existing checked node and dispatch dependencies preserved."
     }
   ]
 }
