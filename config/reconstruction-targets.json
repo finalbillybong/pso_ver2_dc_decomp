@@ -51638,6 +51638,1679 @@
       "boundary_review": "Independent catalog or recorded code-pointer entry; identical complete instruction/branch/delay shape and literal layout, with catalog/referenced or reviewed adjacent entry prologue. Only observed float22 to20 constant changes; all checked source/destination vector offsets unchanged.",
       "status": "matched",
       "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "choose_object_action_8c10d790",
+      "source": "src/provisional/choose_object_action_8c10d790.c",
+      "address": "0x8c10d790",
+      "entry": "_choose_object_action_8c10d790",
+      "headers": [],
+      "symbols": {
+        "_get_effect_template": "0x8c0adc1c"
+      },
+      "ranges": [
+        {
+          "offset": 1038224,
+          "size": 452
+        }
+      ],
+      "functions": [
+        {
+          "name": "choose_object_action_8c10d790",
+          "address": "0x8c10d790",
+          "size": 452
+        }
+      ],
+      "reference_sha256": "6c10377d6cefed6f05ed97142356bfe3c660899afee85081a07742336c50336a",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch172: Full452 bytes,33 differing; first0x8c10d881. Owner flag snapshot and reused selection lifetime fix size/registers, but remaining actor/cost/maximum pointer scheduling differs. Revisit only independent exact same action-cost context or verified source lifetime evidence."
+    },
+    {
+      "id": "read_clamped_level",
+      "source": "src/provisional/read_clamped_level.c",
+      "address": "0x8c247730",
+      "entry": "_read_clamped_level",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2324272,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "read_clamped_level",
+          "address": "0x8c247730",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "e99d605b2504589eff6895771970c10f421b6e24fcae1260fec16d286c866b68",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch172: Generated56 of72 bytes,66 differing; first0x8c247734. Direct and inline predicates collapse two materialized range booleans into branch chains; identical outputs. Revisit only independently demonstrated boolean-materialization compiler/source context."
+    },
+    {
+      "id": "load_paired_resource",
+      "source": "src/provisional/load_paired_resource.c",
+      "address": "0x8c104ff8",
+      "entry": "_load_paired_resource",
+      "headers": [],
+      "symbols": {
+        "_read_at": "0x8c1050d8",
+        "_allocate_at": "0x8c122700",
+        "_base_at": "0x8c0330e4",
+        "_clear_at": "0x8c12b880",
+        "_copy_name_at": "0x8c12b154",
+        "_relocate_at": "0x8c104e3c",
+        "_free_at": "0x8c011ec0",
+        "_format_at": "0x8c12b048",
+        "_resource_formats": "0x8c30b61c"
+      },
+      "ranges": [
+        {
+          "offset": 1003512,
+          "size": 224
+        }
+      ],
+      "functions": [
+        {
+          "name": "load_paired_resource",
+          "address": "0x8c104ff8",
+          "size": 224
+        }
+      ],
+      "reference_sha256": "8182d2548a0375056b7e61c01bd8a91586dea76065d7caa645d479fa9f8ed0dd",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch172: Full224 bytes,18 differing; first0x8c105042. Three call-site scheduling differences remain; declared calls and literal function expressions produce identical output. Revisit only demonstrated same allocation/copy/relocation scheduling context."
+    },
+    {
+      "id": "decode_allocated_resource",
+      "source": "src/provisional/decode_allocated_resource.c",
+      "address": "0x8c105230",
+      "entry": "_decode_allocated_resource",
+      "headers": [
+        "src/include/random_state.h"
+      ],
+      "symbols": {
+        "_construct_at": "0x8c037d5c",
+        "_seed_at": "0x8c037d8c",
+        "_decode_at": "0x8c037eb8",
+        "_expand_at": "0x8c0787cc",
+        "_allocate_at": "0x8c011e9c"
+      },
+      "ranges": [
+        {
+          "offset": 1004080,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "decode_allocated_resource",
+          "address": "0x8c105230",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "dc4ade1dfbeb73c24b6992f062dd6c919ab7a948f79154518352092695c5c4b9",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch172: Full132 bytes,4 differing; first0x8c10526c. Length ADD-8 and payload MOV order reversed. Separate length statement and byte-pointer form produce identical output. Revisit only independently exact same decode argument scheduling context."
+    },
+    {
+      "id": "decode_resource_into",
+      "source": "src/provisional/decode_resource_into.c",
+      "address": "0x8c1052b4",
+      "entry": "_decode_resource_into",
+      "headers": [
+        "src/include/random_state.h"
+      ],
+      "symbols": {
+        "_construct_at": "0x8c037d5c",
+        "_seed_at": "0x8c037d8c",
+        "_decode_at": "0x8c037eb8",
+        "_expand_at": "0x8c0787cc"
+      },
+      "ranges": [
+        {
+          "offset": 1004212,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "decode_resource_into",
+          "address": "0x8c1052b4",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "7798e346017df53d46f66645594be46b995329a7ae1f9a7285ac2eab6437d946",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch172: Full108 bytes,4 differing; first0x8c1052e6. Length ADD-8 and payload MOV order reversed. Separate length statement and byte-pointer form produce identical output. Revisit only independently exact same decode argument scheduling context."
+    },
+    {
+      "id": "destroy_context_8c03c454",
+      "source": "src/objects/destroy_context_8c03c454.c",
+      "address": "0x8c03c454",
+      "entry": "_destroy_context_8c03c454",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 181332,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c03c454",
+          "address": "0x8c03c454",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "5ca44c5b8e8f38cc289500e9d79a4365317d666c1b23f24c47c92dd2fe06fce3",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefix0dd4224f0dd00b40. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c03f2e8",
+      "source": "src/objects/destroy_context_8c03f2e8.c",
+      "address": "0x8c03f2e8",
+      "entry": "_destroy_context_8c03f2e8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 193256,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c03f2e8",
+          "address": "0x8c03f2e8",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "d18ebff84e44a4bbc123b80a7cfa46c18dd91b61a9614a6c2fbf96b82a260697",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436e1ed0. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c04fee4",
+      "source": "src/objects/destroy_context_8c04fee4.c",
+      "address": "0x8c04fee4",
+      "entry": "_destroy_context_8c04fee4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 261860,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c04fee4",
+          "address": "0x8c04fee4",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "0b9ad54a558ee9ff5ab40b7c731e9e20e028c3d6d1b34b2fd3ed3de2d739aa77",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f3bd0224f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c0a127c",
+      "source": "src/objects/destroy_context_8c0a127c.c",
+      "address": "0x8c0a127c",
+      "entry": "_destroy_context_8c0a127c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 594556,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c0a127c",
+          "address": "0x8c0a127c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "6efebbeb7cd7e19f3bf32c4b1fed7286ff07abc5a4cae83472400aded73a1338",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefix01d02b4009000000. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c0a47dc",
+      "source": "src/objects/destroy_context_8c0a47dc.c",
+      "address": "0x8c0a47dc",
+      "entry": "_destroy_context_8c0a47dc",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 608220,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c0a47dc",
+          "address": "0x8c0a47dc",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "35370fc62658b32a234d41bd90833e0c4741bc8731d7d05b95b2876af798cf05",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f436e224f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c0e9c78",
+      "source": "src/objects/destroy_context_8c0e9c78.c",
+      "address": "0x8c0e9c78",
+      "entry": "_destroy_context_8c0e9c78",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 892024,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c0e9c78",
+          "address": "0x8c0e9c78",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "4bd17983f704f185abffc73202e813a1caa2485d99d8896e41182a3d08b735c6",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436ee850. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c0f7db4",
+      "source": "src/objects/destroy_context_8c0f7db4.c",
+      "address": "0x8c0f7db4",
+      "entry": "_destroy_context_8c0f7db4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 949684,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c0f7db4",
+          "address": "0x8c0f7db4",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "b9a307830fb6fb3e7a46fe47c05d28374a86b8fe1359a2959c469bdaec7d30b4",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefix01d02b4009000000. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c0fb0d0",
+      "source": "src/objects/destroy_context_8c0fb0d0.c",
+      "address": "0x8c0fb0d0",
+      "entry": "_destroy_context_8c0fb0d0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 962768,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c0fb0d0",
+          "address": "0x8c0fb0d0",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "492327f2e05165b0e38ef04ff39e696aa28eaf172d65c8e28f7a45a8d2ee2fa1",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62fc62f536d. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c11208c",
+      "source": "src/objects/destroy_context_8c11208c.c",
+      "address": "0x8c11208c",
+      "entry": "_destroy_context_8c11208c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1056908,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c11208c",
+          "address": "0x8c11208c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "1b97cd4adbdeaec55056edae5959fe798336e8e974abb5c8c03c4544729dcb31",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224fe87f436e. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c127918",
+      "source": "src/objects/destroy_context_8c127918.c",
+      "address": "0x8c127918",
+      "entry": "_destroy_context_8c127918",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1145112,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c127918",
+          "address": "0x8c127918",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "8f14b8233a10650323705bbb07e7add3103f601ed3ff8fe828faa1f61721ede0",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62fc62f224f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c13c24c",
+      "source": "src/objects/destroy_context_8c13c24c.c",
+      "address": "0x8c13c24c",
+      "entry": "_destroy_context_8c13c24c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1229388,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c13c24c",
+          "address": "0x8c13c24c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "59806890b5b5a2c2eb9a0df07390171d229c3a8dd8d11ee13b13d578df0f7cea",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f224ffc7f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c140270",
+      "source": "src/objects/destroy_context_8c140270.c",
+      "address": "0x8c140270",
+      "entry": "_destroy_context_8c140270",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1245808,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c140270",
+          "address": "0x8c140270",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "4f1a11648e42b085c03d563ce74075a7d875c9fe698fcc28b804309b138381b0",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f224f4360. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c1505b0",
+      "source": "src/objects/destroy_context_8c1505b0.c",
+      "address": "0x8c1505b0",
+      "entry": "_destroy_context_8c1505b0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1312176,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c1505b0",
+          "address": "0x8c1505b0",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "2ad39e90419d4bba730dd692d9b79c60b790b24f46cffa08aa0af7de2680778c",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f224ffc7f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c15107c",
+      "source": "src/objects/destroy_context_8c15107c.c",
+      "address": "0x8c15107c",
+      "entry": "_destroy_context_8c15107c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1314940,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c15107c",
+          "address": "0x8c15107c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "43913a17b999d362deba2e77fc20848bfebcc7a4a9354d37a355378e55a73da2",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f436e224f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c15a9dc",
+      "source": "src/objects/destroy_context_8c15a9dc.c",
+      "address": "0x8c15a9dc",
+      "entry": "_destroy_context_8c15a9dc",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1354204,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c15a9dc",
+          "address": "0x8c15a9dc",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "73c066f7f7cf5b05a8ee5c800c6d7314ff9813d4b52493caa82c65dd90c07bf4",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f0ed00ed7026e. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c1658c4",
+      "source": "src/objects/destroy_context_8c1658c4.c",
+      "address": "0x8c1658c4",
+      "entry": "_destroy_context_8c1658c4",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1398980,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c1658c4",
+          "address": "0x8c1658c4",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "954e351df31c37abba4b436a688184c9f89418a3e578ce11651e8021f3029a61",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436e28d0. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c174a10",
+      "source": "src/objects/destroy_context_8c174a10.c",
+      "address": "0x8c174a10",
+      "entry": "_destroy_context_8c174a10",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1460752,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c174a10",
+          "address": "0x8c174a10",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "61152046a46b49b8c3041c812a46d3c24af4331888cc78d49dcb7edd454c6e0f",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436e2cd0. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c174ed0",
+      "source": "src/objects/destroy_context_8c174ed0.c",
+      "address": "0x8c174ed0",
+      "entry": "_destroy_context_8c174ed0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1461968,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c174ed0",
+          "address": "0x8c174ed0",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "4b681e3e90d12ece1ed506f1aab8a494be4abd49e7aa906aac82722a0b860d1d",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436e29d0. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c191b38",
+      "source": "src/objects/destroy_context_8c191b38.c",
+      "address": "0x8c191b38",
+      "entry": "_destroy_context_8c191b38",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1579832,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c191b38",
+          "address": "0x8c191b38",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "fcd94b0182e8adbd4c1dc98fb73c7f7886f15925fe333bbad6ccdfe893db740d",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62fc62f224f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c198f08",
+      "source": "src/objects/destroy_context_8c198f08.c",
+      "address": "0x8c198f08",
+      "entry": "_destroy_context_8c198f08",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1609480,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c198f08",
+          "address": "0x8c198f08",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "5e44644afb311220966df7430529c546af2ac8ea56eb1aaabde5f7e8df51c456",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436eed50. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c1d57d0",
+      "source": "src/objects/destroy_context_8c1d57d0.c",
+      "address": "0x8c1d57d0",
+      "entry": "_destroy_context_8c1d57d0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1857488,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c1d57d0",
+          "address": "0x8c1d57d0",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "de21d22339653ecd44878c75f1f31ef8170195cdf9d5040ee2d024d0ea26df53",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefix0ad4224f4a5002c9. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c21108c",
+      "source": "src/objects/destroy_context_8c21108c.c",
+      "address": "0x8c21108c",
+      "entry": "_destroy_context_8c21108c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2101388,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c21108c",
+          "address": "0x8c21108c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "fbaf8e1a465f99f31710a27f7f09e6c5817c31fed9919742978d71a8c997e413",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62fc62f436d. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c215cdc",
+      "source": "src/objects/destroy_context_8c215cdc.c",
+      "address": "0x8c215cdc",
+      "entry": "_destroy_context_8c215cdc",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2120924,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c215cdc",
+          "address": "0x8c215cdc",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "76992028f833e5a3de0a733890463cfd46a01268ad098684b413687657d167e2",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefix70740b0042600000. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c21e478",
+      "source": "src/objects/destroy_context_8c21e478.c",
+      "address": "0x8c21e478",
+      "entry": "_destroy_context_8c21e478",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2155640,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c21e478",
+          "address": "0x8c21e478",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "d069bf446e6e59e4cabc6b82ee64866b7a902fffcd1e057d0933bc9c05861484",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436ee360. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c2248d0",
+      "source": "src/objects/destroy_context_8c2248d0.c",
+      "address": "0x8c2248d0",
+      "entry": "_destroy_context_8c2248d0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2181328,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c2248d0",
+          "address": "0x8c2248d0",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "4a522fb73a55b6ef0a02dcbd3f8d3b79ceeee8c08ad2c4c77fab1e8d08551c24",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436eed50. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c22b6d0",
+      "source": "src/objects/destroy_context_8c22b6d0.c",
+      "address": "0x8c22b6d0",
+      "entry": "_destroy_context_8c22b6d0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2209488,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c22b6d0",
+          "address": "0x8c22b6d0",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "0e5a662c96ca15ac985ca961ff9ca5232fbe3d195d14b91d97f3ac50f747ad59",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefix0bd043619df00c31. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c250714",
+      "source": "src/objects/destroy_context_8c250714.c",
+      "address": "0x8c250714",
+      "entry": "_destroy_context_8c250714",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2361108,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c250714",
+          "address": "0x8c250714",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "57195bd25206cb876e5fad9be6c40d2c352f6779f40da327a365b4792ae0511e",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436e08d0. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c051f28",
+      "source": "src/objects/destroy_context_8c051f28.c",
+      "address": "0x8c051f28",
+      "entry": "_destroy_context_8c051f28",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 270120,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c051f28",
+          "address": "0x8c051f28",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "8e4f4a54d955a901cfc25b4c9633485a2d662fcb80a302a2960e20e370e0a938",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefix08d600e508d4224f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c084258",
+      "source": "src/objects/destroy_context_8c084258.c",
+      "address": "0x8c084258",
+      "entry": "_destroy_context_8c084258",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 475736,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c084258",
+          "address": "0x8c084258",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "5ed149afe46ed1ef1eed638b048c91b22246a65a1b1d8a1d814779eb9a54c5ba",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f536e224f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c0b9ce8",
+      "source": "src/objects/destroy_context_8c0b9ce8.c",
+      "address": "0x8c0b9ce8",
+      "entry": "_destroy_context_8c0b9ce8",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 695528,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c0b9ce8",
+          "address": "0x8c0b9ce8",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "dea70d5075bd154b357cd5cabc4c5be692029966745cd000f8d86569799c3a53",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436e04d0. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c0bbb98",
+      "source": "src/objects/destroy_context_8c0bbb98.c",
+      "address": "0x8c0bbb98",
+      "entry": "_destroy_context_8c0bbb98",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 703384,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c0bbb98",
+          "address": "0x8c0bbb98",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "ddab3a80c9de2b9c6672f9982462be8f21199c5e196483baf9bdb8e29349ecc7",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62fc62fb62f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c0db244",
+      "source": "src/objects/destroy_context_8c0db244.c",
+      "address": "0x8c0db244",
+      "entry": "_destroy_context_8c0db244",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 832068,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c0db244",
+          "address": "0x8c0db244",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "432f9bfe2a8824aff84726f8c48c8e9a660d76f5f21b97b6088c4cb42faa7dab",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436e07d0. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c0f34a0",
+      "source": "src/objects/destroy_context_8c0f34a0.c",
+      "address": "0x8c0f34a0",
+      "entry": "_destroy_context_8c0f34a0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 930976,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c0f34a0",
+          "address": "0x8c0f34a0",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "80dab41df87d6a760a1be88db05104513ed0165fc76664d79a9e89fc5125e3bf",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefix04d02ce356044e00. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c11dc84",
+      "source": "src/objects/destroy_context_8c11dc84.c",
+      "address": "0x8c11dc84",
+      "entry": "_destroy_context_8c11dc84",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1105028,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c11dc84",
+          "address": "0x8c11dc84",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "97f56462ea6be0a8aa42c4ea8068532fef5133a967d4463bc57de47f890936b8",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62fc62fb62f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c120328",
+      "source": "src/objects/destroy_context_8c120328.c",
+      "address": "0x8c120328",
+      "entry": "_destroy_context_8c120328",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1114920,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c120328",
+          "address": "0x8c120328",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "8076f16b297c01b5886eed6f15f107e314209db0ceaa606fbe7abc9f4d558c43",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f436e224f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c13e8ac",
+      "source": "src/objects/destroy_context_8c13e8ac.c",
+      "address": "0x8c13e8ac",
+      "entry": "_destroy_context_8c13e8ac",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1239212,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c13e8ac",
+          "address": "0x8c13e8ac",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "6480573a72bb1511b0aaff75be3121dda5afd442ccf47212efa7f2cc2620f0f6",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62fc62f436d. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c1ccd60",
+      "source": "src/objects/destroy_context_8c1ccd60.c",
+      "address": "0x8c1ccd60",
+      "entry": "_destroy_context_8c1ccd60",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1822048,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c1ccd60",
+          "address": "0x8c1ccd60",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "010c34d4a2bd078749ad55fa2fd884beb6e1c85f8486148378d637d87dfa8930",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f436e224f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_context_8c1dbd44",
+      "source": "src/objects/destroy_context_8c1dbd44.c",
+      "address": "0x8c1dbd44",
+      "entry": "_destroy_context_8c1dbd44",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1883460,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_8c1dbd44",
+          "address": "0x8c1dbd44",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "c0f4f199835476baf0cf843dad1f079170bf91fcd0590a58a1c42910d2f9e847",
+      "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f436e224f. No empty neighboring function included.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "load_global_resource_8c21edc8",
+      "source": "src/resources/load_global_resource_8c21edc8.c",
+      "address": "0x8c21edc8",
+      "entry": "_load_global_resource_8c21edc8",
+      "headers": [],
+      "symbols": {
+        "_load_at": "0x8c104f68"
+      },
+      "ranges": [
+        {
+          "offset": 2158024,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "load_global_resource_8c21edc8",
+          "address": "0x8c21edc8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "53e90ce8707dd633679309c886db6af164fc1725839128fc5811ff81468303ff",
+      "boundary_review": "Recorded code reference establishes entry; identical complete wrapper layout and independent adjacent entry. Callee exact source establishes const-char pointer argument and pointer return.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "load_global_resource_8c2327cc",
+      "source": "src/resources/load_global_resource_8c2327cc.c",
+      "address": "0x8c2327cc",
+      "entry": "_load_global_resource_8c2327cc",
+      "headers": [],
+      "symbols": {
+        "_load_at": "0x8c104f68"
+      },
+      "ranges": [
+        {
+          "offset": 2238412,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "load_global_resource_8c2327cc",
+          "address": "0x8c2327cc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "24f8943806aec110ffd78a08667144856d49f6574ac08ef5fe73dbf2e26f3611",
+      "boundary_review": "Recorded code reference establishes entry; identical complete wrapper layout and independent adjacent entry. Callee exact source establishes const-char pointer argument and pointer return.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "load_named_resource",
+      "source": "src/resources/load_named_resource.c",
+      "address": "0x8c104f68",
+      "entry": "_load_named_resource",
+      "headers": [],
+      "symbols": {
+        "_read_at": "0x8c1050d8",
+        "_allocate_at": "0x8c122700",
+        "_base_at": "0x8c0330e4",
+        "_clear_at": "0x8c12b880",
+        "_copy_name_at": "0x8c12b154",
+        "_relocate_at": "0x8c104e00"
+      },
+      "ranges": [
+        {
+          "offset": 1003368,
+          "size": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "load_named_resource",
+          "address": "0x8c104f68",
+          "size": 144
+        }
+      ],
+      "reference_sha256": "251f935b9423d575b19f9e5457a9b00dafb678b88df124e8c0f2209b2c56111f",
+      "boundary_review": "Raw full entry through return delay and complete referenced pool; immediately adjacent independent saved-register prologue at0x8c104ff8. Catalog confirms entry; no speculative zero checks or padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "relocate_resource_header",
+      "source": "src/resources/relocate_resource_header.c",
+      "address": "0x8c104e3c",
+      "entry": "_relocate_resource_header",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1003068,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "relocate_resource_header",
+          "address": "0x8c104e3c",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "153028524ec6f957d95dd39b4af42b150d576588fc7f9a901738c7c9528b1ad7",
+      "boundary_review": "Raw full entry through return delay and complete referenced pool; immediately adjacent independent saved-register prologue at0x8c104e70. Catalog confirms entry; no speculative zero checks or padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "relocate_resource_trailer",
+      "source": "src/resources/relocate_resource_trailer.c",
+      "address": "0x8c104e00",
+      "entry": "_relocate_resource_trailer",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1003008,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "relocate_resource_trailer",
+          "address": "0x8c104e00",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "46f0ea759423ab00e6675b0a2b0d7e86b3d158d787e057f8793c178df077fcdb",
+      "boundary_review": "Raw full entry through return delay and complete referenced pool; immediately adjacent independent saved-register prologue at0x8c104e3c. Catalog confirms entry; no speculative zero checks or padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "check_resource_table_lengths",
+      "source": "src/resources/check_resource_table_lengths.c",
+      "address": "0x8c0e9b04",
+      "entry": "_check_resource_table_lengths",
+      "headers": [],
+      "symbols": {
+        "_open_at": "0x8c36a7b2",
+        "_length_at": "0x8c369f08",
+        "_close_at": "0x8c369ed0"
+      },
+      "ranges": [
+        {
+          "offset": 891652,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "check_resource_table_lengths",
+          "address": "0x8c0e9b04",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "6c8d3a243a45b9a10a401464da48e9e15885a463fae102af020bd9acae933504",
+      "boundary_review": "Raw entry0x8c0e9b04 through RTS-delay9b7a plus three callee words9b7c..9b88; independent next prologue9b88. No shortened pool or padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_virtual_context_8c010edc",
+      "source": "src/objects/destroy_virtual_context_8c010edc.cpp",
+      "language": "c++",
+      "address": "0x8c010edc",
+      "entry": "_destroy_virtual_context_8c010edc",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 3804,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_virtual_context_8c010edc",
+          "address": "0x8c010edc",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "1c3d4c587fd311c3245ea60c49a2230c7e621fd43ed95aa2809da8d7f7e3dfc6",
+      "boundary_review": "Raw complete destructor and five-word literal pool reviewed with independent adjacent entry. C++ checked data extent24 and virtual extent28 establish vptr location; no generated vtable objects or artificial padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_virtual_context_8c01116c",
+      "source": "src/objects/destroy_virtual_context_8c01116c.cpp",
+      "language": "c++",
+      "address": "0x8c01116c",
+      "entry": "_destroy_virtual_context_8c01116c",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 4460,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_virtual_context_8c01116c",
+          "address": "0x8c01116c",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "e90a76c6fec436169e8e9ce19b4b57fce176325d38b871b4868fd83648540f11",
+      "boundary_review": "Raw complete destructor and five-word literal pool reviewed with independent adjacent entry. C++ checked data extent24 and virtual extent28 establish vptr location; no generated vtable objects or artificial padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_virtual_context_8c0888e0",
+      "source": "src/objects/destroy_virtual_context_8c0888e0.cpp",
+      "language": "c++",
+      "address": "0x8c0888e0",
+      "entry": "_destroy_virtual_context_8c0888e0",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 493792,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_virtual_context_8c0888e0",
+          "address": "0x8c0888e0",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "2a64d3240d996bcb5067ee5b51c850ba67d94050e8e1cbf07c29b192cd1d6060",
+      "boundary_review": "Raw complete destructor and five-word literal pool reviewed with independent adjacent entry. C++ checked data extent24 and virtual extent28 establish vptr location; no generated vtable objects or artificial padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c01c2a0",
+      "source": "src/runtime/forward_reviewed_8c01c2a0.c",
+      "address": "0x8c01c2a0",
+      "entry": "_forward_reviewed_8c01c2a0",
+      "headers": [],
+      "symbols": {
+        "_target_at": "0x8c0331e4"
+      },
+      "ranges": [
+        {
+          "offset": 49824,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c01c2a0",
+          "address": "0x8c01c2a0",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "b16dc81567caf8522b280b5ff9da4494a1624272d90877813f88665aeede558e",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Existing exact hierarchy_child_update C-linkage entries take one object pointer and return void; opaque forwarder does not access object fields.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c03f1bc",
+      "source": "src/runtime/forward_reviewed_8c03f1bc.c",
+      "address": "0x8c03f1bc",
+      "entry": "_forward_reviewed_8c03f1bc",
+      "headers": [],
+      "symbols": {
+        "_target_at": "0x8c37d534"
+      },
+      "ranges": [
+        {
+          "offset": 192956,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c03f1bc",
+          "address": "0x8c03f1bc",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "d264b5800387762888d78538ec7ed1dc2b5472055e8df18e7908975921cb56bb",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Complete raw SDK callee returns signed1 or-1 and takes one resource-group pointer.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c0a36ec",
+      "source": "src/runtime/forward_reviewed_8c0a36ec.c",
+      "address": "0x8c0a36ec",
+      "entry": "_forward_reviewed_8c0a36ec",
+      "headers": [],
+      "symbols": {
+        "_target_at": "0x8c0a1404"
+      },
+      "ranges": [
+        {
+          "offset": 603884,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c0a36ec",
+          "address": "0x8c0a36ec",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "e10fa73d1612e517b44afb9e7853f8c07de67d6124ceb30345cf45d06853ee88",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Existing exact allocation wrapper takes one argument and returns its allocated pointer.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c0e9ac4",
+      "source": "src/runtime/forward_reviewed_8c0e9ac4.c",
+      "address": "0x8c0e9ac4",
+      "entry": "_forward_reviewed_8c0e9ac4",
+      "headers": [],
+      "symbols": {
+        "_target_at": "0x8c0e9b04"
+      },
+      "ranges": [
+        {
+          "offset": 891588,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c0e9ac4",
+          "address": "0x8c0e9ac4",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "6e865d9b417d5a751af651779471b1045e29166a72354a0fc9894d0a2e24a5c8",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Full raw resource-table callee has one table pointer and returns only integer0/1; caller stores that result as a word.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c0e9ae4",
+      "source": "src/runtime/forward_reviewed_8c0e9ae4.c",
+      "address": "0x8c0e9ae4",
+      "entry": "_forward_reviewed_8c0e9ae4",
+      "headers": [],
+      "symbols": {
+        "_target_at": "0x8c0e9b04"
+      },
+      "ranges": [
+        {
+          "offset": 891620,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c0e9ae4",
+          "address": "0x8c0e9ae4",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "7ba8488881e63573d21559382a479399b8b50b22e301ec3c0bda90cfcff6cce7",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Full raw resource-table callee has one table pointer and returns only integer0/1; caller stores that result as a word.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c104e7c",
+      "source": "src/runtime/forward_reviewed_8c104e7c.c",
+      "address": "0x8c104e7c",
+      "entry": "_forward_reviewed_8c104e7c",
+      "headers": [],
+      "symbols": {
+        "_target_at": "0x8c0331c0"
+      },
+      "ranges": [
+        {
+          "offset": 1003132,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c104e7c",
+          "address": "0x8c104e7c",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "83f7c707eabe6c3ddc07b9b0921aaebacda9cedaeb96f305a10c113bbf1be113",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Existing exact hierarchy_child_update C-linkage entries take one object pointer and return void; opaque forwarder does not access object fields.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c104e8c",
+      "source": "src/runtime/forward_reviewed_8c104e8c.c",
+      "address": "0x8c104e8c",
+      "entry": "_forward_reviewed_8c104e8c",
+      "headers": [],
+      "symbols": {
+        "_target_at": "0x8c0331c0"
+      },
+      "ranges": [
+        {
+          "offset": 1003148,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c104e8c",
+          "address": "0x8c104e8c",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "83f7c707eabe6c3ddc07b9b0921aaebacda9cedaeb96f305a10c113bbf1be113",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Existing exact hierarchy_child_update C-linkage entries take one object pointer and return void; opaque forwarder does not access object fields.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c1e608c",
+      "source": "src/runtime/forward_reviewed_8c1e608c.c",
+      "address": "0x8c1e608c",
+      "entry": "_forward_reviewed_8c1e608c",
+      "headers": [],
+      "symbols": {
+        "_target_at": "0x8c37d534"
+      },
+      "ranges": [
+        {
+          "offset": 1925260,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c1e608c",
+          "address": "0x8c1e608c",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "b3d465de09bf3ff0a854b2e809e1961745c4c0e67724cff86699f395e37c2d5a",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Complete raw SDK callee returns signed1 or-1 and takes one resource-group pointer.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c1e62f0",
+      "source": "src/runtime/forward_reviewed_8c1e62f0.c",
+      "address": "0x8c1e62f0",
+      "entry": "_forward_reviewed_8c1e62f0",
+      "headers": [],
+      "symbols": {
+        "_target_at": "0x8c37d534"
+      },
+      "ranges": [
+        {
+          "offset": 1925872,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c1e62f0",
+          "address": "0x8c1e62f0",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "3c18d4d23e98898ded2dcae58bccea376789880926916b90d4278b190179d1e4",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Complete raw SDK callee returns signed1 or-1 and takes one resource-group pointer.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c2213dc",
+      "source": "src/runtime/forward_reviewed_8c2213dc.c",
+      "address": "0x8c2213dc",
+      "entry": "_forward_reviewed_8c2213dc",
+      "headers": [],
+      "symbols": {
+        "_target_at": "0x8c37d534"
+      },
+      "ranges": [
+        {
+          "offset": 2167772,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c2213dc",
+          "address": "0x8c2213dc",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "3877678f303e1e2a7f4dd262628efea11e7c000dfb5db83556ba83a9f02b2b65",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Complete raw SDK callee returns signed1 or-1 and takes one resource-group pointer.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c282d60",
+      "source": "src/runtime/forward_reviewed_8c282d60.c",
+      "address": "0x8c282d60",
+      "entry": "_forward_reviewed_8c282d60",
+      "headers": [
+        "src/include/random_state.h"
+      ],
+      "symbols": {
+        "_target_at": "0x8c037d5c"
+      },
+      "ranges": [
+        {
+          "offset": 2567520,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c282d60",
+          "address": "0x8c282d60",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "223db5cc8fde6edc94a832dc614c52fbef389af9aba25a9f93dbc68577300c00",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Existing exact construct_random_state signature and checked RandomState definition.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "forward_reviewed_8c28455c",
+      "source": "src/runtime/forward_reviewed_8c28455c.c",
+      "address": "0x8c28455c",
+      "entry": "_forward_reviewed_8c28455c",
+      "headers": [
+        "src/include/random_state.h"
+      ],
+      "symbols": {
+        "_target_at": "0x8c037d5c"
+      },
+      "ranges": [
+        {
+          "offset": 2573660,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "forward_reviewed_8c28455c",
+          "address": "0x8c28455c",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "b26070e9dcfed69cf67f2335af6f5ac1375173a834a1d2838fd3abeb3952ec20",
+      "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Existing exact construct_random_state signature and checked RandomState definition.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
     }
   ]
 }
