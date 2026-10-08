@@ -5184,6 +5184,60 @@
       "boundary_review": "Raw short-effect update switches and follow-effect destructor/reset/call wrappers reviewed through adjacent entries, emission branches, signed tick and release tests, scalar fields, literals and natural padding. Complete checked match twice; stage139."
     },
     {
+      "id": "initialize_follow_base",
+      "source": "src/effects/initialize_follow_base.c",
+      "address": "0x8c0a0a94",
+      "entry": "_initialize_follow_base",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_base.h"
+      ],
+      "ranges": [
+        {
+          "offset": 592532,
+          "size": 148
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_follow_base",
+          "address": "0x8c0a0a94",
+          "size": 148
+        }
+      ],
+      "reference_sha256": "bf7ccfcafa1d685ac1033dee72457119e4c7acf4b432e60c49774592da466314",
+      "symbols": {
+        "_follow_resource_table": "0x8c46ee84"
+      },
+      "boundary_review": "Raw follow-base initialization and destruction reviewed through adjacent entries, ordered scalar/short stores, resource field, float literal, null and signed release paths, literal pools and natural alignment. Complete checked match twice; stage140."
+    },
+    {
+      "id": "destroy_follow_base",
+      "source": "src/effects/destroy_follow_base.c",
+      "address": "0x8c0a0b28",
+      "entry": "_destroy_follow_base",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 592680,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_follow_base",
+          "address": "0x8c0a0b28",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "9eedaf3ca3a739bfc56e8847a6a652aa9ead0dd67c1ede7814c6490aae71d142",
+      "symbols": {},
+      "boundary_review": "Raw follow-base initialization and destruction reviewed through adjacent entries, ordered scalar/short stores, resource field, float literal, null and signed release paths, literal pools and natural alignment. Complete checked match twice; stage140."
+    },
+    {
       "id": "reset_effect_table_state",
       "source": "src/effects/reset_effect_table_state.c",
       "address": "0x8c0a6bdc",

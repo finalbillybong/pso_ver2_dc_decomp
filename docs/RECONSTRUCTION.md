@@ -7011,3 +7011,37 @@ on a disposable database copy. Earlier parked counts remain unchanged.
 Stage 138 commit cda8084 is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue through follow-effect base initialization and matrix/vector dependencies.
+
+
+## Follow-base initialization and destruction, stage 140
+
+Two complete matches replace **216 bytes**: `initialize_follow_base` at 0x8c0a0a94
+(148 bytes) and `destroy_follow_base` at 0x8c0a0b28 (68 bytes). Totals are **621
+functions / 563 modules / 57,936 compiled bytes / 4,104,976 retained reference bytes
+/ 1.3917% whole-image coverage**. All 619 previous matches and source/header hashes
+remain unchanged. Standalone reconstructed data remains zero.
+
+Both first candidates match. Initialization preserves its base call, dispatch,
+ordered scalar fields, float zero/one and observed fixed float constant, resource
+table field 28 and unsigned-short identifier 0xffff. Unknown fields remain untouched.
+The destructor preserves its null guard, dispatch reset, base call and signed-short
+positive release test. All accessed provisional offsets and sizes are checked.
+
+Investigation-only: `initialize_follow_offset` at 0x8c0a0884 remains **176 bytes /90
+differing**, first 0x8c0a089e. Stack-vector zero/distance initialization, matrix/callee
+literal order and final scalar-add address lifetimes differ. Declaring the push
+callee yields 172/176 bytes with 90 differences. A genuine three-float C++ vector
+constructor yields 176/115. No hypothesis improves the starting mismatch. Parked
+after three distinct hypotheses; revisit only with an independently exact
+stack-vector/matrix-push/output-add context or verified source/inline evidence.
+Compiler settings were not changed.
+
+Ten snapshots form five binary groups. Final admissions independently match twice.
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,104,976 bytes
+without altering existing artifacts. Focused evidence validates on a disposable
+copy. Earlier parked targets retain their counts and conditions.
+
+Stage 139 commit bc6872d is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue other effect/resource initialization and vector/render helpers.

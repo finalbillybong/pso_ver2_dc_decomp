@@ -17722,6 +17722,196 @@
         "source_sha256": "3f741cbdaf58ee869002ab130fbfc0929db88cca0826533ba8b23cd13dc4b77e",
         "compiler_receipt_sha256": "87b31d2ace64ac136b9dff5d0e42046fa542b290505981d1414e1a3b5ccf654f"
       }
+    },
+    {
+      "id": "initialize_follow_base",
+      "source": "src/effects/initialize_follow_base.c",
+      "address": "0x8c0a0a94",
+      "entry": "_initialize_follow_base",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_base.h"
+      ],
+      "ranges": [
+        {
+          "offset": 592532,
+          "size": 148
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_follow_base",
+          "address": "0x8c0a0a94",
+          "size": 148
+        }
+      ],
+      "reference_sha256": "bf7ccfcafa1d685ac1033dee72457119e4c7acf4b432e60c49774592da466314",
+      "symbols": {
+        "_follow_resource_table": "0x8c46ee84"
+      },
+      "boundary_review": "Raw follow-base initialization and destruction reviewed through adjacent entries, ordered scalar/short stores, resource field, float literal, null and signed release paths, literal pools and natural alignment. Complete checked match twice; stage140.",
+      "status": "matched",
+      "reason": "Complete follow-base initializer/destructor; observed fields, constant, resource reference and release behavior preserved."
+    },
+    {
+      "id": "destroy_follow_base",
+      "source": "src/effects/destroy_follow_base.c",
+      "address": "0x8c0a0b28",
+      "entry": "_destroy_follow_base",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 592680,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_follow_base",
+          "address": "0x8c0a0b28",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "9eedaf3ca3a739bfc56e8847a6a652aa9ead0dd67c1ede7814c6490aae71d142",
+      "symbols": {},
+      "boundary_review": "Raw follow-base initialization and destruction reviewed through adjacent entries, ordered scalar/short stores, resource field, float literal, null and signed release paths, literal pools and natural alignment. Complete checked match twice; stage140.",
+      "status": "matched",
+      "reason": "Complete follow-base initializer/destructor; observed fields, constant, resource reference and release behavior preserved."
+    },
+    {
+      "id": "initialize_follow_offset",
+      "source": "src/provisional/initialize_follow_offset.c",
+      "address": "0x8c0a0884",
+      "entry": "_initialize_follow_offset",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_offset.h"
+      ],
+      "ranges": [
+        {
+          "offset": 592004,
+          "size": 176
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_follow_offset",
+          "address": "0x8c0a0884",
+          "size": 176
+        }
+      ],
+      "reference_sha256": "37f42462e2d515d4500d247c2a21b2dcf0c4ba1fcbfaee4fd73a257c3d0cc581",
+      "symbols": {},
+      "status": "parked",
+      "reason": "176 bytes /90 differing,first0x8c0a089e. Stack-vector zero/distance stores, push matrix/callee literal order, and scalar output-add address lifetimes differ. Declared push gives172/176 with90 differences; genuine C++ vector constructor gives176/115. Three distinct unsuccessful hypotheses.",
+      "unsuccessful_distinct_hypotheses": 3,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact stack-vector construction and matrix-push/output-add scheduling, or verified source/inline context. No repeated constructor or callee-spelling variants.",
+      "comparison": {
+        "name": "initialize_follow_offset-checked-0",
+        "size": 176,
+        "expected_size": 176,
+        "exact": false,
+        "differing_bytes": 90,
+        "first_difference": "0x8c0a089e",
+        "offsets": [
+          26,
+          27,
+          28,
+          29,
+          38,
+          39,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          124,
+          125,
+          156,
+          157,
+          158,
+          160,
+          161,
+          162
+        ],
+        "source_sha256": "2ff72aa4e70e29eb15d66c6af55def4d18a089385978a52923f063ab1aa65695",
+        "compiler_receipt_sha256": "75e421d6172176f6bf4876b7ab67d34ff0e6c2bd5608e8fa8dcaffb98939af0d"
+      }
     }
   ]
 }
