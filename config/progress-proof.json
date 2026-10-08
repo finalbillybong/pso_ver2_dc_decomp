@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "4344235d03803549b0ac92510bc386ca32a7d9ed57dbcd82ec236bdbea978cdb",
+    "config/project.json": "2af552f819d9f058b6d57cd447cd7c84b01c11d09191b1447b7553cc30d282ae",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -148,6 +148,7 @@
     "src/include/random_state.h": "26e505f2a09860efe083ae1790e593ed1c6eaabd79030a3194df5376821e35ca",
     "src/include/resource_callbacks.h": "1b9d17153cacba5cd644849c81ff73d03143c4de5c3ecca5e5e1d8aa2a2464c7",
     "src/include/resource_list.h": "50f6536b2743f97e1e3484bbeca8e405b39917a040e59e349b88e75ace84af7a",
+    "src/include/resource_owner.h": "b3091f1a796bfcedd0264bae15276c44d02d7875b7032c94f04c7b72ce7977bf",
     "src/include/resource_record.h": "427c948b236e135a397c15e5e7a1ae63c2272cfcc8cedda0965ea02fc358b886",
     "src/include/resource_slot.h": "3bf0dba281908a2613bc7637cf88e5fb489a62ba6122a0f9cbad722330f1ed14",
     "src/include/running_profile.h": "c1b72e777d052aa9ed5e46d8e50100383c68887151a6bd8523564ae0a40d4455",
@@ -184,6 +185,7 @@
     "src/math/normalize_vector_tiny.c": "ba895cc0f559bcb45f73175b431384fbf595a06c72521c2c46d754b5b855680b",
     "src/math/normalize_xz_checked.c": "e2455e0a2a245250270fc6f86e51432d01a7f6adc75cb30c14ff1930723288d1",
     "src/math/offset_vector_xz.c": "5aecb1d9c2763526cbf9e338f75db47ac016e8bedecfc1a94cd64a7912f88d46",
+    "src/math/operation_172c14.c": "207c9d7267ede5ac77ef9eb3162f76262373967fa10eb32e7f0de4a7746edd74",
     "src/math/query_vector_position.c": "2f0ea19d6bfa1e8884265c0fc092c9617c8e40684e84d725ad2da4ec4a221abd",
     "src/math/query_vector_position_normal.c": "f81c4f8cff5d718c4a05edc08bd7bfd20fd5119fd7d1a22438b669493023a3f5",
     "src/math/rotate_and_submit_vector_xz.c": "048fa96be7e3f7390fe070793f939c927d9de408d54e9f87c617ecf65c64681f",
@@ -261,6 +263,13 @@
     "src/objects/operation_04ac60.cpp": "3b172c622085fc611753e139b2984ebcaef131b86a110b0283a160129d00e82a",
     "src/objects/operation_1e9610.c": "0009d7eb1b4e37bdd08ffc45fbbf8e063d91a64e836171f5c0e6fc76be42d8e3",
     "src/objects/operation_23959c.c": "05aa1a4487c8398ad3c47c3cf620aa9ef878cbfe83155fa0c08968fe17bf75d5",
+    "src/objects/operation_23963c.c": "e5efff22a9844dcea45ad1a9aa6e09ecdeb2e128df6506d9c63347b8b8b8c937",
+    "src/objects/operation_2396d8.c": "ac75b7e05dc679e3c582fefbbf09455d1a09c8af301cbf2e2554791faa704251",
+    "src/objects/operation_23971c.c": "dfe3e7f5abd7eaaec775071f25a4951bf0104372eaf97e8e1e6c3ce82b8529d4",
+    "src/objects/operation_239734.c": "ffa1135f5d16cdf265bcabebabc064f171a8acb34df79d386b71d5bb61e91f28",
+    "src/objects/operation_23976c.c": "5c2873032117ee0d76dbffcdf08692c90bf9bde3311740ed75473647d14d48da",
+    "src/objects/operation_23978c.c": "0a4f2111d0719bbac6c6f62aaae856793c8970df39886103d679e9f545383896",
+    "src/objects/operation_2397f8.c": "aa018a073234db4bfc054120231fd268d9be61c987f392a97bd44b30a402c4ad",
     "src/objects/operation_37c3c.c": "a81139631aafc8d9b1d67b7d813b7ab6d49904dda7ac7df9e036a2e8406319c7",
     "src/objects/operation_37c84.c": "8ca88c773a7f9fecd1bc51e7fe1f9871f75d9fbc44a920aedd6e20999b60b44a",
     "src/objects/operation_37cbc.c": "2e77e34b17c046329fc91e614dea3081056331a914d6b768463379e8e260542b",
@@ -3332,6 +3341,17 @@
       "off",
       "-O2"
     ],
+    "operation_172c14": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "initialize_proximity_object": [
       "-proc",
       "SH4",
@@ -3454,6 +3474,83 @@
       "-O2"
     ],
     "state_list_and_factory": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_23963c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_2396d8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_23971c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_239734": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_23976c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_23978c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_2397f8": [
       "-proc",
       "SH4",
       "-endian",
@@ -3709,6 +3806,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4130084,
+  "source_only_rejected_retained_bytes": 4129572,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

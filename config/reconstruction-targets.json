@@ -7817,6 +7817,217 @@
       "boundary_review": "Raw SH4 complete entry ranges and adjacent boundaries, including natural inter-function alignment; checked source exact twice; reconstruction-stage75.",
       "status": "matched",
       "reason": "Complete bounded accessors, owner reset/child handling or list/factory group; unrelated trailing accessors and owner constructor remain reference-dependent."
+    },
+    {
+      "id": "operation_23963c",
+      "source": "src/objects/operation_23963c.c",
+      "address": "0x8c23963c",
+      "entry": "_operation_23963c",
+      "ranges": [
+        {
+          "offset": 2266684,
+          "size": 156
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_23963c",
+          "address": "0x8c23963c",
+          "size": 156
+        }
+      ],
+      "reference_sha256": "b09d647713e21f1a699dc72273cb16edf761b01e879a832e0aaea2bbe36e0d1b",
+      "headers": [
+        "src/include/resource_owner.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; checked prefix and callee inputs; final source exact twice; reconstruction-stage76.",
+      "status": "matched",
+      "reason": "Complete specialized owner operation or single-subtraction angle step; static data, base initializer and unresolved callbacks remain reference-dependent."
+    },
+    {
+      "id": "operation_2396d8",
+      "source": "src/objects/operation_2396d8.c",
+      "address": "0x8c2396d8",
+      "entry": "_operation_2396d8",
+      "ranges": [
+        {
+          "offset": 2266840,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_2396d8",
+          "address": "0x8c2396d8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "93b0c951f653467f0c7b3c1b4333fb8c64726f89f74c547e10e9981ddb4e00fc",
+      "headers": [
+        "src/include/resource_owner.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; checked prefix and callee inputs; final source exact twice; reconstruction-stage76.",
+      "status": "matched",
+      "reason": "Complete specialized owner operation or single-subtraction angle step; static data, base initializer and unresolved callbacks remain reference-dependent."
+    },
+    {
+      "id": "operation_23971c",
+      "source": "src/objects/operation_23971c.c",
+      "address": "0x8c23971c",
+      "entry": "_operation_23971c",
+      "ranges": [
+        {
+          "offset": 2266908,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_23971c",
+          "address": "0x8c23971c",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "7c560ad4c47a813e81db28ffade9fc104ddaae3eea110b737b5fd22b560b75bf",
+      "symbols": {
+        "_adjust_at": "0x8c172c14"
+      },
+      "headers": [
+        "src/include/resource_owner.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; checked prefix and callee inputs; final source exact twice; reconstruction-stage76.",
+      "status": "matched",
+      "reason": "Complete specialized owner operation or single-subtraction angle step; static data, base initializer and unresolved callbacks remain reference-dependent."
+    },
+    {
+      "id": "operation_239734",
+      "source": "src/objects/operation_239734.c",
+      "address": "0x8c239734",
+      "entry": "_operation_239734",
+      "ranges": [
+        {
+          "offset": 2266932,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_239734",
+          "address": "0x8c239734",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "d81c51a1ef56fa0e8a0ddb170ca13015e9ead1f95428b22f9e947163013b683a",
+      "headers": [
+        "src/include/resource_owner.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; checked prefix and callee inputs; final source exact twice; reconstruction-stage76.",
+      "status": "matched",
+      "reason": "Complete specialized owner operation or single-subtraction angle step; static data, base initializer and unresolved callbacks remain reference-dependent."
+    },
+    {
+      "id": "operation_23976c",
+      "source": "src/objects/operation_23976c.c",
+      "address": "0x8c23976c",
+      "entry": "_operation_23976c",
+      "ranges": [
+        {
+          "offset": 2266988,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_23976c",
+          "address": "0x8c23976c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "586995debb49d431abe5caf7b7da0fa832ffc6908e7c0107d46fdf5573cd42ce",
+      "headers": [
+        "src/include/resource_owner.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; checked prefix and callee inputs; final source exact twice; reconstruction-stage76.",
+      "status": "matched",
+      "reason": "Complete specialized owner operation or single-subtraction angle step; static data, base initializer and unresolved callbacks remain reference-dependent."
+    },
+    {
+      "id": "operation_23978c",
+      "source": "src/objects/operation_23978c.c",
+      "address": "0x8c23978c",
+      "entry": "_operation_23978c",
+      "ranges": [
+        {
+          "offset": 2267020,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_23978c",
+          "address": "0x8c23978c",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "fec0a5e2da30db78fa18e2f2ee2d29be5299fc73953df13863ac091586e28bdd",
+      "symbols": {
+        "_update_at": "0x8c075730"
+      },
+      "headers": [
+        "src/include/resource_owner.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; checked prefix and callee inputs; final source exact twice; reconstruction-stage76.",
+      "status": "matched",
+      "reason": "Complete specialized owner operation or single-subtraction angle step; static data, base initializer and unresolved callbacks remain reference-dependent."
+    },
+    {
+      "id": "operation_2397f8",
+      "source": "src/objects/operation_2397f8.c",
+      "address": "0x8c2397f8",
+      "entry": "_operation_2397f8",
+      "ranges": [
+        {
+          "offset": 2267128,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_2397f8",
+          "address": "0x8c2397f8",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "11528139066670fdb6a397b94673878fb7427caca5b3584479a4ac0301b3018e",
+      "headers": [
+        "src/include/resource_owner.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; checked prefix and callee inputs; final source exact twice; reconstruction-stage76.",
+      "status": "matched",
+      "reason": "Complete specialized owner operation or single-subtraction angle step; static data, base initializer and unresolved callbacks remain reference-dependent."
+    },
+    {
+      "id": "operation_172c14",
+      "source": "src/math/operation_172c14.c",
+      "address": "0x8c172c14",
+      "entry": "_operation_172c14",
+      "ranges": [
+        {
+          "offset": 1453076,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_172c14",
+          "address": "0x8c172c14",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "016aa318c0848669a665a93e888c32fba97e06001d6a261d8594125aeb804b43",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; checked prefix and callee inputs; final source exact twice; reconstruction-stage76.",
+      "status": "matched",
+      "reason": "Complete specialized owner operation or single-subtraction angle step; static data, base initializer and unresolved callbacks remain reference-dependent."
     }
   ]
 }

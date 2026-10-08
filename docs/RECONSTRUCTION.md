@@ -3926,3 +3926,58 @@ the actual public source file. A local exception permits only that exact hash,
 with all default rules retained; a separate synthetic credential control is still
 detected. The full redacted history scan then passes. The original finding and
 verification receipts are preserved privately; no serial/access key was published.
+
+
+## Specialized resource owner and angle step, stage 76
+
+Eight complete functions add **512 bytes** in eight modules: resource-owner
+construction **0x8c23963c** (156), destruction **0x8c2396d8** (68), angle dispatch
+**0x8c23971c** (24), periodic scalar increase **0x8c239734** (56), scalar decrease
+**0x8c23976c** (32), draw wrapper **0x8c23978c** (108), conditional rotation
+**0x8c2397f8** (40), and angle step **0x8c172c14** (28). Totals are **355 functions /
+308 modules / 33,340 compiled full-range bytes / 4,129,572 retained reference
+bytes**, or **0.8009% whole-image coverage**. All 347 previous matches, module
+definitions and source/header hashes remain unchanged. Since the initial
+checkpoint, 321 functions replace 29,696 bytes. Code-only completion remains
+unknown; separately reconstructed static data is zero.
+
+The provisional owner prefix checks every accessed offset through 0x240 and all
+three intermediate link prefixes. Construction preserves the base initializer's
+three inputs, observed dispatch/tag fields, allocation size, flag OR and scalar
+writes. Raw base instructions establish the forwarded inputs. Destruction keeps
+the nullable pointer, dispatch reset, base release argument and positive signed
+release flag with its allocation pool. Static dispatch, tag and callback data
+remain reference inputs.
+
+The scalar increase retains its four-step counter test and threshold without
+clamping a possible overshoot. The decrease likewise subtracts only when above
+its observed threshold. Conditional rotation preserves the mode check and two
+integer arguments. The draw wrapper follows the observed pointer chain, sets
+bit 0x10 when state is zero, performs both calls and reads state again before
+conditionally clearing that bit. It does not invent restoration of a prior bit
+value. An external declaration of the first draw/update callee resolves the final
+four scheduling bytes. External declaration also resolves ten bytes in the tail
+angle-dispatch wrapper.
+
+The angle-step dependency adds a signed amount and subtracts 65,536 at most once
+when the result reaches that bound. Negative and large increments retain the
+observed behavior; modulo reduction or additional clamps are not substituted.
+A local bound reproduces the R0 accumulator/R1 constant allocation and all 28
+bytes. Literal comparisons and long types leave ten bytes different, while an
+explicit readback temporary generates 32 bytes and is rejected.
+
+All **33 trials**, with **no compiler rejection**, retain source snapshots,
+hypotheses, compiler receipts and comparisons in `reconstruction-stage76`. Final
+checked sources match independently twice. Identifiers, source paths and intervals
+are checked before admission. Two fresh exact builds, integrated-image comparison,
+five-function proof and all **53 research tests** pass; the public suite remains
+**58 tests**. Source-only rejects 4,129,572 retained bytes without changing
+artifacts. Focused exports are regenerated on a disposable copy after manifest
+changes and validated against current inputs. The original database, compiler,
+base flags, default GNU linker and complete-range rules remain unchanged.
+
+Primary candidates remain **512/30 and 388/8**, related reuse **448/4**, manager
+initialization **280/8**, and signed remainder unresolved. The primary batch
+remains incomplete; supporting matches do not replace its acceptance criteria.
+The history scanner retains all default rules and the single exact source-hash
+exception verified in stage 75, including its synthetic detection-control receipt.
