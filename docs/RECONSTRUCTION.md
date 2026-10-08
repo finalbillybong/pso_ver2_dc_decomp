@@ -4196,3 +4196,57 @@ The primary batch remains incomplete at **512/30 and 388/8**, related reuse
 Supporting matches do not replace primary acceptance. Publication retains all
 default scanner rules and the single exact source-hash exception verified with
 its stage-75 detection control.
+
+
+## Resource outputs and list query, stage 81
+
+Five complete functions add **228 bytes**: paired outputs **0x8c193288** (60),
+triple outputs **0x8c1932c4** (60), indexed output **0x8c193300** (36), adjacent
+indexed output **0x8c193324** (36), and list query **0x8c193348** (36). Totals are
+**381 functions / 334 modules / 35,564 compiled full-range bytes / 4,127,348
+retained reference bytes**, or **0.8543% whole-image coverage**. All 376 previous
+matches, module definitions and source/header hashes remain unchanged. Since the
+initial checkpoint, 347 functions replace 31,920 bytes. Code-only completion
+remains unknown; separately reconstructed static data is zero.
+
+Checked provisional prefixes establish owner table/extra pointers at 1068/1072,
+fixed table outputs at 40/44, extra value at four, and list head/next/ID fields
+at 20/12/32. Indexed outputs retain 16-byte strides, column offsets eight/twelve,
+null output guards and unchecked signed indexes. Paired outputs narrow the index
+to an unsigned byte, guard both outputs and use columns 56/60. A retained table
+offset variable recovers the reference register lifetime across both writes.
+List lookup guards the list and follows the observed chain; reversed source
+equality operands recover its final two comparison bytes.
+
+Boundary review rejected an initial interior-body hypothesis at **0x8c1932d0**.
+Reading the preceding raw instructions establishes the true entry at **0x8c1932c4**,
+with three output null checks and a shared RTS/NOP. Including those guards matches
+all 60 bytes. Interior-body and speculative return-value trials remain scratch
+only; no prefix credit or artificial padding was admitted. Output writes retain
+intervening owner/table reloads, including possible aliasing through the outputs.
+
+The larger child constructor **0x8c1ac17c** remains unadmitted: best size-correct
+candidate **496/362**, first difference **0x8c1ac189**. An explicit returned-color
+copy and word-aligned 20-byte default record reproduce the 60-byte local frame
+and required full size. Inline-base stack copies, resource/default copy register
+selection and later call scheduling still differ. External declarations, pointer
+aliases, base casts and actual C++ construction do not resolve it. Actual C++
+constructor entry emits 460 bytes; placement wrapper emits 488. Its initially
+abbreviated mangled symbol was corrected from object-table evidence and retested.
+Taking the address of a register-qualified parameter was rejected by the compiler.
+
+All **46 trials** retain source snapshots, hypotheses and comparisons, with one
+compiler rejection; completed compilations retain receipts. Final checked sources
+match independently twice. Two fresh exact builds, integrated-image comparison,
+five-function proof and all **53 research tests** pass; the public suite remains
+**58 tests**. Source-only rejects 4,127,348 retained bytes without changing
+artifacts. Focused exports use a disposable copy and are checked against current
+inputs. Original data, compiler, base flags, default GNU linking and complete-range
+acceptance remain unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Root initializer
+remains **316/28**. Supporting matches do not replace primary acceptance; static
+resource tables/global objects remain reference inputs. Publication retains all
+default scanner rules and the verified exact source-hash exception with its
+stage-75 detection control.

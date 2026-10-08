@@ -6861,6 +6861,126 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; checked prefix and callee inputs; final source exact twice; reconstruction-stage76."
     },
     {
+      "id": "operation_193288",
+      "source": "src/objects/operation_193288.c",
+      "address": "0x8c193288",
+      "entry": "_operation_193288",
+      "ranges": [
+        {
+          "offset": 1585800,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193288",
+          "address": "0x8c193288",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "59352ac66d3d4d2fac4a7e812f762fc1d5e00f464803d5edb37c4b40343fd1a2",
+      "headers": [
+        "src/include/resource_outputs.h"
+      ],
+      "boundary_review": "Raw SH4 preceding/adjacent entries establish complete boundaries; triple getter includes all guards at1932c4; checked resource/list prefixes; final exact twice; reconstruction-stage81."
+    },
+    {
+      "id": "operation_1932c4",
+      "source": "src/objects/operation_1932c4.c",
+      "address": "0x8c1932c4",
+      "entry": "_operation_1932c4",
+      "ranges": [
+        {
+          "offset": 1585860,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1932c4",
+          "address": "0x8c1932c4",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "aad6cd05dec758d6fbd99b1f4211fcfa2b90be19dea2bb1ea5902abd5151067f",
+      "headers": [
+        "src/include/resource_outputs.h"
+      ],
+      "boundary_review": "Raw SH4 preceding/adjacent entries establish complete boundaries; triple getter includes all guards at1932c4; checked resource/list prefixes; final exact twice; reconstruction-stage81."
+    },
+    {
+      "id": "operation_193300",
+      "source": "src/objects/operation_193300.c",
+      "address": "0x8c193300",
+      "entry": "_operation_193300",
+      "ranges": [
+        {
+          "offset": 1585920,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193300",
+          "address": "0x8c193300",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "c0475b89862ad43e04505fd06bf763e3ab67a3b3ad54ca88379bdf99e293d98c",
+      "headers": [
+        "src/include/resource_outputs.h"
+      ],
+      "boundary_review": "Raw SH4 preceding/adjacent entries establish complete boundaries; triple getter includes all guards at1932c4; checked resource/list prefixes; final exact twice; reconstruction-stage81."
+    },
+    {
+      "id": "operation_193324",
+      "source": "src/objects/operation_193324.c",
+      "address": "0x8c193324",
+      "entry": "_operation_193324",
+      "ranges": [
+        {
+          "offset": 1585956,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193324",
+          "address": "0x8c193324",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "ea0c898f96dbccc19ad327a1954f4f8c1387531d8ba44d8e96ed57d73abd6f98",
+      "headers": [
+        "src/include/resource_outputs.h"
+      ],
+      "boundary_review": "Raw SH4 preceding/adjacent entries establish complete boundaries; triple getter includes all guards at1932c4; checked resource/list prefixes; final exact twice; reconstruction-stage81."
+    },
+    {
+      "id": "operation_193348",
+      "source": "src/objects/operation_193348.c",
+      "address": "0x8c193348",
+      "entry": "_operation_193348",
+      "ranges": [
+        {
+          "offset": 1585992,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193348",
+          "address": "0x8c193348",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "79bb58d04e1ceabbe87db33a5916fa214ba88a48a8e9ea2d1cf826af0964a4b5",
+      "headers": [
+        "src/include/resource_outputs.h"
+      ],
+      "boundary_review": "Raw SH4 preceding/adjacent entries establish complete boundaries; triple getter includes all guards at1932c4; checked resource/list prefixes; final exact twice; reconstruction-stage81."
+    },
+    {
       "id": "initialize_proximity_object",
       "source": "src/objects/initialize_proximity_object.c",
       "address": "0x8c1ab324",
