@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **457 exact functions in 409 modules**, replacing
-**45,056 bytes** of the 4,162,912-byte decoded executable (**1.0823% image coverage**).
-It retains **4,117,856 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **466 exact functions in 416 modules**, replacing
+**46,036 bytes** of the 4,162,912-byte decoded executable (**1.1059% image coverage**).
+It retains **4,116,876 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,20 +28,35 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 97
+## Latest published batch: stages 106–108
 
-Weighted grid and panel owner lifecycle add five functions, replacing 1,144 bytes.
-All 452 earlier matches and source/header hashes remain unchanged. Since the
-initial checkpoint, 423 functions replace 41,412 bytes. All 30 trials are retained.
-Whole-image coverage is 1.0823%; code-only completion remains unknown. Primary
-targets remain 512/30 and 388/8; the earlier panel draw remains 244 bytes versus
-240 expected.
+Nine exact functions replace 980 additional reference bytes: vector subtraction,
+signed angle stepping, effect motion/control and creation, XYZ distance, and
+resource-entry initialization. All 457 previously published function ranges and
+source/header files are preserved. Genuine adjacent functions are regrouped for
+natural compiler alignment without duplicate credit or artificial padding.
 
-Two fresh exact builds, integrated-image comparison, five-function proof and all
-53 original-workspace tests pass. The public suite has 58 tests. Source-only
-rejects remaining reference gaps without changing artifacts. Historical behavior,
-failed hypotheses and checkpoint details are in [RECONSTRUCTION.md](RECONSTRUCTION.md).
-Private scratch paths mentioned there are not public build dependencies.
+The primary targets remain parked at 512/30 and 388/8. Revisit only with new
+independent evidence of the missing factor-reuse or call-scheduling patterns.
+Stages 98–105 added no matches; their investigation does not increase completion.
+Referenced runtime addresses outside the decoded image supply no static-data credit.
+
+Two fresh exact builds, integrated-image comparison, the five-function proof,
+53 research tests and 58 public tests are required before publication. Source-only
+must reject the remaining gaps without changing artifacts. See
+[RECONSTRUCTION.md](RECONSTRUCTION.md) for behavior and failed hypotheses.
+
+## Autonomous iteration
+
+Inspect → implement → compile → compare → verify → commit → push → repeat.
+Prioritize credible exact-match opportunities. Record each distinct hypothesis
+and its predicted instruction change; consult history and group identical outputs.
+After ten unsuccessful distinct hypotheses on a target, or sooner when evidence
+runs out, park it with a precise blocker and evidence-based revisit condition.
+Counts persist across sessions. Prior parked targets remain parked; this policy
+does not reset their history. Continue to another productive target after each
+checkpoint. Publish only reviewed public source and sanitized receipts; preserve
+the separate research workspace, original data and private saves.
 
 ## Compiler and acceptance rules
 

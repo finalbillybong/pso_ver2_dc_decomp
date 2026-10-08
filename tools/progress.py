@@ -21,7 +21,9 @@ def inputs(root, manifest):
     names = {'config/project.json', 'config/decoded.json', 'config/samples.json',
              'config/matching-packages.json', 'config/compiler-packages.json',
              'tools/matching.py', 'tools/project.py', 'tools/verify_source.py', 'pso.py'}
-    for unit in manifest['units']:
+    # The independent compiler proof still uses original sample files when a
+    # project module regroups one with its genuine adjacent function.
+    for unit in manifest['units'] + read(root, 'config/samples.json')['samples']:
         names.add(unit['source'])
         names.update(dependencies(root / unit['source'], unit, root))
     return {name: sha(root / name) for name in sorted(names)}

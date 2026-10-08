@@ -45,9 +45,16 @@ class PublicationTests(unittest.TestCase):
                              report['decoded_image_bytes'])
             self.assertIsNone(report['code_completion_percent'])
             self.assertIsNone(report['total_functions'])
-            (root / 'src/math/angle_step.c').write_text('int changed;\n')
-            with self.assertRaisesRegex(ValueError, 'checkpoint is stale'):
-                progress.summary(root)
+            manifest = progress.read(root, 'config/project.json')
+            sample = progress.read(root, 'config/samples.json')['samples'][-1]
+            for name in [manifest['units'][0]['source'], sample['source']]:
+                with self.subTest(source=name):
+                    source = root / name
+                    original = source.read_bytes()
+                    source.write_text('int changed;\n')
+                    with self.assertRaisesRegex(ValueError, 'checkpoint is stale'):
+                        progress.summary(root)
+                    source.write_bytes(original)
 
     def test_incomplete_verification_rejected(self):
         with tempfile.TemporaryDirectory() as temp:

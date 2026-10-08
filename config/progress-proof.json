@@ -10,11 +10,12 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "186919505f40aca7f63ced2a2738faab39d87457af8e2cb5f9aeaafd2f11c7ae",
+    "config/project.json": "d1ce96e1bd0a85771bd43b3382806993965b3f51a2821be85dad90a0aecdd0ad",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
     "src/effects/bind_id.c": "a62a5f3716a3d5c31563c4c7acf2def192a6dca08507c9cb5e0c30572222b0bb",
+    "src/effects/check_effect_motion_gate.c": "ec66c54f37fa133e9ba1ed8d65d18233071b557e860e28f210ad42b096d7769a",
     "src/effects/choose_emit_slot.c": "f04f6c800f252708ba7bc32a0c74d4708ea0eaa793850ca39bef4b7902c19d55",
     "src/effects/clear_emit_slot.c": "1f5b5a5405ece4f08b5e0d7b429299b78e328fb3779715a69c67fa6ea6bf505a",
     "src/effects/clear_emit_slots.c": "6e8804090308a1f3631d6731744f21ce88f0a0cf4fe8738397553cdd2e15308f",
@@ -27,6 +28,7 @@
     "src/effects/create_effect_769c.c": "64c0d7245940804a3929a586aa58112f540bccf8bab69f5b9baa49dda996702a",
     "src/effects/create_effect_7708.c": "4951997eab65b88e5e3a631397fb9ef394f708aa73cdf336120f9766db3531cc",
     "src/effects/create_effect_777c.c": "da0e466a392e0ddb6c183d6aa97e1619bec41044defeebb50dcd1bb981107092",
+    "src/effects/create_effect_785c.c": "571c89e204253181b5245ed79397e43b3d9a91b8d160bb8bf3b73d817b7fd712",
     "src/effects/create_effect_78d0.c": "d88c24634e32a5f95d1c6222091deff7b47386842a0c07a412d245b906bdaa86",
     "src/effects/create_effect_794c.c": "604f02c0575990538f30afa69a2c789d36b1259f4ae6c321f6632d1967988f22",
     "src/effects/create_effect_79c8.c": "445c330f765217c69f7a683b9df0299b07c95fd40ce1048cfac4b43ed3c7cc9f",
@@ -58,6 +60,7 @@
     "src/effects/edit_manager_integer.c": "e08d241660ec66bf8150892287bdcf6bb2be791caa9c5a999bebba2ebbd1deb8",
     "src/effects/effect_bit0.c": "34062dbd9792d8f272143cfe9152ef36e5c498a6520e2cec62e2033068c9ab41",
     "src/effects/effect_bits_and_words.c": "5ef17c48900533d2d7952e8892fbbe5d84819a58e4b6b4a6e52567bfaf68dd01",
+    "src/effects/effect_control_button.c": "6fa76ea53cb9c6dcdd8d28b3cc851e93e8aed15afc42eb760747c8a38359110f",
     "src/effects/effect_noop_9654.c": "e1e0f4f24981e1054295f5e8b4af6482779690875ad68cd8856a6167f9dfca8a",
     "src/effects/effect_release_and_create.c": "fd8352da2371d86dc6697cddd8adf2d872f00762309963e2f594836cb959161f",
     "src/effects/emission_setup_6020c.c": "d7c9f7327150139b3fd286ba5850b269b011fb27d3ffde4440c550b80f8b6eec",
@@ -71,6 +74,7 @@
     "src/effects/initialize_default.c": "a3bbd7cbe8175924802c6cb18c94135ced66802965d9e092a415d171f67955a9",
     "src/effects/initialize_effect_vector.c": "8e4475aa81c91cf3d5ceda72228f6baa366de4cff2502927c65504daf19cffb9",
     "src/effects/initialize_effect_vector_field30.c": "1e4f4300423b4e7afb386b2df96c43249d4caf2284956ba875e36ef5c658e740",
+    "src/effects/initialize_resource_entry_pointers.c": "48d6065b9f1b923ce592c2bd48b932040b3b7396325b7514eacbb00c009587d7",
     "src/effects/initialize_spawn_base.c": "0ccfbc1060fcdf23165767b1a9ad9947fa06bf8fa055705c23f69f5b02a20174",
     "src/effects/load_effect_resources.c": "5b283fa3f6f217834d6461d0d15b2de665f4445670e2c7a2c7daba63915c6f83",
     "src/effects/node_links.c": "437bf2fc4169e4ef8c114940b376aa1a5c24428c2c55b9f26854ffc055a18435",
@@ -97,7 +101,9 @@
     "src/effects/update_controller_child_b.c": "c5981697092b03d4415e9bf643c591a4df1d8a1f37687207518436ce51e1e5e6",
     "src/effects/update_controller_one.c": "b80762336dedae2027fcd5f3d676742132be37087b4f6200a6f33846656cf0c7",
     "src/effects/update_controller_zero.c": "30368d275809f4ffa5d513cb2b6bc16b113a09e5681f3027c0ed394934c9df47",
+    "src/effects/update_effect_control_input.c": "ac82a8ec155615de482f6d7d516023dc090359b703e30565825afd6bdcc70226",
     "src/effects/update_effect_manager.c": "52205a21ec2e2a81bac235c5bba2786374abab8440a577d1f8ec312ba4b6935e",
+    "src/effects/update_effect_rotation_record.c": "2a3f5a7b62aa994e230897fed459700157441cb5cda57fb831119c6abe2a2910",
     "src/effects/update_last_effect.c": "f7dc80ee7a40fd13aff9010a22ee2b1fcb26ef303e0b41da5ef511791e400461",
     "src/include/angle_sample_record.h": "4c2d049aad38560d7914ae4686d141b31809ab0f34e84fd346e1a22edb2f4638",
     "src/include/base_child.h": "2f194f5eb4bdf3945285edb1fb162070454c6ded9fc6f6b7d4623f819a9dc389",
@@ -112,9 +118,11 @@
     "src/include/dispatch_state.h": "5fe3918cf071985f6f1619e8ac686bac55bedb9022029fb6739f591d69577f3f",
     "src/include/effect.h": "14ed3316fb42bac3a8e591e6761a212a4a8d47fc082dee94a19ad13ee880a439",
     "src/include/effect_child_prefix.h": "a0a5ae12810a0c5c8301a1083dab8c350388ca16c733b77e1db0686bc8e82dd6",
+    "src/include/effect_control_input.h": "98e14058c82bb5d9b5dc81ec0f30474313fcd617aaccd2f8fdee41d0d8844978",
     "src/include/effect_controller.h": "fec34a2514a303280e4189fc34f0d964135d9b9a49b9ff1701bd0e4bc7d414b4",
     "src/include/effect_list_node.h": "a2deaf0f34a1c3714718a083197f53a3001856b7cdcb7f7235ca5ec99cea74de",
     "src/include/effect_manager.h": "07439b751434e7b641fe7a6bd6c6a1f5362185a03d6c88d7ad0850e2d0cf4237",
+    "src/include/effect_motion_gate.h": "43f9b8422899cee2f8288f0c416583bd4b751b8fd04f590fb21d298cac742832",
     "src/include/effect_update.h": "107613e65e2c0982cde01c72af62baa40d9917e571f84c601568ab9c4cddb1f5",
     "src/include/emit.h": "c138a48dfc6827380794a25ec2c02d3fdbf76dde801340426ac8321bf4fffb25",
     "src/include/emit_listener.h": "6d3bdc6f4c56009d5b486867b8dd4c3c33c5990f85161713a7d359ea18f1ea66",
@@ -153,6 +161,7 @@
     "src/include/resource_callbacks.h": "1b9d17153cacba5cd644849c81ff73d03143c4de5c3ecca5e5e1d8aa2a2464c7",
     "src/include/resource_child.h": "3ec6a0ca76ffb27b23287a97ffe377f0b774e5fa65f6c059d9cc354e5126fb7a",
     "src/include/resource_chunks.h": "f0e59f68a0d1d5183ea799385e1934fa544f1b4f85d60f4201727d209f4698fe",
+    "src/include/resource_entry_list.h": "035e07032c91e9039b70f6e549beafd258017f748eeaf4871b207b7bdb0e12a6",
     "src/include/resource_flag_state.h": "cabfd7047f72e5d773df3dca14a8781c8afa17f90d772807aab755275376c3cc",
     "src/include/resource_lifecycle.h": "1adfaad2dec2c55fae78830851a3f4ad894014252d97d67d3b2ba32f84ffdfaf",
     "src/include/resource_list.h": "50f6536b2743f97e1e3484bbeca8e405b39917a040e59e349b88e75ace84af7a",
@@ -189,8 +198,8 @@
     "src/include/widget_record_tables.h": "2a90337a05c3d2f33a2a9c3bd615c2fb110adcfccd5e3527826a4308ceb54730",
     "src/include/widget_stat_values.h": "32acbc44e221506e445c99d9a1a1b7e3e3f21c7c9f22e7cda2a33b788a2c0a90",
     "src/math/angle_difference.c": "815de2106556eb2ab7953449876fbb544aaf4ab45056a97bfd5a8c58dbf53df8",
+    "src/math/angle_fraction_step.c": "fac49baa2855884ef156fd3b1844e43b36d7a1c8c97fe790b8212839cb4ad09d",
     "src/math/angle_halfway.c": "566aef942ebe20d3c677ff0a433dd41f93bee2b96c74c2647d3eeca06431958c",
-    "src/math/angle_step.c": "258cc41bd647950e4932452643e24e0b6444427fd2a921324f4a5ee8e6acaba9",
     "src/math/clear_motion_profile.c": "d5d5241ae305411294f266a748702fcb678e9d63e6dd07909173de2f1c0fcf26",
     "src/math/clear_running_profile.c": "c1bd6b8063a247d399977859058591205f24daaf3099bfd77fa3f7728f3ffa00",
     "src/math/configure_motion_profile.c": "2386dfd8898af529128f55fab6cb39ed44541e43219a8ff0f2b3779470677397",
@@ -219,12 +228,14 @@
     "src/math/scale_by_half_angle.c": "d2bf752885c27909dbb727e27a4f45ed22df52cdf535418ddbfc5743637864ee",
     "src/math/scale_vector_to_length.c": "d44cd49955db897f98121299a101c182806a1960f9254a67105401d6d352881a",
     "src/math/signed_angle_delta.c": "f087d1109b6b70640633bc9c072ba7e7060192e4b5aafd8c28e3164ee6998014",
+    "src/math/squared_distance_vectors.c": "a9fde21b5e2bb9103d80e586887cca43ea76aafbfbfb01270f85f4273762d8b2",
     "src/math/squared_distance_xz.c": "f7eeb722a5ef6726c3c2eca39902f82560767ae01fc0c82043976b5fa4420aa0",
     "src/math/step_clamped_angle_velocity.c": "a6306dd922ac576e98f34282afe014bcaec2bbc2b658bda2ed3cffb4572398f6",
     "src/math/step_running_profile.c": "991eafca63baac7add337670910c7a57f9d4f68b9de0278ad0d954292675cdd4",
     "src/math/step_vector_toward.c": "f2f5e1297910de96a89a61d35f827158d70e5ce1cf7f4d941c842c113f5bf53d",
     "src/math/submit_in_vector_frame.c": "df6b5fbe8aaa277f249b434e17233975be158a668398e8b1942801c14972abaf",
     "src/math/transform_in_vector_frame.c": "ce561f55fba8a4b7ed7f8e539ca36dacd4325e4e2953d98df39f57d5733fbf21",
+    "src/math/vector_subtract_and_angle_step.c": "caa3263a49c3e526d421945518097ee78b3c5f1c89a522e75c36dbfa28652d44",
     "src/objects/adjust_330.c": "abd866c6197d75fbfc52c4055f50c125d9f2e16b067f7f44e3c7c4ee6d3ea2c3",
     "src/objects/apply_object_velocity.c": "aa584d9c746bd26e4fae19787275125fe360873c32d188402218b654b7429399",
     "src/objects/apply_resource_118780.c": "95bc9daf685de8ba42b3592cf6a2d11caf2d890d34d33c256fbfdb296ba9eac1",
@@ -486,6 +497,7 @@
     "src/samples/distance_xz.c": "0b19755f9b4a04b22e14175a634c3a2109e26f77939f73fcdbe7364f65f1aa09",
     "src/samples/init_bytes.c": "fad10d35a4c4b916c9928bc920492a1cf880496fff9994480ec603fcc0d6037b",
     "src/samples/mask_any.c": "7623e7d4ba491002de5f0fcaa39eae8f29046a2a2f1d83f83b60e612115391a7",
+    "src/samples/query_flag.c": "7dc4c08be49e57585f1d505fc55971c8deee5d84e71b3c6fec785189de6fd601",
     "src/ui/adjust_hex_field.c": "e57b41c6aeaa8fc7ad80644140feb0bde0fa42772ac24f12d6c675cbf5481cff",
     "src/ui/adjust_integer_field.c": "334dc49d9be67a92592762127402f2020fe4a28aa900eaa22291985047e39828",
     "src/ui/clear_float_field.c": "8b868382ee0bce0180a1e54d2aee74e07a80c63770bc7e1b3a72cad9b21e1e74",
@@ -1504,7 +1516,7 @@
       "off",
       "-O2"
     ],
-    "distance_xz": [
+    "squared_distance_vectors": [
       "-proc",
       "SH4",
       "-endian",
@@ -1527,6 +1539,17 @@
       "-O2"
     ],
     "scale_vector_to_length": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_resource_entry_pointers": [
       "-proc",
       "SH4",
       "-endian",
@@ -2551,6 +2574,39 @@
       "off",
       "-O2"
     ],
+    "update_effect_rotation_record": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "update_effect_control_input": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "effect_control_button": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "initialize_effect_default": [
       "-proc",
       "SH4",
@@ -2706,6 +2762,17 @@
       "-O2"
     ],
     "create_effect": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_effect_785c": [
       "-proc",
       "SH4",
       "-endian",
@@ -2971,6 +3038,17 @@
       "off",
       "-O2"
     ],
+    "check_effect_motion_gate": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_effect_0": [
       "-proc",
       "SH4",
@@ -3070,7 +3148,7 @@
       "off",
       "-O2"
     ],
-    "angle_step": [
+    "vector_subtract_and_angle_step": [
       "-proc",
       "SH4",
       "-endian",
@@ -3082,6 +3160,17 @@
       "-O2"
     ],
     "angle_halfway": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "angle_fraction_step": [
       "-proc",
       "SH4",
       "-endian",
@@ -5050,6 +5139,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4117856,
+  "source_only_rejected_retained_bytes": 4116876,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

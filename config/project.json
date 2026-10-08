@@ -2280,24 +2280,34 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
     },
     {
-      "id": "distance_xz",
-      "address": "0x8c03f0a0",
-      "source": "src/samples/distance_xz.c",
-      "entry": "_distance_xz",
+      "id": "squared_distance_vectors",
+      "source": "src/math/squared_distance_vectors.c",
+      "address": "0x8c03f074",
+      "entry": "_squared_distance_xyz",
+      "headers": [
+        "src/include/vector3.h"
+      ],
       "ranges": [
         {
-          "offset": 192672,
-          "size": 24
+          "offset": 192628,
+          "size": 68
         }
       ],
-      "reference_sha256": "69c62bd0af36d2f49303729aa7fe7d2daa8beaeda06968da2607d44d1ed55e88",
       "functions": [
+        {
+          "name": "squared_distance_xyz",
+          "address": "0x8c03f074",
+          "size": 44
+        },
         {
           "name": "distance_xz",
           "address": "0x8c03f0a0",
           "size": 24
         }
-      ]
+      ],
+      "reference_sha256": "da3aee24f6162fe8221c6272a3907e7bd3af30075a7b4f18cae14b68fc4e6b55",
+      "symbols": {},
+      "boundary_review": "0x8c03f074-0x8c03f0b8: XYZ44-byte entry including natural alignment, unchanged XZ24-byte sample. Original sample file remains unchanged for the independent five-function proof; stage108."
     },
     {
       "id": "distance_xz_root",
@@ -2346,6 +2356,31 @@
         "src/include/vector3.h"
       ],
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage69."
+    },
+    {
+      "id": "initialize_resource_entry_pointers",
+      "source": "src/effects/initialize_resource_entry_pointers.c",
+      "address": "0x8c03f128",
+      "entry": "_initialize_resource_entry_pointers",
+      "headers": [
+        "src/include/resource_entry_list.h"
+      ],
+      "ranges": [
+        {
+          "offset": 192808,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_resource_entry_pointers",
+          "address": "0x8c03f128",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "75c36deedf9dd805f9fdbb9b4a860206bf04b1f8d9bb8a0ac502af26f39394fb",
+      "symbols": {},
+      "boundary_review": "Raw0x8c03f128-0x8c03f14c: RTS delay144, alignment146, pointer literal148, next entry14c; complete36-byte source exact twice; stage108."
     },
     {
       "id": "normalize_vector_checked",
@@ -4714,6 +4749,81 @@
       "boundary_review": "Raw SH4 entry through adjacent entry, including literals/alignment. Link functions combined in original order for natural alignment; no padding inserted. Final source exact twice; reconstruction-stage60."
     },
     {
+      "id": "update_effect_rotation_record",
+      "source": "src/effects/update_effect_rotation_record.c",
+      "address": "0x8c0a6d10",
+      "entry": "_update_effect_rotation_record",
+      "headers": [
+        "src/include/effect_control_input.h"
+      ],
+      "ranges": [
+        {
+          "offset": 617744,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_effect_rotation_record",
+          "address": "0x8c0a6d10",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "7e8cefc4ec46df228adf592d663b1ddae3f477e2ddc33d97e06763eac08272bb",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry through adjacent entry, including return delay, literal pool and compiler alignment; final source exact twice. Checked existing or new provisional offsets; stage108."
+    },
+    {
+      "id": "update_effect_control_input",
+      "source": "src/effects/update_effect_control_input.c",
+      "address": "0x8c0a6d90",
+      "entry": "_update_effect_control_input",
+      "headers": [
+        "src/include/effect_control_input.h"
+      ],
+      "ranges": [
+        {
+          "offset": 617872,
+          "size": 384
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_effect_control_input",
+          "address": "0x8c0a6d90",
+          "size": 384
+        }
+      ],
+      "reference_sha256": "359bbc6d0e295d179e6cb19e3823491773cadcc3a0778c3242ac4101ef5759f6",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry through adjacent entry, including return delay, literal pool and compiler alignment; final source exact twice. Checked existing or new provisional offsets; stage108."
+    },
+    {
+      "id": "effect_control_button",
+      "source": "src/effects/effect_control_button.c",
+      "address": "0x8c0a6f10",
+      "entry": "_effect_control_button",
+      "headers": [
+        "src/include/effect_control_input.h"
+      ],
+      "ranges": [
+        {
+          "offset": 618256,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "effect_control_button",
+          "address": "0x8c0a6f10",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "e076274e577b2810a8a865a08db26188a132dfee4897da1ff27f44ecefb60e10",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entry through adjacent entry, including return delay, literal pool and compiler alignment; final source exact twice. Checked existing or new provisional offsets; stage108."
+    },
+    {
       "id": "initialize_effect_default",
       "source": "src/effects/initialize_default.c",
       "address": "0x8c0a6f38",
@@ -5110,6 +5220,33 @@
         "_effect_init_at": "0x8c0a6ff0"
       },
       "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
+    },
+    {
+      "id": "create_effect_785c",
+      "source": "src/effects/create_effect_785c.c",
+      "address": "0x8c0a785c",
+      "entry": "_create_effect_785c",
+      "headers": [
+        "src/include/effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 620636,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_785c",
+          "address": "0x8c0a785c",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "c3396f2c3854c6dece8cb52ebcab8f0d8fb14c19cabbc5e601416ac7533f8795",
+      "symbols": {
+        "_initialize_at": "0x8c0a70b0"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry, including return delay, literal pool and compiler alignment; final source exact twice. Checked existing or new provisional offsets; stage108."
     },
     {
       "id": "create_effect_78d0",
@@ -5761,6 +5898,32 @@
       "boundary_review": "Raw little-endian SH4. Return at 0x8c0a9654 and NOP delay at 0x8c0a9656; adjacent constructor at 0x8c0a9658. Complete fixed-toolchain match independently twice; reconstruction-stage44."
     },
     {
+      "id": "check_effect_motion_gate",
+      "source": "src/effects/check_effect_motion_gate.c",
+      "address": "0x8c0aa6a8",
+      "entry": "_check_effect_motion_gate",
+      "headers": [
+        "src/include/effect_motion_gate.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 632488,
+          "size": 136
+        }
+      ],
+      "functions": [
+        {
+          "name": "check_effect_motion_gate",
+          "address": "0x8c0aa6a8",
+          "size": 136
+        }
+      ],
+      "reference_sha256": "8e11a3a64a75742d76a90e4b4cc950e1b334b751e9df86c6669d31e0877d606b",
+      "symbols": {},
+      "boundary_review": "Raw entry0x8c0aa6a8, RTS delay at0x8c0aa726, literals at0x8c0aa728/72c, adjacent entry0x8c0aa730; complete136bytes independently exact twice; stage106."
+    },
+    {
       "id": "spawn_effect_0",
       "source": "src/effects/spawn_effect_0.c",
       "address": "0x8c0aa77c",
@@ -5983,26 +6146,32 @@
       "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
     },
     {
-      "id": "angle_step",
-      "source": "src/math/angle_step.c",
-      "address": "0x8c0c4f90",
-      "entry": "_angle_step",
+      "id": "vector_subtract_and_angle_step",
+      "source": "src/math/vector_subtract_and_angle_step.c",
+      "address": "0x8c0c4f68",
+      "entry": "_subtract_vector_components",
       "headers": [],
       "ranges": [
         {
-          "offset": 741264,
-          "size": 56
+          "offset": 741224,
+          "size": 96
         }
       ],
       "functions": [
+        {
+          "name": "subtract_vector_components",
+          "address": "0x8c0c4f68",
+          "size": 40
+        },
         {
           "name": "angle_step",
           "address": "0x8c0c4f90",
           "size": 56
         }
       ],
-      "reference_sha256": "6551fb1820a78259c9b32f8c7e090e367f97727804bdbccb6d540951538eb305",
-      "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c4f90; early return at 0x8c0c4fa6 with nop delay slot; final return delay slot at 0x8c0c4fbc; zero alignment at 0x8c0c4fbe; literals 0x0000ffff and 0x00008000 at 0x8c0c4fc0/0x8c0c4fc4; next entry 0x8c0c4fc8. Full 56-byte fixed-C match. See reconstruction-stage13."
+      "reference_sha256": "8ca2026b4137568980b39e9efdf3e4a0f2c7e311e3a51f08f11253816f78d874",
+      "symbols": {},
+      "boundary_review": "0x8c0c4f68-0x8c0c4fc8: exact subtract body, compiler-generated next-function alignment and unchanged previously matched angle_step. New coverage40bytes; stage106."
     },
     {
       "id": "angle_halfway",
@@ -6025,6 +6194,29 @@
       ],
       "reference_sha256": "50e3c599d467baa9e1c268e978475b93aa0746f1516249ac386a7afdb67ca08d",
       "boundary_review": "Raw little-endian SH-4 review: entry 0x8c0c4fc8, return delay slot at 0x8c0c4fd8, zero alignment word at 0x8c0c4fda, 0x0000ffff literal at 0x8c0c4fdc, next entry 0x8c0c4fe0. Full 24-byte fixed-C match. See reconstruction-stage13."
+    },
+    {
+      "id": "angle_fraction_step",
+      "source": "src/math/angle_fraction_step.c",
+      "address": "0x8c0c4fe0",
+      "entry": "_angle_fraction_step",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 741344,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "angle_fraction_step",
+          "address": "0x8c0c4fe0",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "1c4f5da41991a03dd52b0b9b8bc88028bba1b2c82e104c7e3045f779499d23fa",
+      "symbols": {},
+      "boundary_review": "Raw0x8c0c4fe0-0x8c0c5018: return delay0x8c0c500a; three literals500c/5010/5014; next entry5018. Final complete56-byte source exact twice; stage107."
     },
     {
       "id": "clamp_int",

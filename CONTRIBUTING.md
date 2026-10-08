@@ -34,3 +34,7 @@ C++ is accepted under the same full-range matching rule. Use a `.cpp` source and
 an explicit `"language": "c++"` manifest entry. Keep declared header dependencies
 and checked provisional layouts; do not add assembly, copied objects or padding
 to force a match. The base compiler flags and optimization settings remain pinned.
+
+After ten distinct unsuccessful hypotheses on a target, or sooner when no useful
+new evidence remains, record the blocker and park it. Preserve counts across
+sessions and revisit only with new evidence. Group identical compiler outputs.

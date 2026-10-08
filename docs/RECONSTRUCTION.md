@@ -5086,3 +5086,588 @@ panel draw remains244 bytes versus240 expected. Supporting matches do not replac
 primary acceptance. Compiler, base flags and complete-range rules are unchanged.
 Publication retains default scanner rules and the single verified source-hash
 exception with its stage-75 detection control.
+
+
+## Primary scheduling investigation, stage 98
+
+No function is admitted in this stage. Both primary acceptance conditions remain
+unfulfilled: operation_45f04 is 512 bytes with 30 differing bytes, first 0x8c045fdd;
+emit_5fbf8 is 388 with 8 differing bytes, first 0x8c05fc56. The 457 admitted functions,
+409 modules, 45,056 compiled full-range bytes and 4,117,856 retained reference bytes
+are unchanged. The reactivated goal stays active; no commits or pushes occur.
+
+The current source-validation receipt, integrated image, five-function proof and
+saved focused export all pass freshness checks. All admitted source/header hashes
+and prior recorded reconstruction inputs are unchanged. Stage97 retains the most
+recent two-fresh-build, 53-test and source-only-rejection evidence; this scratch-only
+stage does not claim another integration or fresh full test run.
+
+New primary experiments retain full source snapshots, headers, hypotheses,
+compiler/linker artifacts and comparisons. Conversion helper boundaries, observed
+orientation qualifiers, 32-bit double declarations, divisor operand order and
+function-wide scalar lifetimes do not improve 512/30. The divisor-target form
+preserves the desired callee-load-before-FTRC ordering but reverses literal order
+and remains 512/32. Address-exposing inline owner locals produces 520/524-byte code;
+address-exposing float outputs produces further stack traffic. Ordinary C++ scalar
+cleanup trials either add stack traffic or emit an out-of-line destructor requiring
+operator delete; none qualify.
+
+The raw handle-start callee sign-extends the three scalar arguments as bytes and
+packs them into a command. Narrow byte formals and unspecified prototypes leave
+388/8 unchanged. Variadic declarations are diagnostic only and expand the range;
+they supply no evidence of a variadic original prototype. Packed bitfield locals,
+scan bitfields, late merged scan blocks and dead parameter reuse also fail.
+Full-width flag bitfields and simple scalar lifetime changes reproduce the baseline.
+
+The historical audit found no hidden complete primary match. Register-normalized
+instruction-region searches find the desired scan shift/move order in a few older
+late-merge variants, but those retain unwanted branches or other differences.
+Retesting those forms with the corrected field scopes still fails. Neither the
+actual-register region search nor the complete final-call sequence search finds a
+matching primary candidate. Audits and exact differing offsets remain in scratch.
+
+Two pre-reactivation supporting panel draw trials (376 and 176 bytes) match in
+scratch only; neither is admitted or counted toward progress. Signed remainder
+keeps its previously recorded 180-byte exceptional ABI blocker. No compiler flag,
+assembly substitution, copied runtime object or inserted padding is used.
+
+Receipt: config/primary-iteration-validation.json. Scratch experiment-index.json
+records all trial hashes; primary-region-audit.json and
+primary-register-region-audit.json locate historical partial instruction patterns.
+Reproduce the active baseline with tools/candidates.py operation_45f04 emit_5fbf8.
+Continue new source-level hypotheses under the unchanged complete-range gate.
+
+
+## Primary address and lifetime follow-up, stage 99
+
+No admission or coverage change: both primary targets remain **512/30** and
+**388/8**, with first differences at **0x8c045fdd** and **0x8c05fc56**. Fresh
+compiles after all experiments reproduce those complete-range results. The 457
+admitted matches, 409 modules, 45,056 compiled bytes and 4,117,856 retained reference
+bytes remain unchanged. The goal remains active and no commits or pushes occur.
+
+The stage contains 73 primary experiments, including the two baseline repeats;
+two are rejected for compiler-emitted data outside the allowed code/literal range.
+Each trial has a source snapshot, hypothesis and comparison; successful builds
+also retain the compiler receipt and full output. Declared project source/header
+hashes, the current exact integrated-image/build proof and the saved focused
+Ghidra export all pass freshness checks. Stage97 remains the most recent full
+integration verification with two builds, 53 tests and source-only rejection.
+
+C++ scalar references, explicit callee-pointer lifetimes and post-call volatile
+factor diagnostics do not improve the angle sequence. Referencing literal
+constants creates allocated data and is rejected; observed local variables spill.
+Reusing the divisor as output fixes callee-load-before-FTRC only when its literal
+is emitted before the scale, leaving 512/32. The 12 explicit scale/divisor/orientation
+initializer order trials establish this coupling without improving the baseline.
+Standard/SDK callee-name diagnostics also leave the bytes unchanged and establish
+no new symbol identity.
+
+A provisional nonvirtual angle base at offset 0x64 preserves all original offset
+checks and adds prefix/subobject size checks. Implicit field and member access
+still produce 512/30; explicit base conversion increases output to 528. A checked
+four-byte aggregate copy of the angle spills, while scalar/reference access again
+normalizes to baseline. Data-member pointers either normalize or add address
+instructions. These alternate layouts remain confined to scratch snapshots.
+
+Whole-function inlining compiles to the correct total sizes but changes other
+registers and control flow: operation 512/48, emission 388/45. The actual problematic
+angle, scan and final-call sequences remain unchanged. Rechecking implicit stride
+expressions under the current corrected field scopes produces 388/21 or 392 bytes;
+partial stride recomputation returns to 388/8. Moving loop invariants across the
+entry guards changes broader allocation. Late-selected zero call arguments keep
+unwanted branches, while constant single-block forms return to 388/8.
+
+Receipt: config/primary-iteration-validation.json, with a hash-linked stage98
+receipt retained in stage99 scratch. The matching manifest and unresolved queue
+are unchanged; neither primary is marked matched. No compiler setting, manual
+padding, assembly substitution or runtime object is introduced. Reproduce with
+`python3 -B tools/candidates.py operation_45f04 emit_5fbf8`; inspect the stage99
+experiment-index.json before selecting another source hypothesis.
+
+
+## Primary ABI and scheduling evidence, stage 100
+
+The batch remains incomplete: operation_45f04 is **512 bytes / 30 differing**,
+first **0x8c045fdd**; emit_5fbf8 is **388 / 8**, first **0x8c05fc56**. Both active
+sources were freshly recompiled after all trials. No ranges were admitted: totals
+remain **457 functions / 409 modules / 45,056 compiled full-range bytes /
+4,117,856 retained reference bytes**. The goal remains active. No commits or
+pushes occur in this stage.
+
+The 82 trial snapshots retain hypotheses, comparisons and successful compiler
+receipts. One file-scope constant function pointer is rejected for extra allocated
+data. All admitted source/header hashes and recorded reconstruction inputs are
+unchanged. Current exact build/image proof and the focused export pass freshness
+checks; the stage97 two-build, 53-test and source-only evidence remains the most
+recent full integration verification.
+
+Named stride values retain variable SHLD or MUL instructions instead of the
+reference's immediate shifts. Equivalent zero expressions based on narrow/masked
+halves retain extra integer operations. Twenty-four inline factor-parameter orders
+all reproduce 512/30. Source control blocks, coherent signed-long angle fields and
+formals, and most integer forwarding variants also reproduce that result. Feeding
+the final predicate directly changes comparison materialization and grows the
+range. Reversing integer forwarding around the entire atan expression captures
+the orientation before atan and grows to 516; capturing atan separately returns to
+baseline. No compiler settings or acceptance rules change.
+
+An aligned absolute-literal/PC-relative-load scan finds two actual literal-based
+callers of 0x8c3452e0: the primary and its known related emission function. A third
+use passes the routine's address to an error reporter. This is a bounded literal
+xref audit, not proof that computed indirect references cannot exist.
+
+The archived R10.1 sound header supports identifying that callee as sdShotPlay:
+its three signed-byte parameters and enum result fit the raw accesses and error
+values. Its handle is a pointer to a port-reference pointer. The companion header
+defines Sint8 as signed char and Sint32 as signed long. A raw EXTS.B at 0x8c345886
+also supports the volume setter's byte argument. Cumulative checked API-type
+trials, enum results, external declarations and byte-indexed typed handle tables
+still give 388/8. Direct typed indexing instead emits repeated multiplies and
+produces 416 bytes. This evidence remains a supported identification hypothesis;
+no provisional symbol is renamed solely from the header. See the pinned SDK
+header URL and hashes in the scratch sdk-sound-header/receipt.json. The downloaded
+headers remain research-only and are not copied into the project or published.
+
+A separate literal-xref audit saves 48 angle-difference uses and their raw windows.
+Classification finds both the reference's FR1/reused-factor schedule and the
+candidate's FR2/FR1 schedule in the original image. The first family includes
+0x8c0bee98 and 0x8c15463c/66a; the second includes 0x8c05378c. These are useful
+comparison contexts, not admitted functions. The full callsite table and
+primary-angle-use-classification.json are retained for the next source hypothesis.
+
+Correction to earlier shorthand: stage12/caller-unit.json targets the 136-byte
+neighbor at 0x8c044018. It is not the independently admitted 100-byte caller at
+0x8c043fb4. All actual comparisons used their recorded correct unit ranges; only
+the prose shorthand was wrong. Current block-trial hypotheses retain an explicit
+correction rather than erasing the original note.
+
+Receipt: config/primary-iteration-validation.json, with the stage99 receipt saved
+and hash-linked in scratch. The manifest and unresolved queue remain unchanged.
+Reproduce the primaries with `python3 -B tools/candidates.py operation_45f04
+emit_5fbf8`; inspect the new callsite evidence and failed trials before another
+experiment. Signed remainder retains its 180-byte exceptional ABI blocker; no
+assembly, copied runtime object or manual padding substitutes for exact source.
+
+
+## Primary lifetime experiments, stage 101
+
+The batch remains incomplete: operation_45f04 is **512 bytes / 30 differing**,
+first **0x8c045fdd**; emit_5fbf8 is **388 / 8**, first **0x8c05fc56**. Fresh
+baseline compiles reproduce both complete ranges. No functions are admitted;
+verified totals remain **457 functions / 409 modules / 45,056 compiled bytes /
+4,117,856 retained reference bytes**. The goal remains active. No commits or
+pushes occur in this stage.
+
+The 76 snapshots include 74 diagnostic trials and two baseline revalidations;
+none are compiler/linker rejections. Hypotheses, source/header snapshots,
+compiler receipts and comparisons are preserved in reconstruction-stage101.
+All admitted source/header hashes and recorded reconstruction inputs are
+unchanged. Source proof and focused-export freshness checks pass. The most recent
+full integration checks remain stage97's two exact builds, integrated-image
+comparison, five-function proof, 53 tests and source-only rejection; this stage
+does not claim a new full test run.
+
+Re-reading stage12 translation_context.py and stage7 identity_probe.py rules out
+repeating adjacent translation-unit and symbol-identity probes. Narrowing the
+54-entry induction variable adds extension instructions; signed long retains the
+baseline and unsigned int changes the loop comparison. Some offset-type controls
+repeat stage16; scratch historical-overlap-note.txt records that overlap explicitly.
+
+A reused scale/divisor storage with the quotient assigned back into that storage
+still gives 512/30 for ordinary scalars. Arrays/unions grow to 592 bytes and a
+reference alias grows to 560. Checked rotation-record/array layouts with the
+observed angle at offset 0x64 all retain 512/30, for int and long words. These
+alternative layouts remain hypotheses and are not adopted in project headers.
+
+Changing the final sound call's successor to switch/loop/conditional-return
+blocks grows the function; a one-shot block keeps 388/8. A new mutable priority
+variable initialized inside the successful preparation branch changes the final
+call to MOV R11,R7 before the callee load and MOV R10,R5 in the delay slot. This
+matches the desired high-half move placement but propagates zero through saved
+R11 in earlier setup calls: the full range is 388/12, not an improvement. Its exact
+difference offsets are 94,95,96,97,224,225,230,231,248,249,272,273. The reference
+requires MOV #0,R7 and no earlier saved-zero propagation. Narrowing that variable's
+live range after reset or volume grows to 392; const qualification, initialization
+after pan, or explicit final zero reassignment restores 388/8. Zero algebra retains
+extra operations or branches. Raw candidate disassemblies preserve this distinction
+so the scheduling change is not mistaken for a match.
+
+Receipt: config/primary-iteration-validation.json, hash-linked to the prior
+stage100 receipt saved in scratch. Manifests and queue remain unchanged.
+Reproduce with `python3 -B tools/candidates.py operation_45f04 emit_5fbf8`.
+The next source investigation should distinguish early constant propagation from
+late register-value copying, using this shared-zero result and the saved angle
+callsite families; do not repeat the const/scope/reassignment matrix above.
+Signed remainder retains its complete 180-byte exceptional ABI blocker. No assembly,
+manual padding, runtime object or modified compiler settings substitute for source.
+
+
+## Primary substitution and address experiments, stage 102
+
+The batch remains incomplete: operation_45f04 is **512 bytes / 30 differing**,
+first **0x8c045fdd**; emit_5fbf8 is **388 / 8**, first **0x8c05fc56**. Both
+active source baselines are freshly recompiled. No functions are admitted;
+totals remain **457 functions / 409 modules / 45,056 compiled full-range bytes /
+4,117,856 retained reference bytes**. The goal remains active. No commits or
+pushes occur in this stage.
+
+The 99 snapshots comprise 97 diagnostic trials and two baseline revalidations.
+Six rejected trials remain preserved: three C89 copy-chain generators interleaved
+statements and declarations, and three predicates used the compiler's disabled
+built-in bool type. Follow-ups move C89 declarations first and explicitly return
+unsigned char 0/1. The local pinned C Compilers Reference, Using the bool Type,
+documents that bool support defaults off. No compiler flag or pragma changes.
+The 91 successful diagnostics yield 21 distinct binary hashes; the equivalence
+groups are saved to avoid mistaking source variety for different generated code.
+
+All admitted source/header hashes and recorded reconstruction inputs remain
+unchanged. Source-proof and focused-export freshness checks pass. The most recent
+full integration evidence is still stage97: two exact builds, integrated-image
+comparison, five-function proof, 53 tests and source-only rejection. This stage
+does not claim new full integration checks.
+
+Inlining a priority output parameter, via pointer or reference, returns to 388/8.
+Scalar copy/forward/output chains of length 2/4/8 produce 512/30 for the angle
+conversion and 388/13 for explicit high-half capture in emission. The historical
+saved-zero result therefore does not transfer through these copy forms. Inlined
+read/write divisor-output helpers reproduce 512/30 or 512/32 depending on constant
+materialization order, without resolving the reused-FR1 schedule.
+
+The copy-chain hypothesis was informed by the author-maintained MWCC debugger
+notes at https://github.com/cadmic/mwcc-debugger/blob/main/README.md. Those notes
+cover GC/PPC, and their coalescing behavior is not established for this SH4 build.
+No debugger or replacement compiler is installed; only ordinary source probes
+were compiled. The external-research-note.txt records this applicability limit.
+
+Splitting the 32-byte scan stride between an explicit shift and typed-pointer
+scaling grows the function to 392–400 bytes. Initial flag predicates returning
+raw bits or int 0/1 retain 388/8 when passed the loaded value; including the address
+calculation in the helper grows to 392. A narrow byte result grows to 396. Constant
+pointer bindings do not alter the 8-byte baseline; making the mask const changes
+register allocation and produces 388/32, or 388/27 with a const threshold.
+
+A useful angle distinction is established: with both factors mutable and scale
+initialized first, scale/divisor literals occupy offsets 488/492. Making only
+scale const swaps them to 492/488 even with the same declaration order, producing
+512/32. Making divisor const restores 488/492 even if its declaration comes first.
+Qualifying the nonliteral product/orientation/quotient temporaries does not improve
+512/30. Thus declaration order alone is insufficient to classify these variants;
+record factor qualification and emitted literal positions together. The candidate
+disassemblies preserve this evidence and the earlier stage50/stage99 families.
+
+Receipt: config/primary-iteration-validation.json, hash-linked to the stage101
+receipt preserved in scratch. Manifests and queue remain unchanged. Reproduce
+with `python3 -B tools/candidates.py operation_45f04 emit_5fbf8`.
+Further source work should use the literal/substitution distinction and reference
+callsite families, avoiding another plain copy, const, inline-output or typed-stride
+matrix. The full 180-byte signed-remainder exceptional ABI remains unresolved;
+no assembly, manual padding or copied runtime object is admitted.
+
+
+## Primary conversion-context audit, stage 103
+
+The primary batch remains incomplete: operation_45f04 is **512 bytes / 30
+differing**, first **0x8c045fdd**; emit_5fbf8 is **388 / 8**, first
+**0x8c05fc56**. Both active sources are freshly recompiled. No ranges are
+admitted: **457 functions / 409 modules / 45,056 compiled full-range bytes /
+4,117,856 retained reference bytes** remain verified. The goal remains active.
+No commits or pushes occur in this stage.
+
+The 58 snapshots comprise 55 primary diagnostics, one smaller diagnostic control,
+and two primary baseline revalidations. Twelve rejected trials remain preserved:
+six incorrectly assumed a four-byte enum for 0..32768; six plain fabsf calls remain
+external under the pinned configuration and fail linking. Follow-ups explicitly
+check the natural two-byte result enum or add a numeric sentinel to require four
+bytes. Signed-word conversion enums leave 512/30; the two-byte callee result gives
+512/32. This confirms the value of width assertions and establishes no new ABI.
+
+Changing surrounding distance/radius/value types to the compiler's checked
+32-bit double, or adding register/const hints, leaves 512/30. Inlining only radial
+predicates also leaves 512/30. Materializing the radial predicate afterward grows
+to 520; computing it before the angle calls produces 512/342 with different saved
+registers and comparisons. Raw disassembly still shows the same undesired
+FR2/FR1 factor schedule despite removing the radius values from the live FPR set.
+Qualifiers on literal rvalues, the atan result, quotient and call return types
+all leave 512/30; unlike volatile objects they do not introduce extra storage.
+
+An audit of all admitted unit ranges looks for two literal loads into the same
+factor register separated by multiply then divide of the same output register.
+The sole linear scan hit, controller_child_parameters, crosses mutually exclusive
+branches. A control-transfer filter removes it: there are no hits in a single
+basic block. Both the initial candidates and corrected result remain in scratch.
+This bounded scan does not prove absence of every equivalent instruction shape.
+
+The existing 120-byte angles_from_xy control is freshly compiled and still has
+seven differences at offsets 77–83, first 0x8c0c50e1. Its first conversion matches;
+its second needs the same serialized factor-load pattern as the primary, despite
+having neither an orientation load nor an angle_difference call. It is a smaller
+experiment for the floating mismatch, not an admission or replacement acceptance
+criterion. Source, unit, comparison and raw reference/candidate assembly are saved.
+Further work should exploit that isolation rather than retesting orientation
+layouts or live radius-register types.
+
+The archived Ninja macro receipts from stage15 are hash-validated and reused.
+They already cover the ordinary atan2f/radians-to-angle expression and signed-long
+Angle type; no SDK header download or repeated macro sweep occurs. The local
+compiler intrinsic list motivates a plain standard-math absolute-value probe,
+but its six calls remain external. No flags, pragmas, instruction substitutions
+or extra symbol bindings are introduced to force those probes to link.
+
+All admitted source/header hashes and recorded reconstruction inputs remain
+unchanged. Source-proof and focused-export freshness checks pass. The most recent
+full integration verification remains stage97's two exact builds, image comparison,
+five-function proof, 53 tests and source-only rejection. This stage does not claim
+a new full test run. The signed-remainder 180-byte exceptional ABI blocker remains;
+no assembly, manual padding or copied runtime object is admitted.
+
+Receipt: config/primary-iteration-validation.json, hash-linked to the stage102
+receipt preserved in scratch. Manifests and unresolved queue remain unchanged.
+Reproduce primaries with `python3 -B tools/candidates.py operation_45f04 emit_5fbf8`;
+inspect reconstruction-stage103/angle-pair-control before new FP source hypotheses.
+
+
+## Result ownership and loop boundaries, stage 104
+
+The batch remains incomplete: operation_45f04 is **512 bytes / 30 differing**,
+first **0x8c045fdd**; emit_5fbf8 is **388 / 8**, first **0x8c05fc56**. Fresh
+compiles reproduce both active sources. No functions are admitted. Verified totals
+remain **457 functions / 409 modules / 45,056 compiled full-range bytes /
+4,117,856 retained reference bytes**. The goal remains active; no commits or
+pushes occur in this stage.
+
+The 37 snapshots contain 19 emission diagnostics, 16 smaller angle-control
+diagnostics and two primary baseline revalidations. None are compiler/linker
+rejections. Sources, declared headers, hypotheses, compiler receipts and whole
+range comparisons are retained. Binary equivalence groups distinguish source
+variants from distinct generated outputs.
+
+In the 120-byte paired converter, alternating the input and factor variables as
+product/quotient destinations, inserting scalar copies, and an inline two-value
+swap all retain 120/7. Free C++ functions and reference parameter forms also retain
+120/7. An actual nonvirtual member changes general-register allocation and gives
+120/24; inspection confirms that the same undesired FR2/FR1 conversion remains.
+No variant supplies the reference's serialized floating-factor schedule, and none
+is admitted or used as a substitute for the primary 512-byte target.
+
+Moving the emission index increment into offset formation gives 388/40; a
+preincrement formulation gives 388/37. Incrementing after the saved offset or flag
+read gives 388/30. A body-tail increment retains 388/8. All forms still visit the
+same 54 entries, but their source-level equivalence does not satisfy the byte gate.
+Putting either loop scalar into a checked four-byte record, union, one-element
+array or full-width bitfield adds stack traffic and grows to 396. These carrier
+forms should not be confused with the earlier table-field representation trials.
+
+Combining the pan/start calls in a comma expression retains 388/8. Inlining the
+whole reset/volume/pan/start sequence with three parameter orders also retains
+388/8. Each table reload remains after the preceding call; no alias-sensitive
+load is moved or cached to invent a match. This rules out those specific larger
+inline boundaries as a remedy for the final argument-copy schedule.
+
+All admitted source/header hashes and recorded reconstruction inputs remain
+unchanged. Source-proof and focused-export freshness checks pass. The latest full
+integration verification remains stage97: two exact builds, integrated-image
+comparison, five-function proof, 53 tests and source-only rejection. No new full
+test run is claimed. Signed remainder retains its 180-byte exceptional ABI blocker.
+No manual instructions, padding, compiler changes or runtime objects are used.
+
+Receipt: config/primary-iteration-validation.json, hash-linked to the prior
+stage103 receipt saved in scratch. Manifests and unresolved queue remain unchanged.
+Reproduce both primaries with `python3 -B tools/candidates.py operation_45f04
+emit_5fbf8`. Future trials should seek a genuinely different arithmetic dependency
+or compiler-visible value lifetime; simple copies, two-scalar role swaps, reference
+parameters and sequence inlining now have explicit negative evidence.
+
+
+## Bounded investigation and target rotation, stage 106
+
+This batch adds **two exact functions and 176 compiled bytes**. Totals are
+**459 functions / 410 modules / 45,232 compiled full-range bytes / 4,117,680
+retained reference bytes**, or **1.0865% of the 4,162,912-byte decoded image**.
+Separately reconstructed static data remains zero. This is still a hybrid build.
+
+The new matches are vector subtraction at **0x8c0c4f68** (40 bytes, including
+natural next-entry alignment) and an effect motion-completion check at
+**0x8c0aa6a8** (136 bytes, including both literals). The subtraction reads and
+writes one component at a time, preserving alias behavior. Its isolated body is
+38 bytes; compiling it beside its genuine adjacent angle_step produces the exact
+96-byte combined module. The previous 56-byte angle_step source is retained
+verbatim and still matches; it earns no new coverage. Every one of the 457 prior
+function ranges and every previous source/header file is preserved. This is
+natural compiler alignment, with no inserted padding or instruction substitutes.
+
+The effect check preserves the unchecked resource pointer, byte136 flag bit3,
+ordered target-minus-position vector, zero-length early termination and the
+unordered-sensitive `!(phase < 1.0f)` termination condition. Its first complete
+C candidate matches. Provisional accessed prefixes have explicit offset and size
+checks; their extents are not claimed to establish complete allocation sizes.
+
+Investigation-only work adds **zero matching primary functions or bytes**.
+Fresh baseline compiles confirm operation_45f04 at **512/30**, first
+**0x8c045fdd**, and emit_5fbf8 at **388/8**, first **0x8c05fc56**. One genuinely
+distinct new hypothesis tests the interaction of external callee declarations
+with the previously different late-quotient lifetime. The predicted FR1 reuse
+fails: all three outputs are identical at 512/32. Existing SDK signed-byte
+sound ABI evidence, raw extension instructions and C++ member/default-argument
+experiments provide no supported new ABI correction. Compiler settings remain
+unchanged. The maximum is 20 hypotheses across both targets, not a quota to fill
+with equivalent variants. Both are now explicitly **parked and incomplete**.
+
+Revisit operation_45f04 only when an independent exact function demonstrates its
+single-block sequential FR1 factor reuse, or verified source context supports a
+materially different lowering assumption. Revisit emit_5fbf8 when an independent
+exact table scan or SDK-style call demonstrates its SHLL/MOV or final argument
+move scheduling, or verified ABI evidence contradicts the tested types. Precise
+byte offsets, predictions, prior-trial references and output equivalence groups
+are in `config/primary-iteration-validation.json` and stage106 scratch. The
+interrupted stage105's 51 historical trials are indexed separately; none added a
+match, and they are not presented as new stage106 hypotheses.
+
+Other unadmitted trials are retained without credit. The vector nonfinite check
+at 0x8c0c4f08 has 92/83 with direct short-circuit C and 96/70 with an explicit
+outer default; three XY-local variants produce the same104-byte output. The
+spawn initializer at0x8c0ab558 remains424/79 after replacing raw field accesses
+with existing checked types; externally declaring random worsens it to424/85.
+These targets are deferred rather than given another equivalent spelling sweep.
+Referenced resource/dispatch tables remain reference-backed. Their source types
+and allocation extents need independent evidence before static-data admission.
+
+Both new checked sources match independently twice. Two fresh exact project
+builds, integrated-image comparison, the five-function compiler proof and all
+**53 current research tests** pass. Source-only rejects **4,117,680 bytes** and
+preserves existing build artifacts. Focused evidence is regenerated because the
+manifest/queue changed, using a disposable database copy; its receipt validates.
+The image SHA-256 remains
+`11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0`.
+No gameplay, repacking, compiler change, assembly substitute, commit or push occurs.
+Original data, private saves, serial/access keys and unrelated changes are untouched.
+
+Continue across effect initialization and matrix/vector dependencies; rotate away
+from stalled targets and use new exact matches as compiler evidence. Do not resume
+the parked two merely because another batch starts. Reproduce the integrated
+state with `python3 -B tools/verify_source.py --check`; rebuild with
+`python3 -B tools/verify_source.py`; run tests with
+`python3 -B -m unittest discover -s tests -v`. The full integration receipt is
+`config/candidate-batch-validation.json`; stage106 scratch holds experiments,
+source-only preservation evidence, the previous receipts and raw disassembly.
+
+
+## Signed angle helper and continued target rotation, stage 107
+
+This batch adds **one exact function / 56 bytes**: angle_fraction_step at
+**0x8c0c4fe0–0x8c0c5018**, including its three literals. Totals are **460 functions /
+411 modules / 45,288 compiled full-range bytes / 4,117,624 retained reference
+bytes**, or **1.0879% of the decoded image**. Across the user's new bounded-and-rotate
+workflow, stages106–107 add **3 functions / 232 bytes**. All459 prior matches from
+stage106 and all existing source/header files remain preserved.
+
+The helper masks both inputs to16 bits and computes a signed wrapped delta.
+Strict bounds -0x3000 and +0x3000 select `(delta >> 1) - (delta >> 2)`; otherwise
+it uses `delta >> 1`. The final sum wraps to16 bits. Negative odd values must
+retain the observed arithmetic-shift rounding; substitution with ordinary
+signed division by4 would change behavior. The first candidate matches56 bytes,
+and the final readable source matches independently twice.
+
+Investigation-only work produces no classifier improvement: compiling the prior
+vector nonfinite candidates as C++ leaves identical92/83 and96/70 outputs.
+Unsigned-byte XY intermediate forms add instructions and produce identical104/91
+outputs; a byte result leaves92/83. These specific hypotheses are now recorded
+and grouped by binary hash. The classifier is deferred. The two original targets
+remain **parked/incomplete at512/30 and388/8**; neither is reopened or retested.
+No compiler setting changes are made beyond the existing authorized C++ language
+selector in the scratch-only language diagnostic.
+
+Two fresh exact builds, integrated-image comparison, the five-function proof,
+all **53 current research tests** and source-only rejection pass after integration.
+Source-only rejects **4,117,624 bytes** without changing existing build artifacts.
+Focused exports are refreshed for the changed manifest/queue using a disposable
+copy of the original database and then validated. Standalone static data remains
+unreconstructed. No commits, pushes, gameplay or disc repacking occur.
+
+Continue with a different effect initializer or matrix/vector dependency after
+checking prior failed hypotheses. The two parked targets have explicit evidence
+conditions in `config/primary-iteration-validation.json`; simply starting another
+batch is not a revisit condition. Use `python3 -B tools/verify_source.py --check`
+to verify the current receipt, or `python3 -B tools/verify_source.py` for two fresh
+builds. Current integration evidence is `config/candidate-batch-validation.json`;
+stage107 scratch retains all eight trials, predictions, raw instructions and
+compiler/output hashes, with equivalent outputs grouped.
+
+
+## Effect controls, vector distance and resource initialization, stage 108
+
+This batch adds **6 exact functions / 748 compiled full-range bytes**. Totals
+are **466 functions / 416 modules / 46,036 compiled bytes / 4,116,876 retained
+reference bytes**, or **1.1059% of the decoded image**. All 460 preceding matches
+and every prior source/header file are preserved. Standalone static data remains
+zero; the executable is still a hybrid reconstruction.
+
+| New function | Address | New full-range bytes |
+| --- | --- | ---: |
+| create_effect_785c | 0x8c0a785c | 116 |
+| update_effect_control_input | 0x8c0a6d90 | 384 |
+| effect_control_button | 0x8c0a6f10 | 40 |
+| update_effect_rotation_record | 0x8c0a6d10 | 128 |
+| squared_distance_xyz | 0x8c03f074 | 44 |
+| initialize_resource_entry_pointers | 0x8c03f128 | 36 |
+
+The factory transfers the checked types and external initializer declaration of
+its exact adjacent sibling, supplying four zero stack arguments. The signed
+upper-bound-only resource check and nullable allocation are preserved. The input
+update retains signed short axes, the asymmetric deadzone `(-12, 12]`, magnitude
+root/divide/clamp, post-call input reloads, short step conversion, ordered float
+stores and separate elevation clamps. Names describe observed operations; wider
+device and gameplay identities remain provisional. The button query's register
+result reproduces its saved-register boolean lowering. The global-record update
+preserves the observed base-plus32 null test and the two direction branches.
+
+XYZ squared distance emits the exact42-byte instruction body in isolation. Its
+genuine adjacent24-byte XZ sample naturally supplies the missing2-byte alignment,
+and the resulting68-byte module matches completely. The original XZ proof source
+is included verbatim and remains unchanged on disk; the five-function proof still
+builds it independently. This regrouping adds only44 bytes and one function, with
+no duplicate credit or artificial padding. Floating subtraction, multiplication
+and left-associated addition order are preserved.
+
+The resource initializer uses checked12-byte entries and an8-byte list. Both list
+pointer and unsigned count reload each iteration; no alias-sensitive load is
+cached. The raw loop and runtime-address literal match the complete36 bytes.
+The data audit separately records that0x8c466d98,0x8c46f100 and0x8c41cba0 lie
+outside the decoded image `[0x8c010000,0x8c408560)`. Their contents and zero-fill
+extents are not established by these references. No standalone-data bytes are
+claimed. The existing comparison tool rejects allocated non-text sections and
+continues reporting zero standalone-data reconstruction; its gates are unchanged.
+
+All18 experiment snapshots retain hypotheses, predicted instruction changes,
+sources and compiler/output receipts. They form7 distinct binary groups. Every
+final new source matches independently twice. The isolated42-byte XYZ output is
+retained as incomplete evidence; it was never admitted on its own. No new primary
+hypotheses are tested: both original targets remain **parked and incomplete at
+512/30 and388/8**. Their existing revisit conditions are unchanged. Investigation
+of runtime-address references adds no matching-data credit.
+
+After final integration, two fresh exact project builds, integrated-image
+comparison, five-function proof and all **53 current research tests** pass.
+Source-only rejects **4,116,876 bytes** without altering build artifacts. Focused
+exports are refreshed against the final manifest/queue on a disposable database
+copy and validated. Intermediate four-function verification logs are preserved
+separately from the final six-function checks. Compiler flags, original database,
+private data, serial/access keys, saves and unrelated changes remain untouched.
+No commits, pushes, gameplay or disc repacking occur.
+
+Reproduce with `python3 -B tools/verify_source.py --check`, or use
+`python3 -B tools/verify_source.py` for two fresh builds and the five-function proof.
+Run `python3 -B -m unittest discover -s tests -v` for current tests. Full evidence
+is in `config/candidate-batch-validation.json` and reconstruction-stage108 scratch.
+Continue across further effect lifecycle and vector/matrix dependencies after
+checking earlier failed records. Do not reopen the two parked targets merely
+because a new batch begins. The unfinished RGB565 filter and frame setup already
+have prior trials; the current new matches do not yet supply their missing patterns.
+
+
+## Publication cycle resumed
+
+The current user authorization includes reviewed commits and pushes. The current
+per-target limit is ten distinct unsuccessful hypotheses, with earlier parking
+when no useful evidence remains. Historical counts and parked blockers persist.
+Research receipts remain private; public progress binds the exact source inputs.
