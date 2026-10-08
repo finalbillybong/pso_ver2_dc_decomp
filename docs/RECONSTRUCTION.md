@@ -4501,3 +4501,62 @@ Static dispatch, globals and remaining callees retain reference dependence.
 Compiler, base flags, default GNU linker and full-range acceptance are unchanged.
 Publication retains all default scanner rules and the narrowly verified
 source-hash exception with its stage-75 detection control.
+
+
+## Shared buffer and resource widget callbacks, stage 87
+
+Four complete functions add **380 bytes**: shared allocation **0x8c193738** (44),
+widget destruction **0x8c194098** (84), update **0x8c1940ec** (108), and six-case
+dispatch **0x8c1941c0** (144). Totals are **408 functions / 361 modules /
+38,992 compiled full-range bytes / 4,123,920 retained reference bytes**, or
+**0.9367% whole-image coverage**. All 404 previous matches, module definitions
+and source/header hashes remain unchanged. Since the initial checkpoint,
+374 functions replace 35,348 bytes. Code-only completion remains unknown;
+separately reconstructed static data is zero.
+
+Typed external shared globals together with the allocator declaration resolve
+all 44 bytes of the earlier shared-buffer initializer. Its observed void return
+is preserved. Destruction retains the nullable owner, unconditional child
+release-one call, base release-zero call and positive signed pool release.
+Update preserves the flag-dependent field100 assignment, child-triggered panel
+clear/configuration and subsequent unconditional calls. A new checked 112-byte
+provisional view declares the observed tag, dispatch, size, panel, flags and
+child offsets without changing any earlier header.
+
+Dispatch uses the signed child byte, six cases and default skip. The complete
+144-byte comparison includes its compiler-generated six-entry jump table,
+literals and alignment. GNU linking leaves eleven differing table bytes; the
+already pinned native linker resolves the compiler's relocation encoding exactly,
+as in the earlier keyboard/notice switches. This module explicitly declares
+that linker; compiler binary, base flags and complete-range rules are unchanged.
+No table bytes are copied or patched.
+
+The two primary candidates are freshly reproduced at **512/30 and 388/8**.
+Independent pointer/constant aliases do not resolve them: angle variants emit
+536 or 548 bytes or retain 512/30; the scan-owner alias emits 384 bytes. Earlier
+buffer initialization remains **172/4**, first difference **0x8c1936c0**. A raw
+object-symbol audit establishes the triple-underscore delete symbol hidden by
+the linker diagnostic. Resolving it allows the C++ automatic-destructor trial
+to link, but it emits 232 bytes with an extra standalone destructor and still
+fails. Signed-short/owner-return declarations and cleanup scopes also fail.
+
+Widget construction **0x8c19402c** remains **108/4**, first difference
+**0x8c194047**, after external base and captured tag value. Notification
+**0x8c194158** remains **104/4**, first difference **0x8c19418e**, after actual
+C++ virtual dispatch. External/nonvirtual member panel calls and pointer/address
+variants do not resolve its delay-slot swap. Neither function is admitted.
+
+All **52 trials** retain source snapshots, hypotheses and comparisons, including
+one linker rejection; completed compilations retain receipts. The additional
+object-symbol audit records its compiler command and object/source hashes.
+Final checked sources match twice independently. Two fresh exact project builds,
+integrated image comparison, five-function proof and all **53 research tests**
+pass; the public suite remains **58 tests**. Source-only rejects 4,123,920 retained
+bytes without changing artifacts. Focused exports use a disposable copy and are
+checked against current inputs; the original database remains unchanged.
+
+The primary batch is incomplete. Related reuse remains **448/4**, manager
+initialization **280/8**, and signed remainder unresolved. Supporting matches do
+not replace primary acceptance. Static dispatch, globals and remaining callees
+retain reference dependence. Publication retains all default scanner rules and
+the narrowly verified source-hash exception with its stage-75 detection control.

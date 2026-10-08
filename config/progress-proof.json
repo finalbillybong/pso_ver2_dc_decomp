@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "c08fcd1b8c94b335ca8cba10511c15a18fb6fb4de2333dfb2bb3db2ea05db7e5",
+    "config/project.json": "c5096cc3843e8d65323353bd4d4eda0803bd2bc27eddf94f964bd172d5b5443a",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -163,6 +163,7 @@
     "src/include/resource_slot.h": "3bf0dba281908a2613bc7637cf88e5fb489a62ba6122a0f9cbad722330f1ed14",
     "src/include/resource_state.h": "b419533a9c2f8dbfb587267bf67c2b740e18479aa18c3bf5e51922b012e142d5",
     "src/include/resource_task_owner.h": "44364e1c332c142f820d7f84be34fa0e24d87c5e580aceea9ccac9fb9e5c8094",
+    "src/include/resource_widget.h": "653bde9263b212db13e4c2aec727a2ac56cabd0e918557571f934bd7f79670e4",
     "src/include/running_profile.h": "c1b72e777d052aa9ed5e46d8e50100383c68887151a6bd8523564ae0a40d4455",
     "src/include/sample_storage.h": "d68ce1d7bc3874b43a8bc20e1a7896f679faae4eaeedead7e0eec51f5e5c80c3",
     "src/include/shared_object.h": "27624c60b20fd95cd2d104d1496708fbbaa18376a964f2bb54a86093efce21f1",
@@ -285,6 +286,7 @@
     "src/objects/operation_1934cc.c": "a76d8846fa67b84a80fede4737a03427626ca20c49ff56f4ec52439488322e52",
     "src/objects/operation_193530.c": "335444f30635e1dafe0c8fc32a0dc9cab675b3befe5c802ede4400d77db6167b",
     "src/objects/operation_193704.c": "8bd2118841f24526d867772ca79839daf8f7564aba2689cef6180c584a8b9e09",
+    "src/objects/operation_193738.c": "35ae169ddbbb1452764cf588d4bca1d540930b616d02b407f426ce3804cf006a",
     "src/objects/operation_193764.c": "f23ec5da7fd449b7208b2407995c598553e16d57134d6eeedfa91e8428330a8a",
     "src/objects/operation_193784.c": "34a6b6408f212567b199e781471dc8f6dcff0540f32920c1384e036ee5ac4ffb",
     "src/objects/operation_1937f8.c": "192f29c1f26f1f93428e7629becb7b96856fba9500b4043ce94399fc1b2cb4dd",
@@ -301,6 +303,9 @@
     "src/objects/operation_193df8.c": "ad2f9833f5bd0fb3f7770af7e6f7a019a59b301101e32e1873589cbfa7d89b56",
     "src/objects/operation_193ec0.c": "08a2871de52da4455fbc121f1ee41ab38526da7e9c1673a3ac64e335dc866056",
     "src/objects/operation_193fe8.c": "951cc7deeb7c9f592c6ca204d44a94bd5fe512506aea4dab3ee64ffdeed823da",
+    "src/objects/operation_194098.c": "d136fd9e6752ad769840b6c461f2e80b7b5166d4285d4dcda9ec43b12c574783",
+    "src/objects/operation_1940ec.c": "02e4126515e115b062403a541a693d0d8ae136d5ff8548eac7447f62af9ac9d1",
+    "src/objects/operation_1941c0.c": "9c07a0737c3e717367f4822816f46c028edee8650b79f700027dd0a112b83153",
     "src/objects/operation_1abb78.c": "b9d5379ef632a39f53e4d24e904af17a7ebef8db7d98c4d8f98a533da85adc5e",
     "src/objects/operation_1abbcc.cpp": "6c367e175bd863afea760e8df8b60fea717d3c235011dd1bd6a21d53d691fd63",
     "src/objects/operation_1abc6c.c": "bd29e14a36cb7c1bbd60cadbd9ad8a55b6ccfb1d64abf7dc88eb4e6bf22fe305",
@@ -3545,6 +3550,17 @@
       "off",
       "-O2"
     ],
+    "operation_193738": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_193764": [
       "-proc",
       "SH4",
@@ -3711,6 +3727,39 @@
       "-O2"
     ],
     "operation_193fe8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_194098": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_1940ec": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_1941c0": [
       "-proc",
       "SH4",
       "-endian",
@@ -4412,6 +4461,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4124300,
+  "source_only_rejected_retained_bytes": 4123920,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

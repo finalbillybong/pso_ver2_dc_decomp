@@ -7154,6 +7154,32 @@
       "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; context64 and resource prefix offsets checked; complete final source exact twice; reconstruction-stage83."
     },
     {
+      "id": "operation_193738",
+      "source": "src/objects/operation_193738.c",
+      "address": "0x8c193738",
+      "entry": "_operation_193738",
+      "ranges": [
+        {
+          "offset": 1587000,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193738",
+          "address": "0x8c193738",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "383ff25d4e2ec8b594b2c806ec822e130e29664e1e531c9635771c5b09a7d5f6",
+      "symbols": {
+        "_allocate_at": "0x8c18de4c",
+        "_shared_buffer": "0x8c4dc2f4",
+        "_shared_state": "0x8c4dc2f8"
+      },
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource widget prefix offsets checked; switch uses pinned native linker for compiler jump-table relocations; complete final source exact twice; reconstruction-stage87."
+    },
+    {
       "id": "operation_193764",
       "source": "src/objects/operation_193764.c",
       "address": "0x8c193764",
@@ -7548,6 +7574,79 @@
         "src/include/resource_task_owner.h"
       ],
       "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource task and resident-entry prefixes checked; complete final source exact twice; reconstruction-stage86."
+    },
+    {
+      "id": "operation_194098",
+      "source": "src/objects/operation_194098.c",
+      "address": "0x8c194098",
+      "entry": "_operation_194098",
+      "ranges": [
+        {
+          "offset": 1589400,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194098",
+          "address": "0x8c194098",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "0a2be8abf01afd380f55a20481efe6477ca10642225d9c2453aa4b9e145ed768",
+      "headers": [
+        "src/include/resource_widget.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource widget prefix offsets checked; switch uses pinned native linker for compiler jump-table relocations; complete final source exact twice; reconstruction-stage87."
+    },
+    {
+      "id": "operation_1940ec",
+      "source": "src/objects/operation_1940ec.c",
+      "address": "0x8c1940ec",
+      "entry": "_operation_1940ec",
+      "ranges": [
+        {
+          "offset": 1589484,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1940ec",
+          "address": "0x8c1940ec",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "90525db021ab52ac188459e5c8802fdfce2dcabfd62879cc6e47ef7b186ff146",
+      "headers": [
+        "src/include/resource_widget.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource widget prefix offsets checked; switch uses pinned native linker for compiler jump-table relocations; complete final source exact twice; reconstruction-stage87."
+    },
+    {
+      "id": "operation_1941c0",
+      "source": "src/objects/operation_1941c0.c",
+      "address": "0x8c1941c0",
+      "entry": "_operation_1941c0",
+      "ranges": [
+        {
+          "offset": 1589696,
+          "size": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1941c0",
+          "address": "0x8c1941c0",
+          "size": 144
+        }
+      ],
+      "reference_sha256": "75f4f867232fb92778b8db33adf44602106366c3e46da28486a3418ccebbd839",
+      "linker": "codewarrior",
+      "headers": [
+        "src/include/resource_widget.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource widget prefix offsets checked; switch uses pinned native linker for compiler jump-table relocations; complete final source exact twice; reconstruction-stage87."
     },
     {
       "id": "initialize_proximity_object",
