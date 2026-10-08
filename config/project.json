@@ -6301,6 +6301,81 @@
       "boundary_review": "Reviewed raw little-endian SH-4 instructions, branches, return delay slots, literals, alignment and adjacent entries against existing Ghidra analysis. Complete linked range, not an instruction prefix. See docs/RECONSTRUCTION.md."
     },
     {
+      "id": "prepare_transform_state",
+      "source": "src/math/prepare_transform_state.c",
+      "address": "0x8c0c44c8",
+      "entry": "_prepare_transform_state",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 738504,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "prepare_transform_state",
+          "address": "0x8c0c44c8",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "4a2e29e265c0eac66d8368922c13bad14070d7cce7ac4b6b9e0753381aaa1dc3",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entries0x8c0c44c8/44f0/4590/460c bound40/160/124byte functions including return delays, literals and natural alignment; checked source exact twice; stage114."
+    },
+    {
+      "id": "configure_transform_callbacks",
+      "source": "src/math/configure_transform_callbacks.c",
+      "address": "0x8c0c44f0",
+      "entry": "_configure_transform_callbacks",
+      "headers": [
+        "src/include/transform_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 738544,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_transform_callbacks",
+          "address": "0x8c0c44f0",
+          "size": 160
+        }
+      ],
+      "reference_sha256": "d48160f594a3c2d712160604407ddc823a52b78ce3ba99a02ec9521e2f07455f",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entries0x8c0c44c8/44f0/4590/460c bound40/160/124byte functions including return delays, literals and natural alignment; checked source exact twice; stage114."
+    },
+    {
+      "id": "apply_transform_state",
+      "source": "src/math/apply_transform_state.c",
+      "address": "0x8c0c4590",
+      "entry": "_apply_transform_state",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 738704,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_transform_state",
+          "address": "0x8c0c4590",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "560d5e16171d553a0042e976ac957711b3c87ecc814cdd8059f297ad0d119bcc",
+      "symbols": {
+        "_decompose_at": "0x8c0c460c"
+      },
+      "boundary_review": "Raw SH4 entries0x8c0c44c8/44f0/4590/460c bound40/160/124byte functions including return delays, literals and natural alignment; checked source exact twice; stage114."
+    },
+    {
       "id": "initialize_fade_state",
       "source": "src/effects/initialize_fade_state.c",
       "address": "0x8c0c4c88",

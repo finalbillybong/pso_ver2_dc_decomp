@@ -5843,3 +5843,47 @@ Reproduce with `python3 -B tools/verify_source.py`, the current unittest suite a
 `python3 -B tools/project.py build --source-only` (expected rejection). Refresh
 public progress only after exact verification; review and scan intended public
 changes before commit/push. Research data and original inputs remain private.
+
+
+## Transform setup and bounded target rotation, stage 114
+
+Three new exact functions replace **324 bytes**: prepare_transform_state at
+0x8c0c44c8 (40), configure_transform_callbacks at0x8c0c44f0 (160), and
+apply_transform_state at0x8c0c4590 (124). Totals are **484 functions /433 modules /
+47,808 compiled bytes /4,115,104 retained reference bytes**, or **1.1484% image
+coverage**. All481 previous matches and source/header files are preserved.
+
+Preparation preserves its pointer and float across reset. Configuration reads
+flags once and keeps the observed callback-field stores at48/52/56/60, including
+the bit0x2000 branch and repeated global reloads. The checked prefix is64 bytes.
+Application uses a52-byte local frame for translation, scale, angles and quaternion
+outputs, then follows the returned kind to the observed rotation call. An external
+decomposition declaration recovers the callee load after the stack-argument push;
+the literal-pointer form yields124/7. All final sources match independently twice.
+
+Investigation-only work adds no bytes. Three targets are explicitly parked:
+
+- draw_fade_state:216/27, first0x8c0c4e54; three distinct hypotheses all emit the
+  same binary. List/alpha setup and third-vertex Y scheduling remain different.
+- select_model_node:56/5, first0x8c03ef95; five hypotheses fail to recover zero/base
+  register allocation. Literal callee, chained zeros and unsigned counters match
+  the baseline output; literal globals worsen it.
+- visit_model_selection:184bytes versus180,136differences including extra length;
+  five hypotheses leave the target-index reload inside the first inlined child.
+  Equality order, target local and address-based globals do not recover it.
+
+Each parked queue entry retains checked source, full differing offsets, persistent
+count and an evidence-based revisit condition. The prior primary pair and large
+factory remain parked. Do not reset counts or repeat the failed equivalent outputs.
+
+Two fresh exact builds in each checkout, integrated-image comparison, five-function
+proof,53 research tests and58 public tests pass. Source-only rejects4,115,104 bytes
+without changing artifacts. Focused exports are regenerated on a disposable database
+and validated. Stage113 commit6b068a4 is published and remote checks passed. No
+standalone static data is credited; original/private data and compiler flags remain
+unchanged. Research sources are not committed.
+
+Reproduce with `python3 -B tools/verify_source.py`, run the current tests and expect
+`python3 -B tools/project.py build --source-only` to reject the gaps. Refresh public
+progress only after exact verification. Continue into the newly referenced transform
+callbacks and decomposition helper while respecting all parked-target blockers.

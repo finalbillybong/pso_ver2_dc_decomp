@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **481 exact functions in 430 modules**, replacing
-**47,484 bytes** of the 4,162,912-byte decoded executable (**1.1406% image coverage**).
-It retains **4,115,428 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **484 exact functions in 433 modules**, replacing
+**47,808 bytes** of the 4,162,912-byte decoded executable (**1.1484% image coverage**).
+It retains **4,115,104 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,13 +28,13 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 113
+## Latest integration batch: stage 114
 
-Stage113 adds **6 functions /424 bytes**: fade initialization/destruction,
-queries, start modes and update. All475 previous matches and prior sources/headers
-are preserved. Required exact builds, proof, tests and source-only rejection pass.
-The original primary targets and larger factory remain parked. See reconstruction
-findings for the two rejected query/clear forms and verified callback layout.
+Stage114 adds **3 functions /324 bytes**: transform preparation, callback setup
+and application. All481 previous matches and prior sources/headers remain unchanged.
+Required exact builds, proof, tests and source-only rejection pass. Fade drawing
+and two model-selection helpers are parked with precise blockers after bounded
+investigation; they add no completed bytes. See reconstruction findings and queue.
 
 ## Autonomous iteration
 

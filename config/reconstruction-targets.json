@@ -11495,6 +11495,372 @@
       "boundary_review": "Raw SH4 contiguous entries0x8c0c4c88/cb4/d00/d18/d54/d88/e30; each complete range includes return delays, literals and natural alignment; checked source exact twice; stage113.",
       "status": "matched",
       "reason": "Complete checked fade lifecycle/state range; callback behavior and floating unordered comparisons preserved."
+    },
+    {
+      "id": "draw_fade_state",
+      "source": "src/provisional/draw_fade_state.c",
+      "address": "0x8c0c4e30",
+      "entry": "_draw_fade_state",
+      "headers": [
+        "src/include/fade_state.h",
+        "src/include/widget_draw.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740912,
+          "size": 216
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_fade_state",
+          "address": "0x8c0c4e30",
+          "size": 216
+        }
+      ],
+      "reference_sha256": "7bce83a868269c73e78d292dce3ab1bfd1df72eafbeea39640d8ff7d5f7b1c96",
+      "symbols": {},
+      "status": "parked",
+      "reason": "Stage114: 216/27: list setup/alpha-conversion allocation and third-vertex Y store scheduling differ. Scoped alpha and packed-color union yield identical binaries.",
+      "revisit_when": "An exact draw-list initializer demonstrates the same alpha and vertex-Y scheduling, or independently verified source layout changes those lifetimes.",
+      "distinct_unsuccessful_hypotheses": 3,
+      "hypothesis_limit": 10,
+      "comparison": {
+        "size": 216,
+        "expected_size": 216,
+        "differing_bytes": 27,
+        "first_difference": "0x8c0c4e54",
+        "offsets": [
+          36,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          110,
+          111,
+          112,
+          113,
+          115,
+          117
+        ]
+      }
+    },
+    {
+      "id": "select_model_node",
+      "source": "src/provisional/select_model_node.c",
+      "address": "0x8c03ef88",
+      "entry": "_select_model_node",
+      "headers": [
+        "src/include/model_node.h"
+      ],
+      "ranges": [
+        {
+          "offset": 192392,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "select_model_node",
+          "address": "0x8c03ef88",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "72e0494fb79bee4850c9ec75a0828bad300f90d9839cafb4367d564fb65b3ae4",
+      "symbols": {
+        "_node_index": "0x8c466d80",
+        "_wanted_index": "0x8c466d84",
+        "_selected_node": "0x8c466d88",
+        "_visit_model_selection": "0x8c03efc0"
+      },
+      "status": "parked",
+      "reason": "Stage114: 56/5: zero value usesR3 and counter baseR1 instead ofR1/R3. Literal callee, chained zero and unsigned counters are identical; literal globals worsen.",
+      "revisit_when": "An independently matched global-reset wrapper establishes the missing zero/base allocation or verified declaration context differs.",
+      "distinct_unsuccessful_hypotheses": 5,
+      "hypothesis_limit": 10,
+      "comparison": {
+        "size": 56,
+        "expected_size": 56,
+        "differing_bytes": 5,
+        "first_difference": "0x8c03ef95",
+        "offsets": [
+          13,
+          19,
+          20,
+          26,
+          27
+        ]
+      }
+    },
+    {
+      "id": "visit_model_selection",
+      "source": "src/provisional/visit_model_selection.c",
+      "address": "0x8c03efc0",
+      "entry": "_visit_model_selection",
+      "headers": [
+        "src/include/model_node.h"
+      ],
+      "ranges": [
+        {
+          "offset": 192448,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "visit_model_selection",
+          "address": "0x8c03efc0",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "52f2571e7c68c27b7e2bcde19c49cbb274eecb7fc1bda0755f5a52f4fd80cf22",
+      "symbols": {
+        "_node_index": "0x8c466d80",
+        "_wanted_index": "0x8c466d84",
+        "_selected_node": "0x8c466d88"
+      },
+      "status": "parked",
+      "reason": "Stage114: 184/136 versus180: target-index reload in first inlined child and initial operand/register ordering differ. Equality order, explicit target local and literal globals fail; unsigned indices are identical.",
+      "revisit_when": "New independent recursive-inline example preserves the target index across the selected-pointer store, or verified source/alias context differs.",
+      "distinct_unsuccessful_hypotheses": 5,
+      "hypothesis_limit": 10,
+      "comparison": {
+        "size": 184,
+        "expected_size": 180,
+        "differing_bytes": 136,
+        "first_difference": "0x8c03efc8",
+        "offsets": [
+          8,
+          10,
+          13,
+          16,
+          17,
+          20,
+          26,
+          36,
+          44,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          161,
+          162,
+          164,
+          165,
+          166,
+          167,
+          172,
+          176,
+          177,
+          178
+        ]
+      }
+    },
+    {
+      "id": "prepare_transform_state",
+      "source": "src/math/prepare_transform_state.c",
+      "address": "0x8c0c44c8",
+      "entry": "_prepare_transform_state",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 738504,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "prepare_transform_state",
+          "address": "0x8c0c44c8",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "4a2e29e265c0eac66d8368922c13bad14070d7cce7ac4b6b9e0753381aaa1dc3",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entries0x8c0c44c8/44f0/4590/460c bound40/160/124byte functions including return delays, literals and natural alignment; checked source exact twice; stage114.",
+      "status": "matched",
+      "reason": "Complete transform setup/helper source, including full literal pools; parked investigations receive no credit."
+    },
+    {
+      "id": "configure_transform_callbacks",
+      "source": "src/math/configure_transform_callbacks.c",
+      "address": "0x8c0c44f0",
+      "entry": "_configure_transform_callbacks",
+      "headers": [
+        "src/include/transform_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 738544,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_transform_callbacks",
+          "address": "0x8c0c44f0",
+          "size": 160
+        }
+      ],
+      "reference_sha256": "d48160f594a3c2d712160604407ddc823a52b78ce3ba99a02ec9521e2f07455f",
+      "symbols": {},
+      "boundary_review": "Raw SH4 entries0x8c0c44c8/44f0/4590/460c bound40/160/124byte functions including return delays, literals and natural alignment; checked source exact twice; stage114.",
+      "status": "matched",
+      "reason": "Complete transform setup/helper source, including full literal pools; parked investigations receive no credit."
+    },
+    {
+      "id": "apply_transform_state",
+      "source": "src/math/apply_transform_state.c",
+      "address": "0x8c0c4590",
+      "entry": "_apply_transform_state",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 738704,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_transform_state",
+          "address": "0x8c0c4590",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "560d5e16171d553a0042e976ac957711b3c87ecc814cdd8059f297ad0d119bcc",
+      "symbols": {
+        "_decompose_at": "0x8c0c460c"
+      },
+      "boundary_review": "Raw SH4 entries0x8c0c44c8/44f0/4590/460c bound40/160/124byte functions including return delays, literals and natural alignment; checked source exact twice; stage114.",
+      "status": "matched",
+      "reason": "Complete transform setup/helper source, including full literal pools; parked investigations receive no credit."
     }
   ]
 }
