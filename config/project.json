@@ -7235,6 +7235,114 @@
       "boundary_review": "Raw SH4 to adjacent entry including all literals/alignment; root vector/scalar ABI previously established; two-slot field offsets checked; final source exact twice; reconstruction-stage79."
     },
     {
+      "id": "operation_1ac120",
+      "source": "src/objects/operation_1ac120.c",
+      "address": "0x8c1ac120",
+      "entry": "_operation_1ac120",
+      "ranges": [
+        {
+          "offset": 1687840,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1ac120",
+          "address": "0x8c1ac120",
+          "size": 92
+        }
+      ],
+      "headers": [
+        "src/include/matrix_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "b1129f59d2f349ad5acd188943f3eb0c9716a3ec849d6ce778a19ee5296ddfcc",
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; root vector/scalar ABI established; checked child and mesh-chain prefixes; final exact twice; reconstruction-stage80."
+    },
+    {
+      "id": "operation_1ac36c",
+      "source": "src/objects/operation_1ac36c.c",
+      "address": "0x8c1ac36c",
+      "entry": "_operation_1ac36c",
+      "ranges": [
+        {
+          "offset": 1688428,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1ac36c",
+          "address": "0x8c1ac36c",
+          "size": 96
+        }
+      ],
+      "headers": [
+        "src/include/matrix_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "cf0a7c3c13404d2d008f6bb6aa2253d8e872abde13ad0c335a69a2227cbb394d",
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; root vector/scalar ABI established; checked child and mesh-chain prefixes; final exact twice; reconstruction-stage80."
+    },
+    {
+      "id": "operation_1ac3cc",
+      "source": "src/objects/operation_1ac3cc.c",
+      "address": "0x8c1ac3cc",
+      "entry": "_operation_1ac3cc",
+      "ranges": [
+        {
+          "offset": 1688524,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1ac3cc",
+          "address": "0x8c1ac3cc",
+          "size": 20
+        }
+      ],
+      "headers": [
+        "src/include/matrix_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "7738de76e9ad7c15978391242cc86511ac46d01c2123f522db2efe41c22551bd",
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; root vector/scalar ABI established; checked child and mesh-chain prefixes; final exact twice; reconstruction-stage80."
+    },
+    {
+      "id": "operation_1ac3e0",
+      "source": "src/objects/operation_1ac3e0.c",
+      "address": "0x8c1ac3e0",
+      "entry": "_operation_1ac3e0",
+      "ranges": [
+        {
+          "offset": 1688544,
+          "size": 136
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1ac3e0",
+          "address": "0x8c1ac3e0",
+          "size": 136
+        }
+      ],
+      "headers": [
+        "src/include/matrix_child.h",
+        "src/include/base_child.h",
+        "src/include/vector3.h"
+      ],
+      "reference_sha256": "167c9d00eb4a23ec95b44eb1f85dedcc30dcdf5627e6913ebb7a9c78b38206b1",
+      "symbols": {
+        "_rotate_at": "0x8c37e0c8",
+        "_select_at": "0x8c0345cc"
+      },
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; root vector/scalar ABI established; checked child and mesh-chain prefixes; final exact twice; reconstruction-stage80."
+    },
+    {
       "id": "operation_1e9610",
       "source": "src/objects/operation_1e9610.c",
       "address": "0x8c1e9610",

@@ -4147,3 +4147,52 @@ signed remainder, root initialization, effect replacement and static data remain
 reference-dependent. Supporting matches do not replace primary acceptance.
 Publication retains the default secret-scanner rules and the single verified
 exact source-hash exception with its stage-75 detection control.
+
+
+## Matrix-child callbacks, stage 80
+
+Four complete functions add **344 bytes**: factory **0x8c1ac120** (92),
+destruction **0x8c1ac36c** (96), scalar step **0x8c1ac3cc** (20), and draw
+**0x8c1ac3e0** (136). Totals are **376 functions / 329 modules / 35,336 compiled
+full-range bytes / 4,127,576 retained reference bytes**, or **0.8488% whole-image
+coverage**. All 372 previous matches, module definitions and source/header hashes
+remain unchanged. Since the initial checkpoint, 342 functions replace 31,692
+bytes. Code-only completion remains unknown; separately reconstructed static data
+is zero.
+
+A checked provisional 108-byte child view reuses the unchanged base prefix and
+adds the observed scalar/index fields. Two mesh-chain prefixes check pointers
+at offset four. Factory preserves its preparatory call, 108-byte allocation and
+all forwarded vector/scalar inputs. Destruction retains both null tests,
+2748b4/2748d4 dispatch writes, linked-object marking, root destruction and positive
+signed pool release. The scalar step adds 0x1999 without wrapping.
+
+Draw preserves the mesh-only guard, unchecked two-link resource lookup, index
+selection, matrix pointer, state calls and push/translate/three-angle rotation/
+mesh/pop order. External selection resolves the final ten scheduling bytes;
+a captured intermediate link also matches, while mesh/resource captures do not.
+The existing external rotation declaration preserves its complete argument order.
+
+Root initialization **0x8c1aba3c** remains unadmitted: 316 bytes, 28 differences
+from **0x8c1abaf7**. A scoped address-taken parameter improves direct C from
+288 bytes to 316/49; external angle declaration resolves 21 more differences.
+Remaining mismatches concern floating literal reuse, angle store and the following
+callee load. Captured radians/owner/field/divisor, reused factor, converted value
+and inline conversion helpers fail to complete it. Its three vector copies,
+scalar division and unchecked inputs remain as observed; no speculative fixes
+are introduced. The 108-byte child's constructor remains reference-dependent.
+
+All **32 trials**, with no compiler rejection, retain hypotheses, source snapshots,
+compiler receipts and comparisons. Final checked sources match independently
+twice. Two fresh exact builds, integrated-image comparison, five-function proof
+and all **53 research tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,127,576 retained bytes without changing artifacts. Focused
+exports use a disposable copy and are validated against current inputs; the
+original database, pinned compiler, base flags, default GNU linker and complete
+range acceptance remain unchanged.
+
+The primary batch remains incomplete at **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, and unresolved signed remainder.
+Supporting matches do not replace primary acceptance. Publication retains all
+default scanner rules and the single exact source-hash exception verified with
+its stage-75 detection control.
