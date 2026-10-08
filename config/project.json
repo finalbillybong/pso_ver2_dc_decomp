@@ -6234,6 +6234,83 @@
       "boundary_review": "Raw follow-effect capture, inlined initialization factories, adjacent empty entry and signed destructor reviewed through adjacent entries; checked field layouts, literal bits, call and return delays and natural alignment. Full checked match twice; stage153."
     },
     {
+      "id": "destroy_follow_slot",
+      "source": "src/effects/destroy_follow_slot.c",
+      "address": "0x8c0a5ba8",
+      "entry": "_destroy_follow_slot",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h",
+        "src/include/follow_slot.h"
+      ],
+      "ranges": [
+        {
+          "offset": 613288,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_follow_slot",
+          "address": "0x8c0a5ba8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "3be6797885c649d343f07c7a5cba225f0830bb008cde85c427c4152a727ba069",
+      "symbols": {},
+      "boundary_review": "Raw slot destructor, state reset and factory reviewed through adjacent entries, pointer clears32/148, state144, signed/null branches, literals, call/return delays and natural padding. Full checked match twice; stage154."
+    },
+    {
+      "id": "create_effect_a5ad0",
+      "source": "src/effects/create_effect_a5ad0.c",
+      "address": "0x8c0a6158",
+      "entry": "_create_effect_a5ad0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 614744,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a5ad0",
+          "address": "0x8c0a6158",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "6d325cd08ffad966ce120b7f728f174061a6e873f9f2be1f5067785b60272dae",
+      "symbols": {},
+      "boundary_review": "Raw slot destructor, state reset and factory reviewed through adjacent entries, pointer clears32/148, state144, signed/null branches, literals, call/return delays and natural padding. Full checked match twice; stage154."
+    },
+    {
+      "id": "reset_follow_slot_state",
+      "source": "src/effects/reset_follow_slot_state.c",
+      "address": "0x8c0a65ec",
+      "entry": "_reset_follow_slot_state",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h",
+        "src/include/follow_slot.h"
+      ],
+      "ranges": [
+        {
+          "offset": 615916,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_follow_slot_state",
+          "address": "0x8c0a65ec",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "26679ac77eb8a62c62e890770e52c4ce3aa689c35b1483c723a5634aa6f66f27",
+      "symbols": {},
+      "boundary_review": "Raw slot destructor, state reset and factory reviewed through adjacent entries, pointer clears32/148, state144, signed/null branches, literals, call/return delays and natural padding. Full checked match twice; stage154."
+    },
+    {
       "id": "reset_effect_table_state",
       "source": "src/effects/reset_effect_table_state.c",
       "address": "0x8c0a6bdc",

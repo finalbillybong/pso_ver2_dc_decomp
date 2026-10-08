@@ -7551,3 +7551,41 @@ copy. No parked target was reopened and no investigation-only bytes are credited
 Stage 152 commit 6e87ea0 is published with successful remote checks. Reproduce
 with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into slot-state lifetime, matrix-offset helpers and effect initialization.
+
+
+## Slot lifetime and matrix-offset investigation, stage 154
+
+Three complete matches replace **148 bytes**. Totals are **672 functions / 614
+modules / 61,780 compiled bytes / 4,101,132 retained reference bytes / 1.4841%
+whole-image coverage**. All 669 prior matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| destroy_follow_slot | 0x8c0a5ba8 | 80 |
+| create_effect_a5ad0 | 0x8c0a6158 | 56 |
+| reset_follow_slot_state | 0x8c0a65ec | 12 |
+
+The destructor clears the observed pointers at 32 and 148 before base destruction,
+preserving the null guard and signed release test. The factory retains its nullable
+164-byte allocation across initialization. State reset writes zero at offset 144
+in the return delay. All accessed prefix offsets, size and dependencies are checked.
+
+Investigation-only: update_follow_slot_position is parked after four hypotheses
+at 128/128 bytes with 44 differences, first 0x8c0a67c8. Declaring the matrix-push
+callee fixes literal order; separating scalar loads and compound additions restores
+the complete size. The stack operand still loads before the actor coordinate,
+and destination-address lifetimes differ. Reversing addition operands returns
+132/128 bytes with 79 differences. Revisit only with an independently exact local
+vector accumulation pattern or verified inline context; do not repeat these source
+variants. This function earns no completion credit.
+
+Fourteen snapshots form seven binary groups. All three admissions independently
+match twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,101,132 bytes without changing artifacts. Focused exports validate using a
+disposable database copy. Previously parked targets were not reopened.
+
+Stage 153 commit d362eb4 is published with successful remote checks. Reproduce
+with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into effect-template initialization and referenced scale records.

@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "afeb1a40b4d54259b17c15dc3cf466d6552f20536ad2e12c325cdef1067e4700",
+    "config/project.json": "1327ac5290880be5b1d6a4573322e9699342869057f25bfa35cad1dd8c4f6016",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/adjust_vector_scaled.c": "2bc8ad32f193d55a348ce64032cf6850bb892542629f77a45f05a492309bbd9a",
@@ -47,6 +47,7 @@
     "src/effects/create_effect_a061c.c": "c14fc636f0ce5c489a8e9d468a7cb6ce253637ec2408c15aea11db8bcdd1d3a2",
     "src/effects/create_effect_a460c.c": "47a21c8f5074cb5da3d62042d71eee946fc022a758f1ae9e74ccf56644bc86ae",
     "src/effects/create_effect_a4f88.c": "d37016be1b8e5cfe102daf1d5c9d1f34b6c8c8a86ec70d0def113a7e92cdee68",
+    "src/effects/create_effect_a5ad0.c": "b2eae7f8f069306c50717377edc232c1b0e92c1225a8e04401559ff25f60f922",
     "src/effects/create_effect_at_position.c": "2c5ef0c767af90af73ca4293320d3a67f2ad0f31c37b792da51f973cb0cac6e0",
     "src/effects/create_effect_b03c8.c": "0576594ba7109cd63287c3984d3b7d8d5758f6fceb873b2d94e48db6d7578edf",
     "src/effects/create_effect_b040c.c": "64bdeaa583cdcb0091aa59d0d51abd76a8072febe28b1e05d0a5e6849af0ce2c",
@@ -96,6 +97,7 @@
     "src/effects/destroy_fade_state.c": "2d5bae575b87a6d1233f4cfb66042d98e5a52f70dc28bfc28e63064d97a13822",
     "src/effects/destroy_follow_base.c": "8dadc7ffd481b8eed5ed72ea191f9b6fa58cacbf609588281e1d15d300d2ce37",
     "src/effects/destroy_follow_effect.c": "12958e103d96f14355bb341f42e680bf316117675f35586c3da5e22d573faa69",
+    "src/effects/destroy_follow_slot.c": "49e591719fdf67c3874fb13004e995300aee21c3a961fa5e27980f9e31890179",
     "src/effects/destroy_particle_entries.c": "cadba843c27c30ccb77bed85df00809268972e46ec923932763bf892c5f03579",
     "src/effects/destroy_spawn_base.c": "b2dbae7fd2809d3a95f5a89e9985e823069155a3b476989d78d9ab6a1c42cb18",
     "src/effects/destroy_spawn_effect_2.c": "c2ce7debeaf007a07b40aefc9133bdde160220e04207d7afc51ee96fe048145f",
@@ -167,6 +169,7 @@
     "src/effects/reset_effect_table_state.c": "cab2ddccb54de0faf48dfb18697a9fa0b2b7887aa905a4e81c3eb94a7f559103",
     "src/effects/reset_emit_control.c": "2287e30f83c22db9b07c94482a2c41fc7eb4e9c439f5b46494aab43b9e1bd79e",
     "src/effects/reset_follow_effect.c": "25696a9567f7c7c47d599ea63c9e59038a3995321aba40629656598470eb74ef",
+    "src/effects/reset_follow_slot_state.c": "6d197e07712a2eebeabdd08e165ff17aefa6ebb8806f80811d4d7626961eb5ec",
     "src/effects/resource_lookup_noop.c": "865aaa91d2e0cd72b472998133ca7a45e5dbc1d5a90188dc126442e979ab09ce",
     "src/effects/restore_child_blend.c": "9d2f8daa3e2ac15df48509769917e5d45d2667a56665dfbd9cb763c9c6898ee4",
     "src/effects/run_effect_operation_5dbc.c": "0d42be3527adb470bf5b30363b85f8cf49efb1f312509720d88e5d5f238f3598",
@@ -266,6 +269,7 @@
     "src/include/follow_base.h": "6046bc27c7209bded0f4d57c7353a3f07a8e98e5da4a47d127c67e7157db242c",
     "src/include/follow_capture.h": "4debd562da0bd82af1fa230c4f09c71bec6ecc6a0a5a36c13aa77000f8f1235c",
     "src/include/follow_effect.h": "3287f8d4d0e95d774e862097780a37af8c9dd3d8af463b43efbfc0b34edc1a12",
+    "src/include/follow_slot.h": "e37c192a8442e18a055a19897a12ed59933e8a332f80811ebfdbc70406b88a7f",
     "src/include/hex_field.h": "92486f1699bd606d51f9461f108bb9937c365c8a9b90114a0bb64be63f8faa0b",
     "src/include/hierarchy.h": "9b0e0f1e91b9446dcc7d324bfb47ea347441ab989194d7455e51099a89d2df66",
     "src/include/hierarchy_array.h": "771131a2e4c97fedc989307139b5c335ea7bb9e0d457b015a733610ae5824e61",
@@ -3444,6 +3448,39 @@
       "-O2"
     ],
     "create_follow_distance": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_follow_slot": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_effect_a5ad0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "reset_follow_slot_state": [
       "-proc",
       "SH4",
       "-endian",
@@ -7538,6 +7575,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4101280,
+  "source_only_rejected_retained_bytes": 4101132,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

@@ -20066,6 +20066,178 @@
       "boundary_review": "Raw follow-effect capture, inlined initialization factories, adjacent empty entry and signed destructor reviewed through adjacent entries; checked field layouts, literal bits, call and return delays and natural alignment. Full checked match twice; stage153.",
       "status": "matched",
       "reason": "Complete follow-effect helper range; observed behavior preserved."
+    },
+    {
+      "id": "destroy_follow_slot",
+      "source": "src/effects/destroy_follow_slot.c",
+      "address": "0x8c0a5ba8",
+      "entry": "_destroy_follow_slot",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h",
+        "src/include/follow_slot.h"
+      ],
+      "ranges": [
+        {
+          "offset": 613288,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_follow_slot",
+          "address": "0x8c0a5ba8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "3be6797885c649d343f07c7a5cba225f0830bb008cde85c427c4152a727ba069",
+      "symbols": {},
+      "boundary_review": "Raw slot destructor, state reset and factory reviewed through adjacent entries, pointer clears32/148, state144, signed/null branches, literals, call/return delays and natural padding. Full checked match twice; stage154.",
+      "status": "matched",
+      "reason": "Complete slot helper range; observed behavior preserved."
+    },
+    {
+      "id": "create_effect_a5ad0",
+      "source": "src/effects/create_effect_a5ad0.c",
+      "address": "0x8c0a6158",
+      "entry": "_create_effect_a5ad0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 614744,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_a5ad0",
+          "address": "0x8c0a6158",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "6d325cd08ffad966ce120b7f728f174061a6e873f9f2be1f5067785b60272dae",
+      "symbols": {},
+      "boundary_review": "Raw slot destructor, state reset and factory reviewed through adjacent entries, pointer clears32/148, state144, signed/null branches, literals, call/return delays and natural padding. Full checked match twice; stage154.",
+      "status": "matched",
+      "reason": "Complete slot helper range; observed behavior preserved."
+    },
+    {
+      "id": "reset_follow_slot_state",
+      "source": "src/effects/reset_follow_slot_state.c",
+      "address": "0x8c0a65ec",
+      "entry": "_reset_follow_slot_state",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h",
+        "src/include/follow_slot.h"
+      ],
+      "ranges": [
+        {
+          "offset": 615916,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_follow_slot_state",
+          "address": "0x8c0a65ec",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "26679ac77eb8a62c62e890770e52c4ce3aa689c35b1483c723a5634aa6f66f27",
+      "symbols": {},
+      "boundary_review": "Raw slot destructor, state reset and factory reviewed through adjacent entries, pointer clears32/148, state144, signed/null branches, literals, call/return delays and natural padding. Full checked match twice; stage154.",
+      "status": "matched",
+      "reason": "Complete slot helper range; observed behavior preserved."
+    },
+    {
+      "id": "update_follow_slot_position",
+      "source": "src/provisional/update_follow_slot_position.c",
+      "address": "0x8c0a679c",
+      "entry": "_update_follow_slot_position",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h",
+        "src/include/follow_slot.h"
+      ],
+      "ranges": [
+        {
+          "offset": 616348,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_follow_slot_position",
+          "address": "0x8c0a679c",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "afff84fe2725eeaf799f6aeac7c43c30242b10fe5e9dc8767123a5c3f329aec4",
+      "symbols": {
+        "_push_matrix": "0x8c38ade4"
+      },
+      "status": "parked",
+      "reason": "128/128bytes,44 differing,first0x8c0a67c8. Declared matrix push fixes literal ordering; separate scalar load/compound add restores size but stack operand still loads before actor coordinate and destination address lifetimes differ. Reversing addition operands returns132/128bytes and79 differences. No exact admission.",
+      "unsuccessful_distinct_hypotheses": 4,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact local-vector accumulation with indexed first stack load after actor coordinate, or verified inline vector-add context. Do not repeat direct/compound/reversed sum variants.",
+      "comparison": {
+        "name": "update_follow_slot_position-checked-0",
+        "size": 128,
+        "expected_size": 128,
+        "exact": false,
+        "differing_bytes": 44,
+        "first_difference": "0x8c0a67c8",
+        "offsets": [
+          44,
+          45,
+          46,
+          47,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          99
+        ],
+        "source_sha256": "637be8aa0d1c8b7b25f7191bbeb98358098df835629143b7621e64d638dec594",
+        "compiler_receipt_sha256": "943d9182dcfdc697c54f472f9265886fabe2a3db73c411b520746286521ab8da"
+      }
     }
   ]
 }
