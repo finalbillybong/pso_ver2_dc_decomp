@@ -6861,6 +6861,87 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; checked prefix and callee inputs; final source exact twice; reconstruction-stage76."
     },
     {
+      "id": "widget_child_lifecycle",
+      "source": "src/objects/widget_child_lifecycle.c",
+      "address": "0x8c192b14",
+      "entry": "_operation_192b14",
+      "ranges": [
+        {
+          "offset": 1583892,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_192b14",
+          "address": "0x8c192b14",
+          "size": 20
+        },
+        {
+          "name": "operation_192b28",
+          "address": "0x8c192b28",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "e9075e3bf7b231f20fc840f5d4d0380cc5d3272113d4a351b71bbd8c96a589de",
+      "headers": [
+        "src/include/widget_child.h"
+      ],
+      "boundary_review": "Raw complete entry/adjacent entries including literals and alignment; child constructor/destructor compiled as full56-byte bundle; native linker only for switch relocation; reconstruction-stage88."
+    },
+    {
+      "id": "operation_192b4c",
+      "source": "src/objects/operation_192b4c.c",
+      "address": "0x8c192b4c",
+      "entry": "_operation_192b4c",
+      "ranges": [
+        {
+          "offset": 1583948,
+          "size": 188
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_192b4c",
+          "address": "0x8c192b4c",
+          "size": 188
+        }
+      ],
+      "reference_sha256": "841dd9c7fd50df30d957810800df3ea1adcf689b40330d82c961ada03fac5da6",
+      "symbols": {
+        "_input": "0x8c41cba0",
+        "_emit_at": "0x8c05fbf8"
+      },
+      "headers": [
+        "src/include/widget_child.h"
+      ],
+      "boundary_review": "Raw complete entry/adjacent entries including literals and alignment; child constructor/destructor compiled as full56-byte bundle; native linker only for switch relocation; reconstruction-stage88."
+    },
+    {
+      "id": "operation_192c08",
+      "source": "src/objects/operation_192c08.c",
+      "address": "0x8c192c08",
+      "entry": "_operation_192c08",
+      "ranges": [
+        {
+          "offset": 1584136,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_192c08",
+          "address": "0x8c192c08",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "fbc45fc875b38b2c3968dac907e7650ccd6ba1d026f12ed05c29bf2eb1e7a8f9",
+      "headers": [
+        "src/include/widget_child.h"
+      ],
+      "boundary_review": "Raw complete entry/adjacent entries including literals and alignment; child constructor/destructor compiled as full56-byte bundle; native linker only for switch relocation; reconstruction-stage88."
+    },
+    {
       "id": "operation_193288",
       "source": "src/objects/operation_193288.c",
       "address": "0x8c193288",
@@ -7647,6 +7728,56 @@
         "src/include/resource_widget.h"
       ],
       "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource widget prefix offsets checked; switch uses pinned native linker for compiler jump-table relocations; complete final source exact twice; reconstruction-stage87."
+    },
+    {
+      "id": "operation_194250",
+      "source": "src/objects/operation_194250.c",
+      "address": "0x8c194250",
+      "entry": "_operation_194250",
+      "ranges": [
+        {
+          "offset": 1589840,
+          "size": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194250",
+          "address": "0x8c194250",
+          "size": 144
+        }
+      ],
+      "reference_sha256": "65720daf4f836f13833e4c50ceeb0c4e5062d03fb2a5f711523e90e60cf9ab52",
+      "linker": "codewarrior",
+      "headers": [
+        "src/include/resource_widget.h"
+      ],
+      "boundary_review": "Raw complete entry/adjacent entries including literals and alignment; child constructor/destructor compiled as full56-byte bundle; native linker only for switch relocation; reconstruction-stage88."
+    },
+    {
+      "id": "operation_1943f0",
+      "source": "src/objects/operation_1943f0.cpp",
+      "language": "c++",
+      "address": "0x8c1943f0",
+      "entry": "_operation_1943f0",
+      "ranges": [
+        {
+          "offset": 1590256,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1943f0",
+          "address": "0x8c1943f0",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "c7db89f0b107b34b8a219873420ae72c480bd6037df76ae31fddc864759f6674",
+      "headers": [
+        "src/include/resource_widget_values.h"
+      ],
+      "boundary_review": "Raw complete entry/adjacent entries including literals and alignment; child constructor/destructor compiled as full56-byte bundle; native linker only for switch relocation; reconstruction-stage88."
     },
     {
       "id": "initialize_proximity_object",

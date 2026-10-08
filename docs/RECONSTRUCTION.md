@@ -4560,3 +4560,60 @@ initialization **280/8**, and signed remainder unresolved. Supporting matches do
 not replace primary acceptance. Static dispatch, globals and remaining callees
 retain reference dependence. Publication retains all default scanner rules and
 the narrowly verified source-hash exception with its stage-75 detection control.
+
+
+## Widget value and child-state callbacks, stage 88
+
+Six complete functions in five modules add **532 bytes**: second dispatch
+**0x8c194250** (144), value update **0x8c1943f0** (120), child construction and
+destruction **0x8c192b14/0x8c192b28** (20/36), input **0x8c192b4c** (188), and
+decay **0x8c192c08** (24). Totals are **414 functions / 366 modules /
+39,524 compiled full-range bytes / 4,123,388 retained reference bytes**, or
+**0.9494% whole-image coverage**. All 408 previous matches, module definitions
+and source/header hashes remain unchanged. Since the initial checkpoint,
+380 functions replace 35,880 bytes. Code-only completion remains unknown;
+separately reconstructed static data is zero.
+
+The second dispatch retains six signed-byte cases and default skip. Its complete
+compiler-generated table/literals use the already pinned native linker. Value
+update uses the authorized C++ virtual query at slot76, nullable actor/stats,
+query-plus-one, repeated row-table loads and final helper-minus-current value.
+Checked views cover stats at actor388, row value32 and owner table48.
+
+The child's signed selection/count bytes and float displacement are checked.
+Its standalone constructor emits 18 bytes against a 20-byte reference range;
+compiling it together with the adjacent destructor supplies the observed
+alignment naturally. The whole 56-byte bundle matches; no partial range or
+manual padding is admitted. Destruction preserves positive signed release and
+nullable child. Decay retains subtraction of the original value times0.1,
+including the exact float literal, rather than changing the expression to0.9.
+
+Input preserves decay before input checks, sound emission, both direction-bit
+updates, signed-byte wrap conditions, unchanged-selection return and direction-
+dependent displacement. Typed external input storage recovers the base-plus-40
+access. One captured flags value after emission recovers both direction checks;
+an external emitter declaration recovers the last literal/call scheduling bytes.
+The final flag read after storing selection remains independent.
+
+First-case setup **0x8c1942e0** remains unadmitted at **272/25**, first difference
+**0x8c194320**. Explicit signed class-index shift fixes size; external calls and
+row captures improve scheduling. Alternative pointer qualifiers, getter helpers
+and table/global temporaries do not complete the static-row loads. Its float
+comparison against7.5 and derived-profile null check remain as observed.
+
+All **45 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons; none were compiler-rejected. Final checked sources match twice
+independently. Two fresh exact project builds, integrated image comparison,
+five-function proof and all **53 research tests** pass; the public suite remains
+**58 tests**. Source-only rejects 4,123,388 retained bytes without changing
+artifacts. Focused exports use a disposable copy and are checked against current
+inputs; the original database remains unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Widget
+constructor/notification remain **108/4 and 104/4**; earlier buffer initialization
+remains **172/4**. Supporting matches do not replace primary acceptance. Static
+dispatch, globals and remaining callees retain reference dependence. Compiler,
+base flags and full-range rules remain unchanged. Publication retains all default
+scanner rules and the narrowly verified source-hash exception with its stage-75
+detection control.
