@@ -8481,6 +8481,145 @@
       "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; nine-group panel update and selection helpers; reconstruction-stage94."
     },
     {
+      "id": "operation_19584c",
+      "source": "src/objects/operation_19584c.c",
+      "address": "0x8c19584c",
+      "entry": "_operation_19584c",
+      "ranges": [
+        {
+          "offset": 1595468,
+          "size": 268
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_19584c",
+          "address": "0x8c19584c",
+          "size": 268
+        }
+      ],
+      "reference_sha256": "1773f0953584b04546a94999f0783338c1cce8c3d3106f61392fa70a12be6e68",
+      "symbols": {
+        "_resource_names": "0x8c31c28c",
+        "_panel_mode": "0x8c4dc3d4",
+        "_panel_scale": "0x8c31bf88",
+        "_panel_source_mode": "0x8c467188",
+        "_panel_parent": "0x8c44be90",
+        "_panel_height": "0x8c4dc3cc",
+        "_panel_pool": "0x8c4d97e0",
+        "_panel_owner": "0x8c4dc3d0",
+        "_load_at": "0x8c1187e4"
+      },
+      "headers": [
+        "src/include/widget_panel_render.h",
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; panel initialization and rendering wrappers; reconstruction-stage95."
+    },
+    {
+      "id": "operation_195958",
+      "source": "src/objects/operation_195958.c",
+      "address": "0x8c195958",
+      "entry": "_operation_195958",
+      "ranges": [
+        {
+          "offset": 1595736,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195958",
+          "address": "0x8c195958",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "854852ca907fe7fe84400a134577b887b0315e7aad103ba2c3f25bc7ea4b13eb",
+      "symbols": {
+        "_release_at": "0x8c033c68"
+      },
+      "headers": [
+        "src/include/widget_panel_render.h",
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; panel initialization and rendering wrappers; reconstruction-stage95."
+    },
+    {
+      "id": "operation_195978",
+      "source": "src/objects/operation_195978.c",
+      "address": "0x8c195978",
+      "entry": "_operation_195978",
+      "ranges": [
+        {
+          "offset": 1595768,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195978",
+          "address": "0x8c195978",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "3e5097bf2d8cacca8fae9c58a9eb97f447fface752b6f2c1a8d5485755483c27",
+      "headers": [
+        "src/include/widget_panel_render.h",
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; panel initialization and rendering wrappers; reconstruction-stage95."
+    },
+    {
+      "id": "operation_195984",
+      "source": "src/objects/operation_195984.c",
+      "address": "0x8c195984",
+      "entry": "_operation_195984",
+      "ranges": [
+        {
+          "offset": 1595780,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195984",
+          "address": "0x8c195984",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "a3917ba56efb60b1d4b91d9d17bc953d3d2c44ed7695d379cc9e46dfd136a75b",
+      "headers": [
+        "src/include/widget_panel_render.h",
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; panel initialization and rendering wrappers; reconstruction-stage95."
+    },
+    {
+      "id": "operation_195990",
+      "source": "src/objects/operation_195990.c",
+      "address": "0x8c195990",
+      "entry": "_operation_195990",
+      "ranges": [
+        {
+          "offset": 1595792,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195990",
+          "address": "0x8c195990",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "c863de222bf9bb4877db7986601813c0f0732b0af8df47bf7172dc0e0f8f7f8a",
+      "headers": [
+        "src/include/widget_panel_render.h",
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; panel initialization and rendering wrappers; reconstruction-stage95."
+    },
+    {
       "id": "initialize_proximity_object",
       "source": "src/objects/initialize_proximity_object.c",
       "address": "0x8c1ab324",

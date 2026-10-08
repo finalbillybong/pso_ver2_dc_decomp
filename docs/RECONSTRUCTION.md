@@ -4929,3 +4929,57 @@ manager initialization **280/8**, and signed remainder unresolved. Supporting
 matches do not replace primary acceptance. Compiler, base flags and complete-range
 rules are unchanged. Publication retains default scanner rules and the single
 verified source-hash exception with its stage-75 detection control.
+
+
+## Panel initialization and render wrappers, stage 95
+
+Five complete functions add **356 bytes**: initialization **0x8c19584c** (268),
+release **0x8c195958** (32), default-alpha wrappers **0x8c195978/0x8c195984**
+(12 each), and default-scale wrapper **0x8c195990** (32). Totals are **449 functions /
+401 modules / 43,188 compiled full-range bytes / 4,119,724 retained reference
+bytes**, or **1.0374% whole-image coverage**. All 444 previous matches, module
+definitions and source/header hashes remain unchanged. Since the initial
+checkpoint, 415 functions replace 39,544 bytes. Code-only completion remains
+unknown; standalone reconstructed static data is zero.
+
+Initialization preserves both 4,096-word memory sweeps and their infinite-loop
+failure paths, nine copies of the default state, global mode and scale setup,
+nullable 32-byte allocation, root construction, dispatch assignment and resource
+load. The signed-short counter is extended for the unsigned bound comparison.
+An external resource-name array recovers base-plus185 address construction;
+external globals and independent store ordering recover call/branch scheduling.
+The final 20 differing bytes were loop-register choices: explicitly naming the
+bound after the pointer and counter declarations recovers the complete range.
+No checks, failure paths or allocation behavior are removed.
+
+The checked instance view covers word0, flags4, dispatch24 and halfwords28/30.
+Release sets flag1, clears the global owner and tail-calls resource release; an
+external call declaration recovers its literal scheduling. The render wrappers
+preserve depth, position and optional scale arguments, supply alpha1, or construct
+the two-float unit scale in the original stack order. Both transitive headers
+are declared as compiler inputs and all prior header hashes remain unchanged.
+
+Drawing **0x8c1956d0** remains unmatched: by-value position grows to256 bytes;
+union views and a function-scope coordinate remain244; an explicit group bound
+produces248. The callee confirms two float coordinates accessed through the
+position argument. The renderer **0x8c1959b0** reaches **212 bytes / 26 differing
+bytes**, first **0x8c1959bc**, by capturing coordinates and the global vertical
+scale. It preserves opacity branches, color save/restore and the observed record
+fields. Captured scale alone, flat fields and alternate assignment scopes fail;
+float operand order and input lifetimes explain the remaining early scheduling.
+Neither drawing function is admitted. Previously tried primary loop-bound
+hypotheses were reviewed rather than silently repeated.
+
+All **56 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons; none were compiler-rejected. Final checked sources match twice
+independently. Two fresh exact builds, integrated image comparison, five-function
+proof and all **53 research tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,119,724 retained bytes without changing artifacts. Focused
+exports use a disposable copy and are checked against current inputs; the original
+database remains unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Supporting
+matches do not replace primary acceptance. Compiler, base flags and complete-range
+rules are unchanged. Publication retains default scanner rules and the single
+verified source-hash exception with its stage-75 detection control.
