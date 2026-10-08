@@ -50,6 +50,7 @@ class ReconstructionWorkflowTests(unittest.TestCase):
                     return list(reconstruct.destructor_candidates(manifest, blob, catalog, prior, reviewed))
                 self.assertEqual(candidates(), [])
                 self.assertEqual(len(candidates(reviewed={0x1080})), 1)
+                self.assertEqual(len(candidates(catalog=set(), reviewed={0x1080})), 1)
                 self.assertEqual(len(candidates(catalog={0x1080, 0x10c4})), 1)
                 self.assertEqual(candidates(prior={0x1080}, reviewed={0x1080}), [])
                 changed = bytearray(reference);changed[128] ^= 1

@@ -39,6 +39,8 @@ runtime objects. Historical and queued targets are skipped automatically.
 
 The next entry must appear in the function catalog, or its boundary must have been
 reviewed explicitly and supplied as a JSON address list with `--boundaries`.
+That list can also include entries omitted from the catalog; independently
+confirm their entry references and complete boundaries before generating them.
 Review the shared instruction shape, every extracted dispatch/base/allocator
 reference, and adjacent entry evidence before admission. Pattern recognition is a
 candidate generator; recompilation and full comparison remain mandatory.

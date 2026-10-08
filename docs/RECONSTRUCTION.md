@@ -7833,4 +7833,9 @@ rejection. Continue into matrix setup, vector transforms and model-node helpers.
 
 ## Consolidated reconstruction and efficiency pass, batch 163
 
-35 exact functions add 2,472 bytes, including 27 generated destructor matches / 1,836 bytes newly reconstructed during the efficiency pass. Totals: 729 functions, 66,596 compiled function-range bytes, zero reconstructed data bytes and 4,096,316 retained reference bytes. All 694 previously published functions are preserved. The two unpublished small batches are consolidated here. See [BATCH.md](BATCH.md) for measured overhead, failed hypotheses, source-bound verification and continuation rules.
+35 exact functions add 2,472 bytes, including 27 generated destructor matches / 1,836 bytes newly reconstructed during the efficiency pass. Totals: 729 functions, 66,596 compiled function-range bytes, zero reconstructed data bytes and 4,096,316 retained reference bytes. All 694 previously published functions are preserved. The two unpublished small batches are consolidated here. See [EFFICIENCY.md](EFFICIENCY.md) for measured overhead, failed hypotheses, source-bound verification and continuation rules.
+
+
+## Dispatch-referenced destructor family, batch 164
+
+50 complete exact functions add 3,400 bytes. All 729 prior matches remain unchanged. Totals: 779 functions / 721 modules / 69,996 compiled function-range bytes / zero reconstructed data bytes / 4,092,916 retained reference bytes. All first hypotheses matched. Each catalog-omitted entry has a self dispatch-table reference and reviewed adjacent boundary. See [BATCH.md](BATCH.md) for measured verification and remaining candidate inventory.

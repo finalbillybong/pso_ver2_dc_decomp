@@ -108,7 +108,7 @@ def destructor_candidates(manifest, reference, catalog, prior, reviewed):
     code = (project.ROOT / template['source']).read_text()
     literal_offsets = (52, 56, 60, 64)
     originals = [int.from_bytes(original[i:i + 4], 'little') for i in literal_offsets]
-    for address in sorted(catalog - prior):
+    for address in sorted((catalog | reviewed) - prior):
         offset = address - base
         if offset < 0 or offset + 68 > len(reference) or any(max(offset, a) < min(offset + 68, b) for a, b in spans):
             continue

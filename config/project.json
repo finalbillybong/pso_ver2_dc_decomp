@@ -5,6 +5,214 @@
   "decoded_reference": "config/decoded.json",
   "units": [
     {
+      "id": "destroy_object_8c0111d0",
+      "source": "src/effects/destroy_object_8c0111d0.c",
+      "address": "0x8c0111d0",
+      "entry": "_destroy_object_8c0111d0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 4560,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0111d0",
+          "address": "0x8c0111d0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "dad3a5f080492eeff5d07cb4b746eae9a9241573ef6141869b825c9efeb924fc",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c011fc4",
+      "source": "src/effects/destroy_object_8c011fc4.c",
+      "address": "0x8c011fc4",
+      "entry": "_destroy_object_8c011fc4",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 8132,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c011fc4",
+          "address": "0x8c011fc4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "0ba89b1fbd9d49ef0ef9a837a0f8c6dc1a920e0189fa40733f87037ddf299292",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c0130e8",
+      "source": "src/effects/destroy_object_8c0130e8.c",
+      "address": "0x8c0130e8",
+      "entry": "_destroy_object_8c0130e8",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 12520,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0130e8",
+          "address": "0x8c0130e8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "7a054c119dae433feb5f66362afa791b850e3f2243ab35285d0c421fd495ee71",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c013570",
+      "source": "src/effects/destroy_object_8c013570.c",
+      "address": "0x8c013570",
+      "entry": "_destroy_object_8c013570",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 13680,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c013570",
+          "address": "0x8c013570",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "32ef2b8325097992cff25dddf81ba97a4d3c9ac422de5a2c1928b355ee193498",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c0135b8",
+      "source": "src/effects/destroy_object_8c0135b8.c",
+      "address": "0x8c0135b8",
+      "entry": "_destroy_object_8c0135b8",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 13752,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0135b8",
+          "address": "0x8c0135b8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "286f783aca9b7b49037044c654bb889cd5737349b8145c31872626c04f5528bd",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c013f10",
+      "source": "src/effects/destroy_object_8c013f10.c",
+      "address": "0x8c013f10",
+      "entry": "_destroy_object_8c013f10",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 16144,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c013f10",
+          "address": "0x8c013f10",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "771edab9d53642c881397a1f00c846ece01b7673b56b6aa32898b897647e7d09",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c01410c",
+      "source": "src/effects/destroy_object_8c01410c.c",
+      "address": "0x8c01410c",
+      "entry": "_destroy_object_8c01410c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 16652,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c01410c",
+          "address": "0x8c01410c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b3dec276b3e5c2e05887d4c16a27116680e4b5584e63bc6a22f9a70b4b69c9c4",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c01bb30",
+      "source": "src/effects/destroy_object_8c01bb30.c",
+      "address": "0x8c01bb30",
+      "entry": "_destroy_object_8c01bb30",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 47920,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c01bb30",
+          "address": "0x8c01bb30",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "81abfc99d5e27df154b2e0077a4bc3ee730331e59a655c6b3c475a03e8d6b27c",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
       "id": "destroy_object_8c01c500",
       "source": "src/effects/destroy_object_8c01c500.c",
       "address": "0x8c01c500",
@@ -613,6 +821,32 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; raw callees checked for incoming arguments; final source exact twice; reconstruction-stage72."
     },
     {
+      "id": "destroy_object_8c02d110",
+      "source": "src/effects/destroy_object_8c02d110.c",
+      "address": "0x8c02d110",
+      "entry": "_destroy_object_8c02d110",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 119056,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c02d110",
+          "address": "0x8c02d110",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c684a9936df8d12eabcfa701480c370444c4c8cd1ea8bbab3c2c5c899b0dc259",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
       "id": "current_effect_mode",
       "source": "src/effects/current_mode.c",
       "address": "0x8c032b10",
@@ -635,6 +869,58 @@
         "src/include/context_mode_record.h"
       ],
       "boundary_review": "Raw SH4 entry through adjacent entry including literal pools/alignment; empty entry independently referenced at0x8c27e4ac. Final source exact twice; reconstruction-stage61."
+    },
+    {
+      "id": "destroy_object_8c032e38",
+      "source": "src/effects/destroy_object_8c032e38.c",
+      "address": "0x8c032e38",
+      "entry": "_destroy_object_8c032e38",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 142904,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c032e38",
+          "address": "0x8c032e38",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "eed18c791c1493121a86aab95ce5c829851afbe09514593b1a1e845a7d9452ca",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c033050",
+      "source": "src/effects/destroy_object_8c033050.c",
+      "address": "0x8c033050",
+      "entry": "_destroy_object_8c033050",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 143440,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c033050",
+          "address": "0x8c033050",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "3fcc49a4e2956de398caccb24735b00a64e77621e9d7d5292ee7ac96da257d66",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
       "id": "initialize_hierarchy_node",
@@ -2003,6 +2289,214 @@
       "boundary_review": "Raw SH4 entry to adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage58."
     },
     {
+      "id": "destroy_object_8c03b8b8",
+      "source": "src/effects/destroy_object_8c03b8b8.c",
+      "address": "0x8c03b8b8",
+      "entry": "_destroy_object_8c03b8b8",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 178360,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c03b8b8",
+          "address": "0x8c03b8b8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "0af256b986072ad3d281c2efce739ff90440bbef555ce7e6a28d0e7215b314c4",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c03c1d0",
+      "source": "src/effects/destroy_object_8c03c1d0.c",
+      "address": "0x8c03c1d0",
+      "entry": "_destroy_object_8c03c1d0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 180688,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c03c1d0",
+          "address": "0x8c03c1d0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "2506ef7e995e33f6ea88081736b5de530cab23e00eba51f3087985202dee10df",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c03c214",
+      "source": "src/effects/destroy_object_8c03c214.c",
+      "address": "0x8c03c214",
+      "entry": "_destroy_object_8c03c214",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 180756,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c03c214",
+          "address": "0x8c03c214",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "79adceabcb70ce4ae7ea2b0ff327f46424423cf50a305d4bd084f24adcc9b04b",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c03c258",
+      "source": "src/effects/destroy_object_8c03c258.c",
+      "address": "0x8c03c258",
+      "entry": "_destroy_object_8c03c258",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 180824,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c03c258",
+          "address": "0x8c03c258",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "dea1c3d2d8dba4456b364bc425550564d0b18752ddd5cf31c007172e042171cc",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c03c29c",
+      "source": "src/effects/destroy_object_8c03c29c.c",
+      "address": "0x8c03c29c",
+      "entry": "_destroy_object_8c03c29c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 180892,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c03c29c",
+          "address": "0x8c03c29c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "ef3093465c78ff78676eef51ac7e15d3d28f68dc614d93b95fcbc7435e3b8db8",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c03c2e0",
+      "source": "src/effects/destroy_object_8c03c2e0.c",
+      "address": "0x8c03c2e0",
+      "entry": "_destroy_object_8c03c2e0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 180960,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c03c2e0",
+          "address": "0x8c03c2e0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "98787f2199468ee139acd9816f785ee24b9140767aff5bc00a26d1615317af18",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c03c324",
+      "source": "src/effects/destroy_object_8c03c324.c",
+      "address": "0x8c03c324",
+      "entry": "_destroy_object_8c03c324",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 181028,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c03c324",
+          "address": "0x8c03c324",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "cc6c1515086e52414c5840beda460418ea0f8ac4913662205627bc48fd679f59",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c03c368",
+      "source": "src/effects/destroy_object_8c03c368.c",
+      "address": "0x8c03c368",
+      "entry": "_destroy_object_8c03c368",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 181096,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c03c368",
+          "address": "0x8c03c368",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "a5233860a641e31d68b32bd52647d98c73bd257271f236a0a2be3f92f0ac9069",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
       "id": "destroy_object_8c03ca10",
       "source": "src/effects/destroy_object_8c03ca10.c",
       "address": "0x8c03ca10",
@@ -2479,6 +2973,162 @@
       "reference_sha256": "623de9395687115b76bbb8b8ad532dcfbc727fc4ed53c1d9cc214545ad1ed15a",
       "symbols": {},
       "boundary_review": "Raw entries0x8c03f414/444/480 bound48/60byte routines; return delay and both literals included; source exact twice; stage110."
+    },
+    {
+      "id": "destroy_object_8c040284",
+      "source": "src/effects/destroy_object_8c040284.c",
+      "address": "0x8c040284",
+      "entry": "_destroy_object_8c040284",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 197252,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c040284",
+          "address": "0x8c040284",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "27f80502417896958ada818256ab2becf2fa9e421207d0f616ba31a426bb6a8c",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c04074c",
+      "source": "src/effects/destroy_object_8c04074c.c",
+      "address": "0x8c04074c",
+      "entry": "_destroy_object_8c04074c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 198476,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c04074c",
+          "address": "0x8c04074c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "20f7269ca98efa58b34f4a89e623de4fbe37c525eac0472f58961a76d7f7e90b",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c0407c0",
+      "source": "src/effects/destroy_object_8c0407c0.c",
+      "address": "0x8c0407c0",
+      "entry": "_destroy_object_8c0407c0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 198592,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0407c0",
+          "address": "0x8c0407c0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "488dc719131fff12094cbe8a0cd16a5cf06377f6ddc48b5af497314361736af4",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c040a74",
+      "source": "src/effects/destroy_object_8c040a74.c",
+      "address": "0x8c040a74",
+      "entry": "_destroy_object_8c040a74",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 199284,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c040a74",
+          "address": "0x8c040a74",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b160c217c8a3cac0fb978d2714fd100d6e984a816eb8aeac815ebb86c18a1df8",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c040d40",
+      "source": "src/effects/destroy_object_8c040d40.c",
+      "address": "0x8c040d40",
+      "entry": "_destroy_object_8c040d40",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 200000,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c040d40",
+          "address": "0x8c040d40",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c5f3c611bb8ec938af9d9109d06e9d0f1a0d3aa9bb2243c45962d657319d3156",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c0419e8",
+      "source": "src/effects/destroy_object_8c0419e8.c",
+      "address": "0x8c0419e8",
+      "entry": "_destroy_object_8c0419e8",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 203240,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0419e8",
+          "address": "0x8c0419e8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b97ed984427ac3800a1287de6eabc85f985c8adea3e7320a80b9b5f5a66be245",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
       "id": "normalize_vector_checked",
@@ -4464,6 +5114,32 @@
       "boundary_review": "Raw SH4 entry through adjacent entry with literals, switch table and natural alignment; complete checked source exact twice; reconstruction-stage73."
     },
     {
+      "id": "destroy_object_8c04bb2c",
+      "source": "src/effects/destroy_object_8c04bb2c.c",
+      "address": "0x8c04bb2c",
+      "entry": "_destroy_object_8c04bb2c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 244524,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c04bb2c",
+          "address": "0x8c04bb2c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "f052f992baca060798f05681690912b5e426d250b2cb36cf07a7cf48166c6999",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
       "id": "lookup_object_by_id",
       "source": "src/objects/lookup_object_by_id.c",
       "address": "0x8c053d84",
@@ -4539,6 +5215,32 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage70."
     },
     {
+      "id": "destroy_object_8c0577b4",
+      "source": "src/effects/destroy_object_8c0577b4.c",
+      "address": "0x8c0577b4",
+      "entry": "_destroy_object_8c0577b4",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 292788,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0577b4",
+          "address": "0x8c0577b4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "fb157541c80f9bb22b7bb9d01189c97c32a39717c7565f966619575b491bb636",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
       "id": "destroy_object_8c059c30",
       "source": "src/effects/destroy_object_8c059c30.c",
       "address": "0x8c059c30",
@@ -4562,6 +5264,84 @@
         }
       ],
       "reference_sha256": "2613bad9be9ad06908907d0e2976867fc31b39a2a1620864de64052920e319b5",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c05ec70",
+      "source": "src/effects/destroy_object_8c05ec70.c",
+      "address": "0x8c05ec70",
+      "entry": "_destroy_object_8c05ec70",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 322672,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c05ec70",
+          "address": "0x8c05ec70",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "f63750cc29c08891f9fe6a0c98b878a207477baaaadbcb0d5a03da86f2f23155",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c05edd8",
+      "source": "src/effects/destroy_object_8c05edd8.c",
+      "address": "0x8c05edd8",
+      "entry": "_destroy_object_8c05edd8",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 323032,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c05edd8",
+          "address": "0x8c05edd8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "1eb74dc4e0ec10f8aed3e10d4c4c779fdcf3e223fa89fd3049c32ead049f6237",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c05f30c",
+      "source": "src/effects/destroy_object_8c05f30c.c",
+      "address": "0x8c05f30c",
+      "entry": "_destroy_object_8c05f30c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 324364,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c05f30c",
+          "address": "0x8c05f30c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c5f28213f4da770edf72fa4438e2bb09ab557043e9b41ab1a3744fccf883d280",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
@@ -4873,6 +5653,32 @@
       "boundary_review": "Raw SH4 entry through adjacent entry, including literals/alignment. Link functions combined in original order for natural alignment; no padding inserted. Final source exact twice; reconstruction-stage60."
     },
     {
+      "id": "destroy_object_8c0651e8",
+      "source": "src/effects/destroy_object_8c0651e8.c",
+      "address": "0x8c0651e8",
+      "entry": "_destroy_object_8c0651e8",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 348648,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0651e8",
+          "address": "0x8c0651e8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "7499c82aec6c4d4e8288fafeedba757d6cd15f19c435536bc74f9aaf60c5716e",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
       "id": "destroy_object_8c0755c0",
       "source": "src/effects/destroy_object_8c0755c0.c",
       "address": "0x8c0755c0",
@@ -4896,6 +5702,500 @@
         }
       ],
       "reference_sha256": "131d2b244b35aadb4a97fe77274003e68d5b9ba1368744f98d9f6e5bfeffddf2",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c077908",
+      "source": "src/effects/destroy_object_8c077908.c",
+      "address": "0x8c077908",
+      "entry": "_destroy_object_8c077908",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 424200,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c077908",
+          "address": "0x8c077908",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "65fb821d52e001703c719c81972d849b7bc4e2bf312933535ae9304c8210ec5f",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c077a08",
+      "source": "src/effects/destroy_object_8c077a08.c",
+      "address": "0x8c077a08",
+      "entry": "_destroy_object_8c077a08",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 424456,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c077a08",
+          "address": "0x8c077a08",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "93ed0258a465a23e9edaa153ee23ffdded0d980189776e81da5f66f4594e532b",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c077ba0",
+      "source": "src/effects/destroy_object_8c077ba0.c",
+      "address": "0x8c077ba0",
+      "entry": "_destroy_object_8c077ba0",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 424864,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c077ba0",
+          "address": "0x8c077ba0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "912d7ed170e44a472b665cbe037891bad48af76f344111041b96b8bc683d4518",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c077be4",
+      "source": "src/effects/destroy_object_8c077be4.c",
+      "address": "0x8c077be4",
+      "entry": "_destroy_object_8c077be4",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 424932,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c077be4",
+          "address": "0x8c077be4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "91cd955958b819060c40a647a2c387e24ea8e66edb00ec43b1296e61a852e15a",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c077d9c",
+      "source": "src/effects/destroy_object_8c077d9c.c",
+      "address": "0x8c077d9c",
+      "entry": "_destroy_object_8c077d9c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 425372,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c077d9c",
+          "address": "0x8c077d9c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "6fb119d8b07d8cd0848ed03b399fd88d3771c3684de918952526ee1760584d52",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c077e84",
+      "source": "src/effects/destroy_object_8c077e84.c",
+      "address": "0x8c077e84",
+      "entry": "_destroy_object_8c077e84",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 425604,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c077e84",
+          "address": "0x8c077e84",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "266ff2f6036d8930f7dd5861c3ece82b081c90d9ba3e5d1db010b2b56016834d",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c077f60",
+      "source": "src/effects/destroy_object_8c077f60.c",
+      "address": "0x8c077f60",
+      "entry": "_destroy_object_8c077f60",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 425824,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c077f60",
+          "address": "0x8c077f60",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "0cbf37e13b7b25559e0cda186d18eb024fd8af904f71c5c1d97c9e1b8937b892",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c07805c",
+      "source": "src/effects/destroy_object_8c07805c.c",
+      "address": "0x8c07805c",
+      "entry": "_destroy_object_8c07805c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 426076,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c07805c",
+          "address": "0x8c07805c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "0ebb929bb8e5ab45e199eaba81ac463778f65bfcadaaf5881c9d771c84f2ea12",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c078134",
+      "source": "src/effects/destroy_object_8c078134.c",
+      "address": "0x8c078134",
+      "entry": "_destroy_object_8c078134",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 426292,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c078134",
+          "address": "0x8c078134",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "5b4d18a9f8576843e680afce3260a18065696528da593cd77d3136027c4ddd3e",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c078320",
+      "source": "src/effects/destroy_object_8c078320.c",
+      "address": "0x8c078320",
+      "entry": "_destroy_object_8c078320",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 426784,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c078320",
+          "address": "0x8c078320",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "2605d4bfbdc443bf21b68b4b688690cbbe743554ad58714f18f8f73b676115ad",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c0785b4",
+      "source": "src/effects/destroy_object_8c0785b4.c",
+      "address": "0x8c0785b4",
+      "entry": "_destroy_object_8c0785b4",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 427444,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c0785b4",
+          "address": "0x8c0785b4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "586e36f9c074970471d5038dfaa05fd5681bf00561dfd9b3ecae8ff05eb8cb41",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c07868c",
+      "source": "src/effects/destroy_object_8c07868c.c",
+      "address": "0x8c07868c",
+      "entry": "_destroy_object_8c07868c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 427660,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c07868c",
+          "address": "0x8c07868c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "944d6faeddc3f44e3e2104e86721fdee4b614443a0145df052060fa7a72abb4f",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c078788",
+      "source": "src/effects/destroy_object_8c078788.c",
+      "address": "0x8c078788",
+      "entry": "_destroy_object_8c078788",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 427912,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c078788",
+          "address": "0x8c078788",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "86bac43fa68eeba520ac081a473c7ab02cb3f7efacb9025f6fb2504ef22cb445",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c07b480",
+      "source": "src/effects/destroy_object_8c07b480.c",
+      "address": "0x8c07b480",
+      "entry": "_destroy_object_8c07b480",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 439424,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c07b480",
+          "address": "0x8c07b480",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e5670b2dcf1ca0aa91152066d6be5df2bb6ead242ca0ac3c7777863e1552c7c1",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c07b5a8",
+      "source": "src/effects/destroy_object_8c07b5a8.c",
+      "address": "0x8c07b5a8",
+      "entry": "_destroy_object_8c07b5a8",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 439720,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c07b5a8",
+          "address": "0x8c07b5a8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "3fb2872e2756cdabba9a138bc0e84308ac0aca6b2039651a305f9ebac5081627",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c07ca70",
+      "source": "src/effects/destroy_object_8c07ca70.c",
+      "address": "0x8c07ca70",
+      "entry": "_destroy_object_8c07ca70",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 445040,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c07ca70",
+          "address": "0x8c07ca70",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "f653ab1425f94e0fecd051c6625957ad120ac36c220bf3e09f3190656ed57041",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c07cd48",
+      "source": "src/effects/destroy_object_8c07cd48.c",
+      "address": "0x8c07cd48",
+      "entry": "_destroy_object_8c07cd48",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 445768,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c07cd48",
+          "address": "0x8c07cd48",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "bc9eb3eaadbc5a96955171953887cff319f46577981259c265c767724f727481",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c07d168",
+      "source": "src/effects/destroy_object_8c07d168.c",
+      "address": "0x8c07d168",
+      "entry": "_destroy_object_8c07d168",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 446824,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c07d168",
+          "address": "0x8c07d168",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b0d143914fd0625fac85c148074631747abd252c917fc8f0d4205e3a09cdb58b",
+      "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_object_8c07fdb8",
+      "source": "src/effects/destroy_object_8c07fdb8.c",
+      "address": "0x8c07fdb8",
+      "entry": "_destroy_object_8c07fdb8",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 458168,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_object_8c07fdb8",
+          "address": "0x8c07fdb8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "bdaf97ecb84fac1ca752044193de2392de8f946f1131e053a595a8c1dd4727e8",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
