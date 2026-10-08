@@ -6071,6 +6071,39 @@
       "boundary_review": "Raw little-endian SH4: Return delay 0x8c0aa7cc; alignment 0x8c0aa7ce; four literals 0x8c0aa7d0-0x8c0aa7e0; adjacent entry 0x8c0aa7e0. Complete fixed-C match independently twice; see reconstruction-stage20."
     },
     {
+      "id": "effect_phase_and_factory",
+      "source": "src/effects/effect_phase_and_factory.c",
+      "address": "0x8c0ab2fc",
+      "entry": "_check_effect_phase",
+      "headers": [
+        "src/include/effect_motion_gate.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 635644,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "check_effect_phase",
+          "address": "0x8c0ab2fc",
+          "size": 24
+        },
+        {
+          "name": "create_effect_b314",
+          "address": "0x8c0ab314",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "13a8a051257c14596311a9fbd533963df28df9bb439cd8abaa8e9345eba444eb",
+      "symbols": {
+        "_initialize_at": "0x8c0aa7e0"
+      },
+      "boundary_review": "Raw phase0x8c0ab2fc-0x8c0ab314 includes natural two-byte entry alignment; factory0x8c0ab314-0x8c0ab360 includes four literals and return delay. Full100byte module exact twice; stage112."
+    },
+    {
       "id": "spawn_effect_1",
       "source": "src/effects/spawn_effect_1.c",
       "address": "0x8c0ab360",

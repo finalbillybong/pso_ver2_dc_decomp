@@ -11231,6 +11231,108 @@
       "boundary_review": "Raw SH4 entries0x8c0a6c08/34/d0 and0x8c0a6d10 bound44/156/64byte functions including return delays and complete literal pools; checked source exact twice; stage111.",
       "status": "matched",
       "reason": "Complete checked effect table/view operation. Primary targets remain parked; no compiler changes."
+    },
+    {
+      "id": "effect_phase_and_factory",
+      "source": "src/effects/effect_phase_and_factory.c",
+      "address": "0x8c0ab2fc",
+      "entry": "_check_effect_phase",
+      "headers": [
+        "src/include/effect_motion_gate.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 635644,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "check_effect_phase",
+          "address": "0x8c0ab2fc",
+          "size": 24
+        },
+        {
+          "name": "create_effect_b314",
+          "address": "0x8c0ab314",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "13a8a051257c14596311a9fbd533963df28df9bb439cd8abaa8e9345eba444eb",
+      "symbols": {
+        "_initialize_at": "0x8c0aa7e0"
+      },
+      "boundary_review": "Raw phase0x8c0ab2fc-0x8c0ab314 includes natural two-byte entry alignment; factory0x8c0ab314-0x8c0ab360 includes four literals and return delay. Full100byte module exact twice; stage112.",
+      "status": "matched",
+      "reason": "Both genuine adjacent functions exact, including natural alignment and literals."
+    },
+    {
+      "id": "create_effect_bf80",
+      "source": "src/provisional/create_effect_bf80.c",
+      "address": "0x8c0abf80",
+      "entry": "_create_effect_bf80",
+      "headers": [
+        "src/include/large_effect_factory.h"
+      ],
+      "ranges": [
+        {
+          "offset": 638848,
+          "size": 280
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_bf80",
+          "address": "0x8c0abf80",
+          "size": 280
+        }
+      ],
+      "reference_sha256": "a38c57cb236dad1c5018f2503d1ff340999eb5976fa0ae507124cc7e55170587",
+      "symbols": {
+        "_initialize_at": "0x8c0ad660",
+        "_construct_at": "0x8c18e044",
+        "_bind_at": "0x8c0ada34",
+        "_templates": "0x8c3047f8",
+        "_emit_at": "0x8c05fbf8"
+      },
+      "status": "parked",
+      "reason": "Stage112:280bytes/24differing, first0x8c0abfce. All remaining differences are zero/tag-store scheduling before the64byte template copy; allocation, helper calls, copy loops and emission now match. Nine distinct unsuccessful hypotheses; no useful new evidence remains.",
+      "revisit_when": "An independent exact constructor demonstrates offset264 zero-store plus global-tag store with the same stack-home lifetime, or verified C++ constructor/source context supplies a materially different lowering.",
+      "distinct_unsuccessful_hypotheses": 9,
+      "hypothesis_limit": 10,
+      "comparison": {
+        "size": 280,
+        "expected_size": 280,
+        "differing_bytes": 24,
+        "first_difference": "0x8c0abfce",
+        "offsets": [
+          78,
+          79,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105
+        ]
+      }
     }
   ]
 }

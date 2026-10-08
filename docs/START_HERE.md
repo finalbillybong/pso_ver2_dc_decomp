@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **473 exact functions in 423 modules**, replacing
-**46,960 bytes** of the 4,162,912-byte decoded executable (**1.1281% image coverage**).
-It retains **4,115,952 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **475 exact functions in 424 modules**, replacing
+**47,060 bytes** of the 4,162,912-byte decoded executable (**1.1305% image coverage**).
+It retains **4,115,852 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,16 +28,13 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 111
+## Latest integration batch: stage 112
 
-Three exact effect view functions replace 264 bytes. All 470 preceding matches
-and source/header files remain unchanged. The C++ method declaration reproduces
-the observed virtual slot60, followed by ordered component writes.
-
-Both primary targets remain parked at512/30 and388/8. There is no primary or
-standalone-data improvement. Two fresh builds in each checkout, exact image
-comparison, five-function proof,53 research tests,58 public tests and source-only
-rejection pass. See [RECONSTRUCTION.md](RECONSTRUCTION.md) for failed hypotheses.
+Stage112 adds **2 functions /100 bytes**: the phase check and adjacent nullable
+factory. All473 previous matches and prior sources/headers are preserved. Required
+exact builds, proof, tests and source-only rejection pass. The larger factory is
+parked at280/24 after nine distinct hypotheses; its improvement earns no completed
+bytes. The original two primary targets remain parked. See reconstruction findings.
 
 ## Autonomous iteration
 

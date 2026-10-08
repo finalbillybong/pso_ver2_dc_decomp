@@ -5761,3 +5761,46 @@ disc repacking, private data changes or research-workspace commit occurs.
 Reproduce with `python3 -B tools/verify_source.py`, then run the current tests and
 `python3 -B tools/project.py build --source-only` (expected rejection). Public
 progress uses `python3 -B tools/progress.py --record` after exact verification.
+
+
+## Effect phase and nullable factory, stage 112
+
+Two new exact functions replace **100 bytes**: check_effect_phase at0x8c0ab2fc
+(24 bytes) and create_effect_b314 at0x8c0ab314 (76 bytes). Totals are **475 functions /
+424 modules /47,060 compiled bytes /4,115,852 retained reference bytes**, or
+**1.1305% whole-image coverage**. All473 prior matches and source/header files remain
+unchanged. Static data reconstruction remains zero.
+
+The phase comparison uses `!(phase < 1.0f)`, preserving the unordered/NaN flag
+write at offset4. The adjacent factory allocates180 bytes from the observed pool,
+conditionally calls its initializer with three preserved inputs, and returns the
+allocation. Their genuine adjacency supplies natural two-byte entry alignment;
+no artificial padding is used. The checked module matches independently twice.
+
+Investigation-only: create_effect_bf80 improves from280/42 to280/24 but remains
+incomplete. Nine distinct hypotheses are retained, with identical compiler outputs
+grouped. Separating the tested allocation from its branch-local homed alias fixes
+the entry schedule when the original allocation is passed to the initializer.
+An external emission declaration fixes the final call and literal order. Named
+count fields, raw count offsets and external tag declarations yield identical
+outputs. A scoped tag value worsens to25differences; inlining a constructor yields
+32. Remaining24differences start at0x8c0abfce in zero/tag-store scheduling before
+the64-byte template copy. Allocation, calls and64/92-byte copy loops match.
+
+This target is parked after nine unsuccessful distinct hypotheses because useful
+new evidence has run out. Its checked provisional source, exact offsets and
+persistent count are recorded in the unresolved queue. Revisit only with an
+independent exact constructor demonstrating the same stack-home/store schedule,
+or verified different original constructor context. No completed bytes are credited.
+The original primary targets remain parked at512/30 and388/8.
+
+Two fresh exact builds in each checkout, integrated-image comparison, five-function
+proof,53 research tests and58 public tests pass. Source-only rejects4,115,852 bytes
+without changing build artifacts. Focused evidence is refreshed on a disposable
+analysis database and validated. Compiler settings, observed behavior and private
+data are preserved. Stage111 commit6b6d6c4 is published with remote checks passing.
+
+Reproduce using `python3 -B tools/verify_source.py` and the current unittest suite.
+`python3 -B tools/project.py build --source-only` must reject the remaining gaps.
+Public progress recording follows fresh exact verification. Continue target rotation
+and reviewed publication without resetting parked-target experiment counts.

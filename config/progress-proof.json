@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "6873a4c031e98cca4fe5567e4d2b05a20e144649369801d90a9fded49e93c526",
+    "config/project.json": "2a0f9932654b815aa6ee91442d738a2edaed25f4911fd3eb2ffd99c3092f3f05",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -62,6 +62,7 @@
     "src/effects/effect_bits_and_words.c": "5ef17c48900533d2d7952e8892fbbe5d84819a58e4b6b4a6e52567bfaf68dd01",
     "src/effects/effect_control_button.c": "6fa76ea53cb9c6dcdd8d28b3cc851e93e8aed15afc42eb760747c8a38359110f",
     "src/effects/effect_noop_9654.c": "e1e0f4f24981e1054295f5e8b4af6482779690875ad68cd8856a6167f9dfca8a",
+    "src/effects/effect_phase_and_factory.c": "94f399e376521c30cfb306ac21bcce5069ade08f67d0c40c1b243d75ff6a16c9",
     "src/effects/effect_release_and_create.c": "fd8352da2371d86dc6697cddd8adf2d872f00762309963e2f594836cb959161f",
     "src/effects/emission_setup_6020c.c": "d7c9f7327150139b3fd286ba5850b269b011fb27d3ffde4440c550b80f8b6eec",
     "src/effects/emit_alternate_6028c.c": "32c9471680b06935802410184437beb72df44cd12175521a01381b7002b9c762",
@@ -3126,6 +3127,17 @@
       "off",
       "-O2"
     ],
+    "effect_phase_and_factory": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_effect_1": [
       "-proc",
       "SH4",
@@ -5227,6 +5239,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4115952,
+  "source_only_rejected_retained_bytes": 4115852,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }
