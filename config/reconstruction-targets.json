@@ -9262,6 +9262,110 @@
       "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource chunk and texture prefixes checked; complete final source exact twice; reconstruction-stage85.",
       "status": "matched",
       "reason": "Complete resource chunk load or paired allocation/cleanup/dispatch; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_193d9c",
+      "source": "src/objects/operation_193d9c.c",
+      "address": "0x8c193d9c",
+      "entry": "_operation_193d9c",
+      "ranges": [
+        {
+          "offset": 1588636,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193d9c",
+          "address": "0x8c193d9c",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "b03e7050eceab601b9abacabe6b7f297811370b559f01a87ff35e1cb9a3e0cbb",
+      "headers": [
+        "src/include/resource_task_owner.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource task and resident-entry prefixes checked; complete final source exact twice; reconstruction-stage86.",
+      "status": "matched",
+      "reason": "Complete resource task owner construction, state update or destruction; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_193df8",
+      "source": "src/objects/operation_193df8.c",
+      "address": "0x8c193df8",
+      "entry": "_operation_193df8",
+      "ranges": [
+        {
+          "offset": 1588728,
+          "size": 200
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193df8",
+          "address": "0x8c193df8",
+          "size": 200
+        }
+      ],
+      "reference_sha256": "c8274d24e1eb13a577be2e7266ed09d4b9c9fc8d098124875fa6753e73af0d91",
+      "headers": [
+        "src/include/resource_task_owner.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource task and resident-entry prefixes checked; complete final source exact twice; reconstruction-stage86.",
+      "status": "matched",
+      "reason": "Complete resource task owner construction, state update or destruction; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_193ec0",
+      "source": "src/objects/operation_193ec0.c",
+      "address": "0x8c193ec0",
+      "entry": "_operation_193ec0",
+      "ranges": [
+        {
+          "offset": 1588928,
+          "size": 296
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193ec0",
+          "address": "0x8c193ec0",
+          "size": 296
+        }
+      ],
+      "reference_sha256": "1b9eb648f5833e2c2e12359eb5cb551d93c4cc04f3f0684daf11f441a0c2568f",
+      "headers": [
+        "src/include/resource_task_owner.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource task and resident-entry prefixes checked; complete final source exact twice; reconstruction-stage86.",
+      "status": "matched",
+      "reason": "Complete resource task owner construction, state update or destruction; static dispatch and globals remain reference-dependent."
+    },
+    {
+      "id": "operation_193fe8",
+      "source": "src/objects/operation_193fe8.c",
+      "address": "0x8c193fe8",
+      "entry": "_operation_193fe8",
+      "ranges": [
+        {
+          "offset": 1589224,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_193fe8",
+          "address": "0x8c193fe8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "331aca4100bc938c679586d0240c51c37c691d490012d6b68de7bc9784484bee",
+      "headers": [
+        "src/include/resource_task_owner.h"
+      ],
+      "boundary_review": "Raw SH4 complete entry through adjacent entry including literals/alignment; resource task and resident-entry prefixes checked; complete final source exact twice; reconstruction-stage86.",
+      "status": "matched",
+      "reason": "Complete resource task owner construction, state update or destruction; static dispatch and globals remain reference-dependent."
     }
   ]
 }

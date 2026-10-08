@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "264eeb76cb1a396603519a390950606a3c657a2b5a54b9d2a9d7abd5d60a7c19",
+    "config/project.json": "c08fcd1b8c94b335ca8cba10511c15a18fb6fb4de2333dfb2bb3db2ea05db7e5",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -162,6 +162,7 @@
     "src/include/resource_record.h": "427c948b236e135a397c15e5e7a1ae63c2272cfcc8cedda0965ea02fc358b886",
     "src/include/resource_slot.h": "3bf0dba281908a2613bc7637cf88e5fb489a62ba6122a0f9cbad722330f1ed14",
     "src/include/resource_state.h": "b419533a9c2f8dbfb587267bf67c2b740e18479aa18c3bf5e51922b012e142d5",
+    "src/include/resource_task_owner.h": "44364e1c332c142f820d7f84be34fa0e24d87c5e580aceea9ccac9fb9e5c8094",
     "src/include/running_profile.h": "c1b72e777d052aa9ed5e46d8e50100383c68887151a6bd8523564ae0a40d4455",
     "src/include/sample_storage.h": "d68ce1d7bc3874b43a8bc20e1a7896f679faae4eaeedead7e0eec51f5e5c80c3",
     "src/include/shared_object.h": "27624c60b20fd95cd2d104d1496708fbbaa18376a964f2bb54a86093efce21f1",
@@ -296,6 +297,10 @@
     "src/objects/operation_193bf8.c": "6e1e75a8801f0398852bf0d3bd83397459a6ba2c4feed1a1dfb3dab123ca5e3a",
     "src/objects/operation_193cc8.c": "7019c5b5407729fc43b29ad93a9bc6cba919f5863de12595ccc419d4623956b5",
     "src/objects/operation_193d18.c": "02537d0ac7893d69b0125872e0fa22eb79cadc761044c0c8cfddfb7b4119f469",
+    "src/objects/operation_193d9c.c": "f8cd124e05af16f74721c391897f5dfcc93e3ecdf5e416820e1a6c17aff12bc1",
+    "src/objects/operation_193df8.c": "ad2f9833f5bd0fb3f7770af7e6f7a019a59b301101e32e1873589cbfa7d89b56",
+    "src/objects/operation_193ec0.c": "08a2871de52da4455fbc121f1ee41ab38526da7e9c1673a3ac64e335dc866056",
+    "src/objects/operation_193fe8.c": "951cc7deeb7c9f592c6ca204d44a94bd5fe512506aea4dab3ee64ffdeed823da",
     "src/objects/operation_1abb78.c": "b9d5379ef632a39f53e4d24e904af17a7ebef8db7d98c4d8f98a533da85adc5e",
     "src/objects/operation_1abbcc.cpp": "6c367e175bd863afea760e8df8b60fea717d3c235011dd1bd6a21d53d691fd63",
     "src/objects/operation_1abc6c.c": "bd29e14a36cb7c1bbd60cadbd9ad8a55b6ccfb1d64abf7dc88eb4e6bf22fe305",
@@ -3672,6 +3677,50 @@
       "off",
       "-O2"
     ],
+    "operation_193d9c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_193df8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_193ec0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_193fe8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "initialize_proximity_object": [
       "-proc",
       "SH4",
@@ -4363,6 +4412,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4124956,
+  "source_only_rejected_retained_bytes": 4124300,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

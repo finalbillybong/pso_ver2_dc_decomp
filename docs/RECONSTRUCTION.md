@@ -4454,3 +4454,50 @@ Static dispatch, globals and remaining callees retain reference dependence.
 Compiler, base flags, default GNU linker and full-range acceptance are unchanged.
 Publication retains all default scanner rules and the narrowly verified
 source-hash exception with its stage-75 detection control.
+
+
+## Resource task owner operations, stage 86
+
+Four complete functions add **656 bytes**: owner construction **0x8c193d9c** (92),
+destruction **0x8c193df8** (200), state update **0x8c193ec0** (296), and adjacent
+base destruction **0x8c193fe8** (68). Totals are **404 functions / 357 modules /
+38,612 compiled full-range bytes / 4,124,300 retained reference bytes**, or
+**0.9275% whole-image coverage**. All 400 previous matches, module definitions
+and source/header hashes remain unchanged. Since the initial checkpoint,
+370 functions replace 34,968 bytes. Code-only completion remains unknown;
+separately reconstructed static data is zero.
+
+Construction preserves the fifth stack argument, repeated state writes, root
+call, dispatch assignment and four-slot shift loop. Destruction retains distinct
+state-two/state-three ownership resets, materialized bit-four predicates, shared
+busy clear, conditional residency cleanup, root teardown and positive signed
+release. The resident entry dereference retains the observed missing intermediate
+null guard. Checked provisional views cover the 72-byte owner, resource fields
+and resident-entry prefixes; no earlier headers are changed.
+
+Update preserves all three states, sequential model/texture requests, explicit
+start and done predicates, nullable destination guards and repeated global loads.
+Two nested inline wrappers initially emit an out-of-line start helper and fail
+full-range comparison. Flattening the intermediate wrappers reaches 296/68;
+keeping an independent resource alias before the first request and capturing the
+second request's output first reaches 296/8. A local value for each copied model
+pointer resolves the final destination/source register difference. Capturing the
+array base or loop offset instead does not. No guard or state transition is added.
+
+All **25 trials** retain source snapshots, hypotheses and comparisons, including
+one compiler rejection caused by an incorrectly ordered scratch helper
+declaration. The corrected helper experiment is retained separately. Final
+checked sources match twice independently. Two fresh exact project builds,
+integrated image comparison, five-function proof and all **53 research tests**
+pass; the public suite remains **58 tests**. Source-only rejects 4,124,300 retained
+bytes without changing artifacts. Focused exports use a disposable copy and are
+checked against current inputs; the original database remains unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Supporting
+matches do not replace primary acceptance. Earlier buffer initialization remains
+**172/4**, root child construction **316/28**, larger child construction **496/362**.
+Static dispatch, globals and remaining callees retain reference dependence.
+Compiler, base flags, default GNU linker and full-range acceptance are unchanged.
+Publication retains all default scanner rules and the narrowly verified
+source-hash exception with its stage-75 detection control.
