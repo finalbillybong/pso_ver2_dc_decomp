@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "1327ac5290880be5b1d6a4573322e9699342869057f25bfa35cad1dd8c4f6016",
+    "config/project.json": "cba84137873a217b45cc9e8cb4a8b7311e484b4277e83a8824863e7ecc42ff9a",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/adjust_vector_scaled.c": "2bc8ad32f193d55a348ce64032cf6850bb892542629f77a45f05a492309bbd9a",
@@ -139,9 +139,12 @@
     "src/effects/initialize_color_rise.c": "9dc908e06f17301ac25ec5a5f86cc996baf2dc6a764c30f506385db9d49761d7",
     "src/effects/initialize_default.c": "a3bbd7cbe8175924802c6cb18c94135ced66802965d9e092a415d171f67955a9",
     "src/effects/initialize_delayed_effect.c": "da2184f11b15b49a0c41bf626139439a1bb04c2ae59c36e146346c6e2178625c",
+    "src/effects/initialize_effect10_template.c": "4495b439d14be3436c9b750fed91182d27329da4b555f7ac70c027fdc0e90db1",
+    "src/effects/initialize_effect4_template.c": "af19abc34d9236951132cab15ca4af5a9229a386651d45a94128427488e206d4",
     "src/effects/initialize_effect_a052c.c": "da48dc2c02160c0c833be75ebeb99765fb1ef987e2689b3ced3c5373661f9738",
     "src/effects/initialize_effect_a064c.c": "15a726efce2a47d6d51442d0c888f24a4ae527d9064e3eccde57ab21fbf992e1",
     "src/effects/initialize_effect_event.c": "73d3de58d9e00f34411fd3cce4503eb8dfe59d598da3e269353399fcc628d15e",
+    "src/effects/initialize_effect_pair.c": "aeb96881ef0b50e12d0422d4f5daeec19eaf83d397ec54e67e819fd850332aee",
     "src/effects/initialize_effect_vector.c": "8e4475aa81c91cf3d5ceda72228f6baa366de4cff2502927c65504daf19cffb9",
     "src/effects/initialize_effect_vector_field30.c": "1e4f4300423b4e7afb386b2df96c43249d4caf2284956ba875e36ef5c658e740",
     "src/effects/initialize_fade_state.c": "b3a32e645a7e0e056053ff8cd946d5a57a85fe7e0fa5753ed158aca2359a6db5",
@@ -254,6 +257,7 @@
     "src/include/effect_resource_records.h": "8c7084730fb60df78dda627112517a2b106afd8e227390636b8400e73fdb7ff5",
     "src/include/effect_resource_views.h": "1d4ec0b49b020089afa5f8a525a1a61c5954a96b52bc35e599e26cfe4a8481b3",
     "src/include/effect_scan.h": "936769aba0071dc73fd3b04e2bb021826c13e22713a1c105adc9981cc43f1f3e",
+    "src/include/effect_template_init.h": "a14ea4e82a439c98b06b98a3a9ddf51e0b8d6e18ba4e77e727bab87e59d63816",
     "src/include/effect_update.h": "107613e65e2c0982cde01c72af62baa40d9917e571f84c601568ab9c4cddb1f5",
     "src/include/effect_value_context.h": "032a28503d75ca5364ae59a55d17f8ebd8fa02a1b63250460e9b84f2bb48fe50",
     "src/include/effect_view.h": "9969a97780088fd5c7e0b3dae3c90cf0240c6f9d3afef843c6573eb97086ca39",
@@ -4188,6 +4192,28 @@
       "off",
       "-O2"
     ],
+    "initialize_effect_pair": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_effect10_template": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "create_effect_b0fac": [
       "-proc",
       "SH4",
@@ -4222,6 +4248,17 @@
       "-O2"
     ],
     "create_effect_b1af0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_effect4_template": [
       "-proc",
       "SH4",
       "-endian",
@@ -7575,6 +7612,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4101132,
+  "source_only_rejected_retained_bytes": 4100724,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

@@ -7993,6 +7993,60 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including call/return delays, signed deletion flag, counted loop branches, literals and natural alignment. Independently checked full range twice; stage124."
     },
     {
+      "id": "initialize_effect_pair",
+      "source": "src/effects/initialize_effect_pair.c",
+      "address": "0x8c0b0588",
+      "entry": "_initialize_effect_pair",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_template_init.h"
+      ],
+      "ranges": [
+        {
+          "offset": 656776,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect_pair",
+          "address": "0x8c0b0588",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "8d17170f99651c8f89457581979d301dda0e02ca48faaecaa97f7985654d315d",
+      "symbols": {},
+      "boundary_review": "Raw pair and template initializers reviewed through adjacent entries, sixargument stack offsets, signedshort fields, eight-iteration copy loops, staticbase offsets, repeated predicate, literals and natural alignment. Full checked match twice; stage155."
+    },
+    {
+      "id": "initialize_effect10_template",
+      "source": "src/effects/initialize_effect10_template.c",
+      "address": "0x8c0b0764",
+      "entry": "_initialize_effect10_template",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_template_init.h"
+      ],
+      "ranges": [
+        {
+          "offset": 657252,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect10_template",
+          "address": "0x8c0b0764",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "b1ff659ddc9ee4156dc13d24190f511ea1a5637c81ae143e569bb51838e5e993",
+      "symbols": {
+        "_get_effect_template": "0x8c0adc1c"
+      },
+      "boundary_review": "Raw pair and template initializers reviewed through adjacent entries, sixargument stack offsets, signedshort fields, eight-iteration copy loops, staticbase offsets, repeated predicate, literals and natural alignment. Full checked match twice; stage155."
+    },
+    {
       "id": "create_effect_b0fac",
       "source": "src/effects/create_effect_b0fac.c",
       "address": "0x8c0b0fac",
@@ -8091,6 +8145,36 @@
         "_initialize_at": "0x8c0b15d4"
       },
       "boundary_review": "Raw factory entries and delayed-effect lifecycle reviewed through adjacent entries, signed accesses, call delays, aggregate copy, runtime relocation, literals and natural alignment. Full checked match twice; stage125."
+    },
+    {
+      "id": "initialize_effect4_template",
+      "source": "src/effects/initialize_effect4_template.c",
+      "address": "0x8c0b1bf8",
+      "entry": "_initialize_effect4_template",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_template_init.h"
+      ],
+      "ranges": [
+        {
+          "offset": 662520,
+          "size": 224
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_effect4_template",
+          "address": "0x8c0b1bf8",
+          "size": 224
+        }
+      ],
+      "reference_sha256": "a2b6548a2b88e8fc78fce8e090ecfdab767859a24779e24ce5f09c125a461d10",
+      "symbols": {
+        "_effect4_scale_record": "0x8c304cb8",
+        "_effect4_scale_values": "0x8c304d04",
+        "_get_effect_template": "0x8c0adc1c"
+      },
+      "boundary_review": "Raw pair and template initializers reviewed through adjacent entries, sixargument stack offsets, signedshort fields, eight-iteration copy loops, staticbase offsets, repeated predicate, literals and natural alignment. Full checked match twice; stage155."
     },
     {
       "id": "create_effect_b29c8",

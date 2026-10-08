@@ -7589,3 +7589,41 @@ disposable database copy. Previously parked targets were not reopened.
 Stage 153 commit d362eb4 is published with successful remote checks. Reproduce
 with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into effect-template initialization and referenced scale records.
+
+
+## Pair and effect-template initialization, stage 155
+
+Three complete matches replace **408 bytes**. Totals are **675 functions / 617
+modules / 62,188 compiled bytes / 4,100,724 retained reference bytes / 1.4939%
+whole-image coverage**. All 672 prior matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| initialize_effect_pair | 0x8c0b0588 | 100 |
+| initialize_effect10_template | 0x8c0b0764 | 84 |
+| initialize_effect4_template | 0x8c0b1bf8 | 224 |
+
+The six-argument pair initializer preserves two vector copies, context, zero field
+and the unsigned short received on the stack. Both template helpers copy exactly
+64 bytes using the compiler's eight-iteration, two-word loop. A declared template
+getter fixes the six-byte signed-field/callee load-order mismatch in each helper.
+The type-four helper also needed an ordinary typed source field at template offset
+eight: it restores the distinct owner offset 220 literal and eight missing bytes,
+instead of reusing the address of offset 212. The complete range then matches.
+
+Signed field accesses, the repeated mode predicate, threshold 15, integer product
+before float conversion, conditional scaling and final field copy remain observed
+behavior. Provisional layouts have checked offsets and sizes. The named scale
+records are still references to original static data, with zero data credit.
+
+Twelve snapshots form six binary groups. Every final admission independently
+matches twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,100,724 bytes without changing artifacts. Focused exports validate using a
+disposable database copy. No parked target was reopened.
+
+Stage 154 commit e1107d7 is published with successful remote checks. Reproduce
+with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue following the template pattern into type-one and type-nine helpers and
+recording any remaining whole-range alignment and loop-hoisting blockers.

@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **672 exact functions in 614 modules**, replacing
-**61,780 bytes** of the 4,162,912-byte decoded executable (**1.4841% image coverage**).
-It retains **4,101,132 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **675 exact functions in 617 modules**, replacing
+**62,188 bytes** of the 4,162,912-byte decoded executable (**1.4939% image coverage**).
+It retains **4,100,724 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,12 +28,12 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 154
+## Latest integration batch: stage 155
 
-Stage 154 adds **3 functions / 148 bytes**: slot destruction, factory and
-state reset. All 669 previous matches remain unchanged. The matrix-offset helper
-remains incomplete at 128/128 bytes with 44 differences and is parked after four
-hypotheses. Investigation-only work earns no completion credit.
+Stage 155 adds **3 functions / 408 bytes**: a pair initializer and two
+effect-template helpers. All 672 previous matches remain unchanged. Declared
+callee scheduling and a typed source field resolve complete-range mismatches.
+Referenced scale records still receive no reconstructed-data credit.
 
 ## Autonomous iteration
 
