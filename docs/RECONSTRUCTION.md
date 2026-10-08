@@ -7085,3 +7085,37 @@ using a disposable database copy. No parked target was reopened.
 Stage 140 commit 2f573f2 is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into particle updates, their lifecycle and vector/resource dependencies.
+
+
+## Particle entry lifecycle, stage 142
+
+Two complete matches replace **268 bytes**. Totals are **629 functions / 571
+modules / 58,828 compiled bytes / 4,104,084 retained reference bytes / 1.4131%
+whole-image coverage**. All 627 prior matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| update_particle_entries | 0x8c0c7470 | 188 |
+| destroy_particle_entries | 0x8c0c7410 | 80 |
+
+Both first candidates match. The update subtracts the duration decrement, marks
+flags when the remaining value is not greater than zero (including unordered),
+then updates signed-count 40-byte entries. X/Z velocity use the current scale;
+Y velocity decreases by gravity. Angles advance by the full step and signed
+step/2 using the original division helper. Scale multiplies by its stored factor.
+
+Destruction guards the object, writes its dispatch pointer, releases its entry
+pointer, clears that pointer, calls base destruction and conditionally releases
+the object for a positive signed-short argument. The checked provisional prefixes
+cover all accessed fields and sizes; no original class identity is asserted.
+
+Six snapshots form two binary groups. Every final admission independently matches
+twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,104,084 bytes without modifying existing artifacts. Focused exports validate
+using a disposable database copy. No parked target was reopened.
+
+Stage 141 commit ce9b633 is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into uncovered render initialization, time-field and vector helpers.

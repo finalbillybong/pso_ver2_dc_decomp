@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "21b3b82b398a790c68e97f1a2f8adddacc13cc4acd7207324fa24e35a618fc03",
+    "config/project.json": "6321a25285393af5c6eeb950c3690914a8e1fa88342c623508b00bac544544ce",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_15_value.c": "14ef1a96130df680ee07289fe39c85760f085c48337653c8d72de7f0e5d85c3c",
@@ -83,6 +83,7 @@
     "src/effects/destroy_fade_state.c": "2d5bae575b87a6d1233f4cfb66042d98e5a52f70dc28bfc28e63064d97a13822",
     "src/effects/destroy_follow_base.c": "8dadc7ffd481b8eed5ed72ea191f9b6fa58cacbf609588281e1d15d300d2ce37",
     "src/effects/destroy_follow_effect.c": "12958e103d96f14355bb341f42e680bf316117675f35586c3da5e22d573faa69",
+    "src/effects/destroy_particle_entries.c": "cadba843c27c30ccb77bed85df00809268972e46ec923932763bf892c5f03579",
     "src/effects/destroy_spawn_base.c": "b2dbae7fd2809d3a95f5a89e9985e823069155a3b476989d78d9ab6a1c42cb18",
     "src/effects/destroy_spawn_effect_2.c": "c2ce7debeaf007a07b40aefc9133bdde160220e04207d7afc51ee96fe048145f",
     "src/effects/destroy_template_effect.c": "6ec617e14c32048750e953cff1329f844a98b6fd4a8ee5d620dd4070e4de12a7",
@@ -187,6 +188,7 @@
     "src/effects/update_effect_rotation_record.c": "2a3f5a7b62aa994e230897fed459700157441cb5cda57fb831119c6abe2a2910",
     "src/effects/update_fade_state.c": "c2c753a6a20eb74a47a8b9b6ac97235403c78f71f5b3456fdee4f1d959cb336a",
     "src/effects/update_last_effect.c": "f7dc80ee7a40fd13aff9010a22ee2b1fcb26ef303e0b41da5ef511791e400461",
+    "src/effects/update_particle_entries.c": "33eabc33f4f653aa0051f9338a474fc1acf3a9f20af78a020ba812b24629799f",
     "src/effects/update_short_effect_a05bc.c": "a2a186ba84a44e8e0425a18e1140258a326c43a0d1ef9d9b186804ba4b85764b",
     "src/effects/update_short_effect_a06dc.c": "9c6df55cbec94a8c3eea17919645f82bd08ca2139aa097818f72796ff61cc32f",
     "src/include/actor_callbacks.h": "20515a91e6e523cd307d7127f62e0ae57771e82f458b2dd6d00b5120d542103c",
@@ -265,6 +267,7 @@
     "src/include/offset_effect.h": "d35160c6e680633ec763aaa0dd5ea2ccee048a3a319c8ab47ef5076c414f96aa",
     "src/include/panel_geometry.h": "a2ab0e63967389c1833428eb825f759a29f1939e3c31f1e3cf162c13ac2a81ef",
     "src/include/particle_duration.h": "fcefa9f4bf8c421508dd83a9ffc435a770edea95340200eb4f6875952fcb013e",
+    "src/include/particle_entries.h": "15e248226f466dd28ed9888d84c15bc4704795fa496444bd30aab73048a22065",
     "src/include/position_ring.h": "436f710c730f78b81d85271fadab83c6db343c2631a336aa16761446b6466580",
     "src/include/proximity_object.h": "e8e2af88f37f02cf66df2a0a376b79fa61141bc856cdea2a04a7704ea9676046",
     "src/include/random_refresh_impl.h": "b5ff3cc0d54900b8e125db3293a55dd57f382ea92555cddb5dc1cf5645af8ecc",
@@ -5045,7 +5048,29 @@
       "off",
       "-O2"
     ],
+    "destroy_particle_entries": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "set_particle_duration": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "update_particle_entries": [
       "-proc",
       "SH4",
       "-endian",
@@ -7022,6 +7047,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4104352,
+  "source_only_rejected_retained_bytes": 4104084,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

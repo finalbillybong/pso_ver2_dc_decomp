@@ -1,0 +1,2 @@
+#include "src/include/particle_entries.h"
+void update_particle_entries(ParticleUpdateView *effect){int i;float gravity;effect->duration-=effect->decrement;if(!(effect->duration>0.0f))effect->flags|=1;gravity=effect->gravity;for(i=0;i<effect->count;i++){ParticleEntry *entry=&effect->entries[i];entry->position.x+=entry->velocity.x*effect->scale;entry->position.y+=entry->velocity.y;entry->position.z+=entry->velocity.z*effect->scale;entry->velocity.y-=gravity;entry->angle_x+=entry->step;entry->angle_y+=entry->step/2;}effect->scale*=effect->scale_factor;}

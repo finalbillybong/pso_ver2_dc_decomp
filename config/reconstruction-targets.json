@@ -18066,6 +18066,64 @@
       "boundary_review": "Raw call sequences, duration setter, resource lookup loop and adjacent no-op reviewed through exact entries, call/return delays, runtime/static references, literal pools and natural alignment. Complete checked match twice; stage141.",
       "status": "matched",
       "reason": "Complete call sequence or resource/effect helper; observed argument order, field accesses, indexed lookup results and no-op behavior preserved."
+    },
+    {
+      "id": "update_particle_entries",
+      "source": "src/effects/update_particle_entries.c",
+      "address": "0x8c0c7470",
+      "entry": "_update_particle_entries",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/particle_entries.h"
+      ],
+      "ranges": [
+        {
+          "offset": 750704,
+          "size": 188
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_particle_entries",
+          "address": "0x8c0c7470",
+          "size": 188
+        }
+      ],
+      "reference_sha256": "4b71432d258fe771ae7dc3064feb27bafd88660134994f4b71adbbc2ff4c217f",
+      "symbols": {
+        "__l_divs": "0x8c18e768"
+      },
+      "boundary_review": "Raw particle update and destruction reviewed through adjacent entries, indexed 40-byte records, signed runtime division/count, unordered float condition, pointer clearing, base/free calls, literals and natural alignment. Complete checked match twice; stage142.",
+      "status": "matched",
+      "reason": "Complete particle update/destructor ranges; observed signed and floating semantics, release order and untouched fields preserved."
+    },
+    {
+      "id": "destroy_particle_entries",
+      "source": "src/effects/destroy_particle_entries.c",
+      "address": "0x8c0c7410",
+      "entry": "_destroy_particle_entries",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/particle_entries.h"
+      ],
+      "ranges": [
+        {
+          "offset": 750608,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_particle_entries",
+          "address": "0x8c0c7410",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "ae9bad483cfef056e90e0ba93e3735beb95175d186b666c29abcb3970aebb9c1",
+      "symbols": {},
+      "boundary_review": "Raw particle update and destruction reviewed through adjacent entries, indexed 40-byte records, signed runtime division/count, unordered float condition, pointer clearing, base/free calls, literals and natural alignment. Complete checked match twice; stage142.",
+      "status": "matched",
+      "reason": "Complete particle update/destructor ranges; observed signed and floating semantics, release order and untouched fields preserved."
     }
   ]
 }
