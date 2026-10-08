@@ -4983,3 +4983,55 @@ manager initialization **280/8**, and signed remainder unresolved. Supporting
 matches do not replace primary acceptance. Compiler, base flags and complete-range
 rules are unchanged. Publication retains default scanner rules and the single
 verified source-hash exception with its stage-75 detection control.
+
+
+## Panel renderer, background and bit grid, stage 96
+
+Three complete functions add **724 bytes**: renderer **0x8c1959b0** (212),
+background **0x8c195a84** (192), and bit-grid drawing **0x8c195b44** (320).
+Totals are **452 functions / 404 modules / 43,912 compiled full-range bytes /
+4,119,000 retained reference bytes**, or **1.0548% whole-image coverage**.
+All 449 previous matches, module definitions and source/header hashes remain
+unchanged. Since the initial checkpoint, 418 functions replace 40,268 bytes.
+Code-only completion remains unknown; standalone reconstructed static data is zero.
+
+The renderer preserves all used fields in its 32-byte draw record, leaving the
+observed gaps untouched. Its external vertical-scale declaration resolves the
+remaining float aliasing/scheduling differences. The opacity branches preserve
+mode32 versus mode34 drawing and the color save, override and restore sequence.
+The checked header covers the position pair, 16-byte color, draw record and
+16-byte list descriptor. No hardware rendering execution is claimed.
+
+The background retains 24 local packed colors, both unsigned float-to-integer
+conversions and the two descending global color stores. External color storage
+and the final draw declaration resolve the address/call scheduling. The final
+one-byte mismatch exposed an incorrect provisional constant: raw decoding proves
+the second multiplier is64.0, distinct from the final integer draw flags96.
+The corrected source matches the whole192-byte range, including conversion
+constants and padding; the failed96.0 hypothesis remains in scratch.
+
+The bit grid preserves signed halfword inputs, initialization guard, frame
+counter and three rows of eight bits. Every eighth frame changes only the first
+mismatching bit, scanning the signed mask from128 downward. The draw loop uses
+an increasing mask and preserves both negative coordinate adjustments and exact
+float literals. Separate scaled opacity, external guard/counter, mask-first
+expressions and local declaration order recover the remaining register choices.
+One experiment failed C89 parsing because declarations followed assignments;
+its corrected successor and all other evidence are retained.
+
+All **34 trials** retain source snapshots, hypotheses and comparisons, with
+compiler receipts for successful compilations; **one compiler rejection** is
+recorded. Final checked sources match twice independently. Two fresh exact
+builds, integrated image comparison, five-function proof and all **53 research
+tests** pass; the public suite remains **58 tests**. Source-only rejects
+4,119,000 retained bytes without changing artifacts. Focused exports use a
+disposable copy and are checked against current inputs; the original database
+remains unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. The earlier
+panel draw remains244 bytes versus240 expected: separate external global/table
+declarations, their combination and reversed addition operands did not help.
+Supporting matches do not replace primary acceptance. Compiler, base flags and
+complete-range rules are unchanged. Publication retains default scanner rules
+and the single verified source-hash exception with its stage-75 detection control.

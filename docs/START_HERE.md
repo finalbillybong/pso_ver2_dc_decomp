@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **449 exact functions in 401 modules**, replacing
-**43,188 bytes** of the 4,162,912-byte decoded executable (**1.0374% image coverage**).
-It retains **4,119,724 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **452 exact functions in 404 modules**, replacing
+**43,912 bytes** of the 4,162,912-byte decoded executable (**1.0548% image coverage**).
+It retains **4,119,000 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,14 +28,14 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 95
+## Latest batch: stage 96
 
-Panel initialization, release and render wrappers add five functions, replacing
-356 bytes. All 444 earlier matches and source/header hashes remain unchanged.
-Since the initial checkpoint, 415 functions replace 39,544 bytes. All 56 trials
-are retained. Whole-image coverage is 1.0374%; code-only completion remains
-unknown. Primary targets remain 512/30 and 388/8; the nearby renderer remains
-212 bytes with 26 differing bytes.
+Panel renderer, background and bit-grid drawing add three functions, replacing
+724 bytes. All 449 earlier matches and source/header hashes remain unchanged.
+Since the initial checkpoint, 418 functions replace 40,268 bytes. All 34 trials
+are retained, including one compiler rejection. Whole-image coverage is 1.0548%;
+code-only completion remains unknown. Primary targets remain 512/30 and 388/8;
+the earlier panel draw remains 244 bytes versus240 expected.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

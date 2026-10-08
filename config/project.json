@@ -8620,6 +8620,89 @@
       "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; panel initialization and rendering wrappers; reconstruction-stage95."
     },
     {
+      "id": "operation_1959b0",
+      "source": "src/objects/operation_1959b0.c",
+      "address": "0x8c1959b0",
+      "entry": "_operation_1959b0",
+      "ranges": [
+        {
+          "offset": 1595824,
+          "size": 212
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1959b0",
+          "address": "0x8c1959b0",
+          "size": 212
+        }
+      ],
+      "reference_sha256": "5c6b8cf7bf578bf54057330942c09fadfa149b3a8362d4e6866ee6a3e1803364",
+      "symbols": {
+        "_vertical_scale": "0x8c31bf88"
+      },
+      "headers": [
+        "src/include/widget_draw.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; panel renderer, background and bit-grid drawing; reconstruction-stage96."
+    },
+    {
+      "id": "operation_195a84",
+      "source": "src/objects/operation_195a84.c",
+      "address": "0x8c195a84",
+      "entry": "_operation_195a84",
+      "ranges": [
+        {
+          "offset": 1596036,
+          "size": 192
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195a84",
+          "address": "0x8c195a84",
+          "size": 192
+        }
+      ],
+      "reference_sha256": "831603dec969adbcceacdae853b39f6e20d03d91f90ed8fb3af890f1852db3a6",
+      "symbols": {
+        "_panel_colors": "0x8c31c0dc",
+        "_draw_quad_at": "0x8c38f810"
+      },
+      "headers": [
+        "src/include/widget_draw.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; panel renderer, background and bit-grid drawing; reconstruction-stage96."
+    },
+    {
+      "id": "operation_195b44",
+      "source": "src/objects/operation_195b44.c",
+      "address": "0x8c195b44",
+      "entry": "_operation_195b44",
+      "ranges": [
+        {
+          "offset": 1596228,
+          "size": 320
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195b44",
+          "address": "0x8c195b44",
+          "size": 320
+        }
+      ],
+      "reference_sha256": "626938c7c99f1a7ddea5e25e50e833ce26228be669d490b08d3880d2d436a19d",
+      "symbols": {
+        "_initialized": "0x8c4dc3dc",
+        "_counter": "0x8c4dc3d8"
+      },
+      "headers": [
+        "src/include/widget_draw.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; panel renderer, background and bit-grid drawing; reconstruction-stage96."
+    },
+    {
       "id": "initialize_proximity_object",
       "source": "src/objects/initialize_proximity_object.c",
       "address": "0x8c1ab324",
