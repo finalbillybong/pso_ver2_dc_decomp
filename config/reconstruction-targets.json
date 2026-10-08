@@ -13626,6 +13626,195 @@
         "source_sha256": "ae64aea2ff6d2d774fb69eed3cdd833036753e55dae5fa3f24799c3a0d8c5fb2",
         "compiler_receipt_sha256": "82f1724f243db74eb09bd5282a19e39ea318f9fb407ce35e5fe34d9f614b723f"
       }
+    },
+    {
+      "id": "clear_inactive_target",
+      "source": "src/objects/clear_inactive_target.c",
+      "address": "0x8c0c36d4",
+      "entry": "_clear_inactive_target",
+      "headers": [
+        "src/include/effect_access_views.h"
+      ],
+      "ranges": [
+        {
+          "offset": 734932,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_inactive_target",
+          "address": "0x8c0c36d4",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "3888c4de94d2ec9cae57f03c9426e1ac6a5174e2c6f067370153acce5269e92d",
+      "symbols": {},
+      "boundary_review": "Raw target cleanup, effect-table reset, three factories, resource destructor and coordinate binding reviewed with adjacent entries, signed accesses, call delays, literals and natural alignment. Full checked match twice; stage123.",
+      "status": "matched",
+      "reason": "Complete effect/target helper, preserving observed allocation, cleanup, sentinel or coordinate mutation behavior."
+    },
+    {
+      "id": "reset_effect_table_state",
+      "source": "src/effects/reset_effect_table_state.c",
+      "address": "0x8c0a6bdc",
+      "entry": "_reset_effect_table_state",
+      "headers": [
+        "src/include/effect_access_views.h"
+      ],
+      "ranges": [
+        {
+          "offset": 617436,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_effect_table_state",
+          "address": "0x8c0a6bdc",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "224969aff3a5630e9d73c3ebd54805d208418511b5c281d671563712daf7bbdd",
+      "symbols": {},
+      "boundary_review": "Raw target cleanup, effect-table reset, three factories, resource destructor and coordinate binding reviewed with adjacent entries, signed accesses, call delays, literals and natural alignment. Full checked match twice; stage123.",
+      "status": "matched",
+      "reason": "Complete effect/target helper, preserving observed allocation, cleanup, sentinel or coordinate mutation behavior."
+    },
+    {
+      "id": "create_effect_c674",
+      "source": "src/effects/create_effect_c674.c",
+      "address": "0x8c0ac674",
+      "entry": "_create_effect_c674",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 640628,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_c674",
+          "address": "0x8c0ac674",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "dc81ccb26beafe5ddbecb78579903fb2036c6b972e2a3eb4e4d0f6e2e5730b1d",
+      "symbols": {
+        "_initialize_at": "0x8c0ac300"
+      },
+      "boundary_review": "Raw target cleanup, effect-table reset, three factories, resource destructor and coordinate binding reviewed with adjacent entries, signed accesses, call delays, literals and natural alignment. Full checked match twice; stage123.",
+      "status": "matched",
+      "reason": "Complete effect/target helper, preserving observed allocation, cleanup, sentinel or coordinate mutation behavior."
+    },
+    {
+      "id": "create_effect_d2a8",
+      "source": "src/effects/create_effect_d2a8.c",
+      "address": "0x8c0ad2a8",
+      "entry": "_create_effect_d2a8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 643752,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_d2a8",
+          "address": "0x8c0ad2a8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "6c47946f9857244509e071549eddca61df8fe62bd59edea93c2c2b87a8dfccbf",
+      "symbols": {
+        "_initialize_at": "0x8c0ac934"
+      },
+      "boundary_review": "Raw target cleanup, effect-table reset, three factories, resource destructor and coordinate binding reviewed with adjacent entries, signed accesses, call delays, literals and natural alignment. Full checked match twice; stage123.",
+      "status": "matched",
+      "reason": "Complete effect/target helper, preserving observed allocation, cleanup, sentinel or coordinate mutation behavior."
+    },
+    {
+      "id": "create_effect_d2f8",
+      "source": "src/effects/create_effect_d2f8.c",
+      "address": "0x8c0ad2f8",
+      "entry": "_create_effect_d2f8",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 643832,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_d2f8",
+          "address": "0x8c0ad2f8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "42faf7787c1884c67f730eccb67d2b7466cace09146075a49941685e9409db53",
+      "symbols": {
+        "_initialize_at": "0x8c0acd00"
+      },
+      "boundary_review": "Raw target cleanup, effect-table reset, three factories, resource destructor and coordinate binding reviewed with adjacent entries, signed accesses, call delays, literals and natural alignment. Full checked match twice; stage123.",
+      "status": "matched",
+      "reason": "Complete effect/target helper, preserving observed allocation, cleanup, sentinel or coordinate mutation behavior."
+    },
+    {
+      "id": "destroy_effect_d870",
+      "source": "src/effects/destroy_effect_d870.c",
+      "address": "0x8c0ad870",
+      "entry": "_destroy_effect_d870",
+      "headers": [
+        "src/include/effect_access_views.h"
+      ],
+      "ranges": [
+        {
+          "offset": 645232,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_d870",
+          "address": "0x8c0ad870",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "279ca3880b55b375c758dc67a0494895663a4e338eb92a2530839c011905d493",
+      "symbols": {},
+      "boundary_review": "Raw target cleanup, effect-table reset, three factories, resource destructor and coordinate binding reviewed with adjacent entries, signed accesses, call delays, literals and natural alignment. Full checked match twice; stage123.",
+      "status": "matched",
+      "reason": "Complete effect/target helper, preserving observed allocation, cleanup, sentinel or coordinate mutation behavior."
+    },
+    {
+      "id": "bind_effect_coordinates",
+      "source": "src/effects/bind_effect_coordinates.c",
+      "address": "0x8c0ada34",
+      "entry": "_bind_effect_coordinates",
+      "headers": [
+        "src/include/effect_access_views.h"
+      ],
+      "ranges": [
+        {
+          "offset": 645684,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "bind_effect_coordinates",
+          "address": "0x8c0ada34",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "aa0cb51149c52793cb9e35efc2b3b892371b4b9001f8b2cee6e936216680cb64",
+      "symbols": {},
+      "boundary_review": "Raw target cleanup, effect-table reset, three factories, resource destructor and coordinate binding reviewed with adjacent entries, signed accesses, call delays, literals and natural alignment. Full checked match twice; stage123.",
+      "status": "matched",
+      "reason": "Complete effect/target helper, preserving observed allocation, cleanup, sentinel or coordinate mutation behavior."
     }
   ]
 }

@@ -6251,3 +6251,49 @@ Stage121 commit e581b1b is published and remote checks passed. This checkpoint r
 failed hypotheses, not increased completion. Compiler flags, private data, original
 saves and unrelated work remain preserved. Continue immediately to other credible
 functions; do not repeat equivalent source variations on these parked targets.
+
+
+## Effect lifecycle and target helpers, stage 123
+
+Seven new exact functions replace **456 bytes** in seven modules. Totals are
+**529 functions / 476 modules / 51,324 compiled bytes / 4,111,588 retained reference
+bytes**, or **1.2329% whole-image coverage**. All 522 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| clear_inactive_target | 0x8c0c36d4 | 48 |
+| reset_effect_table_state | 0x8c0a6bdc | 44 |
+| create_effect_c674 | 0x8c0ac674 | 80 |
+| create_effect_d2a8 | 0x8c0ad2a8 | 80 |
+| create_effect_d2f8 | 0x8c0ad2f8 | 80 |
+| destroy_effect_d870 | 0x8c0ad870 | 92 |
+| bind_effect_coordinates | 0x8c0ada34 | 32 |
+
+Checked provisional views cover only accessed prefixes. Target cleanup preserves
+the flag test and unsigned-short sentinel. The table helper preserves its zero-index
+guard and nullable entry. Factories preserve allocation failure and their declared
+five-argument initializer dependencies. Resource destruction releases its resource,
+invokes base destruction, then conditionally returns storage to the pool according
+to a signed-short flag. Coordinate binding preserves the observed mutation of the
+input vector's first component before copying the other two coordinates.
+
+The two 404-byte allocation factories initially compile to 80 bytes with 13 differences.
+Replacing literal initializer pointers with declared callees produces the observed
+argument preservation and call scheduling. The 348-byte factory uses that established
+pattern. All other candidates match on their first hypothesis. The coordinate helper's
+match does not resolve its parked caller's zero/tag store scheduling; no parked target
+is reopened without relevant new evidence.
+
+Twenty-three snapshots form nine binary groups. Final checked sources match twice
+independently. Two fresh exact builds per checkout, exact integrated image, the
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,111,588 retained bytes without altering existing artifacts. Focused exports validate
+on a disposable database copy. The original primary targets remain incomplete.
+
+Stage 122 commit c8b1a05 is published and remote checks passed; it added no matching
+functions or bytes. Original data, private saves, compiler settings and unrelated work
+remain preserved. Only reviewed, privacy-scanned public changes are committed.
+
+Reproduce with `python3 -B tools/verify_source.py`, the current test suite and expected
+source-only rejection. Continue into effect base destruction and neighboring factories.
