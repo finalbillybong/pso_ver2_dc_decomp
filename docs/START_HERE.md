@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **492 exact functions in 440 modules**, replacing
-**48,536 bytes** of the 4,162,912-byte decoded executable (**1.1659% image coverage**).
-It retains **4,114,376 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **502 exact functions in 450 modules**, replacing
+**49,252 bytes** of the 4,162,912-byte decoded executable (**1.1831% image coverage**).
+It retains **4,113,660 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,13 +28,12 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: stage 115
+## Latest integration batch: stage 116
 
-Stage115 adds **8 functions /728 bytes**: transform decomposition, fallback
-callbacks, callback installation and tree traversal wrappers. All484 previous matches
-and prior sources/headers remain unchanged. Required exact builds, proof, tests
-and source-only rejection pass. Existing parked targets remain parked with their
-persistent counts and evidence-based revisit conditions. See reconstruction findings.
+Stage116 adds **10 functions /716 bytes**: color-effect constructors, destructors
+and updates. All492 previous matches and prior sources/headers remain unchanged.
+Required exact builds, proof, tests and source-only rejection pass. Existing parked
+targets retain their persistent counts and evidence-based revisit conditions.
 
 ## Autonomous iteration
 

@@ -5937,3 +5937,46 @@ Reproduce with `python3 -B tools/verify_source.py`, the current test suite and e
 source-only rejection. Public progress is recorded after exact verification, then
 reviewed/scanned public changes are committed and pushed. Continue into useful
 remaining effect and transform dependencies; successful checkpoints do not end work.
+
+
+## Color-effect lifecycles, stage 116
+
+Ten new exact functions replace **716 bytes** in ten modules. Totals are
+**502 functions /450 modules /49,252 compiled bytes /4,113,660 retained reference
+bytes**, or **1.1831% whole-image coverage**. All492 preceding matches and prior
+source/header files remain unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| initialize_color_rise | 0x8c0c49bc | 72 |
+| destroy_color_base | 0x8c0c4a04 | 68 |
+| destroy_color_rise | 0x8c0c4a48 | 80 |
+| update_color_rise | 0x8c0c4a98 | 64 |
+| initialize_color_fall | 0x8c0c4ad8 | 76 |
+| destroy_color_fall | 0x8c0c4b24 | 80 |
+| update_color_fall | 0x8c0c4b74 | 56 |
+| initialize_color_blue | 0x8c0c4bac | 76 |
+| destroy_color_blue | 0x8c0c4bf8 | 80 |
+| update_color_blue | 0x8c0c4c48 | 64 |
+
+The checked44-byte provisional prefix places flags at4, dispatch at24, amount at32,
+color bytes at36–39 and callback at40. This callback differs from FadeState's44.
+Constructors preserve both base/derived dispatch stores and observed color order.
+Destructors preserve nested null tests and signed-short release flags. Updates retain
+NaN-inclusive endpoint tests, clamps and callback-before-flag behavior: rise8 toward255,
+fall8 toward0, and blue rise2 toward128. No speculative behavior changes are made.
+
+All ten first candidates match; the checked versions each match twice independently.
+Thirty snapshots form ten binary groups. Two fresh exact builds in each checkout,
+exact integrated image, five-function proof,53 research tests and58 public tests pass.
+Source-only rejects4,113,660 retained bytes without changing existing artifacts.
+Focused exports validate on a disposable database copy. The adjacent renderer duplicates
+the parked fade renderer's raw range; this gives no new compiler evidence and no credit.
+
+No parked target is reopened. Prior blockers and persistent hypothesis counts remain.
+Stage115 commita55b86c is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated workspace changes remain preserved.
+Research is uncommitted; only reviewed public sources, manifests and docs are published.
+
+Reproduce with `python3 -B tools/verify_source.py`, the current test suite and expected
+source-only rejection. Continue into transform state and interpolation dependencies.

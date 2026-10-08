@@ -12062,6 +12062,276 @@
       "boundary_review": "Raw contiguous SH4 entries0x8c0c460c/474c/4750/4754/4760/4790/4844/4864/48e4 reviewed including return delays, literals and alignment. Complete checked source exact twice; stage115.",
       "status": "matched",
       "reason": "Complete transform decomposition, fallback or tree operation. Recursive C supplies observed inlining; no assembly or padding substitute."
+    },
+    {
+      "id": "destroy_color_base",
+      "source": "src/effects/destroy_color_base.c",
+      "address": "0x8c0c4a04",
+      "entry": "_destroy_color_base",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 739844,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_base",
+          "address": "0x8c0c4a04",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "49b234325a48efe7302af237adfc891e7fada36fbe11e0c96ae11df9742d859c",
+      "symbols": {},
+      "boundary_review": "Raw contiguous entries0x8c0c49bc through0x8c0c4c88 reviewed including signed-short flags, return delays, literals and alignment. Complete checked source exact twice; stage116.",
+      "status": "matched",
+      "reason": "Complete color-effect initialization, destruction or update; observed stores, NaN-inclusive clamps and callback order preserved."
+    },
+    {
+      "id": "destroy_color_blue",
+      "source": "src/effects/destroy_color_blue.c",
+      "address": "0x8c0c4bf8",
+      "entry": "_destroy_color_blue",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740344,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_blue",
+          "address": "0x8c0c4bf8",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "4bf22726dfda28284b957baee86141bd09392434ef2567857ac30b28cf2a51f9",
+      "symbols": {},
+      "boundary_review": "Raw contiguous entries0x8c0c49bc through0x8c0c4c88 reviewed including signed-short flags, return delays, literals and alignment. Complete checked source exact twice; stage116.",
+      "status": "matched",
+      "reason": "Complete color-effect initialization, destruction or update; observed stores, NaN-inclusive clamps and callback order preserved."
+    },
+    {
+      "id": "destroy_color_fall",
+      "source": "src/effects/destroy_color_fall.c",
+      "address": "0x8c0c4b24",
+      "entry": "_destroy_color_fall",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740132,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_fall",
+          "address": "0x8c0c4b24",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "35295cbe7ce22dae1534edae97d7061cd30efa3d1a366937d46c1a4dd267a75e",
+      "symbols": {},
+      "boundary_review": "Raw contiguous entries0x8c0c49bc through0x8c0c4c88 reviewed including signed-short flags, return delays, literals and alignment. Complete checked source exact twice; stage116.",
+      "status": "matched",
+      "reason": "Complete color-effect initialization, destruction or update; observed stores, NaN-inclusive clamps and callback order preserved."
+    },
+    {
+      "id": "destroy_color_rise",
+      "source": "src/effects/destroy_color_rise.c",
+      "address": "0x8c0c4a48",
+      "entry": "_destroy_color_rise",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 739912,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_color_rise",
+          "address": "0x8c0c4a48",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "7f2bbff399435091b07c4307478af5c748aa6241d7ccd3a9049acc7624e4540c",
+      "symbols": {},
+      "boundary_review": "Raw contiguous entries0x8c0c49bc through0x8c0c4c88 reviewed including signed-short flags, return delays, literals and alignment. Complete checked source exact twice; stage116.",
+      "status": "matched",
+      "reason": "Complete color-effect initialization, destruction or update; observed stores, NaN-inclusive clamps and callback order preserved."
+    },
+    {
+      "id": "initialize_color_blue",
+      "source": "src/effects/initialize_color_blue.c",
+      "address": "0x8c0c4bac",
+      "entry": "_initialize_color_blue",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740268,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_color_blue",
+          "address": "0x8c0c4bac",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "f2b8fb0d4170c2d31a47fc8bd99815dab418ee6e0da7bb472cf48b8a6deebf27",
+      "symbols": {},
+      "boundary_review": "Raw contiguous entries0x8c0c49bc through0x8c0c4c88 reviewed including signed-short flags, return delays, literals and alignment. Complete checked source exact twice; stage116.",
+      "status": "matched",
+      "reason": "Complete color-effect initialization, destruction or update; observed stores, NaN-inclusive clamps and callback order preserved."
+    },
+    {
+      "id": "initialize_color_fall",
+      "source": "src/effects/initialize_color_fall.c",
+      "address": "0x8c0c4ad8",
+      "entry": "_initialize_color_fall",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740056,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_color_fall",
+          "address": "0x8c0c4ad8",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "df569803734db750cd31f7d623d945dee7e1bc633af7ad2a7db0005f7766e91a",
+      "symbols": {},
+      "boundary_review": "Raw contiguous entries0x8c0c49bc through0x8c0c4c88 reviewed including signed-short flags, return delays, literals and alignment. Complete checked source exact twice; stage116.",
+      "status": "matched",
+      "reason": "Complete color-effect initialization, destruction or update; observed stores, NaN-inclusive clamps and callback order preserved."
+    },
+    {
+      "id": "initialize_color_rise",
+      "source": "src/effects/initialize_color_rise.c",
+      "address": "0x8c0c49bc",
+      "entry": "_initialize_color_rise",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 739772,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_color_rise",
+          "address": "0x8c0c49bc",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "76150fcb5780c7ffd13f02f48c308c6027684e6134594fc9b815a472e563ba3a",
+      "symbols": {},
+      "boundary_review": "Raw contiguous entries0x8c0c49bc through0x8c0c4c88 reviewed including signed-short flags, return delays, literals and alignment. Complete checked source exact twice; stage116.",
+      "status": "matched",
+      "reason": "Complete color-effect initialization, destruction or update; observed stores, NaN-inclusive clamps and callback order preserved."
+    },
+    {
+      "id": "update_color_blue",
+      "source": "src/effects/update_color_blue.c",
+      "address": "0x8c0c4c48",
+      "entry": "_update_color_blue",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740424,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_color_blue",
+          "address": "0x8c0c4c48",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "f387686fd0a0590b716b5cb275e7720d44634c60c5e975c2999f85a90a3bb541",
+      "symbols": {},
+      "boundary_review": "Raw contiguous entries0x8c0c49bc through0x8c0c4c88 reviewed including signed-short flags, return delays, literals and alignment. Complete checked source exact twice; stage116.",
+      "status": "matched",
+      "reason": "Complete color-effect initialization, destruction or update; observed stores, NaN-inclusive clamps and callback order preserved."
+    },
+    {
+      "id": "update_color_fall",
+      "source": "src/effects/update_color_fall.c",
+      "address": "0x8c0c4b74",
+      "entry": "_update_color_fall",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 740212,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_color_fall",
+          "address": "0x8c0c4b74",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "275fff2be3eb0ea86c919b4c920c947bef551f722d28aa80ecbc503bd3c318a7",
+      "symbols": {},
+      "boundary_review": "Raw contiguous entries0x8c0c49bc through0x8c0c4c88 reviewed including signed-short flags, return delays, literals and alignment. Complete checked source exact twice; stage116.",
+      "status": "matched",
+      "reason": "Complete color-effect initialization, destruction or update; observed stores, NaN-inclusive clamps and callback order preserved."
+    },
+    {
+      "id": "update_color_rise",
+      "source": "src/effects/update_color_rise.c",
+      "address": "0x8c0c4a98",
+      "entry": "_update_color_rise",
+      "headers": [
+        "src/include/color_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 739992,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_color_rise",
+          "address": "0x8c0c4a98",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "248386bb1a369fbfc0ecae523cccc40e6e6e88eb3ce3341bf99a4153f66405fa",
+      "symbols": {},
+      "boundary_review": "Raw contiguous entries0x8c0c49bc through0x8c0c4c88 reviewed including signed-short flags, return delays, literals and alignment. Complete checked source exact twice; stage116.",
+      "status": "matched",
+      "reason": "Complete color-effect initialization, destruction or update; observed stores, NaN-inclusive clamps and callback order preserved."
     }
   ]
 }
