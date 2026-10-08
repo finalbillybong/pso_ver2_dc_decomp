@@ -7045,3 +7045,43 @@ copy. Earlier parked targets retain their counts and conditions.
 Stage 139 commit bc6872d is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue other effect/resource initialization and vector/render helpers.
+
+
+## Call sequences and render-resource lookup, stage 141
+
+Six complete matches replace **624 bytes**. Totals are **627 functions / 569
+modules / 58,560 compiled bytes / 4,104,352 retained reference bytes / 1.4067%
+whole-image coverage**. All 621 prior matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| run_sequence_c5d28 | 0x8c0c5d28 | 160 |
+| run_sequence_c6010 | 0x8c0c6010 | 160 |
+| run_sequence_c6204 | 0x8c0c6204 | 108 |
+| set_particle_duration | 0x8c0c7460 | 16 |
+| initialize_render_resource_lookups | 0x8c0c77dc | 176 |
+| resource_lookup_noop | 0x8c0c788c | 4 |
+
+All first candidates match. The three sequences preserve all callee order and the
+only explicit immediate-one arguments; their provisional names do not assert a
+higher-level subsystem identity. The duration setter converts a signed count,
+multiplies by the incoming float, adds one and writes field 44.
+
+Resource initialization captures owner.table1068 fields 24 and 12, then performs
+two iterations of four distinct lookups from referenced static pointer tables.
+Explicit unsigned byte offsets reproduce the shared SHLL2 index and call/result
+store order. Source table contents remain reference-dependent; output globals lie
+outside the decoded image. Neither declarations nor pointer addresses earn static
+data credit. Checked provisional prefixes cover all accessed fields. The adjacent
+four-byte no-op is ordinary empty C with exact RTS/NOP output.
+
+Eighteen snapshots form six binary groups. Every final admission independently
+matches twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,104,352 bytes without modifying existing artifacts. Focused exports validate
+using a disposable database copy. No parked target was reopened.
+
+Stage 140 commit 2f573f2 is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into particle updates, their lifecycle and vector/resource dependencies.

@@ -9568,6 +9568,75 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including all literal words and natural alignment; final source exact twice; reconstruction-stage66."
     },
     {
+      "id": "run_sequence_c5d28",
+      "source": "src/effects/run_sequence_c5d28.c",
+      "address": "0x8c0c5d28",
+      "entry": "_run_sequence_c5d28",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 744744,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_sequence_c5d28",
+          "address": "0x8c0c5d28",
+          "size": 160
+        }
+      ],
+      "reference_sha256": "3b3f1d8fe85a6181bc2b47901364de6ca692f2c22e3b4ba34049aae87ff80a54",
+      "symbols": {},
+      "boundary_review": "Raw call sequences, duration setter, resource lookup loop and adjacent no-op reviewed through exact entries, call/return delays, runtime/static references, literal pools and natural alignment. Complete checked match twice; stage141."
+    },
+    {
+      "id": "run_sequence_c6010",
+      "source": "src/effects/run_sequence_c6010.c",
+      "address": "0x8c0c6010",
+      "entry": "_run_sequence_c6010",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 745488,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_sequence_c6010",
+          "address": "0x8c0c6010",
+          "size": 160
+        }
+      ],
+      "reference_sha256": "f1b9045b28642931ce92e6e802693ea857eadafdd5bd119a790dea6dc57efe84",
+      "symbols": {},
+      "boundary_review": "Raw call sequences, duration setter, resource lookup loop and adjacent no-op reviewed through exact entries, call/return delays, runtime/static references, literal pools and natural alignment. Complete checked match twice; stage141."
+    },
+    {
+      "id": "run_sequence_c6204",
+      "source": "src/effects/run_sequence_c6204.c",
+      "address": "0x8c0c6204",
+      "entry": "_run_sequence_c6204",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 745988,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_sequence_c6204",
+          "address": "0x8c0c6204",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "d37141c4d0babd1eee27d82b1c0c565422f6299d435ab78a30cac0fe4deecaca",
+      "symbols": {},
+      "boundary_review": "Raw call sequences, duration setter, resource lookup loop and adjacent no-op reviewed through exact entries, call/return delays, runtime/static references, literal pools and natural alignment. Complete checked match twice; stage141."
+    },
+    {
       "id": "operation_0c6270",
       "source": "src/runtime/operation_0c6270.c",
       "address": "0x8c0c6270",
@@ -10026,6 +10095,31 @@
       "boundary_review": "Raw recursive array fillers and render-state helpers reviewed through adjacent entries, branches, recursion, field accesses, return/tail-call delays, literal pools and natural alignment. Full checked match twice; stage129."
     },
     {
+      "id": "set_particle_duration",
+      "source": "src/effects/set_particle_duration.c",
+      "address": "0x8c0c7460",
+      "entry": "_set_particle_duration",
+      "headers": [
+        "src/include/particle_duration.h"
+      ],
+      "ranges": [
+        {
+          "offset": 750688,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_particle_duration",
+          "address": "0x8c0c7460",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "0a89b7d3eeed492011bd72587b0d5d232b5eac23c10da09ceed57fc57207df96",
+      "symbols": {},
+      "boundary_review": "Raw call sequences, duration setter, resource lookup loop and adjacent no-op reviewed through exact entries, call/return delays, runtime/static references, literal pools and natural alignment. Complete checked match twice; stage141."
+    },
+    {
       "id": "draw_with_alternate_dispatch",
       "source": "src/render/draw_with_alternate_dispatch.c",
       "address": "0x8c0c76d0",
@@ -10173,6 +10267,54 @@
       "reference_sha256": "e078abbc03a487f2d991d9015cc3fd401b506ce5129e460fc5b8da45fde31206",
       "symbols": {},
       "boundary_review": "Raw recursive array fillers and render-state helpers reviewed through adjacent entries, branches, recursion, field accesses, return/tail-call delays, literal pools and natural alignment. Full checked match twice; stage129."
+    },
+    {
+      "id": "initialize_render_resource_lookups",
+      "source": "src/effects/initialize_render_resource_lookups.c",
+      "address": "0x8c0c77dc",
+      "entry": "_initialize_render_resource_lookups",
+      "headers": [
+        "src/include/render_resource_lookups.h"
+      ],
+      "ranges": [
+        {
+          "offset": 751580,
+          "size": 176
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_render_resource_lookups",
+          "address": "0x8c0c77dc",
+          "size": 176
+        }
+      ],
+      "reference_sha256": "60d99f1196b487a85be8dfe5da1079d45c3d03c6d9da636b26d447e7e60cf3fb",
+      "symbols": {},
+      "boundary_review": "Raw call sequences, duration setter, resource lookup loop and adjacent no-op reviewed through exact entries, call/return delays, runtime/static references, literal pools and natural alignment. Complete checked match twice; stage141."
+    },
+    {
+      "id": "resource_lookup_noop",
+      "source": "src/effects/resource_lookup_noop.c",
+      "address": "0x8c0c788c",
+      "entry": "_resource_lookup_noop",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 751756,
+          "size": 4
+        }
+      ],
+      "functions": [
+        {
+          "name": "resource_lookup_noop",
+          "address": "0x8c0c788c",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "551572a9f87a0af199dced20f1d78fc9ddb31537c3a7ce5b747bfedb295ab1e9",
+      "symbols": {},
+      "boundary_review": "Raw call sequences, duration setter, resource lookup loop and adjacent no-op reviewed through exact entries, call/return delays, runtime/static references, literal pools and natural alignment. Complete checked match twice; stage141."
     },
     {
       "id": "cache_actor_position",
