@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **381 exact functions in 334 modules**, replacing
-**35,564 bytes** of the 4,162,912-byte decoded executable (**0.8543% image coverage**).
-It retains **4,127,348 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **386 exact functions in 339 modules**, replacing
+**36,016 bytes** of the 4,162,912-byte decoded executable (**0.8652% image coverage**).
+It retains **4,126,896 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,15 +28,15 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest batch: stage 81
+## Latest batch: stage 82
 
-Resource outputs and list query add five functions and 228 bytes in five modules.
-All 376 earlier matches, module definitions and source/header hashes are
-preserved. Since the initial checkpoint, 347 functions replace 31,920 bytes.
-All 46 trials are retained, including one compiler rejection. Full boundary
-review restores the triple getter's three guards before admission. The larger
-child constructor remains 496/362, root initialization 316/28, and the primary
-targets 512/30 and 388/8. Signed remainder and static data remain unresolved.
+Resource lifecycle operations add five functions and 452 bytes in five modules.
+All 381 earlier matches, module definitions and source/header hashes are
+preserved. Since the initial checkpoint, 352 functions replace 32,372 bytes.
+All 19 trials are retained, with no compiler rejection. Observed retries,
+allocation arithmetic, fifth-argument lifetime and cleanup order remain intact.
+The primary targets remain 512/30 and 388/8; signed remainder and static data
+remain unresolved.
 
 Two fresh exact builds, integrated-image comparison, five-function proof and all
 53 original-workspace tests pass. The public suite has 58 tests. Source-only

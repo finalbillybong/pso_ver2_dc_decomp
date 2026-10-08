@@ -4250,3 +4250,53 @@ remains **316/28**. Supporting matches do not replace primary acceptance; static
 resource tables/global objects remain reference inputs. Publication retains all
 default scanner rules and the verified exact source-hash exception with its
 stage-75 detection control.
+
+
+## Resource lifecycle operations, stage 82
+
+Five complete functions add **452 bytes**: root construction **0x8c19336c** (156),
+root destruction **0x8c193408** (68), handle reset **0x8c19344c** (36), derived
+construction **0x8c193470** (92), and derived destruction **0x8c1934cc** (100).
+Totals are **386 functions / 339 modules / 36,016 compiled full-range bytes /
+4,126,896 retained reference bytes**, or **0.8652% whole-image coverage**. All 381
+previous matches, module definitions and source/header hashes remain unchanged.
+Since the initial checkpoint, 352 functions replace 32,372 bytes. Code-only
+completion remains unknown; separately reconstructed static data is zero.
+
+A provisional checked view identifies the root's first 24 bytes and derived
+extra-buffer/size fields at 24/28. Root construction preserves unsigned count
+rounding, buffer allocation, zero fields and the start/status loop. Status two
+waits and continues without incrementing the retry counter; status three sets
+ready. Other statuses retry at most three times, retaining the redundant bound
+check. No timeout, allocation guard or error recovery is invented. Explicit
+left shift recovers the observed allocation arithmetic; multiplication emits
+four extra bytes. Writing the retry guard as negated less-than reproduces the
+reference comparison polarity, whereas reversed relational operands leave three
+differences.
+
+Handle reset closes and clears only an existing handle. Root destruction retains
+nullable owner, dispatch reset, handle cleanup, buffer release and positive signed
+owner-release flag. Derived construction preserves all root inputs and the fifth
+stack parameter, uses signed division for its 2048-byte rounding, stores the
+allocation and original size, and retains its address-taken object parameter.
+A register-qualified size parameter reproduces the saved R14 lifetime; a local
+copy leaves six differing bytes. Derived destruction frees the extra buffer,
+then preserves the inlined base null guard, handle close/clear, root buffer free
+and conditional owner free. Repeated guards and dispatch writes remain intact.
+
+All **19 trials**, with no compiler rejection, retain source snapshots,
+hypotheses, compiler receipts and comparisons. Final checked sources match
+independently twice. Two fresh exact builds, integrated-image comparison,
+five-function proof and all **53 research tests** pass; the public suite remains
+**58 tests**. Source-only rejects 4,126,896 retained bytes without changing
+artifacts. Focused exports are regenerated on a disposable copy and checked
+against current inputs. Original data, pinned compiler, base flags, default GNU
+linking and complete-range acceptance remain unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Larger child
+construction remains **496/362**, root child initialization **316/28**. Supporting
+matches do not replace primary acceptance. Division/runtime helpers, allocation
+and status callees, dispatch data and resource contents remain reference inputs.
+Publication retains all default scanner rules and the exact source-hash exception
+verified with its stage-75 detection control.
