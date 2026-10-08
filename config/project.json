@@ -4052,6 +4052,81 @@
       "boundary_review": "Raw SH4 entry through next adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage57."
     },
     {
+      "id": "lookup_object_by_id",
+      "source": "src/objects/lookup_object_by_id.c",
+      "address": "0x8c053d84",
+      "entry": "_lookup_object_by_id",
+      "ranges": [
+        {
+          "offset": 277892,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "lookup_object_by_id",
+          "address": "0x8c053d84",
+          "size": 152
+        }
+      ],
+      "symbols": {
+        "__l_divs": "0x8c18e768"
+      },
+      "reference_sha256": "4cd8a7428950b1b8918b6da270d20d0513cb836afd1284a716a26467e79afa57",
+      "headers": [
+        "src/include/lookup_object.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage70."
+    },
+    {
+      "id": "insert_object_by_id",
+      "source": "src/objects/insert_object_by_id.c",
+      "address": "0x8c053e1c",
+      "entry": "_insert_object_by_id",
+      "ranges": [
+        {
+          "offset": 278044,
+          "size": 280
+        }
+      ],
+      "functions": [
+        {
+          "name": "insert_object_by_id",
+          "address": "0x8c053e1c",
+          "size": 280
+        }
+      ],
+      "reference_sha256": "fd92b8006887d80a8311279f7b7bc484ec154c599c0b79e5fa54d240e2614a13",
+      "symbols": {
+        "__l_divs": "0x8c18e768"
+      },
+      "headers": [
+        "src/include/lookup_object.h"
+      ],
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage70."
+    },
+    {
+      "id": "attach_and_insert_object",
+      "source": "src/objects/attach_and_insert_object.c",
+      "address": "0x8c053f34",
+      "entry": "_attach_and_insert_object",
+      "ranges": [
+        {
+          "offset": 278324,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "attach_and_insert_object",
+          "address": "0x8c053f34",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "b355d7652404c143b85c70fabac0a04af4f8a6bff7fe013ea44384594122f824",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage70."
+    },
+    {
       "id": "choose_emit_slot",
       "source": "src/effects/choose_emit_slot.c",
       "address": "0x8c05ff3c",
