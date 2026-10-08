@@ -1,0 +1,2 @@
+#include "src/include/actor_view_effect.h"
+void dispatch_actor_mode(ActorTransitionView *actor){switch(actor->mode){case 0:((void (*)(ActorTransitionView *))0x8c0c25c4)(actor);break;case 1:((void (*)(ActorTransitionView *))0x8c0c2664)(actor);break;case 2:((void (*)(ActorTransitionView *))0x8c0c275c)(actor);break;case 3:((void (*)(ActorTransitionView *))0x8c0c2850)(actor);break;case 4:((void (*)(ActorTransitionView *))0x8c0c294c)(actor);break;case 5:((void (*)(ActorTransitionView *))0x8c0c2a9c)(actor);break;case 6:break;}}

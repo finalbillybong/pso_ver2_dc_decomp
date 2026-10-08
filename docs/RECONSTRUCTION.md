@@ -7707,3 +7707,38 @@ The original primary targets remain parked and earn no new credit.
 Stage 156 commit 282eaf1 is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, the current tests and expected source-only
 rejection. Continue into actor mode initialization and dispatch.
+
+
+## Actor mode initialization and dispatch, stage 158
+
+Five complete matches add **472 bytes**. Totals: **685 functions / 627 modules /
+63,304 compiled bytes / 4,099,608 retained reference bytes / 1.5207% whole-image
+coverage**. All 680 prior matches and source/header hashes remain unchanged.
+Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| copy_actor_view_parameters | 0x8c0c20d8 | 88 |
+| initialize_actor_mode_state | 0x8c0c2354 | 116 |
+| destroy_actor_mode_state | 0x8c0c23c8 | 68 |
+| dispatch_actor_mode | 0x8c0c24f8 | 148 |
+| request_actor_mode_zero | 0x8c0c2590 | 52 |
+
+Checked prefixes retain four scalar float copies and two integer copies, skipped
+parameter fields, the base initializer/destructor calls, four zeroed state words,
+and the short-field reload from 854 into 856. The signed mode switch explicitly
+preserves empty case six and all seven jump-table entries. Its GNU-linked trial
+produced 148 bytes with 14 differences because the seven compiler RELA addends
+were lost. The established native linker preserves addends 0x38, 0x42, 0x4c,
+0x56, 0x60, 0x6a and 0x70, making the full range exact. No compiler or optimization
+settings changed. Referenced parameter contents remain original data.
+
+Sixteen snapshots form six binary groups. All final admissions independently
+match twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only
+rejects 4,099,608 bytes without changing artifacts. Focused exports validate from
+a disposable database copy. Parked targets were not reopened.
+
+Stage 157 commit ba27ef4 is published with successful remote checks. Reproduce
+with `python3 -B tools/verify_source.py`, the current tests and expected source-only
+rejection. Continue along the mode handlers and transition requests.

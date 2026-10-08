@@ -20746,6 +20746,145 @@
         "source_sha256": "5d36ee21b4cbe15009881cd50f984d2a705c50e030a48aa3ea4f04eb90a89127",
         "compiler_receipt_sha256": "30789c7c9f57e1ac010aceea4e623559b6eab0fe8b8d5163722c18cfb1559e8a"
       }
+    },
+    {
+      "id": "dispatch_actor_mode",
+      "source": "src/effects/dispatch_actor_mode.c",
+      "address": "0x8c0c24f8",
+      "entry": "_dispatch_actor_mode",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730360,
+          "size": 148
+        }
+      ],
+      "functions": [
+        {
+          "name": "dispatch_actor_mode",
+          "address": "0x8c0c24f8",
+          "size": 148
+        }
+      ],
+      "reference_sha256": "1def70e611bdca371cf6c159998dca9f310e0b91b97f5c84bf30a11ff12c0b33",
+      "symbols": {},
+      "linker": "codewarrior",
+      "boundary_review": "Raw actor state initialization/destruction, parameter copies, modezero request and switch dispatch reviewed through adjacent entries, signed fields, gates, all seven jump-table relocations, literals and natural alignment. Full checked match twice; stage158.",
+      "status": "matched",
+      "reason": "Complete actor state helper range; observed behavior and data references preserved."
+    },
+    {
+      "id": "request_actor_mode_zero",
+      "source": "src/effects/request_actor_mode_zero.c",
+      "address": "0x8c0c2590",
+      "entry": "_request_actor_mode_zero",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/actor_view_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730512,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_actor_mode_zero",
+          "address": "0x8c0c2590",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "aa49c0a57b972d003b9c9960e10d65450b0179a9b50ff7637c6bbae0a13321b3",
+      "symbols": {},
+      "boundary_review": "Raw actor state initialization/destruction, parameter copies, modezero request and switch dispatch reviewed through adjacent entries, signed fields, gates, all seven jump-table relocations, literals and natural alignment. Full checked match twice; stage158.",
+      "status": "matched",
+      "reason": "Complete actor state helper range; observed behavior and data references preserved."
+    },
+    {
+      "id": "destroy_actor_mode_state",
+      "source": "src/effects/destroy_actor_mode_state.c",
+      "address": "0x8c0c23c8",
+      "entry": "_destroy_actor_mode_state",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 730056,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_actor_mode_state",
+          "address": "0x8c0c23c8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e839a987c392c6227c133d41f5c165ee294ba0724f7c04fee670876dd19aaec4",
+      "symbols": {},
+      "boundary_review": "Raw actor state initialization/destruction, parameter copies, modezero request and switch dispatch reviewed through adjacent entries, signed fields, gates, all seven jump-table relocations, literals and natural alignment. Full checked match twice; stage158.",
+      "status": "matched",
+      "reason": "Complete actor state helper range; observed behavior and data references preserved."
+    },
+    {
+      "id": "copy_actor_view_parameters",
+      "source": "src/effects/copy_actor_view_parameters.c",
+      "address": "0x8c0c20d8",
+      "entry": "_copy_actor_view_parameters",
+      "headers": [
+        "src/include/actor_mode_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 729304,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "copy_actor_view_parameters",
+          "address": "0x8c0c20d8",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "8c656a6a8c241f6c7e2c7f44a9d0fd4babc83ef01945aeef154c1e0e1233848d",
+      "symbols": {},
+      "boundary_review": "Raw actor state initialization/destruction, parameter copies, modezero request and switch dispatch reviewed through adjacent entries, signed fields, gates, all seven jump-table relocations, literals and natural alignment. Full checked match twice; stage158.",
+      "status": "matched",
+      "reason": "Complete actor state helper range; observed behavior and data references preserved."
+    },
+    {
+      "id": "initialize_actor_mode_state",
+      "source": "src/effects/initialize_actor_mode_state.c",
+      "address": "0x8c0c2354",
+      "entry": "_initialize_actor_mode_state",
+      "headers": [
+        "src/include/actor_mode_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 729940,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_actor_mode_state",
+          "address": "0x8c0c2354",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "0425db67c79a81d552d92563a5cd69b018403784240dbecffc99eb6d195c41bd",
+      "symbols": {},
+      "boundary_review": "Raw actor state initialization/destruction, parameter copies, modezero request and switch dispatch reviewed through adjacent entries, signed fields, gates, all seven jump-table relocations, literals and natural alignment. Full checked match twice; stage158.",
+      "status": "matched",
+      "reason": "Complete actor state helper range; observed behavior and data references preserved."
     }
   ]
 }
