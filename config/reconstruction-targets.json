@@ -10243,6 +10243,162 @@
       "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; compact416-byte path and counter/confirmation helpers; reconstruction-stage93.",
       "status": "matched",
       "reason": "Complete compact packet, forwarding, counter, mode or confirmation callback range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_1955b4",
+      "source": "src/objects/operation_1955b4.c",
+      "address": "0x8c1955b4",
+      "entry": "_operation_1955b4",
+      "ranges": [
+        {
+          "offset": 1594804,
+          "size": 284
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1955b4",
+          "address": "0x8c1955b4",
+          "size": 284
+        }
+      ],
+      "reference_sha256": "4549f8330146b7247935e8da2697d7820b9a626277117ba444a85da7d95566dc",
+      "headers": [
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; nine-group panel update and selection helpers; reconstruction-stage94.",
+      "status": "matched",
+      "reason": "Complete panel update, remap, selection, reset or destructor range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_195570",
+      "source": "src/objects/operation_195570.c",
+      "address": "0x8c195570",
+      "entry": "_operation_195570",
+      "ranges": [
+        {
+          "offset": 1594736,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195570",
+          "address": "0x8c195570",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "a11be547e2e037a9cc74e764f1aef4f7bb651cf3c72f688bc94878e12d7bb08d",
+      "headers": [
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; nine-group panel update and selection helpers; reconstruction-stage94.",
+      "status": "matched",
+      "reason": "Complete panel update, remap, selection, reset or destructor range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_1957c0",
+      "source": "src/objects/operation_1957c0.c",
+      "address": "0x8c1957c0",
+      "entry": "_operation_1957c0",
+      "ranges": [
+        {
+          "offset": 1595328,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1957c0",
+          "address": "0x8c1957c0",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "798679156c768f445fcc6a818e2ce66c1ccba2da4b22173cd5ab35f15874a9ea",
+      "headers": [
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; nine-group panel update and selection helpers; reconstruction-stage94.",
+      "status": "matched",
+      "reason": "Complete panel update, remap, selection, reset or destructor range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_1957e0",
+      "source": "src/objects/operation_1957e0.c",
+      "address": "0x8c1957e0",
+      "entry": "_operation_1957e0",
+      "ranges": [
+        {
+          "offset": 1595360,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1957e0",
+          "address": "0x8c1957e0",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "cfe807c70e6f99e09a717453c93d7e9495f0e95547b6fd2085def9e029507368",
+      "headers": [
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; nine-group panel update and selection helpers; reconstruction-stage94.",
+      "status": "matched",
+      "reason": "Complete panel update, remap, selection, reset or destructor range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_19581c",
+      "source": "src/objects/operation_19581c.c",
+      "address": "0x8c19581c",
+      "entry": "_operation_19581c",
+      "ranges": [
+        {
+          "offset": 1595420,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_19581c",
+          "address": "0x8c19581c",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "83553a776ee786d4f1052f32d2fc455d6c707dcbb42e5abd973ae138e33b6ad7",
+      "headers": [
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; nine-group panel update and selection helpers; reconstruction-stage94.",
+      "status": "matched",
+      "reason": "Complete panel update, remap, selection, reset or destructor range; remaining dependencies stay reference-backed."
+    },
+    {
+      "id": "operation_195830",
+      "source": "src/objects/operation_195830.c",
+      "address": "0x8c195830",
+      "entry": "_operation_195830",
+      "ranges": [
+        {
+          "offset": 1595440,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_195830",
+          "address": "0x8c195830",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "a47769eedf83396da4e97689aa680f9cd6d572f2b015aee3cac58506f0f686f2",
+      "headers": [
+        "src/include/widget_panel.h"
+      ],
+      "boundary_review": "Complete raw SH4 entry/adjacent boundaries including literals/alignment; nine-group panel update and selection helpers; reconstruction-stage94.",
+      "status": "matched",
+      "reason": "Complete panel update, remap, selection, reset or destructor range; remaining dependencies stay reference-backed."
     }
   ]
 }

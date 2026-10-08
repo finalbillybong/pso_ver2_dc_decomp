@@ -4880,3 +4880,52 @@ dispatcher remains **144/3** and earlier text setup remains **264/54** and
 base flags and complete-range rules are unchanged. Publication retains default
 scanner rules and the single verified source-hash exception with its stage-75
 detection control.
+
+
+## Panel updates and selection, stage 94
+
+Six complete functions add **492 bytes**: panel update **0x8c1955b4** (284),
+root destructor **0x8c195570** (68), index remapping **0x8c1957c0** (32), selection
+**0x8c1957e0** (60), mark **0x8c19581c** (20), and reset **0x8c195830** (28).
+Totals are **444 functions / 396 modules / 42,832 compiled full-range bytes /
+4,120,080 retained reference bytes**, or **1.0289% whole-image coverage**.
+All 438 previous matches, module definitions and source/header hashes remain
+unchanged. Since the initial checkpoint, 410 functions replace 39,188 bytes.
+Code-only completion remains unknown; standalone reconstructed static data is zero.
+
+The update preserves both nine-entry traversals, distinct mode-zero/mode-one
+conditions, repeated float stores and exact negative-addition constants. Capturing
+the computed opacity/position before storing and clamping removes redundant loads;
+separate first-pass scope, captured code-column base, and declaration lifetimes
+recover the saved-register order. Declaring the second group pointer, both loop
+indices, then the state pointer completes the 284-byte match. Accumulation uses
+the signed metric halfword plus one and includes each four-unit group gap before
+the final smoothing operation. No inferred bounds or floating-point fixes are added.
+
+The checked header covers 12-byte states, 20-byte groups, 20-byte metric stride
+and the destructor's dispatch field at24. Remapping preserves the mode-one and
+inclusive122..124 checks. Selection resets all states before indexed marking;
+marking retains its unchecked multiply-by12 address. Destruction preserves the
+nullable owner, root callback and positive signed-short pool-release condition.
+
+The nearby drawing candidate remains **244 generated / 240 expected, 119 differing
+bytes**, first difference **0x8c1956e8**, mostly following the size shift. External
+call declarations, array views, C++ references, float/integer parameter ordering
+and explicit local loads do not resolve it. A pointer-based coordinate update
+shrinks it to236 bytes but still differs101; copying the position grows it to268.
+The remaining raw differences include call argument scheduling and stack-indexed
+float reload/store. These trials remain scratch-only.
+
+All **46 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons; none were compiler-rejected. Final checked sources match twice
+independently. Two fresh exact builds, integrated image comparison, five-function
+proof and all **53 research tests** pass; the public suite remains **58 tests**.
+Source-only rejects 4,120,080 retained bytes without changing artifacts. Focused
+exports use a disposable copy and are checked against current inputs; the original
+database remains unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Supporting
+matches do not replace primary acceptance. Compiler, base flags and complete-range
+rules are unchanged. Publication retains default scanner rules and the single
+verified source-hash exception with its stage-75 detection control.
