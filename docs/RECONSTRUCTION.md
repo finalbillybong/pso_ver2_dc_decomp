@@ -7383,3 +7383,44 @@ disposable database copy. No parked target was reopened.
 Stage 148 commit 22f408a is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into adjacent destruction, angle/vector adjustment and scalar helpers.
+
+
+## Effect destruction and scaled adjustment, stage 150
+
+Four complete matches replace **392 bytes**. Totals are **657 functions / 599
+modules / 60,828 compiled bytes / 4,102,084 retained reference bytes / 1.4612%
+whole-image coverage**. All 653 previous matches and source/header hashes remain
+unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| destroy_effect_a4910 | 0x8c0a4910 | 84 |
+| destroy_effect_a4b1c | 0x8c0a4b1c | 68 |
+| step_angle_scaled | 0x8c0a4ce4 | 68 |
+| adjust_vector_scaled | 0x8c0a4d28 | 172 |
+
+The destructors use the existing checked dispatch prefix, null guards and signed
+release test. The first also invokes mode release and clears its observed global.
+Their initial precompile rejection identified a missing transitive vector header;
+correcting declared dependencies changes no source hypothesis or compiler flags.
+
+The angle helper multiplies its signed scale by 127. Expressing its conditional
+as a shared result retains the reference's common return register and branch-delay
+NOP, naturally restoring the four missing bytes. The direct-return hypothesis
+produced 64/68 bytes with 24 differences and is retained as failed evidence.
+
+The vector helper preserves the exact 0x3e23d70a multiplier and multiplication
+order. Its unordered comparison and replacement of steps at least five with 12
+remain as observed. The alternate path copies the first vector to the second;
+that unusual direction is preserved. No speculative behavior correction is made.
+
+Fifteen snapshots form five binary groups; two snapshots record dependency
+validation errors before compilation. All final admissions independently match
+twice. Two fresh exact builds in each checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,102,084 reference bytes without changing build artifacts. Focused exports are
+validated against a disposable database copy. Parked targets remain incomplete.
+
+Stage 149 commit 6958006 is published with successful remote checks. Reproduce
+with `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into scalar adjustment, slot lifetime and referenced resource tables.

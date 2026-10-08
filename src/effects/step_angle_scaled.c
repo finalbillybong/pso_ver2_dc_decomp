@@ -1,0 +1,1 @@
+int step_angle_scaled(int first,int second,int scale){int difference=((int (*)(int,int))0x8c0c52f4)(second,first);scale*=127;second=scale>difference?second:((int (*)(int,int,int))0x8c0c4f90)(first,second,scale);return second;}

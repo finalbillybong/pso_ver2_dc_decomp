@@ -1,0 +1,2 @@
+#include "src/include/vector3.h"
+int adjust_vector_scaled(Vector3 *first,Vector3 *second,float scale){Vector3 delta;float length,step;delta.x=first->x-second->x;delta.y=first->y-second->y;delta.z=first->z-second->z;length=((float (*)(Vector3 *))0x8c37e480)(&delta);step=length*0.1599999964237213f;step*=scale;if(length>step){if(!(5.0f>step))step=12.0f;((void (*)(Vector3 *,Vector3 *,Vector3 *,float))0x8c0c51d8)(first,second,first,step);return 0;}second->x=first->x;second->y=first->y;second->z=first->z;return 1;}

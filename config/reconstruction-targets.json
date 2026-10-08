@@ -19397,6 +19397,114 @@
       "boundary_review": "Raw actor-context loops, mode wrappers, factory and message helper reviewed through adjacent entries, signed loop/global reload, conditional calls, stackargument, call/return delays, reference offset/counterfield, literals and natural alignment. Full checked match twice; stage149.",
       "status": "matched",
       "reason": "Complete effect/render helper range; provisional argument meanings and reference data remain unclaimed."
+    },
+    {
+      "id": "destroy_effect_a4910",
+      "source": "src/effects/destroy_effect_a4910.c",
+      "address": "0x8c0a4910",
+      "entry": "_destroy_effect_a4910",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 608528,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_a4910",
+          "address": "0x8c0a4910",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "3dd99908d661598aa6b6a7a1ccee1b531f0e025a2bfb4ff0a4aa410b75a8ffb0",
+      "symbols": {},
+      "boundary_review": "Raw two effect destructors and angle/vector helpers reviewed through adjacent entries, signed/null branches, shared-result merge, multiply grouping, unordered comparisons, reverse-copy path, all call/return delays, literals and natural alignment. Full checked match twice; stage150.",
+      "status": "matched",
+      "reason": "Complete effect/math helper range; unusual observed vector behavior preserved."
+    },
+    {
+      "id": "destroy_effect_a4b1c",
+      "source": "src/effects/destroy_effect_a4b1c.c",
+      "address": "0x8c0a4b1c",
+      "entry": "_destroy_effect_a4b1c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 609052,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_effect_a4b1c",
+          "address": "0x8c0a4b1c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "736c4204631f72af245fdf6bdd8af296e89998270253ac89cbc97a59b1b8067b",
+      "symbols": {},
+      "boundary_review": "Raw two effect destructors and angle/vector helpers reviewed through adjacent entries, signed/null branches, shared-result merge, multiply grouping, unordered comparisons, reverse-copy path, all call/return delays, literals and natural alignment. Full checked match twice; stage150.",
+      "status": "matched",
+      "reason": "Complete effect/math helper range; unusual observed vector behavior preserved."
+    },
+    {
+      "id": "step_angle_scaled",
+      "source": "src/effects/step_angle_scaled.c",
+      "address": "0x8c0a4ce4",
+      "entry": "_step_angle_scaled",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 609508,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "step_angle_scaled",
+          "address": "0x8c0a4ce4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "4064b0a38f3f0d8b160336c320371f295e6eea0cdfce422a096499d25ed0e5ee",
+      "symbols": {},
+      "boundary_review": "Raw two effect destructors and angle/vector helpers reviewed through adjacent entries, signed/null branches, shared-result merge, multiply grouping, unordered comparisons, reverse-copy path, all call/return delays, literals and natural alignment. Full checked match twice; stage150.",
+      "status": "matched",
+      "reason": "Complete effect/math helper range; unusual observed vector behavior preserved."
+    },
+    {
+      "id": "adjust_vector_scaled",
+      "source": "src/effects/adjust_vector_scaled.c",
+      "address": "0x8c0a4d28",
+      "entry": "_adjust_vector_scaled",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 609576,
+          "size": 172
+        }
+      ],
+      "functions": [
+        {
+          "name": "adjust_vector_scaled",
+          "address": "0x8c0a4d28",
+          "size": 172
+        }
+      ],
+      "reference_sha256": "6d60b5f0de3a0ffa7991e8b70512337b364b796234c680322f2ee47899551c1a",
+      "symbols": {},
+      "boundary_review": "Raw two effect destructors and angle/vector helpers reviewed through adjacent entries, signed/null branches, shared-result merge, multiply grouping, unordered comparisons, reverse-copy path, all call/return delays, literals and natural alignment. Full checked match twice; stage150.",
+      "status": "matched",
+      "reason": "Complete effect/math helper range; unusual observed vector behavior preserved."
     }
   ]
 }
