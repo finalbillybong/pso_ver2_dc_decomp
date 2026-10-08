@@ -1,100 +1,139 @@
-# Reconstruction batch: 170: proven reconstruction families
+# Reconstruction batch: 171: proven reconstruction families
 
-78 new matching functions / 1,732 bytes. All 1461 prior functions preserved.
+115 new matching functions / 4,172 bytes. All 1539 prior functions preserved.
 
-1539 exact functions in 1481 modules; 116,980 compiled function-range bytes; 0 reconstructed data bytes; 4,045,932 retained reference bytes. Whole-image coverage 2.8101% is not code completion.
+1654 exact functions in 1596 modules; 121,152 compiled function-range bytes; 0 reconstructed data bytes; 4,041,760 retained reference bytes. Whole-image coverage 2.9103% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| clear_global_8c01c1c4 | 0x8c01c1c4 | 12 |
-| clear_global_8c01c1e8 | 0x8c01c1e8 | 12 |
-| clear_global_8c01c210 | 0x8c01c210 | 12 |
-| set_field_8c05af48 | 0x8c05af48 | 12 |
-| clear_global_8c08a584 | 0x8c08a584 | 12 |
-| create_effect_8c09fd4c | 0x8c09fd4c | 48 |
-| destroy_field_8c0b403c | 0x8c0b403c | 44 |
-| set_field_8c0b4d28 | 0x8c0b4d28 | 12 |
-| initialize_effect8_template | 0x8c0b8cf0 | 216 |
-| clear_global_8c0d0354 | 0x8c0d0354 | 12 |
-| clear_global_8c0de424 | 0x8c0de424 | 12 |
-| destroy_field_8c0e156c | 0x8c0e156c | 60 |
-| destroy_linked_8c0f00c0 | 0x8c0f00c0 | 84 |
-| destroy_field_8c0f72a8 | 0x8c0f72a8 | 60 |
-| destroy_field_8c0fbfa4 | 0x8c0fbfa4 | 60 |
-| destroy_field_8c0fcbe4 | 0x8c0fcbe4 | 60 |
-| destroy_field_8c1049ec | 0x8c1049ec | 60 |
-| clear_global_8c104e70 | 0x8c104e70 | 12 |
-| clear_global_8c106048 | 0x8c106048 | 12 |
-| clear_global_8c1086f0 | 0x8c1086f0 | 12 |
-| clear_global_8c10ae90 | 0x8c10ae90 | 12 |
-| clear_global_8c10b024 | 0x8c10b024 | 12 |
-| clear_global_8c10b030 | 0x8c10b030 | 12 |
-| clear_global_8c10b0d4 | 0x8c10b0d4 | 12 |
-| clear_global_8c10b0e0 | 0x8c10b0e0 | 12 |
-| clear_global_8c10b184 | 0x8c10b184 | 12 |
-| clear_global_8c10be4c | 0x8c10be4c | 12 |
-| clear_global_8c112464 | 0x8c112464 | 12 |
-| clear_global_8c112470 | 0x8c112470 | 12 |
-| destroy_field_8c114790 | 0x8c114790 | 60 |
-| destroy_field_8c11499c | 0x8c11499c | 44 |
-| clear_global_8c159204 | 0x8c159204 | 12 |
-| clear_global_8c159210 | 0x8c159210 | 12 |
-| clear_global_8c162ccc | 0x8c162ccc | 12 |
-| set_global_8c16ca8c | 0x8c16ca8c | 12 |
-| set_global_8c16efd4 | 0x8c16efd4 | 12 |
-| clear_global_8c16fc1c | 0x8c16fc1c | 12 |
-| clear_global_8c16fddc | 0x8c16fddc | 12 |
-| clear_global_8c1708b8 | 0x8c1708b8 | 12 |
-| clear_global_8c1708d0 | 0x8c1708d0 | 12 |
-| clear_global_8c1708f4 | 0x8c1708f4 | 12 |
-| clear_global_8c170ef4 | 0x8c170ef4 | 12 |
-| clear_global_8c1715b8 | 0x8c1715b8 | 12 |
-| set_field_8c175afc | 0x8c175afc | 12 |
-| destroy_field_8c17bb90 | 0x8c17bb90 | 60 |
-| query_field_8c17e6c0 | 0x8c17e6c0 | 24 |
-| query_field_8c17e6d8 | 0x8c17e6d8 | 24 |
-| clear_global_8c18bad4 | 0x8c18bad4 | 12 |
-| clear_global_8c19b29c | 0x8c19b29c | 12 |
-| set_global_8c1aa2c4 | 0x8c1aa2c4 | 12 |
-| set_global_8c1aa2d0 | 0x8c1aa2d0 | 12 |
-| clear_global_8c1aa7e4 | 0x8c1aa7e4 | 12 |
-| clear_global_8c1acff8 | 0x8c1acff8 | 12 |
-| set_field_8c1ae1e0 | 0x8c1ae1e0 | 12 |
-| set_field_8c1b2014 | 0x8c1b2014 | 12 |
-| set_field_8c1b5048 | 0x8c1b5048 | 12 |
-| set_field_8c1b5750 | 0x8c1b5750 | 12 |
-| clear_global_8c1bded0 | 0x8c1bded0 | 12 |
-| destroy_field_8c1d58a4 | 0x8c1d58a4 | 60 |
-| set_field_8c1e22c8 | 0x8c1e22c8 | 12 |
-| clear_global_8c208540 | 0x8c208540 | 12 |
-| clear_global_8c208e18 | 0x8c208e18 | 12 |
-| query_field_8c209364 | 0x8c209364 | 24 |
-| clear_global_8c2199c0 | 0x8c2199c0 | 12 |
-| clear_global_8c219a1c | 0x8c219a1c | 12 |
-| clear_global_8c220b1c | 0x8c220b1c | 12 |
-| clear_global_8c220b28 | 0x8c220b28 | 12 |
-| clear_global_8c22ab08 | 0x8c22ab08 | 12 |
-| set_field_8c23c99c | 0x8c23c99c | 12 |
-| set_field_8c23ce74 | 0x8c23ce74 | 12 |
-| set_field_8c252964 | 0x8c252964 | 12 |
-| clear_global_8c253474 | 0x8c253474 | 12 |
-| clear_global_8c253480 | 0x8c253480 | 12 |
-| clear_global_8c256b24 | 0x8c256b24 | 12 |
-| clear_global_8c25f890 | 0x8c25f890 | 12 |
-| clear_global_8c282094 | 0x8c282094 | 12 |
-| clear_global_8c282d2c | 0x8c282d2c | 12 |
-| clear_global_8c282d70 | 0x8c282d70 | 12 |
+| object_blocked_8c0133ec | 0x8c0133ec | 12 |
+| object_blocked_8c013418 | 0x8c013418 | 12 |
+| object_blocked_8c013428 | 0x8c013428 | 12 |
+| object_blocked_8c01343c | 0x8c01343c | 12 |
+| word_operation_8c01345c | 0x8c01345c | 12 |
+| word_operation_8c019b0c | 0x8c019b0c | 12 |
+| set_global_8c01c1d0 | 0x8c01c1d0 | 12 |
+| set_global_8c01c1f4 | 0x8c01c1f4 | 12 |
+| set_global_8c01c21c | 0x8c01c21c | 12 |
+| set_field_8c01ff5c | 0x8c01ff5c | 12 |
+| set_field_8c020db0 | 0x8c020db0 | 12 |
+| word_operation_8c028814 | 0x8c028814 | 20 |
+| word_operation_8c02ab64 | 0x8c02ab64 | 12 |
+| word_operation_8c02bac0 | 0x8c02bac0 | 20 |
+| word_operation_8c02c32c | 0x8c02c32c | 12 |
+| release_render_mode_four_8c02d218 | 0x8c02d218 | 12 |
+| release_render_mode_four_8c03ce90 | 0x8c03ce90 | 12 |
+| release_render_mode_four_8c03cedc | 0x8c03cedc | 12 |
+| destroy_effect_d870_8c04f904 | 0x8c04f904 | 92 |
+| set_field_8c052174 | 0x8c052174 | 12 |
+| word_operation_8c0594a4 | 0x8c0594a4 | 12 |
+| set_field_8c05af54 | 0x8c05af54 | 12 |
+| word_operation_8c05b678 | 0x8c05b678 | 20 |
+| release_render_mode_four_8c05b938 | 0x8c05b938 | 12 |
+| release_render_mode_four_8c05b944 | 0x8c05b944 | 12 |
+| word_operation_8c05e354 | 0x8c05e354 | 20 |
+| word_operation_8c065360 | 0x8c065360 | 12 |
+| set_global_8c065be8 | 0x8c065be8 | 12 |
+| clear_global_8c065c18 | 0x8c065c18 | 12 |
+| set_field_8c09ca50 | 0x8c09ca50 | 12 |
+| initialize_object_8c09d6c8 | 0x8c09d6c8 | 52 |
+| initialize_effect0_template | 0x8c0b10e4 | 272 |
+| create_effect_b03c8_8c0b2190 | 0x8c0b2190 | 68 |
+| initialize_effect7_template | 0x8c0b2f78 | 208 |
+| destroy_effect_d870_8c0b6c78 | 0x8c0b6c78 | 92 |
+| create_effect_b03c8_8c0b7640 | 0x8c0b7640 | 68 |
+| initialize_effect5_template | 0x8c0b778c | 212 |
+| initialize_effect2_template | 0x8c0b8648 | 212 |
+| create_effect_b03c8_8c0b8c68 | 0x8c0b8c68 | 68 |
+| create_effect_b03c8_8c0b9444 | 0x8c0b9444 | 68 |
+| initialize_effect15_template | 0x8c0b965c | 132 |
+| create_effect_b03c8_8c0ba928 | 0x8c0ba928 | 68 |
+| initialize_effect13_template | 0x8c0bab98 | 84 |
+| initialize_effect12_template | 0x8c0bafc4 | 96 |
+| initialize_effect6_template | 0x8c0bb7f4 | 208 |
+| word_operation_8c0bf858 | 0x8c0bf858 | 12 |
+| set_actor_raised_position_8c0d1c4c | 0x8c0d1c4c | 80 |
+| release_render_mode_four_8c0d47c0 | 0x8c0d47c0 | 12 |
+| destroy_field_8c0e14bc | 0x8c0e14bc | 44 |
+| destroy_field_8c0e1cd4 | 0x8c0e1cd4 | 60 |
+| word_operation_8c0e92d4 | 0x8c0e92d4 | 12 |
+| set_field_8c0f3df8 | 0x8c0f3df8 | 12 |
+| clear_global_8c0fbef4 | 0x8c0fbef4 | 12 |
+| clear_global_8c104d84 | 0x8c104d84 | 12 |
+| clear_global_8c10603c | 0x8c10603c | 12 |
+| set_global_8c1086e4 | 0x8c1086e4 | 12 |
+| clear_global_8c10ae9c | 0x8c10ae9c | 12 |
+| clear_global_8c10b190 | 0x8c10b190 | 12 |
+| set_global_8c1117ec | 0x8c1117ec | 12 |
+| destroy_effect_d870_8c11953c | 0x8c11953c | 92 |
+| get_render_state_8c119758 | 0x8c119758 | 12 |
+| destroy_field_8c11a88c | 0x8c11a88c | 60 |
+| initialize_object_8c137328 | 0x8c137328 | 52 |
+| word_operation_8c139fb8 | 0x8c139fb8 | 12 |
+| set_global_8c16ca98 | 0x8c16ca98 | 12 |
+| release_render_mode_four_8c16e008 | 0x8c16e008 | 12 |
+| release_render_mode_four_8c16e090 | 0x8c16e090 | 12 |
+| release_render_mode_four_8c16e0d8 | 0x8c16e0d8 | 12 |
+| release_render_mode_four_8c16e4e0 | 0x8c16e4e0 | 12 |
+| release_render_mode_four_8c16eea4 | 0x8c16eea4 | 12 |
+| release_render_mode_four_8c16eeb0 | 0x8c16eeb0 | 12 |
+| release_render_mode_four_8c16ef00 | 0x8c16ef00 | 12 |
+| word_operation_8c16efb0 | 0x8c16efb0 | 12 |
+| release_render_mode_four_8c16fb24 | 0x8c16fb24 | 12 |
+| set_global_8c16fc10 | 0x8c16fc10 | 12 |
+| set_global_8c16fdd0 | 0x8c16fdd0 | 12 |
+| word_operation_8c170894 | 0x8c170894 | 12 |
+| word_operation_8c1708a0 | 0x8c1708a0 | 12 |
+| set_global_8c1708ac | 0x8c1708ac | 12 |
+| set_global_8c1708c4 | 0x8c1708c4 | 12 |
+| set_global_8c1708e8 | 0x8c1708e8 | 12 |
+| set_global_8c170ee8 | 0x8c170ee8 | 12 |
+| set_global_8c1715ac | 0x8c1715ac | 12 |
+| operation_03cee8_8c173484 | 0x8c173484 | 24 |
+| operation_03cee8_8c177704 | 0x8c177704 | 24 |
+| destroy_field_8c178048 | 0x8c178048 | 60 |
+| destroy_effect_d870_8c178430 | 0x8c178430 | 92 |
+| word_operation_8c1794dc | 0x8c1794dc | 12 |
+| set_field_8c17b304 | 0x8c17b304 | 12 |
+| set_global_8c17bb2c | 0x8c17bb2c | 12 |
+| word_operation_8c18490c | 0x8c18490c | 12 |
+| set_global_8c187860 | 0x8c187860 | 12 |
+| set_global_8c19b290 | 0x8c19b290 | 12 |
+| word_operation_8c1a0474 | 0x8c1a0474 | 12 |
+| word_operation_8c1aa54c | 0x8c1aa54c | 12 |
+| set_global_8c1aa7f0 | 0x8c1aa7f0 | 12 |
+| set_global_8c1b0324 | 0x8c1b0324 | 12 |
+| word_operation_8c1ddaf0 | 0x8c1ddaf0 | 12 |
+| operation_0c62e0_8c1e61bc | 0x8c1e61bc | 172 |
+| operation_0c62e0_8c1e6420 | 0x8c1e6420 | 172 |
+| get_render_state_8c1e77dc | 0x8c1e77dc | 12 |
+| get_render_state_8c1e77e8 | 0x8c1e77e8 | 12 |
+| destroy_field_8c1f1460 | 0x8c1f1460 | 60 |
+| clear_global_8c20854c | 0x8c20854c | 12 |
+| clear_global_8c208e24 | 0x8c208e24 | 12 |
+| operation_03cee8_8c22106c | 0x8c22106c | 24 |
+| operation_03cee8_8c221388 | 0x8c221388 | 24 |
+| set_global_8c22ffe4 | 0x8c22ffe4 | 12 |
+| clear_global_8c22fff0 | 0x8c22fff0 | 12 |
+| set_field_8c23c6f4 | 0x8c23c6f4 | 12 |
+| set_field_8c23ea88 | 0x8c23ea88 | 12 |
+| initialize_object_8c248e90 | 0x8c248e90 | 52 |
+| set_field_8c252064 | 0x8c252064 | 12 |
+| initialize_object_8c253390 | 0x8c253390 | 52 |
+| query_field_8c2596c0 | 0x8c2596c0 | 24 |
 
-78 complete exact functions add 1,732 compiled function-range bytes: 51 global constant writes, 11 checked field setters, three nullable field queries, eight nullable destructors with a base call, two base destructors, one linked-object destructor, one allocation wrapper and one 216-byte effect-template initializer. All 1,461 prior functions, original source/header hashes and manifest entries are preserved. Reconstructed static data remains zero.
+115 complete exact functions add 4,172 compiled function-range bytes, preserving all 1,539 previous functions and their source/header hashes. The batch comprises eight effect-template initializers (1,424 bytes), 45 immediate variants (776), four short constructors (208), 37 reviewed call/resource/vector families (1,480) and 21 checked word/address accessors (284). Reconstructed static data remains zero. The new initializers preserve distinct signed field 124 and index 126 behavior, fields 190/202 and full 64-byte template copies where observed. No gameplay correction is inferred from apparent inconsistencies.
 
-The first constructor approach produced zero exact functions or bytes. Four targets consumed 16 distinct hypotheses plus one correction of a C++ linker-symbol spelling: 0x8c246638 is parked after seven cumulative hypotheses at 328 bytes / 18 differing; 0x8c1a129c after three at 264 / 26; 0x8c164fd8 after three at 368 generated versus 364 expected / 212 differing; 0x8c228618 after three at 556 generated versus 560 expected / 432 differing. Sources, compiler receipts and failures remain preserved. Stack-homing an address-taken parameter was already documented in an exact initializer; rediscovering it late was avoidable work. The outstanding blockers are pointer/register lifetimes and instruction scheduling, not permission to change the compiler. Revisit only with independently exact equivalent sequences or verified source context. Four further reviewed constructor ranges have no trial and receive no completion credit. The two original primary targets remain parked and incomplete.
+121 distinct hypotheses and one invalid generator attempt produced 115 exact candidates, with five duplicate binary outputs and 3.595 seconds of recorded compilation. Admission adds 230 reproduction compiles, not hypotheses. All public orchestration/compiler settings remain unchanged. The scratch scanner now accepts an explicit policy instead of copied screening variants; each generated family has reviewed boundaries, constants, argument/result declarations and checked field offsets. Entry and adjacent code pointers or separately reviewed next-function prologues establish boundaries omitted from the catalog. Separate empty entries after two effect initializers were excluded, not treated as padding.
 
-After those failures, a narrow extension of proven-family screening reviewed immediate constants and field displacements as well as literal addresses. It found 30 cataloged candidates, 47 independently referenced entries omitted from the catalog and one larger effect initializer. All 78 matched at the first hypothesis, totaling 1,732 bytes. Their ordinary generated source retains reviewed argument/return behavior and checked accessed prefixes; literal pools and natural alignment are included. The new effect initializer preserves signed index126, the complete64-byte template copy, repeated predicate and all original arithmetic, with kind8/pair8/value16/multiplier25. The referenced-entry records retain entry and adjacent code pointers and complete boundaries. This is compiler-tested source generation, not byte or runtime-object substitution.
+Investigation-only results: kind18 initializer at 0x8c0b572c is parked after three hypotheses at 280 bytes/23 differing; kind3 at 0x8c0ad348 is parked after two at 272/23. Explicit shifts restored the expected range sizes, but quotient-to-float/pointer scheduling remains different. A scoped float temporary changed only one mismatching byte. Revisit only with independently exact equivalent quotient/float/store context or verified source evidence. In contrast, kind0 at 0x8c0b10e4 completed its 272-byte match at H2 when the existing signed adjustment helper was declared as an external function. That call declaration changed callee-literal scheduling without changing compiler flags or observed argument/result behavior. The original primary targets and previous parked constructors were not retried.
 
-Across both approaches there were 94 hypotheses and 95 compiler attempts, 15 duplicate binary outputs and 2.811 seconds of recorded compilation. Ten duplicate outputs belong to distinct exact entries; five belong to constructor investigation. Admission adds 156 reproduction compiles, not new hypotheses. The existing orchestration and receipt tools were reused; only scratch pattern screening/generation was extended, and the same generator handled both candidate sets. No public tooling or compiler settings changed. The bounded screens found no further larger immediate variants. The 78-function collection is below the preferred4KiB threshold; it was consolidated into one integration after the credible family screen was exhausted rather than running full checks on its component groups.
+Fourteen tail wrappers inherit argument and result signatures from already exact callees. Another 165 tail shapes are explicitly parked, uncompiled, until callee/caller evidence establishes their ABI. Scalar stores and address accessors use provisional opaque word/address types instead of inventing callback or vector meanings from their instruction shape.
 
-Four fresh exact builds passed (two per checkout), with integrated-image comparisons, both five-function proofs, all 58 research and 63 public tests, and source-only rejection preserving artifacts. Verification commands totaled 90.946 seconds in research and93.034 seconds in public, run concurrently. Existing focused exports were rebound to unchanged ranges; only new ranges were exported. No original database or private input was changed.
+The complete-range check rejected one generator classification error: a 44-byte base destructor was mistaken for the 60-byte family because both identifiers shared a prefix. Its incorrect 42-byte output was never admitted. The corrected selection matched 44 bytes, and a template/full-range-size precondition now prevents that class of error before generation. A separate syntax error in selection bookkeeping happened before compilation and is retained in the scratch correction receipt. Neither error is presented as a new behavior hypothesis or reconstruction gain.
 
-Verification used 5,924 measured module comparisons for 1,732 new bytes: 3.42 comparisons per byte, versus 6.48 in the five-stage baseline and 8.48 in batch169. The baseline used 20 builds/555 test executions for 19 functions/1,936 bytes; this batch used 4 builds/121 tests for 78 functions/1,732 bytes. It used 94 hypotheses/15 duplicates versus the baseline 38/4, so investigation efficiency did not improve across every metric. The constructor work was unproductive; the generated families recovered useful gains and reduced integration overhead per byte. Build logs total 244,230 bytes. Historical command timings and task-attributed token/cost records remain unavailable: no token-cost or historical runtime saving is claimed.
+Four fresh exact project builds passed, two in each checkout, with integrated-image comparisons, both five-function proofs, all 58 research and 63 public tests, and source-only rejection preserving artifacts. All prior matches and sources/headers were preserved. Verification commands totaled 97.630 seconds in research and 99.801 seconds in public, running concurrently. Focused analysis was reused for unchanged ranges; the 115 new matches and two newly parked effect ranges were exported once.
 
-Continue cheap trials from related effect-template initializers and retain larger integration thresholds where practical. Full verification is one batch operation, not a per-candidate action. Reproduce using tools/reconstruct.py verify and RECONSTRUCTION_WORKFLOW.md. Whole-image coverage includes literals and padding and is not code completion; the code-only denominator remains unknown.
+The measured verification work was 6,384 module comparisons for 4,172 new bytes, or 1.53 comparisons per byte, versus 6.48 in the five-stage baseline and 3.42 in batch 170. Compared with that baseline, this integration used 4 builds/121 test executions for 115 functions/4,172 bytes, versus 20 builds/555 tests for 19 functions/1,936 bytes. It required 121 distinct hypotheses versus 38, with five duplicates versus four. The larger measured byte gain and reduced integration overhead do not establish a token-cost saving: task-attributed token/cost records and historical command timings remain unavailable. Build logs total 263,542 bytes.
+
+Continue cheap inspected candidates without restarting exhausted ABI/constructor hypotheses. Integrate related families around several KB when practical. Reproduce full acceptance using tools/reconstruct.py verify and RECONSTRUCTION_WORKFLOW.md. Static data is tracked separately and remains zero; whole-image coverage is not code-completion percentage.
