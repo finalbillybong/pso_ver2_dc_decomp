@@ -4980,6 +4980,32 @@
       "boundary_review": "Raw entries, neighboring functions, observed color comparisons, vector temporary, resource/dispatch fields, signed release, allocation and emit order, literals and natural alignment reviewed. Complete checked match twice; stage138."
     },
     {
+      "id": "update_short_effect_a05bc",
+      "source": "src/effects/update_short_effect_a05bc.c",
+      "address": "0x8c0a05bc",
+      "entry": "_update_short_effect_a05bc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/short_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591292,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_short_effect_a05bc",
+          "address": "0x8c0a05bc",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "61081d0ea5665b3d33f27ea89fb9411e09e0d53c48b9880948f119642268c3d2",
+      "symbols": {},
+      "boundary_review": "Raw short-effect update switches and follow-effect destructor/reset/call wrappers reviewed through adjacent entries, emission branches, signed tick and release tests, scalar fields, literals and natural padding. Complete checked match twice; stage139."
+    },
+    {
       "id": "create_effect_a061c",
       "source": "src/effects/create_effect_a061c.c",
       "address": "0x8c0a061c",
@@ -5055,6 +5081,107 @@
       "reference_sha256": "bdc42946f0a4ff26e4c4a32b1ecf0f987f7f3e6c16aff18868f5e08d9a343675",
       "symbols": {},
       "boundary_review": "Raw entries, neighboring functions, observed color comparisons, vector temporary, resource/dispatch fields, signed release, allocation and emit order, literals and natural alignment reviewed. Complete checked match twice; stage138."
+    },
+    {
+      "id": "update_short_effect_a06dc",
+      "source": "src/effects/update_short_effect_a06dc.c",
+      "address": "0x8c0a06dc",
+      "entry": "_update_short_effect_a06dc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/short_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591580,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_short_effect_a06dc",
+          "address": "0x8c0a06dc",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "810e813e309ab0e5a741f60e14413f44c6c1d298b1ec25db650e7623067313fe",
+      "symbols": {},
+      "boundary_review": "Raw short-effect update switches and follow-effect destructor/reset/call wrappers reviewed through adjacent entries, emission branches, signed tick and release tests, scalar fields, literals and natural padding. Complete checked match twice; stage139."
+    },
+    {
+      "id": "destroy_follow_effect",
+      "source": "src/effects/destroy_follow_effect.c",
+      "address": "0x8c0a0790",
+      "entry": "_destroy_follow_effect",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591760,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_follow_effect",
+          "address": "0x8c0a0790",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "caa7da6b71e8200776e5a67fb771664fe54a041c520cd883b3b7f29ca66a82e9",
+      "symbols": {},
+      "boundary_review": "Raw short-effect update switches and follow-effect destructor/reset/call wrappers reviewed through adjacent entries, emission branches, signed tick and release tests, scalar fields, literals and natural padding. Complete checked match twice; stage139."
+    },
+    {
+      "id": "refresh_follow_effect",
+      "source": "src/effects/refresh_follow_effect.c",
+      "address": "0x8c0a07d4",
+      "entry": "_refresh_follow_effect",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 591828,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect",
+          "address": "0x8c0a07d4",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "6bfc47d5c914d3b9379959cd4a9ae2d8d3cde0e29ecd9884cacdec0fea525885",
+      "symbols": {},
+      "boundary_review": "Raw short-effect update switches and follow-effect destructor/reset/call wrappers reviewed through adjacent entries, emission branches, signed tick and release tests, scalar fields, literals and natural padding. Complete checked match twice; stage139."
+    },
+    {
+      "id": "reset_follow_effect",
+      "source": "src/effects/reset_follow_effect.c",
+      "address": "0x8c0a07f4",
+      "entry": "_reset_follow_effect",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591860,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_follow_effect",
+          "address": "0x8c0a07f4",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "c49e6c152ce4bf2c1c659ba7c7ee76c3bf5d4e0a5d3ebf97ab935e50b9bc6447",
+      "symbols": {},
+      "boundary_review": "Raw short-effect update switches and follow-effect destructor/reset/call wrappers reviewed through adjacent entries, emission branches, signed tick and release tests, scalar fields, literals and natural padding. Complete checked match twice; stage139."
     },
     {
       "id": "reset_effect_table_state",

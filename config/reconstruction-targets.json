@@ -17527,6 +17527,201 @@
         "source_sha256": "070527bde28b1eaeb96fac319b06fe5f9a04555a05f3f5218384c1f267be2484",
         "compiler_receipt_sha256": "73e045a354a1286bcc25f82301ac47eff2388f72cbd3e5d7731f81966a3f8599"
       }
+    },
+    {
+      "id": "update_short_effect_a05bc",
+      "source": "src/effects/update_short_effect_a05bc.c",
+      "address": "0x8c0a05bc",
+      "entry": "_update_short_effect_a05bc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/short_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591292,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_short_effect_a05bc",
+          "address": "0x8c0a05bc",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "61081d0ea5665b3d33f27ea89fb9411e09e0d53c48b9880948f119642268c3d2",
+      "symbols": {},
+      "boundary_review": "Raw short-effect update switches and follow-effect destructor/reset/call wrappers reviewed through adjacent entries, emission branches, signed tick and release tests, scalar fields, literals and natural padding. Complete checked match twice; stage139.",
+      "status": "matched",
+      "reason": "Complete state update or follow-effect lifecycle; observed emissions, frame threshold, reset and release semantics preserved."
+    },
+    {
+      "id": "update_short_effect_a06dc",
+      "source": "src/effects/update_short_effect_a06dc.c",
+      "address": "0x8c0a06dc",
+      "entry": "_update_short_effect_a06dc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/short_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591580,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_short_effect_a06dc",
+          "address": "0x8c0a06dc",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "810e813e309ab0e5a741f60e14413f44c6c1d298b1ec25db650e7623067313fe",
+      "symbols": {},
+      "boundary_review": "Raw short-effect update switches and follow-effect destructor/reset/call wrappers reviewed through adjacent entries, emission branches, signed tick and release tests, scalar fields, literals and natural padding. Complete checked match twice; stage139.",
+      "status": "matched",
+      "reason": "Complete state update or follow-effect lifecycle; observed emissions, frame threshold, reset and release semantics preserved."
+    },
+    {
+      "id": "destroy_follow_effect",
+      "source": "src/effects/destroy_follow_effect.c",
+      "address": "0x8c0a0790",
+      "entry": "_destroy_follow_effect",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591760,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_follow_effect",
+          "address": "0x8c0a0790",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "caa7da6b71e8200776e5a67fb771664fe54a041c520cd883b3b7f29ca66a82e9",
+      "symbols": {},
+      "boundary_review": "Raw short-effect update switches and follow-effect destructor/reset/call wrappers reviewed through adjacent entries, emission branches, signed tick and release tests, scalar fields, literals and natural padding. Complete checked match twice; stage139.",
+      "status": "matched",
+      "reason": "Complete state update or follow-effect lifecycle; observed emissions, frame threshold, reset and release semantics preserved."
+    },
+    {
+      "id": "refresh_follow_effect",
+      "source": "src/effects/refresh_follow_effect.c",
+      "address": "0x8c0a07d4",
+      "entry": "_refresh_follow_effect",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 591828,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_follow_effect",
+          "address": "0x8c0a07d4",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "6bfc47d5c914d3b9379959cd4a9ae2d8d3cde0e29ecd9884cacdec0fea525885",
+      "symbols": {},
+      "boundary_review": "Raw short-effect update switches and follow-effect destructor/reset/call wrappers reviewed through adjacent entries, emission branches, signed tick and release tests, scalar fields, literals and natural padding. Complete checked match twice; stage139.",
+      "status": "matched",
+      "reason": "Complete state update or follow-effect lifecycle; observed emissions, frame threshold, reset and release semantics preserved."
+    },
+    {
+      "id": "reset_follow_effect",
+      "source": "src/effects/reset_follow_effect.c",
+      "address": "0x8c0a07f4",
+      "entry": "_reset_follow_effect",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591860,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_follow_effect",
+          "address": "0x8c0a07f4",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "c49e6c152ce4bf2c1c659ba7c7ee76c3bf5d4e0a5d3ebf97ab935e50b9bc6447",
+      "symbols": {},
+      "boundary_review": "Raw short-effect update switches and follow-effect destructor/reset/call wrappers reviewed through adjacent entries, emission branches, signed tick and release tests, scalar fields, literals and natural padding. Complete checked match twice; stage139.",
+      "status": "matched",
+      "reason": "Complete state update or follow-effect lifecycle; observed emissions, frame threshold, reset and release semantics preserved."
+    },
+    {
+      "id": "capture_follow_position",
+      "source": "src/provisional/capture_follow_position.c",
+      "address": "0x8c0a0828",
+      "entry": "_capture_follow_position",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/follow_effect.h"
+      ],
+      "ranges": [
+        {
+          "offset": 591912,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "capture_follow_position",
+          "address": "0x8c0a0828",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "25f83c6abb224fceea232bc55d2b99ff78395bf198ccf9078c7f9ac2109bb8f8",
+      "symbols": {},
+      "status": "parked",
+      "reason": "92 bytes /16 differing,first0x8c0a0841. Explicit scalar loads keep height in FR3 and Y in FR2; reference reverses them and changes address/add scheduling. Direct field expressions worsen to54 differences; compound Y accumulation reproduces baseline binary. Three distinct unsuccessful hypotheses.",
+      "unsuccessful_distinct_hypotheses": 3,
+      "hypothesis_limit": 10,
+      "revisit_when": "Independent exact vector construction/capture with the same height/Y/address lifetimes or verified inline/source context. Do not repeat scalar-to-compound spelling variants.",
+      "comparison": {
+        "name": "capture_follow_position-checked-0",
+        "size": 92,
+        "expected_size": 92,
+        "exact": false,
+        "differing_bytes": 16,
+        "first_difference": "0x8c0a0841",
+        "offsets": [
+          25,
+          27,
+          29,
+          32,
+          33,
+          39,
+          49,
+          50,
+          51,
+          52,
+          53,
+          56,
+          57,
+          60,
+          61,
+          66
+        ],
+        "source_sha256": "3f741cbdaf58ee869002ab130fbfc0929db88cca0826533ba8b23cd13dc4b77e",
+        "compiler_receipt_sha256": "87b31d2ace64ac136b9dff5d0e42046fa542b290505981d1414e1a3b5ccf654f"
+      }
     }
   ]
 }

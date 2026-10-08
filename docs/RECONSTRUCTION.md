@@ -6970,3 +6970,44 @@ copy. Earlier parked counts remain unchanged.
 Stage 137 commit cc45fef is published with successful remote checks. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue the matched initializers into their state updates and follow effects.
+
+
+## Short-effect updates and follow lifecycle, stage 139
+
+Five new complete matches replace **428 bytes**. Totals are **619 functions /
+561 modules / 57,720 compiled bytes / 4,105,192 retained reference bytes / 1.3865%
+whole-image coverage**. All 614 prior matches and source/header hashes are
+preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| update_short_effect_a05bc | 0x8c0a05bc | 96 |
+| update_short_effect_a06dc | 0x8c0a06dc | 180 |
+| destroy_follow_effect | 0x8c0a0790 | 68 |
+| refresh_follow_effect | 0x8c0a07d4 | 32 |
+| reset_follow_effect | 0x8c0a07f4 | 52 |
+
+All five first candidates match. The state updates emit four effects on state zero,
+then on state one increment signed ticks and set flag one after 60. The extended
+variant retains its third-emission Y offset of minus 15 and fourth type 13. The
+follow destructor preserves its signed-short release check. Refresh calls capture
+then update; reset stores distance 25, zeros fields 48/56 and calls capture then
+initialization. Accessed provisional prefixes and offsets are checked.
+
+Investigation-only: `capture_follow_position` at 0x8c0a0828 remains **92 bytes /16
+differing**, first 0x8c0a0841. Explicit scalar loads assign height and Y to opposite
+floating registers from the reference and alter address/add scheduling. Direct
+field expressions worsen to 54 differences. Applying stage137's compound
+accumulator pattern reproduces the baseline binary. Parked after three distinct
+hypotheses; revisit with independently exact vector construction/capture lifetimes
+or verified inline/source context. No matching credit is assigned.
+
+Nineteen snapshots form seven binary groups. Final admissions independently match
+twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,105,192 bytes without changing existing artifacts. Focused evidence validates
+on a disposable database copy. Earlier parked counts remain unchanged.
+
+Stage 138 commit cda8084 is published with successful remote checks. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue through follow-effect base initialization and matrix/vector dependencies.
