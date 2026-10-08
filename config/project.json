@@ -9543,6 +9543,58 @@
       "boundary_review": "Raw actor-state helpers reviewed through adjacent entries, signed accesses, switch branches, aggregate copy, return delays, literals and natural alignment. Full checked match twice; stage130."
     },
     {
+      "id": "run_actor_activation_callbacks",
+      "source": "src/objects/run_actor_activation_callbacks.cpp",
+      "address": "0x8c0c7eac",
+      "entry": "_run_actor_activation_callbacks",
+      "language": "c++",
+      "headers": [
+        "src/include/actor_callbacks.h"
+      ],
+      "ranges": [
+        {
+          "offset": 753324,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_actor_activation_callbacks",
+          "address": "0x8c0c7eac",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "3a175b91da5b8663b6f00384cbf1c2c691881f391a71f88cd7053bc1ce1205e0",
+      "symbols": {},
+      "boundary_review": "Raw actor callbacks, transition update, action jump table and idle event reviewed through adjacent entries, virtual ABI offsets, literals, branch delays and natural padding. Checked full match twice; stage131."
+    },
+    {
+      "id": "run_actor_release_callbacks",
+      "source": "src/objects/run_actor_release_callbacks.cpp",
+      "address": "0x8c0c7edc",
+      "entry": "_run_actor_release_callbacks",
+      "language": "c++",
+      "headers": [
+        "src/include/actor_callbacks.h"
+      ],
+      "ranges": [
+        {
+          "offset": 753372,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_actor_release_callbacks",
+          "address": "0x8c0c7edc",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "36f677aabcfdf9b2f2612563f11ca19d3b54d798a85162fd8b215b3ced0b1078",
+      "symbols": {},
+      "boundary_review": "Raw actor callbacks, transition update, action jump table and idle event reviewed through adjacent entries, virtual ABI offsets, literals, branch delays and natural padding. Checked full match twice; stage131."
+    },
+    {
       "id": "mark_actor_flag_2000",
       "source": "src/objects/mark_actor_flag_2000.c",
       "address": "0x8c0c7f0c",
@@ -9567,6 +9619,79 @@
       "reference_sha256": "b3fd6fb67e487b3667fa38e0569188a5c131a0d4d02e1d28f73bb417e4c0eaf9",
       "symbols": {},
       "boundary_review": "Raw actor-state helpers reviewed through adjacent entries, signed accesses, switch branches, aggregate copy, return delays, literals and natural alignment. Full checked match twice; stage130."
+    },
+    {
+      "id": "update_actor_transition",
+      "source": "src/objects/update_actor_transition.cpp",
+      "address": "0x8c0c7fc4",
+      "entry": "_update_actor_transition",
+      "headers": [
+        "src/include/actor_transitions.h"
+      ],
+      "ranges": [
+        {
+          "offset": 753604,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_actor_transition",
+          "address": "0x8c0c7fc4",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "953c77e8385fce0048942dabb7596026384157a9b617866d715c8b5021e760f8",
+      "symbols": {},
+      "language": "c++",
+      "boundary_review": "Raw actor callbacks, transition update, action jump table and idle event reviewed through adjacent entries, virtual ABI offsets, literals, branch delays and natural padding. Checked full match twice; stage131."
+    },
+    {
+      "id": "dispatch_actor_action",
+      "source": "src/objects/dispatch_actor_action.c",
+      "address": "0x8c0c8044",
+      "entry": "_dispatch_actor_action",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 753732,
+          "size": 140
+        }
+      ],
+      "functions": [
+        {
+          "name": "dispatch_actor_action",
+          "address": "0x8c0c8044",
+          "size": 140
+        }
+      ],
+      "reference_sha256": "4b2cd6c39cc990b82e9b1720148c4a385b2f937499c203ba5f1ee8f1decbef4b",
+      "symbols": {},
+      "linker": "codewarrior",
+      "boundary_review": "Raw actor callbacks, transition update, action jump table and idle event reviewed through adjacent entries, virtual ABI offsets, literals, branch delays and natural padding. Checked full match twice; stage131."
+    },
+    {
+      "id": "handle_actor_idle_event",
+      "source": "src/objects/handle_actor_idle_event.c",
+      "address": "0x8c0c80d0",
+      "entry": "_handle_actor_idle_event",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 753872,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "handle_actor_idle_event",
+          "address": "0x8c0c80d0",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "c06ef2f90ec22133a0a31a75adc3e13061bfc5b74a552c53ea0bc084e0e1f498",
+      "symbols": {},
+      "boundary_review": "Raw actor callbacks, transition update, action jump table and idle event reviewed through adjacent entries, virtual ABI offsets, literals, branch delays and natural padding. Checked full match twice; stage131."
     },
     {
       "id": "allocate_block",

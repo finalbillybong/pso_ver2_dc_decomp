@@ -6611,3 +6611,54 @@ Stage 129 commit a1b6643 is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into neighboring state-transition and virtual-call helpers.
+
+
+## Actor virtual callbacks and action dispatch, stage 131
+
+Five new exact functions replace **404 bytes** in five modules. Totals are
+**576 functions / 522 modules / 54,436 compiled bytes / 4,108,476 retained reference
+bytes**, or **1.3076% whole-image coverage**. All 571 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| run_actor_activation_callbacks | 0x8c0c7eac | 48 |
+| run_actor_release_callbacks | 0x8c0c7edc | 48 |
+| update_actor_transition | 0x8c0c7fc4 | 128 |
+| dispatch_actor_action | 0x8c0c8044 | 140 |
+| handle_actor_idle_event | 0x8c0c80d0 | 40 |
+
+The callback wrappers use observed actor vptr offset 24 and virtual-table offsets
+396/408 and 400/404. The transition updater uses the embedded interface at 1016,
+its vptr at 20 and callbacks 24/28. Checked C++ views reproduce implicit this
+adjustment and virtual dispatch. Separate flag clears and mutually exclusive
+activation/release branches remain intact. These three functions match first try.
+The idle-event switch also matches first try, including its explicit empty cases.
+
+The action dispatcher initially matches all instructions and literals except
+seven jump-table addresses. GNU drops the compiler's explicit RELA addends;
+the already-established pinned native linker resolves them exactly. The C source
+and compiler flags are unchanged. Both linker comparisons remain in scratch.
+
+Investigation-only work adds no completion credit: request_actor_activation
+is 44/12 differing (first 0x8c0c7df0), release_actor_activation is 48/52 bytes with
+42 differences (first 0x8c0c7e4a), activate_actor_state is 48/38 differing and
+deactivate_actor_state is 48/36 differing (both first differ at entry). Their
+persistent unsuccessful hypothesis counts are 3, 3, 4 and 4. Inline C pointer
+helpers and C++ flag-subobject methods repeat prior outputs. Genuine embedded
+virtual calls correctly reproduce the tail-call context but leave the first
+flag-address materialization unresolved (44/48 bytes). All four are parked early:
+revisit only with an independent exact field-address update pattern or verified
+source/ABI evidence. Precise offsets and checked comparisons are in the queue.
+
+Thirty-four snapshots form twelve binary groups. Five admissions independently
+match twice; four parked checked sources reproduce their best comparisons.
+Two fresh exact builds per checkout, integrated-image comparison, five-function
+proof, 53 research tests and 58 public tests pass. Source-only rejects 4,108,476
+bytes without changing build artifacts. Focused exports validate on a disposable
+copy. Prior parked targets retain their counts and revisit conditions.
+
+Stage 130 commit ca6706c is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into actor position reset and neighboring effects/helpers.
