@@ -3411,3 +3411,48 @@ manager initialization **280/8**, and signed remainder remains unresolved. The
 primary batch is still incomplete; supporting matches do not replace its
 acceptance criteria. Follow the newly resolved setup calls into their remaining
 initialization helpers while preserving these exact blocker receipts.
+
+
+## Initialization, cleanup and zero-fill wrappers, stage 66
+
+Seven complete ordinary-C functions add **416 bytes**: cleanup at **0x8c0c56b0**
+(40), **0x8c0c5750** (36), **0x8c0c57ec** (36) and **0x8c0c5888** (92), ordered
+initialization at **0x8c0c5b78** (164), and zero-fill wrappers at **0x8c03cee8**
+and **0x8c03cf00** (24 each). Totals are **279 functions / 257 modules / 28,624
+compiled full-range bytes / 4,134,288 retained reference bytes**, or **0.6876%
+whole-image coverage**. All 272 previous matches, module definitions and
+source/header hashes remain unchanged. Since the initial checkpoint, 245
+functions replace 24,980 bytes. Code-only completion remains unknown; separately
+reconstructed static data remains zero. Names remain provisional and address-based.
+
+Initialization preserves all fifteen ordered calls and the observed integer
+arguments. Cleanup preserves every repeated rendering call, the root-object
+address and the distinct resource teardown sequences. The two separate zero-fill
+entries preserve the same 576-byte buffer and tail-call behavior. A direct
+external zero-fill declaration fixes thirteen literal/register-selection bytes;
+no buffer contents are copied into source. All callee and static-data dependencies
+remain explicit reference dependence unless independently admitted elsewhere.
+
+Mode setup at **0x8c0c55f8..0x8c0c56b0** remains **184/10**, first **0x8c0c5619**;
+its counterpart at **0x8c0c56d8..0x8c0c5750** remains **120/10**, first
+**0x8c0c56f9**. Both preserve call order, global values and string offsets, but
+the paired mode/detail stores differ in register allocation and scheduling.
+Named mode/zero values, separate pointer lifetimes, external globals, inline
+setters, comma expressions and direct following-call declarations do not finish
+them. Combining both globals under one base incorrectly shortens each range by
+four bytes. Neither receives source credit. Raw callee entries were checked
+before changing declarations; no speculative mode argument was added.
+
+All **49 trials** retain source snapshots, hypotheses, compiler receipts and
+comparisons in `reconstruction-stage66`; none were compiler/linker rejections.
+Final sources match independently twice. Proposed identifiers, paths and intervals
+are checked before integration. Two fresh exact builds, integrated-image
+comparison, five-function proof and all **53 research tests** pass; the public
+suite remains **58 tests**. Source-only rejects 4,134,288 retained bytes without
+changing artifacts. Focused exports are regenerated after manifest/queue changes
+on a disposable copy and checked against current inputs; the original database
+remains unchanged. Compiler, base flags, default linker and full-range rules are
+unchanged. Original primary targets remain **512/30 and 388/8**, related reuse
+**448/4**, manager initialization **280/8**, and signed remainder unresolved.
+The primary batch is still incomplete; these supporting matches do not replace
+its acceptance criteria.

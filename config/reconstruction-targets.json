@@ -6382,6 +6382,185 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including complete literal pool and natural alignment; final source exact twice; reconstruction-stage65.",
       "status": "matched",
       "reason": "Complete provisional setup/update/cleanup wrapper or resource preparation/selection helper; static records and other callees receive no source credit."
+    },
+    {
+      "id": "operation_0c56b0",
+      "source": "src/runtime/operation_0c56b0.c",
+      "address": "0x8c0c56b0",
+      "entry": "_operation_0c56b0",
+      "ranges": [
+        {
+          "offset": 743088,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c56b0",
+          "address": "0x8c0c56b0",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "b53ae632fff23c45e49ff0fb91439c9412a70c7e08556d1551e05ab5a1f981df",
+      "symbols": {
+        "_operation_033878": "0x8c033878"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including all literal words and natural alignment; final source exact twice; reconstruction-stage66.",
+      "status": "matched",
+      "reason": "Complete initialization/cleanup or zero-fill wrapper; static data and remaining callees receive no credit."
+    },
+    {
+      "id": "operation_0c5750",
+      "source": "src/runtime/operation_0c5750.c",
+      "address": "0x8c0c5750",
+      "entry": "_operation_0c5750",
+      "ranges": [
+        {
+          "offset": 743248,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c5750",
+          "address": "0x8c0c5750",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "c2028475eb10424312a293ed0bb8402c12e874774dd60547dded86390e9a16e2",
+      "symbols": {
+        "_operation_033878": "0x8c033878"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including all literal words and natural alignment; final source exact twice; reconstruction-stage66.",
+      "status": "matched",
+      "reason": "Complete initialization/cleanup or zero-fill wrapper; static data and remaining callees receive no credit."
+    },
+    {
+      "id": "operation_0c57ec",
+      "source": "src/runtime/operation_0c57ec.c",
+      "address": "0x8c0c57ec",
+      "entry": "_operation_0c57ec",
+      "ranges": [
+        {
+          "offset": 743404,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c57ec",
+          "address": "0x8c0c57ec",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "c2028475eb10424312a293ed0bb8402c12e874774dd60547dded86390e9a16e2",
+      "symbols": {
+        "_operation_033878": "0x8c033878"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including all literal words and natural alignment; final source exact twice; reconstruction-stage66.",
+      "status": "matched",
+      "reason": "Complete initialization/cleanup or zero-fill wrapper; static data and remaining callees receive no credit."
+    },
+    {
+      "id": "operation_0c5888",
+      "source": "src/runtime/operation_0c5888.c",
+      "address": "0x8c0c5888",
+      "entry": "_operation_0c5888",
+      "ranges": [
+        {
+          "offset": 743560,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c5888",
+          "address": "0x8c0c5888",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "2b5bea8ab8db23fdc90992a37b8da2c4c662b87e955889e80135a76cca62f184",
+      "symbols": {
+        "_operation_033878": "0x8c033878"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including all literal words and natural alignment; final source exact twice; reconstruction-stage66.",
+      "status": "matched",
+      "reason": "Complete initialization/cleanup or zero-fill wrapper; static data and remaining callees receive no credit."
+    },
+    {
+      "id": "operation_0c5b78",
+      "source": "src/runtime/operation_0c5b78.c",
+      "address": "0x8c0c5b78",
+      "entry": "_operation_0c5b78",
+      "ranges": [
+        {
+          "offset": 744312,
+          "size": 164
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_0c5b78",
+          "address": "0x8c0c5b78",
+          "size": 164
+        }
+      ],
+      "reference_sha256": "e1e781f2c5ac4af410489e5dde59f41999617941665865b06ecdbf269d223e3d",
+      "boundary_review": "Raw SH4 entry through adjacent entry including all literal words and natural alignment; final source exact twice; reconstruction-stage66.",
+      "status": "matched",
+      "reason": "Complete initialization/cleanup or zero-fill wrapper; static data and remaining callees receive no credit."
+    },
+    {
+      "id": "operation_03cee8",
+      "source": "src/runtime/operation_03cee8.c",
+      "address": "0x8c03cee8",
+      "entry": "_operation_03cee8",
+      "ranges": [
+        {
+          "offset": 184040,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03cee8",
+          "address": "0x8c03cee8",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "d96cbe616a35521ebd21169ec3f65918cb00cd073150d11418fac6860aa52e78",
+      "symbols": {
+        "_clear_at": "0x8c12b880"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including all literal words and natural alignment; final source exact twice; reconstruction-stage66.",
+      "status": "matched",
+      "reason": "Complete initialization/cleanup or zero-fill wrapper; static data and remaining callees receive no credit."
+    },
+    {
+      "id": "operation_03cf00",
+      "source": "src/runtime/operation_03cf00.c",
+      "address": "0x8c03cf00",
+      "entry": "_operation_03cf00",
+      "ranges": [
+        {
+          "offset": 184064,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_03cf00",
+          "address": "0x8c03cf00",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "d96cbe616a35521ebd21169ec3f65918cb00cd073150d11418fac6860aa52e78",
+      "symbols": {
+        "_clear_at": "0x8c12b880"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including all literal words and natural alignment; final source exact twice; reconstruction-stage66.",
+      "status": "matched",
+      "reason": "Complete initialization/cleanup or zero-fill wrapper; static data and remaining callees receive no credit."
     }
   ]
 }

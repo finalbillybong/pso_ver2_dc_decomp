@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "18e1ce529911f9fa5e70149d01a3f9902c3fd65c9d8025107a9f62632e6bec23",
+    "config/project.json": "dcc427040d7df411903c5876368e632ee13adcb0aa4d66e0ab925611043d08d5",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -277,10 +277,17 @@
     "src/random/refresh_random_state.c": "18b7c7b9f22ffd6271889e4c45b1f28b02f926b2693662f6588cc61454a8ba2b",
     "src/random/seed_random_state.c": "0628ddc7fd7ac6ecdf71300098f25d3199eeb82e955db933ef2ff77c40219aac",
     "src/runtime/allocate_block.c": "26b0bf4edd80b832d938b35c9af840b2c171b122b65b9627f6f4811befb71abf",
+    "src/runtime/operation_03cee8.c": "33475b83cb02427d998f7eb523ddbe6bdb88f885d61855f20c6ce22461a523b6",
+    "src/runtime/operation_03cf00.c": "3f70f9e334592db7d6c3ae24bbff8098167b1784f25cfeb5f0439bd631eb752f",
     "src/runtime/operation_0c548c.c": "df05bb3faa307b1294f3b5f17e3dc32fa96f2815b1f384a3f69eb646d71b7c4b",
     "src/runtime/operation_0c5508.c": "8eb3217878b1adafad1cbb9b341d70fe204482782d7682945aafdd55dafa2f37",
     "src/runtime/operation_0c55a8.c": "6205390a05b2cda98f4238eccc49ad440d7486e072e55795a0ac4249fb9ce075",
     "src/runtime/operation_0c55b4.c": "963888667f6486548dedb44da3d4a69f1fc74f1a13b492016f205e8c81610a88",
+    "src/runtime/operation_0c56b0.c": "edebf6a5a5767243e01b0abab0866c14250af7ecd2189c975c6e1a13ca140658",
+    "src/runtime/operation_0c5750.c": "9bfb4e2db2df73a5dda142e00028a55b68b6763ec2864a27123fb912dabea5d7",
+    "src/runtime/operation_0c57ec.c": "1b34bce05a80e612de1394b7457dffb2fff1bf03f59e8fddd6380eb5ebc4e5e5",
+    "src/runtime/operation_0c5888.c": "c2582cb73ca9a5cb541188cbc75d4f5127d1c40a94902ab0ae4222eeb36f8e29",
+    "src/runtime/operation_0c5b78.c": "e3a5649b77d8aeb3623cdf25d89d1993b446bb79435906c5186b6538fb37fff1",
     "src/runtime/operation_0c6270.c": "0233ceef73656ead91ece062a332103bf3c8d9923c436a523f9b41c2f34a6ced",
     "src/runtime/operation_0c62d0.c": "635334d231390f58ade4e8c705352743cca73c69b4402e386a776a39c48329bb",
     "src/runtime/operation_0c62e0.c": "4e34d77d97061a7ed18cf395d879aa62031bbf81b7c59234e6523d3936558840",
@@ -1075,6 +1082,28 @@
       "-O2"
     ],
     "next_random_state": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_03cee8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_03cf00": [
       "-proc",
       "SH4",
       "-endian",
@@ -2748,6 +2777,61 @@
       "off",
       "-O2"
     ],
+    "operation_0c56b0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_0c5750": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_0c57ec": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_0c5888": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_0c5b78": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_0c6270": [
       "-proc",
       "SH4",
@@ -3092,6 +3176,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4134704,
+  "source_only_rejected_retained_bytes": 4134288,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }
