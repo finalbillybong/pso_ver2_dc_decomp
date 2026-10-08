@@ -16473,6 +16473,261 @@
         "source_sha256": "054923570dea362fd0575080d5163691957920be0cde84407a7be9899e2d21ed",
         "compiler_receipt_sha256": "75086d22a3c13532ad5ce6638f1e14d74444e88a04a0c4ca2ddd1b670ede6d79"
       }
+    },
+    {
+      "id": "create_effect_b55a0",
+      "source": "src/effects/create_effect_b55a0.c",
+      "address": "0x8c0b55a0",
+      "entry": "_create_effect_b55a0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 677280,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b55a0",
+          "address": "0x8c0b55a0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "8e9486d4c2e5c8c0b4650df343f7daeec3f688260be97384dff61e6861d4c1fb",
+      "symbols": {
+        "_initialize_at": "0x8c0b4d34"
+      },
+      "boundary_review": "Raw effect factories and operation wrappers reviewed through adjacent entries, stack fifth argument, tail-call forwarding, literal pools and natural alignment. Complete checked match twice; stage135.",
+      "status": "matched",
+      "reason": "Complete effect allocation factory or operation wrapper; preserve null-allocation return, initializer result and observed argument forwarding."
+    },
+    {
+      "id": "create_effect_b55f0",
+      "source": "src/effects/create_effect_b55f0.c",
+      "address": "0x8c0b55f0",
+      "entry": "_create_effect_b55f0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 677360,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b55f0",
+          "address": "0x8c0b55f0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "8e44f50962751dcf5e3337512f5ab4d5e97ddf14d0c71fa3b71023cda965189b",
+      "symbols": {
+        "_initialize_at": "0x8c0b5080"
+      },
+      "boundary_review": "Raw effect factories and operation wrappers reviewed through adjacent entries, stack fifth argument, tail-call forwarding, literal pools and natural alignment. Complete checked match twice; stage135.",
+      "status": "matched",
+      "reason": "Complete effect allocation factory or operation wrapper; preserve null-allocation return, initializer result and observed argument forwarding."
+    },
+    {
+      "id": "create_effect_b7684",
+      "source": "src/effects/create_effect_b7684.c",
+      "address": "0x8c0b7684",
+      "entry": "_create_effect_b7684",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 685700,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b7684",
+          "address": "0x8c0b7684",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "3cb681e22f041e847f9f058bff530687047f69d3fd4c10f21affbb43373a5854",
+      "symbols": {
+        "_initialize_at": "0x8c0b7080"
+      },
+      "boundary_review": "Raw effect factories and operation wrappers reviewed through adjacent entries, stack fifth argument, tail-call forwarding, literal pools and natural alignment. Complete checked match twice; stage135.",
+      "status": "matched",
+      "reason": "Complete effect allocation factory or operation wrapper; preserve null-allocation return, initializer result and observed argument forwarding."
+    },
+    {
+      "id": "create_effect_b7ca0",
+      "source": "src/effects/create_effect_b7ca0.c",
+      "address": "0x8c0b7ca0",
+      "entry": "_create_effect_b7ca0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 687264,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b7ca0",
+          "address": "0x8c0b7ca0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "daa6f088ae8ae63d681228d9353c3a454c1f440e51664d4fc41f0e42c2401015",
+      "symbols": {
+        "_initialize_at": "0x8c0b7860"
+      },
+      "boundary_review": "Raw effect factories and operation wrappers reviewed through adjacent entries, stack fifth argument, tail-call forwarding, literal pools and natural alignment. Complete checked match twice; stage135.",
+      "status": "matched",
+      "reason": "Complete effect allocation factory or operation wrapper; preserve null-allocation return, initializer result and observed argument forwarding."
+    },
+    {
+      "id": "create_effect_b7cf0",
+      "source": "src/effects/create_effect_b7cf0.c",
+      "address": "0x8c0b7cf0",
+      "entry": "_create_effect_b7cf0",
+      "headers": [],
+      "ranges": [
+        {
+          "offset": 687344,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_effect_b7cf0",
+          "address": "0x8c0b7cf0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "c6833b68843d656bf00c600f8bc5042814db2594c08b0b880b18bd02b743cb41",
+      "symbols": {
+        "_initialize_at": "0x8c0b7a68"
+      },
+      "boundary_review": "Raw effect factories and operation wrappers reviewed through adjacent entries, stack fifth argument, tail-call forwarding, literal pools and natural alignment. Complete checked match twice; stage135.",
+      "status": "matched",
+      "reason": "Complete effect allocation factory or operation wrapper; preserve null-allocation return, initializer result and observed argument forwarding."
+    },
+    {
+      "id": "run_effect_operation_5dbc",
+      "source": "src/effects/run_effect_operation_5dbc.c",
+      "address": "0x8c0b5d7c",
+      "entry": "_run_effect_operation_5dbc",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_operation_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 679292,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_effect_operation_5dbc",
+          "address": "0x8c0b5d7c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "5578dfe3de9dfe255319ab09be21673f4af4144db8d57d712c8aa03e7e7dbf76",
+      "symbols": {
+        "_operation_at": "0x8c0b5dbc"
+      },
+      "boundary_review": "Raw effect factories and operation wrappers reviewed through adjacent entries, stack fifth argument, tail-call forwarding, literal pools and natural alignment. Complete checked match twice; stage135.",
+      "status": "matched",
+      "reason": "Complete effect allocation factory or operation wrapper; preserve null-allocation return, initializer result and observed argument forwarding."
+    },
+    {
+      "id": "run_effect_operation_5f6c",
+      "source": "src/effects/run_effect_operation_5f6c.c",
+      "address": "0x8c0b5d9c",
+      "entry": "_run_effect_operation_5f6c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_operation_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 679324,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_effect_operation_5f6c",
+          "address": "0x8c0b5d9c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "990ad42e4410156b1b9e363f8f8b3046a82816e3da7c153e432e21281faa9123",
+      "symbols": {
+        "_operation_at": "0x8c0b5f6c"
+      },
+      "boundary_review": "Raw effect factories and operation wrappers reviewed through adjacent entries, stack fifth argument, tail-call forwarding, literal pools and natural alignment. Complete checked match twice; stage135.",
+      "status": "matched",
+      "reason": "Complete effect allocation factory or operation wrapper; preserve null-allocation return, initializer result and observed argument forwarding."
+    },
+    {
+      "id": "run_effect_operation_609c",
+      "source": "src/effects/run_effect_operation_609c.c",
+      "address": "0x8c0b5d3c",
+      "entry": "_run_effect_operation_609c",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_operation_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 679228,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_effect_operation_609c",
+          "address": "0x8c0b5d3c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "4921048c700fd2131e30c0556840315a87ea9d763cf41e516c19f6c3dbbe4d8c",
+      "symbols": {
+        "_operation_at": "0x8c0b609c"
+      },
+      "boundary_review": "Raw effect factories and operation wrappers reviewed through adjacent entries, stack fifth argument, tail-call forwarding, literal pools and natural alignment. Complete checked match twice; stage135.",
+      "status": "matched",
+      "reason": "Complete effect allocation factory or operation wrapper; preserve null-allocation return, initializer result and observed argument forwarding."
+    },
+    {
+      "id": "run_effect_operation_6174",
+      "source": "src/effects/run_effect_operation_6174.c",
+      "address": "0x8c0b5d5c",
+      "entry": "_run_effect_operation_6174",
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/effect_operation_view.h"
+      ],
+      "ranges": [
+        {
+          "offset": 679260,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_effect_operation_6174",
+          "address": "0x8c0b5d5c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "bd0040c9c8450c477da7780602c9f7b797b222f1415ac7c27739c9cfecd395e7",
+      "symbols": {
+        "_operation_at": "0x8c0b6174"
+      },
+      "boundary_review": "Raw effect factories and operation wrappers reviewed through adjacent entries, stack fifth argument, tail-call forwarding, literal pools and natural alignment. Complete checked match twice; stage135.",
+      "status": "matched",
+      "reason": "Complete effect allocation factory or operation wrapper; preserve null-allocation return, initializer result and observed argument forwarding."
     }
   ]
 }

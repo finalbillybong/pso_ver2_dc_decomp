@@ -6792,3 +6792,47 @@ Stage 133 commit 97ed799 is published and remote checks passed. Compiler setting
 original data, private saves and unrelated work remain preserved. Reproduce with
 `python3 -B tools/verify_source.py`, tests and expected source-only rejection.
 Continue into additional effect factories and their initialization dependencies.
+
+
+## Effect factories and operation wrappers, stage 135
+
+Nine new exact functions replace **528 bytes** in nine modules. Totals are
+**598 functions / 542 modules / 55,872 compiled bytes / 4,107,040 retained reference
+bytes**, or **1.3421% whole-image coverage**. All 589 preceding matches and their
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| create_effect_b55a0 | 0x8c0b55a0 | 80 |
+| create_effect_b55f0 | 0x8c0b55f0 | 80 |
+| run_effect_operation_609c | 0x8c0b5d3c | 32 |
+| run_effect_operation_6174 | 0x8c0b5d5c | 32 |
+| run_effect_operation_5dbc | 0x8c0b5d7c | 32 |
+| run_effect_operation_5f6c | 0x8c0b5d9c | 32 |
+| create_effect_b7684 | 0x8c0b7684 | 80 |
+| create_effect_b7ca0 | 0x8c0b7ca0 | 80 |
+| create_effect_b7cf0 | 0x8c0b7cf0 | 80 |
+
+All first candidates match. The factories preserve four opaque arguments, the
+stack-passed fifth initializer argument, null allocation return and initializer
+result. Observed allocation sizes are 404, 404, 344, 360 and 360 bytes. Their
+initializers remain reference-dependent; factory matches do not reconstruct them.
+
+Operation wrappers forward resource fields 248/260, vector addresses 204/216 and
+the original argument through exact tail calls. Accessed offsets and prefix size
+are checked. Following all four callees establishes that they return the shared
+result-buffer address. The provisional wrapper/callee return types were corrected
+to pointer and recompiled twice, preserving every byte. Both full-build/proof/test
+sequences and the focused export were then refreshed; earlier receipts remain in
+scratch. Unused forwarded parameters are not repurposed or removed.
+
+Thirty-five snapshots form nine binary groups. All final admissions independently
+match twice. Two fresh exact builds per checkout, integrated-image comparison,
+five-function proof, 53 research tests and 58 public tests pass. Source-only rejects
+4,107,040 bytes without changing artifacts. Focused exports validate on a disposable
+copy. All parked targets retain their counts and revisit conditions.
+
+Stage 134 commit 4a58f8f is published and remote checks passed. Compiler settings,
+original data, private saves and unrelated work remain preserved. Reproduce with
+`python3 -B tools/verify_source.py`, tests and expected source-only rejection.
+Continue into the operation wrappers' target scans and their vector dependencies.
