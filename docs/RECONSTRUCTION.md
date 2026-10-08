@@ -5887,3 +5887,53 @@ Reproduce with `python3 -B tools/verify_source.py`, run the current tests and ex
 `python3 -B tools/project.py build --source-only` to reject the gaps. Refresh public
 progress only after exact verification. Continue into the newly referenced transform
 callbacks and decomposition helper while respecting all parked-target blockers.
+
+
+## Transform decomposition and tree traversal, stage 115
+
+Eight new exact functions replace **728 bytes** in seven modules. Totals are
+**492 functions /440 modules /48,536 compiled bytes /4,114,376 retained reference
+bytes**, or **1.1659% whole-image coverage**. All484 preceding matches and prior
+source/header files remain unchanged. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| decompose_transform_state | 0x8c0c460c | 320 |
+| transform_vector_fallback | 0x8c0c474c | 4 |
+| transform_angle_fallback | 0x8c0c4750 | 4 |
+| set_transform_node_callback | 0x8c0c4754 | 12 |
+| draw_transform_tree | 0x8c0c4760 | 48 |
+| visit_transform_tree | 0x8c0c4790 | 180 |
+| prepare_transform_tree | 0x8c0c4844 | 32 |
+| walk_transform_tree | 0x8c0c4864 | 128 |
+
+The checked52-byte node includes flags0, resource4, position8, angles20, scale32,
+child44 and next48. The16-byte draw-dispatch prefix checks its callback at12.
+Decomposition preserves flag64's bypass path, optional callback outputs, ordered
+component copies, integer-angle fallback, flag32 result and final state call.
+The zero-return callbacks leave outputs untouched and request copying node fields.
+
+Both tree traversals are ordinary recursive C with a do/while sibling walk.
+The pinned compiler inlines one recursive level, reproducing both complete ranges.
+Each node pushes/applies the transform, invokes the optional node callback, optionally
+draws its resource when flag8 permits, visits children and pops before advancing.
+The nondrawing walk retains the same callback and matrix-stack behavior. The initial
+node remains assumed nonnull, matching the reference. Wrappers preserve float/input
+forwarding and install the draw callback in the observed call delay slot.
+
+Every first candidate matches; all final checked sources match independently twice.
+The two genuine adjacent zero-return callbacks occupy eight total bytes without
+padding or duplicate credit. Twenty-one snapshots form seven binary groups.
+Two fresh exact builds in each checkout, exact integrated image, five-function proof,
+53 research tests and58 public tests pass. Source-only rejects4,114,376 bytes without
+changing artifacts. Refreshed focused exports validate on a disposable database copy.
+
+No parked target is reopened and no investigation-only work is counted as coverage.
+Prior blockers and persistent hypothesis counts remain in the queue. Stage114
+commitddef31f is published and remote checks passed. Compiler settings, original data,
+private saves and unrelated workspace changes remain preserved; research is uncommitted.
+
+Reproduce with `python3 -B tools/verify_source.py`, the current test suite and expected
+source-only rejection. Public progress is recorded after exact verification, then
+reviewed/scanned public changes are committed and pushed. Continue into useful
+remaining effect and transform dependencies; successful checkpoints do not end work.

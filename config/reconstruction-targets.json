@@ -11861,6 +11861,207 @@
       "boundary_review": "Raw SH4 entries0x8c0c44c8/44f0/4590/460c bound40/160/124byte functions including return delays, literals and natural alignment; checked source exact twice; stage114.",
       "status": "matched",
       "reason": "Complete transform setup/helper source, including full literal pools; parked investigations receive no credit."
+    },
+    {
+      "id": "decompose_transform_state",
+      "source": "src/math/decompose_transform_state.c",
+      "address": "0x8c0c460c",
+      "entry": "_decompose_transform_state",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h",
+        "src/include/transform_state.h"
+      ],
+      "ranges": [
+        {
+          "offset": 738828,
+          "size": 320
+        }
+      ],
+      "functions": [
+        {
+          "name": "decompose_transform_state",
+          "address": "0x8c0c460c",
+          "size": 320
+        }
+      ],
+      "reference_sha256": "decc06919515f70998494a4bfe9423d802ffd2e85daaed372b32fa3b67c0b1e1",
+      "symbols": {},
+      "boundary_review": "Raw contiguous SH4 entries0x8c0c460c/474c/4750/4754/4760/4790/4844/4864/48e4 reviewed including return delays, literals and alignment. Complete checked source exact twice; stage115.",
+      "status": "matched",
+      "reason": "Complete transform decomposition, fallback or tree operation. Recursive C supplies observed inlining; no assembly or padding substitute."
+    },
+    {
+      "id": "transform_fallback_callbacks",
+      "source": "src/math/transform_fallback_callbacks.c",
+      "address": "0x8c0c474c",
+      "entry": "_transform_vector_fallback",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 739148,
+          "size": 8
+        }
+      ],
+      "functions": [
+        {
+          "name": "transform_vector_fallback",
+          "address": "0x8c0c474c",
+          "size": 4
+        },
+        {
+          "name": "transform_angle_fallback",
+          "address": "0x8c0c4750",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "9a4a9f98f8eb74674c018d2e7e61a4b1706473da0e877481cedb9a6314c9b42c",
+      "symbols": {},
+      "boundary_review": "Raw contiguous SH4 entries0x8c0c460c/474c/4750/4754/4760/4790/4844/4864/48e4 reviewed including return delays, literals and alignment. Complete checked source exact twice; stage115.",
+      "status": "matched",
+      "reason": "Complete transform decomposition, fallback or tree operation. Recursive C supplies observed inlining; no assembly or padding substitute."
+    },
+    {
+      "id": "set_transform_node_callback",
+      "source": "src/math/set_transform_node_callback.c",
+      "address": "0x8c0c4754",
+      "entry": "_set_transform_node_callback",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 739156,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_transform_node_callback",
+          "address": "0x8c0c4754",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "fd801f4d2932c6cb8311f8a80c34f9ca3bdda06c578211ef685c39aa42273f96",
+      "symbols": {},
+      "boundary_review": "Raw contiguous SH4 entries0x8c0c460c/474c/4750/4754/4760/4790/4844/4864/48e4 reviewed including return delays, literals and alignment. Complete checked source exact twice; stage115.",
+      "status": "matched",
+      "reason": "Complete transform decomposition, fallback or tree operation. Recursive C supplies observed inlining; no assembly or padding substitute."
+    },
+    {
+      "id": "draw_transform_tree",
+      "source": "src/math/draw_transform_tree.c",
+      "address": "0x8c0c4760",
+      "entry": "_draw_transform_tree",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 739168,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_transform_tree",
+          "address": "0x8c0c4760",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "1de7a01961fb91f608759070284a0cac37fab14f8514bf16279c8c9a68e9d85f",
+      "symbols": {},
+      "boundary_review": "Raw contiguous SH4 entries0x8c0c460c/474c/4750/4754/4760/4790/4844/4864/48e4 reviewed including return delays, literals and alignment. Complete checked source exact twice; stage115.",
+      "status": "matched",
+      "reason": "Complete transform decomposition, fallback or tree operation. Recursive C supplies observed inlining; no assembly or padding substitute."
+    },
+    {
+      "id": "visit_transform_tree",
+      "source": "src/math/visit_transform_tree.c",
+      "address": "0x8c0c4790",
+      "entry": "_visit_transform_tree",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 739216,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "visit_transform_tree",
+          "address": "0x8c0c4790",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "3c76dbe63cfd85432e2003506670966d1c23b39ebb0c64040e1741635c318491",
+      "symbols": {},
+      "boundary_review": "Raw contiguous SH4 entries0x8c0c460c/474c/4750/4754/4760/4790/4844/4864/48e4 reviewed including return delays, literals and alignment. Complete checked source exact twice; stage115.",
+      "status": "matched",
+      "reason": "Complete transform decomposition, fallback or tree operation. Recursive C supplies observed inlining; no assembly or padding substitute."
+    },
+    {
+      "id": "prepare_transform_tree",
+      "source": "src/math/prepare_transform_tree.c",
+      "address": "0x8c0c4844",
+      "entry": "_prepare_transform_tree",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 739396,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "prepare_transform_tree",
+          "address": "0x8c0c4844",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "37b161e5fc5f7f3b4578594696cb2887b2eeab1a42c062b90a137c41ec28574e",
+      "symbols": {},
+      "boundary_review": "Raw contiguous SH4 entries0x8c0c460c/474c/4750/4754/4760/4790/4844/4864/48e4 reviewed including return delays, literals and alignment. Complete checked source exact twice; stage115.",
+      "status": "matched",
+      "reason": "Complete transform decomposition, fallback or tree operation. Recursive C supplies observed inlining; no assembly or padding substitute."
+    },
+    {
+      "id": "walk_transform_tree",
+      "source": "src/math/walk_transform_tree.c",
+      "address": "0x8c0c4864",
+      "entry": "_walk_transform_tree",
+      "headers": [
+        "src/include/transform_node.h",
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 739428,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "walk_transform_tree",
+          "address": "0x8c0c4864",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "5f6f6a85396c530104a8aa34f122541aede279ae038903e39d6091797fcbbbc0",
+      "symbols": {},
+      "boundary_review": "Raw contiguous SH4 entries0x8c0c460c/474c/4750/4754/4760/4790/4844/4864/48e4 reviewed including return delays, literals and alignment. Complete checked source exact twice; stage115.",
+      "status": "matched",
+      "reason": "Complete transform decomposition, fallback or tree operation. Recursive C supplies observed inlining; no assembly or padding substitute."
     }
   ]
 }
