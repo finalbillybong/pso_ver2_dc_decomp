@@ -6135,3 +6135,43 @@ changes receive privacy scans before publication; research remains uncommitted.
 
 Reproduce with `python3 -B tools/verify_source.py`, the current test suite and expected
 source-only rejection. Continue into the blended transform preparation dependencies.
+
+
+## Blended transform preparation and decomposition, stage 120
+
+Three new exact functions replace **556 bytes** in three modules. Totals are
+**521 functions / 469 modules / 50,688 compiled bytes / 4,112,224 retained reference
+bytes**, or **1.2176% whole-image coverage**. All 518 preceding matches and prior
+sources/headers are preserved. Standalone reconstructed data remains zero.
+
+| Function | Address | Bytes |
+| --- | --- | ---: |
+| prepare_blended_transform | 0x8c0c40f8 | 72 |
+| decompose_blended_transform | 0x8c0c4140 | 360 |
+| apply_blended_transform | 0x8c0c42a8 | 124 |
+
+The checked 16-byte input contains two animation pointers and their frame values.
+Preparation selects state1 then state0, configures each input/frame and stores the
+blend amount. Decomposition preserves two 52-byte local transform groups, optional
+Euler conversion for each rotation kind, weighted position/scale components and the
+quaternion blend call. Application preserves the existing translation, rotation-kind
+switch and scale sequence with the alternate decomposition dependency.
+
+Preparation and application match on their first candidates. Decomposition initially
+has 360 bytes / 17 differences, all FR14/FR15 operands. Declaring inverse before amount,
+without changing evaluation order, assigns the observed saved floating registers and
+matches all 360 bytes. This does not establish the parked primary operation's separate
+FR1 reuse pattern; that target remains incomplete and is not reopened.
+
+Ten snapshots form four binary groups. Final checked sources match twice independently.
+Two fresh exact builds per checkout, exact integrated image, five-function proof,
+53 research tests and 58 public tests pass. Source-only rejects 4,112,224 bytes without
+altering artifacts. Refreshed focused exports validate on a disposable database copy.
+No investigation-only work is credited as additional completion.
+
+Stage 119 commit f701e39 is published and remote checks passed. Original data,
+private saves, compiler settings and unrelated work remain preserved. Only reviewed,
+privacy-scanned public changes are committed; research remains uncommitted.
+
+Reproduce with `python3 -B tools/verify_source.py`, the current test suite and expected
+source-only rejection. Continue into quaternion and matrix dependencies.

@@ -6653,6 +6653,85 @@
       "boundary_review": "Raw interpolation entries0x8c0c3d54/3dd0/3e38/3e8c/3f28 reviewed including signed-short deltas, conversion order, stack homes, literals and alignment. Complete checked source exact twice; stage118."
     },
     {
+      "id": "prepare_blended_transform",
+      "source": "src/math/prepare_blended_transform.c",
+      "address": "0x8c0c40f8",
+      "entry": "_prepare_blended_transform",
+      "headers": [
+        "src/include/blend_input.h"
+      ],
+      "ranges": [
+        {
+          "offset": 737528,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "prepare_blended_transform",
+          "address": "0x8c0c40f8",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "fbb43569df24c758e4f796ed13a3501eec1042bdb3278fcb412e297cb7d92afe",
+      "symbols": {},
+      "boundary_review": "Raw contiguous blended-transform entries0x8c0c40f8/4140/42a8/4324 reviewed including stack104/52 layouts, saved factors, conversion paths, call delays, literals and alignment. Complete checked source exact twice; stage120."
+    },
+    {
+      "id": "decompose_blended_transform",
+      "source": "src/math/decompose_blended_transform.c",
+      "address": "0x8c0c4140",
+      "entry": "_decompose_blended_transform",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 737600,
+          "size": 360
+        }
+      ],
+      "functions": [
+        {
+          "name": "decompose_blended_transform",
+          "address": "0x8c0c4140",
+          "size": 360
+        }
+      ],
+      "reference_sha256": "ca11e344a5a800bbe1760e5d17800ed69e5cd4ceaa67fe4cf5670295d9c08273",
+      "symbols": {
+        "_decompose_at": "0x8c0c460c"
+      },
+      "boundary_review": "Raw contiguous blended-transform entries0x8c0c40f8/4140/42a8/4324 reviewed including stack104/52 layouts, saved factors, conversion paths, call delays, literals and alignment. Complete checked source exact twice; stage120."
+    },
+    {
+      "id": "apply_blended_transform",
+      "source": "src/math/apply_blended_transform.c",
+      "address": "0x8c0c42a8",
+      "entry": "_apply_blended_transform",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "ranges": [
+        {
+          "offset": 737960,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_blended_transform",
+          "address": "0x8c0c42a8",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "a25e762661a80adc84d651953e730732676d640afe4482612166dff632cee2ae",
+      "symbols": {
+        "_decompose_at": "0x8c0c4140"
+      },
+      "boundary_review": "Raw contiguous blended-transform entries0x8c0c40f8/4140/42a8/4324 reviewed including stack104/52 layouts, saved factors, conversion paths, call delays, literals and alignment. Complete checked source exact twice; stage120."
+    },
+    {
       "id": "draw_blended_transform_tree",
       "source": "src/math/draw_blended_transform_tree.c",
       "address": "0x8c0c43d8",

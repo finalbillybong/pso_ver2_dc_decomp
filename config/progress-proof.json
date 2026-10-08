@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "5b59b5638e4befbfaec175dac2b12a2cddc360de87e382b1d239c3600844bf8c",
+    "config/project.json": "6873f29919038998799d7d744ac5dd00ee10a4f36c8e42c7dd647c52a2395ed7",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/apply_effect_manager_resource.c": "aee4fab8c051ef32af6a507b438f1532e7c37780e541cba0f84dfa7be5585b32",
@@ -128,6 +128,7 @@
     "src/include/angle_sample_record.h": "4c2d049aad38560d7914ae4686d141b31809ab0f34e84fd346e1a22edb2f4638",
     "src/include/base_child.h": "2f194f5eb4bdf3945285edb1fb162070454c6ded9fc6f6b7d4623f819a9dc389",
     "src/include/base_child_virtual.h": "f0abaabfcd7fac89d57fad39353d53eb093430fb2581f061c96b4ff6b55b3cd4",
+    "src/include/blend_input.h": "59ddda15ca91403883583dc76f6c76b806a828a34e37e21e1c314f47d9d9f3fc",
     "src/include/bounded_fields.h": "e54dbee96c0ffa0905f8a0d56b53cebe41478c0abcdb950e5a983ca607a7c6d5",
     "src/include/calls.h": "8e3c5662086bb0e4c2755748d1e7259592fff439ab2b420494ca2943241a0118",
     "src/include/child_render_data.h": "e8a9a1023252022a0fa3bbe2b6ac3ec299c93460172a565ab064ebf0667e3f5d",
@@ -229,6 +230,7 @@
     "src/math/angle_difference.c": "815de2106556eb2ab7953449876fbb544aaf4ab45056a97bfd5a8c58dbf53df8",
     "src/math/angle_fraction_step.c": "fac49baa2855884ef156fd3b1844e43b36d7a1c8c97fe790b8212839cb4ad09d",
     "src/math/angle_halfway.c": "566aef942ebe20d3c677ff0a433dd41f93bee2b96c74c2647d3eeca06431958c",
+    "src/math/apply_blended_transform.c": "e7d61d9372eaaddb2e08020b533a6ab68d7f50e020c3ca57cb20e6b4a39ef554",
     "src/math/apply_transform_state.c": "7b975c036dfedc96313e1e7c7d8107d76e2630323f432a1d8e627d5200a24507",
     "src/math/clear_motion_profile.c": "d5d5241ae305411294f266a748702fcb678e9d63e6dd07909173de2f1c0fcf26",
     "src/math/clear_running_profile.c": "c1bd6b8063a247d399977859058591205f24daaf3099bfd77fa3f7728f3ffa00",
@@ -238,6 +240,7 @@
     "src/math/construct_motion_profile.c": "47f8612520246c74fec92559726ebba254497c96c35994cd63181bb0c0e14c7b",
     "src/math/construct_running_profile.c": "0c6900228977421abec1ac9db83d1dad2b4b59277ae5b9b2caed9087359d440f",
     "src/math/cross_xz_negative.c": "8c00fdfc1e36c2e6b7a3175409fa34da182f334636dc9932e34c05fb0269fb81",
+    "src/math/decompose_blended_transform.c": "3999b3bc8081d004692e300e03ffc7ace7a6b8b74d530965f23fb89a9dd7baa3",
     "src/math/decompose_transform_state.c": "8668afd966e9d3c068e25e68b69e57736b4d1f44a8bc508d4e4214f6376cc7cb",
     "src/math/destroy_motion_profile.c": "afc21b0aaca0bf96deec8befbce9566ef763cbbd280f765101afc424b9cb74fa",
     "src/math/destroy_running_profile.c": "927ef6ac47e6ac23f51a212a7e5afc4df87035e3d695bd2cfdc8417fc5c1c019",
@@ -262,6 +265,7 @@
     "src/math/normalize_xz_checked.c": "e2455e0a2a245250270fc6f86e51432d01a7f6adc75cb30c14ff1930723288d1",
     "src/math/offset_vector_xz.c": "5aecb1d9c2763526cbf9e338f75db47ac016e8bedecfc1a94cd64a7912f88d46",
     "src/math/operation_172c14.c": "207c9d7267ede5ac77ef9eb3162f76262373967fa10eb32e7f0de4a7746edd74",
+    "src/math/prepare_blended_transform.c": "0b344382303dd880a18dced1619158d6f3be0720c14d1aaa6a66f00d671cc99d",
     "src/math/prepare_transform_state.c": "06a2c13586968a591504e5f41058fa728b25d8d414dedb3dfc3ea24b205f3683",
     "src/math/prepare_transform_tree.c": "75e5f85b6ef46678a93d839741c77f392e060a32d38dfe401a35f1013da097ca",
     "src/math/query_vector_position.c": "2f0ea19d6bfa1e8884265c0fc092c9617c8e40684e84d725ad2da4ec4a221abd",
@@ -3417,6 +3421,39 @@
       "off",
       "-O2"
     ],
+    "prepare_blended_transform": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "decompose_blended_transform": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "apply_blended_transform": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "draw_blended_transform_tree": [
       "-proc",
       "SH4",
@@ -5749,6 +5786,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4112780,
+  "source_only_rejected_retained_bytes": 4112224,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }
