@@ -3239,3 +3239,60 @@ Original operation/emission remain **512/30 and 388/8**, related reuse **448/4**
 manager initialization **280/8**, and the signed-remainder helper remains
 unresolved. The primary batch is still incomplete; supporting matches do not
 replace its acceptance criteria.
+
+
+## Child rendering, animation parameters and coordinates, stage 63
+
+Nine complete ordinary-C functions add **1,196 bytes**: coordinate preparation
+at **0x8c24eb10** (104), primary/secondary layers at **0x8c24eb78** (136) and
+**0x8c24ec00** (104), rectangle drawing at **0x8c24ec68** (156), child-B drawing
+at **0x8c24edd8** (200), animation parameters at **0x8c24eea0** (136), part loops
+at **0x8c24ef28** and **0x8c24ef68** (64 each), and part drawing at **0x8c24efa8**
+(232). Totals are **254 functions / 234 modules / 27,144 compiled full-range
+bytes / 4,135,768 retained reference bytes**, or **0.6520% whole-image coverage**.
+All 245 earlier matches, module definitions and source/header hashes remain
+unchanged. Since the initial checkpoint, 220 functions replace 23,500 bytes.
+Code-only completion remains unknown; separately reconstructed static data is zero.
+
+The animation routines preserve all observed segment boundaries, tick-to-float
+conversions and arithmetic order, including integer division before conversion
+in the initial alpha paths. The secondary layer's inverse range guard reproduces
+the branch directions; naming the elapsed-tick intermediate resolves its last
+21 differing bytes without changing arithmetic. Rectangle drawing preserves the
+64-by-85 dimensions, half-scale operations, unsigned packed alpha conversion,
+color call and rate. A direct external color declaration fixes both call timing
+and the destination-register allocation. Renderer calls remain dependencies.
+
+ChildRenderData checks all eight float offsets and its 32-byte size. ChildPart
+checks all six float offsets and its 24-byte table stride. Part drawing preserves
+the individual position and texture-coordinate operations and four divisions
+by 256. The one-/two-part loops remain counted loops; direct draw declarations
+fix callee-register selection. Their static records remain retained data.
+Coordinate preparation uses explicit eight-byte index shifts and integer base
+addresses before conversion to float pointers. Pointer-base variants differ by
+24 bytes; integer bases reproduce the complete register and literal schedule.
+No speculative bounds checks or behavior corrections are introduced.
+
+Child-A drawing at **0x8c24ea94..0x8c24eb10** remains **124/4**, first difference
+**0x8c24eac4**: the first layer call swaps the two argument MOV instructions,
+including its delay slot. Direct external, old-style, untyped and integer-this
+declarations, C++ member forms, scalar/array locals and inline call wrappers do
+not resolve it. Shared pointer lifetimes instead add an unwanted saved register.
+It receives no source credit; the successful lower-level routines do not hide it.
+
+All **75 trials** retain source snapshots, hypotheses and comparisons in
+`reconstruction-stage63`; successful compilations retain compiler receipts.
+Two C89 declaration-order rejections are recorded. All final readable sources
+and declared checked headers match independently twice. Two fresh exact builds,
+integrated-image comparison, five-function proof and all **53 research tests**
+pass; the public suite remains **58 tests**. Source-only rejects 4,135,768 retained
+bytes without changing artifacts. Focused exports are regenerated after the
+manifest/queue changes on a disposable copy and checked against current inputs;
+the original database remains unchanged. Compiler, base flags and full-range
+rules remain unchanged; all nine modules use the default GNU linker.
+
+Original operation/emission remain **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and the signed-remainder helper remains
+unresolved. The primary batch is still incomplete; these supporting matches do
+not replace its acceptance criteria. Next work revisits those original call and
+float scheduling blockers using the additional source-level evidence.

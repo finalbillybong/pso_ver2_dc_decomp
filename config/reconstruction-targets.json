@@ -5711,6 +5711,262 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and compiler alignment; final checked source exact twice; reconstruction-stage62.",
       "status": "matched",
       "reason": "Complete controller timeline or child lifecycle/tick routine; static data and unresolved display/base dependencies receive no source credit."
+    },
+    {
+      "id": "controller_child_parameters",
+      "source": "src/effects/controller_child_parameters.c",
+      "address": "0x8c24eea0",
+      "entry": "_controller_child_parameters",
+      "ranges": [
+        {
+          "offset": 2354848,
+          "size": 136
+        }
+      ],
+      "functions": [
+        {
+          "name": "controller_child_parameters",
+          "address": "0x8c24eea0",
+          "size": 136
+        }
+      ],
+      "headers": [
+        "src/include/controller_child.h"
+      ],
+      "reference_sha256": "d33de44e2a9dc7ba0d56199f56069b7c64afa9731141635ea75d8732aa4c79d8",
+      "symbols": {
+        "__l_divs": "0x8c18e768"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and natural alignment; final checked source exact twice; reconstruction-stage63.",
+      "status": "matched",
+      "reason": "Complete child rendering/parameter helper; static tables, renderer and runtime dependencies receive no source credit."
+    },
+    {
+      "id": "draw_controller_child_parts_a",
+      "source": "src/effects/draw_controller_child_parts_a.c",
+      "address": "0x8c24ef28",
+      "entry": "_draw_controller_child_parts_a",
+      "ranges": [
+        {
+          "offset": 2354984,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_controller_child_parts_a",
+          "address": "0x8c24ef28",
+          "size": 64
+        }
+      ],
+      "headers": [
+        "src/include/controller_child.h",
+        "src/include/child_render_data.h"
+      ],
+      "reference_sha256": "4d5010293ea1119aa09a8f4f85b54dbd7a7a75cacd2135f9c3e98e3e2d3d5e50",
+      "symbols": {
+        "_draw_at": "0x8c24efa8"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and natural alignment; final checked source exact twice; reconstruction-stage63.",
+      "status": "matched",
+      "reason": "Complete child rendering/parameter helper; static tables, renderer and runtime dependencies receive no source credit."
+    },
+    {
+      "id": "draw_controller_child_parts_b",
+      "source": "src/effects/draw_controller_child_parts_b.c",
+      "address": "0x8c24ef68",
+      "entry": "_draw_controller_child_parts_b",
+      "ranges": [
+        {
+          "offset": 2355048,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_controller_child_parts_b",
+          "address": "0x8c24ef68",
+          "size": 64
+        }
+      ],
+      "headers": [
+        "src/include/controller_child.h",
+        "src/include/child_render_data.h"
+      ],
+      "reference_sha256": "920c917690b1369f6e1364c948113d06309adefe0abdbb074ebe0435e8083a41",
+      "symbols": {
+        "_draw_at": "0x8c24efa8"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and natural alignment; final checked source exact twice; reconstruction-stage63.",
+      "status": "matched",
+      "reason": "Complete child rendering/parameter helper; static tables, renderer and runtime dependencies receive no source credit."
+    },
+    {
+      "id": "draw_child_primary_layer",
+      "source": "src/effects/draw_child_primary_layer.c",
+      "address": "0x8c24eb78",
+      "entry": "_draw_child_primary_layer",
+      "ranges": [
+        {
+          "offset": 2354040,
+          "size": 136
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_child_primary_layer",
+          "address": "0x8c24eb78",
+          "size": 136
+        }
+      ],
+      "headers": [
+        "src/include/controller_child.h",
+        "src/include/child_render_data.h"
+      ],
+      "reference_sha256": "7754645bc4445c05e6c6d15e859b437eb1478fee938a18f4b79a43064aa0ac60",
+      "symbols": {
+        "__l_divs": "0x8c18e768"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and natural alignment; final checked source exact twice; reconstruction-stage63.",
+      "status": "matched",
+      "reason": "Complete child rendering/parameter helper; static tables, renderer and runtime dependencies receive no source credit."
+    },
+    {
+      "id": "draw_child_part",
+      "source": "src/effects/draw_child_part.c",
+      "address": "0x8c24efa8",
+      "entry": "_draw_child_part",
+      "ranges": [
+        {
+          "offset": 2355112,
+          "size": 232
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_child_part",
+          "address": "0x8c24efa8",
+          "size": 232
+        }
+      ],
+      "headers": [
+        "src/include/controller_child.h",
+        "src/include/child_render_data.h"
+      ],
+      "reference_sha256": "f2b9e8e1b5c1526ed4e5059092b30bfecc4109745453158aa70a1115a062ffbf",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and natural alignment; final checked source exact twice; reconstruction-stage63.",
+      "status": "matched",
+      "reason": "Complete child rendering/parameter helper; static tables, renderer and runtime dependencies receive no source credit."
+    },
+    {
+      "id": "draw_controller_child_b",
+      "source": "src/effects/draw_controller_child_b.c",
+      "address": "0x8c24edd8",
+      "entry": "_draw_controller_child_b",
+      "ranges": [
+        {
+          "offset": 2354648,
+          "size": 200
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_controller_child_b",
+          "address": "0x8c24edd8",
+          "size": 200
+        }
+      ],
+      "headers": [
+        "src/include/controller_child.h"
+      ],
+      "reference_sha256": "694a50a79cad6c9a847b6adcb2845267934455e3c76555428506fa31a808ffb7",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and natural alignment; final checked source exact twice; reconstruction-stage63.",
+      "status": "matched",
+      "reason": "Complete child rendering/parameter helper; static tables, renderer and runtime dependencies receive no source credit."
+    },
+    {
+      "id": "draw_child_rectangle",
+      "source": "src/effects/draw_child_rectangle.c",
+      "address": "0x8c24ec68",
+      "entry": "_draw_child_rectangle",
+      "ranges": [
+        {
+          "offset": 2354280,
+          "size": 156
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_child_rectangle",
+          "address": "0x8c24ec68",
+          "size": 156
+        }
+      ],
+      "headers": [
+        "src/include/controller_child.h",
+        "src/include/child_render_data.h"
+      ],
+      "reference_sha256": "ee9576ba2cbb8912c1b72c388a62a707481f8096316f574d2a06d0bfbd18bb5c",
+      "symbols": {
+        "_color_at": "0x8c38b02e"
+      },
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and natural alignment; final checked source exact twice; reconstruction-stage63.",
+      "status": "matched",
+      "reason": "Complete child rendering/parameter helper; static tables, renderer and runtime dependencies receive no source credit."
+    },
+    {
+      "id": "draw_child_secondary_layer",
+      "source": "src/effects/draw_child_secondary_layer.c",
+      "address": "0x8c24ec00",
+      "entry": "_draw_child_secondary_layer",
+      "ranges": [
+        {
+          "offset": 2354176,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_child_secondary_layer",
+          "address": "0x8c24ec00",
+          "size": 104
+        }
+      ],
+      "headers": [
+        "src/include/controller_child.h",
+        "src/include/child_render_data.h"
+      ],
+      "reference_sha256": "22a83321ae6be71e7618ae1c2e36f7f20d5d42d0de5e975180ee84b4765c0037",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and natural alignment; final checked source exact twice; reconstruction-stage63.",
+      "status": "matched",
+      "reason": "Complete child rendering/parameter helper; static tables, renderer and runtime dependencies receive no source credit."
+    },
+    {
+      "id": "controller_child_coordinates",
+      "source": "src/effects/controller_child_coordinates.c",
+      "address": "0x8c24eb10",
+      "entry": "_controller_child_coordinates",
+      "ranges": [
+        {
+          "offset": 2353936,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "controller_child_coordinates",
+          "address": "0x8c24eb10",
+          "size": 104
+        }
+      ],
+      "headers": [
+        "src/include/controller_child.h",
+        "src/include/child_render_data.h"
+      ],
+      "reference_sha256": "dd33227fcba924d3e96575e8e1fa7c809568e4986fa50f92ae0886a2f976f882",
+      "boundary_review": "Raw SH4 entry through adjacent entry including literal pools and natural alignment; final checked source exact twice; reconstruction-stage63.",
+      "status": "matched",
+      "reason": "Complete child rendering/parameter helper; static tables, renderer and runtime dependencies receive no source credit."
     }
   ]
 }
