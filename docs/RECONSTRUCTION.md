@@ -4716,3 +4716,58 @@ matches do not replace those acceptance criteria. Static data and unmatched
 callees retain reference dependence. Compiler, base flags and complete-range
 comparison rules are unchanged. Publication retains default scanner rules and
 the single verified source-hash exception with its stage-75 detection control.
+
+
+## Notice record construction and dependencies, stage 91
+
+Three complete functions add **280 bytes**: record builder **0x8c194db0** (152),
+counter selection **0x8c1954bc** (76), and payload initializer **0x8c1c7dd4** (52).
+Totals are **427 functions / 379 modules / 40,728 compiled full-range bytes /
+4,122,184 retained reference bytes**, or **0.9784% whole-image coverage**.
+All 424 previous matches, module definitions and source/header hashes remain
+unchanged. Since the initial checkpoint, 393 functions replace 37,084 bytes.
+Code-only completion remains unknown; separately reconstructed static data is zero.
+
+The record builder initializes a 36-byte stack record with byte/halfword sentinels,
+zero floats and a 20-byte payload. It then assigns the supplied fields, copies
+the complete payload, selects its counter and submits the record. Writing the
+zero flag byte before the negative kind sentinel recovers the exact 152-byte
+range; the opposite order emits156. Checked views cover every field and both
+record sizes. The payload index passed to selection is signed, as the callee's
+raw comparisons establish.
+
+Counter selection keeps the mode check, strict signed lower/upper limits,
+unsigned-short narrowing of the shifted index, indexed comparison and conditional
+increment. Capturing the counter base before the index recovers the final five
+register-allocation bytes. External storage alone does not. The observed index
+access remains unchecked; no speculative bounds restriction is introduced.
+
+Payload initialization clears six individual bytes, three two-byte pairs and
+the final word, then stores the negative index sentinel. Ordinary pair indexing
+emits a multiply and54 bytes. Shifted addressing alone emits50. Independent byte
+column pointers produce52, and separate pointer lifetimes around each store
+recover the remaining six bytes. Register hints and reversed pointer declarations
+do not match. The original store order and loop condition are preserved.
+
+Actual nonvirtual C++ text methods, const methods and unused row-pointer return
+variants do not improve earlier text setup: **264/54** and **272/25** remain
+unadmitted. Three trials failed to link because the scratch declaration rewrite
+missed the race helper's C linkage. Corrected trials preserve the original free
+helper ABI and still do not improve matching; both failed and corrected snapshots
+remain available.
+
+All **38 trials** retain source snapshots, hypotheses and comparisons; three
+linker rejections retain their diagnostics. Successful compilations retain
+compiler receipts. Final checked sources match twice independently. Two fresh
+exact builds, integrated image comparison, five-function proof and all
+**53 research tests** pass; the public suite remains **58 tests**. Source-only
+rejects 4,122,184 retained bytes without changing artifacts. Focused exports are
+regenerated on a disposable copy and validated against current inputs; the
+original database remains unchanged.
+
+The primary batch remains incomplete: **512/30 and 388/8**, related reuse **448/4**,
+manager initialization **280/8**, and signed remainder unresolved. Supporting
+matches do not replace those acceptance criteria. Static data and unmatched
+callees retain reference dependence. Compiler, base flags and complete-range
+comparison rules are unchanged. Publication retains default scanner rules and
+the single verified source-hash exception with its stage-75 detection control.

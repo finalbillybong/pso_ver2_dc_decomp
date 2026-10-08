@@ -9889,6 +9889,81 @@
       "boundary_review": "Complete raw SH4 entry through adjacent entry including literals/alignment; paired12-word buffers; reconstruction-stage90.",
       "status": "matched",
       "reason": "Complete paired counter-buffer allocation, release, initialization, next-value or empty callback range."
+    },
+    {
+      "id": "operation_194db0",
+      "source": "src/objects/operation_194db0.c",
+      "address": "0x8c194db0",
+      "entry": "_operation_194db0",
+      "ranges": [
+        {
+          "offset": 1592752,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_194db0",
+          "address": "0x8c194db0",
+          "size": 152
+        }
+      ],
+      "reference_sha256": "a6b04b79ac0bdd384e12a51b975c89867fe28f3237e6ba93e9c03a75d979caad",
+      "headers": [
+        "src/include/widget_notice_record.h"
+      ],
+      "boundary_review": "Raw complete entry/adjacent boundaries reviewed;36-byte notice,20-byte payload, signed counter selector; reconstruction-stage91.",
+      "status": "matched",
+      "reason": "Complete record builder, payload initialization or signed counter-selection dependency; remaining callbacks and static data retain reference dependence."
+    },
+    {
+      "id": "operation_1954bc",
+      "source": "src/objects/operation_1954bc.c",
+      "address": "0x8c1954bc",
+      "entry": "_operation_1954bc",
+      "ranges": [
+        {
+          "offset": 1594556,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1954bc",
+          "address": "0x8c1954bc",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "52216b4f5104dac88e8450821d8c5fc1ac87b3e6f40b71db3151d66bbae13221",
+      "boundary_review": "Raw complete entry/adjacent boundaries reviewed;36-byte notice,20-byte payload, signed counter selector; reconstruction-stage91.",
+      "status": "matched",
+      "reason": "Complete record builder, payload initialization or signed counter-selection dependency; remaining callbacks and static data retain reference dependence."
+    },
+    {
+      "id": "operation_1c7dd4",
+      "source": "src/objects/operation_1c7dd4.c",
+      "address": "0x8c1c7dd4",
+      "entry": "_operation_1c7dd4",
+      "ranges": [
+        {
+          "offset": 1801684,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_1c7dd4",
+          "address": "0x8c1c7dd4",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "52c97959bfec406b9b51ca45df6dd4c5a97d59bec40a2968076e01d9a425023a",
+      "headers": [
+        "src/include/widget_notice_record.h"
+      ],
+      "boundary_review": "Raw complete entry/adjacent boundaries reviewed;36-byte notice,20-byte payload, signed counter selector; reconstruction-stage91.",
+      "status": "matched",
+      "reason": "Complete record builder, payload initialization or signed counter-selection dependency; remaining callbacks and static data retain reference dependence."
     }
   ]
 }
