@@ -1467,6 +1467,33 @@
       "boundary_review": "Raw SH4 complete entry ranges and adjacent boundaries, including natural inter-function alignment for four byte queries; checked source exact twice; reconstruction-stage74."
     },
     {
+      "id": "actor_matches_current_mode",
+      "source": "src/objects/actor_matches_current_mode.c",
+      "address": "0x8c02c148",
+      "entry": "_actor_matches_current_mode",
+      "symbols": {
+        "_enabled": "0x8c2e2ad8",
+        "_override_mode": "0x8c510ba0",
+        "_current_mode": "0x8c44be04",
+        "_read_at": "0x8c032b10"
+      },
+      "ranges": [
+        {
+          "offset": 115016,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "actor_matches_current_mode",
+          "address": "0x8c02c148",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "f04da50674d0dfd35e61c0d1c13754490f49d72d63c1fa5e99e15f0ecfb84916",
+      "boundary_review": "Each complete raw function, PC pools, delay slots and adjacent entry reviewed. Mode getter has no incoming arguments; preserve remap/global branch behavior, mode0/15 exclusions and unsigned11..14 range test."
+    },
+    {
       "id": "word_operation_8c02c32c",
       "source": "src/objects/word_operation_8c02c32c.c",
       "address": "0x8c02c32c",
@@ -1612,6 +1639,55 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "current_mode_active",
+      "source": "src/objects/current_mode_active.c",
+      "address": "0x8c032ad0",
+      "entry": "_current_mode_active",
+      "symbols": {
+        "_read_at": "0x8c032b10"
+      },
+      "ranges": [
+        {
+          "offset": 142032,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "current_mode_active",
+          "address": "0x8c032ad0",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "ebe0f78e45899ae33b69be1347b9f54523a506318f884249dca3333501721138",
+      "boundary_review": "Each complete raw function, PC pools, delay slots and adjacent entry reviewed. Mode getter has no incoming arguments; preserve remap/global branch behavior, mode0/15 exclusions and unsigned11..14 range test."
+    },
+    {
+      "id": "current_mode_property",
+      "source": "src/objects/current_mode_property.c",
+      "address": "0x8c032af0",
+      "entry": "_current_mode_property",
+      "symbols": {
+        "_read_at": "0x8c032b10",
+        "_properties": "0x8c284708"
+      },
+      "ranges": [
+        {
+          "offset": 142064,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "current_mode_property",
+          "address": "0x8c032af0",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "fb526f828c0f58fd4734a9264a71891d55c724b9fa61ef0821f3441ab608747d",
+      "boundary_review": "Each complete raw function, PC pools, delay slots and adjacent entry reviewed. Mode getter has no incoming arguments; preserve remap/global branch behavior, mode0/15 exclusions and unsigned11..14 range test."
+    },
+    {
       "id": "current_effect_mode",
       "source": "src/effects/current_mode.c",
       "address": "0x8c032b10",
@@ -1634,6 +1710,32 @@
         "src/include/context_mode_record.h"
       ],
       "boundary_review": "Raw SH4 entry through adjacent entry including literal pools/alignment; empty entry independently referenced at0x8c27e4ac. Final source exact twice; reconstruction-stage61."
+    },
+    {
+      "id": "current_mode_in_range",
+      "source": "src/objects/current_mode_in_range.c",
+      "address": "0x8c032b3c",
+      "entry": "_current_mode_in_range",
+      "symbols": {
+        "_remapped": "0x8c510ba4",
+        "_current_mode": "0x8c44be04",
+        "_mode_entries": "0x8c4e1950"
+      },
+      "ranges": [
+        {
+          "offset": 142140,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "current_mode_in_range",
+          "address": "0x8c032b3c",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "7783e388ec15868a1a795f6938d299cbb862b566cce932b6785d7640f098e7ab",
+      "boundary_review": "Each complete raw function, PC pools, delay slots and adjacent entry reviewed. Mode getter has no incoming arguments; preserve remap/global branch behavior, mode0/15 exclusions and unsigned11..14 range test."
     },
     {
       "id": "destroy_object_8c032e38",
@@ -3464,6 +3566,171 @@
       "boundary_review": "Raw entry, complete branches/pools, adjacent entry, destructor child-return ABI and field widths reviewed. Child identity not equal to global expected name clears stored child; preserve behavior."
     },
     {
+      "id": "spawn_actor_child_if_allowed",
+      "source": "src/objects/spawn_actor_child_if_allowed.c",
+      "address": "0x8c03b5ec",
+      "entry": "_spawn_actor_child_if_allowed",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be9c",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c03b668"
+      },
+      "ranges": [
+        {
+          "offset": 177644,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "spawn_actor_child_if_allowed",
+          "address": "0x8c03b5ec",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "983ac649af6b2af88a0d02e9798b2bda0c9e92c099d49169a07d4611b372edf4",
+      "boundary_review": "RawTST/BF/BT paths explicitly traced: flag-set or mode3/6 clears bit; otherwise allocate40 and construct with owner and signed16-bit identifier. Callee entry uses low16 identifier. All literals/next03b668 reviewed."
+    },
+    {
+      "id": "initialize_actor_child",
+      "source": "src/objects/initialize_actor_child.c",
+      "address": "0x8c03b668",
+      "entry": "_initialize_actor_child",
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_lookup_at": "0x8c021ef8",
+        "_find_at": "0x8c0a769c"
+      },
+      "ranges": [
+        {
+          "offset": 177768,
+          "size": 140
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_actor_child",
+          "address": "0x8c03b668",
+          "size": 140
+        }
+      ],
+      "reference_sha256": "091faf54efb8cba7e215b0b50c4acfe7e2fef1f29aefc1f9c153f28204707c4f",
+      "boundary_review": "Raw complete140bytes through pool03b6f0 and next03b6f4; self32-bit pointer home, flags16 at4, identifier16 at32 and child36 checked. Preserve no child flag when actor lookup itself is null."
+    },
+    {
+      "id": "destroy_actor_child",
+      "source": "src/objects/destroy_actor_child.c",
+      "address": "0x8c03b6f4",
+      "entry": "_destroy_actor_child",
+      "symbols": {
+        "_expected_name": "0x8c303bf0",
+        "_heap": "0x8c4d97e0",
+        "_base_at": "0x8c03311c",
+        "_free_at": "0x8c122774"
+      },
+      "ranges": [
+        {
+          "offset": 177908,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_actor_child",
+          "address": "0x8c03b6f4",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "6dc19f4b1399675bc910bacf174c88e9e9cd38ef4ce99d706bd784e501e82fee",
+      "boundary_review": "Raw all null/identity/release branches, callee ABIs, two dispatch literals, poolend03b768 and next03b76c reviewed. Equality retains child; do not invert TST/BF. Outer signed16 release controls heap free."
+    },
+    {
+      "id": "update_actor_child",
+      "source": "src/objects/update_actor_child.c",
+      "address": "0x8c03b76c",
+      "entry": "_update_actor_child",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_lookup_at": "0x8c021ef8",
+        "_active_at": "0x8c032ad0",
+        "_matches_at": "0x8c02c148",
+        "_move_at": "0x8c0a7608",
+        "_expected_name": "0x8c303bf0"
+      },
+      "ranges": [
+        {
+          "offset": 178028,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_actor_child",
+          "address": "0x8c03b76c",
+          "size": 160
+        }
+      ],
+      "reference_sha256": "30756098feb9831a547dcbac2f77b048c946cdd951fb73b297f38e874dd9e66b",
+      "boundary_review": "Every raw branch/delay/pool through03b808 and next03b80c checked. Dependencies current-mode-active and actor-mode-match now exact in scratch; move_at raw confirms child80..88 receives Vector3. Equality retains child. Null valid child causes no release flag."
+    },
+    {
+      "id": "create_timed_actor_child",
+      "source": "src/objects/create_timed_actor_child.c",
+      "address": "0x8c03b80c",
+      "entry": "_create_timed_actor_child",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44bea0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c03b844"
+      },
+      "ranges": [
+        {
+          "offset": 178188,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_timed_actor_child",
+          "address": "0x8c03b80c",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "c1a8f96e4e41570470adce0e7802a3fabcd0913afa2e197454c5868f4af711c5",
+      "boundary_review": "Raw full entries, all PC literals and adjacent boundaries reviewed; allocation40, constructor lookup/resource calls and setter offset50/unsigned sentinel checked. No speculative initialization."
+    },
+    {
+      "id": "initialize_timed_actor_child",
+      "source": "src/objects/initialize_timed_actor_child.c",
+      "address": "0x8c03b844",
+      "entry": "_initialize_timed_actor_child",
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_lookup_at": "0x8c021ef8",
+        "_find_at": "0x8c0a77e8",
+        "_set_at": "0x8c0a7628"
+      },
+      "ranges": [
+        {
+          "offset": 178244,
+          "size": 116
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_timed_actor_child",
+          "address": "0x8c03b844",
+          "size": 116
+        }
+      ],
+      "reference_sha256": "bab52ea7190d9c94c633b3aaab57aa30bea52d552682325c23818d42044620dd",
+      "boundary_review": "Raw full entries, all PC literals and adjacent boundaries reviewed; allocation40, constructor lookup/resource calls and setter offset50/unsigned sentinel checked. No speculative initialization."
+    },
+    {
       "id": "destroy_object_8c03b8b8",
       "source": "src/effects/destroy_object_8c03b8b8.c",
       "address": "0x8c03b8b8",
@@ -3488,6 +3755,208 @@
       ],
       "reference_sha256": "0af256b986072ad3d281c2efce739ff90440bbef555ce7e6a28d0e7215b314c4",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "update_timed_actor_child",
+      "source": "src/objects/update_timed_actor_child.c",
+      "address": "0x8c03b8fc",
+      "entry": "_update_timed_actor_child",
+      "symbols": {
+        "_lookup_at": "0x8c021ef8",
+        "_find_at": "0x8c0a77e8",
+        "_set_at": "0x8c0a7628"
+      },
+      "ranges": [
+        {
+          "offset": 178428,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_timed_actor_child",
+          "address": "0x8c03b8fc",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "f5912b71874707bbfd8aee6fb1ba5af390e15813af5682da403b86f3e2240288",
+      "boundary_review": "Each raw full range and adjacent entry reviewed. Timeout callback may receive null actor; idle callback intentionally dereferences lookup without guard. Factories return original allocation rather than constructor result. No behavior fixes or padding."
+    },
+    {
+      "id": "run_actor_callback_when_idle",
+      "source": "src/objects/run_actor_callback_when_idle.c",
+      "address": "0x8c03b958",
+      "entry": "_run_actor_callback_when_idle",
+      "symbols": {
+        "_lookup_at": "0x8c021ef8"
+      },
+      "ranges": [
+        {
+          "offset": 178520,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_actor_callback_when_idle",
+          "address": "0x8c03b958",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "848dd3839c22672961713606d91693b32731024731456689a40d19ee38d63eab",
+      "boundary_review": "Each raw full range and adjacent entry reviewed. Timeout callback may receive null actor; idle callback intentionally dereferences lookup without guard. Factories return original allocation rather than constructor result. No behavior fixes or padding."
+    },
+    {
+      "id": "create_actor_callback",
+      "source": "src/objects/create_actor_callback.c",
+      "address": "0x8c03b994",
+      "entry": "_create_actor_callback",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c03b9d4"
+      },
+      "ranges": [
+        {
+          "offset": 178580,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_actor_callback",
+          "address": "0x8c03b994",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "4808adb4ff15970998c4ea2b550b5211789e9e0fe1286a03aa06fe16f7aa62f5",
+      "boundary_review": "Each raw full range and adjacent entry reviewed. Timeout callback may receive null actor; idle callback intentionally dereferences lookup without guard. Factories return original allocation rather than constructor result. No behavior fixes or padding."
+    },
+    {
+      "id": "initialize_actor_callback",
+      "source": "src/objects/initialize_actor_callback.c",
+      "address": "0x8c03b9d4",
+      "entry": "_initialize_actor_callback",
+      "symbols": {
+        "_parent": "0x8c44be9c",
+        "_object_name": "0x8c2edf90",
+        "_base_at": "0x8c0330e4"
+      },
+      "ranges": [
+        {
+          "offset": 178644,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_actor_callback",
+          "address": "0x8c03b9d4",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "8a527c1a23281c4833f848106a23c75bf0502240fbdd7e1ee55d8229e7b130f4",
+      "boundary_review": "Each raw full range and adjacent entry reviewed. Timeout callback may receive null actor; idle callback intentionally dereferences lookup without guard. Factories return original allocation rather than constructor result. No behavior fixes or padding."
+    },
+    {
+      "id": "run_actor_callback_if_present",
+      "source": "src/objects/run_actor_callback_if_present.c",
+      "address": "0x8c03ba1c",
+      "entry": "_run_actor_callback_if_present",
+      "symbols": {
+        "_lookup_at": "0x8c021ef8"
+      },
+      "ranges": [
+        {
+          "offset": 178716,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_actor_callback_if_present",
+          "address": "0x8c03ba1c",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "ece4f571789df6b04bff7e4c2588dc91ba52b583fd8720a82423257d13bf2f04",
+      "boundary_review": "Each raw full range and adjacent entry reviewed. Timeout callback may receive null actor; idle callback intentionally dereferences lookup without guard. Factories return original allocation rather than constructor result. No behavior fixes or padding."
+    },
+    {
+      "id": "create_timed_actor_callback",
+      "source": "src/objects/create_timed_actor_callback.c",
+      "address": "0x8c03ba4c",
+      "entry": "_create_timed_actor_callback",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c03ba94"
+      },
+      "ranges": [
+        {
+          "offset": 178764,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_timed_actor_callback",
+          "address": "0x8c03ba4c",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "a485b067f9a1358da6deec5650d621012ba2ab532f66f8c8fc0be9c20670551d",
+      "boundary_review": "Each raw full range and adjacent entry reviewed. Timeout callback may receive null actor; idle callback intentionally dereferences lookup without guard. Factories return original allocation rather than constructor result. No behavior fixes or padding."
+    },
+    {
+      "id": "initialize_timed_actor_callback",
+      "source": "src/objects/initialize_timed_actor_callback.c",
+      "address": "0x8c03ba94",
+      "entry": "_initialize_timed_actor_callback",
+      "symbols": {
+        "_parent": "0x8c44be9c",
+        "_object_name": "0x8c2edf94",
+        "_base_at": "0x8c0330e4"
+      },
+      "ranges": [
+        {
+          "offset": 178836,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_timed_actor_callback",
+          "address": "0x8c03ba94",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "30c2ad302ee1629849ef1fd773ee41c029ee1fe38e4002a2e2b1da542b608ffa",
+      "boundary_review": "Each raw full range and adjacent entry reviewed. Timeout callback may receive null actor; idle callback intentionally dereferences lookup without guard. Factories return original allocation rather than constructor result. No behavior fixes or padding."
+    },
+    {
+      "id": "run_actor_callback_on_timeout",
+      "source": "src/objects/run_actor_callback_on_timeout.c",
+      "address": "0x8c03bae8",
+      "entry": "_run_actor_callback_on_timeout",
+      "symbols": {
+        "_lookup_at": "0x8c021ef8"
+      },
+      "ranges": [
+        {
+          "offset": 178920,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "run_actor_callback_on_timeout",
+          "address": "0x8c03bae8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "7c4562698d25f219ea2ab1fab64cc9c285935154bb0b9a6a60af96914fe36d60",
+      "boundary_review": "Each raw full range and adjacent entry reviewed. Timeout callback may receive null actor; idle callback intentionally dereferences lookup without guard. Factories return original allocation rather than constructor result. No behavior fixes or padding."
     },
     {
       "id": "destroy_object_8c03c1d0",
@@ -9024,6 +9493,35 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "initialize_category_flags",
+      "source": "src/objects/initialize_category_flags.c",
+      "address": "0x8c0985e8",
+      "entry": "_initialize_category_flags",
+      "headers": [],
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_player": "0x8c460900",
+        "_row_at": "0x8c034c7c",
+        "_limits": "0x8c2f5b38",
+        "_flag_at": "0x8c0356ac"
+      },
+      "ranges": [
+        {
+          "offset": 558568,
+          "size": 200
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_category_flags",
+          "address": "0x8c0985e8",
+          "size": 200
+        }
+      ],
+      "reference_sha256": "a367eae9e4691c5d347c3b9151ada32791c9f7c4e178a8d5cd644b1e33e1d1e9",
+      "boundary_review": "Complete raw instructions, delay slots, pools and adjacent entries reviewed; signed timer comparisons and shorts preserved. Table record stride44 is observed;22-short row is provisional. Fields52/64 left untouched."
+    },
+    {
       "id": "destroy_object_8c0986b0",
       "source": "src/effects/destroy_object_8c0986b0.c",
       "address": "0x8c0986b0",
@@ -9048,6 +9546,33 @@
       ],
       "reference_sha256": "be9b2f57b5ab69f370ff8e03880cacad561b14de1a01774d4483b920e3777692",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_related_object_8c0986f4",
+      "source": "src/objects/create_related_object_8c0986f4.c",
+      "address": "0x8c0986f4",
+      "entry": "_create_related_object_8c0986f4",
+      "headers": [],
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c0985e8"
+      },
+      "ranges": [
+        {
+          "offset": 558836,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_related_object_8c0986f4",
+          "address": "0x8c0986f4",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "c87dce71b54c5403f89a7cdb0dfe9e90020d2efd80d73a58960b5181eb5cbb41",
+      "boundary_review": "Full instruction mask matches proven create_actor_callback, including delay/padding; all pool addresses and adjacent entries reviewed. Callee stores third argument as32-bit category40, uses it as integer table index and flag-query category."
     },
     {
       "id": "destroy_object_8c098d54",
@@ -15078,6 +15603,33 @@
       ],
       "reference_sha256": "ddab3a80c9de2b9c6672f9982462be8f21199c5e196483baf9bdb8e29349ecc7",
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62fc62fb62f. No empty neighboring function included."
+    },
+    {
+      "id": "create_related_effect_8c0bc17c",
+      "source": "src/objects/create_related_effect_8c0bc17c.c",
+      "address": "0x8c0bc17c",
+      "entry": "_create_related_effect_8c0bc17c",
+      "headers": [],
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c0bc1c4"
+      },
+      "ranges": [
+        {
+          "offset": 704892,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_related_effect_8c0bc17c",
+          "address": "0x8c0bc17c",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "6b6a72b58db18987c8c89e7fff1ca561ac7b3f64d255422f785c7e33f450de97",
+      "boundary_review": "Full fixed instruction mask, saved registers, delays, padding and adjacent constructor reviewed. Callee scans signed-byte sentinel records with24/20-byte strides."
     },
     {
       "id": "word_operation_8c0bf858",
@@ -24127,6 +24679,59 @@
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f224f4360. No empty neighboring function included."
     },
     {
+      "id": "create_related_effect_8c140848",
+      "source": "src/objects/create_related_effect_8c140848.c",
+      "address": "0x8c140848",
+      "entry": "_create_related_effect_8c140848",
+      "headers": [],
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c140890"
+      },
+      "ranges": [
+        {
+          "offset": 1247304,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_related_effect_8c140848",
+          "address": "0x8c140848",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "eb9621ec262ea024a6b0aff2f29c43d2d844d1d5480e64b69b04990179481ab8",
+      "boundary_review": "Full fixed instruction mask, saved registers, delays, padding and adjacent constructor reviewed. Callee stores full argument words at36 and40."
+    },
+    {
+      "id": "initialize_pair_context_effect",
+      "source": "src/objects/initialize_pair_context_effect.c",
+      "address": "0x8c140890",
+      "entry": "_initialize_pair_context_effect",
+      "headers": [],
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c314798"
+      },
+      "ranges": [
+        {
+          "offset": 1247376,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_pair_context_effect",
+          "address": "0x8c140890",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "ab49d67fdebc1e7efddcfed0048feafaac9d6e04cbcbba3568d6052df048815b",
+      "boundary_review": "Raw complete body/pool/adjacent entries reviewed; signed random conversion and switch default leaving fields untouched preserved. All provisional fields offset-checked; decimal floats round-trip observed pool words."
+    },
+    {
       "id": "destroy_object_8c140b8c",
       "source": "src/effects/destroy_object_8c140b8c.c",
       "address": "0x8c140b8c",
@@ -32038,6 +32643,59 @@
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
+      "id": "create_related_object_8c1b30c4",
+      "source": "src/objects/create_related_object_8c1b30c4.c",
+      "address": "0x8c1b30c4",
+      "entry": "_create_related_object_8c1b30c4",
+      "headers": [],
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c1b3104"
+      },
+      "ranges": [
+        {
+          "offset": 1716420,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_related_object_8c1b30c4",
+          "address": "0x8c1b30c4",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "ac64e4fb3859a570a669b0241387f9543097d7a98520d1ebbf0a7866fe1eff26",
+      "boundary_review": "Full instruction mask matches proven create_actor_callback, including delay/padding; all pool addresses and adjacent entries reviewed. Callee copies exactly44 bytes from third pointer argument into object32..75."
+    },
+    {
+      "id": "initialize_record_effect",
+      "source": "src/objects/initialize_record_effect.c",
+      "address": "0x8c1b3104",
+      "entry": "_initialize_record_effect",
+      "headers": [],
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c3266f0"
+      },
+      "ranges": [
+        {
+          "offset": 1716484,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_record_effect",
+          "address": "0x8c1b3104",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "ba69879829005772043b4695426e8f8475b2e12f0ff4b6f3d4c7aa757c4df6df",
+      "boundary_review": "All raw instructions, delay slots, pools and adjacent entries reviewed. Offset checks preserve observed signed timers and vector/record placement. Integer-angle calls use GPR input and FR0 output; no guessed trig identity."
+    },
+    {
       "id": "destroy_object_8c1b3158",
       "source": "src/effects/destroy_object_8c1b3158.c",
       "address": "0x8c1b3158",
@@ -32062,6 +32720,29 @@
       ],
       "reference_sha256": "26484d73689b219499eba28def4831b52d94dafab1c991cc1644c03a3904bc2d",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "update_record_effect_timer",
+      "source": "src/objects/update_record_effect_timer.c",
+      "address": "0x8c1b319c",
+      "entry": "_update_record_effect_timer",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1716636,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_record_effect_timer",
+          "address": "0x8c1b319c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "7c434bdbf033a3f525856631ace8dc8012dee57d4aa4fd420076b73887085326",
+      "boundary_review": "All raw instructions, delay slots, pools and adjacent entries reviewed. Offset checks preserve observed signed timers and vector/record placement. Integer-angle calls use GPR input and FR0 output; no guessed trig identity."
     },
     {
       "id": "refresh_follow_effect_8c1b3c60",
@@ -34675,6 +35356,293 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_related_object_8c21aeb4",
+      "source": "src/objects/create_related_object_8c21aeb4.c",
+      "address": "0x8c21aeb4",
+      "entry": "_create_related_object_8c21aeb4",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c21aef4"
+      },
+      "ranges": [
+        {
+          "offset": 2141876,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_related_object_8c21aeb4",
+          "address": "0x8c21aeb4",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "a1b0a58a734e3cfc30a975212a850ca8dfcfb0228cc360b4ba402efcecf510b8",
+      "boundary_review": "Full instruction mask matches proven create_actor_callback, including delay/padding; all pool addresses and adjacent entries reviewed. Callee copies three-word vector to32..43, then adds300 to its y coordinate."
+    },
+    {
+      "id": "initialize_raised_position_effect",
+      "source": "src/objects/initialize_raised_position_effect.c",
+      "address": "0x8c21aef4",
+      "entry": "_initialize_raised_position_effect",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c33640c",
+        "_find_at": "0x8c0a769c",
+        "_set_at": "0x8c0a763c"
+      },
+      "ranges": [
+        {
+          "offset": 2141940,
+          "size": 140
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_raised_position_effect",
+          "address": "0x8c21aef4",
+          "size": 140
+        }
+      ],
+      "reference_sha256": "31471e686d45f964e4af97b3a56370f4f437b4d900b4aa085d0ef9b5410025d8",
+      "boundary_review": "All raw instructions, delay slots, pools and adjacent entries reviewed. Offset checks preserve observed signed timers and vector/record placement. Integer-angle calls use GPR input and FR0 output; no guessed trig identity."
+    },
+    {
+      "id": "destroy_raised_position_effect",
+      "source": "src/objects/destroy_raised_position_effect.c",
+      "address": "0x8c21af80",
+      "entry": "_destroy_raised_position_effect",
+      "headers": [],
+      "symbols": {
+        "_cleanup_at": "0x8c0a7bb0",
+        "_base_at": "0x8c03311c",
+        "_free_at": "0x8c122774",
+        "_heap": "0x8c4d97e0"
+      },
+      "ranges": [
+        {
+          "offset": 2142080,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_raised_position_effect",
+          "address": "0x8c21af80",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "12e57df539f1680a4ac60f5643bd6587def6f76ca4c9b9b5fb5753d9f2facd38",
+      "boundary_review": "Full raw instructions/delay slots/pools and adjacent entries reviewed. Constructor allocation72 and fields44/48/52/56/60 observed; destructors release child48 before base, no extra initialization."
+    },
+    {
+      "id": "update_raised_position_effect",
+      "source": "src/objects/update_raised_position_effect.c",
+      "address": "0x8c21afd4",
+      "entry": "_update_raised_position_effect",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_move_at": "0x8c0a7608",
+        "_first_at": "0x8c1ae2e4",
+        "_second_at": "0x8c1ae314"
+      },
+      "ranges": [
+        {
+          "offset": 2142164,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_raised_position_effect",
+          "address": "0x8c21afd4",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "01a813a0872fcaa76766a7e3bbf0222ddd88b28a82b1c1d78c4cb80b17d7a50b",
+      "boundary_review": "Complete raw instructions, delay slots, pools and adjacent entries reviewed; signed timer comparisons and shorts preserved. Table record stride44 is observed;22-short row is provisional. Fields52/64 left untouched."
+    },
+    {
+      "id": "create_following_position_effect",
+      "source": "src/objects/create_following_position_effect.c",
+      "address": "0x8c21b030",
+      "entry": "_create_following_position_effect",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c21b078"
+      },
+      "ranges": [
+        {
+          "offset": 2142256,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_following_position_effect",
+          "address": "0x8c21b030",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "d7091db8fcd63ca57464bda28013eb10a759861d6daf88e00977db3f37265c26",
+      "boundary_review": "Full raw instructions/delay slots/pools and adjacent entries reviewed. Constructor allocation72 and fields44/48/52/56/60 observed; destructors release child48 before base, no extra initialization."
+    },
+    {
+      "id": "initialize_following_position_effect",
+      "source": "src/objects/initialize_following_position_effect.c",
+      "address": "0x8c21b078",
+      "entry": "_initialize_following_position_effect",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c336410"
+      },
+      "ranges": [
+        {
+          "offset": 2142328,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_following_position_effect",
+          "address": "0x8c21b078",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "02cbd925dec739b3585d95cd35b6746bbc547db4f35d70871421e302bb2ed175",
+      "boundary_review": "Full raw instructions/delay slots/pools and adjacent entries reviewed. Constructor allocation72 and fields44/48/52/56/60 observed; destructors release child48 before base, no extra initialization."
+    },
+    {
+      "id": "destroy_following_position_effect",
+      "source": "src/objects/destroy_following_position_effect.c",
+      "address": "0x8c21b0d0",
+      "entry": "_destroy_following_position_effect",
+      "headers": [],
+      "symbols": {
+        "_cleanup_at": "0x8c0a7bb0",
+        "_base_at": "0x8c03311c",
+        "_free_at": "0x8c122774",
+        "_heap": "0x8c4d97e0"
+      },
+      "ranges": [
+        {
+          "offset": 2142416,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_following_position_effect",
+          "address": "0x8c21b0d0",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "12204084344a139787a094ecc8d7bc4d246fba2936f6dd399d99510b677d587d",
+      "boundary_review": "Full raw instructions/delay slots/pools and adjacent entries reviewed. Constructor allocation72 and fields44/48/52/56/60 observed; destructors release child48 before base, no extra initialization."
+    },
+    {
+      "id": "create_related_effect_8c21b264",
+      "source": "src/objects/create_related_effect_8c21b264.c",
+      "address": "0x8c21b264",
+      "entry": "_create_related_effect_8c21b264",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c21b2ac"
+      },
+      "ranges": [
+        {
+          "offset": 2142820,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_related_effect_8c21b264",
+          "address": "0x8c21b264",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "22141ba6ae5d79ec2098219eb2dcdfdaed09b7bee85004491a4c69ed16131524",
+      "boundary_review": "Full fixed instruction mask, saved registers, delays, padding and adjacent constructor reviewed. Callee copies vectors from both pointer arguments to32 and44."
+    },
+    {
+      "id": "create_related_object_8c21b564",
+      "source": "src/objects/create_related_object_8c21b564.c",
+      "address": "0x8c21b564",
+      "entry": "_create_related_object_8c21b564",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c21b5a4"
+      },
+      "ranges": [
+        {
+          "offset": 2143588,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_related_object_8c21b564",
+          "address": "0x8c21b564",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "de46b27e0d45154709a2b5c24987d9d440567aee0122d20dd29bba96a721268a",
+      "boundary_review": "Full instruction mask matches proven create_actor_callback, including delay/padding; all pool addresses and adjacent entries reviewed. Callee copies three-word vector to36..47."
+    },
+    {
+      "id": "initialize_delayed_position_effect",
+      "source": "src/objects/initialize_delayed_position_effect.c",
+      "address": "0x8c21b5a4",
+      "entry": "_initialize_delayed_position_effect",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c336418"
+      },
+      "ranges": [
+        {
+          "offset": 2143652,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_delayed_position_effect",
+          "address": "0x8c21b5a4",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "f87b95ac8f76888948cb3c8be71b2a8b8c030692f6453573ba90f762b9c7db97",
+      "boundary_review": "All raw instructions, delay slots, pools and adjacent entries reviewed. Offset checks preserve observed signed timers and vector/record placement. Integer-angle calls use GPR input and FR0 output; no guessed trig identity."
+    },
+    {
       "id": "destroy_object_8c21b5ec",
       "source": "src/effects/destroy_object_8c21b5ec.c",
       "address": "0x8c21b5ec",
@@ -34699,6 +35667,90 @@
       ],
       "reference_sha256": "590d444864150e81ec6ced459cd248d3ed5c0354129031f1ebd80631fd70d6de",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "update_delayed_position_effect",
+      "source": "src/objects/update_delayed_position_effect.c",
+      "address": "0x8c21b630",
+      "entry": "_update_delayed_position_effect",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_emit_at": "0x8c0a777c"
+      },
+      "ranges": [
+        {
+          "offset": 2143792,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_delayed_position_effect",
+          "address": "0x8c21b630",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "c2881dd80c1a722e7c62d3f995c8a3a25bc5450c46de9121f263ca6befe9007b",
+      "boundary_review": "All raw instructions, delay slots, pools and adjacent entries reviewed. Offset checks preserve observed signed timers and vector/record placement. Integer-angle calls use GPR input and FR0 output; no guessed trig identity."
+    },
+    {
+      "id": "create_related_object_8c21b658",
+      "source": "src/objects/create_related_object_8c21b658.c",
+      "address": "0x8c21b658",
+      "entry": "_create_related_object_8c21b658",
+      "headers": [],
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c21b698"
+      },
+      "ranges": [
+        {
+          "offset": 2143832,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_related_object_8c21b658",
+          "address": "0x8c21b658",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "1e9a906bfeb74629ab6e70dda2b26ab184f3a8813ecd9cb99908003ee42306a0",
+      "boundary_review": "Full instruction mask matches proven create_actor_callback, including delay/padding; all pool addresses and adjacent entries reviewed. Callee forwards third GPR to integer-angle scalar math routines before storing float results."
+    },
+    {
+      "id": "initialize_angle_position_effect",
+      "source": "src/objects/initialize_angle_position_effect.c",
+      "address": "0x8c21b698",
+      "entry": "_initialize_angle_position_effect",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c33641c",
+        "_first_angle_at": "0x8c37eb0c",
+        "_second_angle_at": "0x8c38c154"
+      },
+      "ranges": [
+        {
+          "offset": 2143896,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_angle_position_effect",
+          "address": "0x8c21b698",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "8b0b408495627058a726f97a48893cc37ea14f46347da541062738037366e7a6",
+      "boundary_review": "All raw instructions, delay slots, pools and adjacent entries reviewed. Offset checks preserve observed signed timers and vector/record placement. Integer-angle calls use GPR input and FR0 output; no guessed trig identity."
     },
     {
       "id": "destroy_object_8c21b71c",
@@ -34727,6 +35779,34 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "emit_raised_ring_particle",
+      "source": "src/objects/emit_raised_ring_particle.c",
+      "address": "0x8c21b854",
+      "entry": "_emit_raised_ring_particle",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_emit_at": "0x8c0a777c",
+        "_set_at": "0x8c0a763c"
+      },
+      "ranges": [
+        {
+          "offset": 2144340,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "emit_raised_ring_particle",
+          "address": "0x8c21b854",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "8aec5cc5772268d75a3f2d07be357e4f9b30efea2bde03ba9f5f3fdb01509e29",
+      "boundary_review": "Full raw instructions/delay slots/pools and adjacent entries reviewed. Constructor allocation72 and fields44/48/52/56/60 observed; destructors release child48 before base, no extra initialization."
+    },
+    {
       "id": "spawn_effect_alt_8c21b968",
       "source": "src/effects/spawn_effect_alt_8c21b968.c",
       "address": "0x8c21b968",
@@ -34748,6 +35828,59 @@
       "reference_sha256": "d6d083eb1864776e92f10bf7add008322747473f3d61109dfcce83b3601f2ea1",
       "symbols": {},
       "boundary_review": "Reviewed complete 76-byte allocation-wrapper raw range against proven spawn_effect_alt: saved R14/R13/R12/R11 and PR, heap/size pool load, allocation null guard, preserved three incoming pointer arguments passed to four-argument initializer, returned object and full four-word pool. Only observed heap/size/allocator/initializer words vary. All eight entries have catalog or aligned reference evidence and reviewed valid adjacent entry prologues. No shortened comparison or padding added."
+    },
+    {
+      "id": "create_related_effect_8c21c15c",
+      "source": "src/objects/create_related_effect_8c21c15c.c",
+      "address": "0x8c21c15c",
+      "entry": "_create_related_effect_8c21c15c",
+      "headers": [],
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c21c1a4"
+      },
+      "ranges": [
+        {
+          "offset": 2146652,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_related_effect_8c21c15c",
+          "address": "0x8c21c15c",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "d011e876913f09de93ef16895b96d0ab403e48975cf20b5c41dce3500c39a3fc",
+      "boundary_review": "Full fixed instruction mask, saved registers, delays, padding and adjacent constructor reviewed. Callee stores mode32 and identifier16-bit36."
+    },
+    {
+      "id": "initialize_mode_blend_effect",
+      "source": "src/objects/initialize_mode_blend_effect.c",
+      "address": "0x8c21c1a4",
+      "entry": "_initialize_mode_blend_effect",
+      "headers": [],
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c33642c"
+      },
+      "ranges": [
+        {
+          "offset": 2146724,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_mode_blend_effect",
+          "address": "0x8c21c1a4",
+          "size": 152
+        }
+      ],
+      "reference_sha256": "a19a4aee7719793fa86c86e830ac6b75b621c540a7345267e5239bb1e6e4e3c2",
+      "boundary_review": "Raw complete body/pool/adjacent entries reviewed; signed random conversion and switch default leaving fields untouched preserved. All provisional fields offset-checked; decimal floats round-trip observed pool words."
     },
     {
       "id": "destroy_object_8c21c23c",
@@ -35140,6 +36273,60 @@
       ],
       "reference_sha256": "251052221e4ccb7966cca4bacfdc1c3b16d73e2d7d261cc52d88bff75803e1f8",
       "boundary_review": "Independent catalog or recorded code-pointer entry; identical complete instruction/branch/delay shape and literal layout, with catalog/referenced or reviewed adjacent entry prologue. Same observed memory-clear callee and ABI; only destination and length differ."
+    },
+    {
+      "id": "create_related_effect_8c221084",
+      "source": "src/objects/create_related_effect_8c221084.c",
+      "address": "0x8c221084",
+      "entry": "_create_related_effect_8c221084",
+      "headers": [],
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_construct_at": "0x8c2210cc"
+      },
+      "ranges": [
+        {
+          "offset": 2166916,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_related_effect_8c221084",
+          "address": "0x8c221084",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "9d0df180e93188283507e8ecd4a9888d53a2538e8e14a0dabba658884ead2a29",
+      "boundary_review": "Full fixed instruction mask, saved registers, delays, padding and adjacent constructor reviewed. Callee passes text to16-byte copy and stores context36."
+    },
+    {
+      "id": "initialize_text_context_effect",
+      "source": "src/objects/initialize_text_context_effect.c",
+      "address": "0x8c2210cc",
+      "entry": "_initialize_text_context_effect",
+      "headers": [],
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c337008",
+        "_copy_at": "0x8c12b154"
+      },
+      "ranges": [
+        {
+          "offset": 2166988,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_text_context_effect",
+          "address": "0x8c2210cc",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "5ffe91dfa0e6d107f3ee845df042c3b40029fe671e4ca48fe089f50b7e792a59",
+      "boundary_review": "Raw complete body/pool/adjacent entries reviewed; signed random conversion and switch default leaving fields untouched preserved. All provisional fields offset-checked; decimal floats round-trip observed pool words."
     },
     {
       "id": "operation_03cee8_8c221388",
