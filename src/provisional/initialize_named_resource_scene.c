@@ -1,0 +1,30 @@
+typedef struct Scene { char unknown0[24]; void *vtable; char unknown28[8]; int first,second; } Scene;
+typedef struct ResourceName { void *name; unsigned int first,second; } ResourceName;
+typedef char check_layout[sizeof(Scene)==44 && sizeof(ResourceName)==12 && (unsigned long)&((Scene *)0)->vtable==24 && (unsigned long)&((Scene *)0)->first==36 && (unsigned long)&((Scene *)0)->second==40 ? 1:-1];
+extern char scene_vtable[],names[],resource_list[];
+extern ResourceName records[];
+extern void *parent,*heap;
+extern void base_at(Scene *,void *),set_name_at(ResourceName *,char *,int,int),load_at(void *),start_at(char *),release_resources_at(void *),stop_at(void),base_destroy_at(Scene *,int),free_at(void *,void *);
+Scene *initialize_named_resource_scene(Scene *o) {
+    Scene **home=&o;
+    base_at(o,parent);
+    o->vtable=scene_vtable;
+    set_name_at((ResourceName *)((char *)records+0),names+0,0,0);
+    set_name_at((ResourceName *)((char *)records+12),names+21,0,0);
+    set_name_at((ResourceName *)((char *)records+24),names+42,0,0);
+    set_name_at((ResourceName *)((char *)records+36),names+63,0,0);
+    set_name_at((ResourceName *)((char *)records+48),names+84,0,0);
+    set_name_at((ResourceName *)((char *)records+60),names+105,0,0);
+    set_name_at((ResourceName *)((char *)records+72),names+126,0,0);
+    set_name_at((ResourceName *)((char *)records+84),names+147,0,0);
+    set_name_at((ResourceName *)((char *)records+96),names+168,0,0);
+    set_name_at((ResourceName *)((char *)records+108),names+187,0,0);
+    set_name_at((ResourceName *)((char *)records+120),names+201,0,0);
+    set_name_at((ResourceName *)((char *)records+132),names+216,0,0);
+    set_name_at((ResourceName *)((char *)records+144),names+233,0,0);
+    load_at(resource_list);
+    o->first=0;
+    o->second=0;
+    start_at(names+253);
+    return o;
+}

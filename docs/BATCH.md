@@ -1,62 +1,59 @@
-# Reconstruction batch: 183: proven reconstruction families
+# Reconstruction batch: 184: proven reconstruction families
 
-41 new matching functions / 3,956 bytes. All 2084 prior functions preserved.
+23 new matching functions / 4,796 bytes. All 2125 prior functions preserved.
 
-2125 exact functions in 2050 modules; 159,648 compiled function-range bytes; 0 reconstructed data bytes; 4,003,264 retained reference bytes. Whole-image coverage 3.8350% is not code completion.
+2148 exact functions in 2072 modules; 164,444 compiled function-range bytes; 0 reconstructed data bytes; 3,998,468 retained reference bytes. Whole-image coverage 3.9502% is not code completion.
 
 | Module | Address | Complete bytes |
 | --- | --- | ---: |
-| initialize_position_controller | 0x8c03c92c | 228 |
-| initialize_manager_storage | 0x8c040144 | 92 |
-| destroy_manager_storage | 0x8c0401a0 | 92 |
-| reset_manager_record_slots | 0x8c0401fc | 52 |
-| manager_record_dispatch | 0x8c040230 | 36 |
-| create_descriptor_managers | 0x8c0405b4 | 296 |
-| clear_descriptor_tables | 0x8c0406dc | 80 |
-| append_descriptor_record | 0x8c04072c | 32 |
-| initialize_offset_owner_effect | 0x8c05f4c4 | 112 |
-| destroy_offset_owner_effect | 0x8c05f534 | 84 |
-| initialize_control_manager | 0x8c1066e4 | 56 |
-| initialize_timed_owner_effect | 0x8c132d88 | 104 |
-| destroy_timed_owner_effect | 0x8c132df0 | 80 |
-| update_timed_owner_effect | 0x8c132e40 | 132 |
-| initialize_timed_owner_effect_8c132ec4 | 0x8c132ec4 | 104 |
-| destroy_timed_owner_effect_8c132f2c | 0x8c132f2c | 80 |
-| update_timed_owner_effect_8c132f7c | 0x8c132f7c | 132 |
-| initialize_timed_owner_effect_8c133000 | 0x8c133000 | 104 |
-| destroy_timed_owner_effect_8c133068 | 0x8c133068 | 80 |
-| update_timed_owner_effect_8c1330b8 | 0x8c1330b8 | 132 |
-| initialize_timed_owner_effect_8c13313c | 0x8c13313c | 104 |
-| destroy_timed_owner_effect_8c1331a4 | 0x8c1331a4 | 80 |
-| update_timed_owner_effect_8c1331f4 | 0x8c1331f4 | 132 |
-| initialize_timed_owner_effect_8c133278 | 0x8c133278 | 104 |
-| destroy_timed_owner_effect_8c1332e0 | 0x8c1332e0 | 80 |
-| update_timed_owner_effect_8c133330 | 0x8c133330 | 132 |
-| initialize_timed_owner_effect_8c1333b4 | 0x8c1333b4 | 104 |
-| destroy_timed_owner_effect_8c13341c | 0x8c13341c | 80 |
-| update_timed_owner_effect_8c13346c | 0x8c13346c | 132 |
-| destroy_child_owner_8c18a09c | 0x8c18a09c | 84 |
-| destroy_timed_owner_effect_8c18a6b4 | 0x8c18a6b4 | 80 |
-| destroy_timed_owner_effect_8c1c56c0 | 0x8c1c56c0 | 80 |
-| destroy_timed_owner_effect_8c1c5b40 | 0x8c1c5b40 | 80 |
-| destroy_child_owner_8c1d983c | 0x8c1d983c | 84 |
-| destroy_timed_owner_effect_8c1dde04 | 0x8c1dde04 | 80 |
-| destroy_timed_owner_effect_8c223368 | 0x8c223368 | 80 |
-| destroy_timed_owner_effect_8c22ae68 | 0x8c22ae68 | 80 |
-| destroy_child_owner_8c2301f8 | 0x8c2301f8 | 84 |
-| destroy_child_owner_8c231d48 | 0x8c231d48 | 84 |
-| destroy_child_owner_8c25effc | 0x8c25effc | 84 |
+| copy_eight_packed_fields | 0x8c01a40c | 212 |
+| initialize_context_control | 0x8c031358 | 140 |
+| destroy_context_control | 0x8c0313e4 | 76 |
+| actor_stat_and_position_helpers | 0x8c03bc48 | 152 |
+| destroy_named_resource_scene | 0x8c0ed344 | 92 |
+| create_resource_effect_8c108044 | 0x8c108044 | 100 |
+| create_resource_effect_8c1080a8 | 0x8c1080a8 | 100 |
+| create_resource_effect_8c10810c | 0x8c10810c | 100 |
+| create_resource_effect_8c108170 | 0x8c108170 | 100 |
+| create_resource_effect_8c1081d4 | 0x8c1081d4 | 100 |
+| create_resource_effect_8c108238 | 0x8c108238 | 100 |
+| create_resource_effect_8c10829c | 0x8c10829c | 100 |
+| create_resource_effect_8c108300 | 0x8c108300 | 100 |
+| edit_three_scalar_fields | 0x8c1339a4 | 844 |
+| edit_three_scalar_fields_8c133fb0 | 0x8c133fb0 | 844 |
+| edit_three_scalar_fields_8c1342fc | 0x8c1342fc | 844 |
+| create_single_entry_menu | 0x8c1d1f54 | 132 |
+| create_single_entry_menu_8c1d3c74 | 0x8c1d3c74 | 132 |
+| create_single_entry_menu_8c217530 | 0x8c217530 | 132 |
+| create_single_entry_menu_8c217604 | 0x8c217604 | 132 |
+| create_single_entry_menu_8c21a66c | 0x8c21a66c | 132 |
+| create_single_entry_menu_8c21a734 | 0x8c21a734 | 132 |
 
-This batch adds **41 complete exact functions / 3,956 compiled function-range bytes in 40 modules**, preserving all 2,084 prior functions and source/header hashes. Totals: 2,125 functions / 2,050 modules / 159,648 compiled function-range bytes / zero separately reconstructed static-data bytes / 4,003,264 retained reference bytes. Whole-image coverage is 3.8350%; it is not code-completion percentage. The code-only denominator remains unknown.
+This batch adds **23 complete exact functions / 4,796 compiled function-range bytes in 22 modules**, preserving all 2,125 prior functions and source/header hashes. Totals: 2,148 functions / 2,072 modules / 164,444 compiled function-range bytes / zero separately reconstructed static-data bytes / 3,998,468 retained reference bytes. Whole-image coverage is 3.9502%; it is not code-completion percentage. The code-only denominator remains unknown.
 
-Manager storage allocation/reset/destruction, descriptor-manager creation and table operations form the first group. A real, independently referenced empty callback immediately follows record append; compiling those two functions together generates the observed natural alignment and matches the full 36-byte module. No padding was inserted. Descriptor declaration scope reproduces the factory's saved-register lifetimes. Explicit shift-by-two reproduces slot allocation arithmetic where multiplication emitted a different instruction sequence.
+The first six functions contributed672 bytes: context-control initialization/destruction, resource-scene destruction, an explicit packed-field copy and adjacent actor-stat/position helpers. Compiling the two genuine adjacent actor entries together produces their natural alignment; no padding is inserted. Several unrelated initializer/parser/rendering attempts then stalled. Their gains were zero and their costs remain included below.
 
-Timed owner effects provide six constructors, six periodic updaters and their lifecycle operations. The first constructor/destructor/updater matched immediately; reviewed instruction patterns then supplied 21 exact siblings on their first attempts. A position-controller initializer and owner-offset effect initialization/destruction also matched first try, followed by five exact child-owner destructor siblings. Callee argument/field inspection preceded family generation; integer effect handles and child pointers are represented separately. Periodic updaters retain the unresolved signed-remainder runtime dependency. No standalone-data credit is claimed.
+To improve yield, the existing grouping scan was applied to untried function families, rather than repeatedly varying source on stalled targets. One100-byte mixed integer/float resource-effect factory matched immediately, followed by seven reviewed siblings. A three-scalar editor matched its complete844-byte range after correcting the debug-text declaration and capturing the selected axis once; two reviewed siblings matched immediately. A132-byte single-entry menu factory matched after explicit unsigned-int temporaries reproduced two unsigned-short promotions; five siblings then matched immediately. Each family retained checked provisional layouts, inspected callee bindings, original branches and independently reviewed full boundaries. Repeated ordinary-source substitutions were generated in scratch and compiled immediately. No compiler settings or public tools changed.
 
-There were **48 distinct hypotheses / 49 compiler attempts / one compiler error / one duplicate output**. The extra compiler attempt corrected a C90 declaration placement under the same hypothesis. Candidate compilation totaled 1.475 seconds. The two parked investigations are coordinate-table initialization (164/164 bytes, nine differing, first0x8c04051f, three hypotheses) and owner-offset updating (236/232 bytes,126 differing, first0x8c05f5a4, two hypotheses with identical output). The former still differs in float-constant register allocation and resource-index scheduling; the latter adds scalar expression scheduling/reloads after vector normalization. Revisit only new exact source-context patterns. Their provisional sources and cumulative counts remain recorded without completion credit. Historical primary targets remain unchanged and incomplete.
+There were **51 distinct hypotheses / 51 compiler attempts / zero compiler errors / four duplicate outputs**. Candidate compilation totaled 1.600 seconds. The early collection was only672 bytes after29 hypotheses; the targeted family scan recovered the final yield. Twelve investigations are parked, with precise differences, provisional source and cumulative counts. The selector's fourth hypothesis was justified by H3 newly localizing all remaining instruction differences to three inline lookup blocks; after H4 left two blocks unresolved, it was parked. No sibling selector was attempted. Historical primary targets remain unchanged and incomplete. Failed work is not reconstruction progress.
 
-All 40 new modules reproduced twice, then **two fresh exact builds in each checkout**, integrated-image comparisons, both five-function proofs, **all 121 current test executions** (58 research,63 public), and source-only rejection/artifact-preservation checks passed. This required one full acceptance pass: **8,200 module comparisons / 2.07 per new byte**, with research/public command totals 122.631/125.039 seconds. Existing primary exports were checked and reused; one new focused dossier covers representative new ranges. The periodic updater has complete raw instruction/reference evidence but Ghidra did not produce pseudocode for that entry; pseudocode is not the acceptance oracle.
+| Parked target | Hypotheses | Best saved generated / expected bytes | Differing bytes | First difference |
+| --- | ---: | ---: | ---: | --- |
+| create_nested_control (0x8c0348bc) | 2 | 176 / 176 | 4 | 0x8c0348dc |
+| load_control_frame (0x8c0315d8) | 3 | 156 / 160 | 42 | 0x8c0315dc |
+| load_control_record (0x8c03153c) | 3 | 156 / 156 | 34 | 0x8c031544 |
+| reset_context_records (0x8c031430) | 1 | 260 / 268 | 250 | 0x8c031434 |
+| pack_actor_field_bytes (0x8c021054) | 1 | 160 / 168 | 136 | 0x8c02105b |
+| draw_layered_actor (0x8c081e38) | 1 | 292 / 292 | 24 | 0x8c081e89 |
+| initialize_record_storage (0x8c0cba20) | 3 | 204 / 200 | 112 | 0x8c0cba2a |
+| initialize_named_resource_scene (0x8c0ed1e4) | 2 | 352 / 352 | 28 | 0x8c0ed2ae |
+| initialize_rising_position_effect (0x8c0cd2ac) | 2 | 236 / 236 | 98 | 0x8c0cd2ff |
+| update_script_menu_selection (0x8c21424c) | 1 | 366 / 340 | 313 | 0x8c214250 |
+| resolve_script_selector (0x8c2115dc) | 4 | 798 / 800 | 54 | 0x8c21183a |
+| initialize_five_entry_selection (0x8c0176f8) | 1 | 272 / 276 | 152 | 0x8c0176f8 |
 
-**Measured efficiency improved:** yield is 82.42 bytes per hypothesis versus batch182's69.60 and batch181's76.75; verification overhead fell to 2.07 comparisons per new byte from4.62 and2.15 respectively. Against the original five-batch sample, yield increased from50.95 and overhead decreased from6.48. Reusing the existing trial, family scanner, admission, verification and publication helpers required no new public tooling. Token/cost records and comparable historical timing records remain unavailable; no monetary or token savings are estimated. New scratch work begun during verification is excluded from these totals.
+All22 modules reproduced twice before admission, then **two fresh exact builds in each checkout**, integrated-image comparisons, both five-function proofs, **all121 current test executions** (58 research,63 public), and source-only rejection/artifact-preservation checks passed. One full acceptance pass performed **8,288 module comparisons / 1.73 per new byte**, with research/public command totals 123.665/125.869 seconds. Existing primary exports were checked and reused; one new focused dossier covers six representative modules and produced complete raw/reference evidence and pseudocode for all requested entries.
 
-Reproduce with tools/reconstruct.py verify after BUILDING.md setup; check saved focused analysis using tools/dossier.py --check. Keep candidate compilation immediate and collect related matches before the next integration. Do not reopen parked targets without new evidence.
+**Measured efficiency improved for the completed collection:** 94.04 bytes per hypothesis versus batch183's82.42 and the sampled baseline's50.95; verification overhead fell to 1.73 comparisons per byte from2.07 and6.48 respectively. The early investigations were inefficient; the improvement came from reviewing one representative before family expansion and collecting several KB before verification. Scratch-only sorting work begun during acceptance belongs to the next batch and is excluded. Token/cost records and comparable historical timing records remain unavailable; no monetary or token savings are estimated.
+
+Reproduce with tools/reconstruct.py verify after BUILDING.md setup; check saved focused analysis using tools/dossier.py --check. Continue related untried families, keep immediate candidate comparisons, and park exhausted source contexts. Publishing remains a checkpoint.

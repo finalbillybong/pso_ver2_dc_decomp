@@ -1,0 +1,31 @@
+typedef struct Vector { float x,y,z; } Vector;
+typedef struct Node { void *unknown0; struct Node *child; } Node;
+typedef struct Actor { char unknown0[60]; Vector position; char unknown72[28]; int angle; char unknown104[40]; int index; char unknown148[144]; int layer_angle,offset; } Actor;
+typedef char check_layout[sizeof(Vector)==12 && sizeof(Node)==8 && sizeof(Actor)==300 && (unsigned long)&((Node *)0)->child==4 && (unsigned long)&((Actor *)0)->position==60 && (unsigned long)&((Actor *)0)->angle==100 && (unsigned long)&((Actor *)0)->index==144 && (unsigned long)&((Actor *)0)->layer_angle==292 && (unsigned long)&((Actor *)0)->offset==296 ? 1:-1];
+extern void *texture;
+extern Node *models[];
+extern unsigned int render_flags,saved_flags;
+extern char colors[],default_color[];
+extern void texture_at(void *),offset_at(void *,int,int,int),push_at(void),translate_at(Vector *),angle_at(void *,int),draw_at(Node *),begin_at(void),color_at(void *),layer_at(Node *),select_at(void *,int),end_at(void);
+extern int pop_at(void);
+void draw_layered_actor(Actor *o) {
+    texture_at(texture);
+    offset_at(models[1]->child->child,0,o->offset,14);
+    push_at();
+    translate_at(&o->position);
+    angle_at(0,o->angle);
+    draw_at(models[0]);
+    begin_at();
+    saved_flags=render_flags;
+    render_flags|=16;
+    color_at(colors+((unsigned int)o->index<<4));
+    layer_at(models[1]);
+    angle_at(0,o->layer_angle);
+    select_at(models[2]->child->child,o->index);
+    layer_at(models[2]);
+    color_at(default_color);
+    render_flags=saved_flags;
+    end_at();
+    pop_at();
+    offset_at(models[1]->child->child,0,-o->offset,14);
+}

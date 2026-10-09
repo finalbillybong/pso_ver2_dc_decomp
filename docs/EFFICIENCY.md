@@ -228,3 +228,11 @@ A late callee inspection identified descriptor-pointer parameters in five new ma
 Callee ABI and field inspection preceded expansion. One acceptance pass completed80 admission reproductions, four fresh exact builds, both proofs, integrated-image comparisons,121 tests and source-only artifact guards. There were8,200 module comparisons, **2.07 per new byte**, with research/public command totals122.631/125.039 seconds. Unchanged primary exports were reused. No public tooling or compiler settings changed.
 
 **Measured efficiency improved:** 82.42 bytes per hypothesis versus69.60 in182 and76.75 in181; overhead2.07 versus4.62 and2.15 comparisons per byte. The original sample was50.95 bytes per hypothesis and6.48 comparisons per byte. Token/cost records remain unavailable. Retain the early ABI review and family-first collection approach; no token or monetary savings are inferred.
+
+## Batch 184: field editors and resource/menu families
+
+23 exact functions in22 modules replace4,796 bytes; separately reconstructed data remains zero. There were51 hypotheses /51 compiler attempts /zero errors /four duplicate outputs; compilation totaled1.600 seconds. Twelve investigations are parked with persistent counts and precise blockers. The early collection yielded only672 bytes after29 hypotheses. Applying the existing grouping scan to untried families then found eight100-byte resource factories, three844-byte scalar editors and six132-byte menu factories. Each representative matched before sibling generation. No public tooling or compiler settings changed.
+
+One acceptance pass completed44 admission reproductions, four fresh exact builds, both proofs, integrated images,121 tests and source-only artifact guards. There were8,288 module comparisons, **1.73 per new byte**, with research/public command totals123.665/125.869 seconds. Unchanged primary exports were reused.
+
+**Measured completed-batch efficiency improved:** 94.04 bytes per hypothesis versus82.42 in183 and50.95 in the baseline; overhead1.73 versus2.07 and6.48 comparisons per byte. Early source-lifetime investigations did not improve efficiency; family expansion supplied the gain. Token/cost records remain unavailable. Retain family-first selection and several-KB integration, and do not infer monetary or token savings from these measures.

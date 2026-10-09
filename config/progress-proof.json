@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "20a6158b3271cd584a6e09421110059780f020da8ef0b0b099181f5b3de7f7c1",
+    "config/project.json": "86aacfa1aded6e4e56d2606957ca3c8b0cf91f0d3ebbe91c4b70feacc7eda02b",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/actor_mode_noop.c": "091e6fbf33d49b3ac1981b122742334eb3466776c1dbc6f65de3c8d221490738",
@@ -1205,6 +1205,7 @@
     "src/objects/actor_animation_ready.c": "cdf21ed2c2400c37c0e0b1682574e7e08b5cf373dc27e8fc89ebfc80bfe6b884",
     "src/objects/actor_matches_current_mode.c": "565e826f76e98c7d2ce6b5da5baf40949a4658100f35536a63a75cbccd969204",
     "src/objects/actor_mode_allows_action.c": "4e7b492e3524ca09230b4584965b4229e470da9921bffde665d7dfb68a21dd5c",
+    "src/objects/actor_stat_and_position_helpers.c": "7950df7d9c76467cdc43747228c51febcb1c369578e967f0157ba8dba739f235",
     "src/objects/adjust_330.c": "abd866c6197d75fbfc52c4055f50c125d9f2e16b067f7f44e3c7c4ee6d3ea2c3",
     "src/objects/advance_context_actor.cpp": "a97e3ca4810e2cee4bd207f74e006aecfc31f8f1e4bd2644e59e58d23390e88b",
     "src/objects/advance_text_context.c": "b1967a54ec18b4bfde893ef1f58490d451c7b35c8b1188844cd9a63d81401753",
@@ -1300,6 +1301,7 @@
     "src/objects/context_target_predicates.c": "dd96a750fa73b63f7e80e0ccce26d4cc751d70103db369c3d031ef2fbcd44364",
     "src/objects/context_target_resets.cpp": "0015daaa3f5da838883a10efdc106d1f078796dae554829f2ad0812819c92729",
     "src/objects/copy_actor_records.c": "8baefa3f10bda42a0581d95f4c91d14138a6e1f7498287b114c52df1c01819b9",
+    "src/objects/copy_eight_packed_fields.c": "f1c4c246ff35e7c6f7c29f63608c6757bd96424332fbd5f7be601221521362a6",
     "src/objects/copy_object_id_1b6.c": "4b121f364a4deebdd21d1ce95f74780039ba75012f7a7df338a06601e45657a1",
     "src/objects/copy_resource_fields.c": "e32789bcab1f0148286bbea689715762d634e4cb59b91c6c30a45f7a217d4532",
     "src/objects/count_model_nodes.c": "5f6e863011c23fdebca4ec0248d56839a4f294656cabf021ce523da95a13f5cb",
@@ -1400,7 +1402,21 @@
     "src/objects/create_related_object_8c21aeb4.c": "7d307b0a06dac1c081e334b9a6dc306e7e8a264c3266c991151568c2f9ee274f",
     "src/objects/create_related_object_8c21b564.c": "718cb823339e1a4e0995b6af9c91a99b9d38669541df03a1587bba4adbf1a328",
     "src/objects/create_related_object_8c21b658.c": "51d804bb98a106072ed82fa4bf54d7887ebd1e49ef9206b5360b20ebad3ce68b",
+    "src/objects/create_resource_effect_8c108044.c": "fe61a1c50ac8d4c3803c44a37e12c6adfe02b6bed26b06f463f2953db519b712",
+    "src/objects/create_resource_effect_8c1080a8.c": "bd1efe736d8b5907356f6c3775d048c03a2b7e9d37568a75dc178300f432dffd",
+    "src/objects/create_resource_effect_8c10810c.c": "d2b341ea7c55aaa5b21c92966071c931cb71f09ccbaf761072ea5a5587af7c25",
+    "src/objects/create_resource_effect_8c108170.c": "018e9824c2dc335b759670492829d7c87da67a15beed44a7587e4730c6188610",
+    "src/objects/create_resource_effect_8c1081d4.c": "a548c14876ae274d1ecee596c3ca9c4ce32d91eae8888e5bd73d8095fbbe673e",
+    "src/objects/create_resource_effect_8c108238.c": "685838a9098395f2cb31a41f78094445189308fab15135051062d09d5955dfba",
+    "src/objects/create_resource_effect_8c10829c.c": "e153df803bf187605738185767bce401b8996f053ffcfcb77986a2e164c0c693",
+    "src/objects/create_resource_effect_8c108300.c": "68aea95b30135aa8bd16ef8c68906c947314d328609a734b8fdde919cb420cb9",
     "src/objects/create_scene_control_owner.c": "d91647f28c67eeebcdd5425e2403341eb0c5299ad7cd263a8a71a026f17f057f",
+    "src/objects/create_single_entry_menu.c": "4355de147f51573e87817d80a27b1e1199e2a36b79a21e4c083868830a63b7d5",
+    "src/objects/create_single_entry_menu_8c1d3c74.c": "bd55395456b43c392bf55fb3f90c94ea79e667b5e7f38005f9fbce209bd40521",
+    "src/objects/create_single_entry_menu_8c217530.c": "8cca5b176ccacbba14100730c011be2b8c6947d39b54db48ac2cf6f78bcafb01",
+    "src/objects/create_single_entry_menu_8c217604.c": "96173a3e9494e12373f685a70b6ca10a6543c3b9dee4acc4f58c7c8c320d7000",
+    "src/objects/create_single_entry_menu_8c21a66c.c": "034412826a271c4f4c61130316c844be30f670f356b3e567a5c37eb1dc5f95f8",
+    "src/objects/create_single_entry_menu_8c21a734.c": "ecd2acf99b2480dafc0547f97959614cdeb5892900607b0b98f75087a7c4577a",
     "src/objects/create_timed_actor_callback.c": "e55b24adc36746b471004ad4385ec9d72d38b04ef40572855f877ca06cb4b0c9",
     "src/objects/create_timed_actor_child.c": "ee8e93f8f64d16ae77bd6ce676ee1ce73daff00a09254cd0052d6941917399cb",
     "src/objects/current_mode_active.c": "cda24a7691d83715708aa5e99bf1fb57fd765fa744699e073282018e86cce114",
@@ -1448,6 +1464,7 @@
     "src/objects/destroy_context_8c2248d0.c": "8427e8d39fdfbf6807cd5271ee87771653b00e29903a312e1477a11bb616f9f8",
     "src/objects/destroy_context_8c22b6d0.c": "8ea19b434bd84890a67366be7bec0f0c544c51241ad6ef0e8bef5302b1d1a93a",
     "src/objects/destroy_context_8c250714.c": "fc4a92c3284ed17f855196808fcdf922392e8fd55379697b1d2a0a8e5f08241b",
+    "src/objects/destroy_context_control.c": "24d8e4fadafe147beb030a690d981bedf42a19d08a472cd40fde619973744f49",
     "src/objects/destroy_context_resources.c": "a3aca3402d5308b79152c55beadfd2f1362480a888cf3aa455ccdcd724c8264d",
     "src/objects/destroy_context_resources_8c0f1698.c": "7186a1d8e3728f127a9a192d56d514c26d25bdf13e79665f1e80b20b94eb1b2f",
     "src/objects/destroy_context_resources_8c0f1b40.c": "e3289aa61f81ceb440926bc29954f75269eb747c3af5f751460a3b653d80f9cb",
@@ -1519,6 +1536,7 @@
     "src/objects/destroy_hierarchy_values.c": "70c8b9663a4e080bbf56d479344a70961045c4a26905895a1de3bcb965b35292",
     "src/objects/destroy_linked_8c0f00c0.c": "1d270a7c5b327728ff41f01c7ceb327b59956ef4bff9a1f07dbf30bc62befd54",
     "src/objects/destroy_manager_storage.c": "7cfe642ebbe45ddc3a2fc8112139e2e1480fb9cb6d8f25a99fd21f09a6d3bfbd",
+    "src/objects/destroy_named_resource_scene.c": "6c61421a9a2a83b9627c6f1106da4c6895c5414d4e4b9a06f909131683cb8424",
     "src/objects/destroy_node_array.c": "8c6c059a8fde2631153e964d67a2944877819739873beb5a5de618e0478acf74",
     "src/objects/destroy_object_state.c": "837ade557a0d50b627995bead8e1d09c5ff17037a6c8503e3ebcd1c7aed083e8",
     "src/objects/destroy_optional_child_owner.c": "0e099789a08dce255dc36f2f326eac5db55de84d9ca193a062774ddf88ee449b",
@@ -1550,6 +1568,9 @@
     "src/objects/draw_scene_control_marker.c": "e4e20f9580c1652ae3bc8e9e36e2d052507e43db5ffc8112eb07981390cadfd5",
     "src/objects/draw_view_nodes.cpp": "ccea4c757dceb5a4cb4ca8774b043abd26eba39d90b0c08e5e184909d05459d4",
     "src/objects/draw_view_transition_if_active.c": "32504e8901a1c187d9159033788bd26f05b04b1dccdb6dfd5ddddf7c596db620",
+    "src/objects/edit_three_scalar_fields.c": "d633e592be9f9f592054e9bc72f0cf55f1839ed52c8404eb84148cd538754509",
+    "src/objects/edit_three_scalar_fields_8c133fb0.c": "2c2b4c568e1c26673fd5da3b85d0118fa7526d308b5b4f694eb418582900ebb6",
+    "src/objects/edit_three_scalar_fields_8c1342fc.c": "5eb6c8c225dc7c7d3e6143447d343769767bf5396c5ad8049b3c776a8abfd5a2",
     "src/objects/emit_context_particles.cpp": "657705f8d7c8029779c475e0589077e4c426d1e783b895b9c003a4dbbcba0523",
     "src/objects/emit_raised_ring_particle.c": "2ff138c8e70c6379824bc8cb5fe6ab5ec63b703b279377a2cca85e7df773fa29",
     "src/objects/empty_operations_37d4c.c": "8ea73e852f6001028778918fd89bb1f6d23974458629de1033bb3d394b339d35",
@@ -1592,6 +1613,7 @@
     "src/objects/initialize_context_blend_8c252bfc.c": "acf3ede53fe78bc52efcd579e7f6f8064bc8713ff14f36d1eaecf06b2b506c9f",
     "src/objects/initialize_context_blend_8c254378.c": "22b4a46dafc8dcf8b912af127995999d9c43d57f208a2ff6ae99db1939468ea5",
     "src/objects/initialize_context_blend_8c254a58.c": "3713a5ba829d4f64d32577ecaf8b615a2b8252019ae4858027451363f886e3a5",
+    "src/objects/initialize_context_control.c": "0b98e24a373247ba3d155e0fd515477cbba5346583e7143fb757f8db017c76aa",
     "src/objects/initialize_control_block_owner.c": "a152d687d755f2c2bc0b8005a6cb91bfcd1d461a52be99fcb2c0342b4d6f2c95",
     "src/objects/initialize_control_manager.c": "d428487b2c7094322b7b9fe0eddf0becbecdcfec3e02f4fe58c3710624ddffb9",
     "src/objects/initialize_delayed_position_effect.c": "cfde82d78d880d22a323b3f11d5093c4a7773a3fc44136e681c85da57e702358",
@@ -2485,6 +2507,17 @@
       "off",
       "-O2"
     ],
+    "copy_eight_packed_fields": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c01bb30": [
       "-proc",
       "SH4",
@@ -2950,6 +2983,28 @@
       "-O2"
     ],
     "release_render_mode_four_8c02d218": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_context_control": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_control": [
       "-proc",
       "SH4",
       "-endian",
@@ -3979,6 +4034,17 @@
       "-O2"
     ],
     "run_actor_callback_on_timeout": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "actor_stat_and_position_helpers": [
       "-proc",
       "SH4",
       "-endian",
@@ -11831,6 +11897,17 @@
       "off",
       "-O2"
     ],
+    "destroy_named_resource_scene": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c0ed844": [
       "-proc",
       "SH4",
@@ -12712,6 +12789,94 @@
       "-O2"
     ],
     "destroy_color_rise_8c107ee4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_resource_effect_8c108044": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_resource_effect_8c1080a8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_resource_effect_8c10810c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_resource_effect_8c108170": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_resource_effect_8c1081d4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_resource_effect_8c108238": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_resource_effect_8c10829c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_resource_effect_8c108300": [
       "-proc",
       "SH4",
       "-endian",
@@ -14783,6 +14948,39 @@
       "-O2"
     ],
     "destroy_object_8c133718": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "edit_three_scalar_fields": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "edit_three_scalar_fields_8c133fb0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "edit_three_scalar_fields_8c1342fc": [
       "-proc",
       "SH4",
       "-endian",
@@ -19877,6 +20075,28 @@
       "off",
       "-O2"
     ],
+    "create_single_entry_menu": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_single_entry_menu_8c1d3c74": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "create_default_configured_object": [
       "-proc",
       "SH4",
@@ -20583,6 +20803,28 @@
       "off",
       "-O2"
     ],
+    "create_single_entry_menu_8c217530": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_single_entry_menu_8c217604": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c2177f0": [
       "-proc",
       "SH4",
@@ -20641,6 +20883,28 @@
       "-O2"
     ],
     "clear_global_8c219a1c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_single_entry_menu_8c21a66c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_single_entry_menu_8c21a734": [
       "-proc",
       "SH4",
       "-endian",
@@ -24873,6 +25137,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4003264,
+  "source_only_rejected_retained_bytes": 3998468,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

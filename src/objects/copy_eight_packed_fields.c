@@ -1,0 +1,31 @@
+typedef struct Field { unsigned char first,second; unsigned short value; } Field;
+typedef struct Record { unsigned int header; Field fields[8]; } Record;
+typedef char check_layout[sizeof(Field)==4 && sizeof(Record)==36 && (unsigned long)&((Field *)0)->second==1 && (unsigned long)&((Field *)0)->value==2 && (unsigned long)&((Record *)0)->fields==4 ? 1:-1];
+Record *copy_eight_packed_fields(Record *target,const Record *source) {
+    target->header=source->header;
+    target->fields[0].first=source->fields[0].first;
+    target->fields[0].second=source->fields[0].second;
+    target->fields[0].value=source->fields[0].value;
+    target->fields[1].first=source->fields[1].first;
+    target->fields[1].second=source->fields[1].second;
+    target->fields[1].value=source->fields[1].value;
+    target->fields[2].first=source->fields[2].first;
+    target->fields[2].second=source->fields[2].second;
+    target->fields[2].value=source->fields[2].value;
+    target->fields[3].first=source->fields[3].first;
+    target->fields[3].second=source->fields[3].second;
+    target->fields[3].value=source->fields[3].value;
+    target->fields[4].first=source->fields[4].first;
+    target->fields[4].second=source->fields[4].second;
+    target->fields[4].value=source->fields[4].value;
+    target->fields[5].first=source->fields[5].first;
+    target->fields[5].second=source->fields[5].second;
+    target->fields[5].value=source->fields[5].value;
+    target->fields[6].first=source->fields[6].first;
+    target->fields[6].second=source->fields[6].second;
+    target->fields[6].value=source->fields[6].value;
+    target->fields[7].first=source->fields[7].first;
+    target->fields[7].second=source->fields[7].second;
+    target->fields[7].value=source->fields[7].value;
+    return target;
+}

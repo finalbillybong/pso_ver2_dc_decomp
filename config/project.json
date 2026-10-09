@@ -577,6 +577,28 @@
       "boundary_review": "Independent catalog/referenced entry and reviewed adjacent entry; entire instruction/delay and natural pool shape agrees with exact template. Raw returns field address only; no Vector3 layout inferred."
     },
     {
+      "id": "copy_eight_packed_fields",
+      "source": "src/objects/copy_eight_packed_fields.c",
+      "address": "0x8c01a40c",
+      "entry": "_copy_eight_packed_fields",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 41996,
+          "size": 212
+        }
+      ],
+      "functions": [
+        {
+          "name": "copy_eight_packed_fields",
+          "address": "0x8c01a40c",
+          "size": 212
+        }
+      ],
+      "reference_sha256": "30d06a9a900740279389513c091b6a70311f70d01207beb4a073ff5272c1ee12",
+      "boundary_review": "Raw01a40c..01a4e0 full212-byte entry including return delay, no literalpool. Word4/byte1/word2 access widths observed; allfield offsets checked; copy order retained rather than aggregate memcpy."
+    },
+    {
       "id": "destroy_object_8c01bb30",
       "source": "src/effects/destroy_object_8c01bb30.c",
       "address": "0x8c01bb30",
@@ -1658,6 +1680,74 @@
       ],
       "reference_sha256": "7eed4b250934f70305bc4a54475439807d08687a1a18ed164cce8792312e7fdb",
       "boundary_review": "Independent catalog or recorded code-pointer entry; identical complete instruction/branch/delay shape and literal layout, with catalog/referenced or reviewed adjacent entry prologue. Existing exact callee hierarchy_output at0x8c033470 proves declared signature. Direct forwarding includes all observed incoming arguments and return type."
+    },
+    {
+      "id": "initialize_context_control",
+      "source": "src/objects/initialize_context_control.c",
+      "address": "0x8c031358",
+      "entry": "_initialize_context_control",
+      "symbols": {
+        "_control_vtable": "0x8c2614bc",
+        "_object_name": "0x8c2e840c",
+        "_heap": "0x8c4d97e0",
+        "_control_flag": "0x8c44be00",
+        "_active": "0x8c44be10",
+        "_context": "0x8c44be0c",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_reset_at": "0x8c031430",
+        "_prepare_at": "0x8c031678"
+      },
+      "ranges": [
+        {
+          "offset": 136024,
+          "size": 140
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_context_control",
+          "address": "0x8c031358",
+          "size": 140
+        }
+      ],
+      "reference_sha256": "5aa0801f470507f943d056466b4f39b99a44b0dceaf7579d095dc4958deb4921",
+      "boundary_review": "Raw031358..031430 separates140-byteconstructor and76-bytedestructor; nextreset entry reviewed. Base0330e4 parentR5, cleanup03311c zero mode and allocator ABI reused. Globalsactive/context and field12 conditional observed; all object offsets checked."
+    },
+    {
+      "id": "destroy_context_control",
+      "source": "src/objects/destroy_context_control.c",
+      "address": "0x8c0313e4",
+      "entry": "_destroy_context_control",
+      "symbols": {
+        "_control_vtable": "0x8c2614bc",
+        "_object_name": "0x8c2e840c",
+        "_heap": "0x8c4d97e0",
+        "_control_flag": "0x8c44be00",
+        "_active": "0x8c44be10",
+        "_context": "0x8c44be0c",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_reset_at": "0x8c031430",
+        "_prepare_at": "0x8c031678"
+      },
+      "ranges": [
+        {
+          "offset": 136164,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_control",
+          "address": "0x8c0313e4",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "5d3aab66f0a90245108d89f7653bbd0846eec9a97b6685d69360e2ac3d93ea28",
+      "boundary_review": "Raw031358..031430 separates140-byteconstructor and76-bytedestructor; nextreset entry reviewed. Base0330e4 parentR5, cleanup03311c zero mode and allocator ABI reused. Globalsactive/context and field12 conditional observed; all object offsets checked."
     },
     {
       "id": "refresh_follow_effect_8c0316cc",
@@ -4057,6 +4147,33 @@
       ],
       "reference_sha256": "7c4562698d25f219ea2ab1fab64cc9c285935154bb0b9a6a60af96914fe36d60",
       "boundary_review": "Each raw full range and adjacent entry reviewed. Timeout callback may receive null actor; idle callback intentionally dereferences lookup without guard. Factories return original allocation rather than constructor result. No behavior fixes or padding."
+    },
+    {
+      "id": "actor_stat_and_position_helpers",
+      "source": "src/objects/actor_stat_and_position_helpers.c",
+      "address": "0x8c03bc48",
+      "entry": "_subtract_actor_stats",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 179272,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "subtract_actor_stats",
+          "address": "0x8c03bc48",
+          "size": 96
+        },
+        {
+          "name": "actor_elevated_position",
+          "address": "0x8c03bca8",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "dba30158e665ec314e10c50734dad1b3b865d6cc396043e4a398527ceebcefaa",
+      "boundary_review": "Raw021054..0210fc and03bc48..03bce0 reviewed. Paired stat94-bytebody naturally aligns nextposition entry; its own literalpool follows. No insertedpadding. Signedbyte EXT S.B and masked32-bit shifts preserved without C signed-shift UB; every field/stride checked."
     },
     {
       "id": "initialize_manager_8c03bfdc",
@@ -22479,6 +22596,43 @@
       "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding."
     },
     {
+      "id": "destroy_named_resource_scene",
+      "source": "src/objects/destroy_named_resource_scene.c",
+      "address": "0x8c0ed344",
+      "entry": "_destroy_named_resource_scene",
+      "symbols": {
+        "_parent": "0x8c44be88",
+        "_base_at": "0x8c0330e4",
+        "_scene_vtable": "0x8c268004",
+        "_names": "0x8c308cbc",
+        "_records": "0x8c4703e0",
+        "_set_name_at": "0x8c37e9b6",
+        "_resource_list": "0x8c308a30",
+        "_load_at": "0x8c118780",
+        "_start_at": "0x8c1003d0",
+        "_release_resources_at": "0x8c37d534",
+        "_stop_at": "0x8c1004cc",
+        "_base_destroy_at": "0x8c03311c",
+        "_heap": "0x8c4d97e0",
+        "_free_at": "0x8c122774"
+      },
+      "ranges": [
+        {
+          "offset": 906052,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_named_resource_scene",
+          "address": "0x8c0ed344",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "937eb2fe5533e36c997756228da4a270d98a2a6059f74ce3a1f1f0120f03075c",
+      "boundary_review": "Raw0ed1e4..0ed3a0 reviewed352/92-byte ranges with distinct entries and ownpools. No resource strings copied; named references retain original data dependency. Resource descriptor12 stride and object fields checked; library argument register ABI matches established callers. Resource load118780 remains unresolved."
+    },
+    {
       "id": "spawn_object_0893a8_8c0ed844",
       "source": "src/objects/spawn_object_0893a8_8c0ed844.c",
       "address": "0x8c0ed844",
@@ -24505,6 +24659,230 @@
       "reference_sha256": "2c48701f52f7b7539d55b640e3664b56a080bf8a06002a3d475dd0c77bb71c16",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "create_resource_effect_8c108044",
+      "source": "src/objects/create_resource_effect_8c108044.c",
+      "address": "0x8c108044",
+      "entry": "_create_resource_effect_8c108044",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be98",
+        "_context": "0x8c4d7b80",
+        "_allocate": "0x8c122700",
+        "_construct": "0x8c107750"
+      },
+      "ranges": [
+        {
+          "offset": 1015876,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_resource_effect_8c108044",
+          "address": "0x8c108044",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "5e237fb774067e98d0d0fd18fca09c00125bad8b0016188579755607a7b96b64",
+      "boundary_review": "Raw108044..1080a8 includes68-bytebody/32-bytepool, next sibling entry. Constructor107750 inspected: R6 position, R7 resource, FR4 scale, stack108/112 relative to frame correspond int mode/parameter;204-byte allocation extent. Resource pointer offsets checked."
+    },
+    {
+      "id": "create_resource_effect_8c1080a8",
+      "source": "src/objects/create_resource_effect_8c1080a8.c",
+      "address": "0x8c1080a8",
+      "entry": "_create_resource_effect_8c1080a8",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be98",
+        "_context": "0x8c4d7b80",
+        "_allocate": "0x8c122700",
+        "_construct": "0x8c107750"
+      },
+      "ranges": [
+        {
+          "offset": 1015976,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_resource_effect_8c1080a8",
+          "address": "0x8c1080a8",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "af9ca20ded42eda259cd7a455a942f811ff910a913ca549a6a638e11e2562b38",
+      "boundary_review": "Catalog and raw adjacent100-byte entries plus scanner entry references reviewed. Entire68-byte instruction body equals anchor except mode immediate30; eight literals decoded independently. Derived constructor107e1c forwards R4-R7,FR4 and both stack inputs to107750, then initializes extension at204; allocation208. No binary/data copying into source."
+    },
+    {
+      "id": "create_resource_effect_8c10810c",
+      "source": "src/objects/create_resource_effect_8c10810c.c",
+      "address": "0x8c10810c",
+      "entry": "_create_resource_effect_8c10810c",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be98",
+        "_context": "0x8c4d7b80",
+        "_allocate": "0x8c122700",
+        "_construct": "0x8c107750"
+      },
+      "ranges": [
+        {
+          "offset": 1016076,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_resource_effect_8c10810c",
+          "address": "0x8c10810c",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "5951a7ad491480d38b83fcacc2521910ceff82722c5e9478e4d9c5422f485d56",
+      "boundary_review": "Catalog and raw adjacent100-byte entries plus scanner entry references reviewed. Entire68-byte instruction body equals anchor except mode immediate30; eight literals decoded independently. Derived constructor107e1c forwards R4-R7,FR4 and both stack inputs to107750, then initializes extension at204; allocation208. No binary/data copying into source."
+    },
+    {
+      "id": "create_resource_effect_8c108170",
+      "source": "src/objects/create_resource_effect_8c108170.c",
+      "address": "0x8c108170",
+      "entry": "_create_resource_effect_8c108170",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be98",
+        "_context": "0x8c4d7b80",
+        "_allocate": "0x8c122700",
+        "_construct": "0x8c107750"
+      },
+      "ranges": [
+        {
+          "offset": 1016176,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_resource_effect_8c108170",
+          "address": "0x8c108170",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "0b0cb5f575aeacb1f6c751b32dd97e0587b38ab8f370223077a13f572cb8c6ac",
+      "boundary_review": "Catalog and raw adjacent100-byte entries plus scanner entry references reviewed. Entire68-byte instruction body equals anchor except mode immediate30; eight literals decoded independently. Derived constructor107e1c forwards R4-R7,FR4 and both stack inputs to107750, then initializes extension at204; allocation208. No binary/data copying into source."
+    },
+    {
+      "id": "create_resource_effect_8c1081d4",
+      "source": "src/objects/create_resource_effect_8c1081d4.c",
+      "address": "0x8c1081d4",
+      "entry": "_create_resource_effect_8c1081d4",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be98",
+        "_context": "0x8c4d7b80",
+        "_allocate": "0x8c122700",
+        "_construct": "0x8c107750"
+      },
+      "ranges": [
+        {
+          "offset": 1016276,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_resource_effect_8c1081d4",
+          "address": "0x8c1081d4",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "46ceddf290ec56ee22321d35b032ece86dca73cf52197e77043c75ff5073dd19",
+      "boundary_review": "Catalog and raw adjacent100-byte entries plus scanner entry references reviewed. Entire68-byte instruction body equals anchor except mode immediate30; eight literals decoded independently. Derived constructor107e1c forwards R4-R7,FR4 and both stack inputs to107750, then initializes extension at204; allocation208. No binary/data copying into source."
+    },
+    {
+      "id": "create_resource_effect_8c108238",
+      "source": "src/objects/create_resource_effect_8c108238.c",
+      "address": "0x8c108238",
+      "entry": "_create_resource_effect_8c108238",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be98",
+        "_context": "0x8c4d7b80",
+        "_allocate": "0x8c122700",
+        "_construct": "0x8c107750"
+      },
+      "ranges": [
+        {
+          "offset": 1016376,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_resource_effect_8c108238",
+          "address": "0x8c108238",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "2080152f7fa76f23675e4290ff3b68c20880ad7f31b0154ffa7230a9ee306b28",
+      "boundary_review": "Catalog and raw adjacent100-byte entries plus scanner entry references reviewed. Entire68-byte instruction body equals anchor except mode immediate30; eight literals decoded independently. Derived constructor107e1c forwards R4-R7,FR4 and both stack inputs to107750, then initializes extension at204; allocation208. No binary/data copying into source."
+    },
+    {
+      "id": "create_resource_effect_8c10829c",
+      "source": "src/objects/create_resource_effect_8c10829c.c",
+      "address": "0x8c10829c",
+      "entry": "_create_resource_effect_8c10829c",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be98",
+        "_context": "0x8c4d7b80",
+        "_allocate": "0x8c122700",
+        "_construct": "0x8c107e1c"
+      },
+      "ranges": [
+        {
+          "offset": 1016476,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_resource_effect_8c10829c",
+          "address": "0x8c10829c",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "12bc5577999280bb65d7f82cb60ef979370f75e77ab30ad20bab3d9908b6f84e",
+      "boundary_review": "Catalog and raw adjacent100-byte entries plus scanner entry references reviewed. Entire68-byte instruction body equals anchor except mode immediate30; eight literals decoded independently. Derived constructor107e1c forwards R4-R7,FR4 and both stack inputs to107750, then initializes extension at204; allocation208. No binary/data copying into source."
+    },
+    {
+      "id": "create_resource_effect_8c108300",
+      "source": "src/objects/create_resource_effect_8c108300.c",
+      "address": "0x8c108300",
+      "entry": "_create_resource_effect_8c108300",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be98",
+        "_context": "0x8c4d7b80",
+        "_allocate": "0x8c122700",
+        "_construct": "0x8c107e1c"
+      },
+      "ranges": [
+        {
+          "offset": 1016576,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_resource_effect_8c108300",
+          "address": "0x8c108300",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "4d9bf89841b1a08514188c14a931881d54435d959b8ae1c6ebcf18bac159f15c",
+      "boundary_review": "Catalog and raw adjacent100-byte entries plus scanner entry references reviewed. Entire68-byte instruction body equals anchor except mode immediate30; eight literals decoded independently. Derived constructor107e1c forwards R4-R7,FR4 and both stack inputs to107750, then initializes extension at204; allocation208. No binary/data copying into source."
     },
     {
       "id": "set_global_8c1086e4",
@@ -29716,6 +30094,99 @@
       ],
       "reference_sha256": "01cb3b07cf40af4b4ab6aca102f199b6522782408a2b9504d7dad08ced13a312",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "edit_three_scalar_fields",
+      "source": "src/objects/edit_three_scalar_fields.c",
+      "address": "0x8c1339a4",
+      "entry": "_edit_three_scalar_fields",
+      "symbols": {
+        "_input": "0x8c41cba0",
+        "_initialized": "0x8c4d9aa4",
+        "_axis": "0x8c4d9aa0",
+        "_format": "0x8c312a8c",
+        "_repeat_button": "0x8c01d844",
+        "_set_text_size": "0x8c38c5aa",
+        "_set_text_color": "0x8c38c5b6",
+        "_draw_text": "0x8c38cf80"
+      },
+      "ranges": [
+        {
+          "offset": 1194404,
+          "size": 844
+        }
+      ],
+      "functions": [
+        {
+          "name": "edit_three_scalar_fields",
+          "address": "0x8c1339a4",
+          "size": 844
+        }
+      ],
+      "reference_sha256": "3dea2c7c7b1773e6f0bb03eb3274462f1dd0e9db108dd418d5c4a579170e8d03",
+      "boundary_review": "Raw1339a4..133cf0 reviewed including all branch targets and own interleaved/end literals. Adjacent entry133cf0. Input60-byte stride and offsets32/40, object52/100/104/108 checked. Signed initialization byte and NaN-preserving ordered clamping retained. Calls use known input-repeat and debug-text ABI; separately inspect before integration. Callee38cf80 inspected: R4 coordinate saved; format read at incoming stack and following varargs aligned. Existing src/ui/text_buffer.c confirms matching two-fixed-parameter declaration."
+    },
+    {
+      "id": "edit_three_scalar_fields_8c133fb0",
+      "source": "src/objects/edit_three_scalar_fields_8c133fb0.c",
+      "address": "0x8c133fb0",
+      "entry": "_edit_three_scalar_fields_8c133fb0",
+      "symbols": {
+        "_input": "0x8c41cba0",
+        "_initialized": "0x8c4d9ab4",
+        "_axis": "0x8c4d9ab0",
+        "_format": "0x8c312a8c",
+        "_repeat_button": "0x8c01d844",
+        "_set_text_size": "0x8c38c5aa",
+        "_set_text_color": "0x8c38c5b6",
+        "_draw_text": "0x8c38cf80"
+      },
+      "ranges": [
+        {
+          "offset": 1195952,
+          "size": 844
+        }
+      ],
+      "functions": [
+        {
+          "name": "edit_three_scalar_fields_8c133fb0",
+          "address": "0x8c133fb0",
+          "size": 844
+        }
+      ],
+      "reference_sha256": "42fe88a12d27011058cf83da6c084654951baca7b3261d0c611ffc2bd75f2490",
+      "boundary_review": "Raw0x8c133fb0..0x8c1342fc reviewed against exact anchor across complete range. Only fields116/120/124, initialization/axis globals and text row/column constants differ. Each adjacent entry established by catalog and prologue. Same input-repeat/debug-text callees and checked layouts; independent globals preserved."
+    },
+    {
+      "id": "edit_three_scalar_fields_8c1342fc",
+      "source": "src/objects/edit_three_scalar_fields_8c1342fc.c",
+      "address": "0x8c1342fc",
+      "entry": "_edit_three_scalar_fields_8c1342fc",
+      "symbols": {
+        "_input": "0x8c41cba0",
+        "_initialized": "0x8c4d9abc",
+        "_axis": "0x8c4d9ab8",
+        "_format": "0x8c312a8c",
+        "_repeat_button": "0x8c01d844",
+        "_set_text_size": "0x8c38c5aa",
+        "_set_text_color": "0x8c38c5b6",
+        "_draw_text": "0x8c38cf80"
+      },
+      "ranges": [
+        {
+          "offset": 1196796,
+          "size": 844
+        }
+      ],
+      "functions": [
+        {
+          "name": "edit_three_scalar_fields_8c1342fc",
+          "address": "0x8c1342fc",
+          "size": 844
+        }
+      ],
+      "reference_sha256": "b5f52f2576e7daf2a3cac6096441484b1610a9178faa4a35beb9712d2a125a64",
+      "boundary_review": "Raw0x8c1342fc..0x8c134648 reviewed against exact anchor across complete range. Only fields84/88/92, initialization/axis globals and text row/column constants differ. Each adjacent entry established by catalog and prologue. Same input-repeat/debug-text callees and checked layouts; independent globals preserved."
     },
     {
       "id": "spawn_object_0893a8_8c134bd8",
@@ -41354,6 +41825,62 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_single_entry_menu",
+      "source": "src/objects/create_single_entry_menu.c",
+      "address": "0x8c1d1f54",
+      "entry": "_create_single_entry_menu",
+      "symbols": {
+        "_context": "0x8c467180",
+        "_configuration": "0x8c289350",
+        "_create": "0x8c156bd8",
+        "_add": "0x8c156d30",
+        "_position": "0x8c1570b4"
+      },
+      "ranges": [
+        {
+          "offset": 1843028,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_single_entry_menu",
+          "address": "0x8c1d1f54",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "11e8ed5a4ab2d5f2b28b5656bd5a5ee88f59558fb5f8e9844b96e62341a14fe2",
+      "boundary_review": "Raw1d1f54..1d1fd8 reviewed,90-bytebody,2-bytealignment and40-bytepool. Callee156bd8 forwards configuration/count to156c24 and title to199b20;1570b4 uses R4/FR4/FR5. Checked all provisional resource, context and menu field offsets. Menu view130 bytes is accessed prefix, not allocation size."
+    },
+    {
+      "id": "create_single_entry_menu_8c1d3c74",
+      "source": "src/objects/create_single_entry_menu_8c1d3c74.c",
+      "address": "0x8c1d3c74",
+      "entry": "_create_single_entry_menu_8c1d3c74",
+      "symbols": {
+        "_context": "0x8c467180",
+        "_configuration": "0x8c2893a0",
+        "_create": "0x8c156bd8",
+        "_add": "0x8c156d30",
+        "_position": "0x8c1570b4"
+      },
+      "ranges": [
+        {
+          "offset": 1850484,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_single_entry_menu_8c1d3c74",
+          "address": "0x8c1d3c74",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "7f6d2214668e6bc94986ec6e84cf8453ebece327030c42603126046ea1f7876a",
+      "boundary_review": "Complete132-byte range independently checked against anchor;90-bytebody and natural2-bytealignment identical except capacity. Ten literals decoded; unchanged callees and unsigned flag temporaries. Source checks resource extent/item offset for each sibling; catalog, entry references and following entries in family-screen receipt."
+    },
+    {
       "id": "create_default_configured_object",
       "source": "src/objects/create_default_configured_object.c",
       "address": "0x8c1d4590",
@@ -42941,6 +43468,62 @@
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefix70740b0042600000. No empty neighboring function included."
     },
     {
+      "id": "create_single_entry_menu_8c217530",
+      "source": "src/objects/create_single_entry_menu_8c217530.c",
+      "address": "0x8c217530",
+      "entry": "_create_single_entry_menu_8c217530",
+      "symbols": {
+        "_context": "0x8c467180",
+        "_configuration": "0x8c2e17a0",
+        "_create": "0x8c156bd8",
+        "_add": "0x8c156d30",
+        "_position": "0x8c1570b4"
+      },
+      "ranges": [
+        {
+          "offset": 2127152,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_single_entry_menu_8c217530",
+          "address": "0x8c217530",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "951c548a8d816e2fe4007b3f95e76498116e0b932584941e257328ccd5f4384f",
+      "boundary_review": "Complete132-byte range independently checked against anchor;90-bytebody and natural2-bytealignment identical except capacity. Ten literals decoded; unchanged callees and unsigned flag temporaries. Source checks resource extent/item offset for each sibling; catalog, entry references and following entries in family-screen receipt."
+    },
+    {
+      "id": "create_single_entry_menu_8c217604",
+      "source": "src/objects/create_single_entry_menu_8c217604.c",
+      "address": "0x8c217604",
+      "entry": "_create_single_entry_menu_8c217604",
+      "symbols": {
+        "_context": "0x8c467180",
+        "_configuration": "0x8c2e17b0",
+        "_create": "0x8c156bd8",
+        "_add": "0x8c156d30",
+        "_position": "0x8c1570b4"
+      },
+      "ranges": [
+        {
+          "offset": 2127364,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_single_entry_menu_8c217604",
+          "address": "0x8c217604",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "17e4ecf61251bd367fb062785cc88be5f2b73993f5ae1a5e712925af30909301",
+      "boundary_review": "Complete132-byte range independently checked against anchor;90-bytebody and natural2-bytealignment identical except capacity. Ten literals decoded; unchanged callees and unsigned flag temporaries. Source checks resource extent/item offset for each sibling; catalog, entry references and following entries in family-screen receipt."
+    },
+    {
       "id": "destroy_object_8c2177f0",
       "source": "src/effects/destroy_object_8c2177f0.c",
       "address": "0x8c2177f0",
@@ -43090,6 +43673,62 @@
       ],
       "reference_sha256": "b867678cd01c2ffd6be9c57c4fa4b32e35a0dcff39105b3a4b53fd5af868bdb8",
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "create_single_entry_menu_8c21a66c",
+      "source": "src/objects/create_single_entry_menu_8c21a66c.c",
+      "address": "0x8c21a66c",
+      "entry": "_create_single_entry_menu_8c21a66c",
+      "symbols": {
+        "_context": "0x8c467180",
+        "_configuration": "0x8c2e1810",
+        "_create": "0x8c156bd8",
+        "_add": "0x8c156d30",
+        "_position": "0x8c1570b4"
+      },
+      "ranges": [
+        {
+          "offset": 2139756,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_single_entry_menu_8c21a66c",
+          "address": "0x8c21a66c",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "8e1f0a4ac47da4c6bd64ddb66a691340b72088f5069bdc57817057657d130224",
+      "boundary_review": "Complete132-byte range independently checked against anchor;90-bytebody and natural2-bytealignment identical except capacity. Ten literals decoded; unchanged callees and unsigned flag temporaries. Source checks resource extent/item offset for each sibling; catalog, entry references and following entries in family-screen receipt."
+    },
+    {
+      "id": "create_single_entry_menu_8c21a734",
+      "source": "src/objects/create_single_entry_menu_8c21a734.c",
+      "address": "0x8c21a734",
+      "entry": "_create_single_entry_menu_8c21a734",
+      "symbols": {
+        "_context": "0x8c467180",
+        "_configuration": "0x8c2e1820",
+        "_create": "0x8c156bd8",
+        "_add": "0x8c156d30",
+        "_position": "0x8c1570b4"
+      },
+      "ranges": [
+        {
+          "offset": 2139956,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_single_entry_menu_8c21a734",
+          "address": "0x8c21a734",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "2fb5b35df1827b1f9e5c49aa71fd04ab238f094f9ff2a35ced8774e35103f4c8",
+      "boundary_review": "Complete132-byte range independently checked against anchor;90-bytebody and natural2-bytealignment identical except capacity. Ten literals decoded; unchanged callees and unsigned flag temporaries. Source checks resource extent/item offset for each sibling; catalog, entry references and following entries in family-screen receipt."
     },
     {
       "id": "destroy_object_8c21a8c4",
