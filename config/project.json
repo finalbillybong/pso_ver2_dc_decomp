@@ -8283,6 +8283,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "initialize_context_blend_8c077e2c",
+      "source": "src/objects/initialize_context_blend_8c077e2c.c",
+      "address": "0x8c077e2c",
+      "entry": "_initialize_context_blend_8c077e2c",
+      "symbols": {
+        "_base_at": "0x8c075398",
+        "_start_at": "0x8c077e5c"
+      },
+      "ranges": [
+        {
+          "offset": 425516,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_context_blend_8c077e2c",
+          "address": "0x8c077e2c",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "42532656f6c4962be7b033f973406ff13ea44bf473c52b63fe7552d8597acb0f",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
       "id": "destroy_object_8c077e84",
       "source": "src/effects/destroy_object_8c077e84.c",
       "address": "0x8c077e84",
@@ -8907,6 +8932,35 @@
       "reference_sha256": "d2bdfe9b1bcfc6d60025e3a1d46685e3efce10c7c3a232bd398f35be714e2ba4",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_derived_context_actor_8c083370",
+      "source": "src/objects/destroy_derived_context_actor_8c083370.c",
+      "address": "0x8c083370",
+      "entry": "_destroy_derived_context_actor_8c083370",
+      "symbols": {
+        "_finish_at": "0x8c053f54",
+        "_detach_at": "0x8c052124",
+        "_embedded_at": "0x8c178048",
+        "_base_at": "0x8c0803a8",
+        "_heap": "0x8c4d97e0",
+        "_free_at": "0x8c122774"
+      },
+      "ranges": [
+        {
+          "offset": 471920,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_derived_context_actor_8c083370",
+          "address": "0x8c083370",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "387c4a847ae63343ee7b5b0ef72f20ac1a7172cf376fb333f55478896ae47eff",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
     },
     {
       "id": "spawn_object_0893a8_8c083434",
@@ -21056,6 +21110,83 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c0f1654",
+      "source": "src/objects/create_context_resources_8c0f1654.c",
+      "address": "0x8c0f1654",
+      "entry": "_create_context_resources_8c0f1654",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c470520",
+        "_descriptor": "0x8c309524"
+      },
+      "ranges": [
+        {
+          "offset": 923220,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c0f1654",
+          "address": "0x8c0f1654",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "9ecf60fe54d8faa112bbff0c29e8134843f46589c1bafaa652f6e885087af836",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c0f1698",
+      "source": "src/objects/destroy_context_resources_8c0f1698.c",
+      "address": "0x8c0f1698",
+      "entry": "_destroy_context_resources_8c0f1698",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c470520"
+      },
+      "ranges": [
+        {
+          "offset": 923288,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c0f1698",
+          "address": "0x8c0f1698",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "4c41a4eeaab206b955036d916daec9935c431353be7eac0d546673c16fe3ba13",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
+      "id": "destroy_context_resources_8c0f1b40",
+      "source": "src/objects/destroy_context_resources_8c0f1b40.c",
+      "address": "0x8c0f1b40",
+      "entry": "_destroy_context_resources_8c0f1b40",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c470540"
+      },
+      "ranges": [
+        {
+          "offset": 924480,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c0f1b40",
+          "address": "0x8c0f1b40",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "ab49cbf46405f5bd5af51f4f6c05a0b0cc4d8b50e722bcc2a8ea3b1ed264d6e1",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "spawn_object_0893a8_8c0f1b60",
       "source": "src/objects/spawn_object_0893a8_8c0f1b60.c",
       "address": "0x8c0f1b60",
@@ -21077,6 +21208,33 @@
       "reference_sha256": "fdd243cb6629bf49f1041571cbedceca7ae8560d9179e84d9b08cab74a7f48b3",
       "symbols": {},
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
+    },
+    {
+      "id": "create_context_resources_8c0f2100",
+      "source": "src/objects/create_context_resources_8c0f2100.c",
+      "address": "0x8c0f2100",
+      "entry": "_create_context_resources_8c0f2100",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c470560",
+        "_descriptor": "0x8c3096e4"
+      },
+      "ranges": [
+        {
+          "offset": 925952,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c0f2100",
+          "address": "0x8c0f2100",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "bff901826c36c6ee23871a4cace1bbdb973a074433bc8d34819dec8dd1450cda",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
     },
     {
       "id": "spawn_object_0893a8_8c0f2158",
@@ -21430,6 +21588,31 @@
       "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
+      "id": "apply_context_blend_8c0fc194",
+      "source": "src/objects/apply_context_blend_8c0fc194.c",
+      "address": "0x8c0fc194",
+      "entry": "_apply_context_blend_8c0fc194",
+      "symbols": {
+        "_base_at": "0x8c114a54",
+        "_mode_at": "0x8c37b566"
+      },
+      "ranges": [
+        {
+          "offset": 967060,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_context_blend_8c0fc194",
+          "address": "0x8c0fc194",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "0d1f0c00188d2177817adaa0affcd312c7f986f8d9b7a74c0810c87c32313daa",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
       "id": "destroy_object_8c0fc1c4",
       "source": "src/effects/destroy_object_8c0fc1c4.c",
       "address": "0x8c0fc1c4",
@@ -21531,6 +21714,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c0fce90",
+      "source": "src/objects/create_context_resources_8c0fce90.c",
+      "address": "0x8c0fce90",
+      "entry": "_create_context_resources_8c0fce90",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4706a0",
+        "_descriptor": "0x8c30aac8"
+      },
+      "ranges": [
+        {
+          "offset": 970384,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c0fce90",
+          "address": "0x8c0fce90",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "6aea285c4cd291178e7c249036398e0d4f5d679484b2e63388fa4f11a30500fe",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c0fced4",
+      "source": "src/objects/destroy_context_resources_8c0fced4.c",
+      "address": "0x8c0fced4",
+      "entry": "_destroy_context_resources_8c0fced4",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4706a0"
+      },
+      "ranges": [
+        {
+          "offset": 970452,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c0fced4",
+          "address": "0x8c0fced4",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "db02d06a2f285770758f926187845e12b48597f9bbfff85340ed0334ff3e1f89",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c0fed94",
       "source": "src/effects/destroy_object_8c0fed94.c",
       "address": "0x8c0fed94",
@@ -21555,6 +21790,33 @@
       ],
       "reference_sha256": "8b011b4c9961c1061af618290d929f31e0b975bb7ad055184f0e773b4a0869b3",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c0fedd8",
+      "source": "src/objects/create_context_resources_8c0fedd8.c",
+      "address": "0x8c0fedd8",
+      "entry": "_create_context_resources_8c0fedd8",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4706c0",
+        "_descriptor": "0x8c30ac04"
+      },
+      "ranges": [
+        {
+          "offset": 978392,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c0fedd8",
+          "address": "0x8c0fedd8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e1c0a0aed0260d5100fa9d229a839baa4cc261826ac28f8b21f41e815b6c6c3e",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
     },
     {
       "id": "destroy_object_8c0ff1b0",
@@ -21583,6 +21845,33 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c0ff1f4",
+      "source": "src/objects/create_context_resources_8c0ff1f4.c",
+      "address": "0x8c0ff1f4",
+      "entry": "_create_context_resources_8c0ff1f4",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4706e0",
+        "_descriptor": "0x8c30ac64"
+      },
+      "ranges": [
+        {
+          "offset": 979444,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c0ff1f4",
+          "address": "0x8c0ff1f4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c62118d580732ee16f069cecd8adbfefc496e402325f4a5c1d2e500ffdd425f9",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
       "id": "destroy_object_8c0ff534",
       "source": "src/effects/destroy_object_8c0ff534.c",
       "address": "0x8c0ff534",
@@ -21607,6 +21896,33 @@
       ],
       "reference_sha256": "a1b87a39634a721ecab694ef672d70eaeeb2cbc2b35196162a52a56f07c4e44a",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c0ff578",
+      "source": "src/objects/create_context_resources_8c0ff578.c",
+      "address": "0x8c0ff578",
+      "entry": "_create_context_resources_8c0ff578",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c470700",
+        "_descriptor": "0x8c30acc4"
+      },
+      "ranges": [
+        {
+          "offset": 980344,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c0ff578",
+          "address": "0x8c0ff578",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "2c0fe1162bff48a296010672c6a94e833888ffd957c6eab043c1c832067f46ad",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
     },
     {
       "id": "destroy_object_8c0ff8b8",
@@ -21635,6 +21951,33 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c0ff8fc",
+      "source": "src/objects/create_context_resources_8c0ff8fc.c",
+      "address": "0x8c0ff8fc",
+      "entry": "_create_context_resources_8c0ff8fc",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c470720",
+        "_descriptor": "0x8c30ad24"
+      },
+      "ranges": [
+        {
+          "offset": 981244,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c0ff8fc",
+          "address": "0x8c0ff8fc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "74d0b6015303cf19e702837cff85ba4a825d473f0a52cb5bbb834d1f758483d4",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
       "id": "destroy_object_8c0ffac4",
       "source": "src/effects/destroy_object_8c0ffac4.c",
       "address": "0x8c0ffac4",
@@ -21659,6 +22002,58 @@
       ],
       "reference_sha256": "fcce28fc98eb9be9b9cb638385e5cf264eb0f27b4556e712e6e3f7c36edeb091",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c0ffb08",
+      "source": "src/objects/create_context_resources_8c0ffb08.c",
+      "address": "0x8c0ffb08",
+      "entry": "_create_context_resources_8c0ffb08",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c470740",
+        "_descriptor": "0x8c30ad88"
+      },
+      "ranges": [
+        {
+          "offset": 981768,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c0ffb08",
+          "address": "0x8c0ffb08",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "7c28de7ee518143e39e1e739c4c5e95968f643d1f2c616f84c8e203867c1ec15",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c0ffb4c",
+      "source": "src/objects/destroy_context_resources_8c0ffb4c.c",
+      "address": "0x8c0ffb4c",
+      "entry": "_destroy_context_resources_8c0ffb4c",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c470740"
+      },
+      "ranges": [
+        {
+          "offset": 981836,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c0ffb4c",
+          "address": "0x8c0ffb4c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "dc3b26f47e63f91d051a9d5eb367a24e7541cdc7cfcca0ddc20b3cd401277853",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_motion_profile_8c0ffdcc",
@@ -22334,6 +22729,33 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c10731c",
+      "source": "src/objects/create_context_resources_8c10731c.c",
+      "address": "0x8c10731c",
+      "entry": "_create_context_resources_8c10731c",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d7b60",
+        "_descriptor": "0x8c30b6fc"
+      },
+      "ranges": [
+        {
+          "offset": 1012508,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c10731c",
+          "address": "0x8c10731c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "6969c9b63b2a2e40a92b8a574197b22de96ff12acc641c3f7e866c51666dd6fe",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
       "id": "destroy_object_8c1074fc",
       "source": "src/effects/destroy_object_8c1074fc.c",
       "address": "0x8c1074fc",
@@ -22907,6 +23329,35 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_derived_context_actor_8c113850",
+      "source": "src/objects/destroy_derived_context_actor_8c113850.c",
+      "address": "0x8c113850",
+      "entry": "_destroy_derived_context_actor_8c113850",
+      "symbols": {
+        "_finish_at": "0x8c053f54",
+        "_detach_at": "0x8c052124",
+        "_embedded_at": "0x8c1f1460",
+        "_base_at": "0x8c112efc",
+        "_heap": "0x8c4d97e0",
+        "_free_at": "0x8c122774"
+      },
+      "ranges": [
+        {
+          "offset": 1062992,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_derived_context_actor_8c113850",
+          "address": "0x8c113850",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "5c7a451a452c3eb7de52d1ed1a1fa9a2e370ef7ca73f45db714831bb38b9930d",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
       "id": "spawn_object_0893a8_8c1139e0",
       "source": "src/objects/spawn_object_0893a8_8c1139e0.c",
       "address": "0x8c1139e0",
@@ -23317,6 +23768,33 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c11f0c8",
+      "source": "src/objects/create_context_resources_8c11f0c8.c",
+      "address": "0x8c11f0c8",
+      "entry": "_create_context_resources_8c11f0c8",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d84c0",
+        "_descriptor": "0x8c3118f4"
+      },
+      "ranges": [
+        {
+          "offset": 1110216,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c11f0c8",
+          "address": "0x8c11f0c8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "f836da745d4815ba7f4e5f1c546ae2dc595e61088f310488e7102478befabbb7",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
       "id": "destroy_object_8c11f48c",
       "source": "src/effects/destroy_object_8c11f48c.c",
       "address": "0x8c11f48c",
@@ -23341,6 +23819,58 @@
       ],
       "reference_sha256": "823086de877841d107523ffeafd1d146b82c1ce4d0c6f71dbeb89925685e68ce",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c11f4d0",
+      "source": "src/objects/create_context_resources_8c11f4d0.c",
+      "address": "0x8c11f4d0",
+      "entry": "_create_context_resources_8c11f4d0",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d84e0",
+        "_descriptor": "0x8c31195c"
+      },
+      "ranges": [
+        {
+          "offset": 1111248,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c11f4d0",
+          "address": "0x8c11f4d0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "35f0a028601f9291f2b5ccd6573a3fcc25e7b4c2b08f5abfc75d4db61ff6c418",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c11f514",
+      "source": "src/objects/destroy_context_resources_8c11f514.c",
+      "address": "0x8c11f514",
+      "entry": "_destroy_context_resources_8c11f514",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d84e0"
+      },
+      "ranges": [
+        {
+          "offset": 1111316,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c11f514",
+          "address": "0x8c11f514",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "3edd4501f8dfbc613728fd0799fae1d82a955c601a3dac74f54f8a75f4e319b8",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c11f6b8",
@@ -23395,6 +23925,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c11f794",
+      "source": "src/objects/create_context_resources_8c11f794.c",
+      "address": "0x8c11f794",
+      "entry": "_create_context_resources_8c11f794",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d8520",
+        "_descriptor": "0x8c3119c4"
+      },
+      "ranges": [
+        {
+          "offset": 1111956,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c11f794",
+          "address": "0x8c11f794",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "5f71733a3dfd5a6b2d1e5893376cb3fb439c7f17163df1de8128974e049c3fee",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c11f7d8",
+      "source": "src/objects/destroy_context_resources_8c11f7d8.c",
+      "address": "0x8c11f7d8",
+      "entry": "_destroy_context_resources_8c11f7d8",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d8520"
+      },
+      "ranges": [
+        {
+          "offset": 1112024,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c11f7d8",
+          "address": "0x8c11f7d8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "f08cfd1ba7c930fc0dda2b13b0b1d78511353e157b07c901239a738e0c9f0013",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c11f904",
       "source": "src/effects/destroy_object_8c11f904.c",
       "address": "0x8c11f904",
@@ -23419,6 +24001,58 @@
       ],
       "reference_sha256": "fcbdab8b8a48c0d51d27b0ca05fd0b92a78f6b88730078e4de2dd7219b80c1f3",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c11f948",
+      "source": "src/objects/create_context_resources_8c11f948.c",
+      "address": "0x8c11f948",
+      "entry": "_create_context_resources_8c11f948",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d8540",
+        "_descriptor": "0x8c311a1c"
+      },
+      "ranges": [
+        {
+          "offset": 1112392,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c11f948",
+          "address": "0x8c11f948",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e683c3457050e1f406db3959d30db95b98b15c8ebbc1d07db143978811bd042e",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c11f98c",
+      "source": "src/objects/destroy_context_resources_8c11f98c.c",
+      "address": "0x8c11f98c",
+      "entry": "_destroy_context_resources_8c11f98c",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d8540"
+      },
+      "ranges": [
+        {
+          "offset": 1112460,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c11f98c",
+          "address": "0x8c11f98c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "5642ce34ce32408e0f47491c59e463f943f3d88c40ab02ea8fc1f6187646e37f",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c11fab8",
@@ -23447,6 +24081,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c11fafc",
+      "source": "src/objects/create_context_resources_8c11fafc.c",
+      "address": "0x8c11fafc",
+      "entry": "_create_context_resources_8c11fafc",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d8560",
+        "_descriptor": "0x8c311a74"
+      },
+      "ranges": [
+        {
+          "offset": 1112828,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c11fafc",
+          "address": "0x8c11fafc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "a05b03272610859346d24b6ba0d68d18518a8a3e5afa877762ffe3079e370508",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c11fb40",
+      "source": "src/objects/destroy_context_resources_8c11fb40.c",
+      "address": "0x8c11fb40",
+      "entry": "_destroy_context_resources_8c11fb40",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d8560"
+      },
+      "ranges": [
+        {
+          "offset": 1112896,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c11fb40",
+          "address": "0x8c11fb40",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "4939280fa6522c4783dc5abce13e61ad86fa9b6f331e789ad4b71ccfb1a903f6",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c11fc6c",
       "source": "src/effects/destroy_object_8c11fc6c.c",
       "address": "0x8c11fc6c",
@@ -23471,6 +24157,58 @@
       ],
       "reference_sha256": "f23503f6f9d4459304b8b9f6e5036267f41b1636e18577292dcd15385860c53d",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c11fcb0",
+      "source": "src/objects/create_context_resources_8c11fcb0.c",
+      "address": "0x8c11fcb0",
+      "entry": "_create_context_resources_8c11fcb0",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d8580",
+        "_descriptor": "0x8c311acc"
+      },
+      "ranges": [
+        {
+          "offset": 1113264,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c11fcb0",
+          "address": "0x8c11fcb0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "5dfc7fb0b962c4254ea6e048bef32f7791d6cf6054a74bf4f73e3257368ace09",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c11fcf4",
+      "source": "src/objects/destroy_context_resources_8c11fcf4.c",
+      "address": "0x8c11fcf4",
+      "entry": "_destroy_context_resources_8c11fcf4",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d8580"
+      },
+      "ranges": [
+        {
+          "offset": 1113332,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c11fcf4",
+          "address": "0x8c11fcf4",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "61d62db1addf940d68b05506578a5ebaa9397f8dee5fe8764173aa9bb0ebe730",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c11fe20",
@@ -23499,6 +24237,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c11fe64",
+      "source": "src/objects/create_context_resources_8c11fe64.c",
+      "address": "0x8c11fe64",
+      "entry": "_create_context_resources_8c11fe64",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d85a0",
+        "_descriptor": "0x8c311b24"
+      },
+      "ranges": [
+        {
+          "offset": 1113700,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c11fe64",
+          "address": "0x8c11fe64",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c659f3c131ab2ba96bbbdabd1e7c3529e0d47cdd6b6cfc0de4a9817ca67e60bd",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c11fea8",
+      "source": "src/objects/destroy_context_resources_8c11fea8.c",
+      "address": "0x8c11fea8",
+      "entry": "_destroy_context_resources_8c11fea8",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d85a0"
+      },
+      "ranges": [
+        {
+          "offset": 1113768,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c11fea8",
+          "address": "0x8c11fea8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "61556dfc5f1b884804db425f82eeafc0b5c5463b9eb819ffb35909948d5b7e34",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c11ffd4",
       "source": "src/effects/destroy_object_8c11ffd4.c",
       "address": "0x8c11ffd4",
@@ -23523,6 +24313,58 @@
       ],
       "reference_sha256": "96e9d8fb979006aa739d92da9303d54b2263483ca447a57b02d4deead94513aa",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c120018",
+      "source": "src/objects/create_context_resources_8c120018.c",
+      "address": "0x8c120018",
+      "entry": "_create_context_resources_8c120018",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d85c0",
+        "_descriptor": "0x8c311b7c"
+      },
+      "ranges": [
+        {
+          "offset": 1114136,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c120018",
+          "address": "0x8c120018",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "41ea53d99c5beb09d43a788175a1568404d84d6cd31f7fb29bcbe570b59c50b8",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c12005c",
+      "source": "src/objects/destroy_context_resources_8c12005c.c",
+      "address": "0x8c12005c",
+      "entry": "_destroy_context_resources_8c12005c",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d85c0"
+      },
+      "ranges": [
+        {
+          "offset": 1114204,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c12005c",
+          "address": "0x8c12005c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "855a44ce65c9a116533637664b3a112d6d9c65a48e5760070c15ce46f43debca",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_context_8c120328",
@@ -23653,6 +24495,33 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c122e94",
+      "source": "src/objects/create_context_resources_8c122e94.c",
+      "address": "0x8c122e94",
+      "entry": "_create_context_resources_8c122e94",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d980c",
+        "_descriptor": "0x8c311e54"
+      },
+      "ranges": [
+        {
+          "offset": 1126036,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c122e94",
+          "address": "0x8c122e94",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8f89dad337f6d6888c07f8ac8de497be6bd3d826730f63f2dc80786595760f2e",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
       "id": "destroy_object_8c123e78",
       "source": "src/effects/destroy_object_8c123e78.c",
       "address": "0x8c123e78",
@@ -23705,6 +24574,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c123f54",
+      "source": "src/objects/create_context_resources_8c123f54.c",
+      "address": "0x8c123f54",
+      "entry": "_create_context_resources_8c123f54",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d9840",
+        "_descriptor": "0x8c311f0c"
+      },
+      "ranges": [
+        {
+          "offset": 1130324,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c123f54",
+          "address": "0x8c123f54",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "704552a4ae8ae06232c872498a956a67e76eac0c94fecbd8759ef4bc9955cfbf",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c123f98",
+      "source": "src/objects/destroy_context_resources_8c123f98.c",
+      "address": "0x8c123f98",
+      "entry": "_destroy_context_resources_8c123f98",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d9840"
+      },
+      "ranges": [
+        {
+          "offset": 1130392,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c123f98",
+          "address": "0x8c123f98",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "d45a0b4e9986c1beedf7fce8ce6dcfbe304f7965da95fb41b58ae8a50edd5678",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c1240c4",
       "source": "src/effects/destroy_object_8c1240c4.c",
       "address": "0x8c1240c4",
@@ -23729,6 +24650,58 @@
       ],
       "reference_sha256": "3ff52d5576cc2ee9b0c708143ae07efb6c71eeedbcee0ded6af4e5759882f683",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c124108",
+      "source": "src/objects/create_context_resources_8c124108.c",
+      "address": "0x8c124108",
+      "entry": "_create_context_resources_8c124108",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d9860",
+        "_descriptor": "0x8c311f64"
+      },
+      "ranges": [
+        {
+          "offset": 1130760,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c124108",
+          "address": "0x8c124108",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "6ddabc8b9592fd99a618114d6d5f506aa9e02fc0dc236316f0db93bc063c6d3a",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c12414c",
+      "source": "src/objects/destroy_context_resources_8c12414c.c",
+      "address": "0x8c12414c",
+      "entry": "_destroy_context_resources_8c12414c",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d9860"
+      },
+      "ranges": [
+        {
+          "offset": 1130828,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c12414c",
+          "address": "0x8c12414c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "8b8ed0cfde3a8c2ea350396f9ca6ffd91bbd07994da5ebcbfa54e6169dd06951",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c124278",
@@ -23757,6 +24730,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c1242bc",
+      "source": "src/objects/create_context_resources_8c1242bc.c",
+      "address": "0x8c1242bc",
+      "entry": "_create_context_resources_8c1242bc",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d9880",
+        "_descriptor": "0x8c311fbc"
+      },
+      "ranges": [
+        {
+          "offset": 1131196,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1242bc",
+          "address": "0x8c1242bc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "5ea639a8221219a6ed9dc23f216bd6baadda4dea94945da18b6cde76bef0667f",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c124300",
+      "source": "src/objects/destroy_context_resources_8c124300.c",
+      "address": "0x8c124300",
+      "entry": "_destroy_context_resources_8c124300",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d9880"
+      },
+      "ranges": [
+        {
+          "offset": 1131264,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c124300",
+          "address": "0x8c124300",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "64009f035bf3a3a57f723b39cf81a7dcb88bc22e5db38c82ca5091ea071e32b9",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c12442c",
       "source": "src/effects/destroy_object_8c12442c.c",
       "address": "0x8c12442c",
@@ -23781,6 +24806,58 @@
       ],
       "reference_sha256": "337480a9ac2c307861ae1651b12f3549f1357cfa52c6ac2dc727b6bf90fba4ab",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c124470",
+      "source": "src/objects/create_context_resources_8c124470.c",
+      "address": "0x8c124470",
+      "entry": "_create_context_resources_8c124470",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d98a0",
+        "_descriptor": "0x8c31201c"
+      },
+      "ranges": [
+        {
+          "offset": 1131632,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c124470",
+          "address": "0x8c124470",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "93933903566e150f704f3ae4e53dd58dfd9ccd353b557494b00ffecd349e091e",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1244b4",
+      "source": "src/objects/destroy_context_resources_8c1244b4.c",
+      "address": "0x8c1244b4",
+      "entry": "_destroy_context_resources_8c1244b4",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d98a0"
+      },
+      "ranges": [
+        {
+          "offset": 1131700,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1244b4",
+          "address": "0x8c1244b4",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "7976a623803ec30a0af9c19a731568c8ebf751d6f77ae8f4b2109387d2b92bae",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c1245e0",
@@ -23809,6 +24886,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c124624",
+      "source": "src/objects/create_context_resources_8c124624.c",
+      "address": "0x8c124624",
+      "entry": "_create_context_resources_8c124624",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d98c0",
+        "_descriptor": "0x8c312074"
+      },
+      "ranges": [
+        {
+          "offset": 1132068,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c124624",
+          "address": "0x8c124624",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "53dcf546042f39f1d6fea4fe3031c922bb6bba30596de298a699123f0cfc3d00",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c124668",
+      "source": "src/objects/destroy_context_resources_8c124668.c",
+      "address": "0x8c124668",
+      "entry": "_destroy_context_resources_8c124668",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d98c0"
+      },
+      "ranges": [
+        {
+          "offset": 1132136,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c124668",
+          "address": "0x8c124668",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "3f3f16608921fc79b1549ee4bdd9b1eed5a8011654330be8db693487965f75b7",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c124794",
       "source": "src/effects/destroy_object_8c124794.c",
       "address": "0x8c124794",
@@ -23835,6 +24964,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c1247d8",
+      "source": "src/objects/create_context_resources_8c1247d8.c",
+      "address": "0x8c1247d8",
+      "entry": "_create_context_resources_8c1247d8",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d98e0",
+        "_descriptor": "0x8c3120cc"
+      },
+      "ranges": [
+        {
+          "offset": 1132504,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1247d8",
+          "address": "0x8c1247d8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "7c499025c7c8cf974f81679301b6f75d3781c003839b5deb43f419d30d705ed5",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c12481c",
+      "source": "src/objects/destroy_context_resources_8c12481c.c",
+      "address": "0x8c12481c",
+      "entry": "_destroy_context_resources_8c12481c",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d98e0"
+      },
+      "ranges": [
+        {
+          "offset": 1132572,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c12481c",
+          "address": "0x8c12481c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "ec370aad8b4af7b7983228094b091d6ee1098ab7020f364f037a7ef5b27630c8",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c124948",
       "source": "src/effects/destroy_object_8c124948.c",
       "address": "0x8c124948",
@@ -23859,6 +25040,58 @@
       ],
       "reference_sha256": "2fdeb7362a70471210823cc78ab41d469f786e9ccec15a7a52db25f87cb7da89",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c12498c",
+      "source": "src/objects/create_context_resources_8c12498c.c",
+      "address": "0x8c12498c",
+      "entry": "_create_context_resources_8c12498c",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d9900",
+        "_descriptor": "0x8c312124"
+      },
+      "ranges": [
+        {
+          "offset": 1132940,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c12498c",
+          "address": "0x8c12498c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "345752e9fb968ad99c586898a3061057f449fd74d288a9c1969e2247bada50a8",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1249d0",
+      "source": "src/objects/destroy_context_resources_8c1249d0.c",
+      "address": "0x8c1249d0",
+      "entry": "_destroy_context_resources_8c1249d0",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d9900"
+      },
+      "ranges": [
+        {
+          "offset": 1133008,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1249d0",
+          "address": "0x8c1249d0",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "1d751b11e02cec89112065264adc7d80db7e6ea6683e3d4c49207acc181c967d",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "request_actor_mode_zero_8c1275a8",
@@ -23936,6 +25169,31 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "destroy_context_resources_8c1290fc",
+      "source": "src/objects/destroy_context_resources_8c1290fc.c",
+      "address": "0x8c1290fc",
+      "entry": "_destroy_context_resources_8c1290fc",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d9960"
+      },
+      "ranges": [
+        {
+          "offset": 1151228,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1290fc",
+          "address": "0x8c1290fc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "cd7aca6946ea8af80864f7fefc0ce64edd8729db0e0477acd48e682c47022914",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "spawn_object_0893a8_8c12911c",
       "source": "src/objects/spawn_object_0893a8_8c12911c.c",
       "address": "0x8c12911c",
@@ -23983,6 +25241,58 @@
       ],
       "reference_sha256": "010e1a2ea0976cf6f320c6f7cecfa6e4682da08979106e2c2e250ed15cda6965",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c12ae50",
+      "source": "src/objects/create_context_resources_8c12ae50.c",
+      "address": "0x8c12ae50",
+      "entry": "_create_context_resources_8c12ae50",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4d99a0",
+        "_descriptor": "0x8c312634"
+      },
+      "ranges": [
+        {
+          "offset": 1158736,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c12ae50",
+          "address": "0x8c12ae50",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c590c931c29fa2a3fd380b0d891d1c06734f6fa40a8a46d1c31464b15186ef95",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c12ae94",
+      "source": "src/objects/destroy_context_resources_8c12ae94.c",
+      "address": "0x8c12ae94",
+      "entry": "_destroy_context_resources_8c12ae94",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d99a0"
+      },
+      "ranges": [
+        {
+          "offset": 1158804,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c12ae94",
+          "address": "0x8c12ae94",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "0f922ff984be6ed9d122c32d3bf5a6ad8bf72a2685579b46dd9a438a0cd3f141",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "spawn_object_0893a8_8c130714",
@@ -24080,6 +25390,31 @@
       "reference_sha256": "10a813fc47a00e865acdd2720c0d4b28cf0460e5bc31c11b44b24aaadefea8b2",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_context_resources_8c132380",
+      "source": "src/objects/destroy_context_resources_8c132380.c",
+      "address": "0x8c132380",
+      "entry": "_destroy_context_resources_8c132380",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4d9a60"
+      },
+      "ranges": [
+        {
+          "offset": 1188736,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c132380",
+          "address": "0x8c132380",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "7e62e146d02f2c679df1c57b27baaf1687977cd98cf6ed8c537c0cdb49493bd8",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "spawn_object_0893a8_8c1326c4",
@@ -25444,6 +26779,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_context_resources_8c14ce04",
+      "source": "src/objects/destroy_context_resources_8c14ce04.c",
+      "address": "0x8c14ce04",
+      "entry": "_destroy_context_resources_8c14ce04",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4da620"
+      },
+      "ranges": [
+        {
+          "offset": 1297924,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c14ce04",
+          "address": "0x8c14ce04",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "5a2aa1c63815498ad18cadee37ee574d1b95bbbf0ddedacce109273295a26881",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "spawn_object_0893a8_8c14ce24",
       "source": "src/objects/spawn_object_0893a8_8c14ce24.c",
       "address": "0x8c14ce24",
@@ -26047,6 +27407,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c15d764",
+      "source": "src/objects/create_context_resources_8c15d764.c",
+      "address": "0x8c15d764",
+      "entry": "_create_context_resources_8c15d764",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4db180",
+        "_descriptor": "0x8c3167f4"
+      },
+      "ranges": [
+        {
+          "offset": 1365860,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c15d764",
+          "address": "0x8c15d764",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "4e2d47b429580c0a275b4df2f779f3b967731598d0e1d1f51d61a9be15e18872",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c15d7a8",
+      "source": "src/objects/destroy_context_resources_8c15d7a8.c",
+      "address": "0x8c15d7a8",
+      "entry": "_destroy_context_resources_8c15d7a8",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4db180"
+      },
+      "ranges": [
+        {
+          "offset": 1365928,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c15d7a8",
+          "address": "0x8c15d7a8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "000f742b604d74c42d6af82c8fff52ef7b0f9318bee095dfb5fa721b31362159",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c15da5c",
       "source": "src/effects/destroy_object_8c15da5c.c",
       "address": "0x8c15da5c",
@@ -26097,6 +27509,58 @@
       ],
       "reference_sha256": "5e5b82770285ffc96db9ec8266bfe7e14607a8379bbbd7a3be56351539a05197",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c15db6c",
+      "source": "src/objects/create_context_resources_8c15db6c.c",
+      "address": "0x8c15db6c",
+      "entry": "_create_context_resources_8c15db6c",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4db1a0",
+        "_descriptor": "0x8c316934"
+      },
+      "ranges": [
+        {
+          "offset": 1366892,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c15db6c",
+          "address": "0x8c15db6c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "d2c0bf5af5db1c6fc91fb3c31c362682ce07f1bbd264d05a0bdd164f642fd1b6",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c15dbb0",
+      "source": "src/objects/destroy_context_resources_8c15dbb0.c",
+      "address": "0x8c15dbb0",
+      "entry": "_destroy_context_resources_8c15dbb0",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4db1a0"
+      },
+      "ranges": [
+        {
+          "offset": 1366960,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c15dbb0",
+          "address": "0x8c15dbb0",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "9612803a8bc0f8144da792bd295327a1b7af2749bbe015524b2d4ef35603f2bb",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c16172c",
@@ -31618,6 +33082,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c19fe7c",
+      "source": "src/objects/create_context_resources_8c19fe7c.c",
+      "address": "0x8c19fe7c",
+      "entry": "_create_context_resources_8c19fe7c",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4dc580",
+        "_descriptor": "0x8c31ce3c"
+      },
+      "ranges": [
+        {
+          "offset": 1638012,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c19fe7c",
+          "address": "0x8c19fe7c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "507e01b02a086ae7aff699446f39f47d7a0e0b5df6267c467e89c12771ebf098",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c19fec0",
+      "source": "src/objects/destroy_context_resources_8c19fec0.c",
+      "address": "0x8c19fec0",
+      "entry": "_destroy_context_resources_8c19fec0",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4dc580"
+      },
+      "ranges": [
+        {
+          "offset": 1638080,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c19fec0",
+          "address": "0x8c19fec0",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "23be0503f19f5fab43e57da14dab94d4e69dc3ad3442531bddacbefd6b5cbd72",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "word_operation_8c1a0474",
       "source": "src/objects/word_operation_8c1a0474.c",
       "address": "0x8c1a0474",
@@ -31665,6 +33181,58 @@
       ],
       "reference_sha256": "f2ac58c5e8d2120a9b47e3df9d8fed2e24bffe6f035619f4fb6052ab8c527d32",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c1a0898",
+      "source": "src/objects/create_context_resources_8c1a0898.c",
+      "address": "0x8c1a0898",
+      "entry": "_create_context_resources_8c1a0898",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4dc5c0",
+        "_descriptor": "0x8c31cf04"
+      },
+      "ranges": [
+        {
+          "offset": 1640600,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1a0898",
+          "address": "0x8c1a0898",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "eb9b234873cf2207a89c6cebc18827e0fff46c4e27a4093ce4a9032e93cf5c0c",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1a08dc",
+      "source": "src/objects/destroy_context_resources_8c1a08dc.c",
+      "address": "0x8c1a08dc",
+      "entry": "_destroy_context_resources_8c1a08dc",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4dc5c0"
+      },
+      "ranges": [
+        {
+          "offset": 1640668,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1a08dc",
+          "address": "0x8c1a08dc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "b8667f86b7cc7a9b726127fc937e99d00c03b3a72bb2c6d817e1a8c544d67e63",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "spawn_object_0893a8_8c1a08fc",
@@ -31791,6 +33359,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c1a1a98",
+      "source": "src/objects/create_context_resources_8c1a1a98.c",
+      "address": "0x8c1a1a98",
+      "entry": "_create_context_resources_8c1a1a98",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4dc600",
+        "_descriptor": "0x8c31d4b4"
+      },
+      "ranges": [
+        {
+          "offset": 1645208,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1a1a98",
+          "address": "0x8c1a1a98",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "98b7d0ea88d51e7658da21adc6afa6cc22e69b53afd353a9e59cf2f5cf0f4fa0",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1a1adc",
+      "source": "src/objects/destroy_context_resources_8c1a1adc.c",
+      "address": "0x8c1a1adc",
+      "entry": "_destroy_context_resources_8c1a1adc",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4dc600"
+      },
+      "ranges": [
+        {
+          "offset": 1645276,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1a1adc",
+          "address": "0x8c1a1adc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "7902ef55506b4726d55aa26f3d481702744914a2001881164ca90d0986d97e31",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c1a1c48",
       "source": "src/effects/destroy_object_8c1a1c48.c",
       "address": "0x8c1a1c48",
@@ -31815,6 +33435,58 @@
       ],
       "reference_sha256": "3b1097814b265aee77fe206fa01eee189ba2d7075df45cdc7c41e511086a615c",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c1a1c8c",
+      "source": "src/objects/create_context_resources_8c1a1c8c.c",
+      "address": "0x8c1a1c8c",
+      "entry": "_create_context_resources_8c1a1c8c",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4dc620",
+        "_descriptor": "0x8c31d514"
+      },
+      "ranges": [
+        {
+          "offset": 1645708,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1a1c8c",
+          "address": "0x8c1a1c8c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "065500bad7a138a89145b4b4f8ac51b82c6159f28aa2cc912515070ab2781f11",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1a1cd0",
+      "source": "src/objects/destroy_context_resources_8c1a1cd0.c",
+      "address": "0x8c1a1cd0",
+      "entry": "_destroy_context_resources_8c1a1cd0",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4dc620"
+      },
+      "ranges": [
+        {
+          "offset": 1645776,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1a1cd0",
+          "address": "0x8c1a1cd0",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "a2b0e147a54c9edf23b0d491b1bc9e0e229a7d7a35612b9c40d6169cd4757b3c",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c1a1dfc",
@@ -31843,6 +33515,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c1a1e40",
+      "source": "src/objects/create_context_resources_8c1a1e40.c",
+      "address": "0x8c1a1e40",
+      "entry": "_create_context_resources_8c1a1e40",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4dc640",
+        "_descriptor": "0x8c31d574"
+      },
+      "ranges": [
+        {
+          "offset": 1646144,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1a1e40",
+          "address": "0x8c1a1e40",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "17438f922c775415d637612f7cb47a39b3cd013b8e9f28d5d231506d12406d49",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1a1e84",
+      "source": "src/objects/destroy_context_resources_8c1a1e84.c",
+      "address": "0x8c1a1e84",
+      "entry": "_destroy_context_resources_8c1a1e84",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4dc640"
+      },
+      "ranges": [
+        {
+          "offset": 1646212,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1a1e84",
+          "address": "0x8c1a1e84",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "9b851e661b8f821f75edf06236f205b999dacbc5a3b5665fce7f8a5966ea8eec",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c1a1fb0",
       "source": "src/effects/destroy_object_8c1a1fb0.c",
       "address": "0x8c1a1fb0",
@@ -31869,6 +33593,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c1a1ff4",
+      "source": "src/objects/create_context_resources_8c1a1ff4.c",
+      "address": "0x8c1a1ff4",
+      "entry": "_create_context_resources_8c1a1ff4",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4dc660",
+        "_descriptor": "0x8c31d5d4"
+      },
+      "ranges": [
+        {
+          "offset": 1646580,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1a1ff4",
+          "address": "0x8c1a1ff4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "96f3d054c30b4da9fc9adba8df9663578628c3477aebfba639619c4f7d88843e",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1a2038",
+      "source": "src/objects/destroy_context_resources_8c1a2038.c",
+      "address": "0x8c1a2038",
+      "entry": "_destroy_context_resources_8c1a2038",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4dc660"
+      },
+      "ranges": [
+        {
+          "offset": 1646648,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1a2038",
+          "address": "0x8c1a2038",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "19aa085eef3c4a0e63861907e282ba8f005c683ac441737ef1b27b157dc88809",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c1a2164",
       "source": "src/effects/destroy_object_8c1a2164.c",
       "address": "0x8c1a2164",
@@ -31893,6 +33669,31 @@
       ],
       "reference_sha256": "7519b2df25fe63b16348eebd98a27bd4c8f888671687fb11bb91c7ffcc12cadd",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_context_resources_8c1a2204",
+      "source": "src/objects/destroy_context_resources_8c1a2204.c",
+      "address": "0x8c1a2204",
+      "entry": "_destroy_context_resources_8c1a2204",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4dc688"
+      },
+      "ranges": [
+        {
+          "offset": 1647108,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1a2204",
+          "address": "0x8c1a2204",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "d51b9183cea9426a8aba7946037fdf27e22ed7bcac944924128b9e73bc5c3082",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c1a2430",
@@ -33028,6 +34829,31 @@
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
+      "id": "destroy_context_resources_8c1aeb74",
+      "source": "src/objects/destroy_context_resources_8c1aeb74.c",
+      "address": "0x8c1aeb74",
+      "entry": "_destroy_context_resources_8c1aeb74",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4e22e0"
+      },
+      "ranges": [
+        {
+          "offset": 1698676,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1aeb74",
+          "address": "0x8c1aeb74",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "c776c795f852c4ccaf5072fbd14a599c3c1bf1ba59addcd15e9def9056338249",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "spawn_object_0893a8_8c1aeb94",
       "source": "src/objects/spawn_object_0893a8_8c1aeb94.c",
       "address": "0x8c1aeb94",
@@ -33072,6 +34898,58 @@
       "reference_sha256": "cc843449c9501ec9f40f1163f923a34836ddffff69de2ccb8034f0b98365064a",
       "symbols": {},
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
+    },
+    {
+      "id": "create_context_resources_8c1af684",
+      "source": "src/objects/create_context_resources_8c1af684.c",
+      "address": "0x8c1af684",
+      "entry": "_create_context_resources_8c1af684",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4e2320",
+        "_descriptor": "0x8c325f28"
+      },
+      "ranges": [
+        {
+          "offset": 1701508,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1af684",
+          "address": "0x8c1af684",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "9718a2af77b00bd3aabeb0482b0984dcfd03b0276fbec028f1257f3f5f62877a",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1af6c8",
+      "source": "src/objects/destroy_context_resources_8c1af6c8.c",
+      "address": "0x8c1af6c8",
+      "entry": "_destroy_context_resources_8c1af6c8",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4e2320"
+      },
+      "ranges": [
+        {
+          "offset": 1701576,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1af6c8",
+          "address": "0x8c1af6c8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "75b1dab12c5cfa3398f11848ad4ef991ba10cc71b61e7f6b1eb4779c5dcbd45f",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "spawn_object_0893a8_8c1af6e8",
@@ -33192,6 +35070,58 @@
       ],
       "reference_sha256": "581b3dc9022459c2db4f2fdfddc511e9797a43219be10e5d44f86a8893b48ab6",
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "create_context_resources_8c1b0514",
+      "source": "src/objects/create_context_resources_8c1b0514.c",
+      "address": "0x8c1b0514",
+      "entry": "_create_context_resources_8c1b0514",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4e2380",
+        "_descriptor": "0x8c326044"
+      },
+      "ranges": [
+        {
+          "offset": 1705236,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1b0514",
+          "address": "0x8c1b0514",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e412271b47d727dfe05a041f944eaed7e07b6710606e89a1af63ee1f20551781",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1b0558",
+      "source": "src/objects/destroy_context_resources_8c1b0558.c",
+      "address": "0x8c1b0558",
+      "entry": "_destroy_context_resources_8c1b0558",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4e2380"
+      },
+      "ranges": [
+        {
+          "offset": 1705304,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1b0558",
+          "address": "0x8c1b0558",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "6d9ac44e07af60f10a51a5e2a3bd7c031dd8ac966f666439c7056fe46d4eb067",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c1b08ac",
@@ -33639,6 +35569,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c1bf6b8",
+      "source": "src/objects/create_context_resources_8c1bf6b8.c",
+      "address": "0x8c1bf6b8",
+      "entry": "_create_context_resources_8c1bf6b8",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4e2c00",
+        "_descriptor": "0x8c32857c"
+      },
+      "ranges": [
+        {
+          "offset": 1767096,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1bf6b8",
+          "address": "0x8c1bf6b8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "cda90c1bf527453f7dfdac582cc19fe8573cb1d364b4c10d27f4b0fa0c9104af",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1bf6fc",
+      "source": "src/objects/destroy_context_resources_8c1bf6fc.c",
+      "address": "0x8c1bf6fc",
+      "entry": "_destroy_context_resources_8c1bf6fc",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4e2c00"
+      },
+      "ranges": [
+        {
+          "offset": 1767164,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1bf6fc",
+          "address": "0x8c1bf6fc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "763e354847460ecaa6ae8da0a453a24b337de8894621d2ca9268b42107796c82",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c1bfa54",
       "source": "src/effects/destroy_object_8c1bfa54.c",
       "address": "0x8c1bfa54",
@@ -33689,6 +35671,83 @@
       ],
       "reference_sha256": "43daf3a632a48912f4b6da87dd3907583d9cd40edd4040cdf68fe8ea8be39453",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_context_resources_8c1c0278",
+      "source": "src/objects/destroy_context_resources_8c1c0278.c",
+      "address": "0x8c1c0278",
+      "entry": "_destroy_context_resources_8c1c0278",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4e2c40"
+      },
+      "ranges": [
+        {
+          "offset": 1770104,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1c0278",
+          "address": "0x8c1c0278",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "c7358f348131219791191d59f61111af68a341cea31d3085434799fd5e3747c1",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
+      "id": "create_context_resources_8c1c0534",
+      "source": "src/objects/create_context_resources_8c1c0534.c",
+      "address": "0x8c1c0534",
+      "entry": "_create_context_resources_8c1c0534",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4e2c60",
+        "_descriptor": "0x8c328714"
+      },
+      "ranges": [
+        {
+          "offset": 1770804,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1c0534",
+          "address": "0x8c1c0534",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b23d779093a7d2b952dddd148f8e79b5fd88f17bb0723209aebad5ee0396dbc3",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1c0578",
+      "source": "src/objects/destroy_context_resources_8c1c0578.c",
+      "address": "0x8c1c0578",
+      "entry": "_destroy_context_resources_8c1c0578",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4e2c60"
+      },
+      "ranges": [
+        {
+          "offset": 1770872,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1c0578",
+          "address": "0x8c1c0578",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "d0fd54c4e50f6043d8fa2bdc02e26f638ea9bd221925ad8e0b1476089615fb7a",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c1c0e34",
@@ -33790,6 +35849,31 @@
       ],
       "reference_sha256": "8373d78940ebe2fe163230055a73db51abb0a961ec8bfc61636d25ad5fe4dbfb",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_context_resources_8c1c3dac",
+      "source": "src/objects/destroy_context_resources_8c1c3dac.c",
+      "address": "0x8c1c3dac",
+      "entry": "_destroy_context_resources_8c1c3dac",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4e2d00"
+      },
+      "ranges": [
+        {
+          "offset": 1785260,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1c3dac",
+          "address": "0x8c1c3dac",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "283d7566e4ed8eaf0d20cc637fa1deefcbcc6bcbd6697c50a16b0fee217dbda0",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c1c4464",
@@ -34202,6 +36286,110 @@
       ],
       "reference_sha256": "2bd2dfe544d6297eb18a411c2f16dd2e6a27cff359a1d5783aedd407a4542a44",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c1c6c00",
+      "source": "src/objects/create_context_resources_8c1c6c00.c",
+      "address": "0x8c1c6c00",
+      "entry": "_create_context_resources_8c1c6c00",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4e2de0",
+        "_descriptor": "0x8c328d44"
+      },
+      "ranges": [
+        {
+          "offset": 1797120,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1c6c00",
+          "address": "0x8c1c6c00",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "31261c10509ee1152b564a207a77ebce2195e08fcde05c9194b9db94615232ec",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1c6c44",
+      "source": "src/objects/destroy_context_resources_8c1c6c44.c",
+      "address": "0x8c1c6c44",
+      "entry": "_destroy_context_resources_8c1c6c44",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4e2de0"
+      },
+      "ranges": [
+        {
+          "offset": 1797188,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1c6c44",
+          "address": "0x8c1c6c44",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "d74cc2b07c94153621392c51c86c738e096c5d74208c89eccd3b1071f990cfd1",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
+      "id": "create_context_resources_8c1c6eec",
+      "source": "src/objects/create_context_resources_8c1c6eec.c",
+      "address": "0x8c1c6eec",
+      "entry": "_create_context_resources_8c1c6eec",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4e2e00",
+        "_descriptor": "0x8c328dac"
+      },
+      "ranges": [
+        {
+          "offset": 1797868,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1c6eec",
+          "address": "0x8c1c6eec",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "7d3845e31b5bd292540f8c47e1ff9517d35ec7b98064dd8a7200ecef560cdfed",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1c6f30",
+      "source": "src/objects/destroy_context_resources_8c1c6f30.c",
+      "address": "0x8c1c6f30",
+      "entry": "_destroy_context_resources_8c1c6f30",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4e2e00"
+      },
+      "ranges": [
+        {
+          "offset": 1797936,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1c6f30",
+          "address": "0x8c1c6f30",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "4fd10b16307f74da9d8baad35f800c2755b0bc21feb7d58e00fefec38cf9440e",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
       "id": "destroy_object_8c1c7464",
@@ -34783,6 +36971,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c1da1c0",
+      "source": "src/objects/create_context_resources_8c1da1c0.c",
+      "address": "0x8c1da1c0",
+      "entry": "_create_context_resources_8c1da1c0",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c4e2f40",
+        "_descriptor": "0x8c32aafc"
+      },
+      "ranges": [
+        {
+          "offset": 1876416,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c1da1c0",
+          "address": "0x8c1da1c0",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "b60f94646d7b054a88e8d5ee991fc44992f1484f0689b65bbc470f820e4fefc4",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c1da204",
+      "source": "src/objects/destroy_context_resources_8c1da204.c",
+      "address": "0x8c1da204",
+      "entry": "_destroy_context_resources_8c1da204",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c4e2f40"
+      },
+      "ranges": [
+        {
+          "offset": 1876484,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c1da204",
+          "address": "0x8c1da204",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "2d6bcd4e33b6d337b0813241eb9019e2ae5b3735e3fadc3682a5a604363f9707",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_color_rise_8c1da974",
       "source": "src/effects/destroy_color_rise_8c1da974.c",
       "address": "0x8c1da974",
@@ -35317,6 +37557,31 @@
       ],
       "reference_sha256": "114b47f835c4dcc985130f2ec7f814ccc3913683c53514f89c8dac25d5c5aa5c",
       "boundary_review": "Whitelist decoding covers every instruction including RTS delay slot; each PC load resolved within complete range; independently catalogued next entry 0x8c1eec60. Store evidence saved in constant-float-family-inventory.json."
+    },
+    {
+      "id": "initialize_context_blend_8c1f1430",
+      "source": "src/objects/initialize_context_blend_8c1f1430.c",
+      "address": "0x8c1f1430",
+      "entry": "_initialize_context_blend_8c1f1430",
+      "symbols": {
+        "_base_at": "0x8c114970",
+        "_start_at": "0x8c1f156c"
+      },
+      "ranges": [
+        {
+          "offset": 1971248,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_context_blend_8c1f1430",
+          "address": "0x8c1f1430",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "c4144960894827f54408d877506a07608d64e5ffab827b345bb40f9ab6e3e515",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
     },
     {
       "id": "destroy_field_8c1f1460",
@@ -38259,6 +40524,33 @@
       ],
       "reference_sha256": "8668d69f4f25f3c75229324f2a7f01b07cc5d7a615b9d53baf16dbe8431e85ad",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c22c254",
+      "source": "src/objects/create_context_resources_8c22c254.c",
+      "address": "0x8c22c254",
+      "entry": "_create_context_resources_8c22c254",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c506320",
+        "_descriptor": "0x8c338340"
+      },
+      "ranges": [
+        {
+          "offset": 2212436,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c22c254",
+          "address": "0x8c22c254",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "6fe4d6763958c445531ba92edc92dab21e4e4c64a42694798b736b5b6c0b152b",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
     },
     {
       "id": "destroy_object_8c22c3b4",
@@ -41289,6 +43581,58 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c245854",
+      "source": "src/objects/create_context_resources_8c245854.c",
+      "address": "0x8c245854",
+      "entry": "_create_context_resources_8c245854",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c510e60",
+        "_descriptor": "0x8c33ae54"
+      },
+      "ranges": [
+        {
+          "offset": 2316372,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c245854",
+          "address": "0x8c245854",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "31e7383de2f7e4c5367666c5c948c995dc2d0f8a50bda76aeada876d7ea7e131",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c245898",
+      "source": "src/objects/destroy_context_resources_8c245898.c",
+      "address": "0x8c245898",
+      "entry": "_destroy_context_resources_8c245898",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c510e60"
+      },
+      "ranges": [
+        {
+          "offset": 2316440,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c245898",
+          "address": "0x8c245898",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "1d14cbfb494c0c6c8e20d9bfe62785183d5394cec4fbe746b4d77384c7fa17e7",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
       "id": "destroy_object_8c245be4",
       "source": "src/effects/destroy_object_8c245be4.c",
       "address": "0x8c245be4",
@@ -41774,6 +44118,33 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "create_context_resources_8c24a784",
+      "source": "src/objects/create_context_resources_8c24a784.c",
+      "address": "0x8c24a784",
+      "entry": "_create_context_resources_8c24a784",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c510f60",
+        "_descriptor": "0x8c33b2a4"
+      },
+      "ranges": [
+        {
+          "offset": 2336644,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c24a784",
+          "address": "0x8c24a784",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "61a4454f37ffbf4905663e5e6e54bdd04f4b96c8ac5e09a244df0e97f1bb7014",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
       "id": "spawn_object_0893a8_8c24a7ec",
       "source": "src/objects/spawn_object_0893a8_8c24a7ec.c",
       "address": "0x8c24a7ec",
@@ -41795,6 +44166,33 @@
       "reference_sha256": "c5480c841f5a1f64459e7492947ebcc8102587793d4fb525fd762b012dc7bc9e",
       "symbols": {},
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
+    },
+    {
+      "id": "create_context_resources_8c24aac4",
+      "source": "src/objects/create_context_resources_8c24aac4.c",
+      "address": "0x8c24aac4",
+      "entry": "_create_context_resources_8c24aac4",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c510f64",
+        "_descriptor": "0x8c33b2c0"
+      },
+      "ranges": [
+        {
+          "offset": 2337476,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c24aac4",
+          "address": "0x8c24aac4",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "68e039a75a2593c6e8582e46b46121ee7b14ae0f27f8656bd467e3d2c9c3dc2a",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
     },
     {
       "id": "spawn_object_0893a8_8c24ab2c",
@@ -41867,6 +44265,87 @@
       ],
       "reference_sha256": "77a051ad593d87c38fa78177724ae77bdcf3edc26103bf3e91a3445156fd5dfc",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_context_resources_8c24bfb8",
+      "source": "src/objects/create_context_resources_8c24bfb8.c",
+      "address": "0x8c24bfb8",
+      "entry": "_create_context_resources_8c24bfb8",
+      "symbols": {
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610",
+        "_context": "0x8c510fe0",
+        "_descriptor": "0x8c33ea30"
+      },
+      "ranges": [
+        {
+          "offset": 2342840,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_resources_8c24bfb8",
+          "address": "0x8c24bfb8",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "355fbbcdb01a1be529d0f6a702d83acd00d04c2b760f4dc26a15c6df99cf043c",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
+      "id": "destroy_context_resources_8c24bffc",
+      "source": "src/objects/destroy_context_resources_8c24bffc.c",
+      "address": "0x8c24bffc",
+      "entry": "_destroy_context_resources_8c24bffc",
+      "symbols": {
+        "_destroy_at": "0x8c03dc40",
+        "_context": "0x8c510fe0"
+      },
+      "ranges": [
+        {
+          "offset": 2342908,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_context_resources_8c24bffc",
+          "address": "0x8c24bffc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "f6aac4d41310c4de1283b1ae1f9bed04381e87e4a02ffadab26d57e77a8455e9",
+      "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
+    },
+    {
+      "id": "destroy_derived_context_actor_8c24c6e4",
+      "source": "src/objects/destroy_derived_context_actor_8c24c6e4.c",
+      "address": "0x8c24c6e4",
+      "entry": "_destroy_derived_context_actor_8c24c6e4",
+      "symbols": {
+        "_finish_at": "0x8c053f54",
+        "_detach_at": "0x8c052124",
+        "_embedded_at": "0x8c178048",
+        "_base_at": "0x8c0436e0",
+        "_heap": "0x8c4d97e0",
+        "_free_at": "0x8c122774"
+      },
+      "ranges": [
+        {
+          "offset": 2344676,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_derived_context_actor_8c24c6e4",
+          "address": "0x8c24c6e4",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "464e862fec015825231d6bef19524fe78f3a1c06330255427e2856d04ec9d249",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
     },
     {
       "id": "destroy_color_rise_8c24cf64",
@@ -43184,6 +45663,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "initialize_context_blend_8c2514d0",
+      "source": "src/objects/initialize_context_blend_8c2514d0.c",
+      "address": "0x8c2514d0",
+      "entry": "_initialize_context_blend_8c2514d0",
+      "symbols": {
+        "_base_at": "0x8c241158",
+        "_start_at": "0x8c251500"
+      },
+      "ranges": [
+        {
+          "offset": 2364624,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_context_blend_8c2514d0",
+          "address": "0x8c2514d0",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "fa011564d08e2988d1c8f5e325ccfa1cb9d4620bf7340fe7e60ab4a6d47e7964",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
       "id": "destroy_object_8c251528",
       "source": "src/effects/destroy_object_8c251528.c",
       "address": "0x8c251528",
@@ -43565,6 +46069,31 @@
       ],
       "reference_sha256": "116922cc9bc9b1ac1307456d7e57c721f98fd5f6506b45ce8cd0f71098f7953d",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "initialize_context_blend_8c252bfc",
+      "source": "src/objects/initialize_context_blend_8c252bfc.c",
+      "address": "0x8c252bfc",
+      "entry": "_initialize_context_blend_8c252bfc",
+      "symbols": {
+        "_base_at": "0x8c241158",
+        "_start_at": "0x8c252c2c"
+      },
+      "ranges": [
+        {
+          "offset": 2370556,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_context_blend_8c252bfc",
+          "address": "0x8c252bfc",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "d83814e7a5da1abd4b1fae0f659568326994c447952c86e4de4898ffc6359c54",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
     },
     {
       "id": "destroy_object_8c252c54",
@@ -44002,6 +46531,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "initialize_context_blend_8c254378",
+      "source": "src/objects/initialize_context_blend_8c254378.c",
+      "address": "0x8c254378",
+      "entry": "_initialize_context_blend_8c254378",
+      "symbols": {
+        "_base_at": "0x8c075398",
+        "_start_at": "0x8c2543a8"
+      },
+      "ranges": [
+        {
+          "offset": 2376568,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_context_blend_8c254378",
+          "address": "0x8c254378",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "5591d374978ba2c6eba1dc64fa9121a44a0c497fd40bc03e66e59f34834c8ad6",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
+    },
+    {
       "id": "destroy_object_8c2543bc",
       "source": "src/effects/destroy_object_8c2543bc.c",
       "address": "0x8c2543bc",
@@ -44156,6 +46710,31 @@
       ],
       "reference_sha256": "9251759b6e8d952928cc8a73bda0c02b4acc9651a8418e1b06f66515c362f35f",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "initialize_context_blend_8c254a58",
+      "source": "src/objects/initialize_context_blend_8c254a58.c",
+      "address": "0x8c254a58",
+      "entry": "_initialize_context_blend_8c254a58",
+      "symbols": {
+        "_base_at": "0x8c075398",
+        "_start_at": "0x8c254a88"
+      },
+      "ranges": [
+        {
+          "offset": 2378328,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_context_blend_8c254a58",
+          "address": "0x8c254a58",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "6a4ceef844c0aca0f85494b0efbd20addd60fa4b42f91946461d0d213da85122",
+      "boundary_review": "All fixed instruction words, branches, return delay slots and literal references checked against the exact template. Candidate entry/reference and next boundary confirmed. Resource variants retain same allocation/constructor ABI; parent/context forwarded for075398/241158 base chains after raw review. Provisional field offsets checked."
     },
     {
       "id": "destroy_object_8c254ab0",

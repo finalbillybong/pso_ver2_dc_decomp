@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "ee2336aac515ee98e3a8d68a9cf2a7dfdb4d389fbe1798af75c5b830eaebe60e",
+    "config/project.json": "b421f7cc2569a396e8cd49243903e468aba497bf6d2e0c502091064e044b82c5",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/actor_mode_noop.c": "091e6fbf33d49b3ac1981b122742334eb3466776c1dbc6f65de3c8d221490738",
@@ -1166,6 +1166,7 @@
     "src/objects/advance_text_context.c": "b1967a54ec18b4bfde893ef1f58490d451c7b35c8b1188844cd9a63d81401753",
     "src/objects/append_position_ring.c": "8cd88584b647a7cd7b1ff31e5093475849d5cbd7bc062d4a4779b35b2ce83fc5",
     "src/objects/apply_context_blend.c": "955fb3995b65c445b13ee2d46787199f3ba152693589f8c1cd4c0042b6178b6b",
+    "src/objects/apply_context_blend_8c0fc194.c": "fe7cfc3537341a9fce908d0a3432e6e9d8486d387a3a59244d224d51ece025fb",
     "src/objects/apply_context_target.cpp": "2fa86cc73c3dc6b41d79ede672e793520717db74b44fa808505123a0fc3c3585",
     "src/objects/apply_object_velocity.c": "aa584d9c746bd26e4fae19787275125fe360873c32d188402218b654b7429399",
     "src/objects/apply_resource_118780.c": "95bc9daf685de8ba42b3592cf6a2d11caf2d890d34d33c256fbfdb296ba9eac1",
@@ -1252,6 +1253,52 @@
     "src/objects/create_actor_callback.c": "b5ce41e4de1b67e891f1ce8f50dcb4efb6fbcf2b546a8b056c81dc4257c8cc39",
     "src/objects/create_configured_object.c": "af693f4980ecef59a0dfa131df79b990d94f688c285433eca3916523f8eb32b5",
     "src/objects/create_context_resources.c": "c396c9b177f4941148e84d2e55550432539b26193529cfa3b64b4df6b45e3cc6",
+    "src/objects/create_context_resources_8c0f1654.c": "d7a73414925066cf7b6b37d095059b7de6b3b054d7b435c80fdc405d289a105d",
+    "src/objects/create_context_resources_8c0f2100.c": "ed34b61a611376ed62fe3730c62478da1f6946d136c42441afefd624a7e5214f",
+    "src/objects/create_context_resources_8c0fce90.c": "190be60947c14590094199bf7f8d3bb3bd6aa26bc37fcbeb160d3a9aa884c939",
+    "src/objects/create_context_resources_8c0fedd8.c": "69fab5352ca0c02ec3c1041bda0d83747d5843d1edb790a2906448420fd546e0",
+    "src/objects/create_context_resources_8c0ff1f4.c": "6b8a02688233d11d75c08a3fd29dc5869cc591143d3bc299ae1f90db534af43e",
+    "src/objects/create_context_resources_8c0ff578.c": "c60ab82cd44041d332529fc270207c7d2d9bd4242e277de81f589f2ce579d84c",
+    "src/objects/create_context_resources_8c0ff8fc.c": "3c6bbe83a0972ed6b324c25ea886e91aa0646e939866372f9e5a8378fc40da4b",
+    "src/objects/create_context_resources_8c0ffb08.c": "a2e09c8b814d960aae5ea9d446a54070ec1ad1576d96d5708b4e13ba72a50ead",
+    "src/objects/create_context_resources_8c10731c.c": "30e28298d44e66a0d82dfbf1b0ba8f7a88fc6f9e4dbb43d646a25ffc28abd69b",
+    "src/objects/create_context_resources_8c11f0c8.c": "1ea963d018aec6c6a1e89b02af58ceedd7b2ed41d07a3a54638546044e6857ba",
+    "src/objects/create_context_resources_8c11f4d0.c": "ffee5198006ca3cc0a57b771de9104a15cc4d8e5057777aa05e835e837591b7b",
+    "src/objects/create_context_resources_8c11f794.c": "e2233653ac68e821d75feca8d0047b80e2b11de044d4515ac31f4999c5be7809",
+    "src/objects/create_context_resources_8c11f948.c": "8865e7cf29a29560e10f82ed3fa8b4b89c21cae63cbc3e98eb6ff7b272f804db",
+    "src/objects/create_context_resources_8c11fafc.c": "0db691e759f287861f90fd087e819b2f20d702d7ec75f802179cafbb71b10ae3",
+    "src/objects/create_context_resources_8c11fcb0.c": "f778776991d2b497959d1031a96cff36fe8e040b6608032a323d0e3b23d03e43",
+    "src/objects/create_context_resources_8c11fe64.c": "fcc399a904b67d1ecfd63443589c32d8c3e5b9d9773d467f2073f4f6f79f20a0",
+    "src/objects/create_context_resources_8c120018.c": "49f54233eeab1d6125915ad810fef5d61d87706cbd98c0566701444515dabed8",
+    "src/objects/create_context_resources_8c122e94.c": "d83019f2f151ab59aaceaef295c6ce43794f742c2c298a4cd663512571417c2b",
+    "src/objects/create_context_resources_8c123f54.c": "cc81a3e90a7b0e8dc1ad61b4c70ef63fd4994a692097cf35db041cfb74104362",
+    "src/objects/create_context_resources_8c124108.c": "7d2aafa639b00e4f3c225c263abdea9817ca6191c963f4adb3570bcf0851b2ed",
+    "src/objects/create_context_resources_8c1242bc.c": "2f9bf9e24e3495c6bdf5bcae06d2ff82d655e8dfc4ea99d6fd28b5ffd70437d7",
+    "src/objects/create_context_resources_8c124470.c": "d0268e57908be2de756d2272d57eb44087d86b463dbfb3f87fb611d4b0748565",
+    "src/objects/create_context_resources_8c124624.c": "e3ecf49b4ecfef98873a6f328873f37631ebfa60179f68374cd437e424a37c0c",
+    "src/objects/create_context_resources_8c1247d8.c": "7a0acec246d4a4972743e52beb823d1230d4a635238222a68f092241aee00672",
+    "src/objects/create_context_resources_8c12498c.c": "a65f1c8b602906a0f970c9a27e4868021e19192149549e7b16fd6eab147d7595",
+    "src/objects/create_context_resources_8c12ae50.c": "47628e3a10ac94850c4fa8000e4d807a8814d4f0da624eaaf0e9a12b4c8d313b",
+    "src/objects/create_context_resources_8c15d764.c": "bf95950af1c039adb504937134edde39c19d5fd5bf136ddf01d6e0a864159f27",
+    "src/objects/create_context_resources_8c15db6c.c": "550b966d8967bd81ff75aeea623dba6427415d684c839e0d16727912d5534ee2",
+    "src/objects/create_context_resources_8c19fe7c.c": "634ac3ac18d9287d60c86c51ab3e1000f755c1b97c411a3359509398bce5a9c2",
+    "src/objects/create_context_resources_8c1a0898.c": "e11c58e51f7f0f8bbc4fdd1709cc5644a3527c8c20b60ecad754b58ba96207b2",
+    "src/objects/create_context_resources_8c1a1a98.c": "b4a39a6cd514b300c98dfcd1e20185da27620b01d9a9245a928143425b9e9050",
+    "src/objects/create_context_resources_8c1a1c8c.c": "ee51a17b09fe3e08742cdbe69185d6255a7a84f974d61526a4b309f3fbfe6447",
+    "src/objects/create_context_resources_8c1a1e40.c": "2807fe41bc0dd58500b391bcc89066074aeb173147e100afbe6e04638885e63b",
+    "src/objects/create_context_resources_8c1a1ff4.c": "1f38492463f9fca66930aaa9ac63ccf4f805c2697d3d46323d925f96056233ba",
+    "src/objects/create_context_resources_8c1af684.c": "47f34de9568b31008e832987b05ccf40b88b354d924127d77d42ed5b477469c3",
+    "src/objects/create_context_resources_8c1b0514.c": "6c3dddf0330be96bab3c7a80328ab1dd924c68a70dc44a992ec5fca68d5c5f8d",
+    "src/objects/create_context_resources_8c1bf6b8.c": "e22833e5157b76b68da612e7a882700ae94987f828e07294199a683a0c5c22a8",
+    "src/objects/create_context_resources_8c1c0534.c": "c64f34b69c141ea9d78193d9cf8f4790f9d6a119a8ab36a32375bcac1906e682",
+    "src/objects/create_context_resources_8c1c6c00.c": "2505e46f4815cd50d0512d05d01741d54e7c2b0bf8f2dcda0c51e0c04080da1a",
+    "src/objects/create_context_resources_8c1c6eec.c": "5b0e39fa5140cdc95fec44a748db0b2d07a74ca92a564d6564e0cdbb4f812a7b",
+    "src/objects/create_context_resources_8c1da1c0.c": "6b81ddfe8ce69f2ed6791b961945e2770ed3f1c995482266789c5fe8bd98bda3",
+    "src/objects/create_context_resources_8c22c254.c": "ba217a91e80d9d288d0343920fdd37e3aaed32d7c6a67e29f82ca0dbc8077759",
+    "src/objects/create_context_resources_8c245854.c": "b2e0ba1498887a6f2cf0adac8db72ddc68f631b12d86cfbd23b8bcca24dd5498",
+    "src/objects/create_context_resources_8c24a784.c": "5006dcce5605e6faf6eac88657018d8cb632a965e2c26190b9e201628186d7d4",
+    "src/objects/create_context_resources_8c24aac4.c": "98bfe2c472a3dd04006421d7d25cc5aa46aa4fe462afa5c9f92aa23bacc2955b",
+    "src/objects/create_context_resources_8c24bfb8.c": "b8e0a5da236bd9fc217bf1c04d924f3497ea66e61d5ced926095cd11be0b8ca0",
     "src/objects/create_default_configured_object.c": "0788c07ac712708f4469e418b24bf68db658e6ec153ba974b33e312e8f0ed6d6",
     "src/objects/create_effect_8c09fd4c.c": "a733c265614605f1177581b201f95d55a33279f52a2e25674006a619ada690b9",
     "src/objects/create_following_position_effect.c": "6143c5156ba62513acb136fa779797cc1979db167bfcb5f22be6ceb3150a0a24",
@@ -1314,7 +1361,53 @@
     "src/objects/destroy_context_8c22b6d0.c": "8ea19b434bd84890a67366be7bec0f0c544c51241ad6ef0e8bef5302b1d1a93a",
     "src/objects/destroy_context_8c250714.c": "fc4a92c3284ed17f855196808fcdf922392e8fd55379697b1d2a0a8e5f08241b",
     "src/objects/destroy_context_resources.c": "a3aca3402d5308b79152c55beadfd2f1362480a888cf3aa455ccdcd724c8264d",
+    "src/objects/destroy_context_resources_8c0f1698.c": "7186a1d8e3728f127a9a192d56d514c26d25bdf13e79665f1e80b20b94eb1b2f",
+    "src/objects/destroy_context_resources_8c0f1b40.c": "e3289aa61f81ceb440926bc29954f75269eb747c3af5f751460a3b653d80f9cb",
+    "src/objects/destroy_context_resources_8c0fced4.c": "8be69f300b4863d38b1780a158a73345cd18bf67db2d2b3dfa570e809254ee54",
+    "src/objects/destroy_context_resources_8c0ffb4c.c": "e08229775998b1ab4bfd587efc49f7e57692cc343f942d3b805e6069e188c2ce",
+    "src/objects/destroy_context_resources_8c11f514.c": "b57c64fd859fdc598b55150f1ad9bd5167bd6bcccb3b194f532f5546390e005f",
+    "src/objects/destroy_context_resources_8c11f7d8.c": "29091cd47b263792bc87320b56653806ec77ec881704631140256044f2b30d1e",
+    "src/objects/destroy_context_resources_8c11f98c.c": "d98f7bbef457acb9e5e885ebe669d2f7e55731ad61b07babb7fc0bd20d4cac5f",
+    "src/objects/destroy_context_resources_8c11fb40.c": "8f0ba154592f334c47280ccbad8c7ab4e234ae95853d0d00ec496ff8456dad8d",
+    "src/objects/destroy_context_resources_8c11fcf4.c": "0b3d88b4bb56bd6b6582edd37104175442091f752fe44e1d5be81cf1fd4af035",
+    "src/objects/destroy_context_resources_8c11fea8.c": "296e95fef75e5bdf24dcfd981b89fa3e31dbf792713b248b81e0053f783e88a2",
+    "src/objects/destroy_context_resources_8c12005c.c": "a201266d99fa0429ab359adcac37e7138513b943e12a77ae76215fbf44ef29c4",
+    "src/objects/destroy_context_resources_8c123f98.c": "b44069511b45bfddccbc4cc90c94afb17b2567617a3d982abe35906d1f8d3fa1",
+    "src/objects/destroy_context_resources_8c12414c.c": "6b4a0e08d217a6832f4d41d8b52bc9f601a7966c7eff46c4779093a95e88aef5",
+    "src/objects/destroy_context_resources_8c124300.c": "fd4b4134aa20a7bcc660d845af79cfa5ca7e43f68d05e3d41272a0ff4cc1d9c5",
+    "src/objects/destroy_context_resources_8c1244b4.c": "e839ded68a9692a1f6d46d97a56e0865d8e5a950dabf18c186cba5e86509fded",
+    "src/objects/destroy_context_resources_8c124668.c": "0d25c63e99857291d3a2682829726030912ee290efe3df9c1058db8083bbe4af",
+    "src/objects/destroy_context_resources_8c12481c.c": "837e309728fd73eaf30b333e48c18649c0bb017eb3cf8ecbeaf4f2026cbf8772",
+    "src/objects/destroy_context_resources_8c1249d0.c": "c6598fdfb1788be5008a61496d67da4d9c69a03e84ac571d3f334bdc46778b7c",
+    "src/objects/destroy_context_resources_8c1290fc.c": "27510dbfc9e5b02b84cf49b5ab668b685ecf7e8aabddc22a655acebe08ecc822",
+    "src/objects/destroy_context_resources_8c12ae94.c": "0b9c817b5b37386b709fdbd15e230470ac4885b17f86abae9bb276c739d09924",
+    "src/objects/destroy_context_resources_8c132380.c": "c927876fca735833cfdb738bb866dd9f996b367125a0eef08e50c266ffb68e9e",
+    "src/objects/destroy_context_resources_8c14ce04.c": "adced5ab96d7735e095b0f97e779fa5b161ac900b09d76b5e7bcd3f606193dca",
+    "src/objects/destroy_context_resources_8c15d7a8.c": "e116a21d7eb3d1264897db6ea3eb74526115862710433d0272a1e111acac2a8c",
+    "src/objects/destroy_context_resources_8c15dbb0.c": "4eea74a2362766e8e9088385089475376acf9721ad5179bd13c3e0e7915bd829",
+    "src/objects/destroy_context_resources_8c19fec0.c": "013822f302a8ba9738ebecab6dd32dc4017d9a4ab8bd48c5b7953bb7af96dea0",
+    "src/objects/destroy_context_resources_8c1a08dc.c": "638f84ac76d1d0bb7ba207e986f60717829ba897fdf04b5d94dd5da7adab2d05",
+    "src/objects/destroy_context_resources_8c1a1adc.c": "79a6a2bb26870c3aca62c8630f78e8ae1888ae4a10e12e5869ce701bd00e5b72",
+    "src/objects/destroy_context_resources_8c1a1cd0.c": "408401544657de7d8947a8b2a7e3c6d5bc35daac49806c357e142568fc534a09",
+    "src/objects/destroy_context_resources_8c1a1e84.c": "22ca5907b95b3c8a9106023a212c028617e6e8bc60f974ba2c9c7f0d7730e4b1",
+    "src/objects/destroy_context_resources_8c1a2038.c": "1f6276662f4b69facde7f8248cdc53576bd7a0b85a83879dbc72b465540d27e7",
+    "src/objects/destroy_context_resources_8c1a2204.c": "aac53f0de029f808afbf08b79cb6f2bef9520fc6bef4b95ef8d48c0c31b39ea0",
+    "src/objects/destroy_context_resources_8c1aeb74.c": "99ef7930de968df9653c7ca8d67c298a506d0812e3d7b8b2fc9b1818fd24085e",
+    "src/objects/destroy_context_resources_8c1af6c8.c": "5732617e025d06de54059a54f547df72073c7fce809e3e68abe3da3a39cc2682",
+    "src/objects/destroy_context_resources_8c1b0558.c": "60b704110a9526b4286020d65d6b0588f0ab2a9aa821a84d5a4b342a74ffb332",
+    "src/objects/destroy_context_resources_8c1bf6fc.c": "a8896fd496e96375c78c28c2d310bb0963979f86da7709e13d42d827ef23adba",
+    "src/objects/destroy_context_resources_8c1c0278.c": "70a3055680f1d84744c19d943a07b253d381a6ca7bb67a4d11d32ec326810d39",
+    "src/objects/destroy_context_resources_8c1c0578.c": "14523dd3eec825224d182364ce6a64d218dcd8054b74d91c3e3477375eb5ba02",
+    "src/objects/destroy_context_resources_8c1c3dac.c": "a774cef88b7431e624091e33fcb186337928159c6f50286876ca009a7d973616",
+    "src/objects/destroy_context_resources_8c1c6c44.c": "3c82391927f423bfb6a476377da644e3c8f7f03cb9c6faae1d466cf6491559fe",
+    "src/objects/destroy_context_resources_8c1c6f30.c": "af610d0bcd4810c7612170182c376ad48b8a11048d79eeb0ee7d4d088062c30f",
+    "src/objects/destroy_context_resources_8c1da204.c": "eacfb053865a0edc4ac8489e80db49e10a9a24b70d64543c56af261743cc5fad",
+    "src/objects/destroy_context_resources_8c245898.c": "728ba9ea3d697b53f85c2fba584f46b69a84342c0b446378f9a32f67ae9fc63c",
+    "src/objects/destroy_context_resources_8c24bffc.c": "a0360373ad1d4446b9a39c06553f7a26315ff2655b7283083c9aefeb87765b81",
     "src/objects/destroy_derived_context_actor.c": "3b982be9186609bc08c50de3454a5d1e92f08956213739f73b3938e0fa51341f",
+    "src/objects/destroy_derived_context_actor_8c083370.c": "4f01f67676db145b6cd45e63abf752776bd0d5b766f7d20bfb215c2507049a6c",
+    "src/objects/destroy_derived_context_actor_8c113850.c": "8dfaf81fe35e16be16268b8a9aadeeac7cdffdf53715049b6bc4469b3fd2abc6",
+    "src/objects/destroy_derived_context_actor_8c24c6e4.c": "f43ba3afa2c127a65c0a973f63065f9cf4a03981eb343121e1b49bdf8fa0e23b",
     "src/objects/destroy_field_8c0b403c.c": "8c005d3429285879f86bec067aac8f2c16db97086702f996d9f8167fbf0c9baa",
     "src/objects/destroy_field_8c0e14bc.c": "24b9e19ee8c7adfa4868e1159571495774f94bd56b7275fd3db5d3152b069c8c",
     "src/objects/destroy_field_8c0e156c.c": "93007ba25d2728b873b03c622eb078627803d605c212c6e5908cd123117dbc3d",
@@ -1380,6 +1473,12 @@
     "src/objects/initialize_category_flags.c": "ef3d51a07a3000ba93de83bff6751b7bd83795abc6509601881f64da9460f351",
     "src/objects/initialize_context_actor.c": "11e5f9ef6397b1e9ff22aaf4b4894550bbfa649b7c70fd481d6c57b828b84424",
     "src/objects/initialize_context_blend.c": "07e82b8de974c35e046b3ca4c3b17ba837124bd943bdccd2ea34c8b2006521d8",
+    "src/objects/initialize_context_blend_8c077e2c.c": "0b3e25b37130989e7f85cd613e5de9c555376d06696ef660e39578b34f24af0a",
+    "src/objects/initialize_context_blend_8c1f1430.c": "fe21633b8e98fa2b5a1756287d7aa4a890664af69187e905c4d0a28961f2d68b",
+    "src/objects/initialize_context_blend_8c2514d0.c": "0d53085fad1606197634b0ed7693e31365474fd93cd91c46a00555cfc6803041",
+    "src/objects/initialize_context_blend_8c252bfc.c": "acf3ede53fe78bc52efcd579e7f6f8064bc8713ff14f36d1eaecf06b2b506c9f",
+    "src/objects/initialize_context_blend_8c254378.c": "22b4a46dafc8dcf8b912af127995999d9c43d57f208a2ff6ae99db1939468ea5",
+    "src/objects/initialize_context_blend_8c254a58.c": "3713a5ba829d4f64d32577ecaf8b615a2b8252019ae4858027451363f886e3a5",
     "src/objects/initialize_delayed_position_effect.c": "cfde82d78d880d22a323b3f11d5093c4a7773a3fc44136e681c85da57e702358",
     "src/objects/initialize_fields_8c0e14ac.c": "b8d58cd21370ecc31e8519f3361cd64afe035c26378a0e47809c5e4371f39726",
     "src/objects/initialize_fields_8c0e24e8.c": "de60f715272f808a9deb672666883ae81a4ab554e96207c89bb7b0c19ea703de",
@@ -5575,6 +5674,17 @@
       "off",
       "-O2"
     ],
+    "initialize_context_blend_8c077e2c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c077e84": [
       "-proc",
       "SH4",
@@ -5840,6 +5950,17 @@
       "-O2"
     ],
     "spawn_object_0893a8_8c08213c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_derived_context_actor_8c083370": [
       "-proc",
       "SH4",
       "-endian",
@@ -11088,7 +11209,51 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c0f1654": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c0f1698": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c0f1b40": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c0f1b60": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c0f2100": [
       "-proc",
       "SH4",
       "-endian",
@@ -11264,6 +11429,17 @@
       "off",
       "-O2"
     ],
+    "apply_context_blend_8c0fc194": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c0fc1c4": [
       "-proc",
       "SH4",
@@ -11308,7 +11484,40 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c0fce90": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c0fced4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c0fed94": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c0fedd8": [
       "-proc",
       "SH4",
       "-endian",
@@ -11330,7 +11539,29 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c0ff1f4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c0ff534": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c0ff578": [
       "-proc",
       "SH4",
       "-endian",
@@ -11352,7 +11583,40 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c0ff8fc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c0ffac4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c0ffb08": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c0ffb4c": [
       "-proc",
       "SH4",
       "-endian",
@@ -11660,6 +11924,17 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c10731c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c1074fc": [
       "-proc",
       "SH4",
@@ -11924,6 +12199,17 @@
       "off",
       "-O2"
     ],
+    "destroy_derived_context_actor_8c113850": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c1139e0": [
       "-proc",
       "SH4",
@@ -12111,7 +12397,40 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c11f0c8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c11f48c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c11f4d0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c11f514": [
       "-proc",
       "SH4",
       "-endian",
@@ -12144,7 +12463,51 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c11f794": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c11f7d8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c11f904": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c11f948": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c11f98c": [
       "-proc",
       "SH4",
       "-endian",
@@ -12166,7 +12529,51 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c11fafc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c11fb40": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c11fc6c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c11fcb0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c11fcf4": [
       "-proc",
       "SH4",
       "-endian",
@@ -12188,7 +12595,51 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c11fe64": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c11fea8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c11ffd4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c120018": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c12005c": [
       "-proc",
       "SH4",
       "-endian",
@@ -12254,6 +12705,17 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c122e94": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c123e78": [
       "-proc",
       "SH4",
@@ -12276,7 +12738,51 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c123f54": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c123f98": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c1240c4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c124108": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c12414c": [
       "-proc",
       "SH4",
       "-endian",
@@ -12298,7 +12804,51 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c1242bc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c124300": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c12442c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c124470": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1244b4": [
       "-proc",
       "SH4",
       "-endian",
@@ -12320,6 +12870,28 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c124624": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c124668": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c124794": [
       "-proc",
       "SH4",
@@ -12331,7 +12903,51 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c1247d8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c12481c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c124948": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c12498c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1249d0": [
       "-proc",
       "SH4",
       "-endian",
@@ -12375,6 +12991,17 @@
       "off",
       "-O2"
     ],
+    "destroy_context_resources_8c1290fc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c12911c": [
       "-proc",
       "SH4",
@@ -12387,6 +13014,28 @@
       "-O2"
     ],
     "destroy_object_8c12ae0c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c12ae50": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c12ae94": [
       "-proc",
       "SH4",
       "-endian",
@@ -12431,6 +13080,17 @@
       "-O2"
     ],
     "destroy_color_rise_8c1322b4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c132380": [
       "-proc",
       "SH4",
       "-endian",
@@ -13029,6 +13689,17 @@
       "off",
       "-O2"
     ],
+    "destroy_context_resources_8c14ce04": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c14ce24": [
       "-proc",
       "SH4",
@@ -13304,6 +13975,28 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c15d764": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c15d7a8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c15da5c": [
       "-proc",
       "SH4",
@@ -13316,6 +14009,28 @@
       "-O2"
     ],
     "destroy_object_8c15db28": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c15db6c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c15dbb0": [
       "-proc",
       "SH4",
       "-endian",
@@ -15772,6 +16487,28 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c19fe7c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c19fec0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "word_operation_8c1a0474": [
       "-proc",
       "SH4",
@@ -15784,6 +16521,28 @@
       "-O2"
     ],
     "destroy_object_8c1a0648": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c1a0898": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1a08dc": [
       "-proc",
       "SH4",
       "-endian",
@@ -15849,7 +16608,51 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c1a1a98": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1a1adc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c1a1c48": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c1a1c8c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1a1cd0": [
       "-proc",
       "SH4",
       "-endian",
@@ -15871,6 +16674,28 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c1a1e40": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1a1e84": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c1a1fb0": [
       "-proc",
       "SH4",
@@ -15882,7 +16707,40 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c1a1ff4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1a2038": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c1a2164": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1a2204": [
       "-proc",
       "SH4",
       "-endian",
@@ -16381,6 +17239,17 @@
       "off",
       "-O2"
     ],
+    "destroy_context_resources_8c1aeb74": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c1aeb94": [
       "-proc",
       "SH4",
@@ -16393,6 +17262,28 @@
       "-O2"
     ],
     "spawn_object_0893a8_8c1af14c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c1af684": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1af6c8": [
       "-proc",
       "SH4",
       "-endian",
@@ -16448,6 +17339,28 @@
       "-O2"
     ],
     "set_global_8c1b0324": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c1b0514": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1b0558": [
       "-proc",
       "SH4",
       "-endian",
@@ -16656,6 +17569,28 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c1bf6b8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1bf6fc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c1bfa54": [
       "-proc",
       "SH4",
@@ -16668,6 +17603,39 @@
       "-O2"
     ],
     "destroy_object_8c1c01d4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1c0278": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c1c0534": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1c0578": [
       "-proc",
       "SH4",
       "-endian",
@@ -16712,6 +17680,17 @@
       "-O2"
     ],
     "destroy_object_8c1c3d14": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1c3dac": [
       "-proc",
       "SH4",
       "-endian",
@@ -16888,6 +17867,50 @@
       "-O2"
     ],
     "destroy_object_8c1c6bbc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c1c6c00": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1c6c44": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c1c6eec": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1c6f30": [
       "-proc",
       "SH4",
       "-endian",
@@ -17151,6 +18174,28 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c1da1c0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c1da204": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_color_rise_8c1da974": [
       "-proc",
       "SH4",
@@ -17383,6 +18428,17 @@
       "-O2"
     ],
     "initialize_float_fields_8c1eec38": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_context_blend_8c1f1430": [
       "-proc",
       "SH4",
       "-endian",
@@ -18658,6 +19714,17 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c22c254": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c22c3b4": [
       "-proc",
       "SH4",
@@ -19914,6 +20981,28 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c245854": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c245898": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c245be4": [
       "-proc",
       "SH4",
@@ -20123,7 +21212,29 @@
       "off",
       "-O2"
     ],
+    "create_context_resources_8c24a784": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c24a7ec": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c24aac4": [
       "-proc",
       "SH4",
       "-endian",
@@ -20157,6 +21268,39 @@
       "-O2"
     ],
     "destroy_object_8c24bbc4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_resources_8c24bfb8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_context_resources_8c24bffc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_derived_context_actor_8c24c6e4": [
       "-proc",
       "SH4",
       "-endian",
@@ -20739,6 +21883,17 @@
       "off",
       "-O2"
     ],
+    "initialize_context_blend_8c2514d0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c251528": [
       "-proc",
       "SH4",
@@ -20894,6 +22049,17 @@
       "-O2"
     ],
     "destroy_object_8c252b6c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_context_blend_8c252bfc": [
       "-proc",
       "SH4",
       "-endian",
@@ -21091,6 +22257,17 @@
       "off",
       "-O2"
     ],
+    "initialize_context_blend_8c254378": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c2543bc": [
       "-proc",
       "SH4",
@@ -21147,6 +22324,17 @@
       "-O2"
     ],
     "destroy_object_8c2549c8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_context_blend_8c254a58": [
       "-proc",
       "SH4",
       "-endian",
@@ -21677,6 +22865,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4027460,
+  "source_only_rejected_retained_bytes": 4022308,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

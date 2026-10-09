@@ -1,61 +1,121 @@
-# Reconstruction batch: 176: proven reconstruction families
+# Reconstruction batch: 177: proven reconstruction families
 
-43 new matching functions / 3,548 bytes. All 1813 prior functions preserved.
+99 new matching functions / 5,152 bytes. All 1856 prior functions preserved.
 
-1856 exact functions in 1786 modules; 135,452 compiled function-range bytes; 0 reconstructed data bytes; 4,027,460 retained reference bytes. Whole-image coverage 3.2538% is not code completion.
+1955 exact functions in 1885 modules; 140,604 compiled function-range bytes; 0 reconstructed data bytes; 4,022,308 retained reference bytes. Whole-image coverage 3.3775% is not code completion.
 
 | Module | Address | Complete bytes |
 | --- | --- | ---: |
-| destroy_record_owner | 0x8c0bc36c | 168 |
-| destroy_pair_context_effect | 0x8c1408e0 | 144 |
-| update_pair_context | 0x8c140970 | 164 |
-| open_pair_context | 0x8c140a14 | 112 |
-| acquire_pair_context | 0x8c140adc | 40 |
-| release_pair_context | 0x8c140b04 | 36 |
-| initialize_context_actor | 0x8c140b28 | 100 |
-| draw_context_actor | 0x8c140bd0 | 168 |
-| update_context_actor | 0x8c140c78 | 208 |
-| emit_context_particles | 0x8c140e94 | 44 |
-| advance_context_actor | 0x8c140f64 | 52 |
-| apply_context_target | 0x8c141070 | 164 |
-| context_actor_ready | 0x8c141114 | 88 |
-| context_target_predicates | 0x8c141170 | 80 |
-| context_target_resets | 0x8c1411c0 | 72 |
-| destroy_derived_context_actor | 0x8c1414c4 | 108 |
-| create_context_resources | 0x8c141530 | 68 |
-| destroy_context_resources | 0x8c141574 | 32 |
-| initialize_context_blend | 0x8c178018 | 48 |
-| apply_context_blend | 0x8c178084 | 36 |
-| start_context_blend | 0x8c1780a8 | 12 |
-| update_context_blend | 0x8c1780b4 | 52 |
-| update_context_blend_fast | 0x8c178144 | 52 |
-| update_following_position_effect | 0x8c21b124 | 320 |
-| ring_actor_eligible | 0x8c21c3c8 | 68 |
-| set_effect_blend_state | 0x8c21c508 | 152 |
-| restore_effect_blend_state | 0x8c21c5a0 | 52 |
-| set_effect_color_state | 0x8c21c5d4 | 140 |
-| restore_effect_color_state | 0x8c21c660 | 52 |
-| process_effect_record | 0x8c21c7a8 | 52 |
-| dispatch_effect_record | 0x8c21c7dc | 68 |
-| destroy_text_context_effect | 0x8c221134 | 100 |
-| update_text_context_effect | 0x8c221198 | 116 |
-| acquire_text_context | 0x8c22120c | 24 |
-| open_text_context | 0x8c221224 | 128 |
-| poll_text_context | 0x8c2212a4 | 72 |
-| advance_text_context | 0x8c2212ec | 52 |
-| complete_text_context | 0x8c221320 | 72 |
-| get_text_context_buffer | 0x8c221368 | 32 |
+| initialize_context_blend_8c077e2c | 0x8c077e2c | 48 |
+| destroy_derived_context_actor_8c083370 | 0x8c083370 | 108 |
+| create_context_resources_8c0f1654 | 0x8c0f1654 | 68 |
+| destroy_context_resources_8c0f1698 | 0x8c0f1698 | 32 |
+| destroy_context_resources_8c0f1b40 | 0x8c0f1b40 | 32 |
+| create_context_resources_8c0f2100 | 0x8c0f2100 | 68 |
+| apply_context_blend_8c0fc194 | 0x8c0fc194 | 36 |
+| create_context_resources_8c0fce90 | 0x8c0fce90 | 68 |
+| destroy_context_resources_8c0fced4 | 0x8c0fced4 | 32 |
+| create_context_resources_8c0fedd8 | 0x8c0fedd8 | 68 |
+| create_context_resources_8c0ff1f4 | 0x8c0ff1f4 | 68 |
+| create_context_resources_8c0ff578 | 0x8c0ff578 | 68 |
+| create_context_resources_8c0ff8fc | 0x8c0ff8fc | 68 |
+| create_context_resources_8c0ffb08 | 0x8c0ffb08 | 68 |
+| destroy_context_resources_8c0ffb4c | 0x8c0ffb4c | 32 |
+| create_context_resources_8c10731c | 0x8c10731c | 68 |
+| destroy_derived_context_actor_8c113850 | 0x8c113850 | 108 |
+| create_context_resources_8c11f0c8 | 0x8c11f0c8 | 68 |
+| create_context_resources_8c11f4d0 | 0x8c11f4d0 | 68 |
+| destroy_context_resources_8c11f514 | 0x8c11f514 | 32 |
+| create_context_resources_8c11f794 | 0x8c11f794 | 68 |
+| destroy_context_resources_8c11f7d8 | 0x8c11f7d8 | 32 |
+| create_context_resources_8c11f948 | 0x8c11f948 | 68 |
+| destroy_context_resources_8c11f98c | 0x8c11f98c | 32 |
+| create_context_resources_8c11fafc | 0x8c11fafc | 68 |
+| destroy_context_resources_8c11fb40 | 0x8c11fb40 | 32 |
+| create_context_resources_8c11fcb0 | 0x8c11fcb0 | 68 |
+| destroy_context_resources_8c11fcf4 | 0x8c11fcf4 | 32 |
+| create_context_resources_8c11fe64 | 0x8c11fe64 | 68 |
+| destroy_context_resources_8c11fea8 | 0x8c11fea8 | 32 |
+| create_context_resources_8c120018 | 0x8c120018 | 68 |
+| destroy_context_resources_8c12005c | 0x8c12005c | 32 |
+| create_context_resources_8c122e94 | 0x8c122e94 | 68 |
+| create_context_resources_8c123f54 | 0x8c123f54 | 68 |
+| destroy_context_resources_8c123f98 | 0x8c123f98 | 32 |
+| create_context_resources_8c124108 | 0x8c124108 | 68 |
+| destroy_context_resources_8c12414c | 0x8c12414c | 32 |
+| create_context_resources_8c1242bc | 0x8c1242bc | 68 |
+| destroy_context_resources_8c124300 | 0x8c124300 | 32 |
+| create_context_resources_8c124470 | 0x8c124470 | 68 |
+| destroy_context_resources_8c1244b4 | 0x8c1244b4 | 32 |
+| create_context_resources_8c124624 | 0x8c124624 | 68 |
+| destroy_context_resources_8c124668 | 0x8c124668 | 32 |
+| create_context_resources_8c1247d8 | 0x8c1247d8 | 68 |
+| destroy_context_resources_8c12481c | 0x8c12481c | 32 |
+| create_context_resources_8c12498c | 0x8c12498c | 68 |
+| destroy_context_resources_8c1249d0 | 0x8c1249d0 | 32 |
+| destroy_context_resources_8c1290fc | 0x8c1290fc | 32 |
+| create_context_resources_8c12ae50 | 0x8c12ae50 | 68 |
+| destroy_context_resources_8c12ae94 | 0x8c12ae94 | 32 |
+| destroy_context_resources_8c132380 | 0x8c132380 | 32 |
+| destroy_context_resources_8c14ce04 | 0x8c14ce04 | 32 |
+| create_context_resources_8c15d764 | 0x8c15d764 | 68 |
+| destroy_context_resources_8c15d7a8 | 0x8c15d7a8 | 32 |
+| create_context_resources_8c15db6c | 0x8c15db6c | 68 |
+| destroy_context_resources_8c15dbb0 | 0x8c15dbb0 | 32 |
+| create_context_resources_8c19fe7c | 0x8c19fe7c | 68 |
+| destroy_context_resources_8c19fec0 | 0x8c19fec0 | 32 |
+| create_context_resources_8c1a0898 | 0x8c1a0898 | 68 |
+| destroy_context_resources_8c1a08dc | 0x8c1a08dc | 32 |
+| create_context_resources_8c1a1a98 | 0x8c1a1a98 | 68 |
+| destroy_context_resources_8c1a1adc | 0x8c1a1adc | 32 |
+| create_context_resources_8c1a1c8c | 0x8c1a1c8c | 68 |
+| destroy_context_resources_8c1a1cd0 | 0x8c1a1cd0 | 32 |
+| create_context_resources_8c1a1e40 | 0x8c1a1e40 | 68 |
+| destroy_context_resources_8c1a1e84 | 0x8c1a1e84 | 32 |
+| create_context_resources_8c1a1ff4 | 0x8c1a1ff4 | 68 |
+| destroy_context_resources_8c1a2038 | 0x8c1a2038 | 32 |
+| destroy_context_resources_8c1a2204 | 0x8c1a2204 | 32 |
+| destroy_context_resources_8c1aeb74 | 0x8c1aeb74 | 32 |
+| create_context_resources_8c1af684 | 0x8c1af684 | 68 |
+| destroy_context_resources_8c1af6c8 | 0x8c1af6c8 | 32 |
+| create_context_resources_8c1b0514 | 0x8c1b0514 | 68 |
+| destroy_context_resources_8c1b0558 | 0x8c1b0558 | 32 |
+| create_context_resources_8c1bf6b8 | 0x8c1bf6b8 | 68 |
+| destroy_context_resources_8c1bf6fc | 0x8c1bf6fc | 32 |
+| destroy_context_resources_8c1c0278 | 0x8c1c0278 | 32 |
+| create_context_resources_8c1c0534 | 0x8c1c0534 | 68 |
+| destroy_context_resources_8c1c0578 | 0x8c1c0578 | 32 |
+| destroy_context_resources_8c1c3dac | 0x8c1c3dac | 32 |
+| create_context_resources_8c1c6c00 | 0x8c1c6c00 | 68 |
+| destroy_context_resources_8c1c6c44 | 0x8c1c6c44 | 32 |
+| create_context_resources_8c1c6eec | 0x8c1c6eec | 68 |
+| destroy_context_resources_8c1c6f30 | 0x8c1c6f30 | 32 |
+| create_context_resources_8c1da1c0 | 0x8c1da1c0 | 68 |
+| destroy_context_resources_8c1da204 | 0x8c1da204 | 32 |
+| initialize_context_blend_8c1f1430 | 0x8c1f1430 | 48 |
+| create_context_resources_8c22c254 | 0x8c22c254 | 68 |
+| create_context_resources_8c245854 | 0x8c245854 | 68 |
+| destroy_context_resources_8c245898 | 0x8c245898 | 32 |
+| create_context_resources_8c24a784 | 0x8c24a784 | 68 |
+| create_context_resources_8c24aac4 | 0x8c24aac4 | 68 |
+| create_context_resources_8c24bfb8 | 0x8c24bfb8 | 68 |
+| destroy_context_resources_8c24bffc | 0x8c24bffc | 32 |
+| destroy_derived_context_actor_8c24c6e4 | 0x8c24c6e4 | 108 |
+| initialize_context_blend_8c2514d0 | 0x8c2514d0 | 48 |
+| initialize_context_blend_8c252bfc | 0x8c252bfc | 48 |
+| initialize_context_blend_8c254378 | 0x8c254378 | 48 |
+| initialize_context_blend_8c254a58 | 0x8c254a58 | 48 |
 
-This batch adds 43 complete exact functions / 3,548 compiled function-range bytes in 39 modules. All 1,813 prior functions and source/header hashes are preserved. Totals: 1,856 functions / 1,786 modules / 135,452 compiled function-range bytes / zero reconstructed data bytes / 4,027,460 retained reference bytes. Whole-image coverage is 3.2538%; it is not code-completion percentage. The code-only denominator remains unknown.
+This batch adds 99 complete exact functions / 5,152 compiled function-range bytes in 99 modules. All 1,856 prior functions and source/header hashes are preserved. Totals: 1,955 functions / 1,885 modules / 140,604 compiled function-range bytes / zero reconstructed data bytes / 4,022,308 retained reference bytes. Whole-image coverage is 3.3775%; it is not code completion. The code-only denominator remains unknown.
 
-The collection used 58 distinct hypotheses / 59 compiler attempts, one failed compilation corrected without a new hypothesis, and one duplicate binary-output group. Recorded candidate compilation totaled 1.819 seconds. All 39 admissions reproduced twice, adding 78 independent comparisons. Range/history preflight rejected an existing factory and an already matched depth helper before compilation; they receive no new credit. No compiler settings changed. The existing native-linker mode resolved six relocation-table bytes in the text-context state switch; the compiler output already matched its instructions. Ordinary C++ member-pointer dispatch and target callbacks matched their complete ranges.
+The existing family scanner found 46 resource creators, 43 resource cleanups, six initializers, three embedded-object destructors and one blend-mode wrapper. Reviewed ordinary C generation matched all 99 on the first attempt. Fixed instruction words, branch/delay semantics, full literal references, entry references and adjacent boundaries were checked against exact templates. Changed dispatch/embedded offsets are asserted in provisional layouts. Parent/context arguments are explicitly forwarded through the reviewed base-constructor chains. Global pointers and descriptors remain reference-dependent, and destruction intentionally leaves the context pointer unchanged. No binary data, assembly, copied objects or artificial alignment was substituted.
 
-Related context/resource initialization, cleanup, state transitions and embedded blend operations supplied the matches. Four real adjacent target predicates and two reset callbacks are grouped with natural alignment. Reversing equality operands recovered the observed CMP/EQ operand order without changing behavior. Offset-checked provisional views retain signed timers/state accesses, repeated weight handling, nullable cleanup and observed state-transition order. Static names, descriptors and globals remain reference-dependent; none is credited as reconstructed data.
+Candidate work used 102 distinct hypotheses / 102 compiler attempts, no compiler errors, one duplicate output, and 2.970 seconds of recorded compilation. This includes three hypotheses on initialize_actor_anchor_effect at 0x8c178258, which remains 472/472 with 21 differing bytes, first 0x8c17827f. A scoped identifier temporary removed an extra instruction and reduced 332 differences to 21; the inline-accessor follow-up was binary-identical. It is parked with its cumulative count and an identifier/aggregate register-lifetime blocker. This investigation receives no progress credit. Both primary stubborn targets remain parked and unresolved.
 
-Investigation-only: 13 targets are explicitly parked with complete scratch receipts, provisional sources, cumulative counts and revisit conditions in the unresolved queue. The easing pair matches 70/72 bytes alone; a real adjacent-function group restores those 72 bytes but remains 244/252 with 168 differences overall, so no part is admitted. Shared record indexing, actor identifier normalization, a ring virtual-call loop, the record-owner constructor and pair polling remain unresolved. The derived-context constructor remains 700/696 with 592 differences after two hypotheses. Further spelling variants are deferred until matched source-context evidence changes these blockers. The primary 0x8c045f04 and 0x8c05fbf8 targets remain parked and unresolved. None of this investigation increases completion.
+All 99 admissions reproduced twice, adding 198 independent comparisons. One integration pass ran two fresh exact builds in each checkout, integrated-image comparison, both five-function proofs, all 58 research and 63 public tests, and source-only rejection with artifact preservation. Fresh focused exports were checked, and unchanged primary exports were reused. Verification performed 7,540 module comparisons, **1.46 per new byte**, versus 6.48 in the five-batch baseline and 2.01 in batch 176. Concurrent research/public command times were 114.331/116.599 seconds.
 
-One integration pass ran two fresh exact builds in each checkout, exact integrated-image comparisons, both five-function proofs, all 58 research and 63 public tests, and source-only rejection with artifact preservation. New focused exports were checked once; unchanged primary evidence was reused with input checks. Source whitespace was checked before integration, avoiding batch 175's late formatting rerun. Verification performed 7,144 module comparisons, **2.01 per new byte**, versus 6.48 in the sampled five-batch baseline and 3.79 in batch 175. Concurrent research/public command times were 108.255/110.509 seconds.
+This is a larger byte batch: 5,152 bytes in one integration instead of 1,936 bytes across five baseline integrations. Bytes per hypothesis are 50.51, below the baseline's 50.95 and batch 176's 61.17; that measure did not improve. Most hypotheses were generated and tested mechanically after pattern review, but task-attributed token/cost measurements are unavailable, so no token or financial saving is claimed. Verification overhead improved measurably. Preserve the several-KB integration preference and reserve source reasoning for unexpected outputs.
 
-Bytes per distinct hypothesis are 61.17, above the baseline's 50.95 but below batch 175's 66.98. Verification overhead improved; reconstruction yield did not improve over the immediately preceding batch. Batch 172 still had lower comparison overhead at 1.61 per byte. Token/cost records and comparable baseline timings are unavailable; no financial or token saving is claimed. The only screening-tool addition accepts explicitly reviewed body sizes for entries omitted from the existing catalog; it removed manual screening exclusion and found no additional matches. Tooling receives no reconstruction credit.
+The scratch workflow now reuses one staged-index audit instead of duplicated per-batch audit snippets. Publication requires its current passing receipt before committing. The existing report helper labels grouped module rows correctly, removing a repeated manual documentation correction. These small changes address observed repeated tasks, preserve all privacy/provenance checks and receive no reconstruction credit. No compiler or public build-tool settings changed.
 
-This collection meets the 20–50-function target and replaces several KB in one integration, below the preferred 4 KiB. Continue the related context/actor family in scratch and rotate when a target stalls. Reproduce acceptance with tools/reconstruct.py verify after BUILDING.md setup, and check saved focused receipts with tools/dossier.py --check. Full verification runs once per meaningful integration, with additional checks only when changed inputs require them.
+Continue the newly reviewed base blend/context family in scratch. Compile and compare each candidate immediately; collect the next meaningful batch before full verification. Reproduce acceptance with tools/reconstruct.py verify after BUILDING.md setup, and validate existing focused evidence with tools/dossier.py --check. Static data remains separately tracked at zero.
