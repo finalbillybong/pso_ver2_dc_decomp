@@ -8694,6 +8694,314 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "query_scaled_contact",
+      "source": "src/objects/query_scaled_contact.c",
+      "address": "0x8c05a4e4",
+      "entry": "_query_scaled_contact",
+      "symbols": {
+        "_absolute": "0x8c12c714",
+        "_query": "0x8c011214"
+      },
+      "ranges": [
+        {
+          "offset": 304356,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_scaled_contact",
+          "address": "0x8c05a4e4",
+          "size": 160
+        }
+      ],
+      "reference_sha256": "80bea726fc6a253698475ba7554ed04dccff0de6959f05ddf3a202051ca21d3a",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "0x8c05a4e4..0x8c05a584 complete body132bytes then7longword pool entries; adjacent0x8c05a584 starts savedFR15 frame. Caller form mirrored by adjacent inline body. Query011214 reviewedthreeargs; absolute12c714 receivesFR4 returnsFR0 by bitwise sign-clear + error handling, samefloatABI already admitted adjust_scalar_scaled. Field offsets position60,query_position804 and active932 checked. No indirect calls. Retain earlyzero for inactive or both tiny components and rawcontactpointerreturn."
+    },
+    {
+      "id": "advance_scaled_contact",
+      "source": "src/objects/advance_scaled_contact.c",
+      "address": "0x8c05a584",
+      "entry": "_advance_scaled_contact",
+      "symbols": {
+        "_absolute": "0x8c12c714",
+        "_query": "0x8c011214"
+      },
+      "ranges": [
+        {
+          "offset": 304516,
+          "size": 280
+        }
+      ],
+      "functions": [
+        {
+          "name": "advance_scaled_contact",
+          "address": "0x8c05a584",
+          "size": 280
+        }
+      ],
+      "reference_sha256": "f461a8a0cdecb3dc7cacf9f0c39beedf815a77467210571424ab8d339f3013f5",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "0x8c05a584..0x8c05a69c completebody ends05a676 then2natural alignment and9longword pool. Queryblock matches preceding05a4e4 with newlocalframe and caller-liveoriginaldx/dz/scale. Fieldradius920,failures924,active932 checked plus precedingprefix; outR5,FR4dxFR5dzFR6scale andselfR4 observed. Nativefallbackcopy position60 and originaly unchanged. ExactcalleeABIs absolute andquery retained; no indirectcalls."
+    },
+    {
+      "id": "slide_scaled_contact",
+      "source": "src/objects/slide_scaled_contact.c",
+      "address": "0x8c05a69c",
+      "entry": "_slide_scaled_contact",
+      "symbols": {
+        "_absolute": "0x8c12c714",
+        "_query": "0x8c011214",
+        "_normalize_xz": "0x8c041d80"
+      },
+      "ranges": [
+        {
+          "offset": 304796,
+          "size": 528
+        }
+      ],
+      "functions": [
+        {
+          "name": "slide_scaled_contact",
+          "address": "0x8c05a69c",
+          "size": 528
+        }
+      ],
+      "reference_sha256": "3b05f6b17c2c2fc2c6c355dfc60b24fb9e8ce5de0cfa9a609d1f4306c35de36a",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "05a69c..05a8ac complete body ends05a882 thenalignment and10poolwords; nextcatalogentry05a8ac. Query/absolute reviewed fromexacthelper. normalize_xz041d80 alreadyadmitted source declaresfloat(Vector3*) and only touchesx/z, validating observed skippedYinitialization. Geometrynormal12/contactgeometry4 checked from loads+20 and+12; no gameplaychanges or newundefinedreads. No indirectdispatch."
+    },
+    {
+      "id": "clamp_scaled_contact",
+      "source": "src/objects/clamp_scaled_contact.c",
+      "address": "0x8c05a8ac",
+      "entry": "_clamp_scaled_contact",
+      "symbols": {
+        "_absolute": "0x8c12c714",
+        "_query": "0x8c011214",
+        "_square_root": "0x8c37f6c0"
+      },
+      "ranges": [
+        {
+          "offset": 305324,
+          "size": 316
+        }
+      ],
+      "functions": [
+        {
+          "name": "clamp_scaled_contact",
+          "address": "0x8c05a8ac",
+          "size": 316
+        }
+      ],
+      "reference_sha256": "25435fd2bc50181d81c0387e5ad6c134fa9009457e497ceeb50425c4b6911af1",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "05a8ac..05a9e8 bodyends05a9be+2alignment+10poolwords; nextentry05a9e8. Samequery/absolute checkedABI; square_root37f6c0 usesFR4 returnFR0 alreadyadmitted scale_vector_to_length. Contactgeometryfirst12bytes areposition, allfieldoffsets checked. No indirectdispatch."
+    },
+    {
+      "id": "apply_contact_position",
+      "source": "src/objects/apply_contact_position.cpp",
+      "address": "0x8c05a9e8",
+      "entry": "_apply_contact_position",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 305640,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_contact_position",
+          "address": "0x8c05a9e8",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "9b21f31d6164b305f5b16ec7a711ddbffb00e7b1d913d9a726471a469687bd01",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "language": "c++",
+      "boundary_review": "IndependentABI: vtable0x8c26b174 assigned byadmitted initialize_parameter_actor has+0x54=0438ec(selfR4,VectorR5),+0x50=043880(selfR4only). Bothcall011308, dereferenceHit+4geometry, updateobjectY andreturnHitpointer unchanged; reviewedrawbodies constructors/contact-virtual.asm. Complete entry0x8c05a9e8..0x8c05aa64body114bytes+2naturalalignment+offsetliterals368/928; nextcatalogentry. Base18unusedvirtuals then currentcontact(+0x50),contact(+0x54) after8-byte vtableprefix. Both visiblecallsitesconsume returnedpointer+4geometry andnormal+12; allfields checked."
+    },
+    {
+      "id": "capture_current_contact",
+      "source": "src/objects/capture_current_contact.cpp",
+      "address": "0x8c05aa64",
+      "entry": "_capture_current_contact",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 305764,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "capture_current_contact",
+          "address": "0x8c05aa64",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "6d080c578bd04d2b0f8f7a4db765606971ecde3fd205a60d808bc776faa1f18c",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "language": "c++",
+      "boundary_review": "IndependentABI: vtable0x8c26b174 assigned byadmitted initialize_parameter_actor has+0x54=0438ec(selfR4,VectorR5),+0x50=043880(selfR4only). Bothcall011308, dereferenceHit+4geometry, updateobjectY andreturnHitpointer unchanged; reviewedrawbodies constructors/contact-virtual.asm. Complete entry0x8c05aa64..0x8c05aad0body98bytes+2naturalalignment+offsetliterals368/928; nextcatalogentry. Base18unusedvirtuals then currentcontact(+0x50),contact(+0x54) after8-byte vtableprefix. Both visiblecallsitesconsume returnedpointer+4geometry andnormal+12; allfields checked."
+    },
+    {
+      "id": "advance_and_apply_contact",
+      "source": "src/objects/advance_and_apply_contact.cpp",
+      "address": "0x8c05aad0",
+      "entry": "_advance_and_apply_contact",
+      "symbols": {
+        "_query_scaled": "0x8c05a4e4"
+      },
+      "ranges": [
+        {
+          "offset": 305872,
+          "size": 264
+        }
+      ],
+      "functions": [
+        {
+          "name": "advance_and_apply_contact",
+          "address": "0x8c05aad0",
+          "size": 264
+        }
+      ],
+      "reference_sha256": "d3536c577d5403f18a87c85648093ad3f33e3e80c0d20f8481cf21aa6f5f19e4",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "language": "c++",
+      "boundary_review": "05aad0..05abd8 completebody242+2alignment+20pool; nextentry05abd8. Exactnewhelper05a4e4 checked Contact*(View*,float,float,float) withintegerR4 andFR4..FR6. Virtual54 checkedindependently via26b174table->0438ec; returnedContact* retained. Samecheckedposition/previous/normal/failures layout plusradius920/blocked924. PreservebeforecallY and nativefallback12byteassignment; no inlinehelperforced."
+    },
+    {
+      "id": "slide_and_apply_contact",
+      "source": "src/objects/slide_and_apply_contact.cpp",
+      "address": "0x8c05abd8",
+      "entry": "_slide_and_apply_contact",
+      "symbols": {
+        "_slide": "0x8c05a69c"
+      },
+      "ranges": [
+        {
+          "offset": 306136,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "slide_and_apply_contact",
+          "address": "0x8c05abd8",
+          "size": 152
+        }
+      ],
+      "reference_sha256": "6d30463fddee5184bbf201e11ca994f648103de59d5eb72b0369df44c08bc5a8",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "language": "c++",
+      "boundary_review": "05abd8..05ac70 catalog entry, complete138bytebody ends05ac62 then2alignment and3poolwords; nextentry05ac70. No historical attempt or queue target. Directcallee05a69c now exact withvoid(View*,Vector3*,float,float,float) ABI; firstselfR4/stackpointR5 and floatparams unchanged. Virtual54 independently reviewed0438ec andexactwrapper05aad0; checked accessed fields position60,previous72,normal368,failures928. Whole range includes own literalpool."
+    },
+    {
+      "id": "clamp_and_apply_contact",
+      "source": "src/objects/clamp_and_apply_contact.cpp",
+      "address": "0x8c05ac70",
+      "entry": "_clamp_and_apply_contact",
+      "symbols": {
+        "_query_scaled": "0x8c05a4e4",
+        "_square_root": "0x8c37f6c0"
+      },
+      "ranges": [
+        {
+          "offset": 306288,
+          "size": 296
+        }
+      ],
+      "functions": [
+        {
+          "name": "clamp_and_apply_contact",
+          "address": "0x8c05ac70",
+          "size": 296
+        }
+      ],
+      "reference_sha256": "79ef5c3fdd33cc4800af270874ca30fb1a9cde28d0eed58dbac108575f9cfa2a",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "language": "c++",
+      "boundary_review": "05ac70..05ad98 complete270bytebody ends05ad7e then2alignment and6poolwords. No historicaltrial/queue. Exactdirectquery05a4e4 and sqrt37f6c0 ABIs retained; exactclamp05a8ac preserves contactgeometrypositions andradius; virtual54/self+Vector pointer fromindependentvtablecalleereview and exact05aad0/05abd8. Allusedprefixoffsetschecked."
+    },
+    {
+      "id": "advance_and_dispatch_contact",
+      "source": "src/objects/advance_and_dispatch_contact.cpp",
+      "address": "0x8c05ad98",
+      "entry": "_advance_and_dispatch_contact",
+      "symbols": {
+        "_query_scaled": "0x8c05a4e4"
+      },
+      "ranges": [
+        {
+          "offset": 306584,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "advance_and_dispatch_contact",
+          "address": "0x8c05ad98",
+          "size": 160
+        }
+      ],
+      "reference_sha256": "21e971caedf4bc37b921defd4a72dd5d087abc85a3712da2de3f2871cbde5d9a",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "language": "c++",
+      "boundary_review": "05ad98..05ae38 complete144bytebody ends05ae28 and4poolwords; nextentry05ae38; no historicaltrial/queue. Tables262250,262418,2625f8 have zero8-byteheader,slot50=043880,slot54=0438ec,slot1b4=05a9e8. Destructor054d18 loads262250 from054d68 then stores toself+24 at054d2a, proving tablebase. Exact05a9e8 returnsContact* and takes selfR4/VectorR5; virtual107thmethod after8-byteprefix selects1b4. Directquery05a4e4exactABI andsameposition/radius/blockedfieldlayout checked. Callers06c94e/06c984 passFR4/5/6 andselfR4 andignore returnedpointer; target epilogue preservesvirtualpointerR0."
+    },
+    {
+      "id": "clamp_and_dispatch_contact",
+      "source": "src/objects/clamp_and_dispatch_contact.cpp",
+      "address": "0x8c05ae64",
+      "entry": "_clamp_and_dispatch_contact",
+      "symbols": {
+        "_query_scaled": "0x8c05a4e4",
+        "_square_root": "0x8c37f6c0"
+      },
+      "ranges": [
+        {
+          "offset": 306788,
+          "size": 196
+        }
+      ],
+      "functions": [
+        {
+          "name": "clamp_and_dispatch_contact",
+          "address": "0x8c05ae64",
+          "size": 196
+        }
+      ],
+      "reference_sha256": "34a34d30a6dacca5b0a27c11fd36c3416d66c840b4f137e84bbbbd442d5cfee8",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "language": "c++",
+      "boundary_review": "05ae64..05af28:176-byte body through RTS delay05af12, then5poolwords radius920/query05a4e4/blocked924/sqrt37f6c0/virtualoffset436. Next function05af28. No prior history/queue entry. Virtual1b4 ABI independently proven by tables262250/262418/2625f8 and exact override05a9e8; newly exact representative05ad98 uses identical self+24 vtable and slot1b4 return. Geometry/field/sqrt/query ABI already reviewed and exact in family."
+    },
+    {
       "id": "set_field_8c05af48",
       "source": "src/objects/set_field_8c05af48.c",
       "address": "0x8c05af48",
@@ -12059,6 +12367,64 @@
         "_render_flags": "0x8c46efc8"
       },
       "boundary_review": "Raw view-effect virtual update and conditional mode release reviewed through adjacent entries, ticks208, vptr24/virtualslot32, all call/return delays, separate flag stores, literals and natural alignment. Full checked match twice; stage148."
+    },
+    {
+      "id": "advance_contact_position",
+      "source": "src/objects/advance_contact_position.c",
+      "address": "0x8c0a2608",
+      "entry": "_advance_contact_position",
+      "symbols": {
+        "_query": "0x8c011214",
+        "_length": "0x8c37e480",
+        "_normalize": "0x8c37b630"
+      },
+      "ranges": [
+        {
+          "offset": 599560,
+          "size": 304
+        }
+      ],
+      "functions": [
+        {
+          "name": "advance_contact_position",
+          "address": "0x8c0a2608",
+          "size": 304
+        }
+      ],
+      "reference_sha256": "09f053085bcba30545d5a3f1833c9f3686cd42de69b57affc903e3469db440e4",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "0x8c0a2608..0x8c0a2738 entire body ends0x8c0a26fa,2natural alignment,15 referenced longwords pool0x8c0a26fc..0x8c0a2738. Adjacent representative starts2738. Same reviewed query/length/normalize ABIs as representative; all field offsets checked; scalar current copy intentionally retained as original FMOV fields vs native fallback copy in representative. No callbacks or unknown callees."
+    },
+    {
+      "id": "resolve_contact_position",
+      "source": "src/objects/resolve_contact_position.c",
+      "address": "0x8c0a2738",
+      "entry": "_resolve_contact_position",
+      "symbols": {
+        "_query": "0x8c011214",
+        "_length": "0x8c37e480",
+        "_normalize": "0x8c37b630"
+      },
+      "ranges": [
+        {
+          "offset": 599864,
+          "size": 280
+        }
+      ],
+      "functions": [
+        {
+          "name": "resolve_contact_position",
+          "address": "0x8c0a2738",
+          "size": 280
+        }
+      ],
+      "reference_sha256": "66e0ef7399c41bdb0882029242f7495438a67eee5373f19bc84537e841b6a14b",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "Catalog entry0x8c0a2738; complete body ends0x8c0a2820, twelve4-byte literals end0x8c0a2850 at catalog leaf add#104,r4. Incoming self R4 only. Callee0x8c011214 saves incomingR4/R5/R6, returns static contact pointerR14 ornull inR0; offset4 dereference is Vector3 pointer. Length0x8c37e480 loads3floatsR4 and returns sqrt inFR0. Normalize0x8c37b630 takes vectorR4, writes3floats and returns original length inFR0; ignored return declaredfloat. No indirect calls in target. NativeVector3 assignment follows admitted advance_scaled_position; scalar component arithmetic follows admitted step_vector_toward. All accessed field offsets checked. Reference includes complete own pool; no artificial padding."
     },
     {
       "id": "render_flag_400_set",
@@ -25534,6 +25900,35 @@
       ],
       "reference_sha256": "790edabb6705f502797a6d81a9610067b874cbd521d271e3b3bde278d1f63270",
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "project_contact_position",
+      "source": "src/objects/project_contact_position.c",
+      "address": "0x8c1101b8",
+      "entry": "_project_contact_position",
+      "symbols": {
+        "_query": "0x8c011214",
+        "_length": "0x8c37e480",
+        "_normalize": "0x8c37b630"
+      },
+      "ranges": [
+        {
+          "offset": 1049016,
+          "size": 192
+        }
+      ],
+      "functions": [
+        {
+          "name": "project_contact_position",
+          "address": "0x8c1101b8",
+          "size": 192
+        }
+      ],
+      "reference_sha256": "fce630cae1fc4bf2a02e9dd06b4af00040dd275acad001060f1465e67a409f56",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "boundary_review": "0x8c1101b8..0x8c110278 complete body ends0x8c110262,2natural alignment and5poolwords. Next entry110278 recognized in listing/catalog. Query same0x8c011214 reviewed three-arg pointerresult, length and normalize same as exact contact representative; no unknown or indirect callees. IncomingR4unused; R5/R6/R7 saved explicitly. Call literals at10e110,10e20c,10fec0 support distinct entry. Scalar deltay=0 is retained; no zero-length shortcut changed. Contact position at4 and Vector3 size12 checked."
     },
     {
       "id": "set_global_8c1117ec",
@@ -41232,6 +41627,83 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "initialize_selection_child",
+      "source": "src/objects/initialize_selection_child.c",
+      "address": "0x8c1bd074",
+      "entry": "_initialize_selection_child",
+      "symbols": {
+        "_config": "0x8c327f68",
+        "_dispatch": "0x8c2754fc",
+        "_resource": "0x8c327f40",
+        "_base": "0x8c0db1d0",
+        "_reset": "0x8c0dc854",
+        "_first": "0x8c1bd824",
+        "_second": "0x8c1bd868",
+        "_third": "0x8c1bd8c0"
+      },
+      "ranges": [
+        {
+          "offset": 1757300,
+          "size": 176
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_selection_child",
+          "address": "0x8c1bd074",
+          "size": 176
+        }
+      ],
+      "reference_sha256": "39ceb10f243f8847aba0f428960a2ea751f102ea7c9a379e0fc357cc0820d3a9",
+      "boundary_review": "1bd074..1bd124 complete142body/2alignment/32pool and adjacententry reviewed. Caller213900 provedfiveargs. base0db1d0 establishedself/config; reset0dc854 and three1bd8xx helpers self-only requirecalleeaudit beforeadmission. All usedoffsets checked; no speculativeallocationfixes or copieddata. Beforeintegrationcallee1bd824 readsfield112 with signedCMP/GT againstnumeric thresholds, proving constructorfourthargument/tablevalues areint limits, notpointer. Correctedprovisionaltypes; expectedidenticalbytes. reset0dc854 andthree1bd8xxfullcalleescheckedself-only."
+    },
+    {
+      "id": "choose_selection_child_digits",
+      "source": "src/objects/choose_selection_child_digits.c",
+      "address": "0x8c1bd824",
+      "entry": "_choose_selection_child_digits",
+      "symbols": {
+        "_thresholds": "0x8c288f70"
+      },
+      "ranges": [
+        {
+          "offset": 1759268,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "choose_selection_child_digits",
+          "address": "0x8c1bd824",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "e8698d6f3cb1a6bc9c62e2f3fc74694e227dd0bca798f08def750e3de8eaae51",
+      "boundary_review": "1bd824..1bd868 all64body/4pool, branches/delays/adjacententry reviewed. Thresholdtable external; signedCMP/GT proveslimitint and bytecountercount."
+    },
+    {
+      "id": "position_selection_child_digits",
+      "source": "src/objects/position_selection_child_digits.c",
+      "address": "0x8c1bd8c0",
+      "entry": "_position_selection_child_digits",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1759424,
+          "size": 140
+        }
+      ],
+      "functions": [
+        {
+          "name": "position_selection_child_digits",
+          "address": "0x8c1bd8c0",
+          "size": 140
+        }
+      ],
+      "reference_sha256": "fd201bd9569f7bf5aebf547e45a44e198dbe075d2abaafa20768302ab625cff4",
+      "boundary_review": "1bd8c0..1bd94c complete122body/2alignment/16pool, allbranches/delays/adjacententry reviewed. No externalcalls; all fieldoffsetschecked. Flags of visible rows are notcleared, preservingobservedbehavior."
+    },
+    {
       "id": "clear_global_8c1bded0",
       "source": "src/objects/clear_global_8c1bded0.c",
       "address": "0x8c1bded0",
@@ -44349,6 +44821,184 @@
       ],
       "reference_sha256": "e3a9a48ed12a6e7428dca5b26405302bbc5ff8203815f62866aaf6d32e71c305",
       "boundary_review": "211298..211314 full100-byte body includingtable28..48 plus24-byte pool, adjacentnormalresolver reviewed; raw reads globalmode, preservesR4..R7 forfivecallees; eachcallee prologue uses self/kind/key/index consistently with prior reviewed scriptresolver. Native switch relocation linker; no staticdata copied."
+    },
+    {
+      "id": "create_selection_row_view",
+      "source": "src/objects/create_selection_row_view.c",
+      "address": "0x8c2123c8",
+      "entry": "_create_selection_row_view",
+      "symbols": {
+        "_location": "0x8c215d44",
+        "_resource": "0x8c215d6c",
+        "_first_x": "0x8c2e16a0",
+        "_first_y": "0x8c2e16a4",
+        "_second_x": "0x8c2e16b0",
+        "_second_y": "0x8c2e16b4",
+        "_origin": "0x8c2e1614",
+        "_extent": "0x8c2e16a8",
+        "_create": "0x8c215904",
+        "_scale": "0x8c2e1708",
+        "_set_scale": "0x8c0dc610",
+        "_initialize": "0x8c215ab8",
+        "_duration": "0x8c2e1604",
+        "_show": "0x8c215b48"
+      },
+      "ranges": [
+        {
+          "offset": 2106312,
+          "size": 264
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_selection_row_view",
+          "address": "0x8c2123c8",
+          "size": 264
+        }
+      ],
+      "reference_sha256": "cb91bf361f90e9a2bc46adfabc1e7bf2d756154f9fe95a868e26f10d15ef899d",
+      "boundary_review": "2123c8..2124d0:206 instruction bytes,2 natural alignment,56pool. Getter215d44 self/Point output and215d6c self/resource; factory215904 twoPoint pointers/R6resource/R7flag/FR4 extent. Set_scale self/FR4; initialize self; show self/int. Fields checked; allocation and retained globals untouched."
+    },
+    {
+      "id": "update_selection_record_view",
+      "source": "src/objects/update_selection_record_view.c",
+      "address": "0x8c2124d0",
+      "entry": "_update_selection_record_view",
+      "linker": "codewarrior",
+      "symbols": {
+        "_mode": "0x8c5051e0",
+        "_selected": "0x8c5051e4",
+        "_context": "0x8c418248",
+        "_duration": "0x8c2e1604",
+        "_origin": "0x8c2e160c",
+        "_normal": "0x8c20bb4c",
+        "_script": "0x8c20c408",
+        "_alternate": "0x8c20d33c",
+        "_second": "0x8c20e420",
+        "_third": "0x8c20f644",
+        "_layout": "0x8c0e2328",
+        "_hide": "0x8c215b00",
+        "_show": "0x8c215b48"
+      },
+      "ranges": [
+        {
+          "offset": 2106576,
+          "size": 300
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_selection_record_view",
+          "address": "0x8c2124d0",
+          "size": 300
+        }
+      ],
+      "reference_sha256": "c1bf7b6224eddafd303d6aaf61b8bef46c2fe959db218bd810367643f9356351",
+      "boundary_review": "2124d0..2125fc complete232bodyincludingtable44..64/68pool, adjacentrefresh reviewed. Fourfieldoffsetschecked. layout0e2328 self/FR4; hide215b00/show215b48 self/intduration. Five recordcallees requireABIinspection beforeadmission; caller213900 passesrecord196, globalvalues passedR5/R6. Preserve unorderedclamp branch and extent comparison. FivecalleeABIinspection recorded in188-evidence/view-callees.raw.txt andscript-record-callee.raw.txt; correctedoutput/returntypes beforeintegration."
+    },
+    {
+      "id": "refresh_resource_selection",
+      "source": "src/objects/refresh_resource_selection.c",
+      "address": "0x8c2125fc",
+      "entry": "_refresh_resource_selection",
+      "symbols": {
+        "_code": "0x8c215d9c",
+        "_update": "0x8c2124d0"
+      },
+      "ranges": [
+        {
+          "offset": 2106876,
+          "size": 304
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_resource_selection",
+          "address": "0x8c2125fc",
+          "size": 304
+        }
+      ],
+      "reference_sha256": "a161c232763bcac351586ca6fae64fa2d795084ffde2b5d049fddc2dfa785f72",
+      "boundary_review": "2125fc..21272c complete272body/32pool, adjacententry21272c omittedfromcatalog but startsindependentprologue. Allbranches/delays/fieldoffsets reviewed. code215d9c signedshort; update2124d0 self/shortpointer verified. Lastslot uses198+count*2, preserving observedaddressing anduncheckedbounds."
+    },
+    {
+      "id": "dispatch_selection_phase",
+      "source": "src/objects/dispatch_selection_phase.c",
+      "address": "0x8c212b2c",
+      "entry": "_dispatch_selection_phase",
+      "linker": "codewarrior",
+      "symbols": {
+        "_handler0": "0x8c213abc",
+        "_handler1": "0x8c213c64",
+        "_handler2": "0x8c213d70",
+        "_handler3": "0x8c213fa4",
+        "_handler4": "0x8c214090",
+        "_handler5": "0x8c214130",
+        "_handler6": "0x8c21424c",
+        "_handler7": "0x8c2143a0",
+        "_handler8": "0x8c2144e8",
+        "_handler9": "0x8c214628",
+        "_handler10": "0x8c21475c",
+        "_handler11": "0x8c214848",
+        "_handler12": "0x8c21499c",
+        "_handler13": "0x8c214af0",
+        "_handler14": "0x8c214c44",
+        "_handler15": "0x8c214d20",
+        "_handler16": "0x8c214ed8"
+      },
+      "ranges": [
+        {
+          "offset": 2108204,
+          "size": 368
+        }
+      ],
+      "functions": [
+        {
+          "name": "dispatch_selection_phase",
+          "address": "0x8c212b2c",
+          "size": 368
+        }
+      ],
+      "reference_sha256": "08d4ccbcb74cd27323fca13a4650fcba9b045ea57acb7f63bb685b8c6f50df4b",
+      "boundary_review": "Reviewed full 212b2c..212c9c; all table destinations lead to calls or common epilogue; independently entered adjacent activation function. All 17 callees consume R4 self. Fifteen are admitted; two provisional bodies and direct call sites show self-only ABI. No value used after any call."
+    },
+    {
+      "id": "poll_resource_selection",
+      "source": "src/objects/poll_resource_selection.c",
+      "address": "0x8c213900",
+      "entry": "_poll_resource_selection",
+      "symbols": {
+        "_code": "0x8c215d9c",
+        "_classify": "0x8c210724",
+        "_valid": "0x8c03347c",
+        "_origin_x": "0x8c2e1624",
+        "_origin_y": "0x8c2e1628",
+        "_scale": "0x8c2e1708",
+        "_resources": "0x8c2e1710",
+        "_heap": "0x8c4d97e0",
+        "_allocate": "0x8c122700",
+        "_construct": "0x8c1bd074",
+        "_set_scale": "0x8c0dc610",
+        "_activate": "0x8c2163e0",
+        "_deactivate": "0x8c2163c4",
+        "_update": "0x8c2124d0",
+        "_close": "0x8c0dc7f4"
+      },
+      "ranges": [
+        {
+          "offset": 2111744,
+          "size": 444
+        }
+      ],
+      "functions": [
+        {
+          "name": "poll_resource_selection",
+          "address": "0x8c213900",
+          "size": 444
+        }
+      ],
+      "reference_sha256": "6703718e2c386f0230fe7197106143598d57f8b03dff295823340009cebad844",
+      "boundary_review": "213900..213abc full358-byte body/2alignment/84pool and adjacentkindchooser reviewed. Constructor1bd074 consumes self/Point*/int/resource plus fifthstackcurrent; allocate122700 twoargs; set_scale0dc610 self/FR4; valid03347c self; update2124d0 self/shortpointer; close0dc7f4 self; activate2163e0/deactivate2163c4 self. Getter/classify alreadyexactcontext. Checkedallprovisionaloffsets; preserve observed child-or-valid condition including possible null path. Referenceddata remainsretained. Beforeintegrationcallee1bd824 readsfield112 with signedCMP/GT againstnumeric thresholds, proving constructorfourthargument/tablevalues areint limits, notpointer. Correctedprovisionaltypes; expectedidenticalbytes. reset0dc854 andthree1bd8xxfullcalleescheckedself-only."
     },
     {
       "id": "choose_resource_selection_kind",

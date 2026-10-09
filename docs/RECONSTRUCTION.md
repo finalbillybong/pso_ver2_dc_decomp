@@ -7933,3 +7933,12 @@ Batch169 investigation: SDK helper 0x8c37d534 is parked after one hypothesis (72
 ## Proven reconstruction families, batch 187
 
 20 complete exact functions add 5,320 bytes, preserving all 2198 prior matches. Totals: 2218 functions / 2142 modules / 177,588 compiled function-range bytes / zero reconstructed data bytes / 3,985,324 retained reference bytes. See [BATCH.md](BATCH.md) for measured experiments and verification; historical efficiency evidence remains in [EFFICIENCY.md](EFFICIENCY.md).
+
+
+## Batch 188: verified parallel contact continuation
+
+All 22 admitted candidates, including the eight carried snapshots, reproduced twice (44 fresh comparisons). Each checkout passed two fresh builds and its integrated-image comparison and five-function proof. All 81 research and 86 public tests passed; both source-only builds rejected 3,979,900 retained bytes without altering build artifacts. All pre-existing source/header hashes were preserved. During the continuation, no compiler, flags, matching rule, gameplay behavior or tooling was changed, and no commit or push occurred. Publication was authorized afterward. The published snapshot also includes the earlier demonstration's persistent-history safeguards, diagnostics and accounting tests; those tooling changes predate the continuation.
+
+Continue the contact/vector family when an exact representative establishes a complete related implementation. Four exact representatives contributed 724 bytes and supported ten exact siblings totaling 2,636 bytes. Including failed representatives, the continuation spent 13 representative hypotheses and 14 sibling hypotheses. Constructor and selection evidence is exhausted for this trial; their register/address lifetime blockers remain parked. The larger actor motion representative remains 524/70 after three hypotheses, with the third producing a duplicate output. Do not expand its 544-byte sibling without new evidence. The original primary targets remain incomplete and unchanged.
+
+The checkpoint admits 5,424 bytes (3,360 new plus 2,064 carried) and reaches 183,012 bytes / 2,240 functions. Twenty-seven new hypotheses, one failed duplicate output, zero correction attempts and unchanged original matching rules. Detailed historical distinctions and rates are in [THROUGHPUT.md](THROUGHPUT.md).

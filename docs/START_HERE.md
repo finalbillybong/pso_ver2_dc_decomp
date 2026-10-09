@@ -1,13 +1,13 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **2218 exact functions in 2142 modules**, replacing
-**177,588 bytes** of the 4,162,912-byte decoded executable (**4.2660% image coverage**).
-It retains **3,985,324 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **2240 exact functions in 2164 modules**, replacing
+**183,012 bytes** of the 4,162,912-byte decoded executable (**4.3962% image coverage**).
+It retains **3,979,900 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
 
-## Active unresolved targets
+## Parked unresolved targets
 
 | Target | Complete range | Current result | Next focus |
 | --- | --- | --- | --- |
@@ -18,9 +18,10 @@ unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 | `signed_remainder`, `0x8c18e8a0` | 180 bytes | No complete match | Incoming R0/carry, register preservation and zero-divisor behavior |
 
 The authoritative queue is `config/reconstruction-targets.json`; unmatched
-sources remain in `src/provisional`. Both original primary targets must match
-completely to finish their batch. Supporting matches never replace that
-acceptance criterion. Preserve repeated radius squaring and skipped vector
+sources remain in `src/provisional`. Both original primary targets remain parked
+and incomplete. Their original objective has not been achieved; their recorded
+blockers and revisit conditions still apply. Resolving them is not a prerequisite
+for broader reconstruction work. Preserve repeated radius squaring and skipped vector
 initialization as observed; do not introduce speculative behavior fixes.
 
 Other private scratch blockers include effect update 536/25, effect advance
@@ -28,17 +29,25 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: 187: proven reconstruction families
+## Latest integration batch: 188: parallel family continuation
 
-20 new functions / 5,320 bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.
+22 admitted functions / 5,424 bytes, including 3,360 new bytes and 2,064 carried bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.
 
 ## Autonomous iteration
 
-Inspect → implement → compile → compare → verify → commit → push → repeat.
+The active priority is project-wide verified-byte throughput. See
+[THROUGHPUT.md](THROUGHPUT.md) for the bounded demonstration and
+[RECONSTRUCTION_WORKFLOW.md](RECONSTRUCTION_WORKFLOW.md) for enforced history,
+diagnostics and reporting. Global code-completion percentage remains unknown.
+
+Inspect → implement → compile → compare → collect → verify.
+Publication of the verified batch 188 checkpoint was explicitly authorized after review.
 Prioritize credible exact-match opportunities. Record each distinct hypothesis
 and its predicted instruction change; consult history and group identical outputs.
-After two or three unsuccessful distinct hypotheses, park unless concrete new
-evidence justifies more; never exceed ten cumulative hypotheses. Record its precise blocker and evidence-based revisit condition.
+Park after two unsuccessful hypotheses without improvement; a third requires
+referenced actionable evidence. Park after the third failure, and never exceed
+ten lifetime unsuccessful hypotheses. Reopening requires a new observation
+addressing the recorded blocker. Record its precise blocker and evidence-based revisit condition.
 Counts persist across sessions. Prior parked targets remain parked; this policy
 does not reset their history. Continue to another productive target after each
 checkpoint. Publish only reviewed public source and sanitized receipts; preserve
@@ -85,3 +94,11 @@ out of publication. Check the staged allowlist and redacted history scan before
 pushing, then verify CI for the exact commit. Gameplay, disc repacking and
 analysis-tool integration are outside the reconstruction loop. Continue from
 verified checkpoints; they are progress records, not requests to stop.
+
+## Verified parallel continuation
+
+The full 22-candidate / 5,424-byte collection is now admitted and verified in both checkouts, including 3,360 newly reconstructed bytes. The new baseline is 183,012 bytes / 2,240 functions. All old sources/headers remain unchanged. Four fresh builds, both integrated images and five-function proofs, 81 research tests, 86 public tests and both source-only artifact guards passed.
+
+Continue proven contact/vector compositions; do not reopen the parked selection update (1024/12), region constructors (404/6 and 252/10) or actor motion (524/70) without new evidence. The actor third hypothesis duplicated its second output. The 1,700-byte selection activation and 544-byte actor sibling remain untried. Original primary targets remain incomplete. The demonstration has used 35/40 hypotheses and all 10/10 selection/view hypotheses; do not reset its budget or historical counts. The verified batch 188 checkpoint is authorized for publication; this does not reset the trial budget.
+
+See [THROUGHPUT.md](THROUGHPUT.md) and [BATCH.md](BATCH.md). Private inventory, sources, failed-target counts, timings and receipts remain under `reconstruction-throughput-continuation`.
