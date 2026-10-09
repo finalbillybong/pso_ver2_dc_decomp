@@ -4385,6 +4385,35 @@
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefix0dd4224f0dd00b40. No empty neighboring function included."
     },
     {
+      "id": "initialize_position_controller",
+      "source": "src/objects/initialize_position_controller.c",
+      "address": "0x8c03c92c",
+      "entry": "_initialize_position_controller",
+      "symbols": {
+        "_parent": "0x8c44be88",
+        "_object_name": "0x8c2ef008",
+        "_controller_vtable": "0x8c261b58",
+        "_base_at": "0x8c0330e4",
+        "_actor_at": "0x8c021ef8",
+        "_prepare_at": "0x8c03d304"
+      },
+      "ranges": [
+        {
+          "offset": 182572,
+          "size": 228
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_position_controller",
+          "address": "0x8c03c92c",
+          "size": 228
+        }
+      ],
+      "reference_sha256": "a781743d8b086302a37e722bcf400e015b5560d759bc35cca2e65f7a28f17522",
+      "boundary_review": "Raw03c92c..03ca10 includes192-bytebody and36-bytepool, next destructor. Source initializer ignores incoming parent, loads global parent before base0330e4; derived1336b4 caller passes unused parent. Actor021ef8 lookup ABI already used by proven actor loops; prepare03d304 returns integer. Every accessed field checked."
+    },
+    {
       "id": "destroy_object_8c03ca10",
       "source": "src/effects/destroy_object_8c03ca10.c",
       "address": "0x8c03ca10",
@@ -5036,6 +5065,108 @@
       "boundary_review": "Raw entries0x8c03f414/444/480 bound48/60byte routines; return delay and both literals included; source exact twice; stage110."
     },
     {
+      "id": "initialize_manager_storage",
+      "source": "src/objects/initialize_manager_storage.c",
+      "address": "0x8c040144",
+      "entry": "_initialize_manager_storage",
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_allocate_at": "0x8c18de4c",
+        "_finish_at": "0x8c0401fc"
+      },
+      "ranges": [
+        {
+          "offset": 196932,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_storage",
+          "address": "0x8c040144",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "49824bdc54d8511549503178f8ba4779afdc6e8008485991e7461c5b6b7347b7",
+      "boundary_review": "Raw040144..0401a0 reviewed including complete16-byte pool and next destructor; five new batch182 manager callees pass this descriptor inR6. Every used offset checked; allocation failure behavior unchanged."
+    },
+    {
+      "id": "destroy_manager_storage",
+      "source": "src/objects/destroy_manager_storage.c",
+      "address": "0x8c0401a0",
+      "entry": "_destroy_manager_storage",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_release_at": "0x8c18de08",
+        "_base_at": "0x8c03311c",
+        "_free_at": "0x8c122774"
+      },
+      "ranges": [
+        {
+          "offset": 197024,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_manager_storage",
+          "address": "0x8c0401a0",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "5e5aa8a71052be310c38565d4cab1141dd3c8931fd839af4043968e04e99cb37",
+      "boundary_review": "Raw0401a0..040250 and1066e4..10671c reviewed with pools,naturalalignment,nextentries. All used fields checked. Control manager only accesses through44 bytes; descriptor pointer at44 belongs to storage manager. Parent forwarding explicit."
+    },
+    {
+      "id": "reset_manager_record_slots",
+      "source": "src/objects/reset_manager_record_slots.c",
+      "address": "0x8c0401fc",
+      "entry": "_reset_manager_record_slots",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 197116,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_manager_record_slots",
+          "address": "0x8c0401fc",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "f3897e4575532921d197bd7210e761d8d255bccd8cca02b5677a581fc8cb7ad3",
+      "boundary_review": "Raw0401a0..040250 and1066e4..10671c reviewed with pools,naturalalignment,nextentries. All used fields checked. Control manager only accesses through44 bytes; descriptor pointer at44 belongs to storage manager. Parent forwarding explicit."
+    },
+    {
+      "id": "manager_record_dispatch",
+      "source": "src/objects/manager_record_dispatch.c",
+      "address": "0x8c040230",
+      "entry": "_append_manager_record",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 197168,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "append_manager_record",
+          "address": "0x8c040230",
+          "size": 32
+        },
+        {
+          "name": "manager_empty_callback",
+          "address": "0x8c040250",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "446d29b39141d4728af7d77b9e87df710573f53eaead6d1ae7da5f394682aeab",
+      "boundary_review": "Raw0401a0..040250 and1066e4..10671c reviewed with pools,naturalalignment,nextentries. All used fields checked. Control manager only accesses through44 bytes; descriptor pointer at44 belongs to storage manager. Parent forwarding explicit. Adjacent040250 RTS/NOP independently reviewed, references recorded in scratch; neither range is already admitted. Combined module must match every byte and bothentry offsets."
+    },
+    {
       "id": "initialize_manager_8c040254",
       "source": "src/objects/initialize_manager_8c040254.c",
       "address": "0x8c040254",
@@ -5085,6 +5216,115 @@
       ],
       "reference_sha256": "27f80502417896958ada818256ab2becf2fa9e421207d0f616ba31a426bb6a8c",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "create_descriptor_managers",
+      "source": "src/objects/create_descriptor_managers.c",
+      "address": "0x8c0405b4",
+      "entry": "_create_descriptor_managers",
+      "symbols": {
+        "_descriptors": "0x8c2efec8",
+        "_instances": "0x8c466e20",
+        "_resources": "0x8c2f0ffc",
+        "_quads": "0x8c466fd8",
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44bea4",
+        "_allocate_at": "0x8c122700",
+        "_initialize0_at": "0x8c040790",
+        "_initialize1_at": "0x8c040a44",
+        "_initialize2_at": "0x8c040254",
+        "_initialize3_at": "0x8c040d10",
+        "_initialize4_at": "0x8c0419b8",
+        "_append_at": "0x8c040230"
+      },
+      "ranges": [
+        {
+          "offset": 198068,
+          "size": 296
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_descriptor_managers",
+          "address": "0x8c0405b4",
+          "size": 296
+        }
+      ],
+      "reference_sha256": "3245813bbf294c40ebfe430e419ce86261c5c6f9b5e904929af4d099a402d907",
+      "linker": "codewarrior",
+      "boundary_review": "Raw040510..04074c reviewed entry by entry, five-case table/pools/naturalalignment. All descriptor/quad offsets checked. Constructor040144 descendant ABI reviewed before candidate generation. Repeated clear loop and lack of default object initialization preserved."
+    },
+    {
+      "id": "clear_descriptor_tables",
+      "source": "src/objects/clear_descriptor_tables.c",
+      "address": "0x8c0406dc",
+      "entry": "_clear_descriptor_tables",
+      "symbols": {
+        "_descriptors": "0x8c2efec8",
+        "_instances": "0x8c466e20",
+        "_resources": "0x8c2f0ffc",
+        "_quads": "0x8c466fd8",
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44bea4",
+        "_allocate_at": "0x8c122700",
+        "_initialize0_at": "0x8c040790",
+        "_initialize1_at": "0x8c040a44",
+        "_initialize2_at": "0x8c040254",
+        "_initialize3_at": "0x8c040d10",
+        "_initialize4_at": "0x8c0419b8",
+        "_append_at": "0x8c040230"
+      },
+      "ranges": [
+        {
+          "offset": 198364,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_descriptor_tables",
+          "address": "0x8c0406dc",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "f854cefcce5973f6e8c1bc5cd23f8c33f10b8b6d9bf28ddb79173adabf60ad21",
+      "boundary_review": "Raw040510..04074c reviewed entry by entry, five-case table/pools/naturalalignment. All descriptor/quad offsets checked. Constructor040144 descendant ABI reviewed before candidate generation. Repeated clear loop and lack of default object initialization preserved."
+    },
+    {
+      "id": "append_descriptor_record",
+      "source": "src/objects/append_descriptor_record.c",
+      "address": "0x8c04072c",
+      "entry": "_append_descriptor_record",
+      "symbols": {
+        "_descriptors": "0x8c2efec8",
+        "_instances": "0x8c466e20",
+        "_resources": "0x8c2f0ffc",
+        "_quads": "0x8c466fd8",
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44bea4",
+        "_allocate_at": "0x8c122700",
+        "_initialize0_at": "0x8c040790",
+        "_initialize1_at": "0x8c040a44",
+        "_initialize2_at": "0x8c040254",
+        "_initialize3_at": "0x8c040d10",
+        "_initialize4_at": "0x8c0419b8",
+        "_append_at": "0x8c040230"
+      },
+      "ranges": [
+        {
+          "offset": 198444,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "append_descriptor_record",
+          "address": "0x8c04072c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "50f064b8e3c71610179d2647305078e0e4a1b095ef280403a1669b5df8b31349",
+      "boundary_review": "Raw040510..04074c reviewed entry by entry, five-case table/pools/naturalalignment. All descriptor/quad offsets checked. Constructor040144 descendant ABI reviewed before candidate generation. Repeated clear loop and lack of default object initialization preserved."
     },
     {
       "id": "destroy_object_8c04074c",
@@ -8647,6 +8887,76 @@
       ],
       "reference_sha256": "c5f28213f4da770edf72fa4438e2bb09ab557043e9b41ab1a3744fccf883d280",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "initialize_offset_owner_effect",
+      "source": "src/effects/initialize_offset_owner_effect.c",
+      "address": "0x8c05f4c4",
+      "entry": "_initialize_offset_owner_effect",
+      "symbols": {
+        "_effect_vtable": "0x8c262b8c",
+        "_object_name": "0x8c2f3870",
+        "_heap": "0x8c4d97e0",
+        "_camera": "0x8c46ee80",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_valid_at": "0x8c05b2dc",
+        "_spawn_at": "0x8c0a7708",
+        "_subtract_at": "0x8c37f6f0",
+        "_normalize_at": "0x8c041d40",
+        "_set_position_at": "0x8c0a7608"
+      },
+      "ranges": [
+        {
+          "offset": 324804,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_offset_owner_effect",
+          "address": "0x8c05f4c4",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "ee5119772642d3832e787789288ee425619c4f268315cc14e9aff547da1bbbaa",
+      "boundary_review": "Raw05f4c4..05f670 reviewed separate112/84/232-byte functions, literals and naturalpadding. Constructor intentionally leaves child untouched when owner invalid. Subtract37f6f0 inspected: mutates first vector by subtracting second. Normalize041d40 reviewed in181; preserve float return ABI. Lifecycle call arguments and every accessed field checked."
+    },
+    {
+      "id": "destroy_offset_owner_effect",
+      "source": "src/effects/destroy_offset_owner_effect.c",
+      "address": "0x8c05f534",
+      "entry": "_destroy_offset_owner_effect",
+      "symbols": {
+        "_effect_vtable": "0x8c262b8c",
+        "_object_name": "0x8c2f3870",
+        "_heap": "0x8c4d97e0",
+        "_camera": "0x8c46ee80",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_valid_at": "0x8c05b2dc",
+        "_spawn_at": "0x8c0a7708",
+        "_subtract_at": "0x8c37f6f0",
+        "_normalize_at": "0x8c041d40",
+        "_set_position_at": "0x8c0a7608"
+      },
+      "ranges": [
+        {
+          "offset": 324916,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_offset_owner_effect",
+          "address": "0x8c05f534",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "06bbe541f354e18cc338fa902bf20d47bf3855eeb18986154dd4ec23f311d262",
+      "boundary_review": "Raw05f4c4..05f670 reviewed separate112/84/232-byte functions, literals and naturalpadding. Constructor intentionally leaves child untouched when owner invalid. Subtract37f6f0 inspected: mutates first vector by subtracting second. Normalize041d40 reviewed in181; preserve float return ABI. Lifecycle call arguments and every accessed field checked."
     },
     {
       "id": "choose_emit_slot",
@@ -23991,6 +24301,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "initialize_control_manager",
+      "source": "src/objects/initialize_control_manager.c",
+      "address": "0x8c1066e4",
+      "entry": "_initialize_control_manager",
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c30b6a0"
+      },
+      "ranges": [
+        {
+          "offset": 1009380,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_control_manager",
+          "address": "0x8c1066e4",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "1c6961a2b31a9c78b12d350ffa8949df5bf8e005968d5d92cd3682546c89c8a2",
+      "boundary_review": "Raw0401a0..040250 and1066e4..10671c reviewed with pools,naturalalignment,nextentries. All used fields checked. Control manager only accesses through44 bytes; descriptor pointer at44 belongs to storage manager. Parent forwarding explicit."
+    },
+    {
       "id": "destroy_object_8c10671c",
       "source": "src/effects/destroy_object_8c10671c.c",
       "address": "0x8c10671c",
@@ -28734,6 +29069,600 @@
       "reference_sha256": "74b5bf40938a7bde167780384cc927f8fa373dd388d9e41d268b57b456fb7ce6",
       "symbols": {},
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
+    },
+    {
+      "id": "initialize_timed_owner_effect",
+      "source": "src/effects/initialize_timed_owner_effect.c",
+      "address": "0x8c132d88",
+      "entry": "_initialize_timed_owner_effect",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd28",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1191304,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_timed_owner_effect",
+          "address": "0x8c132d88",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "d9f53be4c5d783fd7fa5938d0fcddea72ff412506d09c4035c023caa3e89b72a",
+      "boundary_review": "Raw132d88..132ec4 and next constructor reviewed. Catalog incorrectly spans three genuine entries; constructor104/destructor80/update132 each own pools. Offsets checked; start05fbf8 R4id R5Vector R6/R7zero, stop0602c4 R4handle, emit0a777c R4Vector R5id and base0330e4 parent R5 follow already reviewed callers. Preserve source dependency on signed remainder helper."
+    },
+    {
+      "id": "destroy_timed_owner_effect",
+      "source": "src/effects/destroy_timed_owner_effect.c",
+      "address": "0x8c132df0",
+      "entry": "_destroy_timed_owner_effect",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd28",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1191408,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect",
+          "address": "0x8c132df0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "9e1e3384bc7895357d7752a2f66357c20b0aeb82eb6ddafe1baeb392533fc69e",
+      "boundary_review": "Raw132d88..132ec4 and next constructor reviewed. Catalog incorrectly spans three genuine entries; constructor104/destructor80/update132 each own pools. Offsets checked; start05fbf8 R4id R5Vector R6/R7zero, stop0602c4 R4handle, emit0a777c R4Vector R5id and base0330e4 parent R5 follow already reviewed callers. Preserve source dependency on signed remainder helper."
+    },
+    {
+      "id": "update_timed_owner_effect",
+      "source": "src/effects/update_timed_owner_effect.c",
+      "address": "0x8c132e40",
+      "entry": "_update_timed_owner_effect",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd28",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1191488,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_timed_owner_effect",
+          "address": "0x8c132e40",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "6c2f58cf087fc66eba25e36b44ca4a6ec3f6f8c0f93a8a400bc90f2e98167350",
+      "boundary_review": "Raw132d88..132ec4 and next constructor reviewed. Catalog incorrectly spans three genuine entries; constructor104/destructor80/update132 each own pools. Offsets checked; start05fbf8 R4id R5Vector R6/R7zero, stop0602c4 R4handle, emit0a777c R4Vector R5id and base0330e4 parent R5 follow already reviewed callers. Preserve source dependency on signed remainder helper."
+    },
+    {
+      "id": "initialize_timed_owner_effect_8c132ec4",
+      "source": "src/effects/initialize_timed_owner_effect_8c132ec4.c",
+      "address": "0x8c132ec4",
+      "entry": "_initialize_timed_owner_effect_8c132ec4",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd44",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1191620,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_timed_owner_effect_8c132ec4",
+          "address": "0x8c132ec4",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "c3628fc218c4c91ee0d8eb5e37137dee9cb93ef0b44d65fbb4cb924f533f671d",
+      "boundary_review": "Raw entry0x8c132ec4 and adjacent entry0x8c132f2c independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "destroy_timed_owner_effect_8c132f2c",
+      "source": "src/effects/destroy_timed_owner_effect_8c132f2c.c",
+      "address": "0x8c132f2c",
+      "entry": "_destroy_timed_owner_effect_8c132f2c",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd44",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1191724,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect_8c132f2c",
+          "address": "0x8c132f2c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "278aff55dfc364a9c1ca56cd058e0f1791b65636d125b84a85f4773973e2ab5c",
+      "boundary_review": "Raw entry0x8c132f2c and adjacent entry0x8c132f7c independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "update_timed_owner_effect_8c132f7c",
+      "source": "src/effects/update_timed_owner_effect_8c132f7c.c",
+      "address": "0x8c132f7c",
+      "entry": "_update_timed_owner_effect_8c132f7c",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd28",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a50",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1191804,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_timed_owner_effect_8c132f7c",
+          "address": "0x8c132f7c",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "ad5c5d023fdf6c011aa87f0ea4df3b7b96d2ea1c5f7ba060b341d31f6fc893f6",
+      "boundary_review": "Raw entry0x8c132f7c and adjacent entry0x8c133000 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "initialize_timed_owner_effect_8c133000",
+      "source": "src/effects/initialize_timed_owner_effect_8c133000.c",
+      "address": "0x8c133000",
+      "entry": "_initialize_timed_owner_effect_8c133000",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd60",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1191936,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_timed_owner_effect_8c133000",
+          "address": "0x8c133000",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "dc07a5e3af3d9c44f2bf08fd7292bfc40923019962f439039a362e7885330c41",
+      "boundary_review": "Raw entry0x8c133000 and adjacent entry0x8c133068 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "destroy_timed_owner_effect_8c133068",
+      "source": "src/effects/destroy_timed_owner_effect_8c133068.c",
+      "address": "0x8c133068",
+      "entry": "_destroy_timed_owner_effect_8c133068",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd60",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1192040,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect_8c133068",
+          "address": "0x8c133068",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "8eb138cf6a2550b177735f1de0f914f5751fa766143882f9eb9cd364a38e53d2",
+      "boundary_review": "Raw entry0x8c133068 and adjacent entry0x8c1330b8 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "update_timed_owner_effect_8c1330b8",
+      "source": "src/effects/update_timed_owner_effect_8c1330b8.c",
+      "address": "0x8c1330b8",
+      "entry": "_update_timed_owner_effect_8c1330b8",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd28",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a60",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1192120,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_timed_owner_effect_8c1330b8",
+          "address": "0x8c1330b8",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "1bb7382b48d724b60d82fac155c9a97f54ad46016cf498daa52cd07d6f917e87",
+      "boundary_review": "Raw entry0x8c1330b8 and adjacent entry0x8c13313c independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "initialize_timed_owner_effect_8c13313c",
+      "source": "src/effects/initialize_timed_owner_effect_8c13313c.c",
+      "address": "0x8c13313c",
+      "entry": "_initialize_timed_owner_effect_8c13313c",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd7c",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1192252,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_timed_owner_effect_8c13313c",
+          "address": "0x8c13313c",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "ead8753cf73f0cdb35a170fc38a730c7d02c447b55600e708ef73afb398f69ec",
+      "boundary_review": "Raw entry0x8c13313c and adjacent entry0x8c1331a4 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "destroy_timed_owner_effect_8c1331a4",
+      "source": "src/effects/destroy_timed_owner_effect_8c1331a4.c",
+      "address": "0x8c1331a4",
+      "entry": "_destroy_timed_owner_effect_8c1331a4",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd7c",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1192356,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect_8c1331a4",
+          "address": "0x8c1331a4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "837ccbfd4cb14862411761808357288aae9a6cdb431e6548987fd3454e021e6a",
+      "boundary_review": "Raw entry0x8c1331a4 and adjacent entry0x8c1331f4 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "update_timed_owner_effect_8c1331f4",
+      "source": "src/effects/update_timed_owner_effect_8c1331f4.c",
+      "address": "0x8c1331f4",
+      "entry": "_update_timed_owner_effect_8c1331f4",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd28",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a68",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1192436,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_timed_owner_effect_8c1331f4",
+          "address": "0x8c1331f4",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "4045f1bf42e757ec95571e8d735ca8cd7dc6b0b9a275a6284992369eceb69224",
+      "boundary_review": "Raw entry0x8c1331f4 and adjacent entry0x8c133278 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "initialize_timed_owner_effect_8c133278",
+      "source": "src/effects/initialize_timed_owner_effect_8c133278.c",
+      "address": "0x8c133278",
+      "entry": "_initialize_timed_owner_effect_8c133278",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd98",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1192568,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_timed_owner_effect_8c133278",
+          "address": "0x8c133278",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "41ec6cba3afb924692f6b946b28051016c19b8cbeba594d2395666aaf228da8b",
+      "boundary_review": "Raw entry0x8c133278 and adjacent entry0x8c1332e0 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "destroy_timed_owner_effect_8c1332e0",
+      "source": "src/effects/destroy_timed_owner_effect_8c1332e0.c",
+      "address": "0x8c1332e0",
+      "entry": "_destroy_timed_owner_effect_8c1332e0",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd98",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1192672,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect_8c1332e0",
+          "address": "0x8c1332e0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "1888779af088b2e43032714f8d0e6be1c38f7caeead50447b4bebcba3b835397",
+      "boundary_review": "Raw entry0x8c1332e0 and adjacent entry0x8c133330 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "update_timed_owner_effect_8c133330",
+      "source": "src/effects/update_timed_owner_effect_8c133330.c",
+      "address": "0x8c133330",
+      "entry": "_update_timed_owner_effect_8c133330",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd28",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a70",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1192752,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_timed_owner_effect_8c133330",
+          "address": "0x8c133330",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "114a72edb0033477d5768707f079295aaf1b6f89fcfa96118cd27c5a6bd0fc4b",
+      "boundary_review": "Raw entry0x8c133330 and adjacent entry0x8c1333b4 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "initialize_timed_owner_effect_8c1333b4",
+      "source": "src/effects/initialize_timed_owner_effect_8c1333b4.c",
+      "address": "0x8c1333b4",
+      "entry": "_initialize_timed_owner_effect_8c1333b4",
+      "symbols": {
+        "_effect_vtable": "0x8c26cdb4",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1192884,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_timed_owner_effect_8c1333b4",
+          "address": "0x8c1333b4",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "01ccd4e48aaad79aa2f42d46e2ddbf5a19ec63efa67aa94b42b8c45bc7631067",
+      "boundary_review": "Raw entry0x8c1333b4 and adjacent entry0x8c13341c independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "destroy_timed_owner_effect_8c13341c",
+      "source": "src/effects/destroy_timed_owner_effect_8c13341c.c",
+      "address": "0x8c13341c",
+      "entry": "_destroy_timed_owner_effect_8c13341c",
+      "symbols": {
+        "_effect_vtable": "0x8c26cdb4",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1192988,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect_8c13341c",
+          "address": "0x8c13341c",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "1a5ca7e725ad8d9a0920701fd95da01d13b1c5a3fc7a59daa4088653e21ddd38",
+      "boundary_review": "Raw entry0x8c13341c and adjacent entry0x8c13346c independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "update_timed_owner_effect_8c13346c",
+      "source": "src/effects/update_timed_owner_effect_8c13346c.c",
+      "address": "0x8c13346c",
+      "entry": "_update_timed_owner_effect_8c13346c",
+      "symbols": {
+        "_effect_vtable": "0x8c26cd28",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a78",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0602c4",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1193068,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_timed_owner_effect_8c13346c",
+          "address": "0x8c13346c",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "55d7318cbfad1505ed62691d37275ae614f155d61e601b0ce6a4f81be3528a01",
+      "boundary_review": "Raw entry0x8c13346c and adjacent entry0x8c1334f0 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
     },
     {
       "id": "initialize_control_block_owner",
@@ -33781,6 +34710,33 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_child_owner_8c18a09c",
+      "source": "src/effects/destroy_child_owner_8c18a09c.c",
+      "address": "0x8c18a09c",
+      "entry": "_destroy_child_owner_8c18a09c",
+      "symbols": {
+        "_effect_vtable": "0x8c27220c",
+        "_base_destroy_at": "0x8c03311c",
+        "_heap": "0x8c4d97e0",
+        "_release_at": "0x8c122774"
+      },
+      "ranges": [
+        {
+          "offset": 1548444,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_child_owner_8c18a09c",
+          "address": "0x8c18a09c",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "c5fdec80768fd2889b64ae4c695dc4d86c7a3d3cdf873592adaf31b0d40c1fdf",
+      "boundary_review": "Referenced destructor entry and next entry confirmed;68-bytebody and16-bytepool reviewed. Shared base/release ABI identical. Child flag4 and pointer offset checked; preserve clear after flag request."
+    },
+    {
       "id": "read_projected_position",
       "source": "src/math/read_projected_position.c",
       "address": "0x8c18a330",
@@ -33806,6 +34762,39 @@
       ],
       "reference_sha256": "5616879555f7310da4fe22ac47ee768340ef52e4f5b9fa789392d06b7bf1b3f0",
       "boundary_review": "Raw complete body and every referenced literal endpoint:137bcc..137c3c and18a330..18a398. Hidden aggregate-return convention inferred from final three-word copy through incoming stack pointer."
+    },
+    {
+      "id": "destroy_timed_owner_effect_8c18a6b4",
+      "source": "src/effects/destroy_timed_owner_effect_8c18a6b4.c",
+      "address": "0x8c18a6b4",
+      "entry": "_destroy_timed_owner_effect_8c18a6b4",
+      "symbols": {
+        "_effect_vtable": "0x8c272228",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0a7bb0",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1550004,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect_8c18a6b4",
+          "address": "0x8c18a6b4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "1ea37038b783d2b460c3b4759202c01c79b75a1f8f8ebd4036151cc6b581d7de",
+      "boundary_review": "Raw entry0x8c18a6b4 and adjacent entry0x8c18a704 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
     },
     {
       "id": "destroy_object_8c18a9dc",
@@ -39712,6 +40701,72 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_timed_owner_effect_8c1c56c0",
+      "source": "src/effects/destroy_timed_owner_effect_8c1c56c0.c",
+      "address": "0x8c1c56c0",
+      "entry": "_destroy_timed_owner_effect_8c1c56c0",
+      "symbols": {
+        "_effect_vtable": "0x8c27664c",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0a7bb0",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1791680,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect_8c1c56c0",
+          "address": "0x8c1c56c0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "7ca2351f3d3856ccf869074f70f6483a4a5c5cb83a6a0efef84457cf05805c03",
+      "boundary_review": "Raw entry0x8c1c56c0 and adjacent entry0x8c1c5710 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
+      "id": "destroy_timed_owner_effect_8c1c5b40",
+      "source": "src/effects/destroy_timed_owner_effect_8c1c5b40.c",
+      "address": "0x8c1c5b40",
+      "entry": "_destroy_timed_owner_effect_8c1c5b40",
+      "symbols": {
+        "_effect_vtable": "0x8c276668",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0a7bb0",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1792832,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect_8c1c5b40",
+          "address": "0x8c1c5b40",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "d69020628ff774ddf80d20b24c9f9c00114fcdf4a672247f196a46c22e8b6e91",
+      "boundary_review": "Raw entry0x8c1c5b40 and adjacent entry0x8c1c5b90 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
       "id": "destroy_object_8c1c60b0",
       "source": "src/effects/destroy_object_8c1c60b0.c",
       "address": "0x8c1c60b0",
@@ -40573,6 +41628,33 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_child_owner_8c1d983c",
+      "source": "src/effects/destroy_child_owner_8c1d983c.c",
+      "address": "0x8c1d983c",
+      "entry": "_destroy_child_owner_8c1d983c",
+      "symbols": {
+        "_effect_vtable": "0x8c276ef4",
+        "_base_destroy_at": "0x8c03311c",
+        "_heap": "0x8c4d97e0",
+        "_release_at": "0x8c122774"
+      },
+      "ranges": [
+        {
+          "offset": 1873980,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_child_owner_8c1d983c",
+          "address": "0x8c1d983c",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "9dcaf7018d2fed47a9a7bbbb32a9c26eb6c4a1c6d3455474b96742921807228b",
+      "boundary_review": "Referenced destructor entry and next entry confirmed;68-bytebody and16-bytepool reviewed. Shared base/release ABI identical. Child flag4 and pointer offset checked; preserve clear after flag request."
+    },
+    {
       "id": "destroy_object_8c1da17c",
       "source": "src/effects/destroy_object_8c1da17c.c",
       "address": "0x8c1da17c",
@@ -40795,6 +41877,39 @@
       ],
       "reference_sha256": "66fe975e3b204332a16d18feca8cc606c01a45b9c526b2641dd5b2aeb4362315",
       "boundary_review": "Independent catalog/referenced entry and reviewed adjacent entry; entire instruction/delay and natural pool shape agrees with exact template. Raw stores incomingR4 as one32-bit word; preserve bits without claiming the global is a callback."
+    },
+    {
+      "id": "destroy_timed_owner_effect_8c1dde04",
+      "source": "src/effects/destroy_timed_owner_effect_8c1dde04.c",
+      "address": "0x8c1dde04",
+      "entry": "_destroy_timed_owner_effect_8c1dde04",
+      "symbols": {
+        "_effect_vtable": "0x8c27738c",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0a7bb0",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 1891844,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect_8c1dde04",
+          "address": "0x8c1dde04",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "5ac134f3ef3d4bf225de5e8322e132a730647672a0b0112b696bae9003b6fce2",
+      "boundary_review": "Raw entry0x8c1dde04 and adjacent entry0x8c1dde54 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
     },
     {
       "id": "destroy_object_8c1ddfc8",
@@ -43522,6 +44637,39 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "destroy_timed_owner_effect_8c223368",
+      "source": "src/effects/destroy_timed_owner_effect_8c223368.c",
+      "address": "0x8c223368",
+      "entry": "_destroy_timed_owner_effect_8c223368",
+      "symbols": {
+        "_effect_vtable": "0x8c278948",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c18de08",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 2175848,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect_8c223368",
+          "address": "0x8c223368",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "d8c7e274e2b89a94c8b737b2ebe7328e0397cd3076cf464ee0df7636bc6dcf6d",
+      "boundary_review": "Raw entry0x8c223368 and adjacent entry0x8c2233b8 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
       "id": "destroy_object_8c22371c",
       "source": "src/effects/destroy_object_8c22371c.c",
       "address": "0x8c22371c",
@@ -44184,6 +45332,39 @@
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
+      "id": "destroy_timed_owner_effect_8c22ae68",
+      "source": "src/effects/destroy_timed_owner_effect_8c22ae68.c",
+      "address": "0x8c22ae68",
+      "entry": "_destroy_timed_owner_effect_8c22ae68",
+      "symbols": {
+        "_effect_vtable": "0x8c278d98",
+        "_heap": "0x8c4d97e0",
+        "_effect_ids": "0x8c312a40",
+        "_base_at": "0x8c0330e4",
+        "_base_destroy_at": "0x8c03311c",
+        "_release_at": "0x8c122774",
+        "_stop_at": "0x8c0a7bb0",
+        "_emit_at": "0x8c0a777c",
+        "_start_at": "0x8c05fbf8",
+        "__l_mods": "0x8c18e8a0"
+      },
+      "ranges": [
+        {
+          "offset": 2207336,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_timed_owner_effect_8c22ae68",
+          "address": "0x8c22ae68",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "a1c309eb077f10689915df4e47afb55cb7ff440e6c6e9ba05d4e630d0f8f49d1",
+      "boundary_review": "Raw entry0x8c22ae68 and adjacent entry0x8c22aeb8 independently referenced; saved raw range and masked instruction check. Constructor forwards ownerR5,parentR6 and copies owner804. Update table count decoded; destructor field/callee ABI checked:0602c4 integerhandle,0a7bb0 pointer with flags4,18de08 allocationpointer. All referenced offsets asserted; no catalog-span assumption."
+    },
+    {
       "id": "destroy_object_8c22b324",
       "source": "src/effects/destroy_object_8c22b324.c",
       "address": "0x8c22b324",
@@ -44533,6 +45714,33 @@
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
+      "id": "destroy_child_owner_8c2301f8",
+      "source": "src/effects/destroy_child_owner_8c2301f8.c",
+      "address": "0x8c2301f8",
+      "entry": "_destroy_child_owner_8c2301f8",
+      "symbols": {
+        "_effect_vtable": "0x8c278f1c",
+        "_base_destroy_at": "0x8c03311c",
+        "_heap": "0x8c4d97e0",
+        "_release_at": "0x8c122774"
+      },
+      "ranges": [
+        {
+          "offset": 2228728,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_child_owner_8c2301f8",
+          "address": "0x8c2301f8",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "a266175bffeaea3672230b4fbf8d4ceb23cd93e35777d987e3cf9e3d276a5218",
+      "boundary_review": "Referenced destructor entry and next entry confirmed;68-bytebody and16-bytepool reviewed. Shared base/release ABI identical. Child flag4 and pointer offset checked; preserve clear after flag request."
+    },
+    {
       "id": "destroy_object_8c230598",
       "source": "src/effects/destroy_object_8c230598.c",
       "address": "0x8c230598",
@@ -44610,6 +45818,33 @@
       ],
       "reference_sha256": "e41ebcc72d395936c893b0cdc339d512a6651fb1e58b438f8ad4a8b89256b19d",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "destroy_child_owner_8c231d48",
+      "source": "src/effects/destroy_child_owner_8c231d48.c",
+      "address": "0x8c231d48",
+      "entry": "_destroy_child_owner_8c231d48",
+      "symbols": {
+        "_effect_vtable": "0x8c278fb4",
+        "_base_destroy_at": "0x8c03311c",
+        "_heap": "0x8c4d97e0",
+        "_release_at": "0x8c122774"
+      },
+      "ranges": [
+        {
+          "offset": 2235720,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_child_owner_8c231d48",
+          "address": "0x8c231d48",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "b9fbdb87bff973a3b4f7dcd92287be8d67e2f0ad8e5f99b1020e4f2f4a318bd7",
+      "boundary_review": "Referenced destructor entry and next entry confirmed;68-bytebody and16-bytepool reviewed. Shared base/release ABI identical. Child flag4 and pointer offset checked; preserve clear after flag request."
     },
     {
       "id": "load_global_resource_8c2327cc",
@@ -51486,6 +52721,33 @@
       "reference_sha256": "2b63c972f48b4ce7dd080193df01417b129460b7d504c9954202e2b3ecd11540",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "destroy_child_owner_8c25effc",
+      "source": "src/effects/destroy_child_owner_8c25effc.c",
+      "address": "0x8c25effc",
+      "entry": "_destroy_child_owner_8c25effc",
+      "symbols": {
+        "_effect_vtable": "0x8c281d70",
+        "_base_destroy_at": "0x8c03311c",
+        "_heap": "0x8c4d97e0",
+        "_release_at": "0x8c122774"
+      },
+      "ranges": [
+        {
+          "offset": 2420732,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_child_owner_8c25effc",
+          "address": "0x8c25effc",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "7e900ce8c3e8936697b16ea82d4ebccdc035ab65e76493fe2c462fc73dc1ca28",
+      "boundary_review": "Referenced destructor entry and next entry confirmed;68-bytebody and16-bytepool reviewed. Shared base/release ABI identical. Child flag4 and pointer offset checked; preserve clear after flag request."
     },
     {
       "id": "destroy_object_8c25f1d8",
