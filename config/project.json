@@ -23450,6 +23450,29 @@
       "boundary_review": "Independent catalog entry/body end, adjacent catalog entry at full-range end; all nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
+      "id": "initialize_base_blend",
+      "source": "src/objects/initialize_base_blend.cpp",
+      "address": "0x8c114970",
+      "entry": "_initialize_base_blend",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1067376,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_base_blend",
+          "address": "0x8c114970",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "3bcfc979734fde95d72c462603a77dd8075909344017db7cd6cbd1eb686d0acb",
+      "language": "c++",
+      "boundary_review": "Raw114970..114ad8 reviewed including adjacent entries, delay slots and literal pools. Increase/decrease can overshoot for one tick and report completion only on the following call; no speculative clamp or zero-period guard. Dispatch20/slot16 and all scalar offsets checked."
+    },
+    {
       "id": "destroy_field_8c11499c",
       "source": "src/objects/destroy_field_8c11499c.c",
       "address": "0x8c11499c",
@@ -23471,6 +23494,826 @@
       ],
       "reference_sha256": "c25d982a65ef25e4b939f1df04d4c1d9af4669430f2be9e80dc4630e0addb1f3",
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "base_blend_period_and_resets",
+      "source": "src/objects/base_blend_period_and_resets.c",
+      "address": "0x8c1149c8",
+      "entry": "_set_base_blend_period",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1067464,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_base_blend_period",
+          "address": "0x8c1149c8",
+          "size": 16
+        },
+        {
+          "name": "clear_base_blend",
+          "address": "0x8c1149d8",
+          "size": 24
+        },
+        {
+          "name": "reset_base_blend",
+          "address": "0x8c1149f0",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "f8c395984fa39cb78b3fedb80affcecfefae324a0aa1e4b94813c4e2babb50c2",
+      "boundary_review": "Each constituent raw range already reviewed; isolated instructions exact and only terminal natural alignment missing. Real adjacent entries grouped, complete group required for admission."
+    },
+    {
+      "id": "decrease_base_blend",
+      "source": "src/objects/decrease_base_blend.c",
+      "address": "0x8c114a10",
+      "entry": "_decrease_base_blend",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1067536,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "decrease_base_blend",
+          "address": "0x8c114a10",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "70abb1b4391780739ea2f1fc80e9dacc36591e07e30cc0196981da79b05c7ae3",
+      "boundary_review": "Raw114970..114ad8 reviewed including adjacent entries, delay slots and literal pools. Increase/decrease can overshoot for one tick and report completion only on the following call; no speculative clamp or zero-period guard. Dispatch20/slot16 and all scalar offsets checked."
+    },
+    {
+      "id": "base_blend_increase_and_apply",
+      "source": "src/objects/base_blend_increase_and_apply.c",
+      "address": "0x8c114a34",
+      "entry": "_increase_base_blend",
+      "symbols": {
+        "_flags": "0x8c575570",
+        "_apply_at": "0x8c38c0f0",
+        "_mode_at": "0x8c38c0e6"
+      },
+      "ranges": [
+        {
+          "offset": 1067572,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "increase_base_blend",
+          "address": "0x8c114a34",
+          "size": 32
+        },
+        {
+          "name": "apply_base_blend",
+          "address": "0x8c114a54",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "bbb8949c4c9ccf034ff87950efddcfc84f2a3760cc2aa1c7ecdfaf4b97298ebd",
+      "boundary_review": "Each constituent raw range already reviewed; isolated instructions exact and only terminal natural alignment missing. Real adjacent entries grouped, complete group required for admission."
+    },
+    {
+      "id": "restore_base_blend",
+      "source": "src/objects/restore_base_blend.c",
+      "address": "0x8c114a8c",
+      "entry": "_restore_base_blend",
+      "symbols": {
+        "_flags": "0x8c575570",
+        "_mode_at": "0x8c38c0e6",
+        "_finish_at": "0x8c37b566"
+      },
+      "ranges": [
+        {
+          "offset": 1067660,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "restore_base_blend",
+          "address": "0x8c114a8c",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "76c4f50048a3a4f6da7498a26110bfa055ebfaf26de26b679fcbb4af738d0736",
+      "boundary_review": "Raw114970..114ad8 reviewed including adjacent entries, delay slots and literal pools. Increase/decrease can overshoot for one tick and report completion only on the following call; no speculative clamp or zero-period guard. Dispatch20/slot16 and all scalar offsets checked."
+    },
+    {
+      "id": "base_blend_above_minimum",
+      "source": "src/objects/base_blend_above_minimum.c",
+      "address": "0x8c114ac8",
+      "entry": "_base_blend_above_minimum",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1067720,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "base_blend_above_minimum",
+          "address": "0x8c114ac8",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "23ff0a28a0c45b620c0c0ebab14da02b47f9a59d8b54b933dd5c018985feec31",
+      "boundary_review": "Raw114970..114ad8 reviewed including adjacent entries, delay slots and literal pools. Increase/decrease can overshoot for one tick and report completion only on the following call; no speculative clamp or zero-period guard. Dispatch20/slot16 and all scalar offsets checked."
+    },
+    {
+      "id": "initialize_paired_array_owner",
+      "source": "src/objects/initialize_paired_array_owner.c",
+      "address": "0x8c114ad8",
+      "entry": "_initialize_paired_array_owner",
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_allocate_at": "0x8c18de4c",
+        "_object_name": "0x8c310220"
+      },
+      "ranges": [
+        {
+          "offset": 1067736,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_paired_array_owner",
+          "address": "0x8c114ad8",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "ef22eb47a8e0f82a34542006e9d13b8f358b0517d918f77e7489fda32a36a9d3",
+      "boundary_review": "Raw114ad8..114bd8 including each return/literal and next entry reviewed. Array size wraps as unsigned32; no added allocation/count guard. Count cached only in query. All accessed offsets checked."
+    },
+    {
+      "id": "destroy_paired_array_owner",
+      "source": "src/objects/destroy_paired_array_owner.c",
+      "address": "0x8c114b58",
+      "entry": "_destroy_paired_array_owner",
+      "symbols": {
+        "_release_at": "0x8c18de08",
+        "_base_at": "0x8c03311c",
+        "_free_at": "0x8c122774",
+        "_heap": "0x8c4d97e0"
+      },
+      "ranges": [
+        {
+          "offset": 1067864,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_paired_array_owner",
+          "address": "0x8c114b58",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "b05548315bc5d822c643194f6774389c62914e5c8dfd51c6056943a45da6d4fd",
+      "boundary_review": "Raw114ad8..114bd8 including each return/literal and next entry reviewed. Array size wraps as unsigned32; no added allocation/count guard. Count cached only in query. All accessed offsets checked."
+    },
+    {
+      "id": "paired_array_callbacks",
+      "source": "src/objects/paired_array_callbacks.c",
+      "address": "0x8c114bac",
+      "entry": "_paired_array_has_active_item",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1067948,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "paired_array_has_active_item",
+          "address": "0x8c114bac",
+          "size": 44
+        },
+        {
+          "name": "paired_array_idle_callback",
+          "address": "0x8c114bd8",
+          "size": 4
+        }
+      ],
+      "reference_sha256": "a2ccae777720ee1afb33de1b2192aa009f634d26aaf8c28070b66b0cd6d321d6",
+      "boundary_review": "The query body is42bytes followed by natural2-byte alignment. Adjacent114bd8 is a real four-byte RTS/NOP callback referenced at269e5c; ordinary empty function represents observed behavior, no invented callback or explicit padding. Complete group required."
+    },
+    {
+      "id": "initialize_scene_transition",
+      "source": "src/objects/initialize_scene_transition.c",
+      "address": "0x8c114bdc",
+      "entry": "_initialize_scene_transition",
+      "symbols": {
+        "_call_8c01c2b0": "0x8c01c2b0",
+        "_call_8c172be4": "0x8c172be4",
+        "_call_8c01d9dc": "0x8c01d9dc",
+        "_call_8c01c1c4": "0x8c01c1c4",
+        "_call_8c104e8c": "0x8c104e8c",
+        "_call_8c1a18b8": "0x8c1a18b8",
+        "_call_8c0405b4": "0x8c0405b4",
+        "_call_8c189c94": "0x8c189c94",
+        "_call_8c1a9940": "0x8c1a9940",
+        "_call_8c0ea6d8": "0x8c0ea6d8",
+        "_call_8c180ae8": "0x8c180ae8",
+        "_call_8c0ea724": "0x8c0ea724",
+        "_call_8c189d60": "0x8c189d60",
+        "_call_8c017ba8": "0x8c017ba8",
+        "_call_8c13f3f0": "0x8c13f3f0",
+        "_call_8c017bd4": "0x8c017bd4",
+        "_call_8c380516": "0x8c380516",
+        "_begin_at": "0x8c3806f6",
+        "_set_mode_at": "0x8c01c250",
+        "_set_phase_at": "0x8c01c244",
+        "_load_at": "0x8c013620",
+        "_configure_at": "0x8c1866d0",
+        "_allocate_at": "0x8c122700",
+        "_initialize_large_at": "0x8c0ea350",
+        "_lookup_at": "0x8c0363a4",
+        "_state_at": "0x8c0eb0ec",
+        "_request_at": "0x8c01c1a4",
+        "_time_ready_at": "0x8c232460",
+        "_time_read_at": "0x8c36d3ca",
+        "_time_convert_at": "0x8c36d4c0",
+        "_time_set_at": "0x8c232500",
+        "_initialize_small_at": "0x8c015244",
+        "_initialize_other_at": "0x8c036a0c",
+        "_apply_settings_at": "0x8c0e7620",
+        "_prepare_global_at": "0x8c03373c",
+        "_finish_small_at": "0x8c0156e4",
+        "_existing": "0x8c461c00",
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be80",
+        "_selected": "0x8c4d8280",
+        "_setting_mode": "0x8c44be04",
+        "_setting_state": "0x8c44be08",
+        "_reset_first": "0x8c418244",
+        "_reset_second": "0x8c4d8288",
+        "_reset_third": "0x8c4d828c",
+        "_settings": "0x8c46fec0",
+        "_load_data": "0x8c310238",
+        "_configuration": "0x8c310380",
+        "_global_storage": "0x8c44bec8"
+      },
+      "ranges": [
+        {
+          "offset": 1067996,
+          "size": 620
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_scene_transition",
+          "address": "0x8c114bdc",
+          "size": 620
+        }
+      ],
+      "reference_sha256": "5489388be13187564957e13c703c5f560d8ac17fa5b4e280b3cc57aaab9b56a1",
+      "boundary_review": "Raw114bdc..114e48 fully reviewed including delay slots, three allocation paths, local offsets0/4, repeated settings fourth-field store and null selected state call. All accessed settings offsets and timestamp extent checked; pointed-to static data retained."
+    },
+    {
+      "id": "dispatch_scene_transition",
+      "source": "src/objects/dispatch_scene_transition.c",
+      "address": "0x8c114e48",
+      "entry": "_dispatch_scene_transition",
+      "symbols": {
+        "_alternate": "0x8c4dc800",
+        "_first_at": "0x8c114e74",
+        "_second_at": "0x8c115018"
+      },
+      "ranges": [
+        {
+          "offset": 1068616,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "dispatch_scene_transition",
+          "address": "0x8c114e48",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "ea67e2d57c91637cbdbb738ae21b0402d8e02014f53ba47a2e8ca658be486f1f",
+      "boundary_review": "Raw114e48..115018 completely reviewed. Three request checks remain independent, forced reset path uses signed-byte truth, and timeout uses signed greater-than90. Globals and callees stay provisionally named and reference-dependent."
+    },
+    {
+      "id": "update_scene_transition",
+      "source": "src/objects/update_scene_transition.c",
+      "address": "0x8c114e74",
+      "entry": "_update_scene_transition",
+      "symbols": {
+        "_call_8c01daf0": "0x8c01daf0",
+        "_call_8c01dea8": "0x8c01dea8",
+        "_call_8c0410b4": "0x8c0410b4",
+        "_call_8c05f9e4": "0x8c05f9e4",
+        "_call_8c17e194": "0x8c17e194",
+        "_call_8c184614": "0x8c184614",
+        "_call_8c042488": "0x8c042488",
+        "_call_8c01b9e0": "0x8c01b9e0",
+        "_call_8c115494": "0x8c115494",
+        "_call_8c01c210": "0x8c01c210",
+        "_call_8c115298": "0x8c115298",
+        "_call_8c01c1c4": "0x8c01c1c4",
+        "_call_8c11574c": "0x8c11574c",
+        "_call_8c01c1e8": "0x8c01c1e8",
+        "_call_8c1159f0": "0x8c1159f0",
+        "_call_8c015ab4": "0x8c015ab4",
+        "_call_8c180ae8": "0x8c180ae8",
+        "_call_8c380516": "0x8c380516",
+        "_call_8c03373c": "0x8c03373c",
+        "_call_8c0337cc": "0x8c0337cc",
+        "_call_8c033330": "0x8c033330",
+        "_call_8c03385c": "0x8c03385c",
+        "_call_8c19b054": "0x8c19b054",
+        "_call_8c01c228": "0x8c01c228",
+        "_call_8c01c1dc": "0x8c01c1dc",
+        "_call_8c01c200": "0x8c01c200",
+        "_call_8c01e180": "0x8c01e180",
+        "_call_8c104da8": "0x8c104da8",
+        "_probe_at": "0x8c3727a0",
+        "_phase_at": "0x8c01c244",
+        "_request_at": "0x8c01c1a4",
+        "_global_storage": "0x8c44bec8",
+        "_timeout": "0x8c4d828c",
+        "_transition": "0x8c4d8288",
+        "_forced": "0x8c41bcf8"
+      },
+      "ranges": [
+        {
+          "offset": 1068660,
+          "size": 420
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_scene_transition",
+          "address": "0x8c114e74",
+          "size": 420
+        }
+      ],
+      "reference_sha256": "5c7899c47286ab016498aea365dc3619cf524632c9de38de70d8a173c8afd42e",
+      "boundary_review": "Raw114e48..115018 completely reviewed. Three request checks remain independent, forced reset path uses signed-byte truth, and timeout uses signed greater-than90. Globals and callees stay provisionally named and reference-dependent."
+    },
+    {
+      "id": "update_alternate_scene_transition",
+      "source": "src/objects/update_alternate_scene_transition.c",
+      "address": "0x8c115018",
+      "entry": "_update_alternate_scene_transition",
+      "symbols": {
+        "_call_8c01daf0": "0x8c01daf0",
+        "_call_8c01dea8": "0x8c01dea8",
+        "_call_8c0410b4": "0x8c0410b4",
+        "_call_8c05f9e4": "0x8c05f9e4",
+        "_call_8c17e194": "0x8c17e194",
+        "_call_8c184614": "0x8c184614",
+        "_call_8c042488": "0x8c042488",
+        "_call_8c01b9e0": "0x8c01b9e0",
+        "_call_8c115494": "0x8c115494",
+        "_call_8c01c210": "0x8c01c210",
+        "_call_8c115298": "0x8c115298",
+        "_call_8c01c1c4": "0x8c01c1c4",
+        "_call_8c11574c": "0x8c11574c",
+        "_call_8c01c1e8": "0x8c01c1e8",
+        "_call_8c1159f0": "0x8c1159f0",
+        "_call_8c015ab4": "0x8c015ab4",
+        "_call_8c180ae8": "0x8c180ae8",
+        "_call_8c380516": "0x8c380516",
+        "_call_8c03373c": "0x8c03373c",
+        "_call_8c0337cc": "0x8c0337cc",
+        "_call_8c033330": "0x8c033330",
+        "_call_8c03385c": "0x8c03385c",
+        "_call_8c19b054": "0x8c19b054",
+        "_call_8c01c228": "0x8c01c228",
+        "_call_8c01c1dc": "0x8c01c1dc",
+        "_call_8c01c200": "0x8c01c200",
+        "_call_8c01e180": "0x8c01e180",
+        "_call_8c104da8": "0x8c104da8",
+        "_probe_at": "0x8c3727a0",
+        "_phase_at": "0x8c01c244",
+        "_request_at": "0x8c01c1a4",
+        "_global_storage": "0x8c44bec8",
+        "_timeout": "0x8c4d828c",
+        "_transition": "0x8c4d8288",
+        "_forced": "0x8c41bcf8",
+        "_clear_alternate_at": "0x8c1156b4",
+        "_alternate": "0x8c4dc800"
+      },
+      "ranges": [
+        {
+          "offset": 1069080,
+          "size": 424
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_alternate_scene_transition",
+          "address": "0x8c115018",
+          "size": 424
+        }
+      ],
+      "reference_sha256": "00006a92ecb6a49a41d50911c010cf3c1c9f1455e79eec05b86a520a19ae0c34",
+      "boundary_review": "Raw115018..115298 fully reviewed including boundaries, delay slots and literals. Alternate reset clears the flag between calls; cleanup pumps exactly30 iterations and calls settings cleanup only when selected is null. No reordered or added actions."
+    },
+    {
+      "id": "finish_scene_transition",
+      "source": "src/objects/finish_scene_transition.c",
+      "address": "0x8c1151c0",
+      "entry": "_finish_scene_transition",
+      "symbols": {
+        "_call_8c1004cc": "0x8c1004cc",
+        "_call_8c05fbdc": "0x8c05fbdc",
+        "_call_8c015ab4": "0x8c015ab4",
+        "_call_8c1156b4": "0x8c1156b4",
+        "_call_8c380516": "0x8c380516",
+        "_call_8c036410": "0x8c036410",
+        "_call_8c13f428": "0x8c13f428",
+        "_call_8c104e8c": "0x8c104e8c",
+        "_call_8c01c2b0": "0x8c01c2b0",
+        "_prepare_at": "0x8c033878",
+        "_clear_at": "0x8c033980",
+        "_parent_at": "0x8c0331c0",
+        "_settings_at": "0x8c0e7680",
+        "_unload_at": "0x8c01364c",
+        "_global_storage": "0x8c44bec8",
+        "_parent": "0x8c44be80",
+        "_selected": "0x8c4d8280",
+        "_settings": "0x8c46fec0",
+        "_load_data": "0x8c310238"
+      },
+      "ranges": [
+        {
+          "offset": 1069504,
+          "size": 216
+        }
+      ],
+      "functions": [
+        {
+          "name": "finish_scene_transition",
+          "address": "0x8c1151c0",
+          "size": 216
+        }
+      ],
+      "reference_sha256": "594ae2fa84fe59e1516cf26ba57896cfb4611f82f716363d7ce5bae0e25c664e",
+      "boundary_review": "Raw115018..115298 fully reviewed including boundaries, delay slots and literals. Alternate reset clears the flag between calls; cleanup pumps exactly30 iterations and calls settings cleanup only when selected is null. No reordered or added actions."
+    },
+    {
+      "id": "transition_scene_actors",
+      "source": "src/objects/transition_scene_actors.cpp",
+      "language": "c++",
+      "address": "0x8c115298",
+      "entry": "_transition_scene_actors",
+      "symbols": {
+        "_call_8c017ba8": "0x8c017ba8",
+        "_call_8c02a798": "0x8c02a798",
+        "_call_8c1004cc": "0x8c1004cc",
+        "_call_8c041690": "0x8c041690",
+        "_call_8c01d9dc": "0x8c01d9dc",
+        "_call_8c380516": "0x8c380516",
+        "_call_8c01c2b0": "0x8c01c2b0",
+        "_call_8c1a18b8": "0x8c1a18b8",
+        "_call_8c0405b4": "0x8c0405b4",
+        "_call_8c13f428": "0x8c13f428",
+        "_call_8c194d14": "0x8c194d14",
+        "_call_8c1922a0": "0x8c1922a0",
+        "_call_8c189d60": "0x8c189d60",
+        "_call_8c115bc0": "0x8c115bc0",
+        "_call_8c02a87c": "0x8c02a87c",
+        "_call_8c017bd4": "0x8c017bd4",
+        "_call_8c173778": "0x8c173778",
+        "_base_at": "0x8c0330e4",
+        "_load_at": "0x8c01372c",
+        "_lookup_at": "0x8c021ef8",
+        "_move_at": "0x8c0333fc",
+        "_prepare_at": "0x8c033878",
+        "_clear_settings_at": "0x8c0e75c8",
+        "_mode_at": "0x8c189ca0",
+        "_settings_mode_at": "0x8c0e76d4",
+        "_copy_at": "0x8c1a9c3c",
+        "_load_extra_at": "0x8c013620",
+        "_apply_settings_at": "0x8c0e7620",
+        "_current_at": "0x8c032b10",
+        "_select_at": "0x8c1bdedc",
+        "_restore_at": "0x8c03373c",
+        "_finish_at": "0x8c17fff4",
+        "_destroy_at": "0x8c03311c",
+        "_resource_id": "0x8c418258",
+        "_resource_data": "0x8c41825c",
+        "_global_storage": "0x8c44bec8",
+        "_settings": "0x8c46fec0",
+        "_first_mask": "0x8c41cb82",
+        "_second_mask": "0x8c41cb84",
+        "_copy_data": "0x8c42aef0",
+        "_extra_data": "0x8c310340",
+        "_actor_parent": "0x8c44be90"
+      },
+      "ranges": [
+        {
+          "offset": 1069720,
+          "size": 508
+        }
+      ],
+      "functions": [
+        {
+          "name": "transition_scene_actors",
+          "address": "0x8c115298",
+          "size": 508
+        }
+      ],
+      "reference_sha256": "dedd7586158770965926189f28b9e7fbe802c2ccc7bd525c18a2fe051bee9df0",
+      "boundary_review": "Raw115298..115494 fully reviewed. Temporary extent32,dispatch24/slot36,loopbound12,mask ushort stores and explicit destructor flag-1 preserved; virtual declarations are provisional and size checked."
+    },
+    {
+      "id": "transition_alternate_scene_actors",
+      "source": "src/objects/transition_alternate_scene_actors.cpp",
+      "address": "0x8c115494",
+      "entry": "_transition_alternate_scene_actors",
+      "symbols": {
+        "_call_8c017ba8": "0x8c017ba8",
+        "_call_8c02a798": "0x8c02a798",
+        "_call_8c1004cc": "0x8c1004cc",
+        "_call_8c041690": "0x8c041690",
+        "_call_8c01d9dc": "0x8c01d9dc",
+        "_call_8c380516": "0x8c380516",
+        "_call_8c01c2b0": "0x8c01c2b0",
+        "_call_8c1a18b8": "0x8c1a18b8",
+        "_call_8c0405b4": "0x8c0405b4",
+        "_call_8c13f428": "0x8c13f428",
+        "_call_8c194d14": "0x8c194d14",
+        "_call_8c1922a0": "0x8c1922a0",
+        "_call_8c189d60": "0x8c189d60",
+        "_call_8c115bc0": "0x8c115bc0",
+        "_call_8c02a87c": "0x8c02a87c",
+        "_call_8c017bd4": "0x8c017bd4",
+        "_call_8c173778": "0x8c173778",
+        "_base_at": "0x8c0330e4",
+        "_load_at": "0x8c01372c",
+        "_lookup_at": "0x8c021ef8",
+        "_move_at": "0x8c0333fc",
+        "_prepare_at": "0x8c033878",
+        "_clear_settings_at": "0x8c0e75c8",
+        "_mode_at": "0x8c189ca0",
+        "_settings_mode_at": "0x8c0e76d4",
+        "_copy_at": "0x8c1a9c3c",
+        "_load_extra_at": "0x8c013620",
+        "_apply_settings_at": "0x8c0e7620",
+        "_current_at": "0x8c032b10",
+        "_select_at": "0x8c1bdedc",
+        "_restore_at": "0x8c03373c",
+        "_finish_at": "0x8c17fff4",
+        "_destroy_at": "0x8c03311c",
+        "_resource_id": "0x8c418258",
+        "_resource_data": "0x8c41825c",
+        "_global_storage": "0x8c44bec8",
+        "_settings": "0x8c46fec0",
+        "_first_mask": "0x8c41cb82",
+        "_second_mask": "0x8c41cb84",
+        "_copy_data": "0x8c42aef0",
+        "_extra_data": "0x8c310340",
+        "_actor_parent": "0x8c44be90",
+        "_call_8c05fbdc": "0x8c05fbdc",
+        "_call_8c1156b4": "0x8c1156b4",
+        "_call_8c186b34": "0x8c186b34",
+        "_call_8c09d2bc": "0x8c09d2bc",
+        "_call_8c173508": "0x8c173508",
+        "_call_8c173024": "0x8c173024",
+        "_call_8c14ffdc": "0x8c14ffdc",
+        "_call_8c14fd04": "0x8c14fd04",
+        "_call_8c21da34": "0x8c21da34",
+        "_allocate_at": "0x8c122700",
+        "_initialize_at": "0x8c173578",
+        "_heap": "0x8c4d97e0",
+        "_context": "0x8c4db520",
+        "_alternate": "0x8c4dc800"
+      },
+      "ranges": [
+        {
+          "offset": 1070228,
+          "size": 544
+        }
+      ],
+      "functions": [
+        {
+          "name": "transition_alternate_scene_actors",
+          "address": "0x8c115494",
+          "size": 544
+        }
+      ],
+      "reference_sha256": "1fcd1e040549c46cb499b71f357168f3f88a541b8328d13cb4c810e27b593669",
+      "language": "c++",
+      "boundary_review": "Raw115494..11574c fully reviewed. The created object is activated even when allocation returns null if the outer context exists; that observed behavior is preserved. Context flag offset4 is checked. Cleanup zeros and enable store retain raw order."
+    },
+    {
+      "id": "clear_alternate_scene_context",
+      "source": "src/objects/clear_alternate_scene_context.c",
+      "address": "0x8c1156b4",
+      "entry": "_clear_alternate_scene_context",
+      "symbols": {
+        "_call_8c1031e4": "0x8c1031e4",
+        "_call_8c03cf00": "0x8c03cf00",
+        "_call_8c0b4bac": "0x8c0b4bac",
+        "_call_8c1922a0": "0x8c1922a0",
+        "_call_8c111268": "0x8c111268",
+        "_call_8c1bded0": "0x8c1bded0",
+        "_call_8c159194": "0x8c159194",
+        "_context": "0x8c4db520",
+        "_alternate": "0x8c4dc800",
+        "_first": "0x8c470480",
+        "_second": "0x8c469c44",
+        "_third": "0x8c469d68",
+        "_fourth": "0x8c44be20",
+        "_enabled": "0x8c2fff78"
+      },
+      "ranges": [
+        {
+          "offset": 1070772,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_alternate_scene_context",
+          "address": "0x8c1156b4",
+          "size": 152
+        }
+      ],
+      "reference_sha256": "9a28ac401cab8c99386ba3fccd01161d48ad278040c07f6a30e4936192b88d9d",
+      "boundary_review": "Raw115494..11574c fully reviewed. The created object is activated even when allocation returns null if the outer context exists; that observed behavior is preserved. Context flag offset4 is checked. Cleanup zeros and enable store retain raw order."
+    },
+    {
+      "id": "transition_scene_screen",
+      "source": "src/objects/transition_scene_screen.cpp",
+      "address": "0x8c11574c",
+      "entry": "_transition_scene_screen",
+      "symbols": {
+        "_call_8c017ba8": "0x8c017ba8",
+        "_call_8c02a798": "0x8c02a798",
+        "_call_8c1004cc": "0x8c1004cc",
+        "_call_8c041690": "0x8c041690",
+        "_call_8c01d9dc": "0x8c01d9dc",
+        "_call_8c380516": "0x8c380516",
+        "_call_8c01c2b0": "0x8c01c2b0",
+        "_call_8c1a18b8": "0x8c1a18b8",
+        "_call_8c0405b4": "0x8c0405b4",
+        "_call_8c13f428": "0x8c13f428",
+        "_call_8c194d14": "0x8c194d14",
+        "_call_8c1922a0": "0x8c1922a0",
+        "_call_8c189d60": "0x8c189d60",
+        "_call_8c115bc0": "0x8c115bc0",
+        "_call_8c02a87c": "0x8c02a87c",
+        "_call_8c017bd4": "0x8c017bd4",
+        "_call_8c173778": "0x8c173778",
+        "_base_at": "0x8c0330e4",
+        "_load_at": "0x8c01372c",
+        "_lookup_at": "0x8c021ef8",
+        "_move_at": "0x8c0333fc",
+        "_prepare_at": "0x8c033878",
+        "_clear_settings_at": "0x8c0e75c8",
+        "_mode_at": "0x8c189ca0",
+        "_settings_mode_at": "0x8c0e76d4",
+        "_copy_at": "0x8c1a9c3c",
+        "_load_extra_at": "0x8c013620",
+        "_apply_settings_at": "0x8c0e7620",
+        "_current_at": "0x8c032b10",
+        "_select_at": "0x8c1bdedc",
+        "_restore_at": "0x8c03373c",
+        "_finish_at": "0x8c17fff4",
+        "_destroy_at": "0x8c03311c",
+        "_resource_id": "0x8c418258",
+        "_resource_data": "0x8c41825c",
+        "_global_storage": "0x8c44bec8",
+        "_settings": "0x8c46fec0",
+        "_first_mask": "0x8c41cb82",
+        "_second_mask": "0x8c41cb84",
+        "_copy_data": "0x8c42aef0",
+        "_extra_data": "0x8c310340",
+        "_actor_parent": "0x8c44be90",
+        "_call_8c05fbdc": "0x8c05fbdc",
+        "_call_8c189c94": "0x8c189c94",
+        "_call_8c0310a4": "0x8c0310a4",
+        "_call_8c013fc8": "0x8c013fc8",
+        "_call_8c09d2bc": "0x8c09d2bc",
+        "_call_8c122ba0": "0x8c122ba0",
+        "_selection_at": "0x8c1a9c50",
+        "_configure_at": "0x8c1866d0",
+        "_notify_ready_at": "0x8c2324e0",
+        "_notify_at": "0x8c1003d0",
+        "_configuration": "0x8c310380"
+      },
+      "ranges": [
+        {
+          "offset": 1070924,
+          "size": 416
+        }
+      ],
+      "functions": [
+        {
+          "name": "transition_scene_screen",
+          "address": "0x8c11574c",
+          "size": 416
+        }
+      ],
+      "reference_sha256": "fbf55faae3303822fe945b2ddc24b7075af3e98a7b69fa62702e977cd618705b",
+      "language": "c++",
+      "boundary_review": "Raw11574c..1159f0 fully reviewed including three distinct entries,delay slots and pools. Temporary base construction follows initial calls; two12-actor loops preserve virtual slot36. Branch-specific calls are not hoisted; referenced configuration data retained."
+    },
+    {
+      "id": "update_scene_screen",
+      "source": "src/objects/update_scene_screen.c",
+      "address": "0x8c1158ec",
+      "entry": "_update_scene_screen",
+      "symbols": {
+        "_call_8c01daf0": "0x8c01daf0",
+        "_call_8c01dea8": "0x8c01dea8",
+        "_call_8c0410b4": "0x8c0410b4",
+        "_call_8c05f9e4": "0x8c05f9e4",
+        "_call_8c17e194": "0x8c17e194",
+        "_call_8c184614": "0x8c184614",
+        "_call_8c042488": "0x8c042488",
+        "_call_8c01b9e0": "0x8c01b9e0",
+        "_call_8c115494": "0x8c115494",
+        "_call_8c01c210": "0x8c01c210",
+        "_call_8c115298": "0x8c115298",
+        "_call_8c01c1c4": "0x8c01c1c4",
+        "_call_8c11574c": "0x8c11574c",
+        "_call_8c01c1e8": "0x8c01c1e8",
+        "_call_8c1159f0": "0x8c1159f0",
+        "_call_8c015ab4": "0x8c015ab4",
+        "_call_8c180ae8": "0x8c180ae8",
+        "_call_8c380516": "0x8c380516",
+        "_call_8c03373c": "0x8c03373c",
+        "_call_8c0337cc": "0x8c0337cc",
+        "_call_8c033330": "0x8c033330",
+        "_call_8c03385c": "0x8c03385c",
+        "_call_8c19b054": "0x8c19b054",
+        "_call_8c01c228": "0x8c01c228",
+        "_call_8c01c1dc": "0x8c01c1dc",
+        "_call_8c01c200": "0x8c01c200",
+        "_call_8c01e180": "0x8c01e180",
+        "_call_8c104da8": "0x8c104da8",
+        "_probe_at": "0x8c3727a0",
+        "_phase_at": "0x8c01c244",
+        "_request_at": "0x8c01c1a4",
+        "_global_storage": "0x8c44bec8",
+        "_timeout": "0x8c4d828c",
+        "_transition": "0x8c4d8288",
+        "_forced": "0x8c41bcf8",
+        "_message_at": "0x8c011efc",
+        "_poll_at": "0x8c36a880",
+        "_mode_at": "0x8c36a868",
+        "_first_mode_at": "0x8c0308ec",
+        "_second_mode_at": "0x8c379280",
+        "_existing": "0x8c4621a8",
+        "_configuration": "0x8c310380"
+      },
+      "ranges": [
+        {
+          "offset": 1071340,
+          "size": 248
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_scene_screen",
+          "address": "0x8c1158ec",
+          "size": 248
+        }
+      ],
+      "reference_sha256": "66bcc4d0a3d59c026eaf3ceb5b71a8bece4a927c2816a6ba371d6f23c0fafb93",
+      "boundary_review": "Raw11574c..1159f0 fully reviewed including three distinct entries,delay slots and pools. Temporary base construction follows initial calls; two12-actor loops preserve virtual slot36. Branch-specific calls are not hoisted; referenced configuration data retained."
+    },
+    {
+      "id": "scene_screen_callback",
+      "source": "src/objects/scene_screen_callback.c",
+      "address": "0x8c1159e4",
+      "entry": "_scene_screen_callback",
+      "symbols": {
+        "_update_at": "0x8c1158ec"
+      },
+      "ranges": [
+        {
+          "offset": 1071588,
+          "size": 12
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_screen_callback",
+          "address": "0x8c1159e4",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "cfaeb3649a5534e147e31901ca490215dfc0619c54a59095af447139c3848dd5",
+      "boundary_review": "Raw11574c..1159f0 fully reviewed including three distinct entries,delay slots and pools. Temporary base construction follows initial calls; two12-actor loops preserve virtual slot36. Branch-specific calls are not hoisted; referenced configuration data retained."
     },
     {
       "id": "destroy_object_8c118918",

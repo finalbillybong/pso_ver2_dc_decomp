@@ -1,0 +1,20 @@
+extern void call_8c1004cc(void);
+extern void call_8c05fbdc(void);
+extern void call_8c015ab4(void);
+extern void call_8c1156b4(void);
+extern void call_8c380516(void);
+extern void call_8c036410(void);
+extern void call_8c13f428(void);
+extern void call_8c104e8c(void);
+extern void call_8c01c2b0(void);
+extern void prepare_at(void *);
+extern void clear_at(void *);
+extern void parent_at(void *);
+extern void settings_at(void *);
+extern void unload_at(void *,int);
+extern char global_storage[];
+extern void *parent;
+extern void *selected;
+extern char settings[];
+extern char load_data[];
+void finish_scene_transition(void) {int i;call_8c1004cc();call_8c05fbdc();call_8c015ab4();call_8c1156b4();prepare_at(global_storage);clear_at(global_storage);parent_at(parent);for(i=0;i<30;++i) call_8c380516();call_8c036410();if(!selected) settings_at(settings);call_8c13f428();unload_at(load_data,264);call_8c104e8c();call_8c01c2b0();call_8c380516();}
