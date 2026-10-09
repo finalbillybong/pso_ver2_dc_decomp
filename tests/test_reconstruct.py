@@ -10,6 +10,30 @@ import reconstruct
 
 
 class ReconstructionWorkflowTests(unittest.TestCase):
+    def test_resolved_target_preserves_complete_parked_history(self):
+        unit = dict(id='target', address='0x1000', entry='_target',
+                    ranges=[dict(offset=0, size=4)], functions=[], reference_sha256='same')
+        previous = dict(unit, source='src/provisional/target.c', status='parked',
+                        hypotheses_tested=7, reason='Observed call scheduling differs')
+        result = reconstruct.matched_target(dict(unit, source='src/objects/target.c'),
+                                           {'revisit_evidence': 'New exact related call context'}, previous)
+        self.assertEqual(result['status'], 'matched')
+        self.assertEqual(result['previous_target'], previous)
+        self.assertEqual(previous['status'], 'parked')
+        self.assertEqual(result['previous_target']['hypotheses_tested'], 7)
+
+    def test_resolved_target_rejects_missing_evidence_changed_range_or_prior_match(self):
+        unit = dict(id='target', address='0x1000', entry='_target',
+                    ranges=[dict(offset=0, size=4)], functions=[], reference_sha256='same')
+        previous = dict(unit, status='parked')
+        for candidate, evidence, old in [
+                (unit, {}, previous),
+                (dict(unit, ranges=[dict(offset=0, size=8)]), {'revisit_evidence': 'new'}, previous),
+                (dict(unit, reference_sha256='changed'), {'revisit_evidence': 'new'}, previous),
+                (unit, {'revisit_evidence': 'new'}, dict(previous, status='matched'))]:
+            with self.subTest(candidate=candidate, old=old), self.assertRaisesRegex(ValueError, 'unchanged identity'):
+                reconstruct.matched_target(candidate, evidence, old)
+
     def test_complete_comparison_rejects_missing_and_extra_tail(self):
         for actual in (b'ab', b'abcd'):
             result = reconstruct.compare(b'abc', actual, 4096)

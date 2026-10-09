@@ -68814,21 +68814,21 @@
     },
     {
       "id": "update_script_menu_selection",
-      "source": "src/provisional/update_script_menu_selection.c",
+      "source": "src/objects/update_script_menu_selection.c",
       "address": "0x8c21424c",
       "entry": "_update_script_menu_selection",
       "symbols": {
-        "_entry_index": "0x8c215d3c",
-        "_resolve_value": "0x8c211298",
-        "_entry_key": "0x8c215d9c",
-        "_key_kind": "0x8c210724",
-        "_set_entry_value": "0x8c215f04",
-        "_refresh": "0x8c2125fc",
-        "_cancel": "0x8c213438",
-        "_finish": "0x8c212c9c",
-        "_button": "0x8c20a7a4",
+        "_code": "0x8c215d9c",
+        "_classify": "0x8c210724",
+        "_poll": "0x8c213900",
+        "_input": "0x8c20a7a4",
         "_emit": "0x8c05fbf8",
-        "_poll": "0x8c213900"
+        "_refresh": "0x8c2125fc",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438",
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04"
       },
       "ranges": [
         {
@@ -68844,9 +68844,46 @@
         }
       ],
       "reference_sha256": "19303b93fe8fc00b65eee2668f99cf1846c30d079814d692d7ca3cde7a34cdd3",
-      "status": "parked",
-      "hypotheses_tested": 1,
-      "reason": "Batch183:366 generated/340 expected,313 differing; first0x8c214250. Generated366 bytes versus340; extra saved register and inline entry/request/cancellation lifetimes shift calls and pool. Park after representative failure; no sibling expansion. Revisit with verified inline menu member context."
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "previous_target": {
+        "id": "update_script_menu_selection",
+        "source": "src/provisional/update_script_menu_selection.c",
+        "address": "0x8c21424c",
+        "entry": "_update_script_menu_selection",
+        "symbols": {
+          "_entry_index": "0x8c215d3c",
+          "_resolve_value": "0x8c211298",
+          "_entry_key": "0x8c215d9c",
+          "_key_kind": "0x8c210724",
+          "_set_entry_value": "0x8c215f04",
+          "_refresh": "0x8c2125fc",
+          "_cancel": "0x8c213438",
+          "_finish": "0x8c212c9c",
+          "_button": "0x8c20a7a4",
+          "_emit": "0x8c05fbf8",
+          "_poll": "0x8c213900"
+        },
+        "ranges": [
+          {
+            "offset": 2114124,
+            "size": 340
+          }
+        ],
+        "functions": [
+          {
+            "name": "update_script_menu_selection",
+            "address": "0x8c21424c",
+            "size": 340
+          }
+        ],
+        "reference_sha256": "19303b93fe8fc00b65eee2668f99cf1846c30d079814d692d7ca3cde7a34cdd3",
+        "status": "parked",
+        "hypotheses_tested": 1,
+        "reason": "Batch183:366 generated/340 expected,313 differing; first0x8c214250. Generated366 bytes versus340; extra saved register and inline entry/request/cancellation lifetimes shift calls and pool. Park after representative failure; no sibling expansion. Revisit with verified inline menu member context."
+      },
+      "revisit_evidence": "New exact187 confirm_resource_selection and update_resource_selection independently prove every shared block, including nullgetter, returnpending boolean, phase switch and refreshed unsignedindices. This is new code evidence satisfying historical revisitcondition; preserve prior1 + current1 = cumulative2.",
+      "boundary_review": "21424c..2143a0 full262body/2alignment/76pool re-read; all branches/delays/callees/fields match newly exact relatedhandlers. Queued183/184 failure preserved; no compilerchange, no guessed behavior. Sourcecase0 blocklimits result lifetime and nativephase switch."
     },
     {
       "id": "resolve_script_selector",
@@ -70999,6 +71036,815 @@
       "status": "parked",
       "hypotheses_tested": 1,
       "reason": "Batch186:540 generated/540 expected,9 differing; first0x8c0b0091. Native92-byte aggregate copy and enabled gate compile, but resource/size/configure store schedule differs in nine bytes, same blocker as the492-byte initializer. Park after one distinct record-copy context; no equivalent sibling trial."
+    },
+    {
+      "id": "apply_resource_selection_8c214130",
+      "source": "src/objects/apply_resource_selection_8c214130.c",
+      "address": "0x8c214130",
+      "entry": "_apply_resource_selection_8c214130",
+      "symbols": {
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438",
+        "_apply": "0x8c21420c"
+      },
+      "ranges": [
+        {
+          "offset": 2113840,
+          "size": 220
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_resource_selection_8c214130",
+          "address": "0x8c214130",
+          "size": 220
+        }
+      ],
+      "reference_sha256": "497dac4a26a6822ee94988c59d65f3bc183c275487e728e499abc0d717df5223",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "0x8c214130..0x8c21420c complete rawbody/literalpool/adjacentapplyhelper reviewed; all commoncalleeABIs from213fa4; applycallee immediatelyadjacent takes selfR4 only, nootherincominguses. Preserve cancellationeffect 0x50001. No sibling guessed fromcatalogsize."
+    },
+    {
+      "id": "apply_resource_selection_8c2144e8",
+      "source": "src/objects/apply_resource_selection_8c2144e8.c",
+      "address": "0x8c2144e8",
+      "entry": "_apply_resource_selection_8c2144e8",
+      "symbols": {
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438",
+        "_apply": "0x8c2145c8"
+      },
+      "ranges": [
+        {
+          "offset": 2114792,
+          "size": 224
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_resource_selection_8c2144e8",
+          "address": "0x8c2144e8",
+          "size": 224
+        }
+      ],
+      "reference_sha256": "e63b9fe934d6283068643a818b37d54fd11c2f9ba5da9c4f1bff388e8b592be3",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "0x8c2144e8..0x8c2145c8 complete rawbody/literalpool/adjacentapplyhelper reviewed; all commoncalleeABIs from213fa4; applycallee immediatelyadjacent takes selfR4 only, nootherincominguses. Preserve cancellationeffect 0x50016. No sibling guessed fromcatalogsize."
+    },
+    {
+      "id": "choose_resource_selection_kind",
+      "source": "src/objects/choose_resource_selection_kind.c",
+      "address": "0x8c213abc",
+      "entry": "_choose_resource_selection_kind",
+      "symbols": {
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_activate": "0x8c212c9c",
+        "_global_mode": "0x8c5051e0",
+        "_code": "0x8c215d9c",
+        "_next_state": "0x8c2111ac",
+        "_close": "0x8c2110d8"
+      },
+      "ranges": [
+        {
+          "offset": 2112188,
+          "size": 424
+        }
+      ],
+      "functions": [
+        {
+          "name": "choose_resource_selection_kind",
+          "address": "0x8c213abc",
+          "size": 424
+        }
+      ],
+      "reference_sha256": "04b7892650a588fd50ceb155b12cfdc38f1feb90589898b184bff672f37ffee6",
+      "linker": "codewarrior",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "213abc..213c64 fullrawbody andboth switch tables reviewed: table213b44 twelveentries and213b94 fiveentries; case0..8/defaultkind1,9kind2,10mode0kind3otherwise4,11kind6. next_state2111ac consumes selfR4/intR5, rawcallerextends chosen. OtherABIandindexedprefix fromexactfamily; fieldoffsetschecked. NativeCodeWarriorlinker used for switch relocations only."
+    },
+    {
+      "id": "commit_resource_selection",
+      "source": "src/objects/commit_resource_selection.c",
+      "address": "0x8c213c64",
+      "entry": "_commit_resource_selection",
+      "symbols": {
+        "_refresh": "0x8c2125fc",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438",
+        "_selected": "0x8c5051fc",
+        "_reset": "0x8c210a0c",
+        "_close": "0x8c2110d8"
+      },
+      "ranges": [
+        {
+          "offset": 2112612,
+          "size": 268
+        }
+      ],
+      "functions": [
+        {
+          "name": "commit_resource_selection",
+          "address": "0x8c213c64",
+          "size": 268
+        }
+      ],
+      "reference_sha256": "e53342de9da9369812c6e78113e1a409bad37894fa7025cb4ab1c4a6f9853081",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "213c64..213d70 fullrawbody/literalpool/adjacententry reviewed, conditioncategory176==1, specialstate20/selection-60; allcallABIsandtypes alreadychecked fromexact440-bytefinalizer. No staticdatacopy."
+    },
+    {
+      "id": "confirm_resource_selection",
+      "source": "src/objects/confirm_resource_selection.c",
+      "address": "0x8c2143a0",
+      "entry": "_confirm_resource_selection",
+      "symbols": {
+        "_code": "0x8c215d9c",
+        "_classify": "0x8c210724",
+        "_poll": "0x8c213900",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_refresh": "0x8c2125fc",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438"
+      },
+      "ranges": [
+        {
+          "offset": 2114464,
+          "size": 328
+        }
+      ],
+      "functions": [
+        {
+          "name": "confirm_resource_selection",
+          "address": "0x8c2143a0",
+          "size": 328
+        }
+      ],
+      "reference_sha256": "f9191266efb38a038eab725702c349aed2a5c54a95d951ddc694f0835c30ff9d",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "2143a0..2144e8 raw260-bytebody and68pool/adjacententry reviewed. Existingselectioncallees rechecked; code215d9c returns signedshort loadedMOV.W/fallback1104; classify210724 consumes shortR4 viaEXTS.W; poll213900 consumes selfR4 and producesinteger; all field offsets checked. Source preservescasezero/one behavior, noextra nullrepair."
+    },
+    {
+      "id": "copy_resource_selection",
+      "source": "src/objects/copy_resource_selection.c",
+      "address": "0x8c214c44",
+      "entry": "_copy_resource_selection",
+      "symbols": {
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_refresh": "0x8c2125fc",
+        "_reset": "0x8c210a0c",
+        "_close": "0x8c2110d8",
+        "_cancel": "0x8c213438",
+        "_selected": "0x8c5051fc"
+      },
+      "ranges": [
+        {
+          "offset": 2116676,
+          "size": 220
+        }
+      ],
+      "functions": [
+        {
+          "name": "copy_resource_selection",
+          "address": "0x8c214c44",
+          "size": 220
+        }
+      ],
+      "reference_sha256": "a4b26f37ac850873c2a396373acfb3fbb75ee931a247c4410b216b293b7dfae2",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "214c44..214d20 completebody/pool/adjacententry reviewed. Seven-wordcopy source196->destination192; notify164 guards signedshortglobal reset and reset210a0c noargs; close2110d8 consumes self and freesownedfields. All othercalleeABIs from exactselectionfamily; fields/extents checked."
+    },
+    {
+      "id": "dispatch_resource_selector",
+      "source": "src/objects/dispatch_resource_selector.c",
+      "address": "0x8c211298",
+      "entry": "_dispatch_resource_selector",
+      "linker": "codewarrior",
+      "symbols": {
+        "_mode": "0x8c5051e0",
+        "_normal": "0x8c211314",
+        "_script": "0x8c2115dc",
+        "_alternate": "0x8c2118fc",
+        "_second": "0x8c211c1c",
+        "_third": "0x8c211f3c"
+      },
+      "ranges": [
+        {
+          "offset": 2101912,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "dispatch_resource_selector",
+          "address": "0x8c211298",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "e3a9a48ed12a6e7428dca5b26405302bbc5ff8203815f62866aaf6d32e71c305",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "211298..211314 full100-byte body includingtable28..48 plus24-byte pool, adjacentnormalresolver reviewed; raw reads globalmode, preservesR4..R7 forfivecallees; eachcallee prologue uses self/kind/key/index consistently with prior reviewed scriptresolver. Native switch relocation linker; no staticdata copied."
+    },
+    {
+      "id": "finalize_resource_selection_8c214d20",
+      "source": "src/objects/finalize_resource_selection_8c214d20.c",
+      "address": "0x8c214d20",
+      "entry": "_finalize_resource_selection_8c214d20",
+      "symbols": {
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04",
+        "_refresh": "0x8c2125fc",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438",
+        "_selected": "0x8c5051fc",
+        "_code": "0x8c215d9c",
+        "_reset": "0x8c210a0c",
+        "_close": "0x8c2110d8"
+      },
+      "ranges": [
+        {
+          "offset": 2116896,
+          "size": 440
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_resource_selection_8c214d20",
+          "address": "0x8c214d20",
+          "size": 440
+        }
+      ],
+      "reference_sha256": "523e6ab87f047990a77771c6bc1d040c1dccbe81c1b12d43f176fffcdc1c541c",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "0x8c214d20..0x8c214ed8 complete rawbody, literalpool and adjacententry reviewed; nextentry214ed8; code1104 controls specialstate20, ordinarypaths duplicate observed28-bytecopy. All callees alreadychecked inexactselection/copyfamily, fieldoffsetsdeclared andchecked."
+    },
+    {
+      "id": "initialize_follow_quad_effect",
+      "source": "src/effects/initialize_follow_quad_effect.c",
+      "address": "0x8c14eb6c",
+      "entry": "_initialize_follow_quad_effect",
+      "symbols": {
+        "_base": "0x8c01d1ec",
+        "_manager": "0x8c4db380",
+        "_dispatch": "0x8c26e4a8",
+        "_resource": "0x8c3157a8",
+        "_quads": "0x8c315748",
+        "_lookup": "0x8c053d84",
+        "_emit": "0x8c05fbf8"
+      },
+      "ranges": [
+        {
+          "offset": 1305452,
+          "size": 404
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_follow_quad_effect",
+          "address": "0x8c14eb6c",
+          "size": 404
+        }
+      ],
+      "reference_sha256": "859e6e3597fcbfb6d9503117e61dcdaecaf8d53a6d5bec740b3659bc657a2072",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "14eb6c..14ed00 completebody/26poolwords/adjacententry reviewed; raw fourargs self/context/index/id correct missingpseudocontext. base establishedtwoargs; admitted053d84 unsignedshortIDABI; emitfourargs. All referenced manager/object/quad/count offsets checked. Preserve uninitialized inheritedposition whenlookupfails, thenobservedy+=2; no data copied."
+    },
+    {
+      "id": "resume_resource_selection_8c214848",
+      "source": "src/objects/resume_resource_selection_8c214848.c",
+      "address": "0x8c214848",
+      "entry": "_resume_resource_selection_8c214848",
+      "symbols": {
+        "_code": "0x8c215d9c",
+        "_classify": "0x8c210724",
+        "_poll": "0x8c213900",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_refresh": "0x8c2125fc",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438",
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04"
+      },
+      "ranges": [
+        {
+          "offset": 2115656,
+          "size": 340
+        }
+      ],
+      "functions": [
+        {
+          "name": "resume_resource_selection_8c214848",
+          "address": "0x8c214848",
+          "size": 340
+        }
+      ],
+      "reference_sha256": "155352bd81b904ce0840e626192e2cd6717ca3e2eb5db8af1d9d20f16e263f21",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "0x8c214848..0x8c21499c completebinary compared to exact21424c, differs only immediate242. Catalogentry and adjacententry independentlypresent; allbranches/delays/poolidentical and allcalledABIs reviewed. No failed representative expansion."
+    },
+    {
+      "id": "resume_resource_selection_8c21499c",
+      "source": "src/objects/resume_resource_selection_8c21499c.c",
+      "address": "0x8c21499c",
+      "entry": "_resume_resource_selection_8c21499c",
+      "symbols": {
+        "_code": "0x8c215d9c",
+        "_classify": "0x8c210724",
+        "_poll": "0x8c213900",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_refresh": "0x8c2125fc",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438",
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04"
+      },
+      "ranges": [
+        {
+          "offset": 2115996,
+          "size": 340
+        }
+      ],
+      "functions": [
+        {
+          "name": "resume_resource_selection_8c21499c",
+          "address": "0x8c21499c",
+          "size": 340
+        }
+      ],
+      "reference_sha256": "399bba5f60e7bdb1a0f72416eb0c12be31cb8d8f8fd89945608fd160342d1524",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "0x8c21499c..0x8c214af0 completebinary compared to exact21424c, differs only immediate242. Catalogentry and adjacententry independentlypresent; allbranches/delays/poolidentical and allcalledABIs reviewed. No failed representative expansion."
+    },
+    {
+      "id": "resume_resource_selection_8c214af0",
+      "source": "src/objects/resume_resource_selection_8c214af0.c",
+      "address": "0x8c214af0",
+      "entry": "_resume_resource_selection_8c214af0",
+      "symbols": {
+        "_code": "0x8c215d9c",
+        "_classify": "0x8c210724",
+        "_poll": "0x8c213900",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_refresh": "0x8c2125fc",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438",
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04"
+      },
+      "ranges": [
+        {
+          "offset": 2116336,
+          "size": 340
+        }
+      ],
+      "functions": [
+        {
+          "name": "resume_resource_selection_8c214af0",
+          "address": "0x8c214af0",
+          "size": 340
+        }
+      ],
+      "reference_sha256": "d2b956f548034304675114a1019083ffe92cfcb125ca6c46c46c1c16154f1ed7",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "0x8c214af0..0x8c214c44 completebinary compared to exact21424c, differs only immediate242. Catalogentry and adjacententry independentlypresent; allbranches/delays/poolidentical and allcalledABIs reviewed. No failed representative expansion."
+    },
+    {
+      "id": "transition_resource_selection_8c214090",
+      "source": "src/objects/transition_resource_selection_8c214090.c",
+      "address": "0x8c214090",
+      "entry": "_transition_resource_selection_8c214090",
+      "symbols": {
+        "_refresh": "0x8c2125fc",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438"
+      },
+      "ranges": [
+        {
+          "offset": 2113680,
+          "size": 160
+        }
+      ],
+      "functions": [
+        {
+          "name": "transition_resource_selection_8c214090",
+          "address": "0x8c214090",
+          "size": 160
+        }
+      ],
+      "reference_sha256": "7af2b3181afd3bffbc8db25f9d1bfba109f1a2a5f7a6f467b276f9ece6fe5c3d",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "0x8c214090..0x8c214130 completebody/literalpool/adjacententry reviewed independently. Reusedcallees215d3c/211298/215f04/2125fc/20a7a4/05fbf8/212c9c/213438 and signedshortcode215d9c alreadyraw-checked. Extendedfields196/198/252 checked; preserve nullable and nonnullablepaths exactly."
+    },
+    {
+      "id": "transition_resource_selection_8c21420c",
+      "source": "src/objects/transition_resource_selection_8c21420c.c",
+      "address": "0x8c21420c",
+      "entry": "_transition_resource_selection_8c21420c",
+      "symbols": {
+        "_code": "0x8c215d9c"
+      },
+      "ranges": [
+        {
+          "offset": 2114060,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "transition_resource_selection_8c21420c",
+          "address": "0x8c21420c",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "2bde3755f26b6cff6f6ec57ee6597831c3574ffd24210f89fddc6a7a344b7cd0",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "0x8c21420c..0x8c21424c completebody/literalpool/adjacententry reviewed independently. Reusedcallees215d3c/211298/215f04/2125fc/20a7a4/05fbf8/212c9c/213438 and signedshortcode215d9c alreadyraw-checked. Extendedfields196/198/252 checked; preserve nullable and nonnullablepaths exactly."
+    },
+    {
+      "id": "transition_resource_selection_8c2145c8",
+      "source": "src/objects/transition_resource_selection_8c2145c8.c",
+      "address": "0x8c2145c8",
+      "entry": "_transition_resource_selection_8c2145c8",
+      "symbols": {
+        "_code": "0x8c215d9c"
+      },
+      "ranges": [
+        {
+          "offset": 2115016,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "transition_resource_selection_8c2145c8",
+          "address": "0x8c2145c8",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "f50b6d566f6dd2c61b9b6126953bcd5b1de1f9c58614a91e2999f10ef1a722c8",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "0x8c2145c8..0x8c214628 completebody/literalpool/adjacententry reviewed independently. Reusedcallees215d3c/211298/215f04/2125fc/20a7a4/05fbf8/212c9c/213438 and signedshortcode215d9c alreadyraw-checked. Extendedfields196/198/252 checked; preserve nullable and nonnullablepaths exactly."
+    },
+    {
+      "id": "transition_resource_selection_8c214628",
+      "source": "src/objects/transition_resource_selection_8c214628.c",
+      "address": "0x8c214628",
+      "entry": "_transition_resource_selection_8c214628",
+      "symbols": {
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04",
+        "_refresh": "0x8c2125fc",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438",
+        "_code": "0x8c215d9c"
+      },
+      "ranges": [
+        {
+          "offset": 2115112,
+          "size": 308
+        }
+      ],
+      "functions": [
+        {
+          "name": "transition_resource_selection_8c214628",
+          "address": "0x8c214628",
+          "size": 308
+        }
+      ],
+      "reference_sha256": "28f3d0f0d18a3c724049b3632e52aadb50ebb6b4b844a1a354a9fe8898a64722",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "0x8c214628..0x8c21475c completebody/literalpool/adjacententry reviewed independently. Reusedcallees215d3c/211298/215f04/2125fc/20a7a4/05fbf8/212c9c/213438 and signedshortcode215d9c alreadyraw-checked. Extendedfields196/198/252 checked; preserve nullable and nonnullablepaths exactly."
+    },
+    {
+      "id": "update_callback_dialog",
+      "source": "src/objects/update_callback_dialog.c",
+      "address": "0x8c10699c",
+      "entry": "_update_callback_dialog",
+      "linker": "codewarrior",
+      "symbols": {
+        "_initialize": "0x8c106a6c",
+        "_choose": "0x8c106e1c",
+        "_confirm": "0x8c107188",
+        "_edit": "0x8c107084",
+        "_reset": "0x8c107040",
+        "_wait": "0x8c107290"
+      },
+      "ranges": [
+        {
+          "offset": 1010076,
+          "size": 208
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_callback_dialog",
+          "address": "0x8c10699c",
+          "size": 208
+        }
+      ],
+      "reference_sha256": "5853dfc5c9f22dad0f8528f9b741ec03925bbb642658e3e29883b50bad2553c0",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "10699c..106a6c all nine jump-table entries, six direct callees, two callback branches, return and ownpool reviewed. Case6/default no action. Direct handlers start with selfR4 use, no additional incoming arguments. Accept call reloads parent908; cancel receives noargument. All observed prefix offsets checked; established native CodeWarrior linker used for compiler switch relocations, flags unchanged."
+    },
+    {
+      "id": "update_resource_selection",
+      "source": "src/objects/update_resource_selection.c",
+      "address": "0x8c213fa4",
+      "entry": "_update_resource_selection",
+      "symbols": {
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04",
+        "_refresh": "0x8c2125fc",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438"
+      },
+      "ranges": [
+        {
+          "offset": 2113444,
+          "size": 236
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_resource_selection",
+          "address": "0x8c213fa4",
+          "size": 236
+        }
+      ],
+      "reference_sha256": "edb240a984a27a10bbd93524bd19a3a022df5ec85cd59f7f20bb9f227c2267a9",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "213fa4..214090 raw complete174-byte body+2naturalalignment+60pool reviewed; callee starts checked: value reads int112; select_value dispatcher preservesfourargs and returnsinteger; set_value storesR5at120; refresh/activate/cancel consume self only; input overwritesunusedR4 but consumesR5mask; emit observedfourargs. Provisional prefix checks fields and indexed bases36/40; no underlyingresources copied."
+    },
+    {
+      "id": "update_resource_selection_8c21475c",
+      "source": "src/objects/update_resource_selection_8c21475c.c",
+      "address": "0x8c21475c",
+      "entry": "_update_resource_selection_8c21475c",
+      "symbols": {
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04",
+        "_refresh": "0x8c2125fc",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438"
+      },
+      "ranges": [
+        {
+          "offset": 2115420,
+          "size": 236
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_resource_selection_8c21475c",
+          "address": "0x8c21475c",
+          "size": 236
+        }
+      ],
+      "reference_sha256": "c2f51b424961011d679c827cdea6813ea873c7281f0d80c80ab99898bdc2659d",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "21475c..214848 completebody/pool/naturalalignment reviewed; dispatchreference212c80 and adjacententry214848; allpoolwordsandcalleeABI identical to exact213fa4; only stateimmediate changes."
+    },
+    {
+      "id": "advance_heading_contact",
+      "source": "src/provisional/advance_heading_contact.cpp",
+      "language": "c++",
+      "address": "0x8c05c464",
+      "entry": "_advance_heading_contact",
+      "symbols": {
+        "_angle": "0x8c130334",
+        "_sine": "0x8c37eb0c",
+        "_cosine": "0x8c38c154",
+        "_turn": "0x8c0c4f90",
+        "_project_step": "0x8c05a584"
+      },
+      "ranges": [
+        {
+          "offset": 312420,
+          "size": 284
+        }
+      ],
+      "functions": [
+        {
+          "name": "advance_heading_contact",
+          "address": "0x8c05c464",
+          "size": 284
+        }
+      ],
+      "reference_sha256": "f0bed335de9fb6a93e50683f7c3977ae64311b04ce25d0b7ca90e1fb0cd7cac2",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch187:280 generated/284 expected,205 differing; first0x8c05c476. One hypothesis.280 versus284 bytes; signed-short turn/sine delay slot and project-step/native virtual contact argument/height scheduling differ. Callee ABI reviewed. Same motion-family scheduling blocker as186; no sibling expansion without new context."
+    },
+    {
+      "id": "initialize_player_record_effect",
+      "source": "src/provisional/initialize_player_record_effect.c",
+      "address": "0x8c230910",
+      "entry": "_initialize_player_record_effect",
+      "symbols": {
+        "_base": "0x8c01d1ec",
+        "_dispatch": "0x8c278f58",
+        "_resource": "0x8c3387e0",
+        "_manager": "0x8c4e2280",
+        "_lookup": "0x8c021ef8",
+        "_copy_name": "0x8c12b154",
+        "_setting_offsets": "0x8c338b08",
+        "_settings": "0x8c3387f0",
+        "_texture_offsets": "0x8c338b18",
+        "_texture_indices": "0x8c338ac0",
+        "_stop": "0x8c0a21a4",
+        "_label": "0x8c338b6c",
+        "_set_label": "0x8c1003d0",
+        "_reset_colors": "0x8c256b48",
+        "_attach": "0x8c256b7c",
+        "_special": "0x8c510ba0",
+        "_arena": "0x8c4d97e0",
+        "_allocate": "0x8c122700",
+        "_first_value": "0x8c247bfc",
+        "_second_value": "0x8c247de0",
+        "_child_configuration": "0x8c340764",
+        "_construct_child": "0x8c24de6c"
+      },
+      "ranges": [
+        {
+          "offset": 2230544,
+          "size": 636
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_player_record_effect",
+          "address": "0x8c230910",
+          "size": 636
+        }
+      ],
+      "reference_sha256": "3cc93d2e4b0511481acea584e2874a44dddc5e662c2788f9eddd6b2311dca17a",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch187:632 generated/636 expected,529 differing; first0x8c230924. One hypothesis.632 versus636 bytes,529 differ from first resource/clear loop. Captured manager/resource constant and40-byte entry-loop lifetimes differ. Callees and string-copy ABI reviewed; revisit exact analogous constructor context."
+    },
+    {
+      "id": "initialize_resource_array_effect",
+      "source": "src/provisional/initialize_resource_array_effect.c",
+      "address": "0x8c228e68",
+      "entry": "_initialize_resource_array_effect",
+      "symbols": {
+        "_base": "0x8c01d1ec",
+        "_dispatch": "0x8c278c58",
+        "_resource": "0x8c337ec0",
+        "_manager": "0x8c4e2280",
+        "_geometry_indices": "0x8c326b54",
+        "_texture_indices": "0x8c337f3c",
+        "_position": "0x8c337f54",
+        "_angles": "0x8c337f60",
+        "_start": "0x8c0a2144",
+        "_set_positions": "0x8c0a56a0",
+        "_configuration": "0x8c337f6c",
+        "_configure": "0x8c0a5400",
+        "_emit": "0x8c05fbf8"
+      },
+      "ranges": [
+        {
+          "offset": 2199144,
+          "size": 380
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_resource_array_effect",
+          "address": "0x8c228e68",
+          "size": 380
+        }
+      ],
+      "reference_sha256": "a1a70ac1783810602653c822619431b2d9c77828f04ae5c1a59f3763c2741c9c",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch187:380 generated/380 expected,65 differing; first0x8c228e85. Two hypotheses. Independent unsigned clear counter restores380 bytes; first resource-loop index and manager-offset lifetimes remain different. Revisit a proven parallel-pointer-array initialization pattern."
+    },
+    {
+      "id": "initialize_paired_resource_effect",
+      "source": "src/provisional/initialize_paired_resource_effect.c",
+      "address": "0x8c2281f8",
+      "entry": "_initialize_paired_resource_effect",
+      "symbols": {
+        "_base": "0x8c01d1ec",
+        "_dispatch": "0x8c278bd8",
+        "_resource": "0x8c337dc0",
+        "_manager": "0x8c4e2280",
+        "_geometry_indices": "0x8c32658c",
+        "_texture_indices": "0x8c337dc4",
+        "_default_angles": "0x8c337dd8",
+        "_start": "0x8c0a2144",
+        "_set_positions": "0x8c0a56a0",
+        "_configuration": "0x8c337dcc",
+        "_configure": "0x8c0a5400",
+        "_emit": "0x8c05fbf8"
+      },
+      "ranges": [
+        {
+          "offset": 2195960,
+          "size": 404
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_paired_resource_effect",
+          "address": "0x8c2281f8",
+          "size": 404
+        }
+      ],
+      "reference_sha256": "6f522421d8a3e5ec7bc447acd8c89d490cff8bda532e5d4662504b1b80c82050",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch187:404 generated/404 expected,245 differing; first0x8c228218. Two hypotheses. Native Slot indexing restores the404-byte range, but i/manager/field-offset register lifetimes differ throughout the resource loop. Revisit only a proven12-byte resource-slot loop with matching alias and lifetime context."
+    },
+    {
+      "id": "finalize_resource_selection_8c214ed8",
+      "source": "src/provisional/finalize_resource_selection_8c214ed8.c",
+      "address": "0x8c214ed8",
+      "entry": "_finalize_resource_selection_8c214ed8",
+      "symbols": {
+        "_value": "0x8c215d3c",
+        "_select_value": "0x8c211298",
+        "_set_value": "0x8c215f04",
+        "_refresh": "0x8c2125fc",
+        "_input": "0x8c20a7a4",
+        "_emit": "0x8c05fbf8",
+        "_activate": "0x8c212c9c",
+        "_cancel": "0x8c213438"
+      },
+      "ranges": [
+        {
+          "offset": 2117336,
+          "size": 276
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_resource_selection_8c214ed8",
+          "address": "0x8c214ed8",
+          "size": 276
+        }
+      ],
+      "reference_sha256": "2675c161fa60138af9040515afc0aad328f84fe14ecb9dd0c8c72e27574a5b04",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch187:272 generated/276 expected,173 differing; first0x8c214eea. Two hypotheses produce the same272-byte output. Forward step increment uses indexed load/store rather than native pointer-in-R4 load/increment/store, missing four bytes. Inline increment helper is identical. Revisit proven increment-address lifetime; adjacent empty entry is excluded."
     }
   ]
 }

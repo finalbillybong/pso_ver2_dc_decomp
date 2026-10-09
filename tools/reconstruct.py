@@ -181,6 +181,18 @@ def verify(checkout, output):
     print(json.dumps({k: v for k, v in report.items() if k != 'steps'}))
 
 
+def matched_target(unit, spec, previous=None):
+    """Preserve a parked investigation when new evidence finally resolves it."""
+    target = dict(unit, status='matched', reason='Complete exact range reproduced twice from reviewed ordinary source.')
+    if previous is not None:
+        identity = ('id', 'address', 'entry', 'ranges', 'functions', 'reference_sha256')
+        if (previous.get('status') != 'parked' or not spec.get('revisit_evidence')
+                or any(unit.get(key) != previous.get(key) for key in identity)):
+            raise ValueError('Queued target requires new evidence and unchanged identity/ranges')
+        target.update(previous_target=previous, revisit_evidence=spec['revisit_evidence'])
+    return target
+
+
 def integrate(folders, output, reference):
     """Reproduce reviewed candidates twice before changing the research manifest."""
     root = project.ROOT
@@ -189,7 +201,8 @@ def integrate(folders, output, reference):
     output.mkdir(exist_ok=False)
     write(output / 'manifest-before.json', manifest)
     write(output / 'queue-before.json', queue)
-    names = {u['id'] for u in manifest['units'] + queue['targets']}
+    names = {u['id'] for u in manifest['units']}
+    queued = {u['id']: u for u in queue['targets']}
     admitted = []
     for folder in folders:
         spec = read(Path(folder) / 'spec.json')
@@ -199,14 +212,19 @@ def integrate(folders, output, reference):
             raise ValueError('Unsafe source destination')
         if unit['id'] in names or (root / relative).exists():
             raise ValueError('Refusing to replace existing target/source: ' + unit['id'])
+        target = matched_target(unit, spec, queued.get(unit['id']))
         for index in range(2):
             result = trial(spec, output / (unit['id'] + '-reproduce-' + str(index)), reference)
             if not result.get('exact'):
                 raise ValueError('Admission failed complete comparison: ' + unit['id'])
         unit['boundary_review'] = spec['boundary_review']
+        target['boundary_review'] = spec['boundary_review']
         manifest['units'].append(unit)
         project.layout(manifest, len(reference))
-        queue['targets'].append(dict(unit, status='matched', reason='Complete exact range reproduced twice from reviewed ordinary source.'))
+        if unit['id'] in queued:
+            queue['targets'][queue['targets'].index(queued[unit['id']])] = target
+        else:
+            queue['targets'].append(target)
         names.add(unit['id'])
         admitted.append((unit, spec['code']))
     # All comparisons and layout checks have succeeded before project writes.

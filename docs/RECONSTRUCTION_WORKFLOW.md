@@ -58,9 +58,13 @@ python3 -B tools/reconstruct.py integrate reviewed-plan.json --out SCRATCH/admis
 python3 -B tools/reconstruct.py verify --out SCRATCH/research-verification
 ```
 
-The integration command refuses existing targets/source paths and checks full
-layout before writing the research manifest. Preserve all existing source/header
-hashes. Copy only intended public source, headers, tools and metadata to the
+The integration command refuses existing matching targets and source paths and
+checks full layout before writing the research manifest. A parked target may be
+resolved only with explicit `revisit_evidence` and unchanged identity, complete
+ranges and reference hash. Its full previous queue record, including failed
+hypothesis counts, is preserved under `previous_target`; the new evidence is
+recorded beside it. Existing provisional source remains unchanged. Preserve all
+existing source/header hashes. Copy only intended public source, headers, tools and metadata to the
 separate public checkout, then run its own `verify` command. Verification calls
 the existing two-build/image/proof tools and all current tests, records timings,
 updates public progress, and checks source-only rejection without changing build
