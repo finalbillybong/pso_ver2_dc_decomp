@@ -236,3 +236,11 @@ Callee ABI and field inspection preceded expansion. One acceptance pass complete
 One acceptance pass completed44 admission reproductions, four fresh exact builds, both proofs, integrated images,121 tests and source-only artifact guards. There were8,288 module comparisons, **1.73 per new byte**, with research/public command totals123.665/125.869 seconds. Unchanged primary exports were reused.
 
 **Measured completed-batch efficiency improved:** 94.04 bytes per hypothesis versus82.42 in183 and50.95 in the baseline; overhead1.73 versus2.07 and6.48 comparisons per byte. Early source-lifetime investigations did not improve efficiency; family expansion supplied the gain. Token/cost records remain unavailable. Retain family-first selection and several-KB integration, and do not infer monetary or token savings from these measures.
+
+## Batch 185: overlays, record decoders and resource constructors
+
+20 exact functions in20 modules replace4,156 bytes; separately reconstructed data remains zero. There were40 hypotheses /40 compiler attempts /one link error /11 duplicate outputs; compilation totaled1.228 seconds. Five duplicates were corrected ABI declarations, five were exact sibling bodies and one was an unsuccessful source variation. Nine investigations are parked with persistent counts and precise blockers; no failed work receives matching credit. Each family was expanded only after its representative matched. No public tooling or compiler settings changed.
+
+One acceptance pass completed40 admission reproductions, four fresh exact builds, both proofs, integrated images,121 tests and source-only artifact guards. There were8,368 module comparisons, **2.01 per new byte**, with research/public command totals124.634/127.076 seconds. Primary exports were reused; one new focused dossier covers seven representative entries.
+
+**Efficiency is mixed:** yield improved to103.90 bytes per hypothesis versus94.04 in184 and50.95 in the baseline; overhead worsened to2.01 from1.73 in184, remaining below the baseline's6.48. Token/cost records remain unavailable. Continue family-first selection and ABI checks before integration; prioritize larger related routines to increase bytes per full verification pass. No token or monetary saving is inferred.
