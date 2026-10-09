@@ -1,0 +1,23 @@
+typedef struct Pair {void *first;unsigned int second;} Pair;typedef struct View {void *name;char unknown4[20];void *dispatch;char unknown28[2];unsigned short size;char unknown32[20];unsigned int flags;char unknown56[44];unsigned int field100;char unknown104[24];unsigned int field128,field132,field136;float field140;Pair *pairs;float field148;unsigned int field152,capacity;} View;
+typedef char check_size[sizeof(View)==160&&sizeof(Pair)==8?1:-1];
+typedef char check_name[(unsigned long)&((View *)0)->name==0?1:-1];
+typedef char check_dispatch[(unsigned long)&((View *)0)->dispatch==24?1:-1];
+typedef char check_size[(unsigned long)&((View *)0)->size==30?1:-1];
+typedef char check_flags[(unsigned long)&((View *)0)->flags==52?1:-1];
+typedef char check_field100[(unsigned long)&((View *)0)->field100==100?1:-1];
+typedef char check_field128[(unsigned long)&((View *)0)->field128==128?1:-1];
+typedef char check_field132[(unsigned long)&((View *)0)->field132==132?1:-1];
+typedef char check_field136[(unsigned long)&((View *)0)->field136==136?1:-1];
+typedef char check_field140[(unsigned long)&((View *)0)->field140==140?1:-1];
+typedef char check_pairs[(unsigned long)&((View *)0)->pairs==144?1:-1];
+typedef char check_field148[(unsigned long)&((View *)0)->field148==148?1:-1];
+typedef char check_field152[(unsigned long)&((View *)0)->field152==152?1:-1];
+typedef char check_capacity[(unsigned long)&((View *)0)->capacity==156?1:-1];
+extern void call_8c119988(View *);
+extern void call_8c1199cc(View *);
+extern void call_8c119a9c(View *);
+extern void call_8c119b70(View *);
+extern void call_8c0db30c(View *);
+extern void call_8c0db430(View *);
+extern void finish_at(View *,void *);
+void update_pair_grid_view(View *o) {if(!(o->flags&2)) o->field100=0x1000000;call_8c119988(o);call_8c1199cc(o);call_8c119a9c(o);call_8c119b70(o);call_8c0db30c(o);call_8c0db430(o);finish_at(o,(char *)o+44);}

@@ -1,0 +1,3 @@
+typedef struct Vector2 {float x,y;} Vector2;typedef struct Parameters {Vector2 position,extent;char unknown16[16];Vector2 origin;char unknown40[16];} Parameters;typedef struct Auxiliary {unsigned int unknown0,count;} Auxiliary;
+typedef char check_parameters[sizeof(Vector2)==8&&(unsigned long)&((Parameters *)0)->extent==8&&(unsigned long)&((Parameters *)0)->origin==32&&sizeof(Parameters)==56?1:-1];typedef char check_count[(unsigned long)&((Auxiliary *)0)->count==4?1:-1];extern Parameters parameters;extern Auxiliary auxiliary;
+extern float ceil_at(float);extern void *create_at(Vector2 *,Vector2 *,int);void *create_fitted_pair_grid_view(Vector2 *position,Vector2 *extent) {return create_at(position,extent,(int)ceil_at((extent->y-26.0f)/20.0f)+2);}

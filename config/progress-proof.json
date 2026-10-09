@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "8faceeeea406934d876a1910dde0b7e34fcbd128465163e2e95d114dc0f71456",
+    "config/project.json": "b1f379723216d6853ad5cc5c496d5a0af61a0a851dbf122885acbf6a5341e3ea",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/actor_mode_noop.c": "091e6fbf33d49b3ac1981b122742334eb3466776c1dbc6f65de3c8d221490738",
@@ -1172,6 +1172,7 @@
     "src/objects/apply_resource_118780.c": "95bc9daf685de8ba42b3592cf6a2d11caf2d890d34d33c256fbfdb296ba9eac1",
     "src/objects/apply_resource_37d534.c": "2d66045796ab86c4e6d131caeb6d4742e67619c88bd4254ee4d3a8b0808d21a8",
     "src/objects/apply_resource_3827d8.c": "67b1e3c603cd9821486b558c231ae5380a3e663a8af0a510bc6312e863a461fb",
+    "src/objects/approach_pair_grid_offset.c": "ab23587a7d820d2d734d583163e30e0fba825c68958f474984280e2ce788017e",
     "src/objects/attach_and_insert_object.c": "60f6c895915a60158b809fc516c9e6633cca1716e195045df86683acc35278cb",
     "src/objects/base_blend_above_minimum.c": "930f133280dbef8656d56687048462d91e1e86f149100c9bb1816f6bde545ff0",
     "src/objects/base_blend_increase_and_apply.c": "7bbf9d29b43779d51b755f62f93bf768ca77946b49c26925a52495e2a5fc5c13",
@@ -1247,6 +1248,8 @@
     "src/objects/clear_inactive_target.c": "b04611b68983d207f869dfa10619e57ca040a576b14415db41fe687b0602b0b6",
     "src/objects/complete_text_context.c": "b72d696a7f368041522586e35e0b1911b772c974370c719a7caebac4df35e733",
     "src/objects/compute_actor_scale.c": "4e4a3062c8455d53ac3944dbcc59125c95177c0f295e9349141c1123c5ba95c3",
+    "src/objects/configure_grid_view.c": "41a4bab82d1f183614c943d18278300826c7226b3c4b399797c38cb3efbd4b5c",
+    "src/objects/configure_pair_grid_view.c": "4fea9b7a60dcdb41ea37a2b7e39d045bc5f436cc9afdfb1063167e12ba5487a0",
     "src/objects/context_actor_ready.cpp": "e421e0778380e10d2c804e824908981da515ae0dac0e7fa0afd4e5fde7e6f27a",
     "src/objects/context_target_predicates.c": "dd96a750fa73b63f7e80e0ccce26d4cc751d70103db369c3d031ef2fbcd44364",
     "src/objects/context_target_resets.cpp": "0015daaa3f5da838883a10efdc106d1f078796dae554829f2ad0812819c92729",
@@ -1303,8 +1306,11 @@
     "src/objects/create_context_resources_8c24a784.c": "5006dcce5605e6faf6eac88657018d8cb632a965e2c26190b9e201628186d7d4",
     "src/objects/create_context_resources_8c24aac4.c": "98bfe2c472a3dd04006421d7d25cc5aa46aa4fe462afa5c9f92aa23bacc2955b",
     "src/objects/create_context_resources_8c24bfb8.c": "b8e0a5da236bd9fc217bf1c04d924f3497ea66e61d5ced926095cd11be0b8ca0",
+    "src/objects/create_control_owner_8c03d1b8.c": "731706b7da74f4799601d1162aa15643658b12aa56148bb69ab065f6344e9997",
+    "src/objects/create_control_owner_8c03d250.c": "b8715e5c2c8e62926ce0cd41f5cbcfbe216d6d3cc62a0ff17e8ec133d361cd27",
     "src/objects/create_default_configured_object.c": "0788c07ac712708f4469e418b24bf68db658e6ec153ba974b33e312e8f0ed6d6",
     "src/objects/create_effect_8c09fd4c.c": "a733c265614605f1177581b201f95d55a33279f52a2e25674006a619ada690b9",
+    "src/objects/create_fitted_pair_grid_view.c": "caf1749602447618900ff9e4dab6bb36f8857a9c6c1b48fa0a4e49831349e630",
     "src/objects/create_following_position_effect.c": "6143c5156ba62513acb136fa779797cc1979db167bfcb5f22be6ceb3150a0a24",
     "src/objects/create_object_8c23ca68.c": "2346cf2f012c771e4383f51bbd93819fa3d07e5c5af21f47890be44a2a1e2ff0",
     "src/objects/create_object_8c23d9b8.c": "09a6ffc3c0107592f7a75bbe8423e8a92715dd0c912290d1cdee24ad339a4a0b",
@@ -1462,12 +1468,20 @@
     "src/objects/draw_context_actor.cpp": "ee95410daf065d3f751b8b8bf73db1a97d1a86f7c0769db1f4444b3b29de5aee",
     "src/objects/draw_grid_offset_rows.c": "a5be4812231c4cbc91a40cd7fa8da667d4030ad0af82ac6acd5fa6a678b1b3d0",
     "src/objects/draw_grid_selected_rows.c": "78de36deebdb8119fe3516220e72e736b02b7dd1f3de3decab0f978537bf1e75",
+    "src/objects/draw_grid_view_records.cpp": "68e75f470de3ee24849302ba596429e463be5199fab057c887a6e79b34d42056",
+    "src/objects/draw_rising_grid_view.cpp": "d6ecf9d86dcd141327966f15cf0a8a2858f4279365fef46861b1201b6672c40b",
     "src/objects/draw_scene_control_marker.c": "e4e20f9580c1652ae3bc8e9e36e2d052507e43db5ffc8112eb07981390cadfd5",
     "src/objects/emit_context_particles.cpp": "657705f8d7c8029779c475e0589077e4c426d1e783b895b9c003a4dbbcba0523",
     "src/objects/emit_raised_ring_particle.c": "2ff138c8e70c6379824bc8cb5fe6ab5ec63b703b279377a2cca85e7df773fa29",
     "src/objects/empty_operations_37d4c.c": "8ea73e852f6001028778918fd89bb1f6d23974458629de1033bb3d394b339d35",
     "src/objects/enter_actor_mode_9.c": "ba2f062fafd5ab147c0dd5b9c3e9b2e0a3d610cb4b29363860e58eec66d8e612",
     "src/objects/fill_node_array_tree.c": "22951c07a5109dd8f1f8c18ac0f115d7fdfa902402bfa2ce96b94983a1a94380",
+    "src/objects/finalize_pair_grid_view.cpp": "a4035ca4137379a5d96e194a7b606fe9bd202735e9483a9cdf03fef4ce2c7b87",
+    "src/objects/finalize_view_8c0db2cc.cpp": "ff049fe5600a1778ebba3be0a5077aceae5870b8581bc458d542b9f54ff30e50",
+    "src/objects/finalize_view_8c1f1a5c.cpp": "038d9eb75fd2d192cea697b628fc4f468522bb41d33bc5ce34765328ed530582",
+    "src/objects/finalize_view_8c218070.cpp": "1ca72cb04b734fb3b35d9d678ca7511a6601e36ee1ac41b06bfcdfe5eeb02e8a",
+    "src/objects/finalize_view_8c230684.cpp": "60c6ecd504b2dbf464afcfb0d8db8abe7d6c364187fb84be38775f0210dd0a2e",
+    "src/objects/finalize_view_8c24e044.cpp": "026ceaa1b64db1e2e2150668d13a88f7f83d5735fe9f9e0756a5cc76688b6bb0",
     "src/objects/finish_scene_transition.c": "59151996150e880ddbd858f9aafa35cd4ed4a446806911001bdefe4c69d7b239",
     "src/objects/forward_child_transfer.c": "ca22772d872c47bbda19a54aa165dc79bd498b64a055af0df890c26fc4499f36",
     "src/objects/forward_scene_record.c": "d4ec339c864c35f26ceccdb3bcdc50de62b70335964448d9fc8c2fbc32b3e371",
@@ -1498,6 +1512,7 @@
     "src/objects/initialize_context_blend_8c252bfc.c": "acf3ede53fe78bc52efcd579e7f6f8064bc8713ff14f36d1eaecf06b2b506c9f",
     "src/objects/initialize_context_blend_8c254378.c": "22b4a46dafc8dcf8b912af127995999d9c43d57f208a2ff6ae99db1939468ea5",
     "src/objects/initialize_context_blend_8c254a58.c": "3713a5ba829d4f64d32577ecaf8b615a2b8252019ae4858027451363f886e3a5",
+    "src/objects/initialize_control_block_owner.c": "a152d687d755f2c2bc0b8005a6cb91bfcd1d461a52be99fcb2c0342b4d6f2c95",
     "src/objects/initialize_delayed_position_effect.c": "cfde82d78d880d22a323b3f11d5093c4a7773a3fc44136e681c85da57e702358",
     "src/objects/initialize_fields_8c0e14ac.c": "b8d58cd21370ecc31e8519f3361cd64afe035c26378a0e47809c5e4371f39726",
     "src/objects/initialize_fields_8c0e24e8.c": "de60f715272f808a9deb672666883ae81a4ab554e96207c89bb7b0c19ea703de",
@@ -1513,6 +1528,7 @@
     "src/objects/initialize_object_8c253390.c": "b22f6f56c95074ac3540d08ebd77e97e6455dbf5777e38e090ba113b8924783d",
     "src/objects/initialize_offset_effect.c": "399d232f07299beb6dcb14d7f858fc7559c77f2d5e4fd20fe5c056a8c5725954",
     "src/objects/initialize_pair_context_effect.c": "32f8d0e144fa3a4e2195137d35a942faa4339cf4ab29f3031e7fa90df2ee7481",
+    "src/objects/initialize_pair_grid_view.c": "c4f446e07dc87e2228b7c27f8ae9bc709b9ef5d36ba3ca578c862df0972a2ef3",
     "src/objects/initialize_paired_array_owner.c": "d19e65e2ac9fe30f83ef68e936719a3e8afdea6eae60142f7b5ed7efbd8d3c5c",
     "src/objects/initialize_proximity_object.c": "62c95287b3deb3ba57bc85bb2a68737538bd84c2944b907c9de9d1c284cac156",
     "src/objects/initialize_raised_position_effect.c": "a9965ec19542dbc56866f71fdf46fee23947f803e373299f0d188bef4acd312c",
@@ -1698,6 +1714,7 @@
     "src/objects/operation_45a8c.c": "39ab63c7c6e605eb3f7431469b99ebfb971d1d903e105eb1b6a79f28ee803d21",
     "src/objects/operation_45b8c.c": "6335460625ec8386ab9bdf1312a736a3d17973d25bfc7af56be17f94a4a20a30",
     "src/objects/operation_45d6c.c": "87b27af7b353a34193307d9004fc33c62cb91649223118603113c21c26a235f9",
+    "src/objects/pair_grid_view_ready.c": "00290f509a12f447c739e6c6d58844bfd428c8f4e1d56c8e23419739a7038a01",
     "src/objects/pair_state_accessors.c": "04f9b4481b1835ebaee7cc2d8cba7134d0a5947a4f2cbad4f21063dadfb4d3d2",
     "src/objects/paired_array_callbacks.c": "01de5e9cbfb03263e2ef203bdf6ee09cc8ced5a810b520e091f5e92a05548593",
     "src/objects/poll_text_context.c": "dc7fd1cf82bee7d8de58ad6fa482df4f332958256f67c49008150bfd533b1a4e",
@@ -1714,6 +1731,7 @@
     "src/objects/release_shared_buffer.c": "dd0f4dac11e75a07b1f33547a5e80e0eeb28ee275e04c72377784c57d6a065cd",
     "src/objects/release_shared_buffer_8c09cb34.c": "aa671ee76345c6c96feed5368cc7adedb7d738a7e6b0ec787b8a41cc564f3830",
     "src/objects/release_shared_buffer_8c256378.c": "26986219fc1e6da34704fc0a318cab46fac5f95b77423d0e3afff639fe4d277a",
+    "src/objects/remove_pair_grid_node.c": "387deb4461d47037f502dd4d0b0cd1286b4613f4025e1ba170dea861f6350090",
     "src/objects/reparent_hierarchy_node.c": "62753e195a9dfe5c07ee22a1ddf6d4a82d78b47984e9d21d229d15fc9c1a90f4",
     "src/objects/replace_low_id_object.cpp": "fa0a8e1c3dca11b5b5fc0469604541d5bd68182610f703a1d4a7632f540b3779",
     "src/objects/report_hierarchy_values.c": "940d3051d0d56e4b2e8a19de4ac0bbebb40da9e669b53eac092214bf60f09983",
@@ -1912,8 +1930,10 @@
     "src/objects/update_context_blend_fast.c": "634612ae462d0128879fc0aae2eb29d4eb1e43fd15a4d777e2b0f3aca152c8a6",
     "src/objects/update_delayed_position_effect.c": "c53c806de251def53376069a8d7a3981367b58604853a41bde2ed63b00ecc102",
     "src/objects/update_following_position_effect.c": "1f2d24c11f1219e1da3ff26e8f9e3929c23f6bba9ee1d330f83c46a87c868153",
+    "src/objects/update_grid_view_parameters.c": "de075e4933651fc6ec47fe4c6e08b2b3d9988a23839c1ba1d8ca10d71600e693",
     "src/objects/update_object_center.c": "acd4a41afafcb1d0789ad9fefb9d96f9a13b90062e337468627618be2c7c4d0b",
     "src/objects/update_pair_context.cpp": "036a7d5d3fab5e08f34dd9825540d2f7a4274726727cbfea1f93d875de1119a1",
+    "src/objects/update_pair_grid_view.c": "9c76f91cb2673641ad63daaec3638340c967ea830a4274c4ef29b7158f320593",
     "src/objects/update_proximity_object.c": "883bf9e586b980036d05a9904020bdaadcf7a10fac28950c2f8dc8afee643f0c",
     "src/objects/update_raised_position_effect.c": "00ef67e8476db5410afa645b5a63fbe5925cb65b94395bb353d87acaa23e604f",
     "src/objects/update_record_effect_timer.c": "5a908b792d204284675ec9837fbb8c54fc1da2df4a5a29b2a2969cdcb1452d2d",
@@ -4128,7 +4148,29 @@
       "off",
       "-O2"
     ],
+    "create_control_owner_8c03d1b8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "create_effect_a1448_8c03d218": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_control_owner_8c03d250": [
       "-proc",
       "SH4",
       "-endian",
@@ -10842,6 +10884,19 @@
       "off",
       "-O2"
     ],
+    "finalize_view_8c0db2cc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
     "request_resource_release": [
       "-proc",
       "SH4",
@@ -12797,7 +12852,86 @@
       "off",
       "-O2"
     ],
+    "configure_grid_view": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "update_grid_view_parameters": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_pair_grid_view": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_effect_d870_8c11953c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "update_pair_grid_view": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "finalize_pair_grid_view": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
+    "configure_pair_grid_view": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_fitted_pair_grid_view": [
       "-proc",
       "SH4",
       "-endian",
@@ -12819,6 +12953,39 @@
       "off",
       "-O2"
     ],
+    "approach_pair_grid_offset": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "remove_pair_grid_node": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "pair_grid_view_ready": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c119e28": [
       "-proc",
       "SH4",
@@ -12829,6 +12996,32 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "draw_rising_grid_view": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
+    "draw_grid_view_records": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
     ],
     "destroy_field_8c11a88c": [
       "-proc",
@@ -13590,6 +13783,17 @@
       "-O2"
     ],
     "spawn_object_0893a8_8c1326c4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_control_block_owner": [
       "-proc",
       "SH4",
       "-endian",
@@ -18959,6 +19163,19 @@
       "off",
       "-O2"
     ],
+    "finalize_view_8c1f1a5c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
     "destroy_object_8c1f1e94": [
       "-proc",
       "SH4",
@@ -19211,6 +19428,19 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "finalize_view_8c218070": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
     ],
     "clear_global_8c2199c0": [
       "-proc",
@@ -20333,6 +20563,19 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "finalize_view_8c230684": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
     ],
     "destroy_object_8c231888": [
       "-proc",
@@ -21942,6 +22185,19 @@
       "off",
       "-O2"
     ],
+    "finalize_view_8c24e044": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
     "select_effect_kind": [
       "-proc",
       "SH4",
@@ -23353,6 +23609,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4016512,
+  "source_only_rejected_retained_bytes": 4014384,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

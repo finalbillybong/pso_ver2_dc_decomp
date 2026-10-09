@@ -1,0 +1,2 @@
+struct Base {char unknown0[24];virtual void unused0();virtual void unused1();virtual void unused2();virtual void unused3();virtual void unused4();virtual void *query();};struct View:Base {char unknown28[16];char data[4];};typedef char check_base[sizeof(Base)==28?1:-1];typedef char check_data[(unsigned long)&((View *)0)->data==44?1:-1];extern "C" {void prepare_at(View *),apply_at(View *,void *),finish_at(View *,void *,void *);}
+extern "C" void finalize_view_8c0db2cc(View *o) {void *p=o->query();prepare_at(o);apply_at(o,p);finish_at(o,o->data,p);}

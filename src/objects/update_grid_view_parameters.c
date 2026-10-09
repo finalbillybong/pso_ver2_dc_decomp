@@ -1,0 +1,27 @@
+typedef struct View {void *name;char unknown4[26];unsigned short size;char unknown32[24];float target0,target1,target2,target3,current0,current1,current2,current3;unsigned int steps;char unknown92[12];float parameter0,parameter1,parameter2,parameter3,parameter4,parameter5;} View;
+typedef struct Parameters {char unknown0[32];float first,second,third,fourth,fifth,sixth;} Parameters;
+typedef struct Render {char unknown0[16];float width,height;char unknown24[8];float x,y,scale_x,scale_y;} Render;
+typedef char check_size[(unsigned long)&((View *)0)->size==30?1:-1];
+typedef char check_target0[(unsigned long)&((View *)0)->target0==56?1:-1];
+typedef char check_target1[(unsigned long)&((View *)0)->target1==60?1:-1];
+typedef char check_target2[(unsigned long)&((View *)0)->target2==64?1:-1];
+typedef char check_target3[(unsigned long)&((View *)0)->target3==68?1:-1];
+typedef char check_current0[(unsigned long)&((View *)0)->current0==72?1:-1];
+typedef char check_current1[(unsigned long)&((View *)0)->current1==76?1:-1];
+typedef char check_current2[(unsigned long)&((View *)0)->current2==80?1:-1];
+typedef char check_current3[(unsigned long)&((View *)0)->current3==84?1:-1];
+typedef char check_steps[(unsigned long)&((View *)0)->steps==88?1:-1];
+typedef char check_parameter0[(unsigned long)&((View *)0)->parameter0==104?1:-1];
+typedef char check_parameter1[(unsigned long)&((View *)0)->parameter1==108?1:-1];
+typedef char check_parameter2[(unsigned long)&((View *)0)->parameter2==112?1:-1];
+typedef char check_parameter3[(unsigned long)&((View *)0)->parameter3==116?1:-1];
+typedef char check_parameter4[(unsigned long)&((View *)0)->parameter4==120?1:-1];
+typedef char check_parameter5[(unsigned long)&((View *)0)->parameter5==124?1:-1];
+typedef char check_parameters[(unsigned long)&((Parameters *)0)->first==32&&sizeof(Parameters)==56&&sizeof(View)==128?1:-1];
+typedef char check_render_width[(unsigned long)&((Render *)0)->width==16?1:-1];
+typedef char check_render_height[(unsigned long)&((Render *)0)->height==20?1:-1];
+typedef char check_render_x[(unsigned long)&((Render *)0)->x==32?1:-1];
+typedef char check_render_y[(unsigned long)&((Render *)0)->y==36?1:-1];
+typedef char check_render_scale_x[(unsigned long)&((Render *)0)->scale_x==40?1:-1];
+typedef char check_render_scale_y[(unsigned long)&((Render *)0)->scale_y==44?1:-1];
+extern void finish_at(View *);void update_grid_view_parameters(View *o) {unsigned int steps=o->steps;float change;if(steps==0) {change=o->target2-o->current2;finish_at(o);}else {change=(o->target3-o->current3)/(float)steps;o->current0+=(o->target0-o->current0)/(float)steps;o->current1+=(o->target1-o->current1)/(float)o->steps;o->current2+=(o->target2-o->current2)/(float)o->steps;o->current3+=change;--o->steps;}o->parameter5-=change*0.5f;}

@@ -4639,6 +4639,32 @@
       "boundary_review": "Raw SH4 entry through adjacent entry including literals and natural alignment; final source exact twice; reconstruction-stage67."
     },
     {
+      "id": "create_control_owner_8c03d1b8",
+      "source": "src/objects/create_control_owner_8c03d1b8.c",
+      "address": "0x8c03d1b8",
+      "entry": "_create_control_owner_8c03d1b8",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_initialize_at": "0x8c1336b4"
+      },
+      "ranges": [
+        {
+          "offset": 184760,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_control_owner_8c03d1b8",
+          "address": "0x8c03d1b8",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "8889ffd9e634fd337f68af669eb70062ffc0b99b5ec7e79f75d2379a71f375dd",
+      "boundary_review": "Raw03d1b8..03d1e8 and03d250..03d280 reviewed including all literals,next entries and call ABI. Both constructors overwrite R5 with global parent before use, so self is their sole input. Function-table reference and complete range checked; no returned allocation or extra null behavior introduced."
+    },
+    {
       "id": "create_effect_a1448_8c03d218",
       "source": "src/render/create_effect_a1448_8c03d218.c",
       "address": "0x8c03d218",
@@ -4660,6 +4686,32 @@
       "reference_sha256": "9530428fee7f87e0e20dd5013f9161662faf1773f72871a777ef7fb689db1d90",
       "symbols": {},
       "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately."
+    },
+    {
+      "id": "create_control_owner_8c03d250",
+      "source": "src/objects/create_control_owner_8c03d250.c",
+      "address": "0x8c03d250",
+      "entry": "_create_control_owner_8c03d250",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_initialize_at": "0x8c1a75b4"
+      },
+      "ranges": [
+        {
+          "offset": 184912,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_control_owner_8c03d250",
+          "address": "0x8c03d250",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "71636e9bdb4b353dc0db5fd890027c256e8d9b93cdfefee40d4339b76d4edbbc",
+      "boundary_review": "Raw03d1b8..03d1e8 and03d250..03d280 reviewed including all literals,next entries and call ABI. Both constructors overwrite R5 with global parent before use, so self is their sole input. Function-table reference and complete range checked; no returned allocation or extra null behavior introduced."
     },
     {
       "id": "squared_distance_vectors",
@@ -20214,6 +20266,33 @@
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436e07d0. No empty neighboring function included."
     },
     {
+      "id": "finalize_view_8c0db2cc",
+      "source": "src/objects/finalize_view_8c0db2cc.cpp",
+      "language": "c++",
+      "address": "0x8c0db2cc",
+      "entry": "_finalize_view_8c0db2cc",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 832204,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_view_8c0db2cc",
+          "address": "0x8c0db2cc",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Complete raw64-byte range independently checked against the reviewed finalizer, including call literals and next-entry prologue. Entry references 0x8c26771c,0x8c269f0c support distinct function boundary. Saved raw disassembly records adjacent entry. No synthesized padding."
+    },
+    {
       "id": "request_resource_release",
       "source": "src/resources/request_resource_release.c",
       "address": "0x8c0dc7f4",
@@ -24921,6 +25000,81 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "configure_grid_view",
+      "source": "src/objects/configure_grid_view.c",
+      "address": "0x8c119290",
+      "entry": "_configure_grid_view",
+      "symbols": {
+        "_object_name": "0x8c310630"
+      },
+      "ranges": [
+        {
+          "offset": 1086096,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_grid_view",
+          "address": "0x8c119290",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "6cc5a63c2ee08acbd11a8521867aadd5bfcdfee54083ee771a6f142e4e389867",
+      "boundary_review": "Raw119290..119470 reviewed including uncataloged1192e8entry,full literals and natural alignment. Parameters/Render/View offsets checked. Unsigned step count conversion and zero-step alternate delta preserved; external context and name data retained."
+    },
+    {
+      "id": "update_grid_view_parameters",
+      "source": "src/objects/update_grid_view_parameters.c",
+      "address": "0x8c119364",
+      "entry": "_update_grid_view_parameters",
+      "symbols": {
+        "_finish_at": "0x8c0dc854"
+      },
+      "ranges": [
+        {
+          "offset": 1086308,
+          "size": 268
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_grid_view_parameters",
+          "address": "0x8c119364",
+          "size": 268
+        }
+      ],
+      "reference_sha256": "3740b482383394dae7364f8c5ba1d1cd34320038a04e6f2addfd38204381b76b",
+      "boundary_review": "Raw119290..119470 reviewed including uncataloged1192e8entry,full literals and natural alignment. Parameters/Render/View offsets checked. Unsigned step count conversion and zero-step alternate delta preserved; external context and name data retained."
+    },
+    {
+      "id": "initialize_pair_grid_view",
+      "source": "src/objects/initialize_pair_grid_view.c",
+      "address": "0x8c119470",
+      "entry": "_initialize_pair_grid_view",
+      "symbols": {
+        "_parameters": "0x8c310670",
+        "_object_name": "0x8c310648",
+        "_base_at": "0x8c1191e4",
+        "_allocate_at": "0x8c18de4c"
+      },
+      "ranges": [
+        {
+          "offset": 1086576,
+          "size": 204
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_pair_grid_view",
+          "address": "0x8c119470",
+          "size": 204
+        }
+      ],
+      "reference_sha256": "250552548a160c28dc8066817787a69b5eb9d19e237ff989411c8e9ea3457074",
+      "boundary_review": "Raw119470..1196d4 fully reviewed through each return, literal pool and adjacent entry. Configuration pointers remain reference-dependent. Pair fields,owner offsets,parameter origin32 and auxiliary count4 checked. No allocation/count/float clamping introduced."
+    },
+    {
       "id": "destroy_effect_d870_8c11953c",
       "source": "src/effects/destroy_effect_d870_8c11953c.c",
       "address": "0x8c11953c",
@@ -24944,6 +25098,113 @@
       "boundary_review": "Independent catalog or recorded code-pointer entry; identical complete instruction/branch/delay shape and literal layout, with catalog/referenced or reviewed adjacent entry prologue. Same null/signed-release guards and one-argument resource release. Known base destructor bodies prove object/zero argument pair; return value ignored. Resource pointer offset checked locally."
     },
     {
+      "id": "update_pair_grid_view",
+      "source": "src/objects/update_pair_grid_view.c",
+      "address": "0x8c119598",
+      "entry": "_update_pair_grid_view",
+      "symbols": {
+        "_call_8c119988": "0x8c119988",
+        "_call_8c1199cc": "0x8c1199cc",
+        "_call_8c119a9c": "0x8c119a9c",
+        "_call_8c119b70": "0x8c119b70",
+        "_call_8c0db30c": "0x8c0db30c",
+        "_call_8c0db430": "0x8c0db430",
+        "_finish_at": "0x8c0e1c08"
+      },
+      "ranges": [
+        {
+          "offset": 1086872,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_pair_grid_view",
+          "address": "0x8c119598",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "5d4807821bdc4f9e4da7ec7b84127cb80fa049656af991744546486f79e793e8",
+      "boundary_review": "Raw119470..1196d4 fully reviewed through each return, literal pool and adjacent entry. Configuration pointers remain reference-dependent. Pair fields,owner offsets,parameter origin32 and auxiliary count4 checked. No allocation/count/float clamping introduced."
+    },
+    {
+      "id": "finalize_pair_grid_view",
+      "source": "src/objects/finalize_pair_grid_view.cpp",
+      "language": "c++",
+      "address": "0x8c119600",
+      "entry": "_finalize_pair_grid_view",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 1086976,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_pair_grid_view",
+          "address": "0x8c119600",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Raw119600..119640 includes return and three call literals, followed by configuration entry. Native vptr24/slot28 and embedded offset44 checked."
+    },
+    {
+      "id": "configure_pair_grid_view",
+      "source": "src/objects/configure_pair_grid_view.c",
+      "address": "0x8c119640",
+      "entry": "_configure_pair_grid_view",
+      "symbols": {
+        "_parameters": "0x8c310670",
+        "_auxiliary": "0x8c31064c"
+      },
+      "ranges": [
+        {
+          "offset": 1087040,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_pair_grid_view",
+          "address": "0x8c119640",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "034ef10baa7212abddc9d3ecd935ea4546275f2f7e015acc1e9361d717a71451",
+      "boundary_review": "Raw119470..1196d4 fully reviewed through each return, literal pool and adjacent entry. Configuration pointers remain reference-dependent. Pair fields,owner offsets,parameter origin32 and auxiliary count4 checked. No allocation/count/float clamping introduced."
+    },
+    {
+      "id": "create_fitted_pair_grid_view",
+      "source": "src/objects/create_fitted_pair_grid_view.c",
+      "address": "0x8c11968c",
+      "entry": "_create_fitted_pair_grid_view",
+      "symbols": {
+        "_ceil_at": "0x8c37e2c0",
+        "_create_at": "0x8c1196d4"
+      },
+      "ranges": [
+        {
+          "offset": 1087116,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_fitted_pair_grid_view",
+          "address": "0x8c11968c",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "3b3a9b5fec6f91490faccfae740ff19596ab55aec93c314723e079740981e5b2",
+      "boundary_review": "Raw119470..1196d4 fully reviewed through each return, literal pool and adjacent entry. Configuration pointers remain reference-dependent. Pair fields,owner offsets,parameter origin32 and auxiliary count4 checked. No allocation/count/float clamping introduced."
+    },
+    {
       "id": "get_render_state_8c119758",
       "source": "src/render/get_render_state_8c119758.c",
       "address": "0x8c119758",
@@ -24965,6 +25226,76 @@
       ],
       "reference_sha256": "6a23a20db98591c4d6c58f32eef062ab1709740fd1deb20091dfbf8998677f3a",
       "boundary_review": "Independent catalog or recorded code-pointer entry; identical complete instruction/branch/delay shape and literal layout, with catalog/referenced or reviewed adjacent entry prologue. "
+    },
+    {
+      "id": "approach_pair_grid_offset",
+      "source": "src/objects/approach_pair_grid_offset.c",
+      "address": "0x8c119988",
+      "entry": "_approach_pair_grid_offset",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1087880,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "approach_pair_grid_offset",
+          "address": "0x8c119988",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c61cf0912481b1433e2d2ee04a49b462396af496c97c413674344fc6c0e4f5eb",
+      "boundary_review": "Raw119770..119988 and119988..1199cc,119c00..119cf8 reviewed through all delay slots, literals and following entries. Node fields8..20,active32,value36 and owner48..156 checked. Flags, NaN comparisons and unchecked ring access preserved."
+    },
+    {
+      "id": "remove_pair_grid_node",
+      "source": "src/objects/remove_pair_grid_node.c",
+      "address": "0x8c119c00",
+      "entry": "_remove_pair_grid_node",
+      "symbols": {
+        "_reset_at": "0x8c0e226c"
+      },
+      "ranges": [
+        {
+          "offset": 1088512,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "remove_pair_grid_node",
+          "address": "0x8c119c00",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "e26adef78b6ae67f88ad80bb6c97ee988b84beec112c331f5ec17c04fa32647e",
+      "boundary_review": "Raw119770..119988 and119988..1199cc,119c00..119cf8 reviewed through all delay slots, literals and following entries. Node fields8..20,active32,value36 and owner48..156 checked. Flags, NaN comparisons and unchecked ring access preserved."
+    },
+    {
+      "id": "pair_grid_view_ready",
+      "source": "src/objects/pair_grid_view_ready.c",
+      "address": "0x8c119cf8",
+      "entry": "_pair_grid_view_ready",
+      "symbols": {
+        "_ready_at": "0x8c0dc780"
+      },
+      "ranges": [
+        {
+          "offset": 1088760,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "pair_grid_view_ready",
+          "address": "0x8c119cf8",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "5ba6a5b92d68bef50a5962c5bdefbe0065fd1fd195f880cd5e36548348d8311e",
+      "boundary_review": "Raw119cf8..119f9c reviewed through each return and literals with adjacent entries. Provisional268-byte owner fields checked. Base vptr24 and method order give configure32 and visible52. No range/flag behavior changes."
     },
     {
       "id": "destroy_object_8c119e28",
@@ -24991,6 +25322,70 @@
       ],
       "reference_sha256": "86efb54d42e794f5d01beee9c6280d44aa1867e22ebeb0e832cd2ed62f73125a",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "draw_rising_grid_view",
+      "source": "src/objects/draw_rising_grid_view.cpp",
+      "address": "0x8c119f04",
+      "entry": "_draw_rising_grid_view",
+      "symbols": {
+        "_begin_at": "0x8c38ae68",
+        "_position_at": "0x8c382a40",
+        "_color_at": "0x8c37df90",
+        "_transform_at": "0x8c3827d8",
+        "_draw_extended_at": "0x8c3addea",
+        "_draw_at": "0x8c3aa716",
+        "_end_at": "0x8c38ad10"
+      },
+      "ranges": [
+        {
+          "offset": 1089284,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_rising_grid_view",
+          "address": "0x8c119f04",
+          "size": 152
+        }
+      ],
+      "reference_sha256": "30757521dfbdfe89f83e28bae933ee06627175539c563260117750c81b1ef580",
+      "language": "c++",
+      "boundary_review": "Raw119cf8..119f9c reviewed through each return and literals with adjacent entries. Provisional268-byte owner fields checked. Base vptr24 and method order give configure32 and visible52. No range/flag behavior changes."
+    },
+    {
+      "id": "draw_grid_view_records",
+      "source": "src/objects/draw_grid_view_records.cpp",
+      "language": "c++",
+      "address": "0x8c11a0cc",
+      "entry": "_draw_grid_view_records",
+      "symbols": {
+        "_matrix": "0x8c400500",
+        "_begin_at": "0x8c38ade4",
+        "_position_at": "0x8c382a40",
+        "_color_at": "0x8c37df90",
+        "_transform_at": "0x8c3be280",
+        "_end_at": "0x8c38ad10",
+        "_selected_style": "0x8c306018",
+        "_normal_style": "0x8c305ff8",
+        "_draw_at": "0x8c0c5480"
+      },
+      "ranges": [
+        {
+          "offset": 1089740,
+          "size": 292
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_grid_view_records",
+          "address": "0x8c11a0cc",
+          "size": 292
+        }
+      ],
+      "reference_sha256": "96b40d5f314044b0a121baad52f8496a00625c8f7c66308a642bf3fa24f3f8ab",
+      "boundary_review": "Raw11a0cc..11a1f0 reviewed through loop, both style branches, return and literal pool; next11a1f0 diagnostic entry. All record/owner fields and local aggregate sizes checked. Matrix/styles remain reference dependencies."
     },
     {
       "id": "destroy_field_8c11a88c",
@@ -26784,6 +27179,33 @@
       "reference_sha256": "74b5bf40938a7bde167780384cc927f8fa373dd388d9e41d268b57b456fb7ce6",
       "symbols": {},
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
+    },
+    {
+      "id": "initialize_control_block_owner",
+      "source": "src/objects/initialize_control_block_owner.c",
+      "address": "0x8c1336b4",
+      "entry": "_initialize_control_block_owner",
+      "symbols": {
+        "_base_at": "0x8c03c92c",
+        "_parent": "0x8c44be88",
+        "_object_name": "0x8c312a88",
+        "_initial_block": "0x8c418280"
+      },
+      "ranges": [
+        {
+          "offset": 1193652,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_control_block_owner",
+          "address": "0x8c1336b4",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "ffff9b9684258cc7ecf9f43983efa768d2dd629cc40392c21c61058c87105726",
+      "boundary_review": "Raw1336b4..133718 reviewed completely, including natural2-byte alignment and six bound literals. State128 cleared before68-byte copy60..128; source global remains reference-only. All offsets and sizes checked."
     },
     {
       "id": "destroy_object_8c133718",
@@ -38979,6 +39401,33 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "finalize_view_8c1f1a5c",
+      "source": "src/objects/finalize_view_8c1f1a5c.cpp",
+      "language": "c++",
+      "address": "0x8c1f1a5c",
+      "entry": "_finalize_view_8c1f1a5c",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 1972828,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_view_8c1f1a5c",
+          "address": "0x8c1f1a5c",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Complete raw64-byte range independently checked against the reviewed finalizer, including call literals and next-entry prologue. Entry references 0x8c278010 support distinct function boundary. Saved raw disassembly records adjacent entry. No synthesized padding."
+    },
+    {
       "id": "destroy_object_8c1f1e94",
       "source": "src/effects/destroy_object_8c1f1e94.c",
       "address": "0x8c1f1e94",
@@ -39542,6 +39991,33 @@
       ],
       "reference_sha256": "6f25481db6dbfe2f321ae43d15b91b29e19a5e87963bbe9a9b90dc163831fd6e",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "finalize_view_8c218070",
+      "source": "src/objects/finalize_view_8c218070.cpp",
+      "language": "c++",
+      "address": "0x8c218070",
+      "entry": "_finalize_view_8c218070",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 2130032,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_view_8c218070",
+          "address": "0x8c218070",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Complete raw64-byte range independently checked against the reviewed finalizer, including call literals and next-entry prologue. Entry references 0x8c278324 support distinct function boundary. Saved raw disassembly records adjacent entry. No synthesized padding."
     },
     {
       "id": "clear_global_8c2199c0",
@@ -42170,6 +42646,33 @@
       ],
       "reference_sha256": "91310155561ff57ea8dd4420f80a9d44b7286196789e0dd791bc794c0eaa5630",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "finalize_view_8c230684",
+      "source": "src/objects/finalize_view_8c230684.cpp",
+      "language": "c++",
+      "address": "0x8c230684",
+      "entry": "_finalize_view_8c230684",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 2229892,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_view_8c230684",
+          "address": "0x8c230684",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Complete raw64-byte range independently checked against the reviewed finalizer, including call literals and next-entry prologue. Entry references 0x8c278f48 support distinct function boundary. Saved raw disassembly records adjacent entry. No synthesized padding."
     },
     {
       "id": "destroy_object_8c231888",
@@ -46018,6 +46521,33 @@
       ],
       "reference_sha256": "af625e2c5d87a0a8234180c7c977b3758e77a01613821a8424ad62967162db45",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "finalize_view_8c24e044",
+      "source": "src/objects/finalize_view_8c24e044.cpp",
+      "language": "c++",
+      "address": "0x8c24e044",
+      "entry": "_finalize_view_8c24e044",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 2351172,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_view_8c24e044",
+          "address": "0x8c24e044",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Complete raw64-byte range independently checked against the reviewed finalizer, including call literals and next-entry prologue. Entry references 0x8c27e46c support distinct function boundary. Saved raw disassembly records adjacent entry. No synthesized padding."
     },
     {
       "id": "select_effect_kind",

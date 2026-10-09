@@ -63172,6 +63172,775 @@
       "status": "parked",
       "hypotheses_tested": 2,
       "reason": "Batch179:184 generated/184 expected,5 differing,first0x8c118eff. Vector field-base correction removes address-order differences; remaining step/last FMOV and multiply register assignment differs. Revisit exact float in-place scaling context."
+    },
+    {
+      "id": "approach_pair_grid_offset",
+      "source": "src/objects/approach_pair_grid_offset.c",
+      "address": "0x8c119988",
+      "entry": "_approach_pair_grid_offset",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1087880,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "approach_pair_grid_offset",
+          "address": "0x8c119988",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "c61cf0912481b1433e2d2ee04a49b462396af496c97c413674344fc6c0e4f5eb",
+      "boundary_review": "Raw119770..119988 and119988..1199cc,119c00..119cf8 reviewed through all delay slots, literals and following entries. Node fields8..20,active32,value36 and owner48..156 checked. Flags, NaN comparisons and unchecked ring access preserved.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "configure_grid_view",
+      "source": "src/objects/configure_grid_view.c",
+      "address": "0x8c119290",
+      "entry": "_configure_grid_view",
+      "symbols": {
+        "_object_name": "0x8c310630"
+      },
+      "ranges": [
+        {
+          "offset": 1086096,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_grid_view",
+          "address": "0x8c119290",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "6cc5a63c2ee08acbd11a8521867aadd5bfcdfee54083ee771a6f142e4e389867",
+      "boundary_review": "Raw119290..119470 reviewed including uncataloged1192e8entry,full literals and natural alignment. Parameters/Render/View offsets checked. Unsigned step count conversion and zero-step alternate delta preserved; external context and name data retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "configure_pair_grid_view",
+      "source": "src/objects/configure_pair_grid_view.c",
+      "address": "0x8c119640",
+      "entry": "_configure_pair_grid_view",
+      "symbols": {
+        "_parameters": "0x8c310670",
+        "_auxiliary": "0x8c31064c"
+      },
+      "ranges": [
+        {
+          "offset": 1087040,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "configure_pair_grid_view",
+          "address": "0x8c119640",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "034ef10baa7212abddc9d3ecd935ea4546275f2f7e015acc1e9361d717a71451",
+      "boundary_review": "Raw119470..1196d4 fully reviewed through each return, literal pool and adjacent entry. Configuration pointers remain reference-dependent. Pair fields,owner offsets,parameter origin32 and auxiliary count4 checked. No allocation/count/float clamping introduced.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_control_owner_8c03d1b8",
+      "source": "src/objects/create_control_owner_8c03d1b8.c",
+      "address": "0x8c03d1b8",
+      "entry": "_create_control_owner_8c03d1b8",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_initialize_at": "0x8c1336b4"
+      },
+      "ranges": [
+        {
+          "offset": 184760,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_control_owner_8c03d1b8",
+          "address": "0x8c03d1b8",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "8889ffd9e634fd337f68af669eb70062ffc0b99b5ec7e79f75d2379a71f375dd",
+      "boundary_review": "Raw03d1b8..03d1e8 and03d250..03d280 reviewed including all literals,next entries and call ABI. Both constructors overwrite R5 with global parent before use, so self is their sole input. Function-table reference and complete range checked; no returned allocation or extra null behavior introduced.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_control_owner_8c03d250",
+      "source": "src/objects/create_control_owner_8c03d250.c",
+      "address": "0x8c03d250",
+      "entry": "_create_control_owner_8c03d250",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_initialize_at": "0x8c1a75b4"
+      },
+      "ranges": [
+        {
+          "offset": 184912,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_control_owner_8c03d250",
+          "address": "0x8c03d250",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "71636e9bdb4b353dc0db5fd890027c256e8d9b93cdfefee40d4339b76d4edbbc",
+      "boundary_review": "Raw03d1b8..03d1e8 and03d250..03d280 reviewed including all literals,next entries and call ABI. Both constructors overwrite R5 with global parent before use, so self is their sole input. Function-table reference and complete range checked; no returned allocation or extra null behavior introduced.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_fitted_pair_grid_view",
+      "source": "src/objects/create_fitted_pair_grid_view.c",
+      "address": "0x8c11968c",
+      "entry": "_create_fitted_pair_grid_view",
+      "symbols": {
+        "_ceil_at": "0x8c37e2c0",
+        "_create_at": "0x8c1196d4"
+      },
+      "ranges": [
+        {
+          "offset": 1087116,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_fitted_pair_grid_view",
+          "address": "0x8c11968c",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "3b3a9b5fec6f91490faccfae740ff19596ab55aec93c314723e079740981e5b2",
+      "boundary_review": "Raw119470..1196d4 fully reviewed through each return, literal pool and adjacent entry. Configuration pointers remain reference-dependent. Pair fields,owner offsets,parameter origin32 and auxiliary count4 checked. No allocation/count/float clamping introduced.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "draw_grid_view_records",
+      "source": "src/objects/draw_grid_view_records.cpp",
+      "language": "c++",
+      "address": "0x8c11a0cc",
+      "entry": "_draw_grid_view_records",
+      "symbols": {
+        "_matrix": "0x8c400500",
+        "_begin_at": "0x8c38ade4",
+        "_position_at": "0x8c382a40",
+        "_color_at": "0x8c37df90",
+        "_transform_at": "0x8c3be280",
+        "_end_at": "0x8c38ad10",
+        "_selected_style": "0x8c306018",
+        "_normal_style": "0x8c305ff8",
+        "_draw_at": "0x8c0c5480"
+      },
+      "ranges": [
+        {
+          "offset": 1089740,
+          "size": 292
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_grid_view_records",
+          "address": "0x8c11a0cc",
+          "size": 292
+        }
+      ],
+      "reference_sha256": "96b40d5f314044b0a121baad52f8496a00625c8f7c66308a642bf3fa24f3f8ab",
+      "boundary_review": "Raw11a0cc..11a1f0 reviewed through loop, both style branches, return and literal pool; next11a1f0 diagnostic entry. All record/owner fields and local aggregate sizes checked. Matrix/styles remain reference dependencies.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "draw_rising_grid_view",
+      "source": "src/objects/draw_rising_grid_view.cpp",
+      "address": "0x8c119f04",
+      "entry": "_draw_rising_grid_view",
+      "symbols": {
+        "_begin_at": "0x8c38ae68",
+        "_position_at": "0x8c382a40",
+        "_color_at": "0x8c37df90",
+        "_transform_at": "0x8c3827d8",
+        "_draw_extended_at": "0x8c3addea",
+        "_draw_at": "0x8c3aa716",
+        "_end_at": "0x8c38ad10"
+      },
+      "ranges": [
+        {
+          "offset": 1089284,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_rising_grid_view",
+          "address": "0x8c119f04",
+          "size": 152
+        }
+      ],
+      "reference_sha256": "30757521dfbdfe89f83e28bae933ee06627175539c563260117750c81b1ef580",
+      "language": "c++",
+      "boundary_review": "Raw119cf8..119f9c reviewed through each return and literals with adjacent entries. Provisional268-byte owner fields checked. Base vptr24 and method order give configure32 and visible52. No range/flag behavior changes.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "finalize_pair_grid_view",
+      "source": "src/objects/finalize_pair_grid_view.cpp",
+      "language": "c++",
+      "address": "0x8c119600",
+      "entry": "_finalize_pair_grid_view",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 1086976,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_pair_grid_view",
+          "address": "0x8c119600",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Raw119600..119640 includes return and three call literals, followed by configuration entry. Native vptr24/slot28 and embedded offset44 checked.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "finalize_view_8c0db2cc",
+      "source": "src/objects/finalize_view_8c0db2cc.cpp",
+      "language": "c++",
+      "address": "0x8c0db2cc",
+      "entry": "_finalize_view_8c0db2cc",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 832204,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_view_8c0db2cc",
+          "address": "0x8c0db2cc",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Complete raw64-byte range independently checked against the reviewed finalizer, including call literals and next-entry prologue. Entry references 0x8c26771c,0x8c269f0c support distinct function boundary. Saved raw disassembly records adjacent entry. No synthesized padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "finalize_view_8c1f1a5c",
+      "source": "src/objects/finalize_view_8c1f1a5c.cpp",
+      "language": "c++",
+      "address": "0x8c1f1a5c",
+      "entry": "_finalize_view_8c1f1a5c",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 1972828,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_view_8c1f1a5c",
+          "address": "0x8c1f1a5c",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Complete raw64-byte range independently checked against the reviewed finalizer, including call literals and next-entry prologue. Entry references 0x8c278010 support distinct function boundary. Saved raw disassembly records adjacent entry. No synthesized padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "finalize_view_8c218070",
+      "source": "src/objects/finalize_view_8c218070.cpp",
+      "language": "c++",
+      "address": "0x8c218070",
+      "entry": "_finalize_view_8c218070",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 2130032,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_view_8c218070",
+          "address": "0x8c218070",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Complete raw64-byte range independently checked against the reviewed finalizer, including call literals and next-entry prologue. Entry references 0x8c278324 support distinct function boundary. Saved raw disassembly records adjacent entry. No synthesized padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "finalize_view_8c230684",
+      "source": "src/objects/finalize_view_8c230684.cpp",
+      "language": "c++",
+      "address": "0x8c230684",
+      "entry": "_finalize_view_8c230684",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 2229892,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_view_8c230684",
+          "address": "0x8c230684",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Complete raw64-byte range independently checked against the reviewed finalizer, including call literals and next-entry prologue. Entry references 0x8c278f48 support distinct function boundary. Saved raw disassembly records adjacent entry. No synthesized padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "finalize_view_8c24e044",
+      "source": "src/objects/finalize_view_8c24e044.cpp",
+      "language": "c++",
+      "address": "0x8c24e044",
+      "entry": "_finalize_view_8c24e044",
+      "symbols": {
+        "_prepare_at": "0x8c0db51c",
+        "_apply_at": "0x8c0db5d4",
+        "_finish_at": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 2351172,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "finalize_view_8c24e044",
+          "address": "0x8c24e044",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "259d585dfa20e13704ee7450b328c2250d8f08a7b6394ce63bfc9ee53782fe23",
+      "boundary_review": "Complete raw64-byte range independently checked against the reviewed finalizer, including call literals and next-entry prologue. Entry references 0x8c27e46c support distinct function boundary. Saved raw disassembly records adjacent entry. No synthesized padding.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_control_block_owner",
+      "source": "src/objects/initialize_control_block_owner.c",
+      "address": "0x8c1336b4",
+      "entry": "_initialize_control_block_owner",
+      "symbols": {
+        "_base_at": "0x8c03c92c",
+        "_parent": "0x8c44be88",
+        "_object_name": "0x8c312a88",
+        "_initial_block": "0x8c418280"
+      },
+      "ranges": [
+        {
+          "offset": 1193652,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_control_block_owner",
+          "address": "0x8c1336b4",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "ffff9b9684258cc7ecf9f43983efa768d2dd629cc40392c21c61058c87105726",
+      "boundary_review": "Raw1336b4..133718 reviewed completely, including natural2-byte alignment and six bound literals. State128 cleared before68-byte copy60..128; source global remains reference-only. All offsets and sizes checked.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_pair_grid_view",
+      "source": "src/objects/initialize_pair_grid_view.c",
+      "address": "0x8c119470",
+      "entry": "_initialize_pair_grid_view",
+      "symbols": {
+        "_parameters": "0x8c310670",
+        "_object_name": "0x8c310648",
+        "_base_at": "0x8c1191e4",
+        "_allocate_at": "0x8c18de4c"
+      },
+      "ranges": [
+        {
+          "offset": 1086576,
+          "size": 204
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_pair_grid_view",
+          "address": "0x8c119470",
+          "size": 204
+        }
+      ],
+      "reference_sha256": "250552548a160c28dc8066817787a69b5eb9d19e237ff989411c8e9ea3457074",
+      "boundary_review": "Raw119470..1196d4 fully reviewed through each return, literal pool and adjacent entry. Configuration pointers remain reference-dependent. Pair fields,owner offsets,parameter origin32 and auxiliary count4 checked. No allocation/count/float clamping introduced.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "pair_grid_view_ready",
+      "source": "src/objects/pair_grid_view_ready.c",
+      "address": "0x8c119cf8",
+      "entry": "_pair_grid_view_ready",
+      "symbols": {
+        "_ready_at": "0x8c0dc780"
+      },
+      "ranges": [
+        {
+          "offset": 1088760,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "pair_grid_view_ready",
+          "address": "0x8c119cf8",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "5ba6a5b92d68bef50a5962c5bdefbe0065fd1fd195f880cd5e36548348d8311e",
+      "boundary_review": "Raw119cf8..119f9c reviewed through each return and literals with adjacent entries. Provisional268-byte owner fields checked. Base vptr24 and method order give configure32 and visible52. No range/flag behavior changes.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "remove_pair_grid_node",
+      "source": "src/objects/remove_pair_grid_node.c",
+      "address": "0x8c119c00",
+      "entry": "_remove_pair_grid_node",
+      "symbols": {
+        "_reset_at": "0x8c0e226c"
+      },
+      "ranges": [
+        {
+          "offset": 1088512,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "remove_pair_grid_node",
+          "address": "0x8c119c00",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "e26adef78b6ae67f88ad80bb6c97ee988b84beec112c331f5ec17c04fa32647e",
+      "boundary_review": "Raw119770..119988 and119988..1199cc,119c00..119cf8 reviewed through all delay slots, literals and following entries. Node fields8..20,active32,value36 and owner48..156 checked. Flags, NaN comparisons and unchecked ring access preserved.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "update_grid_view_parameters",
+      "source": "src/objects/update_grid_view_parameters.c",
+      "address": "0x8c119364",
+      "entry": "_update_grid_view_parameters",
+      "symbols": {
+        "_finish_at": "0x8c0dc854"
+      },
+      "ranges": [
+        {
+          "offset": 1086308,
+          "size": 268
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_grid_view_parameters",
+          "address": "0x8c119364",
+          "size": 268
+        }
+      ],
+      "reference_sha256": "3740b482383394dae7364f8c5ba1d1cd34320038a04e6f2addfd38204381b76b",
+      "boundary_review": "Raw119290..119470 reviewed including uncataloged1192e8entry,full literals and natural alignment. Parameters/Render/View offsets checked. Unsigned step count conversion and zero-step alternate delta preserved; external context and name data retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "update_pair_grid_view",
+      "source": "src/objects/update_pair_grid_view.c",
+      "address": "0x8c119598",
+      "entry": "_update_pair_grid_view",
+      "symbols": {
+        "_call_8c119988": "0x8c119988",
+        "_call_8c1199cc": "0x8c1199cc",
+        "_call_8c119a9c": "0x8c119a9c",
+        "_call_8c119b70": "0x8c119b70",
+        "_call_8c0db30c": "0x8c0db30c",
+        "_call_8c0db430": "0x8c0db430",
+        "_finish_at": "0x8c0e1c08"
+      },
+      "ranges": [
+        {
+          "offset": 1086872,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_pair_grid_view",
+          "address": "0x8c119598",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "5d4807821bdc4f9e4da7ec7b84127cb80fa049656af991744546486f79e793e8",
+      "boundary_review": "Raw119470..1196d4 fully reviewed through each return, literal pool and adjacent entry. Configuration pointers remain reference-dependent. Pair fields,owner offsets,parameter origin32 and auxiliary count4 checked. No allocation/count/float clamping introduced.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_integer_text_owner",
+      "source": "src/provisional/initialize_integer_text_owner.c",
+      "address": "0x8c1a75b4",
+      "entry": "_initialize_integer_text_owner",
+      "symbols": {
+        "_base_at": "0x8c03c92c",
+        "_parent": "0x8c44be88",
+        "_object_name": "0x8c323e18",
+        "_allocate_at": "0x8c011ecc",
+        "_construct_at": "0x8c042dd4",
+        "_configure_at": "0x8c042e38",
+        "_clear_at": "0x8c12b880",
+        "_text_at": "0x8c01e2fc"
+      },
+      "ranges": [
+        {
+          "offset": 1668532,
+          "size": 232
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_integer_text_owner",
+          "address": "0x8c1a75b4",
+          "size": 232
+        }
+      ],
+      "reference_sha256": "dcecdf3c33458c110192f25963f2ab167a43c2eab7c8fe63e53a0261f21dc637",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch180:232 generated/232expected,12differing at1a7636..1a7641. Self-home load follows stack fifth argument rather than preceding it. Ordinary C++ nonvirtual member declaration generates identical output. Revisit only concrete exact self-evaluation/stack-argument context; no more equivalent declaration changes."
+    },
+    {
+      "id": "apply_grid_view_parameters",
+      "source": "src/provisional/apply_grid_view_parameters.c",
+      "address": "0x8c1192e8",
+      "entry": "_apply_grid_view_parameters",
+      "symbols": {
+        "_render_at": "0x8c0dc63c"
+      },
+      "ranges": [
+        {
+          "offset": 1086184,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_grid_view_parameters",
+          "address": "0x8c1192e8",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "8796e0a4c1dcadb2b62dfbf335269fa121d8c425dac37ba369d4086f9fd639a9",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch180: H1 generated132/124bytes with122differing; H2 captured coordinate locals generated132/123differing. Extra saved R13/R12 and retained result-pointer temporaries disagree with raw R0 result and only R14 saved. Revisit only verified exact float-field application/lifetime or return ABI evidence; no equivalent local-variable sweeps."
+    },
+    {
+      "id": "initialize_rising_grid_view",
+      "source": "src/provisional/initialize_rising_grid_view.cpp",
+      "address": "0x8c119d60",
+      "entry": "_initialize_rising_grid_view",
+      "symbols": {
+        "_base_at": "0x8c0ee870",
+        "_object_name": "0x8c3107e8"
+      },
+      "ranges": [
+        {
+          "offset": 1088864,
+          "size": 200
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_rising_grid_view",
+          "address": "0x8c119d60",
+          "size": 200
+        }
+      ],
+      "reference_sha256": "2da8b10d9df64c4dee941e20a2ff3627f8af135fb9d8658ece79925148f64c41",
+      "language": "c++",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch180: 200 generated/200 expected, 25 differing; first 0x8c119da8. Native constructor/virtual call matches; remaining25 bytes concern hoisted field-offset load and literal scheduling among float initializers. Revisit exact layout/accessor sibling."
+    },
+    {
+      "id": "update_rising_grid_view",
+      "source": "src/provisional/update_rising_grid_view.cpp",
+      "address": "0x8c119e6c",
+      "entry": "_update_rising_grid_view",
+      "symbols": {
+        "_ready_at": "0x8c03d080",
+        "_flag_at": "0x8c05426c"
+      },
+      "ranges": [
+        {
+          "offset": 1089132,
+          "size": 152
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_rising_grid_view",
+          "address": "0x8c119e6c",
+          "size": 152
+        }
+      ],
+      "reference_sha256": "d095924b4ab5be10d8e8f56199c20f6f027e9cffa917f087ef8f96e88e11bd4f",
+      "language": "c++",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch180: 152 generated/152 expected, 13 differing; first 0x8c119ea1. Speed/target address temporaries and float operand register scheduling differ. Explicit case-scope captures did not resolve. Revisit exact interpolation/accessor context."
+    },
+    {
+      "id": "create_pair_grid_view",
+      "source": "src/provisional/create_pair_grid_view.c",
+      "address": "0x8c1196d4",
+      "entry": "_create_pair_grid_view",
+      "symbols": {
+        "_parameters": "0x8c310670",
+        "_auxiliary": "0x8c31064c",
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_initialize_at": "0x8c119470"
+      },
+      "ranges": [
+        {
+          "offset": 1087188,
+          "size": 132
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_pair_grid_view",
+          "address": "0x8c1196d4",
+          "size": 132
+        }
+      ],
+      "reference_sha256": "28e6d6538577cad55c096331f6424adaa284aa07969c1555c4883291a50162d1",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch180: 132 generated/132 expected, 13 differing; first 0x8c119715. Allocation size/heap-load scheduling and literal order differ; flattening the already exact configuration helper produced identical output. Revisit exact allocation-expression or verified C++ new context."
+    },
+    {
+      "id": "insert_pair_grid_node",
+      "source": "src/provisional/insert_pair_grid_node.c",
+      "address": "0x8c119770",
+      "entry": "_insert_pair_grid_node",
+      "symbols": {
+        "_remove_at": "0x8c119c00",
+        "_text_at": "0x8c0e2278",
+        "_width_at": "0x8c0e2328"
+      },
+      "ranges": [
+        {
+          "offset": 1087344,
+          "size": 536
+        }
+      ],
+      "functions": [
+        {
+          "name": "insert_pair_grid_node",
+          "address": "0x8c119770",
+          "size": 536
+        }
+      ],
+      "reference_sha256": "73821f93955655b3ffc2cce2b1eba621e6d67e2ccbd84869b3be031a0ef48257",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch180: 536 generated/536 expected, 19 differing; first 0x8c119793. Unsigned byte offsets restore size; initial node-base/index registers and final bound/target float lifetimes remain different. Revisit exact accessor or final float lifetime context."
+    },
+    {
+      "id": "refresh_pair_grid_nodes",
+      "source": "src/provisional/refresh_pair_grid_nodes.c",
+      "address": "0x8c119c78",
+      "entry": "_refresh_pair_grid_nodes",
+      "symbols": {
+        "_update_at": "0x8c0e24e8"
+      },
+      "ranges": [
+        {
+          "offset": 1088632,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "refresh_pair_grid_nodes",
+          "address": "0x8c119c78",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "c9bc6847573ae5a10d8c613874aafd999e131fb28eed53ec6a98b574b2b1c3d6",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch180: 128 generated/128 expected, 4 differing; first 0x8c119c92. Unsigned byte offsets remove MUL.L; explicit register mask restores saved registers. Four bytes remain in loop initialization/mask scheduling. Revisit exact loop-local ordering context, no more spelling variants."
     }
   ]
 }
