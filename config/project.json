@@ -792,6 +792,50 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "select_actor_animation",
+      "source": "src/objects/select_actor_animation.c",
+      "address": "0x8c01d17c",
+      "entry": "_select_actor_animation",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 53628,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "select_actor_animation",
+          "address": "0x8c01d17c",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "19459859ddab627f036cf5c9949b9fc3d134658d61ddae62e8fee4787707b13c",
+      "boundary_review": "Raw01d17c..01d1e4 reviewed as two distinct entries with complete pools and following empty entry. No prior attempts, all used offsets checked; table contents remain reference-dependent. H1 emitted44 bytes with folded displacement loads; use demonstrated member-address pattern. H2 is48/16; final expression-lifetime hypothesis."
+    },
+    {
+      "id": "actor_animation_ready",
+      "source": "src/objects/actor_animation_ready.c",
+      "address": "0x8c01d1ac",
+      "entry": "_actor_animation_ready",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 53676,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "actor_animation_ready",
+          "address": "0x8c01d1ac",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "989e067cea7c68b89bc25f226e4b8da8963a6bda53020944e008437c4bb07371",
+      "boundary_review": "Raw01d17c..01d1e4 reviewed as two distinct entries with complete pools and following empty entry. No prior attempts, all used offsets checked; table contents remain reference-dependent."
+    },
+    {
       "id": "destroy_shared_object",
       "source": "src/objects/destroy_shared_object.c",
       "address": "0x8c01d2b0",
@@ -4015,6 +4059,31 @@
       "boundary_review": "Each raw full range and adjacent entry reviewed. Timeout callback may receive null actor; idle callback intentionally dereferences lookup without guard. Factories return original allocation rather than constructor result. No behavior fixes or padding."
     },
     {
+      "id": "initialize_manager_8c03bfdc",
+      "source": "src/objects/initialize_manager_8c03bfdc.c",
+      "address": "0x8c03bfdc",
+      "entry": "_initialize_manager_8c03bfdc",
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c2edf98"
+      },
+      "ranges": [
+        {
+          "offset": 180188,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_8c03bfdc",
+          "address": "0x8c03bfdc",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "714b370725a2a6be8e71c89af54d3a8046b94ff8db62993cfae8e92bf4a8e2b4",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
+    },
+    {
       "id": "destroy_object_8c03c1d0",
       "source": "src/effects/destroy_object_8c03c1d0.c",
       "address": "0x8c03c1d0",
@@ -4967,6 +5036,31 @@
       "boundary_review": "Raw entries0x8c03f414/444/480 bound48/60byte routines; return delay and both literals included; source exact twice; stage110."
     },
     {
+      "id": "initialize_manager_8c040254",
+      "source": "src/objects/initialize_manager_8c040254.c",
+      "address": "0x8c040254",
+      "entry": "_initialize_manager_8c040254",
+      "symbols": {
+        "_base_at": "0x8c040144",
+        "_object_name": "0x8c2efeb0"
+      },
+      "ranges": [
+        {
+          "offset": 197204,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_8c040254",
+          "address": "0x8c040254",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "df0b8511aa44b3c583c6f9d5aa0c71b1def492230ccf5c7dd848b20d46e4c3c6",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
+    },
+    {
       "id": "destroy_object_8c040284",
       "source": "src/effects/destroy_object_8c040284.c",
       "address": "0x8c040284",
@@ -5019,6 +5113,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "initialize_manager_8c040790",
+      "source": "src/objects/initialize_manager_8c040790.c",
+      "address": "0x8c040790",
+      "entry": "_initialize_manager_8c040790",
+      "symbols": {
+        "_base_at": "0x8c040144",
+        "_object_name": "0x8c2f1038"
+      },
+      "ranges": [
+        {
+          "offset": 198544,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_8c040790",
+          "address": "0x8c040790",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "7ccc3a966eb5a3b73c8556eb1be8ba79e03f1a8b53529d116dcc06481635ecca",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
+    },
+    {
       "id": "destroy_object_8c0407c0",
       "source": "src/effects/destroy_object_8c0407c0.c",
       "address": "0x8c0407c0",
@@ -5043,6 +5162,31 @@
       ],
       "reference_sha256": "488dc719131fff12094cbe8a0cd16a5cf06377f6ddc48b5af497314361736af4",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "initialize_manager_8c040a44",
+      "source": "src/objects/initialize_manager_8c040a44.c",
+      "address": "0x8c040a44",
+      "entry": "_initialize_manager_8c040a44",
+      "symbols": {
+        "_base_at": "0x8c040144",
+        "_object_name": "0x8c2f1050"
+      },
+      "ranges": [
+        {
+          "offset": 199236,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_8c040a44",
+          "address": "0x8c040a44",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "c0cfdc0b4c870adbed0e1d596a82c0f15f1fd702e681553bbd25c44a485d879a",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
     },
     {
       "id": "destroy_object_8c040a74",
@@ -5071,6 +5215,31 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "initialize_manager_8c040d10",
+      "source": "src/objects/initialize_manager_8c040d10.c",
+      "address": "0x8c040d10",
+      "entry": "_initialize_manager_8c040d10",
+      "symbols": {
+        "_base_at": "0x8c040144",
+        "_object_name": "0x8c2f1068"
+      },
+      "ranges": [
+        {
+          "offset": 199952,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_8c040d10",
+          "address": "0x8c040d10",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "097dd81544eb0787eea1714e83645d4fcda9c9d656c80a0cfbe24f525bcb2964",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
+    },
+    {
       "id": "destroy_object_8c040d40",
       "source": "src/effects/destroy_object_8c040d40.c",
       "address": "0x8c040d40",
@@ -5095,6 +5264,566 @@
       ],
       "reference_sha256": "c5f3c611bb8ec938af9d9109d06e9d0f1a0d3aa9bb2243c45962d657319d3156",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "initialize_file_task_queue",
+      "source": "src/io/initialize_file_task_queue.c",
+      "address": "0x8c040fe8",
+      "entry": "_initialize_file_task_queue",
+      "symbols": {
+        "_heap": "0x8c467108",
+        "_first": "0x8c4670e0",
+        "_last": "0x8c4670e4",
+        "_next_identifier": "0x8c4670f8",
+        "_count": "0x8c4670e8",
+        "_open_at": "0x8c34d35e",
+        "_allocate_at": "0x8c122700",
+        "_copy_at": "0x8c12b154",
+        "_size_at": "0x8c34d9d4",
+        "_sectors_at": "0x8c34d9b8",
+        "_close_at": "0x8c34d4e8",
+        "_bytes_at": "0x8c388984",
+        "_free_at": "0x8c122774",
+        "_reset_at": "0x8c041970",
+        "_busy": "0x8c4670ec",
+        "_active_handle": "0x8c4670f4",
+        "_scratch_buffer": "0x8c4670f0",
+        "_large_buffer": "0x8c46710c",
+        "_buffer_pool": "0x8c2f1084",
+        "_start_at": "0x8c03e2c0",
+        "_stop_at": "0x8c03e300",
+        "_cancel_at": "0x8c041690",
+        "_remove_at": "0x8c0417e0",
+        "_complete_at": "0x8c041830",
+        "_tick_at": "0x8c1a829c",
+        "_yield_at": "0x8c104c60",
+        "_process_at": "0x8c0410b4",
+        "_buffer_at": "0x8c011e9c",
+        "_heap_at": "0x8c12267c",
+        "_large_at": "0x8c03ed10",
+        "_init_heap_at": "0x8c122688",
+        "_destroy_heap_at": "0x8c1226d0",
+        "_release_at": "0x8c011ec0",
+        "_release_large_at": "0x8c03ed70",
+        "_read_at": "0x8c34d6ae",
+        "_status_at": "0x8c34da3c",
+        "_named_at": "0x8c03e32c",
+        "_copy_words_at": "0x8c388984",
+        "_copy_shorts_at": "0x8c388994",
+        "_copy_bytes_at": "0x8c3889a4",
+        "_decode_at": "0x8c3877a8",
+        "_manager_base_at": "0x8c040144",
+        "_manager_name": "0x8c2f10a0",
+        "__l_mods": "0x8c18e8a0",
+        "__l_divs": "0x8c18e768"
+      },
+      "ranges": [
+        {
+          "offset": 200680,
+          "size": 140
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_file_task_queue",
+          "address": "0x8c040fe8",
+          "size": 140
+        }
+      ],
+      "reference_sha256": "6ea4db5d750cac6db4c7c96f20b153774188fe5faac45d3655f08d1d637b0704",
+      "boundary_review": "Raw040fe8..041484 and041970..0419e8 reviewed entry by entry including jump table, literal islands, natural alignment and adjacent functions. Existing runtime dependencies remain reference-backed; no copied runtime objects or added error handling."
+    },
+    {
+      "id": "destroy_file_task_queue",
+      "source": "src/io/destroy_file_task_queue.c",
+      "address": "0x8c041074",
+      "entry": "_destroy_file_task_queue",
+      "symbols": {
+        "_heap": "0x8c467108",
+        "_first": "0x8c4670e0",
+        "_last": "0x8c4670e4",
+        "_next_identifier": "0x8c4670f8",
+        "_count": "0x8c4670e8",
+        "_open_at": "0x8c34d35e",
+        "_allocate_at": "0x8c122700",
+        "_copy_at": "0x8c12b154",
+        "_size_at": "0x8c34d9d4",
+        "_sectors_at": "0x8c34d9b8",
+        "_close_at": "0x8c34d4e8",
+        "_bytes_at": "0x8c388984",
+        "_free_at": "0x8c122774",
+        "_reset_at": "0x8c041970",
+        "_busy": "0x8c4670ec",
+        "_active_handle": "0x8c4670f4",
+        "_scratch_buffer": "0x8c4670f0",
+        "_large_buffer": "0x8c46710c",
+        "_buffer_pool": "0x8c2f1084",
+        "_start_at": "0x8c03e2c0",
+        "_stop_at": "0x8c03e300",
+        "_cancel_at": "0x8c041690",
+        "_remove_at": "0x8c0417e0",
+        "_complete_at": "0x8c041830",
+        "_tick_at": "0x8c1a829c",
+        "_yield_at": "0x8c104c60",
+        "_process_at": "0x8c0410b4",
+        "_buffer_at": "0x8c011e9c",
+        "_heap_at": "0x8c12267c",
+        "_large_at": "0x8c03ed10",
+        "_init_heap_at": "0x8c122688",
+        "_destroy_heap_at": "0x8c1226d0",
+        "_release_at": "0x8c011ec0",
+        "_release_large_at": "0x8c03ed70",
+        "_read_at": "0x8c34d6ae",
+        "_status_at": "0x8c34da3c",
+        "_named_at": "0x8c03e32c",
+        "_copy_words_at": "0x8c388984",
+        "_copy_shorts_at": "0x8c388994",
+        "_copy_bytes_at": "0x8c3889a4",
+        "_decode_at": "0x8c3877a8",
+        "_manager_base_at": "0x8c040144",
+        "_manager_name": "0x8c2f10a0",
+        "__l_mods": "0x8c18e8a0",
+        "__l_divs": "0x8c18e768"
+      },
+      "ranges": [
+        {
+          "offset": 200820,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_file_task_queue",
+          "address": "0x8c041074",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "5b22e2c1d2317b1d527c5935b47b104c2d92bd1e495421fc6c15e5ffd5ab93b8",
+      "boundary_review": "Raw040fe8..041484 and041970..0419e8 reviewed entry by entry including jump table, literal islands, natural alignment and adjacent functions. Existing runtime dependencies remain reference-backed; no copied runtime objects or added error handling."
+    },
+    {
+      "id": "process_file_task_queue",
+      "source": "src/io/process_file_task_queue.c",
+      "address": "0x8c0410b4",
+      "entry": "_process_file_task_queue",
+      "symbols": {
+        "_heap": "0x8c467108",
+        "_first": "0x8c4670e0",
+        "_last": "0x8c4670e4",
+        "_next_identifier": "0x8c4670f8",
+        "_count": "0x8c4670e8",
+        "_open_at": "0x8c34d35e",
+        "_allocate_at": "0x8c122700",
+        "_copy_at": "0x8c12b154",
+        "_size_at": "0x8c34d9d4",
+        "_sectors_at": "0x8c34d9b8",
+        "_close_at": "0x8c34d4e8",
+        "_bytes_at": "0x8c388984",
+        "_free_at": "0x8c122774",
+        "_reset_at": "0x8c041970",
+        "_busy": "0x8c4670ec",
+        "_active_handle": "0x8c4670f4",
+        "_scratch_buffer": "0x8c4670f0",
+        "_large_buffer": "0x8c46710c",
+        "_buffer_pool": "0x8c2f1084",
+        "_start_at": "0x8c03e2c0",
+        "_stop_at": "0x8c03e300",
+        "_cancel_at": "0x8c041690",
+        "_remove_at": "0x8c0417e0",
+        "_complete_at": "0x8c041830",
+        "_tick_at": "0x8c1a829c",
+        "_yield_at": "0x8c104c60",
+        "_process_at": "0x8c0410b4",
+        "_buffer_at": "0x8c011e9c",
+        "_heap_at": "0x8c12267c",
+        "_large_at": "0x8c03ed10",
+        "_init_heap_at": "0x8c122688",
+        "_destroy_heap_at": "0x8c1226d0",
+        "_release_at": "0x8c011ec0",
+        "_release_large_at": "0x8c03ed70",
+        "_read_at": "0x8c34d6ae",
+        "_status_at": "0x8c34da3c",
+        "_named_at": "0x8c03e32c",
+        "_copy_words_at": "0x8c388984",
+        "_copy_shorts_at": "0x8c388994",
+        "_copy_bytes_at": "0x8c3889a4",
+        "_decode_at": "0x8c3877a8",
+        "_manager_base_at": "0x8c040144",
+        "_manager_name": "0x8c2f10a0",
+        "__l_mods": "0x8c18e8a0",
+        "__l_divs": "0x8c18e768"
+      },
+      "ranges": [
+        {
+          "offset": 200884,
+          "size": 976
+        }
+      ],
+      "functions": [
+        {
+          "name": "process_file_task_queue",
+          "address": "0x8c0410b4",
+          "size": 976
+        }
+      ],
+      "reference_sha256": "07a22a0ef1bf8654c0c4813029ef462e9832c9bd5640d2887d639a1d1bba4a14",
+      "linker": "codewarrior",
+      "boundary_review": "Raw040fe8..041484 and041970..0419e8 reviewed entry by entry including jump table, literal islands, natural alignment and adjacent functions. Existing runtime dependencies remain reference-backed; no copied runtime objects or added error handling."
+    },
+    {
+      "id": "create_file_read_task",
+      "source": "src/io/create_file_read_task.c",
+      "address": "0x8c041484",
+      "entry": "_create_file_read_task",
+      "symbols": {
+        "_heap": "0x8c467108",
+        "_first": "0x8c4670e0",
+        "_last": "0x8c4670e4",
+        "_next_identifier": "0x8c4670f8",
+        "_count": "0x8c4670e8",
+        "_open_at": "0x8c34d35e",
+        "_allocate_at": "0x8c122700",
+        "_copy_at": "0x8c12b154",
+        "_size_at": "0x8c34d9d4",
+        "_sectors_at": "0x8c34d9b8",
+        "_close_at": "0x8c34d4e8"
+      },
+      "ranges": [
+        {
+          "offset": 201860,
+          "size": 252
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_file_read_task",
+          "address": "0x8c041484",
+          "size": 252
+        }
+      ],
+      "reference_sha256": "dbe06399e283cb592d7de83bda70abf0173340ac73ecdae9f1e9bb42025ee56a",
+      "boundary_review": "Raw041484..041580 reviewed through all calls,12-word pool and following sibling. All104-byte task fields checked; no added allocation failure or copy termination behavior."
+    },
+    {
+      "id": "create_file_read_callback",
+      "source": "src/io/create_file_read_callback.c",
+      "address": "0x8c041580",
+      "entry": "_create_file_read_callback",
+      "symbols": {
+        "_heap": "0x8c467108",
+        "_first": "0x8c4670e0",
+        "_last": "0x8c4670e4",
+        "_next_identifier": "0x8c4670f8",
+        "_count": "0x8c4670e8",
+        "_open_at": "0x8c34d35e",
+        "_allocate_at": "0x8c122700",
+        "_copy_at": "0x8c12b154",
+        "_size_at": "0x8c34d9d4",
+        "_sectors_at": "0x8c34d9b8",
+        "_close_at": "0x8c34d4e8",
+        "_bytes_at": "0x8c388984",
+        "_free_at": "0x8c122774",
+        "_reset_at": "0x8c041970",
+        "_busy": "0x8c4670ec"
+      },
+      "ranges": [
+        {
+          "offset": 202112,
+          "size": 272
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_file_read_callback",
+          "address": "0x8c041580",
+          "size": 272
+        }
+      ],
+      "reference_sha256": "1fc51da5af4120c2205284fdd68a1d2af14146f67724434fed83fff204d65f00",
+      "boundary_review": "Raw041580..041970 reviewed entry by entry; callbacks copy8 words (32 bytes), buffer task checks262144, queue removal unconditionally reads next before null guard as observed. Used fields and104-byte size checked; no added null fixes. Historical candidates skipped."
+    },
+    {
+      "id": "create_file_buffer_task",
+      "source": "src/io/create_file_buffer_task.c",
+      "address": "0x8c0416c0",
+      "entry": "_create_file_buffer_task",
+      "symbols": {
+        "_heap": "0x8c467108",
+        "_first": "0x8c4670e0",
+        "_last": "0x8c4670e4",
+        "_next_identifier": "0x8c4670f8",
+        "_count": "0x8c4670e8",
+        "_open_at": "0x8c34d35e",
+        "_allocate_at": "0x8c122700",
+        "_copy_at": "0x8c12b154",
+        "_size_at": "0x8c34d9d4",
+        "_sectors_at": "0x8c34d9b8",
+        "_close_at": "0x8c34d4e8",
+        "_bytes_at": "0x8c388984",
+        "_free_at": "0x8c122774",
+        "_reset_at": "0x8c041970",
+        "_busy": "0x8c4670ec"
+      },
+      "ranges": [
+        {
+          "offset": 202432,
+          "size": 288
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_file_buffer_task",
+          "address": "0x8c0416c0",
+          "size": 288
+        }
+      ],
+      "reference_sha256": "287090486664bc681cc685cf235faae64e972f2b5c538841d96ca142c64a882b",
+      "boundary_review": "Raw041580..041970 reviewed entry by entry; callbacks copy8 words (32 bytes), buffer task checks262144, queue removal unconditionally reads next before null guard as observed. Used fields and104-byte size checked; no added null fixes. Historical candidates skipped."
+    },
+    {
+      "id": "remove_first_file_task",
+      "source": "src/io/remove_first_file_task.c",
+      "address": "0x8c0417e0",
+      "entry": "_remove_first_file_task",
+      "symbols": {
+        "_heap": "0x8c467108",
+        "_first": "0x8c4670e0",
+        "_last": "0x8c4670e4",
+        "_next_identifier": "0x8c4670f8",
+        "_count": "0x8c4670e8",
+        "_open_at": "0x8c34d35e",
+        "_allocate_at": "0x8c122700",
+        "_copy_at": "0x8c12b154",
+        "_size_at": "0x8c34d9d4",
+        "_sectors_at": "0x8c34d9b8",
+        "_close_at": "0x8c34d4e8",
+        "_bytes_at": "0x8c388984",
+        "_free_at": "0x8c122774",
+        "_reset_at": "0x8c041970",
+        "_busy": "0x8c4670ec"
+      },
+      "ranges": [
+        {
+          "offset": 202720,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "remove_first_file_task",
+          "address": "0x8c0417e0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "0e5b16607312e45ef8e233c8bb4bd6c6885a803725c03a7b19eb6f26502cc287",
+      "boundary_review": "Raw041580..041970 reviewed entry by entry; callbacks copy8 words (32 bytes), buffer task checks262144, queue removal unconditionally reads next before null guard as observed. Used fields and104-byte size checked; no added null fixes. Historical candidates skipped."
+    },
+    {
+      "id": "complete_first_file_task",
+      "source": "src/io/complete_first_file_task.c",
+      "address": "0x8c041830",
+      "entry": "_complete_first_file_task",
+      "symbols": {
+        "_heap": "0x8c467108",
+        "_first": "0x8c4670e0",
+        "_last": "0x8c4670e4",
+        "_next_identifier": "0x8c4670f8",
+        "_count": "0x8c4670e8",
+        "_open_at": "0x8c34d35e",
+        "_allocate_at": "0x8c122700",
+        "_copy_at": "0x8c12b154",
+        "_size_at": "0x8c34d9d4",
+        "_sectors_at": "0x8c34d9b8",
+        "_close_at": "0x8c34d4e8",
+        "_bytes_at": "0x8c388984",
+        "_free_at": "0x8c122774",
+        "_reset_at": "0x8c041970",
+        "_busy": "0x8c4670ec"
+      },
+      "ranges": [
+        {
+          "offset": 202800,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "complete_first_file_task",
+          "address": "0x8c041830",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "25ec75d49c1b237c8377a23dde7631c603d1042ce0c2423571f09a52e257ebee",
+      "boundary_review": "Raw041580..041970 reviewed entry by entry; callbacks copy8 words (32 bytes), buffer task checks262144, queue removal unconditionally reads next before null guard as observed. Used fields and104-byte size checked; no added null fixes. Historical candidates skipped."
+    },
+    {
+      "id": "create_named_file_task",
+      "source": "src/io/create_named_file_task.c",
+      "address": "0x8c0418ac",
+      "entry": "_create_named_file_task",
+      "symbols": {
+        "_heap": "0x8c467108",
+        "_first": "0x8c4670e0",
+        "_last": "0x8c4670e4",
+        "_next_identifier": "0x8c4670f8",
+        "_count": "0x8c4670e8",
+        "_open_at": "0x8c34d35e",
+        "_allocate_at": "0x8c122700",
+        "_copy_at": "0x8c12b154",
+        "_size_at": "0x8c34d9d4",
+        "_sectors_at": "0x8c34d9b8",
+        "_close_at": "0x8c34d4e8",
+        "_bytes_at": "0x8c388984",
+        "_free_at": "0x8c122774",
+        "_reset_at": "0x8c041970",
+        "_busy": "0x8c4670ec"
+      },
+      "ranges": [
+        {
+          "offset": 202924,
+          "size": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_named_file_task",
+          "address": "0x8c0418ac",
+          "size": 144
+        }
+      ],
+      "reference_sha256": "eb1ddc0c49575f3500c347d32fa4c15bf18138667e92a696a78798a21b9da635",
+      "boundary_review": "Raw041580..041970 reviewed entry by entry; callbacks copy8 words (32 bytes), buffer task checks262144, queue removal unconditionally reads next before null guard as observed. Used fields and104-byte size checked; no added null fixes. Historical candidates skipped."
+    },
+    {
+      "id": "cancel_file_task",
+      "source": "src/io/cancel_file_task.c",
+      "address": "0x8c04193c",
+      "entry": "_cancel_file_task",
+      "symbols": {
+        "_heap": "0x8c467108",
+        "_first": "0x8c4670e0",
+        "_last": "0x8c4670e4",
+        "_next_identifier": "0x8c4670f8",
+        "_count": "0x8c4670e8",
+        "_open_at": "0x8c34d35e",
+        "_allocate_at": "0x8c122700",
+        "_copy_at": "0x8c12b154",
+        "_size_at": "0x8c34d9d4",
+        "_sectors_at": "0x8c34d9b8",
+        "_close_at": "0x8c34d4e8",
+        "_bytes_at": "0x8c388984",
+        "_free_at": "0x8c122774",
+        "_reset_at": "0x8c041970",
+        "_busy": "0x8c4670ec"
+      },
+      "ranges": [
+        {
+          "offset": 203068,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "cancel_file_task",
+          "address": "0x8c04193c",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "24ea9c9292f8cf29cdc3b2ed873a8a0be9144ea82346c8ac15c53f75b4d36972",
+      "boundary_review": "Raw041580..041970 reviewed entry by entry; callbacks copy8 words (32 bytes), buffer task checks262144, queue removal unconditionally reads next before null guard as observed. Used fields and104-byte size checked; no added null fixes. Historical candidates skipped."
+    },
+    {
+      "id": "drain_file_task_queue",
+      "source": "src/io/drain_file_task_queue.c",
+      "address": "0x8c041970",
+      "entry": "_drain_file_task_queue",
+      "symbols": {
+        "_heap": "0x8c467108",
+        "_first": "0x8c4670e0",
+        "_last": "0x8c4670e4",
+        "_next_identifier": "0x8c4670f8",
+        "_count": "0x8c4670e8",
+        "_open_at": "0x8c34d35e",
+        "_allocate_at": "0x8c122700",
+        "_copy_at": "0x8c12b154",
+        "_size_at": "0x8c34d9d4",
+        "_sectors_at": "0x8c34d9b8",
+        "_close_at": "0x8c34d4e8",
+        "_bytes_at": "0x8c388984",
+        "_free_at": "0x8c122774",
+        "_reset_at": "0x8c041970",
+        "_busy": "0x8c4670ec",
+        "_active_handle": "0x8c4670f4",
+        "_scratch_buffer": "0x8c4670f0",
+        "_large_buffer": "0x8c46710c",
+        "_buffer_pool": "0x8c2f1084",
+        "_start_at": "0x8c03e2c0",
+        "_stop_at": "0x8c03e300",
+        "_cancel_at": "0x8c041690",
+        "_remove_at": "0x8c0417e0",
+        "_complete_at": "0x8c041830",
+        "_tick_at": "0x8c1a829c",
+        "_yield_at": "0x8c104c60",
+        "_process_at": "0x8c0410b4",
+        "_buffer_at": "0x8c011e9c",
+        "_heap_at": "0x8c12267c",
+        "_large_at": "0x8c03ed10",
+        "_init_heap_at": "0x8c122688",
+        "_destroy_heap_at": "0x8c1226d0",
+        "_release_at": "0x8c011ec0",
+        "_release_large_at": "0x8c03ed70",
+        "_read_at": "0x8c34d6ae",
+        "_status_at": "0x8c34da3c",
+        "_named_at": "0x8c03e32c",
+        "_copy_words_at": "0x8c388984",
+        "_copy_shorts_at": "0x8c388994",
+        "_copy_bytes_at": "0x8c3889a4",
+        "_decode_at": "0x8c3877a8",
+        "_manager_base_at": "0x8c040144",
+        "_manager_name": "0x8c2f10a0",
+        "__l_mods": "0x8c18e8a0",
+        "__l_divs": "0x8c18e768"
+      },
+      "ranges": [
+        {
+          "offset": 203120,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "drain_file_task_queue",
+          "address": "0x8c041970",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "cd81c9c134a12822f8614e062592a1a955d02efc2092316e6fe278862ca75153",
+      "boundary_review": "Raw040fe8..041484 and041970..0419e8 reviewed entry by entry including jump table, literal islands, natural alignment and adjacent functions. Existing runtime dependencies remain reference-backed; no copied runtime objects or added error handling."
+    },
+    {
+      "id": "initialize_file_task_manager",
+      "source": "src/io/initialize_file_task_manager.c",
+      "address": "0x8c0419b8",
+      "entry": "_initialize_file_task_manager",
+      "symbols": {
+        "_base_at": "0x8c040144",
+        "_object_name": "0x8c2f10a0"
+      },
+      "ranges": [
+        {
+          "offset": 203192,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_file_task_manager",
+          "address": "0x8c0419b8",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "eaabf94d5b375d45802c201c2dfda43faa573194e3b6d3dec298280cb0db0d9e",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
     },
     {
       "id": "destroy_object_8c0419e8",
@@ -7285,6 +8014,31 @@
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefix08d600e508d4224f. No empty neighboring function included."
     },
     {
+      "id": "copy_actor_records",
+      "source": "src/objects/copy_actor_records.c",
+      "address": "0x8c052098",
+      "entry": "_copy_actor_records",
+      "symbols": {
+        "_allocate_at": "0x8c18de4c",
+        "_finish_at": "0x8c053c70"
+      },
+      "ranges": [
+        {
+          "offset": 270488,
+          "size": 140
+        }
+      ],
+      "functions": [
+        {
+          "name": "copy_actor_records",
+          "address": "0x8c052098",
+          "size": 140
+        }
+      ],
+      "reference_sha256": "647d0a4ac44ea47613af187da2e822b5756d31d049b42ffd9b671dbc01a266c8",
+      "boundary_review": "Raw052098..052124 reviewed through complete16-byte literal pool, natural alignment and following release entry. No prior attempt; owner offsets and44-byte record size checked; allocation failure behavior preserved."
+    },
+    {
       "id": "set_field_8c052174",
       "source": "src/objects/set_field_8c052174.c",
       "address": "0x8c052174",
@@ -7329,6 +8083,36 @@
       "reference_sha256": "c5cee72b62db94995c77b935669b1a8f92a4c0905388c192da757d7b3488863e",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "transform_actor_records",
+      "source": "src/objects/transform_actor_records.c",
+      "address": "0x8c053c70",
+      "entry": "_transform_actor_records",
+      "symbols": {
+        "_matrix": "0x8c400500",
+        "_enabled_at": "0x8c03347c",
+        "_load_at": "0x8c38ade4",
+        "_rotate_at": "0x8c37df90",
+        "_transform_at": "0x8c3be38c",
+        "_add_at": "0x8c3bdf60",
+        "_pop_at": "0x8c38accc"
+      },
+      "ranges": [
+        {
+          "offset": 277616,
+          "size": 196
+        }
+      ],
+      "functions": [
+        {
+          "name": "transform_actor_records",
+          "address": "0x8c053c70",
+          "size": 196
+        }
+      ],
+      "reference_sha256": "5dde67c17466f1a8e8b9fae87b08b514668b4e9dd823e863fe57bfb5f25a79d3",
+      "boundary_review": "Raw053c70..053d34 reviewed including null/enable guards, signed loop,11-word pool and following entry. All field/aggregate offsets checked. Referenced matrix and SDK implementations remain original. H1 recomputed offset after calls and emitted200 bytes."
     },
     {
       "id": "lookup_object_by_id",
@@ -23156,6 +23940,31 @@
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
+      "id": "initialize_manager_8c106568",
+      "source": "src/objects/initialize_manager_8c106568.c",
+      "address": "0x8c106568",
+      "entry": "_initialize_manager_8c106568",
+      "symbols": {
+        "_base_at": "0x8c1066e4",
+        "_object_name": "0x8c30b688"
+      },
+      "ranges": [
+        {
+          "offset": 1009000,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_8c106568",
+          "address": "0x8c106568",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "020584cfa2b630410222feceb248ccaabcae65545669590aa04b3aaf4b88f082",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
+    },
+    {
       "id": "destroy_object_8c106598",
       "source": "src/effects/destroy_object_8c106598.c",
       "address": "0x8c106598",
@@ -26795,6 +27604,31 @@
       ],
       "reference_sha256": "8076f16b297c01b5886eed6f15f107e314209db0ceaa606fbe7abc9f4d558c43",
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62fd62f436e224f. No empty neighboring function included."
+    },
+    {
+      "id": "initialize_manager_8c1216c0",
+      "source": "src/objects/initialize_manager_8c1216c0.c",
+      "address": "0x8c1216c0",
+      "entry": "_initialize_manager_8c1216c0",
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c311cf8"
+      },
+      "ranges": [
+        {
+          "offset": 1119936,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_8c1216c0",
+          "address": "0x8c1216c0",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "ae8163123f6915716a81ca67ffeef58ce33fc53451bbf07f033d7f6fb3aafc5a",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
     },
     {
       "id": "destroy_object_8c1216f0",
@@ -37725,6 +38559,31 @@
       "boundary_review": "All22 instruction bytes identical to exact template, including condition and call delay. Same callee03dc40 and flag1. Both literals, natural zero alignment, entry reference and following entry confirmed. Context pointer is intentionally not cleared."
     },
     {
+      "id": "initialize_manager_8c1b087c",
+      "source": "src/objects/initialize_manager_8c1b087c.c",
+      "address": "0x8c1b087c",
+      "entry": "_initialize_manager_8c1b087c",
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c326110"
+      },
+      "ranges": [
+        {
+          "offset": 1706108,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_8c1b087c",
+          "address": "0x8c1b087c",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "233f0403ad1201a654d483dd4f08cb44e976c377a73b834c5aa7a5871a041b55",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
+    },
+    {
       "id": "destroy_object_8c1b08ac",
       "source": "src/effects/destroy_object_8c1b08ac.c",
       "address": "0x8c1b08ac",
@@ -40604,6 +41463,31 @@
       ],
       "reference_sha256": "b8d8d3b3be5461f1484a69af8a0baa22c0fc63daa47a602f32df7463a1a4201f",
       "boundary_review": "Every raw instruction and PC-relative literal reviewed; negative output indices in packed decoder retained exactly. Initializer fields inferred by strict whitelist; independent next entry bounds complete range."
+    },
+    {
+      "id": "initialize_manager_8c208384",
+      "source": "src/objects/initialize_manager_8c208384.c",
+      "address": "0x8c208384",
+      "entry": "_initialize_manager_8c208384",
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c335d88"
+      },
+      "ranges": [
+        {
+          "offset": 2065284,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_8c208384",
+          "address": "0x8c208384",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "e2aedc57df167770d5bb2810448ca1e55fec207124bed19feda284133e384f91",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
     },
     {
       "id": "destroy_object_8c2083b4",
@@ -44964,6 +45848,31 @@
       ],
       "reference_sha256": "994167a2a8c4584aec183887d49e0327b8ba99c08c6ea43870214c5148726020",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "initialize_manager_8c23bf5c",
+      "source": "src/objects/initialize_manager_8c23bf5c.c",
+      "address": "0x8c23bf5c",
+      "entry": "_initialize_manager_8c23bf5c",
+      "symbols": {
+        "_base_at": "0x8c1abe00",
+        "_object_name": "0x8c33a534"
+      },
+      "ranges": [
+        {
+          "offset": 2277212,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_8c23bf5c",
+          "address": "0x8c23bf5c",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "287a60f980d82ade423f25e4eab00a620352e72e79dbdebab92bc8bad3cb2bd4",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
     },
     {
       "id": "destroy_color_rise_8c23c030",
@@ -50501,6 +51410,31 @@
       "reference_sha256": "dbd170bd04480cc9fc50f99f388c04b3e362374fa018a61283da52fc1dabec6c",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "initialize_manager_8c25e5a8",
+      "source": "src/objects/initialize_manager_8c25e5a8.c",
+      "address": "0x8c25e5a8",
+      "entry": "_initialize_manager_8c25e5a8",
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c3405f0"
+      },
+      "ranges": [
+        {
+          "offset": 2418088,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_manager_8c25e5a8",
+          "address": "0x8c25e5a8",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "71202ddf21df5a241f87861f18fe96549d0d4ce0064aa8331811712797935ac7",
+      "boundary_review": "Each saved raw48-byte range includes next entry; masked skeleton checked against419b8. Callee0330e4 and1066e4 consume parentR5;040144 consumesR5/R6;1abe00 consumesR5. Struct size/vptr/size offsets asserted. Explicit arguments preserve observed forwarding even where the one-argument spelling emitted identical bytes."
     },
     {
       "id": "destroy_object_8c25e5d8",

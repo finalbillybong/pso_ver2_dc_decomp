@@ -1,0 +1,51 @@
+typedef struct Descriptor { short kind; char unknown2[6]; float speed; unsigned int flags; } Descriptor;
+typedef struct Animation { unsigned int unknown0, duration; unsigned short unknown8, flags; } Animation;
+typedef char check_descriptor[sizeof(Descriptor) == 16 && (unsigned long)&((Descriptor *)0)->speed == 8 && (unsigned long)&((Descriptor *)0)->flags == 12 ? 1 : -1];
+typedef char check_animation[(unsigned long)&((Animation *)0)->duration == 4 && (unsigned long)&((Animation *)0)->flags == 10 ? 1 : -1];
+typedef struct View {
+    char unknown0[232];
+    unsigned int control;
+    unsigned int flags;
+    short state;
+    short previous_state;
+    char unknown244[4];
+    float elapsed;
+    float duration;
+    float speed;
+    char unknown260[12];
+    Descriptor * descriptors;
+    void * auxiliary;
+    char unknown280[20];
+    short kind;
+    char unknown302[2];
+    Animation * animation;
+} View;
+typedef char check_control[(unsigned long)&((View *)0)->control == 232 ? 1 : -1];
+typedef char check_flags[(unsigned long)&((View *)0)->flags == 236 ? 1 : -1];
+typedef char check_state[(unsigned long)&((View *)0)->state == 240 ? 1 : -1];
+typedef char check_previous_state[(unsigned long)&((View *)0)->previous_state == 242 ? 1 : -1];
+typedef char check_elapsed[(unsigned long)&((View *)0)->elapsed == 248 ? 1 : -1];
+typedef char check_duration[(unsigned long)&((View *)0)->duration == 252 ? 1 : -1];
+typedef char check_speed[(unsigned long)&((View *)0)->speed == 256 ? 1 : -1];
+typedef char check_descriptors[(unsigned long)&((View *)0)->descriptors == 272 ? 1 : -1];
+typedef char check_auxiliary[(unsigned long)&((View *)0)->auxiliary == 276 ? 1 : -1];
+typedef char check_kind[(unsigned long)&((View *)0)->kind == 300 ? 1 : -1];
+typedef char check_animation[(unsigned long)&((View *)0)->animation == 304 ? 1 : -1];
+extern void select_at(View *, int);
+void bind_actor_animation(View *o, Descriptor *descriptors, void *auxiliary, short state) {
+    Descriptor *descriptor;
+    o->descriptors = descriptors;
+    o->auxiliary = auxiliary;
+    o->state = state;
+    o->previous_state = o->state;
+    select_at(o, o->state);
+    descriptor = (Descriptor *)((char *)o->descriptors + ((unsigned int)(int)o->state << 4));
+    o->speed = descriptor->speed;
+    o->kind = descriptor->kind;
+    o->duration = (float)o->animation->duration;
+    o->elapsed = 0.0f;
+    o->control &= ~4;
+    o->flags = descriptor->flags;
+    if (o->flags & 0x20000000)
+        o->animation->flags |= 128;
+}
