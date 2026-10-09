@@ -244,3 +244,15 @@ One acceptance pass completed44 admission reproductions, four fresh exact builds
 One acceptance pass completed40 admission reproductions, four fresh exact builds, both proofs, integrated images,121 tests and source-only artifact guards. There were8,368 module comparisons, **2.01 per new byte**, with research/public command totals124.634/127.076 seconds. Primary exports were reused; one new focused dossier covers seven representative entries.
 
 **Efficiency is mixed:** yield improved to103.90 bytes per hypothesis versus94.04 in184 and50.95 in the baseline; overhead worsened to2.01 from1.73 in184, remaining below the baseline's6.48. Token/cost records remain unavailable. Continue family-first selection and ABI checks before integration; prioritize larger related routines to increase bytes per full verification pass. No token or monetary saving is inferred.
+
+## Batch 186: screened families, record loaders and dialog construction
+
+30 exact functions in30 modules replace3,668 bytes; separately reconstructed data remains zero. There were54 hypotheses /56 compiler attempts /two link errors /seven duplicate outputs; compilation totaled1.717 seconds. Five duplicates are corrected declarations; two are unsuccessful variants. Ten investigations are parked with persistent counts and precise blockers. No failed work receives matching credit.
+
+A small scratch-screen correction permits independently reviewed entries whose catalog size spans several genuine functions. It recovered ten first-try exact functions/916 bytes from19 template hits. Existing trial, grouping, integration and reporting tools were reused; later scans considered newly exact templates. No public tooling or compiler settings changed.
+
+Late dispatcher inspection corrected four cancellation callbacks from a parent parameter to no arguments. The first acceptance pass and its costs are preserved. Two acceptance passes completed68 admission reproductions, eight fresh exact builds, both proofs in each pass, integrated images,242 test executions and source-only artifact guards. There were16,976 module comparisons, **4.63 per new byte**, with cumulative research/public command totals251.653/256.528 seconds. Primary exports were reused; eight new representative entries were exported once.
+
+**Completed-batch efficiency regressed versus185:** yield fell from103.90 to67.93 bytes per hypothesis; overhead rose from2.01 to4.63 comparisons per byte. Both remain better than the original sample's50.95 yield/6.48 overhead. Token/cost records remain unavailable; no token or monetary savings are inferred. The small screening correction helped, but the completed batch did not improve over its predecessor.
+
+For the next collection, follow the newly exact dialog constructor, record-loading and geometry families and screen proved templates first. Inspect indirect callback call sites before admission to prevent another late signature correction. Avoid the parked menu scheduling and float-lifetime variations. Collect at least5 KiB before the next full integration where practical, keeping persistent two-or-three-hypothesis parking limits.

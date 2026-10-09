@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **2168 exact functions in 2092 modules**, replacing
-**168,600 bytes** of the 4,162,912-byte decoded executable (**4.0500% image coverage**).
-It retains **3,994,312 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **2198 exact functions in 2122 modules**, replacing
+**172,268 bytes** of the 4,162,912-byte decoded executable (**4.1382% image coverage**).
+It retains **3,990,644 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -28,9 +28,9 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: 185: proven reconstruction families
+## Latest integration batch: 186: proven reconstruction families
 
-20 new functions / 4,156 bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.
+30 new functions / 3,668 bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.
 
 ## Autonomous iteration
 
