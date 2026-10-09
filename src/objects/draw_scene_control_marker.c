@@ -1,0 +1,2 @@
+typedef struct Vertex {float x,y,z;unsigned int color;} Vertex;typedef char check_vertex[sizeof(Vertex)==16&&(unsigned long)&((Vertex *)0)->color==12?1:-1];extern void draw_at(Vertex *,int,int);
+void draw_scene_control_marker(void *o,float x,float y,float z,float radius,unsigned int color) {Vertex v[4];v[0].x=x+radius;v[0].y=y;v[0].z=z;v[0].color=color;v[1].x=x;v[1].y=y-radius;v[1].z=z;v[1].color=color;v[2].x=x;v[2].y=y+radius;v[2].z=z;v[2].color=color;v[3].x=x-radius;v[3].y=y;v[3].z=z;v[3].color=color;draw_at(v,4,0);}

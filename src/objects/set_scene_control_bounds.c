@@ -1,0 +1,2 @@
+typedef struct Bounds {float xlow,xhigh,ylow,yhigh;} Bounds;typedef struct View {char unknown0[1484];int mode;Bounds bounds;} View;typedef char check_mode[(unsigned long)&((View *)0)->mode==1484?1:-1];typedef char check_bounds[(unsigned long)&((View *)0)->bounds==1488&&sizeof(Bounds)==16?1:-1];extern Bounds bound_table[];
+void set_scene_control_bounds(View *o,int mode) {o->mode=mode;o->bounds=*(Bounds *)((char *)bound_table+((unsigned int)o->mode<<4));}

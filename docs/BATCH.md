@@ -1,42 +1,42 @@
-# Reconstruction batch: 178: proven reconstruction families
+# Reconstruction batch: 179: proven reconstruction families
 
-24 new matching functions / 4,180 bytes. All 1955 prior functions preserved.
+20 new matching functions / 1,616 bytes. All 1979 prior functions preserved.
 
-1979 exact functions in 1905 modules; 144,784 compiled function-range bytes; 0 reconstructed data bytes; 4,018,128 retained reference bytes. Whole-image coverage 3.4780% is not code completion.
+1999 exact functions in 1925 modules; 146,400 compiled function-range bytes; 0 reconstructed data bytes; 4,016,512 retained reference bytes. Whole-image coverage 3.5168% is not code completion.
 
 | Module | Address | Complete bytes |
 | --- | --- | ---: |
-| initialize_base_blend | 0x8c114970 | 44 |
-| base_blend_period_and_resets | 0x8c1149c8 | 72 |
-| decrease_base_blend | 0x8c114a10 | 36 |
-| base_blend_increase_and_apply | 0x8c114a34 | 88 |
-| restore_base_blend | 0x8c114a8c | 60 |
-| base_blend_above_minimum | 0x8c114ac8 | 16 |
-| initialize_paired_array_owner | 0x8c114ad8 | 128 |
-| destroy_paired_array_owner | 0x8c114b58 | 84 |
-| paired_array_callbacks | 0x8c114bac | 48 |
-| initialize_scene_transition | 0x8c114bdc | 620 |
-| dispatch_scene_transition | 0x8c114e48 | 44 |
-| update_scene_transition | 0x8c114e74 | 420 |
-| update_alternate_scene_transition | 0x8c115018 | 424 |
-| finish_scene_transition | 0x8c1151c0 | 216 |
-| transition_scene_actors | 0x8c115298 | 508 |
-| transition_alternate_scene_actors | 0x8c115494 | 544 |
-| clear_alternate_scene_context | 0x8c1156b4 | 152 |
-| transition_scene_screen | 0x8c11574c | 416 |
-| update_scene_screen | 0x8c1158ec | 248 |
-| scene_screen_callback | 0x8c1159e4 | 12 |
+| create_scene_control_owner | 0x8c115bc4 | 48 |
+| destroy_scene_control_owner | 0x8c115f80 | 288 |
+| scene_control_pressed_direction | 0x8c118028 | 68 |
+| scene_control_vertical_hold | 0x8c1180e4 | 72 |
+| scene_control_horizontal_hold | 0x8c1181a4 | 72 |
+| scene_control_sample_x | 0x8c118300 | 44 |
+| scene_control_sample_y | 0x8c11832c | 32 |
+| draw_scene_control_marker | 0x8c11834c | 108 |
+| set_scene_control_bounds | 0x8c1184f8 | 48 |
+| release_scene_control_resource | 0x8c11875c | 36 |
+| load_scene_control_resource | 0x8c1187e4 | 308 |
+| discard_colored_trail_pair | 0x8c118a40 | 76 |
+| set_colored_trail_colors | 0x8c118b14 | 20 |
+| draw_colored_trail | 0x8c118c30 | 48 |
+| discard_textured_trail_pair | 0x8c118cb0 | 76 |
+| destroy_vector_grid | 0x8c118f5c | 56 |
+| draw_grid_selected_rows | 0x8c119048 | 36 |
+| draw_grid_offset_rows | 0x8c11906c | 76 |
+| initialize_grid_view | 0x8c1191e4 | 52 |
+| initialize_alternate_grid_view | 0x8c119218 | 52 |
 
-This batch adds 24 complete exact functions / 4,180 compiled function-range bytes in 20 modules. All 1,955 prior functions and their source/header hashes are preserved. Totals: 1,979 functions / 1,905 modules / 144,784 compiled function-range bytes / zero reconstructed data bytes / 4,018,128 retained reference bytes. Whole-image coverage is 3.4780%; it is not code completion. The code-only denominator remains unknown.
+This batch adds 20 complete exact functions / 1,616 compiled function-range bytes in 20 modules, preserving all 1,979 prior functions and source/header hashes. Totals: 1,999 functions / 1,925 modules / 146,400 compiled function-range bytes / zero separately reconstructed static-data bytes / 4,016,512 retained reference bytes. Whole-image coverage is 3.5168%; this is not code-completion percentage. The code-only denominator remains unknown.
 
-Following the newly exact embedded-blend family exposed larger scene-transition routines. The initializer, normal/alternate updates, actor transition loops, screen transition and cleanup sequences matched on their first compile. These are ordinary C/C++ with provisional names; observed independent conditionals, signed-byte queries, timeout order, repeated settings stores, nullable allocation paths and virtual calls are preserved. One alternate transition invokes its virtual activation after a null allocation when its outer context exists; no speculative guard was added. Referenced settings, configuration data and globals remain reference-dependent and receive no static-data credit.
+Exact additions cover the scene-control owner factory/destructor, input predicates and interpolation, marker drawing, aggregate bounds setup, resource loading/release, paired trail compaction/drawing, vector-grid cleanup, grid wrappers and view initialization. Ordinary source preserves constructor/destructor order, native layouts, allocation-failure recursion in the resource loader, signed input thresholds, and observed floating arithmetic. All references to runtime helpers, configuration tables and globals remain reference-dependent; no static-data credit is claimed.
 
-The collection used 29 distinct hypotheses / 29 compiler attempts, zero errors, zero duplicate binary outputs and 0.891 seconds of recorded compilation. The paired-array constructor matched after explicit unsigned byte shifts and the previously proven scoped object capture recovered its loop reload lifetime. The query matched after declaration order recovered its index/count registers. Both stayed within three hypotheses. Natural alignment was recovered by grouping real adjacent functions, including a four-byte idle callback referenced by its actual vtable entry. No invented functions or explicit padding were added. Two separately exact trials are included inside their final groups and are not counted twice.
+The collection used 63 distinct hypotheses / 65 compiler attempts, two linker-binding failures and five duplicate binary outputs. Both failed bindings belong to one waveform hypothesis; the established __l_divs symbol resolved the compiler dependency without changing settings. Compilation totaled 1.980 seconds. Proven unsigned index/count shifts, a logical-negation inline predicate, endpoint capture and allocation-state scope supplied exact improvements. Existing trial, binary grouping, admission, staged audit and publication tools were reused. No public tooling change or compiler-setting change was needed.
 
-No new unresolved target is introduced by this integration: all unsuccessful trials in this collection were resolved by later complete matches. Historical parked targets and their counts are unchanged. The primary 0x8c045f04 and 0x8c05fbf8 targets remain incomplete; the new functions do not replace those acceptance criteria. All source views preserve declared dependencies and checked offsets or measured temporary-object extents.
+Seventeen targets are parked with exact generated/expected sizes, differing-byte counts, first mismatch, cumulative hypothesis counts and explicit revisit conditions in the unresolved queue. Their ordinary source snapshots are provisional and receive no credit. These include reset_scene_transition 460/464 with 318 differing bytes after two identical outputs, and initialize_scene_control_owner 888/908 with 827 differing after two identical outputs. Remaining input boolean materialization, vector-store lifetimes, waveform/parser registers and final call scheduling are unresolved; do not repeat equivalent spelling variants. No target exceeded three hypotheses in this collection. Historical parked targets, including 0x8c045f04 and 0x8c05fbf8, remain unchanged and incomplete.
 
-All 20 modules reproduced twice before admission, adding 40 comparisons. One integration pass ran two fresh exact builds in each checkout, exact integrated-image comparisons, both five-function proofs, all 58 research and 63 public tests, and source-only rejection with artifact preservation. New focused exports were checked once, and unchanged primary evidence was reused. Verification used 7,620 module comparisons, **1.82 per new byte**. Concurrent research/public command times were 115.398/117.735 seconds.
+All 20 admitted modules reproduced twice before integration. One full verification pass ran two fresh exact builds in each checkout, exact integrated-image comparisons, both five-function proofs, 58 research and 63 public tests, and source-only rejection with artifact preservation. New focused exports were checked once; unchanged primary exports were reused. Verification performed 7,700 module comparisons, **4.76 per new byte**. Concurrent research/public command times were 116.606/118.972 seconds.
 
-Yield increased to 144.14 bytes per hypothesis, versus 50.95 in the sampled baseline, 61.17 in batch 176 and 50.51 in batch 177. Verification overhead is below the baseline's 6.48 comparisons per byte but above batch 177's 1.46; not every measure improved. This collection exceeds 4 KiB with 24 functions, and uses substantially fewer experiments than the preceding generated batch. Token/cost measurements and comparable baseline timings remain unavailable; no financial or token saving is claimed. Existing trial, family-screening, admission, staged-audit and publication helpers were reused without another tooling change. Screens that found no additional candidates receive no progress credit.
+**Candidate efficiency did not improve.** Yield was 25.65 bytes per hypothesis versus 50.95 in the sampled baseline and 144.14 in batch 178. Verification overhead also worsened from batch 178's 1.82 comparisons per byte, although it remains below the baseline's 6.48. This 20-function collection reaches the initial function-count target but falls below the preferred several-KB size. Token/cost records and comparable baseline timings remain unavailable; no overall cost saving is asserted. Expanding input-helper variants before one exact representative added avoidable low-yield work. The next collection therefore screens newly exact patterns first and tests one representative of an unfamiliar pattern before family expansion, following successful factory bindings into their constructors. Independent next-batch candidates are excluded from these totals.
 
-Continue the related transition/dependency family in scratch, keeping complete exact comparisons immediate and full verification at meaningful integration checkpoints. Reproduce acceptance with tools/reconstruct.py verify after BUILDING.md setup; validate unchanged focused evidence with tools/dossier.py --check. The next reset-context investigation is outside this batch and contributes no credited bytes here.
+Reproduce acceptance with tools/reconstruct.py verify after BUILDING.md setup. Check saved focused analysis using tools/dossier.py --check. Continue immediate complete-range trials in scratch; defer the next integration until a larger measured collection where practical. Do not reopen parked targets without specific new evidence.

@@ -24316,6 +24316,291 @@
       "boundary_review": "Raw11574c..1159f0 fully reviewed including three distinct entries,delay slots and pools. Temporary base construction follows initial calls; two12-actor loops preserve virtual slot36. Branch-specific calls are not hoisted; referenced configuration data retained."
     },
     {
+      "id": "create_scene_control_owner",
+      "source": "src/objects/create_scene_control_owner.c",
+      "address": "0x8c115bc4",
+      "entry": "_create_scene_control_owner",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_initialize_at": "0x8c115bf4"
+      },
+      "ranges": [
+        {
+          "offset": 1072068,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_scene_control_owner",
+          "address": "0x8c115bc4",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "cc73a3522ea1b2040c00b9c85c744e2c02d4e39f1aced893ec696ea87cbf476b",
+      "boundary_review": "Raw115bc4..1160a0 fully reviewed, including all calls, literals, returns and adjacent entries. Runtime18e044 uses R4 base,R5 constructor,R6 destructor,R7 size,stack count and callback(self,1);18e000 destroys reverse with(self,-1). No runtime body or static data included. All object offsets/extents checked; direct embedded constructors use self only."
+    },
+    {
+      "id": "destroy_scene_control_owner",
+      "source": "src/objects/destroy_scene_control_owner.c",
+      "address": "0x8c115f80",
+      "entry": "_destroy_scene_control_owner",
+      "symbols": {
+        "_destroy32_at": "0x8c042dfc",
+        "_destroy40_at": "0x8c043198",
+        "_destroy_first_at": "0x8c043000",
+        "_destroy_array_at": "0x8c18e000",
+        "_base_at": "0x8c03ca10",
+        "_free_at": "0x8c122774",
+        "_heap": "0x8c4d97e0"
+      },
+      "ranges": [
+        {
+          "offset": 1073024,
+          "size": 288
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_scene_control_owner",
+          "address": "0x8c115f80",
+          "size": 288
+        }
+      ],
+      "reference_sha256": "5dcabcd9b46f4261ca2db2ec04928c8d1432c9b629cc84cf33c7cbddc47d8896",
+      "boundary_review": "Raw115bc4..1160a0 fully reviewed, including all calls, literals, returns and adjacent entries. Runtime18e044 uses R4 base,R5 constructor,R6 destructor,R7 size,stack count and callback(self,1);18e000 destroys reverse with(self,-1). No runtime body or static data included. All object offsets/extents checked; direct embedded constructors use self only."
+    },
+    {
+      "id": "scene_control_pressed_direction",
+      "source": "src/objects/scene_control_pressed_direction.c",
+      "address": "0x8c118028",
+      "entry": "_scene_control_pressed_direction",
+      "symbols": {
+        "_inputs": "0x8c41cba0",
+        "_masks": "0x8c3103bc"
+      },
+      "ranges": [
+        {
+          "offset": 1081384,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_pressed_direction",
+          "address": "0x8c118028",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8f6059054ee15371911df8037f6ea30b76c746a0ec475607136dd5171aa3cdff",
+      "boundary_review": "Raw117ce0..11834c reviewed through each return and complete literal pool. No clamping or zero-divisor fix;256 samples cleared and128 synthesized where observed. Input gate checks absence of512; held counters signed. Static inputs/masks retained."
+    },
+    {
+      "id": "scene_control_vertical_hold",
+      "source": "src/objects/scene_control_vertical_hold.c",
+      "address": "0x8c1180e4",
+      "entry": "_scene_control_vertical_hold",
+      "symbols": {
+        "_inputs": "0x8c41cba0",
+        "_masks": "0x8c3103bc"
+      },
+      "ranges": [
+        {
+          "offset": 1081572,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_vertical_hold",
+          "address": "0x8c1180e4",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "a3c15de17d65c9e4a9cde8426cc72f2b9ad9eb9f8e74751378b8aa2854d223b9",
+      "boundary_review": "Raw117ce0..11834c reviewed through each return and complete literal pool. No clamping or zero-divisor fix;256 samples cleared and128 synthesized where observed. Input gate checks absence of512; held counters signed. Static inputs/masks retained."
+    },
+    {
+      "id": "scene_control_horizontal_hold",
+      "source": "src/objects/scene_control_horizontal_hold.c",
+      "address": "0x8c1181a4",
+      "entry": "_scene_control_horizontal_hold",
+      "symbols": {
+        "_inputs": "0x8c41cba0",
+        "_masks": "0x8c3103bc"
+      },
+      "ranges": [
+        {
+          "offset": 1081764,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_horizontal_hold",
+          "address": "0x8c1181a4",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "63fc559ea70e1527d57553e8d043d6a811fcccf5c864dda0d90dce7395753e9b",
+      "boundary_review": "Raw117ce0..11834c reviewed through each return and complete literal pool. No clamping or zero-divisor fix;256 samples cleared and128 synthesized where observed. Input gate checks absence of512; held counters signed. Static inputs/masks retained."
+    },
+    {
+      "id": "scene_control_sample_x",
+      "source": "src/objects/scene_control_sample_x.c",
+      "address": "0x8c118300",
+      "entry": "_scene_control_sample_x",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1082112,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_sample_x",
+          "address": "0x8c118300",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "f0761860630fc9e62c51d20e475beeb532b0c230a72879911e715f794c698c5b",
+      "boundary_review": "Raw117ce0..11834c reviewed through each return and complete literal pool. No clamping or zero-divisor fix;256 samples cleared and128 synthesized where observed. Input gate checks absence of512; held counters signed. Static inputs/masks retained."
+    },
+    {
+      "id": "scene_control_sample_y",
+      "source": "src/objects/scene_control_sample_y.c",
+      "address": "0x8c11832c",
+      "entry": "_scene_control_sample_y",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1082156,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_sample_y",
+          "address": "0x8c11832c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "a5dd1918fbdacee0020f01ba96f5bc8ecd8640cbc77b4a53c42db950aa4f651f",
+      "boundary_review": "Raw117ce0..11834c reviewed through each return and complete literal pool. No clamping or zero-divisor fix;256 samples cleared and128 synthesized where observed. Input gate checks absence of512; held counters signed. Static inputs/masks retained."
+    },
+    {
+      "id": "draw_scene_control_marker",
+      "source": "src/objects/draw_scene_control_marker.c",
+      "address": "0x8c11834c",
+      "entry": "_draw_scene_control_marker",
+      "symbols": {
+        "_draw_at": "0x8c38d81c"
+      },
+      "ranges": [
+        {
+          "offset": 1082188,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_scene_control_marker",
+          "address": "0x8c11834c",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "cbeb4d4bd05cff5e056aececa0fa20589c0f65b733de5f1957c416e0bdfaf649",
+      "boundary_review": "Raw11834c..1183b8 and1184f8..118918 reviewed through full literals and natural padding. Allocation-failure recursion and unchecked parser cursor are preserved; no static data copied. All record extents used in arithmetic checked."
+    },
+    {
+      "id": "set_scene_control_bounds",
+      "source": "src/objects/set_scene_control_bounds.c",
+      "address": "0x8c1184f8",
+      "entry": "_set_scene_control_bounds",
+      "symbols": {
+        "_bound_table": "0x8c3103e8"
+      },
+      "ranges": [
+        {
+          "offset": 1082616,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_scene_control_bounds",
+          "address": "0x8c1184f8",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "f08f17f45f366e65b8ff45623d89cd62b117e1aa21a78e847deab0cf4e596455",
+      "boundary_review": "Raw11834c..1183b8 and1184f8..118918 reviewed through full literals and natural padding. Allocation-failure recursion and unchecked parser cursor are preserved; no static data copied. All record extents used in arithmetic checked."
+    },
+    {
+      "id": "release_scene_control_resource",
+      "source": "src/objects/release_scene_control_resource.c",
+      "address": "0x8c11875c",
+      "entry": "_release_scene_control_resource",
+      "symbols": {
+        "_finish_at": "0x8c37d534",
+        "_release_at": "0x8c011ec0"
+      },
+      "ranges": [
+        {
+          "offset": 1083228,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_scene_control_resource",
+          "address": "0x8c11875c",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "740372a2f1c814e65d04e854cc1aa0ab525746248f8e278e9aa4316c94410978",
+      "boundary_review": "Raw11834c..1183b8 and1184f8..118918 reviewed through full literals and natural padding. Allocation-failure recursion and unchecked parser cursor are preserved; no static data copied. All record extents used in arithmetic checked."
+    },
+    {
+      "id": "load_scene_control_resource",
+      "source": "src/objects/load_scene_control_resource.c",
+      "address": "0x8c1187e4",
+      "entry": "_load_scene_control_resource",
+      "symbols": {
+        "_prepare_at": "0x8c041970",
+        "_release_at": "0x8c011ec0",
+        "_release_named_at": "0x8c03ed70",
+        "_length_at": "0x8c1a86d0",
+        "_allocate_at": "0x8c011e9c",
+        "_named_at": "0x8c03ed10",
+        "_read_at": "0x8c1a8310",
+        "_diagnostic_at": "0x8c03ef80",
+        "_text": "0x8c310538",
+        "__l_divs": "0x8c18e768",
+        "_copy_name_at": "0x8c12b154",
+        "_probe_at": "0x8c03ee50",
+        "_replace_at": "0x8c03ee90",
+        "_decode_at": "0x8c3877a8"
+      },
+      "ranges": [
+        {
+          "offset": 1083364,
+          "size": 308
+        }
+      ],
+      "functions": [
+        {
+          "name": "load_scene_control_resource",
+          "address": "0x8c1187e4",
+          "size": 308
+        }
+      ],
+      "reference_sha256": "18e3cb74a62811b91957e518397a43c851f2b3ef67ddca4b26329e731397df09",
+      "boundary_review": "Raw11834c..1183b8 and1184f8..118918 reviewed through full literals and natural padding. Allocation-failure recursion and unchecked parser cursor are preserved; no static data copied. All record extents used in arithmetic checked."
+    },
+    {
       "id": "destroy_object_8c118918",
       "source": "src/effects/destroy_object_8c118918.c",
       "address": "0x8c118918",
@@ -24367,6 +24652,75 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "discard_colored_trail_pair",
+      "source": "src/objects/discard_colored_trail_pair.c",
+      "address": "0x8c118a40",
+      "entry": "_discard_colored_trail_pair",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1083968,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "discard_colored_trail_pair",
+          "address": "0x8c118a40",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "748eb97c22eff8478f06d2eee6eddc6eecddbc7511911b53a6bcedd0f91591b3",
+      "boundary_review": "Raw118918..118f94 reviewed including distinct entry boundaries,literals,natural padding. Base size36 and8 paired color initialization retained; no assumed trail-capacity correction. Texture offsets420/424 and grid/vector extents checked. External rounding routines remain retained."
+    },
+    {
+      "id": "set_colored_trail_colors",
+      "source": "src/objects/set_colored_trail_colors.c",
+      "address": "0x8c118b14",
+      "entry": "_set_colored_trail_colors",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1084180,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_colored_trail_colors",
+          "address": "0x8c118b14",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "f6341a39f69590d7e1c6275573ed0b4dfbd4da422ca89661f453c99c15d250cd",
+      "boundary_review": "Raw118918..118f94 reviewed including distinct entry boundaries,literals,natural padding. Base size36 and8 paired color initialization retained; no assumed trail-capacity correction. Texture offsets420/424 and grid/vector extents checked. External rounding routines remain retained."
+    },
+    {
+      "id": "draw_colored_trail",
+      "source": "src/objects/draw_colored_trail.c",
+      "address": "0x8c118c30",
+      "entry": "_draw_colored_trail",
+      "symbols": {
+        "_prepare_at": "0x8c0c5310",
+        "_draw_at": "0x8c38efbc"
+      },
+      "ranges": [
+        {
+          "offset": 1084464,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_colored_trail",
+          "address": "0x8c118c30",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "7c4a1d709cdc8973e5483a05de790bb84db8c0836b03b3790f560ceaf45e39b7",
+      "boundary_review": "Raw118918..118f94 reviewed including distinct entry boundaries,literals,natural padding. Base size36 and8 paired color initialization retained; no assumed trail-capacity correction. Texture offsets420/424 and grid/vector extents checked. External rounding routines remain retained."
+    },
+    {
       "id": "destroy_color_rise_8c118c60",
       "source": "src/effects/destroy_color_rise_8c118c60.c",
       "address": "0x8c118c60",
@@ -24390,6 +24744,155 @@
       "reference_sha256": "4658e746666ae6ae2330bba0233f53be18901f6506a5930ae82dd44da403e966",
       "symbols": {},
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "discard_textured_trail_pair",
+      "source": "src/objects/discard_textured_trail_pair.c",
+      "address": "0x8c118cb0",
+      "entry": "_discard_textured_trail_pair",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1084592,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "discard_textured_trail_pair",
+          "address": "0x8c118cb0",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "c704ed1f739277280e0e53fde1d3c28dbf78fc2390954d6a49dd0ecb5c81c4b6",
+      "boundary_review": "Raw118918..118f94 reviewed including distinct entry boundaries,literals,natural padding. Base size36 and8 paired color initialization retained; no assumed trail-capacity correction. Texture offsets420/424 and grid/vector extents checked. External rounding routines remain retained."
+    },
+    {
+      "id": "destroy_vector_grid",
+      "source": "src/objects/destroy_vector_grid.c",
+      "address": "0x8c118f5c",
+      "entry": "_destroy_vector_grid",
+      "symbols": {
+        "_release_at": "0x8c18de08",
+        "_free_at": "0x8c011ed8"
+      },
+      "ranges": [
+        {
+          "offset": 1085276,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_vector_grid",
+          "address": "0x8c118f5c",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "b3b1173d406e6500cbc16980fad5b612339855286f4914aa046d42b602b8e5c3",
+      "boundary_review": "Raw118918..118f94 reviewed including distinct entry boundaries,literals,natural padding. Base size36 and8 paired color initialization retained; no assumed trail-capacity correction. Texture offsets420/424 and grid/vector extents checked. External rounding routines remain retained."
+    },
+    {
+      "id": "draw_grid_selected_rows",
+      "source": "src/objects/draw_grid_selected_rows.c",
+      "address": "0x8c119048",
+      "entry": "_draw_grid_selected_rows",
+      "symbols": {
+        "_selectors": "0x8c4d8318",
+        "_offsets": "0x8c4d8300",
+        "_draw_at": "0x8c118f94"
+      },
+      "ranges": [
+        {
+          "offset": 1085512,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_grid_selected_rows",
+          "address": "0x8c119048",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "1b68765b351bb191fe33df990564a8da321d584764aa20255d82310a522fd303",
+      "boundary_review": "Raw119048..11924c fully reviewed through each adjacent entry; no added null-child or range safeguards. Lookup retains two ordered floating comparisons and0.01f addition, including NaN behavior. Grid andNode offsets checked; static globals retained."
+    },
+    {
+      "id": "draw_grid_offset_rows",
+      "source": "src/objects/draw_grid_offset_rows.c",
+      "address": "0x8c11906c",
+      "entry": "_draw_grid_offset_rows",
+      "symbols": {
+        "_selectors": "0x8c4d8318",
+        "_offsets": "0x8c4d8300",
+        "_draw_at": "0x8c118f94"
+      },
+      "ranges": [
+        {
+          "offset": 1085548,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_grid_offset_rows",
+          "address": "0x8c11906c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "7311df6ab46094b46d250efe49f7bbb7bf7c0683ab6d4f27f849ace60ae250bf",
+      "boundary_review": "Raw119048..11924c fully reviewed through each adjacent entry; no added null-child or range safeguards. Lookup retains two ordered floating comparisons and0.01f addition, including NaN behavior. Grid andNode offsets checked; static globals retained."
+    },
+    {
+      "id": "initialize_grid_view",
+      "source": "src/objects/initialize_grid_view.c",
+      "address": "0x8c1191e4",
+      "entry": "_initialize_grid_view",
+      "symbols": {
+        "_base_at": "0x8c0db1d0",
+        "_initialize_at": "0x8c119290"
+      },
+      "ranges": [
+        {
+          "offset": 1085924,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_grid_view",
+          "address": "0x8c1191e4",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "2f59dbef86355f3d641b9b6efbf755c86bab4909c2f7308050de69485b05670b",
+      "boundary_review": "Raw119048..11924c fully reviewed through each adjacent entry; no added null-child or range safeguards. Lookup retains two ordered floating comparisons and0.01f addition, including NaN behavior. Grid andNode offsets checked; static globals retained."
+    },
+    {
+      "id": "initialize_alternate_grid_view",
+      "source": "src/objects/initialize_alternate_grid_view.c",
+      "address": "0x8c119218",
+      "entry": "_initialize_alternate_grid_view",
+      "symbols": {
+        "_base_at": "0x8c0db20c",
+        "_initialize_at": "0x8c119290"
+      },
+      "ranges": [
+        {
+          "offset": 1085976,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_alternate_grid_view",
+          "address": "0x8c119218",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "6de132e84cda10b21b7ffad823b292d80eb642d56b23dd751a2e43284b5cf475",
+      "boundary_review": "Raw119048..11924c fully reviewed through each adjacent entry; no added null-child or range safeguards. Lookup retains two ordered floating comparisons and0.01f addition, including NaN behavior. Grid andNode offsets checked; static globals retained."
     },
     {
       "id": "destroy_object_8c11924c",

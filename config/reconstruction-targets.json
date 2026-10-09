@@ -62053,6 +62053,1125 @@
       "boundary_review": "Raw11574c..1159f0 fully reviewed including three distinct entries,delay slots and pools. Temporary base construction follows initial calls; two12-actor loops preserve virtual slot36. Branch-specific calls are not hoisted; referenced configuration data retained.",
       "status": "matched",
       "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_scene_control_owner",
+      "source": "src/objects/create_scene_control_owner.c",
+      "address": "0x8c115bc4",
+      "entry": "_create_scene_control_owner",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_allocate_at": "0x8c122700",
+        "_initialize_at": "0x8c115bf4"
+      },
+      "ranges": [
+        {
+          "offset": 1072068,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_scene_control_owner",
+          "address": "0x8c115bc4",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "cc73a3522ea1b2040c00b9c85c744e2c02d4e39f1aced893ec696ea87cbf476b",
+      "boundary_review": "Raw115bc4..1160a0 fully reviewed, including all calls, literals, returns and adjacent entries. Runtime18e044 uses R4 base,R5 constructor,R6 destructor,R7 size,stack count and callback(self,1);18e000 destroys reverse with(self,-1). No runtime body or static data included. All object offsets/extents checked; direct embedded constructors use self only.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_scene_control_owner",
+      "source": "src/objects/destroy_scene_control_owner.c",
+      "address": "0x8c115f80",
+      "entry": "_destroy_scene_control_owner",
+      "symbols": {
+        "_destroy32_at": "0x8c042dfc",
+        "_destroy40_at": "0x8c043198",
+        "_destroy_first_at": "0x8c043000",
+        "_destroy_array_at": "0x8c18e000",
+        "_base_at": "0x8c03ca10",
+        "_free_at": "0x8c122774",
+        "_heap": "0x8c4d97e0"
+      },
+      "ranges": [
+        {
+          "offset": 1073024,
+          "size": 288
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_scene_control_owner",
+          "address": "0x8c115f80",
+          "size": 288
+        }
+      ],
+      "reference_sha256": "5dcabcd9b46f4261ca2db2ec04928c8d1432c9b629cc84cf33c7cbddc47d8896",
+      "boundary_review": "Raw115bc4..1160a0 fully reviewed, including all calls, literals, returns and adjacent entries. Runtime18e044 uses R4 base,R5 constructor,R6 destructor,R7 size,stack count and callback(self,1);18e000 destroys reverse with(self,-1). No runtime body or static data included. All object offsets/extents checked; direct embedded constructors use self only.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_vector_grid",
+      "source": "src/objects/destroy_vector_grid.c",
+      "address": "0x8c118f5c",
+      "entry": "_destroy_vector_grid",
+      "symbols": {
+        "_release_at": "0x8c18de08",
+        "_free_at": "0x8c011ed8"
+      },
+      "ranges": [
+        {
+          "offset": 1085276,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_vector_grid",
+          "address": "0x8c118f5c",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "b3b1173d406e6500cbc16980fad5b612339855286f4914aa046d42b602b8e5c3",
+      "boundary_review": "Raw118918..118f94 reviewed including distinct entry boundaries,literals,natural padding. Base size36 and8 paired color initialization retained; no assumed trail-capacity correction. Texture offsets420/424 and grid/vector extents checked. External rounding routines remain retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "discard_colored_trail_pair",
+      "source": "src/objects/discard_colored_trail_pair.c",
+      "address": "0x8c118a40",
+      "entry": "_discard_colored_trail_pair",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1083968,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "discard_colored_trail_pair",
+          "address": "0x8c118a40",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "748eb97c22eff8478f06d2eee6eddc6eecddbc7511911b53a6bcedd0f91591b3",
+      "boundary_review": "Raw118918..118f94 reviewed including distinct entry boundaries,literals,natural padding. Base size36 and8 paired color initialization retained; no assumed trail-capacity correction. Texture offsets420/424 and grid/vector extents checked. External rounding routines remain retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "discard_textured_trail_pair",
+      "source": "src/objects/discard_textured_trail_pair.c",
+      "address": "0x8c118cb0",
+      "entry": "_discard_textured_trail_pair",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1084592,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "discard_textured_trail_pair",
+          "address": "0x8c118cb0",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "c704ed1f739277280e0e53fde1d3c28dbf78fc2390954d6a49dd0ecb5c81c4b6",
+      "boundary_review": "Raw118918..118f94 reviewed including distinct entry boundaries,literals,natural padding. Base size36 and8 paired color initialization retained; no assumed trail-capacity correction. Texture offsets420/424 and grid/vector extents checked. External rounding routines remain retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "draw_colored_trail",
+      "source": "src/objects/draw_colored_trail.c",
+      "address": "0x8c118c30",
+      "entry": "_draw_colored_trail",
+      "symbols": {
+        "_prepare_at": "0x8c0c5310",
+        "_draw_at": "0x8c38efbc"
+      },
+      "ranges": [
+        {
+          "offset": 1084464,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_colored_trail",
+          "address": "0x8c118c30",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "7c4a1d709cdc8973e5483a05de790bb84db8c0836b03b3790f560ceaf45e39b7",
+      "boundary_review": "Raw118918..118f94 reviewed including distinct entry boundaries,literals,natural padding. Base size36 and8 paired color initialization retained; no assumed trail-capacity correction. Texture offsets420/424 and grid/vector extents checked. External rounding routines remain retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "draw_grid_offset_rows",
+      "source": "src/objects/draw_grid_offset_rows.c",
+      "address": "0x8c11906c",
+      "entry": "_draw_grid_offset_rows",
+      "symbols": {
+        "_selectors": "0x8c4d8318",
+        "_offsets": "0x8c4d8300",
+        "_draw_at": "0x8c118f94"
+      },
+      "ranges": [
+        {
+          "offset": 1085548,
+          "size": 76
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_grid_offset_rows",
+          "address": "0x8c11906c",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "7311df6ab46094b46d250efe49f7bbb7bf7c0683ab6d4f27f849ace60ae250bf",
+      "boundary_review": "Raw119048..11924c fully reviewed through each adjacent entry; no added null-child or range safeguards. Lookup retains two ordered floating comparisons and0.01f addition, including NaN behavior. Grid andNode offsets checked; static globals retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "draw_grid_selected_rows",
+      "source": "src/objects/draw_grid_selected_rows.c",
+      "address": "0x8c119048",
+      "entry": "_draw_grid_selected_rows",
+      "symbols": {
+        "_selectors": "0x8c4d8318",
+        "_offsets": "0x8c4d8300",
+        "_draw_at": "0x8c118f94"
+      },
+      "ranges": [
+        {
+          "offset": 1085512,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_grid_selected_rows",
+          "address": "0x8c119048",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "1b68765b351bb191fe33df990564a8da321d584764aa20255d82310a522fd303",
+      "boundary_review": "Raw119048..11924c fully reviewed through each adjacent entry; no added null-child or range safeguards. Lookup retains two ordered floating comparisons and0.01f addition, including NaN behavior. Grid andNode offsets checked; static globals retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "draw_scene_control_marker",
+      "source": "src/objects/draw_scene_control_marker.c",
+      "address": "0x8c11834c",
+      "entry": "_draw_scene_control_marker",
+      "symbols": {
+        "_draw_at": "0x8c38d81c"
+      },
+      "ranges": [
+        {
+          "offset": 1082188,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_scene_control_marker",
+          "address": "0x8c11834c",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "cbeb4d4bd05cff5e056aececa0fa20589c0f65b733de5f1957c416e0bdfaf649",
+      "boundary_review": "Raw11834c..1183b8 and1184f8..118918 reviewed through full literals and natural padding. Allocation-failure recursion and unchecked parser cursor are preserved; no static data copied. All record extents used in arithmetic checked.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_alternate_grid_view",
+      "source": "src/objects/initialize_alternate_grid_view.c",
+      "address": "0x8c119218",
+      "entry": "_initialize_alternate_grid_view",
+      "symbols": {
+        "_base_at": "0x8c0db20c",
+        "_initialize_at": "0x8c119290"
+      },
+      "ranges": [
+        {
+          "offset": 1085976,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_alternate_grid_view",
+          "address": "0x8c119218",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "6de132e84cda10b21b7ffad823b292d80eb642d56b23dd751a2e43284b5cf475",
+      "boundary_review": "Raw119048..11924c fully reviewed through each adjacent entry; no added null-child or range safeguards. Lookup retains two ordered floating comparisons and0.01f addition, including NaN behavior. Grid andNode offsets checked; static globals retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_grid_view",
+      "source": "src/objects/initialize_grid_view.c",
+      "address": "0x8c1191e4",
+      "entry": "_initialize_grid_view",
+      "symbols": {
+        "_base_at": "0x8c0db1d0",
+        "_initialize_at": "0x8c119290"
+      },
+      "ranges": [
+        {
+          "offset": 1085924,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_grid_view",
+          "address": "0x8c1191e4",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "2f59dbef86355f3d641b9b6efbf755c86bab4909c2f7308050de69485b05670b",
+      "boundary_review": "Raw119048..11924c fully reviewed through each adjacent entry; no added null-child or range safeguards. Lookup retains two ordered floating comparisons and0.01f addition, including NaN behavior. Grid andNode offsets checked; static globals retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "load_scene_control_resource",
+      "source": "src/objects/load_scene_control_resource.c",
+      "address": "0x8c1187e4",
+      "entry": "_load_scene_control_resource",
+      "symbols": {
+        "_prepare_at": "0x8c041970",
+        "_release_at": "0x8c011ec0",
+        "_release_named_at": "0x8c03ed70",
+        "_length_at": "0x8c1a86d0",
+        "_allocate_at": "0x8c011e9c",
+        "_named_at": "0x8c03ed10",
+        "_read_at": "0x8c1a8310",
+        "_diagnostic_at": "0x8c03ef80",
+        "_text": "0x8c310538",
+        "__l_divs": "0x8c18e768",
+        "_copy_name_at": "0x8c12b154",
+        "_probe_at": "0x8c03ee50",
+        "_replace_at": "0x8c03ee90",
+        "_decode_at": "0x8c3877a8"
+      },
+      "ranges": [
+        {
+          "offset": 1083364,
+          "size": 308
+        }
+      ],
+      "functions": [
+        {
+          "name": "load_scene_control_resource",
+          "address": "0x8c1187e4",
+          "size": 308
+        }
+      ],
+      "reference_sha256": "18e3cb74a62811b91957e518397a43c851f2b3ef67ddca4b26329e731397df09",
+      "boundary_review": "Raw11834c..1183b8 and1184f8..118918 reviewed through full literals and natural padding. Allocation-failure recursion and unchecked parser cursor are preserved; no static data copied. All record extents used in arithmetic checked.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "release_scene_control_resource",
+      "source": "src/objects/release_scene_control_resource.c",
+      "address": "0x8c11875c",
+      "entry": "_release_scene_control_resource",
+      "symbols": {
+        "_finish_at": "0x8c37d534",
+        "_release_at": "0x8c011ec0"
+      },
+      "ranges": [
+        {
+          "offset": 1083228,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_scene_control_resource",
+          "address": "0x8c11875c",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "740372a2f1c814e65d04e854cc1aa0ab525746248f8e278e9aa4316c94410978",
+      "boundary_review": "Raw11834c..1183b8 and1184f8..118918 reviewed through full literals and natural padding. Allocation-failure recursion and unchecked parser cursor are preserved; no static data copied. All record extents used in arithmetic checked.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "scene_control_horizontal_hold",
+      "source": "src/objects/scene_control_horizontal_hold.c",
+      "address": "0x8c1181a4",
+      "entry": "_scene_control_horizontal_hold",
+      "symbols": {
+        "_inputs": "0x8c41cba0",
+        "_masks": "0x8c3103bc"
+      },
+      "ranges": [
+        {
+          "offset": 1081764,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_horizontal_hold",
+          "address": "0x8c1181a4",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "63fc559ea70e1527d57553e8d043d6a811fcccf5c864dda0d90dce7395753e9b",
+      "boundary_review": "Raw117ce0..11834c reviewed through each return and complete literal pool. No clamping or zero-divisor fix;256 samples cleared and128 synthesized where observed. Input gate checks absence of512; held counters signed. Static inputs/masks retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "scene_control_pressed_direction",
+      "source": "src/objects/scene_control_pressed_direction.c",
+      "address": "0x8c118028",
+      "entry": "_scene_control_pressed_direction",
+      "symbols": {
+        "_inputs": "0x8c41cba0",
+        "_masks": "0x8c3103bc"
+      },
+      "ranges": [
+        {
+          "offset": 1081384,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_pressed_direction",
+          "address": "0x8c118028",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8f6059054ee15371911df8037f6ea30b76c746a0ec475607136dd5171aa3cdff",
+      "boundary_review": "Raw117ce0..11834c reviewed through each return and complete literal pool. No clamping or zero-divisor fix;256 samples cleared and128 synthesized where observed. Input gate checks absence of512; held counters signed. Static inputs/masks retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "scene_control_sample_x",
+      "source": "src/objects/scene_control_sample_x.c",
+      "address": "0x8c118300",
+      "entry": "_scene_control_sample_x",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1082112,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_sample_x",
+          "address": "0x8c118300",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "f0761860630fc9e62c51d20e475beeb532b0c230a72879911e715f794c698c5b",
+      "boundary_review": "Raw117ce0..11834c reviewed through each return and complete literal pool. No clamping or zero-divisor fix;256 samples cleared and128 synthesized where observed. Input gate checks absence of512; held counters signed. Static inputs/masks retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "scene_control_sample_y",
+      "source": "src/objects/scene_control_sample_y.c",
+      "address": "0x8c11832c",
+      "entry": "_scene_control_sample_y",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1082156,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_sample_y",
+          "address": "0x8c11832c",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "a5dd1918fbdacee0020f01ba96f5bc8ecd8640cbc77b4a53c42db950aa4f651f",
+      "boundary_review": "Raw117ce0..11834c reviewed through each return and complete literal pool. No clamping or zero-divisor fix;256 samples cleared and128 synthesized where observed. Input gate checks absence of512; held counters signed. Static inputs/masks retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "scene_control_vertical_hold",
+      "source": "src/objects/scene_control_vertical_hold.c",
+      "address": "0x8c1180e4",
+      "entry": "_scene_control_vertical_hold",
+      "symbols": {
+        "_inputs": "0x8c41cba0",
+        "_masks": "0x8c3103bc"
+      },
+      "ranges": [
+        {
+          "offset": 1081572,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_vertical_hold",
+          "address": "0x8c1180e4",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "a3c15de17d65c9e4a9cde8426cc72f2b9ad9eb9f8e74751378b8aa2854d223b9",
+      "boundary_review": "Raw117ce0..11834c reviewed through each return and complete literal pool. No clamping or zero-divisor fix;256 samples cleared and128 synthesized where observed. Input gate checks absence of512; held counters signed. Static inputs/masks retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_colored_trail_colors",
+      "source": "src/objects/set_colored_trail_colors.c",
+      "address": "0x8c118b14",
+      "entry": "_set_colored_trail_colors",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1084180,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_colored_trail_colors",
+          "address": "0x8c118b14",
+          "size": 20
+        }
+      ],
+      "reference_sha256": "f6341a39f69590d7e1c6275573ed0b4dfbd4da422ca89661f453c99c15d250cd",
+      "boundary_review": "Raw118918..118f94 reviewed including distinct entry boundaries,literals,natural padding. Base size36 and8 paired color initialization retained; no assumed trail-capacity correction. Texture offsets420/424 and grid/vector extents checked. External rounding routines remain retained.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_scene_control_bounds",
+      "source": "src/objects/set_scene_control_bounds.c",
+      "address": "0x8c1184f8",
+      "entry": "_set_scene_control_bounds",
+      "symbols": {
+        "_bound_table": "0x8c3103e8"
+      },
+      "ranges": [
+        {
+          "offset": 1082616,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_scene_control_bounds",
+          "address": "0x8c1184f8",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "f08f17f45f366e65b8ff45623d89cd62b117e1aa21a78e847deab0cf4e596455",
+      "boundary_review": "Raw11834c..1183b8 and1184f8..118918 reviewed through full literals and natural padding. Allocation-failure recursion and unchecked parser cursor are preserved; no static data copied. All record extents used in arithmetic checked.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "reset_scene_transition",
+      "source": "src/provisional/reset_scene_transition.c",
+      "address": "0x8c1159f0",
+      "entry": "_reset_scene_transition",
+      "symbols": {
+        "_call_8c01c2b0": "0x8c01c2b0",
+        "_call_8c172be4": "0x8c172be4",
+        "_call_8c01d9dc": "0x8c01d9dc",
+        "_call_8c01c1c4": "0x8c01c1c4",
+        "_call_8c104e8c": "0x8c104e8c",
+        "_call_8c1a18b8": "0x8c1a18b8",
+        "_call_8c0405b4": "0x8c0405b4",
+        "_call_8c189c94": "0x8c189c94",
+        "_call_8c1a9940": "0x8c1a9940",
+        "_call_8c0ea6d8": "0x8c0ea6d8",
+        "_call_8c180ae8": "0x8c180ae8",
+        "_call_8c0ea724": "0x8c0ea724",
+        "_call_8c189d60": "0x8c189d60",
+        "_call_8c017ba8": "0x8c017ba8",
+        "_call_8c13f3f0": "0x8c13f3f0",
+        "_call_8c017bd4": "0x8c017bd4",
+        "_call_8c380516": "0x8c380516",
+        "_begin_at": "0x8c3806f6",
+        "_set_mode_at": "0x8c01c250",
+        "_set_phase_at": "0x8c01c244",
+        "_load_at": "0x8c013620",
+        "_configure_at": "0x8c1866d0",
+        "_allocate_at": "0x8c122700",
+        "_initialize_large_at": "0x8c0ea350",
+        "_lookup_at": "0x8c0363a4",
+        "_state_at": "0x8c0eb0ec",
+        "_request_at": "0x8c01c1a4",
+        "_time_ready_at": "0x8c232460",
+        "_time_read_at": "0x8c36d3ca",
+        "_time_convert_at": "0x8c36d4c0",
+        "_time_set_at": "0x8c232500",
+        "_initialize_small_at": "0x8c015244",
+        "_initialize_other_at": "0x8c036a0c",
+        "_apply_settings_at": "0x8c0e7620",
+        "_prepare_global_at": "0x8c03373c",
+        "_finish_small_at": "0x8c0156e4",
+        "_existing": "0x8c461c00",
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be80",
+        "_selected": "0x8c4d8280",
+        "_setting_mode": "0x8c44be04",
+        "_setting_state": "0x8c44be08",
+        "_reset_first": "0x8c418244",
+        "_reset_second": "0x8c4d8288",
+        "_reset_third": "0x8c4d828c",
+        "_settings": "0x8c46fec0",
+        "_load_data": "0x8c310238",
+        "_configuration": "0x8c310380",
+        "_global_storage": "0x8c44bec8",
+        "_call_8c01ba00": "0x8c01ba00",
+        "_call_8c02a798": "0x8c02a798",
+        "_call_8c1004cc": "0x8c1004cc",
+        "_call_8c041690": "0x8c041690",
+        "_call_8c01b7e8": "0x8c01b7e8",
+        "_call_8c1156b4": "0x8c1156b4",
+        "_call_8c1a9988": "0x8c1a9988",
+        "_call_8c186b34": "0x8c186b34",
+        "_call_8c09d2bc": "0x8c09d2bc",
+        "_call_8c17771c": "0x8c17771c",
+        "_call_8c115bc0": "0x8c115bc0",
+        "_call_8c01ba20": "0x8c01ba20",
+        "_call_8c02a87c": "0x8c02a87c",
+        "_base_at": "0x8c0330e4",
+        "_load_resource_at": "0x8c01372c",
+        "_prepare_at": "0x8c033878",
+        "_clear_at": "0x8c033980",
+        "_clear_settings_at": "0x8c0e75c8",
+        "_mode_at": "0x8c189ca0",
+        "_notify_at": "0x8c0176bc",
+        "_destroy_at": "0x8c03311c",
+        "_resource_id": "0x8c418258",
+        "_resource_data": "0x8c41825c",
+        "_clear_value": "0x8c510ba4",
+        "_parameter": "0x8c41bd00"
+      },
+      "ranges": [
+        {
+          "offset": 1071600,
+          "size": 464
+        }
+      ],
+      "functions": [
+        {
+          "name": "reset_scene_transition",
+          "address": "0x8c1159f0",
+          "size": 464
+        }
+      ],
+      "reference_sha256": "66009bac0b27ee57603f08ec40fe7b2828372dec87868cc2bf6b40836e5459be",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch179:460 generated/464 expected,318 differing,first0x8c1159f4. Instructions are displaced by the clear-value store/call scheduling (raw zero inR0 and NOP call delay; generated store in call delay), plus final temporary-destructor argument scheduling. Value-returning inline clear helper produced identical output. Revisit only concrete matched flag-clear/temporary-destructor source context; do not repeat equivalent inline variations."
+    },
+    {
+      "id": "initialize_scene_control_owner",
+      "source": "src/provisional/initialize_scene_control_owner.c",
+      "address": "0x8c115bf4",
+      "entry": "_initialize_scene_control_owner",
+      "symbols": {
+        "_base_at": "0x8c03c92c",
+        "_parent": "0x8c44be88",
+        "_object_name": "0x8c3103b8",
+        "_construct32_at": "0x8c042dd4",
+        "_construct40_at": "0x8c04316c",
+        "_construct_first_at": "0x8c042fd4",
+        "_destroy32_at": "0x8c042dfc",
+        "_destroy40_at": "0x8c043198",
+        "_construct_array_at": "0x8c18e044",
+        "_global_byte": "0x8c4d82a0",
+        "_block_at": "0x8c122480",
+        "_prepare_at": "0x8c117ce0",
+        "_configure_first_at": "0x8c04303c",
+        "_configure40_at": "0x8c0431d4",
+        "_mode_at": "0x8c1184f8",
+        "_configure32_at": "0x8c042e38"
+      },
+      "ranges": [
+        {
+          "offset": 1072116,
+          "size": 908
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_scene_control_owner",
+          "address": "0x8c115bf4",
+          "size": 908
+        }
+      ],
+      "reference_sha256": "831c0f24495db8d6e0d63e56f7360e3f3ead3c18b43d683fcd24e72a23edb400",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch179:888 generated/908 expected,827 differing,first0x8c115bf6. Aggregate64 copy matches structure, but first loop keeps only one saved GPR rather than seven, repeats offset literals/scaling, and embedded/array calls have different argument scheduling. Separate induction-variable scopes produce identical output. Revisit only evidence of exact C++ embedded-array initialization and invariant-hoisting context; no more scope/spelling variants."
+    },
+    {
+      "id": "generate_scene_control_samples",
+      "source": "src/provisional/generate_scene_control_samples.c",
+      "address": "0x8c117e34",
+      "entry": "_generate_scene_control_samples",
+      "symbols": {
+        "_direct_at": "0x8c1224c8",
+        "_sine_at": "0x8c37eb0c",
+        "__l_divs": "0x8c18e768"
+      },
+      "ranges": [
+        {
+          "offset": 1080884,
+          "size": 440
+        }
+      ],
+      "functions": [
+        {
+          "name": "generate_scene_control_samples",
+          "address": "0x8c117e34",
+          "size": 440
+        }
+      ],
+      "reference_sha256": "7f5e86efbcb456cdb9a4b0b18651d07481ec5da99f3bb3e8bb7f5690f87df83f",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch179:440 generated/440 expected,371 differing,first0x8c117e4a. Extra4-byte frame; waveform phase/amplitude/step calculation and byte accessor ordering differ. Signed-divide symbol binding corrected to established __l_divs without changing flags. Revisit an exact waveform sibling before another source hypothesis."
+    },
+    {
+      "id": "scene_control_button_active",
+      "source": "src/provisional/scene_control_button_active.c",
+      "address": "0x8c117fec",
+      "entry": "_scene_control_button_active",
+      "symbols": {
+        "_inputs": "0x8c41cba0",
+        "_masks": "0x8c3103bc"
+      },
+      "ranges": [
+        {
+          "offset": 1081324,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_button_active",
+          "address": "0x8c117fec",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "555250cf57d3fec6fa262c40749f87d520ae4b3df6b18932c38339f218e5c15a",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch179:64 generated/60 expected,41 differing,first0x8c117ff0. Short-circuit return branches do not materialize result in rawR6; register result spelling duplicated output. Revisit actual C++ boolean-return or inline-call context."
+    },
+    {
+      "id": "scene_control_horizontal_direction",
+      "source": "src/provisional/scene_control_horizontal_direction.c",
+      "address": "0x8c11812c",
+      "entry": "_scene_control_horizontal_direction",
+      "symbols": {
+        "_inputs": "0x8c41cba0",
+        "_masks": "0x8c3103bc"
+      },
+      "ranges": [
+        {
+          "offset": 1081644,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_horizontal_direction",
+          "address": "0x8c11812c",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "ac4b235ae5134fe06a1197936118d735cafa7e62ee112fcb11ade92d1b96bf6a",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch179:140 generated/120 expected,108 differing,first0x8c118130. Same active-button shared-input lifetime and boolean materialization blocker as vertical direction; no equivalent variations."
+    },
+    {
+      "id": "scene_control_vertical_direction",
+      "source": "src/provisional/scene_control_vertical_direction.c",
+      "address": "0x8c11806c",
+      "entry": "_scene_control_vertical_direction",
+      "symbols": {
+        "_inputs": "0x8c41cba0",
+        "_masks": "0x8c3103bc"
+      },
+      "ranges": [
+        {
+          "offset": 1081452,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "scene_control_vertical_direction",
+          "address": "0x8c11806c",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "d7522ec7a85a0f40f60380629808c0c8f83e4f4cdcb6b890560000605868beb9",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch179:140 generated/120 expected,106 differing,first0x8c118070. Active-button inline predicates recompute pressed input and produce extra branches instead of shared pressed-value lifetime. Register-result spelling duplicated output. Revisit exact active-button source context."
+    },
+    {
+      "id": "prepare_scene_control_blocks",
+      "source": "src/provisional/prepare_scene_control_blocks.c",
+      "address": "0x8c117ce0",
+      "entry": "_prepare_scene_control_blocks",
+      "symbols": {
+        "_generate_at": "0x8c117e34"
+      },
+      "ranges": [
+        {
+          "offset": 1080544,
+          "size": 320
+        }
+      ],
+      "functions": [
+        {
+          "name": "prepare_scene_control_blocks",
+          "address": "0x8c117ce0",
+          "size": 320
+        }
+      ],
+      "reference_sha256": "b959e09d8a49e9171d8305827e55ee2ab2ae9c84683954489bfad15c47d1461e",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch179:312 generated/320 expected,161 differing,first0x8c117cf3. Selected-bit loop uses indexed field reload instead of hoisted field pointer; byte-copy loop offset/register lifetimes differ. Revisit exact loop/accessor context."
+    },
+    {
+      "id": "parse_scene_control_resource",
+      "source": "src/provisional/parse_scene_control_resource.c",
+      "address": "0x8c118528",
+      "entry": "_parse_scene_control_resource",
+      "symbols": {
+        "_prepare_at": "0x8c041970",
+        "_release_at": "0x8c011ec0",
+        "_release_named_at": "0x8c03ed70",
+        "_length_at": "0x8c1a86d0",
+        "_allocate_at": "0x8c011e9c",
+        "_named_at": "0x8c03ed10",
+        "_read_at": "0x8c1a8310",
+        "_diagnostic_at": "0x8c03ef80",
+        "_text": "0x8c310538",
+        "__l_divs": "0x8c18e768",
+        "_cursor": "0x8c4d82c0",
+        "_copy_at": "0x8c3889a4",
+        "_allocate_result_at": "0x8c011eb4",
+        "_decode_at": "0x8c3877a8"
+      },
+      "ranges": [
+        {
+          "offset": 1082664,
+          "size": 564
+        }
+      ],
+      "functions": [
+        {
+          "name": "parse_scene_control_resource",
+          "address": "0x8c118528",
+          "size": 564
+        }
+      ],
+      "reference_sha256": "e6400e3db3d26219d04d8bd59584d3472a52990c1f7b1e545b69a00ef4a57dde",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch179:568 generated/564 expected,332 differing,first0x8c11853c. Header read expression register lifetimes and parser data/allocation/counter register assignment differ; shift correction alone insufficient. Revisit exact serialized-header accessor or parser sibling."
+    },
+    {
+      "id": "wait_scene_control_resource",
+      "source": "src/provisional/wait_scene_control_resource.c",
+      "address": "0x8c118780",
+      "entry": "_wait_scene_control_resource",
+      "symbols": {
+        "_prepare_at": "0x8c041970",
+        "_pump_at": "0x8c104c60",
+        "_diagnostic_at": "0x8c03ef80",
+        "_poll_at": "0x8c387db0",
+        "_text": "0x8c310538"
+      },
+      "ranges": [
+        {
+          "offset": 1083264,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "wait_scene_control_resource",
+          "address": "0x8c118780",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "635ee52ae723b75b5b99d7caf365962717fda96e6186ab0335b3e5932fde9317",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch179:92 generated/100 expected,91 differing,first0x8c118782. Result -1 initialization optimized away; raw retains separate result GPR through polling loop. Revisit exact polling-loop source context."
+    },
+    {
+      "id": "lookup_vector_grid_row",
+      "source": "src/provisional/lookup_vector_grid_row.c",
+      "address": "0x8c119190",
+      "entry": "_lookup_vector_grid_row",
+      "symbols": {
+        "_first_at": "0x8c12b570"
+      },
+      "ranges": [
+        {
+          "offset": 1085840,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "lookup_vector_grid_row",
+          "address": "0x8c119190",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "ea870f4b3971d56803adb2028f14a158cca3ce448c3c4dc127bc50f9a4d896f7",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch179:84 generated/84 expected,14 differing,first0x8c1191c3. Only width/converted-index multiply registers and source-pointer arithmetic differ; commuted product generates identical binary. Revisit exact float-to-row-index context."
+    },
+    {
+      "id": "draw_grid_node_row",
+      "source": "src/provisional/draw_grid_node_row.c",
+      "address": "0x8c1190b8",
+      "entry": "_draw_grid_node_row",
+      "symbols": {
+        "_origin": "0x8c4d82e0",
+        "_active_points": "0x8c4d82ec",
+        "_active_width": "0x8c4d82f0",
+        "_active_index": "0x8c4d82f4",
+        "_selector_base": "0x8c4d82f8",
+        "_offset_base": "0x8c4d82fc",
+        "_begin_at": "0x8c38ae68",
+        "_end_at": "0x8c38ad10",
+        "_transform_at": "0x8c3aba08",
+        "_point_at": "0x8c3be280"
+      },
+      "ranges": [
+        {
+          "offset": 1085624,
+          "size": 216
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_grid_node_row",
+          "address": "0x8c1190b8",
+          "size": 216
+        }
+      ],
+      "reference_sha256": "9ded4522b77d0a80328a95814b5847946b4eede942574ef069a28179ce354854",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch179:220 generated/216 expected,145 differing,first0x8c1190c8. Generated range four bytes longer; shared active-index/global pointer lifetimes differ in transform branch. Revisit exact recursive traversal context."
+    },
+    {
+      "id": "draw_vector_grid_rows",
+      "source": "src/provisional/draw_vector_grid_rows.c",
+      "address": "0x8c118f94",
+      "entry": "_draw_vector_grid_rows",
+      "symbols": {
+        "_origin": "0x8c4d82e0",
+        "_active_points": "0x8c4d82ec",
+        "_active_width": "0x8c4d82f0",
+        "_active_index": "0x8c4d82f4",
+        "_context_a": "0x8c4d82f8",
+        "_context_b": "0x8c4d82fc",
+        "_begin_at": "0x8c38ae68",
+        "_reset_at": "0x8c37b5c4",
+        "_transform_at": "0x8c3ab8f8",
+        "_row_at": "0x8c1190b8",
+        "_end_at": "0x8c38ad10"
+      },
+      "ranges": [
+        {
+          "offset": 1085332,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_vector_grid_rows",
+          "address": "0x8c118f94",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "fe6dd542626f60a56b748f75944e7598be601aaf757a9b14868ba94bc908bcc8",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch179:180 generated/180 expected,62 differing,first0x8c118fd6. Global initialization order correction improves comparison; row-loop saved-register and call scheduling still differ. Revisit exact grid traversal sibling."
+    },
+    {
+      "id": "append_colored_trail_pair",
+      "source": "src/provisional/append_colored_trail_pair.cpp",
+      "address": "0x8c118a8c",
+      "entry": "_append_colored_trail_pair",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1084044,
+          "size": 136
+        }
+      ],
+      "functions": [
+        {
+          "name": "append_colored_trail_pair",
+          "address": "0x8c118a8c",
+          "size": 136
+        }
+      ],
+      "reference_sha256": "d013b2e7c32e9008ba0c8b66a593cd04590b01c1d2cfd283efe6e30f99439244",
+      "language": "c++",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch179:136 generated/136 expected,25 differing,first0x8c118acb. Native C++ virtual call matches; remaining first/second vector store temporary-register lifetimes differ after indexed-address grouping improvement. Revisit exact vector assignment operator context."
+    },
+    {
+      "id": "append_textured_trail_pair",
+      "source": "src/provisional/append_textured_trail_pair.cpp",
+      "address": "0x8c118cfc",
+      "entry": "_append_textured_trail_pair",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1084668,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "append_textured_trail_pair",
+          "address": "0x8c118cfc",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "79e76dc7bd1e2d47de046cd7dea0ba4e734963eb0cab075698cf90024a57bb81",
+      "language": "c++",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch179:122 generated/124 expected,42 differing,first0x8c118d25. Native virtual call matches; vector-store temporaries and natural final padding differ. Revisit exact vector assignment/operator context, never pad."
+    },
+    {
+      "id": "draw_textured_trail",
+      "source": "src/provisional/draw_textured_trail.c",
+      "address": "0x8c118e50",
+      "entry": "_draw_textured_trail",
+      "symbols": {
+        "_texture_at": "0x8c3827d8",
+        "_mode_at": "0x8c382820",
+        "_prepare_at": "0x8c0c5310",
+        "_draw_at": "0x8c38fa98"
+      },
+      "ranges": [
+        {
+          "offset": 1085008,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_textured_trail",
+          "address": "0x8c118e50",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "c64657af16f425f496ac5f627fa8b562f49d0a38fe93e070cff303421d0a1601",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch179:84 generated/84 expected,4 differing,first0x8c118e80. Only final count SHLL and pointer MOV scheduling differs. Revisit exact draw-call declaration/context; do not repeat equivalent pointer spellings."
+    },
+    {
+      "id": "initialize_colored_trail",
+      "source": "src/provisional/initialize_colored_trail.c",
+      "address": "0x8c118964",
+      "entry": "_initialize_colored_trail",
+      "symbols": {
+        "_base_at": "0x8c0330e4",
+        "_object_name": "0x8c3105e8",
+        "_colors_at": "0x8c118b14"
+      },
+      "ranges": [
+        {
+          "offset": 1083748,
+          "size": 140
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_colored_trail",
+          "address": "0x8c118964",
+          "size": 140
+        }
+      ],
+      "reference_sha256": "6b6babd93c7376700b84cc5d420ce5cfe9b07856d7f012ee9b4e96b78aabb010",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch179:140 generated/140 expected,16 differing,first0x8c11899f. Base initialization exact in H1, but color-loop pointer/index and invariant offsets use different registers; inline-loop H2 shortens output. Revisit exact constructor loop context."
+    },
+    {
+      "id": "initialize_vector_grid",
+      "source": "src/provisional/initialize_vector_grid.c",
+      "address": "0x8c118ea4",
+      "entry": "_initialize_vector_grid",
+      "symbols": {
+        "_first_at": "0x8c12b570",
+        "_last_at": "0x8c130390",
+        "_allocate_at": "0x8c18de4c"
+      },
+      "ranges": [
+        {
+          "offset": 1085092,
+          "size": 184
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_vector_grid",
+          "address": "0x8c118ea4",
+          "size": 184
+        }
+      ],
+      "reference_sha256": "76676eb4164f3aa8d8ea88f22f3ff1dfadacd2831876a0abbdfc930f2aac6689",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch179:184 generated/184 expected,5 differing,first0x8c118eff. Vector field-base correction removes address-order differences; remaining step/last FMOV and multiply register assignment differs. Revisit exact float in-place scaling context."
     }
   ]
 }
