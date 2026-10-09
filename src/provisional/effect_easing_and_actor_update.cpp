@@ -1,0 +1,106 @@
+struct ActorBase {char unknown0[24];
+virtual void unused0();
+virtual void unused1();
+virtual void unused2();
+virtual void unused3();
+virtual void unused4();
+virtual void unused5();
+virtual void unused6();
+virtual void unused7();
+virtual void unused8();
+virtual void unused9();
+virtual void unused10();
+virtual void unused11();
+virtual void unused12();
+virtual void unused13();
+virtual void unused14();
+virtual void unused15();
+virtual void unused16();
+virtual void unused17();
+virtual void unused18();
+virtual void unused19();
+virtual void unused20();
+virtual void unused21();
+virtual void unused22();
+virtual void unused23();
+virtual void unused24();
+virtual void unused25();
+virtual void unused26();
+virtual void unused27();
+virtual void unused28();
+virtual void unused29();
+virtual void unused30();
+virtual void unused31();
+virtual void unused32();
+virtual void unused33();
+virtual void unused34();
+virtual void unused35();
+virtual void unused36();
+virtual void unused37();
+virtual void unused38();
+virtual void unused39();
+virtual void unused40();
+virtual void unused41();
+virtual void unused42();
+virtual void unused43();
+virtual void unused44();
+virtual void unused45();
+virtual void unused46();
+virtual void unused47();
+virtual void unused48();
+virtual void unused49();
+virtual void unused50();
+virtual void unused51();
+virtual void unused52();
+virtual void unused53();
+virtual void unused54();
+virtual void unused55();
+virtual void unused56();
+virtual void unused57();
+virtual void unused58();
+virtual void unused59();
+virtual void unused60();
+virtual void unused61();
+virtual void unused62();
+virtual void unused63();
+virtual void unused64();
+virtual void unused65();
+virtual void unused66();
+virtual void unused67();
+virtual void unused68();
+virtual void unused69();
+virtual void unused70();
+virtual void unused71();
+virtual void unused72();
+virtual void unused73();
+virtual void unused74();
+virtual void unused75();
+virtual void unused76();
+virtual void unused77();
+virtual void unused78();
+virtual void unused79();
+virtual void unused80();
+virtual void unused81();
+virtual void update_value(float);
+};
+struct Actor:ActorBase {char unknown28[24];unsigned int flags;char unknown56[760];short capacity;char unknown818[74];int mode;};
+typedef char check_base[sizeof(ActorBase)==28?1:-1];
+typedef char check_flags[(unsigned long)&((Actor *)0)->flags==52?1:-1];
+typedef char check_capacity[(unsigned long)&((Actor *)0)->capacity==816?1:-1];
+typedef char check_mode[(unsigned long)&((Actor *)0)->mode==892?1:-1];
+extern "C" {
+extern Actor *lookup_at(unsigned int);
+extern void report_at(unsigned short,unsigned short,unsigned int);
+extern float calculate_at(Actor *,unsigned int);
+extern float angle_at(int);
+float effect_cosine_ease(float value) {return (1.0f-angle_at((int)(value*32768.0f)))*0.5f;}
+float effect_power_ease(float value) {float remaining=1.0f-value;return 1.0f-remaining*remaining*remaining*remaining*remaining*remaining;}
+
+}
+static inline int eligible(unsigned short identifier) {Actor *actor;if(identifier!=65535&&(actor=lookup_at(identifier))!=0&&(actor->flags&0x02000800)==0&&actor->mode==14) return 1;return 0;}
+extern "C" unsigned int apply_ring_actor_value(unsigned short identifier,unsigned int amount) {
+ Actor *actor;
+ if(identifier==(unsigned short)-1||(actor=lookup_at(identifier))==0||eligible(identifier)==0) return 0;
+ {int capacity=actor->capacity;if(amount>(unsigned int)capacity) amount=capacity;report_at(65535,identifier,capacity-amount);}
+ actor->update_value(calculate_at(actor,amount));return amount;
+}

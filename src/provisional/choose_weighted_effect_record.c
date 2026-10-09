@@ -1,0 +1,2 @@
+extern int random_at(void);
+unsigned int choose_weighted_effect_record(int count,const float *weights,const unsigned int *values) {float fraction=(float)random_at()/32768.0f;float cumulative=weights[0];int i;for(i=0;i<count-1;++i) {if(cumulative>fraction) return *(const unsigned int *)((const char *)values+((unsigned int)i<<2));cumulative=*(const float *)((const char *)weights+((unsigned int)i<<2))+cumulative;}return *(const unsigned int *)((const char *)values+((unsigned int)count<<2)-4);}
