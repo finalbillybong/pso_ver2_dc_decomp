@@ -1,0 +1,1 @@
+extern void *heap,*parent;extern void *allocate_at(void *,unsigned int);extern void parent_at(void *,void *),initialize_at(void *,void *,void *);void *create_context_actor_8c0e586c(void *parameters) {void *context=allocate_at(heap,36);void *o;if(context) parent_at(context,parent);o=allocate_at(heap,1000);if(o) initialize_at(o,context,parameters);return o;}

@@ -7905,3 +7905,7 @@ Batch169 investigation: SDK helper 0x8c37d534 is parked after one hypothesis (72
 ## Proven reconstruction families, batch 180
 
 20 complete exact functions add 2,128 bytes, preserving all 1999 prior matches. Totals: 2019 functions / 1945 modules / 148,528 compiled function-range bytes / zero reconstructed data bytes / 4,014,384 retained reference bytes. See [BATCH.md](BATCH.md) for measured experiments and verification; historical efficiency evidence remains in [EFFICIENCY.md](EFFICIENCY.md).
+
+## Proven reconstruction families, batch 181
+
+38 complete exact functions add 3,684 bytes, preserving all 2019 prior matches. Totals: 2057 functions / 1983 modules / 152,212 compiled function-range bytes / zero reconstructed data bytes / 4,010,700 retained reference bytes. See [BATCH.md](BATCH.md) for measured experiments and verification; historical efficiency evidence remains in [EFFICIENCY.md](EFFICIENCY.md).

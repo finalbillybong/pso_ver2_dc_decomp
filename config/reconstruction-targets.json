@@ -63941,6 +63941,1307 @@
       "status": "parked",
       "hypotheses_tested": 3,
       "reason": "Batch180: 128 generated/128 expected, 4 differing; first 0x8c119c92. Unsigned byte offsets remove MUL.L; explicit register mask restores saved registers. Four bytes remain in loop initialization/mask scheduling. Revisit exact loop-local ordering context, no more spelling variants."
+    },
+    {
+      "id": "create_context_actor_8c037608",
+      "source": "src/objects/create_context_actor_8c037608.c",
+      "address": "0x8c037608",
+      "entry": "_create_context_actor_8c037608",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c036e9c"
+      },
+      "ranges": [
+        {
+          "offset": 161288,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c037608",
+          "address": "0x8c037608",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "fc9d9fcb27b86443b4766b9aa23975ba722de936dde8f2b4fa5ff9359eead9c9",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c038738",
+      "source": "src/objects/create_context_actor_8c038738.c",
+      "address": "0x8c038738",
+      "entry": "_create_context_actor_8c038738",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c038104"
+      },
+      "ranges": [
+        {
+          "offset": 165688,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c038738",
+          "address": "0x8c038738",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "37eb6db64523e09ae06e09bbe098eb03ef4f74b6bd901122b5f54ee29a966d1c",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c04ccf8",
+      "source": "src/objects/create_context_actor_8c04ccf8.c",
+      "address": "0x8c04ccf8",
+      "entry": "_create_context_actor_8c04ccf8",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c04c6ec"
+      },
+      "ranges": [
+        {
+          "offset": 249080,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c04ccf8",
+          "address": "0x8c04ccf8",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "c07f3b8c3eb8eeacf5f129390e8d2a42d52f2e99779ed6ffb2a8e231f2b81732",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c0500c0",
+      "source": "src/objects/create_context_actor_8c0500c0.c",
+      "address": "0x8c0500c0",
+      "entry": "_create_context_actor_8c0500c0",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c04faf0"
+      },
+      "ranges": [
+        {
+          "offset": 262336,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c0500c0",
+          "address": "0x8c0500c0",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "6805b84464976aa0d9a6071eeb882c6156952c8df524762f773ef948f8ae60ed",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c07b5f4",
+      "source": "src/objects/create_context_actor_8c07b5f4.c",
+      "address": "0x8c07b5f4",
+      "entry": "_create_context_actor_8c07b5f4",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c07b4c4"
+      },
+      "ranges": [
+        {
+          "offset": 439796,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c07b5f4",
+          "address": "0x8c07b5f4",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "72d327a6a6a32928d396a685112b1a390f493e66960b3afbe045743d386d1039",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c0bcc5c",
+      "source": "src/objects/create_context_actor_8c0bcc5c.c",
+      "address": "0x8c0bcc5c",
+      "entry": "_create_context_actor_8c0bcc5c",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c0bc534"
+      },
+      "ranges": [
+        {
+          "offset": 707676,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c0bcc5c",
+          "address": "0x8c0bcc5c",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "310453eb2f7e1d8a6a06301c89a83e6dba0c8494511b693ce67c0540f96b4bfb",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c0bfd04",
+      "source": "src/objects/create_context_actor_8c0bfd04.c",
+      "address": "0x8c0bfd04",
+      "entry": "_create_context_actor_8c0bfd04",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c0bf864"
+      },
+      "ranges": [
+        {
+          "offset": 720132,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c0bfd04",
+          "address": "0x8c0bfd04",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "bee1a86d2edb63587ec578a0cbce83b0c6422174e7af3f7fa9fd21ec22c441e8",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c0ce160",
+      "source": "src/objects/create_context_actor_8c0ce160.c",
+      "address": "0x8c0ce160",
+      "entry": "_create_context_actor_8c0ce160",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c0cd98c"
+      },
+      "ranges": [
+        {
+          "offset": 778592,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c0ce160",
+          "address": "0x8c0ce160",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "919e3a5d78a017a33de994e59575b7b6cb6e0f90b94a90423b1273d44b3878a6",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c0e586c",
+      "source": "src/objects/create_context_actor_8c0e586c.c",
+      "address": "0x8c0e586c",
+      "entry": "_create_context_actor_8c0e586c",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c0e5148"
+      },
+      "ranges": [
+        {
+          "offset": 874604,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c0e586c",
+          "address": "0x8c0e586c",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "901fcfe83cdc4a7b3489e1e10ec1fdabe613473de759c1a8c1e4e24e43949cf1",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c0e6590",
+      "source": "src/objects/create_context_actor_8c0e6590.c",
+      "address": "0x8c0e6590",
+      "entry": "_create_context_actor_8c0e6590",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c0e5de8"
+      },
+      "ranges": [
+        {
+          "offset": 877968,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c0e6590",
+          "address": "0x8c0e6590",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "ffa485ae95212e9e100156c2091e8f0a602107ebc51788b6bd48e6bd5bd69871",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c0f7b74",
+      "source": "src/objects/create_context_actor_8c0f7b74.c",
+      "address": "0x8c0f7b74",
+      "entry": "_create_context_actor_8c0f7b74",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c0f7c7c"
+      },
+      "ranges": [
+        {
+          "offset": 949108,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c0f7b74",
+          "address": "0x8c0f7b74",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "196b6571af57f41d5d6150a4f39e98501fd04eecf7d976ef46ed2e8aadcfc1d3",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c108c0c",
+      "source": "src/objects/create_context_actor_8c108c0c.c",
+      "address": "0x8c108c0c",
+      "entry": "_create_context_actor_8c108c0c",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c108728"
+      },
+      "ranges": [
+        {
+          "offset": 1018892,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c108c0c",
+          "address": "0x8c108c0c",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "4f4ce1b816b00634091d3c1fa231e7b1bef462749ba497acbea8f0dd8a555d7a",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c124e6c",
+      "source": "src/objects/create_context_actor_8c124e6c.c",
+      "address": "0x8c124e6c",
+      "entry": "_create_context_actor_8c124e6c",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c124afc"
+      },
+      "ranges": [
+        {
+          "offset": 1134188,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c124e6c",
+          "address": "0x8c124e6c",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "a28c5b4fbdba937a78744f2996b93ded6523160badedbb2473108aeafc2c031e",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c15daa0",
+      "source": "src/objects/create_context_actor_8c15daa0.c",
+      "address": "0x8c15daa0",
+      "entry": "_create_context_actor_8c15daa0",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c15d8d4"
+      },
+      "ranges": [
+        {
+          "offset": 1366688,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c15daa0",
+          "address": "0x8c15daa0",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "13d9b0d20eca466127aec5da7bc4ae9bd084cf93737999f45a9eeae8e48ece7b",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c177cb0",
+      "source": "src/objects/create_context_actor_8c177cb0.c",
+      "address": "0x8c177cb0",
+      "entry": "_create_context_actor_8c177cb0",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c177ae4"
+      },
+      "ranges": [
+        {
+          "offset": 1473712,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c177cb0",
+          "address": "0x8c177cb0",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "a753dfd3321ffb9bec129c4700eade50967a271ea17ed703cfc55a227070cd02",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c177f90",
+      "source": "src/objects/create_context_actor_8c177f90.c",
+      "address": "0x8c177f90",
+      "entry": "_create_context_actor_8c177f90",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c177dc4"
+      },
+      "ranges": [
+        {
+          "offset": 1474448,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c177f90",
+          "address": "0x8c177f90",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "149b3aeeb9a27be346f6a989d9a073a1d5bc1ad65e2ee99e57cc7e2950937992",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c1ad294",
+      "source": "src/objects/create_context_actor_8c1ad294.c",
+      "address": "0x8c1ad294",
+      "entry": "_create_context_actor_8c1ad294",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c1ad480"
+      },
+      "ranges": [
+        {
+          "offset": 1692308,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c1ad294",
+          "address": "0x8c1ad294",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "ab7350fe004dfd2a3fdabb62b878c824af2113937ba7d0c21f1616639e89415b",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c1b0b10",
+      "source": "src/objects/create_context_actor_8c1b0b10.c",
+      "address": "0x8c1b0b10",
+      "entry": "_create_context_actor_8c1b0b10",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c1b0b74"
+      },
+      "ranges": [
+        {
+          "offset": 1706768,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c1b0b10",
+          "address": "0x8c1b0b10",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "97997a37d81e2b702d08a4bec88e339c83244e8077f22b31c5f5b26445ca787d",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c1b35e0",
+      "source": "src/objects/create_context_actor_8c1b35e0.c",
+      "address": "0x8c1b35e0",
+      "entry": "_create_context_actor_8c1b35e0",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c1b3644"
+      },
+      "ranges": [
+        {
+          "offset": 1717728,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c1b35e0",
+          "address": "0x8c1b35e0",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "e1c24a5ce9d337d59404a1477f4106198d62f4876d081a45d98cf9a959590b28",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c1b73c0",
+      "source": "src/objects/create_context_actor_8c1b73c0.c",
+      "address": "0x8c1b73c0",
+      "entry": "_create_context_actor_8c1b73c0",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c1b7424"
+      },
+      "ranges": [
+        {
+          "offset": 1733568,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c1b73c0",
+          "address": "0x8c1b73c0",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "e68e764278f37dc91028ff4615acf4e9bccaba47deddf3b34105cf629dc4c7cf",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c1bb0d4",
+      "source": "src/objects/create_context_actor_8c1bb0d4.c",
+      "address": "0x8c1bb0d4",
+      "entry": "_create_context_actor_8c1bb0d4",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c1bb138"
+      },
+      "ranges": [
+        {
+          "offset": 1749204,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c1bb0d4",
+          "address": "0x8c1bb0d4",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "6c28cae24c335ff0be90296f5834e52c5dee9fe9a47b5b7c31f4de5c87da1c50",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c1bbe54",
+      "source": "src/objects/create_context_actor_8c1bbe54.c",
+      "address": "0x8c1bbe54",
+      "entry": "_create_context_actor_8c1bbe54",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c1bbeb8"
+      },
+      "ranges": [
+        {
+          "offset": 1752660,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c1bbe54",
+          "address": "0x8c1bbe54",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "186787dbb2466337ebfd2e130aaa6f025cb2e8bcbf5a46b6122fda236946e110",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_context_actor_8c1bc79c",
+      "source": "src/objects/create_context_actor_8c1bc79c.c",
+      "address": "0x8c1bc79c",
+      "entry": "_create_context_actor_8c1bc79c",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c1bc800"
+      },
+      "ranges": [
+        {
+          "offset": 1755036,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_context_actor_8c1bc79c",
+          "address": "0x8c1bc79c",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "302a586074b6bea0a0e0b8524b15726daa59c4f97c47da88a83fdd04e655c111",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_grid_resource_8c11a4a8",
+      "source": "src/objects/create_grid_resource_8c11a4a8.c",
+      "address": "0x8c11a4a8",
+      "entry": "_create_grid_resource_8c11a4a8",
+      "symbols": {
+        "_global_owner": "0x8c4d8324",
+        "_descriptor": "0x8c3106e0",
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610"
+      },
+      "ranges": [
+        {
+          "offset": 1090728,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_grid_resource_8c11a4a8",
+          "address": "0x8c11a4a8",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "77003897fe0e47144f6d1dd362d5fd7fe71dd33aacadb74fa3a1fca19883d928",
+      "boundary_review": "Saved raw function and following entry reviewed; exact instruction skeleton includes two stack zeros, null allocation branch, global assignment and natural pool alignment. Allocation1088 and constructor ABI unchanged; globals remain reference-only.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_grid_resource_8c11a6d0",
+      "source": "src/objects/create_grid_resource_8c11a6d0.c",
+      "address": "0x8c11a6d0",
+      "entry": "_create_grid_resource_8c11a6d0",
+      "symbols": {
+        "_global_owner": "0x8c4d8328",
+        "_descriptor": "0x8c3106fc",
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610"
+      },
+      "ranges": [
+        {
+          "offset": 1091280,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_grid_resource_8c11a6d0",
+          "address": "0x8c11a6d0",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "6c777fb24bbfd89659065d3a99c7b07e6348fc4b1e3d08af9905d26bf518c2a9",
+      "boundary_review": "Saved raw function and following entry reviewed; exact instruction skeleton includes two stack zeros, null allocation branch, global assignment and natural pool alignment. Allocation1088 and constructor ABI unchanged; globals remain reference-only.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_grid_resource_8c1290b4",
+      "source": "src/objects/create_grid_resource_8c1290b4.c",
+      "address": "0x8c1290b4",
+      "entry": "_create_grid_resource_8c1290b4",
+      "symbols": {
+        "_global_owner": "0x8c4d9960",
+        "_descriptor": "0x8c3123b8",
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610"
+      },
+      "ranges": [
+        {
+          "offset": 1151156,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_grid_resource_8c1290b4",
+          "address": "0x8c1290b4",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "1f195b79fb891dc3ef8ec05817ea24dc4905cdcbdaead89215120a87c3bba2cf",
+      "boundary_review": "Saved raw function and following entry reviewed; exact instruction skeleton includes two stack zeros, null allocation branch, global assignment and natural pool alignment. Allocation1088 and constructor ABI unchanged; globals remain reference-only.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_grid_resource_owner",
+      "source": "src/objects/create_grid_resource_owner.c",
+      "address": "0x8c11a2a4",
+      "entry": "_create_grid_resource_owner",
+      "symbols": {
+        "_global_owner": "0x8c4d8320",
+        "_descriptor": "0x8c3106c4",
+        "_allocate_at": "0x8c011ecc",
+        "_initialize_at": "0x8c03d610"
+      },
+      "ranges": [
+        {
+          "offset": 1090212,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_grid_resource_owner",
+          "address": "0x8c11a2a4",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "632e5e6adf3a40051c596e748338fbbfd69e06e899c8405acafc54fe06a25fd4",
+      "boundary_review": "Raw11a2a4..11a2ec includes call delay slots, two stack args, literals and next release entry; sole return is void. Original1088-byte allocation and descriptor pointer preserved.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_record_grid_actor",
+      "source": "src/objects/create_record_grid_actor.c",
+      "address": "0x8c11a9d8",
+      "entry": "_create_record_grid_actor",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be94",
+        "_allocate_at": "0x8c122700",
+        "_parent_at": "0x8c0130ac",
+        "_initialize_at": "0x8c11aae4"
+      },
+      "ranges": [
+        {
+          "offset": 1092056,
+          "size": 100
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_record_grid_actor",
+          "address": "0x8c11a9d8",
+          "size": 100
+        }
+      ],
+      "reference_sha256": "8fb1083ec2685b824bafb65480470d1ec2017ce16f49afc5cdad94e250cb4755",
+      "boundary_review": "Raw11a8d0..11aa3c reviewed through four returns, all literals and adjacent entries. Render parameter offsets/size checked. Original null handling and reference-only descriptors/resource handles retained; library implementations are not copied.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "draw_view_nodes",
+      "source": "src/objects/draw_view_nodes.cpp",
+      "address": "0x8c0e1c48",
+      "entry": "_draw_view_nodes",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 859208,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_view_nodes",
+          "address": "0x8c0e1c48",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "ceef7ac84416bde80cbe6a76fb2f9b2c0da5c7beed8bacbf17b0344a04153f83",
+      "language": "c++",
+      "boundary_review": "Raw0e1c08..0e1cd4 reviewed through each return and all literals/adjacent entries. List count0/items4, node vptr4 and provisional parameter/owner offsets checked. Preserve unchecked list traversal and short-circuit transition gate.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "draw_view_transition_if_active",
+      "source": "src/objects/draw_view_transition_if_active.c",
+      "address": "0x8c0db51c",
+      "entry": "_draw_view_transition_if_active",
+      "symbols": {
+        "_draw_at": "0x8c0db544"
+      },
+      "ranges": [
+        {
+          "offset": 832796,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_view_transition_if_active",
+          "address": "0x8c0db51c",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "de8909fc1f26d2fe99290557ad09759da0c024acc3d60ca346cf92ffceb26550",
+      "boundary_review": "Raw0db30c..0db5d4 fully reviewed through branches/delay slots, four return boundaries and literal pools. State4,timer36,flags52,current72..84,steps88,scale92,elapsed100 checked. Transition emitter remains unresolved; no behavior correction.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "grid_view_visible",
+      "source": "src/objects/grid_view_visible.c",
+      "address": "0x8c119f9c",
+      "entry": "_grid_view_visible",
+      "symbols": {
+        "_camera": "0x8c46ee84",
+        "_transform_at": "0x8c3be280",
+        "_project_at": "0x8c38ad50",
+        "_length_at": "0x8c041d40"
+      },
+      "ranges": [
+        {
+          "offset": 1089436,
+          "size": 304
+        }
+      ],
+      "functions": [
+        {
+          "name": "grid_view_visible",
+          "address": "0x8c119f9c",
+          "size": 304
+        }
+      ],
+      "reference_sha256": "1593f9a9c46813ae2cdf74888a88a7ac568ac1b39e74929c7c495b99cd64bd0e",
+      "boundary_review": "Raw119f9c..11a0cc fully reviewed including both float branches, shared epilogue and six literals. Position60 and camera right40 checked. Preserve radius/2 division, strict float comparisons, projected640 threshold and observed NaN behavior.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_number_view_node",
+      "source": "src/objects/initialize_number_view_node.c",
+      "address": "0x8c0e1c7c",
+      "entry": "_initialize_number_view_node",
+      "symbols": {
+        "_base_at": "0x8c11a818"
+      },
+      "ranges": [
+        {
+          "offset": 859260,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_number_view_node",
+          "address": "0x8c0e1c7c",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "b6dfad0ea10cf250e507c1ceade9db11995d78dc4b9f099e71ac4342158053dd",
+      "boundary_review": "Raw0e1c08..0e1cd4 reviewed through each return and all literals/adjacent entries. List count0/items4, node vptr4 and provisional parameter/owner offsets checked. Preserve unchecked list traversal and short-circuit transition gate.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_rectangle_view_node",
+      "source": "src/objects/initialize_rectangle_view_node.c",
+      "address": "0x8c11a838",
+      "entry": "_initialize_rectangle_view_node",
+      "symbols": {
+        "_base_at": "0x8c0e14ac"
+      },
+      "ranges": [
+        {
+          "offset": 1091640,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_rectangle_view_node",
+          "address": "0x8c11a838",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "cda8cc48f78a9127a2ab0c641c3eab43ca49db0d5bb676b0db691d93228132f6",
+      "boundary_review": "Raw11a838..11a88c fully reviewed through return and two literals, adjacent destructor. Source and destination scalar offsets checked; base receives only self.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "interpolate_view_parameters",
+      "source": "src/objects/interpolate_view_parameters.c",
+      "address": "0x8c0db430",
+      "entry": "_interpolate_view_parameters",
+      "symbols": {
+        "_finish_at": "0x8c0dc854"
+      },
+      "ranges": [
+        {
+          "offset": 832560,
+          "size": 236
+        }
+      ],
+      "functions": [
+        {
+          "name": "interpolate_view_parameters",
+          "address": "0x8c0db430",
+          "size": 236
+        }
+      ],
+      "reference_sha256": "f96e22bba277b6ecc669f27768fedc476ae4f38989d1e2d247675988cc5c699a",
+      "boundary_review": "Raw0db30c..0db5d4 fully reviewed through branches/delay slots, four return boundaries and literal pools. State4,timer36,flags52,current72..84,steps88,scale92,elapsed100 checked. Transition emitter remains unresolved; no behavior correction.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "load_grid_render_resource",
+      "source": "src/objects/load_grid_render_resource.c",
+      "address": "0x8c11a8d0",
+      "entry": "_load_grid_render_resource",
+      "symbols": {
+        "_path": "0x8c3108e4",
+        "_resource": "0x8c4d8340",
+        "_load_at": "0x8c118528"
+      },
+      "ranges": [
+        {
+          "offset": 1091792,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "load_grid_render_resource",
+          "address": "0x8c11a8d0",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "85034356b7ef7e52aa876ca7652d2590a9595af4667f1faa8310ae2849236803",
+      "boundary_review": "Raw11a8d0..11aa3c reviewed through four returns, all literals and adjacent entries. Render parameter offsets/size checked. Original null handling and reference-only descriptors/resource handles retained; library implementations are not copied.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "release_grid_render_resource",
+      "source": "src/objects/release_grid_render_resource.c",
+      "address": "0x8c11a8f0",
+      "entry": "_release_grid_render_resource",
+      "symbols": {
+        "_resource": "0x8c4d8340",
+        "_release_at": "0x8c37d534",
+        "_free_at": "0x8c011ec0"
+      },
+      "ranges": [
+        {
+          "offset": 1091824,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_grid_render_resource",
+          "address": "0x8c11a8f0",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "87be6ae97dcc55b7d923dd77ce771f339ac10307c1ab9aeda462ab8addfb2dc4",
+      "boundary_review": "Raw11a8d0..11aa3c reviewed through four returns, all literals and adjacent entries. Render parameter offsets/size checked. Original null handling and reference-only descriptors/resource handles retained; library implementations are not copied.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "release_render_resource_8c1db4e4",
+      "source": "src/objects/release_render_resource_8c1db4e4.c",
+      "address": "0x8c1db4e4",
+      "entry": "_release_render_resource_8c1db4e4",
+      "symbols": {
+        "_resource": "0x8c4e2f60",
+        "_release_at": "0x8c37d534",
+        "_free_at": "0x8c011ec0"
+      },
+      "ranges": [
+        {
+          "offset": 1881316,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "release_render_resource_8c1db4e4",
+          "address": "0x8c1db4e4",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "0771da1d1af58658c194bd46dee7419f02bd1ae1e1d9a6a72e70c50b89adc6c5",
+      "boundary_review": "Saved raw range includes return/delay slot, complete literal pool and following entry. Full executable skeleton checked byte-for-byte against reviewed template. Factory callees have reviewed self/parent/parameter prologues; allocation36 parent0130ac and heap122700 unchanged. Original unchecked parent failure behavior preserved; no copied executable data in source.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "update_view_nodes",
+      "source": "src/objects/update_view_nodes.cpp",
+      "address": "0x8c0e1c08",
+      "entry": "_update_view_nodes",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 859144,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_view_nodes",
+          "address": "0x8c0e1c08",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "42ef893e261e73759678325c8239870351b7b14a7b6830be61881ed66f58e6f6",
+      "language": "c++",
+      "boundary_review": "Raw0e1c08..0e1cd4 reviewed through each return and all literals/adjacent entries. List count0/items4, node vptr4 and provisional parameter/owner offsets checked. Preserve unchecked list traversal and short-circuit transition gate.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_derived_grid_view",
+      "source": "src/provisional/create_derived_grid_view.c",
+      "address": "0x8c11a300",
+      "entry": "_create_derived_grid_view",
+      "symbols": {
+        "_heap": "0x8c4d97e0",
+        "_parent": "0x8c44be98",
+        "_object_name": "0x8c3107ec",
+        "_owner": "0x8c4d8320",
+        "_descriptor": "0x8c31070c",
+        "_allocate_at": "0x8c122700",
+        "_base_at": "0x8c119d60",
+        "_set_at": "0x8c052098",
+        "_finish_at": "0x8c053f34"
+      },
+      "ranges": [
+        {
+          "offset": 1090304,
+          "size": 176
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_derived_grid_view",
+          "address": "0x8c11a300",
+          "size": 176
+        }
+      ],
+      "reference_sha256": "a7f1e69994282cc58163800018785685c3e47ce109a9f69d8d8fbdae5983eb4e",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch181:176 generated/176expected,26differing; first0x8c11a31c. Self-home store/call argument ordering and owner-resource pointer registers differ. Explicit inline parent argument generated identical output. Revisit only concrete native constructor/inlining or resource accessor context."
+    },
+    {
+      "id": "draw_view_border",
+      "source": "src/provisional/draw_view_border.c",
+      "address": "0x8c0db5d4",
+      "entry": "_draw_view_border",
+      "symbols": {
+        "_transform": "0x8c46fe00",
+        "_begin_at": "0x8c38aeb4",
+        "_transform_at": "0x8c3827d8",
+        "_mode_at": "0x8c38af22",
+        "_draw_at": "0x8c0db800",
+        "_end_at": "0x8c38af12"
+      },
+      "ranges": [
+        {
+          "offset": 832980,
+          "size": 556
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_view_border",
+          "address": "0x8c0db5d4",
+          "size": 556
+        }
+      ],
+      "reference_sha256": "5b6dbc335672e8fb882943214e503197a1e75de27980259445027c1b612c470d",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch181: 564 generated/556 expected, 339 differing; first 0x8c0db5ec. Saved-float order improved but affine transform temporaries, stack addressing and cap/remaining scheduling still produce eight extra bytes. Revisit exact affine helper representative before expanding renderer siblings."
+    },
+    {
+      "id": "initialize_grid_render_state",
+      "source": "src/provisional/initialize_grid_render_state.c",
+      "address": "0x8c11a920",
+      "entry": "_initialize_grid_render_state",
+      "symbols": {
+        "_resource": "0x8c4d8340",
+        "_descriptor": "0x8c3108d0",
+        "_mode_at": "0x8c380ab8",
+        "_begin_at": "0x8c391c94",
+        "_set_at": "0x8c37ebdc",
+        "_end_at": "0x8c391cc4"
+      },
+      "ranges": [
+        {
+          "offset": 1091872,
+          "size": 184
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_grid_render_state",
+          "address": "0x8c11a920",
+          "size": 184
+        }
+      ],
+      "reference_sha256": "d49eb06e92320b8325f63f5a6cc629390a60b351245d9bf19d8bee0980c3b1ba",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch181: 188 generated/184 expected, 111 differing; first 0x8c11a920. Initial parameter setup matches modulo relocated pool; call argument scheduling and local two-float updates add four bytes. Revisit exact parameter-call type or local aggregate context."
+    },
+    {
+      "id": "initialize_record_grid_actor",
+      "source": "src/provisional/initialize_record_grid_actor.cpp",
+      "language": "c++",
+      "address": "0x8c11aae4",
+      "entry": "_initialize_record_grid_actor",
+      "symbols": {
+        "_object_name": "0x8c310998",
+        "_records": "0x8c46ed10",
+        "_owner": "0x8c4d8360",
+        "_descriptor": "0x8c31099c",
+        "_secondary_descriptor": "0x8c3109c8",
+        "_loader_name": "0x8c310d28",
+        "_base_at": "0x8c012008",
+        "_embedded_at": "0x8c178018",
+        "_set_at": "0x8c052098",
+        "_reset_at": "0x8c01c838",
+        "_profile0_at": "0x8c17948c",
+        "_profile1_at": "0x8c1794a0",
+        "_profile2_at": "0x8c1794b4",
+        "_bind_at": "0x8c0121a0",
+        "_finish_at": "0x8c053e1c",
+        "_load_at": "0x8c161bdc",
+        "_profile_at": "0x8c1794c8",
+        "_start_at": "0x8c1780a8",
+        "_activate_at": "0x8c11b3dc",
+        "_child_at": "0x8c15dcdc",
+        "_link_at": "0x8c15e9a0"
+      },
+      "ranges": [
+        {
+          "offset": 1092324,
+          "size": 1048
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_record_grid_actor",
+          "address": "0x8c11aae4",
+          "size": 1048
+        }
+      ],
+      "reference_sha256": "ef214b4fd87b983db33ea940a382d117ad778927c55c2892ddd0526363303bab",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch181: 1052 generated/1048 expected, 767 differing; first 0x8c11aaf2. Cached signed identifier removes repeated loads; register lifetimes in owner-resource/vector initialization, two-slot clear loop and literal scheduling still differ. Revisit exact context constructor/accessor evidence before further hypotheses."
+    },
+    {
+      "id": "draw_view_transition",
+      "source": "src/provisional/draw_view_transition.c",
+      "address": "0x8c0db544",
+      "entry": "_draw_view_transition",
+      "symbols": {
+        "_frame": "0x8c3073c4",
+        "_draw": "0x8c3073fc",
+        "_draw_at": "0x8c0e86c0"
+      },
+      "ranges": [
+        {
+          "offset": 832836,
+          "size": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "draw_view_transition",
+          "address": "0x8c0db544",
+          "size": 144
+        }
+      ],
+      "reference_sha256": "f041700b7ab76594ced502b85dbd30ebf743a82854319fc479407aec9b3b923d",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch181: 144 generated/144 expected, 59 differing; first 0x8c0db54f. Scalar frame/global pointer registers, float addition lifetimes and call-literal ordering differ. Revisit exact geometry/accessor or declared call context."
+    },
+    {
+      "id": "update_view_transition",
+      "source": "src/provisional/update_view_transition.c",
+      "address": "0x8c0db30c",
+      "entry": "_update_view_transition",
+      "symbols": {
+        "_elapsed_at": "0x8c2097c4",
+        "_emit_at": "0x8c05fbf8"
+      },
+      "ranges": [
+        {
+          "offset": 832268,
+          "size": 292
+        }
+      ],
+      "functions": [
+        {
+          "name": "update_view_transition",
+          "address": "0x8c0db30c",
+          "size": 292
+        }
+      ],
+      "reference_sha256": "830f0402f569b28f959d1d69a2670d7eb25627b411a8f353debcfe50f0dd1f68",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch181: 288 generated/292 expected, 153 differing; first 0x8c0db318. One missing natural branch-delay NOP changes size and literal displacements; raw shared early-return control flow not recovered. Revisit exact inline flag-clear/branch structure, never insert padding."
     }
   ]
 }

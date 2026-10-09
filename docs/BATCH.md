@@ -1,42 +1,60 @@
-# Reconstruction batch: 180: proven reconstruction families
+# Reconstruction batch: 181: proven reconstruction families
 
-20 new matching functions / 2,128 bytes. All 1999 prior functions preserved.
+38 new matching functions / 3,684 bytes. All 2019 prior functions preserved.
 
-2019 exact functions in 1945 modules; 148,528 compiled function-range bytes; 0 reconstructed data bytes; 4,014,384 retained reference bytes. Whole-image coverage 3.5679% is not code completion.
+2057 exact functions in 1983 modules; 152,212 compiled function-range bytes; 0 reconstructed data bytes; 4,010,700 retained reference bytes. Whole-image coverage 3.6564% is not code completion.
 
 | Module | Address | Complete bytes |
 | --- | --- | ---: |
-| create_control_owner_8c03d1b8 | 0x8c03d1b8 | 48 |
-| create_control_owner_8c03d250 | 0x8c03d250 | 48 |
-| finalize_view_8c0db2cc | 0x8c0db2cc | 64 |
-| configure_grid_view | 0x8c119290 | 88 |
-| update_grid_view_parameters | 0x8c119364 | 268 |
-| initialize_pair_grid_view | 0x8c119470 | 204 |
-| update_pair_grid_view | 0x8c119598 | 104 |
-| finalize_pair_grid_view | 0x8c119600 | 64 |
-| configure_pair_grid_view | 0x8c119640 | 76 |
-| create_fitted_pair_grid_view | 0x8c11968c | 72 |
-| approach_pair_grid_offset | 0x8c119988 | 68 |
-| remove_pair_grid_node | 0x8c119c00 | 120 |
-| pair_grid_view_ready | 0x8c119cf8 | 104 |
-| draw_rising_grid_view | 0x8c119f04 | 152 |
-| draw_grid_view_records | 0x8c11a0cc | 292 |
-| initialize_control_block_owner | 0x8c1336b4 | 100 |
-| finalize_view_8c1f1a5c | 0x8c1f1a5c | 64 |
-| finalize_view_8c218070 | 0x8c218070 | 64 |
-| finalize_view_8c230684 | 0x8c230684 | 64 |
-| finalize_view_8c24e044 | 0x8c24e044 | 64 |
+| create_context_actor_8c037608 | 0x8c037608 | 100 |
+| create_context_actor_8c038738 | 0x8c038738 | 100 |
+| create_context_actor_8c04ccf8 | 0x8c04ccf8 | 100 |
+| create_context_actor_8c0500c0 | 0x8c0500c0 | 100 |
+| create_context_actor_8c07b5f4 | 0x8c07b5f4 | 100 |
+| create_context_actor_8c0bcc5c | 0x8c0bcc5c | 100 |
+| create_context_actor_8c0bfd04 | 0x8c0bfd04 | 100 |
+| create_context_actor_8c0ce160 | 0x8c0ce160 | 100 |
+| interpolate_view_parameters | 0x8c0db430 | 236 |
+| draw_view_transition_if_active | 0x8c0db51c | 40 |
+| update_view_nodes | 0x8c0e1c08 | 64 |
+| draw_view_nodes | 0x8c0e1c48 | 52 |
+| initialize_number_view_node | 0x8c0e1c7c | 88 |
+| create_context_actor_8c0e586c | 0x8c0e586c | 100 |
+| create_context_actor_8c0e6590 | 0x8c0e6590 | 100 |
+| create_context_actor_8c0f7b74 | 0x8c0f7b74 | 100 |
+| create_context_actor_8c108c0c | 0x8c108c0c | 100 |
+| grid_view_visible | 0x8c119f9c | 304 |
+| create_grid_resource_owner | 0x8c11a2a4 | 72 |
+| create_grid_resource_8c11a4a8 | 0x8c11a4a8 | 72 |
+| create_grid_resource_8c11a6d0 | 0x8c11a6d0 | 72 |
+| initialize_rectangle_view_node | 0x8c11a838 | 84 |
+| load_grid_render_resource | 0x8c11a8d0 | 32 |
+| release_grid_render_resource | 0x8c11a8f0 | 48 |
+| create_record_grid_actor | 0x8c11a9d8 | 100 |
+| create_context_actor_8c124e6c | 0x8c124e6c | 100 |
+| create_grid_resource_8c1290b4 | 0x8c1290b4 | 72 |
+| create_context_actor_8c15daa0 | 0x8c15daa0 | 100 |
+| create_context_actor_8c177cb0 | 0x8c177cb0 | 100 |
+| create_context_actor_8c177f90 | 0x8c177f90 | 100 |
+| create_context_actor_8c1ad294 | 0x8c1ad294 | 100 |
+| create_context_actor_8c1b0b10 | 0x8c1b0b10 | 100 |
+| create_context_actor_8c1b35e0 | 0x8c1b35e0 | 100 |
+| create_context_actor_8c1b73c0 | 0x8c1b73c0 | 100 |
+| create_context_actor_8c1bb0d4 | 0x8c1bb0d4 | 100 |
+| create_context_actor_8c1bbe54 | 0x8c1bbe54 | 100 |
+| create_context_actor_8c1bc79c | 0x8c1bc79c | 100 |
+| release_render_resource_8c1db4e4 | 0x8c1db4e4 | 48 |
 
-This batch adds 20 complete exact functions / 2,128 compiled function-range bytes in 20 modules, preserving all 1,999 prior functions and source/header hashes. Totals: 2,019 functions / 1,945 modules / 148,528 compiled function-range bytes / zero separately reconstructed static-data bytes / 4,014,384 retained reference bytes. Whole-image coverage is 3.5679%; this is not code-completion percentage. The code-only denominator remains unknown.
+This batch adds 38 complete exact functions / 3,684 compiled function-range bytes in 38 modules, preserving all 2,019 prior functions and source/header hashes. Totals: 2,057 functions / 1,983 modules / 152,212 compiled function-range bytes / zero separately reconstructed static-data bytes / 4,010,700 retained reference bytes. Whole-image coverage is 3.6564%; this is not code-completion percentage. The code-only denominator remains unknown.
 
-Exact additions cover two control-owner factories, a 68-byte aggregate-copy constructor, grid-view configuration and interpolation, pair-view allocation/initialization, node removal, readiness checks, native virtual finalizers, and rising-view and record drawing. The 292-byte record renderer preserves three local aggregates, 44-byte records and separate style branches. The 268-byte interpolator retains the initial unsigned step count for the first two divisions and reloads after the observed store. Runtime calls, configuration tables, matrix data and globals remain reference-dependent; no data credit is claimed.
+Exact additions include a 304-byte view visibility check, a 236-byte four-field interpolator, native virtual node update/draw loops, scalar node initialization, resource owners and loading/release, and two-allocation actor factories. The visibility check preserves the called vector normalization and observed floating-point comparisons. Factory construction retains the original allocated pointer and observed null checks. A reviewed 100-byte factory became the evidence-backed template for 23 sibling factories; all 23 matched on their first compilation. One further resource releaser also matched first try. Referenced runtime routines, constructor bodies, descriptors and globals remain reference-dependent; no static-data credit is claimed.
 
-The collection used 39 distinct hypotheses / 40 compiler attempts, one C90 declaration syntax rejection and seven duplicate binary outputs. Five duplicate outputs are successfully matched sibling finalizers at distinct reviewed addresses; two are unsuccessful repeated outputs within a target. The syntax correction retested the same hypothesis. Compilation totaled 1.215 seconds. A focused scan of the exact native finalizer produced five first-try matches. Existing trial, binary grouping, admission, staged audit and publication tools were reused; no public tooling or compiler-setting changes were needed.
+The collection used 48 distinct hypotheses / 49 compiler attempts, one pointer-declaration syntax correction and one duplicate output from an unsuccessful factory variation. The correction retested the same hypothesis. Compilation totaled 1.477 seconds. Existing candidate, binary grouping, admission, verification, staged audit and publication tools were reused; no public tooling or compiler-setting changes were needed.
 
-Seven targets are parked with complete generated/expected sizes, differing-byte counts, first mismatch, cumulative hypothesis counts and revisit conditions in the unresolved queue. The ring insertion is 536/536 bytes with 19 differing after three hypotheses; node refresh is 128/128 with four differing after three. The factory remains 132/132 with 13 differing and identical output after flattening. Remaining blockers concern self/stack argument evaluation, float lifetime and literal scheduling. Provisional source is retained without completion credit. Historical parked targets, including 0x8c045f04 and 0x8c05fbf8, remain unchanged and incomplete.
+Six targets are parked with generated/expected sizes, differing-byte counts, first mismatch, cumulative hypothesis counts and revisit conditions. The derived-view factory remains 176/176 bytes with 26 differing after two identical outputs. Transition update is 288/292 with 153 differing; transition drawing is 144/144 with 59 differing. Border drawing is 564/556 with 339 differing after two hypotheses. Record actor initialization is 1052/1048 with 767 differing after two hypotheses; render-state initialization is 188/184 with 111 differing. Their provisional sources preserve the investigations without completion credit. Remaining blockers concern native constructor/argument context, natural branch scheduling, owner-resource pointer registers and affine/aggregate lifetimes. Historical parked targets, including 0x8c045f04 and 0x8c05fbf8, remain unchanged and incomplete.
 
-All 20 admitted modules reproduced twice before integration. One full verification pass ran two fresh exact builds in each checkout, exact integrated-image comparisons, both five-function proofs, 58 research and 63 public tests, and source-only rejection with artifact preservation. New focused exports were checked once; unchanged primary exports were reused. Verification performed 7,780 module comparisons, **3.66 per new byte**. Concurrent research/public command times were 117.686/120.073 seconds.
+All 38 admitted modules reproduced twice before integration. One full verification pass ran two fresh exact builds in each checkout, exact integrated-image comparisons, both five-function proofs, 58 research and 63 public tests, and source-only rejection with artifact preservation. New focused exports were checked once; unchanged primary exports were reused. Verification performed 7,932 module comparisons, **2.15 per new byte**. Concurrent research/public command times were 119.871/122.299 seconds.
 
-Measured candidate yield improved to **54.56 bytes per hypothesis**, versus 25.65 in batch 179 and 50.95 in the sampled baseline. Verification overhead improved from batch 179's 4.76 comparisons per new byte to 3.66, below the baseline's 6.48, but remains worse than batch 178's 1.82. This collection reaches the 20-function target but falls below the preferred several-KB size. Token/cost records and comparable baseline timings remain unavailable; no overall monetary or token saving is asserted. The successful finalizer family and explicit aggregate/frame reconstruction supplied measurable gains. Continue screening proven patterns and following larger matrix/vector and record operations, keeping failed investigations bounded. Independent next-batch candidates are excluded from these totals.
+Measured candidate yield improved to **76.75 bytes per hypothesis**, versus 54.56 in batch 180, 25.65 in batch 179 and 50.95 in the sampled baseline. Verification overhead improved from batch 180's 3.66 comparisons per new byte to 2.15, below the sampled baseline's 6.48, but remains worse than batch 178's 1.82. This collection meets the 20–50-function target and replaces several KB. Token/cost records and comparable baseline timings remain unavailable; no overall monetary or token saving is asserted. The proven factory family supplied most of the gain without repeated source substitutions. Continue following its constructor and vector/resource dependencies, proving one representative before expanding a family. Independent next-batch trials are excluded from these totals.
 
 Reproduce acceptance with tools/reconstruct.py verify after BUILDING.md setup. Check saved focused analysis using tools/dossier.py --check. Continue immediate complete-range trials in scratch, with full verification at integration checkpoints. Do not reopen parked targets without specific new evidence.
