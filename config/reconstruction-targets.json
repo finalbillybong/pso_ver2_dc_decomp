@@ -42903,9 +42903,25 @@
         }
       ],
       "reference_sha256": "306433cae583f782b41214ee9db163d41cd2dcd1d0347a0fdc308bf85445d902",
-      "status": "raw_review",
-      "hypotheses_tested": 0,
-      "reason": "Called by a newly exact allocation wrapper. Single final RTS/delay at catalog body end; every PC-relative literal reference fits the reviewed pool; next entry has saved-register prologue. Ordinary source not yet tested."
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch174: Full500 bytes with13 differing, first0x8c229631. Only resource offset/destination GPR allocation and loop zero-copy scheduling differ in229630..22964c; earlier counter initialization yields identical output. Vector math, calls, all literals and remaining instructions match. Revisit only independent exact resource-load/zero-store lifetime evidence; no further equivalent source reorderings.",
+      "source": "src/provisional/initialize_object_8c229584.c",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_base_at": "0x8c01d1ec",
+        "_length_at": "0x8c37e480",
+        "_normalize_at": "0x8c37b630",
+        "_add_at": "0x8c3bdf60",
+        "_mode_at": "0x8c0a2144",
+        "_offsets_at": "0x8c0a56a0",
+        "_setup_at": "0x8c0a5400",
+        "_allocate_at": "0x8c161bdc",
+        "_object_name": "0x8c337fd0",
+        "_default_settings": "0x8c338000"
+      }
     },
     {
       "id": "initialize_object_8c229a98",
@@ -54219,6 +54235,1176 @@
       ],
       "reference_sha256": "e0039d9a52c9d210e7df1fcd48715b1d5ad94c6004178124259daedff688756d",
       "boundary_review": "Wrapper raw entry, JMP delay, complete pools and adjacent entry reviewed; full callee bodies establish input and return signature. Lookup callee remains unmatched and gets no completion credit.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "create_resource_binding",
+      "source": "src/provisional/create_resource_binding.c",
+      "address": "0x8c161bdc",
+      "entry": "_create_resource_binding",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_validate_at": "0x8c161c50",
+        "_allocate_at": "0x8c011ecc",
+        "_default_output": "0x8c316ea4"
+      },
+      "ranges": [
+        {
+          "offset": 1383388,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_resource_binding",
+          "address": "0x8c161bdc",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "eaa2271c5a0c4d625e5c66b0e187dde2f66993ba1fc4d9492d0963b488655de5",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch174: 92 generated/92 expected bytes, 32 differing, first 0x8c161bf8. Positive validation block recovers branch placement; retained result register, sentinel and copy-loop registers still differ. Revisit only matching sentinel/copy-loop lifetime evidence."
+    },
+    {
+      "id": "validate_resource_entries",
+      "source": "src/provisional/validate_resource_entries.c",
+      "address": "0x8c161c50",
+      "entry": "_validate_resource_entries",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1383504,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "validate_resource_entries",
+          "address": "0x8c161c50",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "59dfdaa14b0027a3277906477d4979650610ab10f8bebc09a2a29df4c8f9a519",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch174: 34 generated/40 expected bytes, 38 differing, first 0x8c161c52. Null-return/counter initialization and sentinel register caching differ. Unsigned tag type produces identical output. Revisit only verified validation-loop source or matching compiler context."
+    },
+    {
+      "id": "destroy_multi_part_object",
+      "source": "src/provisional/destroy_multi_part_object.c",
+      "address": "0x8c01fa18",
+      "entry": "_destroy_multi_part_object",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 64024,
+          "size": 236
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_multi_part_object",
+          "address": "0x8c01fa18",
+          "size": 236
+        }
+      ],
+      "reference_sha256": "9e43b66ace737987ef9a7a70b49cdf613c785e1398953b7e25fceb80e173f330",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch174: 236 generated/236 expected bytes, 4 differing, first 0x8c01fa90. Only base cleanup argument MOV and zero delay slot swap at01fa90/01fa94. Equivalent call-spelling hypotheses failed previously in other near-matches; do not retry without new calling-context evidence."
+    },
+    {
+      "id": "destroy_virtual_flag_owner",
+      "source": "src/provisional/destroy_virtual_flag_owner.cpp",
+      "language": "c++",
+      "address": "0x8c20997c",
+      "entry": "_destroy_virtual_flag_owner",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2070908,
+          "size": 264
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_virtual_flag_owner",
+          "address": "0x8c20997c",
+          "size": 264
+        }
+      ],
+      "reference_sha256": "4d4ba839010390af93c9a49e56ac18fc9acb26c31d2b293577d6e251272cb9bf",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch174: 260 generated/264 expected bytes, 115 differing, first 0x8c20998e. Inline predicate reproduces all four boolean sequences. Two identifier call delays and nested target flag-address scheduling differ. Accessor H2 is identical; promoted-call H3 uses different call registers and121 differing bytes. Revisit only independently matched identifier-call ABI and nested flag-update context."
+    },
+    {
+      "id": "initialize_transfer_fields",
+      "source": "src/provisional/initialize_transfer_fields.c",
+      "address": "0x8c0a1180",
+      "entry": "_initialize_transfer_fields",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_base_at": "0x8c01d1ec",
+        "_object_name": "0x8c3032c0"
+      },
+      "ranges": [
+        {
+          "offset": 594304,
+          "size": 252
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_transfer_fields",
+          "address": "0x8c0a1180",
+          "size": 252
+        }
+      ],
+      "reference_sha256": "c675177f613f571097853ddef487da677672a0ea806cb3439d105d811fea1add",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch174: 256 generated/252 expected bytes, 221 differing, first 0x8c0a118a. Extra saved R11 from scalar destination-address lifetimes adds4 bytes. No credible new hypothesis after prior scalar scheduling failures; revisit only matching scalar field-copy context."
+    },
+    {
+      "id": "initialize_template_position",
+      "source": "src/provisional/initialize_template_position.c",
+      "address": "0x8c14ed00",
+      "entry": "_initialize_template_position",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_base_at": "0x8c01d1ec",
+        "_object_name": "0x8c3157a8",
+        "_resource_owner": "0x8c4db380",
+        "_templates": "0x8c315748"
+      },
+      "ranges": [
+        {
+          "offset": 1305856,
+          "size": 336
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_template_position",
+          "address": "0x8c14ed00",
+          "size": 336
+        }
+      ],
+      "reference_sha256": "25fdf7bc730acc203c584f3bb5c1ce7689e859c170d7afb1861099c1abb4d421",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch174: 332 generated/336 expected bytes, 281 differing, first 0x8c14ed0a. Missing saved R11 and quad-copy/literal lifetimes leave4 bytes absent. Numeric template address and evidence-corrected four-float record both produce identical output. Table floats reviewed, but no standalone data admitted. Revisit only independently matched four-word aggregate-copy context."
+    },
+    {
+      "id": "initialize_scaled_template_position",
+      "source": "src/provisional/initialize_scaled_template_position.c",
+      "address": "0x8c14ee50",
+      "entry": "_initialize_scaled_template_position",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_base_at": "0x8c01d1ec",
+        "_object_name": "0x8c3157a8",
+        "_resource_owner": "0x8c4db380",
+        "_templates": "0x8c315748"
+      },
+      "ranges": [
+        {
+          "offset": 1306192,
+          "size": 332
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_scaled_template_position",
+          "address": "0x8c14ee50",
+          "size": 332
+        }
+      ],
+      "reference_sha256": "da9daa168751359d71172c81f06619c79f85e7a364e64020d9b745912da9dbde",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch174: 328 generated/332 expected bytes, 271 differing, first 0x8c14ee5e. Same missing R11/quad-copy lifetime blocker as adjacent template initializer; do not repeat its already failed address/type variations. Revisit when sibling is unlocked."
+    },
+    {
+      "id": "initialize_mode_resources",
+      "source": "src/provisional/initialize_mode_resources.c",
+      "address": "0x8c14f270",
+      "entry": "_initialize_mode_resources",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_base_at": "0x8c01d1ec",
+        "_object_name": "0x8c3157c0",
+        "_resource_owner": "0x8c4db380"
+      },
+      "ranges": [
+        {
+          "offset": 1307248,
+          "size": 256
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_mode_resources",
+          "address": "0x8c14f270",
+          "size": 256
+        }
+      ],
+      "reference_sha256": "0e3998cd66369fdbb21b660dfaf3a0b707c57df0adc1f68edc8ff5bfee4cb62b",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch174: 256 generated/256 expected bytes, 33 differing, first 0x8c14f299. Complete range; global-addressR3/field-offsetR1 differ from rawR1/R3 with final resource-pointer scheduling. Numeric global indirection is identical. Revisit only independently matched resource-load lifetime context."
+    },
+    {
+      "id": "initialize_panel_slots",
+      "source": "src/provisional/initialize_panel_slots.c",
+      "address": "0x8c10112c",
+      "entry": "_initialize_panel_slots",
+      "headers": [],
+      "symbols": {
+        "_base_at": "0x8c01d1ec",
+        "_setup_at": "0x8c384504",
+        "_child_base_at": "0x8c0330e4",
+        "_allocate_at": "0x8c122700",
+        "_parent": "0x8c44be8c",
+        "_object_name": "0x8c30b098",
+        "_child_name": "0x8c30b094",
+        "_heap": "0x8c4d97e0",
+        "_configuration": "0x8c4d59e4",
+        "_ready": "0x8c4d53a0",
+        "_state": "0x8c4d5954",
+        "_resource_owner": "0x8c4d59e0",
+        "_primary_setup": "0x8c4d5958",
+        "_secondary_setup": "0x8c4d5998",
+        "_active": "0x8c4d59d8"
+      },
+      "ranges": [
+        {
+          "offset": 987436,
+          "size": 1052
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_panel_slots",
+          "address": "0x8c10112c",
+          "size": 1052
+        }
+      ],
+      "reference_sha256": "08fdfed0b1b5ad82fa2a4f257a33e453fd6e7e58d36486e4a9f722a9bdb9153c",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch174: 1052 generated/1052 expected bytes, 337 differing, first 0x8c101173. Full1052-byte range and all fields/control flow reconstructed, but resource loads, strided slot initialization and literal/address-register lifetimes differ. Seven saved GPRs and stack home match. Revisit only independently matched field-loop/child-initialization compiler context, not equivalent field reorderings."
+    },
+    {
+      "id": "initialize_panel_float_defaults",
+      "source": "src/provisional/initialize_panel_float_defaults.c",
+      "address": "0x8c221a6c",
+      "entry": "_initialize_panel_float_defaults",
+      "ranges": [
+        {
+          "offset": 2169452,
+          "size": 564
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_panel_float_defaults",
+          "address": "0x8c221a6c",
+          "size": 564
+        }
+      ],
+      "reference_sha256": "3341317f47cdb05624d353261f87e03685e0200aeb568ccf973cd9908b1b9777",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch174: 576 generated/564 expected bytes, 482 differing, first 0x8c221a6c. Direct scalar stores save three extra GPRs and produce576/482; six inline rectangle setters produce416/543. No further address-hoisting variations. Revisit only an independently exact multi-record constant initializer context."
+    },
+    {
+      "id": "set_split_texture_quad",
+      "source": "src/provisional/set_split_texture_quad.c",
+      "address": "0x8c20a80c",
+      "entry": "_set_split_texture_quad",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2074636,
+          "size": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_split_texture_quad",
+          "address": "0x8c20a80c",
+          "size": 144
+        }
+      ],
+      "reference_sha256": "ad10b42d14b448522fcfe3aefa32dd06e803d1fbc966d02885096df5b96bf715",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch174: 148 generated/144 expected bytes, 132 differing, first 0x8c20a80c. Direct expressions148/132; precomputed bounds152/143. Unexpected savedR14/address lifetimes. Revisit only matching quad-bound lifetime evidence."
+    },
+    {
+      "id": "set_inset_rectangle",
+      "source": "src/provisional/set_inset_rectangle.c",
+      "address": "0x8c20b098",
+      "entry": "_set_inset_rectangle",
+      "symbols": {
+        "_inset_x": "0x8c2e160c",
+        "_inset_y": "0x8c2e1610"
+      },
+      "ranges": [
+        {
+          "offset": 2076824,
+          "size": 176
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_inset_rectangle",
+          "address": "0x8c20b098",
+          "size": 176
+        }
+      ],
+      "reference_sha256": "c3babfec92be22a035e581da4b6836f0c82873f2fa93dd2b56150228e0225dd6",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch174: 176 generated/176 expected bytes, 57 differing, first 0x8c20b0c5. Complete176/57; scoped scalar temporaries worsen to176/66. Source snapshot and arithmetic order checked; GPR/FR lifetimes differ. Revisit only independent matching inset-field compiler context."
+    },
+    {
+      "id": "restore_position_fields",
+      "source": "src/provisional/restore_position_fields.c",
+      "address": "0x8c0a2478",
+      "entry": "_restore_position_fields",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 599160,
+          "size": 188
+        }
+      ],
+      "functions": [
+        {
+          "name": "restore_position_fields",
+          "address": "0x8c0a2478",
+          "size": 188
+        }
+      ],
+      "reference_sha256": "723e6a6cd7e9db492d5aea3042bab3ccd29a5fccc50b244d3950b92ca349944a",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch174: 188 generated/188 expected bytes, 69 differing, first 0x8c0a24ac. Complete188/69; inlined vector copy changes addressing to124/183. Revisit only matching scalar/aggregate copy lifetime evidence."
+    },
+    {
+      "id": "initialize_float_fields_8c03bdb0",
+      "source": "src/provisional/initialize_float_fields_8c03bdb0.c",
+      "address": "0x8c03bdb0",
+      "entry": "_initialize_float_fields_8c03bdb0",
+      "ranges": [
+        {
+          "offset": 179632,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c03bdb0",
+          "address": "0x8c03bdb0",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "36895e3c1d4d05b086565706a12ef7c24d1e7f1cc0004e9121f36365720ef2c4",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch174: 26 generated/28 expected bytes, 2 differing, first 0x8c03bdca. All26 generated instruction bytes exact; expected range28 includes two alignment bytes. No artificial padding. Revisit only a reconstructable real adjacent function enabling natural grouped alignment."
+    },
+    {
+      "id": "set_indexed_panel_edges",
+      "source": "src/provisional/set_indexed_panel_edges.c",
+      "address": "0x8c0ebf64",
+      "entry": "_set_indexed_panel_edges",
+      "ranges": [
+        {
+          "offset": 900964,
+          "size": 188
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_indexed_panel_edges",
+          "address": "0x8c0ebf64",
+          "size": 188
+        }
+      ],
+      "reference_sha256": "4fe27bc80fde98a22ae212f82634d770fb18745a59bb5cfb2dbde1a61b57452a",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch174: 188 generated/188 expected bytes, 23 differing, first 0x8c0ebfc6. Full188/23 after correcting a literal transcription208. Descending chained stores match first98bytes; second-chain GPR scheduling differs. Revisit only matching chained field-store lifetime evidence."
+    },
+    {
+      "id": "unpack_paired_bit_fields",
+      "source": "src/provisional/unpack_paired_bit_fields.c",
+      "address": "0x8c04b6e0",
+      "entry": "_unpack_paired_bit_fields",
+      "ranges": [
+        {
+          "offset": 243424,
+          "size": 180
+        }
+      ],
+      "functions": [
+        {
+          "name": "unpack_paired_bit_fields",
+          "address": "0x8c04b6e0",
+          "size": 180
+        }
+      ],
+      "reference_sha256": "552609fce92fcbe20bd86d72dcc95b1015b1da093c02e2ee3a4f5ddff6ed5909",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch174: 188 generated/180 expected bytes, 168 differing, first 0x8c04b6e0. 188 generated/180 expected. Byte masks, signed integer promotions and negative offsets reconstructed, but register/scheduling context differs. Revisit only independent packed-byte decoder context."
+    },
+    {
+      "id": "capture_object_entry",
+      "source": "src/provisional/capture_object_entry.c",
+      "address": "0x8c01399c",
+      "entry": "_capture_object_entry",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_entries": "0x8c4182fc",
+        "_count": "0x8c4189dc"
+      },
+      "ranges": [
+        {
+          "offset": 14748,
+          "size": 104
+        }
+      ],
+      "functions": [
+        {
+          "name": "capture_object_entry",
+          "address": "0x8c01399c",
+          "size": 104
+        }
+      ],
+      "reference_sha256": "9d2206fbb65cfea7959b2eb084e789048ba3edff71fe1fd63ed9a1b5b8ee4cba",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch174: 112 generated/104 expected bytes, 95 differing, first 0x8c0139a0. Direct typed table source112/95; count snapshot92/99. Raw single index multiplication and aggregate-copy temporary lifetimes remain unresolved. Revisit only independently exact capture-table context."
+    },
+    {
+      "id": "capture_vector_entry",
+      "source": "src/provisional/capture_vector_entry.c",
+      "address": "0x8c013a04",
+      "entry": "_capture_vector_entry",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_entries": "0x8c4182fc",
+        "_count": "0x8c4189dc"
+      },
+      "ranges": [
+        {
+          "offset": 14852,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "capture_vector_entry",
+          "address": "0x8c013a04",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "5832983f0ce35abaa2eb3010a5a0f144b54096a96cd30844964065a51d1f2864",
+      "status": "parked",
+      "hypotheses_tested": 3,
+      "reason": "Batch174: 88 generated/80 expected bytes, 80 differing, first 0x8c013a06. Direct typed table source88/80; count snapshot72/77. C++ language alone produces identical H1 output. Revisit only new alias/index-lifetime evidence, not language-only or index-spelling repetitions."
+    },
+    {
+      "id": "query_player_category_flag",
+      "source": "src/provisional/query_player_category_flag.c",
+      "address": "0x8c0356ac",
+      "entry": "_query_player_category_flag",
+      "symbols": {
+        "_player": "0x8c460900",
+        "_flags": "0x8c2ec09c"
+      },
+      "ranges": [
+        {
+          "offset": 153260,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "query_player_category_flag",
+          "address": "0x8c0356ac",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "d70a2d2fe0833192e0970aeb1c27dd08102f8c2532580fc29f27e327ffdfec4b",
+      "status": "parked",
+      "hypotheses_tested": 1,
+      "reason": "Batch174: 104 generated/96 expected bytes, 76 differing, first 0x8c0356b4. 104 generated/96 expected; switch dispatch/explicit boolean path scheduling differs. Revisit only independently matched two-case explicit boolean-switch context."
+    },
+    {
+      "id": "entry_list_accessors",
+      "source": "src/provisional/entry_list_accessors.c",
+      "address": "0x8c1a1984",
+      "entry": "_clear_entry_list",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1644932,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_entry_list",
+          "address": "0x8c1a1984",
+          "size": 8
+        },
+        {
+          "name": "initialize_entry_list",
+          "address": "0x8c1a198c",
+          "size": 24
+        },
+        {
+          "name": "append_entry",
+          "address": "0x8c1a19a4",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "7714b8dc42273f83e60ec7a4672d50a0fba170b75eb537a8baaaee46f20ef125",
+      "status": "parked",
+      "hypotheses_tested": 2,
+      "reason": "Batch174: 72 generated/72 expected bytes, 8 differing, first 0x8c1a19a5. Complete72/8 after pointer-first increment improves11 mismatches. First32bytes and all literals match, but append-loop maximum/counter/dereference GPRs differ. Three-function group remains wholly unadmitted; revisit only new append-loop register context."
+    },
+    {
+      "id": "depth_mode_accessors",
+      "source": "src/objects/depth_mode_accessors.c",
+      "address": "0x8c1780e8",
+      "entry": "_clear_depth_mode",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_transform_at": "0x8c3be280"
+      },
+      "ranges": [
+        {
+          "offset": 1474792,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_depth_mode",
+          "address": "0x8c1780e8",
+          "size": 8
+        },
+        {
+          "name": "set_depth_mode",
+          "address": "0x8c1780f0",
+          "size": 8
+        },
+        {
+          "name": "depth_amount_negative",
+          "address": "0x8c1780f8",
+          "size": 12
+        },
+        {
+          "name": "update_depth_mode",
+          "address": "0x8c178104",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "90318998b475ca1e469549936003052d0e103769ff266114d21c87f8b52e48e1",
+      "boundary_review": "All adjacent raw entries, complete pools and delay slots reviewed; field offsets/record stride checked; no overlapping old matches. scale_at returns float and takes object/actor/FR4; transform_at takes matrix/input/output. Entry list keeps sentinel writes and raw512-slot search limit.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "mode_requests_8c142298",
+      "source": "src/objects/mode_requests_8c142298.c",
+      "address": "0x8c142298",
+      "entry": "_request_mode_one",
+      "ranges": [
+        {
+          "offset": 1254040,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_mode_one",
+          "address": "0x8c142298",
+          "size": 8
+        },
+        {
+          "name": "request_mode_two",
+          "address": "0x8c1422a0",
+          "size": 8
+        },
+        {
+          "name": "request_mode_five",
+          "address": "0x8c1422a8",
+          "size": 8
+        },
+        {
+          "name": "current_mode_is_four",
+          "address": "0x8c1422b0",
+          "size": 8
+        }
+      ],
+      "reference_sha256": "069831649ebaafd57ea13e6a7ff45e58228da1cca74600361bfebe5e1e8693b8",
+      "boundary_review": "All four raw entries and next independent prologue1422b8 reviewed. Fields32/36 checked. Entire contiguous group unoccupied/untried; natural interfunction alignment only.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "pair_state_accessors",
+      "source": "src/objects/pair_state_accessors.c",
+      "address": "0x8c0daf30",
+      "entry": "_initialize_pair_state",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 831280,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_pair_state",
+          "address": "0x8c0daf30",
+          "size": 12
+        },
+        {
+          "name": "set_pair_values",
+          "address": "0x8c0daf3c",
+          "size": 8
+        }
+      ],
+      "reference_sha256": "59231b407fb63df3cee7432bd40218f29e047b38fcfe3359cbb9f6ab75ec5c69",
+      "boundary_review": "All adjacent raw entries, complete pools and delay slots reviewed; field offsets/record stride checked; no overlapping old matches. scale_at returns float and takes object/actor/FR4; transform_at takes matrix/input/output. Entry list keeps sentinel writes and raw512-slot search limit.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "scale_state_defaults",
+      "source": "src/objects/scale_state_defaults.c",
+      "address": "0x8c03b49c",
+      "entry": "_initialize_scale_state",
+      "headers": [],
+      "symbols": {
+        "_scale_at": "0x8c03b4b4"
+      },
+      "ranges": [
+        {
+          "offset": 177308,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_scale_state",
+          "address": "0x8c03b49c",
+          "size": 12
+        },
+        {
+          "name": "compute_default_scale",
+          "address": "0x8c03b4a8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "89b4b246fd7236832cf48d5c31a2dca76e40505d924a256254e5783c4ab580c7",
+      "boundary_review": "All adjacent raw entries, complete pools and delay slots reviewed; field offsets/record stride checked; no overlapping old matches. scale_at returns float and takes object/actor/FR4; transform_at takes matrix/input/output. Entry list keeps sentinel writes and raw512-slot search limit.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_flagged_children",
+      "source": "src/objects/destroy_flagged_children.c",
+      "address": "0x8c0d4a70",
+      "entry": "_destroy_flagged_children",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 805488,
+          "size": 192
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_flagged_children",
+          "address": "0x8c0d4a70",
+          "size": 192
+        }
+      ],
+      "reference_sha256": "a2196b8c297871e97d84a9990d5c00fe4766dc9371c751ccf6f236866db5c7b2",
+      "boundary_review": "Raw full range and all PC-relative pools through independent next entry reviewed. Callee entry analysis saved; no-op component calls retained as externally declared object callbacks. Mandatory children are not given speculative null guards.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_float_fields_8c05be40",
+      "source": "src/math/initialize_float_fields_8c05be40.c",
+      "address": "0x8c05be40",
+      "entry": "_initialize_float_fields_8c05be40",
+      "ranges": [
+        {
+          "offset": 310848,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c05be40",
+          "address": "0x8c05be40",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "03526e58f8ff042a141581b0a22810dd19c86916da0f550f2d31f5db390c134b",
+      "boundary_review": "Whitelist decoding covers every instruction including RTS delay slot; each PC load resolved within complete range; independently catalogued next entry 0x8c05be98. Store evidence saved in constant-float-family-inventory.json.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_float_fields_8c1566bc",
+      "source": "src/math/initialize_float_fields_8c1566bc.c",
+      "address": "0x8c1566bc",
+      "entry": "_initialize_float_fields_8c1566bc",
+      "ranges": [
+        {
+          "offset": 1337020,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c1566bc",
+          "address": "0x8c1566bc",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "30565a18d49487a00f596c9d926942f76e4252346db1ffc0d896aa1d09c42c18",
+      "boundary_review": "Whitelist decoding covers every instruction including RTS delay slot; each PC load resolved within complete range; independently catalogued next entry 0x8c1566f0. Store evidence saved in constant-float-family-inventory.json.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_float_fields_8c164f60",
+      "source": "src/math/initialize_float_fields_8c164f60.c",
+      "address": "0x8c164f60",
+      "entry": "_initialize_float_fields_8c164f60",
+      "ranges": [
+        {
+          "offset": 1396576,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c164f60",
+          "address": "0x8c164f60",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "30565a18d49487a00f596c9d926942f76e4252346db1ffc0d896aa1d09c42c18",
+      "boundary_review": "Whitelist decoding covers every instruction including RTS delay slot; each PC load resolved within complete range; independently catalogued next entry 0x8c164f94. Store evidence saved in constant-float-family-inventory.json.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_float_fields_8c179144",
+      "source": "src/math/initialize_float_fields_8c179144.c",
+      "address": "0x8c179144",
+      "entry": "_initialize_float_fields_8c179144",
+      "ranges": [
+        {
+          "offset": 1478980,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c179144",
+          "address": "0x8c179144",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "b202926c4286abaecd3617f9a6c15a2addee3bfc147356d8adf855828e49ec81",
+      "boundary_review": "Whitelist decoding covers every instruction including RTS delay slot; each PC load resolved within complete range; independently catalogued next entry 0x8c179178. Store evidence saved in constant-float-family-inventory.json.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_float_fields_8c1eec38",
+      "source": "src/math/initialize_float_fields_8c1eec38.c",
+      "address": "0x8c1eec38",
+      "entry": "_initialize_float_fields_8c1eec38",
+      "ranges": [
+        {
+          "offset": 1961016,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c1eec38",
+          "address": "0x8c1eec38",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "114b47f835c4dcc985130f2ec7f814ccc3913683c53514f89c8dac25d5c5aa5c",
+      "boundary_review": "Whitelist decoding covers every instruction including RTS delay slot; each PC load resolved within complete range; independently catalogued next entry 0x8c1eec60. Store evidence saved in constant-float-family-inventory.json.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_float_fields_8c14eb30",
+      "source": "src/math/initialize_float_fields_8c14eb30.c",
+      "address": "0x8c14eb30",
+      "entry": "_initialize_float_fields_8c14eb30",
+      "ranges": [
+        {
+          "offset": 1305392,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c14eb30",
+          "address": "0x8c14eb30",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "623c06c60ce580cf1bec3d3468ceaef8b550a6a20648e47654e649e2deb129fc",
+      "boundary_review": "Full instruction mask matches proven template including all opcode/delay/padding bytes; pool contains precisely four checked offsets. Entry has catalog and code-pointer evidence; next independent entry evidenced in saved family inventory.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_float_fields_8c155e2c",
+      "source": "src/math/initialize_float_fields_8c155e2c.c",
+      "address": "0x8c155e2c",
+      "entry": "_initialize_float_fields_8c155e2c",
+      "ranges": [
+        {
+          "offset": 1334828,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c155e2c",
+          "address": "0x8c155e2c",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "30565a18d49487a00f596c9d926942f76e4252346db1ffc0d896aa1d09c42c18",
+      "boundary_review": "Full instruction mask matches proven template including all opcode/delay/padding bytes; pool contains precisely four checked offsets. Entry has catalog and code-pointer evidence; next independent entry evidenced in saved family inventory.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_float_fields_8c164788",
+      "source": "src/math/initialize_float_fields_8c164788.c",
+      "address": "0x8c164788",
+      "entry": "_initialize_float_fields_8c164788",
+      "ranges": [
+        {
+          "offset": 1394568,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c164788",
+          "address": "0x8c164788",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "b202926c4286abaecd3617f9a6c15a2addee3bfc147356d8adf855828e49ec81",
+      "boundary_review": "Full instruction mask matches proven template including all opcode/delay/padding bytes; pool contains precisely four checked offsets. Entry has catalog and code-pointer evidence; next independent entry evidenced in saved family inventory.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_float_fields_8c174ca4",
+      "source": "src/math/initialize_float_fields_8c174ca4.c",
+      "address": "0x8c174ca4",
+      "entry": "_initialize_float_fields_8c174ca4",
+      "ranges": [
+        {
+          "offset": 1461412,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c174ca4",
+          "address": "0x8c174ca4",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "b202926c4286abaecd3617f9a6c15a2addee3bfc147356d8adf855828e49ec81",
+      "boundary_review": "Full instruction mask matches proven template including all opcode/delay/padding bytes; pool contains precisely four checked offsets. Entry has catalog and code-pointer evidence; next independent entry evidenced in saved family inventory.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_fields_8c0e14ac",
+      "source": "src/objects/initialize_fields_8c0e14ac.c",
+      "address": "0x8c0e14ac",
+      "entry": "_initialize_fields_8c0e14ac",
+      "ranges": [
+        {
+          "offset": 857260,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_fields_8c0e14ac",
+          "address": "0x8c0e14ac",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "9a21d30e1a5c0ea104bad125a3d807e12ed93751910350b1f0c91318cdb008b7",
+      "boundary_review": "Every raw instruction and PC-relative literal reviewed; negative output indices in packed decoder retained exactly. Initializer fields inferred by strict whitelist; independent next entry bounds complete range.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_fields_8c0e24e8",
+      "source": "src/objects/initialize_fields_8c0e24e8.c",
+      "address": "0x8c0e24e8",
+      "entry": "_initialize_fields_8c0e24e8",
+      "ranges": [
+        {
+          "offset": 861416,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_fields_8c0e24e8",
+          "address": "0x8c0e24e8",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "c9ae8d6d1d466b02dbc573e2944023cc0fb45bf2d14224e26bd574615e901048",
+      "boundary_review": "Every raw instruction and PC-relative literal reviewed; negative output indices in packed decoder retained exactly. Initializer fields inferred by strict whitelist; independent next entry bounds complete range.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "initialize_fields_8c207358",
+      "source": "src/objects/initialize_fields_8c207358.c",
+      "address": "0x8c207358",
+      "entry": "_initialize_fields_8c207358",
+      "ranges": [
+        {
+          "offset": 2061144,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_fields_8c207358",
+          "address": "0x8c207358",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "b8d8d3b3be5461f1484a69af8a0baa22c0fc63daa47a602f32df7463a1a4201f",
+      "boundary_review": "Every raw instruction and PC-relative literal reviewed; negative output indices in packed decoder retained exactly. Initializer fields inferred by strict whitelist; independent next entry bounds complete range.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "set_configuration_pair",
+      "source": "src/resources/set_configuration_pair.c",
+      "address": "0x8c156d14",
+      "entry": "_set_configuration_pair",
+      "headers": [],
+      "symbols": {
+        "_configuration_pair": "0x8c3161c0",
+        "_configuration_control": "0x8c31619c"
+      },
+      "ranges": [
+        {
+          "offset": 1338644,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_configuration_pair",
+          "address": "0x8c156d14",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "cfddb0fe4c7e53ccab0e89296ec5aec52e1920118a64c4487e6e458f4535dd64",
+      "boundary_review": "Full raw callee, return delay and all pools reviewed through next entries161c38,161c78 or156d30. Null/list-limit and allocation failure behavior preserved. No truncation or output-size assumptions.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "compute_actor_scale",
+      "source": "src/objects/compute_actor_scale.c",
+      "address": "0x8c03b4b4",
+      "entry": "_compute_actor_scale",
+      "symbols": {
+        "_query_at": "0x8c029f80"
+      },
+      "ranges": [
+        {
+          "offset": 177332,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "compute_actor_scale",
+          "address": "0x8c03b4b4",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "0a1d6997468bc307130801276d6fc8692bb5ff69bb7e9597e8f0f5a4dc2d69d2",
+      "boundary_review": "Raw all branches, call ABIquery029f80 actorR4/intR0, two flag offsets, FR4input/FR0return, literals and adjacent03b52c reviewed. Store object scale before optional actor multiplier as observed.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "destroy_optional_child_owner",
+      "source": "src/objects/destroy_optional_child_owner.c",
+      "address": "0x8c03b574",
+      "entry": "_destroy_optional_child_owner",
+      "symbols": {
+        "_get_at": "0x8c03b5cc",
+        "_base_at": "0x8c03311c",
+        "_free_at": "0x8c122774",
+        "_heap": "0x8c4d97e0"
+      },
+      "ranges": [
+        {
+          "offset": 177524,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_optional_child_owner",
+          "address": "0x8c03b574",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "e3988c735565a70e3346b5cb4531297085071695cc61f0d19346b2835a05b4a6",
+      "boundary_review": "Raw entry, complete branches/pools, adjacent entry, destructor child-return ABI and field widths reviewed. Child identity equal to global invalid name clears stored child; preserve behavior.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "get_live_child",
+      "source": "src/objects/get_live_child.c",
+      "address": "0x8c03b5cc",
+      "entry": "_get_live_child",
+      "symbols": {
+        "_expected_name": "0x8c303bf0"
+      },
+      "ranges": [
+        {
+          "offset": 177612,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "get_live_child",
+          "address": "0x8c03b5cc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "c1bd44a656ed48f7550ef6c7d3db7e1b27468c5dcbb0bf365289ae3d230a83ae",
+      "boundary_review": "Raw entry, complete branches/pools, adjacent entry, destructor child-return ABI and field widths reviewed. Child identity not equal to global expected name clears stored child; preserve behavior.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "store_actor_scale",
+      "source": "src/objects/store_actor_scale.c",
+      "address": "0x8c03b544",
+      "entry": "_store_actor_scale",
+      "symbols": {
+        "_compute_at": "0x8c03b4b4"
+      },
+      "ranges": [
+        {
+          "offset": 177476,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "store_actor_scale",
+          "address": "0x8c03b544",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "6724954492c994c8f54f987494db44ce68f82594066b38a5c2cc63ba66a62d24",
+      "boundary_review": "Raw caller/callee ABI reviewed: objectR4, actorR5, scaleFR4, returnFR0. Complete literal and next function entry establish24-byte range.",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source."
+    },
+    {
+      "id": "store_default_actor_scale",
+      "source": "src/objects/store_default_actor_scale.c",
+      "address": "0x8c03b52c",
+      "entry": "_store_default_actor_scale",
+      "symbols": {
+        "_compute_at": "0x8c03b4b4"
+      },
+      "ranges": [
+        {
+          "offset": 177452,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "store_default_actor_scale",
+          "address": "0x8c03b52c",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "4b9d176f2890dcdb037bdae7dd680582da202939d08e1bf25facd32eefc67463",
+      "boundary_review": "Raw caller/callee ABI reviewed: objectR4, actorR5, scaleFR4, returnFR0. Complete literal and next function entry establish24-byte range.",
       "status": "matched",
       "reason": "Complete exact range reproduced twice from reviewed ordinary source."
     }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "verification_date": "2026-10-08",
+  "verification_date": "2026-10-09",
   "checks": [
     "two_fresh_exact_builds",
     "integrated_image_exact",
@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "b06ace94b0c63f69d284cd59028cc21c8d35c837cb433472ee57a28b9e8d40da",
+    "config/project.json": "1e7d1fd93be2d4cc4c5396f00d83766c7644c67e98ad443f63a32478a9ede6e5",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/actor_mode_noop.c": "091e6fbf33d49b3ac1981b122742334eb3466776c1dbc6f65de3c8d221490738",
@@ -1102,6 +1102,15 @@
     "src/math/forward_prepare_transform_tree.c": "1ece30ae12821c0916fd7d0dbe8184d7e3cacc3fd98084c007d19df02a076197",
     "src/math/grid_position_8c1b1814.c": "494d217e9d2ff9d3c7c6ed87d214c6c84396d35a59c7b3707b522ebd4f1e03f3",
     "src/math/grid_position_8c1b474c.c": "2907f0c2a4c96eb3de42962bba7c4888d8b7358d72f8717186e38a3ba7537aed",
+    "src/math/initialize_float_fields_8c05be40.c": "6d1697664be5d56a8870723bd65ed619cf083d8e585748303f7655083e2b163a",
+    "src/math/initialize_float_fields_8c14eb30.c": "147e256da4ae8c9245eb6dc6e3f4328a7f08e1c7ac6e18b33dbe81321ddaef22",
+    "src/math/initialize_float_fields_8c155e2c.c": "b3967a52fb7e11a8324a1c10fd4607c20e734b27e0e57741799eaa8fa91ee039",
+    "src/math/initialize_float_fields_8c1566bc.c": "7e0d7a877a9a48c68e433a413bcde9d387583144326801bec4f80c1a454ddf80",
+    "src/math/initialize_float_fields_8c164788.c": "db9a75e21b9dd54d24d7d52beb78da9e552adf624beb0828dc0a4fbae2243c79",
+    "src/math/initialize_float_fields_8c164f60.c": "8aa42aa73f0e11462162b3110b0e9d387bf2c1730fb48e05d3e271702b02edae",
+    "src/math/initialize_float_fields_8c174ca4.c": "970a01c152aeef49e1bd8cc76d2ed737b7cd2b9800d749bfbd11801b2c494c3a",
+    "src/math/initialize_float_fields_8c179144.c": "e5431e65d77fd5d44dae22c97315d78a803eed61accd38c5e351419132b98c4d",
+    "src/math/initialize_float_fields_8c1eec38.c": "8d0eab327b9983238e3505a3b2ada1838c31e8f3d6a27b4f9ba991a047749683",
     "src/math/initialize_vector_array.c": "c0ca81120438424b2d35c6f3a4ec06d06956a1f89022c7ac4ea17df2f7737665",
     "src/math/interpolate_track_angle.c": "0ec5bf41c465b360d38b3c5c78ca1889ae7ab95e36007b2eaaf77124ff064b4c",
     "src/math/interpolate_track_angles.c": "2538eb613ffbd4109c54efd196a76c67bfcb5f99a32810d369ebf6f909cd5f70",
@@ -1224,6 +1233,7 @@
     "src/objects/clear_group_flag_08.c": "55f325dd41363e03d6603b828d84e6b9dd16645e93ea8b439cb445b6946e8f90",
     "src/objects/clear_hierarchy_groups.c": "2878d657ca0ab50c6b8dbdfb43f8cb30cfa53a733c40aa535e1f1bac5088c9df",
     "src/objects/clear_inactive_target.c": "b04611b68983d207f869dfa10619e57ca040a576b14415db41fe687b0602b0b6",
+    "src/objects/compute_actor_scale.c": "4e4a3062c8455d53ac3944dbcc59125c95177c0f295e9349141c1123c5ba95c3",
     "src/objects/copy_object_id_1b6.c": "4b121f364a4deebdd21d1ce95f74780039ba75012f7a7df338a06601e45657a1",
     "src/objects/copy_resource_fields.c": "e32789bcab1f0148286bbea689715762d634e4cb59b91c6c30a45f7a217d4532",
     "src/objects/count_model_nodes.c": "5f6e863011c23fdebca4ec0248d56839a4f294656cabf021ce523da95a13f5cb",
@@ -1233,6 +1243,7 @@
     "src/objects/create_effect_8c09fd4c.c": "a733c265614605f1177581b201f95d55a33279f52a2e25674006a619ada690b9",
     "src/objects/create_object_8c23ca68.c": "2346cf2f012c771e4383f51bbd93819fa3d07e5c5af21f47890be44a2a1e2ff0",
     "src/objects/create_object_8c23d9b8.c": "09a6ffc3c0107592f7a75bbe8423e8a92715dd0c912290d1cdee24ad339a4a0b",
+    "src/objects/depth_mode_accessors.c": "430a8365f17509d5d13675233fc6264993fea0e0953e7f97e32cace9a11bf5c8",
     "src/objects/describe_hierarchy_node.c": "f8c84f910c70150095a8e2e95b915fdcc7323b63cbea9a46e913d5ba70e82cb0",
     "src/objects/destroy_context_8c03c454.c": "248e98a7fbd6dacd54a83da26e4820b68c7f11a3e7777426590154c9ce5d9d9a",
     "src/objects/destroy_context_8c03f2e8.c": "33b8d7be78b055caf7eb21f5ffa319e8c98694b46017a354a0b5d467b61bfa3a",
@@ -1287,6 +1298,7 @@
     "src/objects/destroy_field_8c17bb90.c": "97a1c6689a8d18f6b12604ea3d9ee55ca34d2fe47c9d1551b23d07f47cef8baf",
     "src/objects/destroy_field_8c1d58a4.c": "517fcef5e76551ab3f5de493fa4893558353f071510b7aab09b475ac09b3f5c5",
     "src/objects/destroy_field_8c1f1460.c": "006311b9d62210538a268e3ad94d75cf508fe55ae7eb9542525ae44c518b22e3",
+    "src/objects/destroy_flagged_children.c": "151e1440741a959f80435cccaf33a3a883d618af990cce17ff145d3d1b02b460",
     "src/objects/destroy_hierarchy_array.c": "6dee44c3bc3ab491f233378d7b1dc22b27aead8d4ac2b9f3adadf4c757eddee4",
     "src/objects/destroy_hierarchy_node.c": "62eade320511093d81ea1d9a1244bead1f1a072477d82d7a3aa142c7b3d54995",
     "src/objects/destroy_hierarchy_root.c": "1c33780ec139fd176f78e3472bc3d44ab50324cf0aa8f01f5ee30e17bcfa6e2c",
@@ -1294,6 +1306,7 @@
     "src/objects/destroy_linked_8c0f00c0.c": "1d270a7c5b327728ff41f01c7ceb327b59956ef4bff9a1f07dbf30bc62befd54",
     "src/objects/destroy_node_array.c": "8c6c059a8fde2631153e964d67a2944877819739873beb5a5de618e0478acf74",
     "src/objects/destroy_object_state.c": "837ade557a0d50b627995bead8e1d09c5ff17037a6c8503e3ebcd1c7aed083e8",
+    "src/objects/destroy_optional_child_owner.c": "0e099789a08dce255dc36f2f326eac5db55de84d9ca193a062774ddf88ee449b",
     "src/objects/destroy_position_ring.c": "84e4525107781c284d643eda9ace47d3f74cd043d97873c4a7d236d9ccff92d4",
     "src/objects/destroy_proximity_object.c": "f213da0c9c3097324847a61d8e95fcb828a4bd9117ac397eb698ababf4ae9fec",
     "src/objects/destroy_shared_object.c": "48afe50e26ca5cc1098ea5aff3be11ee6617ead742ff07566834977deee44f23",
@@ -1310,6 +1323,7 @@
     "src/objects/forward_signed_mode.c": "b353c774f746b9115ca4cd006f13276dbca5662728f0af040f69acae2aef8414",
     "src/objects/get_actor_position.c": "72fb73d760aab661829c30f3def09615c1e20882162ca89ff7abf155497782c0",
     "src/objects/get_actor_state_value.c": "7da61f04575c88a1a33a167669ec7e199952e84696383ec4cfddda42d73230c8",
+    "src/objects/get_live_child.c": "15131a053bb4c06a9b8918462cdfe369d49f694bcbe89feec42c22aeacd0626e",
     "src/objects/handle_actor_idle_event.c": "d1ea8111a0210f263b213fba0c49be8be0ba91648d2433b8539a0dabb4568951",
     "src/objects/handle_actor_idle_event_8c0d22bc.c": "76823c8b8b959233fba1b73c8aef7531a40f62c869d6509ab33b920ee4d6e7ce",
     "src/objects/handle_actor_wait_event.c": "7c978bcd0d6f5637de85e1ad12da0cc1778b1da0f5a89c7ebb080de659f3b5f4",
@@ -1318,6 +1332,9 @@
     "src/objects/hierarchy_output.c": "eb1cdee3a8ac302bbf593802d8691b261ae60302193d013559345e1717458096",
     "src/objects/hierarchy_output_cycle.c": "cb9f99e1a62589563150fef3306232e5baa56bf1c7f6768d24c87a0563cf18d2",
     "src/objects/initialize_angle_sample_record.c": "49b5bb9087bcda06248df67f08cb9fe97cd2e7aa42c710614a2adcfd23aadb34",
+    "src/objects/initialize_fields_8c0e14ac.c": "b8d58cd21370ecc31e8519f3361cd64afe035c26378a0e47809c5e4371f39726",
+    "src/objects/initialize_fields_8c0e24e8.c": "de60f715272f808a9deb672666883ae81a4ab554e96207c89bb7b0c19ea703de",
+    "src/objects/initialize_fields_8c207358.c": "78fd34775d825fe9c640a061ab3773cd627b67f7db7e02d1b5b816685b66ac97",
     "src/objects/initialize_hierarchy_node.c": "43a83b0f196baf3f5346dd2ed0f2f6882e1c6a68aae7bc07c0f9af97776ffe3e",
     "src/objects/initialize_hierarchy_root.c": "3e32c054c222a4a280640f76ea2ae35d1f9426c48390647027b01eddaa8ab3e5",
     "src/objects/initialize_object_8c09d6c8.c": "dfe3621113416aa86d3f396cf5259f54f6c6079226512e0a7924fa6de7638d35",
@@ -1336,6 +1353,7 @@
     "src/objects/lookup_object_by_id.c": "15547caeeabcae39382439e8c9bd6be47b6e9512dd81063b71a6195c9b00974e",
     "src/objects/mark_actor_flag_2.c": "47ad8beb5b5b19fcd894c3d0656e4279a51df1293b6a55aaa361954a06994395",
     "src/objects/mark_actor_flag_2000.c": "9c3254fab33fbe470e6257f6b2d8bb70daac74280760c4ef052708a9124a2a4b",
+    "src/objects/mode_requests_8c142298.c": "30de0f857832f0a8bf7a8b35af4c592f0b87e115ef2b96847c97442ed3626b1d",
     "src/objects/move_and_capture_position.c": "997891e9667904ed54e2835623627e68f3c6485a59d316b46109e6995c5aca2e",
     "src/objects/object_actions.c": "c51bea1339dea043ab22ce7aab029599ea91a058f25264940fc5bb055915e166",
     "src/objects/object_blocked.c": "0c82466c81663068384a9eef74ad2f602dac9f8894e0a07490459359a48368a4",
@@ -1499,6 +1517,7 @@
     "src/objects/operation_45a8c.c": "39ab63c7c6e605eb3f7431469b99ebfb971d1d903e105eb1b6a79f28ee803d21",
     "src/objects/operation_45b8c.c": "6335460625ec8386ab9bdf1312a736a3d17973d25bfc7af56be17f94a4a20a30",
     "src/objects/operation_45d6c.c": "87b27af7b353a34193307d9004fc33c62cb91649223118603113c21c26a235f9",
+    "src/objects/pair_state_accessors.c": "04f9b4481b1835ebaee7cc2d8cba7134d0a5947a4f2cbad4f21063dadfb4d3d2",
     "src/objects/query_capped_segment.c": "98bcb22075cef552b1547bffb08fc8b9297e2778d2437b0848780e7f0d5cc299",
     "src/objects/query_field_8c17e6c0.c": "c8056115051002bd1dc080f8400d8b59da6aa74277969906c9733d8077bc5763",
     "src/objects/query_field_8c17e6d8.c": "e8784e45b60f68800d857a460f38115960252a1a254894c74d0370f161fd3bb8",
@@ -1524,6 +1543,7 @@
     "src/objects/run_resource_end_8c03c414.c": "2b02aeabe3868ea34202f12609cdb1201530047d62eb2d4eb99c1378f75d7fd6",
     "src/objects/run_resource_start.c": "1c264b011b2c740e8709b069d1cf5205e4cfe24c8418a43d4120799c3284259e",
     "src/objects/run_resource_start_8c03c3ec.c": "5fd0ae51176f6e256dc897aa623f65f8a7510136bfee531cb1aeb41e67a5ad87",
+    "src/objects/scale_state_defaults.c": "6cbe78d265d6d8cbe54a4a19b32f2627f2c2f59fb14f2bf46d7396dd8a183e44",
     "src/objects/set_330.c": "8ee5610ba3bf989d3782fb066a47f2ee84b466ce473b879200f0baff77bf187a",
     "src/objects/set_actor_action_kind.c": "58c9c3f507c0ac9c8c7a49b04d92bc3c2430156026646ed7d098de2448b091e7",
     "src/objects/set_actor_raised_position.c": "0a320ccfb4988fa39493dedce138279b3b2d4abdd5aefa02229f3bf23d62337a",
@@ -1669,6 +1689,8 @@
     "src/objects/state_list_and_factory.c": "9476ad8481effe2534ea82ae8db5abf2287f32671c361409145c87eaa554de6c",
     "src/objects/state_owner_child_group.c": "75b16487e75be7389704edccab8c8d432183f050a584ba8d22b1fb61e23125b4",
     "src/objects/state_owner_reset_group.c": "b953f149886ddf8c199e0405f29ee2bb948c2d6a33bebe14358874a778b25762",
+    "src/objects/store_actor_scale.c": "3fe6fe52f7f90b8fc76448ca4cd26235dbc6ec79b0e52ea3b00233cff731240a",
+    "src/objects/store_default_actor_scale.c": "b3d1ecc00297c8d503289f49327f6268844d3ebad01b0e047d144ccbf261aa5c",
     "src/objects/submit_hierarchy_array.c": "a93203f093deef28c5bda96c3f005444315a9e2b26a5deb4af74fe86f34c4e6a",
     "src/objects/time_hierarchy_update.c": "935da4e3d4afb22a03a7bae015ffc88fe0a7f67542a23760f625629eb173a7ce",
     "src/objects/time_hierarchy_visit.c": "2d531094b54a3405df298803ac1a2de5344a503acafeb195127c8fbe16f96776",
@@ -1752,6 +1774,7 @@
     "src/resources/relocate_resource_header.c": "e92cd035d0f0ace06e01858044c8523ac2219be58336a0bca9bf3b3e8a14eaa2",
     "src/resources/relocate_resource_trailer.c": "f0c20160bd51a05b17861a0e74cf4e7b9c58974419255e2c3944205342108908",
     "src/resources/request_resource_release.c": "b51b4fc51e2e4da324ae1aee235ed96d8cda3711bed38fe4cdbb1857ef692993",
+    "src/resources/set_configuration_pair.c": "6ee89ddd2cf7c1e6132df03c11373e06877aec7b9783f5adcba6a9ee1bb8cf73",
     "src/runtime/allocate_block.c": "26b0bf4edd80b832d938b35c9af840b2c171b122b65b9627f6f4811befb71abf",
     "src/runtime/forward_reviewed_8c01c2a0.c": "e0d07b6f8141cd8cdccb6d0d0c23e2533030eab3a75407869e6fadc51422e9ba",
     "src/runtime/forward_reviewed_8c03f1bc.c": "7ec81b7b8251f8a2bec4cd6a2e1e2f0a1bf1c83f315d032cb3dd408528d2ff5b",
@@ -3290,6 +3313,72 @@
       "-O2"
     ],
     "next_random_state": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "scale_state_defaults": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "compute_actor_scale": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "store_default_actor_scale": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "store_actor_scale": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "destroy_optional_child_owner": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "get_live_child": [
       "-proc",
       "SH4",
       "-endian",
@@ -4876,6 +4965,17 @@
       "-O2"
     ],
     "destroy_color_rise_8c05bd84": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_float_fields_8c05be40": [
       "-proc",
       "SH4",
       "-endian",
@@ -10157,6 +10257,17 @@
       "off",
       "-O2"
     ],
+    "destroy_flagged_children": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "cache_actor_position_8c0d4c34": [
       "-proc",
       "SH4",
@@ -10213,6 +10324,17 @@
       "-O2"
     ],
     "construct_seeded_random_state_8c0daf18": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "pair_state_accessors": [
       "-proc",
       "SH4",
       "-endian",
@@ -10333,6 +10455,17 @@
       "off",
       "-O2"
     ],
+    "initialize_fields_8c0e14ac": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_field_8c0e14bc": [
       "-proc",
       "SH4",
@@ -10356,6 +10489,17 @@
       "-O2"
     ],
     "destroy_field_8c0e1cd4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_fields_8c0e24e8": [
       "-proc",
       "SH4",
       "-endian",
@@ -12291,6 +12435,17 @@
       "off",
       "-O2"
     ],
+    "mode_requests_8c142298": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c14348c": [
       "-proc",
       "SH4",
@@ -12325,6 +12480,17 @@
       "-O2"
     ],
     "spawn_object_0893a8_8c14ce24": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_float_fields_8c14eb30": [
       "-proc",
       "SH4",
       "-endian",
@@ -12391,6 +12557,39 @@
       "-O2"
     ],
     "operation_193764_8c1513d8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_float_fields_8c155e2c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_float_fields_8c1566bc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "set_configuration_pair": [
       "-proc",
       "SH4",
       "-endian",
@@ -12622,6 +12821,28 @@
       "-O2"
     ],
     "clear_global_8c162ccc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_float_fields_8c164788": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_float_fields_8c164f60": [
       "-proc",
       "SH4",
       "-endian",
@@ -13105,6 +13326,17 @@
       "off",
       "-O2"
     ],
+    "initialize_float_fields_8c174ca4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_context_8c174ed0": [
       "-proc",
       "SH4",
@@ -13303,6 +13535,17 @@
       "off",
       "-O2"
     ],
+    "depth_mode_accessors": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c178214": [
       "-proc",
       "SH4",
@@ -13315,6 +13558,17 @@
       "-O2"
     ],
     "destroy_effect_d870_8c178430": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_float_fields_8c179144": [
       "-proc",
       "SH4",
       "-endian",
@@ -16488,6 +16742,17 @@
       "off",
       "-O2"
     ],
+    "initialize_float_fields_8c1eec38": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_field_8c1f1460": [
       "-proc",
       "SH4",
@@ -16555,6 +16820,17 @@
       "-O2"
     ],
     "create_configured_object": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "initialize_fields_8c207358": [
       "-proc",
       "SH4",
       "-endian",
@@ -20387,6 +20663,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 4035924,
+  "source_only_rejected_retained_bytes": 4034692,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

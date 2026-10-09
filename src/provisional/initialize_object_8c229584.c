@@ -1,0 +1,80 @@
+#include "src/include/vector3.h"
+/* Provisional accessed prefixes; the trailing output extent is unknown. */
+typedef struct View {
+ void *name; char unknown4[20]; void *dispatch; short unknown28,kind;
+ char unknown32[116]; void *slot; void *resource_a,*resource_b,*resource_c;
+ Vector3 position; void *parameter; int state; float amount; void *allocation;
+ Vector3 output[1];
+} View;
+typedef struct ResourceA { char unknown0[312]; void *first,*second; } ResourceA;
+typedef struct ResourceB { char unknown0[708]; void *value; } ResourceB;
+typedef struct Owner { char unknown0[1068]; ResourceA *first; ResourceB *second; } Owner;
+typedef struct Settings { unsigned int first; void *data; unsigned int third; } Settings;
+typedef char check_View_name[(unsigned long)&((View *)0)->name==0?1:-1];
+typedef char check_View_dispatch[(unsigned long)&((View *)0)->dispatch==24?1:-1];
+typedef char check_View_kind[(unsigned long)&((View *)0)->kind==30?1:-1];
+typedef char check_View_slot[(unsigned long)&((View *)0)->slot==148?1:-1];
+typedef char check_View_resource_a[(unsigned long)&((View *)0)->resource_a==152?1:-1];
+typedef char check_View_resource_b[(unsigned long)&((View *)0)->resource_b==156?1:-1];
+typedef char check_View_resource_c[(unsigned long)&((View *)0)->resource_c==160?1:-1];
+typedef char check_View_position[(unsigned long)&((View *)0)->position==164?1:-1];
+typedef char check_View_parameter[(unsigned long)&((View *)0)->parameter==176?1:-1];
+typedef char check_View_state[(unsigned long)&((View *)0)->state==180?1:-1];
+typedef char check_View_amount[(unsigned long)&((View *)0)->amount==184?1:-1];
+typedef char check_View_allocation[(unsigned long)&((View *)0)->allocation==188?1:-1];
+typedef char check_View_output[(unsigned long)&((View *)0)->output==192?1:-1];
+typedef char check_View_prefix[sizeof(View)==204?1:-1];
+typedef char check_ResourceA_first[(unsigned long)&((ResourceA *)0)->first==312?1:-1];
+typedef char check_ResourceA_second[(unsigned long)&((ResourceA *)0)->second==316?1:-1];
+typedef char check_ResourceA_prefix[sizeof(ResourceA)==320?1:-1];
+typedef char check_ResourceB_value[(unsigned long)&((ResourceB *)0)->value==708?1:-1];
+typedef char check_ResourceB_prefix[sizeof(ResourceB)==712?1:-1];
+typedef char check_Owner_first[(unsigned long)&((Owner *)0)->first==1068?1:-1];
+typedef char check_Owner_second[(unsigned long)&((Owner *)0)->second==1072?1:-1];
+typedef char check_Owner_prefix[sizeof(Owner)==1076?1:-1];
+typedef char check_Settings_data[(unsigned long)&((Settings *)0)->data==4?1:-1];
+typedef char check_Settings_prefix[sizeof(Settings)==12?1:-1];
+extern void base_at(View *,void *);
+extern float length_at(const Vector3 *),normalize_at(Vector3 *);
+extern void add_at(Vector3 *,const Vector3 *);
+extern void mode_at(int),offsets_at(Vector3 *,Vector3 *,Settings *);
+extern void setup_at(const void *,int);
+extern void *allocate_at(const void *,Vector3 *);
+extern void *object_name;
+extern const Settings default_settings;
+View *initialize_object_8c229584(View *o,void *parent,const Vector3 *position,void *parameter) {
+ View **home=&o;
+ Vector3 direction;
+ Settings settings;
+ Owner *owner;
+ int i;
+ base_at(o,parent);
+ o->dispatch=(void *)0x8c278c98;
+ o->name=object_name;
+ o->kind=204;
+ o->position=*position;
+ o->position.y=0.0f;
+ direction=o->position;
+ direction.y=0.0f;
+ if(length_at(&direction)>0.01f) {
+  normalize_at(&direction);
+  direction.x*=-50.0f;
+  direction.z*=-50.0f;
+  add_at(&o->position,&direction);
+ }
+ o->parameter=parameter;
+ owner=*(Owner **)0x8c4e2280;
+ o->resource_a=owner->first->first;
+ o->resource_b=owner->first->second;
+ o->resource_c=owner->second->value;
+ o->amount=-1.0f;
+ for(i=0;i<1;i++) *(void **)((char *)&o->slot+((unsigned int)i<<2))=0;
+ mode_at(2);
+ settings=default_settings;
+ settings.data=o->parameter;
+ offsets_at(&o->position,&o->position,&settings);
+ setup_at((const void *)0x8c337ff4,0x1555);
+ o->allocation=allocate_at((const void *)0x8c337fd4,o->output);
+ o->state=0;
+ return o;
+}

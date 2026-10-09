@@ -3311,6 +3311,159 @@
       "boundary_review": "Raw SH4 entry to adjacent entry, including literals/alignment; final checked source exact twice; reconstruction-stage58."
     },
     {
+      "id": "scale_state_defaults",
+      "source": "src/objects/scale_state_defaults.c",
+      "address": "0x8c03b49c",
+      "entry": "_initialize_scale_state",
+      "headers": [],
+      "symbols": {
+        "_scale_at": "0x8c03b4b4"
+      },
+      "ranges": [
+        {
+          "offset": 177308,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_scale_state",
+          "address": "0x8c03b49c",
+          "size": 12
+        },
+        {
+          "name": "compute_default_scale",
+          "address": "0x8c03b4a8",
+          "size": 12
+        }
+      ],
+      "reference_sha256": "89b4b246fd7236832cf48d5c31a2dca76e40505d924a256254e5783c4ab580c7",
+      "boundary_review": "All adjacent raw entries, complete pools and delay slots reviewed; field offsets/record stride checked; no overlapping old matches. scale_at returns float and takes object/actor/FR4; transform_at takes matrix/input/output. Entry list keeps sentinel writes and raw512-slot search limit."
+    },
+    {
+      "id": "compute_actor_scale",
+      "source": "src/objects/compute_actor_scale.c",
+      "address": "0x8c03b4b4",
+      "entry": "_compute_actor_scale",
+      "symbols": {
+        "_query_at": "0x8c029f80"
+      },
+      "ranges": [
+        {
+          "offset": 177332,
+          "size": 120
+        }
+      ],
+      "functions": [
+        {
+          "name": "compute_actor_scale",
+          "address": "0x8c03b4b4",
+          "size": 120
+        }
+      ],
+      "reference_sha256": "0a1d6997468bc307130801276d6fc8692bb5ff69bb7e9597e8f0f5a4dc2d69d2",
+      "boundary_review": "Raw all branches, call ABIquery029f80 actorR4/intR0, two flag offsets, FR4input/FR0return, literals and adjacent03b52c reviewed. Store object scale before optional actor multiplier as observed."
+    },
+    {
+      "id": "store_default_actor_scale",
+      "source": "src/objects/store_default_actor_scale.c",
+      "address": "0x8c03b52c",
+      "entry": "_store_default_actor_scale",
+      "symbols": {
+        "_compute_at": "0x8c03b4b4"
+      },
+      "ranges": [
+        {
+          "offset": 177452,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "store_default_actor_scale",
+          "address": "0x8c03b52c",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "4b9d176f2890dcdb037bdae7dd680582da202939d08e1bf25facd32eefc67463",
+      "boundary_review": "Raw caller/callee ABI reviewed: objectR4, actorR5, scaleFR4, returnFR0. Complete literal and next function entry establish24-byte range."
+    },
+    {
+      "id": "store_actor_scale",
+      "source": "src/objects/store_actor_scale.c",
+      "address": "0x8c03b544",
+      "entry": "_store_actor_scale",
+      "symbols": {
+        "_compute_at": "0x8c03b4b4"
+      },
+      "ranges": [
+        {
+          "offset": 177476,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "store_actor_scale",
+          "address": "0x8c03b544",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "6724954492c994c8f54f987494db44ce68f82594066b38a5c2cc63ba66a62d24",
+      "boundary_review": "Raw caller/callee ABI reviewed: objectR4, actorR5, scaleFR4, returnFR0. Complete literal and next function entry establish24-byte range."
+    },
+    {
+      "id": "destroy_optional_child_owner",
+      "source": "src/objects/destroy_optional_child_owner.c",
+      "address": "0x8c03b574",
+      "entry": "_destroy_optional_child_owner",
+      "symbols": {
+        "_get_at": "0x8c03b5cc",
+        "_base_at": "0x8c03311c",
+        "_free_at": "0x8c122774",
+        "_heap": "0x8c4d97e0"
+      },
+      "ranges": [
+        {
+          "offset": 177524,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_optional_child_owner",
+          "address": "0x8c03b574",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "e3988c735565a70e3346b5cb4531297085071695cc61f0d19346b2835a05b4a6",
+      "boundary_review": "Raw entry, complete branches/pools, adjacent entry, destructor child-return ABI and field widths reviewed. Child identity equal to global invalid name clears stored child; preserve behavior."
+    },
+    {
+      "id": "get_live_child",
+      "source": "src/objects/get_live_child.c",
+      "address": "0x8c03b5cc",
+      "entry": "_get_live_child",
+      "symbols": {
+        "_expected_name": "0x8c303bf0"
+      },
+      "ranges": [
+        {
+          "offset": 177612,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "get_live_child",
+          "address": "0x8c03b5cc",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "c1bd44a656ed48f7550ef6c7d3db7e1b27468c5dcbb0bf365289ae3d230a83ae",
+      "boundary_review": "Raw entry, complete branches/pools, adjacent entry, destructor child-return ABI and field widths reviewed. Child identity not equal to global expected name clears stored child; preserve behavior."
+    },
+    {
       "id": "destroy_object_8c03b8b8",
       "source": "src/effects/destroy_object_8c03b8b8.c",
       "address": "0x8c03b8b8",
@@ -6932,6 +7085,27 @@
       "reference_sha256": "88ff640bedc2aae94168d9d7d7071b6b919056e7d49bbc17f94faa0f8d206565",
       "symbols": {},
       "boundary_review": "Reviewed complete raw instructions, control flow, delay slots, literal pool and adjacent entry. Initializers end at previously matched destructor entries; other ends agree with catalog entries."
+    },
+    {
+      "id": "initialize_float_fields_8c05be40",
+      "source": "src/math/initialize_float_fields_8c05be40.c",
+      "address": "0x8c05be40",
+      "entry": "_initialize_float_fields_8c05be40",
+      "ranges": [
+        {
+          "offset": 310848,
+          "size": 88
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c05be40",
+          "address": "0x8c05be40",
+          "size": 88
+        }
+      ],
+      "reference_sha256": "03526e58f8ff042a141581b0a22810dd19c86916da0f550f2d31f5db390c134b",
+      "boundary_review": "Whitelist decoding covers every instruction including RTS delay slot; each PC load resolved within complete range; independently catalogued next entry 0x8c05be98. Store evidence saved in constant-float-family-inventory.json."
     },
     {
       "id": "spawn_object_0893a8_8c05c974",
@@ -19182,6 +19356,29 @@
       "boundary_review": "Independent catalog or recorded code-pointer entry; identical complete instruction/branch/delay shape and literal layout, with catalog/referenced or reviewed adjacent entry prologue. Existing exact callee spawn_object_0893a8_8c0d7ba8 at0x8c0d7ba8 proves declared signature. Direct forwarding includes all observed incoming arguments and return type."
     },
     {
+      "id": "destroy_flagged_children",
+      "source": "src/objects/destroy_flagged_children.c",
+      "address": "0x8c0d4a70",
+      "entry": "_destroy_flagged_children",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 805488,
+          "size": 192
+        }
+      ],
+      "functions": [
+        {
+          "name": "destroy_flagged_children",
+          "address": "0x8c0d4a70",
+          "size": 192
+        }
+      ],
+      "reference_sha256": "a2196b8c297871e97d84a9990d5c00fe4766dc9371c751ccf6f236866db5c7b2",
+      "boundary_review": "Raw full range and all PC-relative pools through independent next entry reviewed. Callee entry analysis saved; no-op component calls retained as externally declared object callbacks. Mandatory children are not given speculative null guards."
+    },
+    {
       "id": "cache_actor_position_8c0d4c34",
       "source": "src/objects/cache_actor_position_8c0d4c34.c",
       "address": "0x8c0d4c34",
@@ -19331,6 +19528,34 @@
         "src/include/random_state.h"
       ],
       "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately."
+    },
+    {
+      "id": "pair_state_accessors",
+      "source": "src/objects/pair_state_accessors.c",
+      "address": "0x8c0daf30",
+      "entry": "_initialize_pair_state",
+      "headers": [],
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 831280,
+          "size": 20
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_pair_state",
+          "address": "0x8c0daf30",
+          "size": 12
+        },
+        {
+          "name": "set_pair_values",
+          "address": "0x8c0daf3c",
+          "size": 8
+        }
+      ],
+      "reference_sha256": "59231b407fb63df3cee7432bd40218f29e047b38fcfe3359cbb9f6ab75ec5c69",
+      "boundary_review": "All adjacent raw entries, complete pools and delay slots reviewed; field offsets/record stride checked; no overlapping old matches. scale_at returns float and takes object/actor/FR4; transform_at takes matrix/input/output. Entry list keeps sentinel writes and raw512-slot search limit."
     },
     {
       "id": "destroy_context_8c0db244",
@@ -19568,6 +19793,27 @@
       "boundary_review": "Raw normalized leaf ends at104c28 including256.0 literal; scale leaf ends0de834 before independent saved-FR prologue. No neighboring code admitted."
     },
     {
+      "id": "initialize_fields_8c0e14ac",
+      "source": "src/objects/initialize_fields_8c0e14ac.c",
+      "address": "0x8c0e14ac",
+      "entry": "_initialize_fields_8c0e14ac",
+      "ranges": [
+        {
+          "offset": 857260,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_fields_8c0e14ac",
+          "address": "0x8c0e14ac",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "9a21d30e1a5c0ea104bad125a3d807e12ed93751910350b1f0c91318cdb008b7",
+      "boundary_review": "Every raw instruction and PC-relative literal reviewed; negative output indices in packed decoder retained exactly. Initializer fields inferred by strict whitelist; independent next entry bounds complete range."
+    },
+    {
       "id": "destroy_field_8c0e14bc",
       "source": "src/objects/destroy_field_8c0e14bc.c",
       "address": "0x8c0e14bc",
@@ -19635,6 +19881,27 @@
       ],
       "reference_sha256": "600bee0ea12a748abd29e4a998537d87595ff2718074c634dd41c37a50f07fe5",
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "initialize_fields_8c0e24e8",
+      "source": "src/objects/initialize_fields_8c0e24e8.c",
+      "address": "0x8c0e24e8",
+      "entry": "_initialize_fields_8c0e24e8",
+      "ranges": [
+        {
+          "offset": 861416,
+          "size": 16
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_fields_8c0e24e8",
+          "address": "0x8c0e24e8",
+          "size": 16
+        }
+      ],
+      "reference_sha256": "c9ae8d6d1d466b02dbc573e2944023cc0fb45bf2d14224e26bd574615e901048",
+      "boundary_review": "Every raw instruction and PC-relative literal reviewed; negative output indices in packed decoder retained exactly. Initializer fields inferred by strict whitelist; independent next entry bounds complete range."
     },
     {
       "id": "destroy_object_8c0e3814",
@@ -23935,6 +24202,42 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "mode_requests_8c142298",
+      "source": "src/objects/mode_requests_8c142298.c",
+      "address": "0x8c142298",
+      "entry": "_request_mode_one",
+      "ranges": [
+        {
+          "offset": 1254040,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "request_mode_one",
+          "address": "0x8c142298",
+          "size": 8
+        },
+        {
+          "name": "request_mode_two",
+          "address": "0x8c1422a0",
+          "size": 8
+        },
+        {
+          "name": "request_mode_five",
+          "address": "0x8c1422a8",
+          "size": 8
+        },
+        {
+          "name": "current_mode_is_four",
+          "address": "0x8c1422b0",
+          "size": 8
+        }
+      ],
+      "reference_sha256": "069831649ebaafd57ea13e6a7ff45e58228da1cca74600361bfebe5e1e8693b8",
+      "boundary_review": "All four raw entries and next independent prologue1422b8 reviewed. Fields32/36 checked. Entire contiguous group unoccupied/untried; natural interfunction alignment only."
+    },
+    {
       "id": "spawn_object_0893a8_8c14348c",
       "source": "src/objects/spawn_object_0893a8_8c14348c.c",
       "address": "0x8c14348c",
@@ -24030,6 +24333,27 @@
       "reference_sha256": "dd489fbddab2f03a4644e2db4556166b1f090fc45f1b2aa30b4655dec1de27cd",
       "symbols": {},
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
+    },
+    {
+      "id": "initialize_float_fields_8c14eb30",
+      "source": "src/math/initialize_float_fields_8c14eb30.c",
+      "address": "0x8c14eb30",
+      "entry": "_initialize_float_fields_8c14eb30",
+      "ranges": [
+        {
+          "offset": 1305392,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c14eb30",
+          "address": "0x8c14eb30",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "623c06c60ce580cf1bec3d3468ceaef8b550a6a20648e47654e649e2deb129fc",
+      "boundary_review": "Full instruction mask matches proven template including all opcode/delay/padding bytes; pool contains precisely four checked offsets. Entry has catalog and code-pointer evidence; next independent entry evidenced in saved family inventory."
     },
     {
       "id": "destroy_object_8c14ef9c",
@@ -24175,6 +24499,74 @@
       ],
       "reference_sha256": "76cdbda559649b26c3c487038b016200428a09968310652c4ee39c0938f1b4ff",
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
+    },
+    {
+      "id": "initialize_float_fields_8c155e2c",
+      "source": "src/math/initialize_float_fields_8c155e2c.c",
+      "address": "0x8c155e2c",
+      "entry": "_initialize_float_fields_8c155e2c",
+      "ranges": [
+        {
+          "offset": 1334828,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c155e2c",
+          "address": "0x8c155e2c",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "30565a18d49487a00f596c9d926942f76e4252346db1ffc0d896aa1d09c42c18",
+      "boundary_review": "Full instruction mask matches proven template including all opcode/delay/padding bytes; pool contains precisely four checked offsets. Entry has catalog and code-pointer evidence; next independent entry evidenced in saved family inventory."
+    },
+    {
+      "id": "initialize_float_fields_8c1566bc",
+      "source": "src/math/initialize_float_fields_8c1566bc.c",
+      "address": "0x8c1566bc",
+      "entry": "_initialize_float_fields_8c1566bc",
+      "ranges": [
+        {
+          "offset": 1337020,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c1566bc",
+          "address": "0x8c1566bc",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "30565a18d49487a00f596c9d926942f76e4252346db1ffc0d896aa1d09c42c18",
+      "boundary_review": "Whitelist decoding covers every instruction including RTS delay slot; each PC load resolved within complete range; independently catalogued next entry 0x8c1566f0. Store evidence saved in constant-float-family-inventory.json."
+    },
+    {
+      "id": "set_configuration_pair",
+      "source": "src/resources/set_configuration_pair.c",
+      "address": "0x8c156d14",
+      "entry": "_set_configuration_pair",
+      "headers": [],
+      "symbols": {
+        "_configuration_pair": "0x8c3161c0",
+        "_configuration_control": "0x8c31619c"
+      },
+      "ranges": [
+        {
+          "offset": 1338644,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_configuration_pair",
+          "address": "0x8c156d14",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "cfddb0fe4c7e53ccab0e89296ec5aec52e1920118a64c4487e6e458f4535dd64",
+      "boundary_review": "Full raw callee, return delay and all pools reviewed through next entries161c38,161c78 or156d30. Null/list-limit and allocation failure behavior preserved. No truncation or output-size assumptions."
     },
     {
       "id": "destroy_object_8c157860",
@@ -24694,6 +25086,48 @@
       ],
       "reference_sha256": "c9e142be191e381e19b337a696374dd7d28064d70e9bee982712dcb8bd2bb2cb",
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "initialize_float_fields_8c164788",
+      "source": "src/math/initialize_float_fields_8c164788.c",
+      "address": "0x8c164788",
+      "entry": "_initialize_float_fields_8c164788",
+      "ranges": [
+        {
+          "offset": 1394568,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c164788",
+          "address": "0x8c164788",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "b202926c4286abaecd3617f9a6c15a2addee3bfc147356d8adf855828e49ec81",
+      "boundary_review": "Full instruction mask matches proven template including all opcode/delay/padding bytes; pool contains precisely four checked offsets. Entry has catalog and code-pointer evidence; next independent entry evidenced in saved family inventory."
+    },
+    {
+      "id": "initialize_float_fields_8c164f60",
+      "source": "src/math/initialize_float_fields_8c164f60.c",
+      "address": "0x8c164f60",
+      "entry": "_initialize_float_fields_8c164f60",
+      "ranges": [
+        {
+          "offset": 1396576,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c164f60",
+          "address": "0x8c164f60",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "30565a18d49487a00f596c9d926942f76e4252346db1ffc0d896aa1d09c42c18",
+      "boundary_review": "Whitelist decoding covers every instruction including RTS delay slot; each PC load resolved within complete range; independently catalogued next entry 0x8c164f94. Store evidence saved in constant-float-family-inventory.json."
     },
     {
       "id": "spawn_object_0893a8_8c164f94",
@@ -25727,6 +26161,27 @@
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f224f436e2cd0. No empty neighboring function included."
     },
     {
+      "id": "initialize_float_fields_8c174ca4",
+      "source": "src/math/initialize_float_fields_8c174ca4.c",
+      "address": "0x8c174ca4",
+      "entry": "_initialize_float_fields_8c174ca4",
+      "ranges": [
+        {
+          "offset": 1461412,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c174ca4",
+          "address": "0x8c174ca4",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "b202926c4286abaecd3617f9a6c15a2addee3bfc147356d8adf855828e49ec81",
+      "boundary_review": "Full instruction mask matches proven template including all opcode/delay/padding bytes; pool contains precisely four checked offsets. Entry has catalog and code-pointer evidence; next independent entry evidenced in saved family inventory."
+    },
+    {
       "id": "destroy_context_8c174ed0",
       "source": "src/objects/destroy_context_8c174ed0.c",
       "address": "0x8c174ed0",
@@ -26183,6 +26638,48 @@
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
     },
     {
+      "id": "depth_mode_accessors",
+      "source": "src/objects/depth_mode_accessors.c",
+      "address": "0x8c1780e8",
+      "entry": "_clear_depth_mode",
+      "headers": [
+        "src/include/vector3.h"
+      ],
+      "symbols": {
+        "_transform_at": "0x8c3be280"
+      },
+      "ranges": [
+        {
+          "offset": 1474792,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_depth_mode",
+          "address": "0x8c1780e8",
+          "size": 8
+        },
+        {
+          "name": "set_depth_mode",
+          "address": "0x8c1780f0",
+          "size": 8
+        },
+        {
+          "name": "depth_amount_negative",
+          "address": "0x8c1780f8",
+          "size": 12
+        },
+        {
+          "name": "update_depth_mode",
+          "address": "0x8c178104",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "90318998b475ca1e469549936003052d0e103769ff266114d21c87f8b52e48e1",
+      "boundary_review": "All adjacent raw entries, complete pools and delay slots reviewed; field offsets/record stride checked; no overlapping old matches. scale_at returns float and takes object/actor/FR4; transform_at takes matrix/input/output. Entry list keeps sentinel writes and raw512-slot search limit."
+    },
+    {
       "id": "destroy_object_8c178214",
       "source": "src/effects/destroy_object_8c178214.c",
       "address": "0x8c178214",
@@ -26230,6 +26727,27 @@
       ],
       "reference_sha256": "309b80dbb7a6cab915e374eb887be3e9b254a7a829bb173023512dddfa521653",
       "boundary_review": "Independent catalog or recorded code-pointer entry; identical complete instruction/branch/delay shape and literal layout, with catalog/referenced or reviewed adjacent entry prologue. Same null/signed-release guards and one-argument resource release. Known base destructor bodies prove object/zero argument pair; return value ignored. Resource pointer offset checked locally."
+    },
+    {
+      "id": "initialize_float_fields_8c179144",
+      "source": "src/math/initialize_float_fields_8c179144.c",
+      "address": "0x8c179144",
+      "entry": "_initialize_float_fields_8c179144",
+      "ranges": [
+        {
+          "offset": 1478980,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c179144",
+          "address": "0x8c179144",
+          "size": 52
+        }
+      ],
+      "reference_sha256": "b202926c4286abaecd3617f9a6c15a2addee3bfc147356d8adf855828e49ec81",
+      "boundary_review": "Whitelist decoding covers every instruction including RTS delay slot; each PC load resolved within complete range; independently catalogued next entry 0x8c179178. Store evidence saved in constant-float-family-inventory.json."
     },
     {
       "id": "destroy_color_rise_8c1791cc",
@@ -33450,6 +33968,27 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "initialize_float_fields_8c1eec38",
+      "source": "src/math/initialize_float_fields_8c1eec38.c",
+      "address": "0x8c1eec38",
+      "entry": "_initialize_float_fields_8c1eec38",
+      "ranges": [
+        {
+          "offset": 1961016,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_float_fields_8c1eec38",
+          "address": "0x8c1eec38",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "114b47f835c4dcc985130f2ec7f814ccc3913683c53514f89c8dac25d5c5aa5c",
+      "boundary_review": "Whitelist decoding covers every instruction including RTS delay slot; each PC load resolved within complete range; independently catalogued next entry 0x8c1eec60. Store evidence saved in constant-float-family-inventory.json."
+    },
+    {
       "id": "destroy_field_8c1f1460",
       "source": "src/objects/destroy_field_8c1f1460.c",
       "address": "0x8c1f1460",
@@ -33627,6 +34166,27 @@
       ],
       "reference_sha256": "148deb954ec5b5e5be812ae45503dc14b760027c77d66fd36b416cb240708b30",
       "boundary_review": "Raw entry through return, referenced pool and next independent entry reviewed. Callee156d14 reads two floats and integer argument; callback276c0 consumes one object pointer. Signed negative lookup remains unchecked; child transfer uses addition of negative five."
+    },
+    {
+      "id": "initialize_fields_8c207358",
+      "source": "src/objects/initialize_fields_8c207358.c",
+      "address": "0x8c207358",
+      "entry": "_initialize_fields_8c207358",
+      "ranges": [
+        {
+          "offset": 2061144,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "initialize_fields_8c207358",
+          "address": "0x8c207358",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "b8d8d3b3be5461f1484a69af8a0baa22c0fc63daa47a602f32df7463a1a4201f",
+      "boundary_review": "Every raw instruction and PC-relative literal reviewed; negative output indices in packed decoder retained exactly. Initializer fields inferred by strict whitelist; independent next entry bounds complete range."
     },
     {
       "id": "destroy_object_8c2083b4",

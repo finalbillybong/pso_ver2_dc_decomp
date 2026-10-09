@@ -1,0 +1,42 @@
+#include "src/include/vector3.h"
+typedef struct Input { void * a; void * b; void * c; float first; float second; unsigned int argument; float third; Vector3 position; Vector3 values; Vector3 rotation; } Input;
+typedef char check_Input_a[(unsigned long)&((Input *)0)->a==0?1:-1];
+typedef char check_Input_b[(unsigned long)&((Input *)0)->b==4?1:-1];
+typedef char check_Input_c[(unsigned long)&((Input *)0)->c==8?1:-1];
+typedef char check_Input_first[(unsigned long)&((Input *)0)->first==12?1:-1];
+typedef char check_Input_second[(unsigned long)&((Input *)0)->second==16?1:-1];
+typedef char check_Input_argument[(unsigned long)&((Input *)0)->argument==20?1:-1];
+typedef char check_Input_third[(unsigned long)&((Input *)0)->third==24?1:-1];
+typedef char check_Input_position[(unsigned long)&((Input *)0)->position==28?1:-1];
+typedef char check_Input_values[(unsigned long)&((Input *)0)->values==40?1:-1];
+typedef char check_Input_rotation[(unsigned long)&((Input *)0)->rotation==52?1:-1];
+typedef char check_Input_prefix[sizeof(Input)==64?1:-1];
+typedef struct View { void * name; char unknown4[20]; void * dispatch; char unknown28[2]; short kind; char unknown32[20]; unsigned int flags; char unknown56[4]; Vector3 position; Vector3 rotation; float first; float second; float third; char unknown96[4]; unsigned int argument; char unknown104[4]; Vector3 values; char unknown120[28]; unsigned int state; void * a; void * b; void * c; } View;
+typedef char check_View_name[(unsigned long)&((View *)0)->name==0?1:-1];
+typedef char check_View_dispatch[(unsigned long)&((View *)0)->dispatch==24?1:-1];
+typedef char check_View_kind[(unsigned long)&((View *)0)->kind==30?1:-1];
+typedef char check_View_flags[(unsigned long)&((View *)0)->flags==52?1:-1];
+typedef char check_View_position[(unsigned long)&((View *)0)->position==60?1:-1];
+typedef char check_View_rotation[(unsigned long)&((View *)0)->rotation==72?1:-1];
+typedef char check_View_first[(unsigned long)&((View *)0)->first==84?1:-1];
+typedef char check_View_second[(unsigned long)&((View *)0)->second==88?1:-1];
+typedef char check_View_third[(unsigned long)&((View *)0)->third==92?1:-1];
+typedef char check_View_argument[(unsigned long)&((View *)0)->argument==100?1:-1];
+typedef char check_View_values[(unsigned long)&((View *)0)->values==108?1:-1];
+typedef char check_View_state[(unsigned long)&((View *)0)->state==148?1:-1];
+typedef char check_View_a[(unsigned long)&((View *)0)->a==152?1:-1];
+typedef char check_View_b[(unsigned long)&((View *)0)->b==156?1:-1];
+typedef char check_View_c[(unsigned long)&((View *)0)->c==160?1:-1];
+typedef char check_View_prefix[sizeof(View)==164?1:-1];
+extern void base_at(View *,void *);
+extern void *object_name;
+View *initialize_transfer_fields(View *o,void *parent,const Input *input) {
+ base_at(o,parent); o->dispatch=(void *)0x8c265a94; o->name=object_name; o->kind=164; o->state=0;
+ o->position.x=input->position.x; o->position.y=input->position.y; o->position.z=input->position.z;
+ o->values.x=input->values.x; o->values.y=input->values.y; o->values.z=input->values.z;
+ o->a=input->a; o->c=input->c; o->b=input->b;
+ o->first=input->first; o->second=input->second; o->third=input->third; o->argument=input->argument;
+ o->rotation.x=input->rotation.x; o->rotation.y=input->rotation.y; o->rotation.z=input->rotation.z;
+ o->flags=0;
+ return o;
+}
