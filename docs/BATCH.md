@@ -1,113 +1,121 @@
-# Reconstruction batch: 190: C++ virtual-call and medium routines
+# Reconstruction batch: 191: constructors, factories and near-miss revisits
 
-55 new matching functions / 5,264 bytes. All 2391 prior functions preserved.
+37 new matching functions / 5,320 bytes. All 2446 prior functions preserved.
 
-2446 exact functions in 2362 modules; 193,596 compiled function-range bytes; 0 reconstructed data bytes; 3,969,316 retained reference bytes. Whole-image coverage 4.6505% is not code completion.
+2483 exact functions in 2399 modules; 198,916 compiled function-range bytes; 0 reconstructed data bytes; 3,963,996 retained reference bytes. Whole-image coverage 4.7783% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| find_selected_8c01e110 | 0x8c01e110 | 56 |
-| notify_children_8c021c4c | 0x8c021c4c | 112 |
-| release_child_slot_8c022624 | 0x8c022624 | 156 |
-| forward_state_8c02300c | 0x8c02300c | 48 |
-| create_child_8c02c6c0 | 0x8c02c6c0 | 84 |
-| apply_setting_8c02c820 | 0x8c02c820 | 128 |
-| try_setting_8c02c8a0 | 0x8c02c8a0 | 144 |
-| try_or_forward_8c046104 | 0x8c046104 | 60 |
-| handle_event_8c059348 | 0x8c059348 | 84 |
-| reset_segments_8c05a124 | 0x8c05a124 | 100 |
-| aim_direction_8c05bdd4 | 0x8c05bdd4 | 108 |
-| reset_link_8c05bf28 | 0x8c05bf28 | 28 |
-| handle_event_8c05d0f4 | 0x8c05d0f4 | 60 |
-| raise_on_hit_8c073dec | 0x8c073dec | 100 |
-| forward_state_8c074944 | 0x8c074944 | 60 |
-| query_state_8c074980 | 0x8c074980 | 52 |
-| forward_state_8c0749dc | 0x8c0749dc | 40 |
-| forward_state_8c074c08 | 0x8c074c08 | 40 |
-| query_state_8c074e14 | 0x8c074e14 | 52 |
-| forward_state_8c0750a4 | 0x8c0750a4 | 40 |
-| raise_level_8c07653c | 0x8c07653c | 68 |
-| classify_ratio_8c0bf654 | 0x8c0bf654 | 100 |
-| flag_and_dispatch_8c0d89ec | 0x8c0d89ec | 36 |
-| update_mode_8c0eea34 | 0x8c0eea34 | 68 |
-| check_and_emit_8c0f24a0 | 0x8c0f24a0 | 140 |
-| dispatch64_8c112fb0 | 0x8c112fb0 | 12 |
-| show_key_8c112fbc | 0x8c112fbc | 164 |
-| update_cycle_8c113060 | 0x8c113060 | 128 |
-| place_actor_8c128930 | 0x8c128930 | 80 |
-| hold_state_8c1289a8 | 0x8c1289a8 | 132 |
-| begin_action_8c13b5d0 | 0x8c13b5d0 | 124 |
-| interrupt_state_8c13be60 | 0x8c13be60 | 100 |
-| update_phase_8c150ad4 | 0x8c150ad4 | 160 |
-| update_phase_8c151a74 | 0x8c151a74 | 104 |
-| request_motion_8c1526f8 | 0x8c1526f8 | 92 |
-| dispatch_idle_8c152898 | 0x8c152898 | 44 |
-| update_rise_8c159ef8 | 0x8c159ef8 | 180 |
-| update_phase_8c15a058 | 0x8c15a058 | 164 |
-| dispatch124_8c15e91c | 0x8c15e91c | 16 |
-| find_node_8c16a3c0 | 0x8c16a3c0 | 164 |
-| find_node_8c16a464 | 0x8c16a464 | 168 |
-| export_state_8c16b234 | 0x8c16b234 | 64 |
-| release_scene_8c16c1e4 | 0x8c16c1e4 | 152 |
-| clamp_settings_8c1a0510 | 0x8c1a0510 | 196 |
-| slot_ready_8c1a3d50 | 0x8c1a3d50 | 148 |
-| target_info_8c1a8f10 | 0x8c1a8f10 | 72 |
-| target_query_8c1a924c | 0x8c1a924c | 52 |
-| refresh_records_8c1ada14 | 0x8c1ada14 | 100 |
-| update_count_8c1ca1fc | 0x8c1ca1fc | 56 |
-| advance_timer_8c1e735c | 0x8c1e735c | 100 |
-| reset_motion_8c1ef224 | 0x8c1ef224 | 108 |
-| accumulate_angle_8c1f0378 | 0x8c1f0378 | 104 |
-| release_resources_8c21db58 | 0x8c21db58 | 104 |
-| no_owned_target_near_8c25aa04 | 0x8c25aa04 | 112 |
-| advance_timer_8c25bf48 | 0x8c25bf48 | 100 |
+| initialize_game_8c010514 | 0x8c010514 | 160 |
+| initialize_input_manager_8c014694 | 0x8c014694 | 120 |
+| initialize_menu_manager_8c014814 | 0x8c014814 | 96 |
+| initialize_field_manager_8c014948 | 0x8c014948 | 96 |
+| initialize_manager_8c014a7c | 0x8c014a7c | 132 |
+| initialize_session_manager_8c014c1c | 0x8c014c1c | 132 |
+| initialize_audio_manager_8c014f74 | 0x8c014f74 | 88 |
+| release_stage_8c016a74 | 0x8c016a74 | 260 |
+| shutdown_game_8c01c054 | 0x8c01c054 | 296 |
+| item_capacity_8c022f5c | 0x8c022f5c | 172 |
+| compose_layout_8c03bb80 | 0x8c03bb80 | 88 |
+| apply_level_effects_8c07b354 | 0x8c07b354 | 200 |
+| initialize_panel_8c087d8c | 0x8c087d8c | 140 |
+| spawn_node_8c0a49c8 | 0x8c0a49c8 | 176 |
+| initialize_follow_8c0a5ad0 | 0x8c0a5ad0 | 216 |
+| find_nearest_8c0c323c | 0x8c0c323c | 204 |
+| release_matching_8c0ddd64 | 0x8c0ddd64 | 104 |
+| refresh_name_8c0e2b78 | 0x8c0e2b78 | 152 |
+| check_and_load_8c0ea6d8 | 0x8c0ea6d8 | 76 |
+| spawn_item_8c0fc440 | 0x8c0fc440 | 200 |
+| target_inactive_8c10ec8c | 0x8c10ec8c | 68 |
+| initialize_actor_8c11dbd0 | 0x8c11dbd0 | 180 |
+| send_code_8c14472c | 0x8c14472c | 152 |
+| initialize_marker_8c150384 | 0x8c150384 | 168 |
+| initialize_grid_8c1566f0 | 0x8c1566f0 | 204 |
+| update_link_8c159fac | 0x8c159fac | 172 |
+| initialize_tag_8c1694cc | 0x8c1694cc | 56 |
+| initialize_loader_8c173578 | 0x8c173578 | 128 |
+| create_loader_8c1735f8 | 0x8c1735f8 | 180 |
+| create_loader_8c1736ac | 0x8c1736ac | 204 |
+| compare_records_8c181968 | 0x8c181968 | 64 |
+| compare_records_8c1819a8 | 0x8c1819a8 | 64 |
+| check_and_load_8c199628 | 0x8c199628 | 76 |
+| spawn_beam_8c1c5f48 | 0x8c1c5f48 | 200 |
+| raise_marker_8c1cd2f4 | 0x8c1cd2f4 | 104 |
+| initialize_trigger_8c237254 | 0x8c237254 | 88 |
+| raise_marker_8c254fd4 | 0x8c254fd4 | 104 |
 
 ## Method
 
-Batch 190 moved from short helpers to 50–200-byte routines. REA 6.4.0 (Ghidra 12.1.4,
-SH-4 language override) supplied batch decompilation and literal/call review for each
-candidate; sources were written from the raw listing and trialled with the existing
-driver. A new candidate source was the 306 unadmitted functions that make C++ virtual
-calls (vtable at `this+0x18`, slot offset materialized in r2). 40 of the 55 admitted
-units are declared `"language": "c++"`.
+Batch 191 moved to 60–300-byte routines: near misses reopened with new idioms, structurally
+simple large functions (release lists, straight-line setup) and object constructors/factories
+that call `initialize_hierarchy_node` (`0x8c0330e4`). REA 6.4.0 (Ghidra 12.1.4, SH-4 language
+override) supplied decompilation and reference review. Sources were written from the raw
+listing and pool.
 
 ## Measured attempts
 
-118 recorded attempts on 78 targets after the batch 189 admission: 110 hypotheses and
-8 corrections. Eight attempts were compile/link errors (C++ sources first compiled as C
-by the batch driver, a merged typedef, and the `__l_mods` binding name); each was
-resolved by a `correction`. 55 units / 55 functions / 5,264 bytes were admitted after
-two independent reproductions each.
+60 recorded attempts on 44 targets after the batch 190 admission: 59 hypotheses and 1
+correction. One attempt was a compile error: the batch driver created a C++ spec without its
+language, and the `correction` re-ran the same source as C++. 37 units / 37 functions /
+5,320 bytes were admitted after two independent reproductions each.
 
-Scratch compiler probes outside the history were used only to establish mechanisms
-(C++ virtual calls, double extensions, scoped field pointers, hoisted offsets, cast
-barriers, variadic argument placement). Every trial that relied on one cites the saved
-probe output as `third_evidence` or `reopen_evidence`; probes were not used to search
-declaration orders for a target.
+Scratch compiler comparisons are disclosed here because they affect how the recorded numbers
+should be read. 59 guarded comparisons on 30 addresses (`probe_log.tsv`) were run outside the
+history. Most later constructors were compared against the reference before their first
+recorded trial, and that comparison sometimes corrected a struct offset or a store order taken
+from the listing. So the high first-attempt exact rate in this batch does **not** measure
+first-guess accuracy.
+
+Probes did not search declaration orders. Each change was read from the listing (offsets, pool
+order, loop test) or applied a cookbook idiom. Probe-only work on unadmitted targets is listed
+below.
+
+An earlier probe claim for `0x8c18f690` was wrong: an empty reference listing compared as zero
+differences. A correction note is retained with the evidence. The comparison tool now refuses
+empty inputs and also compares raw bytes, including literal pools.
 
 ## Observed techniques
 
-- C++ virtual calls: `mov.l @(0x18,r4),r0; mov #off,r2; add r0,r2; mov.l @r2,r0; jsr/jmp`
-  is a CodeWarrior C++ virtual call; slot = (off - 8) / 4. This reopened and matched the
-  parked dispatch pair `0x8c112fb0`/`0x8c15e91c`.
-- A scoped local pointer to a field reproduces add-based field addressing used only for a
-  read-modify-write (`0x8c13b5d0`, `0x8c1289a8`).
-- A named offset constant scoped where the reference first loads it is hoisted into a
-  callee-saved register (CW03); callee-saved registers follow declaration order
-  r14, r13, r12 (`0x8c021c4c`, `0x8c25aa04`).
-- An intermediate `(int *)` cast on a base pointer prevents reassociation, so
-  `base + offset` is formed before a scaled index is added (`0x8c022624`; reopened
-  `0x8c05a124`).
-- An explicit `(unsigned char)` cast of an `unsigned char` load reproduces a double
-  `extu.b` (`0x8c01e110`); `unsigned short` fields store `0xffff` from a literal.
-- Variadic callees keep the last named argument on the stack (`0x8c112fbc`).
-- `0x8c18e8a0` is bound as `__l_mods` for `%` in C++ as in C.
+- Constructor factories (`allocate_block`, then an inlined initializer):
+  - The first base call uses the raw allocation result.
+  - Later stores go through a scoped copy whose address is taken (`T *self = p; T **home = &self;`).
+  - Examples: `0x8c0fc440`, `0x8c0a49c8`.
+- Inlined base-class constructors:
+  - The pattern `mov.l @r15,r14` followed by a base call, the base vtable store through r14 and the derived vtable store through the stack home.
+  - This is reproduced by a scoped `base` copy of the stack-homed `this`.
+  - Examples: the `0x8c014694`..`0x8c014f74` manager family.
+- A constant stored to a global and kept in r4 across a following call is that call's argument (`0x8c014a7c`).
+- Externally bound data globals fixed address-load scheduling in factories and managers (CW14).
+- Loop tests:
+  - `mov rN,r0; cmp/eq #k,r0; bf` comes from a `!=` loop test.
+  - `<` gave `cmp/gt`.
+- Assert-style `for (;;)` traps and repeated null tests reproduce source-level `if (p)` blocks.
+- Wrapping the valid path in `if (...) { ... }` places the invalid return last. This affects factories and multi-argument guards (`0x8c1736ac`, `0x8c1c5f48`).
+- Other details:
+  - An `x & 0xffff` mask on an `unsigned short` emits a double `extu.w`.
+  - A `volatile` field forces a reload.
+  - MSL-style inline `strcmp` uses `unsigned char` temporaries.
+  - A ternary return avoids a filled delay slot.
 
 ## Parked and unresolved
 
-Parked in this batch: `0x8c028e74`, `0x8c05c0dc` (prologue `this` copy), `0x8c07bc00`
-(argument extension loads directly into r4), `0x8c09b8f4`, `0x8c09e7b4`, `0x8c158450`,
-`0x8c19df2c`, `0x8c1accac`, `0x8c1cd2f4` (halfword double extension with field reload)
-and `0x8c2436e4`. Near misses with hypotheses remaining include `0x8c159fac` (one
-missing halfword extension) and several register-allocation residues listed in the
-private trial index. Code-only completion and total function count remain unknown.
+Parked in this batch:
+- `0x8c243cd4`: 512 bytes; register allocation residue.
+- `0x8c18f690`: 528 bytes; 210 bytes differ.
+- `0x8c0673a0`: literal-pool order.
+- `0x8c15b448`: two failures.
+
+Probe-only, with no recorded hypothesis spent:
+- `0x8c0a0058`: temp-pointer register reuse.
+- `0x8c13fed4`: halfword load via r0 and address temporaries.
+- `0x8c1f1d38`: 21 bytes; the loop-offset register.
+
+Other near misses still have hypotheses remaining:
+- `0x8c0c60b0`: zero-store scheduling.
+- `0x8c17e458`: copy-call scheduling.
+- Menu builders `0x8c1d1e10` and `0x8c25ecd4`: items 1–6 schedule differently.
+- `0x8c172c74`: buffer store register.
+- Label constructors `0x8c0edfd0`, `0x8c0ee0d4` and `0x8c0ee1d8`: one `this` reload versus `lds FPUL`; about 800 bytes in total.
+- `0x8c1e6f50` and `0x8c0303a0`.
+
+Code-only completion and total function count remain unknown.

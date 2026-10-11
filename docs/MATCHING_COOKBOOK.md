@@ -38,6 +38,8 @@ Reading an old success does not itself justify reopening a parked target.
 | Offset constant held in a saved register; registers permuted | [CW18 Hoisted offsets and declaration order](#cw18-hoisted-offsets-and-declaration-order) | Scope start of a named offset; r14, r13, r12 order |
 | `base+imm` formed before a scaled index is added | [CW19 Cast barriers against reassociation](#cw19-cast-barriers-against-reassociation) | Intermediate pointer cast |
 | Byte value extended twice; variadic arguments on the stack | [CW20 Extension and argument details](#cw20-extension-and-argument-details) | Explicit unsigned cast; last named parameter |
+| Allocation result stored to the stack before inlined initialization; base and derived vtable stores | [CW21 Factory and inlined-constructor homes](#cw21-factory-and-inlined-constructor-homes) | Raw first call, scoped home, data externs |
+| Failure return last; self-branch traps; `cmp/eq` loop exit | [CW22 Guard layout, traps and loop tests](#cw22-guard-layout-traps-and-loop-tests) | Wrapped valid path, `for (;;)`, `!=` test |
 
 First locate the residual: instructions, literals, jump table or missing bytes.
 Inspect the object before blaming source for a linked-address mismatch. A matching
@@ -390,14 +392,48 @@ index. Nested-loop variants (`0x8c198d30`) need further evidence.
 ## CW20 Extension and argument details
 
 **Observed fixes.** An explicit `(unsigned char)` cast of an `unsigned char` load emits a
-second `extu.b` (`find_selected_8c01e110`); the halfword equivalent with a field reload is
-unresolved (`0x8c1cd2f4`, `0x8c159fac`). `unsigned short` fields store `0xffff` from a
+second `extu.b` (`find_selected_8c01e110`). The halfword equivalent with a field reload
+needed a `volatile unsigned short` field masked with `& 0xffff` (batch 191,
+`raise_marker_8c1cd2f4`, `update_link_8c159fac`). `unsigned short` fields store `0xffff` from a
 literal rather than `mov #-1` (`reset_link_8c05bf28`). A variadic debug print keeps the
 last named parameter on the stack with the variadic values (`show_key_8c112fbc`).
 `0x8c18e8a0` binds as `__l_mods` for `%` in C++ as in C.
 
 **Evidence:** [selection](../src/objects/find_selected_8c01e110.c),
 [key display](../src/objects/show_key_8c112fbc.cpp).
+
+## CW21 Factory and inlined-constructor homes
+
+**Observed fix.** Factories that allocate and then run an inlined initializer pass the raw
+allocation to the first base call and address every later store through the stack
+(`mov.l r0,@r15` ... `mov.l @r15,rN`). A scoped copy whose address is taken,
+`T *self = p; T **home = &self;`, reproduces this (`spawn_item_8c0fc440`,
+`spawn_node_8c0a49c8`). Inlined base-class constructors keep `this` both in r14 and on the
+stack: the base call and base vtable store use r14 and the derived vtable store uses the
+home. A scoped `base` copy of the stack-homed parameter reproduces it for the manager
+family `0x8c014694`..`0x8c014f74`. A constant stored to a global and still in r4 at the
+next call is that call's argument (`initialize_manager_8c014a7c`).
+
+**Use and limit.** Combine with CW14 data externs; cast-address globals scheduled the
+address loads differently in both factories. Field-initialising constructors whose `this`
+stays only in r14 (`0x8c0a0058`, `0x8c13fed4`) still differ in temporary-pointer
+allocation.
+
+**Evidence:** [item factory](../src/objects/spawn_item_8c0fc440.c),
+[node factory](../src/objects/spawn_node_8c0a49c8.c),
+[manager](../src/objects/initialize_manager_8c014a7c.c).
+
+## CW22 Guard layout, traps and loop tests
+
+**Observed fix.** When the failure return (`mov #0,r0`) or the bare epilogue comes last,
+wrap the valid path in `if (valid) { ... }` instead of returning early
+(`create_loader_8c1736ac`, `spawn_beam_8c1c5f48`). Self-branch traps (`bra .; nop`) are
+`for (;;) { }` assertions, and repeated `tst` of the same pointer are separate `if (p)`
+blocks. A loop ending `mov rN,r0; cmp/eq #k,r0; bf` uses a `!=` test; `<` emitted
+`cmp/gt` (`0x8c1f1d38` probe).
+
+**Evidence:** [loader factory](../src/objects/create_loader_8c1736ac.c),
+[beam](../src/objects/spawn_beam_8c1c5f48.c).
 
 ## Batch 189 transfer notes
 
