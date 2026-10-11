@@ -1,4 +1,5 @@
 import json
+import copy
 from pathlib import Path
 import sys
 import tempfile
@@ -7,6 +8,107 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 import reconstruct
+
+
+class CensusTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        evidence = self.root / 'review.txt'
+        evidence.write_text('Reviewed SH return, delay slot, literal and adjacent entry.')
+        self.reference = bytes(range(32))
+        self.history = dict(targets={}, attempts=[])
+        self.entry = dict(id='control', address='0x1000', size=8,
+            reference_sha256=reconstruct.digest(self.reference[:8]),
+            boundary_review='Complete reviewed range', boundary_verified=True, abi_reviewed=True,
+            evidence=['review'], classification=[dict(offset=0, size=4, kind='instructions',
+                evidence='Return and delay slot', evidence_refs=['review'])])
+        self.inventory = dict(reference=dict(sha256=reconstruct.digest(self.reference),
+            size=32, base_address='0x1000'), entries=[self.entry],
+            evidence={'review': dict(path=str(evidence), sha256=reconstruct.digest(evidence.read_bytes()))})
+        self.manifest = dict(base_address='0x1000', units=[dict(id='admitted', address='0x1000',
+            source='src/control.c', ranges=[dict(offset=0, size=8)],
+            reference_sha256=self.entry['reference_sha256'])])
+
+    def audit(self):
+        return reconstruct.census(self.inventory, self.manifest, self.reference, self.history)
+
+    def test_admitted_control_keeps_unknown_and_union_gaps(self):
+        sibling = dict(self.entry, id='sibling', address='0x1010',
+            reference_sha256=reconstruct.digest(self.reference[16:24]))
+        self.inventory['entries'].append(sibling)
+        result = self.audit()
+        self.assertEqual(result['reviewed_range_bytes'], 16)
+        self.assertEqual(result['classification_totals']['unknown'], 8)
+        self.assertEqual(result['classified_bytes'], 8)
+        self.assertEqual(result['compiled_range_bytes'], 8)
+        self.assertEqual(len(result['selected_union']), 2)
+        self.assertFalse(result['entries'][0]['eligible_for_trial'])
+        self.assertTrue(result['entries'][1]['eligible_for_trial'])
+        self.assertIsNone(result['whole_program_function_count'])
+
+    def test_invalid_ranges_and_instruction_alignment(self):
+        for changes in [dict(address='0xffe'), dict(address='0x1020'),
+                        dict(address='0x1001'), dict(size=0), dict(size=-2)]:
+            with self.subTest(changes=changes):
+                inventory = copy.deepcopy(self.inventory)
+                inventory['entries'][0].update(changes)
+                with self.assertRaises(ValueError):
+                    reconstruct.census(inventory, self.manifest, self.reference)
+        self.entry['classification'][0]['size'] = 3
+        with self.assertRaisesRegex(ValueError, 'aligned'):
+            self.audit()
+
+    def test_overlaps_and_conflicting_classifications_rejected(self):
+        self.inventory['entries'].append(dict(self.entry, id='overlap'))
+        with self.assertRaisesRegex(ValueError, 'Overlapping'):
+            self.audit()
+        self.inventory['entries'].pop()
+        self.entry['classification'].append(dict(offset=2, size=4, kind='literals',
+            evidence='Conflicts with instructions', evidence_refs=['review']))
+        with self.assertRaisesRegex(ValueError, 'overlapping'):
+            self.audit()
+
+    def test_missing_and_stale_evidence_and_reference_rejected(self):
+        for mutate in [lambda i: i['reference'].update(sha256='stale'),
+                       lambda i: i['entries'][0].update(reference_sha256='stale'),
+                       lambda i: i['evidence']['review'].update(sha256='stale'),
+                       lambda i: i['entries'][0]['classification'][0].pop('evidence'),
+                       lambda i: i['entries'][0]['classification'][0].pop('evidence_refs'),
+                       lambda i: i['entries'][0].update(evidence=['missing'])]:
+            inventory = copy.deepcopy(self.inventory)
+            mutate(inventory)
+            with self.assertRaises(ValueError):
+                reconstruct.census(inventory, self.manifest, self.reference)
+
+    def test_disagreement_excludes_otherwise_eligible_candidate(self):
+        self.manifest['units'] = []
+        self.entry['disagreements'] = ['Ghidra and raw branch target differ; unresolved.']
+        result = self.audit()
+        self.assertFalse(result['entries'][0]['eligible_for_trial'])
+        self.assertEqual(result['unresolved_disagreements'], 1)
+
+    def test_parked_uncertain_and_missing_history_exclude_candidate(self):
+        self.manifest['units'] = []
+        key = reconstruct.digest(self.reference) + ':0x1000'
+        for state in [dict(parked=True), dict(uncertain=True)]:
+            self.history['targets'][key] = state
+            self.assertFalse(self.audit()['entries'][0]['eligible_for_trial'])
+        result = reconstruct.census(self.inventory, self.manifest, self.reference)
+        self.assertFalse(result['entries'][0]['eligible_for_trial'])
+
+    def test_private_output_immutable_and_hash_bound(self):
+        path = self.root / 'inventory.json'
+        reconstruct.write(path, self.inventory)
+        output = self.root / 'census.json'
+        result = reconstruct.write_census(path, output, self.manifest, self.reference)
+        self.assertEqual(result['inventory_file_sha256'], reconstruct.digest(path.read_bytes()))
+        with self.assertRaises(FileExistsError):
+            reconstruct.write_census(path, output, self.manifest, self.reference)
+        with self.assertRaisesRegex(ValueError, 'private'):
+            reconstruct.write_census(path, reconstruct.project.ROOT / 'census.json',
+                self.manifest, self.reference)
 
 
 class ReconstructionWorkflowTests(unittest.TestCase):

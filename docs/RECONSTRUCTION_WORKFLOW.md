@@ -7,7 +7,10 @@ including literals and natural padding, may enter the matching manifest.
 ## Candidate iteration
 
 Consult `config/reconstruction-targets.json` and historical scratch experiments
-before proposing a hypothesis. Record the hypothesis, predicted instruction
+before proposing a hypothesis. Use the [matching cookbook](MATCHING_COOKBOOK.md)
+to find relevant admitted examples and failed alternatives by mismatch symptom;
+cite the applicable CW entry in the hypothesis when using one. Record the
+hypothesis, predicted instruction
 change, reviewed boundaries, ordinary source and declared dependencies in a trial
 specification. The `unit` object uses the existing manifest schema; the remaining
 fields are `code`, a stable `hypothesis_id`, `hypothesis`, `predicted_change`
@@ -161,3 +164,30 @@ Use `classification_audit` for each reviewed range and `audit_subsystem` for the
 bounded subsystem. These reject overlaps and reconcile instruction, literal/table,
 natural padding and unknown bytes. They do not establish a global code denominator.
 Keep complete-range matching as the sole admission gate.
+
+### Private bounded census
+
+```
+python3 -B tools/reconstruct.py census SCRATCH/inventory.json --out SCRATCH/census.json
+```
+
+The output must be outside the checkout and must not already exist. The inventory
+contains `reference` (`sha256`, `size`, canonical hexadecimal `base_address`), an
+`evidence` map of named `{path, sha256}` records, and `entries`. Each entry supplies
+`id`, `address`, `size`, `reference_sha256`, `boundary_review`, evidence names,
+and optional `classification` spans. Non-unknown spans require both an explanation
+in `evidence` and `evidence_refs` naming the entry's hash-bound evidence files.
+Unspecified bytes remain unknown. Keep objdump output, raw bytes and Ghidra exports
+private; hash validation does not replace reviewing their interpretation.
+
+At most 32 nonoverlapping ranges totaling 16 KiB are accepted. The report records
+their union, classifications, manifest admission overlap and current lifetime
+history separately. A candidate is eligible only with `boundary_verified: true`,
+`abi_reviewed: true`, no `excluded_reason`, no `disagreements`, no admitted overlap,
+and available history that is neither parked nor uncertain. Eligibility is a
+review aid; the trial driver still enforces lifetime and batch budgets. Record
+unresolved disagreements as nonempty descriptions, leave disputed bytes unknown,
+and do not use catalog-to-next-entry intervals as proof of complete functions.
+
+The [bounded pilot report](PILOT_REPORT.md) records a nonqualifying collection and
+the census's limits. Classified bytes receive no admission credit.

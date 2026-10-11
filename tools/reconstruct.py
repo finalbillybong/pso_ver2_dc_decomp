@@ -341,6 +341,8 @@ def compiler_inputs(spec):
 
 
 def classification_audit(size, spans):
+    if not isinstance(size, int) or size <= 0:
+        raise ValueError('Classification range must have positive integer size')
     totals = dict(instructions=0, literals=0, tables=0, padding=0, unknown=0)
     end = 0
     for span in sorted(spans, key=lambda s: s['offset']):
@@ -364,6 +366,8 @@ def audit_subsystem(entries):
     totals = dict(instructions=0, literals=0, tables=0, padding=0, unknown=0)
     for entry in sorted(entries, key=lambda e: int(e['address'], 0)):
         start = int(entry['address'], 0)
+        if start < 0 or start % 2:
+            raise ValueError('SH function entry must be word aligned')
         if start < end:
             raise ValueError('Overlapping reviewed subsystem ranges')
         end = start + entry['size']
@@ -371,6 +375,97 @@ def audit_subsystem(entries):
             totals[kind] += size
     return dict(reviewed_range_bytes=sum(e['size'] for e in entries), classified_bytes=totals,
                 whole_program_code_completion=None)
+
+
+def census(inventory, manifest, reference, history=None):
+    """Audit a bounded, reviewed union; admission and classification are separate.
+
+    Evidence files are hash-bound private receipts. Their interpretation remains a
+    human review obligation, not an inference from matching or disassembly.
+    """
+    base = int(manifest['base_address'], 0)
+    identity = dict(sha256=digest(reference), size=len(reference), base_address=hex(base))
+    if inventory.get('reference') != identity:
+        raise ValueError('Stale or missing census reference identity')
+    entries = inventory['entries']
+    if not entries or len(entries) > 32 or sum(e['size'] for e in entries) > 16384:
+        raise ValueError('Census requires 1..32 whole ranges totaling at most 16 KiB')
+    audit = audit_subsystem(entries)
+    evidence = inventory.get('evidence', {})
+    for name, record in evidence.items():
+        path = Path(record['path'])
+        if not path.is_file() or digest(path.read_bytes()) != record['sha256']:
+            raise ValueError('Stale census evidence: ' + name)
+    project.layout(manifest, len(reference))
+    rows, identifiers, union = [], set(), []
+    admitted_bytes = 0
+    for entry in sorted(entries, key=lambda e: int(e['address'], 0)):
+        start, size = int(entry['address'], 0), entry['size']
+        offset = start - base
+        if offset < 0 or offset + size > len(reference):
+            raise ValueError('Census range outside reference image')
+        if entry['id'] in identifiers:
+            raise ValueError('Duplicate census identifier')
+        identifiers.add(entry['id'])
+        if digest(reference[offset:offset + size]) != entry.get('reference_sha256'):
+            raise ValueError('Stale census range identity')
+        if not entry.get('boundary_review') or not entry.get('evidence'):
+            raise ValueError('Census range requires boundary review and evidence')
+        if any(name not in evidence for name in entry['evidence']):
+            raise ValueError('Missing census classification evidence')
+        for span in entry.get('classification', []):
+            if span['kind'] != 'unknown' and not span.get('evidence_refs'):
+                raise ValueError('Missing census classification evidence')
+            if any(name not in entry['evidence'] for name in span.get('evidence_refs', [])):
+                raise ValueError('Missing census classification evidence')
+        disagreements = entry.get('disagreements', [])
+        if not isinstance(disagreements, list) or any(not isinstance(d, str) or not d.strip() for d in disagreements):
+            raise ValueError('Census disagreements must be explicit nonempty descriptions')
+        compiled = 0
+        admitted_units = []
+        for unit in manifest['units']:
+            r = unit['ranges'][0]
+            overlap = max(0, min(offset + size, r['offset'] + r['size']) - max(offset, r['offset']))
+            if overlap:
+                compiled += overlap
+                admitted_units.append(unit['id'])
+                if digest(reference[r['offset']:r['offset'] + r['size']]) != unit['reference_sha256']:
+                    raise ValueError('Stale admitted reference range')
+        admitted_bytes += compiled
+        target_history = (history or {}).get('targets', {}).get(identity['sha256'] + ':' + hex(start), {})
+        history_blocked = history is None or target_history.get('parked') or target_history.get('uncertain')
+        rows.append(dict(entry, classification_totals=classification_audit(size, entry.get('classification', [])),
+            compiled_range_bytes=compiled, admitted_units=admitted_units,
+            history_review=target_history,
+            admission_status='admitted' if compiled == size else 'partial' if compiled else 'unadmitted',
+            eligible_for_trial=not compiled and not disagreements and not history_blocked and entry.get('abi_reviewed') is True
+                and entry.get('boundary_verified') is True and not entry.get('excluded_reason')))
+        if union and union[-1]['end'] == start:
+            union[-1]['end'] = start + size
+        else:
+            union.append(dict(start=start, end=start + size))
+    return dict(schema_version=1, reference=identity, inventory_sha256=stable_hash(inventory),
+        history_sha256=stable_hash(history) if history is not None else None,
+        manifest_sha256=stable_hash(manifest), evidence=evidence, entries=rows,
+        selected_union=[dict(address=hex(r['start']), size=r['end'] - r['start']) for r in union],
+        range_count=len(rows), reviewed_range_bytes=audit['reviewed_range_bytes'],
+        classification_totals=audit['classified_bytes'],
+        classified_bytes=audit['reviewed_range_bytes'] - audit['classified_bytes']['unknown'],
+        compiled_range_bytes=admitted_bytes,
+        unresolved_disagreements=sum(len(e.get('disagreements', [])) for e in rows),
+        whole_program_code_completion=None, whole_program_function_count=None)
+
+
+def write_census(inventory_path, output, manifest, reference, history=None):
+    output = output.resolve()
+    if output.is_relative_to(project.ROOT.resolve()):
+        raise ValueError('Census receipts must be private, outside the checkout')
+    result = census(read(inventory_path), manifest, reference, history)
+    result['inventory_file_sha256'] = digest(inventory_path.read_bytes())
+    # Never replace an earlier review receipt.
+    with output.open('x') as stream:
+        stream.write(json.dumps(result, indent=2) + '\n')
+    return result
 
 
 def parse_listing(listing, address, spans):
@@ -884,6 +979,7 @@ def main():
     t = subs.add_parser('trial');t.add_argument('spec', type=Path);t.add_argument('--out', type=Path, required=True)
     s = subs.add_parser('summary');s.add_argument('folder', type=Path)
     h = subs.add_parser('index-history');h.add_argument('--root', type=Path, action='append', default=[]);h.add_argument('--out', type=Path)
+    c = subs.add_parser('census');c.add_argument('inventory', type=Path);c.add_argument('--out', type=Path, required=True)
     g = subs.add_parser('destructors');g.add_argument('--out', type=Path, required=True);g.add_argument('--boundaries', type=Path);g.add_argument('--limit', type=int, default=30)
     i = subs.add_parser('integrate');i.add_argument('plan', type=Path);i.add_argument('--out', type=Path, required=True)
     r = subs.add_parser('report');r.add_argument('--baseline', type=Path, required=True);r.add_argument('--findings', type=Path, required=True);r.add_argument('--verification', type=Path, required=True);r.add_argument('--name', required=True)
@@ -898,6 +994,13 @@ def main():
     if args.command == 'summary':
         r = summarize(args.folder);print(json.dumps({k: v for k, v in r.items() if k != 'binary_groups'}));return
     cfg, manifest, reference, _ = project.inputs()
+    if args.command == 'census':
+        history = history_path(cfg)
+        result = write_census(args.inventory, args.out, manifest, reference,
+            read(history) if history.exists() else None)
+        print(json.dumps({k: result[k] for k in ('range_count', 'reviewed_range_bytes',
+            'classification_totals', 'compiled_range_bytes', 'unresolved_disagreements')}))
+        return
     if args.command == 'index-history':
         scratch = Path(cfg['scratch'])
         history = History(args.out or history_path(cfg))

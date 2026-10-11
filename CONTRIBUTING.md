@@ -2,6 +2,8 @@
 
 Read [BUILDING.md](docs/BUILDING.md) and [START_HERE.md](docs/START_HERE.md).
 Pick a target from `config/reconstruction-targets.json`; preserve existing matches.
+Before proposing a source hypothesis, consult the symptom index in the
+[matching cookbook](docs/MATCHING_COOKBOOK.md) and the target's existing history.
 
 1. Review raw instructions, boundaries, delay slots, literals and callers.
 2. Keep each source-level hypothesis, source snapshot, compiler receipt and exact
