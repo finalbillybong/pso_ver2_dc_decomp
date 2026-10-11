@@ -498,3 +498,14 @@ adjacency and an exact neighbor alone do not establish a new function boundary.
 
 **Status update (batch 189).** `slide_and_dispatch_contact` was later reproduced
 twice and admitted with batch 189; the observations above are unchanged.
+
+## Batch 192 transfer notes
+
+The CW01, CW14, CW21 and CW22 patterns are regular enough to apply mechanically. A private
+generator that infers field offsets from the listing and applies them produced 211
+admitted functions directly, mostly short setters, accessors and constructors.
+- Try both cast-address and extern data globals (CW14); 13 matches needed externs.
+- When every instruction matches but the build is shorter than the catalogued range, the
+  catalogue has usually merged the next routine. Shorten the range only when the literal
+  pool ends there and the following bytes are a separate routine (`0x8c080310`,
+  `0x8c1930a0`, `0x8c13bec4`). Missing alignment still gets no credit (CW06).
