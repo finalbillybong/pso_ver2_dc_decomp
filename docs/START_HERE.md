@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **2391 exact functions in 2307 modules**, replacing
-**188,332 bytes** of the 4,162,912-byte decoded executable (**4.5240% image coverage**).
-It retains **3,974,580 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **2446 exact functions in 2362 modules**, replacing
+**193,596 bytes** of the 4,162,912-byte decoded executable (**4.6505% image coverage**).
+It retains **3,969,316 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -29,9 +29,9 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: 189: call-ready helper families
+## Latest integration batch: 190: C++ virtual-call and medium routines
 
-151 new functions / 5,320 bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.
+55 new functions / 5,264 bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.
 
 ## Autonomous iteration
 
@@ -42,7 +42,7 @@ diagnostics and reporting. Global code-completion percentage remains unknown.
 
 Inspect → implement → compile → compare → collect → verify.
 Publication of the verified batch 188 checkpoint was explicitly authorized after review;
-batch 189 has not been authorized for publication.
+batches 189 and 190 have not been authorized for publication.
 Prioritize credible exact-match opportunities. Record each distinct hypothesis
 and its predicted instruction change; consult history and group identical outputs.
 Park after two unsuccessful hypotheses without improvement; a third requires
@@ -100,21 +100,20 @@ pushing, then verify CI for the exact commit. Gameplay, disc repacking and
 analysis-tool integration are outside the reconstruction loop. Continue from
 verified checkpoints; they are progress records, not requests to stop.
 
-## Verified call-ready continuation (batch 189)
+## Verified continuation (batches 189 and 190)
 
-Batch 189 admitted 142 new units / 150 functions / 5,276 bytes plus the carried
-44-byte `slide_and_dispatch_contact` from the bounded pilot: 151 functions /
-5,320 bytes, each reproduced twice. The new baseline is 188,332 bytes / 2,391
-functions in 2,307 modules (batch 188 was 183,012 bytes / 2,240 functions). All
-prior sources/headers are unchanged; two fresh builds, 93 tests and the
-source-only guard passed. This checkpoint is local and not yet authorized for
-publication.
+Batch 189 admitted 151 functions / 5,320 bytes (2,391 functions / 188,332 bytes).
+Batch 190 admitted 55 functions / 5,264 bytes, 40 of them C++ units, for the current
+baseline of 2,446 functions in 2,362 modules / 193,596 bytes. All prior sources/headers
+are unchanged; two fresh builds, 93 tests and the source-only guard passed for each.
+Neither checkpoint has been authorized for publication.
 
-Candidates are unadmitted game-code entries whose direct calls all reach admitted
-functions, grouped by masked instruction shape. Next, prefer 100–600-byte
-call-ready routines with reviewed REA/Ghidra evidence. The batch 188 parked targets,
-the selection/view budget and the original primary targets are unchanged; batch 189
-parked targets and near misses are listed in [BATCH.md](BATCH.md).
+Many unadmitted routines are C++ members: `mov #off,r2; add r0,r2` after loading
+`@(0x18,this)` is a virtual call (slot (off-8)/4). Next, continue the C++ virtual-call
+pool (306 unmatched functions) and call-ready 100–600-byte routines with REA/Ghidra
+evidence. Batch 189/190 parked targets and near misses are listed in
+[BATCH.md](BATCH.md); the batch 188 parked targets, selection/view budget and original
+primary targets are unchanged.
 
-Private trials, specs and receipts remain under `pso-rea`; earlier batch receipts
+Private trials, specs, probes and receipts remain under `pso-rea`; earlier receipts
 remain under `reconstruction-throughput-continuation`.

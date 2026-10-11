@@ -33,6 +33,11 @@ Reading an old success does not itself justify reopening a parked target.
 | One representative matches and related functions remain | [CW13 Family propagation](#cw13-family-propagation) | Independent boundaries and full comparison per sibling |
 | Two global stores load their addresses in the wrong order | [CW14 External data symbols](#cw14-external-data-symbols) | Address-cast global versus externally bound object |
 | Large-offset access uses `add` instead of `@(r0,rN)` | [CW15 Struct fields for indexed offsets](#cw15-struct-fields-for-indexed-offsets) | Field declaration versus byte-pointer arithmetic |
+| `mov #off,r2; add r0,r2` after loading `@(0x18,rN)` | [CW16 C++ virtual calls](#cw16-c-virtual-calls) | Vtable at 0x18; slot (off-8)/4 |
+| Field RMW goes through `add` into a separate pointer register | [CW17 Scoped field pointers](#cw17-scoped-field-pointers) | Pointer used only for the read-modify-write |
+| Offset constant held in a saved register; registers permuted | [CW18 Hoisted offsets and declaration order](#cw18-hoisted-offsets-and-declaration-order) | Scope start of a named offset; r14, r13, r12 order |
+| `base+imm` formed before a scaled index is added | [CW19 Cast barriers against reassociation](#cw19-cast-barriers-against-reassociation) | Intermediate pointer cast |
+| Byte value extended twice; variadic arguments on the stack | [CW20 Extension and argument details](#cw20-extension-and-argument-details) | Explicit unsigned cast; last named parameter |
 
 First locate the residual: instructions, literals, jump table or missing bytes.
 Inspect the object before blaming source for a linked-address mismatch. A matching
@@ -322,6 +327,77 @@ shifted byte offset (CW10), as in the table accessors at `0x8c1a6604`.
 
 **Evidence:** [flag clear](../src/objects/clear_flag2_8c028828.c),
 [table accessor](../src/objects/table_first_8c1a6604.c), batch 189 in [BATCH.md](BATCH.md).
+
+## CW16 C++ virtual calls
+
+**Observed fix.** The dispatch pair `0x8c112fb0`/`0x8c15e91c` was parked because C
+function-pointer forms never materialized the slot offset in r2. A scratch C++ probe
+calling a virtual method through a vtable pointer at `0x18` emitted exactly
+`mov.l @(0x18,r4),r0; mov #0x64,r2; add r0,r2; mov.l @r2,r0; jmp @r0`. Both targets
+matched as `"language": "c++"` units, and 40 of batch 190's 55 admissions are C++.
+
+**Use and limit.** Declare a class with `char unknown0[0x18]` followed by virtual
+methods; slot N sits at vtable offset `8 + 4N`. Large offsets use a literal instead of
+`mov #imm`. Use `extern "C"` names to keep the manifest entry unmangled, and access
+other fields through a separate data struct. `this` placement can still differ
+(`0x8c05c0dc` remains parked).
+
+**Evidence:** [dispatch](../src/objects/dispatch64_8c112fb0.cpp),
+[state reader](../src/objects/forward_state_8c0749dc.cpp), batch 190 in [BATCH.md](BATCH.md).
+
+## CW17 Scoped field pointers
+
+**Observed fix.** `begin_action_8c13b5d0` sets bit 17 of a status word through
+`mov r14,r13; add r0,r13; mov.l @r13`, while later accesses are indexed. A member
+function, an inline flags helper and a struct field all compiled indexed. A block-scoped
+local pointer to the field reproduced the add-based address and the register reuse that
+follows; `hold_state_8c1289a8` matched the same way.
+
+**Use and limit.** Use it only when the pointer form appears for one read-modify-write
+and the field is then addressed normally again.
+
+**Evidence:** [begin action](../src/objects/begin_action_8c13b5d0.cpp),
+[hold state](../src/objects/hold_state_8c1289a8.cpp).
+
+## CW18 Hoisted offsets and declaration order
+
+**Observed fix.** `notify_children_8c021c4c` keeps `0xbcc` in r13 from just after its mode
+test. A named offset local scoped inside that test reproduced the load point and the
+fourth saved register; declaring it earlier loaded it too early. In
+`no_owned_target_near_8c25aa04` the named offset matched once declarations were ordered
+result, counter, offset, giving r14, r13 and r12 as in the reference.
+
+**Use and limit.** This extends CW03. Place the named constant where the reference first
+loads it and order declarations by the observed callee-saved registers.
+`teams_incomplete_8c2436e4` did not improve with this form and is parked.
+
+**Evidence:** [notify children](../src/objects/notify_children_8c021c4c.cpp),
+[owned target](../src/objects/no_owned_target_near_8c25aa04.c).
+
+## CW19 Cast barriers against reassociation
+
+**Observed fix.** `release_child_slot_8c022624` forms `o + 0xbcc` and then adds a shifted
+index. Plain arithmetic, subscripts and local base pointers either multiplied or
+reassociated; `(char *)(int *)(o + 0xbcc) + (index << 2)` reproduced the order. The same
+barrier with a named mask matched the parked `reset_segments_8c05a124` on reopening.
+
+**Use and limit.** Use it when the reference visibly adds the constant before the scaled
+index. Nested-loop variants (`0x8c198d30`) need further evidence.
+
+**Evidence:** [slot release](../src/objects/release_child_slot_8c022624.cpp),
+[segments](../src/objects/reset_segments_8c05a124.c).
+
+## CW20 Extension and argument details
+
+**Observed fixes.** An explicit `(unsigned char)` cast of an `unsigned char` load emits a
+second `extu.b` (`find_selected_8c01e110`); the halfword equivalent with a field reload is
+unresolved (`0x8c1cd2f4`, `0x8c159fac`). `unsigned short` fields store `0xffff` from a
+literal rather than `mov #-1` (`reset_link_8c05bf28`). A variadic debug print keeps the
+last named parameter on the stack with the variadic values (`show_key_8c112fbc`).
+`0x8c18e8a0` binds as `__l_mods` for `%` in C++ as in C.
+
+**Evidence:** [selection](../src/objects/find_selected_8c01e110.c),
+[key display](../src/objects/show_key_8c112fbc.cpp).
 
 ## Batch 189 transfer notes
 
