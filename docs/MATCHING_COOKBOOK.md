@@ -523,3 +523,8 @@ its catalogued range was admitted at the shorter size only when all of these hel
 - A test that branches past its block on the original comparison (`cmp/gt; bt skip`) is `if (!(a > b))`. Writing `a <= b` selects `cmp/ge` instead.
 - Range checks that return a field or a default compile from `if (x < lo || x >= hi) return k; return x;`.
 - A `movt` result is a named int predicate (CW07).
+
+**Batch 195 notes.**
+- A halfword loaded straight into an argument register (`mov.w @(r0,rN),r5`) means a `short` parameter. An `int` parameter adds `exts.w`.
+- A zero extension kept before an `or` and a halfword store is `x = (x & 0xffff) | k` (CW20).
+- Forward `goto`s that mirror the reference's block order reproduce shared tails and `else if` chains.
