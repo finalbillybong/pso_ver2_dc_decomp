@@ -517,3 +517,9 @@ its catalogued range was admitted at the shorter size only when all of these hel
 - the next address is decoded code that some aligned literal word in the image references.
 
 48 of 97 such cases met this rule.
+
+**Batch 194 notes.**
+- A conditional value followed by `rts; nop` usually comes from a ternary return.
+- A test that branches past its block on the original comparison (`cmp/gt; bt skip`) is `if (!(a > b))`. Writing `a <= b` selects `cmp/ge` instead.
+- Range checks that return a field or a default compile from `if (x < lo || x >= hi) return k; return x;`.
+- A `movt` result is a named int predicate (CW07).

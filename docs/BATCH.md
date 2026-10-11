@@ -1,145 +1,143 @@
-# Reconstruction batch: 193: reviewed short ranges and improved generated drafts
+# Reconstruction batch: 194: near misses and draft generator idioms
 
-87 new matching functions / 6,060 bytes. All 2694 prior functions preserved.
+75 new matching functions / 5,136 bytes. All 2781 prior functions preserved.
 
-2781 exact functions in 2697 modules; 216,432 compiled function-range bytes; 0 reconstructed data bytes; 3,946,480 retained reference bytes. Whole-image coverage 5.1991% is not code completion.
+2856 exact functions in 2772 modules; 221,568 compiled function-range bytes; 0 reconstructed data bytes; 3,941,344 retained reference bytes. Whole-image coverage 5.3224% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c01d88c | 0x8c01d88c | 28 |
-| operation_8c01d8a8 | 0x8c01d8a8 | 28 |
-| operation_8c01fe20 | 0x8c01fe20 | 24 |
-| operation_8c020290 | 0x8c020290 | 32 |
-| operation_8c0246d0 | 0x8c0246d0 | 80 |
-| operation_8c026450 | 0x8c026450 | 92 |
-| operation_8c02656c | 0x8c02656c | 72 |
-| operation_8c0265b4 | 0x8c0265b4 | 64 |
-| operation_8c0265f4 | 0x8c0265f4 | 64 |
-| operation_8c02664c | 0x8c02664c | 64 |
-| operation_8c029294 | 0x8c029294 | 88 |
-| operation_8c0293a8 | 0x8c0293a8 | 68 |
-| operation_8c0293ec | 0x8c0293ec | 68 |
-| operation_8c0294ec | 0x8c0294ec | 60 |
-| operation_8c0298c4 | 0x8c0298c4 | 60 |
-| operation_8c02b1e0 | 0x8c02b1e0 | 48 |
-| operation_8c02b9e4 | 0x8c02b9e4 | 36 |
-| operation_8c02c194 | 0x8c02c194 | 24 |
-| operation_8c0347f0 | 0x8c0347f0 | 120 |
-| operation_8c03b0d8 | 0x8c03b0d8 | 108 |
-| operation_8c051dcc | 0x8c051dcc | 44 |
-| operation_8c05426c | 0x8c05426c | 32 |
-| operation_8c05428c | 0x8c05428c | 36 |
-| operation_8c055090 | 0x8c055090 | 52 |
-| operation_8c05b238 | 0x8c05b238 | 32 |
-| operation_8c05b744 | 0x8c05b744 | 56 |
-| operation_8c05cfa0 | 0x8c05cfa0 | 68 |
-| operation_8c060fbc | 0x8c060fbc | 100 |
-| operation_8c066ba4 | 0x8c066ba4 | 48 |
-| operation_8c068270 | 0x8c068270 | 44 |
-| operation_8c075300 | 0x8c075300 | 48 |
-| operation_8c075604 | 0x8c075604 | 72 |
-| operation_8c087248 | 0x8c087248 | 32 |
-| operation_8c088744 | 0x8c088744 | 40 |
-| operation_8c090bac | 0x8c090bac | 76 |
-| operation_8c09a130 | 0x8c09a130 | 92 |
-| operation_8c0a1f60 | 0x8c0a1f60 | 36 |
-| operation_8c0f34ec | 0x8c0f34ec | 24 |
-| operation_8c0f4e74 | 0x8c0f4e74 | 68 |
-| operation_8c0fac9c | 0x8c0fac9c | 120 |
-| operation_8c106054 | 0x8c106054 | 100 |
-| operation_8c10a898 | 0x8c10a898 | 76 |
-| operation_8c11247c | 0x8c11247c | 100 |
-| operation_8c112974 | 0x8c112974 | 100 |
-| operation_8c1215e0 | 0x8c1215e0 | 60 |
-| operation_8c129a08 | 0x8c129a08 | 36 |
-| operation_8c13f874 | 0x8c13f874 | 108 |
-| operation_8c144698 | 0x8c144698 | 44 |
-| operation_8c144c60 | 0x8c144c60 | 36 |
-| operation_8c154ea4 | 0x8c154ea4 | 128 |
-| operation_8c157690 | 0x8c157690 | 108 |
-| operation_8c158b8c | 0x8c158b8c | 96 |
-| operation_8c15921c | 0x8c15921c | 84 |
-| operation_8c15babc | 0x8c15babc | 100 |
-| operation_8c15c6cc | 0x8c15c6cc | 84 |
-| operation_8c15c7a4 | 0x8c15c7a4 | 40 |
-| operation_8c173b48 | 0x8c173b48 | 144 |
-| operation_8c1750c8 | 0x8c1750c8 | 44 |
-| operation_8c187ca0 | 0x8c187ca0 | 80 |
-| operation_8c19a370 | 0x8c19a370 | 48 |
-| operation_8c19b2b4 | 0x8c19b2b4 | 144 |
-| operation_8c1a6910 | 0x8c1a6910 | 128 |
-| operation_8c1a7d14 | 0x8c1a7d14 | 136 |
-| operation_8c1a9c50 | 0x8c1a9c50 | 52 |
-| operation_8c1ab5ec | 0x8c1ab5ec | 44 |
-| operation_8c1bca48 | 0x8c1bca48 | 44 |
-| operation_8c1be874 | 0x8c1be874 | 32 |
-| operation_8c1c72fc | 0x8c1c72fc | 84 |
-| operation_8c1cd3d4 | 0x8c1cd3d4 | 108 |
-| operation_8c1d5d3c | 0x8c1d5d3c | 68 |
-| operation_8c1f134c | 0x8c1f134c | 228 |
-| operation_8c1f2a78 | 0x8c1f2a78 | 144 |
-| operation_8c208464 | 0x8c208464 | 88 |
-| operation_8c208d3c | 0x8c208d3c | 88 |
-| operation_8c210794 | 0x8c210794 | 32 |
-| operation_8c215dcc | 0x8c215dcc | 20 |
-| operation_8c22c4dc | 0x8c22c4dc | 48 |
-| operation_8c22ca14 | 0x8c22ca14 | 80 |
-| operation_8c244bd8 | 0x8c244bd8 | 36 |
-| operation_8c245f40 | 0x8c245f40 | 40 |
-| operation_8c246154 | 0x8c246154 | 16 |
-| operation_8c247e8c | 0x8c247e8c | 24 |
-| operation_8c256a90 | 0x8c256a90 | 148 |
-| operation_8c25c710 | 0x8c25c710 | 56 |
-| operation_8c25e6e4 | 0x8c25e6e4 | 88 |
-| operation_8c25f974 | 0x8c25f974 | 76 |
-| operation_8c260a84 | 0x8c260a84 | 44 |
+| check_range_8c01cf68 | 0x8c01cf68 | 88 |
+| operation_8c01d158 | 0x8c01d158 | 36 |
+| operation_8c026434 | 0x8c026434 | 28 |
+| operation_8c026554 | 0x8c026554 | 24 |
+| operation_8c026634 | 0x8c026634 | 24 |
+| operation_8c027138 | 0x8c027138 | 84 |
+| operation_8c029430 | 0x8c029430 | 76 |
+| operation_8c02c338 | 0x8c02c338 | 24 |
+| operation_8c035348 | 0x8c035348 | 44 |
+| operation_8c03ce70 | 0x8c03ce70 | 20 |
+| operation_8c04b8b0 | 0x8c04b8b0 | 44 |
+| operation_8c04c630 | 0x8c04c630 | 60 |
+| operation_8c04c678 | 0x8c04c678 | 48 |
+| operation_8c051fd4 | 0x8c051fd4 | 32 |
+| operation_8c054248 | 0x8c054248 | 36 |
+| operation_8c055254 | 0x8c055254 | 36 |
+| operation_8c0588a4 | 0x8c0588a4 | 188 |
+| operation_8c058cec | 0x8c058cec | 192 |
+| operation_8c05af28 | 0x8c05af28 | 32 |
+| operation_8c067f24 | 0x8c067f24 | 152 |
+| find_record_8c0744dc | 0x8c0744dc | 92 |
+| flag_owner_8c074ddc | 0x8c074ddc | 56 |
+| operation_8c09c8f8 | 0x8c09c8f8 | 40 |
+| operation_8c09c964 | 0x8c09c964 | 60 |
+| operation_8c0a2048 | 0x8c0a2048 | 252 |
+| operation_8c0b6a74 | 0x8c0b6a74 | 516 |
+| set_link_state_8c0d9cdc | 0x8c0d9cdc | 52 |
+| operation_8c0df9f8 | 0x8c0df9f8 | 92 |
+| operation_8c0f8008 | 0x8c0f8008 | 40 |
+| operation_8c102eec | 0x8c102eec | 84 |
+| operation_8c10db2c | 0x8c10db2c | 216 |
+| operation_8c137d18 | 0x8c137d18 | 40 |
+| operation_8c1571d4 | 0x8c1571d4 | 32 |
+| operation_8c1571f4 | 0x8c1571f4 | 28 |
+| operation_8c1575ac | 0x8c1575ac | 48 |
+| operation_8c1580b0 | 0x8c1580b0 | 32 |
+| operation_8c158110 | 0x8c158110 | 44 |
+| operation_8c1581ac | 0x8c1581ac | 44 |
+| operation_8c1583d4 | 0x8c1583d4 | 88 |
+| operation_8c173460 | 0x8c173460 | 20 |
+| operation_8c18c680 | 0x8c18c680 | 232 |
+| operation_8c1a2da0 | 0x8c1a2da0 | 20 |
+| operation_8c1bd03c | 0x8c1bd03c | 56 |
+| operation_8c1beb60 | 0x8c1beb60 | 28 |
+| operation_8c1beb7c | 0x8c1beb7c | 28 |
+| operation_8c1c5cb8 | 0x8c1c5cb8 | 124 |
+| operation_8c1cdc80 | 0x8c1cdc80 | 20 |
+| operation_8c1d03b4 | 0x8c1d03b4 | 20 |
+| operation_8c1d45b4 | 0x8c1d45b4 | 28 |
+| operation_8c1dc5d8 | 0x8c1dc5d8 | 20 |
+| operation_8c1dc708 | 0x8c1dc708 | 44 |
+| find_free_slot_8c1dc970 | 0x8c1dc970 | 52 |
+| operation_8c1dd18c | 0x8c1dd18c | 260 |
+| reset_slot_8c1ea98c | 0x8c1ea98c | 84 |
+| operation_8c1f03e0 | 0x8c1f03e0 | 112 |
+| operation_8c209830 | 0x8c209830 | 44 |
+| operation_8c21118c | 0x8c21118c | 32 |
+| operation_8c215d6c | 0x8c215d6c | 24 |
+| operation_8c2192d8 | 0x8c2192d8 | 48 |
+| operation_8c21dc28 | 0x8c21dc28 | 40 |
+| operation_8c21f87c | 0x8c21f87c | 64 |
+| operation_8c21f8bc | 0x8c21f8bc | 96 |
+| update_toggle_8c22426c | 0x8c22426c | 92 |
+| operation_8c225448 | 0x8c225448 | 28 |
+| operation_8c22b148 | 0x8c22b148 | 92 |
+| operation_8c232480 | 0x8c232480 | 32 |
+| operation_8c2324a0 | 0x8c2324a0 | 32 |
+| operation_8c2324c0 | 0x8c2324c0 | 32 |
+| operation_8c2324e0 | 0x8c2324e0 | 32 |
+| operation_8c2356b0 | 0x8c2356b0 | 28 |
+| operation_8c238e7c | 0x8c238e7c | 24 |
+| operation_8c247de0 | 0x8c247de0 | 36 |
+| operation_8c248434 | 0x8c248434 | 24 |
+| operation_8c24a6c8 | 0x8c24a6c8 | 36 |
+| operation_8c260ab0 | 0x8c260ab0 | 28 |
 
 ## Method
 
-Batch 193 continued with the private draft generator, `draft.py`, in two steps.
+Batch 194 is the first cycle of the autonomous loop. It has two parts:
+1. near misses were finished by hand where a single source edit fixed them;
+2. each general cause found was added to the private draft generator, checked against the batch 190/191 calibration sets, and the remaining pool was re-run.
 
-1. **Boundary review of short-range matches.** The batch 192 pass left drafts that matched every instruction but compiled shorter than the candidate catalogue's range. A short match was admitted only if all of these held:
-   - its compiled size is a multiple of 4, so no alignment is missing;
-   - the compiled range includes the routine's own literal pool;
-   - the address immediately after it is decoded code;
-   - that address is referenced elsewhere in the image as an aligned literal word, i.e. a separate entry point.
+Generator changes this cycle:
+- **Displacement globals:** a global struct addressed as base plus displacement is now an extern struct symbol (CW14).
+- **Loop updates:** loop-carried counters are incremented before pointer steps.
+- **Literal stores:** a halfword store of a 0x8000–0xffff literal makes the field unsigned (CW20).
+- **Early returns** pick up an `r0` constant set on the way to `rts`.
+- **Double zero extension** becomes `x & 0xffff` (CW20).
+- **Indexed addressing** chooses the pointer and index operands correctly.
+- **Admitted callees:** parameter types come from their sources.
+- **Stack frames:** the `Frame` local is padded to the real frame size.
+- **Narrow loads** returned directly give a narrow return type.
+- **Negated relational tests** are written as `!(a > b)`, which keeps the reference's compare instruction.
+- **`movt`** produces a named int predicate (CW07).
+- **Implicit `r0` results** are carried into returns.
+- **Nested range guards** that return become `if (!a || !b) return k; return v;`.
+- **Ternary returns** are a draft variant, with cast or extern globals; this keeps `rts; nop` endings.
 
-   Overlaps with admitted units were rejected.
-2. **Generator fixes, then a second pass** over the 2,331 remaining candidates:
-   - integer/pointer typing with explicit casts;
-   - float parameters numbered separately (they arrive in a separate register bank);
-   - a `Frame` struct for address-taken stack locals;
-   - cast and parenthesised base expressions;
-   - corrected frame accounting;
-   - three render passes so that late layout facts settle.
-
-   Drafts that compile rose from 1,100 to 1,322 of the pool, and calibration on batch 190 rose from 3 to 13 exact of 55.
+Calibration rose from 17/37 to 18/37 for batch 191 and from 13/55 to 21/55 for batch 190. No previously exact calibration draft was lost.
 
 ## Measured attempts
 
-87 recorded attempts on 87 targets, all hypotheses and all exact. 87 units / 87 functions / 6,060 bytes were admitted after two independent reproductions each:
-- 39 full-range matches;
-- 48 shortened ranges that passed the boundary review above.
+75 recorded attempts on 75 targets, all hypotheses and all exact. 75 units / 75 functions / 5,136 bytes were admitted after two independent reproductions each.
 
-Three candidates in one family (`0x8c21c6fc`, `0x8c21c73c`, `0x8c21c788`) were refused by the history guard because their historical count is uncertain. They were not forced.
+Seven were finished by hand and named:
+- `0x8c0744dc`
+- `0x8c22426c`
+- `0x8c1dc970`
+- `0x8c01cf68`
+- `0x8c1ea98c`
+- `0x8c0d9cdc`
+- `0x8c074ddc`
 
-Disclosure: as in batch 192, every admitted function was first found exact by a scratch comparison of its generated draft, logged by path under `drafttest/`. The recorded trial reproduced that draft unchanged apart from naming and, where stated, the reviewed range. Functions are named `operation_<address>`, and identifiers remain mechanical.
+The rest are generator drafts named `operation_<address>`. Short ranges follow the batch 193 boundary rule.
+
+Disclosure:
+- Every admitted function was first found exact in a scratch comparison (`drafttest/`, `probe_log.tsv`).
+- The hand-finished seven took one to three scratch edits each before the recorded trial.
+- No declaration orders were searched.
+- Six targets were refused by the history guard as having an uncertain historical count and were not forced: `0x8c21c6fc`, `0x8c21c73c`, `0x8c21c768`, `0x8c21c788`, `0x8c032a08`, `0x8c0a02f4`.
 
 ## Observed techniques
 
-- The candidate catalogue often merges a routine with its successor. Of 97 short-range matches over both passes, 48 ended at a 4-byte boundary before a separately referenced code entry and were admitted. The rest stay unadmitted:
-  - unaligned ends (missing alignment, CW06);
-  - successors with no reference.
-- Most remaining compile failures come from:
-  - switch tables;
-  - loops with several exits;
-  - unsigned-to-float conversion;
-  - C++ member signatures.
+- A reference that ends with `rts; nop` after a conditional value often comes from a ternary return.
+- A reference that tests the original comparison and skips the block corresponds to `if (!(a > b))`, not `if (a <= b)`.
+- Range checks returning the value or a default compile from an early `||` guard.
 
 ## Parked and unresolved
 
-- 991 drafts still fail to compile.
-- 1,205 compile with differences, 17 of them within two instructions.
-- The deferred short-range candidates are those listed above.
+Of the 2,190 remaining pool candidates:
+- 1,566 drafts compile;
+- 14 of those are within two instructions;
+- the rest are mostly switch tables, multi-exit loops and C++ signatures.
 
-Code-only completion and total function count remain unknown.
+`0x8c1567bc` (call delay-slot choice), `0x8c05bcc0` and `0x8c1afa8c` (register scheduling) are unchanged. Code-only completion and total function count remain unknown.
