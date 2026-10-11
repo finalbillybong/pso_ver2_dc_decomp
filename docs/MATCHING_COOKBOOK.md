@@ -509,3 +509,11 @@ admitted functions directly, mostly short setters, accessors and constructors.
   catalogue has usually merged the next routine. Shorten the range only when the literal
   pool ends there and the following bytes are a separate routine (`0x8c080310`,
   `0x8c1930a0`, `0x8c13bec4`). Missing alignment still gets no credit (CW06).
+
+**Batch 193 boundary rule.** A draft that matches every instruction but is shorter than
+its catalogued range was admitted at the shorter size only when all of these held:
+- the size is a multiple of 4;
+- the build includes its own literal pool;
+- the next address is decoded code that some aligned literal word in the image references.
+
+48 of 97 such cases met this rule.
