@@ -12,9 +12,9 @@ Other releases are not currently supported.
 
 ## Progress
 
-**2240 exact matching functions in 2164 modules**, replacing **183,012 bytes** of the
-4,162,912-byte decoded executable (**4.3962% image coverage**). Function ranges
-include their literals and padding. **3,979,900 bytes still come from the original
+**2391 exact matching functions in 2307 modules**, replacing **188,332 bytes** of the
+4,162,912-byte decoded executable (**4.5240% image coverage**). Function ranges
+include their literals and padding. **3,974,580 bytes still come from the original
 reference**; separately reconstructed static data is zero.
 
 This is an early hybrid reconstruction. It cannot yet build from source alone.
@@ -23,6 +23,9 @@ An exact hybrid image is not evidence of a complete decompilation.
 
 [Detailed progress](docs/PROGRESS.md) · [Current targets](docs/START_HERE.md) ·
 [Machine-readable progress](progress.json)
+
+[Matching cookbook](docs/MATCHING_COOKBOOK.md): find proven CodeWarrior techniques
+by mismatch symptom, with source examples and recorded limitations.
 
 ## Building
 

@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **2240 exact functions in 2164 modules**, replacing
-**183,012 bytes** of the 4,162,912-byte decoded executable (**4.3962% image coverage**).
-It retains **3,979,900 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **2391 exact functions in 2307 modules**, replacing
+**188,332 bytes** of the 4,162,912-byte decoded executable (**4.5240% image coverage**).
+It retains **3,974,580 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -29,9 +29,9 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: 188: parallel family continuation
+## Latest integration batch: 189: call-ready helper families
 
-22 admitted functions / 5,424 bytes, including 3,360 new bytes and 2,064 carried bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.
+151 new functions / 5,320 bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.
 
 ## Autonomous iteration
 
@@ -41,7 +41,8 @@ The active priority is project-wide verified-byte throughput. See
 diagnostics and reporting. Global code-completion percentage remains unknown.
 
 Inspect → implement → compile → compare → collect → verify.
-Publication of the verified batch 188 checkpoint was explicitly authorized after review.
+Publication of the verified batch 188 checkpoint was explicitly authorized after review;
+batch 189 has not been authorized for publication.
 Prioritize credible exact-match opportunities. Record each distinct hypothesis
 and its predicted instruction change; consult history and group identical outputs.
 Park after two unsuccessful hypotheses without improvement; a third requires
@@ -54,6 +55,10 @@ checkpoint. Publish only reviewed public source and sanitized receipts; preserve
 the separate research workspace, original data and private saves.
 
 ## Compiler and acceptance rules
+
+Use the [matching cookbook](MATCHING_COOKBOOK.md) to look up observed CodeWarrior
+source patterns before trying a new hypothesis. Its historical examples do not
+override the queue's parked status or the current iteration limits.
 
 Keep the pinned CodeWarrior compiler and base optimization settings. C++ is
 allowed when explicitly declared with `"language": "c++"`; it adds only
@@ -95,10 +100,21 @@ pushing, then verify CI for the exact commit. Gameplay, disc repacking and
 analysis-tool integration are outside the reconstruction loop. Continue from
 verified checkpoints; they are progress records, not requests to stop.
 
-## Verified parallel continuation
+## Verified call-ready continuation (batch 189)
 
-The full 22-candidate / 5,424-byte collection is now admitted and verified in both checkouts, including 3,360 newly reconstructed bytes. The new baseline is 183,012 bytes / 2,240 functions. All old sources/headers remain unchanged. Four fresh builds, both integrated images and five-function proofs, 81 research tests, 86 public tests and both source-only artifact guards passed.
+Batch 189 admitted 142 new units / 150 functions / 5,276 bytes plus the carried
+44-byte `slide_and_dispatch_contact` from the bounded pilot: 151 functions /
+5,320 bytes, each reproduced twice. The new baseline is 188,332 bytes / 2,391
+functions in 2,307 modules (batch 188 was 183,012 bytes / 2,240 functions). All
+prior sources/headers are unchanged; two fresh builds, 93 tests and the
+source-only guard passed. This checkpoint is local and not yet authorized for
+publication.
 
-Continue proven contact/vector compositions; do not reopen the parked selection update (1024/12), region constructors (404/6 and 252/10) or actor motion (524/70) without new evidence. The actor third hypothesis duplicated its second output. The 1,700-byte selection activation and 544-byte actor sibling remain untried. Original primary targets remain incomplete. The demonstration has used 35/40 hypotheses and all 10/10 selection/view hypotheses; do not reset its budget or historical counts. The verified batch 188 checkpoint is authorized for publication; this does not reset the trial budget.
+Candidates are unadmitted game-code entries whose direct calls all reach admitted
+functions, grouped by masked instruction shape. Next, prefer 100–600-byte
+call-ready routines with reviewed REA/Ghidra evidence. The batch 188 parked targets,
+the selection/view budget and the original primary targets are unchanged; batch 189
+parked targets and near misses are listed in [BATCH.md](BATCH.md).
 
-See [THROUGHPUT.md](THROUGHPUT.md) and [BATCH.md](BATCH.md). Private inventory, sources, failed-target counts, timings and receipts remain under `reconstruction-throughput-continuation`.
+Private trials, specs and receipts remain under `pso-rea`; earlier batch receipts
+remain under `reconstruction-throughput-continuation`.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "verification_date": "2026-10-09",
+  "verification_date": "2026-10-11",
   "checks": [
     "two_fresh_exact_builds",
     "integrated_image_exact",
@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "234f30f9fb6cd10494f9d6a884eb2b9ea98021bb7eda0fc171b516765f537bbf",
+    "config/project.json": "a6c754219ee265ecb85a51b8ff2890bdc8163f97258b381a3e53fbcd684733db",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/actor_mode_noop.c": "091e6fbf33d49b3ac1981b122742334eb3466776c1dbc6f65de3c8d221490738",
@@ -37,6 +37,7 @@
     "src/effects/copy_actor_view_parameters.c": "475e396862ca09e8311d0b22582ea3e8ef22c32940186f929a40c557a02dd750",
     "src/effects/create.c": "ad913481618dd3f04074fd732405716a97d093ccb56920c6f70f326dd06dcb0b",
     "src/effects/create_and_emit_effect_a04e8.c": "b5170ec6972b5b0574af111ab52dfe7e0772c562403c9a1b4f23833a44631c87",
+    "src/effects/create_bound_effect_8c02a728.c": "a616f086f63f51d2e14877d67e6e54bfa885f4c296666738b262dd7b87f43d79",
     "src/effects/create_effect_769c.c": "64c0d7245940804a3929a586aa58112f540bccf8bab69f5b9baa49dda996702a",
     "src/effects/create_effect_7708.c": "4951997eab65b88e5e3a631397fb9ef394f708aa73cdf336120f9766db3531cc",
     "src/effects/create_effect_777c.c": "da0e466a392e0ddb6c183d6aa97e1619bec41044defeebb50dcd1bb981107092",
@@ -54,6 +55,8 @@
     "src/effects/create_effect_a460c.c": "47a21c8f5074cb5da3d62042d71eee946fc022a758f1ae9e74ccf56644bc86ae",
     "src/effects/create_effect_a4f88.c": "d37016be1b8e5cfe102daf1d5c9d1f34b6c8c8a86ec70d0def113a7e92cdee68",
     "src/effects/create_effect_a5ad0.c": "b2eae7f8f069306c50717377edc232c1b0e92c1225a8e04401559ff25f60f922",
+    "src/effects/create_effect_at_8c108364.c": "243f1c365e89a96363ce3c7e63a03e8232f681348fb3d113807c6e87041e76a0",
+    "src/effects/create_effect_at_8c108394.c": "1717c8b0590bd73a16e6e56245d82cadd707cc1be3cd50a02f330b7f2cf53c31",
     "src/effects/create_effect_at_position.c": "2c5ef0c767af90af73ca4293320d3a67f2ad0f31c37b792da51f973cb0cac6e0",
     "src/effects/create_effect_b03c8.c": "0576594ba7109cd63287c3984d3b7d8d5758f6fceb873b2d94e48db6d7578edf",
     "src/effects/create_effect_b03c8_8c0b2190.c": "6965a93d262228f51c78f8c8d3f0e7ac4c05dbbc5ecef9b8b0bc7e20625706bd",
@@ -758,6 +761,7 @@
     "src/effects/emission_setup_6020c.c": "d7c9f7327150139b3fd286ba5850b269b011fb27d3ffde4440c550b80f8b6eec",
     "src/effects/emit_alternate_6028c.c": "32c9471680b06935802410184437beb72df44cd12175521a01381b7002b9c762",
     "src/effects/emit_control_60320.c": "cd4d1b1691a1ebae86d41aa6f132252c91f6d20ccbf6830d3c6ba31454a61aa9",
+    "src/effects/emit_effects_8c151b40.c": "8b5574855880e80174d6344d20e7ac3cced0fe4ef40cf3567c3492d5e8049681",
     "src/effects/emit_lookup_602b0.c": "2950e1a13a24793e3e7a0f29acceb5f27e7ea0aaa6d88cf8b1fe323b0a225835",
     "src/effects/emit_lookup_602b0_8c16d5bc.c": "67e17ba4c924e597c0e81afa4ff6b875d9926960dffe43ed9b9e39a8ae570194",
     "src/effects/extra_b6394.c": "c5c489f60112999956295dfa84b3acb02d095352efd760c0d2655d855f6bc84d",
@@ -1101,6 +1105,7 @@
     "src/io/initialize_file_task_queue.c": "e4a243545f2eb7ee285288cee194b8ce9c987b985107cb0849a357c6c3248bfc",
     "src/io/process_file_task_queue.c": "ca3b52954f6d8bbf9aa1412790f30bc1705c7c06e369afe346e51d4408d863ef",
     "src/io/remove_first_file_task.c": "1d85a98c49a7c66d21372e51145a34af58ed3d7c792d8a27c90ca78bfead5982",
+    "src/math/accumulate_8c199f14.c": "33d3f3ab0915e5cc8b66aac9b4ae8e31d617a5781023cf2fa427c7eba459856c",
     "src/math/adjust_rectangle_right.c": "496ae6873af55de2e67732a6b672e0cfe568ae3e60fa72205903a2feb8f1b1ce",
     "src/math/adjust_rectangle_top.c": "2968070520d2e42a2cc4f39d4bcf98516960f0812009af62ef914af8145b4407",
     "src/math/adjust_scalar_scaled.c": "2116a5de4da295722b0bb5d1efe6cbbd19a66720e1f201f4c4b2011a98f82d26",
@@ -1112,6 +1117,7 @@
     "src/math/angle_halfway.c": "566aef942ebe20d3c677ff0a433dd41f93bee2b96c74c2647d3eeca06431958c",
     "src/math/apply_blended_transform.c": "e7d61d9372eaaddb2e08020b533a6ab68d7f50e020c3ca57cb20e6b4a39ef554",
     "src/math/apply_transform_state.c": "7b975c036dfedc96313e1e7c7d8107d76e2630323f432a1d8e627d5200a24507",
+    "src/math/clamp14_group_8c247860.c": "19e2ef74df24b17ef0c41097530b9c9f9f3fa86b425576ebfb6533e6c8fec94d",
     "src/math/clear_motion_profile.c": "d5d5241ae305411294f266a748702fcb678e9d63e6dd07909173de2f1c0fcf26",
     "src/math/clear_running_profile.c": "c1bd6b8063a247d399977859058591205f24daaf3099bfd77fa3f7728f3ffa00",
     "src/math/clip_and_scale_rectangle.c": "d7f70eb44598d85fb2374e618265ec45294bd1fb4e6b7bdf7774b9684d543c1c",
@@ -1167,6 +1173,7 @@
     "src/math/offset_vector_xz.c": "5aecb1d9c2763526cbf9e338f75db47ac016e8bedecfc1a94cd64a7912f88d46",
     "src/math/operation_172c14.c": "207c9d7267ede5ac77ef9eb3162f76262373967fa10eb32e7f0de4a7746edd74",
     "src/math/prepare_blended_transform.c": "0b344382303dd880a18dced1619158d6f3be0720c14d1aaa6a66f00d671cc99d",
+    "src/math/prepare_transform_8c01d020.c": "4fcf57220f89e2a5f4e2750cdce0787f571830cfacff565e58bd17de2c1754cc",
     "src/math/prepare_transform_state.c": "06a2c13586968a591504e5f41058fa728b25d8d414dedb3dfc3ea24b205f3683",
     "src/math/prepare_transform_tree.c": "75e5f85b6ef46678a93d839741c77f392e060a32d38dfe401a35f1013da097ca",
     "src/math/quaternion_blend_and_draw.c": "b8e33422017f1548833622b53788026cd59056379560ac5faf247ec26cacd0a9",
@@ -1195,6 +1202,8 @@
     "src/math/step_running_profile.c": "991eafca63baac7add337670910c7a57f9d4f68b9de0278ad0d954292675cdd4",
     "src/math/step_vector_toward.c": "f2f5e1297910de96a89a61d35f827158d70e5ce1cf7f4d941c842c113f5bf53d",
     "src/math/submit_in_vector_frame.c": "df6b5fbe8aaa277f249b434e17233975be158a668398e8b1942801c14972abaf",
+    "src/math/swap_floats_8c104c40.c": "22eb4a579a9ce1fba38bb5eef78be301dec20642f85cd8ff9aea9e6d141d0636",
+    "src/math/swap_floats_8c104c50.c": "37da125d5081af9c2c37ba1c8d19ecadf2c11e57a1a50e425659492a7148b81f",
     "src/math/transform_fallback_callbacks.c": "bbfb8d886292eb1e8745246a843e298e0abe9f485d356cf75cf0402d81f63e5c",
     "src/math/transform_in_vector_frame.c": "ce561f55fba8a4b7ed7f8e539ca36dacd4325e4e2953d98df39f57d5733fbf21",
     "src/math/vector_subtract_and_angle_step.c": "caa3263a49c3e526d421945518097ee78b3c5f1c89a522e75c36dbfa28652d44",
@@ -1203,15 +1212,24 @@
     "src/math/walk_transform_tree.c": "79a1808d13afaba64fd0a5e595d3fa0e6165b937651a49b89e10b16f6fbe2f04",
     "src/objects/acquire_pair_context.c": "d89685cdc322d024ea0b3fa10cfd40930e253a5275080efa62ef73d9c922643b",
     "src/objects/acquire_text_context.c": "36f337b1009df6a894cf3d2ce3649537d167d5147a6de4a95570b011c0fa3869",
+    "src/objects/active_payload_8c22c05c.c": "225de70633990d7a4c6d0ff3d8c876d4eecc10b81a347eb18713f7188aa16abb",
+    "src/objects/active_unflagged_8c05b258.c": "afd99661596cceb465b7c32407507fbaa1d45c5b8efab3d4d38b40b9daaaeb06",
+    "src/objects/active_unflagged_8c05b2dc.c": "07bec3debee1a32f508322c711edc36c9079607ab186f8abfd813b839078aaa7",
+    "src/objects/active_unflagged_8c111784.c": "b49b2263f6648cfcddd7490eaa89084ecee898cdea0ec927745ff15759d5ccd8",
     "src/objects/actor_animation_ready.c": "cdf21ed2c2400c37c0e0b1682574e7e08b5cf373dc27e8fc89ebfc80bfe6b884",
     "src/objects/actor_matches_current_mode.c": "565e826f76e98c7d2ce6b5da5baf40949a4658100f35536a63a75cbccd969204",
     "src/objects/actor_mode_allows_action.c": "4e7b492e3524ca09230b4584965b4229e470da9921bffde665d7dfb68a21dd5c",
     "src/objects/actor_stat_and_position_helpers.c": "7950df7d9c76467cdc43747228c51febcb1c369578e967f0157ba8dba739f235",
     "src/objects/adjust_330.c": "abd866c6197d75fbfc52c4055f50c125d9f2e16b067f7f44e3c7c4ee6d3ea2c3",
+    "src/objects/adjust_unless_mode2_8c04a748.c": "a4ba58f6d9c8fcf63549afcf2b9237f790730f10790cbd63a3a36371ff63ceeb",
     "src/objects/advance_and_apply_contact.cpp": "db09b4c7feb69af5879c39cab5797f41c106e2c80171cbcc057f24f5dd7f8463",
     "src/objects/advance_and_dispatch_contact.cpp": "0661fe97743514da7cdcd7f5d9326a13c848dc10ee26986f292c83f3f88e53c5",
     "src/objects/advance_contact_position.c": "91b8e4269c89abc32a1bc51e9d66038d33809d2743fce0fe4bd34dafbff1c031",
     "src/objects/advance_context_actor.cpp": "a97e3ca4810e2cee4bd207f74e006aecfc31f8f1e4bd2644e59e58d23390e88b",
+    "src/objects/advance_counter_8c01d5e8.c": "c616681cf5d66c425c0f6418c5a364e6dff722d7b8c51ae496269e3404578a92",
+    "src/objects/advance_counter_8c01d5fc.c": "cbd9d7946e527d1e2fffcecafe3cc91cff1c4d770d528ea880493078d1971d7d",
+    "src/objects/advance_request_8c1e8ad0.c": "215948cb14b4fdad44e45471523d1f06f8e4e5cff36624be084fe6ce15b63b1d",
+    "src/objects/advance_request_8c25a7e8.c": "555c965a1a1659d7f37b3f48b82e29274c1e610923ea8f0cb8f6ea3e49acb653",
     "src/objects/advance_scaled_contact.c": "33e8a28d1dd0c7d0d89945d75620895b088d5452cde6e2f1c10248859361f696",
     "src/objects/advance_text_context.c": "b1967a54ec18b4bfde893ef1f58490d451c7b35c8b1188844cd9a63d81401753",
     "src/objects/append_descriptor_record.c": "96e0f0acecc2122f78fd89d9dbda729e70657bee54a59a574110130730c63082",
@@ -1227,11 +1245,14 @@
     "src/objects/apply_resource_selection_8c214130.c": "0120e409853ddaac27dab8dcf8a77f413816b14cbe9d39a6e3567891a73302e1",
     "src/objects/apply_resource_selection_8c2144e8.c": "087358741ed0a34cb61e79259d7049beed8cccd5d27af41eb22c028bbc0ec099",
     "src/objects/approach_pair_grid_offset.c": "ab23587a7d820d2d734d583163e30e0fba825c68958f474984280e2ce788017e",
+    "src/objects/at_end_8c220da8.c": "e54ffef0fe0285a21119600f2eeba9512ee4f4f107ca79af643c79e8e1c94bc5",
     "src/objects/attach_and_insert_object.c": "60f6c895915a60158b809fc516c9e6633cca1716e195045df86683acc35278cb",
     "src/objects/base_blend_above_minimum.c": "930f133280dbef8656d56687048462d91e1e86f149100c9bb1816f6bde545ff0",
     "src/objects/base_blend_increase_and_apply.c": "7bbf9d29b43779d51b755f62f93bf768ca77946b49c26925a52495e2a5fc5c13",
     "src/objects/base_blend_period_and_resets.c": "9cf88321aecda76e2532b1f5a2561d354e63d690059dcc8f6bac9553bf19911d",
     "src/objects/bind_angle_sample_record.c": "da5709b2cc23fdf61494b85a6b7c54caa1695f7b73bc5cc41adde79453cb27f7",
+    "src/objects/block32_8c1794b4.c": "015228f6e6543788fadc2ab4dbd068ca9bba7950d61665dd4fc2261828e51840",
+    "src/objects/block64_8c122480.c": "73dac14e1ba169b6574286a60323821d5a248f9bb18fc25ccd492fd90f16faf1",
     "src/objects/bounded_byte_queries.c": "f8791f96a275a68d8269e4d3da91a08ca8136c86e4c87accf22ecca23c8c0570",
     "src/objects/cache_actor_position.c": "927f5914f4f2a055861ee48f0492514aff604ad71a60ce96da1af1f9fcac6f47",
     "src/objects/cache_actor_position_8c058238.c": "25f35fbff5ccbe9fc2b988658304d9bc1bf9da4236231d9c263d2fecaae9ae54",
@@ -1248,6 +1269,9 @@
     "src/objects/clamp_scaled_contact.c": "ed6fcb805629d9c4767c864f518ac58d5d18e63e2086cef78b59bb8051132076",
     "src/objects/clear_alternate_scene_context.c": "f3dc6d2eabe80d4df342b3f2ca892948452650afc11682ff5576fbeb0e146725",
     "src/objects/clear_descriptor_tables.c": "f0e75ae8ebde353c0795ea98c207e533e7c2ab83b262e64e619064dfdd66b7c6",
+    "src/objects/clear_flag28_8c02bb8c.c": "ec3ace2444d9e62f8b0df591ea5b3d1d605cde86892fad0528bf45ce7c385e7b",
+    "src/objects/clear_flag29_request_8c128a2c.c": "cddf0d7cb0acad9d868a82549d3f846df2a151a0f5540803c1fdbfc5e6c89f6e",
+    "src/objects/clear_flag2_8c028828.c": "7e9cb25059a5a1a85a5d3772199603128828585d1d2ebe46d0ca01c6a7b422f8",
     "src/objects/clear_global_8c01c1c4.c": "aca94efb85daa27b7d6b1089125733ec1be714b31a7fe62f170d149577fc4142",
     "src/objects/clear_global_8c01c1e8.c": "f94cf0b9201ee5953a39cf5b2716dc60bcb9e68390af7108136b502a0c1d8635",
     "src/objects/clear_global_8c01c210.c": "a3ce7599c72233fe308a932e14418a4d7601da5ba36e0d1624625df3f7c0f330",
@@ -1304,27 +1328,41 @@
     "src/objects/clear_global_8c282094.c": "1f8f322d299c06ce237fc22219d58b8c2de2cb12105bff15494b7abc02777a4f",
     "src/objects/clear_global_8c282d2c.c": "c252654e66dfd32acba23bd591407c9dc28f92c2efcec505c4dbbdf4c0a1fb67",
     "src/objects/clear_global_8c282d70.c": "e0520cb8c7237bf74729108ec3824fcb85a7e3ff1357e6a0c73a737ff132a137",
+    "src/objects/clear_global_bits12_8c14b854.c": "6a3a0717f6295dd34e1c77e2cc72eb6d82053651f05587f52f85656ffd12cd89",
+    "src/objects/clear_global_flag2_8c1112c4.c": "a77b22caa227fa30361266231824b6e448ee1b8aa7f7f98efc7ddc86c1450af8",
+    "src/objects/clear_global_flag2_8c2535ac.c": "22e8fceb0e4ea3e44516fd5a7639cfa2c5cf8ed2bea5652c48590f00d9de688c",
     "src/objects/clear_group_flag_08.c": "55f325dd41363e03d6603b828d84e6b9dd16645e93ea8b439cb445b6946e8f90",
     "src/objects/clear_hierarchy_groups.c": "2878d657ca0ab50c6b8dbdfb43f8cb30cfa53a733c40aa535e1f1bac5088c9df",
     "src/objects/clear_inactive_target.c": "b04611b68983d207f869dfa10619e57ca040a576b14415db41fe687b0602b0b6",
     "src/objects/clear_overlay_elements.c": "ce39448b773dc1306d2bb06994fe577e7e2bc6289d2b47d9c415a42e9d0d163c",
     "src/objects/clear_overlay_elements_8c25a8e8.c": "5881cdcfccbf9299d0f22b4b1eeb4a787ccc29a0a8ab535a336db840803628cf",
+    "src/objects/clear_pair_8c244878.c": "c5a3e5f0fa30fe33668b0f3748dca1727a18614fe95d8cf68c5040ee7faecc53",
+    "src/objects/clear_words_8c053d64.c": "8c6064c9b697628a4aa1a4071099ebf63ac2e2ffe49f3f1b6c7ef83776ea19f9",
+    "src/objects/clear_words_8c169164.c": "0a2de07835997f8d28664bf8ec06c0516b1d05e764f9ced90d1ed6a26450ebeb",
+    "src/objects/clear_words_8c1d9e10.c": "2227e3114de8499fd96d8ca8ff679104666a8fd971edcbbe447435a9d4cd2319",
+    "src/objects/clear_words_8c1d9e30.c": "d548cdc0406ab476e69d6223d78850673cc9ffd6276538da679b77768b2affe4",
     "src/objects/commit_resource_selection.c": "93572a8bb36c26ce2c45bd74641a9e79a031e4c8ff71ee98e62cb553c9972593",
     "src/objects/complete_text_context.c": "b72d696a7f368041522586e35e0b1911b772c974370c719a7caebac4df35e733",
     "src/objects/compute_actor_scale.c": "4e4a3062c8455d53ac3944dbcc59125c95177c0f295e9349141c1123c5ba95c3",
+    "src/objects/configure_buffer_8c1f9f64.c": "cd7da379d54b9cc378e95efdb14761b273076fbd4bb00220e6bc4dcd1070bbb1",
     "src/objects/configure_grid_view.c": "41a4bab82d1f183614c943d18278300826c7226b3c4b399797c38cb3efbd4b5c",
     "src/objects/configure_pair_grid_view.c": "4fea9b7a60dcdb41ea37a2b7e39d045bc5f436cc9afdfb1063167e12ba5487a0",
     "src/objects/confirm_resource_selection.c": "9f96f65f75bd1e02d31c52b868a4149d46376e03e85184e6ea41d3fa7259108b",
+    "src/objects/consume_8c20a420.c": "10df1d9fc10f673e294b3cb8005f3e07b94d7097a5e2e96c95b985b0ec7db6c9",
     "src/objects/context_actor_ready.cpp": "e421e0778380e10d2c804e824908981da515ae0dac0e7fa0afd4e5fde7e6f27a",
     "src/objects/context_target_predicates.c": "dd96a750fa73b63f7e80e0ccce26d4cc751d70103db369c3d031ef2fbcd44364",
     "src/objects/context_target_resets.cpp": "0015daaa3f5da838883a10efdc106d1f078796dae554829f2ad0812819c92729",
     "src/objects/copy_actor_records.c": "8baefa3f10bda42a0581d95f4c91d14138a6e1f7498287b114c52df1c01819b9",
     "src/objects/copy_eight_packed_fields.c": "f1c4c246ff35e7c6f7c29f63608c6757bd96424332fbd5f7be601221521362a6",
     "src/objects/copy_object_id_1b6.c": "4b121f364a4deebdd21d1ce95f74780039ba75012f7a7df338a06601e45657a1",
+    "src/objects/copy_pair_8c014f10.c": "06d90abe006eea9860e138cdc71de720091dacf81ccf98dbf7ab5898dc7e2aee",
     "src/objects/copy_resource_fields.c": "e32789bcab1f0148286bbea689715762d634e4cb59b91c6c30a45f7a217d4532",
     "src/objects/copy_resource_selection.c": "cb8145b391614f69a2cbebd09f862e3f66707bada3d96ab1e369c8676743f6b2",
+    "src/objects/copy_scale_8c07afd8.c": "c5a264fd55b4957863a8e871b32c1a3ba1f1fbf1c941c24943948d1b3f831b08",
+    "src/objects/count_below_20_8c07c524.c": "ae04561cc61e4606b312552ec553e7e5c22caebdd909ab465178d6e94acc6634",
     "src/objects/count_model_nodes.c": "5f6e863011c23fdebca4ec0248d56839a4f294656cabf021ce523da95a13f5cb",
     "src/objects/count_node_array_tree.c": "ac4c1b55314dc76c3601e3bcaf359922805d918420e33347b280584008f03417",
+    "src/objects/counter_zero_8c13d574.c": "cdf8b7fef3f8ccd0a3925bea2992e1c18d912feb5b4dbd24e305052cb9309d09",
     "src/objects/create_actor_callback.c": "b5ce41e4de1b67e891f1ce8f50dcb4efb6fbcf2b546a8b056c81dc4257c8cc39",
     "src/objects/create_callback_dialog.c": "7a1cdb5c944cd8a1641ff3c5eda07065e5a315fe4ff69bab8170e990580728cc",
     "src/objects/create_callback_dialog_8c11280c.c": "166af7032c270b266c1ce0b01f3650ef93ba5cfbabea12e35335c3cdd0a8976d",
@@ -1355,6 +1393,7 @@
     "src/objects/create_context_actor_8c1bb0d4.c": "009e0189d506937fbe4c37818e355ad5a985d1dab53023f15d82f16ed29db139",
     "src/objects/create_context_actor_8c1bbe54.c": "53cacfa6e3476099723d74ecdf4b1f7b1c85cdf25fb49a14f326d63bcca90381",
     "src/objects/create_context_actor_8c1bc79c.c": "89a91d76a62759b941ba572cf188ce7f2e042a93232aa1f4f84e6198ae986eac",
+    "src/objects/create_context_control.c": "115ccb1243e57130710673c6e20efbe67011e6613f683657942fc71a6d48f364",
     "src/objects/create_context_resources.c": "c396c9b177f4941148e84d2e55550432539b26193529cfa3b64b4df6b45e3cc6",
     "src/objects/create_context_resources_8c0f1654.c": "d7a73414925066cf7b6b37d095059b7de6b3b054d7b435c80fdc405d289a105d",
     "src/objects/create_context_resources_8c0f2100.c": "ed34b61a611376ed62fe3730c62478da1f6946d136c42441afefd624a7e5214f",
@@ -1413,8 +1452,14 @@
     "src/objects/create_grid_resource_8c11a6d0.c": "16c6d7b471bbc86610cc7f06e28fb1cdcbfd84dfb1476bb4e85640a5be12c301",
     "src/objects/create_grid_resource_8c1290b4.c": "a10c2da9c8d6d7e20a1733c3513e722e7d8cefbee468245b98f910ee39f5a8e8",
     "src/objects/create_grid_resource_owner.c": "85c5a403a16d7bbc68ce155549e41780d67c7744bc7db835531b5dfa5431bccb",
+    "src/objects/create_hierarchy_node_8c185780.c": "ad86f5c8d2afe89a2c43fa455cc33e73097832802a4c7856d13060d8c83ee988",
+    "src/objects/create_manager_8c1b084c.c": "befe008011d1c5d2b1c199ba035e8592592d729514dc18c817f1aa87c52a81a8",
+    "src/objects/create_manager_8c25e570.c": "c62b0dcd9ed7eafba857ad00020f8b049ad753b99fdf1cf6c925d07a85bdc9ce",
+    "src/objects/create_object_8c09d698.c": "79356146e0bc652e729e508fcede9e97f156605a7cf8be89860bc1d249662a69",
+    "src/objects/create_object_8c1372e8.c": "c1c68fe487359c4bfe71aca0b6ec48d539895f4d64e1efe190573623e965f695",
     "src/objects/create_object_8c23ca68.c": "2346cf2f012c771e4383f51bbd93819fa3d07e5c5af21f47890be44a2a1e2ff0",
     "src/objects/create_object_8c23d9b8.c": "09a6ffc3c0107592f7a75bbe8423e8a92715dd0c912290d1cdee24ad339a4a0b",
+    "src/objects/create_object_8c253358.c": "c282f39bc84fea09555857de26a282cee724655209daccf6f932b09337b08365",
     "src/objects/create_pair_widget.c": "734febed44dd29ba1b1286e7f398f9fb359fd3902f12d7ab7f6f82c204d6046e",
     "src/objects/create_pair_widget_8c1f1880.c": "a2f5889fae4e2198947ba5f0c0ee49638fa55f265c2fb11345360fc97bc2e21f",
     "src/objects/create_pair_widget_8c218624.c": "1ef32ad778a0f2574348574987654326563aa046486ca93c142a4121a16c1035",
@@ -1612,7 +1657,10 @@
     "src/objects/emit_context_particles.cpp": "657705f8d7c8029779c475e0589077e4c426d1e783b895b9c003a4dbbcba0523",
     "src/objects/emit_raised_ring_particle.c": "2ff138c8e70c6379824bc8cb5fe6ab5ec63b703b279377a2cca85e7df773fa29",
     "src/objects/empty_operations_37d4c.c": "8ea73e852f6001028778918fd89bb1f6d23974458629de1033bb3d394b339d35",
+    "src/objects/enable_pair_8c1cc4b4.c": "ac4a8587566c94023d00b80807081acb22969133d0549d9f61448a6f2d8748c6",
     "src/objects/enter_actor_mode_9.c": "ba2f062fafd5ab147c0dd5b9c3e9b2e0a3d610cb4b29363860e58eec66d8e612",
+    "src/objects/features_ready_8c1e779c.c": "f8d9db411cc89cc0bb68262bec8dfc4e4aa29144793ead7079be2677140c147b",
+    "src/objects/features_ready_8c25c3dc.c": "54afe07b401ed14afdb919e591abf7439f59572820a738ac100dfe4a39fcc2eb",
     "src/objects/fill_node_array_tree.c": "22951c07a5109dd8f1f8c18ac0f115d7fdfa902402bfa2ce96b94983a1a94380",
     "src/objects/finalize_pair_grid_view.cpp": "a4035ca4137379a5d96e194a7b606fe9bd202735e9483a9cdf03fef4ce2c7b87",
     "src/objects/finalize_resource_selection_8c214d20.c": "c6752d7ab74a5b698d354b97e82cbd411d747c3487cf55fcc4b01da55b09029f",
@@ -1624,21 +1672,30 @@
     "src/objects/find_local_actor_in_radius.c": "fab9a0874db47ae86710c1891efc663ee120797e4a16204105f232f85f711fbc",
     "src/objects/find_local_actor_in_radius_8c25a9a4.c": "412b696958cc495bec0c875bb531b37b09498285142a05a4ee5cd60e70c686c9",
     "src/objects/finish_scene_transition.c": "59151996150e880ddbd858f9aafa35cd4ed4a446806911001bdefe4c69d7b239",
+    "src/objects/fits_8c20b4f4.c": "e14dbb6433c075bc787dd40d9be9a7c7342590cd3fd160917a6f4050da90f56b",
+    "src/objects/flag_set_8c01c200.c": "44f0ef438ad4adc060a01427cc33c837d4f9dda9c20944c1d88416523353a4be",
     "src/objects/forward_child_transfer.c": "ca22772d872c47bbda19a54aa165dc79bd498b64a055af0df890c26fc4499f36",
     "src/objects/forward_scene_record.c": "d4ec339c864c35f26ceccdb3bcdc50de62b70335964448d9fc8c2fbc32b3e371",
     "src/objects/forward_signed_mode.c": "b353c774f746b9115ca4cd006f13276dbca5662728f0af040f69acae2aef8414",
     "src/objects/get_actor_position.c": "72fb73d760aab661829c30f3def09615c1e20882162ca89ff7abf155497782c0",
     "src/objects/get_actor_state_value.c": "7da61f04575c88a1a33a167669ec7e199952e84696383ec4cfddda42d73230c8",
+    "src/objects/get_byte_8c220d94.c": "9f604cb179686b248191bcf9173ce268253484a8d015a65ca8102874349dbfac",
     "src/objects/get_live_child.c": "15131a053bb4c06a9b8918462cdfe369d49f694bcbe89feec42c22aeacd0626e",
     "src/objects/get_text_context_buffer.c": "859a7dc64a65dba0dc3acacc5bfadbfb909c2fef345b0e181f75295904096a3c",
+    "src/objects/global_byte_set_8c08d7e8.c": "e81cec3f22655beade2946f0c7848584d05f5554e224c2c7a9639510cab1882a",
+    "src/objects/global_present_8c13a3e0.c": "3747279ca80a488a3eeb6db75154ce8935b37aa7c7dc34c8ae0f1bcb6a9980f3",
+    "src/objects/global_present_8c25e560.c": "b727c65d955955f7644be0498770515729ec01819235bd82566334789bc03a58",
     "src/objects/grid_view_visible.c": "54f011aa59d2cc15b03f88defb2f33d78bd095831fdc73fed57d6b48498d1f65",
     "src/objects/handle_actor_idle_event.c": "d1ea8111a0210f263b213fba0c49be8be0ba91648d2433b8539a0dabb4568951",
     "src/objects/handle_actor_idle_event_8c0d22bc.c": "76823c8b8b959233fba1b73c8aef7531a40f62c869d6509ab33b920ee4d6e7ce",
     "src/objects/handle_actor_wait_event.c": "7c978bcd0d6f5637de85e1ad12da0cc1778b1da0f5a89c7ebb080de659f3b5f4",
+    "src/objects/has_flag9_8c21f690.c": "7b3057eaa854f97f21cdcb7b1bc4e802da8dc0865dfc4a20f5c6af1d5d3331ee",
     "src/objects/hierarchy_child_update.cpp": "59c0a2d399ac17d55849fbc0ec79e04230d18e6e02540caa8d8d3e6166989952",
     "src/objects/hierarchy_is_active.c": "89d92bf64cec4afd7c54d2da65a494e470f0a402acaacfe1dbbf7181b339a856",
     "src/objects/hierarchy_output.c": "eb1cdee3a8ac302bbf593802d8691b261ae60302193d013559345e1717458096",
     "src/objects/hierarchy_output_cycle.c": "cb9f99e1a62589563150fef3306232e5baa56bf1c7f6768d24c87a0563cf18d2",
+    "src/objects/ids_equal_8c25eb2c.c": "7a8042914e7bf1dfaeccd702f7cf548028cbcb706421775ce414222e89be1187",
+    "src/objects/init_header_8c1d0280.c": "1f3aff9a05c3114dbccfb3439f7c52f57b53d91f3b880a6221741176af1c8f36",
     "src/objects/initialize_actor_callback.c": "683e44c3186c0a16321269039449753aa85324495262b1c405f4c88cc6d422c3",
     "src/objects/initialize_actor_child.c": "8a958e86d7d7910dcf524b6df0094ce447c0b3a48057c3144c0c531b04ec2e3e",
     "src/objects/initialize_alternate_grid_view.c": "d73df046b1adbc7f7a317eeaadbda451a02baa6131f737e93c7fdfd70371cdc5",
@@ -1707,6 +1764,8 @@
     "src/objects/initialize_timed_actor_child.c": "f515b8b532f6aa67be04aae286e6ac88bf136d10584ef51b96b72242f8969a91",
     "src/objects/insert_object_by_id.c": "cb4969fb69550a0e406c336228396c563ab903cd16900d6dbc9deeb9d802d6c8",
     "src/objects/interpolate_view_parameters.c": "a27fd5549c77c3f0fc65684652f0d7bf8798bacb6a63d5e3b1ce4d492427ae54",
+    "src/objects/latch_counter_8c059ee4.c": "125ab448b8396b99626d577b2495dd83388ca4975ee24b74c02a284941f366e2",
+    "src/objects/level_class_group_8c190148.c": "6bd864d3a63e8d2db74ff18333cb5924037d5b565af528c59fe80f251cc2cac8",
     "src/objects/load_grid_render_resource.c": "35297652b23abfa6fc06b916118978f108d30c2c24a401c24c1d19ee5e75f8be",
     "src/objects/load_record_block.c": "9e6c16260468db65a71a7e3b0729e1f108d9de01c6cc4e899e54cdfbc3774a35",
     "src/objects/load_record_block_8c186954.c": "ce360c23cc1dcf78eb046e1d883b6c660494829ed480073976a8d262b45500cf",
@@ -1719,6 +1778,7 @@
     "src/objects/manager_record_dispatch.c": "b24acfe5993b8c23516c8509b2bc8dea1d0fac55b8c58c0a5590bed0411d0d1a",
     "src/objects/mark_actor_flag_2.c": "47ad8beb5b5b19fcd894c3d0656e4279a51df1293b6a55aaa361954a06994395",
     "src/objects/mark_actor_flag_2000.c": "9c3254fab33fbe470e6257f6b2d8bb70daac74280760c4ef052708a9124a2a4b",
+    "src/objects/mode_is_3_8c0e8d98.c": "e8aea9a98148fd65162679ecf92c8df4129bf26af5dc21d2b741a79e72f385e5",
     "src/objects/mode_requests_8c142298.c": "30de0f857832f0a8bf7a8b35af4c592f0b87e115ef2b96847c97442ed3626b1d",
     "src/objects/move_and_capture_position.c": "997891e9667904ed54e2835623627e68f3c6485a59d316b46109e6995c5aca2e",
     "src/objects/object_actions.c": "c51bea1339dea043ab22ce7aab029599ea91a058f25264940fc5bb055915e166",
@@ -1737,6 +1797,7 @@
     "src/objects/offset_effect_controls.c": "905a3d0b70db04ec6efb7754d184706a95d0a5e4afc24dc2b10fd75971561a84",
     "src/objects/open_pair_context.c": "34d2e2455bbd58f532b01d9003e40e47426954f7ec682167425d9ca4fafa425e",
     "src/objects/open_text_context.c": "faff4e4246953b30566270b5e05a76878211400d29db656071d98295a524d76e",
+    "src/objects/operate_low_id_8c05bba0.c": "8e55e7a3efc17cc37253a9ba103867301d8da81365702d19f59380d7d2b7470a",
     "src/objects/operation_021f88.c": "c8f009a53efa31f6f9715b76ce48e1efcc404cc8bb45aa823ca41c264f91a801",
     "src/objects/operation_021fcc.c": "74e19e4c525de6ea654afc40ff7e5e6b55fb9a8fd3088232e3ce6928d68c0572",
     "src/objects/operation_02be50.c": "475d2f723114c181999755096f5c87e0d8fcd112e1c81d017323e4afb2380add",
@@ -1885,9 +1946,13 @@
     "src/objects/operation_45a8c.c": "39ab63c7c6e605eb3f7431469b99ebfb971d1d903e105eb1b6a79f28ee803d21",
     "src/objects/operation_45b8c.c": "6335460625ec8386ab9bdf1312a736a3d17973d25bfc7af56be17f94a4a20a30",
     "src/objects/operation_45d6c.c": "87b27af7b353a34193307d9004fc33c62cb91649223118603113c21c26a235f9",
+    "src/objects/pack_ids_8c05a09c.c": "40ae0e7b4aa4146df530429bf4f1eea1efaa28e16c4045077c1d4a06f6684e2b",
     "src/objects/pair_grid_view_ready.c": "00290f509a12f447c739e6c6d58844bfd428c8f4e1d56c8e23419739a7038a01",
     "src/objects/pair_state_accessors.c": "04f9b4481b1835ebaee7cc2d8cba7134d0a5947a4f2cbad4f21063dadfb4d3d2",
     "src/objects/paired_array_callbacks.c": "01de5e9cbfb03263e2ef203bdf6ee09cc8ced5a810b520e091f5e92a05548593",
+    "src/objects/payload_8c010768.c": "31b09c7711b45e38cbe94b2ce0edf27337e8cdc2597415cb60ec83a9803bb55d",
+    "src/objects/player_flag13_8c02935c.c": "9f871457b8269b89afa3b527e24d0f0603a04d12b234b3e15c38481c489d5895",
+    "src/objects/player_flag9_8c026508.c": "7950c4e79ef1aaf8fd80f1345ecea4d5b969728058c7294172d83aea2e3712e4",
     "src/objects/poll_resource_selection.c": "85d510c48620a0ff33517a195e64ab03c6b65c435b21a0e2cff857a658899f00",
     "src/objects/poll_text_context.c": "dc7fd1cf82bee7d8de58ad6fa482df4f332958256f67c49008150bfd533b1a4e",
     "src/objects/position_indexed_label.c": "cbf75b87d34df6ac6d828faf264f73c02b291038114c8e71e98f2270acfc8626",
@@ -1900,6 +1965,7 @@
     "src/objects/position_selection_child_digits.c": "f8c1553383c3d8e2a4fe001a0f4303c95b54023d26eaa917dc8cc7339eb3b703",
     "src/objects/process_effect_record.c": "a87ba4b6e5500923d42ded59bb5ecb43c11f1ddd99a86756b043912f9b392cb4",
     "src/objects/project_contact_position.c": "9d24a29e7d40d2685499466c0e6911d09310d40330b94ec4fb0a55647641375e",
+    "src/objects/put_byte_8c220d80.c": "be7365ce99567a0c6fa0f37623717f08bebd55ecad5f706ce8154f212e9b5bb0",
     "src/objects/query_capped_segment.c": "98bcb22075cef552b1547bffb08fc8b9297e2778d2437b0848780e7f0d5cc299",
     "src/objects/query_field_8c17e6c0.c": "c8056115051002bd1dc080f8400d8b59da6aa74277969906c9733d8077bc5763",
     "src/objects/query_field_8c17e6d8.c": "e8784e45b60f68800d857a460f38115960252a1a254894c74d0370f161fd3bb8",
@@ -1918,21 +1984,39 @@
     "src/objects/reconstruct_8c21ffb0.c": "2e16d97890bb5e05d3a89f010127123408d508ee7ef28c58f4b9f8c11a03836b",
     "src/objects/reconstruct_8c24e0f0.c": "ad3efbfd6c8b9754b5002e861e144c7b3a7c5333d61858f94ccd66bb24ca77df",
     "src/objects/reconstruct_8c250d24.c": "0f8aba3beb8d5c3349d6f845db9ab6a7e2d1ebe13eedcf3202910f25b0e2a34f",
+    "src/objects/record124_8c036110.c": "0764f8ad88aeb22ee1961417c8bad16edd78f94d7f22000b4fba28796c6f3d79",
+    "src/objects/record24_8c17948c.c": "ed97167ab3a67fcefc6f058ed143c77678623be65af66bcf85bc15edd1688722",
+    "src/objects/record30_8c1794a0.c": "1705114010fc6672c727b854fe8097ddd1f0baa934fb75f2092df1870f413c3f",
+    "src/objects/record30_8c1794c8.c": "cce6e28146694cd1766207030fe972b2e893311f96d301b7e0cc3ab773af9141",
+    "src/objects/record64_8c167fd4.c": "4c5d3c361c2bee54946dd0e68e927ca1de94d0f62e87fbd321bff8437b1ffa03",
+    "src/objects/record8_8c19e67c.c": "a27758b68f12f27a98ba260aad030a5becf875910e695c3b5f549f0442c2a08e",
+    "src/objects/recordb4_8c20a5bc.c": "dd39b7c79cfe7c9eba593daf48a792a0ad419777cec20ed0bc1ddabc5bf94d10",
+    "src/objects/recordbc_8c217d3c.c": "e3896fd98f69698d8fc26d6dbddef78a6a514454b1e46a89e62ccb4d8c7fa264",
     "src/objects/refresh_resource_selection.c": "cc8e97a9b644b61c5255514d4ed2b6549075b3b539cf50d73ee4fc205e49d7da",
     "src/objects/release_grid_render_resource.c": "4e8056f41cfe3e48359b1eebf1b4e6936790945d9941c3efc07d1116ccc66498",
+    "src/objects/release_pair_8c0d2118.c": "147af73aaedce73f30a38e6485af7fa5a50c88c6d2169490cdd16e4ab836fa42",
     "src/objects/release_pair_context.c": "ae373e06bc57047f8c438b7b66f4045424ddafe31984f58b3b1a4d8d135a8acc",
     "src/objects/release_render_resource_8c1db4e4.c": "ae214723374739d279374d1c12418b95539f823904dd0d1afe7b329b31d45c99",
     "src/objects/release_scene_control_resource.c": "36737fb25d1bffc9270329d7509a8b0e478c3a811ff3ff71b8fee85e78345036",
     "src/objects/release_shared_buffer.c": "dd0f4dac11e75a07b1f33547a5e80e0eeb28ee275e04c72377784c57d6a065cd",
     "src/objects/release_shared_buffer_8c09cb34.c": "aa671ee76345c6c96feed5368cc7adedb7d738a7e6b0ec787b8a41cc564f3830",
     "src/objects/release_shared_buffer_8c256378.c": "26986219fc1e6da34704fc0a318cab46fac5f95b77423d0e3afff639fe4d277a",
+    "src/objects/release_slots_8c154abc.c": "8f7689c1aa4b6e239c008416e67aaad94131dd79502d929a9b43cee69882e48f",
+    "src/objects/release_slots_8c15561c.c": "fd1fa767a2882c4e67f4b1e0ca16155a2110aaf304f9cb3a18d0be6a023d02ed",
     "src/objects/remove_pair_grid_node.c": "387deb4461d47037f502dd4d0b0cd1286b4613f4025e1ba170dea861f6350090",
     "src/objects/reparent_hierarchy_node.c": "62753e195a9dfe5c07ee22a1ddf6d4a82d78b47984e9d21d229d15fc9c1a90f4",
     "src/objects/replace_low_id_object.cpp": "fa0a8e1c3dca11b5b5fc0469604541d5bd68182610f703a1d4a7632f540b3779",
+    "src/objects/replicate_nibble_8c01d8c4.c": "3ef63cb608b03161406c67a61359b624c83f5b9cb60789fc232025ae243f53fb",
     "src/objects/report_hierarchy_values.c": "940d3051d0d56e4b2e8a19de4ac0bbebb40da9e669b53eac092214bf60f09983",
     "src/objects/reset_actor_motion.cpp": "2757696462f4e39886bae793840e0a20d7cd1719857811bb1380608c4c92b2fc",
     "src/objects/reset_manager_record_slots.c": "582f337b455a59e73d8ecb88a0e3225a42102cbe0dbb6b9ac1d5b12a76123628",
+    "src/objects/reset_offsets_8c1ebcdc.c": "b352d4a4c944c1760362fef3ab0c37c0ef73a2e41065e3887e250225f0f03566",
+    "src/objects/reset_offsets_8c1ec168.c": "edfd746f3badae998b15a74802cb4048a395f7669abf407f3ffdb84bfbffb527",
+    "src/objects/reset_offsets_8c1edefc.c": "0c867acf46a501f2ec657c0a8fbc622a94a079782d5d83e1ec3a44f3428fb7b9",
+    "src/objects/reset_offsets_8c1ee6f0.c": "98071fc2485e5f5545c0824f954a18145ab7276af8743371232330e471249d46",
     "src/objects/reset_shared_object.c": "41ad99223f2ca8c4701691000e957309eea874a4111e967d6d25c599821cb757",
+    "src/objects/reset_slot_8c21f564.c": "b36cdfd876d7dd7e660df5b8aa82c960d036505d485fa0a7c482fd9b0c768f10",
+    "src/objects/reset_text_cursor_8c18ea38.c": "038ea818c313f094f9f0dac3cf4231e3b8b916c01fb9f1998f24f08d8c77fb95",
     "src/objects/resolve_contact_position.c": "5e6f46eee81cdb43ca8688bbbe4602910bf501acfbc98fe526d5b43714046480",
     "src/objects/restore_base_blend.c": "c24d9f0ff171791a649de6ec73ca2787449c0dfb00e2be3da456ccde7a43fa13",
     "src/objects/restore_effect_blend_state.c": "9955b0f2a8372930c024eb31247c958972396af811dd89672386b425d8bc9e51",
@@ -1962,10 +2046,35 @@
     "src/objects/scene_control_vertical_hold.c": "5970a73165c8c2b7c5c68ab160a10dc19abf13de181704e11e8f1abf99b1ff31",
     "src/objects/scene_screen_callback.c": "4c7dcf21abb26a09c38916a1c052eaa56776abc37bf0ad30f4c928552ae292a9",
     "src/objects/select_actor_animation.c": "284ab4bd7f8d77cee0293fc10c5fc075025ad4824ac3a75ea49cbbd85aa5ed06",
+    "src/objects/select_member_group_8c026104.c": "ded33291eec065594aaa45b092a6cb19751b867da51ee94d94475da3af1450ff",
+    "src/objects/select_mode0_8c1cc49c.c": "350e3575f0c199f573252df7c8236897a6a2f4ba53e0a38dbbbb1d6124d88d25",
+    "src/objects/select_mode10_8c1cc588.c": "31945c2986ceccdcf9e5fd452cc98e2f7e8bf916ce207e784739339e90597167",
+    "src/objects/select_mode11_8c1cc5a0.c": "fe5274fe5155c67750e6d3b22e7f37fef238c9e4b4a7735c2c2e142213f66cbb",
+    "src/objects/select_mode12_8c1cc5b8.c": "ff28583e222e773533cf696e4cd77341b052d7af0ad93b8cf4976687534656f7",
+    "src/objects/select_mode13_8c1cc5d0.c": "9bbbb360d0ef2b7497ad871791adffb4914711378abf416d9a4383ae44a78ef2",
+    "src/objects/select_mode15_8c1cc5e8.c": "e470daeeca2b19a604273b2757ac1516151ec15b9e9b162e7935f29984e15e1d",
+    "src/objects/select_mode16_8c1cc600.c": "ffa4471159b578f88d8f48dbbc8c424044a523454b4401cd41483622cde42e12",
+    "src/objects/select_mode17_8c1cc618.c": "e0a95ca1bce086e9910ddb90ecb46e47ad23e9a187b0b0dd98f3d7e5aa39be4a",
+    "src/objects/select_mode18_8c1cc630.c": "7cda58d8c72b182ed0c9e9f906c970a05cb1d319db2d33a874525619711685fe",
+    "src/objects/select_mode19_8c1cc648.c": "eb1677107360ad175136ca34b1632633e875953eee0c07032991184854e53b79",
+    "src/objects/select_mode20_8c1cc660.c": "0d2dbcdc8c8a3f708325937750bd62d1bb95be2d885910488bc59202fc208666",
+    "src/objects/select_mode23_8c1cc678.c": "53fd53ad8e8ffc5f62f224d5774edba711c4eb2126a9ba4dd15a901b265658d4",
+    "src/objects/select_mode2_8c1cc4c8.c": "ee7b59b8e4fcc58847e60dc6d14c489a1bc28ac4e0abf790d83bc80420917c5c",
+    "src/objects/select_mode3_8c1cc4e0.c": "b841ceedd1c62b2b98d4f36ffad025411c10ac77ff5c98933505b042c817996f",
+    "src/objects/select_mode4_8c1cc4f8.c": "22e3099556176fe2417d750929602ee00b8b396539fc08936eb5101200a1ab5a",
+    "src/objects/select_mode5_8c1cc510.c": "b89f8f76f780283b3396b733b200f967e9b1be23ac5176466c25f093766fd1f9",
+    "src/objects/select_mode6_8c1cc528.c": "147591ca3db31f49239984765804a836f3fcb551e08dfbe6cf6a695a6ec201a0",
+    "src/objects/select_mode7_8c1cc540.c": "e5d759f6f2cbf9af08d78c2a671bca2dfa04ed8c2b513b33f9a9850a2dda70b1",
+    "src/objects/select_mode8_8c1cc558.c": "6775ba12f1a596f023ca4f3c1011a66179eeb986d49075ff181aa718e50215c0",
+    "src/objects/select_mode9_8c1cc570.c": "cc617e4faf63ee5fb9454e5a57457ed89f696c59bfe706ff4738877a5b169438",
+    "src/objects/select_state2_8c01c1b4.c": "62a899006ad1da5d9f48afd77e98f805ab1b2c26b242b60bb56d80abffc436a2",
+    "src/objects/select_state3_8c01c234.c": "c98fe2b6a379382d72f40b3c0f80cfd431fabeaa03a67d21ea9ed31dcc9dc7a3",
     "src/objects/set_330.c": "8ee5610ba3bf989d3782fb066a47f2ee84b466ce473b879200f0baff77bf187a",
     "src/objects/set_actor_action_kind.c": "58c9c3f507c0ac9c8c7a49b04d92bc3c2430156026646ed7d098de2448b091e7",
     "src/objects/set_actor_raised_position.c": "0a320ccfb4988fa39493dedce138279b3b2d4abdd5aefa02229f3bf23d62337a",
     "src/objects/set_actor_raised_position_8c0d1c4c.c": "d5913d40c14306496c25338e5b736ade0a20f18ed3db8947f3d752da16a6ce81",
+    "src/objects/set_bit_8c028c90.c": "b55a4cbdaf3904975eb5ff10f836d5cfbdaacfe49b1ed243daa2094a1d30fe23",
+    "src/objects/set_child_flag_8c0f8acc.c": "c1b77ba749a328c3bd9bf927aa220fdf6cb6c065edccd7e0fd0d3df88a0e2e4c",
     "src/objects/set_colored_trail_colors.c": "5438a9221719a54a9b24fe6fc59b4c72df60761c72ec177836555d0be0f15a12",
     "src/objects/set_effect_blend_state.c": "7fe43a4bb7fcbb1e2af9aed53f792982e467229eb0b4f2b6ec4773d788ab5f5a",
     "src/objects/set_effect_color_state.c": "cdd429bdacbbdbb9f4419b88b0fd2eff6aa03df411809130bd5e0465bfbb4aee",
@@ -2014,12 +2123,24 @@
     "src/objects/set_global_8c1aa7f0.c": "0d75072d6ee609725992b9c12164233f05b4e638a9e04c2a0770566876c97095",
     "src/objects/set_global_8c1b0324.c": "fa405373124889dfd44d060f7bf5eaf3e39eb1b2bc7f84b236385d390afed349",
     "src/objects/set_global_8c22ffe4.c": "86370476ff0739800325987e2c428511c42ca729a33f5bae2f0888c006ec9188",
+    "src/objects/set_global_bit10_8c14b7f4.c": "cb0ffa7e5e9ea456289cf219a9a5cf8e7d3726d270c1d0927682186b2cdf4b80",
+    "src/objects/set_global_bit11_8c14b808.c": "0b5aeb822aa3d17cbd2802a35cf7c32291a07f5c433d607d148257ebc7fa1ca6",
+    "src/objects/set_global_bit9_8c14b874.c": "438b1e8edba6bfa6458bc09113ed581ff874542302031511e701b2b56c6b7a70",
+    "src/objects/set_mode2_8c05b1ec.c": "772b6ce86d4e19e3819b14d71d65449e9f9080175c0f1bf9f64a438afa6518a3",
+    "src/objects/set_mode4_8c05b1dc.c": "4adee9b45bb9d280a8670c7fcc0918e2d2e649d7adb0cd62e62075f404ab608c",
+    "src/objects/set_nonnegative_8c0f14e0.c": "1159cd3885bdf0e3ee09bcad513ea18ed61fa939ef9af94002ef70ea5503024b",
     "src/objects/set_object_id_1b6.c": "3e759aef9c1fcb92e416e818023a5371162e9989779062677fd0834d5794699b",
+    "src/objects/set_position_8c0f3504.c": "2cae3399d7f5bec9880811379317ff6940a003732ffe8096439965859eb2724e",
+    "src/objects/set_position_8c21f054.c": "b8b000f09e09841deb1a68c1af0e4fe07ed5e4abcd28f9ed46ef4c0e7f42238f",
     "src/objects/set_scene_control_bounds.c": "0fcebb457413b45107258e2a6de66be2cfed869e5a275821e0756091bcfa7f6e",
+    "src/objects/set_value_reset_8c1dbcbc.c": "cae2da18a3944b1d90d259aa0475d5569099945e6c8a749f811c11f3c07589af",
     "src/objects/settings_queries.c": "29e91e15523ab0a3e13e1b52f63f3d1cff438693ab12ebd646353c23973de02e",
     "src/objects/settings_scalar_access.c": "baed82bd0258c932d98d507e6a0c2e49510a9b286a9927740fa28040bc989935",
+    "src/objects/shift_state_8c0eccac.c": "1a0cfb3e83587cd195d0fd8aaa5a9c83a0e1556cea8a7ba7d7b413b0f520549a",
     "src/objects/slide_and_apply_contact.cpp": "ac7dbf5241be80c73e8586da018f5e06f9d6406b0138f33960c53d0065686489",
+    "src/objects/slide_and_dispatch_contact.cpp": "fd21bbe9c32eda0b2f9449d215dce8f4064eecee492dd7bb69d90034aaad9177",
     "src/objects/slide_scaled_contact.c": "85a8270b94dd21f4bf67292520c15ac3d18f2793045a32badf1a20092452a3a9",
+    "src/objects/span_group_8c215d8c.c": "cc80f8836a1b5d64629e4e828aeb1f12ac6b9594527fa47632421d8e112fe5de",
     "src/objects/spawn_actor_child_if_allowed.c": "ba77762fb6652712df7d98db0683f51c9e9ce678b4572832e10bd8b9eb0b8ca4",
     "src/objects/spawn_object_088ce0.c": "59a8a8d2bb7ad037bac6b8b1bc8488f6fffc0a46d5f5ad07b1a119c3f6f31c0f",
     "src/objects/spawn_object_0893a8.c": "c7007a751223a7920acdbe3825b0ba269b035f1909685fd8197a1689a9251872",
@@ -2119,13 +2240,31 @@
     "src/objects/state_owner_child_group.c": "75b16487e75be7389704edccab8c8d432183f050a584ba8d22b1fb61e23125b4",
     "src/objects/state_owner_reset_group.c": "b953f149886ddf8c199e0405f29ee2bb948c2d6a33bebe14358874a778b25762",
     "src/objects/store_actor_scale.c": "3fe6fe52f7f90b8fc76448ca4cd26235dbc6ec79b0e52ea3b00233cff731240a",
+    "src/objects/store_bounded_8c239100.c": "5e4916ccb364402c92631482f9dffe7d93b83b894a51e9a633ec17f65b7b28ae",
+    "src/objects/store_bounded_8c239110.c": "8761a9bc4bb5f87a68e7ea8aa3eae69c4749f7ed10250b582ce7e8201fa7db8d",
+    "src/objects/store_bounded_8c239120.c": "d962b22384646ec739b4313307ad2a044362063dbd84b03fe1d3a870ba4aeb1f",
+    "src/objects/store_bounded_group_8c2390e0.c": "090db8f80c7b2b74f73b7aa8264d47b5509c8c056d391e529bb0ae08b89b56de",
     "src/objects/store_default_actor_scale.c": "b3d1ecc00297c8d503289f49327f6268844d3ebad01b0e047d144ccbf261aa5c",
+    "src/objects/store_entry_8c173474.c": "ec2a081beb2a2603afb94521faa75b00123c1903c119869c64803962ea8e2aa0",
+    "src/objects/store_pair_8c1876c0.c": "951283c270cb12d5a626551b9bbacc4eb198d8714fa27e435f9ec3cbc722cd9b",
+    "src/objects/store_percent_8c03c194.c": "524a560e675e3d89b0955350f9e336274154a698bb3c691fb79ac2bc59ac362f",
+    "src/objects/store_record_8c179540.c": "88c4ed43679fcf27b4be2c443755345fc736206ac2040cb0588e4f2f897072f3",
+    "src/objects/store_record_8c1795e8.c": "19cd65a3d9323bfa92191ae7b431c80e27ca844531293516fb3d81420e014884",
     "src/objects/submit_hierarchy_array.c": "a93203f093deef28c5bda96c3f005444315a9e2b26a5deb4af74fe86f34c4e6a",
+    "src/objects/table_first_8c1a6604.c": "91cab3fdb1643ca25801a08efe7ed6c141b4bfa0f8faebede36f438ec1c8e5b7",
+    "src/objects/table_second_8c1a6610.c": "b1459e146ff84db328c8109a06e327d561372697be28a2fdd876732825482809",
+    "src/objects/table_third_8c1a6804.c": "b413f0c403625108295927f150edbcf0ac2ab1570363b4550302056d0c0e1e8f",
+    "src/objects/target_in_radius_8c0886f8.c": "e0d438dd99ca5c573c0980d6c13ce8486155453d1e916bc747cdac9ff3afa3f0",
+    "src/objects/target_in_radius_8c113490.c": "f77f9cdf3e0a48eedc2b466134bb1480c964c267d2ce909d4c36f512a1e198de",
+    "src/objects/target_outside_range_8c09fd00.c": "e2ad9d4595a8b0fa526e0779ead10c85746f79fa89d9dcce92e18bb23f9b0d62",
+    "src/objects/target_within_range_8c185748.c": "e25aea4595fa7684ae92430a829a1ffae9325c0a7ac7598b447061a4cacc5d93",
+    "src/objects/target_within_xyz_8c1a9f14.c": "8c4a881f2290718e058a40db94ab0b4b263b5a9c3a53b8b39a58a20a2abbf992",
     "src/objects/time_hierarchy_update.c": "935da4e3d4afb22a03a7bae015ffc88fe0a7f67542a23760f625629eb173a7ce",
     "src/objects/time_hierarchy_visit.c": "2d531094b54a3405df298803ac1a2de5344a503acafeb195127c8fbe16f96776",
     "src/objects/toggle_group_flag_08.c": "21ce83e9c8c0bb035a2f18e6b1c3f8e73c7fe491833c6fec05672aa9cda15fb8",
     "src/objects/transfer_lowered_children.c": "08fbcb77d555270298fe8469f744d169f00dde8c80bd9572129cc7c7e1536397",
     "src/objects/transform_actor_records.c": "3defb0798bc33dcf183123b486c426517906ed43fb56d95553da5f23134375ab",
+    "src/objects/transform_with_8c05214c.c": "d0ee52ebdbafdc19089f89ea93b8fca210c806b5af99f760159f815f478ee6ea",
     "src/objects/transition_alternate_scene_actors.cpp": "a157ffdefc728bf3713e1c2e391197cb410128d9c032df932c8b9244272e9d89",
     "src/objects/transition_resource_selection_8c214090.c": "7b1bcbf13ca4641247dc0d23726964d7d2052f566cce0edd585ed803580d5a19",
     "src/objects/transition_resource_selection_8c21420c.c": "4c2d55f8e12c59201a46236b7ea641063f74c2ec1c23ca79ec5e9dbba41cdad4",
@@ -2157,9 +2296,12 @@
     "src/objects/update_scene_transition.c": "e0ed24a235fd67453626535839779ee9b9d0c2a57f1187a70c886246fb325274",
     "src/objects/update_script_menu_selection.c": "a6f856dc680f34418db12da5c7266f2cdf55de0b2a4f83929e413b2297592e69",
     "src/objects/update_selection_record_view.c": "3b29285cfb1af2b31f7a2bd4155f71020c99fbe0f707bb8cd0549b4b1699a179",
+    "src/objects/update_target_range_8c25dd58.c": "6798f70641f91853c167105e455bf29c815fe88513eccfe55641aefb7dfcfcfd",
+    "src/objects/update_target_timer_8c2601a8.c": "bff6c433d3279644190a329c8666ae75ace6452db5fe3275a0f5dca0ec2b11bc",
     "src/objects/update_text_context_effect.c": "d4135d713674d81cd0a1b662460dfd6229f203593a42cc057b5c7e91725facde",
     "src/objects/update_timed_actor_child.c": "60d60c0520cc6157799773fc6d5966761b913a5f075a9f4a7cd254e8187b3756",
     "src/objects/update_view_nodes.cpp": "18e03c978742ca24309025f0b96a9726e8e50b3c95c455212f39a7139a728fdd",
+    "src/objects/valid_handle_8c1d9ea8.c": "3083462aff227656e5dcad93baa8f09f2297cbe82c6e6f3220bf53a03c4c6e17",
     "src/objects/visit_hierarchy_10.cpp": "51ab4a4c591ff2f64a465799a96e21534614c15cb3a9108d3ebb94ac5b2919c1",
     "src/objects/visit_hierarchy_14.cpp": "c398e5b46f238d3ae7945e0d37650bc555296185c1a47e1a7a58d1279c2a8680",
     "src/objects/visit_object_links.c": "c6f79377982515f854561b84e721e84ec3c0dacb431ac69e1c51ae53e7b47422",
@@ -2230,6 +2372,7 @@
     "src/resources/query_global_entries_8c1afd44.c": "12c3a787f9df228a042757c7f74068ceeb7d21492310f2699b00749c685248a0",
     "src/resources/query_global_entries_8c1dd704.c": "268653c10876bfbd26e2bfeafd87641fdff46376c47ef979c3d6acbcede36c55",
     "src/resources/query_global_entries_8c22f1a8.c": "df1900f5eb2b197b8e84236919a4f2c28eccb82ba5fabac8e91bd59d09b392a5",
+    "src/resources/release_active_resource_8c184038.c": "44acb2ba6fc0ac5effdceedca4181bd0008dd71f6d95626613a6ff7a8a1f6eb5",
     "src/resources/release_optional_member.c": "da8b672e8d2242ebea003cb3175d8648c8f265ebbe5a3bbba1c0874256f1802a",
     "src/resources/release_resource_member_arrays.c": "66836f7518f60436284788d1f62d73d3c9a24348b174c98bed89fe9ef9c3c34d",
     "src/resources/relocate_resource_header.c": "e92cd035d0f0ace06e01858044c8523ac2219be58336a0bca9bf3b3e8a14eaa2",
@@ -2343,6 +2486,17 @@
   ],
   "unit_flags": {
     "spawn_object_0893a8_8c0104a0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "payload_8c010768": [
       "-proc",
       "SH4",
       "-endian",
@@ -2522,6 +2676,17 @@
       "off",
       "-O2"
     ],
+    "copy_pair_8c014f10": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_color_rise_8c015064": [
       "-proc",
       "SH4",
@@ -2621,6 +2786,17 @@
       "off",
       "-O2"
     ],
+    "select_state2_8c01c1b4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "clear_global_8c01c1c4": [
       "-proc",
       "SH4",
@@ -2665,6 +2841,17 @@
       "off",
       "-O2"
     ],
+    "flag_set_8c01c200": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "clear_global_8c01c210": [
       "-proc",
       "SH4",
@@ -2687,6 +2874,17 @@
       "off",
       "-O2"
     ],
+    "select_state3_8c01c234": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "forward_reviewed_8c01c2a0": [
       "-proc",
       "SH4",
@@ -2699,6 +2897,17 @@
       "-O2"
     ],
     "destroy_object_8c01c500": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "prepare_transform_8c01d020": [
       "-proc",
       "SH4",
       "-endian",
@@ -2743,6 +2952,39 @@
       "-O2"
     ],
     "reset_shared_object": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "advance_counter_8c01d5e8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "advance_counter_8c01d5fc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "replicate_nibble_8c01d8c4": [
       "-proc",
       "SH4",
       "-endian",
@@ -2876,6 +3118,28 @@
       "off",
       "-O2"
     ],
+    "select_member_group_8c026104": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "player_flag9_8c026508": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "mask_any": [
       "-proc",
       "SH4",
@@ -2920,6 +3184,39 @@
       "off",
       "-O2"
     ],
+    "clear_flag2_8c028828": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "set_bit_8c028c90": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "player_flag13_8c02935c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "object_flags": [
       "-proc",
       "SH4",
@@ -2943,6 +3240,17 @@
       "-O2"
     ],
     "object_forward": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_bound_effect_8c02a728": [
       "-proc",
       "SH4",
       "-endian",
@@ -2998,6 +3306,17 @@
       "-O2"
     ],
     "word_operation_8c02bac0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "clear_flag28_8c02bb8c": [
       "-proc",
       "SH4",
       "-endian",
@@ -3075,6 +3394,17 @@
       "-O2"
     ],
     "release_render_mode_four_8c02d218": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_context_control": [
       "-proc",
       "SH4",
       "-endian",
@@ -3762,6 +4092,17 @@
       "off",
       "-O2"
     ],
+    "record124_8c036110": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_view_effect_8c036a7c": [
       "-proc",
       "SH4",
@@ -4148,6 +4489,17 @@
       "-O2"
     ],
     "initialize_manager_8c03bfdc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "store_percent_8c03c194": [
       "-proc",
       "SH4",
       "-endian",
@@ -5654,6 +6006,17 @@
       "off",
       "-O2"
     ],
+    "adjust_unless_mode2_8c04a748": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "adjust_330": [
       "-proc",
       "SH4",
@@ -5854,6 +6217,17 @@
       "off",
       "-O2"
     ],
+    "transform_with_8c05214c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "set_field_8c052174": [
       "-proc",
       "SH4",
@@ -5877,6 +6251,17 @@
       "-O2"
     ],
     "transform_actor_records": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "clear_words_8c053d64": [
       "-proc",
       "SH4",
       "-endian",
@@ -5965,6 +6350,28 @@
       "-O2"
     ],
     "destroy_object_8c059c30": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "latch_counter_8c059ee4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "pack_ids_8c05a09c": [
       "-proc",
       "SH4",
       "-endian",
@@ -6108,6 +6515,19 @@
       "-lang",
       "c++"
     ],
+    "slide_and_dispatch_contact": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
     "clamp_and_dispatch_contact": [
       "-proc",
       "SH4",
@@ -6154,6 +6574,50 @@
       "off",
       "-O2"
     ],
+    "set_mode4_8c05b1dc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "set_mode2_8c05b1ec": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "active_unflagged_8c05b258": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "active_unflagged_8c05b2dc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "word_operation_8c05b678": [
       "-proc",
       "SH4",
@@ -6177,6 +6641,17 @@
       "-O2"
     ],
     "release_render_mode_four_8c05b944": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operate_low_id_8c05bba0": [
       "-proc",
       "SH4",
       "-endian",
@@ -6649,6 +7124,17 @@
       "off",
       "-O2"
     ],
+    "copy_scale_8c07afd8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c07b480": [
       "-proc",
       "SH4",
@@ -6672,6 +7158,17 @@
       "-O2"
     ],
     "create_context_actor_8c07b5f4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "count_below_20_8c07c524": [
       "-proc",
       "SH4",
       "-endian",
@@ -6924,6 +7421,17 @@
       "off",
       "-O2"
     ],
+    "target_in_radius_8c0886f8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_virtual_context_8c0888e0": [
       "-proc",
       "SH4",
@@ -7048,6 +7556,17 @@
       "-O2"
     ],
     "edit_three_word_fields": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "global_byte_set_8c08d7e8": [
       "-proc",
       "SH4",
       "-endian",
@@ -7267,6 +7786,17 @@
       "off",
       "-O2"
     ],
+    "create_object_8c09d698": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "initialize_object_8c09d6c8": [
       "-proc",
       "SH4",
@@ -7301,6 +7831,17 @@
       "-O2"
     ],
     "destroy_object_8c09fc3c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "target_outside_range_8c09fd00": [
       "-proc",
       "SH4",
       "-endian",
@@ -11645,6 +12186,17 @@
       "off",
       "-O2"
     ],
+    "release_pair_8c0d2118": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "handle_actor_idle_event_8c0d22bc": [
       "-proc",
       "SH4",
@@ -12069,6 +12621,17 @@
       "off",
       "-O2"
     ],
+    "mode_is_3_8c0e8d98": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "query_global_entries_8c0e8e28": [
       "-proc",
       "SH4",
@@ -12190,6 +12753,17 @@
       "off",
       "-O2"
     ],
+    "shift_state_8c0eccac": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_named_resource_scene": [
       "-proc",
       "SH4",
@@ -12279,6 +12853,17 @@
       "-O2"
     ],
     "destroy_object_8c0f1100": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "set_nonnegative_8c0f14e0": [
       "-proc",
       "SH4",
       "-endian",
@@ -12421,6 +13006,17 @@
       "off",
       "-O2"
     ],
+    "set_position_8c0f3504": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "set_field_8c0f3df8": [
       "-proc",
       "SH4",
@@ -12466,6 +13062,17 @@
       "-O2"
     ],
     "destroy_context_8c0f7db4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "set_child_flag_8c0f8acc": [
       "-proc",
       "SH4",
       "-endian",
@@ -12894,6 +13501,28 @@
       "off",
       "-O2"
     ],
+    "swap_floats_8c104c40": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "swap_floats_8c104c50": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "clear_global_8c104d84": [
       "-proc",
       "SH4",
@@ -13235,6 +13864,28 @@
       "off",
       "-O2"
     ],
+    "create_effect_at_8c108364": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_effect_at_8c108394": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "set_global_8c1086e4": [
       "-proc",
       "SH4",
@@ -13433,6 +14084,28 @@
       "off",
       "-O2"
     ],
+    "clear_global_flag2_8c1112c4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "active_unflagged_8c111784": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "set_global_8c1117ec": [
       "-proc",
       "SH4",
@@ -13511,6 +14184,17 @@
       "-O2"
     ],
     "destroy_object_8c112efc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "target_in_radius_8c113490": [
       "-proc",
       "SH4",
       "-endian",
@@ -14679,6 +15363,17 @@
       "off",
       "-O2"
     ],
+    "block64_8c122480": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c1225d8": [
       "-proc",
       "SH4",
@@ -14988,6 +15683,17 @@
       "-O2"
     ],
     "destroy_context_8c127918": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "clear_flag29_request_8c128a2c": [
       "-proc",
       "SH4",
       "-endian",
@@ -15515,6 +16221,17 @@
       "off",
       "-O2"
     ],
+    "create_object_8c1372e8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "initialize_object_8c137328": [
       "-proc",
       "SH4",
@@ -15581,7 +16298,29 @@
       "off",
       "-O2"
     ],
+    "global_present_8c13a3e0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_context_8c13c24c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "counter_zero_8c13d574": [
       "-proc",
       "SH4",
       "-endian",
@@ -15971,6 +16710,50 @@
       "off",
       "-O2"
     ],
+    "set_global_bit10_8c14b7f4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "set_global_bit11_8c14b808": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "clear_global_bits12_8c14b854": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "set_global_bit9_8c14b874": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_context_resources_8c14ce04": [
       "-proc",
       "SH4",
@@ -16071,6 +16854,39 @@
       "-O2"
     ],
     "operation_193764_8c1513d8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "emit_effects_8c151b40": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "release_slots_8c154abc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "release_slots_8c15561c": [
       "-proc",
       "SH4",
       "-endian",
@@ -16521,6 +17337,28 @@
       "off",
       "-O2"
     ],
+    "record64_8c167fd4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "clear_words_8c169164": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c16b43c": [
       "-proc",
       "SH4",
@@ -16874,6 +17712,17 @@
       "-O2"
     ],
     "operation_172c14": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "store_entry_8c173474": [
       "-proc",
       "SH4",
       "-endian",
@@ -17271,7 +18120,73 @@
       "off",
       "-O2"
     ],
+    "record24_8c17948c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "record30_8c1794a0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "block32_8c1794b4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "record30_8c1794c8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "word_operation_8c1794dc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "store_record_8c179540": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "store_record_8c1795e8": [
       "-proc",
       "SH4",
       "-endian",
@@ -17546,6 +18461,17 @@
       "off",
       "-O2"
     ],
+    "release_active_resource_8c184038": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "word_operation_8c18490c": [
       "-proc",
       "SH4",
@@ -17569,6 +18495,28 @@
       "-O2"
     ],
     "destroy_object_8c185448": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "target_within_range_8c185748": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_hierarchy_node_8c185780": [
       "-proc",
       "SH4",
       "-endian",
@@ -17635,6 +18583,17 @@
       "-O2"
     ],
     "destroy_object_8c187104": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "store_pair_8c1876c0": [
       "-proc",
       "SH4",
       "-endian",
@@ -17799,6 +18758,17 @@
       "off",
       "-O2"
     ],
+    "reset_text_cursor_8c18ea38": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c18ee2c": [
       "-proc",
       "SH4",
@@ -17811,6 +18781,17 @@
       "-O2"
     ],
     "destroy_object_8c18fa78": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "level_class_group_8c190148": [
       "-proc",
       "SH4",
       "-endian",
@@ -18846,6 +19827,17 @@
       "off",
       "-O2"
     ],
+    "accumulate_8c199f14": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "query_global_entries_8c19a6ec": [
       "-proc",
       "SH4",
@@ -18891,6 +19883,17 @@
       "-O2"
     ],
     "destroy_object_8c19cf34": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "record8_8c19e67c": [
       "-proc",
       "SH4",
       "-endian",
@@ -19319,7 +20322,51 @@
       "off",
       "-O2"
     ],
+    "table_first_8c1a6604": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "table_second_8c1a6610": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "table_third_8c1a6804": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c1a9d14": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "target_within_xyz_8c1a9f14": [
       "-proc",
       "SH4",
       "-endian",
@@ -19821,6 +20868,17 @@
       "-O2"
     ],
     "destroy_context_resources_8c1b0558": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_manager_8c1b084c": [
       "-proc",
       "SH4",
       "-endian",
@@ -20579,6 +21637,237 @@
       "off",
       "-O2"
     ],
+    "select_mode0_8c1cc49c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "enable_pair_8c1cc4b4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode2_8c1cc4c8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode3_8c1cc4e0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode4_8c1cc4f8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode5_8c1cc510": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode6_8c1cc528": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode7_8c1cc540": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode8_8c1cc558": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode9_8c1cc570": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode10_8c1cc588": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode11_8c1cc5a0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode12_8c1cc5b8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode13_8c1cc5d0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode15_8c1cc5e8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode16_8c1cc600": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode17_8c1cc618": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode18_8c1cc630": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode19_8c1cc648": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode20_8c1cc660": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "select_mode23_8c1cc678": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_context_8c1ccd60": [
       "-proc",
       "SH4",
@@ -20668,6 +21957,17 @@
       "-O2"
     ],
     "destroy_object_8c1cff98": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "init_header_8c1d0280": [
       "-proc",
       "SH4",
       "-endian",
@@ -20854,6 +22154,39 @@
       "off",
       "-O2"
     ],
+    "clear_words_8c1d9e10": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "clear_words_8c1d9e30": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "valid_handle_8c1d9ea8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c1da17c": [
       "-proc",
       "SH4",
@@ -20910,6 +22243,17 @@
       "-O2"
     ],
     "release_render_resource_8c1db4e4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "set_value_reset_8c1dbcbc": [
       "-proc",
       "SH4",
       "-endian",
@@ -21118,6 +22462,17 @@
       "off",
       "-O2"
     ],
+    "features_ready_8c1e779c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "get_render_state_8c1e77dc": [
       "-proc",
       "SH4",
@@ -21141,6 +22496,17 @@
       "-O2"
     ],
     "update_overlay_menu": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "advance_request_8c1e8ad0": [
       "-proc",
       "SH4",
       "-endian",
@@ -21184,7 +22550,51 @@
       "off",
       "-O2"
     ],
+    "reset_offsets_8c1ebcdc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "reset_offsets_8c1ec168": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "refresh_follow_effect_8c1ededc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "reset_offsets_8c1edefc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "reset_offsets_8c1ee6f0": [
       "-proc",
       "SH4",
       "-endian",
@@ -21275,6 +22685,17 @@
       "-O2"
     ],
     "interpolate_vector_by_pointer": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "configure_buffer_8c1f9f64": [
       "-proc",
       "SH4",
       "-endian",
@@ -21396,6 +22817,39 @@
       "-O2"
     ],
     "query_field_8c209364": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "consume_8c20a420": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "recordb4_8c20a5bc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "fits_8c20b4f4": [
       "-proc",
       "SH4",
       "-endian",
@@ -21747,6 +23201,17 @@
       "off",
       "-O2"
     ],
+    "span_group_8c215d8c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "create_single_entry_menu_8c217530": [
       "-proc",
       "SH4",
@@ -21781,6 +23246,17 @@
       "-O2"
     ],
     "destroy_object_8c217948": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "recordbc_8c217d3c": [
       "-proc",
       "SH4",
       "-endian",
@@ -22255,7 +23731,40 @@
       "off",
       "-O2"
     ],
+    "set_position_8c21f054": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c21f1d0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "reset_slot_8c21f564": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "has_flag9_8c21f690": [
       "-proc",
       "SH4",
       "-endian",
@@ -22344,6 +23853,39 @@
       "-O2"
     ],
     "clear_global_8c220b28": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "put_byte_8c220d80": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "get_byte_8c220d94": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "at_end_8c220da8": [
       "-proc",
       "SH4",
       "-endian",
@@ -22893,6 +24435,17 @@
       "off",
       "-O2"
     ],
+    "active_payload_8c22c05c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "create_context_resources_8c22c254": [
       "-proc",
       "SH4",
@@ -23116,6 +24669,50 @@
       "-O2"
     ],
     "destroy_object_8c237304": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "store_bounded_group_8c2390e0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "store_bounded_8c239100": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "store_bounded_8c239110": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "store_bounded_8c239120": [
       "-proc",
       "SH4",
       "-endian",
@@ -24250,6 +25847,17 @@
       "off",
       "-O2"
     ],
+    "clear_pair_8c244878": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c245810": [
       "-proc",
       "SH4",
@@ -24317,6 +25925,17 @@
       "-O2"
     ],
     "destroy_object_8c246780": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "clamp14_group_8c247860": [
       "-proc",
       "SH4",
       "-endian",
@@ -25462,6 +27081,17 @@
       "off",
       "-O2"
     ],
+    "create_object_8c253358": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "initialize_object_8c253390": [
       "-proc",
       "SH4",
@@ -25496,6 +27126,17 @@
       "-O2"
     ],
     "clear_global_8c253480": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "clear_global_flag2_8c2535ac": [
       "-proc",
       "SH4",
       "-endian",
@@ -25968,6 +27609,17 @@
       "off",
       "-O2"
     ],
+    "advance_request_8c25a7e8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "clear_overlay_elements_8c25a8e8": [
       "-proc",
       "SH4",
@@ -25991,6 +27643,17 @@
       "-O2"
     ],
     "destroy_object_8c25af94": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "features_ready_8c25c3dc": [
       "-proc",
       "SH4",
       "-endian",
@@ -26067,6 +27730,17 @@
       "off",
       "-O2"
     ],
+    "update_target_range_8c25dd58": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_view_effect_8c25dde4": [
       "-proc",
       "SH4",
@@ -26089,6 +27763,28 @@
       "off",
       "-O2"
     ],
+    "global_present_8c25e560": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "create_manager_8c25e570": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "initialize_manager_8c25e5a8": [
       "-proc",
       "SH4",
@@ -26101,6 +27797,17 @@
       "-O2"
     ],
     "destroy_object_8c25e5d8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "ids_equal_8c25eb2c": [
       "-proc",
       "SH4",
       "-endian",
@@ -26188,6 +27895,17 @@
       "off",
       "-O2"
     ],
+    "update_target_timer_8c2601a8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c2608d0": [
       "-proc",
       "SH4",
@@ -26257,6 +27975,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 3979900,
+  "source_only_rejected_retained_bytes": 3974580,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }
