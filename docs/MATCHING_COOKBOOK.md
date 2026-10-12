@@ -528,3 +528,8 @@ its catalogued range was admitted at the shorter size only when all of these hel
 - A halfword loaded straight into an argument register (`mov.w @(r0,rN),r5`) means a `short` parameter. An `int` parameter adds `exts.w`.
 - A zero extension kept before an `or` and a halfword store is `x = (x & 0xffff) | k` (CW20).
 - Forward `goto`s that mirror the reference's block order reproduce shared tails and `else if` chains.
+
+**Batch 196 notes.**
+- `tst x,x; subc rN,rN; add #1,rN` is `(x != 0)` stored in an int (CW07).
+- A `bt; bt; bt; bra` chain before a shared `return 0` comes from a `switch` with grouped cases.
+- Comparison operand order fixes the compare's register order. `b < a` and `a > b` both give `cmp/gt` but load differently.
