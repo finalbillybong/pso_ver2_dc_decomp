@@ -1,192 +1,118 @@
-# Reconstruction batch: 201: expanded candidate pool, part 5
+# Reconstruction batch: 202: expanded candidate pool, part 6
 
-139 new matching functions / 10,212 bytes. All 3514 prior functions preserved.
+67 new matching functions / 5,940 bytes. All 3653 prior functions preserved.
 
-3653 exact functions in 3569 modules; 284,904 compiled function-range bytes; 0 reconstructed data bytes; 3,878,008 retained reference bytes. Whole-image coverage 6.8439% is not code completion.
+3720 exact functions in 3636 modules; 290,844 compiled function-range bytes; 0 reconstructed data bytes; 3,872,068 retained reference bytes. Whole-image coverage 6.9866% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c21d780 | 0x8c21d780 | 56 |
-| operation_8c21da34 | 0x8c21da34 | 40 |
-| operation_8c21dab4 | 0x8c21dab4 | 56 |
-| operation_8c21dbc0 | 0x8c21dbc0 | 104 |
-| operation_8c21dc50 | 0x8c21dc50 | 76 |
-| operation_8c21eb14 | 0x8c21eb14 | 100 |
-| operation_8c21ec0c | 0x8c21ec0c | 48 |
-| operation_8c21f134 | 0x8c21f134 | 60 |
-| operation_8c21f4d4 | 0x8c21f4d4 | 80 |
-| operation_8c21f66c | 0x8c21f66c | 36 |
-| operation_8c220860 | 0x8c220860 | 68 |
-| operation_8c220b34 | 0x8c220b34 | 40 |
-| operation_8c220be8 | 0x8c220be8 | 88 |
-| operation_8c220ca8 | 0x8c220ca8 | 56 |
-| operation_8c220ce0 | 0x8c220ce0 | 36 |
-| operation_8c2222e4 | 0x8c2222e4 | 72 |
-| operation_8c2229e0 | 0x8c2229e0 | 64 |
-| operation_8c223134 | 0x8c223134 | 64 |
-| operation_8c223174 | 0x8c223174 | 64 |
-| operation_8c2231b4 | 0x8c2231b4 | 36 |
-| operation_8c2231d8 | 0x8c2231d8 | 48 |
-| operation_8c223dac | 0x8c223dac | 280 |
-| operation_8c2244bc | 0x8c2244bc | 124 |
-| operation_8c2245fc | 0x8c2245fc | 24 |
-| operation_8c224b34 | 0x8c224b34 | 56 |
-| operation_8c225558 | 0x8c225558 | 88 |
-| operation_8c225ad4 | 0x8c225ad4 | 40 |
-| operation_8c225c2c | 0x8c225c2c | 88 |
-| operation_8c226478 | 0x8c226478 | 88 |
-| operation_8c2264d0 | 0x8c2264d0 | 88 |
-| operation_8c226c28 | 0x8c226c28 | 108 |
-| operation_8c2272e8 | 0x8c2272e8 | 56 |
-| operation_8c2273f8 | 0x8c2273f8 | 88 |
-| operation_8c227ac4 | 0x8c227ac4 | 72 |
-| operation_8c227b34 | 0x8c227b34 | 96 |
-| operation_8c227b94 | 0x8c227b94 | 128 |
-| operation_8c2281a0 | 0x8c2281a0 | 88 |
-| operation_8c228e2c | 0x8c228e2c | 60 |
-| operation_8c22b530 | 0x8c22b530 | 60 |
-| operation_8c22bcf0 | 0x8c22bcf0 | 36 |
-| operation_8c22bec0 | 0x8c22bec0 | 56 |
-| operation_8c22bef8 | 0x8c22bef8 | 120 |
-| operation_8c22c190 | 0x8c22c190 | 52 |
-| operation_8c22cd48 | 0x8c22cd48 | 56 |
-| operation_8c22dd38 | 0x8c22dd38 | 100 |
-| operation_8c22e684 | 0x8c22e684 | 104 |
-| operation_8c22e78c | 0x8c22e78c | 60 |
-| operation_8c22e950 | 0x8c22e950 | 40 |
-| operation_8c22eb20 | 0x8c22eb20 | 56 |
-| operation_8c22eb58 | 0x8c22eb58 | 68 |
-| operation_8c22ecd4 | 0x8c22ecd4 | 76 |
-| operation_8c22ed20 | 0x8c22ed20 | 80 |
-| operation_8c22efa0 | 0x8c22efa0 | 44 |
-| operation_8c22efcc | 0x8c22efcc | 56 |
-| operation_8c22f164 | 0x8c22f164 | 20 |
-| operation_8c230500 | 0x8c230500 | 56 |
-| operation_8c2308d4 | 0x8c2308d4 | 60 |
-| operation_8c2323a0 | 0x8c2323a0 | 116 |
-| operation_8c232460 | 0x8c232460 | 32 |
-| operation_8c232618 | 0x8c232618 | 44 |
-| operation_8c236ee0 | 0x8c236ee0 | 132 |
-| operation_8c2378c4 | 0x8c2378c4 | 56 |
-| operation_8c237ed0 | 0x8c237ed0 | 120 |
-| operation_8c238204 | 0x8c238204 | 92 |
-| operation_8c238554 | 0x8c238554 | 44 |
-| operation_8c23b9e8 | 0x8c23b9e8 | 68 |
-| operation_8c23cf18 | 0x8c23cf18 | 80 |
-| operation_8c241158 | 0x8c241158 | 80 |
-| operation_8c241d30 | 0x8c241d30 | 88 |
-| operation_8c242448 | 0x8c242448 | 184 |
-| operation_8c2432a0 | 0x8c2432a0 | 144 |
-| operation_8c243330 | 0x8c243330 | 140 |
-| operation_8c243a24 | 0x8c243a24 | 120 |
-| operation_8c243cac | 0x8c243cac | 40 |
-| operation_8c244630 | 0x8c244630 | 88 |
-| operation_8c244710 | 0x8c244710 | 32 |
-| operation_8c244c4c | 0x8c244c4c | 92 |
-| operation_8c244ca8 | 0x8c244ca8 | 56 |
-| operation_8c2455e4 | 0x8c2455e4 | 52 |
-| operation_8c245618 | 0x8c245618 | 52 |
-| operation_8c245694 | 0x8c245694 | 84 |
-| operation_8c2456e8 | 0x8c2456e8 | 64 |
-| operation_8c245728 | 0x8c245728 | 64 |
-| operation_8c246608 | 0x8c246608 | 48 |
-| operation_8c246e74 | 0x8c246e74 | 60 |
-| operation_8c2475f8 | 0x8c2475f8 | 92 |
-| operation_8c247b38 | 0x8c247b38 | 56 |
-| operation_8c247cf0 | 0x8c247cf0 | 44 |
-| operation_8c247d1c | 0x8c247d1c | 44 |
-| operation_8c247d90 | 0x8c247d90 | 28 |
-| operation_8c247f6c | 0x8c247f6c | 60 |
-| operation_8c248044 | 0x8c248044 | 44 |
-| operation_8c2497f4 | 0x8c2497f4 | 60 |
-| operation_8c24c90c | 0x8c24c90c | 64 |
-| operation_8c24c94c | 0x8c24c94c | 28 |
-| operation_8c24d270 | 0x8c24d270 | 92 |
-| operation_8c250574 | 0x8c250574 | 184 |
-| operation_8c251d10 | 0x8c251d10 | 68 |
-| operation_8c25312c | 0x8c25312c | 56 |
-| operation_8c254528 | 0x8c254528 | 68 |
-| operation_8c254f6c | 0x8c254f6c | 104 |
-| operation_8c255704 | 0x8c255704 | 76 |
-| operation_8c2559ec | 0x8c2559ec | 148 |
-| operation_8c255ce4 | 0x8c255ce4 | 72 |
-| operation_8c256b7c | 0x8c256b7c | 56 |
-| operation_8c257198 | 0x8c257198 | 68 |
-| operation_8c2578f4 | 0x8c2578f4 | 28 |
-| operation_8c258020 | 0x8c258020 | 104 |
-| operation_8c258ee4 | 0x8c258ee4 | 80 |
-| operation_8c2595ec | 0x8c2595ec | 76 |
-| operation_8c25a848 | 0x8c25a848 | 72 |
-| operation_8c25a890 | 0x8c25a890 | 48 |
-| operation_8c25aa74 | 0x8c25aa74 | 36 |
-| operation_8c25aac4 | 0x8c25aac4 | 136 |
-| operation_8c25ad8c | 0x8c25ad8c | 60 |
-| operation_8c25c41c | 0x8c25c41c | 56 |
-| operation_8c25c51c | 0x8c25c51c | 36 |
-| operation_8c25c540 | 0x8c25c540 | 52 |
-| operation_8c25cc00 | 0x8c25cc00 | 88 |
-| operation_8c25cc58 | 0x8c25cc58 | 48 |
-| operation_8c25d8b8 | 0x8c25d8b8 | 120 |
-| operation_8c25d930 | 0x8c25d930 | 52 |
-| operation_8c25dd0c | 0x8c25dd0c | 76 |
-| operation_8c25e6ac | 0x8c25e6ac | 56 |
-| operation_8c25e8fc | 0x8c25e8fc | 96 |
-| operation_8c25e95c | 0x8c25e95c | 180 |
-| operation_8c25eb44 | 0x8c25eb44 | 64 |
-| operation_8c25eb84 | 0x8c25eb84 | 92 |
-| operation_8c25ebe0 | 0x8c25ebe0 | 112 |
-| operation_8c25f16c | 0x8c25f16c | 56 |
-| operation_8c25f24c | 0x8c25f24c | 68 |
-| operation_8c25f2cc | 0x8c25f2cc | 72 |
-| operation_8c25f314 | 0x8c25f314 | 88 |
-| operation_8c25f3b0 | 0x8c25f3b0 | 24 |
-| operation_8c25f7dc | 0x8c25f7dc | 60 |
-| operation_8c25fab8 | 0x8c25fab8 | 56 |
-| operation_8c25fbdc | 0x8c25fbdc | 36 |
-| operation_8c25ffbc | 0x8c25ffbc | 56 |
-| operation_8c2607b8 | 0x8c2607b8 | 80 |
+| operation_8c015ab4 | 0x8c015ab4 | 32 |
+| operation_8c01b9c0 | 0x8c01b9c0 | 32 |
+| operation_8c01b9e0 | 0x8c01b9e0 | 32 |
+| operation_8c025fe8 | 0x8c025fe8 | 112 |
+| operation_8c02f7c4 | 0x8c02f7c4 | 84 |
+| operation_8c030cc8 | 0x8c030cc8 | 116 |
+| operation_8c030d3c | 0x8c030d3c | 136 |
+| operation_8c030ff0 | 0x8c030ff0 | 180 |
+| operation_8c03be3c | 0x8c03be3c | 56 |
+| operation_8c03e264 | 0x8c03e264 | 92 |
+| operation_8c04bc10 | 0x8c04bc10 | 56 |
+| operation_8c04c604 | 0x8c04c604 | 44 |
+| operation_8c051e18 | 0x8c051e18 | 72 |
+| operation_8c051e60 | 0x8c051e60 | 64 |
+| operation_8c052124 | 0x8c052124 | 40 |
+| operation_8c065554 | 0x8c065554 | 36 |
+| operation_8c07484c | 0x8c07484c | 88 |
+| operation_8c0788ec | 0x8c0788ec | 128 |
+| operation_8c097018 | 0x8c097018 | 36 |
+| operation_8c09ccfc | 0x8c09ccfc | 64 |
+| operation_8c09d64c | 0x8c09d64c | 76 |
+| operation_8c0dfb48 | 0x8c0dfb48 | 116 |
+| operation_8c0f3918 | 0x8c0f3918 | 60 |
+| operation_8c10ecd0 | 0x8c10ecd0 | 80 |
+| operation_8c1115d8 | 0x8c1115d8 | 52 |
+| operation_8c123d48 | 0x8c123d48 | 68 |
+| operation_8c15842c | 0x8c15842c | 36 |
+| operation_8c158aa0 | 0x8c158aa0 | 56 |
+| operation_8c15b6bc | 0x8c15b6bc | 140 |
+| operation_8c172594 | 0x8c172594 | 124 |
+| operation_8c17e3bc | 0x8c17e3bc | 44 |
+| operation_8c17e42c | 0x8c17e42c | 44 |
+| operation_8c186080 | 0x8c186080 | 44 |
+| operation_8c18cbb0 | 0x8c18cbb0 | 52 |
+| operation_8c19f91c | 0x8c19f91c | 100 |
+| operation_8c1a81a0 | 0x8c1a81a0 | 132 |
+| operation_8c1c74a8 | 0x8c1c74a8 | 52 |
+| operation_8c1c9300 | 0x8c1c9300 | 52 |
+| operation_8c1d78a8 | 0x8c1d78a8 | 84 |
+| operation_8c1deb8c | 0x8c1deb8c | 44 |
+| operation_8c1dfac0 | 0x8c1dfac0 | 88 |
+| operation_8c1e2770 | 0x8c1e2770 | 204 |
+| operation_8c1e67d0 | 0x8c1e67d0 | 308 |
+| operation_8c1e76c8 | 0x8c1e76c8 | 84 |
+| operation_8c1e771c | 0x8c1e771c | 128 |
+| operation_8c20a7d0 | 0x8c20a7d0 | 60 |
+| operation_8c215f7c | 0x8c215f7c | 68 |
+| operation_8c2187e8 | 0x8c2187e8 | 100 |
+| operation_8c21884c | 0x8c21884c | 96 |
+| operation_8c218fa8 | 0x8c218fa8 | 76 |
+| operation_8c219100 | 0x8c219100 | 88 |
+| operation_8c2191ec | 0x8c2191ec | 152 |
+| operation_8c219284 | 0x8c219284 | 52 |
+| operation_8c2192b8 | 0x8c2192b8 | 32 |
+| operation_8c22752c | 0x8c22752c | 40 |
+| operation_8c22e27c | 0x8c22e27c | 80 |
+| operation_8c22f180 | 0x8c22f180 | 40 |
+| operation_8c2308b0 | 0x8c2308b0 | 36 |
+| operation_8c2320e0 | 0x8c2320e0 | 168 |
+| operation_8c244258 | 0x8c244258 | 396 |
+| operation_8c248474 | 0x8c248474 | 60 |
+| operation_8c2484b0 | 0x8c2484b0 | 60 |
+| operation_8c258088 | 0x8c258088 | 68 |
+| operation_8c25c308 | 0x8c25c308 | 84 |
+| operation_8c25c35c | 0x8c25c35c | 128 |
+| operation_8c25cc88 | 0x8c25cc88 | 156 |
+| operation_8c25ec50 | 0x8c25ec50 | 132 |
 
 ## Method
 
-Batches 197 to 201 come from one expansion of the private draft generator's candidate pool.
-- **Before:** the pool held only "call-ready" routines, those whose callees were all admitted.
-- **After:** it covers every unadmitted, non-overlapping game-code function in the Ghidra export with a 16–1,200-byte body. That is 5,044 candidates, 2,896 of them new.
+Batch 202 is a generator cycle over the expanded candidate pool. The draft generator gained:
+- **Argument registers:** a value written to r4 and still there at a call is that call's argument.
+- **Double byte extension:** the compiler extends an `unsigned char` operand twice by itself. A double `extu.b` before a test, compare or `&` is now written as the bare field or load. The explicit `& 0xff` is kept only for a returned value, which then gets an `unsigned char` return type.
+- **Literal base plus displacement:** a pool address followed by `add #k` (often in a call's delay slot) is `extern char g_base[]` with `g_base + k`. A folded constant address does not reproduce it.
+- **Argument casts:** a 4-byte non-float argument is cast to its prototype's parameter type. This costs no code on SH-4 and lets more drafts compile.
+- **Two optional variants (`ucast`, `uctern`):** a single `mov.b; extu.b` is written `(unsigned char)*(char *)p`. Writing `*(unsigned char *)p` can extend twice, for example in a ternary return.
 
-Unadmitted callees and data are bound as extern symbols at their addresses, so call-readiness no longer limits which routines can be reconstructed. All four draft variants were compiled for every new candidate:
-- cast globals;
-- extern globals;
-- ternary returns with cast globals;
-- ternary returns with extern globals.
+Calibration: 20/37 on batch 191 is unchanged, and batch 190 rose from 29/55 to 31/55. No previously exact calibration draft was lost.
 
 ## Measured attempts
 
-The single expansion pass yielded 704 accepted drafts. They were recorded as 704 hypotheses:
-- 698 were exact;
-- 2 were refused by the uncertain-history guard (`0x8c0348bc`, `0x8c0c3128`);
-- 4 were refused as previously parked targets that need reopen evidence addressing their recorded blocker.
+67 recorded attempts on 67 targets, all hypotheses and all exact. 67 units / 67 functions / 5,940 bytes were admitted after two independent reproductions each:
+- 28 came from the first re-pass over 4,254 candidates;
+- 39 came from a second pass over the 3,013 drafts that compiled but differed.
 
-The 698 exact units, plus 5 exact units from the cycle-4 opening pass, were split by address into five batches of about 10.5 KB each.
-
-This batch covers 0x8c21d780..0x8c2607b8: 139 units / 139 functions / 10,212 bytes, each admitted after two independent reproductions.
+Six of them are exact only under the optional variants.
 
 Disclosure:
-- Every unit was first found exact in a scratch comparison of its generated draft, logged under `drafttest/`.
-- The recorded trial reproduced that draft unchanged apart from its name, `operation_<address>`.
-- Short ranges follow the batch 193 boundary rule.
+- Every admitted function was first found exact in a scratch comparison of a generated draft, logged under `drafttest/`.
+- Before each rule was added, a few scratch edits on motivating examples established the idiom. The examples were `0x8c025fe8`, `0x8c0dfb48`, `0x8c15842c` and `0x8c097018`, with one to four edits each.
+- The admitted sources are the regenerated drafts, not the hand edits.
 - No declaration orders were searched.
-- Generated sources keep mechanical identifiers for later naming.
-- The six refused targets were not forced.
+- History-guarded targets stay blocked and were not forced.
+
+Signatures are provisional. Parameter and return types come from the instruction shape and literal use; they are not confirmed against callers. Identifiers are mechanical.
 
 ## Observed techniques
 
-No new idioms. The gain comes from widening the candidate pool. Of the 2,896 new candidates:
-- 714 drafts were exact;
-- 535 did not compile;
-- 1,618 compiled with differences.
+- `mov.b; extu.b; extu.b` before `and #k`, `tst` or `cmp/eq` comes from a plain `unsigned char` field used in an expression.
+- `mov.l base,rN` with `add #k,rN` in a `jsr` delay slot is an argument of the form `array + k`. A constant address is loaded already folded instead.
+- `(unsigned char)*(char *)p` and `*(unsigned char *)p` both load with `mov.b`, but only the first gives one `extu.b` in a ternary return.
 
 ## Parked and unresolved
 
-- **Parked targets:** `0x8c09a498`, `0x8c05fbdc`, `0x8c051fb8` and `0x8c04c2d4` are now exact as drafts. They need reopen evidence before admission.
-- **Uncertain history:** ten targets with an uncertain historical count stay blocked.
+- About 1,100 candidates still fail to compile. In a sample, about 40% are type errors: pointer arithmetic on `void *`, and pointer/int mismatches. The argument cast rule fixed only 18 of 300.
+- Fifty drafts that matched only a prefix fail the batch-193 boundary rule, because the following bytes are not decoded code. They are not admitted.
+- `0x8c21d3a8` differs only in literal-pool order and is parked.
+- Register-allocation residues are not pursued.
 
 Code-only completion and total function count remain unknown.
