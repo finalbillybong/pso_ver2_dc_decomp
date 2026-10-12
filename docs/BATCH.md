@@ -1,102 +1,99 @@
-# Reconstruction batch: 202: expanded candidate pool, part 6
+# Reconstruction batch: 203: expanded candidate pool, part 7
 
-67 new matching functions / 5,940 bytes. All 3653 prior functions preserved.
+61 new matching functions / 5,152 bytes. All 3720 prior functions preserved.
 
-3720 exact functions in 3636 modules; 290,844 compiled function-range bytes; 0 reconstructed data bytes; 3,872,068 retained reference bytes. Whole-image coverage 6.9866% is not code completion.
+3781 exact functions in 3697 modules; 295,996 compiled function-range bytes; 0 reconstructed data bytes; 3,866,916 retained reference bytes. Whole-image coverage 7.1103% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c015ab4 | 0x8c015ab4 | 32 |
-| operation_8c01b9c0 | 0x8c01b9c0 | 32 |
-| operation_8c01b9e0 | 0x8c01b9e0 | 32 |
-| operation_8c025fe8 | 0x8c025fe8 | 112 |
-| operation_8c02f7c4 | 0x8c02f7c4 | 84 |
-| operation_8c030cc8 | 0x8c030cc8 | 116 |
-| operation_8c030d3c | 0x8c030d3c | 136 |
-| operation_8c030ff0 | 0x8c030ff0 | 180 |
-| operation_8c03be3c | 0x8c03be3c | 56 |
-| operation_8c03e264 | 0x8c03e264 | 92 |
-| operation_8c04bc10 | 0x8c04bc10 | 56 |
-| operation_8c04c604 | 0x8c04c604 | 44 |
-| operation_8c051e18 | 0x8c051e18 | 72 |
-| operation_8c051e60 | 0x8c051e60 | 64 |
-| operation_8c052124 | 0x8c052124 | 40 |
-| operation_8c065554 | 0x8c065554 | 36 |
-| operation_8c07484c | 0x8c07484c | 88 |
-| operation_8c0788ec | 0x8c0788ec | 128 |
-| operation_8c097018 | 0x8c097018 | 36 |
-| operation_8c09ccfc | 0x8c09ccfc | 64 |
-| operation_8c09d64c | 0x8c09d64c | 76 |
-| operation_8c0dfb48 | 0x8c0dfb48 | 116 |
-| operation_8c0f3918 | 0x8c0f3918 | 60 |
-| operation_8c10ecd0 | 0x8c10ecd0 | 80 |
-| operation_8c1115d8 | 0x8c1115d8 | 52 |
-| operation_8c123d48 | 0x8c123d48 | 68 |
-| operation_8c15842c | 0x8c15842c | 36 |
-| operation_8c158aa0 | 0x8c158aa0 | 56 |
-| operation_8c15b6bc | 0x8c15b6bc | 140 |
-| operation_8c172594 | 0x8c172594 | 124 |
-| operation_8c17e3bc | 0x8c17e3bc | 44 |
-| operation_8c17e42c | 0x8c17e42c | 44 |
-| operation_8c186080 | 0x8c186080 | 44 |
-| operation_8c18cbb0 | 0x8c18cbb0 | 52 |
-| operation_8c19f91c | 0x8c19f91c | 100 |
-| operation_8c1a81a0 | 0x8c1a81a0 | 132 |
-| operation_8c1c74a8 | 0x8c1c74a8 | 52 |
-| operation_8c1c9300 | 0x8c1c9300 | 52 |
-| operation_8c1d78a8 | 0x8c1d78a8 | 84 |
-| operation_8c1deb8c | 0x8c1deb8c | 44 |
-| operation_8c1dfac0 | 0x8c1dfac0 | 88 |
-| operation_8c1e2770 | 0x8c1e2770 | 204 |
-| operation_8c1e67d0 | 0x8c1e67d0 | 308 |
-| operation_8c1e76c8 | 0x8c1e76c8 | 84 |
-| operation_8c1e771c | 0x8c1e771c | 128 |
-| operation_8c20a7d0 | 0x8c20a7d0 | 60 |
-| operation_8c215f7c | 0x8c215f7c | 68 |
-| operation_8c2187e8 | 0x8c2187e8 | 100 |
-| operation_8c21884c | 0x8c21884c | 96 |
-| operation_8c218fa8 | 0x8c218fa8 | 76 |
-| operation_8c219100 | 0x8c219100 | 88 |
-| operation_8c2191ec | 0x8c2191ec | 152 |
-| operation_8c219284 | 0x8c219284 | 52 |
-| operation_8c2192b8 | 0x8c2192b8 | 32 |
-| operation_8c22752c | 0x8c22752c | 40 |
-| operation_8c22e27c | 0x8c22e27c | 80 |
-| operation_8c22f180 | 0x8c22f180 | 40 |
-| operation_8c2308b0 | 0x8c2308b0 | 36 |
-| operation_8c2320e0 | 0x8c2320e0 | 168 |
-| operation_8c244258 | 0x8c244258 | 396 |
-| operation_8c248474 | 0x8c248474 | 60 |
-| operation_8c2484b0 | 0x8c2484b0 | 60 |
-| operation_8c258088 | 0x8c258088 | 68 |
-| operation_8c25c308 | 0x8c25c308 | 84 |
-| operation_8c25c35c | 0x8c25c35c | 128 |
-| operation_8c25cc88 | 0x8c25cc88 | 156 |
-| operation_8c25ec50 | 0x8c25ec50 | 132 |
+| operation_8c017d7c | 0x8c017d7c | 24 |
+| operation_8c032648 | 0x8c032648 | 104 |
+| operation_8c03669c | 0x8c03669c | 64 |
+| operation_8c03c084 | 0x8c03c084 | 20 |
+| operation_8c05c184 | 0x8c05c184 | 32 |
+| operation_8c0649f4 | 0x8c0649f4 | 32 |
+| operation_8c081fe0 | 0x8c081fe0 | 36 |
+| operation_8c087c18 | 0x8c087c18 | 88 |
+| operation_8c08b3a0 | 0x8c08b3a0 | 44 |
+| operation_8c08dc38 | 0x8c08dc38 | 136 |
+| operation_8c090238 | 0x8c090238 | 132 |
+| operation_8c09d974 | 0x8c09d974 | 52 |
+| operation_8c0e71c8 | 0x8c0e71c8 | 180 |
+| operation_8c0f8adc | 0x8c0f8adc | 32 |
+| operation_8c100e14 | 0x8c100e14 | 44 |
+| operation_8c102f40 | 0x8c102f40 | 92 |
+| operation_8c103020 | 0x8c103020 | 72 |
+| operation_8c103068 | 0x8c103068 | 60 |
+| operation_8c105b04 | 0x8c105b04 | 112 |
+| operation_8c105b74 | 0x8c105b74 | 112 |
+| operation_8c12213c | 0x8c12213c | 40 |
+| operation_8c13f504 | 0x8c13f504 | 144 |
+| operation_8c144bf8 | 0x8c144bf8 | 56 |
+| operation_8c169508 | 0x8c169508 | 32 |
+| operation_8c181920 | 0x8c181920 | 72 |
+| operation_8c188a30 | 0x8c188a30 | 112 |
+| operation_8c188aa0 | 0x8c188aa0 | 112 |
+| operation_8c189480 | 0x8c189480 | 112 |
+| operation_8c1894f0 | 0x8c1894f0 | 112 |
+| operation_8c190704 | 0x8c190704 | 124 |
+| operation_8c192084 | 0x8c192084 | 172 |
+| operation_8c1995fc | 0x8c1995fc | 44 |
+| operation_8c1a2db4 | 0x8c1a2db4 | 136 |
+| operation_8c1a7128 | 0x8c1a7128 | 36 |
+| operation_8c1a714c | 0x8c1a714c | 36 |
+| operation_8c1a7170 | 0x8c1a7170 | 36 |
+| operation_8c1a7194 | 0x8c1a7194 | 32 |
+| operation_8c1a71b4 | 0x8c1a71b4 | 36 |
+| operation_8c1a71d8 | 0x8c1a71d8 | 36 |
+| operation_8c1a72a0 | 0x8c1a72a0 | 76 |
+| operation_8c1a7550 | 0x8c1a7550 | 40 |
+| operation_8c1c7d48 | 0x8c1c7d48 | 140 |
+| operation_8c1c9378 | 0x8c1c9378 | 32 |
+| operation_8c1d03c8 | 0x8c1d03c8 | 108 |
+| operation_8c1d24bc | 0x8c1d24bc | 152 |
+| operation_8c1dd290 | 0x8c1dd290 | 136 |
+| operation_8c1dd318 | 0x8c1dd318 | 316 |
+| operation_8c1ddbbc | 0x8c1ddbbc | 68 |
+| operation_8c1e22ec | 0x8c1e22ec | 68 |
+| operation_8c1e25c8 | 0x8c1e25c8 | 52 |
+| operation_8c1ed9b0 | 0x8c1ed9b0 | 112 |
+| operation_8c1efcdc | 0x8c1efcdc | 144 |
+| operation_8c1f15c8 | 0x8c1f15c8 | 72 |
+| operation_8c207bf0 | 0x8c207bf0 | 184 |
+| operation_8c21696c | 0x8c21696c | 92 |
+| operation_8c21db24 | 0x8c21db24 | 52 |
+| operation_8c225c84 | 0x8c225c84 | 76 |
+| operation_8c2273a4 | 0x8c2273a4 | 84 |
+| operation_8c237f48 | 0x8c237f48 | 76 |
+| operation_8c241658 | 0x8c241658 | 60 |
+| operation_8c247f2c | 0x8c247f2c | 64 |
 
 ## Method
 
-Batch 202 is a generator cycle over the expanded candidate pool. The draft generator gained:
-- **Argument registers:** a value written to r4 and still there at a call is that call's argument.
-- **Double byte extension:** the compiler extends an `unsigned char` operand twice by itself. A double `extu.b` before a test, compare or `&` is now written as the bare field or load. The explicit `& 0xff` is kept only for a returned value, which then gets an `unsigned char` return type.
-- **Literal base plus displacement:** a pool address followed by `add #k` (often in a call's delay slot) is `extern char g_base[]` with `g_base + k`. A folded constant address does not reproduce it.
-- **Argument casts:** a 4-byte non-float argument is cast to its prototype's parameter type. This costs no code on SH-4 and lets more drafts compile.
-- **Two optional variants (`ucast`, `uctern`):** a single `mov.b; extu.b` is written `(unsigned char)*(char *)p`. Writing `*(unsigned char *)p` can extend twice, for example in a ternary return.
+Batch 203 is a generator cycle over the remaining expanded candidate pool. The draft generator gained:
+- **Caller's first argument passed through (`pass` variant):** when the prologue saves PR before loading the first call's address, the function's own first argument is still in r4 at that call and is passed on.
+- **Pointer and integer casts:** compound arguments are parenthesised before a prototype cast. Pointer-to-integer comparisons cast the pointer side. A non-pointer value returned from a pointer function is cast to the return type. A pointer returned from an `int` function, stored into an `int` slot, used in `^`, `&`, `*` or shifts, negated, or added to another pointer is cast to `int`. A store into a pointer-typed extern global casts the value. These casts cost no code on SH-4.
+- **Literal base plus displacement in stores:** a pool address followed by `add #k` and a store is written `*(T *)(g_base + k)` with `extern char g_base[]`, like the delay-slot argument case from batch 202.
+- **Single-extended byte updates:** `mov.b; extu.b; or #k; mov.b` is `f |= k` on an `unsigned char` field. The explicit `(f & 0xff) | k` extends twice.
+- **Pass-through generalised:** the `pass` variant also applies when callee-saved registers are pushed before PR.
+- **Flag if/else polarity (`flip` variants):** when both arms only set a flag to constants, the source tests the opposite condition, with De Morgan applied, and swaps the arms.
+- **Mixed call arity:** a call site whose argument count differs from the first call to the same function is made through a typed pointer to that symbol.
+- **Type repairs for drafts that did not compile:** block copies between differently typed blocks go through a common block type; field accesses through an integer expression cast the base; `+=` on a pointer-typed field steps in bytes through `int`; negative displacements use raw pointer arithmetic; members reached through a field typed by a callee's return struct are added to that struct.
 
-Calibration: 20/37 on batch 191 is unchanged, and batch 190 rose from 29/55 to 31/55. No previously exact calibration draft was lost.
+Calibration: 20/37 on batch 191 and 31/55 on batch 190, both unchanged after every rule. No previously exact calibration draft was lost.
 
 ## Measured attempts
 
-67 recorded attempts on 67 targets, all hypotheses and all exact. 67 units / 67 functions / 5,940 bytes were admitted after two independent reproductions each:
-- 28 came from the first re-pass over 4,254 candidates;
-- 39 came from a second pass over the 3,013 drafts that compiled but differed.
-
-Six of them are exact only under the optional variants.
+61 recorded attempts on 61 targets, all hypotheses and all exact. 61 units / 61 functions / 5,152 bytes were admitted after two independent reproductions each:
+- 54 are unedited generated drafts from several passes over the remaining candidates (4,178, then 84, 957, 957, 871 and 64);
+- 7 are hand-finished drafts. These are six members of one family (`0x8c105b04`, `0x8c105b74`, `0x8c188a30`, `0x8c188aa0`, `0x8c189480`, `0x8c1894f0`), whose repeated `o->fXX` base is held in a block-scoped local pointer, and `0x8c21db24`, whose global value, still in r5 at the call, is the callee's second argument.
 
 Disclosure:
-- Every admitted function was first found exact in a scratch comparison of a generated draft, logged under `drafttest/`.
-- Before each rule was added, a few scratch edits on motivating examples established the idiom. The examples were `0x8c025fe8`, `0x8c0dfb48`, `0x8c15842c` and `0x8c097018`, with one to four edits each.
-- The admitted sources are the regenerated drafts, not the hand edits.
+- Every admitted function was first found exact in a scratch comparison: the 54 generated drafts as logged under `drafttest/`, and the seven hand-finished drafts as edited copies of their generated drafts.
+- Before each rule was added, a few scratch edits on motivating examples established the idiom: `0x8c247f2c` (three store forms), `0x8c2273a4` (four update forms), `0x8c13c370` (one cast), and single compiles of regenerated drafts for the type repairs.
+- Unsuccessful scratch probes, none admitted: `0x8c0262a0` (seven forms for an unfolded `add #0`), `0x8c11d9c8` and `0x8c13c81c` (twenty-two forms for an argument load followed by `extu.w` in the call's delay slot), `0x8c1dc4b8` (one operand swap), `0x8c01fa18` (four prototype forms for argument order), `0x8c15c2ac` (three declaration forms), and `0x8c05605c` (one prototype fix).
+- Apart from the seven hand-finished drafts above, the admitted sources are the regenerated drafts, not the hand edits. Hand probes on those seven: one edit form for the family (then applied to each member) and one for `0x8c21db24`.
+- Further unsuccessful probes, none admitted: `0x8c1d5e2c` (four compare and store forms), `0x8c1c7d48` (four boolean forms before the flip rule), and `0x8c02ae70` (four float-argument forms).
 - No declaration orders were searched.
 - History-guarded targets stay blocked and were not forced.
 
@@ -104,15 +101,16 @@ Signatures are provisional. Parameter and return types come from the instruction
 
 ## Observed techniques
 
-- `mov.b; extu.b; extu.b` before `and #k`, `tst` or `cmp/eq` comes from a plain `unsigned char` field used in an expression.
-- `mov.l base,rN` with `add #k,rN` in a `jsr` delay slot is an argument of the form `array + k`. A constant address is loaded already folded instead.
-- `(unsigned char)*(char *)p` and `*(unsigned char *)p` both load with `mov.b`, but only the first gives one `extu.b` in a ternary return.
+- A pool address followed by `add #k,rN` and a store through `rN` comes from `g_base + k` on an `extern char` array. A constant address is loaded already folded.
+- `mov.b; extu.b; or #k` before a byte store is `f |= k` on an `unsigned char` field.
+- One load of `o->fXX` reused as the base of later field accesses, across a read-modify-write and a test, comes from a local pointer. Repeating `o->fXX->` reloads it.
+- A flag set to constants on both arms of an if/else keeps the source's branch polarity. The negated condition with swapped arms gives the opposite `bt`/`bf`.
 
 ## Parked and unresolved
 
-- About 1,100 candidates still fail to compile. In a sample, about 40% are type errors: pointer arithmetic on `void *`, and pointer/int mismatches. The argument cast rule fixed only 18 of 300.
-- Fifty drafts that matched only a prefix fail the batch-193 boundary rule, because the following bytes are not decoded code. They are not admitted.
-- `0x8c21d3a8` differs only in literal-pool order and is parked.
-- Register-allocation residues are not pursued.
+- An argument loaded straight into r4 and zero-extended with `extu.w r4,r4` in the call's delay slot occurs 275 times in the binary, and no admitted function has it. Twenty-two source forms were tried, covering signed and unsigned fields, prototypes, casts, locals, inline wrappers and `volatile`. Every form loads into another register and extends into r4.
+- Argument-order and operand-order residues around `jsr` delay slots (`0x8c01fa18`, `0x8c1dc4b8`, `0x8c1280d0`, `0x8c21cac8`) did not respond to source changes.
+- An unfolded `add #0,r0` before a field load (`0x8c0262a0`) is not reproduced.
+- Large drafts that compile after a single repair are usually far from exact, because float locals are typed as `int`.
 
 Code-only completion and total function count remain unknown.
