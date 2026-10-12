@@ -1,0 +1,11 @@
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+typedef struct S_g8c44bea0 S_g8c44bea0;
+extern void call_8c22afc0(void *, int, int, int);
+void operation_8c0ddb44(int a0, int a1, int a2)
+{
+    call_8c22afc0(*(S_g8c44bea0 **)0x8c44bea0, a0, a1, a2);
+}
