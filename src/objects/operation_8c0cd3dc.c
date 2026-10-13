@@ -1,0 +1,9 @@
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+int operation_8c0cd3dc(void)
+{
+    return (int)(*(int *)0x8c46fa68);
+}
