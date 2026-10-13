@@ -1,107 +1,73 @@
-# Reconstruction batch: 204: expanded candidate pool, part 8
+# Reconstruction batch: 205: expanded candidate pool, part 9
 
-74 new matching functions / 6,092 bytes. All 3781 prior functions preserved.
+39 new matching functions / 5,912 bytes. All 3855 prior functions preserved.
 
-3855 exact functions in 3771 modules; 302,088 compiled function-range bytes; 0 reconstructed data bytes; 3,860,824 retained reference bytes. Whole-image coverage 7.2567% is not code completion.
+3894 exact functions in 3810 modules; 308,000 compiled function-range bytes; 0 reconstructed data bytes; 3,854,912 retained reference bytes. Whole-image coverage 7.3987% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c01467c | 0x8c01467c | 24 |
-| operation_8c01470c | 0x8c01470c | 32 |
-| operation_8c01474c | 0x8c01474c | 32 |
-| operation_8c014874 | 0x8c014874 | 32 |
-| operation_8c014894 | 0x8c014894 | 24 |
-| operation_8c0148cc | 0x8c0148cc | 32 |
-| operation_8c0149a8 | 0x8c0149a8 | 32 |
-| operation_8c0149c8 | 0x8c0149c8 | 24 |
-| operation_8c014a00 | 0x8c014a00 | 32 |
-| operation_8c014b20 | 0x8c014b20 | 32 |
-| operation_8c014b40 | 0x8c014b40 | 32 |
-| operation_8c014cc0 | 0x8c014cc0 | 32 |
-| operation_8c014ce0 | 0x8c014ce0 | 32 |
-| operation_8c014fcc | 0x8c014fcc | 24 |
-| operation_8c02a764 | 0x8c02a764 | 52 |
-| operation_8c02af54 | 0x8c02af54 | 108 |
-| operation_8c030b94 | 0x8c030b94 | 148 |
-| operation_8c054874 | 0x8c054874 | 148 |
-| operation_8c07e868 | 0x8c07e868 | 184 |
-| operation_8c0dc710 | 0x8c0dc710 | 112 |
-| operation_8c0dc79c | 0x8c0dc79c | 88 |
-| operation_8c0fbfe0 | 0x8c0fbfe0 | 64 |
-| operation_8c0fc020 | 0x8c0fc020 | 72 |
-| operation_8c10ac24 | 0x8c10ac24 | 132 |
-| operation_8c1147cc | 0x8c1147cc | 72 |
-| operation_8c1163f0 | 0x8c1163f0 | 172 |
-| operation_8c13bb4c | 0x8c13bb4c | 100 |
-| operation_8c157554 | 0x8c157554 | 88 |
-| operation_8c159e60 | 0x8c159e60 | 116 |
-| operation_8c176438 | 0x8c176438 | 156 |
-| operation_8c180ae8 | 0x8c180ae8 | 352 |
-| operation_8c1818c0 | 0x8c1818c0 | 96 |
-| operation_8c197804 | 0x8c197804 | 64 |
-| operation_8c197844 | 0x8c197844 | 64 |
-| operation_8c197884 | 0x8c197884 | 120 |
-| operation_8c199578 | 0x8c199578 | 68 |
-| operation_8c1995bc | 0x8c1995bc | 64 |
-| operation_8c1a3864 | 0x8c1a3864 | 96 |
-| operation_8c1a6480 | 0x8c1a6480 | 84 |
-| operation_8c1adfb8 | 0x8c1adfb8 | 44 |
-| operation_8c1bdaa4 | 0x8c1bdaa4 | 88 |
-| operation_8c1bee20 | 0x8c1bee20 | 80 |
-| operation_8c1cd5ec | 0x8c1cd5ec | 76 |
-| operation_8c1cd89c | 0x8c1cd89c | 124 |
-| operation_8c1dc390 | 0x8c1dc390 | 100 |
-| operation_8c1dc3f4 | 0x8c1dc3f4 | 76 |
-| operation_8c1dfb18 | 0x8c1dfb18 | 84 |
-| operation_8c1f1610 | 0x8c1f1610 | 140 |
-| operation_8c2176d8 | 0x8c2176d8 | 80 |
-| operation_8c217aa4 | 0x8c217aa4 | 84 |
-| operation_8c21e304 | 0x8c21e304 | 36 |
-| operation_8c21e920 | 0x8c21e920 | 64 |
-| operation_8c21e960 | 0x8c21e960 | 64 |
-| operation_8c21f3c4 | 0x8c21f3c4 | 44 |
-| operation_8c2205d0 | 0x8c2205d0 | 64 |
-| operation_8c220610 | 0x8c220610 | 64 |
-| operation_8c22353c | 0x8c22353c | 40 |
-| operation_8c223564 | 0x8c223564 | 40 |
-| operation_8c223680 | 0x8c223680 | 40 |
-| operation_8c2236a8 | 0x8c2236a8 | 40 |
-| operation_8c224438 | 0x8c224438 | 68 |
-| operation_8c22447c | 0x8c22447c | 64 |
-| operation_8c225228 | 0x8c225228 | 116 |
-| operation_8c225338 | 0x8c225338 | 64 |
-| operation_8c225d74 | 0x8c225d74 | 44 |
-| operation_8c22bc80 | 0x8c22bc80 | 48 |
-| operation_8c22bcb0 | 0x8c22bcb0 | 64 |
-| operation_8c22c100 | 0x8c22c100 | 144 |
-| operation_8c22cde8 | 0x8c22cde8 | 152 |
-| operation_8c22d95c | 0x8c22d95c | 204 |
-| operation_8c2307ac | 0x8c2307ac | 48 |
-| operation_8c2307dc | 0x8c2307dc | 64 |
-| operation_8c25784c | 0x8c25784c | 168 |
-| operation_8c260688 | 0x8c260688 | 136 |
+| operation_8c015e2c | 0x8c015e2c | 156 |
+| operation_8c015ec8 | 0x8c015ec8 | 144 |
+| operation_8c016070 | 0x8c016070 | 152 |
+| operation_8c016278 | 0x8c016278 | 88 |
+| operation_8c034c7c | 0x8c034c7c | 104 |
+| operation_8c0366dc | 0x8c0366dc | 44 |
+| operation_8c04f964 | 0x8c04f964 | 68 |
+| operation_8c0541b4 | 0x8c0541b4 | 116 |
+| operation_8c08286c | 0x8c08286c | 124 |
+| operation_8c0a1ed0 | 0x8c0a1ed0 | 144 |
+| operation_8c0dcfb4 | 0x8c0dcfb4 | 100 |
+| operation_8c0dd13c | 0x8c0dd13c | 132 |
+| operation_8c0dd3e8 | 0x8c0dd3e8 | 168 |
+| operation_8c10ab4c | 0x8c10ab4c | 92 |
+| operation_8c10e7b0 | 0x8c10e7b0 | 212 |
+| operation_8c110980 | 0x8c110980 | 244 |
+| operation_8c110e98 | 0x8c110e98 | 220 |
+| operation_8c158520 | 0x8c158520 | 40 |
+| operation_8c16b2e4 | 0x8c16b2e4 | 80 |
+| operation_8c1a3c8c | 0x8c1a3c8c | 116 |
+| operation_8c1aab1c | 0x8c1aab1c | 20 |
+| operation_8c1ae1ec | 0x8c1ae1ec | 80 |
+| operation_8c1dcf9c | 0x8c1dcf9c | 396 |
+| operation_8c1e6ce0 | 0x8c1e6ce0 | 256 |
+| operation_8c1eacf4 | 0x8c1eacf4 | 160 |
+| operation_8c1ead94 | 0x8c1ead94 | 184 |
+| operation_8c1eb51c | 0x8c1eb51c | 164 |
+| operation_8c1eca04 | 0x8c1eca04 | 228 |
+| operation_8c1ecae8 | 0x8c1ecae8 | 300 |
+| operation_8c1f007c | 0x8c1f007c | 152 |
+| operation_8c238420 | 0x8c238420 | 56 |
+| operation_8c238e94 | 0x8c238e94 | 44 |
+| operation_8c247b70 | 0x8c247b70 | 60 |
+| operation_8c248264 | 0x8c248264 | 88 |
+| operation_8c2482bc | 0x8c2482bc | 88 |
+| operation_8c25b3cc | 0x8c25b3cc | 288 |
+| operation_8c25b8c0 | 0x8c25b8c0 | 264 |
+| operation_8c25ea10 | 0x8c25ea10 | 204 |
+| operation_8c260934 | 0x8c260934 | 336 |
 
 ## Method
 
-Batch 204 is a generator cycle over the remaining expanded candidate pool. The draft generator gained:
-- **Argument copied between argument registers:** a value loaded into one argument register and then copied into others (`mov #0,r7; mov r7,r6; mov r7,r5`) is still an argument itself. The generator had been dropping it, which removed the call's last argument.
-- **Virtual calls at other vtable-pointer offsets:** an indirect call through `o->fK->fJ` with `o` still in r4 is a C++ virtual call when the class's vtable pointer sits at `K`, not only at 0x18. The class is declared with `K` bytes of data before its first virtual function.
-- **Prototypes from the settled layout:** callee prototypes are taken from the final layout pass instead of the first, so a parameter later known to be a structure pointer is no longer declared `int`.
-- **Mechanical repair of drafts that did not compile (`fix` variants):** a separate pass recompiles each failing draft, reads the compiler's error line and caret, and adds the integer or pointer cast that the error names. It casts call arguments to the declared parameter types, an assigned value to the variable's type, or both operands of the failing comparison or arithmetic. It retries up to eight times. These casts cost no code on SH-4.
+Batch 205 is a generator cycle over the remaining expanded candidate pool. The draft generator gained:
+- **Post-increment tests:** a store of `g ± 1` back to the same address, followed by a test of the old value, is written `g++`/`g--` inside the test. The separate `g += 1` reloads the value.
+- **Return order (`retflip` variants):** a trailing `if (c) return a; return b;` is also tried as `if (!c) return b; return a;`, which swaps the order of the two return blocks.
+- **Walking on past an early return:** an unconditional `bra` to the epilogue, with a return value set in its delay slot, ended the walk. A forward branch that lands after it was therefore left as an unresolved `goto`. The walker now continues from that label, as it already did after `rts`. The labelled code then restructures into ordinary `if`/`return` statements. This rule was measured separately on the 656 candidates whose drafts still held unstructured regions.
 
 Calibration: 20/37 on batch 191 and 31/55 on batch 190, both unchanged after every rule. No previously exact calibration draft was lost.
 
 ## Measured attempts
 
-74 recorded attempts on 74 targets, all hypotheses and all exact. 74 units / 74 functions / 6,092 bytes were admitted after two independent reproductions each:
-- 62 are unedited generated drafts from several passes over the remaining candidates (856, 64, 1,256, 144, 1,832, 44 and 260 bytes);
-- 12 are mechanically repaired drafts (`fix` variants): `0x8c030b94`, `0x8c180ae8`, `0x8c217aa4`, `0x8c1adfb8`, `0x8c1163f0`, `0x8c197884`, `0x8c1a6480`, `0x8c2176d8`, `0x8c21e304`, `0x8c22c100`, `0x8c22d95c` and `0x8c25784c`. The repair pass made the edits by rule, not by hand. Each repaired source differs from its generated draft only on the lines the compiler rejected.
+39 recorded attempts on 39 targets, all hypotheses and all exact. 39 units / 39 functions / 5,912 bytes were admitted after two independent reproductions each:
+- 5 are unedited generated drafts from the full pass over the remaining 4,062 candidates (316 bytes);
+- 34 are unedited generated drafts from the pass over the 656 candidates with unstructured regions, after the label rule (5,596 bytes).
+
+The mechanical repair pass from batch 204 was rerun over the remaining compile failures. It made 699 drafts compile, none of them exact, and contributed nothing.
 
 Disclosure:
 - Every admitted function was first found exact in a scratch comparison, as logged under `drafttest/`.
-- No admitted source was edited by hand. The repair rules were debugged on `0x8c1adfb8` and on nine failing drafts (`0x8c032b70`, `0x8c03ed70`, `0x8c022c44`, `0x8c056e28`, `0x8c09bac4`, `0x8c0226c4`, `0x8c0dc510`, `0x8c07d900`, `0x8c0612d0`) before the repair pass ran.
-- Before each generator rule was added, scratch edits on motivating examples established the idiom: `0x8c0fbfe0` (a member and a free-function virtual call), `0x8c22bc80` (one family member compared after the rule), and `0x8c225d74`/`0x8c1adfb8` (rule tests only).
-- Unsuccessful scratch probes, none admitted: `0x8c1567bc` (three prototype forms, one member-call form, four destructor forms and six pragmas), `0x8c0dddcc` (27 return-type, field-type and statement forms), `0x8c04b428` (eight conversion and shared-constant forms) and `0x8c01e180` (seven return-type and declaration forms).
+- No admitted source was edited by hand.
+- Before each generator rule was added, scratch edits on motivating examples established the idiom: `0x8c016278` (post-increment), `0x8c0366dc` (return order) and `0x8c238e94` (rule test only, after the label rule).
+- Unsuccessful scratch probes, none admitted: `0x8c0244c4` (return-order forms).
 - No declaration orders were searched.
 - History-guarded targets stay blocked and were not forced.
 
@@ -109,15 +75,21 @@ Signatures are provisional. Parameter and return types come from the instruction
 
 ## Observed techniques
 
-- `mov #0,r7` followed by `mov r7,r6` and `mov r7,r5` in a call sequence is a call whose last three arguments are all zero. The constant is materialised once, in the highest argument register.
-- A value loaded into an argument register and only tested before a call (`mov.l @r0,r5; tst r5,r5`) is that call's argument. The test does not consume it.
-- A class whose first `K` bytes are data and that then introduces virtual functions has its vtable pointer at `K`. A virtual call then loads `@(K,this)` straight from the argument register, before the copy into a callee-saved register is used.
+- `add #1` and a store back to the same global, with the compare still on the old value, comes from `g++ > k`. The compiler keeps the loaded value for the test.
+- `bra epilogue` with `mov #1,r0` in its delay slot, followed by `mov #0,r0` at a branch target, is `if (c) return 1; return 0;`. The compiler emits the first return's value in the delay slot of the jump to the shared epilogue.
 
 ## Parked and unresolved
 
-- A real C++ destructor reproduces the shape of `0x8c1567bc` (vtable store, member clean-up, base destructor with flag 0, then `operator delete` when the flag is positive), except for one residue. The base destructor's `this` is set in the call's delay slot after the flag, and every source form sets it before. Forms tried: base and member sub-objects, polymorphic and non-polymorphic bases, and several pragmas. The same argument-order residue appears in 8c0c6fd8, 8c190ea0, 8c227284 and 8c1d201c.
-- A return value loaded with `mov.b`/`mov.w` followed by `rts; nop`, with no extension in the slot (`0x8c01e180`, `0x8c0dddcc`, `0x8c1744b4`), is not reproduced by any return or field type tried. The compiler always puts an extension or the final add in the slot.
-- A float constant kept in a register across two divisions (`0x8c04b428`) is reloaded by every source form tried.
-- Argument loads followed by `extu.w` in the call's delay slot remain unsolved (see batch 203).
+- The near-miss survey of the remaining same-size drafts now consists of the residues parked in batches 203 and 204:
+  - argument order in a call's delay slot (`0x8c01fa18`, `0x8c1567bc`, `0x8c0c6fd8`, `0x8c190ea0`, `0x8c227284`, `0x8c1d201c`);
+  - `rts; nop` returns with no extension (`0x8c01e180`, `0x8c0dddcc`, `0x8c1744b4`);
+  - `extu.w` in a call's delay slot;
+  - a float constant reused across divisions (`0x8c04b428`);
+  - a loop bound hoisted into a register (`0x8c0f3970`).
+- Unstructured regions still block 622 compiled drafts. The main causes are:
+  - variable and constant shifts through `shad`/`shld` (58 functions);
+  - 16-bit multiplies (`muls.w`/`mulu.w`);
+  - loop exits tested in a delay slot (45 functions);
+  - backward branches that do not form a recognised loop (20 functions).
 
 Code-only completion and total function count remain unknown.
