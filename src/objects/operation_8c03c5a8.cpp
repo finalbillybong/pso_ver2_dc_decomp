@@ -1,0 +1,65 @@
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+typedef struct Arg0_28 Arg0_28;
+typedef struct Arg0_38 Arg0_38;
+typedef struct Arg0_64 Arg0_64;
+class Object {
+public:
+    char unknown0[0x18];
+    virtual void v0();
+    virtual void v1();
+    virtual void v2();
+    virtual void v3();
+    virtual void v4();
+    virtual void v5();
+    virtual void v6();
+    virtual void v7();
+    virtual void v8();
+    virtual void v9();
+    virtual void v10();
+    virtual int v11(float, float);
+};
+typedef struct ObjectData {
+    char unknown0[0x28];
+    Arg0_28 *f28;
+    char unknown2c[0xc];
+    Arg0_38 *f38;
+    char unknown3c[0x28];
+    Arg0_64 *f64;
+} ObjectData;
+extern "C" void call_8c3827d8(void *);
+extern "C" void call_8c38ade4(int);
+extern "C" void call_8c382a58(int, void *);
+extern "C" void call_8c37df90(int, void *);
+extern "C" int operation_8c03d338(void *);
+extern "C" void call_8c3aa716(void *);
+extern "C" void call_8c01cc90(Object *);
+extern "C" void call_8c37e2e4(int, float, float, float);
+extern "C" void call_8c3ab76a(void *);
+extern "C" void call_8c38accc(int);
+extern "C" void operation_8c03c5a8(Object *o)
+{
+    int t1;
+    int t2;
+    t1 = o->v11(400.0f, 20.0f);
+    if (t1 != 0) {
+        call_8c3827d8((void *)(((ObjectData *)o)->f28));
+        call_8c38ade4(0);
+        call_8c382a58(0, (void *)(((char *)o + 0x3c)));
+        call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+        *(int *)0x8c575570 &= -0x401;
+        t2 = operation_8c03d338((void *)((void *)0x8c575570));
+        if (t2 == 1) {
+            call_8c3aa716((void *)(((ObjectData *)o)->f38));
+        } else {
+            call_8c01cc90(o);
+        }
+        *(int *)0x8c575570 |= 0x400;
+        call_8c37e2e4(0, 0.5f, 0.5f, 0.5f);
+        call_8c3ab76a((void *)((void *)0x8c2e8988));
+        call_8c38accc(1);
+    }
+}
