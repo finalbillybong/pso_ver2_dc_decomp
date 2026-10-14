@@ -1,175 +1,117 @@
-# Reconstruction batch: 214: expanded candidate pool, part 18
+# Reconstruction batch: 215: expanded candidate pool, part 19
 
-113 new matching functions / 5,224 bytes. All 6159 prior functions preserved.
+38 new matching functions / 5,376 bytes. All 6272 prior functions preserved.
 
-6272 exact functions in 6188 modules; 452,904 compiled function-range bytes; 0 reconstructed data bytes; 3,710,008 retained reference bytes. Whole-image coverage 10.8795% is not code completion.
+6310 exact functions in 6226 modules; 458,280 compiled function-range bytes; 0 reconstructed data bytes; 3,704,632 retained reference bytes. Whole-image coverage 11.0086% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c0107b4 | 0x8c0107b4 | 12 |
-| operation_8c012b88 | 0x8c012b88 | 16 |
-| operation_8c01c1a4 | 0x8c01c1a4 | 16 |
-| operation_8c01cc90 | 0x8c01cc90 | 144 |
-| operation_8c01cd20 | 0x8c01cd20 | 124 |
-| operation_8c01cd9c | 0x8c01cd9c | 124 |
-| operation_8c01ce18 | 0x8c01ce18 | 152 |
-| operation_8c01ceb0 | 0x8c01ceb0 | 148 |
-| operation_8c01cfc0 | 0x8c01cfc0 | 96 |
-| operation_8c01fb04 | 0x8c01fb04 | 108 |
-| operation_8c0200ec | 0x8c0200ec | 72 |
-| operation_8c020258 | 0x8c020258 | 56 |
-| operation_8c020d1c | 0x8c020d1c | 144 |
-| operation_8c020dbc | 0x8c020dbc | 116 |
-| operation_8c020e38 | 0x8c020e38 | 240 |
-| operation_8c02c1ac | 0x8c02c1ac | 16 |
-| operation_8c034618 | 0x8c034618 | 472 |
-| operation_8c03613c | 0x8c03613c | 16 |
-| operation_8c03614c | 0x8c03614c | 16 |
-| operation_8c03abf0 | 0x8c03abf0 | 216 |
-| operation_8c03be34 | 0x8c03be34 | 8 |
-| operation_8c04bbf4 | 0x8c04bbf4 | 28 |
-| operation_8c04c66c | 0x8c04c66c | 12 |
-| operation_8c051758 | 0x8c051758 | 88 |
-| operation_8c052f5c | 0x8c052f5c | 56 |
-| operation_8c05a188 | 0x8c05a188 | 12 |
-| operation_8c05b228 | 0x8c05b228 | 16 |
-| operation_8c05b320 | 0x8c05b320 | 12 |
-| operation_8c05b32c | 0x8c05b32c | 12 |
-| operation_8c05baa8 | 0x8c05baa8 | 20 |
-| operation_8c07a948 | 0x8c07a948 | 20 |
-| operation_8c07b5ec | 0x8c07b5ec | 4 |
-| operation_8c07b5f0 | 0x8c07b5f0 | 4 |
-| operation_8c07bdc8 | 0x8c07bdc8 | 176 |
-| operation_8c08710c | 0x8c08710c | 16 |
-| operation_8c087770 | 0x8c087770 | 12 |
-| operation_8c08dafc | 0x8c08dafc | 16 |
-| operation_8c0900fc | 0x8c0900fc | 16 |
-| operation_8c09a640 | 0x8c09a640 | 12 |
-| operation_8c09a64c | 0x8c09a64c | 12 |
-| operation_8c09b33c | 0x8c09b33c | 16 |
-| operation_8c0b6cf4 | 0x8c0b6cf4 | 20 |
-| operation_8c0dc63c | 0x8c0dc63c | 212 |
-| operation_8c0ddf28 | 0x8c0ddf28 | 16 |
-| operation_8c0eabf4 | 0x8c0eabf4 | 12 |
-| operation_8c0eccc4 | 0x8c0eccc4 | 20 |
-| operation_8c0fe9d8 | 0x8c0fe9d8 | 12 |
-| operation_8c108488 | 0x8c108488 | 20 |
-| operation_8c1112b4 | 0x8c1112b4 | 16 |
-| operation_8c1224b8 | 0x8c1224b8 | 16 |
-| operation_8c140ad4 | 0x8c140ad4 | 4 |
-| operation_8c140ad8 | 0x8c140ad8 | 4 |
-| operation_8c144938 | 0x8c144938 | 212 |
-| operation_8c14b868 | 0x8c14b868 | 12 |
-| operation_8c14eb64 | 0x8c14eb64 | 4 |
-| operation_8c14eb68 | 0x8c14eb68 | 4 |
-| operation_8c158548 | 0x8c158548 | 40 |
-| operation_8c15ba54 | 0x8c15ba54 | 16 |
-| operation_8c162d74 | 0x8c162d74 | 112 |
-| operation_8c1670b4 | 0x8c1670b4 | 4 |
-| operation_8c1670b8 | 0x8c1670b8 | 4 |
-| operation_8c16ca58 | 0x8c16ca58 | 4 |
-| operation_8c16d5d0 | 0x8c16d5d0 | 4 |
-| operation_8c16d5d4 | 0x8c16d5d4 | 4 |
-| operation_8c16d5d8 | 0x8c16d5d8 | 4 |
-| operation_8c16d5dc | 0x8c16d5dc | 4 |
-| operation_8c16f8fc | 0x8c16f8fc | 4 |
-| operation_8c16f900 | 0x8c16f900 | 32 |
-| operation_8c1700ec | 0x8c1700ec | 4 |
-| operation_8c1788ac | 0x8c1788ac | 8 |
-| operation_8c184918 | 0x8c184918 | 16 |
-| operation_8c1980b0 | 0x8c1980b0 | 332 |
-| operation_8c199b14 | 0x8c199b14 | 12 |
-| operation_8c19fa08 | 0x8c19fa08 | 4 |
-| operation_8c19fa0c | 0x8c19fa0c | 4 |
-| operation_8c1a68f8 | 0x8c1a68f8 | 12 |
-| operation_8c1a6904 | 0x8c1a6904 | 12 |
-| operation_8c1a9ec4 | 0x8c1a9ec4 | 80 |
-| operation_8c1ab8e8 | 0x8c1ab8e8 | 16 |
-| operation_8c1b575c | 0x8c1b575c | 4 |
-| operation_8c1b690c | 0x8c1b690c | 4 |
-| operation_8c1b6b44 | 0x8c1b6b44 | 4 |
-| operation_8c1b6c20 | 0x8c1b6c20 | 4 |
-| operation_8c1c3450 | 0x8c1c3450 | 32 |
-| operation_8c1ca234 | 0x8c1ca234 | 8 |
-| operation_8c1d1830 | 0x8c1d1830 | 16 |
-| operation_8c1d4c44 | 0x8c1d4c44 | 108 |
-| operation_8c1d9e9c | 0x8c1d9e9c | 12 |
-| operation_8c1d9ebc | 0x8c1d9ebc | 12 |
-| operation_8c1d9ec8 | 0x8c1d9ec8 | 12 |
-| operation_8c1e5918 | 0x8c1e5918 | 16 |
-| operation_8c1e5928 | 0x8c1e5928 | 16 |
-| operation_8c1ed1c0 | 0x8c1ed1c0 | 120 |
-| operation_8c1ed238 | 0x8c1ed238 | 76 |
-| operation_8c2150c8 | 0x8c2150c8 | 8 |
-| operation_8c215fc0 | 0x8c215fc0 | 60 |
-| operation_8c2163b4 | 0x8c2163b4 | 8 |
-| operation_8c2163bc | 0x8c2163bc | 8 |
-| operation_8c21bf40 | 0x8c21bf40 | 8 |
-| operation_8c220d6c | 0x8c220d6c | 20 |
-| operation_8c22cc1c | 0x8c22cc1c | 92 |
-| operation_8c22f178 | 0x8c22f178 | 8 |
-| operation_8c246574 | 0x8c246574 | 148 |
-| operation_8c255f24 | 0x8c255f24 | 4 |
-| operation_8c25811c | 0x8c25811c | 4 |
-| operation_8c2588ac | 0x8c2588ac | 4 |
-| operation_8c25ae10 | 0x8c25ae10 | 20 |
-| operation_8c25afd8 | 0x8c25afd8 | 4 |
-| operation_8c25eef4 | 0x8c25eef4 | 132 |
-| operation_8c25f158 | 0x8c25f158 | 20 |
-| operation_8c25f860 | 0x8c25f860 | 20 |
-| operation_8c25f874 | 0x8c25f874 | 20 |
-| operation_8c2842d0 | 0x8c2842d0 | 4 |
+| operation_8c03f960 | 0x8c03f960 | 256 |
+| operation_8c0505a4 | 0x8c0505a4 | 196 |
+| operation_8c0783b0 | 0x8c0783b0 | 116 |
+| operation_8c080050 | 0x8c080050 | 48 |
+| operation_8c0895a0 | 0x8c0895a0 | 104 |
+| operation_8c0953b4 | 0x8c0953b4 | 212 |
+| operation_8c09cfb4 | 0x8c09cfb4 | 116 |
+| operation_8c09d058 | 0x8c09d058 | 116 |
+| operation_8c0a2a4c | 0x8c0a2a4c | 212 |
+| operation_8c0a531c | 0x8c0a531c | 144 |
+| operation_8c0fbf00 | 0x8c0fbf00 | 96 |
+| operation_8c107188 | 0x8c107188 | 264 |
+| operation_8c11bc2c | 0x8c11bc2c | 216 |
+| operation_8c11e1fc | 0x8c11e1fc | 284 |
+| operation_8c11e6f8 | 0x8c11e6f8 | 284 |
+| operation_8c122da0 | 0x8c122da0 | 112 |
+| operation_8c128e3c | 0x8c128e3c | 168 |
+| operation_8c14fd04 | 0x8c14fd04 | 236 |
+| operation_8c175b54 | 0x8c175b54 | 112 |
+| operation_8c176958 | 0x8c176958 | 320 |
+| operation_8c17a14c | 0x8c17a14c | 132 |
+| operation_8c196e78 | 0x8c196e78 | 76 |
+| operation_8c21d170 | 0x8c21d170 | 144 |
+| operation_8c2318cc | 0x8c2318cc | 184 |
+| operation_8c23de88 | 0x8c23de88 | 140 |
+| operation_8c248d14 | 0x8c248d14 | 132 |
+| operation_8c252510 | 0x8c252510 | 116 |
+| operation_8c252a00 | 0x8c252a00 | 112 |
+| operation_8c252ce4 | 0x8c252ce4 | 96 |
+| operation_8c254864 | 0x8c254864 | 104 |
+| operation_8c281e80 | 0x8c281e80 | 56 |
+| operation_8c281ec8 | 0x8c281ec8 | 68 |
+| operation_8c281f5c | 0x8c281f5c | 36 |
+| operation_8c281f80 | 0x8c281f80 | 112 |
+| operation_8c281ff0 | 0x8c281ff0 | 68 |
+| operation_8c282244 | 0x8c282244 | 48 |
+| operation_8c2825bc | 0x8c2825bc | 72 |
+| operation_8c284518 | 0x8c284518 | 68 |
 
 ## Method
 
-Batch 214 has two sources, both drafted with the batch 212 generator unchanged:
-- **Data-region rescan:** the batch 207 entry survey was repeated with every aligned pointer word in the image, data region included, against the coverage after batch 213. It found 40 new candidates, mostly small stubs.
-- **Full redraft:** all 6,016 candidates that were still unmatched were drafted again with the current generator. Many of the older candidates had last been drafted before the batch 207 to 212 rules.
+Batch 215 is a generator cycle over the candidates still unmatched after batch 214. The draft generator gained:
+- **Pointer-stepping loop tests:** in `while ((e = *p++) != 0)` the pointer step sits in the back branch's delay slot. The element is assigned in the condition, and the pointer is declared as a pointer to the element type.
+- **Block copies:** a copy between two blocks is written through a block type of the copy's size, even when the source or destination field type is unknown.
+- **Function addresses as values:** an admitted function whose address is passed or stored is declared and bound.
+- **Class sub-blocks:** a member inside a block field of a C++ class is reached through the class's data view.
+- **Cast precedence:** the base of a `(char *)` address cast is parenthesized when it is compound.
+- **Pointer-typed fields in arithmetic:** cast to `int` in shifts, products and masks.
+- **Data arrays:** in extern mode, a data address used in `+` arithmetic becomes an extern `char` array symbol, so the compiler keeps the field offset separate. The same address elsewhere in the function uses the same symbol.
 
-The redraft found 461 drafts exact in scratch. 192 met the full-range acceptance rule, and 86 of those were recorded as exact trials. The other 106 were refused by the history guard:
-- 101 are targets parked by an earlier review, whose recorded blocker requires caller or callee evidence before reopening;
-- 5 have an uncertain historical count and need a history review.
+Calibration: 23/37 on batch 191 (previously 22) and 31/55 on batch 190, unchanged. The 13 admitted jump-table functions: 8 exact from the generator alone, unchanged.
 
-None were forced, and these targets are now excluded from scratch acceptance.
+The rules were tested on hand-probed drafts first, then the remaining pool was redrafted in two passes:
+- **First pass:** 1,533 candidates whose earlier drafts showed the affected shapes.
+- **Second pass:** the other 4,275.
+
+Most exact drafts in the second pass were exact for only part of their range (252). The batch 193 boundary rule rejects these unchanged.
 
 Before admission, the boundaries of every unit were checked:
-- each entry follows a literal pool or the delay slot of a function end;
+- each entry follows a literal pool or a function end;
 - no unit overlaps an admitted function or another unit;
-- no branch from outside any unit lands on its entry or inside it;
+- no branch from outside a unit lands in it;
 - every entry is 4-aligned.
-
-Calibration: 22/37 on batch 191 and 31/55 on batch 190, unchanged.
 
 ## Measured attempts
 
-113 recorded attempts on 113 targets, all hypotheses and all exact. 113 units / 113 functions / 5,224 bytes were admitted after two independent reproductions each:
-- 27 come from the data-region rescan (136 bytes);
-- 86 come from the full redraft (5,088 bytes).
+38 recorded attempts on 38 targets, all hypotheses and all exact. 38 units / 38 functions / 5,376 bytes were admitted after two independent reproductions each:
+- 34 come from the first pass (4,852 bytes);
+- 4 come from the second pass (524 bytes).
 
 All are unedited generated drafts.
 
 Disclosure:
 - Every admitted function was first found exact in a scratch comparison, as logged under `drafttest/`.
 - No admitted source was edited by hand.
-- **Scratch probes made while the redraft ran, none admitted:**
-  - `0x8c0c55f8` and `0x8c03f14c` (global store forms: shared constant, chained, `volatile`, struct global);
-  - `0x8c0778c8` and `0x8c0846d0` (argument order: an `(int)` first argument after an admitted precedent, and a local copy of the parameter);
-  - `0x8c01164c` (pointer-stepping loop test);
-  - `0x8c2318cc` and `0x8c0fbf00` (data array symbol forms);
-  - `0x8c2475cc` (control flow).
+- **Hand probes by the session:**
+  - `0x8c025f7c` (nested member array forms);
+  - `0x8c0262a0` (diff inspection only).
 
-  The rules derived from them are disclosed in the batch that first admits a function they produce.
+  The probes behind the rules above are disclosed in batch 214.
+- **Research probes made in separate scratch copies of the generator, none admitted:**
+  - **The in-place `extu.w` family.** About 55 compiles on:
+    - `0x8c2404cc` (about 30 forms: field and parameter types, casts, locals, inline helpers, C++ wrappers, bitfields, `volatile`, unprototyped and variadic callees, optimization and scheduling pragmas);
+    - `0x8c05be98`, `0x8c03c00c`, `0x8c0f44dc`, `0x8c1ddafc`, `0x8c16cb54`;
+    - scratch snippets.
+  - **The argument-order family.** On `0x8c118e50`, `0x8c1089b0` and `0x8c1d5038`:
+    - argument temporaries, multiply and shift forms, member addresses;
+    - `register`, block-local copies and constants, narrow parameters;
+    - C++ destructor and virtual destructor forms;
+    - inline helpers, reference parameters.
+
+    Scratch snippets covered argument position and types, preceding calls, unprototyped, variadic and indirect callees, member calls, address forms and pragmas. One diagnostic compile at a different optimization level was made only to compare scheduling and is not admissible.
 - No declaration orders were searched.
+- History-guarded targets stay blocked and were not forced.
 
 Signatures are provisional. Parameter and return types come from the instruction shape and literal use; they are not confirmed against callers. Identifiers are mechanical.
 
 ## Observed techniques
 
-- Redrafting the whole remaining pool after a series of generator rules recovers functions that the earlier rules make exact but that were never redrafted.
+- A data address that is indexed and then offset by a field is kept as a separate `add` when the base is an extern symbol. A constant address folds the two.
+- Address-only uses of the same data in one function share one pool entry only when they name the same symbol.
 
 ## Parked and unresolved
 
-- 106 history-guarded targets that draft exact are left parked. Reopening them needs the evidence their recorded blockers ask for.
-- The batch 212 parked items are unchanged: argument-register order, in-place `extu.w`, two-byte-aligned candidates and float argument position.
+- **In-place `extu.w`:** treated as not reproducible from source. Across the reference binary, unsigned short loads through an indexed address that are passed to a call are extended in place every time (294 cases). The pinned compiler, at the pinned settings, always loads into a temporary for every source form tried.
+- **Argument-register order around a call's delay slot:** treated as not reproducible from source. Among admitted call sites, a constant argument fills the delay slot in 385 cases and the pointer copy in 3, all forced by dependencies. Near-identical functions in the same unit disagree, so the deciding factor is not visible in the source.
+- **Exact-short drafts** (252 in this cycle) remain rejected by the boundary rule.
 
 Code-only completion and total function count remain unknown.
