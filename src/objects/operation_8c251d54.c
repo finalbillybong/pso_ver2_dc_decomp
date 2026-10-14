@@ -1,0 +1,21 @@
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+typedef struct Object Object;
+struct Object {
+    int tag;
+    char unknown4[0x1a];
+    short size;
+    char unknown20[0x1c0];
+    char f1e0;
+    char f1e1;
+};
+void operation_8c251d54(Object *o)
+{
+    o->tag = (int)(*(int *)0x8c33f9a8);
+    o->size = 0x234;
+    o->f1e0 = 2;
+    o->f1e1 = 3;
+}
