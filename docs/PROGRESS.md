@@ -2,12 +2,12 @@
 
 | Measure | Value |
 | --- | ---: |
-| Exact matching functions | 5769 |
-| Matching modules | 5685 |
-| Compiled complete ranges | 424,776 bytes |
+| Exact matching functions | 6159 |
+| Matching modules | 6075 |
+| Compiled complete ranges | 447,680 bytes |
 | Decoded executable | 4,162,912 bytes |
-| Image coverage | 10.2038% |
-| Retained reference dependence | 3,738,136 bytes |
+| Image coverage | 10.7540% |
+| Retained reference dependence | 3,715,232 bytes |
 | Separately reconstructed static data | 0 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
@@ -16,7 +16,7 @@
 Complete ranges include literals and padding. Image coverage is **not** the
 percentage of game code decompiled. Unmatched candidates earn no completed-byte
 credit. The integrated hybrid image matches the reference, but still requires
-3,738,136 original bytes.
+3,715,232 original bytes.
 
 Exact-build verification recorded: **2026-10-14**. Two fresh
 project builds, exact integrated-image comparison and the five-function compiler
