@@ -1,103 +1,118 @@
-# Reconstruction batch: 215: expanded candidate pool, part 19
+# Reconstruction batch: 216: expanded candidate pool, part 20
 
-38 new matching functions / 5,376 bytes. All 6272 prior functions preserved.
+59 new matching functions / 7,156 bytes. All 6310 prior functions preserved.
 
-6310 exact functions in 6226 modules; 458,280 compiled function-range bytes; 0 reconstructed data bytes; 3,704,632 retained reference bytes. Whole-image coverage 11.0086% is not code completion.
+6369 exact functions in 6285 modules; 465,436 compiled function-range bytes; 0 reconstructed data bytes; 3,697,476 retained reference bytes. Whole-image coverage 11.1805% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c03f960 | 0x8c03f960 | 256 |
-| operation_8c0505a4 | 0x8c0505a4 | 196 |
-| operation_8c0783b0 | 0x8c0783b0 | 116 |
-| operation_8c080050 | 0x8c080050 | 48 |
-| operation_8c0895a0 | 0x8c0895a0 | 104 |
-| operation_8c0953b4 | 0x8c0953b4 | 212 |
-| operation_8c09cfb4 | 0x8c09cfb4 | 116 |
-| operation_8c09d058 | 0x8c09d058 | 116 |
-| operation_8c0a2a4c | 0x8c0a2a4c | 212 |
-| operation_8c0a531c | 0x8c0a531c | 144 |
-| operation_8c0fbf00 | 0x8c0fbf00 | 96 |
-| operation_8c107188 | 0x8c107188 | 264 |
-| operation_8c11bc2c | 0x8c11bc2c | 216 |
-| operation_8c11e1fc | 0x8c11e1fc | 284 |
-| operation_8c11e6f8 | 0x8c11e6f8 | 284 |
-| operation_8c122da0 | 0x8c122da0 | 112 |
-| operation_8c128e3c | 0x8c128e3c | 168 |
-| operation_8c14fd04 | 0x8c14fd04 | 236 |
-| operation_8c175b54 | 0x8c175b54 | 112 |
-| operation_8c176958 | 0x8c176958 | 320 |
-| operation_8c17a14c | 0x8c17a14c | 132 |
-| operation_8c196e78 | 0x8c196e78 | 76 |
-| operation_8c21d170 | 0x8c21d170 | 144 |
-| operation_8c2318cc | 0x8c2318cc | 184 |
-| operation_8c23de88 | 0x8c23de88 | 140 |
-| operation_8c248d14 | 0x8c248d14 | 132 |
-| operation_8c252510 | 0x8c252510 | 116 |
-| operation_8c252a00 | 0x8c252a00 | 112 |
-| operation_8c252ce4 | 0x8c252ce4 | 96 |
-| operation_8c254864 | 0x8c254864 | 104 |
-| operation_8c281e80 | 0x8c281e80 | 56 |
-| operation_8c281ec8 | 0x8c281ec8 | 68 |
-| operation_8c281f5c | 0x8c281f5c | 36 |
-| operation_8c281f80 | 0x8c281f80 | 112 |
-| operation_8c281ff0 | 0x8c281ff0 | 68 |
-| operation_8c282244 | 0x8c282244 | 48 |
-| operation_8c2825bc | 0x8c2825bc | 72 |
-| operation_8c284518 | 0x8c284518 | 68 |
+| operation_8c01bae8 | 0x8c01bae8 | 72 |
+| operation_8c02c930 | 0x8c02c930 | 84 |
+| operation_8c05b16c | 0x8c05b16c | 48 |
+| operation_8c060d94 | 0x8c060d94 | 184 |
+| operation_8c076580 | 0x8c076580 | 108 |
+| operation_8c077d2c | 0x8c077d2c | 112 |
+| operation_8c07d248 | 0x8c07d248 | 220 |
+| operation_8c07dca8 | 0x8c07dca8 | 292 |
+| operation_8c09caac | 0x8c09caac | 64 |
+| operation_8c0b68a0 | 0x8c0b68a0 | 84 |
+| operation_8c0baf70 | 0x8c0baf70 | 84 |
+| operation_8c0cdcb8 | 0x8c0cdcb8 | 176 |
+| operation_8c0d02f8 | 0x8c0d02f8 | 32 |
+| operation_8c0d4b30 | 0x8c0d4b30 | 128 |
+| operation_8c0d50ac | 0x8c0d50ac | 364 |
+| operation_8c0e90f4 | 0x8c0e90f4 | 176 |
+| operation_8c0f3884 | 0x8c0f3884 | 80 |
+| operation_8c103744 | 0x8c103744 | 56 |
+| operation_8c11ebf4 | 0x8c11ebf4 | 284 |
+| operation_8c1591d4 | 0x8c1591d4 | 48 |
+| operation_8c1597d8 | 0x8c1597d8 | 188 |
+| operation_8c15aec4 | 0x8c15aec4 | 204 |
+| operation_8c1bcf9c | 0x8c1bcf9c | 84 |
+| operation_8c1bcff0 | 0x8c1bcff0 | 56 |
+| operation_8c1ca1b0 | 0x8c1ca1b0 | 56 |
+| operation_8c1cbabc | 0x8c1cbabc | 56 |
+| operation_8c1ce0dc | 0x8c1ce0dc | 184 |
+| operation_8c1d2478 | 0x8c1d2478 | 68 |
+| operation_8c1d78fc | 0x8c1d78fc | 68 |
+| operation_8c1ddafc | 0x8c1ddafc | 128 |
+| operation_8c1de234 | 0x8c1de234 | 72 |
+| operation_8c1f9f84 | 0x8c1f9f84 | 56 |
+| operation_8c2089ac | 0x8c2089ac | 192 |
+| operation_8c2091fc | 0x8c2091fc | 192 |
+| operation_8c209a88 | 0x8c209a88 | 80 |
+| operation_8c217834 | 0x8c217834 | 96 |
+| operation_8c2179bc | 0x8c2179bc | 36 |
+| operation_8c21dd94 | 0x8c21dd94 | 56 |
+| operation_8c21e29c | 0x8c21e29c | 36 |
+| operation_8c21f840 | 0x8c21f840 | 60 |
+| operation_8c2238d0 | 0x8c2238d0 | 40 |
+| operation_8c2267dc | 0x8c2267dc | 36 |
+| operation_8c22f12c | 0x8c22f12c | 56 |
+| operation_8c23024c | 0x8c23024c | 184 |
+| operation_8c231f60 | 0x8c231f60 | 256 |
+| operation_8c23a6e0 | 0x8c23a6e0 | 224 |
+| operation_8c23d938 | 0x8c23d938 | 128 |
+| operation_8c23f1b0 | 0x8c23f1b0 | 112 |
+| operation_8c23fdc0 | 0x8c23fdc0 | 112 |
+| operation_8c240b90 | 0x8c240b90 | 280 |
+| operation_8c2476a8 | 0x8c2476a8 | 64 |
+| operation_8c24dae4 | 0x8c24dae4 | 24 |
+| operation_8c2512ec | 0x8c2512ec | 124 |
+| operation_8c252dec | 0x8c252dec | 124 |
+| operation_8c254278 | 0x8c254278 | 112 |
+| operation_8c256688 | 0x8c256688 | 48 |
+| operation_8c25adc8 | 0x8c25adc8 | 72 |
+| operation_8c25d488 | 0x8c25d488 | 424 |
+| operation_8c25f818 | 0x8c25f818 | 72 |
 
 ## Method
 
-Batch 215 is a generator cycle over the candidates still unmatched after batch 214. The draft generator gained:
-- **Pointer-stepping loop tests:** in `while ((e = *p++) != 0)` the pointer step sits in the back branch's delay slot. The element is assigned in the condition, and the pointer is declared as a pointer to the element type.
-- **Block copies:** a copy between two blocks is written through a block type of the copy's size, even when the source or destination field type is unknown.
-- **Function addresses as values:** an admitted function whose address is passed or stored is declared and bound.
-- **Class sub-blocks:** a member inside a block field of a C++ class is reached through the class's data view.
-- **Cast precedence:** the base of a `(char *)` address cast is parenthesized when it is compound.
-- **Pointer-typed fields in arithmetic:** cast to `int` in shifts, products and masks.
-- **Data arrays:** in extern mode, a data address used in `+` arithmetic becomes an extern `char` array symbol, so the compiler keeps the field offset separate. The same address elsewhere in the function uses the same symbol.
+Batch 216 is a generator cycle over every candidate still unmatched after batch 215, 5,772 in all. The draft generator gained compile fixes for drafts the compiler rejected. Each one only changes output for shapes that failed to compile, or that compiled to class-scaled or mistyped arithmetic:
+- **Pointer comparisons and arguments:** when only one side of a comparison is a pointer, that side is cast to `int`. Pointers passed to `int` or float parameters are cast, as are floats passed to pointer parameters. Arguments in calls with a different argument count are cast to the known parameter types.
+- **Virtual calls:** a slot keeps an `int` return when a result is used. A slot called with different argument counts is declared variadic. A class pointer plus a constant is a byte offset.
+- **Repeated factory results:** a second or later allocated object in one block gets its own name. A stored float call result is declared `float`.
+- **Incomplete struct arithmetic:** operands are cast to `int`, and pointer casts parenthesize their value when it starts with a binary operator.
+- **Members:**
+  - classes are forward-declared;
+  - a block copied inside a larger block is reached through that block;
+  - overlapping members are reached by byte offset;
+  - block copies keep their own inner types and names;
+  - an extern global or field whose value is dereferenced or called through points at that type;
+  - differently typed stores into it are cast.
+- **Syntax:** dereference casts are bracketed before `->`, computed bases in `&base->f` are wrapped, and pointer-typed indexes and float stores into pointer members are cast.
+- **Signatures:**
+  - parameters that are read are added to the signature;
+  - a byte-addressed global that is also declared under another type gets its own symbol for the same address;
+  - a `short` or `char` value passed to an `int` parameter of an unadmitted callee gives that parameter the narrower type.
 
-Calibration: 23/37 on batch 191 (previously 22) and 31/55 on batch 190, unchanged. The 13 admitted jump-table functions: 8 exact from the generator alone, unchanged.
+Calibration: 23/37 on batch 191 and 31/55 on batch 190, both unchanged. The 13 admitted jump-table functions: 8 exact from the generator alone, unchanged.
 
-The rules were tested on hand-probed drafts first, then the remaining pool was redrafted in two passes:
-- **First pass:** 1,533 candidates whose earlier drafts showed the affected shapes.
-- **Second pass:** the other 4,275.
-
-Most exact drafts in the second pass were exact for only part of their range (252). The batch 193 boundary rule rejects these unchanged.
+The rules were tested on drafts that failed to compile in earlier cycles (285 targets), then all 5,772 remaining candidates were redrafted in one pass. Of those, 320 drafts were exact in some mode. Most of the rest were exact for only part of their range, and the batch 193 boundary rule rejects these unchanged.
 
 Before admission, the boundaries of every unit were checked:
-- each entry follows a literal pool or a function end;
+- each entry follows a literal pool (56) or a function end (3);
 - no unit overlaps an admitted function or another unit;
 - no branch from outside a unit lands in it;
 - every entry is 4-aligned.
 
 ## Measured attempts
 
-38 recorded attempts on 38 targets, all hypotheses and all exact. 38 units / 38 functions / 5,376 bytes were admitted after two independent reproductions each:
-- 34 come from the first pass (4,852 bytes);
-- 4 come from the second pass (524 bytes).
-
-All are unedited generated drafts.
+59 recorded attempts on 59 targets, all hypotheses and all exact. 59 units / 59 functions / 7,156 bytes were admitted after two independent reproductions each. All are unedited generated drafts.
 
 Disclosure:
 - Every admitted function was first found exact in a scratch comparison, as logged under `drafttest/`.
 - No admitted source was edited by hand.
-- **Hand probes by the session:**
-  - `0x8c025f7c` (nested member array forms);
-  - `0x8c0262a0` (diff inspection only).
+- **Research work in separate scratch copies of the generator, none admitted:**
+  - The compile fixes above were developed against generated drafts only, with no hand probes.
+  - The narrow-parameter rule came out of the `extu.w` research disclosed in batch 215.
+  - **A goto rendering for control flow the generator cannot yet structure** (not used in this batch's drafts). Hand probes on `0x8c03ed70`, an inline string-compare loop:
+    - a `while` loop with assignments in the condition;
+    - a goto rendering in address order;
+    - a static inline helper;
+    - five type and loop variants of the helper (casts on loads, `unsigned char` parameters, a `for (;;)` form).
 
-  The probes behind the rules above are disclosed in batch 214.
-- **Research probes made in separate scratch copies of the generator, none admitted:**
-  - **The in-place `extu.w` family.** About 55 compiles on:
-    - `0x8c2404cc` (about 30 forms: field and parameter types, casts, locals, inline helpers, C++ wrappers, bitfields, `volatile`, unprototyped and variadic callees, optimization and scheduling pragmas);
-    - `0x8c05be98`, `0x8c03c00c`, `0x8c0f44dc`, `0x8c1ddafc`, `0x8c16cb54`;
-    - scratch snippets.
-  - **The argument-order family.** On `0x8c118e50`, `0x8c1089b0` and `0x8c1d5038`:
-    - argument temporaries, multiply and shift forms, member addresses;
-    - `register`, block-local copies and constants, narrow parameters;
-    - C++ destructor and virtual destructor forms;
-    - inline helpers, reference parameters.
-
-    Scratch snippets covered argument position and types, preceding calls, unprototyped, variadic and indirect callees, member calls, address forms and pragmas. One diagnostic compile at a different optimization level was made only to compare scheduling and is not admissible.
+    The branch layout matched in the goto forms and the registers matched only in the helper forms. None was exact.
 - No declaration orders were searched.
 - History-guarded targets stay blocked and were not forced.
 
@@ -105,13 +120,12 @@ Signatures are provisional. Parameter and return types come from the instruction
 
 ## Observed techniques
 
-- A data address that is indexed and then offset by a field is kept as a separate `add` when the base is an extern symbol. A constant address folds the two.
-- Address-only uses of the same data in one function share one pool entry only when they name the same symbol.
+- Pointer and integer mixing that CodeWarrior rejects outright can usually be cast away without changing the generated code. About one in six drafts fixed this way was exact once it compiled.
+- A function called through a class slot with different argument counts in one unit compiles as variadic, but the compiler then passes the arguments on the stack. Such a slot is a sign of a misread live register, not of a real variadic method.
 
 ## Parked and unresolved
 
-- **In-place `extu.w`:** treated as not reproducible from source. Across the reference binary, unsigned short loads through an indexed address that are passed to a call are extended in place every time (294 cases). The pinned compiler, at the pinned settings, always loads into a temporary for every source form tried.
-- **Argument-register order around a call's delay slot:** treated as not reproducible from source. Among admitted call sites, a constant argument fills the delay slot in 385 cases and the pointer copy in 3, all forced by dependencies. Near-identical functions in the same unit disagree, so the deciding factor is not visible in the source.
-- **Exact-short drafts** (252 in this cycle) remain rejected by the boundary rule.
+- **In-place `extu.w`** and **argument-register order around a call's delay slot** are still treated as not reproducible from source (see batch 215).
+- **Exact-short drafts** remain rejected by the boundary rule.
 
 Code-only completion and total function count remain unknown.

@@ -4055,6 +4055,29 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c01bae8",
+      "source": "src/objects/operation_8c01bae8.c",
+      "address": "0x8c01bae8",
+      "entry": "_operation_8c01bae8",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 47848,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c01bae8",
+          "address": "0x8c01bae8",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "82b0ff49b4f8dffcab0a1c3a4fdb5e74a03fad057913b6f81e904f72234774ee",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "destroy_object_8c01bb30",
       "source": "src/effects/destroy_object_8c01bb30.c",
       "address": "0x8c01bb30",
@@ -8949,6 +8972,32 @@
       "reference_sha256": "70e6338acb6b439fa2c9b1e0e5c5ce0819e90bca2f07a2c12b3a8d1e45f70f2e",
       "headers": [],
       "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c02c930",
+      "source": "src/objects/operation_8c02c930.c",
+      "address": "0x8c02c930",
+      "entry": "_operation_8c02c930",
+      "symbols": {
+        "_current_effect_mode": "0x8c032b10",
+        "_operation_8c03b0d8": "0x8c03b0d8"
+      },
+      "ranges": [
+        {
+          "offset": 117040,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c02c930",
+          "address": "0x8c02c930",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "4890c55c59191c8e3258f26875da21d8038dd937c4fe13ce1d1744645d9a2620",
+      "headers": [],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -22416,6 +22465,33 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "operation_8c05b16c",
+      "source": "src/objects/operation_8c05b16c.cpp",
+      "address": "0x8c05b16c",
+      "entry": "_operation_8c05b16c",
+      "symbols": {
+        "_call_8c0521a0": "0x8c0521a0",
+        "_call_8c05228c": "0x8c05228c"
+      },
+      "ranges": [
+        {
+          "offset": 307564,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c05b16c",
+          "address": "0x8c05b16c",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "07ff9fee1fb512778fa47c64e6a39df98465ad2c0b878451afdbb77c19dfbc6e",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "set_mode4_8c05b1dc",
       "source": "src/objects/set_mode4_8c05b1dc.c",
       "address": "0x8c05b1dc",
@@ -24160,6 +24236,38 @@
       "boundary_review": "Reviewed 70 independently referenced or cataloged entry points and their 16 groups of adjacent-entry prologues, field/call leaves, virtual/tail jumps and empty returns. All 48 instruction/delay/padding bytes match proven unsigned-size allocator wrapper source. The five-word pool holds heap global, allocation size, allocator, parent global and initializer respectively; 37 observed sizes are 128..65536. Ordinary C preserves allocation failure guard, three-argument initialization and return object. Complete range 68 bytes including natural padding and all literals. No prior failed target retried."
     },
     {
+      "id": "operation_8c060d94",
+      "source": "src/objects/operation_8c060d94.cpp",
+      "address": "0x8c060d94",
+      "entry": "_operation_8c060d94",
+      "symbols": {
+        "_call_8c122774": "0x8c122774",
+        "_destroy_color_rise_8c05bd84": "0x8c05bd84",
+        "_detach_effect_node": "0x8c0607c0",
+        "_g_8c4688c8": "0x8c4688c8",
+        "_g_8c4688dc": "0x8c4688dc",
+        "_g_8c4d97e0": "0x8c4d97e0",
+        "_operation_8c052124": "0x8c052124"
+      },
+      "ranges": [
+        {
+          "offset": 331156,
+          "size": 184
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c060d94",
+          "address": "0x8c060d94",
+          "size": 184
+        }
+      ],
+      "reference_sha256": "c91bdd94ff7d6d260f54381a1cfc084423b44065e6cbd23b9e87bec6f3190828",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c060f70",
       "source": "src/objects/operation_8c060f70.c",
       "address": "0x8c060f70",
@@ -25506,6 +25614,32 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c076580",
+      "source": "src/objects/operation_8c076580.cpp",
+      "address": "0x8c076580",
+      "entry": "_operation_8c076580",
+      "symbols": {
+        "_call_8c1aaabc": "0x8c1aaabc"
+      },
+      "ranges": [
+        {
+          "offset": 419200,
+          "size": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c076580",
+          "address": "0x8c076580",
+          "size": 108
+        }
+      ],
+      "reference_sha256": "4d833e0c3492d30d71c090ab65d12e61f7b5d8d2ffb1f29dfd21c96f264e5c1f",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c0771a0",
       "source": "src/objects/operation_8c0771a0.c",
       "address": "0x8c0771a0",
@@ -25933,6 +26067,30 @@
       ],
       "reference_sha256": "02e24b225d7b29f923616ec03a3940b6904ebe8177ff5ca0294a657fa80ce501",
       "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c077d2c",
+      "source": "src/objects/operation_8c077d2c.cpp",
+      "address": "0x8c077d2c",
+      "entry": "_operation_8c077d2c",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 425260,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c077d2c",
+          "address": "0x8c077d2c",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "aa81d5d942fbeaf727822147450a4168afdf878318e575cb55f02b21c1d1ecb8",
+      "headers": [],
+      "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -28193,6 +28351,35 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_8c07d248",
+      "source": "src/objects/operation_8c07d248.cpp",
+      "address": "0x8c07d248",
+      "entry": "_operation_8c07d248",
+      "symbols": {
+        "_call_8c05fbf8": "0x8c05fbf8",
+        "_call_8c07f9b0": "0x8c07f9b0",
+        "_current_effect_mode": "0x8c032b10",
+        "_operation_8c07dac0": "0x8c07dac0"
+      },
+      "ranges": [
+        {
+          "offset": 447048,
+          "size": 220
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c07d248",
+          "address": "0x8c07d248",
+          "size": 220
+        }
+      ],
+      "reference_sha256": "a4f5e510703b869e36b5bc774546c7bc09e7fb363180252226c8a048c1084005",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c07d79c",
       "source": "src/objects/operation_8c07d79c.c",
       "address": "0x8c07d79c",
@@ -28395,6 +28582,43 @@
       ],
       "reference_sha256": "9c76584780dfe0a8321c648f085fe5d1d72c5350f59fb2eb237f13770a2fb6f5",
       "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c07dca8",
+      "source": "src/objects/operation_8c07dca8.cpp",
+      "address": "0x8c07dca8",
+      "entry": "_operation_8c07dca8",
+      "symbols": {
+        "_call_8c022538": "0x8c022538",
+        "_call_8c03b55c": "0x8c03b55c",
+        "_call_8c074560": "0x8c074560",
+        "_call_8c074fb4": "0x8c074fb4",
+        "_call_8c07e79c": "0x8c07e79c",
+        "_call_8c207304": "0x8c207304",
+        "_call_8c207470": "0x8c207470",
+        "_call_8c207518": "0x8c207518",
+        "_call_8c2075c0": "0x8c2075c0",
+        "_call_8c207668": "0x8c207668",
+        "_call_8c207738": "0x8c207738",
+        "_operation_8c207710": "0x8c207710"
+      },
+      "ranges": [
+        {
+          "offset": 449704,
+          "size": 292
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c07dca8",
+          "address": "0x8c07dca8",
+          "size": 292
+        }
+      ],
+      "reference_sha256": "e02fcd769fa2a9ea4cbb23751d9aa1575ee46d8a4bfd6f8f206ad0f1489a0fd4",
+      "headers": [],
+      "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -33624,6 +33848,30 @@
       ],
       "reference_sha256": "c12580998f1e2b633eca827f92855a3d39d5ddab500b96f95dd479f7ea4aa83b",
       "boundary_review": "Reviewed entry and adjacent code pointers in recorded call/vtable/data tables; independent final return and full pool verified against exact template. All nonmasked instructions/delays/natural padding identical to exact template. Review covers each altered constant and accessed offset."
+    },
+    {
+      "id": "operation_8c09caac",
+      "source": "src/objects/operation_8c09caac.cpp",
+      "address": "0x8c09caac",
+      "entry": "_operation_8c09caac",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 576172,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c09caac",
+          "address": "0x8c09caac",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "bac726e2b878e0e92743e50a3bdfffa4b303079d16203a15955c1fb96af9e2a5",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
       "id": "operation_8c09caec",
@@ -40609,6 +40857,33 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c0b68a0",
+      "source": "src/objects/operation_8c0b68a0.c",
+      "address": "0x8c0b68a0",
+      "entry": "_operation_8c0b68a0",
+      "symbols": {
+        "_call_8c122774": "0x8c122774",
+        "_clear_emit_slot": "0x8c0602c4",
+        "_destroy_hierarchy_node": "0x8c03311c"
+      },
+      "ranges": [
+        {
+          "offset": 682144,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c0b68a0",
+          "address": "0x8c0b68a0",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "8a2d9b03d1ade46a4c4dcec39af26ac34af61d19867398b53fc5f4bcecbfe832",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "destroy_object_8c0b691c",
       "source": "src/effects/destroy_object_8c0b691c.c",
       "address": "0x8c0b691c",
@@ -41632,6 +41907,33 @@
       ],
       "reference_sha256": "3be992e9d0dc19d476083892a1f809d9834933a9f992075f8eba0dc22c1b0102",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_8c0baf70",
+      "source": "src/objects/operation_8c0baf70.c",
+      "address": "0x8c0baf70",
+      "entry": "_operation_8c0baf70",
+      "symbols": {
+        "_bind_id": "0x8c0a7628",
+        "_call_8c18e8a0": "0x8c18e8a0",
+        "_create_effect": "0x8c0a77e8"
+      },
+      "ranges": [
+        {
+          "offset": 700272,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c0baf70",
+          "address": "0x8c0baf70",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "704c9507b1c5fb75c8a43a770d87ecd3836b71607c234ad99ce9dd8416c99024",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
       "id": "initialize_effect12_template",
@@ -47422,6 +47724,35 @@
       "boundary_review": "Raw node-array destructor and recursive count/fill tree walks reviewed through adjacent entries, signed release test, null guards, compiler recursion expansion, literals and padding. Full checked match twice; stage133."
     },
     {
+      "id": "operation_8c0cdcb8",
+      "source": "src/objects/operation_8c0cdcb8.cpp",
+      "address": "0x8c0cdcb8",
+      "entry": "_operation_8c0cdcb8",
+      "symbols": {
+        "_call_8c122774": "0x8c122774",
+        "_destroy_actor_mode_state": "0x8c0c23c8",
+        "_destroy_field_8c114790": "0x8c114790",
+        "_operation_8c052124": "0x8c052124"
+      },
+      "ranges": [
+        {
+          "offset": 777400,
+          "size": 176
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c0cdcb8",
+          "address": "0x8c0cdcb8",
+          "size": 176
+        }
+      ],
+      "reference_sha256": "862d6d1da683703bdfe7d78320f6463a71b89cbbe063c4b911b8c689c3b03eb2",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "create_context_actor_8c0ce160",
       "source": "src/objects/create_context_actor_8c0ce160.c",
       "address": "0x8c0ce160",
@@ -47674,6 +48005,32 @@
       ],
       "reference_sha256": "cb5cd88f036fc03e4033b5b47fbfd44845d248250872af3e198f463e14beea0a",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_8c0d02f8",
+      "source": "src/objects/operation_8c0d02f8.cpp",
+      "address": "0x8c0d02f8",
+      "entry": "_operation_8c0d02f8",
+      "symbols": {
+        "_call_8c03ca54": "0x8c03ca54"
+      },
+      "ranges": [
+        {
+          "offset": 787192,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c0d02f8",
+          "address": "0x8c0d02f8",
+          "size": 32
+        }
+      ],
+      "reference_sha256": "e87314b9b272fe021dc9f9130851a86e0b5fc7b392ac3a4ef62773c5991a1c67",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
       "id": "operation_8c0d0318",
@@ -48137,6 +48494,34 @@
       "boundary_review": "Raw full range and all PC-relative pools through independent next entry reviewed. Callee entry analysis saved; no-op component calls retained as externally declared object callbacks. Mandatory children are not given speculative null guards."
     },
     {
+      "id": "operation_8c0d4b30",
+      "source": "src/objects/operation_8c0d4b30.cpp",
+      "address": "0x8c0d4b30",
+      "entry": "_operation_8c0d4b30",
+      "symbols": {
+        "_cache_actor_position_8c0d4c34": "0x8c0d4c34",
+        "_call_8c05a108": "0x8c05a108",
+        "_operation_8c03d338": "0x8c03d338"
+      },
+      "ranges": [
+        {
+          "offset": 805680,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c0d4b30",
+          "address": "0x8c0d4b30",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "28e9167705f8d0cccd63186881bae0fc8592103991ee7d93db88fe14073e9d45",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c0d4bb0",
       "source": "src/objects/operation_8c0d4bb0.c",
       "address": "0x8c0d4bb0",
@@ -48256,6 +48641,45 @@
       ],
       "reference_sha256": "bbdee784f92db9a088ba2ff3662406ee93b3d34c17f51babedd824bdff13e104",
       "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c0d50ac",
+      "source": "src/objects/operation_8c0d50ac.cpp",
+      "address": "0x8c0d50ac",
+      "entry": "_operation_8c0d50ac",
+      "symbols": {
+        "_call_8c0d5364": "0x8c0d5364",
+        "_call_8c0d5424": "0x8c0d5424",
+        "_call_8c0d55d8": "0x8c0d55d8",
+        "_call_8c0d5a70": "0x8c0d5a70",
+        "_call_8c0d5cc4": "0x8c0d5cc4",
+        "_call_8c0d6310": "0x8c0d6310",
+        "_call_8c0d65a8": "0x8c0d65a8",
+        "_call_8c0d69a0": "0x8c0d69a0",
+        "_call_8c0d6ed4": "0x8c0d6ed4",
+        "_call_8c0d705c": "0x8c0d705c",
+        "_call_8c0d7128": "0x8c0d7128",
+        "_call_8c0d7230": "0x8c0d7230",
+        "_call_8c0d7324": "0x8c0d7324"
+      },
+      "ranges": [
+        {
+          "offset": 807084,
+          "size": 364
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c0d50ac",
+          "address": "0x8c0d50ac",
+          "size": 364
+        }
+      ],
+      "reference_sha256": "87cfffcb75769edc9d407eea841d1208d6cb29aa2db4c07c50556367a8437ffd",
+      "headers": [],
+      "language": "c++",
+      "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -52098,6 +52522,34 @@
       "boundary_review": "Entry/reference and adjacent boundary checked; callee raw 0x8c37d534..0x8c37d58c reads only incoming R4 and returns status 1 or -1 in R0. Entire 20-byte wrapper includes pool/padding."
     },
     {
+      "id": "operation_8c0e90f4",
+      "source": "src/objects/operation_8c0e90f4.c",
+      "address": "0x8c0e90f4",
+      "entry": "_operation_8c0e90f4",
+      "symbols": {
+        "_call_8c0101dc": "0x8c0101dc",
+        "_call_8c3727a0": "0x8c3727a0",
+        "_call_8c37293e": "0x8c37293e",
+        "_operation_8c19b054": "0x8c19b054"
+      },
+      "ranges": [
+        {
+          "offset": 889076,
+          "size": 176
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c0e90f4",
+          "address": "0x8c0e90f4",
+          "size": 176
+        }
+      ],
+      "reference_sha256": "e6dcdbfea1fc45b641e1816143670e64fdd47cd13f84196578afe9ff5340d53f",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "word_operation_8c0e92d4",
       "source": "src/objects/word_operation_8c0e92d4.c",
       "address": "0x8c0e92d4",
@@ -55376,6 +55828,30 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c0f3884",
+      "source": "src/objects/operation_8c0f3884.cpp",
+      "address": "0x8c0f3884",
+      "entry": "_operation_8c0f3884",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 931972,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c0f3884",
+          "address": "0x8c0f3884",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "20c262870b5965b9117e8977ea34d949318e3d26f02e79b3263db5bfefdc7e3a",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c0f38d4",
       "source": "src/objects/operation_8c0f38d4.c",
       "address": "0x8c0f38d4",
@@ -58112,6 +58588,33 @@
       ],
       "reference_sha256": "e5c7010b2724b40aa823198aef1abf0802529dc42175c7aa8ebdbaf7af50566f",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_8c103744",
+      "source": "src/objects/operation_8c103744.cpp",
+      "address": "0x8c103744",
+      "entry": "_operation_8c103744",
+      "symbols": {
+        "_call_8c10377c": "0x8c10377c",
+        "_draw_view_nodes": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 997188,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c103744",
+          "address": "0x8c103744",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "435ddba1b1613b054f9b7be678867db60938930cc2849009932bea7af7d584eb",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
       "id": "operation_8c103ac8",
@@ -67196,6 +67699,38 @@
         }
       ],
       "reference_sha256": "4deabce9fae60f207d6676fa114ae22bd9f8d1e732624d774c4afaf7a7e6f28b",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c11ebf4",
+      "source": "src/objects/operation_8c11ebf4.c",
+      "address": "0x8c11ebf4",
+      "entry": "_operation_8c11ebf4",
+      "symbols": {
+        "_call_8c011ecc": "0x8c011ecc",
+        "_call_8c03d610": "0x8c03d610",
+        "_call_8c118528": "0x8c118528",
+        "_call_8c18de4c": "0x8c18de4c",
+        "_g_8c3118a8": "0x8c3118a8",
+        "_g_8c4d84a0": "0x8c4d84a0",
+        "_g_8c4d84a4": "0x8c4d84a4",
+        "_g_8c4d84a8": "0x8c4d84a8"
+      },
+      "ranges": [
+        {
+          "offset": 1108980,
+          "size": 284
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c11ebf4",
+          "address": "0x8c11ebf4",
+          "size": 284
+        }
+      ],
+      "reference_sha256": "4dc0beb95807bba47727fb9af4e76f61c036f7b7ffe17ba8642b92ca66887f48",
       "headers": [],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -78497,6 +79032,33 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c1591d4",
+      "source": "src/objects/operation_8c1591d4.cpp",
+      "address": "0x8c1591d4",
+      "entry": "_operation_8c1591d4",
+      "symbols": {
+        "_create_loader_8c1736ac": "0x8c1736ac",
+        "_g_8c4daae0": "0x8c4daae0"
+      },
+      "ranges": [
+        {
+          "offset": 1348052,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1591d4",
+          "address": "0x8c1591d4",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "13c1c0c7aeb5aad976525605671f1bb4424cb04c400289e9ad1cfeb548b52ffd",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "clear_global_8c159204",
       "source": "src/objects/clear_global_8c159204.c",
       "address": "0x8c159204",
@@ -78649,6 +79211,35 @@
         }
       ],
       "reference_sha256": "7ddcada6a861c9aa96f8a22868912fa55bc914f27c75ab3b24b9ebe50f340ca3",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c1597d8",
+      "source": "src/objects/operation_8c1597d8.c",
+      "address": "0x8c1597d8",
+      "entry": "_operation_8c1597d8",
+      "symbols": {
+        "_call_8c220c40": "0x8c220c40",
+        "_create_loader_8c1735f8": "0x8c1735f8",
+        "_g_8c4daae0": "0x8c4daae0",
+        "_operation_8c1571f4": "0x8c1571f4",
+        "_request_resource_release": "0x8c0dc7f4"
+      },
+      "ranges": [
+        {
+          "offset": 1349592,
+          "size": 188
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1597d8",
+          "address": "0x8c1597d8",
+          "size": 188
+        }
+      ],
+      "reference_sha256": "2f3b7c7114e3f0ea0dc90056e4a9a8d90bd31feb9e5099bd29f2a76e2f68e4ab",
       "headers": [],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -78864,6 +79455,36 @@
       ],
       "reference_sha256": "73c066f7f7cf5b05a8ee5c800c6d7314ff9813d4b52493caa82c65dd90c07bf4",
       "boundary_review": "Raw complete destructor body and all PC-relative pool endpoints reviewed; saved adjacent entry prefixe62f0ed00ed7026e. No empty neighboring function included."
+    },
+    {
+      "id": "operation_8c15aec4",
+      "source": "src/objects/operation_8c15aec4.c",
+      "address": "0x8c15aec4",
+      "entry": "_operation_8c15aec4",
+      "symbols": {
+        "_allocate_block": "0x8c122700",
+        "_g_8c3165ec": "0x8c3165ec",
+        "_g_8c44be98": "0x8c44be98",
+        "_g_8c4d97e0": "0x8c4d97e0",
+        "_g_8c4d9b60": "0x8c4d9b60",
+        "_initialize_panel_8c087d8c": "0x8c087d8c"
+      },
+      "ranges": [
+        {
+          "offset": 1355460,
+          "size": 204
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c15aec4",
+          "address": "0x8c15aec4",
+          "size": 204
+        }
+      ],
+      "reference_sha256": "425019c95da9b067b32eb55a21f81f95c7aec17d8e2a747b828f032f6d708398",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
       "id": "operation_8c15af90",
@@ -106694,6 +107315,61 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_8c1bcf9c",
+      "source": "src/objects/operation_8c1bcf9c.c",
+      "address": "0x8c1bcf9c",
+      "entry": "_operation_8c1bcf9c",
+      "symbols": {
+        "_call_8c0db30c": "0x8c0db30c",
+        "_call_8c0fcd0c": "0x8c0fcd0c",
+        "_operation_8c1bd03c": "0x8c1bd03c",
+        "_update_view_nodes": "0x8c0e1c08"
+      },
+      "ranges": [
+        {
+          "offset": 1757084,
+          "size": 84
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1bcf9c",
+          "address": "0x8c1bcf9c",
+          "size": 84
+        }
+      ],
+      "reference_sha256": "0aa315b7c9aea339959bd6c569dea280cd3060c4257e8cd3800a4d8958244d98",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c1bcff0",
+      "source": "src/objects/operation_8c1bcff0.cpp",
+      "address": "0x8c1bcff0",
+      "entry": "_operation_8c1bcff0",
+      "symbols": {
+        "_draw_view_nodes": "0x8c0e1c48",
+        "_operation_8c1bd028": "0x8c1bd028"
+      },
+      "ranges": [
+        {
+          "offset": 1757168,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1bcff0",
+          "address": "0x8c1bcff0",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "0d5d46930de1f7b3542861c0631c4c4bf2b1c20bd093e99e59b443081cb5aad5",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c1bd028",
       "source": "src/objects/operation_8c1bd028.c",
       "address": "0x8c1bd028",
@@ -111148,6 +111824,33 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c1ca1b0",
+      "source": "src/objects/operation_8c1ca1b0.cpp",
+      "address": "0x8c1ca1b0",
+      "entry": "_operation_8c1ca1b0",
+      "symbols": {
+        "_draw_view_nodes": "0x8c0e1c48",
+        "_operation_8c1ca1e8": "0x8c1ca1e8"
+      },
+      "ranges": [
+        {
+          "offset": 1810864,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1ca1b0",
+          "address": "0x8c1ca1b0",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "8fec375d1228c62f5c68f67d947bde8ec21202a9d64ea6b3b91f8cf11f5b8c9e",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c1ca1e8",
       "source": "src/objects/operation_8c1ca1e8.c",
       "address": "0x8c1ca1e8",
@@ -111419,6 +112122,33 @@
       ],
       "reference_sha256": "73b048d94e6050c4711486983c7708f8d21e6740c3feaa804a43976f33b5ea27",
       "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c1cbabc",
+      "source": "src/objects/operation_8c1cbabc.cpp",
+      "address": "0x8c1cbabc",
+      "entry": "_operation_8c1cbabc",
+      "symbols": {
+        "_draw_view_nodes": "0x8c0e1c48",
+        "_operation_8c1cbaf4": "0x8c1cbaf4"
+      },
+      "ranges": [
+        {
+          "offset": 1817276,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1cbabc",
+          "address": "0x8c1cbabc",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "bc9939573e0bed265b1fa9121399b46d288f8b257a6d0dde8db4784824e499e3",
+      "headers": [],
+      "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -113090,6 +113820,37 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "operation_8c1ce0dc",
+      "source": "src/objects/operation_8c1ce0dc.c",
+      "address": "0x8c1ce0dc",
+      "entry": "_operation_8c1ce0dc",
+      "symbols": {
+        "_call_8c05fbf8": "0x8c05fbf8",
+        "_call_8c1ce194": "0x8c1ce194",
+        "_create_effect_777c": "0x8c0a777c",
+        "_operation_03d080": "0x8c03d080",
+        "_operation_8c03d338": "0x8c03d338",
+        "_operation_8c09e6b4": "0x8c09e6b4",
+        "_operation_8c1ce2e8": "0x8c1ce2e8"
+      },
+      "ranges": [
+        {
+          "offset": 1827036,
+          "size": 184
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1ce0dc",
+          "address": "0x8c1ce0dc",
+          "size": 184
+        }
+      ],
+      "reference_sha256": "737ad2ad3024b09c3c51179032880baf19c32c607c643c6067701c30cb1305b8",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c1ce2e8",
       "source": "src/objects/operation_8c1ce2e8.c",
       "address": "0x8c1ce2e8",
@@ -113818,6 +114579,32 @@
         }
       ],
       "reference_sha256": "30d5a9e70adf3c227a3fbf1dff1d4f61d2a4c82c82cfe1bf8e4fcd8c12b6a162",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c1d2478",
+      "source": "src/objects/operation_8c1d2478.c",
+      "address": "0x8c1d2478",
+      "entry": "_operation_8c1d2478",
+      "symbols": {
+        "_get_field_8c157604": "0x8c157604",
+        "_operation_8c1571f4": "0x8c1571f4"
+      },
+      "ranges": [
+        {
+          "offset": 1844344,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1d2478",
+          "address": "0x8c1d2478",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "8433ddd2f24209f5810bba60d2ba6f847d3994d807bd4a8e3e09bb17b364064e",
       "headers": [],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -115012,6 +115799,31 @@
         }
       ],
       "reference_sha256": "87fdfd3084da031ae240014ba051a576045a9597e746385688cdfe4e46130f5d",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c1d78fc",
+      "source": "src/objects/operation_8c1d78fc.c",
+      "address": "0x8c1d78fc",
+      "entry": "_operation_8c1d78fc",
+      "symbols": {
+        "_find_record_8c0744dc": "0x8c0744dc"
+      },
+      "ranges": [
+        {
+          "offset": 1865980,
+          "size": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1d78fc",
+          "address": "0x8c1d78fc",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "14e7329e0b647f0aff5620cdbc49dc0db74231a7c2b09c6e328e4d2e69dfa372",
       "headers": [],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -116518,6 +117330,35 @@
       "boundary_review": "Independent catalog/referenced entry and reviewed adjacent entry; entire instruction/delay and natural pool shape agrees with exact template. Raw stores incomingR4 as one32-bit word; preserve bits without claiming the global is a callback."
     },
     {
+      "id": "operation_8c1ddafc",
+      "source": "src/objects/operation_8c1ddafc.c",
+      "address": "0x8c1ddafc",
+      "entry": "_operation_8c1ddafc",
+      "symbols": {
+        "_call_8c053f54": "0x8c053f54",
+        "_call_8c122774": "0x8c122774",
+        "_destroy_context_8c051f28": "0x8c051f28",
+        "_operation_8c192704": "0x8c192704",
+        "_set_field_8c052174": "0x8c052174"
+      },
+      "ranges": [
+        {
+          "offset": 1891068,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1ddafc",
+          "address": "0x8c1ddafc",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "f2542eab430dbc97a81e88574d00ed97c7e2bef72b689e4d753bba5a95c4acd7",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c1ddb7c",
       "source": "src/objects/operation_8c1ddb7c.cpp",
       "address": "0x8c1ddb7c",
@@ -116807,6 +117648,35 @@
       ],
       "reference_sha256": "c129310c5463054f829ef8955d2592884d33c624bb132d2f8b81658e642d1091",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_8c1de234",
+      "source": "src/objects/operation_8c1de234.cpp",
+      "address": "0x8c1de234",
+      "entry": "_operation_8c1de234",
+      "symbols": {
+        "_call_8c1de27c": "0x8c1de27c",
+        "_call_8c1de51c": "0x8c1de51c",
+        "_call_8c1de630": "0x8c1de630",
+        "_draw_view_transition_if_active": "0x8c0db51c"
+      },
+      "ranges": [
+        {
+          "offset": 1892916,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1de234",
+          "address": "0x8c1de234",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "14b5569f2a2461617b96887b10b88bf4b70c8d7b82a25a16756bc97210215b85",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
       "id": "operation_8c1deb8c",
@@ -123004,6 +123874,32 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c1f9f84",
+      "source": "src/objects/operation_8c1f9f84.c",
+      "address": "0x8c1f9f84",
+      "entry": "_operation_8c1f9f84",
+      "symbols": {
+        "_call_8c12b77c": "0x8c12b77c",
+        "_g_8c4f1200": "0x8c4f1200"
+      },
+      "ranges": [
+        {
+          "offset": 2006916,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1f9f84",
+          "address": "0x8c1f9f84",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "4df6c8ba5a3a518ef5d7e5a26f12f46a86854eb86cdd3a42925dfbd25f9f6b22",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c1fbabc",
       "source": "src/objects/operation_8c1fbabc.c",
       "address": "0x8c1fbabc",
@@ -123589,6 +124485,35 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c2089ac",
+      "source": "src/objects/operation_8c2089ac.c",
+      "address": "0x8c2089ac",
+      "entry": "_operation_8c2089ac",
+      "symbols": {
+        "_call_8c220c40": "0x8c220c40",
+        "_create_loader_8c1735f8": "0x8c1735f8",
+        "_g_8c4daae0": "0x8c4daae0",
+        "_operation_8c1571f4": "0x8c1571f4",
+        "_request_resource_release": "0x8c0dc7f4"
+      },
+      "ranges": [
+        {
+          "offset": 2066860,
+          "size": 192
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c2089ac",
+          "address": "0x8c2089ac",
+          "size": 192
+        }
+      ],
+      "reference_sha256": "d5ce8f9b01f3f0abb579c75451b8ec5a9e7aa978d3b6f95a1fd102b895f7e8bb",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c208b74",
       "source": "src/objects/operation_8c208b74.c",
       "address": "0x8c208b74",
@@ -123827,6 +124752,35 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c2091fc",
+      "source": "src/objects/operation_8c2091fc.c",
+      "address": "0x8c2091fc",
+      "entry": "_operation_8c2091fc",
+      "symbols": {
+        "_call_8c220c40": "0x8c220c40",
+        "_create_loader_8c1735f8": "0x8c1735f8",
+        "_g_8c4daae0": "0x8c4daae0",
+        "_operation_8c1571f4": "0x8c1571f4",
+        "_request_resource_release": "0x8c0dc7f4"
+      },
+      "ranges": [
+        {
+          "offset": 2068988,
+          "size": 192
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c2091fc",
+          "address": "0x8c2091fc",
+          "size": 192
+        }
+      ],
+      "reference_sha256": "4c1b8473c4bb6a160c162abddaa5214626dd444ec8b450314f987fc343d0e1c1",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "query_field_8c209364",
       "source": "src/objects/query_field_8c209364.c",
       "address": "0x8c209364",
@@ -124035,6 +124989,31 @@
         }
       ],
       "reference_sha256": "86f30e49f8681a493238d4deb5e1abadc8af3f7c43227b20c2ab2081ce15d890",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c209a88",
+      "source": "src/objects/operation_8c209a88.c",
+      "address": "0x8c209a88",
+      "entry": "_operation_8c209a88",
+      "symbols": {
+        "_call_8c193134": "0x8c193134"
+      },
+      "ranges": [
+        {
+          "offset": 2071176,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c209a88",
+          "address": "0x8c209a88",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "1b2ee64a05863784c78a10184a5206056150327b18a4b9810520fe80cccd1833",
       "headers": [],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -126206,6 +127185,33 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_8c217834",
+      "source": "src/objects/operation_8c217834.cpp",
+      "address": "0x8c217834",
+      "entry": "_operation_8c217834",
+      "symbols": {
+        "_call_8c0dbdf4": "0x8c0dbdf4",
+        "_draw_view_nodes": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 2127924,
+          "size": 96
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c217834",
+          "address": "0x8c217834",
+          "size": 96
+        }
+      ],
+      "reference_sha256": "6d3098e489adedc6a21a8e49d11d3f4b960fa50f18467547b94b4cd4b885dd71",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c217894",
       "source": "src/objects/operation_8c217894.c",
       "address": "0x8c217894",
@@ -126358,6 +127364,32 @@
       ],
       "reference_sha256": "7f3ac4332dcc41278f0bd4989a6720228fdfcd14314cf2bc1d0b922cf151d750",
       "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c2179bc",
+      "source": "src/objects/operation_8c2179bc.cpp",
+      "address": "0x8c2179bc",
+      "entry": "_operation_8c2179bc",
+      "symbols": {
+        "_draw_view_nodes": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 2128316,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c2179bc",
+          "address": "0x8c2179bc",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "b4e03ce17c7568f6744e1eed923705c89b0dba984da93e8918c0d1e838b0c8d2",
+      "headers": [],
+      "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -128712,6 +129744,33 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c21dd94",
+      "source": "src/objects/operation_8c21dd94.cpp",
+      "address": "0x8c21dd94",
+      "entry": "_operation_8c21dd94",
+      "symbols": {
+        "_draw_view_nodes": "0x8c0e1c48",
+        "_operation_8c21dec4": "0x8c21dec4"
+      },
+      "ranges": [
+        {
+          "offset": 2153876,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c21dd94",
+          "address": "0x8c21dd94",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "ac6520d53ea39eaaa96767f69845016e7d7ada0bba5ec4adcdd4f5662ed2ccac",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "create_item_view_8c21ddcc",
       "source": "src/objects/create_item_view_8c21ddcc.c",
       "address": "0x8c21ddcc",
@@ -128868,6 +129927,32 @@
       ],
       "reference_sha256": "63b51a2deb421042e6b378bcf080a7a41202cf38894635d6eeb5aa8ed4705d1a",
       "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c21e29c",
+      "source": "src/objects/operation_8c21e29c.cpp",
+      "address": "0x8c21e29c",
+      "entry": "_operation_8c21e29c",
+      "symbols": {
+        "_draw_view_nodes": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 2155164,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c21e29c",
+          "address": "0x8c21e29c",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "b4e03ce17c7568f6744e1eed923705c89b0dba984da93e8918c0d1e838b0c8d2",
+      "headers": [],
+      "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -129710,6 +130795,34 @@
       ],
       "reference_sha256": "654e5ff4fe8fb43d30f57a7e7923448905e47c8ffc0020dfb04c14e0e983bde2",
       "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c21f840",
+      "source": "src/objects/operation_8c21f840.cpp",
+      "address": "0x8c21f840",
+      "entry": "_operation_8c21f840",
+      "symbols": {
+        "_call_8c0db5d4": "0x8c0db5d4",
+        "_call_8c21f91c": "0x8c21f91c",
+        "_draw_view_transition_if_active": "0x8c0db51c"
+      },
+      "ranges": [
+        {
+          "offset": 2160704,
+          "size": 60
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c21f840",
+          "address": "0x8c21f840",
+          "size": 60
+        }
+      ],
+      "reference_sha256": "1dd6d4d92d269e44dd5e7d36d8f752f8223f99d6d1a488965c4e9e14c8d92cba",
+      "headers": [],
+      "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -131502,6 +132615,30 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c2238d0",
+      "source": "src/objects/operation_8c2238d0.cpp",
+      "address": "0x8c2238d0",
+      "entry": "_operation_8c2238d0",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2177232,
+          "size": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c2238d0",
+          "address": "0x8c2238d0",
+          "size": 40
+        }
+      ],
+      "reference_sha256": "32f067dca61f2ccba8901f4925f60145297c075cf1cc47a598d1f68d181aeb8b",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c223984",
       "source": "src/objects/operation_8c223984.c",
       "address": "0x8c223984",
@@ -132430,6 +133567,32 @@
       ],
       "reference_sha256": "3847633d9c93adbee433b034267569d86371dcb45dad277e375c0b7fd66bffe7",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_8c2267dc",
+      "source": "src/objects/operation_8c2267dc.cpp",
+      "address": "0x8c2267dc",
+      "entry": "_operation_8c2267dc",
+      "symbols": {
+        "_draw_view_nodes": "0x8c0e1c48"
+      },
+      "ranges": [
+        {
+          "offset": 2189276,
+          "size": 36
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c2267dc",
+          "address": "0x8c2267dc",
+          "size": 36
+        }
+      ],
+      "reference_sha256": "b4e03ce17c7568f6744e1eed923705c89b0dba984da93e8918c0d1e838b0c8d2",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
       "id": "create_pair_view_8c226800",
@@ -134656,6 +135819,33 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c22f12c",
+      "source": "src/objects/operation_8c22f12c.cpp",
+      "address": "0x8c22f12c",
+      "entry": "_operation_8c22f12c",
+      "symbols": {
+        "_draw_view_nodes": "0x8c0e1c48",
+        "_operation_8c22f164": "0x8c22f164"
+      },
+      "ranges": [
+        {
+          "offset": 2224428,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c22f12c",
+          "address": "0x8c22f12c",
+          "size": 56
+        }
+      ],
+      "reference_sha256": "bf73c9fdd072fcbcbc873ce94efa01a076cebb8d9b7163f4a7990df9b28fdd28",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c22f164",
       "source": "src/objects/operation_8c22f164.c",
       "address": "0x8c22f164",
@@ -134919,6 +136109,37 @@
       ],
       "reference_sha256": "a266175bffeaea3672230b4fbf8d4ceb23cd93e35777d987e3cf9e3d276a5218",
       "boundary_review": "Referenced destructor entry and next entry confirmed;68-bytebody and16-bytepool reviewed. Shared base/release ABI identical. Child flag4 and pointer offset checked; preserve clear after flag request."
+    },
+    {
+      "id": "operation_8c23024c",
+      "source": "src/objects/operation_8c23024c.c",
+      "address": "0x8c23024c",
+      "entry": "_operation_8c23024c",
+      "symbols": {
+        "_call_8c1cc690": "0x8c1cc690",
+        "_operation_8c01c1a4": "0x8c01c1a4",
+        "_operation_8c0e9aac": "0x8c0e9aac",
+        "_operation_8c180ce0": "0x8c180ce0",
+        "_operation_8c181920": "0x8c181920",
+        "_operation_8c19b054": "0x8c19b054",
+        "_request_resource_release": "0x8c0dc7f4"
+      },
+      "ranges": [
+        {
+          "offset": 2228812,
+          "size": 184
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c23024c",
+          "address": "0x8c23024c",
+          "size": 184
+        }
+      ],
+      "reference_sha256": "87fef53312baaacb191ec1f2f3ba7805f4e2ca61160eff5b0db87ebfc3e4164d",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
       "id": "operation_8c230304",
@@ -135482,6 +136703,41 @@
         }
       ],
       "reference_sha256": "4a6f2bfaa81f8c68e64d1b2f59e4e2d292bc8a0ff206e7ed94d47c86427fa8d9",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c231f60",
+      "source": "src/objects/operation_8c231f60.c",
+      "address": "0x8c231f60",
+      "entry": "_operation_8c231f60",
+      "symbols": {
+        "_call_8c03f4bc": "0x8c03f4bc",
+        "_call_8c03f6cc": "0x8c03f6cc",
+        "_call_8c03f6d8": "0x8c03f6d8",
+        "_call_8c1003d0": "0x8c1003d0",
+        "_g_8c338c18": "0x8c338c18",
+        "_operation_8c01c1a4": "0x8c01c1a4",
+        "_select_mode10_8c1cc588": "0x8c1cc588",
+        "_select_mode18_8c1cc630": "0x8c1cc630",
+        "_select_mode19_8c1cc648": "0x8c1cc648",
+        "_select_mode23_8c1cc678": "0x8c1cc678",
+        "_select_mode4_8c1cc4f8": "0x8c1cc4f8"
+      },
+      "ranges": [
+        {
+          "offset": 2236256,
+          "size": 256
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c231f60",
+          "address": "0x8c231f60",
+          "size": 256
+        }
+      ],
+      "reference_sha256": "2665df6ecca518a6e4896f47a82f1ce3ec53ccde8e677925c0432440973c89b6",
       "headers": [],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -138056,6 +139312,34 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_8c23a6e0",
+      "source": "src/objects/operation_8c23a6e0.cpp",
+      "address": "0x8c23a6e0",
+      "entry": "_operation_8c23a6e0",
+      "symbols": {
+        "_call_8c1aaabc": "0x8c1aaabc",
+        "_operation_1abd98_8c1ac468": "0x8c1ac468",
+        "_operation_1ac120": "0x8c1ac120"
+      },
+      "ranges": [
+        {
+          "offset": 2270944,
+          "size": 224
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c23a6e0",
+          "address": "0x8c23a6e0",
+          "size": 224
+        }
+      ],
+      "reference_sha256": "87acc2ead23069c733330be6738fbf5525dab1a3ec749f5b2f273873b8bd1af0",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c23a7c0",
       "source": "src/objects/operation_8c23a7c0.c",
       "address": "0x8c23a7c0",
@@ -140270,6 +141554,33 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_8c23d938",
+      "source": "src/objects/operation_8c23d938.cpp",
+      "address": "0x8c23d938",
+      "entry": "_operation_8c23d938",
+      "symbols": {
+        "_lookup_low_id": "0x8c021ef8",
+        "_operation_8c0541b4": "0x8c0541b4"
+      },
+      "ranges": [
+        {
+          "offset": 2283832,
+          "size": 128
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c23d938",
+          "address": "0x8c23d938",
+          "size": 128
+        }
+      ],
+      "reference_sha256": "63e43ba6fbb58c3fa5d4eebd4c3bddc255a799c973d8624ec2d54df4fbe42bd7",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "create_object_8c23d9b8",
       "source": "src/objects/create_object_8c23d9b8.c",
       "address": "0x8c23d9b8",
@@ -141988,6 +143299,30 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_8c23f1b0",
+      "source": "src/objects/operation_8c23f1b0.cpp",
+      "address": "0x8c23f1b0",
+      "entry": "_operation_8c23f1b0",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2290096,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c23f1b0",
+          "address": "0x8c23f1b0",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "aa81d5d942fbeaf727822147450a4168afdf878318e575cb55f02b21c1d1ecb8",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c23f220",
       "source": "src/objects/operation_8c23f220.c",
       "address": "0x8c23f220",
@@ -142633,6 +143968,30 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_8c23fdc0",
+      "source": "src/objects/operation_8c23fdc0.cpp",
+      "address": "0x8c23fdc0",
+      "entry": "_operation_8c23fdc0",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2293184,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c23fdc0",
+          "address": "0x8c23fdc0",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "aa81d5d942fbeaf727822147450a4168afdf878318e575cb55f02b21c1d1ecb8",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c23fe30",
       "source": "src/objects/operation_8c23fe30.c",
       "address": "0x8c23fe30",
@@ -143240,6 +144599,35 @@
       ],
       "reference_sha256": "09c281cebc4935d44e59b73e8cadf175c072ef21e3efa4a183bcb06f0f2ded06",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_8c240b90",
+      "source": "src/objects/operation_8c240b90.cpp",
+      "address": "0x8c240b90",
+      "entry": "_operation_8c240b90",
+      "symbols": {
+        "_call_8c076af4": "0x8c076af4",
+        "_call_8c1aaabc": "0x8c1aaabc",
+        "_operation_1abd98_8c1ac468": "0x8c1ac468",
+        "_operation_1ac120": "0x8c1ac120"
+      },
+      "ranges": [
+        {
+          "offset": 2296720,
+          "size": 280
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c240b90",
+          "address": "0x8c240b90",
+          "size": 280
+        }
+      ],
+      "reference_sha256": "51570082388cdab7cf40bbcbdff29b5bc1b032f5fa31735bb1bcf9d207a6d221",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
       "id": "operation_8c240ca8",
@@ -144914,6 +146302,31 @@
         }
       ],
       "reference_sha256": "e50f9ecb80ee89510879a2176eebad40fed90f5505ee8d9e5b09dc5ba6479b6b",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c2476a8",
+      "source": "src/objects/operation_8c2476a8.c",
+      "address": "0x8c2476a8",
+      "entry": "_operation_8c2476a8",
+      "symbols": {
+        "_call_8c247730": "0x8c247730"
+      },
+      "ranges": [
+        {
+          "offset": 2324136,
+          "size": 64
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c2476a8",
+          "address": "0x8c2476a8",
+          "size": 64
+        }
+      ],
+      "reference_sha256": "209c324e93d1549e834d5ba5cff03da25d1970f0b38ed20dc9401834766437ea",
       "headers": [],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -148635,6 +150048,30 @@
       "boundary_review": "Complete non-address instruction/pool bytes equal the independently proved template; entry has catalog or aligned reference evidence, and adjacent raw entry reviewed. Retain all literal and natural padding bytes."
     },
     {
+      "id": "operation_8c24dae4",
+      "source": "src/objects/operation_8c24dae4.cpp",
+      "address": "0x8c24dae4",
+      "entry": "_operation_8c24dae4",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2349796,
+          "size": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c24dae4",
+          "address": "0x8c24dae4",
+          "size": 24
+        }
+      ],
+      "reference_sha256": "274dc8424ee129c7196ac6a48cd503360b4d7a39d3401c0cfceafee659d8da8b",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c24dafc",
       "source": "src/objects/operation_8c24dafc.c",
       "address": "0x8c24dafc",
@@ -150871,6 +152308,32 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c2512ec",
+      "source": "src/objects/operation_8c2512ec.cpp",
+      "address": "0x8c2512ec",
+      "entry": "_operation_8c2512ec",
+      "symbols": {
+        "_operation_8c241658": "0x8c241658"
+      },
+      "ranges": [
+        {
+          "offset": 2364140,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c2512ec",
+          "address": "0x8c2512ec",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "d59504187c71c85ab379849c958ee0379e3344d565ba3d3cd9120a1fb2b292c1",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "destroy_object_8c251368",
       "source": "src/effects/destroy_object_8c251368.c",
       "address": "0x8c251368",
@@ -152379,6 +153842,32 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_8c252dec",
+      "source": "src/objects/operation_8c252dec.cpp",
+      "address": "0x8c252dec",
+      "entry": "_operation_8c252dec",
+      "symbols": {
+        "_operation_8c241658": "0x8c241658"
+      },
+      "ranges": [
+        {
+          "offset": 2371052,
+          "size": 124
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c252dec",
+          "address": "0x8c252dec",
+          "size": 124
+        }
+      ],
+      "reference_sha256": "d59504187c71c85ab379849c958ee0379e3344d565ba3d3cd9120a1fb2b292c1",
+      "headers": [],
+      "language": "c++",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c252e68",
       "source": "src/objects/operation_8c252e68.c",
       "address": "0x8c252e68",
@@ -153509,6 +154998,30 @@
       ],
       "reference_sha256": "2cb0dc6d1cd84e17861e3ddfc26d1abfdfa7f547c8316f810834f5ca98bb1bec",
       "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c254278",
+      "source": "src/objects/operation_8c254278.cpp",
+      "address": "0x8c254278",
+      "entry": "_operation_8c254278",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 2376312,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c254278",
+          "address": "0x8c254278",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "aa81d5d942fbeaf727822147450a4168afdf878318e575cb55f02b21c1d1ecb8",
+      "headers": [],
+      "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -155220,6 +156733,31 @@
       "boundary_review": "Reviewed 15 entry points with independent catalog/reference evidence and adjacent valid prologues/leaves/returns. Source templates preserve field offsets, signed/unsigned widths, vector copies, guards, return behavior, one-argument free calls and allocation/initialization call order. Complete instructions/delays and natural padding match the proved template; only reviewed pool constants/addresses vary. ABI-uncertain wrappers excluded separately."
     },
     {
+      "id": "operation_8c256688",
+      "source": "src/objects/operation_8c256688.c",
+      "address": "0x8c256688",
+      "entry": "_operation_8c256688",
+      "symbols": {
+        "_operation_8c0ddc38": "0x8c0ddc38"
+      },
+      "ranges": [
+        {
+          "offset": 2385544,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c256688",
+          "address": "0x8c256688",
+          "size": 48
+        }
+      ],
+      "reference_sha256": "ee7624a60d38ef048a829cf88dc559a0f10434f620b9afb684ff42921184cfb9",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "destroy_object_8c2566b8",
       "source": "src/effects/destroy_object_8c2566b8.c",
       "address": "0x8c2566b8",
@@ -156833,6 +158371,32 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "operation_8c25adc8",
+      "source": "src/objects/operation_8c25adc8.c",
+      "address": "0x8c25adc8",
+      "entry": "_operation_8c25adc8",
+      "symbols": {
+        "_call_8c25ae24": "0x8c25ae24",
+        "_operation_8c25ae10": "0x8c25ae10"
+      },
+      "ranges": [
+        {
+          "offset": 2403784,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c25adc8",
+          "address": "0x8c25adc8",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "b0754e411af3ff415f5a77cca74ed4ce87326296abd2d8ae0140b6b0ab5daa01",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c25ae10",
       "source": "src/objects/operation_8c25ae10.c",
       "address": "0x8c25ae10",
@@ -157554,6 +159118,33 @@
       ],
       "reference_sha256": "92ccd8ce525bfcd53ef39d99a8602ee31613bc421513f96a5858b936c3f6cfcf",
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
+    },
+    {
+      "id": "operation_8c25d488",
+      "source": "src/objects/operation_8c25d488.c",
+      "address": "0x8c25d488",
+      "entry": "_operation_8c25d488",
+      "symbols": {
+        "_allocate_block": "0x8c122700",
+        "_call_8c18e8a0": "0x8c18e8a0",
+        "_call_8c25d634": "0x8c25d634"
+      },
+      "ranges": [
+        {
+          "offset": 2413704,
+          "size": 424
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c25d488",
+          "address": "0x8c25d488",
+          "size": 424
+        }
+      ],
+      "reference_sha256": "80f8d181fee5befd95d8ddad659d29e755da025a535d61537f29f4a9dae35a22",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
       "id": "operation_8c25d630",
@@ -158854,6 +160445,32 @@
         }
       ],
       "reference_sha256": "8d8df62abf914d7671e35176be18f0f5648e041076751d572962a9c75eb13e17",
+      "headers": [],
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c25f818",
+      "source": "src/objects/operation_8c25f818.c",
+      "address": "0x8c25f818",
+      "entry": "_operation_8c25f818",
+      "symbols": {
+        "_operation_8c25f860": "0x8c25f860",
+        "_operation_8c25f874": "0x8c25f874"
+      },
+      "ranges": [
+        {
+          "offset": 2422808,
+          "size": 72
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c25f818",
+          "address": "0x8c25f818",
+          "size": 72
+        }
+      ],
+      "reference_sha256": "e386982ea07dff656a9bb7a072bb35f14b875e8cf77638f9b3b92af986bcdcf5",
       "headers": [],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
