@@ -1,0 +1,21 @@
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+typedef struct S_g8c418248 S_g8c418248;
+extern int lookup_low_id(int);
+extern float squared_distance_xyz(void *, void *);
+int operation_8c1a1830(int a0, float f0)
+{
+    int t1;
+    float t2;
+    t1 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));
+    if (t1 != 0) {
+        t2 = squared_distance_xyz((void *)(t1 + 0x3c), (void *)(a0 + 0x3c));
+        if (f0 > t2) {
+            return 1;
+        }
+    }
+    return 0;
+}
