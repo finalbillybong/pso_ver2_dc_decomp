@@ -1,0 +1,20 @@
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+typedef struct S_L8c4db494 S_L8c4db494;
+struct S_L8c4db494 {
+    char unknown0[0x5];
+    char f05;
+};
+extern int g_8c286604;
+extern S_L8c4db494 g_8c4db494;
+void operation_8c16ff88(unsigned int a0)
+{
+    if ((unsigned int)1 >= a0) {
+        (&g_8c4db494)->f05 = *(int *)((char *)&g_8c286604 + (a0 << 2));
+        return;
+    }
+    (&g_8c4db494)->f05 = g_8c286604;
+}
