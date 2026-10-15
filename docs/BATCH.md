@@ -1,87 +1,72 @@
-# Reconstruction batch: 217: expanded candidate pool, part 21
+# Reconstruction batch: 218: expanded candidate pool, part 22
 
-72 new matching functions / 7,952 bytes. All 6369 prior functions preserved.
+57 new matching functions / 7,928 bytes. All 6441 prior functions preserved.
 
-6441 exact functions in 6357 modules; 473,388 compiled function-range bytes; 0 reconstructed data bytes; 3,689,524 retained reference bytes. Whole-image coverage 11.3716% is not code completion.
+6498 exact functions in 6414 modules; 481,316 compiled function-range bytes; 0 reconstructed data bytes; 3,681,596 retained reference bytes. Whole-image coverage 11.5620% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c0363a4 | 0x8c0363a4 | 108 |
-| operation_8c03ed70 | 0x8c03ed70 | 148 |
-| operation_8c03ee04 | 0x8c03ee04 | 76 |
-| operation_8c03ee50 | 0x8c03ee50 | 64 |
-| operation_8c03f6d8 | 0x8c03f6d8 | 12 |
-| operation_8c0400b0 | 0x8c0400b0 | 148 |
-| operation_8c04b21c | 0x8c04b21c | 20 |
-| operation_8c04b230 | 0x8c04b230 | 20 |
-| operation_8c051d5c | 0x8c051d5c | 44 |
-| operation_8c051d88 | 0x8c051d88 | 44 |
-| operation_8c05cd8c | 0x8c05cd8c | 180 |
-| operation_8c05d130 | 0x8c05d130 | 280 |
-| operation_8c066b00 | 0x8c066b00 | 148 |
-| operation_8c077488 | 0x8c077488 | 156 |
-| operation_8c07d5cc | 0x8c07d5cc | 144 |
-| operation_8c07e998 | 0x8c07e998 | 252 |
-| operation_8c08cb24 | 0x8c08cb24 | 228 |
-| operation_8c08cc38 | 0x8c08cc38 | 184 |
-| operation_8c08f270 | 0x8c08f270 | 192 |
-| operation_8c08f360 | 0x8c08f360 | 180 |
-| operation_8c09abf4 | 0x8c09abf4 | 120 |
-| operation_8c09cea0 | 0x8c09cea0 | 276 |
-| operation_8c0afdec | 0x8c0afdec | 128 |
-| operation_8c0c5774 | 0x8c0c5774 | 120 |
-| operation_8c0c5810 | 0x8c0c5810 | 120 |
-| operation_8c0cd3e8 | 0x8c0cd3e8 | 160 |
-| operation_8c0d4ec0 | 0x8c0d4ec0 | 64 |
-| operation_8c0de288 | 0x8c0de288 | 132 |
-| operation_8c0e1294 | 0x8c0e1294 | 72 |
-| operation_8c0e1bbc | 0x8c0e1bbc | 76 |
-| operation_8c0e6988 | 0x8c0e6988 | 48 |
-| operation_8c0e70b0 | 0x8c0e70b0 | 76 |
-| operation_8c0e8630 | 0x8c0e8630 | 76 |
-| operation_8c0ec120 | 0x8c0ec120 | 256 |
-| operation_8c0ecf78 | 0x8c0ecf78 | 264 |
-| operation_8c0f1a98 | 0x8c0f1a98 | 168 |
-| operation_8c0f3954 | 0x8c0f3954 | 28 |
-| operation_8c0f42a8 | 0x8c0f42a8 | 296 |
-| operation_8c0fc26c | 0x8c0fc26c | 152 |
-| operation_8c0fd718 | 0x8c0fd718 | 40 |
-| operation_8c1075c8 | 0x8c1075c8 | 68 |
-| operation_8c129408 | 0x8c129408 | 36 |
-| operation_8c129a30 | 0x8c129a30 | 24 |
-| operation_8c12adf8 | 0x8c12adf8 | 4 |
-| operation_8c12adfc | 0x8c12adfc | 4 |
-| operation_8c12ae04 | 0x8c12ae04 | 4 |
-| operation_8c137778 | 0x8c137778 | 348 |
-| operation_8c144594 | 0x8c144594 | 68 |
-| operation_8c14490c | 0x8c14490c | 16 |
-| operation_8c14ae60 | 0x8c14ae60 | 304 |
-| operation_8c151678 | 0x8c151678 | 92 |
-| operation_8c15945c | 0x8c15945c | 216 |
-| operation_8c159d78 | 0x8c159d78 | 92 |
-| operation_8c165910 | 0x8c165910 | 216 |
-| operation_8c16d03c | 0x8c16d03c | 52 |
-| operation_8c16d09c | 0x8c16d09c | 52 |
-| operation_8c16d1bc | 0x8c16d1bc | 52 |
-| operation_8c16d21c | 0x8c16d21c | 52 |
-| operation_8c16d5e0 | 0x8c16d5e0 | 184 |
-| operation_8c16ec90 | 0x8c16ec90 | 156 |
-| operation_8c16fed4 | 0x8c16fed4 | 36 |
-| operation_8c16fef8 | 0x8c16fef8 | 36 |
-| operation_8c16ff1c | 0x8c16ff1c | 36 |
-| operation_8c16ff40 | 0x8c16ff40 | 36 |
-| operation_8c16ff64 | 0x8c16ff64 | 36 |
-| operation_8c16ff88 | 0x8c16ff88 | 36 |
-| operation_8c16ffac | 0x8c16ffac | 36 |
-| operation_8c16ffd0 | 0x8c16ffd0 | 36 |
-| operation_8c16fff4 | 0x8c16fff4 | 36 |
-| operation_8c170018 | 0x8c170018 | 36 |
-| operation_8c170f38 | 0x8c170f38 | 168 |
-| operation_8c1722f4 | 0x8c1722f4 | 84 |
+| operation_8c172348 | 0x8c172348 | 88 |
+| operation_8c174184 | 0x8c174184 | 204 |
+| operation_8c179a10 | 0x8c179a10 | 120 |
+| operation_8c179ed4 | 0x8c179ed4 | 84 |
+| operation_8c17adb4 | 0x8c17adb4 | 88 |
+| operation_8c17b4b0 | 0x8c17b4b0 | 120 |
+| operation_8c17e108 | 0x8c17e108 | 140 |
+| operation_8c1876d8 | 0x8c1876d8 | 80 |
+| operation_8c18a97c | 0x8c18a97c | 96 |
+| operation_8c192738 | 0x8c192738 | 44 |
+| operation_8c192ffc | 0x8c192ffc | 164 |
+| operation_8c1a0010 | 0x8c1a0010 | 108 |
+| operation_8c1a38c4 | 0x8c1a38c4 | 128 |
+| operation_8c1a70d4 | 0x8c1a70d4 | 32 |
+| operation_8c1a7304 | 0x8c1a7304 | 140 |
+| operation_8c1a73c8 | 0x8c1a73c8 | 60 |
+| operation_8c1a7404 | 0x8c1a7404 | 64 |
+| operation_8c1a7444 | 0x8c1a7444 | 64 |
+| operation_8c1a7484 | 0x8c1a7484 | 100 |
+| operation_8c1bdd4c | 0x8c1bdd4c | 112 |
+| operation_8c1c1190 | 0x8c1c1190 | 12 |
+| operation_8c1c119c | 0x8c1c119c | 12 |
+| operation_8c1c1a08 | 0x8c1c1a08 | 96 |
+| operation_8c1d7ef0 | 0x8c1d7ef0 | 176 |
+| operation_8c1dccb4 | 0x8c1dccb4 | 316 |
+| operation_8c1dd454 | 0x8c1dd454 | 204 |
+| operation_8c1ddcb8 | 0x8c1ddcb8 | 332 |
+| operation_8c1de1d8 | 0x8c1de1d8 | 92 |
+| operation_8c1ecf70 | 0x8c1ecf70 | 112 |
+| operation_8c1f19a0 | 0x8c1f19a0 | 72 |
+| operation_8c207304 | 0x8c207304 | 84 |
+| operation_8c208704 | 0x8c208704 | 368 |
+| operation_8c208f8c | 0x8c208f8c | 236 |
+| operation_8c2097e4 | 0x8c2097e4 | 44 |
+| operation_8c220d04 | 0x8c220d04 | 104 |
+| operation_8c220e6c | 0x8c220e6c | 140 |
+| operation_8c221888 | 0x8c221888 | 156 |
+| operation_8c221924 | 0x8c221924 | 84 |
+| operation_8c221d2c | 0x8c221d2c | 84 |
+| operation_8c22529c | 0x8c22529c | 156 |
+| operation_8c2283d0 | 0x8c2283d0 | 240 |
+| operation_8c231d9c | 0x8c231d9c | 80 |
+| operation_8c234a0c | 0x8c234a0c | 316 |
+| operation_8c239c1c | 0x8c239c1c | 136 |
+| operation_8c23c204 | 0x8c23c204 | 104 |
+| operation_8c23ce80 | 0x8c23ce80 | 152 |
+| operation_8c2407b0 | 0x8c2407b0 | 88 |
+| operation_8c247dac | 0x8c247dac | 52 |
+| operation_8c24bdc4 | 0x8c24bdc4 | 136 |
+| operation_8c24c8b0 | 0x8c24c8b0 | 92 |
+| operation_8c24dbcc | 0x8c24dbcc | 80 |
+| operation_8c24f4f4 | 0x8c24f4f4 | 64 |
+| operation_8c24f810 | 0x8c24f810 | 64 |
+| operation_8c25a0ec | 0x8c25a0ec | 616 |
+| operation_8c25e254 | 0x8c25e254 | 248 |
+| operation_8c25f050 | 0x8c25f050 | 124 |
+| operation_8c25f3f4 | 0x8c25f3f4 | 420 |
 
 ## Method
 
-Batches 217 and 218 come from one generator cycle over every candidate still unmatched after batch 216. Batch 217 covers the units up to `0x8c1722f4` and batch 218 those after it.
+Batch 218 is the second part of the generator cycle of batch 217, a cycle over every candidate still unmatched after batch 216. Batch 217 covers the units up to `0x8c1722f4` and batch 218 those after it.
 
 The draft generator gained three groups of rules.
 
@@ -133,26 +118,17 @@ Before admission, the boundaries of every unit in both batches were checked:
 
 ## Measured attempts
 
-72 recorded attempts on 72 targets, all hypotheses and all exact. 72 units / 72 functions / 7,952 bytes were admitted after two independent reproductions each. All are unedited generated drafts.
-
-Two further exact drafts, `0x8c0c55f8` and `0x8c0c56d8`, were refused by the history guard as historically uncertain. They were not forced and remain blocked.
+57 recorded attempts on 57 targets, all hypotheses and all exact. 57 units / 57 functions / 7,928 bytes were admitted after two independent reproductions each. All are unedited generated drafts from the second pass.
 
 Disclosure:
 - Every admitted function was first found exact in a scratch comparison, as logged under `drafttest/`.
 - No admitted source was edited by hand.
 - **Hand probes in separate scratch copies of the generator.** They were used to learn source forms; the rules above came from them. Probed functions admitted in this batch, as generated drafts:
-  - `0x8c03ed70`: string-compare loop forms, disclosed in batch 216.
-  - `0x8c03ee04`: the inline compare helper with `char` and `unsigned char` parameters, in plain and extern form. The extern form was exact.
-  - `0x8c03ee50`: the narrow loop-test variable form, with and without a temporary for the compare result. Both were exact.
-  - `0x8c03f6d8`: an `int` return for a re-extended `char` load, which was exact.
-  - `0x8c077488`: `-=` in place of `+= -k`, which was exact.
-  - `0x8c08cc38`: an `int` callee parameter, which was exact.
-  - `0x8c0e1bbc`: seven pointer-step forms; `v--` and `v -= 1` were exact.
-  - `0x8c0e70b0`: `<=` and mirrored compare forms; the mirrored form was exact.
-- **Probes on targets not admitted:**
-  - `0x8c04bfa0` (6 loop forms, best 2 lines);
-  - `0x8c1a8224` (2 loop forms, 30 lines);
-  - `0x8c0b3b3c`, `0x8c01e180`, `0x8c21dcdc`, `0x8c191880`, `0x8c04a838`, `0x8c09dc30`, `0x8c013620`, `0x8c17b7e8`, `0x8c1c9a64`, `0x8c1302d4`, `0x8c21e328` and `0x8c12b000` (parameter, return, compare, switch and constant forms; none exact except `0x8c1c9a64` in the existing ternary mode).
+  - `0x8c192738`: an `int` return for a re-extended `unsigned short` load, which was exact.
+  - `0x8c1de1d8`: `!(x & 1)` and `(x & 1) == 0`; the first was exact.
+  - `0x8c23c204`: a nested member, a cast to the sub-object and a byte-offset form; the cast form was exact.
+
+  The other probes of this cycle are listed in batch 217.
 - No declaration orders were searched.
 - History-guarded targets stay blocked and were not forced.
 
