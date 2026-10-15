@@ -1,0 +1,81 @@
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+typedef struct Arg0_28 Arg0_28;
+typedef struct Arg0_38 Arg0_38;
+typedef struct Arg0_64 Arg0_64;
+typedef struct Arg0_f4 Arg0_f4;
+class Object;
+class Object {
+public:
+    char unknown0[0x18];
+    virtual void v0();
+    virtual void v1();
+    virtual void v2();
+    virtual void v3();
+    virtual void v4();
+    virtual void v5();
+    virtual void v6();
+    virtual void v7();
+    virtual void v8();
+    virtual void v9();
+    virtual void v10();
+    virtual void v11();
+    virtual int v12(float, float, float);
+};
+typedef struct ObjectData {
+    char unknown0[0x28];
+    Arg0_28 *f28;
+    char unknown2c[0xc];
+    Arg0_38 *f38;
+    char unknown3c[0x28];
+    Arg0_64 *f64;
+    char unknown68[0x80];
+    float fe8;
+    char unknownec[0x8];
+    Arg0_f4 *ff4;
+    float ff8;
+    float ffc;
+} ObjectData;
+extern "C" int call_8c0eeb00(Object *, float);
+extern "C" void call_8c38ae68(void);
+extern "C" void call_8c382a40(void *);
+extern "C" void call_8c37df90(int, void *);
+extern "C" void call_8c3827d8(void *);
+extern "C" void call_8c3addea(void *, void *, float);
+extern "C" void call_8c3ac53a(void *, float);
+extern "C" void call_8c3aa716(void *);
+extern "C" void call_8c3a944a(void *);
+extern "C" void call_8c38ad10(void);
+extern "C" void operation_8c0ee944(Object *o)
+{
+    int t1;
+    int t2;
+    t1 = o->v12(((ObjectData *)o)->ff8 * 0.5f, ((ObjectData *)o)->ff8, ((ObjectData *)o)->ffc);
+    if (t1 != 0) {
+        t2 = call_8c0eeb00(o, 30.0f);
+        if (t2 != 0) {
+            call_8c38ae68();
+            call_8c382a40((void *)(((char *)o + 0x3c)));
+            call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+            call_8c3827d8((void *)(((ObjectData *)o)->f28));
+            if (((ObjectData *)o)->ff4 != 0) {
+                if (t1 == 1) {
+                    call_8c3addea((void *)(((ObjectData *)o)->f38), (void *)(((ObjectData *)o)->ff4), ((ObjectData *)o)->fe8);
+                    goto L_8c0ee9e6;
+                }
+                call_8c3ac53a((void *)(((ObjectData *)o)->f38), ((ObjectData *)o)->fe8);
+            } else {
+                if (t1 == 1) {
+                    call_8c3aa716((void *)(((ObjectData *)o)->f38));
+                } else {
+                    call_8c3a944a((void *)(((ObjectData *)o)->f38));
+                }
+            }
+L_8c0ee9e6:;
+            call_8c38ad10();
+        }
+    }
+}
