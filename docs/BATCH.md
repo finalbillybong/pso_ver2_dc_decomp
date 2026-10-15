@@ -1,93 +1,92 @@
-# Reconstruction batch: 222: expanded candidate pool, part 26
+# Reconstruction batch: 223: expanded candidate pool, part 27
 
-78 new matching functions / 9,704 bytes. All 6695 prior functions preserved.
+77 new matching functions / 9,740 bytes. All 6773 prior functions preserved.
 
-6773 exact functions in 6689 modules; 520,464 compiled function-range bytes; 0 reconstructed data bytes; 3,642,448 retained reference bytes. Whole-image coverage 12.5024% is not code completion.
+6850 exact functions in 6766 modules; 530,204 compiled function-range bytes; 0 reconstructed data bytes; 3,632,708 retained reference bytes. Whole-image coverage 12.7364% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c1a9de4 | 0x8c1a9de4 | 172 |
-| operation_8c1a9e9c | 0x8c1a9e9c | 40 |
-| operation_8c1aa9c4 | 0x8c1aa9c4 | 24 |
-| operation_8c1ab2c8 | 0x8c1ab2c8 | 92 |
-| operation_8c1ab894 | 0x8c1ab894 | 84 |
-| operation_8c1ad8d8 | 0x8c1ad8d8 | 116 |
-| operation_8c1add7c | 0x8c1add7c | 216 |
-| operation_8c1b06e4 | 0x8c1b06e4 | 52 |
-| operation_8c1b09e8 | 0x8c1b09e8 | 96 |
-| operation_8c1b0ab8 | 0x8c1b0ab8 | 88 |
-| operation_8c1b1f64 | 0x8c1b1f64 | 36 |
-| operation_8c1b6910 | 0x8c1b6910 | 216 |
-| operation_8c1b6d74 | 0x8c1b6d74 | 56 |
-| operation_8c1b8d10 | 0x8c1b8d10 | 136 |
-| operation_8c1bde04 | 0x8c1bde04 | 44 |
-| operation_8c1bdea4 | 0x8c1bdea4 | 44 |
-| operation_8c1bdedc | 0x8c1bdedc | 64 |
-| operation_8c1be230 | 0x8c1be230 | 88 |
-| operation_8c1be4d0 | 0x8c1be4d0 | 112 |
-| operation_8c1c16dc | 0x8c1c16dc | 188 |
-| operation_8c1c29ac | 0x8c1c29ac | 168 |
-| operation_8c1c3edc | 0x8c1c3edc | 252 |
-| operation_8c1c4318 | 0x8c1c4318 | 140 |
-| operation_8c1c4534 | 0x8c1c4534 | 64 |
-| operation_8c1c4574 | 0x8c1c4574 | 80 |
-| operation_8c1c5890 | 0x8c1c5890 | 180 |
-| operation_8c1c5944 | 0x8c1c5944 | 196 |
-| operation_8c1c5c5c | 0x8c1c5c5c | 92 |
-| operation_8c1ca088 | 0x8c1ca088 | 192 |
-| operation_8c1ca7e8 | 0x8c1ca7e8 | 168 |
-| operation_8c1cc690 | 0x8c1cc690 | 80 |
-| operation_8c1cd0bc | 0x8c1cd0bc | 172 |
-| operation_8c1cd774 | 0x8c1cd774 | 84 |
-| operation_8c1d4364 | 0x8c1d4364 | 152 |
-| operation_8c1d4f84 | 0x8c1d4f84 | 48 |
-| operation_8c1d586c | 0x8c1d586c | 56 |
-| operation_8c1d5b08 | 0x8c1d5b08 | 28 |
-| operation_8c1d5b24 | 0x8c1d5b24 | 192 |
-| operation_8c1d5d80 | 0x8c1d5d80 | 80 |
-| operation_8c1d7840 | 0x8c1d7840 | 100 |
-| operation_8c1d84c0 | 0x8c1d84c0 | 184 |
-| operation_8c1d8b3c | 0x8c1d8b3c | 140 |
-| operation_8c1d8c98 | 0x8c1d8c98 | 140 |
-| operation_8c1d927c | 0x8c1d927c | 72 |
-| operation_8c1dd718 | 0x8c1dd718 | 352 |
-| operation_8c1e5b78 | 0x8c1e5b78 | 120 |
-| operation_8c1e5cbc | 0x8c1e5cbc | 68 |
-| operation_8c1e615c | 0x8c1e615c | 96 |
-| operation_8c1e63c0 | 0x8c1e63c0 | 96 |
-| operation_8c1e6690 | 0x8c1e6690 | 268 |
-| operation_8c1e6c74 | 0x8c1e6c74 | 108 |
-| operation_8c1e7d84 | 0x8c1e7d84 | 148 |
-| operation_8c1e8670 | 0x8c1e8670 | 280 |
-| operation_8c1e8788 | 0x8c1e8788 | 240 |
-| operation_8c1edc0c | 0x8c1edc0c | 76 |
-| operation_8c1f0164 | 0x8c1f0164 | 60 |
-| operation_8c1f1034 | 0x8c1f1034 | 148 |
-| operation_8c1f10cc | 0x8c1f10cc | 72 |
-| operation_8c1f1ed8 | 0x8c1f1ed8 | 212 |
-| operation_8c1f2528 | 0x8c1f2528 | 260 |
-| operation_8c206cc0 | 0x8c206cc0 | 204 |
-| operation_8c20866c | 0x8c20866c | 152 |
-| operation_8c20893c | 0x8c20893c | 112 |
-| operation_8c208f28 | 0x8c208f28 | 100 |
-| operation_8c20918c | 0x8c20918c | 112 |
-| operation_8c209730 | 0x8c209730 | 64 |
-| operation_8c20a54c | 0x8c20a54c | 112 |
-| operation_8c20b160 | 0x8c20b160 | 24 |
-| operation_8c2150d0 | 0x8c2150d0 | 184 |
-| operation_8c21597c | 0x8c21597c | 216 |
-| operation_8c215ab8 | 0x8c215ab8 | 72 |
-| operation_8c219834 | 0x8c219834 | 180 |
-| operation_8c21d510 | 0x8c21d510 | 136 |
-| operation_8c21e090 | 0x8c21e090 | 92 |
-| operation_8c21e0ec | 0x8c21e0ec | 92 |
-| operation_8c21ec3c | 0x8c21ec3c | 84 |
-| operation_8c220130 | 0x8c220130 | 60 |
-| operation_8c220728 | 0x8c220728 | 80 |
+| operation_8c220778 | 0x8c220778 | 128 |
+| operation_8c2208a4 | 0x8c2208a4 | 124 |
+| operation_8c222c20 | 0x8c222c20 | 204 |
+| operation_8c222cec | 0x8c222cec | 356 |
+| operation_8c2233f0 | 0x8c2233f0 | 52 |
+| operation_8c224538 | 0x8c224538 | 196 |
+| operation_8c2247bc | 0x8c2247bc | 276 |
+| operation_8c224ad4 | 0x8c224ad4 | 96 |
+| operation_8c22575c | 0x8c22575c | 228 |
+| operation_8c225b2c | 0x8c225b2c | 68 |
+| operation_8c226528 | 0x8c226528 | 164 |
+| operation_8c22bd14 | 0x8c22bd14 | 80 |
+| operation_8c22bd64 | 0x8c22bd64 | 72 |
+| operation_8c22de98 | 0x8c22de98 | 304 |
+| operation_8c22e47c | 0x8c22e47c | 128 |
+| operation_8c22e6ec | 0x8c22e6ec | 160 |
+| operation_8c22e7c8 | 0x8c22e7c8 | 144 |
+| operation_8c22e8e4 | 0x8c22e8e4 | 108 |
+| operation_8c22f004 | 0x8c22f004 | 192 |
+| operation_8c230308 | 0x8c230308 | 272 |
+| operation_8c231df0 | 0x8c231df0 | 80 |
+| operation_8c23231c | 0x8c23231c | 132 |
+| operation_8c232414 | 0x8c232414 | 76 |
+| operation_8c2356f0 | 0x8c2356f0 | 160 |
+| operation_8c237bd0 | 0x8c237bd0 | 80 |
+| operation_8c2386c4 | 0x8c2386c4 | 36 |
+| operation_8c238ec0 | 0x8c238ec0 | 44 |
+| operation_8c23b3f0 | 0x8c23b3f0 | 60 |
+| operation_8c23bf90 | 0x8c23bf90 | 160 |
+| operation_8c23c9ec | 0x8c23c9ec | 124 |
+| operation_8c23cbdc | 0x8c23cbdc | 128 |
+| operation_8c23ec8c | 0x8c23ec8c | 64 |
+| operation_8c23ee08 | 0x8c23ee08 | 68 |
+| operation_8c23f890 | 0x8c23f890 | 92 |
+| operation_8c2421b8 | 0x8c2421b8 | 60 |
+| operation_8c242678 | 0x8c242678 | 40 |
+| operation_8c24323c | 0x8c24323c | 100 |
+| operation_8c243a9c | 0x8c243a9c | 208 |
+| operation_8c24407c | 0x8c24407c | 40 |
+| operation_8c245d6c | 0x8c245d6c | 172 |
+| operation_8c2475cc | 0x8c2475cc | 44 |
+| operation_8c247d48 | 0x8c247d48 | 72 |
+| operation_8c248220 | 0x8c248220 | 68 |
+| operation_8c248314 | 0x8c248314 | 56 |
+| operation_8c2485b4 | 0x8c2485b4 | 64 |
+| operation_8c2492e8 | 0x8c2492e8 | 132 |
+| operation_8c2498b4 | 0x8c2498b4 | 200 |
+| operation_8c24b130 | 0x8c24b130 | 180 |
+| operation_8c24bc2c | 0x8c24bc2c | 188 |
+| operation_8c24bce8 | 0x8c24bce8 | 196 |
+| operation_8c24cd90 | 0x8c24cd90 | 112 |
+| operation_8c24ce00 | 0x8c24ce00 | 112 |
+| operation_8c24ce70 | 0x8c24ce70 | 112 |
+| operation_8c25062c | 0x8c25062c | 112 |
+| operation_8c2518e8 | 0x8c2518e8 | 92 |
+| operation_8c25292c | 0x8c25292c | 56 |
+| operation_8c256198 | 0x8c256198 | 100 |
+| operation_8c257910 | 0x8c257910 | 320 |
+| operation_8c259240 | 0x8c259240 | 160 |
+| operation_8c259a94 | 0x8c259a94 | 144 |
+| operation_8c25a354 | 0x8c25a354 | 296 |
+| operation_8c25a47c | 0x8c25a47c | 276 |
+| operation_8c25b150 | 0x8c25b150 | 92 |
+| operation_8c25b830 | 0x8c25b830 | 144 |
+| operation_8c25c664 | 0x8c25c664 | 68 |
+| operation_8c25dad0 | 0x8c25dad0 | 104 |
+| operation_8c25decc | 0x8c25decc | 128 |
+| operation_8c25e4e4 | 0x8c25e4e4 | 92 |
+| operation_8c25eadc | 0x8c25eadc | 80 |
+| operation_8c25ed88 | 0x8c25ed88 | 36 |
+| operation_8c25edac | 0x8c25edac | 92 |
+| operation_8c25ee08 | 0x8c25ee08 | 36 |
+| operation_8c25ee58 | 0x8c25ee58 | 80 |
+| operation_8c25f290 | 0x8c25f290 | 60 |
+| operation_8c25f6f8 | 0x8c25f6f8 | 92 |
+| operation_8c25fba0 | 0x8c25fba0 | 60 |
+| operation_8c2602c0 | 0x8c2602c0 | 208 |
 
 ## Method
 
-Batches 219–223 come from one generator cycle over every candidate still unmatched after batch 218 (5,582). This is batch 222; the batches split the admitted units by address. The draft generator gained rules for drafts that differed from the reference in 5–10 lines.
+Batches 219–223 come from one generator cycle over every candidate still unmatched after batch 218 (5,582). This is batch 223; the batches split the admitted units by address. The draft generator gained rules for drafts that differed from the reference in 5–10 lines.
 
 **Updates and arithmetic:**
 - A stored update whose new value is tested or passed on at once becomes a pre-decrement or pre-increment in the test or argument.
@@ -140,19 +139,22 @@ Before admission, the boundaries of every unit in the five batches were checked:
 
 ## Measured attempts
 
-78 recorded attempts on 78 targets, all hypotheses and all exact. 78 units / 78 functions / 9,704 bytes were admitted after two independent reproductions each. All are unedited generated drafts.
+77 recorded attempts on 77 targets, all hypotheses and all exact. 77 units / 77 functions / 9,740 bytes were admitted after two independent reproductions each. All are unedited generated drafts.
 
 Disclosure:
 - Every admitted function was first found exact in a scratch comparison, as logged under `drafttest/`.
 - No admitted source was edited by hand.
 - **Hand probes in a separate scratch copy of the generator.** They were used to learn source forms; the rules above came from them. Probed functions admitted in this batch, as generated drafts:
-  - `0x8c1ab894`: the unsigned-to-float idiom as a cast, alone and with the call inline; both were exact.
-  - `0x8c1bde04`: a join variable initialised before the test, which was exact.
-  - `0x8c1c29ac`: an early return with an inlined call in an `||` test, which was exact.
-  - `0x8c1edc0c`: an address argument folded, through the sub-object and through an `int` sum; the last two were exact.
+  - `0x8c225b2c`: a float field scaled with `*=`, which was exact.
+  - `0x8c2421b8`: five early-return shapes; one three-term `||` return was exact.
+  - `0x8c242678`: a switch with an empty case, and the same with a returning case; the first was exact.
+  - `0x8c24cd90`: a compare written with the global first, which was exact.
+  - `0x8c25c664`: eight early-return forms; the `||` and negated `&&` forms were exact.
+  - `0x8c25ed88`: a callee-saved base plus a constant as a pointer local, in two pointer types; both were exact.
 - The probes on targets not admitted are listed in batch 219.
 - No declaration orders were searched.
 - History-guarded targets stay blocked and were not forced.
+- The first integration of this batch stopped after three reproductions (two of `0x8c220778` and one of `0x8c2208a4`, all exact) because another process wrote the history file at the same time. Those reproductions stay in the history, and integration was rerun alone, so these two functions have extra reproduction records.
 
 Signatures are provisional. Parameter and return types come from the instruction shape and literal use; they are not confirmed against callers. Identifiers are mechanical.
 
