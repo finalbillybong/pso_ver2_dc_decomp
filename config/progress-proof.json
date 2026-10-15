@@ -10,7 +10,7 @@
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "60715006ced4f19e6944b1bfea9d0cec558c22d5e10dadaf8c11155a363226d2",
+    "config/project.json": "d90ef037de6cec39ec4a3ee935cc9a8ed43a659d343c7ba8f911c4f931282c4d",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/effects/actor_mode_noop.c": "091e6fbf33d49b3ac1981b122742334eb3466776c1dbc6f65de3c8d221490738",
@@ -3657,6 +3657,7 @@
     "src/objects/operation_8c129328.c": "8f3efc7a994ec9b4f13ba7cc18c87f03d4f4696c8f193ab6cacabb8ed3943085",
     "src/objects/operation_8c1293c4.c": "f2901258b536120d3e3481b2c218707bb4b1030b595a94536b7b21da4337c9ec",
     "src/objects/operation_8c129408.cpp": "b80af42dc55c694a7cc1050e0368b34cece98a71175041680fc0ca7f524af4e4",
+    "src/objects/operation_8c1296f4.c": "92c9040b4316b47c82869b67b8ff1a094aa627f1cc373a9de15cb73761fb43bd",
     "src/objects/operation_8c129a08.c": "a58c4a9fe9f12638f1c5577c03ab8ee65059c77620b6ad437e04a0f7a2021686",
     "src/objects/operation_8c129a30.cpp": "96eb19f63b35eb42f1ccac5936bac53b2df9c8dab4d6ebf0e5977e83aa613d5f",
     "src/objects/operation_8c12adf4.c": "4afa47f1b421eb35e03eadfd89d5e4c8a50526f2ecce274b7544c55b13d153e6",
@@ -3676,12 +3677,14 @@
     "src/objects/operation_8c130e18.c": "942eb14b0ecd9cdcbc6fd0ecdd3cac54f7f9adc694e456589bcb84343308eb69",
     "src/objects/operation_8c130e1c.c": "f7351406c1e7aa8e7d8651fb7aadf4b9e61eac678dc9c327b53ec653e1570ae7",
     "src/objects/operation_8c1316bc.c": "c1765a178e96cf855e00943a97851d7a31cd3705fd0ccc0ee4dff542bedfca2e",
+    "src/objects/operation_8c131c90.c": "8822c375dd5bfa2e669f44d8f97ccb2e8eed4c5b811c479ba2416c7470078716",
     "src/objects/operation_8c131de4.c": "1543dad3a026d5636d007575cb504c930049e8879948d46d68febfab63d0f2d2",
     "src/objects/operation_8c132304.c": "1314c9ac77a411744ae6c9759f1bd7df2d39554a6de98416900c4ab2ff8c51c9",
     "src/objects/operation_8c132540.c": "8a6d2ab0ffef869026b7f1ce44d3d233d4c2755cdc88bcbde48ead0ee91147b5",
     "src/objects/operation_8c132598.c": "1db8ae14b6372f0d54871bf7ddfcf0a2382ced260266689461c4b3dc90317f46",
     "src/objects/operation_8c132674.c": "b510a6dcdaf86e7fb2e766b6b0c31d3f2dab7cc27dbcdd405a42e518855caaaf",
     "src/objects/operation_8c13375c.c": "5f2afd8883af42b11314ad88a40e475e2a4879e6f502a03c581dbd2222f4f651",
+    "src/objects/operation_8c134648.c": "fb7d3b711579434ccb8e8f2dce20a121d9e06fc68b99464724c09d4ab96750c2",
     "src/objects/operation_8c134a54.c": "f0602df80fb69bb3b65568946478b87aad968867a4a7d9bae3a9baf0e51fe83c",
     "src/objects/operation_8c134aac.c": "dbceb5cdcacab66cac34796b24b8d4636e3731f00c164faa9f6456a9af2a209b",
     "src/objects/operation_8c134b88.c": "9ea5d8b0369a829c3784ea080bce3e58907b0c84dc15cc73d6e53a90cb10a454",
@@ -3715,19 +3718,25 @@
     "src/objects/operation_8c136730.c": "aeddcc5305fd8c0ebcf8eb7646ab8306f3a5ab5ddb79d20b511998ba8ece231c",
     "src/objects/operation_8c136734.c": "48846039aa7ce15f4b66c8106ed800fd41320219fa95d50e37565270fd13fe0b",
     "src/objects/operation_8c136834.c": "d8978b0f65246ae1107fdd7209318c1d07e0858729240f8f4d7ab716c61cfad7",
+    "src/objects/operation_8c1368e4.c": "e8ade7d7cc604ee9ab9d82141b5905c3f9985858b93b58c36d5cb21ddd71cddc",
     "src/objects/operation_8c136954.c": "b4f191ec383994e5ec657b3aef86d8d799bd252d1bb1948800688c24ded37596",
     "src/objects/operation_8c136c58.c": "dc99839e3ca278251887d2ae0bc990826b28df57f8bda3a41c40feac8c5b03e4",
+    "src/objects/operation_8c136d50.c": "ff3a834054852afad167fdc119fdf9c51726126b4eb341140d33dffb2c02137b",
     "src/objects/operation_8c136f48.c": "dba6217f0b23cf78b548be1924b39e0f39fc59db25a0cc8ac4f401ce92a901ad",
+    "src/objects/operation_8c1371d4.c": "465fc0cce66afa1d63eef9bb6edcce0ba9373f51206d16cc25a1052b222ca657",
     "src/objects/operation_8c137778.cpp": "db571f543daafb146d2346e14a0cd47fe7d6e9cde568d6a56000f783dbbe6989",
     "src/objects/operation_8c137998.c": "ce62a0490cc7bb44c4190ad06fe79acf8d2a59e9daae2dcf40c5a526cfc7265c",
+    "src/objects/operation_8c137ae8.c": "d4ebabf2c76a32ada613765eb0b00fa85966751a1333892ab38c5befffe89603",
     "src/objects/operation_8c137c3c.c": "bf3a07a26680680e39247f454723bba840c830fc226fe000c8130713d5c1e71c",
     "src/objects/operation_8c137d18.c": "a36be629f29b594400561db233edd48f8bd1b63f6dbfedae461c538b1a060110",
     "src/objects/operation_8c137e08.c": "facfaf50a9c9042da63cc6266cb0153e6047fd92014862ad25293d3dd921d606",
     "src/objects/operation_8c137ea0.c": "b096845be4c7216554143164e55be0d0cf6167ea2343dfe11cbdc162fb2de5a6",
+    "src/objects/operation_8c1399fc.cpp": "5c8235aafd782866cece51503ac4d9b11c6c7297420d0cbcea69343a9552e853",
     "src/objects/operation_8c139d9c.c": "2bca60de6513b6e8baa4e3aef2f5335dc3fb7da55c68f216b3b0347683e273fa",
     "src/objects/operation_8c139e6c.c": "3e966550e4e4321e686baa63abc5ab89c1344652bbcbe78f091e7197d829aa83",
     "src/objects/operation_8c139f10.c": "23710a0ab33ce18079e947ec6ca2ce8a5668e228ec7879e2feacbf855c1e265e",
     "src/objects/operation_8c139fac.c": "dcadc7c4e7f3c8f38c571323918e3cfe723e69f559ac504787a38bb403f758f4",
+    "src/objects/operation_8c13a3f0.c": "95d455557a2a7beb0156b69596aa5d8cc3ee50b8a1111c3968b6ed6393f80b42",
     "src/objects/operation_8c13a418.c": "1d832da3bce41de47b6c76d9201cb39128b025c1c6fabed62fe23ef2dd2b61e1",
     "src/objects/operation_8c13a93c.c": "d84b8c19f69228a031e44b47f25042a96632ccc7a3f6050bbad5bd651782882f",
     "src/objects/operation_8c13a99c.c": "3dbdeffd8d99cc74969739adab67f4c899e7a0bce95451a0c2df04d6dc5aa2e9",
@@ -3739,6 +3748,7 @@
     "src/objects/operation_8c13c438.c": "6f558dc1fa22ac0bcd684ed6d7d1eb3fa173901c43f1529a3df897d0c36a6154",
     "src/objects/operation_8c13c604.c": "03646bda204763040c43dc405d6c06e319ca8c9005df462f8207ec7290d9dc92",
     "src/objects/operation_8c13c694.c": "de5ec67dab02fed83282977e305d8c2fd00e27c24d06689a25b65927ff37bd00",
+    "src/objects/operation_8c13c698.cpp": "3952787fee8f1c1027d85778bce3847abe06a09be637caddaf2c58ff0180099f",
     "src/objects/operation_8c13d420.c": "eb538de1cdffe0030291cb384f44544d9b44df5f7fb107087fa748c0f0ce09e3",
     "src/objects/operation_8c13d46c.c": "736dc198cd77221d520fd4e19244ce75c2fef20cb094b8ef40d29d20de8b2b62",
     "src/objects/operation_8c13dd74.c": "6fc7ded2255aff993bb9b1d43639654d97a4a9297437e8718ffb7a4a2f3f3168",
@@ -3756,11 +3766,15 @@
     "src/objects/operation_8c13ec8c.c": "c64ce5eaa4b2c9589bb97bfd422f656fb78f67ff1d553f758598b6e037bb46b7",
     "src/objects/operation_8c13ef08.c": "c9ea4adfa0f97ebd30b85e18b822f6e9db18bc4d39aa225347f801b9d0de8de9",
     "src/objects/operation_8c13ef3c.c": "9005e03e0dbc7262cf496ea19a8149c74c605cbf2cc01f6da76ab5e203f17498",
+    "src/objects/operation_8c13f0ac.c": "190982f5ba5879e90e5e22aa638e8dd5a970518b524e33ae3a69d46bddc6c7d4",
     "src/objects/operation_8c13f1cc.c": "c894bb89aa55c09c412ae26ebc9dea672e179cb334ecf378d8e124236de0fe97",
     "src/objects/operation_8c13f428.c": "abb013146677232671757dcf4cdacced23879f2016105b52af55b26aa6a5a476",
     "src/objects/operation_8c13f504.c": "3ce5db760891b881647e73e6771fd956647193e156788b194a721cec5beaa6c9",
     "src/objects/operation_8c13f65c.c": "a1215b04fd97669fb14955d2074b5d8c108d58f79994a473317a4df9cb3df016",
+    "src/objects/operation_8c13f81c.c": "370ad2a9317b9d0d94089087bb3d1257cd4727c76050324654a9f69e9a4de145",
     "src/objects/operation_8c13f874.c": "6e49162392f994c66e8ca3a52c4b37b0f65d9cd01165c07500c91dcbd4ec792f",
+    "src/objects/operation_8c13f8e0.c": "8b6e321a225776d69d475424cae165081333a2cfd96df2a8f50179a1fc8eba7a",
+    "src/objects/operation_8c13fa28.c": "abe1e6dc18dcb9d7f847bcafeca0491d447c60e2bca49b49a96cad4014617efe",
     "src/objects/operation_8c13fe54.c": "05b2ab6758cf8e30474fb5b15d451086c051c07cb5bad36c84f03a2c95d55b46",
     "src/objects/operation_8c13fe90.c": "5f510e98ba1573e459c85a5ec36a637580c6b194957af6da17dd157ebbd67201",
     "src/objects/operation_8c1407e4.c": "e2e5b1adf79cbb8cf7d7dee9e4eb8d05f4817703c0302c45b1e6af2df62b4c8c",
@@ -3778,6 +3792,7 @@
     "src/objects/operation_8c1424d8.c": "c8c06c85bfc5d1d7a7918a93dbdb500efb32801ea7618e20e725a75a299634f3",
     "src/objects/operation_8c1424dc.c": "a0eefe2b84320dbe35013840964db2a24d97052ff2992ac7f44e1c7287aff746",
     "src/objects/operation_8c143048.c": "cfc8f416aab49fdee30866c84a772a70a202d3e01f5126af632c5f046b5adea4",
+    "src/objects/operation_8c1430e0.c": "9440c6c975f851d969472b6d9e2e1c13f4253a405ae536737ca13f46263dc217",
     "src/objects/operation_8c1434d0.c": "04e5875ee567681e3ec012cbde4c8315b54fc31233ae6cb44daf95eb5a1f2110",
     "src/objects/operation_8c144594.cpp": "00c0dc594b7b18920305dd489b7854cd48286970d11b74bc791ecfa3259b6e3a",
     "src/objects/operation_8c144698.c": "20bb0071f7aa9725cab4f02944093cfdfedf7f24fd3b1430201d3b08bd9cbb9c",
@@ -3786,6 +3801,7 @@
     "src/objects/operation_8c144938.c": "4c6ba0c165a3ddb971a80bf3ef274c56c4c3efcb9b3c2cbbabc94f92549a3722",
     "src/objects/operation_8c144bf8.c": "100f583b9597c8b8dcbd26952ccc441627e63852e56c5353fc695f2f44be53c6",
     "src/objects/operation_8c144c60.c": "33f2f1a4dadb05a459cb5f6e652675a2f991edbb6d0aa1d4297095affa76cc2a",
+    "src/objects/operation_8c145184.c": "372fbe8374340b631088112601db68c9b92a4522036d270ef0e0cc11382a94f9",
     "src/objects/operation_8c1452f8.c": "9d3fdd92905924e0ffb976f22b971b2e1507c97fa99d7312ca3985e87f24f0eb",
     "src/objects/operation_8c145304.c": "06dd06a702a6ab66d32da4c235060701be797bf7891a8c8e6baa4fc15dfdfb98",
     "src/objects/operation_8c1456a8.c": "4f883e3a373f0026811442556098e1fc778ac62abe887c23cb767b8e0384eb68",
@@ -3845,9 +3861,14 @@
     "src/objects/operation_8c1571f4.c": "6641f59b4ac4aaf1c03b8338fe51e6f80cfb7cbfa91b85d49049ee59797ce985",
     "src/objects/operation_8c157554.c": "d58387e604fddef0fd3240a591f6bb5fc1b5784a7097b92bef858c0c31ed8937",
     "src/objects/operation_8c1575ac.c": "c2c80f4e4c25b1a5a4f3970135a1a236619cc4cefda32eb950f91f8abbae73fc",
+    "src/objects/operation_8c15761c.c": "5b2fb642f96ccb3f6b7808ce232ccfc5efffbe54a47c17a2b402786bfea583af",
     "src/objects/operation_8c157690.c": "578c67087ec54732bacd269aa11b7135e5c08cc4261e70705d4b37002d38e8a3",
     "src/objects/operation_8c1577b0.c": "739fed24c7b38959b4b976e37c03ae1032d5250121eb469b34d13514d825d046",
     "src/objects/operation_8c157810.c": "c156c7964e3c8a6cf4d9c1e998bbdf0265fd7d6affa83614e35a467a23de0eea",
+    "src/objects/operation_8c1578e8.c": "456faf14153b2e8876d12a6b12d6cfe3242a0c1eb57158b4a5f5cfe6885d4dd4",
+    "src/objects/operation_8c157950.c": "075c0ec6759fabec0775c26cdd3923facbf82cc7ef5611278e261c9ac374f8fb",
+    "src/objects/operation_8c157dd4.c": "cb2f35e6b24f96153136364066a9af1d36d05bde9b2f0203a7b51a2bc2dfa9aa",
+    "src/objects/operation_8c157fa8.c": "f6d9b3e6c2f81e9f953c8f0e5ce754e4bd16b443e41988e440dcd579b07b7d35",
     "src/objects/operation_8c157ff0.c": "5ccbdcb6a626485a2a01d97b446974348ee59fa4e21c1b10783ed5fe38ecd20f",
     "src/objects/operation_8c158088.c": "9067574dfb31263f323f712cfa83a908ff1b9720df786b9ebc8e2c8fca042a9a",
     "src/objects/operation_8c1580b0.c": "871424cf9d6716663afab26eb25904be18560a2ec484bdbf9f207d422e4f5b2c",
@@ -3857,13 +3878,16 @@
     "src/objects/operation_8c15842c.c": "5324f13be4eff112f9814e375a469d886b55961092819be08be827c2de68fc56",
     "src/objects/operation_8c158520.c": "f3d827947b4d3f8dd22eeaaf9f378bf2ff564e8b2d2cee7f6da557e6c4083e88",
     "src/objects/operation_8c158548.c": "2030f91882c38032a1b84944dacd64d52da781e5bfda0ca9aa0db6927aacddc6",
+    "src/objects/operation_8c158980.c": "cd150818c174ec1da0477c00e995ff7535d50e3d0b95e12ed6efd8288629326f",
     "src/objects/operation_8c158aa0.c": "ab6f564c5df6037130bf1414a12cc4e62ed0cfa3a9dc76d0c16ec099fdee8624",
     "src/objects/operation_8c158b8c.c": "ee023ae7d66ff16b90c3ffedf2d3c290e8e08d0d398c0487b6ece7ecc9f41a4e",
     "src/objects/operation_8c159080.c": "2d987c898c41fdc61ddc71f7d7fa60ab02472c5f9bcd5404eed0ac658a6edd44",
     "src/objects/operation_8c15913c.c": "8fb47fbafcd0e21e06e2767b46ce366aec13bfa2d74b3c23d68fed31ad2d5b6a",
     "src/objects/operation_8c1591d4.cpp": "34fe7d888dd5712d1ab05773bf1cfa1299e78009a7a27158d7f9d9a25dcad98d",
     "src/objects/operation_8c15921c.c": "35dfa600d957a4f0cedcbd7b1e6f508c14ad759478c911144c9016a59ea38436",
+    "src/objects/operation_8c1593f0.c": "c89ac734bb582aa7779045520e8f496867f421e3f972f0db5c05ad1e96e9c79e",
     "src/objects/operation_8c15945c.c": "f2bde7400270b2aba3d8cb71322db56520fe6499379ce58585996ec70f09c811",
+    "src/objects/operation_8c159534.c": "bc9318b25415a473e2ee928faeb2d4efc62e1feeed3dac006ee2dbbc9fdf6d59",
     "src/objects/operation_8c1595a4.c": "6f36046c5910924c3725e0fd089fc92ebcbcf7dcb4c720e74ef3ca5fa116d1b1",
     "src/objects/operation_8c159608.c": "ed9c86e382eb797855650df6cad311f603216898192d00c77fc152f5f4ba8684",
     "src/objects/operation_8c15966c.c": "ea403e0f6fd73ef3056c593991c080a579098a7ed59072cc678d1bce5d9695b5",
@@ -3885,6 +3909,7 @@
     "src/objects/operation_8c15b9a4.c": "cf90b14e6857920f9968d7fe8c7a8e9463b9c4eb93d3917e5932f35d38606c83",
     "src/objects/operation_8c15ba54.c": "33ec49d816aebbda149203f19fca50695964727f283313324fb9e92b6d4a080c",
     "src/objects/operation_8c15babc.c": "88cef3baf88db44d17d455068ffcadf7887022768ced9057111e3ebf5adda64e",
+    "src/objects/operation_8c15bd9c.c": "43785e97661cbbf1711312fb024ec3b5ea2a03a31057c3589937de369779fee0",
     "src/objects/operation_8c15c66c.c": "5a6d230ab5405311a6426c6341b24087c317f94856596c6435e03eecbe21cfbf",
     "src/objects/operation_8c15c6cc.c": "a0a644645fbd5b05407956a95ba35b2bfd1660e2202fdddb8837b688df9f14c2",
     "src/objects/operation_8c15c7a4.c": "793f869c2298a4edd70e04691a6781b8195299f18b2f84b8141929ec9d034ac3",
@@ -3899,6 +3924,7 @@
     "src/objects/operation_8c15d1bc.c": "db6199f2e3e905154a4395183c1f970899a8c7187bd68e6e3c0c7076a01cdff2",
     "src/objects/operation_8c15d384.c": "836c2a3bd4351f518979a2e0f049c1c79ef433cf99f921acdc2e27a30c99c530",
     "src/objects/operation_8c15d400.c": "abe3243efc01cfc91046ab12e25b07c5cc97b8989c509f7880505c12d8dd45a1",
+    "src/objects/operation_8c15d634.c": "c7c597661d759997d54f2bd417debde64510da69f0177b0d7718625961be9088",
     "src/objects/operation_8c15d6f8.c": "ee3d6490bedb2c4b2088c45a2ff0546ca45f87ccf7a46104d81429093acd7eb7",
     "src/objects/operation_8c15db04.c": "cd18ec4c6312d1824e850a0495282418a90357372ebae3fb63fc6bba46f1041d",
     "src/objects/operation_8c15dcdc.c": "b3764d6564b0217bb9ab4cc90eb63fb7c478900f4307da781664a65458e2e127",
@@ -3925,6 +3951,7 @@
     "src/objects/operation_8c162b94.c": "2f0f9121a6bd8f305b9f6e236abc9ea10316a9fb62224a7936a2260d9114ffd3",
     "src/objects/operation_8c162cc4.c": "d9f843c4969e618c9bf0f836e8aa6eb0fafcf185f4c056272bff51b6c9830caf",
     "src/objects/operation_8c162cc8.c": "87c2d8b599d0539f058f4ca6feaf9c517210d8dd007582f332d2ba5c39fb2ca2",
+    "src/objects/operation_8c162cd8.c": "800b94eecf9e7e3a4ff61449616aa953bc2abccb4d63cb1bbe50eff2c8b2a252",
     "src/objects/operation_8c162d74.c": "d3e042a7bf03fa94e846702e9d146b26f595cccac3aeb26357c3002e39f54800",
     "src/objects/operation_8c163738.c": "8ea1ad53985827ad5edf381b9e3cc58a7f20c1c293256bf35fa6c7f9729a735b",
     "src/objects/operation_8c163888.c": "80b173567d947c8a42dfd907fe34ab057e726a17eefd71eecfea8f1547daa61f",
@@ -3938,6 +3965,7 @@
     "src/objects/operation_8c165910.cpp": "8d7d67a08d106dc7f41703840399449e08ead4c06bfe69c9a9ad48033a5066bd",
     "src/objects/operation_8c1659e8.c": "c28694163a5dccd777aff1973fb5be29d4e55e8cc688d23f81f719f46a3ae2b2",
     "src/objects/operation_8c1659ec.c": "034ef5eaccfd41dc73b1562d5f01f468c70bad573010e525bb5191e46954c968",
+    "src/objects/operation_8c165a6c.c": "9a5c9c5ec223bbd004649261c2fd6d67e285072fc899f1ffa86e94cae3cca17d",
     "src/objects/operation_8c166174.c": "7bff82a93d63868611a6f0158a42886775154d34502b48f14c9d76eb8f803523",
     "src/objects/operation_8c167048.c": "744526fa139a10a32fd5f2d08f4764a9deff3f369164feaf9f9a5f5afe685ddf",
     "src/objects/operation_8c16704c.c": "fcee886fa59a302a063d974cba055094f731653e5ef84eb7ef13c1c92904cb72",
@@ -3956,6 +3984,7 @@
     "src/objects/operation_8c167bcc.c": "b0211d89724fb24ccde561762c332f42d2718be76aac18207316334aa264cf7b",
     "src/objects/operation_8c167e38.c": "1303436048975c1a0accb168adb37467e54447e48c5956725470bd0f6b2d4db5",
     "src/objects/operation_8c167e3c.c": "763b07432335e4878584605127ccb5186f91ceeda9e1aef85457aa64b7c584f1",
+    "src/objects/operation_8c167e40.c": "f77c0435d5c6b79749e8a10be2e251fc3b2089f89c992e80a30be15bb8c79272",
     "src/objects/operation_8c169504.c": "74feda6546b5c04945615287dc996b7d5ac62fa89cc2f992ea43c45476197988",
     "src/objects/operation_8c169508.c": "20c704ad5c52a36beb51eee7147c739203ba30d930f06e59b5dee7a01d2e2947",
     "src/objects/operation_8c16add0.c": "cf03737783080fbfc8d406abb966240f0250f39f68adcc13899983dc51284860",
@@ -3976,6 +4005,12 @@
     "src/objects/operation_8c16cb48.c": "b580e3d8cbefa14d0757b4d988d3f005940f2d99f44d2c0adc72c4914fb11550",
     "src/objects/operation_8c16cb88.c": "2c746c3f6e76cafdcf0247dee5cbbc307c79913f52bc89c487984b6c9189d264",
     "src/objects/operation_8c16cbbc.c": "bb5ac5f4124a14b1b97daf608f73ec07d2481846b4601fa6c7c72dec57680f16",
+    "src/objects/operation_8c16cc14.c": "7e0837e02a09329f3b99e6ecd9ad8e163f5c19b486abe4e86306af74c3a0f348",
+    "src/objects/operation_8c16cc2c.c": "25cb30bd68e64ec86dcb1928996fd368e4d9319b60b42562d0f9a46f4c4f4807",
+    "src/objects/operation_8c16cc4c.c": "f3a0e26c125bf5c6f64a02eb5c209129c1e43383772f5158cddc89f540bf01d0",
+    "src/objects/operation_8c16cd0c.c": "224b95c55955317381bdd411c77bb6b362bd860cf314e9c0d8fbfe3c2e7b6140",
+    "src/objects/operation_8c16cd44.c": "250e2fec43f517a36e2228b1d79ec98345f1e61d32f8d724791d20b28d3d764d",
+    "src/objects/operation_8c16cd7c.c": "3c22fa2ed1015f94e5fbaa1078e3330b9e0f76facd7f093a30edee3a2005dd29",
     "src/objects/operation_8c16cd94.c": "6e6cf58521bf20eafc6e416d9751e1bc08e913bb2bf2243941f8de3ad963f562",
     "src/objects/operation_8c16cdfc.c": "2ca84d0817dccd46703c6e677abaf8d408ab89f09b5857638a2d82eb4f3418bf",
     "src/objects/operation_8c16cebc.c": "a70b36c340da4e4a632dcde5b037bb1b3dd590315b433c1c6619790916cb1bf3",
@@ -4007,6 +4042,7 @@
     "src/objects/operation_8c16d5d8.c": "a9cdbb73c8c65332a68542df4147b75040f667a00889c0f047e9693d95f28066",
     "src/objects/operation_8c16d5dc.c": "02e09206cc5fa7680a3eff972d84839061b3cdb2c7e6be95c269a6a4ea6ad3ba",
     "src/objects/operation_8c16d5e0.c": "2990e89f8d589ec4f7e0efa22d63391c0d89280a8c64a365265f0770565e62cf",
+    "src/objects/operation_8c16d698.c": "f71dd0beb15eb6118e515e97fc595ca58b81e77ca79ae8837e8e45f07ae0e927",
     "src/objects/operation_8c16d724.c": "275c7e53c6b7966d9d6e368e8923639a99c5d5413f405b6d60afcc0d8b128068",
     "src/objects/operation_8c16d748.c": "7d4ac182a84a51aba8e44ded17f4102b243eb06f75d4dc070f6bd0539ab393e2",
     "src/objects/operation_8c16d88c.c": "400803dd1971b7ec3e1e8108540198129bbba9f976d216ee5e833281df86c805",
@@ -4092,6 +4128,8 @@
     "src/objects/operation_8c170878.c": "6e745b249ce7ec8ac2875f3ed8d7a6e5f6a81bdac6b11e1307dc3df17207c553",
     "src/objects/operation_8c170960.c": "52bf5e8a2005ed7a257c17886395cc80681a269c6da63b506344adb9e98c97e4",
     "src/objects/operation_8c170978.c": "d70d3a72754742dfc663663133c978fddc4205be425d568be7cbd89bb6bfabd6",
+    "src/objects/operation_8c1709b0.c": "f63b27d3fc2d2c60287e644fa788e4431668117adea81c46dd9987e8ab1ceebd",
+    "src/objects/operation_8c1709d0.c": "870a9f3c88d65473b622b0269604489eb1d1be96f904bcb64cb9ccf4856a4525",
     "src/objects/operation_8c1709dc.c": "def4d878c6ab9ea18aa37a958c00575fd5ba83d6a22bd2010366d976b3491065",
     "src/objects/operation_8c1709fc.c": "553cea0dc431d6f866e3bcdb425ae7ed37916fb92289b71211af595ac7cd0354",
     "src/objects/operation_8c170a24.c": "a129e95b5bf31a7f8a2abf9af7486ec45a19587fdf637163e3b05f0791a7af9d",
@@ -4118,11 +4156,13 @@
     "src/objects/operation_8c171ca8.c": "7c23089f974cab351aa2333ad114eeb0e73dc3846e9879990a2b65b9d3dd29a2",
     "src/objects/operation_8c171d24.c": "881dc7561034d8984d5895ee60a3e2f3641fbc672aaadf807bb6724dee9704f2",
     "src/objects/operation_8c171d9c.c": "7bb2bf44ee4df33f0f29dae17f1b570e8238965b2f177cfd36b2b4363ff2f65a",
+    "src/objects/operation_8c171dfc.c": "fce54492f995cb86259be6c1cc6227d70d1b22b9ac47b4a4acd2981f875cfba1",
     "src/objects/operation_8c171e1c.c": "622b99bbc5e5574906ba36e1ccc06f1269728e50ebfe4049322d3a167fd4ec6f",
     "src/objects/operation_8c171e58.c": "a4c9275018904aef84d6b8d5be901942488c6a374b2b12fe3db5b420af382c02",
     "src/objects/operation_8c171e64.c": "fe151af83a78bea626854dde4e1e948d286de06eea8f5f361ca1ed0a8c716c4b",
     "src/objects/operation_8c171e70.c": "4a225e8bfc276799327973aaf763e2af7c6eb0dbc50e64739836c9d50f7e733f",
     "src/objects/operation_8c171ea8.c": "ca5fcc000584a26caf506adcc5d0b922c7c0a6c1fa0e067bb7bb41f6bc9148c1",
+    "src/objects/operation_8c172140.c": "6113ae43839a0da5821172be4904141f20fa90f776fd234e9cc4fed0b47b369f",
     "src/objects/operation_8c172154.c": "22127d3e4bdda60d0a2b0edfc61dafbfb7ed72e487f3a0e4c787d27fda8f3d1e",
     "src/objects/operation_8c172180.c": "ed29adbc41375a9c1b60fbd3c317a292b17a6c953dacdb5c1cba2acc1c3df888",
     "src/objects/operation_8c1722a0.c": "fea3150a7a81ba2643a6e9f194dd88e5787fa77705e647afa298e3fa611a6eef",
@@ -4157,6 +4197,7 @@
     "src/objects/operation_8c175004.c": "d09bd5648637bd51f708f16459ebaca19c00d977b9ee0999b08efbd08f1d120b",
     "src/objects/operation_8c1750c4.c": "23092ba9759a09b0e828238ada7e7adc74773521b48234fe2ac7e86fcf37cf7e",
     "src/objects/operation_8c1750c8.c": "803e7f5a1419e010d916dafe459fd534e9f2de99c75c0da10eddc7830dac799f",
+    "src/objects/operation_8c1753d8.c": "8966aa98efefb6b03197b6b5e1ca1cdb8da06294d80f0caed71a1ebff8f97ba4",
     "src/objects/operation_8c1755c4.c": "d70518331f102d79590274f31cf9023ae0562d9a5cbb4b47c3d870664b6de8c0",
     "src/objects/operation_8c17563c.c": "32f30aa60ab2b981174a53bfa76b8e60c1e66434adadb31d85a28273405bc679",
     "src/objects/operation_8c175688.c": "fe67dab07856c582ef565d01b919555f34948756b6d00d4e982c89123251473e",
@@ -4165,10 +4206,12 @@
     "src/objects/operation_8c175b54.c": "8ac187a0389e18091466334ec2d9eea38ce0ddf051f242b4a9b12a4dcfdebc04",
     "src/objects/operation_8c175cf8.c": "e015a363ebd8206c3e95d0a96b6e7dc7e8aa7b37ab375be615fe9d0a01263d85",
     "src/objects/operation_8c175d44.c": "566b1fa3dcc3585fb2eaa24d9d11e9b02acb9895444809e4c7274132d5958161",
+    "src/objects/operation_8c175f64.c": "8614efc77c3f6308fcf2f586c36a79dbc085a62ac2408fae9343c963ab59495a",
     "src/objects/operation_8c176048.c": "e40ca02906f0c2c28d6ffb3bd2622b8d24fc7e43152765b26732c646d9bb8008",
     "src/objects/operation_8c176438.c": "df25f95d9f541d79d6717736c5e03abe0d001e762d93c56d8eaae2416f7d9b4f",
     "src/objects/operation_8c1764d4.c": "d55dbc5d17a83486e1ab1d816541962568bf4beca92b11a54bad81fb83a469de",
     "src/objects/operation_8c176958.c": "8cbbd77e5c17fd65d4eddb5020c654d7dd7aa4f3330babedf1766d856bd75596",
+    "src/objects/operation_8c176cac.c": "3e2d132cafcb464de83ea42c3f8b13335cefb6c6ca10e1409475ccd196dc57ad",
     "src/objects/operation_8c176db4.c": "9a861509fc9ef70320572c830c037b1cc7cacf34b984f0ccb2f2ff9497b05f2f",
     "src/objects/operation_8c176e30.c": "ba6669ff04f13bd0992a5f3c1a0fe7240a70f20d275f619a83435dce25816969",
     "src/objects/operation_8c1772e0.c": "68f8f8b5400bbc229bd584555b8729bd077ca34190f6179d388ba6be219982ab",
@@ -4189,6 +4232,7 @@
     "src/objects/operation_8c179264.c": "e2f9cb89737cf42075859e4bda59bc08278e1f3e3b70ba51c8d4cb03eeb5beae",
     "src/objects/operation_8c179310.c": "ba9b599829ce643cc64a236c0f9b52f1a84aacf9901065dc8dafe995e8913737",
     "src/objects/operation_8c1793e8.c": "dd99dcff986eae02609e552f889c0fb14c0639643eac1b6fea41802e8df6c977",
+    "src/objects/operation_8c179428.c": "3880be583849659f8c14695895c5b46ddd48b21352e5d9472291c8029b81a5d5",
     "src/objects/operation_8c179770.c": "45d86d8e125a0b5e13d72d8cc28fcd114b70b50c60feea37ff66f4d72b0d368a",
     "src/objects/operation_8c1797c4.c": "63562d1320b08149e5bc3395df201e2cb9a1a3d0f9a02e8d1af923d374b210d4",
     "src/objects/operation_8c179824.c": "26b19fb40034a5e2512ef59d2103d9500799c2ed17e72021dba3252a1f53f29f",
@@ -4211,6 +4255,8 @@
     "src/objects/operation_8c179e44.c": "1b96deb14bf3961ba818530b7cee9c12fca5aa791ec00758063468801fa0b60f",
     "src/objects/operation_8c179e90.c": "8893d647b03128d606de206baed9e5bd8fadf25587468cd88eb1e5bb40393263",
     "src/objects/operation_8c179ed4.c": "ea8856be60f1ff38e5ca2b41afe6f977d2d19e496a6a5d3332b341e89156b4de",
+    "src/objects/operation_8c179fe4.c": "aab8df7822bd6dbade521f24566bd28da96f03373aec57f0c9d99d306eae611c",
+    "src/objects/operation_8c17a0a4.c": "84d3c532237dae109c7ccc0c5f91bc5785a42b59022f01e0a77e1ecd01dcb98e",
     "src/objects/operation_8c17a100.c": "5a868ec16bd32424ea454470bfa5d2cdf4f229297e8367a7383c66da9aa58fbb",
     "src/objects/operation_8c17a14c.c": "a92bbbcbe986f585bb976d404087f3a0540f908657815f9b3e838bbcfa9a241c",
     "src/objects/operation_8c17a1d0.c": "a89c40f20ef2b555487e942d50340d8635ab7a3a500a5c58193bc1aa477a5991",
@@ -4261,6 +4307,7 @@
     "src/objects/operation_8c181920.c": "a1a9652aee9eaeb634a570bc8d8e265984972168c23fac2cb4a24f3b105f22c4",
     "src/objects/operation_8c184100.c": "b0328fa69b1ac632f8a9ccfb429c6f804745665799164e2506decf356117d278",
     "src/objects/operation_8c184610.c": "14f043713d097889ea66a6335d11604ec4393108068736b9fe90f2e36ac86dab",
+    "src/objects/operation_8c1846d4.c": "f0bbe727be60f1c909791e2bc1c52211c2bcfe2428a651fcd05ada1077b4c54a",
     "src/objects/operation_8c184850.c": "d254497372343cafbe04fd548c3579197980f8c8b6dbffeccfb9451f1e932cd1",
     "src/objects/operation_8c184918.c": "f74c921cbef028bf5b4eb1d5bf4dd580893648a0c1dd7b3c67b24e114668a35d",
     "src/objects/operation_8c185030.c": "c51580127cacbd26cdeafe46a2fff17f42086c2d62b1e57f0c863ca574d56465",
@@ -4278,12 +4325,14 @@
     "src/objects/operation_8c187984.c": "308b7d39f9f280abc5713e3a25d05b8b1343c0b60af0f0f28a8063ed208381f5",
     "src/objects/operation_8c187c4c.c": "b6cd6e3a8e9f0426eb8e0f994e047b0162df5d71034ee0fda846fcd9e6ff15a6",
     "src/objects/operation_8c187ca0.c": "0d98caaf1c1b30b72bb70e540ad8f9ea3acc585950e44b5aa7c4ebdf9309468f",
+    "src/objects/operation_8c187e08.c": "334c5e00d7e32221fb7a222fea5697626204d588e888b6b1847490f3414b546d",
     "src/objects/operation_8c187e9c.c": "45e5cf528fe8aea5447d95ee2c39de2b9e4ef97dfd1e9e9cb8e6c0e60d17f2fd",
     "src/objects/operation_8c187ed8.c": "2f1399d8646e90e1c4eb68afe98019237e036b14ddd89e4a97e75c0b7324e8b1",
     "src/objects/operation_8c187f44.c": "2b93624d8ac2841e32225d168d1c44b60d1a1a4a2cbd1a0e22f83b6bcd2afb6a",
     "src/objects/operation_8c187f8c.c": "73b732dfb5a90246f2720f6d87c1b801ece0f70a95f0891e6af321b599272dad",
     "src/objects/operation_8c187fac.c": "5ce0d0e71373cc213fb5ad0a7aeafe3d95910517ddf7a34f13c4ba63ef61d05b",
     "src/objects/operation_8c187fbc.c": "dacc87dd6285aff2431d9a8791d7a9699b5036c31dd55bf01186ca97ec974a00",
+    "src/objects/operation_8c1881cc.cpp": "bfccd0cebbf075802869038f7dcaa9409d216af7d51f9a8274e75343523f44a0",
     "src/objects/operation_8c188504.c": "3c0c6312d3c0c0e34d433c85a8aa29db4af032b16ffe5a9e0c0ba86d1a0d14f5",
     "src/objects/operation_8c188a30.c": "37e37bb06d3f452ee03e6d6156b4a1fd10be96af98ef3e99e8f2a38cdaa562fa",
     "src/objects/operation_8c188aa0.c": "94402eef9ca5fb05b77b8179f93c75db7c5346092b957c78d524ff44662ffe4e",
@@ -4321,6 +4370,7 @@
     "src/objects/operation_8c18cbe4.c": "58e46f7f6a425a0b2b21c4770b590c6294c8c4dd799d0f0b76192ff2b33b0089",
     "src/objects/operation_8c18cc6c.c": "e9399c4f781c6c968cb2bdaa63d500475ecc41724f76c7664da0326d9ef66c47",
     "src/objects/operation_8c18ccb4.cpp": "b2bef0cb70b5e75c3b9ab3cd67b6d3c60a1a82f01182c8c5fbe14f958f1d3cb9",
+    "src/objects/operation_8c18ccd8.c": "ef479bf11c679855e5feb2ad4895842c11e44c937b7bf69f2666f786baabba9c",
     "src/objects/operation_8c18cd8c.c": "aa17baff8132a1414e63012d98ccafac983a9ec17767d53fb33313d99ab123c5",
     "src/objects/operation_8c18cdb4.c": "2aa16d78a4c85472ab059faa29ae9fea31473840c11a7c5ef6030cf312595407",
     "src/objects/operation_8c18ea4c.c": "d8b74cd4e97c73bb876cb11dd3759e9529b5bbe193b9efceb1d24a7d0d2f9279",
@@ -4341,14 +4391,17 @@
     "src/objects/operation_8c19113c.c": "b9b95437356761fc19a203b5fc2e224b64efefeec0c0264e4f586d29e31fbbc5",
     "src/objects/operation_8c1912f0.c": "65e27b63b9998153fc8a92bbd408bc470caf65e4cfe358d6e034a2f28555e4e6",
     "src/objects/operation_8c191428.c": "63b0257a02f815b10310be4cd67c73d2df9e0493e9c63d2cfdacd9375294a553",
+    "src/objects/operation_8c191504.c": "c82fae61320985f995022689936fde4aff27f59669da18639cb6d3ef8d0c223d",
     "src/objects/operation_8c19176c.c": "a5dcb4a48acf84385739225b4b2dc2ce2250946e4027b23e24bffd42bff71d77",
     "src/objects/operation_8c191820.c": "9fe57fcad4acecf0f74472d4273f115ee569e29168b2f1b2f0557c83cb961820",
+    "src/objects/operation_8c191880.c": "696d9f64703382d876a8cf48678b110c1be63346713c54381f6ec4c83c5615ec",
     "src/objects/operation_8c191f34.c": "5c2e68bda7c414ee50bf8e421ff81aa5b88461d921e7ad7e48e106d29b1f4a26",
     "src/objects/operation_8c192084.c": "1654ce04b52d80bc1056f3901651f6029be362c15e1e916fdbe9999aca307fc5",
     "src/objects/operation_8c1926e0.c": "d274acbdea0d7bc1ffeca69619609ee347eeac3094f009e507177bb12129d9f8",
     "src/objects/operation_8c192704.c": "6cb8599ef570fbf162535b173f5e1a953d609bc7ae0985432c9537b56c743b73",
     "src/objects/operation_8c192738.c": "1e971612146878b516fe9b94211baf39e74e98ac2615aae3920746bbe367cf94",
     "src/objects/operation_8c1929ac.c": "9c4b6d0176c72ff6f8255ebea0200773cae3681ffa80453fa5b8c278321c3953",
+    "src/objects/operation_8c192f00.c": "cf7fa23bf40977ec5ec1a58338e703ff61aaeb78c37df03dcc8c2b3b653cf5b5",
     "src/objects/operation_8c192ffc.cpp": "7cc413011918ed723c842fdec734feb30a7c7dfb2cef43cd4e53e4a1d22f1edf",
     "src/objects/operation_8c1931b0.c": "762adee1835c674e86ed396081b45f0884a4855c39fbae079768a6eff77c1e1c",
     "src/objects/operation_8c196e78.c": "b80790a5bdfcbf5ab0c73bced67e0bd6ccf415b21e204cccac76a195aedb3976",
@@ -4360,6 +4413,7 @@
     "src/objects/operation_8c197ab8.c": "606edfd8538e45ad227676fa8acd0418be37197f41d3c7f81308e0fbf855a7c4",
     "src/objects/operation_8c1980b0.c": "0d8e7fc7036630e5bb567fae559f31272cd260ec49101494a669cac9a49582da",
     "src/objects/operation_8c1986ec.c": "8885b1a30ef22045b0905c82028fce2d1409332e44f8aabf79c52499ded0bd03",
+    "src/objects/operation_8c198c70.c": "d711d0c461be4bb706d469c9db63f79b57bd402914f75c5f2c90eb6a56760fc5",
     "src/objects/operation_8c198f70.c": "e03ed648b2f757cfc2a2ef51530d002941054b26171e6a232c49337ef94e1c8c",
     "src/objects/operation_8c199054.cpp": "b8ef1d2c1bcd9c353112ba84c502300f98aba7ae8df8e91b4e773783e221056d",
     "src/objects/operation_8c199578.c": "f97a68022ff42a61140c76f5033160989cced9cd99fb20c39fcbd67351b6aea6",
@@ -4369,6 +4423,7 @@
     "src/objects/operation_8c199b20.c": "821641fe0342783d9635d87dab74c1f457ba293decba19ea527a468a6d3fc92e",
     "src/objects/operation_8c199b40.c": "de56274b8686366d7abb2d3ae51f54abae6676d3fdb271f18dba74fb74713988",
     "src/objects/operation_8c199bc4.c": "b53ff3977f49e01c85b0a7b6618a73d5172b573928691d8dc3626a979b602e71",
+    "src/objects/operation_8c199e48.c": "1ec8bb52e3c71944adc7110e2cee4a1cd780e364016e6f9a17b509ee2a4bf7e4",
     "src/objects/operation_8c199f24.c": "aa3513898c00a9ccbd09652aa06a2cbf02bddb190bb640d8d8f0640a8127c5ca",
     "src/objects/operation_8c19a044.c": "09888e30c2a44fc830d7f5ef191d7378d051dd577b4ac427fcd6ebb0c75c0992",
     "src/objects/operation_8c19a370.c": "d3ef0dd90a0ca2b78837288d8e9b377efd65d840fac62942a232bec174316d77",
@@ -4376,15 +4431,21 @@
     "src/objects/operation_8c19b054.c": "a5b57455e06d84dcc91ce35f11b4df58caab2cbde65bb6405c837eb6145d11a1",
     "src/objects/operation_8c19b2a8.c": "c336f95aa3326eb56d3cda181cc08da703d64c09dfece379764a76b89d00bcf9",
     "src/objects/operation_8c19b2b4.c": "5af83d51dd4335f08bbf156aa38b64acc166e63f9a5576468a96561b086bd37b",
+    "src/objects/operation_8c19b688.c": "ea27995e927850635dae73a11adb2cad41b7ec2effb7fa285a104d437b0edf21",
+    "src/objects/operation_8c19bc58.cpp": "cdff05dee2c1e047471cfdc1ea85903e48f99f63fbe06d26d4ec276337943491",
+    "src/objects/operation_8c19be70.c": "4874c0d55f5176f81a04106dfeea32405e372b6ab37cb8ade1d2988154fcc2a9",
     "src/objects/operation_8c19c0f0.c": "9ae1d34f698385dcde7488ad84bd9141f90133c2c10a952768ae43531e780271",
     "src/objects/operation_8c19c114.c": "6053c53ff8459c6fe40ab74c609d6203bd596abeb65455088d8f55aae3f23541",
     "src/objects/operation_8c19c138.c": "e1ff7095b4d6a837ecf466965941a45a34dbbb896fd9a3e5d25a1959db204de6",
     "src/objects/operation_8c19c15c.c": "abfa416cc6766c8ccad40600700443076905d9b13ca143ad715592da2ef1c232",
+    "src/objects/operation_8c19c9f4.c": "32aae05a7d8551172fc455981a36cacdd305d518c2aae9ac1026fb5fd862b292",
     "src/objects/operation_8c19ca7c.c": "db5e4f46ff57e3c12d6f17fdf3f602ebd6d2c5f097b4036242dcfe571b685dde",
     "src/objects/operation_8c19cf78.c": "a70322a44294b5cd379d72ccb031d9ce31fd756ec497c9956df0b7a5f805dad7",
     "src/objects/operation_8c19cfc8.cpp": "09f44dbcd77b565ade8495efd539cb39ea2066e437ef6d9d5502ac8f98e57e5a",
     "src/objects/operation_8c19d024.c": "e22f184723b362c2de80c1493382019aad6a78143dd9b7df526725a69e58bc45",
     "src/objects/operation_8c19d028.c": "57070c2bfb793854705dfcea120319508966064cf8fa649be6d289a4485231b1",
+    "src/objects/operation_8c19d038.c": "c3d5adf8c1a8f5c2129c00725979fc43206023697cb2cee9cc01ed8220e54aed",
+    "src/objects/operation_8c19d0b8.cpp": "4d7effa93984e62047036d942e582774eac3342838b1bb72694f7c50d884dc6e",
     "src/objects/operation_8c19de14.c": "e05bffd3071443effe3b4161a80b68b4cbf1657435b30a66b4d615f6eaf09f18",
     "src/objects/operation_8c19e20c.c": "21a90975f629b181daa6e46cd716fcc0ba2936575ade37cd0b0e4673b1a5d20b",
     "src/objects/operation_8c19ee7c.c": "0f483559c08da8f4c2643433dbbb37ed6f3d53679e6fbd5772d7af48feb18be5",
@@ -4414,6 +4475,7 @@
     "src/objects/operation_8c1a0840.c": "099844270e434606e707bfad8417bcf129e6979cfa7ba1eed2fdf906606e81ea",
     "src/objects/operation_8c1a0f6c.c": "07855e303402b0b4fb37905d1eb56dc686dbbc43d1f024440e57c48af0d6a113",
     "src/objects/operation_8c1a0f9c.c": "a2b7e1a52709fbdb92c5af2d869721c746edc18387ae3fa78fad4009ace25e5b",
+    "src/objects/operation_8c1a0fe0.cpp": "85fc637f9a8f83bb715cc8b0472ed621429a5fba25fc0a10fcf52c10c4d85d28",
     "src/objects/operation_8c1a11e4.c": "099fb126e111bebce9baf3277e0fae921905e167dab47c211e899665776b7793",
     "src/objects/operation_8c1a11e8.c": "5080a3e48eb3be20ac13cf85732c5363fa0544e82cb0b41946665bb99d05c766",
     "src/objects/operation_8c1a11ec.c": "8e813805e457cf2a846375bfc3260fb347215b79d42b2645a7177b2c26733d31",
@@ -4424,11 +4486,13 @@
     "src/objects/operation_8c1a1a40.c": "87d7145f1ef0be796dfce92939fc4a3e1af2847a5050f944309d00c7fa465a14",
     "src/objects/operation_8c1a1c08.c": "8bcdc44fb40b862f59781655271b59b936c1879bf44fd9f39352409cd18c75ae",
     "src/objects/operation_8c1a21a8.c": "ecc0849ddb3b2842db41adcc6fd4f8592f8bd4ea93824563a7849f8716efbb61",
+    "src/objects/operation_8c1a2474.cpp": "c3179e4af9be15796fe8fc1a2a3e1e576920ec231d55ac2fcd27b8d401326d8c",
     "src/objects/operation_8c1a268c.c": "3a9e788ffc87c4e6ae00ddd34f7a42e915650ab31de1f65f70ebf687ad335ad0",
     "src/objects/operation_8c1a2838.c": "5b2e5bc0acf009a6ed1c858494549e5f1b97bfdfb86eab96dce8e4861424cb6b",
     "src/objects/operation_8c1a2c98.c": "04fcfc60a356abc35019c00b1340ae965da675c3179c7a05c22bf4e48015642f",
     "src/objects/operation_8c1a2da0.c": "84f54410ee5ee90e04f96496d6aac5e75de73221ed5304c0a962962bbc131c30",
     "src/objects/operation_8c1a2db4.c": "00949e24e52810297e9d6deb510199a7f315c335ad9e5669e2e32ef98083cd2a",
+    "src/objects/operation_8c1a37e4.c": "ae3368b7fb59462044a427fd43d0e6623b58041b0b5d35fc6d66822d2b625e03",
     "src/objects/operation_8c1a3864.c": "f7a4e5c63e2440f2f800b368f7f5fb44a522b1200fd487196729b1a7b0888db9",
     "src/objects/operation_8c1a38c4.c": "f018050ef12793c87d3cf53c3bf4bbab72cdfd78ceb5a0331eef8006ca613911",
     "src/objects/operation_8c1a3b78.cpp": "9f1592c33bb657b39ff72a18dab42008c2fcf4979128e787cd24d67667b6f6ed",
@@ -4464,6 +4528,8 @@
     "src/objects/operation_8c1a68f8.c": "34a1ff9de602d256af5d6c30b06924e0961ef6d62acc5dc9393a7dfe97bc6502",
     "src/objects/operation_8c1a6904.c": "7ddfb92bd7caf7fa0f5b2cf65e615741dff49614e0dca735f72a8be792d6edf4",
     "src/objects/operation_8c1a6910.c": "fcc858e5c036db744ce6ef66bd3245db395f217eb22309044728b65ac1bcec7f",
+    "src/objects/operation_8c1a6e78.c": "eb59ebd19289177e3ad8be70d0a8f9d158e81ed1914e678942a951daecae5de9",
+    "src/objects/operation_8c1a6f8c.c": "194038fec5184eb9ee6afbd1b1fa16ac6ed867672933986167f3e3922556f1a2",
     "src/objects/operation_8c1a70d4.c": "021800e1effa84da355b2aa8028393839210e507722132135d79564bd555ec83",
     "src/objects/operation_8c1a7128.c": "01099b33d50a4f055507ab1e2fec04831f5b0193ba970136e6f78239e0506897",
     "src/objects/operation_8c1a714c.c": "71aa59079eb0f69140ecb32fb44db0c44f1fca352db0f67d2a508a7efd41fe3e",
@@ -4474,12 +4540,16 @@
     "src/objects/operation_8c1a723c.c": "3c813e94cc92413a785721297f59c2248568f66a19d14d9dc26a2391c589caa3",
     "src/objects/operation_8c1a72a0.c": "b2ad293306f3b15cfeec873ad4db79d18d9b6d00fcd5ad1f37483eecf28b7912",
     "src/objects/operation_8c1a7304.c": "0f5d679bf4b68cbf4ceaf5d42fcc5985bff55cc4a207721eb002d603afcdbb35",
+    "src/objects/operation_8c1a7390.c": "07ee0a5f132de40a795da01e673bfe553035b6f0032e1889db67a3c996e00889",
     "src/objects/operation_8c1a73c8.c": "b195a9f65fd52b78ecd5f4a209e87c2942606e431296847830e48744d4565c87",
     "src/objects/operation_8c1a7404.c": "c9b20bdeea9c527ca2f296e7db9ec94d4bb9e3ebbcad666c9c972848aa43c495",
     "src/objects/operation_8c1a7444.c": "eff19f218b293922645ebf43aab9fe829a645f0dd91eaec4c019580a2056af83",
     "src/objects/operation_8c1a7484.c": "24202cd432dba708526b4eb4c8c04ce7f998e204b2e1f1ef342979b06bc294c0",
     "src/objects/operation_8c1a7530.c": "88640aa06f8c0e5e96101a3c03b2fc894c9d582c8a2c7f5e7c35d3dee77aa717",
     "src/objects/operation_8c1a7550.c": "51cf850e8d058fc10350de74a26338111fbd80d971e3de4cd462480aa5fa6817",
+    "src/objects/operation_8c1a78f0.c": "5706b7761bab053bd0bc1900fbf0e804f9bb12ef62629424a1f4233f92f4dc66",
+    "src/objects/operation_8c1a7964.c": "66ba9dc6df78debb314ed30353f50009f6ff6e9b9ba1b9f4d19627063869cf1a",
+    "src/objects/operation_8c1a7cc4.c": "82c2182a96fd69bd71825a250a941179c685f931f1bcd8926b2407ae4eb8feea",
     "src/objects/operation_8c1a7d14.c": "2cedb822d4fd4b8893b29329b8f81cfe5f58ac0279a43cd927472cf59cd42f23",
     "src/objects/operation_8c1a7e10.c": "070cda5a6faf246db50f7c3b259d7b919ad10e6c49e1fa86a4962aed3c2f2361",
     "src/objects/operation_8c1a7e14.c": "bc0fe8c4bf20968534442779f9810d8842aa17712291574704139f445451c8a9",
@@ -4493,6 +4563,7 @@
     "src/objects/operation_8c1a86a8.c": "00d8e86d2efcbc9f5c2a36eb768c144c3eac72e0b30ad61aec3976eda6c664a1",
     "src/objects/operation_8c1a8750.c": "571142501b8845216c07d2493594af1fd03028149508ed61b63e40fe54f9dbb3",
     "src/objects/operation_8c1a8cd4.c": "caae35c83c0c8fdbb1a97af44efb693a2a26c9fb841584ccc9b905a7c02ffc34",
+    "src/objects/operation_8c1a8d94.c": "e1e5333ad8a3d6c991903d8830836af7bf4dfe06dd3f58fc117f76dbeb783c3a",
     "src/objects/operation_8c1a8e18.c": "69db5c338d7d7d21dae9da5a9a9c3029e41b6deb6c79e94dc596e78cc4403d63",
     "src/objects/operation_8c1a8e4c.c": "5e4ac548515144aa832af4971c2697757b919a5ab8827f99b82832997bf5b127",
     "src/objects/operation_8c1a8f58.c": "1fef7d522659473476b4f73fe3756874134cf7bf589f5270f04bcae5d867dcfe",
@@ -39040,6 +39111,17 @@
       "-lang",
       "c++"
     ],
+    "operation_8c1296f4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "set_fields_8c12992c": [
       "-proc",
       "SH4",
@@ -39322,6 +39404,17 @@
       "-O2"
     ],
     "destroy_object_8c131a34": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c131c90": [
       "-proc",
       "SH4",
       "-endian",
@@ -39674,6 +39767,17 @@
       "-O2"
     ],
     "edit_three_scalar_fields_8c1342fc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c134648": [
       "-proc",
       "SH4",
       "-endian",
@@ -40141,6 +40245,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c1368e4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c136954": [
       "-proc",
       "SH4",
@@ -40185,6 +40300,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c136d50": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c136e20": [
       "-proc",
       "SH4",
@@ -40197,6 +40323,17 @@
       "-O2"
     ],
     "operation_8c136f48": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c1371d4": [
       "-proc",
       "SH4",
       "-endian",
@@ -40286,6 +40423,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c137ae8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "advance_scaled_position": [
       "-proc",
       "SH4",
@@ -40352,6 +40500,19 @@
       "off",
       "-O2"
     ],
+    "operation_8c1399fc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
     "operation_8c139d9c": [
       "-proc",
       "SH4",
@@ -40408,6 +40569,17 @@
       "-O2"
     ],
     "global_present_8c13a3e0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c13a3f0": [
       "-proc",
       "SH4",
       "-endian",
@@ -40586,6 +40758,19 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "operation_8c13c698": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
     ],
     "set_fields_8c13d384": [
       "-proc",
@@ -40862,6 +41047,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c13f0ac": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c13f1cc": [
       "-proc",
       "SH4",
@@ -40906,7 +41102,40 @@
       "off",
       "-O2"
     ],
+    "operation_8c13f81c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c13f874": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c13f8e0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c13fa28": [
       "-proc",
       "SH4",
       "-endian",
@@ -41430,6 +41659,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c1430e0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c14348c": [
       "-proc",
       "SH4",
@@ -41545,6 +41785,17 @@
       "-O2"
     ],
     "forward_child_transfer": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c145184": [
       "-proc",
       "SH4",
       "-endian",
@@ -42535,6 +42786,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c15761c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c157690": [
       "-proc",
       "SH4",
@@ -42601,6 +42863,28 @@
       "off",
       "-O2"
     ],
+    "operation_8c1578e8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c157950": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_object_8c157cf8": [
       "-proc",
       "SH4",
@@ -42612,7 +42896,29 @@
       "off",
       "-O2"
     ],
+    "operation_8c157dd4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "spawn_object_0893a8_8c157f64": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c157fa8": [
       "-proc",
       "SH4",
       "-endian",
@@ -42722,6 +43028,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c158980": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c158aa0": [
       "-proc",
       "SH4",
@@ -42812,7 +43129,29 @@
       "off",
       "-O2"
     ],
+    "operation_8c1593f0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c15945c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c159534": [
       "-proc",
       "SH4",
       "-endian",
@@ -43115,6 +43454,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c15bd9c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c15c66c": [
       "-proc",
       "SH4",
@@ -43314,6 +43664,17 @@
       "-O2"
     ],
     "spawn_object_0893a8_8c15d450": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c15d634": [
       "-proc",
       "SH4",
       "-endian",
@@ -43768,6 +44129,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c162cd8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c162d74": [
       "-proc",
       "SH4",
@@ -43971,6 +44343,17 @@
       "-O2"
     ],
     "cache_actor_position_8c165a1c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c165a6c": [
       "-proc",
       "SH4",
       "-endian",
@@ -44202,6 +44585,17 @@
       "-O2"
     ],
     "operation_8c167e3c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c167e40": [
       "-proc",
       "SH4",
       "-endian",
@@ -44581,6 +44975,72 @@
       "off",
       "-O2"
     ],
+    "operation_8c16cc14": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c16cc2c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c16cc4c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c16cd0c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c16cd44": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c16cd7c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c16cd94": [
       "-proc",
       "SH4",
@@ -44923,6 +45383,17 @@
       "-O2"
     ],
     "operation_8c16d5e0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c16d698": [
       "-proc",
       "SH4",
       "-endian",
@@ -46112,6 +46583,28 @@
       "off",
       "-O2"
     ],
+    "operation_8c1709b0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c1709d0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c1709dc": [
       "-proc",
       "SH4",
@@ -46444,6 +46937,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c171dfc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c171e1c": [
       "-proc",
       "SH4",
@@ -46489,6 +46993,17 @@
       "-O2"
     ],
     "operation_8c171ea8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c172140": [
       "-proc",
       "SH4",
       "-endian",
@@ -46985,6 +47500,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c1753d8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c1755c4": [
       "-proc",
       "SH4",
@@ -47150,6 +47676,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c175f64": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c176048": [
       "-proc",
       "SH4",
@@ -47228,6 +47765,17 @@
       "-O2"
     ],
     "destroy_object_8c176c68": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c176cac": [
       "-proc",
       "SH4",
       "-endian",
@@ -47671,6 +48219,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c179428": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "record24_8c17948c": [
       "-proc",
       "SH4",
@@ -48048,6 +48607,28 @@
       "-O2"
     ],
     "operation_8c179ed4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c179fe4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c17a0a4": [
       "-proc",
       "SH4",
       "-endian",
@@ -48854,6 +49435,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c1846d4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c184850": [
       "-proc",
       "SH4",
@@ -49184,6 +49776,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c187e08": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c187e9c": [
       "-proc",
       "SH4",
@@ -49260,6 +49863,19 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "operation_8c1881cc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
     ],
     "destroy_object_8c1883d4": [
       "-proc",
@@ -49806,6 +50422,17 @@
       "-lang",
       "c++"
     ],
+    "operation_8c18ccd8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c18cd8c": [
       "-proc",
       "SH4",
@@ -50092,6 +50719,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c191504": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c19176c": [
       "-proc",
       "SH4",
@@ -50104,6 +50742,17 @@
       "-O2"
     ],
     "operation_8c191820": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c191880": [
       "-proc",
       "SH4",
       "-endian",
@@ -50225,6 +50874,17 @@
       "-O2"
     ],
     "operation_192c08": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c192f00": [
       "-proc",
       "SH4",
       "-endian",
@@ -51284,6 +51944,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c198c70": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_context_8c198f08": [
       "-proc",
       "SH4",
@@ -51451,6 +52122,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c199e48": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "destroy_motion_profile_8c199ef0": [
       "-proc",
       "SH4",
@@ -51594,6 +52276,41 @@
       "off",
       "-O2"
     ],
+    "operation_8c19b688": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c19bc58": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
+    "operation_8c19be70": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c19c0f0": [
       "-proc",
       "SH4",
@@ -51628,6 +52345,17 @@
       "-O2"
     ],
     "operation_8c19c15c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c19c9f4": [
       "-proc",
       "SH4",
       "-endian",
@@ -51716,6 +52444,30 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "operation_8c19d038": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c19d0b8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
     ],
     "operation_8c19de14": [
       "-proc",
@@ -52163,6 +52915,19 @@
       "off",
       "-O2"
     ],
+    "operation_8c1a0fe0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
     "operation_8c1a11e4": [
       "-proc",
       "SH4",
@@ -52471,6 +53236,19 @@
       "off",
       "-O2"
     ],
+    "operation_8c1a2474": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
     "operation_8c1a268c": [
       "-proc",
       "SH4",
@@ -52527,6 +53305,17 @@
       "-O2"
     ],
     "operation_8c1a2db4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c1a37e4": [
       "-proc",
       "SH4",
       "-endian",
@@ -53102,6 +53891,28 @@
       "off",
       "-O2"
     ],
+    "operation_8c1a6e78": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c1a6f8c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c1a70d4": [
       "-proc",
       "SH4",
@@ -53212,6 +54023,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c1a7390": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c1a73c8": [
       "-proc",
       "SH4",
@@ -53268,6 +54090,39 @@
       "-O2"
     ],
     "operation_8c1a7550": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c1a78f0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c1a7964": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c1a7cc4": [
       "-proc",
       "SH4",
       "-endian",
@@ -53433,6 +54288,17 @@
       "-O2"
     ],
     "operation_8c1a8cd4": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c1a8d94": [
       "-proc",
       "SH4",
       "-endian",
@@ -79327,6 +80193,6 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 3662004,
+  "source_only_rejected_retained_bytes": 3652152,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }
