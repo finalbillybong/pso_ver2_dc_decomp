@@ -1,47 +1,65 @@
-# Reconstruction batch: 230: expanded candidate pool, part 34
+# Reconstruction batch: 231: expanded candidate pool, part 35
 
-32 new matching functions / 10,252 bytes. All 7241 prior functions preserved.
+50 new matching functions / 10,180 bytes. All 7273 prior functions preserved.
 
-7273 exact functions in 7189 modules; 595,040 compiled function-range bytes; 0 reconstructed data bytes; 3,567,872 retained reference bytes. Whole-image coverage 14.2938% is not code completion.
+7323 exact functions in 7239 modules; 605,220 compiled function-range bytes; 0 reconstructed data bytes; 3,557,692 retained reference bytes. Whole-image coverage 14.5384% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c010f34 | 0x8c010f34 | 120 |
-| operation_8c01a514 | 0x8c01a514 | 308 |
-| operation_8c020300 | 0x8c020300 | 320 |
-| operation_8c02718c | 0x8c02718c | 332 |
-| operation_8c029900 | 0x8c029900 | 260 |
-| operation_8c02f0c4 | 0x8c02f0c4 | 116 |
-| operation_8c02f138 | 0x8c02f138 | 120 |
-| operation_8c031a68 | 0x8c031a68 | 280 |
-| operation_8c031b80 | 0x8c031b80 | 280 |
-| operation_8c0326b0 | 0x8c0326b0 | 152 |
-| operation_8c053ad8 | 0x8c053ad8 | 64 |
-| operation_8c067634 | 0x8c067634 | 256 |
-| operation_8c068510 | 0x8c068510 | 336 |
-| operation_8c06f06c | 0x8c06f06c | 1848 |
-| operation_8c070180 | 0x8c070180 | 1732 |
-| operation_8c0746c8 | 0x8c0746c8 | 292 |
-| operation_8c07da28 | 0x8c07da28 | 96 |
-| operation_8c07db40 | 0x8c07db40 | 180 |
-| operation_8c07f694 | 0x8c07f694 | 380 |
-| operation_8c086cdc | 0x8c086cdc | 212 |
-| operation_8c087a20 | 0x8c087a20 | 124 |
-| operation_8c08b3cc | 0x8c08b3cc | 136 |
-| operation_8c08d378 | 0x8c08d378 | 320 |
-| operation_8c08fa3c | 0x8c08fa3c | 304 |
-| operation_8c0911f4 | 0x8c0911f4 | 68 |
-| operation_8c0966d8 | 0x8c0966d8 | 116 |
-| operation_8c097058 | 0x8c097058 | 316 |
-| operation_8c0976b0 | 0x8c0976b0 | 116 |
-| operation_8c09b960 | 0x8c09b960 | 356 |
-| operation_8c09d9f4 | 0x8c09d9f4 | 224 |
-| operation_8c09db50 | 0x8c09db50 | 224 |
-| operation_8c09dcc8 | 0x8c09dcc8 | 264 |
+| operation_8c09dea8 | 0x8c09dea8 | 280 |
+| operation_8c0a1b78 | 0x8c0a1b78 | 128 |
+| operation_8c0a21a4 | 0x8c0a21a4 | 216 |
+| operation_8c0a237c | 0x8c0a237c | 108 |
+| operation_8c0a3b74 | 0x8c0a3b74 | 268 |
+| operation_8c0b7d40 | 0x8c0b7d40 | 392 |
+| operation_8c0c349c | 0x8c0c349c | 168 |
+| operation_8c0c8888 | 0x8c0c8888 | 452 |
+| operation_8c0dda80 | 0x8c0dda80 | 172 |
+| operation_8c0de07c | 0x8c0de07c | 260 |
+| operation_8c0e1114 | 0x8c0e1114 | 92 |
+| operation_8c0e15a8 | 0x8c0e15a8 | 136 |
+| operation_8c0e35bc | 0x8c0e35bc | 68 |
+| operation_8c0e3600 | 0x8c0e3600 | 248 |
+| operation_8c0e6c54 | 0x8c0e6c54 | 200 |
+| operation_8c0f82f0 | 0x8c0f82f0 | 264 |
+| operation_8c0f83f8 | 0x8c0f83f8 | 272 |
+| operation_8c0fd3dc | 0x8c0fd3dc | 220 |
+| operation_8c0fe2f4 | 0x8c0fe2f4 | 80 |
+| operation_8c100ebc | 0x8c100ebc | 164 |
+| operation_8c102b5c | 0x8c102b5c | 192 |
+| operation_8c10f764 | 0x8c10f764 | 424 |
+| operation_8c11c71c | 0x8c11c71c | 328 |
+| operation_8c11f2e4 | 0x8c11f2e4 | 244 |
+| operation_8c127d88 | 0x8c127d88 | 500 |
+| operation_8c136854 | 0x8c136854 | 144 |
+| operation_8c136c98 | 0x8c136c98 | 184 |
+| operation_8c1378d4 | 0x8c1378d4 | 196 |
+| operation_8c137ec8 | 0x8c137ec8 | 176 |
+| operation_8c13f2ac | 0x8c13f2ac | 244 |
+| operation_8c143528 | 0x8c143528 | 172 |
+| operation_8c156bd8 | 0x8c156bd8 | 76 |
+| operation_8c157138 | 0x8c157138 | 156 |
+| operation_8c15c914 | 0x8c15c914 | 228 |
+| operation_8c161874 | 0x8c161874 | 148 |
+| operation_8c1692c0 | 0x8c1692c0 | 96 |
+| operation_8c16ca5c | 0x8c16ca5c | 48 |
+| operation_8c16ce78 | 0x8c16ce78 | 68 |
+| operation_8c16e318 | 0x8c16e318 | 124 |
+| operation_8c176a98 | 0x8c176a98 | 204 |
+| operation_8c1776a0 | 0x8c1776a0 | 92 |
+| operation_8c1794e8 | 0x8c1794e8 | 88 |
+| operation_8c17f648 | 0x8c17f648 | 476 |
+| operation_8c186e28 | 0x8c186e28 | 92 |
+| operation_8c18c904 | 0x8c18c904 | 104 |
+| operation_8c191454 | 0x8c191454 | 108 |
+| operation_8c194b48 | 0x8c194b48 | 296 |
+| operation_8c196624 | 0x8c196624 | 280 |
+| operation_8c19801c | 0x8c19801c | 148 |
+| operation_8c198da4 | 0x8c198da4 | 356 |
 
 ## Method
 
-Batches 230–232 come from one generator cycle over every candidate still unmatched after batch 229 (4,825). This is batch 230; the batches split the admitted units by address. The draft generator gained rules for drafts that differed from the reference in 41–80 lines.
+Batches 230–232 come from one generator cycle over every candidate still unmatched after batch 229 (4,825). This is batch 231; the batches split the admitted units by address. The draft generator gained rules for drafts that differed from the reference in 41–80 lines.
 
 **Values reused across blocks.** The largest group: the draft re-read loads that the source kept in a variable.
 - A word load read again past a join, a taken branch, or a later block after a store or call becomes a local. Narrow loads become `char` or `short` locals, unsigned when followed by a zero-extend.
@@ -85,15 +103,14 @@ Calibration: 29/37 on batch 191 (previously 26) and 43/55 on batch 190 (previous
 
 ## Measured attempts
 
-32 recorded attempts on 32 targets, all hypotheses and all exact. 32 units / 32 functions / 10,252 bytes were admitted after two independent reproductions each. All are unedited generated drafts.
+50 recorded attempts on 50 targets, all hypotheses and all exact. 50 units / 50 functions / 10,180 bytes were admitted after two independent reproductions each. All are unedited generated drafts.
 
 Disclosure:
 - Every admitted function was first found exact in a scratch comparison, as logged under `drafttest/`.
 - No admitted source was edited by hand.
 - **Hand probes in a separate scratch copy of the generator.** They were used to learn source forms; the rules above came from them. Probed functions admitted in this batch, as generated drafts:
-  - `0x8c010f34`: the generated draft with a table pointer loaded once, tested and reused in both branches, which was exact.
-  - `0x8c08b3cc`: the generated draft with the parameter used directly as the do-while list pointer, which was exact.
-- **Probes on targets not admitted in this cycle:** `0x8c013a04` (three struct-array forms), `0x8c09c42c` (two loop forms), `0x8c08fefc` (three accumulator-update forms), `0x8c0116c4` (a counter step before its test), `0x8c113aa4` (five forms of a clamp held in a variable; the best differed in 4 lines) and `0x8c18a4ac` (two float scale forms). None was exact.
+  - `0x8c0e3600`: the generated draft with the float compare written in the other operand order, which was exact.
+- The probes of this cycle on targets not admitted are listed in batch 230.
 - No declaration orders were searched.
 - History-guarded targets stay blocked and were not forced.
 
