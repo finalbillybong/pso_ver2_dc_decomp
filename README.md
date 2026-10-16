@@ -12,9 +12,9 @@ Other releases are not currently supported.
 
 ## Progress
 
-**7549 exact matching functions in 7465 modules**, replacing **643,596 bytes** of the
-4,162,912-byte decoded executable (**15.4602% image coverage**). Function ranges
-include their literals and padding. **3,519,316 bytes still come from the original
+**7604 exact matching functions in 7520 modules**, replacing **650,296 bytes** of the
+4,162,912-byte decoded executable (**15.6212% image coverage**). Function ranges
+include their literals and padding. **3,512,616 bytes still come from the original
 reference**; separately reconstructed static data is zero.
 
 This is an early hybrid reconstruction. It cannot yet build from source alone.

@@ -1,157 +1,149 @@
-# Reconstruction batch: 235: expanded candidate pool, part 39
+# Reconstruction batch: 236: expanded candidate pool, part 40
 
-74 new matching functions / 10,508 bytes. All 7475 prior functions preserved.
+55 new matching functions / 6,700 bytes. All 7549 prior functions preserved.
 
-7549 exact functions in 7465 modules; 643,596 compiled function-range bytes; 0 reconstructed data bytes; 3,519,316 retained reference bytes. Whole-image coverage 15.4602% is not code completion.
+7604 exact functions in 7520 modules; 650,296 compiled function-range bytes; 0 reconstructed data bytes; 3,512,616 retained reference bytes. Whole-image coverage 15.6212% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c0106f8 | 0x8c0106f8 | 48 |
-| operation_8c010728 | 0x8c010728 | 32 |
-| operation_8c010748 | 0x8c010748 | 32 |
-| operation_8c01d610 | 0x8c01d610 | 132 |
-| operation_8c02473c | 0x8c02473c | 160 |
-| operation_8c028fe8 | 0x8c028fe8 | 284 |
-| operation_8c029104 | 0x8c029104 | 292 |
-| operation_8c02ad64 | 0x8c02ad64 | 268 |
-| operation_8c032dd4 | 0x8c032dd4 | 100 |
-| operation_8c032f50 | 0x8c032f50 | 140 |
-| operation_8c03be74 | 0x8c03be74 | 280 |
-| operation_8c04a7a0 | 0x8c04a7a0 | 56 |
-| operation_8c04a8ac | 0x8c04a8ac | 48 |
-| operation_8c078ba4 | 0x8c078ba4 | 112 |
-| operation_8c0819a0 | 0x8c0819a0 | 136 |
-| operation_8c0975b0 | 0x8c0975b0 | 128 |
-| operation_8c0a19c4 | 0x8c0a19c4 | 44 |
-| operation_8c0a23e8 | 0x8c0a23e8 | 144 |
-| operation_8c0a2534 | 0x8c0a2534 | 212 |
-| operation_8c0dc510 | 0x8c0dc510 | 176 |
-| operation_8c0e118c | 0x8c0e118c | 100 |
-| operation_8c0e11f0 | 0x8c0e11f0 | 164 |
-| operation_8c0e12dc | 0x8c0e12dc | 152 |
-| operation_8c0e13a0 | 0x8c0e13a0 | 268 |
-| operation_8c0e54e8 | 0x8c0e54e8 | 156 |
-| operation_8c0ec2d0 | 0x8c0ec2d0 | 48 |
-| operation_8c110c80 | 0x8c110c80 | 232 |
-| operation_8c11e098 | 0x8c11e098 | 96 |
-| operation_8c139400 | 0x8c139400 | 404 |
-| operation_8c139ce0 | 0x8c139ce0 | 56 |
-| operation_8c13b2b4 | 0x8c13b2b4 | 256 |
-| operation_8c13ce30 | 0x8c13ce30 | 1364 |
-| operation_8c14f8c4 | 0x8c14f8c4 | 32 |
-| operation_8c14f8e4 | 0x8c14f8e4 | 32 |
-| operation_8c16a88c | 0x8c16a88c | 220 |
-| operation_8c16fa0c | 0x8c16fa0c | 36 |
-| operation_8c1701b4 | 0x8c1701b4 | 144 |
-| operation_8c17037c | 0x8c17037c | 52 |
-| operation_8c1707c4 | 0x8c1707c4 | 56 |
-| operation_8c171320 | 0x8c171320 | 68 |
-| operation_8c171364 | 0x8c171364 | 64 |
-| operation_8c1713e0 | 0x8c1713e0 | 96 |
-| operation_8c171440 | 0x8c171440 | 104 |
-| operation_8c171bc0 | 0x8c171bc0 | 100 |
-| operation_8c171c24 | 0x8c171c24 | 100 |
-| operation_8c171ed4 | 0x8c171ed4 | 76 |
-| operation_8c1720a0 | 0x8c1720a0 | 160 |
-| operation_8c172548 | 0x8c172548 | 76 |
-| operation_8c17e378 | 0x8c17e378 | 68 |
-| operation_8c17e3e8 | 0x8c17e3e8 | 68 |
-| operation_8c186fd4 | 0x8c186fd4 | 40 |
-| operation_8c19a054 | 0x8c19a054 | 72 |
-| operation_8c1ad94c | 0x8c1ad94c | 200 |
-| operation_8c1ae0d8 | 0x8c1ae0d8 | 44 |
-| operation_8c1bf1e0 | 0x8c1bf1e0 | 52 |
-| operation_8c1bf448 | 0x8c1bf448 | 272 |
-| operation_8c1bfd3c | 0x8c1bfd3c | 332 |
-| operation_8c1c870c | 0x8c1c870c | 88 |
-| operation_8c1c93e0 | 0x8c1c93e0 | 56 |
-| operation_8c1caa08 | 0x8c1caa08 | 200 |
-| operation_8c1cd558 | 0x8c1cd558 | 148 |
-| operation_8c1d0294 | 0x8c1d0294 | 44 |
-| operation_8c1d86d8 | 0x8c1d86d8 | 92 |
-| operation_8c1d8940 | 0x8c1d8940 | 92 |
-| operation_8c1d8e8c | 0x8c1d8e8c | 132 |
-| operation_8c1d90b8 | 0x8c1d90b8 | 124 |
-| operation_8c1eeb6c | 0x8c1eeb6c | 204 |
-| operation_8c217ed8 | 0x8c217ed8 | 56 |
-| operation_8c237d58 | 0x8c237d58 | 148 |
-| operation_8c2436b8 | 0x8c2436b8 | 44 |
-| operation_8c246de8 | 0x8c246de8 | 92 |
-| operation_8c24844c | 0x8c24844c | 40 |
-| operation_8c25db38 | 0x8c25db38 | 192 |
-| operation_8c25f0d0 | 0x8c25f0d0 | 72 |
+| operation_8c01bc98 | 0x8c01bc98 | 956 |
+| operation_8c04a970 | 0x8c04a970 | 44 |
+| operation_8c0889f0 | 0x8c0889f0 | 312 |
+| operation_8c0cbebc | 0x8c0cbebc | 140 |
+| operation_8c107540 | 0x8c107540 | 136 |
+| operation_8c11c880 | 0x8c11c880 | 236 |
+| operation_8c11caec | 0x8c11caec | 236 |
+| operation_8c122494 | 0x8c122494 | 36 |
+| operation_8c15b25c | 0x8c15b25c | 132 |
+| operation_8c163ee0 | 0x8c163ee0 | 84 |
+| operation_8c165a38 | 0x8c165a38 | 52 |
+| operation_8c16e5b0 | 0x8c16e5b0 | 76 |
+| operation_8c16e624 | 0x8c16e624 | 40 |
+| operation_8c16e64c | 0x8c16e64c | 40 |
+| operation_8c16f5a0 | 0x8c16f5a0 | 200 |
+| operation_8c16f668 | 0x8c16f668 | 212 |
+| operation_8c16f73c | 0x8c16f73c | 52 |
+| operation_8c16f88c | 0x8c16f88c | 48 |
+| operation_8c16fb48 | 0x8c16fb48 | 148 |
+| operation_8c16fbe8 | 0x8c16fbe8 | 40 |
+| operation_8c16fc58 | 0x8c16fc58 | 96 |
+| operation_8c170108 | 0x8c170108 | 56 |
+| operation_8c170448 | 0x8c170448 | 148 |
+| operation_8c1704dc | 0x8c1704dc | 148 |
+| operation_8c1705cc | 0x8c1705cc | 56 |
+| operation_8c170604 | 0x8c170604 | 56 |
+| operation_8c17063c | 0x8c17063c | 56 |
+| operation_8c170674 | 0x8c170674 | 56 |
+| operation_8c1706ac | 0x8c1706ac | 56 |
+| operation_8c1706e4 | 0x8c1706e4 | 56 |
+| operation_8c17071c | 0x8c17071c | 56 |
+| operation_8c170754 | 0x8c170754 | 56 |
+| operation_8c17078c | 0x8c17078c | 56 |
+| operation_8c170c30 | 0x8c170c30 | 84 |
+| operation_8c1713a4 | 0x8c1713a4 | 60 |
+| operation_8c171540 | 0x8c171540 | 56 |
+| operation_8c171578 | 0x8c171578 | 52 |
+| operation_8c171f20 | 0x8c171f20 | 140 |
+| operation_8c175268 | 0x8c175268 | 52 |
+| operation_8c17621c | 0x8c17621c | 124 |
+| operation_8c1766d0 | 0x8c1766d0 | 124 |
+| operation_8c179594 | 0x8c179594 | 84 |
+| operation_8c184a38 | 0x8c184a38 | 80 |
+| operation_8c184a88 | 0x8c184a88 | 144 |
+| operation_8c185000 | 0x8c185000 | 48 |
+| operation_8c187930 | 0x8c187930 | 84 |
+| operation_8c18cb50 | 0x8c18cb50 | 44 |
+| operation_8c191684 | 0x8c191684 | 84 |
+| operation_8c1b67f4 | 0x8c1b67f4 | 80 |
+| operation_8c1b841c | 0x8c1b841c | 72 |
+| operation_8c1d21e0 | 0x8c1d21e0 | 68 |
+| operation_8c1d7454 | 0x8c1d7454 | 60 |
+| operation_8c21f524 | 0x8c21f524 | 32 |
+| operation_8c2329b0 | 0x8c2329b0 | 648 |
+| operation_8c242988 | 0x8c242988 | 308 |
 
 ## Method
 
-Batch 235 comes from one generator cycle over every candidate still unmatched after batch 234 (4,582). The draft generator gained rules for drafts that differed from the reference in 11–20 lines.
+Batch 236 comes from one generator cycle over every candidate still unmatched after batch 235 (4,508). The draft generator gained rules for drafts that differed from the reference in 21–40 lines.
 
-**Values carried into the next block.** Refinements of the rule that turns a load reused after a branch into a variable:
-- A scaled array-index load carried into the fall-through block becomes a variable, unless it is only a call argument or a compound assignment.
-- A reused load becomes a variable when it is stored as data, copied as a pointer, masked in place and then tested, or compared in a switch-style equality chain. It stays a reused expression when it is a call argument, an arithmetic operand or a compound assignment.
-- An accumulator returned from its own loop register stays the loop variable.
-- A signed narrow load kept across a store and never re-extended becomes a narrow local.
-- A callee-saved index register stepped in place between two extended uses becomes a stepped variable.
-- Values kept in callee-saved registers across a call now also include the last shift of an in-place shift run and a scaled parameter index.
+**Script interpreter table reads.** Many handlers of one interpreter read operands with `t[(unsigned char)a0++]` from a table pointer loaded from a global:
+- A parameter stepped in place between indexed uses keeps the earlier loads in locals, and the last index is written `a0++`. A copy stepped while the old value still indexes a load is also written `t[a0++]`. When the index is already extended or loaded, the step goes into that index.
+- A local that is only converted to float becomes a float local.
+- The pointer table indexed by the stepped parameter is a table local.
+- A copy of a parameter stepped before each use is written `i = a0; i++; x = t[i];`.
+- The table is recognised by its shape, not by its address.
 
-**Addresses and frames:**
-- An element address with a small field offset is written index first, as `(char *)base + (i << s) + k`.
-- A scaled index copied into `r0` for two or more indexed accesses becomes an offset temporary.
-- A copy of the stack pointer used only for byte loads becomes a byte pointer to a frame local, and a parameter stored into that frame is a local copy.
-- A frame member whose address is taken is declared at the width of its direct narrow accesses.
-- A parameter stored to the frame in a call's delay slot, or after the frame address was taken, is a field of the argument block.
-- An access whose width differs from the declared member is written as a cast access.
+**Values kept across a call, branch or loop:**
+- An element address held in a callee-saved register and read after a call becomes a local, as does a pool offset added last to a base and index.
+- A function pointer loaded once and called twice becomes a local.
+- A word loaded in a conditional branch's delay slot and read at the branch target becomes a local.
+- Same-block loads still held when the first stack argument is pushed become locals.
+- A float computed from memory and read three or more times becomes a float local. A float-to-int result kept across a call becomes an `int` local.
+- A value computed before a loop and stored unchanged inside it becomes a local, and a loop pointer keeps its variable in the next loop.
+- A constant sign-extended into another register and also used whole becomes an `int` local, written on the left of its compare.
 
-**Control flow, returns and declarations:**
-- Adjacent `if`s are no longer merged when that would drop an assignment the merged test or a return reads.
-- Pending updates are carried into switch cases, and unread join assignments are skipped.
-- A constant set in a conditional branch's delay slot is assigned before the preceding `if`.
-- In a float function with no integer-to-float conversion, a returned call result means the callee returns `float`. A return of a narrow field plus a constant keeps a narrow return type.
-- A pool constant loaded first into the lowest pushed callee-saved register is declared first. This is a fixed rule, found by disabling the existing declaration-ordering rule and recompiling; no declaration orders were searched.
-- A global's pool literal and its extern object count as the same base, and a field address used only as a float-load base does not end a value's reuse.
+**Element pointers and block copies:**
+- An element pointer used before and after a conditional branch is a local. A member beyond the displacement range is reached through a cast of the element address.
+- A global block copy whose source sits in the higher scratch register goes through a block-local pointer.
+- An indexed table entry read through one register is copied as a block. So is an unrolled copy into an indexed element, and a byte-wise copy of 8 or more bytes becomes a `char` block copy.
+- A parameter stored between the other field stores of a frame block is a field of that block, not the parameter's home.
 
-Each rule is guarded by a flag and was narrowed wherever an earlier version lost an exact draft. While the rules were developed, an early version of the carried-load data rule lost exact drafts on 13 functions. A later edit made two drafts fail. Both were fixed before the final run.
+Each rule is guarded by a flag and was narrowed wherever an earlier version lost an exact draft (four functions while the rules were developed, all fixed before the final run).
 
-Calibration: 31/37 on batch 191 and 43/55 on batch 190, both unchanged. The 13 admitted jump-table functions: 8 exact from the generator alone, unchanged. Across the functions admitted in batches 190, 191 and 211–234 and the targets of the previous cycles, no exact draft was lost in any mode.
+Calibration: 31/37 on batch 191 and 43/55 on batch 190, both unchanged. The 13 admitted jump-table functions: 8 exact from the generator alone, unchanged. Across the functions admitted in batches 190, 191 and 211–235 and the targets of the previous cycles, no exact draft was lost in any mode.
 
-All remaining candidates were redrafted in one pass. 74 drafts were accepted: exact over their full range, or exact-short with an end that meets the batch 193 boundary rule. Other exact-short drafts are rejected unchanged. No draft was refused by the history guard in this cycle. Previously blocked targets stay blocked, and the three drafts held back in batch 224 remain held back.
+All remaining candidates were redrafted in one pass. 55 drafts were accepted: exact over their full range, or exact-short with an end that meets the batch 193 boundary rule. Other exact-short drafts are rejected unchanged. No draft was refused by the history guard in this cycle. Previously blocked targets stay blocked, and the three drafts held back in batch 224 remain held back.
 
 Before admission, the boundaries of every unit were checked:
-- each entry follows a literal pool (70) or a function end (4);
+- each entry follows a literal pool (53) or a function end (2);
 - no unit overlaps an admitted function or another unit;
 - no branch from outside a unit lands in it;
 - every entry is 4-aligned.
 
 ## Measured attempts
 
-74 recorded attempts on 74 targets, all hypotheses and all exact. 74 units / 74 functions / 10,508 bytes were admitted after two independent reproductions each. All are unedited generated drafts.
+55 recorded attempts on 55 targets, all hypotheses and all exact. 55 units / 55 functions / 6,700 bytes were admitted after two independent reproductions each. All are unedited generated drafts.
 
 Disclosure:
 - Every admitted function was first found exact in a scratch comparison, as logged under `drafttest/`.
 - No admitted source was edited by hand.
 - **Hand probes in a separate scratch copy of the generator.** They were used to learn source forms; the rules above came from them. Probed functions admitted in this batch, as generated drafts:
-  - `0x8c0106f8`: a parameter read byte by byte through a byte pointer, to a local copy or to the parameter itself. All three forms were exact.
-  - `0x8c010728`: five forms of two bytes of a parameter combined into a short; one, with a byte pointer and the low byte first, was exact. Earlier forms on it are disclosed in batch 224.
-  - `0x8c04a8ac`: a clamp without a variable (18 lines) and with the bound in a `short` local, which was exact.
-  - `0x8c0e54e8`: seven loop and index forms. A block-local scaled-index temporary was exact, and so was the same temporary declared at function level. One probe compared two declaration orders of that temporary, only to check that the rule does not depend on order; both orders were exact.
-  - `0x8c13b2b4`: a decrement folded into its test, which was exact, and the test reading the stored field (14 lines).
-- **Probes on targets not admitted:** `0x8c026058` (a struct-array form, 12 lines, and a byte-offset form exact over a truncated range), `0x8c027070` (eight index forms; two with a pointer local were exact but were not made a rule), `0x8c247654` (four loop forms, best 12 lines), `0x8c12b510` (four table-test forms, 14 lines), `0x8c05bc18` (nine clamp and assignment-order forms; three were exact but were not made a rule), `0x8c0525b4` (two constant forms, 40 lines), `0x8c144c30` (six mask and bit-field forms, best 14 lines), `0x8c2333dc` (four bit-test forms, 18 lines) and `0x8c01e1ac` (two mask and pointer forms, best 14 lines).
-- No declaration orders were searched.
+  - `0x8c1705cc`: 18 forms of interpreter table reads (array subscripts, explicit offsets, `int` and `float` locals, post-increment placement, operand order); three were exact.
+  - `0x8c1713a4`: four index-copy forms; the copy stepped before each use was exact.
+  - `0x8c170c30`: seven forms of locals and a table local; the table local used before the call was exact, in two forms.
+  - `0x8c16fc58`: the stepped reads with and without a table local; the table local was exact.
+  - `0x8c171540`: four forms of a table entry block copy; with a table local and the frame field read as a member, it was exact.
+  - `0x8c01bc98`: a global block copy through a direct assignment, an extern symbol (22 lines each) and a block-local pointer, which was exact.
+  - `0x8c04a970`: six forms of a clamp constant (type, assignment position, compare order); one was exact.
+  - `0x8c18cb50`: an element pointer as a struct (18 lines), as a byte pointer with a `short` index local (exact) and without the local (18 lines).
+  - `0x8c17621c`: an element address computed once per iteration and passed to both calls, which was exact.
+  - `0x8c1d7454` and `0x8c1d21e0`: pointer and `short` locals loaded before a call; the forms with both locals were exact.
+  - `0x8c1b841c`: an offset local in an element address (exact) and the literal offset (18 lines).
+  - `0x8c122494`: a 64-byte block assignment of a table element, which was exact.
+  - `0x8c165a38`: four forms of loop-invariant locals; a separate local for each loop was exact, in two forms.
+  - `0x8c184a38`: four element-member forms; a member of an element struct was exact.
+  - `0x8c191684`: an 8-byte block assignment, exact over a truncated range.
+  - `0x8c16f88c`: two store-order and local forms (2 and 6 lines).
+  - `0x8c16e624`: table-read forms disclosed in batch 224.
+- **Probes on targets not admitted:** `0x8c185378` (five return-type and range-test forms; a `short` return was exact but was not made a rule), `0x8c095870` (four loop-base forms, best 10 lines), `0x8c016f50` (three global-assignment forms, 22 lines), `0x8c1575dc` (four local forms, best 14 lines), `0x8c1869f4` (four element-pointer loop forms, best 20 lines), `0x8c2383a0` (three mask forms, best 18 lines), `0x8c12b084` (three copy-loop forms; library-style code), `0x8c05e6cc` (two mask-test forms, 8 lines), `0x8c060724` (two global-sum forms, best 18 lines), `0x8c08d7fc` (two element forms, best 22 lines), `0x8c043f28` (two angle forms, best 26 lines) and `0x8c02bc00` (nested and goto tails, 6 lines).
+- No declaration orders were compared or searched.
 - History-guarded targets stay blocked and were not forced.
 
 Signatures are provisional. Parameter and return types come from the instruction shape and literal use; they are not confirmed against callers. Identifiers are mechanical.
 
 ## Observed techniques
 
-- A scaled index used for several indexed accesses was kept in its own temporary in the source; written inline at each access, CodeWarrior recomputes or reorders it.
-- An element address with a small field offset compiles in source order: index first, then the offset.
-- A parameter read byte by byte was read through a byte pointer to its frame home.
-- A value tested and then stored, or stored and then tested, compiles differently: a decrement folded into its test does not re-read the field.
+- The interpreter's operand reads were written with the parameter post-incremented inside the index, `t[(unsigned char)a0++]`, and the table pointer kept in a local. Separate `a0++` statements, or the table read inline at each use, change register allocation.
+- A block copy from a global was made through a block-local pointer; a direct assignment or an extern symbol swaps the source and destination registers.
+- A member beyond the displacement range of an element was written as a member of an element struct, not as a byte offset.
+- An element address used by two calls in one loop iteration was computed once into a local.
 
 ## Parked and unresolved
 
 - **In-place `extu.w`** and **argument-register order around a call's delay slot** are still treated as not reproducible from source (see batch 215).
-- **Register allocation** remains the largest group of near misses at 11–20 lines (179 of 645 targets). Two switch chains of identical shape need different forms, and no rule found separates them.
-- **Results returned in the T bit**, `tst #imm` against `and` plus `tst`, and masks that CodeWarrior compiles as shifts remain unmatched.
+- **Register allocation and scheduling** remain the largest group of near misses at 21–40 lines (143 of 777 targets), including swapped loop counter and limit registers.
+- **Branch shapes** with `bf` plus `bra` where the draft gets `bt`, and masks that CodeWarrior compiles as `extu.w` where the reference uses `and`, remain unmatched.
+- Interpreter handlers that index with an `int` and no byte extension are outside the new rules.
 - **Exact-short drafts** that do not meet the boundary rule remain rejected.
 
 Code-only completion and total function count remain unknown.

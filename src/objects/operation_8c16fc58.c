@@ -1,0 +1,35 @@
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+typedef struct Frame Frame;
+struct Frame {
+    char f00;
+    char f01;
+    unsigned short f02;
+    short f04;
+    short f06;
+    short f08;
+    char f0a;
+    char f0b;
+};
+extern int g_8c4db408;
+extern void operation_8c0368a8(void *);
+void operation_8c16fc58(int a0)
+{
+    Frame frame;
+    char *v1;
+    (&frame)->f06 = 0;
+    (&frame)->f00 = 4;
+    (&frame)->f01 = 2;
+    (&frame)->f00 = 5;
+    (&frame)->f01 = 3;
+    (&frame)->f02 = 0xffff;
+    (&frame)->f04 = 0;
+    v1 = (char *)g_8c4db408;
+    (&frame)->f08 = *(int *)((char *)((char *)v1 + 0x0) + ((unsigned char)a0++ << 2));
+    (&frame)->f0a = *(int *)((char *)((char *)v1 + 0x0) + ((unsigned char)a0++ << 2));
+    (&frame)->f0b = *(int *)((char *)((char *)v1 + 0x0) + ((unsigned char)a0 << 2));
+    operation_8c0368a8((void *)(&frame));
+}
