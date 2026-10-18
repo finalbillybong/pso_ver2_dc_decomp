@@ -1,498 +1,422 @@
-# Reconstruction batch: 242: expanded candidate pool, part 46
+# Reconstruction batch: 243: expanded candidate pool, part 47
 
-196 new matching functions / 30,216 bytes. All 7863 prior functions preserved.
+328 new matching functions / 37,914 bytes. All 8059 prior functions preserved.
 
-8059 exact functions in 7975 modules; 732,612 compiled function-range bytes; 0 reconstructed data bytes; 3,430,300 retained reference bytes. Whole-image coverage 17.5985% is not code completion.
+8387 exact functions in 8303 modules; 770,526 compiled function-range bytes; 0 reconstructed data bytes; 3,392,386 retained reference bytes. Whole-image coverage 18.5093% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c012a14 | 0x8c012a14 | 148 |
-| operation_8c01e1ac | 0x8c01e1ac | 72 |
-| operation_8c021b50 | 0x8c021b50 | 252 |
-| operation_8c023df0 | 0x8c023df0 | 84 |
-| operation_8c023f00 | 0x8c023f00 | 60 |
-| operation_8c027070 | 0x8c027070 | 32 |
-| operation_8c02f290 | 0x8c02f290 | 116 |
-| operation_8c038e8c | 0x8c038e8c | 120 |
-| operation_8c03ec84 | 0x8c03ec84 | 108 |
-| operation_8c03ee90 | 0x8c03ee90 | 116 |
-| operation_8c03ef04 | 0x8c03ef04 | 124 |
-| operation_8c04bee4 | 0x8c04bee4 | 48 |
-| operation_8c051450 | 0x8c051450 | 164 |
-| operation_8c0525b4 | 0x8c0525b4 | 148 |
-| operation_8c053f54 | 0x8c053f54 | 236 |
-| operation_8c054040 | 0x8c054040 | 44 |
-| operation_8c060660 | 0x8c060660 | 76 |
-| operation_8c0610c8 | 0x8c0610c8 | 168 |
-| operation_8c067e04 | 0x8c067e04 | 288 |
-| operation_8c07a9a4 | 0x8c07a9a4 | 300 |
-| operation_8c07cd8c | 0x8c07cd8c | 40 |
-| operation_8c07d1ac | 0x8c07d1ac | 68 |
-| operation_8c07d324 | 0x8c07d324 | 212 |
-| operation_8c086e98 | 0x8c086e98 | 64 |
-| operation_8c087a9c | 0x8c087a9c | 112 |
-| operation_8c08dd70 | 0x8c08dd70 | 88 |
-| operation_8c08fde8 | 0x8c08fde8 | 208 |
-| operation_8c09d870 | 0x8c09d870 | 260 |
-| operation_8c0a1d18 | 0x8c0a1d18 | 440 |
-| operation_8c0a3c80 | 0x8c0a3c80 | 356 |
-| operation_8c0bbab8 | 0x8c0bbab8 | 108 |
-| operation_8c0be070 | 0x8c0be070 | 180 |
-| operation_8c0bf6b8 | 0x8c0bf6b8 | 256 |
-| operation_8c0c8a78 | 0x8c0c8a78 | 264 |
-| operation_8c0cb824 | 0x8c0cb824 | 300 |
-| operation_8c0cfb80 | 0x8c0cfb80 | 184 |
-| operation_8c0d1f28 | 0x8c0d1f28 | 88 |
-| operation_8c0d9530 | 0x8c0d9530 | 56 |
-| operation_8c0dd1c0 | 0x8c0dd1c0 | 236 |
-| operation_8c0dd2ac | 0x8c0dd2ac | 316 |
-| operation_8c0dd504 | 0x8c0dd504 | 236 |
-| operation_8c0de30c | 0x8c0de30c | 36 |
-| operation_8c0df924 | 0x8c0df924 | 212 |
-| operation_8c0ecd94 | 0x8c0ecd94 | 244 |
-| operation_8c0eea7c | 0x8c0eea7c | 132 |
-| operation_8c0fcff4 | 0x8c0fcff4 | 820 |
-| operation_8c0fd64c | 0x8c0fd64c | 124 |
-| operation_8c100524 | 0x8c100524 | 152 |
-| operation_8c100cf4 | 0x8c100cf4 | 216 |
-| operation_8c1032a0 | 0x8c1032a0 | 48 |
-| operation_8c103360 | 0x8c103360 | 80 |
-| operation_8c103b50 | 0x8c103b50 | 72 |
-| operation_8c103b98 | 0x8c103b98 | 116 |
-| operation_8c10d954 | 0x8c10d954 | 388 |
-| operation_8c10ea5c | 0x8c10ea5c | 192 |
-| operation_8c1102b8 | 0x8c1102b8 | 168 |
-| operation_8c116f60 | 0x8c116f60 | 616 |
-| operation_8c11bb2c | 0x8c11bb2c | 100 |
-| operation_8c122164 | 0x8c122164 | 80 |
-| operation_8c137050 | 0x8c137050 | 388 |
-| operation_8c13f454 | 0x8c13f454 | 40 |
-| operation_8c13f708 | 0x8c13f708 | 276 |
-| operation_8c144bc4 | 0x8c144bc4 | 52 |
-| operation_8c1501a0 | 0x8c1501a0 | 200 |
-| operation_8c150680 | 0x8c150680 | 188 |
-| operation_8c157d3c | 0x8c157d3c | 152 |
-| operation_8c1580d0 | 0x8c1580d0 | 64 |
-| operation_8c15813c | 0x8c15813c | 48 |
-| operation_8c15816c | 0x8c15816c | 64 |
-| operation_8c1584b4 | 0x8c1584b4 | 108 |
-| operation_8c158570 | 0x8c158570 | 56 |
-| operation_8c15864c | 0x8c15864c | 76 |
-| operation_8c158794 | 0x8c158794 | 80 |
-| operation_8c1588f8 | 0x8c1588f8 | 64 |
-| operation_8c158938 | 0x8c158938 | 72 |
-| operation_8c15c2ac | 0x8c15c2ac | 172 |
-| operation_8c15c358 | 0x8c15c358 | 228 |
-| operation_8c15c4e0 | 0x8c15c4e0 | 228 |
-| operation_8c15cd30 | 0x8c15cd30 | 192 |
-| operation_8c16bce0 | 0x8c16bce0 | 88 |
-| operation_8c16be70 | 0x8c16be70 | 152 |
-| operation_8c16c27c | 0x8c16c27c | 124 |
-| operation_8c16cb54 | 0x8c16cb54 | 52 |
-| operation_8c171248 | 0x8c171248 | 116 |
-| operation_8c1723f0 | 0x8c1723f0 | 20 |
-| operation_8c172404 | 0x8c172404 | 20 |
-| operation_8c17242c | 0x8c17242c | 196 |
-| operation_8c176cc8 | 0x8c176cc8 | 236 |
-| operation_8c17777c | 0x8c17777c | 144 |
-| operation_8c177848 | 0x8c177848 | 140 |
-| operation_8c17796c | 0x8c17796c | 148 |
-| operation_8c177a00 | 0x8c177a00 | 144 |
-| operation_8c17a044 | 0x8c17a044 | 96 |
-| operation_8c17b70c | 0x8c17b70c | 56 |
-| operation_8c17b838 | 0x8c17b838 | 48 |
-| operation_8c17ede4 | 0x8c17ede4 | 232 |
-| operation_8c1845e4 | 0x8c1845e4 | 44 |
-| operation_8c1848e0 | 0x8c1848e0 | 44 |
-| operation_8c186b40 | 0x8c186b40 | 56 |
-| operation_8c187094 | 0x8c187094 | 112 |
-| operation_8c189294 | 0x8c189294 | 200 |
-| operation_8c1913d8 | 0x8c1913d8 | 80 |
-| operation_8c1931d4 | 0x8c1931d4 | 180 |
-| operation_8c197bec | 0x8c197bec | 108 |
-| operation_8c19cedc | 0x8c19cedc | 44 |
-| operation_8c19cf08 | 0x8c19cf08 | 44 |
-| operation_8c19e68c | 0x8c19e68c | 188 |
-| operation_8c19e7c8 | 0x8c19e7c8 | 152 |
-| operation_8c19e860 | 0x8c19e860 | 320 |
-| operation_8c19e9a0 | 0x8c19e9a0 | 244 |
-| operation_8c19ed0c | 0x8c19ed0c | 160 |
-| operation_8c19f268 | 0x8c19f268 | 152 |
-| operation_8c1aa8e8 | 0x8c1aa8e8 | 96 |
-| operation_8c1aa9dc | 0x8c1aa9dc | 44 |
-| operation_8c1acbfc | 0x8c1acbfc | 132 |
-| operation_8c1ace6c | 0x8c1ace6c | 56 |
-| operation_8c1ae508 | 0x8c1ae508 | 52 |
-| operation_8c1b1f88 | 0x8c1b1f88 | 140 |
-| operation_8c1b5c08 | 0x8c1b5c08 | 172 |
-| operation_8c1b61c8 | 0x8c1b61c8 | 188 |
-| operation_8c1b811c | 0x8c1b811c | 152 |
-| operation_8c1bda48 | 0x8c1bda48 | 92 |
-| operation_8c1beba4 | 0x8c1beba4 | 124 |
-| operation_8c1bfb90 | 0x8c1bfb90 | 428 |
-| operation_8c1c0218 | 0x8c1c0218 | 96 |
-| operation_8c1c35bc | 0x8c1c35bc | 380 |
-| operation_8c1c6968 | 0x8c1c6968 | 268 |
-| operation_8c1c7658 | 0x8c1c7658 | 180 |
-| operation_8c1c8b88 | 0x8c1c8b88 | 348 |
-| operation_8c1c9398 | 0x8c1c9398 | 72 |
-| operation_8c1ca890 | 0x8c1ca890 | 164 |
-| operation_8c1cd35c | 0x8c1cd35c | 48 |
-| operation_8c1cd440 | 0x8c1cd440 | 64 |
-| operation_8c1d2170 | 0x8c1d2170 | 112 |
-| operation_8c1d23b8 | 0x8c1d23b8 | 192 |
-| operation_8c1d56d8 | 0x8c1d56d8 | 148 |
-| operation_8c1da040 | 0x8c1da040 | 312 |
-| operation_8c1dc638 | 0x8c1dc638 | 76 |
-| operation_8c1dc684 | 0x8c1dc684 | 96 |
-| operation_8c1dfde4 | 0x8c1dfde4 | 184 |
-| operation_8c1e09e8 | 0x8c1e09e8 | 76 |
-| operation_8c1e1b64 | 0x8c1e1b64 | 84 |
-| operation_8c1e2dc4 | 0x8c1e2dc4 | 192 |
-| operation_8c1e71b8 | 0x8c1e71b8 | 372 |
-| operation_8c1ea648 | 0x8c1ea648 | 212 |
-| operation_8c1eb920 | 0x8c1eb920 | 212 |
-| operation_8c1ebdd4 | 0x8c1ebdd4 | 172 |
-| operation_8c1eda20 | 0x8c1eda20 | 184 |
-| operation_8c1ee800 | 0x8c1ee800 | 176 |
-| operation_8c1f1d38 | 0x8c1f1d38 | 228 |
-| operation_8c1f226c | 0x8c1f226c | 192 |
-| operation_8c207160 | 0x8c207160 | 176 |
-| operation_8c207268 | 0x8c207268 | 156 |
-| operation_8c2083f8 | 0x8c2083f8 | 108 |
-| operation_8c20a4cc | 0x8c20a4cc | 128 |
-| operation_8c20a5d0 | 0x8c20a5d0 | 56 |
-| operation_8c217af8 | 0x8c217af8 | 68 |
-| operation_8c217cf0 | 0x8c217cf0 | 28 |
-| operation_8c217d0c | 0x8c217d0c | 48 |
-| operation_8c21994c | 0x8c21994c | 116 |
-| operation_8c21a9f0 | 0x8c21a9f0 | 120 |
-| operation_8c21daec | 0x8c21daec | 56 |
-| operation_8c21f370 | 0x8c21f370 | 84 |
-| operation_8c21f574 | 0x8c21f574 | 60 |
-| operation_8c21f5b0 | 0x8c21f5b0 | 36 |
-| operation_8c2209c8 | 0x8c2209c8 | 44 |
-| operation_8c22232c | 0x8c22232c | 108 |
-| operation_8c2258e4 | 0x8c2258e4 | 136 |
-| operation_8c22697c | 0x8c22697c | 40 |
-| operation_8c227450 | 0x8c227450 | 152 |
-| operation_8c228b08 | 0x8c228b08 | 276 |
-| operation_8c22ace8 | 0x8c22ace8 | 368 |
-| operation_8c22b1a4 | 0x8c22b1a4 | 84 |
-| operation_8c22bb7c | 0x8c22bb7c | 260 |
-| operation_8c22cd80 | 0x8c22cd80 | 104 |
-| operation_8c22da28 | 0x8c22da28 | 260 |
-| operation_8c232644 | 0x8c232644 | 176 |
-| operation_8c23280c | 0x8c23280c | 88 |
-| operation_8c235790 | 0x8c235790 | 40 |
-| operation_8c2382b0 | 0x8c2382b0 | 112 |
-| operation_8c238320 | 0x8c238320 | 128 |
-| operation_8c239eac | 0x8c239eac | 144 |
-| operation_8c23a158 | 0x8c23a158 | 252 |
-| operation_8c23a9c8 | 0x8c23a9c8 | 144 |
-| operation_8c23b958 | 0x8c23b958 | 144 |
-| operation_8c23bdd4 | 0x8c23bdd4 | 248 |
-| operation_8c244ce0 | 0x8c244ce0 | 236 |
-| operation_8c245484 | 0x8c245484 | 108 |
-| operation_8c248980 | 0x8c248980 | 64 |
-| operation_8c248ddc | 0x8c248ddc | 96 |
-| operation_8c24de2c | 0x8c24de2c | 64 |
-| operation_8c25348c | 0x8c25348c | 40 |
-| operation_8c25bb38 | 0x8c25bb38 | 364 |
-| operation_8c25bda4 | 0x8c25bda4 | 372 |
-| operation_8c25ca3c | 0x8c25ca3c | 72 |
-| operation_8c25dbf8 | 0x8c25dbf8 | 276 |
+| operation_8c010298 | 0x8c010298 | 76 |
+| operation_8c012f9c | 0x8c012f9c | 48 |
+| operation_8c01372c | 0x8c01372c | 112 |
+| operation_8c01ae04 | 0x8c01ae04 | 72 |
+| operation_8c01b2f8 | 0x8c01b2f8 | 36 |
+| operation_8c01e790 | 0x8c01e790 | 132 |
+| operation_8c021cc0 | 0x8c021cc0 | 72 |
+| operation_8c021d68 | 0x8c021d68 | 100 |
+| operation_8c02231c | 0x8c02231c | 108 |
+| operation_8c022538 | 0x8c022538 | 92 |
+| operation_8c02330c | 0x8c02330c | 220 |
+| operation_8c023628 | 0x8c023628 | 136 |
+| operation_8c023bb4 | 0x8c023bb4 | 192 |
+| operation_8c0242e0 | 0x8c0242e0 | 76 |
+| operation_8c024570 | 0x8c024570 | 48 |
+| operation_8c02671c | 0x8c02671c | 128 |
+| operation_8c02688c | 0x8c02688c | 68 |
+| operation_8c027550 | 0x8c027550 | 104 |
+| operation_8c027890 | 0x8c027890 | 68 |
+| operation_8c027954 | 0x8c027954 | 68 |
+| operation_8c02a438 | 0x8c02a438 | 144 |
+| operation_8c02a5a8 | 0x8c02a5a8 | 124 |
+| operation_8c02a798 | 0x8c02a798 | 116 |
+| operation_8c02a87c | 0x8c02a87c | 116 |
+| operation_8c02a9e4 | 0x8c02a9e4 | 20 |
+| operation_8c02ab70 | 0x8c02ab70 | 68 |
+| operation_8c02ac50 | 0x8c02ac50 | 68 |
+| operation_8c02b014 | 0x8c02b014 | 80 |
+| operation_8c02b0ec | 0x8c02b0ec | 80 |
+| operation_8c02ba08 | 0x8c02ba08 | 84 |
+| operation_8c02bad4 | 0x8c02bad4 | 84 |
+| operation_8c02bba0 | 0x8c02bba0 | 28 |
+| operation_8c02bf54 | 0x8c02bf54 | 132 |
+| operation_8c02caec | 0x8c02caec | 84 |
+| operation_8c02dbcc | 0x8c02dbcc | 356 |
+| operation_8c0305d8 | 0x8c0305d8 | 68 |
+| operation_8c0379cc | 0x8c0379cc | 156 |
+| operation_8c03879c | 0x8c03879c | 468 |
+| operation_8c03b2f4 | 0x8c03b2f4 | 128 |
+| operation_8c03b3b4 | 0x8c03b3b4 | 88 |
+| operation_8c03f334 | 0x8c03f334 | 160 |
+| operation_8c03f480 | 0x8c03f480 | 20 |
+| operation_8c04c6a8 | 0x8c04c6a8 | 68 |
+| operation_8c04cd5c | 0x8c04cd5c | 404 |
+| operation_8c04fae8 | 0x8c04fae8 | 8 |
+| operation_8c057c74 | 0x8c057c74 | 12 |
+| operation_8c0580c4 | 0x8c0580c4 | 208 |
+| operation_8c058268 | 0x8c058268 | 192 |
+| operation_8c059f44 | 0x8c059f44 | 80 |
+| operation_8c05b68c | 0x8c05b68c | 20 |
+| operation_8c05b90c | 0x8c05b90c | 32 |
+| operation_8c05c9b8 | 0x8c05c9b8 | 48 |
+| operation_8c05ce40 | 0x8c05ce40 | 244 |
+| operation_8c05d048 | 0x8c05d048 | 148 |
+| operation_8c060970 | 0x8c060970 | 36 |
+| operation_8c066dd8 | 0x8c066dd8 | 16 |
+| operation_8c067218 | 0x8c067218 | 20 |
+| operation_8c073240 | 0x8c073240 | 48 |
+| operation_8c073b5c | 0x8c073b5c | 208 |
+| operation_8c073d18 | 0x8c073d18 | 72 |
+| operation_8c074a04 | 0x8c074a04 | 40 |
+| operation_8c078cd8 | 0x8c078cd8 | 128 |
+| operation_8c080818 | 0x8c080818 | 40 |
+| operation_8c0842b0 | 0x8c0842b0 | 120 |
+| operation_8c0844e0 | 0x8c0844e0 | 496 |
+| operation_8c084754 | 0x8c084754 | 120 |
+| operation_8c084ad0 | 0x8c084ad0 | 496 |
+| operation_8c084d34 | 0x8c084d34 | 120 |
+| operation_8c086990 | 0x8c086990 | 68 |
+| operation_8c087ba0 | 0x8c087ba0 | 44 |
+| operation_8c089348 | 0x8c089348 | 96 |
+| operation_8c089768 | 0x8c089768 | 228 |
+| operation_8c089cb8 | 0x8c089cb8 | 232 |
+| operation_8c09a710 | 0x8c09a710 | 28 |
+| operation_8c09eb1c | 0x8c09eb1c | 52 |
+| operation_8c0a7db4 | 0x8c0a7db4 | 4 |
+| operation_8c0b4070 | 0x8c0b4070 | 132 |
+| operation_8c0bccc0 | 0x8c0bccc0 | 528 |
+| operation_8c0c8bc4 | 0x8c0c8bc4 | 68 |
+| operation_8c0c91c4 | 0x8c0c91c4 | 24 |
+| operation_8c0d1620 | 0x8c0d1620 | 100 |
+| operation_8c0d1c9c | 0x8c0d1c9c | 32 |
+| operation_8c0e3294 | 0x8c0e3294 | 120 |
+| operation_8c0e36f8 | 0x8c0e36f8 | 56 |
+| operation_8c0e3858 | 0x8c0e3858 | 388 |
+| operation_8c0e50e0 | 0x8c0e50e0 | 104 |
+| operation_8c0e5a68 | 0x8c0e5a68 | 204 |
+| operation_8c0e5de4 | 0x8c0e5de4 | 4 |
+| operation_8c0e6898 | 0x8c0e6898 | 148 |
+| operation_8c0e97b4 | 0x8c0e97b4 | 292 |
+| operation_8c0eede8 | 0x8c0eede8 | 280 |
+| operation_8c0eef00 | 0x8c0eef00 | 192 |
+| operation_8c0eefc0 | 0x8c0eefc0 | 280 |
+| operation_8c0ef0d8 | 0x8c0ef0d8 | 184 |
+| operation_8c0f0dac | 0x8c0f0dac | 112 |
+| operation_8c0f1860 | 0x8c0f1860 | 4 |
+| operation_8c0f1f98 | 0x8c0f1f98 | 4 |
+| operation_8c0f25a4 | 0x8c0f25a4 | 4 |
+| operation_8c0f28f4 | 0x8c0f28f4 | 4 |
+| operation_8c0f2c44 | 0x8c0f2c44 | 4 |
+| operation_8c0f2fd0 | 0x8c0f2fd0 | 4 |
+| operation_8c0f48c4 | 0x8c0f48c4 | 32 |
+| operation_8c0f7c5c | 0x8c0f7c5c | 32 |
+| operation_8c0fccb0 | 0x8c0fccb0 | 92 |
+| operation_8c0fee1c | 0x8c0fee1c | 20 |
+| operation_8c0ff238 | 0x8c0ff238 | 20 |
+| operation_8c0ff5bc | 0x8c0ff5bc | 20 |
+| operation_8c0ff940 | 0x8c0ff940 | 20 |
+| operation_8c100b40 | 0x8c100b40 | 12 |
+| operation_8c1044b4 | 0x8c1044b4 | 4 |
+| operation_8c107360 | 0x8c107360 | 20 |
+| operation_8c1086fc | 0x8c1086fc | 44 |
+| operation_8c10a57c | 0x8c10a57c | 224 |
+| operation_8c10b22c | 0x8c10b22c | 76 |
+| operation_8c110594 | 0x8c110594 | 40 |
+| operation_8c1135b4 | 0x8c1135b4 | 116 |
+| operation_8c1136b0 | 0x8c1136b0 | 160 |
+| operation_8c113df8 | 0x8c113df8 | 4 |
+| operation_8c114348 | 0x8c114348 | 4 |
+| operation_8c11a2ec | 0x8c11a2ec | 20 |
+| operation_8c11a4f0 | 0x8c11a4f0 | 20 |
+| operation_8c11a718 | 0x8c11a718 | 20 |
+| operation_8c11aac4 | 0x8c11aac4 | 32 |
+| operation_8c11d520 | 0x8c11d520 | 168 |
+| operation_8c11e318 | 0x8c11e318 | 120 |
+| operation_8c11e814 | 0x8c11e814 | 120 |
+| operation_8c11ed10 | 0x8c11ed10 | 100 |
+| operation_8c11f10c | 0x8c11f10c | 20 |
+| operation_8c11f3d8 | 0x8c11f3d8 | 4 |
+| operation_8c122ed8 | 0x8c122ed8 | 20 |
+| operation_8c128ee4 | 0x8c128ee4 | 100 |
+| operation_8c1293c8 | 0x8c1293c8 | 40 |
+| operation_8c130918 | 0x8c130918 | 4 |
+| operation_8c130bf8 | 0x8c130bf8 | 256 |
+| operation_8c131fac | 0x8c131fac | 4 |
+| operation_8c134888 | 0x8c134888 | 168 |
+| operation_8c134f24 | 0x8c134f24 | 4 |
+| operation_8c135570 | 0x8c135570 | 4 |
+| operation_8c13582c | 0x8c13582c | 256 |
+| operation_8c1360ec | 0x8c1360ec | 128 |
+| operation_8c1382d8 | 0x8c1382d8 | 88 |
+| operation_8c13a344 | 0x8c13a344 | 60 |
+| operation_8c13a424 | 0x8c13a424 | 76 |
+| operation_8c13de10 | 0x8c13de10 | 4 |
+| operation_8c13e0fc | 0x8c13e0fc | 4 |
+| operation_8c13e3e8 | 0x8c13e3e8 | 4 |
+| operation_8c13e6ac | 0x8c13e6ac | 196 |
+| operation_8c141208 | 0x8c141208 | 4 |
+| operation_8c1419d8 | 0x8c1419d8 | 380 |
+| operation_8c141e80 | 0x8c141e80 | 40 |
+| operation_8c14491c | 0x8c14491c | 16 |
+| operation_8c144c84 | 0x8c144c84 | 80 |
+| operation_8c14ad80 | 0x8c14ad80 | 224 |
+| operation_8c14d33c | 0x8c14d33c | 272 |
+| operation_8c14d44c | 0x8c14d44c | 4 |
+| operation_8c14d670 | 0x8c14d670 | 100 |
+| operation_8c14de34 | 0x8c14de34 | 248 |
+| operation_8c151b98 | 0x8c151b98 | 48 |
+| operation_8c1579d8 | 0x8c1579d8 | 236 |
+| operation_8c15c43c | 0x8c15c43c | 164 |
+| operation_8c15cab8 | 0x8c15cab8 | 184 |
+| operation_8c15cb74 | 0x8c15cb74 | 4 |
+| operation_8c15d22c | 0x8c15d22c | 4 |
+| operation_8c161ce4 | 0x8c161ce4 | 12 |
+| operation_8c162614 | 0x8c162614 | 4 |
+| operation_8c162e94 | 0x8c162e94 | 296 |
+| operation_8c166964 | 0x8c166964 | 952 |
+| operation_8c167fe4 | 0x8c167fe4 | 384 |
+| operation_8c16aad8 | 0x8c16aad8 | 184 |
+| operation_8c17349c | 0x8c17349c | 36 |
+| operation_8c1771d0 | 0x8c1771d0 | 128 |
+| operation_8c177a90 | 0x8c177a90 | 84 |
+| operation_8c177da0 | 0x8c177da0 | 36 |
+| operation_8c181140 | 0x8c181140 | 96 |
+| operation_8c184b18 | 0x8c184b18 | 140 |
+| operation_8c184d2c | 0x8c184d2c | 304 |
+| operation_8c185064 | 0x8c185064 | 92 |
+| operation_8c185134 | 0x8c185134 | 92 |
+| operation_8c1859d4 | 0x8c1859d4 | 228 |
+| operation_8c186e84 | 0x8c186e84 | 100 |
+| operation_8c1879a0 | 0x8c1879a0 | 684 |
+| operation_8c1880a0 | 0x8c1880a0 | 128 |
+| operation_8c18821c | 0x8c18821c | 68 |
+| operation_8c189df4 | 0x8c189df4 | 260 |
+| operation_8c18a0f0 | 0x8c18a0f0 | 572 |
+| operation_8c18c328 | 0x8c18c328 | 348 |
+| operation_8c18ea1c | 0x8c18ea1c | 4 |
+| operation_8c199388 | 0x8c199388 | 356 |
+| operation_8c19fbe0 | 0x8c19fbe0 | 60 |
+| operation_8c1a0b90 | 0x8c1a0b90 | 320 |
+| operation_8c1a2330 | 0x8c1a2330 | 84 |
+| operation_8c1a36a0 | 0x8c1a36a0 | 176 |
+| operation_8c1a3e7c | 0x8c1a3e7c | 64 |
+| operation_8c1a403c | 0x8c1a403c | 64 |
+| operation_8c1a4308 | 0x8c1a4308 | 64 |
+| operation_8c1a44c8 | 0x8c1a44c8 | 64 |
+| operation_8c1a4688 | 0x8c1a4688 | 64 |
+| operation_8c1a4848 | 0x8c1a4848 | 64 |
+| operation_8c1a4a08 | 0x8c1a4a08 | 64 |
+| operation_8c1a4bc8 | 0x8c1a4bc8 | 64 |
+| operation_8c1a6564 | 0x8c1a6564 | 12 |
+| operation_8c1a6fc8 | 0x8c1a6fc8 | 180 |
+| operation_8c1a7578 | 0x8c1a7578 | 60 |
+| operation_8c1aabb0 | 0x8c1aabb0 | 4 |
+| operation_8c1ad2f8 | 0x8c1ad2f8 | 80 |
+| operation_8c1ae1a4 | 0x8c1ae1a4 | 4 |
+| operation_8c1aeea0 | 0x8c1aeea0 | 4 |
+| operation_8c1af190 | 0x8c1af190 | 372 |
+| operation_8c1af428 | 0x8c1af428 | 4 |
+| operation_8c1b0330 | 0x8c1b0330 | 12 |
+| operation_8c1b8464 | 0x8c1b8464 | 288 |
+| operation_8c1b893c | 0x8c1b893c | 32 |
+| operation_8c1bf044 | 0x8c1bf044 | 48 |
+| operation_8c1bf308 | 0x8c1bf308 | 64 |
+| operation_8c1bf558 | 0x8c1bf558 | 4 |
+| operation_8c1bf954 | 0x8c1bf954 | 4 |
+| operation_8c1bfb14 | 0x8c1bfb14 | 64 |
+| operation_8c1c003c | 0x8c1c003c | 4 |
+| operation_8c1c0784 | 0x8c1c0784 | 124 |
+| operation_8c1c08f8 | 0x8c1c08f8 | 124 |
+| operation_8c1c0a74 | 0x8c1c0a74 | 124 |
+| operation_8c1c1a80 | 0x8c1c1a80 | 100 |
+| operation_8c1c1c1c | 0x8c1c1c1c | 100 |
+| operation_8c1c1db8 | 0x8c1c1db8 | 100 |
+| operation_8c1c1ff0 | 0x8c1c1ff0 | 96 |
+| operation_8c1c20fc | 0x8c1c20fc | 100 |
+| operation_8c1c34d4 | 0x8c1c34d4 | 12 |
+| operation_8c1c3aa4 | 0x8c1c3aa4 | 144 |
+| operation_8c1c43a4 | 0x8c1c43a4 | 80 |
+| operation_8c1c4680 | 0x8c1c4680 | 64 |
+| operation_8c1c4840 | 0x8c1c4840 | 64 |
+| operation_8c1c4a00 | 0x8c1c4a00 | 64 |
+| operation_8c1c4bc0 | 0x8c1c4bc0 | 64 |
+| operation_8c1c4d80 | 0x8c1c4d80 | 64 |
+| operation_8c1c4f54 | 0x8c1c4f54 | 64 |
+| operation_8c1c682c | 0x8c1c682c | 292 |
+| operation_8c1c6ab8 | 0x8c1c6ab8 | 16 |
+| operation_8c1c6dc4 | 0x8c1c6dc4 | 204 |
+| operation_8c1c7054 | 0x8c1c7054 | 408 |
+| operation_8c1c7204 | 0x8c1c7204 | 4 |
+| operation_8c1ce2ec | 0x8c1ce2ec | 100 |
+| operation_8c1ce450 | 0x8c1ce450 | 100 |
+| operation_8c1ce5b8 | 0x8c1ce5b8 | 100 |
+| operation_8c1ce720 | 0x8c1ce720 | 100 |
+| operation_8c1ce884 | 0x8c1ce884 | 100 |
+| operation_8c1ce9ec | 0x8c1ce9ec | 100 |
+| operation_8c1ceb54 | 0x8c1ceb54 | 112 |
+| operation_8c1cecdc | 0x8c1cecdc | 112 |
+| operation_8c1cee68 | 0x8c1cee68 | 112 |
+| operation_8c1ceff0 | 0x8c1ceff0 | 100 |
+| operation_8c1cf154 | 0x8c1cf154 | 100 |
+| operation_8c1cf2bc | 0x8c1cf2bc | 100 |
+| operation_8c1cf564 | 0x8c1cf564 | 112 |
+| operation_8c1cf750 | 0x8c1cf750 | 112 |
+| operation_8c1cf93c | 0x8c1cf93c | 112 |
+| operation_8c1d8210 | 0x8c1d8210 | 20 |
+| operation_8c1d8578 | 0x8c1d8578 | 140 |
+| operation_8c1d87e0 | 0x8c1d87e0 | 140 |
+| operation_8c1d8d24 | 0x8c1d8d24 | 140 |
+| operation_8c1d8fe4 | 0x8c1d8fe4 | 112 |
+| operation_8c1da574 | 0x8c1da574 | 120 |
+| operation_8c1da9c4 | 0x8c1da9c4 | 116 |
+| operation_8c1daec0 | 0x8c1daec0 | 192 |
+| operation_8c1dc9a4 | 0x8c1dc9a4 | 64 |
+| operation_8c1dde78 | 0x8c1dde78 | 80 |
+| operation_8c1de06c | 0x8c1de06c | 116 |
+| operation_8c1e7944 | 0x8c1e7944 | 32 |
+| operation_8c1e8ba8 | 0x8c1e8ba8 | 40 |
+| operation_8c1e9ed0 | 0x8c1e9ed0 | 4 |
+| operation_8c1ea108 | 0x8c1ea108 | 224 |
+| operation_8c1eaf14 | 0x8c1eaf14 | 272 |
+| operation_8c1ecfe0 | 0x8c1ecfe0 | 104 |
+| operation_8c1edad8 | 0x8c1edad8 | 92 |
+| operation_8c1edd8c | 0x8c1edd8c | 76 |
+| operation_8c1ee040 | 0x8c1ee040 | 88 |
+| operation_8c1ee448 | 0x8c1ee448 | 148 |
+| operation_8c1ef3d4 | 0x8c1ef3d4 | 76 |
+| operation_8c1efa50 | 0x8c1efa50 | 136 |
+| operation_8c1efdc4 | 0x8c1efdc4 | 116 |
+| operation_8c1f01a0 | 0x8c1f01a0 | 192 |
+| operation_8c1f0534 | 0x8c1f0534 | 160 |
+| operation_8c1f0ab8 | 0x8c1f0ab8 | 124 |
+| operation_8c1f0fc0 | 0x8c1f0fc0 | 76 |
+| operation_8c1f11f8 | 0x8c1f11f8 | 96 |
+| operation_8c1f156c | 0x8c1f156c | 28 |
+| operation_8c203b58 | 0x8c203b58 | 14 |
+| operation_8c204348 | 0x8c204348 | 4 |
+| operation_8c208268 | 0x8c208268 | 228 |
+| operation_8c208558 | 0x8c208558 | 236 |
+| operation_8c208e30 | 0x8c208e30 | 208 |
+| operation_8c20aeb4 | 0x8c20aeb4 | 64 |
+| operation_8c20ba28 | 0x8c20ba28 | 292 |
+| operation_8c21e4d0 | 0x8c21e4d0 | 212 |
+| operation_8c21f234 | 0x8c21f234 | 160 |
+| operation_8c220650 | 0x8c220650 | 20 |
+| operation_8c225034 | 0x8c225034 | 360 |
+| operation_8c22ab48 | 0x8c22ab48 | 416 |
+| operation_8c22b1f8 | 0x8c22b1f8 | 160 |
+| operation_8c237dec | 0x8c237dec | 172 |
+| operation_8c23b82c | 0x8c23b82c | 136 |
+| operation_8c23bcdc | 0x8c23bcdc | 160 |
+| operation_8c240154 | 0x8c240154 | 32 |
+| operation_8c2421f4 | 0x8c2421f4 | 28 |
+| operation_8c244bfc | 0x8c244bfc | 60 |
+| operation_8c2474a4 | 0x8c2474a4 | 48 |
+| operation_8c24870c | 0x8c24870c | 44 |
+| operation_8c248850 | 0x8c248850 | 36 |
+| operation_8c2488a8 | 0x8c2488a8 | 56 |
+| operation_8c249a50 | 0x8c249a50 | 376 |
+| operation_8c24a5a8 | 0x8c24a5a8 | 104 |
+| operation_8c24c0a0 | 0x8c24c0a0 | 128 |
+| operation_8c24c174 | 0x8c24c174 | 128 |
+| operation_8c24c248 | 0x8c24c248 | 128 |
+| operation_8c24c31c | 0x8c24c31c | 128 |
+| operation_8c24c3f0 | 0x8c24c3f0 | 128 |
+| operation_8c24c4c4 | 0x8c24c4c4 | 128 |
+| operation_8c24d75c | 0x8c24d75c | 336 |
+| operation_8c24ff04 | 0x8c24ff04 | 20 |
+| operation_8c2522c4 | 0x8c2522c4 | 32 |
+| operation_8c255f28 | 0x8c255f28 | 4 |
+| operation_8c258120 | 0x8c258120 | 4 |
+| operation_8c2584c0 | 0x8c2584c0 | 4 |
+| operation_8c258794 | 0x8c258794 | 212 |
+| operation_8c2588b0 | 0x8c2588b0 | 4 |
+| operation_8c25afdc | 0x8c25afdc | 4 |
+| operation_8c25cb30 | 0x8c25cb30 | 208 |
+| operation_8c25cf04 | 0x8c25cf04 | 228 |
+| operation_8c25fcd4 | 0x8c25fcd4 | 112 |
 
 ## Method
 
-Batch 242 comes from hand-finished near misses only; the draft generator did not change. Five separate scratch passes started from generated drafts and edited each one until its whole range compiled exactly:
-- two passes on drafts that differed from the reference in 1–10 lines, covering the targets the first pass (batch 241) did not finish;
-- three passes on drafts that differed in 11–20 lines.
+Batch 243 comes from corrected candidate boundaries, plus a further set of hand-finished near misses. The draft generator did not change; this batch's drafts are from the generator used for batch 242's pool cycle.
 
-The same rules as batch 241 applied:
-- at most ten distinct hypotheses per target, counting earlier scratch probes of the same address, with identical compiler outputs counted once;
+**Why the boundaries were wrong.** A boundary review found that the candidate miners had mis-cut many units. Their reachability walk did not follow switch jump tables, and they counted jump-table words as references to function entries. That had three effects:
+- switch case arms became separate candidates;
+- functions containing a switch were cut at the table;
+- early over-long ranges hid the functions after them.
+
+**The corrected range rule.**
+1. **Walk.** From each entry, the walk follows every branch and every jump-table arm. It stops at `rts`, at a tail `jmp`, and at a `bra` into another entry.
+2. **Unit end.** The unit ends at the last literal-pool or jump-table word its code references. It is rounded to a 4-byte boundary only when the next halfword is filler.
+3. **Entry checks.** An entry is accepted only with positive evidence: a call or branch target, a literal-pool reference, or a table entry. It must also have a clean start.
+4. **Unit checks.** A unit is rejected if its walk branches before the entry, falls into another entry, or contains unexplained words.
+
+The rule reproduces the manifest size of all 7,803 admitted game functions. This batch covers the review's 746 corrected ranges for existing candidates: units whose old range ran past the function's literal pool, swallowed a following routine, or stopped short at a jump table. They were redrafted at the corrected ranges in 11 modes, and 307 drafts were accepted, all exact over the full corrected range. The review's new candidates (units no candidate covered) follow in the next batches.
+
+**Hand-finished near misses.** One further scratch pass hand-finished generated drafts that differed from the reference in 11–20 lines, using the same rules as batches 241 and 242:
+- at most ten distinct hypotheses per target, counting earlier probes, with identical compiler outputs counted once;
 - ordinary C or C++ only, with the pinned compiler and flags;
 - full-range exact only;
-- no declaration-order search. A pass could make one labelled declaration-order comparison per target, only to test whether a declaration's placement decided a match; such a source was never admitted on that basis.
+- no declaration-order search.
 
-The five passes compiled 244, 81, 198, 208 and 92 hypotheses. The most on one target was 7 in any single pass, or 9 counting earlier probes. One target, `0x8c0610c8`, has 11 logged probes in total, but they produce at most 7 distinct compiler outputs. Every pass found its own exact sources, and each source was re-verified before admission.
+The pass compiled 158 hypotheses on 73 targets, at most 7 on any target including earlier probes. It made one labelled declaration-order comparison, which changed nothing; that target is parked. For every hand-finished source that adds a local, another placement of its declaration was also exact.
 
-Held back and not trialled:
-- where a newly added variable was declared decided or may have decided the match: `0x8c1c9978`, `0x8c21f2d4`, `0x8c247654`, `0x8c18635c`, `0x8c186510`, `0x8c184828`, `0x8c1a19cc`, `0x8c1aab30`, `0x8c184cf8`, `0x8c241fd8`, `0x8c223298`, `0x8c1b6654`, `0x8c173ad0` and its sibling `0x8c187648`, `0x8c10cbb8` and `0x8c07d4e0`;
-- the match depends on a call argument the callee does not read, or on a prototype that contradicts an admitted callee: `0x8c151938`, `0x8c24a000` and `0x8c1c9c38`;
-- `0x8c03b290`: the instructions match, but the range ends in alignment padding that needs its neighbouring function in the same unit.
-
-Eleven further exact sources were refused by the history guard and remain blocked. Eight are historically uncertain: `0x8c0c1a4c`, `0x8c118f94`, `0x8c0315d8`, `0x8c041690`, `0x8c119190`, `0x8c161bdc`, `0x8c0b6174` and `0x8c119c78`. For the other three, `0x8c158450`, `0x8c1e6f50` and `0x8c2436e4`, the guard requires a new observation that addresses the recorded blocker of an earlier parked attempt. None was forced.
+The history guard refused no attempt in this batch.
 
 Previously blocked targets stay blocked, and the three drafts held back in batch 224 remain held back.
 
 Before admission, the boundaries of every unit were checked:
-- each entry follows a literal pool (186) or a function end (10);
+- each entry follows a literal pool (284) or a function end (44);
 - no unit overlaps an admitted function or another unit;
-- no branch from outside a unit lands in it;
+- the only branches from outside a unit land on an entry: a `bsr` call and a tail-call `bra` to `0x8c203b58`;
 - every entry is 4-aligned.
 
 ## Measured attempts
 
-207 recorded attempts on 207 targets, all hypotheses and all exact. The 11 refused by the history guard are not admitted. 196 units / 196 functions / 30,216 bytes were admitted after two independent reproductions each, all hand-finished from generated drafts.
+328 recorded attempts on 328 targets, all hypotheses and all exact. 328 units / 328 functions / 37,914 bytes were admitted after two independent reproductions each:
+- 307 unedited generated drafts at corrected ranges (31,166 bytes);
+- 21 hand-finished sources (6,748 bytes).
 
 Disclosure:
-- Every admitted function was first found exact in a scratch comparison, as logged in the hand-finishing passes' attempt logs.
-- All admitted sources in this batch were finished by hand from generated drafts.
-- One admitted function, `0x8c103b98`, had recorded unsuccessful attempts from an earlier cycle; it is within the hypothesis limit.
-- **Changes that made the drafts exact,** by kind:
-  - **Prototypes.**
-    - A float parameter before a pointer in the callee's logical prototype (CW12). The registers are unchanged.
-    - Void callees that never read `r4`.
-    - Narrow (`unsigned char` or `short`) parameters for callees that read a byte or halfword argument raw, or only store it as one.
-    - `int` for stack parameters that are sign-extended before the push.
-    - Variadic integer arguments passed without float conversion.
-  - **Switches and returns.**
-    - Compare chains rewritten as switches, with grouped cases or `default: return;`.
-    - Cases that all assign one result variable.
-    - Ternary returns for an unfilled `rts` arm.
-    - `return` inside a search loop.
-    - Goto drafts restructured as `for`, `while` or `switch`, with `if`/`else` in reference layout.
-  - **Statement and operand order.**
-    - Extern global stores written in the order CodeWarrior schedules them: the group's first emitted store comes last in the source.
-    - Comparisons written in the order their operands are loaded.
-    - Values read before a test when the reference loads them in the branch's delay slot.
-  - **Locals and temporaries.**
-    - Named constants and offsets.
-    - Shared differences held in a local of matching width.
-    - Fields read once into a local.
-    - Parameters and loop pointers stepped in place.
-    - Call results assigned straight to the variable that holds them.
-    - A cursor copied at the loop top.
-  - **Address forms.**
-    - CW19 cast barriers.
-    - `p = base; p += i * size`.
-    - Byte-pointer arithmetic on C++ class pointers.
-    - Extern member addresses for literals inside an extern object.
-  - **Copies.** A halfword copy loop written as a struct assignment, and adjacent block copies merged.
-
-- **Per function**, the change that made each draft exact:
-    - `0x8c012a14` (148 bytes): binary search assigning lo/hi directly in each arm, comparison written in load order (f20 < (ushort)a0).
-    - `0x8c01e1ac` (72 bytes): mask 0x606 as a named int local (v1 & f20) == v1.
-    - `0x8c021b50` (252 bytes): last call integer arguments held in int locals before the call, float field inline (approach first seen in a research probe 8c021b50_a.c).
-    - `0x8c023df0` (84 bytes): parameter a1 advanced in place as the loop pointer (no copy).
-    - `0x8c023f00` (60 bytes): o->f20 read once before the loop into a short local; a1 advanced in place.
-    - `0x8c027070` (32 bytes): base-first pointer p = o+0x418; p += idx<<2; return p+0x48.
-    - `0x8c02f290` (116 bytes): 116 (C++); CW19 cast barrier (int *) on o + 0x1d14 before adding a1 * 12 in the record copy.
-    - `0x8c038e8c` (120 bytes): f36c pointer local plus CW12 logical prototype with the pointer argument last (float args first); goto rewritten as if/else + single-case switch.
-    - `0x8c03ec84` (108 bytes): rounded size stored back into frame.f00 before the f428 +=; v1 = o->f428; v1 += v2.
-    - `0x8c03ee90` (116 bytes): a0 replaced in place; stack buffer as char frame[0x20] with bound &frame[0x1b].
-    - `0x8c03ef04` (124 bytes): sibling of 8c03ee90: a0 replaced in place, char frame[0x20], bound &frame[0x1b].
-    - `0x8c04bee4` (48 bytes): halfword copy written as a do-while over the source, with byte offsets as shifts.
-    - `0x8c051450` (164 bytes): CW12 float-before-pointer logical prototype for operation_8c04a43c plus comparison written o->ff8 < product.
-    - `0x8c0525b4` (148 bytes): loop counter assigned before the loop-invariant constants.
-    - `0x8c053f54` (236 bytes): binary search lo/hi assigned directly in each arm, compare in load order, unsigned short return type (raw v3 returned).
-    - `0x8c054040` (44 bytes): loop bound 0x18c as a named int local set before the counter.
-    - `0x8c060660` (76 bytes): extern store statement order g4c = 0, g48, g50 (CW emits the last store of a scheduled group first).
-    - `0x8c0610c8` (168 bytes): clamp with v1 = t1 before the tests (bf/s slot) and else-if; f400 typed int with compound -= / += 0x800 (sub with the shared literal); goto removed.
-    - `0x8c067e04` (288 bytes): call result assigned straight to the id local; id local and the g_8c4689bc snapshot as shorts (raw copies, (unsigned short) test).
-    - `0x8c07a9a4` (300 bytes): sibling of 8c0cfb80: CW12 float-first prototype for operation_8c04a43c plus short counter snapshot.
-    - `0x8c07cd8c` (40 bytes): global object pointer read once into a local and first field read into an int temp before its store.
-    - `0x8c07d1ac` (68 bytes): unsigned char clamp local plus narrow callee prototype (callee extu.b's r5/r6).
-    - `0x8c07d324` (212 bytes): f458 store written as sub-object (f13c + 0x418) + 0x40 behind a CW19 cast barrier, sharing the 0x418 literal with the call argument.
-    - `0x8c086e98` (64 bytes): extern store statement order d04, d0c, d10, d08 (CW emits the last store of a scheduled group first, into r0 / last pool slot).
-    - `0x8c087a9c` (112 bytes): h/m/s total accumulated in an int local over three statements (evaluation order).
-    - `0x8c08dd70` (88 bytes): global as pointer to 72-byte records (g[i].f00, mul.l index) with the -1 fill value as a named short local.
-    - `0x8c08fde8` (208 bytes): entry byte offset f108 << 4 computed once into an int local for handler and entry pointer.
-    - `0x8c09d870` (260 bytes): CW19 cast barrier; loop pointer and counter assigned before the loop-invariant constants.
-    - `0x8c0a1d18` (440 bytes): 440 (C++); five effect-mode returns as one || chain; loop counter zeroed before the f00 test (bt/s slot); single short cursor incremented and wrapped in place with the counter increment before the wrap test.
-    - `0x8c0a3c80` (356 bytes): float local zeroed once at the top; goto ladder rewritten as an else-if chain.
-    - `0x8c0bbab8` (108 bytes): tree walk: cursor copied at each loop top and advanced (next = cur->f0c) before the key test, both loops.
-    - `0x8c0be070` (180 bytes): 180 (C++); virtual slot v24 returns float (its fr0 result is passed to v27).
-    - `0x8c0bf6b8` (256 bytes): goto ladder rewritten as a switch on int f39c (grouped 0x107/0x10e, default state ladder) plus local v1 = f39c for the f3a0 compare and argument (research probe 8c0bf6b8_b.c found the local).
-    - `0x8c0c8a78` (264 bytes): zeroed Vector3 at 0x8c46fa08 as an extern Vector3 object (one address literal, member adds) instead of three float casts; binding g_8c46fa08 added.
-    - `0x8c0cb824` (300 bytes): flag v1 = 0 set before the test (bf/s slot); distance f2c - f34 in a float local for f24 * d * d + f28.
-    - `0x8c0cfb80` (184 bytes): CW12 float-before-pointer prototype for operation_8c04a43c plus short counter snapshot before the decrement.
-    - `0x8c0d1f28` (88 bytes): destination globals as externs (CW14) with the f08 store written before the a1 + 0x54 store (a1 advanced in place).
-    - `0x8c0d9530` (56 bytes): record pointer p = &rec->f40 and q = &p->f44 kept as locals; args p, q + 1, 0, *q - 1.
-    - `0x8c0dd1c0` (236 bytes): flags as int local of (unsigned short)f20, call result int with (unsigned short) compare and raw pass (admitted spawn_item(unsigned short) prototype), structured release-then-return arm.
-    - `0x8c0dd2ac` (316 bytes): flags as an int local holding (unsigned short)f20; final f54 block through a once-loaded local pointer (draft goto kept).
-    - `0x8c0dd504` (236 bytes): g_8c4dbde0 read once into a local inside the f28 block (r4 kept live for the final operation_8c18c680 call, which therefore sets no r4).
-    - `0x8c0de30c` (36 bytes): structured while ((c = *p) != 0) { if (c == 9) break; p++; } with a char temp.
-    - `0x8c0df924` (212 bytes): a field read once into a scoped unsigned char; goto rewritten as an if.
-    - `0x8c0ecd94` (244 bytes): branch f184 stores written inline like the f17c store (no float temporaries for the unsigned conversion).
-    - `0x8c0eea7c` (132 bytes): comparison operands written in load order (v3 < g; f20 < (ushort)v1), field compared inline.
-    - `0x8c0fcff4` (820 bytes): 820 (C++); virtual slot v25 returns float and v27 takes (Object *, float); its result scaled by 0.1f is the v27 argument (draft dropped it).
-    - `0x8c0fd64c` (124 bytes): 4-byte table record copied in one expression (no entry-pointer local); goto replaced by if/else.
-    - `0x8c100524` (152 bytes): per-iteration byte offset v1 << 2 held in an int local reused for both tables across the call.
-    - `0x8c100cf4` (216 bytes): 216 (C++); variadic f88/f98 arguments passed as raw ints (reference pushes words, no float conversion).
-    - `0x8c1032a0` (48 bytes): if (p) { for loop } else return 0; return 1; (gives the dead bra and return-0-first layout); separate store then p++.
-    - `0x8c103360` (80 bytes): clamp limit 0xf423f as a named int local set just before the test (CW03).
-    - `0x8c103b50` (72 bytes): entry pointer local for the two table bytes and operation_8c0243ec as an extern callee (call address r0).
-    - `0x8c103b98` (116 bytes): 116 (C++); entry pointer local for the two table bytes (sibling of 8c103b50).
-    - `0x8c10d954` (388 bytes): goto loops as for loops; f8a copies masked & 0xffff (extu before halfword stores); second record store based on a frame f0a field; length expression in an int local before the (unsigned char) argument (keeps the exts.b of f07).
-    - `0x8c10ea5c` (192 bytes): o->f88 read once into a short local and the difference kept as a short local; goto ladder as else-if chain.
-    - `0x8c1102b8` (168 bytes): f7c->f94->f20 read once into an unsigned short local used for the 0xffff test and as the call argument.
-    - `0x8c116f60` (616 bytes): f114 clamp through a float local read once (if > 64 / else if < -64).
-    - `0x8c11bb2c` (100 bytes): switch with `case 1: case 2: return;` and the body in default.
-    - `0x8c122164` (80 bytes): v1->f04 read once into a local for global store and call; float result converted into an int local before the byte-offset add.
-    - `0x8c137050` (388 bytes): difference kept in a short local (sign test on it) and the callee third parameter short (callee only stores it as a halfword).
-    - `0x8c13f454` (40 bytes): v1 = 4 set before the first global test, v1 += 8 (dead final compares kept).
-    - `0x8c13f708` (276 bytes): `if (...) call(...); else return;`.
-    - `0x8c144bc4` (52 bytes): scaled value computed into an int local before the f6cc -= (tail call).
-    - `0x8c1501a0` (200 bytes): record pointer advanced by 16 right after reading f0c, before the two calls, and passed directly.
-    - `0x8c150680` (188 bytes): first field read through a scoped int offset local (CW09).
-    - `0x8c157d3c` (152 bytes): named -1 constant assigned just before its first use, after the ff4 update (CW03 statement placement); tail-call jmp leaf.
-    - `0x8c1580d0` (64 bytes): 8-byte entry pointer local plus a ternary return (gives the unfilled rts/nop arm).
-    - `0x8c15813c` (48 bytes): 8-byte entry pointer copied from the base then += a0 << 3 (copy-then-add rule), nested ifs; placement robust.
-    - `0x8c15816c` (64 bytes): 8-byte entry pointer local inside the bound test.
-    - `0x8c1584b4` (108 bytes): goto draft as for loop with break, parameter updated in place a0 = (unsigned char)a0 + 1, match counter v3 = 0 set after it.
-    - `0x8c158570` (56 bytes): masked table index (a0 & 0x7f) held in one unsigned char local reused by both loads.
-    - `0x8c15864c` (76 bytes): unsigned char callee parameter for the byte field (an earlier probe rule).
-    - `0x8c158794` (80 bytes): inner range test as ternary return with an unsigned char false arm (single extu).
-    - `0x8c1588f8` (64 bytes): the call takes &a0 itself (no separate frame), then a0 = a0 - 1 is stored back and passed (rule from an earlier probe probe on sibling 8c1588b8).
-    - `0x8c158938` (72 bytes): &a1 passed to operation_8c163ee0, a1 = a1 - 1 stored back and passed (sibling of 8c1588f8).
-    - `0x8c15c2ac` (172 bytes): extern constant stores written in the other order (CW reorders extern stores; source order fixes constant registers).
-    - `0x8c15c358` (228 bytes): extern constant stores written in the other order (rule from 8c15c2ac).
-    - `0x8c15c4e0` (228 bytes): extern constant stores written in the other order (rule from 8c15c2ac).
-    - `0x8c15cd30` (192 bytes): first two zeroed globals extern (CW14, both addresses live), last two as address casts.
-    - `0x8c16bce0` (88 bytes): reproduction of an earlier probe probe c (switch with case-1 fall-through, Vector3 copy).
-    - `0x8c16be70` (152 bytes): return the value of the compound increment (no re-read).
-    - `0x8c16c27c` (124 bytes): reproduction of an earlier probe probe a (single-case switch on the byte).
-    - `0x8c16cb54` (52 bytes): zero-extended argument held in one int local (as earlier probe).
-    - `0x8c171248` (116 bytes): a0 post-incremented in the first table index, a1 incremented in place in the fallback path; extern call declarations (CW04) instead of literal function pointers.
-    - `0x8c1723f0` (20 bytes): entry pointer local, zero-extended low byte held in an int temp before the byte store (CW20 extra extu).
-    - `0x8c172404` (20 bytes): halfword sibling of 8c1723f0.
-    - `0x8c17242c` (196 bytes): pointer post-increment inside the scan test (fills bt/s).
-    - `0x8c176cc8` (236 bytes): argument written as &g_8c4db6a0.f0c (extern base + 0xc unfolded) instead of the literal 0x8c4db6ac.
-    - `0x8c17777c` (144 bytes): flat early-return second guard; extern char bit table with (g - 1) row base (8c17796c family).
-    - `0x8c177848` (140 bytes): sibling of 8c17777c (flat guard, extern char table with (g - 1) row base).
-    - `0x8c17796c` (148 bytes): reproduction of an earlier probe probe 8c17796c_a: block-local shift s = 8 - t1, extern char table with (g - 1) row base behind int-pointer cast barriers (CW19).
-    - `0x8c177a00` (144 bytes): sibling of 8c17796c (block-local shift, extern char table with (g - 1) row base).
-    - `0x8c17a044` (96 bytes): float default then switch assigning per-case constants.
-    - `0x8c17b70c` (56 bytes): target float field pointer p formed once, compare *p < o->f204 and store o->f204 (no float local; CW reuses the loaded value).
-    - `0x8c17b838` (48 bytes): both halfword fields read into short locals first (f20a then f208), positive call test b > a || -a > b; placement robust.
-    - `0x8c17ede4` (232 bytes): loop index zeroed before the -1 constant (statement order of the two initialisations).
-    - `0x8c1845e4` (44 bytes): chained zero assignment g40 = g44 = g48 = 0 (right-to-left store order matches pool order).
-    - `0x8c1848e0` (44 bytes): chained zero assignment g44 = g48 = 0 (CW stores the innermost first).
-    - `0x8c186b40` (56 bytes): shared byte offset local off = v1 << 3 used for both pair-word arguments; placement robust.
-    - `0x8c187094` (112 bytes): scoped local copy of the stack-homed object for the text-buffer address arguments.
-    - `0x8c189294` (200 bytes): capacity limit o->f28->f184->f20 read into a local before the table compare; placement robust.
-    - `0x8c1913d8` (80 bytes): return inside the search loop instead of break.
-    - `0x8c1931d4` (180 bytes): table pointer read once in the guard, base id computed once and copied.
-    - `0x8c197bec` (108 bytes): second pointer v1 = o->f30->f3c read before the frame float computations (statement order).
-    - `0x8c19cedc` (44 bytes): test-at-bottom goto loop with one char temp for the key byte (dead second parameter removed).
-    - `0x8c19cf08` (44 bytes): sibling of 8c19cedc (field 0x10), same goto loop with char temp.
-    - `0x8c19e68c` (188 bytes): unsigned-to-float conversion folded into o->f10 += (float)(unsigned)t (no float temporaries, field read before the conversion).
-    - `0x8c19e7c8` (152 bytes): parameter a1 reused for the new buffer: t2 = alloc; src = a1; a1 = t2; copy(a1, src, t1 + 1); o->f20 = a1; placement robust.
-    - `0x8c19e860` (320 bytes): unsigned char callee parameter plus named buffer address local before the null test.
-    - `0x8c19e9a0` (244 bytes): unsigned char callee parameter plus named buffer address local before the null test.
-    - `0x8c19ed0c` (160 bytes): sibling of 8c19e7c8 (parameter reused for the new buffer via t2/src).
-    - `0x8c19f268` (152 bytes): sibling of 8c19e7c8 (parameter reused for the new buffer via t2/src).
-    - `0x8c1aa8e8` (96 bytes): reproduction of earlier an earlier probe hand probe (exact there, not admitted); see attempts.tsv.
-    - `0x8c1aa9dc` (44 bytes): inner decrement test as a ternary return (gives the mov/rts/nop arm).
-    - `0x8c1acbfc` (132 bytes): reproduction of earlier an earlier probe hand probe (exact there, not admitted); see attempts.tsv.
-    - `0x8c1ace6c` (56 bytes): reproduction of earlier an earlier probe hand probe (exact there, not admitted); see attempts.tsv.
-    - `0x8c1ae508` (52 bytes): f398 read into one int local before the second global test (fills bf/s), predicate returns.
-    - `0x8c1b1f88` (140 bytes): shared nibble computed once into a local, pointer argument local, if/else layout.
-    - `0x8c1b5c08` (172 bytes): out-parameter words read into int locals before the null test (fills bt/s).
-    - `0x8c1b61c8` (188 bytes): out-parameter words read into int locals before the null test (fills bt/s).
-    - `0x8c1b811c` (152 bytes): shared row base pointer, both table entries read before the test, v3 == 0 block as a single-case switch (tst/bt/bra/nop); row placement robust.
-    - `0x8c1bda48` (92 bytes): comparison written f6b < v1 so the operands load in reference order.
-    - `0x8c1beba4` (124 bytes): extern zero stores written in ascending address order (ba0, ba4 ints then ba8, bac floats); CW reorders them into the reference order.
-    - `0x8c1bfb90` (428 bytes): 428 bytes (C++); last chain pointer read before the f88 == 3 test (fills bf/s).
-    - `0x8c1c0218` (96 bytes): first copied word read into an int local before its global store.
-    - `0x8c1c35bc` (380 bytes): named int bound 0x270f set just before the clamp (CW03 constant lifetime).
-    - `0x8c1c6968` (268 bytes): 268 bytes (C++); virtual slot 0x58's stacked last parameter declared int (exts.w before push).
-    - `0x8c1c7658` (180 bytes): goto tangle as nested switches with result v8 = 0 set up front; 0x8c158110 and 0x8c1581ac called with one argument (as their admitted sources; draft passed a spurious 0).
-    - `0x8c1c8b88` (348 bytes): goto-tangled draft rewritten as a switch on f02 (cases in body order) with a 1.0f default result.
-    - `0x8c1c9398` (72 bytes): every switch case assigns a result variable and breaks, single return (tail-duplicated rts; default arm keeps rts/nop).
-    - `0x8c1ca890` (164 bytes): scaled index held in one int local off = a1 << 2 reused by both table reads; placement robust.
-    - `0x8c1cd35c` (48 bytes): volatile unsigned short flag field (CW20, as admitted sibling raise_marker_8c1cd2f4) keeps the reload and double extu.w.
-    - `0x8c1cd440` (64 bytes): goto layout mirroring reference blocks (loop-entry block last), wrapped first guard, !(a >= b) test.
-    - `0x8c1d2170` (112 bytes): f72 read before f74 (statement order) and the f28 == 0 predicate computed inline as the stack argument (no local).
-    - `0x8c1d23b8` (192 bytes): record table at 0x8c289330 as an extern Block8 array (CW14: base + 8 not folded).
-    - `0x8c1d56d8` (148 bytes): loop test written (short)i < f86 (operand order).
-    - `0x8c1da040` (312 bytes): second flag-clear block written in the same nested form as the first.
-    - `0x8c1dc638` (76 bytes): reproduction of earlier an earlier probe hand probe (exact there, not admitted); see attempts.tsv.
-    - `0x8c1dc684` (96 bytes): void return: the draft return value was r0 left over from the last block-copy loop.
-    - `0x8c1dfde4` (184 bytes): unsigned char callee parameter for the byte global.
-    - `0x8c1e09e8` (76 bytes): byte argument narrowed in place (a1 = (unsigned char)a1) plus an int local for the table byte.
-    - `0x8c1e1b64` (84 bytes): sum built in separate statements so CW does not fold the -3/-3/-1 constants.
-    - `0x8c1e2dc4` (192 bytes): signed byte read into an int local then (unsigned char) cast (keeps exts+extu).
-    - `0x8c1e71b8` (372 bytes): signed byte via int local then (unsigned char) table index, the form found for `0x8c1e6f50`.
-    - `0x8c1ea648` (212 bytes): block-scoped int pointer to the 0x760 flag word (CW17) and the table halfword read into a block short local before the ff0 store.
-    - `0x8c1eb920` (212 bytes): sibling of 8c1ea648.
-    - `0x8c1ebdd4` (172 bytes): table halfword read into a short local before the field store (offset literal not hoisted).
-    - `0x8c1eda20` (184 bytes): CW19 cast barrier on o + 0x418 before the scaled halfword index.
-    - `0x8c1ee800` (176 bytes): operation_02c350 declared short (as its admitted source), table halfword read into a short local before the field compare; placement robust.
-    - `0x8c1f1d38` (228 bytes): loop stores an int -1 (named constant set after the counter, CW03) into the f80 word.
-    - `0x8c1f226c` (192 bytes): 192 bytes (C++); external call declarations (CW04) except the 0x8c3be280 call which stays a literal function pointer.
-    - `0x8c207160` (176 bytes): slot base built from the already-scaled index variable (g + 4 + (v2 << 7)) instead of recomputing the multiply.
-    - `0x8c207268` (156 bytes): value of the compound assignment tested: if ((o->f02 += o->f06) == 0) return (draft re-added f06 in the test).
-    - `0x8c2083f8` (108 bytes): global pointer read once into a local and passed to the release call.
-    - `0x8c20a4cc` (128 bytes): record base assigned first then += index*0xb4 (same rule as 8c217af8).
-    - `0x8c20a5d0` (56 bytes): record base assigned first then += i*0xb4 (same rule as 8c217af8).
-    - `0x8c217af8` (68 bytes): base assigned first then compound += of the scaled index (base materialised in the destination register).
-    - `0x8c217cf0` (28 bytes): pointer post-increment inside the ',' comparison.
-    - `0x8c217d0c` (48 bytes): token copy loop with char temp, increment before the ',' break.
-    - `0x8c21994c` (116 bytes): base count read once into a local, stored, scaled and reused as the second call argument.
-    - `0x8c21a9f0` (120 bytes): 0x8c38ae68 declared and called with no argument (reference sets no r4).
-    - `0x8c21daec` (56 bytes): current value read once into a local after the call; extern stores written 968 before 970 (CW reorders extern stores; source order fixes address registers, as an earlier probe 8c15c2ac).
-    - `0x8c21f370` (84 bytes): reproduction of earlier an earlier probe hand probe (exact there, not admitted); see attempts.tsv.
-    - `0x8c21f574` (60 bytes): slot pointer formed once (p, p + 4 arguments) and byte block pointer q = o + 0x54 for the four stores; placement robust.
-    - `0x8c21f5b0` (36 bytes): return inside the search loop instead of break (duplicated rts tail).
-    - `0x8c2209c8` (44 bytes): extra 0x20 flag test assigning 0 (compiler keeps the dead test).
-    - `0x8c22232c` (108 bytes): the two extern global stores written in the other order (g_8c506060 = o->f22c8 before g_8c506064 = 0x40000; CW reorders extern stores).
-    - `0x8c2258e4` (136 bytes): allocation results assigned straight to the slot/result locals, retry loop tests the result.
-    - `0x8c22697c` (40 bytes): short (not int) temporary for the decremented halfword.
-    - `0x8c227450` (152 bytes): counter zeroed before the allocation call, poll loop with post-increment bound break.
-    - `0x8c228b08` (276 bytes): part 0/1 clamp written as a switch with grouped cases (compare chain without delay-slot fill).
-    - `0x8c22ace8` (368 bytes): for (;;) retry loop assigning the handle directly (no duplicated temporaries), != -1 test on it.
-    - `0x8c22b1a4` (84 bytes): index byte read into a char local before the global null test.
-    - `0x8c22bb7c` (260 bytes): reproduction of earlier an earlier probe hand probe (exact there, not admitted); see attempts.tsv.
-    - `0x8c22cd80` (104 bytes): extern data symbols for the first three zeroed globals (CW14), later three stay casts.
-    - `0x8c22da28` (260 bytes): result flag zeroed first and its value stored to f98.
-    - `0x8c232644` (176 bytes): poll result handled by a switch (case 1 / default), no-argument 0x8c378e98 call.
-    - `0x8c23280c` (88 bytes): adjusted int v1 narrowed back into the int parameter (a0 = (char)v1) before the second table test and search loop.
-    - `0x8c235790` (40 bytes): halfword swap through a short temporary read first (draft had lost the swap); tmp placement robust.
-    - `0x8c2382b0` (112 bytes): reproduction of earlier an earlier probe hand probe (exact there, not admitted); see attempts.tsv.
-    - `0x8c238320` (128 bytes): sibling 8c2382b0 loop structure (break after v7 = v4) with the start draft's declaration order.
-    - `0x8c239eac` (144 bytes): 144 bytes (C++); f13c pointer read once into a local for the effect-creation arguments.
-    - `0x8c23a158` (252 bytes): C++; CW12 float-first logical prototype for the 0x8c076af4 call (rule from 8c248ddc).
-    - `0x8c23a9c8` (144 bytes): 144 bytes (C++); sibling of 8c239eac (f13c local).
-    - `0x8c23b958` (144 bytes): 144 bytes (C++); sibling of 8c239eac (f13c local).
-    - `0x8c23bdd4` (248 bytes): C++; CW12 float-first logical prototype for the 0x8c076af4 call (rule from 8c248ddc).
-    - `0x8c244ce0` (236 bytes): the two block pointers accessed through address casts (clearing store stays before the next load), others extern.
-    - `0x8c245484` (108 bytes): binary search assigning lo/hi directly in each arm.
-    - `0x8c248980` (64 bytes): the "parameter home" store is the frame field f08 = a0 (draft had dropped it and added an &a0 home).
-    - `0x8c248ddc` (96 bytes): 96 bytes (C++); CW12 float-first logical prototype for the 0x8c076af4 call.
-    - `0x8c24de2c` (64 bytes): reproduction of earlier an earlier probe hand probe (exact there, not admitted); see attempts.tsv.
-    - `0x8c25348c` (40 bytes): struct assignment of a 0x704-byte short-array block (halfword dt block copy).
-    - `0x8c25bb38` (364 bytes): signed byte via int local then (unsigned char) table index, the form found for `0x8c1e6f50`.
-    - `0x8c25bda4` (372 bytes): signed byte via int local then (unsigned char) table index, the form found for `0x8c1e6f50`.
-    - `0x8c25ca3c` (72 bytes): table pointer decremented between reading the callback and testing it (fills bt/s).
-    - `0x8c25dbf8` (276 bytes): one result v3 = -1 preset then assigned by the call or 0; the 0x98 halfword read as volatile unsigned short & 0xffff (CW20) for the range test and the frame copy.
-- **Declaration-order comparisons:** one pass made one labelled comparison on each of 24 targets, and another on 3, moving only a new variable's declaration, to test whether its placement decided the match. Eleven admitted sources stayed exact with the other placement: `0x8c15813c`, `0x8c17b838`, `0x8c186b40`, `0x8c189294`, `0x8c19e7c8`, `0x8c1b811c`, `0x8c1ca890`, `0x8c1ee800`, `0x8c21daec`, `0x8c21f574` and `0x8c235790`; `0x8c2436e4` also stayed exact but was refused by the history guard. For `0x8c1584b4` the admitted source adds no variable, so the comparison does not bear on it. The eleven sensitive ones are held back above. No declaration orders were searched.
-- **Reuse of earlier scratch probes.** Nineteen admitted sources reproduce a form that an earlier scratch probe had already found exact, without that function being admitted then:
-  - `0x8c217cf0`, `0x8c16cb54`, `0x8c1aa8e8`, `0x8c1acbfc`, `0x8c1ace6c`, `0x8c1dc638`, `0x8c21f370`, `0x8c2382b0` and `0x8c24de2c` (last cycle's generator research);
-  - `0x8c22bb7c` (disclosed in batch 240);
-  - `0x8c16bce0`, `0x8c16c27c` and `0x8c1845e4` (earlier cycles);
-  - `0x8c0610c8`, `0x8c038e8c` and `0x8c027070`, which were found again independently;
-  - `0x8c17796c` (last cycle's generator research);
-  - `0x8c021b50` and `0x8c0bf6b8` (earlier cycles).
-- **Log integrity.** One duplicate row, an identical diagnostic rerun, was deleted from one pass's automatic compile log. The deletion is noted in that pass's attempt log.
+- Every admitted function was first found exact in a scratch comparison, as logged under `drafttest/` or in the hand-finishing pass's attempt log.
+- The corrected-range drafts are unedited generated drafts.
+- **The boundary review** was a scratch analysis. It changed no source and recorded no trials. As a check, it drafted a sample of 320 of its proposed units, of which 149 were exact.
+- **Hand-finished sources** were edited from generated drafts. The change that made each one exact:
+    - `0x8c15c43c` (164 bytes): v1->f74 read once into int local reused as call arg (callee reads r5).
+    - `0x8c162e94` (296 bytes): unmasked unsigned-short compare (drop & 0xffff) + struct copy directly from table expression without row local.
+    - `0x8c166964` (952 bytes): named limit lim = 0x38e3 set just before the case 1 clamp test (CW03); another placement of the new declaration is also exact.
+    - `0x8c167fe4` (384 bytes): 64-byte row pointer local (0x8c3175c8 + a0<<6) computed before the f308 test; field f38 read in call.
+    - `0x8c18a0f0` (572 bytes): poll argument as &g_8c41cba0 + 0x110 (separate base and offset literals) instead of folded 0x8c41ccb0; goto chain rewritten as (flag || poll()) conditions.
+    - `0x8c18c328` (348 bytes): goto loop rewritten as for; far indexed field via 8-byte row struct at +0x7c (->f04),.
+    - `0x8c199388` (356 bytes): sibling of 8c225034: final wrap via scoped char locals (c >= n, f81 = c - n); goto pairs rewritten as || polls.
+    - `0x8c1a36a0` (176 bytes): named mask constant m = -0x10 in the else arm (CW03); another placement of the new declaration is also exact.
+    - `0x8c1af190` (372 bytes): table index reuses the v1 (f108 & 1) local instead of recomputing the mask.
+    - `0x8c1b8464` (288 bytes): goto tangle rewritten as if/else-if; 2/3 arm fixed to (f3b8 += 0.1f) > 1.0f clamp + return (draft doubled the addition).
+    - `0x8c1c1ff0` (96 bytes): (supersedes parked row) ternary v2 and first -1 test against named constant local m = -1 (CW03); another placement of the new declaration is also exact.
+    - `0x8c1c6dc4` (204 bytes): first arm row address written (int)o + 0x94 + v1 (base constant before scaled index), matching the second arm.
+    - `0x8c1c7054` (408 bytes): v11 pointer chain read into its local before the f6c > 0 test (load in bf/s slot).
+    - `0x8c20ba28` (292 bytes): goto search loop rewritten as for loop with preset v6 = t1 and break on space; goto-free; register keyword not needed.
+    - `0x8c21f234` (160 bytes): copy destination (g_8c4db9e4 + 0x86c) read into v2 (reused later as loop index) before the first call.
+    - `0x8c225034` (360 bytes): final wrap as scoped char locals n = f84, c = f83 with test c >= n and f83 = c - n; goto pairs rewritten as || polls; local order robust.
+    - `0x8c22ab48` (416 bytes): (update) final/ now the goto-free _4 (busy-wait while loops, early-free if blocks); same deciding changes as _3.
+    - `0x8c22b1f8` (160 bytes): dy = f1 - o->f28 as a float local used in the distance test and the call; atan2-style callee takes two floats (fake third arg dropped); another placement of the new declaration is also exact.
+    - `0x8c23bcdc` (160 bytes): goto state machine rewritten as switch with in-if returns and breaks; named limit lim = -0x31c7 set just before its test (CW03); another placement of the new declaration is also exact.
+    - `0x8c249a50` (376 bytes): goto clamp rewritten: call result assigned straight to v9, nested if (v9 > 0.6f) clamp, else v9 = 0.
+    - `0x8c25cb30` (208 bytes): name pointer g_8c3404e0 + 0x11 read once into t4 (reused for the later call result); dropped unjustified v1 argument of call_8c011ecc (output identical).
+- An earlier scratch probe had found the row-struct form used for `0x8c18c328`.
 - History-guarded targets stay blocked and were not forced.
 
 Signatures are provisional. Parameter and return types come from the instruction shape and literal use; they are not confirmed against callers. Identifiers are mechanical.
 
 ## Observed techniques
 
-- CodeWarrior emits the last store of a group of extern global stores first, into `r0` and the last pool slot. The source order is therefore the reference order with its first store moved to the end.
-- For a comparison of two loaded values, the left operand is loaded first into a register other than `r0`.
-- A callee that only stores an argument as a halfword or byte, or extends it itself, was declared with a narrow parameter.
-- `o + v` on a C++ class pointer scales by the class size, so byte offsets were written through `(char *)o`.
+- Jump-table words in a literal pool are case-arm addresses, not function entries. Following them keeps a switch function in one unit.
+- Most functions reached only through a vtable or function-pointer table had no candidate before this review.
+- A named limit set just before a clamp test, or a named `-1` compared against a variable, came from a constant local in the source (CW03).
 
 ## Parked and unresolved
 
-- **Register-only and scheduling differences** remain the largest group: an address literal loaded into `r1` before the call-result move where the reference uses `r0` after it, `r0` against `r1` for the second load of a global pointer chain, and permutations of hoisted constants.
-- **Ranges that run into the next function** or end in alignment padding cannot match alone; corrected ranges come from a separate boundary review.
-- **Argument-register order around a call's delay slot** and **in-place `extu.w`** remain out of scope. A separate investigation found that the pinned compiler does not produce either shape from any source form or unit context tried. Both occur in one function alongside the usual shape.
-- **Library-style code** in `0x8c12b0a4`–`0x8c12f6a0` and `0x8c1f3d8c`–`0x8c204c30` is out of scope.
+- **Shared literal pools.** 172 proposed units share a literal pool with a neighbour and will need neighbour grouping (CW06).
+- **Register-only and scheduling differences** remain the largest group of near misses.
+- **Argument-register order around a call's delay slot** and **in-place `extu.w`** remain out of scope; the pinned compiler does not produce either shape.
 
 Code-only completion and total function count remain unknown.
