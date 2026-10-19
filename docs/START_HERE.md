@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **9555 exact functions in 9471 modules**, replacing
-**874,698 bytes** of the 4,162,912-byte decoded executable (**21.0117% image coverage**).
-It retains **3,288,214 reference bytes** and has no separately reconstructed static
+The current public checkpoint has **9789 exact functions in 9705 modules**, replacing
+**899,174 bytes** of the 4,162,912-byte decoded executable (**21.5996% image coverage**).
+It retains **3,263,738 reference bytes** and has no separately reconstructed static
 data. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -29,9 +29,9 @@ Other private scratch blockers include effect update 536/25, effect advance
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
 
-## Latest integration batch: 248: expanded candidate pool, part 52
+## Latest integration batch: 249: expanded candidate pool, part 53
 
-234 new functions / 25,404 bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.
+234 new functions / 24,476 bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.
 
 ## Autonomous iteration
 
@@ -101,7 +101,7 @@ pushing, then verify CI for the exact commit. Gameplay, disc repacking and
 analysis-tool integration are outside the reconstruction loop. Continue from
 verified checkpoints; they are progress records, not requests to stop.
 
-## Verified continuation (batches 189 to 248)
+## Verified continuation (batches 189 to 249)
 
 Batch 189 admitted 151 functions / 5,320 bytes (2,391 functions / 188,332 bytes).
 Batch 190 admitted 55 functions / 5,264 bytes, 40 of them C++ units (2,446 functions in 2,362 modules / 193,596 bytes).
@@ -163,6 +163,7 @@ Batch 245 admitted 234 functions / 20,236 bytes, candidate units found by the bo
 Batch 246 admitted 234 functions / 21,056 bytes, candidate units found by the boundary review (9,088 functions in 9,004 modules / 827,642 bytes).
 Batch 247 admitted 233 functions / 21,652 bytes, candidate units found by the boundary review (9,321 functions in 9,237 modules / 849,294 bytes).
 Batch 248 admitted 234 functions / 25,404 bytes, candidate units found by the boundary review (9,555 functions in 9,471 modules / 874,698 bytes).
+Batch 249 admitted 234 functions / 24,476 bytes, candidate units found by the boundary review (9,789 functions in 9,705 modules / 899,174 bytes).
 
 Generated sources keep mechanical identifiers for later naming. All prior sources/headers are unchanged;
 two fresh builds, 93 tests and the source-only guard passed for each. Batches are
@@ -171,7 +172,7 @@ published after these checks under a standing authorization.
 Many unadmitted routines are C++ members: `mov #off,r2; add r0,r2` after loading
 `@(0x18,this)` is a virtual call (slot (off-8)/4). Next, continue the C++ virtual-call
 pool (306 unmatched functions), the remaining `initialize_hierarchy_node` constructors and
-call-ready 100–600-byte routines with REA/Ghidra evidence. Batch 248 near misses and
+call-ready 100–600-byte routines with REA/Ghidra evidence. Batch 249 near misses and
 deferred candidates are listed in [BATCH.md](BATCH.md) (earlier batches in its history); the batch 188 parked targets, selection/view budget and original
 primary targets are unchanged.
 
