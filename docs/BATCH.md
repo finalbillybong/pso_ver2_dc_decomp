@@ -1,103 +1,173 @@
-# Reconstruction batch: 262: expanded candidate pool, part 66
+# Reconstruction batch: 263: expanded candidate pool, part 67
 
-19 new matching functions / 5,464 bytes. All 10640 prior functions preserved.
+35 new matching functions / 7,746 bytes. All 10659 prior functions preserved.
 
-10659 exact functions in 10575 modules; 1,066,402 compiled function-range bytes; 0 reconstructed data bytes; 3,096,510 retained reference bytes. Whole-image coverage 25.6167% is not code completion.
+10694 exact functions in 10610 modules; 1,074,148 compiled function-range bytes; 0 reconstructed data bytes; 3,088,764 retained reference bytes. Whole-image coverage 25.8028% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c07383c | 0x8c07383c | 196 |
-| operation_8c075fbc | 0x8c075fbc | 436 |
-| operation_8c0956fc | 0x8c0956fc | 100 |
-| operation_8c099bbc | 0x8c099bbc | 112 |
-| operation_8c09a338 | 0x8c09a338 | 316 |
-| operation_8c0ac7fc | 0x8c0ac7fc | 228 |
-| operation_8c0c07c8 | 0x8c0c07c8 | 628 |
-| operation_8c0c0a3c | 0x8c0c0a3c | 760 |
-| operation_8c102cd0 | 0x8c102cd0 | 176 |
-| operation_8c105968 | 0x8c105968 | 412 |
-| operation_8c191990 | 0x8c191990 | 172 |
-| operation_8c1a19fc | 0x8c1a19fc | 68 |
-| operation_8c1c9418 | 0x8c1c9418 | 792 |
-| operation_8c1e7964 | 0x8c1e7964 | 500 |
-| operation_8c217c60 | 0x8c217c60 | 144 |
-| operation_8c2462d8 | 0x8c2462d8 | 56 |
-| operation_8c246414 | 0x8c246414 | 56 |
-| operation_8c24a000 | 0x8c24a000 | 76 |
-| operation_8c258df8 | 0x8c258df8 | 236 |
+| operation_8c046510 | 0x8c046510 | 300 |
+| operation_8c052c38 | 0x8c052c38 | 280 |
+| operation_8c05e6cc | 0x8c05e6cc | 244 |
+| operation_8c06752c | 0x8c06752c | 264 |
+| operation_8c07bed4 | 0x8c07bed4 | 344 |
+| operation_8c07c770 | 0x8c07c770 | 268 |
+| operation_8c083478 | 0x8c083478 | 364 |
+| operation_8c0dc5c0 | 0x8c0dc5c0 | 80 |
+| operation_8c0dde00 | 0x8c0dde00 | 240 |
+| operation_8c0f1204 | 0x8c0f1204 | 616 |
+| operation_8c1000a8 | 0x8c1000a8 | 184 |
+| operation_8c106e1c | 0x8c106e1c | 548 |
+| operation_8c122210 | 0x8c122210 | 184 |
+| operation_8c13ffec | 0x8c13ffec | 644 |
+| operation_8c160e80 | 0x8c160e80 | 736 |
+| operation_8c1888dc | 0x8c1888dc | 340 |
+| operation_8c1a0480 | 0x8c1a0480 | 108 |
+| operation_8c1aaabc | 0x8c1aaabc | 30 |
+| operation_8c1aaadc | 0x8c1aaadc | 30 |
+| operation_8c1aaafc | 0x8c1aaafc | 30 |
+| operation_8c1b3a18 | 0x8c1b3a18 | 224 |
+| operation_8c1bbd80 | 0x8c1bbd80 | 212 |
+| operation_8c1dc844 | 0x8c1dc844 | 112 |
+| operation_8c1ec9b0 | 0x8c1ec9b0 | 84 |
+| operation_8c2150a4 | 0x8c2150a4 | 34 |
+| operation_8c21871c | 0x8c21871c | 100 |
+| operation_8c21d7b8 | 0x8c21d7b8 | 100 |
+| operation_8c21e328 | 0x8c21e328 | 142 |
+| operation_8c21f600 | 0x8c21f600 | 38 |
+| operation_8c225840 | 0x8c225840 | 164 |
+| operation_8c2476e8 | 0x8c2476e8 | 34 |
+| operation_8c2480e4 | 0x8c2480e4 | 208 |
+| operation_8c24834c | 0x8c24834c | 232 |
+| operation_8c2488e0 | 0x8c2488e0 | 116 |
+| operation_8c24dcec | 0x8c24dcec | 112 |
 
 ## Method
 
-Batch 262 combines three generator redrafts and hand-finished near misses.
+Batch 263 consists of hand-finished near misses. One generator cycle added rules but found no new exact draft, so the hand passes went back over parked targets that still had hypothesis budget.
 
-**Generator rules.** Two scratch research passes turned recurring hand fixes into generator rules, each behind its own flag:
-- The first added about 22 rules, most of them restoring behaviour that drafts lost: a loop index read through `lds rN,fpul` keeps its increment; a spilled local written on one path stays a variable; a value reloaded from its frame home keeps its precedence (`i - (12 - t)`); a float carried round a do-while gets its own variable; a live call result is joined after a jump-table switch instead of a placeholder 0; frame words inside a block whose address is passed are members, not spills; a float argument set in a call's delay slot is kept; float field pointers hoisted in the prologue are named; and post-increments inside a test (`(p++)->f00 == k`) and in copies (`(d++)->f = (s++)->f`).
-- The second added 20, among them: named constants (CW03) in a few narrow listing shapes (a mask loaded after the field it tests, an offset constant loaded before a loop's counter, a constant whose first use is a zero extension, a reloaded loop limit); a `movt` in a call's delay slot written as an inline `!(x & m)` argument; a float argument whose loads precede a block copy computed into a local first; hoisted `o + K` pointers whose register is reused across jump-table cases; compare chains with a mid-chain branch written as a switch; a product finished before the other operand's load as its own statement; and a Block8 struct passed on the stack as a struct parameter.
+**Generator rules.** One scratch research pass turned recurring hand fixes into 7 generator rules, each behind its own flag:
+- a pool offset read only inside a loop body, held in a lower register than the counter, stays a literal;
+- a loaded pointer used only through one derived value is not bound to a local;
+- a loaded value stepped in its own register is the loop counter itself;
+- one index is shared by two loops;
+- a pool base plus `add #k` inside an extern object with no member there is written `(char *)&g + 0xk`;
+- after a call, a run of extern stores is rotated so the first-emitted store is written last, with a global read twice going into a local first.
 
-Both passes left calibration at its previous level (34 / 44 / 8), and their per-function, per-mode regressions over every admitted plan (190, 191, 211–261), the jump-table set, earlier agents' result lists and earlier batch files lost no exact draft. No rule chooses a declaration order or produces the `(v >= 0 ? v : v)` idiom.
+The pass left calibration at its previous level (34 / 44 / 8). Its per-function, per-mode regressions lost no exact draft. They covered every admitted plan (190, 191, 211–262), the jump-table set, earlier agents' result lists and earlier batch files. Two further candidate rules lost admitted exact drafts and were dropped. No rule chooses a declaration order or produces the `(v >= 0 ? v : v)` idiom.
 
-The second pass also measured, in scratch only, what naming a single constant does: it compiled every remaining candidate with one constant named at a time (2,016 compiles). 82 drafts improved and 719 got worse, and functions with the same loop shape went opposite ways, so no listing criterion was found and only the narrow rules above were added. None of those scratch compiles is admitted.
+The pass also ran a scratch experiment: it left each of 47 named constants (in 44 targets) unnamed, one at a time. 6 drafts improved and 22 got worse; none became exact. The experiment was used only to set one rule's criterion, and nothing from it is admitted.
 
-**Redrafts.** The remaining candidates were redrafted in the 11 regular generator modes three times: with batch 261's generator (3,383 candidates; 3 new exact drafts), after the first pass above (3,249; 3) and after the second (3,241; 7). A redraft of 3,259 candidates in the 8 other modes found 5 exact drafts, none new, so the 11-mode set stays.
+**Redraft.** The 3,229 remaining candidates were redrafted with the new generator. This was the periodic full check: the 11 regular modes and the 8 other modes. Neither set found an exact draft.
 
-**Hand-finished near misses.** Four scratch passes took:
-- 31 targets whose draft had improved with batch 261's generator (2 exact, 1 of them refused by the history guard);
-- 30 parked targets whose draft improved after the first pass above (4 exact);
-- 20 never-probed targets the first pass brought within 400 differing lines (0 exact);
-- 32 never-probed targets of 400 or more differing lines (1 exact).
+**Hand-finished near misses.** Nine scratch passes took the following targets:
+- 39 parked targets whose draft had improved with the previous generator (5 exact);
+- 6 parked targets whose draft improved with this batch's generator, plus the last never-probed target within 400 differing lines (0 exact; the never-probed target went from 166 to 8 lines);
+- 435 parked targets within 1–16 differing lines that still had hypothesis budget, taken in four bands (32 exact):
 
-They used the rules of batches 241–261:
+  | Differing lines | Targets | Exact |
+  |---|---|---|
+  | 1–4 | 78 | 4 |
+  | 5–8 | 113 | 7 |
+  | 9–12 | 125 | 6 |
+  | 13–16 | 119 | 15 |
+
+  Earlier passes had parked most of these after a few hypotheses each. The passes tried only ideas the earlier passes had not.
+
+They used the rules of batches 241–262:
 - at most ten distinct hypotheses per target, counting earlier probes, with identical compiler outputs counted once;
 - ordinary C or C++ only, with the pinned compiler and flags;
 - full-range exact only (including the padding rule);
 - no declaration-order search.
 
-All exact sources were trialled; all but one refused by the history guard (`0x8c01399c`, not forced) are admitted.
+All exact sources were trialled. All but one are admitted: `0x8c161c50`, a padding-rule unit, was refused by the history guard and not forced.
 
 **Held back.**
-- `0x8c013a54` is exact only with a declaration-order comparison: held back and not trialled.
-- `0x8c0eac00` (1,260 bytes) is exact, but its source passes an argument (`o` in r4) to an admitted callee that takes none and whose code never reads r4. Sources that need arguments a callee does not read are not admitted; it is held back and not trialled.
-- Two other declaration-order comparisons (`0x8c0123d8`, `0x8c20b5b8`) did not make their targets exact.
+- **Declaration placement.** Each of these is exact only with one declaration placement, as shown by a single labelled comparison per target. They are held back and not trialled: `0x8c1a2d40`, `0x8c09c498`, `0x8c0b75a4`, `0x8c173528`, `0x8c027cfc`, `0x8c027998`, `0x8c103148`, `0x8c1a80d4`.
+- **`0x8c168608` (104 bytes)** is exact, but its source passes a second argument to the admitted `operation_8c13f1cc`, whose admitted source takes none. That callee is a tail-jump stub, and its jump target reads r5. The conflict with the admitted prototype needs review, so the source is held back and not trialled.
+- **`0x8c08076c`** is exact only with a dead store in an if-body, a no-op form that is not admitted. Held back.
+- **A further comparison** (`0x8c08d794`) did not make its target exact.
 
 Previously blocked targets stay blocked, and the three drafts held back in batch 224 remain held back.
 
 Before admission, the boundaries of every unit were checked:
-- each entry follows a literal pool (17) or a function end (2);
+- each entry follows a literal pool (35);
 - no unit overlaps an admitted function or another unit;
 - no branch from outside a unit lands in it;
 - every entry is 4-aligned.
 
 ## Measured attempts
 
-19 recorded attempts on 19 targets, all hypotheses and all exact. 19 units / 19 functions / 5,464 bytes were admitted after two independent reproductions each: 13 unedited generated drafts and 6 hand-finished sources.
+35 recorded attempts on 35 targets, all hypotheses and all exact. 35 units / 35 functions / 7,746 bytes were admitted after two independent reproductions each, all of them hand-finished sources.
+
+7 units were admitted under the padding rule at their code size: `0x8c21f600`, `0x8c21e328`, `0x8c2476e8`, `0x8c2150a4`, `0x8c1aaabc`, `0x8c1aaadc` and `0x8c1aaafc`. In each, the reference has a single `.word 0x0000` after the final instruction, and the following routine starts on a four-byte boundary.
 
 Disclosure:
-- Every admitted function was first found exact in a scratch comparison, either in a generator redraft or as logged in the hand-finishing passes' attempt logs.
-- The research passes compiled hand probes to learn source forms (scratch only, not trialled): `0x8c0262a0` (13 forms), `0x8c103d6c`, `0x8c217c60` (3), `0x8c0c0a3c`, `0x8c105bec` (5), `0x8c19e2e4`, `0x8c01c2c8` and `0x8c192220`. `0x8c217c60` and `0x8c0c0a3c` are admitted from the hand passes' sources, not from these probes.
-- `0x8c0c07c8`: the hand source declared an unused `int v4;`. One scratch compile without that line was also exact, and the admitted source omits it.
-- `0x8c1c9418` uses an ordinary C macro (a switch on the object's tag that sets one field) and a scoped `unsigned char` value.
+- Every admitted function was first found exact in a scratch comparison, as logged in the hand passes' attempt logs.
+- **Research probes.** The research pass compiled hand probes to learn source forms (scratch only, not trialled): `0x8c21d7b8` (5 forms), `0x8c21f5d4` and `0x8c044410` (4). None was exact. `0x8c21d7b8` is admitted from a hand pass's source.
+- **Placement checks.** For these admitted sources, a scratch compile with the new declarations placed elsewhere was also exact, so placement does not decide the match: `0x8c21d7b8`, `0x8c052c38`, `0x8c05e6cc`, `0x8c24dcec`, `0x8c21871c`, `0x8c1000a8` and `0x8c0dc5c0`.
+- **Hypothesis counts.** Two parked targets (`0x8c244b24`, `0x8c244b78`) have more than ten logged attempt rows across passes. Identical compiler outputs bring them to about 7 and 5 distinct hypotheses. Neither is admitted.
+- **Callee prototypes.**
+  - `0x8c24dcec` declares `operation_8c1ecfe0` with `(short, short)` parameters, where the admitted callee is declared `(int, int)`. The callee's code stores one argument as a halfword and extends the other itself.
+  - `0x8c046510` passes `&frame` to a virtual slot. Its callee (`0x8c04621c`, slot 0x84 in all 114 vtables that hold this function) reads r5.
+  - `0x8c1bbd80` passes 0 as the int argument of a virtual call, as the admitted `operation_8c15eca4` (same class and caller) does.
+  - `0x8c1dc844` drops the draft's invented arguments to a callee that takes none.
+- `0x8c13ffec` writes two exits as `if (t != 0) { } else { return; }`, an ordinary control-flow spelling. `0x8c160e80` and `0x8c1bbd80` use small `static inline` helpers.
 - **Per function**, the change that made each hand-finished draft exact:
-  - `0x8c09a338` (316 bytes): squared f34 argument computed into t1 before the frame position copy; second block in its own float w with w = w*232+115 before f10 = 115; extern declarations (operation_195990/195984, call_8c37eb0c) instead of address-cast calls.
-  - `0x8c0c07c8` (628 bytes): the !(o->f34 & 0x1000000) predicate written inline as the 4th argument of call_8c0c6ab4 (movt r7 in the jsr slot) instead of a precomputed local; the hand source's unused `int v4;` declaration was removed after a scratch compile showed it exact without it.
-  - `0x8c0c0a3c` (760 bytes): an earlier pass's source (state local, nested switch, CW12 float-first call_8c0446f8) + named flag = 0x1000000 for the first case-0 test (CW03); placement-independent (a function-top declaration is also exact).
-  - `0x8c1a19fc` (68 bytes): named limit lim = 0x200 (CW03) for the outer search loop, reassigned lim = 0x200 before the inner shift loop (one variable in r1); loaded words then take r0.
-  - `0x8c1c9418` (792 bytes): SET_VAL macro (switch on int mode = tag copied at ok-case start, value evaluated once into scoped uchar sv, case order 0,1,3,2), getter switch inline into v with default, single-case ok switch, case3 if{switch 2/0xe no default} else {7-block; return} break; restored lost case-1 compare (tbl[f01] <= v).
-  - `0x8c217c60` (144 bytes): scan-pointer post-increment in the count-loop test; copy loop as one statement (dst++)->f00 = (src++)->f00 with call result straight to src.
+  - `0x8c046510` (300 bytes): virtual slot 0x84 call takes the frame vector: o->v31(&frame) (r5 = copy destination); callee 0x8c04621c reads r5 (mov r5,r14) and is slot 0x84 in all 114 vtables holding this function.
+  - `0x8c052c38` (280 bytes): an earlier pass's source (two 24-byte records by value) + a1->f64 read into a local before the loop-start read and stored to frame.b.f14 after it (bra slot).
+  - `0x8c05e6cc` (244 bytes): named mask local (mask = 0x400 assigned just before the f3e0 & mask test, CW03) gives and r1,r0 with the literal in r1; placement checked (declared first or last both exact).
+  - `0x8c06752c` (264 bytes): compare operands written in the reverse order (f330 <= v1 instead of v1 >= f330) gives the reference exts.w register pair.
+  - `0x8c07bed4` (344 bytes): the 25.0f step as the named float v6 = 25.0f set first and used in *p += v6 and the overshoot v6 = v2 - (v1 - v6) (reference keeps it in fr2), on an earlier pass's CW17 scoped-pointer source.
+  - `0x8c07c770` (268 bytes): new draft (count decremented before swap via v10) + an earlier pass's fixes: &g_8c284f48 + 0xc argument unfolded and one index v1 for both loops.
+  - `0x8c083478` (364 bytes): removed the named 0x88 offset local (v6): literal 0x88 in the copy-loop body, named 0x114 kept (draft goto loop otherwise unchanged).
+  - `0x8c0dc5c0` (80 bytes): a1->f04 and o->f3c (each used in two tests) read once into float locals y then c before the third test; placement-independent (swapped declarations also exact).
+  - `0x8c0dde00` (240 bytes): centre sums written directly as f48 + f50 * 0.5f and f4c + f54 * 0.5f (draft-invented v1/v2 field copies removed).
+  - `0x8c0f1204` (616 bytes): fe8 wrap written without float locals as if (o->fec < o->fe8) o->fe8 -= o->fec (operand order gives the fr0/fr1 roles); no new variables.
+  - `0x8c1000a8` (184 bytes): (range 184 with overlay) row base read into a local b = (char *)g->f42c + 0xc after the scoped table index i = tag->f410 (no cast barrier needed); extern g form; placement-independent (top-level declarations also exact).
+  - `0x8c106e1c` (548 bytes): record byte offset computed once into the call-result local (t6 = operation_8c1cdc80(..) * 0x1c) and reused for the type test and the argument.
+  - `0x8c122210` (184 bytes): extern store-group rotation: g_8c4d87b4 = 0 moved after the g87ac/g87b0 stores (CW emits the last store of the group first into r0).
+  - `0x8c13ffec` (644 bytes): the two allocation-failure exits inside the if-branches written as if (t != 0) { } else { return; } (bf join; bra end; nop) on an earlier pass's source; empty then-block (control-flow spelling only).
+  - `0x8c160e80` (736 bytes): opening 7/8 predicate written as a static inline helper (int r = 1; nested != tests clear it; return r) called inside if (o->f3e0 == 0).
+  - `0x8c1888dc` (340 bytes): removed the v36 pointer local: base->f28->fbc8 read inline as the operation_8c16a50c argument.
+  - `0x8c1a0480` (108 bytes): first clamp tests the just-stored global g_8c4dc5a0 (not a second struct-member read or a local), like the second clamp; no new variables.
+  - `0x8c1aaabc` (30 bytes): padding rule: code exact at 30/32 (trailing .word 0); field read once into a short local returned with short return type (no exts on return), flag preset if/else; header size 30.
+  - `0x8c1aaadc` (30 bytes): padding rule: code exact at 30/32 (trailing .word 0); field read once into a short local returned with short return type (no exts on return), flag preset if/else; header size 30.
+  - `0x8c1aaafc` (30 bytes): padding rule: code exact at 30/32 (trailing .word 0); field read once into a short local returned with short return type (no exts on return), flag preset if/else; header size 30.
+  - `0x8c1b3a18` (224 bytes): second loop reuses the first loop counter v2 (one counter for both loops); sharing only the offset (hyp 3) is also exact.
+  - `0x8c1bbd80` (212 bytes): early returns as || guards with the mode test as a static inline preset-flag helper last in the first guard and (t2 = lookup_low_id(..)) == 0 last in the second; v25 takes (Object *, int, Block8) with 0 as in admitted operation_8c15eca4 (same class/lookup_low_id caller).
+  - `0x8c1dc844` (112 bytes): dropped invented arguments (operation_8c180e84 is void(void) per admitted source) and counter++ before cursor advance.
+  - `0x8c1ec9b0` (84 bytes): named mask local m = -0x41 (CW03) shared by the two o->fe8 clears fixes the offset/mask register colouring.
+  - `0x8c2150a4` (34 bytes): padding rule: code exact at 34/36 (trailing .word 0); a1 clamped in place (dead parameter reused); header size 34.
+  - `0x8c21871c` (100 bytes): second entry word read into w1 before the && test with the first word inline (fills bf/s with the right base/value registers); placement-independent (decl-order comparison _2 also exact).
+  - `0x8c21d7b8` (100 bytes): g_8c505964 read once into a local v before the store group; both store groups in the earlier extern store-group order (reference order minus its first store, then that store).
+  - `0x8c21e328` (142 bytes): padding rule: code exact at 142 bytes (range 144 ends in one zero halfword aligning 0x8c21e3b8; header size 142); deciding change (from an earlier probe _2): every case assigns one result variable, single return after the switch.
+  - `0x8c21f600` (38 bytes): padding rule: code exact at 38 bytes (range 40 ends in one zero halfword aligning the next routine; header size 38); deciding change: count preset v2 = 0 before the -1 constant.
+  - `0x8c225840` (164 bytes): buffer address 0x8c4dbe40 assigned into the dead parameter a1 (keeps r14) instead of a new local v8.
+  - `0x8c2476e8` (34 bytes): padding rule (code 34 of range 36, trailing zero halfword): char parameter a1 clamped in place against a char local t = o->tag.
+  - `0x8c2480e4` (208 bytes): the two pool-constant status paths (-4, -2) written as chained returns return (&g_8c339ca0)->f18 = -k; (constant loaded into r0 before the address); the -1/-3 paths stay as store then return.
+  - `0x8c24834c` (232 bytes): max-loop seed (global copy) held in the dead first-loop counter v1 instead of a new local v10 (variables sharing a reference register are one variable).
+  - `0x8c2488e0` (116 bytes): range guard as one || test with return (if (v2 < 0 || v2 >= 4) return;) on an earlier pass's extern-table/byte-offset source gives the bf/bra/nop shape.
+  - `0x8c24dcec` (112 bytes): CW17 field pointer v2 = &row->f04 (signed short field) read once into a short local v5 for the 0xffff compare and the call, narrow (short, short) prototype for operation_8c1ecfe0 (admitted callee only stores a1 as a halfword); placement checked (new locals first or last both exact).
 
 Signatures are provisional. Parameter and return types come from the instruction shape and literal use; they are not confirmed against callers. Identifiers are mechanical.
 
 ## Observed techniques
 
-- A named constant assigned just before its use (CW03), and reassigned before a later loop, puts the literal in the register the reference uses; the same literal written inline is coloured differently.
-- A `movt` into an argument register in a call's delay slot comes from a test written inline as the argument.
-- A float argument computed before a block copy goes into its own local first.
-- Restoring field pointers the reference hoists into callee-saved registers in the prologue removes most of the difference in several large state handlers.
+- Values that share one reference register across non-overlapping lifetimes are one variable: a dead loop counter reused as a later seed, one counter for two loops, or a late local assigned into a dead parameter.
+- Reversing a compare's operand order swaps the registers of its extended or float operands.
+- A named mask or float constant assigned just before use (CW03) fixes literal colouring in more shapes, including a mask shared by two `&=` clears.
+- A halfword field returned without `exts.w` comes from a `short` local and a `short` return type.
+- A constant stored to a global field and then returned is a chained return (`return g.f = k;`).
 
 ## Parked and unresolved
 
-- **Register allocation** remains the largest group (about 615 near misses). Naming constants changes it for many, but no listing rule predicts which constants were named.
-- **The angle conversion** that reloads one float register for each constant, **the case-4 address order** in the 0x8c06xxxx state-handler family, and **source-address reloads** in a Vector3 table-copy family recur without a source form.
-- **Declaration order** decides register assignment and frame layout in many remaining near misses. Such sources are held back, not admitted.
-- **Argument-register order around a call's delay slot**, **in-place `extu.w`** and frame-pointer helpers remain out of scope.
+- **Register allocation** remains the largest group. Among the parked targets re-tried in this batch, most residues fall in known classes:
+  - a global's address landing in r0;
+  - a call literal loaded into r1;
+  - struct-copy literal scheduling;
+  - home-reload registers for float stores.
+- **Declaration order** decides the match in a growing share of the near misses that hand passes finish (8 in this batch). Such sources are held back, not admitted.
+- **Argument-register order around a call's delay slot** accounts for about 30 of the re-tried targets. With **in-place `extu.w`** and frame-pointer helpers, it remains out of scope.
 
 Code-only completion and total function count remain unknown.
