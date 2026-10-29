@@ -1,110 +1,113 @@
-# Reconstruction batch: 265: expanded candidate pool, part 69
+# Reconstruction batch: 266: expanded candidate pool, part 70
 
-16 new matching functions / 7,206 bytes. All 10717 prior functions preserved.
+24 new matching functions / 6,632 bytes. All 10733 prior functions preserved.
 
-10733 exact functions in 10649 modules; 1,088,626 compiled function-range bytes; 0 reconstructed data bytes; 3,074,286 retained reference bytes. Whole-image coverage 26.1506% is not code completion.
+10757 exact functions in 10673 modules; 1,095,258 compiled function-range bytes; 0 reconstructed data bytes; 3,067,654 retained reference bytes. Whole-image coverage 26.3099% is not code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c02c390 | 0x8c02c390 | 814 |
-| operation_8c032c3c | 0x8c032c3c | 220 |
-| operation_8c032d18 | 0x8c032d18 | 188 |
-| operation_8c03e080 | 0x8c03e080 | 336 |
-| operation_8c08ca80 | 0x8c08ca80 | 164 |
-| operation_8c09aa8c | 0x8c09aa8c | 120 |
-| operation_8c09e188 | 0x8c09e188 | 332 |
-| operation_8c09e408 | 0x8c09e408 | 328 |
-| operation_8c0bef68 | 0x8c0bef68 | 512 |
-| operation_8c1098a4 | 0x8c1098a4 | 164 |
-| operation_8c1160a0 | 0x8c1160a0 | 536 |
-| operation_8c14b3e4 | 0x8c14b3e4 | 716 |
-| operation_8c153b08 | 0x8c153b08 | 1008 |
-| operation_8c1bc800 | 0x8c1bc800 | 412 |
-| operation_8c1c770c | 0x8c1c770c | 1116 |
-| operation_8c238c10 | 0x8c238c10 | 240 |
+| operation_8c0521a0 | 0x8c0521a0 | 236 |
+| operation_8c05228c | 0x8c05228c | 240 |
+| operation_8c075968 | 0x8c075968 | 348 |
+| operation_8c0792b4 | 0x8c0792b4 | 1232 |
+| operation_8c0a681c | 0x8c0a681c | 500 |
+| operation_8c0ce0b8 | 0x8c0ce0b8 | 168 |
+| operation_8c0dc884 | 0x8c0dc884 | 168 |
+| operation_8c100164 | 0x8c100164 | 292 |
+| operation_8c101da8 | 0x8c101da8 | 412 |
+| operation_8c109064 | 0x8c109064 | 452 |
+| operation_8c113aa4 | 0x8c113aa4 | 172 |
+| operation_8c11b13c | 0x8c11b13c | 196 |
+| operation_8c11b7f0 | 0x8c11b7f0 | 200 |
+| operation_8c165530 | 0x8c165530 | 380 |
+| operation_8c168608 | 0x8c168608 | 104 |
+| operation_8c16ce30 | 0x8c16ce30 | 72 |
+| operation_8c17571c | 0x8c17571c | 232 |
+| operation_8c1e98ac | 0x8c1e98ac | 220 |
+| operation_8c22e20c | 0x8c22e20c | 112 |
+| operation_8c22e414 | 0x8c22e414 | 104 |
+| operation_8c244a18 | 0x8c244a18 | 268 |
+| operation_8c245768 | 0x8c245768 | 140 |
+| operation_8c24a6ec | 0x8c24a6ec | 152 |
+| operation_8c252844 | 0x8c252844 | 232 |
 
 ## Method
 
-Batch 265 consists of hand-finished near misses. The generator and the remaining candidates were unchanged since batch 263, when the 3,229 candidates were redrafted in all 19 modes without an exact draft, so there was no redraft. A generator research pass is in progress in scratch; nothing from it is used in this batch.
+Batch 266 is the first batch under the project owner's rule changes of 29 October 2026:
+- **Search is allowed.** Any byte-exact source counts, however it was found, and sources found by automated search are disclosed as such. Declaration order may now decide a match. This replaces the declaration-order hold and the ten-hypothesis budget of batches 241–265.
+- **No batch-size floor.** Batches close out when ready. Two independent reproductions per unit are still required.
 
-**Hand-finished near misses.** Four scratch passes took parked targets that still had hypothesis budget, in two further bands of differing lines (continuing batch 264's bands of 17–40):
+These rules still hold: full-range exact only (with the padding rule), ordinary C or C++ with the pinned compiler and flags, no `-O3`, no `(v >= 0 ? v : v)`, and no forcing of the history guard.
 
-| Differing lines | Targets | Exact |
-|---|---|---|
-| 41–56 | 206 | 8 |
-| 57–80 | 206 | 8 |
+**Search.** A scratch permuter rewrites a near-miss draft with behaviour-preserving source changes. It then compiles each variant and keeps those that move closer to the reference. The changes are:
+- statement swaps and moves with dependency checks;
+- commuted operands and flipped relations;
+- `x = x op y` ↔ `x op= y`, and `++` forms;
+- cast removal or narrowing;
+- a subexpression into a new or dead local, or back inline;
+- a named constant assigned before use;
+- integer type changes, only where every stored value fits;
+- declaration order and scope;
+- if/else inversion, `||`/`&&` guard forms, and loop-form conversions.
 
-As before, the passes tried only ideas that earlier passes on the same target had not tried. At this distance most drafts had lost or garbled behaviour, so most fixes rewrote structure from the listing.
+It never produces asm, pragmas, flag changes, prototype or signature changes, or wrapper constructs. After an exact hit, the edits are trimmed back toward the start draft, keeping only those needed for the match. A lint then rejects results with new unused locals, write-only locals or dead stores.
 
-They used the rules of batches 241–264:
-- at most ten distinct hypotheses per target, counting earlier probes, with identical compiler outputs counted once;
-- ordinary C or C++ only, with the pinned compiler and flags;
-- full-range exact only (including the padding rule);
-- no declaration-order search.
+Measured on a frozen random sample of 160 parked near misses (40 in each band of 1–8, 9–24, 25–80 and 81–200 differing lines), it made 3 exact at 400 compiles per target and 5 exact at 4,000. The 1–8 band (register-allocation residues) was essentially unreachable. On 10 targets that hand passes had already matched, it reproduced 5 from their recorded start drafts. A run over the remaining parked targets at 4,000 compiles each is continuing in scratch.
 
-All exact sources were trialled and all are admitted.
+**Admitted from search.** Of 27 exact search results not already admitted, 22 are admitted. 5 are held back because they need 6 or more invented temporaries, which is not plausible as original source: `0x8c05157c`, `0x8c05a430`, `0x8c20b22c`, `0x8c1aad50`, `0x8c15e538`.
 
-**Held back.**
-- **Declaration placement.** Each of these is exact only with one declaration placement, as shown by a single labelled comparison per target. They are held back and not trialled: `0x8c16ae6c`, `0x8c1a0cd0`, `0x8c1d5120`, `0x8c1e92f8`, `0x8c1ebf60`, `0x8c1f05d4`, `0x8c0105b4`, `0x8c022388`, `0x8c0e73fc`, `0x8c09eaac`.
-- **Admitted-prototype conflicts.** Batch 263's `0x8c168608` and batch 264's `0x8c0dc884` remain held for review. Two parked targets here (`0x8c2262b8`, `0x8c0ece88`) would need float arguments that an admitted callee's prototype does not declare; they were not pursued.
-- **Further comparisons.** The other declaration-order comparisons on parked targets did not make them exact.
-
-Previously blocked targets stay blocked, and the three drafts held back in batch 224 remain held back.
+**Prototype holds released.** `0x8c168608` and `0x8c0dc884` were held in batches 263 and 264 because their sources declare an admitted pass-through stub with a different prototype. `0x8c168608` passes a second argument to `operation_8c13f1cc`; `0x8c0dc884` declares `operation_8c0dc4fc` as returning a pointer. In both cases the stub only forwards to a function that uses the value. Each source declares its callees locally, and admitted sources already disagree in the same way: `operation_8c168670` declares `operation_8c13f1cc(int, int)`, and `call_8c0dc510` is declared three ways. Both are admitted unchanged, and no published source is edited.
 
 Before admission, the boundaries of every unit were checked:
-- each entry follows a literal pool (15) or a function end (1);
+- each entry follows a literal pool (22) or a function end (2);
 - no unit overlaps an admitted function or another unit;
 - no branch from outside a unit lands in it;
 - every entry is 4-aligned.
 
 ## Measured attempts
 
-16 recorded attempts on 16 targets, all hypotheses and all exact. 16 units / 16 functions / 7,206 bytes were admitted after two independent reproductions each, all of them hand-finished sources.
-
-1 unit was admitted under the padding rule at its code size: `0x8c02c390` (814 of 816). The reference has a single `.word 0x0000` after the final instruction, and the following routine starts on a four-byte boundary. An earlier pass had parked it for that padding before the padding rule existed.
+24 recorded attempts on 24 targets, all exact. 24 units / 24 functions / 6,632 bytes were admitted after two independent reproductions each: 22 sources found by search and 2 hand-finished sources.
 
 Disclosure:
-- Every admitted function was first found exact in a scratch comparison, as logged in the hand passes' attempt logs.
-- **Placement checks.** For these admitted sources, a scratch compile with the new declarations placed elsewhere was also exact, so placement does not decide the match: `0x8c1098a4`, `0x8c0bef68`, `0x8c1bc800` and `0x8c238c10`. The `0x8c238c10` check was my own scratch compile, with its two new locals declared last.
-- **Callee prototypes.** `0x8c1160a0` calls `call_8c117fec` with the `(o, int)` prototype its listing and an admitted extern declaration show; the draft had invented two more arguments.
-- **Per function**, the change that made each hand-finished draft exact:
-  - `0x8c02c390` (814 bytes): padding rule: code exact at 814 of the 816-byte range (one trailing zero halfword; header size set to 814); deciding change: the f06 clamp block reads v1->f06 before t2->f06 (reference load order).
-  - `0x8c032c3c` (220 bytes): sibling of 8c032d18: same for(;;) switch tokenizer with the extra ',' separator case (goto tangle replaced; named offset 0x10a0 with CW17 count pointer, *a1++ = 0).
-  - `0x8c032d18` (188 bytes): goto tangle rewritten as a for(;;) switch tokenizer (cursor a1 advanced in place, start pointer, quote flag), named offset off = 0x10a0 with a CW17 scoped count pointer in case 9/10, *a1++ = 0 terminator; strcpy-style call_8c18e720(dst, start).
-  - `0x8c03e080` (336 bytes): an earlier pass's structure + clear-loop stride as a literal (base + i * 0xc, no named stride) and the success block reading frame.f00 (into the dead parameter a1) before v36 = v28->f0c (336 bytes).
-  - `0x8c08ca80` (164 bytes): an earlier pass's retry loop with the invented o copy v22 removed (o used directly): o/a1 saved-register swap resolved.
-  - `0x8c09aa8c` (120 bytes): v1 = o->f50 * 0.2f moved before the chained f08/f0c frame stores (statement order follows reference load order).
-  - `0x8c09e188` (332 bytes): f02 flags read once per iteration into a short local for the three bit tests (fixes 336->332) and the second -1 compare reusing the first named -1 short (v16) instead of a fresh v29 (332 bytes).
-  - `0x8c09e408` (328 bytes): sibling of 8c09e188: f02 flags read once per iteration into a short local and the named -1 short assigned at the top of the v15 block before the calls (328 bytes).
-  - `0x8c0bef68` (512 bytes): f3a4 short update through a scoped field pointer short *p = &o->f3a4 (CW17), draft v6 int copy dropped; placement check (function-level p) also exact.
-  - `0x8c1098a4` (164 bytes): one counter for both loops, named mask = -9 before the clearing loop and named off = 0x3a8 for the first loop bound (CW03/CW18 constant locals); placement check (declarations first) also exact.
-  - `0x8c1160a0` (536 bytes): both goto loops as for loops with the byte offset i << 2 computed once per iteration into a dead int (v7, v33); call_8c117fec reduced to its real (o, int) prototype (draft invented 2 args).
-  - `0x8c14b3e4` (716 bytes): single result variable v28 for the f374 clamp (0 / (uint)(n-1) / (uint)n), goto loop as for, draft-invented v39 copy of f3dc dropped, 0x600 loop offset assigned to the dead call result t1.
-  - `0x8c153b08` (1008 bytes): slot loop: byte offset off = i << 1 computed once per iteration into the later-reused int v21, limit read into int v20, if/else min into v16 (draft v15/v16 kept).
-  - `0x8c1bc800` (412 bytes): an earlier pass's source plus a named off = 0x3a8 local for the f3a8 Vector3 copy destination and the f00 update (CW03/CW18 offset local); placement check (off declared first) also exact.
-  - `0x8c1c770c` (1116 bytes): tag tests restructured as if (v5 == 0) {...} / if (v5 == 3 && f01 == 2) / if (v5 == 1 && f01 == 3) without copy variables (fixes the long-branch/pool layout), case 0xe/0x11 as a switch, char c = o->f04 reused as (unsigned char)c for the 0x1f index, int v25 = (short)t6 for the sign chain (1116 bytes).
-  - `0x8c238c10` (240 bytes): single v variable (v5/v8/v10 merged), hi = v >> 16 (signed: shlr16+exts.w) & named mask 0xffff local, +0x78 cast barrier on the slot address; the existing declarations keep the start draft order, and a scratch compile with the new locals declared last is also exact.
+- Every admitted function was first found exact in a scratch comparison: by the permuter (logged in its compile and result logs), or as logged in the hand passes' attempt logs.
+- **Found by search.** Each entry gives the size of the trimmed diff from the start draft (the generator's best draft, or for `0x8c244a18` an earlier hand hypothesis) and the number of new locals. Where noted, the exact source needs its declaration order; restoring the start order breaks the match.
+  - `0x8c0521a0` (236 bytes): 29-line diff, 4 new locals (declaration order decides).
+  - `0x8c05228c` (240 bytes): 20-line diff, 1 new local (declaration order decides).
+  - `0x8c075968` (348 bytes): 12-line diff, 3 new locals.
+  - `0x8c0792b4` (1,232 bytes): 65-line diff, 3 new locals.
+  - `0x8c0a681c` (500 bytes): 22-line diff, 3 new locals.
+  - `0x8c0ce0b8` (168 bytes): 22-line diff, 5 new locals.
+  - `0x8c100164` (292 bytes): 6-line diff, no new locals.
+  - `0x8c101da8` (412 bytes): 8-line diff, 2 new locals.
+  - `0x8c109064` (452 bytes): 26-line diff, 5 new locals.
+  - `0x8c113aa4` (172 bytes): 26-line diff, 4 new locals.
+  - `0x8c11b13c` (196 bytes): 35-line diff, 1 new local.
+  - `0x8c11b7f0` (200 bytes): 21-line diff, 2 new locals (declaration order decides).
+  - `0x8c165530` (380 bytes): 10-line diff, 2 new locals.
+  - `0x8c16ce30` (72 bytes): 16-line diff, no new locals (declaration order decides).
+  - `0x8c17571c` (232 bytes): 4-line diff, 1 new local (a named constant before an add).
+  - `0x8c1e98ac` (220 bytes): 14-line diff, 3 new locals.
+  - `0x8c22e20c` (112 bytes): 12-line diff, 3 new locals.
+  - `0x8c22e414` (104 bytes): 8-line diff, 2 new locals.
+  - `0x8c244a18` (268 bytes): 23-line diff, 1 new local (declaration order decides).
+  - `0x8c245768` (140 bytes): 24-line diff, 3 new locals.
+  - `0x8c24a6ec` (152 bytes): 27-line diff, 3 new locals (declaration order decides).
+  - `0x8c252844` (232 bytes): 18-line diff, 3 new locals.
+- **Hand-finished**:
+  - `0x8c168608` (104 bytes): table value read into `t` and passed as the second argument, `operation_8c13f1cc(o->f40, t)`. The callee leaves r4/r5 untouched and jumps to `call_8c13f1d8`, which reads r5.
+  - `0x8c0dc884` (168 bytes): goto tangle rewritten as two list loops. The outer test reads the first call argument, the callee returns the next node (tested), the `f34` locals are read once, and the mask is named `v4 = -0x401` (CW03).
 
-Signatures are provisional. Parameter and return types come from the instruction shape and literal use; they are not confirmed against callers. Identifiers are mechanical.
+Signatures are provisional. Parameter and return types come from the instruction shape and literal use; they are not confirmed against callers. Identifiers are mechanical; search-introduced locals are named `pmN`.
 
 ## Observed techniques
 
-- The scaled loop byte offset (`i << k`) is computed once per iteration into a dead int variable.
-- Goto-tangle string tokenizers are a `for (;;)` switch with the cursor advanced in place and `*p++ = 0` for the terminator.
-- Drafts invent copies of parameters and fields; removing them fixes saved-register assignment and branch layout.
-- One result variable for a clamp chain, with the limit computed first.
-- Named masks and offsets assigned just before a loop or block that reuses them (CW03).
+- The search's winning edits are the same kinds hand passes use: named constants before use, offsets computed once into a local, commuted operands, removed redundant casts and declaration order.
+- Search lowers differing lines by about a quarter in larger near misses without reaching exact. That makes them better starting points for hand passes.
 
 ## Parked and unresolved
 
-- **Register allocation** remains the largest group among the re-tried targets. Several earlier "register only" parks turned out to hide lost behaviour that the passes restored, without reaching exact.
-- **Recurring residues without a source form:**
-  - the angle conversion that reuses one float register for both constants;
-  - a global's address in r0;
-  - struct-copy scheduling;
-  - the `operation_8c156d30` call-pair family;
-  - the packed-word `operation_8c1ae0d8` family.
-- **Declaration order** decides 10 of the near misses finished in this batch. Such sources are held back, not admitted.
-- **Out of scope:** argument-register order around a call's delay slot, in-place `extu.w`, and frame-pointer helpers.
+- **Register allocation** in near misses of 1–8 lines remains out of reach of both hand passes and search.
+- The five search results held back for invented temporaries stay parked.
+- Previously blocked targets stay blocked, and the three drafts held back in batch 224 remain held back.
 
 Code-only completion and total function count remain unknown.
