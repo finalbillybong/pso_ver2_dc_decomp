@@ -129,6 +129,63 @@ class SubtractTests(unittest.TestCase):
         self.assertEqual(asm_units.subtract(0x1000, 0x1100, [(0x0f00, 0x1010), (0x10f0, 0x1200)]), [(0x1010, 0x10f0)])
 
 
+class ListingLocationTests(unittest.TestCase):
+    def test_missing_listing_names_paths_and_commands(self):
+        with tempfile.TemporaryDirectory() as t:
+            root = Path(t)
+            (root / 'config').mkdir()
+            (root / 'local.json').write_text(json.dumps({'scratch': str(root / 'scratch')}))
+            (root / 'config/analysis.json').write_text(json.dumps(
+                {'output_hashes': {'listing.txt': '0' * 64, 'functions.tsv': '0' * 64}}))
+            with self.assertRaises(ValueError) as cm:
+                asmgen.load_listing(root)
+            text = str(cm.exception)
+            self.assertIn(str(root / 'scratch' / 'analysis/game'), text)
+            self.assertIn(str(root / 'analysis/game'), text)
+            self.assertIn('tools/analyze.py game', text)
+
+    def test_parent_of_scratch_and_explicit_directory_are_searched(self):
+        with tempfile.TemporaryDirectory() as t:
+            root = Path(t)
+            (root / 'config').mkdir()
+            listing, functions = b'8c010000 nop\n', b'8c010000\t2\tFUN\n'
+            import hashlib
+            (root / 'config/analysis.json').write_text(json.dumps({'output_hashes': {
+                'listing.txt': hashlib.sha256(listing).hexdigest(),
+                'functions.tsv': hashlib.sha256(functions).hexdigest()}}))
+            parent = root / 'analysis/game'; parent.mkdir(parents=True)
+            (parent / 'listing.txt').write_bytes(listing); (parent / 'functions.tsv').write_bytes(functions)
+            (root / 'local.json').write_text(json.dumps({'scratch': str(root / 'scratch')}))
+            lst, starts = asmgen.load_listing(root)
+            self.assertEqual((lst, starts), ({0x8c010000: 'nop'}, {0x8c010000}))
+            (parent / 'listing.txt').write_bytes(b'changed\n')
+            with self.assertRaisesRegex(ValueError, 'does not match config/analysis.json'):
+                asmgen.load_listing(root)
+
+
+class RawRunTests(unittest.TestCase):
+    """asmgen.raw_runs mirrors the lint: only proven literal blocks may hold hex data."""
+
+    def runs(self, hexdata, refs):
+        return asmgen.raw_runs({'hexdata': hexdata, 'load_refs': set(refs)})
+
+    def test_referenced_block_is_accepted(self):
+        self.assertEqual(self.runs([(0x100, 4), (0x104, 4), (0x108, 2)], [0x100]), [])
+
+    def test_unreferenced_run_longer_than_four_bytes_is_cut(self):
+        self.assertEqual(self.runs([(0x100, 2), (0x102, 2), (0x104, 2)], []), [(0x100, 0x106)])
+        self.assertEqual(self.runs([(0x100, 2), (0x102, 2)], []), [])  # padding-sized runs are allowed
+
+    def test_reference_later_in_the_run_does_not_excuse_a_long_prefix(self):
+        # 8 unreferenced bytes before a referenced slot: the lint rejects the prefix.
+        self.assertEqual(self.runs([(0x100, 2), (0x102, 2), (0x104, 2), (0x106, 2), (0x108, 4)], [0x108]),
+                         [(0x100, 0x108)])
+        self.assertEqual(self.runs([(0x100, 2), (0x102, 2), (0x104, 4)], [0x104]), [])
+
+    def test_runs_split_at_address_gaps(self):
+        self.assertEqual(self.runs([(0x100, 4), (0x108, 4)], []), [])
+
+
 class LayoutTests(unittest.TestCase):
     def test_assembly_has_its_own_origins(self):
         root = self._root(manifest(hand_unit(), fallback_unit()))

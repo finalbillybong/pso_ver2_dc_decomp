@@ -276,6 +276,17 @@ def placed_spans(root=ROOT, asm=None):
     return out
 
 
+def entry_starts(root=ROOT):
+    """Code entry addresses from committed config: admitted functions and reconstruction
+    targets (and their functions). Used for global labels at build time."""
+    code = json.loads((Path(root) / 'config/project.json').read_text())
+    out = {int(f['address'], 0) for u in code['units'] for f in u['functions']}
+    for t in json.loads((Path(root) / 'config/reconstruction-targets.json').read_text())['targets']:
+        out.add(int(t['address'], 0))
+        out.update(int(f['address'], 0) for f in t.get('functions', []))
+    return out
+
+
 def generation_context(root=ROOT):
     """Names of admitted functions and data objects, and an is_code predicate, for the generator."""
     code = json.loads((Path(root) / 'config/project.json').read_text())
@@ -321,16 +332,17 @@ def materialize(root=ROOT, out_dir=None):
     out_dir.mkdir(parents=True)
     img = asmgen.reference_image(root)
     base = int(json.loads((Path(root) / 'config/project.json').read_text())['base_address'], 0)
-    lst, starts = asmgen.load_listing(root)
+    # The build needs only the image: no listing. Entry labels come from committed config.
     enc = asmgen.build_enc(root)
     names, is_code = generation_context(root)
     known = known_addresses(root)
-    entry_names = {int(e['address'], 0) for u in read(root)['units'] for e in u.get('entries', [])}
-    all_entries = starts | entry_names
+    import bisect
+    all_entries = sorted(entry_starts(root))
     produced = []
     for unit, spans in effective_units(root):
         for idx, (s, e) in enumerate(spans):
-            ent = sorted(a for a in all_entries if s <= a < e) or [s]
+            lo, hi = bisect.bisect_left(all_entries, s), bisect.bisect_left(all_entries, e)
+            ent = sorted(set(all_entries[lo:hi]) | {s})
             if unit['class'] == 'hand':
                 ev = unit['evidence']
                 evs = ', '.join(f"{v['instruction']} at {v['address']}" for v in ev[:6])
@@ -341,7 +353,7 @@ def materialize(root=ROOT, out_dir=None):
                 title = (f'NOT DECOMPILED: generated fallback assembly for {s:#010x}-{e:#010x}.\n'
                          f'Produced locally from your dump so the executable builds from source; it is a\n'
                          f'disassembly, not reconstructed source, and earns no code or matching credit.')
-            text, info = asmgen.generate(img, lst, enc, s, e, names, ent, is_code, title, base, known)
+            text, info = asmgen.generate(img, None, enc, s, e, names, ent, is_code, title, base, known)
             sub = {'id': unit['id'] if len(spans) == 1 else f"{unit['id']}_{idx}",
                    'class': unit['class'], 'address': hex(s),
                    'ranges': [{'offset': s - base, 'size': e - s}],
@@ -549,14 +561,19 @@ def build_units(root, reference, out_dir, tools=None):
     tools = tools or load_tools(root)
     base = int(json.loads((Path(root) / 'config/project.json').read_text())['base_address'], 0)
     verify_reference(reference, read(root), base)
-    blobs = {}
-    for unit, sub, path in materialize(root, out_dir):
+    produced = materialize(root, out_dir)
+
+    def one(item):
+        unit, sub, path = item
         r = sub['ranges'][0]
         code = assemble(path, sub, root, tools)
         if code != bytes(reference[r['offset']:r['offset'] + r['size']]):
             raise ValueError('Assembly unit does not match the reference: ' + sub['id'])
-        blobs[sub['id']] = code
-    return blobs
+        return sub['id'], code
+    # At most four assembler/linker processes at a time.
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=min(4, os.cpu_count() or 1)) as pool:
+        return dict(pool.map(one, produced))
 
 
 def totals(asm):
@@ -603,17 +620,24 @@ def plan(root=ROOT):
            'code_extent': {'bytes': 3062780,
                            'basis': 'Decoded-image bytes not in the recorded static-data extent: listed instructions, admitted function ranges, unmatched candidate code ranges and code-loaded literal slots. An analysis estimate.'},
            'units': []}
-    dropped = 0
-    for s, e, kind, ev in ranges:
-        ent = sorted(a for a in starts if s <= a < e) or [s]
+    retained_runs, dropped_bytes = [], 0
+    work = [(s, e, kind, ev) for s, e, kind, ev in ranges]
+    while work:
+        s, e, kind, ev = work.pop()
+        ent = sorted(set(a for a in starts if s <= a < e) | {s})
         text, info = asmgen.generate(reference, lst, enc, s, e, names, ent, is_code, '', base, known)
-        # Committed manifest carries ranges and bindings only, never instruction text.
+        # Committed manifest carries ranges and evidence only, never instruction text.
         unit = {'id': f'{kind}_{s:08x}', 'class': kind, 'address': hex(s),
                 'ranges': [{'offset': s - base, 'size': e - s}],
                 'reference_sha256': hashlib.sha256(bytes(reference[s - base:e - base])).hexdigest()}
+        ev_here = [(p, t) for p, t in ev if s <= p < e]
         if kind == 'hand':
-            unit['evidence'] = [{'address': hex(p), 'instruction': t} for p, t in ev]
-        else:
+            if not ev_here:
+                kind = unit['class'] = 'fallback'
+                unit['id'] = f'fallback_{s:08x}'
+            else:
+                unit['evidence'] = [{'address': hex(p), 'instruction': t} for p, t in ev_here]
+        if kind == 'fallback':
             unit['status'] = 'not_decompiled'
         # The lint uses the generated entries/symbols; they are recomputed at build, not committed.
         probe = dict(unit, entries=[{'name': n, 'address': hex(a)} for a, n in zip(ent, info['entries'])],
@@ -621,13 +645,27 @@ def plan(root=ROOT):
         try:
             lint(text, probe, known)
         except ValueError:
-            dropped += 1
+            # Cut out only the raw data runs no reference proves; they stay reference-backed.
+            runs = asmgen.raw_runs(info, MAX_RAW)
+            if not runs:
+                retained_runs.append((s, e)); dropped_bytes += e - s
+                continue
+            cursor = s
+            for a, b in runs:
+                retained_runs.append((a, b)); dropped_bytes += b - a
+                if a > cursor:
+                    work.append((cursor, a, kind, ev_here))
+                cursor = b
+            if cursor < e:
+                work.append((cursor, e, kind, ev_here))
             continue
         out['units'].append(unit)
+    out['units'].sort(key=lambda u: int(u['address'], 0))
     (Path(root) / MANIFEST).write_text(json.dumps(out, separators=(',', ':')) + '\n')
     t = totals(out)
     return (f"planned {t['hand']['units']} hand + {t['fallback']['units']} fallback units "
-            f"({t['hand']['bytes'] + t['fallback']['bytes']:,} bytes); {dropped} ranges dropped by lint.")
+            f"({t['hand']['bytes'] + t['fallback']['bytes']:,} bytes); {dropped_bytes:,} bytes in "
+            f"{len(retained_runs)} unprovable runs stay reference-backed.")
 
 
 if __name__ == '__main__':

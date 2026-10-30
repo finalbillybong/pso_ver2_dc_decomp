@@ -14,10 +14,10 @@
 | Decoded executable | 4,162,912 bytes |
 | Image coverage (code ranges + typed data) | 39.7302% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
-| Assembly (hand-written), not decompiled | 32,596 bytes in 109 units (1.0643% of the code extent) |
-| Fallback assembly for unmatched code, **not decompiled** | 1,460,054 bytes in 10909 units (47.6709% of the code extent) |
-| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,526,767 bytes (84.7187% of the image) |
-| Retained reference dependence | 636,145 bytes |
+| Assembly (hand-written), not decompiled | 29,990 bytes in 88 units (0.9792% of the code extent) |
+| Fallback assembly for unmatched code, **not decompiled** | 1,784,958 bytes in 4888 units (58.2790% of the code extent) |
+| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,849,065 bytes (92.4609% of the image) |
+| Retained reference dependence | 313,847 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
 | Source-only build | Unavailable |
@@ -32,7 +32,7 @@ as integers earn no credit. The static-data extent is an analysis estimate of th
 not a recovered section size. Embedded assets (see DATA.md) are extracted from
 your own dump at build time and are counted separately; they earn no coverage
 credit. The integrated hybrid image matches the reference, but still requires
-636,145 original bytes besides the assets.
+313,847 original bytes besides the assets.
 
 **Assembly is not decompiled code, and no assembly is committed.** Hand-written
 assembly covers routines with an instruction that neither CodeWarrior nor the pinned

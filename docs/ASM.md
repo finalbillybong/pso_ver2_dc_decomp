@@ -38,11 +38,49 @@ the assembler recomputes the identical displacement. Literal-pool words and swit
 become `.long`/`.short`; a word that equals an admitted function, data object or other
 known address is written as that symbol, resolved by the linker, never as a bare integer.
 
+Builds (`project.py build`, `verify_source.py`, `asm_units.py lint`) need only those
+two inputs: entry labels come from committed config (admitted functions and
+reconstruction targets). Until this change the build also loaded the analysis listing,
+which made it fail on checkouts whose analysis was not under `<scratch>/analysis/game`;
+it no longer reads it. CI reads neither the dump nor the listing.
+
 `tools/asm_units.py plan` (a maintainer step, run with the dump) recomputes the unit
-ranges. It additionally reads the analysis listing and function table that
-`tools/setup_analysis.py` produces from your dump — pinned by SHA-256 in
-`config/analysis.json` — to tell code from data and to choose cut points. `plan` writes
-the committed manifest; ordinary builds and CI never read the listing.
+ranges and is the only step that reads the analysis listing and function table — pinned
+by SHA-256 in `config/analysis.json` — to tell code from data and to choose cut points.
+They are produced from your dump by `python3 -B tools/setup_analysis.py` (pinned
+Ghidra) and `python3 -B tools/analyze.py game --base 0x8c010000`, which writes
+`<scratch>/analysis/game/`. `plan` looks there, then in the parent of the scratch
+directory (for checkouts whose scratch moved after analysis), and first in a
+`"analysis"` directory named in `local.json` if set; if none holds hash-matching files it
+stops with a message naming the paths it tried and these commands.
+
+### Planning rules
+
+* **Code side.** A byte is code if it is a listed instruction, inside an admitted or
+  candidate function range, or between a listed PC-relative load (`mov.l`, `mov.w`,
+  `mova`) and its literal slot. SH-4 load displacements only reach forward, so that
+  interval is the function and its pool; this keeps alignment padding the listing left
+  undecoded from separating a function from its pool. Admitted C/SHC, typed data and
+  assets are never fallback.
+* **Cuts.** Units are cut at function starts only where no listed PC-relative load or
+  conditional branch crosses the cut.
+* **Literal pools and switch tables.** Pool slots are the targets of loads in the unit;
+  `mova` targets become literal words or, when their words are code addresses, switch
+  tables written as `.long` labels; aligned words whose upper halfword is not an
+  instruction and whose value is a memory address become symbolic pointers.
+* **Only proven data.** If a range still holds a hex data run that no load in the unit
+  references (more than four bytes, or an unreferenced prefix longer than four bytes
+  before a referenced slot), `plan` cuts out **just that run**; it stays
+  reference-backed and the rest of the range is kept. `asmgen.raw_runs` mirrors the lint
+  rule exactly, and every kept unit is re-linted before it is recorded.
+* **Strict hand class.** A piece is `hand` only if every function in it (by the pinned
+  function table) contains its own evidence instruction; a piece that cannot be split
+  from evidence-free code is `fallback` (still assembled, no hand-written credit).
+
+Known limitation: the generator decodes every halfword that is not proven data as an
+instruction, so a data table that no load references and whose halfwords are valid
+encodings is emitted as instructions. It reassembles byte for byte, but it is not
+classified as data; that only affects readability of not-decompiled fallback.
 
 ## Build chain
 
@@ -62,6 +100,11 @@ data and asset modules, for every assembly unit:
    exactly one allocated `.text` at that address, no relocations left.
 7. Compare the extracted range with the complete reference range; the integrated image
    must equal the pinned executable.
+
+Steps 3–7 run in at most four parallel assembler/linker processes. On the reference
+machine the whole assembly part of one build (regenerating about 5,200 units and
+assembling, linking and comparing them) takes about 10 seconds and 130 MB; a closeout's
+time is dominated by the CodeWarrior compiles, not by assembly.
 
 A unit that starts two bytes past a four-byte boundary begins with `.skip 2` (the
 alignment phase) and is linked two bytes early so the assembler computes `mov.l`/`mova`

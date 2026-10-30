@@ -3,7 +3,7 @@
 The current public checkpoint has **11389 exact functions in 11049 modules**, replacing
 **1,160,380 bytes** of the 4,162,912-byte decoded executable (**27.8742% code-range coverage**).
 Typed static data adds 493,552 bytes ([DATA.md](DATA.md)), for **39.7302% image coverage**.
-It retains **636,145 reference bytes**. This is a hybrid build; code-only completion and total function count are
+It retains **313,847 reference bytes**. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
 
@@ -39,8 +39,8 @@ shares its literal pool.
 
 ## Assembly units
 
-Assembly is not decompiled code and is never committed ([ASM.md](ASM.md)). 109 hand-written routines
-(32,596 bytes) carry evidence that no compiler produced them; 10,909 fallback units (1,460,054 bytes) are
+Assembly is not decompiled code and is never committed ([ASM.md](ASM.md)). 88 hand-written routines
+(29,990 bytes) carry evidence that no compiler produced them; 4,888 fallback units (1,784,958 bytes) are
 generated from your dump for code without matching C and labelled not_decompiled. Both are
 regenerated at build time and earn no code or matching credit.
 

@@ -63,26 +63,44 @@ def reference_image(root=ROOT):
     return data
 
 
-def load_listing(root=ROOT):
-    """The analysis listing and function table, from scratch, pinned by config/analysis.json.
+def analysis_candidates(root=ROOT):
+    """Where tools/analyze.py output may live: an explicit local.json "analysis" directory,
+    <scratch>/analysis/game (where `tools/analyze.py game` writes), and the parent of the
+    scratch directory (checkouts whose scratch moved into a subdirectory after analysis)."""
+    cfg = json.loads((Path(root) / 'local.json').read_text())
+    scratch = Path(cfg['scratch'])
+    found = [Path(cfg['analysis'])] if cfg.get('analysis') else []
+    return found + [scratch / 'analysis/game', scratch.parent / 'analysis/game']
 
-    Returns (lst, function_starts). `lst` maps each decoded instruction address to its
-    listing text; it is the committed-config view of which halfwords are instructions."""
+
+def load_listing(root=ROOT):
+    """The analysis listing and function table from your dump, pinned by config/analysis.json.
+
+    Only `asm_units.py plan` needs it (to tell code from data and choose cut points);
+    ordinary builds regenerate units from the image alone. Returns (lst, function_starts)."""
     pins = config(root)['output_hashes']
-    base = scratch_dir(root) / 'analysis/game'
-    out = {}
-    for name in ('listing.txt', 'functions.tsv'):
-        raw = (base / name).read_bytes()
-        if hashlib.sha256(raw).hexdigest() != pins[name]:
-            raise ValueError('Analysis ' + name + ' does not match config/analysis.json; '
-                             'regenerate it from your dump with tools/setup_analysis.py')
-        out[name] = raw.decode()
-    lst = {}
-    for line in out['listing.txt'].splitlines():
-        addr, _, text = line.partition(' ')
-        lst[int(addr, 16)] = text
-    starts = {int(line.split('\t')[0], 16) for line in out['functions.tsv'].splitlines() if line.strip()}
-    return lst, starts
+    tried = []
+    for base in analysis_candidates(root):
+        if not ((base / 'listing.txt').is_file() and (base / 'functions.tsv').is_file()):
+            tried.append(str(base))
+            continue
+        out = {}
+        for name in ('listing.txt', 'functions.tsv'):
+            raw = (base / name).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != pins[name]:
+                raise ValueError(f'{base / name} does not match config/analysis.json; regenerate it with '
+                                 '`python3 -B tools/analyze.py game --base 0x8c010000`')
+            out[name] = raw.decode()
+        lst = {}
+        for line in out['listing.txt'].splitlines():
+            addr, _, text = line.partition(' ')
+            lst[int(addr, 16)] = text
+        starts = {int(line.split('\t')[0], 16) for line in out['functions.tsv'].splitlines() if line.strip()}
+        return lst, starts
+    raise ValueError('Analysis listing not found (needed only by `asm_units.py plan`). Looked in: '
+                     + ', '.join(tried) + '. Create it with `python3 -B tools/setup_analysis.py` and '
+                     '`python3 -B tools/analyze.py game --base 0x8c010000`, or set "analysis" in '
+                     'local.json to the directory holding listing.txt and functions.tsv.')
 
 
 # ----------------------------------------------------------------- encoding table
@@ -157,8 +175,7 @@ def build_enc(root=ROOT):
         if not bad and r.returncode == 0:
             break
         good = [o for i, o in enumerate(good) if i not in bad]
-    subprocess.run([str(objdump), '-O', 'binary'] if False else
-                   [str(matching.load_tools()['objcopy']), '-O', 'binary', '-j', '.text',
+    subprocess.run([str(matching.load_tools()['objcopy']), '-O', 'binary', '-j', '.text',
                     str(cache / 'enc.o'), str(cache / 'enc.bin')], check=True)
     b = (cache / 'enc.bin').read_bytes()
     table = {o: cand[o] for i, o in enumerate(good) if struct.unpack_from('<H', b, 2 * i)[0] == o}
@@ -177,19 +194,20 @@ def generate(img, lst, enc, start, end, names, entries, is_code, title='', base=
     known: addresses that must be written as symbols when a literal word equals one."""
     assert start % 2 == 0 and end % 2 == 0 and end > start
     phase = start % 4
-    h = lambda pc: img[pc - base] | img[pc - base + 1] << 8
+    # Decode each halfword of the range (and one beyond) once.
+    hw = struct.unpack_from('<%dH' % ((min(end + 2, base + len(img)) - start) // 2), img, start - base)
+    h = lambda pc: hw[(pc - start) >> 1] if start <= pc < start + 2 * len(hw) else (img[pc - base] | img[pc - base + 1] << 8)
     w = lambda pc: struct.unpack_from('<I', img, pc - base)[0]
     inimg = lambda a: base <= a < base + len(img)
-    # Literal slots: targets of listed PC-relative loads whose instruction is in range.
+    rel = {pc: pcrel(hw[(pc - start) >> 1], pc) for pc in range(start, end, 2)}
+    # Literal slots: targets of PC-relative loads in range.
     slots = {}
-    for pc in range(start, end, 2):
-        r = pcrel(h(pc), pc)
+    for pc, r in rel.items():
         if r and r[2] and start <= r[1] < end:
             slots[r[1]] = max(slots.get(r[1], 0), r[2])
     tables, movas = set(), set()
     bases = [w(s) for s, size in slots.items() if size == 4 and start <= s < end]
-    for pc in range(start, end, 2):
-        r = pcrel(h(pc), pc)
+    for pc, r in rel.items():
         if r and r[0] == 'mova':
             bases.append(r[1]); movas.add(r[1])
     for t in bases:
@@ -212,6 +230,7 @@ def generate(img, lst, enc, start, end, names, entries, is_code, title='', base=
         labels[a] = f'_fn_{a:08x}'
     info = dict(instructions=0, pool_words=0, pool_halfwords=0, raw_halfwords=0, symbolic_words=0,
                 pointer_words=0, table_words=0, labels=0, equates=0, padding=0)
+    hexdata, load_refs = [], set()  # for raw_runs(): hex data items and in-unit load targets
     items = []
     pc = start
     while pc < end:
@@ -235,7 +254,7 @@ def generate(img, lst, enc, start, end, names, entries, is_code, title='', base=
             else:
                 items.append((pc, 'short', op)); pc += 2
             continue
-        r = pcrel(op, pc)
+        r = rel[pc]
         if r:
             kind, target, _ = r
             (labels if start <= target < end else equates).setdefault(
@@ -297,6 +316,8 @@ def generate(img, lst, enc, start, end, names, entries, is_code, title='', base=
             lines.append('\t' + payload); info['instructions'] += 1
         elif kind == 'pcrel':
             k, target, op = payload
+            if k in ('mov.w', 'mov.l', 'mova') and start <= target < end:
+                load_refs.add(target)
             if k in ('mov.w', 'mov.l'):
                 lines.append(f'\t{k} {ref(target)}, r{(op >> 8) & 0xf}')
             elif k == 'mova':
@@ -322,22 +343,46 @@ def generate(img, lst, enc, start, end, names, entries, is_code, title='', base=
                 if sym not in local:
                     undefined[sym] = payload
             else:
-                lines.append(f'\t.long {payload:#010x}')
+                lines.append(f'\t.long {payload:#010x}'); hexdata.append((pc, 4))
             info['pool_words'] += 1
         elif kind == 'short':
-            lines.append(f'\t.short {payload:#06x}'); info['pool_halfwords'] += 1
+            lines.append(f'\t.short {payload:#06x}'); info['pool_halfwords'] += 1; hexdata.append((pc, 2))
         elif kind == 'pad':
             lines.append('\t.balign 4, 0' if payload == 0 else '\t.balign 4'); info['padding'] += 1
         else:
-            lines.append(f'\t.short {payload:#06x}\t! not a valid SH-4 instruction encoding')
+            lines.append(f'\t.short {payload:#06x}\t! not a valid SH-4 instruction encoding'); hexdata.append((pc, 2))
             info['raw_halfwords'] += 1
     lines.append('')
     for sym, v in ptr_syms.items():
         if sym not in local:
             undefined[sym] = v
     info['undefined'] = undefined
+    info['hexdata'], info['load_refs'] = hexdata, load_refs
     info['entries'] = [labels[a] for a in entries]
     return '\n'.join(lines), info
+
+
+def raw_runs(info, max_raw=4):
+    """[(a, b)] stretches of hexadecimal data that the source lint rejects (mirrors
+    asm_units.lint): within a contiguous run of hex `.short`/`.long` items, the bytes seen
+    before the first literal slot that a load in the same unit references may total at
+    most max_raw; a longer unreferenced prefix (or a whole unreferenced run) is reported."""
+    runs = []
+    items = info['hexdata']
+    i = 0
+    while i < len(items):
+        j = i
+        while j + 1 < len(items) and items[j + 1][0] == items[j][0] + items[j][1]:
+            j += 1
+        a = items[i][0]
+        k = i
+        while k <= j and items[k][0] not in info['load_refs']:
+            k += 1
+        unref_end = items[k][0] if k <= j else items[j][0] + items[j][1]
+        if unref_end - a > max_raw:
+            runs.append((a, unref_end))
+        i = j + 1
+    return runs
 
 
 # ----------------------------------------------------------------- planning
@@ -378,8 +423,10 @@ def code_spans(root, lst, starts):
     w = lambda pc: struct.unpack_from('<I', reference, pc - base)[0]
     for pc in lst:
         r = pcrel(h(pc), pc)
-        if r and r[2]:
-            mark(r[1], r[1] + r[2], 2)
+        if r and r[0] in ('mov.l', 'mov.w', 'mova'):
+            # A listed PC-relative load proves that everything from it to its literal slot,
+            # including alignment padding the listing left undecoded, belongs to the code.
+            mark(min(pc, r[1]), max(pc + 2, r[1] + max(r[2], 2)), 2)
     # admitted C/SHC, typed data and assets are taken, never fallback
     for u in code['units']:
         mark(int(u['address'], 0), int(u['address'], 0) + u['ranges'][0]['size'], 1)
@@ -393,7 +440,9 @@ def code_spans(root, lst, starts):
             p = o
             while o < n and own[o] == 2:
                 o += 1
-            spans.append((base + p, base + o))
+            a, b = base + p + (p % 2), base + o - (o % 2)  # code is halfword-aligned
+            if b > a:
+                spans.append((a, b))
         else:
             o += 1
     return spans
@@ -408,6 +457,7 @@ def plan(root=ROOT):
     enc = build_enc(root)
     queue = json.loads((Path(root) / 'config/reconstruction-targets.json').read_text())['targets']
     cut_points = set(starts) | {int(t['address'], 0) for t in queue}
+    function_starts = set(starts)
     for t in queue:
         for f in t.get('functions', []):
             cut_points.add(int(f['address'], 0))
@@ -434,7 +484,11 @@ def plan(root=ROOT):
         for a, b in zip(pts, pts[1:]):
             ev = [(pc, enc[h(pc)]) for pc in range(a, b, 2)
                   if pc in lst and h(pc) in enc and re.search(TS, enc[h(pc)])]
-            kind = 'hand' if ev and in_text(a, b) else 'fallback'
+            # Hand only when every function in the piece carries its own evidence; a piece that
+            # cannot be split from evidence-free code stays fallback (assembled, no hand credit).
+            fs = sorted({a} | {x for x in function_starts if a < x < b}) + [b]
+            every = all(any(x <= p < y for p, _ in ev) for x, y in zip(fs, fs[1:]))
+            kind = 'hand' if ev and every and in_text(a, b) else 'fallback'
             pieces.append([a, b, kind, ev])
         units += [tuple(p) for p in pieces]
     return units
