@@ -1,0 +1,458 @@
+/* Static data 8c281430-8c281850: vtable objects, in address order. */
+
+typedef void (*VirtualFunction)(void);
+
+extern void destroy_object_8c255dac(void);
+extern void operation_8c073578(void);
+extern void operation_8c073678(void);
+extern void operation_8c073e50(void);
+extern void hierarchy_output(void);
+extern void operation_8c0104fc(void);
+extern void fn_8c01d694(void);
+extern void operation_8c051fd4(void);
+extern void operation_8c010500(void);
+extern void operation_8c073e54(void);
+extern void operation_8c0771c4(void);
+extern void operation_8c01d3b0(void);
+extern void fn_8c01d4c4(void);
+extern void operation_8c074814(void);
+extern void operation_8c073900(void);
+extern void operation_8c075f8c(void);
+extern void operation_8c073674(void);
+extern void operation_8c075fbc(void);
+extern void operation_8c20a430(void);
+extern void fn_8c209ad8(void);
+extern void fn_8c209eb4(void);
+extern void fn_8c209c48(void);
+extern void operation_8c209fe0(void);
+extern void operation_8c20a35c(void);
+extern void fn_8c20a160(void);
+extern void operation_8c20a228(void);
+extern void operation_8c07617c(void);
+extern void operation_8c20a0d8(void);
+extern void operation_8c07623c(void);
+extern void operation_8c0764f0(void);
+extern void operation_8c075b84(void);
+extern void fn_8c075bec(void);
+extern void operation_8c0770a4(void);
+extern void operation_8c0770e4(void);
+extern void operation_8c023008(void);
+extern void operation_8c075340(void);
+extern void operation_8c023308(void);
+extern void operation_8c0243e8(void);
+extern void operation_8c075344(void);
+extern void operation_8c077274(void);
+extern void operation_8c02b210(void);
+extern void operation_8c0756fc(void);
+extern void operation_8c075968(void);
+extern void operation_8c075b28(void);
+extern void fn_8c07564c(void);
+extern void operation_8c075708(void);
+extern void fn_8c075ac8(void);
+extern void fn_8c075b90(void);
+extern void fn_8c0766f8(void);
+extern void operation_8c255df0(void);
+extern void operation_8c076178(void);
+extern void operation_8c076174(void);
+extern void operation_8c076238(void);
+extern void operation_8c076170(void);
+extern void operation_8c075ac4(void);
+extern void operation_8c075b80(void);
+extern void operation_8c077810(void);
+extern void operation_8c075ed8(void);
+extern void fn_8c076340(void);
+extern void destroy_object_8c255e9c(void);
+extern void operation_8c07633c(void);
+extern void destroy_object_8c255ee0(void);
+extern void fn_8c255fb4(void);
+extern void operation_8c256198(void);
+extern void operation_8c0eeb8c(void);
+extern void operation_8c256194(void);
+extern void operation_8c010508(void);
+extern void operation_8c010510(void);
+extern void operation_8c1135b4(void);
+extern void operation_8c082044(void);
+extern void operation_8c113440(void);
+extern void operation_8c1130e0(void);
+extern void operation_8c1130e4(void);
+extern void operation_8c113130(void);
+extern void operation_8c1132e0(void);
+extern void operation_8c1133cc(void);
+extern void operation_8c256254(void);
+extern void update_cycle_8c113060(void);
+extern void operation_8c1136b0(void);
+extern void operation_8c2562b4(void);
+extern void fn_8c256424(void);
+extern void operation_8c2564a0(void);
+extern void operation_8c0111cc(void);
+extern void fn_8c043724(void);
+extern void operation_8c25649c(void);
+extern void word_operation_8c01345c(void);
+extern void operation_8c0104f0(void);
+extern void operation_8c04a928(void);
+extern void operation_8c04a950(void);
+extern void operation_8c013468(void);
+extern void query_object_height(void);
+extern void query_position_height(void);
+extern void operation_8c04a4f4(void);
+extern void operation_8c013474(void);
+extern void fn_8c045f04(void);
+extern void operation_8c046510(void);
+extern void fn_8c04745c(void);
+extern void fn_8c047b24(void);
+extern void fn_8c048c24(void);
+extern void operation_8c047a50(void);
+extern void try_or_forward_8c046104(void);
+extern void operation_8c046140(void);
+extern void operation_8c0461f8(void);
+extern void operation_8c04621c(void);
+extern void operation_8c0462a0(void);
+extern void operation_8c046324(void);
+extern void operation_8c04639c(void);
+extern void operation_8c046414(void);
+extern void operation_8c046498(void);
+extern void operation_8c013434(void);
+extern void operation_8c0133f8(void);
+extern void fn_8c045200(void);
+extern void object_blocked_8c013418(void);
+extern void object_blocked_8c013428(void);
+extern void object_blocked_8c01343c(void);
+extern void object_blocked_8c0133ec(void);
+extern void operation_455ac(void);
+extern void operation_456a4(void);
+extern void operation_45844(void);
+extern void operation_45910(void);
+extern void operation_459d8(void);
+extern void operation_45a8c(void);
+extern void operation_45b8c(void);
+extern void operation_45d6c(void);
+extern void operation_8c045484(void);
+extern void operation_8c0466b8(void);
+extern void operation_8c04677c(void);
+extern void operation_8c04688c(void);
+extern void operation_8c046984(void);
+extern void fn_8c046a6c(void);
+extern void operation_8c046c18(void);
+extern void operation_8c046d6c(void);
+extern void fn_8c046f2c(void);
+extern void fn_8c047090(void);
+extern void operation_8c0471b4(void);
+extern void operation_8c0471fc(void);
+extern void fn_8c047268(void);
+extern void operation_8c047438(void);
+extern void operation_8c013408(void);
+extern void operation_8c01340c(void);
+extern void operation_8c013410(void);
+extern void operation_8c013414(void);
+extern void operation_8c013424(void);
+extern void operation_8c013438(void);
+extern void operation_8c013478(void);
+extern void operation_8c0134ac(void);
+extern void operation_8c0134b0(void);
+extern void operation_8c0134b4(void);
+extern void operation_8c0134b8(void);
+extern void operation_8c0134bc(void);
+extern void operation_8c0134c0(void);
+extern void operation_8c0134c4(void);
+extern void operation_8c0134dc(void);
+extern void operation_8c02cc5c(void);
+extern void operation_8c0134e0(void);
+extern void operation_8c0134e4(void);
+extern void operation_8c0134e8(void);
+extern void operation_8c0134ec(void);
+extern void destroy_object_8c2566b8(void);
+extern void operation_8c2567e8(void);
+extern void operation_8c2567e4(void);
+extern void operation_8c25693c(void);
+extern void show_key_8c112fbc(void);
+extern void operation_8c256938(void);
+extern void operation_8c2568ec(void);
+extern void operation_8c256888(void);
+extern void operation_8c25688c(void);
+extern void operation_8c256890(void);
+extern void operation_8c256894(void);
+extern void operation_8c113564(void);
+
+/* 8c281430: type-information and this-adjustment header, then 59 slots */
+VirtualFunction const vt_8c281430[61] = {
+    0,
+    0,
+    destroy_object_8c255dac,
+    operation_8c073578,
+    operation_8c073678,
+    operation_8c073e50,
+    hierarchy_output,
+    operation_8c0104fc,
+    fn_8c01d694,
+    operation_8c051fd4,
+    operation_8c010500,
+    operation_8c073e54,
+    operation_8c0771c4,
+    operation_8c01d3b0,
+    fn_8c01d4c4,
+    operation_8c074814,
+    operation_8c073900,
+    operation_8c075f8c,
+    operation_8c073674,
+    operation_8c075fbc,
+    operation_8c20a430,
+    fn_8c209ad8,
+    fn_8c209eb4,
+    fn_8c209c48,
+    operation_8c209fe0,
+    operation_8c20a35c,
+    fn_8c20a160,
+    operation_8c20a228,
+    operation_8c07617c,
+    operation_8c20a0d8,
+    operation_8c07623c,
+    operation_8c0764f0,
+    operation_8c075b84,
+    fn_8c075bec,
+    operation_8c0770a4,
+    operation_8c0770e4,
+    operation_8c023008,
+    operation_8c075340,
+    operation_8c023308,
+    operation_8c0243e8,
+    operation_8c075344,
+    operation_8c077274,
+    operation_8c02b210,
+    operation_8c0756fc,
+    operation_8c075968,
+    operation_8c075b28,
+    fn_8c07564c,
+    operation_8c075708,
+    fn_8c075ac8,
+    fn_8c075b90,
+    fn_8c0766f8,
+    operation_8c255df0,
+    operation_8c076178,
+    operation_8c076174,
+    operation_8c076238,
+    operation_8c076170,
+    operation_8c075ac4,
+    operation_8c075b80,
+    operation_8c077810,
+    operation_8c075ed8,
+    fn_8c076340
+};
+
+/* 8c281524: type-information and this-adjustment header, then 59 slots */
+VirtualFunction const vt_8c281524[61] = {
+    0,
+    0,
+    destroy_object_8c255e9c,
+    operation_8c073578,
+    operation_8c073678,
+    operation_8c073e50,
+    hierarchy_output,
+    operation_8c0104fc,
+    fn_8c01d694,
+    operation_8c051fd4,
+    operation_8c010500,
+    operation_8c073e54,
+    operation_8c0771c4,
+    operation_8c01d3b0,
+    fn_8c01d4c4,
+    operation_8c074814,
+    operation_8c073900,
+    operation_8c075f8c,
+    operation_8c073674,
+    operation_8c075fbc,
+    operation_8c20a430,
+    fn_8c209ad8,
+    fn_8c209eb4,
+    fn_8c209c48,
+    operation_8c209fe0,
+    operation_8c20a35c,
+    fn_8c20a160,
+    operation_8c20a228,
+    operation_8c07617c,
+    operation_8c20a0d8,
+    operation_8c07623c,
+    operation_8c0764f0,
+    operation_8c075b84,
+    fn_8c075bec,
+    operation_8c0770a4,
+    operation_8c0770e4,
+    operation_8c023008,
+    operation_8c075340,
+    operation_8c023308,
+    operation_8c0243e8,
+    operation_8c075344,
+    operation_8c077274,
+    operation_8c02b210,
+    operation_8c0756fc,
+    operation_8c075968,
+    operation_8c075b28,
+    fn_8c07564c,
+    operation_8c075708,
+    fn_8c075ac8,
+    fn_8c075b90,
+    fn_8c0766f8,
+    operation_8c07633c,
+    operation_8c076178,
+    operation_8c076174,
+    operation_8c076238,
+    operation_8c076170,
+    operation_8c075ac4,
+    operation_8c075b80,
+    operation_8c077810,
+    operation_8c075ed8,
+    fn_8c076340
+};
+
+/* 8c281618: type-information and this-adjustment header, then 25 slots */
+VirtualFunction const vt_8c281618[27] = {
+    0,
+    0,
+    destroy_object_8c255ee0,
+    fn_8c255fb4,
+    operation_8c256198,
+    operation_8c0eeb8c,
+    hierarchy_output,
+    operation_8c0104fc,
+    fn_8c01d694,
+    operation_8c051fd4,
+    operation_8c010500,
+    operation_8c256194,
+    operation_8c010508,
+    operation_8c01d3b0,
+    fn_8c01d4c4,
+    operation_8c010510,
+    operation_8c1135b4,
+    operation_8c082044,
+    operation_8c113440,
+    operation_8c1130e0,
+    operation_8c1130e4,
+    operation_8c113130,
+    operation_8c1132e0,
+    operation_8c1133cc,
+    operation_8c256254,
+    update_cycle_8c113060,
+    operation_8c1136b0
+};
+
+/* 8c281684: type-information and this-adjustment header, then 86 slots */
+VirtualFunction const vt_8c281684[88] = {
+    0,
+    0,
+    operation_8c2562b4,
+    fn_8c256424,
+    operation_8c2564a0,
+    operation_8c0111cc,
+    hierarchy_output,
+    operation_8c0104fc,
+    fn_8c01d694,
+    fn_8c043724,
+    operation_8c010500,
+    operation_8c25649c,
+    word_operation_8c01345c,
+    operation_8c01d3b0,
+    fn_8c01d4c4,
+    operation_8c010510,
+    operation_8c0104f0,
+    operation_8c04a928,
+    operation_8c04a950,
+    operation_8c013468,
+    query_object_height,
+    query_position_height,
+    operation_8c04a4f4,
+    operation_8c013474,
+    fn_8c045f04,
+    operation_8c046510,
+    fn_8c04745c,
+    fn_8c047b24,
+    fn_8c048c24,
+    operation_8c047a50,
+    try_or_forward_8c046104,
+    operation_8c046140,
+    operation_8c0461f8,
+    operation_8c04621c,
+    operation_8c0462a0,
+    operation_8c046324,
+    operation_8c04639c,
+    operation_8c046414,
+    operation_8c046498,
+    operation_8c013434,
+    operation_8c0133f8,
+    fn_8c045200,
+    object_blocked_8c013418,
+    object_blocked_8c013428,
+    object_blocked_8c01343c,
+    object_blocked_8c0133ec,
+    operation_455ac,
+    operation_456a4,
+    operation_45844,
+    operation_45910,
+    operation_459d8,
+    operation_45a8c,
+    operation_45b8c,
+    operation_45d6c,
+    operation_8c045484,
+    operation_8c0466b8,
+    operation_8c04677c,
+    operation_8c04688c,
+    operation_8c046984,
+    fn_8c046a6c,
+    operation_8c046c18,
+    operation_8c046d6c,
+    fn_8c046f2c,
+    fn_8c047090,
+    operation_8c0471b4,
+    operation_8c0471fc,
+    fn_8c047268,
+    operation_8c047438,
+    operation_8c013408,
+    operation_8c01340c,
+    operation_8c013410,
+    operation_8c013414,
+    operation_8c013424,
+    operation_8c013438,
+    operation_8c013478,
+    operation_8c0134ac,
+    operation_8c0134b0,
+    operation_8c0134b4,
+    operation_8c0134b8,
+    operation_8c0134bc,
+    operation_8c0134c0,
+    operation_8c0134c4,
+    operation_8c0134dc,
+    operation_8c02cc5c,
+    operation_8c0134e0,
+    operation_8c0134e4,
+    operation_8c0134e8,
+    operation_8c0134ec
+};
+
+/* 8c2817e4: type-information and this-adjustment header, then 25 slots */
+VirtualFunction const vt_8c2817e4[27] = {
+    0,
+    0,
+    destroy_object_8c2566b8,
+    operation_8c2567e8,
+    operation_8c2567e4,
+    operation_8c25693c,
+    hierarchy_output,
+    operation_8c0104fc,
+    fn_8c01d694,
+    operation_8c051fd4,
+    operation_8c010500,
+    show_key_8c112fbc,
+    operation_8c010508,
+    operation_8c01d3b0,
+    fn_8c01d4c4,
+    operation_8c010510,
+    operation_8c1135b4,
+    operation_8c256938,
+    operation_8c2568ec,
+    operation_8c256888,
+    operation_8c25688c,
+    operation_8c256890,
+    operation_8c256894,
+    operation_8c1133cc,
+    operation_8c113564,
+    update_cycle_8c113060,
+    operation_8c1136b0
+};

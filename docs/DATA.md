@@ -11,7 +11,42 @@ Only typed source counts:
 | Kind | Source form | Rule |
 | --- | --- | --- |
 | `vtable` | `VirtualFunction const vt_<addr>[N] = { 0, 0, name, ... };` | Header words are the CodeWarrior type-information pointer and this-adjustment (both zero in this build). Every other entry is `0` or a declared function. |
-| `string` | `const char str_<addr>[N] = "..." "...";` | Only C string literals. Several strings in one object are written as separate literals ending in `\0`; trailing zero padding comes from the array size. |
+| `string` | `const char str_<addr>[N] = "...";` | Only C string literals, one object per string. CodeWarrior gives char arrays byte alignment and a section each, so back-to-back strings are separate objects; the terminator and any zero padding come from the array size. |
+
+### Virtual-table slots
+
+A slot names the admitted function at that address by its manifest name (for
+example `destroy_object_8c0111d0`). A slot whose function is not admitted yet is
+declared as `extern void fn_<addr>(void);` and bound to that address. It is still a
+named symbol, not an integer, and the object check requires a relocation for it.
+Before generation, every `fn_<addr>` target was checked to be a real code entry
+point. Acceptable evidence is one of:
+
+* a reconstruction target;
+* a Ghidra function start;
+* a listed instruction that follows a return/branch delay slot, a literal pool or padding;
+* for three addresses that the listing did not decode (`8c18d2e4`, `8c18dde0` and
+  `8c18ddf4`), a register-save prologue reviewed by hand.
+
+When such a function is admitted, its slot can be renamed to the manifest name
+without changing any bytes.
+
+All 1,119 virtual tables in the image are reconstructed (125,976 bytes).
+
+### Strings
+
+Every string from the static-data map is reconstructed except doubtful ones, which
+stay reference-backed (587 bytes):
+
+* bytes outside printable ASCII, tab, newline and carriage return (`0x80` and above
+  are floats or code, for example `\315\314L?` = 0.8f);
+* whitespace-only or single-character strings outside the main data region;
+* strings of four characters or fewer without word or format evidence;
+* runs of four or more one-character strings at a 2-byte stride, which are more
+  likely halfword tables.
+
+The last string before a code range keeps only its terminator, so code alignment
+is not claimed as data. Shift-JIS text is not included yet.
 
 Raw byte, halfword or word arrays, opaque or high-entropy data (including the
 embedded file at `8c28ad54`), and pointers written as integers earn no credit and

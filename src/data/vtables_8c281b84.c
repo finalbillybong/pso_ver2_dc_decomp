@@ -1,0 +1,38 @@
+/* Static data 8c281b84-8c281bc4: vtable objects, in address order. */
+
+typedef void (*VirtualFunction)(void);
+
+extern void destroy_object_8c25af94(void);
+extern void fn_8c25b05c(void);
+extern void operation_8c25b150(void);
+extern void operation_8c0111cc(void);
+extern void hierarchy_output(void);
+extern void operation_8c0104fc(void);
+extern void fn_8c01d694(void);
+extern void reset_shared_object(void);
+extern void operation_8c010500(void);
+extern void operation_8c25b14c(void);
+extern void operation_8c010508(void);
+extern void operation_8c01d3b0(void);
+extern void fn_8c01d4c4(void);
+extern void operation_8c010510(void);
+
+/* 8c281b84: type-information and this-adjustment header, then 14 slots */
+VirtualFunction const vt_8c281b84[16] = {
+    0,
+    0,
+    destroy_object_8c25af94,
+    fn_8c25b05c,
+    operation_8c25b150,
+    operation_8c0111cc,
+    hierarchy_output,
+    operation_8c0104fc,
+    fn_8c01d694,
+    reset_shared_object,
+    operation_8c010500,
+    operation_8c25b14c,
+    operation_8c010508,
+    operation_8c01d3b0,
+    fn_8c01d4c4,
+    operation_8c010510
+};
