@@ -7,13 +7,24 @@
   "matching_modules": 10771,
   "compiled_range_bytes": 1115854,
   "decoded_image_bytes": 4162912,
-  "retained_reference_bytes": 3047058,
-  "image_coverage_percent": 26.80465021,
-  "standalone_reconstructed_data_bytes": 0,
+  "retained_reference_bytes": 3035276,
+  "code_range_coverage_percent": 26.80465021,
+  "standalone_reconstructed_data_bytes": 11782,
+  "typed_data_modules": 209,
+  "typed_data_objects": 435,
+  "typed_data_bytes_by_kind": {
+    "string": 1218,
+    "vtable": 10564
+  },
+  "data_extent_bytes": 1100132,
+  "typed_data_percent_of_data_extent": 1.07096239,
+  "image_coverage_percent": 27.08767324,
   "code_completion_percent": null,
   "total_functions": null,
   "source_only_build_available": false,
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
-  "metric": "Complete compiled function ranges, including literals and padding, divided by the entire decoded image. Not a code-only completion percentage.",
+  "metric": "Complete compiled function ranges, including literals and padding, plus typed static-data modules, divided by the entire decoded image. Not a code-only completion percentage.",
+  "code_metric": "Complete compiled function ranges, including literals and padding, divided by the entire decoded image.",
+  "data_metric": "Bytes of exact typed static-data modules (virtual tables as arrays of named function pointers, strings as C string literals) divided by the recorded static-data extent estimate. Raw byte, halfword or word arrays and pointers written as integers earn no credit.",
   "verification": "Locally verified exact builds; CI validates the recorded input hashes and progress accounting."
 }

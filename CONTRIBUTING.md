@@ -17,6 +17,11 @@ Before proposing a source hypothesis, consult the symptom index in the
 6. Refresh public progress with `python3 -B tools/progress.py --record`, then run
    `python3 -B tools/progress.py --check` and `python3 -B tools/check_publication.py`.
 
+Static data counts only as typed source under the rules in
+[DATA.md](docs/DATA.md): virtual tables as arrays of named function pointers and
+strings as C string literals, each module exact over its complete range. Raw byte
+arrays and pointers written as integers never count.
+
 No inline assembly, embedded instruction bytes, copied runtime objects, binary
 patches or normalized comparisons count as source matches. Preserve observed
 behavior until there is evidence for an intentional change. Keep scratch-only

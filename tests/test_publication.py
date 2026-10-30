@@ -41,13 +41,16 @@ class PublicationTests(unittest.TestCase):
                 shutil.copyfile(ROOT / name, dest)
             shutil.copyfile(ROOT / 'config/progress-proof.json', root / 'config/progress-proof.json')
             report = progress.summary(root)
-            self.assertEqual(report['compiled_range_bytes'] + report['retained_reference_bytes'],
-                             report['decoded_image_bytes'])
+            self.assertEqual(report['compiled_range_bytes'] + report['standalone_reconstructed_data_bytes']
+                             + report['retained_reference_bytes'], report['decoded_image_bytes'])
+            self.assertEqual(sum(report['typed_data_bytes_by_kind'].values()),
+                             report['standalone_reconstructed_data_bytes'])
             self.assertIsNone(report['code_completion_percent'])
             self.assertIsNone(report['total_functions'])
             manifest = progress.read(root, 'config/project.json')
             sample = progress.read(root, 'config/samples.json')['samples'][-1]
-            for name in [manifest['units'][0]['source'], sample['source']]:
+            data_sources = [u['source'] for u in progress.static_data.read(root)['units'][:1]]
+            for name in [manifest['units'][0]['source'], sample['source'], *data_sources]:
                 with self.subTest(source=name):
                     source = root / name
                     original = source.read_bytes()

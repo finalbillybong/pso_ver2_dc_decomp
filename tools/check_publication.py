@@ -6,7 +6,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-CONFIG = {'analysis.json', 'compiler-packages.json', 'decoded.json',
+CONFIG = {'analysis.json', 'compiler-packages.json', 'data.json', 'decoded.json',
           'local.example.json', 'matching-packages.json', 'progress-proof.json',
           'project.json', 'reconstruction-targets.json', 'reference.json',
           'samples.json', 'toolchain.example.json'}

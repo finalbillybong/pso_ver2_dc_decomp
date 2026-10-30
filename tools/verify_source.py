@@ -40,8 +40,12 @@ def main():
     pso.build(cfg)
     if pso.compare(cfg):
         raise ValueError('Five-function compiler proof failed')
+    checks = ['two_fresh_exact_builds', 'integrated_image_exact', 'five_function_compiler_proof']
+    if project.static_data.read(root)['units']:
+        # project.build compiled, type-checked, placed and compared every data module.
+        checks.append('typed_data_modules_exact')
     pso.write_json(receipt_path, {
-        'checks': ['two_fresh_exact_builds', 'integrated_image_exact', 'five_function_compiler_proof'],
+        'checks': checks,
         'status': status, 'project_provenance': project.provenance(manifest),
         'driver_sha256': pso.file_hash(Path(__file__)),
         'artifacts': {str(p): pso.file_hash(p) for p in sorted(evidence.glob('*.json'))},

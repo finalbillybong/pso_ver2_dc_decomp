@@ -10,15 +10,23 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 import pso
 import matching
+import data as static_data
 
 
-def layout(manifest, size):
-    """Produce a complete, nonoverlapping map without inferring gap contents."""
+def layout(manifest, size, data=None):
+    """Produce a complete, nonoverlapping map without inferring gap contents.
+
+    Code modules are `compiled_source`; typed static-data modules from
+    config/data.json, when given, are `compiled_data`."""
     base = int(manifest['base_address'], 0)
     position = 0
     result = []
     identifiers = set()
-    for unit in sorted(manifest['units'], key=lambda u: int(u['address'], 0)):
+    units = [(u, 'compiled_source') for u in manifest['units']]
+    if data is not None:
+        static_data.validate(data, base, size, [u['id'] for u in manifest['units']])
+        units += [(u, 'compiled_data') for u in data['units']]
+    for unit, origin in sorted(units, key=lambda x: int(x[0]['address'], 0)):
         if unit['id'] in identifiers:
             raise ValueError('Duplicate unit identifier')
         identifiers.add(unit['id'])
@@ -33,7 +41,7 @@ def layout(manifest, size):
         if start > position:
             result.append({'offset': position, 'size': start - position,
                            'origin': 'reference_unreconstructed'})
-        result.append({'offset': start, 'size': length, 'origin': 'compiled_source',
+        result.append({'offset': start, 'size': length, 'origin': origin,
                        'unit': unit['id'], 'source': unit['source']})
         position = start + length
     if position < size:
@@ -53,8 +61,8 @@ def inputs():
     data = reference.read_bytes()
     if len(data) != pin['size']:
         raise ValueError('Reference size mismatch')
-    spans = layout(manifest, len(data))
-    for unit in manifest['units']:
+    spans = layout(manifest, len(data), static_data.read(ROOT))
+    for unit in manifest['units'] + static_data.read(ROOT)['units']:
         r = unit['ranges'][0]
         expected = data[r['offset']:r['offset'] + r['size']]
         if hashlib.sha256(expected).hexdigest() != unit['reference_sha256']:
@@ -63,7 +71,14 @@ def inputs():
 
 
 def provenance(manifest):
-    return {'project_sha256': pso.file_hash(ROOT / 'config/project.json'),
+    data = static_data.read(ROOT)
+    typed = {}
+    if data['units']:
+        # Without data modules the provenance (and existing receipts) is unchanged.
+        typed = {'data_manifest_sha256': pso.file_hash(ROOT / static_data.MANIFEST),
+                 'data_driver_sha256': pso.file_hash(ROOT / 'tools/data.py'),
+                 'data_source_sha256': {u['source']: pso.file_hash(ROOT / u['source']) for u in data['units']}}
+    return {**typed, 'project_sha256': pso.file_hash(ROOT / 'config/project.json'),
             'driver_sha256': pso.file_hash(Path(__file__)),
             'matching_driver_sha256': pso.file_hash(ROOT / 'tools/matching.py'),
             'compiler_flags': {u['id']: matching.unit_flags(u) for u in manifest['units']},
@@ -86,7 +101,7 @@ def integrate(spans, outputs, reference=None):
         require_source_coverage(spans)
     image = bytearray()
     for span in spans:
-        if span['origin'] == 'compiled_source':
+        if span['origin'] in ('compiled_source', 'compiled_data'):
             blob = outputs[span['unit']]
             if len(blob) != span['size']:
                 raise ValueError('Compiled module size changed: ' + span['unit'])
@@ -121,12 +136,24 @@ def build(source_only=False):
             raise ValueError('Module does not match: ' + unit['id'] + ' ' + str(result))
         output_hashes[unit['id']] = pso.file_hash(target)
         print(unit['id'] + ': exact, ' + str(r['size']) + ' bytes', flush=True)
+    # Typed static data: only .rodata, typed pointers, placement at each declared
+    # object address and the complete reference range are all required.
+    data_units = static_data.read(ROOT)['units']
+    for unit in data_units:
+        target = out / (unit['id'] + '.bin')
+        static_data.compile_unit(ROOT / unit['source'], target, unit)
+        r = unit['ranges'][0]
+        result = pso.compare_bytes(data[r['offset']:r['offset'] + r['size']], target.read_bytes())
+        if not result['exact']:
+            raise ValueError('Data module does not match: ' + unit['id'] + ' ' + str(result))
+        output_hashes[unit['id']] = pso.file_hash(target)
+        print(unit['id'] + ': exact typed data, ' + str(r['size']) + ' bytes', flush=True)
     if provenance(manifest) != before:
         raise ValueError('Inputs changed during build')
     # Image integration retains explicit reference-backed gaps; it is not a
     # claim that those regions have been decompiled or independently rebuilt.
     image = integrate(spans, {u['id']: (out / (u['id'] + '.bin')).read_bytes()
-                             for u in manifest['units']}, None if source_only else data)
+                             for u in manifest['units'] + data_units}, None if source_only else data)
     if image != data:
         raise ValueError('Integrated image differs from pinned executable')
     target = out / 'DP_ADDRESS.rebuilt.bin'
@@ -144,7 +171,8 @@ def report():
     for k, v in provenance(manifest).items():
         if receipt.get(k) != v:
             raise ValueError('Stale project build: ' + k)
-    for unit in manifest['units']:
+    data_units = static_data.read(ROOT)['units']
+    for unit in manifest['units'] + data_units:
         target = out / (unit['id'] + '.bin')
         pso.check_hash(target, receipt['output_sha256'][unit['id']])
         r = unit['ranges'][0]
@@ -158,17 +186,19 @@ def report():
     if pso.read_json(out / 'image-map.json') != spans:
         raise ValueError('Image coverage map changed')
     source_bytes = sum(s['size'] for s in spans if s['origin'] == 'compiled_source')
+    data_bytes = sum(s['size'] for s in spans if s['origin'] == 'compiled_data')
     result = {'objective': manifest['objective'], 'status': 'in_progress',
               'matched_modules': len(manifest['units']),
               'matched_functions': sum(len(u['functions']) for u in manifest['units']),
               'compiled_source_bytes': source_bytes,
               'compiled_function_range_bytes': source_bytes,
               'coverage_note': 'Complete compiled function ranges include local literals and alignment; not an instruction-only byte count.',
-              'reconstructed_standalone_data_bytes': 0,
-              'reference_unreconstructed_bytes': len(data) - source_bytes,
+              'reconstructed_standalone_data_bytes': data_bytes,
+              'typed_data_modules': len(data_units),
+              'reference_unreconstructed_bytes': len(data) - source_bytes - data_bytes,
               'decoded_image_bytes': len(data), 'integrated_image_exact': True,
               'build_mode': 'source_only' if receipt.get('source_only') else 'hybrid_scaffold',
-              'full_source_reconstruction_complete': receipt.get('source_only', False) and source_bytes == len(data),
+              'full_source_reconstruction_complete': receipt.get('source_only', False) and source_bytes + data_bytes == len(data),
               'runtime_tested_by_this_command': False, 'image': str(target)}
     pso.write_json(out / 'status.json', result)
     print(json.dumps(result, indent=2))

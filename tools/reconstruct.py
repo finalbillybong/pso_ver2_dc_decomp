@@ -828,13 +828,14 @@ def verify(checkout, output):
     manifest = read(checkout / 'config/project.json')
     total = read(checkout / 'config/decoded.json')['size']
     compiled = sum(r['size'] for u in manifest['units'] for r in u['ranges'])
-    retained = total - compiled
+    typed = sum(r['size'] for u in project.static_data.read(checkout)['units'] for r in u['ranges'])
+    retained = total - compiled - typed
     if result.returncode == 0 or f'{retained:,} bytes' not in result.stdout + result.stderr or before != artifacts():
         raise ValueError('Source-only rejection/artifact guard failed')
     test_log = next(output / f'check-{i}.log' for i, args in enumerate(commands) if 'unittest' in args)
     test_count = int(re.search(r'Ran (\d+) tests?', test_log.read_text())[1])
     report = dict(status='passed', steps=steps, test_count=test_count, matching_functions=sum(len(u['functions']) for u in manifest['units']),
-                  compiled_function_range_bytes=compiled, reconstructed_data_bytes=0, retained_reference_bytes=retained,
+                  compiled_function_range_bytes=compiled, reconstructed_data_bytes=typed, retained_reference_bytes=retained,
                   fresh_builds=2, source_only_rejected=True, artifacts_preserved=True,
                   source_validation_sha256=digest((checkout / 'config/source-validation.json').read_bytes()),
                   token_cost_measurements=None)
@@ -891,7 +892,7 @@ def integrate(folders, output, reference):
         unit['boundary_review'] = spec['boundary_review']
         target['boundary_review'] = spec['boundary_review']
         manifest['units'].append(unit)
-        project.layout(manifest, len(reference))
+        project.layout(manifest, len(reference), project.static_data.read(root))
         if address in queued:
             queue['targets'][queue['targets'].index(queued[address])] = target
         else:
@@ -927,7 +928,8 @@ def report_batch(baseline, findings, verification, name):
     size = sum(r['size'] for u in manifest['units'] for r in u['ranges'])
     total = read(root / 'config/decoded.json')['size']
     added = sum(r['size'] for u in new for r in u['ranges'])
-    lead = f'{count} exact functions in {len(current)} modules; {size:,} compiled function-range bytes; 0 reconstructed data bytes; {total-size:,} retained reference bytes. Whole-image coverage {size/total*100:.4f}% is not code completion.'
+    typed = sum(r['size'] for u in project.static_data.read(root)['units'] for r in u['ranges'])
+    lead = f'{count} exact functions in {len(current)} modules; {size:,} compiled function-range bytes; {typed:,} typed static-data bytes; {total-size-typed:,} retained reference bytes. Code-range coverage {size/total*100:.4f}%, image coverage {(size+typed)/total*100:.4f}%; neither is code completion.'
     new_functions = sum(len(u['functions']) for u in new)
     text = f'# Reconstruction batch: {name}\n\n{new_functions} new matching functions / {added:,} bytes. All {sum(len(u["functions"]) for u in old.values())} prior functions preserved.\n\n{lead}\n\n'
     text += '| Function | Address | Complete bytes |\n| --- | --- | ---: |\n'
@@ -941,7 +943,10 @@ def report_batch(baseline, findings, verification, name):
         content = re.sub(r'\d+ exact (matching )?functions in \d+ modules', lambda m: f'{count} exact {m[1] or ""}functions in {len(current)} modules', content)
         for previous in [read(baseline)]:
             previous_size = sum(r['size'] for u in previous['units'] for r in u['ranges'])
-            content = content.replace(f'{previous_size:,}', f'{size:,}').replace(f'{total-previous_size:,}', f'{total-size:,}').replace(f'{previous_size/total*100:.4f}%', f'{size/total*100:.4f}%')
+            # Typed static data is unchanged by a code batch; retained bytes and the
+            # combined image coverage move with the code ranges.
+            content = content.replace(f'{previous_size:,}', f'{size:,}').replace(f'{total-previous_size-typed:,}', f'{total-size-typed:,}').replace(f'{previous_size/total*100:.4f}%', f'{size/total*100:.4f}%')
+            content = content.replace(f'{(previous_size+typed)/total*100:.4f}%', f'{(size+typed)/total*100:.4f}%')
         if filename.endswith('START_HERE.md'):
             content = re.sub(r'(\| Matching functions / modules \| )[^|]+', lambda m: m[1] + f'{count} / {len(current)} ', content)
             content = re.sub(r'(?s)(?:Stage \d+ adds|\d+: [^\n]+new functions).*?(?=## Active work)', f'{name}: {new_functions} new functions / {added:,} bytes. See [BATCH.md](BATCH.md) for the measured batch report.\n\n', content)
