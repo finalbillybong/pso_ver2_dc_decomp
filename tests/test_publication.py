@@ -42,7 +42,8 @@ class PublicationTests(unittest.TestCase):
             shutil.copyfile(ROOT / 'config/progress-proof.json', root / 'config/progress-proof.json')
             report = progress.summary(root)
             self.assertEqual(report['compiled_range_bytes'] + report['standalone_reconstructed_data_bytes']
-                             + report['retained_reference_bytes'], report['decoded_image_bytes'])
+                             + report['dump_asset_bytes'] + report['retained_reference_bytes'],
+                             report['decoded_image_bytes'])
             self.assertEqual(sum(report['typed_data_bytes_by_kind'].values()),
                              report['standalone_reconstructed_data_bytes'])
             self.assertIsNone(report['code_completion_percent'])

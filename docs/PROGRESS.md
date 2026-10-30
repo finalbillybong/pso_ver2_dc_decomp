@@ -13,7 +13,8 @@
 | Typed data share of the static-data extent | 42.9774% |
 | Decoded executable | 4,162,912 bytes |
 | Image coverage (code ranges + typed data) | 38.1663% |
-| Retained reference dependence | 2,574,082 bytes |
+| Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
+| Retained reference dependence | 2,193,897 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
 | Source-only build | Unavailable |
@@ -25,8 +26,10 @@ function tables of named functions, pointer tables of named symbols, C string
 literals, float and integer arrays, and arrays of checked record structs (see
 DATA.md). Opaque byte dumps, high-entropy data, untyped words and pointers written
 as integers earn no credit. The static-data extent is an analysis estimate of the bytes outside code,
-not a recovered section size. The integrated hybrid image matches the reference,
-but still requires 2,574,082 original bytes.
+not a recovered section size. Embedded assets (see DATA.md) are extracted from
+your own dump at build time and are counted separately; they earn no coverage
+credit. The integrated hybrid image matches the reference, but still requires
+2,193,897 original bytes besides the assets.
 
 Exact-build verification recorded: **2026-10-30**. Two fresh
 project builds, exact integrated-image comparison, exact typed-data modules and the

@@ -3,7 +3,7 @@
 The current public checkpoint has **10861 exact functions in 10775 modules**, replacing
 **1,116,022 bytes** of the 4,162,912-byte decoded executable (**26.8087% code-range coverage**).
 Typed static data adds 472,808 bytes ([DATA.md](DATA.md)), for **38.1663% image coverage**.
-It retains **2,574,082 reference bytes**. This is a hybrid build; code-only completion and total function count are
+It retains **2,193,897 reference bytes**. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
 

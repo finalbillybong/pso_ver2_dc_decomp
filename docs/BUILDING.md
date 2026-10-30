@@ -140,3 +140,10 @@ linking; resolved metadata is stripped with the pinned objcopy and every code
 byte must remain unchanged. The complete final ELF section still must match the
 reference, including all tables, literals and padding. See reconstruction stage
 38 for compatibility evidence and negative checks.
+
+## Embedded assets
+
+`config/assets.json` lists embedded files and opaque resources inside the
+executable, by range and SHA-256 only. Every build extracts them from your own
+verified dump into the scratch directory and checks their hashes. They are never
+committed and are not counted as reconstructed. See [DATA.md](DATA.md#assets).

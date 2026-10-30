@@ -16,8 +16,9 @@ Other releases are not currently supported.
 4,162,912-byte decoded executable (**26.8087% code-range coverage**). Function ranges
 include their literals and padding. **472,808 bytes of typed static data** (virtual
 tables, strings and typed tables, 42.9774% of the estimated static-data extent) are rebuilt from
-source as well, for **38.1663% image coverage**. **2,574,082 bytes still come from
-the original reference**. See [typed static data](docs/DATA.md).
+source as well, for **38.1663% image coverage**. **2,193,897 bytes still come from
+the original reference**, and 380,185 bytes of embedded assets are extracted
+from your own dump at build time (not counted as reconstructed). See [typed static data](docs/DATA.md).
 
 This is an early hybrid reconstruction. It cannot yet build from source alone.
 The code-only completion percentage and total function count are not established.

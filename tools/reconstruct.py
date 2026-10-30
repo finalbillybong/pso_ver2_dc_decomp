@@ -834,7 +834,8 @@ def verify(checkout, output):
     total = read(checkout / 'config/decoded.json')['size']
     compiled = sum(r['size'] for u in manifest['units'] for r in u['ranges'])
     typed = sum(r['size'] for u in project.static_data.read(checkout)['units'] for r in u['ranges'])
-    retained = total - compiled - typed
+    assets = project.dump_assets.total(project.dump_assets.read(checkout))
+    retained = total - compiled - typed - assets
     if result.returncode == 0 or f'{retained:,} bytes' not in result.stdout + result.stderr or before != artifacts():
         raise ValueError('Source-only rejection/artifact guard failed')
     test_log = next(output / f'check-{i}.log' for i, args in enumerate(commands) if 'unittest' in args)
@@ -897,7 +898,7 @@ def integrate(folders, output, reference):
         unit['boundary_review'] = spec['boundary_review']
         target['boundary_review'] = spec['boundary_review']
         manifest['units'].append(unit)
-        project.layout(manifest, len(reference), project.static_data.read(root))
+        project.layout(manifest, len(reference), project.static_data.read(root), project.dump_assets.read(root))
         if address in queued:
             queue['targets'][queue['targets'].index(queued[address])] = target
         else:
@@ -934,7 +935,8 @@ def report_batch(baseline, findings, verification, name):
     total = read(root / 'config/decoded.json')['size']
     added = sum(r['size'] for u in new for r in u['ranges'])
     typed = sum(r['size'] for u in project.static_data.read(root)['units'] for r in u['ranges'])
-    lead = f'{count} exact functions in {len(current)} modules; {size:,} compiled function-range bytes; {typed:,} typed static-data bytes; {total-size-typed:,} retained reference bytes. Code-range coverage {size/total*100:.4f}%, image coverage {(size+typed)/total*100:.4f}%; neither is code completion.'
+    typed_and_assets = typed + project.dump_assets.total(project.dump_assets.read(root))
+    lead = f'{count} exact functions in {len(current)} modules; {size:,} compiled function-range bytes; {typed:,} typed static-data bytes; {total-size-typed_and_assets:,} retained reference bytes. Code-range coverage {size/total*100:.4f}%, image coverage {(size+typed)/total*100:.4f}%; neither is code completion.'
     new_functions = sum(len(u['functions']) for u in new)
     text = f'# Reconstruction batch: {name}\n\n{new_functions} new matching functions / {added:,} bytes. All {sum(len(u["functions"]) for u in old.values())} prior functions preserved.\n\n{lead}\n\n'
     text += '| Function | Address | Complete bytes |\n| --- | --- | ---: |\n'
@@ -950,7 +952,7 @@ def report_batch(baseline, findings, verification, name):
             previous_size = sum(r['size'] for u in previous['units'] for r in u['ranges'])
             # Typed static data is unchanged by a code batch; retained bytes and the
             # combined image coverage move with the code ranges.
-            content = content.replace(f'{previous_size:,}', f'{size:,}').replace(f'{total-previous_size-typed:,}', f'{total-size-typed:,}').replace(f'{previous_size/total*100:.4f}%', f'{size/total*100:.4f}%')
+            content = content.replace(f'{previous_size:,}', f'{size:,}').replace(f'{total-previous_size-typed_and_assets:,}', f'{total-size-typed_and_assets:,}').replace(f'{previous_size/total*100:.4f}%', f'{size/total*100:.4f}%')
             content = content.replace(f'{(previous_size+typed)/total*100:.4f}%', f'{(size+typed)/total*100:.4f}%')
         if filename.endswith('START_HERE.md'):
             content = re.sub(r'(\| Matching functions / modules \| )[^|]+', lambda m: m[1] + f'{count} / {len(current)} ', content)

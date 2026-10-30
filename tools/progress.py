@@ -9,6 +9,7 @@ import sys
 
 import project
 import data as static_data
+import assets as dump_assets
 from matching import FLAGS, dependencies, sha
 from shc_units import SHC_COMPILER, is_shc, unit_flags
 
@@ -26,6 +27,8 @@ def inputs(root, manifest):
     data = static_data.read(root)
     if any(is_shc(u) for u in manifest['units']):
         names.update({'tools/shc_units.py', 'tools/shc.py'})
+    if dump_assets.read(root)['assets']:
+        names.update({dump_assets.MANIFEST, 'tools/assets.py'})
     if data['units']:
         names.update({static_data.MANIFEST, 'tools/data.py'})
         names.update(unit['source'] for unit in data['units'])
@@ -51,17 +54,21 @@ def summary(root=ROOT):
     required = {'two_fresh_exact_builds', 'integrated_image_exact', 'five_function_compiler_proof'}
     if data['units']:
         required.add('typed_data_modules_exact')
+    if dump_assets.read(root)['assets']:
+        required.add('dump_assets_hash_verified')
     shc = [u for u in manifest['units'] if is_shc(u)]
     if shc:
         required.add('shc_pool_groups_exact')
     if not required <= set(proof['checks']):
         raise ValueError('Incomplete exact-build verification')
-    spans = project.layout(manifest, decoded['size'], data)
+    assets = dump_assets.read(root)
+    spans = project.layout(manifest, decoded['size'], data, assets)
     # Lints every data source and rejects integers or floats equal to a symbol address.
     static_data.check_disguised_pointers(data, manifest, root)
     static_data.check_external_symbols(data, manifest, root)
     matched = sum(s['size'] for s in spans if s['origin'] == 'compiled_source')
     typed = sum(s['size'] for s in spans if s['origin'] == 'compiled_data')
+    asset_bytes = sum(s['size'] for s in spans if s['origin'] == 'dump_asset')
     extent = data.get('data_extent', {}).get('bytes')
     if data['units'] and not (isinstance(extent, int) and typed <= extent < decoded['size']):
         raise ValueError('Typed data needs a recorded data-extent denominator')
@@ -80,7 +87,7 @@ def summary(root=ROOT):
             functions += 1
         if cursor != end:
             raise ValueError('Functions do not cover the admitted module')
-    retained = decoded['size'] - matched - typed
+    retained = decoded['size'] - matched - typed - asset_bytes
     if proof['source_only_rejected_retained_bytes'] != retained:
         raise ValueError('Stale reference-gap evidence')
     return {'schema_version': 1, 'version': 'pal', 'status': 'hybrid_reconstruction',
@@ -98,12 +105,16 @@ def summary(root=ROOT):
             'data_extent_bytes': extent,
             'typed_data_percent_of_data_extent': round(100 * typed / extent, 8) if extent else 0.0,
             'image_coverage_percent': round(100 * (matched + typed) / decoded['size'], 8),
+            'dump_asset_bytes': asset_bytes,
+            'dump_assets': len(assets['assets']),
+            'dump_asset_percent_of_image': round(100 * asset_bytes / decoded['size'], 8),
             'code_completion_percent': None,
             'total_functions': None, 'source_only_build_available': retained == 0,
             'integrated_image_sha256': decoded['sha256'],
             'metric': 'Complete compiled function ranges, including literals and padding, plus typed static-data modules, divided by the entire decoded image. Not a code-only completion percentage.',
             'code_metric': 'Complete compiled function ranges, including literals and padding, divided by the entire decoded image.',
             'data_metric': 'Bytes of exact typed static-data modules (virtual and function tables as arrays of named function pointers, pointer tables of named symbols including external g_<addr> targets in reference-backed data or RAM, strings as C string literals, float and integer arrays with typed literals, and record arrays of checked struct types with pointer, float, integer and short fields) divided by the recorded static-data extent estimate. Opaque byte dumps, high-entropy data, untyped words and pointers written as integers earn no credit.',
+            'asset_metric': 'Bytes of embedded files and opaque high-entropy resources (config/assets.json) that every build extracts from your own dump and checks against recorded hashes. Not reconstructed source: no image-coverage or typed-data credit; listed separately from bytes that still require the reference.',
             'verification': 'Locally verified exact builds; CI validates the recorded input hashes and progress accounting.'}
 
 
@@ -134,6 +145,7 @@ def render(report):
 | Typed data share of the static-data extent | {data_pct} |
 | Decoded executable | {total:,} bytes |
 | Image coverage (code ranges + typed data) | {pct} |
+| Assets extracted from your dump (not reconstructed) | {report['dump_asset_bytes']:,} bytes in {report['dump_assets']} assets ({report['dump_asset_percent_of_image']:.4f}% of the image) |
 | Retained reference dependence | {left:,} bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
@@ -146,8 +158,10 @@ function tables of named functions, pointer tables of named symbols, C string
 literals, float and integer arrays, and arrays of checked record structs (see
 DATA.md). Opaque byte dumps, high-entropy data, untyped words and pointers written
 as integers earn no credit. The static-data extent is an analysis estimate of the bytes outside code,
-not a recovered section size. The integrated hybrid image matches the reference,
-but still requires {left:,} original bytes.
+not a recovered section size. Embedded assets (see DATA.md) are extracted from
+your own dump at build time and are counted separately; they earn no coverage
+credit. The integrated hybrid image matches the reference, but still requires
+{left:,} original bytes besides the assets.
 
 Exact-build verification recorded: **{report['verification_date']}**. Two fresh
 project builds, exact integrated-image comparison, exact typed-data modules and the
@@ -169,7 +183,7 @@ def record(root=ROOT):
     proof = read(root, 'config/source-validation.json')
     decoded = read(root, 'config/decoded.json')
     data = static_data.read(root)
-    spans = project.layout(manifest, decoded['size'], data)
+    spans = project.layout(manifest, decoded['size'], data, dump_assets.read(root))
     retained = sum(s['size'] for s in spans if s['origin'] == 'reference_unreconstructed')
     if retained:
         try:

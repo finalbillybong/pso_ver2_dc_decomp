@@ -11,14 +11,17 @@ sys.path.insert(0, str(ROOT))
 import pso
 import matching
 import data as static_data
+import assets as dump_assets
 import shc_units
 
 
-def layout(manifest, size, data=None):
+def layout(manifest, size, data=None, assets=None):
     """Produce a complete, nonoverlapping map without inferring gap contents.
 
     Code modules are `compiled_source`; typed static-data modules from
-    config/data.json, when given, are `compiled_data`."""
+    config/data.json, when given, are `compiled_data`; embedded assets from
+    config/assets.json, when given, are `dump_asset` (extracted from your dump,
+    not reconstructed)."""
     base = int(manifest['base_address'], 0)
     position = 0
     result = []
@@ -27,6 +30,10 @@ def layout(manifest, size, data=None):
     if data is not None:
         static_data.validate(data, base, size, [u['id'] for u in manifest['units']])
         units += [(u, 'compiled_data') for u in data['units']]
+    if assets is not None:
+        dump_assets.validate(assets, base, size)
+        units += [({'id': a['id'], 'address': a['address'], 'source': None,
+                    'ranges': [{'offset': a['offset'], 'size': a['size']}]}, 'dump_asset') for a in assets['assets']]
     for unit, origin in sorted(units, key=lambda x: int(x[0]['address'], 0)):
         if unit['id'] in identifiers:
             raise ValueError('Duplicate unit identifier')
@@ -64,12 +71,14 @@ def inputs():
     data = reference.read_bytes()
     if len(data) != pin['size']:
         raise ValueError('Reference size mismatch')
-    spans = layout(manifest, len(data), static_data.read(ROOT))
+    assets = dump_assets.read(ROOT)
+    spans = layout(manifest, len(data), static_data.read(ROOT), assets)
     for unit in manifest['units'] + static_data.read(ROOT)['units']:
         r = unit['ranges'][0]
         expected = data[r['offset']:r['offset'] + r['size']]
         if hashlib.sha256(expected).hexdigest() != unit['reference_sha256']:
             raise ValueError('Module reference hash mismatch: ' + unit['id'])
+    dump_assets.extract(data, assets)
     return cfg, manifest, data, spans
 
 
@@ -81,6 +90,10 @@ def provenance(manifest):
         typed = {'data_manifest_sha256': pso.file_hash(ROOT / static_data.MANIFEST),
                  'data_driver_sha256': pso.file_hash(ROOT / 'tools/data.py'),
                  'data_source_sha256': {u['source']: pso.file_hash(ROOT / u['source']) for u in data['units']}}
+    if dump_assets.read(ROOT)['assets']:
+        # Without assets the provenance (and existing receipts) is unchanged.
+        typed.update({'assets_manifest_sha256': pso.file_hash(ROOT / dump_assets.MANIFEST),
+                      'assets_driver_sha256': pso.file_hash(ROOT / 'tools/assets.py')})
     if shc_units.shc_units(manifest):
         # Without SHC units the provenance (and existing receipts) is unchanged.
         typed.update({'shc_driver_sha256': pso.file_hash(ROOT / 'tools/shc_units.py'),
@@ -98,9 +111,12 @@ def provenance(manifest):
 
 
 def require_source_coverage(spans):
+    """Asset bytes come from your dump by design; only unreconstructed bytes block a source-only build."""
     retained = sum(s['size'] for s in spans if s['origin'] == 'reference_unreconstructed')
+    asset_bytes = sum(s['size'] for s in spans if s['origin'] == 'dump_asset')
     if retained:
-        raise ValueError(f'Source-only build unavailable: {retained:,} bytes still require the reference')
+        raise ValueError(f'Source-only build unavailable: {retained:,} bytes still require the reference'
+                         + (f' (separately, {asset_bytes:,} asset bytes are extracted from your dump)' if asset_bytes else ''))
 
 
 def integrate(spans, outputs, reference=None):
@@ -109,7 +125,7 @@ def integrate(spans, outputs, reference=None):
         require_source_coverage(spans)
     image = bytearray()
     for span in spans:
-        if span['origin'] in ('compiled_source', 'compiled_data'):
+        if span['origin'] in ('compiled_source', 'compiled_data', 'dump_asset'):
             blob = outputs[span['unit']]
             if len(blob) != span['size']:
                 raise ValueError('Compiled module size changed: ' + span['unit'])
@@ -156,12 +172,17 @@ def build(source_only=False):
             raise ValueError('Data module does not match: ' + unit['id'] + ' ' + str(result))
         output_hashes[unit['id']] = pso.file_hash(target)
         print(unit['id'] + ': exact typed data, ' + str(r['size']) + ' bytes', flush=True)
+    # Embedded assets: extracted from your verified dump (hash-checked), never committed.
+    asset_blobs = dump_assets.extract(data, dump_assets.read(ROOT), out / 'assets')
+    for name, blob in asset_blobs.items():
+        output_hashes[name] = hashlib.sha256(blob).hexdigest()
     if provenance(manifest) != before:
         raise ValueError('Inputs changed during build')
     # Image integration retains explicit reference-backed gaps; it is not a
     # claim that those regions have been decompiled or independently rebuilt.
-    image = integrate(spans, {u['id']: (out / (u['id'] + '.bin')).read_bytes()
-                             for u in manifest['units'] + data_units}, None if source_only else data)
+    image = integrate(spans, {**{u['id']: (out / (u['id'] + '.bin')).read_bytes()
+                                for u in manifest['units'] + data_units}, **asset_blobs},
+                      None if source_only else data)
     if image != data:
         raise ValueError('Integrated image differs from pinned executable')
     target = out / 'DP_ADDRESS.rebuilt.bin'
@@ -186,6 +207,9 @@ def report():
         r = unit['ranges'][0]
         if target.read_bytes() != data[r['offset']:r['offset'] + r['size']]:
             raise ValueError('Module mismatch: ' + unit['id'])
+    for name, blob in dump_assets.extract(data, dump_assets.read(ROOT)).items():
+        if receipt['output_sha256'].get(name) != hashlib.sha256(blob).hexdigest():
+            raise ValueError('Asset changed since build: ' + name)
     target = out / 'DP_ADDRESS.rebuilt.bin'
     pso.check_hash(target, receipt['image_sha256'])
     if target.read_bytes() != data:
@@ -195,6 +219,7 @@ def report():
         raise ValueError('Image coverage map changed')
     source_bytes = sum(s['size'] for s in spans if s['origin'] == 'compiled_source')
     data_bytes = sum(s['size'] for s in spans if s['origin'] == 'compiled_data')
+    asset_bytes = sum(s['size'] for s in spans if s['origin'] == 'dump_asset')
     result = {'objective': manifest['objective'], 'status': 'in_progress',
               'matched_modules': len(manifest['units']),
               'matched_functions': sum(len(u['functions']) for u in manifest['units']),
@@ -206,10 +231,12 @@ def report():
               'coverage_note': 'Complete compiled function ranges include local literals and alignment; not an instruction-only byte count.',
               'reconstructed_standalone_data_bytes': data_bytes,
               'typed_data_modules': len(data_units),
-              'reference_unreconstructed_bytes': len(data) - source_bytes - data_bytes,
+              'dump_asset_bytes': asset_bytes,
+              'dump_assets': len(dump_assets.read(ROOT)['assets']),
+              'reference_unreconstructed_bytes': len(data) - source_bytes - data_bytes - asset_bytes,
               'decoded_image_bytes': len(data), 'integrated_image_exact': True,
               'build_mode': 'source_only' if receipt.get('source_only') else 'hybrid_scaffold',
-              'full_source_reconstruction_complete': receipt.get('source_only', False) and source_bytes + data_bytes == len(data),
+              'full_source_reconstruction_complete': receipt.get('source_only', False) and source_bytes + data_bytes + asset_bytes == len(data),
               'runtime_tested_by_this_command': False, 'image': str(target)}
     pso.write_json(out / 'status.json', result)
     print(json.dumps(result, indent=2))

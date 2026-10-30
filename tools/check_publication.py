@@ -6,7 +6,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-CONFIG = {'analysis.json', 'compiler-packages.json', 'data.json', 'decoded.json',
+CONFIG = {'analysis.json', 'assets.json', 'compiler-packages.json', 'data.json', 'decoded.json',
           'local.example.json', 'matching-packages.json', 'progress-proof.json',
           'project.json', 'reconstruction-targets.json', 'reference.json',
           'samples.json', 'toolchain.example.json'}
@@ -52,6 +52,10 @@ def issues(name, blob, mode='100644'):
         errors.append('possible credential (value withheld)')
     if re.search(r'/(?:home|Users)/[^/\s]+/', text):
         errors.append('machine-specific home path')
+    if name == 'config/assets.json':
+        # Asset bytes come from each user's own dump; the manifest may only describe them.
+        if re.search(r'"[^"]{401,}"', text) or re.search(r'[0-9A-Za-z+/=]{200,}', text):
+            errors.append('asset manifest holds a long value (possible embedded payload)')
     return errors
 
 

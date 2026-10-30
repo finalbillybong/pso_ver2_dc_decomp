@@ -172,10 +172,44 @@ provenance covers `config/data.json`, `tools/data.py` and every data source, so
 it re-runs the manifest and source lint without the compiler.
 `python3 -B tools/data.py lint` runs the same compiler-free checks locally.
 
+## Assets
+
+Some bytes inside the executable are embedded files or opaque resources, not
+program data. They are listed in `config/assets.json` with their range, SHA-256,
+kind and what is known of their format. **Their bytes are never committed.**
+`tools/project.py build` extracts each asset from your own verified dump, checks its
+hash, writes it to the private scratch directory and places it into the image.
+`tools/check_publication.py` allows the manifest only and rejects long values in it,
+and binary files remain forbidden everywhere.
+
+| Asset | Range | Bytes | Format |
+| --- | --- | ---: | --- |
+| `access_resource_8c28ad54` | `8c28ad54`–`8c2e0ac1` | 351,597 | ACCESS Co. resource image; begins with "ASK Copyright (C) ACCESS CO.,LTD." (ACCESS makes the NetFront browser engine). Internal layout not identified; Shift-JIS codes near the end suggest font or text resources. |
+| `resource_8c32c5f8` | `8c32c5f8`–`8c3335a4` | 28,588 | Unidentified: a short header of 32-bit fields, then dense data with a 3-byte rhythm (perhaps packed graphics or a compressed table). Referenced only from unmatched code. |
+
+The zero padding and pointer word after the ACCESS resource are not evidently part
+of the file, so they stay reference-backed.
+
+The static-data map's other high-entropy pieces were **not** made assets:
+
+* 57 pieces (about 55 KB, mostly in the SDK region) start with SH-4 register-save
+  prologues and contain `rts`. They are undecoded code and remain reference-backed
+  code gaps.
+* Seven 256–560-byte pieces are lookup tables, such as CRC-16 tables. They are
+  program data, typed as tables where the rules allow.
+
+Assets count in their own figure, **asset bytes extracted from your dump**. They
+earn no image-coverage or typed-data credit. A source-only build accepts them as
+dump-provided and reports them separately from the bytes that still require the
+reference. A later step could rebuild the ACCESS resource from its parts once its
+format is understood.
+
 ## Progress figures
 
 * **Code-range coverage**: compiled function ranges / decoded image (unchanged).
 * **Typed data**: typed data bytes / recorded static-data extent.
 * **Image coverage**: (compiled function ranges + typed data bytes) / decoded image.
+* **Assets**: embedded-asset bytes extracted from your dump; listed separately and not
+  counted as reconstructed.
 
 Retained reference bytes are the decoded image minus both.

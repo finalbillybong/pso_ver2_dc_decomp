@@ -44,6 +44,9 @@ def main():
     if project.static_data.read(root)['units']:
         # project.build compiled, type-checked, placed and compared every data module.
         checks.append('typed_data_modules_exact')
+    if project.dump_assets.read(root)['assets']:
+        # project.build extracted every asset from the verified dump and checked its hash.
+        checks.append('dump_assets_hash_verified')
     if project.shc_units.shc_units(manifest):
         # project.build compiled each SHC pool group with the pinned Hitachi tools,
         # required code section P only, and compared its complete range.

@@ -1,0 +1,26 @@
+{
+ "schema_version": 1,
+ "policy": "Ranges, SHA-256 and descriptions only. The bytes are extracted from your own dump at build time and are never committed.",
+ "assets": [
+  {
+   "id": "access_resource_8c28ad54",
+   "address": "0x8c28ad54",
+   "offset": 2600276,
+   "size": 351597,
+   "sha256": "155fb8ee09f44c6d8cd93c3ab35fa45e3f84e6a32fb594a7062d43c2c9727033",
+   "kind": "embedded_file",
+   "format": "ACCESS Co. resource image: begins with the text \"ASK Copyright (C) ACCESS CO.,LTD.\" (ACCESS makes the NetFront browser engine); internal layout not identified; Shift-JIS character codes near the end suggest font or text resources.",
+   "notes": "The 663 zero bytes and the pointer word after it (8c2e0ac1-8c2e0d5c) stay reference-backed; they are not evidently part of the file."
+  },
+  {
+   "id": "resource_8c32c5f8",
+   "address": "0x8c32c5f8",
+   "offset": 3261944,
+   "size": 28588,
+   "sha256": "b5098257101db6c7e420a2318c92d0f9348ff347a121c3dbd6163331204b245a",
+   "kind": "high_entropy_blob",
+   "format": "Unidentified binary resource: a short header of 32-bit fields (0x00ea, 0xffff, 100, 0x1000, 0x1400, 0x400, ...) followed by dense data with a 3-byte rhythm; possibly packed graphics or a compressed table.",
+   "notes": "Referenced only from unmatched code; it may turn out to be structured program data and be typed later."
+  }
+ ]
+}
