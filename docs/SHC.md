@@ -139,13 +139,13 @@ installation is present.
 
 ## Current units
 
-200 pool-group units, 32,118 bytes, 456 functions (listed in `config/project.json`
+224 pool-group units, 40,230 bytes, 654 functions (listed in `config/project.json`
 with `"compiler": "shc-v5.1r13"`; sources in `src/sdk/`):
 
 | Region | Units | Bytes | Functions |
 | --- | ---: | ---: | ---: |
-| Library block `0x8c1f0000`–`0x8c205000` | 18 | 4,386 | 62 |
-| SDK region from `0x8c340000` | 182 | 27,732 | 394 |
+| Library block `0x8c1f0000`–`0x8c205000` | 21 | 5,298 | 81 |
+| SDK region from `0x8c340000` | 203 | 34,932 | 573 |
 
 Units are complete pool groups: one or more consecutive literal-pool groups whose
 functions only branch to each other. A literal pool may sit inside a unit (and
@@ -183,11 +183,15 @@ by at least one exact unit:
   `__divlu`/`__modlu`, the struct-copy helpers `__quick_evn_mvn`/`__quick_odd_mvn`,
   and the `_builtin_strcpy` intrinsic's helper.
 * **Variable arguments.** SHC's `stdarg.h` is not available (system headers are not
-  allowed), so the two `va_start` users spell out the macro.
-
-Some units keep labels that exist only to reproduce the reference's block
-structure (for example `goto close; close:`); they are ordinary C and are noted
-in the source comments where they are not otherwise motivated.
+  allowed), so the `va_start` users spell out the macro.
+* **Jumps to the next statement.** The reference sometimes has an unconditional
+  `bra` to the very next block, typically where one arm of an `if`/`else if`
+  chain or a `case` ends. SHC emits that branch for `goto L; L:` (a jump to the
+  following statement), which also shifts the scratch-register rotation
+  described above. The pattern is accepted as a known SDK idiom: it most likely
+  comes from macro or `do { ... } while (0)` expansions in the original source,
+  whose exact form is not recoverable from the code. Recently added units mark each occurrence
+  with a one-line comment; earlier units use it unmarked.
 
 ## What to expect
 

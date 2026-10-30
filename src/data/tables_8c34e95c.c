@@ -1,7 +1,7 @@
 /* Static data 8c34e95c-8c34e960: pointer_table objects, in address order. */
 
-extern const char g_8c34ae7a[];
+extern void strm_v20_8c34ae7a(void);
 
 const void *const d_8c34e95c[1] = {
-    g_8c34ae7a
+    (void *)strm_v20_8c34ae7a
 };
