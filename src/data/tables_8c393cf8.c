@@ -1,0 +1,29 @@
+/* Static data 8c393cf8-8c394094: record_table objects, in address order. */
+
+typedef struct { short f0; short f1; short f2; short f3; short f4; short f5; short f6; short f7; short f8; short f9; short f10; short f11; short f12; short f13; short f14; short f15; short f16; short f17; short f18; short f19; short f20; short f21; float f22; short f23; short f24; short f25; short f26; float f27; } Record_8c393cf8;
+typedef struct { unsigned int f0; unsigned int f1; short f2; short f3; unsigned int f4; unsigned int f5; unsigned int f6; unsigned int f7; unsigned int f8; unsigned int f9; unsigned int f10; unsigned int f11; unsigned int f12; } Record_8c393d34;
+
+const Record_8c393cf8 d_8c393cf8[1] = {
+    { 12166, 12182, 12198, 12214, 12230, 12246, 12262, -53, -37, -21, -5, 20258, 32764, -12058, 24578, 12034, -12066, 25155, 29190, 643, 24931, 8457, 11128.736f, -7421, -7680, 9785, -1635, 8248.75f }
+};
+
+const Record_8c393d34 d_8c393d34[18] = {
+    { 0xe005f3fdu, 0x69456845u, 18701, 24818, 0xf99d4000u, 0xf94d8b00u, 0x4811395cu, 0x89010983u, 0xf94d688bu, 0x78fe338cu, 0x6045ec00u, 0x405aed00u, 0xfa2d6045u },
+    { 0xe005405au, 0x6a45fb2du, 18957, -1454, 0xfb523a5cu, 0x60450a83u, 0x6045405au, 0x405afc2du, 0xfc52fd2du, 0x6b45fd52u, 0x6045f3fdu, 0x405a7904u, 0x60457a04u },
+    { 0x405afe2du, 0xf099e005u, 19213, -2407, 0xf1a9ff2du, 0xf7a93b5cu, 0x0b83fe52u, 0x79f4ff52u, 0x7af4f011u, 0x7b04f671u, 0x7414f2b9u, 0x7bf4f8b9u, 0xf2110483u },
+    { 0xf19874ecu, 0xf39df871u, -2046, -3307, 0x8d54f622u, 0xf0a8f3fdu, 0xf305f681u, 0x894ef78du, 0xf692f0b8u, 0x894af305u, 0x8f4af765u, 0x2dd80009u, 0xf0a98918u },
+    { 0xf2a97d01u, 0xf6a97718u, 31464, -2483, 0xf640f7cbu, 0xf465f72bu, 0xf3fdf70bu, 0xf64c8b00u, 0xdea2f74du, 0x27e232dcu, 0x7718f3fdu, 0xf76aed00u, 0x77080783u },
+    { 0x8b142cc8u, 0x7c01f099u, -3431, 30488, 0x79e8f699u, 0xf640f7abu, 0xf465f72bu, 0xf3fdf70bu, 0xf64c8b00u, 0xf3fdde94u, 0x771827e2u, 0x0783f76au, 0xf0a97708u },
+    { 0xf2a97c01u, 0xf6a97718u, 31464, -2101, 0xf72bf640u, 0xf70bf465u, 0x8b00f3fdu, 0xde8af64cu, 0x27e2f3fdu, 0xf76a7718u, 0xa0b30783u, 0xa04a7708u, 0x2cc80009u },
+    { 0xf0a98916u, 0xf2a97c01u, 30488, -2391, 0xf7cb7ae8u, 0xf72bf640u, 0xf70bf465u, 0x8b00f3fdu, 0xde7ef64cu, 0x27e232ccu, 0x7718f3fdu, 0xf76aec00u, 0x77080783u },
+    { 0x8b162dd8u, 0x7d01f099u, -3431, 30488, 0x79e8f699u, 0xf7abf64du, 0xf72bf640u, 0xf70bf465u, 0x8b00f3fdu, 0xf74df64cu, 0xf3fdde6fu, 0x771827e2u, 0x0783f76au },
+    { 0xf0a97708u, 0xf2a97d01u, 30488, -2391, 0xf64d7ae8u, 0xf640f7cbu, 0xf465f72bu, 0xf3fdf70bu, 0xf64c8b00u, 0xde64f74du, 0x27e2f3fdu, 0xf76a7718u, 0xa0670783u },
+    { 0x2cc87708u, 0xf0a98916u, 13004, -3415, 0xf6a97718u, 0xf7cb7ae8u, 0xf72bf640u, 0xf70bf465u, 0x8b00f3fdu, 0xde59f64cu, 0x27e27201u, 0x7718f3fdu, 0x0783f76au },
+    { 0x7708a01au, 0x89172dd8u, -3927, 13020, 0x7718f2a9u, 0xf64df6a9u, 0xf7cb7ae8u, 0xf72bf640u, 0xf70bf465u, 0x8b00f3fdu, 0xf74df64cu, 0x7201de4bu, 0xf3fd27e2u },
+    { 0xf76a7718u, 0x77080783u, -5120, -3944, 0xf39ded00u, 0xf0a8f035u, 0xf0358904u, 0x8901f0b8u, 0x8927f305u, 0x2f16f3fdu, 0x2f362f26u, 0x2f562f46u, 0xff4b2f66u },
+    { 0xff9bff5bu, 0xffbbffabu, -12226, -4020, 0xf4acf19cu, 0xf6ccf5bcu, 0xf8ecf7dcu, 0xfa0cf9fcu, 0x6493fb1cu, 0x400b65a3u, 0x670366b3u, 0xfaf9fbf9u, 0xf5f9f9f9u },
+    { 0x66f6f4f9u, 0x64f665f6u, 25590, 25334, 0xf3fd61f6u, 0xf94d346cu, 0x481069a3u, 0x8d02faccu, 0xaec8fcecu, 0x2cc86ab3u, 0xf0b98916u, 0xf2b932ccu, 0xf6b97718u },
+    { 0xf7eb7be8u, 0xf72bf640u, -2971, -2293, 0x8b00f3fdu, 0xde21f64cu, 0x27e27201u, 0x7718f3fdu, 0x0783f76au, 0x7708a01au, 0x89172dd8u, 0x32dcf0b9u, 0x7718f2b9u },
+    { 0xf64df6b9u, 0xf7eb7be8u, -2496, -2261, 0xf70bf465u, 0x8b00f3fdu, 0xf74df64cu, 0x7201de13u, 0xf3fd27e2u, 0xf76a7718u, 0x77080783u, 0x89014110u, 0x0009ae69u },
+    { 0xd40ef3fdu, 0xd50e6073u, 26178, 26450, 0x373c362cu, 0x25722462u, 0x4f267f04u, 0xfef9fff9u, 0xfcf9fdf9u, 0x6df66ef6u, 0x6bf66cf6u, 0x69f66af6u, 0x68f6000bu }
+};

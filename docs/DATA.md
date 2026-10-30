@@ -94,6 +94,20 @@ these hold:
   * A partial trailing record is cut off and left reference-backed.
   * A uniform column set that is not at the map's stride is a plain table, not a
     struct.
+  * When the records only line up a few words in, the leading words become a
+    one-record header struct and the array follows it (for example the
+    `8c31a61c` and `8c31aa4c` tables).
+  * A float column may contain a few large or small round values (such as `1e8`).
+    An integer column may contain a few float-like words that are not round
+    numbers, such as packed bytes like `0x461e0906`.
+  * Words that would be NaN, infinity or denormal are integer fields.
+  * No union was needed: no column holds both floats and integers across records
+    once the stride and start are right.
+* **Lookup tables:** four CRC-style halfword tables that the map had filed as
+  high-entropy blobs are `unsigned short` arrays.
+* **Zero runs are not typed.** A run's true extent is unknown: it runs to the next
+  referenced address and can absorb padding or several variables. Zero runs stay
+  reference-backed until their extent is known.
 * **Placement:** nothing inside the game code region (likely literal pools of
   unlisted functions), nothing overlapping an unmatched candidate code range, and
   a module starts at an address aligned to its largest object alignment.
@@ -115,7 +129,8 @@ the same convention code modules use for data. `tools/data.py`
 * a `g_` target to lie outside every emitted data object, every code module and
   every unmatched candidate code range.
 
-When the target is later emitted as typed data, it must be renamed to that object.
+When the target is later emitted as typed data, it is renamed to that object. Tranche 5
+renamed 17 such references in 7 earlier modules; their bytes are unchanged.
 Every pointer-valued word still goes through a relocation.
 
 Vtable trailing zero words after the last nonzero slot are not evidently part of

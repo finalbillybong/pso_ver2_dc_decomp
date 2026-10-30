@@ -7,14 +7,14 @@
 | Compiled complete ranges | 1,116,022 bytes |
 | Code-range coverage of the image | 26.8087% |
 | of which Hitachi SHC pool groups | 168 bytes in 4 modules / 6 functions |
-| Typed static data | 472,808 bytes in 11935 objects / 3297 modules |
-| Typed data by kind | byte_table 492, float_table 20,616, function_table 18,560, int16_table 11,328, int_table 26,132, pointer_table 35,880, record_table 112,400, string 121,424, vtable 125,976 bytes |
+| Typed static data | 493,552 bytes in 12052 objects / 3365 modules |
+| Typed data by kind | byte_table 492, float_table 20,616, function_table 18,560, int16_table 13,424, int_table 26,132, pointer_table 35,880, record_table 131,048, string 121,424, vtable 125,976 bytes |
 | Static-data extent | 1,100,132 bytes (estimate) |
-| Typed data share of the static-data extent | 42.9774% |
+| Typed data share of the static-data extent | 44.8630% |
 | Decoded executable | 4,162,912 bytes |
-| Image coverage (code ranges + typed data) | 38.1663% |
+| Image coverage (code ranges + typed data) | 38.6646% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
-| Retained reference dependence | 2,193,897 bytes |
+| Retained reference dependence | 2,173,153 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
 | Source-only build | Unavailable |
@@ -29,7 +29,7 @@ as integers earn no credit. The static-data extent is an analysis estimate of th
 not a recovered section size. Embedded assets (see DATA.md) are extracted from
 your own dump at build time and are counted separately; they earn no coverage
 credit. The integrated hybrid image matches the reference, but still requires
-2,193,897 original bytes besides the assets.
+2,173,153 original bytes besides the assets.
 
 Exact-build verification recorded: **2026-10-30**. Two fresh
 project builds, exact integrated-image comparison, exact typed-data modules and the

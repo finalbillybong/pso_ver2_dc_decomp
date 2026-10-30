@@ -296,5 +296,13 @@ const Record_00004000 d_00004000[2] = {
                     static_data.check_external_symbols({'schema_version': 1, 'units': [self.unit(symbols)]}, code, temp)
 
 
+class ZeroRunTests(unittest.TestCase):
+    def test_short_zero_initialisers_are_not_typed_data(self):
+        unit = {'id': 'z', 'objects': [{'name': 'd_00007000', 'kind': 'int_table', 'size': 16, 'address': '0x7000'}]}
+        with self.assertRaises(ValueError):
+            static_data.lint('const int d_00007000[4] = { 0 };', unit)
+        self.assertNotIn('zero_table', static_data.KINDS)
+
+
 if __name__ == '__main__':
     unittest.main()
