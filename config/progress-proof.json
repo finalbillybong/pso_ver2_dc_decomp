@@ -15,10 +15,10 @@
     "config/asm.json": "30894cbfedbc5d3baeba419129c5db7241a736481e7249650e209ee8bfe9903d",
     "config/assets.json": "2910dc0f953037df2aac73b4f0ecdef61813693d629ca8ed6959c547f7cb1220",
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
-    "config/data.json": "377c8c303c35501d6ad6f8a5b0928aa7f31cc61ce437f25724a7ce6cd6a4cd9c",
+    "config/data.json": "9d50b06a23301f96286a8cbf57e4aa6ef8882a36acbb1592c6fa3622159b3e54",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "f6f80bb8b8a9a177e918dbcb12944a7543f66f58d370f5b044d78a2dca6a5fa3",
+    "config/project.json": "8cf61ea93f659d54df34a283b2e7d78b0342621cfdd75c64e7a1a02f743b4e7e",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/data/strings_8c284858.c": "cb16255c8ce183afbcb89c956a8f571e4ce6ef906acf5d31baea03f9d8066228",
@@ -2911,7 +2911,7 @@
     "src/data/tables_8c3f62f0.c": "e017ea43e8434aed30411a5b0c85396e9cbf18216ea22eae34fd3093539caab9",
     "src/data/tables_8c3f6340.c": "46bd1d1fd6c367d22e93c0c5daebb2d2b366cee07e28be6ac4b2f9fa48e526ba",
     "src/data/tables_8c3f63b0.c": "032ff1801ad32c71c9c91d0761f79b488ebde49797501b0e9fa5f76ee0534896",
-    "src/data/tables_8c3f63c4.c": "a6f0ca833e0b58fdd83308213f4d89433618975f18bfc0ecc632bceab11a626b",
+    "src/data/tables_8c3f63c4.c": "be8fec7ac27cac8f1225823ac890a6d162ab725d2bc6aad70898c69d69d8fc54",
     "src/data/tables_8c3f63ec.c": "094cb51fdf0bac7e594479d883b0c97db6a9207b18ccea85d11dc7dfd57d773a",
     "src/data/tables_8c3f6518.c": "183cb29fdd7de525adb322bd62e6216d8c547382fe909ce99d8103f50c82f137",
     "src/data/tables_8c3f65b8.c": "fc9363c9da2039fe7ee3f733ce325ca570a3f29797c8d71ac4f990dbfb89ae78",
@@ -14355,10 +14355,206 @@
     "src/samples/init_bytes.c": "fad10d35a4c4b916c9928bc920492a1cf880496fff9994480ec603fcc0d6037b",
     "src/samples/mask_any.c": "7623e7d4ba491002de5f0fcaa39eae8f29046a2a2f1d83f83b60e612115391a7",
     "src/samples/query_flag.c": "7dc4c08be49e57585f1d505fc55971c8deee5d84e71b3c6fec785189de6fd601",
+    "src/sdk/shc_arp_request_8c3c57a4.c": "90d04628186ac00c79a9686871a595de7bfd9ed625873a435fbfa055eea9322f",
+    "src/sdk/shc_attach_8c348100.c": "8fb2db13ae0de6335e2c236ce7eaddbd5b69c24cba7036ec915c37879d514d1a",
+    "src/sdk/shc_bank_lookup_8c345bb4.c": "d1317f8e5ae095c6f0db83caacb42e4824c72f030aa23c58864dfa5dfe5e813e",
     "src/sdk/shc_bit_index_8c37e9c8.c": "a13945d658cea33969f2ae4a82450b4c1f43447838b6a3575882858996688eb3",
+    "src/sdk/shc_boot_exit_8c379280.c": "27d9da346fc3320e515a374cae8f95d9162c0728640113be1de8355a30e3153e",
+    "src/sdk/shc_byte_order_8c1fd198.c": "8c59184701e1004d532e47e6fbc5e1c53673af07ef755b057f43aa091ff4c85d",
+    "src/sdk/shc_call_pair_8c38f7f4.c": "1066126812ee5cd1dbfc16ace366c46ac166fc9280991a14ab0b6bd4ae893442",
+    "src/sdk/shc_carve_buffers_8c35d340.c": "92ca3ef7abb59b13c2421034d1529234ab53955f9711a2a2988e413a9f6e4cbe",
+    "src/sdk/shc_chan_dma_8c356f68.c": "2d7a19ffea71840032a41bc8b2338578c93fcfc4d457d6b5afcef590fcfcfad1",
+    "src/sdk/shc_channel_init_8c3524b4.c": "5f1bfaf342b4e6ce6a9e9928084c70d147e136933f50a072b65ebf24855f0f3f",
+    "src/sdk/shc_channel_level_8c349324.c": "b7ebe38439abde068a0798788beb7a1d69e00d28ec8162bf5471307373f5bb08",
+    "src/sdk/shc_channel_ready_8c34308c.c": "c407e9d26c2237a64c3a5eb0b56d9500f60d156b0cae600cf8c5d3613eea25b8",
+    "src/sdk/shc_channel_send_8c3cc9f8.c": "646357d7277e1c23c435ae78a4637f8d4bc25e5e94267fdd22118521f30b3e46",
+    "src/sdk/shc_channel_setup_8c356e70.c": "6ef5d616b9f2b17ab15faf82928cfab77630aabbb0484cc1ba1111f99dcebdc7",
+    "src/sdk/shc_check_handle_8c347458.c": "d0240771de170c16efd479351961b8d97b4af379bfdf4fc70317d7fc5fda605a",
+    "src/sdk/shc_check_items_8c37d534.c": "e88952efbf5092333d3ea85e5f8e62e1ac9e47e0e5b90928ceb2761f2e003c75",
+    "src/sdk/shc_check_ready_8c1fc288.c": "d35a4f2bc63bd7df2818dd3971b668c0f2c2aecca1654bc664346d96aa2552f1",
+    "src/sdk/shc_check_set_8c34806c.c": "2b85054d6766ef7f8b59893374c85c4de453d21affc63c3022ff924aeebf8f9b",
+    "src/sdk/shc_checked_pair_8c348128.c": "1add5000b8e1dd3fbd722981796ec5a0d28e39f8f9264cb12ef2f1c575ae9988",
+    "src/sdk/shc_checked_set_8c348044.c": "5c9177145f15af6272ed8230877c2c46daa0a4a4db330032c9fd021972a2e8b4",
+    "src/sdk/shc_clear_channel_8c343388.c": "2a36a9456a7ab83e507e4e8517fb69686f803703ccb5160f17c1a42cc23be2ca",
+    "src/sdk/shc_clear_output_8c344c7c.c": "1e0b2fdccd9fa207c820d7a600e482e82bc916be6727da9cf7f84d52e842c480",
+    "src/sdk/shc_close_handle_8c344c04.c": "7636dfb7d4199302806adbbf162479453aaefd3ecc42fc66f8e320df61c70d16",
+    "src/sdk/shc_commands_8c3683b4.c": "5fb50315a7212177934111e5247177c21c4af9538b8f6e8b3f65b3a3f4639430",
+    "src/sdk/shc_configure_8c347fb4.c": "b504afa9eb8774bd95bfbb25877bb28dbf5808fff8f134247e27410f51cd7ec5",
+    "src/sdk/shc_configure_8c348158.c": "11041dab73a58d96cae5ad7f2114d96ec9bd716e4e9c1b3a3b9527630fcbe86e",
+    "src/sdk/shc_copy_defaults_8c3454dc.c": "41c48724683434dc4694840a968fbcf303b8830cf8d609b3f9c26a37b5826933",
+    "src/sdk/shc_copy_defaults_8c3485b4.c": "8f1116adb7105b10ef0063cb36fca1c1b7643030f7572b8f3a96ceb08f2deb1d",
+    "src/sdk/shc_copy_rect_8c35c1d8.c": "16636a4f5a66311aa828076087f700ed8f827cfb760769b84a354beecc038b1b",
+    "src/sdk/shc_copy_vector_8c37e990.c": "f4c19b07bc8c7df08ff86f160707737a6718fd5b6dbf0bde4fa5a7c1cf70a11c",
+    "src/sdk/shc_counter_incdec_8c34e1dc.c": "cd6c35da8e8866fbfa3c47a189764c1eaebae1e63c6769478f6157fe8b03a9b6",
+    "src/sdk/shc_create_register_8c346148.c": "a0e5d531bb195bace0c21a772d9bbe36f9ab2f4e870c9a52c61b1df8d0c162dc",
+    "src/sdk/shc_device_cmds_8c35f700.c": "172958f30d77edba394f3130107ab1883a922d31b9688ba478e799732cc9f833",
+    "src/sdk/shc_device_ctl_8c1fbd44.c": "01411529fe51c9bc189a7acdd675d6eb36184dc31618808422f762efcc13aef4",
+    "src/sdk/shc_device_get_8c35acd4.c": "06722630283647f57c85e3a1b80bf9f94105b2a3ea74905e53c52053ad97cdeb",
+    "src/sdk/shc_device_wait_8c3705c8.c": "a0ff032297b38fce6473176ab7da94a5dc23f591a9e0f78e8a5104a55a658fb0",
+    "src/sdk/shc_dispatch_8c347980.c": "95ae788ec77210c5ab96724079cfc128e30a2601327964aa58f555ba15557709",
+    "src/sdk/shc_draw_dispatch_8c38e2d0.c": "6af588a12a774a97fe84abc41e64f50963bdb7095dd13f1bb6b64548e4be3adc",
+    "src/sdk/shc_draw_text_8c343050.c": "e0f47dfe71d9e395ff517c1d520028a1e2bc51e8eabda1fd0b1cb29c49ef0845",
+    "src/sdk/shc_drive_mode_8c371dac.c": "a7cda483f837d3cbf7cea5952627a40b94b7b6bd216b7af86dc71a1a4e9b03b9",
+    "src/sdk/shc_driver_stubs_8c360e18.c": "88331c7c38cd4913dd39c764ed7148d2fb2f18063c4528c718d961d7a435cbae",
+    "src/sdk/shc_empties_8c3b6580.c": "69a0ac09868dd708d103732894d30d68dcf0677170263ad28c08ba64da68ed3b",
+    "src/sdk/shc_enable_midi_8c348404.c": "d8996ea4e93e82da0f12349e1e0b8fe025ba848cdee38629c434a9b22ec68765",
+    "src/sdk/shc_entry_table_8c1fb6a4.c": "21422eb61ce30b5be4cb425019e96328fe7597115f9f341bfa5e2d8ddaa32abe",
+    "src/sdk/shc_entry_value_8c364cbc.c": "021cb03d988de26fc5cc4eb1098747c272b4e2519adf1962defe0770266aa6d4",
+    "src/sdk/shc_file_stream_8c349930.c": "144da1e826e92655e238f0538cdbf40bb13df2c95627bf9ef934930f1dc8e257",
+    "src/sdk/shc_find_buffer_8c36333c.c": "07616be98f4eae7f3a75c9c47834f9d7ade550bfe90f0f4b34cc6c858a7304f6",
+    "src/sdk/shc_flash_id_8c378f3c.c": "3c53146198352a013f19300105545e3283cbe216446a66a95b2cc90242af31d3",
+    "src/sdk/shc_flash_read_8c345ee4.c": "9db7e5519862691ed447591f72f815f6c527d4bf34a46c1d1e844df027a841e0",
+    "src/sdk/shc_flash_read_byte_8c344f78.c": "11e7408da790836d61d14a54450f9352fbfc91a4c9060f6723135bcfe6bef9bb",
+    "src/sdk/shc_flash_write_8c345e00.c": "c5fdb3f454409ff0f35bf935290bd627e76af65f748e0677fd2dc48ebefd58b4",
+    "src/sdk/shc_format_name_8c352da0.c": "84a094a27bc2ef419069673154120009f3e018d1bfabc476b5d46b250afcbd86",
+    "src/sdk/shc_forward_8c344504.c": "9648d461e5dfabb5d9687d5774828329f45460af4c9bd7d880c688e0be98f6db",
+    "src/sdk/shc_forward_8c344944.c": "b4b0cf9dec38d9eadb2681ccb27578f5c2c4d26fbc1af0a37aaddd1dddf61979",
+    "src/sdk/shc_forwarders_8c3e9658.c": "9799b0fa576d641e2030a881406716ddea318f7fc9e9c2af9d3bac3b59521bf0",
+    "src/sdk/shc_free_channel_8c349248.c": "fe84fa01161b1c47563d9e0c8455ef128ea69af8b859cafecd1c6d87e7716254",
+    "src/sdk/shc_get_ctx_field_8c347b60.c": "ced40a94b4424e66669103785f6982273f08c4db394c4ad3be4f135195f8f19b",
+    "src/sdk/shc_get_field_8c347a44.c": "30d631a96096d99c00216e414d8bfdf51a406be4d2c5fd1c887da5e6594354bd",
+    "src/sdk/shc_get_info_8c34508c.c": "e6de48bb9aedddc7aa44164c711c69442c60d7296ed5433b1559971edbf9fa40",
+    "src/sdk/shc_glyph_8c1f5140.c": "47a72e03fdb88693b7bbf12bcc02329d4101595540b7ddb5e4bbb3eb1e8e1a66",
+    "src/sdk/shc_handle_check_8c348974.c": "675f53de6545b3a71ea0d9abb8698300a97c64f7010a716b621babc7e812f757",
+    "src/sdk/shc_handle_close_8c3489bc.c": "911a4ebad9110f0461b18f6d717200b9c568ecea44c184d5f8e71bd9568989ae",
+    "src/sdk/shc_header_check_8c363370.c": "fd93fe3dbd5aecd2518142eb5ab78a5bf56f8055df75cce1002e6a9917c763c1",
+    "src/sdk/shc_hello_packet_8c1ff604.c": "c3bafe75062d8ac02fec2e40cca04577478d094a61d6512be7887becd42c550e",
+    "src/sdk/shc_init_all_8c3c64b0.c": "4157dfe013a0eefe0bbfc985aaf0d3f5f35e154428760deda13ab00ef05c40f2",
+    "src/sdk/shc_init_request_8c345994.c": "f010c041afdc63b78c9f22a39b181278ef6b944f408bc47bcf8b871c175d1d53",
+    "src/sdk/shc_init_slots_8c346e94.c": "5c7d6b286f0392ab0907a9ef7f5e313c40aa8e4ec48fe4bb209d86b145f1378a",
+    "src/sdk/shc_init_slots_8c36dea0.c": "045e0668c759910f1bc4e65a97a0c3bec7a7e9ad945b6494f11ea2ee44eb9bde",
+    "src/sdk/shc_is_break_char_8c1f9f14.c": "801f1cb4200c1e7196cac0067d795b88e1385d983cb9b6cf78c5709f5bae210f",
+    "src/sdk/shc_is_kana_code_8c1f9e88.c": "20a741a5958896f9fba9a22c9957cb45e441ea5ceb3bba5375f31c73fff91a6c",
+    "src/sdk/shc_item_pool_8c34aae8.c": "0d1301be3365501b17af7d1660832b4ed2b18e3db671e54b5ec0cf3574f4efcb",
+    "src/sdk/shc_load_bank_8c348dfc.c": "ab13d82f364cef94e1ddd55434decc595e399b85f0f850b5fc2d73a7c0c3b81b",
+    "src/sdk/shc_load_block_8c345b7c.c": "e3d5b8a6e58db219dde7028e2fddb1acab8fbd6747f4f50415378c0e82badec1",
+    "src/sdk/shc_load_header_8c346688.c": "11d760cccc8041c5f488fa10db3c6ae026f8402ad42f7ed976a3e3bdd277bdc2",
+    "src/sdk/shc_load_program_8c34678c.c": "5fff77864cdbf56a671a496300134b5668ff4a4fdf7556081be240dafecb2c11",
+    "src/sdk/shc_lookup_op_8c3465a8.c": "bdd90efa5615654cf2ce88ffdc3f24e82a25ae054526c40b04ecd84e09c4f022",
+    "src/sdk/shc_mixer_reset_8c384e18.c": "11c1fc7415db4befdfeb3266132224531480c2276e2206942b8ed6c6e1ffc744",
+    "src/sdk/shc_mode_select_8c38f6e8.c": "5910a89149f78fca395bc65a943e7503759fe8a6e18a08fbb6444f2c72f8c7c9",
+    "src/sdk/shc_name_request2_8c346d20.c": "e094b6bfe5b5803b25e78866aa67d4318a04a9e8a01ea12bfffb91007698c835",
+    "src/sdk/shc_name_request3_8c346948.c": "220fc44a001de537b9770c80f86e544aa757a7babef3d9c168b58a15d2e5fd61",
+    "src/sdk/shc_name_request7_8c3469cc.c": "075199dc5fc985f9460d8671fddb92ae95f6588ede219981e330a6aed4327181",
+    "src/sdk/shc_name_request_8c345478.c": "d25d3ed564ff8c5d1f6f492ac2d86c290a23c6d13db9d776aa8cabf9c63a275f",
+    "src/sdk/shc_net_frame_8c1fd920.c": "8d62c41f42c7e8db4853be7c6ea586d4b5717e0e086602c0f7b887cea057dd98",
+    "src/sdk/shc_node_pool_8c1f5624.c": "25b40a87f30573f0a316111e21880d03b580c77c3dda85f8b84f142177fdee55",
+    "src/sdk/shc_notify_8c3903a4.c": "8c2ec1dbfd80e0e27cf56dba73306efaf793fd1f900b55b3687b08deaf40bc1f",
+    "src/sdk/shc_obj_accessors_8c34ff58.c": "0d507c1844296d6008d129c62ec7bea966c6b3ab807df47d50bb0114ac2e3397",
+    "src/sdk/shc_obj_setters_8c34fa80.c": "6c6e941fc1fea5ea59dd84437b7fc33162ad7bd12cb42ff25f57a914f54e2d51",
+    "src/sdk/shc_open_shot_8c345264.c": "4ba1905397028eb9500215d4391dfaa99215842506817be52d34bd6db4d1998b",
+    "src/sdk/shc_pair_compare_8c359848.c": "a95e79bc32533b5cf89fd93ae99324ec8d6deeffc7488888cbbc24f87f8887ed",
+    "src/sdk/shc_pair_request_8c346010.c": "bd8aca7c4b10c468659d333b8de1065eb9864832e990a9de915ec179b0f84d53",
+    "src/sdk/shc_poll_streams_8c37d480.c": "046be56c7e42810a2a85c7d688448dd1649ea88d330ab4d56b698d3bb5f81931",
+    "src/sdk/shc_port_events_8c35f5d8.c": "ea97d20426e4ced332cd76103a7635597cfb2f2d4e35f1141a5b4bbac4f18289",
+    "src/sdk/shc_port_setup_8c201edc.c": "779c856a01652e69e947ef61c011460687c33fcde5c63f282249f4eaf214c9d4",
+    "src/sdk/shc_port_slots_8c364a78.c": "5e52d6955532e0e0c412a0f7651c106946febf2b51b251df522e850481156a27",
+    "src/sdk/shc_port_state_8c3c8cac.c": "bc5f0a9de38543a5bac5a098928b7ba51fd2bfaa9034afee1eadf69b39107e1a",
+    "src/sdk/shc_port_tables_8c36ebd8.c": "0482ddf098f629ee83ef22855043b8e678f8d66a24e1108ae9a798b4bf54a722",
+    "src/sdk/shc_print_hook_8c3523fc.c": "41509e8775de3e9b6be2204385dec9e910102e87bee9dab9007437cc6f3cd7ef",
+    "src/sdk/shc_print_hook_8c3545cc.c": "100c407aed25f90675d598e890874dd657a5043baf04b5f7af64b79ae2befab3",
+    "src/sdk/shc_query_8c349c50.c": "cad16111b1d31f6b41b9d220cfe77974320352671bf99dda0dff29989ee99196",
+    "src/sdk/shc_queue_ops_8c3c8c28.c": "dade8d1c481bc16f3fc26dfdd1111ad91bf7a46f4e380ccb28968ec9d4420741",
+    "src/sdk/shc_queue_push_8c34720c.c": "e0f44e826e32ed24ef629a9eab356e5394730729ba10f520981c0f9d2727d1bd",
+    "src/sdk/shc_ramp_update4_8c348628.c": "c4e22b7ce87d1dd39cf07f335de0b60c11b1c9ac610d98356ca62ce4e5ed22e0",
+    "src/sdk/shc_ramp_update_8c345550.c": "e795be5729f9ff0873429991216a4cec9600c48d472e0776a3d3660232fdaf95",
+    "src/sdk/shc_read_byte_8c345d7c.c": "af13605570f8835f0665335ebe543390fbb3f92e3eb5642d1174a81f95bf768a",
+    "src/sdk/shc_read_byte_8c345e50.c": "230bb0d69b2a2b492b7e7d8e42ff285d5edffd4d7e0190a9b01c588f77b5075c",
+    "src/sdk/shc_read_level_8c344cd0.c": "547e8dcc15ea5c7529675d6048bef2656fb82b54fdd9949e02bf8cb476031e68",
+    "src/sdk/shc_read_value_8c346614.c": "52bb635fdad4e50cc2a7dc1bfd5bf678bc1c343050b03a9f01f3b4617d8976a0",
+    "src/sdk/shc_read_word_8c344d58.c": "f3154fad0b525a94d479f57d059aafbc70becd692f4e83aefe7f879882ba7e32",
+    "src/sdk/shc_read_word_8c345d2c.c": "365c38ee59b68fd6c604f32294ebe4fa64aaa2e8ee1b3d22ccd3f23f43084218",
+    "src/sdk/shc_rec_io_8c200ac4.c": "1b1ecb294160ff8f0abc8df831f4a39f803fc77efeae68036c8eb5686d2701fb",
     "src/sdk/shc_record_set_8c37e9a8.c": "3c063b2891c2998057adbf76e10fb4a30a357630c64b13fcefcf88813da3257e",
+    "src/sdk/shc_register_self_8c343ba4.c": "c11894c813e233e30a5418c4f8f3be5e89661642d91eb3d80987dc4b30e80c6c",
+    "src/sdk/shc_release_8c34debc.c": "0f32cd2e75b6d2648e689834d789e9ce2719071f4962c9c7f1388e742d52db78",
+    "src/sdk/shc_render_defaults_8c3c8334.c": "7ad96df717ac335e8b2c0a98ccccae2c98d648a4f7143d34b50dd08f8b93d373",
+    "src/sdk/shc_req_copy_8c3cea94.c": "082592129f42c1849519ed264457dada38147a193fb70d41889e5157adb92c60",
+    "src/sdk/shc_reset_blocks_8c343cb0.c": "53a0a4897526c03f07e3bcaf7469ec2e2706810deca777b2e0b427fb707aca81",
+    "src/sdk/shc_reset_hooks_8c35e6d8.c": "7a28793625bf48b0e3e1537d85690b368af459fbcf8f4136d09f34c5d3fbe0bd",
+    "src/sdk/shc_reset_state_8c391c94.c": "1879de801ec09affa7a188444879be73d5ed815d577d0d81a372abc6cd35f13d",
+    "src/sdk/shc_reset_state_8c391cc4.c": "57f3a37f7a192ab58acc5aa52d94c481de0e4457f907f7218e363ff7b426e5d9",
+    "src/sdk/shc_ret0_pair_8c34dc8c.c": "064391b98916dd1b54136969abc7b535f48cd188d03a7e58b93d33e811ca2789",
+    "src/sdk/shc_run_steps_8c34838c.c": "895cb516c03998e5f0144429c59edc88391dea773cefebeb94c383c91b645b06",
+    "src/sdk/shc_run_until_done_8c202c50.c": "c9db13906c4a9ccd7033bed6549859b600c47f099ecc3a341742cb8934f23f0b",
+    "src/sdk/shc_scale_colors_8c37e89c.c": "2fd8c2efc7d5c6aff84989a48589b8f971c5d2aa4c8d386b5e2547772f32e1c8",
+    "src/sdk/shc_scale_vectors_8c37e7e0.c": "f390f36c4e06e81060b3c7f4118ba4cfa8cdfa095cb5c86f5207292ada915559",
+    "src/sdk/shc_scaled_size_8c356bec.c": "a7839d2b0ef1507882313b46c48aaa45ef21107270ff8d1ae8fdb20f1a93fd03",
+    "src/sdk/shc_select_track_8c35795c.c": "841b9163d1e3a0d777b39ab529f62f7f542c825911092543078711ad84ac19af",
+    "src/sdk/shc_send_command14_8c34853c.c": "cbc9bd14e7255ad7b3750a399e71d148c1471cfeca8d2b6d7d4a887304e1f8fe",
+    "src/sdk/shc_send_command5_8c346a54.c": "a161b77da900359d07b72190023f4b5096cdb516f90c7eca4f66fb19571cdcaf",
+    "src/sdk/shc_send_command6_8c3468d0.c": "81b9283c2df9855cd9d628eb0ed93215c3514eacb99411fecbf3bf0b9f5d0c04",
+    "src/sdk/shc_send_level_8c346e1c.c": "e9cba7017cce03d77544ccdc2e75c6abecc70218325f99e76744910740f9ef7c",
+    "src/sdk/shc_seq_ramp_8c343d64.c": "cb74dfe240b815f0090da9c9b4b42ab206f3d21c82af262bf3c563d8741ce32d",
+    "src/sdk/shc_serial_bits_8c3cfec4.c": "677cc9fceecf73bff45e56205bf8c2e33808bd457531050f0530f9e7fddbdf42",
+    "src/sdk/shc_session_8c1fd444.c": "0933dc013ada76b080da1ee017fb4052c4999d5ee4a1b8a811e70c5a548c01be",
+    "src/sdk/shc_set_1c_8c37e76c.c": "f6a77475ef1da5b5bb98fb8daf8ef3feffc9e60d89702b853417fb68c4c3cf27",
+    "src/sdk/shc_set_callback_args_8c346118.c": "2c61e50cbed58502d8879a8686fbb976a626999e97a5731c425bb67494d27b2d",
+    "src/sdk/shc_set_channels_8c34409c.c": "b26d3526ec20062ba1ae666b30eafabc40d35214a67f11f75f904f92d512e917",
+    "src/sdk/shc_set_level_8c3457b0.c": "a2f02249ca1f96e980e552fb3c746f5dc732a14ee658bb691c1b400f0e87fd5e",
+    "src/sdk/shc_set_level_8c348844.c": "163b529f613bb7b078537a177229f5046307e4b3f32edd754c24dd59b7b5d557",
+    "src/sdk/shc_set_mode_8c34609c.c": "abef67406d5f822785f2d5296b8c8ffa1e03364b2f76fc343db70ba281a7facb",
+    "src/sdk/shc_set_pad_8c345f8c.c": "f2bff407ec0208156c463252b9c10846800e81c2f2ef61bb362f5955477981a4",
+    "src/sdk/shc_set_pair_8c347f84.c": "a1abb3318d83389f42365835d87ff0632fbd3464c1d9e42a75b1de761aac6b98",
+    "src/sdk/shc_set_pan_8c344510.c": "fff5f5409a7fa3090b16d1da0017318db84e276c9f7a1721c729a4b14334375f",
+    "src/sdk/shc_set_split_8c346214.c": "6f6e60f51bb60b2c646c95ee4aba6bd62b75d9353f30e80c7139cc9f0cfabf2a",
+    "src/sdk/shc_set_stream_mode_8c3ab8f8.c": "57ba0fcce2b829ea2ebb732bc07fcdcb0f8f71b489de52ab8c767b09e4c6d148",
+    "src/sdk/shc_set_value_8c3461d4.c": "cba677373e554d5eb00eb58248609786ae9a1c269d0087f1fa20b96f350c9b60",
+    "src/sdk/shc_set_value_8c347f5c.c": "92816607fe89dfc8de79e8d0dc9fcaa057f6e5f38d6362420ca3232d2fa619eb",
+    "src/sdk/shc_set_value_8c3481e8.c": "b55f489253bafca3d91e39cec20503a4772d530226e556c057b4e88e1b45dfa3",
+    "src/sdk/shc_set_vector_8c37e864.c": "b828e0926a6a615c45cf7041ac580ec76ea5ab7613887ea8c796607e625ad395",
+    "src/sdk/shc_set_volume_8c344398.c": "383a17ff94e588c5bb793fce080c64fe956fab2e2f6b1766c5de7a0f2c27c0dc",
+    "src/sdk/shc_set_volume_8c34471c.c": "9b9f50789c155cfdba53cf61ac7e65d250833f0e9c386649fe4830fd2c6c84a4",
+    "src/sdk/shc_set_window_8c345864.c": "353674acb6f7a70897829a77ea7a1bd1491f6e0dea01b663b85ee64e643694be",
     "src/sdk/shc_short_or_offset_8c1f33a0.c": "356a90493e4e94dcc7961f78ad96a5ad1897dbf76745582349814393e6cffcb5",
+    "src/sdk/shc_slot_alloc_8c34e1f4.c": "2bf42e7c52e007a35bbe5d6b7aa8188d21cb042f19f04f6861297ec9b7174c26",
+    "src/sdk/shc_slot_pool_8c354640.c": "8e8075e9ecabbd2f390ea70463a79c191f8a28f324ddbc6e5aadefcc3b26ea53",
+    "src/sdk/shc_slot_ready_8c3cc9bc.c": "239c156a502eae1b6b8334facebd54d341ee07bbd7b30897eed4c2d8bd2a5600",
+    "src/sdk/shc_slot_request_8c348454.c": "3658680562555e10dc6691a95eb738644dcfe0c7678ffa52da68b1037e4072b1",
+    "src/sdk/shc_sock_ops_8c3ce374.c": "c155c396b8076e4b76b359b0408f16adf9a7024d20b374fb930644ca24366532",
+    "src/sdk/shc_sock_req_8c3cdbe4.c": "2a8db27d116e211ab4000ab0974e3a89cc14a4e8a21549c9f966f329400ee9dd",
+    "src/sdk/shc_span_cmp_8c359734.c": "365152c12ed9e2e6ca12803c6cb7de8342a46223ee075818a708aa28b20458ba",
+    "src/sdk/shc_span_div_8c346468.c": "9b5165842acafa3e57ee9fe8619682c0f2940f91b603f0c7904328cd3445b90b",
+    "src/sdk/shc_span_split_8c3596f4.c": "9050fe26fc8ead5023bd45133e6054381f4ba73652ebab0bbdb8e523249b5288",
+    "src/sdk/shc_start_voices_8c3453c8.c": "7099c6224b6b60e7792b7c4982e7469895f034ed9c03633be5b4d357b9210ebd",
+    "src/sdk/shc_startup_8c340848.c": "a1c3d6715940f91f3ad8773764c304301c064ef56e9b48b64a448a200b77ed11",
+    "src/sdk/shc_status_clear_8c36d978.c": "ddfa8bbb1f973ea1797be06865868b561f1affa56d8df605f22e63eb1d4a0959",
+    "src/sdk/shc_stream_ctl_8c35f41c.c": "90d25acc5d54fb5c9fb0d450b2bc45ec8447f02fb7ccccd4a0c58652ce32a13b",
+    "src/sdk/shc_stream_feed_8c35258c.c": "2a16c3a6fd22b6dabb016a90b3c6b699d60cf0fa37db3dbfea3e07789fde8238",
+    "src/sdk/shc_stream_open_8c3740d0.c": "90685ff917b498136f4b0997f2c831db61bfd462f4f1b02c7170c4be38a0d4c3",
+    "src/sdk/shc_stream_start_8c35f53c.c": "792ca5ad992934522eca980f24f9ebdbbde63a24560187f84aba1a8e55be122c",
+    "src/sdk/shc_stubs_8c35c1f0.c": "cc5c8abeb1a42ba5ddf2fd262f652a178bbfd073e2a814645f419fd4eef9fe98",
+    "src/sdk/shc_sum_entries_8c1f511c.c": "653b3f4f58e97284cc84abe08e84b33394e3364d6ff5334cf620deda7fd3bc7c",
+    "src/sdk/shc_table_init_8c34c824.c": "c5bb5e3316f003a5beb48c82b449a6eec59f5be6488a89a24ff055d5067604b3",
+    "src/sdk/shc_task_pool_8c3c7748.c": "d69d12077e45c7dff3e3988b24f1ee735fa3a28b865fec823d37925a8d2a8f9e",
+    "src/sdk/shc_tcp_header_8c203b80.c": "ebd52ce94295d672d40ba05700a4eb6a6374c9969e6b74bac27a23d92ddf4f8d",
+    "src/sdk/shc_thunk_8c343ca4.c": "2bef764186f15430bc4b21ac6a60381e194607a5d6f81c56c60ff95b979099cb",
+    "src/sdk/shc_thunk_8c344288.c": "c1cde4c41a384bbd4caab1949563e5609427b4f000853ea3678c41c9f3c4bbd3",
+    "src/sdk/shc_thunk_8c34438c.c": "9c38060b6555fe0827a54e4c8b2581bdd744cae7d3cc046fc91acd7af1d8176b",
+    "src/sdk/shc_thunk_8c34467c.c": "e7abb301e12bec11e76561f719665c82142336f7d6203d19f8a17a81f43490ae",
+    "src/sdk/shc_thunk_8c344688.c": "57f31d4675c212c9b80c61e1d42de8bd53a4ad56f3f083cd96dddcd169d6d0e6",
+    "src/sdk/shc_thunk_8c344884.c": "f075b4bf673f54824900a07fab90787d0387430778efdc335a5def5bd6cec1d4",
+    "src/sdk/shc_thunk_8c349318.c": "4277e55784ac8780424599f08b23825d7b21641dfd4199351b95a41bac6c91f3",
+    "src/sdk/shc_thunk_8c349438.c": "93849fed96cf816659c30f77076d4dd4c01fc1dc2e183e7617ed04ed0accb783",
+    "src/sdk/shc_thunk_8c35e714.c": "a7a163b7d053b17200f82b8d517dd115fb392e19da3ffbbdbb93b6e4c4dda7b1",
+    "src/sdk/shc_thunk_8c37e7c8.c": "328cb7cce32e02c249238060065e00056c4c9ad0642a5d542a30db36ad1a7d74",
+    "src/sdk/shc_thunk_8c37e7d4.c": "fb1d87bff52c16b06d6df2552cc927f911b6dd575cc81ac6eea32b7b62a1e1df",
+    "src/sdk/shc_thunks_8c352464.c": "704fd40f1c23d054253879231e80fa6f8e886180dfd6fb79c5a91cb772404695",
+    "src/sdk/shc_trace_echo_8c37e7ac.c": "26951c04cde463511bb55668b31846651403638f4f8f9f9aecb3f70d8ddf2d77",
+    "src/sdk/shc_trace_stubs_8c3c9fb4.c": "8adaae552dcb3da845128c958bec566dfe69e7168a9e5cf96eb64412f8c53d6d",
+    "src/sdk/shc_trace_stubs_8c3ca110.c": "487ac53979ad68594314556591a33c772328e2afa59e5fa218f1f966aa4935a3",
+    "src/sdk/shc_trace_stubs_8c3ca280.c": "7d8282495d9c804e68594f47b0e75fefb4b0b3f06f5d3fc7af683e38924cb9c7",
+    "src/sdk/shc_trace_stubs_8c3ca3f4.c": "25fe4338a8da572d4938a4098d571c113892dc4233be2419f9295326499ca325",
+    "src/sdk/shc_track_byte_8c3e9190.c": "2b8aa8cfd2e6d05d5e04de2dc6ff22827344f56a2b82545868ff0eec8a0e31fd",
+    "src/sdk/shc_upper_8c3b2020.c": "e5f3ac8916b0878ea0058dfae8f8c5e6cd7c9d52c8aa0fdd2a73eac3b83f8e41",
+    "src/sdk/shc_video_mode_8c371e38.c": "4a2a742d64566305c40f93592a024dbe19c683067de49f06fc5a04ba620206ea",
+    "src/sdk/shc_voice_update_8c37d58c.c": "b71154d869ce80bd74e1d727a20c494906c8bb8592d1064095e3ef0c806685c5",
+    "src/sdk/shc_wait_ready_8c1ffdd0.c": "3aeb538ba52765383fc81870a7a3d4c3ffbeea8fa9e4ee902731a90665c57a56",
+    "src/sdk/shc_wait_ready_8c36d98c.c": "e8da8ff0db2a7cd9d50d0a1cbf57e143c3937ad558826ce6c7ce8cbbd82eae08",
+    "src/sdk/shc_wait_ready_8c36dfd4.c": "a2eefd545b1999c027d34931d8dbabe11cf29c36e6c16669dd3bc813f0499d3d",
     "src/sdk/shc_work_value_8c370860.c": "803611ae6cbc13fef4f8227e425d889a7de1aae5617fc064fa80de3cd26d8b58",
+    "src/sdk/shc_write_byte_8c345f3c.c": "03ca08c1e6e2bd31c2091ec062cd7b4610e324341eeeeb544223e4aafb020282",
+    "src/sdk/shc_write_word_8c345e8c.c": "003f56dbd9062a0b18b8d941240433f8033810bbd6ee36ca167bb5cd84379848",
     "src/system/read_time_fields.c": "989c82736f536f440e67098e13681eadbcd5386ba38107e9a0e3421a4dc7aecf",
     "src/ui/adjust_hex_field.c": "e57b41c6aeaa8fc7ad80644140feb0bde0fa42772ac24f12d6c675cbf5481cff",
     "src/ui/adjust_integer_field.c": "334dc49d9be67a92592762127402f2020fe4a28aa900eaa22291985047e39828",
@@ -110157,6 +110353,27 @@
       "off",
       "-O2"
     ],
+    "shc_sum_entries_8c1f511c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_glyph_8c1f5140": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_node_pool_8c1f5624": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "operation_8c1f61a8": [
       "-proc",
       "SH4",
@@ -110178,6 +110395,20 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "shc_is_kana_code_8c1f9e88": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_is_break_char_8c1f9f14": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
     ],
     "configure_buffer_8c1f9f64": [
       "-proc",
@@ -110212,6 +110443,13 @@
       "off",
       "-O2"
     ],
+    "shc_entry_table_8c1fb6a4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "operation_8c1fbabc": [
       "-proc",
       "SH4",
@@ -110223,6 +110461,62 @@
       "off",
       "-O2"
     ],
+    "shc_device_ctl_8c1fbd44": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_check_ready_8c1fc288": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_byte_order_8c1fd198": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_session_8c1fd444": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_net_frame_8c1fd920": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_hello_packet_8c1ff604": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_wait_ready_8c1ffdd0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_rec_io_8c200ac4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "operation_8c201e28": [
       "-proc",
       "SH4",
@@ -110233,6 +110527,20 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "shc_port_setup_8c201edc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_run_until_done_8c202c50": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
     ],
     "operation_8c202d74": [
       "-proc",
@@ -110255,6 +110563,13 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "shc_tcp_header_8c203b80": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
     ],
     "operation_8c204334": [
       "-proc",
@@ -135590,7 +135905,1064 @@
       "off",
       "-O2"
     ],
+    "shc_startup_8c340848": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_draw_text_8c343050": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_channel_ready_8c34308c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_clear_channel_8c343388": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_register_self_8c343ba4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunk_8c343ca4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_reset_blocks_8c343cb0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_seq_ramp_8c343d64": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_channels_8c34409c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunk_8c344288": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunk_8c34438c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_volume_8c344398": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_forward_8c344504": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_pan_8c344510": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunk_8c34467c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunk_8c344688": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_volume_8c34471c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunk_8c344884": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_forward_8c344944": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_close_handle_8c344c04": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_clear_output_8c344c7c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_read_level_8c344cd0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_read_word_8c344d58": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_flash_read_byte_8c344f78": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_get_info_8c34508c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_open_shot_8c345264": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_start_voices_8c3453c8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_name_request_8c345478": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_copy_defaults_8c3454dc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_ramp_update_8c345550": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_level_8c3457b0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_window_8c345864": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_init_request_8c345994": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_load_block_8c345b7c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_bank_lookup_8c345bb4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_read_word_8c345d2c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_read_byte_8c345d7c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_flash_write_8c345e00": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_read_byte_8c345e50": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_write_word_8c345e8c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_flash_read_8c345ee4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_write_byte_8c345f3c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_pad_8c345f8c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_pair_request_8c346010": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_mode_8c34609c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_callback_args_8c346118": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_create_register_8c346148": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_value_8c3461d4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_split_8c346214": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_span_div_8c346468": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_lookup_op_8c3465a8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_read_value_8c346614": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_load_header_8c346688": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_load_program_8c34678c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_send_command6_8c3468d0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_name_request3_8c346948": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_name_request7_8c3469cc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_send_command5_8c346a54": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_name_request2_8c346d20": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_send_level_8c346e1c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_init_slots_8c346e94": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_queue_push_8c34720c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_check_handle_8c347458": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_dispatch_8c347980": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_get_field_8c347a44": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_get_ctx_field_8c347b60": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_value_8c347f5c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_pair_8c347f84": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_configure_8c347fb4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_checked_set_8c348044": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_check_set_8c34806c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_attach_8c348100": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_checked_pair_8c348128": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_configure_8c348158": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_value_8c3481e8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_run_steps_8c34838c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_enable_midi_8c348404": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_slot_request_8c348454": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_send_command14_8c34853c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_copy_defaults_8c3485b4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_ramp_update4_8c348628": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_level_8c348844": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_handle_check_8c348974": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_handle_close_8c3489bc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_load_bank_8c348dfc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_free_channel_8c349248": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunk_8c349318": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_channel_level_8c349324": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunk_8c349438": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_file_stream_8c349930": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_query_8c349c50": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_item_pool_8c34aae8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_table_init_8c34c824": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_ret0_pair_8c34dc8c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_release_8c34debc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_counter_incdec_8c34e1dc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_slot_alloc_8c34e1f4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_obj_setters_8c34fa80": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_obj_accessors_8c34ff58": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_print_hook_8c3523fc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunks_8c352464": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_channel_init_8c3524b4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_stream_feed_8c35258c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_format_name_8c352da0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_print_hook_8c3545cc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_slot_pool_8c354640": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_scaled_size_8c356bec": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_channel_setup_8c356e70": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_chan_dma_8c356f68": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_select_track_8c35795c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_span_split_8c3596f4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_span_cmp_8c359734": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_pair_compare_8c359848": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_device_get_8c35acd4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_copy_rect_8c35c1d8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_stubs_8c35c1f0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_carve_buffers_8c35d340": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_reset_hooks_8c35e6d8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunk_8c35e714": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_stream_ctl_8c35f41c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_stream_start_8c35f53c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_port_events_8c35f5d8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_device_cmds_8c35f700": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_driver_stubs_8c360e18": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_find_buffer_8c36333c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_header_check_8c363370": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_port_slots_8c364a78": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_entry_value_8c364cbc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_commands_8c3683b4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_status_clear_8c36d978": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_wait_ready_8c36d98c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_init_slots_8c36dea0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_wait_ready_8c36dfd4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_port_tables_8c36ebd8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_device_wait_8c3705c8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "shc_work_value_8c370860": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_drive_mode_8c371dac": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_video_mode_8c371e38": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_stream_open_8c3740d0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_flash_id_8c378f3c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_boot_exit_8c379280": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_poll_streams_8c37d480": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_check_items_8c37d534": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_voice_update_8c37d58c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_1c_8c37e76c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_trace_echo_8c37e7ac": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunk_8c37e7c8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_thunk_8c37e7d4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_scale_vectors_8c37e7e0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_vector_8c37e864": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_scale_colors_8c37e89c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_copy_vector_8c37e990": [
       "-cpu=sh4",
       "-endian=little",
       "-fpu=single",
@@ -135610,11 +136982,207 @@
       "-fpu=single",
       "-optimize=1",
       "-macsave=0"
+    ],
+    "shc_mixer_reset_8c384e18": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_draw_dispatch_8c38e2d0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_mode_select_8c38f6e8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_call_pair_8c38f7f4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_notify_8c3903a4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_reset_state_8c391c94": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_reset_state_8c391cc4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_set_stream_mode_8c3ab8f8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_upper_8c3b2020": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_empties_8c3b6580": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_arp_request_8c3c57a4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_init_all_8c3c64b0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_task_pool_8c3c7748": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_render_defaults_8c3c8334": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_queue_ops_8c3c8c28": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_port_state_8c3c8cac": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_trace_stubs_8c3c9fb4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_trace_stubs_8c3ca110": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_trace_stubs_8c3ca280": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_trace_stubs_8c3ca3f4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_slot_ready_8c3cc9bc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_channel_send_8c3cc9f8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_sock_req_8c3cdbe4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_sock_ops_8c3ce374": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_req_copy_8c3cea94": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_serial_bits_8c3cfec4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_track_byte_8c3e9190": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_forwarders_8c3e9658": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
     ]
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 640901,
+  "source_only_rejected_retained_bytes": 636145,
   "typed_data_modules": 3365,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

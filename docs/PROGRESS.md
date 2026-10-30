@@ -2,22 +2,22 @@
 
 | Measure | Value |
 | --- | ---: |
-| Exact matching functions | 10939 |
-| Matching modules | 10853 |
-| Compiled complete ranges | 1,128,430 bytes |
-| Code-range coverage of the image | 27.1067% |
-| of which Hitachi SHC pool groups | 168 bytes in 4 modules / 6 functions |
+| Exact matching functions | 11389 |
+| Matching modules | 11049 |
+| Compiled complete ranges | 1,160,380 bytes |
+| Code-range coverage of the image | 27.8742% |
+| of which Hitachi SHC pool groups | 32,118 bytes in 200 modules / 456 functions |
 | Typed static data | 493,552 bytes in 12052 objects / 3365 modules |
 | Typed data by kind | byte_table 492, float_table 20,616, function_table 18,560, int16_table 13,424, int_table 26,132, pointer_table 35,880, record_table 131,048, string 121,424, vtable 125,976 bytes |
 | Static-data extent | 1,100,132 bytes (estimate) |
 | Typed data share of the static-data extent | 44.8630% |
 | Decoded executable | 4,162,912 bytes |
-| Image coverage (code ranges + typed data) | 38.9627% |
+| Image coverage (code ranges + typed data) | 39.7302% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
-| Assembly (hand-written), not decompiled | 32,644 bytes in 109 units (1.0658% of the code extent) |
-| Fallback assembly for unmatched code, **not decompiled** | 1,487,200 bytes in 10909 units (48.5572% of the code extent) |
-| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,522,011 bytes (84.6045% of the image) |
-| Retained reference dependence | 640,901 bytes |
+| Assembly (hand-written), not decompiled | 32,596 bytes in 109 units (1.0643% of the code extent) |
+| Fallback assembly for unmatched code, **not decompiled** | 1,460,054 bytes in 10909 units (47.6709% of the code extent) |
+| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,526,767 bytes (84.7187% of the image) |
+| Retained reference dependence | 636,145 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
 | Source-only build | Unavailable |
@@ -32,7 +32,7 @@ as integers earn no credit. The static-data extent is an analysis estimate of th
 not a recovered section size. Embedded assets (see DATA.md) are extracted from
 your own dump at build time and are counted separately; they earn no coverage
 credit. The integrated hybrid image matches the reference, but still requires
-640,901 original bytes besides the assets.
+636,145 original bytes besides the assets.
 
 **Assembly is not decompiled code, and no assembly is committed.** Hand-written
 assembly covers routines with an instruction that neither CodeWarrior nor the pinned

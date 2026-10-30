@@ -139,27 +139,68 @@ installation is present.
 
 ## Current units
 
-| Unit | Range | Bytes | Functions |
-| --- | --- | ---: | ---: |
-| `shc_short_or_offset_8c1f33a0` | `0x8c1f33a0`–`0x8c1f33b6` | 22 | 1 |
-| `shc_work_value_8c370860` | `0x8c370860`–`0x8c37087c` | 28 | 2 |
-| `shc_record_set_8c37e9a8` | `0x8c37e9a8`–`0x8c37e9c8` | 32 | 2 |
-| `shc_bit_index_8c37e9c8` | `0x8c37e9c8`–`0x8c37ea1e` | 86 | 1 |
+200 pool-group units, 32,118 bytes, 456 functions (listed in `config/project.json`
+with `"compiler": "shc-v5.1r13"`; sources in `src/sdk/`):
+
+| Region | Units | Bytes | Functions |
+| --- | ---: | ---: | ---: |
+| Library block `0x8c1f0000`–`0x8c205000` | 18 | 4,386 | 62 |
+| SDK region from `0x8c340000` | 182 | 27,732 | 394 |
+
+Units are complete pool groups: one or more consecutive literal-pool groups whose
+functions only branch to each other. A literal pool may sit inside a unit (and
+even inside a function) where SHC had to flush it.
+
+## Source idioms that reproduce the SDK code
+
+These SHC 5.1r13 behaviours were found while matching the units; each one is used
+by at least one exact unit:
+
+* **Scratch-register rotation.** SHC rotates scratch registers (r3, r2, r1) by basic
+  block, so the block structure decides which register a temporary or call
+  address gets. The SDK uses goto-style error handling
+  (`if (!x) { err = E; goto done; } ... done: if (err) report(err); return err;`);
+  writing the source that way, sometimes with an extra label, reproduces the
+  rotation.
+* **`register` locals** take callee-saved registers from r14 downward.
+* **Unfolded member offsets.** SHC folds constant offsets within one expression
+  only; the reference's separate adds (`base + 0x2774`, then `+ 0x1f80`) come from
+  stepwise pointer arithmetic, arrays of embedded structs (`&o->lists[1]`) or
+  `member_array + constant` expressions, which also set literal-pool order.
+* **Calling conventions.** `int f(int, char *, ...)` reproduces the trace calls that
+  pass the first argument in r4 and push the rest; an unprototyped callee keeps
+  arguments in registers; old-style (K&R) definitions reproduce parameter homing
+  and narrowing through the stack.
+* **Tail calls.** `int r = f();` (result unused) keeps `jsr`/`rts`; a plain final
+  call becomes `jmp`. Some functions fall off the end without `return`; the
+  reference then returns whatever r0 holds, and the source keeps that shape.
+* **Memory order.** `volatile` locals reproduce values kept in stack slots;
+  `volatile` globals stop SHC moving literal-pool loads above stores. Byte globals
+  declared as arrays (`g[0] = x`) reproduce the reference's address/value
+  registers.
+* **Runtime helpers** are bound by address like any extern: `__divls`
+  (`0x8c12ba9c`, signed divide), `__modls` (`0x8c12bc48`, signed remainder),
+  `__divlu`/`__modlu`, the struct-copy helpers `__quick_evn_mvn`/`__quick_odd_mvn`,
+  and the `_builtin_strcpy` intrinsic's helper.
+* **Variable arguments.** SHC's `stdarg.h` is not available (system headers are not
+  allowed), so the two `va_start` users spell out the macro.
+
+Some units keep labels that exist only to reproduce the reference's block
+structure (for example `goto close; close:`); they are ordinary C and are noted
+in the source comments where they are not otherwise motivated.
 
 ## What to expect
 
-A scratch measurement (not admitted) found code-exact SHC source for about half of
-sampled small SDK functions and about 60% of sampled SHC-shaped functions in the
-`0x8c1f` block. The usual near misses are register choices among callee-saved
-registers. Known blockers:
+Of the literal-pool groups screened so far, those blocked are:
 
-* hand-written assembly (`fschg`, `ftrv`, `fipr`, `pref`, `ldc`/`stc` sequences);
-* a mid-sequence `nop` that no SHC 5.x setting produces (about 7.8 KB of the SDK
-  region);
-* variadic calls that pass the first named argument in `r4` and the rest on the
-  stack (SHC 5.x pushes every argument);
-* pools placed inside a function, which only appear when the whole source file is
-  rebuilt.
+* hand-written assembly (`fschg`, `ftrv`, `fipr`, `pref`, `ldc`/`stc` sequences,
+  `dmuls.l`);
+* code with nop padding before a literal pool or mid-sequence `nop`s (some SDK
+  areas, apparently built with an alignment setting);
+* inline struct copies through r1/r0 register pairs, which need `-speed`;
+* groups that branch to static functions outside themselves until the
+  neighbouring groups are matched too;
+* remaining near misses, mostly the choice or order of callee-saved registers.
 
 Some code tagged "library-style" earlier (calls through `jsr @r0`, `mov.l` for
 small constants) is CodeWarrior-shaped, not SHC; leave it to the main pipeline.
