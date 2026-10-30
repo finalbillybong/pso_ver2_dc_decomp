@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT))
 import pso
 import matching
 import data as static_data
+import shc_units
 
 
 def layout(manifest, size, data=None):
@@ -55,6 +56,8 @@ def inputs():
     matching.load_tools()
     cfg = pso.read_json(ROOT / 'local.json')
     manifest = pso.read_json(ROOT / 'config/project.json')
+    if shc_units.shc_units(manifest):
+        shc_units.load_shc_tools()
     reference = Path(cfg['scratch']) / 'orig/DP_ADDRESS.dec.bin'
     pin = pso.read_json(ROOT / 'config/decoded.json')
     pso.check_hash(reference, pin['sha256'])
@@ -78,10 +81,15 @@ def provenance(manifest):
         typed = {'data_manifest_sha256': pso.file_hash(ROOT / static_data.MANIFEST),
                  'data_driver_sha256': pso.file_hash(ROOT / 'tools/data.py'),
                  'data_source_sha256': {u['source']: pso.file_hash(ROOT / u['source']) for u in data['units']}}
+    if shc_units.shc_units(manifest):
+        # Without SHC units the provenance (and existing receipts) is unchanged.
+        typed.update({'shc_driver_sha256': pso.file_hash(ROOT / 'tools/shc_units.py'),
+                      'shc_runner_driver_sha256': pso.file_hash(ROOT / 'tools/shc.py'),
+                      'shc_packages_sha256': pso.file_hash(ROOT / 'config/compiler-packages.json')})
     return {**typed, 'project_sha256': pso.file_hash(ROOT / 'config/project.json'),
             'driver_sha256': pso.file_hash(Path(__file__)),
             'matching_driver_sha256': pso.file_hash(ROOT / 'tools/matching.py'),
-            'compiler_flags': {u['id']: matching.unit_flags(u) for u in manifest['units']},
+            'compiler_flags': {u['id']: shc_units.unit_flags(u) for u in manifest['units']},
             'toolchain_sha256': pso.file_hash(ROOT / 'config/toolchain.json'),
             'headers_sha256': {u['id']: matching.dependencies(ROOT / u['source'], u)
                                for u in manifest['units']},
@@ -129,7 +137,7 @@ def build(source_only=False):
         if any(t in source.read_text() for t in ('__asm', 'asm(', 'asm (', '.incbin')):
             raise ValueError('Assembly cannot count as reconstructed C/C++')
         target = out / (unit['id'] + '.bin')
-        matching.compile_unit(source, target, unit)
+        shc_units.compile_unit(source, target, unit)
         r = unit['ranges'][0]
         result = pso.compare_bytes(data[r['offset']:r['offset'] + r['size']], target.read_bytes())
         if not result['exact']:
@@ -190,6 +198,9 @@ def report():
     result = {'objective': manifest['objective'], 'status': 'in_progress',
               'matched_modules': len(manifest['units']),
               'matched_functions': sum(len(u['functions']) for u in manifest['units']),
+              **({'shc_modules': len(shc_units.shc_units(manifest)),
+                  'shc_compiled_bytes': sum(u['ranges'][0]['size'] for u in shc_units.shc_units(manifest))}
+                 if shc_units.shc_units(manifest) else {}),
               'compiled_source_bytes': source_bytes,
               'compiled_function_range_bytes': source_bytes,
               'coverage_note': 'Complete compiled function ranges include local literals and alignment; not an instruction-only byte count.',

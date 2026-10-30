@@ -44,6 +44,10 @@ def main():
     if project.static_data.read(root)['units']:
         # project.build compiled, type-checked, placed and compared every data module.
         checks.append('typed_data_modules_exact')
+    if project.shc_units.shc_units(manifest):
+        # project.build compiled each SHC pool group with the pinned Hitachi tools,
+        # required code section P only, and compared its complete range.
+        checks.append('shc_pool_groups_exact')
     pso.write_json(receipt_path, {
         'checks': checks,
         'status': status, 'project_provenance': project.provenance(manifest),

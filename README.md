@@ -12,11 +12,11 @@ Other releases are not currently supported.
 
 ## Progress
 
-**10855 exact matching functions in 10771 modules**, replacing **1,115,854 bytes** of the
-4,162,912-byte decoded executable (**26.8047% code-range coverage**). Function ranges
+**10861 exact matching functions in 10775 modules**, replacing **1,116,022 bytes** of the
+4,162,912-byte decoded executable (**26.8087% code-range coverage**). Function ranges
 include their literals and padding. **247,400 bytes of typed static data** (virtual
 tables and strings, 22.4882% of the estimated static-data extent) are rebuilt from
-source as well, for **32.7476% image coverage**. **2,799,658 bytes still come from
+source as well, for **32.7516% image coverage**. **2,799,490 bytes still come from
 the original reference**. See [typed static data](docs/DATA.md).
 
 This is an early hybrid reconstruction. It cannot yet build from source alone.
@@ -52,6 +52,12 @@ Modules requiring the compiler's explicit relocation addends declare
 `"linker": "codewarrior"` to use the already-pinned native linker; GNU remains
 the default. Complete code/literal bytes must survive metadata stripping unchanged.
 
+SDK and library code built with Hitachi SHC is admitted as **pool-group units**
+that declare `"compiler": "shc-v5.1r13"`: one fixed flag set
+(`-cpu=sh4 -endian=little -fpu=single -optimize=1 -macsave=0`), the pinned Hitachi
+linker, code section only, exact over the complete group including its shared
+literal pool. See [SHC.md](docs/SHC.md).
+
 Checks that need no game dump or compiler:
 
 ```sh
@@ -72,6 +78,7 @@ verified locally; CI does not claim to rebuild the game.
 | `src/include` | Provisional types with checked offsets |
 | `src/samples` | Five-function compiler proof |
 | `src/data` | Typed static-data modules (virtual tables, strings); see `config/data.json` |
+| `src/sdk` | Hitachi SHC pool-group units (SDK and library code); see [SHC.md](docs/SHC.md) |
 | `src/provisional` | Unmatched candidates, excluded from progress |
 | `config` | Reference hashes, matching manifest, dependency addresses and queue |
 | `tools` | Extraction, compilation, exact comparison and analysis utilities |

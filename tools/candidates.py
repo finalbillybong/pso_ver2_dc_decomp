@@ -31,7 +31,7 @@ def main():
             if hashlib.sha256(expected).hexdigest() != unit['reference_sha256']:
                 raise ValueError('Candidate reference range changed: ' + unit['id'])
             binary = out / (unit['id'] + '.bin')
-            receipt = matching.compile_unit(root / unit['source'], binary, unit)
+            receipt = project.shc_units.compile_unit(root / unit['source'], binary, unit)
             actual = binary.read_bytes()
             result = {'id': unit['id'], 'comparison': pso.compare_bytes(expected, actual),
                       'expected_size': len(expected), 'actual_size': len(actual),

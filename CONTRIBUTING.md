@@ -17,6 +17,11 @@ Before proposing a source hypothesis, consult the symptom index in the
 6. Refresh public progress with `python3 -B tools/progress.py --record`, then run
    `python3 -B tools/progress.py --check` and `python3 -B tools/check_publication.py`.
 
+SDK and library code compiled with Hitachi SHC is admitted per pool group (all
+functions sharing one literal pool, plus the pool) under the single SHC setting in
+[SHC.md](docs/SHC.md). Name the compiler in the manifest; never add flags, pragmas
+or assembly. Leave CodeWarrior-shaped code to the CodeWarrior pipeline.
+
 Static data counts only as typed source under the rules in
 [DATA.md](docs/DATA.md): virtual tables as arrays of named function pointers and
 strings as C string literals, each module exact over its complete range. Raw byte

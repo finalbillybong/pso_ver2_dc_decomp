@@ -5,14 +5,15 @@
     "two_fresh_exact_builds",
     "integrated_image_exact",
     "five_function_compiler_proof",
-    "typed_data_modules_exact"
+    "typed_data_modules_exact",
+    "shc_pool_groups_exact"
   ],
   "inputs_sha256": {
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/data.json": "5f40c478c45ef88826b21848ae9126d2f5c24490f5740f098f681139fe766137",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "d49fc2f6034c0ce01e84f4f2412c30f7b4d34b727b67cfb3a3f32ac264a27f9a",
+    "config/project.json": "bbec3c8da4af7a72146c10d318e716a184a6169a622a722bc10ee37b1da6846d",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/data/strings_8c284858.c": "cb16255c8ce183afbcb89c956a8f571e4ce6ef906acf5d31baea03f9d8066228",
@@ -12176,6 +12177,10 @@
     "src/samples/init_bytes.c": "fad10d35a4c4b916c9928bc920492a1cf880496fff9994480ec603fcc0d6037b",
     "src/samples/mask_any.c": "7623e7d4ba491002de5f0fcaa39eae8f29046a2a2f1d83f83b60e612115391a7",
     "src/samples/query_flag.c": "7dc4c08be49e57585f1d505fc55971c8deee5d84e71b3c6fec785189de6fd601",
+    "src/sdk/shc_bit_index_8c37e9c8.c": "a13945d658cea33969f2ae4a82450b4c1f43447838b6a3575882858996688eb3",
+    "src/sdk/shc_record_set_8c37e9a8.c": "3c063b2891c2998057adbf76e10fb4a30a357630c64b13fcefcf88813da3257e",
+    "src/sdk/shc_short_or_offset_8c1f33a0.c": "356a90493e4e94dcc7961f78ad96a5ad1897dbf76745582349814393e6cffcb5",
+    "src/sdk/shc_work_value_8c370860.c": "803611ae6cbc13fef4f8227e425d889a7de1aae5617fc064fa80de3cd26d8b58",
     "src/system/read_time_fields.c": "989c82736f536f440e67098e13681eadbcd5386ba38107e9a0e3421a4dc7aecf",
     "src/ui/adjust_hex_field.c": "e57b41c6aeaa8fc7ad80644140feb0bde0fa42772ac24f12d6c675cbf5481cff",
     "src/ui/adjust_integer_field.c": "334dc49d9be67a92592762127402f2020fe4a28aa900eaa22291985047e39828",
@@ -12206,8 +12211,10 @@
     "src/ui/text_buffer.c": "eaaef84bfc17a69c251e5b002df4092d6a49507a6c90cfcb2d9c1a0916f4f59a",
     "tools/data.py": "136c727f2bfd6b83981660c72b6ea304f1e0359becc3bac80ef55731e461c9d0",
     "tools/matching.py": "3ad868e806418a009424dba71945de386c93b93fd781791f0e269566a2f629c1",
-    "tools/project.py": "5170884a9d826d5a9523c76ca7d210874c49f9a3376ea80c78b531591f3e8ce2",
-    "tools/verify_source.py": "46e4a2ca9bc79042f563fd75834cfb4c38244ef6a0c699e83d404b1efc429eab"
+    "tools/project.py": "eb277d38bad2322abf7c1e4f76211f4684646086fd1a85daba3254f9f5f3613c",
+    "tools/shc.py": "1e4a7370691a937692e67f48f084265e01ef3504db4c73257224de52668ae847",
+    "tools/shc_units.py": "5cb779d05df10d92e22dc7ab57cc9a6728fd7c99fc292aa05d46f6d18ab52c62",
+    "tools/verify_source.py": "8f2a9ec948a41b6962e41822c7a2be9ae057e80570542bc0e913c0ba6795d32c"
   },
   "compiler": "CodeWarrior Dreamcast 2.4 Engineering Build, Mar 21 2000",
   "flags": [
@@ -107215,6 +107222,13 @@
       "off",
       "-O2"
     ],
+    "shc_short_or_offset_8c1f33a0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "operation_8c1f421c": [
       "-proc",
       "SH4",
@@ -132526,11 +132540,32 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "shc_work_value_8c370860": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_record_set_8c37e9a8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_bit_index_8c37e9c8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
     ]
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 2799658,
+  "source_only_rejected_retained_bytes": 2799490,
   "typed_data_modules": 1270,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

@@ -168,7 +168,8 @@ class History:
                         predicted_change=spec.get('predicted_change'), receipt_sha256=sha)
                     compiler = path.parent / 'candidate.compiler.json'
                     binary = path.parent / 'candidate.bin'
-                    if compiler.exists() and binary.exists() and 'code' in spec:
+                    if (compiler.exists() and binary.exists() and 'code' in spec
+                            and not project.shc_units.is_shc(unit)):
                         receipt = read(compiler)
                         if profile is None:
                             profile = compiler_profile()
@@ -324,7 +325,11 @@ class History:
         self.save()
 
 
-def compiler_profile():
+def compiler_profile(unit=None):
+    """CodeWarrior profile exactly as before (history fingerprints unchanged); SHC units
+    get their own profile from tools/shc_units.py."""
+    if unit is not None and project.shc_units.is_shc(unit):
+        return project.shc_units.profile()
     tools = project.matching.load_tools()  # Validate actual pinned executable hashes even on reuse.
     return dict(tools={role: project.matching.sha(path) for role, path in tools.items()},
         installed_sha256=project.matching.sha(project.ROOT / 'config/matching-installed.json'),
@@ -333,9 +338,9 @@ def compiler_profile():
 
 def compiler_inputs(spec):
     unit = spec['unit']
-    return dict(compiler_profile(), source_sha256=digest(spec['code'].encode()),
+    return dict(compiler_profile(unit), source_sha256=digest(spec['code'].encode()),
         headers_sha256={name: project.matching.sha(project.ROOT / name) for name in unit.get('headers', [])},
-        flags=project.matching.unit_flags(unit), linker=project.matching.unit_linker(unit),
+        flags=project.shc_units.unit_flags(unit), linker=project.shc_units.unit_linker(unit),
         address=hex(int(unit['address'], 0)), entry=unit['entry'], symbols=unit.get('symbols', {}),
         ranges=unit['ranges'], reference_sha256=unit['reference_sha256'])
 
@@ -723,7 +728,7 @@ def trial(spec, folder, reference, history=None, kind=None):
     start = time.monotonic()
     try:
         binary = folder / 'candidate.bin'
-        project.matching.compile_unit(source, binary, unit)
+        project.shc_units.compile_unit(source, binary, unit)
         result['compiler_seconds'] = time.monotonic() - start
         result.update(compare(expected, binary.read_bytes(), int(unit['address'], 0)))
         result['compiler_receipt_sha256'] = project.matching.sha(binary.with_suffix('.compiler.json'))

@@ -2,17 +2,18 @@
 
 | Measure | Value |
 | --- | ---: |
-| Exact matching functions | 10855 |
-| Matching modules | 10771 |
-| Compiled complete ranges | 1,115,854 bytes |
-| Code-range coverage of the image | 26.8047% |
+| Exact matching functions | 10861 |
+| Matching modules | 10775 |
+| Compiled complete ranges | 1,116,022 bytes |
+| Code-range coverage of the image | 26.8087% |
+| of which Hitachi SHC pool groups | 168 bytes in 4 modules / 6 functions |
 | Typed static data | 247,400 bytes in 7959 objects / 1270 modules |
 | Typed data by kind | string 121,424, vtable 125,976 bytes |
 | Static-data extent | 1,100,132 bytes (estimate) |
 | Typed data share of the static-data extent | 22.4882% |
 | Decoded executable | 4,162,912 bytes |
-| Image coverage (code ranges + typed data) | 32.7476% |
-| Retained reference dependence | 2,799,658 bytes |
+| Image coverage (code ranges + typed data) | 32.7516% |
+| Retained reference dependence | 2,799,490 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
 | Source-only build | Unavailable |
@@ -24,7 +25,7 @@ arrays of named function pointers and strings written as C string literals; raw
 byte arrays, opaque or high-entropy data and pointers written as integers earn no
 credit. The static-data extent is an analysis estimate of the bytes outside code,
 not a recovered section size. The integrated hybrid image matches the reference,
-but still requires 2,799,658 original bytes.
+but still requires 2,799,490 original bytes.
 
 Exact-build verification recorded: **2026-10-30**. Two fresh
 project builds, exact integrated-image comparison, exact typed-data modules and the

@@ -1,9 +1,9 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **10855 exact functions in 10771 modules**, replacing
-**1,115,854 bytes** of the 4,162,912-byte decoded executable (**26.8047% code-range coverage**).
-Typed static data adds 247,400 bytes ([DATA.md](DATA.md)), for **32.7476% image coverage**.
-It retains **2,799,658 reference bytes**. This is a hybrid build; code-only completion and total function count are
+The current public checkpoint has **10861 exact functions in 10775 modules**, replacing
+**1,116,022 bytes** of the 4,162,912-byte decoded executable (**26.8087% code-range coverage**).
+Typed static data adds 247,400 bytes ([DATA.md](DATA.md)), for **32.7516% image coverage**.
+It retains **2,799,490 reference bytes**. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
 
@@ -28,6 +28,14 @@ Other private scratch blockers include effect update 536/25, effect advance
 800/46, shared-base initialization 200 versus 196 expected with 170 differences,
 and a position setter producing 30 versus 32 bytes. Missing alignment gets no
 credit. Check every proposed range against existing modules before integration.
+
+## Second compiler (pilot)
+
+SDK and library code compiled with Hitachi SHC can now be admitted as pool-group
+units ([SHC.md](SHC.md)). Four pilot groups (168 bytes, 6 functions) are in.
+Candidate groups: the `0x8c1f0000`–`0x8c205000` library block (about 61 KB
+SHC-shaped) and the SDK region from `0x8c340888`; a unit needs every function that
+shares its literal pool.
 
 ## Latest integration batch: 269: expanded candidate pool, part 73
 

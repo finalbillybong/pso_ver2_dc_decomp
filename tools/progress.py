@@ -9,7 +9,8 @@ import sys
 
 import project
 import data as static_data
-from matching import FLAGS, dependencies, sha, unit_flags
+from matching import FLAGS, dependencies, sha
+from shc_units import SHC_COMPILER, is_shc, unit_flags
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -23,6 +24,8 @@ def inputs(root, manifest):
              'config/matching-packages.json', 'config/compiler-packages.json',
              'tools/matching.py', 'tools/project.py', 'tools/verify_source.py', 'pso.py'}
     data = static_data.read(root)
+    if any(is_shc(u) for u in manifest['units']):
+        names.update({'tools/shc_units.py', 'tools/shc.py'})
     if data['units']:
         names.update({static_data.MANIFEST, 'tools/data.py'})
         names.update(unit['source'] for unit in data['units'])
@@ -48,6 +51,9 @@ def summary(root=ROOT):
     required = {'two_fresh_exact_builds', 'integrated_image_exact', 'five_function_compiler_proof'}
     if data['units']:
         required.add('typed_data_modules_exact')
+    shc = [u for u in manifest['units'] if is_shc(u)]
+    if shc:
+        required.add('shc_pool_groups_exact')
     if not required <= set(proof['checks']):
         raise ValueError('Incomplete exact-build verification')
     spans = project.layout(manifest, decoded['size'], data)
@@ -79,6 +85,9 @@ def summary(root=ROOT):
     return {'schema_version': 1, 'version': 'pal', 'status': 'hybrid_reconstruction',
             'verification_date': proof['verification_date'], 'matching_functions': functions,
             'matching_modules': len(manifest['units']), 'compiled_range_bytes': matched,
+            **({'compiled_range_bytes_by_compiler': {'codewarrior': matched - sum(u['ranges'][0]['size'] for u in shc),
+                                                     SHC_COMPILER: sum(u['ranges'][0]['size'] for u in shc)},
+                'shc_modules': len(shc), 'shc_functions': sum(len(u['functions']) for u in shc)} if shc else {}),
             'decoded_image_bytes': decoded['size'], 'retained_reference_bytes': retained,
             'code_range_coverage_percent': round(100 * matched / decoded['size'], 8),
             'standalone_reconstructed_data_bytes': typed,
@@ -104,6 +113,11 @@ def render(report):
     code_pct = f"{report['code_range_coverage_percent']:.4f}%"
     data_pct = f"{report['typed_data_percent_of_data_extent']:.4f}%"
     kinds = report['typed_data_bytes_by_kind']
+    shc_row = ''
+    if report.get('shc_modules'):
+        shc_bytes = report['compiled_range_bytes_by_compiler'][SHC_COMPILER]
+        shc_row = (f"| of which Hitachi SHC pool groups | {shc_bytes:,} bytes in {report['shc_modules']} modules"
+                   f" / {report['shc_functions']} functions |\n")
     extent_text = f'{extent:,} bytes (estimate)' if extent else 'Not recorded'
     md = f'''# Verified reconstruction progress
 
@@ -113,7 +127,7 @@ def render(report):
 | Matching modules | {report['matching_modules']} |
 | Compiled complete ranges | {n:,} bytes |
 | Code-range coverage of the image | {code_pct} |
-| Typed static data | {typed:,} bytes in {report['typed_data_objects']} objects / {report['typed_data_modules']} modules |
+{shc_row}| Typed static data | {typed:,} bytes in {report['typed_data_objects']} objects / {report['typed_data_modules']} modules |
 | Typed data by kind | {', '.join(f'{k} {v:,}' for k, v in kinds.items())} bytes |
 | Static-data extent | {extent_text} |
 | Typed data share of the static-data extent | {data_pct} |

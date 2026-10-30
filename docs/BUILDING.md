@@ -70,6 +70,12 @@ Build, March 21, 2000, with:
 -proc SH4 -endian little -mw_fp hardware -Cpp_exceptions off -O2
 ```
 
+The compiler installer (`tools/setup_compilers.py`) also installs the pinned
+Hitachi SHC releases and writes `config/installed-compilers.json`. SDK and
+library pool-group units that declare `"compiler": "shc-v5.1r13"` are built with
+that release and one fixed flag set; see [SHC.md](SHC.md). A checkout without SHC
+units never needs it.
+
 ## Exact builds
 
 ```sh

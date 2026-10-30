@@ -224882,6 +224882,30 @@
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
+      "id": "shc_short_or_offset_8c1f33a0",
+      "source": "src/sdk/shc_short_or_offset_8c1f33a0.c",
+      "address": "0x8c1f33a0",
+      "entry": "_short_or_offset_8c1f33a0",
+      "compiler": "shc-v5.1r13",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1979296,
+          "size": 22
+        }
+      ],
+      "functions": [
+        {
+          "name": "short_or_offset_8c1f33a0",
+          "address": "0x8c1f33a0",
+          "size": 22
+        }
+      ],
+      "reference_sha256": "a360dc66ba67db088bef9b434239a91cdf07209aebf69a540c22161f2b78d016",
+      "headers": [],
+      "boundary_review": "SHC pool group: one leaf function ending at its rts delay slot (0x8c1f33b2) followed by its one-word pool (1000); the two zero bytes at 0x8c1f33b6 are alignment before the next four-byte-aligned source file and stay reference-backed. Byte-exact over the full range."
+    },
+    {
       "id": "operation_8c1f421c",
       "source": "src/objects/operation_8c1f421c.c",
       "address": "0x8c1f421c",
@@ -285213,6 +285237,90 @@
       ],
       "reference_sha256": "b26070e9dcfed69cf67f2335af6f5ac1375173a834a1d2838fd3abeb3952ec20",
       "boundary_review": "Previously screened identical full instruction/delay/pool layout with independently cataloged or reviewed adjacent entry. Existing exact construct_random_state signature and checked RandomState definition."
+    },
+    {
+      "id": "shc_work_value_8c370860",
+      "source": "src/sdk/shc_work_value_8c370860.c",
+      "address": "0x8c370860",
+      "entry": "_set_work_value_8c370860",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_g_work_area_8c562834": "0x8c562834"
+      },
+      "ranges": [
+        {
+          "offset": 3541088,
+          "size": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_work_value_8c370860",
+          "address": "0x8c370860",
+          "size": 10
+        },
+        {
+          "name": "get_work_value_8c37086a",
+          "address": "0x8c37086a",
+          "size": 18
+        }
+      ],
+      "reference_sha256": "694233cb946bcd9a1b5d020dbda735338252adffc7323a607112124881854b74",
+      "headers": [],
+      "boundary_review": "SHC pool group: two functions (rts delay slots at 0x8c370868 and 0x8c370872) followed by their literal pool (0x0fbc word, 2-byte pad, pointer); preceded by the previous group's pool and followed by the next function. Byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_record_set_8c37e9a8",
+      "source": "src/sdk/shc_record_set_8c37e9a8.c",
+      "address": "0x8c37e9a8",
+      "entry": "_set_record_8c37e9a8",
+      "compiler": "shc-v5.1r13",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 3598760,
+          "size": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_record_8c37e9a8",
+          "address": "0x8c37e9a8",
+          "size": 14
+        },
+        {
+          "name": "set_record_8c37e9b6",
+          "address": "0x8c37e9b6",
+          "size": 18
+        }
+      ],
+      "reference_sha256": "e3fefc5761efb148a04a0f2cbd979e1baeda37789f666728b4a799cda310344a",
+      "headers": [],
+      "boundary_review": "SHC pool group: two leaf functions (rts delay slots at 0x8c37e9b2 and 0x8c37e9c0) followed by a 2-byte pad and their one-word pool; preceded by the previous group's pool. Byte-exact over the full range."
+    },
+    {
+      "id": "shc_bit_index_8c37e9c8",
+      "source": "src/sdk/shc_bit_index_8c37e9c8.c",
+      "address": "0x8c37e9c8",
+      "entry": "_bit_index_8c37e9c8",
+      "compiler": "shc-v5.1r13",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 3598792,
+          "size": 86
+        }
+      ],
+      "functions": [
+        {
+          "name": "bit_index_8c37e9c8",
+          "address": "0x8c37e9c8",
+          "size": 86
+        }
+      ],
+      "reference_sha256": "49f0414b512a38379e6a2d6ae04eee8797b286feeff024d42360b7f496a289ff",
+      "headers": [],
+      "boundary_review": "SHC pool group: one function ending at its rts delay slot (0x8c37ea14) followed by its pool of four words; the next function starts at 0x8c37ea1e in the same source file. Starts after the previous group's pool at a four-byte boundary. Byte-exact over the full range."
     }
   ]
 }
