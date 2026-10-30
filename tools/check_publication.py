@@ -6,7 +6,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-CONFIG = {'analysis.json', 'assets.json', 'compiler-packages.json', 'data.json', 'decoded.json',
+CONFIG = {'analysis.json', 'asm.json', 'assets.json', 'compiler-packages.json', 'data.json', 'decoded.json',
           'local.example.json', 'matching-packages.json', 'progress-proof.json',
           'project.json', 'reconstruction-targets.json', 'reference.json',
           'samples.json', 'toolchain.example.json'}
@@ -40,6 +40,9 @@ def issues(name, blob, mode='100644'):
     errors = []
     if not allowed(name):
         errors.append('path is outside the public source allowlist')
+    if name.endswith('.s') or name.endswith('.S') or name.endswith('.asm'):
+        # No disassembly is ever committed; assembly is generated locally from your dump.
+        errors.append('assembly source may not be committed (generated from your dump at build time)')
     if mode not in {'100644', '100755'}:
         errors.append('symlink or non-file entry')
     try:
@@ -56,6 +59,12 @@ def issues(name, blob, mode='100644'):
         # Asset bytes come from each user's own dump; the manifest may only describe them.
         if re.search(r'"[^"]{401,}"', text) or re.search(r'[0-9A-Za-z+/=]{200,}', text):
             errors.append('asset manifest holds a long value (possible embedded payload)')
+    if name == 'config/asm.json':
+        # Only ranges and short bindings: never instruction text or long data runs.
+        # Evidence entries are single short instructions; any multi-line or tab-separated
+        # instruction text, or a very long value, would be embedded disassembly.
+        if re.search(r'"[^"]{401,}"', text) or re.search(r'"[^"]*(?:\\n|\\t)[^"]*"', text):
+            errors.append('assembly manifest holds a long or multi-line value (possible embedded disassembly)')
     return errors
 
 

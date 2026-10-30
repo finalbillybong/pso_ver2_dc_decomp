@@ -7,9 +7,12 @@
     "five_function_compiler_proof",
     "typed_data_modules_exact",
     "dump_assets_hash_verified",
-    "shc_pool_groups_exact"
+    "shc_pool_groups_exact",
+    "hand_assembly_units_exact",
+    "fallback_assembly_units_exact"
   ],
   "inputs_sha256": {
+    "config/asm.json": "30894cbfedbc5d3baeba419129c5db7241a736481e7249650e209ee8bfe9903d",
     "config/assets.json": "2910dc0f953037df2aac73b4f0ecdef61813693d629ca8ed6959c547f7cb1220",
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
     "config/data.json": "377c8c303c35501d6ad6f8a5b0928aa7f31cc61ce437f25724a7ce6cd6a4cd9c",
@@ -14306,13 +14309,15 @@
     "src/ui/operation_1960fc.c": "8934db1a6de986d7936ceebe5b95cc82a79861cac1bedcf652ea963fb330dbea",
     "src/ui/operation_196274.c": "0f9218dfe5c04e5d08bea2dde363f32dc2050601fe50f9638dac8853273592d1",
     "src/ui/text_buffer.c": "eaaef84bfc17a69c251e5b002df4092d6a49507a6c90cfcb2d9c1a0916f4f59a",
+    "tools/asm_units.py": "8c6b5624d1b92c4afee9fda329520191b807bcbbd6eb1e02dc73d4b49e4721bf",
+    "tools/asmgen.py": "38595de3454346c02aac4e0221e3a9158c4aaa43b99694c3cabd651aed46f6e1",
     "tools/assets.py": "08840f370ea0ee52d2113ccc7ae4ce6345b4efe254790fe463428269e803610a",
     "tools/data.py": "c344f8578dbc9e98a7f4d4f60a2f6b6451b6f4cafbbd6d780a97e0d88f3d0161",
     "tools/matching.py": "3ad868e806418a009424dba71945de386c93b93fd781791f0e269566a2f629c1",
-    "tools/project.py": "312e484074006327c609ace47258efeb0d65f55b020c7480bad35126afb3c5cf",
+    "tools/project.py": "1640daebbaa37257d3a1f2b04abc6ac820c0a516b40bd36dd38e35f151d2e6a0",
     "tools/shc.py": "1e4a7370691a937692e67f48f084265e01ef3504db4c73257224de52668ae847",
     "tools/shc_units.py": "5cb779d05df10d92e22dc7ab57cc9a6728fd7c99fc292aa05d46f6d18ab52c62",
-    "tools/verify_source.py": "82dee226ef59fc0cf227c618d6c152fe381b4f15fd78de90fff6cb5605eb2457"
+    "tools/verify_source.py": "58d7183c6e837163c26c5964892b81ca59d12e74596ca9ffafb8f2f72ae1f445"
   },
   "compiler": "CodeWarrior Dreamcast 2.4 Engineering Build, Mar 21 2000",
   "flags": [
@@ -134663,7 +134668,7 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 2173153,
+  "source_only_rejected_retained_bytes": 642011,
   "typed_data_modules": 3365,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

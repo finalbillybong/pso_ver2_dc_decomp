@@ -147,3 +147,19 @@ reference, including all tables, literals and padding. See reconstruction stage
 executable, by range and SHA-256 only. Every build extracts them from your own
 verified dump into the scratch directory and checks their hashes. They are never
 committed and are not counted as reconstructed. See [DATA.md](DATA.md#assets).
+
+## Assembly units
+
+`config/asm.json` lists hand-written routines and the not-decompiled fallback for
+unmatched code, by range, class and SHA-256 only. No assembly text is committed:
+every build regenerates the assembler sources from your own dump with
+`tools/asmgen.py`, into the scratch directory, then lints, assembles, links and
+compares them. They are not decompiled code and have their own figures. See
+[ASM.md](ASM.md). Record the pinned GNU assembler once (it is built beside the
+linker by `tools/setup_matching.py`):
+
+```sh
+python3 -B tools/asm_units.py setup --assembler <scratch>/binutils-build/gas/as-new
+```
+
+A checkout without assembly units never needs it.

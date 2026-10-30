@@ -835,7 +835,9 @@ def verify(checkout, output):
     compiled = sum(r['size'] for u in manifest['units'] for r in u['ranges'])
     typed = sum(r['size'] for u in project.static_data.read(checkout)['units'] for r in u['ranges'])
     assets = project.dump_assets.total(project.dump_assets.read(checkout))
-    retained = total - compiled - typed - assets
+    # Assembly (generated from the dump, re-cut around admitted C) is source-provided too.
+    assembled = sum(sp['size'] for sp in project.asm_units.placed_spans(checkout))
+    retained = total - compiled - typed - assets - assembled
     if result.returncode == 0 or f'{retained:,} bytes' not in result.stdout + result.stderr or before != artifacts():
         raise ValueError('Source-only rejection/artifact guard failed')
     test_log = next(output / f'check-{i}.log' for i, args in enumerate(commands) if 'unittest' in args)
@@ -936,7 +938,8 @@ def report_batch(baseline, findings, verification, name):
     added = sum(r['size'] for u in new for r in u['ranges'])
     typed = sum(r['size'] for u in project.static_data.read(root)['units'] for r in u['ranges'])
     typed_and_assets = typed + project.dump_assets.total(project.dump_assets.read(root))
-    lead = f'{count} exact functions in {len(current)} modules; {size:,} compiled function-range bytes; {typed:,} typed static-data bytes; {total-size-typed_and_assets:,} retained reference bytes. Code-range coverage {size/total*100:.4f}%, image coverage {(size+typed)/total*100:.4f}%; neither is code completion.'
+    assembled = sum(sp['size'] for sp in project.asm_units.placed_spans(root))
+    lead = f'{count} exact functions in {len(current)} modules; {size:,} compiled function-range bytes; {typed:,} typed static-data bytes; {total-size-typed_and_assets-assembled:,} retained reference bytes. Code-range coverage {size/total*100:.4f}%, image coverage {(size+typed)/total*100:.4f}%; neither is code completion.'
     new_functions = sum(len(u['functions']) for u in new)
     text = f'# Reconstruction batch: {name}\n\n{new_functions} new matching functions / {added:,} bytes. All {sum(len(u["functions"]) for u in old.values())} prior functions preserved.\n\n{lead}\n\n'
     text += '| Function | Address | Complete bytes |\n| --- | --- | ---: |\n'
@@ -960,6 +963,11 @@ def report_batch(baseline, findings, verification, name):
             latest = f'## Latest integration batch: {name}\n\n{new_functions} new functions / {added:,} bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.\n\n'
             content = re.sub(r'(?s)## Latest integration batch:.*?(?=## Autonomous iteration)', latest, content)
             content = content.replace('After ten unsuccessful distinct hypotheses on a target, or sooner when evidence\nruns out,', 'After two or three unsuccessful distinct hypotheses, park unless concrete new\nevidence justifies more; never exceed ten cumulative hypotheses. Then')
+        if assembled:
+            # With generated assembly the retained figure also excludes assembled bytes.
+            kept = total - size - typed_and_assets - assembled
+            content = re.sub(r'\*\*[\d,]+ bytes still come from', f'**{kept:,} bytes still come from', content)
+            content = re.sub(r'retains \*\*[\d,]+ reference bytes', f'retains **{kept:,} reference bytes', content)
         path.write_text(content)
     print(lead)
 

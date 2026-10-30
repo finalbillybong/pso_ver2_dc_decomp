@@ -14,7 +14,10 @@
 | Decoded executable | 4,162,912 bytes |
 | Image coverage (code ranges + typed data) | 38.6646% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
-| Retained reference dependence | 2,173,153 bytes |
+| Assembly (hand-written), not decompiled | 32,644 bytes in 109 units (1.0658% of the code extent) |
+| Fallback assembly for unmatched code, **not decompiled** | 1,498,498 bytes in 10909 units (48.9261% of the code extent) |
+| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,520,901 bytes (84.5778% of the image) |
+| Retained reference dependence | 642,011 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
 | Source-only build | Unavailable |
@@ -29,7 +32,14 @@ as integers earn no credit. The static-data extent is an analysis estimate of th
 not a recovered section size. Embedded assets (see DATA.md) are extracted from
 your own dump at build time and are counted separately; they earn no coverage
 credit. The integrated hybrid image matches the reference, but still requires
-2,173,153 original bytes besides the assets.
+642,011 original bytes besides the assets.
+
+**Assembly is not decompiled code, and no assembly is committed.** Hand-written
+assembly covers routines with an instruction that neither CodeWarrior nor the pinned
+SHC emits. Fallback assembly is generated mechanically from your own dump, at build
+time, for code that has no matching C yet, only so that more of the image builds from
+source; it is replaced by C as matches land and is excluded from the code-range,
+matching and image-coverage figures. See ASM.md.
 
 Exact-build verification recorded: **2026-10-30**. Two fresh
 project builds, exact integrated-image comparison, exact typed-data modules and the

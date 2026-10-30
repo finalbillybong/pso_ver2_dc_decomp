@@ -51,6 +51,14 @@ def main():
         # project.build compiled each SHC pool group with the pinned Hitachi tools,
         # required code section P only, and compared its complete range.
         checks.append('shc_pool_groups_exact')
+    asm = project.asm_units.read(root)
+    if project.asm_units.units_of(asm, 'hand'):
+        # project.build generated each hand-written routine from the dump, linted,
+        # assembled, linked and compared it.
+        checks.append('hand_assembly_units_exact')
+    if project.asm_units.units_of(asm, 'fallback'):
+        # The same chain for the generated not-decompiled fallback assembly.
+        checks.append('fallback_assembly_units_exact')
     pso.write_json(receipt_path, {
         'checks': checks,
         'status': status, 'project_provenance': project.provenance(manifest),

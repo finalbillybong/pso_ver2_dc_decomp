@@ -16,9 +16,14 @@ Other releases are not currently supported.
 4,162,912-byte decoded executable (**26.8087% code-range coverage**). Function ranges
 include their literals and padding. **493,552 bytes of typed static data** (virtual
 tables, strings and typed tables, 44.8630% of the estimated static-data extent) are rebuilt from
-source as well, for **38.6646% image coverage**. **2,173,153 bytes still come from
+source as well, for **38.6646% image coverage**. **642,011 bytes still come from
 the original reference**, and 380,185 bytes of embedded assets are extracted
 from your own dump at build time (not counted as reconstructed). See [typed static data](docs/DATA.md).
+
+**Assembly is not decompiled code and is never committed** ([ASM.md](docs/ASM.md)): 109 hand-written SH-4
+routines (32,644 bytes) and 10,909 not-decompiled fallback units (1,498,498 bytes) are
+generated locally from your own dump at build time. With them 84.5778% of the image
+builds from source; the rest is untyped static data.
 
 This is an early hybrid reconstruction. It cannot yet build from source alone.
 The code-only completion percentage and total function count are not established.
