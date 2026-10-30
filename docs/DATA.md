@@ -13,12 +13,12 @@ Only typed source counts:
 | `vtable` | `VirtualFunction const vt_<addr>[N] = { 0, 0, name, ... };` | Header words are the CodeWarrior type-information pointer and this-adjustment (both zero in this build). Every other entry is `0` or a declared function. |
 | `string` | `const char str_<addr>[N] = "...";` | Only C string literals, one object per string. CodeWarrior gives char arrays byte alignment and a section each, so back-to-back strings are separate objects; the terminator and any zero padding come from the array size. |
 | `function_table` | `Function const d_<addr>[N] = { name, 0, ... };` | Entries are `0` or declared functions. |
-| `pointer_table` | `const void *const d_<addr>[N] = { str_..., (void *)name, d_..., 0 };` | Entries are `0`, a declared function cast to `void *`, or a declared data object (`vt_`, `str_` or `d_`) at its start. |
+| `pointer_table` | `const void *const d_<addr>[N] = { str_..., (void *)name, d_..., 0 };` | Entries are `0`, a declared function cast to `void *`, a declared data object (`vt_`, `str_` or `d_`) at its start, or an external `g_<addr>` (see below). |
 | `float_table` | `const float d_<addr>[N] = { 1.5f, -0.0f, ... };` | Decimal literals with enough digits to round-trip to the exact bits. NaN, infinity and denormals are not accepted. |
 | `int_table` | `const int` or `const unsigned int d_<addr>[N]` | Integer literals within the element type's range. |
 | `int16_table` | `const short` or `const unsigned short d_<addr>[N]` | As above. |
 | `byte_table` | `const unsigned char` or `const signed char d_<addr>[N]` | Small-integer tables only (see below). |
-| `record_table` | `const Record_<addr> d_<addr>[N] = { { ... }, ... };` with `typedef struct { const void *f0; float f1; int f2; ... } Record_<addr>;` | Fields are `const void *`, `float`, `int` or `unsigned int`; every record has every field; pointer fields follow the pointer-table rule. |
+| `record_table` | `const Record_<addr> d_<addr>[N] = { { ... }, ... };` with `typedef struct { const void *f0; float f1; int f2; ... } Record_<addr>;` | Fields are `const void *`, `float`, `int`, `unsigned int`, `short` or `unsigned short`, laid out without padding; every record has every field; pointer fields follow the pointer-table rule. |
 
 **No integer or float word may equal a known symbol address.** That covers admitted
 functions, data objects and every bound symbol; such a word must be written as a
@@ -69,9 +69,14 @@ Tables come from the static-data map's pointer, function-pointer, float, integer
 halfword, byte and record pieces. The generator kept a piece only when all of
 these hold:
 
-* **Pointers:** every nonzero word is a pointer to an admitted function, to a code
-  entry point with evidence (named `fn_<addr>` as for virtual tables), or to the
-  start of a data object that is itself typed source.
+* **Pointers:** every nonzero word is a pointer to one of:
+  * an admitted function;
+  * a code entry point with evidence, named `fn_<addr>` as for virtual tables;
+  * the start of a data object that is itself typed source;
+  * an external `g_<addr>` (see below).
+
+  A pointer into the middle of an emitted object, or into code that is not an
+  entry point, is rejected.
 * **Floats:** every word is zero or a normal float.
 * **Integers:** no word is in the pointer range `8c000000`–`8d000000` or equals a
   known symbol address. Integer tables hold no float-like words; halfword tables
@@ -79,18 +84,39 @@ these hold:
 * **Byte tables:** at least 4 bytes, every byte at most `0x7f`, no run of three
   letters, entropy of at most 3 bits per byte, and no float- or pointer-like aligned
   word.
-* **Records:** use the map's stride with whole records only. Each field column is
-  consistently pointers, normal floats or integers (zero is allowed in any of them).
-  A single record without a pointer field and with only one field type is
-  rejected.
+* **Records:** use the map's stride when it is consistent, otherwise the smallest
+  consistent stride from 4 to 64 bytes with at least two records.
+  * Each 4-byte column is consistently pointers, normal floats or integers (zero is
+    allowed in any of them).
+  * An integer column whose two halves are both small values becomes two `short`
+    or `unsigned short` fields.
+  * Halfword tables that hold floats are typed this way as structs.
+  * A partial trailing record is cut off and left reference-backed.
+  * A uniform column set that is not at the map's stride is a plain table, not a
+    struct.
 * **Placement:** nothing inside the game code region (likely literal pools of
   unlisted functions), nothing overlapping an unmatched candidate code range, and
   a module starts at an address aligned to its largest object alignment.
 
 Rejected pieces stay reference-backed with a recorded reason. The main reasons are
-partial trailing records, bytes above `0x7f`, pointers to targets that are not named
-objects, columns mixing floats and integers, embedded text, and NaN/infinity or
-denormal floats.
+bytes above `0x7f` (excluded by decision), columns mixing floats and integers or
+pointers and integers, embedded text, NaN/infinity or denormal floats, and partial
+trailing records.
+
+### External pointer targets (`g_<addr>`)
+
+A pointer whose target is still reference-backed data, or RAM outside the image
+(bss), is written as `extern const char g_<addr>[];`. The name is bound to `<addr>`,
+the same convention code modules use for data. `tools/data.py`
+(`check_external_symbols`, also run by `progress.py --check`) requires:
+
+* every `g_<addr>` and `fn_<addr>` name to be bound to its own address;
+* a data object's name to be bound to that object's address in every module;
+* a `g_` target to lie outside every emitted data object, every code module and
+  every unmatched candidate code range.
+
+When the target is later emitted as typed data, it must be renamed to that object.
+Every pointer-valued word still goes through a relocation.
 
 Vtable trailing zero words after the last nonzero slot are not evidently part of
 the table; they stay reference-backed.

@@ -14,9 +14,9 @@ Other releases are not currently supported.
 
 **10861 exact matching functions in 10775 modules**, replacing **1,116,022 bytes** of the
 4,162,912-byte decoded executable (**26.8087% code-range coverage**). Function ranges
-include their literals and padding. **429,844 bytes of typed static data** (virtual
-tables, strings and typed tables, 39.0720% of the estimated static-data extent) are rebuilt from
-source as well, for **37.1342% image coverage**. **2,617,046 bytes still come from
+include their literals and padding. **472,808 bytes of typed static data** (virtual
+tables, strings and typed tables, 42.9774% of the estimated static-data extent) are rebuilt from
+source as well, for **38.1663% image coverage**. **2,574,082 bytes still come from
 the original reference**. See [typed static data](docs/DATA.md).
 
 This is an early hybrid reconstruction. It cannot yet build from source alone.

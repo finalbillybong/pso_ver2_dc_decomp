@@ -17,7 +17,13 @@ range. Only typed definitions are accepted:
   `int`/`unsigned int`, `short`/`unsigned short`, `signed char`/`unsigned char`
   with plain literals.
 * `record_table`: an array of a `Record_<addr>` struct whose fields are `const void *`,
-  `float`, `int` or `unsigned int`; pointer fields follow the pointer rule.
+  `float`, `int`, `unsigned int`, `short` or `unsigned short` (no padding); pointer
+  fields follow the pointer rule.
+
+Pointers may also name `fn_<addr>` (a code entry point) or `g_<addr>` (reference-backed
+data or RAM outside the image); `check_external_symbols` requires those names to be
+bound to their own address and a `g_` target to lie outside every emitted object and
+code range.
 
 No integer or float word may equal a known symbol address (it must be a pointer).
 
@@ -152,7 +158,23 @@ SCALARS = {'const float': ('float_table', 4, 'float'),
            'const unsigned short': ('int16_table', 2, (0, 2 ** 16 - 1)),
            'const signed char': ('byte_table', 1, (-128, 127)),
            'const unsigned char': ('byte_table', 1, (0, 255))}
-FIELD_TYPES = {'const void *': 'pointer', 'float': 'float', 'int': 'int', 'unsigned int': 'uint'}
+FIELD_TYPES = {'const void *': 'pointer', 'float': 'float', 'int': 'int', 'unsigned int': 'uint',
+               'short': 'short', 'unsigned short': 'ushort'}
+FIELD_SIZE = {'pointer': 4, 'float': 4, 'int': 4, 'uint': 4, 'short': 2, 'ushort': 2}
+FIELD_RANGE = {'int': (-2 ** 31, 2 ** 31 - 1), 'uint': (0, 2 ** 32 - 1), 'short': (-2 ** 15, 2 ** 15 - 1),
+               'ushort': (0, 2 ** 16 - 1)}
+
+
+def record_layout(fields):
+    """C layout of a record: field offsets and the padded size (CodeWarrior natural alignment)."""
+    offsets, cursor = [], 0
+    for f in fields:
+        size = FIELD_SIZE[f]
+        cursor = -(-cursor // size) * size
+        offsets.append(cursor)
+        cursor += size
+    align = max(FIELD_SIZE[f] for f in fields)
+    return offsets, -(-cursor // align) * align
 
 
 def _split(body):
@@ -214,10 +236,16 @@ def lint(text, unit, info=None):
             fields = [f.strip() for f in m[1].rstrip(';').split(';')]
             kinds = []
             for i, f in enumerate(fields):
-                fm = re.fullmatch(r'(const void \*|float |int |unsigned int )f' + str(i), f)
+                fm = re.fullmatch(r'(const void \*|float |int |unsigned int |short |unsigned short )f' + str(i), f)
                 if not fm:
-                    raise ValueError('Record fields must be f0..fN of const void *, float, int or unsigned int')
+                    raise ValueError('Record fields must be f0..fN of const void *, float, int, unsigned int,'
+                                     ' short or unsigned short')
                 kinds.append(FIELD_TYPES[fm[1].strip() if fm[1] != 'const void *' else fm[1]])
+            offsets, padded = record_layout(kinds)
+            if padded != offsets[-1] + FIELD_SIZE[kinds[-1]]:
+                raise ValueError('Record types must have no trailing padding: ' + m[2])
+            if any(o != (offsets[i - 1] + FIELD_SIZE[kinds[i - 1]] if i else 0) for i, o in enumerate(offsets)):
+                raise ValueError('Record types must have no interior padding: ' + m[2])
             records[m[2]] = kinds
             continue
         m = re.fullmatch(r'extern void (' + IDENT + r')\(void\)', s)
@@ -263,9 +291,12 @@ def lint(text, unit, info=None):
                         elif f == 'float':
                             words.append(_float_bits(v))
                         else:
-                            words.append(_int(v, (-2 ** 31, 2 ** 31 - 1) if f == 'int' else (0, 2 ** 32 - 1)) & 0xffffffff)
-                kind, size, stride = ('record_table',), 4 * len(fields) * count, 4 * len(fields)
-                pointers = {4 * i for i, f in enumerate(fields) if f == 'pointer'}
+                            value = _int(v, FIELD_RANGE[f])
+                            if FIELD_SIZE[f] == 4:
+                                words.append(value & 0xffffffff)
+                offsets, stride = record_layout(fields)
+                kind, size = ('record_table',), stride * count
+                pointers = {o for o, f in zip(offsets, fields) if f == 'pointer'}
             else:
                 kind0, width, bounds = SCALARS[ctype]
                 for e in entries:
@@ -291,6 +322,52 @@ def lint(text, unit, info=None):
         raise ValueError('Definitions disagree with the manifest objects (order, kind or size): ' + unit['id'])
     local = {n for n, _, _ in defined}
     return functions | (set(data_decls) - local)
+
+
+EXTERNAL = re.compile(r'_(fn|g)_([0-9a-f]{8})')
+
+
+def check_external_symbols(data, code, root=ROOT):
+    """Bound names must agree with their addresses everywhere: `fn_<addr>` and `g_<addr>`
+    are bound to <addr>; a data object's name is bound to that object's address; and a
+    `g_<addr>` target (reference-backed data or RAM) lies outside every emitted data object,
+    every code module and every unmatched candidate code range."""
+    objects = {}
+    spans = []
+    for u in data['units']:
+        for o in u['objects']:
+            a = int(o['address'], 0)
+            objects['_' + o['name']] = a
+            spans.append((a, a + o['size']))
+    for u in code['units']:
+        a = int(u['address'], 0)
+        spans.append((a, a + u['ranges'][0]['size']))
+    queue = Path(root) / 'config/reconstruction-targets.json'
+    if queue.exists():
+        for u in json.loads(queue.read_text())['targets']:
+            if u.get('status') != 'matched' and u.get('ranges'):
+                a = int(u['address'], 0)
+                spans.append((a, a + u['ranges'][0]['size']))
+    spans.sort()
+    starts = [s for s, _ in spans]
+    import bisect
+    checked = 0
+    for u in data['units']:
+        for name, address in u.get('symbols', {}).items():
+            value = int(address, 0)
+            m = EXTERNAL.fullmatch(name)
+            if m and int(m[2], 16) != value:
+                raise ValueError('Address-named symbol bound elsewhere: ' + name)
+            if name in objects and objects[name] != value:
+                raise ValueError('Data object name bound to a different address: ' + name)
+            if m and m[1] == 'g':
+                checked += 1
+                k = bisect.bisect_right(starts, value) - 1
+                while k >= 0 and spans[k][0] > value - 0x100000:
+                    if spans[k][0] <= value < spans[k][1]:
+                        raise ValueError('g_ target lies inside an emitted object or code range: ' + name)
+                    k -= 1
+    return checked
 
 
 def check_disguised_pointers(data, code, root=ROOT):
@@ -494,8 +571,9 @@ def main():
     decoded = json.loads((ROOT / 'config/decoded.json').read_text())
     validate(data, int(code['base_address'], 0), decoded['size'], [u['id'] for u in code['units']])
     words = check_disguised_pointers(data, code)
+    externals = check_external_symbols(data, code)
     print(f"{len(data['units'])} data modules, {sum(totals(data).values()):,} typed bytes: lint passed"
-          f" ({words:,} integer/float words checked against symbol addresses).")
+          f" ({words:,} integer/float words checked against symbol addresses; {externals:,} g_ bindings checked).")
 
 
 if __name__ == '__main__':

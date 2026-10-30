@@ -2,6 +2,7 @@ import copy
 from pathlib import Path
 import struct
 import sys
+import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
@@ -251,6 +252,48 @@ class TableKindTests(unittest.TestCase):
             static_data.check_object(relocatable(bare, [], syms), unit, info)
         with self.assertRaisesRegex(ValueError, 'outside a pointer field'):
             static_data.check_object(relocatable(rod, [(0, 2, 1), (4, 2, 1)], syms), unit, info)
+
+
+class ExternalTargetAndShortFieldTests(unittest.TestCase):
+    SOURCE = """typedef struct { short f0; unsigned short f1; float f2; const void *f3; } Record_00004000;
+
+extern const char g_00005000[];
+
+const Record_00004000 d_00004000[2] = {
+    { -2, 65535, 1.0f, g_00005000 },
+    { 3, 0, 0.0f, 0 }
+};
+"""
+
+    def unit(self, symbols=None):
+        return {'id': 'tables_00004000', 'source': 'src/data/tables_00004000.c', 'address': '0x4000',
+                'ranges': [{'offset': 0x3000, 'size': 24}],
+                'objects': [{'name': 'd_00004000', 'kind': 'record_table', 'size': 24, 'address': '0x4000'}],
+                'symbols': symbols or {'_g_00005000': '0x5000'}, 'reference_sha256': '0' * 64,
+                'text': self.SOURCE}
+
+    def test_short_fields_lay_out_without_padding(self):
+        info = {}
+        self.assertEqual(static_data.lint(self.SOURCE, self.unit(), info), {'g_00005000'})
+        self.assertEqual((info['d_00004000']['stride'], info['d_00004000']['pointers']), (12, {8}))
+        self.assertEqual(static_data.record_layout(['short', 'ushort', 'float', 'pointer']), ([0, 2, 4, 8], 12))
+        for old, new in [('{ -2, 65535,', '{ -2, 65536,'), ('{ -2, 65535,', '{ -40000, 65535,'),
+                         ('short f0; unsigned short f1;', 'short f0; float f1;')]:
+            with self.subTest(change=new), self.assertRaises(ValueError):
+                static_data.lint(self.SOURCE.replace(old, new), self.unit())
+
+    def test_external_targets_are_bound_to_their_address_outside_objects_and_code(self):
+        code = {'units': [{'address': '0x6000', 'ranges': [{'offset': 0x5000, 'size': 0x100}], 'functions': []}]}
+        data = {'schema_version': 1, 'units': [self.unit()]}
+        with tempfile.TemporaryDirectory() as temp:
+            self.assertEqual(static_data.check_external_symbols(data, code, temp), 1)
+            for symbols, message in [({'_g_00005000': '0x5004'}, 'bound elsewhere'),
+                                     ({'_g_00004004': '0x4004'}, 'inside an emitted object'),
+                                     ({'_g_00006010': '0x6010'}, 'inside an emitted object or code'),
+                                     ({'_d_00004000': '0x4008'}, 'different address'),
+                                     ({'_fn_00001234': '0x1238'}, 'bound elsewhere')]:
+                with self.subTest(symbols=symbols), self.assertRaisesRegex(ValueError, message):
+                    static_data.check_external_symbols({'schema_version': 1, 'units': [self.unit(symbols)]}, code, temp)
 
 
 if __name__ == '__main__':

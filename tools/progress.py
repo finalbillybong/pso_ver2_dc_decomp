@@ -59,6 +59,7 @@ def summary(root=ROOT):
     spans = project.layout(manifest, decoded['size'], data)
     # Lints every data source and rejects integers or floats equal to a symbol address.
     static_data.check_disguised_pointers(data, manifest, root)
+    static_data.check_external_symbols(data, manifest, root)
     matched = sum(s['size'] for s in spans if s['origin'] == 'compiled_source')
     typed = sum(s['size'] for s in spans if s['origin'] == 'compiled_data')
     extent = data.get('data_extent', {}).get('bytes')
@@ -102,7 +103,7 @@ def summary(root=ROOT):
             'integrated_image_sha256': decoded['sha256'],
             'metric': 'Complete compiled function ranges, including literals and padding, plus typed static-data modules, divided by the entire decoded image. Not a code-only completion percentage.',
             'code_metric': 'Complete compiled function ranges, including literals and padding, divided by the entire decoded image.',
-            'data_metric': 'Bytes of exact typed static-data modules (virtual and function tables as arrays of named function pointers, pointer tables of named symbols, strings as C string literals, float and integer arrays with typed literals, and record arrays of checked struct types) divided by the recorded static-data extent estimate. Opaque byte dumps, high-entropy data, untyped words and pointers written as integers earn no credit.',
+            'data_metric': 'Bytes of exact typed static-data modules (virtual and function tables as arrays of named function pointers, pointer tables of named symbols including external g_<addr> targets in reference-backed data or RAM, strings as C string literals, float and integer arrays with typed literals, and record arrays of checked struct types with pointer, float, integer and short fields) divided by the recorded static-data extent estimate. Opaque byte dumps, high-entropy data, untyped words and pointers written as integers earn no credit.',
             'verification': 'Locally verified exact builds; CI validates the recorded input hashes and progress accounting.'}
 
 
