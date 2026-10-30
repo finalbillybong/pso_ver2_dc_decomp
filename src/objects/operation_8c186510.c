@@ -1,0 +1,19 @@
+typedef struct S_vv1 S_vv1;
+struct S_vv1 {
+    char unknown0[0x2];
+    short f02;
+    char unknown4[0x44];
+};
+extern S_vv1 *g_8c46ec54;
+void operation_8c186510(void)
+{
+    S_vv1 *v1;
+    int v2;
+    int n;
+    v1 = g_8c46ec54;
+    n = 0x5a8;
+    for (v2 = 0; v2 < n; v2++) {
+        v1->f02 = 0;
+        v1++;
+    }
+}
