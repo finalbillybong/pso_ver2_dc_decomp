@@ -23,9 +23,10 @@ functions sharing one literal pool, plus the pool) under the single SHC setting 
 or assembly. Leave CodeWarrior-shaped code to the CodeWarrior pipeline.
 
 Static data counts only as typed source under the rules in
-[DATA.md](docs/DATA.md): virtual tables as arrays of named function pointers and
-strings as C string literals, each module exact over its complete range. Raw byte
-arrays and pointers written as integers never count.
+[DATA.md](docs/DATA.md): virtual and function tables of named functions, pointer
+tables of named symbols, C string literals, typed float/integer arrays and checked
+record structs, each module exact over its complete range. Opaque byte dumps and
+pointers written as integers never count.
 
 No inline assembly, embedded instruction bytes, copied runtime objects, binary
 patches or normalized comparisons count as source matches. Preserve observed

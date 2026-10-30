@@ -12,6 +12,17 @@ Only typed source counts:
 | --- | --- | --- |
 | `vtable` | `VirtualFunction const vt_<addr>[N] = { 0, 0, name, ... };` | Header words are the CodeWarrior type-information pointer and this-adjustment (both zero in this build). Every other entry is `0` or a declared function. |
 | `string` | `const char str_<addr>[N] = "...";` | Only C string literals, one object per string. CodeWarrior gives char arrays byte alignment and a section each, so back-to-back strings are separate objects; the terminator and any zero padding come from the array size. |
+| `function_table` | `Function const d_<addr>[N] = { name, 0, ... };` | Entries are `0` or declared functions. |
+| `pointer_table` | `const void *const d_<addr>[N] = { str_..., (void *)name, d_..., 0 };` | Entries are `0`, a declared function cast to `void *`, or a declared data object (`vt_`, `str_` or `d_`) at its start. |
+| `float_table` | `const float d_<addr>[N] = { 1.5f, -0.0f, ... };` | Decimal literals with enough digits to round-trip to the exact bits. NaN, infinity and denormals are not accepted. |
+| `int_table` | `const int` or `const unsigned int d_<addr>[N]` | Integer literals within the element type's range. |
+| `int16_table` | `const short` or `const unsigned short d_<addr>[N]` | As above. |
+| `byte_table` | `const unsigned char` or `const signed char d_<addr>[N]` | Small-integer tables only (see below). |
+| `record_table` | `const Record_<addr> d_<addr>[N] = { { ... }, ... };` with `typedef struct { const void *f0; float f1; int f2; ... } Record_<addr>;` | Fields are `const void *`, `float`, `int` or `unsigned int`; every record has every field; pointer fields follow the pointer-table rule. |
+
+**No integer or float word may equal a known symbol address.** That covers admitted
+functions, data objects and every bound symbol; such a word must be written as a
+pointer. `tools/data.py` enforces this in the lint and in `progress.py --check`.
 
 ### Virtual-table slots
 
@@ -50,9 +61,36 @@ is not claimed as data. Shift-JIS text is not included yet.
 
 Raw byte, halfword or word arrays, opaque or high-entropy data (including the
 embedded file at `8c28ad54`), and pointers written as integers earn no credit and
-are not accepted as data modules. Further kinds (pointer tables whose entries are
-symbols, float/integer tables with real element types, records with checked
-structure layouts) need their own lint and object checks before admission.
+are not accepted as data modules.
+
+### Tables
+
+Tables come from the static-data map's pointer, function-pointer, float, integer,
+halfword, byte and record pieces. The generator kept a piece only when all of
+these hold:
+
+* **Pointers:** every nonzero word is a pointer to an admitted function, to a code
+  entry point with evidence (named `fn_<addr>` as for virtual tables), or to the
+  start of a data object that is itself typed source.
+* **Floats:** every word is zero or a normal float.
+* **Integers:** no word is in the pointer range `8c000000`–`8d000000` or equals a
+  known symbol address. Integer tables hold no float-like words; halfword tables
+  hold no pointer-like or float-like aligned words, since those are probably structs.
+* **Byte tables:** at least 4 bytes, every byte at most `0x7f`, no run of three
+  letters, entropy of at most 3 bits per byte, and no float- or pointer-like aligned
+  word.
+* **Records:** use the map's stride with whole records only. Each field column is
+  consistently pointers, normal floats or integers (zero is allowed in any of them).
+  A single record without a pointer field and with only one field type is
+  rejected.
+* **Placement:** nothing inside the game code region (likely literal pools of
+  unlisted functions), nothing overlapping an unmatched candidate code range, and
+  a module starts at an address aligned to its largest object alignment.
+
+Rejected pieces stay reference-backed with a recorded reason. The main reasons are
+partial trailing records, bytes above `0x7f`, pointers to targets that are not named
+objects, columns mixing floats and integers, embedded text, and NaN/infinity or
+denormal floats.
 
 Vtable trailing zero words after the last nonzero slot are not evidently part of
 the table; they stay reference-backed.
@@ -85,14 +123,17 @@ recovered section size.
 `tools/project.py build` (and therefore `tools/verify_source.py`) does, for each
 data module, after all code modules:
 
-1. `tools/data.py` lint: the source contains only the typedef, `extern void
-   name(void);` declarations and the typed definitions above, in manifest order
-   and size. No preprocessor directives, character constants or other statements.
-2. Compile with the pinned compiler and flags; the relocatable object must have
-   exactly one allocated section, `.rodata`.
-3. Object check: each manifest object is a symbol at its declared offset and size;
-   every nonzero word of a `vtable` is produced by an `R_SH_DIR32` relocation
-   against a named symbol (no bare integers); no relocation falls inside a string.
+1. `tools/data.py` lint: the source contains only the `VirtualFunction`/`Function`
+   and `Record_<addr>` typedefs, `extern void name(void);` and `extern <type> name[];`
+   declarations, and the typed definitions above, in manifest order and size. No
+   preprocessor directives, character constants or other statements.
+2. Compile with the pinned compiler and flags; the relocatable object may contain
+   only `.rodata` sections (CodeWarrior emits one per object), fully owned by the
+   manifest objects.
+3. Object check: each manifest object is a symbol of its declared size; every
+   nonzero pointer word (each word of a vtable, function or pointer table; each
+   pointer field of a record) is produced by an `R_SH_DIR32` relocation against a
+   named symbol (no bare integers); no relocation falls outside a pointer word.
 4. Link with the pinned GNU linker at the module address with the bound symbols;
    exactly one allocated `.rodata` section at that address, no remaining relocations.
 5. Compare the raw section with the complete reference range; the integrated

@@ -14,9 +14,9 @@ Other releases are not currently supported.
 
 **10861 exact matching functions in 10775 modules**, replacing **1,116,022 bytes** of the
 4,162,912-byte decoded executable (**26.8087% code-range coverage**). Function ranges
-include their literals and padding. **247,400 bytes of typed static data** (virtual
-tables and strings, 22.4882% of the estimated static-data extent) are rebuilt from
-source as well, for **32.7516% image coverage**. **2,799,490 bytes still come from
+include their literals and padding. **429,844 bytes of typed static data** (virtual
+tables, strings and typed tables, 39.0720% of the estimated static-data extent) are rebuilt from
+source as well, for **37.1342% image coverage**. **2,617,046 bytes still come from
 the original reference**. See [typed static data](docs/DATA.md).
 
 This is an early hybrid reconstruction. It cannot yet build from source alone.
@@ -77,7 +77,7 @@ verified locally; CI does not claim to rebuild the game.
 | `src/objects`, `src/effects`, `src/math`, `src/runtime`, `src/ui` | Admitted matching C/C++ modules |
 | `src/include` | Provisional types with checked offsets |
 | `src/samples` | Five-function compiler proof |
-| `src/data` | Typed static-data modules (virtual tables, strings); see `config/data.json` |
+| `src/data` | Typed static-data modules (virtual tables, strings, typed tables); see `config/data.json` |
 | `src/sdk` | Hitachi SHC pool-group units (SDK and library code); see [SHC.md](docs/SHC.md) |
 | `src/provisional` | Unmatched candidates, excluded from progress |
 | `config` | Reference hashes, matching manifest, dependency addresses and queue |

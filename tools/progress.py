@@ -57,8 +57,8 @@ def summary(root=ROOT):
     if not required <= set(proof['checks']):
         raise ValueError('Incomplete exact-build verification')
     spans = project.layout(manifest, decoded['size'], data)
-    for unit in data['units']:
-        static_data.lint((root / unit['source']).read_text(), unit)
+    # Lints every data source and rejects integers or floats equal to a symbol address.
+    static_data.check_disguised_pointers(data, manifest, root)
     matched = sum(s['size'] for s in spans if s['origin'] == 'compiled_source')
     typed = sum(s['size'] for s in spans if s['origin'] == 'compiled_data')
     extent = data.get('data_extent', {}).get('bytes')
@@ -102,7 +102,7 @@ def summary(root=ROOT):
             'integrated_image_sha256': decoded['sha256'],
             'metric': 'Complete compiled function ranges, including literals and padding, plus typed static-data modules, divided by the entire decoded image. Not a code-only completion percentage.',
             'code_metric': 'Complete compiled function ranges, including literals and padding, divided by the entire decoded image.',
-            'data_metric': 'Bytes of exact typed static-data modules (virtual tables as arrays of named function pointers, strings as C string literals) divided by the recorded static-data extent estimate. Raw byte, halfword or word arrays and pointers written as integers earn no credit.',
+            'data_metric': 'Bytes of exact typed static-data modules (virtual and function tables as arrays of named function pointers, pointer tables of named symbols, strings as C string literals, float and integer arrays with typed literals, and record arrays of checked struct types) divided by the recorded static-data extent estimate. Opaque byte dumps, high-entropy data, untyped words and pointers written as integers earn no credit.',
             'verification': 'Locally verified exact builds; CI validates the recorded input hashes and progress accounting.'}
 
 
@@ -140,10 +140,11 @@ def render(report):
 
 Complete ranges include literals and padding. Image coverage is **not** the
 percentage of game code decompiled. Unmatched candidates earn no completed-byte
-credit. Typed static data counts only exact modules of virtual tables written as
-arrays of named function pointers and strings written as C string literals; raw
-byte arrays, opaque or high-entropy data and pointers written as integers earn no
-credit. The static-data extent is an analysis estimate of the bytes outside code,
+credit. Typed static data counts only exact modules of typed source: virtual and
+function tables of named functions, pointer tables of named symbols, C string
+literals, float and integer arrays, and arrays of checked record structs (see
+DATA.md). Opaque byte dumps, high-entropy data, untyped words and pointers written
+as integers earn no credit. The static-data extent is an analysis estimate of the bytes outside code,
 not a recovered section size. The integrated hybrid image matches the reference,
 but still requires {left:,} original bytes.
 

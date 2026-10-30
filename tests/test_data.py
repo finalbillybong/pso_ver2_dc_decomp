@@ -131,7 +131,7 @@ class DataManifestTests(unittest.TestCase):
         bare = bytearray(ROD); bare[12:16] = struct.pack('<I', 0x1104)
         for blob, message in [
                 (relocatable(bytes(bare), [(8, 3, 1)], SYMS), 'bare integer'),
-                (relocatable(ROD, [(8, 3, 1), (12, 4, 1), (16, 3, 1)], SYMS), 'non-pointer object'),
+                (relocatable(ROD, [(8, 3, 1), (12, 4, 1), (16, 3, 1)], SYMS), 'outside a pointer field'),
                 (relocatable(ROD, [(8, 3, 1), (12, 4, 2)], SYMS), 'Unexpected relocation'),
                 (relocatable(ROD, [(8, 3, 1), (12, 4, 1)], [('_vt_00001008', 0, 12, True)] + SYMS[1:]), 'Object symbol'),
                 (relocatable(ROD + b'XXXX', [(8, 3, 1), (12, 4, 1)], SYMS), 'outside the manifest objects'),
@@ -147,10 +147,110 @@ class DataManifestTests(unittest.TestCase):
             static_data.check_placement(relocatable(ROD, [], [placed[0], ('_str_00001018', 0x1019, 8, True)]), unit())
 
     def test_totals_and_publication_paths(self):
-        self.assertEqual(static_data.totals(self.data), {'string': 8, 'vtable': 16})
+        totals = static_data.totals(self.data)
+        self.assertEqual({k: v for k, v in totals.items() if v}, {'string': 8, 'vtable': 16})
+        self.assertEqual(set(totals), static_data.KINDS)
         self.assertFalse(issues('src/data/vtables_8c260f70.c', SOURCE.encode()))
         self.assertFalse(issues('config/data.json', b'{"schema_version": 1, "units": []}'))
         self.assertTrue(issues('src/data/blob.bin', b'\x00\x01'))
+
+
+TABLES = """/* Static data 2000-2048: table objects. */
+
+typedef void (*Function)(void);
+typedef struct { const void *f0; float f1; int f2; unsigned int f3; } Record_00002020;
+
+extern void method_one(void);
+extern const char str_00003000[];
+extern const float d_00002000[];
+
+const float d_00002000[3] = {
+    0.0f, -0.0f, 1.5e-05f
+};
+const void *const d_0000200c[3] = {
+    d_00002000, (void *)method_one, str_00003000
+};
+Function const d_00002018[2] = {
+    method_one, 0
+};
+const Record_00002020 d_00002020[2] = {
+    { (void *)method_one, 0.25f, -3, 0xffff0000u },
+    { 0, 1.0f, 7, 4u }
+};
+const short d_00002040[2] = {
+    -1, 300
+};
+const unsigned char d_00002044[4] = {
+    1, 2, 3, 4
+};
+"""
+
+
+def table_unit():
+    objects = [('d_00002000', 'float_table', 12), ('d_0000200c', 'pointer_table', 12),
+               ('d_00002018', 'function_table', 8), ('d_00002020', 'record_table', 32),
+               ('d_00002040', 'int16_table', 4), ('d_00002044', 'byte_table', 4)]
+    address, result = 0x2000, []
+    for name, kind, size in objects:
+        result.append({'name': name, 'kind': kind, 'size': size, 'address': hex(address)})
+        address += size
+    return {'id': 'tables_00002000', 'source': 'src/data/tables_00002000.c', 'address': '0x2000',
+            'ranges': [{'offset': 0x1000, 'size': 0x48}], 'objects': result,
+            'symbols': {'_method_one': '0x1100', '_str_00003000': '0x3000'}, 'reference_sha256': '0' * 64}
+
+
+class TableKindTests(unittest.TestCase):
+    def test_lint_accepts_typed_tables_and_reports_pointer_fields(self):
+        info = {}
+        self.assertEqual(static_data.lint(TABLES, table_unit(), info), {'method_one', 'str_00003000'})
+        self.assertEqual(info['d_00002020']['stride'], 16)
+        self.assertEqual(info['d_00002020']['pointers'], {0})
+        self.assertEqual(info['d_00002000']['words'], [0, 0x80000000, 0x377ba882])
+        self.assertEqual(info['d_00002020']['words'], [0x3e800000, 0xfffffffd, 0xffff0000, 0x3f800000, 7, 4])
+
+    def test_lint_rejects_untyped_or_disguised_tables(self):
+        for old, new in [('(void *)method_one, str_00003000', '(void *)0x1100, str_00003000'),
+                         ('(void *)method_one, str_00003000', '(void *)method_one, (const void *)0x3000'),
+                         ('(void *)method_one, str_00003000', '(void *)method_one, str_unknown'),
+                         ('method_one, 0\n', 'method_one, 4352\n'),
+                         ('0.0f, -0.0f', '0.0, -0.0f'),
+                         ('0.0f, -0.0f', '0x0, -0.0f'),
+                         ('-1, 300', '-1, 40000'),
+                         ('1, 2, 3, 4', '1, 2, 3, 256'),
+                         ('{ 0, 1.0f, 7, 4u }', '{ 0, 1.0f, 7 }'),
+                         ('{ 0, 1.0f, 7, 4u }', '{ 4096, 1.0f, 7, 4u }'),
+                         ('int f2;', 'char f2;'),
+                         ('const unsigned char d_00002044[4] = {\n    1, 2, 3, 4\n}',
+                          'const unsigned char d_00002044[4] = "\\001\\002\\003\\004"'),
+                         ('const short d_00002040[2]', 'const unsigned int d_00002040[1]')]:
+            with self.subTest(change=new):
+                self.assertIn(old, TABLES)
+                with self.assertRaises(ValueError):
+                    static_data.lint(TABLES.replace(old, new), table_unit())
+
+    def test_integer_equal_to_a_symbol_address_must_be_a_pointer(self):
+        unit = table_unit()
+        unit['text'] = TABLES
+        code = {'units': [{'functions': [{'address': '0x1100'}], 'symbols': {}}]}
+        data = {'schema_version': 1, 'units': [unit]}
+        self.assertEqual(static_data.check_disguised_pointers(data, code), 9)
+        for old, new in [('{ 0, 1.0f, 7, 4u }', '{ 0, 1.0f, 4352, 4u }'),
+                         ('0.0f, -0.0f', '0.0f, 6.09845092e-42f')]:
+            unit['text'] = TABLES.replace(old, new)
+            with self.subTest(change=new), self.assertRaisesRegex(ValueError, 'symbol address'):
+                static_data.check_disguised_pointers(data, code)
+
+    def test_object_check_uses_record_pointer_fields(self):
+        unit = {'id': 'r', 'objects': [{'name': 'd_00002020', 'kind': 'record_table', 'size': 32, 'address': '0x2020'}]}
+        info = {'d_00002020': {'stride': 16, 'pointers': {0}, 'words': []}}
+        rod = bytes(4) + struct.pack('<f', 0.25) + bytes(24)
+        syms = [('_d_00002020', 0, 32, True), ('_method_one', 0, 0, False)]
+        static_data.check_object(relocatable(rod, [(0, 2, 1)], syms), unit, info)
+        bare = struct.pack('<I', 0x1100) + rod[4:]
+        with self.assertRaisesRegex(ValueError, 'bare integer'):
+            static_data.check_object(relocatable(bare, [], syms), unit, info)
+        with self.assertRaisesRegex(ValueError, 'outside a pointer field'):
+            static_data.check_object(relocatable(rod, [(0, 2, 1), (4, 2, 1)], syms), unit, info)
 
 
 if __name__ == '__main__':
