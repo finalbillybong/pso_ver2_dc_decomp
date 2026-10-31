@@ -140,14 +140,14 @@ installation is present.
 
 ## Current units
 
-342 pool-group units, 84,522 bytes, 1149 functions (listed in `config/project.json`
+346 pool-group units, 86,690 bytes, 1178 functions (listed in `config/project.json`
 with `"compiler": "shc-v5.1r13"` or `"shc-v5.0r28"`; sources in `src/sdk/`):
 
 | Region | Compiler | Units | Bytes | Functions |
 | --- | --- | ---: | ---: | ---: |
-| C runtime library `0x8c12b000`–`0x8c131000` | 5.1r13 | 12 | 692 | 12 |
+| C runtime library `0x8c12b000`–`0x8c131000` | 5.1r13 | 14 | 884 | 14 |
 | Library block `0x8c1f0000`–`0x8c205000` | 5.1r13 | 25 | 6,306 | 95 |
-| SDK region from `0x8c340000` | 5.1r13 | 291 | 72,224 | 996 |
+| SDK region from `0x8c340000` | 5.1r13 | 293 | 74,200 | 1023 |
 | `0x8c3d0000` region ([second release](#second-release-50r2628)) | 5.0r28 | 14 | 5,300 | 46 |
 
 Units are complete pool groups: one or more consecutive literal-pool groups whose
@@ -270,7 +270,8 @@ ordinary C and stay byte-exact: `shc_chunk_ops_8c3822a0`, `shc_heap_lists_8c3592
 `shc_ring_buffer_8c358db8`, `shc_slot_reset_8c36d9c8`, `shc_slot_table_8c1f90e4`,
 `shc_sound_init_8c352e20`, `shc_start_handle_8c3474c8`,
 `shc_submit_request_8c3472e4` and `shc_udp_8c3c4a30`. Nine had no clean form and
-are withdrawn (their bytes return to fallback assembly):
+were withdrawn (their bytes returned to fallback assembly); one of them,
+`shc_flash_cmd_8c379038`, has since been readmitted with an ordinary-C source:
 
 | Unit | Bytes | Functions |
 | --- | ---: | ---: |
@@ -279,7 +280,7 @@ are withdrawn (their bytes return to fallback assembly):
 | `shc_thread_sched_8c371e5c` | 1,032 | 13 |
 | `shc_mps_init_8c35add0` | 816 | 18 |
 | `shc_bank_find_8c34d9b8` | 720 | 10 |
-| `shc_flash_cmd_8c379038` | 584 | 12 |
+| `shc_flash_cmd_8c379038` (readmitted) | 584 | 12 |
 | `shc_buf_geom_8c342640` | 510 | 7 |
 | `shc_net_timers_8c204144` | 468 | 9 |
 | `shc_buf_write_8c3dc1b4` (5.0r28) | 112 | 1 |
