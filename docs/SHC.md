@@ -140,13 +140,14 @@ installation is present.
 
 ## Current units
 
-338 pool-group units, 91,136 bytes, 1225 functions (listed in `config/project.json`
+349 pool-group units, 92,260 bytes, 1244 functions (listed in `config/project.json`
 with `"compiler": "shc-v5.1r13"` or `"shc-v5.0r28"`; sources in `src/sdk/`):
 
 | Region | Compiler | Units | Bytes | Functions |
 | --- | --- | ---: | ---: | ---: |
+| C runtime library `0x8c12b000`–`0x8c131000` | 5.1r13 | 10 | 592 | 10 |
 | Library block `0x8c1f0000`–`0x8c205000` | 5.1r13 | 26 | 6,774 | 104 |
-| SDK region from `0x8c340000` | 5.1r13 | 297 | 78,950 | 1074 |
+| SDK region from `0x8c340000` | 5.1r13 | 298 | 79,482 | 1083 |
 | `0x8c3d0000` region ([second release](#second-release-50r2628)) | 5.0r28 | 15 | 5,412 | 47 |
 
 Units are complete pool groups: one or more consecutive literal-pool groups whose
@@ -260,6 +261,9 @@ Of the literal-pool groups screened so far, those blocked are:
 * code with nop padding before a literal pool or mid-sequence `nop`s (some SDK
   areas, apparently built with an alignment setting);
 * inline struct copies through r1/r0 register pairs, which need `-speed`;
+* in the C runtime library, routines built with other settings: `rand` saves MACL
+  (`-macsave=1`) and a double-precision file toggles FPSCR.PR (not `-fpu=single`);
+  the runtime's assembler helpers (division, `longjmp`, `__slow_strcpy`) stay assembly;
 * groups that branch to static functions outside themselves until the
   neighbouring groups are matched too;
 * remaining near misses, mostly the choice or order of callee-saved registers.
