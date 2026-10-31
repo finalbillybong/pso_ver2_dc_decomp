@@ -139,17 +139,25 @@ installation is present.
 
 ## Current units
 
-315 pool-group units, 76,116 bytes, 1071 functions (listed in `config/project.json`
+321 pool-group units, 82,128 bytes, 1151 functions (listed in `config/project.json`
 with `"compiler": "shc-v5.1r13"`; sources in `src/sdk/`):
 
 | Region | Units | Bytes | Functions |
 | --- | ---: | ---: | ---: |
 | Library block `0x8c1f0000`–`0x8c205000` | 26 | 6,774 | 104 |
-| SDK region from `0x8c340000` | 289 | 69,342 | 967 |
+| SDK region from `0x8c340000` | 295 | 75,354 | 1047 |
 
 Units are complete pool groups: one or more consecutive literal-pool groups whose
 functions only branch to each other. A literal pool may sit inside a unit (and
 even inside a function) where SHC had to flush it.
+
+A unit need not be a whole source file. Many SDK files hold several pool groups,
+and a unit may be one closed group from the middle of a file, as long as every
+pc-relative reference and every `bsr`/`bra` inside it stays inside its range
+(for example `shc_stream_ops_8c3560f4` is called with `bsr` from 0x8c3560ba, just
+before it). Padding before the next file stays outside the unit: one unit
+(`shc_obj_pairs_8c356d5c`) ends two bytes before a zero halfword that pads to the
+next four-byte boundary.
 
 ## Source idioms that reproduce the SDK code
 
@@ -184,6 +192,15 @@ by at least one exact unit:
   and the `_builtin_strcpy` intrinsic's helper.
 * **Variable arguments.** SHC's `stdarg.h` is not available (system headers are not
   allowed), so the `va_start` users spell out the macro.
+* **Compiler intrinsics.** `pref`, `ftrv`, `fipr`, `fsca`, `fsrra`, `frchg`,
+  `tas.b`, `trapa` and the `ldc`/`stc` SR, GBR and VBR sequences come from SHC's
+  built-in functions, declared directly in the source because there are no
+  headers: for example `void _builtin_prefetch(void *);`,
+  `int _builtin_get_imask(void);` and `void _builtin_set_imask(int);` (the
+  interrupt-mask save and restore used by the SDK's lock functions).
+* **Calls through pointers.** A tail call through a function pointer
+  (`(*g_cb)(g_arg);`) compiles to `jmp @r0`; it is ordinary SHC output, not a
+  CodeWarrior sign.
 * **Jumps to the next statement.** The reference sometimes has an unconditional
   `bra` to the very next block, typically where one arm of an `if`/`else if`
   chain or a `case` ends. SHC emits that branch for `goto L; L:` (a jump to the
@@ -197,8 +214,10 @@ by at least one exact unit:
 
 Of the literal-pool groups screened so far, those blocked are:
 
-* hand-written assembly (`fschg`, `ftrv`, `fipr`, `pref`, `ldc`/`stc` sequences,
-  `dmuls.l`);
+* hand-written assembly (`fschg`, `movca.l`, cache-block instructions, `rte`,
+  `ldc`/`stc` of banked or exception registers), and `#pragma inline_asm`
+  bodies (they end in a padding `nop` before `rts; nop`, and the pinned
+  `-object` build rejects that pragma);
 * code with nop padding before a literal pool or mid-sequence `nop`s (some SDK
   areas, apparently built with an alignment setting);
 * inline struct copies through r1/r0 register pairs, which need `-speed`;

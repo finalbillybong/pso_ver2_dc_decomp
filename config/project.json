@@ -293758,6 +293758,131 @@
       "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_rna_params_8c35403c",
+      "source": "src/sdk/shc_rna_params_8c35403c.c",
+      "address": "0x8c35403c",
+      "entry": "_rna_set_nch_8c35403c",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_print_8c3545ea": "0x8c3545ea",
+        "_set_print_hook_8c3545cc": "0x8c3545cc",
+        "_str_8c3f4df8": "0x8c3f4df8",
+        "_str_8c3f4ec8": "0x8c3f4ec8",
+        "__divls": "0x8c12ba9c"
+      },
+      "ranges": [
+        {
+          "offset": 3424316,
+          "size": 1368
+        }
+      ],
+      "functions": [
+        {
+          "name": "rna_set_nch_8c35403c",
+          "address": "0x8c35403c",
+          "size": 88
+        },
+        {
+          "name": "rna_set_freq_8c354094",
+          "address": "0x8c354094",
+          "size": 58
+        },
+        {
+          "name": "rna_set_vol_8c3540ce",
+          "address": "0x8c3540ce",
+          "size": 74
+        },
+        {
+          "name": "rna_set_pan_8c354118",
+          "address": "0x8c354118",
+          "size": 100
+        },
+        {
+          "name": "rna_set_fx_8c35417c",
+          "address": "0x8c35417c",
+          "size": 108
+        },
+        {
+          "name": "rna_set_send1_8c3541e8",
+          "address": "0x8c3541e8",
+          "size": 96
+        },
+        {
+          "name": "rna_set_send2_8c354248",
+          "address": "0x8c354248",
+          "size": 92
+        },
+        {
+          "name": "rna_get_nch_8c3542a4",
+          "address": "0x8c3542a4",
+          "size": 30
+        },
+        {
+          "name": "rna_get_freq_8c3542c2",
+          "address": "0x8c3542c2",
+          "size": 30
+        },
+        {
+          "name": "rna_get_vol_8c3542e0",
+          "address": "0x8c3542e0",
+          "size": 32
+        },
+        {
+          "name": "rna_get_pan_8c354300",
+          "address": "0x8c354300",
+          "size": 38
+        },
+        {
+          "name": "rna_get_fx_8c354326",
+          "address": "0x8c354326",
+          "size": 64
+        },
+        {
+          "name": "rna_get_send1_8c354366",
+          "address": "0x8c354366",
+          "size": 64
+        },
+        {
+          "name": "rna_get_send2_8c3543a6",
+          "address": "0x8c3543a6",
+          "size": 44
+        },
+        {
+          "name": "rna_set_print_hook_8c3543d2",
+          "address": "0x8c3543d2",
+          "size": 6
+        },
+        {
+          "name": "flag_get_8c3543d8",
+          "address": "0x8c3543d8",
+          "size": 6
+        },
+        {
+          "name": "flag_clear_8c3543de",
+          "address": "0x8c3543de",
+          "size": 6
+        },
+        {
+          "name": "rna_set_send3_8c3543e4",
+          "address": "0x8c3543e4",
+          "size": 80
+        },
+        {
+          "name": "rna_get_send3_8c354434",
+          "address": "0x8c354434",
+          "size": 40
+        },
+        {
+          "name": "rna_sync_8c35445c",
+          "address": "0x8c35445c",
+          "size": 312
+        }
+      ],
+      "reference_sha256": "c8606a18b055058165a452c5a95c9e5609c37fedf9b57ccf6775edd4ea4c98f7",
+      "headers": [],
+      "boundary_review": "SHC pool group: 20 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
       "id": "shc_irq_lock_8c354594",
       "source": "src/sdk/shc_irq_lock_8c354594.c",
       "address": "0x8c354594",
@@ -294362,6 +294487,118 @@
       "reference_sha256": "12930ad043c34c904478aea734a97bda538b93e0297a564f19af17c91365fea7",
       "headers": [],
       "boundary_review": "SHC pool group: 18 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_heap_lists_8c359224",
+      "source": "src/sdk/shc_heap_lists_8c359224.c",
+      "address": "0x8c359224",
+      "entry": "_heap_lock_8c359224",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_d_8c3fb6c8": "0x8c3fb6c8",
+        "_d_8c3f6048": "0x8c3f6048",
+        "_g_heap_users_8c3fb6f8": "0x8c3fb6f8",
+        "_g_heaps_8c547710": "0x8c547710",
+        "_memset": "0x8c12b880",
+        "_span_split_8c3596f4": "0x8c3596f4",
+        "__quick_evn_mvn": "0x8c12bdc8"
+      },
+      "ranges": [
+        {
+          "offset": 3445284,
+          "size": 1232
+        }
+      ],
+      "functions": [
+        {
+          "name": "heap_lock_8c359224",
+          "address": "0x8c359224",
+          "size": 24
+        },
+        {
+          "name": "heap_unlock_8c35923c",
+          "address": "0x8c35923c",
+          "size": 22
+        },
+        {
+          "name": "heap_hang_8c359252",
+          "address": "0x8c359252",
+          "size": 4
+        },
+        {
+          "name": "heap_init_8c359256",
+          "address": "0x8c359256",
+          "size": 34
+        },
+        {
+          "name": "heap_finish_8c359278",
+          "address": "0x8c359278",
+          "size": 28
+        },
+        {
+          "name": "heap_create_8c359294",
+          "address": "0x8c359294",
+          "size": 106
+        },
+        {
+          "name": "heap_destroy_8c3592fe",
+          "address": "0x8c3592fe",
+          "size": 30
+        },
+        {
+          "name": "heap_name_8c35931c",
+          "address": "0x8c35931c",
+          "size": 4
+        },
+        {
+          "name": "heap_set_error_8c359320",
+          "address": "0x8c359320",
+          "size": 6
+        },
+        {
+          "name": "heap_reset_8c359326",
+          "address": "0x8c359326",
+          "size": 110
+        },
+        {
+          "name": "heap_total_8c359394",
+          "address": "0x8c359394",
+          "size": 70
+        },
+        {
+          "name": "heap_alloc_8c3593da",
+          "address": "0x8c3593da",
+          "size": 204
+        },
+        {
+          "name": "heap_free_8c3594a6",
+          "address": "0x8c3594a6",
+          "size": 200
+        },
+        {
+          "name": "heap_free_head_8c35956e",
+          "address": "0x8c35956e",
+          "size": 220
+        },
+        {
+          "name": "heap_check_8c35964a",
+          "address": "0x8c35964a",
+          "size": 114
+        },
+        {
+          "name": "heap_count_8c3596bc",
+          "address": "0x8c3596bc",
+          "size": 30
+        },
+        {
+          "name": "heap_count_free_8c3596da",
+          "address": "0x8c3596da",
+          "size": 26
+        }
+      ],
+      "reference_sha256": "9ff552f179e258188e8f285db4545ef25b735e2e7e9d2e187171db7adcbea77d",
+      "headers": [],
+      "boundary_review": "SHC pool group: 17 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
       "id": "shc_span_split_8c3596f4",
@@ -296837,6 +297074,36 @@
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_copy_out_8c36e384",
+      "source": "src/sdk/shc_copy_out_8c36e384.c",
+      "address": "0x8c36e384",
+      "entry": "_copy_out_8c36e384",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_g_driver_8c3fbdf0": "0x8c3fbdf0",
+        "_init_slots_8c36dea0": "0x8c36dea0",
+        "_wait_ready_8c36dfd4": "0x8c36dfd4",
+        "_wait_ready_8c36d98c": "0x8c36d98c",
+        "_finish_8c36dd18": "0x8c36dd18"
+      },
+      "ranges": [
+        {
+          "offset": 3531652,
+          "size": 532
+        }
+      ],
+      "functions": [
+        {
+          "name": "copy_out_8c36e384",
+          "address": "0x8c36e384",
+          "size": 532
+        }
+      ],
+      "reference_sha256": "120dca0e3fa4f043ffa82437932dd8534c88b996396284f0603d37fd95e2a3e7",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
       "id": "shc_start_8c36e598",
       "source": "src/sdk/shc_start_8c36e598.c",
       "address": "0x8c36e598",
@@ -297722,6 +297989,139 @@
       "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_vmfs_8c3787a0",
+      "source": "src/sdk/shc_vmfs_8c3787a0.c",
+      "address": "0x8c3787a0",
+      "entry": "_fs_memeq_8c3787a0",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_g_fs_cur_8c3fbfb8": "0x8c3fbfb8",
+        "_g_fs_8c56d0b0": "0x8c56d0b0",
+        "_str_8c3f77d4": "0x8c3f77d4",
+        "_fs_info_8c378750": "0x8c378750",
+        "_fs_dev_read_8c378764": "0x8c378764",
+        "_fs_dev_write_8c378778": "0x8c378778",
+        "_fs_dev_check_8c37878c": "0x8c37878c",
+        "_fs_crc_8c378f00": "0x8c378f00"
+      },
+      "ranges": [
+        {
+          "offset": 3573664,
+          "size": 1888
+        }
+      ],
+      "functions": [
+        {
+          "name": "fs_memeq_8c3787a0",
+          "address": "0x8c3787a0",
+          "size": 28
+        },
+        {
+          "name": "fs_copy32_8c3787bc",
+          "address": "0x8c3787bc",
+          "size": 28
+        },
+        {
+          "name": "fs_copy8_8c3787d8",
+          "address": "0x8c3787d8",
+          "size": 20
+        },
+        {
+          "name": "fs_fill_8c3787ec",
+          "address": "0x8c3787ec",
+          "size": 20
+        },
+        {
+          "name": "fs_count_8c378800",
+          "address": "0x8c378800",
+          "size": 56
+        },
+        {
+          "name": "fs_pack_8c378838",
+          "address": "0x8c378838",
+          "size": 78
+        },
+        {
+          "name": "fs_check_8c378886",
+          "address": "0x8c378886",
+          "size": 80
+        },
+        {
+          "name": "fs_load_8c3788d6",
+          "address": "0x8c3788d6",
+          "size": 230
+        },
+        {
+          "name": "fs_flush_8c3789bc",
+          "address": "0x8c3789bc",
+          "size": 188
+        },
+        {
+          "name": "fs_write_hdr_8c378a78",
+          "address": "0x8c378a78",
+          "size": 200
+        },
+        {
+          "name": "fs_read_blk_8c378b40",
+          "address": "0x8c378b40",
+          "size": 88
+        },
+        {
+          "name": "fs_step_8c378b98",
+          "address": "0x8c378b98",
+          "size": 96
+        },
+        {
+          "name": "fs_mount_8c378bf8",
+          "address": "0x8c378bf8",
+          "size": 260
+        },
+        {
+          "name": "fs_format_8c378cfc",
+          "address": "0x8c378cfc",
+          "size": 140
+        },
+        {
+          "name": "fs_read_8c378d88",
+          "address": "0x8c378d88",
+          "size": 60
+        },
+        {
+          "name": "fs_write_8c378dc4",
+          "address": "0x8c378dc4",
+          "size": 64
+        },
+        {
+          "name": "fs_poll_8c378e04",
+          "address": "0x8c378e04",
+          "size": 130
+        },
+        {
+          "name": "fs_result_8c378e86",
+          "address": "0x8c378e86",
+          "size": 18
+        },
+        {
+          "name": "fs_close_8c378e98",
+          "address": "0x8c378e98",
+          "size": 8
+        },
+        {
+          "name": "fs_sync_8c378ea0",
+          "address": "0x8c378ea0",
+          "size": 68
+        },
+        {
+          "name": "fs_free_8c378ee4",
+          "address": "0x8c378ee4",
+          "size": 28
+        }
+      ],
+      "reference_sha256": "3eacf0286cd0546c59fd7366dd0a763c0ccf72dea8c9c0d25aaab61289c1cd15",
+      "headers": [],
+      "boundary_review": "SHC pool group: 21 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
       "id": "shc_flash_id_8c378f3c",
       "source": "src/sdk/shc_flash_id_8c378f3c.c",
       "address": "0x8c378f3c",
@@ -297751,6 +298151,91 @@
       "reference_sha256": "d410dbf10ccfa0caa136a48af1e393fae9dc2ebc0d18fed5ca79fd97ffe81a92",
       "headers": [],
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_flash_cmd_8c379038",
+      "source": "src/sdk/shc_flash_cmd_8c379038.c",
+      "address": "0x8c379038",
+      "entry": "_flash_set_ctx_8c379038",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_d_8c3fbfc0": "0x8c3fbfc0",
+        "_flash_id_8c378f3c": "0x8c378f3c",
+        "_select_8c378714": "0x8c378714",
+        "_get_info_8c37873c": "0x8c37873c",
+        "_memcpy": "0x8c12b77c"
+      },
+      "ranges": [
+        {
+          "offset": 3575864,
+          "size": 584
+        }
+      ],
+      "functions": [
+        {
+          "name": "flash_set_ctx_8c379038",
+          "address": "0x8c379038",
+          "size": 18
+        },
+        {
+          "name": "flash_clear_ctx_8c37904a",
+          "address": "0x8c37904a",
+          "size": 10
+        },
+        {
+          "name": "flash_set_lang_8c379054",
+          "address": "0x8c379054",
+          "size": 54
+        },
+        {
+          "name": "flash_get_lang_8c37908a",
+          "address": "0x8c37908a",
+          "size": 78
+        },
+        {
+          "name": "id_byte_a_8c3790d8",
+          "address": "0x8c3790d8",
+          "size": 42
+        },
+        {
+          "name": "digit_8c379102",
+          "address": "0x8c379102",
+          "size": 6
+        },
+        {
+          "name": "flash_get_area_8c379108",
+          "address": "0x8c379108",
+          "size": 94
+        },
+        {
+          "name": "id_byte_c_8c379166",
+          "address": "0x8c379166",
+          "size": 42
+        },
+        {
+          "name": "id_byte_d_8c379190",
+          "address": "0x8c379190",
+          "size": 42
+        },
+        {
+          "name": "id_copy_8c3791ba",
+          "address": "0x8c3791ba",
+          "size": 70
+        },
+        {
+          "name": "id_block_8c379200",
+          "address": "0x8c379200",
+          "size": 60
+        },
+        {
+          "name": "id_check_8c37923c",
+          "address": "0x8c37923c",
+          "size": 68
+        }
+      ],
+      "reference_sha256": "02421c5de6ce278085f921bded4b95f9b04e44f35e884e07a6a7ebe2e982c68d",
+      "headers": [],
+      "boundary_review": "SHC pool group: 12 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
       "id": "shc_boot_exit_8c379280",
@@ -299366,6 +299851,81 @@
       "reference_sha256": "da2b93bc08cd1ce235ab807bd9c3551ee5954e87462693caf6c9b0f6e885d819",
       "headers": [],
       "boundary_review": "SHC pool group: 4 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_light_table_8c3c3fbc",
+      "source": "src/sdk/shc_light_table_8c3c3fbc.c",
+      "address": "0x8c3c3fbc",
+      "entry": "_set_light_mode_8c3c3fbc",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_call_8c3be280": "0x8c3be280",
+        "_call_8c3be38c": "0x8c3be38c",
+        "_d_8c3f8524": "0x8c3f8524",
+        "_light_mask_8c5c6270": "0x8c5c6270",
+        "_d_8c3f8508": "0x8c3f8508",
+        "_lights_8c5c6220": "0x8c5c6220",
+        "_spot_pos_8c5c6294": "0x8c5c6294",
+        "_spot_range_8c5c628c": "0x8c5c628c",
+        "_spots_8c5c6280": "0x8c5c6280",
+        "__quick_odd_mvn": "0x8c12bdd4"
+      },
+      "ranges": [
+        {
+          "offset": 3882940,
+          "size": 408
+        }
+      ],
+      "functions": [
+        {
+          "name": "set_light_mode_8c3c3fbc",
+          "address": "0x8c3c3fbc",
+          "size": 34
+        },
+        {
+          "name": "set_light_bit_8c3c3fde",
+          "address": "0x8c3c3fde",
+          "size": 56
+        },
+        {
+          "name": "set_ambient_8c3c4016",
+          "address": "0x8c3c4016",
+          "size": 14
+        },
+        {
+          "name": "set_spot_pos_8c3c4024",
+          "address": "0x8c3c4024",
+          "size": 24
+        },
+        {
+          "name": "set_light_a_8c3c403c",
+          "address": "0x8c3c403c",
+          "size": 52
+        },
+        {
+          "name": "set_light_1_8c3c4070",
+          "address": "0x8c3c4070",
+          "size": 4
+        },
+        {
+          "name": "set_light_b_8c3c4074",
+          "address": "0x8c3c4074",
+          "size": 50
+        },
+        {
+          "name": "set_spot_range_8c3c40a6",
+          "address": "0x8c3c40a6",
+          "size": 24
+        },
+        {
+          "name": "submit_lights_8c3c40be",
+          "address": "0x8c3c40be",
+          "size": 150
+        }
+      ],
+      "reference_sha256": "6b7ea557781f26f551bae9783da3f8fc5f1eb597f448f7666306a314a6d6083a",
+      "headers": [],
+      "boundary_review": "SHC pool group: 9 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
       "id": "shc_udp_8c3c4a30",

@@ -12,13 +12,13 @@
     "fallback_assembly_units_exact"
   ],
   "inputs_sha256": {
-    "config/asm.json": "2bf0bdca80d9af7c4d650c6fe5ab066bac8e16850c9e4460993bf4d3b825ab39",
+    "config/asm.json": "b53ab203f73d24593e744c21291c19f799dacd1cfbdef2a086b3c30265b904c8",
     "config/assets.json": "2910dc0f953037df2aac73b4f0ecdef61813693d629ca8ed6959c547f7cb1220",
     "config/compiler-packages.json": "5fb5c9ae2cbb8ef5d2a70b2cd792f36871adbbe9831ac82a23011ecc0d32862c",
-    "config/data.json": "8394388a342a98f2b15bf116624f0e28c4a20ad3505b0239684fc646a6ed26a8",
+    "config/data.json": "c06e600ae36111df11e06b546b7dd9a66bccc7a96aa33fa76ff5618e0c9fe427",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "c1434b7d0d85f883b33541820403b936919ff357d5d45ece9ed8c60748d7e243",
+    "config/project.json": "79044c42022c9e1f6d31b8786181a3ebe98774c4dc6ffb9cf1cf6efcb206f5b8",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/data/strings_8c284858.c": "cb16255c8ce183afbcb89c956a8f571e4ce6ef906acf5d31baea03f9d8066228",
@@ -2830,7 +2830,6 @@
     "src/data/tables_8c3c30e4.c": "d0336d5c3de00383b4e931f00c171bf2a04500066eb91b6235ae3fd431c2dbb0",
     "src/data/tables_8c3c36e4.c": "b2183edff6ee94a8f34bf4532de700ec75d1b200e1752eeb19b73ad328e9aa1b",
     "src/data/tables_8c3c3ce8.c": "15cefb1b889ebe31d574acfb7648d4670a0a47de579880c21e79d2af29116c29",
-    "src/data/tables_8c3c4144.c": "2953dbc7c4f0d28ee10510103cd686bec9d351306fdc22049c1504a1ab1ffc96",
     "src/data/tables_8c3c5cbc.c": "37290e11eb04da599faba8b62da402b7d3fc5fa2e43ddfa879bd3cfb3ffd5d12",
     "src/data/tables_8c3c5ee4.c": "b1c92f4add5af96096a790ea2af45423b811cdd44803a75cda80388fe3c2060b",
     "src/data/tables_8c3c7e3c.c": "601643e5262c4598d814efd0bf8d80db3cc877c5457ffe0b869b5a6b1025d9a0",
@@ -14368,6 +14367,7 @@
     "src/sdk/shc_copy_8c36e010.c": "5c1512db171f29a2c2b34a14a8b4ae86c823fc6f07cec18b145a6e129c758425",
     "src/sdk/shc_copy_defaults_8c3454dc.c": "41c48724683434dc4694840a968fbcf303b8830cf8d609b3f9c26a37b5826933",
     "src/sdk/shc_copy_defaults_8c3485b4.c": "8f1116adb7105b10ef0063cb36fca1c1b7643030f7572b8f3a96ceb08f2deb1d",
+    "src/sdk/shc_copy_out_8c36e384.c": "e3ba95a6993704dbd09b493ba07c574126fd5b00456cb89b8b37bf02e5ef19cc",
     "src/sdk/shc_copy_rect_8c35c1d8.c": "16636a4f5a66311aa828076087f700ed8f827cfb760769b84a354beecc038b1b",
     "src/sdk/shc_copy_vector_8c37e990.c": "f4c19b07bc8c7df08ff86f160707737a6718fd5b6dbf0bde4fa5a7c1cf70a11c",
     "src/sdk/shc_counter_incdec_8c34e1dc.c": "cd6c35da8e8866fbfa3c47a189764c1eaebae1e63c6769478f6157fe8b03a9b6",
@@ -14395,6 +14395,7 @@
     "src/sdk/shc_file_stream_8c349930.c": "144da1e826e92655e238f0538cdbf40bb13df2c95627bf9ef934930f1dc8e257",
     "src/sdk/shc_find_buffer_8c36333c.c": "07616be98f4eae7f3a75c9c47834f9d7ade550bfe90f0f4b34cc6c858a7304f6",
     "src/sdk/shc_flag_reset_8c1ffe64.c": "4d348614a8712046cd71b5bd45e8b4b1c92c28e29178e2decf98995bf3fa9fbb",
+    "src/sdk/shc_flash_cmd_8c379038.c": "59389e63aa59076e9895ef849f2b735477acb75054338331d98b6f6d7bc41cad",
     "src/sdk/shc_flash_id_8c378f3c.c": "3c53146198352a013f19300105545e3283cbe216446a66a95b2cc90242af31d3",
     "src/sdk/shc_flash_read_8c345ee4.c": "9db7e5519862691ed447591f72f815f6c527d4bf34a46c1d1e844df027a841e0",
     "src/sdk/shc_flash_read_byte_8c344f78.c": "11e7408da790836d61d14a54450f9352fbfc91a4c9060f6723135bcfe6bef9bb",
@@ -14417,6 +14418,7 @@
     "src/sdk/shc_handle_close_8c3489bc.c": "911a4ebad9110f0461b18f6d717200b9c568ecea44c184d5f8e71bd9568989ae",
     "src/sdk/shc_header_check_8c363370.c": "fd93fe3dbd5aecd2518142eb5ab78a5bf56f8055df75cce1002e6a9917c763c1",
     "src/sdk/shc_heap_8c384418.c": "551e839d8267735bf834c6456aded47a04cd9da07cb35851d1cfe03f488b95c9",
+    "src/sdk/shc_heap_lists_8c359224.c": "e2410f835088edf834db2771dc3ab708373a63a44f413d97750b2b664826a9f2",
     "src/sdk/shc_hello_packet_8c1ff604.c": "c3bafe75062d8ac02fec2e40cca04577478d094a61d6512be7887becd42c550e",
     "src/sdk/shc_init_all_8c3c64b0.c": "4157dfe013a0eefe0bbfc985aaf0d3f5f35e154428760deda13ab00ef05c40f2",
     "src/sdk/shc_init_pool_8c346358.c": "fabfa3b8154bf3324e4babd1c87db2d7ecbe14a22609be85f9dbbb40f9a6e1d0",
@@ -14431,6 +14433,7 @@
     "src/sdk/shc_is_break_char_8c1f9f14.c": "801f1cb4200c1e7196cac0067d795b88e1385d983cb9b6cf78c5709f5bae210f",
     "src/sdk/shc_is_kana_code_8c1f9e88.c": "20a741a5958896f9fba9a22c9957cb45e441ea5ceb3bba5375f31c73fff91a6c",
     "src/sdk/shc_item_pool_8c34aae8.c": "0d1301be3365501b17af7d1660832b4ed2b18e3db671e54b5ec0cf3574f4efcb",
+    "src/sdk/shc_light_table_8c3c3fbc.c": "4a78b2302d2fa7a6225a71f5caed6104034b41ec0084ddc15b68e366f53f941f",
     "src/sdk/shc_load_bank_8c348dfc.c": "ab13d82f364cef94e1ddd55434decc595e399b85f0f850b5fc2d73a7c0c3b81b",
     "src/sdk/shc_load_block_8c345b7c.c": "e3d5b8a6e58db219dde7028e2fddb1acab8fbd6747f4f50415378c0e82badec1",
     "src/sdk/shc_load_header_8c346688.c": "11d760cccc8041c5f488fa10db3c6ae026f8402ad42f7ed976a3e3bdd277bdc2",
@@ -14517,6 +14520,7 @@
     "src/sdk/shc_resume_handle_8c347718.c": "3e8bf8ac1bf4f175ebad588c3b4a7dfd3385296e141ddc3e80298a217c045918",
     "src/sdk/shc_ret0_pair_8c34dc8c.c": "064391b98916dd1b54136969abc7b535f48cd188d03a7e58b93d33e811ca2789",
     "src/sdk/shc_ring_buffer_8c358db8.c": "60dbbdd57990eb53c1fcb5ce20be35f26045df4f35a736f212339031c063ca37",
+    "src/sdk/shc_rna_params_8c35403c.c": "5361a5b9c4c18591f7df61eac1865a2042f839c76bb39c88fe7ab2dbdca9a2a4",
     "src/sdk/shc_run_steps_8c34838c.c": "895cb516c03998e5f0144429c59edc88391dea773cefebeb94c383c91b645b06",
     "src/sdk/shc_run_until_done_8c202c50.c": "c9db13906c4a9ccd7033bed6549859b600c47f099ecc3a341742cb8934f23f0b",
     "src/sdk/shc_scale_colors_8c37e89c.c": "2fd8c2efc7d5c6aff84989a48589b8f971c5d2aa4c8d386b5e2547772f32e1c8",
@@ -14631,6 +14635,7 @@
     "src/sdk/shc_video_init_8c38c4fc.c": "a8c3941dfc9265647eeee256146c572084c91d9afdf9cbdc9e7727faeaf00c38",
     "src/sdk/shc_video_mode_8c371e38.c": "4a2a742d64566305c40f93592a024dbe19c683067de49f06fc5a04ba620206ea",
     "src/sdk/shc_view_matrix_8c3c14a0.c": "12acf02a201be8cf9259da840bf2d1954711f25f2b32165835e7d3bc84537e2e",
+    "src/sdk/shc_vmfs_8c3787a0.c": "3bbd7d7e2cddc29b6af786eae9858b91c80d4a43c3e1dbe65c0b28e245d18436",
     "src/sdk/shc_vmu_tasks_8c373184.c": "814a78d681dea9ed2883e427065d183fe4d2c5cbccaac6a6b36a16443115afe9",
     "src/sdk/shc_voice_cfg_8c342b4c.c": "07c884c8319a93b94e199ae1b202a20ace8932aa9cc7491d31a2a27e7139b053",
     "src/sdk/shc_voice_mode_8c342548.c": "b9c07a7e6875c52e447bf7964e917c8008383c9a28ca2e7eeb3503247bcec524",
@@ -137084,6 +137089,13 @@
       "-optimize=1",
       "-macsave=0"
     ],
+    "shc_rna_params_8c35403c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "shc_irq_lock_8c354594": [
       "-cpu=sh4",
       "-endian=little",
@@ -137169,6 +137181,13 @@
       "-macsave=0"
     ],
     "shc_ring_buffer_8c358db8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_heap_lists_8c359224": [
       "-cpu=sh4",
       "-endian=little",
       "-fpu=single",
@@ -137490,6 +137509,13 @@
       "-optimize=1",
       "-macsave=0"
     ],
+    "shc_copy_out_8c36e384": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "shc_start_8c36e598": [
       "-cpu=sh4",
       "-endian=little",
@@ -137588,7 +137614,21 @@
       "-optimize=1",
       "-macsave=0"
     ],
+    "shc_vmfs_8c3787a0": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "shc_flash_id_8c378f3c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_flash_cmd_8c379038": [
       "-cpu=sh4",
       "-endian=little",
       "-fpu=single",
@@ -137889,6 +137929,13 @@
       "-optimize=1",
       "-macsave=0"
     ],
+    "shc_light_table_8c3c3fbc": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "shc_udp_8c3c4a30": [
       "-cpu=sh4",
       "-endian=little",
@@ -138074,7 +138121,7 @@
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 311119,
-  "typed_data_modules": 3337,
+  "source_only_rejected_retained_bytes": 311091,
+  "typed_data_modules": 3336,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }
