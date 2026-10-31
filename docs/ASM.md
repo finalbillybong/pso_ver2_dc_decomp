@@ -65,7 +65,10 @@ stops with a message naming the paths it tried and these commands.
 * **Reachable code the listing does not decode.** Code side also includes every free
   halfword reached by recursive descent (SH-4 control flow, delay slots included) from a
   proven entry point, together with its literal slots. Entries are, by evidence class,
-  *referenced* (a typed-data `fn_<addr>` pointer, or a literal word loaded by a listed or
+  *referenced* (a function a typed-data module points at — a vtable or function-table
+  slot, or a `(void *)` pointer entry, all of which the data lint requires to be declared
+  `extern void name(void)`; seeds are found from that structure, never from symbol names,
+  so renames cannot change the plan — or a literal word loaded by a listed or
   already reached `mov.l`) or *function-shaped* (an aligned register-save prologue,
   `sts.l pr,@-r15` or `mov.l r8..r14,@-r15`, directly after a terminator and its delay
   slot or after code-side bytes). An entry whose executed path meets an invalid encoding,

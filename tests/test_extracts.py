@@ -3,6 +3,8 @@ complete-coverage layout for the source-only build, publication rules, and the
 recursive-descent proof that gap bytes are code. Fixtures only; no dump needed."""
 import hashlib
 import json
+import re
+import tempfile
 from pathlib import Path
 import struct
 import sys
@@ -92,24 +94,68 @@ class ReachTests(unittest.TestCase):
         # c: rts; nop | gap: sts.l pr; mov #1,r0; lds.l pr; rts; nop
         img = self.image([0x000b, 0x0009, 0x4f22, 0xe001, 0x4f26, 0x000b, 0x0009, 0x0009])
         own = bytearray(len(img)); own[0:4] = b'\2' * 4
-        stats = asmgen.reach_code(img, BASE, own, {'units': []}, {BASE, BASE + 2})
+        stats = asmgen.reach_code(img, BASE, own, set(), {BASE, BASE + 2})
         self.assertEqual(bytes(own[4:14]), b'\2' * 10)
         self.assertEqual(stats['function_shaped'], 10)
 
     def test_invalid_encoding_on_an_executed_path_rejects_the_entry(self):
         img = self.image([0x000b, 0x0009, 0x4f22, 0xffff, 0x000b, 0x0009])
         own = bytearray(len(img)); own[0:4] = b'\2' * 4
-        stats = asmgen.reach_code(img, BASE, own, {'units': []}, {BASE, BASE + 2})
+        stats = asmgen.reach_code(img, BASE, own, set(), {BASE, BASE + 2})
         self.assertEqual(bytes(own[4:]), bytes(len(img) - 4))
         self.assertEqual(stats['entries_rejected'], 1)
 
     def test_typed_function_pointer_is_a_referenced_entry(self):
         img = self.image([0xe001, 0x000b, 0x0009, 0x0009])
         own = bytearray(len(img))
-        data = {'units': [{'symbols': {'_fn_00001000': '0x1000'}}]}
-        stats = asmgen.reach_code(img, BASE, own, data, set())
+        stats = asmgen.reach_code(img, BASE, own, {0x1000}, set())
         self.assertEqual(bytes(own[0:6]), b'\2' * 6)
         self.assertEqual(stats['referenced'], 6)
+
+
+class SeedTests(unittest.TestCase):
+    """Recursive descent is seeded from data structure (declared functions bound in typed
+    data), never from symbol names, so renaming symbols cannot change the plan."""
+
+    SOURCE = '''typedef void (*VirtualFunction)(void);
+extern void {f}(void);
+extern const char {d}[];
+VirtualFunction const vt_00001100[3] = {{ 0, 0, {f} }};
+const void *const d_0000110c[1] = {{ {d} }};
+'''
+
+    def targets(self, f, d):
+        with tempfile.TemporaryDirectory() as t:
+            root = Path(t)
+            (root / 'src/data').mkdir(parents=True)
+            (root / 'src/data/m.c').write_text(self.SOURCE.format(f=f, d=d))
+            unit = {'source': 'src/data/m.c', 'symbols': {'_' + f: '0x1200', '_' + d: '0x1300'}}
+            return asmgen.function_pointer_targets(root, {'units': [unit]})
+
+    def test_declared_functions_are_seeds_whatever_their_name(self):
+        self.assertEqual(self.targets('fn_00001200', 'str_00001300'), {0x1200})
+        self.assertEqual(self.targets('game_main_00001200', 'title_text'), {0x1200})
+        self.assertEqual(self.targets('fn_x', 'fn_00001300'), {0x1200})  # a data object named fn_ is not a seed
+
+    def test_renaming_every_committed_data_symbol_keeps_the_seed_set(self):
+        root = Path(__file__).resolve().parents[1]
+        data = json.loads((root / 'config/data.json').read_text())
+        before = asmgen.function_pointer_targets(root, data)
+        self.assertTrue(before)
+        names = sorted({n for u in data['units'] for n in u.get('symbols', {})})
+        rename = {n: '_renamed_%05d' % i for i, n in enumerate(names)}
+        ident = re.compile(r'\b[A-Za-z_][A-Za-z_0-9]*\b')
+        swap = lambda m: rename['_' + m[0]][1:] if '_' + m[0] in rename else m[0]
+        with tempfile.TemporaryDirectory() as t:
+            tmp = Path(t)
+            units = []
+            for u in data['units']:
+                text = (root / u['source']).read_text()
+                text = ident.sub(swap, text)
+                (tmp / u['source']).parent.mkdir(parents=True, exist_ok=True)
+                (tmp / u['source']).write_text(text)
+                units.append(dict(u, symbols={rename[n]: a for n, a in u.get('symbols', {}).items()}))
+            self.assertEqual(asmgen.function_pointer_targets(tmp, {'units': units}), before)
 
 
 if __name__ == '__main__':

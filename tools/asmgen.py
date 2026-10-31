@@ -440,7 +440,7 @@ def code_spans(root, lst, starts):
     # Code the listing does not decode, proven by reachability (see reach_code).
     build_enc(root)
     REACH_STATS.clear()
-    REACH_STATS.update(reach_code(reference, base, own, data, lst))
+    REACH_STATS.update(reach_code(reference, base, own, function_pointer_targets(root, data), lst))
     pad_alignment(reference, base, own)
     spans, o = [], 0
     while o < n:
@@ -456,15 +456,36 @@ def code_spans(root, lst, starts):
     return spans
 
 
+def function_pointer_targets(root, data):
+    """Addresses that typed static data points at as functions, by structure, not by name.
+
+    The data lint only accepts a function in a vtable or function-table slot, or as a
+    `(void *)name` pointer-table or record entry, when the source declares it
+    `extern void name(void)`; those words are R_SH_DIR32 relocations to the bound address.
+    A declared function's bound address is therefore a code entry point whatever the
+    symbol is called (`fn_<addr>` or a real name after a rename)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import data as static_data
+    targets = set()
+    for u in data['units']:
+        text = (Path(root) / u['source']).read_text()
+        for stmt in static_data.statements(text):
+            m = re.fullmatch(r'extern void (' + static_data.IDENT + r')\(void\)', stmt)
+            if m and ('_' + m[1]) in u.get('symbols', {}):
+                targets.add(int(u['symbols']['_' + m[1]], 0))
+    return targets
+
+
 REACH_STATS = {}
 PROLOGUES = {'sts.l PR,@-r15'} | {f'mov.l r{i},@-r15' for i in range(8, 15)}
 
 
-def reach_code(img, base, own, data, lst):
+def reach_code(img, base, own, fn_targets, lst):
     """Mark as code (own=2) every free halfword reached by recursive descent from a proven
     entry point, and its literal slots. Entries are, by evidence class:
 
-    * referenced: a typed-data `fn_<addr>` pointer, or a literal word that code-side or
+    * referenced: a function-pointer target of typed static data (see function_pointer_targets),
+      or a literal word that code-side or
       listed (or already reached) instruction loads with `mov.l`;
     * function-shaped: an aligned register-save prologue (`sts.l pr,@-r15` or
       `mov.l r8..r14,@-r15`) directly after a terminator (`rts`, `rte`, `jmp`, `bra` and its
@@ -542,11 +563,9 @@ def reach_code(img, base, own, data, lst):
     loaders = set(lst)  # instructions: the listing, then everything reached
     while True:
         cand = {}
-        for u in data['units']:
-            for name, a in u.get('symbols', {}).items():
-                v = int(a, 0)
-                if name.startswith('_fn_') and free(v) and v % 2 == 0:
-                    cand.setdefault(v, 'referenced')
+        for v in fn_targets:
+            if free(v) and v % 2 == 0:
+                cand.setdefault(v, 'referenced')
         for pc in loaders:
             r = pcrel(h(pc), pc)
             if r and r[0] == 'mov.l' and base <= r[1] < base + n - 3 and own[r[1] - base]:
