@@ -572,7 +572,8 @@ def build_units(root, reference, out_dir, tools=None):
         return sub['id'], code
     # At most four assembler/linker processes at a time.
     from concurrent.futures import ThreadPoolExecutor
-    with ThreadPoolExecutor(max_workers=min(4, os.cpu_count() or 1)) as pool:
+    jobs = max(1, min(4, int(os.environ.get('PSO_ASM_JOBS', '4')), os.cpu_count() or 1))
+    with ThreadPoolExecutor(max_workers=jobs) as pool:
         return dict(pool.map(one, produced))
 
 

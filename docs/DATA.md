@@ -208,8 +208,9 @@ of the file, so they stay reference-backed.
 The static-data map's other high-entropy pieces were **not** made assets:
 
 * 57 pieces (about 55 KB, mostly in the SDK region) start with SH-4 register-save
-  prologues and contain `rts`. They are undecoded code and remain reference-backed
-  code gaps.
+  prologues and contain `rts`. They are undecoded code; where reachability proves them
+  (see ASM.md) they are now not-decompiled fallback assembly, and the rest are dump
+  extracts.
 * Seven 256–560-byte pieces are lookup tables, such as CRC-16 tables. They are
   program data, typed as tables where the rules allow.
 
@@ -218,6 +219,28 @@ earn no image-coverage or typed-data credit. A source-only build accepts them as
 dump-provided and reports them separately from the bytes that still require the
 reference. A later step could rebuild the ACCESS resource from its parts once its
 format is understood.
+
+## Dump extracts
+
+After compiled C/SHC, typed data, assets and assembly (see [ASM.md](ASM.md)), the
+bytes no source form covers yet are listed in `config/extracts.json` by range,
+SHA-256 and a coarse kind (`zero_run` or `untyped_bytes`). **Their bytes are never
+committed.** Every build takes each extract from your own verified dump, checks its
+hash and places it, so `tools/project.py build --source-only` can integrate the whole
+image without copying any reference gap. On every build each extract is re-cut around
+any C, SHC, typed-data, asset or assembly range that now overlaps it, so newly
+reconstructed bytes just shrink the extracts; `python3 -B tools/extracts.py plan`
+(maintainer step, with the dump) re-records them.
+
+Extracts are **not decompiled code and not typed data**. They have their own figure,
+**dump extracts**, and earn no code-range, matching, typed-data or image-coverage
+credit. By the static-data map's classification they are mostly opaque high-entropy
+pieces and unclassified data, zero runs, byte tables with values above `0x7f`, records
+the typing rules do not yet accept and Shift-JIS text. About a quarter (roughly 54 KB)
+lies where the earlier static-data map assumed code but no reference or prologue proves
+it reachable; it may be code, and stays an extract rather than being called fallback
+assembly without proof (see [PROGRESS.md](PROGRESS.md) for current figures).
+`tools/check_publication.py` allows the manifest only and rejects long values in it.
 
 ## Progress figures
 

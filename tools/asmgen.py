@@ -150,7 +150,9 @@ def build_enc(root=ROOT):
     tag = matching.sha(objdump)[:16]
     path = cache / ('enc-' + tag + '.json')
     if path.exists():
-        return {int(k): v for k, v in json.loads(path.read_text()).items()}
+        table = {int(k): v for k, v in json.loads(path.read_text()).items()}
+        ENC_CACHE.update(table)
+        return table
     assembler = Path(json.loads((Path(root) / 'config/asm-installed.json').read_text())['assembler'])
     allbin = cache / 'all.bin'
     allbin.write_bytes(b''.join(struct.pack('<H', i) for i in range(65536)))
@@ -180,6 +182,7 @@ def build_enc(root=ROOT):
     b = (cache / 'enc.bin').read_bytes()
     table = {o: cand[o] for i, o in enumerate(good) if struct.unpack_from('<H', b, 2 * i)[0] == o}
     path.write_text(json.dumps({str(k): v for k, v in table.items()}))
+    ENC_CACHE.update(table)
     return table
 
 
@@ -434,6 +437,11 @@ def code_spans(root, lst, starts):
         mark(int(u['address'], 0), int(u['address'], 0) + u['ranges'][0]['size'], 1)
     for a in assets['assets']:
         mark(int(a['address'], 0), int(a['address'], 0) + a['size'], 1)
+    # Code the listing does not decode, proven by reachability (see reach_code).
+    build_enc(root)
+    REACH_STATS.clear()
+    REACH_STATS.update(reach_code(reference, base, own, data, lst))
+    pad_alignment(reference, base, own)
     spans, o = [], 0
     while o < n:
         if own[o] == 2:
@@ -446,6 +454,147 @@ def code_spans(root, lst, starts):
         else:
             o += 1
     return spans
+
+
+REACH_STATS = {}
+PROLOGUES = {'sts.l PR,@-r15'} | {f'mov.l r{i},@-r15' for i in range(8, 15)}
+
+
+def reach_code(img, base, own, data, lst):
+    """Mark as code (own=2) every free halfword reached by recursive descent from a proven
+    entry point, and its literal slots. Entries are, by evidence class:
+
+    * referenced: a typed-data `fn_<addr>` pointer, or a literal word that code-side or
+      listed (or already reached) instruction loads with `mov.l`;
+    * function-shaped: an aligned register-save prologue (`sts.l pr,@-r15` or
+      `mov.l r8..r14,@-r15`) directly after a terminator (`rts`, `rte`, `jmp`, `bra` and its
+      delay slot, plus alignment padding) or after code-side bytes.
+
+    Descent follows SH-4 control flow, delay slots included (bt/bf both ways, bra to its
+    target, bsr/jsr fall through after the call, rts/rte/jmp/braf stop). An entry whose
+    executed path meets an invalid encoding, or runs into its own literal slot, is rejected
+    with everything it reached. Iterates until no new entry appears. Returns statistics."""
+    n = len(img)
+    free = lambda pc: base <= pc < base + n - 1 and own[pc - base] == 0 and own[pc - base + 1] == 0
+    h = lambda pc: img[pc - base] | img[pc - base + 1] << 8
+    w = lambda pc: struct.unpack_from('<I', img, pc - base)[0]
+    enc = None
+    import functools
+
+    @functools.lru_cache(maxsize=None)
+    def mnem(op):
+        t = ENC_CACHE.get(op)
+        return t.split()[0] if t else None
+
+    def descend(e):
+        seen, stack, slots = set(), [e], set()
+        while stack:
+            pc = stack.pop()
+            while not (pc in seen or not free(pc)):
+                if pc in slots:
+                    return None
+                op = h(pc); r = pcrel(op, pc); m = r[0] if r else mnem(op)
+                if m is None:
+                    return None
+                seen.add(pc)
+                if r and r[2]:
+                    slots.update(range(r[1], r[1] + r[2], 2))
+                if m in ('bt', 'bf'):
+                    stack.append(r[1]); pc += 2; continue
+                if m in ('bt/s', 'bf/s'):
+                    stack.append(r[1]); stack.append(pc + 4)
+                if m in ('bt/s', 'bf/s', 'bra', 'bsr', 'jsr', 'bsrf', 'jmp', 'rts', 'rte', 'braf'):
+                    slot = pc + 2
+                    if slot not in seen and free(slot):
+                        so = h(slot); sr = pcrel(so, slot)
+                        if sr is None and mnem(so) is None:
+                            return None
+                        seen.add(slot)
+                        if sr and sr[2]:
+                            slots.update(range(sr[1], sr[1] + sr[2], 2))
+                    if m == 'bra':
+                        stack.append(r[1])
+                    elif m == 'bsr':
+                        stack.append(r[1]); pc += 4; continue
+                    elif m in ('jsr', 'bsrf'):
+                        pc += 4; continue
+                    break
+                pc += 2
+        if seen & slots:
+            return None
+        return seen, slots
+
+    TERM = ('rts', 'rte', 'jmp', 'bra')
+
+    def terminated(p):
+        # p follows a terminator and its delay slot, possibly with alignment padding between
+        # (the delay slot itself may be a nop), or follows code-side bytes.
+        q = p - 2
+        while q >= base and h(q) in (0x0009, 0x0000) and q > p - 8:
+            q -= 2
+        if q < base:
+            return False
+        return (own[q - base] == 2 or mnem(h(q)) in TERM
+                or (q - 2 >= base and mnem(h(q - 2)) in TERM))
+
+    stats = {'referenced': 0, 'function_shaped': 0, 'entries_rejected': 0}
+    tried = set()
+    loaders = set(lst)  # instructions: the listing, then everything reached
+    while True:
+        cand = {}
+        for u in data['units']:
+            for name, a in u.get('symbols', {}).items():
+                v = int(a, 0)
+                if name.startswith('_fn_') and free(v) and v % 2 == 0:
+                    cand.setdefault(v, 'referenced')
+        for pc in loaders:
+            r = pcrel(h(pc), pc)
+            if r and r[0] == 'mov.l' and base <= r[1] < base + n - 3 and own[r[1] - base]:
+                v = w(r[1])
+                if free(v) and v % 2 == 0:
+                    cand.setdefault(v, 'referenced')
+        for o in range(0, n - 1, 4):
+            pc = base + o
+            if free(pc) and ENC_CACHE.get(h(pc)) in PROLOGUES and terminated(pc):
+                cand.setdefault(pc, 'function_shaped')
+        new = {e: k for e, k in cand.items() if e not in tried}
+        if not new:
+            return stats
+        for e, k in sorted(new.items()):
+            tried.add(e)
+            if not free(e):
+                continue
+            r = descend(e)
+            if r is None:
+                stats['entries_rejected'] += 1
+                continue
+            code, slots = r
+            loaders |= code
+            for pc in code | {x for x in slots if free(x)}:
+                own[pc - base] = own[pc - base + 1] = 2
+            stats[k] += 2 * len(code) + 2 * len({x for x in slots})
+
+
+ENC_CACHE = {}
+
+
+def pad_alignment(img, base, own, longest=6):
+    """Alignment padding (0x0009 or 0x0000 halfwords, at most `longest` bytes) between two
+    code-side stretches is code-side too."""
+    n = len(img)
+    o = 2
+    while o < n - 2:
+        if own[o] == 0 and own[o - 1] == 2:
+            q = o
+            while (q < n - 1 and own[q] == 0 and own[q + 1] == 0 and (img[q] | img[q + 1] << 8) in (0x0009, 0x0000)
+                   and q - o < longest):
+                q += 2
+            if q < n and own[q] == 2 and q > o:
+                for x in range(o, q):
+                    own[x] = 2
+            o = max(q, o + 2)
+        else:
+            o += 2
 
 
 def plan(root=ROOT):

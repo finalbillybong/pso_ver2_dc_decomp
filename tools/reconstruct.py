@@ -834,17 +834,29 @@ def verify(checkout, output):
     total = read(checkout / 'config/decoded.json')['size']
     compiled = sum(r['size'] for u in manifest['units'] for r in u['ranges'])
     typed = sum(r['size'] for u in project.static_data.read(checkout)['units'] for r in u['ranges'])
-    assets = project.dump_assets.total(project.dump_assets.read(checkout))
-    # Assembly (generated from the dump, re-cut around admitted C) is source-provided too.
-    assembled = sum(sp['size'] for sp in project.asm_units.placed_spans(checkout))
-    retained = total - compiled - typed - assets - assembled
-    if result.returncode == 0 or f'{retained:,} bytes' not in result.stdout + result.stderr or before != artifacts():
-        raise ValueError('Source-only rejection/artifact guard failed')
+    # Retained bytes are whatever no origin (C/SHC, typed data, assets, assembly generated from
+    # the dump, dump extracts) covers.
+    spans = project.layout(manifest, total, project.static_data.read(checkout), project.dump_assets.read(checkout),
+                           project.asm_units.read(checkout), project.dump_extracts.read(checkout))
+    retained = sum(s['size'] for s in spans if s['origin'] == 'reference_unreconstructed')
+    if retained:
+        if result.returncode == 0 or f'{retained:,} bytes' not in result.stdout + result.stderr or before != artifacts():
+            raise ValueError('Source-only rejection/artifact guard failed')
+    else:
+        # Every byte has an origin: the source-only build must succeed and reproduce the image,
+        # and leave the same verified artifacts (verify_source already built source-only).
+        status_path = scratch / 'project-build/status.json'
+        after = artifacts()
+        same = all(before.get(k) == after.get(k) for k in ('project-build/build.json', 'project-build/DP_ADDRESS.rebuilt.bin'))
+        if (result.returncode != 0 or not read(status_path).get('source_only_build_exact')
+                or not read(status_path).get('integrated_image_exact') or not same):
+            raise ValueError('Source-only build failed or changed the verified build receipt or image')
     test_log = next(output / f'check-{i}.log' for i, args in enumerate(commands) if 'unittest' in args)
     test_count = int(re.search(r'Ran (\d+) tests?', test_log.read_text())[1])
     report = dict(status='passed', steps=steps, test_count=test_count, matching_functions=sum(len(u['functions']) for u in manifest['units']),
                   compiled_function_range_bytes=compiled, reconstructed_data_bytes=typed, retained_reference_bytes=retained,
-                  fresh_builds=2, source_only_rejected=True, artifacts_preserved=True,
+                  fresh_builds=2, source_only_rejected=bool(retained), source_only_build_exact=not retained,
+                  artifacts_preserved=True,
                   source_validation_sha256=digest((checkout / 'config/source-validation.json').read_bytes()),
                   token_cost_measurements=None)
     write(output / 'verification.json', report)
@@ -938,8 +950,11 @@ def report_batch(baseline, findings, verification, name):
     added = sum(r['size'] for u in new for r in u['ranges'])
     typed = sum(r['size'] for u in project.static_data.read(root)['units'] for r in u['ranges'])
     typed_and_assets = typed + project.dump_assets.total(project.dump_assets.read(root))
-    assembled = sum(sp['size'] for sp in project.asm_units.placed_spans(root))
-    lead = f'{count} exact functions in {len(current)} modules; {size:,} compiled function-range bytes; {typed:,} typed static-data bytes; {total-size-typed_and_assets-assembled:,} retained reference bytes. Code-range coverage {size/total*100:.4f}%, image coverage {(size+typed)/total*100:.4f}%; neither is code completion.'
+    spans_now = project.layout(manifest, total, project.static_data.read(root), project.dump_assets.read(root),
+                               project.asm_units.read(root), project.dump_extracts.read(root))
+    kept = sum(s['size'] for s in spans_now if s['origin'] == 'reference_unreconstructed')
+    assembled = total - size - typed_and_assets - kept  # assembly and dump extracts
+    lead = f'{count} exact functions in {len(current)} modules; {size:,} compiled function-range bytes; {typed:,} typed static-data bytes; {kept:,} retained reference bytes. Code-range coverage {size/total*100:.4f}%, image coverage {(size+typed)/total*100:.4f}%; neither is code completion.'
     new_functions = sum(len(u['functions']) for u in new)
     text = f'# Reconstruction batch: {name}\n\n{new_functions} new matching functions / {added:,} bytes. All {sum(len(u["functions"]) for u in old.values())} prior functions preserved.\n\n{lead}\n\n'
     text += '| Function | Address | Complete bytes |\n| --- | --- | ---: |\n'
@@ -965,7 +980,6 @@ def report_batch(baseline, findings, verification, name):
             content = content.replace('After ten unsuccessful distinct hypotheses on a target, or sooner when evidence\nruns out,', 'After two or three unsuccessful distinct hypotheses, park unless concrete new\nevidence justifies more; never exceed ten cumulative hypotheses. Then')
         if assembled:
             # With generated assembly the retained figure also excludes assembled bytes.
-            kept = total - size - typed_and_assets - assembled
             content = re.sub(r'\*\*[\d,]+ bytes still come from', f'**{kept:,} bytes still come from', content)
             content = re.sub(r'retains \*\*[\d,]+ reference bytes', f'retains **{kept:,} reference bytes', content)
         path.write_text(content)

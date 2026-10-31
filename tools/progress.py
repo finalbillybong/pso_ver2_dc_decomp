@@ -11,6 +11,7 @@ import project
 import data as static_data
 import assets as dump_assets
 import asm_units
+import extracts as dump_extracts
 from matching import FLAGS, dependencies, sha
 from shc_units import SHC_COMPILER, is_shc, unit_flags
 
@@ -32,6 +33,8 @@ def inputs(root, manifest):
         names.update({dump_assets.MANIFEST, 'tools/assets.py'})
     if asm_units.read(root)['units']:
         names.update({asm_units.MANIFEST, 'tools/asm_units.py', 'tools/asmgen.py'})
+    if dump_extracts.read(root)['extracts']:
+        names.update({dump_extracts.MANIFEST, 'tools/extracts.py'})
     if data['units']:
         names.update({static_data.MANIFEST, 'tools/data.py'})
         names.update(unit['source'] for unit in data['units'])
@@ -68,10 +71,17 @@ def summary(root=ROOT):
         required.add('hand_assembly_units_exact')
     if fallback_units:
         required.add('fallback_assembly_units_exact')
+    extracts = dump_extracts.read(root)
+    if extracts['extracts']:
+        required.add('dump_extracts_hash_verified')
     if not required <= set(proof['checks']):
         raise ValueError('Incomplete exact-build verification')
     assets = dump_assets.read(root)
-    spans = project.layout(manifest, decoded['size'], data, assets, asm)
+    spans = project.layout(manifest, decoded['size'], data, assets, asm, extracts)
+    if not any(s['origin'] == 'reference_unreconstructed' for s in spans):
+        required.add('source_only_build_exact')
+        if not required <= set(proof['checks']):
+            raise ValueError('Incomplete exact-build verification')
     # Lints every data source and rejects integers or floats equal to a symbol address.
     static_data.check_disguised_pointers(data, manifest, root)
     static_data.check_external_symbols(data, manifest, root)
@@ -98,7 +108,8 @@ def summary(root=ROOT):
             functions += 1
         if cursor != end:
             raise ValueError('Functions do not cover the admitted module')
-    retained = decoded['size'] - matched - typed - asset_bytes - hand_bytes - fallback_bytes
+    extract_bytes = sum(s['size'] for s in spans if s['origin'] == 'dump_extract')
+    retained = decoded['size'] - matched - typed - asset_bytes - hand_bytes - fallback_bytes - extract_bytes
     if proof['source_only_rejected_retained_bytes'] != retained:
         raise ValueError('Stale reference-gap evidence')
     return {'schema_version': 1, 'version': 'pal', 'status': 'hybrid_reconstruction',
@@ -119,6 +130,12 @@ def summary(root=ROOT):
             'dump_asset_bytes': asset_bytes,
             'dump_assets': len(assets['assets']),
             'dump_asset_percent_of_image': round(100 * asset_bytes / decoded['size'], 8),
+            **({'dump_extract_bytes': extract_bytes, 'dump_extracts': len(extracts['extracts']),
+                'dump_extract_percent_of_image': round(100 * extract_bytes / decoded['size'], 8),
+                'dump_extract_bytes_by_kind': {k: sum(e['size'] for e in extracts['extracts'] if e['kind'] == k)
+                                               for k in sorted(dump_extracts.KINDS)},
+                'extract_metric': 'Remaining untyped bytes (config/extracts.json) that every build takes from your own dump and checks against recorded hashes, re-cut around every other origin. Not decompiled and not typed data: no code-range, matching, typed-data or image-coverage credit.'}
+               if extracts['extracts'] else {}),
             **(asm_figures(asm, matched, typed, asset_bytes, hand_bytes, fallback_bytes, extent, decoded['size'])
                if asm['units'] else {}),
             'code_completion_percent': None,
@@ -134,9 +151,10 @@ def summary(root=ROOT):
 def asm_figures(asm, matched, typed, asset_bytes, hand, fallback, data_extent, total):
     """Assembly figures, kept apart from the code, data and image-coverage figures."""
     code_extent = asm.get('code_extent', {}).get('bytes')
-    if not (isinstance(code_extent, int) and data_extent and code_extent + data_extent == total
-            and matched + hand + fallback <= code_extent):
+    if not (isinstance(code_extent, int) and data_extent and code_extent + data_extent == total):
         raise ValueError('Assembly units need a recorded code extent (image minus the data extent)')
+    # The code extent is the image minus the static-data extent estimate. Reachability proves
+    # some bytes that estimate counted as data are code, so code may slightly exceed it.
     buildable = matched + typed + asset_bytes + hand + fallback
     return {'code_extent_bytes': code_extent,
             'compiled_percent_of_code_extent': round(100 * matched / code_extent, 8),
@@ -146,7 +164,7 @@ def asm_figures(asm, matched, typed, asset_bytes, hand, fallback, data_extent, t
             'fallback_assembly_percent_of_code_extent': round(100 * fallback / code_extent, 8),
             'source_buildable_with_dump_bytes': buildable,
             'source_buildable_with_dump_percent': round(100 * buildable / total, 8),
-            'retained_code_side_bytes': code_extent - matched - hand - fallback,
+            'retained_code_side_bytes': max(0, code_extent - matched - hand - fallback),
             'assembly_metric': 'Hand-written assembly: routines with an instruction that neither CodeWarrior nor the pinned SHC emits. Fallback assembly: generated from your dump for code without matching C; it is NOT decompiled and is excluded from the code-range, matching and image-coverage figures. Source-buildable with your dump: bytes a build can produce from any source form (C, SHC, typed data, extracted assets, hand-written and fallback assembly) over the whole image. No assembly text is committed; it is regenerated from your dump at build time.'}
 
 
@@ -177,6 +195,13 @@ SHC emits. Fallback assembly is generated mechanically from your own dump, at bu
 time, for code that has no matching C yet, only so that more of the image builds from
 source; it is replaced by C as matches land and is excluded from the code-range,
 matching and image-coverage figures. See ASM.md.''')
+    extract_row = ''
+    if report.get('dump_extracts'):
+        kinds_x = ', '.join(f'{k} {v:,}' for k, v in report['dump_extract_bytes_by_kind'].items())
+        extract_row = (f"| Dump extracts (untyped bytes from your dump, not reconstructed) | {report['dump_extract_bytes']:,} bytes"
+                       f" in {report['dump_extracts']} ranges ({report['dump_extract_percent_of_image']:.4f}% of the image; {kinds_x}) |\n")
+    source_only_text = ('Available with your dump (no reference gaps; assets, extracts and fallback come from your dump)'
+                        if report['source_only_build_available'] else 'Unavailable')
     md = f'''# Verified reconstruction progress
 
 | Measure | Value |
@@ -192,10 +217,10 @@ matching and image-coverage figures. See ASM.md.''')
 | Decoded executable | {total:,} bytes |
 | Image coverage (code ranges + typed data) | {pct} |
 | Assets extracted from your dump (not reconstructed) | {report['dump_asset_bytes']:,} bytes in {report['dump_assets']} assets ({report['dump_asset_percent_of_image']:.4f}% of the image) |
-{asm_rows}| Retained reference dependence | {left:,} bytes |
+{asm_rows}{extract_row}| Retained reference dependence | {left:,} bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
-| Source-only build | Unavailable |
+| Source-only build | {source_only_text} |
 
 Complete ranges include literals and padding. Image coverage is **not** the
 percentage of game code decompiled. Unmatched candidates earn no completed-byte
@@ -229,7 +254,8 @@ def record(root=ROOT):
     proof = read(root, 'config/source-validation.json')
     decoded = read(root, 'config/decoded.json')
     data = static_data.read(root)
-    spans = project.layout(manifest, decoded['size'], data, dump_assets.read(root), asm_units.read(root))
+    spans = project.layout(manifest, decoded['size'], data, dump_assets.read(root), asm_units.read(root),
+                           dump_extracts.read(root))
     retained = sum(s['size'] for s in spans if s['origin'] == 'reference_unreconstructed')
     if retained:
         try:

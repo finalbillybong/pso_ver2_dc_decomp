@@ -10,7 +10,9 @@ include the executable's own typed static data where it has been matched (virtua
 tables and string literals, see docs/DATA.md); embedded files and opaque data are
 not reproduced. No disassembly is included either: hand-written routines and the
 not-decompiled fallback for unmatched code are generated locally from your own
-dump at build time (docs/ASM.md) and are never committed or distributed.
+dump at build time (docs/ASM.md) and are never committed or distributed. The
+remaining untyped bytes are likewise listed by range and hash only and taken from
+your own dump at build time (docs/DATA.md, dump extracts).
 Downloaded tools remain separate
 local dependencies with their own licensing terms. The decoder and encoder
 wrappers use separately fetched, pinned newserv and phosg sources; see the setup

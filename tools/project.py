@@ -13,16 +13,18 @@ import matching
 import data as static_data
 import assets as dump_assets
 import asm_units
+import extracts as dump_extracts
 import shc_units
 
 
-def layout(manifest, size, data=None, assets=None, asm=None):
+def layout(manifest, size, data=None, assets=None, asm=None, extracts=None):
     """Produce a complete, nonoverlapping map without inferring gap contents.
 
     Code modules are `compiled_source`; typed static-data modules from
     config/data.json, when given, are `compiled_data`; embedded assets from
     config/assets.json, when given, are `dump_asset` (extracted from your dump,
-    not reconstructed); assembly sub-spans from config/asm.json, when given, are
+    not reconstructed); remaining untyped bytes from config/extracts.json, when given,
+    are `dump_extract` (also from your dump, re-cut around every other origin); assembly sub-spans from config/asm.json, when given, are
     `assembled_hand` or `assembled_fallback` (generated from your dump, never
     decompiled). Assembly is placed after its committed ranges are reduced around
     the admitted C/SHC/data/asset modules they overlap."""
@@ -45,6 +47,14 @@ def layout(manifest, size, data=None, assets=None, asm=None):
             units.append(({'id': sp['id'], 'address': sp['address'], 'source': None,
                            'ranges': [{'offset': sp['offset'], 'size': sp['size']}]},
                           'assembled_hand' if sp['class'] == 'hand' else 'assembled_fallback'))
+    if extracts is not None and extracts['extracts']:
+        # Dump extracts fill only what no other origin owns (re-cut on every build).
+        dump_extracts.validate(extracts, base, size)
+        taken = [(base + u['ranges'][0]['offset'], base + u['ranges'][0]['offset'] + u['ranges'][0]['size'])
+                 for u, _ in units]
+        for sp in dump_extracts.placed(extracts, base, taken):
+            units.append(({'id': sp['id'], 'address': sp['address'], 'source': None,
+                           'ranges': [{'offset': sp['offset'], 'size': sp['size']}]}, 'dump_extract'))
     for unit, origin in sorted(units, key=lambda x: int(x[0]['address'], 0)):
         if unit['id'] in identifiers:
             raise ValueError('Duplicate unit identifier')
@@ -87,7 +97,10 @@ def inputs():
     if asm['units']:
         asm_units.load_tools(ROOT)
         asm_units.verify_reference(data, asm, int(manifest['base_address'], 0))
-    spans = layout(manifest, len(data), static_data.read(ROOT), assets, asm)
+    extracts = dump_extracts.read(ROOT)
+    if extracts['extracts']:
+        dump_extracts.check(data, extracts)
+    spans = layout(manifest, len(data), static_data.read(ROOT), assets, asm, extracts)
     for unit in manifest['units'] + static_data.read(ROOT)['units']:
         r = unit['ranges'][0]
         expected = data[r['offset']:r['offset'] + r['size']]
@@ -114,6 +127,10 @@ def provenance(manifest):
         typed.update({'asm_manifest_sha256': pso.file_hash(ROOT / asm_units.MANIFEST),
                       'asm_driver_sha256': pso.file_hash(ROOT / 'tools/asm_units.py'),
                       'asm_generator_sha256': pso.file_hash(ROOT / 'tools/asmgen.py')})
+    if dump_extracts.read(ROOT)['extracts']:
+        # Without extracts the provenance (and existing receipts) is unchanged.
+        typed.update({'extracts_manifest_sha256': pso.file_hash(ROOT / dump_extracts.MANIFEST),
+                      'extracts_driver_sha256': pso.file_hash(ROOT / 'tools/extracts.py')})
     if shc_units.shc_units(manifest):
         # Without SHC units the provenance (and existing receipts) is unchanged.
         typed.update({'shc_driver_sha256': pso.file_hash(ROOT / 'tools/shc_units.py'),
@@ -131,12 +148,16 @@ def provenance(manifest):
 
 
 def require_source_coverage(spans):
-    """Asset bytes come from your dump by design; only unreconstructed bytes block a source-only build."""
+    """Asset and extract bytes come from your dump by design; only unreconstructed bytes block a
+    source-only build."""
     retained = sum(s['size'] for s in spans if s['origin'] == 'reference_unreconstructed')
     asset_bytes = sum(s['size'] for s in spans if s['origin'] == 'dump_asset')
+    extract_bytes = sum(s['size'] for s in spans if s['origin'] == 'dump_extract')
     if retained:
         raise ValueError(f'Source-only build unavailable: {retained:,} bytes still require the reference'
-                         + (f' (separately, {asset_bytes:,} asset bytes are extracted from your dump)' if asset_bytes else ''))
+                         + (f' (separately, {asset_bytes:,} asset bytes are extracted from your dump' if asset_bytes else '')
+                         + (f'{", and" if asset_bytes else " (separately,"} {extract_bytes:,} extract bytes' if extract_bytes else '')
+                         + (')' if asset_bytes or extract_bytes else ''))
 
 
 def integrate(spans, outputs, reference=None):
@@ -145,7 +166,8 @@ def integrate(spans, outputs, reference=None):
         require_source_coverage(spans)
     image = bytearray()
     for span in spans:
-        if span['origin'] in ('compiled_source', 'compiled_data', 'dump_asset', 'assembled_hand', 'assembled_fallback'):
+        if span['origin'] in ('compiled_source', 'compiled_data', 'dump_asset', 'assembled_hand', 'assembled_fallback',
+                              'dump_extract'):
             blob = outputs[span['unit']]
             if len(blob) != span['size']:
                 raise ValueError('Compiled module size changed: ' + span['unit'])
@@ -204,12 +226,17 @@ def build(source_only=False):
         for name, blob in asm_blobs.items():
             output_hashes[name] = hashlib.sha256(blob).hexdigest()
         print(f'{len(asm_blobs)} assembly sub-units: exact', flush=True)
+    # Dump extracts: the remaining untyped bytes, from your verified dump (hash-checked).
+    extract_blobs = {sp['unit']: data[sp['offset']:sp['offset'] + sp['size']]
+                     for sp in spans if sp['origin'] == 'dump_extract'}
+    for name, blob in extract_blobs.items():
+        output_hashes[name] = hashlib.sha256(blob).hexdigest()
     if provenance(manifest) != before:
         raise ValueError('Inputs changed during build')
     # Image integration retains explicit reference-backed gaps; it is not a
     # claim that those regions have been decompiled or independently rebuilt.
     image = integrate(spans, {**{u['id']: (out / (u['id'] + '.bin')).read_bytes()
-                                for u in manifest['units'] + data_units}, **asset_blobs, **asm_blobs},
+                                for u in manifest['units'] + data_units}, **asset_blobs, **asm_blobs, **extract_blobs},
                       None if source_only else data)
     if image != data:
         raise ValueError('Integrated image differs from pinned executable')
@@ -241,6 +268,10 @@ def report():
     for sp in asm_units.placed_spans(ROOT):
         if receipt['output_sha256'].get(sp['id']) != hashlib.sha256(bytes(data[sp['offset']:sp['offset'] + sp['size']])).hexdigest():
             raise ValueError('Assembly unit changed since build: ' + sp['id'])
+    for sp in spans:
+        if sp['origin'] == 'dump_extract' and receipt['output_sha256'].get(sp['unit']) != \
+                hashlib.sha256(data[sp['offset']:sp['offset'] + sp['size']]).hexdigest():
+            raise ValueError('Dump extract changed since build: ' + sp['unit'])
     target = out / 'DP_ADDRESS.rebuilt.bin'
     pso.check_hash(target, receipt['image_sha256'])
     if target.read_bytes() != data:
@@ -253,6 +284,7 @@ def report():
     asset_bytes = sum(s['size'] for s in spans if s['origin'] == 'dump_asset')
     hand_bytes = sum(s['size'] for s in spans if s['origin'] == 'assembled_hand')
     fallback_bytes = sum(s['size'] for s in spans if s['origin'] == 'assembled_fallback')
+    extract_bytes = sum(s['size'] for s in spans if s['origin'] == 'dump_extract')
     asm = asm_units.read(ROOT)
     asm_report = {}
     if asm['units']:
@@ -273,10 +305,14 @@ def report():
               'dump_asset_bytes': asset_bytes,
               'dump_assets': len(dump_assets.read(ROOT)['assets']),
               **asm_report,
-              'reference_unreconstructed_bytes': len(data) - source_bytes - data_bytes - asset_bytes - hand_bytes - fallback_bytes,
+              **({'dump_extract_bytes': extract_bytes, 'dump_extracts': len(dump_extracts.read(ROOT)['extracts'])}
+                 if dump_extracts.read(ROOT)['extracts'] else {}),
+              'reference_unreconstructed_bytes': len(data) - source_bytes - data_bytes - asset_bytes - hand_bytes
+                                                 - fallback_bytes - extract_bytes,
               'decoded_image_bytes': len(data), 'integrated_image_exact': True,
               'build_mode': 'source_only' if receipt.get('source_only') else 'hybrid_scaffold',
               'full_source_reconstruction_complete': receipt.get('source_only', False) and source_bytes + data_bytes + asset_bytes == len(data),
+              'source_only_build_exact': bool(receipt.get('source_only')),
               'runtime_tested_by_this_command': False, 'image': str(target)}
     pso.write_json(out / 'status.json', result)
     print(json.dumps(result, indent=2))

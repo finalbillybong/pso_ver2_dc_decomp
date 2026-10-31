@@ -16,16 +16,20 @@ Other releases are not currently supported.
 4,162,912-byte decoded executable (**29.8022% code-range coverage**). Function ranges
 include their literals and padding. **492,980 bytes of typed static data** (virtual
 tables, strings and typed tables, 44.8110% of the estimated static-data extent) are rebuilt from
-source as well, for **41.6444% image coverage**. **308,139 bytes still come from
+source as well, for **41.6444% image coverage**. **0 bytes still come from
 the original reference**, and 380,185 bytes of embedded assets are extracted
 from your own dump at build time (not counted as reconstructed). See [typed static data](docs/DATA.md).
 
 **Assembly is not decompiled code and is never committed** ([ASM.md](docs/ASM.md)): 88 hand-written SH-4
-routines (29,990 bytes) and 4,608 not-decompiled fallback units (1,716,658 bytes) are
-generated locally from your own dump at build time. With them 92.5969% of the image
-builds from source; the rest is untyped static data.
+routines (30,678 bytes) and 4,994 not-decompiled fallback units (1,814,428 bytes) are
+generated locally from your own dump at build time. With them 95.0996% of the image
+builds from source; the remaining 204,001 bytes (untyped data, and code-side bytes that
+no reference proves to be code) are taken from your dump as dump extracts
+([DATA.md](docs/DATA.md)), so the source-only build succeeds with your dump.
 
-This is an early hybrid reconstruction. It cannot yet build from source alone.
+This is an early hybrid reconstruction. With your own dump it builds without copying
+any reference gap (`tools/project.py build --source-only`), but most code is
+not-decompiled fallback assembly and some data is still dump-extracted.
 The code-only completion percentage and total function count are not established.
 An exact hybrid image is not evidence of a complete decompilation.
 

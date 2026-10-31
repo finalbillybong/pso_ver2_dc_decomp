@@ -163,3 +163,13 @@ python3 -B tools/asm_units.py setup --assembler <scratch>/binutils-build/gas/as-
 ```
 
 A checkout without assembly units never needs it.
+
+## Source-only build
+
+`python3 -B tools/project.py build --source-only` integrates the image without copying
+any reference gap: every byte comes from compiled C/SHC, typed static data, or, from
+your own dump, embedded assets, generated assembly (hand-written and not-decompiled
+fallback) and dump extracts. It still needs your dump; it no longer needs the
+original executable as an image to patch. When coverage is complete,
+`tools/verify_source.py` runs both of its fresh builds this way and records
+`source_only_build_exact`. See [DATA.md](DATA.md) and [ASM.md](ASM.md).

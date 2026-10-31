@@ -30,8 +30,12 @@ def main():
     scratch = Path(cfg['scratch'])
     evidence = Path(tempfile.mkdtemp(prefix='source-validation-', dir=scratch))
     builds = []
+    # When every byte has a source, typed-data, asset, extract or assembly origin, both fresh
+    # builds run without the reference image as an input (no reference gaps are copied).
+    _, _, _, spans = project.inputs()
+    source_only = not any(s['origin'] == 'reference_unreconstructed' for s in spans)
     for index in range(2):
-        status = project.build()
+        status = project.build(source_only=source_only)
         build = pso.read_json(scratch / 'project-build/build.json')
         pso.write_json(evidence / f'build-{index + 1}.json', build)
         builds.append(build)
@@ -51,6 +55,12 @@ def main():
         # project.build compiled each SHC pool group with the pinned Hitachi tools,
         # required code section P only, and compared its complete range.
         checks.append('shc_pool_groups_exact')
+    if project.dump_extracts.read(root)['extracts']:
+        # project.build checked every extract against its hash in the verified dump.
+        checks.append('dump_extracts_hash_verified')
+    if source_only:
+        # Both fresh builds integrated the image with no reference gaps copied.
+        checks.append('source_only_build_exact')
     asm = project.asm_units.read(root)
     if project.asm_units.units_of(asm, 'hand'):
         # project.build generated each hand-written routine from the dump, linted,

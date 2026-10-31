@@ -14,13 +14,14 @@
 | Decoded executable | 4,162,912 bytes |
 | Image coverage (code ranges + typed data) | 41.6444% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
-| Assembly (hand-written), not decompiled | 29,990 bytes in 88 units (0.9792% of the code extent) |
-| Fallback assembly for unmatched code, **not decompiled** | 1,710,978 bytes in 4608 units (55.8636% of the code extent) |
-| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,854,773 bytes (92.5980% of the image) |
-| Retained reference dependence | 308,139 bytes |
+| Assembly (hand-written), not decompiled | 30,678 bytes in 88 units (1.0016% of the code extent) |
+| Fallback assembly for unmatched code, **not decompiled** | 1,814,428 bytes in 4994 units (59.2412% of the code extent) |
+| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,958,911 bytes (95.0996% of the image) |
+| Dump extracts (untyped bytes from your dump, not reconstructed) | 204,001 bytes in 2658 ranges (4.9004% of the image; untyped_bytes 175,362, zero_run 28,639) |
+| Retained reference dependence | 0 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
-| Source-only build | Unavailable |
+| Source-only build | Available with your dump (no reference gaps; assets, extracts and fallback come from your dump) |
 
 Complete ranges include literals and padding. Image coverage is **not** the
 percentage of game code decompiled. Unmatched candidates earn no completed-byte
@@ -32,7 +33,7 @@ as integers earn no credit. The static-data extent is an analysis estimate of th
 not a recovered section size. Embedded assets (see DATA.md) are extracted from
 your own dump at build time and are counted separately; they earn no coverage
 credit. The integrated hybrid image matches the reference, but still requires
-308,139 original bytes besides the assets.
+0 original bytes besides the assets.
 
 **Assembly is not decompiled code, and no assembly is committed.** Hand-written
 assembly covers routines with an instruction that neither CodeWarrior nor the pinned

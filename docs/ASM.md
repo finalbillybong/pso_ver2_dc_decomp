@@ -62,6 +62,17 @@ stops with a message naming the paths it tried and these commands.
   interval is the function and its pool; this keeps alignment padding the listing left
   undecoded from separating a function from its pool. Admitted C/SHC, typed data and
   assets are never fallback.
+* **Reachable code the listing does not decode.** Code side also includes every free
+  halfword reached by recursive descent (SH-4 control flow, delay slots included) from a
+  proven entry point, together with its literal slots. Entries are, by evidence class,
+  *referenced* (a typed-data `fn_<addr>` pointer, or a literal word loaded by a listed or
+  already reached `mov.l`) or *function-shaped* (an aligned register-save prologue,
+  `sts.l pr,@-r15` or `mov.l r8..r14,@-r15`, directly after a terminator and its delay
+  slot or after code-side bytes). An entry whose executed path meets an invalid encoding,
+  or runs into its own literal slot, is rejected with everything it reached; the search
+  repeats until no new entry appears. Alignment padding (`0x0009`/`0x0000`, at most six
+  bytes) between two code-side stretches is code side too. `plan` reports the bytes each
+  evidence class contributes.
 * **Cuts.** Units are cut at function starts only where no listed PC-relative load or
   conditional branch crosses the cut.
 * **Literal pools and switch tables.** Pool slots are the targets of loads in the unit;

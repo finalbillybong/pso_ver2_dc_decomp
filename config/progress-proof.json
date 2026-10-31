@@ -8,15 +8,18 @@
     "typed_data_modules_exact",
     "dump_assets_hash_verified",
     "shc_pool_groups_exact",
+    "dump_extracts_hash_verified",
+    "source_only_build_exact",
     "hand_assembly_units_exact",
     "fallback_assembly_units_exact"
   ],
   "inputs_sha256": {
-    "config/asm.json": "fbf6b17f5a2722ddb0a09a8904b904f32be41fe6bc198b113946b4babb70e545",
+    "config/asm.json": "b9881453ba46ea5dc4a4b8ff2264a713df65379a3802dec66b7b0611e5f711b4",
     "config/assets.json": "2910dc0f953037df2aac73b4f0ecdef61813693d629ca8ed6959c547f7cb1220",
     "config/compiler-packages.json": "eb4da1077861b8b0e1ce4faf2725e0d701fab79e43e92a95dc1b0d64bbb040d9",
     "config/data.json": "44bf4fda16f80c293e928be54a563c6d0cc851d3bf7ae6147d490106b83e629a",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
+    "config/extracts.json": "c80593c205717028304f58779200a27e781ed8714be04a75f0fced5d0450305f",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
     "config/project.json": "f56d13dcb994ab6e7d84d6755d90b15f1cdc89bd29edd32bc33a302ecdae3db4",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
@@ -14793,15 +14796,16 @@
     "src/ui/operation_1960fc.c": "8934db1a6de986d7936ceebe5b95cc82a79861cac1bedcf652ea963fb330dbea",
     "src/ui/operation_196274.c": "0f9218dfe5c04e5d08bea2dde363f32dc2050601fe50f9638dac8853273592d1",
     "src/ui/text_buffer.c": "eaaef84bfc17a69c251e5b002df4092d6a49507a6c90cfcb2d9c1a0916f4f59a",
-    "tools/asm_units.py": "4a2594a0336eec8df68e29906308010f73318d881681cc5bba3a50362c728d6c",
-    "tools/asmgen.py": "027b6e72b1c4763b3cfecf3cfc64ea6d4450e1ce014c115bdf5de66b9c55aafb",
+    "tools/asm_units.py": "457ab82df0fd487b904f504363f82f8b893aa47b47c81fd96e8784ce23d828f9",
+    "tools/asmgen.py": "0bc3828c36c3c2e80bc4e1747b35cbf144c9cd9a3ffd483d46c3ea753db4d4ba",
     "tools/assets.py": "08840f370ea0ee52d2113ccc7ae4ce6345b4efe254790fe463428269e803610a",
     "tools/data.py": "c344f8578dbc9e98a7f4d4f60a2f6b6451b6f4cafbbd6d780a97e0d88f3d0161",
+    "tools/extracts.py": "1be4ffed6bff7fc6fb39bb70de20e5453623fe2ecc08d084dd28b824e70c8f26",
     "tools/matching.py": "3ad868e806418a009424dba71945de386c93b93fd781791f0e269566a2f629c1",
-    "tools/project.py": "1640daebbaa37257d3a1f2b04abc6ac820c0a516b40bd36dd38e35f151d2e6a0",
+    "tools/project.py": "132653ea53db5d21b5b52885ea164227e0af5f98c257419c04172643ca3e3363",
     "tools/shc.py": "1e4a7370691a937692e67f48f084265e01ef3504db4c73257224de52668ae847",
     "tools/shc_units.py": "d9f26d7cd9697fdcfd6b272b2618e3b6f7902ae0d8928bcfd7550711b4400c66",
-    "tools/verify_source.py": "58d7183c6e837163c26c5964892b81ca59d12e74596ca9ffafb8f2f72ae1f445"
+    "tools/verify_source.py": "e454f8040a31839165df208b40d2b970987963f2657a20e17136f29ea1464291"
   },
   "compiler": "CodeWarrior Dreamcast 2.4 Engineering Build, Mar 21 2000",
   "flags": [
@@ -139455,8 +139459,8 @@
     ]
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
-  "source_only_build_available": false,
-  "source_only_rejected_retained_bytes": 308139,
+  "source_only_build_available": true,
+  "source_only_rejected_retained_bytes": 0,
   "typed_data_modules": 3335,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }
