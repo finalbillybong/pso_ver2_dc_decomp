@@ -2,22 +2,22 @@
 
 | Measure | Value |
 | --- | ---: |
-| Exact matching functions | 12184 |
-| Matching modules | 11293 |
-| Compiled complete ranges | 1,238,270 bytes |
-| Code-range coverage of the image | 29.7453% |
+| Exact matching functions | 12240 |
+| Matching modules | 11349 |
+| Compiled complete ranges | 1,255,644 bytes |
+| Code-range coverage of the image | 30.1626% |
 | of which Hitachi SHC pool groups | 84,522 bytes in 342 modules / 1149 functions |
 | Typed static data | 493,036 bytes in 12022 objects / 3336 modules |
 | Typed data by kind | byte_table 482, float_table 20,596, function_table 18,512, int16_table 13,418, int_table 26,124, pointer_table 35,780, record_table 130,724, string 121,424, vtable 125,976 bytes |
 | Static-data extent | 1,100,132 bytes (estimate) |
 | Typed data share of the static-data extent | 44.8161% |
 | Decoded executable | 4,162,912 bytes |
-| Image coverage (code ranges + typed data) | 41.5888% |
+| Image coverage (code ranges + typed data) | 42.0062% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
 | Assembly (hand-written), not decompiled | 32,738 bytes in 88 units (1.0689% of the code extent) |
-| Fallback assembly for unmatched code, **not decompiled** | 1,815,606 bytes in 5014 units (59.2797% of the code extent) |
-| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,959,835 bytes (95.1218% of the image) |
-| Dump extracts (untyped bytes from your dump, not reconstructed) | 203,077 bytes in 2662 ranges (4.8782% of the image; untyped_bytes 174,802, zero_run 28,641) |
+| Fallback assembly for unmatched code, **not decompiled** | 1,798,550 bytes in 5014 units (58.7228% of the code extent) |
+| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,960,153 bytes (95.1294% of the image) |
+| Dump extracts (untyped bytes from your dump, not reconstructed) | 202,759 bytes in 2662 ranges (4.8706% of the image; untyped_bytes 174,802, zero_run 28,641) |
 | Retained reference dependence | 0 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
