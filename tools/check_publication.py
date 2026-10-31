@@ -7,7 +7,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = {'analysis.json', 'asm.json', 'assets.json', 'compiler-packages.json', 'data.json', 'decoded.json',
-          'local.example.json', 'matching-packages.json', 'progress-proof.json',
+          'local.example.json', 'matching-packages.json', 'names.json', 'progress-proof.json',
           'project.json', 'reconstruction-targets.json', 'reference.json',
           'samples.json', 'toolchain.example.json'}
 TOP = {'.gitignore', '.gitattributes', 'README.md', 'CONTRIBUTING.md', 'NOTICE.md',
@@ -65,6 +65,10 @@ def issues(name, blob, mode='100644'):
         # instruction text, or a very long value, would be embedded disassembly.
         if re.search(r'"[^"]{401,}"', text) or re.search(r'"[^"]*(?:\\n|\\t)[^"]*"', text):
             errors.append('assembly manifest holds a long or multi-line value (possible embedded disassembly)')
+    if name == 'config/names.json':
+        # Names and one-line evidence only: no embedded data or long quoted text.
+        if re.search(r'"[^"]{401,}"', text) or re.search(r'"[^"]*\\n[^"]*"', text):
+            errors.append('names manifest holds a long or multi-line value')
     return errors
 
 
