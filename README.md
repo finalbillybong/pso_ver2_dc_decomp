@@ -12,11 +12,11 @@ Other releases are not currently supported.
 
 ## Progress
 
-**12248 exact matching functions in 11269 modules**, replacing **1,234,916 bytes** of the
-4,162,912-byte decoded executable (**29.6647% code-range coverage**). Function ranges
+**12268 exact matching functions in 11289 modules**, replacing **1,240,640 bytes** of the
+4,162,912-byte decoded executable (**29.8022% code-range coverage**). Function ranges
 include their literals and padding. **492,980 bytes of typed static data** (virtual
 tables, strings and typed tables, 44.8110% of the estimated static-data extent) are rebuilt from
-source as well, for **41.5069% image coverage**. **308,183 bytes still come from
+source as well, for **41.6444% image coverage**. **308,139 bytes still come from
 the original reference**, and 380,185 bytes of embedded assets are extracted
 from your own dump at build time (not counted as reconstructed). See [typed static data](docs/DATA.md).
 
