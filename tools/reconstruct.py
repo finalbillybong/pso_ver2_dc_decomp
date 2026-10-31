@@ -329,7 +329,7 @@ def compiler_profile(unit=None):
     """CodeWarrior profile exactly as before (history fingerprints unchanged); SHC units
     get their own profile from tools/shc_units.py."""
     if unit is not None and project.shc_units.is_shc(unit):
-        return project.shc_units.profile()
+        return project.shc_units.profile(unit=unit)
     tools = project.matching.load_tools()  # Validate actual pinned executable hashes even on reuse.
     return dict(tools={role: project.matching.sha(path) for role, path in tools.items()},
         installed_sha256=project.matching.sha(project.ROOT / 'config/matching-installed.json'),

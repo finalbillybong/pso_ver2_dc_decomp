@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Hitachi SHC pool-group units: selection, fixed settings, build and tool profile.
 
-A project unit that declares "compiler": "shc-v5.1r13" is built here; every other
-unit goes to tools/matching.py unchanged. matching.py is deliberately not edited:
-its hash is part of the reconstruction-history fingerprint. See docs/SHC.md."""
+A project unit that declares "compiler": "shc-v5.1r13" (the SDK and library code) or
+"shc-v5.0r28" (the 0x8c3d0000 region, see docs/SHC.md "Second release") is built here;
+every other unit goes to tools/matching.py unchanged. matching.py is deliberately not
+edited: its hash is part of the reconstruction-history fingerprint."""
 import argparse
 import hashlib
 import json
@@ -24,23 +25,32 @@ ROOT = Path(__file__).resolve().parents[1]
 SHC_COMPILER = 'shc-v5.1r13'
 # One fixed flag set; there is no per-unit flag override.
 SHC_FLAGS = ['-cpu=sh4', '-endian=little', '-fpu=single', '-optimize=1', '-macsave=0']
+# Whitelisted releases, each with exactly one fixed flag set (currently the same set).
+# The symbol module is always assembled and the unit always linked with the pinned
+# 5.1r13 asmsh/LNK: the linker only places section P and binds absolute symbols, so a
+# single linker keeps that step identical for every unit, and not every release ships
+# one (5.1r11 has no LNK; 5.0r10 ships a different lnk.exe).
+SHC_RELEASES = {
+    'shc-v5.1r13': {'flags': SHC_FLAGS, 'name': 'Hitachi SH C/C++ Compiler 5.1 Release 13'},
+    'shc-v5.0r28': {'flags': SHC_FLAGS, 'name': 'Hitachi SH C Compiler 5.0 Release 28'},
+}
 SHC_RECEIPT = 'config/installed-compilers.json'
 PACKAGES = 'config/compiler-packages.json'
 SYMBOL = re.compile(r'_[A-Za-z_][A-Za-z_0-9]*')
 
 
 def unit_compiler(unit):
-    """CodeWarrior unless the manifest names the pinned SHC release explicitly."""
+    """CodeWarrior unless the manifest names a whitelisted SHC release explicitly."""
     compiler = unit.get('compiler', 'codewarrior')
-    if compiler not in ('codewarrior', SHC_COMPILER):
+    if compiler != 'codewarrior' and compiler not in SHC_RELEASES:
         raise ValueError('Unsupported matching compiler')
-    if compiler == SHC_COMPILER and ('linker' in unit or unit.get('language', 'c') != 'c'):
+    if compiler in SHC_RELEASES and ('linker' in unit or unit.get('language', 'c') != 'c'):
         raise ValueError('SHC units are C only and always use the Hitachi linker')
     return compiler
 
 
 def is_shc(unit):
-    return unit_compiler(unit) == SHC_COMPILER
+    return unit_compiler(unit) in SHC_RELEASES
 
 
 def shc_units(manifest):
@@ -49,7 +59,7 @@ def shc_units(manifest):
 
 def unit_flags(unit):
     """SHC settings for SHC units; otherwise exactly matching.unit_flags."""
-    return list(SHC_FLAGS) if is_shc(unit) else matching.unit_flags(unit)
+    return list(SHC_RELEASES[unit_compiler(unit)]['flags']) if is_shc(unit) else matching.unit_flags(unit)
 
 
 def unit_linker(unit):
@@ -65,9 +75,14 @@ def compile_unit(source, output, unit, flags=None):
     return matching.compile_unit(source, output, unit, flags)
 
 
-def load_shc_tools(root=ROOT):
-    """Pinned release and runner from tools/setup_compilers.py, re-hashed on every use."""
+def load_shc_tools(root=ROOT, version=SHC_COMPILER):
+    """Pinned releases and runner from tools/setup_compilers.py, re-hashed on every use.
+    The compiler comes from `version`; assembler and linker always from the pinned 5.1r13."""
+    if version not in SHC_RELEASES:
+        raise ValueError('Unsupported SHC release')
     lock = json.loads((root / PACKAGES).read_text())
+    if version not in {package['id'] for package in lock['compilers']}:
+        raise ValueError('SHC release is not in the package lock')
     receipt = json.loads((root / SHC_RECEIPT).read_text())
     if receipt.get('runner_sha256') != lock['runner']['sha256']:
         raise ValueError('SHC runner does not match the package lock')
@@ -79,13 +94,20 @@ def load_shc_tools(root=ROOT):
         if name not in files:
             raise ValueError('SHC installation lacks ' + name)
         tools[role] = files[name]
+    if version != SHC_COMPILER:
+        _, release_base, release_files = shc.load_tools(version)
+        if not receipt['compilers'][version]['files'] or 'shc.exe' not in release_files:
+            raise ValueError('SHC installation lacks ' + version)
+        tools['bin'], tools['compiler'] = release_base / 'bin', release_files['shc.exe']
     return tools
 
 
-def profile(root=ROOT):
-    """Tool identity for reconstruction receipts of SHC units (CodeWarrior keeps its own)."""
-    tools = load_shc_tools(root)
-    return dict(compiler=SHC_COMPILER,
+def profile(root=ROOT, unit=None):
+    """Tool identity for reconstruction receipts of SHC units (CodeWarrior keeps its own).
+    Without a unit (or for 5.1r13 units) this is the pinned 5.1r13 profile."""
+    version = unit_compiler(unit) if unit is not None and is_shc(unit) else SHC_COMPILER
+    tools = load_shc_tools(root, version)
+    return dict(compiler=version,
                 tools={role: matching.sha(path) for role, path in tools.items() if role != 'bin'},
                 installed_sha256=matching.sha(root / SHC_RECEIPT),
                 packages_sha256=matching.sha(root / PACKAGES),
@@ -155,7 +177,8 @@ def compile_shc_unit(source, output, unit, flags=None):
     The unit is one complete pool group: contiguous functions (file-static ones
     allowed) followed by the literal pool SHC emits for them. Only section P may
     have contents; constant, data and bss sections are rejected."""
-    flags = list(SHC_FLAGS if flags is None else flags)
+    version = unit_compiler(unit)
+    flags = list(SHC_RELEASES[version]['flags'] if flags is None else flags)
     source, output = Path(source).resolve(), Path(output).resolve()
     if source.suffix != '.c' or output.suffix != '.bin':
         raise ValueError('SHC units are C sources; output must be .bin')
@@ -167,7 +190,7 @@ def compile_shc_unit(source, output, unit, flags=None):
     output.unlink(missing_ok=True)
     receipt_path = output.with_suffix('.compiler.json')
     receipt_path.unlink(missing_ok=True)
-    tools = load_shc_tools()
+    tools = load_shc_tools(ROOT, version)
     matching.dependencies(source, unit)
     source_hash = matching.sha(source)
     base = int(unit['address'], 0)
@@ -222,7 +245,7 @@ def compile_shc_unit(source, output, unit, flags=None):
         if matching.sha(source) != source_hash:
             raise ValueError('Source changed during compilation')
         output.write_bytes(code)
-        receipt = {'compiler': 'Hitachi SH C/C++ Compiler 5.1 Release 13 (' + SHC_COMPILER + ')',
+        receipt = {'compiler': SHC_RELEASES[version]['name'] + ' (' + version + ')',
                    'flags': flags, 'address': hex(base), 'entry': unit['entry'],
                    'linker': 'hitachi', 'compiler_object_sha256': matching.sha(work / 'unit.obj'),
                    'source_sha256': source_hash, 'output_sha256': matching.sha(output),

@@ -169,6 +169,13 @@ class CommandTests(unittest.TestCase):
             receipt = shc_units.compile_unit(root / 'unit.c', root / 'unit.bin', unit)
         return root, receipt, calls
 
+    def test_release_name_and_version_are_in_the_receipt(self):
+        root, receipt, calls = self.run_fixture(dict(SHC, compiler='shc-v5.0r28'))
+        self.assertEqual(receipt['compiler'], 'Hitachi SH C Compiler 5.0 Release 28 (shc-v5.0r28)')
+        self.assertEqual(receipt['flags'], shc_units.SHC_FLAGS)
+        root, receipt, calls = self.run_fixture(dict(SHC))
+        self.assertEqual(receipt['compiler'], 'Hitachi SH C/C++ Compiler 5.1 Release 13 (shc-v5.1r13)')
+
     def test_compile_link_extract_and_receipt(self):
         unit = dict(SHC, symbols={'_g': '0x8c562834'})
         root, receipt, calls = self.run_fixture(unit)
@@ -185,6 +192,36 @@ class CommandTests(unittest.TestCase):
         for unit in [dict(SHC, address='0x8c37e9aa'), dict(SHC, headers=['src/include/x.h'])]:
             with self.subTest(unit=unit), self.assertRaises(ValueError):
                 self.run_fixture(unit)
+
+
+class ReleaseSelectionTests(unittest.TestCase):
+    """A second whitelisted release (5.0r28) with the same single flag set; anything else is rejected."""
+    R28 = dict(SHC, compiler='shc-v5.0r28')
+
+    def test_whitelisted_release_is_selected_with_its_fixed_flags(self):
+        self.assertEqual(set(shc_units.SHC_RELEASES), {'shc-v5.1r13', 'shc-v5.0r28'})
+        self.assertEqual(shc_units.unit_compiler(self.R28), 'shc-v5.0r28')
+        self.assertTrue(shc_units.is_shc(self.R28))
+        self.assertEqual(shc_units.unit_flags(self.R28), shc_units.SHC_FLAGS)
+        self.assertEqual(shc_units.unit_linker(self.R28), 'hitachi')
+        self.assertEqual(shc_units.shc_units({'units': [SHC, self.R28, {}]}), [SHC, self.R28])
+
+    def test_negative_control_unknown_release_is_rejected(self):
+        for unit in [{'compiler': 'shc-v5.0r26'}, {'compiler': 'shc-v5.0r31'}, {'compiler': 'shc-v5.1r11'}]:
+            with self.subTest(unit=unit), self.assertRaisesRegex(ValueError, 'Unsupported matching compiler'):
+                shc_units.unit_flags(unit)
+        with self.assertRaisesRegex(ValueError, 'Unsupported SHC release'):
+            shc_units.load_shc_tools(version='shc-v5.0r31')
+
+    def test_profile_and_build_use_the_unit_release(self):
+        tools = {'runner': Path('r'), 'bin': Path('b'), 'compiler': Path('c'), 'assembler': Path('a'), 'linker': Path('l')}
+        with patch.object(shc_units, 'load_shc_tools', return_value=tools) as load, \
+                patch.object(shc_units.matching, 'sha', return_value='h'):
+            self.assertEqual(shc_units.profile(unit=self.R28)['compiler'], 'shc-v5.0r28')
+            self.assertEqual(load.call_args.args[1], 'shc-v5.0r28')
+            self.assertEqual(shc_units.profile()['compiler'], 'shc-v5.1r13')
+            self.assertEqual(shc_units.profile(unit=SHC)['compiler'], 'shc-v5.1r13')
+            self.assertEqual(load.call_args.args[1], 'shc-v5.1r13')
 
 
 class ReconstructProfileTests(unittest.TestCase):
@@ -232,6 +269,15 @@ class RealCompilerTests(unittest.TestCase):
     def test_negative_control_static_data_is_rejected(self):
         with self.assertRaisesRegex(ValueError, 'only code section P'):
             self.compile('static int counter;\nint first(void) { return ++counter; }\n')
+
+    def test_second_release_differs_from_pinned_on_a_scheduling_probe(self):
+        try:
+            shc_units.load_shc_tools(version='shc-v5.0r28')
+        except (OSError, ValueError, KeyError):
+            self.skipTest('shc-v5.0r28 not installed')
+        code = ('extern int a, b;\nvoid first(int *p, int v) { *p = v; a = v; b = v; }\n')
+        syms = {'_a': '0x8c562834', '_b': '0x8c562838'}
+        self.assertNotEqual(self.compile(code, symbols=syms), self.compile(code, symbols=syms, compiler='shc-v5.0r28'))
 
     def test_negative_control_unresolved_extern_is_rejected(self):
         with self.assertRaisesRegex(ValueError, 'linker diagnostics'):

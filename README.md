@@ -12,17 +12,17 @@ Other releases are not currently supported.
 
 ## Progress
 
-**12136 exact matching functions in 11222 modules**, replacing **1,220,946 bytes** of the
-4,162,912-byte decoded executable (**29.3291% code-range coverage**). Function ranges
-include their literals and padding. **493,036 bytes of typed static data** (virtual
-tables, strings and typed tables, 44.8161% of the estimated static-data extent) are rebuilt from
-source as well, for **41.1727% image coverage**. **310,317 bytes still come from
+**12195 exact matching functions in 11232 modules**, replacing **1,226,346 bytes** of the
+4,162,912-byte decoded executable (**29.4588% code-range coverage**). Function ranges
+include their literals and padding. **492,980 bytes of typed static data** (virtual
+tables, strings and typed tables, 44.8110% of the estimated static-data extent) are rebuilt from
+source as well, for **41.3010% image coverage**. **308,269 bytes still come from
 the original reference**, and 380,185 bytes of embedded assets are extracted
 from your own dump at build time (not counted as reconstructed). See [typed static data](docs/DATA.md).
 
 **Assembly is not decompiled code and is never committed** ([ASM.md](docs/ASM.md)): 88 hand-written SH-4
-routines (29,990 bytes) and 4,711 not-decompiled fallback units (1,738,220 bytes) are
-generated locally from your own dump at build time. With them 92.5271% of the image
+routines (29,990 bytes) and 4,645 not-decompiled fallback units (1,725,142 bytes) are
+generated locally from your own dump at build time. With them 92.5949% of the image
 builds from source; the rest is untyped static data.
 
 This is an early hybrid reconstruction. It cannot yet build from source alone.

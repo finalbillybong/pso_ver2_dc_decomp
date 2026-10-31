@@ -12,6 +12,7 @@ like CodeWarrior modules.
 | Item | Value |
 | --- | --- |
 | Compiler | Hitachi SH C/C++ Compiler 5.1 Release 13 (`shc-v5.1r13`) |
+| Second release | Hitachi SH C Compiler 5.0 Release 28 (`shc-v5.0r28`), only for the `0x8c3d0000` region; see [Second release](#second-release-50r2628) |
 | Flags | `-cpu=sh4 -endian=little -fpu=single -optimize=1 -macsave=0` |
 | Linker | Hitachi LNK 6.0E, ELF output, from the same release |
 | Archives | Pinned in `config/compiler-packages.json`, installed by `tools/setup_compilers.py` |
@@ -81,7 +82,7 @@ field:
  "reference_sha256": "...", "headers": [], "boundary_review": "..."}
 ```
 
-`compiler` absent means CodeWarrior; CodeWarrior units, flags, linkers and
+`compiler` is `shc-v5.1r13` or, in the `0x8c3d0000` region, `shc-v5.0r28`; any other value is rejected. `compiler` absent means CodeWarrior; CodeWarrior units, flags, linkers and
 receipts are unchanged. An SHC unit must be C, must not name a `linker` and may
 not use project headers or `#pragma` (SHC pragmas include `inline_asm`).
 `python3 -B tools/shc_units.py --unit <id> --output <file>.bin` builds one unit. The
@@ -139,13 +140,14 @@ installation is present.
 
 ## Current units
 
-321 pool-group units, 82,128 bytes, 1151 functions (listed in `config/project.json`
-with `"compiler": "shc-v5.1r13"`; sources in `src/sdk/`):
+331 pool-group units, 87,528 bytes, 1210 functions (listed in `config/project.json`
+with `"compiler": "shc-v5.1r13"` or `"shc-v5.0r28"`; sources in `src/sdk/`):
 
-| Region | Units | Bytes | Functions |
-| --- | ---: | ---: | ---: |
-| Library block `0x8c1f0000`–`0x8c205000` | 26 | 6,774 | 104 |
-| SDK region from `0x8c340000` | 295 | 75,354 | 1047 |
+| Region | Compiler | Units | Bytes | Functions |
+| --- | --- | ---: | ---: | ---: |
+| Library block `0x8c1f0000`–`0x8c205000` | 5.1r13 | 26 | 6,774 | 104 |
+| SDK region from `0x8c340000` | 5.1r13 | 297 | 78,950 | 1074 |
+| `0x8c3d0000` region ([second release](#second-release-50r2628)) | 5.0r28 | 8 | 1,804 | 32 |
 
 Units are complete pool groups: one or more consecutive literal-pool groups whose
 functions only branch to each other. A literal pool may sit inside a unit (and
@@ -209,6 +211,40 @@ by at least one exact unit:
   comes from macro or `do { ... } while (0)` expansions in the original source,
   whose exact form is not recoverable from the code. Recently added units mark each occurrence
   with a one-line comment; earlier units use it unmarked.
+
+## Second release (5.0r26/28)
+
+Most of the code at `0x8c3d0000`–`0x8c408000` was not built with 5.1r13 (an
+exception is the MPEG motion-compensation file `shc_mpeg_mc_8c400afc`, which is
+5.1r13 output). It schedules differently, and a version sweep over the decomp.me
+SHC releases (5.0r10, r26, r28, r31, r32; 5.1r01, r03, r04, r08, r11, r13; optimize 0/1, speed/size, fpu single/double,
+cpu variants) found that its marker-free files are **SHC 5.0 Release 26 or 28**
+output. Units there declare `"compiler": "shc-v5.0r28"` and use the same fixed flag
+set; `tools/shc_units.py` whitelists exactly 5.1r13 and 5.0r28 and rejects any other
+release.
+Releases 26 and 28 produced identical code on every test so far; r28 is chosen.
+
+Discriminators of the region compiler against 5.1r13: literal-pool loads stay in
+statement order (never hoisted above preceding stores or pushes); `lds.l @r15+,pr`
+can precede the final store; `cmp/eq` switch chains are sorted ascending while case
+bodies keep source order; call-address scratch registers rotate differently.
+
+| Test (drafts tuned for 5.1r13 unless noted) | 5.1r13 | other releases | 5.0r26 / 5.0r28 |
+| --- | --- | --- | --- |
+| `0x8c3f0e48` ring buffer put (204 bytes) | 16 lines differ | 16–24 | **exact** |
+| `0x8c3e9670` group (264 bytes, 19 functions) | 6 lines differ | 6 | **exact** |
+| four further near misses of the region | 4–16 lines differ | 4–16 | 2–14 |
+| 20-function region sample, untuned sources | 6/20 exact | 3–7/20 | 7/20 |
+| 16 random published SDK units | **16/16 exact** | — | 1/16 |
+
+The SDK and library units stay on 5.1r13; no other release fits them better.
+Files in the region whose code puts a `nop` after every non-delay-slot `mov rX,r0`
+(661 of 686 such moves there, 1 of 1,568 in the SDK) come from yet another release
+that no available compiler reproduces; they remain unmatched.
+
+Assembly of the symbol module and the link always use the pinned 5.1r13 `asmsh` and
+`LNK`: the link only places section P and binds absolute symbols, one linker keeps
+that step identical for every unit, and not every release ships one.
 
 ## What to expect
 
