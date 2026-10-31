@@ -302663,6 +302663,50 @@
       "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_link_step_8c3d70b0",
+      "source": "src/sdk/shc_link_step_8c3d70b0.c",
+      "address": "0x8c3d70b0",
+      "entry": "_link_step_8c3d70b0",
+      "compiler": "shc-v5.0r28",
+      "symbols": {
+        "_func_8c3d7aa4": "0x8c3d7aa4",
+        "_func_8c3d7c7c": "0x8c3d7c7c",
+        "_func_8c3d7e7e": "0x8c3d7e7e",
+        "_func_8c3d7fa8": "0x8c3d7fa8",
+        "_func_8c3d9f38": "0x8c3d9f38",
+        "_func_8c3da080": "0x8c3da080",
+        "_func_8c3da780": "0x8c3da780",
+        "_func_8c3da7ca": "0x8c3da7ca",
+        "_func_8c3dc272": "0x8c3dc272",
+        "_g_8c5be0d3": "0x8c5be0d3",
+        "_g_8c5be0f6": "0x8c5be0f6",
+        "_g_8c5be0fa": "0x8c5be0fa",
+        "_g_8c5be10c": "0x8c5be10c",
+        "_reset_8c3dc224": "0x8c3dc224"
+      },
+      "ranges": [
+        {
+          "offset": 3961008,
+          "size": 284
+        }
+      ],
+      "functions": [
+        {
+          "name": "link_step_8c3d70b0",
+          "address": "0x8c3d70b0",
+          "size": 60
+        },
+        {
+          "name": "link_pump_8c3d70ec",
+          "address": "0x8c3d70ec",
+          "size": 224
+        }
+      ],
+      "reference_sha256": "238873c78086f9646bf1017b49d45c9f10c800d91e5a31bd53d3ad109e16bcff",
+      "headers": [],
+      "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
+    },
+    {
       "id": "shc_iface_8c3d9e04",
       "source": "src/sdk/shc_iface_8c3d9e04.c",
       "address": "0x8c3d9e04",
@@ -302715,6 +302759,33 @@
       "reference_sha256": "f75537b82ca599ddb66b49912e47bb0edc1470b4cbccb7c68d59224760c4727c",
       "headers": [],
       "boundary_review": "SHC pool group: 6 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
+    },
+    {
+      "id": "shc_buf_write_8c3dc1b4",
+      "source": "src/sdk/shc_buf_write_8c3dc1b4.c",
+      "address": "0x8c3dc1b4",
+      "entry": "_buf_write_8c3dc1b4",
+      "compiler": "shc-v5.0r28",
+      "symbols": {
+        "_func_8c3da780": "0x8c3da780",
+        "_func_8c3da7ca": "0x8c3da7ca"
+      },
+      "ranges": [
+        {
+          "offset": 3981748,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "buf_write_8c3dc1b4",
+          "address": "0x8c3dc1b4",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "cf616c00b76c282f7370a5852c89054ae83637a6643ad6f4f0e9dc227b24c7f4",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
     },
     {
       "id": "shc_byte_table_8c3dce50",
@@ -302803,6 +302874,50 @@
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
     },
     {
+      "id": "shc_disc_poll_8c3de1ec",
+      "source": "src/sdk/shc_disc_poll_8c3de1ec.c",
+      "address": "0x8c3de1ec",
+      "entry": "_disc_poll_8c3de1ec",
+      "compiler": "shc-v5.0r28",
+      "symbols": {
+        "_blink_update_8c3e1af0": "0x8c3e1af0",
+        "_check_a_8c3d6466": "0x8c3d6466",
+        "_check_b_8c3d660a": "0x8c3d660a",
+        "_check_c_8c3d67b4": "0x8c3d67b4",
+        "_check_d_8c3d692e": "0x8c3d692e",
+        "_g_8c5bb378": "0x8c5bb378",
+        "_g_8c5be0fc": "0x8c5be0fc",
+        "_g_8c5be489": "0x8c5be489",
+        "_g_8c5be530": "0x8c5be530",
+        "_g_8c5be534": "0x8c5be534",
+        "_g_8c5be538": "0x8c5be538",
+        "_g_8c5be555": "0x8c5be555",
+        "_g_8c5be558": "0x8c5be558",
+        "_reset_8c3dc224": "0x8c3dc224"
+      },
+      "ranges": [
+        {
+          "offset": 3989996,
+          "size": 300
+        }
+      ],
+      "functions": [
+        {
+          "name": "disc_poll_8c3de1ec",
+          "address": "0x8c3de1ec",
+          "size": 210
+        },
+        {
+          "name": "disc_timers_8c3de2be",
+          "address": "0x8c3de2be",
+          "size": 90
+        }
+      ],
+      "reference_sha256": "0eb7669acf5a2936552e72c1b610ff068bc4046d9d8b2d2119f43c0340dbd63a",
+      "headers": [],
+      "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
+    },
+    {
       "id": "shc_timer_tick_8c3df2e8",
       "source": "src/sdk/shc_timer_tick_8c3df2e8.c",
       "address": "0x8c3df2e8",
@@ -302834,6 +302949,63 @@
       "reference_sha256": "bdc60449f534f9699fed474d52b2f8e71b9976e0588005222a3be91711aea9b2",
       "headers": [],
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
+    },
+    {
+      "id": "shc_build_date_8c3df574",
+      "source": "src/sdk/shc_build_date_8c3df574.c",
+      "address": "0x8c3df574",
+      "entry": "_show_build_8c3df574",
+      "compiler": "shc-v5.0r28",
+      "symbols": {
+        "_memset": "0x8c12b880",
+        "_call_8c12b154": "0x8c12b154",
+        "_call_8c12b114": "0x8c12b114",
+        "_call_8c12b048": "0x8c12b048",
+        "__slow_strcpy": "0x8c12bfcc",
+        "_str_8c3f9098": "0x8c3f9098",
+        "_str_8c3f90f4": "0x8c3f90f4",
+        "_str_8c3f90d4": "0x8c3f90d4",
+        "_puts_8c3e0b10": "0x8c3e0b10",
+        "_flush_8c3e0c3c": "0x8c3e0c3c",
+        "_str_8c3f90a4": "0x8c3f90a4",
+        "_str_8c3f90a8": "0x8c3f90a8",
+        "_str_8c3f90ac": "0x8c3f90ac",
+        "_str_8c3f90b0": "0x8c3f90b0",
+        "_str_8c3f90b4": "0x8c3f90b4",
+        "_str_8c3f90b8": "0x8c3f90b8",
+        "_str_8c3f90bc": "0x8c3f90bc",
+        "_str_8c3f90c0": "0x8c3f90c0",
+        "_str_8c3f90c4": "0x8c3f90c4",
+        "_str_8c3f90c8": "0x8c3f90c8",
+        "_str_8c3f90cc": "0x8c3f90cc",
+        "_str_8c3f90d0": "0x8c3f90d0"
+      },
+      "ranges": [
+        {
+          "offset": 3994996,
+          "size": 864
+        }
+      ],
+      "functions": [
+        {
+          "name": "show_build_8c3df574",
+          "address": "0x8c3df574",
+          "size": 356
+        },
+        {
+          "name": "get_build_8c3df6d8",
+          "address": "0x8c3df6d8",
+          "size": 432
+        },
+        {
+          "name": "print_line_8c3df888",
+          "address": "0x8c3df888",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "96387a3f30e97ab9412cb4423bbccdc1e5f905aea68de897873b63dd4054f556",
+      "headers": [],
+      "boundary_review": "SHC pool group: 3 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
     },
     {
       "id": "shc_poll_buttons_8c3e0188",
@@ -302868,6 +303040,54 @@
       "reference_sha256": "ec12bd89f496bbaf39d3abe703bdaa660c2fd25f41f771a133f8dd67f7755f09",
       "headers": [],
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
+    },
+    {
+      "id": "shc_timer_a_8c3e0cc4",
+      "source": "src/sdk/shc_timer_a_8c3e0cc4.c",
+      "address": "0x8c3e0cc4",
+      "entry": "_timer_a_8c3e0cc4",
+      "compiler": "shc-v5.0r28",
+      "symbols": {
+        "_create_handler_8c36bbc4": "0x8c36bbc4",
+        "_g_8c400300": "0x8c400300",
+        "_g_8c400304": "0x8c400304",
+        "_g_8c400308": "0x8c400308",
+        "_g_8c40030c": "0x8c40030c",
+        "_g_8c40030d": "0x8c40030d",
+        "_g_8c40030e": "0x8c40030e",
+        "_g_8c400310": "0x8c400310",
+        "_g_8c400314": "0x8c400314",
+        "_release_pending_8c36becc": "0x8c36becc",
+        "_tmu0_count_8c36e6f6": "0x8c36e6f6",
+        "_tmu0_to_us_8c36e706": "0x8c36e706",
+        "__divlu": "0x8c12bb50"
+      },
+      "ranges": [
+        {
+          "offset": 4000964,
+          "size": 296
+        }
+      ],
+      "functions": [
+        {
+          "name": "timer_a_8c3e0cc4",
+          "address": "0x8c3e0cc4",
+          "size": 56
+        },
+        {
+          "name": "timer_b_8c3e0cfc",
+          "address": "0x8c3e0cfc",
+          "size": 56
+        },
+        {
+          "name": "timer_now_8c3e0d34",
+          "address": "0x8c3e0d34",
+          "size": 184
+        }
+      ],
+      "reference_sha256": "6d0bf01f13247554d48166d07e47438cc6f273a1ccd8ca0823b298411df23c94",
+      "headers": [],
+      "boundary_review": "SHC pool group: 3 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
     },
     {
       "id": "shc_msg_text_8c3e1c00",
@@ -303172,6 +303392,153 @@
       "boundary_review": "SHC pool group: 19 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
     },
     {
+      "id": "shc_link_init_8c3ea908",
+      "source": "src/sdk/shc_link_init_8c3ea908.c",
+      "address": "0x8c3ea908",
+      "entry": "_link_init_8c3ea908",
+      "compiler": "shc-v5.0r28",
+      "symbols": {
+        "_g_8c5bb2d0": "0x8c5bb2d0",
+        "_g_8c5bb33e": "0x8c5bb33e",
+        "_g_8c5c3218": "0x8c5c3218",
+        "_g_8c5c4218": "0x8c5c4218",
+        "_g_8c5c422c": "0x8c5c422c",
+        "_g_8c5c4232": "0x8c5c4232",
+        "_g_8c5c5244": "0x8c5c5244",
+        "_g_8c5c5662": "0x8c5c5662",
+        "_g_8c5c5664": "0x8c5c5664",
+        "_g_8c5c5665": "0x8c5c5665",
+        "_g_8c5c5666": "0x8c5c5666",
+        "_g_8c5c5667": "0x8c5c5667",
+        "_g_8c5c5670": "0x8c5c5670",
+        "_g_8c5c5886": "0x8c5c5886",
+        "_g_8c5c5888": "0x8c5c5888",
+        "_g_8c5c5889": "0x8c5c5889",
+        "_g_8c5c588a": "0x8c5c588a",
+        "_g_8c5c588b": "0x8c5c588b",
+        "_g_8c5c588c": "0x8c5c588c",
+        "_g_8c5c588d": "0x8c5c588d",
+        "_g_8c5c588e": "0x8c5c588e",
+        "_g_8c5c588f": "0x8c5c588f",
+        "_g_8c5c5890": "0x8c5c5890",
+        "_g_8c5c5891": "0x8c5c5891",
+        "_g_8c5c5892": "0x8c5c5892",
+        "_g_8c5c5894": "0x8c5c5894",
+        "_g_8c5c5898": "0x8c5c5898",
+        "_g_8c5c589c": "0x8c5c589c",
+        "_g_8c5c58a0": "0x8c5c58a0",
+        "_g_8c5c58a4": "0x8c5c58a4",
+        "_g_8c5c58a5": "0x8c5c58a5",
+        "_g_8c5c58a6": "0x8c5c58a6",
+        "_g_8c5c58a7": "0x8c5c58a7",
+        "_g_8c5c58a8": "0x8c5c58a8",
+        "_g_8c5c58a9": "0x8c5c58a9",
+        "_g_8c5c58aa": "0x8c5c58aa",
+        "_g_8c5c58ab": "0x8c5c58ab",
+        "_g_8c5c58ac": "0x8c5c58ac",
+        "_g_8c5c58ad": "0x8c5c58ad",
+        "_g_8c5c58ae": "0x8c5c58ae",
+        "_g_8c5c58af": "0x8c5c58af",
+        "_g_8c5c58b0": "0x8c5c58b0",
+        "_g_8c5c58b1": "0x8c5c58b1",
+        "_g_8c5c58b2": "0x8c5c58b2",
+        "_g_8c5c58b3": "0x8c5c58b3",
+        "_g_8c5c58b4": "0x8c5c58b4",
+        "_g_8c5c58b5": "0x8c5c58b5",
+        "_g_8c5c58b6": "0x8c5c58b6",
+        "_g_8c5c58b7": "0x8c5c58b7",
+        "_g_8c5c58b8": "0x8c5c58b8",
+        "_g_8c5c58b9": "0x8c5c58b9",
+        "_g_8c5c58ba": "0x8c5c58ba",
+        "_g_8c5c58bb": "0x8c5c58bb",
+        "_g_8c5c58bc": "0x8c5c58bc",
+        "_g_8c5c58bd": "0x8c5c58bd",
+        "_g_8c5c58be": "0x8c5c58be",
+        "_g_8c5c58bf": "0x8c5c58bf",
+        "_g_8c5c58c0": "0x8c5c58c0",
+        "_g_8c5c58c1": "0x8c5c58c1",
+        "_g_8c5c58c2": "0x8c5c58c2",
+        "_g_8c5c58c3": "0x8c5c58c3",
+        "_g_8c5c58c4": "0x8c5c58c4",
+        "_g_8c5c58c5": "0x8c5c58c5",
+        "_g_8c5c58c6": "0x8c5c58c6",
+        "_g_8c5c58c7": "0x8c5c58c7",
+        "_g_8c5c58c8": "0x8c5c58c8",
+        "_g_8c5c58c9": "0x8c5c58c9",
+        "_g_8c5c58ca": "0x8c5c58ca",
+        "_g_8c5c58cb": "0x8c5c58cb",
+        "_g_8c5c58cc": "0x8c5c58cc",
+        "_g_8c5c58ce": "0x8c5c58ce",
+        "_g_8c5c58d0": "0x8c5c58d0",
+        "_g_8c5c58d2": "0x8c5c58d2",
+        "_g_8c5c58d4": "0x8c5c58d4",
+        "_g_8c5c58d6": "0x8c5c58d6",
+        "_g_8c5c58d7": "0x8c5c58d7",
+        "_g_8c5c58d8": "0x8c5c58d8",
+        "_g_8c5c58d9": "0x8c5c58d9",
+        "_g_8c5c58da": "0x8c5c58da",
+        "_g_8c5c58db": "0x8c5c58db",
+        "_g_8c5c58e0": "0x8c5c58e0",
+        "_g_8c5c58e4": "0x8c5c58e4",
+        "_g_8c5c58e5": "0x8c5c58e5",
+        "_g_8c5c58e6": "0x8c5c58e6",
+        "_g_8c5c58e7": "0x8c5c58e7",
+        "_g_8c5c58e8": "0x8c5c58e8",
+        "_g_8c5c58f2": "0x8c5c58f2",
+        "_g_8c5c58f3": "0x8c5c58f3",
+        "_g_8c5c58f4": "0x8c5c58f4",
+        "_g_8c5c58f5": "0x8c5c58f5",
+        "_g_8c5c58f6": "0x8c5c58f6",
+        "_g_8c5c58f7": "0x8c5c58f7",
+        "_g_8c5c58f8": "0x8c5c58f8",
+        "_g_8c5c58f9": "0x8c5c58f9",
+        "_g_8c5c58fa": "0x8c5c58fa",
+        "_g_8c5c58fc": "0x8c5c58fc",
+        "_g_8c5c58fe": "0x8c5c58fe",
+        "_g_8c5c5900": "0x8c5c5900",
+        "_g_8c5c5902": "0x8c5c5902",
+        "_g_8c5c5904": "0x8c5c5904",
+        "_g_8c5c5906": "0x8c5c5906",
+        "_g_8c5c5907": "0x8c5c5907",
+        "_g_8c5c5908": "0x8c5c5908",
+        "_g_8c5c5909": "0x8c5c5909",
+        "_g_8c5c590a": "0x8c5c590a",
+        "_g_8c5c590b": "0x8c5c590b",
+        "_g_8c5c590c": "0x8c5c590c",
+        "_g_8c5c590e": "0x8c5c590e",
+        "_g_8c5c5914": "0x8c5c5914",
+        "_g_8c5c5935": "0x8c5c5935",
+        "_g_8c5c5946": "0x8c5c5946",
+        "_g_8c5c5960": "0x8c5c5960",
+        "_g_buf_8c5c5248": "0x8c5c5248",
+        "_g_count_8c5c5660": "0x8c5c5660",
+        "_g_len_8c5c5884": "0x8c5c5884",
+        "_g_type_8c5c5887": "0x8c5c5887",
+        "__divlu": "0x8c12bb50"
+      },
+      "ranges": [
+        {
+          "offset": 4040968,
+          "size": 1016
+        }
+      ],
+      "functions": [
+        {
+          "name": "link_init_8c3ea908",
+          "address": "0x8c3ea908",
+          "size": 724
+        },
+        {
+          "name": "link_rate_8c3eabdc",
+          "address": "0x8c3eabdc",
+          "size": 292
+        }
+      ],
+      "reference_sha256": "139d7dfc9eaf5d5c15ca95141f39f53eaa65d54ade9695e05c2108b3fe8f6d42",
+      "headers": [],
+      "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
+    },
+    {
       "id": "shc_state_init_8c3ee8e4",
       "source": "src/sdk/shc_state_init_8c3ee8e4.c",
       "address": "0x8c3ee8e4",
@@ -303246,6 +303613,91 @@
       "reference_sha256": "22cb6f302523377b274e9597176b00033bdef68763a7bb7bd7e0d54e34dc6f0f",
       "headers": [],
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
+    },
+    {
+      "id": "shc_tables_8c3f232c",
+      "source": "src/sdk/shc_tables_8c3f232c.c",
+      "address": "0x8c3f232c",
+      "entry": "_tables_init_8c3f232c",
+      "compiler": "shc-v5.0r28",
+      "symbols": {
+        "_g_8c5bb10a": "0x8c5bb10a",
+        "_g_8c5bb10b": "0x8c5bb10b",
+        "_g_8c5bb10c": "0x8c5bb10c",
+        "_g_8c5bb10d": "0x8c5bb10d",
+        "_g_8c5bb10e": "0x8c5bb10e",
+        "_g_8c5bb110": "0x8c5bb110",
+        "_g_8c5bb111": "0x8c5bb111",
+        "_g_8c5bb112": "0x8c5bb112",
+        "_g_8c5bb118": "0x8c5bb118",
+        "_g_8c5bb120": "0x8c5bb120",
+        "_g_8c5bb122": "0x8c5bb122",
+        "_g_8c5bb12a": "0x8c5bb12a",
+        "_g_8c5bb12c": "0x8c5bb12c",
+        "_g_8c5bb12e": "0x8c5bb12e",
+        "_g_8c5bb130": "0x8c5bb130",
+        "_g_8c5bb132": "0x8c5bb132",
+        "_g_8c5bb134": "0x8c5bb134",
+        "_g_8c5bb13a": "0x8c5bb13a",
+        "_g_8c5bb13c": "0x8c5bb13c",
+        "_g_8c5bb140": "0x8c5bb140",
+        "_g_8c5bb142": "0x8c5bb142",
+        "_g_8c5bb144": "0x8c5bb144",
+        "_g_8c5bb146": "0x8c5bb146",
+        "_g_8c5bb148": "0x8c5bb148",
+        "_g_8c5bb14a": "0x8c5bb14a",
+        "_g_8c5bb14c": "0x8c5bb14c",
+        "_g_8c5bb150": "0x8c5bb150",
+        "_g_8c5bb154": "0x8c5bb154",
+        "_g_8c5bb158": "0x8c5bb158",
+        "_g_8c5bb15c": "0x8c5bb15c",
+        "_g_8c5bb164": "0x8c5bb164",
+        "_g_8c5bb16c": "0x8c5bb16c",
+        "_g_8c5bb16d": "0x8c5bb16d",
+        "_g_8c5bb16e": "0x8c5bb16e",
+        "_g_8c5bb170": "0x8c5bb170",
+        "_g_8c5bb271": "0x8c5bb271",
+        "_g_8c5bb272": "0x8c5bb272",
+        "_g_8c5bb274": "0x8c5bb274",
+        "_g_8c5bb276": "0x8c5bb276",
+        "_g_8c5bb278": "0x8c5bb278",
+        "_g_8c5bb27a": "0x8c5bb27a",
+        "_g_8c5bb27e": "0x8c5bb27e",
+        "_g_8c5bb280": "0x8c5bb280",
+        "_g_8c5bb282": "0x8c5bb282",
+        "_g_8c5bb286": "0x8c5bb286",
+        "_g_8c5bb288": "0x8c5bb288",
+        "_g_8c5bb28c": "0x8c5bb28c",
+        "_g_8c5bb290": "0x8c5bb290",
+        "_g_8c5bb294": "0x8c5bb294",
+        "_g_8c5bb298": "0x8c5bb298",
+        "_g_8c5be13c": "0x8c5be13c",
+        "_g_8c5be13e": "0x8c5be13e",
+        "_g_8c5be140": "0x8c5be140",
+        "_g_8c5bfa18": "0x8c5bfa18",
+        "_g_8c5c5935": "0x8c5c5935"
+      },
+      "ranges": [
+        {
+          "offset": 4072236,
+          "size": 736
+        }
+      ],
+      "functions": [
+        {
+          "name": "tables_init_8c3f232c",
+          "address": "0x8c3f232c",
+          "size": 464
+        },
+        {
+          "name": "tables_reset_8c3f24fc",
+          "address": "0x8c3f24fc",
+          "size": 272
+        }
+      ],
+      "reference_sha256": "e060cbb7c6f34071b4f9638addb1c11e1b0395ae4dfaaff6f07095ff65fad762",
+      "headers": [],
+      "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with SHC 5.0 Release 28 at the fixed SHC flags."
     },
     {
       "id": "shc_mpeg_mc_8c400afc",

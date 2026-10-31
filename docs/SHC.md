@@ -140,14 +140,14 @@ installation is present.
 
 ## Current units
 
-331 pool-group units, 87,528 bytes, 1210 functions (listed in `config/project.json`
+338 pool-group units, 91,136 bytes, 1225 functions (listed in `config/project.json`
 with `"compiler": "shc-v5.1r13"` or `"shc-v5.0r28"`; sources in `src/sdk/`):
 
 | Region | Compiler | Units | Bytes | Functions |
 | --- | --- | ---: | ---: | ---: |
 | Library block `0x8c1f0000`–`0x8c205000` | 5.1r13 | 26 | 6,774 | 104 |
 | SDK region from `0x8c340000` | 5.1r13 | 297 | 78,950 | 1074 |
-| `0x8c3d0000` region ([second release](#second-release-50r2628)) | 5.0r28 | 8 | 1,804 | 32 |
+| `0x8c3d0000` region ([second release](#second-release-50r2628)) | 5.0r28 | 15 | 5,412 | 47 |
 
 Units are complete pool groups: one or more consecutive literal-pool groups whose
 functions only branch to each other. A literal pool may sit inside a unit (and
@@ -241,6 +241,9 @@ The SDK and library units stay on 5.1r13; no other release fits them better.
 Files in the region whose code puts a `nop` after every non-delay-slot `mov rX,r0`
 (661 of 686 such moves there, 1 of 1,568 in the SDK) come from yet another release
 that no available compiler reproduces; they remain unmatched.
+Many marker-free files contain no non-delay-slot `mov rX,r0` at all, so the absence
+of the marker does not prove which release built them; a unit's `compiler` records
+the release that reproduces it byte for byte.
 
 Assembly of the symbol module and the link always use the pinned 5.1r13 `asmsh` and
 `LNK`: the link only places section P and binds absolute symbols, one linker keeps
