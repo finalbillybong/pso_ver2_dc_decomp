@@ -230,15 +230,18 @@ int ring_query_8c35918c(Ring *rb, int which, int max, int *outlen)
     Ring *r = rb;
     int m;
     int t, n, k;
+    int u;
 
     m = ring_lock_8c358db8(rb);
     if (which == 0) {
         n = MIN(r->space, r->size - r->wpos + r->extra);
     } else if (which == 1) {
-        n = MIN(r->count, r->size - r->rpos + r->extra);
+        u = r->count;
+        t = r->size - r->rpos + r->extra;
+        n = MIN(u, t);
     } else
         goto bad;
-    k = MIN(n, max);
+    if (n < max) k = n; else k = max;
     goto done;
 bad:
     k = 0;
@@ -247,7 +250,6 @@ bad:
 done:
     *outlen = k;
     ring_unlock_8c358dd0(r, m);
-    if (0) k = max;
     return k == max;
 }
 

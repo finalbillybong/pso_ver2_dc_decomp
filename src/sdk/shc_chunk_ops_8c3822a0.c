@@ -61,10 +61,9 @@ int tex_define_8c382306(Tex *t, Dims *d)
     volatile int w;
     int h;
     hp = &t->hdr;
+    &h;
     w = d->w;
     h = d->h;
-    &h;
-    if (0) w = 0;
     {
         int data = d->data;
         if (call_8c38c374(hp, w, h, data)) {

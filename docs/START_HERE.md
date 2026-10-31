@@ -1,8 +1,8 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **12268 exact functions in 11289 modules**, replacing
-**1,240,640 bytes** of the 4,162,912-byte decoded executable (**29.8022% code-range coverage**).
-Typed static data adds 492,980 bytes ([DATA.md](DATA.md)), for **41.6444% image coverage**.
+The current public checkpoint has **12173 exact functions in 11282 modules**, replacing
+**1,232,902 bytes** of the 4,162,912-byte decoded executable (**29.6163% code-range coverage**).
+Typed static data adds 493,036 bytes ([DATA.md](DATA.md)), for **41.4599% image coverage**.
 It retains **0 reference bytes**. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
@@ -32,7 +32,7 @@ credit. Check every proposed range against existing modules before integration.
 ## Second compiler (Hitachi SHC)
 
 SDK and library code compiled with Hitachi SHC can now be admitted as pool-group
-units ([SHC.md](SHC.md)). 349 pool groups (92,260 bytes, 1244 functions) are in.
+units ([SHC.md](SHC.md)). 342 pool groups (84,522 bytes, 1149 functions) are in.
 Candidate groups: the `0x8c1f0000`–`0x8c205000` library block (about 61 KB
 SHC-shaped) and the SDK region from `0x8c340888`; a unit needs every function that
 shares its literal pool.
@@ -40,7 +40,7 @@ shares its literal pool.
 ## Assembly units
 
 Assembly is not decompiled code and is never committed ([ASM.md](ASM.md)). 88 hand-written routines
-(30,678 bytes) carry evidence that no compiler produced them; 4,994 fallback units (1,814,428 bytes) are
+(32,738 bytes) carry evidence that no compiler produced them; 5,014 fallback units (1,820,608 bytes) are
 generated from your dump for code without matching C and labelled not_decompiled. Both are
 regenerated at build time and earn no code or matching credit.
 

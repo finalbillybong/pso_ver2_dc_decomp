@@ -2,22 +2,22 @@
 
 | Measure | Value |
 | --- | ---: |
-| Exact matching functions | 12268 |
-| Matching modules | 11289 |
-| Compiled complete ranges | 1,240,640 bytes |
-| Code-range coverage of the image | 29.8022% |
-| of which Hitachi SHC pool groups | 92,260 bytes in 349 modules / 1244 functions |
-| Typed static data | 492,980 bytes in 12021 objects / 3335 modules |
-| Typed data by kind | byte_table 482, float_table 20,596, function_table 18,512, int16_table 13,418, int_table 26,124, pointer_table 35,780, record_table 130,668, string 121,424, vtable 125,976 bytes |
+| Exact matching functions | 12173 |
+| Matching modules | 11282 |
+| Compiled complete ranges | 1,232,902 bytes |
+| Code-range coverage of the image | 29.6163% |
+| of which Hitachi SHC pool groups | 84,522 bytes in 342 modules / 1149 functions |
+| Typed static data | 493,036 bytes in 12022 objects / 3336 modules |
+| Typed data by kind | byte_table 482, float_table 20,596, function_table 18,512, int16_table 13,418, int_table 26,124, pointer_table 35,780, record_table 130,724, string 121,424, vtable 125,976 bytes |
 | Static-data extent | 1,100,132 bytes (estimate) |
-| Typed data share of the static-data extent | 44.8110% |
+| Typed data share of the static-data extent | 44.8161% |
 | Decoded executable | 4,162,912 bytes |
-| Image coverage (code ranges + typed data) | 41.6444% |
+| Image coverage (code ranges + typed data) | 41.4599% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
-| Assembly (hand-written), not decompiled | 30,678 bytes in 88 units (1.0016% of the code extent) |
-| Fallback assembly for unmatched code, **not decompiled** | 1,814,428 bytes in 4994 units (59.2412% of the code extent) |
-| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,958,911 bytes (95.0996% of the image) |
-| Dump extracts (untyped bytes from your dump, not reconstructed) | 204,001 bytes in 2658 ranges (4.9004% of the image; untyped_bytes 175,362, zero_run 28,639) |
+| Assembly (hand-written), not decompiled | 32,738 bytes in 88 units (1.0689% of the code extent) |
+| Fallback assembly for unmatched code, **not decompiled** | 1,820,608 bytes in 5014 units (59.4430% of the code extent) |
+| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,959,469 bytes (95.1130% of the image) |
+| Dump extracts (untyped bytes from your dump, not reconstructed) | 203,443 bytes in 2662 ranges (4.8870% of the image; untyped_bytes 174,802, zero_run 28,641) |
 | Retained reference dependence | 0 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |

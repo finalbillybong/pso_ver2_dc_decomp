@@ -88,7 +88,6 @@ int packet_send_8c3c4a30(Packet *pkt, int dst, short port, int idx)
     unsigned short sum;
     Pseudo ph;
 
-    if (0) pkt++;
     if (udp_ready_8c3c5eb0() == -1) goto fail;
     t = &g_socks_8c5b85b4[idx];
     if (t->raw) {
@@ -102,7 +101,6 @@ int packet_send_8c3c4a30(Packet *pkt, int dst, short port, int idx)
     to = s->addr;
     if (s->connected == 0) s->remote_port = port;
     if ((h = route_8c3c7ca4(to)) == 0) goto fail;
-    if (0) s->addr = dst;
     s->len = htons_8c3c8462(pkt->total + 8);
     n = pkt->count;
     pkt->piece[n].len = 8;

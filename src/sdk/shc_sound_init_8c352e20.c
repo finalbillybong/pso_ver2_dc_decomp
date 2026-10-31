@@ -23,7 +23,7 @@ void sound_init_8c352e24(void)
 {
     int i;
     int state = d_8c3fb568;
-    int *count = &g_init_count_8c3fb56c;
+    register int *count = &g_init_count_8c3fb56c;
     if (*count == 0) {
         init_hardware_8c354594();
         memset(g_buffer_a_8c5383b0, 0, 0x480);
@@ -36,7 +36,6 @@ void sound_init_8c352e24(void)
                 i++;
                 *p++ = 0x80808080;
             } while (i < n);
-            if (0) *p = 0;
         }
         if (g_driver_8c3fb570 == 0) g_driver_8c3fb570 = create_driver_8c35569e();
         g_driver_8c3fb570->start(g_driver_arg_8c3fb574);

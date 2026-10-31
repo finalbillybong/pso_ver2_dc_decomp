@@ -29,8 +29,7 @@ extern int tmu0_count_8c36e6f6(void);
 extern void set_values_8c346118(int, int);
 int submit_request_8c3472e4(Request *request)
 {
-    int zero = 0;
-    int error = zero;
+    int error = 0;
     System *s;
     Ring *r;
     Slot *slot;
@@ -43,7 +42,6 @@ int submit_request_8c3472e4(Request *request)
         error = 0xd000001;
         goto done;
     }
-    if (0) { s++; }
     /* goto to the next line: reproduces the reference branch (docs/SHC.md) */
     goto ring;
 ring:
@@ -55,7 +53,7 @@ ring:
         goto done;
     }
     slot = &r->slots[r->head++];
-    if (r->head == cap) r->head = zero;
+    if (r->head == cap) r->head = 0;
     slot->used = 1;
     slot->request = *request;
     slot->time = tmu0_count_8c36e6f6();

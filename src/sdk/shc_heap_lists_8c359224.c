@@ -250,10 +250,9 @@ int heap_check_8c35964a(Heap *h, int list, int size, int *len)
         return 0;
     }
     b = h->lists[list];
-    if (0) b++;
+
     if (!b) return 0;
-    sp = &s;
-    *sp = b->span;
+    *(sp = &s) = b->span;
     *len = sp->len;
     n = sp->len;
     if (h->mode == 1) {

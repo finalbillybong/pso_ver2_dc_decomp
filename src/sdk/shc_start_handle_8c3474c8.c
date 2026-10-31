@@ -20,14 +20,13 @@ extern int check_handle_8c347458(Handle *);
 extern void done_8c3478b8(Handle *);
 extern int start_transfer_8c348d5c(int, int, int, void (*)(Handle *), Handle *);
 extern void set_values_8c346118(int, int);
-int start_handle_8c3474c8(Handle *handle, int arg)
+int start_handle_8c3474c8(register Handle *handle, int arg)
 {
-    int error;
+    register int error;
     Handle *h;
     int old = _builtin_get_imask();
     _builtin_set_imask(15);
     error = check_handle_8c347458(handle);
-    if (0) { handle++; handle++; handle++; }
     if (error) goto done;
     h = handle;
     h->status = 0;

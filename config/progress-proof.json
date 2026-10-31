@@ -14,14 +14,14 @@
     "fallback_assembly_units_exact"
   ],
   "inputs_sha256": {
-    "config/asm.json": "b9881453ba46ea5dc4a4b8ff2264a713df65379a3802dec66b7b0611e5f711b4",
+    "config/asm.json": "33a4767b60b9259ca3ac26fca9f41d76b2fb640b1393161700d7415a9642140c",
     "config/assets.json": "2910dc0f953037df2aac73b4f0ecdef61813693d629ca8ed6959c547f7cb1220",
     "config/compiler-packages.json": "eb4da1077861b8b0e1ce4faf2725e0d701fab79e43e92a95dc1b0d64bbb040d9",
-    "config/data.json": "44bf4fda16f80c293e928be54a563c6d0cc851d3bf7ae6147d490106b83e629a",
+    "config/data.json": "c06e600ae36111df11e06b546b7dd9a66bccc7a96aa33fa76ff5618e0c9fe427",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
-    "config/extracts.json": "c80593c205717028304f58779200a27e781ed8714be04a75f0fced5d0450305f",
+    "config/extracts.json": "9e1bcbf5695c73f4065284520d9b248192ebb4b336160dbbe4bf3d6e59a2e35b",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "f56d13dcb994ab6e7d84d6755d90b15f1cdc89bd29edd32bc33a302ecdae3db4",
+    "config/project.json": "1c1320c7d3d699f073652d72027fbf098f1a21b17bdc0c2367ba09302e9214ee",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/data/strings_8c284858.c": "cb16255c8ce183afbcb89c956a8f571e4ce6ef906acf5d31baea03f9d8066228",
@@ -3008,6 +3008,7 @@
     "src/data/tables_8c4002f8.c": "baced872efda37e505a53f83f01fc7ded7eb887dd06c650eb2e0afd934eac3ce",
     "src/data/tables_8c400360.c": "9b6c9c1d6b25a9a70f9ef28d85806701f73956d83df99e7a6b8eec9cd2806018",
     "src/data/tables_8c400444.c": "f7b14f0e249d41eae2c5a4aa8404ab457cc81e5de124740343526d556f20f201",
+    "src/data/tables_8c400cd4.c": "d1a95e554d1488212cc085543f5d16f9ae7e3bbeffe4dbd7cda1472aaf7a3013",
     "src/data/vtables_8c260ecc.c": "1a89382d40881a0d1fbc5e78411d5c55f3ed305c75ef31e4a5c0b48e7240c8c1",
     "src/data/vtables_8c260f70.c": "bf52530d7aa04b2516dc50565794cc1d1abb6a9ce299c46f2ae5a7ff5b665e66",
     "src/data/vtables_8c260fa0.c": "a3889934fe97ac758c5bc8b70b87e1172777245653ad546ae97cd9308eab4278",
@@ -14424,13 +14425,10 @@
     "src/sdk/shc_arp_request_8c3c57a4.c": "90d04628186ac00c79a9686871a595de7bfd9ed625873a435fbfa055eea9322f",
     "src/sdk/shc_atoi_8c130384.c": "eb1cdedd7befaa9e07e0f708f8491a09c173b2e4e383d39eb39f05015ad36156",
     "src/sdk/shc_attach_8c348100.c": "8fb2db13ae0de6335e2c236ce7eaddbd5b69c24cba7036ec915c37879d514d1a",
-    "src/sdk/shc_bank_find_8c34d9b8.c": "b82c036817688099f2a8841e80c40a5ea6e48a31a7756c96694584ed3160a33a",
     "src/sdk/shc_bank_lookup_8c345bb4.c": "d1317f8e5ae095c6f0db83caacb42e4824c72f030aa23c58864dfa5dfe5e813e",
     "src/sdk/shc_bit_index_8c37e9c8.c": "a13945d658cea33969f2ae4a82450b4c1f43447838b6a3575882858996688eb3",
     "src/sdk/shc_blk_sync_8c1fbe0c.c": "0d4d9a73e228fc6ddc9b69aecd7522c001d5016766c2c24106afb9cfbf0264b9",
     "src/sdk/shc_boot_exit_8c379280.c": "27d9da346fc3320e515a374cae8f95d9162c0728640113be1de8355a30e3153e",
-    "src/sdk/shc_buf_geom_8c342640.c": "9e6c45b9720572e5e17a392cf559bc10997e353017adab2c497f20517a4604a9",
-    "src/sdk/shc_buf_write_8c3dc1b4.c": "9dff3ee5a7942734bb31195cb30cc7d222c78b5536ae3c12e152efff106b29d5",
     "src/sdk/shc_build_date_8c3df574.c": "bbfab7088d6d95f01b7fab107e337a06cad37321fa6974abd39914e058340c10",
     "src/sdk/shc_byte_order_8c1fd198.c": "8c59184701e1004d532e47e6fbc5e1c53673af07ef755b057f43aa091ff4c85d",
     "src/sdk/shc_byte_table_8c3dce50.c": "3b98a9f64edbd6873815e400ee4193a15377667eecb9e555db7d9b16b3f45b9c",
@@ -14454,7 +14452,7 @@
     "src/sdk/shc_check_set_8c34806c.c": "2b85054d6766ef7f8b59893374c85c4de453d21affc63c3022ff924aeebf8f9b",
     "src/sdk/shc_checked_pair_8c348128.c": "1add5000b8e1dd3fbd722981796ec5a0d28e39f8f9264cb12ef2f1c575ae9988",
     "src/sdk/shc_checked_set_8c348044.c": "5c9177145f15af6272ed8230877c2c46daa0a4a4db330032c9fd021972a2e8b4",
-    "src/sdk/shc_chunk_ops_8c3822a0.c": "ddf4f0e49ff29b4ff2b59499b269dfb3c5a99de83c7a820c66ecc5c1fe1ea3ca",
+    "src/sdk/shc_chunk_ops_8c3822a0.c": "91c74042628c120a8233f60037496e8f87bc7bd47584a8222d7500e6795545c1",
     "src/sdk/shc_clear_channel_8c343388.c": "2a36a9456a7ab83e507e4e8517fb69686f803703ccb5160f17c1a42cc23be2ca",
     "src/sdk/shc_clear_output_8c344c7c.c": "1e0b2fdccd9fa207c820d7a600e482e82bc916be6727da9cf7f84d52e842c480",
     "src/sdk/shc_close_block_8c347630.c": "d1c8e8591f9c6df6bba3de6e9daba63da195e1a7961a8950eeba9eb75eca1cd4",
@@ -14494,7 +14492,6 @@
     "src/sdk/shc_file_stream_8c349930.c": "144da1e826e92655e238f0538cdbf40bb13df2c95627bf9ef934930f1dc8e257",
     "src/sdk/shc_find_buffer_8c36333c.c": "07616be98f4eae7f3a75c9c47834f9d7ade550bfe90f0f4b34cc6c858a7304f6",
     "src/sdk/shc_flag_reset_8c1ffe64.c": "4d348614a8712046cd71b5bd45e8b4b1c92c28e29178e2decf98995bf3fa9fbb",
-    "src/sdk/shc_flash_cmd_8c379038.c": "59389e63aa59076e9895ef849f2b735477acb75054338331d98b6f6d7bc41cad",
     "src/sdk/shc_flash_id_8c378f3c.c": "3c53146198352a013f19300105545e3283cbe216446a66a95b2cc90242af31d3",
     "src/sdk/shc_flash_read_8c345ee4.c": "9db7e5519862691ed447591f72f815f6c527d4bf34a46c1d1e844df027a841e0",
     "src/sdk/shc_flash_read_byte_8c344f78.c": "11e7408da790836d61d14a54450f9352fbfc91a4c9060f6723135bcfe6bef9bb",
@@ -14518,7 +14515,7 @@
     "src/sdk/shc_handle_close_8c3489bc.c": "911a4ebad9110f0461b18f6d717200b9c568ecea44c184d5f8e71bd9568989ae",
     "src/sdk/shc_header_check_8c363370.c": "fd93fe3dbd5aecd2518142eb5ab78a5bf56f8055df75cce1002e6a9917c763c1",
     "src/sdk/shc_heap_8c384418.c": "551e839d8267735bf834c6456aded47a04cd9da07cb35851d1cfe03f488b95c9",
-    "src/sdk/shc_heap_lists_8c359224.c": "e2410f835088edf834db2771dc3ab708373a63a44f413d97750b2b664826a9f2",
+    "src/sdk/shc_heap_lists_8c359224.c": "1f5d569c859e7a9e806d605acc08a56aeaed83091c333355e6c8eba1b8932e71",
     "src/sdk/shc_hello_packet_8c1ff604.c": "c3bafe75062d8ac02fec2e40cca04577478d094a61d6512be7887becd42c550e",
     "src/sdk/shc_iface_8c3d9e04.c": "984880c792a51697065da4853ebbf725a1003a35676c93c6e7d3c482b8556d86",
     "src/sdk/shc_init_all_8c3c64b0.c": "4157dfe013a0eefe0bbfc985aaf0d3f5f35e154428760deda13ab00ef05c40f2",
@@ -14551,13 +14548,12 @@
     "src/sdk/shc_map_class_8c3dde70.c": "824554a45189c5e10d122614254224b9c56073f3b1d1aab20953f5e6bf42d43d",
     "src/sdk/shc_map_code_8c3ddfe4.c": "9b6dd4f69f260cc3cc58d47ba046e50f9730171518fab1dfe0e3016b08cb032b",
     "src/sdk/shc_math_errno_8c12b684.c": "a3759aa5407785419843eba4ca8431cc6451d8ec5cc4cac0867628709c5ba060",
+    "src/sdk/shc_memmove_8c12b83c.c": "1a5ac1be423891aa60ffd7dcc2c34854f492a72b088fb5f4e949b36a82d70eb2",
     "src/sdk/shc_mic_ops_8c341470.c": "267a9472bda5eabe663b2c5022c7e4ba5d5ef1353bf9b7225609c7e2cc36b3c5",
     "src/sdk/shc_mixer_reset_8c384e18.c": "11c1fc7415db4befdfeb3266132224531480c2276e2206942b8ed6c6e1ffc744",
     "src/sdk/shc_mode_select_8c38f6e8.c": "5910a89149f78fca395bc65a943e7503759fe8a6e18a08fbb6444f2c72f8c7c9",
     "src/sdk/shc_modem_cfg_8c361b44.c": "a8617d87730900e5a7d69be9ae6baf703486348182fc8355e95387171a7f78f9",
-    "src/sdk/shc_modem_link2_8c36167c.c": "c999a21f891bacd6dc059b6400a45188ed3e16df591ad09086188c6d25f9a307",
-    "src/sdk/shc_mpeg_mc_8c400afc.c": "416e9c6412a13a70ddb50e7a6ef722b774856dac6debe18cd225c26052705f39",
-    "src/sdk/shc_mps_init_8c35add0.c": "f8f58525cdfa20625918a1c2b6fd5872b2c7ff881b30961893339d7a8dbb716d",
+    "src/sdk/shc_modem_link2_8c36167c.c": "22e599795209b7125e1a133fa73c2bd8d81e45a262a7d6285ebc058537ba66aa",
     "src/sdk/shc_msg_queue_8c3ca820.c": "428d126d414643679fcc4e06a405ec7e7dac79b185c553dc1458262294375a5a",
     "src/sdk/shc_msg_text_8c3e1c00.c": "e276f57e90ee9ab7de8cb4c2f13598b85bc915216b9f284852bf60fb4b18140c",
     "src/sdk/shc_name_request2_8c346d20.c": "e094b6bfe5b5803b25e78866aa67d4318a04a9e8a01ea12bfffb91007698c835",
@@ -14568,7 +14564,6 @@
     "src/sdk/shc_net_api_8c372910.c": "9eea628b092dfdd9c3d43814ea35228de967b4ef1e2f4cd98ce98cacbd3e065f",
     "src/sdk/shc_net_frame_8c1fd920.c": "8d62c41f42c7e8db4853be7c6ea586d4b5717e0e086602c0f7b887cea057dd98",
     "src/sdk/shc_net_ioctl_8c204010.c": "1bcc58fbde22da71aa1cff132d93e6b335491837ce05a622cb7a3f1fffbf9a01",
-    "src/sdk/shc_net_timers_8c204144.c": "fad02aecb0f5f52316b3274748213c963e203c5595871c66da6966ce0d653313",
     "src/sdk/shc_next_request_8c347c90.c": "76055fe04f1359caeb7d88c209081b93e56eb61fdd1b4608484a53f0b769d0bd",
     "src/sdk/shc_node_pool_8c1f5624.c": "25b40a87f30573f0a316111e21880d03b580c77c3dda85f8b84f142177fdee55",
     "src/sdk/shc_notify_8c3903a4.c": "8c2ec1dbfd80e0e27cf56dba73306efaf793fd1f900b55b3687b08deaf40bc1f",
@@ -14587,9 +14582,10 @@
     "src/sdk/shc_palette_init_8c3598d0.c": "6de891bc2550cac84e08252c2c576401b958ecc7dea78c1d79bb3937e06d5386",
     "src/sdk/shc_poll_buttons_8c3e0188.c": "54f8ea43803a5363a1f35fcae5752f988eac4bbec84fd7d46b67adb8b9a4aa78",
     "src/sdk/shc_poll_streams_8c37d480.c": "046be56c7e42810a2a85c7d688448dd1649ea88d330ab4d56b698d3bb5f81931",
+    "src/sdk/shc_poly_even_8c12c0e8.c": "7a1c41553d45bf5a8eabc58211853c26f51980bd8d808aef761cb35bb11e2197",
     "src/sdk/shc_port_cmds_8c379cb0.c": "e534db9f4dbe920804982bb957de2b61a6d9c6b42a3cc8877866bbe8f355bdbd",
     "src/sdk/shc_port_events_8c35f5d8.c": "ea97d20426e4ced332cd76103a7635597cfb2f2d4e35f1141a5b4bbac4f18289",
-    "src/sdk/shc_port_modes_8c3636f4.c": "986a86fc871f94f7aadce49088fef4292297188f77fc6f64bf1157384ceb06e0",
+    "src/sdk/shc_port_modes_8c3636f4.c": "b5cd032b988055556a2ba6a5335a5cd3bca515cce444a4612eaffa8ae132251e",
     "src/sdk/shc_port_open_8c363ef0.c": "1558068c444ea1ee1124d42ed57b982905edc5a29660dd78a77b95c59e735331",
     "src/sdk/shc_port_setup_8c201edc.c": "779c856a01652e69e947ef61c011460687c33fcde5c63f282249f4eaf214c9d4",
     "src/sdk/shc_port_slots_8c364a78.c": "5e52d6955532e0e0c412a0f7651c106946febf2b51b251df522e850481156a27",
@@ -14607,7 +14603,7 @@
     "src/sdk/shc_queue_transfer_8c36931c.c": "4af003cede5fffd96c10eaaef2b5143dcbe52d2726bf31627aca213c88732e1a",
     "src/sdk/shc_ramp_update4_8c348628.c": "c4e22b7ce87d1dd39cf07f335de0b60c11b1c9ac610d98356ca62ce4e5ed22e0",
     "src/sdk/shc_ramp_update_8c345550.c": "e795be5729f9ff0873429991216a4cec9600c48d472e0776a3d3660232fdaf95",
-    "src/sdk/shc_rate_hist_8c360314.c": "4fcd12cd5f9566da069098c84c2a6f4eb7bd07339bbc7bad3d3c3af8ff8e7640",
+    "src/sdk/shc_rate_hist_8c360314.c": "1c31428fc79bea05ae5d2dbd05b8a5ff6ec1fc5c82c5603937edd648b206b654",
     "src/sdk/shc_rate_pitch_8c343b34.c": "e92bc866bbab913d1847cf7cf31b4961062103a79d51ac74fe3ddfcbcde5be13",
     "src/sdk/shc_read_byte_8c345d7c.c": "af13605570f8835f0665335ebe543390fbb3f92e3eb5642d1174a81f95bf768a",
     "src/sdk/shc_read_byte_8c345e50.c": "230bb0d69b2a2b492b7e7d8e42ff285d5edffd4d7e0190a9b01c588f77b5075c",
@@ -14629,7 +14625,7 @@
     "src/sdk/shc_reset_state_8c391cc4.c": "57f3a37f7a192ab58acc5aa52d94c481de0e4457f907f7218e363ff7b426e5d9",
     "src/sdk/shc_resume_handle_8c347718.c": "3e8bf8ac1bf4f175ebad588c3b4a7dfd3385296e141ddc3e80298a217c045918",
     "src/sdk/shc_ret0_pair_8c34dc8c.c": "064391b98916dd1b54136969abc7b535f48cd188d03a7e58b93d33e811ca2789",
-    "src/sdk/shc_ring_buffer_8c358db8.c": "60dbbdd57990eb53c1fcb5ce20be35f26045df4f35a736f212339031c063ca37",
+    "src/sdk/shc_ring_buffer_8c358db8.c": "52781cf3bbf5a1fd45aa49642040aba30337e9b9a76eb8d5ea13be00d178665c",
     "src/sdk/shc_ring_put_8c3f0e48.c": "1c6b7d1d2dde17656f3540130f5fd4bf0423660a3bf50e5a485a92ce9b4a838d",
     "src/sdk/shc_rna_params_8c35403c.c": "5361a5b9c4c18591f7df61eac1865a2042f839c76bb39c88fe7ab2dbdca9a2a4",
     "src/sdk/shc_run_steps_8c34838c.c": "895cb516c03998e5f0144429c59edc88391dea773cefebeb94c383c91b645b06",
@@ -14674,15 +14670,15 @@
     "src/sdk/shc_slot_pool_8c354640.c": "8e8075e9ecabbd2f390ea70463a79c191f8a28f324ddbc6e5aadefcc3b26ea53",
     "src/sdk/shc_slot_ready_8c3cc9bc.c": "239c156a502eae1b6b8334facebd54d341ee07bbd7b30897eed4c2d8bd2a5600",
     "src/sdk/shc_slot_request_8c348454.c": "3658680562555e10dc6691a95eb738644dcfe0c7678ffa52da68b1037e4072b1",
-    "src/sdk/shc_slot_reset_8c36d9c8.c": "4b4b188082a0f93b40a590fcde1bfe44f95576f398b65fa76780dc79d9d90e6e",
-    "src/sdk/shc_slot_table_8c1f90e4.c": "79e76116ebbdea30286780d53ee95f1b4c2eac92a24a826ce37031b17d44899c",
+    "src/sdk/shc_slot_reset_8c36d9c8.c": "82331b27f7910cbe8736e89854b8e9a8cb37e609028d22a5c2b4931e87707de6",
+    "src/sdk/shc_slot_table_8c1f90e4.c": "1c6c3465d2b9d62fb5389fe0164cca5f2e8db8ccf86d9c78a86213f8571afeb3",
     "src/sdk/shc_snd_init_8c34dda4.c": "0f52ac1d93f509705f6b0d35cf327b52d826157af1aa1c80b7a831243908d939",
     "src/sdk/shc_snd_thunks_8c34e0b8.c": "3c06f5df97b2793e0ea1795a0cffc866b4a3e2cdbc48eade85ccf2a4244f50a6",
     "src/sdk/shc_sock_ops_8c3ce374.c": "c155c396b8076e4b76b359b0408f16adf9a7024d20b374fb930644ca24366532",
     "src/sdk/shc_sock_req_8c3cdbe4.c": "2a8db27d116e211ab4000ab0974e3a89cc14a4e8a21549c9f966f329400ee9dd",
     "src/sdk/shc_sock_reqs_8c3cde20.c": "359ff560cb5c979737eb8b7845e003c56084a533a0431927cd6bdd0896572144",
     "src/sdk/shc_sock_send_8c3cd7a0.c": "256f9ba2bdb7568a68d1f8d8c3bd43c7dfad3f5392b7e3084bd3a2d5d2349217",
-    "src/sdk/shc_sound_init_8c352e20.c": "6a43097071225ab6aa7ca0786d6afb8a0a85713d8c110f1c319151b0b77354e7",
+    "src/sdk/shc_sound_init_8c352e20.c": "2bff37f9d9d1955c9d81b4d5a2d9a03720e3d95d6281c284bb3f7d40c61f07aa",
     "src/sdk/shc_span_cmp_8c359734.c": "365152c12ed9e2e6ca12803c6cb7de8342a46223ee075818a708aa28b20458ba",
     "src/sdk/shc_span_div_8c346468.c": "9b5165842acafa3e57ee9fe8619682c0f2940f91b603f0c7904328cd3445b90b",
     "src/sdk/shc_span_split_8c3596f4.c": "9050fe26fc8ead5023bd45133e6054381f4ba73652ebab0bbdb8e523249b5288",
@@ -14693,7 +14689,7 @@
     "src/sdk/shc_start_8c346530.c": "04df90dc75f71767a1508ec3fb9f9dede2833818e517859e1f5711a7272c40ce",
     "src/sdk/shc_start_8c36e598.c": "6781f14571279498057b58be373540d86937303f1b78471499da89f2df0a46c7",
     "src/sdk/shc_start_8c372500.c": "ba26eecd98446f123950be1f5921247c0cd77886b8265c8e42dfa47f9ce46290",
-    "src/sdk/shc_start_handle_8c3474c8.c": "d1ea5ed739a01441ff70922303f161de9ae56a94d78d4609c3257e0d1cbe81f5",
+    "src/sdk/shc_start_handle_8c3474c8.c": "3bffbb8bfe472f40ba40eaddbafc5b1fb8f206170c4ea830a2e204bc02470d7c",
     "src/sdk/shc_start_voices_8c3453c8.c": "7099c6224b6b60e7792b7c4982e7469895f034ed9c03633be5b4d357b9210ebd",
     "src/sdk/shc_startup_8c340848.c": "a1c3d6715940f91f3ad8773764c304301c064ef56e9b48b64a448a200b77ed11",
     "src/sdk/shc_state_init_8c3ee8e4.c": "8d3f8081dafa9836b7fccb1be499198ba0220091e244a4cd1658703044cb7746",
@@ -14708,13 +14704,12 @@
     "src/sdk/shc_stream_open_8c3740d0.c": "90685ff917b498136f4b0997f2c831db61bfd462f4f1b02c7170c4be38a0d4c3",
     "src/sdk/shc_stream_ops_8c3560f4.c": "23215851da9323d8b7f5ebef53c8607b781beeff3db6ae0798ce0245e28b3c0a",
     "src/sdk/shc_stream_refill_8c351770.c": "2f589e5242629dfe8f9ec4c340cafe7e1945f726137cdd061906412367418d75",
-    "src/sdk/shc_stream_ring_8c35faac.c": "7c87f8045f82454543902180361950f6d3bbc6b2d57777d88c262bf4058320c7",
     "src/sdk/shc_stream_start_8c35f53c.c": "792ca5ad992934522eca980f24f9ebdbbde63a24560187f84aba1a8e55be122c",
     "src/sdk/shc_strm_acc_8c34ae04.c": "83d47aa7ee31a748f7dea875d4c7a97f7221213c942e8d00546563c9a62d0ce2",
     "src/sdk/shc_strncmp_8c12b114.c": "bb35c8234ad6958939af429de5a5e27141ffb04b91e2645d515efdd3c9fbf23d",
     "src/sdk/shc_strncpy_8c12b154.c": "7fe932037c42b9a1c2ef9b50d155e820b7ce3b44ca1e5f80bc0057c7cdf1165a",
     "src/sdk/shc_stubs_8c35c1f0.c": "cc5c8abeb1a42ba5ddf2fd262f652a178bbfd073e2a814645f419fd4eef9fe98",
-    "src/sdk/shc_submit_request_8c3472e4.c": "3185d32e74be03d300c7db732c03dbc90188cdcc51723b3d4a1c13f7816263bf",
+    "src/sdk/shc_submit_request_8c3472e4.c": "b5e0ffc9245242f8446d8093a63791a1fc5df3d97726cbd85ae4cb1f65b9be5a",
     "src/sdk/shc_sum_entries_8c1f511c.c": "653b3f4f58e97284cc84abe08e84b33394e3364d6ff5334cf620deda7fd3bc7c",
     "src/sdk/shc_sync_wait_8c3c88e8.c": "e2a9535a46de00ca079884045d559242cf0f02a3edb86532e68d52cf50ed4428",
     "src/sdk/shc_sys_init_8c342d90.c": "9071b28f42da953a2de4b2aa549d35004c0734b7dd94346572a7f4b311f2be2b",
@@ -14724,7 +14719,6 @@
     "src/sdk/shc_task_pool_8c3c7748.c": "d69d12077e45c7dff3e3988b24f1ee735fa3a28b865fec823d37925a8d2a8f9e",
     "src/sdk/shc_tcp_header_8c203b80.c": "ebd52ce94295d672d40ba05700a4eb6a6374c9969e6b74bac27a23d92ddf4f8d",
     "src/sdk/shc_tcp_init_8c203e70.c": "dedb2e77b9012d2f503e097ede1416901046d6e8c866f4881cafa5769e4068cb",
-    "src/sdk/shc_thread_sched_8c371e5c.c": "438a14a44dce0e762e5a391ef6c64d1f49fc90d58d30048c3c46f07a4c44ba91",
     "src/sdk/shc_thunk_8c343ca4.c": "2bef764186f15430bc4b21ac6a60381e194607a5d6f81c56c60ff95b979099cb",
     "src/sdk/shc_thunk_8c344288.c": "c1cde4c41a384bbd4caab1949563e5609427b4f000853ea3678c41c9f3c4bbd3",
     "src/sdk/shc_thunk_8c34438c.c": "9c38060b6555fe0827a54e4c8b2581bdd744cae7d3cc046fc91acd7af1d8176b",
@@ -14748,7 +14742,7 @@
     "src/sdk/shc_trace_stubs_8c3ca280.c": "7d8282495d9c804e68594f47b0e75fefb4b0b3f06f5d3fc7af683e38924cb9c7",
     "src/sdk/shc_trace_stubs_8c3ca3f4.c": "25fe4338a8da572d4938a4098d571c113892dc4233be2419f9295326499ca325",
     "src/sdk/shc_track_byte_8c3e9190.c": "2b8aa8cfd2e6d05d5e04de2dc6ff22827344f56a2b82545868ff0eec8a0e31fd",
-    "src/sdk/shc_udp_8c3c4a30.c": "bb338b41861d5955fcad672b60f4b12d1761262cd12d5ee6ef5158211a22eb10",
+    "src/sdk/shc_udp_8c3c4a30.c": "7c951c970fa0622d5ad11ab980b813e78811357e0b23ba8a49fcd3c1eefb8714",
     "src/sdk/shc_ui_stubs_8c3e9670.c": "d19af7a0ececaaf0f5a201989d4701a2e1e8c732a10cd3ffb11c6e00def995a3",
     "src/sdk/shc_upload_8c347ebc.c": "a771ab03c5b3e55e3130afccd0288bfebf95054b1c996dde8cee2b716a89a62a",
     "src/sdk/shc_upper_8c3b2020.c": "e5f3ac8916b0878ea0058dfae8f8c5e6cd7c9d52c8aa0fdd2a73eac3b83f8e41",
@@ -68013,6 +68007,20 @@
       "-optimize=1",
       "-macsave=0"
     ],
+    "shc_memmove_8c12b83c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_poly_even_8c12c0e8": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "shc_bytes_shl1_8c12ef54": [
       "-cpu=sh4",
       "-endian=little",
@@ -111773,13 +111781,6 @@
       "-optimize=1",
       "-macsave=0"
     ],
-    "shc_net_timers_8c204144": [
-      "-cpu=sh4",
-      "-endian=little",
-      "-fpu=single",
-      "-optimize=1",
-      "-macsave=0"
-    ],
     "operation_8c204334": [
       "-proc",
       "SH4",
@@ -137287,13 +137288,6 @@
       "-optimize=1",
       "-macsave=0"
     ],
-    "shc_buf_geom_8c342640": [
-      "-cpu=sh4",
-      "-endian=little",
-      "-fpu=single",
-      "-optimize=1",
-      "-macsave=0"
-    ],
     "shc_voice_cfg_8c342b4c": [
       "-cpu=sh4",
       "-endian=little",
@@ -138155,13 +138149,6 @@
       "-optimize=1",
       "-macsave=0"
     ],
-    "shc_bank_find_8c34d9b8": [
-      "-cpu=sh4",
-      "-endian=little",
-      "-fpu=single",
-      "-optimize=1",
-      "-macsave=0"
-    ],
     "shc_ret0_pair_8c34dc8c": [
       "-cpu=sh4",
       "-endian=little",
@@ -138442,13 +138429,6 @@
       "-optimize=1",
       "-macsave=0"
     ],
-    "shc_mps_init_8c35add0": [
-      "-cpu=sh4",
-      "-endian=little",
-      "-fpu=single",
-      "-optimize=1",
-      "-macsave=0"
-    ],
     "shc_cache_flags_8c35bc90": [
       "-cpu=sh4",
       "-endian=little",
@@ -138520,13 +138500,6 @@
       "-macsave=0"
     ],
     "shc_stream_bufs_8c35f7e8": [
-      "-cpu=sh4",
-      "-endian=little",
-      "-fpu=single",
-      "-optimize=1",
-      "-macsave=0"
-    ],
-    "shc_stream_ring_8c35faac": [
       "-cpu=sh4",
       "-endian=little",
       "-fpu=single",
@@ -138799,13 +138772,6 @@
       "-optimize=1",
       "-macsave=0"
     ],
-    "shc_thread_sched_8c371e5c": [
-      "-cpu=sh4",
-      "-endian=little",
-      "-fpu=single",
-      "-optimize=1",
-      "-macsave=0"
-    ],
     "shc_start_8c372500": [
       "-cpu=sh4",
       "-endian=little",
@@ -138849,13 +138815,6 @@
       "-macsave=0"
     ],
     "shc_flash_id_8c378f3c": [
-      "-cpu=sh4",
-      "-endian=little",
-      "-fpu=single",
-      "-optimize=1",
-      "-macsave=0"
-    ],
-    "shc_flash_cmd_8c379038": [
       "-cpu=sh4",
       "-endian=little",
       "-fpu=single",
@@ -139324,13 +139283,6 @@
       "-optimize=1",
       "-macsave=0"
     ],
-    "shc_buf_write_8c3dc1b4": [
-      "-cpu=sh4",
-      "-endian=little",
-      "-fpu=single",
-      "-optimize=1",
-      "-macsave=0"
-    ],
     "shc_byte_table_8c3dce50": [
       "-cpu=sh4",
       "-endian=little",
@@ -139449,18 +139401,11 @@
       "-fpu=single",
       "-optimize=1",
       "-macsave=0"
-    ],
-    "shc_mpeg_mc_8c400afc": [
-      "-cpu=sh4",
-      "-endian=little",
-      "-fpu=single",
-      "-optimize=1",
-      "-macsave=0"
     ]
   },
   "integrated_image_sha256": "11e3ad63a73c6d0ff4b5c883ae3df194d873925f8b9925af6435c7b97f6b73b0",
   "source_only_build_available": true,
   "source_only_rejected_retained_bytes": 0,
-  "typed_data_modules": 3335,
+  "typed_data_modules": 3336,
   "provenance_note": "Portable summary of local exact-build verification. CI checks source hashes and accounting; it does not rebuild the game or access private reference files."
 }

@@ -71,8 +71,7 @@ int port_apply_8c363768(Port *p, int m)
     int st = p->phase;
     int r;
     if (m == 2 && p->state != 4) return 0;
-    if (st != 3 && st != 4) return 0;
-    if (0) r++;
+    if (st == 3 || st == 4) { } else return 0;
     call_8c3655bc(p, m);
     r = port_request_8c3637aa(p, m);
     return r;

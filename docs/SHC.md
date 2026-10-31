@@ -140,15 +140,15 @@ installation is present.
 
 ## Current units
 
-349 pool-group units, 92,260 bytes, 1244 functions (listed in `config/project.json`
+342 pool-group units, 84,522 bytes, 1149 functions (listed in `config/project.json`
 with `"compiler": "shc-v5.1r13"` or `"shc-v5.0r28"`; sources in `src/sdk/`):
 
 | Region | Compiler | Units | Bytes | Functions |
 | --- | --- | ---: | ---: | ---: |
-| C runtime library `0x8c12b000`–`0x8c131000` | 5.1r13 | 10 | 592 | 10 |
-| Library block `0x8c1f0000`–`0x8c205000` | 5.1r13 | 26 | 6,774 | 104 |
-| SDK region from `0x8c340000` | 5.1r13 | 298 | 79,482 | 1083 |
-| `0x8c3d0000` region ([second release](#second-release-50r2628)) | 5.0r28 | 15 | 5,412 | 47 |
+| C runtime library `0x8c12b000`–`0x8c131000` | 5.1r13 | 12 | 692 | 12 |
+| Library block `0x8c1f0000`–`0x8c205000` | 5.1r13 | 25 | 6,306 | 95 |
+| SDK region from `0x8c340000` | 5.1r13 | 291 | 72,224 | 996 |
+| `0x8c3d0000` region ([second release](#second-release-50r2628)) | 5.0r28 | 14 | 5,300 | 46 |
 
 Units are complete pool groups: one or more consecutive literal-pool groups whose
 functions only branch to each other. A literal pool may sit inside a unit (and
@@ -216,8 +216,8 @@ by at least one exact unit:
 ## Second release (5.0r26/28)
 
 Most of the code at `0x8c3d0000`–`0x8c408000` was not built with 5.1r13 (an
-exception is the MPEG motion-compensation file `shc_mpeg_mc_8c400afc`, which is
-5.1r13 output). It schedules differently, and a version sweep over the decomp.me
+exception is the MPEG motion-compensation file at `0x8c400afc`, which matches
+5.1r13 but has no admitted source; see "Withdrawn units"). It schedules differently, and a version sweep over the decomp.me
 SHC releases (5.0r10, r26, r28, r31, r32; 5.1r01, r03, r04, r08, r11, r13; optimize 0/1, speed/size, fpu single/double,
 cpu variants) found that its marker-free files are **SHC 5.0 Release 26 or 28**
 output. Units there declare `"compiler": "shc-v5.0r28"` and use the same fixed flag
@@ -249,6 +249,41 @@ the release that reproduces it byte for byte.
 Assembly of the symbol module and the link always use the pinned 5.1r13 `asmsh` and
 `LNK`: the link only places section P and binds absolute symbols, one linker keeps
 that step identical for every unit, and not every release ships one.
+
+## Not accepted
+
+Statements whose only purpose is to perturb code generation are not admitted:
+dead `if (0) ...` statements, `while (0) ;`, and `do { } while (0)` or `if (1)`
+wrappers emit no code and exist only to split a basic block or steer register
+choice, so they reproduce nothing in the reference. Accepted idioms reproduce
+instructions or stack traffic the reference contains: an empty `if` whose test is
+observed, `goto L; L:` for an observed branch, or an address-taken local (`&x;`)
+for a variable the reference really keeps in a stack home (it is stored to and
+reloaded from its slot).
+
+## Withdrawn units
+
+21 SHC units published earlier relied on dead `if (0)` statements to steer
+register allocation, which these rules do not allow. 12 were reworked into
+ordinary C and stay byte-exact: `shc_chunk_ops_8c3822a0`, `shc_heap_lists_8c359224`,
+`shc_modem_link2_8c36167c`, `shc_port_modes_8c3636f4`, `shc_rate_hist_8c360314`,
+`shc_ring_buffer_8c358db8`, `shc_slot_reset_8c36d9c8`, `shc_slot_table_8c1f90e4`,
+`shc_sound_init_8c352e20`, `shc_start_handle_8c3474c8`,
+`shc_submit_request_8c3472e4` and `shc_udp_8c3c4a30`. Nine had no clean form and
+are withdrawn (their bytes return to fallback assembly):
+
+| Unit | Bytes | Functions |
+| --- | ---: | ---: |
+| `shc_mpeg_mc_8c400afc` | 1,724 | 13 |
+| `shc_stream_ring_8c35faac` | 1,872 | 14 |
+| `shc_thread_sched_8c371e5c` | 1,032 | 13 |
+| `shc_mps_init_8c35add0` | 816 | 18 |
+| `shc_bank_find_8c34d9b8` | 720 | 10 |
+| `shc_flash_cmd_8c379038` | 584 | 12 |
+| `shc_buf_geom_8c342640` | 510 | 7 |
+| `shc_net_timers_8c204144` | 468 | 9 |
+| `shc_buf_write_8c3dc1b4` (5.0r28) | 112 | 1 |
+| **Total** | **7,838** | **97** |
 
 ## What to expect
 

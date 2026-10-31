@@ -63,7 +63,11 @@ int rate_query_8c3603c6(Port *p, int *a, int *b, int *c)
 {
     int lk;
     Ring *r;
-    int res, scale, k, h, v;
+    int res;
+    int scale;
+    int k;
+    int h;
+    int v;
     if (port_invalid_8c360d92(p)) return send_code_8c360c8c(0, 0xff000162);
     r = &p->ring;
     {
@@ -72,12 +76,10 @@ int rate_query_8c3603c6(Port *p, int *a, int *b, int *c)
     }
     *c = 0;
     res = call_8c3650c0(p, a, b);
-    if (r->total != 0 && *b != 1) {
-        if (0) { r++; r++; }
+    if (r->total == 0 || *b == 1) { } else {
         lock_8c360db4(&lk);
         h = r->head;
         for (k = 0; k < 32; k++, h--) {
-            if (0) { h++; h++; }
             {
                 int x = r->hist[h % 32];
                 v = scale_8c35e570(x, *b, scale);
@@ -85,7 +87,7 @@ int rate_query_8c3603c6(Port *p, int *a, int *b, int *c)
             if (v <= *a) break;
         }
         *c = h;
-        *a = *a - v;
+        *a -= v;
         if (*a < 0) *a = 0;
         unlock_8c360dcc(&lk);
     }

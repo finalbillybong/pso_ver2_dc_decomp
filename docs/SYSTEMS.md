@@ -69,7 +69,7 @@ verification.
 | `0x8c260000`–`0x8c282000` | Vtables and function tables. Of the 1,147 vtables known, 1,119 are already typed in `src/data/vtables_*.c`. | `config/data.json` |
 | `0x8c284000`–`0x8c340000` | Strings, float tables and pointer tables, plus the DAT constructor tables (`0x8c2e8ad8`…) and the network handler tables (`0x8c2e7628`, `0x8c2ed3dc`). | `src/data/strings_*.c`, tables below |
 | `0x8c340000`–`0x8c3f0000` | SDK libraries (Katana: Kamui/Ninja/Shinobi/sound/GD/MPEG/network stack), compiled with SHC. | see SDK section |
-| `0x8c3f0000`–`0x8c40a000` | SDK data and the tail of the MPEG decoder (`0x8c400afc` …). | `src/sdk/shc_mpeg_mc_8c400afc.c` |
+| `0x8c3f0000`–`0x8c40a000` | SDK data and the tail of the MPEG decoder (`0x8c400afc` …). | `config/asm.json` (fallback; the motion-compensation file matches SHC 5.1r13 but has no admitted source yet) |
 | `0x8c40a000`+ | BSS (not in the image). Includes `root_protocol` at `0x8c418a00`, the item/heap globals at `0x8c44be98`… and the character file at `0x8c4db9e0`. | newserv `GetExtendedPlayerInfoDC.s` (2OPF column) |
 
 The build is **2OPF** (PSO DC v2, Europe). This is confirmed three ways:

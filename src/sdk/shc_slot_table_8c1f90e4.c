@@ -46,8 +46,7 @@ static void slot_init_8c1f9108(Slot *s)
 void slots_reset_8c1f9130(int first, int last, int keep)
 {
     Slot *end = &g_slots_8c4effa0[last];
-    Slot *s;
-    if (0) first++;
+    register Slot *s;
     for (s = &g_slots_8c4effa0[first]; s < end; s++) slot_reset_8c1f9164(s, keep);
 }
 

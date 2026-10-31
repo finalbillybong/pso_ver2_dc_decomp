@@ -142,7 +142,7 @@ static void link_levels_8c36178c(Dev *dev, int *a, int *b)
     register int max2;
     int i;
     Queue *q;
-    char *area;
+    register char *area;
     int h;
     Level lv;
     area = dev->audio + 0x540;
@@ -159,7 +159,6 @@ static void link_levels_8c36178c(Dev *dev, int *a, int *b)
     q->f4 = max2;
     *a = q->f8;
     *b = q->f4;
-    if (0) *a = i;
 }
 
 void link_poll_levels_8c361800(Dev *dev)
@@ -309,7 +308,8 @@ int link_poll_8c361a1e(Dev *dev)
 void link_queue_8c361a6c(Dev *dev)
 {
     char *area = dev->audio + 0x540;
-    Queue *q = (Queue *)(area + 8);    if (0) q->count = 0;
+    Queue *q = (Queue *)(area + 8);
+    q->count;
 }
 
 int link_exchange_8c361a78(Dev *dev, Queue *q, Chan *ch)
