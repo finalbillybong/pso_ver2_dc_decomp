@@ -873,8 +873,8 @@ def integrate(folders, output, reference):
     manifest = read(root / 'config/project.json')
     queue = read(root / 'config/reconstruction-targets.json')
     specs = [read(Path(folder) / 'spec.json') for folder in folders]
-    if sum(r['size'] for spec in specs for r in spec['unit']['ranges']) < 5120:
-        raise ValueError('Collect at least 5,120 exact bytes before integration')
+    if not specs or not sum(r['size'] for spec in specs for r in spec['unit']['ranges']):
+        raise ValueError('Nothing to integrate: no exact candidate ranges')
     source_hashes = {name: project.matching.sha(root / name) for u in manifest['units']
                      for name in [u['source'], *u.get('headers', [])]}
     output.mkdir(exist_ok=False)

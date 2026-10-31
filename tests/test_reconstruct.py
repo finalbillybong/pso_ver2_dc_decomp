@@ -463,16 +463,16 @@ class DiagnosticsAndAccountingTests(unittest.TestCase):
             self.assertTrue(result['exact'])
             self.assertEqual(original, (folder / 'comparison.json').read_bytes())
 
-    def test_small_integration_is_rejected_without_creating_artifacts(self):
+    def test_empty_integration_is_rejected_without_creating_artifacts(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / 'config').mkdir()
             reconstruct.write(root / 'config/project.json', {'units': []})
             reconstruct.write(root / 'config/reconstruction-targets.json', {'targets': []})
             folder = root / 'candidate';folder.mkdir()
-            reconstruct.write(folder / 'spec.json', {'unit': {'ranges': [{'size': 1432}]}})
+            reconstruct.write(folder / 'spec.json', {'unit': {'ranges': []}})
             output = root / 'integration'
-            with patch.object(reconstruct.project, 'ROOT', root), self.assertRaisesRegex(ValueError, '5,120'):
+            with patch.object(reconstruct.project, 'ROOT', root), self.assertRaisesRegex(ValueError, 'Nothing to integrate'):
                 reconstruct.integrate([folder], output, bytes(2000))
             self.assertFalse(output.exists())
 

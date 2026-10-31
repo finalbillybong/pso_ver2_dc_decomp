@@ -99,12 +99,10 @@ candidate generator; recompilation and full comparison remain mandatory.
 
 ## Integration and verification
 
-Collect at least **5,120 exact bytes** before integration. Prefer larger related
-routines and include small helpers only when they support the subsystem. Carried
-candidates count toward this threshold but not new experimental yield. If the
-bounded investigation falls short, preserve the candidates and report the
-shortfall; do not perform a small integration to create a checkpoint. List reviewed
-trial directories in a JSON plan, then reproduce them twice and admit them together:
+Integrate exact candidates as soon as they are ready; there is no minimum batch
+size (an empty plan is rejected). Prefer related routines together and include
+small helpers when they support the subsystem. List reviewed trial directories in
+a JSON plan, then reproduce them twice and admit them together:
 
 ```
 python3 -B tools/reconstruct.py integrate reviewed-plan.json --out SCRATCH/admission
