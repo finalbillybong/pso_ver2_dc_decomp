@@ -4,13 +4,13 @@ typedef struct Controller { void *name; unsigned short flags; char unknown6[18];
 typedef char check_layout[sizeof(Vector)==12 && sizeof(Actor)==72 && sizeof(Controller)==60 && (unsigned long)&((Actor *)0)->position==60 && (unsigned long)&((Controller *)0)->flags==4 && (unsigned long)&((Controller *)0)->vtable==24 && (unsigned long)&((Controller *)0)->size==30 && (unsigned long)&((Controller *)0)->position==32 && (unsigned long)&((Controller *)0)->first==44 && (unsigned long)&((Controller *)0)->second==48 && (unsigned long)&((Controller *)0)->mode==52 && (unsigned long)&((Controller *)0)->state==56 ? 1:-1];
 extern void *parent,*object_name;
 extern char controller_vtable[];
-extern void base_at(Controller *,void *);
+extern void TObject_ctor_8c0330e4(Controller *,void *);
 extern Actor *actor_at(int);
 extern int prepare_at(Controller *);
 Controller *initialize_position_controller(Controller *o,void *unused_parent) {
     Controller **home=&o;
     int i;
-    base_at(o,parent);
+    TObject_ctor_8c0330e4(o,parent);
     o->vtable=controller_vtable;
     o->name=object_name;
     o->size=60;

@@ -14,7 +14,7 @@ struct S_g8c4689f8 {
     int fe8;
 };
 extern int g_8c4689ec;
-extern void call_8c12b77c(void *, void *, int);
+extern void memcpy_8c12b77c(void *, void *, int);
 int operation_8c07444c(Object *o)
 {
     int v2;
@@ -40,7 +40,7 @@ int operation_8c07444c(Object *o)
     }
     v8 = (int)*(int *)((char *)0x8c4689f8 + (v4 << 2));
     if (v8 == (int)(o)) {
-        call_8c12b77c((void *)(&*(int *)((char *)0x8c4689f8 + (v4 << 2))), (void *)(&*(int *)((char *)0x8c4689f8 + (v4 + 1 << 2))), (int)(v2 - (v4 + 1) << 2));
+        memcpy_8c12b77c((void *)(&*(int *)((char *)0x8c4689f8 + (v4 << 2))), (void *)(&*(int *)((char *)0x8c4689f8 + (v4 + 1 << 2))), (int)(v2 - (v4 + 1) << 2));
         g_8c4689ec -= 1;
         *(int *)((char *)0x8c4689f8 + (g_8c4689ec << 2)) = 0;
         return (int)(v3);

@@ -1,5 +1,5 @@
 extern int func_8c1fed74(int, int, int);
-extern void *memcpy(void *, const void *, unsigned int);
+extern void *memcpy_8c12b77c(void *, const void *, unsigned int);
 extern char cfg_8c32c5f0[];
 extern void func_8c3ca756(int);
 extern int func_8c3ca7b2(int);
@@ -44,7 +44,7 @@ int x;
 int net_cfg_8c204028(void)
 {
     struct { int a; int v; int b; } s;
-    memcpy(&s.v, cfg_8c32c5f0, 4);
+    memcpy_8c12b77c(&s.v, cfg_8c32c5f0, 4);
     func_8c3ca756(s.v);
     return 0;
 }

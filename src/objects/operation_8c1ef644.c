@@ -19,16 +19,16 @@ struct S_c8c122700 {
     void *f24;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
 void operation_8c1ef644(Object *o)
 {
     S_c8c122700 *t1;
     short v1;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x28);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x28);
     if (t1 != 0) {
         v1 = (short)o->f20;
-        initialize_hierarchy_node((void *)t1, (void *)o);
+        TObject_ctor_8c0330e4((void *)t1, (void *)o);
         t1->f18 = (void *)0x8c261928;
         t1->f20 = v1;
         t1->f24 = (void *)0x8c1ef698;

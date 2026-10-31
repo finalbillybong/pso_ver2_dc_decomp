@@ -26,12 +26,12 @@ typedef struct S_c8c122700Data {
 } S_c8c122700Data;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" char g_8c41cba0[];
-extern "C" S_c8c122700 *allocate_block(void *, unsigned int);
+extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_follow_base(void *);
 extern "C" S_c8c122700 *operation_8c0a0a34(void)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x78);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

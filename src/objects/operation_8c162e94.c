@@ -48,7 +48,7 @@ struct S_vv4 {
     char f00;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern int call_8c163d20(int);
 extern void operation_8c036964(void *);
 void operation_8c162e94(Object *o, int a1, int a2)
@@ -64,7 +64,7 @@ void operation_8c162e94(Object *o, int a1, int a2)
         t1 = lookup_low_id((int)(*(S_g8c418258 **)0x8c418258));
         t2 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));
         if (t1 != 0 && t2 != 0) {
-            t3 = current_effect_mode();
+            t3 = get_current_area_8c032b10();
             t4 = call_8c163d20(t3);
             if (t4 != 0) {
                 if (t1->f37c == t2->f37c && *(int *)0x8c418258 != *(int *)0x8c418248) {
@@ -91,7 +91,7 @@ void operation_8c162e94(Object *o, int a1, int a2)
                         (&frame)->f14 = o->f2c;
                         (&frame)->f16 = a2;
                         (&frame)->f0a = o->f30;
-                        t5 = current_effect_mode();
+                        t5 = get_current_area_8c032b10();
                         (&frame)->f18 = t5;
                         operation_8c036964((void *)(&(&frame)->f04));
                     }

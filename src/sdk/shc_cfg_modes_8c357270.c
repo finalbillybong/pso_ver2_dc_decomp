@@ -25,7 +25,7 @@ extern int debug_print_8c35570c(int, char *, ...);
 extern char str_8c3f5680[];
 extern char str_8c3f56b4[];
 
-void setup_mode_8c357270(Dev *dev, int mode)
+void mwRnv2SetVctxFilterMode_8c357270(Dev *dev, int mode)
 {
     Cfg *s = &dev->cfg;
     int r;
@@ -41,7 +41,7 @@ void setup_mode_8c357270(Dev *dev, int mode)
     }
 }
 
-void setup_cfg_8c3572ac(Dev *dev, int arg)
+void mwRnv2SetVertexContextPlt8_8c3572ac(Dev *dev, int arg)
 {
     Cfg *s = &dev->cfg;
     int r;

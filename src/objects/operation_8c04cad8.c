@@ -66,7 +66,7 @@ extern int call_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern void call_8c118ea4(int, int, float, float, float);
 extern void draw_grid_selected_rows(void *, void *, void *, int, int);
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 extern int record24_8c17948c(int);
 extern int record30_8c1794a0(int);
 extern int block32_8c1794b4(int);
@@ -126,7 +126,7 @@ void operation_8c04cad8(void)
     draw_grid_selected_rows(g_8c4671dc, (void *)((*(S_vv15_42c **)((char *)v15 + t1))->f08), (void *)(*(S_vv15_430_4 **)((char *)((char *)*(S_vv15_430 **)((char *)v15 + t2) + 0x4) + ((&g_8c2f2bfc)->f24 << 3))), 0x17, 0x19);
     v16 = (S_vv16 *)g_8c4671d8;
     draw_grid_selected_rows(g_8c4671e0, (void *)(v16->f42c->f08), (void *)(*(S_vv16_430_4 **)((char *)((char *)v16->f430 + 0x4) + ((&g_8c2f2bfc)->f34 << 3))), 0xd, 0xf);
-    t6 = call_8c18de4c(0xc);
+    t6 = operator_new_8c18de4c(0xc);
     g_8c4671a4 = (S_g8c4671a4 *)(int)(t6);
     t7 = record24_8c17948c(0x4e);
     g_8c4671a0 = (int)(t7);

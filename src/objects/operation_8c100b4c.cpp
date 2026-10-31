@@ -39,7 +39,7 @@ struct Arg0_s9c {
 };
 extern int g_8c30affc;
 extern "C" void call_8c01d1ec(Object *);
-extern "C" int current_effect_mode(void);
+extern "C" int get_current_area_8c032b10(void);
 typedef struct Pair8 {
     int a;
     int b;
@@ -55,7 +55,7 @@ extern "C" Object *operation_8c100b4c(Object *o, int a1, int a2)
     ((ObjectData *)o)->tag = (int)(g_8c30affc);
     ((ObjectData *)o)->size = 0xa4;
     o->v6(a2);
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     v1 = (int)*(int *)((char *)0x8c30afb0 + (t1 << 2));
     if (v1 != 0) {
         *(Pair8 *)((char *)o + 0x9c) = *(Pair8 *)((char *)v1 + ((int)((ObjectData *)o)->f88 << 3));

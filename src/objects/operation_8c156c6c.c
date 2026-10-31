@@ -23,7 +23,7 @@ struct S_c8c122700 {
     unsigned short f80;
 };
 extern void set_configuration_pair(void *, int);
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_grid_8c1566f0(void *, unsigned int);
 extern void call_8c156d30(int, void *, int, int);
 extern void call_8c15700c(int, float);
@@ -32,7 +32,7 @@ S_c8c122700 *operation_8c156c6c(int a0)
 {
     S_c8c122700 *t1;
     set_configuration_pair((void *)a0, 2);
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x9c);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x9c);
     if (t1 != 0) {
         initialize_grid_8c1566f0((void *)t1, (unsigned int)2);
     }

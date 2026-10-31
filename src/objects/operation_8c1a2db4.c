@@ -25,14 +25,14 @@ struct Arg0_24 {
     char unknown0[0x80];
     unsigned short f80;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c1a2838(int, int);
 Object *operation_8c1a2db4(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c273770;
     o->tag = *(int *)0x8c31db18;
     o->size = 0x40;

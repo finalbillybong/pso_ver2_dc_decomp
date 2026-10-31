@@ -26,7 +26,7 @@ struct Arg1 {
     Block100 f60;
 };
 extern int operation_8c1dc708(int);
-extern void call_8c12b154(void *, void *, int);
+extern void strncpy_8c12b154(void *, void *, int);
 extern int call_8c217c60(void *);
 extern int call_8c217d0c(int, void *);
 void operation_8c217b3c(Object *o, Arg1 *a1)
@@ -45,9 +45,9 @@ void operation_8c217b3c(Object *o, Arg1 *a1)
     o->f58 = a1->f60;
     t1 = operation_8c1dc708((int)(o->tag));
     if (t1 == 0) {
-        call_8c12b154((void *)(((char *)o + 0x8)), (void *)(((char *)o + 0x9c)), 0x10);
+        strncpy_8c12b154((void *)(((char *)o + 0x8)), (void *)(((char *)o + 0x9c)), 0x10);
     } else {
-        call_8c12b154((void *)(((char *)o + 0x8)), (void *)(t1 + 8), 0x10);
+        strncpy_8c12b154((void *)(((char *)o + 0x8)), (void *)(t1 + 8), 0x10);
     }
     o->dispatch = 0;
     t2 = call_8c217c60((void *)(((char *)a1 + 0x1c)));

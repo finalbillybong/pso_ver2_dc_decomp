@@ -49,7 +49,7 @@ extern "C" char g_8c2e7ce0[];
 extern "C" S_c8c105504 *call_8c105504(void *, int);
 extern "C" void call_8c36b566(void *, void *);
 extern "C" int call_8c01c440(void *, void *);
-extern "C" void operation_8c02fcf4(Object *o, Arg1 *a1)
+extern "C" void handle_cmd_B2_execute_code_and_or_checksum_memory_8c02fcf4(Object *o, Arg1 *a1)
 {
     Frame frame;
     char *v5;

@@ -31,7 +31,7 @@ struct Arg0_e8 {
 };
 extern char g_8c2fffb0[];
 extern int operation_8c156c24(int, int);
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern void call_8c156d48(Arg0_e8 *, void *, int, int, int);
 extern void call_8c156f50(Arg0_e8 *);
 extern void operation_8c157138(void *);
@@ -45,7 +45,7 @@ void operation_8c08a1b8(Object *o)
         (&frame)->f04 = 250.0f;
         t1 = operation_8c156c24((int)(&frame), 1);
         o->fe8 = (Arg0_e8 *)t1;
-        t2 = operation_8c01c25c();
+        t2 = get_game_mode_8c01c25c();
         if (t2 == 0xf) {
             switch (*(int *)0x8c467188) {
             case 0:

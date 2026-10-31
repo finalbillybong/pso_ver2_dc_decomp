@@ -13,7 +13,7 @@ extern int classify_range_8c0e76d4(void *);
 extern void operation_8c189994(void);
 extern void operation_8c1c7208(void);
 extern void operation_8c20784c(void);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c189df4(void *, int);
 void operation_8c189ca0(int a0)
 {
@@ -47,7 +47,7 @@ void operation_8c189ca0(int a0)
         break;
     }
     g_8c4dbc64 = (int)(v1);
-    t2 = allocate_block(g_8c4d97e0, (unsigned int)0x20);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x20);
     if (t2 != 0) {
         operation_8c189df4((void *)t2, (int)g_8c44be80);
     }

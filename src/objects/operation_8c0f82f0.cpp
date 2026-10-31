@@ -128,7 +128,7 @@ struct S_x82608 {
 struct S_x15568 {
     Vector3 f00;
 };
-extern "C" void call_8c012008(Object *);
+extern "C" void TObjEnemy_ctor_8c012008(Object *);
 extern "C" void call_8c0f8508(Object *);
 extern "C" void operation_8c051ff4(void *, void *, void *);
 extern "C" void call_8c0f8a80(Object *, int);
@@ -139,7 +139,7 @@ extern "C" Object *operation_8c0f82f0(Object *o, int a1, int a2, int a3)
     int v7;
     short v1;
     (void)home;
-    call_8c012008(o);
+    TObjEnemy_ctor_8c012008(o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c268d28;
     ((ObjectData *)o)->tag = (int)(*(int *)0x8c30a27c);
     ((ObjectData *)o)->size = 0x414;

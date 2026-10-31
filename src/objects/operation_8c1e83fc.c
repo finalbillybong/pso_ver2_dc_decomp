@@ -39,7 +39,7 @@ extern void operation_8c1e8b30(void *, int);
 extern void request_resource_release(void *);
 extern int operation_8c1571f4(void *);
 extern void call_8c1e8ba8(Object *, int);
-extern int call_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern int call_8c0c349c(void);
 extern int call_8c1e8d18(Object *);
 extern void clear_overlay_elements(void *);
@@ -116,7 +116,7 @@ void operation_8c1e83fc(Object *o)
             o->f110 = 3;
         }
         if (*(int *)0x8c2fff78 != 0) {
-            t5 = call_8c01c25c();
+            t5 = get_game_mode_8c01c25c();
             if (t5 == 0x10) {
                 t6 = call_8c0c349c();
                 if (t6 != 0) {
@@ -146,7 +146,7 @@ void operation_8c1e83fc(Object *o)
         if (*(int *)0x8c2fff78 == 0) {
             return;
         }
-        t9 = call_8c01c25c();
+        t9 = get_game_mode_8c01c25c();
         if (t9 != 0x10) {
             return;
         }

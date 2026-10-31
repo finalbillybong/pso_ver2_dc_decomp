@@ -20,13 +20,13 @@ struct S_c8c122700 {
 extern int g_8c327fb8;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0887c0(S_c8c122700 *, void *, int);
 extern void operation_8c1be874(void *);
-S_c8c122700 *operation_8c1be710(int a0)
+S_c8c122700 *TObjCityMapWarp_ctor_8c1be710(int a0)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x124);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x124);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

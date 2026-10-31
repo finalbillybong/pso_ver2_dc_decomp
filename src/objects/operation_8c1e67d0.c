@@ -23,7 +23,7 @@ extern S_g8c44be88 *g_8c44be88;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern unsigned char g_8c4e3130;
 extern int g_8c5108c0;
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c1e7684(Object *);
 extern void call_8c1e76c8(Object *);
 extern void call_8c1e771c(Object *);
@@ -32,7 +32,7 @@ extern void select_mode11_8c1cc5a0(void);
 extern void call_8c1003d0(void *);
 extern int features_ready_8c1e779c(Object *);
 extern void select_mode13_8c1cc5d0(void);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c199688(int, Object *, int);
 extern void call_8c198294(int, Object *);
 extern void call_8c1e6c74(Object *);
@@ -44,7 +44,7 @@ Object *operation_8c1e67d0(Object *o)
     int t3;
     int t4;
     (void)home;
-    initialize_hierarchy_node((void *)o, g_8c44be88);
+    TObject_ctor_8c0330e4((void *)o, g_8c44be88);
     o->dispatch = (void *)0x8c277f44;
     o->f20 = 0;
     o->f24 = 0;
@@ -81,12 +81,12 @@ L_8c1e6856:;
     }
 L_8c1e686a:;
     if (o->f38 == 1) {
-        t3 = allocate_block(g_8c4d97e0, (unsigned int)0xac);
+        t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xac);
         if (t3 != 0) {
             call_8c199688(t3, o, 1);
         }
     }
-    t4 = allocate_block(g_8c4d97e0, (unsigned int)0x40);
+    t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x40);
     if (t4 != 0) {
         call_8c198294(t4, o);
     }

@@ -11,13 +11,13 @@ struct Object {
     int f108;
     int f10c;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 int operation_8c08d7fc(Object *o, int a1)
 {
     int v1;
     int v3;
     int (*fn)(int);
-    v1 = *(int *)((current_effect_mode() << 2) + (char *)0x8c2ebec8);
+    v1 = *(int *)((get_current_area_8c032b10() << 2) + (char *)0x8c2ebec8);
     if (v1 == 0) {
         o->f100 = 0;
         return 0;

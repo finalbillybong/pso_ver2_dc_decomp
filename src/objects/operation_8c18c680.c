@@ -22,7 +22,7 @@ struct Arg0_74 {
     short f04;
 };
 extern int lookup_low_id(int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c19176c(int, Object *);
 extern int call_8c2097a8(int);
 extern void call_8c18c904(Object *, void *, int);
@@ -40,7 +40,7 @@ void operation_8c18c680(Object *o)
         }
         t1 = lookup_low_id((int)*(S_g8c418248 **)0x8c418248);
         if (t1 != 0) {
-            t2 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x48);
+            t2 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x48);
             if (t2 != 0) {
                 call_8c19176c(t2, o);
             }

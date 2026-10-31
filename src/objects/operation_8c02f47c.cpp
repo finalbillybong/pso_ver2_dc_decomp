@@ -25,7 +25,7 @@ struct Arg1 {
     char f06;
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02f47c(Object *o, Arg1 *a1)
+extern "C" void handle_cmd_66_remove_player_from_game_8c02f47c(Object *o, Arg1 *a1)
 {
     char *v21;
     o->v4((g_8c2e7ce0 + 0x519));

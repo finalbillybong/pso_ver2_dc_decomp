@@ -42,13 +42,13 @@ typedef struct Arg0_20Data {
 
 } Arg0_20Data;
 extern int g_8c300200;
-extern "C" void initialize_hierarchy_node(void *, void *);
+extern "C" void TObject_ctor_8c0330e4(void *, void *);
 extern "C" void call_8c35e6d8(void *);
-extern "C" void call_8c12b880(void *, int, int);
+extern "C" void memset_8c12b880(void *, int, int);
 extern "C" int call_8c34273e(void *, void *, void *, void *, void *);
 extern "C" int call_8c011e9c(void *);
 extern "C" int call_8c340cb0(void *);
-extern "C" void call_8c12b154(void *, int, int);
+extern "C" void strncpy_8c12b154(void *, int, int);
 extern "C" Object *operation_8c08aefc(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
@@ -56,7 +56,7 @@ extern "C" Object *operation_8c08aefc(Object *o, int a1, int a2, int a3)
     int t2;
     int t3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)(void *)0x8c265288;
     o->tag = (int)(g_8c300200);
     o->size = 0x6c;
@@ -64,7 +64,7 @@ extern "C" Object *operation_8c08aefc(Object *o, int a1, int a2, int a3)
     call_8c35e6d8((void *)((void *)0x8c41cb18));
     o->f20 = (Arg0_20 *)0;
     o->f38 = 0;
-    call_8c12b880((void *)(&o->f24), 0, 0x24);
+    memset_8c12b880((void *)(&o->f24), 0, 0x24);
     o->f24 = (Arg0_24 *)1;
     o->f40 = 0;
     o->f28 = (Arg0_28 *)0x1388000;
@@ -88,7 +88,7 @@ extern "C" Object *operation_8c08aefc(Object *o, int a1, int a2, int a3)
         o->f04 |= 1;
         return o;
     }
-    call_8c12b154((void *)(((char *)o + 0x48)), a2, 0x20);
+    strncpy_8c12b154((void *)(((char *)o + 0x48)), a2, 0x20);
     o->f20->v4(((char *)o + 0x48));
     return o;
 }

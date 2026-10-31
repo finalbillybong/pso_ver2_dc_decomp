@@ -28,7 +28,7 @@ struct Arg0_20 {
     int f00;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c2275ac(int, int, S_vv4 *, Object *);
 extern void call_8c227a84(int, float);
 void operation_8c227cb4(Object *o, int a1)
@@ -46,7 +46,7 @@ void operation_8c227cb4(Object *o, int a1)
             v4 = (S_vv4 *)(v2->f08 + e[1] * 0x2c);
             v5 = (char *)o->f24;
             if (v4 != 0 && v4->f24 != 0.0f) {
-                v9 = allocate_block(g_8c4d97e0, (unsigned int)0xb4);
+                v9 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xb4);
                 if (v9 != 0) {
                     call_8c2275ac(v9, (int)(v5), v4, o);
                 }

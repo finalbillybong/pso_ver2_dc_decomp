@@ -20,9 +20,9 @@ extern void operation_8c01d384(void);
 extern void operation_8c01d3ac(void);
 extern void operation_8c051f7c(void);
 extern void fn_8c051fb8(void);
-extern void fn_8c121334(void);
+extern void load_fog_entries_8c121334(void);
 extern void operation_8c121560(void);
-extern void operation_8c013f54(void);
+extern void load_light_entries_8c013f54(void);
 extern void operation_8c013fa4(void);
 extern void operation_8c13f3a0(void);
 extern void operation_8c13f3cc(void);
@@ -30,7 +30,7 @@ extern void operation_8c01e648(void);
 extern void operation_8c01e734(void);
 extern void operation_8c0731f4(void);
 extern void operation_8c073240(void);
-extern void fn_8c09ef54(void);
+extern void load_ultimate_set_data_table_8c09ef54(void);
 extern void operation_8c09f024(void);
 extern void fn_8c09d0fc(void);
 extern void operation_8c09d250(void);
@@ -87,9 +87,9 @@ Function const d_8c310238[66] = {
     operation_8c01d3ac,
     operation_8c051f7c,
     fn_8c051fb8,
-    fn_8c121334,
+    load_fog_entries_8c121334,
     operation_8c121560,
-    operation_8c013f54,
+    load_light_entries_8c013f54,
     operation_8c013fa4,
     operation_8c13f3a0,
     operation_8c13f3cc,
@@ -97,7 +97,7 @@ Function const d_8c310238[66] = {
     operation_8c01e734,
     operation_8c0731f4,
     operation_8c073240,
-    fn_8c09ef54,
+    load_ultimate_set_data_table_8c09ef54,
     operation_8c09f024,
     fn_8c09d0fc,
     operation_8c09d250,

@@ -16,7 +16,7 @@ struct S_x92912 {
 struct S_x3568 {
     Block68 f00;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void operation_8c105458(int, int, int);
 extern int call_8c011e9c(int);
 extern void call_8c011ec0(int);
@@ -27,7 +27,7 @@ void operation_8c014028(void)
     int t1;
     int t2;
     if (*(int *)0x8c4189e4 != 0) {
-        t2 = current_effect_mode();
+        t2 = get_current_area_8c032b10();
         if (*(int *)0x8c44be20 != 0 || *(int *)0x8c4703c0 == 3) {
             v3 = (int)(t2 + 0x12);
         } else {

@@ -3,7 +3,7 @@
 typedef void (*VirtualFunction)(void);
 
 extern void destroy_object_8c178214(void);
-extern void operation_8c073578(void);
+extern void TItem_update_8c073578(void);
 extern void operation_8c073678(void);
 extern void operation_8c073e50(void);
 extern void hierarchy_output(void);
@@ -64,7 +64,7 @@ extern void fn_8c076340(void);
 extern void destroy_effect_d870_8c178430(void);
 extern void fn_8c17867c(void);
 extern void fn_8c17852c(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void fn_8c043724(void);
 extern void operation_8c010504(void);
 extern void word_operation_8c01345c(void);
@@ -232,14 +232,14 @@ extern void operation_8c17be54(void);
 extern void destroy_object_8c17bf90(void);
 extern void operation_8c1832f4(void);
 extern void fn_8c183370(void);
-extern void operation_8c0111c8(void);
+extern void TObject_render_default_8c0111c8(void);
 
 /* 8c270cec: type-information and this-adjustment header, then 59 slots */
 VirtualFunction const vt_8c270cec[61] = {
     0,
     0,
     destroy_object_8c178214,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -306,7 +306,7 @@ VirtualFunction const vt_8c270de0[88] = {
     destroy_effect_d870_8c178430,
     fn_8c17867c,
     fn_8c17852c,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -398,7 +398,7 @@ VirtualFunction const vt_8c270f40[19] = {
     operation_8c178cc0,
     fn_8c178d1c,
     fn_8c178fd8,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -421,7 +421,7 @@ VirtualFunction const vt_8c270f8c[7] = {
     destroy_color_rise_8c1792c0,
     operation_8c179310,
     fn_8c0c48e4,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -432,7 +432,7 @@ VirtualFunction const vt_8c270fa8[7] = {
     destroy_color_rise_8c1791cc,
     operation_8c17921c,
     fn_8c0c48e4,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -441,7 +441,7 @@ VirtualFunction const vt_8c270fc4[61] = {
     0,
     0,
     destroy_object_8c1797e0,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -506,7 +506,7 @@ VirtualFunction const vt_8c2710b8[61] = {
     0,
     0,
     destroy_object_8c1798e8,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -571,7 +571,7 @@ VirtualFunction const vt_8c2711ac[61] = {
     0,
     0,
     destroy_object_8c179b34,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -636,7 +636,7 @@ VirtualFunction const vt_8c2712a0[61] = {
     0,
     0,
     destroy_object_8c179c48,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -701,7 +701,7 @@ VirtualFunction const vt_8c271394[61] = {
     0,
     0,
     destroy_object_8c179d0c,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -766,7 +766,7 @@ VirtualFunction const vt_8c271488[61] = {
     0,
     0,
     destroy_object_8c179e00,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -831,7 +831,7 @@ VirtualFunction const vt_8c27157c[61] = {
     0,
     0,
     destroy_object_8c17a0bc,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -896,7 +896,7 @@ VirtualFunction const vt_8c271670[61] = {
     0,
     0,
     destroy_object_8c17a298,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -961,7 +961,7 @@ VirtualFunction const vt_8c271764[61] = {
     0,
     0,
     destroy_object_8c17a5ac,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -1026,7 +1026,7 @@ VirtualFunction const vt_8c271858[61] = {
     0,
     0,
     destroy_object_8c17a794,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -1091,7 +1091,7 @@ VirtualFunction const vt_8c27194c[61] = {
     0,
     0,
     destroy_object_8c17acac,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -1156,7 +1156,7 @@ VirtualFunction const vt_8c271a40[61] = {
     0,
     0,
     destroy_object_8c17ae84,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -1221,7 +1221,7 @@ VirtualFunction const vt_8c271b34[61] = {
     0,
     0,
     destroy_object_8c17b02c,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -1286,7 +1286,7 @@ VirtualFunction const vt_8c271c28[61] = {
     0,
     0,
     destroy_object_8c17b310,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -1351,7 +1351,7 @@ VirtualFunction const vt_8c271d1c[50] = {
     0,
     0,
     destroy_object_8c17b868,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -1414,7 +1414,7 @@ VirtualFunction const vt_8c271df8[61] = {
     0,
     0,
     destroy_object_8c17beb8,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -1479,7 +1479,7 @@ VirtualFunction const vt_8c271eec[61] = {
     0,
     0,
     destroy_object_8c17bf90,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -1545,7 +1545,7 @@ VirtualFunction const vt_8c271fe0[7] = {
     0,
     operation_8c1832f4,
     fn_8c183370,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

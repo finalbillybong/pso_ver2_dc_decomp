@@ -9,7 +9,7 @@ struct S_vv2 {
     S_vv2_0 *f00;
 };
 extern int call_8c372d38(void *, int);
-int operation_8c01018c(int a0)
+int vmu_find_file_8c01018c(int a0)
 {
     int v1;
     S_vv2 *v2;

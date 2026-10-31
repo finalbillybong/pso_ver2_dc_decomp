@@ -20,7 +20,7 @@ extern void shutdown_030864(void);
 extern void shutdown_379280(void);
 extern int shutdown_17b8f4(void);
 extern void free_handle_8c36cde4(void *);
-void shutdown_game_8c01c054(void)
+void game_shutdown_8c01c054(void)
 {
     shutdown_11a8f0();
     shutdown_184610();

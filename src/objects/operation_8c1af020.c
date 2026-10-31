@@ -24,10 +24,10 @@ extern int g_8c4703c0;
 extern S_g8c4e2300 *g_8c4e2300;
 extern S_g8c4e2304 *g_8c4e2304;
 extern char g_8c325e80[];
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 extern int call_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
-extern int call_8c118528(void *);
+extern int load_pvm_file_tls_8c118528(void *);
 void operation_8c1af020(void)
 {
     int t1;
@@ -35,7 +35,7 @@ void operation_8c1af020(void)
     int t3;
     int t4;
     int t5;
-    t1 = call_8c18de4c(8);
+    t1 = operator_new_8c18de4c(8);
     g_8c4e2304 = (S_g8c4e2304 *)(int)(t1);
     if (g_8c2e2ad8 == 1) {
         if (g_8c4703c0 != 3 && g_8c44be20 != 1) {
@@ -46,7 +46,7 @@ void operation_8c1af020(void)
             call_8c03d610(t2, 1, (void *)((void *)0x8c325e40), 0, 0, 0);
         }
         g_8c4e2300 = (S_g8c4e2300 *)(int)(t2);
-        t3 = call_8c118528((void *)((g_8c325e80 + 0x63)));
+        t3 = load_pvm_file_tls_8c118528((void *)((g_8c325e80 + 0x63)));
         g_8c4e2304->f00 = (int)(t3);
     } else {
 L_8c1af07a:;
@@ -55,7 +55,7 @@ L_8c1af07a:;
             call_8c03d610(t4, 1, (void *)((void *)0x8c325e20), 0, 0, 0);
         }
         g_8c4e2300 = (S_g8c4e2300 *)(int)(t4);
-        t5 = call_8c118528((void *)((g_8c325e80 + 0x7a)));
+        t5 = load_pvm_file_tls_8c118528((void *)((g_8c325e80 + 0x7a)));
         g_8c4e2304->f00 = (int)(t5);
     }
     g_8c4e2304->f04 = (int)(g_8c4e2300->f42c->f0c);

@@ -17,19 +17,19 @@ extern int g_8c328420;
 extern S_g8c44bea4 *g_8c44bea4;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4e2bbc;
-extern void initialize_hierarchy_node(void *, void *);
-extern int allocate_block(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c1bee70(int, void *);
 Object *operation_8c1bec9c(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27563c;
     o->tag = g_8c328420;
     o->size = 0x20;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x20);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x20);
     if (t1 != 0) {
         call_8c1bee70(t1, g_8c44bea4);
     }

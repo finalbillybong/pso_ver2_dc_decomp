@@ -6,10 +6,10 @@ extern void *object_name,*heap;
 extern unsigned char control_flag;
 extern int active;
 extern Context *context;
-extern void base_at(Control *,void *),base_destroy_at(Control *,int),release_at(void *,void *),reset_at(Control *),prepare_at(Control *);
-Control *initialize_context_control(Control *o,void *parent) {
+extern void TObject_ctor_8c0330e4(Control *,void *),TObject_dtor_8c03311c(Control *,int),release_at(void *,void *),reset_at(Control *),prepare_at(Control *);
+Control *TScene_ctor_8c031358(Control *o,void *parent) {
     Control **home=&o;
-    base_at(o,parent);
+    TObject_ctor_8c0330e4(o,parent);
     o->vtable=control_vtable;
     o->name=object_name;
     o->size=68;

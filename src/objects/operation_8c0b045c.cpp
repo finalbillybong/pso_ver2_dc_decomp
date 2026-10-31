@@ -71,7 +71,7 @@ struct Arg0_20 {
     unsigned short f20;
 };
 extern "C" void operation_8c0ddb44(short, short, int);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_effect_pair(void *, void *, void *, void *, unsigned short, void *);
 extern "C" int create_effect(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
@@ -92,7 +92,7 @@ extern "C" void operation_8c0b045c(Object *o, Arg1 *a1)
             if (o->fc8 == 0) {
                 return;
             }
-            t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x44);
+            t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x44);
             if (t1 == 0) {
                 return;
             }

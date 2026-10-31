@@ -22,14 +22,14 @@ struct Object {
 struct Arg2 {
     Vector3 f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c104148(Object *);
 extern void call_8c1041b4(Object *);
 Object *operation_8c104070(Object *o, int a1, Arg2 *a2, float f0)
 {
     Object **home = &o;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c269710;
     o->tag = (int)(*(int *)0x8c30b558);
     o->size = 0x104;

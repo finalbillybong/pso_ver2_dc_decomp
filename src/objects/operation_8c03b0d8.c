@@ -15,8 +15,8 @@ struct S_c8c122700 {
     int f24;
 };
 extern void *lookup_low_id(int);
-extern S_c8c122700 *allocate_block(void *, int);
-extern void initialize_hierarchy_node(S_c8c122700 *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, int);
+extern void TObject_ctor_8c0330e4(S_c8c122700 *, void *);
 S_c8c122700 *operation_8c03b0d8(int a0, int a1)
 {
     void *t1;
@@ -25,9 +25,9 @@ S_c8c122700 *operation_8c03b0d8(int a0, int a1)
     if (t1 == 0) {
         return 0;
     }
-    t2 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, 0x28);
+    t2 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0x28);
     if (t2 != 0) {
-        initialize_hierarchy_node(t2, t1);
+        TObject_ctor_8c0330e4(t2, t1);
         t2->f18 = (void *)0x8c261998;
         t2->f20 = a1;
         t2->f21 = 0;

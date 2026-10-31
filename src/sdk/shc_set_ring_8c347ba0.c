@@ -19,7 +19,7 @@ extern Pending g_default_pending_8c3fac78;
 extern Pending **g_ring_slot_8c52e3b8;
 extern Pending *g_ring_8c52e3b0;
 extern int g_ring_capacity_8c52e3b4;
-extern void *memset(void *, int, unsigned long);
+extern void *memset_8c12b880(void *, int, unsigned long);
 extern void set_values_8c346118(int, int);
 int set_ring_8c347ba0(Pending *ring, int capacity)
 {
@@ -39,7 +39,7 @@ int set_ring_8c347ba0(Pending *ring, int capacity)
     g_ring_slot_8c52e3b8 = &g_system_8c3fac48->ring;
     g_ring_8c52e3b0 = ring;
     g_ring_capacity_8c52e3b4 = capacity;
-    memset(g_system_8c3fac48->ring, 0xff, capacity * sizeof(Pending));
+    memset_8c12b880(g_system_8c3fac48->ring, 0xff, capacity * sizeof(Pending));
     for (i = 0; i < capacity; i++) g_system_8c3fac48->ring[i] = g_default_pending_8c3fac78;
 done:
     _builtin_set_imask(old);

@@ -46,9 +46,9 @@ struct Arg0_24 {
     char unknown0[0x80];
     unsigned short f80;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c1196d4(void *, void *, int);
-extern int call_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern void call_8c119764(Arg0_20 *, void *, int);
 extern int call_8c156c6c(void *);
 extern void operation_8c1571d4(void *, int);
@@ -59,14 +59,14 @@ Object *operation_8c1986ec(Object *o, int a1)
     int t2;
     int t3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2728f8;
     o->tag = *(int *)0x8c31c980;
     o->size = 0x2c;
     t1 = call_8c1196d4((void *)0x8c31c984, (void *)0x8c31c98c, 1);
     o->f20 = (Arg0_20 *)t1;
     o->f20->f30->f00->f08 = 33.0f;
-    t2 = call_8c01c25c();
+    t2 = get_game_mode_8c01c25c();
     if (t2 == 0x10) {
         call_8c119764(o->f20, (*(S_g8c467180 **)0x8c467180)->f2c->f26c, 0);
     } else {

@@ -48,10 +48,10 @@ extern int call_8c36e998(void);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void call_8c02688c(int);
 extern void clear_pair_8c244878(void *);
-extern int current_effect_mode(void);
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
-extern void call_8c12b154(void *, int, int);
+extern int get_current_area_8c032b10(void);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern void strncpy_8c12b154(void *, int, int);
 void operation_8c244258(Object *o)
 {
     int v39;
@@ -86,21 +86,21 @@ void operation_8c244258(Object *o)
         t3->f34 &= -0x20001;
     }
     clear_pair_8c244878((void *)o);
-    t4 = current_effect_mode();
+    t4 = get_current_area_8c032b10();
     if (t4 == 0x10) {
         v39 = (int)(g_8c33ab28 + 0x2e0);
     } else {
         v39 = (int)(g_8c33ab28 + 0x2ea);
     }
-    t5 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x44);
+    t5 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x44);
     if (t5 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t5;
         S_c8c122700 **home = &self;
         (void)home;
-        initialize_hierarchy_node((void *)t5, (void *)o);
+        TObject_ctor_8c0330e4((void *)t5, (void *)o);
         self->f18 = (void *)0x8c27ccc0;
         self->f20 = 0x2d;
-        call_8c12b154((void *)(((char *)self + 0x24)), v39, 0x20);
+        strncpy_8c12b154((void *)(((char *)self + 0x24)), v39, 0x20);
     }
     v61 = (int)0;
     while (8 > v61) {

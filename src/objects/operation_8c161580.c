@@ -37,7 +37,7 @@ struct Arg3 {
     Vector3 f00;
 };
 extern int g_8c316e78;
-extern void operation_8c012008(void *);
+extern void TObjEnemy_ctor_8c012008(void *);
 extern int record30_8c1794c8(int);
 extern float call_8c37e480(void *);
 extern void call_8c37b630(void *);
@@ -51,7 +51,7 @@ Object *operation_8c161580(Object *o, int a1, Arg2 *a2, Arg3 *a3, int a4)
     int t1;
     float t2;
     (void)home;
-    operation_8c012008((void *)o);
+    TObjEnemy_ctor_8c012008((void *)o);
     o->dispatch = (void *)0x8c26f62c;
     o->tag = (int)(g_8c316e78);
     o->size = 0x3ac;

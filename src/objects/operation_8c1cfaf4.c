@@ -19,14 +19,14 @@ struct S_c8c021ef8 {
     char unknown0[0x20];
     short f20;
 };
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_follow_base(void *);
 extern S_c8c021ef8 *lookup_low_id(int);
 S_c8c122700 *operation_8c1cfaf4(void)
 {
     S_c8c122700 *t1;
     S_c8c021ef8 *t2;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

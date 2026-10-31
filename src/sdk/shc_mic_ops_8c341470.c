@@ -20,7 +20,7 @@ typedef struct {
     int va4;
 } Mic;
 extern Hook hook_8c51b6c0;
-extern void *memset(void *, int, unsigned int);
+extern void *memset_8c12b880(void *, int, unsigned int);
 extern int func_8c3563a0(int);
 extern void func_8c35677c(int, int *, int *);
 extern void port_set_slot_8c364aae(int, int, int);
@@ -43,7 +43,7 @@ int mic_set_8c341470(int v)
 
 int mic_query_a_8c34149e(Mic *m, int *out)
 {
-    memset(out, 0, 12);
+    memset_8c12b880(out, 0, 12);
     if (m->level < 2 || (out[0] = func_8c3563a0(m->dev_a)) == 0) {
         return 0;
     }
@@ -54,7 +54,7 @@ int mic_query_a_8c34149e(Mic *m, int *out)
 int mic_query_b_8c3414e6(Mic *mic, int *out)
 {
     Mic *m = mic;
-    memset(out, 0, 12);
+    memset_8c12b880(out, 0, 12);
     if (m->level < 2) {
         return 0;
     }

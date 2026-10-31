@@ -4,10 +4,10 @@ typedef void (*VirtualFunction)(void);
 
 extern void operation_8c03061c(void);
 extern void operation_8c0306f0(void);
-extern void destroy_context_control(void);
-extern void refresh_follow_effect_8c0316cc(void);
-extern void operation_8c0316ec(void);
-extern void operation_8c0111cc(void);
+extern void TScene_dtor_8c0313e4(void);
+extern void TScene_update_8c0316cc(void);
+extern void TScene_render_8c0316ec(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
 /* 8c2614ac: type-information and this-adjustment header, then 2 slots */
@@ -22,9 +22,9 @@ VirtualFunction const vt_8c2614ac[4] = {
 VirtualFunction const vt_8c2614bc[7] = {
     0,
     0,
-    destroy_context_control,
-    refresh_follow_effect_8c0316cc,
-    operation_8c0316ec,
-    operation_8c0111cc,
+    TScene_dtor_8c0313e4,
+    TScene_update_8c0316cc,
+    TScene_render_8c0316ec,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

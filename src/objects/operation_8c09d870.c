@@ -26,7 +26,7 @@ struct S_c8c09de04 {
     char unknown2e[0x56];
     S_vv9 *f84;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern int operation_8c244bd8(void);
 extern int operation_8c09d974(int, int, float);
 extern S_c8c09de04 *operation_8c09de04(int, void *);
@@ -43,7 +43,7 @@ void operation_8c09d870(int a0)
     int t2;
     S_c8c09de04 *t3;
     int t4;
-    t4 = current_effect_mode();
+    t4 = get_current_area_8c032b10();
     v1 = (char *)*(int *)((char *)0x8c2ebec8 + (t4 << 2));
     if (v1 != 0) {
         if (*(int *)0x8c41cd20 != 0 && *(int *)0x8c4dc800 != 0) {

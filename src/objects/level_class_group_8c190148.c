@@ -55,17 +55,17 @@ typedef struct Object {
     short second;
 } Object;
 
-extern void *initialize_hierarchy_node(void *, void *);
-extern void *allocate_block(void *, int);
+extern void *TObject_ctor_8c0330e4(void *, void *);
+extern void *heap_alloc_8c122700(void *, int);
 extern void operation_197420(void *);
 extern void *operation_1196d4(void *, void *, int);
 
 Object *initialize_object_8c1902c8(Object *o, void *parent)
 {
     void *block;
-    initialize_hierarchy_node(o, parent);
+    TObject_ctor_8c0330e4(o, parent);
     o->dispatch = (void *)0x8c272718;
-    block = allocate_block(*(void **)0x8c4d97e0, 0x74);
+    block = heap_alloc_8c122700(*(void **)0x8c4d97e0, 0x74);
     if (block) operation_197420(block);
     o->block = block;
     o->resource = operation_1196d4((void *)0x8c2876a0, (void *)0x8c2876a8, 1);

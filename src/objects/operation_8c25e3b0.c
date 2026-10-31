@@ -36,7 +36,7 @@ extern char g_8c3405d4[];
 extern char g_8c41cba0[];
 extern void operation_8c1cc690(void);
 extern int pair_grid_view_ready(void *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c1afdb4(int, Object *, void *, void *, float);
 extern int operation_8c01d8a8(void *, int);
 extern void call_8c119c78(Arg0_28 *);
@@ -66,7 +66,7 @@ void operation_8c25e3b0(Object *o)
         t1 = pair_grid_view_ready((void *)v65);
         if (t1 != 0) {
             o->f20 = 1;
-            t2 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xe4);
+            t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xe4);
             if (t2 == 0) {
                 return;
             }

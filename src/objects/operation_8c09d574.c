@@ -19,8 +19,8 @@ extern char g_8c301fdc[];
 extern void call_8c03ef04(Frame *, void *, void *);
 extern int call_8c104d50(Frame *);
 extern int call_8c18e808(int, int);
-extern int call_8c18de4c(int);
-extern void operation_8c104d00(int, int);
+extern int operator_new_8c18de4c(int);
+extern void file_load_8c104d00(int, int);
 int operation_8c09d574(int a0, int a1, int a2)
 {
     Frame frame;
@@ -55,11 +55,11 @@ L_8c09d5dc:;
     }
     t2 = call_8c18e808(t1, 0x44);
     *(int *)0x8c46ed44 = (int)(t2);
-    t3 = call_8c18de4c((int)(t2 * 0x44));
+    t3 = operator_new_8c18de4c((int)(t2 * 0x44));
     *(int *)0x8c46ed40 = (int)(t3);
     if (t3 == 0) {
         return 0;
     }
-    operation_8c104d00((int)(&frame), t3);
+    file_load_8c104d00((int)(&frame), t3);
     return 1;
 }

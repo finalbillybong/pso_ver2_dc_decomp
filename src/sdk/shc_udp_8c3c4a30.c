@@ -68,7 +68,7 @@ extern void packet_set_8c3c867e(void *dst, void *src);
 extern int htonl_8c3c8440(int v);
 extern int iface_addr_8c3c7d02(int h);
 extern int ip_send_8c3c68d8(Packet *p, int dst, int a, int b, int c, int d, int e, int f, int g, int h);
-extern void *memcpy(void *, const void *, unsigned long);
+extern void *memcpy_8c12b77c(void *, const void *, unsigned long);
 extern int buf_ptr_8c3c868e(Buf *b);
 extern void msg_send_8c3c8474(void *it, Buf *b, int n);
 extern int sock_deliver_8c3ce8c4(Packet *p, int src, int port, int arg, int i);
@@ -140,7 +140,7 @@ int udp_input_8c3c4bda(Packet *pkt, unsigned short len, int src, int dst)
 
     pkt->total -= len;
     pkt->piece[0].len -= len;
-    memcpy(saved, &pkt->piece[0].buf, 8);
+    memcpy_8c12b77c(saved, &pkt->piece[0].buf, 8);
     msg_sequence_8c3c8692(&pkt->piece[0].buf, len);
     if (pkt->piece[0].buf.type == 1) {
         u = (Udp *)buf_ptr_8c3c868e(&pkt->piece[0].buf);
@@ -174,7 +174,7 @@ int udp_input_8c3c4bda(Packet *pkt, unsigned short len, int src, int dst)
         if (s->raw) {
             pkt->total += len;
             pkt->piece[0].len += len;
-            memcpy(&pkt->piece[0].buf, saved, 8);
+            memcpy_8c12b77c(&pkt->piece[0].buf, saved, 8);
         } else {
             pkt->total -= 8;
             pkt->piece[0].len -= 8;

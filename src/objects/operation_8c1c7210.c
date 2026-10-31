@@ -12,7 +12,7 @@ struct Object {
     char unknown1c[0x2];
     short size;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int create_effect_7a48(void *, int, int);
 Object *operation_8c1c7210(Object *o, int a1)
 {
@@ -21,7 +21,7 @@ Object *operation_8c1c7210(Object *o, int a1)
     int v2;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2767e0;
     o->tag = (int)(*(int *)0x8c328e30);
     o->size = 0x30;

@@ -1,7 +1,7 @@
 #include "src/include/effect_controller.h"
 #include "src/include/controller_flags.h"
 
-#define allocate_at ((void *(*)(void *, unsigned int))0x8c122700)
+#define heap_alloc_8c122700 ((void *(*)(void *, unsigned int))0x8c122700)
 extern void *construct_b_at(void *, EffectController *, void *, int);
 extern void *construct_a_at(void *, EffectController *, void *, int);
 extern int emit_at(unsigned int, void *, int, unsigned int);
@@ -11,37 +11,37 @@ extern void notice_at(void *, int, int);
 void update_effect_controller_zero(EffectController *object) {
     switch (object->ticks) {
     case 0: {
-        void *child = allocate_at(*(void **)0x8c4d97e0, 52);
+        void *child = heap_alloc_8c122700(*(void **)0x8c4d97e0, 52);
         if (child) construct_a_at(child, object, (void *)0x8c2e1fd8, 5);
         emit_at(0x40010, 0, 0, 0);
         break;
     }
     case 30: {
-        void *child = allocate_at(*(void **)0x8c4d97e0, 52);
+        void *child = heap_alloc_8c122700(*(void **)0x8c4d97e0, 52);
         if (child) construct_a_at(child, object, (void *)0x8c2e1fd8, 4);
         emit_at(0x40010, 0, 0, 0);
         break;
     }
     case 60: {
-        void *child = allocate_at(*(void **)0x8c4d97e0, 52);
+        void *child = heap_alloc_8c122700(*(void **)0x8c4d97e0, 52);
         if (child) construct_a_at(child, object, (void *)0x8c2e1fd8, 3);
         emit_at(0x40010, 0, 0, 0);
         break;
     }
     case 90: {
-        void *child = allocate_at(*(void **)0x8c4d97e0, 52);
+        void *child = heap_alloc_8c122700(*(void **)0x8c4d97e0, 52);
         if (child) construct_a_at(child, object, (void *)0x8c2e1fd8, 2);
         emit_at(0x40010, 0, 0, 0);
         break;
     }
     case 120: {
-        void *child = allocate_at(*(void **)0x8c4d97e0, 52);
+        void *child = heap_alloc_8c122700(*(void **)0x8c4d97e0, 52);
         if (child) construct_a_at(child, object, (void *)0x8c2e1fd8, 1);
         emit_at(0x40010, 0, 0, 0);
         break;
     }
     case 150: {
-        void *child = allocate_at(*(void **)0x8c4d97e0, 52);
+        void *child = heap_alloc_8c122700(*(void **)0x8c4d97e0, 52);
         if (child) construct_b_at(child, object, (void *)0x8c2e1fd8, 0);
         break;
     }

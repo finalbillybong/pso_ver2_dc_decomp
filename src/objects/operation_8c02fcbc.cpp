@@ -18,7 +18,7 @@ typedef struct ObjectData {
     int fb19c;
 } ObjectData;
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02fcbc(Object *o, int a1)
+extern "C" void handle_cmd_C4_choice_search_results_8c02fcbc(Object *o, int a1)
 {
     char *v21;
     o->v4((g_8c2e7ce0 + 0x68c));

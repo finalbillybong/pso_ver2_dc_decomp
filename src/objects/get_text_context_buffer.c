@@ -6,5 +6,5 @@ typedef char check_callback[(unsigned long)&((View *)0)->callback==36?1:-1];
 typedef char check_state[(unsigned long)&((View *)0)->state==40?1:-1];
 typedef char check_handle[(unsigned long)&((View *)0)->handle==44?1:-1];
 typedef char check_text[(unsigned long)&((View *)0)->text==48?1:-1];
-extern char buffer[1024];extern void *fill_at(void *,int,unsigned int);
-void *get_text_context_buffer(View *o) {fill_at(buffer,0,1024);return buffer;}
+extern char buffer[1024];extern void *memset_8c12b880(void *,int,unsigned int);
+void *get_text_context_buffer(View *o) {memset_8c12b880(buffer,0,1024);return buffer;}

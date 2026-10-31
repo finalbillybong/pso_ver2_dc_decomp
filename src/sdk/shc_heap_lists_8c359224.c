@@ -28,7 +28,7 @@ extern void *d_8c3fb6c8[];
 extern char d_8c3f6048[];
 extern int g_heap_users_8c3fb6f8;
 extern Heap g_heaps_8c547710[];
-extern void *memset(void *p, int c, unsigned int n);
+extern void *memset_8c12b880(void *p, int c, unsigned int n);
 extern void span_split_8c3596f4(Span *in, int max, Span *head, Span *tail);
 
 int heap_lock_8c359224(Heap *h)
@@ -52,14 +52,14 @@ void heap_hang_8c359252(void *argument, int code)
 
 void heap_init_8c359256(void)
 {
-    if (g_heap_users_8c3fb6f8 == 0) memset(g_heaps_8c547710, 0, 0xc00);
+    if (g_heap_users_8c3fb6f8 == 0) memset_8c12b880(g_heaps_8c547710, 0, 0xc00);
     g_heap_users_8c3fb6f8++;
 }
 
 void heap_finish_8c359278(void)
 {
     g_heap_users_8c3fb6f8--;
-    if (g_heap_users_8c3fb6f8 == 0) memset(g_heaps_8c547710, 0, 0xc00);
+    if (g_heap_users_8c3fb6f8 == 0) memset_8c12b880(g_heaps_8c547710, 0, 0xc00);
 }
 
 void heap_reset_8c359326(Heap *h);
@@ -89,7 +89,7 @@ Heap *heap_create_8c359294(int mode, Block *blocks, unsigned int size)
 void heap_destroy_8c3592fe(Heap *h)
 {
     if (h) {
-        memset(h, 0, 0x30);
+        memset_8c12b880(h, 0, 0x30);
         h->used = 0;
     }
 }

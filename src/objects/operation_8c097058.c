@@ -44,18 +44,18 @@ struct S_L8c300f04 {
 extern int g_8c460900;
 extern int g_8c469e50;
 extern S_L8c300f04 g_8c300f04;
-extern void initialize_hierarchy_node(void *, void *);
-extern void call_8c12b154(Arg0_20 *, void *, int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern void strncpy_8c12b154(Arg0_20 *, void *, int);
 extern void operation_8c09a478(void);
 extern void operation_8c09a738(void);
 Object *operation_8c097058(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2657bc;
     o->f20 = (Arg0_20 *)g_8c460900;
-    call_8c12b154((Arg0_20 *)(o->f20), (void *)((void *)0x8c461ac8), 0xc);
+    strncpy_8c12b154((Arg0_20 *)(o->f20), (void *)((void *)0x8c461ac8), 0xc);
     o->f20->f0c = 0;
     o->f20->f1c = 0;
     o->f20->f32 &= -0xb;

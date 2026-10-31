@@ -4,13 +4,13 @@ typedef char check_layout[sizeof(Scene)==44 && sizeof(ResourceName)==12 && (unsi
 extern char scene_vtable[],names[],resource_list[];
 extern ResourceName records[];
 extern void *parent,*heap;
-extern void base_at(Scene *,void *),set_name_at(ResourceName *,char *,int,int),load_at(void *),start_at(char *),release_resources_at(void *),stop_at(void),base_destroy_at(Scene *,int),free_at(void *,void *);
+extern void TObject_ctor_8c0330e4(Scene *,void *),set_name_at(ResourceName *,char *,int,int),load_at(void *),start_at(char *),release_resources_at(void *),stop_at(void),TObject_dtor_8c03311c(Scene *,int),free_at(void *,void *);
 Scene *destroy_named_resource_scene(Scene *o,short mode) {
     if(o) {
         o->vtable=scene_vtable;
         release_resources_at(resource_list);
         stop_at();
-        base_destroy_at(o,0);
+        TObject_dtor_8c03311c(o,0);
         if(mode>0) free_at(heap,o);
     }
     return o;

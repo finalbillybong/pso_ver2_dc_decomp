@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c0104e4(void)
+void TObjCollision_update_8c0104e4(void)
 {
 }

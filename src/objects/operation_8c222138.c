@@ -23,7 +23,7 @@ extern S_g8c467180 *g_8c467180;
 extern int call_8c223298(Object *);
 extern void operation_8c220be8(int, int);
 extern void operation_8c2222e4(void *);
-extern void operation_8c22232c(void *);
+extern void quest_vm_load_8c22232c(void *);
 extern void call_8c222398(Object *);
 extern void call_8c222514(Object *);
 extern void call_8c22259c(Object *);
@@ -54,7 +54,7 @@ void operation_8c222138(Object *o)
         operation_8c2222e4((void *)o);
         return;
     case 1:
-        operation_8c22232c((void *)o);
+        quest_vm_load_8c22232c((void *)o);
         return;
     case 2:
         call_8c222398(o);

@@ -37,7 +37,7 @@ static inline int is_local_owner(Object *o)
     }
     return r;
 }
-void operation_8c1ebf60(Object *o)
+void handle_6x45_third_attack_8c1ebf60(Object *o)
 {
     Object *base;
     int v7;

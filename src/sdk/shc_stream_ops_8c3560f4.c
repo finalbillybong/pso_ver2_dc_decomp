@@ -40,7 +40,7 @@ typedef struct Stream {
     char tail[4];
 } Stream;
 
-extern void cfg_from_src_8c3571d4(Stream *s, char *p);
+extern void mwRnv2SetVertexContextBlendingMode_8c3571d4(Stream *s, char *p);
 extern void func_8c3577d4(Stream *s);
 extern void func_8c357920(int a, int b, int c, int d);
 
@@ -106,7 +106,7 @@ Stream *s;
 void stream_set_18_8c3561f2(Stream *s, int v)
 {
     s->v18 = v;
-    cfg_from_src_8c3571d4(s, s->tail);
+    mwRnv2SetVertexContextBlendingMode_8c3571d4(s, s->tail);
 }
 
 void stream_set_b08_8c356204(Stream *s, unsigned char v)

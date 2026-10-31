@@ -22,7 +22,7 @@ extern char g_8c4e3130;
 extern int g_8c5108c0;
 extern unsigned char g_8c513400;
 extern unsigned char g_8c513408;
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c01c250(int);
 extern int operation_8c2324c0(Object *);
 extern int call_8c03f6d8(void);
@@ -32,12 +32,12 @@ extern void select_mode19_8c1cc648(void);
 extern int call_8c232060(Object *);
 extern int operation_8c232480(void);
 extern void select_mode18_8c1cc630(void);
-extern void call_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 extern void select_mode4_8c1cc4f8(void);
 extern void select_mode23_8c1cc678(void);
 extern void select_mode10_8c1cc588(void);
 extern void clear_global_render_resources(void);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c198294(int, Object *);
 extern int create_pair_widget_8c231e40(Object *);
 Object *operation_8c231ba0(Object *o)
@@ -52,7 +52,7 @@ Object *operation_8c231ba0(Object *o)
     int t7;
     int t8;
     (void)home;
-    initialize_hierarchy_node((void *)o, g_8c44be88);
+    TObject_ctor_8c0330e4((void *)o, g_8c44be88);
     o->dispatch = (void *)0x8c278fb4;
     o->f28 = 0;
     o->f24 = 0;
@@ -107,7 +107,7 @@ L_8c231c24:;
                     return o;
 L_8c231c58:;
                     if (g_8c4e2e24 != 0) {
-                        call_8c01c1a4(9);
+                        request_game_mode_8c01c1a4(9);
                     } else {
                         select_mode4_8c1cc4f8();
                     }
@@ -129,7 +129,7 @@ L_8c231c7e:;
     }
 L_8c231cae:;
     clear_global_render_resources();
-    t7 = allocate_block(g_8c4d97e0, (unsigned int)0x40);
+    t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x40);
     if (t7 != 0) {
         call_8c198294(t7, o);
     }

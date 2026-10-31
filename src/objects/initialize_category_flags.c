@@ -12,10 +12,10 @@ typedef char check_active[(unsigned long)&((View *)0)->active==68?1:-1];
 typedef char check_phase[(unsigned long)&((View *)0)->phase==72?1:-1];
 typedef char check_categories[(unsigned long)&((Player *)0)->categories==56?1:-1];
 extern Player *player;extern CategoryRow limits[];
-extern void base_at(View *,void *);extern int row_at(Player *);extern int flag_at(int,int);
+extern void TObject_ctor_8c0330e4(View *,void *);extern int row_at(Player *);extern int flag_at(int,int);
 View *initialize_category_flags(View *o,void *parent,int category) {
  View **home=&o;unsigned int bit;int i;View *current;
- base_at(o,parent);o->dispatch=(void *)0x8c2657a0;o->player=player;o->state=0;o->category=category;
+ TObject_ctor_8c0330e4(o,parent);o->dispatch=(void *)0x8c2657a0;o->player=player;o->state=0;o->category=category;
  { View *current=o;o->limit=*(short *)((char *)&limits[row_at(current->player)]+((unsigned int)current->category<<1)); }
  { View *current=o;current->value=*(short *)((char *)&current->player->categories+((unsigned int)current->category<<1)); }
  o->count=0;o->bits=0;for(i=0,bit=1;current=o,i<current->limit;bit<<=1,++i) {if(flag_at(current->category,i)) {++o->count;o->bits|=bit;}}

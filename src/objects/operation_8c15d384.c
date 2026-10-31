@@ -27,8 +27,8 @@ extern S_g8c4db164 *g_8c4db164;
 extern char g_8c316798[];
 extern int call_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
-extern S_c8c18de4c *call_8c18de4c(int);
-extern int call_8c118528(void *);
+extern S_c8c18de4c *operator_new_8c18de4c(int);
+extern int load_pvm_file_tls_8c118528(void *);
 void operation_8c15d384(void)
 {
     int t1;
@@ -39,9 +39,9 @@ void operation_8c15d384(void)
         call_8c03d610(t1, 1, (void *)((void *)0x8c316784), 0, 0, 0);
     }
     g_8c4db160 = (S_g8c4db160 *)(int)(t1);
-    t2 = call_8c18de4c(8);
+    t2 = operator_new_8c18de4c(8);
     g_8c4db164 = (S_g8c4db164 *)t2;
     t2->f04 = (int)(g_8c4db160->f42c->f0c);
-    t3 = call_8c118528((void *)((g_8c316798 + 0x38)));
+    t3 = load_pvm_file_tls_8c118528((void *)((g_8c316798 + 0x38)));
     g_8c4db164->f00 = (int)(t3);
 }

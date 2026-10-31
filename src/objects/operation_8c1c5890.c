@@ -28,8 +28,8 @@ struct Frame {
     char unknown4[0xc];
 };
 extern int hierarchy_is_active(void *);
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c075894(S_c8c122700_28 *, void *, void *, void *);
 extern int create_effect_769c(void *, int);
 void operation_8c1c5890(int a0, int a1, int a2)
@@ -41,12 +41,12 @@ void operation_8c1c5890(int a0, int a1, int a2)
     if (a0 != 0 && a1 != 0) {
         t1 = hierarchy_is_active((void *)a1);
         if (t1 != 0) {
-            t2 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
+            t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
             if (t2 != 0) {
                 S_c8c122700 *self = (S_c8c122700 *)t2;
                 S_c8c122700 **home = &self;
                 (void)home;
-                initialize_hierarchy_node((void *)t2, (void *)a0);
+                TObject_ctor_8c0330e4((void *)t2, (void *)a0);
                 self->f18 = (void *)0x8c27664c;
                 self->f00 = (int)(*(int *)0x8c328c50);
                 self->f1e = 0x2c;

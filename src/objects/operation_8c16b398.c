@@ -32,14 +32,14 @@ struct Arg2 {
 struct Arg3 {
     Vector3 f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c01d728(void *);
 Object *operation_8c16b398(Object *o, int a1, Arg2 *a2, Arg3 *a3, int a4)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c270188;
     if (a2 == 0) {
         o->f24 = 0xffff;

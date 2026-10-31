@@ -23,14 +23,14 @@ struct S_c8c122700_20 {
     char unknown0[0x48];
     Block8 f48;
 };
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
 S_c8c122700 *operation_8c09971c(int a0)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
     if (t1 != 0) {
-        initialize_hierarchy_node((void *)t1, (void *)a0);
+        TObject_ctor_8c0330e4((void *)t1, (void *)a0);
         t1->f18 = (void *)0x8c265768;
         t1->f20 = (S_c8c122700_20 *)*(int *)0x8c460900;
         *(Block8 *)&t1->f34 = *(Block8 *)&t1->f20->f48;

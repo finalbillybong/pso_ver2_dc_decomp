@@ -11,8 +11,8 @@ struct Object {
 };
 extern void call_8c18de08(void *);
 extern int call_8c257e2c(int);
-extern int call_8c18de4c(int);
-extern void call_8c12b154(void *, int, int);
+extern int operator_new_8c18de4c(int);
+extern void strncpy_8c12b154(void *, int, int);
 void operation_8c1e5ecc(Object *o, int a1)
 {
     int t1;
@@ -21,8 +21,8 @@ void operation_8c1e5ecc(Object *o, int a1)
     o->dispatch = (Arg0_18 *)0;
     if (a1 != 0) {
         t1 = call_8c257e2c(a1);
-        t2 = call_8c18de4c(t1 + 1);
+        t2 = operator_new_8c18de4c(t1 + 1);
         o->dispatch = (Arg0_18 *)t2;
-        call_8c12b154(o->dispatch, a1, t1 + 1);
+        strncpy_8c12b154(o->dispatch, a1, t1 + 1);
     }
 }

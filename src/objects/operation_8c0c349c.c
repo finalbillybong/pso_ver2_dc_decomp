@@ -9,7 +9,7 @@ struct S_c8c021ef8 {
     char unknown0[0x37c];
     int f37c;
 };
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int call_8c18e8a0(int, int);
 int operation_8c0c349c(void)
@@ -22,7 +22,7 @@ int operation_8c0c349c(void)
     S_c8c021ef8 *t2;
     int v4;
     S_c8c021ef8 *t4;
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 == 0x10) {
         t2 = lookup_low_id((int)(*(S_g8c418258 **)0x8c418258));
         if (t2 != 0 && (int)t2->f37c == *(int *)0x8c44be04) {

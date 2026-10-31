@@ -6,7 +6,7 @@ typedef struct Vector3 {
 extern int g_8c470324;
 extern int g_8c4dbb08;
 extern int g_8c4dbb0c;
-extern int operation_8c01018c(int);
+extern int vmu_find_file_8c01018c(int);
 extern int operation_8c19b054(void);
 extern int call_8c372d38(int, void *);
 int operation_8c0e92e0(void)
@@ -15,7 +15,7 @@ int operation_8c0e92e0(void)
     v1 = (int)(g_8c4dbb08 + g_8c4dbb0c);
     switch (g_8c470324) {
     case 0:
-        switch (operation_8c01018c((int)((void *)0x8c319870))) {
+        switch (vmu_find_file_8c01018c((int)((void *)0x8c319870))) {
         case 0:
         case 1:
         case 2:
@@ -43,7 +43,7 @@ int operation_8c0e92e0(void)
         }
         break;
     }
-    switch (operation_8c01018c((int)((void *)0x8c3198c1))) {
+    switch (vmu_find_file_8c01018c((int)((void *)0x8c3198c1))) {
     case 0:
     case 1:
     case 2:
@@ -55,7 +55,7 @@ int operation_8c0e92e0(void)
         v1 -= g_8c4dbb0c;
         break;
     default:
-        switch (operation_8c01018c((int)((void *)0x8c319912))) {
+        switch (vmu_find_file_8c01018c((int)((void *)0x8c319912))) {
         case 0:
         case 1:
         case 2:

@@ -18,7 +18,7 @@ struct S_vv4 {
 extern int operation_8c16a18c(void *, int);
 extern int operation_8c169508(void *);
 extern void release_child_slot_8c022624(void *, void *);
-void operation_8c022594(Object *o)
+void handle_6x26_unequip_item_8c022594(Object *o)
 {
     int v1;
     short v2;

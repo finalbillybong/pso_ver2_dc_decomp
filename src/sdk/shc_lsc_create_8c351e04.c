@@ -43,8 +43,8 @@ extern char str_8c3f49b8[];
 extern void lock_8c3523cc(int *state);
 extern void unlock_8c3523e4(int *state);
 extern void print_8c352414(char *fmt, ...);
-extern void *memset(void *p, int c, unsigned int n);
-extern void call_8c12b154(void *dst, void *src, int n);
+extern void *memset_8c12b880(void *p, int c, unsigned int n);
+extern void strncpy_8c12b154(void *dst, void *src, int n);
 extern void thunk_8c352482(int stm);
 extern void thunk_8c35246a(int stm);
 
@@ -64,7 +64,7 @@ Lsc *lsc_find_free_8c351e04(void)
     return l;
 }
 
-Lsc *lsc_create_8c351e2c(Obj *sj)
+Lsc *LSC_Create_8c351e2c(Obj *sj)
 {
     int state;
     Lsc *l;
@@ -100,7 +100,7 @@ void lsc_destroy_8c351eb6(Lsc *l)
     lock_8c3523cc(&state);
     lsc_stop_8c352028(l);
     l->used = 0;
-    memset(l, 0, sizeof(Lsc));
+    memset_8c12b880(l, 0, sizeof(Lsc));
     unlock_8c3523e4(&state);
 }
 
@@ -129,7 +129,7 @@ int lsc_entry_fname_8c351ee8(Lsc *l, char *fname)
         id = prev + 1;
     s = &l->slot[l->tail];
     s->id = id;
-    call_8c12b154(s->fname, fname, 40);
+    strncpy_8c12b154(s->fname, fname, 40);
     s->stat = 0;
     s->rdsct = 0;
     l->count++;

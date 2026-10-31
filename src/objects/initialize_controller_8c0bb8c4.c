@@ -22,7 +22,7 @@ struct Object {
     short f60;
 };
 extern void initialize_position_controller(Object *, int);
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 extern void call_8c0bbb24(Object *);
 Object *initialize_controller_8c0bb8c4(Object *o, int a1)
 {
@@ -41,7 +41,7 @@ Object *initialize_controller_8c0bb8c4(Object *o, int a1)
     o->f58 = 0;
     o->f5c = 0;
     o->f60 = 1;
-    call_8c12b880(((char *)o + 0x7c), 0, 0x20);
+    memset_8c12b880(((char *)o + 0x7c), 0, 0x20);
     call_8c0bbb24(o);
     return o;
 }

@@ -124,7 +124,7 @@ extern "C" void call_8c04a99c(Object *, int);
 extern "C" void call_8c02c048(Object *, int);
 extern "C" void operation_8c02a764(int, int);
 extern "C" int operation_8c02303c(void *, void *);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_tag_8c1694cc(void *, void *);
 extern "C" int call_8c074538(int, int);
 extern "C" int find_node_8c16a3c0(void *, int);
@@ -173,7 +173,7 @@ extern "C" int operation_8c0230e4(Object *o, Arg1 *a1)
     case 0:
     case 1:
     case 2:
-        t4 = allocate_block(g_8c4d97e0, (unsigned int)0x24);
+        t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x24);
         v1 = (int)t4;
         if (t4 != 0) {
             initialize_tag_8c1694cc((void *)t4, (void *)(o->fbc8->f1ac));
@@ -185,7 +185,7 @@ extern "C" int operation_8c0230e4(Object *o, Arg1 *a1)
             a1->v31(&(&frame)->f14);
             t6 = find_node_8c16a3c0((void *)(o->fbc8), (int)(&(&frame)->f14));
             if (t6 == 0) {
-                t7 = allocate_block(g_8c4d97e0, (unsigned int)0x24);
+                t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x24);
                 v1 = (int)t7;
                 if (t7 != 0) {
                     initialize_tag_8c1694cc((void *)t7, (void *)(o->fbc8->f1ac));
@@ -205,7 +205,7 @@ extern "C" int operation_8c0230e4(Object *o, Arg1 *a1)
             operation_8c02a764((int)o, 0x50002);
             return 0;
         }
-        t10 = allocate_block(g_8c4d97e0, (unsigned int)0x24);
+        t10 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x24);
         v1 = (int)t10;
         if (t10 != 0) {
             initialize_tag_8c1694cc((void *)t10, (void *)(o->fbc8->f1ac));

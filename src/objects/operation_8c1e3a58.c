@@ -40,7 +40,7 @@ extern char g_8c41cba0[];
 extern void operation_8c1cc690(void);
 extern int pair_grid_view_ready(void *);
 extern int call_8c1e3d6c(Object *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c051a98(void *, int, int, int, unsigned char);
 extern void operation_8c051d5c(void *, float, float);
 extern int operation_8c01d8a8(void *, int);
@@ -50,8 +50,8 @@ extern S_c8c051d18 *operation_8c051d18(void *);
 extern void call_8c05fbf8(int, int, int, int);
 extern void operation_8c051ce4(void *);
 extern void call_8c18de08(S_c8c051d18 *);
-extern void call_8c12b880(void *, int, int);
-extern void call_8c12b154(void *, S_c8c051d18 *, int);
+extern void memset_8c12b880(void *, int, int);
+extern void strncpy_8c12b154(void *, S_c8c051d18 *, int);
 extern void request_resource_release(void *);
 extern void select_mode12_8c1cc5b8(void);
 extern void select_mode4_8c1cc4f8(void);
@@ -90,7 +90,7 @@ void operation_8c1e3a58(Object *o)
     if (t1 != 0) {
         t2 = call_8c1e3d6c(o);
         o->f2c = (Arg0_2c *)t2;
-        t3 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
+        t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
         if (t3 != 0) {
             operation_8c051a98((void *)t3, (int)o, 0x10, 0, (unsigned char)0);
         }
@@ -119,8 +119,8 @@ L_8c1e3b0a:;
                 operation_8c051ce4((void *)(o->f30));
                 call_8c18de08(t7);
             } else {
-                call_8c12b880((void *)((void *)0x8c4621e9), 0, 0x11);
-                call_8c12b154((void *)((void *)0x8c4621e9), t7, 0x10);
+                memset_8c12b880((void *)((void *)0x8c4621e9), 0, 0x11);
+                strncpy_8c12b154((void *)((void *)0x8c4621e9), t7, 0x10);
                 call_8c18de08(t7);
                 v5 = (S_vv5 *)o->f30;
                 v5->f04 |= 1;
@@ -134,7 +134,7 @@ L_8c1e3b0a:;
         }
         if (o->f34 == 0) {
             if (((*(int *)(g_8c41cba0 + 0x28) & 2)) != 0) {
-                call_8c12b880((void *)((void *)0x8c4621e9), 0, 0x11);
+                memset_8c12b880((void *)((void *)0x8c4621e9), 0, 0x11);
                 v10 = (S_vv10 *)o->f30;
                 v10->f04 |= 1;
                 o->f30 = (Arg0_30 *)0;

@@ -32,7 +32,7 @@ struct Arg1 {
     float f00;
     float f04;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern float call_8c37e480(void *);
 extern void call_8c37b630(void *);
 extern float call_8c37f6c0(void *, float);
@@ -46,7 +46,7 @@ Object *operation_8c245a9c(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f0, floa
     float t1;
     float t2;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a3);
+    TObject_ctor_8c0330e4((void *)o, (void *)a3);
     o->dispatch = (void *)0x8c27cf00;
     o->tag = (int)(*(int *)0x8c33aea4);
     o->size = 0x34;

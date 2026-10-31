@@ -40,7 +40,7 @@ struct Frame {
 extern S_g8c418248 *g_8c418248;
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void operation_8c0368ec(void *);
-void operation_8c021dcc(Object *o)
+void handle_6x1F_set_player_floor_and_request_positions_8c021dcc(Object *o)
 {
     Frame frame;
     int v1;

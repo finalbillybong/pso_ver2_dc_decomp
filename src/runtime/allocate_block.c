@@ -1,7 +1,7 @@
 /* Provisional free-list allocator layout inferred at 8c122700. */
 typedef struct FreeBlock { struct FreeBlock *next; unsigned int size; } FreeBlock;
 typedef struct BlockHeap { FreeBlock *head; unsigned int unknown_4; unsigned int alignment; } BlockHeap;
-void *allocate_block(BlockHeap *heap, unsigned int size)
+void *heap_alloc_8c122700(BlockHeap *heap, unsigned int size)
 {
     FreeBlock *previous = heap->head;
     FreeBlock *block;
@@ -23,10 +23,10 @@ void *allocate_block(BlockHeap *heap, unsigned int size)
     return 0;
 }
 
-#define clear_bytes_at ((void (*)(void *, int, unsigned int))0x8c12b880)
+#define memset_8c12b880 ((void (*)(void *, int, unsigned int))0x8c12b880)
 void *allocate_zeroed_block(BlockHeap *heap, unsigned int size)
 {
-    void *block = allocate_block(heap, size);
-    if (block) clear_bytes_at(block, 0, size);
+    void *block = heap_alloc_8c122700(heap, size);
+    if (block) memset_8c12b880(block, 0, size);
     return block;
 }

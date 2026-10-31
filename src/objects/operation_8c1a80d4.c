@@ -17,19 +17,19 @@ extern S_g8c4df884 *g_8c4df884;
 extern int g_8c4df888;
 extern int g_8c4df88c;
 extern int g_8c4df890;
-extern void call_8c12b154(void *, int, int);
+extern void strncpy_8c12b154(void *, int, int);
 extern int call_8c34d35e(int, int);
 extern void set_fields_8c1a82a0(void);
-extern void call_8c34d6ae(void *, int, void *);
-extern int call_8c34da3c(void *);
-extern void operation_8c104c60(void);
-void operation_8c1a80d4(int a0)
+extern void ADXF_ReadNw32_8c34d6ae(void *, int, void *);
+extern int ADXF_GetStat_8c34da3c(void *);
+extern void loading_wait_frame_8c104c60(void);
+void gsl_open_archive_8c1a80d4(int a0)
 {
     S_vv2 *v2;
     int v1;
     int t1;
     int t2;
-    call_8c12b154((void *)((void *)0x8c4df864), a0, 0x20);
+    strncpy_8c12b154((void *)((void *)0x8c4df864), a0, 0x20);
     if (g_8c4df88c == 0) {
         t1 = call_8c34d35e(a0, 0);
         g_8c4df884 = (S_g8c4df884 *)(int)(t1);
@@ -37,13 +37,13 @@ void operation_8c1a80d4(int a0)
             return;
         }
         set_fields_8c1a82a0();
-        call_8c34d6ae(g_8c4df884, 6, (void *)((void *)0x8c4dc860));
+        ADXF_ReadNw32_8c34d6ae(g_8c4df884, 6, (void *)((void *)0x8c4dc860));
         for (;;) {
-            t2 = call_8c34da3c(g_8c4df884);
+            t2 = ADXF_GetStat_8c34da3c(g_8c4df884);
             if (t2 == 3) {
                 break;
             }
-            operation_8c104c60();
+            loading_wait_frame_8c104c60();
         }
         g_8c4df888 = v1 = 0;
         v2 = (S_vv2 *)(void *)0x8c4dc860;

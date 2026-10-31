@@ -168,7 +168,7 @@ extern S_g8c4dbde0 *g_8c4dbde0;
 extern S_L8c41cba0 g_8c41cba0;
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void request_resource_release(void *);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c1d5b24(void *);
 extern "C" void operation_8c1a2c98(void *);
 extern "C" void operation_8c19a044(void *, int);
@@ -266,7 +266,7 @@ extern "C" void operation_8c1a2ed4(Object *o)
             o->f28 = (Arg0_28 *)0;
         }
         if (o->f34 == 0) {
-            t2 = allocate_block(g_8c4d97e0, (unsigned int)0xb8);
+            t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xb8);
             if (t2 != 0) {
                 operation_8c1d5b24((void *)t2);
             }

@@ -38,7 +38,7 @@ extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void call_8c37f6f0(Frame *, void *);
 extern float normalize_vector_checked(void *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0d0360(int, void *, void *, Frame *, float);
 extern void operation_8c0911f4(void *, int);
 void operation_8c0cb824(Object *o)
@@ -66,7 +66,7 @@ void operation_8c0cb824(Object *o)
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f54;
     call_8c37f6f0((Frame *)((&frame)), (void *)(&o->f3c));
     t2 = normalize_vector_checked((void *)(&frame));
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x298);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x298);
     if (t1 != 0) {
         call_8c0d0360(t1, g_8c44be98, (void *)(&o->f3c), (Frame *)((&frame)), t2);
     }

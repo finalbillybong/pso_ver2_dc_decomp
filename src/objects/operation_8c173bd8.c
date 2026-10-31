@@ -18,7 +18,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4db648;
 extern void request_resource_release(void *);
 extern void release_scene_8c16c1e4(void);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c173bd8(Object *o, int a1)
 {
@@ -34,7 +34,7 @@ Object *operation_8c173bd8(Object *o, int a1)
         }
         release_scene_8c16c1e4();
         g_8c4db648 = 0;
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

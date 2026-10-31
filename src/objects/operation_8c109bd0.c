@@ -91,7 +91,7 @@ extern Block76 g_8c30ba08;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d7bbc *g_8c4d7bbc;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_panel_8c087d8c(void *, void *, void *);
 void operation_8c109bd0(Object *o)
 {
@@ -118,15 +118,15 @@ void operation_8c109bd0(Object *o)
     (&frame)->f00.f38 = o->f3c.f04;
     (&frame)->f00.f40 = (int)(v1->f42c->f28);
     (&frame)->f00.f44 = (int)(v1->f42c->f2c);
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x78);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t1 != 0) {
         initialize_panel_8c087d8c((void *)t1, g_8c44be98, (void *)(&(&frame)->f98));
     }
-    t2 = allocate_block(g_8c4d97e0, (unsigned int)0x78);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t2 != 0) {
         initialize_panel_8c087d8c((void *)t2, g_8c44be98, (void *)(&(&frame)->f4c));
     }
-    t3 = allocate_block(g_8c4d97e0, (unsigned int)0x78);
+    t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t3 != 0) {
         initialize_panel_8c087d8c((void *)t3, g_8c44be98, (void *)(&frame));
     }

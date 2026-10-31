@@ -56,7 +56,7 @@ extern S_c8c011ecc *call_8c011ecc(int);
 extern void call_8c03d610(S_c8c011ecc *, int, void *, int, int, int);
 extern void operation_8c08a548(void);
 extern void operation_8c07cd8c(void);
-extern int call_8c118528(void *);
+extern int load_pvm_file_tls_8c118528(void *);
 extern int record24_8c17948c(int);
 extern int record30_8c1794a0(int);
 extern int block32_8c1794b4(int);
@@ -86,7 +86,7 @@ void operation_8c079104(void)
     g_8c469ab0 = (int)(t1->f42c->f08->f04->f04);
     operation_8c08a548();
     operation_8c07cd8c();
-    t2 = call_8c118528((void *)((g_8c2fdbf0 + 0x1a7)));
+    t2 = load_pvm_file_tls_8c118528((void *)((g_8c2fdbf0 + 0x1a7)));
     v4 = (int)0;
     g_8c469a98 = (int)(t2);
     while (1 > v4) {

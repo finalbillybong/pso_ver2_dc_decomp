@@ -115,7 +115,7 @@ struct Arg0_dc {
     int f18;
 };
 extern "C" void call_8c12a010(Object *, int);
-extern "C" void call_8c12b880(void *, int, int);
+extern "C" void memset_8c12b880(void *, int, int);
 extern "C" void call_8c129f50(Object *);
 extern "C" void operation_8c12a31c(Object *o)
 {
@@ -128,7 +128,7 @@ extern "C" void operation_8c12a31c(Object *o)
             return;
         }
         call_8c12a010(o, 1);
-        call_8c12b880((void *)(((char *)o + 0x358)), 0, 0x10);
+        memset_8c12b880((void *)(((char *)o + 0x358)), 0, 0x10);
         ((ObjectData *)o)->f368 = 0;
         return;
     case 1:

@@ -39,7 +39,7 @@ typedef struct Sock {
 typedef struct Tx { Addr a; unsigned int arg; unsigned int sent; } Tx;
 extern Sock *g_entries_8c5b85b0;
 extern unsigned short g_mss_8c5a3690;
-extern void *memcpy(void *, const void *, unsigned long);
+extern void *memcpy_8c12b77c(void *, const void *, unsigned long);
 extern int sock_complete_8c3ce424(int, int, int, int);
 extern void msg_sequence_8c3c8692(Addr *, int);
 extern void msg_send_8c3c8474(Addr *, Addr *, unsigned short);
@@ -66,7 +66,7 @@ int sock_send_8c3cd7f2(Sock *s, Addr *to, unsigned int arg, int cb)
     if (s->tx.type) goto fail;
     if (s->flags & 0x40) goto fail;
     s->cb = cb;
-    memcpy(&s->tx, to, 8);
+    memcpy_8c12b77c(&s->tx, to, 8);
     s->arg = arg;
     s->sent = 0;
     if (s->rb.len == 0) {
@@ -84,9 +84,9 @@ int sock_send_8c3cd7f2(Sock *s, Addr *to, unsigned int arg, int cb)
     do {
         n = s->rb.len > s->arg ? s->arg : s->rb.len;
         s->sent = n;
-        memcpy(&src, &s->rb.a, 8);
+        memcpy_8c12b77c(&src, &s->rb.a, 8);
         msg_sequence_8c3c8692(&src, s->rb.head);
-        memcpy(&dst, &s->tx, 8);
+        memcpy_8c12b77c(&dst, &s->tx, 8);
         if (s->rb.head + n > g_mss_8c5a3690) {
             t = g_mss_8c5a3690 - s->rb.head;
             msg_send_8c3c8474(&dst, &src, t);
@@ -94,7 +94,7 @@ int sock_send_8c3cd7f2(Sock *s, Addr *to, unsigned int arg, int cb)
             n -= t;
             s->rb.len -= t;
             s->rb.head = 0;
-            memcpy(&src, &s->rb.a, 8);
+            memcpy_8c12b77c(&src, &s->rb.a, 8);
         }
         msg_send_8c3c8474(&dst, &src, n);
         s->rb.len -= n;
@@ -119,7 +119,7 @@ int sock_queue_8c3cda60(Sock *s, Addr *to, unsigned int arg, int cb)
 {
     if (s->tx.type) return -1;
     s->cb = cb;
-    memcpy(&s->tx, to, 8);
+    memcpy_8c12b77c(&s->tx, to, 8);
     s->arg = arg;
     s->sent = 0;
     return 0;

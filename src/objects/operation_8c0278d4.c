@@ -9,7 +9,7 @@ struct Object {
     short f02;
 };
 extern void call_8c027910(int);
-void operation_8c0278d4(Object *o)
+void handle_6x31_use_medical_center_8c0278d4(Object *o)
 {
     int v3;
     int v6;

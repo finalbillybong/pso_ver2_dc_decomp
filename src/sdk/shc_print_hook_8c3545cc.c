@@ -6,7 +6,7 @@ typedef char *va_list;
 extern void (*g_hook_8c3fb580)(int argument, char *text);
 extern int g_hook_arg_8c3fb584;
 extern char g_text_buffer_8c539878[];
-extern void *memset(void *buffer, int value, unsigned int size);
+extern void *memset_8c12b880(void *buffer, int value, unsigned int size);
 extern int vsprintf(char *buffer, const char *format, va_list arguments);
 
 void set_print_hook_8c3545cc(void (*hook)(int argument, char *text), int argument)
@@ -18,7 +18,7 @@ void set_print_hook_8c3545cc(void (*hook)(int argument, char *text), int argumen
         g_hook_8c3fb580 = hook;
         g_hook_arg_8c3fb584 = argument;
     }
-    memset(g_text_buffer_8c539878, 0, 0x100);
+    memset_8c12b880(g_text_buffer_8c539878, 0, 0x100);
 }
 
 void print_8c3545ea(const char *format, ...)

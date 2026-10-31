@@ -79,7 +79,7 @@ typedef struct S_c8c053d84Data {
 } S_c8c053d84Data;
 extern "C" S_c8c053d84 *lookup_object_by_id(unsigned short);
 extern "C" int hierarchy_is_active(void *);
-extern "C" void operation_8c012fcc(Object *o)
+extern "C" void handle_6x9C_set_enemy_status_effect_flags_8c012fcc(Object *o)
 {
     unsigned short v108;
     int v1;

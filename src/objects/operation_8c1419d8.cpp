@@ -98,7 +98,7 @@ extern "C" void operation_8c05426c(void *, int, int);
 extern "C" void clear_words_8c053d64(void);
 extern "C" void call_8c0521a0(Object *);
 extern "C" void call_8c027090(Object *);
-extern "C" int current_effect_mode(void);
+extern "C" int get_current_area_8c032b10(void);
 extern "C" void call_8c05fd7c(int, Object *, void *, int, int);
 extern "C" void operation_8c1419d8(Object *o)
 {
@@ -132,7 +132,7 @@ L_8c141a76:;
     if (((ObjectData *)o)->f35c == 1) {
         call_8c027090(o);
     }
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     switch (t1) {
     case 8:
     case 9:

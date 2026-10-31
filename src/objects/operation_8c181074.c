@@ -12,7 +12,7 @@ extern int operation_8c19b054(void);
 extern int call_8c372d38(int, void *);
 extern void word_operation_8c18490c(unsigned int);
 extern int operation_8c010240(int, int, int);
-int operation_8c181074(void)
+int load_system_file_8c181074(void)
 {
     int v1;
     int v21;

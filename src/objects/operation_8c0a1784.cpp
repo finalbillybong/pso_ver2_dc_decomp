@@ -27,7 +27,7 @@ typedef struct S_vv3Data {
 extern int g_8c46ee80;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c46efc8 g_8c46efc8;
-extern "C" void destroy_hierarchy_node(void *, short);
+extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void call_8c122774(void *, Object *);
 extern "C" Object *operation_8c0a1784(Object *o, int a1)
 {
@@ -50,7 +50,7 @@ extern "C" Object *operation_8c0a1784(Object *o, int a1)
             v1 = (int)(v1 + 1);
         }
         (&g_8c46efc8)->f04 = 0;
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

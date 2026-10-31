@@ -3,11 +3,11 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 int operation_8c25f36c(void)
 {
     int t1;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (!(t1 > 0)) {
         if (t1 == 0) {
             goto L_8c25f3a0;

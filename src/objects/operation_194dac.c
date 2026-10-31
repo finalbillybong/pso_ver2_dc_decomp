@@ -1,3 +1,3 @@
 /* Provisional names; preserve allocation, counter and release behavior. */
-void operation_194dac(void) {
+void handle_6x62_8c194dac(void) {
 }

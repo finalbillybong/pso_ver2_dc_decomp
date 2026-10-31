@@ -24,7 +24,7 @@ struct S_c8c021ef8 {
 };
 extern int call_8c0c4f08(void *);
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c021e84(Object *o)
+void handle_6x20_set_position_8c021e84(Object *o)
 {
     int v1;
     int t1;

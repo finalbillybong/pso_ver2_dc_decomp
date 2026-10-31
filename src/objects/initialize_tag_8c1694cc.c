@@ -7,10 +7,10 @@ typedef struct Tag {
     short size;
     int value;
 } Tag;
-extern void initialize_hierarchy_node(Tag *, void *);
+extern void TObject_ctor_8c0330e4(Tag *, void *);
 Tag *initialize_tag_8c1694cc(Tag *o, void *parent)
 {
-    initialize_hierarchy_node(o, parent);
+    TObject_ctor_8c0330e4(o, parent);
     o->dispatch = (void *)0x8c2701cc;
     o->tag = *(int *)0x8c317ab0;
     o->size = 0x24;

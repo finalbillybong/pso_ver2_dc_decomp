@@ -21,7 +21,7 @@ extern int g_8c418248;
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
 extern void transform_actor_records(void *);
 extern void operation_8c0a1b78(void *);
-void operation_8c13a380(Object *o)
+void handle_6x17_set_entity_position_and_angle_8c13a380(Object *o)
 {
     S_c8c053d84 *t1;
     /* TODO 00000000..00000000

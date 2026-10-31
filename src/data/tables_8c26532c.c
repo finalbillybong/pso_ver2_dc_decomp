@@ -5,7 +5,7 @@ typedef void (*Function)(void);
 extern void operation_8c095314(void);
 extern void operation_8c0953b4(void);
 extern void fn_8c094c68(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
@@ -145,7 +145,7 @@ Function const d_8c26532c[125] = {
     operation_8c095314,
     operation_8c0953b4,
     fn_8c094c68,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -273,7 +273,7 @@ Function const d_8c265520[125] = {
     operation_8c090a00,
     fn_8c090a94,
     fn_8c094c68,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,

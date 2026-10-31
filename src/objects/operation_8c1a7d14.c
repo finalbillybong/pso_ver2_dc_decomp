@@ -16,7 +16,7 @@ struct Arg0_90 {
     short f04;
 };
 extern void call_8c111268(void);
-extern void *allocate_block(void *, int);
+extern void *heap_alloc_8c122700(void *, int);
 extern void call_8c172e84(void *, void *, int, int, int);
 extern void *hierarchy_is_active(Arg0_90 *);
 void operation_8c1a7d14(Object *o, int a1, int a2)
@@ -27,7 +27,7 @@ void operation_8c1a7d14(Object *o, int a1, int a2)
         o->f90->f04 |= 1;
     }
     call_8c111268();
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, 0xb8);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0xb8);
     if (t1 != 0) {
         call_8c172e84(t1, *(S_g8c44be88 **)0x8c44be88, a1, 0, a2);
     }

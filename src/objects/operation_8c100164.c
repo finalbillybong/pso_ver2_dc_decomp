@@ -33,7 +33,7 @@ extern int call_8c34ff80(int, int, int);
 extern void operation_8c03ef80(void *, ...);
 extern void call_8c35096a(void *, int);
 extern void operation_8c100160();
-void operation_8c100164(void)
+void bgm_init_adxt_8c100164(void)
 {
     int v2;
     int v6;

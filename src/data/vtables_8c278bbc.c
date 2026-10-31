@@ -5,7 +5,7 @@ typedef void (*VirtualFunction)(void);
 extern void destroy_object_8c227860(void);
 extern void fn_8c2278a4(void);
 extern void operation_8c227a5c(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void destroy_object_8c22838c(void);
 extern void operation_8c2283d0(void);
@@ -45,7 +45,7 @@ VirtualFunction const vt_8c278bbc[7] = {
     destroy_object_8c227860,
     fn_8c2278a4,
     operation_8c227a5c,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -56,7 +56,7 @@ VirtualFunction const vt_8c278bd8[16] = {
     destroy_object_8c22838c,
     operation_8c2283d0,
     fn_8c2284c0,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -76,7 +76,7 @@ VirtualFunction const vt_8c278c18[16] = {
     operation_8c228848,
     fn_8c2288d8,
     refresh_follow_effect_8c228ae8,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -96,7 +96,7 @@ VirtualFunction const vt_8c278c58[16] = {
     operation_8c228fe4,
     operation_8c229074,
     fn_8c229458,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -116,7 +116,7 @@ VirtualFunction const vt_8c278c98[16] = {
     operation_8c229778,
     operation_8c229830,
     fn_8c229948,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -136,7 +136,7 @@ VirtualFunction const vt_8c278cd8[16] = {
     operation_8c229cdc,
     fn_8c229d88,
     refresh_follow_effect_8c229f80,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -156,7 +156,7 @@ VirtualFunction const vt_8c278d18[16] = {
     operation_8c22a3ec,
     operation_8c22a4bc,
     refresh_follow_effect_8c22a53c,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -176,7 +176,7 @@ VirtualFunction const vt_8c278d58[16] = {
     destroy_object_8c22a978,
     operation_8c22a9bc,
     fn_8c22a9c0,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,

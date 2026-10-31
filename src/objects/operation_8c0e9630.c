@@ -11,7 +11,7 @@ struct Object {
 extern int g_8c470324;
 extern int operation_8c1f1850(void);
 extern void select_mode3_8c1cc4e0(void);
-extern int operation_8c01018c(int);
+extern int vmu_find_file_8c01018c(int);
 extern void initialize_channel_handles(void);
 extern void select_available_channel(void);
 extern void select_mode2_8c1cc4c8(void);
@@ -34,7 +34,7 @@ void operation_8c0e9630(Object *o)
             }
             t2 = operation_8c1f1850();
             if ((unsigned char)t2 == 1) {
-                t3 = operation_8c01018c((int)((void *)0x8c319870));
+                t3 = vmu_find_file_8c01018c((int)((void *)0x8c319870));
                 if (t3 != -1) {
                     initialize_channel_handles();
                     select_available_channel();

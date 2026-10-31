@@ -30,7 +30,7 @@ extern int call_8c10baf0(void *);
 extern S_c8c01e790 *call_8c01e790(int, int, int);
 extern void call_8c1ef644(S_c8c01e790 *);
 extern void call_8c02a438(short, void *, void *);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1aa5e0(Object *o, int a1)
 {
@@ -48,7 +48,7 @@ Object *operation_8c1aa5e0(Object *o, int a1)
             }
             call_8c02a438(o->f34, (void *)(((char *)o + 0x20)), (void *)(o->f2c));
         }
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

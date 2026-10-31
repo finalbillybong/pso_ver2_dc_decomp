@@ -103,7 +103,7 @@ extern void operation_8c24c174(void);
 extern void operation_8c24c0a0(void);
 extern void operation_8c24bf44(void);
 extern void destroy_color_rise_8c24cf64(void);
-extern void operation_8c073578(void);
+extern void TItem_update_8c073578(void);
 extern void operation_8c073678(void);
 extern void operation_8c073e50(void);
 extern void operation_8c073e54(void);
@@ -392,7 +392,7 @@ VirtualFunction const vt_8c27dbd0[45] = {
     0,
     0,
     destroy_color_rise_8c24cf64,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -441,7 +441,7 @@ VirtualFunction const vt_8c27dc84[45] = {
     0,
     0,
     destroy_color_rise_8c24d0b8,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,

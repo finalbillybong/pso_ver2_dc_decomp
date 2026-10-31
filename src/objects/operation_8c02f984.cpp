@@ -23,7 +23,7 @@ struct Arg1 {
     unsigned char f01;
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02f984(Object *o, Arg1 *a1)
+extern "C" void handle_cmd_97_save_to_memory_card_8c02f984(Object *o, Arg1 *a1)
 {
     char *v21;
     int k;

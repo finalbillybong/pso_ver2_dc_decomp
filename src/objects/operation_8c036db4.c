@@ -22,7 +22,7 @@ struct S_L8c417680 {
     float f0c;
 };
 extern S_L8c417680 g_8c417680;
-void operation_8c036db4(Object *o)
+void handle_6x02_8c036db4(Object *o)
 {
     /* TODO 00000000..00000000
      * 00000000 walker stopped: instruction missing at the range end (data in the listing)

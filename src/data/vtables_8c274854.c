@@ -5,14 +5,14 @@ typedef void (*VirtualFunction)(void);
 extern void operation_8c1ac62c(void);
 extern void operation_1abbcc(void);
 extern void reconstruct_8c1ac5b4(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c1ac5a4(void);
 extern void operation_8c1ac698(void);
 extern void operation_1ac3e0(void);
 extern void operation_1ac3cc(void);
 extern void operation_1abfe8(void);
-extern void operation_8c0111c8(void);
+extern void TObject_render_default_8c0111c8(void);
 extern void operation_1ac0c4(void);
 extern void operation_1ac36c(void);
 extern void operation_1abeb8(void);
@@ -26,7 +26,7 @@ VirtualFunction const vt_8c274854[8] = {
     operation_8c1ac62c,
     operation_1abbcc,
     reconstruct_8c1ac5b4,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c1ac5a4
 };
@@ -38,7 +38,7 @@ VirtualFunction const vt_8c274874[8] = {
     operation_8c1ac698,
     operation_1abbcc,
     operation_1ac3e0,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_1ac3cc
 };
@@ -49,8 +49,8 @@ VirtualFunction const vt_8c274894[8] = {
     0,
     operation_1abfe8,
     operation_1abbcc,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_1ac0c4
 };
@@ -62,7 +62,7 @@ VirtualFunction const vt_8c2748b4[8] = {
     operation_1ac36c,
     operation_1abbcc,
     operation_1abeb8,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_1abc6c
 };
@@ -73,8 +73,8 @@ VirtualFunction const vt_8c2748d4[8] = {
     0,
     operation_1abb78,
     operation_1abbcc,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_1abc6c
 };

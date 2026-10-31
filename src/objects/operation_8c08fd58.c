@@ -24,7 +24,7 @@ struct S_vv12 {
     short f00;
 };
 extern int g_8c46ed18;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern int advance_counter_8c01d5e8(int);
 int operation_8c08fd58(int a0, int a1)
 {
@@ -41,7 +41,7 @@ int operation_8c08fd58(int a0, int a1)
     int t1;
     int t2;
     int t3;
-    t3 = current_effect_mode();
+    t3 = get_current_area_8c032b10();
     v2 = (short)-1;
     v1 = (int)*(int *)((char *)0x8c2ee8b8 + (t3 << 2));
     v11 = (int)a1;

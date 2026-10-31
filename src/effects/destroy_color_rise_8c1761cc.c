@@ -1,5 +1,5 @@
 #include "src/include/color_effect.h"
-#define attach_at ((void (*)(void *,void *))0x8c0330e4)
-#define detach_at ((void (*)(void *,int))0x8c03311c)
+#define TObject_ctor_8c0330e4 ((void (*)(void *,void *))0x8c0330e4)
+#define TObject_dtor_8c03311c ((void (*)(void *,int))0x8c03311c)
 #define release_at ((void (*)(void *,void *))0x8c122774)
-ColorEffect *destroy_color_rise_8c1761cc(ColorEffect *effect,short flags){if(effect){effect->dispatch=(void *)0x8c2708c4;if(effect){effect->dispatch=(void *)0x8c2708e0;detach_at(effect,0);}if(flags>0)release_at(*(void **)0x8c4d97e0,effect);}return effect;}
+ColorEffect *destroy_color_rise_8c1761cc(ColorEffect *effect,short flags){if(effect){effect->dispatch=(void *)0x8c2708c4;if(effect){effect->dispatch=(void *)0x8c2708e0;TObject_dtor_8c03311c(effect,0);}if(flags>0)release_at(*(void **)0x8c4d97e0,effect);}return effect;}

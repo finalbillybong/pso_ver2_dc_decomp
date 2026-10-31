@@ -35,7 +35,7 @@ struct S_vv13 {
 };
 extern void operation_8c16b398(void *, int, void *, void *, int);
 extern int call_8c18e768(int, int);
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern int operation_8c02b2a4(void);
 extern void call_8c16b280(int);
 extern int call_8c181dec(void);
@@ -73,7 +73,7 @@ Object *operation_8c16b970(Object *o, int a1, int a2, int a3, int a4, int a5)
     }
     o->f34 = (int)(o->f2c);
     o->f38 = (float)o->f21 * 6.0f;
-    t2 = operation_8c01c25c();
+    t2 = get_game_mode_8c01c25c();
     if (t2 != 0xf) {
         t3 = operation_8c02b2a4();
         if (t3 == 0) {

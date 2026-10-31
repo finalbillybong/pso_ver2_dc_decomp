@@ -28,8 +28,8 @@ extern void call_8c3806f6(int, int, int);
 extern void call_8c014498(void *, int);
 extern void call_8c0a1bf8(void);
 extern void call_8c0a2a4c(void);
-extern int allocate_block(void *, unsigned int);
-extern void call_8c0a1448(int, void *);
+extern int heap_alloc_8c122700(void *, unsigned int);
+extern void TCameraCtrl_ctor_8c0a1448(int, void *);
 extern void call_8c0a1a78(int);
 extern void operation_8c097018(void);
 extern void operation_8c04c270(void);
@@ -39,7 +39,7 @@ extern void call_8c1beba4(int);
 extern void operation_8c1bec9c(void *, int);
 extern int call_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
-extern void operation_19584c(void);
+extern void TObjCMIcon_ctor_8c19584c(void);
 extern void call_8c05f87c(void *);
 extern void call_8c1003d0(void *);
 extern int get_field_8c0353d4(void);
@@ -65,9 +65,9 @@ void operation_8c034618(void)
     call_8c014498((void *)((void *)0x8c2e2e84), 4);
     call_8c0a1bf8();
     call_8c0a2a4c();
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0xf8);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xf8);
     if (t1 != 0) {
-        call_8c0a1448(t1, g_8c44be88);
+        TCameraCtrl_ctor_8c0a1448(t1, g_8c44be88);
     }
     call_8c0a1a78(5);
     operation_8c097018();
@@ -75,7 +75,7 @@ void operation_8c034618(void)
     call_8c08710c();
     operation_8c051a90();
     call_8c1beba4(1);
-    t2 = allocate_block(g_8c4d97e0, (unsigned int)0x20);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x20);
     if (t2 != 0) {
         operation_8c1bec9c((void *)t2, (int)g_8c44be84);
     }
@@ -85,7 +85,7 @@ void operation_8c034618(void)
     }
     g_8c460908 = (int)(t3);
     if (t3 != 0) {
-        operation_19584c();
+        TObjCMIcon_ctor_8c19584c();
         call_8c05f87c((void *)((g_8c2ec0a0 + 0x449)));
         call_8c1003d0((void *)((g_8c2ec0a0 + 0x457)));
         t4 = get_field_8c0353d4();

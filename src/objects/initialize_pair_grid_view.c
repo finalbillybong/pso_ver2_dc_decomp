@@ -13,5 +13,5 @@ typedef char check_pairs[(unsigned long)&((View *)0)->pairs==144?1:-1];
 typedef char check_field148[(unsigned long)&((View *)0)->field148==148?1:-1];
 typedef char check_field152[(unsigned long)&((View *)0)->field152==152?1:-1];
 typedef char check_capacity[(unsigned long)&((View *)0)->capacity==156?1:-1];
-extern char parameters[];extern void *object_name;extern void base_at(View *,void *);extern void *allocate_at(unsigned int);
-View *initialize_pair_grid_view(View *o,unsigned int capacity) {View **home=&o;base_at(o,parameters);o->dispatch=(void *)0x8c269f1c;o->name=object_name;o->size=160;o->field128=0;o->field132=0;o->field152=0;o->capacity=capacity;o->field136=180;o->field148=0.0f;o->field140=0.0f;o->pairs=allocate_at(capacity<<3);{Pair *p=o->pairs;unsigned int i;for(i=0;i<capacity;++i) {p->first=0;p->second=0;++p;}}return o;}
+extern char parameters[];extern void *object_name;extern void base_at(View *,void *);extern void *operator_new_8c18de4c(unsigned int);
+View *initialize_pair_grid_view(View *o,unsigned int capacity) {View **home=&o;base_at(o,parameters);o->dispatch=(void *)0x8c269f1c;o->name=object_name;o->size=160;o->field128=0;o->field132=0;o->field152=0;o->capacity=capacity;o->field136=180;o->field148=0.0f;o->field140=0.0f;o->pairs=operator_new_8c18de4c(capacity<<3);{Pair *p=o->pairs;unsigned int i;for(i=0;i<capacity;++i) {p->first=0;p->second=0;++p;}}return o;}

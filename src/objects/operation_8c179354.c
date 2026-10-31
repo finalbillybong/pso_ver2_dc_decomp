@@ -11,15 +11,15 @@ extern int g_8c4db948;
 extern int g_8c4db94c;
 extern int g_8c4db950;
 extern int g_8c4db958;
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 extern void operation_8c17945c(int);
-extern void call_8c17963c(void);
+extern void load_battle_params_8c17963c(void);
 void operation_8c179354(void)
 {
     int v1;
     int v2;
     int t1;
-    t1 = call_8c18de4c(0x3d80);
+    t1 = operator_new_8c18de4c(0x3d80);
     v2 = (int)0;
     v1 = (int)0x3d80;
     while (v1 > v2) {
@@ -32,6 +32,6 @@ void operation_8c179354(void)
     g_8c4db94c = t1 + 0x1f80;
     g_8c4db950 = t1 + 0x2b80;
     operation_8c17945c((int)g_8c4703c0);
-    call_8c17963c();
+    load_battle_params_8c17963c();
     g_8c4db958 = 0;
 }

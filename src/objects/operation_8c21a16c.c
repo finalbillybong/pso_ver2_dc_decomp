@@ -86,7 +86,7 @@ extern int call_8c21a590(Object *);
 extern void operation_8c156ec0(void *);
 extern int operation_8c1571f4(void *);
 extern int operation_8c1cdc80(void *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c1dca80(void *, int, int);
 extern void operation_8c1dd654(void *);
 extern void operation_8c21cbc0(void *, void *, int, int);
@@ -220,7 +220,7 @@ void operation_8c21a16c(Object *o)
             o->f24 = (Arg0_24 *)0;
         }
         if (o->f34 == 0) {
-            t5 = allocate_block(g_8c4d97e0, (unsigned int)0x3c);
+            t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x3c);
             if (t5 != 0) {
                 operation_8c1dca80((void *)t5, (int)o, (int)(((char *)o + 0x40)));
             }
@@ -250,7 +250,7 @@ void operation_8c21a16c(Object *o)
             o->f34 = (Arg0_34 *)0;
         }
         if (o->f38 == 0) {
-            t6 = allocate_block(g_8c4d97e0, (unsigned int)0x7c);
+            t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
             if (t6 != 0) {
                 operation_8c21cbc0((void *)t6, (void *)((void *)0x8c2e17f8), (int)(o->f3c), (int)(((char *)o + 0x40)));
             }

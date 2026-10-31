@@ -22,7 +22,7 @@ struct S_c8c021ef8 {
     char unknown0[0xc78];
     int fc78;
 };
-extern void initialize_hierarchy_node(Object *, int);
+extern void TObject_ctor_8c0330e4(Object *, int);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void call_8c1ab8e8(Object *, int);
 extern void call_8c1ab894(Object *, int);
@@ -31,7 +31,7 @@ Object *initialize_tracker_8c1ab508(Object *o, int a1, int a2, int a3, int a4, i
     Object **home = &o;
     S_c8c021ef8 *t1;
     (void)home;
-    initialize_hierarchy_node(o, a1);
+    TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c274838;
     o->tag = *(int *)0x8c324f68;
     o->size = 0x58;

@@ -22,7 +22,7 @@ struct Object {
     int f158;
 };
 extern int call_8c18e8a0(void *, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c25d634(int, Object *, void *);
 void operation_8c25d488(Object *o)
 {
@@ -39,11 +39,11 @@ void operation_8c25d488(Object *o)
     int t11;
     t1 = call_8c18e8a0((void *)(o->f154), 0x168);
     if (t1 == 0) {
-        t2 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
+        t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
         if (t2 != 0) {
             call_8c25d634(t2, o, (void *)(((char *)o + 0x78)));
         }
-        t3 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
+        t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
         if (t3 != 0) {
             call_8c25d634(t3, o, (void *)(((char *)o + 0xa4)));
         }
@@ -53,16 +53,16 @@ void operation_8c25d488(Object *o)
             t4 = call_8c18e8a0((void *)((int)o->f154 + -0x78), 0x2d0);
             if (t4 == 0) {
                 o->f2c = 0xc;
-                t5 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
+                t5 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
                 if (t5 != 0) {
                     call_8c25d634(t5, o, (void *)(((char *)o + 0x20)));
                 }
-                t6 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
+                t6 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
                 if (t6 != 0) {
                     call_8c25d634(t6, o, (void *)(((char *)o + 0x4c)));
                 }
                 o->fdc = (int)(o->f158);
-                t7 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
+                t7 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
                 if (t7 != 0) {
                     call_8c25d634(t7, o, (void *)(((char *)o + 0xd0)));
                 }
@@ -77,16 +77,16 @@ void operation_8c25d488(Object *o)
             goto L_8c25d5e6;
         }
         o->f2c = 0xd;
-        t9 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
+        t9 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
         if (t9 != 0) {
             call_8c25d634(t9, o, (void *)(((char *)o + 0x20)));
         }
-        t10 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
+        t10 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
         if (t10 != 0) {
             call_8c25d634(t10, o, (void *)(((char *)o + 0x4c)));
         }
         o->f108 = (int)(o->f158);
-        t11 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
+        t11 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
         if (t11 != 0) {
             call_8c25d634(t11, o, (void *)(((char *)o + 0xfc)));
         }

@@ -13,7 +13,7 @@ struct Object {
 extern int g_8c2e2ad8;
 extern int call_8c0eea7c(Object *, float);
 extern void operation_8c05426c(void *, int, int);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c05fbf8(int, void *, int, int);
 void operation_8c0eede8(Object *o)
 {
@@ -24,7 +24,7 @@ void operation_8c0eede8(Object *o)
         if (t1 == 1) {
             o->fe4 = 1;
             operation_8c05426c((void *)o, 0, 0x10);
-            t2 = current_effect_mode();
+            t2 = get_current_area_8c032b10();
             switch (t2) {
             case 3:
             case 4:

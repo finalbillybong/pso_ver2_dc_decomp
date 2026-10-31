@@ -3,16 +3,16 @@ typedef char check_layout[sizeof(Task) == 104 && (unsigned long)&((Task *)0)->na
 extern void *heap;
 extern Task *first, *last;
 extern int next_identifier, count;
-extern void *open_at(const char *, int), *allocate_at(void *, unsigned int);
-extern void copy_at(char *, const char *, unsigned int), close_at(void *);
-extern int size_at(void *), sectors_at(void *);
+extern void *open_at(const char *, int), *heap_alloc_8c122700(void *, unsigned int);
+extern void strncpy_8c12b154(char *, const char *, unsigned int), close_at(void *);
+extern int ADXF_GetFsizeByte_8c34d9d4(void *), ADXF_GetFsizeSct_8c34d9b8(void *);
 int create_file_read_task(const char *name, void *destination, int *done, Task **out) {
     void *handle;
     Task *task;
     if (out) *out = 0;
     handle = open_at(name, 0);
     if (!handle) return -2;
-    task = (Task *)allocate_at(heap, 104);
+    task = (Task *)heap_alloc_8c122700(heap, 104);
     if (task) {
         if (!first) first = task;
         if (last) last->next = task;
@@ -25,11 +25,11 @@ int create_file_read_task(const char *name, void *destination, int *done, Task *
         ++count;
         task->identifier = next_identifier++;
     }
-    copy_at(task->name, name, 32);
+    strncpy_8c12b154(task->name, name, 32);
     task->state = 1;
     task->destination = destination;
-    task->size = size_at(handle);
-    task->sectors = sectors_at(handle);
+    task->size = ADXF_GetFsizeByte_8c34d9d4(handle);
+    task->sectors = ADXF_GetFsizeSct_8c34d9b8(handle);
     close_at(handle);
     task->done = done;
     if (done) *done = 0;

@@ -14,7 +14,7 @@ struct S_L8c339ca0 {
 extern int g_8c44be04;
 extern S_g8c44bea0 *g_8c44bea0;
 extern S_L8c339ca0 g_8c339ca0;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void create_manager_8c25e570(void *);
 extern void create_object_8c253358(void *);
 extern void operation_8c237f48(int);
@@ -24,7 +24,7 @@ void operation_8c237d58(int a0)
     int v4;
     int v3;
     int t1;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (t1 != 0) {
         if (t1 == 0xf) {
             goto L_8c237da4;

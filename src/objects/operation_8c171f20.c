@@ -19,7 +19,7 @@ struct Frame {
 };
 extern int g_8c4db408;
 extern void initialize_resource_record(void *);
-extern void operation_8c25d8b8(int);
+extern void TOChatSensor_create_8c25d8b8(int);
 void operation_8c171f20(int a0)
 {
     Frame frame;
@@ -33,5 +33,5 @@ void operation_8c171f20(int a0)
     (&frame)->f14 = (float)*(int *)((char *)((char *)v1 + 0x0) + ((unsigned char)a0++ << 2));
     (&frame)->f24 = (float)*(int *)((char *)((char *)v1 + 0x0) + ((unsigned char)a0++ << 2));
     (&frame)->f30 = (int)(*(int *)((char *)((char *)v1 + 0x0) + ((unsigned char)a0 << 2)));
-    operation_8c25d8b8((int)(&frame));
+    TOChatSensor_create_8c25d8b8((int)(&frame));
 }

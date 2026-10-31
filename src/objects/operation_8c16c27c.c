@@ -4,9 +4,9 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern void call_8c16bfd0(int);
-extern int operation_8c16c2f8(void);
+extern int quest_fetch_byte_8c16c2f8(void);
 extern void call_8c16c0d8(int);
-int operation_8c16c27c(int a0)
+int quest_thread_run_8c16c27c(int a0)
 {
     int v1;
     int v7;
@@ -20,11 +20,11 @@ int operation_8c16c27c(int a0)
     v7 = (int)a0;
     goto L_8c16c2c2;
 L_8c16c298:;
-    t1 = operation_8c16c2f8();
+    t1 = quest_fetch_byte_8c16c2f8();
     v6 = (int)(unsigned char)t1;
     switch (v6) {
     case 0xf8:
-        t2 = operation_8c16c2f8();
+        t2 = quest_fetch_byte_8c16c2f8();
         v6 = (int)((unsigned char)t2 + v1);
         break;
     }

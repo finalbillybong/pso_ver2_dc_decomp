@@ -7,7 +7,7 @@ typedef struct S_g8c4dbbec S_g8c4dbbec;
 typedef struct S_vv1_0 S_vv1_0;
 extern void call_8c122774(void *, void *);
 extern int operation_8c1054d0(int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c105420(int, int);
 int operation_8c186d00(int a0, int a1)
 {
@@ -21,7 +21,7 @@ int operation_8c186d00(int a0, int a1)
     }
     t1 = operation_8c1054d0(a1);
     if (t1 > 0) {
-        t2 = allocate_block((void *)(*(S_g8c4dbbec **)0x8c4dbbec), (unsigned int)t1);
+        t2 = heap_alloc_8c122700((void *)(*(S_g8c4dbbec **)0x8c4dbbec), (unsigned int)t1);
         if (t2 != 0) {
             operation_8c105420(a1, t2);
             *(int *)((char *)((char *)v1 + 0x0) + ((int)((void *)0x8c4dbba0))) = (int)(t2);

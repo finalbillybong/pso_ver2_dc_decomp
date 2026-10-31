@@ -18,12 +18,12 @@ typedef struct S_g8c44be80Data {
 } S_g8c44be80Data;
 extern "C" void update_hierarchy(void *);
 extern "C" void visit_hierarchy_10(void *);
-extern "C" void describe_hierarchy_node(void *);
+extern "C" void TObject_debug_describe_8c033330(void *);
 extern "C" int call_8c104da8(void);
 extern "C" void call_8c0308ec(void);
 extern "C" void call_8c379280(void);
 extern "C" void call_8c380516(void);
-extern "C" void operation_8c104c60(void)
+extern "C" void loading_wait_frame_8c104c60(void)
 {
     int t1;
     update_hierarchy(*(S_g8c44be80 **)0x8c44be80);
@@ -32,7 +32,7 @@ extern "C" void operation_8c104c60(void)
     visit_hierarchy_10(*(S_g8c44be80 **)0x8c44be80);
     visit_hierarchy_10(*(S_g8c44bea0 **)0x8c44bea0);
     visit_hierarchy_10(*(S_g8c44bea4 **)0x8c44bea4);
-    describe_hierarchy_node(*(S_g8c44be80 **)0x8c44be80);
+    TObject_debug_describe_8c033330(*(S_g8c44be80 **)0x8c44be80);
     (*(S_g8c44be80 **)0x8c44be80)->v3();
     t1 = call_8c104da8();
     if (t1 != 0) {

@@ -9,7 +9,7 @@ struct Frame {
     char unknown0[0x20];
 };
 extern char g_8c2e8428[];
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern int call_8c011e9c(void *);
 extern void call_8c03ef04(Frame *, int, void *);
 extern int call_8c104d50(Frame *);
@@ -28,7 +28,7 @@ void operation_8c030c28(int a0)
     int t5;
     v1 = (int)0;
     v2 = (int)0;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     t2 = call_8c011e9c((void *)(*(S_g8c284708 **)((char *)0x8c284708 + (t1 << 2))));
     *(int *)0x8c44be24 = (int)(t2);
     if (t2 != 0) {

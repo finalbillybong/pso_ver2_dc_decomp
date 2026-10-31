@@ -41,8 +41,8 @@ struct S_c8c122700 {
 };
 extern int g_8c3068e0;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
 void operation_8c0cb5bc(Object *o)
 {
     S_c8c122700 *t1;
@@ -51,9 +51,9 @@ void operation_8c0cb5bc(Object *o)
     o->f20 += 1;
     if (o->f20 > 5) {
         o->f20 = 0;
-        t1 = allocate_block(g_8c4d97e0, (unsigned int)0x40);
+        t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x40);
         if (t1 != 0) {
-            initialize_hierarchy_node((void *)t1, (void *)(o->f10));
+            TObject_ctor_8c0330e4((void *)t1, (void *)(o->f10));
             t1->f18 = (void *)0x8c266ce8;
             t1->f00 = (int)(g_8c3068e0);
             t1->f1e = 0x40;

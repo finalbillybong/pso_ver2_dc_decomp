@@ -13,7 +13,7 @@ struct Object {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern char g_8c2f1bcc[];
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c0ee300(void *, int, int, int, int, int, short);
 void operation_8c04639c(Object *o, int a1, int a2, int a3)
 {
@@ -22,7 +22,7 @@ void operation_8c04639c(Object *o, int a1, int a2, int a3)
     if (((o->f34 & 0x2000000)) == 0) {
         v1 = (int)(o->f308 == 1);
         if (v1 == 0 && a1 != 0) {
-            t1 = allocate_block(g_8c4d97e0, (unsigned int)0x50);
+            t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x50);
             if (t1 != 0) {
                 operation_8c0ee300((void *)t1, a1, -0xff4d01, 0x14, a2, (int)(g_8c2f1bcc + 0x13), (short)a3);
             }

@@ -1,6 +1,6 @@
 /* Provisional address-based name; preserve the observed call sequence. */
-extern void *clear_at(void *,int,unsigned int);
+extern void *memset_8c12b880(void *,int,unsigned int);
 
 void operation_03cf00(void) {
-    clear_at((void *)0x8c462a40,0,576);
+    memset_8c12b880((void *)0x8c462a40,0,576);
 }

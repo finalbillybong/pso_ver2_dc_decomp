@@ -36,7 +36,7 @@ extern int operation_8c1929ac(int);
 extern void call_8c1929d4(int);
 extern int operation_8c1926e0(int);
 extern int call_8c18e768(int, int);
-extern void call_8c12b77c(int, int, int);
+extern void memcpy_8c12b77c(int, int, int);
 int operation_8c192360(Object *o)
 {
     char v31;
@@ -82,7 +82,7 @@ int operation_8c192360(Object *o)
                         return 0;
                     }
                     v14 = v3 + v7 * 0x24;
-                    call_8c12b77c((int)(v14 + 0x24), v14, (v5 - v7) * 0x24);
+                    memcpy_8c12b77c((int)(v14 + 0x24), v14, (v5 - v7) * 0x24);
                 } else {
                     v7 = v5;
                 }

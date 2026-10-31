@@ -25,7 +25,7 @@ public:
 typedef struct S_g8c4e2ba0Data {
 
 } S_g8c4e2ba0Data;
-extern "C" void destroy_hierarchy_node(void *, short);
+extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void call_8c122774(void *, Object *);
 extern "C" Object *operation_8c1bef00(Object *o, int a1)
 {
@@ -43,7 +43,7 @@ extern "C" Object *operation_8c1bef00(Object *o, int a1)
             }
             *(int *)0x8c4e2ba0 = 0;
         }
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), o);
         }

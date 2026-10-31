@@ -8,11 +8,11 @@ typedef struct S_vv28 S_vv28;
 struct S_vv28 {
     int f00;
 };
-extern int call_8c18de4c(int);
-extern void call_8c12b154(int, void *, int);
-extern int call_8c34cd84(int, void *, int, void *);
-extern int call_8c34ce88(int);
-extern void operation_8c104c60(void);
+extern int operator_new_8c18de4c(int);
+extern void strncpy_8c12b154(int, void *, int);
+extern int ADXF_LoadPartitionNw_8c34cd84(int, void *, int, void *);
+extern int ADXF_GetPtStat_8c34ce88(int);
+extern void loading_wait_frame_8c104c60(void);
 void operation_8c22bdac(void)
 {
     S_vv28 *v28;
@@ -33,21 +33,21 @@ void operation_8c22bdac(void)
             }
         }
     }
-    t1 = call_8c18de4c(0x268);
+    t1 = operator_new_8c18de4c(0x268);
     *(int *)0x8c506300 = (int)(t1);
-    t2 = call_8c18de4c(0x1c);
+    t2 = operator_new_8c18de4c(0x1c);
     *(int *)0x8c506304 = (int)(t2);
-    call_8c12b154(t2, (void *)((void *)0x8c2e1b28), 0x1c);
-    t3 = call_8c34cd84(0xb8, (void *)((void *)0x8c2e1b28), 0, (void *)(*(S_g8c506300 **)0x8c506300));
+    strncpy_8c12b154(t2, (void *)((void *)0x8c2e1b28), 0x1c);
+    t3 = ADXF_LoadPartitionNw_8c34cd84(0xb8, (void *)((void *)0x8c2e1b28), 0, (void *)(*(S_g8c506300 **)0x8c506300));
     if (t3 != 0) {
         return;
     }
     v30 = (int)0;
     v29 = (int)v30;
 L_8c22be00:;
-    t4 = call_8c34ce88(0xb8);
+    t4 = ADXF_GetPtStat_8c34ce88(0xb8);
     if (t4 == 2) {
-        operation_8c104c60();
+        loading_wait_frame_8c104c60();
         goto L_8c22be00;
     } else {
         v25 = (int)t4;
@@ -58,7 +58,7 @@ L_8c22be00:;
     if (!(3 > v29)) {
         return;
     }
-    call_8c34cd84(0xb8, (void *)((void *)0x8c2e1b28), 0, (void *)(*(S_g8c506300 **)0x8c506300));
+    ADXF_LoadPartitionNw_8c34cd84(0xb8, (void *)((void *)0x8c2e1b28), 0, (void *)(*(S_g8c506300 **)0x8c506300));
     v29 = (int)(v29 + 1);
     goto L_8c22be00;
 }

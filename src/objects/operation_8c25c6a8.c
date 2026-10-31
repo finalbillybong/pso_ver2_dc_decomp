@@ -6,7 +6,7 @@ typedef struct Vector3 {
 typedef struct S_g8c418248 S_g8c418248;
 extern int lookup_low_id(int);
 extern int operation_8c0298b0(void *);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 int operation_8c25c6a8(void)
 {
     int t1;
@@ -24,7 +24,7 @@ L_8c25c6c8:;
     if (*(int *)0x8c4dc800 == 0) {
         return 0;
     }
-    t3 = current_effect_mode();
+    t3 = get_current_area_8c032b10();
     switch (t3) {
     case 0:
     case 15:

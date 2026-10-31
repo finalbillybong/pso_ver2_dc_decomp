@@ -30,7 +30,7 @@ extern int forward_state_8c02300c(void *, void *);
 extern int call_8c1924c0(int, void *);
 extern int call_8c1631c8(S_vv2 *);
 extern int operation_8c02303c(void *, void *);
-void operation_8c0739a0(Object *o)
+void handle_6x59_pick_up_item_8c0739a0(Object *o)
 {
     int t1;
     short v1;

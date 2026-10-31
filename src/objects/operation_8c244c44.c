@@ -3,7 +3,7 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c244c44(void)
+void handle_6x8C_8c244c44(void)
 {
     /* TODO 00000000..00000000
      * 00000000 walker stopped: instruction missing at the range end (data in the listing)

@@ -19,7 +19,7 @@ struct S_c8c021ef8 {
     int f37c;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c021d08(Object *o)
+void handle_6x21_inter_level_warp_8c021d08(Object *o)
 {
     int v1;
     int v2;

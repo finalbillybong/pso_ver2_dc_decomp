@@ -24,7 +24,7 @@ extern int call_8c372c46(void *, void *);
 extern int call_8c3727a0(void *);
 extern int call_8c372d98(void *);
 extern int operation_8c19b054(void);
-extern int operation_8c01018c(int);
+extern int vmu_find_file_8c01018c(int);
 extern void operation_8c191504(int);
 extern int operation_8c2324e0(void);
 extern int operation_8c2324c0(void);
@@ -110,7 +110,7 @@ L_8c180f40:;
                     t8 = operation_8c19b054();
                     g_8c4dbaf4 = (S_g8c4dbaf4 *)(char)t8;
                 } else {
-                    v18 = operation_8c01018c((int)((void *)0x8c3198c1));
+                    v18 = vmu_find_file_8c01018c((int)((void *)0x8c3198c1));
                     if (v18 != -1) {
                         g_8c4dbaf4 = (S_g8c4dbaf4 *)(int)(v18);
                     } else {

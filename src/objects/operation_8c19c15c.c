@@ -27,7 +27,7 @@ struct Object {
     int f39c;
 };
 extern void initialize_control_manager(void *, void *);
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 Object *operation_8c19c15c(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
@@ -49,6 +49,6 @@ Object *operation_8c19c15c(Object *o, int a1, int a2, int a3)
     o->f28 = a3;
     o->f398 = 0;
     o->f39c = 0;
-    call_8c12b880(((char *)o + 0x2c), 0, 0x348);
+    memset_8c12b880(((char *)o + 0x2c), 0, 0x348);
     return o;
 }

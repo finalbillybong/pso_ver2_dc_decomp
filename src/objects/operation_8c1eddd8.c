@@ -17,7 +17,7 @@ extern S_c8c021ef8 *lookup_low_id(int);
 extern int call_8c02a6d4(S_c8c021ef8 *);
 extern int object_ready(void *);
 extern void operation_8c1e8e60(int, int, int);
-void operation_8c1eddd8(Object *o)
+void handle_6x4A_fully_shield_attack_8c1eddd8(Object *o)
 {
     int v1;
     S_c8c021ef8 *t1;

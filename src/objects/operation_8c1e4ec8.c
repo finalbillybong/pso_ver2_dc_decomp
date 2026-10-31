@@ -17,9 +17,9 @@ extern int g_8c32b6cc;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4dc800;
 extern int g_8c510ba0;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c1e489c(S_c8c122700 *, int);
-S_c8c122700 *operation_8c1e4ec8(int a0)
+S_c8c122700 *TOContainerAncientEnemyCommon_ctor_8c1e4ec8(int a0)
 {
     int v1;
     S_c8c122700 *t1;
@@ -27,7 +27,7 @@ S_c8c122700 *operation_8c1e4ec8(int a0)
     if (g_8c2e2ad8 == 1) {
         v1 = (int)(g_8c510ba0 != 0);
         if (v1 == 1 && g_8c4dc800 == 1) {
-            t1 = allocate_block(g_8c4d97e0, (unsigned int)0x384);
+            t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x384);
             if (t1 != 0) {
                 call_8c1e489c(t1, a0);
                 t1->f18 = (void *)0x8c27761c;
@@ -37,7 +37,7 @@ S_c8c122700 *operation_8c1e4ec8(int a0)
             return t1;
         }
     }
-    t2 = allocate_block(g_8c4d97e0, (unsigned int)0x384);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x384);
     if (t2 != 0) {
         call_8c1e489c(t2, a0);
         t2->f18 = (void *)0x8c27761c;

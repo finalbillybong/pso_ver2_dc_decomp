@@ -4,8 +4,8 @@ typedef void (*VirtualFunction)(void);
 
 extern void destroy_object_8c03ca10(void);
 extern void operation_8c03ceac(void);
-extern void operation_8c0111c8(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_default_8c0111c8(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c03ce9c(void);
 extern void operation_8c03cea8(void);
@@ -19,7 +19,7 @@ extern void destroy_context_8c03f2e8(void);
 extern void operation_8c03f334(void);
 extern void operation_8c03f3d4(void);
 extern void destroy_manager_storage(void);
-extern void operation_8c0111c4(void);
+extern void TObject_update_default_8c0111c4(void);
 extern void manager_empty_callback(void);
 
 /* 8c261b58: type-information and this-adjustment header, then 8 slots */
@@ -28,8 +28,8 @@ VirtualFunction const vt_8c261b58[10] = {
     0,
     destroy_object_8c03ca10,
     operation_8c03ceac,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c03ce9c,
     operation_8c03cea8,
@@ -43,7 +43,7 @@ VirtualFunction const vt_8c261b80[7] = {
     operation_03d174,
     operation_8c03d16c,
     operation_8c03d170,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -53,8 +53,8 @@ VirtualFunction const vt_8c261b9c[7] = {
     0,
     operation_8c03d280,
     operation_8c03d300,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -65,7 +65,7 @@ VirtualFunction const vt_8c261bb8[7] = {
     destroy_context_8c03f2e8,
     operation_8c03f334,
     operation_8c03f3d4,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -74,8 +74,8 @@ VirtualFunction const vt_8c261bd4[7] = {
     0,
     0,
     destroy_manager_storage,
-    operation_8c0111c4,
+    TObject_update_default_8c0111c4,
     manager_empty_callback,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

@@ -51,7 +51,7 @@ extern int g_8c505918;
 extern "C" void operation_8c2187ac(void *, int);
 extern "C" void call_8c011ed8(void *);
 extern "C" void call_8c18de08(void *);
-extern "C" void destroy_hierarchy_node(void *, short);
+extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void call_8c122774(void *, Object *);
 extern "C" Object *operation_8c218b3c(Object *o, int a1)
 {
@@ -81,7 +81,7 @@ extern "C" Object *operation_8c218b3c(Object *o, int a1)
         o->f24 = (Arg0_24 *)0;
         g_8c505914 = 0;
         g_8c505918 = 0;
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

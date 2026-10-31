@@ -31,7 +31,7 @@ extern S_L8c50638c g_8c50638c;
 extern S_L8c5063c8 g_8c5063c8;
 extern void request_resource_release(void *);
 extern void call_8c011ec0(void *);
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 extern void operation_8c25decc(int, int);
 void operation_8c22ce80(void)
 {
@@ -54,9 +54,9 @@ void operation_8c22ce80(void)
     g_8c506340 = 0;
     g_8c506344 = 0;
     g_8c506348 = 0;
-    call_8c12b880((void *)((void *)&g_8c506350), 0, 0x3c);
-    call_8c12b880((void *)((void *)&g_8c50638c), 0, 0x3c);
-    call_8c12b880((void *)((void *)&g_8c5063c8), 0, 0x3c);
+    memset_8c12b880((void *)((void *)&g_8c506350), 0, 0x3c);
+    memset_8c12b880((void *)((void *)&g_8c50638c), 0, 0x3c);
+    memset_8c12b880((void *)((void *)&g_8c5063c8), 0, 0x3c);
     *(int *)0x8c5064f8 = 0;
     *(int *)0x8c5064fc = 0;
     *(int *)0x8c506500 = 0;

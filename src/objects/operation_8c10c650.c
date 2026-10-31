@@ -33,7 +33,7 @@ struct Arg0_7c_94 {
     char unknown0[0x3c];
     Vector3 f3c;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void operation_8c10ce6c(void *);
 extern void call_8c110a74(Object *, int);
 extern int call_8c10cfbc(Object *, int);
@@ -60,7 +60,7 @@ void operation_8c10c650(Object *o)
     int t9;
     float t10;
     int t11;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (t1 == 0) {
         operation_8c10ce6c((void *)o);
         call_8c110a74(o, 1);

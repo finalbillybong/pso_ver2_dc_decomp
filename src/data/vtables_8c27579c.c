@@ -26,7 +26,7 @@ extern void operation_8c1c04c4(void);
 extern void reconstruct_8c1c1138(void);
 extern void operation_8c1c1394(void);
 extern void operation_8c1c1574(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void destroy_object_8c1c0e34(void);
 extern void fn_8c1c0e78(void);
 extern void operation_8c1c1088(void);
@@ -61,8 +61,8 @@ extern void operation_8c1c1a80(void);
 extern void operation_8c1c1b7c(void);
 extern void fn_8c1c1b88(void);
 extern void operation_8c1c1798(void);
-extern void operation_8c0111c4(void);
-extern void operation_8c0111c8(void);
+extern void TObject_update_default_8c0111c4(void);
+extern void TObject_render_default_8c0111c8(void);
 extern void destroy_object_8c1c2810(void);
 extern void operation_8c1c28e4(void);
 extern void operation_8c1c29ac(void);
@@ -292,7 +292,7 @@ VirtualFunction const vt_8c2758dc[16] = {
     reconstruct_8c1c1138,
     operation_8c1c1394,
     operation_8c1c1574,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -312,7 +312,7 @@ VirtualFunction const vt_8c27591c[7] = {
     destroy_object_8c1c0e34,
     fn_8c1c0e78,
     operation_8c1c1088,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -323,7 +323,7 @@ VirtualFunction const vt_8c275938[16] = {
     operation_8c1c23b0,
     operation_8c1c26fc,
     operation_8c1c2780,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -343,7 +343,7 @@ VirtualFunction const vt_8c275978[26] = {
     operation_8c1c20fc,
     operation_8c1c21fc,
     fn_8c1c2208,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -373,7 +373,7 @@ VirtualFunction const vt_8c2759e0[26] = {
     operation_8c1c1db8,
     operation_8c1c1ff0,
     fn_8c1c2050,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -403,7 +403,7 @@ VirtualFunction const vt_8c275a48[26] = {
     operation_8c1c1c1c,
     operation_8c1c1d1c,
     fn_8c1c1d28,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -433,7 +433,7 @@ VirtualFunction const vt_8c275ab0[26] = {
     operation_8c1c1a80,
     operation_8c1c1b7c,
     fn_8c1c1b88,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -461,9 +461,9 @@ VirtualFunction const vt_8c275b18[26] = {
     0,
     0,
     operation_8c1c1798,
-    operation_8c0111c4,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_update_default_8c0111c4,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -493,7 +493,7 @@ VirtualFunction const vt_8c275b80[16] = {
     destroy_object_8c1c2810,
     operation_8c1c28e4,
     operation_8c1c29ac,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -513,7 +513,7 @@ VirtualFunction const vt_8c275bc0[17] = {
     operation_8c1c2c3c,
     fn_8c1c2cb8,
     operation_8c1c3278,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -555,7 +555,7 @@ VirtualFunction const vt_8c275c4c[16] = {
     0,
     destroy_object_8c1c4464,
     operation_8c1c44a8,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     operation_8c1c4574,
     hierarchy_output,
     operation_8c0104fc,
@@ -575,7 +575,7 @@ VirtualFunction const vt_8c275c8c[16] = {
     0,
     destroy_object_8c1c45c4,
     fn_8c1c425c,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     operation_8c1c43a4,
     hierarchy_output,
     operation_8c0104fc,

@@ -49,7 +49,7 @@ typedef struct S_c8c0744dcData {
 } S_c8c0744dcData;
 extern "C" void call_8c192558(void *, void *);
 extern "C" S_c8c0744dc *find_record_8c0744dc(int);
-extern "C" void operation_8c192a74(Object *o)
+extern "C" void handle_6x63_destroy_floor_item_8c192a74(Object *o)
 {
     S_c8c0744dc *t1;
     /* TODO 00000000..00000000

@@ -12,13 +12,13 @@ struct S_c8c122700 {
     int f58;
 };
 extern void lookup_low_id(int);
-extern S_c8c122700 *allocate_block(void *, int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, int);
 extern void call_8c1ab508(S_c8c122700 *, int, int, int, int, int);
 S_c8c122700 *create_tracker_8c231984(int a0, int a1)
 {
     S_c8c122700 *t1;
     lookup_low_id(a1);
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, 0x5c);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0x5c);
     if (t1 != 0) {
         call_8c1ab508(t1, a0, a1, -1, -1, 0);
         t1->f18 = (void *)0x8c278f98;

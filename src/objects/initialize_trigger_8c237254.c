@@ -16,10 +16,10 @@ typedef struct Trigger {
     int first;
     int second;
 } Trigger;
-extern void initialize_hierarchy_node(Trigger *, void *);
+extern void TObject_ctor_8c0330e4(Trigger *, void *);
 Trigger *initialize_trigger_8c237254(Trigger *o, Vector3 *position, int kind, int target, void *parent)
 {
-    initialize_hierarchy_node(o, parent);
+    TObject_ctor_8c0330e4(o, parent);
     o->dispatch = (void *)0x8c27904c;
     o->position = *position;
     o->kind = kind;

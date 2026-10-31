@@ -55,7 +55,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_c8c021ef8 *lookup_low_id(int);
 extern float squared_distance_xz(void *, void *);
 extern void create_effect_777c(void *, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_panel_8c087d8c(void *, void *, void *);
 void operation_8c1c060c(Object *o)
 {
@@ -83,11 +83,11 @@ void operation_8c1c060c(Object *o)
                 (&frame)->f00.f44 = (int)(o->fac);
                 create_effect_777c((void *)(&o->f3c), 0x45);
                 create_effect_777c((void *)(&o->f3c), 0x46);
-                t3 = allocate_block(g_8c4d97e0, (unsigned int)0x78);
+                t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
                 if (t3 != 0) {
                     initialize_panel_8c087d8c((void *)t3, g_8c44be98, (void *)(&(&frame)->f4c));
                 }
-                t4 = allocate_block(g_8c4d97e0, (unsigned int)0x78);
+                t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
                 if (t4 != 0) {
                     initialize_panel_8c087d8c((void *)t4, g_8c44be98, (void *)(&frame));
                 }

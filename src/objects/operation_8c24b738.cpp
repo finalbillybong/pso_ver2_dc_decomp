@@ -68,15 +68,15 @@ extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c510fa0 *g_8c510fa0;
 extern S_g8c510fa4 *g_8c510fa4;
-extern "C" S_c8c122700 *allocate_block(void *, unsigned int);
+extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void call_8c0eeb90(S_c8c122700 *, void *);
 extern "C" void copy_actor_records(void *, void *, int);
 extern "C" void transform_actor_records(void *);
 extern "C" void attach_and_insert_object(void *);
-extern "C" S_c8c122700 *operation_8c24b738(int a0)
+extern "C" S_c8c122700 *TODoorVS2Door01_ctor_8c24b738(int a0)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x110);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x110);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

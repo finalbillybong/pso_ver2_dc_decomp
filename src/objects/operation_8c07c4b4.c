@@ -6,7 +6,7 @@ typedef struct Vector3 {
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int count_below_20_8c07c524(void);
 extern int call_8c065330(void);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c07c534(int, int, int, int);
 int operation_8c07c4b4(int a0, int a1)
 {
@@ -21,7 +21,7 @@ int operation_8c07c4b4(int a0, int a1)
     if (t2 == 0) {
         return 0;
     }
-    t3 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x104);
+    t3 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x104);
     if (t3 != 0) {
         call_8c07c534(t3, a0, t2, a1);
     }

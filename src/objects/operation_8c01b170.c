@@ -5,14 +5,14 @@ typedef struct Vector3 {
 } Vector3;
 extern int g_8c41bce4;
 extern int g_8c4d8288;
-extern void call_8c12b77c(void *, int, int);
-void operation_8c01b170(int a0)
+extern void memcpy_8c12b77c(void *, int, int);
+void handle_6x6F_set_quest_flags_8c01b170(int a0)
 {
     /* TODO 00000000..00000000
      * 00000000 walker stopped: instruction missing at the range end (data in the listing)
      */
     if (g_8c4d8288 == 0 && (unsigned int)1 >= (unsigned int)(g_8c41bce4 + -0xe)) {
-        call_8c12b77c((void *)((void *)0x8c4db6e0), (int)(a0 + 4), 0x200);
+        memcpy_8c12b77c((void *)((void *)0x8c4db6e0), (int)(a0 + 4), 0x200);
     }
     /* TODO 8c01b170..8c01b196
      * 8c01b170 sts.l PR,@-r15

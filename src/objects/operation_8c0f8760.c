@@ -20,7 +20,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_8c052124(void *);
 extern void mark_effect_for_release(void *);
 extern void destroy_motion_profile_8c0ffdcc(void *, short);
-extern void operation_8c0120f4(void *, int);
+extern void TObjEnemy_dtor_8c0120f4(void *, int);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c0f8760(Object *o, int a1)
 {
@@ -34,7 +34,7 @@ Object *operation_8c0f8760(Object *o, int a1)
         }
         destroy_motion_profile_8c0ffdcc((void *)(o->f3a4), (short)1);
         o->f3a4 = (Arg0_3a4 *)0;
-        operation_8c0120f4((void *)o, 0);
+        TObjEnemy_dtor_8c0120f4((void *)o, 0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

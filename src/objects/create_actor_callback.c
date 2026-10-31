@@ -9,6 +9,6 @@ typedef char check_identifier[(unsigned long)&((View *)0)->identifier==32?1:-1];
 typedef char check_ticks[(unsigned long)&((View *)0)->ticks==34?1:-1];
 typedef char check_callback[(unsigned long)&((View *)0)->callback==36?1:-1];
 typedef char check_prefix[sizeof(View)==40?1:-1];
-extern void *heap;extern void *allocate_at(void *,unsigned int);
+extern void *heap;extern void *heap_alloc_8c122700(void *,unsigned int);
 extern View *construct_at(View *,unsigned short identifier,Callback callback);
-View *create_actor_callback(unsigned short identifier,Callback callback) { View *o=(View *)allocate_at(heap,40);if(o) construct_at(o,identifier,callback);return o; }
+View *create_actor_callback(unsigned short identifier,Callback callback) { View *o=(View *)heap_alloc_8c122700(heap,40);if(o) construct_at(o,identifier,callback);return o; }

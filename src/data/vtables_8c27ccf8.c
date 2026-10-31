@@ -103,7 +103,7 @@ extern void operation_8c12132c(void);
 extern void operation_8c246310(void);
 extern void operation_8c246370(void);
 extern void operation_8c246414(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void reset_shared_object(void);
 extern void operation_8c010504(void);
 extern void operation_8c010508(void);
@@ -223,7 +223,7 @@ VirtualFunction const vt_8c27ce88[16] = {
     operation_8c246310,
     operation_8c246370,
     operation_8c246414,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -243,6 +243,6 @@ VirtualFunction const vt_8c27cec8[7] = {
     operation_8c246164,
     fn_8c2461b0,
     operation_8c2462d8,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

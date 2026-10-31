@@ -43,7 +43,7 @@ struct S_vv2 {
 extern int g_8c340104;
 extern Block72 g_8c340108;
 extern Block72 g_8c340150;
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int create_effect_78d0(void *, void *, int, int);
 Object *operation_8c258f34(Object *o, Arg1 *a1, int a2, int a3, register unsigned int a4, float f0)
 {
@@ -53,7 +53,7 @@ Object *operation_8c258f34(Object *o, Arg1 *a1, int a2, int a3, register unsigne
     S_vv2 *v2;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c281a7c;
     o->tag = (int)(g_8c340104);
     o->size = 0x34;

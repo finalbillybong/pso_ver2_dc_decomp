@@ -39,8 +39,8 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4e1a40;
 extern S_g8c4e1a48 *g_8c4e1a48;
 extern char g_8c288e38[];
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void initialize_resource_record(void *);
 extern void operation_8c1a9c84(void *, int, int);
 void operation_8c1a9ff4(void)
@@ -51,14 +51,14 @@ void operation_8c1a9ff4(void)
     S_c8c122700 *t2;
     S_c8c122700 *t1;
     S_c8c122700 *t3;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x20);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x20);
     if (t1 != 0) {
-        initialize_hierarchy_node((void *)t1, (void *)0);
+        TObject_ctor_8c0330e4((void *)t1, (void *)0);
     }
     g_8c4e1a48 = (S_g8c4e1a48 *)t1;
-    t2 = allocate_block(g_8c4d97e0, (unsigned int)0x24);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x24);
     if (t2 != 0) {
-        initialize_hierarchy_node((void *)t2, g_8c44be98);
+        TObject_ctor_8c0330e4((void *)t2, g_8c44be98);
         t2->f18 = (void *)0x8c274674;
         t2->f00 = (int)(g_8c324d80);
         t2->f1e = 0x24;
@@ -71,7 +71,7 @@ void operation_8c1a9ff4(void)
         frame.f0c = *(Vector3 *)(g_8c288e38 + off);
         frame.f24 = *(float *)((char *)(g_8c288e38 + 0xc) + off);
         frame.f30 = *(int *)((char *)(g_8c288e38 + 0x10) + off);
-        t3 = allocate_block(g_8c4d97e0, (unsigned int)0xa4);
+        t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xa4);
         if (t3 != 0) {
             operation_8c1a9c84((void *)t3, (int)g_8c4e1a48, (int)(&frame));
         }

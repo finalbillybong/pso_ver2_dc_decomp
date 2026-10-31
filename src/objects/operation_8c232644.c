@@ -10,8 +10,8 @@ typedef struct S_c8c18de4c S_c8c18de4c;
 struct S_c8c18de4c {
     Block32 f00;
 };
-extern S_c8c18de4c *call_8c18de4c(int);
-extern void call_8c12b880(void *, int, int);
+extern S_c8c18de4c *operator_new_8c18de4c(int);
+extern void memset_8c12b880(void *, int, int);
 extern int call_8c378bf8(int, S_c8c18de4c *);
 extern void call_8c378d88(int, S_c8c18de4c *);
 extern int call_8c378e04(void);
@@ -25,9 +25,9 @@ int operation_8c232644(void)
     int t2;
     int v8;
     int t4;
-    t3 = call_8c18de4c(0x3c);
-    t1 = call_8c18de4c(0x4000);
-    call_8c12b880((void *)((void *)0x8c338c40), 0xff, 0x20);
+    t3 = operator_new_8c18de4c(0x3c);
+    t1 = operator_new_8c18de4c(0x4000);
+    memset_8c12b880((void *)((void *)0x8c338c40), 0xff, 0x20);
     t2 = call_8c378bf8(2, t1);
     if (t2 == 0) {
         call_8c378d88(7, t3);

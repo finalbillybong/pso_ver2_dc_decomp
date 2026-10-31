@@ -46,7 +46,7 @@ extern int call_8c15b8cc(int);
 extern int operation_8c1c74dc(void *);
 extern int operation_8c15ba54(void);
 extern void call_8c220b80(int, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_selection_child(void *, void *, int, int, int);
 extern int operation_8c156c6c(int);
 void operation_8c19c5e4(Object *o)
@@ -147,7 +147,7 @@ void operation_8c19c5e4(Object *o)
     if (v20 > 1) {
         if (o->f390 == 0) {
             *(Block8 *)&(&frame)->f08 = *(Block8 *)&g_8c31cc8c;
-            t9 = allocate_block(g_8c4d97e0, (unsigned int)0x7c);
+            t9 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
             if (t9 != 0) {
                 initialize_selection_child((void *)t9, (void *)(&(&frame)->f08.f00), 1, v20, 1);
             }

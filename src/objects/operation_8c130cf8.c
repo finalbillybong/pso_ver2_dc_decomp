@@ -22,7 +22,7 @@ struct S_g8c4d9a44 {
 extern S_g8c4d9a44 *g_8c4d9a44;
 extern int operation_8c0eea7c(int, float);
 extern void operation_8c05428c(void *, int, int);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c05fbf8(int, void *, int, int);
 void operation_8c130cf8(Object *o)
 {
@@ -39,7 +39,7 @@ void operation_8c130cf8(Object *o)
         o->fe4 = 3;
         operation_8c05428c((void *)o, 0, 0x10);
         o->f11c = 0;
-        switch (current_effect_mode()) {
+        switch (get_current_area_8c032b10()) {
         case 3:
         case 4:
         case 5:

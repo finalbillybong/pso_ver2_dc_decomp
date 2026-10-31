@@ -18,14 +18,14 @@ struct Object {
     int f30;
     short f34;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c1a8be8(Object *);
 Object *operation_8c1a8750(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c274620;
     o->tag = *(int *)0x8c323fe8;
     o->size = 0x3c;

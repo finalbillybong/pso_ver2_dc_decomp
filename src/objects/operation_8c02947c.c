@@ -12,7 +12,7 @@ struct Object {
     char unknown22[0x4e6];
     int f508;
 };
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c1a8f8c(int, void *);
 int operation_8c02947c(Object *o)
 {
@@ -20,7 +20,7 @@ int operation_8c02947c(Object *o)
     int t1;
     v1 = (int)(o->f20 == *(int *)0x8c418248);
     if (v1 != 0 && *(int *)0x8c41cd2c == 0 && o->f508 != 0) {
-        t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x2c);
+        t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x2c);
         if (t1 != 0) {
             call_8c1a8f8c(t1, *(S_g8c44bea0 **)0x8c44bea0);
         }

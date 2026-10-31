@@ -4,8 +4,8 @@ extern ResourceChunks *first,*second;
 extern void *buffer;
 #define allocate_at ((ResourceChunks *(*)(unsigned int))0x8c011ecc)
 #define base_at ((ResourceChunks *(*)(ResourceChunks *,int,int,unsigned int))0x8c19336c)
-extern void *buffer_allocate_at(unsigned int);
-void operation_193bf8(void){
+extern void *operator_new_8c18de4c(unsigned int);
+void load_item_model_archives_8c193bf8(void){
     ResourceChunks *o=allocate_at(40);
     if(o){
         base_at(o,*(int *)0x8c31a320,0xb5,0xeb);
@@ -36,5 +36,5 @@ void operation_193bf8(void){
         }
         second=other;
     }
-    buffer=buffer_allocate_at(0x15000);
+    buffer=operator_new_8c18de4c(0x15000);
 }

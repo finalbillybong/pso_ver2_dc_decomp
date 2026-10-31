@@ -8,15 +8,15 @@ struct S_g8c44be0c {
     char unknown0[0x4];
     float f04;
 };
-extern int call_8c01c25c(void);
-extern int current_effect_mode(void);
+extern int get_game_mode_8c01c25c(void);
+extern int get_current_area_8c032b10(void);
 void operation_8c030dc4(void)
 {
     int t1;
     int t2;
-    t1 = call_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 == 0x10) {
-        t2 = current_effect_mode();
+        t2 = get_current_area_8c032b10();
         switch (t2) {
         case 6:
         case 7:

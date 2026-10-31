@@ -17,7 +17,7 @@ struct Object {
 struct Frame {
     char unknown4[0xc];
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c36d3ca(void *);
 extern void call_8c36d4c0(void *, void *);
 extern int operation_8c209830(void);
@@ -27,7 +27,7 @@ Object *operation_8c01b56c(Object *o, int a1)
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c26125c;
     call_8c36d3ca((void *)(((char *)(&frame))));
     call_8c36d4c0((void *)(((char *)(&frame))), (void *)(&o->f20));

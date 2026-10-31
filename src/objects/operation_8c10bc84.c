@@ -39,11 +39,11 @@ extern int g_8c4d81a4;
 extern S_L8c30be88 g_8c30be88;
 extern S_L8c4d7ce8 g_8c4d7ce8;
 extern char g_8c4d7d38[];
-extern int call_8c18de4c(int);
-extern void operation_8c104d00(int, int);
+extern int operator_new_8c18de4c(int);
+extern void file_load_8c104d00(int, int);
 extern void call_8c18de08(void *);
 extern void call_8c028430(char, int, void *, int, void *);
-void *operation_8c10bc84(int a0)
+void *load_npc_player_chars_8c10bc84(int a0)
 {
     int v7;
     int v10;
@@ -52,13 +52,13 @@ void *operation_8c10bc84(int a0)
     if (g_8c4d7ce4 != 0) {
         return 0;
     }
-    t1 = call_8c18de4c(0x1400);
+    t1 = operator_new_8c18de4c(0x1400);
     g_8c4d7ce4 = (S_g8c4d7ce4 *)(int)(t1);
     if (g_8c4d81a4 != 0) {
         g_8c4d81a4 = 0;
         *(Block80 *)&(&g_8c4d7ce8)->f00 = *(Block80 *)&g_8c4d8154;
     } else {
-        operation_8c104d00((int)g_8c30fb08, t1);
+        file_load_8c104d00((int)g_8c30fb08, t1);
         *(Block80 *)&(&g_8c4d7ce8)->f00 = *(Block80 *)&((S_x54944 *)((int)g_8c4d7ce4 + a0 * 0x50))->f00;
     }
     call_8c18de08(g_8c4d7ce4);

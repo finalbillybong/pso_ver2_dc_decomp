@@ -19,7 +19,7 @@ struct S_c8c122700 {
 };
 extern S_c8c119758 *get_render_state_8c119758(void);
 extern void configure_pair_grid_view(int, int, int);
-extern S_c8c122700 *allocate_block(void *, int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, int);
 extern void initialize_pair_grid_view(S_c8c122700 *, int);
 S_c8c122700 *create_pair_view_8c226800(int a0, int a1)
 {
@@ -28,7 +28,7 @@ S_c8c122700 *create_pair_view_8c226800(int a0, int a1)
     t1 = get_render_state_8c119758();
     t1->f1c |= 0x20;
     configure_pair_grid_view(a0, a1, 8);
-    t2 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, 0xa0);
+    t2 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0xa0);
     if (t2 != 0) {
         initialize_pair_grid_view(t2, 8);
         t2->f18 = (void *)0x8c278b48;

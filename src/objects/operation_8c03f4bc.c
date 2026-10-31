@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern int g_8c4dbb08;
 extern int g_8c4dbb0c;
-extern int operation_8c01018c(int);
+extern int vmu_find_file_8c01018c(int);
 extern int operation_8c0101dc(int);
 extern void word_operation_8c0e92d4(unsigned int);
 extern void enable_pair_8c1cc4b4(void);
@@ -33,7 +33,7 @@ void operation_8c03f4bc(void)
     int t8;
     int t9;
     v1 = (int)(g_8c4dbb08 + g_8c4dbb0c);
-    switch (operation_8c01018c((int)((void *)0x8c319870))) {
+    switch (vmu_find_file_8c01018c((int)((void *)0x8c319870))) {
     case 0:
     case 1:
     case 2:
@@ -44,7 +44,7 @@ void operation_8c03f4bc(void)
     case 7:
         v1 -= g_8c4dbb08;
     }
-    switch (operation_8c01018c((int)((void *)0x8c3198c1))) {
+    switch (vmu_find_file_8c01018c((int)((void *)0x8c3198c1))) {
     case 0:
     case 1:
     case 2:
@@ -56,7 +56,7 @@ void operation_8c03f4bc(void)
         v1 -= g_8c4dbb0c;
         break;
     default:
-        switch (operation_8c01018c((int)((void *)0x8c319912))) {
+        switch (vmu_find_file_8c01018c((int)((void *)0x8c319912))) {
         case 0:
         case 1:
         case 2:
@@ -82,7 +82,7 @@ void operation_8c03f4bc(void)
     }
     t6 = operation_8c1f1850();
     if ((unsigned char)t6 == 1) {
-        t7 = operation_8c01018c((int)((void *)0x8c319870));
+        t7 = vmu_find_file_8c01018c((int)((void *)0x8c319870));
         if (t7 != -1) {
             v4 = (int)0;
             while ((unsigned int)8 > (unsigned int)(unsigned char)v4) {

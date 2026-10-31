@@ -11,10 +11,10 @@ struct Object {
     char unknown6[0x12];
     void *dispatch;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c206e2c(Object *o)
 {
-    initialize_hierarchy_node((void *)o, (void *)(*(S_g8c44be8c **)0x8c44be8c));
+    TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be8c **)0x8c44be8c));
     o->dispatch = (void *)0x8c278058;
     o->f04 |= 0x10;
     return o;

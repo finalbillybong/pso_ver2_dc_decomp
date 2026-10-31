@@ -36,7 +36,7 @@ extern void call_8c01c5f0(Object *);
 extern void call_8c0c200c(Object *);
 extern void create_effect_777c(void *, int);
 extern void call_8c05fd7c(int, Object *, void *, int, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0c6ab4(int, void *, void *, int, Object *);
 extern void call_8c0c1a4c(Object *, int);
 extern void call_8c05fbf8(int, void *, int, int);
@@ -83,7 +83,7 @@ void operation_8c0c07c8(Object *o)
             call_8c05fd7c(0x3001e, o, (void *)(((char *)o + 0x3c)), 0, 0);
             if (!(20.0f > o->ff8)) {
                 call_8c0c200c(o);
-                t1 = allocate_block(g_8c4d97e0, (unsigned int)0x138);
+                t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x138);
                 if (t1 != 0) {
                     call_8c0c6ab4(t1, (void *)(((char *)o + 0x3b8)), (void *)(&o->f334->f324), !(o->f34 & 0x1000000), o);
                 }

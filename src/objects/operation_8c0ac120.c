@@ -47,7 +47,7 @@ struct S_L8c304744 {
     S_g8c30474c *f08;
 };
 extern S_L8c304744 g_8c304744;
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int create_effect_7cc0(void *, int, int, int);
 Object *operation_8c0ac120(Object *o, Arg1 *a1, int a2)
 {
@@ -59,7 +59,7 @@ Object *operation_8c0ac120(Object *o, Arg1 *a1, int a2)
     int t1;
     int t2;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a2);
+    TObject_ctor_8c0330e4((void *)o, (void *)a2);
     o->dispatch = (void *)0x8c265d48;
     o->f2c = 0;
     *(Vector3 *)&o->f30 = *(Vector3 *)&a1->f324;

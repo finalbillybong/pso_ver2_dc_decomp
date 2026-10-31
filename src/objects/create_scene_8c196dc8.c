@@ -17,19 +17,19 @@ struct S_c8c122700 {
     int f658;
     int f65c;
 };
-extern S_c8c122700 *allocate_block(void *, int);
-extern void initialize_hierarchy_node(S_c8c122700 *, int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, int);
+extern void TObject_ctor_8c0330e4(S_c8c122700 *, int);
 extern void call_8c196ec4(S_c8c122700 *);
 extern void call_8c196e78(S_c8c122700 *, int);
 S_c8c122700 *create_scene_8c196dc8(int a0)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, 0x664);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0x664);
     if (t1 != 0) {
         S_c8c122700 *self = t1;
         S_c8c122700 **home = &self;
         (void)home;
-        initialize_hierarchy_node(t1, a0);
+        TObject_ctor_8c0330e4(t1, a0);
         self->f18 = (void *)0x8c272868;
         self->f00 = *(int *)0x8c31c258;
         self->f1e = 0x664;

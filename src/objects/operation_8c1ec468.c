@@ -15,7 +15,7 @@ struct S_c8c021ef8 {
     char f3be;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c1ec468(Object *o)
+void handle_6x8D_set_technique_level_override_8c1ec468(Object *o)
 {
     int v1;
     S_c8c021ef8 *t1;

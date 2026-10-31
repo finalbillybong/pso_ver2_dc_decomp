@@ -31,7 +31,7 @@ struct Frame {
     char unknown8[0x3fc];
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void call_8c12b77c(void *, int, int);
+extern "C" void memcpy_8c12b77c(void *, int, int);
 extern "C" void operation_8c02f0c4(Object *o, int a1, int a2)
 {
     Frame frame;
@@ -40,7 +40,7 @@ extern "C" void operation_8c02f0c4(Object *o, int a1, int a2)
         (&frame)->f00 = 0x60;
         (&frame)->f01 = 0;
         (&frame)->f02 = a2 + 4;
-        call_8c12b77c((void *)(&(&frame)->f04), a1, a2);
+        memcpy_8c12b77c((void *)(&(&frame)->f04), a1, a2);
         o->v9((&frame), (unsigned short)(&frame)->f02);
     }
 }

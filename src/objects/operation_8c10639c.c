@@ -17,13 +17,13 @@ struct S_c8c122700 {
     char unknown0[0x190];
     void *f190;
 };
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c1055c4(int, void *, Object *, void *);
 extern void call_8c01d9dc(void);
 void operation_8c10639c(Object *o)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x194);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x194);
     if (t1 != 0) {
         call_8c1055c4((int)t1, *(S_g8c44be98 **)0x8c44be98, o, o->f28);
     }

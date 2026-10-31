@@ -10,7 +10,7 @@ typedef struct Range {
 } Range;
 extern Manager *input_manager;
 extern Range input_range;
-extern void initialize_hierarchy_node(Manager *);
+extern void TObject_ctor_8c0330e4(Manager *);
 extern void initialize_table_8c38c1f4(char *, int);
 extern void configure_input_8c3be38c(int, char *, char *);
 extern void load_manager_8c01470c(Manager *);
@@ -22,7 +22,7 @@ Manager *initialize_input_manager_8c014694(Manager *o)
     (void)home;
     {
         Manager *base = o;
-        initialize_hierarchy_node(base);
+        TObject_ctor_8c0330e4(base);
         base->dispatch = (void *)0x8c261240;
     }
     o->dispatch = (void *)0x8c261208;

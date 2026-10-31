@@ -29,7 +29,7 @@ int voice_get_level_8c342584(Voice *v)
     return v->level;
 }
 
-void voice_set_mode_8c34258a(Voice *v, int mode)
+void mwPlySetCompoMode_8c34258a(Voice *v, int mode)
 {
     if (mode >= 4 && v->dev_b == 0) {
         debug_print_8c35570c(str_8c3f34bc, mode);

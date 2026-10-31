@@ -23,7 +23,7 @@ struct S_c8c122700 {
 struct Frame {
     Block8 f04;
 };
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_base_8c0db1d0(void *, int);
 extern int call_8c011ecc(int);
 extern void call_8c199e48(int, void *, int, int);
@@ -32,7 +32,7 @@ S_c8c122700 *operation_8c18ccd8(int a0, int a1, int a2)
     Frame frame;
     S_c8c122700 *t1;
     int t2;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

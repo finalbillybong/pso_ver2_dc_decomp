@@ -54,7 +54,7 @@ extern void operation_8c25a848(void *, int);
 extern void request_resource_release(void *);
 extern int operation_8c1571f4(void *);
 extern void call_8c25a8c0(Object *, int);
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern int call_8c0c349c(void);
 extern int no_owned_target_near_8c25aa04(void *);
 extern void clear_overlay_elements_8c25a8e8(void *);
@@ -122,7 +122,7 @@ void operation_8c25a0ec(Object *o)
             }
         }
         if (*(int *)0x8c2fff78 != 0) {
-            t3 = operation_8c01c25c();
+            t3 = get_game_mode_8c01c25c();
             if (t3 == 0x10) {
                 t4 = call_8c0c349c();
                 if (t4 != 0) {
@@ -152,7 +152,7 @@ void operation_8c25a0ec(Object *o)
         if (*(int *)0x8c2fff78 == 0) {
             return;
         }
-        t7 = operation_8c01c25c();
+        t7 = get_game_mode_8c01c25c();
         if (t7 != 0x10) {
             return;
         }

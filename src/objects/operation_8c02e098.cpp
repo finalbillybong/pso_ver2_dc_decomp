@@ -19,11 +19,11 @@ typedef struct ObjectData {
     int fb150;
 } ObjectData;
 extern "C" char g_8c2e7ce0[];
-extern "C" void call_8c12b77c(void *, int, int);
-extern "C" void operation_8c02e098(Object *o, int a1)
+extern "C" void memcpy_8c12b77c(void *, int, int);
+extern "C" void handle_cmd_64_join_game_8c02e098(Object *o, int a1)
 {
     o->v4((g_8c2e7ce0 + 0x1e3));
-    call_8c12b77c((void *)((void *)0x8c42aef0), (int)(a1 + 4), 0x80);
+    memcpy_8c12b77c((void *)((void *)0x8c42aef0), (int)(a1 + 4), 0x80);
     ((ObjectData *)o)->fa80 = 1;
     if (((ObjectData *)o)->fb150 != 0) {
         ((void (*)(int))(((ObjectData *)o)->fb150))(a1);

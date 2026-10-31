@@ -17,7 +17,7 @@ struct S_vv11 {
 extern int g_8c46ec50;
 extern int g_8c4dbb88;
 extern int g_8c4dbb90;
-extern void call_8c12b880(Frame *, int, int);
+extern void memset_8c12b880(Frame *, int, int);
 extern int call_8c09e920(int, S_vv11 *, int);
 void operation_8c186534(int a0)
 {
@@ -45,7 +45,7 @@ void operation_8c186534(int a0)
         v11 = (S_vv11 *)(g_8c46ec50 + v1 * 0x44);
     }
     v10 = (int)*(int *)((char *)0x8c46ec58 + (a0 << 2));
-    call_8c12b880((Frame *)((&frame)), 0, 4);
+    memset_8c12b880((Frame *)((&frame)), 0, 4);
     v14 = 0x4000;
     v12 = (int)0;
     while (v10 > v12) {

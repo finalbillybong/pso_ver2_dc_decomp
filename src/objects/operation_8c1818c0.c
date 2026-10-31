@@ -13,7 +13,7 @@ extern S_g8c4dbb10 *g_8c4dbb10;
 extern int call_8c19b054(void);
 extern void word_operation_8c18490c(unsigned int);
 extern int call_8c010298(void *, void *, void *, void *);
-int operation_8c1818c0(void)
+int save_system_file_8c1818c0(void)
 {
     int v1;
     int v21;

@@ -16,7 +16,7 @@ extern void call_8c01d9dc(void);
 extern void forward_reviewed_8c104e8c(void);
 extern void operation_8c01c250(int);
 extern void call_8c013620(void *, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c1a4dcc(int);
 extern void call_8c380516(void);
 void operation_8c17b8f8(void)
@@ -36,7 +36,7 @@ void operation_8c17b8f8(void)
     forward_reviewed_8c104e8c();
     operation_8c01c250(0);
     call_8c013620((void *)((void *)0x8c319820), 0x28);
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x284);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x284);
     if (t1 != 0) {
         call_8c1a4dcc(t1);
     }

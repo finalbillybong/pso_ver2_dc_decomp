@@ -18,15 +18,15 @@ struct Object {
     int f30;
     int f34;
 };
-extern void initialize_hierarchy_node(void *, void *);
-extern int allocate_block(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_fall(int, Object *, void *);
 Object *operation_8c25ce38(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c281c50;
     o->tag = (int)(*(int *)0x8c3404d4);
     o->size = 0x38;
@@ -36,7 +36,7 @@ Object *operation_8c25ce38(Object *o, int a1)
     o->f2c = 0xf3c;
     o->f30 = 0x96;
     o->f34 = 0;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
     if (t1 != 0) {
         initialize_color_fall(t1, o, (void *)((void *)0x8c25cfe8));
     }

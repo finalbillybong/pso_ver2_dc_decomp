@@ -110,7 +110,7 @@ extern Row g_8c2852d0[];
 extern void call_8c0b9730(Object *, int, int, int, int);
 extern void call_8c0ad348(Object *);
 extern int call_8c18e768(int, int);
-extern Arg0_14c **call_8c18de4c(int);
+extern Arg0_14c **operator_new_8c18de4c(int);
 extern Arg0_14c *create_effect_785c(void *, void *, int);
 extern Arg0_14c *create_effect_769c(void *, int);
 extern int call_8c05fbf8(int, void *, int, int);
@@ -154,7 +154,7 @@ Object *operation_8c0ac934(Object *o, int a1, int a2, int a3, int a4)
         frame.f18 = base->f60;
         base->fcc = call_8c18e768(base->fc8, 5);
     }
-    o->f14c = call_8c18de4c(COUNT(o) << 2);
+    o->f14c = operator_new_8c18de4c(COUNT(o) << 2);
     off = 0x14c;
     k = 0x8000;
     for (i = 0; base = o, boff = base->fcc << 3, i < *(unsigned int *)((char *)&g_8c2852d0[0].count + boff); i++) {

@@ -22,7 +22,7 @@ struct Frame {
     float f08;
     float f0c;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c05bbf8(void);
 extern void call_8c0a2144(int);
 extern void call_8c0a5400(void *, int);
@@ -32,7 +32,7 @@ Object *operation_8c086cdc(Object *o, int a1, int a2, float f0)
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c264f60;
     o->tag = (int)(*(int *)0x8c2ffba0);
     o->size = 0x2c;

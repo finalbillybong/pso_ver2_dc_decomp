@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern int g_8c4e2e60;
 extern int g_8c4e2e64;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern int call_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 void operation_8c1cddf0(void)
@@ -17,7 +17,7 @@ void operation_8c1cddf0(void)
     int t5;
     int t6;
     int t7;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (t1 != 3) {
         if (t1 == 4) {
             goto L_8c1cde52;

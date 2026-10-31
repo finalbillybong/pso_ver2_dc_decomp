@@ -23,7 +23,7 @@ struct Arg1 {
     unsigned char f01;
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c030530(Object *o, Arg1 *a1)
+extern "C" void handle_cmd_C5_player_records_update_8c030530(Object *o, Arg1 *a1)
 {
     char *v22;
     o->v4((g_8c2e7ce0 + 0x711));

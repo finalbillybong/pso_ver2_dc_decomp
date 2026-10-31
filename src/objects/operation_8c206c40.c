@@ -13,10 +13,10 @@ struct Object {
     short size;
     int f20;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c206c40(Object *o)
 {
-    initialize_hierarchy_node((void *)o, (void *)(*(S_g8c44be8c **)0x8c44be8c));
+    TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be8c **)0x8c44be8c));
     o->dispatch = (void *)0x8c278074;
     o->tag = (int)(*(int *)0x8c335d00);
     o->size = 0x24;

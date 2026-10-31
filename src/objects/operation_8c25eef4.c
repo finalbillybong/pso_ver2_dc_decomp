@@ -23,8 +23,8 @@ extern S_g8c44be84 *g_8c44be84;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c513480 *g_8c513480;
 extern void call_8c060724(int);
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
 void operation_8c25eef4(int a0, int a1)
 {
     S_c8c122700 *t1;
@@ -34,12 +34,12 @@ void operation_8c25eef4(int a0, int a1)
         call_8c060724(a0);
         return;
     }
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x28);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x28);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;
         (void)home;
-        initialize_hierarchy_node((void *)t1, g_8c44be84);
+        TObject_ctor_8c0330e4((void *)t1, g_8c44be84);
         self->f18 = (void *)0x8c281d54;
         self->f20 = a1;
         self->f24 = a0;

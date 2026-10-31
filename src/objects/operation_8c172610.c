@@ -16,7 +16,7 @@ extern S_g8c4db4e4 *g_8c4db4e4;
 extern char g_8c318c08[];
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int call_8c04c6a8(void *);
-extern int call_8c12b0cc(int);
+extern int strlen_8c12b0cc(int);
 extern void call_8c18e720(void *, int);
 void operation_8c172610(void)
 {
@@ -27,12 +27,12 @@ void operation_8c172610(void)
     t1 = lookup_low_id((int)g_8c418248);
     if (t1 != 0) {
         t2 = call_8c04c6a8((void *)(t1->f818));
-        t3 = call_8c12b0cc(t2);
+        t3 = strlen_8c12b0cc(t2);
         call_8c18e720(g_8c4db4e4, t2);
         g_8c4db4e4 = (S_g8c4db4e4 *)((int)g_8c4db4e4 + t3);
         return;
     }
-    t4 = call_8c12b0cc((int)(g_8c318c08 + 0x33));
+    t4 = strlen_8c12b0cc((int)(g_8c318c08 + 0x33));
     call_8c18e720(g_8c4db4e4, (int)(g_8c318c08 + 0x33));
     g_8c4db4e4 = (S_g8c4db4e4 *)((int)g_8c4db4e4 + t4);
 }

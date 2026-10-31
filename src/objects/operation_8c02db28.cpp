@@ -17,7 +17,7 @@ typedef struct ObjectData {
     int fb144;
 } ObjectData;
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02db28(Object *o, int a1)
+extern "C" void handle_cmd_1A_large_message_box_8c02db28(Object *o, int a1)
 {
     o->v4((g_8c2e7ce0 + 0xbf));
     if (((ObjectData *)o)->fb144 != 0) {

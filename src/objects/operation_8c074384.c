@@ -15,7 +15,7 @@ struct S_g8c4689f8 {
 };
 extern int g_8c4689ec;
 extern int g_8c5134c0;
-extern void call_8c12b77c(void *, void *, int);
+extern void memcpy_8c12b77c(void *, void *, int);
 #define TBL(i) (*(S_g8c4689f8 **)((char *)0x8c4689f8 + ((i) << 2)))
 int operation_8c074384(Object *o)
 {
@@ -48,7 +48,7 @@ int operation_8c074384(Object *o)
             g_8c5134c0 = 1;
             return v1;
         }
-        call_8c12b77c((void *)((char *)0x8c4689f8 + (v4 + 1 << 2)), (void *)((char *)0x8c4689f8 + (v4 << 2)), v2 - v4 << 2);
+        memcpy_8c12b77c((void *)((char *)0x8c4689f8 + (v4 + 1 << 2)), (void *)((char *)0x8c4689f8 + (v4 << 2)), v2 - v4 << 2);
         v17 = v4;
     } else {
         v17 = v2;

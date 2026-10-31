@@ -17,7 +17,7 @@ extern int operation_8c19b054(void);
 extern int operation_8c181920(int);
 extern void request_resource_release(void *);
 extern void operation_8c0e9aac(int);
-extern void operation_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 void operation_8c23024c(Object *o)
 {
     char *v1;
@@ -60,7 +60,7 @@ L_8c2302ba:;
                     o->f24 += 1;
                     if ((float)(int)v1 > 4.5f) {
                         operation_8c0e9aac(1);
-                        operation_8c01c1a4(6);
+                        request_game_mode_8c01c1a4(6);
                     }
                 }
             }

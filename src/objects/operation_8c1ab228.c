@@ -15,7 +15,7 @@ struct Object {
     int fe8;
     Arg0_ec *fec;
 };
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_loader_8c173578(void *, void *, int);
 extern void reparent_hierarchy_node(void *, void *);
 void operation_8c1ab228(Object *o)
@@ -29,7 +29,7 @@ void operation_8c1ab228(Object *o)
             return;
         }
         if (o->fe4 == 0 && o->fec != 0 && *(int *)0x8c4db520 != 0) {
-            t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xa8);
+            t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xa8);
             if (t1 != 0) {
                 initialize_loader_8c173578((void *)t1, (void *)(*(S_g8c4db520 **)0x8c4db520), (int)(o->fec));
             }

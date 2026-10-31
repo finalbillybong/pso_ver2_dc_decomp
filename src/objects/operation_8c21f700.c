@@ -32,7 +32,7 @@ extern void operation_8c0ddc38(short, int, int);
 typedef struct Block60 {
     int words[15];
 } Block60;
-void operation_8c21f700(Object *o)
+void handle_6x07_symbol_chat_8c21f700(Object *o)
 {
     S_vv1 *v1;
     S_c8c021ef8 *t1;

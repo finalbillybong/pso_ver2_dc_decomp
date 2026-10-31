@@ -2,7 +2,7 @@ typedef struct Manager {
     char unknown0[0x18];
     void *dispatch;
 } Manager;
-extern void initialize_hierarchy_node(Manager *);
+extern void TObject_ctor_8c0330e4(Manager *);
 extern int manager_ready;
 extern Manager *manager_instance;
 extern void start_manager_8c3c3fbc(int);
@@ -16,7 +16,7 @@ Manager *initialize_manager_8c014a7c(Manager *o)
     (void)home;
     {
         Manager *base = o;
-        initialize_hierarchy_node(base);
+        TObject_ctor_8c0330e4(base);
         base->dispatch = (void *)0x8c261240;
     }
     o->dispatch = (void *)0x8c2611b4;

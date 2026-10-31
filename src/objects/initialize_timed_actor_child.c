@@ -4,13 +4,13 @@ typedef char check_dispatch[(unsigned long)&((View *)0)->dispatch==24?1:-1];
 typedef char check_identifier[(unsigned long)&((View *)0)->identifier==32?1:-1];
 typedef char check_ticks[(unsigned long)&((View *)0)->ticks==36?1:-1];
 typedef char check_resource[(unsigned long)&((Actor *)0)->resource==804?1:-1];
-extern void base_at(View *,void *);
+extern void TObject_ctor_8c0330e4(View *,void *);
 extern Actor *lookup_at(unsigned int);
 extern void *find_at(void *,int,int);
 extern void set_at(void *,unsigned short);
 View *initialize_timed_actor_child(View *o,void *parent,unsigned short identifier) {
  View **home=&o; Actor *actor;
- base_at(o,parent);
+ TObject_ctor_8c0330e4(o,parent);
  o->dispatch=(void *)0x8c261944;
  o->identifier=identifier;
  o->ticks=10;

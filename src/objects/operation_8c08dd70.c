@@ -8,18 +8,18 @@ typedef struct S_g8c469dc8 {
     char unknown2[0x46];
 } S_g8c469dc8;
 extern S_g8c469dc8 *g_8c469dc8;
-extern int call_8c18de4c(int);
-extern void call_8c12b880(int, int, int);
+extern int operator_new_8c18de4c(int);
+extern void memset_8c12b880(int, int, int);
 void operation_8c08dd70(void)
 {
     int v1;
     short v2;
     int t1;
     g_8c469dc8 = (S_g8c469dc8 *)0;
-    t1 = call_8c18de4c(0x2400);
+    t1 = operator_new_8c18de4c(0x2400);
     g_8c469dc8 = (S_g8c469dc8 *)(int)(t1);
     if (t1 != 0) {
-        call_8c12b880(t1, 0, 0x2400);
+        memset_8c12b880(t1, 0, 0x2400);
         v1 = (int)0;
         v2 = -1;
         while (0x80 > v1) {

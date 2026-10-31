@@ -29,9 +29,9 @@ typedef struct S_c8c122700Data {
 } S_c8c122700Data;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4db408 *g_8c4db408;
-extern "C" S_c8c122700 *allocate_block(void *, unsigned int);
+extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_buffer_node_8c032bd8(void *, int, int, int);
-extern "C" void call_8c12b154(void *, int, int);
+extern "C" void strncpy_8c12b154(void *, int, int);
 extern "C" void call_8c032b70(Frame *);
 extern "C" void call_8c032d18(S_c8c122700 *, Frame *);
 extern "C" void call_8c20a6d0(void *);
@@ -39,11 +39,11 @@ extern "C" void operation_8c1717d4(int a0, int a1)
 {
     Frame frame;
     S_c8c122700 *t1;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x10ac);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x10ac);
     if (t1 != 0) {
         initialize_buffer_node_8c032bd8((void *)t1, 0, 0, 0);
     }
-    call_8c12b154(frame.f000, a1, 0x3ff);
+    strncpy_8c12b154(frame.f000, a1, 0x3ff);
     call_8c032b70((Frame *)((&frame)));
     call_8c032d18(t1, (Frame *)((&frame)));
     if (((S_c8c122700Data *)t1)->f10a0 > 2) {
@@ -53,9 +53,9 @@ extern "C" void operation_8c1717d4(int a0, int a1)
         t1->v0(1);
     } else {
         frame.f400.f08 = (int)(*(int *)((char *)((char *)g_8c4db408 + 0x0) + ((unsigned char)a0 << 2)));
-        call_8c12b154(frame.f400.f0c, (int)(((char *)t1 + 0x20)), 0xf);
+        strncpy_8c12b154(frame.f400.f0c, (int)(((char *)t1 + 0x20)), 0xf);
         frame.f400.f0c[0xf] = 0;
-        call_8c12b154(frame.f400.f20, (int)(((char *)t1 + 0x40)), 0x1ff);
+        strncpy_8c12b154(frame.f400.f20, (int)(((char *)t1 + 0x40)), 0x1ff);
         frame.f400.f20[0x1ff] = 0;
         call_8c20a6d0((void *)&frame.f400);
         if (t1 != 0) {

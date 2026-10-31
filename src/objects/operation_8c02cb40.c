@@ -10,7 +10,7 @@ struct Object {
     char f04;
 };
 extern int call_8c247778(int, char);
-void operation_8c02cb40(Object *o)
+void handle_6x9B_level_up_all_techniques_8c02cb40(Object *o)
 {
     int v1;
     short v2;

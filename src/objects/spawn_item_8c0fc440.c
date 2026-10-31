@@ -15,7 +15,7 @@ typedef struct Item {
 } Item;
 extern void *lookup_object_by_id(unsigned short);
 extern int can_spawn_8c0fca30(void *);
-extern void *allocate_block(void *, int);
+extern void *heap_alloc_8c122700(void *, int);
 extern void initialize_base_8c0db1d0(Item *, void *);
 extern void bind_item_8c0fc508(Item *, unsigned short);
 Item *spawn_item_8c0fc440(unsigned short id)
@@ -26,7 +26,7 @@ Item *spawn_item_8c0fc440(unsigned short id)
     if (id == none) return 0;
     owner = lookup_object_by_id(id);
     if (!can_spawn_8c0fca30(owner)) return 0;
-    item = allocate_block(*(void **)0x8c4d97e0, 0x7c);
+    item = heap_alloc_8c122700(*(void **)0x8c4d97e0, 0x7c);
     if (item) {
         Item *self = item;
         Item **home = &self;

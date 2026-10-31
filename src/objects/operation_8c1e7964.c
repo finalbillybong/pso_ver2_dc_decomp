@@ -41,7 +41,7 @@ struct Arg0_ec {
 };
 extern int g_8c32c1a4;
 extern void call_8c088f14(Object *, int, int);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void insert_object_by_id(void *);
 Object *operation_8c1e7964(Object *o, int a1, int a2)
 {
@@ -58,7 +58,7 @@ Object *operation_8c1e7964(Object *o, int a1, int a2)
     o->size = 0x1b0;
     o->ff4 = 0.0f;
     o->fe4 = 19.0f;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     switch (t1) {
     case 1:
     case 2:
@@ -89,7 +89,7 @@ Object *operation_8c1e7964(Object *o, int a1, int a2)
     insert_object_by_id((void *)o);
     o->f194 = 0;
     o->f198 = 0;
-    t2 = current_effect_mode();
+    t2 = get_current_area_8c032b10();
     if (t2 == 0) {
         o->f19c = -1;
     } else {

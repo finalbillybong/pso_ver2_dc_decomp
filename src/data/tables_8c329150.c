@@ -70,7 +70,7 @@ extern void operation_8c227ac4(void);
 extern void operation_8c227b0c(void);
 extern void load_global_resource_8c2327cc(void);
 extern void operation_193764_8c2327ec(void);
-extern void operation_8c157ff0(void);
+extern void load_item_pmt_8c157ff0(void);
 extern void operation_8c158088(void);
 
 const int d_8c329150[1] = {
@@ -154,6 +154,6 @@ Function const d_8c32915c[70] = {
     operation_8c227b0c,
     load_global_resource_8c2327cc,
     operation_193764_8c2327ec,
-    operation_8c157ff0,
+    load_item_pmt_8c157ff0,
     operation_8c158088
 };

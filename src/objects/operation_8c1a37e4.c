@@ -20,14 +20,14 @@ struct S_c8c122700 {
     char unknown0[0x68];
     short f68;
 };
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_selection_child(void *, void *, int, int, int);
 extern void operation_8c1bd94c(void *, int);
 extern void call_8c1bd9a4(S_c8c122700 *, float);
 S_c8c122700 *operation_8c1a37e4(int a0, int a1)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x7c);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x7c);
     if (t1 != 0) {
         initialize_selection_child((void *)t1, (void *)((void *)0x8c287bc0), 1, a1, 1);
     }

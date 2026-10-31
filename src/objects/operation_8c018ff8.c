@@ -44,7 +44,7 @@ struct S_vv1 {
 extern S_g8c418a00 *g_8c418a00;
 extern S_g8c4db9e0 *g_8c4db9e0;
 extern S_g8c4db9e4 *g_8c4db9e4;
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 extern int operation_8c2097a8(int);
 extern void call_8c253650(void *, void *);
 extern void call_8c02edf8(void *, void *, Frame *, void *);
@@ -54,7 +54,7 @@ void operation_8c018ff8(void)
     S_vv1 *v1;
     int t1;
     v1 = (S_vv1 *)g_8c4db9e4;
-    call_8c12b880((void *)(&(&frame)->fbc), 0, 0x18);
+    memset_8c12b880((void *)(&(&frame)->fbc), 0, 0x18);
     t1 = operation_8c2097a8(0x40000);
     if (t1 != 0) {
         (&frame)->fbc = 1;
@@ -62,7 +62,7 @@ void operation_8c018ff8(void)
         (&frame)->fbc = 0;
     }
     call_8c253650((void *)((int)v1 + 0x128c), (void *)(&(&frame)->fbc));
-    call_8c12b880((void *)(&frame), 0, 0xbc);
+    memset_8c12b880((void *)(&frame), 0, 0xbc);
     *(Block160 *)&(&frame)->f04 = *(Block160 *)&v1->f11c4;
     (&frame)->fa4 = v1->f11ac & 0xffff;
     (&frame)->fa6 = v1->f11ae & 0xffff;

@@ -7,8 +7,8 @@ extern int g_8c4189e4;
 extern int g_8c4189e8;
 extern int call_8c104d50(void *);
 extern int call_8c011e9c(int);
-extern void operation_8c104d00(int, int);
-void operation_8c013f54(void)
+extern void file_load_8c104d00(int, int);
+void load_light_entries_8c013f54(void)
 {
     int t1;
     int t2;
@@ -19,7 +19,7 @@ void operation_8c013f54(void)
         t2 = call_8c011e9c(t1);
         g_8c4189e4 = (int)(t2);
         if (t2 != 0) {
-            operation_8c104d00((int)((void *)0x8c2e2f0c), t2);
+            file_load_8c104d00((int)((void *)0x8c2e2f0c), t2);
         }
     }
 }

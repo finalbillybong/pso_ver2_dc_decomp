@@ -18,14 +18,14 @@ struct S_g8c467180_6c {
     S_g8c467180_6c_10 *f10;
     S_g8c467180_6c_14 *f14;
 };
-extern void call_8c12b880(int, int, int);
+extern void memset_8c12b880(int, int, int);
 extern int operation_8c2324a0(void);
 extern void call_8c18e720(int, void *);
 extern void call_8c12b084(int, void *);
 void operation_8c2323a0(int a0)
 {
     int t1;
-    call_8c12b880(a0 + 0x34, 0, 0x5dc);
+    memset_8c12b880(a0 + 0x34, 0, 0x5dc);
     t1 = operation_8c2324a0();
     if (t1 != 0) {
         call_8c18e720(a0 + 0x34, (*(S_g8c467180 **)0x8c467180)->f6c->f14);

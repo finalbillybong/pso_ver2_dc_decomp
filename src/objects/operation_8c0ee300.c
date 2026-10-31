@@ -24,12 +24,12 @@ struct Object {
     int f4c;
 };
 extern char g_8c308df8[];
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c0ee474(Object *, int);
 extern void reset_text_cursor_8c18ea38(void);
 extern void operation_8c18ea4c(int);
 extern void operation_8c18eb44(int);
-extern void call_8c12b154(void *, void *, int);
+extern void strncpy_8c12b154(void *, void *, int);
 extern int call_8c087268(void *);
 Object *operation_8c0ee300(Object *o, int a1, int a2, int a3, int a4, int a5, register short a6)
 {
@@ -37,7 +37,7 @@ Object *operation_8c0ee300(Object *o, int a1, int a2, int a3, int a4, int a5, re
     int t1;
     int t2;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)(*(S_g8c44bea0 **)0x8c44bea0));
+    TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44bea0 **)0x8c44bea0));
     o->dispatch = (void *)0x8c268060;
     o->tag = (int)(*(int *)0x8c308de8);
     o->size = 0x50;
@@ -57,7 +57,7 @@ Object *operation_8c0ee300(Object *o, int a1, int a2, int a3, int a4, int a5, re
         operation_8c18ea4c((int)(g_8c308df8 + 0xf));
     }
     operation_8c18eb44((int)((int)a6));
-    call_8c12b154((void *)(((char *)o + 0x2c)), (void *)((void *)0x8c4dbe40), 0xf);
+    strncpy_8c12b154((void *)(((char *)o + 0x2c)), (void *)((void *)0x8c4dbe40), 0xf);
     o->f3b = 0;
     t2 = call_8c087268((void *)(((char *)o + 0x2c)));
     o->f28 = (float)(unsigned int)t2;

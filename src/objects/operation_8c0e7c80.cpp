@@ -26,7 +26,7 @@ public:
 typedef struct S_vv23Data {
 
 } S_vv23Data;
-extern "C" void initialize_hierarchy_node(void *, void *);
+extern "C" void TObject_ctor_8c0330e4(void *, void *);
 extern "C" void call_8c041690(void);
 extern "C" void call_8c01d9dc(void);
 extern "C" void call_8c380516(void);
@@ -39,12 +39,12 @@ extern "C" void create_descriptor_managers(void);
 extern "C" void call_8c189ca0(int);
 extern "C" void call_8c01372c(void *, void *);
 extern "C" void call_8c0e7620(void *);
-extern "C" int current_effect_mode(void);
+extern "C" int get_current_area_8c032b10(void);
 extern "C" void operation_8c1bdedc(int);
 extern "C" void call_8c189d60(void);
 extern "C" void time_hierarchy_update(void *);
 extern "C" void call_8c173778(void);
-extern "C" void destroy_hierarchy_node(void *, short);
+extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void operation_8c0e7c80(void)
 {
     Frame frame;
@@ -52,7 +52,7 @@ extern "C" void operation_8c0e7c80(void)
     int v1;
     S_vv23 *v23;
     int t1;
-    initialize_hierarchy_node((void *)(&frame), (void *)0);
+    TObject_ctor_8c0330e4((void *)(&frame), (void *)0);
     call_8c041690();
     call_8c01d9dc();
     call_8c380516();
@@ -72,7 +72,7 @@ extern "C" void operation_8c0e7c80(void)
     call_8c189ca0(2);
     call_8c01372c((void *)((void *)0x8c41825c), (void *)(*(S_g8c418258 **)0x8c418258));
     call_8c0e7620((void *)((void *)0x8c46fec0));
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     operation_8c1bdedc(t1);
     call_8c189d60();
     time_hierarchy_update((void *)((void *)0x8c44bec8));
@@ -86,5 +86,5 @@ extern "C" void operation_8c0e7c80(void)
         v22 = (int)(v22 + 1);
     }
     call_8c173778();
-    destroy_hierarchy_node((void *)(&frame), (short)-1);
+    TObject_dtor_8c03311c((void *)(&frame), (short)-1);
 }

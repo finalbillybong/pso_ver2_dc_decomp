@@ -9,7 +9,7 @@ extern int g_init_count_8c3fb56c;
 extern Driver *g_driver_8c3fb570;
 extern int g_driver_arg_8c3fb574;
 extern void init_hardware_8c354594(void);
-extern void *memset(void *, int, unsigned long);
+extern void *memset_8c12b880(void *, int, unsigned long);
 extern char g_buffer_a_8c5383b0[], g_buffer_b_8c538830[];
 extern unsigned long g_levels_8c539050[0x200];
 extern Driver *create_driver_8c35569e(void);
@@ -26,8 +26,8 @@ void sound_init_8c352e24(void)
     register int *count = &g_init_count_8c3fb56c;
     if (*count == 0) {
         init_hardware_8c354594();
-        memset(g_buffer_a_8c5383b0, 0, 0x480);
-        memset(g_buffer_b_8c538830, 0, 0x820);
+        memset_8c12b880(g_buffer_a_8c5383b0, 0, 0x480);
+        memset_8c12b880(g_buffer_b_8c538830, 0, 0x820);
         {
             unsigned long *p = g_levels_8c539050;
             int n = 0x200;

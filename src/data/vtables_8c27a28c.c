@@ -3,7 +3,7 @@
 typedef void (*VirtualFunction)(void);
 
 extern void destroy_object_8c23b684(void);
-extern void operation_8c073578(void);
+extern void TItem_update_8c073578(void);
 extern void operation_8c073678(void);
 extern void operation_8c073e50(void);
 extern void hierarchy_output(void);
@@ -67,7 +67,7 @@ VirtualFunction const vt_8c27a28c[61] = {
     0,
     0,
     destroy_object_8c23b684,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,

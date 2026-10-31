@@ -1,17 +1,17 @@
 extern void func_8c352e24(void);
 extern void func_8c352ecc(void);
-extern void func_8c353030(void);
+extern void mwRnaCreate_8c353030(void);
 extern void func_8c35311e(int);
 extern void func_8c3531b6(void);
 extern void func_8c353208(int);
 extern void func_8c35357a(void);
 extern void func_8c353652(void);
 extern void func_8c353a74(void);
-extern void func_8c353c98(void);
+extern void mwRnaDiscardData_8c353c98(void);
 extern void func_8c353e60(void);
 extern void func_8c353ea0(void);
 extern void func_8c353f38(void);
-extern void func_8c353f78(void);
+extern void mwRnaSetNumChan_8c353f78(void);
 extern void func_8c354000(void);
 extern void func_8c35403c(void);
 extern void func_8c354094(void);
@@ -35,7 +35,7 @@ void snd_thunk_8c34e0be(void)
 
 void snd_thunk_8c34e0c4(void)
 {
-    func_8c353030();
+    mwRnaCreate_8c353030();
 }
 
 void snd_thunk_8c34e0ca(int x)
@@ -96,7 +96,7 @@ void snd_thunk_8c34e112(void)
 
 void snd_thunk_8c34e118(void)
 {
-    func_8c353f78();
+    mwRnaSetNumChan_8c353f78();
 }
 
 void snd_thunk_8c34e11e(void)
@@ -141,7 +141,7 @@ void snd_thunk_8c34e148(void)
 
 void snd_thunk_8c34e14e(void)
 {
-    func_8c353c98();
+    mwRnaDiscardData_8c353c98();
 }
 
 void snd_nop_8c34e154(void)

@@ -23,18 +23,18 @@ struct Object {
     short f2c;
     short f2e;
 };
-extern S_c8c122700 *allocate_block(void *, int);
-extern void initialize_actor_mode_state(S_c8c122700 *, Object *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, int);
+extern void TObjEnemyCustom_ctor_8c0c2354(S_c8c122700 *, Object *);
 extern void call_8c13a688(S_c8c122700 *);
 S_c8c122700 *create_actor_8c13bec4(Object *o, int a1, int a2)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, 0x3f0);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0x3f0);
     if (t1 != 0) {
         S_c8c122700 *self = t1;
         S_c8c122700 **home = &self;
         (void)home;
-        initialize_actor_mode_state(t1, o);
+        TObjEnemyCustom_ctor_8c0c2354(t1, o);
         self->f18 = (void *)0x8c26d24c;
         self->f20 = a1;
         self->f30 = a2;

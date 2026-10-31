@@ -46,7 +46,7 @@ struct Arg0_44 {
     short f04;
 };
 extern void call_8c0dd018(Object *);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 void operation_8c0dcdfc(Object *o)
 {
     int t1;
@@ -83,9 +83,9 @@ void operation_8c0dcdfc(Object *o)
         o->f40->f58 = 0;
         break;
     case 38:
-        t1 = current_effect_mode();
+        t1 = get_current_area_8c032b10();
         if (t1 != 0) {
-            t2 = current_effect_mode();
+            t2 = get_current_area_8c032b10();
             if (t2 != 0xf) {
                 if (o->f44 != 0) {
                     o->f44->f04 &= -5;

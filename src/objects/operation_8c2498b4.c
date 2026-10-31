@@ -25,7 +25,7 @@ struct S_g8c467180_2c {
 };
 extern int operation_8c24997c(void);
 extern int call_8c1196d4(void *, void *, int);
-extern void call_8c12b154(void *, void *, int);
+extern void strncpy_8c12b154(void *, void *, int);
 extern void operation_8c119764(int, int, int);
 extern void request_resource_release(void *);
 void operation_8c2498b4(Object *o)
@@ -55,7 +55,7 @@ L_8c2498ea:;
         if (o->f20 == 0) {
             return;
         }
-        call_8c12b154((void *)(((char *)o + 0x24)), (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f550), 0x7f);
+        strncpy_8c12b154((void *)(((char *)o + 0x24)), (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f550), 0x7f);
         o->fa3 = 0;
         operation_8c119764((int)(o->f20), (int)(((char *)o + 0x24)), 0);
         return;

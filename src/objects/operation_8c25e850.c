@@ -14,7 +14,7 @@ struct Object {
     int f20;
     int f24;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void operation_8c25eb44(Object *);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void operation_8c25ec50(Object *);
@@ -28,7 +28,7 @@ void operation_8c25e850(Object *o)
     int v1;
     int t1;
     S_c8c021ef8 *t2;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (t1 != 0 || *(int *)0x8c4e2ba0 == 0) {
         return;
     }

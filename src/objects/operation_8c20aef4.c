@@ -12,7 +12,7 @@ extern int g_8c418248;
 extern void operation_8c210b1c(void *);
 extern void call_8c210894(void);
 extern void operation_8c2107fc(int, short);
-void operation_8c20aef4(Object *o)
+void handle_6x74_word_select_8c20aef4(Object *o)
 {
     Object *self = o;
     if (self->f02 != g_8c418248) {

@@ -33,7 +33,7 @@ struct S_g8c46fe20 {
     char unknown0[0x20];
     short f20;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c1196d4(void *, void *, int);
 extern void call_8c119764(void *, void *, int);
 extern int call_8c156c6c(void *);
@@ -47,7 +47,7 @@ Object *operation_8c1a8f8c(Object *o, int a1)
     int t2;
     int t3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27463c;
     o->tag = *(int *)0x8c324020;
     o->size = 0x2c;

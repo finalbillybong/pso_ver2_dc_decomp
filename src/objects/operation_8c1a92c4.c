@@ -13,14 +13,14 @@ struct Object {
     int f24;
     int f28;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c1a948c(Object *);
 Object *operation_8c1a92c4(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c274658;
     t1 = call_8c1a948c(o);
     o->f24 = t1;

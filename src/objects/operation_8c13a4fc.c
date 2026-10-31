@@ -10,7 +10,7 @@ struct Object {
 };
 extern int g_8c4d9b9c;
 extern void call_8c154e80(Object *);
-void operation_8c13a4fc(Object *o)
+void handle_6x85_vol_opt_phase_2_boss_actions_8c13a4fc(Object *o)
 {
     if (g_8c4d9b9c != 0) {
         switch (o->f04) {

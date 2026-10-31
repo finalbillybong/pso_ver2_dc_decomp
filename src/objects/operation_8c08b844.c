@@ -5,8 +5,8 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c469da8 S_g8c469da8;
 extern S_g8c469da8 *g_8c469da8;
-extern int call_8c18de4c(int);
-extern void call_8c12b880(int, int, int);
+extern int operator_new_8c18de4c(int);
+extern void memset_8c12b880(int, int, int);
 void operation_8c08b844(void)
 {
     int v1;
@@ -14,10 +14,10 @@ void operation_8c08b844(void)
     int lim;
     int t1;
     g_8c469da8 = (S_g8c469da8 *)0;
-    t1 = call_8c18de4c(0x4400);
+    t1 = operator_new_8c18de4c(0x4400);
     g_8c469da8 = (S_g8c469da8 *)(int)(t1);
     if (t1 != 0) {
-        call_8c12b880(t1, 0, 0x4400);
+        memset_8c12b880(t1, 0, 0x4400);
         lim = 0x100;
         v1 = (int)0;
         m = -1;

@@ -43,7 +43,7 @@ extern void call_8c36d3ca(void *);
 extern void call_8c177a90(void);
 extern int operation_8c2324e0(void);
 extern int operation_8c2324c0(void);
-extern void call_8c12b77c(int, void *, int);
+extern void memcpy_8c12b77c(int, void *, int);
 extern void call_8c17f024(void *);
 extern void call_8c17eecc(void);
 int operation_8c180ae8(void)
@@ -94,8 +94,8 @@ int operation_8c180ae8(void)
         }
         (&g_8c4dbaf8)->f04 = (int)(v85);
         (&g_8c4dbaf8)->f00 = (int)(v85);
-        call_8c12b77c((int)((int)(g_8c4db9ec) + 4), g_8c4db9e0, 0x41c);
-        call_8c12b77c((int)((int)(g_8c4db9ec) + 0x420), (void *)g_8c4db9e4, 0x12d8);
+        memcpy_8c12b77c((int)((int)(g_8c4db9ec) + 4), g_8c4db9e0, 0x41c);
+        memcpy_8c12b77c((int)((int)(g_8c4db9ec) + 0x420), (void *)g_8c4db9e4, 0x12d8);
         call_8c17f024(g_8c4db9ec);
         call_8c17eecc();
     }

@@ -11,7 +11,7 @@ struct Object {
 };
 extern void call_8c053f54(void);
 extern void operation_8c052124(void *);
-extern void operation_8c0120f4(void *, int);
+extern void TObjEnemy_dtor_8c0120f4(void *, int);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1a0840(Object *o, int a1)
 {
@@ -19,7 +19,7 @@ Object *operation_8c1a0840(Object *o, int a1)
         o->dispatch = (void *)0x8c272d18;
         call_8c053f54();
         operation_8c052124((void *)o);
-        operation_8c0120f4((void *)o, 0);
+        TObjEnemy_dtor_8c0120f4((void *)o, 0);
         if ((short)a1 > 0) {
             call_8c122774((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), o);
         }

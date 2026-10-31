@@ -24,7 +24,7 @@ struct Arg0_24 {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void clear_global_render_resources(void);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c0ea148(Object *o, int a1)
 {
@@ -37,7 +37,7 @@ Object *operation_8c0ea148(Object *o, int a1)
         if (o->f24 != 0) {
             o->f24->f04 |= 1;
         }
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

@@ -10,7 +10,7 @@ extern char *g_data2_begin_8c3f3000;
 extern char *g_data2_end_8c3f300c;
 extern char *g_data2_rom_8c3f2ff8;
 extern int g_hook_arg_8c3f2fe8;
-extern void main_8c01bbec(void);
+extern void game_main_8c01bbec(void);
 extern void hook_init_8c367f02(int);
 extern void hook_exit_8c367f5a(int);
 
@@ -30,7 +30,7 @@ void startup_8c340848(void)
     startup_hook_8c340878();
     goto run;
 run:
-    main_8c01bbec();
+    game_main_8c01bbec();
     shutdown_hook_8c340880();
 }
 

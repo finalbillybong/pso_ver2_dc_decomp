@@ -21,14 +21,14 @@ struct S_vv42 {
     char unknown0[0x48];
     float f48;
 };
-extern "C" S_c8c122700 *allocate_block(void *, unsigned int);
+extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_effect(void *, void *, void *, int, int, int, int, unsigned short);
 extern "C" void reparent_hierarchy_node(void *, void *);
 extern "C" void operation_8c18582c(int a0, int a1)
 {
     S_vv42 *v42;
     S_c8c122700 *t1;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x68);
     if (t1 != 0) {
         initialize_effect((void *)t1, (void *)a0, (void *)(*(int *)0x8c46f100 + a1 * 0x98), 1, 0, 0, 1, (unsigned short)0x40);
     }

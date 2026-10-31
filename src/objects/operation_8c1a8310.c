@@ -25,9 +25,9 @@ extern void operation_8c03ed70(int);
 extern int call_8c18e768(int, int);
 extern int call_8c011e9c(int);
 extern void operation_8c03ef80(void *, ...);
-extern void call_8c34d6ae(void *, int, int);
-extern int call_8c34da3c(void *);
-extern void operation_8c104c60(void);
+extern void ADXF_ReadNw32_8c34d6ae(void *, int, int);
+extern int ADXF_GetStat_8c34da3c(void *);
+extern void loading_wait_frame_8c104c60(void);
 extern void call_8c0787cc(int, int);
 extern void call_8c011ec0(int);
 int operation_8c1a8310(int a0, int a1)
@@ -61,13 +61,13 @@ int operation_8c1a8310(int a0, int a1)
             if (t2 == 0) {
                 operation_8c03ef80((void *)((g_8c323ed4 + 0xd)));
             }
-            call_8c34d6ae((void *)((&frame)->f20), t3, t2);
+            ADXF_ReadNw32_8c34d6ae((void *)((&frame)->f20), t3, t2);
             for (;;) {
-                t4 = call_8c34da3c((void *)((&frame)->f20));
+                t4 = ADXF_GetStat_8c34da3c((void *)((&frame)->f20));
                 if (t4 == 3) {
                     break;
                 }
-                operation_8c104c60();
+                loading_wait_frame_8c104c60();
             }
             g_8c4df894 = &*(int *)((char *)((char *)g_8c4df894 + 0x0) + (t3 << 11));
             call_8c0787cc(t2, a1);
@@ -82,13 +82,13 @@ int operation_8c1a8310(int a0, int a1)
             return (int)(v9);
         }
     }
-    call_8c34d6ae((void *)((&frame)->f20), t3, a1);
+    ADXF_ReadNw32_8c34d6ae((void *)((&frame)->f20), t3, a1);
     for (;;) {
-        t5 = call_8c34da3c((void *)((&frame)->f20));
+        t5 = ADXF_GetStat_8c34da3c((void *)((&frame)->f20));
         if (t5 == 3) {
             break;
         }
-        operation_8c104c60();
+        loading_wait_frame_8c104c60();
     }
     g_8c4df894 = &*(int *)((char *)((char *)g_8c4df894 + 0x0) + (t3 << 11));
     if ((&frame)->f28 == 0) {

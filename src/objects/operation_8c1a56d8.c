@@ -31,7 +31,7 @@ extern void call_8c01c380(void);
 extern void operation_8c1a6240(Object *);
 extern void call_8c01c2c8(void);
 extern void set_global_8c17bb2c(void);
-extern void operation_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 void operation_8c1a56d8(Object *o)
 {
     int v1;
@@ -121,14 +121,14 @@ L_8c1a57ee:;
                 call_8c01c2c8();
                 operation_8c1a6240(o);
                 set_global_8c17bb2c();
-                operation_8c01c1a4(2);
+                request_game_mode_8c01c1a4(2);
                 break;
             case 1:
                 operation_8c1a6214(o);
                 call_8c01c380();
                 operation_8c1a6240(o);
                 set_global_8c17bb2c();
-                operation_8c01c1a4(2);
+                request_game_mode_8c01c1a4(2);
                 break;
             case 2:
                 o->f274->f04 |= 0x10;
@@ -142,7 +142,7 @@ L_8c1a57ee:;
             break;
         case 2:
             set_global_8c17bb2c();
-            operation_8c01c1a4(2);
+            request_game_mode_8c01c1a4(2);
             break;
         }
     }

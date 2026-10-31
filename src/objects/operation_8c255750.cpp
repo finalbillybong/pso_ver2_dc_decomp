@@ -34,7 +34,7 @@ public:
 typedef struct S_c8c021ef8Data {
 
 } S_c8c021ef8Data;
-extern "C" void initialize_hierarchy_node(void *, void *);
+extern "C" void TObject_ctor_8c0330e4(void *, void *);
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" int create_effect_7708(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
@@ -45,7 +45,7 @@ extern "C" Object *operation_8c255750(Object *o, int a1, int a2, int a3, int a4)
     int t2;
     int t3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)(void *)0x8c281268;
     o->tag = (int)(*(int *)0x8c33fddc);
     o->size = 0x2c;

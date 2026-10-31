@@ -1,7 +1,7 @@
 /* Provisional address-based name; preserve owner state transitions, repeated loads and signed cleanup conditions. */
 #include "src/include/resource_task_owner.h"
 #define texture_release_at ((void (*)(void *))0x8c033c68)
-#define base_destroy_at ((void (*)(ResourceTaskOwner *,short))0x8c03311c)
+#define TObject_dtor_8c03311c ((void (*)(ResourceTaskOwner *,short))0x8c03311c)
 #define free_at ((void (*)(void *,ResourceTaskOwner *))0x8c122774)
 static inline int owns(ResourceTaskState *r){
     return (r->flags&4)!=0;
@@ -34,7 +34,7 @@ ResourceTaskOwner *operation_193df8(ResourceTaskOwner *o,short release){
             }
         }
         if(o->textures&&((ResourceResidentView *)o->textures)->data->resident)texture_release_at(o->textures);
-        base_destroy_at(o,0);
+        TObject_dtor_8c03311c(o,0);
         if(release>0)free_at(*(void **)0x8c4d97e0,o);
     }
     return o;

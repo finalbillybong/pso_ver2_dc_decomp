@@ -20,7 +20,7 @@ struct S_L8c288da8 {
 };
 extern S_L8c288d18 g_8c288d18;
 extern S_L8c288da8 g_8c288da8;
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern int call_8c12b944(void);
 void operation_8c1a9a58(void)
 {
@@ -36,7 +36,7 @@ void operation_8c1a9a58(void)
     int t6;
     int t7;
     int w;
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     v1 = (int)(void *)0x8c4e18c0;
     v2 = (S_vv2 *)v1;
     v3 = (int)0;

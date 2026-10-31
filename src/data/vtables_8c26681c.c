@@ -4,8 +4,8 @@ typedef void (*VirtualFunction)(void);
 
 extern void operation_0c67c0(void);
 extern void fn_8c0c6818(void);
-extern void operation_8c0111c8(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_default_8c0111c8(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
@@ -29,8 +29,8 @@ VirtualFunction const vt_8c26681c[17] = {
     0,
     operation_0c67c0,
     fn_8c0c6818,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -50,8 +50,8 @@ VirtualFunction const vt_8c266860[17] = {
     0,
     operation_8c0c6c98,
     fn_8c0c6d00,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -72,6 +72,6 @@ VirtualFunction const vt_8c2668a4[7] = {
     destroy_particle_entries,
     update_particle_entries,
     fn_8c0c752c,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

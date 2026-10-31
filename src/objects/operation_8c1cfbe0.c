@@ -16,12 +16,12 @@ struct S_c8c122700 {
     int fa4;
     int fa8;
 };
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_follow_8c0a5ad0(void *);
 S_c8c122700 *operation_8c1cfbe0(void)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xc4);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xc4);
     if (t1 != 0) {
         initialize_follow_8c0a5ad0((void *)t1);
         t1->f18 = (void *)0x8c276d90;

@@ -7,7 +7,7 @@ typedef struct S_vv1 S_vv1;
 struct S_vv1 {
     int f00;
 };
-extern void operation_8c157ff0(void);
+extern void load_item_pmt_8c157ff0(void);
 extern int call_8c218938(int);
 void operation_8c157fa8(void)
 {
@@ -21,7 +21,7 @@ void operation_8c157fa8(void)
             }
         }
     }
-    operation_8c157ff0();
+    load_item_pmt_8c157ff0();
     t1 = call_8c218938(0);
     *(int *)0x8c4daaa8 = (int)(t1);
 }

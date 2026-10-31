@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern int call_8c34d35e(int, int);
-extern int call_8c34d9d4(int);
+extern int ADXF_GetFsizeByte_8c34d9d4(int);
 extern void call_8c34d4e8(int);
 int operation_8c104d14(int a0)
 {
@@ -14,7 +14,7 @@ int operation_8c104d14(int a0)
     if (t1 == 0) {
         return -1;
     }
-    t2 = call_8c34d9d4(t1);
+    t2 = ADXF_GetFsizeByte_8c34d9d4(t1);
     call_8c34d4e8(t1);
     return t2;
 }

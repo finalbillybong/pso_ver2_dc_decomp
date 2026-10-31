@@ -53,7 +53,7 @@ extern int g_8c4d8214;
 extern Triple g_8c4d8218;
 extern Owner *call_8c011ecc(int);
 extern void call_8c03d610(Owner *, int, void *, int, int, int);
-extern int call_8c118528(void *);
+extern int load_pvm_file_tls_8c118528(void *);
 void operation_8c1138bc(void)
 {
     Owner *o;
@@ -66,9 +66,9 @@ void operation_8c1138bc(void)
     }
     g_8c4d8200 = o;
     if (g_8c4703c0 == 3) {
-        g_8c4d8214 = call_8c118528(g_8c30ff94 + 0xa4);
+        g_8c4d8214 = load_pvm_file_tls_8c118528(g_8c30ff94 + 0xa4);
     } else {
-        g_8c4d8214 = call_8c118528(g_8c30ff94 + 0xbc);
+        g_8c4d8214 = load_pvm_file_tls_8c118528(g_8c30ff94 + 0xbc);
     }
     v = g_8c4d8200;
     g_8c4d8204.f00 = v->f42c->f08;

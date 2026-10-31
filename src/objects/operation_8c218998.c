@@ -19,14 +19,14 @@ extern int g_8c3363c4;
 extern int g_8c505900;
 extern int g_8c505904;
 extern int g_8c505908;
-extern void initialize_hierarchy_node(void *, void *);
-extern int call_8c18de4c(int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern int operator_new_8c18de4c(int);
 extern int call_8c12b944(void);
 extern int call_8c011ecc(int);
 extern void construct_seeded_random_state(void *, unsigned int);
 extern void operation_193470(void *, int, int, unsigned int, int);
 extern int call_8c21871c(void *);
-Object *operation_8c218998(Object *o, int a1, int a2)
+Object *TItemDrop_ctor_8c218998(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int v1;
@@ -39,12 +39,12 @@ Object *operation_8c218998(Object *o, int a1, int a2)
     int t7;
     int t8;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c278350;
     o->tag = (int)(g_8c3363c4);
     o->size = 0x28;
     g_8c3363a0 = (char)a2;
-    t1 = call_8c18de4c(0x44);
+    t1 = operator_new_8c18de4c(0x44);
     v1 = (int)0;
     o->f24 = (Arg0_24 *)t1;
     while (v1 != 0x11) {

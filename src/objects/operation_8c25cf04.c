@@ -18,7 +18,7 @@ struct Object {
     Arg0_34 *f34;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c22c570(int, Object *);
 extern void call_8c22c8dc(void *, float);
 extern void call_8c22c970(void *, float);
@@ -28,7 +28,7 @@ void operation_8c25cf04(Object *o)
     switch (o->f20) {
     case 1:
         if (o->f34 == 0) {
-            t1 = allocate_block(g_8c4d97e0, (unsigned int)0x30);
+            t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x30);
             if (t1 != 0) {
                 call_8c22c570(t1, o);
             }

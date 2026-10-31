@@ -10,7 +10,7 @@ extern char g_8c5108e0;
 extern void operation_8c01c244(int);
 extern void operation_8c1ca7d0(int);
 extern void select_mode12_8c1cc5b8(void);
-extern void operation_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 void operation_8c0400b0(void)
 {
     if (g_8c466dc2 != 0) {
@@ -42,5 +42,5 @@ L_8c0400fe:;
     select_mode12_8c1cc5b8();
     return;
 L_8c040118:;
-    operation_8c01c1a4(0x1d);
+    request_game_mode_8c01c1a4(0x1d);
 }

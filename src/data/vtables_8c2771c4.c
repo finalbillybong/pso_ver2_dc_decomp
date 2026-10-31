@@ -5,7 +5,7 @@ typedef void (*VirtualFunction)(void);
 extern void operation_8c1daec0(void);
 extern void fn_8c1db0b8(void);
 extern void fn_8c1dafbc(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
@@ -17,13 +17,13 @@ extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
 extern void destroy_color_rise_8c1da974(void);
-extern void operation_8c0111c4(void);
+extern void TObject_update_default_8c0111c4(void);
 extern void operation_8c1da9c4(void);
 extern void operation_8c1da574(void);
 extern void fn_8c1da714(void);
 extern void fn_8c1da628(void);
 extern void destroy_object_8c1da17c(void);
-extern void operation_8c0111c8(void);
+extern void TObject_render_default_8c0111c8(void);
 extern void destroy_object_8c1db480(void);
 extern void fn_8c1db678(void);
 extern void fn_8c1db550(void);
@@ -39,7 +39,7 @@ VirtualFunction const vt_8c2771c4[16] = {
     operation_8c1daec0,
     fn_8c1db0b8,
     fn_8c1dafbc,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -57,9 +57,9 @@ VirtualFunction const vt_8c277204[16] = {
     0,
     0,
     destroy_color_rise_8c1da974,
-    operation_8c0111c4,
+    TObject_update_default_8c0111c4,
     operation_8c1da9c4,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -79,7 +79,7 @@ VirtualFunction const vt_8c277244[16] = {
     operation_8c1da574,
     fn_8c1da714,
     fn_8c1da628,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -97,9 +97,9 @@ VirtualFunction const vt_8c277284[16] = {
     0,
     0,
     destroy_object_8c1da17c,
-    operation_8c0111c4,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_update_default_8c0111c4,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,

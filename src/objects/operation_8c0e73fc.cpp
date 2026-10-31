@@ -58,7 +58,7 @@ typedef struct S_c8c021ef8Data {
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void create_effect_777c(void *, int);
 extern "C" void set_330(void *, short);
-extern "C" void operation_8c0e73fc(Object *o)
+extern "C" void handle_6x66_use_star_atomizer_8c0e73fc(Object *o)
 {
     Object *self = o;
     int v4;

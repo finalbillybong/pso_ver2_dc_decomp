@@ -3,7 +3,7 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 int operation_8c02c0c4(void)
 {
     int v1;
@@ -14,6 +14,6 @@ int operation_8c02c0c4(void)
             return *(int *)0x8c44be04;
         }
     }
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     return t1;
 }

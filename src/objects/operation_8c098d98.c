@@ -26,20 +26,20 @@ struct S_L8c2f5b38 {
 extern int g_8c460900;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c2f5b38 g_8c2f5b38;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c034c7c(void *);
 S_c8c122700 *operation_8c098d98(int a0)
 {
     int v2;
     S_c8c122700 *t1;
     int t2;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x48);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x48);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;
         (void)home;
-        initialize_hierarchy_node((void *)t1, (void *)a0);
+        TObject_ctor_8c0330e4((void *)t1, (void *)a0);
         self->f18 = (void *)0x8c265784;
         self->f20 = (S_c8c122700_20 *)g_8c460900;
         self->f24 = 0;

@@ -12,7 +12,7 @@ struct Object {
 };
 extern void call_8c0eeb58(void);
 extern int call_8c17796c(int);
-extern int call_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern void operation_8c05428c(void *, int, int);
 void operation_8c1af8bc(Object *o)
 {
@@ -52,7 +52,7 @@ L_8c1af92c:;
         }
         t4 = call_8c17796c(0x2f);
         if (t4 == 0) {
-            t5 = call_8c01c25c();
+            t5 = get_game_mode_8c01c25c();
             if (t5 != 0x10) {
                 return;
             }

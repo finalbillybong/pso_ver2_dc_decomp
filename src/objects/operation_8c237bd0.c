@@ -8,16 +8,16 @@ struct Object {
     char unknown0[0x4];
     short f04;
 };
-extern int operation_8c01c25c(void);
-extern int current_effect_mode(void);
+extern int get_game_mode_8c01c25c(void);
+extern int get_current_area_8c032b10(void);
 int operation_8c237bd0(Object *o)
 {
     int t1;
     int t2;
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     switch (t1) {
     case 16:
-        t2 = current_effect_mode();
+        t2 = get_current_area_8c032b10();
         if (t2 != 0xf) {
             goto L_8c237c10;
         }

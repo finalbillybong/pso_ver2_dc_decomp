@@ -37,13 +37,13 @@ struct Arg1 {
     Block24 f00;
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void call_8c12b880(Frame *, int, int);
+extern "C" void memset_8c12b880(Frame *, int, int);
 extern "C" void operation_8c02fbcc(Object *o, Arg1 *a1)
 {
     Frame frame;
     o->v4((g_8c2e7ce0 + 0x671));
     if (((ObjectData *)o)->fa7c != 0) {
-        call_8c12b880((Frame *)((&frame)), 0, 0x1c);
+        memset_8c12b880((Frame *)((&frame)), 0, 0x1c);
         (&frame)->f00 = 0xc2;
         (&frame)->f01 = 0;
         (&frame)->f02 = 0x1c;

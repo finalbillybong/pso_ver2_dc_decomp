@@ -21,8 +21,8 @@ public:
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" void call_8c12b880(Frame *, int, int);
-extern "C" void call_8c12b154(Frame *, int, int);
+extern "C" void memset_8c12b880(Frame *, int, int);
+extern "C" void strncpy_8c12b154(Frame *, int, int);
 extern "C" int call_8c1fbac0(Frame *);
 extern "C" int call_8c1fbb36(int, void *);
 extern "C" void call_8c01daf0(void);
@@ -51,8 +51,8 @@ extern "C" int operation_8c0105b4(Object *o, int a1)
     int t3;
     int t4;
     v6 = (char *)&frame;
-    call_8c12b880((Frame *)v6, 0, 0x20);
-    call_8c12b154((Frame *)v6, a1, 0x1f);
+    memset_8c12b880((Frame *)v6, 0, 0x20);
+    strncpy_8c12b154((Frame *)v6, a1, 0x1f);
     if (char_class((&frame)->f00) != 0) {
         o->v4((Frame *)v6);
         t1 = call_8c1fbac0((Frame *)v6);

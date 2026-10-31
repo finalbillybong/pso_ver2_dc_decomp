@@ -1,9 +1,9 @@
 /* Provisional address-based name; preserve owner state transitions, repeated loads and signed cleanup conditions. */
 #include "src/include/resource_task_owner.h"
-#define base_at ((void (*)(ResourceTaskOwner *,void *))0x8c0330e4)
+#define TObject_ctor_8c0330e4 ((void (*)(ResourceTaskOwner *,void *))0x8c0330e4)
 ResourceTaskOwner *operation_193d9c(ResourceTaskOwner *o,void *parent,int index,int argument1,int argument2){
     int i;
-    base_at(o,parent);
+    TObject_ctor_8c0330e4(o,parent);
     o->dispatch=(void *)0x8c2727c8;
     o->index=index;
     o->state=0;

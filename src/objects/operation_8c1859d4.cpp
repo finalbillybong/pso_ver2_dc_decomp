@@ -41,7 +41,7 @@ extern float g_8c286260;
 extern int g_8c46f100;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4dbb60 *g_8c4dbb60;
-extern "C" S_c8c122700 *allocate_block(void *, unsigned int);
+extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_effect(void *, void *, void *, int, int, int, int, unsigned short);
 extern "C" void call_8c3bdf60(int, void *);
 extern "C" void reparent_hierarchy_node(void *, void *);
@@ -59,7 +59,7 @@ extern "C" void operation_8c1859d4(Object *o)
         o->f20 = v2 - v1;
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f2c;
         (&frame)->f00.f04 = o->f28->f00 - g_8c286260 + (&frame)->f00.f04;
-        t1 = allocate_block(g_8c4d97e0, (unsigned int)0x68);
+        t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
         if (t1 != 0) {
             initialize_effect((void *)t1, (void *)(&frame), (void *)(g_8c46f100 + 0xda80), 1, 0, 0, 1, (unsigned short)0x40);
         }

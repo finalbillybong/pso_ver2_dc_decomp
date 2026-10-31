@@ -7,7 +7,7 @@ typedef char check_layout[sizeof(Vector)==12 && sizeof(Actor)==72 && sizeof(Came
 extern char effect_vtable[];
 extern void *object_name,*heap;
 extern Camera *camera;
-extern void base_at(Effect *,void *),base_destroy_at(Effect *,int),release_at(void *,void *),subtract_at(Vector *,Vector *),set_position_at(Child *,Vector *);
+extern void TObject_ctor_8c0330e4(Effect *,void *),TObject_dtor_8c03311c(Effect *,int),release_at(void *,void *),subtract_at(Vector *,Vector *),set_position_at(Child *,Vector *);
 extern int valid_at(Actor *);
 extern float normalize_at(Vector *);
 extern Child *spawn_at(Vector *,int,int);
@@ -15,7 +15,7 @@ Effect *destroy_offset_owner_effect(Effect *o,short mode) {
     if(o) {
         o->vtable=effect_vtable;
         if(o->child) { o->child->flags|=1; o->child=0; }
-        base_destroy_at(o,0);
+        TObject_dtor_8c03311c(o,0);
         if(mode>0) release_at(heap,o);
     }
     return o;

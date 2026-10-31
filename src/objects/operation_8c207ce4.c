@@ -37,7 +37,7 @@ extern S_g8c4d59d8 *g_8c4d59d8;
 extern S_g8c504964 *g_8c504964;
 extern S_g8c5049ec *g_8c5049ec;
 extern S_g8c505960 *g_8c505960;
-extern void call_8c12b77c(void *, int, int);
+extern void memcpy_8c12b77c(void *, int, int);
 extern int call_8c2509e4(void);
 extern void request_resource_release(void *);
 extern int call_8c1196d4(void *, Frame *, int);
@@ -50,7 +50,7 @@ void operation_8c207ce4(int a0)
     int t1;
     int t2;
     if (g_8c504964 != 0) {
-        call_8c12b77c(g_8c504964, a0, 0x124);
+        memcpy_8c12b77c(g_8c504964, a0, 0x124);
         if (g_8c505960 != 0) {
             ((S_g8c505960_s4 *)((char *)g_8c505960 + 0x4))->f24 = 2;
         }

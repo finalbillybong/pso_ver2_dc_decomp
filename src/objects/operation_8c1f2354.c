@@ -39,7 +39,7 @@ extern void call_8c3addea(void *, void *, float);
 extern void operation_8c0746c8(int);
 extern void call_8c38ad10(void);
 extern void call_8c391cc4(void);
-void operation_8c1f2354(Object *o)
+void TItemMagSub_render_8c1f2354(Object *o)
 {
     if (o->f28 != 0) {
         g_8c4e3160 = o;

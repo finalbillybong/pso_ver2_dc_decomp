@@ -20,13 +20,13 @@ extern void reset_format_8c3b99c0(int);
 extern int channel_setup_8c3b99ec(Channel *, int, int, int);
 extern int channel_release_8c3ba068(Channel *);
 
-static void release_channels_8c356efe(Channel *c, int n);
+static void mwRnv2FreeTex_8c356efe(Channel *c, int n);
 
 void channels_setup_8c356e70(Manager *m, int mode, int format)
 {
     int i, n, rate, flags, cur;
     Channel *c, *base;
-    release_channels_8c356efe(m->channels, m->count);
+    mwRnv2FreeTex_8c356efe(m->channels, m->count);
     n = m->count;
     base = m->channels;
     cur = m->format;
@@ -45,7 +45,7 @@ void channels_setup_8c356e70(Manager *m, int mode, int format)
     }
 }
 
-static void release_channels_8c356efe(Channel *c, int n)
+static void mwRnv2FreeTex_8c356efe(Channel *c, int n)
 {
     int i;
     for (i = 0; i < n; i++) {

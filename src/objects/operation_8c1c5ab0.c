@@ -21,7 +21,7 @@ struct S_c8c053d84 {
     char unknown0[0xdc];
     int fdc;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
 extern int create_effect_769c(void *, int);
 Object *operation_8c1c5ab0(Object *o, int a1, int a2, int a3)
@@ -30,7 +30,7 @@ Object *operation_8c1c5ab0(Object *o, int a1, int a2, int a3)
     S_c8c053d84 *t1;
     int t2;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c276668;
     o->tag = (int)(*(int *)0x8c328c80);
     o->size = 0x2c;

@@ -23,7 +23,7 @@ struct Object {
 struct Arg1 {
     Vector3 f00;
 };
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0b8200(int, void *, void *, int, float, void *);
 extern int call_8c05fbf8(int, void *, int, int);
 extern void emit_control_60320(int, int, int);
@@ -42,7 +42,7 @@ void operation_8c0b7d40(Object *o, Arg1 *a1)
     if (o->f6c != 0xa) {
         return;
     }
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x64);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x64);
     if (t1 != 0) {
         call_8c0b8200(t1, (void *)(&o->f84), (void *)(o->f80), 0xa, (float)o->f7e, (void *)(*(S_g8c44bea0 **)0x8c44bea0));
     }

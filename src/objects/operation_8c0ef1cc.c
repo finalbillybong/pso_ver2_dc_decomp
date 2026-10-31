@@ -8,13 +8,13 @@ struct Object {
     char unknown0[0x108];
     int f108;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c05fbf8(int, void *, int, int);
 void operation_8c0ef1cc(Object *o)
 {
     int t1;
     if (((o->f108 & 1)) == 0) {
-        t1 = current_effect_mode();
+        t1 = get_current_area_8c032b10();
         switch (t1) {
         case 0:
             call_8c05fbf8(0x40004, (void *)(((char *)o + 0x3c)), 0, 0);

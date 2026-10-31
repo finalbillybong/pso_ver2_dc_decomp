@@ -26,7 +26,7 @@ typedef struct ObjectData {
     int fb12c;
 } ObjectData;
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02dd30(Object *o)
+extern "C" void handle_cmd_05_disconnect_8c02dd30(Object *o)
 {
     o->v4((g_8c2e7ce0 + 0x186));
     o->v6();

@@ -33,7 +33,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern "C" char g_8c2e7ce0[];
 extern "C" int operation_8c02e868(void *);
-extern "C" void operation_8c02e2a8(Object *o, Arg1 *a1)
+extern "C" void handle_cmd_19_reconnect_to_different_address_8c02e2a8(Object *o, Arg1 *a1)
 {
     int t1;
     o->v4((g_8c2e7ce0 + 0x275));

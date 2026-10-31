@@ -88,7 +88,8 @@ verified locally; CI does not claim to rebuild the game.
 - [docs/CLASSES.md](docs/CLASSES.md) lists the 730 C++ classes recovered from vtables and the game's own
   class-name strings, with constructors, destructors, sizes and parents.
 - [config/names.json](config/names.json) proposes descriptive names for about 4,900 functions and globals
-  (high and medium confidence, each with a short reason). The names are not applied to `src/` yet.
+  (high and medium confidence, each with a short reason). The high-confidence curated names are applied to `src/`
+  with an address suffix (e.g. `game_main_8c01bbec`); the rest are proposals only.
   Look an address or name up with:
 
   ```sh

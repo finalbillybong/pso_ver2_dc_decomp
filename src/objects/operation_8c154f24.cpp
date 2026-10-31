@@ -181,7 +181,7 @@ extern "C" float call_8c37eb0c(void *);
 extern "C" int lookup_low_id(int);
 extern "C" float distance_xz(void *, void *);
 extern "C" void call_8c15558c(Object *);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c15a900(void *, void *, int);
 extern "C" void release_slots_8c15561c(void *);
 extern "C" void operation_8c154f24(Object *o)
@@ -343,7 +343,7 @@ extern "C" void operation_8c154f24(Object *o)
         v63 = 0;
         ((ObjectData *)o)->f358 = (short)g_8c4da87c->f2c;
         while (4 > v63) {
-            t6 = allocate_block(g_8c4d97e0, (unsigned int)0xf8);
+            t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xf8);
             if (0 != t6) {
                 operation_8c15a900((void *)t6, (void *)(v64 + ((int)o + v63 * 0xc)), (int)o);
             }

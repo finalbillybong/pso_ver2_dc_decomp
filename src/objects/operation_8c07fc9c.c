@@ -10,7 +10,7 @@ struct S_x26288_0 {
     int f68;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c1ab01c(void *, int, int, int);
 void operation_8c07fc9c(int a0)
 {
@@ -27,7 +27,7 @@ void operation_8c07fc9c(int a0)
             (*(S_x26288_0 **)((char *)((char *)(a0 + v1) + 0x0) + (v3)))->f68 |= 2;
             v4 = (char *)*(int *)((char *)((char *)(a0 + v1) + 0x0) + (v3));
             if (v4 != 0) {
-                t1 = allocate_block(g_8c4d97e0, (unsigned int)0x2c);
+                t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x2c);
                 if (t1 != 0) {
                     operation_8c1ab01c((void *)t1, (int)(v4), (int)((void *)0x8c1f28f0), 0x1e);
                 }

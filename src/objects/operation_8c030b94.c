@@ -14,7 +14,7 @@ extern S_g8c44be3c *g_8c44be3c;
 extern char g_8c2e8428[];
 extern void call_8c03ef04(Frame *, int, void *);
 extern int call_8c104d50(Frame *);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern int call_8c011e9c(void *);
 extern int call_8c105380(Frame *, int);
 void operation_8c030b94(int a0)
@@ -30,7 +30,7 @@ void operation_8c030b94(int a0)
     t1 = call_8c104d50((Frame *)((&frame)));
     g_8c44be3c = (S_g8c44be3c *)(int)(t1);
     if (t1 > 0) {
-        t2 = current_effect_mode();
+        t2 = get_current_area_8c032b10();
         if (t2 == 0xf) {
             if ((int)(g_8c44be3c) > 0xa000) {
                 g_8c44be3c = (S_g8c44be3c *)0;

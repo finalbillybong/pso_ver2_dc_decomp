@@ -37,7 +37,7 @@ struct Arg0_5c {
     int f00;
 };
 extern int g_8c46ed18;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern int advance_counter_8c01d5e8(int);
 int operation_8c08fde8(Object *o, Arg1 *a1)
 {
@@ -51,7 +51,7 @@ int operation_8c08fde8(Object *o, Arg1 *a1)
     int t2;
     int t3;
     int v8;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (*(int *)((char *)0x8c2ee8b8 + (t1 << 2)) == 0) {
         o->f100 = (void *)0;
         return 0;

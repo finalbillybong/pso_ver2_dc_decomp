@@ -22,8 +22,8 @@ typedef struct ObjectData {
 extern "C" char g_8c2e7ce0[];
 extern "C" int call_8c0105b4(int, int);
 extern "C" void call_8c010728(int, unsigned short);
-extern "C" void call_8c12b880(void *, int, int);
-extern "C" void call_8c12b154(void *, int, int);
+extern "C" void memset_8c12b880(void *, int, int);
+extern "C" void strncpy_8c12b154(void *, int, int);
 extern "C" int operation_8c02fe0c(Object *o, int a1, int a2, int a3, int a4, int a5, unsigned short a6)
 {
     int t1;
@@ -34,14 +34,14 @@ extern "C" int operation_8c02fe0c(Object *o, int a1, int a2, int a3, int a4, int
     if (t1 != 0) {
         return 2;
     }
-    call_8c12b880((void *)(((char *)o + 0x3024)), 0, 0x11);
-    call_8c12b880((void *)(((char *)o + 0x3035)), 0, 0x11);
-    call_8c12b880((void *)(((char *)o + 0x30f6)), 0, 0x11);
-    call_8c12b880((void *)(((char *)o + 0x3107)), 0, 0x11);
-    call_8c12b154((void *)(((char *)o + 0x3024)), a1, 8);
-    call_8c12b154((void *)(((char *)o + 0x3035)), a2, 8);
-    call_8c12b154((void *)(((char *)o + 0x30f6)), a3, 8);
-    call_8c12b154((void *)(((char *)o + 0x3107)), a4, 8);
+    memset_8c12b880((void *)(((char *)o + 0x3024)), 0, 0x11);
+    memset_8c12b880((void *)(((char *)o + 0x3035)), 0, 0x11);
+    memset_8c12b880((void *)(((char *)o + 0x30f6)), 0, 0x11);
+    memset_8c12b880((void *)(((char *)o + 0x3107)), 0, 0x11);
+    strncpy_8c12b154((void *)(((char *)o + 0x3024)), a1, 8);
+    strncpy_8c12b154((void *)(((char *)o + 0x3035)), a2, 8);
+    strncpy_8c12b154((void *)(((char *)o + 0x30f6)), a3, 8);
+    strncpy_8c12b154((void *)(((char *)o + 0x3107)), a4, 8);
     t2 = o->v5();
     if (!(t2 >= 0)) {
         o->v4((g_8c2e7ce0 + 0x319));

@@ -22,7 +22,7 @@ struct S_vv1 {
 extern unsigned short g_8c46fe24;
 extern Block128 g_8c4e2fa4;
 extern int call_8c1dc8b4(S_vv1 *);
-void operation_8c1dc9e4(int a0)
+void handle_6x06_send_guild_card_8c1dc9e4(int a0)
 {
     S_vv1 *v1;
     int v2;

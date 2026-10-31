@@ -25,7 +25,7 @@ extern Block44 g_8c300d08;
 extern float g_8c300d60;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void call_8c0a2858(Frame *);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c099698(Object *o, int a1)
 {
@@ -36,7 +36,7 @@ Object *operation_8c099698(Object *o, int a1)
         (&frame)->f00.f0c = 422.400024f;
         call_8c0a2858((Frame *)((&frame)));
         g_8c300d60 = 1.0f;
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

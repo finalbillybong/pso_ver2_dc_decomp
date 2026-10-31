@@ -44,7 +44,7 @@ struct S_g8c506144_0 {
 };
 extern int g_8c506140;
 extern S_g8c506144 *g_8c506144;
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c01c434(void);
 Object *operation_8c225f04(Object *o, int a1)
 {
@@ -53,7 +53,7 @@ Object *operation_8c225f04(Object *o, int a1)
     int off;
     Object *v1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c278b2c;
     o->f20 = 0;
     o->f28 = 0.0f;

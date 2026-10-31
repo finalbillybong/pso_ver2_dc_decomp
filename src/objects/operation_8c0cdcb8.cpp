@@ -33,7 +33,7 @@ typedef struct Arg0_3c8Data {
 } Arg0_3c8Data;
 extern "C" void operation_8c052124(void *);
 extern "C" void destroy_field_8c114790(void *, short);
-extern "C" void destroy_actor_mode_state(void *, short);
+extern "C" void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
 extern "C" void call_8c122774(void *, Object *);
 extern "C" Object *operation_8c0cdcb8(Object *o, int a1)
 {
@@ -55,7 +55,7 @@ extern "C" Object *operation_8c0cdcb8(Object *o, int a1)
             o->f3c8->v0(1);
         }
         destroy_field_8c114790((void *)(((char *)o + 0x3cc)), (short)-1);
-        destroy_actor_mode_state((void *)o, (short)0);
+        TObjEnemyCustom_dtor_8c0c23c8((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), o);
         }

@@ -16,8 +16,8 @@ struct Object {
 };
 extern void operation_8c22c190(void *);
 extern int call_8c34d43c(int, void *);
-extern int call_8c34d9b8(void *);
-extern void call_8c34d6ae(void *, int, void *);
+extern int ADXF_GetFsizeSct_8c34d9b8(void *);
+extern void ADXF_ReadNw32_8c34d6ae(void *, int, void *);
 int operation_8c22c100(Object *o, int a1)
 {
     int t1;
@@ -35,12 +35,12 @@ int operation_8c22c100(Object *o, int a1)
             return 0;
         }
         o->f24 = 1;
-        t2 = call_8c34d9b8((void *)(o->f2c));
+        t2 = ADXF_GetFsizeSct_8c34d9b8((void *)(o->f2c));
         if (!(t2 >= 0)) {
             operation_8c22c190((void *)o);
             return 0;
         }
-        call_8c34d6ae((void *)(o->f2c), t2, (void *)(o->f20));
+        ADXF_ReadNw32_8c34d6ae((void *)(o->f2c), t2, (void *)(o->f20));
         return 1;
     }
     return 0;

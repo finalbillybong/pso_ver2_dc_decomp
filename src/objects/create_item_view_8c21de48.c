@@ -14,7 +14,7 @@ struct S_c8c122700 {
     char unknown20[0x14];
     int f34;
 };
-extern S_c8c122700 *allocate_block(void *, int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, int);
 extern void call_8c0db1d0(S_c8c122700 *, void *);
 extern void call_8c21e000(S_c8c122700 *);
 extern void call_8c0dc854(S_c8c122700 *);
@@ -22,7 +22,7 @@ extern void call_8c21e0ec(S_c8c122700 *);
 S_c8c122700 *create_item_view_8c21de48(void)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, 0x6c);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0x6c);
     if (t1 != 0) {
         S_c8c122700 *self = t1;
         S_c8c122700 **home = &self;

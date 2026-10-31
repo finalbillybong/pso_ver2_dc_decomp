@@ -19,7 +19,7 @@ extern char str_8c2e1110[];
 extern char str_8c2e111c[];
 extern char str_8c2e1124[];
 
-char *name_a_8c200d64(int n)
+char *ppp_lcp_code_name_8c200d64(int n)
 {
     switch (n) {
     case 1:
@@ -51,7 +51,7 @@ char *name_a_8c200d64(int n)
     }
 }
 
-char *name_b_8c200de2(int n)
+char *ppp_fsm_state_name_8c200de2(int n)
 {
     switch (n) {
     case 0:

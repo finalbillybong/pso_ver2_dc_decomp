@@ -19,16 +19,16 @@ extern S_g8c418248 *g_8c418248;
 extern S_g8c44be84 *g_8c44be84;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_c8c122700 *g_8c513320;
-extern int current_effect_mode(void);
-extern S_c8c122700 *allocate_block(void *, int);
-extern void initialize_hierarchy_node(S_c8c122700 *, void *);
+extern int get_current_area_8c032b10(void);
+extern S_c8c122700 *heap_alloc_8c122700(void *, int);
+extern void TObject_ctor_8c0330e4(S_c8c122700 *, void *);
 extern int lookup_low_id(void *);
 int operation_8c256a90(void)
 {
     int t1;
     S_c8c122700 *t2;
     int t3;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (t1 != 0x10) {
         if (t1 != 0x11) {
             return 0;
@@ -37,12 +37,12 @@ int operation_8c256a90(void)
     if (g_8c513320 != 0) {
         return 0;
     }
-    t2 = allocate_block(g_8c4d97e0, 0x2c);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, 0x2c);
     if (t2 != 0) {
         S_c8c122700 *self = t2;
         S_c8c122700 **home = &self;
         (void)home;
-        initialize_hierarchy_node(t2, g_8c44be84);
+        TObject_ctor_8c0330e4(t2, g_8c44be84);
         self->f18 = (void *)0x8c281850;
         self->f20 = 0x3de;
         self->f24 = 0x1e;

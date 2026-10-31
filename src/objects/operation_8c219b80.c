@@ -9,13 +9,13 @@ typedef struct S_x60752 S_x60752;
 struct S_x60752 {
     unsigned char f00;
 };
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 extern void call_8c219bd8(void);
 void operation_8c219b80(void)
 {
     int v1;
     unsigned char v2;
-    call_8c12b880((void *)(*(S_g8c505920 **)0x8c505920), 0, 0xd);
+    memset_8c12b880((void *)(*(S_g8c505920 **)0x8c505920), 0, 0xd);
     call_8c219bd8();
     v1 = (int)0;
     while (v1 != 0x84) {

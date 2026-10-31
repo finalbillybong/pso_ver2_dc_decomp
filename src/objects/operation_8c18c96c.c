@@ -18,8 +18,8 @@ extern int g_8c418248;
 extern Table *g_8c467180;
 extern int g_8c4dc800;
 extern int lookup_low_id(int);
-extern int current_effect_mode(void);
-extern int operation_8c01c25c(void);
+extern int get_current_area_8c032b10(void);
+extern int get_game_mode_8c01c25c(void);
 extern Res *operation_8c18ccd8(int, int, int);
 extern void operation_8c19a054(Effect *);
 Res *operation_8c18c96c(int a0, int a1, int a2)
@@ -39,7 +39,7 @@ Res *operation_8c18c96c(int a0, int a1, int a2)
     if (q == 0) {
         return 0;
     }
-    mode = current_effect_mode();
+    mode = get_current_area_8c032b10();
     switch ((short)a2) {
     case 6:
     case 18:
@@ -68,7 +68,7 @@ Res *operation_8c18c96c(int a0, int a1, int a2)
         }
         break;
     case 5:
-        if (operation_8c01c25c() == 0x10) {
+        if (get_game_mode_8c01c25c() == 0x10) {
             a2 = 0x11;
         }
         break;

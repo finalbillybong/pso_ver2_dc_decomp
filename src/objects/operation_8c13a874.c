@@ -12,7 +12,7 @@ struct Object {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_8c052124(void *);
 extern void word_operation_8c139fb8(unsigned int);
-extern void destroy_actor_mode_state(void *, short);
+extern void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c13a874(Object *o, int a1)
 {
@@ -20,7 +20,7 @@ Object *operation_8c13a874(Object *o, int a1)
         o->dispatch = (void *)0x8c26d24c;
         operation_8c052124((void *)o);
         word_operation_8c139fb8((unsigned int)0);
-        destroy_actor_mode_state((void *)o, (short)0);
+        TObjEnemyCustom_dtor_8c0c23c8((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

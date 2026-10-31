@@ -25,19 +25,19 @@ struct S_L8c46ee84 {
 };
 extern int g_8c31c894;
 extern S_L8c46ee84 g_8c46ee84;
-extern void initialize_hierarchy_node(void *, void *);
-extern int operation_8c01c25c(void);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern int get_game_mode_8c01c25c(void);
 Object *operation_8c198294(Object *o, int a1)
 {
     Object **home = &o;
     int v6;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2728dc;
     o->tag = (int)(g_8c31c894);
     o->size = 0x40;
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 == 0x10) {
         o->f20 = (&g_8c46ee84)->f00 + (&g_8c46ee84)->f0c;
         o->f24 = (&g_8c46ee84)->f04 + (&g_8c46ee84)->f10;

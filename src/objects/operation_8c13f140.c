@@ -22,7 +22,7 @@ struct Object {
     int f134;
 };
 extern S_L8c46efc8 g_8c46efc8;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c0a1a78(int);
 extern void call_8c0a5400(Frame *, int);
 extern void set_view_offsets(void *, void *, void *);
@@ -31,7 +31,7 @@ void operation_8c13f140(Object *o, int a1)
     Frame frame;
     int t1;
     (&frame)->f01 = a1;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (t1 == 0xe) {
         (&frame)->f00 = 1;
     } else {

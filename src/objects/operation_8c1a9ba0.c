@@ -3,7 +3,7 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern int call_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern int call_8c17796c(int);
 extern void call_8c1869f4(void);
 extern void call_8c09d42c(void);
@@ -18,7 +18,7 @@ void operation_8c1a9ba0(void)
     int t1;
     int t2;
     int t3;
-    t1 = call_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 == 0xf) {
         t2 = call_8c17796c(0x41);
         if (t2 == 0) {

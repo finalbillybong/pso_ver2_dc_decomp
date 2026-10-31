@@ -8,7 +8,7 @@ typedef struct S_g8c4db408 S_g8c4db408;
 struct Frame {
     int f00;
 };
-extern void call_8c12b77c(Frame *, int, int);
+extern void memcpy_8c12b77c(Frame *, int, int);
 void operation_8c171c24(int a0, int a1)
 {
     Frame frame;
@@ -21,7 +21,7 @@ void operation_8c171c24(int a0, int a1)
     if (v2 != 0) {
         v3 = (int)*(int *)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + ((unsigned char)a0 << 2));
         if (v3 >= 0 && 0xfd > v3) {
-            call_8c12b77c((Frame *)((&frame)), (int)(v2 + v3 + 0x3214), 4);
+            memcpy_8c12b77c((Frame *)((&frame)), (int)(v2 + v3 + 0x3214), 4);
             *(int *)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + (v1)) = (int)((&frame)->f00);
         }
     }

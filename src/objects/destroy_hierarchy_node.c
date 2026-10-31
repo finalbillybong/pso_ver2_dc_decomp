@@ -1,6 +1,6 @@
 #include "src/include/hierarchy.h"
 #define free_at ((void (*)(void *,void *))0x8c122774)
-HierarchyNode *destroy_hierarchy_node(HierarchyNode *node,short release) {
+HierarchyNode *TObject_dtor_8c03311c(HierarchyNode *node,short release) {
  if(node) {
   node->dispatch=(NodeDispatch *)0x8c261580;
   if(!(node->flags&0x20)) {

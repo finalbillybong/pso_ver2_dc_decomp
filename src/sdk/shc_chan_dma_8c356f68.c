@@ -41,7 +41,7 @@ void chan_write_8c356f68(Context *c, int ch, volatile int address)
     if (error) log_error_8c35570c(s_failed_a_8c3f55bc);
 }
 
-void chan_read_8c356fcc(Context *c, int ch, volatile int address)
+void mwRnv2LoadTexYuv422_8c356fcc(Context *c, int ch, volatile int address)
 {
     Channel *p = &c->channels[ch];
     Word saved_b, saved_a;

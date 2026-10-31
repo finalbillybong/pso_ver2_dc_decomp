@@ -34,7 +34,7 @@ struct S_c8c122700 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c3292ac g_8c3292ac;
 extern S_L8c3292b8 g_8c3292b8;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_grid_view(void *, void *);
 extern void operation_8c1cd0bc(void *, unsigned int);
 S_c8c122700 *operation_8c1cd038(Object *o, Arg1 *a1, int a2)
@@ -45,7 +45,7 @@ S_c8c122700 *operation_8c1cd038(Object *o, Arg1 *a1, int a2)
     (&g_8c3292b8)->f08 = a1->f00;
     (&g_8c3292b8)->f0c = a1->f04;
     (&g_8c3292ac)->f04 = a2;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x98);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x98);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

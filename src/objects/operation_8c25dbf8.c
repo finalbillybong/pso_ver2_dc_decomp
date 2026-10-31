@@ -37,7 +37,7 @@ extern S_g8c467188 *g_8c467188;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4db520 *g_8c4db520;
 extern int call_8c206b60(int, void *, void *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_loader_8c173578(void *, void *, int);
 extern void reparent_hierarchy_node(void *, void *);
 extern void operation_8c0368a8(void *);
@@ -62,7 +62,7 @@ void operation_8c25dbf8(Object *o, int a1)
                 if (g_8c4db520 == 0) {
                     return;
                 }
-                t1 = allocate_block(g_8c4d97e0, (unsigned int)0xa8);
+                t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xa8);
                 if (t1 != 0) {
                     initialize_loader_8c173578((void *)t1, g_8c4db520, (int)(o->f98));
                 }

@@ -14,7 +14,7 @@ struct Object {
 };
 extern Table *g_8c505208;
 extern int g_8c505214;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern Table *call_8c20af34(int);
 #define GET_TABLE(n) ((n) >= g_8c505214 ? (Table *)0 : &g_8c505208[n])
 #define LOOKUP_TABLE(out, n, idx) \
@@ -50,7 +50,7 @@ static inline short lookup_id(int id, int idx)
 static inline int mode_class(Object *o)
 {
     int m;
-    m = current_effect_mode();
+    m = get_current_area_8c032b10();
     if (m == 0) {
         return 1;
     }

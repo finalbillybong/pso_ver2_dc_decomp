@@ -83,7 +83,7 @@ struct Arg0_13c {
 struct Frame {
     char unknown0[0xc];
 };
-extern "C" int current_effect_mode(void);
+extern "C" int get_current_area_8c032b10(void);
 extern "C" void call_8c1585a8(unsigned char, void *);
 extern "C" void operation_8c076580(void *);
 extern "C" void operation_8c075894(void *, void *, int, int);
@@ -94,9 +94,9 @@ extern "C" void operation_8c07623c(Object *o)
     int t2;
     int t3;
     if (((ObjectData *)o)->f13c != 0 && ((ObjectData *)o)->fe4 == 2 && ((((ObjectData *)o)->fec & 0x40)) == 0) {
-        t1 = current_effect_mode();
+        t1 = get_current_area_8c032b10();
         if (t1 != 0) {
-            t2 = current_effect_mode();
+            t2 = get_current_area_8c032b10();
             if (t2 != 0xf) {
                 ((ObjectData *)o)->f64 = (int)(((ObjectData *)o)->f13c->f64);
                 call_8c1585a8(((ObjectData *)o)->f136, (void *)(((char *)((ObjectData *)o)->f13c + 0x3c)));

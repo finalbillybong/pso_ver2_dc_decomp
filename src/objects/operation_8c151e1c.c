@@ -27,7 +27,7 @@ extern void operation_8c052124(void *);
 extern void release_slots_8c154abc(void *);
 extern void release_slots_8c15561c(void *);
 extern void destroy_field_8c178048(void *, short);
-extern void destroy_actor_mode_state(void *, short);
+extern void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c151e1c(Object *o, int a1)
 {
@@ -43,7 +43,7 @@ Object *operation_8c151e1c(Object *o, int a1)
         release_slots_8c154abc((void *)o);
         release_slots_8c15561c((void *)o);
         destroy_field_8c178048((void *)(((char *)o + 0x4ac)), (short)-1);
-        destroy_actor_mode_state((void *)o, (short)0);
+        TObjEnemyCustom_dtor_8c0c23c8((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

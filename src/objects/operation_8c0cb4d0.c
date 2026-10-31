@@ -26,14 +26,14 @@ struct Arg0_24 {
 struct Arg0_28 {
     Vector3 f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c12b944(int);
 Object *operation_8c0cb4d0(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c266cb0;
     o->tag = (int)(*(int *)0x8c3068e8);
     o->size = 0x4c;

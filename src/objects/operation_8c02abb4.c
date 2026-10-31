@@ -11,7 +11,7 @@ struct Object {
 extern int g_8c418248;
 extern int g_8c4627c8;
 extern void call_8c02ac18(int);
-void operation_8c02abb4(Object *o)
+void handle_6x1B_enable_pk_mode_for_player_8c02abb4(Object *o)
 {
     int v1;
     unsigned short v2;

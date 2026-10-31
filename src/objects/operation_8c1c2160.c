@@ -23,14 +23,14 @@ struct S_c8c1beb7c {
 extern int g_8c328924;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c1c16dc(void *, int, int, int);
 extern S_c8c1beb7c *operation_8c1beb7c(int);
-S_c8c122700 *operation_8c1c2160(int a0)
+S_c8c122700 *TObjCityDoor_Med_ctor_8c1c2160(int a0)
 {
     S_c8c122700 *t1;
     S_c8c1beb7c *t2;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0xf4);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xf4);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

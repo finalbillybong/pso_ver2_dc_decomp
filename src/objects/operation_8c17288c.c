@@ -6,7 +6,7 @@ typedef struct Vector3 {
 typedef struct S_g8c4db4e4 S_g8c4db4e4;
 extern S_g8c4db4e4 *g_8c4db4e4;
 extern char g_8c318c08[];
-extern int call_8c12b0cc(void *);
+extern int strlen_8c12b0cc(void *);
 extern void call_8c18e720(void *, void *);
 static inline int icmp(const unsigned char *a, const unsigned char *b)
 {
@@ -25,12 +25,12 @@ void operation_8c17288c(void)
     v1 = (int)(void *)0x8c340764;
     t1 = icmp((unsigned char *)v1, (unsigned char *)(g_8c318c08 + 0x27));
     if (t1 == 0) {
-        t2 = call_8c12b0cc((void *)((g_8c318c08 + 0x6b)));
+        t2 = strlen_8c12b0cc((void *)((g_8c318c08 + 0x6b)));
         call_8c18e720(g_8c4db4e4, (void *)((g_8c318c08 + 0x6b)));
         g_8c4db4e4 = (S_g8c4db4e4 *)((int)g_8c4db4e4 + t2);
         return;
     }
-    t3 = call_8c12b0cc((void *)v1);
+    t3 = strlen_8c12b0cc((void *)v1);
     call_8c18e720(g_8c4db4e4, (void *)v1);
     g_8c4db4e4 = (S_g8c4db4e4 *)((int)g_8c4db4e4 + t3);
 }

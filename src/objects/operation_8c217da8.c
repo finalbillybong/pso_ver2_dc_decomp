@@ -87,8 +87,8 @@ struct S_vv74 {
     char f00;
 };
 extern S_L8c505248 g_8c505248;
-extern void call_8c12b880(void *, int, int);
-extern void call_8c12b154(void *, void *, int);
+extern void memset_8c12b880(void *, int, int);
+extern void strncpy_8c12b154(void *, void *, int);
 extern int call_8c217c60(void *);
 void operation_8c217da8(Object *o)
 {
@@ -109,8 +109,8 @@ void operation_8c217da8(Object *o)
     g_8c505248.f00 = o->tag;
     g_8c505248.f04 = 0;
     q = g_8c505248.f08;
-    call_8c12b880(q, 0, 0x11);
-    call_8c12b154(q, o->f04, 0x10);
+    memset_8c12b880(q, 0, 0x11);
+    strncpy_8c12b154(q, o->f04, 0x10);
     g_8c505248.f18 = 0;
     p = (char *)call_8c217c60((char *)o + 0x34);
     i1 = 0;

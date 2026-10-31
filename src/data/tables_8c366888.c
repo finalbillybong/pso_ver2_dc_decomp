@@ -2,10 +2,10 @@
 
 typedef void (*Function)(void);
 
-extern void fn_8c12b880(void);
-extern void fn_8c12b77c(void);
+extern void memset_8c12b880(void);
+extern void memcpy_8c12b77c(void);
 
 Function const d_8c366888[2] = {
-    fn_8c12b880,
-    fn_8c12b77c
+    memset_8c12b880,
+    memcpy_8c12b77c
 };

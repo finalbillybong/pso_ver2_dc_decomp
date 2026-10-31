@@ -12,8 +12,8 @@ struct Object {
     short size;
     int f20;
 };
-extern void initialize_hierarchy_node(void *, void *);
-extern void call_8c12b880(void *, int, int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern void memset_8c12b880(void *, int, int);
 extern int operation_8c02b9e4(void);
 extern void call_8c2507a4(Object *);
 Object *operation_8c2506a8(Object *o, int a1)
@@ -21,12 +21,12 @@ Object *operation_8c2506a8(Object *o, int a1)
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27e9b4;
     o->tag = (int)(*(int *)0x8c33f830);
     o->size = 0x84;
     o->f20 = 0;
-    call_8c12b880((void *)(((char *)o + 0x24)), 0, 0x60);
+    memset_8c12b880((void *)(((char *)o + 0x24)), 0, 0x60);
     t1 = operation_8c02b9e4();
     *(int *)0x8c511120 = (int)(t1);
     call_8c2507a4(o);

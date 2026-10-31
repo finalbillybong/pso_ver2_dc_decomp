@@ -15,10 +15,10 @@ struct Object {
     int f24;
     int f28;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c1ab01c(Object *o, int a1, int a2, int a3)
 {
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c274790;
     o->f24 = 0;
     o->f28 = 0;

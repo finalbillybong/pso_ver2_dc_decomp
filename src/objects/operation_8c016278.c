@@ -17,7 +17,7 @@ extern int g_8c41bd04;
 extern S_g8c41cba0 *g_8c41cba0;
 extern void operation_8c180ae8(void);
 extern void call_8c01c244(int);
-extern void call_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 void operation_8c016278(Object *o)
 {
     if (((g_8c41cba0->f10 & 8)) == 0 && !(g_8c41bd04++ > 0xe10)) {
@@ -25,6 +25,6 @@ void operation_8c016278(Object *o)
     }
     operation_8c180ae8();
     call_8c01c244(2);
-    call_8c01c1a4(0x1b);
+    request_game_mode_8c01c1a4(0x1b);
     o->f04 |= 1;
 }

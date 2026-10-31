@@ -21,8 +21,8 @@ struct Object {
 };
 extern void call_8c18de08(int);
 extern int operation_8c257e2c(int);
-extern int call_8c18de4c(int);
-extern void call_8c12b154(int, int, int);
+extern int operator_new_8c18de4c(int);
+extern void strncpy_8c12b154(int, int, int);
 extern void call_8c19f884(Object *, int);
 extern int current_mode_active(void);
 extern int current_mode_in_range(void);
@@ -46,10 +46,10 @@ void operation_8c19f09c(Object *o, int a1, int a2, int a3)
     }
     if (a1 != 0) {
         t1 = operation_8c257e2c(a1);
-        t2 = call_8c18de4c((int)(t1 + 1));
+        t2 = operator_new_8c18de4c((int)(t1 + 1));
         v12 = (int)a1;
         a1 = (int)t2;
-        call_8c12b154(a1, v12, (int)(t1 + 1));
+        strncpy_8c12b154(a1, v12, (int)(t1 + 1));
         o->tag |= 8;
     }
     o->f20 = (int)(a1);

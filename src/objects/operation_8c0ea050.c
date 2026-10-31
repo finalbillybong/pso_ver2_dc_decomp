@@ -9,14 +9,14 @@ struct Object {
     short f04;
 };
 extern void call_8c01c244(int);
-extern void call_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 extern void clear_global_render_resources(void);
 extern void call_8c1005d0(void);
 void operation_8c0ea050(Object *o)
 {
     o->f04 |= 1;
     call_8c01c244(2);
-    call_8c01c1a4(0x1b);
+    request_game_mode_8c01c1a4(0x1b);
     clear_global_render_resources();
     call_8c1005d0();
 }

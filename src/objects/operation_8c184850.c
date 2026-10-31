@@ -3,12 +3,12 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern int call_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 void operation_8c184850(void)
 {
     int t1;
     *(int *)0x8c4dbb44 += 1;
-    t1 = call_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 != 1) {
         switch (*(int *)0x8c4dbb40) {
         case 0:

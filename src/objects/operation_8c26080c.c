@@ -26,7 +26,7 @@ struct S_c8c260a84 {
 struct S_c8c260ab0 {
     Block80 f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern S_c8c260a84 *operation_8c260a84(Object *);
 extern S_c8c260ab0 *operation_8c260ab0(Object *);
 extern int operation_8c260934(int, void *, void *);
@@ -37,7 +37,7 @@ Object *operation_8c26080c(Object *o, int a1)
     S_c8c260ab0 *t2;
     int t3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c281e50;
     o->tag = (int)(*(int *)0x8c340838);
     o->size = 0xc4;

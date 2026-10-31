@@ -55,7 +55,7 @@ struct Arg0_20 {
     int f34;
 };
 extern void call_8c0a0058(Object *);
-extern int allocate_block(void *, int);
+extern int heap_alloc_8c122700(void *, int);
 extern void call_8c051eb8(int, Object *);
 extern void copy_actor_records(void *, void *, int);
 Object *operation_8c0b6a74(Object *o, int a1, Arg2 *a2, int a3)
@@ -107,7 +107,7 @@ Object *operation_8c0b6a74(Object *o, int a1, Arg2 *a2, int a3)
     o->fdc = 1.0f;
     o->fe0 = 0;
     o->fe4 = 0x80207;
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, 0xe4);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0xe4);
     if (t1 != 0) {
         call_8c051eb8(t1, o);
     }

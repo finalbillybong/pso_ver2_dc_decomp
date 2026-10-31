@@ -17,7 +17,7 @@ struct S_c8c053d84 {
     int fe0;
 };
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0b7fcc(int, int, int, void *, float);
 void operation_8c23cbdc(int a0, Arg1 *a1, int a2, int a3)
 {
@@ -28,7 +28,7 @@ void operation_8c23cbdc(int a0, Arg1 *a1, int a2, int a3)
     t1 = lookup_object_by_id((unsigned short)a2);
     if (t1 != 0 && t1->fdc != 0 && t1->fe0 > a3) {
         v1 = (char *)t1->fdc;
-        t2 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x64);
+        t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x64);
         if (t2 != 0) {
             call_8c0b7fcc(t2, (int)(v1 + a3 * 0x2c + 0x1c), 0, (void *)(*(S_g8c44bea0 **)0x8c44bea0), 5.0f);
         }

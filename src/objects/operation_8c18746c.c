@@ -30,8 +30,8 @@ struct Arg2 {
     int f0c;
     int f10;
 };
-extern void initialize_hierarchy_node(void *, void *);
-extern int allocate_block(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_paired_array_owner(void *, void *, int);
 Object *operation_8c18746c(Object *o, int a1, Arg2 *a2)
 {
@@ -39,7 +39,7 @@ Object *operation_8c18746c(Object *o, int a1, Arg2 *a2)
     S_vv3 *v3;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2720f0;
     o->tag = *(int *)0x8c319b60;
     o->size = 0x38;
@@ -56,7 +56,7 @@ Object *operation_8c18746c(Object *o, int a1, Arg2 *a2)
         o->f28 = a2->f10;
         o->f2c = a2->f0c;
         o->f30 = 0;
-        t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x30);
+        t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x30);
         if (t1 != 0) {
             initialize_paired_array_owner((void *)t1, (void *)o, 0x20);
         }

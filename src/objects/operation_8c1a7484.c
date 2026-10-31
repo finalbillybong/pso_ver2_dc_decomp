@@ -3,13 +3,13 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern int operation_8c02c320(void *);
 int operation_8c1a7484(int a0)
 {
     int t1;
     int t2;
-    t2 = current_effect_mode();
+    t2 = get_current_area_8c032b10();
     t1 = operation_8c02c320((void *)a0);
     if ((char)t1 != 2) {
         if ((char)t1 != 4) {

@@ -25,7 +25,7 @@ struct S_g8c4db9e0 {
 };
 extern S_g8c4db9e0 *g_8c4db9e0;
 extern void operation_1c7dd4(void *);
-extern void call_8c12b77c(int, int, int);
+extern void memcpy_8c12b77c(int, int, int);
 int operation_8c1831dc(int a0)
 {
     S_vv1 *v1;
@@ -42,7 +42,7 @@ int operation_8c1831dc(int a0)
             s->f01 = -1;
             s->f04 = 0;
             operation_1c7dd4((void *)((char *)s + 0x8));
-            call_8c12b77c((int)((int)g_8c4db9e0 + v2 + 0xc), a0, 0x14);
+            memcpy_8c12b77c((int)((int)g_8c4db9e0 + v2 + 0xc), a0, 0x14);
             g_8c4db9e0->f00 += 1;
             return 1;
         }

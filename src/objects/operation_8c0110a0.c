@@ -23,7 +23,7 @@ struct Object {
     short f26;
     short f28;
 };
-extern int call_8c12b0cc(int);
+extern int strlen_8c12b0cc(int);
 extern int call_8c3ca534(int, Frame *, int);
 int operation_8c0110a0(Object *o, int a1)
 {
@@ -33,7 +33,7 @@ int operation_8c0110a0(Object *o, int a1)
     int t2;
     (&frame)->f00 = o->f28;
     (&frame)->f0a = 1;
-    t1 = call_8c12b0cc(a1);
+    t1 = strlen_8c12b0cc(a1);
     (&frame)->f0c = t1;
     (&frame)->f10 = a1;
     (&frame)->f04 = (int)(o->f20);

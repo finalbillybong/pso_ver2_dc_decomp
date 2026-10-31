@@ -43,7 +43,7 @@ extern S_g8c4db9e4 *g_8c4db9e4;
 extern int g_8c510ba0;
 extern char g_8c339ca0[];
 extern void operation_8c0368a8(void *);
-void operation_8c248738(Object *o)
+void handle_6x7C_set_challenge_records_8c248738(Object *o)
 {
     Frame frame;
     int v1;

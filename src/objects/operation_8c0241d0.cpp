@@ -54,7 +54,7 @@ typedef struct S_c8c169508Data {
 } S_c8c169508Data;
 extern "C" int operation_8c16a18c(void *, int);
 extern "C" S_c8c169508 *operation_8c169508(void *);
-extern "C" void operation_8c0241d0(Object *o)
+extern "C" void handle_6x27_use_item_8c0241d0(Object *o)
 {
     int v1;
     short v2;

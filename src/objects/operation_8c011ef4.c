@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c011ef4(void)
+void debug_printf_stub_8c011ef4(void)
 {
 }

@@ -16,7 +16,7 @@ struct Object {
     int f94;
 };
 extern char g_8c3384d4[];
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 extern void call_8c12b048(Frame *, void *, ...);
 extern int call_8c372d38(void *, Frame *);
 void operation_8c22dfc8(Object *o)
@@ -26,12 +26,12 @@ void operation_8c22dfc8(Object *o)
     int v1;
     int t1;
     int t2;
-    call_8c12b880((void *)(((char *)o + 0x68)), 0, 0xd);
-    call_8c12b880((void *)(((char *)o + 0x75)), 0, 0xd);
+    memset_8c12b880((void *)(((char *)o + 0x68)), 0, 0xd);
+    memset_8c12b880((void *)(((char *)o + 0x75)), 0, 0xd);
     v2 = (char *)*(int *)0x8c2e1968;
     v1 = (int)-0xfb;
     while (*(int *)0x8c2e196c > (int)(v2)) {
-        call_8c12b880((void *)(&frame), 0, 0xd);
+        memset_8c12b880((void *)(&frame), 0, 0xd);
         call_8c12b048((Frame *)((&frame)), (void *)((g_8c3384d4 + 0x26)), (void *)((void *)0x8c2e1950), (int)(v2));
         t1 = call_8c372d38((void *)(o->f54), (Frame *)((&frame)));
         if (t1 == v1) {

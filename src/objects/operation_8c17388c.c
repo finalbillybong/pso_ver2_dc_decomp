@@ -58,7 +58,7 @@ struct S_vv4 {
 extern S_g8c418248 *g_8c418248;
 extern int g_8c4db658;
 extern S_L8c41cba0 g_8c41cba0;
-extern int call_8c16c27c(void *);
+extern int quest_thread_run_8c16c27c(void *);
 extern int lookup_low_id(int);
 extern int player_flag9_8c026508(void);
 extern int call_8c0dddcc(void);
@@ -93,7 +93,7 @@ void operation_8c17388c(Object *o)
     switch (o->fa4) {
     case 0:
     case 1:
-        t1 = call_8c16c27c((void *)(((char *)o + 0x20)));
+        t1 = quest_thread_run_8c16c27c((void *)(((char *)o + 0x20)));
         o->fa4 = (int)(t1);
         return;
     case 2:

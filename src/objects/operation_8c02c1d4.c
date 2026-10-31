@@ -22,7 +22,7 @@ extern int g_8c2e2ad8;
 extern int g_8c418248;
 extern int g_8c510ba0;
 extern int operation_2391f4(void *);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 int operation_8c02c1d4(void)
 {
     int v7;
@@ -67,7 +67,7 @@ int operation_8c02c1d4(void)
     }
     return 0;
 L_8c02c236:;
-    t2 = current_effect_mode();
+    t2 = get_current_area_8c032b10();
     if (!(t2 > 0)) {
         if (t2 == 0) {
             goto L_8c02c278;

@@ -18,12 +18,12 @@ struct Object {
     float fe8;
     float fec;
 };
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 extern int advance_counter_8c01d5fc(int);
 void operation_8c08dcc0(Object *o)
 {
     int t1;
-    call_8c12b880((void *)(&o->fc0), 0, 0x3c);
+    memset_8c12b880((void *)(&o->fc0), 0, 0x3c);
     o->fc0 = -1;
     t1 = advance_counter_8c01d5fc(0);
     o->fc4 = t1;

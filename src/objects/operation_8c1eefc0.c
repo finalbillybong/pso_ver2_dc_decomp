@@ -27,7 +27,7 @@ extern int g_8c4627c8;
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void reset_motion_8c1ef224(void *);
 extern void operation_8c1e8e60(int, int, int);
-void operation_8c1eefc0(Object *o)
+void handle_6x4D_player_died_8c1eefc0(Object *o)
 {
     int v1;
     unsigned short v2;

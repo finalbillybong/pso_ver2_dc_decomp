@@ -36,7 +36,7 @@ typedef struct ObjectData {
     int fb128;
 } ObjectData;
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02dbcc(Object *o, Arg1 *a1)
+extern "C" void handle_cmd_04_set_guild_card_number_and_update_8c02dbcc(Object *o, Arg1 *a1)
 {
     int v2;
     S_vv1 *v1;

@@ -13,13 +13,13 @@ struct S_c8c122700 {
     short f1e;
 };
 extern void configure_pair_grid_view(int, int, int);
-extern S_c8c122700 *allocate_block(void *, int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, int);
 extern void initialize_pair_grid_view(S_c8c122700 *, int);
 S_c8c122700 *create_pair_view_8c2178ac(int a0, int a1)
 {
     S_c8c122700 *t1;
     configure_pair_grid_view(a0, a1, 1);
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, 0xa0);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0xa0);
     if (t1 != 0) {
         initialize_pair_grid_view(t1, 1);
         t1->f18 = (void *)0x8c2782d4;

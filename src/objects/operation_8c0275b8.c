@@ -11,7 +11,7 @@ struct Object {
 extern int g_8c418248;
 extern void call_8c184a20(int, short);
 extern void call_8c184cf8(int);
-void operation_8c0275b8(Object *o)
+void handle_6x36_8c0275b8(Object *o)
 {
     int v1;
     int v4;

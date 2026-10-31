@@ -1,13 +1,13 @@
 /* Provisional address-based name; preserve guards, slot reloads and call order. */
 #include "src/include/derived_effect_child.h"
 #define destroy_effect_at ((void (*)(void *))0x8c0a7bb0)
-#define base_at ((void (*)(DerivedEffectChild *,int))0x8c03311c)
+#define TObject_dtor_8c03311c ((void (*)(DerivedEffectChild *,int))0x8c03311c)
 #define free_at ((void (*)(void *,DerivedEffectChild *))0x8c122774)
 static inline void destroy_base(DerivedEffectChild *o){
     if(o){
         o->dispatch=(void *)0x8c2748d4;
         if(o->linked)o->linked->flags|=1;
-        base_at(o,0);
+        TObject_dtor_8c03311c(o,0);
     }
 }
 DerivedEffectChild *operation_1abfe8(DerivedEffectChild *o,short release){

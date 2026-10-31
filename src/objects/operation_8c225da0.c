@@ -1,7 +1,7 @@
 extern int g_8c467188;
-extern int call_8c12b0cc(char *);
+extern int strlen_8c12b0cc(char *);
 extern char *call_8c04ba30(char *, int *, int);
-extern void call_8c12b154(char *, char *, int);
+extern void strncpy_8c12b154(char *, char *, int);
 void operation_8c225da0(char *dst, char *src, int max)
 {
     int sjis;
@@ -15,7 +15,7 @@ void operation_8c225da0(char *dst, char *src, int max)
             *dst = 0;
             return;
         }
-        len = call_8c12b0cc(src) + 1;
+        len = strlen_8c12b0cc(src) + 1;
         if (g_8c467188 == 0) {
             sjis = 1;
         }
@@ -34,7 +34,7 @@ void operation_8c225da0(char *dst, char *src, int max)
                     *dst = 0;
                     return;
                 }
-                call_8c12b154(dst, src, n);
+                strncpy_8c12b154(dst, src, n);
                 src = p;
                 dst += n;
                 max -= n;
@@ -48,7 +48,7 @@ void operation_8c225da0(char *dst, char *src, int max)
                 }
             }
         }
-        call_8c12b154(dst, src, len);
+        strncpy_8c12b154(dst, src, len);
         dst += len;
         *dst = 0;
     }

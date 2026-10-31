@@ -15,7 +15,7 @@ struct S_c8c021ef8 {
     S_c8c021ef8_64 *f64;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c137460(int, Object *, S_c8c021ef8 *, void *, void *);
 extern void call_8c1ab01c(int, int, void *, int);
 int operation_8c137998(Object *o)
@@ -30,12 +30,12 @@ int operation_8c137998(Object *o)
         t1 = lookup_low_id(o->tag);
         v69 = (int)0;
         if (t1 != 0) {
-            t2 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x134);
+            t2 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x134);
             if (t2 != 0) {
                 call_8c137460(t2, o, t1, ((char *)t1 + 0x3c), t1->f64);
             }
             if (t2 != 0) {
-                t3 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x2c);
+                t3 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x2c);
                 if (t3 != 0) {
                     call_8c1ab01c(t3, t2, (void *)0x8c137a28, 0x5a);
                 }

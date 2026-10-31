@@ -9,10 +9,10 @@ struct Object {
     char unknown0[0x30];
     Arg0_30 *f30;
 };
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 void operation_8c1734e8(Object *o)
 {
     if (o->f30 != 0) {
-        call_8c12b880(o->f30, 0, 0x400);
+        memset_8c12b880(o->f30, 0, 0x400);
     }
 }

@@ -25,7 +25,7 @@ struct Arg1 {
     Block16 f00;
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02e44c(Object *o, Arg1 *a1)
+extern "C" void handle_cmd_80_valid_but_ignored_8c02e44c(Object *o, Arg1 *a1)
 {
     char *v21;
     o->v4((g_8c2e7ce0 + 0x2b0));

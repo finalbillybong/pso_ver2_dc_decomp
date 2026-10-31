@@ -11,7 +11,7 @@ struct Object {
 };
 extern void call_8c17777c(int);
 extern void call_8c1778d4(int);
-void operation_8c1a707c(Object *o)
+void handle_6x75_update_quest_flag_8c1a707c(Object *o)
 {
     /* TODO 00000000..00000000
      * 00000000 walker stopped: instruction missing at the range end (data in the listing)

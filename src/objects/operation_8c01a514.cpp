@@ -51,7 +51,7 @@ extern "C" char g_8c2e3014[];
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void call_8c12b048(Frame *, void *, ...);
 extern "C" void operation_8c011efc(Frame *);
-extern "C" void call_8c12b154(void *, void *, int);
+extern "C" void strncpy_8c12b154(void *, void *, int);
 extern "C" void request_resource_release(void *);
 extern "C" void clear_group_flag_08(void *);
 extern "C" void operation_8c01a514(int a0, int a1, int a2)
@@ -83,7 +83,7 @@ L_8c01a5a2:;
             t1->v0(1);
         }
     }
-    call_8c12b154((void *)(&*(int *)((char *)0x8c41c667 + (a0 << 4))), (void *)((g_8c2e3014 + 0x57)), 0x10);
+    strncpy_8c12b154((void *)(&*(int *)((char *)0x8c41c667 + (a0 << 4))), (void *)((g_8c2e3014 + 0x57)), 0x10);
     if (g_8c41bce4 == 0xe) {
         g_8c4d8288 = 1;
     }

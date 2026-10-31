@@ -1,6 +1,6 @@
 typedef unsigned long size_t;
 
-char *strncpy(char *s1, const char *s2, size_t n)
+char *strncpy_8c12b154(char *s1, const char *s2, size_t n)
 {
     char *d = s1;
     const char *s = s2;

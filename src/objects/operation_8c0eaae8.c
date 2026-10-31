@@ -7,7 +7,7 @@ extern void call_8c01daf0(void);
 extern void call_8c01dea8(void);
 extern void time_hierarchy_update(void *);
 extern void time_hierarchy_visit(void *);
-extern void describe_hierarchy_node(void *);
+extern void TObject_debug_describe_8c033330(void *);
 extern void hierarchy_output_cycle(void *);
 extern void process_file_task_queue(void);
 extern void call_8c05f9e4(void);
@@ -16,7 +16,7 @@ extern int call_8c01e180(void);
 extern void select_state3_8c01c234(void);
 extern void call_8c36a880(void);
 extern int call_8c36a868(void);
-extern void call_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 extern void call_8c380516(void);
 void operation_8c0eaae8(void)
 {
@@ -26,7 +26,7 @@ void operation_8c0eaae8(void)
     call_8c01dea8();
     time_hierarchy_update((void *)((void *)0x8c44bec8));
     time_hierarchy_visit((void *)((void *)0x8c44bec8));
-    describe_hierarchy_node((void *)((void *)0x8c44bec8));
+    TObject_debug_describe_8c033330((void *)((void *)0x8c44bec8));
     hierarchy_output_cycle((void *)((void *)0x8c44bec8));
     process_file_task_queue();
     call_8c05f9e4();
@@ -41,7 +41,7 @@ void operation_8c0eaae8(void)
     case 6:
     case 7:
     case 9:
-        call_8c01c1a4(0);
+        request_game_mode_8c01c1a4(0);
     }
     call_8c380516();
 }

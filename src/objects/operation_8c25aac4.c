@@ -18,8 +18,8 @@ struct Object {
     int f2c;
     int f30;
 };
-extern void initialize_hierarchy_node(void *, void *);
-extern int allocate_block(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c198294(int, Object *);
 extern int call_8c25acac(Object *);
 Object *operation_8c25aac4(Object *o)
@@ -28,7 +28,7 @@ Object *operation_8c25aac4(Object *o)
     int t1;
     int t2;
     (void)home;
-    initialize_hierarchy_node((void *)o, *(S_g8c44be88 **)0x8c44be88);
+    TObject_ctor_8c0330e4((void *)o, *(S_g8c44be88 **)0x8c44be88);
     o->dispatch = (void *)0x8c281b68;
     o->tag = *(int *)0x8c340390;
     o->size = 0x234;
@@ -37,7 +37,7 @@ Object *operation_8c25aac4(Object *o)
     o->f2c = 0;
     o->f28 = 0;
     o->f30 = 0;
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x40);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x40);
     if (t1 != 0) {
         call_8c198294(t1, o);
     }

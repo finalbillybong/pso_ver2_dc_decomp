@@ -15,7 +15,7 @@ struct Arg0_20 {
     short f04;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c198c04(Object *o, int a1)
 {
@@ -32,7 +32,7 @@ Object *operation_8c198c04(Object *o, int a1)
             }
             v1 = (int)(v1 + 1);
         }
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

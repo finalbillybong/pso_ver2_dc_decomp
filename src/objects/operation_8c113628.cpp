@@ -51,7 +51,7 @@ extern "C" S_c8c053d84 *lookup_object_by_id(unsigned short);
 extern "C" void operation_8c1005bc(int);
 extern "C" void operation_03cf64(unsigned short, int);
 extern "C" void operation_03cff8(unsigned short, int);
-extern "C" void operation_8c113628(Object *o)
+extern "C" void handle_6x05_write_switch_flag_8c113628(Object *o)
 {
     S_c8c053d84 *t1;
     t1 = lookup_object_by_id((unsigned short)(o->f02));

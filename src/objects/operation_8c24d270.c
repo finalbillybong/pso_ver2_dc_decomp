@@ -18,13 +18,13 @@ struct Arg2 {
     char unknown0[0x20];
     short f20;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c22353c(short);
 Object *operation_8c24d270(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27dd38;
     o->tag = *(int *)0x8c33edcc;
     o->size = 0x24;

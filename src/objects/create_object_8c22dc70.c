@@ -29,7 +29,7 @@ extern S_g8c41c610 *g_8c41c610;
 extern char g_8c44be18;
 extern S_g8c467180 *g_8c467180;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void *allocate_block(void *, int);
+extern void *heap_alloc_8c122700(void *, int);
 extern void call_8c22f1bc(void *, Object *);
 extern void call_8c199688(void *, Object *, int);
 extern void call_8c198294(void *, Object *);
@@ -44,16 +44,16 @@ void create_object_8c22dc70(Object *o)
         if (g_8c41c610 != 0) {
             g_8c41c610->f04 |= 0x10;
         }
-        t1 = allocate_block(g_8c4d97e0, 0x108);
+        t1 = heap_alloc_8c122700(g_8c4d97e0, 0x108);
         if (t1 != 0) {
             call_8c22f1bc(t1, o);
         }
         o->f90 = t1;
-        t2 = allocate_block(g_8c4d97e0, 0xac);
+        t2 = heap_alloc_8c122700(g_8c4d97e0, 0xac);
         if (t2 != 0) {
             call_8c199688(t2, o, 2);
         }
-        t3 = allocate_block(g_8c4d97e0, 0x40);
+        t3 = heap_alloc_8c122700(g_8c4d97e0, 0x40);
         if (t3 != 0) {
             call_8c198294(t3, o);
         }

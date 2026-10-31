@@ -18,7 +18,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4d9b70;
 extern int global_present_8c13a3e0(void);
 extern void operation_8c09e6d0(void *);
-extern void destroy_actor_mode_state(void *, short);
+extern void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
 extern void operation_8c122774(void *, void *);
 Object *operation_8c1380d0(Object *o, int a1)
 {
@@ -43,7 +43,7 @@ Object *operation_8c1380d0(Object *o, int a1)
             v3 = (int)(v3 + 1);
         }
         g_8c313128 = 0xffff;
-        destroy_actor_mode_state((void *)o, (short)0);
+        TObjEnemyCustom_dtor_8c0c23c8((void *)o, (short)0);
         if ((short)a1 > 0) {
             operation_8c122774(g_8c4d97e0, (void *)o);
         }

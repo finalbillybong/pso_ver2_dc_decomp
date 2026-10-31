@@ -22,7 +22,7 @@ struct S_x70256 {
 extern S_g8c418248 *g_8c418248;
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int current_mode_active(void);
-void operation_8c1850c0(Object *o)
+void handle_6x39_photon_blast_ready_8c1850c0(Object *o)
 {
     S_c8c021ef8 *t1;
     int t2;

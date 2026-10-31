@@ -27,8 +27,8 @@ extern void call_8c01d9dc(void);
 extern void forward_reviewed_8c104e8c(void);
 extern void call_8c013620(void *, int);
 extern void call_8c014498(void *, int);
-extern int allocate_block(void *, unsigned int);
-extern void call_8c0a1448(int, void *);
+extern int heap_alloc_8c122700(void *, unsigned int);
+extern void TCameraCtrl_ctor_8c0a1448(int, void *);
 extern void call_8c0a1a78(int);
 extern void operation_8c0a237c(void *, void *);
 extern void create_descriptor_managers(void);
@@ -51,16 +51,16 @@ void operation_8c1cbdd4(void)
     forward_reviewed_8c104e8c();
     call_8c013620((void *)((void *)0x8c32915c), 0x118);
     call_8c014498((void *)((void *)0x8c2e2e84), 4);
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0xf8);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xf8);
     if (t1 != 0) {
-        call_8c0a1448(t1, g_8c44be88);
+        TCameraCtrl_ctor_8c0a1448(t1, g_8c44be88);
     }
     *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&g_8c329274;
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&g_8c329280;
     call_8c0a1a78(6);
     operation_8c0a237c((void *)(&(&frame)->f0c), (void *)(&frame));
     create_descriptor_managers();
-    t2 = allocate_block(g_8c4d97e0, (unsigned int)0x20);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x20);
     if (t2 != 0) {
         operation_8c1bec9c((void *)t2, (int)g_8c44be88);
     }

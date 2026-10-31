@@ -21,7 +21,7 @@ extern int g_8c4db124;
 extern S_g8c4db9e4 *g_8c4db9e4;
 extern char g_8c4dab80[];
 extern void operation_1c7dd4(void *);
-extern void call_8c12b77c(void *, void *, int);
+extern void memcpy_8c12b77c(void *, void *, int);
 void operation_8c15b25c(void)
 {
     S_vv2 *v2;
@@ -41,6 +41,6 @@ void operation_8c15b25c(void)
     if (v3 != 0) {
         g_8c4db124 = (int)(v3->f248);
         g_8c4db120 = (int)(v3->f244);
-        call_8c12b77c((void *)((void *)g_8c4dab80), (void *)((int)v3 + 0x24c), 0x5a0);
+        memcpy_8c12b77c((void *)((void *)g_8c4dab80), (void *)((int)v3 + 0x24c), 0x5a0);
     }
 }

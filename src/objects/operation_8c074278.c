@@ -24,10 +24,10 @@ struct Object {
     char unknown0[0x244];
     int f244;
 };
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 extern void operation_8c15b1e4(void *);
 extern int call_8c073ffc(S_vv4 *);
-extern void call_8c12b77c(void *, int, int);
+extern void memcpy_8c12b77c(void *, int, int);
 extern void call_8c18de08(int);
 void operation_8c074278(Object *o)
 {
@@ -39,7 +39,7 @@ void operation_8c074278(Object *o)
     int v2;
     int t2;
     if (o != 0) {
-        t1 = call_8c18de4c(0x5a0);
+        t1 = operator_new_8c18de4c(0x5a0);
         if (t1 != 0) {
             v1 = (int)0;
             while (v1 != 0x3c) {
@@ -63,7 +63,7 @@ void operation_8c074278(Object *o)
                 v4 = (S_vv4 *)((char *)v4 + 24);
             }
             o->f244 = (unsigned char)v2;
-            call_8c12b77c((void *)(((char *)o + 0x24c)), t1, 0x5a0);
+            memcpy_8c12b77c((void *)(((char *)o + 0x24c)), t1, 0x5a0);
         }
         call_8c18de08(t1);
     }

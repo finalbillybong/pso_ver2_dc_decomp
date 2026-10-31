@@ -49,7 +49,7 @@ struct Arg0_108 {
 };
 extern "C" int lookup_low_id(int);
 extern "C" int find_record_8c0744dc(int);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c137e08(void *, void *, int, void *);
 extern "C" void call_8c137a38(Object *);
 extern "C" void advance_scaled_position(void *);
@@ -78,7 +78,7 @@ extern "C" void operation_8c137778(Object *o)
     return;
 L_8c1377ca:;
     ((ObjectData *)o)->f04 &= -0x11;
-    t3 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x5c);
+    t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x5c);
     if (t3 != 0) {
         operation_8c137e08((void *)t3, (void *)o, (int)(((ObjectData *)o)->f28), (void *)(((char *)o + 0x124)));
     }

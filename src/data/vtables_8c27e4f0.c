@@ -3,7 +3,7 @@
 typedef void (*VirtualFunction)(void);
 
 extern void destroy_object_8c24f15c(void);
-extern void operation_8c073578(void);
+extern void TItem_update_8c073578(void);
 extern void operation_8c073678(void);
 extern void operation_8c073e50(void);
 extern void hierarchy_output(void);
@@ -87,7 +87,7 @@ VirtualFunction const vt_8c27e4f0[61] = {
     0,
     0,
     destroy_object_8c24f15c,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -152,7 +152,7 @@ VirtualFunction const vt_8c27e5e4[61] = {
     0,
     0,
     destroy_object_8c24f4b0,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -217,7 +217,7 @@ VirtualFunction const vt_8c27e6d8[61] = {
     0,
     0,
     destroy_object_8c24f7cc,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -282,7 +282,7 @@ VirtualFunction const vt_8c27e7cc[61] = {
     0,
     0,
     destroy_object_8c24fa6c,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -347,7 +347,7 @@ VirtualFunction const vt_8c27e8c0[61] = {
     0,
     0,
     destroy_object_8c24fddc,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,

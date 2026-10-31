@@ -17,7 +17,7 @@ struct S_g8c510900 {
 };
 extern S_g8c510900 *g_8c510900;
 extern char g_8c338c82[];
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 extern int operation_8c23280c(char);
 extern void call_8c12b00c(void *, void *, ...);
 int operation_8c232864(int a0, Arg1 *a1)
@@ -28,7 +28,7 @@ int operation_8c232864(int a0, Arg1 *a1)
     int t1;
     int t2;
     if (g_8c510900 != 0) {
-        call_8c12b880((void *)(&(&frame)->f04), 0, 0x10);
+        memset_8c12b880((void *)(&(&frame)->f04), 0, 0x10);
         v1 = (int)0;
         while (8 > v1) {
             t1 = (char)operation_8c23280c(*(char *)((char *)((char *)a1 + 0x0) + (v1)));

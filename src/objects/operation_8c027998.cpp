@@ -87,7 +87,7 @@ struct S_vv19 {
     int f00;
 };
 extern "C" void operation_8c02c998(void *);
-extern "C" void operation_8c027998(void)
+extern "C" void handle_6x32_revive_all_players_8c027998(void)
 {
     int v1;
     int v6;

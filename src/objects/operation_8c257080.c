@@ -39,7 +39,7 @@ extern S_L8c513340 g_8c513340;
 extern int call_8c18e8a0(void *, int);
 extern int lookup_low_id(int);
 extern int signed_angle_delta(int, int);
-void operation_8c257080(Object *o)
+void handle_6x92_8c257080(Object *o)
 {
     float v1;
     int t1;

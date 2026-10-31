@@ -18,7 +18,7 @@ typedef struct S_g8c339ca0 {
     int f504[4];
 } S_g8c339ca0;
 extern S_g8c339ca0 g_8c339ca0;
-void operation_8c2488e0(Object *o)
+void handle_6x95_set_challenge_time_8c2488e0(Object *o)
 {
     int v1;
     int v2;

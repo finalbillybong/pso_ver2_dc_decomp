@@ -33,13 +33,13 @@ struct Arg0_130 {
 extern S_g8c2e72d8 *g_8c2e72d8;
 extern S_g8c4d9820 *g_8c4d9820;
 extern S_L8c2e727c g_8c2e727c;
-extern void call_8c120188(Object *);
+extern void TObjNpcBase_ctor_8c120188(Object *);
 extern void call_8c01c908(Object *, void *, void *, short);
 Object *operation_8c123e18(Object *o)
 {
     Object **home = &o;
     (void)home;
-    call_8c120188(o);
+    TObjNpcBase_ctor_8c120188(o);
     o->dispatch = (void *)0x8c26b384;
     call_8c01c908(o, (void *)((&g_8c2e727c)->f04), (void *)(g_8c4d9820->f00), g_8c2e72d8->f00);
     o->f130->f0a |= 0x80;

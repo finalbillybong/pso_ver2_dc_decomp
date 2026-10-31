@@ -51,3 +51,24 @@ to force a match. The base compiler flags and optimization settings remain pinne
 After ten distinct unsuccessful hypotheses on a target, or sooner when no useful
 new evidence remains, record the blocker and park it. Preserve counts across
 sessions and revisit only with new evidence. Group identical compiler outputs.
+
+## Names
+
+Proposed names live in `config/names.json` (see [SYSTEMS.md](docs/SYSTEMS.md)); look them up with
+`python3 tools/names.py ADDRESS|NAME` and check the file with `python3 tools/names.py --lint`. A selection of
+them is applied to the sources by `tools/rename.py`, which gives each selected address one canonical
+`<name>_<address>` everywhere: the defining name in `config/project.json`, every callee alias in unit `symbols`
+(`config/project.json`, `config/data.json`), the matching identifiers in each unit's source, and address-cast
+macro aliases. It rewrites identifiers only (never literals, comments or `#include` lines), skips symbols the
+compiler emits implicitly and the compiler-proof samples, and never changes unit ids or file names.
+
+1. Edit `config/names.json`, run `python3 tools/names.py --lint`.
+2. Preview: `python3 tools/rename.py --dry-run --report rename.diff` (add `--confidence high,medium` or
+   `--sets curated,extended` for later passes); read the skip summary and the diff.
+3. Apply with `--apply` in a dedicated commit with no other change; a second dry run must report nothing to do.
+4. Names change source text but must not change bytes: run `tools/verify_source.py` (both fresh builds,
+   every unit exact, the integrated and source-only images), then `tools/progress.py --record`/`--check`,
+   the tests and `tools/check_publication.py`, exactly as for an admission.
+
+New admissions keep using address-suffixed provisional names; a later rename pass picks up any address that
+gains a name in the manifest.

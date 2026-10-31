@@ -31,7 +31,7 @@ extern void operation_1c7dd4(void *);
 extern void call_8c027ab8(S_g8c4db9e0 *);
 extern void call_8c027b60(char, S_g8c4db9e0 *, void *);
 extern void call_8c027cfc(S_g8c4db9e0 *);
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 void operation_8c17ede4(void)
 {
     int v2;
@@ -56,9 +56,9 @@ void operation_8c17ede4(void)
         (*(S_g8c4db9e0 **)0x8c4db9e0)->f36c = 0;
     }
     if (*(int *)0x8c4db9e4 != 0) {
-        call_8c12b880((void *)(((char *)*(S_g8c4db9e4 **)0x8c4db9e4 + 0x24c)), 0, 0x5a0);
+        memset_8c12b880((void *)(((char *)*(S_g8c4db9e4 **)0x8c4db9e4 + 0x24c)), 0, 0x5a0);
         (*(S_g8c4db9e4 **)0x8c4db9e4)->f244 = 0;
         (*(S_g8c4db9e4 **)0x8c4db9e4)->f248 = 0;
-        call_8c12b880((void *)(((char *)*(S_g8c4db9e4 **)0x8c4db9e4 + 0x11c4)), 0, 0xa0);
+        memset_8c12b880((void *)(((char *)*(S_g8c4db9e4 **)0x8c4db9e4 + 0x11c4)), 0, 0xa0);
     }
 }

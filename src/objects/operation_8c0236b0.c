@@ -8,7 +8,7 @@ struct Object {
 extern int g_8c418248;
 extern int g_8c4627c8;
 extern void call_8c0fe1f4(int, short, short);
-void operation_8c0236b0(Object *o)
+void handle_6x83_place_trap_8c0236b0(Object *o)
 {
     int n;
     int v10;

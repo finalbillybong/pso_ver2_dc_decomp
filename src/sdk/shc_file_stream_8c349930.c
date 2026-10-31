@@ -16,24 +16,24 @@ typedef struct Stream {
     int arg_b;
 } Stream;
 
-extern void file_seek_8c357ff4(int handle, int offset, int whence);
-extern int file_tell_8c357fba(int handle);
+extern void cvFsSeek_8c357ff4(int handle, int offset, int whence);
+extern int cvFsTell_8c357fba(int handle);
 extern void lock_8c34bbfc(void);
-extern void file_close_8c3580a2(int handle);
+extern void cvFsStopTr_8c3580a2(int handle);
 extern void unlock_8c34bc24(void);
 extern int g_counter_8c3facb0;
 
 int stream_seek_8c349930(Stream *s, int offset)
 {
     Stream *p = s;
-    file_seek_8c357ff4(p->handle, p->base + offset, 0);
+    cvFsSeek_8c357ff4(p->handle, p->base + offset, 0);
     s = p;
-    return file_tell_8c357fba(s->handle) - s->base;
+    return cvFsTell_8c357fba(s->handle) - s->base;
 }
 
 int stream_position_8c34995a(Stream *s)
 {
-    if (s->handle != 0) return file_tell_8c357fba(s->handle) - s->base;
+    if (s->handle != 0) return cvFsTell_8c357fba(s->handle) - s->base;
     return 0;
 }
 
@@ -56,7 +56,7 @@ void stream_stop_8c3499b2(Stream *s)
 {
     lock_8c34bbfc();
     if (s->open == 1 && s->handle != 0) {
-        file_close_8c3580a2(s->handle);
+        cvFsStopTr_8c3580a2(s->handle);
         s->open = 0;
     }
     unlock_8c34bc24();

@@ -4,7 +4,7 @@ typedef char check_layout[sizeof(Dialog)==940 && (unsigned long)&((Dialog *)0)->
 extern Dialog *base(Dialog *,void *);
 extern void *resource;
 extern char dispatch[];
-extern void *clear(void *,int,unsigned int);
+extern void *memset_8c12b880(void *,int,unsigned int);
 Dialog *initialize_callback_dialog(Dialog *o,void *context,Parent *parent,int value,int parameter) {
     Dialog **home=&o;
     base(o,context);
@@ -14,6 +14,6 @@ Dialog *initialize_callback_dialog(Dialog *o,void *context,Parent *parent,int va
     o->parent=parent;o->unknown912=0;o->unknown916=0;o->unknown920=0;
     o->unknown928=0;o->unknown924=0;o->value=value;
     o->accept=0;o->cancel=0;
-    clear(o->buffer,0,840);
+    memset_8c12b880(o->buffer,0,840);
     return o;
 }

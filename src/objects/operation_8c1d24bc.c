@@ -27,13 +27,13 @@ struct Object {
     char unknown50[0x30];
     int f80;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void process_entries_8c2534e0(int);
 Object *operation_8c1d24bc(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c276e0c;
     o->tag = *(int *)0x8c3299b8;
     o->size = 0x84;

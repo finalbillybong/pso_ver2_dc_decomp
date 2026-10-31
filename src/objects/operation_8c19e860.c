@@ -28,8 +28,8 @@ extern void operation_8c19f504(void *, int, unsigned char, char);
 extern void call_8c1c770c(Arg1 *, void *);
 extern void call_8c18de08(int);
 extern int operation_8c257e2c(int);
-extern int call_8c18de4c(int);
-extern void call_8c12b154(int, void *, int);
+extern int operator_new_8c18de4c(int);
+extern void strncpy_8c12b154(int, void *, int);
 extern void reset_text_cursor_8c18ea38(void);
 extern void operation_8c18eb44(int);
 extern void operation_8c19f5c0(void *, int);
@@ -68,10 +68,10 @@ void operation_8c19e860(Object *o, Arg1 *a1, int a2)
     }
     if ((void *)0x8c4dbe40 != 0) {
         t1 = operation_8c257e2c((int)((void *)0x8c4dbe40));
-        t2 = call_8c18de4c((int)(t1 + 1));
+        t2 = operator_new_8c18de4c((int)(t1 + 1));
         v14 = (int)t2;
         v12 = (int)(t1 + 1);
-        call_8c12b154(t2, (void *)((void *)0x8c4dbe40), v12);
+        strncpy_8c12b154(t2, (void *)((void *)0x8c4dbe40), v12);
         o->tag |= 8;
     } else {
         v14 = (int)(void *)0x8c4dbe40;
@@ -86,10 +86,10 @@ void operation_8c19e860(Object *o, Arg1 *a1, int a2)
     }
     if ((void *)0x8c4dbe40 != 0) {
         t3 = operation_8c257e2c((int)((void *)0x8c4dbe40));
-        t4 = call_8c18de4c((int)(t3 + 1));
+        t4 = operator_new_8c18de4c((int)(t3 + 1));
         v22 = (int)t4;
         v20 = (int)(t3 + 1);
-        call_8c12b154(t4, (void *)((void *)0x8c4dbe40), v20);
+        strncpy_8c12b154(t4, (void *)((void *)0x8c4dbe40), v20);
         o->tag |= 0x10;
     } else {
         v22 = (int)(void *)0x8c4dbe40;

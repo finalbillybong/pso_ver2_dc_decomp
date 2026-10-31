@@ -8,13 +8,13 @@ typedef struct Arg1 Arg1;
 struct Arg1 {
     short f00;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 int operation_8c09de04(int a0, Arg1 *a1)
 {
     char *v1;
     int t1;
     int t2;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     v1 = (char *)*(int *)((char *)((char *)*(S_g8c2ebec8 **)((char *)0x8c2ebec8 + (t1 << 2)) + 0x4) + (a1->f00 << 4));
     if (v1 != 0) {
         t2 = ((int (*)(void *))(v1))((void *)(((char *)a1 + 0x4)));

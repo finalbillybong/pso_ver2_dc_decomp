@@ -18,7 +18,7 @@ extern void call_8c011ec0(int);
 extern int get_field_8c21f338(int);
 extern void operation_8c21f66c(void *, int);
 extern void call_8c21f2d4(int);
-void operation_8c21f234(void)
+void load_symbol_chat_data_8c21f234(void)
 {
     int v2;
     int v1;

@@ -20,7 +20,7 @@ extern S_g8c4db408 *g_8c4db408;
 extern S_L8c4db484 g_8c4db484;
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int call_8c04c6a8(void *);
-extern void call_8c12b154(void *, int, int);
+extern void strncpy_8c12b154(void *, int, int);
 void operation_8c171440(int a0)
 {
     int v1;
@@ -30,7 +30,7 @@ void operation_8c171440(int a0)
     t1 = lookup_low_id((int)(*(S_g8c4db408_0 **)((char *)((char *)g_8c4db408 + 0x0) + (v1))));
     if (t1 != 0) {
         t2 = call_8c04c6a8((void *)(t1->f818));
-        call_8c12b154((void *)((void *)&g_8c4db484), t2, 0xf);
+        strncpy_8c12b154((void *)((void *)&g_8c4db484), t2, 0xf);
         (&g_8c4db484)->f0f = 0;
         *(int *)((char *)((char *)g_8c4db408 + 0x0) + (v1)) = 1;
         return;

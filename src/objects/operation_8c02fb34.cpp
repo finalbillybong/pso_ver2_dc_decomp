@@ -29,13 +29,13 @@ struct Frame {
     unsigned short f02;
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void call_8c12b880(Frame *, int, int);
+extern "C" void memset_8c12b880(Frame *, int, int);
 extern "C" void operation_8c02fb34(Object *o)
 {
     Frame frame;
     o->v4((g_8c2e7ce0 + 0x655));
     if (((ObjectData *)o)->fa7c != 0) {
-        call_8c12b880((Frame *)((&frame)), 0, 4);
+        memset_8c12b880((Frame *)((&frame)), 0, 4);
         (&frame)->f00 = 0xc0;
         (&frame)->f01 = 0;
         (&frame)->f02 = 4;

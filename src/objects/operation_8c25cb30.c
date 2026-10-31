@@ -18,8 +18,8 @@ extern S_g8c513420 *g_8c513420;
 extern int g_8c513424;
 extern int g_8c513428;
 extern char g_8c3404e0[];
-extern int call_8c18de4c(int);
-extern void call_8c12b154(int, void *, int);
+extern int operator_new_8c18de4c(int);
+extern void strncpy_8c12b154(int, void *, int);
 extern S_c8c011ecc *call_8c011ecc(int);
 extern int operation_8c104d70(int);
 extern int call_8c0787cc(int, int);
@@ -37,10 +37,10 @@ void operation_8c25cb30(void)
     int t5;
     int t6;
     t4 = (int)(g_8c3404e0 + 0x11);
-    t1 = call_8c18de4c(0x1c);
+    t1 = operator_new_8c18de4c(0x1c);
     g_8c513428 = (int)(t1);
-    call_8c12b154(t1, (void *)t4, 0x1b);
-    t2 = call_8c18de4c(0xcc);
+    strncpy_8c12b154(t1, (void *)t4, 0x1b);
+    t2 = operator_new_8c18de4c(0xcc);
     g_8c513424 = (int)(t2);
     v1 = (S_vv1 *)t2;
     v2 = (int)0;
@@ -56,7 +56,7 @@ void operation_8c25cb30(void)
     t3->f00 = (int)(g_8c513424);
     t4 = operation_8c104d70(t4);
     if (t4 != 0) {
-        t5 = call_8c18de4c(0x200000);
+        t5 = operator_new_8c18de4c(0x200000);
         if (t5 != 0) {
             t6 = call_8c0787cc(t4, t5);
             if (t6 > 0) {

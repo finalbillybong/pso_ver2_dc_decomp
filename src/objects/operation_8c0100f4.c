@@ -14,7 +14,7 @@ struct S_vv1 {
 };
 extern int g_8c417664;
 extern int call_8c372910(int, void *);
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 void operation_8c0100f4(int a0, int a1, int a2)
 {
     S_vv1 *v1;
@@ -38,7 +38,7 @@ void operation_8c0100f4(int a0, int a1, int a2)
         v1->f08 = 0;
         v1->f0c = 0;
         v1->f10 = 0;
-        call_8c12b880((void *)((int)v1 + 0x14), 0, 0x38);
+        memset_8c12b880((void *)((int)v1 + 0x14), 0, 0x38);
         break;
     default:
         v1->f04 = a2;

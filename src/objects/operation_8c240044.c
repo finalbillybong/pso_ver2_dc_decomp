@@ -40,7 +40,7 @@ struct Arg0_13c {
 extern int call_8c1aaabc(void *);
 extern int call_8c1aaafc(void *);
 extern int operation_8c137998(void *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c1ab01c(void *, int, int, int);
 void operation_8c240044(Object *o)
 {
@@ -74,7 +74,7 @@ void operation_8c240044(Object *o)
     (&frame)->f24 = 0.7f;
     t3 = operation_8c137998((void *)(&frame));
     if (t3 != 0) {
-        t4 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
+        t4 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
         if (t4 != 0) {
             operation_8c1ab01c((void *)t4, t3, (int)((void *)0x8c240154), 3);
         }

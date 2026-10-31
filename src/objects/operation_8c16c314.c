@@ -9,7 +9,7 @@ struct S_L8c317ba8 {
     int f04;
 };
 extern S_L8c317ba8 g_8c317ba8;
-void operation_8c16c314(int a0)
+void quest_args_none_8c16c314(int a0)
 {
     ((void (*)(int))(*(int *)((char *)&g_8c317ba8.f04 + (a0 << 3))))((int)(a0 << 3));
 }

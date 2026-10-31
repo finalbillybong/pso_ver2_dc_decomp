@@ -41,7 +41,7 @@ extern int handle_state_8c34e368(int handle);
 extern void snd_thunk_8c34e0ee(int source, int on);
 extern int stream_channels_8c350772(Stream *s);
 extern int d_8c3fb414;
-extern void *memset(void *p, int c, int n);
+extern void *memset_8c12b880(void *p, int c, int n);
 
 void stream_refill_8c351770(Stream *s)
 {
@@ -83,7 +83,7 @@ check:
         for (i = 0; i < n; i++) {
             b = s->buffers[i];
             b->vtbl->lock(b, 0, size, &lk);
-            memset(lk.data, 0, lk.size);
+            memset_8c12b880(lk.data, 0, lk.size);
             b->vtbl->unlock(b, 1, &lk);
         }
     }

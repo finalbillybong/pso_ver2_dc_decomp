@@ -12,11 +12,11 @@ struct Object {
 };
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c12a138(int, void *, Object *);
 extern void call_8c12a518(int, void *, Object *);
 extern void call_8c12a90c(int, void *, Object *);
-int operation_8c129bd8(Object *o)
+int TOHangceilingCave01_create_8c129bd8(Object *o)
 {
     int t1;
     int t2;
@@ -24,19 +24,19 @@ int operation_8c129bd8(Object *o)
     if (o != 0) {
         switch (o->f38) {
         case 0:
-            t1 = allocate_block(g_8c4d97e0, (unsigned int)0x37c);
+            t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x37c);
             if (t1 != 0) {
                 call_8c12a138(t1, g_8c44be98, o);
             }
             return (int)(t1);
         case 1:
-            t2 = allocate_block(g_8c4d97e0, (unsigned int)0x37c);
+            t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x37c);
             if (t2 != 0) {
                 call_8c12a518(t2, g_8c44be98, o);
             }
             return (int)(t2);
         case 2:
-            t3 = allocate_block(g_8c4d97e0, (unsigned int)0x37c);
+            t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x37c);
             if (t3 != 0) {
                 call_8c12a90c(t3, g_8c44be98, o);
             }

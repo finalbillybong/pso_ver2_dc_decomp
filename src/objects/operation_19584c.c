@@ -9,7 +9,7 @@ extern void * panel_parent;
 extern float panel_height;
 extern void * panel_pool;
 extern WidgetPanelInstance * panel_owner;
-void operation_19584c(void){
+void TObjCMIcon_ctor_8c19584c(void){
     WidgetPanelInstance *o;
     void *parent;
     {

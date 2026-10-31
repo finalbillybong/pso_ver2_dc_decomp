@@ -17,7 +17,7 @@ struct Arg0_20 {
     char unknown0[0x80];
     unsigned short f80;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c156c24(int, int);
 extern int get_field_8c21f338(int);
 extern int call_8c21f370(int);
@@ -26,7 +26,7 @@ extern void operation_8c156d30(Arg0_20 *, int, int, int);
 extern void call_8c156d48(Arg0_20 *, int, int, int, int);
 extern void operation_8c1570b4(void *, float, float);
 extern void operation_8c157138(void *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c1a62a8(void *, void *, void *);
 Object *operation_8c1bfe90(Object *o, int a1)
 {
@@ -39,7 +39,7 @@ Object *operation_8c1bfe90(Object *o, int a1)
     int t2;
     int t5;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c275780;
     t1 = operation_8c156c24((int)((void *)0x8c288fe8), 0xc);
     v1 = (int)0;
@@ -59,7 +59,7 @@ Object *operation_8c1bfe90(Object *o, int a1)
     o->f20->f80 = (o->f20->f80 & 0xffff) | 0x10;
     operation_8c1570b4((void *)(o->f20), 198.0f, 124.0f);
     operation_8c157138((void *)(o->f20));
-    t5 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
+    t5 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
     if (t5 != 0) {
         operation_8c1a62a8((void *)t5, (void *)((void *)0x8c288ff0), (void *)((void *)0x8c288ff8));
     }

@@ -13,7 +13,7 @@ extern S_g8c4db4e4 *g_8c4db4e4;
 extern char g_8c318c08[];
 extern int operation_8c248044(void);
 extern void call_8c12b048(Frame *, void *, ...);
-extern int call_8c12b0cc(Frame *);
+extern int strlen_8c12b0cc(Frame *);
 extern void call_8c18e720(void *, Frame *);
 void operation_8c172750(void)
 {
@@ -23,7 +23,7 @@ void operation_8c172750(void)
     t1 = operation_8c248044();
     call_8c12b048((Frame *)((&frame)), (void *)((g_8c318c08 + 0x50)), t1);
     (&frame)->f3f = 0;
-    t2 = call_8c12b0cc((Frame *)((&frame)));
+    t2 = strlen_8c12b0cc((Frame *)((&frame)));
     call_8c18e720(g_8c4db4e4, (Frame *)((&frame)));
     g_8c4db4e4 = (S_g8c4db4e4 *)((int)g_8c4db4e4 + t2);
 }

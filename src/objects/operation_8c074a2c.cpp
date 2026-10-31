@@ -70,8 +70,8 @@ typedef struct S_vv11Data {
     int f13c;
 } S_vv11Data;
 extern int g_8c4689ec;
-extern "C" int current_effect_mode(void);
-extern "C" void operation_8c074a2c(Object *o)
+extern "C" int get_current_area_8c032b10(void);
+extern "C" void handle_6x61_activate_item_effect_8c074a2c(Object *o)
 {
     int v3;
     int v2;
@@ -80,7 +80,7 @@ extern "C" void operation_8c074a2c(Object *o)
     S_vv7 *v7;
     S_vv11 *v11;
     int t1;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (t1 != 0xf) {
         v1 = (int)o->f04;
         v2 = 0;

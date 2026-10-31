@@ -13,11 +13,11 @@ extern void call_8c17e458(void);
 extern void call_8c027d54(void);
 extern void call_8c035388(void);
 extern void call_8c17f538(void);
-extern int operation_8c1818c0(void);
+extern int save_system_file_8c1818c0(void);
 extern void call_8c191504(int);
 extern int call_8c372d98(void *);
 extern void call_8c184918(void);
-extern int call_8c181074(void);
+extern int load_system_file_8c181074(void);
 extern void call_8c17f648(void);
 extern void call_8c17fc24(void);
 void operation_8c17e194(void)
@@ -45,7 +45,7 @@ void operation_8c17e194(void)
         g_8c4dbaec = 5;
         return;
     case 5:
-        t1 = operation_8c1818c0();
+        t1 = save_system_file_8c1818c0();
         if (t1 != 0) {
             return;
         }
@@ -62,7 +62,7 @@ void operation_8c17e194(void)
         g_8c41cb3c = 0;
         return;
     case 7:
-        t3 = call_8c181074();
+        t3 = load_system_file_8c181074();
         if (t3 != 0) {
             return;
         }
@@ -83,7 +83,7 @@ void operation_8c17e194(void)
         g_8c41cb3c = 0;
         return;
     case 10:
-        t5 = operation_8c1818c0();
+        t5 = save_system_file_8c1818c0();
         if (t5 != 0) {
             return;
         }

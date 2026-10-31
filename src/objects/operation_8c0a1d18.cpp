@@ -72,7 +72,7 @@ extern S_g8c46ee80 *g_8c46ee80;
 extern S_L8c46efc8 g_8c46efc8;
 extern "C" S_c8c36b024 *call_8c36b024(int);
 extern "C" int operation_8c02b2a4(void);
-extern "C" int current_effect_mode(void);
+extern "C" int get_current_area_8c032b10(void);
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void operation_8c02b1e0(int);
 extern "C" void operation_8c0a1d18(void)
@@ -114,11 +114,11 @@ extern "C" void operation_8c0a1d18(void)
         if (((&g_8c46efc8)->f00) != 0) {
             return;
         }
-        t3 = current_effect_mode();
+        t3 = get_current_area_8c032b10();
         if (t3 == 0xb) {
             return;
         }
-        if (current_effect_mode() == 0xc || current_effect_mode() == 0xd || current_effect_mode() == 0xe || current_effect_mode() == 0xf || current_effect_mode() == 0) {
+        if (get_current_area_8c032b10() == 0xc || get_current_area_8c032b10() == 0xd || get_current_area_8c032b10() == 0xe || get_current_area_8c032b10() == 0xf || get_current_area_8c032b10() == 0) {
             return;
         }
                         v1 = (int)0x308;

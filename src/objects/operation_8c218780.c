@@ -10,7 +10,7 @@ struct Object {
     int f08;
     int f0c;
 };
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 extern void call_8c2187e8(Object *);
 Object *operation_8c218780(Object *o, int a1, int a2)
 {
@@ -18,7 +18,7 @@ Object *operation_8c218780(Object *o, int a1, int a2)
     o->f0c = 0;
     o->f04 = a1;
     o->tag = a2;
-    t1 = call_8c18de4c(a2);
+    t1 = operator_new_8c18de4c(a2);
     o->f08 = t1;
     call_8c2187e8(o);
     return o;

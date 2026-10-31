@@ -30,7 +30,7 @@ extern int call_8c250918(void);
 extern void call_8c220c40(int, int);
 extern int operation_8c106798(Object *);
 extern int operation_8c173460(void *, int);
-extern int create_loader_8c1735f8(int);
+extern int TQuestThread_ctor_2_8c1735f8(int);
 void operation_8c208704(Object *o)
 {
     int t1;
@@ -103,7 +103,7 @@ L_8c2087b8:;
             if (t6 != 0) {
                 call_8c220c40(0xb, 1);
                 if ((int)((&g_8c4daae0)->f04) != -1) {
-                    t7 = create_loader_8c1735f8((int)((&g_8c4daae0)->f04));
+                    t7 = TQuestThread_ctor_2_8c1735f8((int)((&g_8c4daae0)->f04));
                     o->f3c = (int)(t7);
                 }
                 o->f24 = 4;
@@ -113,7 +113,7 @@ L_8c2087b8:;
             if (t8 != 0) {
                 call_8c220c40(0x12, 1);
                 if ((int)((&g_8c4daae0)->f00) != -1) {
-                    t9 = create_loader_8c1735f8((int)((&g_8c4daae0)->f00));
+                    t9 = TQuestThread_ctor_2_8c1735f8((int)((&g_8c4daae0)->f00));
                     o->f3c = (int)(t9);
                 }
                 o->f24 = 5;

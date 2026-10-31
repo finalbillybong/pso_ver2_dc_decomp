@@ -29,10 +29,10 @@ struct Arg1 {
     char unknown0[0x28];
     Block_p0_20 f28;
 };
-extern void initialize_hierarchy_node(Object *, int);
+extern void TObject_ctor_8c0330e4(Object *, int);
 Object *operation_8c173b48(Object *o, Arg1 *a1, int a2)
 {
-    initialize_hierarchy_node(o, 0);
+    TObject_ctor_8c0330e4(o, 0);
     o->dispatch = (void *)0x8c27023c;
     o->tag = *(int *)0x8c318de4;
     o->size = 0xa8;

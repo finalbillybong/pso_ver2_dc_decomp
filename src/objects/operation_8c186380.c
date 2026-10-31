@@ -12,9 +12,9 @@ struct Frame {
 };
 extern char g_8c319a80[];
 extern void operation_8c03ef80(void *, ...);
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern void call_8c03ef04(Frame *, int, void *);
-extern int operation_8c104d00(int, void *);
+extern int file_load_8c104d00(int, void *);
 extern int call_8c18e808(int, int);
 extern int call_8c14f8c4(void);
 extern void call_8c3889a4(int, int, int);
@@ -48,7 +48,7 @@ L_8c1863be:;
         return 0;
     }
     v7 = (int)*(int *)((char *)((char *)*(S_vv1_0 **)((char *)((char *)v1 + 0x0) + (a1 << 3)) + 0x4) + (a2 * 0xc));
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 == 0x10 && a0 == 0) {
         v8 = (int)(*(int *)0x8c510ba0 != 0);
         if (v8 != 0) {
@@ -64,7 +64,7 @@ L_8c1863be:;
     }
     call_8c03ef04((Frame *)((&frame)), v7, (void *)((g_8c319a80 + 0x3a)));
 L_8c186450:;
-    t2 = operation_8c104d00((int)(&frame), (void *)(*(S_g8c4dbb98 **)0x8c4dbb98));
+    t2 = file_load_8c104d00((int)(&frame), (void *)(*(S_g8c4dbb98 **)0x8c4dbb98));
     if (!(t2 >= 0)) {
         return 0;
     }

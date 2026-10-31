@@ -2,10 +2,10 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c010448(void);
-extern void operation_8c0104e4(void);
-extern void operation_8c0104e8(void);
-extern void operation_8c0104ec(void);
+extern void TObjCollision_dtor_8c010448(void);
+extern void TObjCollision_update_8c0104e4(void);
+extern void TObjCollision_render_8c0104e8(void);
+extern void TObjCollision_render_shadow_8c0104ec(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
@@ -18,9 +18,9 @@ extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void destroy_virtual_context_8c01116c(void);
-extern void operation_8c0111c4(void);
-extern void operation_8c0111c8(void);
-extern void operation_8c0111cc(void);
+extern void TObject_update_default_8c0111c4(void);
+extern void TObject_render_default_8c0111c8(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void operation_8c010fac(void);
 extern void operation_8c01103c(void);
 extern void operation_8c011148(void);
@@ -37,10 +37,10 @@ extern void fn_8c010bcc(void);
 VirtualFunction const vt_8c260ecc[17] = {
     0,
     0,
-    operation_8c010448,
-    operation_8c0104e4,
-    operation_8c0104e8,
-    operation_8c0104ec,
+    TObjCollision_dtor_8c010448,
+    TObjCollision_update_8c0104e4,
+    TObjCollision_render_8c0104e8,
+    TObjCollision_render_shadow_8c0104ec,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -59,9 +59,9 @@ VirtualFunction const vt_8c260f10[12] = {
     0,
     0,
     destroy_virtual_context_8c01116c,
-    operation_8c0111c4,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_update_default_8c0111c4,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c010fac,
     operation_8c01103c,
@@ -75,9 +75,9 @@ VirtualFunction const vt_8c260f40[12] = {
     0,
     0,
     destroy_virtual_context_8c010edc,
-    operation_8c0111c4,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_update_default_8c0111c4,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     fn_8c0107c0,
     fn_8c010934,

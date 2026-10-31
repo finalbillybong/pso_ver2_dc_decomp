@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c1e653c(void);
+extern void mode_sega_logo_init_8c1e653c(void);
 extern void operation_8c1e6690(void);
 extern void operation_8c1e679c(void);
 extern void operation_8c1cbb20(void);
@@ -60,7 +60,7 @@ extern void reconstruct_8c0c5a08(void);
 extern void operation_8c0c5a64(void);
 extern void operation_8c0c5aa0(void);
 extern void operation_8c0c5b38(void);
-extern void fn_8c184138(void);
+extern void mode_title_init_8c184138(void);
 extern void operation_8c184390(void);
 extern void operation_8c184498(void);
 extern void operation_8c1cbb48(void);
@@ -80,7 +80,7 @@ VirtualFunction const vt_8c2e3258[105] = {
     0,
     0,
     0,
-    operation_8c1e653c,
+    mode_sega_logo_init_8c1e653c,
     operation_8c1e6690,
     operation_8c1e679c,
     operation_8c1cbb20,
@@ -158,7 +158,7 @@ VirtualFunction const vt_8c2e3258[105] = {
     operation_8c0c5a64,
     operation_8c0c5aa0,
     operation_8c0c5b38,
-    fn_8c184138,
+    mode_title_init_8c184138,
     operation_8c184390,
     operation_8c184498,
     operation_8c1cbb48,

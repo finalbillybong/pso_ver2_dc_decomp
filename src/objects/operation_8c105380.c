@@ -26,9 +26,9 @@ struct S_vv5 {
     unsigned short f00;
 };
 extern int g_8c4d5b10;
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c1a8484(int, int);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 static inline void relocate(Frame *f)
 {
     int *q;
@@ -51,7 +51,7 @@ int operation_8c105380(int a0, int a1)
     Frame frame;
     int t1;
     int r;
-    initialize_hierarchy_node((void *)(&frame), (void *)0);
+    TObject_ctor_8c0330e4((void *)(&frame), (void *)0);
     (&frame)->f18 = (void *)0x8c26586c;
     g_8c4d5b10 = a0;
     t1 = operation_8c1a8484(a0, a1);
@@ -61,10 +61,10 @@ int operation_8c105380(int a0, int a1)
         relocate(&frame);
         r = frame.f28;
         (&frame)->f18 = (void *)0x8c26586c;
-        destroy_hierarchy_node((void *)(&frame), (short)0);
+        TObject_dtor_8c03311c((void *)(&frame), (short)0);
         return r;
     }
     (&frame)->f18 = (void *)0x8c26586c;
-    destroy_hierarchy_node((void *)(&frame), (short)0);
+    TObject_dtor_8c03311c((void *)(&frame), (short)0);
     return 0;
 }

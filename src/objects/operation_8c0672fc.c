@@ -10,7 +10,7 @@ struct Object {
 };
 extern int call_8c012a14(short);
 extern void call_8c067324(int, Object *);
-void operation_8c0672fc(Object *o)
+void handle_6x12_dragon_boss_actions_8c0672fc(Object *o)
 {
     int t1;
     /* TODO 00000000..00000000

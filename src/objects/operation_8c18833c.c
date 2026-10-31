@@ -30,10 +30,10 @@ struct Arg1 {
 struct Arg4 {
     Vector3 f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c18833c(Object *o, Arg1 *a1, int a2, int a3, register Arg4 *a4, float f0, float f1)
 {
-    initialize_hierarchy_node((void *)o, (void *)(*(S_g8c44bea0 **)0x8c44bea0));
+    TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44bea0 **)0x8c44bea0));
     o->dispatch = (void *)0x8c272178;
     *(Vector3 *)&o->f30 = *(Vector3 *)&a1->f00;
     o->f20 = a2;

@@ -15,13 +15,13 @@ typedef struct Actor {
     int counter;
     float speed;
 } Actor;
-extern void initialize_actor_mode_state(Actor *);
+extern void TObjEnemyCustom_ctor_8c0c2354(Actor *);
 extern void initialize_state_8c0fbf7c(void *);
 Actor *initialize_actor_8c11dbd0(Actor *o)
 {
     Actor **self = &o;
     (void)self;
-    initialize_actor_mode_state(o);
+    TObjEnemyCustom_ctor_8c0c2354(o);
     o->dispatch = (void *)0x8c26a220;
     initialize_state_8c0fbf7c(o->state);
     o->tag = *(int *)0x8c3114ec;

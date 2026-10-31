@@ -1,5 +1,5 @@
 #include "src/include/hierarchy.h"
-HierarchyNode *initialize_hierarchy_node(HierarchyNode *node,HierarchyNode *parent) {
+HierarchyNode *TObject_ctor_8c0330e4(HierarchyNode *node,HierarchyNode *parent) {
  node->dispatch=(NodeDispatch *)0x8c261580;
  node->flags=0;
  node->parent=parent;

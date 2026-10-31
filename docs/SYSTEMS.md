@@ -5,9 +5,10 @@ anyone who wants to read, mod or port the game: it says which part of the execut
 and how sure we are. It is a map, not a specification. Every claim gives its evidence and a confidence level.
 
 - **Names are proposals.** No original symbol names survive for this build. The names here and in
-  [`config/names.json`](../config/names.json) are descriptive reconstructions. They have **not** been applied to
-  `src/` yet, so source files still use mechanical names such as `operation_8c0330e4`. Several files may use different
-  local names for the same address.
+  [`config/names.json`](../config/names.json) are descriptive reconstructions. The high-confidence names of the
+  curated set are applied to `src/` with an address suffix (`TObject_ctor_8c0330e4`, `game_main_8c01bbec`) by
+  `tools/rename.py`; every other function keeps its mechanical name (such as `operation_8c0330e4`), and files may still
+  use different local names for the same unrenamed address.
 - **Confidence.** *High*: a direct structural or textual proof (a table, a string that names the API, an address
   published by newserv that equals ours). *Medium*: a consistent but indirect argument (call pattern, vtable slot
   position, unique usage). *Low*: plausible but unproven. Low claims are only described here; they never become names.

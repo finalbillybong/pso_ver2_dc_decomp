@@ -12,7 +12,7 @@ struct Object {
 };
 extern int lookup_object_by_id(unsigned short);
 extern void operation_23959c(void *, void *, int);
-void operation_8c02bfd8(Object *o)
+void handle_6x8F_add_battle_damage_scores_8c02bfd8(Object *o)
 {
     int v1;
     int v2;

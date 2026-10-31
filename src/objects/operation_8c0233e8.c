@@ -9,7 +9,7 @@ extern int g_8c418248;
 extern int g_8c4627c8;
 extern int operation_8c02c1ac(void *);
 extern int call_8c023484(int, void *, void *);
-void operation_8c0233e8(Object *o)
+void handle_6x29_delete_inventory_item_8c0233e8(Object *o)
 {
     Object *self = o;
     int x;

@@ -19,10 +19,10 @@ struct Object {
     char unknown34[0x6e0];
     Arg0_714 *f714;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void operation_8c163738(void);
 extern int operation_8c01c434(void);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c225f04(int, Object *);
 extern void call_8c22c570(int, Object *);
 extern void call_8c22c8dc(void *, float);
@@ -33,7 +33,7 @@ Object *operation_8c0e9b88(Object *o)
     int t2;
     int t3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)(*(S_g8c44be94 **)0x8c44be94));
+    TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be94 **)0x8c44be94));
     o->dispatch = (void *)0x8c267f78;
     *(int *)0x8c4689e0 = (int)(*(int *)0x8c44be9c);
     operation_8c163738();
@@ -46,14 +46,14 @@ Object *operation_8c0e9b88(Object *o)
     case 1:
         o->f2c = 0x19;
     }
-    t2 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x1994);
+    t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x1994);
     if (t2 != 0) {
         call_8c225f04(t2, o);
     }
     o->f24 = 0;
     o->f20 = 0;
     o->f30 = 0;
-    t3 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
+    t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
     if (t3 != 0) {
         call_8c22c570(t3, o);
     }

@@ -45,7 +45,7 @@ struct S_vv34 {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void call_8c075ccc(Object *, void *, ...);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c0772f8(void *, int, int);
 void operation_8c076e38(Object *o)
 {
@@ -61,7 +61,7 @@ void operation_8c076e38(Object *o)
     none = -1;
     if (o->f1e0 != none) {
         if (o->f1bc != 0) {
-            t = allocate_block(g_8c4d97e0, 0x30);
+            t = heap_alloc_8c122700(g_8c4d97e0, 0x30);
             if (t != 0) {
                 operation_8c0772f8((void *)t, o->f1bc, color);
             }
@@ -74,7 +74,7 @@ void operation_8c076e38(Object *o)
     }
     if (o->f1e2 != -1) {
         if (o->f1bc != 0) {
-            t = allocate_block(g_8c4d97e0, 0x30);
+            t = heap_alloc_8c122700(g_8c4d97e0, 0x30);
             if (t != 0) {
                 operation_8c0772f8((void *)t, o->f1bc, color);
             }

@@ -1,11 +1,11 @@
 #include "src/include/controller_child.h"
 
-#define construct_at ((void (*)(ControllerChild *, void *))0x8c0330e4)
+#define TObject_ctor_8c0330e4 ((void (*)(ControllerChild *, void *))0x8c0330e4)
 
 ControllerChild *construct_controller_child_b(ControllerChild *object,
                                                void *parent, float *position,
                                                int value) {
-    construct_at(object, parent);
+    TObject_ctor_8c0330e4(object, parent);
     object->dispatch = (void *)0x8c27e4d4;
     object->tag = *(unsigned int *)0x8c33f6c8;
     object->size = 52;

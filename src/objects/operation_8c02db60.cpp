@@ -28,7 +28,7 @@ struct Arg1 {
     unsigned char f01;
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02db60(Object *o, Arg1 *a1)
+extern "C" void handle_cmd_03_legacy_register_result_8c02db60(Object *o, Arg1 *a1)
 {
     int v2;
     S_vv1 *v1;

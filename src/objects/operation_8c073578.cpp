@@ -47,7 +47,7 @@ struct Arg0_13c {
 extern "C" void call_8c07383c(Object *);
 extern "C" int lookup_low_id(int);
 extern "C" void operation_8c074d44(void *);
-extern "C" void operation_8c073578(Object *o)
+extern "C" void TItem_update_8c073578(Object *o)
 {
     int t1;
     int t2;

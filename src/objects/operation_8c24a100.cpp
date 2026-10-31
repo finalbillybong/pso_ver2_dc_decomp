@@ -56,7 +56,7 @@ extern Block20 g_8c33b234;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c510ee0 *g_8c510ee0;
 extern "C" void operation_8c0ee870(void *);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c245d6c(void *, void *, void *, int);
 extern "C" void call_8c24a610(Object *);
 extern "C" Object *operation_8c24a100(Object *o, int a1, int a2)
@@ -79,7 +79,7 @@ extern "C" Object *operation_8c24a100(Object *o, int a1, int a2)
     v4 = (int)0x104;
     v5 = (int)0;
     while (8 > v5) {
-        t1 = allocate_block(g_8c4d97e0, (unsigned int)0x50);
+        t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x50);
         if (t1 != 0) {
             operation_8c245d6c((void *)t1, (void *)(((char *)o + 0x3c)), (void *)(&(&frame)->f04), (int)o);
         }

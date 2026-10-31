@@ -73,9 +73,9 @@ extern S_g8c469c80 *g_8c469c80;
 extern int g_8c469c84;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void create_effect(void *, int, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_panel_8c087d8c(void *, void *, void *);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c05fbf8(int, void *, int, int);
 void operation_8c084ad0(Object *o)
 {
@@ -106,15 +106,15 @@ void operation_8c084ad0(Object *o)
     (&frame)->f00.f44 = (int)(v2);
     create_effect((void *)(&o->f3c), 0x45, 0x40);
     create_effect((void *)(&o->f3c), 0x46, 0x40);
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x78);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t1 != 0) {
         initialize_panel_8c087d8c((void *)t1, g_8c44be98, (void *)(&(&frame)->f4c));
     }
-    t2 = allocate_block(g_8c4d97e0, (unsigned int)0x78);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t2 != 0) {
         initialize_panel_8c087d8c((void *)t2, g_8c44be98, (void *)(&frame));
     }
-    t3 = current_effect_mode();
+    t3 = get_current_area_8c032b10();
     switch (t3) {
     case 1:
     case 2:

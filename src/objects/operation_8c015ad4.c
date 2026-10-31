@@ -34,7 +34,7 @@ extern void operation_8c016d30(void);
 extern int operation_8c03661c(void);
 extern void operation_8c016e10(void);
 extern void call_8c2280f0(void);
-void operation_8c015ad4(int a0)
+void TLobby_update_8c015ad4(int a0)
 {
     int t1;
     int t2;

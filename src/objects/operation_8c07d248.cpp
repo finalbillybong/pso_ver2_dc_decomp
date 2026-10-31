@@ -46,7 +46,7 @@ typedef struct Arg0_13cData {
 } Arg0_13cData;
 extern "C" void call_8c07f9b0(Object *);
 extern "C" void operation_8c07dac0(void *, int);
-extern "C" int current_effect_mode(void);
+extern "C" int get_current_area_8c032b10(void);
 extern "C" void call_8c05fbf8(int, void *, int, int);
 extern "C" void operation_8c07d248(Object *o)
 {
@@ -64,7 +64,7 @@ extern "C" void operation_8c07d248(Object *o)
     t1 = o->f13c->v17();
     o->f220 = t1;
     if (o->f222 == -1) {
-        t2 = current_effect_mode();
+        t2 = get_current_area_8c032b10();
         o->f222 = t2;
     }
     v42 = (int)(((o->f1c0 & 1)) != 0);

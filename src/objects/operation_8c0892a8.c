@@ -37,7 +37,7 @@ extern void set_global_8c01c1d0(void);
 extern void operation_8c110b74(int);
 extern int lookup_low_id(int);
 extern void call_8c021cc0(int, void *);
-void operation_8c0892a8(Object *o)
+void handle_6x94_warp_8c0892a8(Object *o)
 {
     S_vv1 *v1;
     int t1;

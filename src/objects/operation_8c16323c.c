@@ -32,7 +32,7 @@ struct Object {
 };
 extern void call_8c1c9cdc(void *, Object *);
 extern void operation_1c7dd4(void *);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c1588b8(int, void *);
 extern int global_byte_set_8c08d7e8(void);
 extern int operation_19528c(unsigned short);
@@ -60,7 +60,7 @@ int operation_8c16323c(Object *o)
         operation_1c7dd4((void *)(&(&frame)->f14));
         (&frame)->f14.f00 = v1;
         (&frame)->f14.f01 = v2;
-        t1 = current_effect_mode();
+        t1 = get_current_area_8c032b10();
         call_8c1588b8(t1, (void *)(&(&frame)->f14));
     }
     t2 = global_byte_set_8c08d7e8();
@@ -89,7 +89,7 @@ int operation_8c16323c(Object *o)
 L_8c16330e:;
     *(int *)0x8c4db240 = 0;
     if (v15 != 0) {
-        t6 = current_effect_mode();
+        t6 = get_current_area_8c032b10();
         call_8c073710(v15, t6, (void *)(((char *)o + 0xc)), 0);
     }
     return (int)(v15);

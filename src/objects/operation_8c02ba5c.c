@@ -11,7 +11,7 @@ struct Object {
 extern int g_8c418248;
 extern int g_8c4627c8;
 extern void word_operation_8c02bac0(void *);
-void operation_8c02ba5c(Object *o)
+void handle_6x81_disable_drop_weapon_on_death_8c02ba5c(Object *o)
 {
     int v1;
     unsigned short v2;

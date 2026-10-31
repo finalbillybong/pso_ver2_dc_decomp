@@ -7,7 +7,7 @@ This page lists the 730 classes recovered so far: constructor, destructor, vtabl
 
 The class names are the game's own: they are strings stored in each object. Method names (`_ctor`, `_dtor`,
 `_update`, `_render`, `_vNN`) are proposals; see [SYSTEMS.md](SYSTEMS.md) for conventions and confidence, and
-look any address up with `python3 tools/names.py ADDRESS`. Nothing here has been renamed in `src/` yet.
+look any address up with `python3 tools/names.py ADDRESS`. Only the high-confidence curated names (core classes and DAT-type constructors) are applied in `src/`, as `<name>_<address>`.
 
 
 ## Method

@@ -4,7 +4,7 @@ typedef char check_flags[(unsigned long)&((Child *)0)->flags==4?1:-1];
 typedef char check_dispatch[(unsigned long)&((View *)0)->dispatch==24?1:-1];
 typedef char check_child[(unsigned long)&((View *)0)->child==36?1:-1];
 extern Child *get_at(View *);
-extern void base_at(View *,int);
+extern void TObject_dtor_8c03311c(View *,int);
 extern void free_at(void *,void *);
 extern void *heap;
 View *destroy_optional_child_owner(View *o,short release) {
@@ -13,7 +13,7 @@ View *destroy_optional_child_owner(View *o,short release) {
   o->dispatch=(void *)0x8c26197c;
   child=get_at(o);
   if(child) child->flags|=1;
-  base_at(o,0);
+  TObject_dtor_8c03311c(o,0);
   if(release>0) free_at(heap,o);
  }
  return o;

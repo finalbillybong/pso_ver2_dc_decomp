@@ -32,9 +32,9 @@ struct S_vv29 {
 extern void operation_8c09e6d0(void *);
 extern void operation_8c1ada78(Object *);
 extern void call_8c0a21a4(void);
-extern int call_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern void clear_global_render_resources(void);
-extern void operation_8c0120f4(void *, int);
+extern void TObjEnemy_dtor_8c0120f4(void *, int);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1ad790(Object *o, int a1)
 {
@@ -52,7 +52,7 @@ Object *operation_8c1ad790(Object *o, int a1)
         }
         operation_8c1ada78(o);
         call_8c0a21a4();
-        t1 = call_8c01c25c();
+        t1 = get_game_mode_8c01c25c();
         if (t1 != 0x10) {
             clear_global_render_resources();
         }
@@ -72,7 +72,7 @@ Object *operation_8c1ad790(Object *o, int a1)
             *(int *)0x8c4e228c = 0;
         }
         *(int *)0x8c4e22dc = 0;
-        operation_8c0120f4((void *)o, 0);
+        TObjEnemy_dtor_8c0120f4((void *)o, 0);
         if ((short)a1 > 0) {
             call_8c122774((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), o);
         }

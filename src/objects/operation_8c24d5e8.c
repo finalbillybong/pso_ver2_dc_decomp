@@ -11,10 +11,10 @@ struct Object {
     char unknown1c[0x2];
     short size;
 };
-extern void operation_8c0e71c8(void *, int, void *);
+extern void TItemObject_ctor_8c0e71c8(void *, int, void *);
 Object *operation_8c24d5e8(Object *o, int a1, int a2)
 {
-    operation_8c0e71c8((void *)o, a1, (void *)a2);
+    TItemObject_ctor_8c0e71c8((void *)o, a1, (void *)a2);
     o->dispatch = (void *)0x8c27df70;
     o->tag = (int)(*(int *)0x8c33ee28);
     o->size = 0x148;

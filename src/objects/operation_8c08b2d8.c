@@ -27,7 +27,7 @@ struct Arg0_24 {
 struct S_vv2 {
     int f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void operation_8c08b3a0(void *, int);
 Object *operation_8c08b2d8(Object *o, int a1, int a2, int a3)
 {
@@ -35,7 +35,7 @@ Object *operation_8c08b2d8(Object *o, int a1, int a2, int a3)
     S_vv2 *v2;
     int v3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2652c0;
     o->tag = (int)(*(int *)0x8c300230);
     o->size = 0x9c;

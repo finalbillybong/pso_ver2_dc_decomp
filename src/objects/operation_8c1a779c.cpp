@@ -31,7 +31,7 @@ extern "C" char g_8c323e1c[];
 extern "C" char g_8c41cba0[];
 extern "C" void configure_integer_field(void *, void *, int);
 extern "C" int operation_8c01d844(int, int, int, int);
-extern "C" void create_loader_8c1735f8(int);
+extern "C" void TQuestThread_ctor_2_8c1735f8(int);
 extern "C" void call_8c38c5aa(int);
 extern "C" void call_8c38c5b6(int);
 extern "C" void call_8c38cf80(int, void *, ...);
@@ -62,7 +62,7 @@ extern "C" void operation_8c1a779c(Object *o)
         o->f3c = (Arg0_3c *)0;
     }
     if (((*(int *)((char *)(g_8c41cba0 + 0x28) + (o->f34 * 0x3c)) & 4)) != 0) {
-        create_loader_8c1735f8((int)(o->f3c));
+        TQuestThread_ctor_2_8c1735f8((int)(o->f3c));
     }
     call_8c38c5aa(0xe);
     call_8c38c5b6(-0xf0f10);

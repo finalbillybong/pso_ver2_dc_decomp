@@ -17,7 +17,7 @@ struct S_vv6 {
 };
 extern int g_8c418248;
 extern int g_8c4627c8;
-void operation_8c025788(Object *o)
+void handle_6x2E_set_and_or_clear_player_flags_8c025788(Object *o)
 {
     int v1;
     unsigned short v2;

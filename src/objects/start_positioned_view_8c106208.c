@@ -3,7 +3,7 @@ typedef char check_layout[sizeof(Object)==56 && (unsigned long)&((Object *)0)->s
 extern void *heap;
 extern void *configure(float *,float *);
 extern void mode(int,int);
-extern void *allocate(void *,unsigned int),*construct(void *),*load(int);
+extern void *heap_alloc_8c122700(void *,unsigned int),*construct(void *),*load(int);
 void start_positioned_view_8c106208(Object *o) {
     float position[2];
     float size[2];
@@ -12,7 +12,7 @@ void start_positioned_view_8c106208(Object *o) {
     size[0]=342.0f;size[1]=90.0f;
     configure(position,size);
     mode(38,1);
-    child=allocate(heap,112);
+    child=heap_alloc_8c122700(heap,112);
     if(child)construct(child);
     o->child=child;
     o->state=2;

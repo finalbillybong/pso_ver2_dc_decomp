@@ -3,7 +3,7 @@ typedef struct Manager {
     void *dispatch;
 } Manager;
 extern Manager *menu_manager;
-extern void initialize_hierarchy_node(Manager *);
+extern void TObject_ctor_8c0330e4(Manager *);
 extern void load_manager_8c0148ac(Manager *);
 extern void reset_manager_8c014874(Manager *);
 extern void bind_manager_8c014894(Manager *);
@@ -14,7 +14,7 @@ Manager *initialize_menu_manager_8c014814(Manager *o)
     (void)home;
     {
         Manager *base = o;
-        initialize_hierarchy_node(base);
+        TObject_ctor_8c0330e4(base);
         base->dispatch = (void *)0x8c261240;
     }
     o->dispatch = (void *)0x8c2611ec;

@@ -18,22 +18,22 @@ typedef struct Loader {
     Layout layout;
     int state;
 } Loader;
-extern void *allocate_block(void *, int);
-extern void initialize_hierarchy_node(Loader *, Source *);
+extern void *heap_alloc_8c122700(void *, int);
+extern void TObject_ctor_8c0330e4(Loader *, Source *);
 extern void reparent_hierarchy_node(Loader *, void *);
-Loader *create_loader_8c1736ac(int index)
+Loader *TQuestThread_ctor_3_8c1736ac(int index)
 {
     Loader *loader;
     Source *source;
     if (*(Source **)0x8c4db520 != 0) {
-        loader = allocate_block(*(void **)0x8c4d97e0, 0xa8);
+        loader = heap_alloc_8c122700(*(void **)0x8c4d97e0, 0xa8);
         if (loader == 0) {
             for (;;) {
             }
         }
         if (loader) {
             source = *(Source **)0x8c4db520;
-            initialize_hierarchy_node(loader, source);
+            TObject_ctor_8c0330e4(loader, source);
             loader->dispatch = (void *)0x8c270258;
             loader->tag = *(int *)0x8c318de0;
             loader->size = 0xa8;

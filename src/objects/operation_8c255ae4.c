@@ -31,7 +31,7 @@ extern int call_8c255c60(Object *);
 extern int operation_8c01d8a8(void *, int);
 extern void call_8c119c78(void *);
 extern void operation_8c255ce4(void *);
-extern void operation_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 extern void select_mode4_8c1cc4f8(void);
 void operation_8c255ae4(Object *o)
 {
@@ -86,7 +86,7 @@ void operation_8c255ae4(Object *o)
         if ((float)v3 > 5.5f) {
             switch (o->f30) {
             case 0:
-                operation_8c01c1a4(0x1f);
+                request_game_mode_8c01c1a4(0x1f);
                 return;
             case 1:
                 select_mode4_8c1cc4f8();

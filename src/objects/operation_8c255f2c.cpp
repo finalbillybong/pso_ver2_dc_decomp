@@ -29,13 +29,13 @@ typedef struct S_c8c122700Data {
 extern int g_8c33fe90;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern "C" S_c8c122700 *allocate_block(void *, unsigned int);
+extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c112e74(void *, void *);
 extern "C" void operation_8c2561fc(void *);
-extern "C" S_c8c122700 *operation_8c255f2c(int a0)
+extern "C" S_c8c122700 *TOSwitchItem_ctor_8c255f2c(int a0)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x12c);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x12c);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

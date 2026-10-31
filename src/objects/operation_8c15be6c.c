@@ -22,7 +22,7 @@ extern int operation_8c106760(Object *);
 extern int operation_8c106798(Object *);
 extern int operation_8c19b054(void);
 extern int call_8c372d98(int);
-extern void call_8c12b77c(void *, void *, int);
+extern void memcpy_8c12b77c(void *, void *, int);
 extern void operation_8c1066c0(Object *);
 extern void operation_8c10664c(void *);
 void operation_8c15be6c(Object *o)
@@ -47,7 +47,7 @@ void operation_8c15be6c(Object *o)
             if (g_8c4db9e4 != 0) {
                 g_8c4db9e4->f248 = (int)(g_8c4db124);
                 g_8c4db9e4->f244 = (int)(g_8c4db120);
-                call_8c12b77c((void *)(((char *)g_8c4db9e4 + 0x24c)), (void *)((void *)0x8c4dab80), 0x5a0);
+                memcpy_8c12b77c((void *)(((char *)g_8c4db9e4 + 0x24c)), (void *)((void *)0x8c4dab80), 0x5a0);
             }
             operation_8c1066c0(o);
             operation_8c10664c((void *)o);

@@ -16,12 +16,12 @@ struct S_c8c122700 {
 extern int g_8c32a308;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c1d80f8(S_c8c122700 *, void *, int, int, float);
-S_c8c122700 *operation_8c1d9054(int a0)
+S_c8c122700 *TObjCity_Season_SonicAdv2_ctor_8c1d9054(int a0)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0xec);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xec);
     if (t1 != 0) {
         call_8c1d80f8(t1, g_8c44be98, a0, 5, 3.0f);
         t1->f18 = (void *)0x8c276f90;

@@ -14,23 +14,23 @@ struct Object {
     short size;
     int f20;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c1848e0(int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_fall(int, void *, void *);
 Object *operation_8c1e6300(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c277f0c;
     o->tag = (int)(*(int *)0x8c32c038);
     o->size = 0x24;
     o->f20 = 0;
     *(char *)0x8c4e3104 = 0;
     call_8c1848e0(1);
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
     if (t1 != 0) {
         initialize_color_fall(t1, (void *)(*(S_g8c44be84 **)0x8c44be84), (void *)((void *)0x8c1e64cc));
     }

@@ -27,13 +27,13 @@ typedef struct Marker {
     int state;
 } Marker;
 extern Vector3 marker_origin;
-extern void initialize_actor_mode_state(Marker *);
+extern void TObjEnemyCustom_ctor_8c0c2354(Marker *);
 extern void place_marker_8c15042c(Marker *);
 Marker *initialize_marker_8c150384(Marker *o, Source *source, short kind, short variant)
 {
     Marker **self = &o;
     (void)self;
-    initialize_actor_mode_state(o);
+    TObjEnemyCustom_ctor_8c0c2354(o);
     o->dispatch = (void *)0x8c26e688;
     o->tag = *(int *)0x8c3158e4;
     o->size = 0x3ac;

@@ -26,10 +26,10 @@ struct Object {
     int f50;
     int f54;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c21696c(Object *o, int a1)
 {
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2782b8;
     o->tag = *(int *)0x8c3360a0;
     o->size = 0x58;

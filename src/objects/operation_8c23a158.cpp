@@ -72,7 +72,7 @@ struct Frame {
     char unknown0[0xc];
 };
 extern "C" int call_8c1aaabc(int);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c1ab01c(void *, int, int, int);
 extern "C" void call_8c076af4(Object *, float, int, int);
 extern "C" void operation_8c075894(void *, void *, int, int);
@@ -95,7 +95,7 @@ extern "C" void operation_8c23a158(Object *o)
         ((ObjectData *)o)->f22c = (void *)operation_8c23a08c;
         ((ObjectData *)o)->f234 = 0;
         if (o != 0) {
-            t3 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
+            t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
             if (t3 != 0) {
                 operation_8c1ab01c((void *)t3, (int)o, (int)operation_8c23a254, 0x1e);
             }
@@ -106,7 +106,7 @@ extern "C" void operation_8c23a158(Object *o)
     ((ObjectData *)o)->f22c = (void *)operation_8c23a040;
     ((ObjectData *)o)->f234 = 0;
     if (o != 0) {
-        t4 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
+        t4 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
         if (t4 != 0) {
             operation_8c1ab01c((void *)t4, (int)o, (int)operation_8c23a254, 0x1e);
         }

@@ -36,7 +36,7 @@ struct Frame {
 };
 extern S_c8c0744dc *find_record_8c0744dc(int);
 extern int forward_state_8c074944(void *, int);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c156d48(int, void *, int, int, int);
 extern void call_8c156d30(int, void *, int, int);
 extern int lookup_low_id(int);
@@ -63,7 +63,7 @@ void update_state_8c1a3944(int a0, int a1, int a2)
     if (t2 != 0) {
         t3 = forward_state_8c074944((void *)t1, 1);
         if (t3 == 0) {
-            t4 = current_effect_mode();
+            t4 = get_current_area_8c032b10();
             if (t4 != 0xf) {
                 goto L_8c1a39a0;
             }
@@ -76,7 +76,7 @@ L_8c1a39a0:;
 L_8c1a39b4:;
     if ((unsigned int)2 >= (unsigned int)t1->f134) {
         if (((t1->fec & 8)) != 0) {
-            t5 = current_effect_mode();
+            t5 = get_current_area_8c032b10();
             if (t5 == 0xf) {
                 call_8c156d48(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f318, 0x16, 2, -0x979798);
                 goto L_8c1a3a6e;
@@ -89,7 +89,7 @@ L_8c1a39b4:;
                 if (t7 != 0) {
                     t8 = slot_ready_8c1a3d50((void *)a0, (void *)t1);
                     if (t8 != 0) {
-                        t9 = current_effect_mode();
+                        t9 = get_current_area_8c032b10();
                         if (t9 != 0xf) {
                             call_8c156d30(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f31c, 6, 1);
                             goto L_8c1a3a6e;
@@ -101,7 +101,7 @@ L_8c1a39b4:;
         }
     }
 L_8c1a3a6e:;
-    t10 = current_effect_mode();
+    t10 = get_current_area_8c032b10();
     if (t10 == 0xf) {
         call_8c156d48(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f310, 0x16, 3, -0x979798);
     } else {

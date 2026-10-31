@@ -19,8 +19,8 @@ struct Node {
 extern int g_8c3381b8;
 extern int g_8c418248;
 extern void *g_8c4d97e0;
-extern Node *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(Node *, int);
+extern Node *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(Node *, int);
 extern void operation_8c22b148(Node *, int, void *);
 extern void operation_8c22b1a4(Node *, Vector3 *);
 extern int create_effect_7708(Vector3 *, int, int);
@@ -70,12 +70,12 @@ Node *operation_8c22afc0(int a0, int a1, int a2, int a3)
     if ((unsigned int)(unsigned short)a2 >> 2 << 2 != 0) {
         a2 += 4;
     }
-    t = allocate_block(g_8c4d97e0, 0x38);
+    t = heap_alloc_8c122700(g_8c4d97e0, 0x38);
     if (t != 0) {
         Node *self = t;
         Node **home = &self;
         (void)home;
-        initialize_hierarchy_node(t, a0);
+        TObject_ctor_8c0330e4(t, a0);
         self->f18 = (void *)0x8c278d98;
         self->f00 = g_8c3381b8;
         self->f1e = 0x38;

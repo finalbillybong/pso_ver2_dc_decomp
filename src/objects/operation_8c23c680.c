@@ -15,7 +15,7 @@ struct Object {
     int f234;
 };
 extern int operation_8c076d7c(int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c0772f8(void *, int, int);
 void operation_8c23c680(Object *o)
 {
@@ -25,7 +25,7 @@ void operation_8c23c680(Object *o)
     if (o->f38 != 0 && o->f234 == 0 && o->f1bc != 0) {
         t2 = operation_8c076d7c((int)o);
         v1 = (int)(t2 & -0x70000001);
-        t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
+        t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
         if (t1 != 0) {
             operation_8c0772f8((void *)t1, (int)(o->f1bc), v1);
         }

@@ -33,16 +33,16 @@ extern void call_8c3806f6(int, int, int);
 extern void call_8c01d9dc(void);
 extern void call_8c37e7d4(void *);
 extern void call_8c014498(void *, int);
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void call_8c0a1448(S_c8c122700 *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TCameraCtrl_ctor_8c0a1448(S_c8c122700 *, void *);
 extern void call_8c0a1a78(int);
 extern void operation_8c0a237c(void *, void *);
 extern void operation_8c01c250(int);
 extern void call_8c013620(void *, int);
 extern void create_descriptor_managers(void);
-extern void initialize_hierarchy_node(void *, void *);
-extern void operation_8c1e609c(void *, int);
-void operation_8c1e653c(void)
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern void TAdSEGAlogo_ctor_8c1e609c(void *, int);
+void mode_sega_logo_init_8c1e653c(void)
 {
     Frame frame;
     unsigned int v1;
@@ -58,9 +58,9 @@ void operation_8c1e653c(void)
     }
     call_8c37e7d4((void *)(&(&frame)->f1c));
     call_8c014498((void *)((void *)0x8c2e2e84), 4);
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0xf8);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xf8);
     if (t1 != 0) {
-        call_8c0a1448(t1, g_8c44be88);
+        TCameraCtrl_ctor_8c0a1448(t1, g_8c44be88);
     }
     *(Vector3 *)&(&frame)->f10 = *(Vector3 *)&g_8c32c0cc;
     *(Vector3 *)&(&frame)->f04 = *(Vector3 *)&g_8c32c0d8;
@@ -69,18 +69,18 @@ void operation_8c1e653c(void)
     operation_8c01c250(0);
     call_8c013620((void *)((void *)0x8c32c0a8), 0x20);
     create_descriptor_managers();
-    t2 = allocate_block(g_8c4d97e0, (unsigned int)0x24);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x24);
     if (t2 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t2;
         S_c8c122700 **home = &self;
         (void)home;
-        initialize_hierarchy_node((void *)t2, g_8c44be88);
+        TObject_ctor_8c0330e4((void *)t2, g_8c44be88);
         self->f18 = (void *)0x8c277f28;
         self->f00 = (int)(g_8c32c0c8);
         self->f1e = 0x24;
-        t3 = allocate_block(g_8c4d97e0, (unsigned int)0x24);
+        t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x24);
         if (t3 != 0) {
-            operation_8c1e609c((void *)t3, (int)self);
+            TAdSEGAlogo_ctor_8c1e609c((void *)t3, (int)self);
         }
     }
 }

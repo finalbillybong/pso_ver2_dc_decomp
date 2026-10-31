@@ -3,7 +3,7 @@
 typedef void (*VirtualFunction)(void);
 
 extern void destroy_color_rise_8c24d1c8(void);
-extern void operation_8c073578(void);
+extern void TItem_update_8c073578(void);
 extern void operation_8c073678(void);
 extern void operation_8c073e50(void);
 extern void hierarchy_output(void);
@@ -69,7 +69,7 @@ VirtualFunction const vt_8c27dd54[45] = {
     0,
     0,
     destroy_color_rise_8c24d1c8,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -118,7 +118,7 @@ VirtualFunction const vt_8c27de08[45] = {
     0,
     0,
     destroy_color_rise_8c24d3e4,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -167,7 +167,7 @@ VirtualFunction const vt_8c27debc[45] = {
     0,
     0,
     destroy_color_rise_8c24d538,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -216,7 +216,7 @@ VirtualFunction const vt_8c27df70[45] = {
     0,
     0,
     destroy_color_rise_8c24d61c,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -265,7 +265,7 @@ VirtualFunction const vt_8c27e024[45] = {
     0,
     0,
     destroy_color_rise_8c24d70c,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -314,7 +314,7 @@ VirtualFunction const vt_8c27e0d8[45] = {
     0,
     0,
     destroy_color_rise_8c24d92c,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -363,7 +363,7 @@ VirtualFunction const vt_8c27e18c[45] = {
     0,
     0,
     destroy_color_rise_8c24da94,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -412,7 +412,7 @@ VirtualFunction const vt_8c27e240[45] = {
     0,
     0,
     destroy_color_rise_8c24db7c,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -461,7 +461,7 @@ VirtualFunction const vt_8c27e2f4[45] = {
     0,
     0,
     destroy_color_rise_8c24dc9c,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,
@@ -510,7 +510,7 @@ VirtualFunction const vt_8c27e3a8[45] = {
     0,
     0,
     destroy_color_rise_8c24dddc,
-    operation_8c073578,
+    TItem_update_8c073578,
     operation_8c073678,
     operation_8c073e50,
     hierarchy_output,

@@ -134,7 +134,7 @@ extern void destroy_object_8c15db28(void);
 extern void fn_8c15e1d0(void);
 extern void fn_8c15e24c(void);
 extern void operation_8c15e538(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void operation_8c010504(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c013434(void);
@@ -146,7 +146,7 @@ extern void fn_8c15e830(void);
 extern void fn_8c15e764(void);
 extern void destroy_object_8c16172c(void);
 extern void operation_8c1617c8(void);
-extern void operation_8c0111c8(void);
+extern void TObject_render_default_8c0111c8(void);
 extern void operation_8c161e54(void);
 extern void operation_8c0eec28(void);
 extern void fn_8c16201c(void);
@@ -595,7 +595,7 @@ VirtualFunction const vt_8c26f4c0[91] = {
     fn_8c15e1d0,
     fn_8c15e24c,
     operation_8c15e538,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -689,8 +689,8 @@ VirtualFunction const vt_8c26f62c[91] = {
     0,
     destroy_object_8c16172c,
     operation_8c1617c8,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -844,7 +844,7 @@ VirtualFunction const vt_8c26f864[19] = {
     fn_8c1642c8,
     fn_8c164338,
     fn_8c1645a4,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -867,7 +867,7 @@ VirtualFunction const vt_8c26f8b0[19] = {
     operation_8c164ae8,
     fn_8c164b44,
     fn_8c164cd8,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -890,7 +890,7 @@ VirtualFunction const vt_8c26f8fc[16] = {
     destroy_object_8c165144,
     fn_8c165188,
     operation_8c165530,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,

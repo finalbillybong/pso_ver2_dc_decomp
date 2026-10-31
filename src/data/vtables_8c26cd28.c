@@ -4,8 +4,8 @@ typedef void (*VirtualFunction)(void);
 
 extern void destroy_timed_owner_effect(void);
 extern void update_timed_owner_effect(void);
-extern void operation_8c0111c8(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_default_8c0111c8(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void destroy_timed_owner_effect_8c132f2c(void);
 extern void update_timed_owner_effect_8c132f7c(void);
@@ -24,8 +24,8 @@ VirtualFunction const vt_8c26cd28[7] = {
     0,
     destroy_timed_owner_effect,
     update_timed_owner_effect,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -35,8 +35,8 @@ VirtualFunction const vt_8c26cd44[7] = {
     0,
     destroy_timed_owner_effect_8c132f2c,
     update_timed_owner_effect_8c132f7c,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -46,8 +46,8 @@ VirtualFunction const vt_8c26cd60[7] = {
     0,
     destroy_timed_owner_effect_8c133068,
     update_timed_owner_effect_8c1330b8,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -57,8 +57,8 @@ VirtualFunction const vt_8c26cd7c[7] = {
     0,
     destroy_timed_owner_effect_8c1331a4,
     update_timed_owner_effect_8c1331f4,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -68,8 +68,8 @@ VirtualFunction const vt_8c26cd98[7] = {
     0,
     destroy_timed_owner_effect_8c1332e0,
     update_timed_owner_effect_8c133330,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -79,7 +79,7 @@ VirtualFunction const vt_8c26cdb4[7] = {
     0,
     destroy_timed_owner_effect_8c13341c,
     update_timed_owner_effect_8c13346c,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

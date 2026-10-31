@@ -10,14 +10,14 @@ struct S_c8c122700 {
     void *f18;
 };
 extern void call_8c1cd008(void *, void *, int);
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_grid_panel_8c1ccd24(void *, int);
 extern void call_8c19fb98(S_c8c122700 *, int);
 S_c8c122700 *operation_8c19fb24(int a0, int a1)
 {
     S_c8c122700 *t1;
     call_8c1cd008((void *)0x8c287ba0, (void *)0x8c287ba8, a1);
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x98);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x98);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

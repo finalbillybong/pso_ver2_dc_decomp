@@ -37,7 +37,7 @@ extern int lookup_low_id(int);
 extern void request_resource_release(void *);
 extern int operation_8c168164(void *, int);
 extern int call_8c21e3b8(int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c21e148(int, Object *, int, int, int);
 extern void operation_8c0dc610(void *, float);
 extern void operation_8c21e2c0(void *, int);
@@ -107,7 +107,7 @@ L_test:;
 L_8c0e3152:;
         t4 = call_8c21e3b8(v9);
         if (a2->f00 == 0) {
-            t3 = allocate_block(g_8c4d97e0, (unsigned int)0x7c);
+            t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
             if (t3 != 0) {
                 call_8c21e148(t3, o, a1, 0, t4);
             }
@@ -136,7 +136,7 @@ L_8c0e3152:;
         } else {
             t6 = call_8c21e328((void *)(*(S_c8c021ef8_2c0 **)((char *)((char *)self + 0x2c0) + (v23 * 0xc))));
             if (v22->f00 == 0) {
-                t5 = allocate_block(g_8c4d97e0, (unsigned int)0x7c);
+                t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
                 if (t5 != 0) {
                     call_8c21e148(t5, o, a1, v8, t6);
                 }

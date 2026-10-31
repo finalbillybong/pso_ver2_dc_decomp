@@ -14,7 +14,7 @@ struct S_c8c021ef8 {
     int f514;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c03b40c(Object *o)
+void handle_6x88_restore_shrunken_player_8c03b40c(Object *o)
 {
     S_c8c021ef8 *t1;
     /* TODO 00000000..00000000

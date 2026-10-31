@@ -60,7 +60,7 @@ struct S_vv215 {
 };
 extern void lookup_low_id(int);
 extern void request_resource_release(void *);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c0dcc10(Object *o, int a1)
 {
@@ -149,7 +149,7 @@ Object *operation_8c0dcc10(Object *o, int a1)
         if (*(int *)0x8c46fe20 == (int)o) {
             *(int *)0x8c46fe20 = 0;
         }
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), o);
         }

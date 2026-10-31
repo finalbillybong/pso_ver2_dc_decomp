@@ -12,10 +12,10 @@ struct Object {
     char unknown1c[0x2];
     short size;
 };
-extern void initialize_hierarchy_node(Object *, int);
+extern void TObject_ctor_8c0330e4(Object *, int);
 Object *initialize_scene_node_8c1930a0(Object *o, int a1)
 {
-    initialize_hierarchy_node(o, a1);
+    TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c27282c;
     o->tag = *(int *)0x8c31a32c;
     o->size = 0x20;

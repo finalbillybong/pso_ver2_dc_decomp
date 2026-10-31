@@ -38,7 +38,7 @@ struct S_g8c467180_2c {
     S_g8c467180_2c_504 *f504;
 };
 extern char g_8c318df4[];
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c156c24(int, int);
 extern void operation_8c156d30(void *, void *, int, int);
 extern void operation_8c1570b4(void *, float, float);
@@ -54,7 +54,7 @@ Object *operation_8c174270(Object *o, int a1)
     int t1;
     int t2;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c270204;
     o->tag = (int)(*(int *)0x8c318dec);
     o->size = 0x28;

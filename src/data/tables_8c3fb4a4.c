@@ -4,18 +4,18 @@ typedef void (*Function)(void);
 
 extern void fn_8c35290e(void);
 extern void fn_8c352928(void);
-extern void fn_8c35293c(void);
-extern void fn_8c35299a(void);
+extern void gdCiGetFileSize_8c35293c(void);
+extern void gdCiOpen_8c35299a(void);
 extern void fn_8c352a26(void);
 extern void fn_8c352a44(void);
 extern void fn_8c352a76(void);
-extern void fn_8c352a82(void);
+extern void gdCiReqRd_8c352a82(void);
 extern void fn_8c352aba(void);
 extern void fn_8c352b24(void);
 extern void fn_8c352b58(void);
-extern void fn_8c352b5e(void);
+extern void gdCiChangeDir_8c352b5e(void);
 extern void fn_8c352b6a(void);
-extern void fn_8c352bd8(void);
+extern void gdCiIsExistFile_8c352bd8(void);
 extern void fn_8c352b9e(void);
 extern void fn_8c352c58(void);
 extern void fn_8c352d1e(void);
@@ -46,21 +46,21 @@ extern const char str_8c3f4ef4[];
 Function const d_8c3fb4a4[26] = {
     fn_8c35290e,
     fn_8c352928,
-    fn_8c35293c,
+    gdCiGetFileSize_8c35293c,
     0,
-    fn_8c35299a,
+    gdCiOpen_8c35299a,
     fn_8c352a26,
     fn_8c352a44,
     fn_8c352a76,
-    fn_8c352a82,
+    gdCiReqRd_8c352a82,
     0,
     fn_8c352aba,
     fn_8c352b24,
     fn_8c352b58,
     0,
-    fn_8c352b5e,
+    gdCiChangeDir_8c352b5e,
     fn_8c352b6a,
-    fn_8c352bd8,
+    gdCiIsExistFile_8c352bd8,
     fn_8c352b9e,
     fn_8c352c58,
     fn_8c352d1e,

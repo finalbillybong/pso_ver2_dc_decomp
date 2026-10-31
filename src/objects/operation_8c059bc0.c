@@ -18,10 +18,10 @@ struct Object {
     int f3a0;
     int f3a4;
 };
-extern void call_8c012008(void);
+extern void TObjEnemy_ctor_8c012008(void);
 Object *operation_8c059bc0(Object *o)
 {
-    call_8c012008();
+    TObjEnemy_ctor_8c012008();
     o->dispatch = (void *)0x8c2627b8;
     o->tag = (int)(*(int *)0x8c2f35d0);
     o->size = 0x3a8;

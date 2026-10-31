@@ -54,7 +54,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4db520 *g_8c4db520;
 extern int g_8c4dc800;
 extern S_L8c46fec0 g_8c46fec0;
-extern "C" void initialize_hierarchy_node(void *, void *);
+extern "C" void TObject_ctor_8c0330e4(void *, void *);
 extern "C" void call_8c041690(void);
 extern "C" void call_8c01d9dc(void);
 extern "C" void call_8c380516(void);
@@ -71,7 +71,7 @@ extern "C" void create_descriptor_managers(void);
 extern "C" void call_8c189ca0(int);
 extern "C" void call_8c173024(void);
 extern "C" void operation_8c14ffdc(void);
-extern "C" S_c8c122700 *allocate_block(void *, unsigned int);
+extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_loader_8c173578(void *, void *, int);
 extern "C" void operation_8c14fd04(void);
 extern "C" void operation_8c2231d8(void);
@@ -81,7 +81,7 @@ extern "C" void time_hierarchy_update(void *);
 extern "C" void call_8c023f3c(int);
 extern "C" void object_visit(void *);
 extern "C" void call_8c173778(void);
-extern "C" void destroy_hierarchy_node(void *, short);
+extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void operation_8c0e7dd0(void)
 {
     Frame frame;
@@ -89,7 +89,7 @@ extern "C" void operation_8c0e7dd0(void)
     int v1;
     S_vv43 *v43;
     S_c8c122700 *t1;
-    initialize_hierarchy_node((void *)(&frame), (void *)0);
+    TObject_ctor_8c0330e4((void *)(&frame), (void *)0);
     call_8c041690();
     call_8c01d9dc();
     call_8c380516();
@@ -113,7 +113,7 @@ extern "C" void operation_8c0e7dd0(void)
     call_8c189ca0(1);
     call_8c173024();
     operation_8c14ffdc();
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0xa8);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xa8);
     if (t1 != 0) {
         initialize_loader_8c173578((void *)t1, g_8c4db520, 0);
     }
@@ -144,5 +144,5 @@ extern "C" void operation_8c0e7dd0(void)
         v42 = (int)(v42 + 1);
     }
     call_8c173778();
-    destroy_hierarchy_node((void *)(&frame), (short)-1);
+    TObject_dtor_8c03311c((void *)(&frame), (short)-1);
 }

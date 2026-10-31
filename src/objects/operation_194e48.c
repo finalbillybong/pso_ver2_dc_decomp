@@ -5,7 +5,7 @@
 #define clear_at ((void (*)(void *,int))0x8c162de4)
 #define large_table (*(WidgetLargeRecord **)0x8c46ed10)
 #define small_table (*(WidgetSmallRecord **)0x8c46ed0c)
-void operation_194e48(WidgetPacket *o){
+void handle_6x5F_drop_item_from_box_enemy_8c194e48(WidgetPacket *o){
     WidgetLargeRecord large;
     WidgetSmallRecord small;
     if((o->length<<2)==40)setup_at(&o->notice.payload,0);

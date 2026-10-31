@@ -15,7 +15,7 @@ extern int g_8c418244;
 extern S_g8c4da624 *g_8c4da624;
 extern int g_8c4da628;
 extern void call_8c0344f0(void *, int, int, int);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c05fd7c(int, Object *, void *, int, int);
 void operation_8c14d33c(Object *o)
 {
@@ -33,7 +33,7 @@ void operation_8c14d33c(Object *o)
     case 1:
     case 2:
     case 3:
-        t1 = current_effect_mode();
+        t1 = get_current_area_8c032b10();
         switch (t1) {
         case 3:
         case 4:

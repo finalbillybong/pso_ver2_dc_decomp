@@ -128,7 +128,7 @@ typedef struct S_c8c012a14Data {
 extern int g_8c46ed10;
 extern int g_8c4703c0;
 extern "C" S_c8c012a14 *operation_8c012a14(short);
-extern "C" void operation_8c012efc(Object *o)
+extern "C" void handle_6x0A_update_enemy_state_8c012efc(Object *o)
 {
     S_c8c012a14 *t1;
     short id;

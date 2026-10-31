@@ -5,7 +5,7 @@ typedef void (*VirtualFunction)(void);
 extern void destroy_effect_controller(void);
 extern void update_effect_controller(void);
 extern void operation_24e798(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
 /* 8c27e49c: type-information and this-adjustment header, then 5 slots */
@@ -15,6 +15,6 @@ VirtualFunction const vt_8c27e49c[7] = {
     destroy_effect_controller,
     update_effect_controller,
     operation_24e798,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

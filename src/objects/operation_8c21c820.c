@@ -29,7 +29,7 @@ struct S_c8c021ef8 {
 };
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void call_8c172bd8(Object *);
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern void call_8c02e95c(void *, Object *, Block8);
 extern void operation_8c0ddbd0(short, int, int);
 void operation_8c21c820(Object *o)
@@ -40,7 +40,7 @@ void operation_8c21c820(Object *o)
     t1 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));
     if (t1 != 0 && o->tag != 0) {
         call_8c172bd8(o);
-        t2 = operation_8c01c25c();
+        t2 = get_game_mode_8c01c25c();
         if (t2 == 0x10) {
             (&frame)->f00.f00 = 0;
             (&frame)->f00.f01 = 0;

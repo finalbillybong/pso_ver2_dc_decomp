@@ -10,7 +10,7 @@ struct Object {
 };
 extern int keyboard_character(void);
 extern int operation_8c25c884(Object *);
-extern void operation_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 void operation_8c25c748(Object *o)
 {
     int v4;
@@ -95,7 +95,7 @@ L_8c25c85a:;
     if (o->f20 == 9) {
         t2 = operation_8c25c884(o);
         if (t2 == 0) {
-            operation_8c01c1a4(0x20);
+            request_game_mode_8c01c1a4(0x20);
         }
     }
 }

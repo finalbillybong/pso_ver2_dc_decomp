@@ -77,13 +77,13 @@ extern "C" int call_8c1196d4(void *, void *, int);
 extern "C" void operation_8c119764(int, int, int);
 extern "C" int operation_239288(void *);
 extern "C" S_c8c021ef8 *lookup_low_id(int);
-extern "C" void call_8c12b154(int, int, int);
+extern "C" void strncpy_8c12b154(int, int, int);
 extern "C" void call_8c12b048(void *, void *, ...);
 extern "C" int operation_8c244bfc(Object *);
 extern "C" void request_resource_release(void *);
 extern "C" void operation_8c2446a4(Object *);
 extern "C" int operation_8c2446d0(Object *);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void construct_effect_controller(void *, void *, unsigned char);
 extern "C" void operation_8c244688(void);
 extern "C" void operation_8c2426a0(Object *o)
@@ -142,7 +142,7 @@ extern "C" void operation_8c2426a0(Object *o)
                 v11 = (int)(v10 << 2);
                 if (2 > *(int *)((char *)((char *)v11 + 0x0) + ((int)((&frame))))) {
                     t4 = t3->v13();
-                    call_8c12b154((int)((((v10 << 1) + *(int *)((char *)&frame + v11)) << 4) + (char *)&(&frame)->f18), t4, 0x10);
+                    strncpy_8c12b154((int)((((v10 << 1) + *(int *)((char *)&frame + v11)) << 4) + (char *)&(&frame)->f18), t4, 0x10);
                     ((S_x31440 *)(v11 + (int)(&frame)))->f00 += 1;
                 }
             }
@@ -184,7 +184,7 @@ extern "C" void operation_8c2426a0(Object *o)
                 return;
             }
         }
-        t7 = allocate_block(g_8c4d97e0, (unsigned int)0x28);
+        t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x28);
         if (t7 != 0) {
             construct_effect_controller((void *)t7, (void *)o, (unsigned char)0);
         }

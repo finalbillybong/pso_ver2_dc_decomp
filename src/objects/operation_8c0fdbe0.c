@@ -13,7 +13,7 @@ struct Object {
     int f354;
     int f358;
 };
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 void operation_8c0fdbe0(Object *o)
 {
     char *v1;
@@ -28,7 +28,7 @@ void operation_8c0fdbe0(Object *o)
         o->f354 = 1;
         return;
     }
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 == 0xf) {
         o->f354 = 0;
         o->f90 = 0x1e;

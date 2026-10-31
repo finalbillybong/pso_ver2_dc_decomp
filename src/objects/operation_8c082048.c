@@ -57,7 +57,7 @@ extern S_L8c469c2c g_8c469c2c;
 extern char g_8c2ff2ec[];
 extern int call_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
-extern int call_8c118528(void *);
+extern int load_pvm_file_tls_8c118528(void *);
 void operation_8c082048(void)
 {
     S_vv3 *v3;
@@ -77,7 +77,7 @@ void operation_8c082048(void)
         call_8c03d610(t1, 5, (void *)((void *)0x8c2ff0ec), 0, pm4, 0);
     }
     g_8c469c40 = (S_g8c469c40 *)(int)(t1);
-    t2 = call_8c118528((void *)((g_8c2ff2ec + 0xcc)));
+    t2 = load_pvm_file_tls_8c118528((void *)((g_8c2ff2ec + 0xcc)));
     g_8c469c20 = (int)(t2);
     v3 = (S_vv3 *)g_8c469c40;
     pm5 = v3->f42c->f48;

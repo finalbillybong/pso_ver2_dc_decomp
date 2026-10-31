@@ -113,7 +113,7 @@ extern void operation_8c14d44c(void);
 extern void fn_8c14e35c(void);
 extern void fn_8c14e3cc(void);
 extern void fn_8c14e58c(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01c544(void);
 extern void operation_8c010508(void);
@@ -334,7 +334,7 @@ VirtualFunction const vt_8c26e45c[19] = {
     fn_8c14e35c,
     fn_8c14e3cc,
     fn_8c14e58c,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -357,7 +357,7 @@ VirtualFunction const vt_8c26e4a8[16] = {
     destroy_object_8c14ef9c,
     operation_8c14efe0,
     fn_8c14f128,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -377,7 +377,7 @@ VirtualFunction const vt_8c26e4e8[16] = {
     destroy_object_8c14f370,
     operation_1ac3cc_8c14f3b4,
     fn_8c14f3c8,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,

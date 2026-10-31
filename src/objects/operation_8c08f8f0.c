@@ -40,7 +40,7 @@ struct S_c8c08fd58 {
 extern char g_8c300638[];
 extern int operation_8c105420(int, int);
 extern void operation_8c03ef80(void *, ...);
-extern int operation_8c104d00(int, int);
+extern int file_load_8c104d00(int, int);
 extern int call_8c18e808(int, int);
 extern S_c8c08fefc *call_8c08fefc(Object *);
 extern void call_8c0bb9a4(Object *, void *, void *, Arg0_5c *, int);
@@ -75,7 +75,7 @@ void operation_8c08f8f0(Object *o, int a1)
         operation_8c03ef80((void *)((g_8c300638 + 0x2c3)), (void *)(((char *)o + 0x7c)));
         return;
     }
-    t2 = operation_8c104d00((int)(((char *)o + 0x7c)), (int)(v2));
+    t2 = file_load_8c104d00((int)(((char *)o + 0x7c)), (int)(v2));
     if (!(t2 >= 0)) {
         operation_8c03ef80((void *)((g_8c300638 + 0x2c3)), (void *)(((char *)o + 0x7c)));
         return;

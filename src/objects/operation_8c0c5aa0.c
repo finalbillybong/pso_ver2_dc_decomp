@@ -11,7 +11,7 @@ struct Frame {
 };
 extern void call_8c01daf0(void);
 extern int call_8c01e180(void);
-extern void operation_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 extern void operation_0c638c(void);
 extern void call_8c36d3ca(void *);
 extern void call_8c36d4c0(void *, Frame *);
@@ -26,7 +26,7 @@ void operation_8c0c5aa0(void)
     call_8c01daf0();
     t1 = call_8c01e180();
     if ((char)t1 != 0) {
-        operation_8c01c1a4(0);
+        request_game_mode_8c01c1a4(0);
     }
     operation_0c638c();
     call_8c36d3ca((void *)(&(&frame)->f04));

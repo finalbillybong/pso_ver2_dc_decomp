@@ -108,7 +108,7 @@ struct S_vv1_338 {
 extern "C" int operation_8c03d338(void);
 extern "C" void call_8c027090(S_vv1 *);
 extern "C" void call_8c102cd0(void *, int, int, int);
-extern "C" void operation_8c01312c(Object *o)
+extern "C" void TObjControl_update_8c01312c(Object *o)
 {
     S_vv1 *v1;
     int t1;

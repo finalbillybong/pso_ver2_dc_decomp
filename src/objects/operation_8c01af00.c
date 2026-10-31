@@ -24,7 +24,7 @@ extern void operation_8c011efc(Frame *);
 extern int call_8c011ecc(int);
 extern int call_8c20684c(int, void *, int, void *);
 extern void call_8c011ed8(int);
-void operation_8c01af00(Object *o)
+void handle_6x6C_sync_object_state_8c01af00(Object *o)
 {
     Frame frame;
     int v1;

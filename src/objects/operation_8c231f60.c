@@ -16,7 +16,7 @@ extern void call_8c03f4bc(void);
 extern void call_8c03f6cc(Object *);
 extern void select_mode19_8c1cc648(void);
 extern void select_mode18_8c1cc630(void);
-extern void operation_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 extern void call_8c1003d0(void *);
 extern void select_mode4_8c1cc4f8(void);
 extern void select_mode23_8c1cc678(void);
@@ -71,7 +71,7 @@ L_8c231fc0:;
         return;
 L_8c231fe0:;
         if (*(int *)0x8c4e2e24 != 0) {
-            operation_8c01c1a4(9);
+            request_game_mode_8c01c1a4(9);
             return;
         }
         call_8c1003d0((void *)((g_8c338c18 + 0x5)));

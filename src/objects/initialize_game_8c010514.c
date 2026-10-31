@@ -22,13 +22,13 @@ typedef struct Game {
     int flags;
     int timer;
 } Game;
-extern void initialize_hierarchy_node(Game *);
+extern void TObject_ctor_8c0330e4(Game *);
 extern void construct_random_state(RandomState *);
 Game *initialize_game_8c010514(Game *o)
 {
     Game **home = &o;
     (void)home;
-    initialize_hierarchy_node(o);
+    TObject_ctor_8c0330e4(o);
     o->dispatch = (void *)0x8c260f70;
     construct_random_state(&o->random);
     construct_random_state(&o->drops);

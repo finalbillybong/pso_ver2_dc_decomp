@@ -26,7 +26,7 @@ extern void mic_set_8c341470(int);
 extern char str_8c3f3630[];
 extern int func_8c34092c(void);
 extern char g_state_8c51b500[];
-extern void *memset(void *, int, unsigned int);
+extern void *memset_8c12b880(void *, int, unsigned int);
 extern void init_8c36b200(int);
 extern void func_8c3559f2(void (*)(void), int);
 extern void cb_8c341c80(void);
@@ -66,7 +66,7 @@ void print_hook_8c342d90(int a, char *s)
     debug_print_8c35570c(s);
 }
 
-void sys_init_8c342da6(InitArgs *p)
+void mwPlyInitSofdec_8c342da6(InitArgs *p)
 {
     int saved;
     int r;
@@ -86,7 +86,7 @@ void sys_init_8c342da6(InitArgs *p)
             debug_print_8c35570c(str_8c3f3630);
         }
         saved = func_8c34092c();
-        memset(g_state_8c51b500, 0, 0x1cc);
+        memset_8c12b880(g_state_8c51b500, 0, 0x1cc);
         ((void (*)(int))((int)init_8c36b200 | 0xa0000000))(0x185);
         func_8c3559f2(cb_8c341c80, 0);
         if (p) func_8c3409a0(p->a, p->b, p->c, p->d);
@@ -112,7 +112,7 @@ void sys_reinit_8c342f24(InitArgs *p)
 {
     if (g_open_count_8c3fabf0) {
         g_open_count_8c3fabf0 = 0;
-        sys_init_8c342da6(p);
+        mwPlyInitSofdec_8c342da6(p);
     }
 }
 

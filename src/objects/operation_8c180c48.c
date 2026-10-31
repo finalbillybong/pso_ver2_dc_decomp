@@ -10,7 +10,7 @@ extern int g_8c4dbaec;
 extern int g_8c4dbaf0;
 extern int operation_8c19b054(void);
 extern int call_8c372d98(int);
-extern int operation_8c181074(void);
+extern int load_system_file_8c181074(void);
 extern void call_8c36d3ca(void *);
 int operation_8c180c48(void)
 {
@@ -32,7 +32,7 @@ int operation_8c180c48(void)
                         if (7 >= (char)t1) {
                             v4 = call_8c372d98((int)((char)t1));
                             if (v4 == 0) {
-                                v4 = operation_8c181074();
+                                v4 = load_system_file_8c181074();
                                 if (v4 == 0) {
                                     g_8c4dbaec = 8;
                                     call_8c36d3ca((void *)((void *)0x8c4dbae0));

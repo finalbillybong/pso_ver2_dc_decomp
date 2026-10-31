@@ -33,7 +33,7 @@ extern void call_8c013b2c(int, float, float);
 extern void call_8c025124(void);
 extern void call_8c03b80c(short);
 extern void call_8c0b6394(int, void *, void *, int, float, Object *, void *);
-extern int call_8c122700(void *, int);
+extern int heap_alloc_8c122700(void *, int);
 extern void call_8c1ab508(int, Object *, int, int, int, int);
 void operation_8c025020(Object *o, int a1)
 {
@@ -44,7 +44,7 @@ void operation_8c025020(Object *o, int a1)
     if (v1 == 0) {
         call_8c025124();
     }
-    t1 = call_8c122700(g_8c4d97e0, 0x58);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, 0x58);
     if (t1 != 0) {
         call_8c1ab508(t1, o, o->f20, -1, 0x3c, a1);
     }
@@ -56,7 +56,7 @@ void operation_8c025020(Object *o, int a1)
     (&g_8c46f6a0)->f04 = 1.0f;
     (&g_8c46f6a0)->f08 = 0.8f;
     (&g_8c46f6a0)->f0c = 0.63f;
-    t2 = call_8c122700(g_8c4d97e0, 0x68);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, 0x68);
     if (t2 != 0) {
         call_8c0b6394(t2, (void *)&g_8c46f6a0, (void *)&g_8c46f5a0, 0xa, 0.2f, o, g_8c44bea0);
     }

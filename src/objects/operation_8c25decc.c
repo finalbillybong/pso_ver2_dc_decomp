@@ -10,7 +10,7 @@ struct S_g8c513460 {
     char unknown0[0x4];
     short f04;
 };
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c25de30(void *, int);
 extern void operation_8c25e194(void *, int, int);
 void operation_8c25decc(int a0, int a1)
@@ -24,7 +24,7 @@ void operation_8c25decc(int a0, int a1)
             (*(S_g8c513460 **)0x8c513460)->f04 |= 1;
             return;
         }
-        t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
+        t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
         if (t1 == 0) {
             goto L_8c25df1a;
         }

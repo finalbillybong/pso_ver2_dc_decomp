@@ -10,7 +10,7 @@ struct Object {
 };
 extern int lookup_low_id(int);
 extern void operation_8c1e8e60(int, int, int);
-void operation_8c1f100c(Object *o)
+void handle_6x57_8c1f100c(Object *o)
 {
     int t1;
     /* TODO 00000000..00000000

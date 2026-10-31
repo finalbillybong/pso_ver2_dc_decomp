@@ -32,7 +32,7 @@ struct Arg1 {
     char f09;
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02e0f0(Object *o, Arg1 *a1)
+extern "C" void handle_cmd_67_join_lobby_8c02e0f0(Object *o, Arg1 *a1)
 {
     char *v22;
     o->v4((g_8c2e7ce0 + 0x1ff));

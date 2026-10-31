@@ -1,12 +1,12 @@
 #include "src/include/resource_list.h"
 #define buffer (*(ResourceEntryView **)0x8c44f8e0)
-#define clear_at ((void *(*)(void *,int,int))0x8c12b880)
+#define memset_8c12b880 ((void *(*)(void *,int,int))0x8c12b880)
 #define prepare_at ((void (*)(ResourceListView *,void *,void *,int))0x8c38668e)
 #define apply_at ((int (*)(void *,ResourceListView *))0x8c1187e4)
 int copy_resource_fields(void *resource,ResourceListView *destination) {
  ResourceListView temporary;
  if(!resource || !destination) return 0;
- clear_at(buffer,0,12);
+ memset_8c12b880(buffer,0,12);
  prepare_at(&temporary,buffer,(void *)0x8c44bf60,0x200);
  if(apply_at(resource,&temporary)==-1) return 0;
  {

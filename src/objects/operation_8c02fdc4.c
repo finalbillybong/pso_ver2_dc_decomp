@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0xb1d0];
     int fb1d0;
 };
-void operation_8c02fdc4(Object *o, int a1)
+void handle_cmd_8A_connection_information_result_8c02fdc4(Object *o, int a1)
 {
     char *v21;
     v21 = (char *)o->fb1d0;

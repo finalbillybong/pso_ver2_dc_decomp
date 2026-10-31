@@ -49,7 +49,7 @@ struct S_g8c4d9ea4 {
 extern int g_8c314a38;
 extern S_g8c4d9ea4 *g_8c4d9ea4;
 extern char g_8c4da184[];
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c12b944(void);
 Object *operation_8c14202c(Object *o, int a1, int a2, int a3)
 {
@@ -59,7 +59,7 @@ Object *operation_8c14202c(Object *o, int a1, int a2, int a3)
     char *t3;
     int v2;
     char *t4;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c26df40;
     v1 = 0;
     o->tag = (g_8c314a38);

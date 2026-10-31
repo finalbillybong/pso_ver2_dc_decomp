@@ -10,13 +10,13 @@ struct Object {
     char unknown0[0x1];
     unsigned char f01;
 };
-extern int call_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern void call_8c036d04(int);
 extern void call_8c02f138(void *, void *, Object *, int);
 void operation_8c036964(Object *o)
 {
     int t1;
-    t1 = call_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 == 0xf) {
         *(int *)0x8c4627c8 = 1;
         call_8c036d04((int)o);

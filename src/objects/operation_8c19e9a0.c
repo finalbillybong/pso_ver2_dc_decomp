@@ -27,8 +27,8 @@ extern void operation_8c19f504(void *, int, unsigned char, char);
 extern void call_8c1c770c(Arg1 *, void *);
 extern void call_8c18de08(int);
 extern int operation_8c257e2c(int);
-extern int call_8c18de4c(int);
-extern void call_8c12b154(int, void *, int);
+extern int operator_new_8c18de4c(int);
+extern void strncpy_8c12b154(int, void *, int);
 extern void operation_8c19f86c(int, int);
 extern void operation_8c19f5c0(void *, int);
 void operation_8c19e9a0(Object *o, Arg1 *a1, int a2, int a3)
@@ -61,10 +61,10 @@ void operation_8c19e9a0(Object *o, Arg1 *a1, int a2, int a3)
     }
     if ((void *)0x8c4dbe40 != 0) {
         t1 = operation_8c257e2c((int)((void *)0x8c4dbe40));
-        t2 = call_8c18de4c((int)(t1 + 1));
+        t2 = operator_new_8c18de4c((int)(t1 + 1));
         v14 = (int)t2;
         v12 = (int)(t1 + 1);
-        call_8c12b154(t2, (void *)((void *)0x8c4dbe40), v12);
+        strncpy_8c12b154(t2, (void *)((void *)0x8c4dbe40), v12);
         o->tag |= 8;
     } else {
         v14 = (int)(void *)0x8c4dbe40;

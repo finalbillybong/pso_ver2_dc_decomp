@@ -21,8 +21,8 @@ extern void apply_base_blend(void);
 extern void base_blend_above_minimum(void);
 extern void destroy_paired_array_owner(void);
 extern void paired_array_idle_callback(void);
-extern void operation_8c0111c8(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_default_8c0111c8(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void destroy_scene_control_owner(void);
 extern void operation_8c03ceac(void);
@@ -66,8 +66,8 @@ VirtualFunction const vt_8c269e50[7] = {
     0,
     destroy_paired_array_owner,
     paired_array_idle_callback,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -77,8 +77,8 @@ VirtualFunction const vt_8c269e6c[10] = {
     0,
     destroy_scene_control_owner,
     operation_8c03ceac,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c1162b8,
     operation_8c1160a0,

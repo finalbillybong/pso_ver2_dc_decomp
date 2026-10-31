@@ -24,7 +24,7 @@ struct Arg0_338 {
 };
 extern int hierarchy_is_active(void *);
 extern int call_8c02b2a4(void);
-extern int call_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern int player_flag9_8c026508(void);
 extern void call_8c02947c(Object *);
 void operation_8c1eed14(Object *o)
@@ -64,7 +64,7 @@ L_8c1eed60:;
                     if (v50 == 0) {
                         return;
                     }
-                    t3 = call_8c01c25c();
+                    t3 = get_game_mode_8c01c25c();
                     if (t3 != 0x10) {
                         return;
                     }

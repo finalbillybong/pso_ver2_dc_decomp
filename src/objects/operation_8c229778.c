@@ -16,7 +16,7 @@ struct Object {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_8c161c38(int);
 extern void mark_effect_for_release(void *);
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern void operation_8c0a21a4(void);
 extern void destroy_shared_object(void *, short);
 extern void call_8c122774(void *, Object *);
@@ -40,7 +40,7 @@ Object *operation_8c229778(Object *o, int a1)
             }
             v7 = (int)(v7 + 1);
         }
-        t1 = operation_8c01c25c();
+        t1 = get_game_mode_8c01c25c();
         if (t1 != 0x10) {
             operation_8c0a21a4();
         }

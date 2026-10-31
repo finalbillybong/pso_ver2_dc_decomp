@@ -5,7 +5,7 @@ typedef void (*VirtualFunction)(void);
 extern void destroy_object_8c242010(void);
 extern void fn_8c242054(void);
 extern void operation_8c242154(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c241a78(void);
 extern void fn_8c241ad0(void);
@@ -28,7 +28,7 @@ VirtualFunction const vt_8c27cc60[7] = {
     destroy_object_8c242010,
     fn_8c242054,
     operation_8c242154,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -39,7 +39,7 @@ VirtualFunction const vt_8c27cc7c[17] = {
     operation_8c241a78,
     fn_8c241ad0,
     fn_8c241cb8,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,

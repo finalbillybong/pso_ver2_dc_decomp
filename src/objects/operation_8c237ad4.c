@@ -10,8 +10,8 @@ struct Object {
     int f20;
 };
 extern S_g8c44bea0 *g_8c44bea0;
-extern int operation_8c01c25c(void);
-extern int current_effect_mode(void);
+extern int get_game_mode_8c01c25c(void);
+extern int get_current_area_8c032b10(void);
 extern void create_manager_8c25e570(void *);
 extern void operation_8c2497f4(int);
 void operation_8c237ad4(Object *o)
@@ -20,10 +20,10 @@ void operation_8c237ad4(Object *o)
     int t1;
     int t2;
     v1 = (int)0;
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     switch (t1) {
     case 16:
-        t2 = current_effect_mode();
+        t2 = get_current_area_8c032b10();
         if (t2 == 0xf) {
             break;
         }

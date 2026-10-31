@@ -11,7 +11,7 @@ struct S_L8c41cb00 {
     int f10;
 };
 extern S_L8c41cb00 g_8c41cb00;
-void operation_8c01c1a4(int a0)
+void request_game_mode_8c01c1a4(int a0)
 {
     (&g_8c41cb00)->f04 = a0;
     (&g_8c41cb00)->f10 = 1;

@@ -22,7 +22,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4dbde0 *g_8c4dbde0;
 extern void call_8c18c808(void *);
 extern int operation_8c1571f4(void *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
 extern void operation_8c015ab4(void);
 void operation_8c198840(Object *o)
@@ -41,7 +41,7 @@ void operation_8c198840(Object *o)
         if (((o->f24->f80 & 0xffff & 2)) != 0) {
             t1 = operation_8c1571f4((void *)(o->f24));
             if (t1 == 0) {
-                t2 = allocate_block(g_8c4d97e0, (unsigned int)0x2c);
+                t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x2c);
                 if (t2 != 0) {
                     initialize_color_rise(t2, g_8c44be84, (void *)((void *)0x8c1988f8));
                 }

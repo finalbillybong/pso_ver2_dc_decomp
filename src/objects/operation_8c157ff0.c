@@ -11,7 +11,7 @@ struct S_c8c011ecc {
 };
 extern S_c8c011ecc *call_8c011ecc(int);
 extern void call_8c193658(int, void *, int);
-void operation_8c157ff0(void)
+void load_item_pmt_8c157ff0(void)
 {
     S_c8c011ecc *t1;
     t1 = call_8c011ecc(8);

@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 typedef struct Object Object;
-extern int call_8c12b0cc(void);
+extern int strlen_8c12b0cc(void);
 extern void call_8c18e720(int, void *);
 void operation_8c032b70(Object *o)
 {
@@ -17,7 +17,7 @@ void operation_8c032b70(Object *o)
     char *pm2;
     int pm6;
     unsigned char pm4;
-    t1 = call_8c12b0cc();
+    t1 = strlen_8c12b0cc();
     pm6 = (int)0;
     v3 = 0x20;
     v4 = (int)t1;

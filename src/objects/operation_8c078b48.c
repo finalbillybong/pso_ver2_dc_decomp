@@ -14,11 +14,11 @@ struct Object {
     float f24;
     float f28;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c078b48(Object *o, int a1)
 {
     int v1;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c263e1c;
     o->tag = (int)(*(int *)0x8c2fd9a8);
     o->size = 0x3c;

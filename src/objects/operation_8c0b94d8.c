@@ -33,7 +33,7 @@ struct Arg0_2c {
     char unknown0[0x20];
     short f20;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int create_effect_7d38(void *, int, int, int, unsigned short);
 extern void bind_id(void *, unsigned short);
 extern char g_8c305368[];
@@ -47,7 +47,7 @@ Object *operation_8c0b94d8(Object *o, Arg1 *a1, int a2, int a3)
     int t2;
     int idx;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a3);
+    TObject_ctor_8c0330e4((void *)o, (void *)a3);
     o->dispatch = (void *)0x8c2661c0;
     o->f30 = 0;
     v1 = (int)0;

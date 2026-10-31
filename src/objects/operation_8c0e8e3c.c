@@ -37,20 +37,20 @@ struct Frame {
     Block8 f04;
     Block8 f0c;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c0e92e0(Object *);
 extern void operation_8c01c250(int);
 extern int call_8c0101dc(void *);
 extern int operation_8c1f1850(void);
 extern void select_mode3_8c1cc4e0(void);
-extern int call_8c01018c(void *);
+extern int vmu_find_file_8c01018c(void *);
 extern void initialize_channel_handles(void);
 extern void select_available_channel(void);
 extern void select_mode2_8c1cc4c8(void);
 extern void select_mode19_8c1cc648(void);
 extern int operation_8c19b054(void);
 extern int call_8c37293e(int, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c198294(int, Object *);
 extern int create_fitted_pair_grid_view(void *, void *);
 extern void call_8c05fbf8(int, int, int, int);
@@ -70,7 +70,7 @@ Object *operation_8c0e8e3c(Object *o)
     int t9;
     int t10;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)(*(S_g8c44be88 **)0x8c44be88));
+    TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be88 **)0x8c44be88));
     o->dispatch = (void *)0x8c267f40;
     o->f50 = 0;
     o->f24 = 0;
@@ -106,7 +106,7 @@ Object *operation_8c0e8e3c(Object *o)
                 }
                 t5 = operation_8c1f1850();
                 if ((unsigned char)t5 == 1) {
-                    t6 = call_8c01018c((void *)((void *)0x8c319870));
+                    t6 = vmu_find_file_8c01018c((void *)((void *)0x8c319870));
                     if (t6 != -1) {
                         initialize_channel_handles();
                         select_available_channel();
@@ -128,7 +128,7 @@ L_8c0e8f60:;
             }
         }
     }
-    t9 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
+    t9 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
     if (t9 != 0) {
         call_8c198294(t9, o);
     }

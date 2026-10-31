@@ -14,7 +14,7 @@ struct S_c8c122700_2c {
     char unknown0[0x68];
     int f68;
 };
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c051a98(S_c8c122700 *, int, int, int, int);
 extern void operation_8c051d50(void *, int);
 extern void operation_8c051d5c(void *, float, float);
@@ -24,7 +24,7 @@ S_c8c122700 *operation_8c1d4364(int a0)
     char *v1;
     S_c8c122700 *t1;
     v1 = (char *)*(int *)0x8c4e2fa0;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
     if (t1 != 0) {
         call_8c051a98(t1, a0, 0xc6, 3, 2);
     }

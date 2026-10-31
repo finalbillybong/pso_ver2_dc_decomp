@@ -11,7 +11,7 @@ struct Object {
 extern int g_8c418248;
 extern int g_8c4627c8;
 extern void call_8c02b1a0(int);
-void operation_8c02b13c(Object *o)
+void handle_6x7B_disable_stealth_suit_effect_8c02b13c(Object *o)
 {
     int v1;
     unsigned short v2;

@@ -17,14 +17,14 @@ struct S_vv3 {
 struct S_vv2 {
     int f00;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 void operation_8c08feb8(Object *o)
 {
     char *v1;
     S_vv3 *v3;
     S_vv2 *v2;
     int t1;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     v1 = (char *)*(int *)((char *)0x8c2ee8b8 + (t1 << 2));
     o->f104 = 0;
     v2 = (S_vv2 *)&o->f104;

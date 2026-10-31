@@ -58,7 +58,7 @@ struct S_vv13 {
 };
 extern S_g8c46ed0c *g_8c46ed0c;
 extern "C" S_c8c053d84 *lookup_object_by_id(unsigned short);
-extern "C" void operation_8c0540ec(Object *o)
+extern "C" void handle_6x0B_update_object_state_8c0540ec(Object *o)
 {
     Frame frame;
     S_vv18 *v18;

@@ -18,8 +18,8 @@ struct Frame {
 struct S_vv4 {
     unsigned short f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern void TObject_dtor_8c03311c(void *, short);
 typedef struct Hdr {
     int f00;
     unsigned int f04;
@@ -41,7 +41,7 @@ int operation_8c09ae10(int a0, int a1)
     unsigned int i;
     int pm1;
     int pm6;
-    initialize_hierarchy_node((void *)(&frame), (void *)0);
+    TObject_ctor_8c0330e4((void *)(&frame), (void *)0);
     frame.f18 = (void *)0x8c26586c;
     frame.f20 = a0;
     frame.f24 = a1;
@@ -66,6 +66,6 @@ int operation_8c09ae10(int a0, int a1)
     r = frame.f28;
     pm3 = 0x8c26586c;
     frame.f18 = (void *)pm3;
-    destroy_hierarchy_node((void *)(&frame), (short)0);
+    TObject_dtor_8c03311c((void *)(&frame), (short)0);
     return r;
 }

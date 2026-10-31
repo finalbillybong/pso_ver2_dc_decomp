@@ -17,10 +17,10 @@ struct Object {
     float f30;
     int f34;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c15af90(Object *o, int a1)
 {
-    initialize_hierarchy_node((void *)o, (void *)(*(S_g8c44be94 **)0x8c44be94));
+    TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be94 **)0x8c44be94));
     o->dispatch = (void *)0x8c26ee88;
     o->tag = (int)(*(int *)0x8c316650);
     o->size = 0x38;

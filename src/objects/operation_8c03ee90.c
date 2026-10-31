@@ -16,7 +16,7 @@ struct S_vv3 {
     char f00;
 };
 extern void call_8c12b084(char *, void *);
-extern void call_8c12b154(int, char *, int);
+extern void strncpy_8c12b154(int, char *, int);
 int operation_8c03ee90(int a0, int a1, int a2)
 {
     char frame[0x20];
@@ -47,6 +47,6 @@ L_8c03eec2:;
     v2->f00 = 0;
     call_8c12b084(frame, (void *)((void *)0x8c2ef4c0));
     call_8c12b084(frame, (void *)a2);
-    call_8c12b154(a0, frame, 0x20);
+    strncpy_8c12b154(a0, frame, 0x20);
     return 0;
 }

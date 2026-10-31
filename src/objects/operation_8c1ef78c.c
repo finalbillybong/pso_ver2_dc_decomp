@@ -15,7 +15,7 @@ struct S_c8c021ef8 {
     short f1b6;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c1ef78c(Object *o)
+void handle_6x89_set_killer_entity_id_8c1ef78c(Object *o)
 {
     S_c8c021ef8 *t1;
     /* TODO 00000000..00000000

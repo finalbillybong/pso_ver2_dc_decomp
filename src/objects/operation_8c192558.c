@@ -19,7 +19,7 @@ extern S_g8c4dc2c4 *g_8c4dc2c4;
 extern S_g8c4dc2c8 *g_8c4dc2c8;
 extern char g_8c31a2ac[];
 extern int call_8c18e768(int, int);
-extern void call_8c12b77c(int, int, int);
+extern void memcpy_8c12b77c(int, int, int);
 extern void operation_1c7dd4(void *);
 extern void operation_8c03ef80(void *, ...);
 int operation_8c192558(int a0, int a1)
@@ -56,7 +56,7 @@ int operation_8c192558(int a0, int a1)
         if (*(int *)((char *)(v1 + 0x1c) + v12) == a1) {
             v3++;
             v2 = (v2 - v3) * 0x24;
-            call_8c12b77c((int)(v1 + v12), (int)(v1 + v3 * 0x24), v2);
+            memcpy_8c12b77c((int)(v1 + v12), (int)(v1 + v3 * 0x24), v2);
             *(int *)((char *)g_8c4dc2c8 + off) -= 1;
             e = (S_x79584 *)(*(int *)((char *)g_8c4dc2c8 + off) * 0x24 + v1);
             e->f01 = 0;

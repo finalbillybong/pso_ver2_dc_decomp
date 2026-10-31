@@ -11,12 +11,12 @@ struct S_L8c4d5ad0 {
 extern int g_8c30b600;
 extern int g_8c4d5b10;
 extern S_L8c4d5ad0 g_8c4d5ad0;
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c18e318(void *, void *, void *);
 extern void destroy_object_8c09ae88();
 void operation_8c2825bc(void)
 {
-    initialize_hierarchy_node((void *)((void *)&g_8c4d5ad0), (void *)0);
+    TObject_ctor_8c0330e4((void *)((void *)&g_8c4d5ad0), (void *)0);
     (&g_8c4d5ad0)->f18 = (void *)0x8c26586c;
     call_8c18e318((void *)((void *)&g_8c4d5ad0), destroy_object_8c09ae88, (void *)((void *)0x8c4d5ac4));
     g_8c4d5b10 = (int)(g_8c30b600);

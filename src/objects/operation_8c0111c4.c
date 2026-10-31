@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c0111c4(void)
+void TObject_update_default_8c0111c4(void)
 {
 }

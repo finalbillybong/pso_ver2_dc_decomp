@@ -20,13 +20,13 @@ struct Object {
 struct Arg2 {
     Block32 f00;
 };
-extern void initialize_hierarchy_node(Object *, int);
+extern void TObject_ctor_8c0330e4(Object *, int);
 extern void call_8c13ffec(Object *);
 Object *initialize_status_view_8c13ff90(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     (void)home;
-    initialize_hierarchy_node(o, a1);
+    TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c26dbec;
     o->tag = *(int *)0x8c3146d8;
     o->size = 0x94;

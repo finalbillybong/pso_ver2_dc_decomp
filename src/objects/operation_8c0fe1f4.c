@@ -18,8 +18,8 @@ extern int g_8c2e2ad8;
 extern int g_8c44be04;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_c8c021ef8 *lookup_low_id(int);
-extern int current_effect_mode(void);
-extern int allocate_block(void *, unsigned int);
+extern int get_current_area_8c032b10(void);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0fdc48(int, Object *, int, int);
 int operation_8c0fe1f4(Object *o, int a1, int a2)
 {
@@ -38,7 +38,7 @@ int operation_8c0fe1f4(Object *o, int a1, int a2)
     }
     return 0;
 L_8c0fe258:;
-    t2 = current_effect_mode();
+    t2 = get_current_area_8c032b10();
     if (!(t2 > 0)) {
         if (t2 == 0) {
             goto L_8c0fe298;
@@ -54,7 +54,7 @@ L_8c0fe298:;
             return 0;
         }
     }
-    t3 = allocate_block(g_8c4d97e0, (unsigned int)0x398);
+    t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x398);
     if (t3 != 0) {
         call_8c0fdc48(t3, o, a1, a2);
     }

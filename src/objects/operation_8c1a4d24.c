@@ -12,7 +12,7 @@ extern int g_8c4dc7e0;
 extern S_g8c4dc7e4 *g_8c4dc7e4;
 extern char g_8c31e15c[];
 extern int operation_8c105360(int);
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 extern void call_8c0787cc(void *, int);
 void operation_8c1a4d24(void)
 {
@@ -29,7 +29,7 @@ void operation_8c1a4d24(void)
     }
     t1 = operation_8c105360((int)(g_8c31e15c + 0x113));
     g_8c4dc7e4 = (S_g8c4dc7e4 *)(int)(t1);
-    t2 = call_8c18de4c(0x1a1800);
+    t2 = operator_new_8c18de4c(0x1a1800);
     g_8c4dc7e0 = (int)(t2);
     call_8c0787cc(g_8c4dc7e4, t2);
 }

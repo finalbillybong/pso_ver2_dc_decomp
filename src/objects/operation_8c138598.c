@@ -19,7 +19,7 @@ struct S_vv12 {
 extern int g_8c467874;
 extern S_L8c4d9b64 g_8c4d9b64;
 extern char g_8c313190[];
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern int operation_8c0c349c(void);
 extern void call_8c13a344(S_vv12 *, int, void *);
 extern void call_8c139fc4(int);
@@ -42,7 +42,7 @@ void operation_8c138598(int a0)
     }
     v3 = (int)0;
     (&g_8c4d9b64)->f08 = v2;
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 == 0x10) {
         t2 = operation_8c0c349c();
         if (t2 == 0) {

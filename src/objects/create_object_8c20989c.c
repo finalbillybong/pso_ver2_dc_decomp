@@ -27,8 +27,8 @@ struct Object {
 };
 extern void call_8c073288(Object *);
 extern void call_8c20a108(Object *);
-extern void *allocate_block(void *, int);
-extern void initialize_hierarchy_node(void *, Object *);
+extern void *heap_alloc_8c122700(void *, int);
+extern void TObject_ctor_8c0330e4(void *, Object *);
 Object *create_object_8c20989c(Object *o)
 {
     Object **home = &o;
@@ -44,9 +44,9 @@ Object *create_object_8c20989c(Object *o)
     call_8c20a108(o);
     o->f1c4 = -1;
     o->fec |= 4;
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, 0x20);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0x20);
     if (t1 != 0) {
-        initialize_hierarchy_node(t1, o);
+        TObject_ctor_8c0330e4(t1, o);
     }
     o->f1bc = t1;
     o->f1c8 = 0;

@@ -34,7 +34,7 @@ struct S_g8c418a00 {
 extern S_g8c418a00 *g_8c418a00;
 extern int g_8c467188;
 extern int g_8c4db9e0;
-extern void call_8c12b154(void *, S_vv1 *, int);
+extern void strncpy_8c12b154(void *, S_vv1 *, int);
 void operation_8c1dc770(Object *o)
 {
     int v47;
@@ -45,7 +45,7 @@ void operation_8c1dc770(Object *o)
     if (v47 != 0 && (v47 + 0x370) != 0) {
         o->f79 |= 1;
         v1 = (S_vv1 *)(v47 + 0x370);
-        call_8c12b154((void *)(((char *)o + 0x8)), v1, 0x17);
+        strncpy_8c12b154((void *)(((char *)o + 0x8)), v1, 0x17);
         o->f1f = 0;
         o->f7c = v1->f31;
         o->f7b = v1->f30;

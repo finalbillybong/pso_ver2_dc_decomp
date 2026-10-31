@@ -52,7 +52,7 @@ extern int g_8c4e2ba0;
 extern int operation_8c1d03b4(void *);
 extern void operation_8c21f648(void *, int);
 extern void request_resource_release(void *);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1d0434(Object *o, int a1)
 {
@@ -120,7 +120,7 @@ Object *operation_8c1d0434(Object *o, int a1)
             v68->f00 &= -3;
             o->f34 = (Arg0_34 *)0;
         }
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

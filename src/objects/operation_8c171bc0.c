@@ -9,7 +9,7 @@ struct Frame {
     short f00;
     char unknown2[0x2];
 };
-extern void call_8c12b77c(Frame *, int, int);
+extern void memcpy_8c12b77c(Frame *, int, int);
 void operation_8c171bc0(int a0, int a1)
 {
     Frame frame;
@@ -22,7 +22,7 @@ void operation_8c171bc0(int a0, int a1)
     if (v2 != 0) {
         v3 = (int)*(int *)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + ((unsigned char)a0 << 2));
         if (v3 >= 0 && 0xff > v3) {
-            call_8c12b77c((Frame *)((&frame)), (int)(v2 + v3 + 0x3214), 2);
+            memcpy_8c12b77c((Frame *)((&frame)), (int)(v2 + v3 + 0x3214), 2);
             *(int *)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + (v1)) = (&frame)->f00;
         }
     }

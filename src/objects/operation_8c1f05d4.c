@@ -38,7 +38,7 @@ static inline int is_local_owner(Object *o)
     }
     return r;
 }
-void operation_8c1f05d4(Object *o)
+void handle_6x55_intra_map_warp_8c1f05d4(Object *o)
 {
     Object *base;
     S_c8c021ef8 *t1;

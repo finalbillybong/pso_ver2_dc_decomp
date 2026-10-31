@@ -57,7 +57,7 @@ extern void operation_8c19a044(void *, int);
 extern void operation_8c1e5820(void *);
 extern int operation_8c1dc5d8(void *);
 extern void operation_8c1e5884(void *, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c051a98(void *, int, int, int, unsigned char);
 extern void operation_8c051d5c(void *, float, float);
 extern void operation_8c051df8(void *, float);
@@ -69,7 +69,7 @@ extern void call_8c18de08(void *);
 extern int operation_8c051d18(void *);
 extern void call_8c2069b4(void *, void *);
 extern int operation_8c257e2c(int);
-extern void call_8c12b154(void *, void *, int);
+extern void strncpy_8c12b154(void *, void *, int);
 extern int call_8c1e56f8(Object *);
 extern int operation_8c1571f4(void *);
 extern int operation_8c1e5918(char);
@@ -131,7 +131,7 @@ void operation_8c1e5240(Object *o)
         operation_8c1e5884((void *)o, t1);
         return;
     case 3:
-        t2 = allocate_block(g_8c4d97e0, (unsigned int)0x30);
+        t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x30);
         if (t2 != 0) {
             operation_8c051a98((void *)t2, (int)o, 0xe, 0, (unsigned char)2);
         }
@@ -159,12 +159,12 @@ void operation_8c1e5240(Object *o)
         o->f28 = (Arg0_28 *)t5;
         call_8c2069b4((void *)(o->f28), (void *)((void *)0x8c4dbe40));
         t6 = operation_8c257e2c((int)(o->f28));
-        call_8c12b154((void *)(o->f28), (void *)((void *)0x8c4dbe40), t6);
+        strncpy_8c12b154((void *)(o->f28), (void *)((void *)0x8c4dbe40), t6);
         operation_8c1dc4b8((void *)(o->f30), (int)(o->f28), 0);
         o->f20 = 1;
         return;
     case 5:
-        t7 = allocate_block(g_8c4d97e0, (unsigned int)0x30);
+        t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x30);
         if (t7 != 0) {
             operation_8c051a98((void *)t7, (int)o, 0x10, 0, (unsigned char)0);
         }
@@ -189,7 +189,7 @@ void operation_8c1e5240(Object *o)
         o->f2c = (Arg0_2c *)t10;
         call_8c2069b4((void *)(o->f2c), (void *)((void *)0x8c4dbe40));
         t11 = operation_8c257e2c((int)(o->f2c));
-        call_8c12b154((void *)(o->f2c), (void *)((void *)0x8c4dbe40), t11);
+        strncpy_8c12b154((void *)(o->f2c), (void *)((void *)0x8c4dbe40), t11);
         operation_8c1dc4b8((void *)(o->f30), (int)(o->f2c), 1);
         o->f20 = 1;
         return;

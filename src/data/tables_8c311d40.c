@@ -12,7 +12,7 @@ extern void operation_8c18fabc(void);
 extern void operation_8c18fadc(void);
 extern void operation_8c19ca38(void);
 extern void operation_8c19ca58(void);
-extern void operation_8c158ad8(void);
+extern void load_offline_quest_titles_8c158ad8(void);
 extern void operation_8c158b68(void);
 extern void fn_8c1d9aa4(void);
 extern void operation_8c1d9d68(void);
@@ -30,7 +30,7 @@ Function const d_8c311d40[16] = {
     operation_8c18fadc,
     operation_8c19ca38,
     operation_8c19ca58,
-    operation_8c158ad8,
+    load_offline_quest_titles_8c158ad8,
     operation_8c158b68,
     fn_8c1d9aa4,
     operation_8c1d9d68,

@@ -4,7 +4,7 @@ typedef void (*VirtualFunction)(void);
 
 extern void operation_8c19e040(void);
 extern void operation_8c19cfc8(void);
-extern void operation_8c0111c8(void);
+extern void TObject_render_default_8c0111c8(void);
 extern void fn_8c19d02c(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -50,7 +50,7 @@ VirtualFunction const vt_8c272a44[19] = {
     0,
     operation_8c19e040,
     operation_8c19cfc8,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
     operation_8c0104fc,
@@ -73,7 +73,7 @@ VirtualFunction const vt_8c272a90[19] = {
     0,
     operation_8c19e09c,
     operation_8c19cfc8,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
     operation_8c0104fc,
@@ -96,7 +96,7 @@ VirtualFunction const vt_8c272adc[19] = {
     0,
     operation_8c19e0f8,
     operation_8c19cfc8,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
     operation_8c0104fc,
@@ -119,7 +119,7 @@ VirtualFunction const vt_8c272b28[19] = {
     0,
     operation_8c19d57c,
     operation_8c19cfc8,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     fn_8c19d718,
     hierarchy_output,
     operation_8c0104fc,
@@ -142,7 +142,7 @@ VirtualFunction const vt_8c272b74[19] = {
     0,
     operation_8c19e154,
     operation_8c19cfc8,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
     operation_8c0104fc,
@@ -165,7 +165,7 @@ VirtualFunction const vt_8c272bc0[19] = {
     0,
     operation_8c19e1b0,
     operation_8c19cfc8,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
     operation_8c0104fc,
@@ -188,7 +188,7 @@ VirtualFunction const vt_8c272c0c[19] = {
     0,
     operation_8c19cf78,
     operation_8c19cfc8,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
     operation_8c0104fc,

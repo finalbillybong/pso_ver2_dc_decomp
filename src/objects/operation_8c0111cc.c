@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c0111cc(void)
+void TObject_render_shadow_default_8c0111cc(void)
 {
 }

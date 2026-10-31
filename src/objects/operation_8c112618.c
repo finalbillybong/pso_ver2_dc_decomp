@@ -21,7 +21,7 @@ struct Object {
 };
 extern void operation_8c220b34(int, int);
 extern void call_8c220b80(int, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c1bce5c(int);
 extern int spawn_node_8c0a49c8(int);
 void operation_8c112618(Object *o)
@@ -35,7 +35,7 @@ void operation_8c112618(Object *o)
     (&frame)->f04 = 90.0f;
     operation_8c220b34((int)(&(&frame)->f08), (int)(&frame));
     call_8c220b80(0x2a, 1);
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
     if (t1 != 0) {
         call_8c1bce5c(t1);
     }

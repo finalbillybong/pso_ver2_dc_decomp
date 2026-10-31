@@ -21,7 +21,7 @@ extern S_L8c44bec8 g_8c44bec8;
 extern char g_8c2e2adc[];
 extern void call_8c36cca6(void *, Frame *);
 extern void call_8c38cf80(int, void *, ...);
-void operation_8c011f00(void)
+void debug_draw_heap_free_8c011f00(void)
 {
     Frame frame;
     if (g_8c417ff8 != 0) {

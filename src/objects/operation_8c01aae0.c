@@ -11,8 +11,8 @@ struct S_c8c18de4c {
     short f02;
     int f04;
 };
-extern S_c8c18de4c *call_8c18de4c(int);
-extern void call_8c12b880(int, int, int);
+extern S_c8c18de4c *operator_new_8c18de4c(int);
+extern void memset_8c12b880(int, int, int);
 extern int call_8c011ecc(int);
 extern int call_8c2064b8(int, void *, int, int);
 extern void call_8c011ed8(int);
@@ -23,9 +23,9 @@ void operation_8c01aae0(int a0)
     S_c8c18de4c *t1;
     int t2;
     int t3;
-    t1 = call_8c18de4c(0x8000);
+    t1 = operator_new_8c18de4c(0x8000);
     if (t1 != 0) {
-        call_8c12b880((int)t1, 0, 0x8000);
+        memset_8c12b880((int)t1, 0, 0x8000);
         t2 = call_8c011ecc(0x7230);
         if (t2 != 0) {
             t3 = call_8c2064b8(t2, *(S_g8c46ed10 **)0x8c46ed10, *(int *)0x8c46ed18 * 0xc, (int)((char *)t1 + 0x8));

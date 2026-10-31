@@ -13,7 +13,7 @@ struct Object {
 struct Arg0_30 {
     Arg0_30_0 *f00;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c0e2c10(void *, int);
 void operation_8c0e2b40(Object *o)
 {
@@ -21,7 +21,7 @@ void operation_8c0e2b40(Object *o)
     int v2;
     int t1;
     v1 = (char *)*(int *)0x8c418248;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     v2 = (int)v1;
     if (t1 == 0xf) {
         v2 = (int)0;

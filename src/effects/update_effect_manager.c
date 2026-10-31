@@ -8,7 +8,7 @@ extern void draw_at(unsigned int,const char *,...);
 #define key_at ((int (*)(int))0x8c01e148)
 #define convert_at ((int (*)(int))0x8c0a02cc)
 #define text_at ((int (*)(TextBuffer *))0x8c01e32c)
-#define copy_at ((void (*)(void *,void *,int))0x8c12b154)
+#define strncpy_8c12b154 ((void (*)(void *,void *,int))0x8c12b154)
 #define bind_at ((void (*)(Effect *,EffectResource *))0x8c0a75f0)
 extern void save_at(EffectManager *,void *,void *,int);
 #define fields_at ((void (*)(EffectManager *,EffectResource *,EffectResource *))0x8c0a939c)
@@ -56,15 +56,15 @@ void update_effect_manager(EffectManager *p) {
         p->field7c = convert_at(p->resource->words[5]);
         if (!p->field68) {
             if (text_at((TextBuffer *)p->field3c) >= 0)
-                copy_at(p->resource, p->field54, 16);
+                strncpy_8c12b154(p->resource, p->field54, 16);
         }
         if (inputa0 & 0x80) {
-            copy_at(p->field54, p->resource, 16);
+            strncpy_8c12b154(p->field54, p->resource, 16);
             *(int *)((unsigned char *)p + 76) = 0;
         }
         if (inputa0 & 0x40) {
             *(int *)((unsigned char *)p + 76) = 0;
-            copy_at(p->field54, p->resource, 16);
+            strncpy_8c12b154(p->field54, p->resource, 16);
         }
         color_at(0xffffff00);
         draw_at(0x000a0005, format_base + 54);
@@ -108,7 +108,7 @@ void update_effect_manager(EffectManager *p) {
         if (input98 & 4) {
             if (inputa0 & 0x400) {
                 p->field70 = 0;
-                copy_at(p->field54, p->resource, 16);
+                strncpy_8c12b154(p->field54, p->resource, 16);
             }
         }
         break;

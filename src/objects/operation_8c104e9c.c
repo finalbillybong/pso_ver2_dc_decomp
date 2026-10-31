@@ -28,10 +28,10 @@ struct S_vv6 {
 extern int g_8c4d5b10;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int call_8c1a86d0(void);
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
-extern void call_8c12b880(void *, int, int);
-extern void call_8c12b154(void *, int, int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern void memset_8c12b880(void *, int, int);
+extern void strncpy_8c12b154(void *, int, int);
 extern int operation_8c1a85a8(int);
 static inline void relocate(S_c8c122700 *f)
 {
@@ -57,13 +57,13 @@ int operation_8c104e9c(int a0)
     int t3;
     t1 = call_8c1a86d0();
     if (t1 > 0) {
-        t2 = allocate_block(g_8c4d97e0, (unsigned int)0x40);
+        t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x40);
         if (t2 != 0) {
-            initialize_hierarchy_node((void *)t2, (void *)((void *)0x8c4d5ad0));
+            TObject_ctor_8c0330e4((void *)t2, (void *)((void *)0x8c4d5ad0));
             t2->f18 = (void *)0x8c26586c;
         }
-        call_8c12b880((void *)(((char *)t2 + 0x2c)), 0, 0x11);
-        call_8c12b154((void *)(((char *)t2 + 0x2c)), a0, 0x10);
+        memset_8c12b880((void *)(((char *)t2 + 0x2c)), 0, 0x11);
+        strncpy_8c12b154((void *)(((char *)t2 + 0x2c)), a0, 0x10);
         t2->f00 = (int)(((char *)t2 + 0x2c));
         g_8c4d5b10 = a0;
         t3 = operation_8c1a85a8(a0);

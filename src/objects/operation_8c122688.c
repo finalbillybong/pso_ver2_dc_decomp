@@ -20,7 +20,7 @@ struct S_vv1 {
     int f04;
 };
 extern int call_8c36cd16(int);
-extern void call_8c12b880(Arg0_0 *, int, int);
+extern void memset_8c12b880(Arg0_0 *, int, int);
 Object *operation_8c122688(Object *o, int a1, int a2)
 {
     S_vv1 *v1;
@@ -29,7 +29,7 @@ Object *operation_8c122688(Object *o, int a1, int a2)
     t1 = call_8c36cd16(a1);
     o->tag = (Arg0_0 *)t1;
     if (o->tag != 0) {
-        call_8c12b880((Arg0_0 *)(o->tag), 0, a1);
+        memset_8c12b880((Arg0_0 *)(o->tag), 0, a1);
         v1 = (S_vv1 *)((char *)o->tag + 0x8);
         o->tag->f00 = v1;
         o->tag->f04 = 0;

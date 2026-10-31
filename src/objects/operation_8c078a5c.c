@@ -14,7 +14,7 @@ struct Object {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_8c0f3384(int, int);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c078a5c(Object *o, int a1)
 {
@@ -22,7 +22,7 @@ Object *operation_8c078a5c(Object *o, int a1)
         o->dispatch = (void *)0x8c263e00;
         operation_8c0f3384((int)(o->f38), 1);
         o->f38 = (Arg0_38 *)0;
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

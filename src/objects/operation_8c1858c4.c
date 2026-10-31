@@ -26,7 +26,7 @@ struct Arg3 {
 };
 extern float g_8c286260;
 extern int g_8c319a50;
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c12b944(void);
 Object *operation_8c1858c4(Object *o, int a1, Arg2 *a2, Arg3 *a3, int a4)
 {
@@ -37,7 +37,7 @@ Object *operation_8c1858c4(Object *o, int a1, Arg2 *a2, Arg3 *a3, int a4)
     float r;
     float pm3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c272058;
     o->tag = (int)(g_8c319a50);
     o->size = 0x44;

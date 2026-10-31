@@ -13,8 +13,8 @@ struct S_vv4 {
     int f14;
 };
 extern S_g8c4db9e0 *g_8c4db9e0;
-extern void call_8c12b880(S_vv4 *, int, int);
-extern void call_8c12b77c(S_vv4 *, void *, int);
+extern void memset_8c12b880(S_vv4 *, int, int);
+extern void memcpy_8c12b77c(S_vv4 *, void *, int);
 static inline void remove_entry(S_g8c4db9e0 *p, int a0)
 {
     int v5;
@@ -27,9 +27,9 @@ static inline void remove_entry(S_g8c4db9e0 *p, int a0)
             p->f00 -= 1;
             v5 -= v3;
             if (!(v5 > 0)) {
-                call_8c12b880(v4, 0, 0x1c);
+                memset_8c12b880(v4, 0, 0x1c);
             } else {
-                call_8c12b77c(v4, (void *)((int)v4 + 0x1c), (int)(v5 * 0x1c));
+                memcpy_8c12b77c(v4, (void *)((int)v4 + 0x1c), (int)(v5 * 0x1c));
             }
             return;
         }

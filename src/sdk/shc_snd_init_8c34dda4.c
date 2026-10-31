@@ -16,7 +16,7 @@ extern void slots_init_8c34e1f4(void);
 extern void table_init_8c34c824(void);
 extern void snd_thunk_8c34e0b8(void);
 extern void func_8c3543d2(void (*fn)(int, int), int arg);
-extern void *memset(void *p, int c, unsigned int n);
+extern void *memset_8c12b880(void *p, int c, unsigned int n);
 extern void channels_open_8c3524bc(void);
 extern int create_handler_8c36bbc4(int prio, void (*fn)(void), int stack, int arg);
 extern void unlock_8c34bc24(void);
@@ -51,7 +51,7 @@ void snd_init_8c34ddc0(void)
         table_init_8c34c824();
         snd_thunk_8c34e0b8();
         func_8c3543d2(snd_error_cb_8c34ddaa, 0);
-        memset(g_snd_work_8c3faee8, 0, 0x520);
+        memset_8c12b880(g_snd_work_8c3faee8, 0, 0x520);
         channels_open_8c3524bc();
         if (d_8c3fb410 == 1)
             g_pending_8c3fb408 = create_handler_8c36bbc4(0x900, snd_tick_8c34ddb4, 0x70, 0);

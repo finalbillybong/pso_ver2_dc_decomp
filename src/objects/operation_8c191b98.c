@@ -74,7 +74,7 @@ extern int operation_8c156c24(int, int);
 extern void call_8c156f50(Arg0_94 *);
 extern void operation_8c157138(void *);
 extern int call_8c0b49b0(void *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0b4584(int, void *, int, void *);
 extern void call_8c05fd7c(int, Object *, void *, int, int);
 extern int operation_8c192084(void *, float);
@@ -159,7 +159,7 @@ void operation_8c191b98(Object *o)
     } else {
         o->fa4 = 1;
         if (o->fa8 != 0 && o->f9c == 0) {
-            v7 = allocate_block(g_8c4d97e0, (unsigned int)0x44);
+            v7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x44);
             if (v7 != 0) {
                 call_8c0b4584(v7, (void *)(((char *)o + 0x3c)), (int)(o->fa0 & 0xffff), g_8c44bea0);
             }

@@ -27,13 +27,13 @@ struct S_x36080 {
 struct S_x18544 {
     float f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c185d30(Object *o, int a1, int a2, int a3)
 {
     int v1;
     int v5;
     int pm1;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c272074;
     v5 = (int)0;
     goto L_8c185d7e;

@@ -10,7 +10,7 @@ typedef struct System {
 
 extern System *g_system_8c3fac48;
 extern unsigned char *g_buffer_8c52c398;
-extern void *memset(void *, int, unsigned long);
+extern void *memset_8c12b880(void *, int, unsigned long);
 extern int open_queue_8c34756c(int *);
 extern void set_values_8c346118(int, int);
 int set_buffer_8c347158(unsigned char *buffer)
@@ -29,7 +29,7 @@ fail:
     g_buffer_8c52c398 = buffer;
     g_system_8c3fac48->buffer = buffer;
     g_system_8c3fac48->used = 0;
-    memset(g_system_8c3fac48->buffer, 0xff, 0x200);
+    memset_8c12b880(g_system_8c3fac48->buffer, 0xff, 0x200);
     for (i = 0; i < 0x200; i += 16) ((unsigned char *)((int)g_system_8c3fac48->buffer + i))[0] = 0;
     /* goto to the next line: reproduces the reference branch (docs/SHC.md) */
     if ((error = open_queue_8c34756c(g_system_8c3fac48->queue)) != 0) goto done;

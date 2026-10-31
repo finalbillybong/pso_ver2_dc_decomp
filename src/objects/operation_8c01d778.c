@@ -12,12 +12,12 @@ struct Object {
     char unknown2e[0x4];
     short f32;
 };
-extern void *current_effect_mode(void);
+extern void *get_current_area_8c032b10(void);
 void operation_8c01d778(Object *o, int a1)
 {
     void *t1;
     if ((unsigned int)0x1000 > (unsigned int)o->f20) {
-        t1 = current_effect_mode();
+        t1 = get_current_area_8c032b10();
         if ((unsigned int)2 >= (unsigned int)t1) {
             o->f32 = a1;
         }

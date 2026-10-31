@@ -45,8 +45,8 @@ struct S_g8c467180_54 {
     char unknown0[0x8];
     S_g8c467180_54_8 *f08;
 };
-extern void initialize_hierarchy_node(void *, void *);
-extern int allocate_block(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c198294(int, Object *);
 extern void call_8c199688(int, Object *, int);
 extern int create_fitted_pair_grid_view(void *, void *);
@@ -60,7 +60,7 @@ Object *operation_8c1dd718(Object *o)
     int t2;
     int t3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)(*(S_g8c44be88 **)0x8c44be88));
+    TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be88 **)0x8c44be88));
     o->dispatch = (void *)0x8c277370;
     o->f24 = 0;
     o->f28 = 0;
@@ -74,12 +74,12 @@ Object *operation_8c1dd718(Object *o)
     o->f44 = 0.765625f;
     o->f48 = 1.0f;
     o->f4c = 0.875f;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
     if (t1 != 0) {
         call_8c198294(t1, o);
     }
     if (*(int *)0x8c4e3044 == 0) {
-        t2 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xac);
+        t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xac);
         if (t2 != 0) {
             call_8c199688(t2, o, 1);
         }

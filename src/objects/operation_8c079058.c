@@ -29,7 +29,7 @@ struct Arg0_420 {
 };
 extern void operation_8c052124(void *);
 extern void destroy_field_8c0fbfa4(void *, short);
-extern void destroy_actor_mode_state(void *, short);
+extern void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c079058(Object *o, int a1)
 {
@@ -51,7 +51,7 @@ Object *operation_8c079058(Object *o, int a1)
             o->f420->f04 |= 1;
         }
         destroy_field_8c0fbfa4((void *)(((char *)o + 0x424)), (short)-1);
-        destroy_actor_mode_state((void *)o, (short)0);
+        TObjEnemyCustom_dtor_8c0c23c8((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), o);
         }

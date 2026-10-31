@@ -85,7 +85,7 @@ struct Arg0_13c {
 extern S_g8c44be9c *g_8c44be9c;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" int current_mode_active(void);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c1ab01c(void *, int, int, int);
 extern "C" void operation_8c1ddc00(int, short, int);
 extern "C" int call_8c05fbf8(int, void *, int, int);
@@ -119,7 +119,7 @@ extern "C" void operation_8c075968(Object *o)
             goto L_8c075a5e;
         }
         if (o != 0) {
-            t3 = allocate_block(g_8c4d97e0, (unsigned int)0x2c);
+            t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x2c);
             if (t3 != 0) {
                 operation_8c1ab01c((void *)t3, (int)o, (int)operation_8c0771fc, 0x14);
             }

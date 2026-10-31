@@ -25,7 +25,7 @@ extern int call_8c011ecc(int);
 extern int call_8c20684c(int, void *, int, void *);
 extern void call_8c011ed8(int);
 extern int call_8c18e808(int, int);
-void operation_8c01ae4c(Object *o)
+void handle_6x6B_sync_enemy_state_8c01ae4c(Object *o)
 {
     Frame frame;
     int v1;

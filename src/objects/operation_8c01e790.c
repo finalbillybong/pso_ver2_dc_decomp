@@ -12,8 +12,8 @@ struct S_vv1 {
 extern S_g8c44be90 *g_8c44be90;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_8c073f9c(void *);
-extern int allocate_block(void *, unsigned int);
-extern void call_8c01e920(int, void *, int, int, int);
+extern int heap_alloc_8c122700(void *, unsigned int);
+extern void TObjPlayer_ctor_1_8c01e920(int, void *, int, int, int);
 int operation_8c01e790(int a0, int a1, int a2)
 {
     int t1;
@@ -27,9 +27,9 @@ int operation_8c01e790(int a0, int a1, int a2)
         }
     }
     operation_8c073f9c((void *)a2);
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0xc7c);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xc7c);
     if (t1 != 0) {
-        call_8c01e920(t1, g_8c44be90, a0, a1, a2);
+        TObjPlayer_ctor_1_8c01e920(t1, g_8c44be90, a0, a1, a2);
     }
     return (int)(t1);
 }

@@ -29,7 +29,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c2854f8 g_8c2854f8;
 extern void clear_emit_slot(int);
 extern void call_8c18de08(void *);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c0b3494(Object *o, int a1)
 {
@@ -43,7 +43,7 @@ Object *operation_8c0b3494(Object *o, int a1)
         }
         clear_emit_slot((int)(o->f24));
         call_8c18de08((void *)(o->f20));
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

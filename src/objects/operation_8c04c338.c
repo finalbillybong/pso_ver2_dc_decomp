@@ -7,7 +7,7 @@ typedef struct Frame Frame;
 struct Frame {
     int f00;
 };
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 extern int call_8c379038(int);
 extern int call_8c379108(Frame *);
 extern void call_8c37904a(void);
@@ -21,7 +21,7 @@ int operation_8c04c338(void)
     int t2;
     int t3;
     int t4;
-    t1 = call_8c18de4c(0x4000);
+    t1 = operator_new_8c18de4c(0x4000);
     t2 = call_8c379038(t1);
     v1 = (int)-1;
     if (t2 == v1) {

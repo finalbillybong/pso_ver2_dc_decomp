@@ -11,13 +11,13 @@ typedef struct Node {
     Block data;
     int unknown74;
 } Node;
-extern void initialize_hierarchy_node(Node *, void *);
+extern void TObject_ctor_8c0330e4(Node *, void *);
 extern int validate_node_8c087e78(Node *);
 Node *initialize_panel_8c087d8c(Node *o, void *parent, Block *data)
 {
     Node **self = &o;
     (void)self;
-    initialize_hierarchy_node(o, parent);
+    TObject_ctor_8c0330e4(o, parent);
     o->dispatch = (void *)0x8c264f98;
     o->tag = *(int *)0x8c2ffed8;
     o->size = 0x78;

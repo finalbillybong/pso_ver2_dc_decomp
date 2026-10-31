@@ -15,7 +15,7 @@ struct S_c8c053d84 {
     short f10c;
 };
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
-void operation_8c1e8bd0(Object *o)
+void handle_6x6A_set_boss_warp_flags_8c1e8bd0(Object *o)
 {
     S_c8c053d84 *t1;
     /* TODO 00000000..00000000

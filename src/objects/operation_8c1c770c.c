@@ -62,7 +62,7 @@ extern char g_8c328ef4[];
 extern void call_8c12b048(int, void *, ...);
 extern S_c8c1c7658 *operation_8c1c7658(void *);
 extern int call_8c1c9978(Object *);
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 extern void call_8c1c99ac(Object *, void *);
 extern S_c8c1583d4 *operation_8c1583d4(char);
 extern int call_8c1c7ffc(Object *);
@@ -111,7 +111,7 @@ void operation_8c1c770c(Object *o, int a1)
     if (v5 == 0) {
         t2 = call_8c1c9978(o);
         if (t2 != 0) {
-            call_8c12b880((void *)(&(&frame)->f03), 0, 0xa);
+            memset_8c12b880((void *)(&(&frame)->f03), 0, 0xa);
             call_8c1c99ac(o, (void *)(&(&frame)->f03));
             if (((&frame)->f03 + -0x41) == 1) {
                 v6 = (unsigned char)o->f03;
@@ -192,7 +192,7 @@ void operation_8c1c770c(Object *o, int a1)
         return;
     }
     if (v5 == 1 && o->f01 == 3) {
-        call_8c12b880((void *)(&frame), 0, 3);
+        memset_8c12b880((void *)(&frame), 0, 3);
         t5 = operation_8c1c7658((void *)o);
         if (t5 != 0) {
             v23 = (short)t5->f08;

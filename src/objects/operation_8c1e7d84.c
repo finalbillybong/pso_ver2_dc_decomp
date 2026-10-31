@@ -13,7 +13,7 @@ struct Object {
 };
 extern char g_8c32c1b0[];
 extern void call_8c38c5b6(int);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c38cf80(int, void *, ...);
 void operation_8c1e7d84(Object *o)
 {
@@ -25,7 +25,7 @@ void operation_8c1e7d84(Object *o)
     o->f19c = (Arg0_19c *)o->f8c;
 L_8c1e7da4:;
     call_8c38c5b6(-0xff0100);
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (t1 == 0) {
         call_8c38cf80(0x13001e, (void *)((g_8c32c1b0 + 0xe9)));
     }

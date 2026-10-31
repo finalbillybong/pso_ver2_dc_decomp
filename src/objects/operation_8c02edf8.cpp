@@ -81,7 +81,7 @@ extern "C" char g_8c2e7ce0[];
 extern "C" void call_8c034e20(void *);
 extern "C" void operation_8c1acbc0(void *);
 extern "C" void operation_1c7dd4(void *);
-extern "C" void call_8c12b880(Frame *, int, int);
+extern "C" void memset_8c12b880(Frame *, int, int);
 extern "C" void operation_8c073eb4(void *);
 extern "C" void operation_8c02edf8(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3)
 {
@@ -110,7 +110,7 @@ extern "C" void operation_8c02edf8(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3)
             operation_1c7dd4((void *)r->f08);
             v2++;
         }
-        call_8c12b880((Frame *)((&frame)), 0, 0x4f4);
+        memset_8c12b880((Frame *)((&frame)), 0, 0x4f4);
         (&frame)->f00 = 0x61;
         (&frame)->f01 = 2;
         (&frame)->f02 = 0x4f4;

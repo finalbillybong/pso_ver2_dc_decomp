@@ -42,14 +42,14 @@ extern int g_8c3107f4;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d8328 *g_8c4d8328;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c119d60(S_c8c122700 *, void *, int);
 extern void copy_actor_records(void *, void *, int);
 extern void attach_and_insert_object(void *);
-S_c8c122700 *operation_8c11a72c(int a0)
+S_c8c122700 *TObjHashiVersus2_ctor_8c11a72c(int a0)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x10c);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x10c);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

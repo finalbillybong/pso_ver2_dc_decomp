@@ -20,8 +20,8 @@ struct Object {
 extern char g_8c31cdc8[];
 extern void call_8c18de08(int);
 extern int operation_8c257e2c(int);
-extern int call_8c18de4c(int);
-extern void call_8c12b154(int, void *, int);
+extern int operator_new_8c18de4c(int);
+extern void strncpy_8c12b154(int, void *, int);
 void operation_8c19f458(Object *o, int a1)
 {
     int v1;
@@ -38,9 +38,9 @@ void operation_8c19f458(Object *o, int a1)
     }
     if ((g_8c31cdc8 + 0x20) != 0) {
         t1 = operation_8c257e2c((int)(g_8c31cdc8 + 0x20));
-        t2 = call_8c18de4c((int)(t1 + 1));
+        t2 = operator_new_8c18de4c((int)(t1 + 1));
         v12 = (int)t2;
-        call_8c12b154(t2, (void *)((g_8c31cdc8 + 0x20)), (int)(t1 + 1));
+        strncpy_8c12b154(t2, (void *)((g_8c31cdc8 + 0x20)), (int)(t1 + 1));
         o->tag |= 8;
     } else {
         v12 = (int)(g_8c31cdc8 + 0x20);

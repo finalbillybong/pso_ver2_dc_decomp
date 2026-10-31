@@ -37,7 +37,7 @@ extern S_L8c289510 g_8c289510;
 extern S_L8c32aee4 g_8c32aee4;
 extern S_L8c32aef0 g_8c32aef0;
 extern char g_8c32af28[];
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_grid_view(void *, void *);
 extern void call_8c1dc0b4(S_c8c122700 *, int);
 extern void operation_8c1dc270(void *, int);
@@ -49,7 +49,7 @@ S_c8c122700 *operation_8c1dc010(int a0)
     (&g_8c32aef0)->f08 = (&g_8c289510)->f00;
     (&g_8c32aef0)->f0c = (&g_8c289510)->f04;
     (&g_8c32aee4)->f04 = a0;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x90);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x90);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

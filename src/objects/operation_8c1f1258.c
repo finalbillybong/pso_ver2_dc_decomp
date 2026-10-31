@@ -19,7 +19,7 @@ extern int g_8c4627c8;
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int call_8c02a6d4(S_c8c021ef8 *);
 extern void operation_8c1e8e60(int, int, int);
-void operation_8c1f1258(Object *o)
+void handle_6x58_lobby_animation_8c1f1258(Object *o)
 {
     Object *self = o;
     S_c8c021ef8 *t1;

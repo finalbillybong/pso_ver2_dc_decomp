@@ -11,7 +11,7 @@ struct Object {
     char unknown29[0x1e];
     char f47;
 };
-extern void call_8c12b154(void *, int, int);
+extern void strncpy_8c12b154(void *, int, int);
 extern int call_8c087268(void *);
 void operation_8c1ab894(Object *o, int a1)
 {
@@ -21,7 +21,7 @@ void operation_8c1ab894(Object *o, int a1)
         o->f24 = 0.0f;
         return;
     }
-    call_8c12b154((void *)(&o->f28), a1, 0x1f);
+    strncpy_8c12b154((void *)(&o->f28), a1, 0x1f);
     o->f47 = 0;
     t1 = call_8c087268((void *)(&o->f28));
     o->f24 = (float)(unsigned int)t1;

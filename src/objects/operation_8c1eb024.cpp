@@ -148,7 +148,7 @@ extern "C" int call_8c02a6d4(S_c8c021ef8 *);
 extern "C" int object_ready(void *);
 extern "C" S_c8c03b55c *call_8c03b55c(void *, int);
 extern "C" int operation_8c02a764(int, int);
-extern "C" void operation_8c1eb024(Object *o)
+extern "C" void handle_6x46_set_attack_strike_targets_8c1eb024(Object *o)
 {
     int v1;
     unsigned short v2;

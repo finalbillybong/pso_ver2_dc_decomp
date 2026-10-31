@@ -20,7 +20,7 @@ extern int g_8c510ba0;
 extern int g_8c510ba4;
 extern int g_8c510ba8;
 extern char g_8c33a2dc[];
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern void operation_8c25ff40(void);
 extern int operation_8c238554(int);
 extern int operation_8c2378c4(void);
@@ -34,7 +34,7 @@ void operation_8c237810(void)
     int t3;
     g_8c510ba4 = 0;
     if (g_8c510ba0 == 0) {
-        t1 = operation_8c01c25c();
+        t1 = get_game_mode_8c01c25c();
         if (t1 != 0x10) {
             g_8c510ba8 = 0;
             return;

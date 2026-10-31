@@ -23,13 +23,13 @@ struct S_L8c5062b0 {
 extern S_g8c33817c *g_8c33817c;
 extern S_g8c5062a0 *g_8c5062a0;
 extern S_L8c5062b0 g_8c5062b0;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern int operation_8c22ae58(void);
-extern int operation_8c01018c(int);
-extern int operation_8c104c60(void);
+extern int vmu_find_file_8c01018c(int);
+extern int loading_wait_frame_8c104c60(void);
 extern int call_8c372d66(int, void *, Frame *);
 extern int call_8c011e9c(int);
-extern void call_8c12b880(int, int, int);
+extern void memset_8c12b880(int, int, int);
 extern void operation_8c010240(int, int, int);
 extern int call_8c372d98(int);
 extern int call_8c377fd0(void *, int);
@@ -56,17 +56,17 @@ void operation_8c22ace8(void)
     int t7;
     int t8;
     int t9;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (t1 == 0) {
         t2 = operation_8c22ae58();
         if (t2 != 0) {
             v105 = (int)-2;
             for (;;) {
-                v107 = operation_8c01018c((int)g_8c33817c);
+                v107 = vmu_find_file_8c01018c((int)g_8c33817c);
                 if (v107 != v105) {
                     break;
                 }
-                operation_8c104c60();
+                loading_wait_frame_8c104c60();
             }
             if (v107 != -1) {
                 v108 = (int)-1;
@@ -76,11 +76,11 @@ void operation_8c22ace8(void)
                 if (t4 == 0) {
                     t5 = call_8c011e9c((int)((unsigned short)(&frame)->f04 << 9));
                     if (t5 != 0) {
-                        call_8c12b880(t5, 0, (int)((unsigned short)(&frame)->f04 << 9));
+                        memset_8c12b880(t5, 0, (int)((unsigned short)(&frame)->f04 << 9));
                         operation_8c010240(v107, (int)g_8c33817c, t5);
                         goto L_8c22ad76;
 L_8c22ad70:;
-                        operation_8c104c60();
+                        loading_wait_frame_8c104c60();
 L_8c22ad76:;
                         t6 = call_8c372d98(v107);
                         if (t6 != 0) {

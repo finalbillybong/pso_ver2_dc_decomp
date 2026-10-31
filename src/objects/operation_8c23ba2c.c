@@ -32,10 +32,10 @@ struct Frame {
     int f18;
     char unknown1c[0x8];
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern S_c8c0744dc *find_record_8c0744dc(int);
 extern int operation_8c075894(void *, void *, int, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c245d6c(int, void *, void *, Object *);
 Object *operation_8c23ba2c(Object *o, int a1, int a2, int a3)
 {
@@ -45,7 +45,7 @@ Object *operation_8c23ba2c(Object *o, int a1, int a2, int a3)
     int t2;
     int t3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27a270;
     o->tag = (int)(*(int *)0x8c33a4f4);
     o->size = 0x2c;
@@ -57,7 +57,7 @@ Object *operation_8c23ba2c(Object *o, int a1, int a2, int a3)
         t2 = operation_8c075894((void *)t1, (void *)(t1->f13c), (int)(o->f24), (int)(&(&frame)->f18));
         if (t2 != 0) {
             *(Block20 *)&(&frame)->f04 = *(Block20 *)&*(Block20 *)0x8c33a4f8;
-            t3 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x50);
+            t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x50);
             if (t3 != 0) {
                 call_8c245d6c(t3, (void *)(&(&frame)->f18), (void *)(&(&frame)->f04), o);
             }

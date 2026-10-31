@@ -1,4 +1,4 @@
-extern void func_8c342da6(void);
+extern void mwPlyInitSofdec_8c342da6(void);
 extern void func_8c342f36(void);
 extern void func_8c355d5a(int *);
 extern int obj_8c575754;
@@ -7,7 +7,7 @@ extern int obj_8c575c5c;
 
 void reset_hooks_8c35e6d8(void)
 {
-    func_8c342da6();
+    mwPlyInitSofdec_8c342da6();
     ptr_8c51b6d0 = &obj_8c575754;
     func_8c355d5a(&obj_8c575c5c);
 }

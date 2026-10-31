@@ -11,7 +11,7 @@ struct Object {
 extern char g_8c340080[];
 extern void operation_8c1005bc(int);
 extern void call_8c05fbf8(int, int, int, int);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 void operation_8c258794(Object *o)
 {
     int t1;
@@ -24,7 +24,7 @@ void operation_8c258794(Object *o)
         call_8c05fbf8(0x50006, 0, 0, 0);
         return;
     case 3:
-        t1 = current_effect_mode();
+        t1 = get_current_area_8c032b10();
         if (t1 == 0x10) {
             return;
         }
@@ -34,7 +34,7 @@ void operation_8c258794(Object *o)
         call_8c05fbf8(0x50012, 0, 0, 0);
         return;
     case 4:
-        t2 = current_effect_mode();
+        t2 = get_current_area_8c032b10();
         if (t2 == 0x10) {
             return;
         }

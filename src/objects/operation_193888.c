@@ -14,9 +14,9 @@ static inline void reset(ResourceFlagState *o){
         o->field_c=0;
     }
 }
-#define status_at ((int (*)(void *))0x8c34da3c)
+#define ADXF_GetStat_8c34da3c ((int (*)(void *))0x8c34da3c)
 void operation_193888(ResourceFlagState *o){
-    int status=status_at(o->handle);
+    int status=ADXF_GetStat_8c34da3c(o->handle);
     if(status==2)return;
     if(status==3)o->flags&=~1;
     else o->flags|=1;

@@ -19,7 +19,7 @@ struct Object {
     int f30;
 };
 extern void operation_8c220b34(int, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c2506a8(void *, int);
 extern void call_8c220c40(int, int);
 void operation_8c20866c(Object *o)
@@ -32,7 +32,7 @@ void operation_8c20866c(Object *o)
     (&frame)->f04 = 90.0f;
     operation_8c220b34((int)(&(&frame)->f08), (int)(&frame));
     if (*(int *)0x8c4dc800 == 0) {
-        t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x84);
+        t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x84);
         if (t1 != 0) {
             operation_8c2506a8((void *)t1, (int)o);
         }

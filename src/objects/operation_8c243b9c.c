@@ -33,7 +33,7 @@ extern int g_8c510c90;
 extern int g_8c510cbc;
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void operation_8c244710(void *);
-void operation_8c243b9c(Object *o)
+void handle_6x7D_set_battle_mode_data_8c243b9c(Object *o)
 {
     int v5;
     S_c8c021ef8 *t1;

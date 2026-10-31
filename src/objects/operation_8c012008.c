@@ -37,7 +37,7 @@ struct S_x2576 {
     float f00;
 };
 extern void call_8c043418(Object *);
-Object *operation_8c012008(Object *o)
+Object *TObjEnemy_ctor_8c012008(Object *o)
 {
     int v1;
     int v4;

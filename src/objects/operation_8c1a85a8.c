@@ -18,9 +18,9 @@ extern void call_8c34d4e8(void *);
 extern void operation_8c03ed70(int);
 extern int call_8c18e768(int, int);
 extern int call_8c011ea8(int, int);
-extern void call_8c34d6ae(void *, int, int);
-extern int call_8c34da3c(void *);
-extern void operation_8c104c60(void);
+extern void ADXF_ReadNw32_8c34d6ae(void *, int, int);
+extern int ADXF_GetStat_8c34da3c(void *);
+extern void loading_wait_frame_8c104c60(void);
 int operation_8c1a85a8(int a0)
 {
     Frame frame;
@@ -50,13 +50,13 @@ int operation_8c1a85a8(int a0)
         }
         return 0;
     }
-    call_8c34d6ae((void *)((&frame)->f20), t2, t1);
+    ADXF_ReadNw32_8c34d6ae((void *)((&frame)->f20), t2, t1);
     for (;;) {
-        t3 = call_8c34da3c((void *)((&frame)->f20));
+        t3 = ADXF_GetStat_8c34da3c((void *)((&frame)->f20));
         if (t3 == 3) {
             break;
         }
-        operation_8c104c60();
+        loading_wait_frame_8c104c60();
     }
     g_8c4df894 += v4;
     if ((&frame)->f28 == 0) {

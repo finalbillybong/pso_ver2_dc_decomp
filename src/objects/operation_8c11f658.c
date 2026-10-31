@@ -25,13 +25,13 @@ struct Arg0_130 {
     char unknown0[0xa];
     short f0a;
 };
-extern void call_8c120188(Object *);
+extern void TObjNpcBase_ctor_8c120188(Object *);
 extern void call_8c01c908(Object *, void *, void *, short);
 Object *operation_8c11f658(Object *o)
 {
     Object **home = &o;
     (void)home;
-    call_8c120188(o);
+    TObjNpcBase_ctor_8c120188(o);
     o->dispatch = (void *)0x8c26a684;
     call_8c01c908(o, (void *)(*(S_g8c2e727c **)0x8c2e727c), (void *)((*(S_g8c4d8500 **)0x8c4d8500)->f00), (*(S_g8c2e72d8 **)0x8c2e72d8)->f00);
     o->f130->f0a |= 0x80;

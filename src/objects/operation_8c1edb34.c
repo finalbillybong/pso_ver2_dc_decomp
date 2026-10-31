@@ -27,7 +27,7 @@ extern int call_8c02a6d4(S_c8c021ef8 *);
 extern int object_ready(void *);
 extern int operation_8c02a930(void *);
 extern void call_8c184c5c(void *, unsigned short, short);
-void operation_8c1edb34(Object *o)
+void handle_6x37_photon_blast_8c1edb34(Object *o)
 {
     int v11;
     unsigned short id;

@@ -31,15 +31,15 @@ struct Frame {
 extern int g_8c32a2f4;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c1d80f8(S_c8c122700 *, void *, int, int, float);
 extern int create_effect_769c(void *, int);
-S_c8c122700 *operation_8c1d8604(int a0)
+S_c8c122700 *TObjCity_Season_ValentineHeart_create_8c1d8604(int a0)
 {
     Frame frame;
     S_c8c122700 *t1;
     int t2;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0xf0);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xf0);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

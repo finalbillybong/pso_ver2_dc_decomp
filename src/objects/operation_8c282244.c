@@ -3,12 +3,12 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern int initialize_hierarchy_node(void *, void *);
+extern int TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c18e318(int, void *, void *);
-extern void destroy_hierarchy_node();
+extern void TObject_dtor_8c03311c();
 void operation_8c282244(void)
 {
     int t1;
-    t1 = initialize_hierarchy_node((void *)((void *)0x8c470374), (void *)0);
-    call_8c18e318(t1, destroy_hierarchy_node, (void *)((void *)0x8c470368));
+    t1 = TObject_ctor_8c0330e4((void *)((void *)0x8c470374), (void *)0);
+    call_8c18e318(t1, TObject_dtor_8c03311c, (void *)((void *)0x8c470368));
 }

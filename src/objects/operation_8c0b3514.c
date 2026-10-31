@@ -26,7 +26,7 @@ extern S_g8c44bea0 *g_8c44bea0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c285510 g_8c285510;
 extern int call_8c18e8a0(int, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c0b367c(void *, short, int);
 extern int lookup_object_by_id(unsigned short);
 extern void create_effect_777c(void *, int);
@@ -48,7 +48,7 @@ void operation_8c0b3514(Object *o)
     o->f30 += 1;
     t1 = call_8c18e8a0((int)(o->f30), 5);
     if (t1 == 0) {
-        t2 = allocate_block(g_8c4d97e0, (unsigned int)0x50);
+        t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x50);
         if (t2 != 0) {
             operation_8c0b367c((void *)t2, o->f32, (int)g_8c44bea0);
         }
@@ -105,7 +105,7 @@ L_8c0b3608:;
         }
         v19 = (int)v20;
 L_8c0b360a:;
-        t4 = allocate_block(g_8c4d97e0, (unsigned int)0x2c);
+        t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x2c);
         if (t4 != 0) {
             call_8c0b6824(t4, (void *)(((char *)o + 0x34)), 0xf, 0x2000d, v19, g_8c44bea0);
         }

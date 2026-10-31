@@ -9,8 +9,8 @@ typedef struct Arg5 Arg5;
 struct Arg5 {
     int f00;
 };
-extern int call_8c12b0cc(int);
-extern void call_8c12b154(int, int, int);
+extern int strlen_8c12b0cc(int);
+extern void strncpy_8c12b154(int, int, int);
 extern int operation_8c18ee00(char);
 extern int call_8c20b458(int, Arg5 *);
 extern void call_8c20b5b8(int, int, int, int, Arg5 *);
@@ -30,8 +30,8 @@ void operation_8c20ba28(int a0, int a1, int a2, Arg3 *a3, Arg4 *a4, Arg5 *a5)
     int t2;
     int t3;
     (void)home1;
-    t1 = call_8c12b0cc((int)(a3));
-    call_8c12b0cc(a2);
+    t1 = strlen_8c12b0cc((int)(a3));
+    strlen_8c12b0cc(a2);
     v6 = (int)t1;
     for (v1 = 1; t1 > v1; v1++) {
         if (*(char *)((char *)a3 + v1) == 0x20) {
@@ -41,7 +41,7 @@ void operation_8c20ba28(int a0, int a1, int a2, Arg3 *a3, Arg4 *a4, Arg5 *a5)
     }
     v7 = (int)(0x80 > (v6 + (int)a5->f00 + 1));
     if (v7 != 0) {
-        call_8c12b154((int)((int)a4 + (int)a5->f00), (int)(a3), v6);
+        strncpy_8c12b154((int)((int)a4 + (int)a5->f00), (int)(a3), v6);
         t2 = operation_8c18ee00(*(char *)((char *)((char *)a4 + 0x0) + (a5->f00)));
         *(char *)((char *)((char *)a4 + 0x0) + (a5->f00)) = t2;
         a5->f00 += v6;
@@ -66,7 +66,7 @@ void operation_8c20ba28(int a0, int a1, int a2, Arg3 *a3, Arg4 *a4, Arg5 *a5)
         if (v17 > 0) {
             v18 = (int)(0x80 > (v17 + (int)a5->f00 + 1));
             if (v18 != 0) {
-                call_8c12b154((int)((int)a4 + (int)a5->f00), (int)((int)a3 + v6), v17);
+                strncpy_8c12b154((int)((int)a4 + (int)a5->f00), (int)((int)a3 + v6), v17);
                 a5->f00 += v17;
             }
         }

@@ -40,7 +40,7 @@ struct S_vv9 {
     char f00;
 };
 extern int operation_8c257e2c(int);
-extern void call_8c12b154(void *, int, int);
+extern void strncpy_8c12b154(void *, int, int);
 void operation_8c1e1d04(Object *o, int a1)
 {
     S_vv1 *v1;
@@ -79,7 +79,7 @@ void operation_8c1e1d04(Object *o, int a1)
     *v7++ = v2;
     *v7++ = t1;
     *v7++ = o->fb0;
-    call_8c12b154((void *)v7, a1, (int)((char)t1));
+    strncpy_8c12b154((void *)v7, a1, (int)((char)t1));
     o->fb8 -= v5;
     if ((unsigned int)o->fac > (unsigned int)o->fa8) {
         o->fac += v5;

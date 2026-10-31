@@ -121,7 +121,7 @@ extern "C" char g_8c4da704[];
 extern "C" int lookup_low_id(int);
 extern "C" void call_8c37f6f0(void *, void *);
 extern "C" void operation_43fb4(void *, int, void *);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c18833c(void *, void *, int, int, void *, float, float);
 extern "C" float scale_vector_to_length(void *, float);
 extern "C" void call_8c3bdf60(void *, void *);
@@ -163,7 +163,7 @@ extern "C" void operation_8c13ad4c(Object *o)
         (&frame)->f04 = (int)(((ObjectData *)o)->f3b4);
         (&frame)->f00 = 0;
         (&frame)->f08 = 0x4000;
-        t2 = allocate_block(g_8c4d97e0, (unsigned int)0x4c);
+        t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x4c);
         if (t2 == 0) {
             goto L_8c13af82;
         }

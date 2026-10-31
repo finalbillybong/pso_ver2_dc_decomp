@@ -5,13 +5,13 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4689e0 S_g8c4689e0;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_context_blend_8c254a58(void *, void *, unsigned int);
 int operation_8c254a0c(int a0)
 {
     int t1;
     if (a0 != 0) {
-        t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x234);
+        t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x234);
         if (t1 != 0) {
             initialize_context_blend_8c254a58((void *)t1, (void *)(*(S_g8c4689e0 **)0x8c4689e0), (unsigned int)a0);
         }

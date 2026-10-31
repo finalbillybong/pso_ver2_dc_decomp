@@ -20,9 +20,9 @@ struct Object {
     int f40;
     int f44;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern float call_8c087ba0(void);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c19402c(int);
 Object *operation_8c19176c(Object *o, int a1)
 {
@@ -30,7 +30,7 @@ Object *operation_8c19176c(Object *o, int a1)
     float t1;
     int t2;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27276c;
     o->f20 = 650.0f;
     o->f24 = 425.0f;
@@ -42,7 +42,7 @@ Object *operation_8c19176c(Object *o, int a1)
     o->f38 = 650.0f;
     o->f3c = 425.0f;
     o->f40 = 0;
-    t2 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
+    t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
     if (t2 != 0) {
         call_8c19402c(t2);
     }

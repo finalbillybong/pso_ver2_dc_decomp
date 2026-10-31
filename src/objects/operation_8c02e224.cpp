@@ -17,7 +17,7 @@ typedef struct ObjectData {
     int fb1ac;
 } ObjectData;
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02e224(Object *o, int a1)
+extern "C" void handle_cmd_13_write_online_quest_file_8c02e224(Object *o, int a1)
 {
     o->v4((g_8c2e7ce0 + 0x254));
     if (((ObjectData *)o)->fb1ac != 0) {

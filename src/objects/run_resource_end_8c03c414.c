@@ -1,6 +1,6 @@
 #include "src/include/resource_callbacks.h"
 #define callbacks(id) (*(ResourceCallbacks **)((unsigned char *)0x8c2eeea4+((unsigned int)(id)<<2)))
-void run_resource_end_8c03c414(int id) {
+void release_area_enemy_assets_8c03c414(int id) {
  ResourceCallbacks *p=callbacks(id);
  int count,i;
  if(p) { count=0;

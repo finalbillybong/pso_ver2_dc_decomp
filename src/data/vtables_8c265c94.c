@@ -4,7 +4,7 @@ typedef void (*VirtualFunction)(void);
 
 extern void destroy_effect(void);
 extern void update_effect(void);
-extern void operation_8c0111c8(void);
+extern void TObject_render_default_8c0111c8(void);
 extern void operation_8c0a7db4(void);
 extern void hierarchy_output(void);
 extern void destroy_effect_manager(void);
@@ -20,7 +20,7 @@ VirtualFunction const vt_8c265c94[7] = {
     0,
     destroy_effect,
     update_effect,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     operation_8c0a7db4,
     hierarchy_output
 };
@@ -31,7 +31,7 @@ VirtualFunction const vt_8c265cb0[10] = {
     0,
     destroy_effect_manager,
     operation_8c03ceac,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     effect_noop_9654,
     hierarchy_output,
     start_effect_manager,

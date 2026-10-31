@@ -47,7 +47,7 @@ extern Message *message_alloc_8c1fc430(int, int);
 extern short swap16_8c1fbf48(short);
 extern int swap32_8c1fbf5a(int);
 extern short checksum_8c1fc240(Packet *, Message *, int);
-extern void *memcpy(void *, const void *, unsigned int);
+extern void *memcpy_8c12b77c(void *, const void *, unsigned int);
 
 Message *build_tcp_header_8c203b80(Connection *connection, int owner, Packet *packet)
 {
@@ -90,11 +90,11 @@ Message *build_tcp_header_8c203b80(Connection *connection, int owner, Packet *pa
             h->options[3] = connection->mss;
         } else {
             /* The reference copies to offset 2 of the option area, as observed. */
-            memcpy(h->options + 2, connection->options, connection->option_length);
+            memcpy_8c12b77c(h->options + 2, connection->options, connection->option_length);
         }
     }
-    memcpy(out, h, (unsigned short)length);
+    memcpy_8c12b77c(out, h, (unsigned short)length);
     if (packet) h->checksum = swap16_8c1fbf48(checksum_8c1fc240(packet, message, packet->length));
-    memcpy(out, h, (unsigned short)length);
+    memcpy_8c12b77c(out, h, (unsigned short)length);
     return message;
 }

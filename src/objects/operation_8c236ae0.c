@@ -55,7 +55,7 @@ extern char g_8c339288[];
 extern int call_8c087b0c(void);
 extern float call_8c12c714(float);
 extern int call_8c18e8a0(int, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c235858(int, void *);
 extern void initialize_trigger_8c237254(void *, void *, int, int, void *);
 extern void operation_8c2372ac(void *, void *, int, int, int, int);
@@ -99,23 +99,23 @@ void operation_8c236ae0(Object *o)
             v8 = (int)v7;
         }
         *(Block84 *)&(&g_8c510b2c)->f00 = *(Block84 *)&((S_x78352 *)(v8 * 0x54 + g_8c339288))->f00;
-        t4 = allocate_block(g_8c4d97e0, (unsigned int)0x394);
+        t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x394);
         if (t4 != 0) {
             call_8c235858(t4, g_8c44be98);
         }
-        t5 = allocate_block(g_8c4d97e0, (unsigned int)0x48);
+        t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x48);
         if (t5 != 0) {
             initialize_trigger_8c237254((void *)t5, (void *)((char *)&g_8c510b2c + 0x38), 1, (int)((&g_8c510b2c)->f00.f14), g_8c44be9c);
         }
-        t6 = allocate_block(g_8c4d97e0, (unsigned int)0x48);
+        t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x48);
         if (t6 != 0) {
             initialize_trigger_8c237254((void *)t6, (void *)((char *)&g_8c510b2c + 0x2c), 0, (int)((&g_8c510b2c)->f00.f14), g_8c44be9c);
         }
-        t7 = allocate_block(g_8c4d97e0, (unsigned int)0x48);
+        t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x48);
         if (t7 != 0) {
             operation_8c2372ac((void *)t7, (void *)((void *)0x8c339610), 1, 1, (int)((&g_8c510b2c)->f00.f14), (int)g_8c44be9c);
         }
-        t8 = allocate_block(g_8c4d97e0, (unsigned int)0x48);
+        t8 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x48);
         if (t8 != 0) {
             operation_8c2372ac((void *)t8, (void *)((void *)0x8c33961c), 0, 1, (int)((&g_8c510b2c)->f00.f14), (int)g_8c44be9c);
         }

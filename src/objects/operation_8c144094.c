@@ -85,7 +85,7 @@ extern int g_8c4da3ac;
 extern void call_8c18de08(void *);
 extern void operation_8c0f3384(int, int);
 extern void operation_8c052124(void *);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void destroy_color_rise_8c05bd84(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c144094(Object *o, int a1)
@@ -218,7 +218,7 @@ L_8c1441f0:;
         if (v41 == (int)(o)) {
             g_8c4da3ac = 0;
         }
-        destroy_hierarchy_node((void *)(((char *)o + 0x3f4)), (short)-1);
+        TObject_dtor_8c03311c((void *)(((char *)o + 0x3f4)), (short)-1);
         destroy_color_rise_8c05bd84((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);

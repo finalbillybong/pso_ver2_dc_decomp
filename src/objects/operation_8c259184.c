@@ -23,13 +23,13 @@ struct Object {
 struct Arg2 {
     Block52 f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c2592e0(Object *);
 Object *operation_8c259184(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c281ad8;
     o->tag = (int)(*(int *)0x8c340260);
     o->size = 0x160;

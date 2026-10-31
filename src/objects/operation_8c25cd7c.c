@@ -25,7 +25,7 @@ extern S_g8c513420 *g_8c513420;
 extern void operation_8c0a2144(int);
 extern void operation_8c0a237c(void *, void *);
 extern int hierarchy_is_active(void *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c25cff0(int, Object *, void *);
 void operation_8c25cd7c(Object *o)
 {
@@ -44,7 +44,7 @@ void operation_8c25cd7c(Object *o)
         t1 = hierarchy_is_active((void *)v26);
         if (t1 == 0) {
             o->f24 = 0;
-            t2 = allocate_block(g_8c4d97e0, (unsigned int)0x15c);
+            t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x15c);
             if (t2 != 0) {
                 call_8c25cff0(t2, o, g_8c513420);
             }

@@ -7,7 +7,7 @@ extern int g_8c467188;
 extern int g_8c4daac0;
 extern char g_8c31644c[];
 extern int call_8c104e9c(void *);
-void operation_8c158ad8(void)
+void load_offline_quest_titles_8c158ad8(void)
 {
     int t1;
     int t2;

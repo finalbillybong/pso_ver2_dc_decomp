@@ -124,7 +124,7 @@ extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d7bbc *g_8c4d7bbc;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" void apply_actor_matrix_frame(void *);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_panel_8c087d8c(void *, void *, void *);
 extern "C" void operation_8c109da0(Object *o)
 {
@@ -163,7 +163,7 @@ L_8c109de0:;
             (&frame)->f00.f38 = ((ObjectData *)o)->f40;
             (&frame)->f00.f40 = (int)(*(int *)((char *)0x8c4d7c18 + (v7 << 2)));
             (&frame)->f00.f44 = (int)((*(S_g8c4d7bbc_0 **)((char *)((char *)g_8c4d7bbc + 0x0) + (v6)))->f3c);
-            t1 = allocate_block(g_8c4d97e0, (unsigned int)0x78);
+            t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
             if (t1 != 0) {
                 initialize_panel_8c087d8c((void *)t1, g_8c44be98, (void *)(&frame));
             }

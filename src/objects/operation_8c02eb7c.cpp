@@ -59,7 +59,7 @@ struct Frame {
     Block8 f68;
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void call_8c12b154(void *, int, int);
+extern "C" void strncpy_8c12b154(void *, int, int);
 extern "C" void operation_8c02eb7c(Object *o, Arg1 *a1, int a2, int a3, register int a4)
 {
     Frame frame;
@@ -92,7 +92,7 @@ L_8c02ec0a:;
     (&frame)->f49 = 1;
     (&frame)->f4a = 0x1c;
     *(Block8 *)&(&frame)->f4c = *(Block8 *)&a1->f00;
-    call_8c12b154((void *)(&(&frame)->f54), a3, 0x10);
+    strncpy_8c12b154((void *)(&(&frame)->f54), a3, 0x10);
     o->v9(&(&frame)->f48, (unsigned short)(&frame)->f4a);
     return;
 L_8c02ec52:;
@@ -100,7 +100,7 @@ L_8c02ec52:;
     (&frame)->f2d = 2;
     (&frame)->f2e = 0x1c;
     *(Block8 *)&(&frame)->f30 = *(Block8 *)&a1->f00;
-    call_8c12b154((void *)(&(&frame)->f38), a4, 0x10);
+    strncpy_8c12b154((void *)(&(&frame)->f38), a4, 0x10);
     o->v9(&(&frame)->f2c, (unsigned short)(&frame)->f2e);
     return;
 L_8c02ec9a:;
@@ -108,7 +108,7 @@ L_8c02ec9a:;
     (&frame)->f01 = 3;
     (&frame)->f02 = 0x2c;
     *(Block8 *)&(&frame)->f04 = *(Block8 *)&a1->f00;
-    call_8c12b154((void *)(&(&frame)->f0c), a3, 0x10);
-    call_8c12b154((void *)(&(&frame)->f1c), a4, 0x10);
+    strncpy_8c12b154((void *)(&(&frame)->f0c), a3, 0x10);
+    strncpy_8c12b154((void *)(&(&frame)->f1c), a4, 0x10);
     o->v9((&frame), (unsigned short)(&frame)->f02);
 }

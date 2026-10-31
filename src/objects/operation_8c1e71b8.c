@@ -33,11 +33,11 @@ struct S_L8c41cba0 {
 extern char g_8c41cba0[];
 extern int operation_8c051cf0(void *);
 extern S_c8c051d18 *operation_8c051d18(void *);
-extern int call_8c12b0cc(S_c8c051d18 *);
+extern int strlen_8c12b0cc(S_c8c051d18 *);
 extern void call_8c05fbf8(int, int, int, int);
 extern void operation_8c051ce4(void *);
-extern void call_8c12b880(void *, int, int);
-extern void call_8c12b77c(void *, S_c8c051d18 *, int);
+extern void memset_8c12b880(void *, int, int);
+extern void memcpy_8c12b77c(void *, S_c8c051d18 *, int);
 extern void request_resource_release(void *);
 extern void call_8c18de08(S_c8c051d18 *);
 extern int operation_8c01d8a8(void *, int);
@@ -59,7 +59,7 @@ void operation_8c1e71b8(Object *o)
     if (t1 != 0) {
         t2 = operation_8c051d18((void *)(o->f34));
         if (t2->f00 != 0) {
-            t3 = call_8c12b0cc(t2);
+            t3 = strlen_8c12b0cc(t2);
             if (t3 != 8) {
                 v2 = (int)0;
             } else {
@@ -85,9 +85,9 @@ L_8c1e7214:;
         operation_8c051ce4((void *)(o->f34));
         goto L_8c1e727c;
 L_8c1e722e:;
-        call_8c12b880((void *)((void *)0x8c4e3128), 0, 8);
-        t4 = call_8c12b0cc(t2);
-        call_8c12b77c((void *)((void *)0x8c4e3128), t2, t4);
+        memset_8c12b880((void *)((void *)0x8c4e3128), 0, 8);
+        t4 = strlen_8c12b0cc(t2);
+        memcpy_8c12b77c((void *)((void *)0x8c4e3128), t2, t4);
         v10 = (S_vv10 *)o->f34;
         v10->f04 |= 1;
         o->f34 = (Arg0_34 *)0;

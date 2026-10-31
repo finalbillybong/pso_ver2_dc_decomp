@@ -20,7 +20,7 @@ struct Object {
     Arg0_22cc *f22cc;
 };
 extern char g_8c3374a4[];
-extern void call_8c12b880(Frame *, int, int);
+extern void memset_8c12b880(Frame *, int, int);
 extern int operation_8c1cdc80(void *);
 extern int call_8c372d98(void *);
 extern void call_8c12b048(Frame *, void *, ...);
@@ -34,7 +34,7 @@ void operation_8c222e50(Object *o)
     int t1;
     int t2;
     int t3;
-    call_8c12b880((Frame *)((&frame)), 0, 0xd);
+    memset_8c12b880((Frame *)((&frame)), 0, 0xd);
     if (o->f22b8 != 0 && o->f22cc != 0) {
         t3 = operation_8c1cdc80((void *)(o->f22b8));
         v1 = (int)(t3 * 0xb8);

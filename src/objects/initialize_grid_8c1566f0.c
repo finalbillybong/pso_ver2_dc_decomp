@@ -18,7 +18,7 @@ typedef struct Grid {
     int offset;
 } Grid;
 extern void initialize_grid_view(Grid *, void *);
-extern Cell *allocate_cells_8c18de4c(int);
+extern Cell *operator_new_8c18de4c(int);
 Grid *initialize_grid_8c1566f0(Grid *o, unsigned int count)
 {
     Grid **self = &o;
@@ -35,7 +35,7 @@ Grid *initialize_grid_8c1566f0(Grid *o, unsigned int count)
     o->selected = 0;
     o->cursor = 0;
     o->last = -1;
-    o->cells = allocate_cells_8c18de4c(count << 3);
+    o->cells = operator_new_8c18de4c(count << 3);
     cell = o->cells;
     for (i = 0; i < count; i++, cell++) {
         cell->first = 0;

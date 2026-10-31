@@ -15,7 +15,7 @@ struct S_vv11 {
 };
 extern int g_8c418248;
 extern int g_8c4627c8;
-void operation_8c0268d0(Object *o)
+void handle_6x2D_release_hold_8c0268d0(Object *o)
 {
     int v1;
     unsigned short v2;

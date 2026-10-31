@@ -134,7 +134,7 @@ struct S_x14224 {
 struct Arg4 {
     Vector3 f00;
 };
-extern "C" void call_8c012008(Object *);
+extern "C" void TObjEnemy_ctor_8c012008(Object *);
 extern "C" void call_8c0f8508(Object *);
 extern "C" void call_8c0f8a80(Object *, int);
 extern "C" Object *operation_8c0f83f8(Object *o, int a1, int a2, int a3, Arg4 *a4)
@@ -144,7 +144,7 @@ extern "C" Object *operation_8c0f83f8(Object *o, int a1, int a2, int a3, Arg4 *a
     int v7;
     short v1;
     (void)home;
-    call_8c012008(o);
+    TObjEnemy_ctor_8c012008(o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c268d28;
     ((ObjectData *)o)->tag = (int)(*(int *)0x8c30a27c);
     ((ObjectData *)o)->size = 0x414;

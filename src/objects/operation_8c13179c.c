@@ -13,7 +13,7 @@ struct Object {
     int f100;
     int f104;
 };
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 int operation_8c13179c(Object *o)
 {
     int t1;
@@ -25,7 +25,7 @@ int operation_8c13179c(Object *o)
             o->f104 = 1;
         } else {
             if (!(o->f90 >= 0)) {
-                t1 = operation_8c01c25c();
+                t1 = get_game_mode_8c01c25c();
                 if (t1 == 0x10) {
                     o->f104 = 3;
                     goto L_8c1317e4;

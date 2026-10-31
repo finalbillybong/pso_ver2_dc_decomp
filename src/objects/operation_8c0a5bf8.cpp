@@ -86,7 +86,7 @@ extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void operation_8c0a1b78(void *);
 extern "C" void operation_8c02b1e0(int);
 extern "C" int angle_step(int, int, int);
-extern "C" int current_effect_mode(void);
+extern "C" int get_current_area_8c032b10(void);
 extern "C" int effect_control_button(Object *);
 extern "C" int player_flag9_8c026508(void);
 extern "C" int operation_8c2097a8(int);
@@ -183,7 +183,7 @@ L_8c0a5d08:;
         t8 = angle_step((int)(((ObjectData *)o)->f58), 0x2000, 0xb6);
         ((ObjectData *)o)->f58 = (int)t8;
     } else {
-        t9 = current_effect_mode();
+        t9 = get_current_area_8c032b10();
         if (t9 == 0) {
             t10 = effect_control_button(o);
             if (t10 != 0) {
@@ -200,7 +200,7 @@ L_8c0a5d08:;
         }
     }
 L_8c0a5db0:;
-    t14 = current_effect_mode();
+    t14 = get_current_area_8c032b10();
     if (t14 == 0) {
         ((ObjectData *)o)->f74 = 20.43f;
     }

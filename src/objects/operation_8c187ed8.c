@@ -18,12 +18,12 @@ struct S_c8c122700 {
     void *f16c;
     void *f170;
 };
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c19b2b4(void *, int, int);
 void operation_8c187ed8(Object *o)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x174);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x174);
     if (t1 != 0) {
         operation_8c19b2b4((void *)t1, (int)o, (int)o->f28);
     }

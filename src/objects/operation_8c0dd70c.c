@@ -52,7 +52,7 @@ extern int hierarchy_is_active(void *);
 extern int lookup_low_id(int);
 extern int operation_8c184c80(void *, void *);
 extern int operation_8c2097a8(int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c234cb8(int, void *);
 void operation_8c0dd70c(Object *o)
 {
@@ -117,7 +117,7 @@ void operation_8c0dd70c(Object *o)
                     v19 = (int)0x10000;
                 }
                 if ((((&g_8c41cba0)->f20 & v19)) != 0 && (((&g_8c41cba0)->f28 & 0x200)) != 0) {
-                    t5 = allocate_block(g_8c4d97e0, (unsigned int)0x34);
+                    t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x34);
                     if (t5 != 0) {
                         call_8c234cb8(t5, g_8c44bea0);
                     }

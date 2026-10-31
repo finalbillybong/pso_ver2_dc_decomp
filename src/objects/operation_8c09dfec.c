@@ -22,7 +22,7 @@ struct Object {
 struct Arg1 {
     Block16 f00;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 int operation_8c09dfec(Object *o, Arg1 *a1)
 {
     S_vv5 *v5;
@@ -33,7 +33,7 @@ int operation_8c09dfec(Object *o, Arg1 *a1)
     int t1;
     char *v4;
     v1 = 0;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     v2 = (int)*(int *)((char *)0x8c2ee8b8 + (t1 << 2));
     v4 = (char *)v2;
     v5 = (S_vv5 *)v2;

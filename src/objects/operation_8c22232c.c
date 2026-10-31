@@ -27,7 +27,7 @@ extern int g_8c506064;
 extern int operation_8c03ed64(void);
 extern int operation_8c03ed10(int);
 extern void operation_8c220be8(int, int);
-void operation_8c22232c(Object *o)
+void quest_vm_load_8c22232c(Object *o)
 {
     int t1;
     int t2;

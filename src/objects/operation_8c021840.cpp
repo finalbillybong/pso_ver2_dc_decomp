@@ -43,7 +43,7 @@ extern "C" void operation_8c026e24(void *);
 extern "C" void notify_children_8c021c4c(void *);
 extern "C" void operation_8c03be04(void *);
 extern "C" void operation_8c013e74(void);
-extern "C" void operation_8c021840(Object *o)
+extern "C" void TObjPlayer_render_8c021840(Object *o)
 {
     int v1;
     int v2;

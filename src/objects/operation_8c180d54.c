@@ -9,7 +9,7 @@ extern int call_8c372d98(int);
 extern int call_8c372d38(void *, void *);
 extern int operation_8c181140(int);
 extern int operation_8c1810e0(int);
-extern int operation_8c01018c(int);
+extern int vmu_find_file_8c01018c(int);
 extern int call_8c380516(void);
 extern int g_8c4dbb20;
 extern int g_8c4db9e8;
@@ -66,7 +66,7 @@ int operation_8c180d54(void)
             }
             v3 = (int)-2;
             for (;;) {
-                v4 = (char *)operation_8c01018c((int)((void *)0x8c319912));
+                v4 = (char *)vmu_find_file_8c01018c((int)((void *)0x8c319912));
                 if ((int)v4 != v3) {
                     break;
                 }
@@ -83,7 +83,7 @@ int operation_8c180d54(void)
             }
             v5 = (int)-2;
             for (;;) {
-                v6 = (char *)operation_8c01018c((int)((void *)0x8c3198c1));
+                v6 = (char *)vmu_find_file_8c01018c((int)((void *)0x8c3198c1));
                 if ((int)v6 != v5) {
                     break;
                 }

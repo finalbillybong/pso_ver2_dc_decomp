@@ -15,8 +15,8 @@ struct Object {
 };
 extern void call_8c18de08(void *);
 extern int operation_8c257e2c(int);
-extern int call_8c18de4c(int);
-extern void call_8c12b154(void *, int, int);
+extern int operator_new_8c18de4c(int);
+extern void strncpy_8c12b154(void *, int, int);
 extern int call_8c04b8dc(int);
 void operation_8c1db9dc(Object *o, int a1, int a2)
 {
@@ -27,9 +27,9 @@ void operation_8c1db9dc(Object *o, int a1, int a2)
     o->f1c = (Arg0_1c *)0;
     if (a1 != 0) {
         t1 = operation_8c257e2c(a1);
-        t2 = call_8c18de4c((int)(t1 + 1));
+        t2 = operator_new_8c18de4c((int)(t1 + 1));
         o->f1c = (Arg0_1c *)t2;
-        call_8c12b154((void *)(o->f1c), a1, (int)(t1 + 1));
+        strncpy_8c12b154((void *)(o->f1c), a1, (int)(t1 + 1));
     }
     o->dispatch = a2;
     o->tag |= 0x15;

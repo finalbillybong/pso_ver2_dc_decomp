@@ -11,7 +11,7 @@ struct Object {
     int f24;
 };
 extern int call_8c0ed3a0(void);
-extern void call_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 void operation_8c0ed428(Object *o)
 {
     int t1;
@@ -20,18 +20,18 @@ void operation_8c0ed428(Object *o)
     case 1:
         switch (o->f24) {
         case 0:
-            call_8c01c1a4(6);
+            request_game_mode_8c01c1a4(6);
             break;
         case 1:
-            call_8c01c1a4(0xa);
+            request_game_mode_8c01c1a4(0xa);
             break;
         case 2:
-            call_8c01c1a4(8);
+            request_game_mode_8c01c1a4(8);
         }
         o->f04 |= 1;
         return;
     case 2:
         o->f04 |= 1;
-        call_8c01c1a4(2);
+        request_game_mode_8c01c1a4(2);
     }
 }

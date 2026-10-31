@@ -20,7 +20,7 @@ struct S_c8c122700 {
     void *f58;
 };
 extern int call_8c220ce0(void);
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c158b8c(void *, int, int, int);
 void operation_8c15966c(Object *o)
 {
@@ -28,7 +28,7 @@ void operation_8c15966c(Object *o)
     S_c8c122700 *t2;
     t1 = call_8c220ce0();
     if (t1 != 0) {
-        t2 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x5c);
+        t2 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x5c);
         if (t2 != 0) {
             operation_8c158b8c((void *)t2, (int)*(S_g8c44be98 **)0x8c44be98, (int)o, (int)o->f28);
         }

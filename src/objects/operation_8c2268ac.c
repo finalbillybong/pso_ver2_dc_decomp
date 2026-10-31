@@ -34,10 +34,10 @@ struct Object {
 struct Arg2 {
     char f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c2268ac(Object *o, int a1, Arg2 *a2)
 {
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c278b68;
     o->f2e = 0;
     o->f2c = 0;

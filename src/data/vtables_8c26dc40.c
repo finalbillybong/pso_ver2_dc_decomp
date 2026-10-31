@@ -108,7 +108,7 @@ extern void operation_8c141e54(void);
 extern void destroy_object_8c1421e0(void);
 extern void fn_8c1424e0(void);
 extern void fn_8c142c8c(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 
 /* 8c26dc40: type-information and this-adjustment header, then 94 slots */
 VirtualFunction const vt_8c26dc40[96] = {
@@ -317,6 +317,6 @@ VirtualFunction const vt_8c26df40[7] = {
     destroy_object_8c1421e0,
     fn_8c1424e0,
     fn_8c142c8c,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

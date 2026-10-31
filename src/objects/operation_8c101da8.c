@@ -42,7 +42,7 @@ struct S_L8c4d5998 {
 extern S_g8c46ee80 *g_8c46ee80;
 extern S_L8c4d5958 g_8c4d5958;
 extern S_L8c4d5998 g_8c4d5998;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 void operation_8c101da8(Object *o)
 {
     int t1;
@@ -57,7 +57,7 @@ void operation_8c101da8(Object *o)
         int pm3;
         pm3 = 0x8000;
         (&g_8c4d5958)->f18 = pm3 - g_8c46ee80->fac;
-        t1 = current_effect_mode();
+        t1 = get_current_area_8c032b10();
         if (t1 == 0xc) {
             (&g_8c4d5998)->f18 = 0;
             o->f15c = g_8c46ee80->fac + 0x8000;
@@ -66,7 +66,7 @@ void operation_8c101da8(Object *o)
         (&g_8c4d5998)->f18 = 0x8000;
         o->f15c = (int)(g_8c46ee80->fac);
     } else {
-        t2 = current_effect_mode();
+        t2 = get_current_area_8c032b10();
         if (t2 == 0xc) {
             (&g_8c4d5958)->f18 = 0;
             (&g_8c4d5998)->f18 = 0;

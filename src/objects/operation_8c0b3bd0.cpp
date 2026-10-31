@@ -69,7 +69,7 @@ struct Arg0_20 {
     char unknown0[0x20];
     unsigned short f20;
 };
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_delayed_effect(void *, void *, short, void *);
 extern "C" int create_effect(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
@@ -84,7 +84,7 @@ extern "C" void operation_8c0b3bd0(Object *o, Arg1 *a1)
     a1->v25(o->f20, o->fd4, *(Block8 *)&(&frame)->f00);
     *(Vector3 *)&(&frame)->f08 = *(Vector3 *)&((Arg1Data *)a1)->f324;
     if (o->f20->f20 == ((Arg1Data *)a1)->f20) {
-        t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x34);
+        t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x34);
         if (t1 == 0) {
             return;
         }

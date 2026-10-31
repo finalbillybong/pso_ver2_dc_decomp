@@ -7,7 +7,7 @@ typedef struct S_vv1 S_vv1;
 struct S_vv1 {
     int f00;
 };
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 extern int call_8c18e130(int, void *, int, int, int);
 extern void call_8c1922a0(void);
 void operation_8c192130(void)
@@ -27,17 +27,17 @@ void operation_8c192130(void)
             }
         }
     }
-    t1 = call_8c18de4c(0xf308);
+    t1 = operator_new_8c18de4c(0xf308);
     t2 = call_8c18e130(t1, (void *)((void *)0x8c1921e8), 0, 0x24, 0x6c0);
     *(int *)0x8c4dc2c0 = (int)(t2);
-    t3 = call_8c18de4c(0x48);
+    t3 = operator_new_8c18de4c(0x48);
     *(int *)0x8c4dc2c4 = (int)(t3);
-    t4 = call_8c18de4c(0x48);
+    t4 = operator_new_8c18de4c(0x48);
     *(int *)0x8c4dc2c8 = (int)(t4);
-    t5 = call_8c18de4c(0x40);
+    t5 = operator_new_8c18de4c(0x40);
     *(int *)0x8c4dc2cc = (int)(t5);
     *(int *)0x8c4dc2d0 = 0;
-    t6 = call_8c18de4c(0x24);
+    t6 = operator_new_8c18de4c(0x24);
     *(int *)0x8c4dc2d4 = (int)(t6);
     *(int *)0x8c4dc2d8 = 0;
     call_8c1922a0();

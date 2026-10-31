@@ -17,11 +17,11 @@ extern void call_8c138598(int);
 extern void call_8c0a2144(int);
 extern void call_8c0a21a4(void);
 extern void call_8c1003d0(void *);
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern int call_8c17796c(int);
 extern void operation_8c206d8c(int);
 extern void call_8c09e188(void *, int, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c206e2c(void *);
 void operation_8c206cc0(Object *o)
 {
@@ -34,7 +34,7 @@ void operation_8c206cc0(Object *o)
             call_8c0a2144(6);
             call_8c0a21a4();
             call_8c1003d0((void *)((g_8c335d04 + 0x11)));
-            t1 = operation_8c01c25c();
+            t1 = get_game_mode_8c01c25c();
             if (t1 != 0x10) {
                 t2 = call_8c17796c(0x2f);
                 if (t2 != 0) {
@@ -47,7 +47,7 @@ void operation_8c206cc0(Object *o)
             }
 L_8c206d26:;
             call_8c09e188((void *)(*(S_g8c44be04 **)0x8c44be04), 0, 3);
-            t3 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x20);
+            t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x20);
             if (t3 != 0) {
                 operation_8c206e2c((void *)t3);
             }

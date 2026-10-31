@@ -13,7 +13,7 @@ struct S_vv4 {
     char unknown0[0x350];
     int f350;
 };
-void operation_8c02a8f0(Object *o)
+void handle_6x23_set_player_visible_8c02a8f0(Object *o)
 {
     int v1;
     S_vv4 *v4;

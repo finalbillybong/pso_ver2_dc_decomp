@@ -7,7 +7,7 @@ typedef struct S_g8c41c614 S_g8c41c614;
 extern S_g8c41c614 *g_8c41c614;
 extern void request_resource_release(void *);
 extern void clear_group_flag_08(void *);
-void operation_8c01a4e0(void)
+void handle_6x72_player_done_loading_into_game_8c01a4e0(void)
 {
     /* TODO 00000000..00000000
      * 00000000 walker stopped: instruction missing at the range end (data in the listing)

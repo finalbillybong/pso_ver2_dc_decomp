@@ -6,15 +6,15 @@ typedef struct Vector3 {
 typedef struct S_g8c469a48 S_g8c469a48;
 extern int g_8c469a44;
 extern S_g8c469a48 *g_8c469a48;
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 void operation_8c077280(void)
 {
     int v1;
     int t1;
     int t2;
-    t1 = call_8c18de4c(0x2000);
+    t1 = operator_new_8c18de4c(0x2000);
     g_8c469a44 = (int)(t1);
-    t2 = call_8c18de4c(0x40);
+    t2 = operator_new_8c18de4c(0x40);
     g_8c469a48 = (S_g8c469a48 *)(int)(t2);
     v1 = (int)0;
     while (v1 != 0x10) {

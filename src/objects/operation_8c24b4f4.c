@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern void call_8c05f87c(void *);
 extern void operation_8c122b00(void);
-extern void operation_8c1a86a8(void);
+extern void gsl_open_area_archive_8c1a86a8(void);
 extern void run_current_resource_start(void);
 extern void run_current_resource_start_8c03c3ac(void);
 extern void operation_8c013fc8(void);
@@ -15,7 +15,7 @@ void operation_8c24b4f4(void)
 {
     call_8c05f87c((void *)((void *)0x8c33b440));
     operation_8c122b00();
-    operation_8c1a86a8();
+    gsl_open_area_archive_8c1a86a8();
     run_current_resource_start();
     run_current_resource_start_8c03c3ac();
     operation_8c013fc8();

@@ -11,7 +11,7 @@ struct Object {
     char unknownec[0x4];
     float ff0;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c05fd7c(int, Object *, void *, int, int);
 void operation_8c0ef0d8(Object *o)
 {
@@ -21,7 +21,7 @@ void operation_8c0ef0d8(Object *o)
         o->fe8 = 0.0f;
         o->fe4 = 0;
     }
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     switch (t1) {
     case 1:
     case 2:

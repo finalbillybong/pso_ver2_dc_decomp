@@ -28,7 +28,7 @@ extern void operation_8c1ae010(void *, int);
 extern void call_8c1b4548(void *, void *);
 extern void call_8c1b1748(void *, void *);
 extern void call_8c1b8584(void *, void *);
-void operation_8c1ad39c(Object *o)
+void handle_6x19_dark_falz_boss_actions_8c1ad39c(Object *o)
 {
     Object *base = o;
     S_c8c012a14 *t1;

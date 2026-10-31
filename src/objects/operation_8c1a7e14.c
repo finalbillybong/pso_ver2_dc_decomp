@@ -22,7 +22,7 @@ struct Arg0_28 {
 extern void set_fields_8c1a82a0(void);
 extern int call_8c1a8224(int, int);
 extern void call_8c34d8e4(void *, void *, int);
-extern void call_8c12b154(Object *, Arg0_28 *, int);
+extern void strncpy_8c12b154(Object *, Arg0_28 *, int);
 extern int call_8c104d14(int);
 extern int call_8c34d35e(int, int);
 extern void drain_file_task_queue(void);
@@ -44,14 +44,14 @@ Object *operation_8c1a7e14(Object *o, int a1, int a2)
         o->f20 = (Arg0_20 *)*(int *)0x8c4df884;
         call_8c34d8e4(o->f20, o->f28->f20, 0);
         *(int *)0x8c4df8a0 = o->f28->f24;
-        call_8c12b154(o, o->f28, 0x20);
+        strncpy_8c12b154(o, o->f28, 0x20);
     } else {
         t2 = call_8c104d14(a1);
         *(int *)0x8c4df8a0 = t2;
         if (t2 > 0) {
             t3 = call_8c34d35e(a1, 0);
             o->f20 = (Arg0_20 *)t3;
-            call_8c12b154(o, (Arg0_28 *)a1, 0x20);
+            strncpy_8c12b154(o, (Arg0_28 *)a1, 0x20);
         } else {
             *(int *)0x8c4df8a0 = 0;
             o->tag = 0;

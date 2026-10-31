@@ -24,7 +24,7 @@ static inline void add_a(Actor *o,short value){
         }
     }
 }
-extern "C" void operation_04ac60(void *incoming){
+extern "C" void handle_6x9A_update_entity_stat_8c04ac60(void *incoming){
     Notice *notice;
     Actor *o;
     unsigned int value;

@@ -5,7 +5,7 @@ typedef char check_layout[sizeof(Vector)==12 && sizeof(Owner)==852 && sizeof(Eff
 extern char effect_vtable[];
 extern void *heap;
 extern unsigned int effect_ids[];
-extern void base_at(Effect *,void *),base_destroy_at(Effect *,int),release_at(void *,void *),stop_at(int),emit_at(Vector *,unsigned int);
+extern void TObject_ctor_8c0330e4(Effect *,void *),TObject_dtor_8c03311c(Effect *,int),release_at(void *,void *),stop_at(int),emit_at(Vector *,unsigned int);
 extern int start_at(unsigned int,Vector *,int,int);
 void update_timed_owner_effect_8c1331f4(Effect *o) {
     int active;

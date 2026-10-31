@@ -32,9 +32,9 @@ extern int operation_8c051d18(void *);
 extern int call_8c232864(int, int, int);
 extern void call_8c05fbf8(int, int, int, int);
 extern void operation_8c051ce4(void *);
-extern void call_8c12b880(void *, int, int);
-extern int call_8c12b0cc(int);
-extern void call_8c12b77c(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
+extern int strlen_8c12b0cc(int);
+extern void memcpy_8c12b77c(void *, int, int);
 extern void request_resource_release(void *);
 extern void call_8c18de08(int);
 extern int operation_8c01d8a8(void *, int);
@@ -84,9 +84,9 @@ void operation_8c25bb38(Object *o)
         operation_8c051ce4((void *)(o->f34));
         goto L_8c25bbe4;
 L_8c25bbb0:;
-        call_8c12b880((void *)((void *)0x8c513400), 0, 8);
-        t4 = call_8c12b0cc(t2);
-        call_8c12b77c((void *)((void *)0x8c513400), t2, t4);
+        memset_8c12b880((void *)((void *)0x8c513400), 0, 8);
+        t4 = strlen_8c12b0cc(t2);
+        memcpy_8c12b77c((void *)((void *)0x8c513400), t2, t4);
         operation_8c051ce4((void *)(o->f34));
         if (o->f30 != 0) {
             request_resource_release((void *)(o->f30));

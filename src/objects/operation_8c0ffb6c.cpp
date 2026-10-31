@@ -74,12 +74,12 @@ extern int g_8c30ad98;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c470740 *g_8c470740;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern "C" S_c8c122700 *allocate_block(void *, unsigned int);
+extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c0ee870(void *, void *);
-extern "C" S_c8c122700 *operation_8c0ffb6c(int a0)
+extern "C" S_c8c122700 *TORevlightCave01_create_8c0ffb6c(int a0)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x108);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x108);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

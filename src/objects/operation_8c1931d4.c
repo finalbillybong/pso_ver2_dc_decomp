@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 typedef struct S_g8c4dc2e4 S_g8c4dc2e4;
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_193d9c(void *, void *, int, int, int);
 int operation_8c1931d4(int a0, int a1, int a2, int a3)
 {
@@ -38,7 +38,7 @@ int operation_8c1931d4(int a0, int a1, int a2, int a3)
         while (v6 != 0xc) {
             if (*(int *)((char *)((char *)v7 + 0x0) + (v6 << 2)) == 0) {
                 *(int *)((char *)((char *)v7 + 0x0) + (v6 << 2)) = 1;
-                t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x48);
+                t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x48);
                 if (t1 != 0) {
                     operation_193d9c((void *)t1, (void *)(*(S_g8c4dc2e4 **)0x8c4dc2e4), v6, v3, v2);
                 }

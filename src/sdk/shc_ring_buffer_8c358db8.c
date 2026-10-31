@@ -21,8 +21,8 @@ typedef struct Span {
     int len;
 } Span;
 
-extern void *memset(void *, int, unsigned long);
-extern void *memcpy(void *, const void *, unsigned long);
+extern void *memset_8c12b880(void *, int, unsigned long);
+extern void *memcpy_8c12b77c(void *, const void *, unsigned long);
 extern int ring_users_8c3fb6c4;
 extern Ring rings_8c546b10[64];
 extern char d_8c3fb694[];
@@ -49,7 +49,7 @@ void ring_hang_8c358de6(void *arg, int code)
 void func_8c358dea(void)
 {
     if (ring_users_8c3fb6c4 == 0)
-        memset(rings_8c546b10, 0, 0xc00);
+        memset_8c12b880(rings_8c546b10, 0, 0xc00);
     ring_users_8c3fb6c4++;
 }
 
@@ -57,7 +57,7 @@ void shutdown_h_8c358e0c(void)
 {
     ring_users_8c3fb6c4--;
     if (ring_users_8c3fb6c4 == 0)
-        memset(rings_8c546b10, 0, 0xc00);
+        memset_8c12b880(rings_8c546b10, 0, 0xc00);
 }
 
 void ring_reset_8c358eb2(Ring *rb);
@@ -88,7 +88,7 @@ Ring *ring_create_8c358e28(char *buf, int size, int extra)
 void ring_destroy_8c358e8a(Ring *rb)
 {
     if (rb) {
-        memset(rb, 0, 0x30);
+        memset_8c12b880(rb, 0, 0x30);
         rb->inuse = 0;
     }
 }
@@ -169,12 +169,12 @@ void ring_commit_8c358fe4(Ring *rb, int which, Span *sp)
             off = s->ptr - rb->buf;
             if (off < rb->extra) {
                 t = MIN(s->len, rb->extra - off);
-                memcpy(rb->size + off + rb->buf, s->ptr, t);
+                memcpy_8c12b77c(rb->size + off + rb->buf, s->ptr, t);
             }
             end = s->ptr - rb->buf + s->len;
             if (end > rb->size) {
                 t = MIN(s->len, end - rb->size);
-                memcpy(rb->buf, rb->buf + (end - t), t);
+                memcpy_8c12b77c(rb->buf, rb->buf + (end - t), t);
             }
         } else if (which == 0) {
             rb->space += s->len;

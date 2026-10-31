@@ -50,7 +50,7 @@ struct Frame {
     Block_frame_0 f00;
 };
 extern "C" S_c8c021ef8 *lookup_low_id(int);
-extern "C" int current_effect_mode(void);
+extern "C" int get_current_area_8c032b10(void);
 extern "C" float squared_distance_xz(void *, void *);
 extern "C" void operation_8c129958(int a0, float f0)
 {
@@ -67,7 +67,7 @@ extern "C" void operation_8c129958(int a0, float f0)
         t1 = lookup_low_id((int)((unsigned short)v2));
         if (t1 != 0) {
             v3 = (char *)*(int *)((char *)((char *)t1 + 0x0) + (v1));
-            t2 = current_effect_mode();
+            t2 = get_current_area_8c032b10();
             if ((int)(v3) == t2 && ((((S_c8c021ef8Data *)t1)->f34 & 1)) == 0) {
                 t3 = squared_distance_xz((void *)(a0 + 0x3c), (void *)(((char *)t1 + 0x3c)));
                 if (f0 > t3) {

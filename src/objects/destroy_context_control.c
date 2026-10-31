@@ -6,12 +6,12 @@ extern void *object_name,*heap;
 extern unsigned char control_flag;
 extern int active;
 extern Context *context;
-extern void base_at(Control *,void *),base_destroy_at(Control *,int),release_at(void *,void *),reset_at(Control *),prepare_at(Control *);
-Control *destroy_context_control(Control *o,short mode) {
+extern void TObject_ctor_8c0330e4(Control *,void *),TObject_dtor_8c03311c(Control *,int),release_at(void *,void *),reset_at(Control *),prepare_at(Control *);
+Control *TScene_dtor_8c0313e4(Control *o,short mode) {
     if(o) {
         o->vtable=control_vtable;
         control_flag=0;
-        base_destroy_at(o,0);
+        TObject_dtor_8c03311c(o,0);
         if(mode>0) release_at(heap,o);
     }
     return o;

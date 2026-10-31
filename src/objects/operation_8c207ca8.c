@@ -12,11 +12,11 @@ struct S_g8c505960_s4 {
 };
 extern S_g8c504960 *g_8c504960;
 extern S_g8c505960 *g_8c505960;
-extern void call_8c12b77c(void *, int, int);
+extern void memcpy_8c12b77c(void *, int, int);
 void operation_8c207ca8(int a0)
 {
     if (g_8c504960 != 0) {
-        call_8c12b77c(g_8c504960, a0, 0x11d4);
+        memcpy_8c12b77c(g_8c504960, a0, 0x11d4);
         if (g_8c505960 != 0) {
             ((S_g8c505960_s4 *)((char *)g_8c505960 + 0x4))->f24 = 1;
         }

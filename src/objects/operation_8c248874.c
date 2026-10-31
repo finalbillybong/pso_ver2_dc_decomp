@@ -11,7 +11,7 @@ struct Object {
 };
 extern int g_8c510ba0;
 extern void call_8c237e98(int, void *);
-void operation_8c248874(Object *o)
+void handle_6x8A_show_challenge_time_records_window_8c248874(Object *o)
 {
     int v1;
     int v2;

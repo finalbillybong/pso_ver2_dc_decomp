@@ -23,7 +23,7 @@ struct Object {
     float f04;
 };
 extern int call_8c1dc6e4(int);
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_base_8c0db1d0(void *, int);
 extern void call_8c0dc854(S_c8c122700 *);
 extern void call_8c1f1c28(void *, int);
@@ -35,7 +35,7 @@ S_c8c122700 *operation_8c1f1b58(Object *o, int a1)
     if (t1 == 0) {
         return 0;
     }
-    t2 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x6c);
+    t2 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x6c);
     if (t2 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t2;
         S_c8c122700 **home = &self;

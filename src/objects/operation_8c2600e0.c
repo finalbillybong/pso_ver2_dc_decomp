@@ -16,8 +16,8 @@ struct Object {
 };
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int operation_8c238fa4(int);
-extern void call_8c12b154(int, int, int);
-extern int current_effect_mode(void);
+extern void strncpy_8c12b154(int, int, int);
+extern int get_current_area_8c032b10(void);
 extern void call_8c260228(Object *);
 void operation_8c2600e0(Object *o)
 {
@@ -40,14 +40,14 @@ void operation_8c2600e0(Object *o)
         if (*(char *)((char *)((char *)o + 0x2c) + (v5)) == 0 && t1 != 0) {
             t2 = operation_8c238fa4(v2);
             if (t2 != 0) {
-                call_8c12b154((int)((int)o + v5 + 0x2c), (int)((int)t1 + v1), 0xf);
+                strncpy_8c12b154((int)((int)o + v5 + 0x2c), (int)((int)t1 + v1), 0xf);
                 *(char *)((char *)((char *)o + 0x3b) + (v5)) = 0;
             }
         }
         v2 = (int)(v2 + 1);
     }
     t4 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));
-    t3 = current_effect_mode();
+    t3 = get_current_area_8c032b10();
     if (t3 == 0 && *(int *)0x8c4e2ba0 != 0 && t4 != 0 && ((t4->f34 & 0x2000000)) == 0) {
         call_8c260228(o);
         o->f20 = 1;

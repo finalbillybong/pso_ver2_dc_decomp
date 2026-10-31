@@ -7,7 +7,7 @@ typedef struct S_vv1 S_vv1;
 struct S_vv1 {
     int f00;
 };
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 void operation_8c221030(void)
 {
     {
@@ -19,5 +19,5 @@ void operation_8c221030(void)
             }
         }
     }
-    call_8c12b880((void *)((void *)0x8c505c40), 0, 0x400);
+    memset_8c12b880((void *)((void *)0x8c505c40), 0, 0x400);
 }

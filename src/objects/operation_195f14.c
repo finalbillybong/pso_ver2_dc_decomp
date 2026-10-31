@@ -1,7 +1,7 @@
 /* Provisional names; preserve signed wrapping, state transitions, field widths and original call order. */
 #include "src/include/widget_panel_owner.h"
-#define root_at ((void (*)(WidgetPanelController *,void *))0x8c0330e4)
-#define allocate_at ((WidgetPanelController *(*)(void *,int))0x8c122700)
+#define TObject_ctor_8c0330e4 ((void (*)(WidgetPanelController *,void *))0x8c0330e4)
+#define heap_alloc_8c122700 ((WidgetPanelController *(*)(void *,int))0x8c122700)
 #define setup_at ((void (*)(WidgetPanelController *))0x8c0c532c)
 #define finish_at ((void (*)(WidgetPanelController *))0x8c196dc8)
 #define states ((WidgetPanelState *)0x8c4dc360)

@@ -20,7 +20,7 @@ struct Object {
     int f70;
     int f74;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c237c20(Object *);
 extern void operation_8c248614(Object *);
 extern void operation_8c238fcc(Object *);
@@ -28,7 +28,7 @@ Object *operation_8c2378fc(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c279200;
     o->tag = (int)(*(int *)0x8c339788);
     o->size = 0x78;

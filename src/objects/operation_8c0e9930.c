@@ -12,7 +12,7 @@ extern void call_8c01d9dc(void);
 extern void call_8c01c250(int);
 extern void call_8c01c244(int);
 extern void operation_8c180aac(void);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0e97b4(int);
 extern void call_8c380516(void);
 void operation_8c0e9930(void)
@@ -34,7 +34,7 @@ L_8c0e9964:;
     }
 L_8c0e9970:;
     g_8c470340 = 0;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x28);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x28);
     if (t1 != 0) {
         call_8c0e97b4(t1);
     }

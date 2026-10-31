@@ -3,11 +3,11 @@ typedef char check_layout[sizeof(Task) == 104 && (unsigned long)&((Task *)0)->na
 extern void *heap;
 extern Task *first, *last;
 extern int next_identifier, count;
-extern void *open_at(const char *, int), *allocate_at(void *, unsigned int);
-extern void copy_at(char *, const char *, unsigned int), close_at(void *);
+extern void *open_at(const char *, int), *heap_alloc_8c122700(void *, unsigned int);
+extern void strncpy_8c12b154(char *, const char *, unsigned int), close_at(void *);
 extern void bytes_at(void *, const void *, unsigned int), free_at(void *, void *), reset_at(void);
 extern int busy;
-extern int size_at(void *), sectors_at(void *);
+extern int ADXF_GetFsizeByte_8c34d9d4(void *), ADXF_GetFsizeSct_8c34d9b8(void *);
 typedef char check_new_fields[(unsigned long)&((Task *)0)->buffer == 60 && (unsigned long)&((Task *)0)->callback_data == 68 && (unsigned long)&((Task *)0)->context == 100 ? 1 : -1];
 void complete_first_file_task(void) {
     if (first->done) *first->done = 1;

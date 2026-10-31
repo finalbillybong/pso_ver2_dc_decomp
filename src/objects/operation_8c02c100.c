@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x37c];
     int f37c;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 void operation_8c02c100(Object *o)
 {
     int v1;
@@ -21,7 +21,7 @@ void operation_8c02c100(Object *o)
             goto L_8c02c12a;
         }
     }
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     v5 = (int)t1;
 L_8c02c12a:;
     o->f37c = v5;

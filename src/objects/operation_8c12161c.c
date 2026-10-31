@@ -9,8 +9,8 @@ extern int g_8c44be20;
 extern int g_8c4d85e0;
 extern S_g8c4d8628 *g_8c4d8628;
 extern int operation_8c05bbf8(void);
-extern void operation_8c104d00(int, void *);
-extern int current_effect_mode(void);
+extern void file_load_8c104d00(int, void *);
+extern int get_current_area_8c032b10(void);
 extern void call_8c122210(void *, int);
 extern void call_8c391cc4(void);
 void operation_8c12161c(void)
@@ -22,17 +22,17 @@ void operation_8c12161c(void)
         goto L_8c121650;
     }
     if (((g_8c4d85e0 & 2)) == 0) {
-        operation_8c104d00((int)((void *)0x8c285dc5), g_8c4d8628);
+        file_load_8c104d00((int)((void *)0x8c285dc5), g_8c4d8628);
         g_8c4d85e0 |= 2;
         goto L_8c121670;
 L_8c121650:;
         if (((g_8c4d85e0 & 2)) != 0) {
-            operation_8c104d00((int)((void *)0x8c285db8), g_8c4d8628);
+            file_load_8c104d00((int)((void *)0x8c285db8), g_8c4d8628);
             g_8c4d85e0 &= -3;
         }
     }
 L_8c121670:;
-    t2 = current_effect_mode();
+    t2 = get_current_area_8c032b10();
     call_8c122210((void *)(*(S_g8c311cb0 **)((char *)0x8c311cb0 + (t2 << 2))), 1);
     call_8c391cc4();
 }

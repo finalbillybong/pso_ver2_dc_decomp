@@ -51,12 +51,12 @@ extern int g_8c418248;
 extern S_g8c44be8c *g_8c44be8c;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern char g_8c41cd3c[];
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern int operation_8c177a00(int, int);
 extern int forward_current_effect_mode_8c02c1bc(void);
 extern void operation_8c026700(int, int);
 extern void operation_8c1a9f58(int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_manager_8c03bfdc(void *, void *);
 extern S_c8c0b4a60 *operation_8c0b4a60(short, void *);
 extern S_c8c01e888 *operation_8c01e888(void *, int);
@@ -85,7 +85,7 @@ void operation_8c0206c4(Object *o)
     int t7;
     S_c8c0b4a60 *t8;
     S_c8c01e888 *t9;
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 == 0xf) {
         v1 = (unsigned short)o->f20;
         v2 = (int)(v1 == g_8c418248);
@@ -118,7 +118,7 @@ L_8c020720:;
                         o->f64 = 0x8000;
                         operation_8c026700((int)o, 0x1e);
                         operation_8c1a9f58(3);
-                        t7 = allocate_block(g_8c4d97e0, (unsigned int)0x20);
+                        t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x20);
                         if (t7 == 0) {
                             goto L_8c02083a;
                         }

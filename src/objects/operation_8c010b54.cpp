@@ -32,7 +32,7 @@ struct Frame {
     int f10;
 };
 extern int g_8c4621a8;
-extern "C" int call_8c12b0cc(int);
+extern "C" int strlen_8c12b0cc(int);
 extern "C" int call_8c3ca534(int, Frame *, int);
 extern "C" int operation_8c010b54(Object *o, int a1)
 {
@@ -45,7 +45,7 @@ extern "C" int operation_8c010b54(Object *o, int a1)
         (&frame)->f00 = v1;
         (&frame)->f04 = 0;
         (&frame)->f09 = 1;
-        t1 = call_8c12b0cc(a1);
+        t1 = strlen_8c12b0cc(a1);
         (&frame)->f0c = t1;
         g_8c4621a8 = 1;
         (&frame)->f10 = a1;

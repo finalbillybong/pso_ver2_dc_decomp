@@ -14,7 +14,7 @@ struct Arg1 {
     int f00;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-extern int current_effect_mode(S_c8c021ef8 *);
+extern int get_current_area_8c032b10(S_c8c021ef8 *);
 int operation_8c0b4a60(int a0, Arg1 *a1)
 {
     char *v1;
@@ -31,7 +31,7 @@ int operation_8c0b4a60(int a0, Arg1 *a1)
             return 0;
         }
         t1->f7d0 = 0xffff;
-        t2 = current_effect_mode(t1);
+        t2 = get_current_area_8c032b10(t1);
         if (t2 == 0) {
             a1->f00 = (int)(*(int *)((char *)0x8c2855e8 + ((unsigned short)a0 << 2)));
             return 0x8c2855b8 + (unsigned short)a0 * 0xc;

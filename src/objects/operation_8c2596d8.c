@@ -60,7 +60,7 @@ extern S_g8c4e2b80 *g_8c4e2b80;
 extern int g_8c5133e0;
 extern void call_8c088f14(Object *, int, int);
 extern void insert_object_by_id(void *);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 Object *operation_8c2596d8(Object *o, int a1, int a2)
 {
     Object **home = &o;
@@ -82,7 +82,7 @@ Object *operation_8c2596d8(Object *o, int a1, int a2)
     insert_object_by_id((void *)o);
     o->f194 = 0;
     o->f198 = 0;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (t1 == 0) {
         o->f19c = -1;
     } else {

@@ -7,7 +7,7 @@ typedef struct S_g8c44be88 S_g8c44be88;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern S_g8c44be88 *g_8c44be88;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c177250(int, void *);
 void operation_8c03d1e8(void)
 {
@@ -15,7 +15,7 @@ void operation_8c03d1e8(void)
     /* TODO 00000000..00000000
      * 00000000 walker stopped: instruction missing at the range end (data in the listing)
      */
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x54);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x54);
     if (t1 != 0) {
         call_8c177250(t1, g_8c44be88);
     }

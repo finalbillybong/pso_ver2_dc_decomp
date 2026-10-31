@@ -7,17 +7,17 @@ extern int g_8c41bd10;
 extern int g_8c4daaf0;
 extern int g_8c5049fc;
 extern int g_8c504a04;
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 int operation_8c250514(void)
 {
     int v1;
     int t1;
     int t2;
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 == 0xf) {
         return (int)(g_8c4daaf0);
     }
-    t2 = operation_8c01c25c();
+    t2 = get_game_mode_8c01c25c();
     if (t2 == 0x10) {
         if (g_8c41bd10 != 0) {
             return 1;

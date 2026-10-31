@@ -18,10 +18,10 @@ typedef struct Loader {
     Layout layout;
     int state;
 } Loader;
-extern void initialize_hierarchy_node(Loader *, Source *);
+extern void TObject_ctor_8c0330e4(Loader *, Source *);
 Loader *initialize_loader_8c173578(Loader *loader, Source *source, int index)
 {
-    initialize_hierarchy_node(loader, source);
+    TObject_ctor_8c0330e4(loader, source);
     loader->dispatch = (void *)0x8c270258;
     loader->tag = *(int *)0x8c318de0;
     loader->size = 0xa8;

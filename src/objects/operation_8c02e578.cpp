@@ -28,7 +28,7 @@ typedef struct ObjectData {
 
 } ObjectData;
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02e578(Object *o)
+extern "C" void handle_cmd_1D_ping_8c02e578(Object *o)
 {
     Frame frame;
     o->v4((g_8c2e7ce0 + 0x2d5));

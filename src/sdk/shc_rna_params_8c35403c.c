@@ -98,7 +98,7 @@ void rna_set_pan_8c354118(Rna *rna, int ch, int pan)
     rna->pan[ch] = v;
 }
 
-void rna_set_fx_8c35417c(Rna *rna, int ch, int level)
+void mwRnaSetFx_8c35417c(Rna *rna, int ch, int level)
 {
     int v;
     if (!rna) {

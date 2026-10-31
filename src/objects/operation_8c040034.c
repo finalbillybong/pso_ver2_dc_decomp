@@ -32,7 +32,7 @@ struct Object {
 extern int g_8c466df4;
 extern S_L8c466de8 g_8c466de8;
 extern void call_8c0e9aac(int);
-extern void call_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 extern void call_8c0400b0(void);
 void operation_8c040034(Object *o)
 {
@@ -51,7 +51,7 @@ void operation_8c040034(Object *o)
     if (g_8c466df4 > (o->f34 * 0x50)) {
         g_8c466df4 = 0;
         call_8c0e9aac(0);
-        call_8c01c1a4(6);
+        request_game_mode_8c01c1a4(6);
         return;
     }
     call_8c0400b0();

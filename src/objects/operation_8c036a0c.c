@@ -17,22 +17,22 @@ extern int g_8c2ed874;
 extern int g_8c4627c0;
 extern Object *g_8c4627c4;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void initialize_hierarchy_node(void *, void *);
-extern int allocate_block(void *, unsigned int);
-Object *operation_8c036a0c(Object *o, int a1)
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern int heap_alloc_8c122700(void *, unsigned int);
+Object *TGameProtocol_ctor_8c036a0c(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2615b8;
     o->tag = (int)(g_8c2ed874);
     o->size = 0x24;
     g_8c4627c4 = o;
     o->f20 = 0;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x20);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x20);
     if (t1 != 0) {
-        initialize_hierarchy_node((void *)t1, (void *)o);
+        TObject_ctor_8c0330e4((void *)t1, (void *)o);
     }
     g_8c4627c0 = (int)(t1);
     return o;

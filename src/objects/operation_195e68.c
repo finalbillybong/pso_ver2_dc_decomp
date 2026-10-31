@@ -1,12 +1,12 @@
 /* Provisional names; preserve signed wrapping, state transitions, field widths and original call order. */
 #include "src/include/widget_panel_owner.h"
-#define root_at ((void (*)(WidgetPanelController *,void *))0x8c0330e4)
-#define allocate_at ((WidgetPanelController *(*)(void *,int))0x8c122700)
+#define TObject_ctor_8c0330e4 ((void (*)(WidgetPanelController *,void *))0x8c0330e4)
+#define heap_alloc_8c122700 ((WidgetPanelController *(*)(void *,int))0x8c122700)
 #define setup_at ((void (*)(WidgetPanelController *))0x8c0c532c)
 #define finish_at ((void (*)(WidgetPanelController *))0x8c196dc8)
 static inline WidgetPanelController *construct(WidgetPanelController *base,void *parent){
     WidgetPanelController *o=base;
-    root_at(base,parent);
+    TObject_ctor_8c0330e4(base,parent);
     o->dispatch=(void *)0x8c272884;
     {
         WidgetPanelController *tag_owner=o;
@@ -29,7 +29,7 @@ static inline WidgetPanelController *construct(WidgetPanelController *base,void 
     }
 }
 WidgetPanelController *operation_195e68(void *parent){
-    WidgetPanelController *o=allocate_at(*(void **)0x8c4d97e0,60);
+    WidgetPanelController *o=heap_alloc_8c122700(*(void **)0x8c4d97e0,60);
     if(o)construct(o,parent);
     return o;
 }

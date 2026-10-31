@@ -36,7 +36,7 @@ extern int g_8c4dbb18;
 extern int g_8c4dbb1c;
 extern S_L8c4dbaf8 g_8c4dbaf8;
 extern int operation_8c2324e0(void);
-extern void call_8c12b77c(void *, int, int);
+extern void memcpy_8c12b77c(void *, int, int);
 extern void call_8c17f210(void *);
 extern int call_8c1819e8(void);
 extern int operation_8c2324c0(void);
@@ -65,28 +65,28 @@ void operation_8c17f648(void)
     (&g_8c4dbaf8)->f04 = (int)(t1);
     v1 = (int)g_8c4dbb10;
     (&g_8c4dbaf8)->f00 = (int)(t1);
-    call_8c12b77c(g_8c4db9ec, (int)(v1 + 0x280), 0x16fc);
+    memcpy_8c12b77c(g_8c4db9ec, (int)(v1 + 0x280), 0x16fc);
     call_8c17f210(g_8c4db9ec);
     t2 = call_8c1819e8();
     if (t2 != 6) {
         t3 = operation_8c2324c0();
         (&g_8c4dbaf8)->f04 = (int)(t3);
         (&g_8c4dbaf8)->f00 = (int)(t3);
-        call_8c12b77c(g_8c4db9ec, (int)(v1 + 0x280), 0x16fc);
+        memcpy_8c12b77c(g_8c4db9ec, (int)(v1 + 0x280), 0x16fc);
         call_8c17f210(g_8c4db9ec);
         t4 = call_8c1819e8();
         if (t4 != 6) {
             t5 = operation_8c2324a0();
             (&g_8c4dbaf8)->f04 = (int)(t5);
             (&g_8c4dbaf8)->f00 = (int)(t5);
-            call_8c12b77c(g_8c4db9f4, (int)(v1 + 0x280), 0x1550);
+            memcpy_8c12b77c(g_8c4db9f4, (int)(v1 + 0x280), 0x1550);
             call_8c17f3a8(g_8c4db9f4);
             t6 = call_8c181b20();
             if (t6 != 6) {
                 t7 = operation_8c232480();
                 (&g_8c4dbaf8)->f04 = (int)(t7);
                 (&g_8c4dbaf8)->f00 = (int)(t7);
-                call_8c12b77c(g_8c4db9f4, (int)(v1 + 0x280), 0x1550);
+                memcpy_8c12b77c(g_8c4db9f4, (int)(v1 + 0x280), 0x1550);
                 call_8c17f3a8(g_8c4db9f4);
                 t8 = call_8c181b20();
                 if (t8 != 6) {
@@ -95,8 +95,8 @@ void operation_8c17f648(void)
             }
         }
     }
-    call_8c12b77c((void *)g_8c4db9e0, (int)((int)g_8c4db9ec + 4), 0x41c);
-    call_8c12b77c(g_8c4db9e4, (int)((int)g_8c4db9ec + 0x420), 0x12d8);
+    memcpy_8c12b77c((void *)g_8c4db9e0, (int)((int)g_8c4db9ec + 4), 0x41c);
+    memcpy_8c12b77c(g_8c4db9e4, (int)((int)g_8c4db9ec + 0x420), 0x12d8);
     operation_8c17771c();
     call_8c15b25c();
     if (g_8c4dbb1c == 0) {

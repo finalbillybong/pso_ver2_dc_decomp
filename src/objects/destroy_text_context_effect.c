@@ -6,5 +6,5 @@ typedef char check_callback[(unsigned long)&((View *)0)->callback==36?1:-1];
 typedef char check_state[(unsigned long)&((View *)0)->state==40?1:-1];
 typedef char check_handle[(unsigned long)&((View *)0)->handle==44?1:-1];
 typedef char check_text[(unsigned long)&((View *)0)->text==48?1:-1];
-extern int busy;extern void release_at(View *),base_at(View *,int),free_at(void *,void *);extern void *heap;
-View *destroy_text_context_effect(View *o,short release) {if(o) {o->dispatch=(void *)0x8c2788d4;if(o->state) busy=0;if(o->buffer) release_at(o);base_at(o,0);if(release>0) free_at(heap,o);}return o;}
+extern int busy;extern void release_at(View *),TObject_dtor_8c03311c(View *,int),free_at(void *,void *);extern void *heap;
+View *destroy_text_context_effect(View *o,short release) {if(o) {o->dispatch=(void *)0x8c2788d4;if(o->state) busy=0;if(o->buffer) release_at(o);TObject_dtor_8c03311c(o,0);if(release>0) free_at(heap,o);}return o;}

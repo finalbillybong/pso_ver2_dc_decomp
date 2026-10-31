@@ -65,7 +65,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4d9df0 *g_8c4d9df0;
 extern int hierarchy_is_active(void *);
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c14e034(int, Frame *);
 extern void call_8c155ec4(int, Frame *);
 extern void call_8c1557e8(int, Frame *);
@@ -146,21 +146,21 @@ void operation_8c168670(Object *o)
     (&frame)->f20 = (float)*(int *)((char *)((char *)o + 0x74) + (o->f24 << 2));
     switch (*(int *)((char *)((char *)o + 0x54) + (o->f24 << 2))) {
     case 2:
-        t3 = allocate_block(g_8c4d97e0, (unsigned int)0x204);
+        t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x204);
         if (t3 != 0) {
             call_8c14e034(t3, (Frame *)((&frame)));
         }
         o->f20 = (Arg0_20 *)t3;
         break;
     case 3:
-        t4 = allocate_block(g_8c4d97e0, (unsigned int)0x1e4);
+        t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1e4);
         if (t4 != 0) {
             call_8c155ec4(t4, (Frame *)((&frame)));
         }
         o->f20 = (Arg0_20 *)t4;
         break;
     case 4:
-        t5 = allocate_block(g_8c4d97e0, (unsigned int)0x1e8);
+        t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1e8);
         if (t5 != 0) {
             call_8c1557e8(t5, (Frame *)((&frame)));
         }
@@ -181,21 +181,21 @@ L_8c168848:;
         } while (4 > v28);
         break;
     case 0:
-        t6 = allocate_block(g_8c4d97e0, (unsigned int)0x1e0);
+        t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1e0);
         if (t6 != 0) {
             call_8c163fd8(t6, (Frame *)((&frame)));
         }
         o->f20 = (Arg0_20 *)t6;
         break;
     case 1:
-        t7 = allocate_block(g_8c4d97e0, (unsigned int)0x1dc);
+        t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1dc);
         if (t7 != 0) {
             call_8c164824(t7, (Frame *)((&frame)));
         }
         o->f20 = (Arg0_20 *)t7;
         break;
     case 5:
-        t8 = allocate_block(g_8c4d97e0, (unsigned int)0x1e0);
+        t8 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1e0);
         if (t8 != 0) {
             call_8c178968(t8, (Frame *)((&frame)));
         }

@@ -18,7 +18,7 @@ extern int g_8c467874;
 extern int g_8c467878;
 extern int g_8c46787c;
 extern int call_8c18e768(int, int);
-extern void call_8c12b77c(void *, void *, int);
+extern void memcpy_8c12b77c(void *, void *, int);
 unsigned short operation_8c053f54(Object *o)
 {
     int v2;
@@ -45,7 +45,7 @@ unsigned short operation_8c053f54(Object *o)
     }
     v9 = (int)*(int *)((char *)0x8c467240 + (v2 << 2));
     if (v9 == (int)(o)) {
-        call_8c12b77c((void *)(&*(int *)((char *)0x8c467240 + (v2 << 2))), (void *)(&*(int *)((char *)0x8c467240 + (v2 + 1 << 2))), (int)(v1 - (v2 + 1) << 2));
+        memcpy_8c12b77c((void *)(&*(int *)((char *)0x8c467240 + (v2 << 2))), (void *)(&*(int *)((char *)0x8c467240 + (v2 + 1 << 2))), (int)(v1 - (v2 + 1) << 2));
         g_8c467870 -= 1;
         v10 = (unsigned short)o->f20;
         if ((unsigned int)0x1000 > v10) {

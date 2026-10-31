@@ -16,7 +16,7 @@ struct S_c8c122700 {
 extern int g_8c306e18;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_position_controller(void *, void *);
 void operation_8c0d0268(void)
 {
@@ -24,7 +24,7 @@ void operation_8c0d0268(void)
     /* TODO 00000000..00000000
      * 00000000 walker stopped: instruction missing at the range end (data in the listing)
      */
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x3c);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x3c);
     if (t1 != 0) {
         initialize_position_controller((void *)t1, g_8c44be98);
         t1->f18 = (void *)0x8c266ec4;

@@ -6,7 +6,7 @@ typedef struct Vector3 {
 typedef struct Object Object;
 typedef struct Arg0_20 Arg0_20;
 extern int g_8c46ee80;
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern float squared_distance_xz(void *, void *);
 extern int effect_query_is_true(void *);
 extern void set_effect_bit0(void *);
@@ -21,7 +21,7 @@ void operation_8c0b471c(Object *o)
     float t2;
     int t3;
     int t4;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     if (t1 != 0) {
         t2 = squared_distance_xz((void *)((int)o + 0x2c), (void *)(g_8c46ee80 + 0x90));
         if (!(102400.0f > t2)) {

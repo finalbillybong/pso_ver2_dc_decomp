@@ -27,12 +27,12 @@ struct Arg0_38 {
     int f00;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern int call_8c34da3c(void *);
-extern void call_8c34d79a(void *);
+extern int ADXF_GetStat_8c34da3c(void *);
+extern void ADXF_Stop_8c34d79a(void *);
 extern void call_8c34d4e8(void *);
 extern void operation_8c13fa28(void *);
 extern void call_8c011ec0(void *);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c13f930(Object *o, int a1)
 {
@@ -42,9 +42,9 @@ Object *operation_8c13f930(Object *o, int a1)
     if (o != 0) {
         o->dispatch = (void *)0x8c26dc08;
         if (o->f20 == 0 && o->f3c != 0) {
-            t1 = call_8c34da3c((void *)(o->f64));
+            t1 = ADXF_GetStat_8c34da3c((void *)(o->f64));
             if (t1 == 2) {
-                call_8c34d79a((void *)(o->f64));
+                ADXF_Stop_8c34d79a((void *)(o->f64));
             }
             call_8c34d4e8((void *)(o->f64));
             o->f64 = (Arg0_64 *)0;
@@ -68,7 +68,7 @@ Object *operation_8c13f930(Object *o, int a1)
                 }
             }
         }
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

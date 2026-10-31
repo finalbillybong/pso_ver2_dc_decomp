@@ -3,7 +3,7 @@ struct Object {
     char unknown0[0x10a0];
     int f10a0;
 };
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 extern void call_8c18e720(void *, char *);
 void operation_8c032c3c(Object *o, char *a1)
 {
@@ -11,7 +11,7 @@ void operation_8c032c3c(Object *o, char *a1)
     int off;
     int n;
     char *start;
-    call_8c12b880((void *)((char *)o + 0x20), 0, 0x1000);
+    memset_8c12b880((void *)((char *)o + 0x20), 0, 0x1000);
     q = 0;
     start = a1;
     o->f10a0 = 0;

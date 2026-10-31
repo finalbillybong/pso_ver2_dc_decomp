@@ -13,7 +13,7 @@ struct Object {
     Arg0_44 *f44;
 };
 extern void call_8c014d64(void *);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c185b8c(Object *o, int a1)
 {
@@ -23,7 +23,7 @@ Object *operation_8c185b8c(Object *o, int a1)
             call_8c014d64((void *)(o->f44));
             o->f44 = (Arg0_44 *)0;
         }
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), o);
         }

@@ -36,7 +36,7 @@ struct S_g8c467180 {
     S_g8c467180_2c *f2c;
 };
 extern void call_8c19a044(void *, int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_base_8c0db1d0(void *, int);
 extern void call_8c0e2278(void *, void *, int);
 void operation_8c18caac(Object *o)
@@ -44,7 +44,7 @@ void operation_8c18caac(Object *o)
     int t1;
     call_8c19a044((*(Arg0_58 **)((char *)((char *)o + 0x58) + (o->f54 << 2)))->f6c, 1);
     if (o->f70 == 0) {
-        t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x68);
+        t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x68);
         if (t1 != 0) {
             initialize_base_8c0db1d0((void *)t1, (int)(void *)0x8c319ff0);
         }

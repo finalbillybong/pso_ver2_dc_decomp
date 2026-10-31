@@ -18,7 +18,7 @@ extern void call_8c180ae8(void);
 extern void call_8c380516(void);
 extern void call_8c03373c(void *);
 extern void call_8c0337cc(void *);
-extern void call_8c033330(void *);
+extern void TObject_debug_describe_8c033330(void *);
 extern void call_8c03385c(void *);
 extern int call_8c19b054(void);
 extern int call_8c01c228(void);
@@ -28,7 +28,7 @@ extern int call_8c01e180(void);
 extern int call_8c104da8(void);
 extern int probe_at(int);
 extern void phase_at(int);
-extern void request_at(int);
+extern void request_game_mode_8c01c1a4(int);
 extern char global_storage[];
 extern int timeout;
 extern int transition;
@@ -39,5 +39,5 @@ extern int mode_at(void);
 extern void first_mode_at(void);
 extern void second_mode_at(void);
 extern int existing;extern char configuration[];
-void update_scene_screen(void) {if(existing) {call_8c0337cc(global_storage);call_8c033330(global_storage);call_8c03385c(global_storage);message_at(configuration+41);call_8c380516();}
- else {call_8c01daf0();call_8c01dea8();call_8c03373c(global_storage);call_8c0337cc(global_storage);call_8c033330(global_storage);call_8c03385c(global_storage);call_8c0410b4();call_8c05f9e4();call_8c17e194();call_8c184614();poll_at();switch(mode_at()) {case 6:case 7:case 9:first_mode_at();second_mode_at();break;}call_8c380516();}}
+void update_scene_screen(void) {if(existing) {call_8c0337cc(global_storage);TObject_debug_describe_8c033330(global_storage);call_8c03385c(global_storage);message_at(configuration+41);call_8c380516();}
+ else {call_8c01daf0();call_8c01dea8();call_8c03373c(global_storage);call_8c0337cc(global_storage);TObject_debug_describe_8c033330(global_storage);call_8c03385c(global_storage);call_8c0410b4();call_8c05f9e4();call_8c17e194();call_8c184614();poll_at();switch(mode_at()) {case 6:case 7:case 9:first_mode_at();second_mode_at();break;}call_8c380516();}}

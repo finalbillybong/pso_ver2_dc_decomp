@@ -18,7 +18,7 @@ struct S_g8c46fe20 {
 extern S_g8c46fe20 *g_8c46fe20;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void request_resource_release(void *);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c236a74(Object *o, int a1)
 {
@@ -28,7 +28,7 @@ Object *operation_8c236a74(Object *o, int a1)
             request_resource_release((void *)(g_8c46fe20->f4c));
             g_8c46fe20->f4c = (S_g8c46fe20_4c *)0;
         }
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

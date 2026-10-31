@@ -19,15 +19,15 @@ struct Object {
     char unknown38[0x4];
     int f3c;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c38668e(void *, void *, void *, int);
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 Object *operation_8c22bef8(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c278e30;
     o->tag = *(int *)0x8c338310;
     o->size = 0x44;
@@ -36,7 +36,7 @@ Object *operation_8c22bef8(Object *o, int a1)
     o->f34 = 1;
     o->f28 = -1;
     o->f24 = 0;
-    t1 = call_8c18de4c(0x4800);
+    t1 = operator_new_8c18de4c(0x4800);
     o->f20 = t1;
     return o;
 }

@@ -109,7 +109,7 @@ extern void operation_8c0c03d4(void);
 extern void operation_8c0c0420(void);
 extern void transform_actor_model_origin(void);
 extern void operation_8c0c3474(void);
-extern void destroy_actor_mode_state(void);
+extern void TObjEnemyCustom_dtor_8c0c23c8(void);
 extern void operation_8c0c240c(void);
 extern void draw_actor_model(void);
 extern void operation_456a4(void);
@@ -122,7 +122,7 @@ extern void request_actor_mode_five(void);
 extern void destroy_fade_state(void);
 extern void update_fade_state(void);
 extern void fn_8c0c4e30(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void destroy_color_blue(void);
 extern void update_color_blue(void);
 extern void fn_8c0c48e4(void);
@@ -131,7 +131,7 @@ extern void update_color_fall(void);
 extern void destroy_color_rise(void);
 extern void update_color_rise(void);
 extern void destroy_color_base(void);
-extern void operation_8c0111c4(void);
+extern void TObject_update_default_8c0111c4(void);
 
 /* 8c266330: type-information and this-adjustment header, then 89 slots */
 VirtualFunction const vt_8c266330[91] = {
@@ -327,7 +327,7 @@ VirtualFunction const vt_8c26649c[91] = {
 VirtualFunction const vt_8c266608[91] = {
     0,
     0,
-    destroy_actor_mode_state,
+    TObjEnemyCustom_dtor_8c0c23c8,
     operation_8c0c240c,
     draw_actor_model,
     actor_render_noop_a,
@@ -425,7 +425,7 @@ VirtualFunction const vt_8c266774[7] = {
     destroy_fade_state,
     update_fade_state,
     fn_8c0c4e30,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -436,7 +436,7 @@ VirtualFunction const vt_8c266790[7] = {
     destroy_color_blue,
     update_color_blue,
     fn_8c0c48e4,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -447,7 +447,7 @@ VirtualFunction const vt_8c2667ac[7] = {
     destroy_color_fall,
     update_color_fall,
     fn_8c0c48e4,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -458,7 +458,7 @@ VirtualFunction const vt_8c2667c8[7] = {
     destroy_color_rise,
     update_color_rise,
     fn_8c0c48e4,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -467,8 +467,8 @@ VirtualFunction const vt_8c2667e4[7] = {
     0,
     0,
     destroy_color_base,
-    operation_8c0111c4,
+    TObject_update_default_8c0111c4,
     fn_8c0c48e4,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

@@ -25,14 +25,14 @@ struct Arg2 {
 extern int g_8c3069ac;
 extern Arg2 *g_8c46fa68;
 extern int g_8c46fa6c;
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c05bbf8(void);
 Object *operation_8c0cccd8(Object *o, int a1, Arg2 *a2, int a3)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c266d20;
     o->tag = (int)(g_8c3069ac);
     o->size = 0x44;

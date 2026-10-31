@@ -33,7 +33,7 @@ struct Arg1 {
     float f04;
     float f08;
 };
-extern void call_8c12b77c(void *, Arg0_20 *, int);
+extern void memcpy_8c12b77c(void *, Arg0_20 *, int);
 void operation_8c077488(Object *o, Arg1 *a1, Arg2 *a2)
 {
     if (o->f20 != 0 && a1 != 0 && a2 != 0) {
@@ -41,7 +41,7 @@ void operation_8c077488(Object *o, Arg1 *a1, Arg2 *a2)
             o->f24 -= 2;
         }
         if (o->f24 != 0) {
-            call_8c12b77c((void *)(((char *)o->f20 + 0x20)), (Arg0_20 *)(o->f20), (int)(o->f24 << 4));
+            memcpy_8c12b77c((void *)(((char *)o->f20 + 0x20)), (Arg0_20 *)(o->f20), (int)(o->f24 << 4));
         }
         o->f20->f00 = a2->f00;
         o->f20->f04 = a2->f04;

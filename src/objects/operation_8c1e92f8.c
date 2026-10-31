@@ -35,7 +35,7 @@ extern int call_8c0c4f08(void *);
 extern int call_8c02a6d4(S_c8c021ef8 *);
 extern void operation_8c01d778(void *, short);
 extern void operation_8c1e8e60(int, int, int);
-void operation_8c1e92f8(Object *o)
+void handle_6x3E_stop_moving_8c1e92f8(Object *o)
 {
     int v15;
     int v5;

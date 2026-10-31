@@ -10,14 +10,14 @@ struct Object {
     Arg0_24 *f24;
 };
 extern int call_8c1e2368(void *);
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 extern void call_8c1e23d4(void *, int);
 int operation_8c051d18(Object *o)
 {
     int t1;
     int t2;
     t1 = call_8c1e2368(o->f24);
-    t2 = call_8c18de4c(t1);
+    t2 = operator_new_8c18de4c(t1);
     call_8c1e23d4(o->f24, t2);
     return t2;
 }

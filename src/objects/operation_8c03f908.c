@@ -8,11 +8,11 @@ struct Object {
     char unknown0[0x30];
     int f30;
 };
-extern int call_8c01018c(void *);
+extern int vmu_find_file_8c01018c(void *);
 int operation_8c03f908(Object *o)
 {
     int t1;
-    t1 = call_8c01018c((void *)((void *)0x8c319870));
+    t1 = vmu_find_file_8c01018c((void *)((void *)0x8c319870));
     switch (t1) {
     case -1:
         o->f30 = 0;

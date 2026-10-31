@@ -29,8 +29,8 @@ extern void call_8c01d9dc(void);
 extern void call_8c37e7d4(void *);
 extern void forward_reviewed_8c104e8c(void);
 extern void call_8c0142d8(void *);
-extern int allocate_block(void *, unsigned int);
-extern void call_8c0a1448(int, void *);
+extern int heap_alloc_8c122700(void *, unsigned int);
+extern void TCameraCtrl_ctor_8c0a1448(int, void *);
 extern void call_8c0a1a78(int);
 extern void operation_8c0a237c(void *, void *);
 extern void operation_8c01c250(int);
@@ -67,9 +67,9 @@ void operation_8c25c8f4(void)
         v3 = (int)(v3 + 1);
     }
     call_8c0142d8((void *)((void *)0x8c2e2e84));
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0xf8);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xf8);
     if (t1 != 0) {
-        call_8c0a1448(t1, g_8c44be88);
+        TCameraCtrl_ctor_8c0a1448(t1, g_8c44be88);
     }
     *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&g_8c3404a4;
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&g_8c3404b0;

@@ -23,7 +23,7 @@ struct Frame {
     int f04;
     int f08;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void operation_8c0368a8(void *);
 void operation_8c074ac4(Object *o, int a1)
 {
@@ -31,7 +31,7 @@ void operation_8c074ac4(Object *o, int a1)
     int v1;
     int t1;
     if (o->f13c != 0) {
-        t1 = current_effect_mode();
+        t1 = get_current_area_8c032b10();
         if (t1 != 0xf) {
             v1 = (int)(o->f13c->f308 == 2);
             if (v1 == 0) {

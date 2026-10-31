@@ -20,7 +20,7 @@ extern void call_8c115bc0(void);
 extern void call_8c02a87c(void);
 extern void call_8c017bd4(void);
 extern void call_8c173778(void);
-extern void base_at(Temporary *,void *);
+extern void TObject_ctor_8c0330e4(Temporary *,void *);
 extern void load_at(void *,unsigned int);
 extern Actor * lookup_at(int);
 extern void move_at(Actor *,void *);
@@ -31,11 +31,11 @@ extern int settings_mode_at(void *);
 extern void copy_at(void *,int);
 extern void load_extra_at(void *,int);
 extern void apply_settings_at(void *);
-extern int current_at(void);
+extern int get_current_area_8c032b10(void);
 extern void select_at(int);
 extern void restore_at(void *);
 extern void finish_at(int);
-extern void destroy_at(Temporary *,int);
+extern void TObject_dtor_8c03311c(Temporary *,int);
 extern unsigned int resource_id;
 extern char resource_data[];
 extern char global_storage[];
@@ -56,12 +56,12 @@ extern void configure_at(int,void *);
 extern int notify_ready_at(void);
 extern void notify_at(void *);
 extern char configuration[];
-void transition_scene_screen(void) {Temporary temporary;call_8c017ba8();call_8c02a798();call_8c1004cc();call_8c05fbdc();base_at(&temporary,0);call_8c041690();call_8c01d9dc();call_8c380516();call_8c380516();
+void transition_scene_screen(void) {Temporary temporary;call_8c017ba8();call_8c02a798();call_8c1004cc();call_8c05fbdc();TObject_ctor_8c0330e4(&temporary,0);call_8c041690();call_8c01d9dc();call_8c380516();call_8c380516();
  {int i;for(i=0;i<12;++i) {Actor *actor=lookup_at(i);if(actor) move_at(actor,&temporary);}}
  prepare_at(global_storage);call_8c01c2b0();call_8c1a18b8();call_8c0405b4();call_8c189c94();call_8c0310a4();call_8c013fc8();
  if(selection_at()) {call_8c09d2bc();configure_at(15,configuration+16);}else {call_8c09d2bc();configure_at(15,configuration);}
  call_8c122ba0();call_8c189d60();restore_at(global_storage);
  {int i;for(i=0;i<12;++i) {Actor *actor=lookup_at(i);if(actor) {move_at(actor,actor_parent);actor->refresh();}}}
- call_8c017bd4();call_8c02a87c();if(notify_ready_at()) notify_at(configuration+31);destroy_at(&temporary,-1);
+ call_8c017bd4();call_8c02a87c();if(notify_ready_at()) notify_at(configuration+31);TObject_dtor_8c03311c(&temporary,-1);
 }
 }

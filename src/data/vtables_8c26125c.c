@@ -5,13 +5,13 @@ typedef void (*VirtualFunction)(void);
 extern void destroy_object_8c01bb30(void);
 extern void fn_8c01b5d0(void);
 extern void operation_8c01bb74(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void fn_8c0179a4(void);
-extern void fn_8c015ad4(void);
-extern void operation_8c0111c8(void);
+extern void TLobby_dtor_8c0179a4(void);
+extern void TLobby_update_8c015ad4(void);
+extern void TObject_render_default_8c0111c8(void);
 extern void destroy_object_8c01c500(void);
-extern void operation_8c0111c4(void);
+extern void TObject_update_default_8c0111c4(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void fn_8c01c544(void);
@@ -24,9 +24,9 @@ extern void operation_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void destroy_shared_object(void);
 extern void reset_shared_object(void);
-extern void fn_8c01fa18(void);
-extern void fn_8c0216f4(void);
-extern void operation_8c021840(void);
+extern void TObjPlayer_dtor_8c01fa18(void);
+extern void TObjPlayer_update_8c0216f4(void);
+extern void TObjPlayer_render_8c021840(void);
 extern void operation_8c02cc08(void);
 extern void fn_8c021164(void);
 extern void word_operation_8c01345c(void);
@@ -120,7 +120,7 @@ VirtualFunction const vt_8c26125c[7] = {
     destroy_object_8c01bb30,
     fn_8c01b5d0,
     operation_8c01bb74,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -128,10 +128,10 @@ VirtualFunction const vt_8c26125c[7] = {
 VirtualFunction const vt_8c261278[7] = {
     0,
     0,
-    fn_8c0179a4,
-    fn_8c015ad4,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TLobby_dtor_8c0179a4,
+    TLobby_update_8c015ad4,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -140,9 +140,9 @@ VirtualFunction const vt_8c261294[17] = {
     0,
     0,
     destroy_object_8c01c500,
-    operation_8c0111c4,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_update_default_8c0111c4,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -161,9 +161,9 @@ VirtualFunction const vt_8c2612d8[16] = {
     0,
     0,
     destroy_shared_object,
-    operation_8c0111c4,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_update_default_8c0111c4,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -180,9 +180,9 @@ VirtualFunction const vt_8c2612d8[16] = {
 VirtualFunction const vt_8c261318[89] = {
     0,
     0,
-    fn_8c01fa18,
-    fn_8c0216f4,
-    operation_8c021840,
+    TObjPlayer_dtor_8c01fa18,
+    TObjPlayer_update_8c0216f4,
+    TObjPlayer_render_8c021840,
     operation_8c02cc08,
     hierarchy_output,
     operation_8c0104fc,
@@ -275,7 +275,7 @@ VirtualFunction const vt_8c26147c[12] = {
     0,
     destroy_object_8c02d110,
     operation_8c02d158,
-    operation_8c0111c8,
+    TObject_render_default_8c0111c8,
     operation_8c02d154,
     release_render_mode_four_8c02d218,
     fn_8c0107c0,

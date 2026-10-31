@@ -38,7 +38,7 @@ typedef struct Payload {
 } Payload;
 
 extern int channel_wait_8c3cdaca(Channel *c);
-extern void *memcpy(void *d, const void *s, unsigned int n);
+extern void *memcpy_8c12b77c(void *d, const void *s, unsigned int n);
 extern void msg_build_8c3c867e(Body *b, int *value);
 extern void msg_sequence_8c3c8692(Msg *m, unsigned int n);
 extern void msg_send_8c3c8474(Msg *m, Body *b, int size);
@@ -47,7 +47,7 @@ int channel_store_8c3cc9f8(void *src, Channel *c, int arg)
 {
     if (c->busy == 1 && channel_wait_8c3cdaca(c) != 0) return -1;
     c->arg = arg;
-    memcpy(((Payload *)c)->data, src, 0x98);
+    memcpy_8c12b77c(((Payload *)c)->data, src, 0x98);
     c->busy = 0;
     return 0;
 }
@@ -67,7 +67,7 @@ l1:
     m.body.zero = 0;
     m.body.x = x;
     msg_build_8c3c867e(&m.body, &m.body.value);
-    memcpy(&m, c, 8);
+    memcpy_8c12b77c(&m, c, 8);
     if (c->seq) msg_sequence_8c3c8692(&m, c->seq * 16);
     msg_send_8c3c8474(&m, &m.body, 0x10);
     c->total += n;

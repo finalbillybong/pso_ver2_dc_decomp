@@ -105,19 +105,19 @@ typedef struct S_c8c122700Data {
 } S_c8c122700Data;
 extern S_g8c44be94 *g_8c44be94;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern "C" S_c8c122700 *allocate_block(void *, unsigned int);
-extern "C" void initialize_actor_mode_state(void *, void *);
+extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern "C" void TObjEnemyCustom_ctor_8c0c2354(void *, void *);
 extern "C" void initialize_context_blend(void *);
 extern "C" void call_8c151bc8(S_c8c122700 *);
-extern "C" S_c8c122700 *operation_8c151eb4(int a0)
+extern "C" S_c8c122700 *TBoss3VoloptP02_create_8c151eb4(int a0)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x52c);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x52c);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;
         (void)home;
-        initialize_actor_mode_state((void *)t1, g_8c44be94);
+        TObjEnemyCustom_ctor_8c0c2354((void *)t1, g_8c44be94);
         *(void **)((char *)self + 0x18) = (void *)(void *)0x8c26e960;
         initialize_context_blend((void *)(((char *)self + 0x4ac)));
         self->v88(a0);

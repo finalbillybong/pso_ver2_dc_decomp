@@ -24,12 +24,12 @@ typedef char check_extra_owner[((unsigned long)&((ExtraEffect *)0)->owner) == 0x
 typedef char check_extra_field_5c[((unsigned long)&((ExtraEffect *)0)->field_5c) == 0x5c ? 1 : -1];
 typedef char check_extra_field_60[((unsigned long)&((ExtraEffect *)0)->field_60) == 0x60 ? 1 : -1];
 typedef char check_extra_id[((unsigned long)&((ExtraEffect *)0)->id) == 0x64 ? 1 : -1];
-#define extra_base_at ((void (*)(ExtraEffect *, int))0x8c0330e4)
+#define TObject_ctor_8c0330e4 ((void (*)(ExtraEffect *, int))0x8c0330e4)
 #define extra_resolve_at ((void (*)(ThreeWords *, FourWords *, unsigned int))0x8c013bd0)
 ExtraEffect *extra_b6394(ExtraEffect *volatile effect, FourWords *a, ThreeWords *b, int duration, Object *owner, int context, float factor)
 {
     FourWords temporary;
-    extra_base_at(effect, context);
+    TObject_ctor_8c0330e4(effect, context);
     effect->vtable = (void *)0x8c2660f8;
     effect->field_28 = *a;
     effect->field_38 = *b;

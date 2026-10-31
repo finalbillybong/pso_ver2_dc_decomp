@@ -20,10 +20,10 @@ struct Object {
     char unknown34[0x18];
     int f4c;
 };
-extern void initialize_hierarchy_node(Object *, int);
+extern void TObject_ctor_8c0330e4(Object *, int);
 Object *operation_8c1c72fc(Object *o, int a1, int a2, int a3)
 {
-    initialize_hierarchy_node(o, a1);
+    TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c2767fc;
     o->tag = *(int *)0x8c328e88;
     o->size = 0x50;

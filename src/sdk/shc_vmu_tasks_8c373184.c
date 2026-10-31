@@ -28,7 +28,7 @@ extern void wrap_8c3737a2(void);
 extern int wrap_open_8c373764(void);
 extern void wrap_call3_8c37377a(void (*)(void), char *, int);
 extern int wrap_8c373792(void);
-extern void *memset(void *, int, unsigned int);
+extern void *memset_8c12b880(void *, int, unsigned int);
 extern char g_stack0_8c564d80[];
 extern char g_stack1_8c565180[];
 extern char g_stack2_8c565580[];
@@ -77,15 +77,15 @@ int tasks_start_8c373184(int mask)
     g_results_8c564960[5] = 0;
     g_results_8c564960[6] = 0;
     g_results_8c564960[7] = 0;
-    memset(g_reqs_8c564980, 0, 0x400);
-    memset(g_stack0_8c564d80, '0', 0x400);
-    memset(g_stack1_8c565180, '1', 0x400);
-    memset(g_stack2_8c565580, '2', 0x400);
-    memset(g_stack3_8c565980, '3', 0x400);
-    memset(g_stack4_8c565d80, '4', 0x400);
-    memset(g_stack5_8c566180, '5', 0x400);
-    memset(g_stack6_8c566580, '6', 0x400);
-    memset(g_stack7_8c566980, '7', 0x400);
+    memset_8c12b880(g_reqs_8c564980, 0, 0x400);
+    memset_8c12b880(g_stack0_8c564d80, '0', 0x400);
+    memset_8c12b880(g_stack1_8c565180, '1', 0x400);
+    memset_8c12b880(g_stack2_8c565580, '2', 0x400);
+    memset_8c12b880(g_stack3_8c565980, '3', 0x400);
+    memset_8c12b880(g_stack4_8c565d80, '4', 0x400);
+    memset_8c12b880(g_stack5_8c566180, '5', 0x400);
+    memset_8c12b880(g_stack6_8c566580, '6', 0x400);
+    memset_8c12b880(g_stack7_8c566980, '7', 0x400);
     if (wrap_open_8c373764() == 0) return -1;
     if (mask & 0x01) wrap_call3_8c37377a(task0_8c3732c8, g_stack0_8c564d80, 0x400);
     if (mask & 0x02) wrap_call3_8c37377a(task1_8c3732cc, g_stack1_8c565180, 0x400);
@@ -100,7 +100,7 @@ int tasks_start_8c373184(int mask)
 
 int tasks_reset_8c3732b0(void)
 {
-    memset(g_reqs_8c564980, 0, 0x400);
+    memset_8c12b880(g_reqs_8c564980, 0, 0x400);
     return 0;
 }
 

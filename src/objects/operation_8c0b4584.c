@@ -53,7 +53,7 @@ struct Frame {
     int f0c;
 };
 extern char g_8c285528[];
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern S_c8c011290 *operation_8c011290(int, int);
 extern int create_effect_7708(void *, int, int);
 Object *operation_8c0b4584(Object *o, Arg1 *a1, int a2, int a3)
@@ -69,7 +69,7 @@ Object *operation_8c0b4584(Object *o, Arg1 *a1, int a2, int a3)
     int t2;
     int t3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a3);
+    TObject_ctor_8c0330e4((void *)o, (void *)a3);
     o->dispatch = (void *)0x8c266008;
     *(Vector3 *)&o->f2c = *(Vector3 *)&a1->f00;
     t1 = operation_8c011290((int)(&o->f2c), 0x100);

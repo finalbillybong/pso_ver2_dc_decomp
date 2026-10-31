@@ -14,14 +14,14 @@ struct S_c8c122700 {
     int f28;
     float f2c;
 };
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
 S_c8c122700 *operation_8c099cb0(int a0)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
     if (t1 != 0) {
-        initialize_hierarchy_node((void *)t1, (void *)a0);
+        TObject_ctor_8c0330e4((void *)t1, (void *)a0);
         t1->f18 = (void *)0x8c26574c;
         t1->f20 = (int)(*(int *)0x8c460900);
         t1->f24 = 0;

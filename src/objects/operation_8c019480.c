@@ -50,8 +50,8 @@ extern void operation_8c1cdc30(void *);
 extern int create_fitted_pair_grid_view(void *, void *);
 extern void operation_8c0dc610(void *, float);
 extern void operation_8c119764(int, int, int);
-extern void call_8c12b880(void *, int, int);
-extern void call_8c12b154(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
+extern void strncpy_8c12b154(void *, int, int);
 void operation_8c019480(int a0, int a1, int a2)
 {
     Frame frame;
@@ -113,7 +113,7 @@ void operation_8c019480(int a0, int a1, int a2)
     }
     t5 = call_8c12b114((int)(a2 + 0xa), (void *)((g_8c2e3014 + 0xcb)), 5);
     if (t5 != 0) {
-        call_8c12b880((void *)((void *)0x8c41c634), 0, 0x11);
-        call_8c12b154((void *)((void *)0x8c41c634), (int)(a2 + 0xa), 0x10);
+        memset_8c12b880((void *)((void *)0x8c41c634), 0, 0x11);
+        strncpy_8c12b154((void *)((void *)0x8c41c634), (int)(a2 + 0xa), 0x10);
     }
 }

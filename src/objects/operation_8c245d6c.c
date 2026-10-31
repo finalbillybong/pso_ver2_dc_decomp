@@ -33,14 +33,14 @@ struct Frame {
     float f04;
     float f08;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c38ad50(int, void *, void *);
 Object *operation_8c245d6c(Object *o, Arg1 *a1, Arg2 *a2, int a3)
 {
     Frame frame;
     Object **home = &o;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a3);
+    TObject_ctor_8c0330e4((void *)o, (void *)a3);
     o->dispatch = (void *)0x8c27cee4;
     o->tag = (int)(*(int *)0x8c33aea8);
     o->size = 0x50;

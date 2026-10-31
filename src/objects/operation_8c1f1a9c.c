@@ -24,7 +24,7 @@ struct Object {
 };
 extern int call_8c1dc920(int);
 extern void operation_8c1dc7fc(int);
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_base_8c0db1d0(void *, int);
 extern void operation_8c0dc854(void *);
 extern void call_8c1f1c28(void *, int);
@@ -41,7 +41,7 @@ S_c8c122700 *operation_8c1f1a9c(Object *o)
     if (t1 != 0) {
         operation_8c1dc7fc((int)(v1));
     }
-    t2 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x6c);
+    t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x6c);
     if (t2 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t2;
         S_c8c122700 **home = &self;

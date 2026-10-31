@@ -59,7 +59,7 @@ extern "C" int operation_8c0eea7c(int, float);
 extern "C" void operation_8c027090(int);
 extern "C" void call_8c0a6a10(int);
 extern "C" int hierarchy_is_active(void *);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_loader_8c173578(void *, void *, int);
 extern "C" void reparent_hierarchy_node(void *, void *);
 extern "C" void reset_effect_table_state(void);
@@ -121,7 +121,7 @@ L_8c0f1298:;
                                 if (v34 != 0) {
                                     t4 = hierarchy_is_active((void *)v34);
                                     if (t4 != 0) {
-                                        t5 = allocate_block(g_8c4d97e0, (unsigned int)0xa8);
+                                        t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xa8);
                                         if (t5 != 0) {
                                             initialize_loader_8c173578((void *)t5, g_8c4db520, (int)(((ObjectData *)o)->f110));
                                         }
@@ -142,7 +142,7 @@ L_8c0f1298:;
                             if (t6 == 0) {
                                 goto L_8c0f13c2;
                             }
-                            t7 = allocate_block(g_8c4d97e0, (unsigned int)0xa8);
+                            t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xa8);
                             if (t7 != 0) {
                                 initialize_loader_8c173578((void *)t7, g_8c4db524, (int)(((ObjectData *)o)->f110));
                             }

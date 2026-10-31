@@ -88,7 +88,7 @@ extern int g_configured_8c32c544;
 extern Device g_device_8c4fa588;
 extern void lock_8c1fbeb6();
 extern void unlock_8c1fbec6();
-extern void *memcpy(void *, const void *, unsigned long);
+extern void *memcpy_8c12b77c(void *, const void *, unsigned long);
 extern void deliver_8c1fe4ec();
 extern int configure_8c1fdd66();
 extern int send_8c1fdeba();
@@ -103,7 +103,7 @@ short size;
     lock_8c1fbeb6();
     if (g_link_state_8c32c530 == 4) {
         frame->data = g_frame_buffer_8c4fa8c4;
-        memcpy(g_frame_buffer_8c4fa8c4, data + 14, size - 14);
+        memcpy_8c12b77c(g_frame_buffer_8c4fa8c4, data + 14, size - 14);
         frame->size = size - 14;
         deliver_8c1fe4ec(frame);
     }

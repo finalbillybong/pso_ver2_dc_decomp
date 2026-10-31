@@ -22,7 +22,7 @@ static inline void set_slot_8c510c10(unsigned short i, int v)
     }
     *(int *)((char *)0x8c510c10 + (i << 2)) = v;
 }
-void operation_8c242210(Object *o)
+void handle_6x78_8c242210(Object *o)
 {
     unsigned short id = o->f04;
     if (get_slot_8c510c10(id) != 0) {

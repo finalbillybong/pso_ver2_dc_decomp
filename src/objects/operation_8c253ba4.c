@@ -18,10 +18,10 @@ struct Object {
 struct Arg1 {
     Vector3 f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c253ba4(Object *o, Arg1 *a1, int a2)
 {
-    initialize_hierarchy_node((void *)o, (void *)a2);
+    TObject_ctor_8c0330e4((void *)o, (void *)a2);
     o->dispatch = (void *)0x8c280260;
     o->f20 = a1->f00;
     o->f2c = 1.0f;

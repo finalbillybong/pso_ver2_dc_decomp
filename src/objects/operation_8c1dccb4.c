@@ -34,7 +34,7 @@ struct Arg0_28 {
     int f68;
 };
 extern void call_8c0dc854(Arg0_24 *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c1de120(void *, int);
 extern void operation_8c1e22ec(void *);
 extern void call_8c210b5c(int, Object *, void *);
@@ -64,7 +64,7 @@ void operation_8c1dccb4(Object *o)
         return;
     }
     o->f38->f00 = 1;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x74);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x74);
     if (t1 != 0) {
         operation_8c1de120((void *)t1, (int)(o->f24));
     }
@@ -80,7 +80,7 @@ void operation_8c1dccb4(Object *o)
 L_8c1dcd6c:;
     operation_8c1e22ec((void *)(o->f24));
     o->f38->f00 = 2;
-    t2 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x108);
+    t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x108);
     if (t2 != 0) {
         call_8c210b5c(t2, o, (void *)(((char *)o->f38 + 0x4)));
     }
@@ -89,7 +89,7 @@ L_8c1dcd6c:;
 L_8c1dcd9a:;
     operation_8c1e22ec((void *)(o->f24));
     o->f38->f00 = 3;
-    t3 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x28);
+    t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x28);
     if (t3 != 0) {
         call_8c1bfe90(t3, o);
     }

@@ -33,7 +33,7 @@ struct Arg2 {
 extern void call_8c073288(int);
 extern S_c8c1c7658 *call_8c1c7658(int);
 extern int operation_8c1c74dc(void *);
-Object *operation_8c0e71c8(Object *o, int a1, Arg2 *a2)
+Object *TItemObject_ctor_8c0e71c8(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     S_c8c1c7658 *t1;

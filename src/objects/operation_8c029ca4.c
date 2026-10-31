@@ -13,7 +13,7 @@ struct Object {
     Block8 f04;
 };
 extern void call_8c029e24(int, int, Block8);
-void operation_8c029ca4(Object *o)
+void handle_6x0D_remove_status_effect_8c029ca4(Object *o)
 {
     int v3;
     int v6;

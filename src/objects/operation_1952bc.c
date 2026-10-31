@@ -2,7 +2,7 @@
 #include "src/include/widget_confirmation.h"
 #define check_at ((int (*)(int,unsigned int))0x8c1924c0)
 #define send_at ((void (*)(WidgetConfirmPacket *))0x8c0368a8)
-void operation_1952bc(WidgetConfirmOwner *o){
+void handle_6x5A_request_to_pick_up_item_8c1952bc(WidgetConfirmOwner *o){
     if(check_at(o->field08,o->field04)){
         WidgetConfirmPacket p;
         p.field04=0xffff;

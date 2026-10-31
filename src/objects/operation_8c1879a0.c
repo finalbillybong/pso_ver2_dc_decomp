@@ -24,7 +24,7 @@ extern int g_8c4dbc28;
 extern int g_8c4dc5a0;
 extern int g_8c510ba0;
 extern char g_8c319c2c[];
-extern void call_8c1a80d4(void *);
+extern void gsl_open_archive_8c1a80d4(void *);
 extern int call_8c104e9c(void *);
 extern void call_8c03ef04(void *, void *, void *);
 extern void operation_8c1a81a0(void);
@@ -65,7 +65,7 @@ void operation_8c1879a0(void)
             v6 = (int)(&frame)->f00.f00;
         }
     }
-    call_8c1a80d4((void *)((g_8c319c2c + 0x86)));
+    gsl_open_archive_8c1a80d4((void *)((g_8c319c2c + 0x86)));
     switch (v4) {
     case 0:
         t1 = call_8c104e9c((void *)((g_8c319c2c + 0x9a)));

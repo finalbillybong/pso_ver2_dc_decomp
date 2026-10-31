@@ -4,7 +4,7 @@ typedef char check_layout[sizeof(Descriptor)==40 && sizeof(Quad)==16 && (unsigne
 extern Descriptor descriptors[];
 extern void *instances[], *resources[], *heap, *parent;
 extern Quad quads[];
-extern void *allocate_at(void *,unsigned int);
+extern void *heap_alloc_8c122700(void *,unsigned int);
 extern void initialize0_at(void *,void *,Descriptor *),initialize1_at(void *,void *,Descriptor *),initialize2_at(void *,void *,Descriptor *),initialize3_at(void *,void *,Descriptor *),initialize4_at(void *,void *,Descriptor *),append_at(void *,void *);
 void create_descriptor_managers(void) {
     Descriptor *descriptor;
@@ -14,23 +14,23 @@ void create_descriptor_managers(void) {
         descriptor=(Descriptor *)((char *)descriptors+i*40);
         switch (*(unsigned int *)((char *)&descriptors->kind+i*40)) {
         case 0:
-            object=allocate_at(heap,48);
+            object=heap_alloc_8c122700(heap,48);
             if(object) initialize0_at(object,parent,descriptor);
             break;
         case 1:
-            object=allocate_at(heap,48);
+            object=heap_alloc_8c122700(heap,48);
             if(object) initialize1_at(object,parent,descriptor);
             break;
         case 2:
-            object=allocate_at(heap,48);
+            object=heap_alloc_8c122700(heap,48);
             if(object) initialize2_at(object,parent,descriptor);
             break;
         case 3:
-            object=allocate_at(heap,48);
+            object=heap_alloc_8c122700(heap,48);
             if(object) initialize3_at(object,parent,descriptor);
             break;
         case 4:
-            object=allocate_at(heap,48);
+            object=heap_alloc_8c122700(heap,48);
             if(object) initialize4_at(object,parent,descriptor);
             break;
         }

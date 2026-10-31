@@ -42,7 +42,7 @@ extern "C" void operation_8c011ef0(void *, ...);
 extern "C" void call_8c036b4c(S_vv2 *);
 extern "C" void operation_8c09caac(void *);
 extern "C" void set_field_8c09ca50(void *);
-extern "C" void operation_8c036ac8(Object *o)
+extern "C" void TGameProtocol_update_8c036ac8(Object *o)
 {
     int v1;
     S_vv2 *v2;

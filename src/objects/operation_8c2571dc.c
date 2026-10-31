@@ -32,7 +32,7 @@ struct S_vv12 {
     short f02;
 };
 extern int g_8c33ffb4;
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c18e8a0(int, int);
 typedef struct Pair { short a; short b; } Pair;
 Object *operation_8c2571dc(Object *o, int a1, Pair *a2)
@@ -41,7 +41,7 @@ Object *operation_8c2571dc(Object *o, int a1, Pair *a2)
     int v1;
     int v10;
     int v11;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c28186c;
     o->tag = (int)(g_8c33ffb4);
     o->size = 0xa4;

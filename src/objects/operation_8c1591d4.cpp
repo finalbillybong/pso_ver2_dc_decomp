@@ -20,12 +20,12 @@ typedef struct S_c8c1736acData {
 
 } S_c8c1736acData;
 extern S_L8c4daae0 g_8c4daae0;
-extern "C" S_c8c1736ac *create_loader_8c1736ac(int);
+extern "C" S_c8c1736ac *TQuestThread_ctor_3_8c1736ac(int);
 extern "C" void operation_8c1591d4(void)
 {
     S_c8c1736ac *t1;
     if ((int)((&g_8c4daae0)->f0c) != -1) {
-        t1 = create_loader_8c1736ac((int)((&g_8c4daae0)->f0c));
+        t1 = TQuestThread_ctor_3_8c1736ac((int)((&g_8c4daae0)->f0c));
         if (t1 != 0) {
             t1->v1();
         }

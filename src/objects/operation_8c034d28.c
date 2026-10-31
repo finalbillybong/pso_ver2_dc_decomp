@@ -40,7 +40,7 @@ struct Arg2 {
     int f00;
 };
 extern char g_8c2f5b38[];
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern void call_8c034b20(Object *, Arg3 *, S_vv28 *, void *);
 void operation_8c034d28(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3)
 {
@@ -54,7 +54,7 @@ void operation_8c034d28(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3)
             v5 = (int)a3->f31;
             goto L_8c034d9a;
         }
-        t1 = operation_8c01c25c();
+        t1 = get_game_mode_8c01c25c();
         if (t1 != 0x10) {
             v5 = (int)a3->f31;
         } else {

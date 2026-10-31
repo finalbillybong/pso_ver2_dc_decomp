@@ -25,7 +25,7 @@ struct Arg1 {
     unsigned char f01;
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c030358(Object *o, Arg1 *a1)
+extern "C" void handle_cmd_9C_register_result_8c030358(Object *o, Arg1 *a1)
 {
     char *v21;
     o->v4((g_8c2e7ce0 + 0x6f4));

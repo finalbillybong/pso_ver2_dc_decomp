@@ -107,7 +107,7 @@ extern "C" void operation_8c1cd734(void *, int, void *, int);
 extern "C" void operation_8c1cdc30(void *);
 extern "C" void operation_8c1cd440(void *, int);
 extern "C" void operation_8c19a044(void *, int);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c1d5b24(void *);
 extern "C" void operation_8c1d5eb8(void *, int);
 extern "C" int operation_8c1cdc80(void *);
@@ -186,7 +186,7 @@ extern "C" void operation_8c106a6c(Object *o)
         }
     }
     if (o->f3a0 == 0) {
-        t6 = allocate_block(g_8c4d97e0, (unsigned int)0xb8);
+        t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xb8);
         if (t6 != 0) {
             operation_8c1d5b24((void *)t6);
         }
@@ -199,7 +199,7 @@ extern "C" void operation_8c106a6c(Object *o)
         }
     }
     if (o->f39c == 0) {
-        t8 = allocate_block(g_8c4d97e0, (unsigned int)0x6c);
+        t8 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x6c);
         if (t8 != 0) {
             operation_8c1ca088((void *)t8);
         }

@@ -3,7 +3,7 @@ typedef struct Manager {
     void *dispatch;
 } Manager;
 extern Manager *audio_manager;
-extern void initialize_hierarchy_node(Manager *);
+extern void TObject_ctor_8c0330e4(Manager *);
 extern void load_manager_8c014fcc(Manager *);
 extern void reset_manager_8c014fe4(Manager *);
 extern void bind_manager_8c015004(Manager *);
@@ -13,7 +13,7 @@ Manager *initialize_audio_manager_8c014f74(Manager *o)
     (void)home;
     {
         Manager *base = o;
-        initialize_hierarchy_node(base);
+        TObject_ctor_8c0330e4(base);
         base->dispatch = (void *)0x8c261240;
     }
     o->dispatch = (void *)0x8c26117c;

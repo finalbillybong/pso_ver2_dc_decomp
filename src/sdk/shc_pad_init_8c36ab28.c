@@ -36,7 +36,7 @@ extern unsigned char g_llatch_8c55fb1a[24];
 extern unsigned char g_hi_8c55fb00;
 extern unsigned char g_lo_8c55fb01;
 extern char str_8c3f6d64[];
-extern void *memset(void *, int, unsigned int);
+extern void *memset_8c12b880(void *, int, unsigned int);
 extern void open_8c36ed24(int, int);
 extern void open_8c36ed7e(int, int, int, int);
 extern int func_8c36f2be(int);
@@ -50,7 +50,7 @@ void pad_init_8c36ab28(int mode, int a, int b)
     g_open_8c55f5b4 = 0;
     g_ready_8c55f5b0 = 1;
     g_count_8c55f5b8 = 0;
-    memset(g_chans_8c55f5bc, 0, sizeof(g_chans_8c55f5bc));
+    memset_8c12b880(g_chans_8c55f5bc, 0, sizeof(g_chans_8c55f5bc));
     if (b && a) {
         g_open_8c55f5b4 = 1;
         open_8c36ed24(a, b);
@@ -73,7 +73,7 @@ void pad_init2_8c36ac00(int mode, int a, int b, int c, int d)
     g_open_8c55f5b4 = 0;
     g_ready_8c55f5b0 = 1;
     g_count_8c55f5b8 = 0;
-    memset(g_chans_8c55f5bc, 0, sizeof(g_chans_8c55f5bc));
+    memset_8c12b880(g_chans_8c55f5bc, 0, sizeof(g_chans_8c55f5bc));
     if (c && b) {
         g_open_8c55f5b4 = 1;
         open_8c36ed7e(a, b, c, d);

@@ -13,7 +13,7 @@ struct Object {
     Arg0_28 *f28;
 };
 extern void clear_emit_slot(int);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c0b68a0(Object *o, int a1)
 {
@@ -22,7 +22,7 @@ Object *operation_8c0b68a0(Object *o, int a1)
         if ((int)(o->f28) >= 0) {
             clear_emit_slot((int)(o->f28));
         }
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), o);
         }

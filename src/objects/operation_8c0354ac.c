@@ -9,9 +9,9 @@ struct S_L8c461ac8 {
     char f0c;
 };
 extern S_L8c461ac8 g_8c461ac8;
-extern void call_8c12b154(void *, int, int);
+extern void strncpy_8c12b154(void *, int, int);
 void operation_8c0354ac(int a0)
 {
-    call_8c12b154((void *)((void *)&g_8c461ac8), a0, 0xc);
+    strncpy_8c12b154((void *)((void *)&g_8c461ac8), a0, 0xc);
     (&g_8c461ac8)->f0c = 0;
 }

@@ -143,7 +143,7 @@ struct Arg2 {
 };
 extern int g_8c30a268;
 extern int g_8c46ed10;
-extern "C" void operation_8c012008(void *);
+extern "C" void TObjEnemy_ctor_8c012008(void *);
 extern "C" void attach_and_insert_object(void *);
 extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c0f7f70(int);
@@ -156,7 +156,7 @@ extern "C" Object *operation_8c0f7c7c(Object *o, int a1, Arg2 *a2)
     int t1;
     int k;
     (void)home;
-    operation_8c012008((void *)o);
+    TObjEnemy_ctor_8c012008((void *)o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c268e94;
     ((ObjectData *)o)->tag = (int)(g_8c30a268);
     ((ObjectData *)o)->size = 0x3f4;

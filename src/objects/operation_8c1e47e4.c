@@ -22,12 +22,12 @@ extern int g_8c32b6c0;
 extern int g_8c32b6c4;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4e30c4 *g_8c4e30c4;
-extern S_c8c122700 *allocate_block(void *, unsigned int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c1e4024(S_c8c122700 *, int);
-S_c8c122700 *operation_8c1e47e4(int a0)
+S_c8c122700 *TOContainerAncientItemNone_create_8c1e47e4(int a0)
 {
     S_c8c122700 *t1;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x384);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x384);
     if (t1 != 0) {
         call_8c1e4024(t1, a0);
         t1->f18 = (void *)0x8c277a60;

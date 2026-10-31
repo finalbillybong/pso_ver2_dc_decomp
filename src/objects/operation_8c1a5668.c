@@ -19,7 +19,7 @@ struct S_vv1 {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void call_8c37d534(void *);
-extern void destroy_hierarchy_node(void *, short);
+extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1a5668(Object *o, int a1)
 {
@@ -32,7 +32,7 @@ Object *operation_8c1a5668(Object *o, int a1)
             o->f274 = (Arg0_274 *)0;
         }
         call_8c37d534((void *)((void *)0x8c31ddfc));
-        destroy_hierarchy_node((void *)o, (short)0);
+        TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

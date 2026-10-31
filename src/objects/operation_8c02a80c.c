@@ -14,7 +14,7 @@ struct S_vv4 {
     int f350;
 };
 extern void operation_8c02afd8(void *);
-void operation_8c02a80c(Object *o)
+void handle_6x22_set_player_invisible_8c02a80c(Object *o)
 {
     int v1;
     S_vv4 *v4;

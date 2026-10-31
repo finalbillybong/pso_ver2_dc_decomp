@@ -19,14 +19,14 @@ struct S_L8c2e3258 {
 extern int g_8c418244;
 extern S_L8c2e3258 g_8c2e3258;
 extern S_L8c41cb00 g_8c41cb00;
-extern void operation_8c01bc98(void);
-extern void shutdown_game_8c01c054(void);
-void operation_8c01bbec(void)
+extern void game_init_8c01bc98(void);
+extern void game_shutdown_8c01c054(void);
+void game_main_8c01bbec(void)
 {
     char *v6;
     char *v3;
     char *v7;
-    operation_8c01bc98();
+    game_init_8c01bc98();
     while ((&g_8c41cb00)->f00 != 0) {
         (&g_8c41cb00)->f10 = 0;
         v6 = (char *)*(int *)((char *)&g_8c2e3258 + ((&g_8c41cb00)->f00 * 0xc));
@@ -49,7 +49,7 @@ void operation_8c01bbec(void)
             (&g_8c41cb00)->f00 = (int)((&g_8c41cb00)->f04);
         }
     }
-    shutdown_game_8c01c054();
+    game_shutdown_8c01c054();
     for (;;) {
     }
 }

@@ -58,7 +58,7 @@ public:
 typedef struct Arg1Data {
 
 } Arg1Data;
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c0b6750(void *, void *, int, int, int);
 extern "C" void operation_8c0ac284(Object *o, Arg1 *a1)
 {
@@ -67,7 +67,7 @@ extern "C" void operation_8c0ac284(Object *o, Arg1 *a1)
     (&frame)->f00.f00 = 8;
     (&frame)->f00.f04 = o->f90;
     a1->v25(o->f20, 0, *(Block8 *)&(&frame)->f00);
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x34);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x34);
     if (t1 != 0) {
         operation_8c0b6750((void *)t1, (void *)(((char *)a1 + 0x3c)), 0x2d, 0x20013, (int)(*(S_g8c44bea0 **)0x8c44bea0));
     }

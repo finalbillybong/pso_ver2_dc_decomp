@@ -16,7 +16,7 @@ struct S_c8c021ef8 {
     float f518;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c03b374(Object *o)
+void handle_6x87_shrink_player_8c03b374(Object *o)
 {
     S_c8c021ef8 *t1;
     float v1;

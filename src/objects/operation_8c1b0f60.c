@@ -19,7 +19,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern void mark_effect_for_release(void *);
 extern void operation_8c161c38(int);
 extern void operation_8c052124(void *);
-extern void operation_8c0120f4(void *, int);
+extern void TObjEnemy_dtor_8c0120f4(void *, int);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1b0f60(Object *o, int a1)
 {
@@ -42,7 +42,7 @@ Object *operation_8c1b0f60(Object *o, int a1)
         o->f44c = (Arg0_44c *)0;
         operation_8c052124((void *)o);
         o->f39c = 0;
-        operation_8c0120f4((void *)o, 0);
+        TObjEnemy_dtor_8c0120f4((void *)o, 0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

@@ -76,7 +76,7 @@ public:
 typedef struct S_vv7Data {
 
 } S_vv7Data;
-extern "C" void operation_8c029c60(Object *o)
+extern "C" void handle_6x0E_clear_all_negative_status_effects_8c029c60(Object *o)
 {
     int v1;
     int v4;

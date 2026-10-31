@@ -16,10 +16,10 @@ extern int g_8c4e2f80;
 extern int g_8c4e2f84;
 extern int g_8c4e2f88;
 extern Object *g_8c4e2f8c;
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c1dbb54(Object *o, int a1)
 {
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c277318;
     o->tag = (int)(g_8c32ae50);
     o->size = 0x20;

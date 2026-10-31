@@ -44,7 +44,7 @@ extern Slot g_slots_8c566da0[];
 extern int g_blocks_a_8c3fbe34[];
 extern int g_blocks_b_8c3fbe44[];
 extern Port g_ports_8c56b800[];
-extern void *memset(void *, int, unsigned long);
+extern void *memset_8c12b880(void *, int, unsigned long);
 extern void reset_streams_8c3737d8(void);
 
 int stream_open_8c3740d0(int index, char *buffer, int size)
@@ -95,12 +95,12 @@ calc:
     s->blocks_a = a;
     s->blocks_b = b;
     s->header = 0x20;
-    memset(s->state, 0, 0x10);
-    memset(s->table, 0, 0x100);
-    memset(s->region_g, 'G', 0x20);
-    memset(s->region_s, 'S', 0x20);
-    memset(s->region_f, 'F', 0x20);
-    memset(s->region_d, 'D', 0x20);
+    memset_8c12b880(s->state, 0, 0x10);
+    memset_8c12b880(s->table, 0, 0x100);
+    memset_8c12b880(s->region_g, 'G', 0x20);
+    memset_8c12b880(s->region_s, 'S', 0x20);
+    memset_8c12b880(s->region_f, 'F', 0x20);
+    memset_8c12b880(s->region_d, 'D', 0x20);
     s->port->current = s->port->start;
     s->ready = 1;
     s->active = 1;
@@ -109,7 +109,7 @@ calc:
 
 int stream_reset_8c3741d8(void)
 {
-    memset(g_slots_8c566da0, 0, 0xa40);
+    memset_8c12b880(g_slots_8c566da0, 0, 0xa40);
     reset_streams_8c3737d8();
     return 0;
 }

@@ -17,7 +17,7 @@ struct Object {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_8c052124(void *);
 extern void mark_effect_for_release(void *);
-extern void operation_8c0120f4(void *, int);
+extern void TObjEnemy_dtor_8c0120f4(void *, int);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1bc008(Object *o, int a1)
 {
@@ -31,7 +31,7 @@ Object *operation_8c1bc008(Object *o, int a1)
                 mark_effect_for_release((void *)(o->f3d0));
                 o->f3d0 = (Arg0_3d0 *)0;
             }
-            operation_8c0120f4((void *)o, 0);
+            TObjEnemy_dtor_8c0120f4((void *)o, 0);
         }
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);

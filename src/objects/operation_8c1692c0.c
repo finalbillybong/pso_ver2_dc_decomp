@@ -7,7 +7,7 @@ typedef struct Frame Frame;
 struct Frame {
     char unknown0[0x20];
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern int lookup_low_id(int);
 extern int call_8c168164(Frame *, int);
 int operation_8c1692c0(void)
@@ -18,7 +18,7 @@ int operation_8c1692c0(void)
     int t1;
     int v1;
     int t3;
-    t2 = current_effect_mode();
+    t2 = get_current_area_8c032b10();
     v1 = (int)0x37c;
     v2 = (int)0;
     while (4 > v2) {

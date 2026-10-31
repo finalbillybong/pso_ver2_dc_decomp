@@ -1,8 +1,8 @@
 /* Provisional address-based name; preserve observed flag-table behavior. */
 #include "src/include/flag_object.h"
-#define construct_at ((void (*)(FlagObject *,void *))0x8c0330e4)
+#define TObject_ctor_8c0330e4 ((void (*)(FlagObject *,void *))0x8c0330e4)
 FlagObject *operation_03cf18(FlagObject *object,void *parent){
-    construct_at(object,parent);
+    TObject_ctor_8c0330e4(object,parent);
     object->dispatch=(void *)0x8c261b80;
     object->tag=*(unsigned int *)0x8c2ef020;
     object->size=44;

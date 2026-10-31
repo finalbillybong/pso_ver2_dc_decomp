@@ -68,7 +68,7 @@ struct Arg0_20 {
     unsigned short f20;
 };
 extern "C" void operation_8c0ddb44(short, short, int);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void call_8c0ac7fc(int, void *, void *, short, void *);
 extern "C" int create_effect(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
@@ -90,7 +90,7 @@ extern "C" void operation_8c0ac6c4(Object *o, Arg1 *a1)
             if (o->fc8 == 0) {
                 goto L_8c0ac78e;
             }
-            t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x4c);
+            t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x4c);
             if (t1 == 0) {
                 goto L_8c0ac78e;
             }
@@ -105,7 +105,7 @@ extern "C" void operation_8c0ac6c4(Object *o, Arg1 *a1)
         }
 L_8c0ac78e:;
         if (o->fc8 != 0) {
-            t3 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x34);
+            t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x34);
             if (t3 != 0) {
                 operation_8c0b6750((void *)t3, (void *)(((char *)a1 + 0x324)), 0xf, 0x20011, (int)(*(S_g8c44bea0 **)0x8c44bea0));
             }

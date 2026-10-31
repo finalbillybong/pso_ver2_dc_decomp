@@ -13,7 +13,7 @@ struct S_vv12 {
 extern S_g8c44bea0 *g_8c44bea0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int lookup_low_id(int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c242354(void *, short, int);
 void operation_8c242054(Object *o)
 {
@@ -49,7 +49,7 @@ void operation_8c242054(Object *o)
             if (v14 != 0) {
                 int t3;
                 v14 = (int)v14;
-                t3 = allocate_block(g_8c4d97e0, (unsigned int)0x28);
+                t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x28);
                 if (0 != t3) {
                     v12 = (S_vv12 *)(v14 + 0x20);
                     v14 = (int)v12;

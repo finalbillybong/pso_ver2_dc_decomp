@@ -123,7 +123,7 @@ extern Vector3 g_8c304fb0;
 extern S_g8c44bea0 *g_8c44bea0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern char g_8c418280[];
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c0b6448(void *, void *, void *, int, int, int, float, float, float);
 extern void initialize_timed_owner_effect_8c132ec4(void *, void *, void *);
 extern void initialize_timed_owner_effect_8c133000(void *, void *, void *);
@@ -177,7 +177,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
     case 1:
         *(Block16 *)&(&frame)->fec = *(Block16 *)&g_8c304ec0;
         *(Vector3 *)&(&frame)->fe0 = *(Vector3 *)&g_8c304ed0;
-        t1 = allocate_block(g_8c4d97e0, (unsigned int)0x68);
+        t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
         if (t1 != 0) {
             v1 = (int)v85;
             operation_8c0b6448((void *)t1, (void *)(&(&frame)->fec.f00), (void *)(&(&frame)->fe0.f00), v1, (int)a1, (int)g_8c44bea0, 0.1f, 0.35f, *(float *)(g_8c418280 + 0x1c));
@@ -186,7 +186,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
         if (v5 == 0) {
             return;
         }
-        t2 = allocate_block(g_8c4d97e0, (unsigned int)0x38);
+        t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x38);
         if (t2 == 0) {
             return;
         }
@@ -196,7 +196,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
     case 2:
         *(Block16 *)&(&frame)->fd0 = *(Block16 *)&g_8c304edc;
         *(Vector3 *)&(&frame)->fc4 = *(Vector3 *)&g_8c304eec;
-        t3 = allocate_block(g_8c4d97e0, (unsigned int)0x68);
+        t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
         if (t3 != 0) {
             v6 = (int)v85;
             operation_8c0b6448((void *)t3, (void *)(&(&frame)->fd0.f00), (void *)(&(&frame)->fc4.f00), v6, (int)a1, (int)g_8c44bea0, 0.1f, 0.35f, *(float *)(g_8c418280 + 0x1c));
@@ -205,7 +205,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
         if (v10 == 0) {
             return;
         }
-        t4 = allocate_block(g_8c4d97e0, (unsigned int)0x38);
+        t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x38);
         if (t4 == 0) {
             return;
         }
@@ -215,7 +215,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
     case 4:
         *(Block16 *)&(&frame)->fb4 = *(Block16 *)&g_8c304ef8;
         *(Vector3 *)&(&frame)->fa8 = *(Vector3 *)&g_8c304f08;
-        t5 = allocate_block(g_8c4d97e0, (unsigned int)0x68);
+        t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
         if (t5 != 0) {
             v11 = (int)v85;
             operation_8c0b6448((void *)t5, (void *)(&(&frame)->fb4.f00), (void *)(&(&frame)->fa8.f00), v11, (int)a1, (int)g_8c44bea0, 0.1f, 0.35f, *(float *)(g_8c418280 + 0x1c));
@@ -224,7 +224,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
         if (v15 == 0) {
             return;
         }
-        t6 = allocate_block(g_8c4d97e0, (unsigned int)0x38);
+        t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x38);
         if (t6 == 0) {
             return;
         }
@@ -233,7 +233,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
     case 5:
         *(Block16 *)&(&frame)->f98 = *(Block16 *)&g_8c304f14;
         *(Vector3 *)&(&frame)->f8c = *(Vector3 *)&g_8c304f24;
-        t7 = allocate_block(g_8c4d97e0, (unsigned int)0x68);
+        t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
         if (t7 != 0) {
             v16 = (int)v85;
             operation_8c0b6448((void *)t7, (void *)(&(&frame)->f98.f00), (void *)(&(&frame)->f8c.f00), v16, (int)a1, (int)g_8c44bea0, 0.1f, 0.35f, *(float *)(g_8c418280 + 0x1c));
@@ -242,7 +242,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
         if (v20 == 0) {
             return;
         }
-        t8 = allocate_block(g_8c4d97e0, (unsigned int)0x38);
+        t8 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x38);
         if (t8 == 0) {
             return;
         }
@@ -253,7 +253,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
     case 8:
         *(Block16 *)&(&frame)->f7c = *(Block16 *)&g_8c304f30;
         *(Vector3 *)&(&frame)->f70 = *(Vector3 *)&g_8c304f40;
-        t9 = allocate_block(g_8c4d97e0, (unsigned int)0x68);
+        t9 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
         if (t9 != 0) {
             v21 = (int)v85;
             operation_8c0b6448((void *)t9, (void *)(&(&frame)->f7c.f00), (void *)(&(&frame)->f70.f00), v21, (int)a1, (int)g_8c44bea0, 0.1f, 0.35f, *(float *)(g_8c418280 + 0x1c));
@@ -262,7 +262,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
         if (v25 == 0) {
             return;
         }
-        t10 = allocate_block(g_8c4d97e0, (unsigned int)0x38);
+        t10 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x38);
         if (t10 == 0) {
             return;
         }
@@ -274,7 +274,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
     case 17:
         *(Block16 *)&(&frame)->f60 = *(Block16 *)&g_8c304f4c;
         *(Vector3 *)&(&frame)->f54 = *(Vector3 *)&g_8c304f5c;
-        t11 = allocate_block(g_8c4d97e0, (unsigned int)0x68);
+        t11 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
         if (t11 != 0) {
             v26 = (int)v85;
             operation_8c0b6448((void *)t11, (void *)(&(&frame)->f60.f00), (void *)(&(&frame)->f54.f00), v26, (int)a1, (int)g_8c44bea0, 0.1f, 0.35f, *(float *)(g_8c418280 + 0x1c));
@@ -283,7 +283,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
         if (v30 == 0) {
             return;
         }
-        t12 = allocate_block(g_8c4d97e0, (unsigned int)0x38);
+        t12 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x38);
         if (t12 == 0) {
             return;
         }
@@ -295,7 +295,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
     case 14:
         *(Block16 *)&(&frame)->f44 = *(Block16 *)&g_8c304f68;
         *(Vector3 *)&(&frame)->f38 = *(Vector3 *)&g_8c304f78;
-        t13 = allocate_block(g_8c4d97e0, (unsigned int)0x68);
+        t13 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
         if (t13 != 0) {
             v31 = (int)v85;
             operation_8c0b6448((void *)t13, (void *)(&(&frame)->f44.f00), (void *)(&(&frame)->f38.f00), v31, (int)a1, (int)g_8c44bea0, 0.1f, 0.35f, *(float *)(g_8c418280 + 0x1c));
@@ -304,7 +304,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
         if (v35 == 0) {
             return;
         }
-        t14 = allocate_block(g_8c4d97e0, (unsigned int)0x38);
+        t14 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x38);
         if (t14 == 0) {
             return;
         }
@@ -313,7 +313,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
     case 13:
         *(Block16 *)&(&frame)->f28 = *(Block16 *)&g_8c304f84;
         *(Vector3 *)&(&frame)->f1c = *(Vector3 *)&g_8c304f94;
-        t15 = allocate_block(g_8c4d97e0, (unsigned int)0x68);
+        t15 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
         if (t15 != 0) {
             v36 = (int)v85;
             operation_8c0b6448((void *)t15, (void *)(&(&frame)->f28.f00), (void *)(&(&frame)->f1c.f00), v36, (int)a1, (int)g_8c44bea0, 0.1f, 0.35f, *(float *)(g_8c418280 + 0x1c));
@@ -322,7 +322,7 @@ void operation_8c0af660(int a0, Arg1 *a1)
         if (v40 == 0) {
             return;
         }
-        t16 = allocate_block(g_8c4d97e0, (unsigned int)0x38);
+        t16 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x38);
         if (t16 == 0) {
             return;
         }
@@ -331,13 +331,13 @@ void operation_8c0af660(int a0, Arg1 *a1)
     case 18:
         *(Block16 *)&(&frame)->f0c = *(Block16 *)&g_8c304fa0;
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&g_8c304fb0;
-        t17 = allocate_block(g_8c4d97e0, (unsigned int)0x68);
+        t17 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
         if (t17 != 0) {
             operation_8c0b6448((void *)t17, (void *)(&(&frame)->f0c.f00), (void *)(&frame), v85, (int)a1, (int)g_8c44bea0, 0.1f, 0.35f, *(float *)(g_8c418280 + 0x1c));
         }
         v43 = (int)(a1->f308 == 1);
         if (v43 != 0) {
-            t18 = allocate_block(g_8c4d97e0, (unsigned int)0x38);
+            t18 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x38);
             if (t18 != 0) {
                 initialize_timed_owner_effect_8c1333b4((void *)t18, (void *)a1, g_8c44bea0);
             }

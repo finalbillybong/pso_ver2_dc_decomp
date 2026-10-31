@@ -36,13 +36,13 @@ struct Frame {
     char unknownc[0x10];
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void call_8c12b880(Frame *, int, int);
+extern "C" void memset_8c12b880(Frame *, int, int);
 extern "C" void operation_8c02f888(Object *o)
 {
     Frame frame;
     o->v4((g_8c2e7ce0 + 0x5d4));
     if (((ObjectData *)o)->fa7c != 0) {
-        call_8c12b880((Frame *)((&frame)), 0, 0x1c);
+        memset_8c12b880((Frame *)((&frame)), 0, 0x1c);
         (&frame)->f00 = 0xa1;
         (&frame)->f02 = 0x1c;
         *(Block8 *)&(&frame)->f04 = *(Block8 *)&((ObjectData *)o)->fa6c;

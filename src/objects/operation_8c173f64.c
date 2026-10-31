@@ -36,8 +36,8 @@ struct Arg0_24 {
     char unknown0[0x80];
     unsigned short f80;
 };
-extern void initialize_hierarchy_node(void *, void *);
-extern int allocate_block(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c051a98(int, Object *, int, int, int);
 extern void operation_8c051d5c(void *, float, float);
 extern void operation_8c051db4(void *, float, float);
@@ -53,11 +53,11 @@ Object *operation_8c173f64(Object *o, int a1)
     int t1;
     int t2;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c270220;
     o->tag = (int)(*(int *)0x8c318de8);
     o->size = 0x28;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
     if (t1 == 0) {
         for (;;) {
         }

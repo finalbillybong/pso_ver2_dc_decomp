@@ -15,7 +15,7 @@ struct S_L8c339ca0 {
 };
 extern int g_8c510ba0;
 extern S_L8c339ca0 g_8c339ca0;
-void operation_8c248954(Object *o)
+void handle_6x97_select_challenge_mode_failure_option_8c248954(Object *o)
 {
     int v1;
     int v2;

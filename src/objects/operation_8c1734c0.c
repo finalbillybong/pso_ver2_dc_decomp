@@ -17,7 +17,7 @@ struct S_g8c4db520 {
     S_g8c4db520_30 *f30;
 };
 extern S_g8c4db520 *g_8c4db520;
-void operation_8c1734c0(Object *o)
+void handle_6x77_sync_quest_register_8c1734c0(Object *o)
 {
     S_g8c4db520 *g = g_8c4db520;
     if (g != 0) {

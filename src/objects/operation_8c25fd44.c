@@ -53,9 +53,9 @@ extern char g_8c3406fc;
 extern char g_8c340708;
 extern char g_8c340714;
 extern S_L8c340720 g_8c340720;
-extern void call_8c12b880(Frame *, int, int);
-extern void call_8c12b77c(Frame *, void *, int);
-extern int operation_8c01018c(int);
+extern void memset_8c12b880(Frame *, int, int);
+extern void memcpy_8c12b77c(Frame *, void *, int);
+extern int vmu_find_file_8c01018c(int);
 typedef struct Block16x {
     int w[4];
 } Block16x;
@@ -84,14 +84,14 @@ int operation_8c25fd44(void)
     (&frame)->f18.f00 = (int)(&(&frame)->f2c);
     (&frame)->f18.f04 = (int)(&(&frame)->f20);
     while (v1 != 4) {
-        call_8c12b880((Frame *)((&frame)), 0, 0xd);
-        call_8c12b77c((Frame *)((&frame)), (void *)(*(S_frame_10 **)((char *)&(&frame)->f10 + (v1 << 2))), 0xc);
+        memset_8c12b880((Frame *)((&frame)), 0, 0xd);
+        memcpy_8c12b77c((Frame *)((&frame)), (void *)(*(S_frame_10 **)((char *)&(&frame)->f10 + (v1 << 2))), 0xc);
         v2 = (int)0;
         while (v2 != 0xc) {
             ((S_x6416 *)(v2 + (int)(&frame)))->f00 += 0x20;
             v2 = (int)(v2 + 1);
         }
-        t1 = operation_8c01018c((int)(&frame));
+        t1 = vmu_find_file_8c01018c((int)(&frame));
         v3 = (int)1;
         if (!((unsigned int)1 >= (unsigned int)(t1 + 2))) {
             v3 = (int)0;
@@ -102,8 +102,8 @@ int operation_8c25fd44(void)
         }
         v1 = (int)(v1 + 1);
     }
-    call_8c12b880((Frame *)((&frame)), 0, 0xd);
-    call_8c12b77c((Frame *)((&frame)), (void *)(&(&frame)->f44), 0xc);
+    memset_8c12b880((Frame *)((&frame)), 0, 0xd);
+    memcpy_8c12b77c((Frame *)((&frame)), (void *)(&(&frame)->f44), 0xc);
     v5 = (int)0;
     while (v5 != 0xc) {
         ((S_x5744 *)(v5 + (int)(&frame)))->f00 += 0x20;
@@ -115,7 +115,7 @@ int operation_8c25fd44(void)
         v7 = (int)0;
         while ((char)v7 != 0xa) {
             (&frame)->f0b = v7 + 0x30;
-            t2 = operation_8c01018c((int)(&frame));
+            t2 = vmu_find_file_8c01018c((int)(&frame));
             v8 = (int)1;
             if (!((unsigned int)1 >= (unsigned int)(t2 + 2))) {
                 v8 = (int)0;

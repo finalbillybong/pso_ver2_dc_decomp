@@ -13,7 +13,7 @@ struct Object {
 };
 extern int call_8c011ecc(int);
 extern void construct_random_state(void *);
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 Object *operation_8c245694(Object *o, int a1)
 {
     int t1;
@@ -23,7 +23,7 @@ Object *operation_8c245694(Object *o, int a1)
         construct_random_state((void *)t1);
     }
     o->tag = t1;
-    t2 = call_8c18de4c(a1 << 2);
+    t2 = operator_new_8c18de4c(a1 << 2);
     o->f04 = t2;
     o->f08 = 0;
     o->f0c = a1;

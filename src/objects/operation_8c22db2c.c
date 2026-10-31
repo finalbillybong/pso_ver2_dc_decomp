@@ -50,7 +50,7 @@ extern S_g8c467180 *g_8c467180;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c41cba0 g_8c41cba0;
 extern int call_8c220ce0(void);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c22f1bc(int, Object *);
 extern void call_8c199688(int, Object *, int);
 extern void call_8c198294(int, Object *);
@@ -73,16 +73,16 @@ void operation_8c22db2c(Object *o)
         if (g_8c41c610 != 0) {
             g_8c41c610->f04 |= 0x10;
         }
-        t2 = allocate_block(g_8c4d97e0, (unsigned int)0x108);
+        t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x108);
         if (t2 != 0) {
             call_8c22f1bc(t2, o);
         }
         o->f90 = t2;
-        t3 = allocate_block(g_8c4d97e0, (unsigned int)0xac);
+        t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xac);
         if (t3 != 0) {
             call_8c199688(t3, o, 2);
         }
-        t4 = allocate_block(g_8c4d97e0, (unsigned int)0x40);
+        t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x40);
         if (t4 != 0) {
             call_8c198294(t4, o);
         }

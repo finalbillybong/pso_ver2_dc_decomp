@@ -4,8 +4,8 @@ typedef void (*VirtualFunction)(void);
 
 extern void destroy_object_8c21b5ec(void);
 extern void update_delayed_position_effect(void);
-extern void operation_8c0111c8(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_default_8c0111c8(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c21b39c(void);
 extern void operation_8c21b3f4(void);
@@ -20,8 +20,8 @@ VirtualFunction const vt_8c278520[7] = {
     0,
     destroy_object_8c21b5ec,
     update_delayed_position_effect,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -31,8 +31,8 @@ VirtualFunction const vt_8c27853c[7] = {
     0,
     operation_8c21b39c,
     operation_8c21b3f4,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -42,8 +42,8 @@ VirtualFunction const vt_8c278558[7] = {
     0,
     destroy_following_position_effect,
     update_following_position_effect,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
 
@@ -53,7 +53,7 @@ VirtualFunction const vt_8c278574[7] = {
     0,
     destroy_raised_position_effect,
     update_raised_position_effect,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

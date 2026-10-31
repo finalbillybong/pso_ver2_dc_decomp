@@ -24,7 +24,7 @@ typedef struct Slot {
 } Slot;
 
 extern Slot g_slots_8c533e90[8];
-extern void *memset(void *, int, unsigned int);
+extern void *memset_8c12b880(void *, int, unsigned int);
 extern void prepare_8c34aae8(void);
 extern int desc_width_8c359212(int);
 extern unsigned int desc_height_8c359216(int);
@@ -36,12 +36,12 @@ extern void slot_callback_8c34e49c(void);
 void slots_init_8c34e1f4(void)
 {
     prepare_8c34aae8();
-    memset(g_slots_8c533e90, 0, sizeof g_slots_8c533e90);
+    memset_8c12b880(g_slots_8c533e90, 0, sizeof g_slots_8c533e90);
 }
 
 void slots_clear_8c34e208(void)
 {
-    memset(g_slots_8c533e90, 0, sizeof g_slots_8c533e90);
+    memset_8c12b880(g_slots_8c533e90, 0, sizeof g_slots_8c533e90);
 }
 
 void slot_reset_8c34e212(Slot *slot)

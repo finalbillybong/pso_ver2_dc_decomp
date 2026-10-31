@@ -7,15 +7,15 @@ typedef struct S_g8c44be84 S_g8c44be84;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern S_g8c44be84 *g_8c44be84;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
-void operation_8c20834c(void)
+void handle_6x73_exit_quest_8c20834c(void)
 {
     int t1;
     /* TODO 00000000..00000000
      * 00000000 walker stopped: instruction missing at the range end (data in the listing)
      */
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x2c);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x2c);
     if (t1 != 0) {
         initialize_color_rise(t1, g_8c44be84, (void *)((void *)0x8c208d20));
     }

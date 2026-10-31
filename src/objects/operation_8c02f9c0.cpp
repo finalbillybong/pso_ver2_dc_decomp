@@ -28,12 +28,12 @@ typedef struct ObjectData {
 
 } ObjectData;
 extern "C" char g_8c2e7ce0[];
-extern "C" void call_8c12b880(Frame *, int, int);
+extern "C" void memset_8c12b880(Frame *, int, int);
 extern "C" void operation_8c02f9c0(Object *o)
 {
     Frame frame;
     o->v4((g_8c2e7ce0 + 0x605));
-    call_8c12b880((Frame *)((&frame)), 0, 4);
+    memset_8c12b880((Frame *)((&frame)), 0, 4);
     (&frame)->f00 = 0xa9;
     (&frame)->f02 = 4;
     o->v9((&frame), (unsigned short)(&frame)->f02);

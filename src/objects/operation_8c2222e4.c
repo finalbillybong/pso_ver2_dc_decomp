@@ -14,10 +14,10 @@ struct Object {
     int f22dc;
     int f22e0;
 };
-extern void call_8c12b880(int, int, int);
+extern void memset_8c12b880(int, int, int);
 void operation_8c2222e4(Object *o)
 {
-    call_8c12b880((int)((char *)o + 0x2c), 0, 0x2280);
+    memset_8c12b880((int)((char *)o + 0x2c), 0, 0x2280);
     o->f22dc = 4;
     o->f22ac = 0;
     o->f22e0 = 0;

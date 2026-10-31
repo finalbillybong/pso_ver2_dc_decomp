@@ -10,13 +10,13 @@ struct Object {
     char unknown8c[0x8];
     int f94;
 };
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c05fd7c(int, Object *, void *, int, int);
 void operation_8c04fa44(Object *o)
 {
     int v3;
     int t1;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     switch (t1) {
     case 3:
     case 4:

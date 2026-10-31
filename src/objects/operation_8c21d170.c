@@ -31,7 +31,7 @@ extern int g_8c336690;
 extern Object *g_8c505960;
 extern char g_8c278610[];
 extern void initialize_control_manager(void *, void *);
-extern void call_8c12b880(void *, int, int);
+extern void memset_8c12b880(void *, int, int);
 void operation_8c21d170(Object *o, int a1)
 {
     Object **home = &o;
@@ -50,7 +50,7 @@ void operation_8c21d170(Object *o, int a1)
     o->f38 = 0;
     o->f40 = 0;
     o->f74 = 0;
-    call_8c12b880((void *)(((char *)o + 0x58)), 0, 0x1c);
+    memset_8c12b880((void *)(((char *)o + 0x58)), 0, 0x1c);
     o->f28 = 0;
     g_8c505960 = o;
 }

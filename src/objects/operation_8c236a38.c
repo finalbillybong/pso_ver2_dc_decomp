@@ -24,7 +24,7 @@ struct Object {
     char f14;
 };
 extern S_L8c510b80 g_8c510b80;
-void operation_8c236a38(Object *o)
+void handle_6x79_lobby_14_15_gogo_ball_8c236a38(Object *o)
 {
     (&g_8c510b80)->f12 = 0;
     (&g_8c510b80)->f00 = o->f0c;

@@ -17,7 +17,7 @@ typedef struct Context {
 extern Context *g_context_8c3fac48;
 extern Block32 g_default_slot_8c3fac50;
 extern Block32 *g_slots_8c52c390;
-extern void *memset(void *, int, unsigned int);
+extern void *memset_8c12b880(void *, int, unsigned int);
 extern void report_error_8c346118(int, int);
 
 int init_slots_8c346e94(Block32 *slots, unsigned int count)
@@ -36,7 +36,7 @@ int init_slots_8c346e94(Block32 *slots, unsigned int count)
         g_context_8c3fac48->unknown24 = 0;
         g_slots_8c52c390 = slots;
         n = vcount;
-        memset(slots, 0, n * 32);
+        memset_8c12b880(slots, 0, n * 32);
         for (i = 0; i < n; i++) g_context_8c3fac48->slots[i] = g_default_slot_8c3fac50;
     }
     if (error) report_error_8c346118((int)init_slots_8c346e94, error);

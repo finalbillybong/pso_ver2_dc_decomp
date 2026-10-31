@@ -31,8 +31,8 @@ struct S_vv6 {
     char unknown0[0x28];
     Block132 f28;
 };
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
 S_c8c122700 *operation_8c173778(void)
 {
     S_c8c122700 *t1;
@@ -46,7 +46,7 @@ S_c8c122700 *operation_8c173778(void)
     v2 = (int)*(int *)0x8c44be04;
     v3 = (int)*(int *)((char *)0x8c4db600 + (v2 << 2));
     if (v3 != v1 && *(int *)0x8c4db520 != 0) {
-        t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xa8);
+        t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xa8);
         if (t1 == 0) {
             for (;;) {
             }
@@ -55,7 +55,7 @@ S_c8c122700 *operation_8c173778(void)
             v4 = (int)(v2 << 2);
             v5 = (char *)*(int *)((char *)((char *)v4 + 0x0) + ((int)((void *)0x8c4db600)));
             v6 = (S_vv6 *)*(S_g8c4db520 **)0x8c4db520;
-            initialize_hierarchy_node((void *)t1, (void *)v6);
+            TObject_ctor_8c0330e4((void *)t1, (void *)v6);
             t1->f18 = (void *)0x8c270258;
             t1->f00 = (int)(*(int *)0x8c318de0);
             t1->f1e = 0xa8;

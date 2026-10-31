@@ -9,7 +9,7 @@ struct S_vv1 {
 };
 extern int g_8c513380;
 extern int g_8c513384;
-extern int call_8c18de4c(int);
+extern int operator_new_8c18de4c(int);
 void operation_8c257f4c(void)
 {
     int v4;
@@ -29,7 +29,7 @@ void operation_8c257f4c(void)
     v3 = (int)0x200;
     v4 = (int)0;
     while (v4 != 2) {
-        t1 = call_8c18de4c(v3);
+        t1 = operator_new_8c18de4c(v3);
         *(int *)((char *)0x8c513388 + (v4 << 2)) = (int)(t1);
         v4 = (int)(v4 + 1);
     }

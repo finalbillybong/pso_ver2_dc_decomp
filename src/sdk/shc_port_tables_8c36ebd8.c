@@ -34,7 +34,7 @@ extern int g_flag_8c5615e4, g_flag_8c5615e8, g_flag_8c5615ec;
 extern char g_table_8c561338[], g_table_8c561378[], g_table_8c561078[];
 extern void *create_handler_8c36bbc4(int, void (*)(void), int, int);
 extern void handler_a_8c36ea7c(void), handler_b_8c36ea88(void), handler_c_8c36eb62(void), handler_d_8c36eb6a(void);
-extern void *memset(void *, int, unsigned int);
+extern void *memset_8c12b880(void *, int, unsigned int);
 
 void snapshot_ports_8c36ebd8(void)
 {
@@ -71,8 +71,8 @@ void init_ports_8c36ec1a(void)
     g_flag_8c5615e4 = 0;
     g_flag_8c5615e8 = 0;
     g_flag_8c5615ec = 0;
-    memset(g_table_8c561338, 0, 0x38);
-    memset(g_ports_8c5610f8, 0, 0x240);
-    memset(g_table_8c561378, 0, 0x240);
-    memset(g_table_8c561078, 0, 0x80);
+    memset_8c12b880(g_table_8c561338, 0, 0x38);
+    memset_8c12b880(g_ports_8c5610f8, 0, 0x240);
+    memset_8c12b880(g_table_8c561378, 0, 0x240);
+    memset_8c12b880(g_table_8c561078, 0, 0x80);
 }

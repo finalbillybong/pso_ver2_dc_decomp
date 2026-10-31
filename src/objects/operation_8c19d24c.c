@@ -15,11 +15,11 @@ struct Object {
     Arg0_e8 *fe8;
 };
 extern S_g8c4db648 *g_8c4db648;
-extern void create_loader_8c1736ac(int);
+extern void TQuestThread_ctor_3_8c1736ac(int);
 void operation_8c19d24c(Object *o)
 {
     if (g_8c4db648 != 0) {
         g_8c4db648->f04 |= 1;
     }
-    create_loader_8c1736ac((int)(o->fe8));
+    TQuestThread_ctor_3_8c1736ac((int)(o->fe8));
 }

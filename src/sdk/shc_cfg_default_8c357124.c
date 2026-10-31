@@ -63,7 +63,7 @@ int cfg_mono_8c3571aa(int unused, Cfg *c)
     return update_8c3bb160(c);
 }
 
-void cfg_from_src_8c3571d4(Src *s, Cfg *c)
+void mwRnv2SetVertexContextBlendingMode_8c3571d4(Src *s, Cfg *c)
 {
     int m;
     int r;

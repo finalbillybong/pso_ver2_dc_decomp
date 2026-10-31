@@ -11,7 +11,7 @@ struct Object {
     int f20;
     int f24;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_195e68(void *);
 extern void operation_8c09a478(void);
 Object *operation_8c0964d4(Object *o, int a1)
@@ -19,7 +19,7 @@ Object *operation_8c0964d4(Object *o, int a1)
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c26580c;
     t1 = operation_195e68((void *)o);
     o->f24 = (int)(t1);

@@ -20,14 +20,14 @@ struct Arg0_28 {
     char unknown0[0x68];
     int f68;
 };
-extern void initialize_hierarchy_node(Object *, int);
+extern void TObject_ctor_8c0330e4(Object *, int);
 extern int create_effect_769c(void *, int);
 Object *operation_8c1f2a78(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    initialize_hierarchy_node(o, a1);
+    TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c278020;
     o->tag = *(int *)0x8c32c424;
     o->size = 0x2c;

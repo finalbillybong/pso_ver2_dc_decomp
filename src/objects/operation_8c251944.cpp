@@ -70,7 +70,7 @@ struct S_vv1 {
     int f18;
 };
 extern "C" void operation_8c241658(void *);
-extern "C" int allocate_block(void *, unsigned int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c1ab01c(void *, int, int, int);
 extern "C" void operation_8c251a48();
 extern "C" void operation_8c251944(Object *o)
@@ -90,7 +90,7 @@ extern "C" void operation_8c251944(Object *o)
             }
             *(int *)((char *)o + 0x234) |= 2;
             if (o != 0) {
-                t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
+                t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
                 if (t1 != 0) {
                     operation_8c1ab01c((void *)t1, (int)o, (int)operation_8c251a48, 0x3c);
                 }

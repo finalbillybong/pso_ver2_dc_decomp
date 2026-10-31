@@ -21,10 +21,10 @@ struct Object {
 struct Arg1 {
     Vector3 f00;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c2372ac(Object *o, Arg1 *a1, int a2, int a3, int a4, int a5)
 {
-    initialize_hierarchy_node((void *)o, (void *)a5);
+    TObject_ctor_8c0330e4((void *)o, (void *)a5);
     o->dispatch = (void *)0x8c27904c;
     o->f20 = a1->f00;
     o->f2c = a2;

@@ -69,13 +69,13 @@ extern S_g8c46fe20 *g_8c46fe20;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4dbde0;
 extern char g_8c30749c[];
-extern void initialize_hierarchy_node(void *, void *);
-extern int allocate_block(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c18bafc(int, void *);
 extern int create_pair_view_8c226800(int, int);
 extern void operation_8c217914(void *);
 extern void call_8c0e2648(int);
-extern int current_effect_mode(void);
+extern int get_current_area_8c032b10(void);
 extern void call_8c0e3294(int, int);
 extern void call_8c103424(int);
 extern void operation_8c1dca80(void *, int, int);
@@ -95,7 +95,7 @@ Object *operation_8c0dc9ac(Object *o, int a1)
     int t8;
     int t9;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c26772c;
     o->tag = (int)(g_8c307498);
     o->size = 0xb8;
@@ -105,19 +105,19 @@ Object *operation_8c0dc9ac(Object *o, int a1)
         g_8c46fe20->f04 |= 1;
     }
     g_8c46fe20 = (S_g8c46fe20 *)o;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x9c);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x9c);
     if (t1 != 0) {
         call_8c18bafc(t1, g_8c44bea0);
     }
     g_8c4dbde0 = (int)(t1);
     t2 = create_pair_view_8c226800((int)((void *)0x8c285878), (int)((void *)0x8c285880));
     o->f70 = (int)(t2);
-    t3 = allocate_block(g_8c4d97e0, (unsigned int)0x68);
+    t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
     if (t3 != 0) {
         operation_8c217914((void *)t3);
     }
     o->f30 = (int)(t3);
-    t4 = allocate_block(g_8c4d97e0, (unsigned int)0x7c);
+    t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
     if (t4 != 0) {
         call_8c0e2648(t4);
     }
@@ -125,9 +125,9 @@ Object *operation_8c0dc9ac(Object *o, int a1)
     o->f34->f04 |= 4;
     v62 = (int)0;
     while (3 > v62) {
-        t5 = current_effect_mode();
+        t5 = get_current_area_8c032b10();
         if (t5 != 0xf) {
-            t6 = allocate_block(g_8c4d97e0, (unsigned int)0x84);
+            t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x84);
             if (t6 != 0) {
                 call_8c0e3294(t6, v62);
             }
@@ -138,13 +138,13 @@ Object *operation_8c0dc9ac(Object *o, int a1)
         }
         v62 = (int)(v62 + 1);
     }
-    t7 = allocate_block(g_8c4d97e0, (unsigned int)0x7c);
+    t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
     if (t7 != 0) {
         call_8c103424(t7);
     }
     o->f44 = (Arg0_44 *)t7;
     o->f44->f04 |= 4;
-    t8 = allocate_block(g_8c4d97e0, (unsigned int)0x3c);
+    t8 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x3c);
     if (t8 != 0) {
         operation_8c1dca80((void *)t8, (int)g_8c44be84, (int)(((char *)o + 0x78)));
     }

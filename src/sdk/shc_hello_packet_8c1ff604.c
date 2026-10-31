@@ -1,9 +1,9 @@
 /* Game pool group 0x8c1ff604-0x8c1ff750 (Hitachi SHC): builds a padded name
    packet, clears two lists, and clears status bits on an object pair. */
-extern unsigned long strlen(const char *);
+extern unsigned long strlen_8c12b0cc(const char *);
 extern char *_builtin_strcpy(char *, const char *);
 #define strcpy _builtin_strcpy
-extern void *memcpy(void *, const void *, unsigned long);
+extern void *memcpy_8c12b77c(void *, const void *, unsigned long);
 
 typedef struct Packet {
     char *buffer;
@@ -68,7 +68,7 @@ seed:
     g_pad_length_8c502d66 = (random_next_8c1fd248() & 0x1f) + 0x10;
     *p++ = g_pad_length_8c502d66;
     for (i = 0; i < g_pad_length_8c502d66; i++) *p++ = random_next_8c1fd248();
-    n = strlen(id->name);
+    n = strlen_8c12b0cc(id->name);
     if (n > 0) {
         strcpy(p, id->name);
         p += n;
@@ -78,7 +78,7 @@ seed:
     packet->length += n + g_pad_length_8c502d66 + 2;
     i = packet->length;
     if ((unsigned)i > 0x80) i = 0x80;
-    memcpy(g_last_packet_8c502d68, packet->buffer, i);
+    memcpy_8c12b77c(g_last_packet_8c502d68, packet->buffer, i);
     return packet;
 }
 

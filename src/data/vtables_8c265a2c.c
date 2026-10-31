@@ -4,8 +4,8 @@ typedef void (*VirtualFunction)(void);
 
 extern void destroy_follow_effect(void);
 extern void refresh_follow_effect(void);
-extern void operation_8c0111c8(void);
-extern void operation_8c0111cc(void);
+extern void TObject_render_default_8c0111c8(void);
+extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c09adfc(void);
 extern void reset_follow_effect(void);
@@ -35,8 +35,8 @@ VirtualFunction const vt_8c265a2c[13] = {
     0,
     destroy_follow_effect,
     refresh_follow_effect,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c09adfc,
     reset_follow_effect,
@@ -52,8 +52,8 @@ VirtualFunction const vt_8c265a60[13] = {
     0,
     destroy_follow_base,
     operation_8c0a117c,
-    operation_8c0111c8,
-    operation_8c0111cc,
+    TObject_render_default_8c0111c8,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c09adfc,
     operation_8c09ae00,
@@ -70,7 +70,7 @@ VirtualFunction const vt_8c265a94[16] = {
     destroy_context_8c0a127c,
     fn_8c0a12c8,
     operation_8c0a12d4,
-    operation_8c0111cc,
+    TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,

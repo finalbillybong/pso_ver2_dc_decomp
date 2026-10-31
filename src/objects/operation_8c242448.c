@@ -25,17 +25,17 @@ struct Object {
     char unknown58[0xc];
     int f64;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int lookup_low_id(int);
 extern void call_8c028264(int, void *);
 extern void clear_global_render_resources(void);
-Object *operation_8c242448(Object *o, int a1)
+Object *TPlayerBattleCtrl_ctor_8c242448(Object *o, int a1)
 {
     Object **home = &o;
     int v1;
     int t1;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27ccdc;
     o->tag = *(int *)0x8c33aad4;
     o->size = 0x274;

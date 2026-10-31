@@ -13,7 +13,7 @@ extern int g_8c4627c8;
 extern int lookup_low_id(int);
 extern int call_8c02a6d4(int);
 extern void operation_8c1e8e60(int, int, int);
-void operation_8c1f0260(Object *o)
+void handle_6x53_8c1f0260(Object *o)
 {
     int v1;
     unsigned short v2;

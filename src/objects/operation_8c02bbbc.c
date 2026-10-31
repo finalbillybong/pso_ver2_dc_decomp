@@ -14,7 +14,7 @@ struct S_vv4 {
     char unknown0[0x7b4];
     int f7b4;
 };
-void operation_8c02bbbc(Object *o)
+void handle_6x90_set_player_battle_team_8c02bbbc(Object *o)
 {
     int v1;
     int v2;

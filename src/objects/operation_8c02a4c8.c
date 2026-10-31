@@ -30,7 +30,7 @@ extern void operation_8c02b1e0(int);
 extern void create_timed_actor_callback(unsigned short, short, void *);
 extern void operation_8c0a1b78(void *);
 extern void operation_8c02a594();
-void operation_8c02a4c8(Object *o)
+void handle_6x24_teleport_player_8c02a4c8(Object *o)
 {
     Object *self = o;
     S_vv5 *v5;

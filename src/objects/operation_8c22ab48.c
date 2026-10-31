@@ -21,12 +21,12 @@ struct Frame {
 };
 extern S_g8c338174 *g_8c338174;
 extern S_g8c338178 *g_8c338178;
-extern int current_effect_mode(void);
-extern int operation_8c01018c(int);
-extern void operation_8c104c60(void);
+extern int get_current_area_8c032b10(void);
+extern int vmu_find_file_8c01018c(int);
+extern void loading_wait_frame_8c104c60(void);
 extern int call_8c011e9c(int);
 extern void call_8c011ec0(int);
-extern void call_8c12b880(int, int, int);
+extern void memset_8c12b880(int, int, int);
 extern void operation_8c010240(int, int, int);
 extern int call_8c372d98(int);
 extern int call_8c377fd0(void *, int);
@@ -46,24 +46,24 @@ void operation_8c22ab48(void)
     int t7;
     int t8;
     int t9;
-    t1 = current_effect_mode();
+    t1 = get_current_area_8c032b10();
     switch (t1) {
     case 0:
         v103 = (int)-2;
         for (;;) {
-            v104 = operation_8c01018c((int)g_8c338178);
+            v104 = vmu_find_file_8c01018c((int)g_8c338178);
             if (v104 != v103) {
                 break;
             }
-            operation_8c104c60();
+            loading_wait_frame_8c104c60();
         }
         v105 = (int)-2;
         for (;;) {
-            v106 = operation_8c01018c((int)g_8c338174);
+            v106 = vmu_find_file_8c01018c((int)g_8c338174);
             if (v106 != v105) {
                 break;
             }
-            operation_8c104c60();
+            loading_wait_frame_8c104c60();
         }
         v105 = (int)-1;
         if (v104 != v105) {
@@ -80,11 +80,11 @@ void operation_8c22ab48(void)
                     }
                     if (t5 != 0) {
                         if (t5 != 0) {
-                            call_8c12b880(t4, 0, 0x20000);
-                            call_8c12b880(t5, 0, 0x20000);
+                            memset_8c12b880(t4, 0, 0x20000);
+                            memset_8c12b880(t5, 0, 0x20000);
                             operation_8c010240(v104, (int)g_8c338178, t4);
                             while ((t6 = call_8c372d98(v104)) != 0) {
-                                operation_8c104c60();
+                                loading_wait_frame_8c104c60();
                             }
                             t7 = call_8c377fd0((void *)(&(&frame)->f60), t4);
                             if (t7 != 0) {
@@ -94,7 +94,7 @@ void operation_8c22ab48(void)
                             }
                             operation_8c010240(v106, (int)g_8c338174, t5);
                             while ((t8 = call_8c372d98(v106)) != 0) {
-                                operation_8c104c60();
+                                loading_wait_frame_8c104c60();
                             }
                             t9 = call_8c377fd0((void *)(&frame), t5);
                             if (t9 != 0) {

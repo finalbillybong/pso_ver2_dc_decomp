@@ -15,7 +15,7 @@ struct Object {
     char unknown354[0x268];
     int f5bc;
 };
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern void call_8c025e70(Object *);
 extern void operation_8c1e8e60(int, short, int);
 extern int actor_matches_current_mode(void *);
@@ -45,7 +45,7 @@ void operation_8c0221ac(Object *o)
         }
         return;
     }
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 != 0xf && *(int *)0x8c41bd10 != 0) {
         goto L_8c02222e;
     }

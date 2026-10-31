@@ -1,11 +1,11 @@
 typedef struct { int used; int id; } Slot;
 extern Slot slots_8c539978[8];
-extern void *memset(void *, int, unsigned int);
+extern void *memset_8c12b880(void *, int, unsigned int);
 
 void slot_pool_init_8c354640(void)
 {
     int i, id;
-    memset(slots_8c539978, 0, sizeof(slots_8c539978));
+    memset_8c12b880(slots_8c539978, 0, sizeof(slots_8c539978));
     id = 15;
     for (i = 0; i < 8; i++) {
         slots_8c539978[i].id = id;

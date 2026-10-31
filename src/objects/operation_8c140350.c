@@ -47,8 +47,8 @@ extern int g_8c31468c;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int operation_8c1407e4(void *);
 extern int operation_8c034c7c(void *);
-extern S_c8c122700 *allocate_block(void *, unsigned int);
-extern void initialize_hierarchy_node(void *, void *);
+extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void operation_8c13f8e0(void *);
 void operation_8c140350(Object *o)
 {
@@ -69,12 +69,12 @@ void operation_8c140350(Object *o)
     t3 = operation_8c034c7c((void *)(o->f3c));
     v1 = (int)o->f50;
     v2 = (int)o->f40;
-    t2 = allocate_block(g_8c4d97e0, (unsigned int)0x1d8);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1d8);
     if (t2 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t2;
         S_c8c122700 **home = &self;
         (void)home;
-        initialize_hierarchy_node((void *)t2, (void *)o);
+        TObject_ctor_8c0330e4((void *)t2, (void *)o);
         self->f18 = (void *)0x8c26dc08;
         self->f00 = (int)(g_8c31468c);
         self->f1e = 0x1d8;
@@ -87,13 +87,13 @@ void operation_8c140350(Object *o)
     if (!(t2 == 0)) {
         pm1 = (int)o->f54;
         v7 = (int)o->f40;
-        t4 = allocate_block(g_8c4d97e0, (unsigned int)0x1d8);
+        t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1d8);
         v6 = pm1;
         if (t4 != 0) {
             S_c8c122700 *self = (S_c8c122700 *)t4;
             S_c8c122700 **home = &self;
             (void)home;
-            initialize_hierarchy_node((void *)t4, (void *)o);
+            TObject_ctor_8c0330e4((void *)t4, (void *)o);
             self->f18 = (void *)0x8c26dc08;
             self->f00 = (int)(g_8c31468c);
             self->f1e = 0x1d8;
@@ -109,12 +109,12 @@ void operation_8c140350(Object *o)
             }
             v12 = (int)o->f58;
             v13 = (int)o->f40;
-            t5 = allocate_block(g_8c4d97e0, (unsigned int)0x1d8);
+            t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1d8);
             if (t5 != 0) {
                 S_c8c122700 *self = (S_c8c122700 *)t5;
                 S_c8c122700 **home = &self;
                 (void)home;
-                initialize_hierarchy_node((void *)t5, (void *)o);
+                TObject_ctor_8c0330e4((void *)t5, (void *)o);
                 self->f18 = (void *)0x8c26dc08;
                 self->f00 = (int)(g_8c31468c);
                 self->f1e = 0x1d8;

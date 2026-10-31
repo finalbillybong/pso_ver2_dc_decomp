@@ -16,7 +16,7 @@ struct Object {
     float f3c;
     int f40;
 };
-extern int operation_8c01c25c(void);
+extern int get_game_mode_8c01c25c(void);
 extern float call_8c087bcc(void);
 extern float call_8c087ba0(void);
 void operation_8c191880(Object *o)
@@ -28,7 +28,7 @@ void operation_8c191880(Object *o)
     o->f24 = (o->f2c - o->f24) * 0.1f + o->f24;
     o->f30 = (o->f38 - o->f30) * 0.1f + o->f30;
     o->f34 = (o->f3c - o->f34) * 0.1f + o->f34;
-    t1 = operation_8c01c25c();
+    t1 = get_game_mode_8c01c25c();
     if (t1 == 0x10) {
         switch (o->f40) {
         case 150:

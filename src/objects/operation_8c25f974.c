@@ -15,13 +15,13 @@ struct Object {
     int f2c;
     int f30;
 };
-extern void initialize_hierarchy_node(Object *, void *);
+extern void TObject_ctor_8c0330e4(Object *, void *);
 extern void clear_global_render_resources(void);
 Object *operation_8c25f974(Object *o)
 {
     Object **home = &o;
     (void)home;
-    initialize_hierarchy_node(o, *(S_g8c44be88 **)0x8c44be88);
+    TObject_ctor_8c0330e4(o, *(S_g8c44be88 **)0x8c44be88);
     o->dispatch = (void *)0x8c281de0;
     o->f20 = 0;
     o->f24 = 0;

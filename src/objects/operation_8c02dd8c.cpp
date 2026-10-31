@@ -17,7 +17,7 @@ typedef struct ObjectData {
     int fb13c;
 } ObjectData;
 extern "C" char g_8c2e7ce0[];
-extern "C" void operation_8c02dd8c(Object *o, int a1)
+extern "C" void handle_cmd_06_chat_8c02dd8c(Object *o, int a1)
 {
     o->v4((g_8c2e7ce0 + 0x190));
     if (((ObjectData *)o)->fb13c != 0) {

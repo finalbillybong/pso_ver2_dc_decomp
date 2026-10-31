@@ -53,8 +53,8 @@ typedef struct Arg0_20Data {
     char unknown0[0x20];
     short f20;
 } Arg0_20Data;
-extern "C" void initialize_hierarchy_node(void *, void *);
-extern "C" S_c8c122700 *allocate_block(void *, unsigned int);
+extern "C" void TObject_ctor_8c0330e4(void *, void *);
+extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c051eb8(void *, Object *);
 extern "C" int call_8c192738(void);
 extern "C" void transform_with_8c05214c(void *, int, int);
@@ -69,11 +69,11 @@ extern "C" Object *operation_8c1ddcb8(Object *o, int a1, int a2, int a3)
     int t3;
     int t4;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)(void *)0x8c27738c;
     o->tag = (int)(*(int *)0x8c32af7c);
     o->size = 0x28;
-    t1 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x118);
+    t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x118);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

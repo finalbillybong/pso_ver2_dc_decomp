@@ -26,7 +26,7 @@ extern int actor_matches_current_mode(void *);
 extern void call_8c1e8e60(Object *, int, int);
 extern int operation_02c350(void *);
 extern void call_8c1ef2fc(Object *);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_blue(int, void *, void *);
 extern void spawn_actor_child_if_allowed(void *);
 void operation_8c1ef548(Object *o)
@@ -52,7 +52,7 @@ void operation_8c1ef548(Object *o)
             call_8c1ef2fc(o);
             v2 = (int)(o->f20 == *(int *)0x8c418248);
             if (v2 != 0) {
-                t3 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x2c);
+                t3 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x2c);
                 if (t3 != 0) {
                     initialize_color_blue(t3, *(S_g8c44be84 **)0x8c44be84, (void *)0x8c029528);
                 }

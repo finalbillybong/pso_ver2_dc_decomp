@@ -11,7 +11,7 @@ struct Object {
     int f28;
     Arg0_2c *f2c;
 };
-extern int call_8c34da3c(void *);
+extern int ADXF_GetStat_8c34da3c(void *);
 extern void call_8c34d4e8(void *);
 extern int operation_8c03ed64(void);
 extern void operation_8c22c1c4(void *);
@@ -26,7 +26,7 @@ void operation_8c22bfcc(Object *o)
     int t3;
     v41 = (char *)o->f24;
     if ((int)(v41) == 1) {
-        t1 = call_8c34da3c((void *)(o->f2c));
+        t1 = ADXF_GetStat_8c34da3c((void *)(o->f2c));
         if (t1 != 1) {
             if (t1 == 2) {
                 return;

@@ -63,14 +63,14 @@ extern int g_8c311e64;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4d980c *g_8c4d980c;
-extern "C" S_c8c122700 *allocate_block(void *, unsigned int);
+extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c0ee870(void *, void *);
 extern "C" void call_8c123c04(S_c8c122700 *);
-extern "C" S_c8c122700 *operation_8c122eec(int a0)
+extern "C" S_c8c122700 *TOKurage_create_8c122eec(int a0)
 {
     S_c8c122700 *t1;
     char *v5;
-    t1 = allocate_block(g_8c4d97e0, (unsigned int)0x14c);
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x14c);
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;

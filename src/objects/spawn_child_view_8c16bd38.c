@@ -19,14 +19,14 @@ struct S_c8c122700 {
     char unknown22[0x36];
     Object *f58;
 };
-extern S_c8c122700 *allocate_block(void *, int);
+extern S_c8c122700 *heap_alloc_8c122700(void *, int);
 extern void call_8c16b398(S_c8c122700 *, void *, int, int, int);
 extern void call_8c16b480(S_c8c122700 *);
 void spawn_child_view_8c16bd38(Object *o, int a1, int a2)
 {
     S_c8c122700 *t1;
     o->f04 = 1;
-    t1 = allocate_block(*(S_g8c4d97e0 **)0x8c4d97e0, 0x5c);
+    t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0x5c);
     if (t1 != 0) {
         S_c8c122700 *self = t1;
         S_c8c122700 **home = &self;

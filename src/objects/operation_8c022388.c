@@ -21,7 +21,7 @@ extern int g_8c4627c8;
 extern int operation_8c16a18c(void *, int);
 extern int operation_8c169508(void *);
 extern void operation_8c022428(void *, void *, int);
-void operation_8c022388(Object *o)
+void handle_6x25_equip_item_8c022388(Object *o)
 {
     Object *base;
     S_vv4 *v4;

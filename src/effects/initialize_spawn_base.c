@@ -1,11 +1,11 @@
 #include "src/include/spawn_effect.h"
 /* The address-taken parameter preserves the observed stack home slot.
  * Keep each reciprocal scoped to one object reload across its branch. */
-#define attach_at ((void (*)(void *,void *))0x8c0330e4)
+#define TObject_ctor_8c0330e4 ((void (*)(void *,void *))0x8c0330e4)
 #define resource_id_at ((int (*)(void *))0x8c0a02cc)
 SpawnEffect *initialize_spawn_base(SpawnEffect *e,SpawnResourceView *resource,void *owner) {
  SpawnEffect **home=&e;
- attach_at(e,owner);
+ TObject_ctor_8c0330e4(e,owner);
  e->field_18=(void *)0x8c265d10;
  e->field_8c=0;
  e->field_90=0;

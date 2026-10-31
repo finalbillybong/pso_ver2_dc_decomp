@@ -1,5 +1,5 @@
-extern void *memset(void *, int, unsigned int);
-extern void call_8c12b154(void *, void *, int);
+extern void *memset_8c12b880(void *, int, unsigned int);
+extern void strncpy_8c12b154(void *, void *, int);
 extern int call_8c12b114(char *, char *, int);
 extern int call_8c12b048(char *, char *, ...);
 extern char *_builtin_strcpy(char *, const char *);
@@ -30,10 +30,10 @@ void show_build_8c3df574(void)
     char *p;
     unsigned char mon;
 
-    memset(day, 0, 3);
-    memset(year, 0, 5);
-    call_8c12b154(day, str_8c3f9098 + 4, 2);
-    call_8c12b154(year, str_8c3f9098 + 7, 4);
+    memset_8c12b880(day, 0, 3);
+    memset_8c12b880(year, 0, 5);
+    strncpy_8c12b154(day, str_8c3f9098 + 4, 2);
+    strncpy_8c12b154(year, str_8c3f9098 + 7, 4);
     if (day[0] == ' ')
         day[0] = '0';
     year[0]++;
@@ -76,10 +76,10 @@ void get_build_8c3df6d8(char *out)
     char *p;
     unsigned char mon;
 
-    memset(day, 0, 3);
-    memset(year, 0, 5);
-    call_8c12b154(day, str_8c3f9098 + 4, 2);
-    call_8c12b154(year, str_8c3f9098 + 7, 4);
+    memset_8c12b880(day, 0, 3);
+    memset_8c12b880(year, 0, 5);
+    strncpy_8c12b154(day, str_8c3f9098 + 4, 2);
+    strncpy_8c12b154(year, str_8c3f9098 + 7, 4);
     if (day[0] == ' ')
         day[0] = '0';
     year[0]++;

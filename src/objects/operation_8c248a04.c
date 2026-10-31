@@ -16,7 +16,7 @@ struct S_L8c339ca0 {
 extern int g_8c510ba0;
 extern S_L8c339ca0 g_8c339ca0;
 extern int lookup_low_id(int);
-void operation_8c248a04(Object *o)
+void handle_6x9D_set_dead_flag_8c248a04(Object *o)
 {
     int v1;
     int v2;

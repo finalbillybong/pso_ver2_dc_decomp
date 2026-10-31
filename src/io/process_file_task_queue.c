@@ -3,19 +3,19 @@ typedef char check_layout[sizeof(Task) == 104 && (unsigned long)&((Task *)0)->na
 extern void *heap;
 extern Task *first, *last;
 extern int next_identifier, count;
-extern void *open_at(const char *, int), *allocate_at(void *, unsigned int);
-extern void copy_at(char *, const char *, unsigned int), close_at(void *);
+extern void *open_at(const char *, int), *heap_alloc_8c122700(void *, unsigned int);
+extern void strncpy_8c12b154(char *, const char *, unsigned int), close_at(void *);
 extern void bytes_at(void *, const void *, unsigned int), free_at(void *, void *), reset_at(void);
 extern int busy;
-extern int size_at(void *), sectors_at(void *);
+extern int ADXF_GetFsizeByte_8c34d9d4(void *), ADXF_GetFsizeSct_8c34d9b8(void *);
 typedef char check_new_fields[(unsigned long)&((Task *)0)->buffer == 60 && (unsigned long)&((Task *)0)->callback_data == 68 && (unsigned long)&((Task *)0)->context == 100 ? 1 : -1];
 
 extern void *active_handle, *scratch_buffer, *large_buffer;
 extern char buffer_pool[];
-extern void start_at(void), stop_at(void), cancel_at(void), remove_at(void), complete_at(void), tick_at(void), yield_at(void), process_at(void);
+extern void start_at(void), stop_at(void), cancel_at(void), remove_at(void), complete_at(void), tick_at(void), loading_wait_frame_8c104c60(void), process_at(void);
 extern void *buffer_at(unsigned int), *heap_at(unsigned int), *large_at(void *);
-extern void init_heap_at(void *, unsigned int, unsigned int), destroy_heap_at(void *, int), release_at(void *), release_large_at(void *), read_at(void *, int, void *);
-extern int status_at(void *), named_at(void *, const char *);
+extern void init_heap_at(void *, unsigned int, unsigned int), destroy_heap_at(void *, int), release_at(void *), release_large_at(void *), ADXF_ReadNw32_8c34d6ae(void *, int, void *);
+extern int ADXF_GetStat_8c34da3c(void *), named_at(void *, const char *);
 extern void copy_words_at(void *, void *, int), copy_shorts_at(void *, void *, int), copy_bytes_at(void *, void *, int), decode_at(void *, void *);
 void process_file_task_queue(void) {
     switch (busy) {
@@ -27,7 +27,7 @@ void process_file_task_queue(void) {
             large_buffer = large_at(buffer_pool + 12);
             if (!large_buffer) break;
             active_handle = open_at(first->name, 0);
-            read_at(active_handle, first->sectors, large_buffer);
+            ADXF_ReadNw32_8c34d6ae(active_handle, first->sectors, large_buffer);
             busy = 3;
             break;
         }
@@ -35,10 +35,10 @@ void process_file_task_queue(void) {
         active_handle = open_at(first->name, 0);
         if (!active_handle) break;
         if (first->sectors > 1) {
-            read_at(active_handle, first->sectors - 1, first->destination);
+            ADXF_ReadNw32_8c34d6ae(active_handle, first->sectors - 1, first->destination);
             busy = 1;
         } else {
-            read_at(active_handle, 1, scratch_buffer);
+            ADXF_ReadNw32_8c34d6ae(active_handle, 1, scratch_buffer);
             busy = 2;
         }
         break;
@@ -50,8 +50,8 @@ void process_file_task_queue(void) {
             busy = 0;
             break;
         }
-        if (status_at(active_handle) != 3) break;
-        read_at(active_handle, 1, scratch_buffer);
+        if (ADXF_GetStat_8c34da3c(active_handle) != 3) break;
+        ADXF_ReadNw32_8c34d6ae(active_handle, 1, scratch_buffer);
         busy = 2;
         break;
     case 2:
@@ -62,7 +62,7 @@ void process_file_task_queue(void) {
             busy = 0;
             break;
         }
-        if (status_at(active_handle) != 3) break;
+        if (ADXF_GetStat_8c34da3c(active_handle) != 3) break;
         {
             char *destination = (char *)first->destination + ((unsigned int)(first->sectors - 1) << 11);
             int size = first->size % 2048;
@@ -85,7 +85,7 @@ void process_file_task_queue(void) {
             busy = 0;
             break;
         }
-        if (status_at(active_handle) == 3) {
+        if (ADXF_GetStat_8c34da3c(active_handle) == 3) {
             decode_at(large_buffer, first->buffer);
             release_large_at(buffer_pool + 12);
             complete_at();

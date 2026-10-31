@@ -9,7 +9,7 @@ struct Arg1 {
     unsigned short f02;
 };
 extern void call_8c036c38(void *, int);
-void operation_8c02e3fc(int a0, Arg1 *a1)
+void handle_cmd_60_62_8c02e3fc(int a0, Arg1 *a1)
 {
     call_8c036c38((void *)(((char *)a1 + 0x4)), (int)(a1->f02 + -4));
 }

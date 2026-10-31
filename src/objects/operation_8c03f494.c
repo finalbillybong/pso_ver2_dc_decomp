@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern void operation_8c17b8ac(void);
 extern void word_operation_8c1ddaf0(unsigned int);
-extern void operation_8c01c1a4(int);
+extern void request_game_mode_8c01c1a4(int);
 void operation_8c03f494(void)
 {
     /* TODO 00000000..00000000
@@ -13,7 +13,7 @@ void operation_8c03f494(void)
      */
     operation_8c17b8ac();
     word_operation_8c1ddaf0((unsigned int)1);
-    operation_8c01c1a4(0xd);
+    request_game_mode_8c01c1a4(0xd);
     /* TODO 8c03f494..8c03f4aa
      * 8c03f494 mov.l 0x8c03f4b0,r0
      * 8c03f496 sts.l PR,@-r15

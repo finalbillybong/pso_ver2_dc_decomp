@@ -68,14 +68,14 @@ struct S_vv18 {
     char unknown14[0xc];
     S_vv18_20 *f20;
 };
-extern void initialize_hierarchy_node(void *, void *);
-extern void call_8c12b880(void *, int, int);
+extern void TObject_ctor_8c0330e4(void *, void *);
+extern void memset_8c12b880(void *, int, int);
 extern void select_mode13_8c1cc5d0(void);
 extern S_c8c03669c *operation_8c03669c(int, int);
 extern void call_8c12b048(void *, int, ...);
 extern int operation_8c0366dc(int);
 extern int call_8c036708(int);
-extern int allocate_block(void *, unsigned int);
+extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c198294(void *, int);
 extern void call_8c199688(int, Object *, int);
 extern void call_8c232fa0(Object *);
@@ -111,7 +111,7 @@ Object *operation_8c2329b0(Object *o)
     int t11;
     int t12;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)(*(S_g8c44be88 **)0x8c44be88));
+    TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be88 **)0x8c44be88));
     o->dispatch = (void *)0x8c278fec;
     o->f28 = 0;
     o->f2c = 0;
@@ -119,10 +119,10 @@ Object *operation_8c2329b0(Object *o)
     o->f24 = 0;
     o->f30 = 0;
     o->f34 = 0;
-    call_8c12b880((void *)((void *)0x8c510920), 0, 0xbb);
-    call_8c12b880((void *)((void *)0x8c5109db), 0, 0xbb);
-    call_8c12b880((void *)((void *)0x8c510a96), 0, 0x42);
-    call_8c12b880((void *)((void *)0x8c510ad8), 0, 0x42);
+    memset_8c12b880((void *)((void *)0x8c510920), 0, 0xbb);
+    memset_8c12b880((void *)((void *)0x8c5109db), 0, 0xbb);
+    memset_8c12b880((void *)((void *)0x8c510a96), 0, 0x42);
+    memset_8c12b880((void *)((void *)0x8c510ad8), 0, 0x42);
     if (*(int *)0x8c461c00 != 0) {
         select_mode13_8c1cc5d0();
         return o;
@@ -161,8 +161,8 @@ Object *operation_8c2329b0(Object *o)
     call_8c12b048((void *)((void *)0x8c510ad8), (int)(v12), (S_c8c03669c *)t8);
     t9 = call_8c036708(0);
     if (t9 == 0) {
-        call_8c12b880((void *)((void *)0x8c510920), 0, 0xbb);
-        call_8c12b880((void *)((void *)0x8c510a96), 0, 0x42);
+        memset_8c12b880((void *)((void *)0x8c510920), 0, 0xbb);
+        memset_8c12b880((void *)((void *)0x8c510a96), 0, 0x42);
         v13 = (S_vv13 *)(*(S_g8c467180 **)0x8c467180)->f70;
         call_8c12b048((void *)((void *)0x8c510920), (int)(v13->f0c), (S_c8c03669c *)(v13->f20));
         v14 = (S_vv14 *)(*(S_g8c467180 **)0x8c467180)->f70;
@@ -170,18 +170,18 @@ Object *operation_8c2329b0(Object *o)
     }
     t10 = call_8c036708(1);
     if (t10 == 0) {
-        call_8c12b880((void *)((void *)0x8c5109db), 0, 0xbb);
-        call_8c12b880((void *)((void *)0x8c510ad8), 0, 0x42);
+        memset_8c12b880((void *)((void *)0x8c5109db), 0, 0xbb);
+        memset_8c12b880((void *)((void *)0x8c510ad8), 0, 0x42);
         v17 = (S_vv17 *)(*(S_g8c467180 **)0x8c467180)->f70;
         call_8c12b048((void *)((void *)0x8c5109db), (int)(v17->f0c), (S_c8c03669c *)(v17->f20));
         v18 = (S_vv18 *)(*(S_g8c467180 **)0x8c467180)->f70;
         call_8c12b048((void *)((void *)0x8c510ad8), (int)(v18->f10), (S_c8c03669c *)(v18->f20));
     }
-    t11 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
+    t11 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
     if (t11 != 0) {
         operation_8c198294((void *)t11, (int)o);
     }
-    t12 = allocate_block((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xac);
+    t12 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xac);
     if (t12 != 0) {
         call_8c199688(t12, o, 1);
     }

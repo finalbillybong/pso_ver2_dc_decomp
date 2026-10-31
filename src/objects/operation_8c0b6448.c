@@ -40,14 +40,14 @@ struct Arg0_58 {
 struct Frame {
     char unknown4[0x10];
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c013bd0(void *, void *, int);
 Object *operation_8c0b6448(Object *o, Arg1 *a1, Arg2 *a2, int a3, int a4, int a5, float f0, float f1, float f2)
 {
     Frame frame;
     Object **home = &o;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a5);
+    TObject_ctor_8c0330e4((void *)o, (void *)a5);
     o->dispatch = (void *)0x8c2660f8;
     *(Block16 *)&o->f28 = *(Block16 *)&a1->f00;
     *(Vector3 *)&o->f38 = *(Vector3 *)&a2->f00;

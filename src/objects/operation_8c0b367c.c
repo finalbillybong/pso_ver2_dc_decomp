@@ -22,10 +22,10 @@ struct Object {
     float f48;
     int f4c;
 };
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 Object *operation_8c0b367c(Object *o, int a1, int a2)
 {
-    initialize_hierarchy_node((void *)o, (void *)a2);
+    TObject_ctor_8c0330e4((void *)o, (void *)a2);
     o->dispatch = (void *)0x8c265f28;
     o->f20 = a1;
     o->f24 = 0.0f;

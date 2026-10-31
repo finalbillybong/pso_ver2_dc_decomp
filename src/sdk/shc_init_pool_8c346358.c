@@ -20,7 +20,7 @@ extern char g_blocks_8c526e74[];
 extern char g_ring_8c527e74[];
 extern char g_buffer_area_8c528074[];
 extern char g_slots_8c528294[];
-extern void *memset(void *, int, unsigned long);
+extern void *memset_8c12b880(void *, int, unsigned long);
 extern int set_blocks_8c347a5c(void *, int);
 extern int set_ring_8c347ba0(void *, int);
 extern int set_buffer_8c347158(unsigned char *);
@@ -39,7 +39,7 @@ int init_pool_8c346358(int blocks, int ring, int slots)
     _builtin_set_imask(15);
     count.n = 0x100;
     g_system_8c3fac48 = (System *)((int)(g_system_area_8c526a18 + 31) & ~31);
-    memset(g_system_8c3fac48, 0xff, 0x43c);
+    memset_8c12b880(g_system_8c3fac48, 0xff, 0x43c);
     g_system_8c3fac48->unknown9c = 0;
     buffer = (unsigned char *)((int)(g_buffer_area_8c528074 + 31) & ~31);
     set_blocks_8c347a5c(g_blocks_8c526e74, 0x40);
