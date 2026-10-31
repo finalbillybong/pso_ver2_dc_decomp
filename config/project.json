@@ -227436,6 +227436,37 @@
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_flag_reset_8c1ffe64",
+      "source": "src/sdk/shc_flag_reset_8c1ffe64.c",
+      "address": "0x8c1ffe64",
+      "entry": "_clear_task_8c1ffe64",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_list_clear_8c20133c": "0x8c20133c"
+      },
+      "ranges": [
+        {
+          "offset": 2031204,
+          "size": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "clear_task_8c1ffe64",
+          "address": "0x8c1ffe64",
+          "size": 18
+        },
+        {
+          "name": "mark_task_8c1ffe76",
+          "address": "0x8c1ffe76",
+          "size": 34
+        }
+      ],
+      "reference_sha256": "85aab5133c93c40c3b9082c7b2661c1c9e097d61e9b1fa7d5273194f33cd34a1",
+      "headers": [],
+      "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
       "id": "shc_rec_io_8c200ac4",
       "source": "src/sdk/shc_rec_io_8c200ac4.c",
       "address": "0x8c200ac4",
@@ -288381,6 +288412,70 @@
       "boundary_review": "SHC pool group: 3 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_voice_cfg_8c342b4c",
+      "source": "src/sdk/shc_voice_cfg_8c342b4c.c",
+      "address": "0x8c342b4c",
+      "entry": "_voice_setup_8c342b4c",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_port_set_slot_8c364aae": "0x8c364aae",
+        "_modem_send_8c361b76": "0x8c361b76",
+        "_func_8c3637d8": "0x8c3637d8",
+        "_port_pause_8c3640ee": "0x8c3640ee",
+        "_port_resume_8c364158": "0x8c364158",
+        "_mic_set_8c341470": "0x8c341470",
+        "_get_status_8c3642dc": "0x8c3642dc",
+        "_set_status_8c364312": "0x8c364312",
+        "_ports_poll_8c364a78": "0x8c364a78"
+      },
+      "ranges": [
+        {
+          "offset": 3353420,
+          "size": 376
+        }
+      ],
+      "functions": [
+        {
+          "name": "voice_setup_8c342b4c",
+          "address": "0x8c342b4c",
+          "size": 148
+        },
+        {
+          "name": "voice_chk_a_8c342be0",
+          "address": "0x8c342be0",
+          "size": 28
+        },
+        {
+          "name": "voice_chk_b_8c342bfc",
+          "address": "0x8c342bfc",
+          "size": 28
+        },
+        {
+          "name": "voice_chk_c_8c342c18",
+          "address": "0x8c342c18",
+          "size": 28
+        },
+        {
+          "name": "voice_stat_8c342c34",
+          "address": "0x8c342c34",
+          "size": 46
+        },
+        {
+          "name": "voice_send_8c342c62",
+          "address": "0x8c342c62",
+          "size": 22
+        },
+        {
+          "name": "voice_idle_8c342c78",
+          "address": "0x8c342c78",
+          "size": 76
+        }
+      ],
+      "reference_sha256": "5c0dd69a98b4a2bc065761f8adb008e665f9be1dfbfd6b51249bc8d85d21307d",
+      "headers": [],
+      "boundary_review": "SHC pool group: 7 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
       "id": "shc_draw_text_8c343050",
       "source": "src/sdk/shc_draw_text_8c343050.c",
       "address": "0x8c343050",
@@ -288461,6 +288556,32 @@
         }
       ],
       "reference_sha256": "7040be9343e587540aed02403b0360a49ecc06aaf5443ba1eef27174dd64a96c",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_rate_pitch_8c343b34",
+      "source": "src/sdk/shc_rate_pitch_8c343b34.c",
+      "address": "0x8c343b34",
+      "entry": "_rate_to_pitch_8c343b34",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_func_8c12b634": "0x8c12b634"
+      },
+      "ranges": [
+        {
+          "offset": 3357492,
+          "size": 112
+        }
+      ],
+      "functions": [
+        {
+          "name": "rate_to_pitch_8c343b34",
+          "address": "0x8c343b34",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "5a94589834fa4c7cf136d8ae7c8a94d17669f1bd228e8592d30670f48d083e4a",
       "headers": [],
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
@@ -291591,6 +291712,70 @@
       "boundary_review": "SHC pool group: 5 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_obj_setters_8c34fae0",
+      "source": "src/sdk/shc_obj_setters_8c34fae0.c",
+      "address": "0x8c34fae0",
+      "entry": "_obj_set_50_8c34fae0",
+      "compiler": "shc-v5.1r13",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 3406560,
+          "size": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "obj_set_50_8c34fae0",
+          "address": "0x8c34fae0",
+          "size": 6
+        },
+        {
+          "name": "obj_set_60_8c34fae6",
+          "address": "0x8c34fae6",
+          "size": 8
+        },
+        {
+          "name": "obj_set_64_8c34faee",
+          "address": "0x8c34faee",
+          "size": 6
+        },
+        {
+          "name": "obj_set_6c_8c34faf4",
+          "address": "0x8c34faf4",
+          "size": 6
+        },
+        {
+          "name": "obj_set_68_8c34fafa",
+          "address": "0x8c34fafa",
+          "size": 6
+        },
+        {
+          "name": "obj_set_70_8c34fb00",
+          "address": "0x8c34fb00",
+          "size": 6
+        },
+        {
+          "name": "obj_set_74_8c34fb06",
+          "address": "0x8c34fb06",
+          "size": 6
+        },
+        {
+          "name": "obj_set_78_8c34fb0c",
+          "address": "0x8c34fb0c",
+          "size": 6
+        },
+        {
+          "name": "obj_set_7c_8c34fb12",
+          "address": "0x8c34fb12",
+          "size": 6
+        }
+      ],
+      "reference_sha256": "fb674bab57cc0eb773fc6680e35aef878123575fe362fc6c8453f5076c90c5a3",
+      "headers": [],
+      "boundary_review": "SHC pool group: 9 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
       "id": "shc_obj_accessors_8c34ff58",
       "source": "src/sdk/shc_obj_accessors_8c34ff58.c",
       "address": "0x8c34ff58",
@@ -291638,6 +291823,101 @@
       "reference_sha256": "24cd4f8e1af5c6f9837138a39d4bee960e8c110e36dec4976448887dbc559fec",
       "headers": [],
       "boundary_review": "SHC pool group: 6 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_stream_open_8c350e68",
+      "source": "src/sdk/shc_stream_open_8c350e68.c",
+      "address": "0x8c350e68",
+      "entry": "_stream_open_8c350e68",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_g_8c536418": "0x8c536418",
+        "_str_8c3f47f8": "0x8c3f47f8",
+        "_str_8c3f481c": "0x8c3f481c",
+        "_str_8c3f4844": "0x8c3f4844",
+        "_str_8c3f4870": "0x8c3f4870",
+        "_call_8c35049c": "0x8c35049c",
+        "_lock_8c34bbfc": "0x8c34bbfc",
+        "_unlock_8c34bc24": "0x8c34bc24",
+        "_call_8c34db88": "0x8c34db88",
+        "_call_8c349766": "0x8c349766",
+        "_call_8c34c4c0": "0x8c34c4c0",
+        "_call_8c34c3d4": "0x8c34c3d4",
+        "_call_8c350334": "0x8c350334",
+        "_call_8c349852": "0x8c349852",
+        "_call_8c358b14": "0x8c358b14",
+        "_call_8c34c3ae": "0x8c34c3ae",
+        "_call_8c3502a8": "0x8c3502a8"
+      },
+      "ranges": [
+        {
+          "offset": 3411560,
+          "size": 620
+        }
+      ],
+      "functions": [
+        {
+          "name": "stream_open_8c350e68",
+          "address": "0x8c350e68",
+          "size": 144
+        },
+        {
+          "name": "stream_open2_8c350ef8",
+          "address": "0x8c350ef8",
+          "size": 76
+        },
+        {
+          "name": "stream_play_8c350f44",
+          "address": "0x8c350f44",
+          "size": 2
+        },
+        {
+          "name": "stream_play_mode_8c350f46",
+          "address": "0x8c350f46",
+          "size": 148
+        },
+        {
+          "name": "stream_play_at_8c350fda",
+          "address": "0x8c350fda",
+          "size": 250
+        }
+      ],
+      "reference_sha256": "d8493a88c2774355e94b362e7149e65ad0554c2b9efa5822f90f42f1c0b44fd0",
+      "headers": [],
+      "boundary_review": "SHC pool group: 5 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_stream_refill_8c351770",
+      "source": "src/sdk/shc_stream_refill_8c351770.c",
+      "address": "0x8c351770",
+      "entry": "_stream_refill_8c351770",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_snd_thunk_8c34e0fa": "0x8c34e0fa",
+        "_snd_max_8c34e100": "0x8c34e100",
+        "_handle_pos_8c34e89e": "0x8c34e89e",
+        "_handle_state_8c34e368": "0x8c34e368",
+        "_snd_thunk_8c34e0ee": "0x8c34e0ee",
+        "_stream_channels_8c350772": "0x8c350772",
+        "_d_8c3fb414": "0x8c3fb414",
+        "_memset": "0x8c12b880"
+      },
+      "ranges": [
+        {
+          "offset": 3413872,
+          "size": 260
+        }
+      ],
+      "functions": [
+        {
+          "name": "stream_refill_8c351770",
+          "address": "0x8c351770",
+          "size": 260
+        }
+      ],
+      "reference_sha256": "29a4cf3a3f479247034092ce47ae906ad95a6f42883051cddc30e9f39fde7a77",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
       "id": "shc_print_hook_8c3523fc",
@@ -291859,6 +292139,47 @@
       "reference_sha256": "b63d54fbdf5291045da537c07350daa66acf570d3c29224937d6a6dcf036d0cd",
       "headers": [],
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_sound_init_8c352e20",
+      "source": "src/sdk/shc_sound_init_8c352e20.c",
+      "address": "0x8c352e20",
+      "entry": "_sound_nop_8c352e20",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_d_8c3fb568": "0x8c3fb568",
+        "_g_init_count_8c3fb56c": "0x8c3fb56c",
+        "_g_driver_8c3fb570": "0x8c3fb570",
+        "_g_driver_arg_8c3fb574": "0x8c3fb574",
+        "_init_hardware_8c354594": "0x8c354594",
+        "_memset": "0x8c12b880",
+        "_g_buffer_a_8c5383b0": "0x8c5383b0",
+        "_g_buffer_b_8c538830": "0x8c538830",
+        "_g_levels_8c539050": "0x8c539050",
+        "_create_driver_8c35569e": "0x8c35569e",
+        "_set_print_hook_8c3545cc": "0x8c3545cc"
+      },
+      "ranges": [
+        {
+          "offset": 3419680,
+          "size": 172
+        }
+      ],
+      "functions": [
+        {
+          "name": "sound_nop_8c352e20",
+          "address": "0x8c352e20",
+          "size": 4
+        },
+        {
+          "name": "sound_init_8c352e24",
+          "address": "0x8c352e24",
+          "size": 168
+        }
+      ],
+      "reference_sha256": "82b590dee4772c7c59fb36593a2f56a15bd3cd364c95c4719c9e38e7b5eedde6",
+      "headers": [],
+      "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
       "id": "shc_print_hook_8c3545cc",
@@ -292350,6 +292671,128 @@
       "reference_sha256": "27c10d378c63ea276b813d4dc73dbbd458ea1806efb97ea01311451e50bf2ad9",
       "headers": [],
       "boundary_review": "SHC pool group: 6 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_mps_init_8c35add0",
+      "source": "src/sdk/shc_mps_init_8c35add0.c",
+      "address": "0x8c35add0",
+      "entry": "_mps_init_8c35add0",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_g_mps_8c5483c0": "0x8c5483c0",
+        "_g_last_8c5483c4": "0x8c5483c4",
+        "_str_8c3f6148": "0x8c3f6148",
+        "_str_8c3f6164": "0x8c3f6164",
+        "_mem_fill_8c359bac": "0x8c359bac",
+        "_call_8c12b154": "0x8c12b154",
+        "_call_8c359bf4": "0x8c359bf4",
+        "_call_8c359bf8": "0x8c359bf8",
+        "_hook_a_8c35acd4": "0x8c35acd4",
+        "_hook_b_8c35acd8": "0x8c35acd8",
+        "__quick_odd_mvn": "0x8c12bdd4",
+        "__quick_evn_mvn": "0x8c12bdc8"
+      },
+      "ranges": [
+        {
+          "offset": 3452368,
+          "size": 816
+        }
+      ],
+      "functions": [
+        {
+          "name": "mps_init_8c35add0",
+          "address": "0x8c35add0",
+          "size": 38
+        },
+        {
+          "name": "setup_8c35adf6",
+          "address": "0x8c35adf6",
+          "size": 110
+        },
+        {
+          "name": "mps_finish_8c35ae64",
+          "address": "0x8c35ae64",
+          "size": 80
+        },
+        {
+          "name": "reset_cb_8c35aeb4",
+          "address": "0x8c35aeb4",
+          "size": 4
+        },
+        {
+          "name": "clear_cb_8c35aeb8",
+          "address": "0x8c35aeb8",
+          "size": 10
+        },
+        {
+          "name": "report_8c35aec2",
+          "address": "0x8c35aec2",
+          "size": 90
+        },
+        {
+          "name": "call_cb_8c35af1c",
+          "address": "0x8c35af1c",
+          "size": 32
+        },
+        {
+          "name": "mps_set_cb_8c35af3c",
+          "address": "0x8c35af3c",
+          "size": 72
+        },
+        {
+          "name": "set_cb_rec_8c35af84",
+          "address": "0x8c35af84",
+          "size": 6
+        },
+        {
+          "name": "mps_get_cb_8c35af8a",
+          "address": "0x8c35af8a",
+          "size": 74
+        },
+        {
+          "name": "device_busy_8c35afd4",
+          "address": "0x8c35afd4",
+          "size": 24
+        },
+        {
+          "name": "mps_open_8c35afec",
+          "address": "0x8c35afec",
+          "size": 48
+        },
+        {
+          "name": "find_free_8c35b01c",
+          "address": "0x8c35b01c",
+          "size": 50
+        },
+        {
+          "name": "init_device_8c35b04e",
+          "address": "0x8c35b04e",
+          "size": 74
+        },
+        {
+          "name": "neg12_8c35b098",
+          "address": "0x8c35b098",
+          "size": 10
+        },
+        {
+          "name": "neg32_8c35b0a2",
+          "address": "0x8c35b0a2",
+          "size": 20
+        },
+        {
+          "name": "neg32b_8c35b0b6",
+          "address": "0x8c35b0b6",
+          "size": 20
+        },
+        {
+          "name": "close_device_8c35b0ca",
+          "address": "0x8c35b0ca",
+          "size": 54
+        }
+      ],
+      "reference_sha256": "ed9aed6bce85ae3400476b8a91c6a4f8d3e6c740a2ddf2ae1637a669fea351d0",
+      "headers": [],
+      "boundary_review": "SHC pool group: 18 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
       "id": "shc_copy_rect_8c35c1d8",
@@ -293205,6 +293648,135 @@
       "reference_sha256": "245af17c736d73a8b879468b10a84f79e47787dd7c5f6e4a6606cf3629f5ced1",
       "headers": [],
       "boundary_review": "SHC pool group: 3 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_port_open_8c363ef0",
+      "source": "src/sdk/shc_port_open_8c363ef0.c",
+      "address": "0x8c363ef0",
+      "entry": "_port_create_8c363ef0",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_mem_fill_8c359bac": "0x8c359bac",
+        "_copy_bytes_8c359abc": "0x8c359abc",
+        "_call_8c3604ea": "0x8c3604ea",
+        "_call_8c360c7e": "0x8c360c7e",
+        "_call_8c364d1e": "0x8c364d1e",
+        "_call_8c35f7f0": "0x8c35f7f0",
+        "_call_8c365a78": "0x8c365a78",
+        "_call_8c364498": "0x8c364498",
+        "_get_slot_8c364c24": "0x8c364c24",
+        "_call_8c365d12": "0x8c365d12",
+        "_port_invalid_8c360d92": "0x8c360d92",
+        "_send_code_8c360c8c": "0x8c360c8c",
+        "_call_8c3604fa": "0x8c3604fa",
+        "_call_8c3637fa": "0x8c3637fa",
+        "_request_8c365d70": "0x8c365d70",
+        "_call_8c3602ea": "0x8c3602ea",
+        "_g_default_slots_8c5499b8": "0x8c5499b8",
+        "__quick_odd_mvn": "0x8c12bdd4",
+        "__quick_evn_mvn": "0x8c12bdc8"
+      },
+      "ranges": [
+        {
+          "offset": 3489520,
+          "size": 1204
+        }
+      ],
+      "functions": [
+        {
+          "name": "port_create_8c363ef0",
+          "address": "0x8c363ef0",
+          "size": 174
+        },
+        {
+          "name": "init_in_8c363f9e",
+          "address": "0x8c363f9e",
+          "size": 42
+        },
+        {
+          "name": "init_out_8c363fc8",
+          "address": "0x8c363fc8",
+          "size": 34
+        },
+        {
+          "name": "port_add_in_8c363fea",
+          "address": "0x8c363fea",
+          "size": 122
+        },
+        {
+          "name": "port_add_out_8c364064",
+          "address": "0x8c364064",
+          "size": 58
+        },
+        {
+          "name": "start_8c36409e",
+          "address": "0x8c36409e",
+          "size": 6
+        },
+        {
+          "name": "port_stop_8c3640a4",
+          "address": "0x8c3640a4",
+          "size": 42
+        },
+        {
+          "name": "stop_8c3640ce",
+          "address": "0x8c3640ce",
+          "size": 32
+        },
+        {
+          "name": "port_pause_8c3640ee",
+          "address": "0x8c3640ee",
+          "size": 58
+        },
+        {
+          "name": "set_phase_8c364128",
+          "address": "0x8c364128",
+          "size": 10
+        },
+        {
+          "name": "port_request_8c364132",
+          "address": "0x8c364132",
+          "size": 38
+        },
+        {
+          "name": "port_resume_8c364158",
+          "address": "0x8c364158",
+          "size": 76
+        },
+        {
+          "name": "resume_8c3641a4",
+          "address": "0x8c3641a4",
+          "size": 34
+        },
+        {
+          "name": "restore_8c3641c6",
+          "address": "0x8c3641c6",
+          "size": 64
+        },
+        {
+          "name": "port_reopen_8c364206",
+          "address": "0x8c364206",
+          "size": 214
+        },
+        {
+          "name": "get_status_8c3642dc",
+          "address": "0x8c3642dc",
+          "size": 54
+        },
+        {
+          "name": "set_status_8c364312",
+          "address": "0x8c364312",
+          "size": 56
+        },
+        {
+          "name": "apply_mode_8c36434a",
+          "address": "0x8c36434a",
+          "size": 90
+        }
+      ],
+      "reference_sha256": "55fe7abaa61079b317173b7c771b27091cbc64cacd49806ef4c27727f935bac3",
+      "headers": [],
+      "boundary_review": "SHC pool group: 18 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
       "id": "shc_dev_query_8c3643a4",
@@ -294728,6 +295300,43 @@
       "boundary_review": "SHC pool group: 10 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_heap_8c384418",
+      "source": "src/sdk/shc_heap_8c384418.c",
+      "address": "0x8c384418",
+      "entry": "_heap_init_8c384418",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_heap_8c576290": "0x8c576290",
+        "_rover_8c5762b4": "0x8c5762b4"
+      },
+      "ranges": [
+        {
+          "offset": 3621912,
+          "size": 236
+        }
+      ],
+      "functions": [
+        {
+          "name": "heap_init_8c384418",
+          "address": "0x8c384418",
+          "size": 40
+        },
+        {
+          "name": "heap_alloc_8c384440",
+          "address": "0x8c384440",
+          "size": 102
+        },
+        {
+          "name": "heap_free_8c3844a6",
+          "address": "0x8c3844a6",
+          "size": 94
+        }
+      ],
+      "reference_sha256": "f9923b08de919224b2049b9f39bddfcdbce908e4a32a92f5a3bc94b034e5f83d",
+      "headers": [],
+      "boundary_review": "SHC pool group: 3 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
       "id": "shc_mixer_reset_8c384e18",
       "source": "src/sdk/shc_mixer_reset_8c384e18.c",
       "address": "0x8c384e18",
@@ -294924,6 +295533,45 @@
       "reference_sha256": "eabc277d43be2f60f776b28e897bb647c21468a5d5c82d3db7fb20cdec8a1725",
       "headers": [],
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_select_mode_8c3903c0",
+      "source": "src/sdk/shc_select_mode_8c3903c0.c",
+      "address": "0x8c3903c0",
+      "entry": "_select_mode_a_8c3903c0",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_table_8c3fc340": "0x8c3fc340",
+        "_table_8c3fc348": "0x8c3fc348",
+        "_set_mode_8c37b0b8": "0x8c37b0b8",
+        "_start_mode_a_8c37a57a": "0x8c37a57a",
+        "_start_mode_b_8c37a4a8": "0x8c37a4a8",
+        "_func_8c37a6b0": "0x8c37a6b0",
+        "_func_8c37a604": "0x8c37a604",
+        "_mode_8c5765dc": "0x8c5765dc",
+        "_scale_8c5765d8": "0x8c5765d8"
+      },
+      "ranges": [
+        {
+          "offset": 3670976,
+          "size": 188
+        }
+      ],
+      "functions": [
+        {
+          "name": "select_mode_a_8c3903c0",
+          "address": "0x8c3903c0",
+          "size": 76
+        },
+        {
+          "name": "select_mode_b_8c39040c",
+          "address": "0x8c39040c",
+          "size": 112
+        }
+      ],
+      "reference_sha256": "0d2345cd89ed5c2ff613bd5163d80a7ebee533632ffdedbb74532203c94ae89c",
+      "headers": [],
+      "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
       "id": "shc_reset_state_8c391c94",
@@ -295142,6 +295790,57 @@
       "reference_sha256": "da2b93bc08cd1ce235ab807bd9c3551ee5954e87462693caf6c9b0f6e885d819",
       "headers": [],
       "boundary_review": "SHC pool group: 4 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_udp_8c3c4a30",
+      "source": "src/sdk/shc_udp_8c3c4a30.c",
+      "address": "0x8c3c4a30",
+      "entry": "_packet_send_8c3c4a30",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_g_socks_8c5b85b4": "0x8c5b85b4",
+        "_g_nsocks_8c5b857d": "0x8c5b857d",
+        "_udp_ready_8c3c5eb0": "0x8c3c5eb0",
+        "_msg_sequence_8c3c8692": "0x8c3c8692",
+        "_route_8c3c7ca4": "0x8c3c7ca4",
+        "_htons_8c3c8462": "0x8c3c8462",
+        "_packet_set_8c3c867e": "0x8c3c867e",
+        "_htonl_8c3c8440": "0x8c3c8440",
+        "_iface_addr_8c3c7d02": "0x8c3c7d02",
+        "_ip_send_8c3c68d8": "0x8c3c68d8",
+        "_memcpy": "0x8c12b77c",
+        "_buf_ptr_8c3c868e": "0x8c3c868e",
+        "_msg_send_8c3c8474": "0x8c3c8474",
+        "_sock_deliver_8c3ce8c4": "0x8c3ce8c4",
+        "_icmp_unreach_8c3c72ee": "0x8c3c72ee",
+        "_sum_8c3c86b6": "0x8c3c86b6"
+      },
+      "ranges": [
+        {
+          "offset": 3885616,
+          "size": 944
+        }
+      ],
+      "functions": [
+        {
+          "name": "packet_send_8c3c4a30",
+          "address": "0x8c3c4a30",
+          "size": 426
+        },
+        {
+          "name": "udp_input_8c3c4bda",
+          "address": "0x8c3c4bda",
+          "size": 426
+        },
+        {
+          "name": "udp_cksum_8c3c4d84",
+          "address": "0x8c3c4d84",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "9d06d57a88300f82a0e6114be8a02d5fc9778b0659c10b00da37e05b0f762ca8",
+      "headers": [],
+      "boundary_review": "SHC pool group: 3 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
       "id": "shc_arp_request_8c3c57a4",
@@ -295828,6 +296527,96 @@
       "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_sock_send_8c3cd7a0",
+      "source": "src/sdk/shc_sock_send_8c3cd7a0.c",
+      "address": "0x8c3cd7a0",
+      "entry": "_sock_flush_8c3cd7a0",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_g_entries_8c5b85b0": "0x8c5b85b0",
+        "_g_mss_8c5a3690": "0x8c5a3690",
+        "_memcpy": "0x8c12b77c",
+        "_sock_complete_8c3ce424": "0x8c3ce424",
+        "_msg_sequence_8c3c8692": "0x8c3c8692",
+        "_msg_send_8c3c8474": "0x8c3c8474",
+        "_sock_kick_8c3c93e0": "0x8c3c93e0",
+        "_buf_alloc_8c3c8076": "0x8c3c8076",
+        "_buf_free_8c3c81b8": "0x8c3c81b8",
+        "__divls": "0x8c12ba9c"
+      },
+      "ranges": [
+        {
+          "offset": 3921824,
+          "size": 1092
+        }
+      ],
+      "functions": [
+        {
+          "name": "sock_flush_8c3cd7a0",
+          "address": "0x8c3cd7a0",
+          "size": 82
+        },
+        {
+          "name": "sock_send_8c3cd7f2",
+          "address": "0x8c3cd7f2",
+          "size": 622
+        },
+        {
+          "name": "sock_queue_8c3cda60",
+          "address": "0x8c3cda60",
+          "size": 64
+        },
+        {
+          "name": "sock_room_8c3cdaa0",
+          "address": "0x8c3cdaa0",
+          "size": 26
+        },
+        {
+          "name": "ring_room_8c3cdaba",
+          "address": "0x8c3cdaba",
+          "size": 16
+        },
+        {
+          "name": "sock_extent_8c3cdaca",
+          "address": "0x8c3cdaca",
+          "size": 22
+        },
+        {
+          "name": "ring_len_8c3cdae0",
+          "address": "0x8c3cdae0",
+          "size": 6
+        },
+        {
+          "name": "mss_8c3cdae6",
+          "address": "0x8c3cdae6",
+          "size": 8
+        },
+        {
+          "name": "ring_open_8c3cdaee",
+          "address": "0x8c3cdaee",
+          "size": 54
+        },
+        {
+          "name": "sock_ring_open_8c3cdb24",
+          "address": "0x8c3cdb24",
+          "size": 102
+        },
+        {
+          "name": "ring_close_8c3cdb8a",
+          "address": "0x8c3cdb8a",
+          "size": 36
+        },
+        {
+          "name": "sock_ring_close_8c3cdbae",
+          "address": "0x8c3cdbae",
+          "size": 54
+        }
+      ],
+      "reference_sha256": "4d6e03460d109c7ecc3b6be17ac482ac4ecb01f5478c8c20f26f19488d914df4",
+      "headers": [],
+      "boundary_review": "SHC pool group: 12 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
       "id": "shc_sock_req_8c3cdbe4",
       "source": "src/sdk/shc_sock_req_8c3cdbe4.c",
       "address": "0x8c3cdbe4",
@@ -296029,6 +296818,42 @@
       "reference_sha256": "4156cfa6c6b8c5deec3e75ba24b9ec419b5fdbf217b17ce63829b7fcf4e4061e",
       "headers": [],
       "boundary_review": "SHC pool group: 2 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_byte_table_8c3dce50",
+      "source": "src/sdk/shc_byte_table_8c3dce50.c",
+      "address": "0x8c3dce50",
+      "entry": "_table_put_8c3dce50",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_g_table_8c5be168": "0x8c5be168"
+      },
+      "ranges": [
+        {
+          "offset": 3984976,
+          "size": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "table_put_8c3dce50",
+          "address": "0x8c3dce50",
+          "size": 8
+        },
+        {
+          "name": "table_read_8c3dce58",
+          "address": "0x8c3dce58",
+          "size": 32
+        },
+        {
+          "name": "table_ready_8c3dce78",
+          "address": "0x8c3dce78",
+          "size": 8
+        }
+      ],
+      "reference_sha256": "ff19ce9ae40de4a943946adc5c0b0b12671966920c8b2b1ce8d0d1bc7ed1fc24",
+      "headers": [],
+      "boundary_review": "SHC pool group: 3 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
       "id": "shc_track_byte_8c3e9190",

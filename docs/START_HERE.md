@@ -1,9 +1,9 @@
 # Current reconstruction checkpoint
 
-The current public checkpoint has **11587 exact functions in 11073 modules**, replacing
-**1,168,492 bytes** of the 4,162,912-byte decoded executable (**28.0691% code-range coverage**).
-Typed static data adds 493,316 bytes ([DATA.md](DATA.md)), for **39.9194% image coverage**.
-It retains **313,623 reference bytes**. This is a hybrid build; code-only completion and total function count are
+The current public checkpoint has **11673 exact functions in 11087 modules**, replacing
+**1,174,668 bytes** of the 4,162,912-byte decoded executable (**28.2175% code-range coverage**).
+Typed static data adds 493,220 bytes ([DATA.md](DATA.md)), for **40.0654% image coverage**.
+It retains **313,379 reference bytes**. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
 
@@ -32,7 +32,7 @@ credit. Check every proposed range against existing modules before integration.
 ## Second compiler (Hitachi SHC)
 
 SDK and library code compiled with Hitachi SHC can now be admitted as pool-group
-units ([SHC.md](SHC.md)). 224 pool groups (40,230 bytes, 654 functions) are in.
+units ([SHC.md](SHC.md)). 238 pool groups (46,406 bytes, 740 functions) are in.
 Candidate groups: the `0x8c1f0000`–`0x8c205000` library block (about 61 KB
 SHC-shaped) and the SDK region from `0x8c340888`; a unit needs every function that
 shares its literal pool.
@@ -40,7 +40,7 @@ shares its literal pool.
 ## Assembly units
 
 Assembly is not decompiled code and is never committed ([ASM.md](ASM.md)). 88 hand-written routines
-(29,990 bytes) carry evidence that no compiler produced them; 4,852 fallback units (1,777,306 bytes) are
+(29,990 bytes) carry evidence that no compiler produced them; 4,829 fallback units (1,771,470 bytes) are
 generated from your dump for code without matching C and labelled not_decompiled. Both are
 regenerated at build time and earn no code or matching credit.
 

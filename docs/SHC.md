@@ -139,13 +139,13 @@ installation is present.
 
 ## Current units
 
-224 pool-group units, 40,230 bytes, 654 functions (listed in `config/project.json`
+238 pool-group units, 46,406 bytes, 740 functions (listed in `config/project.json`
 with `"compiler": "shc-v5.1r13"`; sources in `src/sdk/`):
 
 | Region | Units | Bytes | Functions |
 | --- | ---: | ---: | ---: |
-| Library block `0x8c1f0000`–`0x8c205000` | 21 | 5,298 | 81 |
-| SDK region from `0x8c340000` | 203 | 34,932 | 573 |
+| Library block `0x8c1f0000`–`0x8c205000` | 22 | 5,350 | 83 |
+| SDK region from `0x8c340000` | 216 | 41,056 | 657 |
 
 Units are complete pool groups: one or more consecutive literal-pool groups whose
 functions only branch to each other. A literal pool may sit inside a unit (and
