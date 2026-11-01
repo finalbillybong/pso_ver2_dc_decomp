@@ -326264,6 +326264,54 @@
       "status": "matched",
       "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "operation_8c1209d8",
+      "source": "src/objects/operation_8c1209d8.cpp",
+      "address": "0x8c1209d8",
+      "entry": "_operation_8c1209d8",
+      "symbols": {
+        "_allocate_block": "0x8c122700",
+        "_angle_difference": "0x8c0c52f4",
+        "_angle_step": "0x8c0c4f90",
+        "_call_8c0a6a10": "0x8c0a6a10",
+        "_call_8c130334": "0x8c130334",
+        "_call_8c37f6f0": "0x8c37f6f0",
+        "_g_8c418248": "0x8c418248",
+        "_g_8c4d97e0": "0x8c4d97e0",
+        "_g_8c4db520": "0x8c4db520",
+        "_g_8c4db524": "0x8c4db524",
+        "_hierarchy_is_active": "0x8c03347c",
+        "_initialize_loader_8c173578": "0x8c173578",
+        "_lookup_low_id": "0x8c021ef8",
+        "_operation_8c02688c": "0x8c02688c",
+        "_operation_8c036840": "0x8c036840",
+        "_refresh_follow_effect_8c052180": "0x8c052180",
+        "_reset_effect_table_state": "0x8c0a6bdc",
+        "_spawn_node_8c0a49c8": "0x8c0a49c8",
+        "_visit_actor_context_a": "0x8c0a4a78",
+        "_visit_actor_context_b": "0x8c0a4ab0"
+      },
+      "ranges": [
+        {
+          "offset": 1116632,
+          "size": 1328
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c1209d8",
+          "address": "0x8c1209d8",
+          "size": 1328
+        }
+      ],
+      "reference_sha256": "8599282fa2a7c190cc9665c4f234dcf8a20113b581324b5c1a8fb01151254bba",
+      "headers": [],
+      "language": "c++",
+      "linker": "codewarrior",
+      "status": "matched",
+      "reason": "Complete exact range reproduced twice from reviewed ordinary source.",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     }
   ]
 }
