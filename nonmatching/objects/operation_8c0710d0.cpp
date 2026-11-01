@@ -1,0 +1,279 @@
+/* NON-MATCHING draft: not built, not admitted, earns no matching or progress credit.
+ * address: 0x8c0710d0
+ * function: operation_8c0710d0
+ * language: c++
+ * reference size: 708 bytes
+ * compiled size: 708 bytes (+0.0%)
+ * differing lines: 22 of 272 reference instruction lines
+ * differing bytes: 26
+ * provenance: generator draft (mode switch2ext)
+ * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
+ *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
+ *   to the original
+ * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
+ */
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+typedef struct Frame Frame;
+typedef struct S_g8c418248 S_g8c418248;
+typedef struct Arg0_700 Arg0_700;
+typedef struct S_vv1 S_vv1;
+class Object;
+typedef struct Block_p0_3c {
+    float f00;
+    float f04;
+    float f08;
+} Block_p0_3c;
+class Object {
+public:
+    char unknown0[0x18];
+    virtual void v0();
+    virtual void v1();
+    virtual void v2();
+    virtual void v3();
+    virtual void v4();
+    virtual void v5();
+    virtual void v6();
+    virtual void v7();
+    virtual void v8();
+    virtual void v9();
+    virtual void v10();
+    virtual void v11();
+    virtual void v12();
+    virtual void v13();
+    virtual void v14();
+    virtual void v15();
+    virtual void v16();
+    virtual void v17();
+    virtual void v18();
+    virtual void v19();
+    virtual void v20();
+    virtual void v21();
+    virtual void v22();
+    virtual void v23();
+    virtual void v24();
+    virtual void v25();
+    virtual void v26();
+    virtual void v27();
+    virtual void v28();
+    virtual void v29();
+    virtual void v30();
+    virtual void v31();
+    virtual void v32();
+    virtual void v33();
+    virtual void v34();
+    virtual void v35();
+    virtual void v36();
+    virtual void v37();
+    virtual void v38();
+    virtual void v39();
+    virtual void v40();
+    virtual void v41();
+    virtual void v42();
+    virtual void v43();
+    virtual void v44();
+    virtual void v45();
+    virtual void v46();
+    virtual void v47();
+    virtual void v48();
+    virtual void v49();
+    virtual void v50();
+    virtual void v51();
+    virtual void v52();
+    virtual void v53();
+    virtual void v54();
+    virtual void v55();
+    virtual void v56();
+    virtual void v57();
+    virtual void v58();
+    virtual void v59();
+    virtual void v60();
+    virtual void v61();
+    virtual void v62();
+    virtual void v63();
+    virtual void v64();
+    virtual void v65();
+    virtual void v66();
+    virtual void v67();
+    virtual void v68();
+    virtual void v69();
+    virtual void v70();
+    virtual void v71();
+    virtual void v72();
+    virtual void v73();
+    virtual void v74();
+    virtual void v75();
+    virtual void v76();
+    virtual void v77();
+    virtual void v78();
+    virtual void v79();
+    virtual void v80();
+    virtual void v81();
+    virtual void v82();
+    virtual void v83();
+    virtual void v84();
+    virtual void v85();
+    virtual void v86();
+    virtual void v87();
+    virtual void v88();
+    virtual void v89();
+    virtual void v90();
+    virtual void v91();
+    virtual void v92();
+    virtual void v93(int, int);
+    virtual void v94();
+    virtual void v95();
+    virtual void v96();
+    virtual void v97();
+    virtual void v98();
+    virtual void v99();
+    virtual void v100();
+    virtual void v101();
+    virtual void v102();
+};
+typedef struct ObjectData {
+    char unknown0[0x20];
+    short f20;
+    char unknown22[0x1a];
+    Block_p0_3c f3c;
+    char unknown48[0x360];
+    volatile unsigned short f3a8;
+    char unknown3aa[0x32];
+    int f3dc;
+    char unknown3e0[0x24];
+    int f404;
+    char unknown408[0x1f0];
+    float f5f8;
+    float f5fc;
+    char unknown600[0x98];
+    int f698;
+    char unknown69c[0x10];
+    float f6ac;
+    float f6b0;
+    float f6b4;
+    float f6b8;
+    char unknown6bc[0x44];
+    Arg0_700 *f700;
+} ObjectData;
+struct S_vv1 {
+    int f00;
+};
+struct Arg0_700 {
+    char unknown0[0x8];
+    int f08;
+    char unknownc[0x10];
+    float f1c;
+};
+struct Frame {
+    Vector3 f00;
+    char f0c;
+    char f0d;
+    short f0e;
+    short f10;
+    short f12;
+    int f14;
+    float f18;
+    float f1c;
+    char f20;
+    char f21;
+    short f22;
+    short f24;
+    short f26;
+    int f28;
+    float f2c;
+    float f30;
+};
+extern S_g8c418248 *g_8c418248;
+extern "C" void operation_8c0368a8(void *);
+extern "C" int lookup_low_id(int);
+extern "C" void vector_sub_in_place_8c37f6f0(Frame *, int);
+extern "C" float normalize_vector_checked(void *);
+extern "C" void operation_8c191654(int, int, int);
+extern "C" void operation_8c0710d0(Object *o, int a1)
+{
+    Frame frame;
+    S_vv1 *v1;
+    int v4;
+    int t1;
+    float t2;
+    v1 = (S_vv1 *)((char *)o + 0x82c);
+    switch (a1) {
+    case 4:
+        o->v102();
+        ((ObjectData *)o)->f404 = 2;
+        *(int *)((char *)o + 0x3dc) &= -0x101;
+        ((ObjectData *)o)->f5f8 = ((ObjectData *)o)->f3c.f04 + -400.0f;
+        ((ObjectData *)o)->f5fc = -400.0f;
+        ((ObjectData *)o)->f3dc |= 0xc00;
+        ((ObjectData *)o)->f3dc &= -0x381;
+        o->v97();
+        o->v100();
+        v1->f00 = 0;
+        return;
+    case 2:
+    case 11:
+        if (((ObjectData *)o)->f700->f1c > 0.1f) {
+            o->v93(0x1c, 6);
+            (&frame)->f20 = 0x12;
+            (&frame)->f21 = 5;
+            (&frame)->f22 = ((ObjectData *)o)->f20;
+            (&frame)->f24 = 0x1c;
+            (&frame)->f26 = ((ObjectData *)o)->f698;
+            (&frame)->f28 = ((ObjectData *)o)->f3a8 & 0xffff;
+            (&frame)->f2c = ((ObjectData *)o)->f6ac;
+            (&frame)->f30 = ((ObjectData *)o)->f6b0;
+            operation_8c0368a8((void *)(&(&frame)->f20));
+            return;
+        }
+        if (((((ObjectData *)o)->f700->f08 & 2)) == 0) {
+        } else {
+            o->v93(0x13, 6);
+            (&frame)->f0c = 0x12;
+            (&frame)->f0d = 5;
+            (&frame)->f0e = ((ObjectData *)o)->f20;
+            (&frame)->f10 = 0x13;
+            (&frame)->f12 = ((ObjectData *)o)->f698;
+            (&frame)->f14 = ((ObjectData *)o)->f3a8 & 0xffff;
+            (&frame)->f18 = ((ObjectData *)o)->f6ac;
+            (&frame)->f1c = ((ObjectData *)o)->f6b0;
+            operation_8c0368a8((void *)(&(&frame)->f0c));
+        }
+        return;
+    case 7:
+        ((ObjectData *)o)->f3c.f00 = ((ObjectData *)o)->f6b4;
+        ((ObjectData *)o)->f3c.f08 = ((ObjectData *)o)->f6b8;
+        return;
+    case 6:
+        ((ObjectData *)o)->f6ac = ((ObjectData *)o)->f3c.f00;
+        ((ObjectData *)o)->f6b0 = ((ObjectData *)o)->f3c.f08;
+        return;
+    case 0:
+        v1->f00 += 1;
+        if (v1->f00 > 0xa) {
+            t1 = lookup_low_id((int)g_8c418248);
+            if (t1 != 0) {
+                *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((ObjectData *)o)->f3c;
+                vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (int)(t1 + 0x3c));
+                t2 = normalize_vector_checked((void *)(&frame));
+                if (!(700.0f > t2)) {
+                    v4 = (int)1;
+                } else {
+                    v4 = (int)(7 - (int)(t2 * 6.0f / 700.0f));
+                }
+                operation_8c191654(v4, 0xf, 3);
+            }
+            v1->f00 = 0;
+        }
+        return;
+    case 1:
+    case 3:
+    case 5:
+    case 8:
+    case 9:
+    case 10:
+        break;
+    }
+}

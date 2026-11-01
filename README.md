@@ -39,6 +39,11 @@ An exact hybrid image is not evidence of a complete decompilation.
 [Matching cookbook](docs/MATCHING_COOKBOOK.md): find proven CodeWarrior techniques
 by mismatch symptom, with source examples and recorded limitations.
 
+[Non-matching draft archive](nonmatching/README.md): readable C/C++ drafts of
+2,447 functions that are not yet matched, for reading, modding and porting. They
+are labelled NON-MATCHING, are never built or admitted, and carry no matching or
+progress credit. The build still uses fallback assembly for that code.
+
 ## Building
 
 You must supply your own matching game dump. No game binaries, assets, SDK
@@ -110,6 +115,7 @@ DAT object types, quest opcodes) are marked as such in their evidence.
 | `src/data` | Typed static-data modules (virtual tables, strings, typed tables); see `config/data.json` |
 | `src/sdk` | Hitachi SHC pool-group units (SDK and library code); see [SHC.md](docs/SHC.md) |
 | `src/provisional` | Unmatched candidates, excluded from progress |
+| `nonmatching` | Non-matching draft archive (never built, no credit); see `config/nonmatching.json` |
 | `config` | Reference hashes, matching manifest, dependency addresses and queue |
 | `tools` | Extraction, compilation, exact comparison and analysis utilities |
 | `tests` | Host-side tooling tests using synthetic fixtures |

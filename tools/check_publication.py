@@ -7,7 +7,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = {'analysis.json', 'asm.json', 'assets.json', 'extracts.json', 'compiler-packages.json', 'data.json', 'decoded.json',
-          'local.example.json', 'matching-packages.json', 'names.json', 'progress-proof.json',
+          'local.example.json', 'matching-packages.json', 'names.json', 'nonmatching.json', 'progress-proof.json',
           'project.json', 'reconstruction-targets.json', 'reference.json',
           'samples.json', 'toolchain.example.json'}
 TOP = {'.gitignore', '.gitattributes', 'README.md', 'CONTRIBUTING.md', 'NOTICE.md',
@@ -29,6 +29,9 @@ def allowed(name):
         return p.suffix == '.md' or p.name == 'progress.svg'
     if p.parts[0] == 'src':
         return p.suffix in {'.c', '.cpp', '.h'}
+    if p.parts[0] == 'nonmatching':
+        # Non-matching draft archive (never built): C/C++ drafts and its README only.
+        return name == 'nonmatching/README.md' or (len(p.parts) == 3 and p.suffix in {'.c', '.cpp'})
     if len(p.parts) == 2 and p.parts[0] == 'tools':
         return p.suffix in {'.py', '.java', '.cc'}
     if len(p.parts) == 2 and p.parts[0] == 'tests':

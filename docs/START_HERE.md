@@ -44,6 +44,15 @@ Assembly is not decompiled code and is never committed ([ASM.md](ASM.md)). 88 ha
 generated from your dump for code without matching C and labelled not_decompiled. Both are
 regenerated at build time and earn no code or matching credit.
 
+## Non-matching draft archive
+
+[`nonmatching/`](../nonmatching/README.md) holds the closest non-matching C/C++ draft of
+2,447 functions that are not yet matched, each with a header that gives its differing lines,
+size against the reference, provenance and known gaps. It is for reading, modding and
+porting only. It is never built or admitted and carries no matching credit. A draft is a
+good starting point for a matching attempt; promote it through the normal pipeline, then
+run `tools/nonmatching.py regenerate --prune-admitted`.
+
 ## Latest integration batch: 281: expanded candidate pool, part 85
 
 2 new functions / 1,792 bytes. See [BATCH.md](BATCH.md) for measured gains, investigation-only work and verification.

@@ -1,0 +1,171 @@
+/* NON-MATCHING draft: not built, not admitted, earns no matching or progress credit.
+ * address: 0x8c0ac300
+ * function: TTecAnti_ctor_8c0ac300
+ * language: c
+ * reference size: 568 bytes
+ * compiled size: 568 bytes (+0.0%)
+ * differing lines: 8 of 229 reference instruction lines
+ * differing bytes: 9
+ * provenance: hand pass on a generator draft
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original
+ * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
+ */
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+typedef struct Block64 {
+    int words[16];
+} Block64;
+typedef struct Block92 {
+    int words[23];
+} Block92;
+typedef struct Frame Frame;
+typedef struct Object Object;
+typedef struct Arg0_20 Arg0_20;
+typedef struct Arg0_f8 Arg0_f8;
+typedef struct Arg0_f8_dc Arg0_f8_dc;
+typedef struct Arg3 Arg3;
+typedef struct Block_p0_78 {
+    char unknown0[0x8];
+    float f08;
+    char unknownc[0x34];
+} Block_p0_78;
+typedef struct Block_frame_1c {
+    char unknown0[0x4];
+    float f04;
+    char unknown8[0x4];
+} Block_frame_1c;
+typedef struct Block_frame_10 {
+    char unknown0[0x4];
+    float f04;
+    char unknown8[0x4];
+} Block_frame_10;
+typedef struct Block_frame_4 {
+    char unknown0[0x4];
+    float f04;
+    char unknown8[0x4];
+} Block_frame_4;
+typedef struct Block_p0_fc {
+    int f00;
+    char unknown4[0x58];
+} Block_p0_fc;
+struct Object {
+    int tag;
+    char unknown4[0x14];
+    void *dispatch;
+    char unknown1c[0x2];
+    short size;
+    Arg0_20 *f20;
+    Vector3 f24;
+    char unknown30[0x48];
+    Block_p0_78 f78;
+    char unknownb8[0x4];
+    short fbc;
+    char unknownbe[0x2];
+    int fc0;
+    short fc4;
+    char unknownc6[0x2];
+    int fc8;
+    char unknowncc[0x2c];
+    Arg0_f8 *ff8;
+    Block_p0_fc ffc;
+    int f158;
+};
+struct Arg3 {
+    Block92 f00;
+};
+struct Arg0_f8 {
+    char unknown0[0xdc];
+    Arg0_f8_dc *fdc;
+};
+struct Arg0_f8_dc {
+    char unknown0[0xc];
+    float f0c;
+};
+struct Frame {
+    Block_frame_4 f04;
+    Block_frame_10 f10;
+    Block_frame_1c f1c;
+};
+struct Arg0_20 {
+    char unknown0[0x20];
+    short f20;
+};
+extern char g_8c3047f8[];
+extern void TTecPlayerInfluence_ctor_8c0b6a74(void *, int, void *, int);
+extern void call_8c18e044(void *, void *, int, int, int);
+extern void operation_8c0ac92c(Object *);
+extern int call_8c18e768(int, int);
+extern int play_se_8c05fbf8(int, void *, int, int);
+extern void emit_control_60320(int, int, int);
+extern void create_effect_777c(void *, int);
+Object *TTecAnti_ctor_8c0ac300(Object *o, int a1, int a2, Arg3 *a3, int a4)
+{
+    Frame frame;
+    Object **home = &o;
+    int t1;
+    int t2;
+    int t3;
+    (void)home;
+    TTecPlayerInfluence_ctor_8c0b6a74((void *)o, a1, (void *)a2, a4);
+    o->dispatch = (void *)0x8c265da4;
+    call_8c18e044((void *)(((char *)o + 0x100)), (void *)((void *)0x8c07de9c), 0, 8, 0xb);
+    o->ffc.f00 = 0;
+    o->tag = (int)(*(int *)0x8c3047c8);
+    o->size = 0x15c;
+    o->f158 = 1;
+    *(Block92 *)&o->ffc = *(Block92 *)&a3->f00;
+    *(Block64 *)&o->f78 = *(Block64 *)&*(Block64 *)(g_8c3047f8 + 0x400);
+    operation_8c0ac92c(o);
+    if (o->ff8 != 0) {
+        o->ff8->fdc->f0c = o->f78.f08 + 5.0f;
+    }
+    {
+        Object *base = o;
+        t1 = call_8c18e768((int)(base->fbc), 5);
+        base->fc0 = (int)(t1);
+        if (o->fc8 != 0) {
+            if (o->fc0 != 0) {
+                if (o->fc0 == 1) {
+                    goto L_8c0ac42e;
+                }
+                if (o->fc0 == 2) {
+                    goto L_8c0ac46a;
+                }
+            } else {
+                t2 = play_se_8c05fbf8(0x20010, (void *)(&o->f24), 0, 0);
+                if (t2 >= 0) {
+                    emit_control_60320(t2, 0x100, 0);
+                }
+                if (o->fbc >= 2) {
+                    *(Vector3 *)&(&frame)->f1c = *(Vector3 *)&o->f24;
+                    (&frame)->f1c.f04 += 0.3f;
+                    create_effect_777c((void *)(&(&frame)->f1c), 0x6e);
+                    goto L_8c0ac4b0;
+L_8c0ac42e:;
+                    play_se_8c05fbf8(0x20010, (void *)(&o->f24), 0, 0);
+                    *(Vector3 *)&(&frame)->f10 = *(Vector3 *)&o->f24;
+                    (&frame)->f10.f04 += 0.3f;
+                    create_effect_777c((void *)(&(&frame)->f10), 0x6e);
+                    goto L_8c0ac4b0;
+L_8c0ac46a:;
+                    t3 = play_se_8c05fbf8(0x20010, (void *)(&o->f24), 0, 0);
+                    if (t3 >= 0) {
+                        emit_control_60320(t3, -0x100, 0);
+                    }
+                    *(Vector3 *)&(&frame)->f04 = *(Vector3 *)&o->f24;
+                    (&frame)->f04.f04 += 0.3f;
+                    create_effect_777c((void *)(&(&frame)->f04), 0x6f);
+                }
+            }
+        }
+    }
+L_8c0ac4b0:;
+    if (o->f20 != 0) {
+        o->fc4 = o->f20->f20;
+    }
+    return o;
+}

@@ -1,0 +1,132 @@
+/* NON-MATCHING draft: not built, not admitted, earns no matching or progress credit.
+ * address: 0x8c0b92f8
+ * function: TTecResta_v06_8c0b92f8
+ * language: c++
+ * reference size: 332 bytes
+ * compiled size: 332 bytes (+0.0%)
+ * differing lines: 2 of 137 reference instruction lines
+ * differing bytes: 176
+ * provenance: hand pass on a generator draft
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original
+ * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
+ */
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+typedef struct Block8 {
+    int words[2];
+} Block8;
+typedef struct Frame Frame;
+typedef struct S_g8c44bea0 S_g8c44bea0;
+typedef struct S_g8c4d97e0 S_g8c4d97e0;
+typedef struct Object Object;
+typedef struct Arg0_20 Arg0_20;
+class Arg1;
+typedef struct Block_frame_0 {
+    int f00;
+    float f04;
+} Block_frame_0;
+class Arg1 {
+public:
+    char unknown0[0x18];
+    virtual void v0();
+    virtual void v1();
+    virtual void v2();
+    virtual void v3();
+    virtual void v4();
+    virtual void v5();
+    virtual void v6();
+    virtual void v7();
+    virtual void v8();
+    virtual void v9();
+    virtual void v10();
+    virtual void v11();
+    virtual void v12();
+    virtual void v13();
+    virtual void v14();
+    virtual void v15();
+    virtual void v16();
+    virtual void v17();
+    virtual void v18();
+    virtual void v19();
+    virtual void v20();
+    virtual void v21();
+    virtual void v22();
+    virtual void v23();
+    virtual void v24();
+    virtual void v25(Arg0_20 *, int, Block8);
+};
+typedef struct Arg1Data {
+    char unknown0[0x20];
+    unsigned short f20;
+    char unknown22[0x2e6];
+    short f308;
+} Arg1Data;
+struct Frame {
+    Block_frame_0 f00;
+};
+struct Object {
+    char unknown0[0x20];
+    Arg0_20 *f20;
+    char unknown24[0x54];
+    float f78;
+    char unknown7c[0x4c];
+    int fc8;
+};
+struct Arg0_20 {
+    char unknown0[0x20];
+    unsigned short f20;
+};
+extern "C" void operation_8c0ddb44(short, short, int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
+extern "C" void operation_8c0b94d8(int, void *, Arg0_20 *, void *);
+extern "C" int create_effect(void *, int, int);
+extern "C" void bind_id(void *, unsigned short);
+extern "C" void operation_8c0b6750(void *, void *, int, int, int);
+extern "C" void TTecResta_v06_8c0b92f8(Object *o, Arg1 *a1)
+{
+    Frame frame;
+    int v1;
+    int t1;
+    int t2;
+    int t3;
+    int t4;
+    v1 = (int)(((Arg1Data *)a1)->f308 == 6);
+    if (v1 == 0) {
+        (&frame)->f00.f04 = o->f78;
+        (&frame)->f00.f00 = 6;
+        operation_8c0ddb44(o->f20->f20, ((Arg1Data *)a1)->f20, 6);
+        a1->v25(o->f20, 0, *(Block8 *)&(&frame)->f00);
+        if ((int)o->f20->f20 == (int)(((Arg1Data *)a1)->f20 & 0xffff)) {
+            if (o->fc8 == 0) {
+                goto L_8c0b93d2;
+            }
+            t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x34);
+            if (t1 == 0) {
+                goto L_8c0b93d2;
+            }
+            operation_8c0b94d8(t1, (void *)(((char *)a1 + 0x324)), (Arg0_20 *)(o->f20), (void *)(*(S_g8c44bea0 **)0x8c44bea0));
+        } else {
+            if (o->fc8 != 0) {
+                t2 = create_effect((void *)(((char *)a1 + 0x324)), 0x1f6, 0x10);
+                if (t2 != 0) {
+                    bind_id((void *)t2, (unsigned short)(((Arg1Data *)a1)->f20));
+                }
+                t3 = create_effect((void *)(((char *)a1 + 0x324)), 0x1f7, 0x10);
+                if (t3 != 0) {
+                    bind_id((void *)t3, (unsigned short)(((Arg1Data *)a1)->f20));
+                }
+            }
+        }
+L_8c0b93d2:;
+        if (o->fc8 != 0) {
+            t4 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x34);
+            if (t4 != 0) {
+                operation_8c0b6750((void *)t4, (void *)(((char *)a1 + 0x324)), 0x14, 0x2000f, (int)(*(S_g8c44bea0 **)0x8c44bea0));
+            }
+        }
+    }
+}

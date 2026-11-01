@@ -1,0 +1,338 @@
+/* NON-MATCHING draft: not built, not admitted, earns no matching or progress credit.
+ * address: 0x8c060994
+ * function: TObjEneBm5Wolf_ctor_8c060994
+ * language: c++
+ * reference size: 1024 bytes
+ * compiled size: 1032 bytes (+0.8%)
+ * differing lines: 210 of 351 reference instruction lines
+ * differing bytes: 629
+ * provenance: generator draft (mode switch2ext)
+ * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
+ *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
+ *   to the original; compiled size differs from the reference by +8 bytes
+ * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
+ */
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+typedef struct S_g8c468880 S_g8c468880;
+typedef struct S_g8c468888 S_g8c468888;
+typedef struct S_g8c468890 S_g8c468890;
+typedef struct S_g8c4688a0 S_g8c4688a0;
+typedef struct S_g8c4d97e0 S_g8c4d97e0;
+typedef struct Arg0_42c Arg0_42c;
+typedef struct Arg0_s3c Arg0_s3c;
+typedef struct Arg0_s410 Arg0_s410;
+class Object;
+typedef struct Block_p0_3c {
+    int f00;
+    char unknown4[0x8];
+} Block_p0_3c;
+class Object {
+public:
+    char unknown0[0x18];
+    virtual void v0();
+    virtual void v1();
+    virtual void v2();
+    virtual void v3();
+    virtual void v4();
+    virtual void v5();
+    virtual void v6();
+    virtual void v7();
+    virtual void v8();
+    virtual void v9();
+    virtual void v10();
+    virtual void v11();
+    virtual void v12();
+    virtual void v13();
+    virtual void v14();
+    virtual void v15();
+    virtual void v16();
+    virtual void v17();
+    virtual void v18();
+    virtual void v19();
+    virtual void v20();
+    virtual void v21();
+    virtual void v22();
+    virtual void v23();
+    virtual void v24();
+    virtual void v25();
+    virtual void v26();
+    virtual void v27();
+    virtual void v28();
+    virtual void v29();
+    virtual void v30();
+    virtual void v31();
+    virtual void v32();
+    virtual void v33();
+    virtual void v34();
+    virtual void v35();
+    virtual void v36();
+    virtual void v37();
+    virtual void v38();
+    virtual void v39();
+    virtual void v40();
+    virtual void v41();
+    virtual void v42();
+    virtual void v43();
+    virtual void v44();
+    virtual void v45();
+    virtual void v46();
+    virtual void v47();
+    virtual void v48();
+    virtual void v49();
+    virtual void v50();
+    virtual void v51();
+    virtual void v52();
+    virtual void v53();
+    virtual void v54();
+    virtual void v55();
+    virtual void v56();
+    virtual void v57();
+    virtual void v58();
+    virtual void v59();
+    virtual void v60();
+    virtual void v61();
+    virtual void v62();
+    virtual void v63();
+    virtual void v64();
+    virtual void v65();
+    virtual void v66();
+    virtual void v67();
+    virtual void v68();
+    virtual void v69();
+    virtual void v70();
+    virtual void v71();
+    virtual void v72();
+    virtual void v73();
+    virtual void v74();
+    virtual void v75();
+    virtual void v76();
+    virtual void v77();
+    virtual void v78();
+    virtual void v79();
+    virtual void v80();
+    virtual void v81();
+    virtual void v82();
+    virtual void v83();
+    virtual void v84();
+    virtual void v85();
+    virtual void v86();
+    virtual void v87();
+    virtual void v88();
+    virtual void v89();
+    virtual void v90();
+    virtual void v91();
+    virtual void v92();
+    virtual void v93(int, int);
+    virtual void v94();
+    virtual void v95();
+    virtual void v96();
+    virtual void v97();
+    virtual void v98();
+    virtual void v99();
+    virtual void v100();
+    virtual void v101();
+    virtual void v102();
+    virtual void v103();
+    virtual void v104();
+};
+typedef struct ObjectData {
+    int tag;
+    char unknown4[0x14];
+    void *dispatch;
+    char unknown1c[0x2];
+    short size;
+    short f20;
+    char unknown22[0x1a];
+    Block_p0_3c f3c;
+    char unknown48[0xa8];
+    short ff0;
+    char unknownf2[0x1e];
+    void *f110;
+    int f114;
+    char unknown118[0x1f2];
+    short f30a;
+    char unknown30c[0x60];
+    void *f36c;
+    char unknown370[0x28];
+    float f398;
+    char unknown39c[0x40];
+    int f3dc;
+    int f3e0;
+    unsigned short f3e4;
+    char unknown3e6[0x2];
+    int f3e8;
+    int f3ec;
+    unsigned short f3f0;
+    char unknown3f2[0x2];
+    int f3f4;
+    char unknown3f8[0x4];
+    unsigned short f3fc;
+    char unknown3fe[0x2];
+    int f400;
+    Vector3 f404;
+    int f410;
+    char unknown414[0x8];
+    float f41c;
+    float f420;
+    int f424;
+    float f428;
+    Arg0_42c *f42c;
+    int f430;
+    unsigned short f434;
+    char unknown436[0x2];
+    int f438;
+    int f43c;
+    int f440;
+    int f444;
+    int f448;
+    int f44c;
+    float f450;
+    float f454;
+    float f458;
+    float f45c;
+    float f460;
+    float f464;
+    float f468;
+    float f46c;
+    float f470;
+    float f474;
+    float f478;
+    float f47c;
+    float f480;
+    int f484;
+} ObjectData;
+struct S_g8c4688a0 {
+    char unknown0[0x430];
+    int f430;
+};
+struct Arg0_s3c {
+    char unknown0[0x4];
+    int f04;
+    int f08;
+};
+struct Arg0_s410 {
+    char unknown0[0x4];
+    int f04;
+    int f08;
+};
+extern int g_8c2fcb68;
+extern S_g8c4688a0 *g_8c4688a0;
+extern S_g8c4d97e0 *g_8c4d97e0;
+extern "C" char g_8c2fc95c[];
+extern "C" char g_8c4688c8[];
+extern "C" char g_8c4688dc[];
+extern "C" void call_8c05bcc0(Object *);
+extern "C" void operation_8c05a02c(void *, int);
+extern "C" void operation_8c061044(void *);
+extern "C" void call_8c059c74(Object *);
+extern "C" void refresh_follow_effect_8c05af60(void *, void *, int);
+extern "C" void call_8c01c838(Object *, short);
+extern "C" void operation_8c05b950(void *, void *, void *, void *);
+extern "C" void set_fields_8c05b664(void *);
+extern "C" void operation_8c05b92c(void *, int);
+extern "C" void operation_8c05bf44(void *, int);
+extern "C" void operation_8c05c1bc(void *, int);
+extern "C" void append_effect_node(void *, void *, void *);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
+extern "C" void operation_8c051eb8(void *, int);
+extern "C" void copy_actor_records(void *, void *, int);
+extern "C" void operation_8c060fbc(void *);
+extern "C" void operation_8c05b0ec(void *);
+extern "C" Object *TObjEneBm5Wolf_ctor_8c060994(Object *o, int a1, int a2)
+{
+    Object **home = &o;
+    int v1;
+    int v2;
+    char *v7;
+    int v10;
+    int t1;
+    (void)home;
+    call_8c05bcc0(o);
+    *(void **)((char *)o + 0x18) = (void *)(void *)0x8c262bfc;
+    ((ObjectData *)o)->f3dc = 0;
+    ((ObjectData *)o)->f3e0 = 0;
+    ((ObjectData *)o)->f3e4 = 0xffff;
+    ((ObjectData *)o)->f3e8 = 0;
+    ((ObjectData *)o)->f3ec = 0;
+    ((ObjectData *)o)->f3f0 = 0xffff;
+    ((ObjectData *)o)->tag = (int)(g_8c2fcb68);
+    ((ObjectData *)o)->size = 0x488;
+    operation_8c05a02c((void *)o, a2);
+    operation_8c061044((void *)o);
+    call_8c059c74(o);
+    refresh_follow_effect_8c05af60((void *)o, (void *)((void *)g_8c2fc95c), 1);
+    ((ObjectData *)o)->f110 = (void *)(void *)0x8c2fca38;
+    ((ObjectData *)o)->f114 = (int)(g_8c4688a0->f430);
+    ((ObjectData *)o)->ff0 = 0;
+    call_8c01c838(o, ((ObjectData *)o)->ff0);
+    v1 = (int)(((ObjectData *)o)->f3f4 != 0);
+    v2 = (int)(v1 << 2);
+    operation_8c05b950((void *)o, (void *)(*(S_g8c468880 **)((char *)0x8c468880 + (v2))), (void *)(*(S_g8c468888 **)((char *)0x8c468888 + (v2))), (void *)(*(S_g8c468890 **)((char *)0x8c468890 + (v2))));
+    set_fields_8c05b664((void *)o);
+    ((ObjectData *)o)->f36c = (void *)(void *)0x8c2fc940;
+    if (((ObjectData *)o)->f3f4 != 0) {
+        operation_8c05b92c((void *)o, 8);
+    } else {
+        operation_8c05b92c((void *)o, 7);
+    }
+    ((ObjectData *)o)->f398 = 15.0f;
+    operation_8c05bf44((void *)o, 0x14);
+    operation_8c05c1bc((void *)o, 0x14);
+    ((ObjectData *)o)->f3e4 = ((ObjectData *)o)->f20;
+    append_effect_node((void *)(((char *)o + 0x3dc)), (void *)((void *)g_8c4688c8), (void *)((g_8c4688c8 + 0x4)));
+    if (((ObjectData *)o)->f3f4 != 0) {
+        ((ObjectData *)o)->f3f0 = ((ObjectData *)o)->f20;
+        append_effect_node((void *)(((char *)o + 0x3e8)), (void *)((void *)g_8c4688dc), (void *)((g_8c4688dc + 0x4)));
+    }
+    ((ObjectData *)o)->f3fc = 0xffff;
+    ((ObjectData *)o)->f400 = 0;
+    *(Vector3 *)&((ObjectData *)o)->f404 = *(Vector3 *)&((ObjectData *)o)->f3c;
+    v7 = (char *)((ObjectData *)o)->f3c.f00;
+    v10 = (int)((Arg0_s3c *)((char *)o + 0x3c))->f04;
+    ((ObjectData *)o)->f410 = (int)v7;
+    ((Arg0_s410 *)((char *)o + 0x410))->f04 = (int)v10;
+    ((Arg0_s410 *)((char *)o + 0x410))->f08 = (int)(((Arg0_s3c *)((char *)o + 0x3c))->f08);
+    ((ObjectData *)o)->f41c = 0.0f;
+    ((ObjectData *)o)->f420 = 0.0f;
+    ((ObjectData *)o)->f424 = 0;
+    ((ObjectData *)o)->f428 = 0.0f;
+    t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xe4);
+    if (t1 != 0) {
+        operation_8c051eb8((void *)t1, 0);
+    }
+    ((ObjectData *)o)->f42c = (Arg0_42c *)(int)t1;
+    copy_actor_records((void *)(((ObjectData *)o)->f42c), (void *)((g_8c2fc95c + 0x2c)), 1);
+    ((ObjectData *)o)->f430 = 0;
+    ((ObjectData *)o)->f434 = 0xffff;
+    o->v104();
+    ((ObjectData *)o)->f438 = 0;
+    ((ObjectData *)o)->f43c = 0;
+    ((ObjectData *)o)->f440 = 0;
+    ((ObjectData *)o)->f444 = 0;
+    ((ObjectData *)o)->f448 = 0;
+    ((ObjectData *)o)->f44c = 0;
+    ((ObjectData *)o)->f450 = 0.0f;
+    ((ObjectData *)o)->f454 = 0.0f;
+    ((ObjectData *)o)->f458 = 0.0f;
+    ((ObjectData *)o)->f45c = 0.0f;
+    ((ObjectData *)o)->f460 = 0.0f;
+    ((ObjectData *)o)->f464 = 0.0f;
+    ((ObjectData *)o)->f468 = 0.0f;
+    ((ObjectData *)o)->f46c = 0.0f;
+    ((ObjectData *)o)->f470 = 0.0f;
+    ((ObjectData *)o)->f474 = 0.0f;
+    ((ObjectData *)o)->f478 = 0.0f;
+    ((ObjectData *)o)->f47c = 0.0f;
+    ((ObjectData *)o)->f480 = 0.0f;
+    ((ObjectData *)o)->f484 = 0;
+    operation_8c060fbc((void *)o);
+    o->v94();
+    operation_8c05b0ec((void *)o);
+    ((ObjectData *)o)->f30a = 0;
+    o->v93(((ObjectData *)o)->f30a, 4);
+    return o;
+}

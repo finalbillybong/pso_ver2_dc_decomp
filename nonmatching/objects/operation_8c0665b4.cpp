@@ -1,0 +1,329 @@
+/* NON-MATCHING draft: not built, not admitted, earns no matching or progress credit.
+ * address: 0x8c0665b4
+ * function: operation_8c0665b4
+ * language: c++
+ * reference size: 1080 bytes
+ * compiled size: 1080 bytes (+0.0%)
+ * differing lines: 10 of 390 reference instruction lines
+ * differing bytes: 22
+ * provenance: hand pass on a generator draft
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original
+ * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
+ */
+typedef struct Vector3 {
+    float x;
+    float y;
+    float z;
+} Vector3;
+class Object;
+class Object {
+public:
+    char unknown0[0x18];
+    virtual void v0();
+    virtual void v1();
+    virtual void v2();
+    virtual void v3();
+    virtual void v4();
+    virtual void v5();
+    virtual void v6();
+    virtual void v7();
+    virtual void v8();
+    virtual void v9();
+    virtual void v10();
+    virtual void v11();
+    virtual void v12();
+    virtual void v13();
+    virtual void v14();
+    virtual void v15();
+    virtual void v16();
+    virtual void v17();
+    virtual void v18();
+    virtual void v19();
+    virtual void v20();
+    virtual void v21();
+    virtual void v22();
+    virtual void v23();
+    virtual void v24();
+    virtual void v25();
+    virtual void v26();
+    virtual void v27();
+    virtual void v28();
+    virtual void v29();
+    virtual void v30();
+    virtual void v31();
+    virtual void v32();
+    virtual void v33();
+    virtual void v34();
+    virtual void v35();
+    virtual void v36();
+    virtual void v37();
+    virtual void v38();
+    virtual void v39();
+    virtual void v40();
+    virtual int v41();
+    virtual void v42();
+    virtual void v43();
+    virtual void v44();
+    virtual void v45();
+    virtual void v46();
+    virtual void v47();
+    virtual void v48();
+    virtual void v49();
+    virtual void v50();
+    virtual void v51();
+    virtual void v52();
+    virtual void v53();
+    virtual void v54();
+    virtual void v55();
+    virtual void v56();
+    virtual void v57();
+    virtual void v58();
+    virtual void v59();
+    virtual void v60();
+    virtual void v61();
+    virtual void v62();
+    virtual void v63();
+    virtual void v64();
+    virtual void v65();
+    virtual void v66();
+    virtual void v67();
+    virtual void v68();
+    virtual void v69();
+    virtual void v70();
+    virtual void v71();
+    virtual void v72();
+    virtual void v73();
+    virtual void v74();
+    virtual void v75();
+    virtual void v76();
+    virtual void v77();
+    virtual void v78();
+    virtual void v79();
+    virtual void v80();
+    virtual void v81();
+    virtual void v82();
+    virtual void v83();
+    virtual void v84();
+    virtual void v85();
+    virtual void v86();
+    virtual void v87();
+    virtual void v88();
+    virtual void v89();
+    virtual void v90();
+    virtual void v91();
+    virtual void v92();
+    virtual void v93(int, int);
+    virtual void v94();
+    virtual void v95();
+    virtual void v96();
+    virtual void v97();
+    virtual void v98();
+    virtual void v99();
+    virtual void v100();
+    virtual void v101();
+    virtual void v102();
+    virtual void v103();
+    virtual void v104();
+    virtual void v105();
+    virtual void v106();
+    virtual void v107();
+    virtual void v108();
+    virtual void v109();
+    virtual void v110();
+};
+typedef struct ObjectData {
+    char unknown0[0x4];
+    short f04;
+    char unknown6[0x2e];
+    int f34;
+    char unknown38[0x2d2];
+    short f30a;
+    char unknown30c[0x18];
+    Vector3 f324;
+    short f330;
+    char unknown332[0xaa];
+    int f3dc;
+    char unknown3e0[0x20];
+    int f400;
+    char unknown404[0x260];
+    Vector3 f664;
+    char unknown670[0x2e];
+    short f69e;
+    char unknown6a0[0x5c];
+    int f6fc;
+    char unknown700[0x28];
+    int f728;
+    unsigned short f72c;
+    char unknown72e[0x2];
+    int f730;
+    char unknown734[0x148];
+    int f87c;
+} ObjectData;
+extern int g_8c418248;
+extern int g_8c4689b8;
+extern "C" int operation_8c03d338(void);
+extern "C" void operation_8c09e6d0(void *);
+extern "C" void operation_8c067f24(void *);
+extern "C" int operation_8c05bae8(void);
+extern "C" int call_8c05bb18(Object *);
+extern "C" int call_8c05bb24(void);
+extern "C" int operation_8c066dd8(Object *);
+extern "C" void reset_segments_8c05a124(void *);
+extern "C" void call_8c067fbc(Object *);
+extern "C" void operation_8c066b00(void *);
+extern "C" void operation_8c0669ec(void *);
+extern "C" void latch_counter_8c059ee4(void *);
+extern "C" void operation_8c066ba4(void *);
+extern "C" void call_8c05a108(Object *);
+extern "C" void call_8c102e38(void *, int, int, int, float);
+extern "C" void update_hierarchy(void *);
+extern "C" void call_8c05bb30(void *, void *, float);
+extern "C" void operation_8c0665b4(Object *o)
+{
+    int v2;
+    int v1;
+    short v15;
+    short v23;
+    short v32;
+    short v40;
+    int t1;
+    int t2;
+    int t3;
+    int t4;
+    int t5;
+    int t6;
+    int t7;
+    int t8;
+    int t9;
+    int t10;
+    int t11;
+    int t12;
+    t1 = operation_8c03d338();
+    if (t1 != 0) {
+        o->v110();
+        return;
+    }
+    if (((((ObjectData *)o)->f3dc & 0x40)) != 0) {
+        operation_8c09e6d0((void *)o);
+        ((ObjectData *)o)->f04 |= 1;
+        return;
+    }
+    if (((ObjectData *)o)->f728 != 0) {
+        operation_8c067f24((void *)o);
+        ((ObjectData *)o)->f730 += 1;
+    } else {
+        t2 = operation_8c05bae8();
+        if (t2 != 0 && ((ObjectData *)o)->f6fc == 0) {
+            v1 = (int)((ObjectData *)o)->f400;
+            t3 = call_8c05bb18(o);
+            if (t3 != 0) {
+                ((ObjectData *)o)->f400 = 0;
+                v2 = (int)((ObjectData *)o)->f400;
+                if (v2 == v1) {
+                    goto L_8c066672;
+                }
+                ((ObjectData *)o)->f87c = 1;
+            } else {
+                ((ObjectData *)o)->f400 = 1;
+            }
+        }
+    }
+L_8c066672:;
+    t4 = call_8c05bb24();
+    o->v50();
+    o->v51();
+    if (t4 != 0) {
+    } else {
+        if (((ObjectData *)o)->f30a == 0x15 || ((ObjectData *)o)->f30a == 0x16) {
+            ((ObjectData *)o)->f34 |= 0x800;
+            goto L_8c0666d4;
+        }
+        ((ObjectData *)o)->f34 &= -0x801;
+L_8c0666d4:;
+        if (((ObjectData *)o)->f728 == 0) {
+        } else {
+            if ((((ObjectData *)o)->f72c & 0xffff) == g_8c418248) {
+                t5 = o->v41();
+                if (t5 != 0) {
+                    t6 = operation_8c066dd8(o);
+                    if (t6 != 0) {
+                        v15 = (short)((ObjectData *)o)->f69e;
+                        if (((ObjectData *)o)->f330 < v15) {
+                            ((ObjectData *)o)->f330 = v15;
+                        }
+                        reset_segments_8c05a124((void *)o);
+                    }
+                }
+                if (g_8c4689b8 == 0) {
+                    call_8c067fbc(o);
+                } else {
+                    operation_8c066b00((void *)o);
+                }
+                o->v93(((ObjectData *)o)->f30a, 8);
+                o->v93(((ObjectData *)o)->f30a, 0);
+                goto L_8c066924;
+            }
+            t7 = o->v41();
+            if (t7 != 0) {
+                t8 = operation_8c066dd8(o);
+                if (t8 != 0) {
+                    v23 = (short)((ObjectData *)o)->f69e;
+                    if (((ObjectData *)o)->f330 < v23) {
+                        ((ObjectData *)o)->f330 = v23;
+                    }
+                    reset_segments_8c05a124((void *)o);
+                }
+            }
+            if (g_8c4689b8 == 0) {
+                call_8c067fbc(o);
+            }
+            o->v93(((ObjectData *)o)->f30a, 0);
+            goto L_8c066924;
+        }
+        if (((ObjectData *)o)->f400 != 1) {
+            if (((ObjectData *)o)->f400 == 2) {
+                o->v93(((ObjectData *)o)->f30a, 2);
+            } else {
+                t9 = o->v41();
+                if (t9 != 0) {
+                    t10 = operation_8c066dd8(o);
+                    if (t10 != 0) {
+                        v32 = (short)((ObjectData *)o)->f69e;
+                        if (((ObjectData *)o)->f330 < v32) {
+                            ((ObjectData *)o)->f330 = v32;
+                        }
+                        reset_segments_8c05a124((void *)o);
+                    }
+                }
+                operation_8c0669ec((void *)o);
+            }
+            o->v93(((ObjectData *)o)->f30a, 8);
+            o->v93(((ObjectData *)o)->f30a, 0);
+        } else {
+            t11 = o->v41();
+            if (t11 != 0) {
+                t12 = operation_8c066dd8(o);
+                if (t12 != 0) {
+                    v40 = (short)((ObjectData *)o)->f69e;
+                    if (((ObjectData *)o)->f330 < v40) {
+                        ((ObjectData *)o)->f330 = v40;
+                    }
+                    reset_segments_8c05a124((void *)o);
+                }
+            }
+            o->v93(((ObjectData *)o)->f30a, 0);
+        }
+    }
+L_8c066924:;
+    latch_counter_8c059ee4((void *)o);
+    o->v94();
+    operation_8c066ba4((void *)o);
+    call_8c05a108(o);
+    call_8c102e38((void *)(((char *)o + 0x3c)), -0x5db4, 1, 1, 2.0f);
+    *(Vector3 *)&((ObjectData *)o)->f664 = *(Vector3 *)&((ObjectData *)o)->f324;
+    if (t4 == 0) {
+        update_hierarchy((void *)(((char *)o + 0x3e0)));
+    }
+    call_8c05bb30((void *)(((char *)o + 0x3c)), (void *)(((char *)o + 0x658)), 0.4f);
+}
