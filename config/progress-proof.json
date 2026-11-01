@@ -21,7 +21,7 @@
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/extracts.json": "9e1bcbf5695c73f4065284520d9b248192ebb4b336160dbbe4bf3d6e59a2e35b",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "50aeeb5cc1c4d4bcde6887c9736e796ac45205d3d6b51265a8d028fc776c4209",
+    "config/project.json": "6144e0089948dbd3d96cb4e7f7c36e5542e97b5a944add906128bb67d300b374",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/data/strings_8c284858.c": "cb16255c8ce183afbcb89c956a8f571e4ce6ef906acf5d31baea03f9d8066228",
@@ -14687,6 +14687,7 @@
     "src/sdk/shc_queue_transfer_8c36931c.c": "4af003cede5fffd96c10eaaef2b5143dcbe52d2726bf31627aca213c88732e1a",
     "src/sdk/shc_ramp_update4_8c348628.c": "c4e22b7ce87d1dd39cf07f335de0b60c11b1c9ac610d98356ca62ce4e5ed22e0",
     "src/sdk/shc_ramp_update_8c345550.c": "e795be5729f9ff0873429991216a4cec9600c48d472e0776a3d3660232fdaf95",
+    "src/sdk/shc_rand_8c12b944.c": "5b92f1edd565bbb2b305c1a0ecec8ddd940eaec4f2df6d3ecc2c32db698c8ef1",
     "src/sdk/shc_rate_hist_8c360314.c": "1c31428fc79bea05ae5d2dbd05b8a5ff6ec1fc5c82c5603937edd648b206b654",
     "src/sdk/shc_rate_pitch_8c343b34.c": "e92bc866bbab913d1847cf7cf31b4961062103a79d51ac74fe3ddfcbcde5be13",
     "src/sdk/shc_read_byte_8c345d7c.c": "af13605570f8835f0665335ebe543390fbb3f92e3eb5642d1174a81f95bf768a",
@@ -14792,6 +14793,7 @@
     "src/sdk/shc_strm_acc_8c34ae04.c": "83d47aa7ee31a748f7dea875d4c7a97f7221213c942e8d00546563c9a62d0ce2",
     "src/sdk/shc_strncmp_8c12b114.c": "bb35c8234ad6958939af429de5a5e27141ffb04b91e2645d515efdd3c9fbf23d",
     "src/sdk/shc_strncpy_8c12b154.c": "42b148943c88abe1f1bbcb2b2a8084cd6acff2c04d73363c29c2f7cd267eabd7",
+    "src/sdk/shc_strtol_8c12b24c.c": "8983a31abf583cb75944834f58345b77c966a9dff12fbecf0e0baf581b4a9e89",
     "src/sdk/shc_stubs_8c35c1f0.c": "cc5c8abeb1a42ba5ddf2fd262f652a178bbfd073e2a814645f419fd4eef9fe98",
     "src/sdk/shc_submit_request_8c3472e4.c": "b5e0ffc9245242f8446d8093a63791a1fc5df3d97726cbd85ae4cb1f65b9be5a",
     "src/sdk/shc_sum_entries_8c1f511c.c": "653b3f4f58e97284cc84abe08e84b33394e3364d6ff5334cf620deda7fd3bc7c",
@@ -14882,7 +14884,7 @@
     "tools/matching.py": "3ad868e806418a009424dba71945de386c93b93fd781791f0e269566a2f629c1",
     "tools/project.py": "132653ea53db5d21b5b52885ea164227e0af5f98c257419c04172643ca3e3363",
     "tools/shc.py": "1e4a7370691a937692e67f48f084265e01ef3504db4c73257224de52668ae847",
-    "tools/shc_units.py": "d9f26d7cd9697fdcfd6b272b2618e3b6f7902ae0d8928bcfd7550711b4400c66",
+    "tools/shc_units.py": "e0b2214ba96a355659811bb3cb5569880f0fa002a7873395d0e388f9d1893f75",
     "tools/verify_source.py": "e454f8040a31839165df208b40d2b970987963f2657a20e17136f29ea1464291"
   },
   "compiler": "CodeWarrior Dreamcast 2.4 Engineering Build, Mar 21 2000",
@@ -68542,6 +68544,13 @@
       "-optimize=1",
       "-macsave=0"
     ],
+    "shc_strtol_8c12b24c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=1"
+    ],
     "shc_floor_errno_8c12b570": [
       "-cpu=sh4",
       "-endian=little",
@@ -68562,6 +68571,13 @@
       "-fpu=single",
       "-optimize=1",
       "-macsave=0"
+    ],
+    "shc_rand_8c12b944": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=1"
     ],
     "shc_poly_even_8c12c0e8": [
       "-cpu=sh4",

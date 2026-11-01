@@ -13,6 +13,7 @@ like CodeWarrior modules.
 | --- | --- |
 | Compiler | Hitachi SH C/C++ Compiler 5.1 Release 13 (`shc-v5.1r13`) |
 | Second release | Hitachi SH C Compiler 5.0 Release 28 (`shc-v5.0r28`), only for the `0x8c3d0000` region; see [Second release](#second-release-50r2628) |
+| `-macsave=1` | `shc-v5.1r13-macsave1` (and `shc-v5.0r28-macsave1`): the same release with `-macsave=1`, only for code whose reference saves MACL in the prologue; see [-macsave=1 units](#-macsave1-units) |
 | Flags | `-cpu=sh4 -endian=little -fpu=single -optimize=1 -macsave=0` |
 | Linker | Hitachi LNK 6.0E, ELF output, from the same release |
 | Archives | Pinned in `config/compiler-packages.json`, installed by `tools/setup_compilers.py` |
@@ -82,7 +83,7 @@ field:
  "reference_sha256": "...", "headers": [], "boundary_review": "..."}
 ```
 
-`compiler` is `shc-v5.1r13` or, in the `0x8c3d0000` region, `shc-v5.0r28`; any other value is rejected. `compiler` absent means CodeWarrior; CodeWarrior units, flags, linkers and
+`compiler` is `shc-v5.1r13` or, in the `0x8c3d0000` region, `shc-v5.0r28`; MACL-saving code uses `shc-v5.1r13-macsave1` or `shc-v5.0r28-macsave1` with `macsave_evidence`; any other value is rejected. `compiler` absent means CodeWarrior; CodeWarrior units, flags, linkers and
 receipts are unchanged. An SHC unit must be C, must not name a `linker` and may
 not use project headers or `#pragma` (SHC pragmas include `inline_asm`).
 `python3 -B tools/shc_units.py --unit <id> --output <file>.bin` builds one unit. The
@@ -140,12 +141,13 @@ installation is present.
 
 ## Current units
 
-346 pool-group units, 86,690 bytes, 1178 functions (listed in `config/project.json`
+348 pool-group units, 87,442 bytes, 1180 functions (listed in `config/project.json`
 with `"compiler": "shc-v5.1r13"` or `"shc-v5.0r28"`; sources in `src/sdk/`):
 
 | Region | Compiler | Units | Bytes | Functions |
 | --- | --- | ---: | ---: | ---: |
 | C runtime library `0x8c12b000`–`0x8c131000` | 5.1r13 | 14 | 884 | 14 |
+| C runtime library, MACL-saving routines ([-macsave=1](#-macsave1-units)) | 5.1r13, -macsave=1 | 2 | 752 | 2 |
 | Library block `0x8c1f0000`–`0x8c205000` | 5.1r13 | 25 | 6,306 | 95 |
 | SDK region from `0x8c340000` | 5.1r13 | 293 | 74,200 | 1023 |
 | `0x8c3d0000` region ([second release](#second-release-50r2628)) | 5.0r28 | 14 | 5,300 | 46 |
@@ -249,6 +251,37 @@ the release that reproduces it byte for byte.
 Assembly of the symbol module and the link always use the pinned 5.1r13 `asmsh` and
 `LNK`: the link only places section P and binds absolute symbols, one linker keeps
 that step identical for every unit, and not every release ships one.
+
+## -macsave=1 units
+
+A few C runtime routines save MACL in their prologue (`sts.l MACL,@-r15`, restored
+with `lds.l @r15+,MACL`). The pinned compilers emit that save only under
+`-macsave=1`; under the fixed `-macsave=0` they leave MACL unsaved and read it with a
+plain `sts MACL,rN`. These units therefore declare a second fixed flag set:
+`"compiler": "shc-v5.1r13-macsave1"` (`shc-v5.0r28-macsave1` exists for the second
+release) is the pinned release with `-macsave=1` and nothing else changed.
+
+The flag set is restricted by evidence. Such a unit must list the addresses of its
+MACL prologue saves in `"macsave_evidence"`, and `tools/shc_units.py` rejects the
+unit unless the built code has `sts.l MACL,@-r15` at every listed address; because
+the build must equal the reference, the saves are the reference's own. Code in the
+same source file as a MACL-saving function is built with the same flag set.
+
+Calibration: `rand` (`shc_rand_8c12b944`, a linear congruential generator using
+`mul.l`) is byte-exact only with `-macsave=1`; under `-macsave=0` both pinned
+releases produce the same code without the MACL save and restore.
+
+| Unit | Bytes | Functions | MACL save (`macsave_evidence`) |
+| --- | ---: | ---: | --- |
+| `shc_rand_8c12b944` | 44 | 1 | `0x8c12b948` |
+| `shc_strtol_8c12b24c` | 708 | 1 | `0x8c12b25c` |
+
+`strtol` uses two ordinary forward gotos (`goto bad`, `goto done`) to reach the
+reference's distant error block (errno 1200) and to jump over it, as its branches
+do. The units introduce the extern names `__ctype` (`0x8c285e40`, the character
+class table), `__ptrchk` (`0x8c12f67c`, the range-check callback strtol calls) and
+`__seed` (`0x8c312688`, rand's state) because no admitted names exist for those
+addresses.
 
 ## Not accepted
 

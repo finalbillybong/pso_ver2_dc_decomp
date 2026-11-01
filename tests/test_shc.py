@@ -132,7 +132,7 @@ class LinkedImageTests(unittest.TestCase):
 
 
 class CommandTests(unittest.TestCase):
-    def run_fixture(self, unit, map_text=MAP, source='int first(void) { return 0; }\n'):
+    def run_fixture(self, unit, map_text=MAP, source='int first(void) { return 0; }\n', code=b'\x0b\x00' * 16):
         temp = tempfile.TemporaryDirectory()
         self.addCleanup(temp.cleanup)
         root = Path(temp.name)
@@ -148,7 +148,8 @@ class CommandTests(unittest.TestCase):
             calls.append(command)
             work = Path(cwd)
             if command[1] == 'shc':
-                self.assertEqual(command[3:3 + len(shc_units.SHC_FLAGS)], shc_units.SHC_FLAGS)
+                flags = shc_units.unit_flags(unit)
+                self.assertEqual(command[3:3 + len(flags)], flags)
                 (work / command[-1].split('=', 1)[1]).write_text('object')
                 out = ''
             elif command[1] == 'asm':
@@ -159,7 +160,7 @@ class CommandTests(unittest.TestCase):
                 link = (work / 'link.sub').read_text()
                 self.assertIn('start P(8C37E9A8)\n', link)
                 self.assertIn('entry _first\n', link)
-                (work / 'unit.elf').write_bytes(lnk_elf(code=b'\x0b\x00' * 16))
+                (work / 'unit.elf').write_bytes(lnk_elf(code=code))
                 (work / 'unit.map').write_text(map_text)
                 out = 'LINKAGE EDITOR COMPLETED\n'
             return subprocess.CompletedProcess(command, 0, out, '')
@@ -175,6 +176,18 @@ class CommandTests(unittest.TestCase):
         self.assertEqual(receipt['flags'], shc_units.SHC_FLAGS)
         root, receipt, calls = self.run_fixture(dict(SHC))
         self.assertEqual(receipt['compiler'], 'Hitachi SH C/C++ Compiler 5.1 Release 13 (shc-v5.1r13)')
+
+    def test_macsave1_requires_matching_macl_save_evidence(self):
+        code = b'\x12\x4f' + b'\x0b\x00' * 15  # sts.l MACL,@-r15 at the unit address
+        unit = dict(SHC, compiler='shc-v5.1r13-macsave1', macsave_evidence=['0x8c37e9a8'])
+        root, receipt, calls = self.run_fixture(unit, code=code)
+        self.assertEqual(receipt['flags'][-1], '-macsave=1')
+        self.assertIn('-macsave=1', receipt['compiler'])
+        for bad in [dict(unit, macsave_evidence=[]), dict(unit, macsave_evidence=['0x8c37e9aa'])]:
+            with self.subTest(unit=bad), self.assertRaisesRegex(ValueError, 'MACL prologue saves'):
+                self.run_fixture(bad, code=code)
+        with self.assertRaisesRegex(ValueError, 'MACL prologue saves'):
+            self.run_fixture(unit)  # output without the save
 
     def test_compile_link_extract_and_receipt(self):
         unit = dict(SHC, symbols={'_g': '0x8c562834'})
@@ -199,7 +212,8 @@ class ReleaseSelectionTests(unittest.TestCase):
     R28 = dict(SHC, compiler='shc-v5.0r28')
 
     def test_whitelisted_release_is_selected_with_its_fixed_flags(self):
-        self.assertEqual(set(shc_units.SHC_RELEASES), {'shc-v5.1r13', 'shc-v5.0r28'})
+        self.assertEqual(set(shc_units.SHC_RELEASES), {'shc-v5.1r13', 'shc-v5.0r28', 'shc-v5.1r13-macsave1',
+                                                       'shc-v5.0r28-macsave1'})
         self.assertEqual(shc_units.unit_compiler(self.R28), 'shc-v5.0r28')
         self.assertTrue(shc_units.is_shc(self.R28))
         self.assertEqual(shc_units.unit_flags(self.R28), shc_units.SHC_FLAGS)
@@ -278,6 +292,14 @@ class RealCompilerTests(unittest.TestCase):
         code = ('extern int a, b;\nvoid first(int *p, int v) { *p = v; a = v; b = v; }\n')
         syms = {'_a': '0x8c562834', '_b': '0x8c562838'}
         self.assertNotEqual(self.compile(code, symbols=syms), self.compile(code, symbols=syms, compiler='shc-v5.0r28'))
+
+    def test_macsave1_calibration_saves_macl_only_with_the_extra_flag_set(self):
+        code = 'extern unsigned long g;\nint first(void) { g = g * 1103515245 + 12345; return (int)((g >> 16) & 0x7fff); }\n'
+        syms = {'_g': '0x8c562834'}
+        plain = self.compile(code, symbols=syms)
+        saved = self.compile(code, symbols=syms, compiler='shc-v5.1r13-macsave1', macsave_evidence=['0x8c010004'])
+        self.assertNotIn(b'\x12\x4f', plain)
+        self.assertEqual(saved[4:6], b'\x12\x4f')  # sts.l MACL,@-r15 after the two pool loads
 
     def test_negative_control_unresolved_extern_is_rejected(self):
         with self.assertRaisesRegex(ValueError, 'linker diagnostics'):

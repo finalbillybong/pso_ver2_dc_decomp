@@ -126671,6 +126671,38 @@
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_strtol_8c12b24c",
+      "source": "src/sdk/shc_strtol_8c12b24c.c",
+      "address": "0x8c12b24c",
+      "entry": "_strtol",
+      "compiler": "shc-v5.1r13-macsave1",
+      "symbols": {
+        "__ptrchk": "0x8c12f67c",
+        "__ctype": "0x8c285e40",
+        "_errno": "0x8c4d9a00",
+        "__divlu": "0x8c12bb50"
+      },
+      "ranges": [
+        {
+          "offset": 1159756,
+          "size": 708
+        }
+      ],
+      "functions": [
+        {
+          "name": "strtol",
+          "address": "0x8c12b24c",
+          "size": 708
+        }
+      ],
+      "reference_sha256": "069c419d779d48a3e6ce39b80a6f9a5f1443ec6c40aa55aa2bd7080cbb85f9bd",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with shc-v5.1r13-macsave1 (fixed SHC flags with -macsave=1; the reference saves MACL in the prologue).",
+      "macsave_evidence": [
+        "0x8c12b25c"
+      ]
+    },
+    {
       "id": "shc_floor_errno_8c12b570",
       "source": "src/sdk/shc_floor_errno_8c12b570.c",
       "address": "0x8c12b570",
@@ -126747,6 +126779,35 @@
       "reference_sha256": "3d6b0c1a097b81622ece8e8f933c5b5ad520319e52f9022fdaf5bbc167692d92",
       "headers": [],
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_rand_8c12b944",
+      "source": "src/sdk/shc_rand_8c12b944.c",
+      "address": "0x8c12b944",
+      "entry": "_rand",
+      "compiler": "shc-v5.1r13-macsave1",
+      "symbols": {
+        "__seed": "0x8c312688"
+      },
+      "ranges": [
+        {
+          "offset": 1161540,
+          "size": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "rand",
+          "address": "0x8c12b944",
+          "size": 44
+        }
+      ],
+      "reference_sha256": "cf621e2046bb2365de2cd5df87a3664fda8d97a47f8d57a8a2e8aa63c67d4e3d",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with shc-v5.1r13-macsave1 (fixed SHC flags with -macsave=1; the reference saves MACL in the prologue).",
+      "macsave_evidence": [
+        "0x8c12b948"
+      ]
     },
     {
       "id": "shc_poly_even_8c12c0e8",

@@ -2,20 +2,20 @@
 
 | Measure | Value |
 | --- | ---: |
-| Exact matching functions | 12283 |
-| Matching modules | 11367 |
-| Compiled complete ranges | 1,269,310 bytes |
-| Code-range coverage of the image | 30.4909% |
-| of which Hitachi SHC pool groups | 86,690 bytes in 346 modules / 1178 functions |
+| Exact matching functions | 12285 |
+| Matching modules | 11369 |
+| Compiled complete ranges | 1,270,062 bytes |
+| Code-range coverage of the image | 30.5090% |
+| of which Hitachi SHC pool groups | 87,442 bytes in 348 modules / 1180 functions |
 | Typed static data | 493,028 bytes in 12021 objects / 3335 modules |
 | Typed data by kind | byte_table 482, float_table 20,596, function_table 18,512, int16_table 13,418, int_table 26,124, pointer_table 35,772, record_table 130,724, string 121,424, vtable 125,976 bytes |
 | Static-data extent | 1,100,132 bytes (estimate) |
 | Typed data share of the static-data extent | 44.8153% |
 | Decoded executable | 4,162,912 bytes |
-| Image coverage (code ranges + typed data) | 42.3343% |
+| Image coverage (code ranges + typed data) | 42.3523% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
 | Assembly (hand-written), not decompiled | 32,738 bytes in 88 units (1.0689% of the code extent) |
-| Fallback assembly for unmatched code, **not decompiled** | 1,785,174 bytes in 5014 units (58.2861% of the code extent) |
+| Fallback assembly for unmatched code, **not decompiled** | 1,784,422 bytes in 5014 units (58.2615% of the code extent) |
 | Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,960,435 bytes (95.1362% of the image) |
 | Dump extracts (untyped bytes from your dump, not reconstructed) | 202,477 bytes in 2662 ranges (4.8638% of the image; untyped_bytes 174,802, zero_run 28,641) |
 | Retained reference dependence | 0 bytes |

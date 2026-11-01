@@ -30,10 +30,21 @@ SHC_FLAGS = ['-cpu=sh4', '-endian=little', '-fpu=single', '-optimize=1', '-macsa
 # 5.1r13 asmsh/LNK: the linker only places section P and binds absolute symbols, so a
 # single linker keeps that step identical for every unit, and not every release ships
 # one (5.1r11 has no LNK; 5.0r10 ships a different lnk.exe).
+# The -macsave=1 entries exist only for code whose reference saves MACL in the prologue
+# (`sts.l MACL,@-r15`), which the pinned compilers emit only under -macsave=1: such a unit
+# must list the addresses of those saves in "macsave_evidence" (checked against the output).
+SHC_FLAGS_MACSAVE1 = ['-cpu=sh4', '-endian=little', '-fpu=single', '-optimize=1', '-macsave=1']
 SHC_RELEASES = {
-    'shc-v5.1r13': {'flags': SHC_FLAGS, 'name': 'Hitachi SH C/C++ Compiler 5.1 Release 13'},
-    'shc-v5.0r28': {'flags': SHC_FLAGS, 'name': 'Hitachi SH C Compiler 5.0 Release 28'},
+    'shc-v5.1r13': {'package': 'shc-v5.1r13', 'flags': SHC_FLAGS,
+                    'name': 'Hitachi SH C/C++ Compiler 5.1 Release 13'},
+    'shc-v5.0r28': {'package': 'shc-v5.0r28', 'flags': SHC_FLAGS,
+                    'name': 'Hitachi SH C Compiler 5.0 Release 28'},
+    'shc-v5.1r13-macsave1': {'package': 'shc-v5.1r13', 'flags': SHC_FLAGS_MACSAVE1, 'macsave_evidence': True,
+                             'name': 'Hitachi SH C/C++ Compiler 5.1 Release 13, -macsave=1'},
+    'shc-v5.0r28-macsave1': {'package': 'shc-v5.0r28', 'flags': SHC_FLAGS_MACSAVE1, 'macsave_evidence': True,
+                             'name': 'Hitachi SH C Compiler 5.0 Release 28, -macsave=1'},
 }
+MACL_SAVE = b'\x12\x4f'  # sts.l MACL,@-r15 (0x4f12), little-endian
 SHC_RECEIPT = 'config/installed-compilers.json'
 PACKAGES = 'config/compiler-packages.json'
 SYMBOL = re.compile(r'_[A-Za-z_][A-Za-z_0-9]*')
@@ -80,8 +91,9 @@ def load_shc_tools(root=ROOT, version=SHC_COMPILER):
     The compiler comes from `version`; assembler and linker always from the pinned 5.1r13."""
     if version not in SHC_RELEASES:
         raise ValueError('Unsupported SHC release')
+    package = SHC_RELEASES[version]['package']
     lock = json.loads((root / PACKAGES).read_text())
-    if version not in {package['id'] for package in lock['compilers']}:
+    if package not in {entry['id'] for entry in lock['compilers']}:
         raise ValueError('SHC release is not in the package lock')
     receipt = json.loads((root / SHC_RECEIPT).read_text())
     if receipt.get('runner_sha256') != lock['runner']['sha256']:
@@ -94,10 +106,10 @@ def load_shc_tools(root=ROOT, version=SHC_COMPILER):
         if name not in files:
             raise ValueError('SHC installation lacks ' + name)
         tools[role] = files[name]
-    if version != SHC_COMPILER:
-        _, release_base, release_files = shc.load_tools(version)
-        if not receipt['compilers'][version]['files'] or 'shc.exe' not in release_files:
-            raise ValueError('SHC installation lacks ' + version)
+    if package != SHC_COMPILER:
+        _, release_base, release_files = shc.load_tools(package)
+        if not receipt['compilers'][package]['files'] or 'shc.exe' not in release_files:
+            raise ValueError('SHC installation lacks ' + package)
         tools['bin'], tools['compiler'] = release_base / 'bin', release_files['shc.exe']
     return tools
 
@@ -244,6 +256,11 @@ def compile_shc_unit(source, output, unit, flags=None):
         output.with_suffix('.log').write_text('\n'.join(logs))
         if matching.sha(source) != source_hash:
             raise ValueError('Source changed during compilation')
+        if SHC_RELEASES[version].get('macsave_evidence'):
+            evidence = unit.get('macsave_evidence') or []
+            offsets = [int(a, 0) - base for a in evidence]
+            if not evidence or any(o < 0 or o % 2 or code[o:o + 2] != MACL_SAVE for o in offsets):
+                raise ValueError('-macsave=1 units must list the MACL prologue saves they contain')
         output.write_bytes(code)
         receipt = {'compiler': SHC_RELEASES[version]['name'] + ' (' + version + ')',
                    'flags': flags, 'address': hex(base), 'entry': unit['entry'],
