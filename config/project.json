@@ -122464,6 +122464,48 @@
       "boundary_review": "Reviewed common instruction/branch/delay shape and complete four-word pool; next entry is cataloged or explicitly reviewed."
     },
     {
+      "id": "operation_8c121734",
+      "source": "src/objects/operation_8c121734.c",
+      "address": "0x8c121734",
+      "entry": "_operation_8c121734",
+      "symbols": {
+        "_call_8c121aa4": "0x8c121aa4",
+        "_call_8c1224c8": "0x8c1224c8",
+        "_operation_8c121a90": "0x8c121a90",
+        "_operation_8c12213c": "0x8c12213c",
+        "_operation_8c122164": "0x8c122164",
+        "_g_state": "0x8c4d85e4",
+        "_g_dirty": "0x8c4d85e0",
+        "_g_cur": "0x8c4d879c",
+        "_g_from": "0x8c4d87ac",
+        "_g_a": "0x8c4d87b0",
+        "_g_b": "0x8c4d87b4",
+        "_g_src": "0x8c4d87bc",
+        "_g_dst": "0x8c4d87c0",
+        "_g_next": "0x8c4d87c4",
+        "_g_t": "0x8c4d87c8",
+        "_g_dt": "0x8c4d87cc",
+        "_g_tbl0": "0x8c4d878c"
+      },
+      "ranges": [
+        {
+          "offset": 1120052,
+          "size": 856
+        }
+      ],
+      "functions": [
+        {
+          "name": "operation_8c121734",
+          "address": "0x8c121734",
+          "size": 856
+        }
+      ],
+      "reference_sha256": "0066816f0fe513b0a9a09b257e7b4fc19669fbafec75d7a998894a6a6545c36c",
+      "headers": [],
+      "linker": "codewarrior",
+      "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
       "id": "operation_8c121a8c",
       "source": "src/objects/operation_8c121a8c.c",
       "address": "0x8c121a8c",

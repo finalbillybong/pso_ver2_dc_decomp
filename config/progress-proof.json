@@ -21,7 +21,7 @@
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/extracts.json": "9e1bcbf5695c73f4065284520d9b248192ebb4b336160dbbe4bf3d6e59a2e35b",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "47fd84282f47eb90e49fef589561dabbed1b0f5d9c9e106683e268b98a8d305a",
+    "config/project.json": "bfa38b91853a71bb26a01e21f8b95ff43789cbcbbed9fc84c16a03218004edba",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/data/strings_8c284858.c": "cb16255c8ce183afbcb89c956a8f571e4ce6ef906acf5d31baea03f9d8066228",
@@ -8762,6 +8762,7 @@
     "src/objects/operation_8c1215e0.c": "7536b302fd9a30e10f4594f50b1ebfeabb612c0be9fd226f004e2c2cc51373eb",
     "src/objects/operation_8c12161c.c": "33723663162ecfd9525ae42bc91578f8b12cd639d0cfb3363fed449d6787f985",
     "src/objects/operation_8c1216bc.c": "974a150c78bd8bd8224a407c68f3498af8a6c72bedff52dd273e080e97df19f7",
+    "src/objects/operation_8c121734.c": "185b512e18628ebc4b655eac54fd8467d585477dfc7fb483a76be4cbecfca0db",
     "src/objects/operation_8c121a8c.c": "ed1921346210bfd86cfe164c2e72d5a5d2a04817b0f2fad83441500ed52bc128",
     "src/objects/operation_8c121a90.c": "8c4ac1c2bf4450808ae50189cd564ff2fc9176feae9bc69d0cc4b9529851ba25",
     "src/objects/operation_8c12213c.c": "031abc34902083a9cd4ddd005ed9422f52a37debad827c258f6eefd61a887b61",
@@ -66796,6 +66797,17 @@
       "-O2"
     ],
     "destroy_object_8c1216f0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c121734": [
       "-proc",
       "SH4",
       "-endian",
