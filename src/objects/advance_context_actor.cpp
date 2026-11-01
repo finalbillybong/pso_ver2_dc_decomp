@@ -106,4 +106,4 @@ typedef char check_Target_category[(unsigned long)&((Target *)0)->category==44?1
 typedef char check_Target_position[(unsigned long)&((Target *)0)->position==60?1:-1];
 typedef char check_Target_flags[(unsigned long)&((Target *)0)->flags==848?1:-1];
 extern "C" {extern unsigned int current_identifier;extern Target *lookup_at(unsigned int);extern void update_at(View *);extern unsigned short find_at(View *,int,float);extern float distance_at(const Vector3 *,const Vector3 *);}
-extern "C" {extern void advance_at(View *);void advance_context_actor(View *o) {if(o->visible==1) advance_at(o);o->state_zero();}}
+extern "C" {extern void advance_at(View *);void TOTrap_v87_8c140f64(View *o) {if(o->visible==1) advance_at(o);o->state_zero();}}

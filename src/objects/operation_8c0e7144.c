@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x1];
     unsigned char f01;
 };
-extern int call_8c0e717c(void);
+extern int TItemObject_create_8c0e717c(void);
 int operation_8c0e7144(Object *o)
 {
     int t1;
@@ -18,7 +18,7 @@ int operation_8c0e7144(Object *o)
             t1 = ((int (*)(void))(*(int *)((char *)0x8c307fe4 + (o->f01 << 2))))();
             return t1;
         }
-        t2 = call_8c0e717c();
+        t2 = TItemObject_create_8c0e717c();
         return t2;
     }
     return 0;

@@ -25,7 +25,7 @@ extern int g_8c4dbb3c;
 extern int hierarchy_is_active(void *);
 extern void request_resource_release(void *);
 extern void operation_8c1bec20(void);
-extern void call_8c1981fc(void);
+extern void release_assets_ad_f_moyouring_8c1981fc(void);
 extern void call_8c04c2d4(void);
 extern void clear_global_render_resources(void);
 extern void call_8c060724(int);
@@ -81,7 +81,7 @@ void mode_title_exit_8c184498(void)
             g_8c4dbb28 = (S_g8c4dbb28 *)0;
         }
     }
-    call_8c1981fc();
+    release_assets_ad_f_moyouring_8c1981fc();
     call_8c04c2d4();
     clear_global_render_resources();
     call_8c060724(0);

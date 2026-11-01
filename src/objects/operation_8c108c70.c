@@ -37,7 +37,7 @@ extern void operation_8c108d78(void *);
 extern void call_8c027090(Object *);
 extern void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern void update_context_blend_fast(void *);
-void operation_8c108c70(Object *o)
+void TObjEneGyaranzo_update_8c108c70(Object *o)
 {
     int t1;
     t1 = operation_8c03d338();

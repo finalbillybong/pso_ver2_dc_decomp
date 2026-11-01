@@ -17,7 +17,7 @@ extern float call_8c246de8(Object *);
 extern void call_8c246834(Object *);
 extern int call_8c2468a0(Object *);
 extern void call_8c246954(Object *);
-void operation_8c2467c4(Object *o)
+void TObjTombstone_update_8c2467c4(Object *o)
 {
     int t1;
     float t2;

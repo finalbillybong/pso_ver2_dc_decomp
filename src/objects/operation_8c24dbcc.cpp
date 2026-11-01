@@ -82,7 +82,7 @@ public:
 typedef struct Arg0_13cData {
 
 } Arg0_13cData;
-extern "C" void operation_8c24dbcc(Object *o)
+extern "C" void TItemObjRecovery_v42_8c24dbcc(Object *o)
 {
     switch (o->f138) {
     case 0:

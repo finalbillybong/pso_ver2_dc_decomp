@@ -20,7 +20,7 @@ extern void operation_8c014f1c(void *);
 extern void copy_pair_8c014f10(void *, void *);
 extern void call_8c014ebc(void *, void *);
 extern void operation_8c014f28(void *);
-void operation_8c185c08(Object *o)
+void TBoss2LaserLight_update_8c185c08(Object *o)
 {
     float v3;
     float v5;

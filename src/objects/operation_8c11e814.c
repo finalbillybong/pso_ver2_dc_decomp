@@ -19,7 +19,7 @@ extern void operator_delete_8c18de08(void *);
 extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
 extern void call_8c03dc40(void *, int);
-void operation_8c11e814(void)
+void release_assets_fs_obj_door07_m_8c11e814(void)
 {
     operator_delete_8c18de08(g_8c4d8488);
     g_8c4d8488 = (S_g8c4d8488 *)0;

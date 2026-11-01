@@ -33,7 +33,7 @@ extern void *g_8c41c970;
 extern char g_8c41c974;
 extern char g_8c2e3014[];
 extern int operation_8c19fb18(int);
-extern void call_8c19fbe0(void *, int, int, int);
+extern void TOHealGeneral_ctor_8c19fbe0(void *, int, int, int);
 extern void call_8c1cdc30(void *);
 extern int call_8c1196d4(void *, Frame *, int);
 extern void operation_8c119764(int, int, int);
@@ -58,7 +58,7 @@ void operation_8c01a944(int a0, int a1)
     g_8c41c60c = (S_g8c41c60c *)(int)(t1);
     v8 = (int)0;
     while (a0 > v8) {
-        call_8c19fbe0(g_8c41c60c, 0x2c, (int)(a1 + v8 * 0x98 + 0xc), v8);
+        TOHealGeneral_ctor_8c19fbe0(g_8c41c60c, 0x2c, (int)(a1 + v8 * 0x98 + 0xc), v8);
         v8 = (int)(v8 + 1);
     }
     call_8c1cdc30(g_8c41c60c);

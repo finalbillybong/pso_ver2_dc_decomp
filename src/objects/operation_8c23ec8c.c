@@ -15,7 +15,7 @@ struct Arg0_1c8 {
     char unknown0[0x4];
     int f04;
 };
-void operation_8c23ec8c(Object *o)
+void TItemWpnRabbitCane_v53_8c23ec8c(Object *o)
 {
     float v3;
     if (o->f1c8 != 0) {

@@ -15,7 +15,7 @@ struct S_L8c28660c {
 };
 extern S_L8c28660c g_8c28660c;
 extern S_L8c4db494 g_8c4db494;
-void operation_8c16ffac(unsigned int a0)
+void quest_op_ba_set_respawn_8c16ffac(unsigned int a0)
 {
     if ((unsigned int)2 >= a0) {
         (&g_8c4db494)->f06 = *(int *)((char *)&g_8c28660c + (a0 << 2));

@@ -7,14 +7,14 @@ typedef struct S_g8c44be9c S_g8c44be9c;
 typedef struct S_g8c4689e0 S_g8c4689e0;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_scene_node_8c1930a0(void *, int);
+extern void TItemLoad_ctor_8c1930a0(void *, int);
 extern int get_game_mode_8c01c25c(void);
 extern int get_current_area_8c032b10(void);
 extern void call_8c192670(int);
 extern int call_8c177a00(int, int);
-extern void create_related_effect_8c221084(void *, void *, unsigned int);
+extern void TItemDownLoad_create_8c221084(void *, void *, unsigned int);
 extern void call_8c219a94(void);
-extern void call_8c25f8a0(int);
+extern void TItemDisconnectCtrl_ctor_8c25f8a0(int);
 void operation_8c163738(void)
 {
     int t1;
@@ -26,7 +26,7 @@ void operation_8c163738(void)
     int t7;
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x20);
     if (t1 != 0) {
-        initialize_scene_node_8c1930a0((void *)t1, (int)*(S_g8c44be9c **)0x8c44be9c);
+        TItemLoad_ctor_8c1930a0((void *)t1, (int)*(S_g8c44be9c **)0x8c44be9c);
     }
     t3 = get_game_mode_8c01c25c();
     t2 = get_current_area_8c032b10();
@@ -40,15 +40,15 @@ void operation_8c163738(void)
             }
             t4 = call_8c177a00(0, 0x3c);
             if (t4 == 0) {
-                create_related_effect_8c221084(*(S_g8c4689e0 **)0x8c4689e0, (void *)0x8c286474, (unsigned int)(void *)0x8c163998);
+                TItemDownLoad_create_8c221084(*(S_g8c4689e0 **)0x8c4689e0, (void *)0x8c286474, (unsigned int)(void *)0x8c163998);
             }
             t5 = call_8c177a00(0, 0x3d);
             if (t5 == 0) {
-                create_related_effect_8c221084(*(S_g8c4689e0 **)0x8c4689e0, (void *)0x8c286481, (unsigned int)(void *)0x8c163ac4);
+                TItemDownLoad_create_8c221084(*(S_g8c4689e0 **)0x8c4689e0, (void *)0x8c286481, (unsigned int)(void *)0x8c163ac4);
             }
             t6 = call_8c177a00(0, 0x3e);
             if (t6 == 0) {
-                create_related_effect_8c221084(*(S_g8c4689e0 **)0x8c4689e0, (void *)0x8c28648e, (unsigned int)(void *)0x8c163bf4);
+                TItemDownLoad_create_8c221084(*(S_g8c4689e0 **)0x8c4689e0, (void *)0x8c28648e, (unsigned int)(void *)0x8c163bf4);
             }
             *(int *)0x8c4db250 = 1;
         } else {
@@ -64,7 +64,7 @@ L_8c1637ee:;
     if (t3 == 0x10) {
         t7 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x20);
         if (t7 != 0) {
-            call_8c25f8a0(t7);
+            TItemDisconnectCtrl_ctor_8c25f8a0(t7);
         }
     }
     *(int *)0x8c4db244 = 1;

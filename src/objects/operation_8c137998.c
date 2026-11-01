@@ -16,8 +16,8 @@ struct S_c8c021ef8 {
 };
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c137460(int, Object *, S_c8c021ef8 *, void *, void *);
-extern void call_8c1ab01c(int, int, void *, int);
+extern void TTecSlicer_ctor_8c137460(int, Object *, S_c8c021ef8 *, void *, void *);
+extern void TItemTimer_ctor_8c1ab01c(int, int, void *, int);
 int operation_8c137998(Object *o)
 {
     int v69;
@@ -32,12 +32,12 @@ int operation_8c137998(Object *o)
         if (t1 != 0) {
             t2 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x134);
             if (t2 != 0) {
-                call_8c137460(t2, o, t1, ((char *)t1 + 0x3c), t1->f64);
+                TTecSlicer_ctor_8c137460(t2, o, t1, ((char *)t1 + 0x3c), t1->f64);
             }
             if (t2 != 0) {
                 t3 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x2c);
                 if (t3 != 0) {
-                    call_8c1ab01c(t3, t2, (void *)0x8c137a28, 0x5a);
+                    TItemTimer_ctor_8c1ab01c(t3, t2, (void *)0x8c137a28, 0x5a);
                 }
             }
             v69 = (int)t2;

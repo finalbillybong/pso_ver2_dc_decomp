@@ -11,8 +11,8 @@ struct S_x26288_0 {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c1ab01c(void *, int, int, int);
-void operation_8c07fc9c(int a0)
+extern void TItemTimer_ctor_8c1ab01c(void *, int, int, int);
+void TItemMag_v40_8c07fc9c(int a0)
 {
     int v2;
     int v1;
@@ -29,7 +29,7 @@ void operation_8c07fc9c(int a0)
             if (v4 != 0) {
                 t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x2c);
                 if (t1 != 0) {
-                    operation_8c1ab01c((void *)t1, (int)(v4), (int)((void *)0x8c1f28f0), 0x1e);
+                    TItemTimer_ctor_8c1ab01c((void *)t1, (int)(v4), (int)((void *)0x8c1f28f0), 0x1e);
                 }
             }
         }

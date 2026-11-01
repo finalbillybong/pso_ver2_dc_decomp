@@ -21,7 +21,7 @@ extern void operation_8c145184(void *, float, float);
 extern void operation_8c1452f8(int, int);
 extern void operation_8c144bf8(void *);
 extern void reset_segments_8c05a124(void *);
-void operation_8c1445e0(Object *o)
+void TBoss2DeRolLe_v70_8c1445e0(Object *o)
 {
     int v10;
     v10 = (int)(o->f198 - o->f330);

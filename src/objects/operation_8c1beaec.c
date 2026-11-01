@@ -17,7 +17,7 @@ extern S_c8c011ecc *g_8c4e2b80;
 extern int g_8c4e2b84;
 extern S_c8c011ecc *game_malloc_8c011ecc(int);
 extern void call_8c03d610(S_c8c011ecc *, int, void *, int, int, int);
-void operation_8c1beaec(void)
+void load_assets_obj_city_common_8c1beaec(void)
 {
     S_c8c011ecc *t1;
     t1 = game_malloc_8c011ecc(0x440);

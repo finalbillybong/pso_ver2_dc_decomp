@@ -19,7 +19,7 @@ struct Object {
     int f1fc;
 };
 extern void call_8c075398(void);
-Object *operation_8c23aeac(Object *o)
+Object *TItemWpnChacram_ctor_8c23aeac(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c279dac;

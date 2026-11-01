@@ -40,7 +40,7 @@ extern void call_8c119c78(void *);
 extern int operation_8c156c6c(int);
 extern int operation_8c1571f4(void *);
 extern void call_8c1dc844(void *);
-void operation_8c209564(Object *o)
+void TWindowGetComCard_update_8c209564(Object *o)
 {
     int v23;
     int t1;

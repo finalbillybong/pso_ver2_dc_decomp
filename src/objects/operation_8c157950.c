@@ -12,7 +12,7 @@ extern char g_8c316250[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
 extern void call_8c088b28(Object *);
-void operation_8c157950(Object *o)
+void TObjMapWarpAncient_v09_8c157950(Object *o)
 {
     if (!(o->f8c >= 0)) {
         njPrintColor_8c38c5b6(-0xff0100);

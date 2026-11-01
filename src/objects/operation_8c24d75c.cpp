@@ -111,7 +111,7 @@ extern "C" void operation_8c04a8dc(void *, int);
 extern "C" void operation_8c02562c(void *, int);
 extern "C" void operation_8c0256c8(void *, int);
 extern "C" void operation_8c025730(void *, int);
-extern "C" void operation_8c24d75c(Object *o)
+extern "C" void TItemObjStatusUp_v42_8c24d75c(Object *o)
 {
     int t1;
     int t2;

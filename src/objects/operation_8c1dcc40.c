@@ -13,7 +13,7 @@ struct Object {
 extern void call_8c1dcdf0(Object *);
 extern void operation_8c1dcf9c(void *);
 extern int operation_8c1e2330(void *);
-void operation_8c1dcc40(Object *o)
+void TWindowChat_update_8c1dcc40(Object *o)
 {
     unsigned short v1;
     int t1;

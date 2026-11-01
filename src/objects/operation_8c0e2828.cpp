@@ -34,7 +34,7 @@ struct S_vv1 {
 extern "C" void call_8c0e1f40(S_vv1 *);
 extern "C" void call_8c0e288c(Object *, int);
 extern "C" void draw_view_nodes(void *, void *, void *);
-extern "C" void operation_8c0e2828(Object *o)
+extern "C" void TWindowStatus_render_8c0e2828(Object *o)
 {
     S_vv1 *v1;
     int t1;

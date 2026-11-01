@@ -24,7 +24,7 @@ struct S_vv1 {
     float f28;
 };
 extern void call_8c3aa716(Arg0_1d4 *);
-void operation_8c23c9ec(Object *o)
+void TItemWpnFast_v57_8c23c9ec(Object *o)
 {
     char *v86;
     S_vv1 *v1;

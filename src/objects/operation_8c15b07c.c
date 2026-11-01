@@ -22,7 +22,7 @@ extern void njTranslate_8c3829bc(int, float, float, float);
 extern void call_8c3a9436(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c391cc4(void);
-void operation_8c15b07c(Object *o)
+void TObjVoloptShutter_render_8c15b07c(Object *o)
 {
     call_8c1086fc();
     call_8c3827d8((void *)(*(S_g8c4dab68 **)0x8c4dab68));

@@ -137,7 +137,7 @@ extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c05cfa0(void *);
 extern "C" void call_8c05a108(Object *);
-extern "C" void operation_8c05cd8c(Object *o)
+extern "C" void TObjEneRe2Flower_update_8c05cd8c(Object *o)
 {
     int t1;
     int t2;

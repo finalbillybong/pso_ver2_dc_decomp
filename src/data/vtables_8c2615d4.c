@@ -2,10 +2,10 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void fn_8c0372a8(void);
+extern void TObjEneShark_dtor_8c0372a8(void);
 extern void operation_8c0e3858(void);
-extern void fn_8c03766c(void);
-extern void operation_37d50(void);
+extern void TObjEneShark_render_8c03766c(void);
+extern void TObjEneShark_render_shadow_8c037d50(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
@@ -91,33 +91,33 @@ extern void operation_8c0134ec(void);
 extern void operation_8c012b88(void);
 extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
-extern void operation_8c0379cc(void);
+extern void TObjEneShark_v89_8c0379cc(void);
 extern void operation_8c0e4ff4(void);
-extern void fn_8c037ac4(void);
-extern void fn_8c037ba4(void);
-extern void operation_37c3c(void);
-extern void operation_37c84(void);
-extern void operation_37cbc(void);
-extern void operation_37d04(void);
+extern void TObjEneShark_v91_8c037ac4(void);
+extern void TObjEneShark_v92_8c037ba4(void);
+extern void TObjEneShark_v93_8c037c3c(void);
+extern void TObjEneShark_v94_8c037c84(void);
+extern void TObjEneShark_v95_8c037cbc(void);
+extern void TObjEneShark_v96_8c037d04(void);
 extern void operation_37d54(void);
-extern void operation_37d4c(void);
-extern void operation_8c03843c(void);
-extern void operation_8c03879c(void);
-extern void operation_8c038970(void);
-extern void operation_8c03b020(void);
-extern void fn_8c038b34(void);
-extern void fn_8c039924(void);
+extern void TObjEneShark_v98_8c037d4c(void);
+extern void TObjEneMoja_dtor_8c03843c(void);
+extern void TObjEneMoja_update_8c03879c(void);
+extern void TObjEneMoja_render_8c038970(void);
+extern void TObjEneMoja_render_shadow_8c03b020(void);
+extern void TObjEneMoja_v37_8c038b34(void);
+extern void TObjEneMoja_v39_8c039924(void);
 extern void object_blocked_8c013418(void);
-extern void operation_8c038cfc(void);
-extern void operation_8c038d88(void);
-extern void operation_8c038e14(void);
-extern void operation_8c03966c(void);
-extern void operation_8c039b60(void);
-extern void operation_8c03aa54(void);
-extern void operation_8c03ab70(void);
-extern void operation_8c03acc8(void);
-extern void destroy_object_8c03c1d0(void);
-extern void fn_8c03c00c(void);
+extern void TObjEneMoja_v45_8c038cfc(void);
+extern void TObjEneMoja_v48_8c038d88(void);
+extern void TObjEneMoja_v66_8c038e14(void);
+extern void TObjEneMoja_v67_8c03966c(void);
+extern void TObjEneMoja_v68_8c039b60(void);
+extern void TObjEneMoja_v69_8c03aa54(void);
+extern void TObjEneMoja_v70_8c03ab70(void);
+extern void TObjEneMoja_v71_8c03acc8(void);
+extern void TForceOperate_dtor_8c03c1d0(void);
+extern void TForceOperate_update_8c03c00c(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 
@@ -125,10 +125,10 @@ extern void TObject_render_shadow_default_8c0111cc(void);
 VirtualFunction const vt_8c2615d4[101] = {
     0,
     0,
-    fn_8c0372a8,
+    TObjEneShark_dtor_8c0372a8,
     operation_8c0e3858,
-    fn_8c03766c,
-    operation_37d50,
+    TObjEneShark_render_8c03766c,
+    TObjEneShark_render_shadow_8c037d50,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -214,26 +214,26 @@ VirtualFunction const vt_8c2615d4[101] = {
     operation_8c012b88,
     operation_8c012b98,
     fn_8c012aa8,
-    operation_8c0379cc,
+    TObjEneShark_v89_8c0379cc,
     operation_8c0e4ff4,
-    fn_8c037ac4,
-    fn_8c037ba4,
-    operation_37c3c,
-    operation_37c84,
-    operation_37cbc,
-    operation_37d04,
+    TObjEneShark_v91_8c037ac4,
+    TObjEneShark_v92_8c037ba4,
+    TObjEneShark_v93_8c037c3c,
+    TObjEneShark_v94_8c037c84,
+    TObjEneShark_v95_8c037cbc,
+    TObjEneShark_v96_8c037d04,
     operation_37d54,
-    operation_37d4c
+    TObjEneShark_v98_8c037d4c
 };
 
 /* 8c261768: type-information and this-adjustment header, then 89 slots */
 VirtualFunction const vt_8c261768[91] = {
     0,
     0,
-    operation_8c03843c,
-    operation_8c03879c,
-    operation_8c038970,
-    operation_8c03b020,
+    TObjEneMoja_dtor_8c03843c,
+    TObjEneMoja_update_8c03879c,
+    TObjEneMoja_render_8c038970,
+    TObjEneMoja_render_shadow_8c03b020,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -267,18 +267,18 @@ VirtualFunction const vt_8c261768[91] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    fn_8c038b34,
+    TObjEneMoja_v37_8c038b34,
     operation_8c0133f8,
-    fn_8c039924,
+    TObjEneMoja_v39_8c039924,
     object_blocked_8c013418,
     object_blocked_8c013428,
     object_blocked_8c01343c,
     object_blocked_8c0133ec,
     operation_455ac,
-    operation_8c038cfc,
+    TObjEneMoja_v45_8c038cfc,
     operation_45844,
     operation_45910,
-    operation_8c038d88,
+    TObjEneMoja_v48_8c038d88,
     operation_45a8c,
     operation_45b8c,
     operation_45d6c,
@@ -296,12 +296,12 @@ VirtualFunction const vt_8c261768[91] = {
     operation_8c0471fc,
     fn_8c047268,
     operation_8c047438,
-    operation_8c038e14,
-    operation_8c03966c,
-    operation_8c039b60,
-    operation_8c03aa54,
-    operation_8c03ab70,
-    operation_8c03acc8,
+    TObjEneMoja_v66_8c038e14,
+    TObjEneMoja_v67_8c03966c,
+    TObjEneMoja_v68_8c039b60,
+    TObjEneMoja_v69_8c03aa54,
+    TObjEneMoja_v70_8c03ab70,
+    TObjEneMoja_v71_8c03acc8,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -325,8 +325,8 @@ VirtualFunction const vt_8c261768[91] = {
 VirtualFunction const vt_8c2618d4[7] = {
     0,
     0,
-    destroy_object_8c03c1d0,
-    fn_8c03c00c,
+    TForceOperate_dtor_8c03c1d0,
+    TForceOperate_update_8c03c00c,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

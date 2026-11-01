@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c1bcf58(void);
-extern void operation_8c1bcf9c(void);
-extern void operation_8c1bcff0(void);
+extern void TWindowMeseta_dtor_8c1bcf58(void);
+extern void TWindowMeseta_update_8c1bcf9c(void);
+extern void TWindowMeseta_render_8c1bcff0(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0dc63c(void);
@@ -13,9 +13,9 @@ extern void operation_8c0dc63c(void);
 VirtualFunction const vt_8c2754dc[8] = {
     0,
     0,
-    destroy_object_8c1bcf58,
-    operation_8c1bcf9c,
-    operation_8c1bcff0,
+    TWindowMeseta_dtor_8c1bcf58,
+    TWindowMeseta_update_8c1bcf9c,
+    TWindowMeseta_render_8c1bcff0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c

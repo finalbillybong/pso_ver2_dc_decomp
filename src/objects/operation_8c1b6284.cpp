@@ -30,7 +30,7 @@ struct PmfObj {
 };
 typedef void (PmfObj::*PMF_0)();
 extern Phase g_8c3268ec[];
-extern "C" void create_related_object_8c21aeb4(void *, void *);
+extern "C" void TObjDFTenchuFuru_create_8c21aeb4(void *, void *);
 extern "C" void operation_8c1b349c(int);
 extern "C" void mark_effect_for_release(void *);
 extern "C" int create_effect_769c(void *, int);
@@ -57,7 +57,7 @@ extern "C" void operation_8c1b6284(Object *o)
     if (o->f3a0 == 6) {
         p = 0x8c4e2840;
         for (i = 0; i < 0x40; i++, p += 0xc) {
-            create_related_object_8c21aeb4(o, (void *)p);
+            TObjDFTenchuFuru_create_8c21aeb4(o, (void *)p);
         }
     } else if (o->f3a0 == 1) {
         operation_8c1b349c((int)o);

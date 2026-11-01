@@ -19,7 +19,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern int effect_query_is_true(void *);
 extern void destroy_effect_d870(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c0b204c(Object *o, int a1)
+Object *TTecGiFoie_dtor_8c0b204c(Object *o, int a1)
 {
     int v3;
     int v2;

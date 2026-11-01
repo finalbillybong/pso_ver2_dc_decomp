@@ -22,7 +22,7 @@ struct Arg0_dc {
 extern void create_effect_777c(void *, int);
 extern void refresh_follow_effect_8c0129f4(void *);
 extern void operation_8c09e6d0(void *);
-void operation_8c03acc8(Object *o)
+void TObjEneMoja_v71_8c03acc8(Object *o)
 {
     if (o->f30a != 9) {
         o->f30a = 9;

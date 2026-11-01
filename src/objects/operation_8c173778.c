@@ -33,7 +33,7 @@ struct S_vv6 {
 };
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void TObject_ctor_8c0330e4(void *, void *);
-S_c8c122700 *operation_8c173778(void)
+S_c8c122700 *TQuestThread_ctor_4_8c173778(void)
 {
     S_c8c122700 *t1;
     int v3;

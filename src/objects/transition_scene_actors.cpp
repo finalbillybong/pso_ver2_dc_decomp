@@ -10,7 +10,7 @@ extern void call_8c041690(void);
 extern void reset_controller_state_8c01d9dc(void);
 extern void wait_vsync_and_flip_8c380516(void);
 extern void call_8c01c2b0(void);
-extern void call_8c1a18b8(void);
+extern void TMapCsnCtrl_create_8c1a18b8(void);
 extern void call_8c0405b4(void);
 extern void call_8c13f428(void);
 extern void call_8c194d14(void);
@@ -19,7 +19,7 @@ extern void call_8c189d60(void);
 extern void call_8c115bc0(void);
 extern void call_8c02a87c(void);
 extern void call_8c017bd4(void);
-extern void call_8c173778(void);
+extern void TQuestThread_ctor_4_8c173778(void);
 extern void TObject_ctor_8c0330e4(Temporary *,void *);
 extern void load_at(void *,unsigned int);
 extern Actor * lookup_at(int);
@@ -48,10 +48,10 @@ extern void *actor_parent;
 void transition_scene_actors(void) {
  Temporary temporary;TObject_ctor_8c0330e4(&temporary,0);call_8c017ba8();call_8c02a798();call_8c1004cc();call_8c041690();reset_controller_state_8c01d9dc();wait_vsync_and_flip_8c380516();wait_vsync_and_flip_8c380516();load_at(resource_data,resource_id);
  {int i;for(i=0;i<12;++i) {Actor *actor=lookup_at(i);if(actor) move_at(actor,&temporary);}}
- prepare_at(global_storage);clear_settings_at(settings);call_8c01c2b0();call_8c1a18b8();call_8c0405b4();mode_at(2);
+ prepare_at(global_storage);clear_settings_at(settings);call_8c01c2b0();TMapCsnCtrl_create_8c1a18b8();call_8c0405b4();mode_at(2);
  if(settings_mode_at(settings)==2) {first_mask=0x1000;second_mask=0x4000;call_8c13f428();copy_at(copy_data,128);load_extra_at(extra_data,64);call_8c194d14();call_8c1922a0();}
  apply_settings_at(settings);select_at(get_current_area_8c032b10());call_8c189d60();restore_at(global_storage);
  {int i;for(i=0;i<12;++i) {Actor *actor=lookup_at(i);if(actor) {move_at(actor,actor_parent);actor->refresh();}}}
- call_8c115bc0();call_8c02a87c();call_8c017bd4();call_8c173778();finish_at(0);TObject_dtor_8c03311c(&temporary,-1);
+ call_8c115bc0();call_8c02a87c();call_8c017bd4();TQuestThread_ctor_4_8c173778();finish_at(0);TObject_dtor_8c03311c(&temporary,-1);
 }
 }

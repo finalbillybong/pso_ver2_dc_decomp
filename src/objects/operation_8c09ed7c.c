@@ -11,7 +11,7 @@ extern void operation_03cee8(void);
 extern void call_8c103148(int);
 extern void call_8c09dcc8(void *);
 extern void call_8c09dea8(void *);
-extern void call_8c173778(void);
+extern void TQuestThread_ctor_4_8c173778(void);
 void operation_8c09ed7c(void)
 {
     call_8c1869f4();
@@ -21,5 +21,5 @@ void operation_8c09ed7c(void)
     call_8c103148(1);
     call_8c09dcc8(*(S_g8c44be04 **)0x8c44be04);
     call_8c09dea8(*(S_g8c44be04 **)0x8c44be04);
-    call_8c173778();
+    TQuestThread_ctor_4_8c173778();
 }

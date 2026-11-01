@@ -56,7 +56,7 @@ struct S_g8c46ed0c_0 {
 extern S_g8c46ed0c *g_8c46ed0c;
 extern "C" void create_effect_777c(void *, int);
 extern "C" void call_8c05406c(Object *, Frame *);
-extern "C" float operation_8c14d710(Object *o)
+extern "C" float TOTrapAncient02R_v24_8c14d710(Object *o)
 {
     Frame frame;
     int v6;

@@ -8,7 +8,7 @@ typedef struct S_vv2 S_vv2;
 struct S_vv2 {
     unsigned char f00;
 };
-void operation_8c16ce78(int a0, int a1, int a2)
+void quest_op_jmp_off_8c16ce78(int a0, int a1, int a2)
 {
     int v3;
     S_vv2 *v2;

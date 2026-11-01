@@ -62,7 +62,7 @@ extern "C" void call_8c3827d8(void *);
 extern "C" void call_8c134d10(Object *, Arg0_38_2c *);
 extern "C" void call_8c3addea(Arg0_38 *, void *, float);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c134c1c(Object *o)
+extern "C" void TODoorCave02_render_8c134c1c(Object *o)
 {
     int v1;
     int t1;

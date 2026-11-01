@@ -3,7 +3,7 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-int operation_8c10a894(void)
+int TObjEneGyaranzo_v39_8c10a894(void)
 {
     return 0;
 }

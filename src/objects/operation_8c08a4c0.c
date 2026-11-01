@@ -14,7 +14,7 @@ struct Object {
 extern char g_8c30019c[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c08a4c0(Object *o)
+void TObjPlayerSet_v09_8c08a4c0(Object *o)
 {
     if (0.0f > o->f6c) {
         o->f6c = 0.0f;

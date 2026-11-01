@@ -139,7 +139,7 @@ extern void call_8c156e58(Arg0_30 *);
 extern int create_single_entry_menu_8c217604(Object *);
 extern int operation_8c217688(Object *);
 extern void operation_8c20a4cc(int);
-void operation_8c216ab8(Object *o)
+void TWindowSubShortMail_update_8c216ab8(Object *o)
 {
     S_vv10 *v10;
     S_vv29 *v29;

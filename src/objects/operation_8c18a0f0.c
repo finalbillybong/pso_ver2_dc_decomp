@@ -43,7 +43,7 @@ extern int operation_8c01d844(int, int, int, int);
 extern void read_projected_position(void *, Frame *, ...);
 extern void call_8c18a398(Object *);
 extern void emit_alternate_6028c(unsigned int, int, void *, int);
-void operation_8c18a0f0(Object *o)
+void TLoadingCur_update_8c18a0f0(Object *o)
 {
     Frame frame;
     S_vv1 *v1;

@@ -25,7 +25,7 @@ extern void njPushMatrixEx_8c38ae68(void);
 extern void call_8c3827d8(void *);
 extern void call_8c3a944a(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c078cd8(void)
+void TObjBoss1Floor_render_8c078cd8(void)
 {
     int t1;
     t1 = operation_8c1692c0();

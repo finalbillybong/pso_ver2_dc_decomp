@@ -34,7 +34,7 @@ extern void operation_8c13fa28(void *);
 extern void game_free_8c011ec0(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c13f930(Object *o, int a1)
+Object *TObjCMLoadAfsTextureReq_dtor_8c13f930(Object *o, int a1)
 {
     int v15;
     int v14;

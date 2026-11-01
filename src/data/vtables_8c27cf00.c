@@ -2,14 +2,14 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c245be4(void);
-extern void fn_8c245c28(void);
-extern void operation_8c245d68(void);
+extern void TEffStarLightChild_dtor_8c245be4(void);
+extern void TEffStarLightChild_update_8c245c28(void);
+extern void TEffStarLightChild_render_8c245d68(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_object_8c246780(void);
-extern void operation_8c2467c4(void);
-extern void operation_8c246e44(void);
+extern void TObjTombstone_dtor_8c246780(void);
+extern void TObjTombstone_update_8c2467c4(void);
+extern void TObjTombstone_render_8c246e44(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void operation_8c051fd4(void);
@@ -20,7 +20,7 @@ extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
 extern void operation_8c0104f0(void);
-extern void destroy_object_8c248b34(void);
+extern void TItemWpnYasumuraShiki_dtor_8c248b34(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -62,24 +62,24 @@ extern void operation_8c075708(void);
 extern void fn_8c075ac8(void);
 extern void fn_8c075b90(void);
 extern void fn_8c0766f8(void);
-extern void fn_8c248bf8(void);
+extern void TItemWpnYasumuraShiki_v49_8c248bf8(void);
 extern void operation_8c076178(void);
 extern void operation_8c076174(void);
 extern void operation_8c076238(void);
-extern void operation_8c248b78(void);
+extern void TItemWpnYasumuraShiki_v53_8c248b78(void);
 extern void operation_8c075ac4(void);
 extern void operation_8c075b80(void);
 extern void operation_8c077810(void);
-extern void operation_8c248ca0(void);
+extern void TItemWpnYasumuraShiki_v57_8c248ca0(void);
 extern void fn_8c076340(void);
 
 /* 8c27cf00: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c27cf00[7] = {
     0,
     0,
-    destroy_object_8c245be4,
-    fn_8c245c28,
-    operation_8c245d68,
+    TEffStarLightChild_dtor_8c245be4,
+    TEffStarLightChild_update_8c245c28,
+    TEffStarLightChild_render_8c245d68,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -88,9 +88,9 @@ VirtualFunction const vt_8c27cf00[7] = {
 VirtualFunction const vt_8c27cf1c[17] = {
     0,
     0,
-    destroy_object_8c246780,
-    operation_8c2467c4,
-    operation_8c246e44,
+    TObjTombstone_dtor_8c246780,
+    TObjTombstone_update_8c2467c4,
+    TObjTombstone_render_8c246e44,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -109,7 +109,7 @@ VirtualFunction const vt_8c27cf1c[17] = {
 VirtualFunction const vt_8c27cf60[61] = {
     0,
     0,
-    destroy_object_8c248b34,
+    TItemWpnYasumuraShiki_dtor_8c248b34,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -158,14 +158,14 @@ VirtualFunction const vt_8c27cf60[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    fn_8c248bf8,
+    TItemWpnYasumuraShiki_v49_8c248bf8,
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,
-    operation_8c248b78,
+    TItemWpnYasumuraShiki_v53_8c248b78,
     operation_8c075ac4,
     operation_8c075b80,
     operation_8c077810,
-    operation_8c248ca0,
+    TItemWpnYasumuraShiki_v57_8c248ca0,
     fn_8c076340
 };

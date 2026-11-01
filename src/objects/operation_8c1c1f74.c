@@ -10,7 +10,7 @@ struct S_g8c510ba0 {
 };
 extern int play_se_8c05fbf8(int, int, int, int);
 extern void emit_control_60320(int, int, int);
-void operation_8c1c1f74(int a0)
+void TObjCityDoor_Warp_v21_8c1c1f74(int a0)
 {
     int v1;
     int t1;

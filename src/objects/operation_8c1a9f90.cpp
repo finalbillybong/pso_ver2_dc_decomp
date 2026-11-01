@@ -22,7 +22,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4e1a48 *g_8c4e1a48;
 extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c1a9f90(Object *o, int a1)
+extern "C" Object *TObjBgmColCtrl_dtor_8c1a9f90(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)(void *)0x8c274674;

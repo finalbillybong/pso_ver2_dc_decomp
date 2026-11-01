@@ -7,7 +7,7 @@
 #define njRotateX_8c37dd28 ((void (*)(int,int))0x8c37dd28)
 #define mesh_at ((void (*)(void *))0x8c3aa716)
 #define njPopMatrixEx_8c38ad10 ((void (*)(void))0x8c38ad10)
-void operation_239a30(ResourceChild *o){
+void TItemShootWindCane_render_8c239a30(ResourceChild *o){
     if(o->mesh && o->matrix){
         njPushMatrixEx_8c38ae68();
         matrix_at(o->matrix);

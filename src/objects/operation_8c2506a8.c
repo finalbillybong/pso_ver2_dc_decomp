@@ -16,7 +16,7 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern void memset_8c12b880(void *, int, int);
 extern int operation_8c02b9e4(void);
 extern void call_8c2507a4(Object *);
-Object *operation_8c2506a8(Object *o, int a1)
+Object *TMemberCheck_ctor_8c2506a8(Object *o, int a1)
 {
     Object **home = &o;
     int t1;

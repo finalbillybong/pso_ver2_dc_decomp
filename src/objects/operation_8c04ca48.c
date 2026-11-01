@@ -18,7 +18,7 @@ extern void operation_8c052124(void *);
 extern void destroy_field_8c114790(void *, short);
 extern void TObjEnemy_dtor_8c0120f4(void *, int);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c04ca48(Object *o, int a1)
+Object *TObjGrass_dtor_8c04ca48(Object *o, int a1)
 {
     int v2;
     int v1;

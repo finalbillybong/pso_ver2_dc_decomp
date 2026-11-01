@@ -23,7 +23,7 @@ struct Object {
     float f240;
 };
 extern void call_8c075398(void);
-Object *operation_8c24f734(Object *o)
+Object *TItemWpnYasuShotGun_ctor_8c24f734(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c27e6d8;

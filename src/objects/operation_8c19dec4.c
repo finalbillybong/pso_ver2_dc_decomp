@@ -11,7 +11,7 @@ extern char g_8c31ccf8[];
 extern void visit_hierarchy_14(void *);
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c19dec4(void)
+void TQuestColCtrl_render_shadow_8c19dec4(void)
 {
     if (g_8c4dc4d4 != 0) {
         visit_hierarchy_14(g_8c4dc4d4);

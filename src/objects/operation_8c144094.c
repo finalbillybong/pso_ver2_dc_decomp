@@ -88,7 +88,7 @@ extern void operation_8c052124(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void destroy_color_rise_8c05bd84(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c144094(Object *o, int a1)
+Object *TBoss2DeRolLe_dtor_8c144094(Object *o, int a1)
 {
     S_vv1 *v1;
     int v4;

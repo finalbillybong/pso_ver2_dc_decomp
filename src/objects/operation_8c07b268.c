@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int call_8c034c7c(int);
-extern void call_8c25fab8(int);
+extern void TObjTailsTailsMove_create_8c25fab8(int);
 extern int call_8c07b2d4(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c07b41c(int, int);
@@ -16,7 +16,7 @@ int operation_8c07b268(int a0)
     int t3;
     t1 = call_8c034c7c(a0 + 0x7e4);
     if (t1 == 0xd) {
-        call_8c25fab8(a0);
+        TObjTailsTailsMove_create_8c25fab8(a0);
         return 0;
     }
     t2 = call_8c07b2d4(a0);

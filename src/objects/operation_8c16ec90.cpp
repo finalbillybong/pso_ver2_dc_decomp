@@ -24,7 +24,7 @@ extern "C" void initialize_buffer_node_8c032bd8(void *, int, int, int);
 extern "C" void strncpy_8c12b154(Frame *, int, int);
 extern "C" void call_8c032b70(Frame *);
 extern "C" void call_8c032c3c(S_c8c122700 *, Frame *);
-extern "C" void operation_8c16ec90(int a0, int a1)
+extern "C" void quest_op_nop_A0_debug_8c16ec90(int a0, int a1)
 {
     Frame frame;
     S_c8c122700 *t1;

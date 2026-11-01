@@ -12,14 +12,14 @@ struct S_L8c336040 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c336040 g_8c336040;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c215c38(int, int, int);
-int operation_8c215bec(int a0, int a1)
+extern void TWindowDD_WS_Word_ctor_8c215c38(int, int, int);
+int TWindowDD_WS_Word_create_8c215bec(int a0, int a1)
 {
     int t1;
     (&g_8c336040)->f04 = a1;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x98);
     if (t1 != 0) {
-        call_8c215c38(t1, a0, a1);
+        TWindowDD_WS_Word_ctor_8c215c38(t1, a0, a1);
     }
     return t1;
 }

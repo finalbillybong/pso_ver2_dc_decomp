@@ -31,7 +31,7 @@ struct S_x47664 {
 extern int g_8c418248;
 extern int find_entry_8c0d9e2c(int, int, int);
 extern void operation_8c0368a8(void *);
-void operation_8c24d97c(Object *o)
+void TItemObjStarAtomizer_v42_8c24d97c(Object *o)
 {
     Frame frame;
     int v1;

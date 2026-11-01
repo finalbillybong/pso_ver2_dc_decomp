@@ -13,7 +13,7 @@ struct S_g8c4d9b04 {
 extern void release_scene_control_resource(void *);
 extern void call_8c03dc40(void *, int);
 extern void operator_delete_8c18de08(S_g8c4d9b04 *);
-void operation_8c1357a4(void)
+void release_assets_fs_obj_o_door05l_8c1357a4(void)
 {
     release_scene_control_resource((void *)((*(S_g8c4d9b04 **)0x8c4d9b04)->f04));
     if (*(int *)0x8c4d9b00 != 0) {

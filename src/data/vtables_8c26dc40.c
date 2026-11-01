@@ -2,12 +2,12 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c140b8c(void);
-extern void update_context_actor(void);
-extern void draw_context_actor(void);
-extern void operation_8c14116c(void);
+extern void TOTrap_dtor_8c140b8c(void);
+extern void TOTrap_update_8c140c78(void);
+extern void TOTrap_render_8c140bd0(void);
+extern void TOTrap_render_shadow_8c14116c(void);
 extern void hierarchy_output(void);
-extern void operation_8c140e58(void);
+extern void TOTrap_v05_8c140e58(void);
 extern void fn_8c01d694(void);
 extern void fn_8c043724(void);
 extern void operation_8c010500(void);
@@ -24,14 +24,14 @@ extern void query_object_height(void);
 extern void query_position_height(void);
 extern void operation_8c04a4f4(void);
 extern void operation_8c013474(void);
-extern void context_target_differs_2(void);
-extern void context_target_differs_3(void);
-extern void operation_8c140d50(void);
-extern void context_target_reset_0(void);
-extern void context_target_reset_1(void);
-extern void operation_8c141208(void);
-extern void context_target_differs_0(void);
-extern void context_target_differs_1(void);
+extern void TOTrap_v22_8c141198(void);
+extern void TOTrap_v23_8c1411ac(void);
+extern void TOTrap_v24_8c140d50(void);
+extern void TOTrap_v25_8c1411c0(void);
+extern void TOTrap_v26_8c1411e4(void);
+extern void TOTrap_v27_8c141208(void);
+extern void TOTrap_v28_8c141170(void);
+extern void TOTrap_v29_8c141184(void);
 extern void operation_8c0461f8(void);
 extern void operation_8c04621c(void);
 extern void operation_8c0462a0(void);
@@ -88,38 +88,38 @@ extern void operation_8c0134e0(void);
 extern void operation_8c0134e4(void);
 extern void operation_8c0134e8(void);
 extern void operation_8c0134ec(void);
-extern void fn_8c140ec0(void);
-extern void advance_context_actor(void);
-extern void fn_8c140f98(void);
-extern void apply_context_target(void);
-extern void context_actor_ready(void);
-extern void operation_8c140d48(void);
-extern void emit_context_particles(void);
-extern void operation_8c140d4c(void);
-extern void destroy_derived_context_actor(void);
-extern void operation_8c1415d8(void);
-extern void operation_8c141db8(void);
-extern void operation_8c141b58(void);
-extern void fn_8c1417cc(void);
-extern void operation_8c1419d8(void);
-extern void operation_8c141b54(void);
-extern void operation_8c141b88(void);
-extern void operation_8c141e54(void);
-extern void destroy_object_8c1421e0(void);
-extern void fn_8c1424e0(void);
-extern void fn_8c142c8c(void);
+extern void TOTrap_v86_8c140ec0(void);
+extern void TOTrap_v87_8c140f64(void);
+extern void TOTrap_v88_8c140f98(void);
+extern void TOTrap_v89_8c141070(void);
+extern void TOTrap_v90_8c141114(void);
+extern void TOTrap_v91_8c140d48(void);
+extern void TOTrap_v92_8c140e94(void);
+extern void TOTrap_v93_8c140d4c(void);
+extern void TOTrapAncient01_dtor_8c1414c4(void);
+extern void TOTrapAncient01_render_8c1415d8(void);
+extern void TOTrapAncient01_v05_8c141db8(void);
+extern void TOTrapAncient01_v24_8c141b58(void);
+extern void TOTrapAncient01_v88_8c1417cc(void);
+extern void TOTrapAncient01_v89_8c1419d8(void);
+extern void TOTrapAncient01_v91_8c141b54(void);
+extern void TOTrapAncient01_v92_8c141b88(void);
+extern void TOTrapAncient01_v93_8c141e54(void);
+extern void TBoss2Tentacle_dtor_8c1421e0(void);
+extern void TBoss2Tentacle_update_8c1424e0(void);
+extern void TBoss2Tentacle_render_8c142c8c(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 
 /* 8c26dc40: type-information and this-adjustment header, then 94 slots */
 VirtualFunction const vt_8c26dc40[96] = {
     0,
     0,
-    destroy_object_8c140b8c,
-    update_context_actor,
-    draw_context_actor,
-    operation_8c14116c,
+    TOTrap_dtor_8c140b8c,
+    TOTrap_update_8c140c78,
+    TOTrap_render_8c140bd0,
+    TOTrap_render_shadow_8c14116c,
     hierarchy_output,
-    operation_8c140e58,
+    TOTrap_v05_8c140e58,
     fn_8c01d694,
     fn_8c043724,
     operation_8c010500,
@@ -136,14 +136,14 @@ VirtualFunction const vt_8c26dc40[96] = {
     query_position_height,
     operation_8c04a4f4,
     operation_8c013474,
-    context_target_differs_2,
-    context_target_differs_3,
-    operation_8c140d50,
-    context_target_reset_0,
-    context_target_reset_1,
-    operation_8c141208,
-    context_target_differs_0,
-    context_target_differs_1,
+    TOTrap_v22_8c141198,
+    TOTrap_v23_8c1411ac,
+    TOTrap_v24_8c140d50,
+    TOTrap_v25_8c1411c0,
+    TOTrap_v26_8c1411e4,
+    TOTrap_v27_8c141208,
+    TOTrap_v28_8c141170,
+    TOTrap_v29_8c141184,
     operation_8c0461f8,
     operation_8c04621c,
     operation_8c0462a0,
@@ -200,26 +200,26 @@ VirtualFunction const vt_8c26dc40[96] = {
     operation_8c0134e4,
     operation_8c0134e8,
     operation_8c0134ec,
-    fn_8c140ec0,
-    advance_context_actor,
-    fn_8c140f98,
-    apply_context_target,
-    context_actor_ready,
-    operation_8c140d48,
-    emit_context_particles,
-    operation_8c140d4c
+    TOTrap_v86_8c140ec0,
+    TOTrap_v87_8c140f64,
+    TOTrap_v88_8c140f98,
+    TOTrap_v89_8c141070,
+    TOTrap_v90_8c141114,
+    TOTrap_v91_8c140d48,
+    TOTrap_v92_8c140e94,
+    TOTrap_v93_8c140d4c
 };
 
 /* 8c26ddc0: type-information and this-adjustment header, then 94 slots */
 VirtualFunction const vt_8c26ddc0[96] = {
     0,
     0,
-    destroy_derived_context_actor,
-    update_context_actor,
-    operation_8c1415d8,
-    operation_8c14116c,
+    TOTrapAncient01_dtor_8c1414c4,
+    TOTrap_update_8c140c78,
+    TOTrapAncient01_render_8c1415d8,
+    TOTrap_render_shadow_8c14116c,
     hierarchy_output,
-    operation_8c141db8,
+    TOTrapAncient01_v05_8c141db8,
     fn_8c01d694,
     fn_8c043724,
     operation_8c010500,
@@ -236,14 +236,14 @@ VirtualFunction const vt_8c26ddc0[96] = {
     query_position_height,
     operation_8c04a4f4,
     operation_8c013474,
-    context_target_differs_2,
-    context_target_differs_3,
-    operation_8c141b58,
-    context_target_reset_0,
-    context_target_reset_1,
-    operation_8c141208,
-    context_target_differs_0,
-    context_target_differs_1,
+    TOTrap_v22_8c141198,
+    TOTrap_v23_8c1411ac,
+    TOTrapAncient01_v24_8c141b58,
+    TOTrap_v25_8c1411c0,
+    TOTrap_v26_8c1411e4,
+    TOTrap_v27_8c141208,
+    TOTrap_v28_8c141170,
+    TOTrap_v29_8c141184,
     operation_8c0461f8,
     operation_8c04621c,
     operation_8c0462a0,
@@ -300,23 +300,23 @@ VirtualFunction const vt_8c26ddc0[96] = {
     operation_8c0134e4,
     operation_8c0134e8,
     operation_8c0134ec,
-    fn_8c140ec0,
-    advance_context_actor,
-    fn_8c1417cc,
-    operation_8c1419d8,
-    context_actor_ready,
-    operation_8c141b54,
-    operation_8c141b88,
-    operation_8c141e54
+    TOTrap_v86_8c140ec0,
+    TOTrap_v87_8c140f64,
+    TOTrapAncient01_v88_8c1417cc,
+    TOTrapAncient01_v89_8c1419d8,
+    TOTrap_v90_8c141114,
+    TOTrapAncient01_v91_8c141b54,
+    TOTrapAncient01_v92_8c141b88,
+    TOTrapAncient01_v93_8c141e54
 };
 
 /* 8c26df40: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c26df40[7] = {
     0,
     0,
-    destroy_object_8c1421e0,
-    fn_8c1424e0,
-    fn_8c142c8c,
+    TBoss2Tentacle_dtor_8c1421e0,
+    TBoss2Tentacle_update_8c1424e0,
+    TBoss2Tentacle_render_8c142c8c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

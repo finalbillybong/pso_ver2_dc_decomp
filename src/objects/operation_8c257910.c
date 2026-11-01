@@ -23,7 +23,7 @@ struct Object {
 extern void call_8c257adc(Object *, int);
 extern int hierarchy_is_active(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_loader_8c173578(void *, void *, int);
+extern void TQuestThread_ctor_1_8c173578(void *, void *, int);
 extern void reparent_hierarchy_node(void *, void *);
 extern void create_effect_777c(void *, int);
 float operation_8c257910(Object *o, Arg1 *a1)
@@ -45,7 +45,7 @@ float operation_8c257910(Object *o, Arg1 *a1)
                 if (t1 != 0) {
                     t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xa8);
                     if (t2 != 0) {
-                        initialize_loader_8c173578((void *)t2, (void *)(*(S_g8c4db520 **)0x8c4db520), (int)(o->f360));
+                        TQuestThread_ctor_1_8c173578((void *)t2, (void *)(*(S_g8c4db520 **)0x8c4db520), (int)(o->f360));
                     }
                     if (t2 == 0) {
                         goto L_8c2579ec;
@@ -63,7 +63,7 @@ float operation_8c257910(Object *o, Arg1 *a1)
             }
             t4 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xa8);
             if (t4 != 0) {
-                initialize_loader_8c173578((void *)t4, (void *)(*(S_g8c4db524 **)0x8c4db524), (int)(o->f360));
+                TQuestThread_ctor_1_8c173578((void *)t4, (void *)(*(S_g8c4db524 **)0x8c4db524), (int)(o->f360));
             }
             if (t4 == 0) {
                 goto L_8c2579ec;

@@ -24,7 +24,7 @@ struct Object {
 extern int call_8c18e8a0(void *, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c25d634(int, Object *, void *);
-void operation_8c25d488(Object *o)
+void TItemReverseTechPart2_update_8c25d488(Object *o)
 {
     int t1;
     int t2;

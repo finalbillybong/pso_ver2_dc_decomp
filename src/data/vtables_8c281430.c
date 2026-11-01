@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c255dac(void);
+extern void TItemWpnBouquet_dtor_8c255dac(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -51,7 +51,7 @@ extern void operation_8c075708(void);
 extern void fn_8c075ac8(void);
 extern void fn_8c075b90(void);
 extern void fn_8c0766f8(void);
-extern void operation_8c255df0(void);
+extern void TItemWpnBouquet_v49_8c255df0(void);
 extern void operation_8c076178(void);
 extern void operation_8c076174(void);
 extern void operation_8c076238(void);
@@ -61,32 +61,32 @@ extern void operation_8c075b80(void);
 extern void operation_8c077810(void);
 extern void operation_8c075ed8(void);
 extern void fn_8c076340(void);
-extern void destroy_object_8c255e9c(void);
+extern void TItemWpnFamitsu_dtor_8c255e9c(void);
 extern void operation_8c07633c(void);
-extern void destroy_object_8c255ee0(void);
-extern void fn_8c255fb4(void);
-extern void operation_8c256198(void);
+extern void TOSwitchItem_dtor_8c255ee0(void);
+extern void TOSwitchItem_update_8c255fb4(void);
+extern void TOSwitchItem_render_8c256198(void);
 extern void operation_8c0eeb8c(void);
-extern void operation_8c256194(void);
+extern void TOSwitchItem_v09_8c256194(void);
 extern void operation_8c010508(void);
 extern void operation_8c010510(void);
 extern void operation_8c1135b4(void);
-extern void operation_8c082044(void);
-extern void operation_8c113440(void);
-extern void operation_8c1130e0(void);
-extern void operation_8c1130e4(void);
-extern void operation_8c113130(void);
-extern void operation_8c1132e0(void);
+extern void TOKey_v15_8c082044(void);
+extern void TOKey_v16_8c113440(void);
+extern void TOKey_v17_8c1130e0(void);
+extern void TOKey_v18_8c1130e4(void);
+extern void TOKey_v19_8c113130(void);
+extern void TOKey_v20_8c1132e0(void);
 extern void operation_8c1133cc(void);
-extern void operation_8c256254(void);
+extern void TOSwitchItem_v22_8c256254(void);
 extern void update_cycle_8c113060(void);
 extern void operation_8c1136b0(void);
-extern void operation_8c2562b4(void);
-extern void fn_8c256424(void);
-extern void operation_8c2564a0(void);
+extern void TOSymbolchatColli_dtor_8c2562b4(void);
+extern void TOSymbolchatColli_update_8c256424(void);
+extern void TOSymbolchatColli_render_8c2564a0(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void fn_8c043724(void);
-extern void operation_8c25649c(void);
+extern void TOSymbolchatColli_v09_8c25649c(void);
 extern void word_operation_8c01345c(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c04a928(void);
@@ -177,7 +177,7 @@ extern void operation_8c113564(void);
 VirtualFunction const vt_8c281430[61] = {
     0,
     0,
-    destroy_object_8c255dac,
+    TItemWpnBouquet_dtor_8c255dac,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -226,7 +226,7 @@ VirtualFunction const vt_8c281430[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    operation_8c255df0,
+    TItemWpnBouquet_v49_8c255df0,
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,
@@ -242,7 +242,7 @@ VirtualFunction const vt_8c281430[61] = {
 VirtualFunction const vt_8c281524[61] = {
     0,
     0,
-    destroy_object_8c255e9c,
+    TItemWpnFamitsu_dtor_8c255e9c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -307,29 +307,29 @@ VirtualFunction const vt_8c281524[61] = {
 VirtualFunction const vt_8c281618[27] = {
     0,
     0,
-    destroy_object_8c255ee0,
-    fn_8c255fb4,
-    operation_8c256198,
+    TOSwitchItem_dtor_8c255ee0,
+    TOSwitchItem_update_8c255fb4,
+    TOSwitchItem_render_8c256198,
     operation_8c0eeb8c,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
     operation_8c051fd4,
     operation_8c010500,
-    operation_8c256194,
+    TOSwitchItem_v09_8c256194,
     operation_8c010508,
     operation_8c01d3b0,
     fn_8c01d4c4,
     operation_8c010510,
     operation_8c1135b4,
-    operation_8c082044,
-    operation_8c113440,
-    operation_8c1130e0,
-    operation_8c1130e4,
-    operation_8c113130,
-    operation_8c1132e0,
+    TOKey_v15_8c082044,
+    TOKey_v16_8c113440,
+    TOKey_v17_8c1130e0,
+    TOKey_v18_8c1130e4,
+    TOKey_v19_8c113130,
+    TOKey_v20_8c1132e0,
     operation_8c1133cc,
-    operation_8c256254,
+    TOSwitchItem_v22_8c256254,
     update_cycle_8c113060,
     operation_8c1136b0
 };
@@ -338,16 +338,16 @@ VirtualFunction const vt_8c281618[27] = {
 VirtualFunction const vt_8c281684[88] = {
     0,
     0,
-    operation_8c2562b4,
-    fn_8c256424,
-    operation_8c2564a0,
+    TOSymbolchatColli_dtor_8c2562b4,
+    TOSymbolchatColli_update_8c256424,
+    TOSymbolchatColli_render_8c2564a0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
     fn_8c043724,
     operation_8c010500,
-    operation_8c25649c,
+    TOSymbolchatColli_v09_8c25649c,
     word_operation_8c01345c,
     operation_8c01d3b0,
     fn_8c01d4c4,

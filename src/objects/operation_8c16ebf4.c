@@ -13,7 +13,7 @@ struct S_g8c4d59d8 {
     char unknown0[0x4];
     short f04;
 };
-void operation_8c16ebf4(void)
+void quest_op_hud_hide_8c16ebf4(void)
 {
     if (*(int *)0x8c46fe20 != 0) {
         (*(S_g8c46fe20 **)0x8c46fe20)->f20 |= 1;

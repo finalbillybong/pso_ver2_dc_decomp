@@ -18,7 +18,7 @@ struct Object {
     int f2c;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c0772f8(Object *o, int a1, int a2)
+Object *TItemEffectWeapon_ctor_8c0772f8(Object *o, int a1, int a2)
 {
     int v1;
     char *v2;

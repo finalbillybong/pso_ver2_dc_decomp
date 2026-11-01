@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c21cc84(void);
-extern void operation_8c21cd08(void);
-extern void operation_8c21cd48(void);
+extern void TWindowShortCut_dtor_8c21cc84(void);
+extern void TWindowShortCut_update_8c21cd08(void);
+extern void TWindowShortCut_render_8c21cd48(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0dc63c(void);
@@ -13,9 +13,9 @@ extern void operation_8c0dc63c(void);
 VirtualFunction const vt_8c2785f0[8] = {
     0,
     0,
-    operation_8c21cc84,
-    operation_8c21cd08,
-    operation_8c21cd48,
+    TWindowShortCut_dtor_8c21cc84,
+    TWindowShortCut_update_8c21cd08,
+    TWindowShortCut_render_8c21cd48,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c

@@ -18,7 +18,7 @@ struct Arg0_13c_s754 {
     char unknown0[0x8];
     float f08;
 };
-void operation_8c17b70c(Object *o)
+void TItemProUnit_v17_8c17b70c(Object *o)
 {
     float *p;
     if (o->f1d8 == 0x13) {

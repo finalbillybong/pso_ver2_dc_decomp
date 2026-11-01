@@ -54,7 +54,7 @@ extern Triple g_8c4d8218;
 extern Owner *game_malloc_8c011ecc(int);
 extern void call_8c03d610(Owner *, int, void *, int, int, int);
 extern int load_pvm_file_tls_8c118528(void *);
-void operation_8c1138bc(void)
+void load_assets_fe_obj_switch_laz_8c1138bc(void)
 {
     Owner *o;
     Owner *v;

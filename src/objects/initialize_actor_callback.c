@@ -10,4 +10,4 @@ typedef char check_ticks[(unsigned long)&((View *)0)->ticks==34?1:-1];
 typedef char check_callback[(unsigned long)&((View *)0)->callback==36?1:-1];
 typedef char check_prefix[sizeof(View)==40?1:-1];
 extern void *parent,*object_name;extern void TObject_ctor_8c0330e4(View *,void *);
-View *initialize_actor_callback(View *o,unsigned short identifier,Callback callback) { TObject_ctor_8c0330e4(o,parent);o->dispatch=(void *)0x8c26190c;o->name=object_name;o->size=40;o->identifier=identifier;o->callback=callback;return o; }
+View *TPlyOnCreated_ctor_8c03b9d4(View *o,unsigned short identifier,Callback callback) { TObject_ctor_8c0330e4(o,parent);o->dispatch=(void *)0x8c26190c;o->name=object_name;o->size=40;o->identifier=identifier;o->callback=callback;return o; }

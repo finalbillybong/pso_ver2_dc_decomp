@@ -25,8 +25,8 @@ struct Object {
 extern void call_8c3be280(int, void *, void *);
 extern void project_point_to_screen_8c38ad50(int, void *, Frame *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c245a9c(int, void *, void *, Object *, float, float);
-void operation_8c245e5c(Object *o)
+extern void TEffStarLightChild_ctor_8c245a9c(int, void *, void *, Object *, float, float);
+void TEffStarLight2D_update_8c245e5c(Object *o)
 {
     Frame frame;
     int t1;
@@ -41,7 +41,7 @@ void operation_8c245e5c(Object *o)
             if (!(1.0f > ((o->f20 - o->f28) * (o->f20 - o->f28) + (o->f24 - o->f2c) * (o->f24 - o->f2c)))) {
                 t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x34);
                 if (t1 != 0) {
-                    call_8c245a9c(t1, (void *)(&o->f28), (void *)(&o->f20), o, o->f3c, o->f40);
+                    TEffStarLightChild_ctor_8c245a9c(t1, (void *)(&o->f28), (void *)(&o->f20), o, o->f3c, o->f40);
                 }
             }
         }

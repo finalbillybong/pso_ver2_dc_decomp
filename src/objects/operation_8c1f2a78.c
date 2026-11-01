@@ -22,7 +22,7 @@ struct Arg0_28 {
 };
 extern void TObject_ctor_8c0330e4(Object *, int);
 extern int create_effect_769c(void *, int);
-Object *operation_8c1f2a78(Object *o, int a1, int a2)
+Object *TItemMagGrowEff_ctor_8c1f2a78(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int t1;

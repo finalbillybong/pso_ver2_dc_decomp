@@ -28,7 +28,7 @@ struct Arg3 {
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern float normalize_vector_checked(void *);
-Object *operation_8c10433c(Object *o, int a1, Arg2 *a2, Arg3 *a3)
+Object *TObjEneDf2Bringer_Eff_TpAbsorb1_ctor_8c10433c(Object *o, int a1, Arg2 *a2, Arg3 *a3)
 {
     Object **home = &o;
     float t1;

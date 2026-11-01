@@ -9,7 +9,7 @@ struct Object {
     int f364;
 };
 extern void create_effect_777c(void *, int);
-void operation_8c0fe9e4(Object *o)
+void TOMineTrap_v98_8c0fe9e4(Object *o)
 {
     switch (o->f364) {
     case 8:

@@ -39,7 +39,7 @@ struct Arg0_9c {
     int f64;
 };
 extern void call_8c08b454(Object *, void *, void *, int);
-void operation_8c08b5d4(Object *o)
+void TObjEZBoneRotPlayer_update_8c08b5d4(Object *o)
 {
     int v2;
     S_vv1 *v1;

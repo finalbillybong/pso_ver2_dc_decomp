@@ -26,8 +26,8 @@ extern void operation_8c0a2144(int);
 extern void operation_8c0a237c(void *, void *);
 extern int hierarchy_is_active(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c25cff0(int, Object *, void *);
-void operation_8c25cd7c(Object *o)
+extern void TItemReverseTechPart2_ctor_8c25cff0(int, Object *, void *);
+void TItemReverseTech_update_8c25cd7c(Object *o)
 {
     Frame frame;
     char *v26;
@@ -46,7 +46,7 @@ void operation_8c25cd7c(Object *o)
             o->f24 = 0;
             t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x15c);
             if (t2 != 0) {
-                call_8c25cff0(t2, o, g_8c513420);
+                TItemReverseTechPart2_ctor_8c25cff0(t2, o, g_8c513420);
             }
             o->f28 = (int)(t2);
         }

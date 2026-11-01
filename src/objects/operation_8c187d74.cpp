@@ -23,7 +23,7 @@ extern "C" void operation_8c187e08(void *);
 extern "C" void operation_8c187e9c(void *);
 extern "C" void operation_8c187ed8(void *);
 extern "C" void operation_8c187f44(void *);
-extern "C" void operation_8c187d74(Object *o)
+extern "C" void TJudgmentSequence_v05_8c187d74(Object *o)
 {
     switch (((ObjectData *)o)->f24) {
     case 0:

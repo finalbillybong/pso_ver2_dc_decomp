@@ -4,7 +4,7 @@
 #define TObject_ctor_8c0330e4 ((void (*)(void *,void *))0x8c0330e4)
 #define effect_owner ((void **)0x8c44bea0)
 #define effect_dispatch ((void **)0x8c303bf0)
-Effect *initialize_effect_vector_field30(Effect *effect,EffectVector *position,int *orientation,void *resource,int a,int b,int c,int own,unsigned short field_30) {
+Effect *TParticleCtrl_ctor_4_8c0a7170(Effect *effect,EffectVector *position,int *orientation,void *resource,int a,int b,int c,int own,unsigned short field_30) {
  TObject_ctor_8c0330e4(effect,*effect_owner);
  effect->field_18=(void *)0x8c265c94;
  effect->field_00=*effect_dispatch;

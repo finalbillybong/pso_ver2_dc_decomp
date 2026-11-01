@@ -14,7 +14,7 @@ extern void clear_global_render_resources(void);
 extern void select_state2_8c01c1b4(void);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c25cd24(Object *o, int a1)
+Object *TItemReverseTech_dtor_8c25cd24(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c281c6c;

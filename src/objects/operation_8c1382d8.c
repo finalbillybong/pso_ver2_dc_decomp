@@ -12,7 +12,7 @@ extern void operation_8c13a99c(void);
 extern void operation_8c152240(void);
 extern void operation_8c15073c(void);
 extern void operation_193764_8c1513d8(void);
-void operation_8c1382d8(void)
+void release_assets_boss3_volopt_8c1382d8(void)
 {
     operation_8c159ed4();
     call_8c03dc40(g_8c4d9b60, 1);

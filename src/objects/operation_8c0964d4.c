@@ -12,7 +12,7 @@ struct Object {
     int f24;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern int operation_195e68(void *);
+extern int TObjCMSprCharSelBG_ctor_8c195e68(void *);
 extern void operation_8c09a478(void);
 Object *operation_8c0964d4(Object *o, int a1)
 {
@@ -21,7 +21,7 @@ Object *operation_8c0964d4(Object *o, int a1)
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c26580c;
-    t1 = operation_195e68((void *)o);
+    t1 = TObjCMSprCharSelBG_ctor_8c195e68((void *)o);
     o->f24 = (int)(t1);
     operation_8c09a478();
     o->f20 = 0;

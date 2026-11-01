@@ -8,7 +8,7 @@ extern int g_8c4e2e64;
 extern int get_current_area_8c032b10(void);
 extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
-void operation_8c1cddf0(void)
+void load_assets_o_rock_cave01_8c1cddf0(void)
 {
     int t1;
     int t2;

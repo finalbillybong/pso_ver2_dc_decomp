@@ -24,7 +24,7 @@ struct Object {
     int f120;
 };
 extern void operation_8c0368a8(void *);
-void operation_8c256254(Object *o)
+void TOSwitchItem_v22_8c256254(Object *o)
 {
     Frame frame;
     int v1;

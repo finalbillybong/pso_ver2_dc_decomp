@@ -6,7 +6,7 @@ typedef struct Vector3 {
 typedef struct S_g8c4db408 S_g8c4db408;
 extern char g_8c318c08[];
 extern int call_8c12b114(int, void *, int);
-void operation_8c172180(int a0)
+void quest_op_is_there_grave_message_8c172180(int a0)
 {
     int t1;
     if (*(int *)0x8c4db9e4 != 0) {

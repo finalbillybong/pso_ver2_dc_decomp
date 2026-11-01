@@ -22,7 +22,7 @@ struct S_c8c053d84 {
 extern S_g8c4db408 *g_8c4db408;
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
 extern void create_effect_7cc0(void *, int, int, int);
-void operation_8c16e210(int a0)
+void quest_op_particle_id_8c16e210(int a0)
 {
     Frame frame;
     float v3;

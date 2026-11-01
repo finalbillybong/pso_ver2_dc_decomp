@@ -41,7 +41,7 @@ extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d8324 *g_8c4d8324;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c119d60(S_c8c122700 *, void *, int);
+extern void TObjHashiBase_ctor_8c119d60(S_c8c122700 *, void *, int);
 extern void copy_actor_records(void *, void *, int);
 extern void attach_and_insert_object(void *);
 S_c8c122700 *TObjHashiVersus1_create_8c11a504(int a0)
@@ -54,7 +54,7 @@ S_c8c122700 *TObjHashiVersus1_create_8c11a504(int a0)
     if (t1 != 0) {
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;
-        call_8c119d60(t1, g_8c44be98, a0);
+        TObjHashiBase_ctor_8c119d60(t1, g_8c44be98, a0);
         (void)home;
         self->f18 = (void *)0x8c269f84;
         self->f00 = (int)(g_8c3107f0);

@@ -14,7 +14,7 @@ extern void operation_8c0f651c(void *, int);
 extern void call_8c0f665c(int, int);
 extern void call_8c0f6c0c(int, int);
 extern void call_8c0f6d2c(int, int);
-void operation_8c0f53a4(int a0, int a1, int a2)
+void TObjEneDf2Bringer_v93_8c0f53a4(int a0, int a1, int a2)
 {
     switch (a1) {
     case 0:

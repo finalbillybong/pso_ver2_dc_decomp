@@ -65,7 +65,7 @@ typedef struct S_vv23Data {
 } S_vv23Data;
 extern "C" void operation_8c0db20c(void *, int, int);
 extern "C" S_c8c021ef8 *lookup_low_id(int);
-extern "C" Object *operation_8c0e2648(Object *o)
+extern "C" Object *TWindowStatus_ctor_8c0e2648(Object *o)
 {
     Object **home = &o;
     S_vv22 *v22;

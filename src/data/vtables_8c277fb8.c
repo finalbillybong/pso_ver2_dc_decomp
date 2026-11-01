@@ -16,20 +16,20 @@ extern void operation_8c1f1700(void);
 extern void operation_8c1f184c(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_object_8c1f19e8(void);
-extern void operation_8c1f1a2c(void);
-extern void finalize_view_8c1f1a5c(void);
+extern void TWindowComCard_dtor_8c1f19e8(void);
+extern void TWindowComCard_update_8c1f1a2c(void);
+extern void TWindowComCard_render_8c1f1a5c(void);
 extern void operation_8c0dc63c(void);
-extern void operation_8c1f2b08(void);
-extern void operation_8c1f2b6c(void);
+extern void TItemMagGrowEff_dtor_8c1f2b08(void);
+extern void TItemMagGrowEff_update_8c1f2b6c(void);
 extern void TObject_render_default_8c0111c8(void);
-extern void destroy_object_8c1f1e94(void);
-extern void operation_8c1f1ed8(void);
+extern void TItemMagSub_dtor_8c1f1e94(void);
+extern void TItemMagSub_update_8c1f1ed8(void);
 extern void TItemMagSub_render_8c1f2354(void);
 extern void destroy_object_8c206e5c(void);
 extern void operation_8c206ea0(void);
-extern void destroy_object_8c206c7c(void);
-extern void operation_8c206cc0(void);
+extern void TBoss3VoloptCtrl_dtor_8c206c7c(void);
+extern void TBoss3VoloptCtrl_update_8c206cc0(void);
 
 /* 8c277fb8: type-information and this-adjustment header, then 9 slots */
 VirtualFunction const vt_8c277fb8[11] = {
@@ -61,9 +61,9 @@ VirtualFunction const vt_8c277fe4[7] = {
 VirtualFunction const vt_8c278000[8] = {
     0,
     0,
-    destroy_object_8c1f19e8,
-    operation_8c1f1a2c,
-    finalize_view_8c1f1a5c,
+    TWindowComCard_dtor_8c1f19e8,
+    TWindowComCard_update_8c1f1a2c,
+    TWindowComCard_render_8c1f1a5c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c
@@ -73,8 +73,8 @@ VirtualFunction const vt_8c278000[8] = {
 VirtualFunction const vt_8c278020[7] = {
     0,
     0,
-    operation_8c1f2b08,
-    operation_8c1f2b6c,
+    TItemMagGrowEff_dtor_8c1f2b08,
+    TItemMagGrowEff_update_8c1f2b6c,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -84,8 +84,8 @@ VirtualFunction const vt_8c278020[7] = {
 VirtualFunction const vt_8c27803c[7] = {
     0,
     0,
-    destroy_object_8c1f1e94,
-    operation_8c1f1ed8,
+    TItemMagSub_dtor_8c1f1e94,
+    TItemMagSub_update_8c1f1ed8,
     TItemMagSub_render_8c1f2354,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -106,8 +106,8 @@ VirtualFunction const vt_8c278058[7] = {
 VirtualFunction const vt_8c278074[7] = {
     0,
     0,
-    destroy_object_8c206c7c,
-    operation_8c206cc0,
+    TBoss3VoloptCtrl_dtor_8c206c7c,
+    TBoss3VoloptCtrl_update_8c206cc0,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

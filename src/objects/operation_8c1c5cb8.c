@@ -23,7 +23,7 @@ struct Object {
     float f4c;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c1c5cb8(Object *o, int a1, int a2, int a3, int a4)
+Object *TItemEffHeaven_ctor_8c1c5cb8(Object *o, int a1, int a2, int a3, int a4)
 {
     int v1;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);

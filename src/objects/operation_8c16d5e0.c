@@ -22,7 +22,7 @@ extern int g_8c4db428;
 extern void request_resource_release(void *);
 extern int operation_8c217894(void);
 extern void operation_8c217904(int, int, int);
-void operation_8c16d5e0(int a0)
+void quest_op_window_msg_8c16d5e0(int a0)
 {
     int t1;
     if (g_8c4db40c != 0) {

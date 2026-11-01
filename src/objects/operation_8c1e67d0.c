@@ -33,8 +33,8 @@ extern void call_8c1003d0(void *);
 extern int features_ready_8c1e779c(Object *);
 extern void select_mode13_8c1cc5d0(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c199688(int, Object *, int);
-extern void call_8c198294(int, Object *);
+extern void TAdTitle_ctor_8c199688(int, Object *, int);
+extern void TAdBack_ctor_8c198294(int, Object *);
 extern void call_8c1e6c74(Object *);
 Object *operation_8c1e67d0(Object *o)
 {
@@ -83,12 +83,12 @@ L_8c1e686a:;
     if (o->f38 == 1) {
         t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xac);
         if (t3 != 0) {
-            call_8c199688(t3, o, 1);
+            TAdTitle_ctor_8c199688(t3, o, 1);
         }
     }
     t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x40);
     if (t4 != 0) {
-        call_8c198294(t4, o);
+        TAdBack_ctor_8c198294(t4, o);
     }
     call_8c1e6c74(o);
     return o;

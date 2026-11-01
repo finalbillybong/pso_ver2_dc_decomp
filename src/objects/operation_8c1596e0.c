@@ -22,8 +22,8 @@ extern int operation_8c106760(Object *);
 extern int operation_8c106798(Object *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
-extern void operation_8c10664c(void *);
-void operation_8c1596e0(Object *o)
+extern void TShopSequence_v07_8c10664c(void *);
+void THunterGuildSeqOffline_v07_8c1596e0(Object *o)
 {
     char *v34;
     int t1;
@@ -74,7 +74,7 @@ void operation_8c1596e0(Object *o)
             }
             g_8c4d7ca0 = 1;
         }
-        operation_8c10664c((void *)o);
+        TShopSequence_v07_8c10664c((void *)o);
         o->f04 |= 1;
     }
 }

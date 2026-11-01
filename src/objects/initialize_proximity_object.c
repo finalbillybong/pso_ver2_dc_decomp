@@ -1,7 +1,7 @@
 #include "src/include/proximity_object.h"
 #define TObjectShared_ctor_8c01d1ec ((void (*)(ProximityObject *,void *))0x8c01d1ec)
 extern void *create_at(Vector3 *,int *,int,int);
-ProximityObject *initialize_proximity_object(ProximityObject *p,void *parent,void *argument) {
+ProximityObject *TObjItemLight_ctor_8c1ab324(ProximityObject *p,void *parent,void *argument) {
  ProximityObject **home=&p;
  TObjectShared_ctor_8c01d1ec(p,parent);
  p->dispatch=(void *)0x8c2747f8;

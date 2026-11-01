@@ -61,8 +61,8 @@ extern "C" void call_8c05fd7c(int, Object *, void *, int, int);
 extern "C" int create_effect_777c(void *, int);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" S_c8c1794c8 *record30_8c1794c8(int);
-extern "C" void create_effect_b7684(void *, void *, void *, void *);
-extern "C" void create_effect_b7cf0(void *, void *, void *, void *);
+extern "C" void TTecRaBarta_create_8c0b7684(void *, void *, void *, void *);
+extern "C" void TTecRaFoie_create_8c0b7cf0(void *, void *, void *, void *);
 extern "C" void operation_8c191504(int);
 extern "C" int call_8c18e6fc(Frame *);
 extern "C" void operation_8c1b5f70(Object *o)
@@ -114,11 +114,11 @@ L_8c1b5fe0:;
         if (v1 == 0) {
             p = (char *)o + 0x3c0;
             t3 = record30_8c1794c8(0x36);
-            create_effect_b7684((void *)o, (void *)p, (void *)p, (void *)(t3->f1c));
+            TTecRaBarta_create_8c0b7684((void *)o, (void *)p, (void *)p, (void *)(t3->f1c));
         } else {
             p = (char *)o + 0x3c0;
             t4 = record30_8c1794c8(0x36);
-            create_effect_b7cf0((void *)o, (void *)p, (void *)p, (void *)(t4->f18));
+            TTecRaFoie_create_8c0b7cf0((void *)o, (void *)p, (void *)p, (void *)(t4->f18));
         }
         operation_8c191504(1);
     }

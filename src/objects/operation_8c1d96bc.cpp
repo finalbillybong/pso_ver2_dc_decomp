@@ -44,7 +44,7 @@ extern "C" char g_8c32a328[];
 extern "C" void operation_8c0c5480(void *, void *, Frame *);
 extern "C" void njPrintColor_8c38c5b6(int);
 extern "C" void debug_print_at_8c38cf80(int, void *, ...);
-extern "C" void operation_8c1d96bc(Object *o)
+extern "C" void TObjCity_Season_FireWorkCtrl_v09_8c1d96bc(Object *o)
 {
     Frame frame;
     int t1;

@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_context_8c174a10(void);
-extern void fn_8c174a5c(void);
-extern void fn_8c174b4c(void);
+extern void TPhotonYoulla_dtor_8c174a10(void);
+extern void TPhotonYoulla_update_8c174a5c(void);
+extern void TPhotonYoulla_render_8c174b4c(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -19,9 +19,9 @@ extern void operation_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c13ebb4(void);
 extern void operation_8c13ec0c(void);
-extern void destroy_context_8c174ed0(void);
-extern void fn_8c174f1c(void);
-extern void operation_8c1754bc(void);
+extern void TBoss2Joint_dtor_8c174ed0(void);
+extern void TBoss2Joint_update_8c174f1c(void);
+extern void TBoss2Joint_render_8c1754bc(void);
 extern void fn_8c043724(void);
 extern void word_operation_8c01345c(void);
 extern void operation_8c013448(void);
@@ -47,7 +47,7 @@ extern void operation_8c046324(void);
 extern void operation_8c04639c(void);
 extern void operation_8c046414(void);
 extern void operation_8c046498(void);
-extern void operation_8c175000(void);
+extern void TBoss2Joint_v37_8c175000(void);
 extern void operation_8c0133f8(void);
 extern void fn_8c045200(void);
 extern void object_blocked_8c013418(void);
@@ -63,13 +63,13 @@ extern void operation_45a8c(void);
 extern void operation_45b8c(void);
 extern void operation_45d6c(void);
 extern void operation_8c045484(void);
-extern void operation_8c1754c0(void);
-extern void operation_8c1754c4(void);
-extern void operation_8c1754c8(void);
-extern void operation_8c1754cc(void);
-extern void operation_8c1754d0(void);
-extern void operation_8c1754d4(void);
-extern void operation_8c1754d8(void);
+extern void TBoss2Joint_v53_8c1754c0(void);
+extern void TBoss2Joint_v54_8c1754c4(void);
+extern void TBoss2Joint_v55_8c1754c8(void);
+extern void TBoss2Joint_v56_8c1754cc(void);
+extern void TBoss2Joint_v57_8c1754d0(void);
+extern void TBoss2Joint_v58_8c1754d4(void);
+extern void TBoss2Joint_v59_8c1754d8(void);
 extern void fn_8c046f2c(void);
 extern void fn_8c047090(void);
 extern void operation_8c0471b4(void);
@@ -79,9 +79,9 @@ extern void operation_8c047438(void);
 extern void operation_8c013408(void);
 extern void operation_8c01340c(void);
 extern void operation_8c013410(void);
-extern void operation_8c1750c4(void);
-extern void fn_8c175014(void);
-extern void operation_8c175004(void);
+extern void TBoss2Joint_v69_8c1750c4(void);
+extern void TBoss2Joint_v70_8c175014(void);
+extern void TBoss2Joint_v71_8c175004(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
 extern void operation_8c0134b0(void);
@@ -103,13 +103,13 @@ extern void operation_8c059d2c(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
-extern void operation_8c175498(void);
-extern void operation_8c1750f4(void);
+extern void TBoss2Joint_v93_8c175498(void);
+extern void TBoss2Joint_v94_8c1750f4(void);
 extern void operation_8c05b16c(void);
 extern void operation_8c05b19c(void);
 extern void fn_8c05b6b4(void);
 extern void operation_8c05b6fc(void);
-extern void operation_8c175188(void);
+extern void TBoss2Joint_v99_8c175188(void);
 extern void operation_8c05b77c(void);
 extern void operation_8c05b7bc(void);
 extern void operation_8c05b7f8(void);
@@ -119,9 +119,9 @@ extern void operation_8c05b8b4(void);
 extern void operation_8c05babc(void);
 extern void apply_contact_position(void);
 extern void capture_current_contact(void);
-extern void fn_8c1751b8(void);
-extern void operation_8c1754b8(void);
-extern void destroy_object_8c1755f8(void);
+extern void TBoss2Joint_v109_8c1751b8(void);
+extern void TBoss2Joint_v110_8c1754b8(void);
+extern void TItemWpnClaw_dtor_8c1755f8(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -167,7 +167,7 @@ extern void fn_8c0766f8(void);
 extern void operation_8c07633c(void);
 extern void operation_8c076178(void);
 extern void operation_8c076174(void);
-extern void operation_8c1755c4(void);
+extern void TItemWpnClaw_v52_8c1755c4(void);
 extern void operation_8c076170(void);
 extern void operation_8c075ac4(void);
 extern void operation_8c075b80(void);
@@ -179,9 +179,9 @@ extern void fn_8c076340(void);
 VirtualFunction const vt_8c270290[19] = {
     0,
     0,
-    destroy_context_8c174a10,
-    fn_8c174a5c,
-    fn_8c174b4c,
+    TPhotonYoulla_dtor_8c174a10,
+    TPhotonYoulla_update_8c174a5c,
+    TPhotonYoulla_render_8c174b4c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -202,9 +202,9 @@ VirtualFunction const vt_8c270290[19] = {
 VirtualFunction const vt_8c2702dc[113] = {
     0,
     0,
-    destroy_context_8c174ed0,
-    fn_8c174f1c,
-    operation_8c1754bc,
+    TBoss2Joint_dtor_8c174ed0,
+    TBoss2Joint_update_8c174f1c,
+    TBoss2Joint_render_8c1754bc,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -239,7 +239,7 @@ VirtualFunction const vt_8c2702dc[113] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    operation_8c175000,
+    TBoss2Joint_v37_8c175000,
     operation_8c0133f8,
     fn_8c045200,
     object_blocked_8c013418,
@@ -255,13 +255,13 @@ VirtualFunction const vt_8c2702dc[113] = {
     operation_45b8c,
     operation_45d6c,
     operation_8c045484,
-    operation_8c1754c0,
-    operation_8c1754c4,
-    operation_8c1754c8,
-    operation_8c1754cc,
-    operation_8c1754d0,
-    operation_8c1754d4,
-    operation_8c1754d8,
+    TBoss2Joint_v53_8c1754c0,
+    TBoss2Joint_v54_8c1754c4,
+    TBoss2Joint_v55_8c1754c8,
+    TBoss2Joint_v56_8c1754cc,
+    TBoss2Joint_v57_8c1754d0,
+    TBoss2Joint_v58_8c1754d4,
+    TBoss2Joint_v59_8c1754d8,
     fn_8c046f2c,
     fn_8c047090,
     operation_8c0471b4,
@@ -271,9 +271,9 @@ VirtualFunction const vt_8c2702dc[113] = {
     operation_8c013408,
     operation_8c01340c,
     operation_8c013410,
-    operation_8c1750c4,
-    fn_8c175014,
-    operation_8c175004,
+    TBoss2Joint_v69_8c1750c4,
+    TBoss2Joint_v70_8c175014,
+    TBoss2Joint_v71_8c175004,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -295,13 +295,13 @@ VirtualFunction const vt_8c2702dc[113] = {
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
-    operation_8c175498,
-    operation_8c1750f4,
+    TBoss2Joint_v93_8c175498,
+    TBoss2Joint_v94_8c1750f4,
     operation_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,
     operation_8c05b6fc,
-    operation_8c175188,
+    TBoss2Joint_v99_8c175188,
     operation_8c05b77c,
     operation_8c05b7bc,
     operation_8c05b7f8,
@@ -311,15 +311,15 @@ VirtualFunction const vt_8c2702dc[113] = {
     operation_8c05babc,
     apply_contact_position,
     capture_current_contact,
-    fn_8c1751b8,
-    operation_8c1754b8
+    TBoss2Joint_v109_8c1751b8,
+    TBoss2Joint_v110_8c1754b8
 };
 
 /* 8c2704a0: type-information and this-adjustment header, then 59 slots */
 VirtualFunction const vt_8c2704a0[61] = {
     0,
     0,
-    destroy_object_8c1755f8,
+    TItemWpnClaw_dtor_8c1755f8,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -371,7 +371,7 @@ VirtualFunction const vt_8c2704a0[61] = {
     operation_8c07633c,
     operation_8c076178,
     operation_8c076174,
-    operation_8c1755c4,
+    TItemWpnClaw_v52_8c1755c4,
     operation_8c076170,
     operation_8c075ac4,
     operation_8c075b80,

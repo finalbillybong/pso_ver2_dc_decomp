@@ -11,7 +11,7 @@ struct Object {
     float f23c;
     float f240;
 };
-void operation_8c24f624(Object *o)
+void TItemWpnYasumuraShiki2_v50_8c24f624(Object *o)
 {
     int v1;
     if (o->f234 == 0) {

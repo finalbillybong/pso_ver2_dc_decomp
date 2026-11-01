@@ -31,7 +31,7 @@ extern int call_8c18e768(int, int);
 extern void operation_8c109da0(void *);
 extern int call_8c24e644(int, void *);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c109524(Object *o)
+void TObjEneGyaranzo_v70_8c109524(Object *o)
 {
     int v4;
     int t1;

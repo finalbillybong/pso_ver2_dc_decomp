@@ -20,7 +20,7 @@ struct Frame {
 extern int hierarchy_is_active(void *);
 extern void operation_8c0f8108(void *, void *);
 extern void call_8c047b24(Object *, int, int, Block8);
-float operation_8c0f8afc(Object *o, int a1, int a2, Block8 a3)
+float TObjEneSlimeOne_v25_8c0f8afc(Object *o, int a1, int a2, Block8 a3)
 {
     char *v11;
     int t1;

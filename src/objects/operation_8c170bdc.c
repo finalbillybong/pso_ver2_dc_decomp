@@ -11,7 +11,7 @@ struct Frame {
 };
 extern void call_8c1c9a74(Frame *, void *, void *);
 extern int call_8c2481b4(Frame *);
-void operation_8c170bdc(int a0)
+void quest_op_award_item_give_8c170bdc(int a0)
 {
     Frame frame;
     int t1;

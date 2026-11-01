@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 typedef struct S_g8c4db408 S_g8c4db408;
-void operation_8c1718e4(int a0)
+void quest_op_get_game_version_8c1718e4(int a0)
 {
     *(int *)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + ((unsigned char)a0 << 2)) = 2;
 }

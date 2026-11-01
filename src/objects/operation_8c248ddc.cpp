@@ -49,7 +49,7 @@ typedef struct ObjectData {
 extern "C" int call_8c1aaabc(int);
 extern "C" void call_8c076af4(Object *, float, int, int);
 extern "C" void operation_8c076580(void *);
-extern "C" void operation_8c248ddc(Object *o)
+extern "C" void TItemWpnBasyoSen2_v49_8c248ddc(Object *o)
 {
     int t1;
     int t2;

@@ -57,7 +57,7 @@ extern int forward_current_effect_mode_8c02c1bc(void);
 extern void operation_8c026700(int, int);
 extern void operation_8c1a9f58(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_manager_8c03bfdc(void *, void *);
+extern void TForceOperate_ctor_8c03bfdc(void *, void *);
 extern S_c8c0b4a60 *operation_8c0b4a60(short, void *);
 extern S_c8c01e888 *operation_8c01e888(void *, int);
 extern void update_object_center(void *);
@@ -122,7 +122,7 @@ L_8c020720:;
                         if (t7 == 0) {
                             goto L_8c02083a;
                         }
-                        initialize_manager_8c03bfdc((void *)t7, g_8c44be8c);
+                        TForceOperate_ctor_8c03bfdc((void *)t7, g_8c44be8c);
                         goto L_8c02083a;
                     }
                 }

@@ -29,7 +29,7 @@ extern int operation_8c106798(Object *);
 extern void operation_8c024720(void *);
 extern int lookup_low_id(int);
 extern void operation_8c02aff0(void *);
-void operation_8c10ad64(Object *o)
+void TMedicalCenterSequence_v07_8c10ad64(Object *o)
 {
     int v4;
     int t1;

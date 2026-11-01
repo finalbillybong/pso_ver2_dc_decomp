@@ -2,9 +2,9 @@
 
 typedef void (*Function)(void);
 
-extern void operation_8c05cd10(void);
-extern void operation_8c05cd8c(void);
-extern void fn_8c05e3dc(void);
+extern void TObjEneRe2Flower_dtor_8c05cd10(void);
+extern void TObjEneRe2Flower_update_8c05cd8c(void);
+extern void TObjEneRe2Flower_render_8c05e3dc(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -39,7 +39,7 @@ extern void operation_8c046324(void);
 extern void operation_8c04639c(void);
 extern void operation_8c046414(void);
 extern void operation_8c046498(void);
-extern void operation_8c05cf34(void);
+extern void TObjEneRe2Flower_v37_8c05cf34(void);
 extern void operation_8c0133f8(void);
 extern void fn_8c045200(void);
 extern void object_blocked_8c013418(void);
@@ -71,9 +71,9 @@ extern void operation_8c047438(void);
 extern void operation_8c013408(void);
 extern void operation_8c01340c(void);
 extern void operation_8c013410(void);
-extern void operation_8c05cf9c(void);
-extern void operation_8c05cf5c(void);
-extern void operation_8c05cf38(void);
+extern void TObjEneRe2Flower_v69_8c05cf9c(void);
+extern void TObjEneRe2Flower_v70_8c05cf5c(void);
+extern void TObjEneRe2Flower_v71_8c05cf38(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
 extern void operation_8c0134b0(void);
@@ -95,8 +95,8 @@ extern void operation_8c05c804(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
-extern void operation_8c05ce40(void);
-extern void operation_8c05cfe4(void);
+extern void TObjEneRe2Flower_v93_8c05ce40(void);
+extern void TObjEneRe2Flower_v94_8c05cfe4(void);
 extern void operation_8c05b16c(void);
 extern void operation_8c05b19c(void);
 extern void fn_8c05b6b4(void);
@@ -112,15 +112,15 @@ extern void operation_8c05babc(void);
 extern void apply_contact_position(void);
 extern void capture_current_contact(void);
 extern void fn_8c05bf78(void);
-extern void operation_8c05e368(void);
-extern void operation_8c05e6cc(void);
+extern void TObjEneRe2Flower_v110_8c05e368(void);
+extern void TObjEneRe2Flower_v111_8c05e6cc(void);
 
 Function const d_8c262974[114] = {
     0,
     0,
-    operation_8c05cd10,
-    operation_8c05cd8c,
-    fn_8c05e3dc,
+    TObjEneRe2Flower_dtor_8c05cd10,
+    TObjEneRe2Flower_update_8c05cd8c,
+    TObjEneRe2Flower_render_8c05e3dc,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -155,7 +155,7 @@ Function const d_8c262974[114] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    operation_8c05cf34,
+    TObjEneRe2Flower_v37_8c05cf34,
     operation_8c0133f8,
     fn_8c045200,
     object_blocked_8c013418,
@@ -187,9 +187,9 @@ Function const d_8c262974[114] = {
     operation_8c013408,
     operation_8c01340c,
     operation_8c013410,
-    operation_8c05cf9c,
-    operation_8c05cf5c,
-    operation_8c05cf38,
+    TObjEneRe2Flower_v69_8c05cf9c,
+    TObjEneRe2Flower_v70_8c05cf5c,
+    TObjEneRe2Flower_v71_8c05cf38,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -211,8 +211,8 @@ Function const d_8c262974[114] = {
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
-    operation_8c05ce40,
-    operation_8c05cfe4,
+    TObjEneRe2Flower_v93_8c05ce40,
+    TObjEneRe2Flower_v94_8c05cfe4,
     operation_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,
@@ -228,6 +228,6 @@ Function const d_8c262974[114] = {
     apply_contact_position,
     capture_current_contact,
     fn_8c05bf78,
-    operation_8c05e368,
-    operation_8c05e6cc
+    TObjEneRe2Flower_v110_8c05e368,
+    TObjEneRe2Flower_v111_8c05e6cc
 };

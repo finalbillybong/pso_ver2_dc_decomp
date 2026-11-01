@@ -18,7 +18,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern int call_8c18e768(int, int);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c077370(Object *o, int a1)
+Object *TItemEffectWeapon_dtor_8c077370(Object *o, int a1)
 {
     char *v14;
     int t1;

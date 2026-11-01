@@ -73,7 +73,7 @@ extern "C" void call_8c0ac7fc(int, void *, void *, short, void *);
 extern "C" int create_effect(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
 extern "C" void operation_8c0b6750(void *, void *, int, int, int);
-extern "C" void operation_8c0ac6c4(Object *o, Arg1 *a1)
+extern "C" void TTecAnti_v06_8c0ac6c4(Object *o, Arg1 *a1)
 {
     Frame frame;
     int v1;

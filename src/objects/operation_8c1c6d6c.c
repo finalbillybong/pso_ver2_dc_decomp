@@ -14,7 +14,7 @@ struct Object {
     char fa7;
 };
 extern void call_8c1c6dc4(Object *, int);
-void operation_8c1c6d6c(Object *o)
+void TOSparkMachine01_update_8c1c6d6c(Object *o)
 {
     int v1;
     if (o->f70 > 0.0f) {

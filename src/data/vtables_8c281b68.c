@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c25ab4c(void);
-extern void operation_8c25abb0(void);
-extern void operation_8c25aca8(void);
+extern void TAdPSOPlay_dtor_8c25ab4c(void);
+extern void TAdPSOPlay_update_8c25abb0(void);
+extern void TAdPSOPlay_render_8c25aca8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
@@ -12,9 +12,9 @@ extern void hierarchy_output(void);
 VirtualFunction const vt_8c281b68[7] = {
     0,
     0,
-    operation_8c25ab4c,
-    operation_8c25abb0,
-    operation_8c25aca8,
+    TAdPSOPlay_dtor_8c25ab4c,
+    TAdPSOPlay_update_8c25abb0,
+    TAdPSOPlay_render_8c25aca8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

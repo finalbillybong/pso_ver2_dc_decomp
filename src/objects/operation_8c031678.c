@@ -18,8 +18,8 @@ struct S_vv2 {
     S_vv2_8 *f08;
 };
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c09f398(int, int, void *, void *, int);
-void operation_8c031678(int a0)
+extern void TEF_PvrWave_ctor_8c09f398(int, int, void *, void *, int);
+void TEF_PvrWave_create_8c031678(int a0)
 {
     int v1;
     S_vv2 *v2;
@@ -29,7 +29,7 @@ void operation_8c031678(int a0)
     do {
         t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x74);
         if (t1 != 0) {
-            call_8c09f398(t1, a0, (void *)(v2->f04), (void *)(v2->f08), v2->f00);
+            TEF_PvrWave_ctor_8c09f398(t1, a0, (void *)(v2->f04), (void *)(v2->f08), v2->f00);
         }
         v2++;
     } while (v2->f00 >= 0);

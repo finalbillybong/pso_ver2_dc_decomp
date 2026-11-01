@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c250b54(void);
+extern void TItemWpnOnBlade_dtor_8c250b54(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -54,7 +54,7 @@ extern void fn_8c241694(void);
 extern void operation_8c241280(void);
 extern void operation_8c076178(void);
 extern void operation_8c076174(void);
-extern void fn_8c250b14(void);
+extern void TItemWpnOnBlade_v52_8c250b14(void);
 extern void operation_8c076170(void);
 extern void fn_8c2411ec(void);
 extern void operation_8c075b80(void);
@@ -62,34 +62,34 @@ extern void operation_8c077810(void);
 extern void operation_8c075ed8(void);
 extern void fn_8c241398(void);
 extern void operation_8c241394(void);
-extern void destroy_object_8c250c70(void);
-extern void operation_239734_8c250ccc(void);
-extern void operation_23976c_8c250d04(void);
-extern void reconstruct_8c250d24(void);
-extern void operation_8c250cb4(void);
-extern void operation_2397f8_8c250d90(void);
-extern void destroy_object_8c250ea4(void);
-extern void operation_8c250e70(void);
-extern void destroy_object_8c250f80(void);
+extern void TItemWpnOnWindCane_dtor_8c250c70(void);
+extern void TItemWpnOnWindCane_v50_8c250ccc(void);
+extern void TItemWpnOnWindCane_v51_8c250d04(void);
+extern void TItemWpnOnWindCane_v52_8c250d24(void);
+extern void TItemWpnOnWindCane_v53_8c250cb4(void);
+extern void TItemWpnOnWindCane_v57_8c250d90(void);
+extern void TItemWpnOnClaw_dtor_8c250ea4(void);
+extern void TItemWpnOnClaw_v52_8c250e70(void);
+extern void TItemWpnOnHandGun_dtor_8c250f80(void);
 extern void operation_8c076238(void);
-extern void destroy_object_8c25107c(void);
-extern void operation_8c2510c0(void);
-extern void operation_8c2510fc(void);
-extern void operation_8c2510e8(void);
+extern void TItemWpnOnHarisen_dtor_8c25107c(void);
+extern void TItemWpnOnHarisen_v53_8c2510c0(void);
+extern void TItemWpnOnHarisen_v57_8c2510fc(void);
+extern void TItemWpnOnHarisen_v59_8c2510e8(void);
 extern void destroy_object_8c2511a4(void);
-extern void destroy_object_8c251368(void);
-extern void operation_8c2512ec(void);
-extern void fn_8c251288(void);
-extern void destroy_object_8c251440(void);
+extern void TItemWpnOnMachineGun_dtor_8c251368(void);
+extern void TItemWpnOnMachineGun_v49_8c2512ec(void);
+extern void TItemWpnOnMachineGun_v52_8c251288(void);
+extern void TItemWpnOnMoonCane_dtor_8c251440(void);
 extern void destroy_object_8c251528(void);
-extern void destroy_object_8c251600(void);
-extern void destroy_object_8c2516dc(void);
+extern void TItemWpnOnPikoPikoHammer_dtor_8c251600(void);
+extern void TItemWpnOnRifle_dtor_8c2516dc(void);
 
 /* 8c27e9d0: type-information and this-adjustment header, then 60 slots */
 VirtualFunction const vt_8c27e9d0[62] = {
     0,
     0,
-    destroy_object_8c250b54,
+    TItemWpnOnBlade_dtor_8c250b54,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -141,7 +141,7 @@ VirtualFunction const vt_8c27e9d0[62] = {
     operation_8c241280,
     operation_8c076178,
     operation_8c076174,
-    fn_8c250b14,
+    TItemWpnOnBlade_v52_8c250b14,
     operation_8c076170,
     fn_8c2411ec,
     operation_8c075b80,
@@ -155,7 +155,7 @@ VirtualFunction const vt_8c27e9d0[62] = {
 VirtualFunction const vt_8c27eac8[62] = {
     0,
     0,
-    destroy_object_8c250c70,
+    TItemWpnOnWindCane_dtor_8c250c70,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -205,14 +205,14 @@ VirtualFunction const vt_8c27eac8[62] = {
     fn_8c075b90,
     fn_8c241694,
     operation_8c241280,
-    operation_239734_8c250ccc,
-    operation_23976c_8c250d04,
-    reconstruct_8c250d24,
-    operation_8c250cb4,
+    TItemWpnOnWindCane_v50_8c250ccc,
+    TItemWpnOnWindCane_v51_8c250d04,
+    TItemWpnOnWindCane_v52_8c250d24,
+    TItemWpnOnWindCane_v53_8c250cb4,
     fn_8c2411ec,
     operation_8c075b80,
     operation_8c077810,
-    operation_2397f8_8c250d90,
+    TItemWpnOnWindCane_v57_8c250d90,
     fn_8c241398,
     operation_8c241394
 };
@@ -221,7 +221,7 @@ VirtualFunction const vt_8c27eac8[62] = {
 VirtualFunction const vt_8c27ebc0[62] = {
     0,
     0,
-    destroy_object_8c250ea4,
+    TItemWpnOnClaw_dtor_8c250ea4,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -273,7 +273,7 @@ VirtualFunction const vt_8c27ebc0[62] = {
     operation_8c241280,
     operation_8c076178,
     operation_8c076174,
-    operation_8c250e70,
+    TItemWpnOnClaw_v52_8c250e70,
     operation_8c076170,
     fn_8c2411ec,
     operation_8c075b80,
@@ -287,7 +287,7 @@ VirtualFunction const vt_8c27ebc0[62] = {
 VirtualFunction const vt_8c27ecb8[62] = {
     0,
     0,
-    destroy_object_8c250f80,
+    TItemWpnOnHandGun_dtor_8c250f80,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -353,7 +353,7 @@ VirtualFunction const vt_8c27ecb8[62] = {
 VirtualFunction const vt_8c27edb0[62] = {
     0,
     0,
-    destroy_object_8c25107c,
+    TItemWpnOnHarisen_dtor_8c25107c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -406,13 +406,13 @@ VirtualFunction const vt_8c27edb0[62] = {
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,
-    operation_8c2510c0,
+    TItemWpnOnHarisen_v53_8c2510c0,
     fn_8c2411ec,
     operation_8c075b80,
     operation_8c077810,
-    operation_8c2510fc,
+    TItemWpnOnHarisen_v57_8c2510fc,
     fn_8c241398,
-    operation_8c2510e8
+    TItemWpnOnHarisen_v59_8c2510e8
 };
 
 /* 8c27eea8: type-information and this-adjustment header, then 60 slots */
@@ -485,7 +485,7 @@ VirtualFunction const vt_8c27eea8[62] = {
 VirtualFunction const vt_8c27efa0[62] = {
     0,
     0,
-    destroy_object_8c251368,
+    TItemWpnOnMachineGun_dtor_8c251368,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -534,10 +534,10 @@ VirtualFunction const vt_8c27efa0[62] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c241694,
-    operation_8c2512ec,
+    TItemWpnOnMachineGun_v49_8c2512ec,
     operation_8c076178,
     operation_8c076174,
-    fn_8c251288,
+    TItemWpnOnMachineGun_v52_8c251288,
     operation_8c076170,
     fn_8c2411ec,
     operation_8c075b80,
@@ -551,7 +551,7 @@ VirtualFunction const vt_8c27efa0[62] = {
 VirtualFunction const vt_8c27f098[62] = {
     0,
     0,
-    destroy_object_8c251440,
+    TItemWpnOnMoonCane_dtor_8c251440,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -683,7 +683,7 @@ VirtualFunction const vt_8c27f190[62] = {
 VirtualFunction const vt_8c27f288[62] = {
     0,
     0,
-    destroy_object_8c251600,
+    TItemWpnOnPikoPikoHammer_dtor_8c251600,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -749,7 +749,7 @@ VirtualFunction const vt_8c27f288[62] = {
 VirtualFunction const vt_8c27f380[62] = {
     0,
     0,
-    destroy_object_8c2516dc,
+    TItemWpnOnRifle_dtor_8c2516dc,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,

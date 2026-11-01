@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c25dacc(void)
+void TOChatSensor_v09_8c25dacc(void)
 {
 }

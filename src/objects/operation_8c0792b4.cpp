@@ -171,7 +171,7 @@ extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void operation_8c07ac08(void *);
 extern "C" void call_8c07aad0(Object *);
 extern "C" void create_effect_777c(void *, int);
-extern "C" void operation_8c0792b4(Object *o)
+extern "C" void TObjEneDarkGunner_update_8c0792b4(Object *o)
 {
     Frame frame;
     int v1;

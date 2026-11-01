@@ -106,5 +106,5 @@ typedef char check_context[(unsigned long)&((View *)0)->context==304?1:-1];
 typedef char check_state[(unsigned long)&((View *)0)->state==778?1:-1];
 typedef char check_visible[(unsigned long)&((View *)0)->visible==860?1:-1];
 extern "C" {extern int mode_at(void);extern void njPushMatrixEx_8c38ae68(void),njPopMatrixEx_8c38ad10(void),translate_current_matrix_v_8c382a40(const Vector3 *),njRotateY_8c37df90(int,unsigned int),transform_at(void *),simple_at(void *),complex_at(void *,void *,float);
-void draw_context_actor(View *o) {o->visible=o->visible_at(400.0f,20.0f);if(o->visible==1) {njPushMatrixEx_8c38ae68();translate_current_matrix_v_8c382a40(&o->position);njRotateY_8c37df90(0,o->angle);transform_at(o->transform);if(mode_at()==1) simple_at(o->resource);else complex_at(o->resource,o->context,o->parameter);njPopMatrixEx_8c38ad10();}}
+void TOTrap_render_8c140bd0(View *o) {o->visible=o->visible_at(400.0f,20.0f);if(o->visible==1) {njPushMatrixEx_8c38ae68();translate_current_matrix_v_8c382a40(&o->position);njRotateY_8c37df90(0,o->angle);transform_at(o->transform);if(mode_at()==1) simple_at(o->resource);else complex_at(o->resource,o->context,o->parameter);njPopMatrixEx_8c38ad10();}}
 }

@@ -40,7 +40,7 @@ extern int g_8c44be04;
 extern S_g8c46ed0c *g_8c46ed0c;
 extern void call_8c05406c(Object *, Frame *);
 extern void operation_8c0368a8(void *);
-float operation_8c0849f4(Object *o)
+float TObjContainerEnemy_v24_8c0849f4(Object *o)
 {
     Frame frame;
     int v6;

@@ -22,7 +22,7 @@ struct Object {
     int f238;
 };
 extern void call_8c075398(void);
-Object *operation_8c24f0dc(Object *o)
+Object *TItemWpnNaganoClaw_ctor_8c24f0dc(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c27e4f0;

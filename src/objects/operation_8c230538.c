@@ -18,7 +18,7 @@ struct Object {
 };
 extern void initialize_base_8c0db1d0(void *, int);
 extern void call_8c23081c(Object *);
-Object *operation_8c230538(Object *o, int a1)
+Object *TWindowSubMagPhoton_ctor_8c230538(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;

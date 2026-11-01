@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern int operation_459d8(void *);
 extern void operation_8c051a4c(void *);
-int operation_8c051a20(int a0)
+int TObjEneLappy_v48_8c051a20(int a0)
 {
     int t1;
     t1 = operation_459d8((void *)a0);

@@ -17,7 +17,7 @@ extern void call_8c24e1f4(Object *);
 extern void call_8c24e274(Object *);
 extern void call_8c0db30c(Object *);
 extern void update_view_nodes(void *, void *);
-void operation_8c24e144(Object *o)
+void TWindowDuelResult_update_8c24e144(Object *o)
 {
     int t1;
     if (((o->f34 & 2)) == 0) {

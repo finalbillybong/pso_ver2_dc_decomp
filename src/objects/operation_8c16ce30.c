@@ -11,7 +11,7 @@ struct S_vv2 {
 extern S_g8c4db404 *g_8c4db404;
 extern int g_8c4db408;
 extern int g_8c4db420;
-void operation_8c16ce30(int a0, int a1, int a2)
+void quest_op_jmp_on_8c16ce30(int a0, int a1, int a2)
 {
     int v3;
     int v5;

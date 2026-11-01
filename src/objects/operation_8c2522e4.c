@@ -8,14 +8,14 @@ typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern S_g8c4689e0 *g_8c4689e0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c252330(int, void *, int);
-int operation_8c2522e4(int a0)
+extern void TItemWpnOnSlicer_ctor_8c252330(int, void *, int);
+int TItemWpnOnSlicer_create_8c2522e4(int a0)
 {
     int t1;
     if (a0 != 0) {
         t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x234);
         if (t1 != 0) {
-            call_8c252330(t1, g_8c4689e0, a0);
+            TItemWpnOnSlicer_ctor_8c252330(t1, g_8c4689e0, a0);
         }
         return (int)(t1);
     }

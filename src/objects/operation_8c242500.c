@@ -23,7 +23,7 @@ extern void operation_8c2425e0(void *);
 extern void request_resource_release(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c242500(Object *o, int a1)
+Object *TPlayerBattleCtrl_dtor_8c242500(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c27ccdc;

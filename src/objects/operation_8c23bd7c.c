@@ -16,7 +16,7 @@ struct Object {
 };
 extern void njRotateZ_8c37e02c(int, void *);
 extern void call_8c3aa716(void *);
-void operation_8c23bd7c(Object *o)
+void TItemWpnDorillArm_v57_8c23bd7c(Object *o)
 {
     char *v62;
     v62 = (char *)*(int *)0x8c4689f0;

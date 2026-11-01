@@ -68,7 +68,7 @@ extern "C" void call_8c391c94(void);
 extern "C" void call_8c3ac53a(void *, void *, float);
 extern "C" void call_8c391cc4(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c1be910(Object *o)
+extern "C" void TObjCityMapWarp_render_8c1be910(Object *o)
 {
     int t1;
     t1 = o->v11(400.0f, 32.0f);

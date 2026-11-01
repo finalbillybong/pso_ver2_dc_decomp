@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c0b6e08(void)
+void TTecPlayerInfluence_v06_8c0b6e08(void)
 {
 }

@@ -27,7 +27,7 @@ struct Arg0_20 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c187520(Object *o, int a1)
+Object *TSetEvtDestroy_dtor_8c187520(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

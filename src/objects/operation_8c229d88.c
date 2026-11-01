@@ -44,7 +44,7 @@ extern void operation_8c191504(int);
 extern int create_effect_769c(void *, int);
 extern void call_8c0a7608(void *, int);
 extern void set_view_offsets(void *, void *, void *);
-void operation_8c229d88(Object *o)
+void TObjDFDemo4_update_8c229d88(Object *o)
 {
     Frame frame;
     S_vv30 *v30;

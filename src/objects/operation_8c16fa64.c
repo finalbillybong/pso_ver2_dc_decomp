@@ -14,7 +14,7 @@ struct Frame {
     int f08;
 };
 extern void operation_8c036840(int);
-void operation_8c16fa64(int a0, int a1)
+void quest_op_sync_register2_udp_8c16fa64(int a0, int a1)
 {
     Frame frame;
     (&frame)->f00 = 0x77;

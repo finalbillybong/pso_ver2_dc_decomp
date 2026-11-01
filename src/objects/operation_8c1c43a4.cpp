@@ -25,7 +25,7 @@ typedef struct ObjectData {
     float f94;
 } ObjectData;
 extern "C" void operation_8c0c5478(void *, void *, float);
-extern "C" void operation_8c1c43a4(Object *o)
+extern "C" void TObjRaderCol_render_shadow_8c1c43a4(Object *o)
 {
     int t1;
     t1 = o->v11(200.0f, 10.0f);

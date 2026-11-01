@@ -7,8 +7,8 @@ extern void refresh_follow_effect_8c22083c(void);
 extern void operation_8c22085c(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_text_context_effect(void);
-extern void update_text_context_effect(void);
+extern void TItemDownLoad_dtor_8c221134(void);
+extern void TItemDownLoad_update_8c221198(void);
 extern void TObject_render_default_8c0111c8(void);
 
 /* 8c2788b8: type-information and this-adjustment header, then 5 slots */
@@ -26,8 +26,8 @@ VirtualFunction const vt_8c2788b8[7] = {
 VirtualFunction const vt_8c2788d4[7] = {
     0,
     0,
-    destroy_text_context_effect,
-    update_text_context_effect,
+    TItemDownLoad_dtor_8c221134,
+    TItemDownLoad_update_8c221198,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

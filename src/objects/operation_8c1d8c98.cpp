@@ -56,7 +56,7 @@ extern "C" void translate_current_matrix_v_8c382a40(void *);
 extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3aa716(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c1d8c98(Object *o)
+extern "C" void TObjCity_Season_HalloweenPumpkin_render_8c1d8c98(Object *o)
 {
     S_vv1 *v1;
     int t1;

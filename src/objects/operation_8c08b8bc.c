@@ -13,10 +13,10 @@ struct Object {
     char unknown20[0x7c];
     int f9c;
 };
-extern void initialize_controller_8c0bb8c4(void *, int);
-Object *operation_8c08b8bc(Object *o, int a1)
+extern void TGroupEditor_ctor_8c0bb8c4(void *, int);
+Object *TGroupSetEditor_ctor_8c08b8bc(Object *o, int a1)
 {
-    initialize_controller_8c0bb8c4((void *)o, a1);
+    TGroupEditor_ctor_8c0bb8c4((void *)o, a1);
     o->dispatch = (void *)0x8c2652dc;
     o->tag = (int)(*(int *)0x8c300260);
     o->size = 0x110;

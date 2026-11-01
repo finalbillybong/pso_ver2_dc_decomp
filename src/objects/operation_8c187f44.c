@@ -11,7 +11,7 @@ struct Object {
 extern int operation_8c220ce0(void);
 extern int operation_8c106760(Object *);
 extern int operation_8c106798(Object *);
-extern void operation_8c10664c(void *);
+extern void TShopSequence_v07_8c10664c(void *);
 void operation_8c187f44(Object *o)
 {
     int t1;
@@ -26,7 +26,7 @@ void operation_8c187f44(Object *o)
                 return;
             }
         }
-        operation_8c10664c((void *)o);
+        TShopSequence_v07_8c10664c((void *)o);
         o->f04 |= 1;
     }
 }

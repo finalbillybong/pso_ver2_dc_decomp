@@ -21,7 +21,7 @@ extern void TCameraCtrl_ctor_8c0a1448(int, void *);
 extern void call_8c0a1a78(int);
 extern void call_8c0a237c(void *, Frame *);
 extern void create_descriptor_managers(void);
-extern void operation_8c1bec9c(void *, int);
+extern void TWindowCtrlMain_ctor_8c1bec9c(void *, int);
 extern void call_8c230028(int);
 void operation_8c230308(void)
 {
@@ -46,7 +46,7 @@ void operation_8c230308(void)
     create_descriptor_managers();
     t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x20);
     if (t2 != 0) {
-        operation_8c1bec9c((void *)t2, (int)(*(S_g8c44be88 **)0x8c44be88));
+        TWindowCtrlMain_ctor_8c1bec9c((void *)t2, (int)(*(S_g8c44be88 **)0x8c44be88));
     }
     t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x418);
     if (t3 != 0) {

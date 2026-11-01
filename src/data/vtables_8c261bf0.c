@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c040284(void);
+extern void TQuadSpriteCol_dtor_8c040284(void);
 extern void TObject_update_default_8c0111c4(void);
-extern void fn_8c0402c8(void);
+extern void TQuadSpriteCol_render_8c0402c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
@@ -12,9 +12,9 @@ extern void hierarchy_output(void);
 VirtualFunction const vt_8c261bf0[7] = {
     0,
     0,
-    destroy_object_8c040284,
+    TQuadSpriteCol_dtor_8c040284,
     TObject_update_default_8c0111c4,
-    fn_8c0402c8,
+    TQuadSpriteCol_render_8c0402c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

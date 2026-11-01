@@ -10,7 +10,7 @@ struct Object {
     Arg0_13c *f13c;
 };
 extern void call_8c075730(Object *, void *, int);
-void operation_8c254040(Object *o)
+void TItemWpnUnknownClaw_v52_8c254040(Object *o)
 {
     call_8c075730(o, (void *)(o->f13c), 0x31);
 }

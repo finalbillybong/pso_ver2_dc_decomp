@@ -12,7 +12,7 @@ struct Object {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_8c053f54(void *);
 extern void operation_8c052124(void *);
-extern void destroy_context_8c084258(void *, short);
+extern void TObjContainerBase_dtor_8c084258(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1e4774(Object *o, int a1)
 {
@@ -24,7 +24,7 @@ Object *operation_8c1e4774(Object *o, int a1)
                 o->dispatch = (void *)0x8c277d38;
                 operation_8c053f54((void *)o);
                 operation_8c052124((void *)o);
-                destroy_context_8c084258((void *)o, (short)0);
+                TObjContainerBase_dtor_8c084258((void *)o, (short)0);
             }
         }
         if ((short)a1 > 0) {

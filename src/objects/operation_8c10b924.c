@@ -10,7 +10,7 @@ struct Object {
 };
 extern void call_8c0eeb58(void);
 extern void operation_8c10b9d0(int);
-void operation_8c10b924(Object *o)
+void TOBarrierEnergy01_v18_8c10b924(Object *o)
 {
     call_8c0eeb58();
     operation_8c10b9d0((int)o);

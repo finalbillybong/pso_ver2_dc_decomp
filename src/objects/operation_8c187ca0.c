@@ -16,10 +16,10 @@ struct Object {
     int f2c;
     int f30;
 };
-extern void initialize_manager_8c106568(Object *, int);
-Object *operation_8c187ca0(Object *o, int a1, int a2)
+extern void TShopSequence_ctor_8c106568(Object *, int);
+Object *TJudgmentSequence_ctor_8c187ca0(Object *o, int a1, int a2)
 {
-    initialize_manager_8c106568(o, a1);
+    TShopSequence_ctor_8c106568(o, a1);
     o->dispatch = (void *)0x8c27210c;
     o->tag = *(int *)0x8c319db8;
     o->size = 0x34;

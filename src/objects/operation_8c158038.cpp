@@ -17,14 +17,14 @@ typedef struct S_g8c4daaa8Data {
 
 } S_g8c4daaa8Data;
 extern S_g8c4daaa8 *g_8c4daaa8;
-extern "C" void operation_8c158088(void);
+extern "C" void release_assets_ItemPMT_8c158088(void);
 extern "C" void operation_8c158038(void)
 {
     if (g_8c4daaa8 != 0) {
         g_8c4daaa8->v0(1);
     }
     g_8c4daaa8 = (S_g8c4daaa8 *)0;
-    operation_8c158088();
+    release_assets_ItemPMT_8c158088();
     {
         short i;
         unsigned int *p = (unsigned int *)0x8c004000;

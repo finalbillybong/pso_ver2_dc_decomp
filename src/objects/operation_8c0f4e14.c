@@ -13,7 +13,7 @@ struct Object {
 extern void operation_8c0f5348(void *);
 extern void reset_segments_8c05a124(void *);
 extern void operation_8c059ea4(void *, int);
-void operation_8c0f4e14(Object *o)
+void TObjEneDf2Bringer_v70_8c0f4e14(Object *o)
 {
     if (o->f30a != 9 && o->f30a != 8) {
         operation_8c0f5348((void *)o);

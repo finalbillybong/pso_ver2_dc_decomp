@@ -15,7 +15,7 @@ extern int get_current_area_8c032b10(void);
 extern float squared_distance_xyz(void *, void *);
 extern void call_8c0a7608(void *, void *);
 extern void set_effect_words(void *, void *);
-void operation_8c0806ec(Object *o)
+void TObjParticle_update_8c0806ec(Object *o)
 {
     float v2;
     int t1;

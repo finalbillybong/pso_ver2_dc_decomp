@@ -28,7 +28,7 @@ typedef struct Arg0_s3c4Data {
 extern "C" void call_8c01c5f0(Object *);
 extern "C" void operation_8c1147cc(void *);
 extern "C" void call_8c1084fc(void *);
-extern "C" void operation_8c0379cc(Object *o)
+extern "C" void TObjEneShark_v89_8c0379cc(Object *o)
 {
     int t1;
     call_8c01c5f0(o);

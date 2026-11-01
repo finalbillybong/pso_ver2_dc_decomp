@@ -7,7 +7,7 @@ typedef struct S_g8c44be94 S_g8c44be94;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TObjControl_ctor_8c0130ac(int, void *);
-extern void call_8c15dd48(int, int, int, int);
+extern void TObjEnePanBARA_ctor_8c15dd48(int, int, int, int);
 int operation_8c15dcdc(int a0, int a1)
 {
     int t1;
@@ -18,7 +18,7 @@ int operation_8c15dcdc(int a0, int a1)
     }
     t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x438);
     if (t2 != 0) {
-        call_8c15dd48(t2, t1, a0, a1);
+        TObjEnePanBARA_ctor_8c15dd48(t2, t1, a0, a1);
     }
     return (int)(t2);
 }

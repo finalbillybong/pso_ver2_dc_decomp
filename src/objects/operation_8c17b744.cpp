@@ -29,7 +29,7 @@ public:
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" void operation_8c17b744(Object *o)
+extern "C" void TItemProUnit_v43_8c17b744(Object *o)
 {
     o->v18(9);
 }

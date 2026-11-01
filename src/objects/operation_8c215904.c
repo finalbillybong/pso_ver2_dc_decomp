@@ -20,7 +20,7 @@ extern float g_8c2e153c;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c336004 g_8c336004;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c21597c(void *, void *, void *, int, int);
+extern void TWindowDD_WS_String_ctor_8c21597c(void *, void *, void *, int, int);
 int operation_8c215904(Object *o, int a1, int a2, int a3, float f0)
 {
     int t1;
@@ -30,7 +30,7 @@ int operation_8c215904(Object *o, int a1, int a2, int a3, float f0)
     (&g_8c336004)->f0c = g_8c2e153c;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
     if (t1 != 0) {
-        operation_8c21597c((void *)t1, (void *)o, (void *)a1, a2, a3);
+        TWindowDD_WS_String_ctor_8c21597c((void *)t1, (void *)o, (void *)a1, a2, a3);
     }
     return (int)(t1);
 }

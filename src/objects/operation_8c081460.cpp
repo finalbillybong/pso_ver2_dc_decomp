@@ -28,7 +28,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern "C" void call_8c081520(Object *);
 extern "C" void operation_8c0814c0(void *);
-extern "C" void operation_8c081460(Object *o)
+extern "C" void TObjLazerFenceExtra_render_8c081460(Object *o)
 {
     int t1;
     t1 = o->v11(300.0f, 40.0f);

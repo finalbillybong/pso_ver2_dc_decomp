@@ -10,13 +10,13 @@ extern int g_8c41c628;
 extern S_g8c41c7c0 *g_8c41c7c0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c1e5100(int, void *, int);
-void operation_8c017218(int a0)
+extern void TWindowMakeTeam_ctor_8c1e5100(int, void *, int);
+void TWindowMakeTeam_create_8c017218(int a0)
 {
     int t1;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x3c);
     if (t1 != 0) {
-        call_8c1e5100(t1, g_8c41c7c0, a0);
+        TWindowMakeTeam_ctor_8c1e5100(t1, g_8c41c7c0, a0);
     }
     g_8c41c628 = t1;
     g_8c41bce4 = 0xa;

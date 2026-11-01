@@ -9,7 +9,7 @@ struct S_g8c4db520 {
     short f04;
 };
 extern void vmu_load_download_file_099_8c22ace8(void);
-void operation_8c16ed38(void)
+void quest_op_load_pvr_8c16ed38(void)
 {
     if (*(int *)0x8c4db520 != 0) {
         (*(S_g8c4db520 **)0x8c4db520)->f04 |= 4;

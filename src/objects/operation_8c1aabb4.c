@@ -22,16 +22,16 @@ struct S_vv2 {
     float f0c;
 };
 extern int g_8c324ef8;
-extern void call_8c0bbb5c(Object *);
+extern void TObjEZRopeBase_ctor_8c0bbb5c(Object *);
 extern void call_8c1aacac(Object *);
 extern void call_8c0bbbf0(Object *, void *, void *, void *);
-Object *operation_8c1aabb4(Object *o, int a1, int a2, int a3)
+Object *TBoss2Fin_ctor_8c1aabb4(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
     S_vv2 *v2;
     int v1;
     (void)home;
-    call_8c0bbb5c(o);
+    TObjEZRopeBase_ctor_8c0bbb5c(o);
     o->dispatch = (void *)0x8c274774;
     o->tag = (int)(g_8c324ef8);
     o->size = 0x8c;

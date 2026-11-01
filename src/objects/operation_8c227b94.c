@@ -18,7 +18,7 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c227d60(Object *, float);
 extern void call_8c227cb4(Object *, int);
-Object *operation_8c227b94(Object *o, int a1, int a2, float f0)
+Object *TAdDrawLineCtrl_ctor_8c227b94(Object *o, int a1, int a2, float f0)
 {
     Object **home = &o;
     int t1;

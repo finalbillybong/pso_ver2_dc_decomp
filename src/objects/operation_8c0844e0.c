@@ -74,10 +74,10 @@ extern int g_8c469c84;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void create_effect(void *, int, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_panel_8c087d8c(void *, void *, void *);
+extern void TObjChip_ctor_8c087d8c(void *, void *, void *);
 extern int get_current_area_8c032b10(void);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c0844e0(Object *o)
+void TObjContainerItem_v86_8c0844e0(Object *o)
 {
     Frame frame;
     S_vv9 *v9;
@@ -108,11 +108,11 @@ void operation_8c0844e0(Object *o)
     create_effect((void *)(&o->f3c), 0x46, 0x40);
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t1 != 0) {
-        initialize_panel_8c087d8c((void *)t1, g_8c44be98, (void *)(&(&frame)->f4c));
+        TObjChip_ctor_8c087d8c((void *)t1, g_8c44be98, (void *)(&(&frame)->f4c));
     }
     t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t2 != 0) {
-        initialize_panel_8c087d8c((void *)t2, g_8c44be98, (void *)(&frame));
+        TObjChip_ctor_8c087d8c((void *)t2, g_8c44be98, (void *)(&frame));
     }
     t3 = get_current_area_8c032b10();
     switch (t3) {

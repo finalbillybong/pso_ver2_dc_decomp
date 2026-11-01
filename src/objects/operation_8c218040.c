@@ -6,7 +6,7 @@ typedef struct Vector3 {
 extern void call_8c0db30c(void);
 extern void interpolate_view_parameters(void *);
 extern void update_view_nodes(void *, void *);
-void operation_8c218040(int a0)
+void TWindowUserSort_update_8c218040(int a0)
 {
     call_8c0db30c();
     interpolate_view_parameters((void *)a0);

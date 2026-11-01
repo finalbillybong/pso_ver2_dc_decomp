@@ -100,12 +100,12 @@ extern void operation_8c123ee4(void);
 extern void operation_8c121008(void);
 extern void operation_8c1a1c08(void);
 extern void operation_8c12132c(void);
-extern void destroy_object_8c1a1c48(void);
+extern void TObjNpcExpertBase_dtor_8c1a1c48(void);
 extern void operation_8c11f724(void);
 extern void operation_8c11f640(void);
-extern void destroy_object_8c1a1dfc(void);
-extern void destroy_object_8c1a1fb0(void);
-extern void destroy_object_8c1a2164(void);
+extern void TObjNpcNurseBase_dtor_8c1a1dfc(void);
+extern void TObjNpcSecretaryBase_dtor_8c1a1fb0(void);
+extern void TObjNpcConnoisseur_dtor_8c1a2164(void);
 extern void destroy_object_8c1a2430(void);
 extern void operation_8c1a2474(void);
 extern void fn_8c1a25e0(void);
@@ -120,9 +120,9 @@ extern void operation_8c089060(void);
 extern void operation_8c08876c(void);
 extern void operation_8c0887b4(void);
 extern void operation_8c089240(void);
-extern void destroy_object_8c1a2754(void);
-extern void fn_8c1a2798(void);
-extern void fn_8c1a27a4(void);
+extern void TWindowSubItemList_dtor_8c1a2754(void);
+extern void TWindowSubItemList_update_8c1a2798(void);
+extern void TWindowSubItemList_render_8c1a27a4(void);
 extern void fn_8c1192e8(void);
 
 /* 8c272f28: type-information and this-adjustment header, then 98 slots */
@@ -233,7 +233,7 @@ VirtualFunction const vt_8c272f28[100] = {
 VirtualFunction const vt_8c2730b8[100] = {
     0,
     0,
-    destroy_object_8c1a1c48,
+    TObjNpcExpertBase_dtor_8c1a1c48,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -337,7 +337,7 @@ VirtualFunction const vt_8c2730b8[100] = {
 VirtualFunction const vt_8c273248[100] = {
     0,
     0,
-    destroy_object_8c1a1dfc,
+    TObjNpcNurseBase_dtor_8c1a1dfc,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -441,7 +441,7 @@ VirtualFunction const vt_8c273248[100] = {
 VirtualFunction const vt_8c2733d8[100] = {
     0,
     0,
-    destroy_object_8c1a1fb0,
+    TObjNpcSecretaryBase_dtor_8c1a1fb0,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -545,7 +545,7 @@ VirtualFunction const vt_8c2733d8[100] = {
 VirtualFunction const vt_8c273568[100] = {
     0,
     0,
-    destroy_object_8c1a2164,
+    TObjNpcConnoisseur_dtor_8c1a2164,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -675,9 +675,9 @@ VirtualFunction const vt_8c2736f8[22] = {
 VirtualFunction const vt_8c273750[8] = {
     0,
     0,
-    destroy_object_8c1a2754,
-    fn_8c1a2798,
-    fn_8c1a27a4,
+    TWindowSubItemList_dtor_8c1a2754,
+    TWindowSubItemList_update_8c1a2798,
+    TWindowSubItemList_render_8c1a27a4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     fn_8c1192e8

@@ -5,13 +5,13 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c21a844(int, int);
-int operation_8c21a808(int a0)
+extern void TObjDFUsoTower_ctor_8c21a844(int, int);
+int TObjDFUsoTower_create_8c21a808(int a0)
 {
     int t1;
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x9c);
     if (t1 != 0) {
-        call_8c21a844(t1, a0);
+        TObjDFUsoTower_ctor_8c21a844(t1, a0);
     }
     return t1;
 }

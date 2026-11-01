@@ -5,14 +5,14 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c23d89c(int, int, int, int, int, unsigned short);
-void operation_8c23d848(int a0, int a1, int a2, int a3, unsigned short a4)
+extern void TItemEffFreezeBeam_ctor_8c23d89c(int, int, int, int, int, unsigned short);
+void TItemEffFreezeBeam_create_8c23d848(int a0, int a1, int a2, int a3, unsigned short a4)
 {
     int t1;
     if (a0 != 0) {
         t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
         if (t1 != 0) {
-            call_8c23d89c(t1, a0, a1, a2, a3, a4);
+            TItemEffFreezeBeam_ctor_8c23d89c(t1, a0, a1, a2, a3, a4);
         }
     }
 }

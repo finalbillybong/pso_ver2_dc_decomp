@@ -23,7 +23,7 @@ extern int operation_8c0de180(void *);
 extern int call_8c0de19c(int, int);
 extern void request_resource_release(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c0de834(int, int, void *, float);
+extern void TWindowFukidasi_ctor_8c0de834(int, int, void *, float);
 int operation_8c0de07c(Object *o, int a1, int a2)
 {
     Frame frame;
@@ -67,7 +67,7 @@ L_8c0de0d6:;
         }
         t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xa8);
         if (t3 != 0) {
-            call_8c0de834(t3, a1, (void *)((&frame)->f00), (&frame)->f04);
+            TWindowFukidasi_ctor_8c0de834(t3, a1, (void *)((&frame)->f00), (&frame)->f04);
         }
         *(int *)((char *)((char *)o + 0x5c) + (v14)) = (int)(t3);
         v1 = (unsigned int)v12;

@@ -100,7 +100,7 @@ extern "C" void operation_8c1ad004(void *, int, int);
 extern "C" void refresh_follow_effect_8c052180(void *);
 extern "C" void call_8c027090(Object *);
 extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
-extern "C" void operation_8c1bb5bc(Object *o)
+extern "C" void TBoss4Zako_update_8c1bb5bc(Object *o)
 {
     Frame frame;
     int v1;

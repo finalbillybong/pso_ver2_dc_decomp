@@ -2,8 +2,8 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c077370(void);
-extern void operation_8c077778(void);
+extern void TItemEffectWeapon_dtor_8c077370(void);
+extern void TItemEffectWeapon_update_8c077778(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
@@ -12,8 +12,8 @@ extern void hierarchy_output(void);
 VirtualFunction const vt_8c26308c[7] = {
     0,
     0,
-    operation_8c077370,
-    operation_8c077778,
+    TItemEffectWeapon_dtor_8c077370,
+    TItemEffectWeapon_update_8c077778,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

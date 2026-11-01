@@ -31,7 +31,7 @@ typedef struct S_c8c021ef8Data {
 
 } S_c8c021ef8Data;
 extern "C" S_c8c021ef8 *lookup_low_id(int);
-extern "C" int operation_8c0fec4c(Object *o)
+extern "C" int TOMineTrap_v13_8c0fec4c(Object *o)
 {
     int v1;
     S_c8c021ef8 *t1;

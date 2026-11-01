@@ -15,8 +15,8 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern char g_8c4e30e4;
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
-extern void operation_8c1e627c();
-void operation_8c1e615c(Object *o)
+extern void TAdSoniclogo_create_8c1e627c();
+void TAdSEGAlogo_update_8c1e615c(Object *o)
 {
     int t1;
     if (g_8c4e30e4 != 0) {
@@ -30,7 +30,7 @@ void operation_8c1e615c(Object *o)
             g_8c4e30e4 = 2;
             t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x2c);
             if (t1 != 0) {
-                initialize_color_rise(t1, g_8c44be84, operation_8c1e627c);
+                initialize_color_rise(t1, g_8c44be84, TAdSoniclogo_create_8c1e627c);
             }
         }
     }

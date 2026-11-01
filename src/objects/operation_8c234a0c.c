@@ -40,7 +40,7 @@ extern void operation_8c2391d0(void *, int);
 extern void operation_8c2391b0(void *, char);
 extern int lookup_low_id(int);
 extern void call_8c02b2d8(void);
-void operation_8c234a0c(Object *o)
+void TPlyPKEditor_v07_8c234a0c(Object *o)
 {
     int t1;
     store_bounded_8c2390e0((void *)((void *)0x8c41ce5c), (unsigned char)(o->f3e));

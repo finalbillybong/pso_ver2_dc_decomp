@@ -41,7 +41,7 @@ extern void operation_8c223130(Object *);
 extern void operation_8c223134(void *);
 extern void operation_8c223174(void *);
 extern void operation_8c2231b4(void *);
-void operation_8c222138(Object *o)
+void TQuestListVM_v05_8c222138(Object *o)
 {
     int t1;
     t1 = call_8c223298(o);

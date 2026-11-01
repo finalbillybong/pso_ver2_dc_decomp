@@ -2,9 +2,9 @@
 
 typedef void (*Function)(void);
 
-extern void operation_8c167774(void);
-extern void fn_8c1677d4(void);
-extern void fn_8c167a74(void);
+extern void TPhotonConcentrate_dtor_8c167774(void);
+extern void TPhotonConcentrate_update_8c1677d4(void);
+extern void TPhotonConcentrate_render_8c167a74(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -21,9 +21,9 @@ extern void operation_8c0104f0(void);
 Function const d_8c26ff58[17] = {
     0,
     0,
-    operation_8c167774,
-    fn_8c1677d4,
-    fn_8c167a74,
+    TPhotonConcentrate_dtor_8c167774,
+    TPhotonConcentrate_update_8c1677d4,
+    TPhotonConcentrate_render_8c167a74,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,

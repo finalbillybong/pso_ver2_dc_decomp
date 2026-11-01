@@ -43,7 +43,7 @@ extern int g_8c3068e0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void TObject_ctor_8c0330e4(void *, void *);
-void operation_8c0cb5bc(Object *o)
+void TObjEneMe1Canadin_EffLineFade_ctor_8c0cb5bc(Object *o)
 {
     S_c8c122700 *t1;
     *(Vector3 *)&o->f2c = *(Vector3 *)&o->f24->f00;

@@ -55,7 +55,7 @@ struct Arg0_20 {
     char unknown22[0x78e];
     int f7b0;
 };
-extern void call_8c0a0058(int);
+extern void TEffect_ctor_8c0a0058(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c051eb8(int, Object *);
 extern void copy_actor_records(void *, void *, int);
@@ -64,7 +64,7 @@ Object *operation_8c0ad660(Object *o, int a1, Arg2 *a2, int a3)
     Object **home = &o;
     int t1;
     (void)home;
-    call_8c0a0058((int)o);
+    TEffect_ctor_8c0a0058((int)o);
     o->dispatch = (void *)0x8c265df0;
     o->fd0 = 0xffff;
     o->f24 = a2->f00;

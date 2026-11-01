@@ -55,7 +55,7 @@ extern void call_8c03ad3c(Object *);
 extern void call_8c027090(Object *);
 extern void update_context_blend(void *);
 extern void minimap_add_marker_8c102cd0(void *, int, int, int);
-void operation_8c03879c(Object *o)
+void TObjEneMoja_update_8c03879c(Object *o)
 {
     int t1;
     t1 = operation_8c03d338();

@@ -40,7 +40,7 @@ extern void operation_8c241658(void *);
 extern int call_8c1aaabc(void *);
 extern int call_8c1aaafc(void *);
 extern void operation_8c137998(void *);
-void operation_8c252388(Object *o)
+void TItemWpnOnSlicer_v49_8c252388(Object *o)
 {
     Frame frame;
     int t1;

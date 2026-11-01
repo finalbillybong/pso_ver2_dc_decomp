@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_color_rise_8c24d1c8(void);
+extern void TItemObjTrapVision_dtor_8c24d1c8(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -44,31 +44,31 @@ extern void operation_8c075344(void);
 extern void operation_8c074ac0(void);
 extern void operation_8c02b210(void);
 extern void operation_8c021050(void);
-extern void operation_8c24d218(void);
-extern void destroy_color_rise_8c24d3e4(void);
-extern void operation_8c24d434(void);
+extern void TItemObjTrapVision_v42_8c24d218(void);
+extern void TItemObjTpRecover_dtor_8c24d3e4(void);
+extern void TItemObjTpRecover_v42_8c24d434(void);
 extern void destroy_color_rise_8c24d538(void);
 extern void operation_8c24d588(void);
-extern void destroy_color_rise_8c24d61c(void);
-extern void operation_8c24d66c(void);
-extern void destroy_color_rise_8c24d70c(void);
-extern void operation_8c24d75c(void);
-extern void destroy_color_rise_8c24d92c(void);
-extern void operation_8c24d97c(void);
-extern void destroy_color_rise_8c24da94(void);
-extern void operation_8c24dae4(void);
-extern void destroy_color_rise_8c24db7c(void);
-extern void operation_8c24dbcc(void);
-extern void destroy_color_rise_8c24dc9c(void);
-extern void operation_8c24dcec(void);
-extern void destroy_color_rise_8c24dddc(void);
-extern void operation_8c24de2c(void);
+extern void TItemObjTecBook_dtor_8c24d61c(void);
+extern void TItemObjTecBook_v42_8c24d66c(void);
+extern void TItemObjStatusUp_dtor_8c24d70c(void);
+extern void TItemObjStatusUp_v42_8c24d75c(void);
+extern void TItemObjStarAtomizer_dtor_8c24d92c(void);
+extern void TItemObjStarAtomizer_v42_8c24d97c(void);
+extern void TItemObjSolAtomizer_dtor_8c24da94(void);
+extern void TItemObjSolAtomizer_v42_8c24dae4(void);
+extern void TItemObjRecovery_dtor_8c24db7c(void);
+extern void TItemObjRecovery_v42_8c24dbcc(void);
+extern void TItemObjMoonAtomizer_dtor_8c24dc9c(void);
+extern void TItemObjMoonAtomizer_v42_8c24dcec(void);
+extern void TItemObjMagChanger_dtor_8c24dddc(void);
+extern void TItemObjMagChanger_v42_8c24de2c(void);
 
 /* 8c27dd54: type-information and this-adjustment header, then 43 slots */
 VirtualFunction const vt_8c27dd54[45] = {
     0,
     0,
-    destroy_color_rise_8c24d1c8,
+    TItemObjTrapVision_dtor_8c24d1c8,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -110,14 +110,14 @@ VirtualFunction const vt_8c27dd54[45] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    operation_8c24d218
+    TItemObjTrapVision_v42_8c24d218
 };
 
 /* 8c27de08: type-information and this-adjustment header, then 43 slots */
 VirtualFunction const vt_8c27de08[45] = {
     0,
     0,
-    destroy_color_rise_8c24d3e4,
+    TItemObjTpRecover_dtor_8c24d3e4,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -159,7 +159,7 @@ VirtualFunction const vt_8c27de08[45] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    operation_8c24d434
+    TItemObjTpRecover_v42_8c24d434
 };
 
 /* 8c27debc: type-information and this-adjustment header, then 43 slots */
@@ -215,7 +215,7 @@ VirtualFunction const vt_8c27debc[45] = {
 VirtualFunction const vt_8c27df70[45] = {
     0,
     0,
-    destroy_color_rise_8c24d61c,
+    TItemObjTecBook_dtor_8c24d61c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -257,14 +257,14 @@ VirtualFunction const vt_8c27df70[45] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    operation_8c24d66c
+    TItemObjTecBook_v42_8c24d66c
 };
 
 /* 8c27e024: type-information and this-adjustment header, then 43 slots */
 VirtualFunction const vt_8c27e024[45] = {
     0,
     0,
-    destroy_color_rise_8c24d70c,
+    TItemObjStatusUp_dtor_8c24d70c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -306,14 +306,14 @@ VirtualFunction const vt_8c27e024[45] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    operation_8c24d75c
+    TItemObjStatusUp_v42_8c24d75c
 };
 
 /* 8c27e0d8: type-information and this-adjustment header, then 43 slots */
 VirtualFunction const vt_8c27e0d8[45] = {
     0,
     0,
-    destroy_color_rise_8c24d92c,
+    TItemObjStarAtomizer_dtor_8c24d92c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -355,14 +355,14 @@ VirtualFunction const vt_8c27e0d8[45] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    operation_8c24d97c
+    TItemObjStarAtomizer_v42_8c24d97c
 };
 
 /* 8c27e18c: type-information and this-adjustment header, then 43 slots */
 VirtualFunction const vt_8c27e18c[45] = {
     0,
     0,
-    destroy_color_rise_8c24da94,
+    TItemObjSolAtomizer_dtor_8c24da94,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -404,14 +404,14 @@ VirtualFunction const vt_8c27e18c[45] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    operation_8c24dae4
+    TItemObjSolAtomizer_v42_8c24dae4
 };
 
 /* 8c27e240: type-information and this-adjustment header, then 43 slots */
 VirtualFunction const vt_8c27e240[45] = {
     0,
     0,
-    destroy_color_rise_8c24db7c,
+    TItemObjRecovery_dtor_8c24db7c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -453,14 +453,14 @@ VirtualFunction const vt_8c27e240[45] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    operation_8c24dbcc
+    TItemObjRecovery_v42_8c24dbcc
 };
 
 /* 8c27e2f4: type-information and this-adjustment header, then 43 slots */
 VirtualFunction const vt_8c27e2f4[45] = {
     0,
     0,
-    destroy_color_rise_8c24dc9c,
+    TItemObjMoonAtomizer_dtor_8c24dc9c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -502,14 +502,14 @@ VirtualFunction const vt_8c27e2f4[45] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    operation_8c24dcec
+    TItemObjMoonAtomizer_v42_8c24dcec
 };
 
 /* 8c27e3a8: type-information and this-adjustment header, then 43 slots */
 VirtualFunction const vt_8c27e3a8[45] = {
     0,
     0,
-    destroy_color_rise_8c24dddc,
+    TItemObjMagChanger_dtor_8c24dddc,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -551,5 +551,5 @@ VirtualFunction const vt_8c27e3a8[45] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    operation_8c24de2c
+    TItemObjMagChanger_v42_8c24de2c
 };

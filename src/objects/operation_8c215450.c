@@ -18,7 +18,7 @@ struct Object {
     float f74;
 };
 extern void initialize_base_8c0db1d0(void *, int);
-Object *operation_8c215450(Object *o)
+Object *TWindowDD_WS_ScrollBar_ctor_8c215450(Object *o)
 {
     initialize_base_8c0db1d0((void *)o, (int)((void *)0x8c335fa0));
     o->dispatch = (void *)0x8c278258;

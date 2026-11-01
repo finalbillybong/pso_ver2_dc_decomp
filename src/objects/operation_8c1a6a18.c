@@ -18,7 +18,7 @@ extern void operation_8c1a6cb8(void *);
 extern void operation_8c1a6de0(void *);
 extern void operation_8c1a6e78(void *);
 extern void operation_8c1a6f8c(void *);
-void operation_8c1a6a18(Object *o)
+void TShopGetItemWindow_v05_8c1a6a18(Object *o)
 {
     switch (o->f24) {
     case 0:

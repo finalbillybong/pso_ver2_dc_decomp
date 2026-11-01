@@ -13,7 +13,7 @@ struct Object {
 extern int call_8c0eea7c(Object *, float);
 extern void operation_8c05428c(void *, int, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c132c18(Object *o)
+void TODoorCave01_v19_8c132c18(Object *o)
 {
     int v1;
     int t1;

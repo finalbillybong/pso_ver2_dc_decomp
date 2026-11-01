@@ -26,7 +26,7 @@ extern void njPrintSize_8c38c5aa(int);
 extern void call_8c1872c0(Object *);
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c187188(Object *o)
+void TSetEvtScriptTest_update_8c187188(Object *o)
 {
     njPrintSize_8c38c5aa(0xe);
     if (((*(int *)((char *)&g_8c41cba0.f28 + (o->f34 * 0x3c)) & 0x80)) != 0) {

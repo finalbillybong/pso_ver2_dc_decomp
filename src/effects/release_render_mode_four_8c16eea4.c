@@ -1,3 +1,3 @@
 /* Argument/result ABI inherited from the existing exact callee. */
 extern void  target_at(unsigned short id);
-void  release_render_mode_four_8c16eea4(unsigned short id) { target_at(id); }
+void  quest_op_switch_on_8c16eea4(unsigned short id) { target_at(id); }

@@ -19,7 +19,7 @@ typedef struct Grid {
 } Grid;
 extern void initialize_grid_view(Grid *, void *);
 extern Cell *operator_new_8c18de4c(int);
-Grid *initialize_grid_8c1566f0(Grid *o, unsigned int count)
+Grid *TWindowMenu_ctor_8c1566f0(Grid *o, unsigned int count)
 {
     Grid **self = &o;
     Cell *cell;

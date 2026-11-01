@@ -9,7 +9,7 @@ struct Object {
     short f142;
 };
 extern void call_8c255408(Object *, int);
-void operation_8c2554e0(Object *o)
+void TItemProShieldModel_v26_8c2554e0(Object *o)
 {
     call_8c255408(o, (int)(o->f142));
 }

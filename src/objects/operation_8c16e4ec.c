@@ -12,7 +12,7 @@ struct Frame {
     float f08;
 };
 extern void create_effect_at_position(unsigned short, void *);
-void operation_8c16e4ec(int a0)
+void quest_op_pos_pipe_8c16e4ec(int a0)
 {
     Frame frame;
     char *base;

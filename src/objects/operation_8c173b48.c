@@ -30,7 +30,7 @@ struct Arg1 {
     Block_p0_20 f28;
 };
 extern void TObject_ctor_8c0330e4(Object *, int);
-Object *operation_8c173b48(Object *o, Arg1 *a1, int a2)
+Object *TQuestThreadBoard_ctor_8c173b48(Object *o, Arg1 *a1, int a2)
 {
     TObject_ctor_8c0330e4(o, 0);
     o->dispatch = (void *)0x8c27023c;

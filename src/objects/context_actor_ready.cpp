@@ -107,4 +107,4 @@ typedef char check_Target_position[(unsigned long)&((Target *)0)->position==60?1
 typedef char check_Target_flags[(unsigned long)&((Target *)0)->flags==848?1:-1];
 extern "C" {extern unsigned int current_identifier;extern Target *lookup_at(unsigned int);extern void update_at(View *);extern unsigned short find_at(View *,int,float);extern float distance_at(const Vector3 *,const Vector3 *);}
 static inline int flagged(Target *o) {return (o->flags&0x100000)!=0;}
-extern "C" int context_actor_ready(View *o) {Target *target=lookup_at(current_identifier);if(target&&target->category==o->category) {int flag=flagged(target);if(flag!=0) return 1;}return 0;}
+extern "C" int TOTrap_v90_8c141114(View *o) {Target *target=lookup_at(current_identifier);if(target&&target->category==o->category) {int flag=flagged(target);if(flag!=0) return 1;}return 0;}

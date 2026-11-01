@@ -36,7 +36,7 @@ extern void njPopMatrixEx_8c38ad10(void);
 extern void mark_effect_for_release(void *);
 extern int create_effect_769c(void *, int);
 extern void call_8c0a7608(void *, void *);
-void operation_8c1f2b6c(Object *o)
+void TItemMagGrowEff_update_8c1f2b6c(Object *o)
 {
     Frame frame;
     char *v17;

@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern int g_8c418248;
-extern void create_actor_callback(unsigned short, void *);
+extern void TPlyOnCreated_create_8c03b994(unsigned short, void *);
 extern void call_8c027ff0(int, int);
 int operation_8c027f48(int a0)
 {
@@ -23,7 +23,7 @@ int operation_8c027f48(int a0)
         v4 = (int)v2;
     }
     if (v4 == 0) {
-        create_actor_callback((unsigned short)v1, (void *)((void *)0x8c027fa4));
+        TPlyOnCreated_create_8c03b994((unsigned short)v1, (void *)((void *)0x8c027fa4));
         return 0;
     }
     call_8c027ff0(v4, a0);

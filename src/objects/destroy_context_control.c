@@ -6,7 +6,7 @@ extern void *object_name,*heap;
 extern unsigned char control_flag;
 extern int active;
 extern Context *context;
-extern void TObject_ctor_8c0330e4(Control *,void *),TObject_dtor_8c03311c(Control *,int),release_at(void *,void *),reset_at(Control *),prepare_at(Control *);
+extern void TObject_ctor_8c0330e4(Control *,void *),TObject_dtor_8c03311c(Control *,int),release_at(void *,void *),reset_at(Control *),TEF_PvrWave_create_8c031678(Control *);
 Control *TScene_dtor_8c0313e4(Control *o,short mode) {
     if(o) {
         o->vtable=control_vtable;

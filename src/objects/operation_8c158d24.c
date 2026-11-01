@@ -43,7 +43,7 @@ extern int operation_8c220ce0(void);
 extern void refresh_follow_effect_8c22ed9c(void *);
 extern int operation_8c19fb18(int);
 extern int operation_8c22efcc(void);
-extern void operation_8c19fbe0(void *, int, int, int);
+extern void TOHealGeneral_ctor_8c19fbe0(void *, int, int, int);
 extern int operation_8c17796c(int);
 extern void operation_8c1cdc30(void *);
 extern int call_8c1196d4(void *, Frame *, int);
@@ -91,11 +91,11 @@ void operation_8c158d24(Object *o)
             v4 = t2;
             for (v5 = (int)-1; g_8c4daac0->f04 > v3; v3 = (int)(v3 + 1)) {
                 if ((short)v5 == *(short *)((v2) + (char *)((char *)v1 + 0x0))) {
-                    operation_8c19fbe0((void *)(o->f38), 0x2c, (int)(v1), v3);
+                    TOHealGeneral_ctor_8c19fbe0((void *)(o->f38), 0x2c, (int)(v1), v3);
                 } else {
                     t4 = operation_8c17796c((int)(*(short *)((char *)((char *)v1 + 0x0) + (v4))));
                     if (t4 != 0) {
-                        operation_8c19fbe0((void *)(o->f38), 0x16, (int)(v1), v3);
+                        TOHealGeneral_ctor_8c19fbe0((void *)(o->f38), 0x16, (int)(v1), v3);
                     }
                 }
                 v1 = (char *)(v1 + 0x1d8);
@@ -106,15 +106,15 @@ void operation_8c158d24(Object *o)
             v11 = (int)0x1d0;
             for (v5 = (int)-1; v3 < g_8c4daac0->f04; v1 = (char *)(v1 + 0x1d8)) {
                 if (!(*(short *)((char *)(0x0 + (char *)v1) + (v9)) != (short)v5)) {
-                    operation_8c19fbe0((void *)(o->f38), 0x2c, (int)(v1), v3);
+                    TOHealGeneral_ctor_8c19fbe0((void *)(o->f38), 0x2c, (int)(v1), v3);
                 } else {
                     t5 = operation_8c17796c((int)(*(short *)((char *)((char *)v1 + 0x0) + (v11))));
                     if (t5 != 0) {
                         t6 = operation_8c17796c((int)(*(short *)((char *)((char *)v1 + 0x0) + (v9))));
                         if (t6 != 0) {
-                            operation_8c19fbe0((void *)(o->f38), 0x18, (int)(v1), v3);
+                            TOHealGeneral_ctor_8c19fbe0((void *)(o->f38), 0x18, (int)(v1), v3);
                         } else {
-                            operation_8c19fbe0((void *)(o->f38), 0x17, (int)(v1), v3);
+                            TOHealGeneral_ctor_8c19fbe0((void *)(o->f38), 0x17, (int)(v1), v3);
                         }
                     }
                 }

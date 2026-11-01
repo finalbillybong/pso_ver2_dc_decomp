@@ -81,7 +81,7 @@ extern char g_8c2f5b38[];
 extern int operation_8c034c7c(void *);
 extern void call_8c13f454(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c13f504(void *, int, void *);
+extern void TObjLoadGmPlNjReq_ctor_8c13f504(void *, int, void *);
 void operation_8c13ffec(Object *o)
 {
     Frame frame;
@@ -115,7 +115,7 @@ void operation_8c13ffec(Object *o)
     (&frame)->f4c = o->f40;
     t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
     if (t2 != 0) {
-        operation_8c13f504((void *)t2, (int)o, (void *)(&(&frame)->f3c));
+        TObjLoadGmPlNjReq_ctor_8c13f504((void *)t2, (int)o, (void *)(&(&frame)->f3c));
     }
     if (t2 == 0) {
         return;
@@ -128,7 +128,7 @@ void operation_8c13ffec(Object *o)
     (&frame)->f38 = o->f40;
     t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
     if (t3 != 0) {
-        operation_8c13f504((void *)t3, (int)o, (void *)(&(&frame)->f28));
+        TObjLoadGmPlNjReq_ctor_8c13f504((void *)t3, (int)o, (void *)(&(&frame)->f28));
     }
     if (t3 == 0) {
         return;
@@ -143,7 +143,7 @@ void operation_8c13ffec(Object *o)
         (&frame)->f24 = o->f40;
         t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
         if (t4 != 0) {
-            operation_8c13f504((void *)t4, (int)o, (void *)(&(&frame)->f14));
+            TObjLoadGmPlNjReq_ctor_8c13f504((void *)t4, (int)o, (void *)(&(&frame)->f14));
         }
         if (t4 != 0) {
         } else {
@@ -161,7 +161,7 @@ void operation_8c13ffec(Object *o)
         (&frame)->f10 = o->f40;
         t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
         if (t5 != 0) {
-            operation_8c13f504((void *)t5, (int)o, (void *)(&frame));
+            TObjLoadGmPlNjReq_ctor_8c13f504((void *)t5, (int)o, (void *)(&frame));
         }
         if (t5 != 0) {
         } else {

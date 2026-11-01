@@ -1,6 +1,6 @@
 extern int **g_8c4db408;
 extern int call_8c2480e4(int *);
-void operation_8c170d28(int a0, int a1)
+void quest_op_check_rank_time_8c170d28(int a0, int a1)
 {
     switch (call_8c2480e4(*(int **)((char *)g_8c4db408 + ((unsigned char)a0 << 2)))) {
     case 2:

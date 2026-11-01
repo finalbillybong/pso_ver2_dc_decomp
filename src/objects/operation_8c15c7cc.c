@@ -16,10 +16,10 @@ struct Object {
     Vector3 f54;
 };
 extern int g_8c3166a8;
-extern void operation_8c112e74(void *);
-Object *operation_8c15c7cc(Object *o)
+extern void TOKey_ctor_8c112e74(void *);
+Object *TOSensor_ctor_8c15c7cc(Object *o)
 {
-    operation_8c112e74((void *)o);
+    TOKey_ctor_8c112e74((void *)o);
     o->dispatch = (void *)0x8c26eecc;
     *(Vector3 *)&o->f54 = *(Vector3 *)&o->f3c;
     o->tag = (int)(g_8c3166a8);

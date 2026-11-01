@@ -12,7 +12,7 @@ extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
 extern void operator_delete_8c18de08(void *);
 extern void operation_8c105320(int);
-void operation_8c1de06c(void)
+void release_assets_TOButterflyDF_8c1de06c(void)
 {
     int v2;
     int v1;

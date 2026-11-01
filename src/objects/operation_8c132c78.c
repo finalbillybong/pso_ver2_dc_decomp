@@ -14,7 +14,7 @@ struct Object {
     int f104;
 };
 extern int get_game_mode_8c01c25c(void);
-int operation_8c132c78(Object *o)
+int TODoorCave01_v21_8c132c78(Object *o)
 {
     int t1;
     o->f100 = (int)(o->f88);

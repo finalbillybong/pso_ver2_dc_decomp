@@ -22,7 +22,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4dc4d4 *g_8c4dc4d4;
 extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c19de38(Object *o, int a1)
+extern "C" Object *TQuestColCtrl_dtor_8c19de38(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)(void *)0x8c272a28;

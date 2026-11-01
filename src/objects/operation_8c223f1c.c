@@ -30,7 +30,7 @@ extern void call_8c2242c8(Object *);
 extern void call_8c199b74(void *);
 extern void call_8c0db30c(Object *);
 extern void update_view_nodes(void *, void *);
-void operation_8c223f1c(Object *o)
+void TWindowSubSymbolChatPartsSet_update_8c223f1c(Object *o)
 {
     int t1;
     int t2;

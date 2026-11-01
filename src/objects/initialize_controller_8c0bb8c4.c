@@ -21,14 +21,14 @@ struct Object {
     int f5c;
     short f60;
 };
-extern void initialize_position_controller(Object *, int);
+extern void TEditor_ctor_8c03c92c(Object *, int);
 extern void memset_8c12b880(void *, int, int);
 extern void call_8c0bbb24(Object *);
-Object *initialize_controller_8c0bb8c4(Object *o, int a1)
+Object *TGroupEditor_ctor_8c0bb8c4(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;
-    initialize_position_controller(o, a1);
+    TEditor_ctor_8c03c92c(o, a1);
     o->dispatch = (void *)0x8c2662d0;
     o->tag = *(int *)0x8c305930;
     o->size = 0x9c;

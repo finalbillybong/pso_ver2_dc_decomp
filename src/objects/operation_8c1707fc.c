@@ -9,7 +9,7 @@ struct S_L8c4db494 {
     char f0a;
 };
 extern S_L8c4db494 g_8c4db494;
-void operation_8c1707fc(unsigned int a0)
+void quest_op_ba_hide_target_reticle_8c1707fc(unsigned int a0)
 {
     if ((unsigned int)1 >= a0) {
         (&g_8c4db494)->f0a = a0;

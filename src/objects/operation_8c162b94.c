@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern int get_current_area_8c032b10(void);
 extern void play_se_8c05fbf8(int, int, int, int);
-void operation_8c162b94(int a0)
+void TOKeyMachine01_v20_8c162b94(int a0)
 {
     int t1;
     int t2;

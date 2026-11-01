@@ -15,7 +15,7 @@ struct Object {
     float f28;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c078b48(Object *o, int a1)
+Object *TObjBoss1Floor_ctor_8c078b48(Object *o, int a1)
 {
     int v1;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);

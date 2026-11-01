@@ -25,15 +25,15 @@ extern int g_8c4db120;
 extern int g_8c4db124;
 extern S_g8c4db9e4 *g_8c4db9e4;
 extern char g_8c4dab80[];
-extern void operation_8c1065dc(void *);
+extern void TShopSequence_v06_8c1065dc(void *);
 extern void operation_1c7dd4(void *);
 extern void memcpy_8c12b77c(void *, void *, int);
-void operation_8c15bd04(Object *o)
+void TCheckRoomSequence_v06_8c15bd04(Object *o)
 {
     int v1;
     S_vv2 *v2;
     S_vv3 *v3;
-    operation_8c1065dc((void *)o);
+    TShopSequence_v06_8c1065dc((void *)o);
     v1 = (int)0;
     while (0x3c > v1) {
         v2 = (S_vv2 *)(v1 * 0x18 + g_8c4dab80);

@@ -7,7 +7,7 @@ typedef struct S_g8c418248 S_g8c418248;
 extern int lookup_low_id(int);
 extern void word_operation_8c028814(void *);
 extern void operation_8c028838(int);
-void operation_8c16f940(void)
+void quest_op_start_battlebgm_8c16f940(void)
 {
     int t1;
     t1 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));

@@ -30,7 +30,7 @@ typedef struct Arg0_s3c0Data {
 
 } Arg0_s3c0Data;
 extern "C" int operation_459d8(void *);
-extern "C" int operation_8c0bd54c(Object *o)
+extern "C" int TObjEneSaver_v48_8c0bd54c(Object *o)
 {
     int t1;
     int t2;

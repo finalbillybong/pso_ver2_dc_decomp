@@ -10,7 +10,7 @@ struct Object {
     char unknownf2[0x218];
     short f30a;
 };
-void operation_8c177da0(Object *o)
+void TObjNpcMoja_v94_8c177da0(Object *o)
 {
     if (o->f30a != 2) {
         o->ff0 = 0;

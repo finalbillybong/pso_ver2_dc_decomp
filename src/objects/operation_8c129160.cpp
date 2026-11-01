@@ -81,7 +81,7 @@ extern "C" void call_8c129788(Object *);
 extern "C" void call_8c027090(Object *);
 extern "C" void operation_8c162e94(void *, int, int);
 extern "C" void operation_8c09e6b4(void *);
-extern "C" void operation_8c129160(Object *o)
+extern "C" void TContainerAncient01_update_8c129160(Object *o)
 {
     Frame frame;
     int v4;

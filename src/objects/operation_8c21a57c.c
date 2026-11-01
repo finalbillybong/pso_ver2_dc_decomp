@@ -9,8 +9,8 @@ struct Object {
     char unknown0[0x3c];
     Arg0_3c *f3c;
 };
-extern void call_8c21c9c4(void *, void *);
+extern void TWindowSubShortCutList_ctor_8c21c9c4(void *, void *);
 void operation_8c21a57c(Object *o)
 {
-    call_8c21c9c4((void *)((void *)0x8c2e1800), (void *)(o->f3c));
+    TWindowSubShortCutList_ctor_8c21c9c4((void *)((void *)0x8c2e1800), (void *)(o->f3c));
 }

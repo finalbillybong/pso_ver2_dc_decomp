@@ -60,7 +60,7 @@ extern "C" void create_effect_777c(void *, int);
 extern "C" int call_8c1aaabc(void *);
 extern "C" void create_effect_b0fac(void *, void *, void *, void *);
 extern "C" void call_8c076580(Object *);
-extern "C" void operation_8c18ac84(Object *o)
+extern "C" void TItemWpnCaduseus_v49_8c18ac84(Object *o)
 {
     Frame frame;
     int t1;

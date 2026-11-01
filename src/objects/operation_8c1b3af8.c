@@ -11,7 +11,7 @@ struct Object {
     int f3dc;
 };
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c1b3af8(Object *o)
+void TBoss4Type1_v70_8c1b3af8(Object *o)
 {
     o->f34 &= -0x201;
     o->f3dc = 1;

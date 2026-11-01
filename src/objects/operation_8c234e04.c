@@ -34,7 +34,7 @@ extern void operation_8c0264ac(void);
 extern void request_resource_release(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c234e04(Object *o, int a1)
+Object *TWindowShortListCtrl_dtor_8c234e04(Object *o, int a1)
 {
     int v1;
     int t1;

@@ -23,11 +23,11 @@ struct S_c8c1cbb18 {
     float f08;
 };
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c1cb998(S_c8c122700 *, int);
+extern void TWindowRoom_ctor_8c1cb998(S_c8c122700 *, int);
 extern void operation_8c1cbb08(void *, int);
 extern S_c8c1cbb18 *call_8c1cbb18(S_c8c122700 *);
 extern int call_8c04b8dc(int);
-S_c8c122700 *operation_8c24bce8(int a0)
+S_c8c122700 *TWindowArea_ctor_2_8c24bce8(int a0)
 {
     float v23;
     S_c8c122700 *t1;
@@ -35,7 +35,7 @@ S_c8c122700 *operation_8c24bce8(int a0)
     int t3;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x6c);
     if (t1 != 0) {
-        call_8c1cb998(t1, 0);
+        TWindowRoom_ctor_8c1cb998(t1, 0);
         t1->f18 = (void *)0x8c27d858;
         t1->f00 = (int)(*(int *)0x8c33e9d0);
         t1->f1e = 0x6c;

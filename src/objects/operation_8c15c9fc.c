@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c15c9fc(void)
+void TOSensor_v18_8c15c9fc(void)
 {
 }

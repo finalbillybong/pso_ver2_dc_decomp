@@ -6,7 +6,7 @@ typedef struct Vector3 {
 typedef struct S_g8c4d8324 S_g8c4d8324;
 extern S_g8c4d8324 *g_8c4d8324;
 extern void call_8c03dc40(void *, int);
-void operation_8c11a4f0(void)
+void release_assets_fe_obj306_hashi_8c11a4f0(void)
 {
     call_8c03dc40(g_8c4d8324, 1);
 }

@@ -21,7 +21,7 @@ extern int lookup_low_id(int);
 extern float squared_distance_xz(void *, void *);
 extern void set_effect_bit0(void *);
 extern void clear_effect_bit0(void *);
-void operation_8c259084(Object *o)
+void TOSwitchAttackSub_update_8c259084(Object *o)
 {
     int v60;
     int t1;

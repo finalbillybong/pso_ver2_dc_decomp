@@ -51,7 +51,7 @@ extern void select_mode19_8c1cc648(void);
 extern int operation_8c19b054(void);
 extern int call_8c37293e(int, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c198294(int, Object *);
+extern void TAdBack_ctor_8c198294(int, Object *);
 extern int create_fitted_pair_grid_view(void *, void *);
 extern void play_se_8c05fbf8(int, int, int, int);
 Object *operation_8c0e8e3c(Object *o)
@@ -130,7 +130,7 @@ L_8c0e8f60:;
     }
     t9 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
     if (t9 != 0) {
-        call_8c198294(t9, o);
+        TAdBack_ctor_8c198294(t9, o);
     }
     *(Block8 *)&(&frame)->f0c = *(Block8 *)&*(Block8 *)0x8c30833c;
     *(Block8 *)&(&frame)->f04 = *(Block8 *)&*(Block8 *)0x8c308344;

@@ -17,7 +17,7 @@ extern void initialize_base_8c0db1d0(void *, int);
 extern int game_malloc_8c011ecc(int);
 extern void operation_192b14(void *, signed char, signed char);
 extern void call_8c24e1f4(Object *);
-Object *operation_8c24e084(Object *o)
+Object *TWindowDuelResult_ctor_8c24e084(Object *o)
 {
     Object **home = &o;
     int t1;

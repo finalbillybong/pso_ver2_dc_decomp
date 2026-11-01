@@ -25,7 +25,7 @@ struct Arg0_38_2c_4 {
     Arg0_38_2c_4_4 *f04;
 };
 extern void call_8c0344f0(void *, int, int, int);
-void operation_8c179b78(Object *o)
+void TItemWpnDelsabre_v52_8c179b78(Object *o)
 {
     call_8c0344f0((void *)(o->f38->f2c->f04->f04), 2, 0, 1);
 }

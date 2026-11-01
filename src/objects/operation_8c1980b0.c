@@ -35,7 +35,7 @@ extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern void call_8c0cd588(int, void *, int);
 extern void load_resource_small(void *, void *);
-void operation_8c1980b0(void)
+void load_assets_ad_f_moyouring_8c1980b0(void)
 {
     int t1;
     int t2;

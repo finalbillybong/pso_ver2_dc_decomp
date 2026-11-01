@@ -15,13 +15,13 @@ struct S_c8c122700 {
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c221f44(S_c8c122700 *, void *, int);
+extern void TQuestListVM_ctor_8c221f44(S_c8c122700 *, void *, int);
 void operation_8c15991c(void)
 {
     S_c8c122700 *t1;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x22f8);
     if (t1 != 0) {
-        call_8c221f44(t1, g_8c44be98, 0);
+        TQuestListVM_ctor_8c221f44(t1, g_8c44be98, 0);
     }
     if (t1 != 0) {
         t1->f22ec = (void *)0x8c159988;

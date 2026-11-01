@@ -21,9 +21,9 @@ extern void operation_8c1aa69c(void);
 extern void operation_8c1aa6f4(void);
 extern void operation_8c1aa724(void);
 extern void operation_8c1aa728(void);
-extern void destroy_object_8c1aac68(void);
-extern void operation_8c1aad50(void);
-extern void fn_8c1aae20(void);
+extern void TBoss2Fin_dtor_8c1aac68(void);
+extern void TBoss2Fin_update_8c1aad50(void);
+extern void TBoss2Fin_render_8c1aae20(void);
 
 /* 8c2746ec: type-information and this-adjustment header, then 15 slots */
 VirtualFunction const vt_8c2746ec[17] = {
@@ -71,9 +71,9 @@ VirtualFunction const vt_8c274730[17] = {
 VirtualFunction const vt_8c274774[7] = {
     0,
     0,
-    destroy_object_8c1aac68,
-    operation_8c1aad50,
-    fn_8c1aae20,
+    TBoss2Fin_dtor_8c1aac68,
+    TBoss2Fin_update_8c1aad50,
+    TBoss2Fin_render_8c1aae20,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

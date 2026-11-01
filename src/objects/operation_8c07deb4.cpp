@@ -94,7 +94,7 @@ public:
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" int operation_8c07deb4(Object *o, Arg1 *a1)
+extern "C" int TItemMag_v37_8c07deb4(Object *o, Arg1 *a1)
 {
     Frame frame;
     int t1;

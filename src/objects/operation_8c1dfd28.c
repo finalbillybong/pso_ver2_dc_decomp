@@ -20,7 +20,7 @@ struct Object {
 };
 extern void initialize_base_8c0db1d0(void *, int);
 extern void operation_8c1e0000(void *);
-Object *operation_8c1dfd28(Object *o, int a1)
+Object *TWindowKeyBoardHard_ctor_8c1dfd28(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;

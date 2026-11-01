@@ -6,7 +6,7 @@ typedef struct Vector3 {
 extern float object_random_fraction(void *);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void update_last_effect(int);
-void operation_8c0e6adc(int a0)
+void TObjEneDimedian_v93_8c0e6adc(int a0)
 {
     float t1;
     t1 = object_random_fraction((void *)a0);

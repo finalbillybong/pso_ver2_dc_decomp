@@ -23,7 +23,7 @@ struct S_c8c0d9e2c_sa0 {
 extern int g_8c418248;
 extern int find_entry_8c0d9e2c(int, int, int);
 extern void operation_8c1ecfe0(short, short);
-void operation_8c24dcec(Object *o)
+void TItemObjMoonAtomizer_v42_8c24dcec(Object *o)
 {
     int v1;
     char *v79;

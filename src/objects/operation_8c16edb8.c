@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern int lookup_low_id(int);
 extern void operation_8c250574(int);
-void operation_8c16edb8(int a0)
+void quest_op_p_talk_guild_8c16edb8(int a0)
 {
     int t1;
     t1 = lookup_low_id(a0);

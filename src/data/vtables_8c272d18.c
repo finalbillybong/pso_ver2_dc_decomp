@@ -91,10 +91,10 @@ extern void operation_8c0134ec(void);
 extern void operation_8c012b88(void);
 extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
-extern void operation_8c1a13a4(void);
+extern void TObjMapCsn_dtor_8c1a13a4(void);
 extern void TObject_update_default_8c0111c4(void);
-extern void operation_8c1a16e8(void);
-extern void operation_8c1a16ec(void);
+extern void TObjMapCsn_render_8c1a16e8(void);
+extern void TObjMapCsn_render_shadow_8c1a16ec(void);
 extern void operation_8c051fd4(void);
 extern void operation_8c010508(void);
 extern void operation_8c010510(void);
@@ -198,10 +198,10 @@ VirtualFunction const vt_8c272d18[91] = {
 VirtualFunction const vt_8c272e84[17] = {
     0,
     0,
-    operation_8c1a13a4,
+    TObjMapCsn_dtor_8c1a13a4,
     TObject_update_default_8c0111c4,
-    operation_8c1a16e8,
-    operation_8c1a16ec,
+    TObjMapCsn_render_8c1a16e8,
+    TObjMapCsn_render_shadow_8c1a16ec,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,

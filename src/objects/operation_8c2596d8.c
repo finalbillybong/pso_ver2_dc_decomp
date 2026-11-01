@@ -61,7 +61,7 @@ extern int g_8c5133e0;
 extern void call_8c088f14(Object *, int, int);
 extern void insert_object_by_id(void *);
 extern int get_current_area_8c032b10(void);
-Object *operation_8c2596d8(Object *o, int a1, int a2)
+Object *TObjCityMainWarpChallenge_ctor_8c2596d8(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int v12;

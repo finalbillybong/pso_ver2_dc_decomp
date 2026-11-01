@@ -19,42 +19,42 @@ extern void operation_8c010510(void);
 extern void destroy_object_8c249a0c(void);
 extern void operation_8c249a50(void);
 extern void fn_8c249bc8(void);
-extern void destroy_object_8c24a220(void);
-extern void operation_8c24a264(void);
-extern void fn_8c24a394(void);
+extern void TObjCamera_dtor_8c24a220(void);
+extern void TObjCamera_update_8c24a264(void);
+extern void TObjCamera_render_8c24a394(void);
 extern void operation_8c0eeb8c(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c24a49c(void);
+extern void TObjCamera_v11_8c24a49c(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c0eea78(void);
-extern void operation_8c24ac58(void);
-extern void operation_8c24ace0(void);
-extern void operation_8c24acf4(void);
-extern void operation_8c24ae00(void);
-extern void operation_8c24a918(void);
-extern void operation_8c24a9a0(void);
-extern void operation_8c24a9b4(void);
-extern void operation_8c24aac0(void);
-extern void operation_8c24afe8(void);
+extern void TObjBigTuitate_dtor_8c24ac58(void);
+extern void TObjBigTuitate_update_8c24ace0(void);
+extern void TObjBigTuitate_render_8c24acf4(void);
+extern void TObjBigTuitate_render_shadow_8c24ae00(void);
+extern void TObjTuitate_dtor_8c24a918(void);
+extern void TObjTuitate_update_8c24a9a0(void);
+extern void TObjTuitate_render_8c24a9b4(void);
+extern void TObjTuitate_render_shadow_8c24aac0(void);
+extern void TObjDoaEx01_dtor_8c24afe8(void);
 extern void operation_8c0eec28(void);
-extern void operation_8c24b040(void);
-extern void operation_8c24b2e0(void);
-extern void operation_8c24b498(void);
+extern void TObjDoaEx01_render_8c24b040(void);
+extern void TObjDoaEx01_render_shadow_8c24b2e0(void);
+extern void TObjDoaEx01_v09_8c24b498(void);
 extern void operation_8c0eed38(void);
 extern void operation_8c0eed3c(void);
-extern void operation_8c24b2e4(void);
-extern void operation_8c24b3a8(void);
-extern void operation_8c24b3ec(void);
-extern void operation_8c24b454(void);
+extern void TObjDoaEx01_v17_8c24b2e4(void);
+extern void TObjDoaEx01_v18_8c24b3a8(void);
+extern void TObjDoaEx01_v19_8c24b3ec(void);
+extern void TObjDoaEx01_v20_8c24b454(void);
 extern void operation_8c0ef190(void);
-extern void operation_8c24b614(void);
-extern void operation_8c24b844(void);
-extern void operation_8c24bbc0(void);
-extern void operation_8c24bbbc(void);
-extern void operation_8c24ba8c(void);
-extern void operation_8c24baec(void);
-extern void operation_8c24bb28(void);
-extern void operation_8c24bb88(void);
+extern void TODoorVS2Door01_dtor_8c24b614(void);
+extern void TODoorVS2Door01_render_8c24b844(void);
+extern void TODoorVS2Door01_render_shadow_8c24bbc0(void);
+extern void TODoorVS2Door01_v15_8c24bbbc(void);
+extern void TODoorVS2Door01_v17_8c24ba8c(void);
+extern void TODoorVS2Door01_v18_8c24baec(void);
+extern void TODoorVS2Door01_v19_8c24bb28(void);
+extern void TODoorVS2Door01_v20_8c24bb88(void);
 
 /* 8c27d648: type-information and this-adjustment header, then 14 slots */
 VirtualFunction const vt_8c27d648[16] = {
@@ -100,9 +100,9 @@ VirtualFunction const vt_8c27d688[16] = {
 VirtualFunction const vt_8c27d6c8[18] = {
     0,
     0,
-    destroy_object_8c24a220,
-    operation_8c24a264,
-    fn_8c24a394,
+    TObjCamera_dtor_8c24a220,
+    TObjCamera_update_8c24a264,
+    TObjCamera_render_8c24a394,
     operation_8c0eeb8c,
     hierarchy_output,
     operation_8c0104fc,
@@ -111,7 +111,7 @@ VirtualFunction const vt_8c27d6c8[18] = {
     operation_8c010500,
     operation_8c010504,
     operation_8c010508,
-    operation_8c24a49c,
+    TObjCamera_v11_8c24a49c,
     fn_8c01d4c4,
     operation_8c010510,
     operation_8c0104f0,
@@ -122,10 +122,10 @@ VirtualFunction const vt_8c27d6c8[18] = {
 VirtualFunction const vt_8c27d710[17] = {
     0,
     0,
-    operation_8c24ac58,
-    operation_8c24ace0,
-    operation_8c24acf4,
-    operation_8c24ae00,
+    TObjBigTuitate_dtor_8c24ac58,
+    TObjBigTuitate_update_8c24ace0,
+    TObjBigTuitate_render_8c24acf4,
+    TObjBigTuitate_render_shadow_8c24ae00,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -143,10 +143,10 @@ VirtualFunction const vt_8c27d710[17] = {
 VirtualFunction const vt_8c27d754[17] = {
     0,
     0,
-    operation_8c24a918,
-    operation_8c24a9a0,
-    operation_8c24a9b4,
-    operation_8c24aac0,
+    TObjTuitate_dtor_8c24a918,
+    TObjTuitate_update_8c24a9a0,
+    TObjTuitate_render_8c24a9b4,
+    TObjTuitate_render_shadow_8c24aac0,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -164,16 +164,16 @@ VirtualFunction const vt_8c27d754[17] = {
 VirtualFunction const vt_8c27d798[24] = {
     0,
     0,
-    operation_8c24afe8,
+    TObjDoaEx01_dtor_8c24afe8,
     operation_8c0eec28,
-    operation_8c24b040,
-    operation_8c24b2e0,
+    TObjDoaEx01_render_8c24b040,
+    TObjDoaEx01_render_shadow_8c24b2e0,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
     operation_8c051fd4,
     operation_8c010500,
-    operation_8c24b498,
+    TObjDoaEx01_v09_8c24b498,
     operation_8c010508,
     operation_8c01d3b0,
     fn_8c01d4c4,
@@ -181,10 +181,10 @@ VirtualFunction const vt_8c27d798[24] = {
     operation_8c0104f0,
     operation_8c0eed38,
     operation_8c0eed3c,
-    operation_8c24b2e4,
-    operation_8c24b3a8,
-    operation_8c24b3ec,
-    operation_8c24b454,
+    TObjDoaEx01_v17_8c24b2e4,
+    TObjDoaEx01_v18_8c24b3a8,
+    TObjDoaEx01_v19_8c24b3ec,
+    TObjDoaEx01_v20_8c24b454,
     operation_8c0ef190
 };
 
@@ -192,10 +192,10 @@ VirtualFunction const vt_8c27d798[24] = {
 VirtualFunction const vt_8c27d7f8[24] = {
     0,
     0,
-    operation_8c24b614,
+    TODoorVS2Door01_dtor_8c24b614,
     operation_8c0eec28,
-    operation_8c24b844,
-    operation_8c24bbc0,
+    TODoorVS2Door01_render_8c24b844,
+    TODoorVS2Door01_render_shadow_8c24bbc0,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -207,11 +207,11 @@ VirtualFunction const vt_8c27d7f8[24] = {
     fn_8c01d4c4,
     operation_8c010510,
     operation_8c0104f0,
-    operation_8c24bbbc,
+    TODoorVS2Door01_v15_8c24bbbc,
     operation_8c0eed3c,
-    operation_8c24ba8c,
-    operation_8c24baec,
-    operation_8c24bb28,
-    operation_8c24bb88,
+    TODoorVS2Door01_v17_8c24ba8c,
+    TODoorVS2Door01_v18_8c24baec,
+    TODoorVS2Door01_v19_8c24bb28,
+    TODoorVS2Door01_v20_8c24bb88,
     operation_8c0ef190
 };

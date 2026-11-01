@@ -92,7 +92,7 @@ extern "C" void call_8c3aa702(void *);
 extern "C" void call_8c38c0f0(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void call_8c3addea(Arg0_38 *, void *, float);
-extern "C" void operation_8c1af190(Object *o)
+extern "C" void TODoorMachine02_render_8c1af190(Object *o)
 {
     int v1;
     S_vv2 *v2;

@@ -2,10 +2,10 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c1c01d4(void);
-extern void operation_8c1c03bc(void);
-extern void operation_8c1c02d4(void);
-extern void operation_8c1c041c(void);
+extern void TOLightMachine01_dtor_8c1c01d4(void);
+extern void TOLightMachine01_update_8c1c03bc(void);
+extern void TOLightMachine01_render_8c1c02d4(void);
+extern void TOLightMachine01_render_shadow_8c1c041c(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
@@ -16,27 +16,27 @@ extern void operation_8c010508(void);
 extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
-extern void operation_8c1c0a74(void);
-extern void operation_8c1c060c(void);
-extern void operation_8c1c0598(void);
-extern void operation_8c1c0780(void);
-extern void operation_8c1c08f8(void);
-extern void operation_8c1c0784(void);
-extern void operation_8c1c04c4(void);
-extern void reconstruct_8c1c1138(void);
-extern void operation_8c1c1394(void);
-extern void operation_8c1c1574(void);
+extern void TOExplosiveMachine03_dtor_8c1c0a74(void);
+extern void TOExplosiveMachine_update_8c1c060c(void);
+extern void TOExplosiveMachine_render_8c1c0598(void);
+extern void TOExplosiveMachine_render_shadow_8c1c0780(void);
+extern void TOExplosiveMachine02_dtor_8c1c08f8(void);
+extern void TOExplosiveMachine01_dtor_8c1c0784(void);
+extern void TOExplosiveMachine_dtor_8c1c04c4(void);
+extern void TObjCityAirCar_Car_dtor_8c1c1138(void);
+extern void TObjCityAirCar_Car_update_8c1c1394(void);
+extern void TObjCityAirCar_Car_render_8c1c1574(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
-extern void destroy_object_8c1c0e34(void);
-extern void fn_8c1c0e78(void);
-extern void operation_8c1c1088(void);
+extern void TObjCityAirCar_Ctrl_dtor_8c1c0e34(void);
+extern void TObjCityAirCar_Ctrl_update_8c1c0e78(void);
+extern void TObjCityAirCar_Ctrl_render_8c1c1088(void);
 extern void operation_8c1c23b0(void);
 extern void operation_8c1c26fc(void);
 extern void operation_8c1c2780(void);
 extern void operation_8c1c26c8(void);
-extern void operation_8c1c20fc(void);
-extern void operation_8c1c21fc(void);
-extern void fn_8c1c2208(void);
+extern void TObjCityDoor_Med_dtor_8c1c20fc(void);
+extern void TObjCityDoor_Med_update_8c1c21fc(void);
+extern void TObjCityDoor_Med_render_8c1c2208(void);
 extern void operation_8c051fd4(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c1c17f0(void);
@@ -48,18 +48,18 @@ extern void operation_8c1c19d8(void);
 extern void operation_8c1c19f0(void);
 extern void operation_8c1c1a08(void);
 extern void operation_8c1c1a68(void);
-extern void operation_8c1c1db8(void);
-extern void operation_8c1c1ff0(void);
-extern void fn_8c1c2050(void);
-extern void operation_8c1c1eb8(void);
-extern void operation_8c1c1fc0(void);
-extern void operation_8c1c1f74(void);
-extern void operation_8c1c1c1c(void);
-extern void operation_8c1c1d1c(void);
-extern void fn_8c1c1d28(void);
-extern void operation_8c1c1a80(void);
-extern void operation_8c1c1b7c(void);
-extern void fn_8c1c1b88(void);
+extern void TObjCityDoor_Warp_dtor_8c1c1db8(void);
+extern void TObjCityDoor_Warp_update_8c1c1ff0(void);
+extern void TObjCityDoor_Warp_render_8c1c2050(void);
+extern void TObjCityDoor_Warp_v18_8c1c1eb8(void);
+extern void TObjCityDoor_Warp_v20_8c1c1fc0(void);
+extern void TObjCityDoor_Warp_v21_8c1c1f74(void);
+extern void TObjCityDoor_Guild_dtor_8c1c1c1c(void);
+extern void TObjCityDoor_Guild_update_8c1c1d1c(void);
+extern void TObjCityDoor_Guild_render_8c1c1d28(void);
+extern void TObjCityDoor_Shop_dtor_8c1c1a80(void);
+extern void TObjCityDoor_Shop_update_8c1c1b7c(void);
+extern void TObjCityDoor_Shop_render_8c1c1b88(void);
 extern void operation_8c1c1798(void);
 extern void TObject_update_default_8c0111c4(void);
 extern void TObject_render_default_8c0111c8(void);
@@ -71,20 +71,20 @@ extern void operation_8c1c2c3c(void);
 extern void fn_8c1c2cb8(void);
 extern void operation_8c1c3278(void);
 extern void fn_8c01c544(void);
-extern void destroy_object_8c1c3d14(void);
-extern void operation_8c1c3e08(void);
-extern void operation_8c1c3edc(void);
+extern void TODragonflyMachine01_dtor_8c1c3d14(void);
+extern void TODragonflyMachine01_update_8c1c3e08(void);
+extern void TODragonflyMachine01_render_8c1c3edc(void);
 extern void operation_8c0eeb8c(void);
 extern void operation_8c131fac(void);
-extern void destroy_object_8c1c4464(void);
-extern void operation_8c1c44a8(void);
-extern void operation_8c1c4574(void);
-extern void operation_8c1c4534(void);
-extern void destroy_object_8c1c45c4(void);
-extern void fn_8c1c425c(void);
-extern void operation_8c1c43a4(void);
-extern void operation_8c1c4318(void);
-extern void destroy_object_8c1c4608(void);
+extern void TObjRaderHideCol_dtor_8c1c4464(void);
+extern void TObjRaderHideCol_update_8c1c44a8(void);
+extern void TObjRaderHideCol_render_shadow_8c1c4574(void);
+extern void TObjRaderHideCol_v09_8c1c4534(void);
+extern void TObjRaderCol_dtor_8c1c45c4(void);
+extern void TObjRaderCol_update_8c1c425c(void);
+extern void TObjRaderCol_render_shadow_8c1c43a4(void);
+extern void TObjRaderCol_v09_8c1c4318(void);
+extern void TObjNpcNHW01_dtor_8c1c4608(void);
 extern void operation_8c120374(void);
 extern void operation_8c120524(void);
 extern void operation_8c121330(void);
@@ -176,12 +176,12 @@ extern void operation_8c123ee4(void);
 extern void operation_8c121008(void);
 extern void operation_8c11f640(void);
 extern void operation_8c12132c(void);
-extern void destroy_object_8c1c47c8(void);
+extern void TObjNpcHRM01_dtor_8c1c47c8(void);
 extern void operation_8c11f724(void);
-extern void destroy_object_8c1c4988(void);
-extern void destroy_object_8c1c4b48(void);
-extern void destroy_object_8c1c4d08(void);
-extern void operation_8c1c4ec8(void);
+extern void TObjNpcNFW01_dtor_8c1c4988(void);
+extern void TObjNpcNFM01_dtor_8c1c4b48(void);
+extern void TObjNpcAHM01_dtor_8c1c4d08(void);
+extern void TObjNpcAHM01_v96_8c1c4ec8(void);
 extern void destroy_object_8c1c4edc(void);
 extern void operation_8c1a4264(void);
 
@@ -189,10 +189,10 @@ extern void operation_8c1a4264(void);
 VirtualFunction const vt_8c27579c[16] = {
     0,
     0,
-    destroy_object_8c1c01d4,
-    operation_8c1c03bc,
-    operation_8c1c02d4,
-    operation_8c1c041c,
+    TOLightMachine01_dtor_8c1c01d4,
+    TOLightMachine01_update_8c1c03bc,
+    TOLightMachine01_render_8c1c02d4,
+    TOLightMachine01_render_shadow_8c1c041c,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -209,10 +209,10 @@ VirtualFunction const vt_8c27579c[16] = {
 VirtualFunction const vt_8c2757dc[16] = {
     0,
     0,
-    operation_8c1c0a74,
-    operation_8c1c060c,
-    operation_8c1c0598,
-    operation_8c1c0780,
+    TOExplosiveMachine03_dtor_8c1c0a74,
+    TOExplosiveMachine_update_8c1c060c,
+    TOExplosiveMachine_render_8c1c0598,
+    TOExplosiveMachine_render_shadow_8c1c0780,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -229,10 +229,10 @@ VirtualFunction const vt_8c2757dc[16] = {
 VirtualFunction const vt_8c27581c[16] = {
     0,
     0,
-    operation_8c1c08f8,
-    operation_8c1c060c,
-    operation_8c1c0598,
-    operation_8c1c0780,
+    TOExplosiveMachine02_dtor_8c1c08f8,
+    TOExplosiveMachine_update_8c1c060c,
+    TOExplosiveMachine_render_8c1c0598,
+    TOExplosiveMachine_render_shadow_8c1c0780,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -249,10 +249,10 @@ VirtualFunction const vt_8c27581c[16] = {
 VirtualFunction const vt_8c27585c[16] = {
     0,
     0,
-    operation_8c1c0784,
-    operation_8c1c060c,
-    operation_8c1c0598,
-    operation_8c1c0780,
+    TOExplosiveMachine01_dtor_8c1c0784,
+    TOExplosiveMachine_update_8c1c060c,
+    TOExplosiveMachine_render_8c1c0598,
+    TOExplosiveMachine_render_shadow_8c1c0780,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -269,10 +269,10 @@ VirtualFunction const vt_8c27585c[16] = {
 VirtualFunction const vt_8c27589c[16] = {
     0,
     0,
-    operation_8c1c04c4,
-    operation_8c1c060c,
-    operation_8c1c0598,
-    operation_8c1c0780,
+    TOExplosiveMachine_dtor_8c1c04c4,
+    TOExplosiveMachine_update_8c1c060c,
+    TOExplosiveMachine_render_8c1c0598,
+    TOExplosiveMachine_render_shadow_8c1c0780,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -289,9 +289,9 @@ VirtualFunction const vt_8c27589c[16] = {
 VirtualFunction const vt_8c2758dc[16] = {
     0,
     0,
-    reconstruct_8c1c1138,
-    operation_8c1c1394,
-    operation_8c1c1574,
+    TObjCityAirCar_Car_dtor_8c1c1138,
+    TObjCityAirCar_Car_update_8c1c1394,
+    TObjCityAirCar_Car_render_8c1c1574,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -309,9 +309,9 @@ VirtualFunction const vt_8c2758dc[16] = {
 VirtualFunction const vt_8c27591c[7] = {
     0,
     0,
-    destroy_object_8c1c0e34,
-    fn_8c1c0e78,
-    operation_8c1c1088,
+    TObjCityAirCar_Ctrl_dtor_8c1c0e34,
+    TObjCityAirCar_Ctrl_update_8c1c0e78,
+    TObjCityAirCar_Ctrl_render_8c1c1088,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -340,9 +340,9 @@ VirtualFunction const vt_8c275938[16] = {
 VirtualFunction const vt_8c275978[26] = {
     0,
     0,
-    operation_8c1c20fc,
-    operation_8c1c21fc,
-    fn_8c1c2208,
+    TObjCityDoor_Med_dtor_8c1c20fc,
+    TObjCityDoor_Med_update_8c1c21fc,
+    TObjCityDoor_Med_render_8c1c2208,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -370,9 +370,9 @@ VirtualFunction const vt_8c275978[26] = {
 VirtualFunction const vt_8c2759e0[26] = {
     0,
     0,
-    operation_8c1c1db8,
-    operation_8c1c1ff0,
-    fn_8c1c2050,
+    TObjCityDoor_Warp_dtor_8c1c1db8,
+    TObjCityDoor_Warp_update_8c1c1ff0,
+    TObjCityDoor_Warp_render_8c1c2050,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -388,10 +388,10 @@ VirtualFunction const vt_8c2759e0[26] = {
     operation_8c1c17f0,
     operation_8c1c185c,
     operation_8c1c1920,
-    operation_8c1c1eb8,
+    TObjCityDoor_Warp_v18_8c1c1eb8,
     operation_8c1c1998,
-    operation_8c1c1fc0,
-    operation_8c1c1f74,
+    TObjCityDoor_Warp_v20_8c1c1fc0,
+    TObjCityDoor_Warp_v21_8c1c1f74,
     operation_8c1c1a08,
     operation_8c1c1a68
 };
@@ -400,9 +400,9 @@ VirtualFunction const vt_8c2759e0[26] = {
 VirtualFunction const vt_8c275a48[26] = {
     0,
     0,
-    operation_8c1c1c1c,
-    operation_8c1c1d1c,
-    fn_8c1c1d28,
+    TObjCityDoor_Guild_dtor_8c1c1c1c,
+    TObjCityDoor_Guild_update_8c1c1d1c,
+    TObjCityDoor_Guild_render_8c1c1d28,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -430,9 +430,9 @@ VirtualFunction const vt_8c275a48[26] = {
 VirtualFunction const vt_8c275ab0[26] = {
     0,
     0,
-    operation_8c1c1a80,
-    operation_8c1c1b7c,
-    fn_8c1c1b88,
+    TObjCityDoor_Shop_dtor_8c1c1a80,
+    TObjCityDoor_Shop_update_8c1c1b7c,
+    TObjCityDoor_Shop_render_8c1c1b88,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -531,9 +531,9 @@ VirtualFunction const vt_8c275bc0[17] = {
 VirtualFunction const vt_8c275c04[18] = {
     0,
     0,
-    destroy_object_8c1c3d14,
-    operation_8c1c3e08,
-    operation_8c1c3edc,
+    TODragonflyMachine01_dtor_8c1c3d14,
+    TODragonflyMachine01_update_8c1c3e08,
+    TODragonflyMachine01_render_8c1c3edc,
     operation_8c0eeb8c,
     hierarchy_output,
     operation_8c0104fc,
@@ -553,16 +553,16 @@ VirtualFunction const vt_8c275c04[18] = {
 VirtualFunction const vt_8c275c4c[16] = {
     0,
     0,
-    destroy_object_8c1c4464,
-    operation_8c1c44a8,
+    TObjRaderHideCol_dtor_8c1c4464,
+    TObjRaderHideCol_update_8c1c44a8,
     TObject_render_default_8c0111c8,
-    operation_8c1c4574,
+    TObjRaderHideCol_render_shadow_8c1c4574,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
     reset_shared_object,
     operation_8c010500,
-    operation_8c1c4534,
+    TObjRaderHideCol_v09_8c1c4534,
     operation_8c010508,
     operation_8c01d3b0,
     fn_8c01d4c4,
@@ -573,16 +573,16 @@ VirtualFunction const vt_8c275c4c[16] = {
 VirtualFunction const vt_8c275c8c[16] = {
     0,
     0,
-    destroy_object_8c1c45c4,
-    fn_8c1c425c,
+    TObjRaderCol_dtor_8c1c45c4,
+    TObjRaderCol_update_8c1c425c,
     TObject_render_default_8c0111c8,
-    operation_8c1c43a4,
+    TObjRaderCol_render_shadow_8c1c43a4,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
     reset_shared_object,
     operation_8c010500,
-    operation_8c1c4318,
+    TObjRaderCol_v09_8c1c4318,
     operation_8c010508,
     operation_8c01d3b0,
     fn_8c01d4c4,
@@ -593,7 +593,7 @@ VirtualFunction const vt_8c275c8c[16] = {
 VirtualFunction const vt_8c275ccc[100] = {
     0,
     0,
-    destroy_object_8c1c4608,
+    TObjNpcNHW01_dtor_8c1c4608,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -697,7 +697,7 @@ VirtualFunction const vt_8c275ccc[100] = {
 VirtualFunction const vt_8c275e5c[100] = {
     0,
     0,
-    destroy_object_8c1c47c8,
+    TObjNpcHRM01_dtor_8c1c47c8,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -801,7 +801,7 @@ VirtualFunction const vt_8c275e5c[100] = {
 VirtualFunction const vt_8c275fec[100] = {
     0,
     0,
-    destroy_object_8c1c4988,
+    TObjNpcNFW01_dtor_8c1c4988,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -905,7 +905,7 @@ VirtualFunction const vt_8c275fec[100] = {
 VirtualFunction const vt_8c27617c[100] = {
     0,
     0,
-    destroy_object_8c1c4b48,
+    TObjNpcNFM01_dtor_8c1c4b48,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -1009,7 +1009,7 @@ VirtualFunction const vt_8c27617c[100] = {
 VirtualFunction const vt_8c27630c[100] = {
     0,
     0,
-    destroy_object_8c1c4d08,
+    TObjNpcAHM01_dtor_8c1c4d08,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -1105,7 +1105,7 @@ VirtualFunction const vt_8c27630c[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c1c4ec8,
+    TObjNpcAHM01_v96_8c1c4ec8,
     operation_8c12132c
 };
 

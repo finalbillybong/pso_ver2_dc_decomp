@@ -13,7 +13,7 @@ extern void operation_8c052124(void *);
 extern void call_8c053f54(Object *);
 extern void destroy_object_8c0ee900(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1bf660(Object *o, int a1)
+Object *TOCakeshopCave01_dtor_8c1bf660(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c2756f0;

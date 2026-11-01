@@ -9,7 +9,7 @@ struct S_L8c4db494 {
     char f12;
 };
 extern S_L8c4db494 g_8c4db494;
-void operation_8c1709d0(int a0)
+void quest_op_ba_sonar_count_8c1709d0(int a0)
 {
     (&g_8c4db494)->f12 = a0;
 }

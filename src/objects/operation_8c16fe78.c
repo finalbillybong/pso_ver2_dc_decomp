@@ -23,7 +23,7 @@ struct S_L8c46fec0 {
 };
 extern Block72 g_8c317b60;
 extern S_L8c46fec0 g_8c46fec0;
-void operation_8c16fe78(unsigned int a0)
+void quest_op_ba_initial_floor_8c16fe78(unsigned int a0)
 {
     Frame frame;
     int v1;

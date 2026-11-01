@@ -38,7 +38,7 @@ extern "C" void call_8c03dc40(void *, int);
 extern "C" void release_scene_control_resource(void *);
 extern "C" void clear_global_8c08a584(void);
 extern "C" void destroy_vector_grid(void *, int);
-extern "C" void operation_8c0ce0b8(void)
+extern "C" void release_assets_ene_dubchik_8c0ce0b8(void)
 {
     S_L8c46fc34 *pm3;
     void *pm1;

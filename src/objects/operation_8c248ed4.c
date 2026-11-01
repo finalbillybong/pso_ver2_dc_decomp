@@ -26,7 +26,7 @@ extern void call_8c37e0c8(int, void *, void *, void *);
 extern void call_8c3aa716(void *);
 extern void call_8c391cc4(void);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c248ed4(Object *o)
+void TItemShootBasyoSen2_render_8c248ed4(Object *o)
 {
     if (o->f5c != 0 && o->f60 != 0) {
         njPushMatrixEx_8c38ae68();

@@ -17,7 +17,7 @@ struct Object {
     int fb0;
 };
 extern float njSin_8c37eb0c(void *);
-void operation_8c1c03bc(Object *o)
+void TOLightMachine01_update_8c1c03bc(Object *o)
 {
     float t1;
     o->fac = (Arg0_ac *)((int)o->fac + o->fa8);

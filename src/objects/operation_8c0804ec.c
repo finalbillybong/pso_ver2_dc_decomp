@@ -42,7 +42,7 @@ extern int g_8c2fec20;
 extern void TObjectShared_ctor_8c01d1ec(Object *);
 extern int create_effect_78d0(void *, void *, int, int);
 extern int create_effect_785c(void *, void *, int);
-Object *operation_8c0804ec(Object *o, int a1, Arg2 *a2)
+Object *TObjParticle_ctor_8c0804ec(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     int v1;

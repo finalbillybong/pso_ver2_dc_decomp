@@ -18,7 +18,7 @@ struct Object {
     int f1d4;
 };
 extern void call_8c193134(void *);
-void operation_8c209a88(Object *o)
+void TItemEquipBase_v45_8c209a88(Object *o)
 {
     if ((int)(o->f1c4) != -1) {
         call_8c193134((void *)(o->f1c4));

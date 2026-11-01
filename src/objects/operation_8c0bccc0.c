@@ -60,7 +60,7 @@ extern void call_8c0bf3a4(Object *);
 extern void call_8c0bf544(Object *);
 extern void call_8c0bd718(Object *);
 extern void call_8c0bf6b8(Object *);
-void operation_8c0bccc0(Object *o)
+void TObjEneSaver_update_8c0bccc0(Object *o)
 {
     int v2;
     int v1;

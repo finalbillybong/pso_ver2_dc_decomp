@@ -25,7 +25,7 @@ struct S_vv1_430_4 {
     char unknown0[0x4];
     int f04;
 };
-void operation_8c1d8940(Object *o)
+void TObjCity_Season_XmasTree_update_8c1d8940(Object *o)
 {
     S_vv1 *v1;
     float v4;

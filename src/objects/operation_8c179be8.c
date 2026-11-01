@@ -17,7 +17,7 @@ struct Object {
     void *f22c;
 };
 extern void call_8c075398(void);
-Object *operation_8c179be8(Object *o)
+Object *TItemWpnEggman_ctor_8c179be8(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c2712a0;

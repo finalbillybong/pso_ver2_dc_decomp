@@ -27,7 +27,7 @@ extern "C" int active_payload_8c22c05c(void *);
 extern "C" void call_8c22cd34(Object *);
 extern "C" void call_8c0db5d4(Object *, int);
 extern "C" void draw_view_nodes(void *, void *, void *);
-extern "C" void operation_8c22cb98(Object *o)
+extern "C" void TWindowLoadItemTexture_render_8c22cb98(Object *o)
 {
     int t1;
     int t2;

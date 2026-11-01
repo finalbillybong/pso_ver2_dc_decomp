@@ -15,7 +15,7 @@ struct Object {
     int fa4;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c249830(Object *o, int a1)
+Object *TObjBagWarnWin_ctor_8c249830(Object *o, int a1)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27d62c;

@@ -31,7 +31,7 @@ struct S_vv2 {
 extern S_g8c46ed0c *g_8c46ed0c;
 extern void set_fields_8c12992c(void *);
 extern void call_8c05406c(Object *, Frame *);
-float operation_8c12942c(Object *o)
+float TContainerAncient01_v24_8c12942c(Object *o)
 {
     Frame frame;
     int v4;

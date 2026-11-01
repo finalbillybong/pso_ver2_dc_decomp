@@ -12,7 +12,7 @@ struct Object {
 };
 extern int call_8c03b55c(int, int);
 extern void operation_8c07f694(void *, unsigned char);
-void operation_8c24de2c(Object *o)
+void TItemObjMagChanger_v42_8c24de2c(Object *o)
 {
     int t1;
     t1 = call_8c03b55c((int)((int)o->f13c + 0xbcc), 1);

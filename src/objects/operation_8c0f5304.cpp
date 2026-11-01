@@ -119,7 +119,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern "C" void call_8c05bfd8(int, float);
 extern "C" void call_8c05c07c(int, float);
-extern "C" void operation_8c0f5304(Object *o, float f0)
+extern "C" void TObjEneDf2Bringer_v109_8c0f5304(Object *o, float f0)
 {
     int t1;
     t1 = o->v105();

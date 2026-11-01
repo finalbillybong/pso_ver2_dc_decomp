@@ -78,7 +78,7 @@ extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c013e74(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void call_8c11e000(Object *, int);
-extern "C" void operation_8c1268c8(Object *o)
+extern "C" void TObjEneBalClawBody_render_8c1268c8(Object *o)
 {
     int t1;
     int v4;

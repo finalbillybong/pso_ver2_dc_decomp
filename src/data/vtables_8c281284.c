@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_color_rise_8c2558e0(void);
+extern void TItemProArmorParticle_dtor_8c2558e0(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -17,9 +17,9 @@ extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c074814(void);
 extern void operation_8c073900(void);
-extern void operation_8c0e70b0(void);
+extern void TItemProArmor_v15_8c0e70b0(void);
 extern void operation_8c073674(void);
-extern void operation_8c2556a4(void);
+extern void TItemProArmorParticle_v17_8c2556a4(void);
 extern void operation_8c20a430(void);
 extern void fn_8c209ad8(void);
 extern void fn_8c209eb4(void);
@@ -33,7 +33,7 @@ extern void operation_8c20a0d8(void);
 extern void operation_8c022c9c(void);
 extern void operation_8c027388(void);
 extern void operation_8c075b84(void);
-extern void operation_8c0e7050(void);
+extern void TItemProArmor_v31_8c0e7050(void);
 extern void operation_8c075338(void);
 extern void operation_8c07533c(void);
 extern void operation_8c023008(void);
@@ -44,22 +44,22 @@ extern void operation_8c075344(void);
 extern void operation_8c074ac0(void);
 extern void operation_8c02b210(void);
 extern void operation_8c021050(void);
-extern void fn_8c25560c(void);
-extern void operation_8c255688(void);
-extern void operation_8c0e6e18(void);
-extern void operation_8c209a88(void);
+extern void TItemProArmorParticle_v42_8c25560c(void);
+extern void TItemProArmorParticle_v43_8c255688(void);
+extern void TItemProArmor_v44_8c0e6e18(void);
+extern void TItemEquipBase_v45_8c209a88(void);
 extern void operation_8c07fd60(void);
 extern void operation_8c07fd64(void);
-extern void destroy_color_rise_8c255970(void);
-extern void operation_8c255964(void);
-extern void fn_8c0e6e80(void);
-extern void operation_8c0e7140(void);
+extern void TItemProArmorRecalc_dtor_8c255970(void);
+extern void TItemProArmorRecalc_v17_8c255964(void);
+extern void TItemProArmor_v42_8c0e6e80(void);
+extern void TItemEquipBase_v43_8c0e7140(void);
 
 /* 8c281284: type-information and this-adjustment header, then 48 slots */
 VirtualFunction const vt_8c281284[50] = {
     0,
     0,
-    destroy_color_rise_8c2558e0,
+    TItemProArmorParticle_dtor_8c2558e0,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -74,9 +74,9 @@ VirtualFunction const vt_8c281284[50] = {
     fn_8c01d4c4,
     operation_8c074814,
     operation_8c073900,
-    operation_8c0e70b0,
+    TItemProArmor_v15_8c0e70b0,
     operation_8c073674,
-    operation_8c2556a4,
+    TItemProArmorParticle_v17_8c2556a4,
     operation_8c20a430,
     fn_8c209ad8,
     fn_8c209eb4,
@@ -90,7 +90,7 @@ VirtualFunction const vt_8c281284[50] = {
     operation_8c022c9c,
     operation_8c027388,
     operation_8c075b84,
-    operation_8c0e7050,
+    TItemProArmor_v31_8c0e7050,
     operation_8c075338,
     operation_8c07533c,
     operation_8c023008,
@@ -101,10 +101,10 @@ VirtualFunction const vt_8c281284[50] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    fn_8c25560c,
-    operation_8c255688,
-    operation_8c0e6e18,
-    operation_8c209a88,
+    TItemProArmorParticle_v42_8c25560c,
+    TItemProArmorParticle_v43_8c255688,
+    TItemProArmor_v44_8c0e6e18,
+    TItemEquipBase_v45_8c209a88,
     operation_8c07fd60,
     operation_8c07fd64
 };
@@ -113,7 +113,7 @@ VirtualFunction const vt_8c281284[50] = {
 VirtualFunction const vt_8c28134c[50] = {
     0,
     0,
-    destroy_color_rise_8c255970,
+    TItemProArmorRecalc_dtor_8c255970,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -128,9 +128,9 @@ VirtualFunction const vt_8c28134c[50] = {
     fn_8c01d4c4,
     operation_8c074814,
     operation_8c073900,
-    operation_8c0e70b0,
+    TItemProArmor_v15_8c0e70b0,
     operation_8c073674,
-    operation_8c255964,
+    TItemProArmorRecalc_v17_8c255964,
     operation_8c20a430,
     fn_8c209ad8,
     fn_8c209eb4,
@@ -144,7 +144,7 @@ VirtualFunction const vt_8c28134c[50] = {
     operation_8c022c9c,
     operation_8c027388,
     operation_8c075b84,
-    operation_8c0e7050,
+    TItemProArmor_v31_8c0e7050,
     operation_8c075338,
     operation_8c07533c,
     operation_8c023008,
@@ -155,10 +155,10 @@ VirtualFunction const vt_8c28134c[50] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    fn_8c0e6e80,
-    operation_8c0e7140,
-    operation_8c0e6e18,
-    operation_8c209a88,
+    TItemProArmor_v42_8c0e6e80,
+    TItemEquipBase_v43_8c0e7140,
+    TItemProArmor_v44_8c0e6e18,
+    TItemEquipBase_v45_8c209a88,
     operation_8c07fd60,
     operation_8c07fd64
 };

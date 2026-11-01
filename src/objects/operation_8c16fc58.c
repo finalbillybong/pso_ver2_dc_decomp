@@ -16,7 +16,7 @@ struct Frame {
 };
 extern int g_8c4db408;
 extern void operation_8c0368a8(void *);
-void operation_8c16fc58(int a0)
+void quest_op_update_switch_flag_8c16fc58(int a0)
 {
     Frame frame;
     char *v1;

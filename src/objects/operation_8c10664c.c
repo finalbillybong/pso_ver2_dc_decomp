@@ -22,7 +22,7 @@ struct S_g8c4d59d8 {
 extern void operation_8c024720(void *);
 extern int lookup_low_id(int);
 extern void call_8c02aff0(int);
-void operation_8c10664c(Object *o)
+void TShopSequence_v07_8c10664c(Object *o)
 {
     int v21;
     int t1;

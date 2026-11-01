@@ -24,8 +24,8 @@ extern int operation_8c19b054(void);
 extern int bu_check_busy_8c372d98(int);
 extern void memcpy_8c12b77c(void *, void *, int);
 extern void operation_8c1066c0(Object *);
-extern void operation_8c10664c(void *);
-void operation_8c15be6c(Object *o)
+extern void TShopSequence_v07_8c10664c(void *);
+void TCheckRoomSequence_v07_8c15be6c(Object *o)
 {
     int t1;
     int t2;
@@ -50,7 +50,7 @@ void operation_8c15be6c(Object *o)
                 memcpy_8c12b77c((void *)(((char *)g_8c4db9e4 + 0x24c)), (void *)((void *)0x8c4dab80), 0x5a0);
             }
             operation_8c1066c0(o);
-            operation_8c10664c((void *)o);
+            TShopSequence_v07_8c10664c((void *)o);
             o->f04 |= 1;
         }
     }

@@ -20,7 +20,7 @@ extern void operation_8c21da5c(void *);
 extern void operation_8c21da98(void *);
 extern void operation_8c21da18(void *);
 extern void operation_8c21da78(void *);
-void operation_8c21d2b0(Object *o)
+void TQuestListOnline_v09_8c21d2b0(Object *o)
 {
     switch (o->f28) {
     case 0:

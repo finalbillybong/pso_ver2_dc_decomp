@@ -59,7 +59,7 @@ extern "C" void call_8c1000a8(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void call_8c0fad14(Object *);
-extern "C" void operation_8c0f893c(Object *o)
+extern "C" void TObjEneSlimeOne_render_8c0f893c(Object *o)
 {
     Frame frame;
     int t1;

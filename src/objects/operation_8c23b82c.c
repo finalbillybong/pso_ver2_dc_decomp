@@ -12,7 +12,7 @@ struct Object {
 extern int g_8c4689f0;
 extern void njRotateY_8c37df90(int, void *);
 extern void operation_8c074ce4(void);
-void operation_8c23b82c(Object *o)
+void TItemWpnDevilCane_v57_8c23b82c(Object *o)
 {
     switch (g_8c4689f0) {
     case 1:

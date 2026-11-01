@@ -10,6 +10,6 @@ typedef char check_ticks[(unsigned long)&((View *)0)->ticks==34?1:-1];
 typedef char check_callback[(unsigned long)&((View *)0)->callback==36?1:-1];
 typedef char check_prefix[sizeof(View)==40?1:-1];
 extern Actor *lookup_at(unsigned int);
-void run_actor_callback_if_present(View *o) { Actor *actor=lookup_at(o->identifier);
+void TPlyOnCreated_update_8c03ba1c(View *o) { Actor *actor=lookup_at(o->identifier);
  if(actor) { if(o->callback) o->callback(actor);o->flags|=1; }
 }

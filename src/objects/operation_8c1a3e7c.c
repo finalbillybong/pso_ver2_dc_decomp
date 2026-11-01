@@ -10,7 +10,7 @@ extern S_g8c4dc6c4 *g_8c4dc6c4;
 extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
 extern void operation_8c105320(int);
-void operation_8c1a3e7c(void)
+void release_assets_TObjNpcNHW00_8c1a3e7c(void)
 {
     call_8c37d534(g_8c4dc6c4);
     game_free_8c011ec0(g_8c4dc6c4);

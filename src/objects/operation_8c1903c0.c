@@ -38,7 +38,7 @@ extern void call_8c197f48(Arg0_24 *, Frame *);
 extern void call_8c19051c(Object *, Frame *);
 extern void call_8c18c808(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c198da4(void *);
+extern void TWindowSubCustomSelect_ctor_8c198da4(void *);
 extern int operation_8c1995fc(void *);
 extern void call_8c197cdc(Arg0_24 *, int);
 void operation_8c1903c0(Object *o)
@@ -76,7 +76,7 @@ void operation_8c1903c0(Object *o)
     case 3:
         t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x90);
         if (t1 != 0) {
-            operation_8c198da4((void *)t1);
+            TWindowSubCustomSelect_ctor_8c198da4((void *)t1);
         }
         o->f28 = (Arg0_28 *)t1;
         o->f20 = 4;

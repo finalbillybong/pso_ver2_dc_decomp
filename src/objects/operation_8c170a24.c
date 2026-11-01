@@ -14,7 +14,7 @@ extern void call_8c1c9a74(Frame *, int, void *);
 extern int call_8c1c9bb0(Frame *);
 extern int item_capacity_8c022f5c(void *, void *);
 extern void call_8c023bb4(int, Frame *);
-void operation_8c170a24(int a0, int a1, int a2)
+void quest_op_give_s_rank_weapon_8c170a24(int a0, int a1, int a2)
 {
     Frame frame;
     int t1;

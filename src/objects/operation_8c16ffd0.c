@@ -15,7 +15,7 @@ struct S_L8c286618 {
 };
 extern S_L8c286618 g_8c286618;
 extern S_L8c4db494 g_8c4db494;
-void operation_8c16ffd0(unsigned int a0)
+void quest_op_ba_set_replace_char_8c16ffd0(unsigned int a0)
 {
     if ((unsigned int)1 >= a0) {
         (&g_8c4db494)->f07 = *(int *)((char *)&g_8c286618 + (a0 << 2));

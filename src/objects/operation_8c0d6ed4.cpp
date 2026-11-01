@@ -145,10 +145,10 @@ extern "C" void operation_8c059ef8(void *, int);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" void call_8c01c5f0(Object *);
 extern "C" int call_8c05bc18(void *);
-extern "C" void create_effect_b03c8_8c0b9444(void *, void *, void *);
+extern "C" void TTecResta_create_8c0b9444(void *, void *, void *);
 extern "C" int operation_8c05bbf8(void);
-extern "C" void create_effect_b03c8_8c0ba928(void *, void *, void *);
-extern "C" void create_effect_b03c8(void *, void *, void *);
+extern "C" void TTecSifta_create_8c0ba928(void *, void *, void *);
+extern "C" void TTecDeband_create_8c0b03c8(void *, void *, void *);
 extern "C" void operation_8c0d6ed4(Object *o, int a1)
 {
     S_vv1 *v1;
@@ -184,7 +184,7 @@ extern "C" void operation_8c0d6ed4(Object *o, int a1)
                 goto L_8c0d7000;
             }
             t1 = call_8c05bc18((void *)((*(S_g8c46fda4 **)((char *)0x8c46fda4 + (((ObjectData *)o)->f3dc << 2)))->f18));
-            create_effect_b03c8_8c0b9444((void *)o, (void *)(((char *)o + 0x3c)), (void *)t1);
+            TTecResta_create_8c0b9444((void *)o, (void *)(((char *)o + 0x3c)), (void *)t1);
             t2 = operation_8c05bbf8();
             if (t2 != 0) {
                 v1->f00 = 2;
@@ -200,11 +200,11 @@ extern "C" void operation_8c0d6ed4(Object *o, int a1)
             v2->f00 += 1;
             if (v2->f00 == 5) {
                 t3 = call_8c05bc18((void *)((*(S_g8c46fda4 **)((char *)0x8c46fda4 + (((ObjectData *)o)->f3dc << 2)))->f18));
-                create_effect_b03c8_8c0ba928((void *)o, (void *)(((char *)o + 0x3c)), (void *)t3);
+                TTecSifta_create_8c0ba928((void *)o, (void *)(((char *)o + 0x3c)), (void *)t3);
             } else {
                 if (v2->f00 == 0xa) {
                     t4 = call_8c05bc18((void *)((*(S_g8c46fda4 **)((char *)0x8c46fda4 + (((ObjectData *)o)->f3dc << 2)))->f18));
-                    create_effect_b03c8((void *)o, (void *)(((char *)o + 0x3c)), (void *)t4);
+                    TTecDeband_create_8c0b03c8((void *)o, (void *)(((char *)o + 0x3c)), (void *)t4);
                     v1->f00 = 1;
                     v2->f00 = 0;
                 }

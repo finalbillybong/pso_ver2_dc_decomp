@@ -20,7 +20,7 @@ extern void request_resource_release(void *);
 extern void release_scene_8c16c1e4(void);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c173bd8(Object *o, int a1)
+Object *TQuestThreadBoard_dtor_8c173bd8(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c27023c;

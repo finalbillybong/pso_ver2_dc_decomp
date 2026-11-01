@@ -12,7 +12,7 @@ struct Object {
 };
 extern void operation_8c059ea4(void *, int);
 extern void reset_segments_8c05a124(void *);
-void operation_8c0c9134(Object *o)
+void TObjEneRe4Sorcerer_v70_8c0c9134(Object *o)
 {
     if (o->f30a != 8) {
         if (((o->f3e4 & 8)) == 0) {

@@ -12,7 +12,7 @@ struct Object {
 extern char g_8c327fc4[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c1bea10(Object *o)
+void TObjCityMapWarp_v09_8c1bea10(Object *o)
 {
     int v1;
     int v2;

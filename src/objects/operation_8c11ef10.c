@@ -20,7 +20,7 @@ struct S_g8c4d84a4 {
 extern int call_8c0eea7c(float);
 extern void operation_8c05428c(void *, int, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c11ef10(Object *o)
+void TODoorAncient05_v19_8c11ef10(Object *o)
 {
     int t1;
     if ((o->f108 & 1) == 1) {

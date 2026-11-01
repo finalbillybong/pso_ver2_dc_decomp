@@ -24,7 +24,7 @@ extern S_g8c4d59d8 *g_8c4d59d8;
 extern S_g8c5049ec *g_8c5049ec;
 extern S_L8c41cba0 g_8c41cba0;
 extern void request_resource_release(void *);
-void operation_8c2083f8(void)
+void THunterGuildSeqOnlineTask_update_8c2083f8(void)
 {
     S_g8c5049ec *v1;
     v1 = g_8c5049ec;

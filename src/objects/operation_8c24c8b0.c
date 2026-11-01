@@ -12,7 +12,7 @@ extern int operation_8c03d338(void);
 extern void operation_8c24cd78(Object *);
 extern void operation_8c24c90c(void *);
 extern void operation_8c24c94c(void *);
-void operation_8c24c8b0(Object *o)
+void TOVS2Wall01_update_8c24c8b0(Object *o)
 {
     int t1;
     t1 = operation_8c03d338();

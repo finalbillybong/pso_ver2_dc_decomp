@@ -11,7 +11,7 @@ struct Object {
     int f3c4;
 };
 extern void call_8c059ea4(Object *, int);
-void operation_8c058198(Object *o)
+void TObjEneBm3FlyNest_v71_8c058198(Object *o)
 {
     if (o->f30a != 9 && o->f30a != 8 && o->f30a != 4) {
         if (o->f3c4 == 0) {

@@ -25,7 +25,7 @@ struct Object {
 extern void initialize_base_8c0db1d0(void *, int);
 extern void set_fields_8c215ed4(void *);
 extern void call_8c215de0(Object *);
-Object *operation_8c215c38(Object *o, int a1, int a2)
+Object *TWindowDD_WS_Word_ctor_8c215c38(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;

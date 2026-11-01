@@ -9,7 +9,7 @@ struct S_g8c46fe20 {
     short f20;
 };
 extern S_g8c46fe20 *g_8c46fe20;
-void operation_8c1a7dbc(void)
+void TQuestScriptChecker_v07_8c1a7dbc(void)
 {
     if (g_8c46fe20 != 0) {
         g_8c46fe20->f20 &= -0x11;

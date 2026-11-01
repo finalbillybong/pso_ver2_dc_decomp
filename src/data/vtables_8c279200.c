@@ -2,23 +2,23 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c237998(void);
-extern void operation_8c237a1c(void);
-extern void operation_8c237bcc(void);
+extern void TChallenge_dtor_8c237998(void);
+extern void TChallenge_update_8c237a1c(void);
+extern void TChallenge_render_8c237bcc(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_239aa4(void);
+extern void TItemShootWindCane_dtor_8c239aa4(void);
 extern void operation_1abbcc(void);
-extern void operation_239a30(void);
-extern void operation_239a20(void);
+extern void TItemShootWindCane_render_8c239a30(void);
+extern void TItemShootWindCane_v05_8c239a20(void);
 
 /* 8c279200: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c279200[7] = {
     0,
     0,
-    operation_8c237998,
-    operation_8c237a1c,
-    operation_8c237bcc,
+    TChallenge_dtor_8c237998,
+    TChallenge_update_8c237a1c,
+    TChallenge_render_8c237bcc,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -27,10 +27,10 @@ VirtualFunction const vt_8c279200[7] = {
 VirtualFunction const vt_8c27921c[8] = {
     0,
     0,
-    operation_239aa4,
+    TItemShootWindCane_dtor_8c239aa4,
     operation_1abbcc,
-    operation_239a30,
+    TItemShootWindCane_render_8c239a30,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_239a20
+    TItemShootWindCane_v05_8c239a20
 };

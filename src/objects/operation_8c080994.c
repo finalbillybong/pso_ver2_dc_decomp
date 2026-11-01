@@ -15,14 +15,14 @@ struct Object {
     Arg0_f0 *ff0;
 };
 extern char g_8c2fec68[];
-extern void call_8c1ab2c8(Object *);
+extern void TObjMesBase_v09_8c1ab2c8(Object *);
 extern int call_8c18e8a0(void *, int);
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c080994(Object *o)
+void TMotorcycle_v09_8c080994(Object *o)
 {
     int t1;
-    call_8c1ab2c8(o);
+    TObjMesBase_v09_8c1ab2c8(o);
     o->ff0 = (Arg0_f0 *)(int)o->f6c;
     t1 = call_8c18e8a0((void *)(o->ff0), 2);
     o->ff0 = (Arg0_f0 *)t1;

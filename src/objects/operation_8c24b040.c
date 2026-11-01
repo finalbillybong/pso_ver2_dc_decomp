@@ -10,7 +10,7 @@ struct Object {
 };
 extern void call_8c24b070(void);
 extern void call_8c24b130(void);
-void operation_8c24b040(Object *o)
+void TObjDoaEx01_render_8c24b040(Object *o)
 {
     if (((o->f108 & 1)) != 0) {
         call_8c24b070();

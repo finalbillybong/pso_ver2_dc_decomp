@@ -11,7 +11,7 @@ struct Object {
     int f380;
 };
 extern void call_8c027090(void);
-void operation_8c0848bc(Object *o)
+void TObjContainerEnemy_v87_8c0848bc(Object *o)
 {
     if (o->f30a != 0) {
         if (o->f30a == 1) {

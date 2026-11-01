@@ -18,8 +18,8 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c21e5a8(int);
-Object *operation_8c21e40c(Object *o, int a1)
+extern void TWindowSubQuestBoardSelect_ctor_8c21e5a8(int);
+Object *TWindowSubQuestBoard_ctor_8c21e40c(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
@@ -30,7 +30,7 @@ Object *operation_8c21e40c(Object *o, int a1)
     o->size = 0x2c;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
     if (t1 != 0) {
-        call_8c21e5a8(t1);
+        TWindowSubQuestBoardSelect_ctor_8c21e5a8(t1);
     }
     o->f24 = (int)(t1);
     o->f28 = 0;

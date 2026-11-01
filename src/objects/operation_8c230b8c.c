@@ -17,7 +17,7 @@ extern void request_resource_release(void *);
 extern void operation_8c0a21a4(void);
 extern void destroy_shared_object(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c230b8c(Object *o, int a1)
+Object *TObjDFEnding_dtor_8c230b8c(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c278f58;

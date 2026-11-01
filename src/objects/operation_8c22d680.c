@@ -33,7 +33,7 @@ extern void request_resource_release(void *);
 extern void operation_8c22e950(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c22d680(Object *o, int a1)
+Object *TQuestVmDownLoadServer_dtor_8c22d680(Object *o, int a1)
 {
     S_vv7 *v7;
     if (o != 0) {

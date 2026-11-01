@@ -11,13 +11,13 @@ extern void operation_8c1ac5a4(void);
 extern void operation_8c1ac698(void);
 extern void operation_1ac3e0(void);
 extern void operation_1ac3cc(void);
-extern void operation_1abfe8(void);
+extern void TItemShootParticle_dtor_8c1abfe8(void);
 extern void TObject_render_default_8c0111c8(void);
-extern void operation_1ac0c4(void);
-extern void operation_1ac36c(void);
-extern void operation_1abeb8(void);
-extern void operation_1abc6c(void);
-extern void operation_1abb78(void);
+extern void TItemShootParticle_v05_8c1ac0c4(void);
+extern void TItemShootModel_dtor_8c1ac36c(void);
+extern void TItemShootModel_render_8c1abeb8(void);
+extern void TItemShoot_v05_8c1abc6c(void);
+extern void TItemShoot_dtor_8c1abb78(void);
 
 /* 8c274854: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const vt_8c274854[8] = {
@@ -47,34 +47,34 @@ VirtualFunction const vt_8c274874[8] = {
 VirtualFunction const vt_8c274894[8] = {
     0,
     0,
-    operation_1abfe8,
+    TItemShootParticle_dtor_8c1abfe8,
     operation_1abbcc,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_1ac0c4
+    TItemShootParticle_v05_8c1ac0c4
 };
 
 /* 8c2748b4: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const vt_8c2748b4[8] = {
     0,
     0,
-    operation_1ac36c,
+    TItemShootModel_dtor_8c1ac36c,
     operation_1abbcc,
-    operation_1abeb8,
+    TItemShootModel_render_8c1abeb8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_1abc6c
+    TItemShoot_v05_8c1abc6c
 };
 
 /* 8c2748d4: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const vt_8c2748d4[8] = {
     0,
     0,
-    operation_1abb78,
+    TItemShoot_dtor_8c1abb78,
     operation_1abbcc,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_1abc6c
+    TItemShoot_v05_8c1abc6c
 };

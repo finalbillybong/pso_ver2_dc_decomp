@@ -11,7 +11,7 @@ struct Object {
 };
 extern void call_8c075730(Object *, void *, int);
 extern void call_8c076fc8(Object *, int);
-void operation_8c1755c4(Object *o)
+void TItemWpnClaw_v52_8c1755c4(Object *o)
 {
     call_8c075730(o, (void *)(o->f13c), 0x31);
     call_8c076fc8(o, 1);

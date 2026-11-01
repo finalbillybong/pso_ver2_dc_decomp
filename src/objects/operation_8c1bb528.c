@@ -19,7 +19,7 @@ extern void operation_8c052124(void *);
 extern void mark_effect_for_release(void *);
 extern void TObjEnemy_dtor_8c0120f4(void *, int);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1bb528(Object *o, int a1)
+Object *TBoss4Zako_dtor_8c1bb528(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c275370;

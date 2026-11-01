@@ -49,7 +49,7 @@ extern void call_8c0e2278(S_vv21 *, int, int);
 extern int call_8c04b8dc(void *);
 extern void call_8c21eb78(Object *);
 extern void operation_8c21eb14(void *);
-Object *operation_8c21e5a8(Object *o)
+Object *TWindowSubQuestBoardSelect_ctor_8c21e5a8(Object *o)
 {
     Object **home = &o;
     char *v25;

@@ -49,7 +49,7 @@ extern void initialize_base_8c0db1d0(void *, int);
 extern void call_8c0e2278(S_vv1 *, int, int);
 extern void call_8c0e2328(S_vv1 *, float);
 extern void initialize_fields_8c0e24e8(void *);
-Object *operation_8c21597c(Object *o, Arg1 *a1, Arg2 *a2, int a3, int a4)
+Object *TWindowDD_WS_String_ctor_8c21597c(Object *o, Arg1 *a1, Arg2 *a2, int a3, int a4)
 {
     Object **home = &o;
     S_vv1 *v1;

@@ -8,7 +8,7 @@ typedef struct S_g8c4daa84 S_g8c4daa84;
 extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
 extern void call_8c03dc40(void *, int);
-void operation_8c157810(void)
+void release_assets_o_warp_ancient_8c157810(void)
 {
     if (*(int *)0x8c4daa84 != 0) {
         call_8c37d534((void *)(*(S_g8c4daa84 **)0x8c4daa84));

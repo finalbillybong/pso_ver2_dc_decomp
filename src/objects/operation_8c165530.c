@@ -54,7 +54,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void njRotateX_8c37dd28(int, void *);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c165530(Object *o)
+void TObjBoss2CeilJunk_render_8c165530(Object *o)
 {
     Frame frame;
     char *pm1;

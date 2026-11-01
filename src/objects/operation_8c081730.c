@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern int game_malloc_8c011ecc(int);
 extern void call_8c03d360(int, int, void *, void *, int, int, int);
-void operation_8c081730(void)
+void load_assets_fe_obj001_komo_8c081730(void)
 {
     int t1;
     t1 = game_malloc_8c011ecc(0x440);

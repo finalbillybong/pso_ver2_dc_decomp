@@ -39,7 +39,7 @@ public:
 typedef struct Arg0_s3c0Data {
 
 } Arg0_s3c0Data;
-extern "C" void operation_8c0bd5e4(Object *o)
+extern "C" void TObjEneSaver_v66_8c0bd5e4(Object *o)
 {
     int t1;
     switch (o->f30a) {

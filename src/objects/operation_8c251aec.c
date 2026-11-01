@@ -24,13 +24,13 @@ struct Arg1 {
     char unknown1d8[0x5c];
     int f234;
 };
-extern void operation_1abe00(void *, void *, void *, void *);
-Object *operation_8c251aec(Object *o, Arg1 *a1, int a2, int a3)
+extern void TItemShootModel_ctor_8c1abe00(void *, void *, void *, void *);
+Object *TItemShootRocketPunchON_ctor_8c251aec(Object *o, Arg1 *a1, int a2, int a3)
 {
     int v1;
     int v4;
     int v2;
-    operation_1abe00((void *)o, (void *)a1, (void *)a2, (void *)a3);
+    TItemShootModel_ctor_8c1abe00((void *)o, (void *)a1, (void *)a2, (void *)a3);
     o->dispatch = (void *)0x8c27f478;
     o->tag = (int)(*(int *)0x8c33f974);
     o->size = 0x64;

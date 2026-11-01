@@ -48,7 +48,7 @@ extern void operation_8c0246d0(void *);
 extern int operation_8c220ce0(void);
 extern void operation_8c024720(void *);
 extern void operation_8c220b5c(void);
-void operation_8c10aea8(Object *o)
+void TMedicalCenterMes_update_8c10aea8(Object *o)
 {
     Frame frame;
     int t1;

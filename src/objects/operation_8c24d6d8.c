@@ -12,7 +12,7 @@ struct Object {
     short size;
 };
 extern void TItemObject_ctor_8c0e71c8(void *, int, void *);
-Object *operation_8c24d6d8(Object *o, int a1, int a2)
+Object *TItemObjStatusUp_ctor_8c24d6d8(Object *o, int a1, int a2)
 {
     TItemObject_ctor_8c0e71c8((void *)o, a1, (void *)a2);
     o->dispatch = (void *)0x8c27e024;

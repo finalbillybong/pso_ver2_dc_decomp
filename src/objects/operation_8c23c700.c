@@ -31,7 +31,7 @@ extern void call_8c076fc8(Object *, int);
 extern void call_8c075894(Object *, Arg0_13c *, int, void *);
 extern void call_8c077524(void *, void *, Frame *);
 extern void call_8c0773e4(void *);
-void operation_8c23c700(Object *o)
+void TItemWpnDragonClaw_v52_8c23c700(Object *o)
 {
     Vector3 v[2];
     int v1;

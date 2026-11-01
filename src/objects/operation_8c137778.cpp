@@ -50,12 +50,12 @@ struct Arg0_108 {
 extern "C" int lookup_low_id(int);
 extern "C" int find_record_8c0744dc(int);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void operation_8c137e08(void *, void *, int, void *);
+extern "C" void TSlicerHistory_ctor_8c137e08(void *, void *, int, void *);
 extern "C" void call_8c137a38(Object *);
 extern "C" void advance_scaled_position(void *);
 extern "C" void operation_8c246154(void *, void *);
 extern "C" void operation_8c137c3c(void *);
-extern "C" void operation_8c137778(Object *o)
+extern "C" void TTecSlicer_update_8c137778(Object *o)
 {
     int v22;
     int v63;
@@ -80,7 +80,7 @@ L_8c1377ca:;
     ((ObjectData *)o)->f04 &= -0x11;
     t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x5c);
     if (t3 != 0) {
-        operation_8c137e08((void *)t3, (void *)o, (int)(((ObjectData *)o)->f28), (void *)(((char *)o + 0x124)));
+        TSlicerHistory_ctor_8c137e08((void *)t3, (void *)o, (int)(((ObjectData *)o)->f28), (void *)(((char *)o + 0x124)));
     }
     v22 = (int)(((((ObjectData *)o)->fc0 & 1)) != 0);
     if (v22 == 0) {

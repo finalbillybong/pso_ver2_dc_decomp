@@ -13,7 +13,7 @@ typedef struct S_g8c46feb0 S_g8c46feb0;
 extern void operator_delete_8c18de08(void *);
 extern void destroy_vector_grid(void *, int);
 extern void call_8c03dc40(void *, int);
-void operation_8c0e64fc(void)
+void release_assets_ene_df3_dimedian_8c0e64fc(void)
 {
     if (*(int *)0x8c46fe80 != 0) {
         operator_delete_8c18de08((void *)(*(S_g8c46fe80 **)0x8c46fe80));

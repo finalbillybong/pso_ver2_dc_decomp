@@ -25,7 +25,7 @@ struct Arg2 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c2592e0(Object *);
-Object *operation_8c259184(Object *o, int a1, Arg2 *a2)
+Object *TObjResultWin_ctor_8c259184(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     (void)home;

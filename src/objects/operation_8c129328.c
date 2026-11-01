@@ -27,7 +27,7 @@ extern int operation_8c03d338(void);
 extern void call_8c3a944a(void *);
 extern void call_8c01cd20(Object *);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c129328(Object *o)
+void TContainerAncient01_render_8c129328(Object *o)
 {
     int t1;
     if (((o->f34 & 0x8000000)) == 0) {

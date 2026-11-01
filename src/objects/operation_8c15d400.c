@@ -13,7 +13,7 @@ extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
 extern void operator_delete_8c18de08(S_g8c4db164 *);
 extern void call_8c03dc40(void *, int);
-void operation_8c15d400(void)
+void release_assets_fs_obj_sensor_8c15d400(void)
 {
     call_8c37d534((void *)((*(S_g8c4db164 **)0x8c4db164)->f00));
     game_free_8c011ec0((void *)((*(S_g8c4db164 **)0x8c4db164)->f00));

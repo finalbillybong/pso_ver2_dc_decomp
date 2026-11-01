@@ -29,7 +29,7 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void process_entries_8c2534e0(int);
-Object *operation_8c1d24bc(Object *o, int a1)
+Object *TWindowSubComCard_ctor_8c1d24bc(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;

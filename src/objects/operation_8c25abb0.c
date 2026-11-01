@@ -32,7 +32,7 @@ extern void call_8c119c78(void *);
 extern void operation_8c25ad8c(void *);
 extern void operation_8c25adc8(void *);
 extern void select_mode0_8c1cc49c(void);
-void operation_8c25abb0(Object *o)
+void TAdPSOPlay_update_8c25abb0(Object *o)
 {
     char *v82;
     S_vv81 *v81;

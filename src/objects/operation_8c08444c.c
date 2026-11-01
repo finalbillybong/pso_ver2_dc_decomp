@@ -22,7 +22,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void njScale_8c37e2e4(int, float, float, float);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c08444c(Object *o)
+void TObjContainerItem_v88_8c08444c(Object *o)
 {
     if (*(int *)0x8c469c80 != 0) {
         if (o->f30a != 0) {

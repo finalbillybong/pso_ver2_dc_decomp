@@ -19,7 +19,7 @@ struct Object {
     int f78;
 };
 extern void initialize_base_8c0db1d0(void *, int);
-Object *operation_8c21f778(Object *o, int a1, int a2)
+Object *TWindowSubSymbolChatHelp_ctor_8c21f778(Object *o, int a1, int a2)
 {
     initialize_base_8c0db1d0((void *)o, (int)((void *)0x8c3369c4));
     o->dispatch = (void *)0x8c278820;

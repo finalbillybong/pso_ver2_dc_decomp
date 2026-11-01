@@ -10,7 +10,7 @@ extern S_g8c4e2ba4 *g_8c4e2ba4;
 extern void call_8c0dc884(void);
 extern void operation_8c1bee20(int);
 extern void update_hierarchy(void *);
-void operation_8c1bed64(int a0)
+void TWindowCtrlMain_update_8c1bed64(int a0)
 {
     call_8c0dc884();
     operation_8c1bee20(a0);

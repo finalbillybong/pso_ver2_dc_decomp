@@ -45,7 +45,7 @@ extern "C" void operation_8c01c2b0(void);
 extern "C" void reset_controller_state_8c01d9dc(void);
 extern "C" void clear_global_8c01c1c4(void);
 extern "C" void forward_reviewed_8c104e8c(void);
-extern "C" void operation_8c1a18b8(void);
+extern "C" void TMapCsnCtrl_create_8c1a18b8(void);
 extern "C" void create_descriptor_managers(void);
 extern "C" void operation_8c189c94(void);
 extern "C" void call_8c02a798(void);
@@ -73,7 +73,7 @@ extern "C" void operation_8c0e7750(void)
     reset_controller_state_8c01d9dc();
     clear_global_8c01c1c4();
     forward_reviewed_8c104e8c();
-    operation_8c1a18b8();
+    TMapCsnCtrl_create_8c1a18b8();
     create_descriptor_managers();
     operation_8c189c94();
     call_8c02a798();

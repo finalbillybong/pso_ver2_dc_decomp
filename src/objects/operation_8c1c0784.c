@@ -12,7 +12,7 @@ struct Object {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void destroy_shared_object(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1c0784(Object *o, int a1)
+Object *TOExplosiveMachine01_dtor_8c1c0784(Object *o, int a1)
 {
     int v1;
     if (o != 0) {

@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c25f6f4(void)
+void TAdHunLicence_render_8c25f6f4(void)
 {
 }

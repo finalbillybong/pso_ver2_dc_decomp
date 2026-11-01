@@ -54,16 +54,16 @@ struct Arg0_20 {
     char unknown22[0x12];
     int f34;
 };
-extern void call_8c0a0058(Object *);
+extern void TEffect_ctor_8c0a0058(Object *);
 extern int heap_alloc_8c122700(void *, int);
 extern void call_8c051eb8(int, Object *);
 extern void copy_actor_records(void *, void *, int);
-Object *operation_8c0b6a74(Object *o, int a1, Arg2 *a2, int a3)
+Object *TTecPlayerInfluence_ctor_8c0b6a74(Object *o, int a1, Arg2 *a2, int a3)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    call_8c0a0058(o);
+    TEffect_ctor_8c0a0058(o);
     o->dispatch = (void *)0x8c266114;
     o->tag = *(int *)0x8c305290;
     o->size = 0xfc;

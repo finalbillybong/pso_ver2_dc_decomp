@@ -31,7 +31,7 @@ extern void operation_8c172c50(void *, float, float);
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(int);
 extern void call_8c175918(void *, Object *, int, void *, Frame *);
-void operation_8c17571c(Object *o)
+void TItemWpnSpreadGunB_v53_8c17571c(Object *o)
 {
     Frame frame;
     char *v24;

@@ -31,8 +31,8 @@ extern S_g8c467180 *g_8c467180;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void *heap_alloc_8c122700(void *, int);
 extern void call_8c22f1bc(void *, Object *);
-extern void call_8c199688(void *, Object *, int);
-extern void call_8c198294(void *, Object *);
+extern void TAdTitle_ctor_8c199688(void *, Object *, int);
+extern void TAdBack_ctor_8c198294(void *, Object *);
 extern void call_8c22e8e4(Object *, void *, int);
 void create_object_8c22dc70(Object *o)
 {
@@ -51,11 +51,11 @@ void create_object_8c22dc70(Object *o)
         o->f90 = t1;
         t2 = heap_alloc_8c122700(g_8c4d97e0, 0xac);
         if (t2 != 0) {
-            call_8c199688(t2, o, 2);
+            TAdTitle_ctor_8c199688(t2, o, 2);
         }
         t3 = heap_alloc_8c122700(g_8c4d97e0, 0x40);
         if (t3 != 0) {
-            call_8c198294(t3, o);
+            TAdBack_ctor_8c198294(t3, o);
         }
     }
     o->f94 = 4;

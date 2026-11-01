@@ -9,7 +9,7 @@ struct Object {
     int f238;
 };
 extern void operation_8c172c30(void *, int, int);
-void operation_8c078424(Object *o)
+void TItemWpnSpreadGun_v50_8c078424(Object *o)
 {
     if (o->f238 > 0) {
         operation_8c172c30((void *)(&o->f238), -0x2000, 0);

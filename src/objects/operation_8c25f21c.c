@@ -10,7 +10,7 @@ struct Object {
 };
 extern void operation_8c25f24c(void *);
 extern void call_8c25f290(void);
-void operation_8c25f21c(Object *o)
+void TObjSoloPlayWin_update_8c25f21c(Object *o)
 {
     if (o->f20 != 0) {
         if (o->f20 != 1) {

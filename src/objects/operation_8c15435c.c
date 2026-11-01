@@ -16,7 +16,7 @@ struct Object {
 };
 extern int lookup_low_id(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c159a28(int, Object *, int, short, void *);
+extern void TObjVoloptCage_ctor_8c159a28(int, Object *, int, short, void *);
 void operation_8c15435c(Object *o, int a1)
 {
     int t1;
@@ -27,7 +27,7 @@ void operation_8c15435c(Object *o, int a1)
     if (o->f334 != 0) {
         t2 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x3b0);
         if (t2 != 0) {
-            call_8c159a28(t2, o, a1, *(short *)0x8c313110, *(S_g8c313114 **)0x8c313114);
+            TObjVoloptCage_ctor_8c159a28(t2, o, a1, *(short *)0x8c313110, *(S_g8c313114 **)0x8c313114);
         }
         o->f3a4 |= 0x200000;
     }

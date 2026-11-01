@@ -10,7 +10,7 @@
 #define restore_at ((void (*)(void))0x8c38af12)
 #define end_at ((void (*)(void))0x8c0c532c)
 
-void draw_controller_child_b(ControllerChild *object) {
+void TDuelEffectString_render_8c24edd8(ControllerChild *object) {
     float scale, alpha;
     unsigned int color;
     parameters_at(object, &scale, &alpha, object->ticks);

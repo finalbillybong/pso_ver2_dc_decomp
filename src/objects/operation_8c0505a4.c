@@ -34,7 +34,7 @@ struct Frame {
     Block_frame_0 f00;
 };
 extern int operation_8c051ff4(void *, void *, void *);
-void operation_8c0505a4(Object *o)
+void TObjEneLappy_v66_8c0505a4(Object *o)
 {
     Frame frame;
     int t1;

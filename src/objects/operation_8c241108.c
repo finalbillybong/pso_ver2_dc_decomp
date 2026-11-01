@@ -16,7 +16,7 @@ struct Frame {
 extern int call_8c1aaabc(int);
 extern void call_8c075894(Object *, void *, int, Frame *);
 extern void create_effect_777c(void *, int);
-void operation_8c241108(Object *o)
+void TItemWpnBag_v49_8c241108(Object *o)
 {
     Frame frame;
     int t1;

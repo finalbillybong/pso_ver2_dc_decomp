@@ -32,7 +32,7 @@ extern void njUnitVector_8c37b630(Frame *);
 extern void call_8c3bdf60(void *, void *, float);
 extern void call_8c0a7608(void *, void *);
 extern float call_8c38d7d8(void *, void *);
-void operation_8c21b3f4(Object *o)
+void TObjDFRecBall_update_8c21b3f4(Object *o)
 {
     Frame frame;
     float t1;

@@ -23,7 +23,7 @@ extern char g_8c33a2dc[];
 extern int get_game_mode_8c01c25c(void);
 extern void operation_8c25ff40(void);
 extern int operation_8c238554(int);
-extern int operation_8c2378c4(void);
+extern int TChallenge_create_8c2378c4(void);
 extern void operation_8c246574(void);
 extern void operation_8c2386c4(int);
 void operation_8c237810(void)
@@ -45,7 +45,7 @@ void operation_8c237810(void)
             if (t2 != 0 && g_8c4db9e4 != 0) {
                 *(Block160 *)&g_8c4db9e4->f11c4 = *(Block160 *)&(&frame)->f00;
             }
-            t3 = operation_8c2378c4();
+            t3 = TChallenge_create_8c2378c4();
             g_8c510ba0 = (int)(t3);
             g_8c510ba4 = 1;
             operation_8c246574();

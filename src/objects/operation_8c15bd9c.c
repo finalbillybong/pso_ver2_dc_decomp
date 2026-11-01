@@ -28,8 +28,8 @@ struct Object {
 extern void operation_8c220b34(int, int);
 extern void call_8c220b80(int, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c1bce5c(int);
-extern void call_8c22f004(int);
+extern void TWindowMeseta_ctor_8c1bce5c(int);
+extern void TWindowDeposit_ctor_8c22f004(int);
 extern void operation_8c22f178(void *, int);
 extern int spawn_node_8c0a49c8(int);
 void operation_8c15bd9c(Object *o)
@@ -46,12 +46,12 @@ void operation_8c15bd9c(Object *o)
     call_8c220b80(0x30, 1);
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
     if (t1 != 0) {
-        call_8c1bce5c(t1);
+        TWindowMeseta_ctor_8c1bce5c(t1);
     }
     o->f34 = (int)(t1);
     t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x6c);
     if (t2 != 0) {
-        call_8c22f004(t2);
+        TWindowDeposit_ctor_8c22f004(t2);
     }
     o->f3c = (Arg0_3c *)t2;
     operation_8c22f178((void *)(o->f3c), (int)(*(S_g8c4db124 **)0x8c4db124));

@@ -25,7 +25,7 @@ extern int operation_8c1571f4(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
 extern void operation_8c015ab4(void);
-void operation_8c198840(Object *o)
+void TWindowSubGameEnd_update_8c198840(Object *o)
 {
     int t1;
     int t2;

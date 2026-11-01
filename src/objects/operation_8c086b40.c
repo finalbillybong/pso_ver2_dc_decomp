@@ -12,7 +12,7 @@ extern S_c8c104e9c *g_8c469ce0;
 extern char g_8c2ffb78[];
 extern S_c8c104e9c *load_resource_8c104e9c(void *);
 extern void copy_resource_fields(void *, void *);
-void operation_8c086b40(void)
+void load_assets_TObjBattery_8c086b40(void)
 {
     S_c8c104e9c *t1;
     t1 = load_resource_8c104e9c((void *)((g_8c2ffb78 + 0xc)));

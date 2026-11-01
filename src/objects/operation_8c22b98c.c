@@ -22,7 +22,7 @@ extern void operation_8c22bcb0(void *);
 extern void call_8c0db30c(Object *);
 extern void interpolate_view_parameters(void *);
 extern void update_view_nodes(void *, void *);
-void operation_8c22b98c(Object *o)
+void TWindowSoundBalance_update_8c22b98c(Object *o)
 {
     int t1;
     int t2;

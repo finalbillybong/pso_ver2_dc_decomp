@@ -27,7 +27,7 @@ extern void call_8c156d48(Arg0_20 *, int, int, int, int);
 extern void operation_8c1570b4(void *, float, float);
 extern void operation_8c157138(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c1a62a8(void *, void *, void *);
+extern void TWindowChatSymbol_ctor_8c1a62a8(void *, void *, void *);
 Object *operation_8c1bfe90(Object *o, int a1)
 {
     Object **home = &o;
@@ -61,7 +61,7 @@ Object *operation_8c1bfe90(Object *o, int a1)
     operation_8c157138((void *)(o->f20));
     t5 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
     if (t5 != 0) {
-        operation_8c1a62a8((void *)t5, (void *)((void *)0x8c288ff0), (void *)((void *)0x8c288ff8));
+        TWindowChatSymbol_ctor_8c1a62a8((void *)t5, (void *)((void *)0x8c288ff0), (void *)((void *)0x8c288ff8));
     }
     o->f24 = (int)(t5);
     return o;

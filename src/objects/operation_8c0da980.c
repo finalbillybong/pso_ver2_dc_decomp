@@ -19,7 +19,7 @@ struct Object {
     float f50;
 };
 extern void play_se_8c05fbf8(int, int, int, int);
-void operation_8c0da980(Object *o)
+void TMainCursor_update_8c0da980(Object *o)
 {
     int v1;
     int v2;

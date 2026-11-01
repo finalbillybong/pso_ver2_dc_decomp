@@ -2,14 +2,14 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c1b7270(void);
-extern void fn_8c1b72b4(void);
-extern void operation_8c1b73bc(void);
+extern void TObjBs4CutAtk_dtor_8c1b7270(void);
+extern void TObjBs4CutAtk_update_8c1b72b4(void);
+extern void TObjBs4CutAtk_render_8c1b73bc(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c1bc99c(void);
-extern void operation_8c1bca74(void);
-extern void operation_8c1bb97c(void);
+extern void TBoss4Bishi_dtor_8c1bc99c(void);
+extern void TBoss4Bishi_update_8c1bca74(void);
+extern void TBoss4Zako_render_8c1bb97c(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void fn_8c043724(void);
@@ -76,7 +76,7 @@ extern void operation_8c01340c(void);
 extern void operation_8c013410(void);
 extern void operation_8c013414(void);
 extern void operation_8c013424(void);
-extern void operation_8c1bca1c(void);
+extern void TBoss4Bishi_v71_8c1bca1c(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
 extern void operation_8c0134b0(void);
@@ -94,20 +94,20 @@ extern void operation_8c0134ec(void);
 extern void operation_8c012b88(void);
 extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
-extern void operation_8c1bc008(void);
-extern void fn_8c1bc18c(void);
-extern void operation_8c1bc088(void);
-extern void operation_8c1bb528(void);
-extern void operation_8c1bb5bc(void);
-extern void operation_8c1bb59c(void);
+extern void TBoss4Uro_dtor_8c1bc008(void);
+extern void TBoss4Uro_update_8c1bc18c(void);
+extern void TBoss4Uro_v71_8c1bc088(void);
+extern void TBoss4Zako_dtor_8c1bb528(void);
+extern void TBoss4Zako_update_8c1bb5bc(void);
+extern void TBoss4Zako_v71_8c1bb59c(void);
 
 /* 8c27507c: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c27507c[7] = {
     0,
     0,
-    destroy_object_8c1b7270,
-    fn_8c1b72b4,
-    operation_8c1b73bc,
+    TObjBs4CutAtk_dtor_8c1b7270,
+    TObjBs4CutAtk_update_8c1b72b4,
+    TObjBs4CutAtk_render_8c1b73bc,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -116,9 +116,9 @@ VirtualFunction const vt_8c27507c[7] = {
 VirtualFunction const vt_8c275098[91] = {
     0,
     0,
-    operation_8c1bc99c,
-    operation_8c1bca74,
-    operation_8c1bb97c,
+    TBoss4Bishi_dtor_8c1bc99c,
+    TBoss4Bishi_update_8c1bca74,
+    TBoss4Zako_render_8c1bb97c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -187,7 +187,7 @@ VirtualFunction const vt_8c275098[91] = {
     operation_8c013410,
     operation_8c013414,
     operation_8c013424,
-    operation_8c1bca1c,
+    TBoss4Bishi_v71_8c1bca1c,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -211,9 +211,9 @@ VirtualFunction const vt_8c275098[91] = {
 VirtualFunction const vt_8c275204[91] = {
     0,
     0,
-    operation_8c1bc008,
-    fn_8c1bc18c,
-    operation_8c1bb97c,
+    TBoss4Uro_dtor_8c1bc008,
+    TBoss4Uro_update_8c1bc18c,
+    TBoss4Zako_render_8c1bb97c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -282,7 +282,7 @@ VirtualFunction const vt_8c275204[91] = {
     operation_8c013410,
     operation_8c013414,
     operation_8c013424,
-    operation_8c1bc088,
+    TBoss4Uro_v71_8c1bc088,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -306,9 +306,9 @@ VirtualFunction const vt_8c275204[91] = {
 VirtualFunction const vt_8c275370[91] = {
     0,
     0,
-    operation_8c1bb528,
-    operation_8c1bb5bc,
-    operation_8c1bb97c,
+    TBoss4Zako_dtor_8c1bb528,
+    TBoss4Zako_update_8c1bb5bc,
+    TBoss4Zako_render_8c1bb97c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -377,7 +377,7 @@ VirtualFunction const vt_8c275370[91] = {
     operation_8c013410,
     operation_8c013414,
     operation_8c013424,
-    operation_8c1bb59c,
+    TBoss4Zako_v71_8c1bb59c,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,

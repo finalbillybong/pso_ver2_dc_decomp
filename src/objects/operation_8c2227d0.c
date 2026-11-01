@@ -29,7 +29,7 @@ extern int g_8c467188;
 extern int operation_8c220ce0(void);
 extern void operation_8c1cdc94(void *);
 extern int operation_8c19fb18(int);
-extern void operation_8c19fbe0(void *, int, int, int);
+extern void TOHealGeneral_ctor_8c19fbe0(void *, int, int, int);
 extern void operation_8c1cdc30(void *);
 extern int call_8c1196d4(void *, Frame *, int);
 extern void operation_8c119764(int, int, int);
@@ -65,7 +65,7 @@ void operation_8c2227d0(Object *o)
             v10 = (int)0x22ac;
             v11 = (int)0;
             while (*(int *)((char *)((char *)o + 0x0) + (v10)) > v11) {
-                operation_8c19fbe0((void *)(*(Arg0_22b8 **)((char *)o + off)), 0x17, (int)((int)o + v11 * 0xb8 + 0x39), v11);
+                TOHealGeneral_ctor_8c19fbe0((void *)(*(Arg0_22b8 **)((char *)o + off)), 0x17, (int)((int)o + v11 * 0xb8 + 0x39), v11);
                 v11 = (int)(v11 + 1);
             }
             operation_8c1cdc30((void *)(o->f22b8));

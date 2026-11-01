@@ -44,7 +44,7 @@ extern void fn_8c088e60(void);
 extern void fn_8c088b28(void);
 extern void operation_8c08893c(void);
 extern void destroy_virtual_context_8c0888e0(void);
-extern void operation_8c0886a8(void);
+extern void TObjWarpBase_dtor_8c0886a8(void);
 extern void operation_8c010504(void);
 
 /* 8c264fb4: type-information and this-adjustment header, then 20 slots */
@@ -205,7 +205,7 @@ VirtualFunction const vt_8c265168[21] = {
 VirtualFunction const vt_8c2651bc[21] = {
     0,
     0,
-    operation_8c0886a8,
+    TObjWarpBase_dtor_8c0886a8,
     TObject_update_default_8c0111c4,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,

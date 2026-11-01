@@ -20,7 +20,7 @@ extern int lookup_low_id(int);
 extern float squared_distance_xyz(void *, void *);
 extern void operation_8c0519c8(void *);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c0511bc(Object *o)
+void TObjEneLappy_v70_8c0511bc(Object *o)
 {
     int t1;
     float t2;

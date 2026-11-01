@@ -141,7 +141,7 @@ struct S_vv4 {
     int f00;
 };
 extern S_g8c469e1c *g_8c469e1c;
-extern "C" void operation_8c108644(int, int, int, int, int);
+extern "C" void TBreakUpMdl_create_8c108644(int, int, int, int, int);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void refresh_follow_effect_8c0129f4(void *);
 extern "C" void operation_8c09e6d0(void *);
@@ -156,7 +156,7 @@ extern "C" void operation_8c09638c(Object *o, int a1)
     switch (a1) {
     case 4:
         off = 0x324;
-        operation_8c108644((int)g_8c469e1c, 0, ((ObjectData *)o)->f28, (int)((char *)o + off), ((ObjectData *)o)->f64);
+        TBreakUpMdl_create_8c108644((int)g_8c469e1c, 0, ((ObjectData *)o)->f28, (int)((char *)o + off), ((ObjectData *)o)->f64);
         v3 = (int)0;
         v1 = (int)0x3e4;
         v2 = (int)0x4ec;

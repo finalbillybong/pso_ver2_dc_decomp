@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c0b32bc(void)
+void TTecGrants_render_8c0b32bc(void)
 {
 }

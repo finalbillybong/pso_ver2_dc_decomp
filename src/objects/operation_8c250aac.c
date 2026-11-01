@@ -20,7 +20,7 @@ struct Object {
 };
 extern int g_8c33f858;
 extern void operation_8c241158(void *);
-Object *operation_8c250aac(Object *o)
+Object *TItemWpnOnBlade_ctor_8c250aac(Object *o)
 {
     operation_8c241158((void *)o);
     o->dispatch = (void *)0x8c27e9d0;

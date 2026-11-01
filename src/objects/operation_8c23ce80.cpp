@@ -61,10 +61,10 @@ struct Frame {
 };
 extern "C" int call_8c1aaabc(int);
 extern "C" int call_8c075894(Object *, void *, int, Frame *);
-extern "C" void create_effect_b03c8_8c0b2190(void *, void *, void *);
+extern "C" void TTecGiFoie_create_8c0b2190(void *, void *, void *);
 extern "C" void operation_8c077224(void *);
 extern "C" void operation_8c076580(void *);
-extern "C" void operation_8c23ce80(Object *o)
+extern "C" void TItemWpnFireWand_v49_8c23ce80(Object *o)
 {
     Frame frame;
     int t1;
@@ -83,7 +83,7 @@ extern "C" void operation_8c23ce80(Object *o)
         if (t3 == 0) {
             return;
         }
-        create_effect_b03c8_8c0b2190((void *)(((ObjectData *)o)->f13c), (void *)(&frame), (void *)(((ObjectData *)o)->f214));
+        TTecGiFoie_create_8c0b2190((void *)(((ObjectData *)o)->f13c), (void *)(&frame), (void *)(((ObjectData *)o)->f214));
         operation_8c077224((void *)o);
         return;
     }

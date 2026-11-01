@@ -15,7 +15,7 @@ extern void call_8c0d36b0(int, int);
 extern void call_8c0d3880(int, int);
 extern void call_8c0d39a0(int, int);
 extern void call_8c0d3ab4(int, int);
-void operation_8c0d21c8(int a0, int a1, int a2)
+void TObjEneRe7Berura_v93_8c0d21c8(int a0, int a1, int a2)
 {
     switch (a1) {
     case 0:

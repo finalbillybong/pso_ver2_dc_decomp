@@ -27,7 +27,7 @@ struct S_vv17 {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void request_resource_release(void *);
-extern void destroy_object_8c10671c(void *, short);
+extern void TShopWindowBase_dtor_8c10671c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c19b344(Object *o, int a1)
 {
@@ -51,7 +51,7 @@ Object *operation_8c19b344(Object *o, int a1)
             v17->f04 |= 1;
             o->f54 = (Arg0_54 *)0;
         }
-        destroy_object_8c10671c((void *)o, (short)0);
+        TShopWindowBase_dtor_8c10671c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

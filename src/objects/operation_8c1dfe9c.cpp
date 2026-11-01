@@ -21,7 +21,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern "C" void draw_view_transition_if_active(void *);
 extern "C" void call_8c1dfee8(Object *, int);
-extern "C" void operation_8c1dfe9c(Object *o)
+extern "C" void TWindowKeyBoardHard_render_8c1dfe9c(Object *o)
 {
     int t1;
     if (((ObjectData *)o)->f70 > 0 && ((((ObjectData *)o)->f68 & 0x200)) == 0) {

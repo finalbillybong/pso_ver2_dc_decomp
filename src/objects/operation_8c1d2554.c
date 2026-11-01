@@ -48,7 +48,7 @@ extern void operation_8c1d4730(void *);
 extern void request_resource_release(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1d2554(Object *o, int a1)
+Object *TWindowSubComCard_dtor_8c1d2554(Object *o, int a1)
 {
     S_vv7 *v7;
     if (o != 0) {

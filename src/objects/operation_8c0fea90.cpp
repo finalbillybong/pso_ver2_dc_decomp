@@ -118,7 +118,7 @@ struct Arg1 {
 };
 extern int g_8c30ab10;
 extern "C" void call_8c0feb08(Object *, int);
-extern "C" float operation_8c0fea90(Object *o, Arg1 *a1)
+extern "C" float TOMineTrap_v24_8c0fea90(Object *o, Arg1 *a1)
 {
     int v1;
     char *v2;

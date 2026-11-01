@@ -11,9 +11,9 @@ struct Object {
     char f02;
 };
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c255930(void *, void *, Object *);
-extern void operation_8c255584(void *, int, int);
-extern void call_8c0e6d1c(int, void *, Object *);
+extern void TItemProArmorRecalc_ctor_8c255930(void *, void *, Object *);
+extern void TItemProArmorParticle_ctor_8c255584(void *, int, int);
+extern void TItemProArmor_ctor_8c0e6d1c(int, void *, Object *);
 int operation_8c0e6c54(Object *o)
 {
     unsigned char v1;
@@ -29,20 +29,20 @@ int operation_8c0e6c54(Object *o)
 L_8c0e6c7e:;
             t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x1e0);
             if (t1 != 0) {
-                operation_8c255930((void *)t1, (void *)(*(S_g8c4689e0 **)0x8c4689e0), o);
+                TItemProArmorRecalc_ctor_8c255930((void *)t1, (void *)(*(S_g8c4689e0 **)0x8c4689e0), o);
             }
             return (int)(t1);
         }
         if ((unsigned int)(unsigned char)v1 >= (unsigned int)0x29 && (unsigned int)0x35 > (unsigned int)(unsigned char)v1) {
             t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x1ec);
             if (t2 != 0) {
-                operation_8c255584((void *)t2, (int)(*(S_g8c4689e0 **)0x8c4689e0), (int)o);
+                TItemProArmorParticle_ctor_8c255584((void *)t2, (int)(*(S_g8c4689e0 **)0x8c4689e0), (int)o);
             }
             return (int)(t2);
         }
         t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x1e0);
         if (t3 != 0) {
-            call_8c0e6d1c(t3, (void *)(*(S_g8c4689e0 **)0x8c4689e0), o);
+            TItemProArmor_ctor_8c0e6d1c(t3, (void *)(*(S_g8c4689e0 **)0x8c4689e0), o);
         }
         return (int)(t3);
     }

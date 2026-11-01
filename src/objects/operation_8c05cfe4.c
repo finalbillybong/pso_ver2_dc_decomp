@@ -18,7 +18,7 @@ struct Arg0_dc {
     float f30;
 };
 extern void operation_8c05af80(void *, void *, int);
-void operation_8c05cfe4(Object *o)
+void TObjEneRe2Flower_v94_8c05cfe4(Object *o)
 {
     o->fdc->f30 = o->f328 - o->f40;
     operation_8c05af80((void *)o, (void *)(((char *)o + 0x3f8)), 0);

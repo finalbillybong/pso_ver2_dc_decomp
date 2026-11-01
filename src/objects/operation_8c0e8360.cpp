@@ -53,18 +53,18 @@ struct S_c8c1c7658 {
     unsigned char f12;
     unsigned char f13;
 };
-extern "C" void create_object_8c20989c(void *);
+extern "C" void TItemEquipBase_ctor_8c20989c(void *);
 extern "C" S_c8c1c7658 *call_8c1c7658(int);
 extern "C" int operation_8c1c933c(void *);
 extern "C" int operation_8c1c9348(void *);
-extern "C" Object *operation_8c0e8360(Object *o, int a1, int a2)
+extern "C" Object *TItemProShield_ctor_8c0e8360(Object *o, int a1, int a2)
 {
     Object **home = &o;
     S_c8c1c7658 *t1;
     int t2;
     int t3;
     (void)home;
-    create_object_8c20989c((void *)o);
+    TItemEquipBase_ctor_8c20989c((void *)o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c267e34;
     ((ObjectData *)o)->tag = (int)(*(int *)0x8c3082e0);
     ((ObjectData *)o)->size = 0x1e4;

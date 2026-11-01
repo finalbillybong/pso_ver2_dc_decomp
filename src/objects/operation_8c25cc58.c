@@ -6,12 +6,12 @@ typedef struct Vector3 {
 typedef struct S_g8c44be88 S_g8c44be88;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c25cc88(int, void *);
-void operation_8c25cc58(void)
+extern void TItemReverseTech_ctor_8c25cc88(int, void *);
+void TItemReverseTech_create_8c25cc58(void)
 {
     int t1;
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x2c);
     if (t1 != 0) {
-        call_8c25cc88(t1, *(S_g8c44be88 **)0x8c44be88);
+        TItemReverseTech_ctor_8c25cc88(t1, *(S_g8c44be88 **)0x8c44be88);
     }
 }

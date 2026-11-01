@@ -7,7 +7,7 @@ extern char controller_vtable[];
 extern void TObject_ctor_8c0330e4(Controller *,void *);
 extern Actor *actor_at(int);
 extern int prepare_at(Controller *);
-Controller *initialize_position_controller(Controller *o,void *unused_parent) {
+Controller *TEditor_ctor_8c03c92c(Controller *o,void *unused_parent) {
     Controller **home=&o;
     int i;
     TObject_ctor_8c0330e4(o,parent);

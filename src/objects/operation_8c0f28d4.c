@@ -11,7 +11,7 @@ struct Object {
     int f108;
 };
 extern void operation_8c05428c(void *, int, int);
-void operation_8c0f28d4(Object *o)
+void TOFenceAncient01_v17_8c0f28d4(Object *o)
 {
     o->fe4 = 0;
     o->f108 = 0;

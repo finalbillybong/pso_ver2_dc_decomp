@@ -6,8 +6,8 @@ typedef struct Vector3 {
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c23490c(int);
-void operation_8c2348e0(void)
+extern void TPlyPKEditor_ctor_8c23490c(int);
+void TPlyPKEditor_create_8c2348e0(void)
 {
     int t1;
     /* TODO 00000000..00000000
@@ -15,7 +15,7 @@ void operation_8c2348e0(void)
      */
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x5c);
     if (t1 != 0) {
-        call_8c23490c(t1);
+        TPlyPKEditor_ctor_8c23490c(t1);
     }
     /* TODO 8c2348e0..8c2348fa
      * 8c2348e0 mov.l 0x8c234900,r0

@@ -12,7 +12,7 @@ struct Object {
     short size;
 };
 extern void TObjectShared_ctor_8c01d1ec(void);
-Object *operation_8c09f278(Object *o)
+Object *TSceneSora_ctor_8c09f278(Object *o)
 {
     TObjectShared_ctor_8c01d1ec();
     o->dispatch = (void *)0x8c265920;

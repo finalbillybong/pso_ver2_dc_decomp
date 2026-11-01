@@ -102,7 +102,7 @@ extern "C" void draw_tree_a702(void *, void *, float);
 extern "C" void operation_8c0149c8(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c14ae60();
-extern "C" void operation_8c14b3e4(Object *o)
+extern "C" void TBoss2DeRolLe_v111_8c14b3e4(Object *o)
 {
     Frame frame;
     float v1;

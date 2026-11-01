@@ -41,7 +41,7 @@ extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4d9b60 *g_8c4d9b60;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_panel_8c087d8c(void *, void *, void *);
+extern void TObjChip_ctor_8c087d8c(void *, void *, void *);
 void operation_8c15aec4(Object *o)
 {
     Frame frame;
@@ -54,14 +54,14 @@ void operation_8c15aec4(Object *o)
     (&frame)->f00.f44 = (int)(g_8c4d9b60->f42c->fec);
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t1 != 0) {
-        initialize_panel_8c087d8c((void *)t1, g_8c44be98, (void *)(&frame));
+        TObjChip_ctor_8c087d8c((void *)t1, g_8c44be98, (void *)(&frame));
     }
     t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t2 != 0) {
-        initialize_panel_8c087d8c((void *)t2, g_8c44be98, (void *)(&frame));
+        TObjChip_ctor_8c087d8c((void *)t2, g_8c44be98, (void *)(&frame));
     }
     t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t3 != 0) {
-        initialize_panel_8c087d8c((void *)t3, g_8c44be98, (void *)(&frame));
+        TObjChip_ctor_8c087d8c((void *)t3, g_8c44be98, (void *)(&frame));
     }
 }

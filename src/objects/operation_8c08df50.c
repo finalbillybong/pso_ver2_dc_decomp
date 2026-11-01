@@ -16,7 +16,7 @@ struct S_g8c46fe20 {
 };
 extern void release_render_mode_four_8c03ce90(int);
 extern void call_8c0247dc(void);
-void operation_8c08df50(int a0)
+void TGroupEnemySetEditor_v07_8c08df50(int a0)
 {
     S_vv1 *v1;
     if (*(int *)0x8c469dc4 != 0) {

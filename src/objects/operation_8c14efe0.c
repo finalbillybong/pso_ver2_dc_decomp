@@ -23,7 +23,7 @@ struct Object {
     int fc8;
     float fcc;
 };
-void operation_8c14efe0(Object *o)
+void TPhotonMagicSquare_update_8c14efe0(Object *o)
 {
     float v3;
     float v9;

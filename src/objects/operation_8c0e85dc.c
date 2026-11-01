@@ -12,7 +12,7 @@ struct Object {
 extern int operation_8c073e5c(void *, void *);
 extern void call_8c1c9334(int, int);
 extern void call_8c1c9340(int, int);
-int operation_8c0e85dc(Object *o, int a1)
+int TItemProShield_v31_8c0e85dc(Object *o, int a1)
 {
     int t1;
     t1 = operation_8c073e5c((void *)o, (void *)a1);

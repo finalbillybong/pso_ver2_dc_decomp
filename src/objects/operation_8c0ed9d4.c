@@ -12,7 +12,7 @@ struct Object {
 extern void operation_8c09e6f4(void *, int);
 extern void destroy_shared_object(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c0ed9d4(Object *o, int a1)
+Object *TObjLight_dtor_8c0ed9d4(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c268020;

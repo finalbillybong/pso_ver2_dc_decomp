@@ -53,8 +53,8 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
-extern void operation_8c1ab01c(void *, int, int, int);
-void operation_8c1c682c(int a0, Arg1 *a1, int a2, Arg3 *a3)
+extern void TItemTimer_ctor_8c1ab01c(void *, int, int, int);
+void TItemAttacker_ctor_8c1c682c(int a0, Arg1 *a1, int a2, Arg3 *a3)
 {
     int v1;
     S_c8c122700 *t1;
@@ -85,7 +85,7 @@ void operation_8c1c682c(int a0, Arg1 *a1, int a2, Arg3 *a3)
             if (t1 != 0) {
                 t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x2c);
                 if (t3 != 0) {
-                    operation_8c1ab01c((void *)t3, (int)t1, (int)((void *)0x8c1c6950), a2);
+                    TItemTimer_ctor_8c1ab01c((void *)t3, (int)t1, (int)((void *)0x8c1c6950), a2);
                 }
             }
         }

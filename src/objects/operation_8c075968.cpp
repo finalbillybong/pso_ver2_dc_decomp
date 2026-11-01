@@ -86,7 +86,7 @@ extern S_g8c44be9c *g_8c44be9c;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" int current_mode_active(void);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void operation_8c1ab01c(void *, int, int, int);
+extern "C" void TItemTimer_ctor_8c1ab01c(void *, int, int, int);
 extern "C" void operation_8c1ddc00(int, short, int);
 extern "C" int play_se_8c05fbf8(int, void *, int, int);
 extern "C" void emit_control_60320(int, int, int);
@@ -121,7 +121,7 @@ extern "C" void operation_8c075968(Object *o)
         if (o != 0) {
             t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x2c);
             if (t3 != 0) {
-                operation_8c1ab01c((void *)t3, (int)o, (int)operation_8c0771fc, 0x14);
+                TItemTimer_ctor_8c1ab01c((void *)t3, (int)o, (int)operation_8c0771fc, 0x14);
             }
         }
         operation_8c1ddc00((int)g_8c44be9c, ((ObjectData *)o)->f13c->f20, 0x30);

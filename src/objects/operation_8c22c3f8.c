@@ -21,7 +21,7 @@ struct Object {
     int f6c;
 };
 extern void operation_8c22c4dc(void *);
-void operation_8c22c3f8(Object *o)
+void TAdRicoRing_update_8c22c3f8(Object *o)
 {
     int v1;
     int v22;

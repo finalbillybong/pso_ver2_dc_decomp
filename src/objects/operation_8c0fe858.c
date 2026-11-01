@@ -11,7 +11,7 @@ struct Object {
     short f30a;
 };
 extern void operation_8c05426c(void *, int, int);
-void operation_8c0fe858(Object *o)
+void TOMineTrap_v97_8c0fe858(Object *o)
 {
     o->f30a = 3;
     operation_8c05426c((void *)o, 0, 1);

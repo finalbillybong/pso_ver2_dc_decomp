@@ -25,7 +25,7 @@ extern S_g8c46fde0 *g_8c46fde0;
 extern "C" void destroy_vector_grid(void *, int);
 extern "C" void operator_delete_8c18de08(void *);
 extern "C" void call_8c03dc40(void *, int);
-extern "C" void operation_8c0d47cc(void)
+extern "C" void release_assets_ene_me3_shinowa_8c0d47cc(void)
 {
     destroy_vector_grid(g_8c46fddc, 1);
     g_8c46fddc = (S_g8c46fddc *)0;

@@ -65,7 +65,7 @@ extern "C" void call_8c391c94(void);
 extern "C" void call_8c0cd63c(void *, void *, int);
 extern "C" void call_8c3a944a(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c1c1574(Object *o)
+extern "C" void TObjCityAirCar_Car_render_8c1c1574(Object *o)
 {
     char *v21;
     int v23;

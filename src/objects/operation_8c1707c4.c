@@ -11,7 +11,7 @@ struct S_L8c4db494 {
 };
 extern S_g8c4db408 *g_8c4db408;
 extern S_L8c4db494 g_8c4db494;
-void operation_8c1707c4(int a0)
+void quest_op_ba_set_trap_count_8c1707c4(int a0)
 {
     int v1;
     int v2;

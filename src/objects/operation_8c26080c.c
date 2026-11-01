@@ -30,7 +30,7 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern S_c8c260a84 *operation_8c260a84(Object *);
 extern S_c8c260ab0 *operation_8c260ab0(Object *);
 extern int operation_8c260934(int, void *, void *);
-Object *operation_8c26080c(Object *o, int a1)
+Object *TObjCMCheck_ctor_8c26080c(Object *o, int a1)
 {
     Object **home = &o;
     S_c8c260a84 *t1;

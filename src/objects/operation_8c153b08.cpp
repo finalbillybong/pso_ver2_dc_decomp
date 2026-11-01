@@ -150,7 +150,7 @@ extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" int create_effect_769c(void *, int);
 extern "C" int call_8c18e768(void *, int);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void operation_8c0ee1d8(void *, int, int, int, int, short);
+extern "C" void TFontSmallTask_ctor_3_8c0ee1d8(void *, int, int, int, int, short);
 extern "C" void operation_8c153b08(Object *o)
 {
     Frame frame;
@@ -224,7 +224,7 @@ extern "C" void operation_8c153b08(Object *o)
         t4 = call_8c18e768((void *)(g_8c4da87c->f24), 5);
         t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x50);
         if (t3 != 0) {
-            operation_8c0ee1d8((void *)t3, (int)(((char *)o + 0x324)), -0xff0100, 0x1e, (int)(g_8c31604c + 0x10), (short)t4);
+            TFontSmallTask_ctor_3_8c0ee1d8((void *)t3, (int)(((char *)o + 0x324)), -0xff0100, 0x1e, (int)(g_8c31604c + 0x10), (short)t4);
         }
         v12 = (int)(((ObjectData *)o)->f330 + t4);
         if (((ObjectData *)o)->f198 > v12) {

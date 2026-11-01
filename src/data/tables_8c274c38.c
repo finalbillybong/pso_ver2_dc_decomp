@@ -2,9 +2,9 @@
 
 typedef void (*Function)(void);
 
-extern void operation_8c1b0f60(void);
-extern void fn_8c1b1060(void);
-extern void fn_8c1b12b0(void);
+extern void TBoss4Type2_dtor_8c1b0f60(void);
+extern void TBoss4Type2_update_8c1b1060(void);
+extern void TBoss4Type2_render_8c1b12b0(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -55,13 +55,13 @@ extern void operation_45a8c(void);
 extern void operation_45b8c(void);
 extern void operation_45d6c(void);
 extern void operation_8c045484(void);
-extern void operation_8c1b325c(void);
-extern void operation_8c1b3260(void);
-extern void operation_8c1b3264(void);
-extern void operation_8c1b3268(void);
-extern void operation_8c1b326c(void);
-extern void operation_8c1b3270(void);
-extern void operation_8c1b3274(void);
+extern void TBoss4Type2_v53_8c1b325c(void);
+extern void TBoss4Type2_v54_8c1b3260(void);
+extern void TBoss4Type2_v55_8c1b3264(void);
+extern void TBoss4Type2_v56_8c1b3268(void);
+extern void TBoss4Type2_v57_8c1b326c(void);
+extern void TBoss4Type2_v58_8c1b3270(void);
+extern void TBoss4Type2_v59_8c1b3274(void);
 extern void fn_8c046f2c(void);
 extern void fn_8c047090(void);
 extern void operation_8c0471b4(void);
@@ -72,8 +72,8 @@ extern void operation_8c013408(void);
 extern void operation_8c01340c(void);
 extern void operation_8c013410(void);
 extern void operation_8c013414(void);
-extern void operation_8c1b1010(void);
-extern void operation_8c1b103c(void);
+extern void TBoss4Type2_v70_8c1b1010(void);
+extern void TBoss4Type2_v71_8c1b103c(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
 extern void operation_8c0134b0(void);
@@ -95,9 +95,9 @@ extern void fn_8c012aa8(void);
 Function const d_8c274c38[91] = {
     0,
     0,
-    operation_8c1b0f60,
-    fn_8c1b1060,
-    fn_8c1b12b0,
+    TBoss4Type2_dtor_8c1b0f60,
+    TBoss4Type2_update_8c1b1060,
+    TBoss4Type2_render_8c1b12b0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -148,13 +148,13 @@ Function const d_8c274c38[91] = {
     operation_45b8c,
     operation_45d6c,
     operation_8c045484,
-    operation_8c1b325c,
-    operation_8c1b3260,
-    operation_8c1b3264,
-    operation_8c1b3268,
-    operation_8c1b326c,
-    operation_8c1b3270,
-    operation_8c1b3274,
+    TBoss4Type2_v53_8c1b325c,
+    TBoss4Type2_v54_8c1b3260,
+    TBoss4Type2_v55_8c1b3264,
+    TBoss4Type2_v56_8c1b3268,
+    TBoss4Type2_v57_8c1b326c,
+    TBoss4Type2_v58_8c1b3270,
+    TBoss4Type2_v59_8c1b3274,
     fn_8c046f2c,
     fn_8c047090,
     operation_8c0471b4,
@@ -165,8 +165,8 @@ Function const d_8c274c38[91] = {
     operation_8c01340c,
     operation_8c013410,
     operation_8c013414,
-    operation_8c1b1010,
-    operation_8c1b103c,
+    TBoss4Type2_v70_8c1b1010,
+    TBoss4Type2_v71_8c1b103c,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,

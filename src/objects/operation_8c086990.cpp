@@ -31,7 +31,7 @@ typedef struct ObjectData {
 extern S_g8c469cc0 *g_8c469cc0;
 extern "C" void call_8c3827d8(void *);
 extern "C" void operation_8c086a7c(void *);
-extern "C" void operation_8c086990(Object *o)
+extern "C" void TButterfly_render_8c086990(Object *o)
 {
     int t1;
     t1 = o->v11(400.0f, 20.0f);

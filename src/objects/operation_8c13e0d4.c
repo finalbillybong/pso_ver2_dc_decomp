@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern void create_effect_777c(void *, int);
-void operation_8c13e0d4(int a0)
+void TOMineIcon02_v98_8c13e0d4(int a0)
 {
     create_effect_777c((void *)(a0 + 0x3c), 0x8e);
     create_effect_777c((void *)(a0 + 0x3c), 0x8e);

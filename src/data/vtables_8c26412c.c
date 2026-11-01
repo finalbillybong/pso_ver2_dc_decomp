@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c07be78(void);
-extern void operation_8c07bed4(void);
-extern void operation_8c07c02c(void);
+extern void TBoss1DragonEffBullet_dtor_8c07be78(void);
+extern void TBoss1DragonEffBullet_update_8c07bed4(void);
+extern void TBoss1DragonEffBullet_render_8c07c02c(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
@@ -12,9 +12,9 @@ extern void hierarchy_output(void);
 VirtualFunction const vt_8c26412c[7] = {
     0,
     0,
-    operation_8c07be78,
-    operation_8c07bed4,
-    operation_8c07c02c,
+    TBoss1DragonEffBullet_dtor_8c07be78,
+    TBoss1DragonEffBullet_update_8c07bed4,
+    TBoss1DragonEffBullet_render_8c07c02c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

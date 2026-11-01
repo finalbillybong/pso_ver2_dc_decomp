@@ -65,7 +65,7 @@ extern "C" void njPushMatrixEx_8c38ae68(void);
 extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3a944a(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c1516d8(Object *o)
+extern "C" void TBoss3VoloptMonitor_render_8c1516d8(Object *o)
 {
     int v1;
     int v23;

@@ -12,7 +12,7 @@ struct Object {
 };
 extern void call_8c172c50(void *, float, float);
 extern void play_se_8c05fbf8(int, int, int, int);
-void operation_8c240e04(Object *o)
+void TItemWpnUmbrella_v51_8c240e04(Object *o)
 {
     int v1;
     int v3;

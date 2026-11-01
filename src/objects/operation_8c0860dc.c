@@ -10,7 +10,7 @@ struct S_g8c469cc0 {
 };
 extern void call_8c37d534(void *);
 extern void operation_8c105320(int);
-void operation_8c0860dc(void)
+void release_assets_TButterfly_8c0860dc(void)
 {
     call_8c37d534((void *)((*(S_g8c469cc0 **)0x8c469cc0)->f00));
     operation_8c105320((int)(*(S_g8c469cc0 **)0x8c469cc0));

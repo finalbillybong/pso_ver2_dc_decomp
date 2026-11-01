@@ -13,12 +13,12 @@ extern void operation_8c232318(void);
 extern void operation_8c232c38(void);
 extern void operation_8c232ca0(void);
 extern void operation_8c232f9c(void);
-extern void destroy_object_8c23499c(void);
-extern void operation_8c2349e0(void);
+extern void TPlyPKEditor_dtor_8c23499c(void);
+extern void TPlyPKEditor_update_8c2349e0(void);
 extern void TObject_render_default_8c0111c8(void);
-extern void operation_8c234cb4(void);
-extern void operation_8c234cb0(void);
-extern void operation_8c234a0c(void);
+extern void TPlyPKEditor_v05_8c234cb4(void);
+extern void TPlyPKEditor_v06_8c234cb0(void);
+extern void TPlyPKEditor_v07_8c234a0c(void);
 
 /* 8c278fb4: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c278fb4[7] = {
@@ -57,12 +57,12 @@ VirtualFunction const vt_8c278fec[7] = {
 VirtualFunction const vt_8c279008[10] = {
     0,
     0,
-    destroy_object_8c23499c,
-    operation_8c2349e0,
+    TPlyPKEditor_dtor_8c23499c,
+    TPlyPKEditor_update_8c2349e0,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c234cb4,
-    operation_8c234cb0,
-    operation_8c234a0c
+    TPlyPKEditor_v05_8c234cb4,
+    TPlyPKEditor_v06_8c234cb0,
+    TPlyPKEditor_v07_8c234a0c
 };

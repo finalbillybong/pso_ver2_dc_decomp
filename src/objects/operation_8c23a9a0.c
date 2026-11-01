@@ -10,7 +10,7 @@ struct Object {
     Arg0_234 *f234;
 };
 extern void njRotateX_8c37dd28(int, void *);
-void operation_8c23a9a0(Object *o)
+void TItemWpnBlueCane_v57_8c23a9a0(Object *o)
 {
     if (*(int *)0x8c4689f0 == 1) {
         njRotateX_8c37dd28(0, (void *)(o->f234));

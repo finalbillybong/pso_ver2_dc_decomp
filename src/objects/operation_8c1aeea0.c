@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c1aeea0(void)
+void TODoorCave03_render_shadow_8c1aeea0(void)
 {
 }

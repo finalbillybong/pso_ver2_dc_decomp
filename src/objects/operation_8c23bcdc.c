@@ -27,7 +27,7 @@ struct S_vv1 {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c23bcdc(Object *o)
+void TItemWpnDorillArm_v53_8c23bcdc(Object *o)
 {
     S_vv20 *v20;
     S_vv1 *v1;

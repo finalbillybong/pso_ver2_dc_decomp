@@ -6,7 +6,7 @@ typedef struct Vector3 {
 typedef struct S_g8c4e2e60 S_g8c4e2e60;
 typedef struct S_g8c4e2e64 S_g8c4e2e64;
 extern void call_8c03dc40(void *, int);
-void operation_8c1cdf24(void)
+void release_assets_o_rock_cave01_8c1cdf24(void)
 {
     if (*(int *)0x8c4e2e60 != 0) {
         call_8c03dc40((void *)(*(S_g8c4e2e60 **)0x8c4e2e60), 1);

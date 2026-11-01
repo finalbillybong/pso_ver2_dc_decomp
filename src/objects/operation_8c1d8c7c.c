@@ -14,7 +14,7 @@ struct Object {
     int f64;
 };
 extern S_L8c4e2edc g_8c4e2edc;
-void operation_8c1d8c7c(Object *o)
+void TObjCity_Season_HalloweenPumpkin_update_8c1d8c7c(Object *o)
 {
     if ((&g_8c4e2edc)->f0c != 0) {
         o->f64 += 0x40;

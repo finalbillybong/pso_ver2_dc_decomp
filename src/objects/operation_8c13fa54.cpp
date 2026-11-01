@@ -34,7 +34,7 @@ extern Vector3 g_8c3146a8;
 extern char g_8c4d9e60;
 extern S_L8c3146b4 g_8c3146b4;
 extern "C" char gc_8c3146b4[];
-extern "C" void operation_8c13fa54(Object *o)
+extern "C" void TObjCMLoadAfsTextureReq_update_8c13fa54(Object *o)
 {
     if (o->f2c != 1 && --o->f68 > 0) {
         if (((int)(o->f34) & -0x1000000) != (int)((void *)0x8c000000) || (o->f34->f00 & -0x1000000) != (int)((void *)0x8c000000)) {

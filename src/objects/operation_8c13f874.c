@@ -23,7 +23,7 @@ struct Arg0_38 {
 };
 extern void TObject_ctor_8c0330e4(Object *, int);
 extern void call_8c13f8e0(Object *);
-Object *operation_8c13f874(Object *o, int a1, int a2, int a3, int a4)
+Object *TObjCMLoadAfsTextureReq_ctor_1_8c13f874(Object *o, int a1, int a2, int a3, int a4)
 {
     Object **home = &o;
     (void)home;

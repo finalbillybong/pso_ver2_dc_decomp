@@ -18,7 +18,7 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c1848e0(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_fall(int, void *, void *);
-Object *operation_8c1e6300(Object *o, int a1)
+Object *TAdSoniclogo_ctor_8c1e6300(Object *o, int a1)
 {
     Object **home = &o;
     int t1;

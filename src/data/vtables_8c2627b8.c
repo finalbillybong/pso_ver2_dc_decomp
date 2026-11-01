@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c059c30(void);
+extern void TObjEneDD_dtor_8c059c30(void);
 extern void TObject_update_default_8c0111c4(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
@@ -95,7 +95,7 @@ extern void operation_8c059d2c(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
-extern void operation_8c05b168(void);
+extern void TObjEneDD_v94_8c05b168(void);
 extern void operation_8c05b16c(void);
 extern void operation_8c05b19c(void);
 extern void fn_8c05b6b4(void);
@@ -115,7 +115,7 @@ extern void capture_current_contact(void);
 VirtualFunction const vt_8c2627b8[111] = {
     0,
     0,
-    destroy_object_8c059c30,
+    TObjEneDD_dtor_8c059c30,
     TObject_update_default_8c0111c4,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
@@ -209,7 +209,7 @@ VirtualFunction const vt_8c2627b8[111] = {
     operation_8c059e2c,
     operation_8c059e88,
     0,
-    operation_8c05b168,
+    TObjEneDD_v94_8c05b168,
     operation_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,

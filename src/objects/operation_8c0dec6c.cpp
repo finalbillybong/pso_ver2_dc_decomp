@@ -27,7 +27,7 @@ extern "C" void call_8c0df1ac(Object *, int, void *);
 extern "C" void call_8c0df3e0(Object *, int, void *);
 extern "C" void draw_view_nodes(void *, void *, void *);
 extern "C" void backup_render_state(void);
-extern "C" void operation_8c0dec6c(Object *o)
+extern "C" void TWindowFukidasi_render_8c0dec6c(Object *o)
 {
     int t1;
     restore_render_state();

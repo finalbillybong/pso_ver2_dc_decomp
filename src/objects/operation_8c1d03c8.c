@@ -32,7 +32,7 @@ struct Object {
     int f64;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c1d03c8(Object *o, int a1)
+Object *TWindowSubSymbolChat_ctor_8c1d03c8(Object *o, int a1)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c276df0;

@@ -28,7 +28,7 @@ struct Arg0_28 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c12b944(int);
-Object *operation_8c0cb4d0(Object *o, int a1, int a2, int a3)
+Object *TObjEneMe1Canadin_EffLine_ctor_8c0cb4d0(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
     int t1;

@@ -18,7 +18,7 @@ struct S_g8c469e30 {
 };
 extern S_g8c469e2c *g_8c469e2c;
 extern S_g8c469e30 *g_8c469e30;
-void operation_8c091180(Object *o)
+void TObjEneMe1Canadin_v118_8c091180(Object *o)
 {
     g_8c469e2c->f00 = (int)(o->f4d0);
     g_8c469e30->f00 = (int)(o->f4d0);

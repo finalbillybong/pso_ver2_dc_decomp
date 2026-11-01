@@ -6,12 +6,12 @@ typedef struct Vector3 {
 typedef struct S_g8c44be8c S_g8c44be8c;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c078b48(int, void *);
-void operation_8c078b14(void)
+extern void TObjBoss1Floor_ctor_8c078b48(int, void *);
+void TObjBoss1Floor_create_8c078b14(void)
 {
     int t1;
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x3c);
     if (t1 != 0) {
-        call_8c078b48(t1, *(S_g8c44be8c **)0x8c44be8c);
+        TObjBoss1Floor_ctor_8c078b48(t1, *(S_g8c44be8c **)0x8c44be8c);
     }
 }

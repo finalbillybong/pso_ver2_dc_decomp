@@ -45,7 +45,7 @@ extern "C" void call_8c391c94(void);
 extern "C" void call_8c3ac53a(void *, void *, float);
 extern "C" void call_8c391cc4(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c1e7c80(Object *o)
+extern "C" void TObjWarpBoss_render_8c1e7c80(Object *o)
 {
     float t1;
     int t2;

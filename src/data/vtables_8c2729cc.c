@@ -12,9 +12,9 @@ extern void operation_8c19c22c(void);
 extern void operation_8c19c2d4(void);
 extern void destroy_object_8c19cf34(void);
 extern void TObject_update_default_8c0111c4(void);
-extern void operation_8c19de38(void);
-extern void operation_8c19de9c(void);
-extern void operation_8c19dec4(void);
+extern void TQuestColCtrl_dtor_8c19de38(void);
+extern void TQuestColCtrl_update_8c19de9c(void);
+extern void TQuestColCtrl_render_shadow_8c19dec4(void);
 
 /* 8c2729cc: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const vt_8c2729cc[8] = {
@@ -55,9 +55,9 @@ VirtualFunction const vt_8c272a0c[7] = {
 VirtualFunction const vt_8c272a28[7] = {
     0,
     0,
-    operation_8c19de38,
-    operation_8c19de9c,
+    TQuestColCtrl_dtor_8c19de38,
+    TQuestColCtrl_update_8c19de9c,
     TObject_render_default_8c0111c8,
-    operation_8c19dec4,
+    TQuestColCtrl_render_shadow_8c19dec4,
     hierarchy_output
 };

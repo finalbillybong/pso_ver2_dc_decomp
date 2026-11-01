@@ -25,10 +25,10 @@ extern int operation_8c220ce0(void);
 extern int operation_8c106760(Object *);
 extern int operation_8c106798(Object *);
 extern void operation_8c02f9c0(void *);
-extern void operation_8c10664c(void *);
+extern void TShopSequence_v07_8c10664c(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
-void operation_8c208a6c(Object *o)
+void THunterGuildSeqOnline_Server_v07_8c208a6c(Object *o)
 {
     char *v14;
     int t1;
@@ -59,7 +59,7 @@ void operation_8c208a6c(Object *o)
             if (g_8c4dc800 == 0) {
                 operation_8c02f9c0(g_8c418a00);
             }
-            operation_8c10664c((void *)o);
+            TShopSequence_v07_8c10664c((void *)o);
             o->f04 |= 1;
             return;
         case 1:
@@ -68,7 +68,7 @@ void operation_8c208a6c(Object *o)
                 initialize_color_rise(t5, g_8c44be84, (void *)((void *)0x8c208d20));
             }
             g_8c4d7ca0 = 1;
-            operation_8c10664c((void *)o);
+            TShopSequence_v07_8c10664c((void *)o);
             o->f04 |= 1;
             return;
         case 2:
@@ -77,7 +77,7 @@ void operation_8c208a6c(Object *o)
                 initialize_color_rise(t6, g_8c44be84, (void *)((void *)0x8c208d00));
             }
             g_8c4d7ca0 = 1;
-            operation_8c10664c((void *)o);
+            TShopSequence_v07_8c10664c((void *)o);
             o->f04 |= 1;
         }
     }

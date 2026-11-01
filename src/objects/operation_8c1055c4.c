@@ -25,14 +25,14 @@ struct Object {
     char unknown50[0x140];
     int f190;
 };
-extern void initialize_control_manager(void *, void *);
+extern void TShopWindowBase_ctor_8c1066e4(void *, void *);
 extern void call_8c1a05d4(void);
 extern void call_8c18afd8(void);
-Object *operation_8c1055c4(Object *o, int a1, int a2, int a3)
+Object *TShopEquipmentListWindow_ctor_8c1055c4(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
     (void)home;
-    initialize_control_manager((void *)o, (void *)a1);
+    TShopWindowBase_ctor_8c1066e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c269778;
     o->tag = *(int *)0x8c30b630;
     o->size = 0x194;

@@ -17,8 +17,8 @@ struct Object {
 };
 extern int operation_8c076d7c(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c0772f8(void *, int, int);
-void operation_8c24f1a0(Object *o)
+extern void TItemEffectWeapon_ctor_8c0772f8(void *, int, int);
+void TItemWpnNaganoClaw_v53_8c24f1a0(Object *o)
 {
     int v1;
     int t3;
@@ -29,12 +29,12 @@ void operation_8c24f1a0(Object *o)
         v1 = (int)(t3 & -0x70000001);
         t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
         if (t1 != 0) {
-            operation_8c0772f8((void *)t1, (int)(o->f1bc), v1);
+            TItemEffectWeapon_ctor_8c0772f8((void *)t1, (int)(o->f1bc), v1);
         }
         o->f234 = (int)(t1);
         t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
         if (t2 != 0) {
-            operation_8c0772f8((void *)t2, (int)(o->f1bc), v1);
+            TItemEffectWeapon_ctor_8c0772f8((void *)t2, (int)(o->f1bc), v1);
         }
         o->f238 = (int)(t2);
     }

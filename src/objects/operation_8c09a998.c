@@ -22,7 +22,7 @@ struct Object {
     float f50;
     int f54;
 };
-void operation_8c09a998(Object *o)
+void TObjCMHexTile_update_8c09a998(Object *o)
 {
     float v5;
     float v6;

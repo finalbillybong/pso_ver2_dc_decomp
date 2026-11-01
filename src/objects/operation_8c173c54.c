@@ -79,7 +79,7 @@ extern int operation_8c174184(void *);
 extern int operation_8c174444(void *);
 extern int operation_8c17478c(void *);
 extern int operation_8c1747b0(void *);
-void operation_8c173c54(Object *o)
+void TQuestThreadBoard_update_8c173c54(Object *o)
 {
     int v3;
     int v11;

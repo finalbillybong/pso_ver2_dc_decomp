@@ -18,7 +18,7 @@ struct Object {
 };
 extern int g_8c305948;
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c0bbb5c(Object *o, int a1)
+Object *TObjEZRopeBase_ctor_8c0bbb5c(Object *o, int a1)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c266314;

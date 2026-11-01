@@ -26,7 +26,7 @@ struct S_c8c021ef8 {
 extern void call_8c03ce84(void);
 extern void call_8c02473c(void);
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c08ded4(Object *o)
+void TGroupEnemySetEditor_v05_8c08ded4(Object *o)
 {
     S_c8c021ef8 *t1;
     *(char *)0x8c469dc0 = 1;

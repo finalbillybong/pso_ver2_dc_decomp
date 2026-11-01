@@ -10,10 +10,10 @@ struct Object {
     char unknownec[0x34];
     float f120;
 };
-extern void operation_8c1132e0(int);
-void operation_8c113b50(Object *o)
+extern void TOKey_v20_8c1132e0(int);
+void TLazerFenceSw_v20_8c113b50(Object *o)
 {
-    operation_8c1132e0((int)o);
+    TOKey_v20_8c1132e0((int)o);
     o->fe8 = 0.0f;
     o->f120 = 0.0f;
 }

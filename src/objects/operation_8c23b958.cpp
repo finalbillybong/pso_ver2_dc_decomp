@@ -61,10 +61,10 @@ struct Arg0_13c {
 };
 extern "C" int call_8c1aaabc(void *);
 extern "C" int operation_8c075894(void *, void *, int, int);
-extern "C" void create_effect_b55a0(void *, void *, void *, void *);
+extern "C" void TTecMegid_create_8c0b55a0(void *, void *, void *, void *);
 extern "C" void operation_8c077224(void *);
 extern "C" void operation_8c076580(void *);
-extern "C" void operation_8c23b958(Object *o)
+extern "C" void TItemWpnDevilCane_v49_8c23b958(Object *o)
 {
     Frame frame;
     int t1;
@@ -82,7 +82,7 @@ extern "C" void operation_8c23b958(Object *o)
             return;
         }
         v1 = ((ObjectData *)o)->f13c;
-        create_effect_b55a0((void *)v1, (void *)(&frame), (void *)(v1->f64), (void *)(((ObjectData *)o)->f214));
+        TTecMegid_create_8c0b55a0((void *)v1, (void *)(&frame), (void *)(v1->f64), (void *)(((ObjectData *)o)->f214));
         operation_8c077224((void *)o);
         return;
     }

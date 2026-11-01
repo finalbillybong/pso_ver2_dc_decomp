@@ -38,7 +38,7 @@ extern void scale_current_matrix_v_8c37e390(void *);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c391cc4(void);
-void operation_8c11f2e4(Object *o)
+void TORainbowCave01_render_8c11f2e4(Object *o)
 {
     Frame frame;
     int t1;

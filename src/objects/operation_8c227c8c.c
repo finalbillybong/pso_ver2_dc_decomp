@@ -11,7 +11,7 @@ struct Object {
 };
 extern void restore_child_blend(void);
 extern void visit_hierarchy_10(void *);
-void operation_8c227c8c(Object *o)
+void TAdDrawLineCtrl_render_8c227c8c(Object *o)
 {
     restore_child_blend();
     if (o->f24 != 0) {

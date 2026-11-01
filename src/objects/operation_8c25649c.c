@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c25649c(void)
+void TOSymbolchatColli_v09_8c25649c(void)
 {
 }

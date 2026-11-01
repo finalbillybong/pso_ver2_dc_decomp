@@ -10,7 +10,7 @@ struct Object {
 };
 extern int get_current_area_8c032b10(void);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c113130(Object *o)
+void TOKey_v19_8c113130(Object *o)
 {
     int t1;
     t1 = get_current_area_8c032b10();

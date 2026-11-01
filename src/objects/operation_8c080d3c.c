@@ -10,7 +10,7 @@ struct Object {
 };
 extern void call_8c080dac(void);
 extern void operation_8c080d70(void *);
-void operation_8c080d3c(Object *o)
+void TObjLazerFenceNorm_update_8c080d3c(Object *o)
 {
     if (o->fec != 0) {
         if (o->fec != 1) {

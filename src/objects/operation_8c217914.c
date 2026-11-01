@@ -12,7 +12,7 @@ struct Object {
     short size;
 };
 extern void initialize_base_8c0db1d0(void *, int);
-Object *operation_8c217914(Object *o)
+Object *TWindowBreakIn_ctor_8c217914(Object *o)
 {
     initialize_base_8c0db1d0((void *)o, (int)((void *)0x8c3361fc));
     o->dispatch = (void *)0x8c2782f4;

@@ -24,7 +24,7 @@ struct Arg1 {
 extern void initialize_base_8c0db1d0(void *, int);
 extern void call_8c0dc854(Object *);
 extern void call_8c2180b0(void *, int);
-Object *operation_8c217f84(Object *o, Arg1 *a1, int a2)
+Object *TWindowUserSort_ctor_8c217f84(Object *o, Arg1 *a1, int a2)
 {
     Object **home = &o;
     (void)home;

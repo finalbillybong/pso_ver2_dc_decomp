@@ -42,7 +42,7 @@ extern void create_effect(void *, int, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
 extern int operation_8c065330(void);
 extern void operation_8c067ca0(void *, int);
-void operation_8c07bed4(Object *o)
+void TBoss1DragonEffBullet_update_8c07bed4(Object *o)
 {
     float v1;
     float v2;

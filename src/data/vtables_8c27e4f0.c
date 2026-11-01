@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c24f15c(void);
+extern void TItemWpnNaganoClaw_dtor_8c24f15c(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -54,39 +54,39 @@ extern void fn_8c0766f8(void);
 extern void operation_8c07633c(void);
 extern void operation_8c076178(void);
 extern void operation_8c076174(void);
-extern void fn_8c24f24c(void);
-extern void operation_8c24f1a0(void);
+extern void TItemWpnNaganoClaw_v52_8c24f24c(void);
+extern void TItemWpnNaganoClaw_v53_8c24f1a0(void);
 extern void operation_8c075ac4(void);
-extern void operation_8c24f238(void);
+extern void TItemWpnNaganoClaw_v55_8c24f238(void);
 extern void operation_8c077810(void);
 extern void operation_8c075ed8(void);
 extern void fn_8c076340(void);
-extern void destroy_object_8c24f4b0(void);
-extern void operation_8c24f4f4(void);
-extern void operation_8c24f624(void);
-extern void operation_8c24f660(void);
+extern void TItemWpnYasumuraShiki2_dtor_8c24f4b0(void);
+extern void TItemWpnYasumuraShiki2_v49_8c24f4f4(void);
+extern void TItemWpnYasumuraShiki2_v50_8c24f624(void);
+extern void TItemWpnYasumuraShiki2_v51_8c24f660(void);
 extern void operation_8c076238(void);
-extern void operation_8c24f534(void);
+extern void TItemWpnYasumuraShiki2_v53_8c24f534(void);
 extern void operation_8c075b80(void);
-extern void operation_8c24f6a4(void);
-extern void destroy_object_8c24f7cc(void);
-extern void operation_8c24f810(void);
-extern void operation_8c24f850(void);
-extern void operation_8c24f940(void);
-extern void destroy_object_8c24fa6c(void);
-extern void fn_8c24fab0(void);
-extern void fn_8c24fbf4(void);
-extern void operation_8c24fb44(void);
-extern void operation_8c24fbcc(void);
-extern void destroy_object_8c24fddc(void);
-extern void operation_8c24fe20(void);
+extern void TItemWpnYasumuraShiki2_v57_8c24f6a4(void);
+extern void TItemWpnYasuShotGun_dtor_8c24f7cc(void);
+extern void TItemWpnYasuShotGun_v49_8c24f810(void);
+extern void TItemWpnYasuShotGun_v53_8c24f850(void);
+extern void TItemWpnYasuShotGun_v57_8c24f940(void);
+extern void TItemWpnYasuMachineGun_dtor_8c24fa6c(void);
+extern void TItemWpnYasuMachineGun_v49_8c24fab0(void);
+extern void TItemWpnYasuMachineGun_v52_8c24fbf4(void);
+extern void TItemWpnYasuMachineGun_v53_8c24fb44(void);
+extern void TItemWpnYasuMachineGun_v57_8c24fbcc(void);
+extern void TItemWpnMaserBeam_dtor_8c24fddc(void);
+extern void TItemWpnMaserBeam_v49_8c24fe20(void);
 extern void operation_8c076170(void);
 
 /* 8c27e4f0: type-information and this-adjustment header, then 59 slots */
 VirtualFunction const vt_8c27e4f0[61] = {
     0,
     0,
-    destroy_object_8c24f15c,
+    TItemWpnNaganoClaw_dtor_8c24f15c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -138,10 +138,10 @@ VirtualFunction const vt_8c27e4f0[61] = {
     operation_8c07633c,
     operation_8c076178,
     operation_8c076174,
-    fn_8c24f24c,
-    operation_8c24f1a0,
+    TItemWpnNaganoClaw_v52_8c24f24c,
+    TItemWpnNaganoClaw_v53_8c24f1a0,
     operation_8c075ac4,
-    operation_8c24f238,
+    TItemWpnNaganoClaw_v55_8c24f238,
     operation_8c077810,
     operation_8c075ed8,
     fn_8c076340
@@ -151,7 +151,7 @@ VirtualFunction const vt_8c27e4f0[61] = {
 VirtualFunction const vt_8c27e5e4[61] = {
     0,
     0,
-    destroy_object_8c24f4b0,
+    TItemWpnYasumuraShiki2_dtor_8c24f4b0,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -200,15 +200,15 @@ VirtualFunction const vt_8c27e5e4[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    operation_8c24f4f4,
-    operation_8c24f624,
-    operation_8c24f660,
+    TItemWpnYasumuraShiki2_v49_8c24f4f4,
+    TItemWpnYasumuraShiki2_v50_8c24f624,
+    TItemWpnYasumuraShiki2_v51_8c24f660,
     operation_8c076238,
-    operation_8c24f534,
+    TItemWpnYasumuraShiki2_v53_8c24f534,
     operation_8c075ac4,
     operation_8c075b80,
     operation_8c077810,
-    operation_8c24f6a4,
+    TItemWpnYasumuraShiki2_v57_8c24f6a4,
     fn_8c076340
 };
 
@@ -216,7 +216,7 @@ VirtualFunction const vt_8c27e5e4[61] = {
 VirtualFunction const vt_8c27e6d8[61] = {
     0,
     0,
-    destroy_object_8c24f7cc,
+    TItemWpnYasuShotGun_dtor_8c24f7cc,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -265,15 +265,15 @@ VirtualFunction const vt_8c27e6d8[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    operation_8c24f810,
+    TItemWpnYasuShotGun_v49_8c24f810,
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,
-    operation_8c24f850,
+    TItemWpnYasuShotGun_v53_8c24f850,
     operation_8c075ac4,
     operation_8c075b80,
     operation_8c077810,
-    operation_8c24f940,
+    TItemWpnYasuShotGun_v57_8c24f940,
     fn_8c076340
 };
 
@@ -281,7 +281,7 @@ VirtualFunction const vt_8c27e6d8[61] = {
 VirtualFunction const vt_8c27e7cc[61] = {
     0,
     0,
-    destroy_object_8c24fa6c,
+    TItemWpnYasuMachineGun_dtor_8c24fa6c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -330,15 +330,15 @@ VirtualFunction const vt_8c27e7cc[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    fn_8c24fab0,
+    TItemWpnYasuMachineGun_v49_8c24fab0,
     operation_8c076178,
     operation_8c076174,
-    fn_8c24fbf4,
-    operation_8c24fb44,
+    TItemWpnYasuMachineGun_v52_8c24fbf4,
+    TItemWpnYasuMachineGun_v53_8c24fb44,
     operation_8c075ac4,
     operation_8c075b80,
     operation_8c077810,
-    operation_8c24fbcc,
+    TItemWpnYasuMachineGun_v57_8c24fbcc,
     fn_8c076340
 };
 
@@ -346,7 +346,7 @@ VirtualFunction const vt_8c27e7cc[61] = {
 VirtualFunction const vt_8c27e8c0[61] = {
     0,
     0,
-    destroy_object_8c24fddc,
+    TItemWpnMaserBeam_dtor_8c24fddc,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -395,7 +395,7 @@ VirtualFunction const vt_8c27e8c0[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    operation_8c24fe20,
+    TItemWpnMaserBeam_v49_8c24fe20,
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,

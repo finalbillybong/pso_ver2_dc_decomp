@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c11f3d8(void)
+void TORainbowCave01_v15_8c11f3d8(void)
 {
 }

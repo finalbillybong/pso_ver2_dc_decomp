@@ -10,7 +10,7 @@ struct Object {
     float f238;
     float f23c;
 };
-void operation_8c23ade8(Object *o)
+void TItemWpnCatHand_v51_8c23ade8(Object *o)
 {
     if (o->f23c > 1e-07f) {
         o->f23c -= 0.3f;

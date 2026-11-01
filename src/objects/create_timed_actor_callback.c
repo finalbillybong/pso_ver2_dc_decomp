@@ -10,5 +10,5 @@ typedef char check_ticks[(unsigned long)&((View *)0)->ticks==34?1:-1];
 typedef char check_callback[(unsigned long)&((View *)0)->callback==36?1:-1];
 typedef char check_prefix[sizeof(View)==40?1:-1];
 extern void *heap;extern void *heap_alloc_8c122700(void *,unsigned int);
-extern View *construct_at(View *,unsigned short identifier,short ticks,Callback callback);
-View *create_timed_actor_callback(unsigned short identifier,short ticks,Callback callback) { View *o=(View *)heap_alloc_8c122700(heap,40);if(o) construct_at(o,identifier,ticks,callback);return o; }
+extern View *TPlyOnCountOver_ctor_8c03ba94(View *,unsigned short identifier,short ticks,Callback callback);
+View *TPlyOnCountOver_create_8c03ba4c(unsigned short identifier,short ticks,Callback callback) { View *o=(View *)heap_alloc_8c122700(heap,40);if(o) TPlyOnCountOver_ctor_8c03ba94(o,identifier,ticks,callback);return o; }

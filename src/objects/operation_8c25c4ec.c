@@ -10,7 +10,7 @@ struct Object {
 };
 extern void operation_8c25c51c(void *);
 extern void operation_8c25c540(void *);
-void operation_8c25c4ec(Object *o)
+void TObjWarnChime_update_8c25c4ec(Object *o)
 {
     if (o->f20 != 0) {
         if (o->f20 != 1) {

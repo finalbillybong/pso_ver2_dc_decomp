@@ -10,7 +10,7 @@ struct Object {
     short f20a;
 };
 extern void flag_owner_8c074ddc(void *);
-void operation_8c17b838(Object *o)
+void TItemProUnit_v15_8c17b838(Object *o)
 {
     short a;
     short b;

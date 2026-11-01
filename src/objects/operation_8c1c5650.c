@@ -19,7 +19,7 @@ struct Object {
 extern int call_8c1abc70(Object *);
 extern void create_effect_777c(void *, int);
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
-void operation_8c1c5650(Object *o)
+void TItemEffBringer_v05_8c1c5650(Object *o)
 {
     Frame frame;
     int v1;

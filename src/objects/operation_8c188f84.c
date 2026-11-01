@@ -20,9 +20,9 @@ struct Object {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void request_resource_release(void *);
-extern void destroy_object_8c10671c(void *, short);
+extern void TShopWindowBase_dtor_8c10671c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c188f84(Object *o, int a1)
+Object *TShopArmorListWindow_dtor_8c188f84(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c2721b4;
@@ -42,7 +42,7 @@ Object *operation_8c188f84(Object *o, int a1)
             request_resource_release((void *)(o->f3c));
             o->f3c = (Arg0_3c *)0;
         }
-        destroy_object_8c10671c((void *)o, (short)0);
+        TShopWindowBase_dtor_8c10671c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

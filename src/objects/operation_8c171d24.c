@@ -14,7 +14,7 @@ extern void call_8c186ffc(void);
 extern void operation_03cee8(void);
 extern void call_8c1031e4(void);
 extern void call_8c2484ec(void);
-void operation_8c171d24(void)
+void quest_op_reset_map_8c171d24(void)
 {
     call_8c192aa8();
     if (*(int *)0x8c4db520 != 0) {

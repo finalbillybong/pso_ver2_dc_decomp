@@ -18,7 +18,7 @@ struct Object {
 };
 extern int g_8c33fa08;
 extern void operation_8c241158(void *);
-Object *operation_8c252330(Object *o)
+Object *TItemWpnOnSlicer_ctor_8c252330(Object *o)
 {
     operation_8c241158((void *)o);
     o->dispatch = (void *)0x8c27f970;

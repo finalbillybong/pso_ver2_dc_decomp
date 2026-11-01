@@ -10,7 +10,7 @@ struct Object {
     char unknown6[0x36];
     int f3c;
 };
-void operation_8c1c60f4(Object *o)
+void TItemEffLandHit_update_8c1c60f4(Object *o)
 {
     if (o->f3c != 0) {
         o->f04 |= 1;

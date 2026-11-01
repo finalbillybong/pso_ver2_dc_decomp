@@ -18,7 +18,7 @@ extern int g_8c4d9e58;
 extern void call_8c03dc40(void *, int);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c13f594(Object *o, int a1)
+Object *TObjLoadGmPlNjReq_dtor_8c13f594(Object *o, int a1)
 {
     int v1;
     if (o != 0) {

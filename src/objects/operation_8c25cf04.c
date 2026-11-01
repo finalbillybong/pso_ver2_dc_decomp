@@ -22,7 +22,7 @@ extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c22c570(int, Object *);
 extern void call_8c22c8dc(void *, float);
 extern void call_8c22c970(void *, float);
-void operation_8c25cf04(Object *o)
+void TItemReverseTechPart1_update_8c25cf04(Object *o)
 {
     int t1;
     switch (o->f20) {

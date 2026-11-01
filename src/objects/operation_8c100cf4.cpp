@@ -27,7 +27,7 @@ typedef struct ObjectData {
 extern "C" char g_8c30b000[];
 extern "C" void njPrintColor_8c38c5b6(int);
 extern "C" void debug_print_at_8c38cf80(int, void *, ...);
-extern "C" void operation_8c100cf4(Object *o)
+extern "C" void TObjEnvSound_v09_8c100cf4(Object *o)
 {
     ((ObjectData *)o)->f98 = (Arg0_98 *)((ObjectData *)o)->f8c;
     if (-0x7f > (int)(((ObjectData *)o)->f98)) {

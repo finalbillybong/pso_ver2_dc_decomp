@@ -16,7 +16,7 @@ struct Frame {
 };
 extern void operation_1c7dd4(void *);
 extern int operation_8c15b6bc(int);
-void operation_8c16fb48(int a0, int a1)
+void quest_op_delete_bank_item_8c16fb48(int a0, int a1)
 {
     Frame frame;
     char *v1;

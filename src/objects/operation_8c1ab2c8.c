@@ -14,7 +14,7 @@ struct Object {
 extern char g_8c324f2c[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c1ab2c8(Object *o)
+void TObjMesBase_v09_8c1ab2c8(Object *o)
 {
     o->fec = (Arg0_ec *)o->f88;
     njPrintColor_8c38c5b6(-0xff0100);

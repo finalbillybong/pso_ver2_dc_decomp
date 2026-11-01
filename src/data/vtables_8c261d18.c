@@ -88,46 +88,46 @@ extern void operation_8c0134e0(void);
 extern void operation_8c0134e4(void);
 extern void operation_8c0134e8(void);
 extern void operation_8c0134ec(void);
-extern void destroy_object_8c04bb2c(void);
-extern void fn_8c04bb70(void);
-extern void destroy_effect_d870_8c04f904(void);
-extern void operation_8c04f964(void);
-extern void operation_8c04f960(void);
+extern void TNECFontEORFunction_dtor_8c04bb2c(void);
+extern void TNECFontEORFunction_update_8c04bb70(void);
+extern void TObjGrassWeb_dtor_8c04f904(void);
+extern void TObjGrassWeb_update_8c04f964(void);
+extern void TObjGrassWeb_render_8c04f960(void);
 extern void reset_shared_object(void);
 extern void operation_8c010508(void);
-extern void operation_8c04ca48(void);
-extern void operation_8c04cd5c(void);
-extern void fn_8c04cef0(void);
-extern void operation_8c04f850(void);
+extern void TObjGrass_dtor_8c04ca48(void);
+extern void TObjGrass_update_8c04cd5c(void);
+extern void TObjGrass_render_8c04cef0(void);
+extern void TObjGrass_render_shadow_8c04f850(void);
 extern void operation_8c013448(void);
-extern void fn_8c04d15c(void);
-extern void fn_8c04de04(void);
-extern void operation_8c04d324(void);
-extern void operation_8c04d380(void);
-extern void operation_8c04d3dc(void);
-extern void operation_8c04d9fc(void);
-extern void operation_8c04e000(void);
-extern void operation_8c04f184(void);
-extern void operation_8c04f290(void);
-extern void operation_8c04f478(void);
+extern void TObjGrass_v37_8c04d15c(void);
+extern void TObjGrass_v39_8c04de04(void);
+extern void TObjGrass_v45_8c04d324(void);
+extern void TObjGrass_v48_8c04d380(void);
+extern void TObjGrass_v66_8c04d3dc(void);
+extern void TObjGrass_v67_8c04d9fc(void);
+extern void TObjGrass_v68_8c04e000(void);
+extern void TObjGrass_v69_8c04f184(void);
+extern void TObjGrass_v70_8c04f290(void);
+extern void TObjGrass_v71_8c04f478(void);
 extern void operation_8c012cfc(void);
 extern void operation_8c012b88(void);
 extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
-extern void destroy_context_8c04fee4(void);
-extern void fn_8c050124(void);
-extern void operation_8c05157c(void);
-extern void operation_8c051750(void);
-extern void fn_8c0503a4(void);
-extern void operation_8c051a8c(void);
-extern void operation_8c0519f4(void);
-extern void operation_8c051a20(void);
-extern void operation_8c0505a4(void);
-extern void operation_8c0508f0(void);
-extern void fn_8c050e3c(void);
-extern void operation_8c05110c(void);
-extern void operation_8c0511bc(void);
-extern void operation_8c051390(void);
+extern void TObjEneLappy_dtor_8c04fee4(void);
+extern void TObjEneLappy_update_8c050124(void);
+extern void TObjEneLappy_render_8c05157c(void);
+extern void TObjEneLappy_render_shadow_8c051750(void);
+extern void TObjEneLappy_v37_8c0503a4(void);
+extern void TObjEneLappy_v40_8c051a8c(void);
+extern void TObjEneLappy_v45_8c0519f4(void);
+extern void TObjEneLappy_v48_8c051a20(void);
+extern void TObjEneLappy_v66_8c0505a4(void);
+extern void TObjEneLappy_v67_8c0508f0(void);
+extern void TObjEneLappy_v68_8c050e3c(void);
+extern void TObjEneLappy_v69_8c05110c(void);
+extern void TObjEneLappy_v70_8c0511bc(void);
+extern void TObjEneLappy_v71_8c051390(void);
 
 /* 8c261d18: type-information and this-adjustment header, then 86 slots */
 VirtualFunction const vt_8c261d18[88] = {
@@ -225,8 +225,8 @@ VirtualFunction const vt_8c261d18[88] = {
 VirtualFunction const vt_8c261e78[7] = {
     0,
     0,
-    destroy_object_8c04bb2c,
-    fn_8c04bb70,
+    TNECFontEORFunction_dtor_8c04bb2c,
+    TNECFontEORFunction_update_8c04bb70,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -236,9 +236,9 @@ VirtualFunction const vt_8c261e78[7] = {
 VirtualFunction const vt_8c261e94[16] = {
     0,
     0,
-    destroy_effect_d870_8c04f904,
-    operation_8c04f964,
-    operation_8c04f960,
+    TObjGrassWeb_dtor_8c04f904,
+    TObjGrassWeb_update_8c04f964,
+    TObjGrassWeb_render_8c04f960,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -256,10 +256,10 @@ VirtualFunction const vt_8c261e94[16] = {
 VirtualFunction const vt_8c261ed4[91] = {
     0,
     0,
-    operation_8c04ca48,
-    operation_8c04cd5c,
-    fn_8c04cef0,
-    operation_8c04f850,
+    TObjGrass_dtor_8c04ca48,
+    TObjGrass_update_8c04cd5c,
+    TObjGrass_render_8c04cef0,
+    TObjGrass_render_shadow_8c04f850,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -293,18 +293,18 @@ VirtualFunction const vt_8c261ed4[91] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    fn_8c04d15c,
+    TObjGrass_v37_8c04d15c,
     operation_8c0133f8,
-    fn_8c04de04,
+    TObjGrass_v39_8c04de04,
     object_blocked_8c013418,
     object_blocked_8c013428,
     object_blocked_8c01343c,
     object_blocked_8c0133ec,
     operation_455ac,
-    operation_8c04d324,
+    TObjGrass_v45_8c04d324,
     operation_45844,
     operation_45910,
-    operation_8c04d380,
+    TObjGrass_v48_8c04d380,
     operation_45a8c,
     operation_45b8c,
     operation_45d6c,
@@ -322,12 +322,12 @@ VirtualFunction const vt_8c261ed4[91] = {
     operation_8c0471fc,
     fn_8c047268,
     operation_8c047438,
-    operation_8c04d3dc,
-    operation_8c04d9fc,
-    operation_8c04e000,
-    operation_8c04f184,
-    operation_8c04f290,
-    operation_8c04f478,
+    TObjGrass_v66_8c04d3dc,
+    TObjGrass_v67_8c04d9fc,
+    TObjGrass_v68_8c04e000,
+    TObjGrass_v69_8c04f184,
+    TObjGrass_v70_8c04f290,
+    TObjGrass_v71_8c04f478,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -351,10 +351,10 @@ VirtualFunction const vt_8c261ed4[91] = {
 VirtualFunction const vt_8c262040[91] = {
     0,
     0,
-    destroy_context_8c04fee4,
-    fn_8c050124,
-    operation_8c05157c,
-    operation_8c051750,
+    TObjEneLappy_dtor_8c04fee4,
+    TObjEneLappy_update_8c050124,
+    TObjEneLappy_render_8c05157c,
+    TObjEneLappy_render_shadow_8c051750,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -388,18 +388,18 @@ VirtualFunction const vt_8c262040[91] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    fn_8c0503a4,
+    TObjEneLappy_v37_8c0503a4,
     operation_8c0133f8,
     fn_8c045200,
-    operation_8c051a8c,
+    TObjEneLappy_v40_8c051a8c,
     object_blocked_8c013428,
     object_blocked_8c01343c,
     object_blocked_8c0133ec,
     operation_455ac,
-    operation_8c0519f4,
+    TObjEneLappy_v45_8c0519f4,
     operation_45844,
     operation_45910,
-    operation_8c051a20,
+    TObjEneLappy_v48_8c051a20,
     operation_45a8c,
     operation_45b8c,
     operation_45d6c,
@@ -417,12 +417,12 @@ VirtualFunction const vt_8c262040[91] = {
     operation_8c0471fc,
     fn_8c047268,
     operation_8c047438,
-    operation_8c0505a4,
-    operation_8c0508f0,
-    fn_8c050e3c,
-    operation_8c05110c,
-    operation_8c0511bc,
-    operation_8c051390,
+    TObjEneLappy_v66_8c0505a4,
+    TObjEneLappy_v67_8c0508f0,
+    TObjEneLappy_v68_8c050e3c,
+    TObjEneLappy_v69_8c05110c,
+    TObjEneLappy_v70_8c0511bc,
+    TObjEneLappy_v71_8c051390,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,

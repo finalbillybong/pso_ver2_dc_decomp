@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x234];
     int f234;
 };
-void operation_8c23c19c(Object *o)
+void TItemWpnDoubleCanon_v53_8c23c19c(Object *o)
 {
     o->f234 += 0xaaa;
 }

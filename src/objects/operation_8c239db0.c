@@ -9,7 +9,7 @@ struct Object {
     int f234;
     int f238;
 };
-void operation_8c239db0(Object *o)
+void TItemWpnBearCane_v53_8c239db0(Object *o)
 {
     char *v11;
     int v12;

@@ -57,9 +57,9 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c510ee0 *g_8c510ee0;
 extern "C" void operation_8c0ee870(void *);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void operation_8c245d6c(void *, void *, void *, int);
+extern "C" void TEffStarLight2D_ctor_8c245d6c(void *, void *, void *, int);
 extern "C" void call_8c24a610(Object *);
-extern "C" Object *operation_8c24a100(Object *o, int a1, int a2)
+extern "C" Object *TObjCamera_ctor_8c24a100(Object *o, int a1, int a2)
 {
     Frame frame;
     Object **home = &o;
@@ -81,7 +81,7 @@ extern "C" Object *operation_8c24a100(Object *o, int a1, int a2)
     while (8 > v5) {
         t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x50);
         if (t1 != 0) {
-            operation_8c245d6c((void *)t1, (void *)(((char *)o + 0x3c)), (void *)(&(&frame)->f04), (int)o);
+            TEffStarLight2D_ctor_8c245d6c((void *)t1, (void *)(((char *)o + 0x3c)), (void *)(&(&frame)->f04), (int)o);
         }
         *(int *)((char *)((char *)((int)o + v4) + 0x0) + (v5 << 2)) = (int)t1;
         v5 = (int)(v5 + 1);

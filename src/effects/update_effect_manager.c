@@ -28,7 +28,7 @@ typedef char check_manager_text_cursor[
      (unsigned long)&((TextBuffer *)0)->field10) == 76 ? 1 : -1];
 
 /* Provisional mode/input names preserve the observed editor and effect flow. */
-void update_effect_manager(EffectManager *p) {
+void TParticleEditor_v06_8c0a7f90(EffectManager *p) {
     switch (p->field70) {
     case 0:
         if (key_at(6)) {

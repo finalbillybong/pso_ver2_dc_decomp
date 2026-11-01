@@ -31,9 +31,9 @@ extern int g_8c4daaf0;
 extern int g_8c4daaf4;
 extern void operation_8c220b5c(void);
 extern void request_resource_release(void *);
-extern void destroy_object_8c106598(void *, short);
+extern void TShopSequence_dtor_8c106598(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c159270(Object *o, int a1)
+Object *THunterGuildSeqOffline_dtor_8c159270(Object *o, int a1)
 {
     S_vv1 *v1;
     S_vv7 *v7;
@@ -56,7 +56,7 @@ Object *operation_8c159270(Object *o, int a1)
         }
         g_8c4daaf0 = 0;
         g_8c4daaf4 = 0;
-        destroy_object_8c106598((void *)o, (short)0);
+        TShopSequence_dtor_8c106598((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

@@ -23,7 +23,7 @@ extern void call_8c1e0174(Object *, unsigned char);
 extern void call_8c1e0324(Object *);
 extern void call_8c0db30c(Object *);
 extern void interpolate_view_parameters(void *);
-void operation_8c1dfde4(Object *o)
+void TWindowKeyBoardHard_update_8c1dfde4(Object *o)
 {
     int t1;
     if (((o->f68 & 0x200)) == 0) {

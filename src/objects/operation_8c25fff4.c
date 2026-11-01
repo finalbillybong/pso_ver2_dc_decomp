@@ -15,7 +15,7 @@ struct Object {
     int f28;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c25fff4(Object *o, int a1)
+Object *TObjDeadListWin_ctor_8c25fff4(Object *o, int a1)
 {
     int v1;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);

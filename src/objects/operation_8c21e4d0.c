@@ -30,7 +30,7 @@ extern S_L8c4db528 g_8c4db528;
 extern void call_8c18c808(void *);
 extern int operation_8c173ef8(int);
 extern int hierarchy_is_active(void *);
-void operation_8c21e4d0(Object *o)
+void TWindowSubQuestBoard_update_8c21e4d0(Object *o)
 {
     int v1;
     int v2;

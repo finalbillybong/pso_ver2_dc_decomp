@@ -11,7 +11,7 @@ struct Object {
     int f24;
 };
 extern void call_8c258794(void);
-void operation_8c25876c(Object *o)
+void TODummyKeyCave01Sound_update_8c25876c(Object *o)
 {
     o->f24 += -1;
     if (o->f24 == 0) {

@@ -13,7 +13,7 @@ extern void TObjCollision_create_8c0104a0(void);
 extern void TObjMapCsn_create_8c1a1400(void);
 extern void TObjQuestCol_create_8c034098(void);
 extern void TObjQuestColA_create_8c0340dc(void);
-extern void operation_8c09fc80(void);
+extern void TEF_LensFlare_ctor_8c09fc80(void);
 extern void TObjItemLight_create_8c034164(void);
 extern void TObjRaderCol_create_8c0341ec(void);
 extern void TObjFogCollisionSwitch_create_8c136b34(void);
@@ -81,7 +81,7 @@ const Record_8c2ea8b8 d_8c2ea8b8[67] = {
     { 20, (void *)TObjMapCsn_create_8c1a1400, 250000.0f, 0 },
     { 18, (void *)TObjQuestCol_create_8c034098, 250000.0f, 0 },
     { 21, (void *)TObjQuestColA_create_8c0340dc, 250000.0f, 0 },
-    { 17, (void *)operation_8c09fc80, 1e+08f, 0 },
+    { 17, (void *)TEF_LensFlare_ctor_8c09fc80, 1e+08f, 0 },
     { 22, (void *)TObjItemLight_create_8c034164, 250000.0f, 0 },
     { 23, (void *)TObjRaderCol_create_8c0341ec, 250000.0f, 0 },
     { 24, (void *)TObjFogCollisionSwitch_create_8c136b34, 250000.0f, 0 },

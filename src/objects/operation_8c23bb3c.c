@@ -33,7 +33,7 @@ extern S_c8c0744dc *find_record_8c0744dc(int);
 extern int call_8c075894(S_c8c0744dc *, void *, void *, Frame *);
 extern void operation_8c246154(void *, void *);
 extern void operation_8c245f40(void *);
-void operation_8c23bb3c(Object *o)
+void TItemEffDevilCane_update_8c23bb3c(Object *o)
 {
     Frame frame;
     S_c8c0744dc *t1;

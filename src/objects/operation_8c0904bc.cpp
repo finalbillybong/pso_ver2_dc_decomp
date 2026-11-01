@@ -26,7 +26,7 @@ extern S_g8c469e10 *g_8c469e10;
 extern S_g8c469e1c *g_8c469e1c;
 extern S_g8c469e20 *g_8c469e20;
 extern "C" void call_8c03dc40(void *, int);
-extern "C" void operation_8c0904bc(void)
+extern "C" void release_assets_ene_me1_mb_8c0904bc(void)
 {
     if (g_8c469e20 != 0) {
         g_8c469e20->v0(1);

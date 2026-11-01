@@ -51,12 +51,12 @@ struct Arg0_f4 {
 extern int g_8c32afa8;
 extern S_g8c4e3060 *g_8c4e3060;
 extern S_g8c4e3064 *g_8c4e3064;
-extern "C" void call_8c1318a4(Object *);
-extern "C" Object *operation_8c1ddec8(Object *o, int a1)
+extern "C" void TODragonfly_ctor_8c1318a4(Object *);
+extern "C" Object *TOButterflyDF_ctor_8c1ddec8(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;
-    call_8c1318a4(o);
+    TODragonfly_ctor_8c1318a4(o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c2773ec;
     ((ObjectData *)o)->tag = (int)(g_8c32afa8);
     ((ObjectData *)o)->size = 0x138;

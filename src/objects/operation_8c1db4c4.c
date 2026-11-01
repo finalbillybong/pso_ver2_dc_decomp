@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern char g_8c32adfc[];
 extern int load_pvm_file_tls_8c118528(void *);
-void operation_8c1db4c4(void)
+void load_assets_TOSoulDF_8c1db4c4(void)
 {
     int t1;
     t1 = load_pvm_file_tls_8c118528((void *)((g_8c32adfc + 0x9)));

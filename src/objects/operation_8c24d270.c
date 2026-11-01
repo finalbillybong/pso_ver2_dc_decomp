@@ -20,7 +20,7 @@ struct Arg2 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c22353c(short);
-Object *operation_8c24d270(Object *o, int a1, Arg2 *a2)
+Object *TItemObjectTV_ctor_8c24d270(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     (void)home;

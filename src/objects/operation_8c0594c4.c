@@ -13,7 +13,7 @@ struct Object {
     int f3ac;
     int f3b0;
 };
-void operation_8c0594c4(Object *o)
+void TObjEneBm3FlyNest_v109_8c0594c4(Object *o)
 {
     int v8;
     o->f3a8 = 2;

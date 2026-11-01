@@ -38,7 +38,7 @@ struct S_vv1 {
 };
 extern S_g8c46ee80 *g_8c46ee80;
 extern void call_8c0a7608(void *, void *);
-void operation_8c207a0c(Object *o)
+void TAdFloorLoad_update_8c207a0c(Object *o)
 {
     Frame frame;
     S_vv1 *v1;

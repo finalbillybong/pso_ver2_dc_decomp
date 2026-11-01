@@ -9,9 +9,9 @@ struct Object {
     char unknown0[0x18];
     void *dispatch;
 };
-extern void call_8c20997c(Object *, int);
+extern void TItemEquipBase_dtor_8c20997c(Object *, int);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c2551a4(Object *o, int a1)
+Object *TItemProShieldModel2_dtor_8c2551a4(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c281010;
@@ -19,7 +19,7 @@ Object *operation_8c2551a4(Object *o, int a1)
             o->dispatch = (void *)0x8c2810d8;
             if (o != 0) {
                 o->dispatch = (void *)0x8c267e34;
-                call_8c20997c(o, 0);
+                TItemEquipBase_dtor_8c20997c(o, 0);
             }
         }
         if ((short)a1 > 0) {

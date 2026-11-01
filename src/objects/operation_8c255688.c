@@ -10,7 +10,7 @@ struct Object {
     char unknown1e4[0x4];
     int f1e8;
 };
-void operation_8c255688(Object *o)
+void TItemProArmorParticle_v43_8c255688(Object *o)
 {
     if (o->f1e8 == 2) {
         o->f1e0 = -1;

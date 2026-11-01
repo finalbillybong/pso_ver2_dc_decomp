@@ -108,5 +108,5 @@ typedef char check_Target_flags[(unsigned long)&((Target *)0)->flags==848?1:-1];
 extern "C" {extern unsigned int current_identifier;extern Target *lookup_at(unsigned int);extern void update_at(View *);extern unsigned short find_at(View *,int,float);extern float distance_at(const Vector3 *,const Vector3 *);}
 static inline int flagged(Target *o) {return (o->flags&1)!=0;}
 extern "C" {extern void refresh_at(View *),affect_at(Target *),advance_at(View *);
-void apply_context_target(View *o) {update_at(o);refresh_at(o);if(o->value<0) {o->attach(o->target,1.0f);if(o->target&&current_identifier==o->target->identifier) {Target *target=lookup_at(current_identifier);if(target) {int flag=flagged(target);if(flag!=0) affect_at(target);}}}if(o->visible==1) advance_at(o);}
+void TOTrap_v89_8c141070(View *o) {update_at(o);refresh_at(o);if(o->value<0) {o->attach(o->target,1.0f);if(o->target&&current_identifier==o->target->identifier) {Target *target=lookup_at(current_identifier);if(target) {int flag=flagged(target);if(flag!=0) affect_at(target);}}}if(o->visible==1) advance_at(o);}
 }

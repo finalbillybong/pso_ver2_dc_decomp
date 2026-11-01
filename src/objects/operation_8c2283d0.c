@@ -17,7 +17,7 @@ extern int create_effect_777c(void *, int);
 extern void set_effect_bits(void *, unsigned short);
 extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c191504(int);
-void operation_8c2283d0(Object *o)
+void TObjDFDemo2_update_8c2283d0(Object *o)
 {
     int v83;
     float v86;

@@ -11,7 +11,7 @@ struct Object {
 extern int operation_8c05bbf8(void);
 extern void reset_segments_8c05a124(void *);
 extern void operation_8c059ea4(void *, int);
-void operation_8c0581d8(Object *o)
+void TObjEneBm3FlyNest_v70_8c0581d8(Object *o)
 {
     int t1;
     if (o->f30a == 3) {

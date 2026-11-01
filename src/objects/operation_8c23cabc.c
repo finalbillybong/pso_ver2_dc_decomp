@@ -13,10 +13,10 @@ struct Object {
     char unknown20[0x44];
     int f64;
 };
-extern void operation_1abe00(void *, void *, void *, void *);
-Object *operation_8c23cabc(Object *o, int a1, int a2, int a3)
+extern void TItemShootModel_ctor_8c1abe00(void *, void *, void *, void *);
+Object *TItemShootFast_ctor_8c23cabc(Object *o, int a1, int a2, int a3)
 {
-    operation_1abe00((void *)o, (void *)a1, (void *)a2, (void *)a3);
+    TItemShootModel_ctor_8c1abe00((void *)o, (void *)a1, (void *)a2, (void *)a3);
     o->dispatch = (void *)0x8c27a67c;
     o->tag = (int)(*(int *)0x8c33a594);
     o->size = 0x68;

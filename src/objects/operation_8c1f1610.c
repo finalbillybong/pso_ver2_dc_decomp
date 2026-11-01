@@ -19,7 +19,7 @@ struct Object {
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c01c250(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c198294(int, Object *);
+extern void TAdBack_ctor_8c198294(int, Object *);
 extern int create_pair_widget_8c1f1880(Object *);
 extern void play_se_8c05fbf8(int, int, int, int);
 Object *operation_8c1f1610(Object *o)
@@ -37,7 +37,7 @@ Object *operation_8c1f1610(Object *o)
     call_8c01c250(2);
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
     if (t1 != 0) {
-        call_8c198294(t1, o);
+        TAdBack_ctor_8c198294(t1, o);
     }
     t2 = create_pair_widget_8c1f1880(o);
     o->f28 = (int)(t2);

@@ -8,14 +8,14 @@ typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern S_g8c4689e0 *g_8c4689e0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c24d3b0(void *, int, int);
-int operation_8c24d364(int a0)
+extern void TItemObjTpRecover_ctor_8c24d3b0(void *, int, int);
+int TItemObjTpRecover_create_8c24d364(int a0)
 {
     int t1;
     if (a0 != 0) {
         t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x148);
         if (t1 != 0) {
-            operation_8c24d3b0((void *)t1, (int)g_8c4689e0, a0);
+            TItemObjTpRecover_ctor_8c24d3b0((void *)t1, (int)g_8c4689e0, a0);
         }
         return (int)(t1);
     }

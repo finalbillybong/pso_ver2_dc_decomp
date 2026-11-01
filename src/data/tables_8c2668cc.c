@@ -114,10 +114,10 @@ extern void capture_current_contact(void);
 extern void fn_8c05bf78(void);
 extern void operation_8c0c8a4c(void);
 extern void operation_8c0c8a50(void);
-extern void fn_8c0c8efc(void);
-extern void fn_8c0c8fc4(void);
-extern void fn_8c0cb000(void);
-extern void operation_8c0c9110(void);
+extern void TObjEneRe4Sorcerer_dtor_8c0c8efc(void);
+extern void TObjEneRe4Sorcerer_update_8c0c8fc4(void);
+extern void TObjEneRe4Sorcerer_render_8c0cb000(void);
+extern void TObjEneRe4Sorcerer_v37_8c0c9110(void);
 extern void operation_8c0466b8(void);
 extern void operation_8c04677c(void);
 extern void operation_8c04688c(void);
@@ -127,15 +127,15 @@ extern void operation_8c046c18(void);
 extern void operation_8c046d6c(void);
 extern void fn_8c046f2c(void);
 extern void fn_8c047090(void);
-extern void operation_8c0c9170(void);
-extern void operation_8c0c9134(void);
-extern void enter_actor_mode_9(void);
-extern void operation_8c0c9840(void);
-extern void operation_8c0c91c4(void);
-extern void operation_8c0c91e0(void);
-extern void operation_8c0c921c(void);
-extern void fn_8c0cb254(void);
-extern void fn_8c0cb260(void);
+extern void TObjEneRe4Sorcerer_v69_8c0c9170(void);
+extern void TObjEneRe4Sorcerer_v70_8c0c9134(void);
+extern void TObjEneRe4Sorcerer_v71_8c0c9114(void);
+extern void TObjEneRe4Sorcerer_v93_8c0c9840(void);
+extern void TObjEneRe4Sorcerer_v94_8c0c91c4(void);
+extern void TObjEneRe4Sorcerer_v107_8c0c91e0(void);
+extern void TObjEneRe4Sorcerer_v108_8c0c921c(void);
+extern void TObjEneRe4Sorcerer_v110_8c0cb254(void);
+extern void TObjEneRe4Sorcerer_v111_8c0cb260(void);
 
 Function const d_8c2668cc[114] = {
     0,
@@ -257,9 +257,9 @@ Function const d_8c2668cc[114] = {
 Function const d_8c266a94[114] = {
     0,
     0,
-    fn_8c0c8efc,
-    fn_8c0c8fc4,
-    fn_8c0cb000,
+    TObjEneRe4Sorcerer_dtor_8c0c8efc,
+    TObjEneRe4Sorcerer_update_8c0c8fc4,
+    TObjEneRe4Sorcerer_render_8c0cb000,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -294,7 +294,7 @@ Function const d_8c266a94[114] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    operation_8c0c9110,
+    TObjEneRe4Sorcerer_v37_8c0c9110,
     operation_8c0133f8,
     fn_8c045200,
     object_blocked_8c013418,
@@ -326,9 +326,9 @@ Function const d_8c266a94[114] = {
     operation_8c013408,
     operation_8c01340c,
     operation_8c013410,
-    operation_8c0c9170,
-    operation_8c0c9134,
-    enter_actor_mode_9,
+    TObjEneRe4Sorcerer_v69_8c0c9170,
+    TObjEneRe4Sorcerer_v70_8c0c9134,
+    TObjEneRe4Sorcerer_v71_8c0c9114,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -350,8 +350,8 @@ Function const d_8c266a94[114] = {
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
-    operation_8c0c9840,
-    operation_8c0c91c4,
+    TObjEneRe4Sorcerer_v93_8c0c9840,
+    TObjEneRe4Sorcerer_v94_8c0c91c4,
     operation_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,
@@ -364,9 +364,9 @@ Function const d_8c266a94[114] = {
     fn_8c05b874,
     operation_8c05b8b4,
     operation_8c05babc,
-    operation_8c0c91e0,
-    operation_8c0c921c,
+    TObjEneRe4Sorcerer_v107_8c0c91e0,
+    TObjEneRe4Sorcerer_v108_8c0c921c,
     fn_8c05bf78,
-    fn_8c0cb254,
-    fn_8c0cb260
+    TObjEneRe4Sorcerer_v110_8c0cb254,
+    TObjEneRe4Sorcerer_v111_8c0cb260
 };

@@ -36,7 +36,7 @@ typedef struct ObjectData {
     char unknown0[0x138];
     unsigned char f138;
 } ObjectData;
-extern "C" void operation_8c0e6e44(Object *o)
+extern "C" void TItemProArmor_v17_8c0e6e44(Object *o)
 {
     unsigned char v1;
     v1 = (unsigned char)((ObjectData *)o)->f138;

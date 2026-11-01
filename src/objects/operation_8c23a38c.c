@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x238];
     float f238;
 };
-void operation_8c23a38c(Object *o)
+void TItemWpnBigHarisen_v49_8c23a38c(Object *o)
 {
     o->f238 = 0.1f;
 }

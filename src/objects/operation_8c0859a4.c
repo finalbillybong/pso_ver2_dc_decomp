@@ -57,7 +57,7 @@ static inline void set_entry(Object *o, SBlock4 *in)
         *(SBlock4 *)((char *)g_8c46ed0c + (o->f84->f04 << 2)) = *in;
     }
 }
-float operation_8c0859a4(Object *o)
+float TObjContainerAbeEnemy_v24_8c0859a4(Object *o)
 {
     Frame frame;
     if ((unsigned int)o->f20 >= (unsigned int)0x1000 && o->f84 != 0) {

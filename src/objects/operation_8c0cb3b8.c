@@ -12,7 +12,7 @@ struct Object {
     char unknown3c[0x3];
     char f3f;
 };
-void operation_8c0cb3b8(Object *o)
+void TObjEneMe1Canadin_EffLineFade_update_8c0cb3b8(Object *o)
 {
     int v1;
     v1 = (int)(o->f3b + -0x10);

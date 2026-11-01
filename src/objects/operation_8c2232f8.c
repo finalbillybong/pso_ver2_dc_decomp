@@ -16,7 +16,7 @@ struct Object {
     int f28;
     int f2c;
 };
-Object *operation_8c2232f8(Object *o, int a1, int a2, int a3, int a4)
+Object *TItemLockCountCtrl_ctor_8c2232f8(Object *o, int a1, int a2, int a3, int a4)
 {
     Object **home = &o;
     int v1;

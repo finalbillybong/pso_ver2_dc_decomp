@@ -9,7 +9,7 @@ struct S_L8c4db494 {
     char f13;
 };
 extern S_L8c4db494 g_8c4db494;
-void operation_8c171dfc(unsigned int a0)
+void quest_op_ba_forbid_scape_dolls_8c171dfc(unsigned int a0)
 {
     if ((unsigned int)2 > a0) {
         (&g_8c4db494)->f13 = *(int *)((char *)0x8c286654 + (a0 << 2));

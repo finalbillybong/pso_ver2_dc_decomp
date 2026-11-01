@@ -8,7 +8,7 @@ typedef struct S_g8c470504 S_g8c470504;
 extern S_g8c470500 *g_8c470500;
 extern S_g8c470504 *g_8c470504;
 extern void call_8c03dc40(void *, int);
-void operation_8c0f03d0(void)
+void release_assets_o_wreck_ancient_8c0f03d0(void)
 {
     if (g_8c470500 != 0) {
         call_8c03dc40(g_8c470500, 1);

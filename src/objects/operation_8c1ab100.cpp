@@ -28,7 +28,7 @@ typedef struct ObjectData {
     int fec;
 } ObjectData;
 extern "C" void call_8c051eb8(int);
-extern "C" Object *operation_8c1ab100(Object *o, int a1, int a2)
+extern "C" Object *TObjMesBase_ctor_8c1ab100(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;

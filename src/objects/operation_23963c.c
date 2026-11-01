@@ -1,7 +1,7 @@
 /* Provisional address-based name; preserve observed field accesses and call order. */
 #include "src/include/resource_owner.h"
 #define base_at ((void (*)(ResourceOwner *,void *,void *))0x8c075398)
-ResourceOwner *operation_23963c(ResourceOwner *o,void *a,void *b){
+ResourceOwner *TItemWpnWindCane_ctor_8c23963c(ResourceOwner *o,void *a,void *b){
     base_at(o,a,b);
     o->dispatch=(void *)0x8c27923c;
     o->tag=*(unsigned int *)0x8c33a330;

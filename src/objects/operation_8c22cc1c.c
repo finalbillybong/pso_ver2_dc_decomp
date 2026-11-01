@@ -15,14 +15,14 @@ struct S_c8c122700_30 {
     S_c8c122700_30_0 *f00;
 };
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c22ca64(S_c8c122700 *, int, void *);
+extern void TWindowLoadItemTexture_ctor_8c22ca64(S_c8c122700 *, int, void *);
 extern void set_normalized_rectangle(void *, float, float, float, float);
 S_c8c122700 *operation_8c22cc1c(int a0)
 {
     S_c8c122700 *t1;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x74);
     if (t1 != 0) {
-        call_8c22ca64(t1, a0, (void *)((void *)0x8c2e1b60));
+        TWindowLoadItemTexture_ctor_8c22ca64(t1, a0, (void *)((void *)0x8c2e1b60));
     }
     set_normalized_rectangle((void *)(t1->f30->f00), 0.0f, 0.0f, 0.625f, 0.46875f);
     return t1;

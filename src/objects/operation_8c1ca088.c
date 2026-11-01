@@ -40,7 +40,7 @@ extern void initialize_base_8c0db1d0(void *, int);
 extern int call_8c04b8dc(int);
 extern float call_8c19a09c(float);
 extern void call_8c0e2278(void *, int, int);
-Object *operation_8c1ca088(Object *o)
+Object *TWindowQuantity_ctor_8c1ca088(Object *o)
 {
     Object **home = &o;
     char *v1;

@@ -25,11 +25,11 @@ struct Arg0_24 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c1e0f10(int);
+extern void TWindowKeyBoardBase_ctor_8c1e0f10(int);
 extern void call_8c1e2110(Arg0_24 *, int, int);
-extern void operation_8c1dfd28(void *, int);
+extern void TWindowKeyBoardHard_ctor_8c1dfd28(void *, int);
 extern void set_fields_8c1e0ef4(void *);
-extern void operation_8c1de120(void *, int);
+extern void TWindowKeyBoardSoft_ctor_8c1de120(void *, int);
 extern void set_field_8c1e22c8(void *);
 extern void operation_8c1e0070(void *);
 extern void operation_8c1debb8(void *);
@@ -50,20 +50,20 @@ Object *operation_8c051a98(Object *o, int a1, int a2, int a3, register unsigned 
     o->f20 = 0;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xc0);
     if (t1 != 0) {
-        call_8c1e0f10(t1);
+        TWindowKeyBoardBase_ctor_8c1e0f10(t1);
     }
     o->f24 = (Arg0_24 *)t1;
     call_8c1e2110((Arg0_24 *)(o->f24), a2, a3);
     o->f24->f6a |= 8;
     t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x80);
     if (t2 != 0) {
-        operation_8c1dfd28((void *)t2, (int)(o->f24));
+        TWindowKeyBoardHard_ctor_8c1dfd28((void *)t2, (int)(o->f24));
     }
     o->f28 = (Arg0_28 *)t2;
     set_fields_8c1e0ef4((void *)(o->f28));
     t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x74);
     if (t3 != 0) {
-        operation_8c1de120((void *)t3, (int)(o->f24));
+        TWindowKeyBoardSoft_ctor_8c1de120((void *)t3, (int)(o->f24));
     }
     o->f2c = (Arg0_2c *)t3;
     if (a4 == 0) {

@@ -11,7 +11,7 @@ struct Object {
     int f4c;
     int f50;
 };
-void operation_8c1ab5ec(Object *o)
+void TFontSmallHelp_update_8c1ab5ec(Object *o)
 {
     o->f4c += 1;
     if (o->f50 > 0) {

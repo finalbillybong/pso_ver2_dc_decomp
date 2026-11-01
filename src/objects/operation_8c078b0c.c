@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c078b0c(void)
+void TBoss1DragonEffBreath_render_8c078b0c(void)
 {
 }

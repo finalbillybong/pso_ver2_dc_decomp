@@ -19,16 +19,16 @@ extern void decrease_base_blend(void);
 extern void increase_base_blend(void);
 extern void apply_base_blend(void);
 extern void base_blend_above_minimum(void);
-extern void destroy_paired_array_owner(void);
-extern void paired_array_idle_callback(void);
+extern void TEnemyTaskList_dtor_8c114b58(void);
+extern void TEnemyTaskList_update_8c114bd8(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_scene_control_owner(void);
+extern void TFogEditor_dtor_8c115f80(void);
 extern void operation_8c03ceac(void);
-extern void operation_8c1162b8(void);
-extern void operation_8c1160a0(void);
-extern void operation_8c116328(void);
+extern void TFogEditor_v05_8c1162b8(void);
+extern void TFogEditor_v06_8c1160a0(void);
+extern void TFogEditor_v07_8c116328(void);
 
 /* 8c269df8: type-information and this-adjustment header, then 9 slots */
 VirtualFunction const vt_8c269df8[11] = {
@@ -64,8 +64,8 @@ VirtualFunction const vt_8c269e24[11] = {
 VirtualFunction const vt_8c269e50[7] = {
     0,
     0,
-    destroy_paired_array_owner,
-    paired_array_idle_callback,
+    TEnemyTaskList_dtor_8c114b58,
+    TEnemyTaskList_update_8c114bd8,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -75,12 +75,12 @@ VirtualFunction const vt_8c269e50[7] = {
 VirtualFunction const vt_8c269e6c[10] = {
     0,
     0,
-    destroy_scene_control_owner,
+    TFogEditor_dtor_8c115f80,
     operation_8c03ceac,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c1162b8,
-    operation_8c1160a0,
-    operation_8c116328
+    TFogEditor_v05_8c1162b8,
+    TFogEditor_v06_8c1160a0,
+    TFogEditor_v07_8c116328
 };

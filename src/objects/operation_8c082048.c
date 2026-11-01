@@ -58,7 +58,7 @@ extern char g_8c2ff2ec[];
 extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern int load_pvm_file_tls_8c118528(void *);
-void operation_8c082048(void)
+void load_assets_fe_obj_doa_kanban_8c082048(void)
 {
     S_vv3 *v3;
     int t1;

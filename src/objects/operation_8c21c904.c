@@ -14,7 +14,7 @@ struct Object {
 extern void call_8c1ccdc8(void);
 extern int operation_192b4c(void *);
 extern void call_8c21cac8(Object *);
-void operation_8c21c904(Object *o)
+void TWindowSubShortCutList_update_8c21c904(Object *o)
 {
     int t1;
     call_8c1ccdc8();

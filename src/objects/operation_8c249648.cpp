@@ -49,11 +49,11 @@ typedef struct ObjectData {
     int f214;
 } ObjectData;
 extern "C" int call_8c1aaabc(int);
-extern "C" void create_effect_b03c8(void *, void *, void *);
-extern "C" void create_effect_b03c8_8c0ba928(void *, void *, void *);
+extern "C" void TTecDeband_create_8c0b03c8(void *, void *, void *);
+extern "C" void TTecSifta_create_8c0ba928(void *, void *, void *);
 extern "C" void operation_8c077224(void *);
 extern "C" void call_8c076580(Object *);
-extern "C" void operation_8c249648(Object *o)
+extern "C" void TItemWpnSRed_v49_8c249648(Object *o)
 {
     int t1;
     int t2;
@@ -64,9 +64,9 @@ extern "C" void operation_8c249648(Object *o)
             return;
         }
         if (((ObjectData *)o)->f214 == 0) {
-            create_effect_b03c8((void *)(((ObjectData *)o)->f13c), (void *)((int)((ObjectData *)o)->f13c + 0x3c), (void *)2);
+            TTecDeband_create_8c0b03c8((void *)(((ObjectData *)o)->f13c), (void *)((int)((ObjectData *)o)->f13c + 0x3c), (void *)2);
         } else {
-            create_effect_b03c8_8c0ba928((void *)(((ObjectData *)o)->f13c), (void *)((int)((ObjectData *)o)->f13c + 0x3c), (void *)2);
+            TTecSifta_create_8c0ba928((void *)(((ObjectData *)o)->f13c), (void *)((int)((ObjectData *)o)->f13c + 0x3c), (void *)2);
         }
         operation_8c077224((void *)o);
         return;

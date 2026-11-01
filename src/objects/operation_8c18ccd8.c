@@ -27,7 +27,7 @@ extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_base_8c0db1d0(void *, int);
 extern int game_malloc_8c011ecc(int);
 extern void call_8c199e48(int, void *, int, int);
-S_c8c122700 *operation_8c18ccd8(int a0, int a1, int a2)
+S_c8c122700 *TWindowMainMenuCommand_ctor_8c18ccd8(int a0, int a1, int a2)
 {
     Frame frame;
     S_c8c122700 *t1;

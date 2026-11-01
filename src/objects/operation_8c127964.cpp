@@ -112,7 +112,7 @@ extern S_g8c44be94 *g_8c44be94;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void TObjControl_ctor_8c0130ac(void *, int);
-extern "C" void initialize_actor_8c11dbd0(void *, S_c8c122700 *);
+extern "C" void TObjEneBalClaw_ctor_8c11dbd0(void *, S_c8c122700 *);
 extern "C" void call_8c127738(S_c8c122700 *);
 extern "C" void request_actor_mode_seven(void *);
 extern "C" S_c8c122700 *TObjEneBalClawClaw_create_8c127964(Object *o)
@@ -128,7 +128,7 @@ extern "C" S_c8c122700 *TObjEneBalClawClaw_create_8c127964(Object *o)
         S_c8c122700 *self = (S_c8c122700 *)t2;
         S_c8c122700 **home = &self;
         (void)home;
-        initialize_actor_8c11dbd0((void *)t2, t1);
+        TObjEneBalClaw_ctor_8c11dbd0((void *)t2, t1);
         *(void **)((char *)self + 0x18) = (void *)(void *)0x8c26c170;
         self->v88(o);
         call_8c127738(self);

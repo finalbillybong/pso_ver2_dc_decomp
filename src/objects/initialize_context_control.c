@@ -6,7 +6,7 @@ extern void *object_name,*heap;
 extern unsigned char control_flag;
 extern int active;
 extern Context *context;
-extern void TObject_ctor_8c0330e4(Control *,void *),TObject_dtor_8c03311c(Control *,int),release_at(void *,void *),reset_at(Control *),prepare_at(Control *);
+extern void TObject_ctor_8c0330e4(Control *,void *),TObject_dtor_8c03311c(Control *,int),release_at(void *,void *),reset_at(Control *),TEF_PvrWave_create_8c031678(Control *);
 Control *TScene_ctor_8c031358(Control *o,void *parent) {
     Control **home=&o;
     TObject_ctor_8c0330e4(o,parent);
@@ -20,6 +20,6 @@ Control *TScene_ctor_8c031358(Control *o,void *parent) {
     o->limit=50;
     o->last=0;
     reset_at(o);
-    if(active && context && context->item) prepare_at(o);
+    if(active && context && context->item) TEF_PvrWave_create_8c031678(o);
     return o;
 }

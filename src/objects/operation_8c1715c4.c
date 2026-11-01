@@ -11,7 +11,7 @@ struct S_c8c021ef8 {
     int f310;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c1715c4(int a0, int a1)
+void quest_op_get_player_state_8c1715c4(int a0, int a1)
 {
     int v1;
     int v2;

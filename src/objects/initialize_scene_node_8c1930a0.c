@@ -13,7 +13,7 @@ struct Object {
     short size;
 };
 extern void TObject_ctor_8c0330e4(Object *, int);
-Object *initialize_scene_node_8c1930a0(Object *o, int a1)
+Object *TItemLoad_ctor_8c1930a0(Object *o, int a1)
 {
     TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c27282c;

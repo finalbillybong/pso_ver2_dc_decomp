@@ -11,7 +11,7 @@ struct Object {
 };
 extern void destroy_shared_object(void *, short, int);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1c04c4(Object *o, int a1)
+Object *TOExplosiveMachine_dtor_8c1c04c4(Object *o, int a1)
 {
     int v1;
     if (o != 0) {

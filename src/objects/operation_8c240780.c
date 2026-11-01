@@ -11,7 +11,7 @@ struct Object {
     float f23c;
     int f240;
 };
-void operation_8c240780(Object *o)
+void TItemWpnTessen_v51_8c240780(Object *o)
 {
     o->f240 = 0;
     o->f23c = 1.0f;

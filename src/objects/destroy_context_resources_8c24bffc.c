@@ -1,2 +1,2 @@
 extern void destroy_at(void *,int);extern void *context;
-void destroy_context_resources_8c24bffc(void) {if(context) destroy_at(context,1);}
+void release_assets_o_vs2_8c24bffc(void) {if(context) destroy_at(context,1);}

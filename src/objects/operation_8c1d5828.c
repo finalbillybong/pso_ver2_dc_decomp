@@ -12,7 +12,7 @@ struct S_L8c41cba0 {
 extern char g_8c41cba0[];
 extern int operation_8c01d8a8(void *, int);
 extern void call_8c18c808(void *);
-void operation_8c1d5828(void)
+void TWindowSubAreaMap_update_8c1d5828(void)
 {
     int t1;
     if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {

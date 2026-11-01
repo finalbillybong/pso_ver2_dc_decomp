@@ -15,7 +15,7 @@ struct Object {
     char unknown82[0x1a];
     int f9c;
 };
-extern void initialize_grid_8c1566f0(void *, unsigned int);
+extern void TWindowMenu_ctor_8c1566f0(void *, unsigned int);
 extern int operation_8c207130(Object *);
 extern float call_8c37e2c0(float);
 extern int game_malloc_8c011ecc(int);
@@ -23,7 +23,7 @@ extern void operation_192b14(void *, signed char, signed char);
 extern void operation_8c1571d4(void *, int);
 extern void call_8c207160(Object *);
 extern void operation_8c1570b4(void *, float, float);
-Object *operation_8c206ee4(Object *o)
+Object *TWindowSubComCardList_ctor_8c206ee4(Object *o)
 {
     Object **home = &o;
     int t3;
@@ -31,7 +31,7 @@ Object *operation_8c206ee4(Object *o)
     float t2;
     int v1;
     (void)home;
-    initialize_grid_8c1566f0((void *)o, (unsigned int)7);
+    TWindowMenu_ctor_8c1566f0((void *)o, (unsigned int)7);
     o->dispatch = (void *)0x8c278090;
     o->tag = (int)(*(int *)0x8c335d28);
     o->size = 0xa0;

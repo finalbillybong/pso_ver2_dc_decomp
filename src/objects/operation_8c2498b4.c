@@ -28,7 +28,7 @@ extern int call_8c1196d4(void *, void *, int);
 extern void strncpy_8c12b154(void *, void *, int);
 extern void operation_8c119764(int, int, int);
 extern void request_resource_release(void *);
-void operation_8c2498b4(Object *o)
+void TObjBagWarnWin_update_8c2498b4(Object *o)
 {
     int t1;
     int t2;

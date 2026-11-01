@@ -39,7 +39,7 @@ extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3827d8(void *);
 extern "C" void call_8c3aa716(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c1c0598(Object *o)
+extern "C" void TOExplosiveMachine_render_8c1c0598(Object *o)
 {
     int t1;
     t1 = o->v11(((ObjectData *)o)->f94, ((ObjectData *)o)->f98);

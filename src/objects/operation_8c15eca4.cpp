@@ -68,8 +68,8 @@ extern Block8 g_8c316e60;
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" float object_random_fraction(void *);
 extern "C" S_c8c1794c8 *record30_8c1794c8(int);
-extern "C" void create_effect_b3b80(void *, void *, void *, void *);
-extern "C" void create_effect_bada4(void *, void *, void *, void *);
+extern "C" void TTecJelin_create_8c0b3b80(void *, void *, void *, void *);
+extern "C" void TTecZarua_create_8c0bada4(void *, void *, void *, void *);
 extern "C" void operation_8c15eca4(Object *o, int a1)
 {
     Frame frame;
@@ -95,7 +95,7 @@ extern "C" void operation_8c15eca4(Object *o, int a1)
             } else {
                 v3 = (int)t3->f1c;
             }
-            create_effect_b3b80((void *)o, (void *)(((char *)o + 0x324)), (void *)(((char *)t1 + 0x324)), (void *)v3);
+            TTecJelin_create_8c0b3b80((void *)o, (void *)(((char *)o + 0x324)), (void *)(((char *)t1 + 0x324)), (void *)v3);
             return;
         }
         if (!(t2 > (o->f430 + o->f434))) {
@@ -105,7 +105,7 @@ extern "C" void operation_8c15eca4(Object *o, int a1)
             } else {
                 v6 = (int)t4->f20;
             }
-            create_effect_bada4((void *)o, (void *)(((char *)o + 0x324)), (void *)(((char *)t1 + 0x324)), (void *)v6);
+            TTecZarua_create_8c0bada4((void *)o, (void *)(((char *)o + 0x324)), (void *)(((char *)t1 + 0x324)), (void *)v6);
             return;
         }
         t1->v25(o, 0, *(Block8 *)&g_8c316e60);

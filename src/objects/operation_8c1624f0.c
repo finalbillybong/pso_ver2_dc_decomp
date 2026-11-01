@@ -15,7 +15,7 @@ struct Object {
 extern int operation_8c0eea7c(int, float);
 extern void operation_8c05426c(void *, int, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c1624f0(Object *o)
+void TODoorMachine01_v17_8c1624f0(Object *o)
 {
     int v9;
     int t1;

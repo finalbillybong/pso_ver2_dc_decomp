@@ -22,7 +22,7 @@ struct Arg0_dc {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c0bd900(Object *o)
+void TObjEneSaver_v67_8c0bd900(Object *o)
 {
     int v1;
     if (o->f30a != 1) {

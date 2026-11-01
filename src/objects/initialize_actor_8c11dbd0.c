@@ -17,7 +17,7 @@ typedef struct Actor {
 } Actor;
 extern void TObjEnemyCustom_ctor_8c0c2354(Actor *);
 extern void initialize_state_8c0fbf7c(void *);
-Actor *initialize_actor_8c11dbd0(Actor *o)
+Actor *TObjEneBalClaw_ctor_8c11dbd0(Actor *o)
 {
     Actor **self = &o;
     (void)self;

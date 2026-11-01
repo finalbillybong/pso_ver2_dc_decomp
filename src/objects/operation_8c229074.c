@@ -51,7 +51,7 @@ extern void call_8c0a7608(Arg0_98 *, void *);
 extern int create_effect_777c(void *, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c191504(int);
-void operation_8c229074(Object *o)
+void TObjDFDemo0_update_8c229074(Object *o)
 {
     Frame frame;
     char *v2;

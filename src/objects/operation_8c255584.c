@@ -17,11 +17,11 @@ struct Object {
     int f1e4;
     int f1e8;
 };
-extern void call_8c0e6d1c(Object *, int, int);
-Object *operation_8c255584(Object *o, int a1, int a2)
+extern void TItemProArmor_ctor_8c0e6d1c(Object *, int, int);
+Object *TItemProArmorParticle_ctor_8c255584(Object *o, int a1, int a2)
 {
     unsigned char v7;
-    call_8c0e6d1c(o, a1, a2);
+    TItemProArmor_ctor_8c0e6d1c(o, a1, a2);
     o->dispatch = (void *)0x8c281284;
     o->tag = (int)(*(int *)0x8c33fdd8);
     o->size = 0x1ec;

@@ -9,7 +9,7 @@ struct Object {
     int f64;
 };
 extern int get_current_area_8c032b10(void);
-void operation_8c09f2f8(Object *o)
+void TSceneSora_update_8c09f2f8(Object *o)
 {
     int t1;
     t1 = get_current_area_8c032b10();

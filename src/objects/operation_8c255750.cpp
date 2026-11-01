@@ -38,7 +38,7 @@ extern "C" void TObject_ctor_8c0330e4(void *, void *);
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" int create_effect_7708(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
-extern "C" Object *operation_8c255750(Object *o, int a1, int a2, int a3, int a4)
+extern "C" Object *TItemEffArmorParticle_ctor_8c255750(Object *o, int a1, int a2, int a3, int a4)
 {
     Object **home = &o;
     S_c8c021ef8 *t1;

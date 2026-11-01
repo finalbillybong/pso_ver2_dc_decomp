@@ -16,7 +16,7 @@ struct Object {
 };
 extern int g_8c3288e8;
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c1c0dc0(Object *o, int a1)
+Object *TObjCityAirCar_Ctrl_ctor_8c1c0dc0(Object *o, int a1)
 {
     char *pm2;
     int *v4;

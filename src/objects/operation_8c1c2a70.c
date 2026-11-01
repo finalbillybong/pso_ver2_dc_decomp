@@ -9,7 +9,7 @@ struct S_vv1 {
 };
 extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
-void operation_8c1c2a70(void)
+void load_assets_charamakingmot_8c1c2a70(void)
 {
     int t1;
     {

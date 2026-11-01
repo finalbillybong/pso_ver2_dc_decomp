@@ -28,7 +28,7 @@ extern "C" void operation_8c2088d8(void *);
 extern "C" void operation_8c20893c(void *);
 extern "C" void operation_8c2089ac(void *);
 extern "C" void operation_8c208be8(void *);
-extern "C" void operation_8c208558(Object *o)
+extern "C" void THunterGuildSeqOnline_Server_v05_8c208558(Object *o)
 {
     switch (((ObjectData *)o)->f24) {
     case 0:

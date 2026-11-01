@@ -22,7 +22,7 @@ extern void mark_effect_for_release(void *);
 extern void destroy_motion_profile_8c0ffdcc(void *, short);
 extern void TObjEnemy_dtor_8c0120f4(void *, int);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c0f8760(Object *o, int a1)
+Object *TObjEneSlimeOne_dtor_8c0f8760(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c268d28;

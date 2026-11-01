@@ -14,7 +14,7 @@ struct Object {
 extern int operation_8c09a64c(int);
 extern void call_8c197044(Object *);
 extern void call_8c196ec4(Object *);
-void operation_8c1971cc(Object *o)
+void TObjBGLifeGame_update_8c1971cc(Object *o)
 {
     int v3;
     int t1;

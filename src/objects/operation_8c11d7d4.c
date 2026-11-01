@@ -9,7 +9,7 @@ extern char g_8c3112d4[];
 extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern int load_pvm_file_tls_8c118528(void *);
-void operation_8c11d7d4(void)
+void load_assets_fe_obj_lazer4_4m_8c11d7d4(void)
 {
     int t1;
     int t2;

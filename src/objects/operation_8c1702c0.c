@@ -15,7 +15,7 @@ struct Frame {
     char f0b;
 };
 extern void operation_8c0368a8(void *);
-void operation_8c1702c0(int a0, int a1)
+void quest_op_set_switch_flag_sync_8c1702c0(int a0, int a1)
 {
     Frame frame;
     (&frame)->f06 = 0;

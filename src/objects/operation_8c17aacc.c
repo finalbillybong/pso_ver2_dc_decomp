@@ -21,7 +21,7 @@ struct Arg0_13c {
     short f332;
 };
 extern void operation_8c04a8ac(void *, int);
-void operation_8c17aacc(Object *o)
+void TItemWpnPsychowand_v53_8c17aacc(Object *o)
 {
     S_vv21 *v21;
     short v22;

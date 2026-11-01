@@ -29,7 +29,7 @@ extern int g_8c2febe4;
 extern void operation_8c051eb8(void *);
 extern void copy_actor_records(void *, void *, int);
 extern void attach_and_insert_object(void *);
-Object *operation_8c0800ec(Object *o, int a1, Arg2 *a2)
+Object *TObjTank_ctor_8c0800ec(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     (void)home;

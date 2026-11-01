@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c510ba0 S_g8c510ba0;
 extern int call_8c25ee2c(void);
-extern void operation_8c25ffbc(int);
+extern void TObjDeadListWin_create_8c25ffbc(int);
 void operation_8c2484b0(void)
 {
     int v1;
@@ -14,7 +14,7 @@ void operation_8c2484b0(void)
     if (v1 != 0) {
         t1 = call_8c25ee2c();
         if (t1 != 0 && *(int *)0x8c510ba0 != 0) {
-            operation_8c25ffbc((int)*(S_g8c510ba0 **)0x8c510ba0);
+            TObjDeadListWin_create_8c25ffbc((int)*(S_g8c510ba0 **)0x8c510ba0);
         }
     }
 }

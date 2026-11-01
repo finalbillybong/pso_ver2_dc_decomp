@@ -27,10 +27,10 @@ struct Object {
 struct Arg1 {
     Vector3 f00;
 };
-extern void call_8c0a0058(void);
-Object *operation_8c09fd7c(Object *o, Arg1 *a1)
+extern void TEffect_ctor_8c0a0058(void);
+Object *TEffClitical_ctor_8c09fd7c(Object *o, Arg1 *a1)
 {
-    call_8c0a0058();
+    TEffect_ctor_8c0a0058();
     o->dispatch = (void *)0x8c2659bc;
     o->tag = (int)(*(int *)0x8c3021b4);
     o->size = 0x7c;

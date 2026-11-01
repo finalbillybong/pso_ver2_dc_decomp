@@ -17,7 +17,7 @@ extern char g_8c34034c[];
 extern void njPrintColor_8c38c5b6(int);
 extern int get_current_area_8c032b10(void);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c259a94(Object *o)
+void TObjCityMainWarpChallenge_v09_8c259a94(Object *o)
 {
     int t1;
     if (o->f8c < 0 || o->f8c > 0xff) {

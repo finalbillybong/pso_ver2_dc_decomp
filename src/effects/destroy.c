@@ -3,7 +3,7 @@
  * stack parameter; vector words and untouched fields retain their raw behavior. */
 #define TObject_dtor_8c03311c ((void (*)(void *,int))0x8c03311c)
 #define free_at ((void (*)(void *,void *))0x8c122774)
-Effect *destroy_effect(Effect *effect,short release) {
+Effect *TParticleCtrl_dtor_8c0a7238(Effect *effect,short release) {
  if(effect) {
   effect->field_18=(void *)0x8c265c94;
   TObject_dtor_8c03311c(effect,0);

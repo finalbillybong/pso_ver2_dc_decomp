@@ -32,7 +32,7 @@ extern void call_8c119c78(void *);
 extern void operation_8c25f7dc(void *);
 extern void operation_8c25f818(void *);
 extern void select_mode4_8c1cc4f8(void);
-void operation_8c25f5fc(Object *o)
+void TAdHunLicence_update_8c25f5fc(Object *o)
 {
     char *v82;
     S_vv81 *v81;

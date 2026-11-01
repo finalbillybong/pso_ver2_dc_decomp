@@ -11,7 +11,7 @@ struct S_c8c021ef8 {
     int f818;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c171154(int a0, int a1)
+void quest_op_get_chara_class_8c171154(int a0, int a1)
 {
     char *v10;
     S_c8c021ef8 *t1;

@@ -40,17 +40,17 @@ struct S_g8c467180_2c {
     char unknown0[0x250];
     S_g8c467180_2c_250 *f250;
 };
-extern void call_8c1a62a8(int, int, void *);
+extern void TWindowChatSymbol_ctor_8c1a62a8(int, int, void *);
 extern void call_8c0dc610(Object *, float);
 extern int game_malloc_8c011ecc(int);
 extern void call_8c199b20(int, void *);
 extern void call_8c1a6460(Object *, void *);
-Object *operation_8c223dac(Object *o, int a1, int a2, int a3, int a4)
+Object *TWindowSubSymbolChatPartsSet_ctor_8c223dac(Object *o, int a1, int a2, int a3, int a4)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    call_8c1a62a8((int)o, a1, (void *)0x8c2e19a0);
+    TWindowChatSymbol_ctor_8c1a62a8((int)o, a1, (void *)0x8c2e19a0);
     o->dispatch = (void *)0x8c278acc;
     o->tag = *(int *)0x8c3374e8;
     o->size = 0xa0;

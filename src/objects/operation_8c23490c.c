@@ -28,13 +28,13 @@ struct S_vv2 {
 extern int g_8c3390c0;
 extern S_g8c44be88 *g_8c44be88;
 extern S_L8c2e1db8 g_8c2e1db8;
-extern void initialize_position_controller(void *, void *);
-Object *operation_8c23490c(Object *o)
+extern void TEditor_ctor_8c03c92c(void *, void *);
+Object *TPlyPKEditor_ctor_8c23490c(Object *o)
 {
     int v1;
     int v3;
     S_vv2 *v2;
-    initialize_position_controller((void *)o, g_8c44be88);
+    TEditor_ctor_8c03c92c((void *)o, g_8c44be88);
     o->dispatch = (void *)0x8c279008;
     o->tag = (int)(g_8c3390c0);
     o->size = 0x5c;

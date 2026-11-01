@@ -126,7 +126,7 @@ extern "C" void operation_8c059ea4(void *, int);
 extern "C" void cache_actor_position_8c058238(void *);
 extern "C" void call_8c05a108(Object *);
 extern "C" void update_context_blend(void *);
-extern "C" void operation_8c058000(Object *o)
+extern "C" void TObjEneBm3FlyNest_update_8c058000(Object *o)
 {
     int t1;
     int t2;

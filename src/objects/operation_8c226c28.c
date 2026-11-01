@@ -21,7 +21,7 @@ struct Object {
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c2270ac(Object *);
 extern void call_8c2273f8(Object *);
-Object *operation_8c226c28(Object *o, int a1)
+Object *TWindowOptionCtrl_ctor_8c226c28(Object *o, int a1)
 {
     Object **home = &o;
     int t1;

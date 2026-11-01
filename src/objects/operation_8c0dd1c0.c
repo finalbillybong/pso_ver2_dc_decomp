@@ -29,7 +29,7 @@ extern int hierarchy_is_active(void *);
 extern int operation_8c1dd614(void *);
 extern void request_resource_release(void *);
 extern int operation_8c027138(void);
-extern void *spawn_item_8c0fc440(unsigned short);
+extern void *TWindowLockOn_ctor_8c0fc440(unsigned short);
 extern void operation_8c0fc508(void *, int);
 void operation_8c0dd1c0(Object *o)
 {
@@ -64,7 +64,7 @@ L_8c0dd254:;
     t3 = operation_8c027138();
     if ((unsigned short)t3 != 0xffff) {
         if (o->f48 == 0) {
-            o->f48 = (Arg0_48 *)spawn_item_8c0fc440((unsigned short)t3);
+            o->f48 = (Arg0_48 *)TWindowLockOn_ctor_8c0fc440((unsigned short)t3);
             return;
         }
         operation_8c0fc508((void *)(o->f48), t3);

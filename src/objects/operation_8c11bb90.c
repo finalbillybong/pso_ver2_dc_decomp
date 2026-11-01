@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x34];
     int f34;
 };
-void operation_8c11bb90(Object *o)
+void TObjEnePanarms_v69_8c11bb90(Object *o)
 {
     o->f34 &= -0x101;
 }

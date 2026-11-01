@@ -17,7 +17,7 @@ struct Object {
     void *f230;
 };
 extern void call_8c075398(void);
-Object *operation_8c179d9c(Object *o)
+Object *TItemWpnFrameVisit_ctor_8c179d9c(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c271488;

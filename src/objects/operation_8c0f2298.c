@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x11c];
     int f11c;
 };
-void operation_8c0f2298(Object *o)
+void TOCapsuleAncient01_v17_8c0f2298(Object *o)
 {
     o->f11c += 0x222;
 }

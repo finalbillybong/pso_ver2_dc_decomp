@@ -14,7 +14,7 @@ struct S_g8c46fe20_54 {
     short f22;
 };
 extern void operation_8c088744(void *);
-void operation_8c1be1a0(int a0)
+void TObjCityMainWarp_v15_8c1be1a0(int a0)
 {
     operation_8c088744((void *)a0);
     if (*(int *)0x8c46fe20 != 0 && (*(S_g8c46fe20 **)0x8c46fe20)->f54 != 0) {

@@ -23,7 +23,7 @@ typedef struct ObjectData {
 
 } ObjectData;
 extern "C" void operation_8c085f60(void *);
-extern "C" void operation_8c085f2c(Object *o)
+extern "C" void TObjComputer_render_8c085f2c(Object *o)
 {
     int t1;
     t1 = o->v11(400.0f, 20.0f);

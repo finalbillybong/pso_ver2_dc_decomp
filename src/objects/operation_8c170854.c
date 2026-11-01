@@ -9,7 +9,7 @@ struct S_L8c4db494 {
     int f24;
 };
 extern S_L8c4db494 g_8c4db494;
-void operation_8c170854(unsigned int a0)
+void quest_op_ba_set_time_limit_8c170854(unsigned int a0)
 {
     int v1;
     v1 = (int)a0;

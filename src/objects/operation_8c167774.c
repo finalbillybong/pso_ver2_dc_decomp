@@ -20,7 +20,7 @@ struct S_vv1 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void destroy_context_8c051f28(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c167774(Object *o, int a1)
+Object *TPhotonConcentrate_dtor_8c167774(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

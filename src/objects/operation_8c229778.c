@@ -20,7 +20,7 @@ extern int get_game_mode_8c01c25c(void);
 extern void operation_8c0a21a4(void);
 extern void destroy_shared_object(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c229778(Object *o, int a1)
+Object *TObjDFDemo3_dtor_8c229778(Object *o, int a1)
 {
     int v8;
     int v7;

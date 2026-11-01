@@ -36,7 +36,7 @@ extern S_g8c4db408 *g_8c4db408;
 extern S_L8c4db474 g_8c4db474;
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void strncpy_8c12b154(void *, int, int);
-extern "C" void operation_8c1713e0(int a0)
+extern "C" void quest_op_get_pl_name_8c1713e0(int a0)
 {
     int v1;
     S_c8c021ef8 *t1;

@@ -8,7 +8,7 @@ typedef struct S_g8c4db408_0 S_g8c4db408_0;
 extern S_g8c4db408 *g_8c4db408;
 extern int call_8c021ef8(void *);
 extern int call_8c04a9c4(int, void *);
-void operation_8c171248(int a0, int a1)
+void quest_op_take_slot_meseta_8c171248(int a0, int a1)
 {
     int t1;
     int t2;

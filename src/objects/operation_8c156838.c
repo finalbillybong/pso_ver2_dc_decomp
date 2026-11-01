@@ -35,7 +35,7 @@ extern void call_8c157384(Object *);
 extern void position_menu_label(void *);
 extern void call_8c157290(Object *);
 extern void update_view_nodes(void *, void *);
-void operation_8c156838(Object *o)
+void TWindowMenu_update_8c156838(Object *o)
 {
     int v3;
     int v9;

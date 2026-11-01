@@ -19,7 +19,7 @@ extern char g_8c3083a8[];
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void operation_8c04c2f0(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c08aefc(int, void *, void *, void *);
+extern void TMovie_ctor_8c08aefc(int, void *, void *, void *);
 extern void operation_8c0e991c();
 Object *create_opening_movie_task_8c0e97b4(Object *o)
 {
@@ -39,33 +39,33 @@ Object *create_opening_movie_task_8c0e97b4(Object *o)
         if (t1 == 0) {
             goto L_8c0e98a0;
         }
-        call_8c08aefc(t1, g_8c44be84, (void *)((void *)g_8c3083a8), operation_8c0e991c);
+        TMovie_ctor_8c08aefc(t1, g_8c44be84, (void *)((void *)g_8c3083a8), operation_8c0e991c);
         break;
     case 1:
         t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x6c);
         if (t2 == 0) {
             goto L_8c0e98a0;
         }
-        call_8c08aefc(t2, g_8c44be84, (void *)((g_8c3083a8 + 0xf)), operation_8c0e991c);
+        TMovie_ctor_8c08aefc(t2, g_8c44be84, (void *)((g_8c3083a8 + 0xf)), operation_8c0e991c);
         break;
     case 2:
         t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x6c);
         if (t3 == 0) {
             goto L_8c0e98a0;
         }
-        call_8c08aefc(t3, g_8c44be84, (void *)((g_8c3083a8 + 0x1f)), operation_8c0e991c);
+        TMovie_ctor_8c08aefc(t3, g_8c44be84, (void *)((g_8c3083a8 + 0x1f)), operation_8c0e991c);
         break;
     case 3:
         t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x6c);
         if (t4 == 0) {
             goto L_8c0e98a0;
         }
-        call_8c08aefc(t4, g_8c44be84, (void *)((g_8c3083a8 + 0x2f)), operation_8c0e991c);
+        TMovie_ctor_8c08aefc(t4, g_8c44be84, (void *)((g_8c3083a8 + 0x2f)), operation_8c0e991c);
         break;
     case 4:
         t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x6c);
         if (t5 != 0) {
-            call_8c08aefc(t5, g_8c44be84, (void *)((g_8c3083a8 + 0x3f)), operation_8c0e991c);
+            TMovie_ctor_8c08aefc(t5, g_8c44be84, (void *)((g_8c3083a8 + 0x3f)), operation_8c0e991c);
         }
     }
 L_8c0e98a0:;

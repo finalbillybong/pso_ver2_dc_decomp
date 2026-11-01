@@ -28,7 +28,7 @@ struct S_c8c01e790 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int call_8c10baf0(void *);
 extern S_c8c01e790 *call_8c01e790(int, int, int);
-extern void call_8c1ef644(S_c8c01e790 *);
+extern void TObject_create_8c1ef644(S_c8c01e790 *);
 extern void call_8c02a438(short, void *, void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
@@ -43,7 +43,7 @@ Object *operation_8c1aa5e0(Object *o, int a1)
         if (t2 != 0) {
             t2->f308 = 6;
             if (o->f3c == 1) {
-                call_8c1ef644(t2);
+                TObject_create_8c1ef644(t2);
                 t2->f350 |= 0x40000;
             }
             call_8c02a438(o->f34, (void *)(((char *)o + 0x20)), (void *)(o->f2c));

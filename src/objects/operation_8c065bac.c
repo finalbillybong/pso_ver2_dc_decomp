@@ -9,7 +9,7 @@ extern S_g8c468928 *g_8c468928;
 extern S_g8c468978 *g_8c468978;
 extern void game_free_8c011ec0(void *);
 extern void call_8c03dc40(void *, int);
-void operation_8c065bac(void)
+void release_assets_boss1_dragon_8c065bac(void)
 {
     if (g_8c468978 != 0) {
         game_free_8c011ec0(g_8c468978);

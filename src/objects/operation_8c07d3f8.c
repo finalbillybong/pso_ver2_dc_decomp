@@ -39,7 +39,7 @@ struct Frame {
 extern int operation_8c073e5c(void *, void *);
 extern void call_8c207738(Frame *, int);
 extern void call_8c1c8d90(int, Frame *);
-int operation_8c07d3f8(Object *o, int a1)
+int TItemMag_v31_8c07d3f8(Object *o, int a1)
 {
     Frame frame;
     int v1;

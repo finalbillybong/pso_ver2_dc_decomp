@@ -9,7 +9,7 @@ struct S_L8c4db494 {
     int f1c;
 };
 extern S_L8c4db494 g_8c4db494;
-void operation_8c170824(unsigned int a0)
+void quest_op_ba_set_max_tech_level_8c170824(unsigned int a0)
 {
     int v1;
     int v3;

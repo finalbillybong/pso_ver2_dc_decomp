@@ -16,7 +16,7 @@ struct Arg0_13c {
     short f20;
 };
 extern void call_8c18a4ac(short);
-void operation_8c0e6e18(Object *o)
+void TItemProArmor_v44_8c0e6e18(Object *o)
 {
     if (((o->fec & 0x40)) == 0) {
         call_8c18a4ac(o->f13c->f20);

@@ -95,7 +95,7 @@ extern void operation_8c05c804(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
-extern void operation_8c05b168(void);
+extern void TObjEneDD_v94_8c05b168(void);
 extern void operation_8c05b16c(void);
 extern void operation_8c05b19c(void);
 extern void fn_8c05b6b4(void);
@@ -209,7 +209,7 @@ Function const d_8c2625f8[112] = {
     operation_8c059e2c,
     operation_8c059e88,
     0,
-    operation_8c05b168,
+    TObjEneDD_v94_8c05b168,
     operation_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,

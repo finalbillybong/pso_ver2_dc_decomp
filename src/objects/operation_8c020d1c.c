@@ -18,7 +18,7 @@ struct S_vv66 {
     int f00;
 };
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c0d8c40(int, Object *, short);
+extern void TLockOnCursor_ctor_8c0d8c40(int, Object *, short);
 void operation_8c020d1c(Object *o)
 {
     int v1;
@@ -34,7 +34,7 @@ void operation_8c020d1c(Object *o)
     if (o->f3b8 == 0) {
         t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x470);
         if (t1 != 0) {
-            call_8c0d8c40(t1, o, o->f20);
+            TLockOnCursor_ctor_8c0d8c40(t1, o, o->f20);
         }
         o->f3b8 = (int)(t1);
     }

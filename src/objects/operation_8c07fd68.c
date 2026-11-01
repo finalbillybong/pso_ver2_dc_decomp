@@ -15,7 +15,7 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c07fe14(Object *);
-Object *operation_8c07fd68(Object *o, int a1)
+Object *TObjRain_ctor_8c07fd68(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;

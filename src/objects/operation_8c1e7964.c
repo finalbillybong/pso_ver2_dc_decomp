@@ -43,7 +43,7 @@ extern int g_8c32c1a4;
 extern void call_8c088f14(Object *, int, int);
 extern int get_current_area_8c032b10(void);
 extern void insert_object_by_id(void *);
-Object *operation_8c1e7964(Object *o, int a1, int a2)
+Object *TObjWarpBoss_ctor_8c1e7964(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int v12;

@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern void play_se_8c05fbf8(int, int, int, int);
-void operation_8c136658(int a0)
+void TOKeyAncient03_v19_8c136658(int a0)
 {
     play_se_8c05fbf8(0x4000d, (int)(a0 + 0x3c), 0, 0);
 }

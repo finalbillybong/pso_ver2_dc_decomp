@@ -21,7 +21,7 @@ struct Object {
 struct S_g8c46fa68 {
     Vector3 f00;
 };
-void operation_8c0cd3e8(Object *o)
+void TObjBoss1MokoHill_Solo_update_8c0cd3e8(Object *o)
 {
     if (o->f48 != 0) {
         if (o->f48 == 1) {

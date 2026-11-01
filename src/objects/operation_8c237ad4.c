@@ -12,8 +12,8 @@ struct Object {
 extern S_g8c44bea0 *g_8c44bea0;
 extern int get_game_mode_8c01c25c(void);
 extern int get_current_area_8c032b10(void);
-extern void create_manager_8c25e570(void *);
-extern void operation_8c2497f4(int);
+extern void TObjTagChallenge_create_8c25e570(void *);
+extern void TObjBagWarnWin_create_8c2497f4(int);
 void operation_8c237ad4(Object *o)
 {
     int v1;
@@ -34,8 +34,8 @@ void operation_8c237ad4(Object *o)
         break;
     }
     if (v1 != 0) {
-        create_manager_8c25e570(g_8c44bea0);
-        operation_8c2497f4((int)g_8c44bea0);
+        TObjTagChallenge_create_8c25e570(g_8c44bea0);
+        TObjBagWarnWin_create_8c2497f4((int)g_8c44bea0);
         o->f20 = 1;
     }
 }

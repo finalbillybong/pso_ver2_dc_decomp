@@ -2,14 +2,14 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c1e6118(void);
-extern void operation_8c1e615c(void);
-extern void operation_0c62e0_8c1e61bc(void);
+extern void TAdSEGAlogo_dtor_8c1e6118(void);
+extern void TAdSEGAlogo_update_8c1e615c(void);
+extern void TAdSEGAlogo_render_8c1e61bc(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_object_8c1e637c(void);
-extern void operation_8c1e63c0(void);
-extern void operation_0c62e0_8c1e6420(void);
+extern void TAdSoniclogo_dtor_8c1e637c(void);
+extern void TAdSoniclogo_update_8c1e63c0(void);
+extern void TAdSoniclogo_render_8c1e6420(void);
 extern void destroy_object_8c1e64f0(void);
 extern void operation_8c1e6534(void);
 extern void operation_8c1e6538(void);
@@ -21,9 +21,9 @@ extern void operation_8c1e6a58(void);
 VirtualFunction const vt_8c277ef0[7] = {
     0,
     0,
-    destroy_object_8c1e6118,
-    operation_8c1e615c,
-    operation_0c62e0_8c1e61bc,
+    TAdSEGAlogo_dtor_8c1e6118,
+    TAdSEGAlogo_update_8c1e615c,
+    TAdSEGAlogo_render_8c1e61bc,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -32,9 +32,9 @@ VirtualFunction const vt_8c277ef0[7] = {
 VirtualFunction const vt_8c277f0c[7] = {
     0,
     0,
-    destroy_object_8c1e637c,
-    operation_8c1e63c0,
-    operation_0c62e0_8c1e6420,
+    TAdSoniclogo_dtor_8c1e637c,
+    TAdSoniclogo_update_8c1e63c0,
+    TAdSoniclogo_render_8c1e6420,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

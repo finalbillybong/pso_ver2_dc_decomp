@@ -14,14 +14,14 @@ struct Object {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_192b28(void *, short);
-extern void call_8c1567bc(Object *, int);
+extern void TWindowMenu_dtor_8c1567bc(Object *, int);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c206fd0(Object *o, int a1)
+Object *TWindowSubComCardList_dtor_8c206fd0(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c278090;
         operation_192b28((void *)(o->f9c), (short)1);
-        call_8c1567bc(o, 0);
+        TWindowMenu_dtor_8c1567bc(o, 0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

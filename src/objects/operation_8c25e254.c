@@ -30,10 +30,10 @@ extern int global_present_8c25e560(void);
 extern void select_mode16_8c1cc600(void);
 extern void select_mode11_8c1cc5a0(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c198294(int, Object *);
+extern void TAdBack_ctor_8c198294(int, Object *);
 extern int call_8c25e4e4(Object *);
 extern void call_8c1003d0(void *);
-Object *operation_8c25e254(Object *o)
+Object *TAdPSOConv_ctor_8c25e254(Object *o)
 {
     Object **home = &o;
     int t1;
@@ -75,7 +75,7 @@ Object *operation_8c25e254(Object *o)
 L_8c25e2cc:;
     t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x40);
     if (t5 != 0) {
-        call_8c198294(t5, o);
+        TAdBack_ctor_8c198294(t5, o);
     }
     t6 = call_8c25e4e4(o);
     o->f28 = (int)(t6);

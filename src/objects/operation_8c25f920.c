@@ -9,7 +9,7 @@ struct Object {
     short f04;
 };
 extern void operation_8c01b9e0(void);
-void operation_8c25f920(Object *o)
+void TItemDisconnectCtrl_update_8c25f920(Object *o)
 {
     if (*(int *)0x8c5134c0 != 0) {
         operation_8c01b9e0();

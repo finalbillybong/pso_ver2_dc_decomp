@@ -29,7 +29,7 @@ extern "C" void operation_8c052124(void *);
 extern "C" void detach_effect_node(void *, void *, void *);
 extern "C" void destroy_color_rise_8c05bd84(void *, short);
 extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c060d94(Object *o, int a1)
+extern "C" Object *TObjEneBm5Wolf_dtor_8c060d94(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)(void *)0x8c262bfc;

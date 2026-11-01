@@ -11,13 +11,13 @@ struct Object {
     short f04;
 };
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c1e6300(int, void *);
-void operation_8c1e627c(Object *o)
+extern void TAdSoniclogo_ctor_8c1e6300(int, void *);
+void TAdSoniclogo_create_8c1e627c(Object *o)
 {
     int t1;
     o->f04 |= 1;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x24);
     if (t1 != 0) {
-        call_8c1e6300(t1, (void *)(*(S_g8c44be88 **)0x8c44be88));
+        TAdSoniclogo_ctor_8c1e6300(t1, (void *)(*(S_g8c44be88 **)0x8c44be88));
     }
 }

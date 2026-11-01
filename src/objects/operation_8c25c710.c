@@ -14,7 +14,7 @@ struct Object {
     int f20;
 };
 extern void TObject_ctor_8c0330e4(Object *, int);
-Object *operation_8c25c710(Object *o, int a1)
+Object *TItemReverseTechCtrl_ctor_8c25c710(Object *o, int a1)
 {
     TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c281bfc;

@@ -26,7 +26,7 @@ extern int operation_8c1a1830(int, float);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int player_flag9_8c026508(void);
 extern void call_8c016b78(void);
-void operation_8c1a174c(Object *o)
+void TObjInfoCol_update_8c1a174c(Object *o)
 {
     int v3;
     int v5;

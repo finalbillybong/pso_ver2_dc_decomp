@@ -29,7 +29,7 @@ struct Object {
 extern void create_effect_777c(void *, int);
 extern int step_effect_color_alpha(void *, void *, float);
 extern void interpolate_effect_vector(void *, void *, float);
-void operation_8c09fe44(Object *o)
+void TEffClitical_update_8c09fe44(Object *o)
 {
     Frame frame;
     int v1;

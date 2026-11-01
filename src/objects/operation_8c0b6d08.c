@@ -12,7 +12,7 @@ struct Object {
     char unknown70[0x4];
     float f74;
 };
-void operation_8c0b6d08(Object *o)
+void TTecPlayerInfluence_v05_8c0b6d08(Object *o)
 {
     o->f6c += 1;
     if ((float)o->f6c > o->f74) {

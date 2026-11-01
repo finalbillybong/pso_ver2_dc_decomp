@@ -17,7 +17,7 @@ struct S_vv3 {
 extern int hierarchy_is_active(void *);
 extern void call_8c245fdc(Object *, void *, void *, int, int, int);
 extern void restore_child_blend(void);
-void operation_8c245f68(Object *o)
+void TEffStarLight2D_render_8c245f68(Object *o)
 {
     int v2;
     int v7;

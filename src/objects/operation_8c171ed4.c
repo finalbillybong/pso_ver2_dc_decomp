@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4db408 S_g8c4db408;
 extern void call_8c3889a4(int, void *, int);
-void operation_8c171ed4(int a0)
+void quest_op_write_flag_buf_to_event_flags_8c171ed4(int a0)
 {
     int v1;
     v1 = (int)*(int *)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + ((unsigned char)a0 << 2));

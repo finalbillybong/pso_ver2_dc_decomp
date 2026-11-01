@@ -128,7 +128,7 @@ extern "C" int operation_8c03d338(void);
 extern "C" void set_actor_raised_position_8c0d1c4c(void *);
 extern "C" void call_8c05a108(Object *);
 extern "C" void update_context_blend(void *);
-extern "C" void operation_8c0d1afc(Object *o)
+extern "C" void TObjEneRe7Berura_update_8c0d1afc(Object *o)
 {
     int t1;
     int t2;

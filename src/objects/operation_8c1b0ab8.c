@@ -13,7 +13,7 @@ extern void njPushMatrixEx_8c38ae68(void);
 extern void translate_current_matrix_v_8c382a40(void *);
 extern void call_8c38efbc(int, int, int);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c1b0ab8(Object *o)
+void TObjBoss2Dust_render_8c1b0ab8(Object *o)
 {
     char *v1;
     v1 = (char *)o->f24;

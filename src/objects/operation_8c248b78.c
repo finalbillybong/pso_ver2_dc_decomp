@@ -9,7 +9,7 @@ struct Object {
     float f23c;
     int f240;
 };
-void operation_8c248b78(Object *o)
+void TItemWpnYasumuraShiki_v53_8c248b78(Object *o)
 {
     if (o->f240 != 1) {
         if (o->f240 == 2) {

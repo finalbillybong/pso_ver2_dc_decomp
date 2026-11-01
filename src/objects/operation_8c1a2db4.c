@@ -26,8 +26,8 @@ struct Arg0_24 {
     unsigned short f80;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern int operation_8c1a2838(int, int);
-Object *operation_8c1a2db4(Object *o, int a1)
+extern int TWindowSubItemList_ctor_8c1a2838(int, int);
+Object *TWindowSubItem_ctor_8c1a2db4(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
@@ -36,7 +36,7 @@ Object *operation_8c1a2db4(Object *o, int a1)
     o->dispatch = (void *)0x8c273770;
     o->tag = *(int *)0x8c31db18;
     o->size = 0x40;
-    t1 = operation_8c1a2838((int)((void *)0x8c287bb0), (int)((void *)0x8c287bb8));
+    t1 = TWindowSubItemList_ctor_8c1a2838((int)((void *)0x8c287bb0), (int)((void *)0x8c287bb8));
     o->f24 = (Arg0_24 *)t1;
     o->f24->f80 = (o->f24->f80 & 0xffff) | 0x10;
     o->f34 = 0;

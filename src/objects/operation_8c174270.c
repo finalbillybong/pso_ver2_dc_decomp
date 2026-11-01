@@ -46,7 +46,7 @@ extern void position_menu_label_8c1576fc(void *);
 extern void operation_8c0dc610(void *, float);
 extern int create_fitted_pair_grid_view(void *, void *);
 extern void operation_8c119764(int, int, int);
-Object *operation_8c174270(Object *o, int a1)
+Object *TObjItemNameSelect_ctor_8c174270(Object *o, int a1)
 {
     Frame frame;
     Object **home = &o;

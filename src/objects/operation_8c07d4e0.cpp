@@ -36,7 +36,7 @@ typedef struct S_vv6Data {
 } S_vv6Data;
 extern "C" void njPushMatrixEx_8c38ae68(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c07d4e0(Object *o)
+extern "C" void TItemMag_v26_8c07d4e0(Object *o)
 {
     S_vv6 *v6;
     int v4;

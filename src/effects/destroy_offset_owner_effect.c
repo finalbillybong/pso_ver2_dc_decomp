@@ -11,7 +11,7 @@ extern void TObject_ctor_8c0330e4(Effect *,void *),TObject_dtor_8c03311c(Effect 
 extern int valid_at(Actor *);
 extern float normalize_at(Vector *);
 extern Child *spawn_at(Vector *,int,int);
-Effect *destroy_offset_owner_effect(Effect *o,short mode) {
+Effect *TObjEneRe2Flower_EffCurse3_dtor_8c05f534(Effect *o,short mode) {
     if(o) {
         o->vtable=effect_vtable;
         if(o->child) { o->child->flags|=1; o->child=0; }

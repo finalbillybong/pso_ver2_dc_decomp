@@ -16,7 +16,7 @@ struct Arg0_13c_s754 {
     char unknown0[0x8];
     float f08;
 };
-void operation_8c17a044(Object *o)
+void TItemWpnHand_v54_8c17a044(Object *o)
 {
     float v5;
     v5 = 1.0f;

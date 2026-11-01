@@ -8,7 +8,7 @@ extern "C" void rotate_at(int,int,int,int);
 #define mesh_at ((void (*)(void *))0x8c3aa716)
 #define njPopMatrixEx_8c38ad10 ((void (*)(void))0x8c38ad10)
 #define after_at ((void (*)(void))0x8c391cc4)
-extern "C" void operation_1abeb8(BaseChildView *o){
+extern "C" void TItemShootModel_render_8c1abeb8(BaseChildView *o){
     if(o->mesh){
         matrix_at(o->matrix);
         before_at();

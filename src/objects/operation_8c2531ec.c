@@ -32,8 +32,8 @@ extern void operation_8c156d30(Arg0_24 *, void *, int, int);
 extern void call_8c156f50(Arg0_24 *);
 extern void operation_8c253328(void);
 extern void request_resource_release(void *);
-extern int operation_8c24bc2c(void);
-void operation_8c2531ec(Object *o)
+extern int TWindowArea_ctor_1_8c24bc2c(void);
+void TObjNewFloorWin_update_8c2531ec(Object *o)
 {
     int t1;
     int t2;
@@ -67,7 +67,7 @@ void operation_8c2531ec(Object *o)
                 (*(S_g8c46fe20 **)0x8c46fe20)->f50 = (S_g8c46fe20_50 *)0;
             }
             if (*(int *)0x8c46fe20 != 0 && (*(S_g8c46fe20 **)0x8c46fe20)->f50 == 0) {
-                t2 = operation_8c24bc2c();
+                t2 = TWindowArea_ctor_1_8c24bc2c();
                 (*(S_g8c46fe20 **)0x8c46fe20)->f50 = (S_g8c46fe20_50 *)t2;
             }
         }

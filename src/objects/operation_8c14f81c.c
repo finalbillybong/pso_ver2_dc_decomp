@@ -12,7 +12,7 @@ extern void run_current_resource_start_8c03c3ac(void);
 extern void operation_8c013fc8(void);
 extern void operation_8c122ba0(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c206c40(void *);
+extern void TBoss3VoloptCtrl_ctor_8c206c40(void *);
 void operation_8c14f81c(void)
 {
     int t1;
@@ -24,6 +24,6 @@ void operation_8c14f81c(void)
     operation_8c122ba0();
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x24);
     if (t1 != 0) {
-        operation_8c206c40((void *)t1);
+        TBoss3VoloptCtrl_ctor_8c206c40((void *)t1);
     }
 }

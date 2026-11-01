@@ -28,7 +28,7 @@ struct S_g8c4d820c {
     int f04;
 };
 extern S_L8c4d820c g_8c4d820c;
-void operation_8c113aa4(Object *o)
+void TLazerFenceSw_v17_8c113aa4(Object *o)
 {
     int v12;
     int v2;

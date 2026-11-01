@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 typedef struct S_g8c4db408 S_g8c4db408;
-void operation_8c16cd7c(int a0, int a1)
+void quest_op_xori_8c16cd7c(int a0, int a1)
 {
     *(int *)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + ((unsigned char)a0 << 2)) ^= a1;
 }

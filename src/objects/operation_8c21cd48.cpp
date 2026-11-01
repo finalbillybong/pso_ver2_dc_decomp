@@ -23,7 +23,7 @@ extern "C" void call_8c199b80(void *, int);
 extern "C" void draw_view_transition_if_active(void *);
 extern "C" void call_8c0db5d4(Object *, int);
 extern "C" void draw_view_nodes(void *, void *, void *);
-extern "C" void operation_8c21cd48(Object *o)
+extern "C" void TWindowShortCut_render_8c21cd48(Object *o)
 {
     int t1;
     t1 = o->v5();

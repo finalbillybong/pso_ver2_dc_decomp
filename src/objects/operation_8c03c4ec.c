@@ -18,7 +18,7 @@ struct S_g8c462a24_0 {
 };
 extern void call_8c37d534(void *);
 extern void operation_8c105320(int);
-void operation_8c03c4ec(void)
+void release_assets_TObjNpcTown_8c03c4ec(void)
 {
     call_8c37d534((void *)((*(S_g8c462a24 **)0x8c462a24)->f00->f0c));
     call_8c37d534((void *)((*(S_g8c462a24 **)0x8c462a24)->f00->f04));

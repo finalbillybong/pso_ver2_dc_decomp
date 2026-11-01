@@ -18,7 +18,7 @@ struct Object {
 extern int operation_8c03d338(void);
 extern float signed_sqrt_8c37f6c0(float);
 extern void operation_8c0c5478(void *, Frame *, float);
-void operation_8c256198(Object *o)
+void TOSwitchItem_render_8c256198(Object *o)
 {
     Frame frame;
     int t1;

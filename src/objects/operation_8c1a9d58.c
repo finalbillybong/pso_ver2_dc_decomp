@@ -12,7 +12,7 @@ struct Object {
 extern int operation_8c1a9ec4(void *);
 extern void call_8c1aa184(void);
 extern void call_8c1003d0(void *);
-void operation_8c1a9d58(Object *o)
+void TObjBgmCol_update_8c1a9d58(Object *o)
 {
     int v1;
     int t1;

@@ -15,7 +15,7 @@ extern void destroy_vector_grid(void *, int);
 extern void destroy_node_array(void *, short);
 extern void operator_delete_8c18de08(void *);
 extern void call_8c03dc40(void *, int);
-void operation_8c0d1620(void)
+void release_assets_ene_re7_berura_8c0d1620(void)
 {
     destroy_vector_grid(g_8c46fd7c, 1);
     g_8c46fd7c = (S_g8c46fd7c *)0;

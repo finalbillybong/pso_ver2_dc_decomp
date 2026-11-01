@@ -25,7 +25,7 @@ struct Arg2 {
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c104148(Object *);
 extern void call_8c1041b4(Object *);
-Object *operation_8c104070(Object *o, int a1, Arg2 *a2, float f0)
+Object *TObjEneDf2Bringer_Eff_TpAbsorb1_ctor_8c104070(Object *o, int a1, Arg2 *a2, float f0)
 {
     Object **home = &o;
     (void)home;

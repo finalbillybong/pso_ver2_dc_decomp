@@ -44,7 +44,7 @@ extern void initialize_effect12_template(void *);
 extern int call_8c18e768(int, int);
 extern int play_se_8c05fbf8(int, void *, int, int);
 extern void emit_control_60320(int, int, int);
-Object *operation_8c0babf0(Object *o, int a1, int a2, int a3, int a4)
+Object *TTecZarua_ctor_8c0babf0(Object *o, int a1, int a2, int a3, int a4)
 {
     Object **home = &o;
     int t1;

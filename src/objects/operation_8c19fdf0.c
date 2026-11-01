@@ -15,7 +15,7 @@ extern void call_8c053f54(Object *);
 extern void operation_8c052124(void *);
 extern void destroy_object_8c0ee900(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c19fdf0(Object *o, int a1)
+Object *TOHealGeneral_dtor_8c19fdf0(Object *o, int a1)
 {
     int v2;
     int v1;

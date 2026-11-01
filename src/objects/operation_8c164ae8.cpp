@@ -34,7 +34,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" void release_optional_member(void *);
 extern "C" void destroy_context_8c13e8ac(void *, short);
 extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c164ae8(Object *o, int a1)
+extern "C" Object *TPhotonEstlla_dtor_8c164ae8(Object *o, int a1)
 {
     if (o != 0) {
         *(void **)((char *)o + 0x18) = (void *)(void *)0x8c26f8b0;

@@ -19,7 +19,7 @@ struct Arg0_24 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c259034(Object *o, int a1)
+Object *TOSwitchAttackSub_dtor_8c259034(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c281a7c;

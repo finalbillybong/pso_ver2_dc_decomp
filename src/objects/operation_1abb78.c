@@ -2,7 +2,7 @@
 #include "src/include/base_child.h"
 #define TObject_dtor_8c03311c ((void (*)(BaseChild *,int))0x8c03311c)
 #define free_at ((void (*)(void *,BaseChild *))0x8c122774)
-BaseChild *operation_1abb78(BaseChild *o,short release){
+BaseChild *TItemShoot_dtor_8c1abb78(BaseChild *o,short release){
     if(o){
         o->dispatch=(void *)0x8c2748d4;
         if(o->linked)o->linked->flags|=1;

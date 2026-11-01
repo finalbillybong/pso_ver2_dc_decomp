@@ -8,9 +8,9 @@ typedef struct Manager {
 } Manager;
 typedef char check_layout[sizeof(Manager) == 44 && (unsigned long)&((Manager *)0)->dispatch == 24 && (unsigned long)&((Manager *)0)->size == 30 ? 1 : -1];
 extern void *object_name;
-extern void base_at(Manager *, void *parent);
-Manager *initialize_manager_8c106568(Manager *o, void *parent) {
-    base_at(o, parent);
+extern void TShopWindowBase_ctor_8c1066e4(Manager *, void *parent);
+Manager *TShopSequence_ctor_8c106568(Manager *o, void *parent) {
+    TShopWindowBase_ctor_8c1066e4(o, parent);
     o->dispatch = (void *)0x8c2697c0;
     o->name = object_name;
     o->size = 44;

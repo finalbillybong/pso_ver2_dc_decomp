@@ -28,7 +28,7 @@ extern int paired_array_has_active_item(void *);
 extern void store_pair_8c1876c0(void *);
 extern int operation_8c1876d8(void);
 extern void operation_8c110e00(int);
-void operation_8c187584(Object *o)
+void TSetEvtDestroy_update_8c187584(Object *o)
 {
     int t1;
     int t2;

@@ -83,7 +83,7 @@ extern float normalize_vector_checked(void *);
 extern void create_effect_7cc0(void *, int, int, int);
 extern void operation_8c05237c(void *);
 extern void call_8c0f3514(Object *, void *, Frame *, void *);
-void operation_8c10466c(Object *o)
+void TObjEneDf2Bringer_Eff_TpAbsorb1_update_8c10466c(Object *o)
 {
     Frame frame;
     float v1;

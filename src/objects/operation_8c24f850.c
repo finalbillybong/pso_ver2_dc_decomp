@@ -30,7 +30,7 @@ struct Frame {
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(int);
 extern void call_8c175918(void *, Object *, int, void *, Frame *);
-void operation_8c24f850(Object *o)
+void TItemWpnYasuShotGun_v53_8c24f850(Object *o)
 {
     Frame frame;
     int v1;

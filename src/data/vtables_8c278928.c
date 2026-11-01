@@ -2,13 +2,13 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c22206c(void);
+extern void TQuestListVM_dtor_8c22206c(void);
 extern void operation_8c1067d0(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c222138(void);
-extern void destroy_timed_owner_effect_8c223368(void);
+extern void TQuestListVM_v05_8c222138(void);
+extern void TItemLockCountCtrl_dtor_8c223368(void);
 extern void TObject_update_default_8c0111c4(void);
 extern void destroy_color_rise_8c223adc(void);
 extern void operation_8c223760(void);
@@ -32,25 +32,25 @@ extern void operation_8c223820(void);
 extern void destroy_color_rise_8c223d5c(void);
 extern void operation_8c2237d8(void);
 extern void operation_8c2237b8(void);
-extern void destroy_object_8c22371c(void);
+extern void TItemTimerEvent_dtor_8c22371c(void);
 
 /* 8c278928: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const vt_8c278928[8] = {
     0,
     0,
-    operation_8c22206c,
+    TQuestListVM_dtor_8c22206c,
     operation_8c1067d0,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c222138
+    TQuestListVM_v05_8c222138
 };
 
 /* 8c278948: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c278948[7] = {
     0,
     0,
-    destroy_timed_owner_effect_8c223368,
+    TItemLockCountCtrl_dtor_8c223368,
     TObject_update_default_8c0111c4,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
@@ -178,7 +178,7 @@ VirtualFunction const vt_8c278a84[9] = {
 VirtualFunction const vt_8c278aa8[9] = {
     0,
     0,
-    destroy_object_8c22371c,
+    TItemTimerEvent_dtor_8c22371c,
     operation_8c223760,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,

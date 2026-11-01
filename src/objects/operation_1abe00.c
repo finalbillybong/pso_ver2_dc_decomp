@@ -1,10 +1,10 @@
 /* Provisional address-based name; preserve observed guards, offsets and call order. */
 #include "src/include/base_child.h"
-#define base_at ((void (*)(BaseChild *,BaseChildParent *,Vector3 *,Vector3 *,float))0x8c1aba3c)
+#define TItemShoot_ctor_8c1aba3c ((void (*)(BaseChild *,BaseChildParent *,Vector3 *,Vector3 *,float))0x8c1aba3c)
 #define signed_sqrt_8c37f6c0 ((float (*)(float))0x8c37f6c0)
 extern float angle_at(float,float);
-BaseChild *operation_1abe00(BaseChild *o,BaseChildParent *parent,Vector3 *position,Vector3 *direction,float value){
-    base_at(o,parent,position,direction,value);
+BaseChild *TItemShootModel_ctor_8c1abe00(BaseChild *o,BaseChildParent *parent,Vector3 *position,Vector3 *direction,float value){
+    TItemShoot_ctor_8c1aba3c(o,parent,position,direction,value);
     o->dispatch=(void *)0x8c2748b4;
     o->tag=*(unsigned int *)0x8c324f8c;
     o->size=100;

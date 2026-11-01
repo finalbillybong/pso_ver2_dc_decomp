@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x23c];
     float f23c;
 };
-void operation_8c23b58c(Object *o)
+void TItemWpnClub_v51_8c23b58c(Object *o)
 {
     if (o->f23c > 0.3f) {
         o->f23c -= 0.2f;

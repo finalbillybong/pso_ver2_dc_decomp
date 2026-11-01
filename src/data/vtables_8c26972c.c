@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c103e58(void);
-extern void operation_8c103e9c(void);
-extern void operation_8c103f44(void);
+extern void TObjEneDf2Bringer_Eff_Rush_dtor_8c103e58(void);
+extern void TObjEneDf2Bringer_Eff_Rush_update_8c103e9c(void);
+extern void TObjEneDf2Bringer_Eff_Rush_render_8c103f44(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void reconstruct_8c103c94(void);
@@ -15,9 +15,9 @@ extern void operation_8c103d3c(void);
 VirtualFunction const vt_8c26972c[7] = {
     0,
     0,
-    destroy_object_8c103e58,
-    operation_8c103e9c,
-    operation_8c103f44,
+    TObjEneDf2Bringer_Eff_Rush_dtor_8c103e58,
+    TObjEneDf2Bringer_Eff_Rush_update_8c103e9c,
+    TObjEneDf2Bringer_Eff_Rush_render_8c103f44,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

@@ -2,4 +2,4 @@
 #define TObject_ctor_8c0330e4 ((void (*)(void *,void *))0x8c0330e4)
 #define detach_at ((void (*)(void *,int))0x8c073514)
 #define release_at ((void (*)(void *,void *))0x8c122774)
-ColorEffect *destroy_color_rise_8c24d3e4(ColorEffect *effect,short flags){if(effect){effect->dispatch=(void *)0x8c27de08;if(effect){effect->dispatch=(void *)0x8c267d80;detach_at(effect,0);}if(flags>0)release_at(*(void **)0x8c4d97e0,effect);}return effect;}
+ColorEffect *TItemObjTpRecover_dtor_8c24d3e4(ColorEffect *effect,short flags){if(effect){effect->dispatch=(void *)0x8c27de08;if(effect){effect->dispatch=(void *)0x8c267d80;detach_at(effect,0);}if(flags>0)release_at(*(void **)0x8c4d97e0,effect);}return effect;}

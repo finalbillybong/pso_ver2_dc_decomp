@@ -7,7 +7,7 @@ typedef struct S_g8c4e2c20 S_g8c4e2c20;
 extern S_g8c4e2c20 *g_8c4e2c20;
 extern int g_8c4e2c2c;
 extern void call_8c03dc40(void *, int);
-void operation_8c1bfb14(void)
+void release_assets_fs_obj_monitor_8c1bfb14(void)
 {
     int v1;
     g_8c4e2c2c = 0;

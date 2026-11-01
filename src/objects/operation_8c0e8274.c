@@ -13,10 +13,10 @@ struct Object {
 extern S_g8c4689e0 *g_8c4689e0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c2550e8(void *, void *, Object *);
-extern void operation_8c255200(void *, int, int);
-extern void operation_8c2554f4(void *, void *, Object *);
-extern void operation_8c0e8360(void *, int, int);
+extern void TItemProShieldModel2_ctor_8c2550e8(void *, void *, Object *);
+extern void TItemProShieldModel_ctor_8c255200(void *, int, int);
+extern void TItemProShieldRecalc_ctor_8c2554f4(void *, void *, Object *);
+extern void TItemProShield_ctor_8c0e8360(void *, int, int);
 int operation_8c0e8274(Object *o)
 {
     unsigned char v1;
@@ -30,13 +30,13 @@ int operation_8c0e8274(Object *o)
             if ((unsigned char)v1 == 0x35) {
                 t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1e8);
                 if (t1 != 0) {
-                    operation_8c2550e8((void *)t1, g_8c4689e0, o);
+                    TItemProShieldModel2_ctor_8c2550e8((void *)t1, g_8c4689e0, o);
                 }
                 return (int)(t1);
             }
             t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1e8);
             if (t2 != 0) {
-                operation_8c255200((void *)t2, (int)g_8c4689e0, (int)o);
+                TItemProShieldModel_ctor_8c255200((void *)t2, (int)g_8c4689e0, (int)o);
             }
             return (int)(t2);
         }
@@ -50,13 +50,13 @@ int operation_8c0e8274(Object *o)
         }
         t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1e4);
         if (t3 != 0) {
-            operation_8c2554f4((void *)t3, g_8c4689e0, o);
+            TItemProShieldRecalc_ctor_8c2554f4((void *)t3, g_8c4689e0, o);
         }
         return (int)(t3);
 L_8c0e830e:;
         t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x1e4);
         if (t4 != 0) {
-            operation_8c0e8360((void *)t4, (int)g_8c4689e0, (int)o);
+            TItemProShield_ctor_8c0e8360((void *)t4, (int)g_8c4689e0, (int)o);
         }
         return (int)(t4);
     }

@@ -38,7 +38,7 @@ typedef struct ObjectData {
 extern "C" char g_8c33b3e8[];
 extern "C" void njPrintColor_8c38c5b6(int);
 extern "C" void debug_print_at_8c38cf80(int, void *, ...);
-extern "C" void operation_8c24b498(Object *o)
+extern "C" void TObjDoaEx01_v09_8c24b498(Object *o)
 {
     o->v21();
     njPrintColor_8c38c5b6(-0xff0100);

@@ -57,7 +57,7 @@ typedef struct Object {
 
 extern void *TObject_ctor_8c0330e4(void *, void *);
 extern void *heap_alloc_8c122700(void *, int);
-extern void operation_197420(void *);
+extern void TWindowSubCustomEquip_ctor_8c197420(void *);
 extern void *operation_1196d4(void *, void *, int);
 
 Object *initialize_object_8c1902c8(Object *o, void *parent)
@@ -66,7 +66,7 @@ Object *initialize_object_8c1902c8(Object *o, void *parent)
     TObject_ctor_8c0330e4(o, parent);
     o->dispatch = (void *)0x8c272718;
     block = heap_alloc_8c122700(*(void **)0x8c4d97e0, 0x74);
-    if (block) operation_197420(block);
+    if (block) TWindowSubCustomEquip_ctor_8c197420(block);
     o->block = block;
     o->resource = operation_1196d4((void *)0x8c2876a0, (void *)0x8c2876a8, 1);
     o->counter = 0;

@@ -20,7 +20,7 @@ extern void operation_8c246608(void);
 extern void call_8c237c80(Object *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c237998(Object *o, int a1)
+Object *TChallenge_dtor_8c237998(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c279200;

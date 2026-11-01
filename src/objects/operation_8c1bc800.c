@@ -41,13 +41,13 @@ struct Arg0_3a0 {
     int f18;
 };
 extern float g_8c327e24[];
-extern void call_8c1bb138(Object *, int, int);
+extern void TBoss4Zako_ctor_8c1bb138(Object *, int, int);
 extern int call_8c04a52c(Object *, int, float);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern float njScalor_8c37e480(void *);
 extern void njUnitVector_8c37b630(void *);
-Object *operation_8c1bc800(Object *o, int a1, int a2)
+Object *TBoss4Bishi_ctor_8c1bc800(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int t1;
@@ -56,7 +56,7 @@ Object *operation_8c1bc800(Object *o, int a1, int a2)
     int idx;
     int off;
     (void)home;
-    call_8c1bb138(o, a1, a2);
+    TBoss4Zako_ctor_8c1bb138(o, a1, a2);
     o->dispatch = (void *)0x8c275098;
     o->tag = (int)(*(int *)0x8c327e20);
     o->size = 0x3e0;

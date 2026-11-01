@@ -33,7 +33,7 @@ extern int lookup_low_id(int);
 extern int angle_between_xz(void *, void *);
 extern void operation_8c022034(void *, int, int);
 extern void call_8c05406c(Object *, Frame *);
-void operation_8c0f1e04(Object *o, int a1)
+void TOMonumentAncient02_v14_8c0f1e04(Object *o, int a1)
 {
     Frame frame;
     int v4;

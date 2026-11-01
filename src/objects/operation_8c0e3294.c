@@ -20,7 +20,7 @@ struct Object {
 extern int g_8c307768;
 extern S_g8c4e2ba4 *g_8c4e2ba4;
 extern void operation_8c0db20c(void *, int, int);
-Object *operation_8c0e3294(Object *o, int a1)
+Object *TWindowSimpleStatus_ctor_8c0e3294(Object *o, int a1)
 {
     int v1;
     operation_8c0db20c((void *)o, (int)((void *)0x8c307824), (int)g_8c4e2ba4);

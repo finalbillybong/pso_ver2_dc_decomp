@@ -6,7 +6,7 @@
 #define check_at ((void (*)(ResourceWidget *))0x8c194250)
 #define base_update_at ((void (*)(ResourceWidget *))0x8c0db30c)
 #define finish_at ((void (*)(ResourceWidget *,void *))0x8c0e1c08)
-void operation_1940ec(ResourceWidget *o){
+void TWindowSubStatusDisp_update_8c1940ec(ResourceWidget *o){
     if(!(o->flags&2))o->field64=0x01000000;
     if(child_query_at(o->child)){
         clear_at(o->panel);

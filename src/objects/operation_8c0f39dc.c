@@ -22,7 +22,7 @@ extern int g_8c309ec8;
 extern void call_8c0f3458(Object *, int, Arg2 *, void *, int);
 extern void initialize_object_8c0fbf7c(void *);
 extern void call_8c0f3a50(Object *);
-Object *operation_8c0f39dc(Object *o, int a1, Arg2 *a2)
+Object *TObjEneRe7BeruraPunch_ctor_8c0f39dc(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     (void)home;

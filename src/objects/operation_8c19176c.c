@@ -23,7 +23,7 @@ struct Object {
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern float call_8c087ba0(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c19402c(int);
+extern void TWindowSubStatusDisp_ctor_8c19402c(int);
 Object *operation_8c19176c(Object *o, int a1)
 {
     Object **home = &o;
@@ -44,7 +44,7 @@ Object *operation_8c19176c(Object *o, int a1)
     o->f40 = 0;
     t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
     if (t2 != 0) {
-        call_8c19402c(t2);
+        TWindowSubStatusDisp_ctor_8c19402c(t2);
     }
     o->f44 = (int)(t2);
     return o;

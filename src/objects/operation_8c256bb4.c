@@ -16,8 +16,8 @@ struct Object {
     int f20;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern void operation_8c257198(int, int);
-Object *operation_8c256bb4(Object *o, int a1)
+extern void TObjHexLine_create_8c257198(int, int);
+Object *TObjHexLine_ctor_8c256bb4(Object *o, int a1)
 {
     Object **home = &o;
     int v1;
@@ -28,7 +28,7 @@ Object *operation_8c256bb4(Object *o, int a1)
     o->size = 0x24;
     v1 = (int)0;
     while (4 > v1) {
-        operation_8c257198(a1, (int)(&*(int *)((char *)0x8c33ff8c + (v1 << 2))));
+        TObjHexLine_create_8c257198(a1, (int)(&*(int *)((char *)0x8c33ff8c + (v1 << 2))));
         v1 = (int)(v1 + 1);
     }
     *(Block16 *)&*(Block16 *)0x8c513340 = *(Block16 *)&*(Block16 *)0x8c33ff9c;

@@ -85,7 +85,7 @@ extern "C" void operation_8c022538(void *, int);
 extern "C" float object_random_fraction(void *);
 extern "C" void operation_8c05b5b4(int, void *);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void call_8c103d6c(int, Object *, Object *, S_vv7 *, float);
+extern "C" void TObjEneDf2Bringer_Eff_Rush_ctor_8c103d6c(int, Object *, Object *, S_vv7 *, float);
 extern "C" int operation_8c0f4fd8(Object *o)
 {
     Frame frame;
@@ -148,7 +148,7 @@ extern "C" int operation_8c0f4fd8(Object *o)
 L_8c0f50c0:;
                 t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x38);
                 if (t6 != 0) {
-                    call_8c103d6c(t6, o, o, v7, 12.0f);
+                    TObjEneDf2Bringer_Eff_Rush_ctor_8c103d6c(t6, o, o, v7, 12.0f);
                 }
             }
             v6 = (int)(v6 + 1);

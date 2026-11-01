@@ -5,14 +5,14 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c227b94(int, int, int, float);
-int operation_8c227b34(int a0, int a1, float f0)
+extern void TAdDrawLineCtrl_ctor_8c227b94(int, int, int, float);
+int TAdDrawLineCtrl_create_8c227b34(int a0, int a1, float f0)
 {
     int t1;
     if (*(int *)0x8c506160 != 0) {
         t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x2c);
         if (t1 != 0) {
-            call_8c227b94(t1, a0, *(int *)0x8c506160 + a1 * 0xc, f0);
+            TAdDrawLineCtrl_ctor_8c227b94(t1, a0, *(int *)0x8c506160 + a1 * 0xc, f0);
         }
         return t1;
     }

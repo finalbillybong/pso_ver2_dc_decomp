@@ -27,10 +27,10 @@ struct Object {
     int f16c;
     int f170;
 };
-extern void initialize_control_manager(Object *, int);
+extern void TShopWindowBase_ctor_8c1066e4(Object *, int);
 Object *operation_8c19b2b4(Object *o, int a1, int a2)
 {
-    initialize_control_manager(o, a1);
+    TShopWindowBase_ctor_8c1066e4(o, a1);
     o->dispatch = (void *)0x8c2729cc;
     o->tag = *(int *)0x8c31cc18;
     o->size = 0x174;

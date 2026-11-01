@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x238];
     short f238;
 };
-void operation_8c179a94(Object *o)
+void TItemWpnCSorcer_v55_8c179a94(Object *o)
 {
     o->f238 = -1;
 }

@@ -12,7 +12,7 @@ struct Object {
     short f22;
 };
 extern int lookup_low_id(int);
-void operation_8c24d320(Object *o)
+void TItemObjectTV_update_8c24d320(Object *o)
 {
     int t1;
     t1 = lookup_low_id((int)(o->f20));

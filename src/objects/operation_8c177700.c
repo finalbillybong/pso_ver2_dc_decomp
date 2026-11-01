@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c177700(void)
+void TSeqVarsEdit_v07_8c177700(void)
 {
 }

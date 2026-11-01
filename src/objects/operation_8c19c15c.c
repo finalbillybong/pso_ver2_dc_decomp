@@ -26,13 +26,13 @@ struct Object {
     int f398;
     int f39c;
 };
-extern void initialize_control_manager(void *, void *);
+extern void TShopWindowBase_ctor_8c1066e4(void *, void *);
 extern void memset_8c12b880(void *, int, int);
 Object *operation_8c19c15c(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
     (void)home;
-    initialize_control_manager((void *)o, (void *)a1);
+    TShopWindowBase_ctor_8c1066e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2729ec;
     o->tag = *(int *)0x8c31cc88;
     o->size = 0x3a0;

@@ -41,7 +41,7 @@ extern "C" void call_8c1086fc(void);
 extern "C" void call_8c3aa716(void *);
 extern "C" void call_8c391cc4(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c0575dc(Object *o)
+extern "C" void TObjEneBm3Fly_v111_8c0575dc(Object *o)
 {
     int t1;
     t1 = o->v11(400.0f, 15.0f);

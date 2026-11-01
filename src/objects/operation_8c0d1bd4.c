@@ -19,7 +19,7 @@ struct Object {
 extern int call_8c18e768(int, int);
 extern void reset_segments_8c05a124(void *);
 extern void operation_8c059ea4(void *, int);
-void operation_8c0d1bd4(Object *o)
+void TObjEneRe7Berura_v70_8c0d1bd4(Object *o)
 {
     int t1;
     if (((o->f3dc & 4)) == 0) {

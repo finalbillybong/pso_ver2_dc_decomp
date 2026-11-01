@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c23c958(void);
+extern void TItemWpnFast_dtor_8c23c958(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -51,22 +51,22 @@ extern void operation_8c075708(void);
 extern void fn_8c075ac8(void);
 extern void fn_8c075b90(void);
 extern void fn_8c0766f8(void);
-extern void operation_8c23c9a8(void);
+extern void TItemWpnFast_v49_8c23c9a8(void);
 extern void operation_8c076178(void);
 extern void operation_8c076174(void);
 extern void operation_8c076238(void);
 extern void operation_8c076170(void);
-extern void set_field_8c23c99c(void);
+extern void TItemWpnFast_v54_8c23c99c(void);
 extern void operation_8c075b80(void);
 extern void operation_8c077810(void);
-extern void operation_8c23c9ec(void);
+extern void TItemWpnFast_v57_8c23c9ec(void);
 extern void fn_8c076340(void);
 
 /* 8c27a69c: type-information and this-adjustment header, then 59 slots */
 VirtualFunction const vt_8c27a69c[61] = {
     0,
     0,
-    destroy_object_8c23c958,
+    TItemWpnFast_dtor_8c23c958,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -115,14 +115,14 @@ VirtualFunction const vt_8c27a69c[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    operation_8c23c9a8,
+    TItemWpnFast_v49_8c23c9a8,
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,
     operation_8c076170,
-    set_field_8c23c99c,
+    TItemWpnFast_v54_8c23c99c,
     operation_8c075b80,
     operation_8c077810,
-    operation_8c23c9ec,
+    TItemWpnFast_v57_8c23c9ec,
     fn_8c076340
 };

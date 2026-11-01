@@ -36,7 +36,7 @@ extern "C" void translate_current_matrix_v_8c382a40(void *);
 extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3aa716(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c159dd4(Object *o)
+extern "C" void TObjVoloptCage_render_8c159dd4(Object *o)
 {
     int t1;
     t1 = o->v11(400.0f, 40.0f);

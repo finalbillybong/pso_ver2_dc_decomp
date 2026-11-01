@@ -9,7 +9,7 @@ struct Object {
     float fa0;
 };
 extern void call_8c2574a0(Object *);
-void operation_8c2572f4(Object *o)
+void TObjHexLine_update_8c2572f4(Object *o)
 {
     o->fa0 += *(float *)0x8c33ff6c;
     if (!(1.0f > o->fa0)) {

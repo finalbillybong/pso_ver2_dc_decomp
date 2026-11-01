@@ -22,7 +22,7 @@ extern char g_8c2ff034[];
 extern void show_key_8c112fbc(void *);
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c081cc4(Object *o)
+void TObjDoorKey_v09_8c081cc4(Object *o)
 {
     show_key_8c112fbc((void *)o);
     *(Vector3 *)&o->f78 = *(Vector3 *)&o->f3c;

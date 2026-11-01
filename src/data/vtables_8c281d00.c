@@ -2,13 +2,13 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c25e34c(void);
-extern void operation_8c25e3b0(void);
-extern void operation_8c25e4e0(void);
+extern void TAdPSOConv_dtor_8c25e34c(void);
+extern void TAdPSOConv_update_8c25e3b0(void);
+extern void TAdPSOConv_render_8c25e4e0(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_object_8c25e5d8(void);
-extern void operation_8c25e61c(void);
+extern void TObjTagChallenge_dtor_8c25e5d8(void);
+extern void TObjTagChallenge_update_8c25e61c(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void operation_8c25e73c(void);
 extern void operation_8c25e798(void);
@@ -17,33 +17,33 @@ extern void operation_8c25ee58(void);
 extern void destroy_child_owner_8c25effc(void);
 extern void operation_8c25f050(void);
 extern void operation_8c25f0cc(void);
-extern void destroy_object_8c25f1d8(void);
-extern void operation_8c25f21c(void);
-extern void operation_8c25f598(void);
-extern void operation_8c25f5fc(void);
-extern void operation_8c25f6f4(void);
-extern void destroy_object_8c25f8dc(void);
-extern void operation_8c25f920(void);
+extern void TObjSoloPlayWin_dtor_8c25f1d8(void);
+extern void TObjSoloPlayWin_update_8c25f21c(void);
+extern void TAdHunLicence_dtor_8c25f598(void);
+extern void TAdHunLicence_update_8c25f5fc(void);
+extern void TAdHunLicence_render_8c25f6f4(void);
+extern void TItemDisconnectCtrl_dtor_8c25f8dc(void);
+extern void TItemDisconnectCtrl_update_8c25f920(void);
 extern void operation_8c25f9c0(void);
 extern void operation_8c25fa24(void);
 extern void operation_8c25fab4(void);
-extern void destroy_object_8c25fb2c(void);
-extern void operation_8c25fb70(void);
-extern void destroy_object_8c26004c(void);
-extern void operation_8c260090(void);
+extern void TObjTailsTailsMove_dtor_8c25fb2c(void);
+extern void TObjTailsTailsMove_update_8c25fb70(void);
+extern void TObjDeadListWin_dtor_8c26004c(void);
+extern void TObjDeadListWin_update_8c260090(void);
 extern void operation_8c260390(void);
 extern void operation_8c2603f4(void);
 extern void operation_8c260498(void);
-extern void destroy_object_8c2608d0(void);
-extern void operation_8c260914(void);
+extern void TObjCMCheck_dtor_8c2608d0(void);
+extern void TObjCMCheck_update_8c260914(void);
 
 /* 8c281d00: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c281d00[7] = {
     0,
     0,
-    operation_8c25e34c,
-    operation_8c25e3b0,
-    operation_8c25e4e0,
+    TAdPSOConv_dtor_8c25e34c,
+    TAdPSOConv_update_8c25e3b0,
+    TAdPSOConv_render_8c25e4e0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -52,8 +52,8 @@ VirtualFunction const vt_8c281d00[7] = {
 VirtualFunction const vt_8c281d1c[7] = {
     0,
     0,
-    destroy_object_8c25e5d8,
-    operation_8c25e61c,
+    TObjTagChallenge_dtor_8c25e5d8,
+    TObjTagChallenge_update_8c25e61c,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -96,8 +96,8 @@ VirtualFunction const vt_8c281d70[7] = {
 VirtualFunction const vt_8c281d8c[7] = {
     0,
     0,
-    destroy_object_8c25f1d8,
-    operation_8c25f21c,
+    TObjSoloPlayWin_dtor_8c25f1d8,
+    TObjSoloPlayWin_update_8c25f21c,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -107,9 +107,9 @@ VirtualFunction const vt_8c281d8c[7] = {
 VirtualFunction const vt_8c281da8[7] = {
     0,
     0,
-    operation_8c25f598,
-    operation_8c25f5fc,
-    operation_8c25f6f4,
+    TAdHunLicence_dtor_8c25f598,
+    TAdHunLicence_update_8c25f5fc,
+    TAdHunLicence_render_8c25f6f4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -118,8 +118,8 @@ VirtualFunction const vt_8c281da8[7] = {
 VirtualFunction const vt_8c281dc4[7] = {
     0,
     0,
-    destroy_object_8c25f8dc,
-    operation_8c25f920,
+    TItemDisconnectCtrl_dtor_8c25f8dc,
+    TItemDisconnectCtrl_update_8c25f920,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -140,8 +140,8 @@ VirtualFunction const vt_8c281de0[7] = {
 VirtualFunction const vt_8c281dfc[7] = {
     0,
     0,
-    destroy_object_8c25fb2c,
-    operation_8c25fb70,
+    TObjTailsTailsMove_dtor_8c25fb2c,
+    TObjTailsTailsMove_update_8c25fb70,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -151,8 +151,8 @@ VirtualFunction const vt_8c281dfc[7] = {
 VirtualFunction const vt_8c281e18[7] = {
     0,
     0,
-    destroy_object_8c26004c,
-    operation_8c260090,
+    TObjDeadListWin_dtor_8c26004c,
+    TObjDeadListWin_update_8c260090,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -173,8 +173,8 @@ VirtualFunction const vt_8c281e34[7] = {
 VirtualFunction const vt_8c281e50[7] = {
     0,
     0,
-    destroy_object_8c2608d0,
-    operation_8c260914,
+    TObjCMCheck_dtor_8c2608d0,
+    TObjCMCheck_update_8c260914,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

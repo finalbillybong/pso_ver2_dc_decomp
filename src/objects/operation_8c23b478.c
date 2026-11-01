@@ -21,7 +21,7 @@ struct Object {
     float f23c;
 };
 extern void call_8c075398(void);
-Object *operation_8c23b478(Object *o)
+Object *TItemWpnClub_ctor_8c23b478(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c27a17c;

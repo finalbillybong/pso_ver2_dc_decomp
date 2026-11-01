@@ -24,7 +24,7 @@ struct Object {
     float ff4;
 };
 extern void call_8c08914c(Object *);
-void operation_8c1be230(Object *o)
+void TObjCityMainWarp_update_8c1be230(Object *o)
 {
     float v3;
     v3 = (float)(float)(unsigned int)((*(S_g8c4e2b80 **)0x8c4e2b80)->f430->f2c->f04 + -1);

@@ -31,10 +31,10 @@ struct Arg0_24 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c18cbe4(S_g8c4dbde0 *);
-extern int call_8c22575c(void *, void *);
+extern int TWindowMessageLog_ctor_8c22575c(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c1dca80(void *, int, int);
-Object *operation_8c1d9ed4(Object *o, int a1)
+extern void TWindowChat_ctor_8c1dca80(void *, int, int);
+Object *TWindowSubLog_ctor_8c1d9ed4(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
@@ -49,11 +49,11 @@ Object *operation_8c1d9ed4(Object *o, int a1)
     }
     call_8c18cbe4((S_g8c4dbde0 *)(*(S_g8c4dbde0 **)0x8c4dbde0));
     (*(S_g8c4dbde0 **)0x8c4dbde0)->f20 |= 8;
-    t1 = call_8c22575c((void *)((void *)0x8c2894f8), (void *)((void *)0x8c289500));
+    t1 = TWindowMessageLog_ctor_8c22575c((void *)((void *)0x8c2894f8), (void *)((void *)0x8c289500));
     o->f20 = (int)(t1);
     t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x3c);
     if (t2 != 0) {
-        operation_8c1dca80((void *)t2, (int)o, (int)(((char *)o + 0x28)));
+        TWindowChat_ctor_8c1dca80((void *)t2, (int)o, (int)(((char *)o + 0x28)));
     }
     o->f24 = (Arg0_24 *)t2;
     o->f24->f22 |= 0x200;

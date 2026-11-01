@@ -61,7 +61,7 @@ struct Frame {
 extern "C" void call_8c1c577c(void *, Object *, int, int);
 extern "C" void call_8c075894(Object *, Arg0_13c *, int, Frame *);
 extern "C" int call_8c1aaabc(void *);
-extern "C" void create_effect_d2a8(void *, void *, void *, void *);
+extern "C" void TTecBarta_create_8c0ad2a8(void *, void *, void *, void *);
 extern "C" void call_8c076580(Object *);
 extern "C" void operation_8c18ade0(Object *o)
 {
@@ -80,7 +80,7 @@ extern "C" void operation_8c18ade0(Object *o)
         if (t2 != 1) {
             return;
         }
-        create_effect_d2a8((void *)(((ObjectData *)o)->f13c), (void *)(((char *)((ObjectData *)o)->f13c + 0x3c)), (void *)(((ObjectData *)o)->f13c->f64), (void *)3);
+        TTecBarta_create_8c0ad2a8((void *)(((ObjectData *)o)->f13c), (void *)(((char *)((ObjectData *)o)->f13c + 0x3c)), (void *)(((ObjectData *)o)->f13c->f64), (void *)3);
         return;
     }
     call_8c076580(o);

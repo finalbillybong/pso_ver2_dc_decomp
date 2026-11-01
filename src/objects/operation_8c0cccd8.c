@@ -27,7 +27,7 @@ extern Arg2 *g_8c46fa68;
 extern int g_8c46fa6c;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c05bbf8(void);
-Object *operation_8c0cccd8(Object *o, int a1, Arg2 *a2, int a3)
+Object *TObjBoss1MokoHill_SoloM_ctor_8c0cccd8(Object *o, int a1, Arg2 *a2, int a3)
 {
     Object **home = &o;
     int t1;

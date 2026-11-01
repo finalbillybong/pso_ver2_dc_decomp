@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x238];
     int f238;
 };
-void operation_8c239e14(Object *o)
+void TItemWpnBearCane_v50_8c239e14(Object *o)
 {
     if (o->f238 != 1 && o->f238 != 0) {
         return;

@@ -35,7 +35,7 @@ extern "C" void strncpy_8c12b154(void *, int, int);
 extern "C" void call_8c032b70(Frame *);
 extern "C" void call_8c032d18(S_c8c122700 *, Frame *);
 extern "C" void call_8c20a6d0(void *);
-extern "C" void operation_8c1717d4(int a0, int a1)
+extern "C" void quest_op_send_mail_8c1717d4(int a0, int a1)
 {
     Frame frame;
     S_c8c122700 *t1;

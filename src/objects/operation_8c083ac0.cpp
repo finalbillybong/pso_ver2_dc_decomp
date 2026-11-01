@@ -62,7 +62,7 @@ extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void njRotateX_8c37dd28(int, void *);
 extern "C" void call_8c3a944a(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c083ac0(Object *o)
+extern "C" void TObjContainerIdo_render_8c083ac0(Object *o)
 {
     int t1;
     int t2;

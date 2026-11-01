@@ -24,7 +24,7 @@ struct Object {
 };
 extern void call_8c075398(Object *, int, int);
 extern void operation_1abd98_8c1c6104();
-Object *operation_8c23de88(Object *o, int a1, int a2)
+Object *TItemWpnLavisBlade_ctor_8c23de88(Object *o, int a1, int a2)
 {
     call_8c075398(o, a1, a2);
     o->dispatch = (void *)0x8c27ae94;

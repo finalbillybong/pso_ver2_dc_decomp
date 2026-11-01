@@ -15,7 +15,7 @@ struct Object {
     int f30;
     int f34;
 };
-void operation_8c25df4c(Object *o)
+void TDLGraph_update_8c25df4c(Object *o)
 {
     char *v11;
     int v1;

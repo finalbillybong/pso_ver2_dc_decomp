@@ -11,7 +11,7 @@ extern int operator_new_8c18de4c(int);
 extern int call_8c104d70(void *);
 extern void call_8c0787cc(int, void *);
 extern void game_free_8c011ec0(int);
-void operation_8c25630c(void)
+void load_assets_symbolchatcolli_8c25630c(void)
 {
     int v21;
     int t1;

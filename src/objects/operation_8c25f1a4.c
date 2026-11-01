@@ -14,7 +14,7 @@ struct Object {
     int f24;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c25f1a4(Object *o, int a1)
+Object *TObjSoloPlayWin_ctor_8c25f1a4(Object *o, int a1)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c281d8c;

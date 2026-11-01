@@ -31,7 +31,7 @@ struct Arg1 {
 };
 extern int g_8c324f8c;
 extern int g_8c324fac;
-extern void call_8c1aba3c(Object *, Arg1 *, Vector3 *, Vector3 *, float);
+extern void TItemShoot_ctor_8c1aba3c(Object *, Arg1 *, Vector3 *, Vector3 *, float);
 extern float signed_sqrt_8c37f6c0(float);
 extern float call_8c130334(float, float);
 Object *operation_8c1ac4d0(Object *o, Arg1 *a1, Vector3 *a2, Vector3 *a3, float a4)
@@ -40,7 +40,7 @@ Object *operation_8c1ac4d0(Object *o, Arg1 *a1, Vector3 *a2, Vector3 *a3, float 
         Object *self = o;
         Object **home = &self;
         (void)home;
-        call_8c1aba3c(o, a1, a2, a3, a4);
+        TItemShoot_ctor_8c1aba3c(o, a1, a2, a3, a4);
         self->dispatch = (void *)0x8c2748b4;
         self->tag = g_8c324f8c;
         self->size = 0x64;

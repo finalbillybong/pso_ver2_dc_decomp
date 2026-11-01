@@ -56,7 +56,7 @@ extern "C" void call_8c3aa702(void *);
 extern "C" void call_8c391c94(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c0ffa10(Object *o)
+extern "C" void TOAirconCave01_render_8c0ffa10(Object *o)
 {
     int t1;
     t1 = o->v11(((ObjectData *)o)->ff8, ((ObjectData *)o)->ffc);

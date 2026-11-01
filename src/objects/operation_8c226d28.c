@@ -68,11 +68,11 @@ extern void operation_8c060660(void);
 extern void call_8c1003d0(void *);
 extern void operation_8c2273a4(void *, int);
 extern int call_8c227284(Object *);
-extern int operation_8c2272e8(Object *);
+extern int TWindowSoundBalance_create_8c2272e8(Object *);
 extern void operation_8c2274e8(int, int, int);
 extern int call_8c227320(Object *);
 extern void operation_8c227580(int, int);
-void operation_8c226d28(Object *o)
+void TWindowOptionCtrl_update_8c226d28(Object *o)
 {
     S_vv14 *v14;
     int v17;
@@ -188,7 +188,7 @@ void operation_8c226d28(Object *o)
         return;
     case 9:
         call_8c156e58((Arg0_28 *)(o->f28));
-        t8 = operation_8c2272e8(o);
+        t8 = TWindowSoundBalance_create_8c2272e8(o);
         o->f34 = (Arg0_34 *)t8;
         v33 = (int)0xa;
         o->f20 = v33;

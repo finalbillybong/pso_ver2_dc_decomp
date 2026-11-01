@@ -36,8 +36,8 @@ struct S_g8c467180_88 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c198294(int, Object *);
-extern void call_8c199688(int, Object *, int);
+extern void TAdBack_ctor_8c198294(int, Object *);
+extern void TAdTitle_ctor_8c199688(int, Object *, int);
 extern int create_fitted_pair_grid_view(void *, void *);
 extern void operation_8c119764(int, int, int);
 Object *operation_8c2602c0(Object *o)
@@ -55,11 +55,11 @@ Object *operation_8c2602c0(Object *o)
     o->f2c = 0;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
     if (t1 != 0) {
-        call_8c198294(t1, o);
+        TAdBack_ctor_8c198294(t1, o);
     }
     t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xac);
     if (t2 != 0) {
-        call_8c199688(t2, o, 1);
+        TAdTitle_ctor_8c199688(t2, o, 1);
     }
     *(Block8 *)&(&frame)->f0c = *(Block8 *)&*(Block8 *)0x8c3407b8;
     *(Block8 *)&(&frame)->f04 = *(Block8 *)&*(Block8 *)0x8c3407c0;

@@ -8,7 +8,7 @@ struct S_vv1 {
     int f00;
 };
 extern void load_item_pmt_8c157ff0(void);
-extern int call_8c218938(int);
+extern int TItemDrop_create_8c218938(int);
 void operation_8c157fa8(void)
 {
     int t1;
@@ -22,6 +22,6 @@ void operation_8c157fa8(void)
         }
     }
     load_item_pmt_8c157ff0();
-    t1 = call_8c218938(0);
+    t1 = TItemDrop_create_8c218938(0);
     *(int *)0x8c4daaa8 = (int)(t1);
 }

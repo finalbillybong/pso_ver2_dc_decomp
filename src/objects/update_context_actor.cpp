@@ -106,5 +106,5 @@ typedef char check_context[(unsigned long)&((View *)0)->context==304?1:-1];
 typedef char check_state[(unsigned long)&((View *)0)->state==778?1:-1];
 typedef char check_visible[(unsigned long)&((View *)0)->visible==860?1:-1];
 extern "C" {extern int mode_at(void);
-void update_context_actor(View *o) {if(mode_at()==1) o->special();else {o->prepare();switch(o->state) {case 0:if(o->ready()) o->state=1;o->state_zero();break;case 1:o->state_one();break;case 2:o->state_two();break;case 3:o->state_three();break;}}}
+void TOTrap_update_8c140c78(View *o) {if(mode_at()==1) o->special();else {o->prepare();switch(o->state) {case 0:if(o->ready()) o->state=1;o->state_zero();break;case 1:o->state_one();break;case 2:o->state_two();break;case 3:o->state_three();break;}}}
 }

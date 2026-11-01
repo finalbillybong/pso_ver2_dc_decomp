@@ -97,7 +97,7 @@ public:
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" void operation_8c14df8c(Object *o)
+extern "C" void TOTrapAncient02R_v87_8c14df8c(Object *o)
 {
     o->v86();
 }

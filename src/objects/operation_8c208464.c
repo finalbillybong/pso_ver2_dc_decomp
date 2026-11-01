@@ -23,10 +23,10 @@ struct Object {
 extern int g_8c335d8c;
 extern int g_8c5049fc;
 extern Object *g_8c504a00;
-extern void initialize_manager_8c106568(Object *, int);
-Object *operation_8c208464(Object *o, int a1, int a2)
+extern void TShopSequence_ctor_8c106568(Object *, int);
+Object *THunterGuildSeqOnline_Server_ctor_8c208464(Object *o, int a1, int a2)
 {
-    initialize_manager_8c106568(o, a1);
+    TShopSequence_ctor_8c106568(o, a1);
     o->dispatch = (void *)0x8c2780f4;
     o->tag = g_8c335d8c;
     o->size = 0x44;

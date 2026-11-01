@@ -29,7 +29,7 @@ extern int call_8c014d00(int);
 extern void operation_8c014f28(void *);
 extern void call_8c014f34(void *, void *);
 extern void copy_pair_8c014f10(void *, void *);
-Object *operation_8c185ab8(Object *o, int a1, int a2)
+Object *TBoss2LaserLight_ctor_8c185ab8(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int t1;

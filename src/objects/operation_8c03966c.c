@@ -25,7 +25,7 @@ struct Arg0_dc {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c03966c(Object *o)
+void TObjEneMoja_v67_8c03966c(Object *o)
 {
     if (o->f30a != 3) {
         o->f30a = 3;

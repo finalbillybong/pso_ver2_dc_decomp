@@ -31,11 +31,11 @@ struct Frame {
 };
 extern void configure_pair_grid_view(void *, void *, unsigned int);
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_pair_grid_view(void *, unsigned int);
+extern void TWindowMessage_ctor_8c119470(void *, unsigned int);
 extern int game_malloc_8c011ecc(int);
 extern void call_8c199b8c(int, void *);
 extern void call_8c225cd0(S_c8c122700 *);
-S_c8c122700 *operation_8c22575c(int a0, int a1)
+S_c8c122700 *TWindowMessageLog_ctor_8c22575c(int a0, int a1)
 {
     Frame frame;
     S_c8c122700 *t1;
@@ -46,7 +46,7 @@ S_c8c122700 *operation_8c22575c(int a0, int a1)
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;
         (void)home;
-        initialize_pair_grid_view((void *)t1, (unsigned int)0x1e);
+        TWindowMessage_ctor_8c119470((void *)t1, (unsigned int)0x1e);
         self->f18 = (void *)0x8c278b0c;
         self->f00 = (int)(*(int *)0x8c3375d0);
         self->f1e = 0xa8;

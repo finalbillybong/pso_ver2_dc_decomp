@@ -38,7 +38,7 @@ typedef struct ObjectData {
     int f11c;
     int f120;
 } ObjectData;
-extern "C" void operation_8c11409c(Object *o)
+extern "C" void TOKeyAncient02_v17_8c11409c(Object *o)
 {
     if (((((ObjectData *)o)->f11c & 1)) != 0) {
         ((ObjectData *)o)->f70 += 0.01f;

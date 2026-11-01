@@ -27,7 +27,7 @@ typedef struct S_g8c4e2ba0Data {
 } S_g8c4e2ba0Data;
 extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c1bef00(Object *o, int a1)
+extern "C" Object *TWindowCtrlMainKiller_dtor_8c1bef00(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)(void *)0x8c275620;

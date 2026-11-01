@@ -2,8 +2,8 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_timed_owner_effect_8c1c5b40(void);
-extern void fn_8c1c5b90(void);
+extern void TItemEffFlame_dtor_8c1c5b40(void);
+extern void TItemEffFlame_update_8c1c5b90(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
@@ -12,8 +12,8 @@ extern void hierarchy_output(void);
 VirtualFunction const vt_8c276668[7] = {
     0,
     0,
-    destroy_timed_owner_effect_8c1c5b40,
-    fn_8c1c5b90,
+    TItemEffFlame_dtor_8c1c5b40,
+    TItemEffFlame_update_8c1c5b90,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

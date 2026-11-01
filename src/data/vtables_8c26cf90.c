@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c13735c(void);
-extern void operation_8c1373c0(void);
-extern void operation_8c13745c(void);
+extern void TObjFogCollision_Manager_dtor_8c13735c(void);
+extern void TObjFogCollision_Manager_update_8c1373c0(void);
+extern void TObjFogCollision_Manager_render_8c13745c(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
@@ -12,9 +12,9 @@ extern void hierarchy_output(void);
 VirtualFunction const vt_8c26cf90[7] = {
     0,
     0,
-    destroy_object_8c13735c,
-    operation_8c1373c0,
-    operation_8c13745c,
+    TObjFogCollision_Manager_dtor_8c13735c,
+    TObjFogCollision_Manager_update_8c1373c0,
+    TObjFogCollision_Manager_render_8c13745c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

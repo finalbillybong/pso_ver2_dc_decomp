@@ -26,7 +26,7 @@ struct S_g8c462a24_0 {
 extern char g_8c2eefcc[];
 extern S_c8c104e9c *load_resource_8c104e9c(void *);
 extern void copy_resource_fields(void *, void *);
-void operation_8c03c4a0(void)
+void load_assets_TObjNpcTown_8c03c4a0(void)
 {
     S_c8c104e9c *t1;
     t1 = load_resource_8c104e9c((void *)((g_8c2eefcc + 0xc)));

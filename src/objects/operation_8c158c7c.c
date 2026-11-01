@@ -17,7 +17,7 @@ struct Object {
 extern void call_8c158d24(Object *);
 extern void call_8c158ef8(Object *);
 extern void operation_8c159080(void *);
-void operation_8c158c7c(Object *o)
+void TQuestListOffline_v05_8c158c7c(Object *o)
 {
     switch (o->f24) {
     case 0:

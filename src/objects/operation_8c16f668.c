@@ -29,7 +29,7 @@ extern S_c8c021ef8 *lookup_low_id(int);
 extern void operation_1c7dd4(void *);
 extern int find_node_8c16a3c0(void *, int);
 extern S_c8c169508 *operation_8c169508(void *);
-void operation_8c16f668(int a0, int a1)
+void quest_op_find_inventory_item_ex_8c16f668(int a0, int a1)
 {
     Frame frame;
     char *v1;

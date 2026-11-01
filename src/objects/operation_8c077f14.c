@@ -16,7 +16,7 @@ struct Object {
     void *f228;
 };
 extern void call_8c075398(void);
-Object *operation_8c077f14(Object *o)
+Object *TItemWpnRifle_ctor_8c077f14(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c263754;

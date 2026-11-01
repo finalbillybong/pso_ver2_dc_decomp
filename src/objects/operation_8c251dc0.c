@@ -6,14 +6,14 @@ typedef struct Vector3 {
 typedef struct S_g8c4689e0 S_g8c4689e0;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c251e0c(void *, void *, int);
-int operation_8c251dc0(int a0)
+extern void TItemWpnOnSaber_ctor_8c251e0c(void *, void *, int);
+int TItemWpnOnSaber_create_8c251dc0(int a0)
 {
     int t1;
     if (a0 != 0) {
         t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x234);
         if (t1 != 0) {
-            operation_8c251e0c((void *)t1, (void *)(*(S_g8c4689e0 **)0x8c4689e0), a0);
+            TItemWpnOnSaber_ctor_8c251e0c((void *)t1, (void *)(*(S_g8c4689e0 **)0x8c4689e0), a0);
         }
         return (int)(t1);
     }

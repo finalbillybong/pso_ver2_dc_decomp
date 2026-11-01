@@ -38,7 +38,7 @@ extern float njSin_8c37eb0c(void *);
 extern void njTranslate_8c3829bc(int, float, float, float);
 extern void call_8c3a944a(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c1122b0(Object *o)
+void TObjGyaranzoMissile_render_8c1122b0(Object *o)
 {
     float t1;
     call_8c3827d8((void *)((*(S_g8c4d7bbc **)0x8c4d7bbc)->f42c->f6c));

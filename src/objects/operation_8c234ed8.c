@@ -49,7 +49,7 @@ struct S_vv20 {
 extern S_g8c418248 *g_8c418248;
 extern S_L8c41cba0 g_8c41cba0;
 extern void operation_8c2355a0(void *);
-extern int operation_8c1d50b4(int, int);
+extern int TWindowSubEquipKind_ctor_8c1d50b4(int, int);
 extern void operation_8c1d55b0(int);
 extern int lookup_low_id(int);
 extern int operation_8c0244c4(void *);
@@ -76,7 +76,7 @@ extern void operation_8c23551c(int, void *, void *);
 extern void operation_8c235790(int, int, int);
 extern int operation_8c1ecee4(int);
 extern int operation_8c1a8e4c(int);
-void operation_8c234ed8(Object *o)
+void TWindowShortListCtrl_update_8c234ed8(Object *o)
 {
     int v31;
     int v35;
@@ -123,7 +123,7 @@ void operation_8c234ed8(Object *o)
     switch ((unsigned char)o->f21) {
     case 0:
         if (o->f30 == 0) {
-            t1 = operation_8c1d50b4((int)((void *)0x8c2e1e30), (int)((void *)0x8c2e1e38));
+            t1 = TWindowSubEquipKind_ctor_8c1d50b4((int)((void *)0x8c2e1e30), (int)((void *)0x8c2e1e38));
             o->f30 = (Arg0_30 *)t1;
             o->f30->f80 = (o->f30->f80 & 0xffff) | 0x10;
             operation_8c1d55b0((int)(o->f30));
@@ -161,7 +161,7 @@ void operation_8c234ed8(Object *o)
         return;
     case 3:
         if (o->f30 == 0) {
-            t5 = operation_8c1d50b4((int)((void *)0x8c2e1e30), (int)((void *)0x8c2e1e38));
+            t5 = TWindowSubEquipKind_ctor_8c1d50b4((int)((void *)0x8c2e1e30), (int)((void *)0x8c2e1e38));
             o->f30 = (Arg0_30 *)t5;
             o->f30->f80 = (o->f30->f80 & 0xffff) | 0x10;
             operation_8c1d55e4((int)(o->f30));
@@ -212,7 +212,7 @@ void operation_8c234ed8(Object *o)
         return;
     case 6:
         if (o->f30 == 0) {
-            t13 = operation_8c1d50b4((int)((void *)0x8c2e1e30), (int)((void *)0x8c2e1e38));
+            t13 = TWindowSubEquipKind_ctor_8c1d50b4((int)((void *)0x8c2e1e30), (int)((void *)0x8c2e1e38));
             o->f30 = (Arg0_30 *)t13;
             o->f30->f80 = (o->f30->f80 & 0xffff) | 0x10;
             operation_8c1d5618((void *)(o->f30));

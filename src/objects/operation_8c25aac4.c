@@ -20,9 +20,9 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c198294(int, Object *);
+extern void TAdBack_ctor_8c198294(int, Object *);
 extern int call_8c25acac(Object *);
-Object *operation_8c25aac4(Object *o)
+Object *TAdPSOPlay_ctor_8c25aac4(Object *o)
 {
     Object **home = &o;
     int t1;
@@ -39,7 +39,7 @@ Object *operation_8c25aac4(Object *o)
     o->f30 = 0;
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x40);
     if (t1 != 0) {
-        call_8c198294(t1, o);
+        TAdBack_ctor_8c198294(t1, o);
     }
     t2 = call_8c25acac(o);
     o->f28 = t2;

@@ -16,7 +16,7 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c258794(Object *);
-Object *operation_8c2586c4(Object *o, int a1, int a2, int a3)
+Object *TODummyKeyCave01Sound_ctor_8c2586c4(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
     (void)home;

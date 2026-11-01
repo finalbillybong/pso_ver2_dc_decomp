@@ -21,7 +21,7 @@ extern void operation_8c052124(void *);
 extern void destroy_field_8c114790(void *, short);
 extern void destroy_color_rise_8c05bd84(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c05cd10(Object *o, int a1)
+Object *TObjEneRe2Flower_dtor_8c05cd10(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

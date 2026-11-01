@@ -13,7 +13,7 @@ extern void operation_8c100a9c(void);
 extern void operation_8c189998(void);
 extern void operation_8c1c720c(void);
 extern void operation_8c207850(void);
-extern void create_effect_a1448(void);
+extern void TCameraCtrl_create_8c0a2c74(void);
 void operation_8c189d60(void)
 {
     S_vv1 *v1;
@@ -38,5 +38,5 @@ void operation_8c189d60(void)
     case 2:
         break;
     }
-    create_effect_a1448();
+    TCameraCtrl_create_8c0a2c74();
 }

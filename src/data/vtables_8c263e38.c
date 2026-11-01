@@ -2,10 +2,10 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c079058(void);
-extern void operation_8c0792b4(void);
-extern void fn_8c07a504(void);
-extern void operation_8c07a7e8(void);
+extern void TObjEneDarkGunner_dtor_8c079058(void);
+extern void TObjEneDarkGunner_update_8c0792b4(void);
+extern void TObjEneDarkGunner_render_8c07a504(void);
+extern void TObjEneDarkGunner_render_shadow_8c07a7e8(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
@@ -39,7 +39,7 @@ extern void operation_8c046324(void);
 extern void operation_8c04639c(void);
 extern void operation_8c046414(void);
 extern void operation_8c046498(void);
-extern void operation_8c07b25c(void);
+extern void TObjEneDarkGunner_v37_8c07b25c(void);
 extern void operation_8c0133f8(void);
 extern void fn_8c045200(void);
 extern void object_blocked_8c013418(void);
@@ -47,10 +47,10 @@ extern void object_blocked_8c013428(void);
 extern void object_blocked_8c01343c(void);
 extern void object_blocked_8c0133ec(void);
 extern void operation_455ac(void);
-extern void operation_8c07b200(void);
+extern void TObjEneDarkGunner_v45_8c07b200(void);
 extern void operation_45844(void);
 extern void operation_45910(void);
-extern void operation_8c07b22c(void);
+extern void TObjEneDarkGunner_v48_8c07b22c(void);
 extern void operation_45a8c(void);
 extern void operation_45b8c(void);
 extern void operation_45d6c(void);
@@ -68,11 +68,11 @@ extern void operation_8c0471b4(void);
 extern void operation_8c0471fc(void);
 extern void fn_8c047268(void);
 extern void operation_8c047438(void);
-extern void operation_8c07b260(void);
-extern void operation_8c07b264(void);
+extern void TObjEneDarkGunner_v66_8c07b260(void);
+extern void TObjEneDarkGunner_v67_8c07b264(void);
 extern void request_actor_mode_two(void);
-extern void operation_8c07a95c(void);
-extern void fn_8c07a164(void);
+extern void TObjEneDarkGunner_v69_8c07a95c(void);
+extern void TObjEneDarkGunner_v70_8c07a164(void);
 extern void request_actor_mode_five(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
@@ -96,10 +96,10 @@ extern void fn_8c012aa8(void);
 VirtualFunction const vt_8c263e38[91] = {
     0,
     0,
-    operation_8c079058,
-    operation_8c0792b4,
-    fn_8c07a504,
-    operation_8c07a7e8,
+    TObjEneDarkGunner_dtor_8c079058,
+    TObjEneDarkGunner_update_8c0792b4,
+    TObjEneDarkGunner_render_8c07a504,
+    TObjEneDarkGunner_render_shadow_8c07a7e8,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -133,7 +133,7 @@ VirtualFunction const vt_8c263e38[91] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    operation_8c07b25c,
+    TObjEneDarkGunner_v37_8c07b25c,
     operation_8c0133f8,
     fn_8c045200,
     object_blocked_8c013418,
@@ -141,10 +141,10 @@ VirtualFunction const vt_8c263e38[91] = {
     object_blocked_8c01343c,
     object_blocked_8c0133ec,
     operation_455ac,
-    operation_8c07b200,
+    TObjEneDarkGunner_v45_8c07b200,
     operation_45844,
     operation_45910,
-    operation_8c07b22c,
+    TObjEneDarkGunner_v48_8c07b22c,
     operation_45a8c,
     operation_45b8c,
     operation_45d6c,
@@ -162,11 +162,11 @@ VirtualFunction const vt_8c263e38[91] = {
     operation_8c0471fc,
     fn_8c047268,
     operation_8c047438,
-    operation_8c07b260,
-    operation_8c07b264,
+    TObjEneDarkGunner_v66_8c07b260,
+    TObjEneDarkGunner_v67_8c07b264,
     request_actor_mode_two,
-    operation_8c07a95c,
-    fn_8c07a164,
+    TObjEneDarkGunner_v69_8c07a95c,
+    TObjEneDarkGunner_v70_8c07a164,
     request_actor_mode_five,
     operation_8c013478,
     operation_8c0134ac,

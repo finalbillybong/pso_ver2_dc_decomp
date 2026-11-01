@@ -58,7 +58,7 @@ extern S_g8c46f3a4 *g_8c46f3a4;
 extern float object_distance_xz(void *, void *, void *);
 extern float call_8c130334(float, float);
 extern int angle_difference(int, int);
-int operation_8c0bdde4(Object *o)
+int TObjEneSaver_v39_8c0bdde4(Object *o)
 {
     Frame frame;
     S_vv1 *v1;

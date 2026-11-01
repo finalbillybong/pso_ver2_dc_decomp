@@ -25,14 +25,14 @@ struct S_g8c469ca0 {
     char unknown0[0x42c];
     S_g8c469ca0_42c *f42c;
 };
-extern void operation_8c1ab100(void *, int, int);
+extern void TObjMesBase_ctor_8c1ab100(void *, int, int);
 extern void copy_actor_records(void *, void *, int);
 extern void attach_and_insert_object(void *);
-Object *operation_8c085d00(Object *o, int a1, int a2)
+Object *TObjComputer_ctor_8c085d00(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;
-    operation_8c1ab100((void *)o, a1, a2);
+    TObjMesBase_ctor_8c1ab100((void *)o, a1, a2);
     o->dispatch = (void *)0x8c264e88;
     o->tag = (int)(*(int *)0x8c2ffa9c);
     o->size = 0xf0;

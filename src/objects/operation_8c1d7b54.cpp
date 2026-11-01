@@ -25,7 +25,7 @@ extern "C" void call_8c0db5d4(Object *, int);
 extern "C" void call_8c199b80(void *, int);
 extern "C" void call_8c1d7bb8(Object *, int);
 extern "C" void call_8c1d7c80(Object *, int);
-extern "C" void operation_8c1d7b54(Object *o)
+extern "C" void TWindowSubAreaMapDisp_render_8c1d7b54(Object *o)
 {
     int t1;
     t1 = o->v5();

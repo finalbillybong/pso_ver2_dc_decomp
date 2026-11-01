@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c23cd64(void);
+extern void TItemWpnFireWand_dtor_8c23cd64(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -51,29 +51,29 @@ extern void operation_8c075708(void);
 extern void fn_8c075ac8(void);
 extern void fn_8c075b90(void);
 extern void fn_8c0766f8(void);
-extern void operation_8c23ce80(void);
+extern void TItemWpnFireWand_v49_8c23ce80(void);
 extern void operation_8c076178(void);
 extern void operation_8c076174(void);
 extern void operation_8c076238(void);
-extern void operation_8c23cda8(void);
-extern void fn_8c23ce04(void);
-extern void set_field_8c23ce74(void);
+extern void TItemWpnFireWand_v53_8c23cda8(void);
+extern void TItemWpnFireWand_v54_8c23ce04(void);
+extern void TItemWpnFireWand_v55_8c23ce74(void);
 extern void operation_8c077810(void);
 extern void operation_8c075ed8(void);
 extern void fn_8c076340(void);
-extern void destroy_object_8c23d16c(void);
-extern void operation_8c23d1b0(void);
+extern void TItemWpnFlowerCane_dtor_8c23d16c(void);
+extern void TItemWpnFlowerCane_v49_8c23d1b0(void);
 extern void operation_8c076170(void);
 extern void operation_8c075ac4(void);
 extern void operation_8c075b80(void);
-extern void destroy_object_8c23d27c(void);
+extern void TItemWpnFork_dtor_8c23d27c(void);
 extern void operation_8c07633c(void);
 
 /* 8c27a7ac: type-information and this-adjustment header, then 59 slots */
 VirtualFunction const vt_8c27a7ac[61] = {
     0,
     0,
-    destroy_object_8c23cd64,
+    TItemWpnFireWand_dtor_8c23cd64,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -122,13 +122,13 @@ VirtualFunction const vt_8c27a7ac[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    operation_8c23ce80,
+    TItemWpnFireWand_v49_8c23ce80,
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,
-    operation_8c23cda8,
-    fn_8c23ce04,
-    set_field_8c23ce74,
+    TItemWpnFireWand_v53_8c23cda8,
+    TItemWpnFireWand_v54_8c23ce04,
+    TItemWpnFireWand_v55_8c23ce74,
     operation_8c077810,
     operation_8c075ed8,
     fn_8c076340
@@ -138,7 +138,7 @@ VirtualFunction const vt_8c27a7ac[61] = {
 VirtualFunction const vt_8c27a8a0[61] = {
     0,
     0,
-    destroy_object_8c23d16c,
+    TItemWpnFlowerCane_dtor_8c23d16c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -187,7 +187,7 @@ VirtualFunction const vt_8c27a8a0[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    operation_8c23d1b0,
+    TItemWpnFlowerCane_v49_8c23d1b0,
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,
@@ -203,7 +203,7 @@ VirtualFunction const vt_8c27a8a0[61] = {
 VirtualFunction const vt_8c27a994[61] = {
     0,
     0,
-    destroy_object_8c23d27c,
+    TItemWpnFork_dtor_8c23d27c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,

@@ -12,7 +12,7 @@ struct S_c8c021ef8 {
 };
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void call_8c02b0ec(S_c8c021ef8 *);
-void operation_8c171028(int a0)
+void quest_op_disable_stealth_suit_effect_8c171028(int a0)
 {
     int v1;
     S_c8c021ef8 *t1;

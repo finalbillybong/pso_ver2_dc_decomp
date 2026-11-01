@@ -11,7 +11,7 @@ struct Object {
     int f380;
 };
 extern void call_8c027090(Object *);
-void operation_8c0852dc(Object *o)
+void TObjContainerBase_v87_8c0852dc(Object *o)
 {
     switch (o->f30a) {
     case 1:

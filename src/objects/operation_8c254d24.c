@@ -31,7 +31,7 @@ extern void update_grid_view_parameters(void *);
 extern void call_8c1dc208(Object *);
 extern void position_menu_label_8c1dc1a0(void *);
 extern void update_view_nodes(void *, void *);
-void operation_8c254d24(Object *o)
+void TWindowChoiceSetting_update_8c254d24(Object *o)
 {
     int t1;
     int t2;

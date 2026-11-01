@@ -27,7 +27,7 @@ extern int g_8c31c894;
 extern S_L8c46ee84 g_8c46ee84;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int get_game_mode_8c01c25c(void);
-Object *operation_8c198294(Object *o, int a1)
+Object *TAdBack_ctor_8c198294(Object *o, int a1)
 {
     Object **home = &o;
     int v6;

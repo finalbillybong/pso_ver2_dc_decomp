@@ -16,7 +16,7 @@ struct Arg0_13c {
 };
 extern void call_8c3843a8(void *);
 extern void operation_8c074ce4(void);
-void operation_8c23ee08(Object *o)
+void TItemWpnRabbitCane_v57_8c23ee08(Object *o)
 {
     char *v1;
     v1 = (char *)*(int *)0x8c4689f0;

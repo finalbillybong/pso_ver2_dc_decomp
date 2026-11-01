@@ -26,7 +26,7 @@ extern "C" void call_8c1990c4(Object *, int);
 extern "C" void call_8c199244(Object *, int);
 extern "C" void call_8c199b80(void *, int);
 extern "C" void call_8c199bc8(void *, int, void *);
-extern "C" void operation_8c199054(Object *o)
+extern "C" void TWindowSubCustomSelect_render_8c199054(Object *o)
 {
     int t1;
     t1 = o->v5();

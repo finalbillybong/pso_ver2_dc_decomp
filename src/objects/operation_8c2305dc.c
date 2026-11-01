@@ -24,7 +24,7 @@ extern void operation_8c2307dc(void *);
 extern void operation_8c2308b0(void *);
 extern void call_8c0db30c(Object *);
 extern void update_view_nodes(void *, void *);
-void operation_8c2305dc(Object *o)
+void TWindowSubMagPhoton_update_8c2305dc(Object *o)
 {
     int t1;
     int t2;

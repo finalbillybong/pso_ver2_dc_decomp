@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c185448(void);
-extern void operation_8c18548c(void);
-extern void fn_8c185604(void);
+extern void TObjRoomId_dtor_8c185448(void);
+extern void TObjRoomId_update_8c18548c(void);
+extern void TObjRoomId_render_8c185604(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -21,9 +21,9 @@ extern void operation_8c010510(void);
 VirtualFunction const vt_8c272018[16] = {
     0,
     0,
-    destroy_object_8c185448,
-    operation_8c18548c,
-    fn_8c185604,
+    TObjRoomId_dtor_8c185448,
+    TObjRoomId_update_8c18548c,
+    TObjRoomId_render_8c185604,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,

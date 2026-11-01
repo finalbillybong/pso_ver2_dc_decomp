@@ -11,7 +11,7 @@ struct Object {
     int fe8;
 };
 extern int hierarchy_is_active(void *);
-void operation_8c1ab1f4(Object *o)
+void TObjMesBase_v16_8c1ab1f4(Object *o)
 {
     int t1;
     if (o->fe4 != 0) {

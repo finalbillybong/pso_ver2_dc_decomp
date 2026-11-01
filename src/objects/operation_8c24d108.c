@@ -11,7 +11,7 @@ struct Object {
 };
 extern int call_8c03b55c(int, int);
 extern void raise_level_8c07653c(void *, unsigned char);
-void operation_8c24d108(Object *o)
+void TItemObjWpnPowerUp_v42_8c24d108(Object *o)
 {
     int t1;
     t1 = call_8c03b55c((int)((int)o->f13c + 0xbcc), 6);

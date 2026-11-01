@@ -13,7 +13,7 @@ extern void call_8c0ca628(int, int);
 extern void call_8c0ca9b0(int, int);
 extern void call_8c0cadc4(int, int);
 extern void call_8c0caeac(int, int);
-void operation_8c0c9840(int a0, int a1, int a2)
+void TObjEneRe4Sorcerer_v93_8c0c9840(int a0, int a1, int a2)
 {
     switch (a1) {
     case 0:

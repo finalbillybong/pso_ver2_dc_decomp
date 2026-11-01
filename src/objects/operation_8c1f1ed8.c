@@ -39,7 +39,7 @@ extern int call_8c07f914(Arg0_20 *);
 extern void call_8c1f226c(Object *);
 extern void call_8c1f21e8(Object *);
 extern void call_8c1f1fac(Object *);
-void operation_8c1f1ed8(Object *o)
+void TItemMagSub_update_8c1f1ed8(Object *o)
 {
     int v1;
     int t1;

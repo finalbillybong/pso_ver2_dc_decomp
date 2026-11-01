@@ -15,7 +15,7 @@ extern int g_8c4d9b4c;
 extern int operation_8c1692c0(void);
 extern void operation_8c1222c8(int, int);
 extern void call_8c122410(int);
-void operation_8c1373c0(Object *o)
+void TObjFogCollision_Manager_update_8c1373c0(Object *o)
 {
     int t1;
     t1 = operation_8c1692c0();

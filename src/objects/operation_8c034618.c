@@ -36,7 +36,7 @@ extern void operation_8c04c270(void);
 extern void call_8c08710c(void);
 extern void operation_8c051a90(void);
 extern void call_8c1beba4(int);
-extern void operation_8c1bec9c(void *, int);
+extern void TWindowCtrlMain_ctor_8c1bec9c(void *, int);
 extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern void TObjCMIcon_ctor_8c19584c(void);
@@ -45,7 +45,7 @@ extern void call_8c1003d0(void *);
 extern int get_field_8c0353d4(void);
 extern void operation_8c096488(int);
 extern void operation_8c035494(void);
-extern void call_8c0348bc(void *, int);
+extern void TCharaMaking_ctor_8c0348bc(void *, int);
 void load_chara_making_motions_8c034618(void)
 {
     int t1;
@@ -77,7 +77,7 @@ void load_chara_making_motions_8c034618(void)
     call_8c1beba4(1);
     t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x20);
     if (t2 != 0) {
-        operation_8c1bec9c((void *)t2, (int)g_8c44be84);
+        TWindowCtrlMain_ctor_8c1bec9c((void *)t2, (int)g_8c44be84);
     }
     t3 = game_malloc_8c011ecc(0x440);
     if (t3 != 0) {
@@ -96,7 +96,7 @@ void load_chara_making_motions_8c034618(void)
         } else {
             g_8c461ac4 = 1;
             operation_8c035494();
-            call_8c0348bc(g_8c44be90, (int)(g_8c4db9e0 + 0x370));
+            TCharaMaking_ctor_8c0348bc(g_8c44be90, (int)(g_8c4db9e0 + 0x370));
         }
         {
             short i;

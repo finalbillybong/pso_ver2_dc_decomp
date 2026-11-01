@@ -7,11 +7,11 @@ extern void operation_8c107f34(void);
 extern void fn_8c107d84(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_object_8c107c8c(void);
-extern void fn_8c107cd0(void);
-extern void fn_8c1089b0(void);
-extern void operation_8c108c70(void);
-extern void operation_8c109064(void);
+extern void TDeadSpot_dtor_8c107c8c(void);
+extern void TDeadSpot_update_8c107cd0(void);
+extern void TObjEneGyaranzo_dtor_8c1089b0(void);
+extern void TObjEneGyaranzo_update_8c108c70(void);
+extern void TObjEneGyaranzo_render_8c109064(void);
 extern void actor_render_noop_a(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
@@ -47,7 +47,7 @@ extern void operation_8c046414(void);
 extern void operation_8c046498(void);
 extern void operation_8c0c258c(void);
 extern void operation_8c0133f8(void);
-extern void operation_8c10a894(void);
+extern void TObjEneGyaranzo_v39_8c10a894(void);
 extern void object_blocked_8c013418(void);
 extern void object_blocked_8c013428(void);
 extern void object_blocked_8c01343c(void);
@@ -56,8 +56,8 @@ extern void operation_455ac(void);
 extern void operation_456a4(void);
 extern void operation_45844(void);
 extern void operation_45910(void);
-extern void operation_8c10a818(void);
-extern void operation_8c10a7ec(void);
+extern void TObjEneGyaranzo_v48_8c10a818(void);
+extern void TObjEneGyaranzo_v49_8c10a7ec(void);
 extern void operation_45b8c(void);
 extern void operation_45d6c(void);
 extern void operation_8c045484(void);
@@ -74,12 +74,12 @@ extern void operation_8c0471b4(void);
 extern void operation_8c0471fc(void);
 extern void fn_8c047268(void);
 extern void operation_8c047438(void);
-extern void operation_8c109520(void);
-extern void operation_8c10a890(void);
+extern void TObjEneGyaranzo_v66_8c109520(void);
+extern void TObjEneGyaranzo_v67_8c10a890(void);
 extern void request_actor_mode_two(void);
-extern void operation_8c10a88c(void);
-extern void operation_8c109524(void);
-extern void request_actor_mode_five_8c109768(void);
+extern void TObjEneGyaranzo_v69_8c10a88c(void);
+extern void TObjEneGyaranzo_v70_8c109524(void);
+extern void TObjEneGyaranzo_v71_8c109768(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
 extern void operation_8c0134b0(void);
@@ -113,8 +113,8 @@ VirtualFunction const vt_8c2698b0[7] = {
 VirtualFunction const vt_8c2698cc[7] = {
     0,
     0,
-    destroy_object_8c107c8c,
-    fn_8c107cd0,
+    TDeadSpot_dtor_8c107c8c,
+    TDeadSpot_update_8c107cd0,
     fn_8c107d84,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -124,9 +124,9 @@ VirtualFunction const vt_8c2698cc[7] = {
 VirtualFunction const vt_8c2698e8[91] = {
     0,
     0,
-    fn_8c1089b0,
-    operation_8c108c70,
-    operation_8c109064,
+    TObjEneGyaranzo_dtor_8c1089b0,
+    TObjEneGyaranzo_update_8c108c70,
+    TObjEneGyaranzo_render_8c109064,
     actor_render_noop_a,
     hierarchy_output,
     operation_8c0104fc,
@@ -163,7 +163,7 @@ VirtualFunction const vt_8c2698e8[91] = {
     operation_8c046498,
     operation_8c0c258c,
     operation_8c0133f8,
-    operation_8c10a894,
+    TObjEneGyaranzo_v39_8c10a894,
     object_blocked_8c013418,
     object_blocked_8c013428,
     object_blocked_8c01343c,
@@ -172,8 +172,8 @@ VirtualFunction const vt_8c2698e8[91] = {
     operation_456a4,
     operation_45844,
     operation_45910,
-    operation_8c10a818,
-    operation_8c10a7ec,
+    TObjEneGyaranzo_v48_8c10a818,
+    TObjEneGyaranzo_v49_8c10a7ec,
     operation_45b8c,
     operation_45d6c,
     operation_8c045484,
@@ -190,12 +190,12 @@ VirtualFunction const vt_8c2698e8[91] = {
     operation_8c0471fc,
     fn_8c047268,
     operation_8c047438,
-    operation_8c109520,
-    operation_8c10a890,
+    TObjEneGyaranzo_v66_8c109520,
+    TObjEneGyaranzo_v67_8c10a890,
     request_actor_mode_two,
-    operation_8c10a88c,
-    operation_8c109524,
-    request_actor_mode_five_8c109768,
+    TObjEneGyaranzo_v69_8c10a88c,
+    TObjEneGyaranzo_v70_8c109524,
+    TObjEneGyaranzo_v71_8c109768,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,

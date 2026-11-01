@@ -19,7 +19,7 @@ struct Arg0_38 {
 struct Arg0_38_2c {
     int f00;
 };
-void operation_8c23a120(Object *o)
+void TItemWpnBerlaCanon_v53_8c23a120(Object *o)
 {
     int v2;
     if (o->f38 != 0) {

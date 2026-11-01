@@ -27,7 +27,7 @@ extern void operation_8c220610(void *);
 extern void call_8c199b74(void *);
 extern void call_8c0db30c(Object *);
 extern void update_view_nodes(void *, void *);
-void operation_8c220004(Object *o)
+void TWindowSubSymbolChatFaceType_update_8c220004(Object *o)
 {
     int t1;
     int t2;

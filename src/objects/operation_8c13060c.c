@@ -23,7 +23,7 @@ extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern Pair *operator_new_8c18de4c(int);
 extern int load_pvm_file_tls_8c118528(void *);
-void operation_8c13060c(void)
+void load_assets_fs_obj_hanyousu_body1_8c13060c(void)
 {
     int t1;
     int t2;

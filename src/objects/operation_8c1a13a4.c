@@ -15,7 +15,7 @@ extern S_g8c4dc5e0 *g_8c4dc5e0;
 extern void operation_8c1a1a40(int, int);
 extern void destroy_context_8c051f28(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1a13a4(Object *o, int a1)
+Object *TObjMapCsn_dtor_8c1a13a4(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c272e84;

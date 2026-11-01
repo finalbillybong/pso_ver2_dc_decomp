@@ -27,7 +27,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern "C" void call_8c0dbdf4(Object *, S_c0 *);
 extern "C" void draw_view_nodes(void *, void *, void *);
-extern "C" void operation_8c217834(Object *o)
+extern "C" void TWindowMessageQuest_render_8c217834(Object *o)
 {
     S_c0 *t1;
     t1 = (S_c0 *)o->v5();

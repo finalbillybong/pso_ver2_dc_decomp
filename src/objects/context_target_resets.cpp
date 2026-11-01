@@ -106,5 +106,5 @@ typedef char check_Target_category[(unsigned long)&((Target *)0)->category==44?1
 typedef char check_Target_position[(unsigned long)&((Target *)0)->position==60?1:-1];
 typedef char check_Target_flags[(unsigned long)&((Target *)0)->flags==848?1:-1];
 extern "C" {extern unsigned int current_identifier;extern Target *lookup_at(unsigned int);extern void update_at(View *);extern unsigned short find_at(View *,int,float);extern float distance_at(const Vector3 *,const Vector3 *);}
-extern "C" float context_target_reset_0(View *o,Target *target) {if(target!=o->target) o->attach(0,1.0f);return 0.0f;}
-extern "C" float context_target_reset_1(View *o,Target *target) {if(target!=o->target) o->attach(0,1.0f);return 0.0f;}
+extern "C" float TOTrap_v25_8c1411c0(View *o,Target *target) {if(target!=o->target) o->attach(0,1.0f);return 0.0f;}
+extern "C" float TOTrap_v26_8c1411e4(View *o,Target *target) {if(target!=o->target) o->attach(0,1.0f);return 0.0f;}

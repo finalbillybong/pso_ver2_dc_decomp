@@ -20,7 +20,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int get_current_area_8c032b10(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c0fdc48(int, Object *, int, int);
+extern void TOMineTrap_ctor_8c0fdc48(int, Object *, int, int);
 int operation_8c0fe1f4(Object *o, int a1, int a2)
 {
     unsigned short v35;
@@ -56,7 +56,7 @@ L_8c0fe298:;
     }
     t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x398);
     if (t3 != 0) {
-        call_8c0fdc48(t3, o, a1, a2);
+        TOMineTrap_ctor_8c0fdc48(t3, o, a1, a2);
     }
     return (int)(t3);
 }

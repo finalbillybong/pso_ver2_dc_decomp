@@ -30,13 +30,13 @@ struct Object {
 extern int g_8c336690;
 extern Object *g_8c505960;
 extern char g_8c278610[];
-extern void initialize_control_manager(void *, void *);
+extern void TShopWindowBase_ctor_8c1066e4(void *, void *);
 extern void memset_8c12b880(void *, int, int);
-void operation_8c21d170(Object *o, int a1)
+void TQuestListOnline_ctor_8c21d170(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;
-    initialize_control_manager((void *)(&o->f04), (void *)a1);
+    TShopWindowBase_ctor_8c1066e4((void *)(&o->f04), (void *)a1);
     o->f30 = (void *)g_8c278610;
     o->f1c = (g_8c278610 + 0x8);
     o->f04 = (int)(g_8c336690);

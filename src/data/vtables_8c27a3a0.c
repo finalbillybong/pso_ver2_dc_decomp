@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c23bc98(void);
+extern void TItemWpnDorillArm_dtor_8c23bc98(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -51,33 +51,33 @@ extern void operation_8c075708(void);
 extern void fn_8c075ac8(void);
 extern void fn_8c075b90(void);
 extern void fn_8c0766f8(void);
-extern void operation_8c23bdd4(void);
+extern void TItemWpnDorillArm_v49_8c23bdd4(void);
 extern void operation_8c076178(void);
 extern void operation_8c076174(void);
 extern void operation_8c076238(void);
-extern void operation_8c23bcdc(void);
+extern void TItemWpnDorillArm_v53_8c23bcdc(void);
 extern void operation_8c075ac4(void);
 extern void operation_8c075b80(void);
 extern void operation_8c077810(void);
-extern void operation_8c23bd7c(void);
+extern void TItemWpnDorillArm_v57_8c23bd7c(void);
 extern void fn_8c076340(void);
-extern void destroy_object_8c23c158(void);
-extern void operation_8c23c204(void);
-extern void operation_8c23c19c(void);
-extern void operation_8c23c1b0(void);
-extern void destroy_object_8c23c620(void);
-extern void operation_8c23c7cc(void);
-extern void operation_8c23c700(void);
-extern void operation_8c23c680(void);
-extern void operation_8c23c664(void);
-extern void set_field_8c23c6f4(void);
+extern void TItemWpnDoubleCanon_dtor_8c23c158(void);
+extern void TItemWpnDoubleCanon_v49_8c23c204(void);
+extern void TItemWpnDoubleCanon_v53_8c23c19c(void);
+extern void TItemWpnDoubleCanon_v57_8c23c1b0(void);
+extern void TItemWpnDragonClaw_dtor_8c23c620(void);
+extern void TItemWpnDragonClaw_v49_8c23c7cc(void);
+extern void TItemWpnDragonClaw_v52_8c23c700(void);
+extern void TItemWpnDragonClaw_v53_8c23c680(void);
+extern void TItemWpnDragonClaw_v54_8c23c664(void);
+extern void TItemWpnDragonClaw_v55_8c23c6f4(void);
 extern void operation_8c075ed8(void);
 
 /* 8c27a3a0: type-information and this-adjustment header, then 59 slots */
 VirtualFunction const vt_8c27a3a0[61] = {
     0,
     0,
-    destroy_object_8c23bc98,
+    TItemWpnDorillArm_dtor_8c23bc98,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -126,15 +126,15 @@ VirtualFunction const vt_8c27a3a0[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    operation_8c23bdd4,
+    TItemWpnDorillArm_v49_8c23bdd4,
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,
-    operation_8c23bcdc,
+    TItemWpnDorillArm_v53_8c23bcdc,
     operation_8c075ac4,
     operation_8c075b80,
     operation_8c077810,
-    operation_8c23bd7c,
+    TItemWpnDorillArm_v57_8c23bd7c,
     fn_8c076340
 };
 
@@ -142,7 +142,7 @@ VirtualFunction const vt_8c27a3a0[61] = {
 VirtualFunction const vt_8c27a494[61] = {
     0,
     0,
-    destroy_object_8c23c158,
+    TItemWpnDoubleCanon_dtor_8c23c158,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -191,15 +191,15 @@ VirtualFunction const vt_8c27a494[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    operation_8c23c204,
+    TItemWpnDoubleCanon_v49_8c23c204,
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,
-    operation_8c23c19c,
+    TItemWpnDoubleCanon_v53_8c23c19c,
     operation_8c075ac4,
     operation_8c075b80,
     operation_8c077810,
-    operation_8c23c1b0,
+    TItemWpnDoubleCanon_v57_8c23c1b0,
     fn_8c076340
 };
 
@@ -207,7 +207,7 @@ VirtualFunction const vt_8c27a494[61] = {
 VirtualFunction const vt_8c27a588[61] = {
     0,
     0,
-    destroy_object_8c23c620,
+    TItemWpnDragonClaw_dtor_8c23c620,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -256,13 +256,13 @@ VirtualFunction const vt_8c27a588[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    operation_8c23c7cc,
+    TItemWpnDragonClaw_v49_8c23c7cc,
     operation_8c076178,
     operation_8c076174,
-    operation_8c23c700,
-    operation_8c23c680,
-    operation_8c23c664,
-    set_field_8c23c6f4,
+    TItemWpnDragonClaw_v52_8c23c700,
+    TItemWpnDragonClaw_v53_8c23c680,
+    TItemWpnDragonClaw_v54_8c23c664,
+    TItemWpnDragonClaw_v55_8c23c6f4,
     operation_8c077810,
     operation_8c075ed8,
     fn_8c076340

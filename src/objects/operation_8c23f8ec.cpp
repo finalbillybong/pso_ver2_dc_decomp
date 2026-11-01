@@ -70,9 +70,9 @@ struct S_vv1 {
     int f18;
 };
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void operation_8c1ab01c(void *, int, int, int);
+extern "C" void TItemTimer_ctor_8c1ab01c(void *, int, int, int);
 extern "C" void operation_8c23f9e8();
-extern "C" void operation_8c23f8ec(Object *o)
+extern "C" void TItemWpnRocketPunch_v49_8c23f8ec(Object *o)
 {
     S_vv1 *v1;
     int v2;
@@ -90,7 +90,7 @@ extern "C" void operation_8c23f8ec(Object *o)
             if (o != 0) {
                 t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
                 if (t1 != 0) {
-                    operation_8c1ab01c((void *)t1, (int)o, (int)operation_8c23f9e8, 0x3c);
+                    TItemTimer_ctor_8c1ab01c((void *)t1, (int)o, (int)operation_8c23f9e8, 0x3c);
                 }
             }
             ((ObjectData *)o)->f234 |= 4;

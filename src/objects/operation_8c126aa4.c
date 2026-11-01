@@ -14,7 +14,7 @@ struct Object {
     char unknown3a0[0x4];
     int f3a4;
 };
-void operation_8c126aa4(Object *o)
+void TObjEneBalClawBody_v68_8c126aa4(Object *o)
 {
     int v1;
     int v2;

@@ -12,7 +12,7 @@ struct Object {
     short size;
 };
 extern void call_8c075398(void);
-Object *operation_8c255e68(Object *o)
+Object *TItemWpnFamitsu_ctor_8c255e68(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c281524;

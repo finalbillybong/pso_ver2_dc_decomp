@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x34];
     int f34;
 };
-void operation_8c175004(Object *o)
+void TBoss2Joint_v71_8c175004(Object *o)
 {
     o->f34 &= -0x801;
 }

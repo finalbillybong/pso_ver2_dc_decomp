@@ -8,4 +8,4 @@ typedef char check_state[(unsigned long)&((View *)0)->state==52?1:-1];
 typedef char check_identifier[(unsigned long)&((View *)0)->identifier==56?1:-1];
 typedef char check_position[(unsigned long)&((View *)0)->position==60?1:-1];
 extern void TObject_ctor_8c0330e4(View *,void *);extern void *object_name;
-View *initialize_following_position_effect(View *o,void *parent,unsigned short identifier,const Vector3 *position) {TObject_ctor_8c0330e4(o,parent);o->dispatch=(void *)0x8c278558;o->name=object_name;o->size=72;o->identifier=identifier;o->child=0;o->position=*position;o->state=0;o->ticks=5;return o;}
+View *TObjDFRecover_ctor_8c21b078(View *o,void *parent,unsigned short identifier,const Vector3 *position) {TObject_ctor_8c0330e4(o,parent);o->dispatch=(void *)0x8c278558;o->name=object_name;o->size=72;o->identifier=identifier;o->child=0;o->position=*position;o->state=0;o->ticks=5;return o;}

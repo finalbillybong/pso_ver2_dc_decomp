@@ -27,7 +27,7 @@ struct S_x94592 {
 extern int call_8c0dac90(Object *);
 extern void call_8c0daabc(Object *);
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
-void operation_8c0daa28(Object *o)
+void TMainCursor_render_8c0daa28(Object *o)
 {
     int t1;
     S_c8c053d84 *t2;

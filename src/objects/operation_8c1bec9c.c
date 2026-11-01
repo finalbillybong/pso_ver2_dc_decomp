@@ -19,8 +19,8 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4e2bbc;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c1bee70(int, void *);
-Object *operation_8c1bec9c(Object *o, int a1)
+extern void TWindowCtrlMainKiller_ctor_8c1bee70(int, void *);
+Object *TWindowCtrlMain_ctor_8c1bec9c(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
@@ -31,7 +31,7 @@ Object *operation_8c1bec9c(Object *o, int a1)
     o->size = 0x20;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x20);
     if (t1 != 0) {
-        call_8c1bee70(t1, g_8c44bea4);
+        TWindowCtrlMainKiller_ctor_8c1bee70(t1, g_8c44bea4);
     }
     g_8c4e2bbc = t1;
     return o;

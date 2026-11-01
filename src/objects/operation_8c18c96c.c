@@ -20,7 +20,7 @@ extern int g_8c4dc800;
 extern int lookup_low_id(int);
 extern int get_current_area_8c032b10(void);
 extern int get_game_mode_8c01c25c(void);
-extern Res *operation_8c18ccd8(int, int, int);
+extern Res *TWindowMainMenuCommand_ctor_8c18ccd8(int, int, int);
 extern void operation_8c19a054(Effect *);
 Res *operation_8c18c96c(int a0, int a1, int a2)
 {
@@ -73,7 +73,7 @@ Res *operation_8c18c96c(int a0, int a1, int a2)
         }
         break;
     }
-    r = operation_8c18ccd8(*(int *)((char *)(g_8c467180->f2c + 0x144) + ((short)a2 << 2)), a1, a2);
+    r = TWindowMainMenuCommand_ctor_8c18ccd8(*(int *)((char *)(g_8c467180->f2c + 0x144) + ((short)a2 << 2)), a1, a2);
     if (flag == 0) {
         e = r->f6c;
         e->f19 |= 1;

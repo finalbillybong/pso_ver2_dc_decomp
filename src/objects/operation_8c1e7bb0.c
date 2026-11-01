@@ -23,7 +23,7 @@ struct Arg0_104 {
 extern int operation_8c03d338(void);
 extern void operation_8c1e7e18(void *);
 extern void call_8c1e8250(Object *);
-void operation_8c1e7bb0(Object *o)
+void TObjWarpBoss_update_8c1e7bb0(Object *o)
 {
     short v1;
     float v11;

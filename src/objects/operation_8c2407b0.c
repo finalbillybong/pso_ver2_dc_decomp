@@ -11,7 +11,7 @@ struct Object {
 };
 extern void njRotateX_8c37dd28(int, void *);
 extern void scale_current_matrix_v_8c37e390(void *);
-void operation_8c2407b0(Object *o)
+void TItemWpnTessen_v57_8c2407b0(Object *o)
 {
     if (*(int *)0x8c4689f0 != 1) {
         if (*(int *)0x8c4689f0 == 2) {

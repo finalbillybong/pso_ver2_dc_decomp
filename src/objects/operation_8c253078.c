@@ -12,7 +12,7 @@ struct Object {
     short size;
 };
 extern void operation_8c241158(void *);
-Object *operation_8c253078(Object *o)
+Object *TItemWpnOnCane_ctor_8c253078(Object *o)
 {
     operation_8c241158((void *)o);
     o->dispatch = (void *)0x8c280130;

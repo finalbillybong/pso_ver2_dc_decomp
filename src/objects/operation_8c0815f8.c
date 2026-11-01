@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c0815f8(void)
+void TObjLazerFenceExtra_render_shadow_8c0815f8(void)
 {
 }

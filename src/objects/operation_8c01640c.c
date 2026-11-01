@@ -49,7 +49,7 @@ extern int create_fitted_pair_grid_view(void *, void *);
 extern void operation_8c0dc610(void *, float);
 extern void operation_8c119764(int, int, int);
 extern void request_resource_release(void *);
-extern void operation_8c017218(int);
+extern void TWindowMakeTeam_create_8c017218(int);
 extern void operation_8c016950(void);
 void operation_8c01640c(void)
 {
@@ -110,10 +110,10 @@ void operation_8c01640c(void)
         }
         switch (t1) {
         case 0:
-            operation_8c017218(0);
+            TWindowMakeTeam_create_8c017218(0);
             break;
         case 1:
-            operation_8c017218(1);
+            TWindowMakeTeam_create_8c017218(1);
             break;
         }
         return;

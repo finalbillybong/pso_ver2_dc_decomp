@@ -15,7 +15,7 @@ struct Object {
     int f28;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c1b71f4(Object *o, int a1, int a2, int a3)
+Object *TObjBs4CutAtk_ctor_8c1b71f4(Object *o, int a1, int a2, int a3)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27507c;

@@ -12,7 +12,7 @@ extern int operation_8c03d338(void);
 extern void operation_8c257dec(Object *);
 extern void operation_8c25784c(void *);
 extern void operation_8c2578f4(void *);
-void operation_8c2577f0(Object *o)
+void TOAttackableCol_update_8c2577f0(Object *o)
 {
     int t1;
     t1 = operation_8c03d338();

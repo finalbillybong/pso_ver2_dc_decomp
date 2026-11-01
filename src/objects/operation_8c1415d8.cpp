@@ -93,7 +93,7 @@ extern "C" void call_8c3aa702(void *);
 extern "C" void call_8c391c94(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c1415d8(Object *o)
+extern "C" void TOTrapAncient01_render_8c1415d8(Object *o)
 {
     Frame frame;
     S_vv11 *v11;

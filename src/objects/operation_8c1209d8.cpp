@@ -201,8 +201,8 @@ extern "C" int spawn_node_8c0a49c8(int);
 extern "C" void visit_actor_context_a(void);
 extern "C" void call_8c0a6a10(void);
 extern "C" int hierarchy_is_active(void *);
-extern "C" int allocate_block(void *, unsigned int);
-extern "C" void initialize_loader_8c173578(void *, void *, int);
+extern "C" int heap_alloc_8c122700(void *, unsigned int);
+extern "C" void TQuestThread_ctor_1_8c173578(void *, void *, int);
 extern "C" void visit_actor_context_b(void);
 extern "C" void reset_effect_table_state(void);
 extern "C" S_c8c021ef8 *lookup_low_id(int);
@@ -295,12 +295,12 @@ extern "C" void operation_8c1209d8(Object *o)
             break;
         }
         if (((ObjectData *)o)->f3c8 >= 0x64 && ((ObjectData *)o)->f3c8 < 0x3e8 && g_8c4db520 != 0 && hierarchy_is_active(g_8c4db520) != 0) {
-            t = allocate_block(g_8c4d97e0, 0xa8);
-            if (t != 0) initialize_loader_8c173578((void *)t, g_8c4db520, ((ObjectData *)o)->f3c4);
+            t = heap_alloc_8c122700(g_8c4d97e0, 0xa8);
+            if (t != 0) TQuestThread_ctor_1_8c173578((void *)t, g_8c4db520, ((ObjectData *)o)->f3c4);
             ((ObjectData *)o)->f3cc = (Arg0_3cc *)t;
         } else if (((ObjectData *)o)->f3c8 >= 0x3e8 && g_8c4db524 != 0 && hierarchy_is_active(g_8c4db524) != 0) {
-            t = allocate_block(g_8c4d97e0, 0xa8);
-            if (t != 0) initialize_loader_8c173578((void *)t, g_8c4db524, ((ObjectData *)o)->f3c4);
+            t = heap_alloc_8c122700(g_8c4d97e0, 0xa8);
+            if (t != 0) TQuestThread_ctor_1_8c173578((void *)t, g_8c4db524, ((ObjectData *)o)->f3c4);
             ((ObjectData *)o)->f3cc = (Arg0_3cc *)t;
         }
         break;

@@ -11,7 +11,7 @@ struct Object {
     unsigned char f141;
 };
 extern void call_8c0750e8(Object *, int, int);
-void operation_8c24d66c(Object *o)
+void TItemObjTecBook_v42_8c24d66c(Object *o)
 {
     call_8c0750e8(o, (int)(o->f141), (int)(o->f138));
 }

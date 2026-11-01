@@ -125,7 +125,7 @@ extern "C" void call_8c02c048(Object *, int);
 extern "C" void operation_8c02a764(int, int);
 extern "C" int operation_8c02303c(void *, void *);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void initialize_tag_8c1694cc(void *, void *);
+extern "C" void TItemList_ctor_8c1694cc(void *, void *);
 extern "C" int call_8c074538(int, int);
 extern "C" int find_node_8c16a3c0(void *, int);
 extern "C" S_c8c169508 *operation_8c169508(void *);
@@ -176,7 +176,7 @@ extern "C" int operation_8c0230e4(Object *o, Arg1 *a1)
         t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x24);
         v1 = (int)t4;
         if (t4 != 0) {
-            initialize_tag_8c1694cc((void *)t4, (void *)(o->fbc8->f1ac));
+            TItemList_ctor_8c1694cc((void *)t4, (void *)(o->fbc8->f1ac));
         }
         break;
     case 3:
@@ -188,7 +188,7 @@ extern "C" int operation_8c0230e4(Object *o, Arg1 *a1)
                 t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x24);
                 v1 = (int)t7;
                 if (t7 != 0) {
-                    initialize_tag_8c1694cc((void *)t7, (void *)(o->fbc8->f1ac));
+                    TItemList_ctor_8c1694cc((void *)t7, (void *)(o->fbc8->f1ac));
                 }
                 break;
             }
@@ -208,7 +208,7 @@ extern "C" int operation_8c0230e4(Object *o, Arg1 *a1)
         t10 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x24);
         v1 = (int)t10;
         if (t10 != 0) {
-            initialize_tag_8c1694cc((void *)t10, (void *)(o->fbc8->f1ac));
+            TItemList_ctor_8c1694cc((void *)t10, (void *)(o->fbc8->f1ac));
         }
         break;
     }

@@ -12,7 +12,7 @@ struct Object {
     Arg0_24 *f24;
 };
 extern void update_hierarchy(void *);
-void operation_8c227c68(Object *o)
+void TAdDrawLineCtrl_update_8c227c68(Object *o)
 {
     if (o->f24 != 0) {
         update_hierarchy((void *)(o->f24));

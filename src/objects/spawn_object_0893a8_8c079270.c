@@ -1,7 +1,7 @@
 #define heap_alloc_8c122700 ((void *(*)(void *,unsigned int))0x8c122700)
-#define initialize_at ((void (*)(void *,void *,void *))0x8c078d58)
+#define TObjEneDarkGunner_ctor_8c078d58 ((void (*)(void *,void *,void *))0x8c078d58)
 void *TObjEneDarkGunner_create_8c079270(void *argument) {
  void *object=heap_alloc_8c122700(*(void **)0x8c4d97e0,0x448);
- if(object) initialize_at(object,*(void **)0x8c44be94,argument);
+ if(object) TObjEneDarkGunner_ctor_8c078d58(object,*(void **)0x8c44be94,argument);
  return object;
 }

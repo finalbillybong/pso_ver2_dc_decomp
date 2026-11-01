@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c23b684(void);
+extern void TItemWpnDevilCane_dtor_8c23b684(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -51,22 +51,22 @@ extern void operation_8c075708(void);
 extern void fn_8c075ac8(void);
 extern void fn_8c075b90(void);
 extern void fn_8c0766f8(void);
-extern void operation_8c23b958(void);
+extern void TItemWpnDevilCane_v49_8c23b958(void);
 extern void operation_8c076178(void);
 extern void operation_8c076174(void);
-extern void fn_8c23b738(void);
-extern void operation_8c23b8b4(void);
-extern void fn_8c23b6c8(void);
+extern void TItemWpnDevilCane_v52_8c23b738(void);
+extern void TItemWpnDevilCane_v53_8c23b8b4(void);
+extern void TItemWpnDevilCane_v54_8c23b6c8(void);
 extern void operation_8c075b80(void);
 extern void operation_8c077810(void);
-extern void operation_8c23b82c(void);
+extern void TItemWpnDevilCane_v57_8c23b82c(void);
 extern void fn_8c076340(void);
 
 /* 8c27a28c: type-information and this-adjustment header, then 59 slots */
 VirtualFunction const vt_8c27a28c[61] = {
     0,
     0,
-    destroy_object_8c23b684,
+    TItemWpnDevilCane_dtor_8c23b684,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -115,14 +115,14 @@ VirtualFunction const vt_8c27a28c[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    operation_8c23b958,
+    TItemWpnDevilCane_v49_8c23b958,
     operation_8c076178,
     operation_8c076174,
-    fn_8c23b738,
-    operation_8c23b8b4,
-    fn_8c23b6c8,
+    TItemWpnDevilCane_v52_8c23b738,
+    TItemWpnDevilCane_v53_8c23b8b4,
+    TItemWpnDevilCane_v54_8c23b6c8,
     operation_8c075b80,
     operation_8c077810,
-    operation_8c23b82c,
+    TItemWpnDevilCane_v57_8c23b82c,
     fn_8c076340
 };

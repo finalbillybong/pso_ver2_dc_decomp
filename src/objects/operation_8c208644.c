@@ -10,12 +10,12 @@ struct Object {
     char unknown28[0x4];
     int f2c;
 };
-extern void operation_8c1065dc(void *);
+extern void TShopSequence_v06_8c1065dc(void *);
 extern int spawn_node_8c0a49c8(int);
-void operation_8c208644(Object *o)
+void THunterGuildSeqOnline_Server_v06_8c208644(Object *o)
 {
     int t1;
-    operation_8c1065dc((void *)o);
+    TShopSequence_v06_8c1065dc((void *)o);
     t1 = spawn_node_8c0a49c8(5);
     o->f2c = (int)(t1);
     o->f24 = 1;

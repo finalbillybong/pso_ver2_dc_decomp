@@ -29,7 +29,7 @@ extern void call_8c073288(Object *);
 extern void call_8c20a108(Object *);
 extern void *heap_alloc_8c122700(void *, int);
 extern void TObject_ctor_8c0330e4(void *, Object *);
-Object *create_object_8c20989c(Object *o)
+Object *TItemEquipBase_ctor_8c20989c(Object *o)
 {
     Object **home = &o;
     void *t1;

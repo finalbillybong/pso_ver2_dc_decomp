@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c07b5a8(void);
-extern void fn_8c07b658(void);
-extern void operation_8c07b910(void);
+extern void TObjEneDarkGunCenter_dtor_8c07b5a8(void);
+extern void TObjEneDarkGunCenter_update_8c07b658(void);
+extern void TObjEneDarkGunCenter_render_8c07b910(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -96,9 +96,9 @@ extern void fn_8c012aa8(void);
 VirtualFunction const vt_8c263fc0[91] = {
     0,
     0,
-    destroy_object_8c07b5a8,
-    fn_8c07b658,
-    operation_8c07b910,
+    TObjEneDarkGunCenter_dtor_8c07b5a8,
+    TObjEneDarkGunCenter_update_8c07b658,
+    TObjEneDarkGunCenter_render_8c07b910,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,

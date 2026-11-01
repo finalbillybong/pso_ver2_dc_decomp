@@ -79,7 +79,7 @@ extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c013e74(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void call_8c04a9e0(Object *, Frame *);
-extern "C" void operation_8c0ce404(Object *o)
+extern "C" void TObjEneDubchik_render_8c0ce404(Object *o)
 {
     Frame frame;
     int t1;

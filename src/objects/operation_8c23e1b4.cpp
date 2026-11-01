@@ -56,11 +56,11 @@ struct Arg0_13c {
 };
 extern "C" void operation_8c1c577c(int, int, int, int);
 extern "C" int call_8c1aaabc(void *);
-extern "C" void create_effect_b3b80(void *, void *, void *, void *);
-extern "C" void create_effect_bada4(void *, void *, void *, void *);
+extern "C" void TTecJelin_create_8c0b3b80(void *, void *, void *, void *);
+extern "C" void TTecZarua_create_8c0bada4(void *, void *, void *, void *);
 extern "C" void operation_8c077224(void *);
 extern "C" void operation_8c076580(void *);
-extern "C" void operation_8c23e1b4(Object *o)
+extern "C" void TItemWpnMagicBook_v49_8c23e1b4(Object *o)
 {
     int v1;
     void *v7;
@@ -79,10 +79,10 @@ extern "C" void operation_8c23e1b4(Object *o)
         }
         if (((ObjectData *)o)->f214 == 0) {
             v7 = (void *)((char *)((ObjectData *)o)->f13c + 0x3c);
-            create_effect_b3b80((void *)(((ObjectData *)o)->f13c), (void *)v7, (void *)v7, (void *)4);
+            TTecJelin_create_8c0b3b80((void *)(((ObjectData *)o)->f13c), (void *)v7, (void *)v7, (void *)4);
         } else {
             v8 = (void *)((char *)((ObjectData *)o)->f13c + 0x3c);
-            create_effect_bada4((void *)(((ObjectData *)o)->f13c), (void *)v8, (void *)v8, (void *)4);
+            TTecZarua_create_8c0bada4((void *)(((ObjectData *)o)->f13c), (void *)v8, (void *)v8, (void *)4);
         }
         operation_8c077224((void *)o);
         return;

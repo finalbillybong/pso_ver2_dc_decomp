@@ -108,10 +108,10 @@ extern "C" void operation_8c1cdc30(void *);
 extern "C" void operation_8c1cd440(void *, int);
 extern "C" void operation_8c19a044(void *, int);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void operation_8c1d5b24(void *);
+extern "C" void TWindowHelpItem_ctor_8c1d5b24(void *);
 extern "C" void operation_8c1d5eb8(void *, int);
 extern "C" int operation_8c1cdc80(void *);
-extern "C" void operation_8c1ca088(void *);
+extern "C" void TWindowQuantity_ctor_8c1ca088(void *);
 extern "C" int find_node_8c16a3c0(void *, int);
 extern "C" int operation_8c169508(void *);
 extern "C" void update_count_8c1ca1fc(void *, void *);
@@ -188,7 +188,7 @@ extern "C" void operation_8c106a6c(Object *o)
     if (o->f3a0 == 0) {
         t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xb8);
         if (t6 != 0) {
-            operation_8c1d5b24((void *)t6);
+            TWindowHelpItem_ctor_8c1d5b24((void *)t6);
         }
         o->f3a0 = (Arg0_3a0 *)t6;
         operation_8c1d5eb8((void *)(o->f3a0), (int)(o->f3c));
@@ -201,7 +201,7 @@ extern "C" void operation_8c106a6c(Object *o)
     if (o->f39c == 0) {
         t8 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x6c);
         if (t8 != 0) {
-            operation_8c1ca088((void *)t8);
+            TWindowQuantity_ctor_8c1ca088((void *)t8);
         }
         o->f39c = (Arg0_39c *)t8;
         t9 = find_node_8c16a3c0((void *)(o->f28->fbc8), (int)(((char *)o + 0x30)));

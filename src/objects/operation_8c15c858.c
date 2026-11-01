@@ -19,7 +19,7 @@ struct S_c8c021ef8 {
 extern S_c8c021ef8 *lookup_low_id(int);
 extern float squared_distance_xz(void *, void *);
 extern int call_8c0dddcc(void);
-int operation_8c15c858(Object *o)
+int TOSensor_v16_8c15c858(Object *o)
 {
     S_c8c021ef8 *t1;
     float t2;

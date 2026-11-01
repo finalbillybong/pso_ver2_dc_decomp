@@ -25,9 +25,9 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c506070;
 extern void request_resource_release(void *);
 extern void game_free_8c011ec0(void *);
-extern void destroy_object_8c10671c(void *, short);
+extern void TShopWindowBase_dtor_8c10671c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c22206c(Object *o, int a1)
+Object *TQuestListVM_dtor_8c22206c(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c278928;
@@ -52,7 +52,7 @@ Object *operation_8c22206c(Object *o, int a1)
             o->f22cc = (Arg0_22cc *)0;
         }
         g_8c506070 = 0;
-        destroy_object_8c10671c((void *)o, (short)0);
+        TShopWindowBase_dtor_8c10671c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

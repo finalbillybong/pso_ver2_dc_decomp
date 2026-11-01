@@ -54,7 +54,7 @@ public:
 typedef struct Arg1Data {
 
 } Arg1Data;
-extern "C" void operation_8c0b4544(Object *o, Arg1 *a1)
+extern "C" void TTecLuker_v05_8c0b4544(Object *o, Arg1 *a1)
 {
     Frame frame;
     (&frame)->f00.f00 = 0xe;

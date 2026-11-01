@@ -22,7 +22,7 @@ struct Object {
     int f118;
 };
 extern void call_8c0ee870(void);
-Object *operation_8c112e74(Object *o)
+Object *TOKey_ctor_8c112e74(Object *o)
 {
     call_8c0ee870();
     o->dispatch = (void *)0x8c269c48;

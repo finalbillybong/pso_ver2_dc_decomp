@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern char g_8c340550[];
 extern int load_named_resource_8c104f68(void *);
-void operation_8c25d874(void)
+void load_assets_TOChatSensor_8c25d874(void)
 {
     int t1;
     t1 = load_named_resource_8c104f68((void *)((g_8c340550 + 0xd)));

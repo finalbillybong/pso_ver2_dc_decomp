@@ -31,7 +31,7 @@ struct Arg1 {
 extern void operation_8c051eb8(void *, void *);
 extern void copy_actor_records(void *, void *, int);
 extern float distance_xz_root(void *, void *);
-Object *operation_8c15a900(Object *o, Arg1 *a1, int a2)
+Object *TObjVoloptPillar_ctor_8c15a900(Object *o, Arg1 *a1, int a2)
 {
     Object **home = &o;
     float t1;

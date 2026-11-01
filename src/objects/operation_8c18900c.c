@@ -23,7 +23,7 @@ extern void operation_8c1894f0(void *);
 extern void call_8c189560(Object *);
 extern void call_8c189568(Object *);
 extern void call_8c1895f4(Object *);
-void operation_8c18900c(Object *o)
+void TShopArmorListWindow_v05_8c18900c(Object *o)
 {
     switch (o->f24) {
     case 0:

@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x334];
     int f334;
 };
-int operation_8c0fed20(Object *o, int a1)
+int TOMineTrap_v23_8c0fed20(Object *o, int a1)
 {
     int v1;
     v1 = (int)(a1 != o->f334);

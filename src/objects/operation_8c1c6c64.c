@@ -6,13 +6,13 @@ typedef struct Vector3 {
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c1c6ac8(int, int);
+extern void TOSparkMachine01_ctor_8c1c6ac8(int, int);
 int TOSparkMachine01_create_8c1c6c64(int a0)
 {
     int t1;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xb4);
     if (t1 != 0) {
-        call_8c1c6ac8(t1, a0);
+        TOSparkMachine01_ctor_8c1c6ac8(t1, a0);
     }
     return (int)(t1);
 }

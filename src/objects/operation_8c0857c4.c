@@ -15,7 +15,7 @@ extern void operation_8c052124(void *);
 extern void destroy_field_8c1f1460(void *, short);
 extern void destroy_object_state(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c0857c4(Object *o, int a1)
+Object *TObjContainerAbeEnemy_dtor_8c0857c4(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c264600;

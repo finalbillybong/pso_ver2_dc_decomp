@@ -35,7 +35,7 @@ extern S_g8c4e228c *g_8c4e228c;
 extern void refresh_records_8c1ada14(void);
 extern void clear_global_render_resources(void);
 extern void operation_8c177748(int);
-extern void spawn_effect_alt_8c22a16c(void *, void *, void *);
+extern void TObjDFDemo5_create_8c22a16c(void *, void *, void *);
 void operation_8c1b704c(Object *o)
 {
     S_vv4 *v4;
@@ -46,9 +46,9 @@ void operation_8c1b704c(Object *o)
     operation_8c177748(0x37);
     v1 = (S_vv1 *)g_8c4e228c;
     if (v1 != 0) {
-        spawn_effect_alt_8c22a16c((void *)o, (void *)((int)v1 + 0x3c), (void *)(v1->f64));
+        TObjDFDemo5_create_8c22a16c((void *)o, (void *)((int)v1 + 0x3c), (void *)(v1->f64));
     } else {
-        spawn_effect_alt_8c22a16c((void *)o, (void *)((void *)0x8c327474), (void *)0);
+        TObjDFDemo5_create_8c22a16c((void *)o, (void *)((void *)0x8c327474), (void *)0);
     }
     v4 = (S_vv4 *)g_8c4e228c;
     if (v4 != 0) {

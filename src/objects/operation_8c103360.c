@@ -20,7 +20,7 @@ struct Arg2 {
 };
 extern int g_8c30b220;
 extern void call_8c073288(Object *, int, Arg2 *);
-Object *operation_8c103360(Object *o, int a1, Arg2 *a2)
+Object *TItemMoney_ctor_8c103360(Object *o, int a1, Arg2 *a2)
 {
     int v1;
     call_8c073288(o, a1, a2);

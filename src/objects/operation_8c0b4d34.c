@@ -105,7 +105,7 @@ extern Arg0_14c *create_effect_785c(void *, void *, int);
 extern Arg0_14c *create_effect_769c(void *, int);
 extern int play_se_8c05fbf8(int, void *, int, int);
 extern void emit_control_60320(int, int, int);
-Object *operation_8c0b4d34(Object *o, int a1, int a2, int a3, int a4)
+Object *TTecMegid_ctor_1_8c0b4d34(Object *o, int a1, int a2, int a3, int a4)
 {
     Frame frame;
     Object **home = &o;

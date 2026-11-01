@@ -12,7 +12,7 @@ struct Frame {
 };
 extern void call_8c36d3ca(void *);
 extern void call_8c36d4c0(void *, Frame *);
-void operation_8c16e674(int a0)
+void quest_op_gettime_8c16e674(int a0)
 {
     Frame frame;
     call_8c36d3ca((void *)(&(&frame)->f04));

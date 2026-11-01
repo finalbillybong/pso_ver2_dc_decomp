@@ -12,7 +12,7 @@ struct Object {
     char unknown124[0x8];
     int f12c;
 };
-void operation_8c162a94(Object *o)
+void TOKeyMachine01_v18_8c162a94(Object *o)
 {
     if (o->f12c == 1) {
         o->f120 += 0.1f;

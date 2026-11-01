@@ -19,7 +19,7 @@ struct Arg0_6c {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void destroy_context_8c0db244(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c22cb18(Object *o, int a1)
+Object *TWindowLoadItemTexture_dtor_8c22cb18(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c278e84;

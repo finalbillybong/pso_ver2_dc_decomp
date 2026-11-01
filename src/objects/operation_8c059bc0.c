@@ -19,7 +19,7 @@ struct Object {
     int f3a4;
 };
 extern void TObjEnemy_ctor_8c012008(void);
-Object *operation_8c059bc0(Object *o)
+Object *TObjEneDD_ctor_8c059bc0(Object *o)
 {
     TObjEnemy_ctor_8c012008();
     o->dispatch = (void *)0x8c2627b8;

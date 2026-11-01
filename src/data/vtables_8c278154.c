@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void fn_8c20997c(void);
+extern void TItemEquipBase_dtor_8c20997c(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -44,29 +44,29 @@ extern void operation_8c075344(void);
 extern void operation_8c074ac0(void);
 extern void operation_8c02b210(void);
 extern void operation_8c021050(void);
-extern void operation_8c209c44(void);
-extern void operation_8c0e7140(void);
-extern void operation_8c209a84(void);
-extern void operation_8c209a88(void);
+extern void TItemEquipBase_v42_8c209c44(void);
+extern void TItemEquipBase_v43_8c0e7140(void);
+extern void TItemEquipBase_v44_8c209a84(void);
+extern void TItemEquipBase_v45_8c209a88(void);
 extern void operation_8c07fd60(void);
 extern void operation_8c07fd64(void);
-extern void destroy_context_8c21108c(void);
-extern void fn_8c21272c(void);
-extern void operation_8c214fec(void);
+extern void TWindowDD_dtor_8c21108c(void);
+extern void TWindowDD_update_8c21272c(void);
+extern void TWindowDD_render_8c214fec(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void destroy_object_8c215060(void);
 extern void refresh_follow_effect_8c2151b0(void);
 extern void fn_8c2151d0(void);
 extern void operation_8c0dc63c(void);
-extern void destroy_object_8c2154ac(void);
-extern void refresh_follow_effect_8c21551c(void);
-extern void fn_8c21553c(void);
+extern void TWindowDD_WS_ScrollBar_dtor_8c2154ac(void);
+extern void TWindowDD_WS_ScrollBar_update_8c21551c(void);
+extern void TWindowDD_WS_ScrollBar_render_8c21553c(void);
 
 /* 8c278154: type-information and this-adjustment header, then 48 slots */
 VirtualFunction const vt_8c278154[50] = {
     0,
     0,
-    fn_8c20997c,
+    TItemEquipBase_dtor_8c20997c,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -108,10 +108,10 @@ VirtualFunction const vt_8c278154[50] = {
     operation_8c074ac0,
     operation_8c02b210,
     operation_8c021050,
-    operation_8c209c44,
-    operation_8c0e7140,
-    operation_8c209a84,
-    operation_8c209a88,
+    TItemEquipBase_v42_8c209c44,
+    TItemEquipBase_v43_8c0e7140,
+    TItemEquipBase_v44_8c209a84,
+    TItemEquipBase_v45_8c209a88,
     operation_8c07fd60,
     operation_8c07fd64
 };
@@ -120,9 +120,9 @@ VirtualFunction const vt_8c278154[50] = {
 VirtualFunction const vt_8c27821c[7] = {
     0,
     0,
-    destroy_context_8c21108c,
-    fn_8c21272c,
-    operation_8c214fec,
+    TWindowDD_dtor_8c21108c,
+    TWindowDD_update_8c21272c,
+    TWindowDD_render_8c214fec,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -143,9 +143,9 @@ VirtualFunction const vt_8c278238[8] = {
 VirtualFunction const vt_8c278258[8] = {
     0,
     0,
-    destroy_object_8c2154ac,
-    refresh_follow_effect_8c21551c,
-    fn_8c21553c,
+    TWindowDD_WS_ScrollBar_dtor_8c2154ac,
+    TWindowDD_WS_ScrollBar_update_8c21551c,
+    TWindowDD_WS_ScrollBar_render_8c21553c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c

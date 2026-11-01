@@ -21,7 +21,7 @@ struct Frame {
     float f1c;
 };
 extern void operation_1959b0(int, void *, void *, float, float);
-void operation_8c197298(Object *o)
+void TObjBGLifeGame_render_8c197298(Object *o)
 {
     Frame frame;
     float t;

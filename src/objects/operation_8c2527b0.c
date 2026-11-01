@@ -21,7 +21,7 @@ struct Object {
     int f238;
 };
 extern void operation_8c241158(void *);
-Object *operation_8c2527b0(Object *o)
+Object *TItemWpnOnSpreadGunB_ctor_8c2527b0(Object *o)
 {
     operation_8c241158((void *)o);
     o->dispatch = (void *)0x8c27fb60;

@@ -17,7 +17,7 @@ struct S_g8c4d59d8 {
 };
 extern int lookup_low_id(int);
 extern float squared_distance_xyz(void *, void *);
-void operation_8c1c44a8(Object *o)
+void TObjRaderHideCol_update_8c1c44a8(Object *o)
 {
     int t1;
     float t2;

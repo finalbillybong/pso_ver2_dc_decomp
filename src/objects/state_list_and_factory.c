@@ -8,12 +8,12 @@ List *operation_2395d0(List *list){
     return list;
 }
 #define heap_alloc_8c122700 ((void *(*)(void *,int))0x8c122700)
-#define initialize_at ((void (*)(void *,void *,void *))0x8c23963c)
-void *operation_2395f0(void *argument){
+#define TItemWpnWindCane_ctor_8c23963c ((void (*)(void *,void *,void *))0x8c23963c)
+void *TItemWpnWindCane_create_8c2395f0(void *argument){
     void *result;
     if(argument){
         result=heap_alloc_8c122700(*(void **)0x8c4d97e0,0x250);
-        if(result)initialize_at(result,*(void **)0x8c4689e0,argument);
+        if(result)TItemWpnWindCane_ctor_8c23963c(result,*(void **)0x8c4689e0,argument);
         return result;
     }
     return 0;

@@ -91,39 +91,39 @@ extern void operation_8c0134ec(void);
 extern void operation_8c012b88(void);
 extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
-extern void operation_8c1aea8c(void);
+extern void TODoorCave03_dtor_8c1aea8c(void);
 extern void operation_8c0eec28(void);
-extern void fn_8c1aebd8(void);
-extern void operation_8c1aeea0(void);
+extern void TODoorCave03_render_8c1aebd8(void);
+extern void TODoorCave03_render_shadow_8c1aeea0(void);
 extern void operation_8c051fd4(void);
 extern void operation_8c010508(void);
 extern void operation_8c010510(void);
-extern void operation_8c1aee9c(void);
+extern void TODoorCave03_v15_8c1aee9c(void);
 extern void operation_8c0eed3c(void);
-extern void operation_8c1aecf4(void);
-extern void operation_8c1aeda0(void);
-extern void operation_8c1aedf4(void);
-extern void operation_8c1aee50(void);
+extern void TODoorCave03_v17_8c1aecf4(void);
+extern void TODoorCave03_v18_8c1aeda0(void);
+extern void TODoorCave03_v19_8c1aedf4(void);
+extern void TODoorCave03_v20_8c1aee50(void);
 extern void operation_8c0ef190(void);
-extern void operation_8c1aefc8(void);
-extern void operation_8c1af190(void);
-extern void operation_8c1af428(void);
-extern void operation_8c1af424(void);
-extern void operation_8c1af304(void);
+extern void TODoorMachine02_dtor_8c1aefc8(void);
+extern void TODoorMachine02_render_8c1af190(void);
+extern void TODoorVoShip_ctor_8c1af428(void);
+extern void TODoorMachine02_v15_8c1af424(void);
+extern void TODoorMachine02_v17_8c1af304(void);
 extern void operation_8c0eef00(void);
-extern void operation_8c1af3c4(void);
+extern void TODoorMachine02_v19_8c1af3c4(void);
 extern void operation_8c0ef0d8(void);
-extern void operation_8c1af62c(void);
-extern void operation_8c1af8bc(void);
-extern void fn_8c1af72c(void);
-extern void operation_8c1af9bc(void);
-extern void operation_8c1af9b8(void);
-extern void destroy_view_effect_8c1afa0c(void);
-extern void operation_8c1afa58(void);
-extern void fn_8c1afbcc(void);
-extern void destroy_object_8c1b0108(void);
-extern void operation_8c1b014c(void);
-extern void fn_8c1b0150(void);
+extern void TODoorVoShip_dtor_8c1af62c(void);
+extern void TODoorVoShip_update_8c1af8bc(void);
+extern void TODoorVoShip_render_8c1af72c(void);
+extern void TODoorVoShip_render_shadow_8c1af9bc(void);
+extern void TODoorVoShip_v15_8c1af9b8(void);
+extern void TCineCtrl_dtor_8c1afa0c(void);
+extern void TCineCtrl_update_8c1afa58(void);
+extern void TCineCtrl_render_8c1afbcc(void);
+extern void TAdGuideButton_dtor_8c1b0108(void);
+extern void TAdGuideButton_update_8c1b014c(void);
+extern void TAdGuideButton_render_8c1b0150(void);
 extern void operation_8c1b04bc(void);
 extern void operation_8c1b0678(void);
 extern void fn_8c1b05b4(void);
@@ -228,10 +228,10 @@ VirtualFunction const vt_8c2748f4[91] = {
 VirtualFunction const vt_8c274a60[24] = {
     0,
     0,
-    operation_8c1aea8c,
+    TODoorCave03_dtor_8c1aea8c,
     operation_8c0eec28,
-    fn_8c1aebd8,
-    operation_8c1aeea0,
+    TODoorCave03_render_8c1aebd8,
+    TODoorCave03_render_shadow_8c1aeea0,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -243,12 +243,12 @@ VirtualFunction const vt_8c274a60[24] = {
     fn_8c01d4c4,
     operation_8c010510,
     operation_8c0104f0,
-    operation_8c1aee9c,
+    TODoorCave03_v15_8c1aee9c,
     operation_8c0eed3c,
-    operation_8c1aecf4,
-    operation_8c1aeda0,
-    operation_8c1aedf4,
-    operation_8c1aee50,
+    TODoorCave03_v17_8c1aecf4,
+    TODoorCave03_v18_8c1aeda0,
+    TODoorCave03_v19_8c1aedf4,
+    TODoorCave03_v20_8c1aee50,
     operation_8c0ef190
 };
 
@@ -256,10 +256,10 @@ VirtualFunction const vt_8c274a60[24] = {
 VirtualFunction const vt_8c274ac0[24] = {
     0,
     0,
-    operation_8c1aefc8,
+    TODoorMachine02_dtor_8c1aefc8,
     operation_8c0eec28,
-    operation_8c1af190,
-    operation_8c1af428,
+    TODoorMachine02_render_8c1af190,
+    TODoorVoShip_ctor_8c1af428,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -271,11 +271,11 @@ VirtualFunction const vt_8c274ac0[24] = {
     fn_8c01d4c4,
     operation_8c010510,
     operation_8c0104f0,
-    operation_8c1af424,
+    TODoorMachine02_v15_8c1af424,
     operation_8c0eed3c,
-    operation_8c1af304,
+    TODoorMachine02_v17_8c1af304,
     operation_8c0eef00,
-    operation_8c1af3c4,
+    TODoorMachine02_v19_8c1af3c4,
     operation_8c0ef0d8,
     operation_8c0ef190
 };
@@ -284,10 +284,10 @@ VirtualFunction const vt_8c274ac0[24] = {
 VirtualFunction const vt_8c274b20[18] = {
     0,
     0,
-    operation_8c1af62c,
-    operation_8c1af8bc,
-    fn_8c1af72c,
-    operation_8c1af9bc,
+    TODoorVoShip_dtor_8c1af62c,
+    TODoorVoShip_update_8c1af8bc,
+    TODoorVoShip_render_8c1af72c,
+    TODoorVoShip_render_shadow_8c1af9bc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -299,16 +299,16 @@ VirtualFunction const vt_8c274b20[18] = {
     fn_8c01d4c4,
     operation_8c010510,
     operation_8c0104f0,
-    operation_8c1af9b8
+    TODoorVoShip_v15_8c1af9b8
 };
 
 /* 8c274b68: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c274b68[7] = {
     0,
     0,
-    destroy_view_effect_8c1afa0c,
-    operation_8c1afa58,
-    fn_8c1afbcc,
+    TCineCtrl_dtor_8c1afa0c,
+    TCineCtrl_update_8c1afa58,
+    TCineCtrl_render_8c1afbcc,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -317,9 +317,9 @@ VirtualFunction const vt_8c274b68[7] = {
 VirtualFunction const vt_8c274b84[7] = {
     0,
     0,
-    destroy_object_8c1b0108,
-    operation_8c1b014c,
-    fn_8c1b0150,
+    TAdGuideButton_dtor_8c1b0108,
+    TAdGuideButton_update_8c1b014c,
+    TAdGuideButton_render_8c1b0150,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

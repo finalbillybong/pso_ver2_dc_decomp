@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x23a];
     short f23a;
 };
-void operation_8c179948(Object *o)
+void TItemWpnCSorcer_v51_8c179948(Object *o)
 {
     if (o->f23a != 1 && o->f23a != 0) {
         return;

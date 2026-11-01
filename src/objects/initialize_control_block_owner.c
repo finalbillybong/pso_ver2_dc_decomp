@@ -5,5 +5,5 @@ typedef char check_dispatch[(unsigned long)&((View *)0)->dispatch==24?1:-1];
 typedef char check_size[(unsigned long)&((View *)0)->size==30?1:-1];
 typedef char check_block[(unsigned long)&((View *)0)->block==60?1:-1];
 typedef char check_state[(unsigned long)&((View *)0)->state==128?1:-1];
-extern void base_at(View *,void *);extern void *parent,*object_name;extern Block68 initial_block;
-View *initialize_control_block_owner(View *o) {base_at(o,parent);o->dispatch=(void *)0x8c26cdd0;o->name=object_name;o->size=132;o->state=0;o->block=initial_block;return o;}
+extern void TEditor_ctor_8c03c92c(View *,void *);extern void *parent,*object_name;extern Block68 initial_block;
+View *TLightEditor_ctor_8c1336b4(View *o) {TEditor_ctor_8c03c92c(o,parent);o->dispatch=(void *)0x8c26cdd0;o->name=object_name;o->size=132;o->state=0;o->block=initial_block;return o;}

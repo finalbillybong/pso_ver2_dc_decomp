@@ -14,7 +14,7 @@ extern void call_8c0eeb58(void);
 extern int call_8c17796c(int);
 extern int get_game_mode_8c01c25c(void);
 extern void operation_8c05428c(void *, int, int);
-void operation_8c1af8bc(Object *o)
+void TODoorVoShip_update_8c1af8bc(Object *o)
 {
     int t1;
     int t2;

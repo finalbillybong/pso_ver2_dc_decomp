@@ -31,7 +31,7 @@ extern S_g8c44bea0 *g_8c44bea0;
 extern void operation_8c24759c(void);
 extern int lookup_low_id(int);
 extern int call_8c2383dc(void *);
-extern void spawn_effect_alt_8c246528(void *, void *, void *);
+extern void TObjTombstone_create_8c246528(void *, void *, void *);
 void operation_8c237f94(void)
 {
     int v1;
@@ -54,7 +54,7 @@ void operation_8c237f94(void)
                                 continue;
                             }
                         }
-                        spawn_effect_alt_8c246528(g_8c44bea0, (void *)v1, (void *)v2);
+                        TObjTombstone_create_8c246528(g_8c44bea0, (void *)v1, (void *)v2);
                     }
                 }
             }

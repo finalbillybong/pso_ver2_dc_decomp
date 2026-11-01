@@ -16,7 +16,7 @@ struct Object {
     int f28;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c1ab01c(Object *o, int a1, int a2, int a3)
+Object *TItemTimer_ctor_8c1ab01c(Object *o, int a1, int a2, int a3)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c274790;

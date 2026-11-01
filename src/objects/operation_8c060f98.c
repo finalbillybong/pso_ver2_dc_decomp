@@ -9,7 +9,7 @@ struct Object {
     short f30a;
 };
 extern void operation_8c059ea4(void *, int);
-void operation_8c060f98(Object *o)
+void TObjEneBm5Wolf_v70_8c060f98(Object *o)
 {
     if (o->f30a != 0xf) {
         operation_8c059ea4((void *)o, 0xf);

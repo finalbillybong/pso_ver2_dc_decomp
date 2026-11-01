@@ -35,7 +35,7 @@ extern "C" void operation_8c052124(void *);
 extern "C" void destroy_field_8c114790(void *, short);
 extern "C" void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
 extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c0cdcb8(Object *o, int a1)
+extern "C" Object *TObjEneDubchik_dtor_8c0cdcb8(Object *o, int a1)
 {
     int v2;
     if (o != 0) {

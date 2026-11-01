@@ -10,7 +10,7 @@ extern void call_8c1aabb0(void);
 extern void operation_8c1656b8(void);
 extern void operation_8c142028(void);
 extern void call_8c03dc40(void *, int);
-void operation_8c1434d0(void)
+void release_assets_boss2_de_rol_le_8c1434d0(void)
 {
     operation_8c1764d4();
     operation_8c176048();

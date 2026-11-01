@@ -17,10 +17,10 @@ struct Arg0_13c {
     int f37c;
 };
 extern int current_mode_active(void);
-extern void call_8c0bb6fc(Arg0_13c *, void *, void *, int);
+extern void TTecZonde_ctor_8c0bb6fc(Arg0_13c *, void *, void *, int);
 extern void create_effect_b0fac(void *, void *, void *, void *);
-extern void create_effect_d2a8(void *, void *, void *, void *);
-void operation_8c17abe8(Object *o, int a1)
+extern void TTecBarta_create_8c0ad2a8(void *, void *, void *, void *);
+void TItemWpnPsychowand_v39_8c17abe8(Object *o, int a1)
 {
     int t1;
     if (o->f13c != 0) {
@@ -35,13 +35,13 @@ void operation_8c17abe8(Object *o, int a1)
                 }
                 return;
             }
-            call_8c0bb6fc((Arg0_13c *)(o->f13c), (void *)(((char *)o + 0x238)), (void *)(((char *)o + 0x244)), 7);
+            TTecZonde_ctor_8c0bb6fc((Arg0_13c *)(o->f13c), (void *)(((char *)o + 0x238)), (void *)(((char *)o + 0x244)), 7);
             return;
 L_8c17ac3c:;
             create_effect_b0fac((void *)(o->f13c), (void *)(((char *)o + 0x238)), (void *)(o->f2a0), (void *)7);
             return;
 L_8c17ac50:;
-            create_effect_d2a8((void *)(o->f13c), (void *)(((char *)o + 0x2a4)), (void *)(o->f2a0), (void *)7);
+            TTecBarta_create_8c0ad2a8((void *)(o->f13c), (void *)(((char *)o + 0x2a4)), (void *)(o->f2a0), (void *)7);
         }
     }
 }

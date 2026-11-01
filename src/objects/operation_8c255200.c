@@ -19,11 +19,11 @@ struct Object {
     char unknown1c4[0x20];
     int f1e4;
 };
-extern void operation_8c0e8360(void *, int, int);
-Object *operation_8c255200(Object *o, int a1, int a2)
+extern void TItemProShield_ctor_8c0e8360(void *, int, int);
+Object *TItemProShieldModel_ctor_8c255200(Object *o, int a1, int a2)
 {
     unsigned char v1;
-    operation_8c0e8360((void *)o, a1, a2);
+    TItemProShield_ctor_8c0e8360((void *)o, a1, a2);
     o->dispatch = (void *)0x8c2810d8;
     o->tag = (int)(*(int *)0x8c33fda0);
     o->size = 0x1e8;

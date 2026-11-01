@@ -16,7 +16,7 @@ extern void call_8c1cd008(int, int, int);
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_grid_panel_8c1ccd24(void *, int);
 extern void operation_8c1cd3d4(void *);
-S_c8c122700 *operation_8c1d50b4(int a0, int a1)
+S_c8c122700 *TWindowSubEquipKind_ctor_8c1d50b4(int a0, int a1)
 {
     S_c8c122700 *t1;
     call_8c1cd008(a0, a1, 0x1f);

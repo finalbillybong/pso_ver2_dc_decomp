@@ -20,7 +20,7 @@ extern void operation_8c0e7720(void *, int, int);
 extern void set_global_8c01c1d0(void);
 extern void operation_8c110b74(int);
 extern void call_8c021cc0(int, void *);
-void operation_8c1701b4(int a0, int a1)
+void quest_op_go_floor_8c1701b4(int a0, int a1)
 {
     int t1;
     int v1;

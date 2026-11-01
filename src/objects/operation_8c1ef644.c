@@ -21,7 +21,7 @@ struct S_c8c122700 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void TObject_ctor_8c0330e4(void *, void *);
-void operation_8c1ef644(Object *o)
+void TObject_create_8c1ef644(Object *o)
 {
     S_c8c122700 *t1;
     short v1;

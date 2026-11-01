@@ -15,7 +15,7 @@ struct Object {
     int f48;
     int f4c;
 };
-void operation_8c0ee608(Object *o)
+void TFontSmallTask_update_8c0ee608(Object *o)
 {
     int v1;
     switch (o->f4c) {

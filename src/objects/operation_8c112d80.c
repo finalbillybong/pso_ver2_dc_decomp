@@ -12,7 +12,7 @@ extern int call_8c220ce0(void);
 extern int call_8c106760(int);
 extern int call_8c106798(int);
 extern void call_8c1066c0(int);
-extern void call_8c10664c(int);
+extern void TShopSequence_v07_8c10664c(int);
 void operation_8c112d80(Object *o)
 {
     int t1;
@@ -28,7 +28,7 @@ void operation_8c112d80(Object *o)
             }
         }
         call_8c1066c0((int)o);
-        call_8c10664c((int)o);
+        TShopSequence_v07_8c10664c((int)o);
         o->f04 |= 1;
     }
 }

@@ -29,7 +29,7 @@ extern S_L8c285640 g_8c285640;
 extern void operator_delete_8c18de08(void *, int);
 extern void destroy_context_8c0b9ce8(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c0b5514(Object *o, int a1)
+Object *TTecMegid_dtor_8c0b5514(Object *o, int a1)
 {
     unsigned int v1;
     if (o != 0) {

@@ -55,7 +55,7 @@ extern S_g8c46ed0c *g_8c46ed0c;
 extern "C" void call_8c05406c(Object *, Frame *);
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void operation_8c02688c(void *);
-extern "C" float operation_8c140d50(Object *o, Arg1 *a1)
+extern "C" float TOTrap_v24_8c140d50(Object *o, Arg1 *a1)
 {
     Frame frame;
     int v6;

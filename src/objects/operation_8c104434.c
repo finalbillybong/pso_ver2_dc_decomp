@@ -24,7 +24,7 @@ struct Object {
     float f50;
     float f54;
 };
-void operation_8c104434(Object *o)
+void TObjEneDf2Bringer_Eff_TpAbsorb1_update_8c104434(Object *o)
 {
     float v1;
     o->f54 += 1.0f;

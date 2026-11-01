@@ -53,7 +53,7 @@ extern S_g8c4e2288 *g_8c4e2288;
 extern void refresh_records_8c1ada14(void);
 extern void clear_global_render_resources(void);
 extern void njUnitVector_8c37b630(Frame *);
-extern void operation_8c2281a0(int, int, int, int);
+extern void TObjDFDemo2_create_8c2281a0(int, int, int, int);
 extern void operation_8c177748(int);
 extern void operation_8c227508(int);
 void operation_8c1b6c24(Object *o)
@@ -86,7 +86,7 @@ void operation_8c1b6c24(Object *o)
     if (g_8c4703c0 != 0) {
         v8 = 1;
     }
-    operation_8c2281a0((int)o, (int)(&o->f3b4), (int)(o->f3c0), v8);
+    TObjDFDemo2_create_8c2281a0((int)o, (int)(&o->f3b4), (int)(o->f3c0), v8);
     operation_8c177748(0x35);
     operation_8c227508(1);
     v9 = (S_vv9 *)g_8c4e2288;

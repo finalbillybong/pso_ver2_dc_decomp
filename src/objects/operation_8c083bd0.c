@@ -19,7 +19,7 @@ struct Object {
     float f44;
 };
 extern char g_8c46ee84[];
-int operation_8c083bd0(Object *o, float f0, float f1)
+int TObjContainerIdo_v11_8c083bd0(Object *o, float f0, float f1)
 {
     Frame frame;
     float t1;

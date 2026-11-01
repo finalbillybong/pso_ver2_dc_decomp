@@ -31,7 +31,7 @@ extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void TObjectShared_ctor_8c01d1ec(S_c8c122700 *, void *);
-extern "C" S_c8c122700 *operation_8c09fc80(int a0)
+extern "C" S_c8c122700 *TEF_LensFlare_ctor_8c09fc80(int a0)
 {
     S_c8c122700 *t1;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x98);

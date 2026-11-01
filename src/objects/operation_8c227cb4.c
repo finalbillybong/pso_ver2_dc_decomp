@@ -29,7 +29,7 @@ struct Arg0_20 {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c2275ac(int, int, S_vv4 *, Object *);
+extern void TAdDrawLineTask_ctor_8c2275ac(int, int, S_vv4 *, Object *);
 extern void call_8c227a84(int, float);
 void operation_8c227cb4(Object *o, int a1)
 {
@@ -48,7 +48,7 @@ void operation_8c227cb4(Object *o, int a1)
             if (v4 != 0 && v4->f24 != 0.0f) {
                 v9 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xb4);
                 if (v9 != 0) {
-                    call_8c2275ac(v9, (int)(v5), v4, o);
+                    TAdDrawLineTask_ctor_8c2275ac(v9, (int)(v5), v4, o);
                 }
             } else {
                 v9 = 0;

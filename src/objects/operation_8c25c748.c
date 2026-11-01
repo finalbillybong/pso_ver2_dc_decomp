@@ -11,7 +11,7 @@ struct Object {
 extern int keyboard_character(void);
 extern int game_bu_check_busy_wrapper_8c25c884(Object *);
 extern void request_game_mode_8c01c1a4(int);
-void operation_8c25c748(Object *o)
+void TItemReverseTechCtrl_update_8c25c748(Object *o)
 {
     int v4;
     int t1;

@@ -35,7 +35,7 @@ extern int operation_8c05bbf8(void);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int create_effect_769c(void *, int);
 extern void call_8c0a7608(Arg0_2c *, Frame *);
-void operation_8c078c14(Object *o)
+void TObjBoss1Floor_update_8c078c14(Object *o)
 {
     Frame frame;
     char *v3;

@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_view_effect_8c09f2ac(void);
-extern void operation_8c09f2f8(void);
-extern void operation_8c09f328(void);
+extern void TSceneSora_dtor_8c09f2ac(void);
+extern void TSceneSora_update_8c09f2f8(void);
+extern void TSceneSora_render_8c09f328(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -16,23 +16,23 @@ extern void operation_8c010508(void);
 extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
-extern void fn_8c09f4b8(void);
-extern void operation_8c09f54c(void);
-extern void operation_8c09f558(void);
-extern void destroy_object_8c09fc3c(void);
-extern void operation_8c09fd48(void);
-extern void fn_8c09f55c(void);
-extern void destroy_object_8c09fe00(void);
-extern void operation_8c09fe44(void);
-extern void fn_8c09ff7c(void);
+extern void TEF_PvrWave_dtor_8c09f4b8(void);
+extern void TEF_PvrWave_update_8c09f54c(void);
+extern void TEF_PvrWave_render_8c09f558(void);
+extern void TEF_LensFlare_dtor_8c09fc3c(void);
+extern void TEF_LensFlare_update_8c09fd48(void);
+extern void TEF_LensFlare_render_8c09f55c(void);
+extern void TEffClitical_dtor_8c09fe00(void);
+extern void TEffClitical_update_8c09fe44(void);
+extern void TEffClitical_render_8c09ff7c(void);
 
 /* 8c265920: type-information and this-adjustment header, then 14 slots */
 VirtualFunction const vt_8c265920[16] = {
     0,
     0,
-    destroy_view_effect_8c09f2ac,
-    operation_8c09f2f8,
-    operation_8c09f328,
+    TSceneSora_dtor_8c09f2ac,
+    TSceneSora_update_8c09f2f8,
+    TSceneSora_render_8c09f328,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -50,9 +50,9 @@ VirtualFunction const vt_8c265920[16] = {
 VirtualFunction const vt_8c265960[7] = {
     0,
     0,
-    fn_8c09f4b8,
-    operation_8c09f54c,
-    operation_8c09f558,
+    TEF_PvrWave_dtor_8c09f4b8,
+    TEF_PvrWave_update_8c09f54c,
+    TEF_PvrWave_render_8c09f558,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -61,9 +61,9 @@ VirtualFunction const vt_8c265960[7] = {
 VirtualFunction const vt_8c26597c[16] = {
     0,
     0,
-    destroy_object_8c09fc3c,
-    operation_8c09fd48,
-    fn_8c09f55c,
+    TEF_LensFlare_dtor_8c09fc3c,
+    TEF_LensFlare_update_8c09fd48,
+    TEF_LensFlare_render_8c09f55c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -81,9 +81,9 @@ VirtualFunction const vt_8c26597c[16] = {
 VirtualFunction const vt_8c2659bc[7] = {
     0,
     0,
-    destroy_object_8c09fe00,
-    operation_8c09fe44,
-    fn_8c09ff7c,
+    TEffClitical_dtor_8c09fe00,
+    TEffClitical_update_8c09fe44,
+    TEffClitical_render_8c09ff7c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

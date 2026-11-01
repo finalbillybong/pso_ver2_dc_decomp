@@ -12,7 +12,7 @@ struct Object {
     unsigned char f1e3;
 };
 extern void flag_owner_8c074ddc(void *);
-void operation_8c0e8630(Object *o)
+void TItemProShield_v15_8c0e8630(Object *o)
 {
     if (!((unsigned int)o->f1e2 < (unsigned int)o->f1e0) && !((unsigned int)o->f1e3 < (unsigned int)o->f1e1)) {
         return;

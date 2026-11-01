@@ -11,7 +11,7 @@ struct Object {
     int f428;
 };
 extern void operation_8c059ea4(void *, int);
-int operation_8c090f2c(Object *o)
+int TObjEneMe1Canadin_v113_8c090f2c(Object *o)
 {
     int v1;
     v1 = (int)o->f3e4;

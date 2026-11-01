@@ -34,7 +34,7 @@ extern "C" void reparent_hierarchy_node(void *, void *);
 extern "C" void clear_hierarchy_groups(void *);
 extern "C" void call_8c0e75c8(void *);
 extern "C" void operation_8c01c2b0(void);
-extern "C" void operation_8c1a18b8(void);
+extern "C" void TMapCsnCtrl_create_8c1a18b8(void);
 extern "C" void create_descriptor_managers(void);
 extern "C" void call_8c189ca0(int);
 extern "C" void call_8c01372c(void *, void *);
@@ -43,7 +43,7 @@ extern "C" int get_current_area_8c032b10(void);
 extern "C" void operation_8c1bdedc(int);
 extern "C" void call_8c189d60(void);
 extern "C" void time_hierarchy_update(void *);
-extern "C" void call_8c173778(void);
+extern "C" void TQuestThread_ctor_4_8c173778(void);
 extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void operation_8c0e7c80(void)
 {
@@ -67,7 +67,7 @@ extern "C" void operation_8c0e7c80(void)
     clear_hierarchy_groups((void *)((void *)0x8c44bec8));
     call_8c0e75c8((void *)((void *)0x8c46fec0));
     operation_8c01c2b0();
-    operation_8c1a18b8();
+    TMapCsnCtrl_create_8c1a18b8();
     create_descriptor_managers();
     call_8c189ca0(2);
     call_8c01372c((void *)((void *)0x8c41825c), (void *)(*(S_g8c418258 **)0x8c418258));
@@ -85,6 +85,6 @@ extern "C" void operation_8c0e7c80(void)
         }
         v22 = (int)(v22 + 1);
     }
-    call_8c173778();
+    TQuestThread_ctor_4_8c173778();
     TObject_dtor_8c03311c((void *)(&frame), (short)-1);
 }

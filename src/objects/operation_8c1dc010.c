@@ -41,7 +41,7 @@ extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_grid_view(void *, void *);
 extern void call_8c1dc0b4(S_c8c122700 *, int);
 extern void operation_8c1dc270(void *, int);
-S_c8c122700 *operation_8c1dc010(int a0)
+S_c8c122700 *TWindowMenuInfomation_ctor_8c1dc010(int a0)
 {
     S_c8c122700 *t1;
     (&g_8c32aef0)->f00 = (&g_8c289508)->f00;

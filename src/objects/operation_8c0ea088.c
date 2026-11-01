@@ -18,10 +18,10 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c199688(int, Object *, int);
-extern void call_8c198294(int, Object *);
+extern void TAdTitle_ctor_8c199688(int, Object *, int);
+extern void TAdBack_ctor_8c198294(int, Object *);
 extern void call_8c01c250(int);
-extern void call_8c226c28(int, Object *);
+extern void TWindowOptionCtrl_ctor_8c226c28(int, Object *);
 extern void call_8c1003d0(void *);
 Object *operation_8c0ea088(Object *o)
 {
@@ -34,18 +34,18 @@ Object *operation_8c0ea088(Object *o)
     o->dispatch = (void *)0x8c267f94;
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0xac);
     if (t1 != 0) {
-        call_8c199688(t1, o, 3);
+        TAdTitle_ctor_8c199688(t1, o, 3);
     }
     t2 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x40);
     if (t2 != 0) {
-        call_8c198294(t2, o);
+        TAdBack_ctor_8c198294(t2, o);
     }
     call_8c01c250(2);
     o->f20 = 0;
     o->f22 = 0;
     t3 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x38);
     if (t3 != 0) {
-        call_8c226c28(t3, o);
+        TWindowOptionCtrl_ctor_8c226c28(t3, o);
     }
     o->f24 = t3;
     o->f28 = 0;

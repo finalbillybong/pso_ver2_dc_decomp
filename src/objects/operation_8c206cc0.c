@@ -23,7 +23,7 @@ extern void operation_8c206d8c(int);
 extern void call_8c09e188(void *, int, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c206e2c(void *);
-void operation_8c206cc0(Object *o)
+void TBoss3VoloptCtrl_update_8c206cc0(Object *o)
 {
     int t1;
     int t2;

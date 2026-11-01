@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c10baa0(void)
+void TOBarrierEnergy01_render_shadow_8c10baa0(void)
 {
 }

@@ -18,7 +18,7 @@ struct Object {
     int f34;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c15af90(Object *o, int a1)
+Object *TObjVoloptShutter_ctor_8c15af90(Object *o, int a1)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be94 **)0x8c44be94));
     o->dispatch = (void *)0x8c26ee88;

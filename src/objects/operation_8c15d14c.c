@@ -12,7 +12,7 @@ struct Object {
     int f120;
 };
 extern void call_8c15d1bc(Object *);
-void operation_8c15d14c(Object *o)
+void TOSensorAncient01_v17_8c15d14c(Object *o)
 {
     o->f120 = (int)((float)o->f120 + 1310.0f);
     call_8c15d1bc(o);

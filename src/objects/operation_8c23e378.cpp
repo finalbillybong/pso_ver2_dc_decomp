@@ -59,7 +59,7 @@ extern "C" int call_8c1aaabc(void *);
 extern "C" int call_8c075894(Object *, Arg0_13c *, int, Frame *);
 extern "C" void create_effect_b0fac(void *, void *, void *, void *);
 extern "C" void call_8c076580(Object *);
-extern "C" void operation_8c23e378(Object *o)
+extern "C" void TItemWpnMagicSaber_v49_8c23e378(Object *o)
 {
     Frame frame;
     int t1;

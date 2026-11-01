@@ -14,7 +14,7 @@ struct Object {
 };
 extern void operation_8c13f65c(void *);
 extern void call_8c13f708(Object *);
-void operation_8c13f614(Object *o)
+void TObjLoadGmPlNjReq_update_8c13f614(Object *o)
 {
     if (!(--o->f74 >= 0)) {
         o->f04 |= 1;

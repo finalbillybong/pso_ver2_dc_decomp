@@ -15,7 +15,7 @@ struct Object {
     short f86;
 };
 extern void call_8c19edac(void *, int, int, int);
-void operation_8c19fbe0(Object *o, int a1, int a2, int a3)
+void TOHealGeneral_ctor_8c19fbe0(Object *o, int a1, int a2, int a3)
 {
     if (!(o->f82 >= o->f86)) {
         call_8c19edac((void *)(*(Arg0_30_0 **)((char *)((char *)o->f30 + 0x0) + (o->f82 << 2))), a1, a2, a3);

@@ -15,7 +15,7 @@ extern void operation_8c1dfac0(void *);
 extern void operation_8c1dfb18(void *);
 extern void call_8c0db30c(Object *);
 extern void interpolate_view_parameters(void *);
-void operation_8c1de1d8(Object *o)
+void TWindowKeyBoardSoft_update_8c1de1d8(Object *o)
 {
     int v1;
     v1 = !(o->f34 & 1);

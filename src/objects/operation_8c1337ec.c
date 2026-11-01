@@ -54,7 +54,7 @@ extern void edit_three_scalar_fields_8c1342fc(void *);
 extern void reload_light_entries_8c014028(void);
 extern int operation_8c01d844(int, int, int, int);
 extern void call_8c3be38c(int, void *, void *);
-void operation_8c1337ec(Object *o)
+void TLightEditor_v06_8c1337ec(Object *o)
 {
     int v;
     operation_8c134648((void *)o);

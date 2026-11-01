@@ -36,7 +36,7 @@ extern int operation_8c075894(void *, void *, int, int);
 extern void call_8c0a7608(void *, Frame *);
 extern void clear_effect_bit0(void *);
 extern void set_effect_bit0(void *);
-void operation_8c23d03c(Object *o)
+void TItemEffFireWand_update_8c23d03c(Object *o)
 {
     Frame frame;
     int v1;

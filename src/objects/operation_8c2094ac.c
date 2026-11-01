@@ -28,7 +28,7 @@ extern int lookup_low_id(int);
 extern void operation_8c0264ac(void);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c2094ac(Object *o, int a1)
+Object *TWindowGetComCard_dtor_8c2094ac(Object *o, int a1)
 {
     int t1;
     if (o != 0) {

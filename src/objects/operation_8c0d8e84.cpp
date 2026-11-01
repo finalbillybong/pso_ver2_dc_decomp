@@ -21,7 +21,7 @@ inline void member_dtor(Member *m, short f)
         }
     }
 }
-extern "C" Object *operation_8c0d8e84(Object *o, int a1)
+extern "C" Object *TLockOnCursor_dtor_8c0d8e84(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c2676f0;

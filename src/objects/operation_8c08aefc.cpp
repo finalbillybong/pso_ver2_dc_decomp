@@ -49,7 +49,7 @@ extern "C" int call_8c34273e(void *, void *, void *, void *, void *);
 extern "C" int game_malloc_buffer_8c011e9c(void *);
 extern "C" int mwPlyCreateSofdec_8c340cb0(void *);
 extern "C" void strncpy_8c12b154(void *, int, int);
-extern "C" Object *operation_8c08aefc(Object *o, int a1, int a2, int a3)
+extern "C" Object *TMovie_ctor_8c08aefc(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
     int t1;

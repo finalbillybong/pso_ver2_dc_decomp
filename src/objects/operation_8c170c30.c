@@ -6,7 +6,7 @@ typedef struct Vector3 {
 typedef struct S_g8c4db408 S_g8c4db408;
 typedef struct S_vv1_0 S_vv1_0;
 extern int call_8c248070(int, int, void *);
-void operation_8c170c30(int a0, int a1)
+void quest_op_set_cmode_rank_threshold_8c170c30(int a0, int a1)
 {
     char *v1;
     int v2;

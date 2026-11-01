@@ -16,7 +16,7 @@ struct Arg0_e8 {
     unsigned short f80;
 };
 extern int operation_8c1571f4(void *);
-int operation_8c1be1d4(Object *o)
+int TObjCityMainWarp_v18_8c1be1d4(Object *o)
 {
     int t1;
     if (o->fe8 != 0 && ((o->fe8->f80 & 0xffff & 2)) != 0) {

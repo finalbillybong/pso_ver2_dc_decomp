@@ -5,9 +5,9 @@ typedef void (*VirtualFunction)(void);
 extern void destroy_field_8c1d58a4(void);
 extern void operation_8c1d58e0(void);
 extern void fn_8c1d58e4(void);
-extern void operation_194098_8c1d5be4(void);
-extern void operation_8c1d5c38(void);
-extern void fn_8c1d5cd4(void);
+extern void TWindowHelpItem_dtor_8c1d5be4(void);
+extern void TWindowHelpItem_update_8c1d5c38(void);
+extern void TWindowHelpItem_render_8c1d5cd4(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0dc63c(void);
@@ -25,9 +25,9 @@ VirtualFunction const vt_8c276ea0[5] = {
 VirtualFunction const vt_8c276eb4[8] = {
     0,
     0,
-    operation_194098_8c1d5be4,
-    operation_8c1d5c38,
-    fn_8c1d5cd4,
+    TWindowHelpItem_dtor_8c1d5be4,
+    TWindowHelpItem_update_8c1d5c38,
+    TWindowHelpItem_render_8c1d5cd4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c

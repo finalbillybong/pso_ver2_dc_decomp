@@ -3,7 +3,7 @@
 #define child_destroy_at ((void (*)(void *,short))0x8c192b28)
 #define base_destroy_at ((void (*)(ResourceWidget *,short))0x8c0db244)
 #define free_at ((void (*)(void *,ResourceWidget *))0x8c122774)
-ResourceWidget *operation_194098_8c1d5be4(ResourceWidget *o,short release){
+ResourceWidget *TWindowHelpItem_dtor_8c1d5be4(ResourceWidget *o,short release){
     if(o){
         o->dispatch=(void *)0x8c276eb4;
         child_destroy_at(o->child,1);

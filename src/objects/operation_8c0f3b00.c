@@ -31,7 +31,7 @@ extern void operation_8c0f3384(int, int);
 extern void destroy_field_8c0fbfa4(void *, short);
 extern void destroy_context_8c0f34a0(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c0f3b00(Object *o, int a1)
+Object *TObjEneRe7BeruraPunch_dtor_8c0f3b00(Object *o, int a1)
 {
     S_vv1 *v1;
     S_vv4 *v4;

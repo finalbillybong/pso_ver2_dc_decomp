@@ -169,7 +169,7 @@ extern S_L8c41cba0 g_8c41cba0;
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void request_resource_release(void *);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void operation_8c1d5b24(void *);
+extern "C" void TWindowHelpItem_ctor_8c1d5b24(void *);
 extern "C" void operation_8c1a2c98(void *);
 extern "C" void operation_8c19a044(void *, int);
 extern "C" int operation_8c1cdc80(void *);
@@ -197,7 +197,7 @@ extern "C" void operation_8c023628(void *, int);
 extern "C" int operation_8c256a90(void);
 extern "C" void call_8c03c1b8(void *, int);
 extern "C" void call_8c0235b4(S_c8c021ef8 *, void *);
-extern "C" void operation_8c1a2ed4(Object *o)
+extern "C" void TWindowSubItem_update_8c1a2ed4(Object *o)
 {
     S_vv9 *v9;
     int v63;
@@ -268,7 +268,7 @@ extern "C" void operation_8c1a2ed4(Object *o)
         if (o->f34 == 0) {
             t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xb8);
             if (t2 != 0) {
-                operation_8c1d5b24((void *)t2);
+                TWindowHelpItem_ctor_8c1d5b24((void *)t2);
             }
             o->f34 = (Arg0_34 *)(int)t2;
             o->f3c = -1;

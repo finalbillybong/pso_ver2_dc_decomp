@@ -71,10 +71,10 @@ struct S_x78672 {
 };
 extern "C" int call_8c1aaabc(int);
 extern "C" void operation_8c075894(void *, void *, int, int);
-extern "C" void create_effect_b29c8(void *, void *, void *, void *);
+extern "C" void TTecGiZonde_create_8c0b29c8(void *, void *, void *, void *);
 extern "C" void operation_8c077224(void *);
 extern "C" void operation_8c076580(void *);
-extern "C" void operation_8c24096c(Object *o)
+extern "C" void TItemWpnThunderCane_v49_8c24096c(Object *o)
 {
     int v4;
     int v6;
@@ -114,7 +114,7 @@ extern "C" void operation_8c24096c(Object *o)
             return;
         }
         if (((ObjectData *)o)->f240 != 0) {
-            create_effect_b29c8((void *)(((ObjectData *)o)->f13c), (void *)(((char *)o + 0x234)), (void *)(((char *)o + 0x240)), (void *)(((ObjectData *)o)->f214));
+            TTecGiZonde_create_8c0b29c8((void *)(((ObjectData *)o)->f13c), (void *)(((char *)o + 0x234)), (void *)(((char *)o + 0x240)), (void *)(((ObjectData *)o)->f214));
         }
         operation_8c077224((void *)o);
         return;

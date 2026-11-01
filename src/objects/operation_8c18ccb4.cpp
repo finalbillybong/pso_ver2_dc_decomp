@@ -19,7 +19,7 @@ typedef struct ObjectData {
     Arg0_6c *f6c;
 } ObjectData;
 extern "C" void operation_8c199f24(int, int);
-extern "C" void operation_8c18ccb4(Object *o)
+extern "C" void TWindowMainMenuCommand_render_8c18ccb4(Object *o)
 {
     int t1;
     t1 = o->v5();

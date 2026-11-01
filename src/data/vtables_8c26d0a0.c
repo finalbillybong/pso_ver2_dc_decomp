@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void reconstruct_8c137720(void);
-extern void operation_8c137778(void);
-extern void operation_8c1378d4(void);
+extern void TTecSlicer_dtor_8c137720(void);
+extern void TTecSlicer_update_8c137778(void);
+extern void TTecSlicer_render_8c1378d4(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -16,9 +16,9 @@ extern void operation_8c010508(void);
 extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
-extern void operation_8c1380d0(void);
-extern void operation_8c13836c(void);
-extern void operation_8c138594(void);
+extern void TBoss3Volopt_dtor_8c1380d0(void);
+extern void TBoss3Volopt_update_8c13836c(void);
+extern void TBoss3Volopt_render_8c138594(void);
 extern void actor_render_noop_a(void);
 extern void fn_8c043724(void);
 extern void word_operation_8c01345c(void);
@@ -102,10 +102,10 @@ extern void operation_8c13a874(void);
 extern void operation_8c13a9a0(void);
 extern void fn_8c13ac44(void);
 extern void operation_8c13bf54(void);
-extern void destroy_context_8c13c24c(void);
-extern void fn_8c13c45c(void);
-extern void operation_8c13c698(void);
-extern void operation_8c13dd74(void);
+extern void TBoss3VoloptP01_dtor_8c13c24c(void);
+extern void TBoss3VoloptP01_update_8c13c45c(void);
+extern void TBoss3VoloptP01_render_8c13c698(void);
+extern void TOMineIcon01_dtor_8c13dd74(void);
 extern void operation_8c0fcff4(void);
 extern void fn_8c0fcef4(void);
 extern void operation_8c0fdc44(void);
@@ -134,20 +134,20 @@ extern void operation_8c0fd330(void);
 extern void operation_8c0fd3cc(void);
 extern void operation_8c0fd3dc(void);
 extern void fn_8c0fd4b8(void);
-extern void operation_8c0fd95c(void);
+extern void TOMine_v92_8c0fd95c(void);
 extern void operation_8c0fda3c(void);
 extern void operation_8c0fdb1c(void);
 extern void operation_8c0fdbe0(void);
 extern void operation_8c0fd5f8(void);
 extern void operation_8c0fd64c(void);
-extern void operation_8c0fd8dc(void);
-extern void operation_8c13de10(void);
-extern void operation_8c13e038(void);
-extern void operation_8c13e0d4(void);
-extern void operation_8c13e0fc(void);
-extern void operation_8c13e324(void);
-extern void operation_8c13e3c0(void);
-extern void operation_8c13e3e8(void);
+extern void TOMine_v98_8c0fd8dc(void);
+extern void TOMineIcon01_v99_8c13de10(void);
+extern void TOMineIcon02_dtor_8c13e038(void);
+extern void TOMineIcon02_v98_8c13e0d4(void);
+extern void TOMineIcon02_v99_8c13e0fc(void);
+extern void TOMineIcon03_dtor_8c13e324(void);
+extern void TOMineIcon03_v98_8c13e3c0(void);
+extern void TOMineIcon03_v99_8c13e3e8(void);
 extern void operation_8c13e610(void);
 extern void operation_8c13e6ac(void);
 extern void operation_8c13e770(void);
@@ -163,9 +163,9 @@ extern void operation_8c13ec0c(void);
 VirtualFunction const vt_8c26d0a0[16] = {
     0,
     0,
-    reconstruct_8c137720,
-    operation_8c137778,
-    operation_8c1378d4,
+    TTecSlicer_dtor_8c137720,
+    TTecSlicer_update_8c137778,
+    TTecSlicer_render_8c1378d4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -183,9 +183,9 @@ VirtualFunction const vt_8c26d0a0[16] = {
 VirtualFunction const vt_8c26d0e0[91] = {
     0,
     0,
-    operation_8c1380d0,
-    operation_8c13836c,
-    operation_8c138594,
+    TBoss3Volopt_dtor_8c1380d0,
+    TBoss3Volopt_update_8c13836c,
+    TBoss3Volopt_render_8c138594,
     actor_render_noop_a,
     hierarchy_output,
     operation_8c0104fc,
@@ -373,9 +373,9 @@ VirtualFunction const vt_8c26d24c[91] = {
 VirtualFunction const vt_8c26d3b8[91] = {
     0,
     0,
-    destroy_context_8c13c24c,
-    fn_8c13c45c,
-    operation_8c13c698,
+    TBoss3VoloptP01_dtor_8c13c24c,
+    TBoss3VoloptP01_update_8c13c45c,
+    TBoss3VoloptP01_render_8c13c698,
     actor_render_noop_a,
     hierarchy_output,
     operation_8c0104fc,
@@ -468,7 +468,7 @@ VirtualFunction const vt_8c26d3b8[91] = {
 VirtualFunction const vt_8c26d524[102] = {
     0,
     0,
-    operation_8c13dd74,
+    TOMineIcon01_dtor_8c13dd74,
     operation_8c0fcff4,
     fn_8c0fcef4,
     operation_8c0fdc44,
@@ -560,21 +560,21 @@ VirtualFunction const vt_8c26d524[102] = {
     operation_8c0fd3cc,
     operation_8c0fd3dc,
     fn_8c0fd4b8,
-    operation_8c0fd95c,
+    TOMine_v92_8c0fd95c,
     operation_8c0fda3c,
     operation_8c0fdb1c,
     operation_8c0fdbe0,
     operation_8c0fd5f8,
     operation_8c0fd64c,
-    operation_8c0fd8dc,
-    operation_8c13de10
+    TOMine_v98_8c0fd8dc,
+    TOMineIcon01_v99_8c13de10
 };
 
 /* 8c26d6bc: type-information and this-adjustment header, then 100 slots */
 VirtualFunction const vt_8c26d6bc[102] = {
     0,
     0,
-    operation_8c13e038,
+    TOMineIcon02_dtor_8c13e038,
     operation_8c0fcff4,
     fn_8c0fcef4,
     operation_8c0fdc44,
@@ -666,21 +666,21 @@ VirtualFunction const vt_8c26d6bc[102] = {
     operation_8c0fd3cc,
     operation_8c0fd3dc,
     fn_8c0fd4b8,
-    operation_8c0fd95c,
+    TOMine_v92_8c0fd95c,
     operation_8c0fda3c,
     operation_8c0fdb1c,
     operation_8c0fdbe0,
     operation_8c0fd5f8,
     operation_8c0fd64c,
-    operation_8c13e0d4,
-    operation_8c13e0fc
+    TOMineIcon02_v98_8c13e0d4,
+    TOMineIcon02_v99_8c13e0fc
 };
 
 /* 8c26d854: type-information and this-adjustment header, then 100 slots */
 VirtualFunction const vt_8c26d854[102] = {
     0,
     0,
-    operation_8c13e324,
+    TOMineIcon03_dtor_8c13e324,
     operation_8c0fcff4,
     fn_8c0fcef4,
     operation_8c0fdc44,
@@ -772,14 +772,14 @@ VirtualFunction const vt_8c26d854[102] = {
     operation_8c0fd3cc,
     operation_8c0fd3dc,
     fn_8c0fd4b8,
-    operation_8c0fd95c,
+    TOMine_v92_8c0fd95c,
     operation_8c0fda3c,
     operation_8c0fdb1c,
     operation_8c0fdbe0,
     operation_8c0fd5f8,
     operation_8c0fd64c,
-    operation_8c13e3c0,
-    operation_8c13e3e8
+    TOMineIcon03_v98_8c13e3c0,
+    TOMineIcon03_v99_8c13e3e8
 };
 
 /* 8c26d9ec: type-information and this-adjustment header, then 100 slots */

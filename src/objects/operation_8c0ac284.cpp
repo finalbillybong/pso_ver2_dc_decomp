@@ -60,7 +60,7 @@ typedef struct Arg1Data {
 } Arg1Data;
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c0b6750(void *, void *, int, int, int);
-extern "C" void operation_8c0ac284(Object *o, Arg1 *a1)
+extern "C" void TTecReverser_v05_8c0ac284(Object *o, Arg1 *a1)
 {
     Frame frame;
     int t1;

@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c09f558(void)
+void TEF_PvrWave_render_8c09f558(void)
 {
 }

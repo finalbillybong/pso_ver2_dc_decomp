@@ -107,7 +107,7 @@ typedef struct S_c8c0541b4Data {
 } S_c8c0541b4Data;
 extern "C" S_c8c0541b4 *operation_8c0541b4(short, int);
 extern "C" int lookup_low_id(int);
-extern "C" void operation_8c23d938(Object *o)
+extern "C" void TItemEffFreezeBeam_update_8c23d938(Object *o)
 {
     S_c8c0541b4 *t1;
     int t2;

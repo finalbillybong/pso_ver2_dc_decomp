@@ -11,7 +11,7 @@ struct S_g8c469ce0 {
 extern S_g8c469ce0 *g_8c469ce0;
 extern void call_8c37d534(void *);
 extern void operation_8c105320(int);
-void operation_8c086b70(void)
+void release_assets_TObjBattery_8c086b70(void)
 {
     call_8c37d534((void *)(g_8c469ce0->f00));
     operation_8c105320((int)g_8c469ce0);

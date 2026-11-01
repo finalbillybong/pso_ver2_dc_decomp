@@ -17,7 +17,7 @@ struct Arg0_13c {
     short f19a;
 };
 extern void call_8c04a8ac(Arg0_13c *, short);
-void operation_8c24d434(Object *o)
+void TItemObjTpRecover_v42_8c24d434(Object *o)
 {
     unsigned char v1;
     v1 = (unsigned char)o->f138;

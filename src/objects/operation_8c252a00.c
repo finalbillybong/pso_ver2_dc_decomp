@@ -21,7 +21,7 @@ extern void operation_8c241158(void *);
 extern void operation_1abd98();
 extern void operation_8c1c635c();
 extern void operation_8c1c6580();
-Object *operation_8c252a00(Object *o)
+Object *TItemWpnOnSpreadNeedle_ctor_8c252a00(Object *o)
 {
     operation_8c241158((void *)o);
     o->dispatch = (void *)0x8c27fc58;

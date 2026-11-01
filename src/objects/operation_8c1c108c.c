@@ -23,7 +23,7 @@ struct Object {
 };
 extern void TObjectShared_ctor_8c01d1ec(Object *);
 extern void call_8c1c11a8(Object *);
-Object *operation_8c1c108c(Object *o, int a1, int a2, int a3, float f0)
+Object *TObjCityAirCar_Car_ctor_8c1c108c(Object *o, int a1, int a2, int a3, float f0)
 {
     Object **home = &o;
     (void)home;

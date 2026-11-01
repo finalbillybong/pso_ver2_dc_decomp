@@ -33,7 +33,7 @@ extern int operation_8c156c24(int, int);
 extern void call_8c156d48(Arg0_e8 *, void *, int, int, int);
 extern void call_8c156f50(Arg0_e8 *);
 extern void call_8c157138(Arg0_e8 *);
-void operation_8c1be41c(Object *o)
+void TObjCityAreaWarp_v16_8c1be41c(Object *o)
 {
     Frame frame;
     int t1;

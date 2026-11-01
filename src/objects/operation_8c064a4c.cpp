@@ -170,7 +170,7 @@ extern "C" void operation_8c01cc90(void *);
 extern "C" void operation_8c01cd20(void *);
 extern "C" void call_8c05b9e8(Object *);
 extern "C" void call_8c391cc4(void);
-extern "C" void operation_8c064a4c(Object *o)
+extern "C" void TObjEneBm5Wolf_render_8c064a4c(Object *o)
 {
     Frame frame;
     int v1;

@@ -21,14 +21,14 @@ struct S_c8c122700 {
     void *f40;
 };
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c21d170(int, void *, void *);
+extern void TQuestListOnline_ctor_8c21d170(int, void *, void *);
 extern void call_8c220c40(int, int);
 void operation_8c208b74(Object *o)
 {
     S_c8c122700 *t1;
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x78);
     if (t1 != 0) {
-        call_8c21d170((int)t1, *(S_g8c44be98 **)0x8c44be98, o->f28);
+        TQuestListOnline_ctor_8c21d170((int)t1, *(S_g8c44be98 **)0x8c44be98, o->f28);
     }
     if (t1 != 0) {
         call_8c220c40(4, 1);

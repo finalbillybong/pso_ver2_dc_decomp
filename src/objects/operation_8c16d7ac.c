@@ -26,7 +26,7 @@ extern int g_8c467870;
 extern int g_8c467874;
 extern S_g8c46fe20 *g_8c46fe20;
 extern S_g8c4db430 *g_8c4db430;
-void operation_8c16d7ac(void)
+void quest_op_message_end_8c16d7ac(void)
 {
     int end;
     int v17;

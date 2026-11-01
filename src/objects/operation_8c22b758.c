@@ -17,7 +17,7 @@ extern void call_8c3827d8(void *);
 extern void call_8c3aa716(void *, void *);
 extern void draw_tree_a702(void *, void *, float);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c22b758(Object *o)
+void TObjDFDemoF_render_8c22b758(Object *o)
 {
     int v1;
     int v2;

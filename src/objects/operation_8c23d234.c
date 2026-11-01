@@ -15,7 +15,7 @@ struct Object {
     char f1e1;
 };
 extern void call_8c075398(void);
-Object *operation_8c23d234(Object *o)
+Object *TItemWpnFork_ctor_8c23d234(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c27a994;

@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern float squared_distance_xyz(void *, void *);
-int operation_8c1293c8(int a0, int a1)
+int TContainerAncient01_v22_8c1293c8(int a0, int a1)
 {
     int v1;
     float t1;

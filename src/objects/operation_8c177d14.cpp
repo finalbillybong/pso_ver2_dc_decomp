@@ -39,7 +39,7 @@ extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c01cc90(Object *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void call_8c04a9e0(Object *, int);
-extern "C" void operation_8c177d14(Object *o)
+extern "C" void TObjNpcMoja_render_8c177d14(Object *o)
 {
     int t1;
     t1 = o->v11(((ObjectData *)o)->f3b4, ((ObjectData *)o)->f3b8);

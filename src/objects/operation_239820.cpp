@@ -4,17 +4,17 @@ extern "C" short mode_at(void *);
 #define transform_at ((void (*)(ResourceOwnerView *,ResourceTargetView *,int,Vector3 *))0x8c075894)
 #define reset_at ((void (*)(ResourceOwnerView *,int))0x8c074ac4)
 #define heap_alloc_8c122700 ((void *(*)(void *,int))0x8c122700)
-extern "C" void delay_at(void *,ResourceOwnerView *,void (*)(ResourceOwnerView *),int);
+extern "C" void TItemTimer_ctor_8c1ab01c(void *,ResourceOwnerView *,void (*)(ResourceOwnerView *),int);
 #define partial_at ((void (*)(ResourceOwnerView *,float))0x8c0765ec)
 #define fallback_at ((void (*)(ResourceOwnerView *))0x8c076580)
-extern "C" void operation_239820(ResourceOwnerView *o){
+extern "C" void TItemWpnWindCane_v49_8c239820(ResourceOwnerView *o){
     if(mode_at((char *)o->target+0x754)==2){
         transform_at(o,o->target,o->part,&o->position);
         if(o->query()==1 && o->speed>0x1999){
             reset_at(o,0);
             if(o){
                 void *p=heap_alloc_8c122700(*(void **)0x8c4d97e0,44);
-                if(p)delay_at(p,o,(void (*)(ResourceOwnerView *))0x8c2398fc,30);
+                if(p)TItemTimer_ctor_8c1ab01c(p,o,(void (*)(ResourceOwnerView *))0x8c2398fc,30);
             }
             o->state=0;
         }

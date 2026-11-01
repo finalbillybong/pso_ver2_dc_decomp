@@ -54,7 +54,7 @@ extern void operation_8c122380(void *, int);
 extern void call_8c391c94(void);
 extern void call_8c1171c8(Object *);
 extern void call_8c391cc4(void);
-void operation_8c1160a0(Object *o)
+void TFogEditor_v06_8c1160a0(Object *o)
 {
     int v1;
     int v6;

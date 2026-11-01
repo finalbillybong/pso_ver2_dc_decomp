@@ -35,9 +35,9 @@ struct Arg0_28 {
 };
 extern void call_8c0dc854(Arg0_24 *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c1de120(void *, int);
+extern void TWindowKeyBoardSoft_ctor_8c1de120(void *, int);
 extern void operation_8c1e22ec(void *);
-extern void call_8c210b5c(int, Object *, void *);
+extern void TWindowDD_ctor_8c210b5c(int, Object *, void *);
 extern void call_8c1bfe90(int, Object *);
 void operation_8c1dccb4(Object *o)
 {
@@ -66,7 +66,7 @@ void operation_8c1dccb4(Object *o)
     o->f38->f00 = 1;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x74);
     if (t1 != 0) {
-        operation_8c1de120((void *)t1, (int)(o->f24));
+        TWindowKeyBoardSoft_ctor_8c1de120((void *)t1, (int)(o->f24));
     }
     o->f28 = (Arg0_28 *)t1;
     o->f28->f68 |= 2;
@@ -82,7 +82,7 @@ L_8c1dcd6c:;
     o->f38->f00 = 2;
     t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x108);
     if (t2 != 0) {
-        call_8c210b5c(t2, o, (void *)(((char *)o->f38 + 0x4)));
+        TWindowDD_ctor_8c210b5c(t2, o, (void *)(((char *)o->f38 + 0x4)));
     }
     o->f34 = (int)(t2);
     return;

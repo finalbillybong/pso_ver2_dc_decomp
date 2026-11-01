@@ -11,7 +11,7 @@ struct Frame {
     float f04;
 };
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c09a7f4(int, void *, Frame *);
+extern void TObjCMHexTile_ctor_8c09a7f4(int, void *, Frame *);
 void operation_8c09a738(void)
 {
     Frame frame;
@@ -30,7 +30,7 @@ L_8c09a74a:;
 L_8c09a762:;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x58);
     if (t1 != 0) {
-        call_8c09a7f4(t1, (void *)(*(S_g8c44bea0 **)0x8c44bea0), (Frame *)((&frame)));
+        TObjCMHexTile_ctor_8c09a7f4(t1, (void *)(*(S_g8c44bea0 **)0x8c44bea0), (Frame *)((&frame)));
     }
     (&frame)->f00 += 40.0f;
 L_8c09a78e:;

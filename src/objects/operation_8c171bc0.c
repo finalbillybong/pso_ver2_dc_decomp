@@ -10,7 +10,7 @@ struct Frame {
     char unknown2[0x2];
 };
 extern void memcpy_8c12b77c(Frame *, int, int);
-void operation_8c171bc0(int a0, int a1)
+void quest_op_get_eventflag16_8c171bc0(int a0, int a1)
 {
     Frame frame;
     int v1;

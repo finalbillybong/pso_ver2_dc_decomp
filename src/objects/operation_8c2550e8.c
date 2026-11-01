@@ -13,10 +13,10 @@ struct Object {
     char unknown20[0x1c4];
     int f1e4;
 };
-extern void call_8c255200(void);
-Object *operation_8c2550e8(Object *o)
+extern void TItemProShieldModel_ctor_8c255200(void);
+Object *TItemProShieldModel2_ctor_8c2550e8(Object *o)
 {
-    call_8c255200();
+    TItemProShieldModel_ctor_8c255200();
     o->dispatch = (void *)0x8c281010;
     o->tag = (int)(*(int *)0x8c33fd80);
     o->size = 0x1e8;

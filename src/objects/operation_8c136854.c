@@ -18,7 +18,7 @@ struct Object {
 extern int lookup_low_id(int);
 extern float squared_distance_xz(void *, void *);
 extern void call_8c1373a0(void *, int);
-void operation_8c136854(Object *o)
+void TObjFogCollision_update_8c136854(Object *o)
 {
     float v1;
     int v8;

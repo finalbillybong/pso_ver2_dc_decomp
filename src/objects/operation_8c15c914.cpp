@@ -57,7 +57,7 @@ extern "C" void operation_8c1130e8(void *);
 extern "C" void call_8c15cab8(Object *);
 extern "C" void operation_8c0368a8(void *);
 extern "C" void operation_8c15ca00(int);
-extern "C" void operation_8c15c914(Object *o)
+extern "C" void TOSensor_v23_8c15c914(Object *o)
 {
     Frame frame;
     int t1;

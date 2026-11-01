@@ -31,7 +31,7 @@ extern void operation_8c14f888(void);
 extern void operation_8c1aa23c(void);
 extern void operation_8c1aa288(void);
 extern void operation_8c128e3c(void);
-extern void operation_8c128ee4(void);
+extern void TContainerAncient01_ctor_8c128ee4(void);
 extern void operation_8c24b584(void);
 extern void operation_8c24b5e4(void);
 extern void operation_8c24b4f4(void);
@@ -103,7 +103,7 @@ const void *const d_8c308030[54] = {
     (void *)operation_8c1aa288,
     str_8c30817a,
     (void *)operation_8c128e3c,
-    (void *)operation_8c128ee4,
+    (void *)TContainerAncient01_ctor_8c128ee4,
     str_8c308187,
     (void *)operation_8c24b584,
     (void *)operation_8c24b5e4,

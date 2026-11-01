@@ -36,7 +36,7 @@ extern void operation_8c0a237c(void *, void *);
 extern void operation_8c01c250(int);
 extern void operation_8c01c244(int);
 extern void create_descriptor_managers(void);
-extern void operation_8c25cc58(void);
+extern void TItemReverseTech_create_8c25cc58(void);
 extern void wait_vsync_and_flip_8c380516(void);
 void operation_8c25c8f4(void)
 {
@@ -78,6 +78,6 @@ void operation_8c25c8f4(void)
     operation_8c01c250(2);
     operation_8c01c244(2);
     create_descriptor_managers();
-    operation_8c25cc58();
+    TItemReverseTech_create_8c25cc58();
     wait_vsync_and_flip_8c380516();
 }

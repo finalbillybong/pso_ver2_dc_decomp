@@ -85,7 +85,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4e30c0 *g_8c4e30c0;
 extern S_g8c4e30c4 *g_8c4e30c4;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_panel_8c087d8c(void *, void *, void *);
+extern void TObjChip_ctor_8c087d8c(void *, void *, void *);
 extern void create_effect_777c(void *, int);
 extern int get_current_area_8c032b10(void);
 extern void play_se_8c05fbf8(int, void *, int, int);
@@ -123,11 +123,11 @@ void operation_8c1e4264(Object *o)
     }
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t1 != 0) {
-        initialize_panel_8c087d8c((void *)t1, g_8c44be98, (void *)(&(&frame)->f4c));
+        TObjChip_ctor_8c087d8c((void *)t1, g_8c44be98, (void *)(&(&frame)->f4c));
     }
     t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x78);
     if (t2 != 0) {
-        initialize_panel_8c087d8c((void *)t2, g_8c44be98, (void *)(&frame));
+        TObjChip_ctor_8c087d8c((void *)t2, g_8c44be98, (void *)(&frame));
     }
     create_effect_777c((void *)(&o->f3c), 0x45);
     create_effect_777c((void *)(&o->f3c), 0x46);

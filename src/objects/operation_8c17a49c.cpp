@@ -88,9 +88,9 @@ struct Frame {
     char unknown0[0xc];
 };
 extern "C" int current_mode_active(void);
-extern "C" void operation_8c1c5c5c(int, int, short, int);
+extern "C" void TItemEffHeaven_create_8c1c5c5c(int, int, short, int);
 extern "C" void operation_8c075894(void *, void *, int, int);
-extern "C" void operation_8c17a49c(Object *o, int a1)
+extern "C" void TItemWpnOriginalShot_v39_8c17a49c(Object *o, int a1)
 {
     Frame frame;
     S_vv1 *v1;
@@ -124,7 +124,7 @@ extern "C" void operation_8c17a49c(Object *o, int a1)
                         v7 = (int)0x13c;
                         for (v8 = 0; v13 = *(int *)((char *)((char *)o + 0x0) + (v6)), v8 != (v13 < 0 || v13 > 0xa ? 0 : v13); v8++) {
                             S_x14144_s4 *p = (S_x14144_s4 *)((char *)(int)o + v6 + (v8 << 2) + 0x4);
-                            operation_8c1c5c5c((int)(*(S_g8c44be9c **)0x8c44be9c), (int)(*(Arg0_0 **)((char *)((char *)o + 0x0) + (v7))), p->f00, (int)p->f02);
+                            TItemEffHeaven_create_8c1c5c5c((int)(*(S_g8c44be9c **)0x8c44be9c), (int)(*(Arg0_0 **)((char *)((char *)o + 0x0) + (v7))), p->f00, (int)p->f02);
                         }
                         return;
                     }

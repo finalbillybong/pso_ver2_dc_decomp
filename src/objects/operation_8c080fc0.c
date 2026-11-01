@@ -16,7 +16,7 @@ struct Object {
 extern char g_8c2fede8[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c080fc0(Object *o)
+void TObjLazerFenceNorm_v09_8c080fc0(Object *o)
 {
     o->fe8 = o->f88;
     o->fe4 = (int)o->f6c;

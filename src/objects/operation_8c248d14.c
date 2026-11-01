@@ -22,8 +22,8 @@ struct Object {
     void *f22c;
 };
 extern void call_8c075398(Object *, int, int);
-extern void operation_239998_8c248e3c();
-Object *operation_8c248d14(Object *o, int a1, int a2)
+extern void TItemShootBasyoSen2_create_8c248e3c();
+Object *TItemWpnBasyoSen2_ctor_8c248d14(Object *o, int a1, int a2)
 {
     call_8c075398(o, a1, a2);
     o->dispatch = (void *)0x8c27d074;
@@ -33,7 +33,7 @@ Object *operation_8c248d14(Object *o, int a1, int a2)
     o->f1e1 = 1;
     o->f1fc |= 0x22;
     o->f224 = 1;
-    o->f22c = operation_239998_8c248e3c;
+    o->f22c = TItemShootBasyoSen2_create_8c248e3c;
     o->f220 = 10.0f;
     return o;
 }

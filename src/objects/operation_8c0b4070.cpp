@@ -32,7 +32,7 @@ typedef struct Arg0_108Data {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" void destroy_effect_d870(void *, short);
 extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c0b4070(Object *o, int a1)
+extern "C" Object *TTecLuker_dtor_8c0b4070(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

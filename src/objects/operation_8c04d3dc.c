@@ -13,7 +13,7 @@ struct Object {
     char unknown30e[0xba];
     int f3c8;
 };
-void operation_8c04d3dc(Object *o)
+void TObjGrass_v66_8c04d3dc(Object *o)
 {
     int v3;
     if (o->f30a != 0) {

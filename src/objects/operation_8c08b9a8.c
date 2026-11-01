@@ -29,7 +29,7 @@ extern void call_8c03ce84(void);
 extern void call_8c02473c(void);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int advance_counter_8c01d5fc(int);
-void operation_8c08b9a8(Object *o)
+void TGroupSetEditor_v05_8c08b9a8(Object *o)
 {
     S_c8c021ef8 *t1;
     int t2;

@@ -13,7 +13,7 @@ extern void call_8c058dac(int, int);
 extern void call_8c058f84(int, int);
 extern void call_8c0590c4(int, int);
 extern void handle_event_8c059348(void *, int);
-void operation_8c0580c4(int a0, int a1, int a2)
+void TObjEneBm3FlyNest_v93_8c0580c4(int a0, int a1, int a2)
 {
     switch (a1) {
     case 1:

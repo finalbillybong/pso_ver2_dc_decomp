@@ -23,7 +23,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void njRotateX_8c37dd28(int, int);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c23cb04(Object *o)
+void TItemShootFast_render_8c23cb04(Object *o)
 {
     if (o->f5c != 0 && o->f60 != 0) {
         njPushMatrixEx_8c38ae68();

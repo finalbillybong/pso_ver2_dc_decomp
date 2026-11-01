@@ -17,7 +17,7 @@ struct Object {
     int f28;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c23d89c(Object *o, int a1, int a2, int a3, int a4, unsigned short a5)
+Object *TItemEffFreezeBeam_ctor_8c23d89c(Object *o, int a1, int a2, int a3, int a4, unsigned short a5)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27aaa8;

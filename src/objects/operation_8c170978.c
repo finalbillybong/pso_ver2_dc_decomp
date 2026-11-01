@@ -6,7 +6,7 @@ typedef struct Vector3 {
 typedef struct S_g8c418248 S_g8c418248;
 extern int lookup_low_id(int);
 extern void operation_8c250574(int);
-void operation_8c170978(void)
+void quest_op_p_talk_guild_local_8c170978(void)
 {
     int t1;
     t1 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));

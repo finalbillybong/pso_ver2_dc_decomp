@@ -14,7 +14,7 @@ extern void operation_8c053f54(void *);
 extern void operation_8c052124(void *);
 extern void destroy_object_8c0eebe4(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c24b614(Object *o, int a1)
+Object *TODoorVS2Door01_dtor_8c24b614(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c27d7f8;

@@ -36,7 +36,7 @@ struct Frame {
 extern int g_8c46ee80;
 extern S_L8c46ee84 g_8c46ee84;
 extern void call_8c0a7608(void *, void *);
-void operation_8c189b7c(Object *o)
+void TNowLoading_update_8c189b7c(Object *o)
 {
     Frame frame;
     if (g_8c46ee80 == 0) {

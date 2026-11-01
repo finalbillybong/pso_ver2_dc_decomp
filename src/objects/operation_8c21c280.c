@@ -14,7 +14,7 @@ struct Object {
     float f2c;
 };
 extern int ring_actor_eligible(unsigned short);
-void operation_8c21c280(Object *o)
+void TObjDFYutai_update_8c21c280(Object *o)
 {
     int t1;
     t1 = ring_actor_eligible((unsigned short)(o->f24));

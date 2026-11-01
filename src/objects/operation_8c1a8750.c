@@ -20,7 +20,7 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c1a8be8(Object *);
-Object *operation_8c1a8750(Object *o, int a1)
+Object *TWindowSubTechnique_ctor_8c1a8750(Object *o, int a1)
 {
     Object **home = &o;
     int t1;

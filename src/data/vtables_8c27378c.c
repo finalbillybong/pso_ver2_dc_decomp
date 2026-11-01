@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c1a3e04(void);
+extern void TObjNpcNHW00_dtor_8c1a3e04(void);
 extern void operation_8c120374(void);
 extern void operation_8c120524(void);
 extern void operation_8c121330(void);
@@ -104,20 +104,20 @@ extern void destroy_object_8c1a3fc4(void);
 extern void operation_8c1a4184(void);
 extern void destroy_object_8c1a41f8(void);
 extern void operation_8c1a4264(void);
-extern void destroy_object_8c1a4290(void);
-extern void destroy_object_8c1a4450(void);
+extern void TObjNpcHFW00_dtor_8c1a4290(void);
+extern void TObjNpcHHM00_dtor_8c1a4450(void);
 extern void operation_8c11f724(void);
-extern void destroy_object_8c1a4610(void);
-extern void destroy_object_8c1a47d0(void);
-extern void destroy_object_8c1a4990(void);
-extern void destroy_object_8c1a4b50(void);
-extern void operation_8c1a4d10(void);
+extern void TObjNpcHRM00_dtor_8c1a4610(void);
+extern void TObjNpcNFM00_dtor_8c1a47d0(void);
+extern void TObjNpcNFW00_dtor_8c1a4990(void);
+extern void TObjNpcARM00_dtor_8c1a4b50(void);
+extern void TObjNpcARM00_v96_8c1a4d10(void);
 
 /* 8c27378c: type-information and this-adjustment header, then 98 slots */
 VirtualFunction const vt_8c27378c[100] = {
     0,
     0,
-    destroy_object_8c1a3e04,
+    TObjNpcNHW00_dtor_8c1a3e04,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -429,7 +429,7 @@ VirtualFunction const vt_8c273aac[100] = {
 VirtualFunction const vt_8c273c3c[100] = {
     0,
     0,
-    destroy_object_8c1a4290,
+    TObjNpcHFW00_dtor_8c1a4290,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -533,7 +533,7 @@ VirtualFunction const vt_8c273c3c[100] = {
 VirtualFunction const vt_8c273dcc[100] = {
     0,
     0,
-    destroy_object_8c1a4450,
+    TObjNpcHHM00_dtor_8c1a4450,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -637,7 +637,7 @@ VirtualFunction const vt_8c273dcc[100] = {
 VirtualFunction const vt_8c273f5c[100] = {
     0,
     0,
-    destroy_object_8c1a4610,
+    TObjNpcHRM00_dtor_8c1a4610,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -741,7 +741,7 @@ VirtualFunction const vt_8c273f5c[100] = {
 VirtualFunction const vt_8c2740ec[100] = {
     0,
     0,
-    destroy_object_8c1a47d0,
+    TObjNpcNFM00_dtor_8c1a47d0,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -845,7 +845,7 @@ VirtualFunction const vt_8c2740ec[100] = {
 VirtualFunction const vt_8c27427c[100] = {
     0,
     0,
-    destroy_object_8c1a4990,
+    TObjNpcNFW00_dtor_8c1a4990,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -949,7 +949,7 @@ VirtualFunction const vt_8c27427c[100] = {
 VirtualFunction const vt_8c27440c[100] = {
     0,
     0,
-    destroy_object_8c1a4b50,
+    TObjNpcARM00_dtor_8c1a4b50,
     operation_8c120374,
     operation_8c120524,
     operation_8c121330,
@@ -1045,6 +1045,6 @@ VirtualFunction const vt_8c27440c[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c1a4d10,
+    TObjNpcARM00_v96_8c1a4d10,
     operation_8c12132c
 };

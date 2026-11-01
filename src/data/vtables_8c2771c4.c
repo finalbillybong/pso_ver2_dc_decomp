@@ -24,10 +24,10 @@ extern void fn_8c1da714(void);
 extern void fn_8c1da628(void);
 extern void destroy_object_8c1da17c(void);
 extern void TObject_render_default_8c0111c8(void);
-extern void destroy_object_8c1db480(void);
-extern void fn_8c1db678(void);
-extern void fn_8c1db550(void);
-extern void operation_8c1db858(void);
+extern void TOSoulDF_dtor_8c1db480(void);
+extern void TOSoulDF_update_8c1db678(void);
+extern void TOSoulDF_render_8c1db550(void);
+extern void TOSoulDF_render_shadow_8c1db858(void);
 extern void operation_8c1db8ac(void);
 extern void fn_8c1db8f8(void);
 extern void operation_8c1db904(void);
@@ -116,10 +116,10 @@ VirtualFunction const vt_8c277284[16] = {
 VirtualFunction const vt_8c2772c4[16] = {
     0,
     0,
-    destroy_object_8c1db480,
-    fn_8c1db678,
-    fn_8c1db550,
-    operation_8c1db858,
+    TOSoulDF_dtor_8c1db480,
+    TOSoulDF_update_8c1db678,
+    TOSoulDF_render_8c1db550,
+    TOSoulDF_render_shadow_8c1db858,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,

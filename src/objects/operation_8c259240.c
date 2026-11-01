@@ -24,7 +24,7 @@ extern int call_8c1196d4(void *, void *, int);
 extern void operation_8c119764(int, int, int);
 extern void operation_8c0dc610(void *, float);
 extern void request_resource_release(void *);
-void operation_8c259240(Object *o)
+void TObjResultWin_update_8c259240(Object *o)
 {
     int t1;
     if (o->f20 == 0) {

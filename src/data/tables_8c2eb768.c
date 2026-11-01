@@ -20,13 +20,13 @@ extern void TObjContainerBase_ctor_8c085638(void);
 extern void TOBoss4Bird_create_8c1da5ec(void);
 extern void fn_8c1daa38(void);
 extern void operation_8c1daf80(void);
-extern void operation_8c1db514(void);
-extern void operation_8c1de0e0(void);
+extern void TOSoulDF_create_8c1db514(void);
+extern void TOButterflyDF_create_8c1de0e0(void);
 
 const Record_8c2eb768 d_8c2eb768[5] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0, 1, (void *)TObjParticle_create_8c0804a8, 2.25e+06f, 0, 2, (void *)TObjAreaWarpForest_create_8c033fcc, 250000.0f, 0, 3, (void *)TObjMapWarpForest_create_8c034010, 250000.0f, 0 },
     { 27, (void *)TObjAreaWarpQuest_create_8c034274, 250000.0f, 0, 28, (void *)spawn_object_0893a8_8c0343b8, 250000.0f, 0, 6, (void *)TObjEnvSound_create_8c100dd0, 250000.0f, 0, 7, (void *)TObjFogCollision_create_8c136738, 250000.0f, 0 },
     { 8, (void *)TObjEvtCollision_create_8c188120, 250000.0f, 0, 18, (void *)TObjQuestCol_create_8c034098, 250000.0f, 0, 21, (void *)TObjQuestColA_create_8c0340dc, 250000.0f, 0, 22, (void *)TObjItemLight_create_8c034164, 250000.0f, 0 },
     { 23, (void *)TObjRaderCol_create_8c0341ec, 250000.0f, 0, 24, (void *)TObjFogCollisionSwitch_create_8c136b34, 250000.0f, 0, 146, (void *)TObjContainerBase_ctor_8c085638, 250000.0f, 0, 368, (void *)TOBoss4Bird_create_8c1da5ec, 250000.0f, 0 },
-    { 369, (void *)fn_8c1daa38, 250000.0f, 0, 370, (void *)operation_8c1daf80, 2.25e+06f, 0, 371, (void *)operation_8c1db514, 250000.0f, 0, 372, (void *)operation_8c1de0e0, 250000.0f, 0 }
+    { 369, (void *)fn_8c1daa38, 250000.0f, 0, 370, (void *)operation_8c1daf80, 2.25e+06f, 0, 371, (void *)TOSoulDF_create_8c1db514, 250000.0f, 0, 372, (void *)TOButterflyDF_create_8c1de0e0, 250000.0f, 0 }
 };

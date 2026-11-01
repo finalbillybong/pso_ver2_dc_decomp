@@ -6,7 +6,7 @@ typedef struct Vector3 {
 extern char g_8c31dc04[];
 extern int load_resource_8c104e9c(void *);
 extern int load_pvm_file_tls_8c118528(void *);
-void operation_8c1a4494(void)
+void load_assets_TObjNpcHHM00_8c1a4494(void)
 {
     int t1;
     int t2;

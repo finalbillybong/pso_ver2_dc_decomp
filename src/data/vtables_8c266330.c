@@ -2,17 +2,17 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c0bc8fc(void);
-extern void operation_8c0bccc0(void);
-extern void fn_8c0bced0(void);
-extern void operation_8c0bf854(void);
+extern void TObjEneSaver_dtor_8c0bc8fc(void);
+extern void TObjEneSaver_update_8c0bccc0(void);
+extern void TObjEneSaver_render_8c0bced0(void);
+extern void TObjEneSaver_render_shadow_8c0bf854(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void fn_8c043724(void);
 extern void operation_8c010500(void);
 extern void operation_8c010504(void);
-extern void word_operation_8c0bf858(void);
+extern void TObjEneSaver_v10_8c0bf858(void);
 extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c013448(void);
@@ -39,18 +39,18 @@ extern void operation_8c046324(void);
 extern void operation_8c04639c(void);
 extern void operation_8c046414(void);
 extern void operation_8c046498(void);
-extern void fn_8c0bd168(void);
+extern void TObjEneSaver_v37_8c0bd168(void);
 extern void operation_8c0133f8(void);
-extern void operation_8c0bdde4(void);
-extern void fn_8c0bedb8(void);
+extern void TObjEneSaver_v39_8c0bdde4(void);
+extern void TObjEneSaver_v40_8c0bedb8(void);
 extern void object_blocked_8c013428(void);
 extern void object_blocked_8c01343c(void);
 extern void object_blocked_8c0133ec(void);
 extern void operation_455ac(void);
-extern void operation_8c0bd4b4(void);
+extern void TObjEneSaver_v45_8c0bd4b4(void);
 extern void operation_45844(void);
 extern void operation_45910(void);
-extern void operation_8c0bd54c(void);
+extern void TObjEneSaver_v48_8c0bd54c(void);
 extern void operation_45a8c(void);
 extern void operation_45b8c(void);
 extern void operation_45d6c(void);
@@ -68,12 +68,12 @@ extern void operation_8c0471b4(void);
 extern void operation_8c0471fc(void);
 extern void fn_8c047268(void);
 extern void operation_8c047438(void);
-extern void operation_8c0bd5e4(void);
-extern void operation_8c0bd900(void);
-extern void operation_8c0bdf2c(void);
-extern void operation_8c0bef20(void);
-extern void fn_8c0bf168(void);
-extern void operation_8c0bf4cc(void);
+extern void TObjEneSaver_v66_8c0bd5e4(void);
+extern void TObjEneSaver_v67_8c0bd900(void);
+extern void TObjEneSaver_v68_8c0bdf2c(void);
+extern void TObjEneSaver_v69_8c0bef20(void);
+extern void TObjEneSaver_v70_8c0bf168(void);
+extern void TObjEneSaver_v71_8c0bf4cc(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
 extern void operation_8c0134b0(void);
@@ -137,17 +137,17 @@ extern void TObject_update_default_8c0111c4(void);
 VirtualFunction const vt_8c266330[91] = {
     0,
     0,
-    operation_8c0bc8fc,
-    operation_8c0bccc0,
-    fn_8c0bced0,
-    operation_8c0bf854,
+    TObjEneSaver_dtor_8c0bc8fc,
+    TObjEneSaver_update_8c0bccc0,
+    TObjEneSaver_render_8c0bced0,
+    TObjEneSaver_render_shadow_8c0bf854,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
     fn_8c043724,
     operation_8c010500,
     operation_8c010504,
-    word_operation_8c0bf858,
+    TObjEneSaver_v10_8c0bf858,
     operation_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
@@ -174,18 +174,18 @@ VirtualFunction const vt_8c266330[91] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    fn_8c0bd168,
+    TObjEneSaver_v37_8c0bd168,
     operation_8c0133f8,
-    operation_8c0bdde4,
-    fn_8c0bedb8,
+    TObjEneSaver_v39_8c0bdde4,
+    TObjEneSaver_v40_8c0bedb8,
     object_blocked_8c013428,
     object_blocked_8c01343c,
     object_blocked_8c0133ec,
     operation_455ac,
-    operation_8c0bd4b4,
+    TObjEneSaver_v45_8c0bd4b4,
     operation_45844,
     operation_45910,
-    operation_8c0bd54c,
+    TObjEneSaver_v48_8c0bd54c,
     operation_45a8c,
     operation_45b8c,
     operation_45d6c,
@@ -203,12 +203,12 @@ VirtualFunction const vt_8c266330[91] = {
     operation_8c0471fc,
     fn_8c047268,
     operation_8c047438,
-    operation_8c0bd5e4,
-    operation_8c0bd900,
-    operation_8c0bdf2c,
-    operation_8c0bef20,
-    fn_8c0bf168,
-    operation_8c0bf4cc,
+    TObjEneSaver_v66_8c0bd5e4,
+    TObjEneSaver_v67_8c0bd900,
+    TObjEneSaver_v68_8c0bdf2c,
+    TObjEneSaver_v69_8c0bef20,
+    TObjEneSaver_v70_8c0bf168,
+    TObjEneSaver_v71_8c0bf4cc,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,

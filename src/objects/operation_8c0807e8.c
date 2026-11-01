@@ -11,7 +11,7 @@ struct S_c8c104e9c {
 extern char g_8c2fec68[];
 extern S_c8c104e9c *load_resource_8c104e9c(void *);
 extern void copy_resource_fields(void *, void *);
-void operation_8c0807e8(void)
+void load_assets_TMotorcycle_8c0807e8(void)
 {
     S_c8c104e9c *t1;
     t1 = load_resource_8c104e9c((void *)((g_8c2fec68 + 0xc)));

@@ -17,13 +17,13 @@ extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
 extern void operation_8c0104f0(void);
-extern void operation_8c0544f4(void);
-extern void fn_8c0545c8(void);
-extern void fn_8c0547b4(void);
+extern void TObjCGrass_dtor_8c0544f4(void);
+extern void TObjCGrass_update_8c0545c8(void);
+extern void TObjCGrass_render_8c0547b4(void);
 extern void fn_8c01c544(void);
-extern void operation_8c054d18(void);
-extern void fn_8c054d80(void);
-extern void fn_8c057478(void);
+extern void TObjEneBm3Fly_dtor_8c054d18(void);
+extern void TObjEneBm3Fly_update_8c054d80(void);
+extern void TObjEneBm3Fly_render_8c057478(void);
 extern void fn_8c043724(void);
 extern void word_operation_8c01345c(void);
 extern void operation_8c013448(void);
@@ -49,7 +49,7 @@ extern void operation_8c046324(void);
 extern void operation_8c04639c(void);
 extern void operation_8c046414(void);
 extern void operation_8c046498(void);
-extern void operation_8c055020(void);
+extern void TObjEneBm3Fly_v37_8c055020(void);
 extern void operation_8c0133f8(void);
 extern void fn_8c045200(void);
 extern void object_blocked_8c013418(void);
@@ -81,9 +81,9 @@ extern void operation_8c047438(void);
 extern void operation_8c013408(void);
 extern void operation_8c01340c(void);
 extern void operation_8c013410(void);
-extern void operation_8c05508c(void);
-extern void operation_8c05506c(void);
-extern void operation_8c055024(void);
+extern void TObjEneBm3Fly_v69_8c05508c(void);
+extern void TObjEneBm3Fly_v70_8c05506c(void);
+extern void TObjEneBm3Fly_v71_8c055024(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
 extern void operation_8c0134b0(void);
@@ -105,9 +105,9 @@ extern void operation_8c05c804(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
-extern void operation_8c054f50(void);
-extern void operation_8c055110(void);
-extern void fn_8c0550c4(void);
+extern void TObjEneBm3Fly_v93_8c054f50(void);
+extern void TObjEneBm3Fly_v94_8c055110(void);
+extern void TObjEneBm3Fly_v95_8c0550c4(void);
 extern void operation_8c05b19c(void);
 extern void fn_8c05b6b4(void);
 extern void operation_8c05b6fc(void);
@@ -121,25 +121,25 @@ extern void operation_8c05b8b4(void);
 extern void operation_8c05babc(void);
 extern void apply_contact_position(void);
 extern void capture_current_contact(void);
-extern void operation_8c055278(void);
-extern void operation_8c057474(void);
-extern void operation_8c0575dc(void);
-extern void operation_8c057fa0(void);
-extern void operation_8c058000(void);
-extern void fn_8c0595e4(void);
-extern void operation_8c058194(void);
-extern void operation_8c058234(void);
-extern void operation_8c0581d8(void);
-extern void operation_8c058198(void);
+extern void TObjEneBm3Fly_v109_8c055278(void);
+extern void TObjEneBm3Fly_v110_8c057474(void);
+extern void TObjEneBm3Fly_v111_8c0575dc(void);
+extern void TObjEneBm3FlyNest_dtor_8c057fa0(void);
+extern void TObjEneBm3FlyNest_update_8c058000(void);
+extern void TObjEneBm3FlyNest_render_8c0595e4(void);
+extern void TObjEneBm3FlyNest_v37_8c058194(void);
+extern void TObjEneBm3FlyNest_v69_8c058234(void);
+extern void TObjEneBm3FlyNest_v70_8c0581d8(void);
+extern void TObjEneBm3FlyNest_v71_8c058198(void);
 extern void operation_8c059d2c(void);
-extern void operation_8c0580c4(void);
-extern void operation_8c058254(void);
+extern void TObjEneBm3FlyNest_v93_8c0580c4(void);
+extern void TObjEneBm3FlyNest_v94_8c058254(void);
 extern void operation_8c05b16c(void);
-extern void operation_8c0594c4(void);
-extern void fn_8c0598d0(void);
-extern void destroy_object_8c0577b4(void);
-extern void fn_8c0577f8(void);
-extern void fn_8c057a54(void);
+extern void TObjEneBm3FlyNest_v109_8c0594c4(void);
+extern void TObjEneBm3FlyNest_v110_8c0598d0(void);
+extern void TObjEneBm3FlyNest_CarryFly_dtor_8c0577b4(void);
+extern void TObjEneBm3FlyNest_CarryFly_update_8c0577f8(void);
+extern void TObjEneBm3FlyNest_CarryFly_render_8c057a54(void);
 
 /* 8c2621c8: type-information and this-adjustment header, then 15 slots */
 VirtualFunction const vt_8c2621c8[17] = {
@@ -166,9 +166,9 @@ VirtualFunction const vt_8c2621c8[17] = {
 VirtualFunction const vt_8c26220c[17] = {
     0,
     0,
-    operation_8c0544f4,
-    fn_8c0545c8,
-    fn_8c0547b4,
+    TObjCGrass_dtor_8c0544f4,
+    TObjCGrass_update_8c0545c8,
+    TObjCGrass_render_8c0547b4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -187,9 +187,9 @@ VirtualFunction const vt_8c26220c[17] = {
 VirtualFunction const vt_8c262250[114] = {
     0,
     0,
-    operation_8c054d18,
-    fn_8c054d80,
-    fn_8c057478,
+    TObjEneBm3Fly_dtor_8c054d18,
+    TObjEneBm3Fly_update_8c054d80,
+    TObjEneBm3Fly_render_8c057478,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -224,7 +224,7 @@ VirtualFunction const vt_8c262250[114] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    operation_8c055020,
+    TObjEneBm3Fly_v37_8c055020,
     operation_8c0133f8,
     fn_8c045200,
     object_blocked_8c013418,
@@ -256,9 +256,9 @@ VirtualFunction const vt_8c262250[114] = {
     operation_8c013408,
     operation_8c01340c,
     operation_8c013410,
-    operation_8c05508c,
-    operation_8c05506c,
-    operation_8c055024,
+    TObjEneBm3Fly_v69_8c05508c,
+    TObjEneBm3Fly_v70_8c05506c,
+    TObjEneBm3Fly_v71_8c055024,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -280,9 +280,9 @@ VirtualFunction const vt_8c262250[114] = {
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
-    operation_8c054f50,
-    operation_8c055110,
-    fn_8c0550c4,
+    TObjEneBm3Fly_v93_8c054f50,
+    TObjEneBm3Fly_v94_8c055110,
+    TObjEneBm3Fly_v95_8c0550c4,
     operation_8c05b19c,
     fn_8c05b6b4,
     operation_8c05b6fc,
@@ -296,18 +296,18 @@ VirtualFunction const vt_8c262250[114] = {
     operation_8c05babc,
     apply_contact_position,
     capture_current_contact,
-    operation_8c055278,
-    operation_8c057474,
-    operation_8c0575dc
+    TObjEneBm3Fly_v109_8c055278,
+    TObjEneBm3Fly_v110_8c057474,
+    TObjEneBm3Fly_v111_8c0575dc
 };
 
 /* 8c262418: type-information and this-adjustment header, then 111 slots */
 VirtualFunction const vt_8c262418[113] = {
     0,
     0,
-    operation_8c057fa0,
-    operation_8c058000,
-    fn_8c0595e4,
+    TObjEneBm3FlyNest_dtor_8c057fa0,
+    TObjEneBm3FlyNest_update_8c058000,
+    TObjEneBm3FlyNest_render_8c0595e4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -342,7 +342,7 @@ VirtualFunction const vt_8c262418[113] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    operation_8c058194,
+    TObjEneBm3FlyNest_v37_8c058194,
     operation_8c0133f8,
     fn_8c045200,
     object_blocked_8c013418,
@@ -374,9 +374,9 @@ VirtualFunction const vt_8c262418[113] = {
     operation_8c013408,
     operation_8c01340c,
     operation_8c013410,
-    operation_8c058234,
-    operation_8c0581d8,
-    operation_8c058198,
+    TObjEneBm3FlyNest_v69_8c058234,
+    TObjEneBm3FlyNest_v70_8c0581d8,
+    TObjEneBm3FlyNest_v71_8c058198,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -398,8 +398,8 @@ VirtualFunction const vt_8c262418[113] = {
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
-    operation_8c0580c4,
-    operation_8c058254,
+    TObjEneBm3FlyNest_v93_8c0580c4,
+    TObjEneBm3FlyNest_v94_8c058254,
     operation_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,
@@ -414,17 +414,17 @@ VirtualFunction const vt_8c262418[113] = {
     operation_8c05babc,
     apply_contact_position,
     capture_current_contact,
-    operation_8c0594c4,
-    fn_8c0598d0
+    TObjEneBm3FlyNest_v109_8c0594c4,
+    TObjEneBm3FlyNest_v110_8c0598d0
 };
 
 /* 8c2625dc: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c2625dc[7] = {
     0,
     0,
-    destroy_object_8c0577b4,
-    fn_8c0577f8,
-    fn_8c057a54,
+    TObjEneBm3FlyNest_CarryFly_dtor_8c0577b4,
+    TObjEneBm3FlyNest_CarryFly_update_8c0577f8,
+    TObjEneBm3FlyNest_CarryFly_render_8c057a54,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

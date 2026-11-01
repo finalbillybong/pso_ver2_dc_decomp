@@ -5,7 +5,7 @@
 #define metrics ((WidgetPanelMetric *)0x8c31b3f8)
 #define total_height (*(float *)0x8c4dc3cc)
 #define query_at ((int (*)(void *,int))0x8c1957c0)
-void operation_1955b4(void *o){
+void TObjCMIcon_update_8c1955b4(void *o){
     float total;
     {
         WidgetPanelState *state=states;

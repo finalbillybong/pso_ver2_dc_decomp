@@ -12,7 +12,7 @@ extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
 extern void call_8c03dc40(void *, int);
 extern void operator_delete_8c18de08(void *);
-void operation_8c1e3fb8(void)
+void release_assets_o_container_ancient_8c1e3fb8(void)
 {
     int v2;
     int v1;

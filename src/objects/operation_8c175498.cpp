@@ -122,7 +122,7 @@ public:
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" void operation_8c175498(Object *o, int a1, int a2)
+extern "C" void TBoss2Joint_v93_8c175498(Object *o, int a1, int a2)
 {
     switch (a1) {
     case 0:

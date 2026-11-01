@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern void operation_8c247f2c(float);
-void operation_8c170108(int a0)
+void quest_op_exp_multiplication_8c170108(int a0)
 {
     char *v1;
     float v3;

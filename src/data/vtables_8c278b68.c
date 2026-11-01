@@ -2,25 +2,25 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c226938(void);
-extern void operation_8c22697c(void);
-extern void operation_8c2269a4(void);
+extern void TWindowSetLevelUp_dtor_8c226938(void);
+extern void TWindowSetLevelUp_update_8c22697c(void);
+extern void TWindowSetLevelUp_render_8c2269a4(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c226c94(void);
-extern void operation_8c226d28(void);
-extern void operation_8c2270a8(void);
-extern void operation_8c227c14(void);
-extern void operation_8c227c68(void);
-extern void operation_8c227c8c(void);
+extern void TWindowOptionCtrl_dtor_8c226c94(void);
+extern void TWindowOptionCtrl_update_8c226d28(void);
+extern void TWindowOptionCtrl_render_8c2270a8(void);
+extern void TAdDrawLineCtrl_dtor_8c227c14(void);
+extern void TAdDrawLineCtrl_update_8c227c68(void);
+extern void TAdDrawLineCtrl_render_8c227c8c(void);
 
 /* 8c278b68: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c278b68[7] = {
     0,
     0,
-    destroy_object_8c226938,
-    operation_8c22697c,
-    operation_8c2269a4,
+    TWindowSetLevelUp_dtor_8c226938,
+    TWindowSetLevelUp_update_8c22697c,
+    TWindowSetLevelUp_render_8c2269a4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -29,9 +29,9 @@ VirtualFunction const vt_8c278b68[7] = {
 VirtualFunction const vt_8c278b84[7] = {
     0,
     0,
-    operation_8c226c94,
-    operation_8c226d28,
-    operation_8c2270a8,
+    TWindowOptionCtrl_dtor_8c226c94,
+    TWindowOptionCtrl_update_8c226d28,
+    TWindowOptionCtrl_render_8c2270a8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -40,9 +40,9 @@ VirtualFunction const vt_8c278b84[7] = {
 VirtualFunction const vt_8c278ba0[7] = {
     0,
     0,
-    operation_8c227c14,
-    operation_8c227c68,
-    operation_8c227c8c,
+    TAdDrawLineCtrl_dtor_8c227c14,
+    TAdDrawLineCtrl_update_8c227c68,
+    TAdDrawLineCtrl_render_8c227c8c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

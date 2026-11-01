@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern int operation_8c2324e0(void);
 extern int operation_8c2324c0(void);
-void operation_8c171ea8(void)
+void quest_op_load_serial_number_to_flag_buf_8c171ea8(void)
 {
     int t1;
     int t2;

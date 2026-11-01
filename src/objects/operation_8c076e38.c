@@ -46,7 +46,7 @@ struct S_vv34 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void call_8c075ccc(Object *, void *, ...);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c0772f8(void *, int, int);
+extern void TItemEffectWeapon_ctor_8c0772f8(void *, int, int);
 void operation_8c076e38(Object *o)
 {
     Frame frame;
@@ -63,7 +63,7 @@ void operation_8c076e38(Object *o)
         if (o->f1bc != 0) {
             t = heap_alloc_8c122700(g_8c4d97e0, 0x30);
             if (t != 0) {
-                operation_8c0772f8((void *)t, o->f1bc, color);
+                TItemEffectWeapon_ctor_8c0772f8((void *)t, o->f1bc, color);
             }
             o->f1d8 = (Arg0_1d8 *)t;
         }
@@ -76,7 +76,7 @@ void operation_8c076e38(Object *o)
         if (o->f1bc != 0) {
             t = heap_alloc_8c122700(g_8c4d97e0, 0x30);
             if (t != 0) {
-                operation_8c0772f8((void *)t, o->f1bc, color);
+                TItemEffectWeapon_ctor_8c0772f8((void *)t, o->f1bc, color);
             }
             o->f1dc = (Arg0_1dc *)t;
         }

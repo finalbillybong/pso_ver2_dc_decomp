@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c2171c4(void)
+void TWindowSubShortMail_render_8c2171c4(void)
 {
 }

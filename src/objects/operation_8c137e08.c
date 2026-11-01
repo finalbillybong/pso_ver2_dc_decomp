@@ -34,7 +34,7 @@ struct Arg3 {
     Block16 f00;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c137e08(Object *o, Arg1 *a1, int a2, Arg3 *a3)
+Object *TSlicerHistory_ctor_8c137e08(Object *o, Arg1 *a1, int a2, Arg3 *a3)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c26d084;

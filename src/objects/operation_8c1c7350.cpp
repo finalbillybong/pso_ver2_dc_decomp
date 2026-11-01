@@ -116,7 +116,7 @@ struct S_vv13 {
 extern "C" int lookup_low_id(int);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void operation_8c1c7424(void *);
-extern "C" void operation_8c1c7350(Object *o)
+extern "C" void TItemEffShield_update_8c1c7350(Object *o)
 {
     S_vv13 *v13;
     int t1;

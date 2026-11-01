@@ -12,7 +12,7 @@ struct Object {
     char unknown98[0x24];
     float fbc;
 };
-void operation_8c22b71c(Object *o)
+void TObjDFDemoF_update_8c22b71c(Object *o)
 {
     if (!(120.0f > (o->fbc += 1.0f))) {
         o->fbc = 120.0f;

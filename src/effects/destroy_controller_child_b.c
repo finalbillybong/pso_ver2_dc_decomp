@@ -3,7 +3,7 @@
 #define TObject_dtor_8c03311c ((void (*)(ControllerChild *, int))0x8c03311c)
 #define free_at ((void (*)(void *, void *))0x8c122774)
 
-ControllerChild *destroy_controller_child_b(ControllerChild *object, short release) {
+ControllerChild *TDuelEffectString_dtor_8c24ed70(ControllerChild *object, short release) {
     if (object) {
         object->dispatch = (void *)0x8c27e4d4;
         TObject_dtor_8c03311c(object, 0);

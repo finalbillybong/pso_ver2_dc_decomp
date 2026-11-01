@@ -20,7 +20,7 @@ extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c0129e8(Object *);
 extern void call_8c012884(Object *);
 extern void operation_8c0519c8(void *);
-void operation_8c051390(Object *o)
+void TObjEneLappy_v71_8c051390(Object *o)
 {
     short v1;
     o->f34 &= -0x40;

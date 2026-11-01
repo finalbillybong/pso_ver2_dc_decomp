@@ -17,7 +17,7 @@ extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
 extern void call_8c03dc40(void *, int);
 extern void operator_delete_8c18de08(S_g8c4d9984 *);
-void operation_8c129b68(void)
+void release_assets_fe_obj_turiten_moto_8c129b68(void)
 {
     call_8c37d534((void *)(g_8c4d9984->f04));
     call_8c37d534((void *)(g_8c4d9984->f00));

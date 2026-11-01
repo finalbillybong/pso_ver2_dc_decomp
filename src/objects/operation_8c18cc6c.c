@@ -14,7 +14,7 @@ struct Object {
 extern void accumulate_8c199f14(void *);
 extern void call_8c0db30c(Object *);
 extern void interpolate_view_parameters(void *);
-void operation_8c18cc6c(Object *o)
+void TWindowMainMenuCommand_update_8c18cc6c(Object *o)
 {
     if (!(7.5f > (float)o->f64)) {
         accumulate_8c199f14((void *)(o->f6c));

@@ -8,7 +8,7 @@ typedef struct Tag {
     int value;
 } Tag;
 extern void TObject_ctor_8c0330e4(Tag *, void *);
-Tag *initialize_tag_8c1694cc(Tag *o, void *parent)
+Tag *TItemList_ctor_8c1694cc(Tag *o, void *parent)
 {
     TObject_ctor_8c0330e4(o, parent);
     o->dispatch = (void *)0x8c2701cc;

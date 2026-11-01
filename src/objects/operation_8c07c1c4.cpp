@@ -43,7 +43,7 @@ typedef struct Arg1Data {
 } Arg1Data;
 extern "C" int operation_8c05bbf8(void);
 extern "C" void operation_8c06522c(void *);
-extern "C" void operation_8c07c1c4(Object *o, Arg1 *a1)
+extern "C" void TBoss1DragonEffTail_v17_8c07c1c4(Object *o, Arg1 *a1)
 {
     int t1;
     a1->v24(o->fe4, 1.0f);

@@ -15,7 +15,7 @@ struct Object {
     char f1e1;
 };
 extern void call_8c075398(void);
-Object *operation_8c23e51c(Object *o)
+Object *TItemWpnMuramasa_ctor_8c23e51c(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c27b358;

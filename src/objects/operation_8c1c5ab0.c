@@ -24,7 +24,7 @@ struct S_c8c053d84 {
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
 extern int create_effect_769c(void *, int);
-Object *operation_8c1c5ab0(Object *o, int a1, int a2, int a3)
+Object *TItemEffFlame_ctor_8c1c5ab0(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
     S_c8c053d84 *t1;

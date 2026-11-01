@@ -38,18 +38,18 @@ struct Frame {
 };
 extern int g_8c2ff030;
 extern short g_8c469c14;
-extern void operation_8c112e74(void *);
+extern void TOKey_ctor_8c112e74(void *);
 extern void call_8c112f40(Object *, int);
 extern void copy_actor_records(void *, void *, int);
 extern void attach_and_insert_object(void *);
 extern int create_effect_7708(void *, int, int);
-Object *operation_8c081abc(Object *o, int a1, int a2)
+Object *TObjDoorKey_ctor_8c081abc(Object *o, int a1, int a2)
 {
     Frame frame;
     Object **home = &o;
     int t1;
     (void)home;
-    operation_8c112e74((void *)o);
+    TOKey_ctor_8c112e74((void *)o);
     o->dispatch = (void *)0x8c264504;
     o->tag = (int)(g_8c2ff030);
     o->size = 0x130;

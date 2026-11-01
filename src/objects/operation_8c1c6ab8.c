@@ -10,7 +10,7 @@ struct Object {
     char unknown6[0x32];
     int f38;
 };
-void operation_8c1c6ab8(Object *o)
+void TItemAttacker_update_8c1c6ab8(Object *o)
 {
     if (o->f38 != 0) {
         o->f04 |= 1;

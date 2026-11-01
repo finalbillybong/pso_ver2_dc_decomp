@@ -9,7 +9,7 @@ struct S_g8c4db9e8 {
     char unknown0[0x320c];
     int f320c;
 };
-void operation_8c1712bc(int a0)
+void quest_op_get_guild_card_file_creation_time_8c1712bc(int a0)
 {
     int v4;
     v4 = (int)a0;

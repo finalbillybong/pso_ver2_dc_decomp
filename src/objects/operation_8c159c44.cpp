@@ -110,7 +110,7 @@ extern "C" int operation_8c03d338(void);
 extern "C" void actor_render_noop_b(Object *);
 extern "C" void operation_8c159d78(void *);
 extern "C" void call_8c027090(Object *);
-extern "C" void operation_8c159c44(Object *o)
+extern "C" void TObjVoloptCage_update_8c159c44(Object *o)
 {
     int t1;
     int t2;

@@ -11,15 +11,15 @@ struct Object {
 };
 extern void call_8c053f54(void);
 extern void operation_8c052124(void *);
-extern void destroy_object_8c1ab174(void *, short);
+extern void TObjMesBase_dtor_8c1ab174(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c085dd0(Object *o, int a1)
+Object *TObjComputer_dtor_8c085dd0(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c264e88;
         call_8c053f54();
         operation_8c052124((void *)o);
-        destroy_object_8c1ab174((void *)o, (short)0);
+        TObjMesBase_dtor_8c1ab174((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), o);
         }

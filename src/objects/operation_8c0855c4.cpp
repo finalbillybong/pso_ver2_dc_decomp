@@ -110,7 +110,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern "C" void call_8c162e94(Object *, void *, void *);
 extern "C" void operation_8c09e6b4(void *);
-extern "C" void operation_8c0855c4(Object *o, Arg1 *a1, int a2)
+extern "C" void TObjContainerBase_v05_8c0855c4(Object *o, Arg1 *a1, int a2)
 {
     if (a2 != 0) {
         if (a1->f00 != 1) {

@@ -11,7 +11,7 @@ struct Object {
     float fec;
     float ff0;
 };
-void operation_8c24b3a8(Object *o)
+void TObjDoaEx01_v18_8c24b3a8(Object *o)
 {
     float v1;
     v1 = (float)(o->fe8 + o->ff0);

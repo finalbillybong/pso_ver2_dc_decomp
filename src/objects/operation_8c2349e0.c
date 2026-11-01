@@ -6,7 +6,7 @@ typedef struct Vector3 {
 extern void call_8c234b48(void);
 extern void call_8c234b94(int);
 extern void call_8c234bf0(int);
-void operation_8c2349e0(int a0)
+void TPlyPKEditor_update_8c2349e0(int a0)
 {
     call_8c234b48();
     call_8c234b94(a0);

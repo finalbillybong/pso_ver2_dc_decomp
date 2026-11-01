@@ -8,9 +8,9 @@ extern void finalize_view_8c0db2cc(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0dc63c(void);
-extern void operation_8c0dcc10(void);
-extern void refresh_follow_effect_8c0dcdd8(void);
-extern void operation_8c0dcdf8(void);
+extern void TWindowCtrl_dtor_8c0dcc10(void);
+extern void TWindowCtrl_update_8c0dcdd8(void);
+extern void TWindowCtrl_render_8c0dcdf8(void);
 
 /* 8c26770c: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const vt_8c26770c[8] = {
@@ -28,9 +28,9 @@ VirtualFunction const vt_8c26770c[8] = {
 VirtualFunction const vt_8c26772c[7] = {
     0,
     0,
-    operation_8c0dcc10,
-    refresh_follow_effect_8c0dcdd8,
-    operation_8c0dcdf8,
+    TWindowCtrl_dtor_8c0dcc10,
+    TWindowCtrl_update_8c0dcdd8,
+    TWindowCtrl_render_8c0dcdf8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

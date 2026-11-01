@@ -13,7 +13,7 @@ extern char g_8c32afac[];
 extern int load_resource_8c104e9c(void *);
 extern int operator_new_8c18de4c(int);
 extern int load_pvm_file_tls_8c118528(void *);
-void operation_8c1de00c(void)
+void load_assets_TOButterflyDF_8c1de00c(void)
 {
     int t1;
     int t2;

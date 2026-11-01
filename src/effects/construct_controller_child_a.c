@@ -2,7 +2,7 @@
 
 #define TObject_ctor_8c0330e4 ((void (*)(ControllerChild *, void *))0x8c0330e4)
 
-ControllerChild *construct_controller_child_a(ControllerChild *object,
+ControllerChild *TDuelEffectNumber_ctor_8c24e9c0(ControllerChild *object,
                                                void *parent, float *position,
                                                int value) {
     TObject_ctor_8c0330e4(object, parent);

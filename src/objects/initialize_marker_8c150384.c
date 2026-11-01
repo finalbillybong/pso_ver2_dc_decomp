@@ -29,7 +29,7 @@ typedef struct Marker {
 extern Vector3 marker_origin;
 extern void TObjEnemyCustom_ctor_8c0c2354(Marker *);
 extern void place_marker_8c15042c(Marker *);
-Marker *initialize_marker_8c150384(Marker *o, Source *source, short kind, short variant)
+Marker *TBoss3VoloptHiraisin_ctor_1_8c150384(Marker *o, Source *source, short kind, short variant)
 {
     Marker **self = &o;
     (void)self;

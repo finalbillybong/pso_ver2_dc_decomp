@@ -18,7 +18,7 @@ public:
 typedef struct Arg0_20Data {
 
 } Arg0_20Data;
-extern "C" void operation_8c09f54c(Object *o)
+extern "C" void TEF_PvrWave_update_8c09f54c(Object *o)
 {
     o->f20->v1();
 }

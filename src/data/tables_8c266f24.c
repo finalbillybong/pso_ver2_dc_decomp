@@ -2,9 +2,9 @@
 
 typedef void (*Function)(void);
 
-extern void fn_8c0d1a0c(void);
-extern void operation_8c0d1afc(void);
-extern void fn_8c0d3d60(void);
+extern void TObjEneRe7Berura_dtor_8c0d1a0c(void);
+extern void TObjEneRe7Berura_update_8c0d1afc(void);
+extern void TObjEneRe7Berura_render_8c0d3d60(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -39,7 +39,7 @@ extern void operation_8c046324(void);
 extern void operation_8c04639c(void);
 extern void operation_8c046414(void);
 extern void operation_8c046498(void);
-extern void operation_8c0d1bb0(void);
+extern void TObjEneRe7Berura_v37_8c0d1bb0(void);
 extern void operation_8c0133f8(void);
 extern void fn_8c045200(void);
 extern void object_blocked_8c013418(void);
@@ -71,9 +71,9 @@ extern void operation_8c047438(void);
 extern void operation_8c013408(void);
 extern void operation_8c01340c(void);
 extern void operation_8c013410(void);
-extern void operation_8c0d1c48(void);
-extern void operation_8c0d1bd4(void);
-extern void operation_8c0d1bb4(void);
+extern void TObjEneRe7Berura_v69_8c0d1c48(void);
+extern void TObjEneRe7Berura_v70_8c0d1bd4(void);
+extern void TObjEneRe7Berura_v71_8c0d1bb4(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
 extern void operation_8c0134b0(void);
@@ -95,8 +95,8 @@ extern void operation_8c05c804(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
-extern void operation_8c0d21c8(void);
-extern void operation_8c0d1c9c(void);
+extern void TObjEneRe7Berura_v93_8c0d21c8(void);
+extern void TObjEneRe7Berura_v94_8c0d1c9c(void);
 extern void operation_8c05b16c(void);
 extern void operation_8c05b19c(void);
 extern void fn_8c05b6b4(void);
@@ -112,8 +112,8 @@ extern void operation_8c05babc(void);
 extern void apply_contact_position(void);
 extern void capture_current_contact(void);
 extern void fn_8c05bf78(void);
-extern void fn_8c0d4244(void);
-extern void fn_8c0d4250(void);
+extern void TObjEneRe7Berura_v110_8c0d4244(void);
+extern void TObjEneRe7Berura_v111_8c0d4250(void);
 extern void destroy_object_8c0d8720(void);
 extern void fn_8c0d8764(void);
 extern void operation_8c0d8a88(void);
@@ -163,9 +163,9 @@ extern void operation_8c0d4ebc(void);
 Function const d_8c266f24[114] = {
     0,
     0,
-    fn_8c0d1a0c,
-    operation_8c0d1afc,
-    fn_8c0d3d60,
+    TObjEneRe7Berura_dtor_8c0d1a0c,
+    TObjEneRe7Berura_update_8c0d1afc,
+    TObjEneRe7Berura_render_8c0d3d60,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -200,7 +200,7 @@ Function const d_8c266f24[114] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    operation_8c0d1bb0,
+    TObjEneRe7Berura_v37_8c0d1bb0,
     operation_8c0133f8,
     fn_8c045200,
     object_blocked_8c013418,
@@ -232,9 +232,9 @@ Function const d_8c266f24[114] = {
     operation_8c013408,
     operation_8c01340c,
     operation_8c013410,
-    operation_8c0d1c48,
-    operation_8c0d1bd4,
-    operation_8c0d1bb4,
+    TObjEneRe7Berura_v69_8c0d1c48,
+    TObjEneRe7Berura_v70_8c0d1bd4,
+    TObjEneRe7Berura_v71_8c0d1bb4,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -256,8 +256,8 @@ Function const d_8c266f24[114] = {
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
-    operation_8c0d21c8,
-    operation_8c0d1c9c,
+    TObjEneRe7Berura_v93_8c0d21c8,
+    TObjEneRe7Berura_v94_8c0d1c9c,
     operation_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,
@@ -273,8 +273,8 @@ Function const d_8c266f24[114] = {
     apply_contact_position,
     capture_current_contact,
     fn_8c05bf78,
-    fn_8c0d4244,
-    fn_8c0d4250
+    TObjEneRe7Berura_v110_8c0d4244,
+    TObjEneRe7Berura_v111_8c0d4250
 };
 
 Function const d_8c2670ec[126] = {

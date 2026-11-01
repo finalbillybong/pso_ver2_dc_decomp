@@ -30,7 +30,7 @@ struct Arg2 {
 };
 extern void TObjectShared_ctor_8c01d1ec(Object *);
 extern int create_effect_769c(void *, int);
-Object *operation_8c04f854(Object *o, int a1, Arg2 *a2)
+Object *TObjGrassWeb_ctor_8c04f854(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     int t1;

@@ -35,7 +35,7 @@ struct Frame {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void project_point_to_screen_8c38ad50(int, void *, void *);
-Object *operation_8c245d6c(Object *o, Arg1 *a1, Arg2 *a2, int a3)
+Object *TEffStarLight2D_ctor_8c245d6c(Object *o, Arg1 *a1, Arg2 *a2, int a3)
 {
     Frame frame;
     Object **home = &o;

@@ -64,7 +64,7 @@ extern "C" int operation_8c075894(void *, void *, int, int);
 extern "C" void create_effect_b0fac(void *, void *, void *, void *);
 extern "C" void operation_8c077224(void *);
 extern "C" void operation_8c076580(void *);
-extern "C" void operation_8c239eac(Object *o)
+extern "C" void TItemWpnBearCane_v49_8c239eac(Object *o)
 {
     Frame frame;
     int t1;

@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c159b90(void);
-extern void operation_8c159c44(void);
-extern void operation_8c159dd4(void);
+extern void TObjVoloptCage_dtor_8c159b90(void);
+extern void TObjVoloptCage_update_8c159c44(void);
+extern void TObjVoloptCage_render_8c159dd4(void);
 extern void actor_render_noop_a(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -98,17 +98,17 @@ extern void TObject_render_shadow_default_8c0111cc(void);
 extern void operation_8c051fd4(void);
 extern void operation_8c010508(void);
 extern void operation_8c010510(void);
-extern void destroy_context_8c15a9dc(void);
-extern void fn_8c15aa8c(void);
-extern void fn_8c15ad68(void);
+extern void TObjVoloptPillar_dtor_8c15a9dc(void);
+extern void TObjVoloptPillar_update_8c15aa8c(void);
+extern void TObjVoloptPillar_render_8c15ad68(void);
 
 /* 8c26ec94: type-information and this-adjustment header, then 89 slots */
 VirtualFunction const vt_8c26ec94[91] = {
     0,
     0,
-    operation_8c159b90,
-    operation_8c159c44,
-    operation_8c159dd4,
+    TObjVoloptCage_dtor_8c159b90,
+    TObjVoloptCage_update_8c159c44,
+    TObjVoloptCage_render_8c159dd4,
     actor_render_noop_a,
     hierarchy_output,
     operation_8c0104fc,
@@ -222,9 +222,9 @@ VirtualFunction const vt_8c26ee00[17] = {
 VirtualFunction const vt_8c26ee44[17] = {
     0,
     0,
-    destroy_context_8c15a9dc,
-    fn_8c15aa8c,
-    fn_8c15ad68,
+    TObjVoloptPillar_dtor_8c15a9dc,
+    TObjVoloptPillar_update_8c15aa8c,
+    TObjVoloptPillar_render_8c15ad68,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,

@@ -12,7 +12,7 @@ struct Object {
     int f234;
 };
 extern void call_8c3aa716(int);
-void operation_8c23f890(Object *o)
+void TItemWpnRocketPunch_v57_8c23f890(Object *o)
 {
     int v1;
     int v2;

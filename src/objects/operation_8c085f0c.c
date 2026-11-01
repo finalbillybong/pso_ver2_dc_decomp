@@ -9,7 +9,7 @@ struct Object {
     int fec;
 };
 extern void call_8c027090(void);
-void operation_8c085f0c(Object *o)
+void TObjComputer_v15_8c085f0c(Object *o)
 {
     if (o->fec != 0) {
         call_8c027090();

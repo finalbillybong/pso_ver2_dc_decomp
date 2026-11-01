@@ -24,7 +24,7 @@ extern void call_8c053f54(Object *);
 extern void operation_8c052124(void *);
 extern void destroy_context_8c051f28(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1d8d24(Object *o, int a1)
+Object *TObjCity_Season_21_21_dtor_8c1d8d24(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

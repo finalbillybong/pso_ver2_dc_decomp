@@ -11,11 +11,11 @@ struct Object {
     char unknown1e0[0x1c];
     int f1fc;
 };
-extern void operation_8c209a88(void *);
+extern void TItemEquipBase_v45_8c209a88(void *);
 void operation_8c075708(Object *o)
 {
     o->f1d8 = 0;
     o->f1dc = 0;
     o->f1fc &= -0xd;
-    operation_8c209a88((void *)o);
+    TItemEquipBase_v45_8c209a88((void *)o);
 }

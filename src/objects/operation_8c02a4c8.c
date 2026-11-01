@@ -27,7 +27,7 @@ extern int g_8c418248;
 extern int call_8c0c4f08(void *);
 extern void update_object_center(void *);
 extern void operation_8c02b1e0(int);
-extern void create_timed_actor_callback(unsigned short, short, void *);
+extern void TPlyOnCountOver_create_8c03ba4c(unsigned short, short, void *);
 extern void operation_8c0a1b78(void *);
 extern void operation_8c02a594();
 void handle_6x24_teleport_player_8c02a4c8(Object *o)
@@ -56,7 +56,7 @@ void handle_6x24_teleport_player_8c02a4c8(Object *o)
             update_object_center((void *)v5);
             v5->f350 |= 0x20000;
             operation_8c02b1e0((int)v5);
-            create_timed_actor_callback(((int)v5->f20), 2, operation_8c02a594);
+            TPlyOnCountOver_create_8c03ba4c(((int)v5->f20), 2, operation_8c02a594);
             t1 = (int)v5->f20 == g_8c418248;
             if (0 != (t1)) {
                 operation_8c0a1b78((void *)v5);

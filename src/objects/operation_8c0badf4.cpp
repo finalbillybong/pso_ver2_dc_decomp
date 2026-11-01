@@ -73,7 +73,7 @@ extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_delayed_effect_8c0baee8(void *, void *, short, void *);
 extern "C" int create_effect(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
-extern "C" void operation_8c0badf4(Object *o, Arg1 *a1)
+extern "C" void TTecZarua_v05_8c0badf4(Object *o, Arg1 *a1)
 {
     Frame frame;
     int t1;

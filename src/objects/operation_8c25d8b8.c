@@ -7,8 +7,8 @@ typedef struct S_g8c44be98 S_g8c44be98;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 typedef struct S_g8c513440 S_g8c513440;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c25ddac(int, void *);
-extern void call_8c25d964(int, void *, int);
+extern void TOChatSensorFolder_ctor_8c25ddac(int, void *);
+extern void TOChatSensor_ctor_8c25d964(int, void *, int);
 int TOChatSensor_create_8c25d8b8(int a0)
 {
     int t1;
@@ -16,13 +16,13 @@ int TOChatSensor_create_8c25d8b8(int a0)
     if (*(int *)0x8c513440 == 0) {
         t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x20);
         if (t1 != 0) {
-            call_8c25ddac(t1, *(S_g8c44be98 **)0x8c44be98);
+            TOChatSensorFolder_ctor_8c25ddac(t1, *(S_g8c44be98 **)0x8c44be98);
         }
     }
     if (*(int *)0x8c513440 != 0) {
         t2 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0xd4);
         if (t2 != 0) {
-            call_8c25d964(t2, *(S_g8c513440 **)0x8c513440, a0);
+            TOChatSensor_ctor_8c25d964(t2, *(S_g8c513440 **)0x8c513440, a0);
         }
         return t2;
     }

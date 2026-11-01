@@ -14,7 +14,7 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int create_effect_7a48(void *, int, int);
-Object *operation_8c1c7210(Object *o, int a1)
+Object *TAdLoadQuest_ctor_8c1c7210(Object *o, int a1)
 {
     Object **home = &o;
     int v1;

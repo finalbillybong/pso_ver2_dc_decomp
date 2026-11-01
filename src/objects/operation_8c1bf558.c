@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c1bf558(void)
+void TOCakeshopCave01_ctor_8c1bf558(void)
 {
 }

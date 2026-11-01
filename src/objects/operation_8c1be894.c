@@ -27,7 +27,7 @@ extern int g_8c41cd20;
 extern S_g8c4e2b80 *g_8c4e2b80;
 extern int g_8c510ba0;
 extern void operation_8c0889f0(void *);
-void operation_8c1be894(Object *o)
+void TObjCityMapWarp_update_8c1be894(Object *o)
 {
     float v3;
     float v4;

@@ -36,7 +36,7 @@ extern S_L8c41cba0 g_8c41cba0;
 extern int call_8c18e8a0(void *, int);
 extern void operation_8c0368a8(void *);
 extern void operation_8c256dcc(Object *);
-void operation_8c256c7c(Object *o)
+void TObjHexLine_update_8c256c7c(Object *o)
 {
     Frame frame;
     int flags;

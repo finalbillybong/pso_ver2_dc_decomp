@@ -88,7 +88,7 @@ extern "C" int create_effect_7708(void *, int, int);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void mark_effect_for_release(void *);
 extern "C" void call_8c0a7608(void *, void *);
-extern "C" void operation_8c1c5d9c(Object *o)
+extern "C" void TItemEffHeaven_update_8c1c5d9c(Object *o)
 {
     Frame frame;
     int v26;

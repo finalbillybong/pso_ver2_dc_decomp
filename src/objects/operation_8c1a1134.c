@@ -25,7 +25,7 @@ extern char g_8c31cf44[];
 extern int call_8c045f04(Object *, int, float);
 extern float call_8c04745c(Object *, int, float);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c0edfd0(int, Frame *, int, int, void *);
+extern void TFontSmallTask_ctor_1_8c0edfd0(int, Frame *, int, int, void *);
 float operation_8c1a1134(Object *o, int a1, Arg2 *a2)
 {
     Frame frame;
@@ -45,7 +45,7 @@ float operation_8c1a1134(Object *o, int a1, Arg2 *a2)
         }
         t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x50);
         if (t3 != 0) {
-            call_8c0edfd0(t3, (Frame *)((&frame)), -0x10000, 0x14, (void *)((g_8c31cf44 + 0x3c)));
+            TFontSmallTask_ctor_1_8c0edfd0(t3, (Frame *)((&frame)), -0x10000, 0x14, (void *)((g_8c31cf44 + 0x3c)));
         }
     }
     return 0.0f;

@@ -56,7 +56,7 @@ public:
 typedef struct Arg1Data {
 
 } Arg1Data;
-extern "C" void operation_8c0b8cac(Object *o, Arg1 *a1)
+extern "C" void TTecRaZonde_v05_8c0b8cac(Object *o, Arg1 *a1)
 {
     Frame frame;
     (&frame)->f00.f04 = o->f90;

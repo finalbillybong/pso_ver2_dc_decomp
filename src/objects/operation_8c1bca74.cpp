@@ -91,7 +91,7 @@ extern "C" void call_8c1bbd80(Object *);
 extern "C" void refresh_follow_effect_8c052180(void *);
 extern "C" void call_8c027090(Object *);
 extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
-extern "C" void operation_8c1bca74(Object *o)
+extern "C" void TBoss4Bishi_update_8c1bca74(Object *o)
 {
     Frame frame;
     int v1;

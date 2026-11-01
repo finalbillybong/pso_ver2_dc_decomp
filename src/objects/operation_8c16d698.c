@@ -16,7 +16,7 @@ extern void request_resource_release(void *);
 extern int create_fitted_pair_grid_view(void *, void *);
 extern void operation_8c119764(int, int, int);
 extern void operation_8c0dc610(void *, float);
-void operation_8c16d698(int a0)
+void quest_op_disp_msg_qb_8c16d698(int a0)
 {
     Frame frame;
     int t1;

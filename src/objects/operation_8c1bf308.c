@@ -7,7 +7,7 @@ typedef struct S_g8c4e2be0 S_g8c4e2be0;
 extern S_g8c4e2be0 *g_8c4e2be0;
 extern int g_8c4e2bf4;
 extern void call_8c03dc40(void *, int);
-void operation_8c1bf308(void)
+void release_assets_fs_obj_kenkyu_com_8c1bf308(void)
 {
     int v1;
     g_8c4e2bf4 = 0;

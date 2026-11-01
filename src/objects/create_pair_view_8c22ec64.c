@@ -17,14 +17,14 @@ struct S_c8c122700 {
 };
 extern void configure_pair_grid_view(int, int, int);
 extern S_c8c122700 *heap_alloc_8c122700(void *, int);
-extern void initialize_pair_grid_view(S_c8c122700 *, int);
-S_c8c122700 *create_pair_view_8c22ec64(int a0, int a1, int a2)
+extern void TWindowMessage_ctor_8c119470(S_c8c122700 *, int);
+S_c8c122700 *TWindowMessagePage_ctor_8c22ec64(int a0, int a1, int a2)
 {
     S_c8c122700 *t1;
     configure_pair_grid_view(a0, a1, a2);
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0xa8);
     if (t1 != 0) {
-        initialize_pair_grid_view(t1, a2);
+        TWindowMessage_ctor_8c119470(t1, a2);
         t1->f18 = (void *)0x8c278ec0;
         t1->f00 = *(int *)0x8c338508;
         t1->f1e = 0xa8;

@@ -60,7 +60,7 @@ extern void operation_8c1ecf70(int);
 extern void call_8c1a8adc(Object *, int);
 extern int operation_8c1a8e4c(int);
 extern int operation_8c1ecee4(int);
-void operation_8c1a882c(Object *o)
+void TWindowSubTechnique_update_8c1a882c(Object *o)
 {
     int v1;
     S_vv12 *v12;

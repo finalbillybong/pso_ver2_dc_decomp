@@ -14,7 +14,7 @@ typedef struct Block_frame_0 {
 struct Frame {
     Block_frame_0 f00;
 };
-void operation_8c171578(int a0, int a1)
+void quest_op_ba_get_score_8c171578(int a0, int a1)
 {
     Frame frame;
     char *v1;

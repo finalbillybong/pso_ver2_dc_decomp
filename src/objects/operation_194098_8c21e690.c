@@ -3,7 +3,7 @@
 #define child_destroy_at ((void (*)(void *,short))0x8c199b40)
 #define base_destroy_at ((void (*)(ResourceWidget *,short))0x8c0db244)
 #define free_at ((void (*)(void *,ResourceWidget *))0x8c122774)
-ResourceWidget *operation_194098_8c21e690(ResourceWidget *o,short release){
+ResourceWidget *TWindowSubQuestBoardSelect_dtor_8c21e690(ResourceWidget *o,short release){
     if(o){
         o->dispatch=(void *)0x8c27869c;
         child_destroy_at(o->child,1);

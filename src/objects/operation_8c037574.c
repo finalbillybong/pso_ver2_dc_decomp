@@ -13,7 +13,7 @@ typedef struct S_g8c4627f8 S_g8c4627f8;
 extern void operator_delete_8c18de08(void *);
 extern void destroy_vector_grid(void *, int);
 extern void call_8c03dc40(void *, int);
-void operation_8c037574(void)
+void release_assets_ene_bm1_shark_8c037574(void)
 {
     if (*(int *)0x8c4627e0 != 0) {
         operator_delete_8c18de08((void *)(*(S_g8c4627e0 **)0x8c4627e0));

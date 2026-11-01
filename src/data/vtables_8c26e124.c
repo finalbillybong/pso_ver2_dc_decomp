@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c14ba44(void);
-extern void fn_8c14bc04(void);
-extern void fn_8c14c6ec(void);
+extern void TObjBoss2Tunnel_dtor_8c14ba44(void);
+extern void TObjBoss2Tunnel_update_8c14bc04(void);
+extern void TObjBoss2Tunnel_render_8c14c6ec(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
@@ -12,9 +12,9 @@ extern void hierarchy_output(void);
 VirtualFunction const vt_8c26e124[7] = {
     0,
     0,
-    operation_8c14ba44,
-    fn_8c14bc04,
-    fn_8c14c6ec,
+    TObjBoss2Tunnel_dtor_8c14ba44,
+    TObjBoss2Tunnel_update_8c14bc04,
+    TObjBoss2Tunnel_render_8c14c6ec,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

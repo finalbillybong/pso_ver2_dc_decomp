@@ -18,7 +18,7 @@ extern void operation_8c026700(int, int);
 extern void create_effect_777c(void *, int);
 extern void operation_8c0a1ed0(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_follow_quad_effect(void *, void *, unsigned int, unsigned short);
+extern void TPhotonMagicSquare_ctor_1_8c14eb6c(void *, void *, unsigned int, unsigned short);
 typedef struct Row40 {
     char unknown0[0x38];
     int f38;
@@ -51,40 +51,40 @@ void operation_8c167fe4(int a0, int a1)
         if (t2 == 0) {
             return;
         }
-        initialize_follow_quad_effect((void *)t2, g_8c44bea0, (unsigned int)2, (unsigned short)a1);
+        TPhotonMagicSquare_ctor_1_8c14eb6c((void *)t2, g_8c44bea0, (unsigned int)2, (unsigned short)a1);
         return;
     case 3:
         t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xd4);
         if (t3 == 0) {
             return;
         }
-        initialize_follow_quad_effect((void *)t3, g_8c44bea0, (unsigned int)3, (unsigned short)a1);
+        TPhotonMagicSquare_ctor_1_8c14eb6c((void *)t3, g_8c44bea0, (unsigned int)3, (unsigned short)a1);
         return;
     case 4:
         t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xd4);
         if (t4 == 0) {
             return;
         }
-        initialize_follow_quad_effect((void *)t4, g_8c44bea0, (unsigned int)4, (unsigned short)a1);
+        TPhotonMagicSquare_ctor_1_8c14eb6c((void *)t4, g_8c44bea0, (unsigned int)4, (unsigned short)a1);
         return;
     case 0:
         t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xd4);
         if (t5 == 0) {
             return;
         }
-        initialize_follow_quad_effect((void *)t5, g_8c44bea0, (unsigned int)0, (unsigned short)a1);
+        TPhotonMagicSquare_ctor_1_8c14eb6c((void *)t5, g_8c44bea0, (unsigned int)0, (unsigned short)a1);
         return;
     case 1:
         t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xd4);
         if (t6 == 0) {
             return;
         }
-        initialize_follow_quad_effect((void *)t6, g_8c44bea0, (unsigned int)1, (unsigned short)a1);
+        TPhotonMagicSquare_ctor_1_8c14eb6c((void *)t6, g_8c44bea0, (unsigned int)1, (unsigned short)a1);
         return;
     case 5:
         t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xd4);
         if (t7 != 0) {
-            initialize_follow_quad_effect((void *)t7, g_8c44bea0, (unsigned int)5, (unsigned short)a1);
+            TPhotonMagicSquare_ctor_1_8c14eb6c((void *)t7, g_8c44bea0, (unsigned int)5, (unsigned short)a1);
         }
         return;
     }

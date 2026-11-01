@@ -60,7 +60,7 @@ extern "C" void call_8c391c94(void);
 extern "C" void call_8c3a9436(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void call_8c391cc4(void);
-extern "C" void operation_8c0f17a0(Object *o)
+extern "C" void TOMonumentAncient01_render_8c0f17a0(Object *o)
 {
     S_vv1 *v1;
     S_vv2 *v2;

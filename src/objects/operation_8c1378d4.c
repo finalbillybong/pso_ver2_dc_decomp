@@ -31,7 +31,7 @@ extern void scale_current_matrix_v_8c37e390(void *);
 extern void call_8c38c0f0(void *);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c1378d4(Object *o)
+void TTecSlicer_render_8c1378d4(Object *o)
 {
     g_8c46f560 = (int)(g_8c575570);
     g_8c575570 |= 0x10;

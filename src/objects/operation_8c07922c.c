@@ -9,7 +9,7 @@ extern void call_8c03dc40(void *, int);
 extern void release_scene_control_resource(void *);
 extern void clear_global_8c08a584(void);
 extern void call_8c07cdb4(void);
-void operation_8c07922c(void)
+void release_assets_ene_darkgunner_8c07922c(void)
 {
     call_8c03dc40((void *)(*(S_g8c469a94 **)0x8c469a94), 1);
     release_scene_control_resource((void *)(*(S_g8c469a98 **)0x8c469a98));

@@ -15,7 +15,7 @@ struct Arg0_394 {
     int f3a8;
 };
 extern void call_8c012884(Object *);
-void operation_8c1bc088(Object *o)
+void TBoss4Uro_v71_8c1bc088(Object *o)
 {
     if (o->f390 != 3) {
         call_8c012884(o);

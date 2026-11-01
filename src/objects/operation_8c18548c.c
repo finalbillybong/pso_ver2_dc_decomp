@@ -40,7 +40,7 @@ extern void call_8c3be280(int, void *, void *);
 extern void njPopMatrix_8c38accc(int);
 extern float call_8c3845f0(Frame *, void *);
 extern void operation_8c01d778(void *, int);
-void operation_8c18548c(Object *o)
+void TObjRoomId_update_8c18548c(Object *o)
 {
     Frame frame;
     int v3;

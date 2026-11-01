@@ -95,7 +95,7 @@ extern S_L8c41cba0 g_8c41cba0;
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void request_resource_release(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c1d5b24(void *);
+extern void TWindowHelpItem_ctor_8c1d5b24(void *);
 extern int call_8c22cc78(void *, void *);
 extern void operation_8c0dc610(void *, float);
 extern void operation_8c1d5530(int, int);
@@ -121,10 +121,10 @@ extern int operation_8c1d7454(void *);
 extern int call_8c1d7324(Arg0_3c *);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern int call_8c19117c(Object *);
-extern void operation_8c230538(void *, int);
+extern void TWindowSubMagPhoton_ctor_8c230538(void *, int);
 extern int operation_8c19113c(Object *);
 extern void operation_8c191454(void *);
-void operation_8c19084c(Object *o)
+void TWindowSubMag_update_8c19084c(Object *o)
 {
     S_vv8 *v8;
     S_vv11 *v11;
@@ -170,7 +170,7 @@ void operation_8c19084c(Object *o)
         if (o->f3c == 0) {
             t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xb8);
             if (t2 != 0) {
-                operation_8c1d5b24((void *)t2);
+                TWindowHelpItem_ctor_8c1d5b24((void *)t2);
             }
             o->f3c = (Arg0_3c *)t2;
         }
@@ -369,7 +369,7 @@ void operation_8c19084c(Object *o)
         }
         t21 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
         if (t21 != 0) {
-            operation_8c230538((void *)t21, (int)(o->f2c));
+            TWindowSubMagPhoton_ctor_8c230538((void *)t21, (int)(o->f2c));
         }
         o->f44 = (Arg0_44 *)t21;
         t22 = operation_8c19113c(o);

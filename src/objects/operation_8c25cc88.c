@@ -19,10 +19,10 @@ struct Object {
 extern char g_8c3404e0[];
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c25ce38(int, Object *, void *);
+extern void TItemReverseTechPart1_ctor_8c25ce38(int, Object *, void *);
 extern void call_8c225f04(int, Object *);
 extern void call_8c1003d0(void *);
-Object *operation_8c25cc88(Object *o, int a1)
+Object *TItemReverseTech_ctor_8c25cc88(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
@@ -34,7 +34,7 @@ Object *operation_8c25cc88(Object *o, int a1)
     o->size = 0x2c;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x38);
     if (t1 != 0) {
-        call_8c25ce38(t1, o, (void *)(*(S_g8c513420 **)0x8c513420));
+        TItemReverseTechPart1_ctor_8c25ce38(t1, o, (void *)(*(S_g8c513420 **)0x8c513420));
     }
     o->f24 = t1;
     o->f28 = 0;

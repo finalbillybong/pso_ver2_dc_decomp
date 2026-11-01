@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c2169c8(void);
-extern void operation_8c216ab8(void);
-extern void operation_8c2171c4(void);
+extern void TWindowSubShortMail_dtor_8c2169c8(void);
+extern void TWindowSubShortMail_update_8c216ab8(void);
+extern void TWindowSubShortMail_render_8c2171c4(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
@@ -12,9 +12,9 @@ extern void hierarchy_output(void);
 VirtualFunction const vt_8c2782b8[7] = {
     0,
     0,
-    operation_8c2169c8,
-    operation_8c216ab8,
-    operation_8c2171c4,
+    TWindowSubShortMail_dtor_8c2169c8,
+    TWindowSubShortMail_update_8c216ab8,
+    TWindowSubShortMail_render_8c2171c4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

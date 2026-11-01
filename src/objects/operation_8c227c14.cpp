@@ -23,7 +23,7 @@ typedef struct Arg0_24Data {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c227c14(Object *o, int a1)
+extern "C" Object *TAdDrawLineCtrl_dtor_8c227c14(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)(void *)0x8c278ba0;

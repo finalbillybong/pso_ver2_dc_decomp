@@ -39,7 +39,7 @@ struct Arg0_13c {
 extern int call_8c1aaabc(void *);
 extern int call_8c1aaafc(void *);
 extern void operation_8c137998(void *);
-void operation_8c254718(Object *o)
+void TItemWpnUnknownSlicer_v49_8c254718(Object *o)
 {
     Frame frame;
     int t1;

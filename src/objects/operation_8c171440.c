@@ -21,7 +21,7 @@ extern S_L8c4db484 g_8c4db484;
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int call_8c04c6a8(void *);
 extern void strncpy_8c12b154(void *, int, int);
-void operation_8c171440(int a0)
+void quest_op_get_pl_job_8c171440(int a0)
 {
     int v1;
     S_c8c021ef8 *t1;

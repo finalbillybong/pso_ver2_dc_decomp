@@ -12,7 +12,7 @@ struct S_c8c021ef8 {
     short f330;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c16e318(int a0, int a1)
+void quest_op_p_hpstat_8c16e318(int a0, int a1)
 {
     int v1;
     float v2;

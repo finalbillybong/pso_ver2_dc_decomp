@@ -19,7 +19,7 @@ struct Object {
     int f1fc;
 };
 extern void call_8c075398(void);
-Object *operation_8c077860(Object *o)
+Object *TItemWpnBlade_ctor_8c077860(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c26319c;

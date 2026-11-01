@@ -20,4 +20,4 @@ extern void call_8c119b70(View *);
 extern void call_8c0db30c(View *);
 extern void call_8c0db430(View *);
 extern void finish_at(View *,void *);
-void update_pair_grid_view(View *o) {if(!(o->flags&2)) o->field100=0x1000000;call_8c119988(o);call_8c1199cc(o);call_8c119a9c(o);call_8c119b70(o);call_8c0db30c(o);call_8c0db430(o);finish_at(o,(char *)o+44);}
+void TWindowMessage_update_8c119598(View *o) {if(!(o->flags&2)) o->field100=0x1000000;call_8c119988(o);call_8c1199cc(o);call_8c119a9c(o);call_8c119b70(o);call_8c0db30c(o);call_8c0db430(o);finish_at(o,(char *)o+44);}

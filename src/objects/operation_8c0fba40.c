@@ -14,7 +14,7 @@ struct Object {
 extern void call_8c0fbafc(Object *);
 extern void call_8c0fbc48(Object *, int, void *, float);
 extern void operation_8c0fbdf0(int);
-void operation_8c0fba40(Object *o)
+void TObjEneSlimeTailAttack_render_8c0fba40(Object *o)
 {
     float v9;
     float pm1;

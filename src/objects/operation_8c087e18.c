@@ -16,7 +16,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern void game_free_8c011ec0(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c087e18(Object *o, int a1)
+Object *TObjChip_dtor_8c087e18(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c264f98;

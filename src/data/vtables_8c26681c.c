@@ -19,9 +19,9 @@ extern void operation_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c0c6c98(void);
 extern void fn_8c0c6d00(void);
-extern void destroy_particle_entries(void);
-extern void update_particle_entries(void);
-extern void fn_8c0c752c(void);
+extern void TBreakUpMdl_dtor_8c0c7410(void);
+extern void TBreakUpMdl_update_8c0c7470(void);
+extern void TBreakUpMdl_render_8c0c752c(void);
 
 /* 8c26681c: type-information and this-adjustment header, then 15 slots */
 VirtualFunction const vt_8c26681c[17] = {
@@ -69,9 +69,9 @@ VirtualFunction const vt_8c266860[17] = {
 VirtualFunction const vt_8c2668a4[7] = {
     0,
     0,
-    destroy_particle_entries,
-    update_particle_entries,
-    fn_8c0c752c,
+    TBreakUpMdl_dtor_8c0c7410,
+    TBreakUpMdl_update_8c0c7470,
+    TBreakUpMdl_render_8c0c752c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

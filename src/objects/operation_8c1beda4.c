@@ -13,7 +13,7 @@ extern void call_8c391c94(void);
 extern void visit_hierarchy_10(void *);
 extern void call_8c391cc4(void);
 extern void restore_render_state(void);
-void operation_8c1beda4(void)
+void TWindowCtrlMain_render_8c1beda4(void)
 {
     restore_child_blend();
     backup_render_state();

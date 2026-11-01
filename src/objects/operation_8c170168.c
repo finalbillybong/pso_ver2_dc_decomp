@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4db408 S_g8c4db408;
 extern int operation_8c2482bc(void);
-void operation_8c170168(int a0)
+void quest_op_cmode_check_any_player_dead_8c170168(int a0)
 {
     int t1;
     t1 = operation_8c2482bc();

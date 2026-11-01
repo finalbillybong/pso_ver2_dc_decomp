@@ -50,7 +50,7 @@ extern int lookup_low_id(int);
 extern int game_malloc_8c011ecc(int);
 extern void operation_8c199b20(int, int);
 extern void call_8c199b8c(int, void *);
-Object *operation_8c198da4(Object *o)
+Object *TWindowSubCustomSelect_ctor_8c198da4(Object *o)
 {
     Frame frame;
     Object **home = &o;

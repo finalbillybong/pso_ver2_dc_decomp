@@ -41,7 +41,7 @@ struct S_g8c4d820c {
     char unknown0[0x4];
     int f04;
 };
-extern "C" void operation_8c113a4c(Object *o)
+extern "C" void TLazerFenceSw_v18_8c113a4c(Object *o)
 {
     float v3;
     float v4;

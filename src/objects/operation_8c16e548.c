@@ -7,7 +7,7 @@ typedef struct S_g8c418248 S_g8c418248;
 extern void call_8c029228(void);
 extern int lookup_low_id(int);
 extern void operation_8c02641c(void *);
-void operation_8c16e548(void)
+void quest_op_p_action_disable_8c16e548(void)
 {
     int t1;
     call_8c029228();

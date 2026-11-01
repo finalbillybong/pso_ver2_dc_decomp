@@ -16,7 +16,7 @@ struct Object {
     int f3c8;
 };
 extern int operation_459d8(void *);
-int operation_8c04d380(Object *o)
+int TObjGrass_v48_8c04d380(Object *o)
 {
     int t1;
     t1 = operation_459d8((void *)o);

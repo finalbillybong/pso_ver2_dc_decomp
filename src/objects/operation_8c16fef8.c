@@ -10,7 +10,7 @@ struct S_L8c4db494 {
 };
 extern int g_8c2865d8;
 extern S_L8c4db494 g_8c4db494;
-void operation_8c16fef8(unsigned int a0)
+void quest_op_ba_set_weapon_and_armor_mode_8c16fef8(unsigned int a0)
 {
     if ((unsigned int)3 >= a0) {
         (&g_8c4db494)->f01 = *(int *)((char *)&g_8c2865d8 + (a0 << 2));

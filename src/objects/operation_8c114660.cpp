@@ -33,7 +33,7 @@ typedef struct ObjectData {
 
 } ObjectData;
 extern "C" void call_8c0eeb58(void);
-extern "C" void operation_8c114660(Object *o)
+extern "C" void TOKeyAncient01_v18_8c114660(Object *o)
 {
     call_8c0eeb58();
     o->v21();

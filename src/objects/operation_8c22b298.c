@@ -24,7 +24,7 @@ struct Arg1 {
     Vector3 f00;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c22b298(Object *o, Arg1 *a1, int a2, int a3)
+Object *TWindowEff_ctor_8c22b298(Object *o, Arg1 *a1, int a2, int a3)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a3);
     o->dispatch = (void *)0x8c278db4;

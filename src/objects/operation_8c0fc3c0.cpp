@@ -27,7 +27,7 @@ typedef struct ObjectData {
 extern "C" void draw_view_transition_if_active(void *);
 extern "C" void call_8c0db5d4(Object *, int);
 extern "C" void draw_view_nodes(void *, void *, void *);
-extern "C" void operation_8c0fc3c0(Object *o)
+extern "C" void TWindowLockOn_render_8c0fc3c0(Object *o)
 {
     int t1;
     t1 = o->v5();

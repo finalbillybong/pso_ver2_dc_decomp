@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c0e6bfc(void)
+void TObjEneDimedian_v98_8c0e6bfc(void)
 {
 }

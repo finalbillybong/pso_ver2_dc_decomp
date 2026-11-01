@@ -9,7 +9,7 @@ typedef struct Manager {
 typedef char check_layout[sizeof(Manager) == 48 && (unsigned long)&((Manager *)0)->dispatch == 24 && (unsigned long)&((Manager *)0)->size == 30 ? 1 : -1];
 extern void *object_name;
 extern void base_at(Manager *, void *parent, void *parameter);
-Manager *initialize_file_task_manager(Manager *o, void *parent, void *parameter) {
+Manager *TQuadSpriteSclColRot_ctor_8c0419b8(Manager *o, void *parent, void *parameter) {
     base_at(o, parent, parameter);
     o->dispatch = (void *)0x8c261c7c;
     o->name = object_name;

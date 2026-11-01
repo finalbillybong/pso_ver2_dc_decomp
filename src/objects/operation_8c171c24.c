@@ -9,7 +9,7 @@ struct Frame {
     int f00;
 };
 extern void memcpy_8c12b77c(Frame *, int, int);
-void operation_8c171c24(int a0, int a1)
+void quest_op_get_eventflag32_8c171c24(int a0, int a1)
 {
     Frame frame;
     int v1;

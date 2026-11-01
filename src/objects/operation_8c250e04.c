@@ -19,7 +19,7 @@ struct Object {
     int f1fc;
 };
 extern void operation_8c241158(void *);
-Object *operation_8c250e04(Object *o)
+Object *TItemWpnOnClaw_ctor_8c250e04(Object *o)
 {
     operation_8c241158((void *)o);
     o->dispatch = (void *)0x8c27ebc0;

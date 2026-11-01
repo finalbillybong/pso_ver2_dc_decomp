@@ -50,7 +50,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern "C" int operation_8c073e5c(void *, void *);
 extern "C" void call_8c1c934c(Arg1 *, short);
-extern "C" int operation_8c17b7e8(Object *o, Arg1 *a1)
+extern "C" int TItemProUnit_v31_8c17b7e8(Object *o, Arg1 *a1)
 {
     int t1;
     int t2;

@@ -50,7 +50,7 @@ extern void call_8c04f1b4(Object *);
 extern void call_8c04f2cc(Object *);
 extern void call_8c04f5a0(Object *);
 extern void call_8c027090(Object *);
-void operation_8c04cd5c(Object *o)
+void TObjGrass_update_8c04cd5c(Object *o)
 {
     int t1;
     t1 = operation_8c03d338();

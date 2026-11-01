@@ -13,7 +13,7 @@ struct Object {
     int f20;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c10ae08(Object *o, int a1)
+Object *TMedicalCenterMes_ctor_8c10ae08(Object *o, int a1)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c269a54;

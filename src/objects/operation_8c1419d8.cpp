@@ -100,7 +100,7 @@ extern "C" void call_8c0521a0(Object *);
 extern "C" void call_8c027090(Object *);
 extern "C" int get_current_area_8c032b10(void);
 extern "C" void call_8c05fd7c(int, Object *, void *, int, int);
-extern "C" void operation_8c1419d8(Object *o)
+extern "C" void TOTrapAncient01_v89_8c1419d8(Object *o)
 {
     S_vv3 *v3;
     int v2;

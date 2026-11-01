@@ -16,16 +16,16 @@ extern void fn_8c0a0d20(void);
 extern void operation_8c0a65f8(void);
 extern void operation_8c0fc244(void);
 extern void operation_8c0fc26c(void);
-extern void destroy_object_8c0fc304(void);
-extern void fn_8c0fc348(void);
-extern void operation_8c0fc3c0(void);
+extern void TWindowLockOn_dtor_8c0fc304(void);
+extern void TWindowLockOn_update_8c0fc348(void);
+extern void TWindowLockOn_render_8c0fc3c0(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void operation_8c0dc63c(void);
 extern void destroy_field_8c0fcbe4(void);
 extern void operation_8c0fcc20(void);
 extern void fn_8c0e1d14(void);
-extern void operation_8c0fe190(void);
-extern void fn_8c0fe344(void);
+extern void TOMineTrap_dtor_8c0fe190(void);
+extern void TOMineTrap_update_8c0fe344(void);
 extern void fn_8c0fcef4(void);
 extern void operation_8c0fdc44(void);
 extern void operation_8c0fd7c0(void);
@@ -36,7 +36,7 @@ extern void operation_8c010504(void);
 extern void word_operation_8c01345c(void);
 extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c0fec4c(void);
+extern void TOMineTrap_v13_8c0fec4c(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c04a928(void);
 extern void operation_8c04a950(void);
@@ -45,9 +45,9 @@ extern void query_object_height(void);
 extern void query_position_height(void);
 extern void operation_8c04a4f4(void);
 extern void operation_8c013474(void);
-extern void operation_8c0fed0c(void);
-extern void operation_8c0fed20(void);
-extern void operation_8c0fea90(void);
+extern void TOMineTrap_v22_8c0fed0c(void);
+extern void TOMineTrap_v23_8c0fed20(void);
+extern void TOMineTrap_v24_8c0fea90(void);
 extern void operation_8c0fd6c8(void);
 extern void operation_8c0fd718(void);
 extern void operation_8c0fed34(void);
@@ -115,15 +115,15 @@ extern void operation_8c0fd330(void);
 extern void operation_8c0fd3cc(void);
 extern void operation_8c0fd3dc(void);
 extern void fn_8c0fd4b8(void);
-extern void operation_8c0fd95c(void);
+extern void TOMine_v92_8c0fd95c(void);
 extern void operation_8c0fda3c(void);
 extern void operation_8c0fdb1c(void);
 extern void operation_8c0fdbe0(void);
-extern void operation_8c0fe828(void);
-extern void operation_8c0fe858(void);
-extern void operation_8c0fe9e4(void);
-extern void operation_8c0fd32c(void);
-extern void destroy_object_8c0fce4c(void);
+extern void TOMineTrap_v96_8c0fe828(void);
+extern void TOMineTrap_v97_8c0fe858(void);
+extern void TOMineTrap_v98_8c0fe9e4(void);
+extern void TOMine_v99_8c0fd32c(void);
+extern void TOMine_dtor_8c0fce4c(void);
 extern void operation_8c0fcff4(void);
 extern void operation_8c0fed80(void);
 extern void operation_8c0fed40(void);
@@ -131,35 +131,35 @@ extern void operation_8c0fed60(void);
 extern void operation_8c0fd740(void);
 extern void operation_8c0fd5f8(void);
 extern void operation_8c0fd64c(void);
-extern void operation_8c0fd8dc(void);
-extern void destroy_object_8c0fed94(void);
+extern void TOMine_v98_8c0fd8dc(void);
+extern void TOSignCave03_dtor_8c0fed94(void);
 extern void update_mode_8c0eea34(void);
-extern void fn_8c0feee8(void);
+extern void TOSignCave03_render_8c0feee8(void);
 extern void operation_8c0eeb8c(void);
 extern void operation_8c0104fc(void);
 extern void operation_8c051fd4(void);
 extern void operation_8c010508(void);
 extern void operation_8c010510(void);
 extern void operation_8c0eea78(void);
-extern void destroy_object_8c0ff1b0(void);
-extern void fn_8c0ff304(void);
-extern void destroy_object_8c0ff534(void);
-extern void fn_8c0ff688(void);
-extern void destroy_object_8c0ff8b8(void);
-extern void operation_8c0ffa10(void);
-extern void operation_8c0ffac0(void);
+extern void TOSignCave02_dtor_8c0ff1b0(void);
+extern void TOSignCave02_render_8c0ff304(void);
+extern void TOSignCave01_dtor_8c0ff534(void);
+extern void TOSignCave01_render_8c0ff688(void);
+extern void TOAirconCave01_dtor_8c0ff8b8(void);
+extern void TOAirconCave01_render_8c0ffa10(void);
+extern void TOAirconCave01_v15_8c0ffac0(void);
 extern void destroy_object_8c0ffac4(void);
 extern void operation_8c0ffd7c(void);
 extern void operation_8c0ffcb0(void);
 extern void operation_8c0ffdbc(void);
-extern void destroy_object_8c100c38(void);
-extern void operation_8c100c7c(void);
-extern void operation_8c100dcc(void);
+extern void TObjEnvSound_dtor_8c100c38(void);
+extern void TObjEnvSound_update_8c100c7c(void);
+extern void TObjEnvSound_render_shadow_8c100dcc(void);
 extern void reset_shared_object(void);
-extern void operation_8c100cf4(void);
-extern void destroy_view_effect_8c101548(void);
-extern void fn_8c101594(void);
-extern void fn_8c10165c(void);
+extern void TObjEnvSound_v09_8c100cf4(void);
+extern void TRaderMapCore_dtor_8c101548(void);
+extern void TRaderMapCore_update_8c101594(void);
+extern void TRaderMapCore_render_8c10165c(void);
 
 /* 8c26902c: type-information and this-adjustment header, then 14 slots */
 VirtualFunction const vt_8c26902c[16] = {
@@ -185,9 +185,9 @@ VirtualFunction const vt_8c26902c[16] = {
 VirtualFunction const vt_8c26906c[8] = {
     0,
     0,
-    destroy_object_8c0fc304,
-    fn_8c0fc348,
-    operation_8c0fc3c0,
+    TWindowLockOn_dtor_8c0fc304,
+    TWindowLockOn_update_8c0fc348,
+    TWindowLockOn_render_8c0fc3c0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c
@@ -206,8 +206,8 @@ VirtualFunction const vt_8c26908c[5] = {
 VirtualFunction const vt_8c2690a0[102] = {
     0,
     0,
-    operation_8c0fe190,
-    fn_8c0fe344,
+    TOMineTrap_dtor_8c0fe190,
+    TOMineTrap_update_8c0fe344,
     fn_8c0fcef4,
     operation_8c0fdc44,
     hierarchy_output,
@@ -219,7 +219,7 @@ VirtualFunction const vt_8c2690a0[102] = {
     word_operation_8c01345c,
     operation_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c0fec4c,
+    TOMineTrap_v13_8c0fec4c,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,
@@ -228,9 +228,9 @@ VirtualFunction const vt_8c2690a0[102] = {
     query_position_height,
     operation_8c04a4f4,
     operation_8c013474,
-    operation_8c0fed0c,
-    operation_8c0fed20,
-    operation_8c0fea90,
+    TOMineTrap_v22_8c0fed0c,
+    TOMineTrap_v23_8c0fed20,
+    TOMineTrap_v24_8c0fea90,
     operation_8c0fd6c8,
     operation_8c0fd718,
     operation_8c0fed34,
@@ -298,21 +298,21 @@ VirtualFunction const vt_8c2690a0[102] = {
     operation_8c0fd3cc,
     operation_8c0fd3dc,
     fn_8c0fd4b8,
-    operation_8c0fd95c,
+    TOMine_v92_8c0fd95c,
     operation_8c0fda3c,
     operation_8c0fdb1c,
     operation_8c0fdbe0,
-    operation_8c0fe828,
-    operation_8c0fe858,
-    operation_8c0fe9e4,
-    operation_8c0fd32c
+    TOMineTrap_v96_8c0fe828,
+    TOMineTrap_v97_8c0fe858,
+    TOMineTrap_v98_8c0fe9e4,
+    TOMine_v99_8c0fd32c
 };
 
 /* 8c269238: type-information and this-adjustment header, then 100 slots */
 VirtualFunction const vt_8c269238[102] = {
     0,
     0,
-    destroy_object_8c0fce4c,
+    TOMine_dtor_8c0fce4c,
     operation_8c0fcff4,
     fn_8c0fcef4,
     operation_8c0fdc44,
@@ -404,23 +404,23 @@ VirtualFunction const vt_8c269238[102] = {
     operation_8c0fd3cc,
     operation_8c0fd3dc,
     fn_8c0fd4b8,
-    operation_8c0fd95c,
+    TOMine_v92_8c0fd95c,
     operation_8c0fda3c,
     operation_8c0fdb1c,
     operation_8c0fdbe0,
     operation_8c0fd5f8,
     operation_8c0fd64c,
-    operation_8c0fd8dc,
-    operation_8c0fd32c
+    TOMine_v98_8c0fd8dc,
+    TOMine_v99_8c0fd32c
 };
 
 /* 8c2693d0: type-information and this-adjustment header, then 16 slots */
 VirtualFunction const vt_8c2693d0[18] = {
     0,
     0,
-    destroy_object_8c0fed94,
+    TOSignCave03_dtor_8c0fed94,
     update_mode_8c0eea34,
-    fn_8c0feee8,
+    TOSignCave03_render_8c0feee8,
     operation_8c0eeb8c,
     hierarchy_output,
     operation_8c0104fc,
@@ -440,9 +440,9 @@ VirtualFunction const vt_8c2693d0[18] = {
 VirtualFunction const vt_8c269418[18] = {
     0,
     0,
-    destroy_object_8c0ff1b0,
+    TOSignCave02_dtor_8c0ff1b0,
     update_mode_8c0eea34,
-    fn_8c0ff304,
+    TOSignCave02_render_8c0ff304,
     operation_8c0eeb8c,
     hierarchy_output,
     operation_8c0104fc,
@@ -462,9 +462,9 @@ VirtualFunction const vt_8c269418[18] = {
 VirtualFunction const vt_8c269460[18] = {
     0,
     0,
-    destroy_object_8c0ff534,
+    TOSignCave01_dtor_8c0ff534,
     update_mode_8c0eea34,
-    fn_8c0ff688,
+    TOSignCave01_render_8c0ff688,
     operation_8c0eeb8c,
     hierarchy_output,
     operation_8c0104fc,
@@ -484,9 +484,9 @@ VirtualFunction const vt_8c269460[18] = {
 VirtualFunction const vt_8c2694a8[18] = {
     0,
     0,
-    destroy_object_8c0ff8b8,
+    TOAirconCave01_dtor_8c0ff8b8,
     update_mode_8c0eea34,
-    operation_8c0ffa10,
+    TOAirconCave01_render_8c0ffa10,
     operation_8c0eeb8c,
     hierarchy_output,
     operation_8c0104fc,
@@ -499,7 +499,7 @@ VirtualFunction const vt_8c2694a8[18] = {
     fn_8c01d4c4,
     operation_8c010510,
     operation_8c0104f0,
-    operation_8c0ffac0
+    TOAirconCave01_v15_8c0ffac0
 };
 
 /* 8c2694f0: type-information and this-adjustment header, then 16 slots */
@@ -528,16 +528,16 @@ VirtualFunction const vt_8c2694f0[18] = {
 VirtualFunction const vt_8c269538[16] = {
     0,
     0,
-    destroy_object_8c100c38,
-    operation_8c100c7c,
+    TObjEnvSound_dtor_8c100c38,
+    TObjEnvSound_update_8c100c7c,
     TObject_render_default_8c0111c8,
-    operation_8c100dcc,
+    TObjEnvSound_render_shadow_8c100dcc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
     reset_shared_object,
     operation_8c010500,
-    operation_8c100cf4,
+    TObjEnvSound_v09_8c100cf4,
     operation_8c010508,
     operation_8c01d3b0,
     fn_8c01d4c4,
@@ -548,9 +548,9 @@ VirtualFunction const vt_8c269538[16] = {
 VirtualFunction const vt_8c269578[16] = {
     0,
     0,
-    destroy_view_effect_8c101548,
-    fn_8c101594,
-    fn_8c10165c,
+    TRaderMapCore_dtor_8c101548,
+    TRaderMapCore_update_8c101594,
+    TRaderMapCore_render_8c10165c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,

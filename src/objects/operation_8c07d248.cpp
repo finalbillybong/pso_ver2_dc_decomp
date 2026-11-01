@@ -48,7 +48,7 @@ extern "C" void call_8c07f9b0(Object *);
 extern "C" void operation_8c07dac0(void *, int);
 extern "C" int get_current_area_8c032b10(void);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
-extern "C" void operation_8c07d248(Object *o)
+extern "C" void TItemMag_v42_8c07d248(Object *o)
 {
     int v1;
     int v42;

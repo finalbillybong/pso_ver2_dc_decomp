@@ -41,7 +41,7 @@ struct S_vv13 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c189af8(Object *o, int a1)
+Object *TNowLoading_dtor_8c189af8(Object *o, int a1)
 {
     S_vv1 *v1;
     S_vv5 *v5;

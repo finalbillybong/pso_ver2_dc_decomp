@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c185d2c(void)
+void TBoss2LaserLight_render_8c185d2c(void)
 {
 }

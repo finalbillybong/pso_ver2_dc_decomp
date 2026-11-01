@@ -37,7 +37,7 @@ struct S_x57968 {
 extern int call_8c25fd44(int, int, S_vv3 *);
 extern int operation_8c25fec4(void);
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c17242c(int a0)
+void quest_op_check_for_hacking_8c17242c(int a0)
 {
     int v1;
     int v2;

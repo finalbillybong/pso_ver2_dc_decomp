@@ -16,7 +16,7 @@ struct S_c8c122700 {
 };
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void TObject_ctor_8c0330e4(void *, void *);
-S_c8c122700 *operation_8c099cb0(int a0)
+S_c8c122700 *TObject_create_8c099cb0(int a0)
 {
     S_c8c122700 *t1;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);

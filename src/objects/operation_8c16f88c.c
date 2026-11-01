@@ -14,7 +14,7 @@ struct Frame {
 };
 extern int g_8c44be04;
 extern void operation_8c0368a8(void *);
-void operation_8c16f88c(int a0)
+void quest_op_setevt_8c16f88c(int a0)
 {
     Frame frame;
     (&frame)->f00 = 0x67;

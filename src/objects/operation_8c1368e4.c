@@ -10,7 +10,7 @@ struct Object {
 };
 extern char g_8c312e90[];
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c1368e4(Object *o)
+void TObjFogCollision_v15_8c1368e4(Object *o)
 {
     debug_print_at_8c38cf80(0x13001a, (void *)((g_8c312e90 + 0x58)));
     debug_print_at_8c38cf80(0x13001e, (void *)((g_8c312e90 + 0x5c)));

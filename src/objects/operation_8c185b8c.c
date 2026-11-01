@@ -15,7 +15,7 @@ struct Object {
 extern void call_8c014d64(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c185b8c(Object *o, int a1)
+Object *TBoss2LaserLight_dtor_8c185b8c(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c272090;

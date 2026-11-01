@@ -50,7 +50,7 @@ extern int operation_8c034c7c(void *);
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void operation_8c13f8e0(void *);
-void operation_8c140350(Object *o)
+void TObjCMLoadAfsTextureReq_ctor_2_8c140350(Object *o)
 {
     int t3;
     S_c8c122700 *t4;

@@ -8,7 +8,7 @@ typedef struct Manager {
 typedef char check_layout[sizeof(Manager) == 32 && (unsigned long)&((Manager *)0)->dispatch == 24 && (unsigned long)&((Manager *)0)->size == 30 ? 1 : -1];
 extern void *object_name;
 extern void TObject_ctor_8c0330e4(Manager *, void *parent);
-Manager *initialize_manager_8c03bfdc(Manager *o, void *parent) {
+Manager *TForceOperate_ctor_8c03bfdc(Manager *o, void *parent) {
     TObject_ctor_8c0330e4(o, parent);
     o->dispatch = (void *)0x8c2618d4;
     o->name = object_name;

@@ -20,7 +20,7 @@ extern void operation_192c08(void *);
 extern void call_8c1d61e4(Object *);
 extern void call_8c0db30c(Object *);
 extern void update_view_nodes(void *, void *);
-void operation_8c1d5c38(Object *o)
+void TWindowHelpItem_update_8c1d5c38(Object *o)
 {
     int v4;
     unsigned char v3;

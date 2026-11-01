@@ -44,7 +44,7 @@ struct Frame {
 extern int operation_8c220ce0(void);
 extern int operation_8c19fb18(int);
 extern void operation_8c1cdc94(void *);
-extern void call_8c19fbe0(void *, int, int, int);
+extern void TOHealGeneral_ctor_8c19fbe0(void *, int, int, int);
 extern void call_8c1cdc30(void *);
 extern int call_8c1196d4(void *, Frame *, int);
 extern void operation_8c119764(int, int, int);
@@ -79,7 +79,7 @@ void operation_8c21d3ec(Object *o)
             v5 = (int)0;
             v6 = (int)/* ? clobbered */ 0;
 L_8c21d442:;
-            call_8c19fbe0((void *)(o->f44), 0x17, (int)(v6 + v5 * 0x98 + 0xc), v5);
+            TOHealGeneral_ctor_8c19fbe0((void *)(o->f44), 0x17, (int)(v6 + v5 * 0x98 + 0xc), v5);
             v9 = (int)(v5 + 1);
 L_8c21d45e:;
             v5 = (int)v9;

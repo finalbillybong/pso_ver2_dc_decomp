@@ -19,7 +19,7 @@ struct Object {
 };
 extern void call_8c075398(Object *);
 extern int call_8c087b0c(int);
-Object *operation_8c23d30c(Object *o)
+Object *TItemWpnFreezeBeam_ctor_8c23d30c(Object *o)
 {
     Object **home = &o;
     int t1;

@@ -3,7 +3,7 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c17063c(int a0)
+void quest_op_ba_enemy_give_damage_score_8c17063c(int a0)
 {
     char *v1;
     float v3;

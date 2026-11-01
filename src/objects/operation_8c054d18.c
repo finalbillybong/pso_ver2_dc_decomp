@@ -21,7 +21,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_8c052124(void *);
 extern void destroy_color_rise_8c05bd84(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c054d18(Object *o, int a1)
+Object *TObjEneBm3Fly_dtor_8c054d18(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

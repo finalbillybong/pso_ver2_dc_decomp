@@ -39,9 +39,9 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern float normalize_vector_checked(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c0d0360(int, void *, void *, Frame *, float);
+extern void TTecZondeEff_ctor_1_8c0d0360(int, void *, void *, Frame *, float);
 extern void operation_8c0911f4(void *, int);
-void operation_8c0cb824(Object *o)
+void TObjEneMe1Canadin_EffDischarge_update_8c0cb824(Object *o)
 {
     Frame frame;
     int v1;
@@ -68,7 +68,7 @@ void operation_8c0cb824(Object *o)
     t2 = normalize_vector_checked((void *)(&frame));
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x298);
     if (t1 != 0) {
-        call_8c0d0360(t1, g_8c44be98, (void *)(&o->f3c), (Frame *)((&frame)), t2);
+        TTecZondeEff_ctor_1_8c0d0360(t1, g_8c44be98, (void *)(&o->f3c), (Frame *)((&frame)), t2);
     }
     *(Vector3 *)&o->f3c = *(Vector3 *)&o->f54;
     if (v1 != 0) {

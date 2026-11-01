@@ -18,7 +18,7 @@ struct Arg0_13c {
     int f04;
 };
 extern void call_8c0889f0(Object *);
-void operation_8c1578e8(Object *o)
+void TObjMapWarpAncient_update_8c1578e8(Object *o)
 {
     float v3;
     if (o->f8c >= 0) {

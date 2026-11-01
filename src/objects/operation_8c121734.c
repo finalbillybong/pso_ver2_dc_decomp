@@ -27,7 +27,7 @@ extern void call_8c1224c8(Pose *, float *);
 extern void operation_8c121a90(int, int);
 extern float *operation_8c12213c(Pose *);
 extern void operation_8c122164(int);
-void operation_8c121734(void)
+void TFogCtrl_update_8c121734(void)
 {
     int flag;
     Pose *p;

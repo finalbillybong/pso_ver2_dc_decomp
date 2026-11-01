@@ -17,7 +17,7 @@ struct Object {
     char unknown3b8[0x2];
     short f3ba;
 };
-void operation_8c04e000(Object *o, int a1, int a2)
+void TObjGrass_v68_8c04e000(Object *o, int a1, int a2)
 {
     int v3;
     if (o->f3ba != 0) {

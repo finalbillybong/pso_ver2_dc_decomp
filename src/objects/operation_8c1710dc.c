@@ -11,7 +11,7 @@ struct S_c8c021ef8 {
     int f818;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c1710dc(int a0, int a1)
+void quest_op_get_gender_8c1710dc(int a0, int a1)
 {
     S_c8c021ef8 *t1;
     t1 = lookup_low_id((int)(*(S_g8c4db408_0 **)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + ((unsigned char)a0 << 2))));

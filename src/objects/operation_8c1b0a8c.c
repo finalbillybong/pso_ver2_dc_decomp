@@ -12,7 +12,7 @@ struct Object {
     char unknown24[0xc];
     float f30;
 };
-void operation_8c1b0a8c(Object *o)
+void TObjBoss2Dust_update_8c1b0a8c(Object *o)
 {
     o->f30 -= *(float *)0x8c286260;
     o->f20 += 1;

@@ -60,7 +60,7 @@ public:
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" void operation_8c254278(Object *o)
+extern "C" void TItemWpnUnknownMachineGun_v49_8c254278(Object *o)
 {
     int t1;
     t1 = o->v48(((char *)o + 0x234), 0, 0, 1);

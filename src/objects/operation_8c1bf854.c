@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern void call_8c1bf87c(int, int);
-void operation_8c1bf854(int a0)
+void TOCakeshopCave01_update_8c1bf854(int a0)
 {
     int v1;
     v1 = (int)0;

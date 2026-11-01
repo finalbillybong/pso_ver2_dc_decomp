@@ -16,7 +16,7 @@ struct S_L8c41cba0 {
 };
 extern S_L8c41cba0 g_8c41cba0;
 extern int target_in_radius_8c113490(void *);
-int operation_8c113440(Object *o)
+int TOKey_v16_8c113440(Object *o)
 {
     int t1;
     if (o->f108 == 2) {

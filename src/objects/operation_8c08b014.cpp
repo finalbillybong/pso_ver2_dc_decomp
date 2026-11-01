@@ -35,7 +35,7 @@ extern "C" int operation_8c0e9ab8(void);
 extern "C" int operation_8c01d8a8(void *, int);
 extern "C" void operation_8c01c244(int);
 extern "C" void call_8c355d04(void);
-extern "C" void operation_8c08b014(Object *o)
+extern "C" void TMovie_update_8c08b014(Object *o)
 {
     int v3;
     char *p;

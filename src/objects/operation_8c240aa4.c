@@ -14,7 +14,7 @@ struct Object {
     int f1fc;
 };
 extern void call_8c075398(void);
-Object *operation_8c240aa4(Object *o)
+Object *TItemWpnTwinGun_ctor_8c240aa4(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c27c77c;

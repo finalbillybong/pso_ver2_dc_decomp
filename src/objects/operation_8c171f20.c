@@ -20,7 +20,7 @@ struct Frame {
 extern int g_8c4db408;
 extern void initialize_resource_record(void *);
 extern void TOChatSensor_create_8c25d8b8(int);
-void operation_8c171f20(int a0)
+void quest_op_set_chat_callback_no_filter_8c171f20(int a0)
 {
     Frame frame;
     char *v1;

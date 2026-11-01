@@ -23,7 +23,7 @@ struct S_g8c469e10_42c {
     int f1c;
 };
 extern S_g8c469e10 *g_8c469e10;
-void operation_8c090cac(Object *o)
+void TObjEneMe1Canadin_v111_8c090cac(Object *o)
 {
     o->f38 = (int)(g_8c469e10->f42c->f08);
     o->f28 = (int)(g_8c469e10->f42c->f1c);

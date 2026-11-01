@@ -34,7 +34,7 @@ struct PmfObj {
 typedef void (PmfObj::*PMF_0)();
 extern "C" char g_8c316c90[];
 extern "C" S_c8c1794c8 *record30_8c1794c8(int);
-extern "C" void create_effect_b03c8_8c0b9444(void *, void *, void *);
+extern "C" void TTecResta_create_8c0b9444(void *, void *, void *);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" int call_8c18e6fc(Frame *);
 extern "C" void operation_8c161310(Object *o)
@@ -56,7 +56,7 @@ extern "C" void operation_8c161310(Object *o)
         } else {
             v5 = (int)t1->f18;
         }
-        create_effect_b03c8_8c0b9444((void *)o, (void *)(((char *)o + 0x3c)), (void *)v5);
+        TTecResta_create_8c0b9444((void *)o, (void *)(((char *)o + 0x3c)), (void *)v5);
         play_se_8c05fbf8(0x30031, (void *)(((char *)o + 0x3c)), 0, 0);
     }
     if (((o->fe8 & 0x10)) != 0) {

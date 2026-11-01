@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c1b3a18(void);
-extern void operation_8c1b3b48(void);
-extern void refresh_follow_effect_8c1b3c60(void);
+extern void TBoss4Type1_dtor_8c1b3a18(void);
+extern void TBoss4Type1_update_8c1b3b48(void);
+extern void TBoss4Type1_render_8c1b3c60(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -55,13 +55,13 @@ extern void operation_45a8c(void);
 extern void operation_45b8c(void);
 extern void operation_45d6c(void);
 extern void operation_8c045484(void);
-extern void operation_8c1b6610(void);
-extern void operation_8c1b6614(void);
-extern void operation_8c1b6618(void);
-extern void operation_8c1b661c(void);
-extern void operation_8c1b6620(void);
-extern void operation_8c1b6624(void);
-extern void operation_8c1b6628(void);
+extern void TBoss4Type1_v53_8c1b6610(void);
+extern void TBoss4Type1_v54_8c1b6614(void);
+extern void TBoss4Type1_v55_8c1b6618(void);
+extern void TBoss4Type1_v56_8c1b661c(void);
+extern void TBoss4Type1_v57_8c1b6620(void);
+extern void TBoss4Type1_v58_8c1b6624(void);
+extern void TBoss4Type1_v59_8c1b6628(void);
 extern void fn_8c046f2c(void);
 extern void fn_8c047090(void);
 extern void operation_8c0471b4(void);
@@ -72,8 +72,8 @@ extern void operation_8c013408(void);
 extern void operation_8c01340c(void);
 extern void operation_8c013410(void);
 extern void operation_8c013414(void);
-extern void operation_8c1b3af8(void);
-extern void operation_8c1b3b24(void);
+extern void TBoss4Type1_v70_8c1b3af8(void);
+extern void TBoss4Type1_v71_8c1b3b24(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
 extern void operation_8c0134b0(void);
@@ -96,9 +96,9 @@ extern void fn_8c012aa8(void);
 VirtualFunction const vt_8c274da4[91] = {
     0,
     0,
-    operation_8c1b3a18,
-    operation_8c1b3b48,
-    refresh_follow_effect_8c1b3c60,
+    TBoss4Type1_dtor_8c1b3a18,
+    TBoss4Type1_update_8c1b3b48,
+    TBoss4Type1_render_8c1b3c60,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -149,13 +149,13 @@ VirtualFunction const vt_8c274da4[91] = {
     operation_45b8c,
     operation_45d6c,
     operation_8c045484,
-    operation_8c1b6610,
-    operation_8c1b6614,
-    operation_8c1b6618,
-    operation_8c1b661c,
-    operation_8c1b6620,
-    operation_8c1b6624,
-    operation_8c1b6628,
+    TBoss4Type1_v53_8c1b6610,
+    TBoss4Type1_v54_8c1b6614,
+    TBoss4Type1_v55_8c1b6618,
+    TBoss4Type1_v56_8c1b661c,
+    TBoss4Type1_v57_8c1b6620,
+    TBoss4Type1_v58_8c1b6624,
+    TBoss4Type1_v59_8c1b6628,
     fn_8c046f2c,
     fn_8c047090,
     operation_8c0471b4,
@@ -166,8 +166,8 @@ VirtualFunction const vt_8c274da4[91] = {
     operation_8c01340c,
     operation_8c013410,
     operation_8c013414,
-    operation_8c1b3af8,
-    operation_8c1b3b24,
+    TBoss4Type1_v70_8c1b3af8,
+    TBoss4Type1_v71_8c1b3b24,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,

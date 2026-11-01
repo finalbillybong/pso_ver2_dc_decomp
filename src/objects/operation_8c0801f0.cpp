@@ -41,7 +41,7 @@ extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3827d8(void *);
 extern "C" void call_8c3a944a(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c0801f0(Object *o)
+extern "C" void TObjTank_render_8c0801f0(Object *o)
 {
     int t1;
     t1 = o->v11(400.0f, 20.0f);

@@ -28,7 +28,7 @@ extern float g_8c286260;
 extern int g_8c319a50;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c12b944(void);
-Object *operation_8c1858c4(Object *o, int a1, Arg2 *a2, Arg3 *a3, int a4)
+Object *TObjBoss2RaftSplash_ctor_8c1858c4(Object *o, int a1, Arg2 *a2, Arg3 *a3, int a4)
 {
     Object **home = &o;
     int t1;

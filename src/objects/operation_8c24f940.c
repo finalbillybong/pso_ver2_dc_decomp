@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern void translate_current_matrix_v_8c382a40(int);
-void operation_8c24f940(int a0)
+void TItemWpnYasuShotGun_v57_8c24f940(int a0)
 {
     if (*(int *)0x8c4689f0 == 1) {
         translate_current_matrix_v_8c382a40((int)(a0 + 0x238));

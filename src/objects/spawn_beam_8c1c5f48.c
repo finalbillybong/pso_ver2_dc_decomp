@@ -21,8 +21,8 @@ typedef struct Beam {
 } Beam;
 extern void *heap_alloc_8c122700(void *, int);
 extern void TObject_ctor_8c0330e4(Beam *, void *);
-extern void attach_task_8c1ab01c(void *, Beam *, void *, int);
-void spawn_beam_8c1c5f48(void *parent, Owner *owner, Vector3 *start, Vector3 *end, int priority)
+extern void TItemTimer_ctor_8c1ab01c(void *, Beam *, void *, int);
+void TItemEffLandHit_ctor_8c1c5f48(void *parent, Owner *owner, Vector3 *start, Vector3 *end, int priority)
 {
     Beam *beam;
     void *task;
@@ -42,7 +42,7 @@ void spawn_beam_8c1c5f48(void *parent, Owner *owner, Vector3 *start, Vector3 *en
         if (beam) {
             task = heap_alloc_8c122700(*(void **)0x8c4d97e0, 0x2c);
             if (task) {
-                attach_task_8c1ab01c(task, beam, (void *)0x8c1c6010, priority);
+                TItemTimer_ctor_8c1ab01c(task, beam, (void *)0x8c1c6010, priority);
             }
         }
     }

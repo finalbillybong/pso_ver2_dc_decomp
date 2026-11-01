@@ -17,8 +17,8 @@ extern int g_8c306e18;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_position_controller(void *, void *);
-void operation_8c0d0268(void)
+extern void TEditor_ctor_8c03c92c(void *, void *);
+void TFreeCamera_ctor_8c0d0268(void)
 {
     S_c8c122700 *t1;
     /* TODO 00000000..00000000
@@ -26,7 +26,7 @@ void operation_8c0d0268(void)
      */
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x3c);
     if (t1 != 0) {
-        initialize_position_controller((void *)t1, g_8c44be98);
+        TEditor_ctor_8c03c92c((void *)t1, g_8c44be98);
         t1->f18 = (void *)0x8c266ec4;
         t1->f00 = (int)(g_8c306e18);
         t1->f1e = 0x3c;

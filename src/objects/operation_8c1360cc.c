@@ -12,7 +12,7 @@ struct Object {
     char unknown0[0x108];
     int f108;
 };
-void operation_8c1360cc(Object *o, Arg1 *a1)
+void TODoorAncient09_v05_8c1360cc(Object *o, Arg1 *a1)
 {
     if (a1->f00 == 1) {
         o->f108 |= 1;

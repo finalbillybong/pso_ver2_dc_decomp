@@ -76,7 +76,7 @@ extern int g_8c4e2bf4;
 extern S_L8c4e2be4 g_8c4e2be4;
 extern S_c8c011ecc *game_malloc_8c011ecc(int);
 extern void call_8c03d610(S_c8c011ecc *, int, void *, int, int, int);
-void operation_8c1bf274(void)
+void load_assets_fs_obj_kenkyu_com_8c1bf274(void)
 {
     S_c8c011ecc *t1;
     t1 = game_malloc_8c011ecc(0x440);

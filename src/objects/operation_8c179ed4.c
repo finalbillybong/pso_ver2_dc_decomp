@@ -14,7 +14,7 @@ struct Object {
     short f142;
 };
 extern void call_8c075730(Object *, void *, int);
-void operation_8c179ed4(Object *o)
+void TItemWpnHand_v52_8c179ed4(Object *o)
 {
     if (o->f138 == 3) {
         *(int *)0x8c4db980 = 0;

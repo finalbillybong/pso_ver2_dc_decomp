@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c1044b4(void)
+void TObjEneDf2Bringer_Eff_TpAbsorb1_render_8c1044b4(void)
 {
 }

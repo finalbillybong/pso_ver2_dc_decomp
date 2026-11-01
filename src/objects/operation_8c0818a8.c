@@ -9,7 +9,7 @@ struct Object {
     float f6c;
     float f70;
 };
-void operation_8c0818a8(Object *o)
+void TKomorebi_update_8c0818a8(Object *o)
 {
     o->f70 += o->f6c;
 }

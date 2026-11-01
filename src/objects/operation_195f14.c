@@ -3,7 +3,7 @@
 #define TObject_ctor_8c0330e4 ((void (*)(WidgetPanelController *,void *))0x8c0330e4)
 #define heap_alloc_8c122700 ((WidgetPanelController *(*)(void *,int))0x8c122700)
 #define setup_at ((void (*)(WidgetPanelController *))0x8c0c532c)
-#define finish_at ((void (*)(WidgetPanelController *))0x8c196dc8)
+#define TObjBGLifeGame_ctor_8c196dc8 ((void (*)(WidgetPanelController *))0x8c196dc8)
 #define states ((WidgetPanelState *)0x8c4dc360)
 static inline void reset(void){
     WidgetPanelState *state=states;
@@ -25,7 +25,7 @@ static inline void select(int count,int *indices){
     i<count;
     i++)states[*(int *)((char *)indices+(i<<2))].mode=0;
 }
-void operation_195f14(WidgetPanelController *o){
+void TObjCMSprCharSelBG_update_8c195f14(WidgetPanelController *o){
     o->current=*(int *)0x8c469e40;
     if((o->current-=2)<0)o->current+=9;
     if(o->previous==o->current){

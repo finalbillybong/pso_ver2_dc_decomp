@@ -36,8 +36,8 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern S_c8c0744dc *find_record_8c0744dc(int);
 extern int operation_8c075894(void *, void *, int, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c245d6c(int, void *, void *, Object *);
-Object *operation_8c23ba2c(Object *o, int a1, int a2, int a3)
+extern void TEffStarLight2D_ctor_8c245d6c(int, void *, void *, Object *);
+Object *TItemEffDevilCane_ctor_8c23ba2c(Object *o, int a1, int a2, int a3)
 {
     Frame frame;
     Object **home = &o;
@@ -59,7 +59,7 @@ Object *operation_8c23ba2c(Object *o, int a1, int a2, int a3)
             *(Block20 *)&(&frame)->f04 = *(Block20 *)&*(Block20 *)0x8c33a4f8;
             t3 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x50);
             if (t3 != 0) {
-                call_8c245d6c(t3, (void *)(&(&frame)->f18), (void *)(&(&frame)->f04), o);
+                TEffStarLight2D_ctor_8c245d6c(t3, (void *)(&(&frame)->f18), (void *)(&(&frame)->f04), o);
             }
             o->f28 = (int)(t3);
         }

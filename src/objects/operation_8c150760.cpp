@@ -109,7 +109,7 @@ extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c1508b8(void *);
 extern "C" void call_8c027090(Object *);
 extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
-extern "C" void operation_8c150760(Object *o)
+extern "C" void TBoss3VoloptHiraisin_update_8c150760(Object *o)
 {
     int t1;
     int t2;

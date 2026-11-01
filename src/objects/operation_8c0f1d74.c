@@ -19,7 +19,7 @@ extern int call_8c17796c(int);
 extern void set_effect_bit0(void *);
 extern void call_8c027090(void);
 extern void call_8c05fd7c(void *, Object *, void *, int, int);
-void operation_8c0f1d74(Object *o)
+void TOMonumentAncient02_update_8c0f1d74(Object *o)
 {
     int t1;
     if (o->fe4 != 1) {

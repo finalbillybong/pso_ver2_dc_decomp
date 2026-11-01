@@ -23,7 +23,7 @@ extern char g_8c46ed50;
 extern S_L8c301fc4 g_8c301fc4;
 extern "C" char gc_8c301fc4[];
 extern "C" void operation_8c09d7ac(Object *);
-extern "C" void operation_8c09d740(Object *o)
+extern "C" void TSetManager_update_8c09d740(Object *o)
 {
     if (g_8c46ed50 == 0) {
         *(Vector3 *)&*(Vector3 *)(gc_8c301fc4 + 0x0) = *(Vector3 *)&g_8c301fac;

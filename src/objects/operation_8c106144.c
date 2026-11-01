@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x24];
     int f24;
 };
-extern void operation_8c1065dc(void *);
+extern void TShopSequence_v06_8c1065dc(void *);
 extern void start_positioned_view_8c106208(void *);
 extern void call_8c10629c(Object *);
 extern void operation_8c10639c(void *);
@@ -16,11 +16,11 @@ extern void create_callback_dialog(void *);
 extern void operation_8c1064c0(Object *);
 extern void operation_8c106470(void *);
 extern void operation_8c1064c4(void *);
-void operation_8c106144(Object *o)
+void TShopEquipmentSequence_v05_8c106144(Object *o)
 {
     switch (o->f24) {
     case 0:
-        operation_8c1065dc((void *)o);
+        TShopSequence_v06_8c1065dc((void *)o);
         o->f24 = 1;
         return;
     case 1:

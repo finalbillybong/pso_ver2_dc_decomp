@@ -24,7 +24,7 @@ extern "C" void strncpy_8c12b154(Frame *, int, int);
 extern "C" void call_8c032b70(Frame *);
 extern "C" void call_8c032d18(S_c8c122700 *, Frame *);
 extern "C" void call_8c247fd4(void *, void *, int);
-extern "C" void operation_8c170f38(int a0, int a1)
+extern "C" void quest_op_set_cmode_rank_override_8c170f38(int a0, int a1)
 {
     Frame frame;
     S_c8c122700 *t1;

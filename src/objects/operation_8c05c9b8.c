@@ -7,7 +7,7 @@ typedef struct S_g8c4679a4 S_g8c4679a4;
 extern S_g8c4679a4 *g_8c4679a4;
 extern void operation_8c05f2dc(void);
 extern void call_8c03dc40(void *, int);
-void operation_8c05c9b8(void)
+void release_assets_ene_re2_flower_8c05c9b8(void)
 {
     operation_8c05f2dc();
     if (g_8c4679a4 != 0) {

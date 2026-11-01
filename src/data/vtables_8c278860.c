@@ -2,16 +2,16 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c2206ac(void);
-extern void fn_8c2206f0(void);
+extern void TObjWarpBoss03_dtor_8c2206ac(void);
+extern void TObjWarpBoss03_update_8c2206f0(void);
 extern void TObject_render_default_8c0111c8(void);
-extern void fn_8c22071c(void);
+extern void TObjWarpBoss03_render_shadow_8c22071c(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void operation_8c051fd4(void);
 extern void operation_8c010500(void);
-extern void refresh_follow_effect_8c2206fc(void);
+extern void TObjWarpBoss03_v09_8c2206fc(void);
 extern void operation_8c010508(void);
 extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
@@ -27,16 +27,16 @@ extern void operation_8c089240(void);
 VirtualFunction const vt_8c278860[22] = {
     0,
     0,
-    destroy_object_8c2206ac,
-    fn_8c2206f0,
+    TObjWarpBoss03_dtor_8c2206ac,
+    TObjWarpBoss03_update_8c2206f0,
     TObject_render_default_8c0111c8,
-    fn_8c22071c,
+    TObjWarpBoss03_render_shadow_8c22071c,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
     operation_8c051fd4,
     operation_8c010500,
-    refresh_follow_effect_8c2206fc,
+    TObjWarpBoss03_v09_8c2206fc,
     operation_8c010508,
     operation_8c01d3b0,
     fn_8c01d4c4,

@@ -15,7 +15,7 @@ struct Object {
 };
 extern void call_8c24cadc(Object *, int);
 extern void create_effect_777c(void *, int);
-float operation_8c24ce00(Object *o, Arg1 *a1)
+float TOVS2Wall01_v25_8c24ce00(Object *o, Arg1 *a1)
 {
     if (a1 != 0 && *(int *)0x8c418248 == a1->f20) {
         *(int *)((char *)o + 0x358) -= 1;

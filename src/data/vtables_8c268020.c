@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c0ed9d4(void);
-extern void fn_8c0eda24(void);
-extern void operation_8c0edfcc(void);
+extern void TObjLight_dtor_8c0ed9d4(void);
+extern void TObjLight_update_8c0eda24(void);
+extern void TObjLight_render_8c0edfcc(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -16,9 +16,9 @@ extern void operation_8c010508(void);
 extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
-extern void destroy_object_8c0ee430(void);
-extern void operation_8c0ee608(void);
-extern void fn_8c0ee670(void);
+extern void TFontSmallTask_dtor_8c0ee430(void);
+extern void TFontSmallTask_update_8c0ee608(void);
+extern void TFontSmallTask_render_8c0ee670(void);
 extern void destroy_object_8c0ee900(void);
 extern void update_mode_8c0eea34(void);
 extern void operation_8c0ee944(void);
@@ -35,18 +35,18 @@ extern void operation_8c0eef00(void);
 extern void operation_8c0eefc0(void);
 extern void operation_8c0ef0d8(void);
 extern void operation_8c0ef190(void);
-extern void operation_8c0ef2c8(void);
-extern void operation_8c0ef514(void);
-extern void operation_8c0ef71c(void);
-extern void operation_8c0ef718(void);
-extern void operation_8c0ef658(void);
-extern void operation_8c0ef6b8(void);
-extern void operation_8c0ef720(void);
-extern void operation_8c0ef96c(void);
-extern void operation_8c0efb74(void);
-extern void operation_8c0efb70(void);
-extern void operation_8c0efab0(void);
-extern void operation_8c0efb10(void);
+extern void TODoorAncient01_dtor_8c0ef2c8(void);
+extern void TODoorAncient01_render_8c0ef514(void);
+extern void TODoorAncient01_render_shadow_8c0ef71c(void);
+extern void TODoorAncient01_v15_8c0ef718(void);
+extern void TODoorAncient01_v17_8c0ef658(void);
+extern void TODoorAncient01_v19_8c0ef6b8(void);
+extern void TODoorAncient03_dtor_8c0ef720(void);
+extern void TODoorAncient03_render_8c0ef96c(void);
+extern void TODoorAncient03_render_shadow_8c0efb74(void);
+extern void TODoorAncient03_v15_8c0efb70(void);
+extern void TODoorAncient03_v17_8c0efab0(void);
+extern void TODoorAncient03_v19_8c0efb10(void);
 extern void operation_8c0efb78(void);
 extern void operation_8c0efdc4(void);
 extern void operation_8c0effcc(void);
@@ -58,9 +58,9 @@ extern void operation_8c0eff68(void);
 VirtualFunction const vt_8c268020[16] = {
     0,
     0,
-    operation_8c0ed9d4,
-    fn_8c0eda24,
-    operation_8c0edfcc,
+    TObjLight_dtor_8c0ed9d4,
+    TObjLight_update_8c0eda24,
+    TObjLight_render_8c0edfcc,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -78,9 +78,9 @@ VirtualFunction const vt_8c268020[16] = {
 VirtualFunction const vt_8c268060[7] = {
     0,
     0,
-    destroy_object_8c0ee430,
-    operation_8c0ee608,
-    fn_8c0ee670,
+    TFontSmallTask_dtor_8c0ee430,
+    TFontSmallTask_update_8c0ee608,
+    TFontSmallTask_render_8c0ee670,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -139,10 +139,10 @@ VirtualFunction const vt_8c2680c4[24] = {
 VirtualFunction const vt_8c268124[24] = {
     0,
     0,
-    operation_8c0ef2c8,
+    TODoorAncient01_dtor_8c0ef2c8,
     operation_8c0eec28,
-    operation_8c0ef514,
-    operation_8c0ef71c,
+    TODoorAncient01_render_8c0ef514,
+    TODoorAncient01_render_shadow_8c0ef71c,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -154,11 +154,11 @@ VirtualFunction const vt_8c268124[24] = {
     fn_8c01d4c4,
     operation_8c010510,
     operation_8c0104f0,
-    operation_8c0ef718,
+    TODoorAncient01_v15_8c0ef718,
     operation_8c0eed3c,
-    operation_8c0ef658,
+    TODoorAncient01_v17_8c0ef658,
     operation_8c0eef00,
-    operation_8c0ef6b8,
+    TODoorAncient01_v19_8c0ef6b8,
     operation_8c0ef0d8,
     operation_8c0ef190
 };
@@ -167,10 +167,10 @@ VirtualFunction const vt_8c268124[24] = {
 VirtualFunction const vt_8c268184[24] = {
     0,
     0,
-    operation_8c0ef720,
+    TODoorAncient03_dtor_8c0ef720,
     operation_8c0eec28,
-    operation_8c0ef96c,
-    operation_8c0efb74,
+    TODoorAncient03_render_8c0ef96c,
+    TODoorAncient03_render_shadow_8c0efb74,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
@@ -182,11 +182,11 @@ VirtualFunction const vt_8c268184[24] = {
     fn_8c01d4c4,
     operation_8c010510,
     operation_8c0104f0,
-    operation_8c0efb70,
+    TODoorAncient03_v15_8c0efb70,
     operation_8c0eed3c,
-    operation_8c0efab0,
+    TODoorAncient03_v17_8c0efab0,
     operation_8c0eef00,
-    operation_8c0efb10,
+    TODoorAncient03_v19_8c0efb10,
     operation_8c0ef0d8,
     operation_8c0ef190
 };

@@ -8,10 +8,10 @@ extern void finalize_view_8c0db2cc(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void fn_8c1192e8(void);
-extern void destroy_effect_d870_8c11953c(void);
-extern void update_pair_grid_view(void);
-extern void finalize_pair_grid_view(void);
-extern void operation_8c11a5d8(void);
+extern void TWindowMessage_dtor_8c11953c(void);
+extern void TWindowMessage_update_8c119598(void);
+extern void TWindowMessage_render_8c119600(void);
+extern void TObjHashiVersus2_dtor_8c11a5d8(void);
 extern void fn_8c119e6c(void);
 extern void draw_rising_grid_view(void);
 extern void draw_grid_view_records(void);
@@ -19,7 +19,7 @@ extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void operation_8c051fd4(void);
 extern void operation_8c010500(void);
-extern void operation_8c11a63c(void);
+extern void TObjHashiVersus2_v09_8c11a63c(void);
 extern void operation_8c010508(void);
 extern void grid_view_visible(void);
 extern void fn_8c01d4c4(void);
@@ -30,7 +30,7 @@ extern void operation_8c11a3b0(void);
 extern void operation_8c11a414(void);
 extern void operation_8c11a240(void);
 extern void operation_8c11a1f0(void);
-extern void destroy_object_8c119e28(void);
+extern void TObjHashiBase_dtor_8c119e28(void);
 
 /* 8c269efc: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const vt_8c269efc[8] = {
@@ -48,9 +48,9 @@ VirtualFunction const vt_8c269efc[8] = {
 VirtualFunction const vt_8c269f1c[8] = {
     0,
     0,
-    destroy_effect_d870_8c11953c,
-    update_pair_grid_view,
-    finalize_pair_grid_view,
+    TWindowMessage_dtor_8c11953c,
+    TWindowMessage_update_8c119598,
+    TWindowMessage_render_8c119600,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     fn_8c1192e8
@@ -60,7 +60,7 @@ VirtualFunction const vt_8c269f1c[8] = {
 VirtualFunction const vt_8c269f3c[18] = {
     0,
     0,
-    operation_8c11a5d8,
+    TObjHashiVersus2_dtor_8c11a5d8,
     fn_8c119e6c,
     draw_rising_grid_view,
     draw_grid_view_records,
@@ -69,7 +69,7 @@ VirtualFunction const vt_8c269f3c[18] = {
     fn_8c01d694,
     operation_8c051fd4,
     operation_8c010500,
-    operation_8c11a63c,
+    TObjHashiVersus2_v09_8c11a63c,
     operation_8c010508,
     grid_view_visible,
     fn_8c01d4c4,
@@ -126,7 +126,7 @@ VirtualFunction const vt_8c269fcc[18] = {
 VirtualFunction const vt_8c26a014[18] = {
     0,
     0,
-    destroy_object_8c119e28,
+    TObjHashiBase_dtor_8c119e28,
     fn_8c119e6c,
     draw_rising_grid_view,
     draw_grid_view_records,

@@ -13,7 +13,7 @@ extern char g_8c2ff8a0[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
 extern void operation_8c0c5478(void *, void *, float);
-void operation_8c084984(Object *o)
+void TObjContainerEnemy_v09_8c084984(Object *o)
 {
     njPrintColor_8c38c5b6(-0xff0100);
     debug_print_at_8c38cf80(0x13001e, (void *)((g_8c2ff8a0 + 0x15e)), (void *)(o->f88));

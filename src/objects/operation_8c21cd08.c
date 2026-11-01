@@ -13,7 +13,7 @@ extern void call_8c199b74(void *);
 extern void call_8c0db30c(Object *);
 extern void interpolate_view_parameters(void *);
 extern void update_view_nodes(void *, void *);
-void operation_8c21cd08(Object *o)
+void TWindowShortCut_update_8c21cd08(Object *o)
 {
     call_8c199b74((void *)(o->f68));
     call_8c0db30c(o);

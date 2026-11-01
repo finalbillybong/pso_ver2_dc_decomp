@@ -17,7 +17,7 @@ extern int g_8c41cd20;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern char g_8c2f1bcc[];
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c0edfd0(int, int, int, int, void *);
+extern void TFontSmallTask_ctor_1_8c0edfd0(int, int, int, int, void *);
 void operation_8c04621c(Object *o, int a1)
 {
     int v1;
@@ -30,7 +30,7 @@ void operation_8c04621c(Object *o, int a1)
             }
             t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x50);
             if (t1 != 0) {
-                call_8c0edfd0(t1, a1, -0x10000, 0x14, (void *)((g_8c2f1bcc + 0xb)));
+                TFontSmallTask_ctor_1_8c0edfd0(t1, a1, -0x10000, 0x14, (void *)((g_8c2f1bcc + 0xb)));
             }
         }
     }

@@ -9,7 +9,7 @@ static inline void destroy_base(MatrixChild *o){
         TObject_dtor_8c03311c(&o->base,0);
     }
 }
-MatrixChild *operation_1ac36c(MatrixChild *o,short release){
+MatrixChild *TItemShootModel_dtor_8c1ac36c(MatrixChild *o,short release){
     if(o){
         o->base.dispatch=(void *)0x8c2748b4;
         destroy_base(o);

@@ -5,4 +5,4 @@ typedef char check_size[(unsigned long)&((View *)0)->size==30?1:-1];
 typedef char check_ticks[(unsigned long)&((View *)0)->ticks==32?1:-1];
 typedef char check_position[(unsigned long)&((View *)0)->position==36?1:-1];
 extern void emit_at(Vector3 *,int);
-void update_delayed_position_effect(View *o) {if(--o->ticks<=0) {emit_at(&o->position,56);o->flags|=1;}}
+void TObjDFBeamCursor_update_8c21b630(View *o) {if(--o->ticks<=0) {emit_at(&o->position,56);o->flags|=1;}}

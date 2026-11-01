@@ -2,24 +2,24 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c21b5ec(void);
-extern void update_delayed_position_effect(void);
+extern void TObjDFBeamCursor_dtor_8c21b5ec(void);
+extern void TObjDFBeamCursor_update_8c21b630(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c21b39c(void);
-extern void operation_8c21b3f4(void);
-extern void destroy_following_position_effect(void);
-extern void update_following_position_effect(void);
-extern void destroy_raised_position_effect(void);
-extern void update_raised_position_effect(void);
+extern void TObjDFRecBall_dtor_8c21b39c(void);
+extern void TObjDFRecBall_update_8c21b3f4(void);
+extern void TObjDFRecover_dtor_8c21b0d0(void);
+extern void TObjDFRecover_update_8c21b124(void);
+extern void TObjDFTenchuFuru_dtor_8c21af80(void);
+extern void TObjDFTenchuFuru_update_8c21afd4(void);
 
 /* 8c278520: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c278520[7] = {
     0,
     0,
-    destroy_object_8c21b5ec,
-    update_delayed_position_effect,
+    TObjDFBeamCursor_dtor_8c21b5ec,
+    TObjDFBeamCursor_update_8c21b630,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -29,8 +29,8 @@ VirtualFunction const vt_8c278520[7] = {
 VirtualFunction const vt_8c27853c[7] = {
     0,
     0,
-    operation_8c21b39c,
-    operation_8c21b3f4,
+    TObjDFRecBall_dtor_8c21b39c,
+    TObjDFRecBall_update_8c21b3f4,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -40,8 +40,8 @@ VirtualFunction const vt_8c27853c[7] = {
 VirtualFunction const vt_8c278558[7] = {
     0,
     0,
-    destroy_following_position_effect,
-    update_following_position_effect,
+    TObjDFRecover_dtor_8c21b0d0,
+    TObjDFRecover_update_8c21b124,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -51,8 +51,8 @@ VirtualFunction const vt_8c278558[7] = {
 VirtualFunction const vt_8c278574[7] = {
     0,
     0,
-    destroy_raised_position_effect,
-    update_raised_position_effect,
+    TObjDFTenchuFuru_dtor_8c21af80,
+    TObjDFTenchuFuru_update_8c21afd4,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

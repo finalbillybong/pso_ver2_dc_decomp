@@ -27,7 +27,7 @@ extern void call_8c0db30c(Object *);
 extern void call_8c199b74(void *);
 extern void interpolate_view_parameters(void *);
 extern void update_view_nodes(void *, void *);
-void operation_8c21e6e4(Object *o)
+void TWindowSubQuestBoardSelect_update_8c21e6e4(Object *o)
 {
     int t1;
     int t2;

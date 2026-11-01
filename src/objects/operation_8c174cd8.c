@@ -20,14 +20,14 @@ struct Object {
     int f3b8;
 };
 extern int g_8c319288;
-extern void operation_8c059bc0(void *);
+extern void TObjEneDD_ctor_8c059bc0(void *);
 extern void operation_8c05a0b4(void *, void *);
 extern void call_8c174d68(Object *);
-Object *operation_8c174cd8(Object *o, int a1, int a2, int a3, int a4, int a5, int a6)
+Object *TBoss2Joint_ctor_8c174cd8(Object *o, int a1, int a2, int a3, int a4, int a5, int a6)
 {
     Object **home = &o;
     (void)home;
-    operation_8c059bc0((void *)o);
+    TObjEneDD_ctor_8c059bc0((void *)o);
     o->dispatch = (void *)0x8c2702dc;
     o->tag = (int)(g_8c319288);
     o->size = 0x3d8;

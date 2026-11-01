@@ -12,7 +12,7 @@ struct Frame {
 };
 extern void set_child_blend(void);
 extern void call_8c38e354(Frame *, int, int);
-void operation_8c0cb3dc(int a0)
+void TObjEneMe1Canadin_EffLineFade_render_8c0cb3dc(int a0)
 {
     Frame frame;
     (&frame)->f00 = a0 + 0x20;

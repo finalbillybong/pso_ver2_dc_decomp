@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c1d37d8(void)
+void TWindowSubComCard_render_8c1d37d8(void)
 {
 }

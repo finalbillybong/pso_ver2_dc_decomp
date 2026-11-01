@@ -15,7 +15,7 @@ struct S_x42320 {
 extern int g_8c4db408;
 extern S_c8c021ef8 *lookup_low_id(int);
 extern float squared_distance_xyz(void *, void *);
-void operation_8c170c84(int a0, int a1)
+void quest_op_get_player_proximity_8c170c84(int a0, int a1)
 {
     char *v2;
     char *v3;

@@ -35,7 +35,7 @@ extern "C" void game_free_8c011ec0(void *);
 extern "C" void call_8c35e6ee(void);
 extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c08b22c(Object *o, int a1)
+extern "C" Object *TMovie_dtor_8c08b22c(Object *o, int a1)
 {
     char *v20;
     if (o != 0) {

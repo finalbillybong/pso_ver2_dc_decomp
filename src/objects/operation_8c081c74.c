@@ -9,7 +9,7 @@ struct Object {
     int f124;
     int f128;
 };
-void operation_8c081c74(Object *o)
+void TObjDoorKey_v17_8c081c74(Object *o)
 {
     o->f128 += 0x14;
     o->f124 += 0x200;

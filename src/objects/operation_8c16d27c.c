@@ -6,7 +6,7 @@ typedef struct Vector3 {
 typedef struct S_g8c4db404 S_g8c4db404;
 typedef struct S_g8c4db408 S_g8c4db408;
 typedef struct Arg2 Arg2;
-void operation_8c16d27c(int a0, int a1, Arg2 *a2)
+void quest_op_switch_jmp_8c16d27c(int a0, int a1, Arg2 *a2)
 {
     int v1;
     v1 = (int)*(int *)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + ((unsigned char)a0 << 2));

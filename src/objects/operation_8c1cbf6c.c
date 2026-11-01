@@ -20,12 +20,12 @@ extern void call_8c231ba0(int);
 extern void operation_8c2320e0(void *);
 extern void operation_8c2559ec(void *);
 extern void call_8c2329b0(int);
-extern void operation_8c25aac4(void *);
+extern void TAdPSOPlay_ctor_8c25aac4(void *);
 extern void operation_8c25b3cc(void *);
-extern void call_8c25e254(int);
+extern void TAdPSOConv_ctor_8c25e254(int);
 extern void call_8c230028(int);
 extern void call_8c25efa4(int);
-extern void call_8c25f3f4(int);
+extern void TAdHunLicence_ctor_8c25f3f4(int);
 extern void operation_8c25f974(void *);
 extern void call_8c2602c0(int);
 extern void operation_8c0ea088(void *);
@@ -164,7 +164,7 @@ void operation_8c1cbf6c(void)
     case 15:
         t16 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x234);
         if (t16 != 0) {
-            operation_8c25aac4((void *)t16);
+            TAdPSOPlay_ctor_8c25aac4((void *)t16);
         }
         *(int *)0x8c4e2e44 = (int)(t16);
         return;
@@ -178,7 +178,7 @@ void operation_8c1cbf6c(void)
     case 17:
         t18 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
         if (t18 != 0) {
-            call_8c25e254(t18);
+            TAdPSOConv_ctor_8c25e254(t18);
         }
         *(int *)0x8c4e2e44 = (int)(t18);
         return;
@@ -199,7 +199,7 @@ void operation_8c1cbf6c(void)
     case 20:
         t21 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x234);
         if (t21 != 0) {
-            call_8c25f3f4(t21);
+            TAdHunLicence_ctor_8c25f3f4(t21);
         }
         *(int *)0x8c4e2e44 = (int)(t21);
         return;

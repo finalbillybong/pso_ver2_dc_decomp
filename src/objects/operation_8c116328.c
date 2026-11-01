@@ -11,7 +11,7 @@ struct Object {
 };
 extern void release_render_mode_four_8c03ce90(void);
 extern void call_8c122494(void *, void *);
-void operation_8c116328(Object *o)
+void TFogEditor_v07_8c116328(Object *o)
 {
     release_render_mode_four_8c03ce90();
     *(char *)0x8c4d82a0 = 0;

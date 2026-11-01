@@ -19,9 +19,9 @@ struct S_vv1 {
 };
 extern void call_8c053f54(void);
 extern void operation_8c052124(void *);
-extern void destroy_object_8c112efc(void *, short);
+extern void TOKey_dtor_8c112efc(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c081be0(Object *o, int a1)
+Object *TObjDoorKey_dtor_8c081be0(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {
@@ -33,7 +33,7 @@ Object *operation_8c081be0(Object *o, int a1)
             v1->f04 |= 1;
             o->f12c = (Arg0_12c *)0;
         }
-        destroy_object_8c112efc((void *)o, (short)0);
+        TOKey_dtor_8c112efc((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), o);
         }

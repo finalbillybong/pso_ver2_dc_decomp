@@ -20,7 +20,7 @@ extern void operation_8c05426c(void *, int, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c05428c(void *, int, int);
 extern void call_8c01c5f0(Object *);
-void operation_8c0e5a68(Object *o)
+void TObjEneBeast_v89_8c0e5a68(Object *o)
 {
     if (o->f30c != 0) {
         if (o->f30c == 1) {

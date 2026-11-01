@@ -23,7 +23,7 @@ struct Object {
     int f234;
 };
 extern void call_8c075398(void);
-Object *operation_8c23f714(Object *o)
+Object *TItemWpnRocketPunch_ctor_8c23f714(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c27bfdc;

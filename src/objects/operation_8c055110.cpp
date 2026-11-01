@@ -126,7 +126,7 @@ struct Arg0_dc {
     char unknown0[0x4];
     float f04;
 };
-extern "C" void operation_8c055110(Object *o)
+extern "C" void TObjEneBm3Fly_v94_8c055110(Object *o)
 {
     float v1;
     float v2;

@@ -51,7 +51,7 @@ extern "C" void operation_8c01c2b0(void);
 extern "C" void call_8c186b34(void);
 extern "C" void call_8c09d2bc(void);
 extern "C" void call_8c1a9a58(void);
-extern "C" void operation_8c1a18b8(void);
+extern "C" void TMapCsnCtrl_create_8c1a18b8(void);
 extern "C" void create_descriptor_managers(void);
 extern "C" void call_8c189ca0(int);
 extern "C" void call_8c185f68(void);
@@ -89,7 +89,7 @@ extern "C" void operation_8c0e7fb4(void)
     call_8c186b34();
     call_8c09d2bc();
     call_8c1a9a58();
-    operation_8c1a18b8();
+    TMapCsnCtrl_create_8c1a18b8();
     create_descriptor_managers();
     call_8c189ca0(1);
     call_8c185f68();

@@ -9,7 +9,7 @@ extern int operation_8c05bbf8(void);
 extern int call_8c059f44(void *, void *);
 extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
-void operation_8c05454c(void)
+void load_assets_ene_cgrass_8c05454c(void)
 {
     int t1;
     int t2;

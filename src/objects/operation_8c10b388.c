@@ -34,8 +34,8 @@ extern int bu_check_busy_8c372d98(int);
 extern int player_flag9_8c026508(void);
 extern int player_flag13_8c02935c(void);
 extern int lookup_low_id(int);
-extern int call_8c10b490(Object *, int, float);
-void operation_8c10b388(Object *o)
+extern int TOBarrierEnergy01_ctor_8c10b490(Object *, int, float);
+void TShopGenerator_update_8c10b388(Object *o)
 {
     S_x68400 *p;
     int t1;
@@ -62,7 +62,7 @@ void operation_8c10b388(Object *o)
                     if (t5 != 1 && g_8c4d7c84 == 0) {
                         t6 = lookup_low_id((int)g_8c418248);
                         if (t6 != 0) {
-                            t7 = call_8c10b490(o, t6, 20.0f);
+                            t7 = TOBarrierEnergy01_ctor_8c10b490(o, t6, 20.0f);
                             if (t7 != 0 && (((&g_8c41cba0)->f28 & 4)) != 0) {
                                 ((void (*)(int))(p->f0c))(t6);
                             }

@@ -9,10 +9,10 @@ struct Object {
     int f39c;
 };
 extern void refresh_records_8c1ada14(void);
-extern void operation_8c2308d4(int);
+extern void TObjDFEnding_create_8c2308d4(int);
 void operation_8c1b7160(Object *o)
 {
     refresh_records_8c1ada14();
-    operation_8c2308d4((int)o);
+    TObjDFEnding_create_8c2308d4((int)o);
     o->f39c = 0x1c6;
 }

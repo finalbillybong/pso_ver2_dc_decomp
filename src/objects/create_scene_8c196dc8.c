@@ -21,7 +21,7 @@ extern S_c8c122700 *heap_alloc_8c122700(void *, int);
 extern void TObject_ctor_8c0330e4(S_c8c122700 *, int);
 extern void call_8c196ec4(S_c8c122700 *);
 extern void call_8c196e78(S_c8c122700 *, int);
-S_c8c122700 *create_scene_8c196dc8(int a0)
+S_c8c122700 *TObjBGLifeGame_ctor_8c196dc8(int a0)
 {
     S_c8c122700 *t1;
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0x664);

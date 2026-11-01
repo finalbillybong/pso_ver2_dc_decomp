@@ -7,7 +7,7 @@ extern int g_8c470500;
 extern int g_8c470504;
 extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
-void operation_8c0f0364(void)
+void load_assets_o_wreck_ancient_8c0f0364(void)
 {
     int t1;
     int t2;

@@ -21,7 +21,7 @@ extern void request_resource_release(void *);
 extern void operation_8c199b40(int, int);
 extern void destroy_context_8c0db244(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c21cc84(Object *o, int a1)
+Object *TWindowShortCut_dtor_8c21cc84(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c2785f0;

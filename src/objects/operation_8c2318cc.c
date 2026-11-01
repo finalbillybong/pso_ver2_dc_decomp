@@ -23,7 +23,7 @@ extern int call_8c2319e4(void *);
 extern void call_8c1ab894(Object *, int);
 extern int operation_8c247d90(void *);
 extern void operation_8c1ab8e8(void *, int);
-extern void operation_8c1ab5ec(void *);
+extern void TFontSmallHelp_update_8c1ab5ec(void *);
 void operation_8c2318cc(Object *o)
 {
     S_c8c021ef8 *t1;
@@ -46,6 +46,6 @@ void operation_8c2318cc(Object *o)
                 }
             }
         }
-        operation_8c1ab5ec((void *)o);
+        TFontSmallHelp_update_8c1ab5ec((void *)o);
     }
 }

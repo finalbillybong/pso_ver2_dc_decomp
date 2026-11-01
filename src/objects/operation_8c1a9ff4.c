@@ -42,8 +42,8 @@ extern char g_8c288e38[];
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void initialize_resource_record(void *);
-extern void operation_8c1a9c84(void *, int, int);
-void operation_8c1a9ff4(void)
+extern void TObjBgmCol_ctor_8c1a9c84(void *, int, int);
+void TObjBgmColCtrl_ctor_8c1a9ff4(void)
 {
     Frame frame;
     int v5;
@@ -73,7 +73,7 @@ void operation_8c1a9ff4(void)
         frame.f30 = *(int *)((char *)(g_8c288e38 + 0x10) + off);
         t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xa4);
         if (t3 != 0) {
-            operation_8c1a9c84((void *)t3, (int)g_8c4e1a48, (int)(&frame));
+            TObjBgmCol_ctor_8c1a9c84((void *)t3, (int)g_8c4e1a48, (int)(&frame));
         }
     }
 }

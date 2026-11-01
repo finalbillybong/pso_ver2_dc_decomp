@@ -28,7 +28,7 @@ struct Arg0_dc {
     int f18;
 };
 extern int operation_456a4(void *);
-int operation_8c038cfc(Object *o)
+int TObjEneMoja_v45_8c038cfc(Object *o)
 {
     int t1;
     t1 = operation_456a4((void *)o);

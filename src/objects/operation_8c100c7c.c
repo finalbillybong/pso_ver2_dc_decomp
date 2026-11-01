@@ -15,7 +15,7 @@ struct Object {
 };
 extern int operation_8c100e14(int, float);
 extern void call_8c05fd7c(void *, Object *, void *, int, int);
-void operation_8c100c7c(Object *o)
+void TObjEnvSound_update_8c100c7c(Object *o)
 {
     int t1;
     t1 = operation_8c100e14((int)o, (float)(o->f94 * o->f94));

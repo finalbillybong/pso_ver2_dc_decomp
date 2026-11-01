@@ -9,4 +9,4 @@ typedef char check_field48[(unsigned long)&((View *)0)->field48==48?1:-1];
 typedef char check_field52[(unsigned long)&((View *)0)->field52==52?1:-1];
 typedef char check_ticks[(unsigned long)&((View *)0)->ticks==56?1:-1];
 extern void TObject_ctor_8c0330e4(View *,void *);extern void *object_name;
-View *initialize_pair_context_effect(View *o,void *parent,unsigned int first,unsigned int second) {TObject_ctor_8c0330e4(o,parent);o->dispatch=(void *)0x8c26dbd0;o->name=object_name;o->size=60;o->state=0;o->first=first;o->second=second;o->field44=0;o->field48=0;o->field52=0;o->ticks=900;return o;}
+View *TObjAfsLoad_ctor_8c140890(View *o,void *parent,unsigned int first,unsigned int second) {TObject_ctor_8c0330e4(o,parent);o->dispatch=(void *)0x8c26dbd0;o->name=object_name;o->size=60;o->state=0;o->first=first;o->second=second;o->field44=0;o->field48=0;o->field52=0;o->ticks=900;return o;}

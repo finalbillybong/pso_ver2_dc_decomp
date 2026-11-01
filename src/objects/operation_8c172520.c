@@ -8,7 +8,7 @@ struct S_g8c4db9e8 {
     char unknown0[0x320c];
     int f320c;
 };
-void operation_8c172520(void)
+void quest_op_load_guild_card_file_creation_time_to_flag_buf_8c172520(void)
 {
     if (*(int *)0x8c4db9e8 != 0) {
         *(int *)0x8c4db4d4 = (int)((*(S_g8c4db9e8 **)0x8c4db9e8)->f320c);

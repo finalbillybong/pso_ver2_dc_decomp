@@ -8,21 +8,21 @@ extern void fn_8c19fa94(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void fn_8c1192e8(void);
-extern void operation_8c19fdf0(void);
-extern void operation_8c1a0010(void);
-extern void fn_8c19ff1c(void);
-extern void operation_8c1a0470(void);
+extern void TOHealGeneral_dtor_8c19fdf0(void);
+extern void TOHealGeneral_update_8c1a0010(void);
+extern void TOHealGeneral_render_8c19ff1c(void);
+extern void TOHealGeneral_render_shadow_8c1a0470(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void operation_8c051fd4(void);
 extern void operation_8c010500(void);
 extern void operation_8c010504(void);
-extern void word_operation_8c1a0474(void);
+extern void TOHealGeneral_v10_8c1a0474(void);
 extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
 extern void operation_8c0104f0(void);
-extern void operation_8c1a046c(void);
+extern void TOHealGeneral_v15_8c1a046c(void);
 
 /* 8c272c94: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const vt_8c272c94[8] = {
@@ -40,20 +40,20 @@ VirtualFunction const vt_8c272c94[8] = {
 VirtualFunction const vt_8c272cb4[18] = {
     0,
     0,
-    operation_8c19fdf0,
-    operation_8c1a0010,
-    fn_8c19ff1c,
-    operation_8c1a0470,
+    TOHealGeneral_dtor_8c19fdf0,
+    TOHealGeneral_update_8c1a0010,
+    TOHealGeneral_render_8c19ff1c,
+    TOHealGeneral_render_shadow_8c1a0470,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
     operation_8c051fd4,
     operation_8c010500,
     operation_8c010504,
-    word_operation_8c1a0474,
+    TOHealGeneral_v10_8c1a0474,
     operation_8c01d3b0,
     fn_8c01d4c4,
     operation_8c010510,
     operation_8c0104f0,
-    operation_8c1a046c
+    TOHealGeneral_v15_8c1a046c
 };

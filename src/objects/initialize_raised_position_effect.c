@@ -7,4 +7,4 @@ typedef char check_ticks[(unsigned long)&((View *)0)->ticks==44?1:-1];
 typedef char check_child[(unsigned long)&((View *)0)->child==48?1:-1];
 extern void TObject_ctor_8c0330e4(View *,void *);extern void *object_name;
 extern void *find_at(Vector3 *,int);extern void set_at(void *,int);
-View *initialize_raised_position_effect(View *o,void *parent,const Vector3 *position) { View **home=&o;TObject_ctor_8c0330e4(o,parent);o->dispatch=(void *)0x8c278574;o->name=object_name;o->size=52;o->ticks=5;o->position=*position;o->position.y+=300.0f;if((o->child=find_at(&o->position,308))!=0) set_at(o->child,64);return o; }
+View *TObjDFTenchuFuru_ctor_8c21aef4(View *o,void *parent,const Vector3 *position) { View **home=&o;TObject_ctor_8c0330e4(o,parent);o->dispatch=(void *)0x8c278574;o->name=object_name;o->size=52;o->ticks=5;o->position=*position;o->position.y+=300.0f;if((o->child=find_at(&o->position,308))!=0) set_at(o->child,64);return o; }

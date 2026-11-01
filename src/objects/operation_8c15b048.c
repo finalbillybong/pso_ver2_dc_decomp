@@ -10,7 +10,7 @@ struct Object {
 };
 extern void operation_8c15b190(void *);
 extern void operation_8c15b130(void *);
-void operation_8c15b048(Object *o)
+void TObjVoloptShutter_update_8c15b048(Object *o)
 {
     if (o->f24 != 0) {
         if (o->f24 != 1) {

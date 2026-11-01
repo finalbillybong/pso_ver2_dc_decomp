@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c258df4(void)
+void TOSwitchAttack_v09_8c258df4(void)
 {
 }

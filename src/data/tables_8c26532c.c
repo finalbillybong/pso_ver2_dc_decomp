@@ -125,19 +125,19 @@ extern void operation_8c094fb0(void);
 extern void operation_8c09502c(void);
 extern void fn_8c095870(void);
 extern void fn_8c095760(void);
-extern void operation_8c090a00(void);
-extern void fn_8c090a94(void);
-extern void operation_8c090de8(void);
-extern void operation_8c090cac(void);
-extern void operation_8c090f28(void);
-extern void operation_8c090f2c(void);
-extern void operation_8c0911a0(void);
-extern void fn_8c0917d0(void);
-extern void fn_8c091c20(void);
-extern void fn_8c094950(void);
-extern void operation_8c091180(void);
-extern void operation_8c0911f0(void);
-extern void operation_8c0911ec(void);
+extern void TObjEneMe1Canadin_dtor_8c090a00(void);
+extern void TObjEneMe1Canadin_update_8c090a94(void);
+extern void TObjEneMe1Canadin_v110_8c090de8(void);
+extern void TObjEneMe1Canadin_v111_8c090cac(void);
+extern void TObjEneMe1Canadin_v112_8c090f28(void);
+extern void TObjEneMe1Canadin_v113_8c090f2c(void);
+extern void TObjEneMe1Canadin_v114_8c0911a0(void);
+extern void TObjEneMe1Canadin_v115_8c0917d0(void);
+extern void TObjEneMe1Canadin_v116_8c091c20(void);
+extern void TObjEneMe1Canadin_v117_8c094950(void);
+extern void TObjEneMe1Canadin_v118_8c091180(void);
+extern void TObjEneMe1Canadin_v121_8c0911f0(void);
+extern void TObjEneMe1Canadin_v122_8c0911ec(void);
 
 Function const d_8c26532c[125] = {
     0,
@@ -270,8 +270,8 @@ Function const d_8c26532c[125] = {
 Function const d_8c265520[125] = {
     0,
     0,
-    operation_8c090a00,
-    fn_8c090a94,
+    TObjEneMe1Canadin_dtor_8c090a00,
+    TObjEneMe1Canadin_update_8c090a94,
     fn_8c094c68,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
@@ -380,17 +380,17 @@ Function const d_8c265520[125] = {
     operation_8c090d48,
     capture_current_contact,
     fn_8c090f88,
-    operation_8c090de8,
-    operation_8c090cac,
-    operation_8c090f28,
-    operation_8c090f2c,
-    operation_8c0911a0,
-    fn_8c0917d0,
-    fn_8c091c20,
-    fn_8c094950,
-    operation_8c091180,
+    TObjEneMe1Canadin_v110_8c090de8,
+    TObjEneMe1Canadin_v111_8c090cac,
+    TObjEneMe1Canadin_v112_8c090f28,
+    TObjEneMe1Canadin_v113_8c090f2c,
+    TObjEneMe1Canadin_v114_8c0911a0,
+    TObjEneMe1Canadin_v115_8c0917d0,
+    TObjEneMe1Canadin_v116_8c091c20,
+    TObjEneMe1Canadin_v117_8c094950,
+    TObjEneMe1Canadin_v118_8c091180,
     operation_8c094fb0,
     operation_8c09502c,
-    operation_8c0911f0,
-    operation_8c0911ec
+    TObjEneMe1Canadin_v121_8c0911f0,
+    TObjEneMe1Canadin_v122_8c0911ec
 };

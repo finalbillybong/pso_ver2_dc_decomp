@@ -17,7 +17,7 @@ struct S_c8c122700 {
 extern void call_8c1dbfe0(void);
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_grid_panel_8c1dbd08(void *, int);
-S_c8c122700 *operation_8c254f6c(int a0, int a1, int a2)
+S_c8c122700 *TWindowChoiceSetting_ctor_8c254f6c(int a0, int a1, int a2)
 {
     S_c8c122700 *t1;
     call_8c1dbfe0();

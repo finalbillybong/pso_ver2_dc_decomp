@@ -19,7 +19,7 @@ extern void approach_pair_grid_offset(void *);
 extern void call_8c0db30c(Object *);
 extern void operation_8c225b70(void *);
 extern void update_view_nodes(void *, void *);
-void operation_8c225688(Object *o)
+void TWindowMessageLog_update_8c225688(Object *o)
 {
     if (((o->f34 & 2)) == 0) {
         o->f64 = 0x1000000;

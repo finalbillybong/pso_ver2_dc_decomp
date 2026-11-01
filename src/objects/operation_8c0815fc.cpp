@@ -34,7 +34,7 @@ struct Arg0_dc {
 extern "C" char g_8c2fede8[];
 extern "C" void njPrintColor_8c38c5b6(int);
 extern "C" void debug_print_at_8c38cf80(int, void *, ...);
-extern "C" void operation_8c0815fc(Object *o)
+extern "C" void TObjLazerFenceExtra_v09_8c0815fc(Object *o)
 {
     ((ObjectData *)o)->fe8 = ((ObjectData *)o)->f88;
     ((ObjectData *)o)->fe4 = (int)((ObjectData *)o)->f6c;

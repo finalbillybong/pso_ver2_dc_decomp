@@ -16,7 +16,7 @@ extern void call_8c053f54(Object *);
 extern void operation_8c052124(void *);
 extern void destroy_context_8c051f28(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1d8fe4(Object *o, int a1)
+Object *TObjCity_Season_SonicAdv2_dtor_8c1d8fe4(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c276f90;

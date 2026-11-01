@@ -43,7 +43,7 @@ struct Arg0_f0 {
 };
 extern "C" int play_se_8c05fbf8(int, void *, int, int);
 extern "C" void emit_control_60320(int, int, int);
-extern "C" void operation_8c1c1eb8(Object *o)
+extern "C" void TObjCityDoor_Warp_v18_8c1c1eb8(Object *o)
 {
     int t1;
     int t2;

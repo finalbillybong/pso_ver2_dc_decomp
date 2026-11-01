@@ -20,7 +20,7 @@ extern int global_present_8c13a3e0(void);
 extern void operation_8c09e6d0(void *);
 extern void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
 extern void operation_8c122774(void *, void *);
-Object *operation_8c1380d0(Object *o, int a1)
+Object *TBoss3Volopt_dtor_8c1380d0(Object *o, int a1)
 {
     int v10;
     int v3;

@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c24dfdc(void);
-extern void operation_8c24e020(void);
-extern void finalize_view_8c24e044(void);
+extern void TWindowChallengeResult_dtor_8c24dfdc(void);
+extern void TWindowChallengeResult_update_8c24e020(void);
+extern void TWindowChallengeResult_render_8c24e044(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0dc63c(void);
@@ -13,9 +13,9 @@ extern void operation_8c0dc63c(void);
 VirtualFunction const vt_8c27e45c[8] = {
     0,
     0,
-    destroy_object_8c24dfdc,
-    operation_8c24e020,
-    finalize_view_8c24e044,
+    TWindowChallengeResult_dtor_8c24dfdc,
+    TWindowChallengeResult_update_8c24e020,
+    TWindowChallengeResult_render_8c24e044,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c

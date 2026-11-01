@@ -19,10 +19,10 @@ struct Object {
     int f38;
     int f3c;
 };
-extern void initialize_manager_8c106568(Object *, int);
-Object *operation_8c15921c(Object *o, int a1, int a2)
+extern void TShopSequence_ctor_8c106568(Object *, int);
+Object *THunterGuildSeqOffline_ctor_8c15921c(Object *o, int a1, int a2)
 {
-    initialize_manager_8c106568(o, a1);
+    TShopSequence_ctor_8c106568(o, a1);
     o->dispatch = (void *)0x8c26ec6c;
     o->tag = *(int *)0x8c3164c8;
     o->size = 0x40;

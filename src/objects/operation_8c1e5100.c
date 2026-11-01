@@ -27,7 +27,7 @@ extern int call_8c1e5650(Object *);
 extern int call_8c1e5918(char);
 extern void call_8c1dc4b8(void *, int, int);
 extern int call_8c1e5928(char);
-Object *operation_8c1e5100(Object *o, int a1, int a2)
+Object *TWindowMakeTeam_ctor_8c1e5100(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int t1;

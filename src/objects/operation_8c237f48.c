@@ -12,15 +12,15 @@ struct S_L8c339ca0 {
 extern S_g8c44bea0 *g_8c44bea0;
 extern S_L8c339ca0 g_8c339ca0;
 extern void call_8c237f94(int);
-extern void create_object_8c253358(void *);
-extern void operation_8c25312c(int);
-extern void operation_8c25f16c(int);
+extern void TObjCHTimeWin_create_8c253358(void *);
+extern void TObjNewFloorWin_create_8c25312c(int);
+extern void TObjSoloPlayWin_create_8c25f16c(int);
 void operation_8c237f48(int a0)
 {
     call_8c237f94(a0);
-    create_object_8c253358(g_8c44bea0);
-    operation_8c25312c((int)g_8c44bea0);
+    TObjCHTimeWin_create_8c253358(g_8c44bea0);
+    TObjNewFloorWin_create_8c25312c((int)g_8c44bea0);
     if ((&g_8c339ca0)->f34 == 0) {
-        operation_8c25f16c((int)g_8c44bea0);
+        TObjSoloPlayWin_create_8c25f16c((int)g_8c44bea0);
     }
 }

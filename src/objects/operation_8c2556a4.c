@@ -18,8 +18,8 @@ struct Object {
 };
 extern int g_8c44be04;
 extern S_g8c44be9c *g_8c44be9c;
-extern void operation_8c255704(int, int, int, int);
-void operation_8c2556a4(Object *o)
+extern void TItemEffArmorParticle_create_8c255704(int, int, int, int);
+void TItemProArmorParticle_v17_8c2556a4(Object *o)
 {
     int v2;
     int v1;
@@ -29,7 +29,7 @@ void operation_8c2556a4(Object *o)
         if (v2 != v1) {
             o->f1e0 = (int)(v1);
             if (o->f1e0 != 0 && o->f1e0 != 0xf) {
-                operation_8c255704((int)g_8c44be9c, (int)(o->fe8), (int)(o->fe6), (int)(o->f1e4));
+                TItemEffArmorParticle_create_8c255704((int)g_8c44be9c, (int)(o->fe8), (int)(o->fe6), (int)(o->f1e4));
             }
         }
     }

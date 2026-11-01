@@ -38,7 +38,7 @@ extern int create_effect_7708(void *, int, int);
 extern float njSin_8c37eb0c(void *);
 extern float njCos_8c38c154(void *);
 extern void call_8c0a7608(void *, Frame *);
-void operation_8c1c1394(Object *o)
+void TObjCityAirCar_Car_update_8c1c1394(Object *o)
 {
     Frame frame;
     char *v181;

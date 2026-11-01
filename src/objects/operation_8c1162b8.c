@@ -22,7 +22,7 @@ struct S_c8c021ef8 {
 };
 extern void call_8c03ce84(void);
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c1162b8(Object *o)
+void TFogEditor_v05_8c1162b8(Object *o)
 {
     S_c8c021ef8 *t1;
     call_8c03ce84();

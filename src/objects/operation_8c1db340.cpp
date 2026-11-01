@@ -50,7 +50,7 @@ extern int g_8c32adf8;
 extern S_g8c44be98 *g_8c44be98;
 extern int g_8c4e2f60;
 extern "C" void TObjectShared_ctor_8c01d1ec(Object *, void *);
-extern "C" Object *operation_8c1db340(Object *o, int a1)
+extern "C" Object *TOSoulDF_ctor_8c1db340(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;

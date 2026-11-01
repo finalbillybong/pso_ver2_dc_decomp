@@ -5,7 +5,7 @@
 #define find_at ((void *(*)(int))0x8c021ef8)
 #define distance_at ((float (*)(Vector3 *,Vector3 *))0x8c03f0a0)
 #define trigger_at ((void (*)(ProximityObject *,int))0x8c09e710)
-void update_proximity_object(ProximityObject *p) {
+void TObjItemLight_update_8c1ab420(ProximityObject *p) {
  if(p->effect) {
   position_at(p->effect,&p->position);
   angles_at(p->effect,p->angles);

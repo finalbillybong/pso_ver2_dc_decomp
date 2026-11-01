@@ -41,7 +41,7 @@ struct S_g8c469be4_42c {
 extern int g_8c2fef1c;
 extern S_g8c469be4 *g_8c469be4;
 extern void TObjectShared_ctor_8c01d1ec(Object *);
-Object *operation_8c0817d4(Object *o, int a1, Arg2 *a2)
+Object *TKomorebi_ctor_8c0817d4(Object *o, int a1, Arg2 *a2)
 {
     TObjectShared_ctor_8c01d1ec(o);
     o->dispatch = (void *)0x8c2644c4;

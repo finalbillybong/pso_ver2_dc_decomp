@@ -27,7 +27,7 @@ public:
     virtual void v23();
 };
 
-extern "C" void dispatch64_8c112fb0(Object *o)
+extern "C" void TOKey_update_8c112fb0(Object *o)
 {
     o->v23();
 }

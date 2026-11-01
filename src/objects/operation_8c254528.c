@@ -13,7 +13,7 @@ struct Object {
 };
 extern void call_8c075398(int);
 extern void call_8c25456c(Object *);
-Object *operation_8c254528(Object *o)
+Object *TItemWpnUnknownRod_ctor_8c254528(Object *o)
 {
     Object **home = &o;
     (void)home;

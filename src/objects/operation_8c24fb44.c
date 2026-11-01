@@ -13,7 +13,7 @@ struct Object {
     int f25c;
     int f260;
 };
-void operation_8c24fb44(Object *o)
+void TItemWpnYasuMachineGun_v53_8c24fb44(Object *o)
 {
     if (o->f234 != 1) {
         if (o->f234 == 2) {

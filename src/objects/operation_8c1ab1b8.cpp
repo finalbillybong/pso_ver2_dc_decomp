@@ -28,7 +28,7 @@ typedef struct ObjectData {
     char unknown0[0xe8];
     int fe8;
 } ObjectData;
-extern "C" void operation_8c1ab1b8(Object *o)
+extern "C" void TObjMesBase_update_8c1ab1b8(Object *o)
 {
     if (((ObjectData *)o)->fe8 != 0) {
         if (((ObjectData *)o)->fe8 != 1) {

@@ -20,7 +20,7 @@ struct Arg0_dc {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c0bef20(Object *o)
+void TObjEneSaver_v69_8c0bef20(Object *o)
 {
     if (o->f30a != 7) {
         o->f30a = 7;

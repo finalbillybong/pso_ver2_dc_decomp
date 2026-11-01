@@ -122,10 +122,10 @@ extern void operation_8c1660f0(void);
 extern void operation_8c166148(void);
 extern void fn_8c16620c(void);
 extern void fn_8c16647c(void);
-extern void destroy_context_8c1658c4(void);
-extern void operation_8c05b168(void);
-extern void operation_8c165c8c(void);
-extern void operation_8c165c90(void);
+extern void TBoss2Mine_dtor_8c1658c4(void);
+extern void TObjEneDD_v94_8c05b168(void);
+extern void TBoss2Mine_v110_8c165c8c(void);
+extern void TBoss2Mine_v111_8c165c90(void);
 
 Function const d_8c26f93c[118] = {
     0,
@@ -372,7 +372,7 @@ Function const d_8c26fb14[118] = {
 Function const d_8c26fcec[118] = {
     0,
     0,
-    destroy_context_8c1658c4,
+    TBoss2Mine_dtor_8c1658c4,
     operation_8c165910,
     fn_8c165e1c,
     TObject_render_shadow_default_8c0111cc,
@@ -466,7 +466,7 @@ Function const d_8c26fcec[118] = {
     operation_8c059e2c,
     operation_8c059e88,
     operation_8c165b84,
-    operation_8c05b168,
+    TObjEneDD_v94_8c05b168,
     operation_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,
@@ -482,8 +482,8 @@ Function const d_8c26fcec[118] = {
     apply_contact_position,
     capture_current_contact,
     operation_8c165c18,
-    operation_8c165c8c,
-    operation_8c165c90,
+    TBoss2Mine_v110_8c165c8c,
+    TBoss2Mine_v111_8c165c90,
     fn_8c165c94,
     operation_8c165dac,
     operation_8c166064,

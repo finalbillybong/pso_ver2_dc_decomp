@@ -41,7 +41,7 @@ extern void call_8c38c0e6(int, int);
 extern void call_8c3aa716(void *);
 extern void call_8c3a944a(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c0cd488(Object *o)
+void TObjBoss1MokoHill_Solo_render_8c0cd488(Object *o)
 {
     call_8c3827d8(g_8c469a64);
     call_8c0cc8bc((void *)(&o->f2c));

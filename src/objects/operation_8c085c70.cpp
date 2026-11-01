@@ -106,7 +106,7 @@ typedef struct ObjectData {
     short f30a;
 } ObjectData;
 extern "C" void operation_8c09e6b4(void *);
-extern "C" void operation_8c085c70(Object *o, Arg1 *a1, int a2)
+extern "C" void TObjContainerAbeEnemy_v05_8c085c70(Object *o, Arg1 *a1, int a2)
 {
     if (a2 != 0) {
         if (a1->f00 != 1) {

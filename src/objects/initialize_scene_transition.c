@@ -14,7 +14,7 @@ extern void call_8c172be4(void);
 extern void reset_controller_state_8c01d9dc(void);
 extern void call_8c01c1c4(void);
 extern void call_8c104e8c(void);
-extern void call_8c1a18b8(void);
+extern void TMapCsnCtrl_create_8c1a18b8(void);
 extern void call_8c0405b4(void);
 extern void call_8c189c94(void);
 extern void call_8c1a9940(void);
@@ -60,7 +60,7 @@ extern char configuration[];
 extern char global_storage[];
 void initialize_scene_transition(void) {
  unsigned int value;TimeView stamp;void *small;
- begin_at(0,0,0);call_8c01c2b0();call_8c172be4();reset_controller_state_8c01d9dc();call_8c01c1c4();set_mode_at(2);set_phase_at(16);call_8c104e8c();call_8c1a18b8();call_8c0405b4();call_8c189c94();load_at(load_data,264);call_8c1a9940();configure_at(15,configuration);call_8c0ea6d8();
+ begin_at(0,0,0);call_8c01c2b0();call_8c172be4();reset_controller_state_8c01d9dc();call_8c01c1c4();set_mode_at(2);set_phase_at(16);call_8c104e8c();TMapCsnCtrl_create_8c1a18b8();call_8c0405b4();call_8c189c94();load_at(load_data,264);call_8c1a9940();configure_at(15,configuration);call_8c0ea6d8();
  if(!existing) {void *p=heap_alloc_8c122700(heap,292);if(p) initialize_large_at(p,parent);}
  if((selected=lookup_at())!=0) {if(state_at(selected)==-1) request_game_mode_8c01c1a4(0);else {call_8c180ae8();set_phase_at(2);request_game_mode_8c01c1a4(27);}call_8c0ea724();call_8c189d60();}
  else {state_at(selected);if(!time_ready_at()) {time_read_at(&stamp);time_convert_at(&stamp,&value);time_set_at(value);}

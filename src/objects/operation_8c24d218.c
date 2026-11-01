@@ -10,8 +10,8 @@ struct Object {
     char unknown0[0x13c];
     Arg0_13c *f13c;
 };
-extern void call_8c24d230(void *, void *);
-void operation_8c24d218(Object *o)
+extern void TItemObjectTV_create_8c24d230(void *, void *);
+void TItemObjTrapVision_v42_8c24d218(Object *o)
 {
-    call_8c24d230((void *)(*(S_g8c44be9c **)0x8c44be9c), (void *)(o->f13c));
+    TItemObjectTV_create_8c24d230((void *)(*(S_g8c44be9c **)0x8c44be9c), (void *)(o->f13c));
 }

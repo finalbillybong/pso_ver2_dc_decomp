@@ -36,7 +36,7 @@ public:
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" void operation_8c14dfb0(Object *o)
+extern "C" void TOTrapAncient02R_v25_8c14dfb0(Object *o)
 {
     o->v24(0, 1.0f);
 }

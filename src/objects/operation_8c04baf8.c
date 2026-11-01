@@ -12,7 +12,7 @@ struct Object {
     short size;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c04baf8(Object *o)
+Object *TNECFontEORFunction_ctor_8c04baf8(Object *o)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)((void *)0x8c44bef4));
     o->dispatch = (void *)0x8c261e78;

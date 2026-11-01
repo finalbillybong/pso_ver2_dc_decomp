@@ -10,7 +10,7 @@ extern S_g8c469c10 *g_8c469c10;
 extern void call_8c03dc40(void *, int);
 extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
-void operation_8c081a34(void)
+void release_assets_abeno_fs_obj001_fosuno_8c081a34(void)
 {
     call_8c03dc40(g_8c469c00, 1);
     g_8c469c00 = (S_g8c469c00 *)0;

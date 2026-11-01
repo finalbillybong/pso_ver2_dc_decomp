@@ -71,7 +71,7 @@ struct Frame {
 extern "C" int call_8c1aaabc(int);
 extern "C" void call_8c075894(Object *, void *, int, Frame *);
 extern "C" void operation_8c076580(void *);
-extern "C" void operation_8c239c1c(Object *o)
+extern "C" void TItemWpnBasyoSen_v49_8c239c1c(Object *o)
 {
     Frame frame;
     int t1;

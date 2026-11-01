@@ -10,7 +10,7 @@ struct Object {
 };
 extern void call_8c012884(Object *);
 extern void operation_8c1bca48(void *);
-void operation_8c1bca1c(Object *o)
+void TBoss4Bishi_v71_8c1bca1c(Object *o)
 {
     if (o->f390 != 3) {
         call_8c012884(o);

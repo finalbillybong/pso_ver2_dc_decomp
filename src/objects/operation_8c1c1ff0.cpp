@@ -48,7 +48,7 @@ struct Arg0_dc {
     int f18;
 };
 extern S_g8c510ba0 *g_8c510ba0;
-extern "C" void operation_8c1c1ff0(Object *o)
+extern "C" void TObjCityDoor_Warp_update_8c1c1ff0(Object *o)
 {
     int v2;
     int m;

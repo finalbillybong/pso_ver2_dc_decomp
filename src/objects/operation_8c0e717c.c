@@ -7,7 +7,7 @@ typedef struct S_g8c4689e0 S_g8c4689e0;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TItemObject_ctor_8c0e71c8(int, void *, int);
-int operation_8c0e717c(int a0)
+int TItemObject_create_8c0e717c(int a0)
 {
     int t1;
     if (a0 != 0) {

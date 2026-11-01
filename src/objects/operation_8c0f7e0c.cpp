@@ -117,7 +117,7 @@ extern "C" int operation_8c03d338(void);
 extern "C" int operation_8c0f8008(void *);
 extern "C" void call_8c012e2c(Object *, Frame *);
 extern "C" void operation_8c09e6d0(void *);
-extern "C" void operation_8c0f7e0c(Object *o)
+extern "C" void TObjEneSlime_update_8c0f7e0c(Object *o)
 {
     Frame frame;
     int t1;

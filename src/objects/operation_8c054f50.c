@@ -13,7 +13,7 @@ extern void call_8c05716c(int, int);
 extern void call_8c056b44(int, int);
 extern void call_8c057048(int, int);
 extern void operation_8c057438(void *, int);
-void operation_8c054f50(int a0, int a1, int a2)
+void TObjEneBm3Fly_v93_8c054f50(int a0, int a1, int a2)
 {
     switch (a1) {
     case 0:

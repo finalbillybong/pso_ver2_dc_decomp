@@ -23,7 +23,7 @@ struct Arg0_13c {
     short f332;
 };
 extern void operation_8c04a8ac(void *, int);
-void operation_8c179964(Object *o)
+void TItemWpnCSorcer_v53_8c179964(Object *o)
 {
     S_vv30 *v30;
     short v31;

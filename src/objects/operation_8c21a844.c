@@ -31,7 +31,7 @@ struct S_g8c4e2f40_42c {
     int f5c;
 };
 extern void TObjectShared_ctor_8c01d1ec(Object *);
-Object *operation_8c21a844(Object *o)
+Object *TObjDFUsoTower_ctor_8c21a844(Object *o)
 {
     TObjectShared_ctor_8c01d1ec(o);
     o->dispatch = (void *)0x8c278590;

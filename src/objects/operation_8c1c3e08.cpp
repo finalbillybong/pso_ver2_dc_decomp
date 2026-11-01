@@ -43,7 +43,7 @@ extern "C" void call_8c131bdc(Object *);
 extern "C" void operation_8c131c90(void *);
 extern "C" void call_8c131d30(Object *);
 extern "C" void operation_8c131de4(void *);
-extern "C" void operation_8c1c3e08(Object *o)
+extern "C" void TODragonflyMachine01_update_8c1c3e08(Object *o)
 {
     float t1;
     int t2;

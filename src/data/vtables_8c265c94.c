@@ -2,26 +2,26 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_effect(void);
-extern void update_effect(void);
+extern void TParticleCtrl_dtor_8c0a7238(void);
+extern void TParticleCtrl_update_8c0a72a0(void);
 extern void TObject_render_default_8c0111c8(void);
-extern void operation_8c0a7db4(void);
+extern void TParticleCtrl_render_shadow_8c0a7db4(void);
 extern void hierarchy_output(void);
-extern void destroy_effect_manager(void);
+extern void TParticleEditor_dtor_8c0a7ed0(void);
 extern void operation_8c03ceac(void);
-extern void effect_noop_9654(void);
-extern void start_effect_manager(void);
-extern void update_effect_manager(void);
-extern void stop_effect_manager(void);
+extern void TParticleEditor_render_shadow_8c0a9654(void);
+extern void TParticleEditor_v05_8c0a7f14(void);
+extern void TParticleEditor_v06_8c0a7f90(void);
+extern void TParticleEditor_v07_8c0a7f7c(void);
 
 /* 8c265c94: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c265c94[7] = {
     0,
     0,
-    destroy_effect,
-    update_effect,
+    TParticleCtrl_dtor_8c0a7238,
+    TParticleCtrl_update_8c0a72a0,
     TObject_render_default_8c0111c8,
-    operation_8c0a7db4,
+    TParticleCtrl_render_shadow_8c0a7db4,
     hierarchy_output
 };
 
@@ -29,12 +29,12 @@ VirtualFunction const vt_8c265c94[7] = {
 VirtualFunction const vt_8c265cb0[10] = {
     0,
     0,
-    destroy_effect_manager,
+    TParticleEditor_dtor_8c0a7ed0,
     operation_8c03ceac,
     TObject_render_default_8c0111c8,
-    effect_noop_9654,
+    TParticleEditor_render_shadow_8c0a9654,
     hierarchy_output,
-    start_effect_manager,
-    update_effect_manager,
-    stop_effect_manager
+    TParticleEditor_v05_8c0a7f14,
+    TParticleEditor_v06_8c0a7f90,
+    TParticleEditor_v07_8c0a7f7c
 };

@@ -37,9 +37,9 @@ struct S_vv10_s4 {
 extern int call_8c1aaabc(int);
 extern int operation_8c075894(void *, void *, int, int);
 extern void call_8c18e044(void *, void *, int, int, int);
-extern void create_effect_b29c8(void *, void *, void *, void *);
+extern void TTecGiZonde_create_8c0b29c8(void *, void *, void *, void *);
 extern void operation_8c07de9c();
-void operation_8c24fe20(Object *o)
+void TItemWpnMaserBeam_v49_8c24fe20(Object *o)
 {
     Frame frame;
     int v1;
@@ -84,7 +84,7 @@ void operation_8c24fe20(Object *o)
                 }
             }
             if ((&frame)->f00 != 0) {
-                create_effect_b29c8((void *)(o->f13c), (void *)&(&frame)->f5c, (void *)(&frame), (void *)v1);
+                TTecGiZonde_create_8c0b29c8((void *)(o->f13c), (void *)&(&frame)->f5c, (void *)(&frame), (void *)v1);
             }
         }
     }

@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c1066e0(void)
+void TShopWindowBase_v05_8c1066e0(void)
 {
 }

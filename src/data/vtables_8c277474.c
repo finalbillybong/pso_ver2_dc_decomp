@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void fn_8c1e1020(void);
-extern void refresh_follow_effect_8c1e1094(void);
-extern void operation_8c1e10b4(void);
+extern void TWindowKeyBoardBase_dtor_8c1e1020(void);
+extern void TWindowKeyBoardBase_update_8c1e1094(void);
+extern void TWindowKeyBoardBase_render_8c1e10b4(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0dc63c(void);
@@ -99,8 +99,8 @@ extern void operation_8c0134ec(void);
 extern void operation_8c1e4c40(void);
 extern void operation_8c1e49f0(void);
 extern void operation_8c1e4a20(void);
-extern void operation_8c1e4e44(void);
-extern void operation_8c1e4978(void);
+extern void TOContainerAncientEnemyCommon_dtor_8c1e4e44(void);
+extern void TOContainerAncientEnemy_dtor_8c1e4978(void);
 extern void operation_8c1e4774(void);
 extern void operation_8c1e4260(void);
 extern void operation_8c1e4858(void);
@@ -111,8 +111,8 @@ extern void operation_8c1e4160(void);
 extern void operation_8c1e4190(void);
 extern void operation_8c1e469c(void);
 extern void operation_8c1e4720(void);
-extern void operation_8c1e4424(void);
-extern void operation_8c1e4554(void);
+extern void TOContainerAncientItemCommon_dtor_8c1e4424(void);
+extern void TOContainerAncientItemCommon_v05_8c1e4554(void);
 extern void operation_8c1e40e8(void);
 extern void operation_8c085cf8(void);
 
@@ -120,9 +120,9 @@ extern void operation_8c085cf8(void);
 VirtualFunction const vt_8c277474[8] = {
     0,
     0,
-    fn_8c1e1020,
-    refresh_follow_effect_8c1e1094,
-    operation_8c1e10b4,
+    TWindowKeyBoardBase_dtor_8c1e1020,
+    TWindowKeyBoardBase_update_8c1e1094,
+    TWindowKeyBoardBase_render_8c1e10b4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c
@@ -238,7 +238,7 @@ VirtualFunction const vt_8c2774b0[91] = {
 VirtualFunction const vt_8c27761c[91] = {
     0,
     0,
-    operation_8c1e4e44,
+    TOContainerAncientEnemyCommon_dtor_8c1e4e44,
     operation_8c084074,
     operation_8c0840a8,
     operation_8c1e4af0,
@@ -333,7 +333,7 @@ VirtualFunction const vt_8c27761c[91] = {
 VirtualFunction const vt_8c277788[91] = {
     0,
     0,
-    operation_8c1e4978,
+    TOContainerAncientEnemy_dtor_8c1e4978,
     operation_8c084074,
     operation_8c0840a8,
     operation_8c1e4af0,
@@ -618,12 +618,12 @@ VirtualFunction const vt_8c277a60[91] = {
 VirtualFunction const vt_8c277bcc[91] = {
     0,
     0,
-    operation_8c1e4424,
+    TOContainerAncientItemCommon_dtor_8c1e4424,
     operation_8c084074,
     operation_8c0840a8,
     operation_8c1e4260,
     hierarchy_output,
-    operation_8c1e4554,
+    TOContainerAncientItemCommon_v05_8c1e4554,
     fn_8c01d694,
     fn_8c043724,
     operation_8c010500,

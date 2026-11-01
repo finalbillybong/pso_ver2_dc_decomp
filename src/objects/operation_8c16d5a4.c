@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c286568 S_g8c286568;
 extern void play_se_8c05fbf8(void *, int, int, int);
-void operation_8c16d5a4(int a0)
+void quest_op_sound_effect_8c16d5a4(int a0)
 {
     play_se_8c05fbf8((void *)(*(S_g8c286568 **)((char *)0x8c286568 + (a0 << 2))), 0, 0, 0);
 }

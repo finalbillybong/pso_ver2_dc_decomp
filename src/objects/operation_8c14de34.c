@@ -22,7 +22,7 @@ struct Object {
 };
 extern void operation_8c05426c(void *, int, int);
 extern void call_8c027090(Object *);
-void operation_8c14de34(Object *o)
+void TOTrapAncient02R_v89_8c14de34(Object *o)
 {
     float v3;
     float v4;

@@ -24,7 +24,7 @@ struct S_c8c1931b0 {
 };
 extern int operation_193348(unsigned int);
 extern S_c8c1931b0 *operation_8c1931b0(int);
-void operation_8c2552f8(Object *o)
+void TItemProShieldModel_v17_8c2552f8(Object *o)
 {
     char *v61;
     int t1;

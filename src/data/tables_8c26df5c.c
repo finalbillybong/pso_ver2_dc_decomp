@@ -2,9 +2,9 @@
 
 typedef void (*Function)(void);
 
-extern void operation_8c144094(void);
-extern void fn_8c14429c(void);
-extern void fn_8c14af90(void);
+extern void TBoss2DeRolLe_dtor_8c144094(void);
+extern void TBoss2DeRolLe_update_8c14429c(void);
+extern void TBoss2DeRolLe_render_8c14af90(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -39,7 +39,7 @@ extern void operation_8c046324(void);
 extern void operation_8c04639c(void);
 extern void operation_8c046414(void);
 extern void operation_8c046498(void);
-extern void operation_8c1445d8(void);
+extern void TBoss2DeRolLe_v37_8c1445d8(void);
 extern void operation_8c0133f8(void);
 extern void fn_8c045200(void);
 extern void object_blocked_8c013418(void);
@@ -55,13 +55,13 @@ extern void operation_45a8c(void);
 extern void operation_45b8c(void);
 extern void operation_45d6c(void);
 extern void operation_8c045484(void);
-extern void operation_8c14b6b0(void);
-extern void operation_8c14b6b4(void);
-extern void operation_8c14b6b8(void);
-extern void operation_8c14b6bc(void);
-extern void operation_8c14b6c0(void);
-extern void operation_8c14b6c4(void);
-extern void operation_8c14b6c8(void);
+extern void TBoss2DeRolLe_v53_8c14b6b0(void);
+extern void TBoss2DeRolLe_v54_8c14b6b4(void);
+extern void TBoss2DeRolLe_v55_8c14b6b8(void);
+extern void TBoss2DeRolLe_v56_8c14b6bc(void);
+extern void TBoss2DeRolLe_v57_8c14b6c0(void);
+extern void TBoss2DeRolLe_v58_8c14b6c4(void);
+extern void TBoss2DeRolLe_v59_8c14b6c8(void);
 extern void fn_8c046f2c(void);
 extern void fn_8c047090(void);
 extern void operation_8c0471b4(void);
@@ -71,9 +71,9 @@ extern void operation_8c047438(void);
 extern void operation_8c013408(void);
 extern void operation_8c01340c(void);
 extern void operation_8c013410(void);
-extern void operation_8c144694(void);
-extern void operation_8c1445e0(void);
-extern void operation_8c1445dc(void);
+extern void TBoss2DeRolLe_v69_8c144694(void);
+extern void TBoss2DeRolLe_v70_8c1445e0(void);
+extern void TBoss2DeRolLe_v71_8c1445dc(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
 extern void operation_8c0134b0(void);
@@ -95,13 +95,13 @@ extern void operation_8c05c804(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
-extern void operation_8c145438(void);
-extern void operation_8c1446c4(void);
+extern void TBoss2DeRolLe_v93_8c145438(void);
+extern void TBoss2DeRolLe_v94_8c1446c4(void);
 extern void operation_8c05b16c(void);
 extern void operation_8c05b19c(void);
 extern void fn_8c05b6b4(void);
 extern void operation_8c05b6fc(void);
-extern void operation_8c144b88(void);
+extern void TBoss2DeRolLe_v99_8c144b88(void);
 extern void operation_8c05b77c(void);
 extern void operation_8c05b7bc(void);
 extern void operation_8c05b7f8(void);
@@ -112,15 +112,15 @@ extern void operation_8c05babc(void);
 extern void apply_contact_position(void);
 extern void capture_current_contact(void);
 extern void fn_8c05bf78(void);
-extern void fn_8c14b3d8(void);
-extern void operation_8c14b3e4(void);
+extern void TBoss2DeRolLe_v110_8c14b3d8(void);
+extern void TBoss2DeRolLe_v111_8c14b3e4(void);
 
 Function const d_8c26df5c[114] = {
     0,
     0,
-    operation_8c144094,
-    fn_8c14429c,
-    fn_8c14af90,
+    TBoss2DeRolLe_dtor_8c144094,
+    TBoss2DeRolLe_update_8c14429c,
+    TBoss2DeRolLe_render_8c14af90,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -155,7 +155,7 @@ Function const d_8c26df5c[114] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    operation_8c1445d8,
+    TBoss2DeRolLe_v37_8c1445d8,
     operation_8c0133f8,
     fn_8c045200,
     object_blocked_8c013418,
@@ -171,13 +171,13 @@ Function const d_8c26df5c[114] = {
     operation_45b8c,
     operation_45d6c,
     operation_8c045484,
-    operation_8c14b6b0,
-    operation_8c14b6b4,
-    operation_8c14b6b8,
-    operation_8c14b6bc,
-    operation_8c14b6c0,
-    operation_8c14b6c4,
-    operation_8c14b6c8,
+    TBoss2DeRolLe_v53_8c14b6b0,
+    TBoss2DeRolLe_v54_8c14b6b4,
+    TBoss2DeRolLe_v55_8c14b6b8,
+    TBoss2DeRolLe_v56_8c14b6bc,
+    TBoss2DeRolLe_v57_8c14b6c0,
+    TBoss2DeRolLe_v58_8c14b6c4,
+    TBoss2DeRolLe_v59_8c14b6c8,
     fn_8c046f2c,
     fn_8c047090,
     operation_8c0471b4,
@@ -187,9 +187,9 @@ Function const d_8c26df5c[114] = {
     operation_8c013408,
     operation_8c01340c,
     operation_8c013410,
-    operation_8c144694,
-    operation_8c1445e0,
-    operation_8c1445dc,
+    TBoss2DeRolLe_v69_8c144694,
+    TBoss2DeRolLe_v70_8c1445e0,
+    TBoss2DeRolLe_v71_8c1445dc,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -211,13 +211,13 @@ Function const d_8c26df5c[114] = {
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
-    operation_8c145438,
-    operation_8c1446c4,
+    TBoss2DeRolLe_v93_8c145438,
+    TBoss2DeRolLe_v94_8c1446c4,
     operation_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,
     operation_8c05b6fc,
-    operation_8c144b88,
+    TBoss2DeRolLe_v99_8c144b88,
     operation_8c05b77c,
     operation_8c05b7bc,
     operation_8c05b7f8,
@@ -228,6 +228,6 @@ Function const d_8c26df5c[114] = {
     apply_contact_position,
     capture_current_contact,
     fn_8c05bf78,
-    fn_8c14b3d8,
-    operation_8c14b3e4
+    TBoss2DeRolLe_v110_8c14b3d8,
+    TBoss2DeRolLe_v111_8c14b3e4
 };

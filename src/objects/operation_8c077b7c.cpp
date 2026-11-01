@@ -35,7 +35,7 @@ typedef struct ObjectData {
     char unknown0[0x138];
     unsigned char f138;
 } ObjectData;
-extern "C" void operation_8c077b7c(Object *o)
+extern "C" void TItemWpnHandGun_v53_8c077b7c(Object *o)
 {
     if (((ObjectData *)o)->f138 == 6) {
         o->v23();

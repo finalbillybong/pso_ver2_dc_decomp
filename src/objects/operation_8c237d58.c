@@ -15,8 +15,8 @@ extern int g_8c44be04;
 extern S_g8c44bea0 *g_8c44bea0;
 extern S_L8c339ca0 g_8c339ca0;
 extern int get_current_area_8c032b10(void);
-extern void create_manager_8c25e570(void *);
-extern void create_object_8c253358(void *);
+extern void TObjTagChallenge_create_8c25e570(void *);
+extern void TObjCHTimeWin_create_8c253358(void *);
 extern void operation_8c237f48(int);
 void operation_8c237d58(int a0)
 {
@@ -41,11 +41,11 @@ void operation_8c237d58(int a0)
         if ((int)(v1) == -1) {
             return;
         }
-        create_manager_8c25e570(g_8c44bea0);
+        TObjTagChallenge_create_8c25e570(g_8c44bea0);
         if ((&g_8c339ca0)->f24 != 0) {
             return;
         }
-        create_object_8c253358(g_8c44bea0);
+        TObjCHTimeWin_create_8c253358(g_8c44bea0);
         return;
 L_8c237da4:;
         (&g_8c339ca0)->f08 = -1;

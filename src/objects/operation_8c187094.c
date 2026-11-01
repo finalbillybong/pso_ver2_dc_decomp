@@ -16,13 +16,13 @@ struct Object {
     int f44;
     int f48;
 };
-extern void initialize_position_controller(void *, void *);
+extern void TEditor_ctor_8c03c92c(void *, void *);
 extern void initialize_text_buffer(void *, void *, int, int, int);
-Object *operation_8c187094(Object *o, int a1)
+Object *TSetEvtScriptTest_ctor_8c187094(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;
-    initialize_position_controller((void *)o, (void *)a1);
+    TEditor_ctor_8c03c92c((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2720c8;
     o->tag = (int)(*(int *)0x8c319af8);
     o->size = 0x84;

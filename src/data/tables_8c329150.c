@@ -12,8 +12,8 @@ extern void operation_8c0e8ddc(void);
 extern void query_global_entries_8c0e8e28(void);
 extern void operation_8c1dd6d0(void);
 extern void query_global_entries_8c1dd704(void);
-extern void operation_8c1980b0(void);
-extern void fn_8c1981fc(void);
+extern void load_assets_ad_f_moyouring_8c1980b0(void);
+extern void release_assets_ad_f_moyouring_8c1981fc(void);
 extern void operation_8c04c270(void);
 extern void fn_8c04c2d4(void);
 extern void operation_8c1beb98(void);
@@ -28,8 +28,8 @@ extern void operation_8c13f3a0(void);
 extern void operation_8c13f3cc(void);
 extern void operation_8c19a6c4(void);
 extern void query_global_entries_8c19a6ec(void);
-extern void operation_8c1c2a70(void);
-extern void operation_8c1c2ad8(void);
+extern void load_assets_charamakingmot_8c1c2a70(void);
+extern void release_assets_charamakingmot_8c1c2ad8(void);
 extern void operation_8c1e38e0(void);
 extern void operation_8c1e3908(void);
 extern void operation_8c218214(void);
@@ -67,11 +67,11 @@ extern void query_global_entries_8c1afd44(void);
 extern void operation_8c15b200(void);
 extern void operation_8c15b258(void);
 extern void load_ad_draw_line_texture_8c227ac4(void);
-extern void operation_8c227b0c(void);
+extern void release_assets_AdDrawLineTask_8c227b0c(void);
 extern void load_prime_prs_8c2327cc(void);
-extern void operation_193764_8c2327ec(void);
+extern void release_assets_prime_8c2327ec(void);
 extern void load_item_pmt_8c157ff0(void);
-extern void operation_8c158088(void);
+extern void release_assets_ItemPMT_8c158088(void);
 
 const int d_8c329150[1] = {
     24
@@ -96,8 +96,8 @@ Function const d_8c32915c[70] = {
     query_global_entries_8c0e8e28,
     operation_8c1dd6d0,
     query_global_entries_8c1dd704,
-    operation_8c1980b0,
-    fn_8c1981fc,
+    load_assets_ad_f_moyouring_8c1980b0,
+    release_assets_ad_f_moyouring_8c1981fc,
     operation_8c04c270,
     fn_8c04c2d4,
     operation_8c1beb98,
@@ -112,8 +112,8 @@ Function const d_8c32915c[70] = {
     operation_8c13f3cc,
     operation_8c19a6c4,
     query_global_entries_8c19a6ec,
-    operation_8c1c2a70,
-    operation_8c1c2ad8,
+    load_assets_charamakingmot_8c1c2a70,
+    release_assets_charamakingmot_8c1c2ad8,
     operation_8c1e38e0,
     operation_8c1e3908,
     operation_8c218214,
@@ -151,9 +151,9 @@ Function const d_8c32915c[70] = {
     operation_8c15b200,
     operation_8c15b258,
     load_ad_draw_line_texture_8c227ac4,
-    operation_8c227b0c,
+    release_assets_AdDrawLineTask_8c227b0c,
     load_prime_prs_8c2327cc,
-    operation_193764_8c2327ec,
+    release_assets_prime_8c2327ec,
     load_item_pmt_8c157ff0,
-    operation_8c158088
+    release_assets_ItemPMT_8c158088
 };

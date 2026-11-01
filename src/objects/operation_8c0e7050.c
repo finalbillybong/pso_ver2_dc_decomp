@@ -18,7 +18,7 @@ struct Object {
 extern int operation_8c073e5c(void *, void *);
 extern void call_8c1c9334(Arg1 *, int);
 extern void call_8c1c9340(Arg1 *, int);
-int operation_8c0e7050(Object *o, Arg1 *a1)
+int TItemProArmor_v31_8c0e7050(Object *o, Arg1 *a1)
 {
     int t1;
     t1 = operation_8c073e5c((void *)o, (void *)a1);

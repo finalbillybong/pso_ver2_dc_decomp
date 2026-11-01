@@ -53,7 +53,7 @@ extern "C" void call_8c011ed8(void *);
 extern "C" void operator_delete_8c18de08(void *);
 extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c218b3c(Object *o, int a1)
+extern "C" Object *TItemDrop_dtor_8c218b3c(Object *o, int a1)
 {
     int v5;
     if (o != 0) {

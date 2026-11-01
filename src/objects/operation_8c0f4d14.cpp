@@ -131,7 +131,7 @@ extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c0f4e74(void *);
 extern "C" void call_8c05a108(Object *);
 extern "C" void update_context_blend(void *);
-extern "C" void operation_8c0f4d14(Object *o)
+extern "C" void TObjEneDf2Bringer_update_8c0f4d14(Object *o)
 {
     int t1;
     int t2;

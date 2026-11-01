@@ -12,7 +12,7 @@ extern void operation_8c013fc8(void);
 extern void call_8c22cd80(void);
 extern void operation_8c22f180(void);
 extern void anti_tamper_check_then_load_difficulty_8c199628(void);
-extern void operation_8c1980b0(void);
+extern void load_assets_ad_f_moyouring_8c1980b0(void);
 extern void load_ad_draw_line_texture_8c227ac4(void);
 extern void call_8c238fd4(void *);
 extern void operation_8c122ba0(void);
@@ -29,7 +29,7 @@ void operation_8c128e3c(void)
     call_8c22cd80();
     operation_8c22f180();
     anti_tamper_check_then_load_difficulty_8c199628();
-    operation_8c1980b0();
+    load_assets_ad_f_moyouring_8c1980b0();
     load_ad_draw_line_texture_8c227ac4();
     call_8c238fd4((void *)((void *)0x8c41ce5c));
     operation_8c122ba0();

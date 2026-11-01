@@ -14,7 +14,7 @@ struct Object {
     int f1d4;
 };
 extern void call_8c075730(Object *, void *, int);
-void operation_8c23b3f0(Object *o)
+void TItemWpnChineseFlypan2_v52_8c23b3f0(Object *o)
 {
     char *v1;
     v1 = (char *)o->f38;

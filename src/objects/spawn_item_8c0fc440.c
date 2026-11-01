@@ -18,7 +18,7 @@ extern int can_spawn_8c0fca30(void *);
 extern void *heap_alloc_8c122700(void *, int);
 extern void initialize_base_8c0db1d0(Item *, void *);
 extern void bind_item_8c0fc508(Item *, unsigned short);
-Item *spawn_item_8c0fc440(unsigned short id)
+Item *TWindowLockOn_ctor_8c0fc440(unsigned short id)
 {
     Item *item;
     void *owner;

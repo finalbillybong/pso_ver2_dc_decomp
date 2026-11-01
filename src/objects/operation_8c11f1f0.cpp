@@ -33,7 +33,7 @@ typedef struct ObjectData {
 extern "C" int operation_8c11f448(int, float);
 extern "C" void update_mode_8c0eea34(void *);
 extern "C" int operation_8c03d338(void);
-extern "C" void operation_8c11f1f0(Object *o)
+extern "C" void TORainbowCave01_update_8c11f1f0(Object *o)
 {
     int v1;
     int t1;

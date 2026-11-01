@@ -63,7 +63,7 @@ extern "C" void call_8c391c94(void);
 extern "C" void call_8c3aa716(void *);
 extern "C" void call_8c391cc4(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c1c02d4(Object *o)
+extern "C" void TOLightMachine01_render_8c1c02d4(Object *o)
 {
     int t1;
     t1 = o->v11(((ObjectData *)o)->f94, ((ObjectData *)o)->f98);

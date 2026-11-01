@@ -2,7 +2,7 @@
 
 #define TObject_ctor_8c0330e4 ((void (*)(EffectController *, void *))0x8c0330e4)
 
-EffectController *construct_effect_controller(EffectController *object,
+EffectController *TDuelEffectCtrl_ctor_8c24e6d8(EffectController *object,
                                                void *parent, unsigned char mode) {
     TObject_ctor_8c0330e4(object, parent);
     object->dispatch = (void *)0x8c27e49c;

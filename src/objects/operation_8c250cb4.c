@@ -10,7 +10,7 @@ struct Object {
     Arg0_238 *f238;
 };
 extern void operation_172c14(void *, int);
-void operation_8c250cb4(Object *o)
+void TItemWpnOnWindCane_v53_8c250cb4(Object *o)
 {
     operation_172c14((void *)(((char *)o + 0x234)), (int)(o->f238));
 }

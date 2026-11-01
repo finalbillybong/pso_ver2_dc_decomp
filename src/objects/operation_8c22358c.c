@@ -11,7 +11,7 @@ struct S_vv1 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c5060a0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c2232f8(void *, int, int, int, int);
+extern void TItemLockCountCtrl_ctor_8c2232f8(void *, int, int, int, int);
 void operation_8c22358c(void)
 {
     int t1;
@@ -26,7 +26,7 @@ void operation_8c22358c(void)
     }
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x30);
     if (t1 != 0) {
-        operation_8c2232f8((void *)t1, 0, 0xc, (int)((void *)0x8c223640), (int)((void *)0x8c223660));
+        TItemLockCountCtrl_ctor_8c2232f8((void *)t1, 0, 0xc, (int)((void *)0x8c223640), (int)((void *)0x8c223660));
     }
     g_8c5060a0 = (int)(t1);
 }

@@ -26,7 +26,7 @@ extern void TObject_ctor_8c0330e4(Object *, int);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void call_8c1ab8e8(Object *, int);
 extern void call_8c1ab894(Object *, int);
-Object *initialize_tracker_8c1ab508(Object *o, int a1, int a2, int a3, int a4, int a5)
+Object *TFontSmallHelp_ctor_8c1ab508(Object *o, int a1, int a2, int a3, int a4, int a5)
 {
     Object **home = &o;
     S_c8c021ef8 *t1;

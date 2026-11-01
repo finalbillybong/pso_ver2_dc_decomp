@@ -32,7 +32,7 @@ typedef struct ObjectData {
 extern int g_8c30bd3c;
 extern S_g8c44be98 *g_8c44be98;
 extern "C" void TObjectShared_ctor_8c01d1ec(Object *, void *);
-extern "C" Object *operation_8c10b2b4(Object *o, int a1)
+extern "C" Object *TShopGenerator_ctor_8c10b2b4(Object *o, int a1)
 {
     Object **home = &o;
     int v1;

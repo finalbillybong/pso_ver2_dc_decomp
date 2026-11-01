@@ -30,7 +30,7 @@ extern void operator_delete_8c18de08(void *);
 extern void request_resource_release(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1e51b8(Object *o, int a1)
+Object *TWindowMakeTeam_dtor_8c1e51b8(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

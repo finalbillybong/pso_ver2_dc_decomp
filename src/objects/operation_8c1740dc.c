@@ -23,7 +23,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern void request_resource_release(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1740dc(Object *o, int a1)
+Object *TObjItemNameEntry_dtor_8c1740dc(Object *o, int a1)
 {
     S_vv6 *v6;
     if (o != 0) {

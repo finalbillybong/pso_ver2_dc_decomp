@@ -36,7 +36,7 @@ extern S_L8c33a1d8 g_8c33a1d8;
 extern "C" char gc_8c33a1d8[];
 extern "C" void call_8c237cb0(Object *);
 extern "C" int call_8c18e6fc(Frame *);
-extern "C" void operation_8c237a1c(Object *o)
+extern "C" void TChallenge_update_8c237a1c(Object *o)
 {
     Frame frame;
     int t1;

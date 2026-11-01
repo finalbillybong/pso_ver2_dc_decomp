@@ -23,7 +23,7 @@ extern void operation_8c1a7964(void *);
 extern void call_8c1a79d8(Object *);
 extern int call_8c18e8a0(void *, int);
 extern void operation_8c1a7cc4(Object *);
-void operation_8c1a76fc(Object *o)
+void TQuestScriptChecker_update_8c1a76fc(Object *o)
 {
     int t1;
     if (o->f80 != 0) {

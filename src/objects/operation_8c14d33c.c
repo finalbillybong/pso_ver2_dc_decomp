@@ -17,7 +17,7 @@ extern int g_8c4da628;
 extern void call_8c0344f0(void *, int, int, int);
 extern int get_current_area_8c032b10(void);
 extern void call_8c05fd7c(int, Object *, void *, int, int);
-void operation_8c14d33c(Object *o)
+void TOTrapAncient02_v91_8c14d33c(Object *o)
 {
     int v2;
     int v1;

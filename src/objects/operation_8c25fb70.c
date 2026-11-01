@@ -10,7 +10,7 @@ struct Object {
 };
 extern void call_8c25fba0(void);
 extern void operation_8c25fbdc(void *);
-void operation_8c25fb70(Object *o)
+void TObjTailsTailsMove_update_8c25fb70(Object *o)
 {
     if (o->f28 != 0) {
         if (o->f28 != 1) {

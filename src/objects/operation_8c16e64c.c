@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_vv1_0 S_vv1_0;
 extern void call_8c09e408(int, int, void *);
-void operation_8c16e64c(int a0)
+void quest_op_construct_delayed_enemy_8c16e64c(int a0)
 {
     char *v1;
     int v2;

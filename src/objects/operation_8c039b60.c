@@ -24,7 +24,7 @@ struct Arg0_dc {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c039b60(Object *o)
+void TObjEneMoja_v68_8c039b60(Object *o)
 {
     switch (o->f39c) {
     case 2:

@@ -31,7 +31,7 @@ extern S_c8c0744dc *find_record_8c0744dc(int);
 extern void clear_effect_bit0(void *);
 extern void set_effect_bit0(void *);
 extern void call_8c0a7608(void *, void *);
-void operation_8c25583c(Object *o)
+void TItemEffArmorParticle_update_8c25583c(Object *o)
 {
     int v1;
     int v23;

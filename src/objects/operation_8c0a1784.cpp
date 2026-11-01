@@ -29,7 +29,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c46efc8 g_8c46efc8;
 extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c0a1784(Object *o, int a1)
+extern "C" Object *TCameraCtrl_dtor_8c0a1784(Object *o, int a1)
 {
     int v1;
     int v2;

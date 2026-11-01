@@ -17,7 +17,7 @@ struct Frame {
 };
 extern void call_8c075894(Object *, void *, int, Frame *);
 extern void create_effect_777c(void *, int);
-void operation_8c17be70(Object *o)
+void TItemWpnChainSaw_v49_8c17be70(Object *o)
 {
     Frame frame;
     call_8c075894(o, (void *)(o->f13c), 2, (Frame *)((&frame)));

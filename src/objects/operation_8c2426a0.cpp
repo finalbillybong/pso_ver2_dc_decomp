@@ -84,7 +84,7 @@ extern "C" void request_resource_release(void *);
 extern "C" void operation_8c2446a4(Object *);
 extern "C" int operation_8c2446d0(Object *);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void construct_effect_controller(void *, void *, unsigned char);
+extern "C" void TDuelEffectCtrl_ctor_8c24e6d8(void *, void *, unsigned char);
 extern "C" void operation_8c244688(void);
 extern "C" void operation_8c2426a0(Object *o)
 {
@@ -186,7 +186,7 @@ extern "C" void operation_8c2426a0(Object *o)
         }
         t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x28);
         if (t7 != 0) {
-            construct_effect_controller((void *)t7, (void *)o, (unsigned char)0);
+            TDuelEffectCtrl_ctor_8c24e6d8((void *)t7, (void *)o, (unsigned char)0);
         }
         o->f30 = 0x96;
         o->f24 = 8;

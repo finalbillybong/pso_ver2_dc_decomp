@@ -73,7 +73,7 @@ extern "C" int call_8c1aaabc(int);
 extern "C" void call_8c076af4(Object *, void *, int, float);
 extern "C" void operation_1abd98_8c1ac468();
 extern "C" void operation_1ac120();
-extern "C" void operation_8c240b90(Object *o)
+extern "C" void TItemWpnTwinGun_v49_8c240b90(Object *o)
 {
     int v2;
     S_vv1 *v1;

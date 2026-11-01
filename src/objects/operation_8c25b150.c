@@ -12,7 +12,7 @@ struct Frame {
 };
 extern int operation_8c03d338(void);
 extern void operation_8c0c5478(int, Frame *, float);
-void operation_8c25b150(int a0)
+void TOSwitchTimer_render_8c25b150(int a0)
 {
     Frame frame;
     int t1;

@@ -76,7 +76,7 @@ public:
 typedef struct Arg0_13cData {
 
 } Arg0_13cData;
-extern "C" void operation_8c24dae4(Object *o)
+extern "C" void TItemObjSolAtomizer_v42_8c24dae4(Object *o)
 {
     o->f13c->v59();
 }

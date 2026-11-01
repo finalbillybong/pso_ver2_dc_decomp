@@ -10,7 +10,7 @@ struct S_g8c469c60 {
 };
 extern void call_8c37d534(void *);
 extern void operation_8c105320(int);
-void operation_8c08340c(void)
+void release_assets_TObjContainerIdo_8c08340c(void)
 {
     call_8c37d534((void *)((*(S_g8c469c60 **)0x8c469c60)->f00));
     operation_8c105320((int)(*(S_g8c469c60 **)0x8c469c60));

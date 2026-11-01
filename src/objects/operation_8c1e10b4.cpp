@@ -21,7 +21,7 @@ typedef struct ObjectData {
 extern "C" int operation_8c1e2330(void *);
 extern "C" void call_8c0db5d4(Object *, int);
 extern "C" void call_8c1e1120(Object *, int);
-extern "C" void operation_8c1e10b4(Object *o)
+extern "C" void TWindowKeyBoardBase_render_8c1e10b4(Object *o)
 {
     int t1;
     int t2;

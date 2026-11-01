@@ -33,7 +33,7 @@ extern void request_resource_release(void *);
 extern void operation_8c18cbb0(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1d9fa0(Object *o, int a1)
+Object *TWindowSubLog_dtor_8c1d9fa0(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

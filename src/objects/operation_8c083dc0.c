@@ -10,7 +10,7 @@ extern S_g8c469c84 *g_8c469c84;
 extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
 extern void call_8c03dc40(void *, int);
-void operation_8c083dc0(void)
+void release_assets_fe_obj_hako01_hahen02_8c083dc0(void)
 {
     call_8c37d534(g_8c469c84);
     game_free_8c011ec0(g_8c469c84);

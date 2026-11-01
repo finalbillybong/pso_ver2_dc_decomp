@@ -9,7 +9,7 @@ struct Object {
     int f3e4;
 };
 extern int capture_current_contact(void *);
-int operation_8c0c921c(Object *o)
+int TObjEneRe4Sorcerer_v108_8c0c921c(Object *o)
 {
     int t1;
     t1 = capture_current_contact((void *)o);

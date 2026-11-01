@@ -76,13 +76,13 @@ struct Arg0_38_4 {
 };
 extern int g_8c3166d8;
 extern S_g8c4db140 *g_8c4db140;
-extern "C" void call_8c15c7cc(Object *);
+extern "C" void TOSensor_ctor_8c15c7cc(Object *);
 extern "C" void operation_8c112f78(void *);
-extern "C" Object *operation_8c15cb78(Object *o, int a1, int a2)
+extern "C" Object *TOSensorAncient01_ctor_8c15cb78(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;
-    call_8c15c7cc(o);
+    TOSensor_ctor_8c15c7cc(o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c26ef38;
     ((ObjectData *)o)->tag = (int)(g_8c3166d8);
     ((ObjectData *)o)->size = 0x12c;

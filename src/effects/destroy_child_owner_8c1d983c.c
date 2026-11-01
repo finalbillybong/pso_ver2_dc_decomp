@@ -4,7 +4,7 @@ typedef char check_layout[sizeof(Child)==8 && (unsigned long)&((Child *)0)->flag
 extern char effect_vtable[];
 extern void *heap;
 extern void TObject_dtor_8c03311c(Effect *,int),release_at(void *,void *);
-Effect *destroy_child_owner_8c1d983c(Effect *o,short mode) {
+Effect *TObjCity_Season_FireWork_dtor_8c1d983c(Effect *o,short mode) {
     if(o) {
         o->vtable=effect_vtable;
         if(o->child) { o->child->flags|=1; o->child=0; }

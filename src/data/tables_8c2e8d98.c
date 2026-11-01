@@ -16,7 +16,7 @@ extern void TOSensorGeneral01_create_8c15d450(void);
 extern void TObjFogCollision_create_8c136738(void);
 extern void TObjRoomId_create_8c185394(void);
 extern void TObjEvtCollision_create_8c188120(void);
-extern void operation_8c09fc80(void);
+extern void TEF_LensFlare_ctor_8c09fc80(void);
 extern void TObjQuestCol_create_8c034098(void);
 extern void TObjQuestColA_create_8c0340dc(void);
 extern void TObjCollision_create_8c0104a0(void);
@@ -105,7 +105,7 @@ const Record_8c2e8d98 d_8c2e8d98[60] = {
     { 7, (void *)TObjFogCollision_create_8c136738, 250000.0f, 0 },
     { 14, (void *)TObjRoomId_create_8c185394, 250000.0f, 0 },
     { 8, (void *)TObjEvtCollision_create_8c188120, 250000.0f, 0 },
-    { 17, (void *)operation_8c09fc80, 1e+08f, 0 },
+    { 17, (void *)TEF_LensFlare_ctor_8c09fc80, 1e+08f, 0 },
     { 18, (void *)TObjQuestCol_create_8c034098, 250000.0f, 0 },
     { 21, (void *)TObjQuestColA_create_8c0340dc, 250000.0f, 0 },
     { 9, (void *)TObjCollision_create_8c0104a0, 250000.0f, 0 },
@@ -168,7 +168,7 @@ const Record_8c2e9158 d_8c2e9158[61] = {
     { 7, (void *)TObjFogCollision_create_8c136738, 250000.0f, 0 },
     { 14, (void *)TObjRoomId_create_8c185394, 250000.0f, 0 },
     { 8, (void *)TObjEvtCollision_create_8c188120, 250000.0f, 0 },
-    { 17, (void *)operation_8c09fc80, 1e+08f, 0 },
+    { 17, (void *)TEF_LensFlare_ctor_8c09fc80, 1e+08f, 0 },
     { 18, (void *)TObjQuestCol_create_8c034098, 250000.0f, 0 },
     { 21, (void *)TObjQuestColA_create_8c0340dc, 250000.0f, 0 },
     { 9, (void *)TObjCollision_create_8c0104a0, 250000.0f, 0 },
@@ -230,7 +230,7 @@ const Record_8c2e9528 d_8c2e9528[57] = {
     { 6, (void *)TObjEnvSound_create_8c100dd0, 250000.0f, 0 },
     { 9, (void *)TObjCollision_create_8c0104a0, 250000.0f, 0 },
     { 20, (void *)TObjMapCsn_create_8c1a1400, 250000.0f, 0 },
-    { 17, (void *)operation_8c09fc80, 1e+08f, 0 },
+    { 17, (void *)TEF_LensFlare_ctor_8c09fc80, 1e+08f, 0 },
     { 2, (void *)TObjAreaWarpForest_create_8c033fcc, 250000.0f, 0 },
     { 3, (void *)TObjMapWarpForest_create_8c034010, 250000.0f, 0 },
     { 27, (void *)TObjAreaWarpQuest_create_8c034274, 250000.0f, 0 },
@@ -290,7 +290,7 @@ const Record_8c2e98b8 d_8c2e98b8[71] = {
     { 6, (void *)TObjEnvSound_create_8c100dd0, 250000.0f, 0 },
     { 9, (void *)TObjCollision_create_8c0104a0, 250000.0f, 0 },
     { 20, (void *)TObjMapCsn_create_8c1a1400, 250000.0f, 0 },
-    { 17, (void *)operation_8c09fc80, 1e+08f, 0 },
+    { 17, (void *)TEF_LensFlare_ctor_8c09fc80, 1e+08f, 0 },
     { 2, (void *)TObjAreaWarpForest_create_8c033fcc, 250000.0f, 0 },
     { 3, (void *)TObjMapWarpForest_create_8c034010, 250000.0f, 0 },
     { 27, (void *)TObjAreaWarpQuest_create_8c034274, 250000.0f, 0 },

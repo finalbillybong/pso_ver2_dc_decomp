@@ -15,7 +15,7 @@ struct Object {
     int f28;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c25c454(Object *o, int a1)
+Object *TObjWarnChime_ctor_8c25c454(Object *o, int a1)
 {
     int v1;
     int v2;

@@ -6,14 +6,14 @@ typedef struct Vector3 {
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern void set_configuration_pair(void *, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_grid_8c1566f0(void *, unsigned int);
+extern void TWindowMenu_ctor_8c1566f0(void *, unsigned int);
 int operation_8c156c24(int a0, int a1)
 {
     int t1;
     set_configuration_pair((void *)a0, a1);
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x9c);
     if (t1 != 0) {
-        initialize_grid_8c1566f0((void *)t1, (unsigned int)a1);
+        TWindowMenu_ctor_8c1566f0((void *)t1, (unsigned int)a1);
     }
     return t1;
 }

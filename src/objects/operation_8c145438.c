@@ -21,7 +21,7 @@ extern void operation_8c14a4a4(void *, int, int);
 extern void operation_8c14a5ec(void *, int);
 extern void call_8c14a6fc(int, int);
 extern void call_8c14ad80(int, int);
-void operation_8c145438(int a0, int a1, int a2)
+void TBoss2DeRolLe_v93_8c145438(int a0, int a1, int a2)
 {
     switch (a1) {
     case 0:

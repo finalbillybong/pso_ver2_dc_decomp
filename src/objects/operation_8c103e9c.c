@@ -27,7 +27,7 @@ struct Arg0_20 {
 };
 extern int call_8c05b228(short);
 extern int active_unflagged_8c05b2dc(void *);
-void operation_8c103e9c(Object *o)
+void TObjEneDf2Bringer_Eff_Rush_update_8c103e9c(Object *o)
 {
     int v1;
     int t1;

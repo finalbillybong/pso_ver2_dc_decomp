@@ -20,7 +20,7 @@ struct Arg0_3d8 {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c0e6988(Object *o)
+void TObjEneDimedian_v90_8c0e6988(Object *o)
 {
     int t1;
     o->f3ac = 1;

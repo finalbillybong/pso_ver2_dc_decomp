@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c218b3c(void);
+extern void TItemDrop_dtor_8c218b3c(void);
 extern void TObject_update_default_8c0111c4(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
@@ -15,7 +15,7 @@ extern void operation_8c21a578(void);
 VirtualFunction const vt_8c278350[7] = {
     0,
     0,
-    operation_8c218b3c,
+    TItemDrop_dtor_8c218b3c,
     TObject_update_default_8c0111c4,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,

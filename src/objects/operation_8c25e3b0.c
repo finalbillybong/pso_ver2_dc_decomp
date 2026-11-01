@@ -37,12 +37,12 @@ extern char g_8c41cba0[];
 extern void operation_8c1cc690(void);
 extern int pair_grid_view_ready(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c1afdb4(int, Object *, void *, void *, float);
+extern void TAdGuideButton_ctor_8c1afdb4(int, Object *, void *, void *, float);
 extern int operation_8c01d8a8(void *, int);
 extern void call_8c119c78(Arg0_28 *);
 extern void request_resource_release(void *);
 extern void select_mode15_8c1cc5e8(void);
-void operation_8c25e3b0(Object *o)
+void TAdPSOConv_update_8c25e3b0(Object *o)
 {
     char *v65;
     int v6;
@@ -70,7 +70,7 @@ void operation_8c25e3b0(Object *o)
             if (t2 == 0) {
                 return;
             }
-            call_8c1afdb4(t2, o, (void *)((*(S_g8c467180 **)0x8c467180)->f80->f04), (void *)((g_8c3405d4 + 0x14)), -1.0f / (o->f28->f5c + 0.1495f));
+            TAdGuideButton_ctor_8c1afdb4(t2, o, (void *)((*(S_g8c467180 **)0x8c467180)->f80->f04), (void *)((g_8c3405d4 + 0x14)), -1.0f / (o->f28->f5c + 0.1495f));
             return;
         }
         t3 = pair_grid_view_ready((void *)(o->f28));

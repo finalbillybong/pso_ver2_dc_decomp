@@ -19,13 +19,13 @@ struct S_c8c1d50b4 {
     char unknown0[0x80];
     unsigned short f80;
 };
-extern S_c8c1d50b4 *call_8c1d50b4(void *, void *);
+extern S_c8c1d50b4 *TWindowSubEquipKind_ctor_8c1d50b4(void *, void *);
 extern void call_8c1cd38c(int, void *);
 extern void call_8c1d56a4(S_c8c1d50b4 *);
 S_c8c1d50b4 *operation_8c190f00(void)
 {
     S_c8c1d50b4 *t1;
-    t1 = call_8c1d50b4((void *)0x8c2876d0, (void *)0x8c2876d8);
+    t1 = TWindowSubEquipKind_ctor_8c1d50b4((void *)0x8c2876d0, (void *)0x8c2876d8);
     call_8c1cd38c((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f210);
     t1->f80 = (t1->f80 & 0xffff) | 0x10;
     call_8c1d56a4(t1);

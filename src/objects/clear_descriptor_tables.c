@@ -5,7 +5,7 @@ extern Descriptor descriptors[];
 extern void *instances[], *resources[], *heap, *parent;
 extern Quad quads[];
 extern void *heap_alloc_8c122700(void *,unsigned int);
-extern void initialize0_at(void *,void *,Descriptor *),initialize1_at(void *,void *,Descriptor *),initialize2_at(void *,void *,Descriptor *),initialize3_at(void *,void *,Descriptor *),initialize4_at(void *,void *,Descriptor *),append_at(void *,void *);
+extern void TQuadSpriteNormal_ctor_8c040790(void *,void *,Descriptor *),TQuadSpriteScl_ctor_8c040a44(void *,void *,Descriptor *),TQuadSpriteCol_ctor_8c040254(void *,void *,Descriptor *),initialize3_at(void *,void *,Descriptor *),TQuadSpriteSclColRot_ctor_8c0419b8(void *,void *,Descriptor *),append_at(void *,void *);
 void clear_descriptor_tables(void) {
     { int i; for(i=0;i<110;++i) { *(void **)((char *)&descriptors->resource+i*40)=0; *(void **)((char *)instances+((unsigned int)i<<2))=0; } }
     { int i; for(i=0;i<110;++i) *(void **)((char *)&descriptors->resource+i*40)=0; }

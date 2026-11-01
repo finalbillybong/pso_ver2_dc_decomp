@@ -14,7 +14,7 @@ struct Object {
 extern int lookup_low_id(int);
 extern void call_8c2600e0(Object *);
 extern void update_target_timer_8c2601a8(void *);
-void operation_8c260090(Object *o)
+void TObjDeadListWin_update_8c260090(Object *o)
 {
     int t1;
     t1 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));

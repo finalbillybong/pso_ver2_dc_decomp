@@ -32,7 +32,7 @@ extern void call_8c199b74(void *);
 extern void call_8c199bc4(void *);
 extern void call_8c0db30c(Object *);
 extern void update_view_nodes(void *, void *);
-void operation_8c198f70(Object *o)
+void TWindowSubCustomSelect_update_8c198f70(Object *o)
 {
     int t1;
     int t2;

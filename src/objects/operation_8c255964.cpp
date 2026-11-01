@@ -34,7 +34,7 @@ public:
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" void operation_8c255964(Object *o)
+extern "C" void TItemProArmorRecalc_v17_8c255964(Object *o)
 {
     o->v23();
 }

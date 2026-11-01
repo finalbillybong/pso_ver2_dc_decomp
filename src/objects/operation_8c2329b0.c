@@ -76,8 +76,8 @@ extern void sprintf_8c12b048(void *, int, ...);
 extern int operation_8c0366dc(int);
 extern int call_8c036708(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c198294(void *, int);
-extern void call_8c199688(int, Object *, int);
+extern void TAdBack_ctor_8c198294(void *, int);
+extern void TAdTitle_ctor_8c199688(int, Object *, int);
 extern void call_8c232fa0(Object *);
 Object *operation_8c2329b0(Object *o)
 {
@@ -179,11 +179,11 @@ Object *operation_8c2329b0(Object *o)
     }
     t11 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
     if (t11 != 0) {
-        operation_8c198294((void *)t11, (int)o);
+        TAdBack_ctor_8c198294((void *)t11, (int)o);
     }
     t12 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xac);
     if (t12 != 0) {
-        call_8c199688(t12, o, 1);
+        TAdTitle_ctor_8c199688(t12, o, 1);
     }
     call_8c232fa0(o);
     return o;

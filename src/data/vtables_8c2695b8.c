@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c1032d0(void);
+extern void TRaderPlayer_dtor_8c1032d0(void);
 extern void TObject_update_default_8c0111c4(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
@@ -12,7 +12,7 @@ extern void hierarchy_output(void);
 VirtualFunction const vt_8c2695b8[7] = {
     0,
     0,
-    destroy_object_8c1032d0,
+    TRaderPlayer_dtor_8c1032d0,
     TObject_update_default_8c0111c4,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,

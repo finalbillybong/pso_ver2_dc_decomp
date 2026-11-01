@@ -18,7 +18,7 @@ struct Object {
 };
 extern int g_8c33a8f0;
 extern void call_8c075398(Object *, int, int);
-Object *operation_8c23ffa8(Object *o, int a1, int a2)
+Object *TItemWpnShuriken_ctor_8c23ffa8(Object *o, int a1, int a2)
 {
     call_8c075398(o, a1, a2);
     o->dispatch = (void *)0x8c27c2b8;

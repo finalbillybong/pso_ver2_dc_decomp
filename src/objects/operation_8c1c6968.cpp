@@ -96,7 +96,7 @@ extern "C" float squared_distance_xz(void *, void *);
 extern "C" int lookup_low_id(int);
 extern "C" S_c8c0744dc *find_record_8c0744dc(int);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void call_8c0edfd0(int, int, int, int, void *);
+extern "C" void TFontSmallTask_ctor_1_8c0edfd0(int, int, int, int, void *);
 extern "C" void operation_8c1c6968(Object *o)
 {
     int v1;
@@ -127,7 +127,7 @@ extern "C" void operation_8c1c6968(Object *o)
             if (t5 > t6) {
                 t7 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x50);
                 if (t7 != 0) {
-                    call_8c0edfd0(t7, v1, -0x10000, 0x14, (void *)((g_8c328d24 + 0xe)));
+                    TFontSmallTask_ctor_1_8c0edfd0(t7, v1, -0x10000, 0x14, (void *)((g_8c328d24 + 0xe)));
                 }
             }
         }

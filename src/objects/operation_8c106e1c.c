@@ -72,7 +72,7 @@ extern void play_se_8c05fbf8(int, int, int, int);
 extern int operation_8c106760(Object *);
 extern int operation_8c1c74dc(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_selection_child(void *, void *, int, int, int);
+extern void TWindowInputNumber_ctor_8c1bd074(void *, void *, int, int, int);
 extern int operation_8c156c24(int, int);
 extern void operation_8c156d30(Arg0_394 *, void *, int, int);
 extern void call_8c156f50(Arg0_394 *);
@@ -125,7 +125,7 @@ void operation_8c106e1c(Object *o)
                 *(Block8 *)&(&frame)->f08 = *(Block8 *)&g_8c30b6bc;
                 t8 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
                 if (t8 != 0) {
-                    initialize_selection_child((void *)t8, (void *)(&(&frame)->f08.f00), 1, t7, 1);
+                    TWindowInputNumber_ctor_8c1bd074((void *)t8, (void *)(&(&frame)->f08.f00), 1, t7, 1);
                 }
                 o->f398 = (int)(t8);
                 o->f24 = 3;

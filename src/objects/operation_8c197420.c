@@ -33,7 +33,7 @@ extern void initialize_base_8c0db1d0(void *, int);
 extern int game_malloc_8c011ecc(int);
 extern void operation_8c199b20(int, int);
 extern void call_8c1979e8(Object *);
-Object *operation_8c197420(Object *o)
+Object *TWindowSubCustomEquip_ctor_8c197420(Object *o)
 {
     Object **home = &o;
     int t1;

@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c23fa8c(int, int, int, int, float);
+extern void TItemShootRocketPunch_ctor_8c23fa8c(int, int, int, int, float);
 extern int operation_1abf30(void *, void *, void *, float);
 extern void call_8c1ac06c(int, int, int);
 extern void reparent_hierarchy_node(void *, void *);
@@ -18,7 +18,7 @@ int operation_8c23fa00(int a0, int a1, int a2, float f0)
     if (a0 != 0) {
         t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x64);
         if (t1 != 0) {
-            call_8c23fa8c(t1, a0, a1, a2, f0);
+            TItemShootRocketPunch_ctor_8c23fa8c(t1, a0, a1, a2, f0);
         }
         t2 = operation_1abf30((void *)a0, (void *)a1, (void *)a2, f0);
         if (t1 != 0 && t2 != 0) {

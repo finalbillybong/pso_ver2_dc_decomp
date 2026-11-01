@@ -16,7 +16,7 @@ struct Arg2 {
     Vector3 f00;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c013528(Object *o, int a1, Arg2 *a2)
+Object *TFog_ctor_8c013528(Object *o, int a1, Arg2 *a2)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c261160;

@@ -73,7 +73,7 @@ extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c013e74(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void call_8c04a9e0(Object *, int);
-extern "C" void operation_8c05157c(Object *o)
+extern "C" void TObjEneLappy_render_8c05157c(Object *o)
 {
     int v4;
     int v12;

@@ -11,7 +11,7 @@ typedef struct S_vv5 S_vv5;
 struct S_vv5 {
     Block80 f00;
 };
-void operation_8c17057c(int a0)
+void quest_op_prepare_npc_visual_8c17057c(int a0)
 {
     S_vv5 *v5;
     v5 = (S_vv5 *)(*(int *)((char *)((char *)*(S_g8c4db404 **)0x8c4db404 + 0x0) + ((unsigned short)a0 << 2)) + *(int *)0x8c4db400);

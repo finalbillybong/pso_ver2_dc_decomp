@@ -27,7 +27,7 @@ extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_base_8c0db1d0(void *, int);
 extern void call_8c0dc854(S_c8c122700 *);
 extern void call_8c1f1c28(void *, int);
-S_c8c122700 *operation_8c1f1b58(Object *o, int a1)
+S_c8c122700 *TWindowComCard_ctor_2_8c1f1b58(Object *o, int a1)
 {
     int t1;
     S_c8c122700 *t2;

@@ -14,7 +14,7 @@ extern int g_8c4689f0;
 extern void njRotateZ_8c37e02c(int, void *);
 extern void njTranslate_8c3829bc(int, float, float, float);
 extern void operation_8c074ce4(void);
-void operation_8c17a9b0(Object *o)
+void TItemWpnPsychowand_v57_8c17a9b0(Object *o)
 {
     switch (g_8c4689f0) {
     case 2:

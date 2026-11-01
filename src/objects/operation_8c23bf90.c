@@ -38,7 +38,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void njRotateX_8c37dd28(int, int);
 extern void call_8c3aa716(Arg0_5c *);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c23bf90(Object *o)
+void TItemShootDorillArm_render_8c23bf90(Object *o)
 {
     S_vv1 *v1;
     if (o->f5c != 0 && o->f60 != 0) {

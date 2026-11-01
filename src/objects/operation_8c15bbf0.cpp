@@ -31,7 +31,7 @@ extern "C" void call_8c15c4e0(Object *);
 extern "C" void call_8c15c5c4(Object *);
 extern "C" void operation_8c15c66c(void *);
 extern "C" void operation_8c15c6cc(void *);
-extern "C" void operation_8c15bbf0(Object *o)
+extern "C" void TCheckRoomSequence_v05_8c15bbf0(Object *o)
 {
     switch (((ObjectData *)o)->f24) {
     case 0:

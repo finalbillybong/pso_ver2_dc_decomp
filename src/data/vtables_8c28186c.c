@@ -2,19 +2,19 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c2572b0(void);
-extern void operation_8c2572f4(void);
-extern void fn_8c257328(void);
+extern void TObjHexLine_dtor_8c2572b0(void);
+extern void TObjHexLine_update_8c2572f4(void);
+extern void TObjHexLine_render_8c257328(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_object_8c256c38(void);
-extern void fn_8c256c7c(void);
+extern void TObjHexLine_dtor_8c256c38(void);
+extern void TObjHexLine_update_8c256c7c(void);
 extern void TObject_render_default_8c0111c8(void);
-extern void operation_8c2576a0(void);
-extern void operation_8c2577f0(void);
-extern void operation_8c2577ec(void);
-extern void operation_8c257df0(void);
-extern void operation_8c257a50(void);
+extern void TOAttackableCol_dtor_8c2576a0(void);
+extern void TOAttackableCol_update_8c2577f0(void);
+extern void TOAttackableCol_render_8c2577ec(void);
+extern void TOAttackableCol_render_shadow_8c257df0(void);
+extern void TOAttackableCol_v05_8c257a50(void);
 extern void fn_8c01d694(void);
 extern void fn_8c043724(void);
 extern void operation_8c010500(void);
@@ -31,14 +31,14 @@ extern void query_object_height(void);
 extern void query_position_height(void);
 extern void operation_8c04a4f4(void);
 extern void operation_8c013474(void);
-extern void operation_8c257dfc(void);
-extern void operation_8c257e00(void);
-extern void fn_8c257e04(void);
-extern void fn_8c257e10(void);
-extern void fn_8c257e1c(void);
-extern void operation_8c257e28(void);
-extern void operation_8c257df4(void);
-extern void operation_8c257df8(void);
+extern void TOAttackableCol_v22_8c257dfc(void);
+extern void TOAttackableCol_v23_8c257e00(void);
+extern void TOAttackableCol_v24_8c257e04(void);
+extern void TOAttackableCol_v25_8c257e10(void);
+extern void TOAttackableCol_v26_8c257e1c(void);
+extern void TOAttackableCol_v27_8c257e28(void);
+extern void TOAttackableCol_v28_8c257df4(void);
+extern void TOAttackableCol_v29_8c257df8(void);
 extern void operation_8c0461f8(void);
 extern void operation_8c04621c(void);
 extern void operation_8c0462a0(void);
@@ -100,9 +100,9 @@ extern void operation_8c0134ec(void);
 VirtualFunction const vt_8c28186c[7] = {
     0,
     0,
-    destroy_object_8c2572b0,
-    operation_8c2572f4,
-    fn_8c257328,
+    TObjHexLine_dtor_8c2572b0,
+    TObjHexLine_update_8c2572f4,
+    TObjHexLine_render_8c257328,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -111,8 +111,8 @@ VirtualFunction const vt_8c28186c[7] = {
 VirtualFunction const vt_8c281888[7] = {
     0,
     0,
-    destroy_object_8c256c38,
-    fn_8c256c7c,
+    TObjHexLine_dtor_8c256c38,
+    TObjHexLine_update_8c256c7c,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -122,12 +122,12 @@ VirtualFunction const vt_8c281888[7] = {
 VirtualFunction const vt_8c2818a4[88] = {
     0,
     0,
-    operation_8c2576a0,
-    operation_8c2577f0,
-    operation_8c2577ec,
-    operation_8c257df0,
+    TOAttackableCol_dtor_8c2576a0,
+    TOAttackableCol_update_8c2577f0,
+    TOAttackableCol_render_8c2577ec,
+    TOAttackableCol_render_shadow_8c257df0,
     hierarchy_output,
-    operation_8c257a50,
+    TOAttackableCol_v05_8c257a50,
     fn_8c01d694,
     fn_8c043724,
     operation_8c010500,
@@ -144,14 +144,14 @@ VirtualFunction const vt_8c2818a4[88] = {
     query_position_height,
     operation_8c04a4f4,
     operation_8c013474,
-    operation_8c257dfc,
-    operation_8c257e00,
-    fn_8c257e04,
-    fn_8c257e10,
-    fn_8c257e1c,
-    operation_8c257e28,
-    operation_8c257df4,
-    operation_8c257df8,
+    TOAttackableCol_v22_8c257dfc,
+    TOAttackableCol_v23_8c257e00,
+    TOAttackableCol_v24_8c257e04,
+    TOAttackableCol_v25_8c257e10,
+    TOAttackableCol_v26_8c257e1c,
+    TOAttackableCol_v27_8c257e28,
+    TOAttackableCol_v28_8c257df4,
+    TOAttackableCol_v29_8c257df8,
     operation_8c0461f8,
     operation_8c04621c,
     operation_8c0462a0,

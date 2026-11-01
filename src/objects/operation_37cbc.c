@@ -4,7 +4,7 @@
 #define play_se_8c05fbf8 ((int (*)(unsigned int, Vector3 *, int, unsigned int))0x8c05fbf8)
 extern void post_emit_at(int);
 
-void operation_37cbc(ObjectEffectView *object) {
+void TObjEneShark_v95_8c037cbc(ObjectEffectView *object) {
     unsigned int kind = lookup_at(0x3000b, object->context_38c);
     play_se_8c05fbf8(kind, &object->position, 0, 0);
     post_emit_at(-768);

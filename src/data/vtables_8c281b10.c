@@ -2,16 +2,16 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c259870(void);
-extern void operation_8c2598c8(void);
-extern void fn_8c259998(void);
+extern void TObjCityMainWarpChallenge_dtor_8c259870(void);
+extern void TObjCityMainWarpChallenge_update_8c2598c8(void);
+extern void TObjCityMainWarpChallenge_render_8c259998(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void operation_8c051fd4(void);
 extern void operation_8c010500(void);
-extern void operation_8c259a94(void);
+extern void TObjCityMainWarpChallenge_v09_8c259a94(void);
 extern void operation_8c010508(void);
 extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
@@ -27,16 +27,16 @@ extern void operation_8c089240(void);
 VirtualFunction const vt_8c281b10[22] = {
     0,
     0,
-    operation_8c259870,
-    operation_8c2598c8,
-    fn_8c259998,
+    TObjCityMainWarpChallenge_dtor_8c259870,
+    TObjCityMainWarpChallenge_update_8c2598c8,
+    TObjCityMainWarpChallenge_render_8c259998,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,
     operation_8c051fd4,
     operation_8c010500,
-    operation_8c259a94,
+    TObjCityMainWarpChallenge_v09_8c259a94,
     operation_8c010508,
     operation_8c01d3b0,
     fn_8c01d4c4,

@@ -18,7 +18,7 @@ struct Object {
 };
 extern void operation_8c104148(void *);
 extern void call_8c1041b4(Object *);
-void operation_8c104234(Object *o)
+void TObjEneDf2Bringer_Eff_TpAbsorb1_update_8c104234(Object *o)
 {
     float v1;
     switch (o->f20) {

@@ -16,9 +16,9 @@ struct Object {
     Arg0_ec *fec;
 };
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_loader_8c173578(void *, void *, int);
+extern void TQuestThread_ctor_1_8c173578(void *, void *, int);
 extern void reparent_hierarchy_node(void *, void *);
-void operation_8c1ab228(Object *o)
+void TObjMesBase_v14_8c1ab228(Object *o)
 {
     int t1;
     if (o->fec != 0) {
@@ -31,7 +31,7 @@ void operation_8c1ab228(Object *o)
         if (o->fe4 == 0 && o->fec != 0 && *(int *)0x8c4db520 != 0) {
             t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xa8);
             if (t1 != 0) {
-                initialize_loader_8c173578((void *)t1, (void *)(*(S_g8c4db520 **)0x8c4db520), (int)(o->fec));
+                TQuestThread_ctor_1_8c173578((void *)t1, (void *)(*(S_g8c4db520 **)0x8c4db520), (int)(o->fec));
             }
             o->fe4 = (Arg0_e4 *)t1;
             if (o->fe4 != 0) {

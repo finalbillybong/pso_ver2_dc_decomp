@@ -14,7 +14,7 @@ struct Object {
     short size;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c25f8a0(Object *o)
+Object *TItemDisconnectCtrl_ctor_8c25f8a0(Object *o)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be9c **)0x8c44be9c));
     o->dispatch = (void *)0x8c281dc4;

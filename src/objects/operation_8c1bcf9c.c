@@ -20,7 +20,7 @@ extern int operation_8c1bd03c(void);
 extern void call_8c0fcd0c(void *, void *, float);
 extern void call_8c0db30c(Object *);
 extern void update_view_nodes(void *, void *);
-void operation_8c1bcf9c(Object *o)
+void TWindowMeseta_update_8c1bcf9c(Object *o)
 {
     int t1;
     t1 = operation_8c1bd03c();

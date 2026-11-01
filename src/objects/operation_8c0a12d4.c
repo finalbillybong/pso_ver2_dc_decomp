@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c0a12d4(void)
+void TCameraBehaiv_render_8c0a12d4(void)
 {
 }

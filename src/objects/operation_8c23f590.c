@@ -15,7 +15,7 @@ struct Frame {
 extern void operation_8c074ce4(void);
 extern void call_8c075ccc(void *, Frame *, ...);
 extern void operation_8c074c30(int);
-void operation_8c23f590(void)
+void TItemWpnRikoSlicer_v57_8c23f590(void)
 {
     Frame frame;
     switch (*(int *)0x8c4689f0) {

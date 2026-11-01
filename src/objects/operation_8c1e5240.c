@@ -76,7 +76,7 @@ extern int operation_8c1e5918(char);
 extern void operation_8c1e5854(void *);
 extern int call_8c1e5780(Object *);
 extern int operation_8c1e5928(char);
-void operation_8c1e5240(Object *o)
+void TWindowMakeTeam_update_8c1e5240(Object *o)
 {
     S_vv1 *v1;
     S_vv10 *v10;

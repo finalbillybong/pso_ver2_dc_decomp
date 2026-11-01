@@ -15,7 +15,7 @@ struct Object {
     char unknown30e[0xaa];
     short f3b8;
 };
-void operation_8c04d9fc(Object *o)
+void TObjGrass_v67_8c04d9fc(Object *o)
 {
     if (o->f30a != 1 && o->f30a != 2) {
         o->ff0 = 1;

@@ -44,9 +44,9 @@ struct S_c8c053d84 {
 };
 extern void operation_8c052124(void *);
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
-extern void destroy_context_8c11dc84(void *, short);
+extern void TObjEneBalClaw_dtor_8c11dc84(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c124d74(Object *o, int a1)
+Object *TObjEneBalClawBody_dtor_8c124d74(Object *o, int a1)
 {
     int v8;
     int v6;
@@ -81,7 +81,7 @@ Object *operation_8c124d74(Object *o, int a1)
                 v8 = (int)(v8 + 1);
             }
         }
-        destroy_context_8c11dc84((void *)o, (short)0);
+        TObjEneBalClaw_dtor_8c11dc84((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), o);
         }

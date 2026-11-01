@@ -18,7 +18,7 @@ static inline void scale_spawn(Effect *e,void *p) {
  float *first_address=(float *)((unsigned char *)p+EFFECT_UPDATE_OFFSET(EffectSpawnView, field_98));float second=e->field_48;float first=e->field_44;
  *first_address=first; *(float *)((unsigned char *)p+EFFECT_UPDATE_OFFSET(EffectSpawnView, field_9c))=second;
 }
-void update_effect(Effect *e) {
+void TParticleCtrl_update_8c0a72a0(Effect *e) {
 
  Resource *r;
  if(!ready_at(e)) return;

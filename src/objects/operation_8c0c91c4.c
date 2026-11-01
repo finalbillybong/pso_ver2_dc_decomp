@@ -13,7 +13,7 @@ struct Arg0_dc {
     char unknown0[0x4];
     float f04;
 };
-void operation_8c0c91c4(Object *o)
+void TObjEneRe4Sorcerer_v94_8c0c91c4(Object *o)
 {
     o->fdc->f04 = 22.0f;
 }

@@ -13,7 +13,7 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c1a1984(Object *);
-Object *operation_8c1a18fc(Object *o, int a1)
+Object *TMapCsnCtrl_ctor_8c1a18fc(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;

@@ -50,7 +50,7 @@ extern int record24_8c17948c(int);
 extern int record30_8c1794a0(int);
 extern int block32_8c1794b4(int);
 extern int record30_8c1794c8(int);
-void operation_8c108a24(void)
+void load_assets_ene_gyaranzo_8c108a24(void)
 {
     int v5;
     char *v11;

@@ -20,7 +20,7 @@ extern void call_8c3bdf60(void *, void *);
 extern void operation_8c161874(void *);
 extern void call_8c05fd7c(int, Object *, void *, int, int);
 extern void call_8c161908(Object *);
-void operation_8c1617c8(Object *o)
+void TObjEnePanarmsAtkColli_update_8c1617c8(Object *o)
 {
     if (!(--o->f39c >= 0)) {
         o->f04 |= 1;

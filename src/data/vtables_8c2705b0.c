@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c175ab8(void);
+extern void TItemWpnSpreadGunB_dtor_8c175ab8(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -51,18 +51,18 @@ extern void operation_8c075708(void);
 extern void fn_8c075ac8(void);
 extern void fn_8c075b90(void);
 extern void fn_8c0766f8(void);
-extern void set_field_8c175afc(void);
+extern void TItemWpnSpreadGunB_v49_8c175afc(void);
 extern void operation_8c076178(void);
 extern void operation_8c076174(void);
 extern void operation_8c076238(void);
-extern void operation_8c17571c(void);
+extern void TItemWpnSpreadGunB_v53_8c17571c(void);
 extern void operation_8c075ac4(void);
 extern void operation_8c075b80(void);
 extern void operation_8c077810(void);
-extern void operation_8c175804(void);
+extern void TItemWpnSpreadGunB_v57_8c175804(void);
 extern void fn_8c076340(void);
-extern void destroy_object_8c175cb4(void);
-extern void fn_8c175bc4(void);
+extern void TItemWpnSpreadNeedle_dtor_8c175cb4(void);
+extern void TItemWpnSpreadNeedle_v49_8c175bc4(void);
 extern void operation_8c076170(void);
 extern void operation_8c075ed8(void);
 extern void destroy_object_8c175da0(void);
@@ -72,7 +72,7 @@ extern void operation_8c07633c(void);
 VirtualFunction const vt_8c2705b0[61] = {
     0,
     0,
-    destroy_object_8c175ab8,
+    TItemWpnSpreadGunB_dtor_8c175ab8,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -121,15 +121,15 @@ VirtualFunction const vt_8c2705b0[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    set_field_8c175afc,
+    TItemWpnSpreadGunB_v49_8c175afc,
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,
-    operation_8c17571c,
+    TItemWpnSpreadGunB_v53_8c17571c,
     operation_8c075ac4,
     operation_8c075b80,
     operation_8c077810,
-    operation_8c175804,
+    TItemWpnSpreadGunB_v57_8c175804,
     fn_8c076340
 };
 
@@ -137,7 +137,7 @@ VirtualFunction const vt_8c2705b0[61] = {
 VirtualFunction const vt_8c2706a4[61] = {
     0,
     0,
-    destroy_object_8c175cb4,
+    TItemWpnSpreadNeedle_dtor_8c175cb4,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -186,7 +186,7 @@ VirtualFunction const vt_8c2706a4[61] = {
     fn_8c075ac8,
     fn_8c075b90,
     fn_8c0766f8,
-    fn_8c175bc4,
+    TItemWpnSpreadNeedle_v49_8c175bc4,
     operation_8c076178,
     operation_8c076174,
     operation_8c076238,

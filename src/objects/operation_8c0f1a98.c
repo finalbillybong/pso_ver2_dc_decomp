@@ -6,7 +6,7 @@ typedef struct Vector3 {
 extern int get_current_area_8c032b10(void);
 extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
-void operation_8c0f1a98(void)
+void load_assets_fs_obj_o_monument01_8c0f1a98(void)
 {
     int t1;
     int t2;

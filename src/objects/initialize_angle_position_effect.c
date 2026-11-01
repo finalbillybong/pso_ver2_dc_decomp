@@ -6,4 +6,4 @@ typedef char check_position[(unsigned long)&((View *)0)->position==32?1:-1];
 typedef char check_step[(unsigned long)&((View *)0)->step==44?1:-1];
 extern void TObject_ctor_8c0330e4(View *,void *);extern void *object_name;
 extern float njSin_8c37eb0c(int);extern float njCos_8c38c154(int);
-View *initialize_angle_position_effect(View *o,void *parent,int angle) {View **home=&o;TObject_ctor_8c0330e4(o,parent);o->dispatch=(void *)0x8c278504;o->name=object_name;o->size=48;o->position.x=njSin_8c37eb0c(angle)*300.0f;o->position.y=0.0f;o->position.z=njCos_8c38c154(angle)*-300.0f;o->step=25.0f;return o;}
+View *TObjDFJisin_ctor_8c21b698(View *o,void *parent,int angle) {View **home=&o;TObject_ctor_8c0330e4(o,parent);o->dispatch=(void *)0x8c278504;o->name=object_name;o->size=48;o->position.x=njSin_8c37eb0c(angle)*300.0f;o->position.y=0.0f;o->position.z=njCos_8c38c154(angle)*-300.0f;o->step=25.0f;return o;}

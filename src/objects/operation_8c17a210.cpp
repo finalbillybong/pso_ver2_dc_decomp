@@ -49,7 +49,7 @@ extern "C" int call_8c1aaabc(int);
 extern "C" int call_8c12b944(void);
 extern "C" void call_8c076af4(Object *, int, int, float);
 extern "C" void call_8c076580(Object *);
-extern "C" void operation_8c17a210(Object *o)
+extern "C" void TItemWpnOriginalSaber_v49_8c17a210(Object *o)
 {
     int t1;
     int t2;

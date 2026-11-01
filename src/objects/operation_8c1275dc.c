@@ -15,7 +15,7 @@ struct Object {
     int f3a4;
 };
 extern float distance_xz(void *, void *);
-void operation_8c1275dc(Object *o)
+void TObjEneBalClawBody_v66_8c1275dc(Object *o)
 {
     float t1;
     t1 = distance_xz((void *)(((char *)o + 0x3c)), (void *)(((char *)o + 0x54)));

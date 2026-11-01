@@ -32,7 +32,7 @@ extern "C" int operation_8c03d338(void);
 extern "C" void call_8c1a007c(Object *);
 extern "C" void operation_8c1a026c(void *);
 extern "C" void call_8c1a034c(Object *);
-extern "C" void operation_8c1a0010(Object *o)
+extern "C" void TOHealGeneral_update_8c1a0010(Object *o)
 {
     int t1;
     t1 = operation_8c03d338();

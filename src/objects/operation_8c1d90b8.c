@@ -23,7 +23,7 @@ struct S_vv4_430_4 {
     char unknown0[0x4];
     int f04;
 };
-void operation_8c1d90b8(Object *o)
+void TObjCity_Season_SonicAdv2_update_8c1d90b8(Object *o)
 {
     int v1;
     S_vv4 *v4;

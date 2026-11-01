@@ -21,7 +21,7 @@ struct S_c8c122700 {
     short f68;
 };
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_selection_child(void *, void *, int, int, int);
+extern void TWindowInputNumber_ctor_8c1bd074(void *, void *, int, int, int);
 extern void operation_8c1bd94c(void *, int);
 extern void call_8c1bd9a4(S_c8c122700 *, float);
 S_c8c122700 *operation_8c1a37e4(int a0, int a1)
@@ -29,7 +29,7 @@ S_c8c122700 *operation_8c1a37e4(int a0, int a1)
     S_c8c122700 *t1;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x7c);
     if (t1 != 0) {
-        initialize_selection_child((void *)t1, (void *)((void *)0x8c287bc0), 1, a1, 1);
+        TWindowInputNumber_ctor_8c1bd074((void *)t1, (void *)((void *)0x8c287bc0), 1, a1, 1);
     }
     operation_8c1bd94c((void *)t1, (int)((*(S_g8c467180 **)0x8c467180)->f2c->f220));
     call_8c1bd9a4(t1, 224.0f);

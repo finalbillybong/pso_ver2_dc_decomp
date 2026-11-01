@@ -34,7 +34,7 @@ extern void call_8c025124(void);
 extern void call_8c03b80c(short);
 extern void call_8c0b6394(int, void *, void *, int, float, Object *, void *);
 extern int heap_alloc_8c122700(void *, int);
-extern void call_8c1ab508(int, Object *, int, int, int, int);
+extern void TFontSmallHelp_ctor_8c1ab508(int, Object *, int, int, int, int);
 void operation_8c025020(Object *o, int a1)
 {
     int v1;
@@ -46,7 +46,7 @@ void operation_8c025020(Object *o, int a1)
     }
     t1 = heap_alloc_8c122700(g_8c4d97e0, 0x58);
     if (t1 != 0) {
-        call_8c1ab508(t1, o, o->f20, -1, 0x3c, a1);
+        TFontSmallHelp_ctor_8c1ab508(t1, o, o->f20, -1, 0x3c, a1);
     }
     call_8c03b80c(o->f20);
     (&g_8c46f5a0)->f00 = 0.0f;

@@ -10,7 +10,7 @@ extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
 extern void operator_delete_8c18de08(void *);
 extern void call_8c03dc40(void *, int);
-void operation_8c1145a4(void)
+void release_assets_fd_obj_n_switch_8c1145a4(void)
 {
     int v1;
     int v2;

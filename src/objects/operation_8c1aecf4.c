@@ -14,7 +14,7 @@ struct Object {
 };
 extern int call_8c0eea7c(Object *, float);
 extern void operation_8c05426c(void *, int, int);
-void operation_8c1aecf4(Object *o)
+void TODoorCave03_v17_8c1aecf4(Object *o)
 {
     int t1;
     if ((o->f108 & 1) == 1) {

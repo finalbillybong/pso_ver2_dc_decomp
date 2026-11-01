@@ -14,7 +14,7 @@ struct Object {
     int f28;
 };
 extern int hierarchy_is_active(void *);
-void operation_8c1ab0c0(Object *o)
+void TItemTimer_update_8c1ab0c0(Object *o)
 {
     int t1;
     o->f20 += -1;

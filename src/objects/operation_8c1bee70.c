@@ -14,7 +14,7 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-Object *operation_8c1bee70(Object *o, int a1)
+Object *TWindowCtrlMainKiller_ctor_8c1bee70(Object *o, int a1)
 {
     Object **home = &o;
     int t1;

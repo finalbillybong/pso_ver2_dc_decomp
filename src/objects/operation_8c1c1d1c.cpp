@@ -33,7 +33,7 @@ public:
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" void operation_8c1c1d1c(Object *o)
+extern "C" void TObjCityDoor_Guild_update_8c1c1d1c(Object *o)
 {
     o->v22();
 }

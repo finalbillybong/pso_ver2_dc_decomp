@@ -13,7 +13,7 @@ extern int operation_8c059f44(void *, int);
 extern int operation_8c059f04(int);
 extern void call_8c05f15c(void);
 extern void call_8c0c7628(void);
-void operation_8c05c8f8(void)
+void load_assets_ene_re2_flower_8c05c8f8(void)
 {
     int t1;
     int t2;

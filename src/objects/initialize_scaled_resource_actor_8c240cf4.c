@@ -3,7 +3,7 @@ typedef char check_layout[sizeof(Object)==576 && (unsigned long)&((Object *)0)->
 extern void *resource;
 extern char dispatch[];
 extern Object *base(Object *,void *,void *);
-Object *initialize_scaled_resource_actor_8c240cf4(Object *o,void *parent,void *context) {
+Object *TItemWpnUmbrella_ctor_8c240cf4(Object *o,void *parent,void *context) {
     base(o,parent,context);
     o->dispatch=dispatch;o->resource=resource;o->size=576;
     o->kind=3;o->mode=1;

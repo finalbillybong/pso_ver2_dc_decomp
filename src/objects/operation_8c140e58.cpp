@@ -109,7 +109,7 @@ typedef struct ObjectData {
     short f04;
 } ObjectData;
 extern "C" void operation_8c09e6b4(void *);
-extern "C" void operation_8c140e58(Object *o, Arg1 *a1, int a2)
+extern "C" void TOTrap_v05_8c140e58(Object *o, Arg1 *a1, int a2)
 {
     if (a1->f00 == 4) {
         if (a2 == 1) {

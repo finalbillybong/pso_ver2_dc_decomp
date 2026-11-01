@@ -24,7 +24,7 @@ struct Object {
 };
 extern void call_8c075398(Object *, int, int);
 extern void call_8c18e044(void *, void *, int, int, int);
-Object *operation_8c240854(Object *o, int a1, int a2)
+Object *TItemWpnThunderCane_ctor_8c240854(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;

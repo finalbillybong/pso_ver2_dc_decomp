@@ -17,7 +17,7 @@ struct Object {
     char unknown394[0x10];
     int f3a4;
 };
-void operation_8c038e14(Object *o)
+void TObjEneMoja_v66_8c038e14(Object *o)
 {
     if (o->f30a != 0 && o->f30a != 1 && o->f30a != 2) {
         o->f30c = 0;

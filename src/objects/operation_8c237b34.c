@@ -14,7 +14,7 @@ extern void call_8c237dec(Object *);
 extern void operation_8c180ae8(void);
 extern void call_8c24ff04(Object *);
 extern void operation_8c225d74(void);
-extern void operation_8c25c41c(int);
+extern void TObjWarnChime_create_8c25c41c(int);
 extern void operation_8c238fd0(Object *);
 void operation_8c237b34(Object *o)
 {
@@ -26,7 +26,7 @@ void operation_8c237b34(Object *o)
             operation_8c180ae8();
             call_8c24ff04(o);
             operation_8c225d74();
-            operation_8c25c41c((int)o);
+            TObjWarnChime_create_8c25c41c((int)o);
             o->f20 = 2;
             return;
         }

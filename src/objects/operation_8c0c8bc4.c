@@ -10,7 +10,7 @@ extern S_g8c46fa04 *g_8c46fa04;
 extern void destroy_node_array(void *, short);
 extern void resource_lookup_noop(void);
 extern void call_8c03dc40(void *, int);
-void operation_8c0c8bc4(void)
+void release_assets_ene_re4_sorcerer_8c0c8bc4(void)
 {
     destroy_node_array(g_8c46fa04, (short)1);
     g_8c46fa04 = (S_g8c46fa04 *)0;

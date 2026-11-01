@@ -32,7 +32,7 @@ extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_grid_panel_8c1ccd24(void *, int);
 extern void call_8c1cd38c(S_c8c122700 *, void *);
 extern void operation_8c1cd3d4(void *);
-S_c8c122700 *operation_8c1a2838(int a0, int a1)
+S_c8c122700 *TWindowSubItemList_ctor_8c1a2838(int a0, int a1)
 {
     S_c8c122700 *t1;
     call_8c1cd008(a0, a1, 0x24);

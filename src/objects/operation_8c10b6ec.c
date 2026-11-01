@@ -39,7 +39,7 @@ extern S_c8c011ecc *game_malloc_8c011ecc(int);
 extern void call_8c03d610(S_c8c011ecc *, int, void *, int, int, int);
 extern int operator_new_8c18de4c(int);
 extern int load_pvm_file_tls_8c118528(void *);
-void operation_8c10b6ec(void)
+void load_assets_fs_obj_lazerguard_8c10b6ec(void)
 {
     int v3;
     S_c8c011ecc *t1;

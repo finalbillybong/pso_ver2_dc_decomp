@@ -46,7 +46,7 @@ extern void set_fields_8c225afc(void *);
 extern void set_fields_8c225b14(void *);
 extern int operation_8c01d8a8(void *, int);
 extern void call_8c18c808(S_g8c4dbde0 *);
-void operation_8c1da040(Object *o)
+void TWindowSubLog_update_8c1da040(Object *o)
 {
     S_vv46 *v46;
     int v8;

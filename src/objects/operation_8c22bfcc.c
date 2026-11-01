@@ -17,7 +17,7 @@ extern int operation_8c03ed64(void);
 extern void operation_8c22c1c4(void *);
 extern void operation_8c22c190(void *);
 extern void operation_8c22c100(void *, int);
-void operation_8c22bfcc(Object *o)
+void TItemTexLoad_update_8c22bfcc(Object *o)
 {
     char *v41;
     char *v1;

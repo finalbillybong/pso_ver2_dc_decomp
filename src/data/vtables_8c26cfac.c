@@ -22,10 +22,10 @@ extern void destroy_color_rise_8c136c08(void);
 extern void operation_8c136c98(void);
 extern void operation_8c136c58(void);
 extern void operation_8c136d50(void);
-extern void destroy_object_8c1367f0(void);
-extern void operation_8c136854(void);
-extern void operation_8c136834(void);
-extern void operation_8c1368e4(void);
+extern void TObjFogCollision_dtor_8c1367f0(void);
+extern void TObjFogCollision_update_8c136854(void);
+extern void TObjFogCollision_v14_8c136834(void);
+extern void TObjFogCollision_v15_8c1368e4(void);
 
 /* 8c26cfac: type-information and this-adjustment header, then 16 slots */
 VirtualFunction const vt_8c26cfac[18] = {
@@ -75,8 +75,8 @@ VirtualFunction const vt_8c26cff4[18] = {
 VirtualFunction const vt_8c26d03c[18] = {
     0,
     0,
-    destroy_object_8c1367f0,
-    operation_8c136854,
+    TObjFogCollision_dtor_8c1367f0,
+    TObjFogCollision_update_8c136854,
     operation_8c136954,
     fn_8c136958,
     hierarchy_output,
@@ -89,6 +89,6 @@ VirtualFunction const vt_8c26d03c[18] = {
     operation_8c01d3b0,
     fn_8c01d4c4,
     operation_8c010510,
-    operation_8c136834,
-    operation_8c1368e4
+    TObjFogCollision_v14_8c136834,
+    TObjFogCollision_v15_8c1368e4
 };

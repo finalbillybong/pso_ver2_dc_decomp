@@ -38,7 +38,7 @@ extern void select_mode23_8c1cc678(void);
 extern void select_mode10_8c1cc588(void);
 extern void clear_global_render_resources(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c198294(int, Object *);
+extern void TAdBack_ctor_8c198294(int, Object *);
 extern int create_pair_widget_8c231e40(Object *);
 Object *operation_8c231ba0(Object *o)
 {
@@ -131,7 +131,7 @@ L_8c231cae:;
     clear_global_render_resources();
     t7 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x40);
     if (t7 != 0) {
-        call_8c198294(t7, o);
+        TAdBack_ctor_8c198294(t7, o);
     }
     t8 = create_pair_widget_8c231e40(o);
     o->f28 = (int)(t8);

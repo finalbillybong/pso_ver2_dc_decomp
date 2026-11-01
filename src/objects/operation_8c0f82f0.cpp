@@ -132,7 +132,7 @@ extern "C" void TObjEnemy_ctor_8c012008(Object *);
 extern "C" void call_8c0f8508(Object *);
 extern "C" void operation_8c051ff4(void *, void *, void *);
 extern "C" void call_8c0f8a80(Object *, int);
-extern "C" Object *operation_8c0f82f0(Object *o, int a1, int a2, int a3)
+extern "C" Object *TObjEneSlimeOne_ctor_1_8c0f82f0(Object *o, int a1, int a2, int a3)
 {
     Frame frame;
     Object **home = &o;

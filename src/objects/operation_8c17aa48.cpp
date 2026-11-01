@@ -57,7 +57,7 @@ extern "C" void operation_8c1c5890(int, int, int);
 extern "C" int call_8c1aaabc(void *);
 extern "C" void call_8c17ab18(Object *);
 extern "C" void operation_8c076580(void *);
-extern "C" void operation_8c17aa48(Object *o)
+extern "C" void TItemWpnPsychowand_v49_8c17aa48(Object *o)
 {
     int v1;
     int t1;

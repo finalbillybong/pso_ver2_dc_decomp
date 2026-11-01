@@ -15,7 +15,7 @@ struct Object {
     int f50;
     float f54;
 };
-void operation_8c07cdb8(Object *o)
+void TEneEffHamon_update_8c07cdb8(Object *o)
 {
     if (o->f50 > 0) {
         o->f50 += -1;

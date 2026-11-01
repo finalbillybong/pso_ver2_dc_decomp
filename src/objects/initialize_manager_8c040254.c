@@ -9,7 +9,7 @@ typedef struct Manager {
 typedef char check_layout[sizeof(Manager) == 48 && (unsigned long)&((Manager *)0)->dispatch == 24 && (unsigned long)&((Manager *)0)->size == 30 ? 1 : -1];
 extern void *object_name;
 extern void base_at(Manager *, void *parent, void *parameter);
-Manager *initialize_manager_8c040254(Manager *o, void *parent, void *parameter) {
+Manager *TQuadSpriteCol_ctor_8c040254(Manager *o, void *parent, void *parameter) {
     base_at(o, parent, parameter);
     o->dispatch = (void *)0x8c261bf0;
     o->name = object_name;

@@ -13,7 +13,7 @@ typedef struct Node {
 } Node;
 extern void TObject_ctor_8c0330e4(Node *, void *);
 extern int validate_node_8c087e78(Node *);
-Node *initialize_panel_8c087d8c(Node *o, void *parent, Block *data)
+Node *TObjChip_ctor_8c087d8c(Node *o, void *parent, Block *data)
 {
     Node **self = &o;
     (void)self;

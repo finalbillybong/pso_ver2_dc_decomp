@@ -44,7 +44,7 @@ typedef struct Pair8 {
     int a;
     int b;
 } Pair8;
-extern "C" Object *operation_8c100b4c(Object *o, int a1, int a2)
+extern "C" Object *TObjEnvSound_ctor_8c100b4c(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int v1;

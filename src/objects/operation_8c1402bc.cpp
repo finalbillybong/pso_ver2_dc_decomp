@@ -27,7 +27,7 @@ extern Vector3 g_8c3146f4;
 extern char g_8c4d9e68;
 extern S_L8c314700 g_8c314700;
 extern "C" char gc_8c314700[];
-extern "C" void operation_8c1402bc(Object *o)
+extern "C" void TObjCMLoadPlDataReq_update_8c1402bc(Object *o)
 {
     if (!(--o->f68 > 0)) {
         o->f04 |= 1;

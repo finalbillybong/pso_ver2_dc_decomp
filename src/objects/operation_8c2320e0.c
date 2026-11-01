@@ -18,8 +18,8 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c198294(int, Object *);
-extern void call_8c199688(int, Object *, int);
+extern void TAdBack_ctor_8c198294(int, Object *);
+extern void TAdTitle_ctor_8c199688(int, Object *, int);
 extern int call_8c23231c(Object *);
 Object *operation_8c2320e0(Object *o)
 {
@@ -37,12 +37,12 @@ Object *operation_8c2320e0(Object *o)
     o->f30 = *(unsigned char *)0x8c5108e0;
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
     if (t1 != 0) {
-        call_8c198294(t1, o);
+        TAdBack_ctor_8c198294(t1, o);
     }
     if (o->f30 != 0) {
         t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xac);
         if (t2 != 0) {
-            call_8c199688(t2, o, 1);
+            TAdTitle_ctor_8c199688(t2, o, 1);
         }
     }
     t3 = call_8c23231c(o);

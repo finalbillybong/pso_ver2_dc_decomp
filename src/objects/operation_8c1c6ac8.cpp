@@ -50,7 +50,7 @@ struct S_x2192 {
     float f00;
 };
 extern "C" void TObjectShared_ctor_8c01d1ec(Object *, void *);
-extern "C" Object *operation_8c1c6ac8(Object *o, int a1)
+extern "C" Object *TOSparkMachine01_ctor_8c1c6ac8(Object *o, int a1)
 {
     Object **home = &o;
     int v1;

@@ -47,9 +47,9 @@ extern void select_mode10_8c1cc588(void);
 extern int operation_8c232480(void);
 extern int operation_8c2324e0(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c198294(int, Object *);
+extern void TAdBack_ctor_8c198294(int, Object *);
 extern int call_8c25f6f8(Object *);
-Object *operation_8c25f3f4(Object *o)
+Object *TAdHunLicence_ctor_8c25f3f4(Object *o)
 {
     Object **home = &o;
     int t1;
@@ -110,7 +110,7 @@ L_8c25f4aa:;
     }
     t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x40);
     if (t5 != 0) {
-        call_8c198294(t5, o);
+        TAdBack_ctor_8c198294(t5, o);
     }
     t6 = call_8c25f6f8(o);
     o->f28 = (int)(t6);

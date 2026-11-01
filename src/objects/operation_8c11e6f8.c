@@ -67,7 +67,7 @@ extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern S_c8c18de4c *operator_new_8c18de4c(int);
 extern int load_pvm_file_tls_8c118528(void *);
-void operation_8c11e6f8(void)
+void load_assets_fs_obj_door07_m_8c11e6f8(void)
 {
     int t1;
     S_c8c18de4c *t2;

@@ -12,7 +12,7 @@ struct Object {
 };
 extern int operation_8c0eea7c(int, float);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c24b3ec(Object *o)
+void TObjDoaEx01_v19_8c24b3ec(Object *o)
 {
     int t1;
     if ((o->f108 & 1) == 1) {

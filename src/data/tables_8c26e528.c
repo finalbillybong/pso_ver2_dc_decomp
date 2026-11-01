@@ -2,9 +2,9 @@
 
 typedef void (*Function)(void);
 
-extern void operation_8c14f5f0(void);
-extern void fn_8c14f660(void);
-extern void fn_8c14f800(void);
+extern void TPhotonLaser_dtor_8c14f5f0(void);
+extern void TPhotonLaser_update_8c14f660(void);
+extern void TPhotonLaser_render_8c14f800(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -92,9 +92,9 @@ extern void operation_8c0134ec(void);
 Function const d_8c26e528[88] = {
     0,
     0,
-    operation_8c14f5f0,
-    fn_8c14f660,
-    fn_8c14f800,
+    TPhotonLaser_dtor_8c14f5f0,
+    TPhotonLaser_update_8c14f660,
+    TPhotonLaser_render_8c14f800,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,

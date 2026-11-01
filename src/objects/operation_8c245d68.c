@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c245d68(void)
+void TEffStarLightChild_render_8c245d68(void)
 {
 }

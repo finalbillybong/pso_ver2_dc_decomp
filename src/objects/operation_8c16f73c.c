@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_vv1_0 S_vv1_0;
 extern void call_8c14fff0(int, int, int, void *);
-void operation_8c16f73c(int a0)
+void quest_op_map_designate_8c16f73c(int a0)
 {
     char *v1;
     int v3;

@@ -87,9 +87,9 @@ extern void operation_8c156ec0(void *);
 extern int operation_8c1571f4(void *);
 extern int operation_8c1cdc80(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c1dca80(void *, int, int);
+extern void TWindowChat_ctor_8c1dca80(void *, int, int);
 extern void operation_8c1dd654(void *);
-extern void operation_8c21cbc0(void *, void *, int, int);
+extern void TWindowShortCut_ctor_8c21cbc0(void *, void *, int, int);
 extern int create_single_entry_menu_8c21a66c(Object *);
 extern int operation_8c21a6f0(Object *);
 extern void call_8c21c73c(void *, void *);
@@ -222,7 +222,7 @@ void operation_8c21a16c(Object *o)
         if (o->f34 == 0) {
             t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x3c);
             if (t5 != 0) {
-                operation_8c1dca80((void *)t5, (int)o, (int)(((char *)o + 0x40)));
+                TWindowChat_ctor_8c1dca80((void *)t5, (int)o, (int)(((char *)o + 0x40)));
             }
             o->f34 = (Arg0_34 *)t5;
             if (o->f34->f24 != 0) {
@@ -252,7 +252,7 @@ void operation_8c21a16c(Object *o)
         if (o->f38 == 0) {
             t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
             if (t6 != 0) {
-                operation_8c21cbc0((void *)t6, (void *)((void *)0x8c2e17f8), (int)(o->f3c), (int)(((char *)o + 0x40)));
+                TWindowShortCut_ctor_8c21cbc0((void *)t6, (void *)((void *)0x8c2e17f8), (int)(o->f3c), (int)(((char *)o + 0x40)));
             }
             o->f38 = (Arg0_38 *)t6;
         }

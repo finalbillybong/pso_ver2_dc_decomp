@@ -9,7 +9,7 @@ struct Object {
     int f234;
     int f238;
 };
-void operation_8c23b080(Object *o)
+void TItemWpnChaoCane_v53_8c23b080(Object *o)
 {
     int v1;
     if (o->f238 != 0) {

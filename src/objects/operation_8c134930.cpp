@@ -78,7 +78,7 @@ extern "C" void call_8c0eeb90(Object *);
 extern "C" void copy_actor_records(void *, void *, int);
 extern "C" void transform_actor_records(void *);
 extern "C" void attach_and_insert_object(void *);
-extern "C" Object *operation_8c134930(Object *o, int a1, int a2)
+extern "C" Object *TODoorCave02_ctor_8c134930(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;

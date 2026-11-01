@@ -29,7 +29,7 @@ struct S_vv29 {
 };
 extern int g_8c46ed0c;
 extern void operation_8c05428c(void *, int, int);
-void operation_8c257a50(Object *o, Arg1 *a1, int a2)
+void TOAttackableCol_v05_8c257a50(Object *o, Arg1 *a1, int a2)
 {
     Frame frame;
     S_vv29 *v29;

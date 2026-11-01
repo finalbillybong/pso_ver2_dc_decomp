@@ -30,7 +30,7 @@ struct S_c8c021ef8_s534 {
     float f08;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c1704dc(int a0)
+void quest_op_set_shrink_cam2_8c1704dc(int a0)
 {
     Frame frame;
     char *v1;

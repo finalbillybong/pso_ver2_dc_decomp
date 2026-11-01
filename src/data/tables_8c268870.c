@@ -2,9 +2,9 @@
 
 typedef void (*Function)(void);
 
-extern void fn_8c0f4c20(void);
-extern void operation_8c0f4d14(void);
-extern void fn_8c0f6eb0(void);
+extern void TObjEneDf2Bringer_dtor_8c0f4c20(void);
+extern void TObjEneDf2Bringer_update_8c0f4d14(void);
+extern void TObjEneDf2Bringer_render_8c0f6eb0(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -39,7 +39,7 @@ extern void operation_8c046324(void);
 extern void operation_8c04639c(void);
 extern void operation_8c046414(void);
 extern void operation_8c046498(void);
-extern void operation_8c0f4df0(void);
+extern void TObjEneDf2Bringer_v37_8c0f4df0(void);
 extern void operation_8c0133f8(void);
 extern void fn_8c045200(void);
 extern void object_blocked_8c013418(void);
@@ -71,9 +71,9 @@ extern void operation_8c047438(void);
 extern void operation_8c013408(void);
 extern void operation_8c01340c(void);
 extern void operation_8c013410(void);
-extern void operation_8c0f4e70(void);
-extern void operation_8c0f4e14(void);
-extern void operation_8c0f4df4(void);
+extern void TObjEneDf2Bringer_v69_8c0f4e70(void);
+extern void TObjEneDf2Bringer_v70_8c0f4e14(void);
+extern void TObjEneDf2Bringer_v71_8c0f4df4(void);
 extern void operation_8c013478(void);
 extern void operation_8c0134ac(void);
 extern void operation_8c0134b0(void);
@@ -95,8 +95,8 @@ extern void operation_8c05c804(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
-extern void operation_8c0f53a4(void);
-extern void operation_8c0f4eb8(void);
+extern void TObjEneDf2Bringer_v93_8c0f53a4(void);
+extern void TObjEneDf2Bringer_v94_8c0f4eb8(void);
 extern void operation_8c05b16c(void);
 extern void operation_8c05b19c(void);
 extern void fn_8c05b6b4(void);
@@ -111,16 +111,16 @@ extern void operation_8c05b8b4(void);
 extern void operation_8c05babc(void);
 extern void apply_contact_position(void);
 extern void capture_current_contact(void);
-extern void operation_8c0f5304(void);
-extern void fn_8c0f7120(void);
-extern void fn_8c0f712c(void);
+extern void TObjEneDf2Bringer_v109_8c0f5304(void);
+extern void TObjEneDf2Bringer_v110_8c0f7120(void);
+extern void TObjEneDf2Bringer_v111_8c0f712c(void);
 
 Function const d_8c268870[114] = {
     0,
     0,
-    fn_8c0f4c20,
-    operation_8c0f4d14,
-    fn_8c0f6eb0,
+    TObjEneDf2Bringer_dtor_8c0f4c20,
+    TObjEneDf2Bringer_update_8c0f4d14,
+    TObjEneDf2Bringer_render_8c0f6eb0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -155,7 +155,7 @@ Function const d_8c268870[114] = {
     operation_8c04639c,
     operation_8c046414,
     operation_8c046498,
-    operation_8c0f4df0,
+    TObjEneDf2Bringer_v37_8c0f4df0,
     operation_8c0133f8,
     fn_8c045200,
     object_blocked_8c013418,
@@ -187,9 +187,9 @@ Function const d_8c268870[114] = {
     operation_8c013408,
     operation_8c01340c,
     operation_8c013410,
-    operation_8c0f4e70,
-    operation_8c0f4e14,
-    operation_8c0f4df4,
+    TObjEneDf2Bringer_v69_8c0f4e70,
+    TObjEneDf2Bringer_v70_8c0f4e14,
+    TObjEneDf2Bringer_v71_8c0f4df4,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -211,8 +211,8 @@ Function const d_8c268870[114] = {
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
-    operation_8c0f53a4,
-    operation_8c0f4eb8,
+    TObjEneDf2Bringer_v93_8c0f53a4,
+    TObjEneDf2Bringer_v94_8c0f4eb8,
     operation_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,
@@ -227,7 +227,7 @@ Function const d_8c268870[114] = {
     operation_8c05babc,
     apply_contact_position,
     capture_current_contact,
-    operation_8c0f5304,
-    fn_8c0f7120,
-    fn_8c0f712c
+    TObjEneDf2Bringer_v109_8c0f5304,
+    TObjEneDf2Bringer_v110_8c0f7120,
+    TObjEneDf2Bringer_v111_8c0f712c
 };

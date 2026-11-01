@@ -31,7 +31,7 @@ extern void operation_8c18ea4c(int);
 extern void operation_8c18eb44(int);
 extern void strncpy_8c12b154(void *, void *, int);
 extern int call_8c087268(void *);
-Object *operation_8c0ee300(Object *o, int a1, int a2, int a3, int a4, int a5, register short a6)
+Object *TFontSmallTask_ctor_4_8c0ee300(Object *o, int a1, int a2, int a3, int a4, int a5, register short a6)
 {
     Object **home = &o;
     int t1;

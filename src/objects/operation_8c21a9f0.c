@@ -21,7 +21,7 @@ extern void call_8c3827d8(void *);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void restore_effect_blend_state(void);
-void operation_8c21a9f0(Object *o)
+void TObjDFUsoTower_render_8c21a9f0(Object *o)
 {
     float v1;
     v1 = (float)o->f98;

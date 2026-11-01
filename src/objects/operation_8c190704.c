@@ -26,7 +26,7 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c190ea0(Object *);
-Object *operation_8c190704(Object *o, int a1)
+Object *TWindowSubMag_ctor_8c190704(Object *o, int a1)
 {
     Object **home = &o;
     int t1;

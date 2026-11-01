@@ -17,7 +17,7 @@ struct Object {
 extern char g_8c328a98[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c1c4318(Object *o)
+void TObjRaderCol_v09_8c1c4318(Object *o)
 {
     o->f94 = o->f6c;
     if (0.0f > o->f94) {

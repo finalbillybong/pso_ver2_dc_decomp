@@ -2,31 +2,31 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c0cb7e0(void);
-extern void operation_8c0cb824(void);
-extern void operation_8c0cb950(void);
+extern void TObjEneMe1Canadin_EffDischarge_dtor_8c0cb7e0(void);
+extern void TObjEneMe1Canadin_EffDischarge_update_8c0cb824(void);
+extern void TObjEneMe1Canadin_EffDischarge_render_8c0cb950(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_object_8c0cb578(void);
-extern void operation_8c0cb5bc(void);
-extern void operation_8c0cb66c(void);
+extern void TObjEneMe1Canadin_EffLine_dtor_8c0cb578(void);
+extern void TObjEneMe1Canadin_EffLineFade_ctor_8c0cb5bc(void);
+extern void TObjEneMe1Canadin_EffLine_render_8c0cb66c(void);
 extern void destroy_object_8c0cb410(void);
 extern void operation_8c0cb454(void);
 extern void operation_8c0cb478(void);
-extern void destroy_object_8c0cb374(void);
-extern void operation_8c0cb3b8(void);
-extern void operation_8c0cb3dc(void);
-extern void destroy_object_8c0cd398(void);
-extern void operation_8c0cd3e8(void);
-extern void operation_8c0cd488(void);
+extern void TObjEneMe1Canadin_EffLineFade_dtor_8c0cb374(void);
+extern void TObjEneMe1Canadin_EffLineFade_update_8c0cb3b8(void);
+extern void TObjEneMe1Canadin_EffLineFade_render_8c0cb3dc(void);
+extern void TObjBoss1MokoHill_Solo_dtor_8c0cd398(void);
+extern void TObjBoss1MokoHill_Solo_update_8c0cd3e8(void);
+extern void TObjBoss1MokoHill_Solo_render_8c0cd488(void);
 
 /* 8c266c94: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c266c94[7] = {
     0,
     0,
-    destroy_object_8c0cb7e0,
-    operation_8c0cb824,
-    operation_8c0cb950,
+    TObjEneMe1Canadin_EffDischarge_dtor_8c0cb7e0,
+    TObjEneMe1Canadin_EffDischarge_update_8c0cb824,
+    TObjEneMe1Canadin_EffDischarge_render_8c0cb950,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -35,9 +35,9 @@ VirtualFunction const vt_8c266c94[7] = {
 VirtualFunction const vt_8c266cb0[7] = {
     0,
     0,
-    destroy_object_8c0cb578,
-    operation_8c0cb5bc,
-    operation_8c0cb66c,
+    TObjEneMe1Canadin_EffLine_dtor_8c0cb578,
+    TObjEneMe1Canadin_EffLineFade_ctor_8c0cb5bc,
+    TObjEneMe1Canadin_EffLine_render_8c0cb66c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -57,9 +57,9 @@ VirtualFunction const vt_8c266ccc[7] = {
 VirtualFunction const vt_8c266ce8[7] = {
     0,
     0,
-    destroy_object_8c0cb374,
-    operation_8c0cb3b8,
-    operation_8c0cb3dc,
+    TObjEneMe1Canadin_EffLineFade_dtor_8c0cb374,
+    TObjEneMe1Canadin_EffLineFade_update_8c0cb3b8,
+    TObjEneMe1Canadin_EffLineFade_render_8c0cb3dc,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -68,9 +68,9 @@ VirtualFunction const vt_8c266ce8[7] = {
 VirtualFunction const vt_8c266d04[7] = {
     0,
     0,
-    destroy_object_8c0cd398,
-    operation_8c0cd3e8,
-    operation_8c0cd488,
+    TObjBoss1MokoHill_Solo_dtor_8c0cd398,
+    TObjBoss1MokoHill_Solo_update_8c0cd3e8,
+    TObjBoss1MokoHill_Solo_render_8c0cd488,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

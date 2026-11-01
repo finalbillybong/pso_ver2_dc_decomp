@@ -9,7 +9,7 @@ struct S_g8c4db520 {
     short f04;
 };
 extern void call_8c110398(int, int, int);
-void operation_8c16dac8(int a0, int a1)
+void quest_op_npc_crtpk_8c16dac8(int a0, int a1)
 {
     if (*(int *)0x8c4db520 != 0) {
         (*(S_g8c4db520 **)0x8c4db520)->f04 |= 4;

@@ -22,7 +22,7 @@ struct Object {
     float f50;
 };
 extern void operation_1959b0(int, void *, void *, float, float);
-void operation_8c09aa8c(Object *o)
+void TObjCMHexTile_render_8c09aa8c(Object *o)
 {
     Frame frame;
     float v1;

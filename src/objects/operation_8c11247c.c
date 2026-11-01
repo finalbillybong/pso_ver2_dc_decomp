@@ -17,10 +17,10 @@ struct Object {
     int f30;
     int f34;
 };
-extern void initialize_manager_8c106568(Object *, int);
-Object *operation_8c11247c(Object *o, int a1, int a2)
+extern void TShopSequence_ctor_8c106568(Object *, int);
+Object *TShopEquipmentGearSequence_ctor_8c11247c(Object *o, int a1, int a2)
 {
-    initialize_manager_8c106568(o, a1);
+    TShopSequence_ctor_8c106568(o, a1);
     o->dispatch = (void *)0x8c269bf8;
     o->tag = *(int *)0x8c30fec0;
     o->size = 0x38;

@@ -39,7 +39,7 @@ extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3a944a(void *);
 extern "C" void call_8c3aa716(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c1d93a4(Object *o)
+extern "C" void TObjCity_Season_Board_render_8c1d93a4(Object *o)
 {
     int t1;
     if (*(int *)0x8c4e2f10 != 0) {

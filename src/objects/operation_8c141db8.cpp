@@ -127,7 +127,7 @@ extern int g_8c418248;
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void call_8c02688c(S_c8c021ef8 *);
 extern "C" void operation_8c09e6b4(void *);
-extern "C" void operation_8c141db8(Object *o, Arg1 *a1, int a2)
+extern "C" void TOTrapAncient01_v05_8c141db8(Object *o, Arg1 *a1, int a2)
 {
     int v40;
     int v6;

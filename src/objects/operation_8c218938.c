@@ -11,7 +11,7 @@ struct S_g8c4db9e0 {
 };
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TItemDrop_ctor_8c218998(int, int, char);
-int operation_8c218938(int a0)
+int TItemDrop_create_8c218938(int a0)
 {
     char v1;
     int t1;

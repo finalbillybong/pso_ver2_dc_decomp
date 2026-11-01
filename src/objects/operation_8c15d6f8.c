@@ -10,7 +10,7 @@ struct Object {
     char unknown68[0xb4];
     int f11c;
 };
-void operation_8c15d6f8(Object *o)
+void TOSensorGeneral01_v18_8c15d6f8(Object *o)
 {
     o->f64 += 0x147;
     o->f11c += 0x28f;

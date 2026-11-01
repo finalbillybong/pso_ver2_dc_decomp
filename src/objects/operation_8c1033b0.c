@@ -14,7 +14,7 @@ struct Object {
     int f140;
 };
 extern int operation_8c073e5c(void *, void *);
-int operation_8c1033b0(Object *o, Arg1 *a1)
+int TItemMoney_v31_8c1033b0(Object *o, Arg1 *a1)
 {
     int t1;
     t1 = operation_8c073e5c((void *)o, (void *)a1);

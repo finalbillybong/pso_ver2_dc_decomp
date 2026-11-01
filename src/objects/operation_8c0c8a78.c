@@ -26,7 +26,7 @@ extern int record30_8c1794c8(int);
 extern void initialize_render_resource_lookups(void);
 extern int game_malloc_8c011ecc(int);
 extern void call_8c0cd588(int, void *, int);
-void operation_8c0c8a78(void)
+void load_assets_ene_re4_sorcerer_8c0c8a78(void)
 {
     int t1;
     int t2;

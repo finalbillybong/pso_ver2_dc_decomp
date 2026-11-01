@@ -55,7 +55,7 @@ extern int operation_8c1f2528(void *, int);
 extern void create_effect_777c(void *, int);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern int operation_8c07dca8(void *, void *);
-int operation_8c07def4(Object *o, Arg1 *a1)
+int TItemMag_v38_8c07def4(Object *o, Arg1 *a1)
 {
     Frame frame;
     int v12;

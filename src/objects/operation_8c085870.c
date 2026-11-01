@@ -34,7 +34,7 @@ extern void translate_current_matrix_v_8c382a40(void *);
 extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c085870(Object *o)
+void TObjContainerAbeEnemy_v88_8c085870(Object *o)
 {
     if (g_8c469c88 != 0) {
         switch (o->f30a) {

@@ -54,7 +54,7 @@ extern "C" void update_context_blend(void *);
 extern "C" void call_8c027090(Object *);
 extern "C" void call_8c01c5f0(Object *);
 extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
-extern "C" void operation_8c11aff0(Object *o)
+extern "C" void TObjEnePanarms_update_8c11aff0(Object *o)
 {
     Frame frame;
     int t1;

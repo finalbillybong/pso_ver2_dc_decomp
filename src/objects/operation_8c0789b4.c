@@ -30,7 +30,7 @@ struct Arg3 {
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int game_malloc_8c011ecc(int);
 extern void call_8c0f336c(int, int);
-Object *operation_8c0789b4(Object *o, int a1, Arg2 *a2, Arg3 *a3)
+Object *TBoss1DragonEffBreath_ctor_8c0789b4(Object *o, int a1, Arg2 *a2, Arg3 *a3)
 {
     Object **home = &o;
     int t1;

@@ -24,7 +24,7 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c237c20(Object *);
 extern void operation_8c248614(Object *);
 extern void operation_8c238fcc(Object *);
-Object *operation_8c2378fc(Object *o, int a1)
+Object *TChallenge_ctor_8c2378fc(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;

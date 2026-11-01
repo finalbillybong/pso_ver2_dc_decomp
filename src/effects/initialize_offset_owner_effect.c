@@ -11,7 +11,7 @@ extern void TObject_ctor_8c0330e4(Effect *,void *),TObject_dtor_8c03311c(Effect 
 extern int valid_at(Actor *);
 extern float normalize_at(Vector *);
 extern Child *spawn_at(Vector *,int,int);
-Effect *initialize_offset_owner_effect(Effect *o,void *parent,Actor *owner) {
+Effect *TObjEneRe2Flower_EffCurse3_ctor_8c05f4c4(Effect *o,void *parent,Actor *owner) {
     Effect **home=&o;
     TObject_ctor_8c0330e4(o,parent);
     o->vtable=effect_vtable;

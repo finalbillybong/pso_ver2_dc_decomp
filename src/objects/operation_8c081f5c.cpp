@@ -31,7 +31,7 @@ extern "C" void set_effect_bit0(void *);
 extern "C" void clear_effect_bit0(void *);
 extern "C" void call_8c081d60(Object *);
 extern "C" void call_8c081e38(Object *);
-extern "C" void operation_8c081f5c(Object *o)
+extern "C" void TObjDoorKey_render_8c081f5c(Object *o)
 {
     int t1;
     t1 = o->v11(400.0f, 20.0f);

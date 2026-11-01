@@ -12,7 +12,7 @@ struct Object {
     char unknownf4[0x18];
     float f10c;
 };
-void operation_8c24bb88(Object *o)
+void TODoorVS2Door01_v20_8c24bb88(Object *o)
 {
     o->f10c -= o->ff0;
     if (!(o->f10c > 0.0f)) {

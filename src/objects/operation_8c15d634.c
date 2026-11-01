@@ -21,7 +21,7 @@ struct S_vv5 {
     char unknown68[0xb8];
     int f120;
 };
-void operation_8c15d634(Object *o)
+void TOSensorGeneral01_v17_8c15d634(Object *o)
 {
     int v3;
     S_vv5 *v5;

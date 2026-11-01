@@ -10,7 +10,7 @@ extern S_g8c469ca4 *g_8c469ca4;
 extern void call_8c03dc40(void *, int);
 extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
-void operation_8c085e84(void)
+void release_assets_fe_obj_tanmatu02_8c085e84(void)
 {
     call_8c03dc40(g_8c469ca0, 1);
     g_8c469ca0 = (S_g8c469ca0 *)0;

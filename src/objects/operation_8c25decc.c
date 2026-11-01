@@ -11,7 +11,7 @@ struct S_g8c513460 {
     short f04;
 };
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c25de30(void *, int);
+extern void TDLGraph_ctor_8c25de30(void *, int);
 extern void operation_8c25e194(void *, int, int);
 void operation_8c25decc(int a0, int a1)
 {
@@ -28,7 +28,7 @@ void operation_8c25decc(int a0, int a1)
         if (t1 == 0) {
             goto L_8c25df1a;
         }
-        operation_8c25de30((void *)t1, (int)(*(S_g8c44be80 **)0x8c44be80));
+        TDLGraph_ctor_8c25de30((void *)t1, (int)(*(S_g8c44be80 **)0x8c44be80));
     } else {
         if (*(int *)0x8c513460 == 0) {
             return;

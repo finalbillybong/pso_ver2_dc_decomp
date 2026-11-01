@@ -20,9 +20,9 @@ extern void clamp_settings_8c1a0510(void);
 extern void call_8c013620(void *, int);
 extern void call_8c238fd4(void *);
 extern void operation_8c122ba0(void);
-extern void call_8c1a9ff4(void);
+extern void TObjBgmColCtrl_ctor_8c1a9ff4(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c1c0dc0(int, void *);
+extern void TObjCityAirCar_Ctrl_ctor_8c1c0dc0(int, void *);
 extern void call_8c1dbb54(int, void *);
 void operation_8c1229b8(void)
 {
@@ -40,10 +40,10 @@ void operation_8c1229b8(void)
     call_8c013620((void *)((void *)0x8c311d40), 0x40);
     call_8c238fd4((void *)((void *)0x8c41ce5c));
     operation_8c122ba0();
-    call_8c1a9ff4();
+    TObjBgmColCtrl_ctor_8c1a9ff4();
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
     if (t1 != 0) {
-        call_8c1c0dc0(t1, g_8c44be98);
+        TObjCityAirCar_Ctrl_ctor_8c1c0dc0(t1, g_8c44be98);
     }
     t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x20);
     if (t2 != 0) {

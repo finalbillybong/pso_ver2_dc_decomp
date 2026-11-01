@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_controller_child_a(void);
-extern void update_controller_child_a(void);
-extern void fn_8c24ea94(void);
+extern void TDuelEffectNumber_dtor_8c24ea2c(void);
+extern void TDuelEffectNumber_update_8c24ea70(void);
+extern void TDuelEffectNumber_render_8c24ea94(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
@@ -12,9 +12,9 @@ extern void hierarchy_output(void);
 VirtualFunction const vt_8c27e4b8[7] = {
     0,
     0,
-    destroy_controller_child_a,
-    update_controller_child_a,
-    fn_8c24ea94,
+    TDuelEffectNumber_dtor_8c24ea2c,
+    TDuelEffectNumber_update_8c24ea70,
+    TDuelEffectNumber_render_8c24ea94,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

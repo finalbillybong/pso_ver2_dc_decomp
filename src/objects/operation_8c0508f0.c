@@ -35,7 +35,7 @@ struct Arg0_dc {
     int f18;
 };
 extern void call_8c0441d8(Object *, Vector3);
-void operation_8c0508f0(Object *o)
+void TObjEneLappy_v67_8c0508f0(Object *o)
 {
     if (((o->f390 & 0x42)) == 0 && ((o->f34 & 0xa00)) == 0) {
         if (o->f30a != 1) {

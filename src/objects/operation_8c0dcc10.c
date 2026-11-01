@@ -62,7 +62,7 @@ extern void lookup_low_id(int);
 extern void request_resource_release(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c0dcc10(Object *o, int a1)
+Object *TWindowCtrl_dtor_8c0dcc10(Object *o, int a1)
 {
     S_vv1 *v1;
     int v85;

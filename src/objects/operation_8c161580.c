@@ -42,7 +42,7 @@ extern int record30_8c1794c8(int);
 extern float njScalor_8c37e480(void *);
 extern void njUnitVector_8c37b630(void *);
 extern void play_se_8c05fbf8(int, void *, int, int);
-Object *operation_8c161580(Object *o, int a1, Arg2 *a2, Arg3 *a3, int a4)
+Object *TObjEnePanarmsAtkColli_ctor_8c161580(Object *o, int a1, Arg2 *a2, Arg3 *a3, int a4)
 {
     Object **home = &o;
     float v3;

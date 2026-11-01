@@ -137,7 +137,7 @@ struct Arg4 {
 extern "C" void TObjEnemy_ctor_8c012008(Object *);
 extern "C" void call_8c0f8508(Object *);
 extern "C" void call_8c0f8a80(Object *, int);
-extern "C" Object *operation_8c0f83f8(Object *o, int a1, int a2, int a3, Arg4 *a4)
+extern "C" Object *TObjEneSlimeOne_ctor_2_8c0f83f8(Object *o, int a1, int a2, int a3, Arg4 *a4)
 {
     Frame frame;
     Object **home = &o;

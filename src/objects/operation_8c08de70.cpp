@@ -22,7 +22,7 @@ extern Vector3 g_8c3005d0;
 extern char g_8c469dcc;
 extern S_L8c3005dc g_8c3005dc;
 extern "C" char gc_8c3005dc[];
-extern "C" void operation_8c08de70(Object *o)
+extern "C" void TGroupEnemySetEditor_v06_8c08de70(Object *o)
 {
     if (g_8c469dcc == 0) {
         *(Vector3 *)&*(Vector3 *)(gc_8c3005dc + 0x0) = *(Vector3 *)&g_8c3005c4;

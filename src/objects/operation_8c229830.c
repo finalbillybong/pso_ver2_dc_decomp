@@ -22,7 +22,7 @@ extern void set_effect_bits(void *, unsigned short);
 extern void call_8c0a7608(void *, void *);
 extern int create_effect_777c(void *, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c229830(Object *o)
+void TObjDFDemo3_update_8c229830(Object *o)
 {
     S_vv1 *v1;
     int t1;

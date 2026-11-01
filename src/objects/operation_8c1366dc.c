@@ -11,7 +11,7 @@ struct Object {
 };
 extern int target_in_radius_8c113490(void *);
 extern int call_8c1134ec(Object *);
-int operation_8c1366dc(Object *o)
+int TOKeyAncient03_v16_8c1366dc(Object *o)
 {
     int v1;
     int t1;

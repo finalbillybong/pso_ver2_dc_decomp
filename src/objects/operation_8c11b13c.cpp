@@ -48,7 +48,7 @@ extern "C" int update_depth_mode(void *, void *);
 extern "C" void operation_8c11b200(void *);
 extern "C" void call_8c391cc4(void);
 extern "C" void call_8c11b270(Object *);
-extern "C" void operation_8c11b13c(Object *o)
+extern "C" void TObjEnePanarms_render_8c11b13c(Object *o)
 {
     int t1;
     int t2;

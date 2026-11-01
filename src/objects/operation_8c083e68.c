@@ -10,7 +10,7 @@ extern S_g8c469c8c *g_8c469c8c;
 extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
 extern void call_8c03dc40(void *, int);
-void operation_8c083e68(void)
+void release_assets_fe_obj_con_hahen1_8c083e68(void)
 {
     call_8c37d534(g_8c469c8c);
     game_free_8c011ec0(g_8c469c8c);

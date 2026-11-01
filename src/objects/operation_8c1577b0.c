@@ -9,7 +9,7 @@ extern char g_8c316250[];
 extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern int load_pvm_file_tls_8c118528(void *);
-void operation_8c1577b0(void)
+void load_assets_o_warp_ancient_8c1577b0(void)
 {
     int t1;
     int t2;

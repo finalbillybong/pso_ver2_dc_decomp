@@ -7,7 +7,7 @@ typedef struct S_g8c4db408 S_g8c4db408;
 typedef struct S_g8c4db408_0 S_g8c4db408_0;
 typedef struct S_g8c4db408_4 S_g8c4db408_4;
 extern int operation_03d094(unsigned short, short);
-void operation_8c17037c(int a0)
+void quest_op_read_switch_flag_on_floor_8c17037c(int a0)
 {
     int v1;
     int t1;

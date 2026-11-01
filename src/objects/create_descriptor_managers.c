@@ -5,7 +5,7 @@ extern Descriptor descriptors[];
 extern void *instances[], *resources[], *heap, *parent;
 extern Quad quads[];
 extern void *heap_alloc_8c122700(void *,unsigned int);
-extern void initialize0_at(void *,void *,Descriptor *),initialize1_at(void *,void *,Descriptor *),initialize2_at(void *,void *,Descriptor *),initialize3_at(void *,void *,Descriptor *),initialize4_at(void *,void *,Descriptor *),append_at(void *,void *);
+extern void TQuadSpriteNormal_ctor_8c040790(void *,void *,Descriptor *),TQuadSpriteScl_ctor_8c040a44(void *,void *,Descriptor *),TQuadSpriteCol_ctor_8c040254(void *,void *,Descriptor *),initialize3_at(void *,void *,Descriptor *),TQuadSpriteSclColRot_ctor_8c0419b8(void *,void *,Descriptor *),append_at(void *,void *);
 void create_descriptor_managers(void) {
     Descriptor *descriptor;
     int i;
@@ -15,15 +15,15 @@ void create_descriptor_managers(void) {
         switch (*(unsigned int *)((char *)&descriptors->kind+i*40)) {
         case 0:
             object=heap_alloc_8c122700(heap,48);
-            if(object) initialize0_at(object,parent,descriptor);
+            if(object) TQuadSpriteNormal_ctor_8c040790(object,parent,descriptor);
             break;
         case 1:
             object=heap_alloc_8c122700(heap,48);
-            if(object) initialize1_at(object,parent,descriptor);
+            if(object) TQuadSpriteScl_ctor_8c040a44(object,parent,descriptor);
             break;
         case 2:
             object=heap_alloc_8c122700(heap,48);
-            if(object) initialize2_at(object,parent,descriptor);
+            if(object) TQuadSpriteCol_ctor_8c040254(object,parent,descriptor);
             break;
         case 3:
             object=heap_alloc_8c122700(heap,48);
@@ -31,7 +31,7 @@ void create_descriptor_managers(void) {
             break;
         case 4:
             object=heap_alloc_8c122700(heap,48);
-            if(object) initialize4_at(object,parent,descriptor);
+            if(object) TQuadSpriteSclColRot_ctor_8c0419b8(object,parent,descriptor);
             break;
         }
         *(void **)((char *)instances+((unsigned int)i<<2))=object;

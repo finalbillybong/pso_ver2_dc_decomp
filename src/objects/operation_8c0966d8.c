@@ -30,7 +30,7 @@ struct S_c8c0351c8 {
     Block80 f00;
 };
 extern S_c8c0351c8 *operation_8c0351c8(int);
-extern void call_8c0348bc(void *, int);
+extern void TCharaMaking_ctor_8c0348bc(void *, int);
 void operation_8c0966d8(Object *o)
 {
     S_vv1 *v1;
@@ -42,6 +42,6 @@ void operation_8c0966d8(Object *o)
         v1->f00.f30 = -1;
         v1->f00.f00 = 0;
         o->f04 |= 1;
-        call_8c0348bc((void *)(*(S_g8c44be90 **)0x8c44be90), (int)(*(int *)0x8c4db9e0 + 0x370));
+        TCharaMaking_ctor_8c0348bc((void *)(*(S_g8c44be90 **)0x8c44be90), (int)(*(int *)0x8c4db9e0 + 0x370));
     }
 }

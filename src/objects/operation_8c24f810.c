@@ -19,7 +19,7 @@ struct Frame {
 };
 extern void call_8c075894(Object *, void *, int, Frame *);
 extern void create_effect_777c(void *, int);
-void operation_8c24f810(Object *o)
+void TItemWpnYasuShotGun_v49_8c24f810(Object *o)
 {
     Frame frame;
     o->f234 = 2;

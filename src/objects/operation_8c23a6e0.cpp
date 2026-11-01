@@ -67,7 +67,7 @@ typedef struct ObjectData {
 extern "C" int call_8c1aaabc(int);
 extern "C" void operation_1abd98_8c1ac468();
 extern "C" void operation_1ac120();
-extern "C" void operation_8c23a6e0(Object *o)
+extern "C" void TItemWpnBindMechGun_v49_8c23a6e0(Object *o)
 {
     int t1;
     int t2;

@@ -27,7 +27,7 @@ struct Object {
     int f54;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c21696c(Object *o, int a1)
+Object *TWindowSubShortMail_ctor_8c21696c(Object *o, int a1)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2782b8;

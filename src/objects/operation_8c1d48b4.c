@@ -61,7 +61,7 @@ extern void operation_8c1d4cb0(void *);
 extern int lookup_low_id(int);
 extern int operation_8c0244c4(void *);
 extern void operation_8c1d4b78(void *);
-void operation_8c1d48b4(Object *o)
+void TWindowSubEquip_update_8c1d48b4(Object *o)
 {
     S_vv6 *v6;
     S_vv11 *v11;

@@ -15,7 +15,7 @@ struct Arg0_dc {
     char unknown0[0x4];
     float f04;
 };
-void operation_8c061020(Object *o)
+void TObjEneBm5Wolf_v94_8c061020(Object *o)
 {
     o->fdc->f04 = o->f428 + 10.0f;
 }

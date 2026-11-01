@@ -46,7 +46,7 @@ extern "C" void call_8c3aa716(void *);
 extern "C" void call_8c391c94(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c11efa4(Object *o)
+extern "C" void TODoorAncient05_render_8c11efa4(Object *o)
 {
     int t1;
     int t2;

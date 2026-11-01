@@ -10,7 +10,7 @@ static inline void destroy_base(DerivedEffectChild *o){
         TObject_dtor_8c03311c(o,0);
     }
 }
-DerivedEffectChild *operation_1abfe8(DerivedEffectChild *o,short release){
+DerivedEffectChild *TItemShootParticle_dtor_8c1abfe8(DerivedEffectChild *o,short release){
     if(o){
         int i;
         o->dispatch=(void *)0x8c274894;

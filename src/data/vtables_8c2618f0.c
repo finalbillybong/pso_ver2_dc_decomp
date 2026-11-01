@@ -2,13 +2,13 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c03c214(void);
-extern void run_actor_callback_on_timeout(void);
+extern void TPlyOnCountOver_dtor_8c03c214(void);
+extern void TPlyOnCountOver_update_8c03bae8(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_object_8c03c258(void);
-extern void run_actor_callback_if_present(void);
+extern void TPlyOnCreated_dtor_8c03c258(void);
+extern void TPlyOnCreated_update_8c03ba1c(void);
 extern void destroy_object_8c03c29c(void);
 extern void run_actor_callback_when_idle(void);
 extern void destroy_object_8c03b8b8(void);
@@ -22,8 +22,8 @@ extern void TObject_update_default_8c0111c4(void);
 VirtualFunction const vt_8c2618f0[7] = {
     0,
     0,
-    destroy_object_8c03c214,
-    run_actor_callback_on_timeout,
+    TPlyOnCountOver_dtor_8c03c214,
+    TPlyOnCountOver_update_8c03bae8,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
@@ -33,8 +33,8 @@ VirtualFunction const vt_8c2618f0[7] = {
 VirtualFunction const vt_8c26190c[7] = {
     0,
     0,
-    destroy_object_8c03c258,
-    run_actor_callback_if_present,
+    TPlyOnCreated_dtor_8c03c258,
+    TPlyOnCreated_update_8c03ba1c,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

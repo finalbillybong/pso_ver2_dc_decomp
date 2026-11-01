@@ -11,7 +11,7 @@ struct S_g8c4db9e4 {
     S_g8c4db9e4_11dc *f11dc;
 };
 extern int call_8c2383dc(void *);
-void operation_8c1722a0(int a0)
+void quest_op_get_cmode_prize_rank_8c1722a0(int a0)
 {
     int t1;
     if (*(int *)0x8c4db9e4 != 0) {

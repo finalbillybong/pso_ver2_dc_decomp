@@ -21,7 +21,7 @@ extern void call_8c0641c4(int, int);
 extern void call_8c064370(int, int);
 extern void call_8c0645d4(int, int);
 extern void operation_8c0649f4(void *, int);
-void operation_8c06150c(int a0, int a1, int a2)
+void TObjEneBm5Wolf_v93_8c06150c(int a0, int a1, int a2)
 {
     switch (a1) {
     case 0:

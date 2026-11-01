@@ -13,7 +13,7 @@ struct Object {
 extern char g_8c3112d4[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c11db38(Object *o)
+void TObjLazerFence4_v09_8c11db38(Object *o)
 {
     o->ff2 = o->f88;
     njPrintColor_8c38c5b6(-0xff0100);

@@ -25,7 +25,7 @@ struct Object {
     Vector3 f52c;
 };
 extern void call_8c05afe0(Object *, Frame *);
-void operation_8c1446c4(Object *o)
+void TBoss2DeRolLe_v94_8c1446c4(Object *o)
 {
     Frame frame;
     S_vv1 *v1;

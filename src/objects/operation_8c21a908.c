@@ -25,7 +25,7 @@ struct S_g8c46ee80 {
 };
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern float njScalor_8c37e480(Frame *);
-void operation_8c21a908(Object *o)
+void TObjDFUsoTower_update_8c21a908(Object *o)
 {
     Frame frame;
     float v2;

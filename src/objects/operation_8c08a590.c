@@ -22,7 +22,7 @@ struct Object {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c08ab24(Object *);
-Object *operation_8c08a590(Object *o, int a1, int a2, int a3, int a4)
+Object *TeneFakeTecThunderEff_ctor_8c08a590(Object *o, int a1, int a2, int a3, int a4)
 {
     Object **home = &o;
     (void)home;

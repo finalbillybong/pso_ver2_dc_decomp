@@ -28,7 +28,7 @@ struct Arg0_3c {
 extern int operation_8c1d2478(void *);
 extern void request_resource_release(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c1a62a8(void *, void *, void *);
+extern void TWindowChatSymbol_ctor_8c1a62a8(void *, void *, void *);
 extern void operation_8c1a6460(void *, int);
 extern void operation_8c1a6480(void *);
 extern Block8 g_8c289330[2];
@@ -49,7 +49,7 @@ void operation_8c1d23b8(Object *o)
     if (o->f3c == 0) {
         t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x70);
         if (t2 != 0) {
-            operation_8c1a62a8((void *)t2, (void *)g_8c289330, (void *)((void *)0x8c289328));
+            TWindowChatSymbol_ctor_8c1a62a8((void *)t2, (void *)g_8c289330, (void *)((void *)0x8c289328));
         }
         o->f3c = (Arg0_3c *)t2;
         operation_8c1a6460((void *)(o->f3c), (int)((void *)0x8c5059a4));

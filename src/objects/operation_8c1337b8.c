@@ -12,7 +12,7 @@ struct Object {
     Block68 f3c;
 };
 extern void release_render_mode_four_8c03ce90(void);
-void operation_8c1337b8(Object *o)
+void TLightEditor_v07_8c1337b8(Object *o)
 {
     release_render_mode_four_8c03ce90();
     *(Block68 *)&*(Block68 *)0x8c418280 = *(Block68 *)&o->f3c;

@@ -9,7 +9,7 @@ struct Object {
     int f234;
     int f238;
 };
-void operation_8c2491b8(Object *o)
+void TItemWpnGyaranzo_v53_8c2491b8(Object *o)
 {
     if (o->f238 > 0) {
         o->f238 -= 0x888;

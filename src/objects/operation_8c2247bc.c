@@ -53,7 +53,7 @@ extern void call_8c0dc854(Object *);
 extern int game_malloc_8c011ecc(int);
 extern void operation_8c199b20(int, int);
 extern void call_8c199b8c(int, void *);
-Object *operation_8c2247bc(Object *o, Arg1 *a1, int a2, int a3)
+Object *TWindowSubSymbolChatParts_ctor_8c2247bc(Object *o, Arg1 *a1, int a2, int a3)
 {
     Frame frame;
     Object **home = &o;

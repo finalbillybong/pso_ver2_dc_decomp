@@ -10,7 +10,7 @@ struct S_L8c4db494 {
 };
 extern int g_8c286604;
 extern S_L8c4db494 g_8c4db494;
-void operation_8c16ff88(unsigned int a0)
+void quest_op_ba_set_unused_F817_8c16ff88(unsigned int a0)
 {
     if ((unsigned int)1 >= a0) {
         (&g_8c4db494)->f05 = *(int *)((char *)&g_8c286604 + (a0 << 2));

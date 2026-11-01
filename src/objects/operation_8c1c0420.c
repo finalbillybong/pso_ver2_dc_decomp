@@ -19,7 +19,7 @@ struct Object {
     float f9c;
 };
 extern void TObjectShared_ctor_8c01d1ec(Object *, void *);
-Object *operation_8c1c0420(Object *o)
+Object *TOExplosiveMachine_ctor_8c1c0420(Object *o)
 {
     int v1;
     TObjectShared_ctor_8c01d1ec(o, (void *)(*(S_g8c44be98 **)0x8c44be98));

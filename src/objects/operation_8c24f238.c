@@ -9,7 +9,7 @@ struct Object {
     int f234;
     int f238;
 };
-void operation_8c24f238(Object *o)
+void TItemWpnNaganoClaw_v55_8c24f238(Object *o)
 {
     o->f234 = 0;
     o->f238 = 0;

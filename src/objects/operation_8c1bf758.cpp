@@ -68,7 +68,7 @@ extern "C" void call_8c391c94(void);
 extern "C" void njScale_8c37e2e4(int, float, float, float);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void call_8c391cc4(void);
-extern "C" void operation_8c1bf758(Object *o)
+extern "C" void TOCakeshopCave01_render_8c1bf758(Object *o)
 {
     S_vv1 *v1;
     char *v2;

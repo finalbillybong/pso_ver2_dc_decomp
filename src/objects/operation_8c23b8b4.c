@@ -17,8 +17,8 @@ struct Object {
 };
 extern int g_8c44be04;
 extern S_g8c44be9c *g_8c44be9c;
-extern void operation_8c23b9e8(int, int, int);
-void operation_8c23b8b4(Object *o)
+extern void TItemEffDevilCane_create_8c23b9e8(int, int, int);
+void TItemWpnDevilCane_v53_8c23b8b4(Object *o)
 {
     int v1;
     int v16;
@@ -56,7 +56,7 @@ L_8c23b8fe:
             if (v15 != 0) {
                 if (!(v15 == 0xf)) {
                     pm2 = (int)(o->fe8);
-                    operation_8c23b9e8((int)g_8c44be9c, pm2, 5);
+                    TItemEffDevilCane_create_8c23b9e8((int)g_8c44be9c, pm2, 5);
                 }
             }
         }

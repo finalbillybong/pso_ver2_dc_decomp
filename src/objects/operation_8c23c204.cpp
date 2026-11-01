@@ -55,7 +55,7 @@ struct Arg0_13c_s754 {
 extern "C" int call_8c1aaabc(int);
 extern "C" void call_8c23c26c(Object *);
 extern "C" void operation_8c076580(void *);
-extern "C" void operation_8c23c204(Object *o)
+extern "C" void TItemWpnDoubleCanon_v49_8c23c204(Object *o)
 {
     int t1;
     int t2;

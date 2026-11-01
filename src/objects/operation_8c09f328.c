@@ -29,7 +29,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3a944a(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c391cc4(void);
-void operation_8c09f328(Object *o)
+void TSceneSora_render_8c09f328(Object *o)
 {
     call_8c391c94();
     call_8c3827d8((void *)((*(S_g8c46ed84 **)0x8c46ed84)->f42c->f0c));

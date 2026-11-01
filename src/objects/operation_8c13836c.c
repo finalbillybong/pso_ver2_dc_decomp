@@ -21,7 +21,7 @@ struct Object {
     int f398;
 };
 extern void call_8c138424(Object *);
-void operation_8c13836c(Object *o)
+void TBoss3Volopt_update_8c13836c(Object *o)
 {
     char *v12;
     v12 = (char *)o->f34;

@@ -40,7 +40,7 @@ extern int operation_8c156c24(int, int);
 extern void operation_8c156d30(Arg0_e8 *, void *, int, int);
 extern void call_8c156f50(Arg0_e8 *);
 extern void operation_8c157138(void *);
-void operation_8c1bdffc(Object *o)
+void TObjCityMainWarp_v16_8c1bdffc(Object *o)
 {
     Frame frame;
     int v6;

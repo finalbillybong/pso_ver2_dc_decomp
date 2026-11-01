@@ -60,7 +60,7 @@ extern "C" void njRotateZ_8c37e02c(int, void *);
 extern "C" void njRotateX_8c37dd28(int, void *);
 extern "C" void call_8c3aa702(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c114684(Object *o)
+extern "C" void TOKeyAncient01_render_8c114684(Object *o)
 {
     int t1;
     t1 = o->v11(((ObjectData *)o)->ff8, ((ObjectData *)o)->ffc);

@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c1a632c(void);
-extern void operation_8c1a6370(void);
-extern void fn_8c1a63a0(void);
+extern void TWindowChatSymbol_dtor_8c1a632c(void);
+extern void TWindowChatSymbol_update_8c1a6370(void);
+extern void TWindowChatSymbol_render_8c1a63a0(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0dc63c(void);
@@ -13,9 +13,9 @@ extern void operation_8c0dc63c(void);
 VirtualFunction const vt_8c2745b8[8] = {
     0,
     0,
-    destroy_object_8c1a632c,
-    operation_8c1a6370,
-    fn_8c1a63a0,
+    TWindowChatSymbol_dtor_8c1a632c,
+    TWindowChatSymbol_update_8c1a6370,
+    TWindowChatSymbol_render_8c1a63a0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c

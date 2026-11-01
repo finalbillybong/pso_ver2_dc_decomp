@@ -17,12 +17,12 @@ extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
 extern void operation_8c0104f0(void);
-extern void destroy_object_8c1ddfc8(void);
+extern void TOButterflyDF_dtor_8c1ddfc8(void);
 extern void fn_8c131a78(void);
 extern void fn_8c131b3c(void);
 extern void operation_8c0eeb8c(void);
 extern void operation_8c010508(void);
-extern void operation_8c1de11c(void);
+extern void TOButterflyDF_v15_8c1de11c(void);
 
 /* 8c2773a8: type-information and this-adjustment header, then 15 slots */
 VirtualFunction const vt_8c2773a8[17] = {
@@ -49,7 +49,7 @@ VirtualFunction const vt_8c2773a8[17] = {
 VirtualFunction const vt_8c2773ec[18] = {
     0,
     0,
-    destroy_object_8c1ddfc8,
+    TOButterflyDF_dtor_8c1ddfc8,
     fn_8c131a78,
     fn_8c131b3c,
     operation_8c0eeb8c,
@@ -64,5 +64,5 @@ VirtualFunction const vt_8c2773ec[18] = {
     fn_8c01d4c4,
     operation_8c010510,
     operation_8c0104f0,
-    operation_8c1de11c
+    TOButterflyDF_v15_8c1de11c
 };

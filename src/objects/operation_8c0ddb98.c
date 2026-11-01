@@ -6,12 +6,12 @@ typedef struct Vector3 {
 typedef struct S_g8c44bea0 S_g8c44bea0;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c2268ac(int, void *, int);
-void operation_8c0ddb98(int a0)
+extern void TWindowSetLevelUp_ctor_8c2268ac(int, void *, int);
+void TWindowSetLevelUp_create_8c0ddb98(int a0)
 {
     int t1;
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x40);
     if (t1 != 0) {
-        call_8c2268ac(t1, *(S_g8c44bea0 **)0x8c44bea0, a0);
+        TWindowSetLevelUp_ctor_8c2268ac(t1, *(S_g8c44bea0 **)0x8c44bea0, a0);
     }
 }

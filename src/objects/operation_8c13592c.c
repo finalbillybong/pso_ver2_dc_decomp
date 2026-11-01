@@ -24,7 +24,7 @@ extern int operation_8c0eea7c(int, float);
 extern void operation_8c05428c(void *, int, int);
 extern int get_current_area_8c032b10(void);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c13592c(Object *o)
+void TODoorAncient09_v19_8c13592c(Object *o)
 {
     int v5;
     int t1;

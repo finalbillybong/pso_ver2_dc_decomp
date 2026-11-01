@@ -29,7 +29,7 @@ typedef struct ObjectData {
 extern "C" void call_8c20b098(Object *, S_c0 *);
 extern "C" void call_8c20b284(Object *, S_c0 *, void *, float);
 extern "C" void draw_view_nodes(void *, void *, void *);
-extern "C" void operation_8c215b90(Object *o)
+extern "C" void TWindowDD_WS_String_render_8c215b90(Object *o)
 {
     S_c0 *t1;
     t1 = (S_c0 *)o->v5();

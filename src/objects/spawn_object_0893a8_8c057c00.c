@@ -1,7 +1,7 @@
 #define heap_alloc_8c122700 ((void *(*)(void *,unsigned int))0x8c122700)
-#define initialize_at ((void (*)(void *,void *,void *))0x8c057c80)
+#define TObjEneBm3FlyNest_ctor_8c057c80 ((void (*)(void *,void *,void *))0x8c057c80)
 void *TObjEneBm3FlyNest_create_8c057c00(void *argument) {
  void *object=heap_alloc_8c122700(*(void **)0x8c4d97e0,0x4a4);
- if(object) initialize_at(object,*(void **)0x8c44be94,argument);
+ if(object) TObjEneBm3FlyNest_ctor_8c057c80(object,*(void **)0x8c44be94,argument);
  return object;
 }

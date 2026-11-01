@@ -12,7 +12,7 @@ struct Object {
     float ff0;
 };
 extern void operation_8c05428c(void *, int, int);
-void operation_8c24b454(Object *o)
+void TObjDoaEx01_v20_8c24b454(Object *o)
 {
     o->fe8 -= o->ff0;
     if (0.0f > o->fe8) {

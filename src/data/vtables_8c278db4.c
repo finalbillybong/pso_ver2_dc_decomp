@@ -2,14 +2,14 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c22b324(void);
-extern void fn_8c22b368(void);
-extern void fn_8c22b40c(void);
+extern void TWindowEff_dtor_8c22b324(void);
+extern void TWindowEff_update_8c22b368(void);
+extern void TWindowEff_render_8c22b40c(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_context_8c22b6d0(void);
-extern void operation_8c22b71c(void);
-extern void operation_8c22b758(void);
+extern void TObjDFDemoF_dtor_8c22b6d0(void);
+extern void TObjDFDemoF_update_8c22b71c(void);
+extern void TObjDFDemoF_render_8c22b758(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void reset_shared_object(void);
@@ -19,18 +19,18 @@ extern void operation_8c010508(void);
 extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
-extern void destroy_object_8c22b948(void);
-extern void operation_8c22b98c(void);
-extern void fn_8c22ba2c(void);
+extern void TWindowSoundBalance_dtor_8c22b948(void);
+extern void TWindowSoundBalance_update_8c22b98c(void);
+extern void TWindowSoundBalance_render_8c22ba2c(void);
 extern void operation_8c0dc63c(void);
 
 /* 8c278db4: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c278db4[7] = {
     0,
     0,
-    destroy_object_8c22b324,
-    fn_8c22b368,
-    fn_8c22b40c,
+    TWindowEff_dtor_8c22b324,
+    TWindowEff_update_8c22b368,
+    TWindowEff_render_8c22b40c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -39,9 +39,9 @@ VirtualFunction const vt_8c278db4[7] = {
 VirtualFunction const vt_8c278dd0[16] = {
     0,
     0,
-    destroy_context_8c22b6d0,
-    operation_8c22b71c,
-    operation_8c22b758,
+    TObjDFDemoF_dtor_8c22b6d0,
+    TObjDFDemoF_update_8c22b71c,
+    TObjDFDemoF_render_8c22b758,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -59,9 +59,9 @@ VirtualFunction const vt_8c278dd0[16] = {
 VirtualFunction const vt_8c278e10[8] = {
     0,
     0,
-    destroy_object_8c22b948,
-    operation_8c22b98c,
-    fn_8c22ba2c,
+    TWindowSoundBalance_dtor_8c22b948,
+    TWindowSoundBalance_update_8c22b98c,
+    TWindowSoundBalance_render_8c22ba2c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c

@@ -9,7 +9,7 @@ struct Object {
     int f238;
 };
 extern int call_8c12b944(void);
-void operation_8c23a94c(Object *o)
+void TItemWpnBlueCane_v51_8c23a94c(Object *o)
 {
     int t1;
     if (o->f238 == 3) {

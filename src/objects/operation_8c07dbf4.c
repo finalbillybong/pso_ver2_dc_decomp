@@ -22,7 +22,7 @@ struct S_vv3 {
 };
 extern void call_8c07f5d8(Object *);
 extern void call_8c07f06c(Object *, int);
-void operation_8c07dbf4(Object *o, int a1)
+void TItemMag_v39_8c07dbf4(Object *o, int a1)
 {
     int v1;
     int v2;

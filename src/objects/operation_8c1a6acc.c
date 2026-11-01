@@ -62,7 +62,7 @@ extern void call_8c1cdd08(Arg0_2c *);
 extern void operation_8c19a044(void *, int);
 extern int call_8c15b448(int, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c1d5b24(void *);
+extern void TWindowHelpItem_ctor_8c1d5b24(void *);
 extern void operation_8c1d5dfc(void *, int);
 void operation_8c1a6acc(Object *o)
 {
@@ -138,7 +138,7 @@ void operation_8c1a6acc(Object *o)
         }
         t5 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xb8);
         if (t5 != 0) {
-            operation_8c1d5b24((void *)t5);
+            TWindowHelpItem_ctor_8c1d5b24((void *)t5);
         }
         o->f38 = (Arg0_38 *)t5;
         operation_8c1d5dfc((void *)(o->f38), (int)(((char *)o + 0x3c)));

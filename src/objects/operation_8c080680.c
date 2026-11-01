@@ -20,7 +20,7 @@ struct S_vv1 {
 extern void operation_8c09e6f4(void *, int);
 extern void destroy_shared_object(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c080680(Object *o, int a1)
+Object *TObjParticle_dtor_8c080680(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

@@ -22,10 +22,10 @@ struct Object {
     int f44;
     int f48;
 };
-extern void initialize_manager_8c106568(Object *, int);
-Object *operation_8c15babc(Object *o, int a1, int a2)
+extern void TShopSequence_ctor_8c106568(Object *, int);
+Object *TCheckRoomSequence_ctor_8c15babc(Object *o, int a1, int a2)
 {
-    initialize_manager_8c106568(o, a1);
+    TShopSequence_ctor_8c106568(o, a1);
     o->dispatch = (void *)0x8c26eea4;
     o->tag = *(int *)0x8c316668;
     o->size = 0x4c;

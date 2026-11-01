@@ -42,8 +42,8 @@ extern int call_8c1aaabc(void *);
 extern int call_8c1aaafc(void *);
 extern int operation_8c137998(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c1ab01c(void *, int, int, int);
-void operation_8c25219c(Object *o)
+extern void TItemTimer_ctor_8c1ab01c(void *, int, int, int);
+void TItemWpnOnShuriken_v49_8c25219c(Object *o)
 {
     Frame frame;
     int t1;
@@ -78,7 +78,7 @@ void operation_8c25219c(Object *o)
     if (t3 != 0) {
         t4 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
         if (t4 != 0) {
-            operation_8c1ab01c((void *)t4, t3, (int)((void *)0x8c2522c4), 3);
+            TItemTimer_ctor_8c1ab01c((void *)t4, t3, (int)((void *)0x8c2522c4), 3);
         }
     }
 }

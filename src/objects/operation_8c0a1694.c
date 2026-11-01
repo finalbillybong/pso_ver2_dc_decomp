@@ -30,7 +30,7 @@ extern void call_8c0a18a8(int);
 extern void operation_8c0a2048(int);
 extern void njScalor_8c37e480(void *);
 extern void submit_in_vector_frame(void *, void *);
-void operation_8c0a1694(int a0)
+void TCameraCtrl_update_8c0a1694(int a0)
 {
     Frame frame;
     S_vv1 *v1;

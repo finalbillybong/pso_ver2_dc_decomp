@@ -21,7 +21,7 @@ struct Object {
     int f4c;
 };
 extern void TObject_ctor_8c0330e4(Object *, int);
-Object *operation_8c1c72fc(Object *o, int a1, int a2, int a3)
+Object *TItemEffShield_ctor_8c1c72fc(Object *o, int a1, int a2, int a3)
 {
     TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c2767fc;

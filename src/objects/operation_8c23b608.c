@@ -23,7 +23,7 @@ struct Object {
     int f240;
 };
 extern void call_8c075398(void);
-Object *operation_8c23b608(Object *o)
+Object *TItemWpnDevilCane_ctor_8c23b608(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c27a28c;

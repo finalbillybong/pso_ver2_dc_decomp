@@ -13,7 +13,7 @@ static inline int icmp(const unsigned char *a, const unsigned char *b)
     }
     return c1 - c2;
 }
-void operation_8c1722f4(int a0)
+void quest_op_party_has_name_8c1722f4(int a0)
 {
     int t1;
     t1 = icmp((unsigned char *)(void *)0x8c340764, (unsigned char *)(g_8c318c08 + 0x27));

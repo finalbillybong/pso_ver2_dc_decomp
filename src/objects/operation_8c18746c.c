@@ -32,8 +32,8 @@ struct Arg2 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_paired_array_owner(void *, void *, int);
-Object *operation_8c18746c(Object *o, int a1, Arg2 *a2)
+extern void TEnemyTaskList_ctor_8c114ad8(void *, void *, int);
+Object *TSetEvtDestroy_ctor_8c18746c(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     S_vv3 *v3;
@@ -58,7 +58,7 @@ Object *operation_8c18746c(Object *o, int a1, Arg2 *a2)
         o->f30 = 0;
         t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, (unsigned int)0x30);
         if (t1 != 0) {
-            initialize_paired_array_owner((void *)t1, (void *)o, 0x20);
+            TEnemyTaskList_ctor_8c114ad8((void *)t1, (void *)o, 0x20);
         }
         o->f34 = t1;
     } else {

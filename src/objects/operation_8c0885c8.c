@@ -10,7 +10,7 @@ extern S_g8c469d64 *g_8c469d64;
 extern void call_8c03dc40(void *, int);
 extern void call_8c37d534(void *);
 extern void game_free_8c011ec0(void *);
-void operation_8c0885c8(void)
+void release_assets_fs_obj_warp_8c0885c8(void)
 {
     call_8c03dc40(g_8c469d60, 1);
     g_8c469d60 = (S_g8c469d60 *)0;

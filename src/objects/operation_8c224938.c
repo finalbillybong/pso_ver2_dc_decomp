@@ -32,7 +32,7 @@ extern void position_indexed_label_8c22519c(void *);
 extern void call_8c199b74(void *);
 extern void call_8c199bc4(void *);
 extern void call_8c0db30c(Object *);
-void operation_8c224938(Object *o)
+void TWindowSubSymbolChatParts_update_8c224938(Object *o)
 {
     int t1;
     int t2;

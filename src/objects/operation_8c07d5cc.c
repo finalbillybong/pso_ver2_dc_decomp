@@ -14,7 +14,7 @@ struct Object {
 extern int call_8c207304(void *);
 extern int call_8c18e768(int, int);
 extern void flag_owner_8c074ddc(void *);
-void operation_8c07d5cc(Object *o)
+void TItemMag_v15_8c07d5cc(Object *o)
 {
     int t1;
     int t2;

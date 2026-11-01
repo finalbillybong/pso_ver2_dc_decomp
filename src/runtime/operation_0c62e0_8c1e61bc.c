@@ -2,7 +2,7 @@
 extern char records[];
 #define prepare_at ((void (*)(void *,int,int,float))0x8c37eb1c)
 
-void operation_0c62e0_8c1e61bc(void) {
+void TAdSEGAlogo_render_8c1e61bc(void) {
     prepare_at(records + 0, 0, 0, -150.0f);
     prepare_at(records + 32, 1, 0, -150.0f);
     prepare_at(records + 64, 2, 0, -150.0f);

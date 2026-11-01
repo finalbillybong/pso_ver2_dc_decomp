@@ -35,7 +35,7 @@ extern int g_8c33ffb4;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c18e8a0(int, int);
 typedef struct Pair { short a; short b; } Pair;
-Object *operation_8c2571dc(Object *o, int a1, Pair *a2)
+Object *TObjHexLine_ctor_8c2571dc(Object *o, int a1, Pair *a2)
 {
     Pair frame;
     int v1;

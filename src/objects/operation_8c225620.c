@@ -20,9 +20,9 @@ struct S_g8c46fe20 {
 extern S_g8c46fe20 *g_8c46fe20;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void destroy_motion_profile_8c199ba0(void *, short);
-extern void destroy_effect_d870_8c11953c(void *, short);
+extern void TWindowMessage_dtor_8c11953c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c225620(Object *o, int a1)
+Object *TWindowMessageLog_dtor_8c225620(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c278b0c;
@@ -30,7 +30,7 @@ Object *operation_8c225620(Object *o, int a1)
         if (g_8c46fe20 != 0) {
             g_8c46fe20->f6c = 0;
         }
-        destroy_effect_d870_8c11953c((void *)o, (short)0);
+        TWindowMessage_dtor_8c11953c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

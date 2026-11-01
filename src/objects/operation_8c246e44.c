@@ -6,7 +6,7 @@ typedef struct Vector3 {
 extern int operation_8c246e74(void *);
 extern void call_8c246efc(int);
 extern void call_8c246fb8(int);
-void operation_8c246e44(int a0)
+void TObjTombstone_render_8c246e44(int a0)
 {
     int t1;
     t1 = operation_8c246e74((void *)a0);

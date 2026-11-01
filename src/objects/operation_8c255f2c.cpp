@@ -30,7 +30,7 @@ extern int g_8c33fe90;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern "C" void operation_8c112e74(void *, void *);
+extern "C" void TOKey_ctor_8c112e74(void *, void *);
 extern "C" void operation_8c2561fc(void *);
 extern "C" S_c8c122700 *TOSwitchItem_ctor_8c255f2c(int a0)
 {
@@ -40,7 +40,7 @@ extern "C" S_c8c122700 *TOSwitchItem_ctor_8c255f2c(int a0)
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;
         (void)home;
-        operation_8c112e74((void *)t1, g_8c44be98);
+        TOKey_ctor_8c112e74((void *)t1, g_8c44be98);
         *(void **)((char *)self + 0x18) = (void *)(void *)0x8c281618;
         ((S_c8c122700Data *)self)->f00 = (int)(g_8c33fe90);
         ((S_c8c122700Data *)self)->f1e = 0x12c;

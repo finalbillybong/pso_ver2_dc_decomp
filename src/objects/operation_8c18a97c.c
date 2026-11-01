@@ -11,7 +11,7 @@ struct Object {
 };
 extern void operation_8c074ce4(void);
 extern void njRotateZ_8c37e02c(int, void *);
-void operation_8c18a97c(Object *o)
+void TItemWpnStingTip_v57_8c18a97c(Object *o)
 {
     if (*(int *)0x8c4689f0 != 1) {
         if (*(int *)0x8c4689f0 == 2) {

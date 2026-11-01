@@ -17,7 +17,7 @@ struct S_vv7 {
 };
 extern void operation_8c172be8(void *, int);
 extern int call_8c18e768(void *, int);
-void operation_8c077778(Object *o)
+void TItemEffectWeapon_update_8c077778(Object *o)
 {
     int v4;
     int v5;

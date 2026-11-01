@@ -53,7 +53,7 @@ extern S_g8c46f3ac *g_8c46f3ac;
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern float call_8c130334(float, float);
 extern void call_8c0121a0(Object *, int, void *, int);
-void operation_8c0bdf2c(Object *o)
+void TObjEneSaver_v68_8c0bdf2c(Object *o)
 {
     Frame frame;
     float t1;

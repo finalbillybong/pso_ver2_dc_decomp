@@ -23,7 +23,7 @@ struct Arg2 {
     Vector3 f00;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c1d97d8(Object *o, int a1, Arg2 *a2, float f0)
+Object *TObjCity_Season_FireWork_ctor_8c1d97d8(Object *o, int a1, Arg2 *a2, float f0)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c276ef4;

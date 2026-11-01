@@ -15,7 +15,7 @@ struct Object {
 extern void operation_192b28(void *, short);
 extern void destroy_context_8c1ccd60(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c21c8ac(Object *o, int a1)
+Object *TWindowSubShortCutList_dtor_8c21c8ac(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c2785d0;

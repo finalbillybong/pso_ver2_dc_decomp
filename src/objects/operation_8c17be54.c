@@ -27,7 +27,7 @@ struct Arg0_38_2c_4 {
     Arg0_38_2c_4_4 *f04;
 };
 extern void call_8c0344f0(void *, short, int, int);
-void operation_8c17be54(Object *o)
+void TItemWpnChainSaw_v52_8c17be54(Object *o)
 {
     call_8c0344f0((void *)(o->f38->f2c->f04->f04), o->f234, 0, 0);
 }

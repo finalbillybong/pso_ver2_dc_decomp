@@ -75,7 +75,7 @@ extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_effect_pair(void *, void *, void *, void *, unsigned short, void *);
 extern "C" int create_effect(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
-extern "C" void operation_8c0b045c(Object *o, Arg1 *a1)
+extern "C" void TTecDeband_v06_8c0b045c(Object *o, Arg1 *a1)
 {
     Frame frame;
     int v1;

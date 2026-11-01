@@ -78,7 +78,7 @@ extern "C" void operation_8c0f22ac(void *);
 extern "C" void copy_actor_records(void *, void *, int);
 extern "C" void transform_actor_records(void *);
 extern "C" void attach_and_insert_object(void *);
-extern "C" Object *operation_8c0f2fd4(Object *o, int a1, int a2)
+extern "C" Object *TOFenceAncient04_ctor_8c0f2fd4(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;

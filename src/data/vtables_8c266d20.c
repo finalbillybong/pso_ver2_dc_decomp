@@ -2,17 +2,17 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c0ccd7c(void);
-extern void fn_8c0cce3c(void);
-extern void fn_8c0cd148(void);
+extern void TObjBoss1MokoHill_SoloM_dtor_8c0ccd7c(void);
+extern void TObjBoss1MokoHill_SoloM_update_8c0cce3c(void);
+extern void TObjBoss1MokoHill_SoloM_render_8c0cd148(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void destroy_object_8c0cc95c(void);
 extern void fn_8c0cc9a0(void);
 extern void fn_8c0ccb80(void);
-extern void operation_8c0cdcb8(void);
-extern void fn_8c0ce1c4(void);
-extern void operation_8c0ce404(void);
+extern void TObjEneDubchik_dtor_8c0cdcb8(void);
+extern void TObjEneDubchik_update_8c0ce1c4(void);
+extern void TObjEneDubchik_render_8c0ce404(void);
 extern void actor_render_noop_a(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
@@ -57,8 +57,8 @@ extern void operation_455ac(void);
 extern void operation_456a4(void);
 extern void operation_45844(void);
 extern void operation_45910(void);
-extern void operation_8c0d00a4(void);
-extern void operation_8c0d0078(void);
+extern void TObjEneDubchik_v48_8c0d00a4(void);
+extern void TObjEneDubchik_v49_8c0d0078(void);
 extern void operation_45b8c(void);
 extern void operation_45d6c(void);
 extern void operation_8c045484(void);
@@ -75,8 +75,8 @@ extern void operation_8c0471b4(void);
 extern void operation_8c0471fc(void);
 extern void fn_8c047268(void);
 extern void operation_8c047438(void);
-extern void operation_8c0d0204(void);
-extern void operation_8c0d0208(void);
+extern void TObjEneDubchik_v66_8c0d0204(void);
+extern void TObjEneDubchik_v67_8c0d0208(void);
 extern void request_actor_mode_two(void);
 extern void actor_mode_noop(void);
 extern void request_actor_mode_four(void);
@@ -98,20 +98,20 @@ extern void operation_8c0134ec(void);
 extern void operation_8c0c3474(void);
 extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
-extern void destroy_object_8c0d02b4(void);
-extern void operation_8c0d02f8(void);
+extern void TFreeCamera_dtor_8c0d02b4(void);
+extern void TFreeCamera_update_8c0d02f8(void);
 extern void TObject_render_default_8c0111c8(void);
-extern void operation_8c0d0210(void);
-extern void operation_8c0d020c(void);
-extern void fn_8c0d025c(void);
+extern void TFreeCamera_v05_8c0d0210(void);
+extern void TFreeCamera_v06_8c0d020c(void);
+extern void TFreeCamera_v07_8c0d025c(void);
 
 /* 8c266d20: type-information and this-adjustment header, then 5 slots */
 VirtualFunction const vt_8c266d20[7] = {
     0,
     0,
-    destroy_object_8c0ccd7c,
-    fn_8c0cce3c,
-    fn_8c0cd148,
+    TObjBoss1MokoHill_SoloM_dtor_8c0ccd7c,
+    TObjBoss1MokoHill_SoloM_update_8c0cce3c,
+    TObjBoss1MokoHill_SoloM_render_8c0cd148,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -131,9 +131,9 @@ VirtualFunction const vt_8c266d3c[7] = {
 VirtualFunction const vt_8c266d58[91] = {
     0,
     0,
-    operation_8c0cdcb8,
-    fn_8c0ce1c4,
-    operation_8c0ce404,
+    TObjEneDubchik_dtor_8c0cdcb8,
+    TObjEneDubchik_update_8c0ce1c4,
+    TObjEneDubchik_render_8c0ce404,
     actor_render_noop_a,
     hierarchy_output,
     operation_8c0104fc,
@@ -179,8 +179,8 @@ VirtualFunction const vt_8c266d58[91] = {
     operation_456a4,
     operation_45844,
     operation_45910,
-    operation_8c0d00a4,
-    operation_8c0d0078,
+    TObjEneDubchik_v48_8c0d00a4,
+    TObjEneDubchik_v49_8c0d0078,
     operation_45b8c,
     operation_45d6c,
     operation_8c045484,
@@ -197,8 +197,8 @@ VirtualFunction const vt_8c266d58[91] = {
     operation_8c0471fc,
     fn_8c047268,
     operation_8c047438,
-    operation_8c0d0204,
-    operation_8c0d0208,
+    TObjEneDubchik_v66_8c0d0204,
+    TObjEneDubchik_v67_8c0d0208,
     request_actor_mode_two,
     actor_mode_noop,
     request_actor_mode_four,
@@ -226,12 +226,12 @@ VirtualFunction const vt_8c266d58[91] = {
 VirtualFunction const vt_8c266ec4[10] = {
     0,
     0,
-    destroy_object_8c0d02b4,
-    operation_8c0d02f8,
+    TFreeCamera_dtor_8c0d02b4,
+    TFreeCamera_update_8c0d02f8,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0d0210,
-    operation_8c0d020c,
-    fn_8c0d025c
+    TFreeCamera_v05_8c0d0210,
+    TFreeCamera_v06_8c0d020c,
+    TFreeCamera_v07_8c0d025c
 };

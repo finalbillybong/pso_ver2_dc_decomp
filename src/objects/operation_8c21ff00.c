@@ -41,7 +41,7 @@ extern void initialize_base_8c0db1d0(void *, int);
 extern void call_8c0dc854(Object *);
 extern int game_malloc_8c011ecc(int);
 extern void operation_8c199b20(int, int);
-Object *operation_8c21ff00(Object *o, Arg1 *a1, int a2)
+Object *TWindowSubSymbolChatFaceType_ctor_8c21ff00(Object *o, Arg1 *a1, int a2)
 {
     Object **home = &o;
     int t1;

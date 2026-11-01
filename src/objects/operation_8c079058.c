@@ -31,7 +31,7 @@ extern void operation_8c052124(void *);
 extern void destroy_field_8c0fbfa4(void *, short);
 extern void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c079058(Object *o, int a1)
+Object *TObjEneDarkGunner_dtor_8c079058(Object *o, int a1)
 {
     int v1;
     if (o != 0) {

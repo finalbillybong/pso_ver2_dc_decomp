@@ -2,9 +2,9 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void operation_8c167bcc(void);
-extern void fn_8c167c24(void);
-extern void fn_8c167dd8(void);
+extern void TPhotonLine_dtor_8c167bcc(void);
+extern void TPhotonLine_update_8c167c24(void);
+extern void TPhotonLine_render_8c167dd8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -96,9 +96,9 @@ extern void TObject_render_default_8c0111c8(void);
 VirtualFunction const vt_8c26ff9c[88] = {
     0,
     0,
-    operation_8c167bcc,
-    fn_8c167c24,
-    fn_8c167dd8,
+    TPhotonLine_dtor_8c167bcc,
+    TPhotonLine_update_8c167c24,
+    TPhotonLine_render_8c167dd8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,

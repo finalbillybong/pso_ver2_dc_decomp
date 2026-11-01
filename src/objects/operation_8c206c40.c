@@ -14,7 +14,7 @@ struct Object {
     int f20;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c206c40(Object *o)
+Object *TBoss3VoloptCtrl_ctor_8c206c40(Object *o)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be8c **)0x8c44be8c));
     o->dispatch = (void *)0x8c278074;

@@ -45,7 +45,7 @@ extern void operation_8c0264ac(void);
 extern void request_resource_release(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1dcb54(Object *o, int a1)
+Object *TWindowChat_dtor_8c1dcb54(Object *o, int a1)
 {
     S_vv6 *v6;
     S_vv9 *v9;

@@ -11,7 +11,7 @@ struct Frame {
 extern S_g8c4db408 *g_8c4db408;
 extern int g_8c4db9e8;
 extern void call_8c3889a4(int, Frame *, int);
-void operation_8c1714f4(unsigned int a0, int a1)
+void quest_op_set_eventflag32_8c1714f4(unsigned int a0, int a1)
 {
     Frame frame;
     (&frame)->f00 = (int)(*(int *)((char *)((char *)g_8c4db408 + 0x0) + ((unsigned char)a1 << 2)));

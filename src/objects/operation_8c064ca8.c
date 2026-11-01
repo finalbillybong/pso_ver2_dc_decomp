@@ -49,7 +49,7 @@ extern int call_8c05a0a8(void);
 extern float call_8c12b570(float);
 extern void detach_effect_node(void *, void *, void *);
 extern void append_effect_node(void *, void *, void *);
-void operation_8c064ca8(Object *o)
+void TObjEneBm5Wolf_v110_8c064ca8(Object *o)
 {
     int v1;
     int t1;

@@ -46,7 +46,7 @@ extern int operation_8c156c24(int, int);
 extern void operation_8c156d30(Arg0_24 *, void *, int, int);
 extern void operation_8c1570b4(void *, float, float);
 extern void operation_8c157138(void *);
-Object *operation_8c173f64(Object *o, int a1)
+Object *TObjItemNameEntry_ctor_8c173f64(Object *o, int a1)
 {
     Frame frame;
     Object **home = &o;

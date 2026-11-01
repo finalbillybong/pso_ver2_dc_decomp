@@ -25,19 +25,19 @@ struct Object {
     float f140;
 };
 extern int g_8c30ff90;
-extern void operation_8c112e74(void *);
+extern void TOKey_ctor_8c112e74(void *);
 extern void initialize_context_blend_8c1f1430(void *);
 extern void call_8c112f40(Object *, int);
 extern int call_8c18e8a0(void *, int);
 extern void copy_actor_records(void *, void *, int);
 extern void attach_and_insert_object(void *);
 extern void call_8c1f156c(void *);
-Object *operation_8c113750(Object *o, int a1, int a2)
+Object *TLazerFenceSw_ctor_8c113750(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    operation_8c112e74((void *)o);
+    TOKey_ctor_8c112e74((void *)o);
     o->dispatch = (void *)0x8c269cb4;
     initialize_context_blend_8c1f1430((void *)(((char *)o + 0x124)));
     o->tag = (int)(g_8c30ff90);

@@ -34,9 +34,9 @@ extern void operation_8c220b5c(void);
 extern void request_resource_release(void *);
 extern void operation_8c15c7a4(void *);
 extern void game_free_8c011ec0(void *);
-extern void destroy_object_8c106598(void *, short);
+extern void TShopSequence_dtor_8c106598(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c15bb20(Object *o, int a1)
+Object *TCheckRoomSequence_dtor_8c15bb20(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {
@@ -69,7 +69,7 @@ Object *operation_8c15bb20(Object *o, int a1)
             game_free_8c011ec0((void *)(o->f2c));
             o->f2c = (Arg0_2c *)0;
         }
-        destroy_object_8c106598((void *)o, (short)0);
+        TShopSequence_dtor_8c106598((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

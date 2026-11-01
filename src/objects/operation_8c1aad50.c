@@ -65,7 +65,7 @@ struct Frame {
 };
 extern Vector3 g_8c324efc;
 extern void call_8c0bbc90(Object *, Frame *);
-void operation_8c1aad50(Object *o)
+void TBoss2Fin_update_8c1aad50(Object *o)
 {
     Frame frame;
     S_vv5 *v5;

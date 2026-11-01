@@ -27,7 +27,7 @@ extern void operation_8c07d89c(void *);
 extern void operation_8c07d8c0(void *);
 extern void operation_8c07d8e0(void *);
 extern void call_8c07d900(Object *);
-void operation_8c07d668(Object *o)
+void TItemMag_v17_8c07d668(Object *o)
 {
     char *v28;
     int v8;

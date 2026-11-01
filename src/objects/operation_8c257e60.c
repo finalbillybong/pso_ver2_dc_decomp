@@ -13,14 +13,14 @@ struct S_g8c513360 {
     int f20;
 };
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c257ec4(int, void *);
+extern void TItemMenuCtrl_ctor_8c257ec4(int, void *);
 void operation_8c257e60(unsigned int a0)
 {
     int t1;
     if (*(int *)0x8c513360 == 0) {
         t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x24);
         if (t1 != 0) {
-            call_8c257ec4(t1, (void *)(*(S_g8c44be9c **)0x8c44be9c));
+            TItemMenuCtrl_ctor_8c257ec4(t1, (void *)(*(S_g8c44be9c **)0x8c44be9c));
         }
     }
     if ((unsigned int)7 > a0) {

@@ -11,7 +11,7 @@ struct Object {
 extern void operation_8c05b744(void *);
 extern int operation_8c05bbf8(void);
 extern void call_8c144c30(Object *);
-void operation_8c144b88(Object *o)
+void TBoss2DeRolLe_v99_8c144b88(Object *o)
 {
     int t1;
     operation_8c05b744((void *)o);

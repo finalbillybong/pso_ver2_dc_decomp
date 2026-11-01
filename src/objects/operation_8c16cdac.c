@@ -11,7 +11,7 @@ struct S_vv1 {
     S_vv1_0 *f00;
 };
 extern int call_8c18e8a0(void *, void *);
-void operation_8c16cdac(int a0, int a1)
+void quest_op_mod2_8c16cdac(int a0, int a1)
 {
     S_vv1 *v1;
     int t1;

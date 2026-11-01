@@ -25,7 +25,7 @@ struct Arg0_58 {
 };
 extern int operation_8c1dd614(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c20937c(int, Object *);
+extern void TWindowGetComCard_ctor_8c20937c(int, Object *);
 void operation_8c0dd3e8(Object *o)
 {
     int v1;
@@ -55,7 +55,7 @@ L_8c0dd44a:;
         if (o->f58 == 0) {
             t2 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x30);
             if (t2 != 0) {
-                call_8c20937c(t2, o);
+                TWindowGetComCard_ctor_8c20937c(t2, o);
             }
             o->f58 = (Arg0_58 *)t2;
         }

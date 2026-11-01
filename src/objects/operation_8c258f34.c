@@ -45,7 +45,7 @@ extern Block72 g_8c340108;
 extern Block72 g_8c340150;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int create_effect_78d0(void *, void *, int, int);
-Object *operation_8c258f34(Object *o, Arg1 *a1, int a2, int a3, register unsigned int a4, float f0)
+Object *TOSwitchAttackSub_ctor_8c258f34(Object *o, Arg1 *a1, int a2, int a3, register unsigned int a4, float f0)
 {
     Frame frame;
     Object **home = &o;

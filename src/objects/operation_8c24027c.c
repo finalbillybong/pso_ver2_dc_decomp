@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x234];
     int f234;
 };
-void operation_8c24027c(Object *o)
+void TItemWpnStarCane_v53_8c24027c(Object *o)
 {
     o->f234 += 0xccc;
 }

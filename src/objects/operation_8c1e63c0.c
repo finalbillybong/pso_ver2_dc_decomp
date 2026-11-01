@@ -16,7 +16,7 @@ extern char g_8c4e3104;
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
 extern void operation_8c1e64e0();
-void operation_8c1e63c0(Object *o)
+void TAdSoniclogo_update_8c1e63c0(Object *o)
 {
     int t1;
     if (g_8c4e3104 != 0) {

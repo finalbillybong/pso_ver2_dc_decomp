@@ -3,8 +3,8 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern void operation_8c227b0c(void);
-extern void call_8c1981fc(void);
+extern void release_assets_AdDrawLineTask_8c227b0c(void);
+extern void release_assets_ad_f_moyouring_8c1981fc(void);
 extern void query_global_entries_8c199674(void);
 extern void query_global_entries_8c22f1a8(void);
 extern void operation_8c22cde8(void);
@@ -12,10 +12,10 @@ extern void clear_global_render_resources(void);
 extern void run_current_resource_start_8c03c3cc(void);
 extern void run_current_resource_end(void);
 extern void operation_8c122b50(void);
-void operation_8c128ee4(void)
+void TContainerAncient01_ctor_8c128ee4(void)
 {
-    operation_8c227b0c();
-    call_8c1981fc();
+    release_assets_AdDrawLineTask_8c227b0c();
+    release_assets_ad_f_moyouring_8c1981fc();
     query_global_entries_8c199674();
     query_global_entries_8c22f1a8();
     operation_8c22cde8();

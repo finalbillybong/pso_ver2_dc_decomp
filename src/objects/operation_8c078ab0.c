@@ -16,7 +16,7 @@ struct Object {
 extern void call_8c3bdf60(void *, void *);
 extern int operation_8c065330(void);
 extern void operation_8c067c1c(void *, int, int);
-void operation_8c078ab0(Object *o)
+void TBoss1DragonEffBreath_update_8c078ab0(Object *o)
 {
     int t1;
     call_8c3bdf60((void *)(((char *)o + 0x20)), (void *)(((char *)o + 0x2c)));

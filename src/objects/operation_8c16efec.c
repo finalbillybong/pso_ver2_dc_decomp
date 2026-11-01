@@ -9,7 +9,7 @@ struct S_L8c4daae0 {
     int f08;
 };
 extern S_L8c4daae0 g_8c4daae0;
-void operation_8c16efec(void)
+void quest_op_clr_qt_cancel_8c16efec(void)
 {
     (&g_8c4daae0)->f08 = -1;
 }

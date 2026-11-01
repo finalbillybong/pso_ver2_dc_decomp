@@ -27,7 +27,7 @@ extern Vector3 g_8c338b34;
 extern int lookup_low_id(int);
 extern void operation_8c0a2144(int);
 extern void call_8c0a22fc(Frame *);
-void operation_8c230bf8(Object *o)
+void TObjDFEnding_update_8c230bf8(Object *o)
 {
     Frame frame;
     int v3;

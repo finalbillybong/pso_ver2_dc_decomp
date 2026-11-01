@@ -52,7 +52,7 @@ extern int get_game_mode_8c01c25c(void);
 extern void call_8c119764(Arg0_20 *, void *, int);
 extern int call_8c156c6c(void *);
 extern void operation_8c1571d4(void *, int);
-Object *operation_8c1986ec(Object *o, int a1)
+Object *TWindowSubGameEnd_ctor_8c1986ec(Object *o, int a1)
 {
     Object **home = &o;
     int t1;

@@ -8,7 +8,7 @@ typedef struct S_g8c4db408_0 S_g8c4db408_0;
 struct S_g8c4db408_0 {
     S_g8c4db408_0 *f00;
 };
-void operation_8c172418(int a0, int a1)
+void quest_op_write4_8c172418(int a0, int a1)
 {
     (*(S_g8c4db408_0 **)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + ((unsigned char)a1 << 2)))->f00 = *(S_g8c4db408_0 **)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + ((unsigned char)a1 << 2));
 }

@@ -1,7 +1,7 @@
 extern int call_8c17796c(int);
 extern void call_8c1778d4(int);
 extern void operation_8c177748(int);
-void operation_8c16cb54(int a0)
+void quest_op_grev_8c16cb54(int a0)
 {
     int t1;
     int v1;

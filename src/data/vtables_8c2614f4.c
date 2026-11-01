@@ -20,8 +20,8 @@ extern void time_hierarchy_visit(void);
 extern void hierarchy_output_cycle(void);
 extern void TObject_dtor_8c03311c(void);
 extern void TObject_render_default_8c0111c8(void);
-extern void operation_8c034868(void);
-extern void operation_8c03496c(void);
+extern void TCharaMaking_dtor_8c034868(void);
+extern void TCharaMaking_update_8c03496c(void);
 extern void TGameProtocol_dtor_8c036a7c(void);
 extern void TGameProtocol_update_8c036ac8(void);
 
@@ -95,8 +95,8 @@ VirtualFunction const vt_8c261580[7] = {
 VirtualFunction const vt_8c26159c[7] = {
     0,
     0,
-    operation_8c034868,
-    operation_8c03496c,
+    TCharaMaking_dtor_8c034868,
+    TCharaMaking_update_8c03496c,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

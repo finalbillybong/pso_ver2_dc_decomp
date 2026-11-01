@@ -73,7 +73,7 @@ extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_delayed_effect(void *, void *, short, void *);
 extern "C" int create_effect(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
-extern "C" void operation_8c0b3bd0(Object *o, Arg1 *a1)
+extern "C" void TTecJelin_v05_8c0b3bd0(Object *o, Arg1 *a1)
 {
     Frame frame;
     int t1;

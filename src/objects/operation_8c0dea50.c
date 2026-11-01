@@ -31,7 +31,7 @@ extern void call_8c0e0f6c(Object *);
 extern void operation_8c0dfb48(void *);
 extern void call_8c0dfbbc(Object *);
 extern void update_view_nodes(void *, void *);
-void operation_8c0dea50(Object *o)
+void TWindowFukidasi_update_8c0dea50(Object *o)
 {
     int t1;
     int t2;

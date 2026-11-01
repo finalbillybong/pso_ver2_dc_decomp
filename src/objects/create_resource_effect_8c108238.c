@@ -4,8 +4,8 @@ typedef char check_layout[sizeof(Resource)==16 && sizeof(Context)==1072 && (unsi
 extern void *heap,*parent;
 extern Context *context;
 extern void *heap_alloc_8c122700(void *,unsigned int);
-extern void construct(void *,void *,void *,void *,float,int,int);
+extern void TDeadSpot_ctor_8c107750(void *,void *,void *,void *,float,int,int);
 void create_resource_effect_8c108238(void *position,int parameter) {
     void *object=heap_alloc_8c122700(heap,204);
-    if(object) construct(object,parent,position,context->resource->data,2.5f,1,parameter);
+    if(object) TDeadSpot_ctor_8c107750(object,parent,position,context->resource->data,2.5f,1,parameter);
 }

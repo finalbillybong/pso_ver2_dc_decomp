@@ -23,7 +23,7 @@ struct Object {
     int f23c;
 };
 extern void call_8c075398(void);
-Object *operation_8c23bc0c(Object *o)
+Object *TItemWpnDorillArm_ctor_8c23bc0c(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c27a3a0;

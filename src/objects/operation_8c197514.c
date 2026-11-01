@@ -29,7 +29,7 @@ extern void call_8c197c58(Object *);
 extern void call_8c199b74(void *);
 extern void call_8c0db30c(Object *);
 extern void update_view_nodes(void *, void *);
-void operation_8c197514(Object *o)
+void TWindowSubCustomEquip_update_8c197514(Object *o)
 {
     int t1;
     int t2;

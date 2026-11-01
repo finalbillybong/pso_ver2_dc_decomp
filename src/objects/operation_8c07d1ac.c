@@ -18,7 +18,7 @@ struct Arg0_13c {
     short f20;
 };
 extern int call_8c1931d4(short, unsigned char, unsigned char, int);
-void operation_8c07d1ac(Object *o)
+void TItemMag_v44_8c07d1ac(Object *o)
 {
     unsigned char v1;
     int t1;

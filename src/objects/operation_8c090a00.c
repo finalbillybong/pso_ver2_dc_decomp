@@ -30,7 +30,7 @@ extern void operation_8c052124(void *);
 extern void destroy_field_8c114790(void *, short);
 extern void destroy_color_rise_8c05bd84(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c090a00(Object *o, int a1)
+Object *TObjEneMe1Canadin_dtor_8c090a00(Object *o, int a1)
 {
     S_vv1 *v1;
     S_vv4 *v4;

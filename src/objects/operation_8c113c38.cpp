@@ -42,7 +42,7 @@ typedef struct Arg0_s124Data {
 extern "C" int operation_8c1f15c8(void *, int);
 extern "C" int call_8c1f15bc(void *);
 extern "C" void call_8c113cc0(int);
-extern "C" void operation_8c113c38(Object *o)
+extern "C" void TLazerFenceSw_render_8c113c38(Object *o)
 {
     int t1;
     int t2;

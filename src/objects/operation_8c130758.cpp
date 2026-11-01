@@ -37,7 +37,7 @@ typedef struct ObjectData {
     int f12c;
 } ObjectData;
 extern "C" void call_8c0eeb58(void);
-extern "C" void operation_8c130758(Object *o)
+extern "C" void TOKeyGenericSw_v17_8c130758(Object *o)
 {
     call_8c0eeb58();
     o->v21();

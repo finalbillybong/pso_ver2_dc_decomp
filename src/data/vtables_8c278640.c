@@ -11,12 +11,12 @@ extern void operation_8c0dc63c(void);
 extern void destroy_object_8c21e20c(void);
 extern void operation_8c21e250(void);
 extern void operation_8c21e29c(void);
-extern void destroy_context_8c21e478(void);
-extern void operation_8c21e4d0(void);
-extern void operation_8c21e5a4(void);
-extern void operation_194098_8c21e690(void);
-extern void operation_8c21e6e4(void);
-extern void operation_8c21e7b4(void);
+extern void TWindowSubQuestBoard_dtor_8c21e478(void);
+extern void TWindowSubQuestBoard_update_8c21e4d0(void);
+extern void TWindowSubQuestBoard_render_8c21e5a4(void);
+extern void TWindowSubQuestBoardSelect_dtor_8c21e690(void);
+extern void TWindowSubQuestBoardSelect_update_8c21e6e4(void);
+extern void TWindowSubQuestBoardSelect_render_8c21e7b4(void);
 
 /* 8c278640: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const vt_8c278640[8] = {
@@ -46,9 +46,9 @@ VirtualFunction const vt_8c278660[8] = {
 VirtualFunction const vt_8c278680[7] = {
     0,
     0,
-    destroy_context_8c21e478,
-    operation_8c21e4d0,
-    operation_8c21e5a4,
+    TWindowSubQuestBoard_dtor_8c21e478,
+    TWindowSubQuestBoard_update_8c21e4d0,
+    TWindowSubQuestBoard_render_8c21e5a4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -57,9 +57,9 @@ VirtualFunction const vt_8c278680[7] = {
 VirtualFunction const vt_8c27869c[8] = {
     0,
     0,
-    operation_194098_8c21e690,
-    operation_8c21e6e4,
-    operation_8c21e7b4,
+    TWindowSubQuestBoardSelect_dtor_8c21e690,
+    TWindowSubQuestBoardSelect_update_8c21e6e4,
+    TWindowSubQuestBoardSelect_render_8c21e7b4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c

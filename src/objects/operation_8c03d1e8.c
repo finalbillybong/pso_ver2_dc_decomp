@@ -8,8 +8,8 @@ typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern S_g8c44be88 *g_8c44be88;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c177250(int, void *);
-void operation_8c03d1e8(void)
+extern void TSeqVarsEdit_ctor_8c177250(int, void *);
+void TSeqVarsEdit_create_8c03d1e8(void)
 {
     int t1;
     /* TODO 00000000..00000000
@@ -17,7 +17,7 @@ void operation_8c03d1e8(void)
      */
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x54);
     if (t1 != 0) {
-        call_8c177250(t1, g_8c44be88);
+        TSeqVarsEdit_ctor_8c177250(t1, g_8c44be88);
     }
     /* TODO 8c03d1e8..8c03d204
      * 8c03d1e8 mov.l 0x8c03d208,r0

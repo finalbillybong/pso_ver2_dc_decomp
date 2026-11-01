@@ -3,7 +3,7 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-int operation_8c257e00(void)
+int TOAttackableCol_v23_8c257e00(void)
 {
     return 1;
 }

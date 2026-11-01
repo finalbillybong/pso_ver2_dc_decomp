@@ -22,7 +22,7 @@ extern Vector3 g_8c300270;
 extern char g_8c469dac;
 extern S_L8c30027c g_8c30027c;
 extern "C" char gc_8c30027c[];
-extern "C" void operation_8c08b944(Object *o)
+extern "C" void TGroupSetEditor_v06_8c08b944(Object *o)
 {
     if (g_8c469dac == 0) {
         *(Vector3 *)&*(Vector3 *)(gc_8c30027c + 0x0) = *(Vector3 *)&g_8c300264;

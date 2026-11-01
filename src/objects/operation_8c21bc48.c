@@ -14,7 +14,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern void mark_effect_for_release(void *);
 extern void destroy_object_state(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c21bc48(Object *o, int a1)
+Object *TObjDFHorming_dtor_8c21bc48(Object *o, int a1)
 {
     int v3;
     int v2;

@@ -17,7 +17,7 @@ struct Object {
     int f234;
 };
 extern void operation_8c241158(void *);
-Object *operation_8c251ee4(Object *o)
+Object *TItemWpnOnScythe_ctor_8c251ee4(Object *o)
 {
     operation_8c241158((void *)o);
     o->dispatch = (void *)0x8c27f780;

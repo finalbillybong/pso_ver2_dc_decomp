@@ -14,7 +14,7 @@ struct S_c8c021ef8 {
 };
 extern S_g8c4db408 *g_8c4db408;
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c16fd68(int a0, int a1)
+void quest_op_get_coord_of_player_8c16fd68(int a0, int a1)
 {
     S_c8c021ef8 *t1;
     Vector3 *v;

@@ -62,12 +62,12 @@ extern void operation_8c0a6790(void);
 extern void destroy_object_8c1cff98(void);
 extern void operation_8c1cffdc(void);
 extern void fn_8c1d0194(void);
-extern void operation_8c1d0434(void);
-extern void fn_8c1d05c4(void);
-extern void fn_8c1d16a0(void);
-extern void operation_8c1d2554(void);
-extern void fn_8c1d2684(void);
-extern void operation_8c1d37d8(void);
+extern void TWindowSubSymbolChat_dtor_8c1d0434(void);
+extern void TWindowSubSymbolChat_update_8c1d05c4(void);
+extern void TWindowSubSymbolChat_render_8c1d16a0(void);
+extern void TWindowSubComCard_dtor_8c1d2554(void);
+extern void TWindowSubComCard_update_8c1d2684(void);
+extern void TWindowSubComCard_render_8c1d37d8(void);
 
 /* 8c276874: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const vt_8c276874[8] = {
@@ -512,9 +512,9 @@ VirtualFunction const vt_8c276dd0[8] = {
 VirtualFunction const vt_8c276df0[7] = {
     0,
     0,
-    operation_8c1d0434,
-    fn_8c1d05c4,
-    fn_8c1d16a0,
+    TWindowSubSymbolChat_dtor_8c1d0434,
+    TWindowSubSymbolChat_update_8c1d05c4,
+    TWindowSubSymbolChat_render_8c1d16a0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };
@@ -523,9 +523,9 @@ VirtualFunction const vt_8c276df0[7] = {
 VirtualFunction const vt_8c276e0c[7] = {
     0,
     0,
-    operation_8c1d2554,
-    fn_8c1d2684,
-    operation_8c1d37d8,
+    TWindowSubComCard_dtor_8c1d2554,
+    TWindowSubComCard_update_8c1d2684,
+    TWindowSubComCard_render_8c1d37d8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

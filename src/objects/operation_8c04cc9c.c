@@ -10,7 +10,7 @@ typedef struct S_g8c4671e0 S_g8c4671e0;
 extern void operator_delete_8c18de08(void *);
 extern void destroy_vector_grid(void *, int);
 extern void call_8c03dc40(void *, int);
-void operation_8c04cc9c(void)
+void release_assets_ene_grass_8c04cc9c(void)
 {
     if (*(int *)0x8c4671a4 != 0) {
         operator_delete_8c18de08((void *)(*(S_g8c4671a4 **)0x8c4671a4));

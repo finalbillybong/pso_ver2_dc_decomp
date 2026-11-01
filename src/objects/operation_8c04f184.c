@@ -12,7 +12,7 @@ struct Object {
     char unknownf2[0x218];
     short f30a;
 };
-void operation_8c04f184(Object *o)
+void TObjGrass_v69_8c04f184(Object *o)
 {
     if (o->f30a != 6) {
         o->f30a = 6;

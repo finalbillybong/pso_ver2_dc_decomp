@@ -16,7 +16,7 @@ struct S_c8c122700 {
 };
 extern S_c8c122700 *heap_alloc_8c122700(void *, int);
 extern void TObject_ctor_8c0330e4(S_c8c122700 *, void *);
-void create_effect_node_8c080310(void)
+void TObjRainCtrl_ctor_8c080310(void)
 {
     S_c8c122700 *t1;
     t1 = heap_alloc_8c122700(*(S_g8c4d97e0 **)0x8c4d97e0, 0x24);

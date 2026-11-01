@@ -15,7 +15,7 @@ extern void call_8c05da80(int, int);
 extern void call_8c05df74(int, int);
 extern void call_8c05e0a4(int, int);
 extern void operation_8c05df54(void *, int);
-void operation_8c05ce40(int a0, int a1, int a2)
+void TObjEneRe2Flower_v93_8c05ce40(int a0, int a1, int a2)
 {
     switch (a1) {
     case 0:

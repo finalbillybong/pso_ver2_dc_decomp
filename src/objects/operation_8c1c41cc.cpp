@@ -34,7 +34,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern int g_8c328a90;
 extern "C" void TObjectShared_ctor_8c01d1ec(Object *);
-extern "C" Object *operation_8c1c41cc(Object *o, int a1, int a2)
+extern "C" Object *TObjRaderCol_ctor_8c1c41cc(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;

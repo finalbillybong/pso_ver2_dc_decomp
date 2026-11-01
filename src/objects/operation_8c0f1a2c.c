@@ -17,7 +17,7 @@ extern void call_8c053f54(Object *);
 extern void operation_8c052124(void *);
 extern void destroy_object_8c0ee900(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c0f1a2c(Object *o, int a1)
+Object *TOMonumentAncient02_dtor_8c0f1a2c(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c2685a8;

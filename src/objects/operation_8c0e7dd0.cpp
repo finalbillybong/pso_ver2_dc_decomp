@@ -66,13 +66,13 @@ extern "C" void operation_8c0e8148(void);
 extern "C" void call_8c186b34(void);
 extern "C" void call_8c09d2bc(void);
 extern "C" void call_8c173508(void);
-extern "C" void operation_8c1a18b8(void);
+extern "C" void TMapCsnCtrl_create_8c1a18b8(void);
 extern "C" void create_descriptor_managers(void);
 extern "C" void call_8c189ca0(int);
 extern "C" void call_8c173024(void);
 extern "C" void operation_8c14ffdc(void);
 extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern "C" void initialize_loader_8c173578(void *, void *, int);
+extern "C" void TQuestThread_ctor_1_8c173578(void *, void *, int);
 extern "C" void operation_8c14fd04(void);
 extern "C" void operation_8c2231d8(void);
 extern "C" void call_8c0e7620(void *);
@@ -80,7 +80,7 @@ extern "C" void call_8c189d60(void);
 extern "C" void time_hierarchy_update(void *);
 extern "C" void call_8c023f3c(int);
 extern "C" void object_visit(void *);
-extern "C" void call_8c173778(void);
+extern "C" void TQuestThread_ctor_4_8c173778(void);
 extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void operation_8c0e7dd0(void)
 {
@@ -108,14 +108,14 @@ extern "C" void operation_8c0e7dd0(void)
     call_8c186b34();
     call_8c09d2bc();
     call_8c173508();
-    operation_8c1a18b8();
+    TMapCsnCtrl_create_8c1a18b8();
     create_descriptor_managers();
     call_8c189ca0(1);
     call_8c173024();
     operation_8c14ffdc();
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xa8);
     if (t1 != 0) {
-        initialize_loader_8c173578((void *)t1, g_8c4db520, 0);
+        TQuestThread_ctor_1_8c173578((void *)t1, g_8c4db520, 0);
     }
     t1->v1();
     g_8c4dc800 = 1;
@@ -143,6 +143,6 @@ extern "C" void operation_8c0e7dd0(void)
         }
         v42 = (int)(v42 + 1);
     }
-    call_8c173778();
+    TQuestThread_ctor_4_8c173778();
     TObject_dtor_8c03311c((void *)(&frame), (short)-1);
 }

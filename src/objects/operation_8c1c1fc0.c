@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern int play_se_8c05fbf8(int, int, int, int);
 extern void emit_control_60320(int, int, int);
-void operation_8c1c1fc0(int a0)
+void TObjCityDoor_Warp_v20_8c1c1fc0(int a0)
 {
     int t1;
     t1 = play_se_8c05fbf8(0x40005, (int)(a0 + 0x3c), 0, 0);

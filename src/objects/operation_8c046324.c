@@ -14,7 +14,7 @@ struct Object {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern char g_8c2f1bcc[];
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c0ee300(void *, int, int, int, int, int, short);
+extern void TFontSmallTask_ctor_4_8c0ee300(void *, int, int, int, int, int, short);
 void operation_8c046324(Object *o, int a1, int a2, int a3)
 {
     int v1;
@@ -24,7 +24,7 @@ void operation_8c046324(Object *o, int a1, int a2, int a3)
         if (v1 == 0 && a1 != 0) {
             t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x50);
             if (t1 != 0) {
-                operation_8c0ee300((void *)t1, a1, -0xff0100, 0x14, a2, (int)(g_8c2f1bcc + 0x10), (short)a3);
+                TFontSmallTask_ctor_4_8c0ee300((void *)t1, a1, -0xff0100, 0x14, a2, (int)(g_8c2f1bcc + 0x10), (short)a3);
             }
         }
     }

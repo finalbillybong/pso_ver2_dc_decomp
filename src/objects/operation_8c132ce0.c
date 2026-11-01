@@ -12,7 +12,7 @@ struct Object {
     char unknown0[0x108];
     int f108;
 };
-void operation_8c132ce0(Object *o, Arg1 *a1)
+void TODoorCave01_v05_8c132ce0(Object *o, Arg1 *a1)
 {
     if (a1->f00 == 1) {
         o->f108 |= 0xf0001;

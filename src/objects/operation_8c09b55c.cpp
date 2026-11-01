@@ -18,7 +18,7 @@ extern int g_8c46b040;
 extern char g_8c46ec18;
 extern S_L8c301784 g_8c301784;
 extern "C" char gc_8c301784[];
-extern "C" void operation_8c09b55c(int a0)
+extern "C" void TCMCharacter_update_8c09b55c(int a0)
 {
     if (g_8c46ec18 == 0) {
         *(Vector3 *)&*(Vector3 *)(gc_8c301784 + 0x0) = *(Vector3 *)&g_8c30176c;

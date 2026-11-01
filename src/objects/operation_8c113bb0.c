@@ -16,7 +16,7 @@ extern void show_key_8c112fbc(void *);
 extern int call_8c18e8a0(void *, int);
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void operation_8c113bb0(Object *o)
+void TLazerFenceSw_v09_8c113bb0(Object *o)
 {
     int t1;
     show_key_8c112fbc((void *)o);

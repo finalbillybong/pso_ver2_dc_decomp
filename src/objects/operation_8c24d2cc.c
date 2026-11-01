@@ -15,7 +15,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_8c223564(short);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c24d2cc(Object *o, int a1)
+Object *TItemObjectTV_dtor_8c24d2cc(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c27dd38;

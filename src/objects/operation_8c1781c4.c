@@ -16,7 +16,7 @@ struct Object {
     int f21c;
 };
 extern void call_8c075398(void);
-Object *operation_8c1781c4(Object *o)
+Object *TItemWpnKatana_ctor_8c1781c4(Object *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c270cec;

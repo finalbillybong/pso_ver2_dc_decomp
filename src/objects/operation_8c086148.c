@@ -29,7 +29,7 @@ struct Arg2 {
 extern int g_8c2ffb10;
 extern void TObjectShared_ctor_8c01d1ec(Object *);
 extern void operation_8c0869d4(void *);
-Object *operation_8c086148(Object *o, int a1, Arg2 *a2)
+Object *TButterfly_ctor_8c086148(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     (void)home;

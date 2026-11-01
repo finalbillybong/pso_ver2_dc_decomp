@@ -29,7 +29,7 @@ struct S_vv2 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void operation_8c08b3a0(void *, int);
-Object *operation_8c08b2d8(Object *o, int a1, int a2, int a3)
+Object *TObjEZBoneRotBase_ctor_8c08b2d8(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
     S_vv2 *v2;

@@ -2,7 +2,7 @@ typedef struct Child { char unknown0[0x18]; void *dispatch; char unknown1c[4]; s
 typedef struct Parent { char unknown0[0x20]; short id; } Parent;
 extern void *heap_alloc_8c122700(void *, int);
 extern void *TObject_ctor_8c0330e4(void *, void *);
-void create_child_8c02c6c0(Parent *o)
+void TObject_create_8c02c6c0(Parent *o)
 {
     Child *child = heap_alloc_8c122700(*(void **)0x8c4d97e0, 0x28);
     if (child) {

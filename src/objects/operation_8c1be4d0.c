@@ -25,7 +25,7 @@ struct Object {
 };
 extern int operation_8c05bae8(void);
 extern void call_8c08914c(Object *);
-void operation_8c1be4d0(Object *o)
+void TObjCityAreaWarp_update_8c1be4d0(Object *o)
 {
     float v3;
     int t1;

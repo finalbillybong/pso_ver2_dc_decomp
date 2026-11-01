@@ -14,7 +14,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern void request_resource_release(void *);
 extern void destroy_context_8c0db244(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c0e2738(Object *o, int a1)
+Object *TWindowStatus_dtor_8c0e2738(Object *o, int a1)
 {
     int v2;
     int v1;

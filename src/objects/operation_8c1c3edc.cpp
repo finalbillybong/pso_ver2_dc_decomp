@@ -53,7 +53,7 @@ extern "C" void call_8c3af5ee(void *);
 extern "C" void call_8c3addea(void *, void *, float);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c1c3fd8();
-extern "C" void operation_8c1c3edc(Object *o)
+extern "C" void TODragonflyMachine01_render_8c1c3edc(Object *o)
 {
     int t1;
     t1 = o->v11(((ObjectData *)o)->ff8, ((ObjectData *)o)->ffc);

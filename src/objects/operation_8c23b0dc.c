@@ -15,7 +15,7 @@ struct Arg0_13c {
     int f310;
 };
 extern void call_8c1c5890(void *, Object *, int);
-void operation_8c23b0dc(Object *o)
+void TItemWpnChaoCane_v49_8c23b0dc(Object *o)
 {
     int v1;
     v1 = (int)(((o->f13c->f310 & 0x20)) != 0);

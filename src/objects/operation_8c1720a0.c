@@ -16,7 +16,7 @@ struct S_c8c021ef8 {
     float f524;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c1720a0(int a0, int a1)
+void quest_op_set_shrink_size_8c1720a0(int a0, int a1)
 {
     int v1;
     int v3;

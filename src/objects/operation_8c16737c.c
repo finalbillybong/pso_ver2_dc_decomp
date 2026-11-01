@@ -20,7 +20,7 @@ struct S_vv1 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void destroy_context_8c0f34a0(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c16737c(Object *o, int a1)
+Object *TBoss2PhotonBullet_dtor_8c16737c(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

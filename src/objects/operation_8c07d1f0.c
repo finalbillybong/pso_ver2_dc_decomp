@@ -5,8 +5,8 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_x76912_0 S_x76912_0;
 extern void set_fields_8c1f2a5c(void *);
-extern void operation_8c209a88(void *);
-void operation_8c07d1f0(int a0)
+extern void TItemEquipBase_v45_8c209a88(void *);
+void TItemMag_v45_8c07d1f0(int a0)
 {
     int v2;
     int v1;
@@ -21,5 +21,5 @@ void operation_8c07d1f0(int a0)
         }
         v2 = (int)(v2 + 1);
     }
-    operation_8c209a88((void *)a0);
+    TItemEquipBase_v45_8c209a88((void *)a0);
 }

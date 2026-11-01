@@ -24,7 +24,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern int g_8c338130;
 extern "C" void TObjectShared_ctor_8c01d1ec(Object *);
-extern "C" Object *operation_8c22a930(Object *o, int a1, int a2)
+extern "C" Object *TObjSinBoard_ctor_8c22a930(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;

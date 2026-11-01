@@ -37,7 +37,7 @@ struct Arg0_70 {
 };
 extern void call_8c0a7608(void *, void *);
 extern void call_8c013b2c(int, float, float);
-void operation_8c18a704(Object *o)
+void TItemEffArmor_update_8c18a704(Object *o)
 {
     o->f6c += 0x139d;
     if (o->f70 != 0) {

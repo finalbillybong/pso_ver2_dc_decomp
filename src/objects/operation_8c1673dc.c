@@ -47,7 +47,7 @@ extern int call_8c18e8a0(void *, int);
 extern int operation_8c051ff4(void *, void *, void *);
 extern float operation_8c14490c(void);
 extern int operation_8c0f3630(int, int, int);
-void operation_8c1673dc(Object *o)
+void TBoss2PhotonBullet_update_8c1673dc(Object *o)
 {
     Frame frame;
     float v15;

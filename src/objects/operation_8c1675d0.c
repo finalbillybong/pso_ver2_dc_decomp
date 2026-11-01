@@ -14,7 +14,7 @@ struct Frame {
 };
 extern Vector3 g_8c317540;
 extern void operation_8c05b9f4(int, int, int, int);
-void operation_8c1675d0(Object *o)
+void TBoss2PhotonBullet_render_8c1675d0(Object *o)
 {
     Frame frame;
     if (((o->f114 & 1)) != 0) {

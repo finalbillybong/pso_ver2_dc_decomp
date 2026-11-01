@@ -62,7 +62,7 @@ extern "C" void operation_8c1086fc(void);
 extern "C" void call_8c3aa716(void *);
 extern "C" void call_8c391cc4(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c05e6cc(Object *o)
+extern "C" void TObjEneRe2Flower_v111_8c05e6cc(Object *o)
 {
     Frame frame;
     char *v1;

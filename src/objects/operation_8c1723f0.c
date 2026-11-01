@@ -2,7 +2,7 @@ typedef struct S_g8c4db408_0 S_g8c4db408_0;
 struct S_g8c4db408_0 {
     char f00;
 };
-void operation_8c1723f0(int a0, int a1)
+void quest_op_write1_8c1723f0(int a0, int a1)
 {
     S_g8c4db408_0 *v1;
     int v2;

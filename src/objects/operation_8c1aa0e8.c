@@ -18,7 +18,7 @@ extern int g_8c4e2f80;
 extern int lookup_low_id(int);
 extern void update_hierarchy(void *);
 extern void call_8c1aa184(void);
-void operation_8c1aa0e8(Object *o)
+void TObjBgmColCtrl_update_8c1aa0e8(Object *o)
 {
     int v1;
     int v4;

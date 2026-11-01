@@ -79,12 +79,12 @@ struct Frame {
     char unknown0[0xc];
 };
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
-extern "C" void operation_8c1ab01c(void *, int, int, int);
+extern "C" void TItemTimer_ctor_8c1ab01c(void *, int, int, int);
 extern "C" int call_8c1aaabc(int);
 extern "C" void call_8c076af4(Object *, float, int, int);
 extern "C" void operation_8c075894(void *, void *, int, int);
 extern "C" void operation_8c23becc();
-extern "C" void operation_8c23bdd4(Object *o)
+extern "C" void TItemWpnDorillArm_v49_8c23bdd4(Object *o)
 {
     Frame frame;
     S_vv13 *v13;
@@ -96,7 +96,7 @@ extern "C" void operation_8c23bdd4(Object *o)
         if (o != 0) {
             t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x2c);
             if (t1 != 0) {
-                operation_8c1ab01c((void *)t1, (int)o, (int)operation_8c23becc, 0x1e);
+                TItemTimer_ctor_8c1ab01c((void *)t1, (int)o, (int)operation_8c23becc, 0x1e);
             }
         }
         ((ObjectData *)o)->f234 = 0;

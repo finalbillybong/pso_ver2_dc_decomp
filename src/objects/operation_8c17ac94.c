@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x234];
     short f234;
 };
-void operation_8c17ac94(Object *o)
+void TItemWpnPsychowand_v54_8c17ac94(Object *o)
 {
     o->f234 = -1;
 }

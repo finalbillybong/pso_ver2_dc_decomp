@@ -22,7 +22,7 @@ struct Arg2 {
 };
 extern void TObject_ctor_8c0330e4(Object *, int);
 extern void call_8c13ffec(Object *);
-Object *initialize_status_view_8c13ff90(Object *o, int a1, Arg2 *a2)
+Object *TObjCMLoadPlDataReq_ctor_2_8c13ff90(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     (void)home;

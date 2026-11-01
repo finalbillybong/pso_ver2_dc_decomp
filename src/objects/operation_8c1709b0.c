@@ -9,7 +9,7 @@ struct S_L8c4db494 {
     char f11;
 };
 extern S_L8c4db494 g_8c4db494;
-void operation_8c1709b0(unsigned int a0)
+void quest_op_ba_enable_sonar_8c1709b0(unsigned int a0)
 {
     if ((unsigned int)1 >= a0) {
         (&g_8c4db494)->f11 = *(int *)((char *)0x8c28664c + (a0 << 2));

@@ -10,7 +10,7 @@ struct Object {
 };
 extern void operation_8c1afac8(void *);
 extern void call_8c1afb74(void);
-void operation_8c1afa58(Object *o)
+void TCineCtrl_update_8c1afa58(Object *o)
 {
     if (o->f2c != 0) {
         if (o->f2c != 1) {

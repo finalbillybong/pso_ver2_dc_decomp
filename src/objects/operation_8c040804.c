@@ -68,7 +68,7 @@ extern void sq_quad_8c38b09e(void *, float);
 extern void sq_flush_8c38af12(void);
 extern void reset_state_8c391cc4(void);
 extern void reset_manager_record_slots(void *);
-void operation_8c040804(Object *o)
+void TQuadSpriteNormal_render_8c040804(Object *o)
 {
     Frame frame;
     int flags;

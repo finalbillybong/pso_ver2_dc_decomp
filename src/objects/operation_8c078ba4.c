@@ -16,7 +16,7 @@ struct Arg0_2c {
 };
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c078ba4(Object *o, int a1)
+Object *TObjBoss1Floor_dtor_8c078ba4(Object *o, int a1)
 {
     int v2;
     int v1;

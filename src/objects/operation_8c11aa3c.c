@@ -13,7 +13,7 @@ struct S_vv23 {
 };
 extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
-void operation_8c11aa3c(void)
+void load_assets_bm7_s_paa_body_8c11aa3c(void)
 {
     int t1;
     {

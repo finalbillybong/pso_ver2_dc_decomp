@@ -26,10 +26,10 @@ struct Object {
     int f54;
     int f58;
 };
-extern void initialize_control_manager(Object *, int);
-Object *operation_8c158b8c(Object *o, int a1, int a2, int a3)
+extern void TShopWindowBase_ctor_8c1066e4(Object *, int);
+Object *TQuestListOffline_ctor_8c158b8c(Object *o, int a1, int a2, int a3)
 {
-    initialize_control_manager(o, a1);
+    TShopWindowBase_ctor_8c1066e4(o, a1);
     o->dispatch = (void *)0x8c26ec4c;
     o->tag = *(int *)0x8c316420;
     o->size = 0x5c;

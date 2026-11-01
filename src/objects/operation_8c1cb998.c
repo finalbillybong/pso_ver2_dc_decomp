@@ -30,7 +30,7 @@ extern int call_8c04b8dc(int);
 extern float call_8c19a09c(float);
 extern void call_8c0e2278(S_vv5 *, int, int);
 extern void operation_8c0dc610(void *, float);
-Object *operation_8c1cb998(Object *o, int a1)
+Object *TWindowRoom_ctor_8c1cb998(Object *o, int a1)
 {
     Object **home = &o;
     float v1;

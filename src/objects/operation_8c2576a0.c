@@ -14,7 +14,7 @@ extern void operation_8c053f54(void *);
 extern void operation_8c052124(void *);
 extern void destroy_object_state(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c2576a0(Object *o, int a1)
+Object *TOAttackableCol_dtor_8c2576a0(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c2818a4;

@@ -45,7 +45,7 @@ extern void operation_8c22eb20(void *);
 extern void operation_8c22e7c8(void *);
 extern void operation_8c22e978(void *);
 extern void operation_8c22e78c(void *);
-void operation_8c22d748(Object *o)
+void TQuestVmDownLoadServer_update_8c22d748(Object *o)
 {
     operation_8c22e858((void *)o);
     switch (o->f94) {

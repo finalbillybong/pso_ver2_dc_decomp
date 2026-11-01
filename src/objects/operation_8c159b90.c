@@ -26,7 +26,7 @@ extern void call_8c02688c(S_c8c021ef8 *);
 extern void operation_8c052124(void *);
 extern void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c159b90(Object *o, int a1)
+Object *TObjVoloptCage_dtor_8c159b90(Object *o, int a1)
 {
     unsigned short v17;
     S_c8c021ef8 *t1;

@@ -4,7 +4,7 @@ struct Object {
     short f22;
 };
 extern void call_8c2269a8(Object *);
-void operation_8c22697c(Object *o)
+void TWindowSetLevelUp_update_8c22697c(Object *o)
 {
     short v1;
     v1 = o->f22;

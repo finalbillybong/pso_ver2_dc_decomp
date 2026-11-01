@@ -22,7 +22,7 @@ struct Object {
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c38668e(void *, void *, void *, int);
 extern int operator_new_8c18de4c(int);
-Object *operation_8c22bef8(Object *o, int a1)
+Object *TItemTexLoad_ctor_8c22bef8(Object *o, int a1)
 {
     Object **home = &o;
     int t1;

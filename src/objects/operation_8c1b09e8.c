@@ -19,7 +19,7 @@ struct Arg2 {
     Vector3 f00;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c1b09e8(Object *o, int a1, Arg2 *a2)
+Object *TObjBoss2Dust_ctor_8c1b09e8(Object *o, int a1, Arg2 *a2)
 {
     char *v1;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);

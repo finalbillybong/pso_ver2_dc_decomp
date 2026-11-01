@@ -36,7 +36,7 @@ public:
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" float operation_8c129a30(Object *o)
+extern "C" float TContainerAncient01_v26_8c129a30(Object *o)
 {
     o->v24(0, 1.0f);
     return 0.0f;

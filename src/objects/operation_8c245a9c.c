@@ -36,7 +36,7 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern float njScalor_8c37e480(void *);
 extern void njUnitVector_8c37b630(void *);
 extern float signed_sqrt_8c37f6c0(void *, float);
-Object *operation_8c245a9c(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f0, float f1)
+Object *TEffStarLightChild_ctor_8c245a9c(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f0, float f1)
 {
     Frame frame;
     Object **home = &o;

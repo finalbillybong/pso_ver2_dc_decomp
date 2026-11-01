@@ -31,7 +31,7 @@ struct Arg2 {
 };
 extern void initialize_base_8c0db1d0(void *, int);
 extern void call_8c0dc854(Object *);
-Object *operation_8c1a62a8(Object *o, Arg1 *a1, Arg2 *a2)
+Object *TWindowChatSymbol_ctor_8c1a62a8(Object *o, Arg1 *a1, Arg2 *a2)
 {
     Object **home = &o;
     (void)home;

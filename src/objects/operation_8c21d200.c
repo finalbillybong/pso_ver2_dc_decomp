@@ -24,9 +24,9 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c505960;
 extern char g_8c278610[];
 extern void request_resource_release(void *);
-extern void destroy_object_8c10671c(void *, short);
+extern void TShopWindowBase_dtor_8c10671c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c21d200(Object *o, int a1)
+Object *TQuestListOnline_v08_8c21d200(Object *o, int a1)
 {
     if (o != 0) {
         o->f30 = (void *)g_8c278610;
@@ -48,7 +48,7 @@ Object *operation_8c21d200(Object *o, int a1)
             o->f50 = (Arg0_50 *)0;
         }
         g_8c505960 = 0;
-        destroy_object_8c10671c((void *)(((char *)o + 0x4)), (short)0);
+        TShopWindowBase_dtor_8c10671c((void *)(((char *)o + 0x4)), (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);
         }

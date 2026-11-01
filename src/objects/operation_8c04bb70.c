@@ -12,7 +12,7 @@ extern unsigned char g_8c467134;
 extern void call_8c38aa5c(int, int, void *);
 extern void call_8c3827d8(void *);
 extern void call_8c38b6f4(int, void *, int, int);
-void operation_8c04bb70(void)
+void TNECFontEORFunction_update_8c04bb70(void)
 {
     if (((g_8c46712c & 2)) != 0) {
         call_8c38aa5c(0x80, 0x80, g_8c467128);

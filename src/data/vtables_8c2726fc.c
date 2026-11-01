@@ -10,9 +10,9 @@ extern void hierarchy_output(void);
 extern void operation_8c190348(void);
 extern void operation_8c1903c0(void);
 extern void operation_8c190518(void);
-extern void operation_8c190780(void);
-extern void operation_8c19084c(void);
-extern void operation_8c190e9c(void);
+extern void TWindowSubMag_dtor_8c190780(void);
+extern void TWindowSubMag_update_8c19084c(void);
+extern void TWindowSubMag_render_8c190e9c(void);
 extern void destroy_object_8c1914c0(void);
 extern void operation_8c1916d8(void);
 extern void operation_8c1916dc(void);
@@ -46,9 +46,9 @@ VirtualFunction const vt_8c272718[7] = {
 VirtualFunction const vt_8c272734[7] = {
     0,
     0,
-    operation_8c190780,
-    operation_8c19084c,
-    operation_8c190e9c,
+    TWindowSubMag_dtor_8c190780,
+    TWindowSubMag_update_8c19084c,
+    TWindowSubMag_render_8c190e9c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output
 };

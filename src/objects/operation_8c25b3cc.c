@@ -34,7 +34,7 @@ extern int operation_8c25e540(void);
 extern int global_present_8c25e560(void);
 extern int features_ready_8c25c3dc(Object *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c198294(int, Object *);
+extern void TAdBack_ctor_8c198294(int, Object *);
 extern void call_8c25b830(Object *);
 Object *operation_8c25b3cc(Object *o)
 {
@@ -91,7 +91,7 @@ L_8c25b46a:;
 L_8c25b482:;
     t5 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x40);
     if (t5 != 0) {
-        call_8c198294(t5, o);
+        TAdBack_ctor_8c198294(t5, o);
     }
     call_8c25b830(o);
     return o;

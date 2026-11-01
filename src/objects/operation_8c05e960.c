@@ -19,7 +19,7 @@ struct S_vv1 {
 };
 extern void destroy_context_8c0f34a0(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c05e960(Object *o, int a1)
+Object *TObjEneRe2Flower_Bomb_dtor_8c05e960(Object *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

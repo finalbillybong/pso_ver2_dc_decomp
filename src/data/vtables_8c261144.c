@@ -7,8 +7,8 @@ extern void operation_8c0135fc(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void destroy_object_8c013570(void);
-extern void operation_8c0135b4(void);
+extern void TFog_dtor_8c013570(void);
+extern void TFog_update_8c0135b4(void);
 extern void destroy_color_rise_8c015064(void);
 extern void TObject_update_default_8c0111c4(void);
 extern void operation_8c015024(void);
@@ -38,8 +38,8 @@ VirtualFunction const vt_8c261144[7] = {
 VirtualFunction const vt_8c261160[7] = {
     0,
     0,
-    destroy_object_8c013570,
-    operation_8c0135b4,
+    TFog_dtor_8c013570,
+    TFog_update_8c0135b4,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

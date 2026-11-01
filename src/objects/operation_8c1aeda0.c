@@ -13,7 +13,7 @@ struct Object {
     int fe4;
 };
 extern void call_8c05fd7c(int, Object *, void *, int, int);
-void operation_8c1aeda0(Object *o)
+void TODoorCave03_v18_8c1aeda0(Object *o)
 {
     float v1;
     v1 = (float)o->f58;

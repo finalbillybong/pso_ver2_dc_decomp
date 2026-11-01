@@ -17,7 +17,7 @@ struct S_g8c46fe20_54 {
     short f22;
 };
 extern void request_resource_release(void *);
-void operation_8c16d88c(void)
+void quest_op_window_msg_end_8c16d88c(void)
 {
     if (*(int *)0x8c4db40c != 0) {
         request_resource_release((void *)(*(S_g8c4db40c **)0x8c4db40c));

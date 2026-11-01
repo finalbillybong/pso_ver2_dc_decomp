@@ -13,7 +13,7 @@ extern void call_8c37e7ac(void *);
 extern int call_8c38426c(float);
 extern void call_8c37e7c8(int);
 extern void call_8c37e7d4(void *);
-void operation_8c12261c(void)
+void TFogCtrl_EOR_update_8c12261c(void)
 {
     int t1;
     if (((g_8c4d85e0 & 1)) != 0) {

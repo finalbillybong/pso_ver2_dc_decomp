@@ -57,7 +57,7 @@ typedef struct Arg1Data {
 
 } Arg1Data;
 extern "C" int operation_8c054248(void *, int, int);
-extern "C" void operation_8c0bb69c(Object *o, Arg1 *a1)
+extern "C" void TTecZonde_v07_8c0bb69c(Object *o, Arg1 *a1)
 {
     Frame frame;
     int t1;

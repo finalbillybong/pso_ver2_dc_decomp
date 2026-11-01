@@ -21,7 +21,7 @@ extern void operation_8c161c38(int);
 extern void operation_8c052124(void *);
 extern void TObjEnemy_dtor_8c0120f4(void *, int);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c1b0f60(Object *o, int a1)
+Object *TBoss4Type2_dtor_8c1b0f60(Object *o, int a1)
 {
     int v3;
     int v2;

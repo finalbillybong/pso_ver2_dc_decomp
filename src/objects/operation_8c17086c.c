@@ -9,7 +9,7 @@ struct S_L8c4db494 {
     char f0c;
 };
 extern S_L8c4db494 g_8c4db494;
-void operation_8c17086c(int a0)
+void quest_op_ba_death_lvl_up_8c17086c(int a0)
 {
     (&g_8c4db494)->f0c = a0;
 }

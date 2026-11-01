@@ -14,7 +14,7 @@ extern void mark_effect_for_release(void *);
 extern void call_8c0a21a4(void);
 extern void destroy_shared_object(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c228848(Object *o, int a1)
+Object *TObjDFDemo1_dtor_8c228848(Object *o, int a1)
 {
     int v2;
     int v1;

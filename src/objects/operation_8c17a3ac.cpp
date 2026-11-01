@@ -83,7 +83,7 @@ extern "C" void operation_8c075894(void *, void *, int, int);
 extern "C" int call_8c087b0c(void);
 extern "C" int call_8c18e768(int, int);
 extern "C" void operation_8c074ac4(void *, int);
-extern "C" void operation_8c17a3ac(Object *o)
+extern "C" void TItemWpnOriginalShot_v49_8c17a3ac(Object *o)
 {
     Frame frame;
     int v1;

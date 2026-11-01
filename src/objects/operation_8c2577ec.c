@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c2577ec(void)
+void TOAttackableCol_render_8c2577ec(void)
 {
 }

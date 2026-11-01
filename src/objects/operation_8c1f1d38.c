@@ -31,7 +31,7 @@ struct Arg1 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c1f1e1c(Object *);
-Object *operation_8c1f1d38(Object *o, Arg1 *a1, int a2)
+Object *TItemMagSub_ctor_8c1f1d38(Object *o, Arg1 *a1, int a2)
 {
     Object **home = &o;
     int v1;

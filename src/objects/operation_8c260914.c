@@ -11,7 +11,7 @@ struct Object {
     int f20;
 };
 extern void call_8c260acc(void);
-void operation_8c260914(Object *o)
+void TObjCMCheck_update_8c260914(Object *o)
 {
     if (o->f20 == 0) {
         o->f04 |= 1;

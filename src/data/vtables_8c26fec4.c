@@ -10,9 +10,9 @@ extern void hierarchy_output(void);
 extern void fn_8c1670c0(void);
 extern void operation_8c1670bc(void);
 extern void fn_8c1670cc(void);
-extern void operation_8c16737c(void);
-extern void operation_8c1673dc(void);
-extern void operation_8c1675d0(void);
+extern void TBoss2PhotonBullet_dtor_8c16737c(void);
+extern void TBoss2PhotonBullet_update_8c1673dc(void);
+extern void TBoss2PhotonBullet_render_8c1675d0(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void operation_8c051fd4(void);
@@ -45,9 +45,9 @@ VirtualFunction const vt_8c26fec4[10] = {
 VirtualFunction const vt_8c26feec[20] = {
     0,
     0,
-    operation_8c16737c,
-    operation_8c1673dc,
-    operation_8c1675d0,
+    TBoss2PhotonBullet_dtor_8c16737c,
+    TBoss2PhotonBullet_update_8c1673dc,
+    TBoss2PhotonBullet_render_8c1675d0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,

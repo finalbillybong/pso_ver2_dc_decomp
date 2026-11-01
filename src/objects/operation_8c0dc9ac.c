@@ -71,16 +71,16 @@ extern int g_8c4dbde0;
 extern char g_8c30749c[];
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c18bafc(int, void *);
-extern int create_pair_view_8c226800(int, int);
-extern void operation_8c217914(void *);
-extern void call_8c0e2648(int);
+extern void TWindowMainMenu_ctor_8c18bafc(int, void *);
+extern int TWindowMessageInfomation_ctor_8c226800(int, int);
+extern void TWindowBreakIn_ctor_8c217914(void *);
+extern void TWindowStatus_ctor_8c0e2648(int);
 extern int get_current_area_8c032b10(void);
-extern void call_8c0e3294(int, int);
+extern void TWindowSimpleStatus_ctor_8c0e3294(int, int);
 extern void call_8c103424(int);
-extern void operation_8c1dca80(void *, int, int);
-extern int call_8c24bce8(void *);
-Object *operation_8c0dc9ac(Object *o, int a1)
+extern void TWindowChat_ctor_8c1dca80(void *, int, int);
+extern int TWindowArea_ctor_2_8c24bce8(void *);
+Object *TWindowCtrl_ctor_8c0dc9ac(Object *o, int a1)
 {
     Object **home = &o;
     int v62;
@@ -107,19 +107,19 @@ Object *operation_8c0dc9ac(Object *o, int a1)
     g_8c46fe20 = (S_g8c46fe20 *)o;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x9c);
     if (t1 != 0) {
-        call_8c18bafc(t1, g_8c44bea0);
+        TWindowMainMenu_ctor_8c18bafc(t1, g_8c44bea0);
     }
     g_8c4dbde0 = (int)(t1);
-    t2 = create_pair_view_8c226800((int)((void *)0x8c285878), (int)((void *)0x8c285880));
+    t2 = TWindowMessageInfomation_ctor_8c226800((int)((void *)0x8c285878), (int)((void *)0x8c285880));
     o->f70 = (int)(t2);
     t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
     if (t3 != 0) {
-        operation_8c217914((void *)t3);
+        TWindowBreakIn_ctor_8c217914((void *)t3);
     }
     o->f30 = (int)(t3);
     t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x7c);
     if (t4 != 0) {
-        call_8c0e2648(t4);
+        TWindowStatus_ctor_8c0e2648(t4);
     }
     o->f34 = (Arg0_34 *)t4;
     o->f34->f04 |= 4;
@@ -129,7 +129,7 @@ Object *operation_8c0dc9ac(Object *o, int a1)
         if (t5 != 0xf) {
             t6 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x84);
             if (t6 != 0) {
-                call_8c0e3294(t6, v62);
+                TWindowSimpleStatus_ctor_8c0e3294(t6, v62);
             }
             *(int *)((char *)((char *)o + 0x38) + (v62 << 2)) = (int)(t6);
             (*(Arg0_38 **)((char *)((char *)o + 0x38) + (v62 << 2)))->f04 |= 4;
@@ -146,7 +146,7 @@ Object *operation_8c0dc9ac(Object *o, int a1)
     o->f44->f04 |= 4;
     t8 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x3c);
     if (t8 != 0) {
-        operation_8c1dca80((void *)t8, (int)g_8c44be84, (int)(((char *)o + 0x78)));
+        TWindowChat_ctor_8c1dca80((void *)t8, (int)g_8c44be84, (int)(((char *)o + 0x78)));
     }
     o->f54 = (Arg0_54 *)t8;
     o->f54->f22 |= 0x40;
@@ -166,7 +166,7 @@ Object *operation_8c0dc9ac(Object *o, int a1)
     o->f26 = 0;
     o->f28 = 0;
     if (g_8c41cd20 == 1 && g_8c46fe20 != 0 && g_8c46fe20->f50 == 0) {
-        t9 = call_8c24bce8((void *)((g_8c30749c + 0xc)));
+        t9 = TWindowArea_ctor_2_8c24bce8((void *)((g_8c30749c + 0xc)));
         g_8c46fe20->f50 = (int)(t9);
     }
     return o;

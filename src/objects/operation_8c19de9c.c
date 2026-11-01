@@ -7,7 +7,7 @@ typedef struct S_g8c4dc4d4 S_g8c4dc4d4;
 extern int g_8c4dc4c4;
 extern S_g8c4dc4d4 *g_8c4dc4d4;
 extern void update_hierarchy(void *);
-void operation_8c19de9c(void)
+void TQuestColCtrl_update_8c19de9c(void)
 {
     g_8c4dc4c4 = 0;
     if (g_8c4dc4d4 != 0) {

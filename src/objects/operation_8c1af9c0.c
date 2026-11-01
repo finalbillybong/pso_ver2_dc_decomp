@@ -16,7 +16,7 @@ struct Object {
     int f2c;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *operation_8c1af9c0(Object *o, int a1)
+Object *TCineCtrl_ctor_8c1af9c0(Object *o, int a1)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c274b68;

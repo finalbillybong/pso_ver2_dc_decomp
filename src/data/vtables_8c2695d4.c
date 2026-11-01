@@ -2,7 +2,7 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_object_8c1033e0(void);
+extern void TItemMoney_dtor_8c1033e0(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
@@ -33,7 +33,7 @@ extern void operation_8c0749b4(void);
 extern void operation_8c022c9c(void);
 extern void operation_8c027388(void);
 extern void operation_8c022530(void);
-extern void operation_8c1033b0(void);
+extern void TItemMoney_v31_8c1033b0(void);
 extern void operation_8c075338(void);
 extern void operation_8c07533c(void);
 extern void operation_8c023008(void);
@@ -49,9 +49,9 @@ extern void fn_8c10351c(void);
 extern void operation_8c103744(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void operation_8c0dc63c(void);
-extern void destroy_object_8c104574(void);
-extern void fn_8c10466c(void);
-extern void fn_8c1048a0(void);
+extern void TObjEneDf2Bringer_Eff_TpAbsorb1_dtor_8c104574(void);
+extern void TObjEneDf2Bringer_Eff_TpAbsorb1_update_8c10466c(void);
+extern void TObjEneDf2Bringer_Eff_TpAbsorb1_render_8c1048a0(void);
 extern void operation_8c010504(void);
 extern void operation_8c010510(void);
 extern void operation_8c0104f0(void);
@@ -63,7 +63,7 @@ extern void operation_8c0f3884(void);
 VirtualFunction const vt_8c2695d4[44] = {
     0,
     0,
-    destroy_object_8c1033e0,
+    TItemMoney_dtor_8c1033e0,
     TItem_update_8c073578,
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
@@ -94,7 +94,7 @@ VirtualFunction const vt_8c2695d4[44] = {
     operation_8c022c9c,
     operation_8c027388,
     operation_8c022530,
-    operation_8c1033b0,
+    TItemMoney_v31_8c1033b0,
     operation_8c075338,
     operation_8c07533c,
     operation_8c023008,
@@ -123,9 +123,9 @@ VirtualFunction const vt_8c269684[8] = {
 VirtualFunction const vt_8c2696a4[20] = {
     0,
     0,
-    destroy_object_8c104574,
-    fn_8c10466c,
-    fn_8c1048a0,
+    TObjEneDf2Bringer_Eff_TpAbsorb1_dtor_8c104574,
+    TObjEneDf2Bringer_Eff_TpAbsorb1_update_8c10466c,
+    TObjEneDf2Bringer_Eff_TpAbsorb1_render_8c1048a0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,

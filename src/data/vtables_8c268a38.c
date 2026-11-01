@@ -6,9 +6,9 @@ extern void destroy_field_8c0f72a8(void);
 extern void operation_8c0f72e4(void);
 extern void fn_8c0f73cc(void);
 extern void operation_8c0f780c(void);
-extern void destroy_object_8c0fb694(void);
-extern void fn_8c0fb750(void);
-extern void operation_8c0fba40(void);
+extern void TObjEneSlimeTailAttack_dtor_8c0fb694(void);
+extern void TObjEneSlimeTailAttack_update_8c0fb750(void);
+extern void TObjEneSlimeTailAttack_render_8c0fba40(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0104fc(void);
@@ -95,20 +95,20 @@ extern void operation_8c0134ec(void);
 extern void operation_8c012b88(void);
 extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
-extern void destroy_context_8c0fb0d0(void);
-extern void fn_8c0fb174(void);
-extern void fn_8c0fb2e0(void);
-extern void operation_8c0f8760(void);
-extern void fn_8c0f87e8(void);
-extern void operation_8c0f893c(void);
-extern void operation_8c0f8afc(void);
-extern void fn_8c0f8c88(void);
-extern void fn_8c0f8bbc(void);
-extern void fn_8c0f8b64(void);
-extern void destroy_context_8c0f7db4(void);
-extern void operation_8c0f7e0c(void);
-extern void fn_8c0f7ea4(void);
-extern void fn_8c0f7e00(void);
+extern void TObjEneSlimeWaterBomb_dtor_8c0fb0d0(void);
+extern void TObjEneSlimeWaterBomb_update_8c0fb174(void);
+extern void TObjEneSlimeWaterBomb_render_8c0fb2e0(void);
+extern void TObjEneSlimeOne_dtor_8c0f8760(void);
+extern void TObjEneSlimeOne_update_8c0f87e8(void);
+extern void TObjEneSlimeOne_render_8c0f893c(void);
+extern void TObjEneSlimeOne_v25_8c0f8afc(void);
+extern void TObjEneSlimeOne_v69_8c0f8c88(void);
+extern void TObjEneSlimeOne_v70_8c0f8bbc(void);
+extern void TObjEneSlimeOne_v71_8c0f8b64(void);
+extern void TObjEneSlime_dtor_8c0f7db4(void);
+extern void TObjEneSlime_update_8c0f7e0c(void);
+extern void TObjEneSlime_render_8c0f7ea4(void);
+extern void TObjEneSlime_v71_8c0f7e00(void);
 
 /* 8c268a38: type-information and this-adjustment header, then 4 slots */
 VirtualFunction const vt_8c268a38[6] = {
@@ -124,9 +124,9 @@ VirtualFunction const vt_8c268a38[6] = {
 VirtualFunction const vt_8c268a50[91] = {
     0,
     0,
-    destroy_object_8c0fb694,
-    fn_8c0fb750,
-    operation_8c0fba40,
+    TObjEneSlimeTailAttack_dtor_8c0fb694,
+    TObjEneSlimeTailAttack_update_8c0fb750,
+    TObjEneSlimeTailAttack_render_8c0fba40,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -219,9 +219,9 @@ VirtualFunction const vt_8c268a50[91] = {
 VirtualFunction const vt_8c268bbc[91] = {
     0,
     0,
-    destroy_context_8c0fb0d0,
-    fn_8c0fb174,
-    fn_8c0fb2e0,
+    TObjEneSlimeWaterBomb_dtor_8c0fb0d0,
+    TObjEneSlimeWaterBomb_update_8c0fb174,
+    TObjEneSlimeWaterBomb_render_8c0fb2e0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -314,9 +314,9 @@ VirtualFunction const vt_8c268bbc[91] = {
 VirtualFunction const vt_8c268d28[91] = {
     0,
     0,
-    operation_8c0f8760,
-    fn_8c0f87e8,
-    operation_8c0f893c,
+    TObjEneSlimeOne_dtor_8c0f8760,
+    TObjEneSlimeOne_update_8c0f87e8,
+    TObjEneSlimeOne_render_8c0f893c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -339,7 +339,7 @@ VirtualFunction const vt_8c268d28[91] = {
     fn_8c045f04,
     operation_8c046510,
     fn_8c04745c,
-    operation_8c0f8afc,
+    TObjEneSlimeOne_v25_8c0f8afc,
     fn_8c048c24,
     operation_8c047a50,
     try_or_forward_8c046104,
@@ -383,9 +383,9 @@ VirtualFunction const vt_8c268d28[91] = {
     operation_8c013408,
     operation_8c01340c,
     operation_8c013410,
-    fn_8c0f8c88,
-    fn_8c0f8bbc,
-    fn_8c0f8b64,
+    TObjEneSlimeOne_v69_8c0f8c88,
+    TObjEneSlimeOne_v70_8c0f8bbc,
+    TObjEneSlimeOne_v71_8c0f8b64,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,
@@ -409,9 +409,9 @@ VirtualFunction const vt_8c268d28[91] = {
 VirtualFunction const vt_8c268e94[91] = {
     0,
     0,
-    destroy_context_8c0f7db4,
-    operation_8c0f7e0c,
-    fn_8c0f7ea4,
+    TObjEneSlime_dtor_8c0f7db4,
+    TObjEneSlime_update_8c0f7e0c,
+    TObjEneSlime_render_8c0f7ea4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,
@@ -480,7 +480,7 @@ VirtualFunction const vt_8c268e94[91] = {
     operation_8c013410,
     operation_8c013414,
     operation_8c013424,
-    fn_8c0f7e00,
+    TObjEneSlime_v71_8c0f7e00,
     operation_8c013478,
     operation_8c0134ac,
     operation_8c0134b0,

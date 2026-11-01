@@ -2,21 +2,21 @@
 
 typedef void (*VirtualFunction)(void);
 
-extern void destroy_color_rise_8c248f54(void);
+extern void TItemShootBasyoSen2_dtor_8c248f54(void);
 extern void operation_1abbcc(void);
-extern void operation_8c248ed4(void);
+extern void TItemShootBasyoSen2_render_8c248ed4(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c248ec4(void);
+extern void TItemShootBasyoSen2_v05_8c248ec4(void);
 
 /* 8c27d054: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const vt_8c27d054[8] = {
     0,
     0,
-    destroy_color_rise_8c248f54,
+    TItemShootBasyoSen2_dtor_8c248f54,
     operation_1abbcc,
-    operation_8c248ed4,
+    TItemShootBasyoSen2_render_8c248ed4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c248ec4
+    TItemShootBasyoSen2_v05_8c248ec4
 };

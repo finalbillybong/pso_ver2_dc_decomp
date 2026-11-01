@@ -73,7 +73,7 @@ extern int record24_8c17948c(int);
 extern int record30_8c1794a0(int);
 extern int block32_8c1794b4(int);
 extern int record30_8c1794c8(int);
-void operation_8c0384b8(void)
+void load_assets_ene_bm2_moja_8c0384b8(void)
 {
     Frame frame;
     S_vv13 *v13;

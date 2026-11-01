@@ -16,7 +16,7 @@ struct S_g8c46fe20 {
 };
 extern void operation_8c0de330(int);
 extern int create_item_view_8c21ddcc(void);
-void operation_8c253408(Object *o)
+void TObjCHTimeWin_update_8c253408(Object *o)
 {
     int t1;
     if (o->f20 != 0) {

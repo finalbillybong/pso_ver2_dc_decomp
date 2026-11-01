@@ -47,8 +47,8 @@ struct S_vv1 {
 };
 extern void initialize_base_8c0db1d0(void *, int);
 extern void call_8c0dc854(Object *);
-extern int operation_8c22bec0(int);
-Object *operation_8c22ca64(Object *o, Arg1 *a1, Arg2 *a2)
+extern int TItemTexLoad_create_8c22bec0(int);
+Object *TWindowLoadItemTexture_ctor_8c22ca64(Object *o, Arg1 *a1, Arg2 *a2)
 {
     Object **home = &o;
     S_vv1 *v1;
@@ -66,7 +66,7 @@ Object *operation_8c22ca64(Object *o, Arg1 *a1, Arg2 *a2)
     v1 = (S_vv1 *)o->f30->f00;
     v1->f10 = a2->f00;
     v1->f14 = a2->f04;
-    t1 = operation_8c22bec0((int)(*(S_g8c44bea0 **)0x8c44bea0));
+    t1 = TItemTexLoad_create_8c22bec0((int)(*(S_g8c44bea0 **)0x8c44bea0));
     o->f6c = (int)(t1);
     o->f69 = 0;
     o->f68 = 2;

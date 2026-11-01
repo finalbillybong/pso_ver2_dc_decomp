@@ -26,7 +26,7 @@ extern void operation_8c09b2ec(Object *);
 extern void operator_delete_8c18de08(void *);
 extern void destroy_object_8c01c500(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c09b0ac(Object *o, int a1)
+Object *TCMCharacter_dtor_8c09b0ac(Object *o, int a1)
 {
     int v1;
     S_vv3 *v3;

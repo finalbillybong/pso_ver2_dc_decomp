@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern void scale_current_matrix_v_8c37e390(int);
-void operation_8c23e820(int a0)
+void TItemWpnNyoibou_v57_8c23e820(int a0)
 {
     if (*(int *)0x8c4689f0 == 0) {
         scale_current_matrix_v_8c37e390((int)(a0 + 0x234));

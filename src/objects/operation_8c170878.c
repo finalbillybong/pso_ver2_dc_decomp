@@ -9,7 +9,7 @@ struct S_L8c4db494 {
     char f0b;
 };
 extern S_L8c4db494 g_8c4db494;
-void operation_8c170878(unsigned int a0)
+void quest_op_ba_set_meseta_drop_mode_8c170878(unsigned int a0)
 {
     if ((unsigned int)2 >= a0) {
         (&g_8c4db494)->f0b = *(int *)((char *)0x8c286640 + (a0 << 2));

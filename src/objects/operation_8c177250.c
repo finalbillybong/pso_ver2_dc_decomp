@@ -19,10 +19,10 @@ struct Object {
     int f50;
 };
 extern int g_8c319428;
-extern void initialize_position_controller(void *, void *);
-Object *operation_8c177250(Object *o, int a1)
+extern void TEditor_ctor_8c03c92c(void *, void *);
+Object *TSeqVarsEdit_ctor_8c177250(Object *o, int a1)
 {
-    initialize_position_controller((void *)o, (void *)a1);
+    TEditor_ctor_8c03c92c((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c270978;
     o->tag = (int)(g_8c319428);
     o->size = 0x54;

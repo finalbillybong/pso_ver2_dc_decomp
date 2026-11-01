@@ -125,7 +125,7 @@ extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" int call_8c12b944(void);
 extern "C" void call_8c0344f0(void *, int, int, int);
 extern "C" int call_8c18e768(int, int);
-extern "C" void operation_8c1513f8(Object *o)
+extern "C" void TBoss3VoloptMonitor_update_8c1513f8(Object *o)
 {
     int v14;
     int v32;

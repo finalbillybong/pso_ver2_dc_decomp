@@ -28,7 +28,7 @@ struct S_vv16 {
 extern int g_8c46ed0c;
 extern void operation_8c177748(int);
 extern int operation_8c17796c(int);
-void operation_8c0f1ed8(Object *o, Arg1 *a1)
+void TOMonumentAncient02_v05_8c0f1ed8(Object *o, Arg1 *a1)
 {
     S_vv16 *v16;
     int idx;

@@ -16,9 +16,9 @@ extern void fn_8c0a0d20(void);
 extern void destroy_follow_base(void);
 extern void operation_8c0a117c(void);
 extern void operation_8c09ae00(void);
-extern void destroy_context_8c0a127c(void);
-extern void fn_8c0a12c8(void);
-extern void operation_8c0a12d4(void);
+extern void TCameraBehaiv_dtor_8c0a127c(void);
+extern void TCameraBehaiv_update_8c0a12c8(void);
+extern void TCameraBehaiv_render_8c0a12d4(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void reset_shared_object(void);
@@ -67,9 +67,9 @@ VirtualFunction const vt_8c265a60[13] = {
 VirtualFunction const vt_8c265a94[16] = {
     0,
     0,
-    destroy_context_8c0a127c,
-    fn_8c0a12c8,
-    operation_8c0a12d4,
+    TCameraBehaiv_dtor_8c0a127c,
+    TCameraBehaiv_update_8c0a12c8,
+    TCameraBehaiv_render_8c0a12d4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0104fc,

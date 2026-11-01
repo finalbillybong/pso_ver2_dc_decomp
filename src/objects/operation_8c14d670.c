@@ -12,9 +12,9 @@ struct Object {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void call_8c053f54(Object *);
 extern void operation_8c052124(void *);
-extern void destroy_object_8c140b8c(void *, short);
+extern void TOTrap_dtor_8c140b8c(void *, short);
 extern void call_8c122774(void *, Object *);
-Object *operation_8c14d670(Object *o, int a1)
+Object *TOTrapAncient02R_dtor_8c14d670(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c26e15c;
@@ -22,7 +22,7 @@ Object *operation_8c14d670(Object *o, int a1)
             o->dispatch = (void *)0x8c26e2dc;
             call_8c053f54(o);
             operation_8c052124((void *)o);
-            destroy_object_8c140b8c((void *)o, (short)0);
+            TOTrap_dtor_8c140b8c((void *)o, (short)0);
         }
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);

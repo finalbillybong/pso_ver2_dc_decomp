@@ -13,7 +13,7 @@ extern void operation_8c10406c(void);
 extern void destroy_node_array(void *, short);
 extern void destroy_vector_grid(void *, int);
 extern void call_8c03dc40(void *, int);
-void operation_8c0f4864(void)
+void release_assets_ene_df2_bringer_8c0f4864(void)
 {
     operation_8c10406c();
     destroy_node_array(g_8c470630, (short)1);

@@ -28,7 +28,7 @@ extern "C" void operation_8c10aba8(void *);
 extern "C" void operation_8c10ac24(void *);
 extern "C" void operation_8c10aca8(void *);
 extern "C" void operation_8c10ad1c(void *);
-extern "C" void operation_8c10a970(Object *o)
+extern "C" void TMedicalCenterSequence_v05_8c10a970(Object *o)
 {
     switch (((ObjectData *)o)->f24) {
     case 0:

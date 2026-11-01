@@ -12,7 +12,7 @@ struct Object {
     int f488;
 };
 extern void operation_8c059ea4(void *, int);
-void operation_8c090de8(Object *o)
+void TObjEneMe1Canadin_v110_8c090de8(Object *o)
 {
     if (((o->f3e4 & 0x100)) != 0) {
         operation_8c059ea4((void *)o, 7);

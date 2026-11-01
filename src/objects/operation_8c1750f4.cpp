@@ -128,7 +128,7 @@ extern float g_8c286288;
 extern "C" void operation_8c05b77c(void *);
 extern "C" void operation_8c05b744(void *);
 extern "C" void operation_8c05b0ec(void *);
-extern "C" void operation_8c1750f4(Object *o)
+extern "C" void TBoss2Joint_v94_8c1750f4(Object *o)
 {
     if (((ObjectData *)o)->f40 < (g_8c286288 - 50.0f)) {
         operation_8c05b77c((void *)o);

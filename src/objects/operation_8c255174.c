@@ -11,7 +11,7 @@ struct Object {
     int f1d4;
 };
 extern void call_8c255408(Object *, int);
-void operation_8c255174(Object *o)
+void TItemProShieldModel2_v26_8c255174(Object *o)
 {
     char *v1;
     call_8c255408(o, 0x13);
