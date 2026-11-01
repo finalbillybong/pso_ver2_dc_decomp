@@ -34,10 +34,10 @@ struct S_c8c021ef8 {
 extern int operation_8c03d338(void);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int target_within_range_8c185748(void *, unsigned short, float);
-extern void call_8c38ade4(void *);
-extern void call_8c37df90(int, void *);
+extern void njPushMatrix_8c38ade4(void *);
+extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3be280(int, void *, void *);
-extern void call_8c38accc(int);
+extern void njPopMatrix_8c38accc(int);
 extern float call_8c3845f0(Frame *, void *);
 extern void operation_8c01d778(void *, int);
 void operation_8c18548c(Object *o)
@@ -75,10 +75,10 @@ void operation_8c18548c(Object *o)
     if (t4 == 0 && v1 != 0) {
         return;
     }
-    call_8c38ade4((void *)((void *)0x8c400500));
-    call_8c37df90(0, (void *)(o->f8c));
+    njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
+    njRotateY_8c37df90(0, (void *)(o->f8c));
     call_8c3be280(0, (void *)(&(&frame)->f0c), (void *)(((char *)o + 0x94)));
-    call_8c38accc(1);
+    njPopMatrix_8c38accc(1);
     v7 = (int)0;
     while (4 > v7) {
         t5 = lookup_low_id(v7);

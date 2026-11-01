@@ -20,7 +20,7 @@ extern void operation_8c13f3a0(void);
 extern void operation_8c13f3cc(void);
 extern void operation_8c0731f4(void);
 extern void operation_8c073240(void);
-extern void load_global_resource_8c21edc8(void);
+extern void load_player_ending_motion_8c21edc8(void);
 extern void operation_193764_8c21ede8(void);
 extern void operation_8c225e98(void);
 extern void operation_8c225ed4(void);
@@ -46,7 +46,7 @@ Function const d_8c3087b8[24] = {
     operation_8c13f3cc,
     operation_8c0731f4,
     operation_8c073240,
-    load_global_resource_8c21edc8,
+    load_player_ending_motion_8c21edc8,
     operation_193764_8c21ede8,
     operation_8c225e98,
     operation_8c225ed4,

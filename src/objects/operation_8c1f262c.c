@@ -23,11 +23,11 @@ struct Object {
 struct Arg2 {
     float f00;
 };
-extern float call_8c37eb0c(int);
+extern float njSin_8c37eb0c(int);
 void operation_8c1f262c(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3, Arg4 *a4)
 {
     float t1;
     a1->f00 += a3->f00;
-    t1 = call_8c37eb0c(a1->f00 + (int)((float)a4->f00 * 65536.0f / 360.0f));
+    t1 = njSin_8c37eb0c(a1->f00 + (int)((float)a4->f00 * 65536.0f / 360.0f));
     o->tag = a2->f00 * t1 + o->tag;
 }

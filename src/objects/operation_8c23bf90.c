@@ -31,13 +31,13 @@ struct S_vv1 {
     char unknown4[0x1c];
     float f20;
 };
-extern void call_8c38ae68(int);
+extern void njPushMatrixEx_8c38ae68(int);
 extern void apply_resource_3827d8(void *);
-extern void call_8c382a40(void *);
-extern void call_8c37df90(int, void *);
-extern void call_8c37dd28(int, int);
+extern void translate_current_matrix_v_8c382a40(void *);
+extern void njRotateY_8c37df90(int, void *);
+extern void njRotateX_8c37dd28(int, int);
 extern void call_8c3aa716(Arg0_5c *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c23bf90(Object *o)
 {
     S_vv1 *v1;
@@ -45,13 +45,13 @@ void operation_8c23bf90(Object *o)
         v1 = (S_vv1 *)o->f5c->f2c->f30;
         v1->f00 &= -5;
         v1->f20 = 10.0f;
-        call_8c38ae68(-5);
+        njPushMatrixEx_8c38ae68(-5);
         apply_resource_3827d8((void *)(o->f60));
-        call_8c382a40((void *)(((char *)o + 0x20)));
-        call_8c37df90(0, (void *)(o->f30));
-        call_8c37dd28(0, (int)((int)o->f2c + -0x4000));
+        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x20)));
+        njRotateY_8c37df90(0, (void *)(o->f30));
+        njRotateX_8c37dd28(0, (int)((int)o->f2c + -0x4000));
         call_8c3aa716((Arg0_5c *)(o->f5c));
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         v1->f20 = 1.0f;
     }
 }

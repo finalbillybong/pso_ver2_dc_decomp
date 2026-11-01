@@ -23,7 +23,7 @@ extern void operation_8c09c56c(void *);
 extern void operation_8c09b538(void *);
 extern void call_8c03dc40(void *, int);
 extern void operation_8c09b2ec(Object *);
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void destroy_object_8c01c500(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c09b0ac(Object *o, int a1)
@@ -49,7 +49,7 @@ Object *operation_8c09b0ac(Object *o, int a1)
         operation_8c09b2ec(o);
         *(int *)0x8c46eb30 = *(int *)0x8c46eb34 = *(int *)0x8c46eb38 = 0;
         o->f38 = 0;
-        call_8c18de08((void *)(o->f118));
+        operator_delete_8c18de08((void *)(o->f118));
         *(int *)0x8c41cb3c = *(int *)0x8c46b068 = *(int *)0x8c46ec14 = 0;
         destroy_object_8c01c500((void *)o, (short)0);
         if ((short)a1 > 0) {

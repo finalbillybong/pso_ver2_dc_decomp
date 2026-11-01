@@ -26,7 +26,7 @@ struct Arg0_14c_0 {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c285640 g_8c285640;
-extern void call_8c18de08(void *, int);
+extern void operator_delete_8c18de08(void *, int);
 extern void destroy_context_8c0b9ce8(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c0b5514(Object *o, int a1)
@@ -39,7 +39,7 @@ Object *operation_8c0b5514(Object *o, int a1)
             (*(Arg0_14c_0 **)((char *)((char *)o->f14c + 0x0) + (v1 << 2)))->f04 |= 1;
             v1 = (unsigned int)(v1 + 1);
         }
-        call_8c18de08((void *)(o->f14c), v1);
+        operator_delete_8c18de08((void *)(o->f14c), v1);
         destroy_context_8c0b9ce8((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);

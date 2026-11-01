@@ -28,7 +28,7 @@ extern int operator_new_8c18de4c(int);
 extern void operation_8c15b1e4(void *);
 extern int call_8c073ffc(S_vv4 *);
 extern void memcpy_8c12b77c(void *, int, int);
-extern void call_8c18de08(int);
+extern void operator_delete_8c18de08(int);
 void operation_8c074278(Object *o)
 {
     int t1;
@@ -65,6 +65,6 @@ void operation_8c074278(Object *o)
             o->f244 = (unsigned char)v2;
             memcpy_8c12b77c((void *)(((char *)o + 0x24c)), t1, 0x5a0);
         }
-        call_8c18de08(t1);
+        operator_delete_8c18de08(t1);
     }
 }

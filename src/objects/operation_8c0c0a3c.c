@@ -41,7 +41,7 @@ extern void operation_8c04a43c(void *, float, void *);
 extern void refresh_follow_effect_8c052180(void *);
 extern void call_8c0446f8(float, float, float, Object *, void *);
 extern int check_range_8c01cf68(void *, float);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern int call_8c04a52c(Object *, int, float);
 void operation_8c0c0a3c(Object *o)
 {
@@ -142,7 +142,7 @@ L_8c0c0b00:;
                 goto L_8c0c0c2e;
             }
         }
-        call_8c05fbf8(0x30023, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30023, (void *)(((char *)o + 0x3c)), 0, 0);
 L_8c0c0c2e:;
         t3 = call_8c04a52c(o, 0, 50.0f);
         if ((unsigned short)t3 != 0xffff) {

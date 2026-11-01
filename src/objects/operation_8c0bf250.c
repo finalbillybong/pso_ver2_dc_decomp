@@ -32,7 +32,7 @@ extern void operation_8c04a43c(void *, float, void *);
 extern void apply_object_velocity(void *);
 extern void call_8c0521a0(Object *);
 extern void call_8c05228c(Object *);
-extern void call_8c102cd0(void *, int, int, int);
+extern void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern void call_8c027090(Object *);
 void operation_8c0bf250(Object *o)
 {
@@ -79,7 +79,7 @@ L_8c0bf2d2:;
 L_8c0bf318:;
     call_8c0521a0(o);
     call_8c05228c(o);
-    call_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+    minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
     call_8c027090(o);
     o->f34 &= -0x200001;
 }

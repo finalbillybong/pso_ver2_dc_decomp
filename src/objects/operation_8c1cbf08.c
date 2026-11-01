@@ -14,8 +14,8 @@ extern void clear_global_render_resources(void);
 extern void clear_hierarchy_groups(void *);
 extern void call_8c01364c(void *, int);
 extern void forward_reviewed_8c104e8c(void);
-extern void call_8c380516(void);
-void operation_8c1cbf08(void)
+extern void wait_vsync_and_flip_8c380516(void);
+void mode_main_exit_8c1cbf08(void)
 {
     S_vv1 *v1;
     clear_global_render_resources();
@@ -27,5 +27,5 @@ void operation_8c1cbf08(void)
     clear_hierarchy_groups((void *)((void *)0x8c44bec8));
     call_8c01364c((void *)((void *)0x8c32915c), 0x118);
     forward_reviewed_8c104e8c();
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

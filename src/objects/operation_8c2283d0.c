@@ -15,7 +15,7 @@ struct Object {
 };
 extern int create_effect_777c(void *, int);
 extern void set_effect_bits(void *, unsigned short);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c191504(int);
 void operation_8c2283d0(Object *o)
 {
@@ -31,7 +31,7 @@ void operation_8c2283d0(Object *o)
     if (t1 != 0) {
         set_effect_bits((void *)t1, (unsigned short)0x40);
     }
-    call_8c05fbf8(0x30015, (void *)(((char *)o + 0xb0)), 0, 1);
+    play_se_8c05fbf8(0x30015, (void *)(((char *)o + 0xb0)), 0, 1);
     call_8c191504(2);
     goto L_8c22843e;
 L_8c228412:;

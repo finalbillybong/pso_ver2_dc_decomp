@@ -15,13 +15,13 @@ struct Object {
     short f04;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-extern void call_8c100850(int);
+extern void bgm_play_area_8c100850(int);
 void operation_8c206ea0(Object *o)
 {
     S_c8c021ef8 *t1;
     t1 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));
     if (t1 != 0 && !(4000.0f > t1->f44)) {
-        call_8c100850(3);
+        bgm_play_area_8c100850(3);
         o->f04 |= 1;
     }
 }

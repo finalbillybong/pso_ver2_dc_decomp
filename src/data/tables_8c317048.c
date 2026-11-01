@@ -21,7 +21,7 @@ extern void operation_8c223424(void);
 extern void operation_8c223490(void);
 extern void operation_8c22358c(void);
 extern void operation_8c2235f8(void);
-extern void fn_8c22bdac(void);
+extern void load_item_kt_table_8c22bdac(void);
 extern void operation_8c22be68(void);
 extern void operation_8c077280(void);
 extern void operation_8c0772c4(void);
@@ -209,7 +209,7 @@ Function const d_8c317048[30] = {
     operation_8c223490,
     operation_8c22358c,
     operation_8c2235f8,
-    fn_8c22bdac,
+    load_item_kt_table_8c22bdac,
     operation_8c22be68,
     operation_8c077280,
     operation_8c0772c4,

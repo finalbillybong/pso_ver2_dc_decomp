@@ -9,7 +9,7 @@ struct Frame {
     char unknown4[0x4];
 };
 extern float squared_distance_xyz(void *, void *);
-extern void call_8c38ad50(int, int, Frame *);
+extern void project_point_to_screen_8c38ad50(int, int, Frame *);
 int operation_8c08286c(int a0, float f0, float f1)
 {
     Frame frame;
@@ -21,7 +21,7 @@ int operation_8c08286c(int a0, float f0, float f1)
     if ((f1 * f1) > t1) {
         return 1;
     }
-    call_8c38ad50(0, (int)(a0 + 0x3c), (Frame *)((&frame)));
+    project_point_to_screen_8c38ad50(0, (int)(a0 + 0x3c), (Frame *)((&frame)));
     if (-f1 <= (&frame)->f00 && (&frame)->f00 <= (f1 + 640.0f)) {
         return 1;
     }

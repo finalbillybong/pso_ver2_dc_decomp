@@ -27,15 +27,15 @@ struct Frame {
     char unknownc[0x8];
 };
 extern int operation_8c051ff4(void *, void *, void *);
-extern void call_8c38ae68(void);
-extern void call_8c382a40(void *);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void translate_current_matrix_v_8c382a40(void *);
 extern void call_8c0c5094(void *, void *, Frame *);
-extern void call_8c37e02c(int, void *);
-extern void call_8c37df90(int, void *);
-extern void call_8c37dd28(int, int);
-extern void call_8c37e2e4(int, float, float, float);
+extern void njRotateZ_8c37e02c(int, void *);
+extern void njRotateY_8c37df90(int, void *);
+extern void njRotateX_8c37dd28(int, int);
+extern void njScale_8c37e2e4(int, float, float, float);
 extern void call_8c11a920(void);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c15e688(Object *o)
 {
     Frame frame;
@@ -43,15 +43,15 @@ void operation_8c15e688(Object *o)
     *(Vector3 *)&o->f3c0 = *(Vector3 *)&o->f3fc;
     t1 = operation_8c051ff4((void *)o, (void *)(&o->f3c0), (void *)(&(&frame)->f08));
     if (t1 != 0) {
-        call_8c38ae68();
+        njPushMatrixEx_8c38ae68();
         o->f3c0.f04 += 0.2f;
-        call_8c382a40((void *)(&o->f3c0));
+        translate_current_matrix_v_8c382a40((void *)(&o->f3c0));
         call_8c0c5094((void *)(&(&frame)->f08), (void *)(&(&frame)->f04), (Frame *)((&frame)));
-        call_8c37e02c(0, (void *)((&frame)->f00));
-        call_8c37df90(0, (void *)(o->f64));
-        call_8c37dd28(0, (int)((&frame)->f04 + 0x4000));
-        call_8c37e2e4(0, 2.0f, 2.0f, 1.0f);
+        njRotateZ_8c37e02c(0, (void *)((&frame)->f00));
+        njRotateY_8c37df90(0, (void *)(o->f64));
+        njRotateX_8c37dd28(0, (int)((&frame)->f04 + 0x4000));
+        njScale_8c37e2e4(0, 2.0f, 2.0f, 1.0f);
         call_8c11a920();
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
     }
 }

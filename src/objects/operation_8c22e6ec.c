@@ -35,20 +35,20 @@ struct S_g8c467180_2c {
     char unknown0[0x4c0];
     S_g8c467180_2c_4c0 *f4c0;
 };
-extern int call_8c372d98(void *);
+extern int bu_check_busy_8c372d98(void *);
 extern void operation_8c184918(void);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void operation_8c19a044(void *, int);
 extern void call_8c22e8e4(Object *, void *, int);
 void operation_8c22e6ec(Object *o)
 {
     S_vv81 *v81;
     int t1;
-    t1 = call_8c372d98((void *)(o->f54));
+    t1 = bu_check_busy_8c372d98((void *)(o->f54));
     if (t1 == 0) {
         operation_8c184918();
         if (o->f58 != 0) {
-            call_8c011ec0((void *)(o->f58));
+            game_free_8c011ec0((void *)(o->f58));
             o->f58 = (Arg0_58 *)0;
         }
         v81 = (S_vv81 *)o->f84;

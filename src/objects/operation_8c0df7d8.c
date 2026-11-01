@@ -34,7 +34,7 @@ extern void call_8c0e2278(S_vv21 *, int, int);
 extern void call_8c0e2328(S_vv21 *, float);
 extern int call_8c257e3c(int, int);
 extern float operation_8c2097e4(void);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c0df7d8(Object *o, int a1, int a2)
 {
     S_vv21 *v21;
@@ -66,7 +66,7 @@ void operation_8c0df7d8(Object *o, int a1, int a2)
     if (t2 > 0.0f) {
         o->f64 = 0;
     }
-    call_8c05fbf8(0x50005, 0, 0, 0);
+    play_se_8c05fbf8(0x50005, 0, 0, 0);
     if ((o->f80) != 0) {
         o->f80 = 5;
     }

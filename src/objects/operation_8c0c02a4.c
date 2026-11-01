@@ -20,7 +20,7 @@ struct Object {
 extern void call_8c01c5f0(Object *);
 extern void call_8c0c1948(Object *, void *, float);
 extern int check_range_8c01cf68(void *, float);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c0521a0(Object *);
 extern void operation_8c04a43c(void *, void *, float);
 void operation_8c0c02a4(Object *o)
@@ -48,7 +48,7 @@ void operation_8c0c02a4(Object *o)
                     goto L_8c0c032a;
                 }
             }
-            call_8c05fbf8(0x30023, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x30023, (void *)(((char *)o + 0x3c)), 0, 0);
 L_8c0c032a:;
             *(int *)((char *)o + 0x3a0) -= 1;
             if (!(o->f3a0 > 0)) {

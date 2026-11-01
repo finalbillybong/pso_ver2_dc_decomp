@@ -5,12 +5,12 @@ typedef struct Seeds { unsigned int first,second; } Seeds;
 typedef char check_layout[sizeof(Record)==128 && sizeof(Collection)==13076 && sizeof(Seeds)==8 && (unsigned long)&((Collection *)0)->records==4 && (unsigned long)&((Collection *)0)->seed==12816 && (unsigned long)&((Seeds *)0)->second==4 ? 1:-1];
 extern RandomState random_state;
 extern Seeds seeds;
-extern void *allocate(unsigned int);
+extern void *game_malloc_8c011ecc(unsigned int);
 extern void release(void *),construct_array(void *,void *(*)(void *,int),void *(*)(void *,int),unsigned int,unsigned int);
 extern void *construct_record(void *,int);
 extern void seed_random(RandomState *,unsigned int),prepare_permutation(RandomState *),permute_inverse(RandomState *,void *,void *,unsigned int),subtract_random(RandomState *,void *,int),xor_random(RandomState *,void *,int);
 static inline Collection *create_collection(void) {
-    Collection *p=allocate(sizeof(Collection));
+    Collection *p=game_malloc_8c011ecc(sizeof(Collection));
     if(p) construct_array(p->records,construct_record,0,sizeof(Record),100);
     return p;
 }

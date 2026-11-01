@@ -19,7 +19,7 @@ struct Arg1 {
 };
 extern S_g8c41cba0 *g_8c41cba0;
 extern float call_8c130334(float, float);
-extern float call_8c37f6c0(float);
+extern float signed_sqrt_8c37f6c0(float);
 void operation_8c09a658(Object *o, Arg1 *a1)
 {
     float v1;
@@ -31,7 +31,7 @@ void operation_8c09a658(Object *o, Arg1 *a1)
     v2 = (float)g_8c41cba0->f1e;
     t2 = call_8c130334(v1, -v2);
     v4 = (int)(t2 * 65536.0f / 6.28318405f);
-    v3 = call_8c37f6c0(v1 * v1 + v2 * v2) / 115.2f;
+    v3 = signed_sqrt_8c37f6c0(v1 * v1 + v2 * v2) / 115.2f;
     if (v3 > 1.0f) {
         v3 = 1.0f;
     }

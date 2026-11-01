@@ -15,7 +15,7 @@ extern void process_file_task_queue(void);
 extern void call_8c05f9e4(void);
 extern void operation_8c17e194(void);
 extern void call_8c184614(void);
-extern void call_8c042488(void);
+extern void capture_frame_buffer_8c042488(void);
 extern int call_8c01e180(void);
 extern void select_state3_8c01c234(void);
 extern void clear_global_8c01c1c4(void);
@@ -26,7 +26,7 @@ extern int call_8c01c228(void);
 extern void call_8c0e7dd0(void);
 extern int call_8c01c1dc(void);
 extern void call_8c0e7c80(void);
-extern void call_8c380516(void);
+extern void wait_vsync_and_flip_8c380516(void);
 void operation_8c0e7938(void)
 {
     int t1;
@@ -45,7 +45,7 @@ void operation_8c0e7938(void)
     call_8c05f9e4();
     operation_8c17e194();
     call_8c184614();
-    call_8c042488();
+    capture_frame_buffer_8c042488();
     t1 = call_8c01e180();
     if ((char)t1 != 0) {
         select_state3_8c01c234();
@@ -67,5 +67,5 @@ void operation_8c0e7938(void)
         call_8c0e7c80();
         clear_global_8c01c1c4();
     }
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

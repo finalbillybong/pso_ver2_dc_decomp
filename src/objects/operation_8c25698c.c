@@ -19,8 +19,8 @@ struct S_c8c021ef8 {
 };
 extern S_c8c021ef8 *lookup_low_id(int);
 extern float distance_xz(void *, void *);
-extern float call_8c37f6c0(float);
-extern int call_8c05fbf8(int, int, int, int);
+extern float signed_sqrt_8c37f6c0(float);
+extern int play_se_8c05fbf8(int, int, int, int);
 extern void emit_control_60320(int, int, int);
 void operation_8c25698c(Object *o)
 {
@@ -56,15 +56,15 @@ void operation_8c25698c(Object *o)
             }
             v3 = (int)(v3 + 1);
         }
-        t3 = call_8c37f6c0(v4);
+        t3 = signed_sqrt_8c37f6c0(v4);
         if (t3 > 200.0f) {
-            v11 = call_8c37f6c0(v4);
+            v11 = signed_sqrt_8c37f6c0(v4);
         } else {
             v11 = 200.0f;
         }
         v13 = 1.0f;
         v13 = v13 - (v11 - 200.0f) * 0.00076923077f;
-        t4 = call_8c05fbf8(0x20030, 0, 0, 0);
+        t4 = play_se_8c05fbf8(0x20030, 0, 0, 0);
         emit_control_60320(t4, (int)((int)(v13 * 256.0f)), 0);
         o->f24 = (int)(v13 * -53.0f) + 0x3c;
     }

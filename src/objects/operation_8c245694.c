@@ -11,14 +11,14 @@ struct Object {
     int f0c;
     int f10;
 };
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void construct_random_state(void *);
 extern int operator_new_8c18de4c(int);
 Object *operation_8c245694(Object *o, int a1)
 {
     int t1;
     int t2;
-    t1 = call_8c011ecc(0xe8);
+    t1 = game_malloc_8c011ecc(0xe8);
     if (t1 != 0) {
         construct_random_state((void *)t1);
     }

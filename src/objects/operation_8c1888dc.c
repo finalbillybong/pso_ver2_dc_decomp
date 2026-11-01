@@ -34,7 +34,7 @@ extern void operation_8c1d5dfc(void *, int);
 extern int operation_8c16a50c(void *, int);
 extern void operation_8c1ca234(void *, int);
 extern int operation_8c106798(Object *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern int operation_8c106760(Object *);
 extern int item_capacity_8c022f5c(void *, void *);
 extern void call_8c220b80(int, int);
@@ -68,12 +68,12 @@ void operation_8c1888dc(Object *o)
         t3 = operation_8c106798(base);
         if (t3 != 0) {
             base->f24 = 3;
-            call_8c05fbf8(0x50001, 0, 0, 0);
+            play_se_8c05fbf8(0x50001, 0, 0, 0);
             return;
         }
         t4 = operation_8c106760(base);
         if (t4 != 0) {
-            call_8c05fbf8(0x50001, 0, 0, 0);
+            play_se_8c05fbf8(0x50001, 0, 0, 0);
             if (base->f2c == 0) {
                 v16 = (int)0;
             } else {

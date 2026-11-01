@@ -45,7 +45,7 @@ extern "C" char g_8c2e3014[];
 extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c09c9a0(void *, void *);
 extern "C" void call_8c0106f8(S_c8c122700 *, void *);
-extern "C" void call_8c12b048(Frame *, void *, ...);
+extern "C" void sprintf_8c12b048(Frame *, void *, ...);
 extern "C" void operation_8c011efc(Frame *);
 extern "C" void operation_8c01b488(int a0)
 {
@@ -62,7 +62,7 @@ extern "C" void operation_8c01b488(int a0)
         ((S_c8c122700Data *)t1)->f24 = g_8c418248 + 0xfa0;
         ((S_c8c122700Data *)t1)->f26 = a0 + 0xfa0;
         t2 = t1->v5();
-        call_8c12b048((Frame *)((&frame)), (void *)((g_8c2e3014 + 0x21e)), t2, (int)(((S_c8c122700Data *)t1)->f20), (int)(((S_c8c122700Data *)t1)->f21), (int)(((S_c8c122700Data *)t1)->f22), (int)(((S_c8c122700Data *)t1)->f23));
+        sprintf_8c12b048((Frame *)((&frame)), (void *)((g_8c2e3014 + 0x21e)), t2, (int)(((S_c8c122700Data *)t1)->f20), (int)(((S_c8c122700Data *)t1)->f21), (int)(((S_c8c122700Data *)t1)->f22), (int)(((S_c8c122700Data *)t1)->f23));
         operation_8c011efc((Frame *)((&frame)));
     }
 }

@@ -25,32 +25,32 @@ extern S_g8c50522c *g_8c50522c;
 extern S_g8c505230 *g_8c505230;
 extern S_g8c505234 *g_8c505234;
 extern S_g8c505238 *g_8c505238;
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void operation_8c105320(int);
 void operation_8c20ad9c(void)
 {
     if (g_8c5051f4 != 0) {
-        call_8c18de08(g_8c5051f4);
+        operator_delete_8c18de08(g_8c5051f4);
         g_8c5051f4 = (S_g8c5051f4 *)0;
     }
     if (g_8c5051f8 != 0) {
-        call_8c18de08(g_8c5051f8);
+        operator_delete_8c18de08(g_8c5051f8);
         g_8c5051f8 = (S_g8c5051f8 *)0;
     }
     if (g_8c5051f0 != 0) {
-        call_8c18de08(g_8c5051f0);
+        operator_delete_8c18de08(g_8c5051f0);
         g_8c5051f0 = (S_g8c5051f0 *)0;
     }
     if (g_8c5051ec != 0) {
-        call_8c18de08(g_8c5051ec);
+        operator_delete_8c18de08(g_8c5051ec);
         g_8c5051ec = (S_g8c5051ec *)0;
     }
     if (g_8c5051e8 != 0) {
-        call_8c18de08(g_8c5051e8);
+        operator_delete_8c18de08(g_8c5051e8);
         g_8c5051e8 = (S_g8c5051e8 *)0;
     }
     if (g_8c5051e4 != 0) {
-        call_8c18de08(g_8c5051e4);
+        operator_delete_8c18de08(g_8c5051e4);
         g_8c5051e4 = (S_g8c5051e4 *)0;
     }
     if (g_8c505238 != 0) {

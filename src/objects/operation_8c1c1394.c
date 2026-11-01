@@ -35,8 +35,8 @@ extern int call_8c1c11a8(Object *);
 extern int call_8c05fd7c(int, Object *, void *, int, int);
 extern void emit_control_60320(int, int, int);
 extern int create_effect_7708(void *, int, int);
-extern float call_8c37eb0c(void *);
-extern float call_8c38c154(void *);
+extern float njSin_8c37eb0c(void *);
+extern float njCos_8c38c154(void *);
 extern void call_8c0a7608(void *, Frame *);
 void operation_8c1c1394(Object *o)
 {
@@ -90,9 +90,9 @@ L_8c1c1400:;
                 v138 = (float)10.0f;
             }
             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f3c;
-            t4 = call_8c37eb0c((void *)(o->f64));
+            t4 = njSin_8c37eb0c((void *)(o->f64));
             (&frame)->f00.f00 -= v138 * t4;
-            t5 = call_8c38c154((void *)(o->f64));
+            t5 = njCos_8c38c154((void *)(o->f64));
             (&frame)->f00.f08 -= v138 * t5;
             call_8c0a7608((void *)(o->fac), (Frame *)((&frame)));
         }

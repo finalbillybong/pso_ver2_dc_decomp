@@ -26,7 +26,7 @@ struct S_vv121 {
     S_vv121_98 *f98;
 };
 extern void request_resource_release(void *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void clear_global_8c19b29c(void);
 extern void call_8c156ec0(void *);
 extern void operation_8c19a044(void *, int);
@@ -41,7 +41,7 @@ void operation_8c1ca7e8(Object *o)
         request_resource_release((void *)(o->f44));
         o->f44 = (Arg0_44 *)0;
     }
-    call_8c05fbf8(0x50016, 0, 0, 0);
+    play_se_8c05fbf8(0x50016, 0, 0, 0);
     clear_global_8c19b29c();
     if (o->f34 != 0) {
         call_8c156ec0((void *)(o->f34));

@@ -22,14 +22,14 @@ struct S_x33968 {
     Vector3 f00;
 };
 extern int operation_8c051ff4(void *, void *, void *);
-extern void call_8c38ae68(void);
-extern void call_8c3829bc(int, float, float, float);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void njTranslate_8c3829bc(int, float, float, float);
 extern void call_8c0c5094(void *, void *, Frame *);
-extern void call_8c37e02c(int, void *);
-extern void call_8c37dd28(int, int);
-extern void call_8c37e2e4(int, float, float, float);
+extern void njRotateZ_8c37e02c(int, void *);
+extern void njRotateX_8c37dd28(int, int);
+extern void njScale_8c37e2e4(int, float, float, float);
 extern void call_8c11a920(void);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c0fbdf0(int a0)
 {
     Frame frame;
@@ -45,14 +45,14 @@ void operation_8c0fbdf0(int a0)
         (&frame)->f14.f04 += 10.0f;
         t1 = operation_8c051ff4((void *)a0, (void *)(&(&frame)->f14), (void *)(&(&frame)->f08));
         if (t1 != 0) {
-            call_8c38ae68();
-            call_8c3829bc(0, (&frame)->f14.f00, (&frame)->f14.f04 + 0.1f, (&frame)->f14.f08);
+            njPushMatrixEx_8c38ae68();
+            njTranslate_8c3829bc(0, (&frame)->f14.f00, (&frame)->f14.f04 + 0.1f, (&frame)->f14.f08);
             call_8c0c5094((void *)(&(&frame)->f08), (void *)(&(&frame)->f04), (Frame *)((&frame)));
-            call_8c37e02c(0, (void *)((&frame)->f00));
-            call_8c37dd28(0, (int)((&frame)->f04 + v2));
-            call_8c37e2e4(0, 0.75f, 0.75f, 0.75f);
+            njRotateZ_8c37e02c(0, (void *)((&frame)->f00));
+            njRotateX_8c37dd28(0, (int)((&frame)->f04 + v2));
+            njScale_8c37e2e4(0, 0.75f, 0.75f, 0.75f);
             call_8c11a920();
-            call_8c38ad10();
+            njPopMatrixEx_8c38ad10();
         }
         v3 = (int)(v3 + 1);
     }

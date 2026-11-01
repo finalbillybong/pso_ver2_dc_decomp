@@ -10,7 +10,7 @@ extern void run_current_resource_start(void);
 extern void run_current_resource_start_8c03c3ac(void);
 extern void operation_8c013fc8(void);
 extern void operation_8c122ba0(void);
-extern void operation_8c1a81a0(void);
+extern void TGStream_close_8c1a81a0(void);
 void operation_8c24b4f4(void)
 {
     call_8c05f87c((void *)((void *)0x8c33b440));
@@ -20,5 +20,5 @@ void operation_8c24b4f4(void)
     run_current_resource_start_8c03c3ac();
     operation_8c013fc8();
     operation_8c122ba0();
-    operation_8c1a81a0();
+    TGStream_close_8c1a81a0();
 }

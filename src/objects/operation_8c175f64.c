@@ -25,41 +25,41 @@ struct S_vv22 {
     char unknown0[0x4];
     int f04;
 };
-extern S_c8c011ecc *call_8c011ecc(int);
+extern S_c8c011ecc *game_malloc_8c011ecc(int);
 extern void initialize_vector_array(void *, void *);
-extern void call_8c38ae68(void);
-extern void call_8c37b5c4(int);
-extern void call_8c37e2e4(int, float, float, float);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void njUnitMatrix_8c37b5c4(int);
+extern void njScale_8c37e2e4(int, float, float, float);
 extern void call_8c3be38c(int, int, int);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c175f64(void)
 {
     int v21;
     int v23;
     S_vv22 *v22;
     S_c8c011ecc *t1;
-    t1 = call_8c011ecc(0xc);
+    t1 = game_malloc_8c011ecc(0xc);
     if (t1 != 0) {
         initialize_vector_array((void *)t1, (void *)((*(S_g8c4da370 **)0x8c4da370)->f42c->f68));
     }
     *(S_c8c011ecc **)0x8c4db680 = t1;
-    call_8c38ae68();
-    call_8c37b5c4(0);
-    call_8c37e2e4(0, *(float *)0x8c286290, *(float *)0x8c286290, *(float *)0x8c286290);
+    njPushMatrixEx_8c38ae68();
+    njUnitMatrix_8c37b5c4(0);
+    njScale_8c37e2e4(0, *(float *)0x8c286290, *(float *)0x8c286290, *(float *)0x8c286290);
     v21 = (int)0;
     while (0x13 > v21) {
         call_8c3be38c(0, (int)(t1->f04 + v21 * 0x1c + 4), (int)(t1->f04 + v21 * 0x1c + 4));
         v21 = (int)(v21 + 1);
     }
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
     v22 = (S_vv22 *)*(S_g8c4db680 **)0x8c4db680;
-    call_8c38ae68();
-    call_8c37b5c4(0);
-    call_8c37e2e4(0, 1.1f, 0.0f, 1.1f);
+    njPushMatrixEx_8c38ae68();
+    njUnitMatrix_8c37b5c4(0);
+    njScale_8c37e2e4(0, 1.1f, 0.0f, 1.1f);
     v23 = (int)0;
     while (0x13 > v23) {
         call_8c3be38c(0, (int)(v22->f04 + v23 * 0x1c + 0x10), (int)(v22->f04 + v23 * 0x1c + 0x10));
         v23 = (int)(v23 + 1);
     }
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
 }

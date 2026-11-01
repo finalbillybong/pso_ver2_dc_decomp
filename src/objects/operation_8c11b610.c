@@ -46,9 +46,9 @@ struct Arg0_404 {
     float f44;
 };
 extern void call_8c3bdf60(void *, void *);
-extern void call_8c37f6f0(Frame *, void *);
-extern float call_8c37e480(Frame *);
-extern void call_8c37b630(Frame *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
+extern float njScalor_8c37e480(Frame *);
+extern void njUnitVector_8c37b630(Frame *);
 extern int operation_8c051ff4(void *, void *, void *);
 extern int call_8c11b8b8(Object *, void *);
 extern int call_8c11b7f0(Object *, int, void *, float, float);
@@ -68,10 +68,10 @@ int operation_8c11b610(Object *o)
     (&frame)->f0c.f04 *= 0.5f;
     (&frame)->f0c.f08 *= 0.5f;
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f3c;
-    call_8c37f6f0((Frame *)((&frame)), (void *)(&(&frame)->f0c));
-    t1 = call_8c37e480((Frame *)((&frame)));
+    vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(&(&frame)->f0c));
+    t1 = njScalor_8c37e480((Frame *)((&frame)));
     if (!(10.0f > t1)) {
-        call_8c37b630((Frame *)((&frame)));
+        njUnitVector_8c37b630((Frame *)((&frame)));
         (&frame)->f00.f00 *= 10.0f;
         (&frame)->f00.f04 *= 10.0f;
         (&frame)->f00.f08 *= 10.0f;

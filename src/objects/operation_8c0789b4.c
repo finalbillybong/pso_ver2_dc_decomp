@@ -28,7 +28,7 @@ struct Arg3 {
     Block_p0_2c f00;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c0f336c(int, int);
 Object *operation_8c0789b4(Object *o, int a1, Arg2 *a2, Arg3 *a3)
 {
@@ -44,7 +44,7 @@ Object *operation_8c0789b4(Object *o, int a1, Arg2 *a2, Arg3 *a3)
     o->f2c.f00 = o->f2c.f00 * 5.0f;
     o->f2c.f04 = o->f2c.f04 * 5.0f;
     o->f2c.f08 = o->f2c.f08 * 5.0f;
-    t1 = call_8c011ecc(0x10);
+    t1 = game_malloc_8c011ecc(0x10);
     if (t1 != 0) {
         call_8c0f336c(t1, 4);
     }

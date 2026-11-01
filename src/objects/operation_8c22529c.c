@@ -21,7 +21,7 @@ struct Arg0_94 {
 };
 extern int operation_8c225448(void *);
 extern int call_8c21f468(void);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c19a044(void *, int);
 void operation_8c22529c(Object *o)
 {
@@ -34,10 +34,10 @@ void operation_8c22529c(Object *o)
             goto L_8c2252da;
         }
     }
-    call_8c05fbf8(0x50006, 0, 0, 0);
+    play_se_8c05fbf8(0x50006, 0, 0, 0);
     return;
 L_8c2252da:;
-    call_8c05fbf8(0x50001, 0, 0, 0);
+    play_se_8c05fbf8(0x50001, 0, 0, 0);
     o->f94->f00 = 1;
     o->f80 |= 1;
     operation_8c19a044((void *)(o->f98), 2);

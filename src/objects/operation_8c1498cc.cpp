@@ -263,7 +263,7 @@ extern "C" void call_8c01c5f0(Object *);
 extern "C" float operation_8c05b8c0(int);
 extern "C" void operation_8c18582c(int, int);
 extern "C" int check_range_8c01cf68(void *, float);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void operation_8c1498cc(Object *o, int a1)
 {
     Frame frame;
@@ -324,7 +324,7 @@ extern "C" void operation_8c1498cc(Object *o, int a1)
         }
         t2 = check_range_8c01cf68((void *)o, 10.0f);
         if (t2 != 0) {
-            call_8c05fbf8(0x30012, (void *)(((char *)o + 0x538)), 0, 0);
+            play_se_8c05fbf8(0x30012, (void *)(((char *)o + 0x538)), 0, 0);
         }
         return;
     case 1:

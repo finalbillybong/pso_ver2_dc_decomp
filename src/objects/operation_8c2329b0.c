@@ -72,7 +72,7 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern void memset_8c12b880(void *, int, int);
 extern void select_mode13_8c1cc5d0(void);
 extern S_c8c03669c *operation_8c03669c(int, int);
-extern void call_8c12b048(void *, int, ...);
+extern void sprintf_8c12b048(void *, int, ...);
 extern int operation_8c0366dc(int);
 extern int call_8c036708(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
@@ -132,50 +132,50 @@ Object *operation_8c2329b0(Object *o)
         v25 = (char *)(*(S_g8c467180 **)0x8c467180)->f70->f0c;
         v1 = (char *)v25;
         t2 = operation_8c03669c(0, 0);
-        call_8c12b048((void *)((void *)0x8c510920), (int)(v1), t2);
+        sprintf_8c12b048((void *)((void *)0x8c510920), (int)(v1), t2);
     } else {
         v26 = (char *)(*(S_g8c467180 **)0x8c467180)->f70->f0c;
         v2 = (char *)v26;
         t3 = operation_8c03669c(0, 1);
-        call_8c12b048((void *)((void *)0x8c510920), (int)(v2), t3);
+        sprintf_8c12b048((void *)((void *)0x8c510920), (int)(v2), t3);
     }
     t4 = operation_8c03669c(1, 0);
     if (t4->f00 != 0) {
         v27 = (char *)(*(S_g8c467180 **)0x8c467180)->f70->f0c;
         v6 = (char *)v27;
         t5 = operation_8c03669c(1, 0);
-        call_8c12b048((void *)((void *)0x8c5109db), (int)(v6), t5);
+        sprintf_8c12b048((void *)((void *)0x8c5109db), (int)(v6), t5);
     } else {
         v28 = (char *)(*(S_g8c467180 **)0x8c467180)->f70->f0c;
         v7 = (char *)v28;
         t6 = operation_8c03669c(1, 1);
-        call_8c12b048((void *)((void *)0x8c5109db), (int)(v7), t6);
+        sprintf_8c12b048((void *)((void *)0x8c5109db), (int)(v7), t6);
     }
     v29 = (char *)(*(S_g8c467180 **)0x8c467180)->f70->f10;
     v11 = (char *)v29;
     t7 = operation_8c0366dc(0);
-    call_8c12b048((void *)((void *)0x8c510a96), (int)(v11), (S_c8c03669c *)t7);
+    sprintf_8c12b048((void *)((void *)0x8c510a96), (int)(v11), (S_c8c03669c *)t7);
     v30 = (char *)(*(S_g8c467180 **)0x8c467180)->f70->f10;
     v12 = (char *)v30;
     t8 = operation_8c0366dc(1);
-    call_8c12b048((void *)((void *)0x8c510ad8), (int)(v12), (S_c8c03669c *)t8);
+    sprintf_8c12b048((void *)((void *)0x8c510ad8), (int)(v12), (S_c8c03669c *)t8);
     t9 = call_8c036708(0);
     if (t9 == 0) {
         memset_8c12b880((void *)((void *)0x8c510920), 0, 0xbb);
         memset_8c12b880((void *)((void *)0x8c510a96), 0, 0x42);
         v13 = (S_vv13 *)(*(S_g8c467180 **)0x8c467180)->f70;
-        call_8c12b048((void *)((void *)0x8c510920), (int)(v13->f0c), (S_c8c03669c *)(v13->f20));
+        sprintf_8c12b048((void *)((void *)0x8c510920), (int)(v13->f0c), (S_c8c03669c *)(v13->f20));
         v14 = (S_vv14 *)(*(S_g8c467180 **)0x8c467180)->f70;
-        call_8c12b048((void *)((void *)0x8c510a96), (int)(v14->f10), (S_c8c03669c *)(v14->f20));
+        sprintf_8c12b048((void *)((void *)0x8c510a96), (int)(v14->f10), (S_c8c03669c *)(v14->f20));
     }
     t10 = call_8c036708(1);
     if (t10 == 0) {
         memset_8c12b880((void *)((void *)0x8c5109db), 0, 0xbb);
         memset_8c12b880((void *)((void *)0x8c510ad8), 0, 0x42);
         v17 = (S_vv17 *)(*(S_g8c467180 **)0x8c467180)->f70;
-        call_8c12b048((void *)((void *)0x8c5109db), (int)(v17->f0c), (S_c8c03669c *)(v17->f20));
+        sprintf_8c12b048((void *)((void *)0x8c5109db), (int)(v17->f0c), (S_c8c03669c *)(v17->f20));
         v18 = (S_vv18 *)(*(S_g8c467180 **)0x8c467180)->f70;
-        call_8c12b048((void *)((void *)0x8c510ad8), (int)(v18->f10), (S_c8c03669c *)(v18->f20));
+        sprintf_8c12b048((void *)((void *)0x8c510ad8), (int)(v18->f10), (S_c8c03669c *)(v18->f20));
     }
     t11 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x40);
     if (t11 != 0) {

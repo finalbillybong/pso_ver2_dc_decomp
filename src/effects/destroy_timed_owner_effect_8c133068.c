@@ -6,7 +6,7 @@ extern char effect_vtable[];
 extern void *heap;
 extern unsigned int effect_ids[];
 extern void TObject_ctor_8c0330e4(Effect *,void *),TObject_dtor_8c03311c(Effect *,int),release_at(void *,void *),stop_at(int),emit_at(Vector *,unsigned int);
-extern int start_at(unsigned int,Vector *,int,int);
+extern int play_se_8c05fbf8(unsigned int,Vector *,int,int);
 Effect *destroy_timed_owner_effect_8c133068(Effect *o,short mode) {
     if(o) {
         o->vtable=effect_vtable;

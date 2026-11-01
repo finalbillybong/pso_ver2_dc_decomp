@@ -32,9 +32,9 @@ struct S_vv9 {
 extern char g_8c41cba0[];
 extern S_c8c051d18 *operation_8c051d18(void *);
 extern int operation_8c01d8a8(void *, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void request_resource_release(void *);
-extern void call_8c18de08(S_c8c051d18 *);
+extern void operator_delete_8c18de08(S_c8c051d18 *);
 void operation_8c260710(Object *o)
 {
     char v1;
@@ -50,7 +50,7 @@ void operation_8c260710(Object *o)
         t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
         if (t1 != 0) {
 L_8c260748:;
-            call_8c05fbf8(0x50016, 0, 0, 0);
+            play_se_8c05fbf8(0x50016, 0, 0, 0);
             if (o->f28 != 0) {
                 request_resource_release((void *)(o->f28));
                 o->f28 = (Arg0_28 *)0;
@@ -67,5 +67,5 @@ L_8c260748:;
             o->f20 = 3;
         }
     }
-    call_8c18de08(t2);
+    operator_delete_8c18de08(t2);
 }

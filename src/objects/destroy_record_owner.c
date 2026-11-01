@@ -4,5 +4,5 @@ typedef char check_base_resource[(unsigned long)&((View *)0)->base_resource==48?
 typedef char check_records24[(unsigned long)&((View *)0)->records24==64?1:-1];
 typedef char check_records16[(unsigned long)&((View *)0)->records16==68?1:-1];
 typedef char check_optional16[(unsigned long)&((View *)0)->optional16==72?1:-1];
-extern void release_at(void *),TObject_dtor_8c03311c(View *,int),free_at(void *,void *);extern void *heap;
-View *destroy_record_owner(View *o,short release) {if(o) {o->dispatch=(void *)0x8c2662f8;if(o->records24) {release_at(o->records24);o->records24=0;}if(o->records16) {release_at(o->records16);o->records16=0;}if(o->optional16) {release_at(o->optional16);o->optional16=0;}if(o) {o->dispatch=(void *)0x8c266314;if(o->base_resource) {release_at(o->base_resource);o->base_resource=0;}TObject_dtor_8c03311c(o,0);}if(release>0) free_at(heap,o);}return o;}
+extern void game_free_8c011ec0(void *),TObject_dtor_8c03311c(View *,int),free_at(void *,void *);extern void *heap;
+View *destroy_record_owner(View *o,short release) {if(o) {o->dispatch=(void *)0x8c2662f8;if(o->records24) {game_free_8c011ec0(o->records24);o->records24=0;}if(o->records16) {game_free_8c011ec0(o->records16);o->records16=0;}if(o->optional16) {game_free_8c011ec0(o->optional16);o->optional16=0;}if(o) {o->dispatch=(void *)0x8c266314;if(o->base_resource) {game_free_8c011ec0(o->base_resource);o->base_resource=0;}TObject_dtor_8c03311c(o,0);}if(release>0) free_at(heap,o);}return o;}

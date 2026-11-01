@@ -16,7 +16,7 @@ struct Object {
     short f2a;
 };
 extern int call_8c0f7928(Object *);
-extern int call_8c05fbf8(int, int, int, int);
+extern int play_se_8c05fbf8(int, int, int, int);
 extern void emit_control_60320(int, int, int);
 extern void call_8c0e15a8(Object *);
 void operation_8c0f72e4(Object *o)
@@ -51,7 +51,7 @@ L_8c0f7330:;
         if (((o->tag & 0x20)) == 0) {
             return;
         }
-        t2 = call_8c05fbf8(0x20025, 0, 0, 0);
+        t2 = play_se_8c05fbf8(0x20025, 0, 0, 0);
         emit_control_60320(t2, -0x100, 0);
         return;
     }

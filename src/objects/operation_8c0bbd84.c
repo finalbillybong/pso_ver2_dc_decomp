@@ -12,9 +12,9 @@ typedef struct Object {
     Sphere *f2c;
 } Object;
 extern float call_8c38d7d8(Vector3 *, Vector3 *);
-extern void call_8c37f6f0(Vector3 *, Vector3 *);
-extern float call_8c37e480(Vector3 *);
-extern void call_8c37b630(Vector3 *);
+extern void vector_sub_in_place_8c37f6f0(Vector3 *, Vector3 *);
+extern float njScalor_8c37e480(Vector3 *);
+extern void njUnitVector_8c37b630(Vector3 *);
 extern void call_8c3bdf60(Vector3 *, Vector3 *);
 void operation_8c0bbd84(Object *o, Vector3 *a1, float f0)
 {
@@ -53,26 +53,26 @@ void operation_8c0bbd84(Object *o, Vector3 *a1, float f0)
             *a1 = p;
             return;
         }
-        call_8c37f6f0(&p, &nv);
-        if (call_8c37e480(&p) == 0.0f) {
+        vector_sub_in_place_8c37f6f0(&p, &nv);
+        if (njScalor_8c37e480(&p) == 0.0f) {
             p.x = 0.0f;
             p.y = -1.0f;
             p.z = 0.0f;
         } else {
-            call_8c37b630(&p);
+            njUnitVector_8c37b630(&p);
         }
         p.x *= best;
         p.y *= best;
         p.z *= best;
         call_8c3bdf60(&p, &nv);
         q = (Vector3 *)((char *)a1 + m);
-        call_8c37f6f0(&p, q);
-        if (call_8c37e480(&p) == 0.0f) {
+        vector_sub_in_place_8c37f6f0(&p, q);
+        if (njScalor_8c37e480(&p) == 0.0f) {
             p.x = 0.0f;
             p.y = -1.0f;
             p.z = 0.0f;
         } else {
-            call_8c37b630(&p);
+            njUnitVector_8c37b630(&p);
         }
         p.x *= f0;
         p.y *= f0;

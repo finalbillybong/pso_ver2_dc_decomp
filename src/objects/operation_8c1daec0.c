@@ -23,7 +23,7 @@ struct Object {
     Arg0_b8 *fb8;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void destroy_shared_object(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1daec0(Object *o, int a1)
@@ -31,22 +31,22 @@ Object *operation_8c1daec0(Object *o, int a1)
     if (o != 0) {
         o->dispatch = (void *)0x8c2771c4;
         if (o->fa4 != 0) {
-            call_8c18de08((void *)(o->fa4));
+            operator_delete_8c18de08((void *)(o->fa4));
         }
         if (o->fa8 != 0) {
-            call_8c18de08((void *)(o->fa8));
+            operator_delete_8c18de08((void *)(o->fa8));
         }
         if (o->fac != 0) {
-            call_8c18de08((void *)(o->fac));
+            operator_delete_8c18de08((void *)(o->fac));
         }
         if (o->fb0 != 0) {
-            call_8c18de08((void *)(o->fb0));
+            operator_delete_8c18de08((void *)(o->fb0));
         }
         if (o->fb4 != 0) {
-            call_8c18de08((void *)(o->fb4));
+            operator_delete_8c18de08((void *)(o->fb4));
         }
         if (o->fb8 != 0) {
-            call_8c18de08((void *)(o->fb8));
+            operator_delete_8c18de08((void *)(o->fb8));
         }
         if (o != 0) {
             o->dispatch = (void *)0x8c277284;

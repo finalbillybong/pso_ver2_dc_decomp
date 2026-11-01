@@ -44,30 +44,30 @@ typedef struct ObjectData {
     char unknown13a[0x2];
     int f13c;
 } ObjectData;
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c3829bc(int, float, float, float);
-extern "C" void call_8c382a40(void *);
-extern "C" void call_8c37df90(int, int);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void njTranslate_8c3829bc(int, float, float, float);
+extern "C" void translate_current_matrix_v_8c382a40(void *);
+extern "C" void njRotateY_8c37df90(int, int);
 extern "C" void call_8c3827d8(void *);
 extern "C" void call_8c3af5ee(void *);
 extern "C" void call_8c3addea(void *, void *, float);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c1c3fd8();
 extern "C" void operation_8c1c3edc(Object *o)
 {
     int t1;
     t1 = o->v11(((ObjectData *)o)->ff8, ((ObjectData *)o)->ffc);
     if (t1 != 0) {
-        call_8c38ae68();
-        call_8c3829bc(0, 0.0f, ((ObjectData *)o)->f128, 0.0f);
-        call_8c382a40((void *)(((char *)o + 0x3c)));
+        njPushMatrixEx_8c38ae68();
+        njTranslate_8c3829bc(0, 0.0f, ((ObjectData *)o)->f128, 0.0f);
+        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
         switch (((ObjectData *)o)->f138) {
         case 3:
         case 4:
-            call_8c37df90(0, (int)((int)((ObjectData *)o)->f64 - (int)((ObjectData *)o)->f13c));
+            njRotateY_8c37df90(0, (int)((int)((ObjectData *)o)->f64 - (int)((ObjectData *)o)->f13c));
             break;
         default:
-            call_8c37df90(0, (int)(((ObjectData *)o)->f64));
+            njRotateY_8c37df90(0, (int)(((ObjectData *)o)->f64));
             break;
         }
         call_8c3827d8((void *)(((ObjectData *)o)->f28));
@@ -76,6 +76,6 @@ extern "C" void operation_8c1c3edc(Object *o)
         call_8c3af5ee(operation_8c1c3fd8);
         call_8c3addea((void *)(((ObjectData *)o)->f38), (void *)(((ObjectData *)o)->ff4), ((ObjectData *)o)->fe8);
         call_8c3af5ee((void *)0);
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
     }
 }

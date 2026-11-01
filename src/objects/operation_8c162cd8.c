@@ -12,11 +12,11 @@ extern int g_8c4db24c;
 extern int g_8c4db250;
 extern int g_8c4db25c;
 extern void call_8c257f4c(void);
-extern void call_8c192f00(void);
-extern int call_8c011ecc(int);
+extern void load_item_bml_8c192f00(void);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c193658(int, void *, int);
 extern int call_8c21871c(void *);
-void operation_8c162cd8(void)
+void load_item_dll_8c162cd8(void)
 {
     int t1;
     int t2;
@@ -30,8 +30,8 @@ void operation_8c162cd8(void)
         }
     }
     call_8c257f4c();
-    call_8c192f00();
-    t1 = call_8c011ecc(8);
+    load_item_bml_8c192f00();
+    t1 = game_malloc_8c011ecc(8);
     if (t1 != 0) {
         call_8c193658(t1, (void *)((void *)0x8c317344), 0x800);
     }

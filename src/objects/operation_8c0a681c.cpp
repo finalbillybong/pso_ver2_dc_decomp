@@ -76,7 +76,7 @@ struct S_vv13 {
     char unknown45e[0x2];
     float f460;
 };
-extern "C" float call_8c37e480(Frame *);
+extern "C" float njScalor_8c37e480(Frame *);
 extern "C" int step_angle_scaled(int, int, int);
 extern "C" void operation_8c0a681c(Object *o)
 {
@@ -109,7 +109,7 @@ extern "C" void operation_8c0a681c(Object *o)
     (&frame)->f00 = v2->f00 - v1->f00;
     (&frame)->f04 = v2->f04 - v1->f04;
     (&frame)->f08 = v2->f08 - v1->f08;
-    t4 = call_8c37e480((Frame *)((&frame)));
+    t4 = njScalor_8c37e480((Frame *)((&frame)));
     v3 = (int)(0.5f <= t4);
     switch (((ObjectData *)o)->f8c) {
         case 0:

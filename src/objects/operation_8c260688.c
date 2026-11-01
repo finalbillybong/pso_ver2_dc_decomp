@@ -24,16 +24,16 @@ struct Arg0_30 {
     short f04;
 };
 extern S_c8c051d18 *operation_8c051d18(void *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void call_8c051ce4(Arg0_30 *);
 extern void request_resource_release(void *);
-extern void call_8c18de08(S_c8c051d18 *);
+extern void operator_delete_8c18de08(S_c8c051d18 *);
 void operation_8c260688(Object *o)
 {
     S_c8c051d18 *t1;
     t1 = operation_8c051d18((void *)(o->f30));
     if (t1->f00 == 0) {
-        call_8c05fbf8(0x50006, 0, 0, 0);
+        play_se_8c05fbf8(0x50006, 0, 0, 0);
         call_8c051ce4((Arg0_30 *)(o->f30));
     } else {
         if (o->f28 != 0) {
@@ -50,5 +50,5 @@ void operation_8c260688(Object *o)
         }
         o->f20 = 2;
     }
-    call_8c18de08(t1);
+    operator_delete_8c18de08(t1);
 }

@@ -15,7 +15,7 @@ struct Object {
     Arg0_c4 *fc4;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void destroy_shared_object(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1da574(Object *o, int a1)
@@ -23,10 +23,10 @@ Object *operation_8c1da574(Object *o, int a1)
     if (o != 0) {
         o->dispatch = (void *)0x8c277244;
         if (o->fc0 != 0) {
-            call_8c18de08((void *)(o->fc0));
+            operator_delete_8c18de08((void *)(o->fc0));
         }
         if (o->fc4 != 0) {
-            call_8c18de08((void *)(o->fc4));
+            operator_delete_8c18de08((void *)(o->fc4));
         }
         if (o != 0) {
             o->dispatch = (void *)0x8c277284;

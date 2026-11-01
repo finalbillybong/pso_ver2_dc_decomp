@@ -5,11 +5,11 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4d9e20 S_g8c4d9e20;
 extern S_g8c4d9e20 *g_8c4d9e20;
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 void operation_8c13f3cc(void)
 {
     if (g_8c4d9e20 != 0) {
-        call_8c011ec0(g_8c4d9e20);
+        game_free_8c011ec0(g_8c4d9e20);
         g_8c4d9e20 = (S_g8c4d9e20 *)0;
     }
 }

@@ -23,10 +23,10 @@ extern int g_8c4e2e44;
 extern void call_8c37e4a8(float, float);
 extern void call_8c3806f6(int, int, int);
 extern void call_8c37e7d4(void *);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 extern void forward_reviewed_8c104e8c(void);
 extern void call_8c013620(void *, int);
-extern void call_8c014498(void *, int);
+extern void create_standard_task_tree_8c014498(void *, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TCameraCtrl_ctor_8c0a1448(int, void *);
 extern void call_8c0a1a78(int);
@@ -47,10 +47,10 @@ void operation_8c1cbdd4(void)
         v1 = (unsigned int)(v1 + 1);
     }
     call_8c37e7d4((void *)frame.f18);
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
     forward_reviewed_8c104e8c();
     call_8c013620((void *)((void *)0x8c32915c), 0x118);
-    call_8c014498((void *)((void *)0x8c2e2e84), 4);
+    create_standard_task_tree_8c014498((void *)((void *)0x8c2e2e84), 4);
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xf8);
     if (t1 != 0) {
         TCameraCtrl_ctor_8c0a1448(t1, g_8c44be88);

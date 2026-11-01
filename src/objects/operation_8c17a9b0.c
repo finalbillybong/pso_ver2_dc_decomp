@@ -11,20 +11,20 @@ struct Object {
     Arg0_2b4 *f2b4;
 };
 extern int g_8c4689f0;
-extern void call_8c37e02c(int, void *);
-extern void call_8c3829bc(int, float, float, float);
+extern void njRotateZ_8c37e02c(int, void *);
+extern void njTranslate_8c3829bc(int, float, float, float);
 extern void operation_8c074ce4(void);
 void operation_8c17a9b0(Object *o)
 {
     switch (g_8c4689f0) {
     case 2:
-        call_8c37e02c(0, (void *)(o->f2b4));
+        njRotateZ_8c37e02c(0, (void *)(o->f2b4));
         return;
     case 5:
-        call_8c37e02c(0, (void *)(-(int)(o->f2b4)));
+        njRotateZ_8c37e02c(0, (void *)(-(int)(o->f2b4)));
         return;
     case 1:
-        call_8c3829bc(0, 0.0f, o->f2b0 * -1.0f, 0.0f);
+        njTranslate_8c3829bc(0, 0.0f, o->f2b0 * -1.0f, 0.0f);
         return;
     case 3:
     case 4:

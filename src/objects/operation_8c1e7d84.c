@@ -12,9 +12,9 @@ struct Object {
     Arg0_19c *f19c;
 };
 extern char g_8c32c1b0[];
-extern void call_8c38c5b6(int);
+extern void njPrintColor_8c38c5b6(int);
 extern int get_current_area_8c032b10(void);
-extern void call_8c38cf80(int, void *, ...);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c1e7d84(Object *o)
 {
     int t1;
@@ -24,10 +24,10 @@ void operation_8c1e7d84(Object *o)
     }
     o->f19c = (Arg0_19c *)o->f8c;
 L_8c1e7da4:;
-    call_8c38c5b6(-0xff0100);
+    njPrintColor_8c38c5b6(-0xff0100);
     t1 = get_current_area_8c032b10();
     if (t1 == 0) {
-        call_8c38cf80(0x13001e, (void *)((g_8c32c1b0 + 0xe9)));
+        debug_print_at_8c38cf80(0x13001e, (void *)((g_8c32c1b0 + 0xe9)));
     }
-    call_8c38cf80(0x13001f, (void *)((g_8c32c1b0 + 0xfb)), o->f19c);
+    debug_print_at_8c38cf80(0x13001f, (void *)((g_8c32c1b0 + 0xfb)), o->f19c);
 }

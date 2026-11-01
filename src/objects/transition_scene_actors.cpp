@@ -7,8 +7,8 @@ extern void call_8c017ba8(void);
 extern void call_8c02a798(void);
 extern void call_8c1004cc(void);
 extern void call_8c041690(void);
-extern void call_8c01d9dc(void);
-extern void call_8c380516(void);
+extern void reset_controller_state_8c01d9dc(void);
+extern void wait_vsync_and_flip_8c380516(void);
 extern void call_8c01c2b0(void);
 extern void call_8c1a18b8(void);
 extern void call_8c0405b4(void);
@@ -46,7 +46,7 @@ extern char copy_data[];
 extern char extra_data[];
 extern void *actor_parent;
 void transition_scene_actors(void) {
- Temporary temporary;TObject_ctor_8c0330e4(&temporary,0);call_8c017ba8();call_8c02a798();call_8c1004cc();call_8c041690();call_8c01d9dc();call_8c380516();call_8c380516();load_at(resource_data,resource_id);
+ Temporary temporary;TObject_ctor_8c0330e4(&temporary,0);call_8c017ba8();call_8c02a798();call_8c1004cc();call_8c041690();reset_controller_state_8c01d9dc();wait_vsync_and_flip_8c380516();wait_vsync_and_flip_8c380516();load_at(resource_data,resource_id);
  {int i;for(i=0;i<12;++i) {Actor *actor=lookup_at(i);if(actor) move_at(actor,&temporary);}}
  prepare_at(global_storage);clear_settings_at(settings);call_8c01c2b0();call_8c1a18b8();call_8c0405b4();mode_at(2);
  if(settings_mode_at(settings)==2) {first_mask=0x1000;second_mask=0x4000;call_8c13f428();copy_at(copy_data,128);load_extra_at(extra_data,64);call_8c194d14();call_8c1922a0();}

@@ -11,8 +11,8 @@ struct Object {
     Arg0_234 *f234;
     Arg0_238 *f238;
 };
-extern void call_8c37e02c(int, int);
-extern void call_8c37dd28(int, void *);
+extern void njRotateZ_8c37e02c(int, int);
+extern void njRotateX_8c37dd28(int, void *);
 void operation_8c17adb4(Object *o)
 {
     if (*(int *)0x8c4689f0 != 1) {
@@ -24,11 +24,11 @@ void operation_8c17adb4(Object *o)
         }
         return;
     }
-    call_8c37e02c(0, (int)(-(int)(o->f238)));
+    njRotateZ_8c37e02c(0, (int)(-(int)(o->f238)));
     return;
 L_8c17adda:;
-    call_8c37e02c(0, (int)(o->f238));
+    njRotateZ_8c37e02c(0, (int)(o->f238));
     return;
 L_8c17ade8:;
-    call_8c37dd28(0, (void *)(o->f234));
+    njRotateX_8c37dd28(0, (void *)(o->f234));
 }

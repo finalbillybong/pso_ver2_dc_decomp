@@ -6,7 +6,7 @@ extern void fn_8c0a1bf8(void);
 extern void clear_render_flags(void);
 extern void operation_8c0a2a4c(void);
 extern void fn_8c0a2b20(void);
-extern void check_and_load_8c199628(void);
+extern void anti_tamper_check_then_load_difficulty_8c199628(void);
 extern void query_global_entries_8c199674(void);
 extern void operation_8c0e8ddc(void);
 extern void query_global_entries_8c0e8e28(void);
@@ -22,7 +22,7 @@ extern void operation_8c08710c(void);
 extern void operation_8c08711c(void);
 extern void operation_8c051a90(void);
 extern void operation_8c051a94(void);
-extern void operation_8c03f14c(void);
+extern void load_title_logo_texture_8c03f14c(void);
 extern void forward_reviewed_8c03f1bc(void);
 extern void operation_8c13f3a0(void);
 extern void operation_8c13f3cc(void);
@@ -66,9 +66,9 @@ extern void operation_8c1afd1c(void);
 extern void query_global_entries_8c1afd44(void);
 extern void operation_8c15b200(void);
 extern void operation_8c15b258(void);
-extern void operation_8c227ac4(void);
+extern void load_ad_draw_line_texture_8c227ac4(void);
 extern void operation_8c227b0c(void);
-extern void load_global_resource_8c2327cc(void);
+extern void load_prime_prs_8c2327cc(void);
 extern void operation_193764_8c2327ec(void);
 extern void load_item_pmt_8c157ff0(void);
 extern void operation_8c158088(void);
@@ -90,7 +90,7 @@ Function const d_8c32915c[70] = {
     clear_render_flags,
     operation_8c0a2a4c,
     fn_8c0a2b20,
-    check_and_load_8c199628,
+    anti_tamper_check_then_load_difficulty_8c199628,
     query_global_entries_8c199674,
     operation_8c0e8ddc,
     query_global_entries_8c0e8e28,
@@ -106,7 +106,7 @@ Function const d_8c32915c[70] = {
     operation_8c08711c,
     operation_8c051a90,
     operation_8c051a94,
-    operation_8c03f14c,
+    load_title_logo_texture_8c03f14c,
     forward_reviewed_8c03f1bc,
     operation_8c13f3a0,
     operation_8c13f3cc,
@@ -150,9 +150,9 @@ Function const d_8c32915c[70] = {
     query_global_entries_8c1afd44,
     operation_8c15b200,
     operation_8c15b258,
-    operation_8c227ac4,
+    load_ad_draw_line_texture_8c227ac4,
     operation_8c227b0c,
-    load_global_resource_8c2327cc,
+    load_prime_prs_8c2327cc,
     operation_193764_8c2327ec,
     load_item_pmt_8c157ff0,
     operation_8c158088

@@ -8,18 +8,18 @@ extern char g_8c470340;
 extern char g_8c470341;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void call_8c3806f6(int, int, int);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 extern void call_8c01c250(int);
 extern void call_8c01c244(int);
 extern void operation_8c180aac(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c0e97b4(int);
-extern void call_8c380516(void);
-void operation_8c0e9930(void)
+extern void create_opening_movie_task_8c0e97b4(int);
+extern void wait_vsync_and_flip_8c380516(void);
+void mode_opening_movie_init_8c0e9930(void)
 {
     int t1;
     call_8c3806f6(0, 0, 0);
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
     call_8c01c250(2);
     if (g_8c470341 != 0) {
         if (g_8c470341 == 1) {
@@ -36,7 +36,7 @@ L_8c0e9970:;
     g_8c470340 = 0;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x28);
     if (t1 != 0) {
-        call_8c0e97b4(t1);
+        create_opening_movie_task_8c0e97b4(t1);
     }
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

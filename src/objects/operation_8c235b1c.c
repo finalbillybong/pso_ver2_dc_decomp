@@ -44,7 +44,7 @@ extern char g_8c339668[];
 extern char g_8c510b2c[];
 extern S_c8c021ef8 *lookup_low_id(int);
 extern float call_8c38d7d8(void *, void *);
-extern float call_8c37e480(void *);
+extern float njScalor_8c37e480(void *);
 extern void operation_8c0ddbd0(short, int, int);
 extern float call_8c130334(float, float);
 extern void call_8c236e64(void *, int, void *);
@@ -70,7 +70,7 @@ void operation_8c235b1c(Object *o, int a1)
     }
     t2 = call_8c38d7d8((void *)((g_8c510b2c + 0x2c)), (void *)(&o->f3c));
     if (!(t2 > *(float *)(g_8c510b2c + 0x44))) {
-        t3 = call_8c37e480((void *)(((char *)o + 0x360)));
+        t3 = njScalor_8c37e480((void *)(((char *)o + 0x360)));
         if (t3 == 0.0f) {
             (&g_8c510b80)->f10 |= 2;
             if (o->f37c == 0) {
@@ -81,7 +81,7 @@ void operation_8c235b1c(Object *o, int a1)
     }
     t4 = call_8c38d7d8((void *)((g_8c510b2c + 0x38)), (void *)(&o->f3c));
     if (!(t4 > *(float *)(g_8c510b2c + 0x44))) {
-        t5 = call_8c37e480((void *)(((char *)o + 0x360)));
+        t5 = njScalor_8c37e480((void *)(((char *)o + 0x360)));
         if (t5 == 0.0f) {
             (&g_8c510b80)->f10 |= 1;
             if (o->f37c == 0) {
@@ -92,7 +92,7 @@ void operation_8c235b1c(Object *o, int a1)
     }
     t6 = call_8c38d7d8((void *)((void *)0x8c339610), (void *)(&o->f3c));
     if (!(t6 > *(float *)(g_8c510b2c + 0x44))) {
-        t7 = call_8c37e480((void *)(((char *)o + 0x360)));
+        t7 = njScalor_8c37e480((void *)(((char *)o + 0x360)));
         if (t7 == 0.0f) {
             (&g_8c510b80)->f10 |= 0x10;
             if (o->f37c == 0) {
@@ -103,7 +103,7 @@ void operation_8c235b1c(Object *o, int a1)
     }
     t8 = call_8c38d7d8((void *)((void *)0x8c33961c), (void *)(&o->f3c));
     if (!(t8 > *(float *)(g_8c510b2c + 0x44))) {
-        t9 = call_8c37e480((void *)(((char *)o + 0x360)));
+        t9 = njScalor_8c37e480((void *)(((char *)o + 0x360)));
         if (t9 == 0.0f) {
             (&g_8c510b80)->f10 |= 0x20;
             if (o->f37c == 0) {
@@ -122,7 +122,7 @@ void operation_8c235b1c(Object *o, int a1)
     if ((((&g_8c510b80)->f10 & 0x33)) == 0 && o->f37c != 0) {
         o->f37c = 0;
     }
-    t10 = call_8c37e480((void *)(((char *)o + 0x360)));
+    t10 = njScalor_8c37e480((void *)(((char *)o + 0x360)));
     if (t10 == 0.0f) {
         if (o->f374 == 0) {
             o->f378 += 1;

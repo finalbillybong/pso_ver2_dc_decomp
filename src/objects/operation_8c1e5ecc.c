@@ -9,7 +9,7 @@ struct Object {
     char unknown0[0x18];
     Arg0_18 *dispatch;
 };
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern int call_8c257e2c(int);
 extern int operator_new_8c18de4c(int);
 extern void strncpy_8c12b154(void *, int, int);
@@ -17,7 +17,7 @@ void operation_8c1e5ecc(Object *o, int a1)
 {
     int t1;
     int t2;
-    call_8c18de08(o->dispatch);
+    operator_delete_8c18de08(o->dispatch);
     o->dispatch = (Arg0_18 *)0;
     if (a1 != 0) {
         t1 = call_8c257e2c(a1);

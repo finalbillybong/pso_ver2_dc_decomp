@@ -10,7 +10,7 @@ struct S_vv2 {
 };
 extern char g_8c340468[];
 extern void clear_hierarchy_groups(void *);
-extern void call_8c380516(void);
+extern void wait_vsync_and_flip_8c380516(void);
 void operation_8c25ca3c(void)
 {
     int v1;
@@ -27,5 +27,5 @@ void operation_8c25ca3c(void)
         }
         v1 = (int)(v1 + -1);
     }
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

@@ -1,7 +1,7 @@
 /* Provisional names; preserve signed fields, callback order and exact ranges. */
 #include "src/include/widget_child.h"
 #define decay_at ((void (*)(WidgetChild *))0x8c192c08)
-extern int emit_at(unsigned int,void *,int,unsigned int);
+extern int play_se_8c05fbf8(unsigned int,void *,int,unsigned int);
 extern WidgetInput input;
 #define input_flags input.flags
 int operation_192b4c(WidgetChild *o){
@@ -9,7 +9,7 @@ int operation_192b4c(WidgetChild *o){
     decay_at(o);
     selected=o->selected;
     if(!(input_flags&0x30000))return 0;
-    emit_at(0x50000,0,0,0);
+    play_se_8c05fbf8(0x50000,0,0,0);
     {
         unsigned int buttons=input_flags;
         if(buttons&0x10000)selected++;

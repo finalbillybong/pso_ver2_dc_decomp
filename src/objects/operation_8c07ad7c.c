@@ -29,7 +29,7 @@ struct S_g8c469a8c {
 extern void call_8c01c5f0(Object *);
 extern void operation_8c04a43c(void *, float, void *);
 extern void refresh_follow_effect_8c052180(void *);
-extern void call_8c102cd0(void *, int, int, int);
+extern void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern void call_8c027090(Object *);
 void operation_8c07ad7c(Object *o)
 {
@@ -67,6 +67,6 @@ L_8c07adcc:;
         o->f3a4 &= -0x800001;
     }
 L_8c07ae3a:;
-    call_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+    minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
     call_8c027090(o);
 }

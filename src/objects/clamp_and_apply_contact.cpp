@@ -28,7 +28,7 @@ typedef char check_view[sizeof(Base)==28 && sizeof(View)==932 && (unsigned long)
 typedef char check_geometry[sizeof(Geometry)==24 && (unsigned long)&((Geometry *)0)->normal==12 && sizeof(Contact)==8 && (unsigned long)&((Contact *)0)->geometry==4 ? 1:-1];
 typedef char check_radius[(unsigned long)&((View *)0)->radius==920 && (unsigned long)&((View *)0)->blocked==924 ? 1:-1];
 extern "C" Contact *query_scaled(View *,float,float,float);
-extern "C" float square_root(float);
+extern "C" float signed_sqrt_8c37f6c0(float);
 extern "C" Contact *clamp_and_apply_contact(View *o,float dx,float dz,float scale) {
  Vector3 destination;
  float travel=scale;
@@ -40,7 +40,7 @@ extern "C" Contact *clamp_and_apply_contact(View *o,float dx,float dz,float scal
   o->blocked++;
   x=contact->geometry->position.x-o->position.x;
   z=contact->geometry->position.z-o->position.z;
-  travel=square_root(x*x+z*z)-o->radius;
+  travel=signed_sqrt_8c37f6c0(x*x+z*z)-o->radius;
  }
  destination.x=dx*travel+o->position.x;
  destination.y=o->position.y;

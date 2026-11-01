@@ -11,7 +11,7 @@ extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
 extern void reset_shared_object(void);
 extern void operation_8c010500(void);
-extern void operation_8c1a9de4(void);
+extern void shop_play_bgm_8c1a9de4(void);
 extern void operation_8c010508(void);
 extern void operation_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
@@ -30,7 +30,7 @@ VirtualFunction const vt_8c274690[16] = {
     fn_8c01d694,
     reset_shared_object,
     operation_8c010500,
-    operation_8c1a9de4,
+    shop_play_bgm_8c1a9de4,
     operation_8c010508,
     operation_8c01d3b0,
     fn_8c01d4c4,

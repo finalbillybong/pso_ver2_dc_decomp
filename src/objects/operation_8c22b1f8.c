@@ -10,8 +10,8 @@ struct Object {
     float f28;
 };
 extern float call_8c130334(float, float);
-extern float call_8c38c154(int);
-extern float call_8c37eb0c(int);
+extern float njCos_8c38c154(int);
+extern float njSin_8c37eb0c(int);
 int operation_8c22b1f8(Object *o, float f0, float f1)
 {
     float v1;
@@ -29,9 +29,9 @@ int operation_8c22b1f8(Object *o, float f0, float f1)
     }
     t3 = call_8c130334(v3, v1);
     v2 = (int)(int)(t3 * 65536.0f / 6.28318405f);
-    t1 = call_8c38c154(v2);
+    t1 = njCos_8c38c154(v2);
     o->f24 += t1 * 5.0f;
-    t2 = call_8c37eb0c(v2);
+    t2 = njSin_8c37eb0c(v2);
     o->f28 += t2 * 5.0f;
     return 0;
 }

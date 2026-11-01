@@ -30,9 +30,9 @@ extern Vector3 g_8c32c0d8;
 extern S_g8c44be88 *g_8c44be88;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void call_8c3806f6(int, int, int);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 extern void call_8c37e7d4(void *);
-extern void call_8c014498(void *, int);
+extern void create_standard_task_tree_8c014498(void *, int);
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void TCameraCtrl_ctor_8c0a1448(S_c8c122700 *, void *);
 extern void call_8c0a1a78(int);
@@ -50,14 +50,14 @@ void mode_sega_logo_init_8c1e653c(void)
     S_c8c122700 *t2;
     S_c8c122700 *t3;
     call_8c3806f6(0, 0, 0);
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
     v1 = (unsigned int)0;
     while ((unsigned int)0x80 > v1) {
         *(float *)((char *)&(&frame)->f1c + (v1 << 2)) = 0.0f;
         v1 = (unsigned int)(v1 + 1);
     }
     call_8c37e7d4((void *)(&(&frame)->f1c));
-    call_8c014498((void *)((void *)0x8c2e2e84), 4);
+    create_standard_task_tree_8c014498((void *)((void *)0x8c2e2e84), 4);
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xf8);
     if (t1 != 0) {
         TCameraCtrl_ctor_8c0a1448(t1, g_8c44be88);

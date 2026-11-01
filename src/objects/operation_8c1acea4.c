@@ -51,7 +51,7 @@ extern void call_8c3c1554(float, float, float);
 extern void call_8c3827d8(void *);
 extern void set_effect_blend_state(float);
 extern int call_8c3c1460(S_vv3 *);
-extern int call_8c011e9c(int);
+extern int game_malloc_buffer_8c011e9c(int);
 extern void call_8c3c10f6(S_vv3 *, void *);
 extern void restore_effect_blend_state(void);
 extern void clear_global_8c1acff8(void);
@@ -96,7 +96,7 @@ void operation_8c1acea4(void)
         v7 = (S_vv7 *)((int)v4 + 0x18);
         v6 = (int)0;
         while (4 > v6) {
-            pm7 = call_8c011e9c(t1);
+            pm7 = game_malloc_buffer_8c011e9c(t1);
             v36 = (v6 << 2);
             *(int *)((char *)0x8c4e1ae0 + (v36)) = (pm7);
             if (0 != *(int *)((char *)0x8c4e1ae0 + (v36))) {

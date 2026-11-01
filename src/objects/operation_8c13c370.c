@@ -26,7 +26,7 @@ struct S_g8c4d9c3c_4 {
 };
 extern int g_8c4d9c38;
 extern S_g8c4d9c30 *g_8c4d9c30;
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void initialize_vector_array(void *, void *);
 extern int call_8c03ef88(int, int);
 extern int record24_8c17948c(int);
@@ -43,7 +43,7 @@ void operation_8c13c370(void)
     int t5;
     int t6;
     g_8c4d9c30 = (S_g8c4d9c30 *)(*(int *)0x8c4d9b60);
-    t1 = call_8c011ecc(0xc);
+    t1 = game_malloc_8c011ecc(0xc);
     if (t1 != 0) {
         initialize_vector_array((void *)t1, (void *)(g_8c4d9c30->f42c->f118));
     }

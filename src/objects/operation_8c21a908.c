@@ -23,8 +23,8 @@ struct S_g8c46ee80 {
     char unknown0[0x90];
     Vector3 f90;
 };
-extern void call_8c37f6f0(Frame *, void *);
-extern float call_8c37e480(Frame *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
+extern float njScalor_8c37e480(Frame *);
 void operation_8c21a908(Object *o)
 {
     Frame frame;
@@ -33,9 +33,9 @@ void operation_8c21a908(Object *o)
     switch (o->f94) {
     case 0:
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&(*(S_g8c46ee80 **)0x8c46ee80)->f90;
-        call_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
+        vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
         (&frame)->f00.f04 = 0.0f;
-        t1 = call_8c37e480((Frame *)((&frame)));
+        t1 = njScalor_8c37e480((Frame *)((&frame)));
         if (!(t1 > 150.0f)) {
             v2 = (float)0.0f;
         } else {

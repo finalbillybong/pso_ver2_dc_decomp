@@ -11,7 +11,7 @@ struct S_vv2 {
 extern char g_8c301fdc[];
 extern int call_8c0329d8(int);
 extern void call_8c09dc30(void *, void *, int);
-extern void operation_8c03ef80(void *, ...);
+extern void debug_error_stub_8c03ef80(void *, ...);
 void operation_8c09dad4(int a0, int a1)
 {
     int v12;
@@ -31,7 +31,7 @@ void operation_8c09dad4(int a0, int a1)
         if (v12 != 0) {
             call_8c09dc30((void *)((int)v2 + 0x10), (void *)((int)v2 + 0x1c), v12);
         } else {
-            operation_8c03ef80((void *)((g_8c301fdc + 0x19)), v2->f0c);
+            debug_error_stub_8c03ef80((void *)((g_8c301fdc + 0x19)), v2->f0c);
         }
         v3 = (int)(v3 + 1);
         v2 = (S_vv2 *)((char *)v2 + 68);

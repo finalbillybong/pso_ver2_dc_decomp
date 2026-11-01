@@ -84,8 +84,8 @@ struct Arg0_3b8_s468 {
     int f04;
 };
 extern int g_8c418248;
-extern float call_8c37eb0c(void *);
-extern float call_8c38c154(void *);
+extern float njSin_8c37eb0c(void *);
+extern float njCos_8c38c154(void *);
 extern int operation_8c2097a8(int);
 extern int operation_8c027070(void *);
 extern int mask_any(void *, unsigned int);
@@ -115,10 +115,10 @@ void operation_8c026e7c(Object *o)
     int t3;
     int t4;
     int t5;
-    t1 = call_8c37eb0c((void *)(o->f64));
+    t1 = njSin_8c37eb0c((void *)(o->f64));
     o->f3a4 = t1;
     o->f3a8 = 0.0f;
-    t2 = call_8c38c154((void *)(o->f64));
+    t2 = njCos_8c38c154((void *)(o->f64));
     o->f3ac = t2;
     v1 = (int)(o->f20 == g_8c418248);
     if (v1 != 0) {

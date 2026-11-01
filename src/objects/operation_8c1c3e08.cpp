@@ -35,7 +35,7 @@ typedef struct ObjectData {
     int f130;
     Arg0_134 *f134;
 } ObjectData;
-extern "C" float call_8c37eb0c(void *);
+extern "C" float njSin_8c37eb0c(void *);
 extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c0eeb58(void *);
 extern "C" void call_8c1c4008(Object *);
@@ -48,7 +48,7 @@ extern "C" void operation_8c1c3e08(Object *o)
     float t1;
     int t2;
     *(int *)((char *)o + 0x134) += ((ObjectData *)o)->f130;
-    t1 = call_8c37eb0c((void *)(((ObjectData *)o)->f134));
+    t1 = njSin_8c37eb0c((void *)(((ObjectData *)o)->f134));
     ((ObjectData *)o)->f128 = ((ObjectData *)o)->f124 * t1;
     t2 = operation_8c03d338();
     if (t2 == 1) {

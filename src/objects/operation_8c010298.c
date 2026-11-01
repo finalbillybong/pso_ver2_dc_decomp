@@ -9,7 +9,7 @@ struct Frame {
 };
 extern void read_time_fields(void *);
 extern void call_8c372f14(int, int, int, int, Frame *, int);
-void operation_8c010298(int a0, int a1, int a2, int a3)
+void vmu_save_file_timestamped_overwrite_8c010298(int a0, int a1, int a2, int a3)
 {
     Frame frame;
     read_time_fields((void *)(&frame));

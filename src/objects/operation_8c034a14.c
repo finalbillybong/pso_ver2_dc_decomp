@@ -14,19 +14,19 @@ struct Object {
 };
 extern S_L8c418280 g_8c418280;
 extern char gc_8c418280[];
-extern float call_8c37eb0c(void *);
-extern float call_8c38c154(void *);
+extern float njSin_8c37eb0c(void *);
+extern float njCos_8c38c154(void *);
 void operation_8c034a14(Object *o)
 {
     float t1;
     float t2;
     float t3;
     float t4;
-    t1 = call_8c37eb0c((void *)(o->f20));
+    t1 = njSin_8c37eb0c((void *)(o->f20));
     *(float *)(gc_8c418280 + 0x4) = t1 * -1.0f;
-    t2 = call_8c38c154((void *)(o->f20));
-    t3 = call_8c37eb0c((void *)(o->f24));
+    t2 = njCos_8c38c154((void *)(o->f20));
+    t3 = njSin_8c37eb0c((void *)(o->f24));
     *(float *)(gc_8c418280 + 0x0) = t2 * t3;
-    t4 = call_8c38c154((void *)(o->f24));
+    t4 = njCos_8c38c154((void *)(o->f24));
     *(float *)(gc_8c418280 + 0x8) = t2 * t4;
 }

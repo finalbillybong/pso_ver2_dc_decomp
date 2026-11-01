@@ -26,7 +26,7 @@ extern void log_error_8c35570c(char *, ...);
 extern char s_failed_a_8c3f55bc[];
 extern char s_failed_b_8c3f55e4[];
 
-void chan_write_8c356f68(Context *c, int ch, volatile int address)
+void mwRnv2LoadTexYuv420_8c356f68(Context *c, int ch, volatile int address)
 {
     Channel *p = &c->channels[ch];
     Word saved_a, saved_b;
@@ -56,7 +56,7 @@ void mwRnv2LoadTexYuv422_8c356fcc(Context *c, int ch, volatile int address)
     p->window_b = saved_b;
 }
 
-void chan_start_8c357026(Context *c, int ch, volatile int address)
+void mwRnv2LoadTexYuv420_sub2_8c357026(Context *c, int ch, volatile int address)
 {
     Channel *p = &c->channels[ch];
     int error;

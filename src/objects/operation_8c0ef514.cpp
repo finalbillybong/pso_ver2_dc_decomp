@@ -75,12 +75,12 @@ struct S_vv5 {
 };
 extern S_g8c4704a4 *g_8c4704a4;
 extern "C" int operation_8c0eeb00(void *, float);
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c382a40(void *);
-extern "C" void call_8c37df90(int, void *);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void translate_current_matrix_v_8c382a40(void *);
+extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3827d8(void *);
 extern "C" void call_8c3aa702(void *);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void call_8c391c94(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void call_8c3addea(void *, void *, float);
@@ -97,36 +97,36 @@ extern "C" void operation_8c0ef514(Object *o)
     if (t1 != 0) {
         t2 = operation_8c0eeb00((void *)o, 30.0f);
         if (t2 != 0) {
-            call_8c38ae68();
-            call_8c382a40((void *)(((char *)o + 0x3c)));
-            call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+            njPushMatrixEx_8c38ae68();
+            translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
+            njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
             v1 = (int)(((((ObjectData *)o)->f108 & 1)) != 0);
             call_8c3827d8((void *)(*(S_g8c4704a4_0 **)((char *)((char *)g_8c4704a4 + 0x0) + (v1 << 2))));
             if (((ObjectData *)o)->fe4 == 0) {
                 v2 = (S_vv2 *)((ObjectData *)o)->f38;
-                call_8c382a40((void *)((int)v2 + 8));
+                translate_current_matrix_v_8c382a40((void *)((int)v2 + 8));
                 call_8c3aa702((void *)(v2->f04));
                 v3 = (S_vv3 *)v2->f2c;
-                call_8c38ae68();
-                call_8c382a40((void *)((int)v3 + 8));
+                njPushMatrixEx_8c38ae68();
+                translate_current_matrix_v_8c382a40((void *)((int)v3 + 8));
                 call_8c3aa702((void *)(v3->f04));
-                call_8c38ad10();
+                njPopMatrixEx_8c38ad10();
                 call_8c391c94();
                 v4 = (S_vv4 *)v3->f30;
-                call_8c38ae68();
-                call_8c382a40((void *)((int)v4 + 8));
+                njPushMatrixEx_8c38ae68();
+                translate_current_matrix_v_8c382a40((void *)((int)v4 + 8));
                 call_8c3aa702((void *)(v4->f04));
-                call_8c38ad10();
+                njPopMatrixEx_8c38ad10();
                 v5 = (S_vv5 *)v4->f30;
-                call_8c38ae68();
-                call_8c382a40((void *)((int)v5 + 8));
+                njPushMatrixEx_8c38ae68();
+                translate_current_matrix_v_8c382a40((void *)((int)v5 + 8));
                 call_8c3aa702((void *)(v5->f04));
-                call_8c38ad10();
+                njPopMatrixEx_8c38ad10();
                 call_8c391cc4();
             } else {
                 call_8c3addea((void *)(((ObjectData *)o)->f38), (void *)(((ObjectData *)o)->ff4), ((ObjectData *)o)->fe8);
             }
-            call_8c38ad10();
+            njPopMatrixEx_8c38ad10();
         }
     }
 }

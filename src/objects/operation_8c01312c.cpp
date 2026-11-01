@@ -107,7 +107,7 @@ struct S_vv1_338 {
 };
 extern "C" int operation_8c03d338(void);
 extern "C" void call_8c027090(S_vv1 *);
-extern "C" void call_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void TObjControl_update_8c01312c(Object *o)
 {
     S_vv1 *v1;
@@ -153,7 +153,7 @@ extern "C" void TObjControl_update_8c01312c(Object *o)
             }
         }
         call_8c027090(v1);
-        call_8c102cd0((void *)((int)v1 + 0x3c), -0x5db4, 1, 0);
+        minimap_add_marker_8c102cd0((void *)((int)v1 + 0x3c), -0x5db4, 1, 0);
         v1->v37();
         ((S_vv1Data *)v1)->f04 |= 8;
         return;

@@ -13,7 +13,7 @@ struct Object {
     int f64;
 };
 extern float call_8c2097e4(void);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c0dc710(Object *o)
 {
     float t1;
@@ -31,7 +31,7 @@ void operation_8c0dc710(Object *o)
     }
     o->f34 |= 3;
     if (((o->f34 & 0x20)) == 0) {
-        call_8c05fbf8(0x50003, 0, 0, 0);
+        play_se_8c05fbf8(0x50003, 0, 0, 0);
     }
     o->f04 &= -0x11;
 }

@@ -7,8 +7,8 @@ extern void call_8c017ba8(void);
 extern void call_8c02a798(void);
 extern void call_8c1004cc(void);
 extern void call_8c041690(void);
-extern void call_8c01d9dc(void);
-extern void call_8c380516(void);
+extern void reset_controller_state_8c01d9dc(void);
+extern void wait_vsync_and_flip_8c380516(void);
 extern void call_8c01c2b0(void);
 extern void call_8c1a18b8(void);
 extern void call_8c0405b4(void);
@@ -56,7 +56,7 @@ extern void configure_at(int,void *);
 extern int notify_ready_at(void);
 extern void notify_at(void *);
 extern char configuration[];
-void transition_scene_screen(void) {Temporary temporary;call_8c017ba8();call_8c02a798();call_8c1004cc();call_8c05fbdc();TObject_ctor_8c0330e4(&temporary,0);call_8c041690();call_8c01d9dc();call_8c380516();call_8c380516();
+void transition_scene_screen(void) {Temporary temporary;call_8c017ba8();call_8c02a798();call_8c1004cc();call_8c05fbdc();TObject_ctor_8c0330e4(&temporary,0);call_8c041690();reset_controller_state_8c01d9dc();wait_vsync_and_flip_8c380516();wait_vsync_and_flip_8c380516();
  {int i;for(i=0;i<12;++i) {Actor *actor=lookup_at(i);if(actor) move_at(actor,&temporary);}}
  prepare_at(global_storage);call_8c01c2b0();call_8c1a18b8();call_8c0405b4();call_8c189c94();call_8c0310a4();call_8c013fc8();
  if(selection_at()) {call_8c09d2bc();configure_at(15,configuration+16);}else {call_8c09d2bc();configure_at(15,configuration);}

@@ -53,7 +53,7 @@ extern "C" int call_8c18e6fc(Frame *);
 extern "C" void update_context_blend(void *);
 extern "C" void call_8c027090(Object *);
 extern "C" void call_8c01c5f0(Object *);
-extern "C" void call_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void operation_8c11aff0(Object *o)
 {
     Frame frame;
@@ -90,7 +90,7 @@ extern "C" void operation_8c11aff0(Object *o)
             }
             if (o->f390 == 1) {
 L_8c11b0d4:;
-                call_8c102cd0((void *)(&o->f324), -0x5db4, 1, 0);
+                minimap_add_marker_8c102cd0((void *)(&o->f324), -0x5db4, 1, 0);
             }
         }
     }

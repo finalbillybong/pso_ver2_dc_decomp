@@ -82,14 +82,14 @@ struct S_c8c011214_4 {
 extern Vector3 g_8c3032a8;
 extern Vector3 g_8c3032b4;
 extern S_g8c46ee80 *g_8c46ee80;
-extern float call_8c37e480(void *);
-extern void call_8c38ade4(void *);
-extern void call_8c37df90(int, void *);
+extern float njScalor_8c37e480(void *);
+extern void njPushMatrix_8c38ade4(void *);
+extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3be280(int, void *, void *);
-extern void call_8c38accc(int);
+extern void njPopMatrix_8c38accc(int);
 extern float call_8c3845f0(void *, Vector3 *);
 extern float call_8c12c714(float);
-extern void call_8c37b630(void *);
+extern void njUnitVector_8c37b630(void *);
 extern S_c8c011214 *operation_8c011214(int, int, int);
 int operation_8c0a0f08(Object *o)
 {
@@ -119,19 +119,19 @@ int operation_8c0a0f08(Object *o)
     d.x = pv->x - pb->x;
     d.y = pv->y - pb->y;
     d.z = pv->z - pb->z;
-    t1 = call_8c37e480((void *)&d);
+    t1 = njScalor_8c37e480((void *)&d);
     if (1.0f > t1) {
         b = *(Vector3 *)&g_8c3032a8;
         a = *(Vector3 *)&g_8c3032b4;
-        call_8c38ade4((void *)((void *)0x8c400500));
-        call_8c37df90(0, (void *)(g_8c46ee80->fac));
+        njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
+        njRotateY_8c37df90(0, (void *)(g_8c46ee80->fac));
         call_8c3be280(0, (void *)&b, (void *)&b);
-        call_8c38accc(1);
+        njPopMatrix_8c38accc(1);
         b.y = 0.0f;
-        call_8c38ade4((void *)((void *)0x8c400500));
-        call_8c37df90(0, (void *)(o->f20->f64));
+        njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
+        njRotateY_8c37df90(0, (void *)(o->f20->f64));
         call_8c3be280(0, (void *)&a, (void *)&a);
-        call_8c38accc(1);
+        njPopMatrix_8c38accc(1);
         t2 = call_8c3845f0((void *)&b, &a);
         if (call_8c12c714(t2) > 0.25f) {
             v9 = (float)0.0f;
@@ -148,9 +148,9 @@ L_8c0a0ffe:;
     dir.x = v10->f90 - v10->f9c;
     dir.y = v10->f94 - v10->fa0;
     dir.z = v10->f98 - v10->fa4;
-    t4 = call_8c37e480((void *)&dir);
+    t4 = njScalor_8c37e480((void *)&dir);
     if (t4 != 0.0f) {
-        call_8c37b630((void *)&dir);
+        njUnitVector_8c37b630((void *)&dir);
     }
     q.x = v9 * dir.x + o->f20->f3c;
     v14 = (S_vv14 *)g_8c46ee80;

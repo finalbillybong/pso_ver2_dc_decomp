@@ -58,17 +58,17 @@ extern "C" void update_context_blend(void *);
 extern "C" int update_depth_mode(void *, void *);
 extern "C" void call_8c013c58(Object *);
 extern "C" void call_8c3827d8(void *);
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c3829bc(int, float, float, float);
-extern "C" void call_8c382a40(void *);
-extern "C" void call_8c37df90(int, void *);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void njTranslate_8c3829bc(int, float, float, float);
+extern "C" void translate_current_matrix_v_8c382a40(void *);
+extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" int operation_8c03d338(void);
 extern "C" void call_8c3aa716(void *);
 extern "C" void call_8c1086fc(void);
 extern "C" void operation_8c01cc90(void *);
 extern "C" void operation_8c01cd20(void *);
 extern "C" void call_8c391cc4(void);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c013e74(void);
 extern "C" void call_8c04a9e0(Object *, Frame *);
 extern "C" void operation_8c0e58d0(Object *o)
@@ -90,10 +90,10 @@ extern "C" void operation_8c0e58d0(Object *o)
     if (t2 != 0) {
         call_8c013c58(o);
         call_8c3827d8((void *)(((ObjectData *)o)->f28));
-        call_8c38ae68();
-        call_8c3829bc(0, 0.0f, ((ObjectData *)o)->f39c, 0.0f);
-        call_8c382a40((void *)(((char *)o + 0x3c)));
-        call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+        njPushMatrixEx_8c38ae68();
+        njTranslate_8c3829bc(0, 0.0f, ((ObjectData *)o)->f39c, 0.0f);
+        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
+        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
         t3 = operation_8c03d338();
         if (t3 == 1) {
             call_8c3aa716((void *)(((ObjectData *)o)->f38));
@@ -112,7 +112,7 @@ extern "C" void operation_8c0e58d0(Object *o)
                 ((void (*)(void *))(((Arg0_s3cc *)((char *)o + 0x3cc))->f14->f24))((void *)(((char *)o + 0x3cc)));
             }
         }
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         operation_8c013e74();
         if (((ObjectData *)o)->f30a != 8 && ((ObjectData *)o)->f30a != 9) {
             (&frame)->f00 = 1.5f;

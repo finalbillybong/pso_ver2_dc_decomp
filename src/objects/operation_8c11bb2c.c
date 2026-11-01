@@ -5,7 +5,7 @@ struct Object {
     char unknown38[0x358];
     int f390;
 };
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c11bb2c(Object *o)
 {
     switch (o->f390) {
@@ -14,8 +14,8 @@ void operation_8c11bb2c(Object *o)
         return;
     default:
         o->f34 &= -0x201;
-        call_8c05fbf8(0x30034, (void *)(((char *)o + 0x3c8)), 0, 0);
-        call_8c05fbf8(0x30033, (void *)(((char *)o + 0x3e0)), 0, 0);
+        play_se_8c05fbf8(0x30034, (void *)(((char *)o + 0x3c8)), 0, 0);
+        play_se_8c05fbf8(0x30033, (void *)(((char *)o + 0x3e0)), 0, 0);
         break;
     }
 }

@@ -19,9 +19,9 @@ extern S_g8c46ed0c *g_8c46ed0c;
 extern int g_8c46ed14;
 extern int g_8c4d8288;
 extern char g_8c2e3014[];
-extern void call_8c12b048(Frame *, void *, ...);
+extern void sprintf_8c12b048(Frame *, void *, ...);
 extern void operation_8c011efc(Frame *);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern int call_8c20684c(int, void *, int, void *);
 extern void call_8c011ed8(int);
 void handle_6x6C_sync_object_state_8c01af00(Object *o)
@@ -33,9 +33,9 @@ void handle_6x6C_sync_object_state_8c01af00(Object *o)
     if (g_8c4d8288 == 0 && (unsigned int)1 >= (unsigned int)(g_8c41bce4 + -0xe)) {
         Object *self = o;
         v1 = (int)((int)self->f04 + -8);
-        call_8c12b048((Frame *)((&frame)), (void *)((g_8c2e3014 + 0x1d7)), (void *)(self->f04));
+        sprintf_8c12b048((Frame *)((&frame)), (void *)((g_8c2e3014 + 0x1d7)), (void *)(self->f04));
         operation_8c011efc((Frame *)((&frame)));
-        t1 = call_8c011ecc(0x7230);
+        t1 = game_malloc_8c011ecc(0x7230);
         if (t1 != 0) {
             t2 = call_8c20684c(t1, (void *)(((char *)self + 0x8)), v1, g_8c46ed0c);
             call_8c011ed8(t1);

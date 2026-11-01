@@ -40,10 +40,10 @@ struct Object {
     char unknown3bc[0x4];
     int f3c0;
 };
-extern void call_8c37f6f0(Frame *, void *);
-extern float call_8c37e480(Frame *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
+extern float njScalor_8c37e480(Frame *);
 extern int call_8c04a52c(Object *, int, float);
-extern void call_8c37b630(void *);
+extern void njUnitVector_8c37b630(void *);
 extern void call_8c3bdf60(void *, void *);
 void operation_8c1bb9c8(Object *o)
 {
@@ -52,9 +52,9 @@ void operation_8c1bb9c8(Object *o)
     float t1;
     int t2;
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f54;
-    call_8c37f6f0((Frame *)((&frame)), (void *)(&o->f3c));
+    vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(&o->f3c));
     (&frame)->f00.f04 = 0.0f;
-    t1 = call_8c37e480((Frame *)((&frame)));
+    t1 = njScalor_8c37e480((Frame *)((&frame)));
     if (1.0f > t1 && 1.0f > o->f3b4) {
         o->f3c = o->f54.f00;
         o->f44 = o->f54.f08;
@@ -87,7 +87,7 @@ void operation_8c1bb9c8(Object *o)
 L_8c1bbab6:;
     *(Vector3 *)&o->f3a8 = *(Vector3 *)&(&frame)->f00;
     if (t1 != 0.0f) {
-        call_8c37b630((void *)(&o->f3a8));
+        njUnitVector_8c37b630((void *)(&o->f3a8));
     }
     o->f3a8.f00 = o->f3b4 * o->f3a8.f00;
     o->f3a8.f08 *= o->f3b4;

@@ -14,11 +14,11 @@ struct Object {
     int fdc;
     int fe0;
 };
-extern void call_8c01d1ec(void);
+extern void TObjectShared_ctor_8c01d1ec(void);
 Object *operation_8c051eb8(Object *o)
 {
     int v1;
-    call_8c01d1ec();
+    TObjectShared_ctor_8c01d1ec();
     o->dispatch = (void *)0x8c2621c8;
     v1 = (int)0;
     while (0x10 > v1) {

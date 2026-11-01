@@ -53,7 +53,7 @@ struct Arg0_36c {
     Arg0_36c_8 *f08;
 };
 extern int operation_8c05bbf8(void);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c01c5f0(Object *);
 extern void call_8c05fd7c(int, Object *, void *, int, int);
 extern void call_8c0444f8(Object *, float, Vector3);
@@ -100,7 +100,7 @@ void operation_8c0ce82c(Object *o)
         }
         o->f398 = 2;
     } else {
-        call_8c05fbf8(0x30005, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30005, (void *)(((char *)o + 0x3c)), 0, 0);
         o->f398 = 1;
     }
     if (o->f334 == 0) {

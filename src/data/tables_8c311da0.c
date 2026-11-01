@@ -18,7 +18,7 @@ extern void operation_8c01217c(void);
 extern void operation_8c01219c(void);
 extern void operation_0c64c4(void);
 extern void operation_8c0c64e8(void);
-extern void operation_8c12161c(void);
+extern void select_fog_entry_file_8c12161c(void);
 extern void operation_8c1216bc(void);
 extern void operation_8c10baa4(void);
 extern void clear_global_8c10be4c(void);
@@ -53,7 +53,7 @@ Function const d_8c311da0[24] = {
     operation_8c01219c,
     operation_0c64c4,
     operation_8c0c64e8,
-    operation_8c12161c,
+    select_fog_entry_file_8c12161c,
     operation_8c1216bc,
     operation_8c10baa4,
     clear_global_8c10be4c,

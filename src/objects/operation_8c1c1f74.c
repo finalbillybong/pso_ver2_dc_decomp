@@ -8,7 +8,7 @@ struct S_g8c510ba0 {
     char unknown0[0x20];
     int f20;
 };
-extern int call_8c05fbf8(int, int, int, int);
+extern int play_se_8c05fbf8(int, int, int, int);
 extern void emit_control_60320(int, int, int);
 void operation_8c1c1f74(int a0)
 {
@@ -22,6 +22,6 @@ void operation_8c1c1f74(int a0)
     if (v1 != -1 && v1 == 1) {
         return;
     }
-    t1 = call_8c05fbf8(0x40004, (int)(a0 + 0x3c), 0, 0);
+    t1 = play_se_8c05fbf8(0x40004, (int)(a0 + 0x3c), 0, 0);
     emit_control_60320(t1, -0x800, 0);
 }

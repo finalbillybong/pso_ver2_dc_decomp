@@ -142,7 +142,7 @@ struct S_vv4 {
 };
 extern S_g8c469e1c *g_8c469e1c;
 extern "C" void operation_8c108644(int, int, int, int, int);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void refresh_follow_effect_8c0129f4(void *);
 extern "C" void operation_8c09e6d0(void *);
 extern "C" void operation_8c09638c(Object *o, int a1)
@@ -166,7 +166,7 @@ extern "C" void operation_8c09638c(Object *o, int a1)
             v3 = (int)(v3 + 1);
         }
         ((ObjectData *)o)->f3e4 |= 0x400000;
-        call_8c05fbf8(0x3001d, (void *)(((char *)o + 0x324)), 0, 0);
+        play_se_8c05fbf8(0x3001d, (void *)(((char *)o + 0x324)), 0, 0);
         refresh_follow_effect_8c0129f4((void *)o);
         return;
     case 0:

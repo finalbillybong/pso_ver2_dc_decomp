@@ -26,7 +26,7 @@ struct Frame {
 };
 extern void step_vector_toward(void *, void *, void *, float);
 extern void call_8c0a7608(void *, void *);
-extern float call_8c37e480(Frame *);
+extern float njScalor_8c37e480(Frame *);
 void operation_8c0d1190(Object *o)
 {
     Frame frame;
@@ -39,7 +39,7 @@ void operation_8c0d1190(Object *o)
     (&frame)->f04 = o->f24 - o->f30;
     (&frame)->f08 = o->f28 - o->f34;
     o->f3c += 1;
-    t1 = call_8c37e480((Frame *)((&frame)));
+    t1 = njScalor_8c37e480((Frame *)((&frame)));
     if (t1 > 10.0f && !(o->f3c >= 0x46)) {
         return;
     }

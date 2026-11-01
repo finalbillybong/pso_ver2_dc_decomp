@@ -15,13 +15,13 @@ struct Object {
     char unknown3b8[0x170];
     int f528;
 };
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c1ba1e8(Object *o)
 {
     o->f3a8 = 0x11;
     o->f3ac = 0x11;
     o->f3b4 = (int)(o->f3b0);
-    call_8c05fbf8(0x30038, 0, 0, 0);
+    play_se_8c05fbf8(0x30038, 0, 0, 0);
     o->f528 = 1;
     o->f3a0 = 0x62;
 }

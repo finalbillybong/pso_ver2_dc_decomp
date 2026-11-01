@@ -21,7 +21,7 @@ struct Arg0_10 {
     unsigned short f1c;
     unsigned short f1e;
 };
-extern int call_8c011e9c(int);
+extern int game_malloc_buffer_8c011e9c(int);
 void operation_8c03059c(Object *o, int a1, int a2)
 {
     int t1;
@@ -30,6 +30,6 @@ void operation_8c03059c(Object *o, int a1, int a2)
     o->f04 = o->f10->f1c;
     o->tag = o->f10->f1e;
     o->f08 = o->f10->f08;
-    t1 = call_8c011e9c(o->tag * (o->f04 << 1) + 0x20);
+    t1 = game_malloc_buffer_8c011e9c(o->tag * (o->f04 << 1) + 0x20);
     o->f14 = t1;
 }

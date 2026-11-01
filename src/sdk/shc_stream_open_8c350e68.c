@@ -54,7 +54,7 @@ void ADXT_StartAfs_8c350e68(Obj *obj, int a, int b)
     unlock_8c34bc24();
 }
 
-void stream_open2_8c350ef8(Obj *obj, int a)
+void ADXT_StartFname_8c350ef8(Obj *obj, int a)
 {
     call_8c35049c(obj);
     lock_8c34bbfc();

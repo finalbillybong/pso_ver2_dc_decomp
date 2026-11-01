@@ -82,7 +82,7 @@ public:
     virtual void v66();
     virtual void begin();
 };
-extern "C" void emit_5fbf8(unsigned int, void *, int, int);
+extern "C" void play_se_8c05fbf8(unsigned int, void *, int, int);
 extern "C" void update_rise_8c159ef8(Object *o)
 {
     Data *data = (Data *)o;
@@ -90,7 +90,7 @@ extern "C" void update_rise_8c159ef8(Object *o)
     case 0:
         data->flags |= 0x40000;
         data->phase = 1;
-        emit_5fbf8(0x3000a, (char *)o + 0x3c, 10, 0);
+        play_se_8c05fbf8(0x3000a, (char *)o + 0x3c, 10, 0);
         break;
     case 1:
         data->height += 5.0f;

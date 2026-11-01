@@ -25,8 +25,8 @@ typedef struct ObjectData {
     Arg0_98 *f98;
 } ObjectData;
 extern "C" char g_8c30b000[];
-extern "C" void call_8c38c5b6(int);
-extern "C" void call_8c38cf80(int, void *, ...);
+extern "C" void njPrintColor_8c38c5b6(int);
+extern "C" void debug_print_at_8c38cf80(int, void *, ...);
 extern "C" void operation_8c100cf4(Object *o)
 {
     ((ObjectData *)o)->f98 = (Arg0_98 *)((ObjectData *)o)->f8c;
@@ -40,10 +40,10 @@ extern "C" void operation_8c100cf4(Object *o)
     if (!(((ObjectData *)o)->f94 > 0.0f)) {
         ((ObjectData *)o)->f94 = 200.0f;
     }
-    call_8c38c5b6(-0xff0100);
-    call_8c38cf80(0x13001c, (void *)((g_8c30b000 + 0xd)), 200.0f);
-    call_8c38cf80(0x13001e, (void *)((g_8c30b000 + 0x28)), (int)(((ObjectData *)o)->f88));
-    call_8c38cf80(0x13001f, (void *)((g_8c30b000 + 0x33)), (int)(((ObjectData *)o)->f98));
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xff0100);
+    debug_print_at_8c38cf80(0x13001c, (void *)((g_8c30b000 + 0xd)), 200.0f);
+    debug_print_at_8c38cf80(0x13001e, (void *)((g_8c30b000 + 0x28)), (int)(((ObjectData *)o)->f88));
+    debug_print_at_8c38cf80(0x13001f, (void *)((g_8c30b000 + 0x33)), (int)(((ObjectData *)o)->f98));
+    njPrintColor_8c38c5b6(-0xf0f10);
     o->v3();
 }

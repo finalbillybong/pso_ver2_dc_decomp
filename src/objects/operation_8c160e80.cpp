@@ -64,8 +64,8 @@ struct PmfObj {
 typedef void (PmfObj::*PMF_0)();
 extern "C" char g_8c316c90[];
 extern "C" int call_8c18e6fc(void *);
-extern "C" float call_8c37e480(void *);
-extern "C" void call_8c37b630(void *);
+extern "C" float njScalor_8c37e480(void *);
+extern "C" void njUnitVector_8c37b630(void *);
 extern "C" float call_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void call_8c15eb34(Object *, void *);
@@ -151,12 +151,12 @@ extern "C" void operation_8c160e80(Object *o)
     return;
 L_8c160f90:;
     *(Vector3 *)&(&frame)->f30 = *(Vector3 *)&o->f3e4;
-    t3 = call_8c37e480((void *)(&(&frame)->f30));
+    t3 = njScalor_8c37e480((void *)(&(&frame)->f30));
     if (!(t3 > 0.01f)) {
         (&frame)->f30.f00 = 1.0f;
         (&frame)->f30.f08 = 0.0f;
     } else {
-        call_8c37b630((void *)(&(&frame)->f30));
+        njUnitVector_8c37b630((void *)(&(&frame)->f30));
     }
     t4 = call_8c130334((&frame)->f30.f00, (&frame)->f30.f08);
     t5 = angle_step((int)(o->f64), (int)((int)(t4 * 65536.0f / 6.28318405f)), 0x888);

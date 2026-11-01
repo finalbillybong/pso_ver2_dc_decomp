@@ -18,7 +18,7 @@ struct Object {
 extern void initialize_grid_8c1566f0(void *, unsigned int);
 extern int operation_8c207130(Object *);
 extern float call_8c37e2c0(float);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void operation_192b14(void *, signed char, signed char);
 extern void operation_8c1571d4(void *, int);
 extern void call_8c207160(Object *);
@@ -41,7 +41,7 @@ Object *operation_8c206ee4(Object *o)
     if (!((int)t2 > 0)) {
         v1 = (int)1;
     }
-    t3 = call_8c011ecc(8);
+    t3 = game_malloc_8c011ecc(8);
     if (t3 != 0) {
         operation_192b14((void *)t3, (signed char)0, (signed char)v1);
     }

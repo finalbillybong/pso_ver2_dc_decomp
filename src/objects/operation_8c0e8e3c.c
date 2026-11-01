@@ -40,7 +40,7 @@ struct Frame {
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c0e92e0(Object *);
 extern void operation_8c01c250(int);
-extern int call_8c0101dc(void *);
+extern int vmu_find_drive_with_free_blocks_8c0101dc(void *);
 extern int operation_8c1f1850(void);
 extern void select_mode3_8c1cc4e0(void);
 extern int vmu_find_file_8c01018c(void *);
@@ -53,7 +53,7 @@ extern int call_8c37293e(int, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c198294(int, Object *);
 extern int create_fitted_pair_grid_view(void *, void *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 Object *operation_8c0e8e3c(Object *o)
 {
     Frame frame;
@@ -94,10 +94,10 @@ Object *operation_8c0e8e3c(Object *o)
             goto L_8c0e8f60;
         }
     } else {
-        t2 = call_8c0101dc((void *)(o->f58));
+        t2 = vmu_find_drive_with_free_blocks_8c0101dc((void *)(o->f58));
         v1 = (int)-1;
         if (t2 != v1) {
-            t3 = call_8c0101dc((void *)(o->f58));
+            t3 = vmu_find_drive_with_free_blocks_8c0101dc((void *)(o->f58));
             if (t3 != -2) {
                 t4 = operation_8c1f1850();
                 if ((unsigned int)(unsigned char)t4 > (unsigned int)1) {
@@ -136,6 +136,6 @@ L_8c0e8f60:;
     *(Block8 *)&(&frame)->f04 = *(Block8 *)&*(Block8 *)0x8c308344;
     t10 = create_fitted_pair_grid_view((void *)(&(&frame)->f0c), (void *)(&(&frame)->f04));
     o->f50 = (int)(t10);
-    call_8c05fbf8(0x50006, 0, 0, 0);
+    play_se_8c05fbf8(0x50006, 0, 0, 0);
     return o;
 }

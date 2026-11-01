@@ -19,12 +19,12 @@ typedef struct ObjectData {
     char unknown0[0x18];
     void *dispatch;
 } ObjectData;
-extern "C" void call_8c01d1ec(Object *, int);
+extern "C" void TObjectShared_ctor_8c01d1ec(Object *, int);
 extern "C" Object *operation_8c249f2c(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;
-    call_8c01d1ec(o, a2);
+    TObjectShared_ctor_8c01d1ec(o, a2);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c27d648;
     o->v6(a1);
     return o;

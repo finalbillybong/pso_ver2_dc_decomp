@@ -9,7 +9,7 @@ struct Arg1 {
     int f234;
 };
 extern void create_effect_777c(void *, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c251bd4(int a0, Arg1 *a1, int a2, int a3)
 {
     if (a1 != 0 && a3 != 0) {
@@ -17,6 +17,6 @@ void operation_8c251bd4(int a0, Arg1 *a1, int a2, int a3)
             a1->f234 &= -3;
         }
         create_effect_777c((void *)a3, 0x45);
-        call_8c05fbf8(0x10012, 0, 0, 0);
+        play_se_8c05fbf8(0x10012, 0, 0, 0);
     }
 }

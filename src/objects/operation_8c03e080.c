@@ -59,7 +59,7 @@ extern char g_8c2ef0e4[];
 extern int operation_8c03ec84(void *, int, int, int);
 extern void operation_8c03ee90(int, int, int);
 extern int create_file_buffer_task(void *, int, void *, void *, Frame *);
-extern void operation_8c03ef80(void *, ...);
+extern void debug_error_stub_8c03ef80(void *, ...);
 extern void operation_8c03e264(void *);
 extern void operation_8c03e23c();
 void operation_8c03e080(int a0, int a1)
@@ -118,7 +118,7 @@ void operation_8c03e080(int a0, int a1)
                 *(int *)(v36 + (v35 << 2)) = a1;
                 *(int *)((char *)v28->f0c + v23) += 1;
             } else if ((v28->f0c->f00 & 4) == 0) {
-                operation_8c03ef80((void *)(g_8c2ef0e4 + 0x219), &(&frame)->f14, v16);
+                debug_error_stub_8c03ef80((void *)(g_8c2ef0e4 + 0x219), &(&frame)->f14, v16);
             }
             break;
         case 0x4e4a434d:
@@ -126,7 +126,7 @@ void operation_8c03e080(int a0, int a1)
             ((S_vv39 *)v28->f0c)->f04 += 1;
             break;
         default:
-            operation_8c03ef80((void *)(g_8c2ef0e4 + 0x23e));
+            debug_error_stub_8c03ef80((void *)(g_8c2ef0e4 + 0x23e));
             break;
         }
     }

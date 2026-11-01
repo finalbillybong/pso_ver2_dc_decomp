@@ -10,7 +10,7 @@ extern S_g8c513300 *g_8c513300;
 extern int operator_new_8c18de4c(int);
 extern int call_8c104d70(void *);
 extern void call_8c0787cc(int, void *);
-extern void call_8c011ec0(int);
+extern void game_free_8c011ec0(int);
 void operation_8c25630c(void)
 {
     int v21;
@@ -22,7 +22,7 @@ void operation_8c25630c(void)
     if (t2 != 0) {
         call_8c0787cc(t2, g_8c513300);
     }
-    call_8c011ec0(t2);
+    game_free_8c011ec0(t2);
     v21 = (int)0;
     while (v21 != 3) {
         *(int *)((char *)0x8c513304 + (v21 << 2)) = 0;

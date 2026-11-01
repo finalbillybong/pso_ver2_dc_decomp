@@ -18,7 +18,7 @@ struct Object {
     char unknown3c[0x14];
     float f50;
 };
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c0da980(Object *o)
 {
     int v1;
@@ -41,10 +41,10 @@ void operation_8c0da980(Object *o)
         if (v1 == 0) {
             v2 = (int)(((o->f24 & 2)) != 0);
             if (v2 != 0) {
-                call_8c05fbf8(0x16, 0, 0, 0);
+                play_se_8c05fbf8(0x16, 0, 0, 0);
                 return;
             }
-            call_8c05fbf8(0x11, 0, 0, 0);
+            play_se_8c05fbf8(0x11, 0, 0, 0);
             return;
 L_8c0da9fc:;
             if ((o->f50 - 0.2f) > 0.0f) {

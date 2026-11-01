@@ -13,29 +13,29 @@ struct Object {
     float fd4;
 };
 extern char g_8c3002d8[];
-extern void call_8c38c5b6(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void njPrintColor_8c38c5b6(int);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 extern void call_8c03cbe8(Object *, void *, void *, int, int, int);
 void operation_8c08c4f0(Object *o)
 {
     if (o->fa0 == 0) {
-        call_8c38c5b6(-0x100);
+        njPrintColor_8c38c5b6(-0x100);
     } else {
-        call_8c38c5b6(-0xf0f10);
+        njPrintColor_8c38c5b6(-0xf0f10);
     }
-    call_8c38cf80(0x10012, (void *)((g_8c3002d8 + 0x194)), o->fcc);
+    debug_print_at_8c38cf80(0x10012, (void *)((g_8c3002d8 + 0x194)), o->fcc);
     if (o->fa0 == 1) {
-        call_8c38c5b6(-0x100);
+        njPrintColor_8c38c5b6(-0x100);
     } else {
-        call_8c38c5b6(-0xf0f10);
+        njPrintColor_8c38c5b6(-0xf0f10);
     }
-    call_8c38cf80(0x10013, (void *)((g_8c3002d8 + 0x69)), o->fd0);
+    debug_print_at_8c38cf80(0x10013, (void *)((g_8c3002d8 + 0x69)), o->fd0);
     if (o->fa0 == 2) {
-        call_8c38c5b6(-0x100);
+        njPrintColor_8c38c5b6(-0x100);
     } else {
-        call_8c38c5b6(-0xf0f10);
+        njPrintColor_8c38c5b6(-0xf0f10);
     }
-    call_8c38cf80(0x10014, (void *)((g_8c3002d8 + 0x79)), o->fd4);
+    debug_print_at_8c38cf80(0x10014, (void *)((g_8c3002d8 + 0x79)), o->fd4);
     if (o->fa0 == 0) {
         call_8c03cbe8(o, (void *)(&o->fcc), (void *)(((char *)o + 0xa4)), 0x11, 0x12, 6);
     }

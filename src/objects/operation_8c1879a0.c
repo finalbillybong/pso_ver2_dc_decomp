@@ -25,10 +25,10 @@ extern int g_8c4dc5a0;
 extern int g_8c510ba0;
 extern char g_8c319c2c[];
 extern void gsl_open_archive_8c1a80d4(void *);
-extern int call_8c104e9c(void *);
+extern int load_resource_8c104e9c(void *);
 extern void call_8c03ef04(void *, void *, void *);
-extern void operation_8c1a81a0(void);
-void operation_8c1879a0(void)
+extern void TGStream_close_8c1a81a0(void);
+void load_judgement_messages_8c1879a0(void)
 {
     Frame frame;
     int v5;
@@ -68,54 +68,54 @@ void operation_8c1879a0(void)
     gsl_open_archive_8c1a80d4((void *)((g_8c319c2c + 0x86)));
     switch (v4) {
     case 0:
-        t1 = call_8c104e9c((void *)((g_8c319c2c + 0x9a)));
+        t1 = load_resource_8c104e9c((void *)((g_8c319c2c + 0x9a)));
         g_8c4dbc20 = (int)(t1);
         call_8c03ef04((void *)(&(&frame)->f0c), (void *)(*(S_g8c319bf8 **)((char *)0x8c319bf8 + (g_8c4dc5a0 << 2))), (void *)((g_8c319c2c + 0xaf)));
-        t2 = call_8c104e9c((void *)(&(&frame)->f0c));
+        t2 = load_resource_8c104e9c((void *)(&(&frame)->f0c));
         g_8c4dbc24 = (int)(t2);
         call_8c03ef04((void *)(&(&frame)->f0c), (void *)((g_8c319c2c + 0xbc)), (void *)v6);
-        t3 = call_8c104e9c((void *)(&(&frame)->f0c));
+        t3 = load_resource_8c104e9c((void *)(&(&frame)->f0c));
         g_8c4dbc28 = (int)(t3);
         break;
     case 1:
-        t4 = call_8c104e9c((void *)((g_8c319c2c + 0xcd)));
+        t4 = load_resource_8c104e9c((void *)((g_8c319c2c + 0xcd)));
         g_8c4dbc20 = (int)(t4);
         call_8c03ef04((void *)(&(&frame)->f0c), (void *)(*(S_g8c319bf8 **)((char *)0x8c319bf8 + (g_8c4dc5a0 << 2))), (void *)((g_8c319c2c + 0xe1)));
-        t5 = call_8c104e9c((void *)(&(&frame)->f0c));
+        t5 = load_resource_8c104e9c((void *)(&(&frame)->f0c));
         g_8c4dbc24 = (int)(t5);
         call_8c03ef04((void *)(&(&frame)->f0c), (void *)((g_8c319c2c + 0xed)), (void *)v6);
-        t6 = call_8c104e9c((void *)(&(&frame)->f0c));
+        t6 = load_resource_8c104e9c((void *)(&(&frame)->f0c));
         g_8c4dbc28 = (int)(t6);
         break;
     case 2:
-        t7 = call_8c104e9c((void *)((g_8c319c2c + 0xfd)));
+        t7 = load_resource_8c104e9c((void *)((g_8c319c2c + 0xfd)));
         g_8c4dbc20 = (int)(t7);
         call_8c03ef04((void *)(&(&frame)->f0c), (void *)(*(S_g8c319bf8 **)((char *)0x8c319bf8 + (g_8c4dc5a0 << 2))), (void *)((g_8c319c2c + 0x110)));
-        t8 = call_8c104e9c((void *)(&(&frame)->f0c));
+        t8 = load_resource_8c104e9c((void *)(&(&frame)->f0c));
         g_8c4dbc24 = (int)(t8);
         call_8c03ef04((void *)(&(&frame)->f0c), (void *)((g_8c319c2c + 0x11b)), (void *)v6);
-        t9 = call_8c104e9c((void *)(&(&frame)->f0c));
+        t9 = load_resource_8c104e9c((void *)(&(&frame)->f0c));
         g_8c4dbc28 = (int)(t9);
         break;
     case 3:
-        t10 = call_8c104e9c((void *)((g_8c319c2c + 0x12a)));
+        t10 = load_resource_8c104e9c((void *)((g_8c319c2c + 0x12a)));
         g_8c4dbc20 = (int)(t10);
         call_8c03ef04((void *)(&(&frame)->f0c), (void *)(*(S_g8c319bf8 **)((char *)0x8c319bf8 + (g_8c4dc5a0 << 2))), (void *)((g_8c319c2c + 0x13d)));
-        t11 = call_8c104e9c((void *)(&(&frame)->f0c));
+        t11 = load_resource_8c104e9c((void *)(&(&frame)->f0c));
         g_8c4dbc24 = (int)(t11);
         call_8c03ef04((void *)(&(&frame)->f0c), (void *)((g_8c319c2c + 0x148)), (void *)v6);
-        t12 = call_8c104e9c((void *)(&(&frame)->f0c));
+        t12 = load_resource_8c104e9c((void *)(&(&frame)->f0c));
         g_8c4dbc28 = (int)(t12);
         break;
     case 4:
-        t13 = call_8c104e9c((void *)((g_8c319c2c + 0x157)));
+        t13 = load_resource_8c104e9c((void *)((g_8c319c2c + 0x157)));
         g_8c4dbc20 = (int)(t13);
         call_8c03ef04((void *)(&(&frame)->f0c), (void *)(*(S_g8c319bf8 **)((char *)0x8c319bf8 + (g_8c4dc5a0 << 2))), (void *)((g_8c319c2c + 0x16b)));
-        t14 = call_8c104e9c((void *)(&(&frame)->f0c));
+        t14 = load_resource_8c104e9c((void *)(&(&frame)->f0c));
         g_8c4dbc24 = (int)(t14);
         call_8c03ef04((void *)(&(&frame)->f0c), (void *)((g_8c319c2c + 0x177)), (void *)v6);
-        t15 = call_8c104e9c((void *)(&(&frame)->f0c));
+        t15 = load_resource_8c104e9c((void *)(&(&frame)->f0c));
         g_8c4dbc28 = (int)(t15);
     }
-    operation_8c1a81a0();
+    TGStream_close_8c1a81a0();
 }

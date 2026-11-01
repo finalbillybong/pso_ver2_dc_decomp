@@ -30,7 +30,7 @@ struct Arg0_30_3c {
 extern char g_8c41cba0[];
 extern int operation_8c2097a8(int);
 extern int operation_8c01d844(int, int, int, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c197640(Object *o)
 {
     S_vv1 *v1;
@@ -74,7 +74,7 @@ void operation_8c197640(Object *o)
             return;
         }
     }
-    call_8c05fbf8(0x50000, 0, 0, 0);
+    play_se_8c05fbf8(0x50000, 0, 0, 0);
     t4 = operation_8c2097a8(2);
     if (t4 != 0) {
         v9 = (int)0x20000;

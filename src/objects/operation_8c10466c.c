@@ -78,7 +78,7 @@ struct Arg0_dc {
 };
 extern int g_8c285d68;
 extern S_c8c011214 *operation_8c011214(int, int, int);
-extern void call_8c37f6f0(void *, void *);
+extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern float normalize_vector_checked(void *);
 extern void create_effect_7cc0(void *, int, int, int);
 extern void operation_8c05237c(void *);
@@ -103,7 +103,7 @@ void operation_8c10466c(Object *o)
     if (t1 != 0) {
         *(Vector3 *)&(&frame)->f20 = *(Vector3 *)&t1->f04->f00;
         *(Vector3 *)&(&frame)->f14 = *(Vector3 *)&o->f3c;
-        call_8c37f6f0((void *)(&(&frame)->f14), (void *)(&(&frame)->f20));
+        vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f14), (void *)(&(&frame)->f20));
         t2 = normalize_vector_checked((void *)(&(&frame)->f14));
         v2 = (int)1;
         v1 = (float)t2;

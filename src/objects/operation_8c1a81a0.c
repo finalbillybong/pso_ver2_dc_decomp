@@ -18,7 +18,7 @@ extern void call_8c34d4e8(void *);
 extern int strlen_8c12b0cc(void *);
 extern void call_8c03ee90(Frame *, void *, void *);
 extern void operation_8c105458(int, int, int);
-void operation_8c1a81a0(void)
+void TGStream_close_8c1a81a0(void)
 {
     Frame frame;
     int t1;

@@ -19,14 +19,14 @@ struct S_vv1 {
     int f00;
     int f04;
 };
-extern int call_8c36cd16(int);
+extern int syMalloc_dispatch_alloc_8c36cd16(int);
 extern void memset_8c12b880(Arg0_0 *, int, int);
 Object *operation_8c122688(Object *o, int a1, int a2)
 {
     S_vv1 *v1;
     int t1;
     o->f08 = a2;
-    t1 = call_8c36cd16(a1);
+    t1 = syMalloc_dispatch_alloc_8c36cd16(a1);
     o->tag = (Arg0_0 *)t1;
     if (o->tag != 0) {
         memset_8c12b880((Arg0_0 *)(o->tag), 0, a1);

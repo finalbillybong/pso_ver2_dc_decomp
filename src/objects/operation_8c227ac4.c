@@ -8,12 +8,12 @@ struct S_c8c011ecc {
     char unknown0[0x4];
     int f04;
 };
-extern S_c8c011ecc *call_8c011ecc(int);
+extern S_c8c011ecc *game_malloc_8c011ecc(int);
 extern void call_8c193658(int, void *, int);
-void operation_8c227ac4(void)
+void load_ad_draw_line_texture_8c227ac4(void)
 {
     S_c8c011ecc *t1;
-    t1 = call_8c011ecc(8);
+    t1 = game_malloc_8c011ecc(8);
     if (t1 != 0) {
         call_8c193658((int)t1, (void *)0x8c2e19f0, 0x3000);
     }

@@ -13,8 +13,8 @@ struct S_vv4 {
 struct S_vv14 {
     int f00;
 };
-extern float call_8c37eb0c(int);
-extern float call_8c38c154(int);
+extern float njSin_8c37eb0c(int);
+extern float njCos_8c38c154(int);
 extern int call_8c12b944(void);
 extern float call_8c12b570(float);
 void operation_8c103f48(void)
@@ -43,8 +43,8 @@ void operation_8c103f48(void)
     v5 = (int)0;
     v3 = (int)0x6666;
     while (6 > v5) {
-        t1 = call_8c37eb0c(v1);
-        t2 = call_8c38c154(v1);
+        t1 = njSin_8c37eb0c(v1);
+        t2 = njCos_8c38c154(v1);
         v4->f00 = t1;
         v4->f04 = 0.0f;
         v4->f08 = t2;

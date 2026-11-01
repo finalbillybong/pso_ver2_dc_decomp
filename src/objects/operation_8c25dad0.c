@@ -16,7 +16,7 @@ struct Object {
     float fa0;
 };
 extern int operation_8c03d338(void);
-extern float call_8c37f6c0(float);
+extern float signed_sqrt_8c37f6c0(float);
 extern void operation_8c0c5478(void *, Frame *, float);
 void operation_8c25dad0(Object *o)
 {
@@ -29,7 +29,7 @@ void operation_8c25dad0(Object *o)
         (&frame)->f04 = 0.3f;
         (&frame)->f08 = 0.8f;
         (&frame)->f0c = 0.8f;
-        t2 = call_8c37f6c0(o->fa0);
+        t2 = signed_sqrt_8c37f6c0(o->fa0);
         operation_8c0c5478((void *)(((char *)o + 0x3c)), (Frame *)((&frame)), t2);
     }
 }

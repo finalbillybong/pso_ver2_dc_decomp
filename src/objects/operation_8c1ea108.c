@@ -29,8 +29,8 @@ struct Frame {
     float f08;
 };
 extern int call_8c1ea4e0(Object *);
-extern float call_8c37eb0c(int);
-extern float call_8c38c154(int);
+extern float njSin_8c37eb0c(int);
+extern float njCos_8c38c154(int);
 extern void operation_8c036840(int);
 void operation_8c1ea108(Object *o)
 {
@@ -43,9 +43,9 @@ void operation_8c1ea108(Object *o)
     t1 = call_8c1ea4e0(o);
     if (t1 != 0) {
         v1 = (char *)o->f390;
-        t2 = call_8c37eb0c((int)(v1));
+        t2 = njSin_8c37eb0c((int)(v1));
         o->f398 = o->f3c + t2 * 8.0f;
-        t3 = call_8c38c154((int)(v1));
+        t3 = njCos_8c38c154((int)(v1));
         o->f3a0 = o->f44 + t3 * 8.0f;
         if (o != 0) {
             v2 = (int)(o->f308 == 2);

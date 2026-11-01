@@ -1,7 +1,7 @@
 /* Provisional address-based name; preserve status transitions and cleanup ordering. */
 #include "src/include/resource_state.h"
 #define close_at ((void (*)(void *))0x8c34d4e8)
-#define free_buffer_at ((void (*)(void *))0x8c18de08)
+#define operator_delete_8c18de08 ((void (*)(void *))0x8c18de08)
 #define free_at ((void (*)(FlagResource *))0x8c011ed8)
 static inline int has_flag(FlagResource *o){
     return (o->flags&4)!=0;
@@ -14,7 +14,7 @@ static inline void destroy_base(FlagResource *o){
             o->handle=0;
             o->field_c=0;
         }
-        free_buffer_at(o->buffer);
+        operator_delete_8c18de08(o->buffer);
     }
 }
 FlagResource *operation_193784(FlagResource *o,short release){

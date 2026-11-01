@@ -22,7 +22,7 @@ int operation_456a4(Object *o)
                 if (!(o->flags & 0x02000000)) {
                     void *effect = effect_create_at(o->effect_position, 38, 0x50);
                     if (effect) effect_bind_at(effect, (short)o->id);
-                    effect_emit_at(12, o->position, 0, 0);
+                    play_se_8c05fbf8(12, o->position, 0, 0);
                 }
                 o->field_2c8 = 45;
             }
@@ -34,7 +34,7 @@ int operation_456a4(Object *o)
             if (!(counter % 45) && !(o->flags & 0x02000000)) {
                 void *effect = effect_create_at(o->effect_position, 38, 0x50);
                 if (effect) effect_bind_at(effect, (short)o->id);
-                effect_emit_at(12, o->position, 0, 0);
+                play_se_8c05fbf8(12, o->position, 0, 0);
             }
             return 1;
         }

@@ -15,7 +15,7 @@ struct Object {
 };
 extern int call_8c18e8a0(void *, int);
 extern void call_8c191654(int, int, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c1b8d10(Object *o)
 {
     int t1;
@@ -28,7 +28,7 @@ void operation_8c1b8d10(Object *o)
         call_8c191654(3, 1, 2);
     }
     if (!((int)(o->f3e0 = (Arg0_3e0 *)((int)o->f3e0 + -1)) > 0)) {
-        call_8c05fbf8(0x30033, 0, 0, 0);
+        play_se_8c05fbf8(0x30033, 0, 0, 0);
         o->f3e0 = (Arg0_3e0 *)0x96;
     }
 }

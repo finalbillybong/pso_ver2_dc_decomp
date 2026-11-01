@@ -25,7 +25,7 @@ extern S_L8c41cba0 g_8c41cba0;
 extern int operation_8c01d8a8(void *, int);
 extern void request_resource_release(void *);
 extern int operation_8c0e90f4(void *);
-extern int operation_8c0101dc(int);
+extern int vmu_find_drive_with_free_blocks_8c0101dc(int);
 extern int operation_8c19b054(void);
 extern int call_8c37293e(int, int);
 void operation_8c0e94cc(Object *o)
@@ -72,11 +72,11 @@ L_8c0e9560:;
     o->f54 = t6;
     switch (g_8c470324) {
     case 0:
-        t7 = operation_8c0101dc((int)(o->f58));
+        t7 = vmu_find_drive_with_free_blocks_8c0101dc((int)(o->f58));
         if (t7 == -1) {
             return;
         }
-        t8 = operation_8c0101dc((int)(o->f58));
+        t8 = vmu_find_drive_with_free_blocks_8c0101dc((int)(o->f58));
         if (t8 == -2) {
             return;
         }

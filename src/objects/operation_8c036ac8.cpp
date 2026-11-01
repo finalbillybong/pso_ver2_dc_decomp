@@ -39,7 +39,7 @@ struct Object {
 };
 extern "C" char g_8c2ed878[];
 extern "C" void operation_8c011ef0(void *, ...);
-extern "C" void call_8c036b4c(S_vv2 *);
+extern "C" void TGameProtocol_dispatch_subcommand_8c036b4c(S_vv2 *);
 extern "C" void operation_8c09caac(void *);
 extern "C" void set_field_8c09ca50(void *);
 extern "C" void TGameProtocol_update_8c036ac8(Object *o)
@@ -51,7 +51,7 @@ extern "C" void TGameProtocol_update_8c036ac8(Object *o)
     while (v2 != 0) {
         operation_8c011ef0((void *)((g_8c2ed878 + 0xe)), (void *)(((S_vv2Data *)v2)->f00), (void *)v2);
         if (((S_vv2Data *)v2)->f2b == 0) {
-            call_8c036b4c(v2);
+            TGameProtocol_dispatch_subcommand_8c036b4c(v2);
             v2->v7();
         }
         if (((S_vv2Data *)v2)->f06 == o->f20) {

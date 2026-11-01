@@ -16,7 +16,7 @@ extern int g_8c33eb8c;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c24be4c(S_c8c122700 *, int, int);
-S_c8c122700 *operation_8c24c544(int a0)
+S_c8c122700 *TOVS2_create_8c24c544(int a0)
 {
     S_c8c122700 *t1;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x108);

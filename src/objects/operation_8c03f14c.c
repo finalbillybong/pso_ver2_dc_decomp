@@ -12,7 +12,7 @@ extern int g_8c510ba4;
 extern char g_8c2efd40[];
 extern void load_resource_small(void *, void *);
 extern void call_8c05f87c(void *);
-void operation_8c03f14c(void)
+void load_title_logo_texture_8c03f14c(void)
 {
     {
         short i;

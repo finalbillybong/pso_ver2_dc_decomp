@@ -41,8 +41,8 @@ extern int g_8c467874;
 extern S_L8c46fec0 g_8c46fec0;
 extern "C" void TObject_ctor_8c0330e4(void *, void *);
 extern "C" void call_8c041690(void);
-extern "C" void call_8c01d9dc(void);
-extern "C" void call_8c380516(void);
+extern "C" void reset_controller_state_8c01d9dc(void);
+extern "C" void wait_vsync_and_flip_8c380516(void);
 extern "C" void reparent_hierarchy_node(void *, void *);
 extern "C" void operation_8c0e8148(void);
 extern "C" void clear_hierarchy_groups(void *);
@@ -72,9 +72,9 @@ extern "C" void operation_8c0e7fb4(void)
     S_vv23 *v23;
     TObject_ctor_8c0330e4((void *)(&frame), (void *)0);
     call_8c041690();
-    call_8c01d9dc();
-    call_8c380516();
-    call_8c380516();
+    reset_controller_state_8c01d9dc();
+    wait_vsync_and_flip_8c380516();
+    wait_vsync_and_flip_8c380516();
     v1 = (int)0;
     while (g_8c467874 > v1) {
         if (*(int *)((char *)0x8c467240 + (v1 << 2)) != 0) {

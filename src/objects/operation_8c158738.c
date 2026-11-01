@@ -26,7 +26,7 @@ struct S_vv1 {
 struct S_vv2 {
     S_vv2_0 *f00;
 };
-extern int call_8c05fbf8(void *, int, int, int);
+extern int play_se_8c05fbf8(void *, int, int, int);
 extern void emit_control_60320(int, void *, int);
 void operation_8c158738(int a0, int a1)
 {
@@ -40,7 +40,7 @@ void operation_8c158738(int a0, int a1)
         v1 = (S_vv1 *)((int)v1 + ((unsigned char)(v0 << 1) << 2));
         v2 = (S_vv2 *)&*(int *)((char *)((char *)(*(S_g8c4daaa4 **)0x8c4daaa4)->f40 + 0x0) + ((unsigned char)(v0 << 1) + 1 << 2));
         if ((int)(v1->f00) != 0xf0001) {
-            t1 = call_8c05fbf8((void *)(v1->f00), a1, 0, 0);
+            t1 = play_se_8c05fbf8((void *)(v1->f00), a1, 0, 0);
             if (v2->f00 != 0) {
                 emit_control_60320(t1, (void *)(v2->f00), 0);
             }

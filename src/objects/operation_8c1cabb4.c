@@ -27,7 +27,7 @@ extern char g_8c41cba0[];
 extern void call_8c1cacb4(Object *);
 extern void call_8c1cae24(Object *);
 extern int operation_8c01d8a8(void *, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void request_resource_release(void *);
 extern void operation_8c199b14(void);
 extern void operation_8c1b0308(void);
@@ -49,7 +49,7 @@ void operation_8c1cabb4(Object *o)
             goto L_8c1cac48;
         }
     }
-    call_8c05fbf8(0x50016, 0, 0, 0);
+    play_se_8c05fbf8(0x50016, 0, 0, 0);
     if (o->f2c != 0) {
         request_resource_release((void *)(o->f2c));
         o->f2c = (Arg0_2c *)0;

@@ -10,8 +10,8 @@ struct Object {
     float f08;
 };
 extern float normalize_xz_checked(void *);
-extern float call_8c38c154(int);
-extern float call_8c37eb0c(int);
+extern float njCos_8c38c154(int);
+extern float njSin_8c37eb0c(int);
 extern void normalize_vector_checked(void *);
 float operation_8c0cbebc(Object *o, float f0, float f1)
 {
@@ -29,9 +29,9 @@ float operation_8c0cbebc(Object *o, float f0, float f1)
         o->f08 = v1;
     } else {
         v2 = (int)(int)(t1 / f0 * 32768.0f);
-        t3 = call_8c38c154(v2);
+        t3 = njCos_8c38c154(v2);
         v3 = (float)(f1 * (t3 + 1.0f));
-        t2 = call_8c37eb0c(v2);
+        t2 = njSin_8c37eb0c(v2);
         o->tag *= t2;
         o->f04 = 1.0f;
         o->f08 *= t2;

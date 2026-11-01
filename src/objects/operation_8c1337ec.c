@@ -51,7 +51,7 @@ extern void edit_three_scalar_fields(void *);
 extern void operation_8c133cf0(void *);
 extern void edit_three_scalar_fields_8c133fb0(void *);
 extern void edit_three_scalar_fields_8c1342fc(void *);
-extern void operation_8c014028(void);
+extern void reload_light_entries_8c014028(void);
 extern int operation_8c01d844(int, int, int, int);
 extern void call_8c3be38c(int, void *, void *);
 void operation_8c1337ec(Object *o)
@@ -76,7 +76,7 @@ void operation_8c1337ec(Object *o)
     v = *(int *)((char *)(gc_8c41cba0 + 0x20) + (o->f34 * 0x3c));
     if ((v & 0x20000) != 0 && (v & 0x10000) != 0 && ((*(int *)((char *)(gc_8c41cba0 + 0x28) + (o->f34 * 0x3c)) & 8)) != 0) {
         *(Block68 *)&(&g_8c418280)->f00 = *(Block68 *)&o->f3c;
-        operation_8c014028();
+        reload_light_entries_8c014028();
     }
     if (operation_8c01d844((int)((int)(o->f34 * 0x3c + gc_8c41cba0) + 0x20), 0x20000, 6, 1) != 0) {
         o->f80 += 1;

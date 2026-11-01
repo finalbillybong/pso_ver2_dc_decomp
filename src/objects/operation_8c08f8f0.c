@@ -39,7 +39,7 @@ struct S_c8c08fd58 {
 };
 extern char g_8c300638[];
 extern int operation_8c105420(int, int);
-extern void operation_8c03ef80(void *, ...);
+extern void debug_error_stub_8c03ef80(void *, ...);
 extern int file_load_8c104d00(int, int);
 extern int call_8c18e808(int, int);
 extern S_c8c08fefc *call_8c08fefc(Object *);
@@ -72,12 +72,12 @@ void operation_8c08f8f0(Object *o, int a1)
         if (v3 >= 0) {
             goto L_8c08f94a;
         }
-        operation_8c03ef80((void *)((g_8c300638 + 0x2c3)), (void *)(((char *)o + 0x7c)));
+        debug_error_stub_8c03ef80((void *)((g_8c300638 + 0x2c3)), (void *)(((char *)o + 0x7c)));
         return;
     }
     t2 = file_load_8c104d00((int)(((char *)o + 0x7c)), (int)(v2));
     if (!(t2 >= 0)) {
-        operation_8c03ef80((void *)((g_8c300638 + 0x2c3)), (void *)(((char *)o + 0x7c)));
+        debug_error_stub_8c03ef80((void *)((g_8c300638 + 0x2c3)), (void *)(((char *)o + 0x7c)));
         return;
     }
     v3 = (int)t2;
@@ -100,7 +100,7 @@ L_8c08f94a:;
             }
             t4->f00.f44 = 0;
         } else {
-            operation_8c03ef80((void *)((g_8c300638 + 0x2d7)));
+            debug_error_stub_8c03ef80((void *)((g_8c300638 + 0x2d7)));
             return;
         }
 L_8c08f9cc:;

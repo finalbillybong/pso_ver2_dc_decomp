@@ -7,7 +7,7 @@ typedef char check_layout[sizeof(Vector)==12 && sizeof(Actor)==72 && sizeof(Came
 extern char effect_vtable[];
 extern void *object_name,*heap;
 extern Camera *camera;
-extern void TObject_ctor_8c0330e4(Effect *,void *),TObject_dtor_8c03311c(Effect *,int),release_at(void *,void *),subtract_at(Vector *,Vector *),set_position_at(Child *,Vector *);
+extern void TObject_ctor_8c0330e4(Effect *,void *),TObject_dtor_8c03311c(Effect *,int),release_at(void *,void *),vector_sub_in_place_8c37f6f0(Vector *,Vector *),set_position_at(Child *,Vector *);
 extern int valid_at(Actor *);
 extern float normalize_at(Vector *);
 extern Child *spawn_at(Vector *,int,int);

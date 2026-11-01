@@ -79,7 +79,7 @@ extern "C" void request_actor_mode_zero_8c128b44(void *);
 extern "C" void call_8c0444f8(Object *, float, Vector3);
 extern "C" void operation_43fb4(void *, int, void *);
 extern "C" int check_range_8c01cf68(void *, float);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void call_8c01c5f0(Object *);
 extern "C" void operation_8c04a43c(void *, float, void *);
 extern "C" void refresh_follow_effect_8c052180(void *);
@@ -122,7 +122,7 @@ extern "C" void operation_8c1282e4(Object *o, int a1)
         operation_43fb4((void *)o, (int)(o->f36c->f08), (void *)(((char *)o + 0x318)));
         t1 = check_range_8c01cf68((void *)o, 8.0f);
         if (t1 != 0) {
-            call_8c05fbf8(0x30032, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x30032, (void *)(((char *)o + 0x3c)), 0, 0);
             t2 = o->f334->v22(o, 1.0f);
             if (t2 != 0) {
                 o->f334->v27(o, 3.0f);

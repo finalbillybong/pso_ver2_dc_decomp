@@ -8,8 +8,8 @@ struct Arg1 {
     char unknown0[0x2];
     unsigned short f02;
 };
-extern void call_8c036c38(void *, int);
+extern void TGameProtocol_dispatch_broadcast_subcommand_8c036c38(void *, int);
 void handle_cmd_60_62_8c02e3fc(int a0, Arg1 *a1)
 {
-    call_8c036c38((void *)(((char *)a1 + 0x4)), (int)(a1->f02 + -4));
+    TGameProtocol_dispatch_broadcast_subcommand_8c036c38((void *)(((char *)a1 + 0x4)), (int)(a1->f02 + -4));
 }

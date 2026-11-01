@@ -7,7 +7,7 @@ typedef struct S_g8c4d5198 S_g8c4d5198;
 typedef struct S_g8c4d51d4 S_g8c4d51d4;
 extern void call_8c350152(void *);
 extern void call_8c34debc(void);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 void operation_8c100288(void)
 {
     int v1;
@@ -17,5 +17,5 @@ void operation_8c100288(void)
         v1 = (int)(v1 + 1);
     }
     call_8c34debc();
-    call_8c011ec0(*(S_g8c4d5198 **)0x8c4d5198);
+    game_free_8c011ec0(*(S_g8c4d5198 **)0x8c4d5198);
 }

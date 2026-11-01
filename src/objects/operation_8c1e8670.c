@@ -18,7 +18,7 @@ struct Object {
     char unknown194[0xc];
     int f1a0;
 };
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern int find_local_actor_in_radius(void *, float);
 extern void call_8c1e7e94(Object *);
 extern void operation_8c1e8b30(void *, int);
@@ -43,7 +43,7 @@ void operation_8c1e8670(Object *o)
             return;
         }
         o->f190 = 0x12c;
-        call_8c05fbf8(5, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(5, (void *)(((char *)o + 0x3c)), 0, 0);
         o->f110 = 1;
         o->f100 = (int)(*(int *)0x8c4e314c);
         o->f104 = (int)(*(int *)0x8c4e3154);

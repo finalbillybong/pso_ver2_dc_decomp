@@ -37,7 +37,7 @@ extern S_g8c4da6b0 *g_8c4da6b0;
 extern S_c8c03ef88 *g_8c4da6b8;
 extern int g_8c4da6bc;
 extern S_c8c03ef88 *call_8c03ef88(int, int);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void initialize_vector_array(void *, void *);
 extern int record24_8c17948c(int);
 extern int record30_8c1794a0(int);
@@ -61,7 +61,7 @@ void operation_8c150680(void)
     t1 = call_8c03ef88((int)(v3), 0xb);
     g_8c4da6b8 = t1;
     t1->f00 &= -3;
-    t2 = call_8c011ecc(0xc);
+    t2 = game_malloc_8c011ecc(0xc);
     if (t2 != 0) {
         initialize_vector_array((void *)t2, (void *)(g_8c4da6b0->f42c->f108));
     }

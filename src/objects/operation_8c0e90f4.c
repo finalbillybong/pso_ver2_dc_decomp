@@ -10,7 +10,7 @@ struct Object {
     Arg0_58 *f58;
 };
 extern int call_8c3727a0(int);
-extern int call_8c0101dc(void *);
+extern int vmu_find_drive_with_free_blocks_8c0101dc(void *);
 extern int operation_8c19b054(void);
 extern int call_8c37293e(int, int);
 int operation_8c0e90f4(Object *o)
@@ -56,7 +56,7 @@ int operation_8c0e90f4(Object *o)
             goto L_8c0e916e;
         }
     } else {
-        t9 = call_8c0101dc((void *)(o->f58));
+        t9 = vmu_find_drive_with_free_blocks_8c0101dc((void *)(o->f58));
         if (t9 == -1) {
             return 1;
 L_8c0e916e:;

@@ -11,11 +11,11 @@ struct Object {
     char unknown69[0x7];
     Arg0_70 *f70;
 };
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void call_8c19a044(void *, int);
 void operation_8c2205d0(Object *o)
 {
-    call_8c05fbf8(0x50001, 0, 0, 0);
+    play_se_8c05fbf8(0x50001, 0, 0, 0);
     o->f68 |= 1;
     call_8c19a044((void *)(o->f70), 2);
 }

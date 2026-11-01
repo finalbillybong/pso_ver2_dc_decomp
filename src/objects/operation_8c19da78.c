@@ -18,18 +18,18 @@ struct Object {
     float ff4;
 };
 extern char g_8c31ccf8[];
-extern void call_8c38c5b6(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void njPrintColor_8c38c5b6(int);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c19da78(Object *o)
 {
     o->fe4 = o->f6c;
     o->fe8 = (Arg0_e8 *)o->f88;
-    call_8c38c5b6(-0xff0100);
-    call_8c38cf80(0x13001a, (void *)((g_8c31ccf8 + 0x11)));
-    call_8c38cf80(0x13001e, (void *)((g_8c31ccf8 + 0x1f)), o->fe8);
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xff0100);
+    debug_print_at_8c38cf80(0x13001a, (void *)((g_8c31ccf8 + 0x11)));
+    debug_print_at_8c38cf80(0x13001e, (void *)((g_8c31ccf8 + 0x1f)), o->fe8);
+    njPrintColor_8c38c5b6(-0xf0f10);
     o->ff4 = o->f70;
-    call_8c38c5b6(-0xff0100);
-    call_8c38cf80(0x13001b, (void *)((g_8c31ccf8 + 0x7f)));
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xff0100);
+    debug_print_at_8c38cf80(0x13001b, (void *)((g_8c31ccf8 + 0x7f)));
+    njPrintColor_8c38c5b6(-0xf0f10);
 }

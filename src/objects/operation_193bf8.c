@@ -2,11 +2,11 @@
 #include "src/include/resource_chunks.h"
 extern ResourceChunks *first,*second;
 extern void *buffer;
-#define allocate_at ((ResourceChunks *(*)(unsigned int))0x8c011ecc)
+#define game_malloc_8c011ecc ((ResourceChunks *(*)(unsigned int))0x8c011ecc)
 #define base_at ((ResourceChunks *(*)(ResourceChunks *,int,int,unsigned int))0x8c19336c)
 extern void *operator_new_8c18de4c(unsigned int);
 void load_item_model_archives_8c193bf8(void){
-    ResourceChunks *o=allocate_at(40);
+    ResourceChunks *o=game_malloc_8c011ecc(40);
     if(o){
         base_at(o,*(int *)0x8c31a320,0xb5,0xeb);
         o->dispatch=(void *)0x8c272804;
@@ -18,7 +18,7 @@ void load_item_model_archives_8c193bf8(void){
     }
     first=o;
     {
-        ResourceChunks *other=allocate_at(64);
+        ResourceChunks *other=game_malloc_8c011ecc(64);
         if(other){
             int i;
             base_at(other,*(int *)0x8c31a324,0xb4,0xe4);

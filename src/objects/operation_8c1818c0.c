@@ -12,7 +12,7 @@ extern S_g8c4dbb08 *g_8c4dbb08;
 extern S_g8c4dbb10 *g_8c4dbb10;
 extern int call_8c19b054(void);
 extern void word_operation_8c18490c(unsigned int);
-extern int call_8c010298(void *, void *, void *, void *);
+extern int vmu_save_file_timestamped_overwrite_8c010298(void *, void *, void *, void *);
 int save_system_file_8c1818c0(void)
 {
     int v1;
@@ -27,7 +27,7 @@ int save_system_file_8c1818c0(void)
         if (7 >= (char)t1) {
             word_operation_8c18490c((unsigned int)((char)t1));
             g_8c41cb3c = 1;
-            t2 = call_8c010298(g_8c4dbaf0, (void *)((void *)0x8c319870), g_8c4dbb10, g_8c4dbb08);
+            t2 = vmu_save_file_timestamped_overwrite_8c010298(g_8c4dbaf0, (void *)((void *)0x8c319870), g_8c4dbb10, g_8c4dbb08);
             v1 = (int)t2;
         }
         v21 = (int)v1;

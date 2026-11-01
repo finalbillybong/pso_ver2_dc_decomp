@@ -22,7 +22,7 @@ struct Object {
 };
 extern int create_effect(void *, int, int);
 extern void bind_id(void *, unsigned short);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c046c18(Object *o)
 {
     int v1;
@@ -35,7 +35,7 @@ void operation_8c046c18(Object *o)
                 if (t1 != 0) {
                     bind_id((void *)t1, (unsigned short)(o->f20));
                 }
-                call_8c05fbf8(0x10, (void *)(((char *)o + 0x3c)), 0, 0);
+                play_se_8c05fbf8(0x10, (void *)(((char *)o + 0x3c)), 0, 0);
             }
             switch (o->f2cc) {
             case 2:

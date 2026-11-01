@@ -9,7 +9,7 @@ extern int get_current_area_8c032b10(void);
 extern int get_game_mode_8c01c25c(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c172d28(int, void *, void *, int);
-void operation_8c17327c(void)
+void load_city_map_offline_8c17327c(void)
 {
     int idx;
     int p;

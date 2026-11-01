@@ -25,7 +25,7 @@ struct Arg0_398 {
     char unknown0[0x18];
     int f18;
 };
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c160b2c(Object *o)
 {
     if (o->f39c != 1) {
@@ -35,7 +35,7 @@ void operation_8c160b2c(Object *o)
         o->f3cc = 0.0f;
         o->f3d0 = 0x96;
         o->f3dc = 1;
-        call_8c05fbf8(0x3002d, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x3002d, (void *)(((char *)o + 0x3c)), 0, 0);
         o->fe8 = (unsigned int)o->fe8 >> 1 << 1;
         o->ff0 = 2;
     }

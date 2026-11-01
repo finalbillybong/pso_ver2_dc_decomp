@@ -54,7 +54,7 @@ extern void operation_8c04a9c4(void *, int);
 extern void operation_8c220ca8(int, int);
 extern int call_8c163428(void *, void *, int);
 extern void call_8c023bb4(void *, void *);
-extern void operation_8c1005bc(int);
+extern void game_ADXT_StartFname_wrapper_8c1005bc(int);
 void operation_8c19bed4(Object *o)
 {
     Frame frame;
@@ -131,7 +131,7 @@ void operation_8c19bed4(Object *o)
                     request_resource_release((void *)(o->f15c));
                     o->f15c = (Arg0_15c *)0;
                     if (*(int *)0x8c4dc4a8 > 0) {
-                        operation_8c1005bc((int)(g_8c31cc44 + 0x35));
+                        game_ADXT_StartFname_wrapper_8c1005bc((int)(g_8c31cc44 + 0x35));
                     }
                     o->f24 = 0;
                 }

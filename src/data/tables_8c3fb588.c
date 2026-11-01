@@ -2,11 +2,11 @@
 
 typedef void (*Function)(void);
 
-extern void fn_8c3546a4(void);
+extern void mwSbInit_8c3546a4(void);
 extern void fn_8c3546ba(void);
 extern void mwSndOpenPort_8c3546ea(void);
 extern void mwSndClosePort_8c354a96(void);
-extern void fn_8c354bbc(void);
+extern void mwSndPlay_8c354bbc(void);
 extern void mwSndStop_8c354c0c(void);
 extern void fn_8c354c32(void);
 extern void mwSndSetNumChan_8c354c46(void);
@@ -37,7 +37,7 @@ Function const d_8c3fb58c[6] = {
     0,
     0,
     0,
-    fn_8c3546a4,
+    mwSbInit_8c3546a4,
     fn_8c3546ba,
     mwSndOpenPort_8c3546ea
 };
@@ -47,7 +47,7 @@ Function const d_8c3fb5a4[23] = {
     0,
     0,
     mwSndClosePort_8c354a96,
-    fn_8c354bbc,
+    mwSndPlay_8c354bbc,
     mwSndStop_8c354c0c,
     fn_8c354c32,
     mwSndSetNumChan_8c354c46,

@@ -29,7 +29,7 @@ void frame_hook_8c380500(void)
     }
 }
 
-void frame_sync_8c380516(void)
+void wait_vsync_and_flip_8c380516(void)
 {
     unsigned int e = 0;
     Pad5 *p;

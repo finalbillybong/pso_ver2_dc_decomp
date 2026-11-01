@@ -17,7 +17,7 @@ struct S_g8c469ae4 {
     float f44;
 };
 extern int g_8c469ae0;
-extern float call_8c37f6c0(float);
+extern float signed_sqrt_8c37f6c0(float);
 float operation_8c07c454(Object *o)
 {
     int i;
@@ -45,5 +45,5 @@ float operation_8c07c454(Object *o)
             best = d;
         }
     }
-    return call_8c37f6c0(best);
+    return signed_sqrt_8c37f6c0(best);
 }

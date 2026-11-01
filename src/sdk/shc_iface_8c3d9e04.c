@@ -30,7 +30,7 @@ short get_value_8c3d9e42(void)
     return g_value_8c4002da;
 }
 
-char *get_table_8c3d9e48(void)
+char *modem_rockwell_table_8c3d9e48(void)
 {
     return str_8c4002b0;
 }

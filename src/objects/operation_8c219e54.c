@@ -23,7 +23,7 @@ extern int operation_239358(void *);
 extern int call_8c18e954(char, int);
 extern int operation_2392c8(void *);
 extern int operation_2392a8(void *);
-void operation_8c219e54(int a0, Arg1 *a1)
+void item_drop_check_quest_restriction_8c219e54(int a0, Arg1 *a1)
 {
     int v2;
     int t6;

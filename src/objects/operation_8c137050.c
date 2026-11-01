@@ -37,7 +37,7 @@ extern float squared_distance_xz(void *, void *);
 extern void call_8c1373a0(void *, int);
 extern int active_unflagged_8c05b258(void *);
 extern void call_8c02a5a8(int, short, short);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c05fd7c(int, Object *, void *, int, int);
 void operation_8c137050(Object *o)
 {
@@ -101,7 +101,7 @@ L_8c1370c2:;
         }
         v64 = (char *)o->fa8;
         if ((int)(v64) == 1) {
-            call_8c05fbf8(0x4001b, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x4001b, (void *)(((char *)o + 0x3c)), 0, 0);
             return;
         }
         if ((int)(v64) > 0x3c) {

@@ -19,8 +19,8 @@ public:
     virtual void v14();
     virtual void refresh();
 };
-extern "C" void set_print_color_8c38c5b6(unsigned int);
-extern "C" void print_value_8c38cf80(unsigned int, const char *, ...);
+extern "C" void njPrintColor_8c38c5b6(unsigned int);
+extern "C" void debug_print_at_8c38cf80(unsigned int, const char *, ...);
 extern "C" char key_label_8c30ff14[];
 extern "C" void show_key_8c112fbc(Object *o)
 {
@@ -33,8 +33,8 @@ extern "C" void show_key_8c112fbc(Object *o)
         data->key = data->raw;
         data->state = 0;
     }
-    set_print_color_8c38c5b6(0xff00ff00);
-    print_value_8c38cf80(0x0013001e, key_label_8c30ff14 + 6, data->key);
-    set_print_color_8c38c5b6(0xfff0f0f0);
+    njPrintColor_8c38c5b6(0xff00ff00);
+    debug_print_at_8c38cf80(0x0013001e, key_label_8c30ff14 + 6, data->key);
+    njPrintColor_8c38c5b6(0xfff0f0f0);
     o->refresh();
 }

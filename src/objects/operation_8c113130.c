@@ -9,7 +9,7 @@ struct Object {
     int f108;
 };
 extern int get_current_area_8c032b10(void);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c113130(Object *o)
 {
     int t1;
@@ -23,10 +23,10 @@ void operation_8c113130(Object *o)
             }
             return;
         }
-        call_8c05fbf8(0x4000a, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x4000a, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
 L_8c1131c6:;
-        call_8c05fbf8(0x4000b, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x4000b, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     case 3:
     case 4:
@@ -37,10 +37,10 @@ L_8c1131c6:;
             }
             return;
         }
-        call_8c05fbf8(0x40009, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x40009, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
 L_8c1131fa:;
-        call_8c05fbf8(0x4000a, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x4000a, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     case 6:
     case 7:
@@ -50,10 +50,10 @@ L_8c1131fa:;
             }
             return;
         }
-        call_8c05fbf8(0x40003, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x40003, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
 L_8c11322e:;
-        call_8c05fbf8(0x40004, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x40004, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     case 8:
     case 9:
@@ -64,10 +64,10 @@ L_8c11322e:;
             }
             return;
         }
-        call_8c05fbf8(0x4000a, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x4000a, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
 L_8c113262:;
-        call_8c05fbf8(0x4000b, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x4000b, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     case 16:
     case 17:
@@ -78,10 +78,10 @@ L_8c113262:;
                 }
                 return;
             }
-            call_8c05fbf8(0x40001, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x40001, (void *)(((char *)o + 0x3c)), 0, 0);
             return;
 L_8c11329e:;
-            call_8c05fbf8(0x40002, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x40002, (void *)(((char *)o + 0x3c)), 0, 0);
         }
         return;
     case 0:

@@ -88,7 +88,7 @@ extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_panel_8c087d8c(void *, void *, void *);
 extern void create_effect_777c(void *, int);
 extern int get_current_area_8c032b10(void);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c1e4264(Object *o)
 {
     Frame frame;
@@ -139,9 +139,9 @@ void operation_8c1e4264(Object *o)
                 goto L_8c1e43ba;
             }
         }
-        call_8c05fbf8(0x40005, (void *)(&o->f3c), 0, 0);
+        play_se_8c05fbf8(0x40005, (void *)(&o->f3c), 0, 0);
         return;
     }
 L_8c1e43ba:;
-    call_8c05fbf8(0x40010, (void *)(&o->f3c), 0, 0);
+    play_se_8c05fbf8(0x40010, (void *)(&o->f3c), 0, 0);
 }

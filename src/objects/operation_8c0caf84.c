@@ -7,7 +7,7 @@ extern int g_8c46f9f4;
 extern int g_8c46f9f8;
 extern float g_8c46f9fc;
 extern int g_8c575570;
-extern void call_8c37e2e4(int, float, float, float);
+extern void njScale_8c37e2e4(int, float, float, float);
 extern void call_8c391c94(void);
 extern void call_8c1086fc(void);
 void operation_8c0caf84(void)
@@ -25,7 +25,7 @@ void operation_8c0caf84(void)
     } else {
         g_8c46f9f8 = (int)(g_8c575570);
         g_8c575570 &= -0x8001;
-        call_8c37e2e4(0, g_8c46f9fc, g_8c46f9fc, g_8c46f9fc);
+        njScale_8c37e2e4(0, g_8c46f9fc, g_8c46f9fc, g_8c46f9fc);
         call_8c391c94();
         goto L_8c0cafd0;
 L_8c0cafc4:;

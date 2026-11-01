@@ -26,7 +26,7 @@ struct Arg0_94 {
     float f4c;
     float f50;
 };
-extern float call_8c37e480(Frame *);
+extern float njScalor_8c37e480(Frame *);
 int operation_8c10e728(Object *o)
 {
     Frame frame;
@@ -40,7 +40,7 @@ int operation_8c10e728(Object *o)
     (&frame)->f00 = b->x - a->x;
     (&frame)->f04 = b->y - a->y;
     (&frame)->f08 = b->z - a->z;
-    if (call_8c37e480((Frame *)((&frame))) > 0.4f) {
+    if (njScalor_8c37e480((Frame *)((&frame))) > 0.4f) {
         o->f8c |= 1;
         return 1;
     }

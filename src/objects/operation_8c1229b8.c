@@ -15,7 +15,7 @@ extern void gsl_open_archive_8c1a80d4(void *);
 extern void run_current_resource_start(void);
 extern void run_current_resource_start_8c03c3ac(void);
 extern void operation_8c013fc8(void);
-extern void operation_8c1a81a0(void);
+extern void TGStream_close_8c1a81a0(void);
 extern void clamp_settings_8c1a0510(void);
 extern void call_8c013620(void *, int);
 extern void call_8c238fd4(void *);
@@ -35,7 +35,7 @@ void operation_8c1229b8(void)
     run_current_resource_start();
     run_current_resource_start_8c03c3ac();
     operation_8c013fc8();
-    operation_8c1a81a0();
+    TGStream_close_8c1a81a0();
     clamp_settings_8c1a0510();
     call_8c013620((void *)((void *)0x8c311d40), 0x40);
     call_8c238fd4((void *)((void *)0x8c41ce5c));

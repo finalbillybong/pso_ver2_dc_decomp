@@ -75,7 +75,7 @@ extern Block8 g_8c316588;
 extern int g_8c4d9b9c;
 extern S_g8c4da87c *g_8c4da87c;
 extern "C" int call_8c12b944(void);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void clear_words_8c053d64(void);
 extern "C" void call_8c0521a0(Object *);
 extern "C" void create_effect_777c(void *, int);
@@ -94,8 +94,8 @@ extern "C" void operation_8c15a7e4(Object *o)
             (&frame)->f00.f00 = 0x11;
         }
     }
-    call_8c05fbf8(0x30015, (void *)(((char *)o + 0x3c)), 0, 0);
-    call_8c05fbf8(0x10012, (void *)(((char *)o + 0x3c)), 0, 0);
+    play_se_8c05fbf8(0x30015, (void *)(((char *)o + 0x3c)), 0, 0);
+    play_se_8c05fbf8(0x10012, (void *)(((char *)o + 0x3c)), 0, 0);
     o->fdc->f0c = 15.0f;
     clear_words_8c053d64();
     call_8c0521a0(o);

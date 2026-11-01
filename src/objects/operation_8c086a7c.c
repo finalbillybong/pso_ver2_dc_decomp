@@ -19,18 +19,18 @@ struct S_g8c469cc0 {
     S_g8c469cc0_4 *f04;
     S_g8c469cc0_8 *f08;
 };
-extern void call_8c38ae68(void);
-extern void call_8c382a40(int);
-extern void call_8c37df90(int, void *);
-extern void call_8c37dd28(int, int);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void translate_current_matrix_v_8c382a40(int);
+extern void njRotateY_8c37df90(int, void *);
+extern void njRotateX_8c37dd28(int, int);
 extern void call_8c3addea(void *, void *, float);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c086a7c(Object *o)
 {
-    call_8c38ae68();
-    call_8c382a40((int)((char *)o + 0x3c));
-    call_8c37df90(0, o->f64);
-    call_8c37dd28(0, -0x2000);
+    njPushMatrixEx_8c38ae68();
+    translate_current_matrix_v_8c382a40((int)((char *)o + 0x3c));
+    njRotateY_8c37df90(0, o->f64);
+    njRotateX_8c37dd28(0, -0x2000);
     call_8c3addea((*(S_g8c469cc0 **)0x8c469cc0)->f04, (*(S_g8c469cc0 **)0x8c469cc0)->f08, o->fac);
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
 }

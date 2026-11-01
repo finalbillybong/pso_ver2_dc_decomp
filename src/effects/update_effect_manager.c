@@ -3,8 +3,8 @@
 extern unsigned char input_state[];
 extern const char format_base[];
 extern EffectResource *presets[];
-extern void color_at(unsigned int);
-extern void draw_at(unsigned int,const char *,...);
+extern void njPrintColor_8c38c5b6(unsigned int);
+extern void debug_print_at_8c38cf80(unsigned int,const char *,...);
 #define key_at ((int (*)(int))0x8c01e148)
 #define convert_at ((int (*)(int))0x8c0a02cc)
 #define text_at ((int (*)(TextBuffer *))0x8c01e32c)
@@ -66,12 +66,12 @@ void update_effect_manager(EffectManager *p) {
             *(int *)((unsigned char *)p + 76) = 0;
             strncpy_8c12b154(p->field54, p->resource, 16);
         }
-        color_at(0xffffff00);
-        draw_at(0x000a0005, format_base + 54);
-        color_at(0xffff0000);
-        draw_at(0x000f0008, format_base + 64);
-        draw_at(0x000f000a, format_base + 86);
-        color_at(0xfff0f0f0);
+        njPrintColor_8c38c5b6(0xffffff00);
+        debug_print_at_8c38cf80(0x000a0005, format_base + 54);
+        njPrintColor_8c38c5b6(0xffff0000);
+        debug_print_at_8c38cf80(0x000f0008, format_base + 64);
+        debug_print_at_8c38cf80(0x000f000a, format_base + 86);
+        njPrintColor_8c38c5b6(0xfff0f0f0);
         if (input98 & 4) {
             if (inputa0 & 0x400) {
                 bind_at(p->effect, p->resource);
@@ -86,12 +86,12 @@ void update_effect_manager(EffectManager *p) {
         }
         break;
     case 1:
-        color_at(0xffffff00);
-        draw_at(0x000a0005, format_base + 110);
-        color_at(0xffff0000);
-        draw_at(0x000f0008, format_base + 123);
-        draw_at(0x000f0009, format_base + 151);
-        color_at(0xfff0f0f0);
+        njPrintColor_8c38c5b6(0xffffff00);
+        debug_print_at_8c38cf80(0x000a0005, format_base + 110);
+        njPrintColor_8c38c5b6(0xffff0000);
+        debug_print_at_8c38cf80(0x000f0008, format_base + 123);
+        debug_print_at_8c38cf80(0x000f0009, format_base + 151);
+        njPrintColor_8c38c5b6(0xfff0f0f0);
         if (key_at(42))
             fields_at(p, *(EffectResource **)((unsigned char *)presets +
                                              (p->field78 << 2)),

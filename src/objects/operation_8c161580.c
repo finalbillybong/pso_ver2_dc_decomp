@@ -39,9 +39,9 @@ struct Arg3 {
 extern int g_8c316e78;
 extern void TObjEnemy_ctor_8c012008(void *);
 extern int record30_8c1794c8(int);
-extern float call_8c37e480(void *);
-extern void call_8c37b630(void *);
-extern void call_8c05fbf8(int, void *, int, int);
+extern float njScalor_8c37e480(void *);
+extern void njUnitVector_8c37b630(void *);
+extern void play_se_8c05fbf8(int, void *, int, int);
 Object *operation_8c161580(Object *o, int a1, Arg2 *a2, Arg3 *a3, int a4)
 {
     Object **home = &o;
@@ -69,14 +69,14 @@ Object *operation_8c161580(Object *o, int a1, Arg2 *a2, Arg3 *a3, int a4)
         o->f3a8 = 0.0f;
     }
     o->f318.f04 = 0.0f;
-    t2 = call_8c37e480((void *)(&o->f318));
+    t2 = njScalor_8c37e480((void *)(&o->f318));
     if (t2 == 0.0f) {
         o->f318.f00 = 1.0f;
     }
-    call_8c37b630((void *)(&o->f318));
+    njUnitVector_8c37b630((void *)(&o->f318));
     switch (o->f390) {
     case 0:
-        call_8c05fbf8(0x3002b, (void *)(&o->f3c), 0, 0);
+        play_se_8c05fbf8(0x3002b, (void *)(&o->f3c), 0, 0);
         v15 = 2.8f;
         o->f394 = 5.0f;
         o->f398 = 1.04166663f;

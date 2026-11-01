@@ -17,7 +17,7 @@ struct S_vv1 {
 };
 extern void call_8c0368a8(void);
 extern void call_8c09ca5c(int, int);
-extern void call_8c036d04(int);
+extern void TGameProtocol_dispatch_local_subcommand_8c036d04(int);
 void operation_8c036840(int a0)
 {
     S_vv1 *v1;
@@ -33,6 +33,6 @@ void operation_8c036840(int a0)
         }
     }
     *(int *)0x8c4627c8 = 1;
-    call_8c036d04(a0);
+    TGameProtocol_dispatch_local_subcommand_8c036d04(a0);
     *(int *)0x8c4627c8 = 0;
 }

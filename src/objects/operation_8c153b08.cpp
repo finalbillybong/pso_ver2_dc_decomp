@@ -139,14 +139,14 @@ extern S_g8c4da87c *g_8c4da87c;
 extern S_g8c4daa24 *g_8c4daa24;
 extern "C" char g_8c31604c[];
 extern "C" void call_8c1549b0(Object *);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void call_8c01c5f0(Object *);
 extern "C" int check_range_8c01cf68(void *, float);
-extern "C" void call_8c38ade4(void *);
-extern "C" void call_8c37df90(int, void *);
+extern "C" void njPushMatrix_8c38ade4(void *);
+extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3be280(int, Frame *, void *);
 extern "C" void call_8c3bdf60(void *, void *);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" int create_effect_769c(void *, int);
 extern "C" int call_8c18e768(void *, int);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
@@ -181,13 +181,13 @@ extern "C" void operation_8c153b08(Object *o)
         ((ObjectData *)o)->ff0 = 5;
         ((ObjectData *)o)->f398 = 1;
         call_8c1549b0(o);
-        call_8c05fbf8(0x30017, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30017, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     case 1:
         call_8c01c5f0(o);
         t1 = check_range_8c01cf68((void *)o, 20.0f);
         if (t1 != 0) {
-            call_8c05fbf8(0x3000b, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x3000b, (void *)(((char *)o + 0x3c)), 0, 0);
         }
         v5 = (float)((((ObjectData *)o)->ff8 - 18.0f) * 0.0833333358f);
         if (v5 > 0.0f) {
@@ -200,19 +200,19 @@ extern "C" void operation_8c153b08(Object *o)
         if (38.0f > ((ObjectData *)o)->ff8) {
             return;
         }
-        call_8c38ade4((void *)((void *)0x8c400500));
+        njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&g_8c316028;
-        call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
         call_8c3be280(0, (Frame *)((&frame)), (void *)(&(&frame)->f0c));
         call_8c3bdf60((void *)(&(&frame)->f0c), (void *)(((char *)o + 0x3c)));
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         t2 = create_effect_769c((void *)(&(&frame)->f0c), 0x1a1);
         ((ObjectData *)o)->f490 = (Arg0_490 *)(int)t2;
         ((ObjectData *)o)->f358 = 0x1e;
         ((ObjectData *)o)->f398 = 2;
         return;
     case 2:
-        call_8c05fbf8(0x30019, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30019, (void *)(((char *)o + 0x3c)), 0, 0);
         if ((short)--*(short *)((char *)o + 0x358) > 0) {
             return;
         }
@@ -258,7 +258,7 @@ extern "C" void operation_8c153b08(Object *o)
         t5 = create_effect_769c((void *)(((char *)o + 0x3c)), 0x1a2);
         ((ObjectData *)o)->f490 = (Arg0_490 *)(int)t5;
         ((ObjectData *)o)->f398 = 3;
-        call_8c05fbf8(0x2000e, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x2000e, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     case 3:
         if ((short)--((ObjectData *)o)->f358 > 0) {
@@ -270,7 +270,7 @@ extern "C" void operation_8c153b08(Object *o)
             ((ObjectData *)o)->f490 = (Arg0_490 *)0;
         }
         ((ObjectData *)o)->f398 = 4;
-        call_8c05fbf8(0x30017, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30017, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     case 4:
         call_8c01c5f0(o);

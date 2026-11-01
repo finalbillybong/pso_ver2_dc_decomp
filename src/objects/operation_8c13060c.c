@@ -19,7 +19,7 @@ typedef struct Pair {
 extern Model *g_8c4d9a20[2];
 extern Pair *g_8c4d9a28;
 extern char g_8c3126fc[];
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern Pair *operator_new_8c18de4c(int);
 extern int load_pvm_file_tls_8c118528(void *);
@@ -28,12 +28,12 @@ void operation_8c13060c(void)
     int t1;
     int t2;
     Pair *t3;
-    t1 = call_8c011ecc(0x440);
+    t1 = game_malloc_8c011ecc(0x440);
     if (t1 != 0) {
         call_8c03d610(t1, 1, (void *)0x8c31269c, 0, 0, 0);
     }
     g_8c4d9a20[0] = (Model *)t1;
-    t2 = call_8c011ecc(0x440);
+    t2 = game_malloc_8c011ecc(0x440);
     if (t2 != 0) {
         call_8c03d610(t2, 1, (void *)0x8c3126bc, 0, 0, 0);
     }

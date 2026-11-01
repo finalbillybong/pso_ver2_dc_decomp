@@ -27,7 +27,7 @@ public:
 typedef struct Arg0_s130Data {
 
 } Arg0_s130Data;
-extern "C" int call_8c011ecc(int);
+extern "C" int game_malloc_8c011ecc(int);
 extern "C" void operation_8c0f336c(int, int);
 extern "C" void call_8c0f3da4(Object *);
 extern "C" void operation_8c0f3a50(Object *o)
@@ -45,7 +45,7 @@ extern "C" void operation_8c0f3a50(Object *o)
     o->f104 = 0.0f;
     o->f108 = 0;
     o->f10c = 0;
-    t1 = call_8c011ecc(0x10);
+    t1 = game_malloc_8c011ecc(0x10);
     if (t1 != 0) {
         operation_8c0f336c(t1, 9);
     }

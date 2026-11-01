@@ -31,7 +31,7 @@ extern void operation_8c22dd38(void *);
 extern void operation_8c22dd9c(void *);
 extern void operation_8c22de98(void *);
 extern void operation_8c22dfc8(void *);
-extern void call_8c22e0c4(Object *);
+extern void build_download_vmu_header_8c22e0c4(Object *);
 extern void call_8c22e20c(Object *);
 extern void operation_8c22e27c(void *);
 extern void call_8c22e2cc(Object *);
@@ -90,7 +90,7 @@ void operation_8c22d748(Object *o)
         operation_8c22dfc8((void *)o);
         return;
     case 8:
-        call_8c22e0c4(o);
+        build_download_vmu_header_8c22e0c4(o);
         return;
     case 9:
         call_8c22e20c(o);

@@ -11,7 +11,7 @@ struct Object {
 extern char g_8c41cba0[];
 extern int operation_8c01d858(int, int, int, int);
 extern int operation_8c01d844(int, int, int, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern int operation_8c01d8a8(void *, int);
 int operation_8c0ebc00(Object *o)
 {
@@ -34,7 +34,7 @@ int operation_8c0ebc00(Object *o)
             goto L_8c0ebc46;
         }
     }
-    call_8c05fbf8(0x50000, 0, 0, 0);
+    play_se_8c05fbf8(0x50000, 0, 0, 0);
     o->f24 -= 1;
 L_8c0ebc46:;
     t3 = operation_8c01d858(v1, 0x20, 6, 1);
@@ -44,7 +44,7 @@ L_8c0ebc46:;
             goto L_8c0ebc7c;
         }
     }
-    call_8c05fbf8(0x50000, 0, 0, 0);
+    play_se_8c05fbf8(0x50000, 0, 0, 0);
     o->f24 -= 1;
 L_8c0ebc7c:;
     if (o->f24 >= 2) {

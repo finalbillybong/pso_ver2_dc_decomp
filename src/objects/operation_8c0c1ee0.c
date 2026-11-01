@@ -29,7 +29,7 @@ struct Arg1 {
 struct Frame {
     Block_frame_0 f00;
 };
-extern void call_8c37f6f0(Frame *, void *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern float call_8c130334(float, float);
 extern int angle_difference(int, int);
 void operation_8c0c1ee0(Object *o, Arg1 *a1)
@@ -40,7 +40,7 @@ void operation_8c0c1ee0(Object *o, Arg1 *a1)
     int t2;
     if (!(o->f3d0 >= 0xc) && a1 != 0 && a1 != (void *)o && ((a1->f34 & 0x6000800)) == 0) {
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&a1->f3c;
-        call_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
+        vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
         if (!(((&frame)->f00.f00 * (&frame)->f00.f00 + (&frame)->f00.f08 * (&frame)->f00.f08) > 160000.0f)) {
             t1 = call_8c130334((&frame)->f00.f08, (&frame)->f00.f00);
             t2 = angle_difference((int)(-(int)(t1 * 65536.0f / 6.28318405f) + 0x4000), (int)(o->f64));

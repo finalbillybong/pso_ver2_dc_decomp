@@ -192,7 +192,7 @@ extern S_g8c418248 *g_8c418248;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4db520 *g_8c4db520;
 extern S_g8c4db524 *g_8c4db524;
-extern "C" void call_8c37f6f0(void *, void *);
+extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
 extern "C" float call_8c130334(float, float);
 extern "C" void operation_8c036840(int);
 extern "C" int angle_difference(int, int);
@@ -221,7 +221,7 @@ extern "C" void operation_8c1209d8(Object *o)
     switch (((ObjectData *)o)->f30c) {
     case 0:
         *(Vector3 *)&frame.f30 = ((ObjectData *)o)->f334->f3c;
-        call_8c37f6f0(&frame.f30, (char *)o + 0x3c);
+        vector_sub_in_place_8c37f6f0(&frame.f30, (char *)o + 0x3c);
         ang = (int)(call_8c130334(frame.f30.f00, frame.f30.f08) * 65536.0f / 6.28318405f);
         switch (((ObjectData *)o)->f3c8) {
         case 1001:

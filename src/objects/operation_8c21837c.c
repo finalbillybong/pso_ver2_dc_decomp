@@ -47,9 +47,9 @@ extern int operation_8c01d8a8(void *, int);
 extern void call_8c119c78(void *);
 extern int operation_8c051cf0(void *);
 extern S_c8c051d18 *operation_8c051d18(void *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c051ce4(void *);
-extern void call_8c18de08(S_c8c051d18 *);
+extern void operator_delete_8c18de08(S_c8c051d18 *);
 extern void memset_8c12b880(void *, int, int);
 extern int strlen_8c12b0cc(S_c8c051d18 *);
 extern void memcpy_8c12b77c(void *, S_c8c051d18 *, int);
@@ -115,14 +115,14 @@ L_8c21842e:;
         if (t6 != 0) {
             t7 = operation_8c051d18((void *)(o->f30));
             if (t7->f00 == 0) {
-                call_8c05fbf8(0x50006, 0, 0, 0);
+                play_se_8c05fbf8(0x50006, 0, 0, 0);
                 operation_8c051ce4((void *)(o->f30));
-                call_8c18de08(t7);
+                operator_delete_8c18de08(t7);
             } else {
                 memset_8c12b880((void *)((void *)0x8c4621d8), 0, 0x11);
                 t8 = strlen_8c12b0cc(t7);
                 memcpy_8c12b77c((void *)((void *)0x8c4621d8), t7, t8);
-                call_8c18de08(t7);
+                operator_delete_8c18de08(t7);
                 v5 = (S_vv5 *)o->f30;
                 v5->f04 |= 1;
                 o->f30 = (Arg0_30 *)0;

@@ -25,7 +25,7 @@ struct Arg1 {
 };
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0b8200(int, void *, void *, int, float, void *);
-extern int call_8c05fbf8(int, void *, int, int);
+extern int play_se_8c05fbf8(int, void *, int, int);
 extern void emit_control_60320(int, int, int);
 extern void call_8c0ada54(Object *);
 void operation_8c0b7d40(Object *o, Arg1 *a1)
@@ -54,17 +54,17 @@ void operation_8c0b7d40(Object *o, Arg1 *a1)
             goto L_8c0b7dfa;
         }
     } else {
-        t2 = call_8c05fbf8(0x20003, (void *)(&o->f84), 0, 0);
+        t2 = play_se_8c05fbf8(0x20003, (void *)(&o->f84), 0, 0);
         if (t2 >= 0) {
             emit_control_60320(t2, 0x100, 0);
             goto L_8c0b7e7e;
 L_8c0b7de6:;
-            call_8c05fbf8(0x20003, (void *)(&o->f84), 0, 0);
+            play_se_8c05fbf8(0x20003, (void *)(&o->f84), 0, 0);
             goto L_8c0b7e7e;
 L_8c0b7dfa:;
             v3 = (short)o->f7e;
             if ((short)v3 >= 0xf && 0x19 > (short)v3) {
-                t3 = call_8c05fbf8(0x20003, (void *)(&o->f84), 0, 0);
+                t3 = play_se_8c05fbf8(0x20003, (void *)(&o->f84), 0, 0);
                 if (!(t3 >= 0)) {
                     goto L_8c0b7e7e;
                 }
@@ -72,14 +72,14 @@ L_8c0b7dfa:;
                 goto L_8c0b7e7e;
             }
             if ((short)v3 >= 0x19 && 0x1e > (short)v3) {
-                t4 = call_8c05fbf8(0x20003, (void *)(&o->f84), 0, 0);
+                t4 = play_se_8c05fbf8(0x20003, (void *)(&o->f84), 0, 0);
                 if (!(t4 >= 0)) {
                     goto L_8c0b7e7e;
                 }
                 emit_control_60320(t4, -0x250, 0);
                 goto L_8c0b7e7e;
             }
-            t5 = call_8c05fbf8(0x20003, (void *)(&o->f84), 0, 0);
+            t5 = play_se_8c05fbf8(0x20003, (void *)(&o->f84), 0, 0);
             if (t5 >= 0) {
                 emit_control_60320(t5, -0x100, 0);
             }

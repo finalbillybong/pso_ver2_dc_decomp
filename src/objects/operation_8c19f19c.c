@@ -30,7 +30,7 @@ struct S_g8c467180_2c {
 extern void reset_text_cursor_8c18ea38(void);
 extern void operation_8c18eb44(int);
 extern void operation_8c18ea4c(int);
-extern void call_8c18de08(int);
+extern void operator_delete_8c18de08(int);
 extern int operation_8c257e2c(int);
 extern int operator_new_8c18de4c(int);
 extern void strncpy_8c12b154(int, void *, int);
@@ -52,7 +52,7 @@ void operation_8c19f19c(Object *o, int a1, int a2)
     v2 = (int)o->f24;
     if (v2 != 0 && ((o->tag & 0x10)) != 0) {
         o->tag &= -0x11;
-        call_8c18de08(v2);
+        operator_delete_8c18de08(v2);
     }
     if ((void *)0x8c4dbe40 != 0) {
         t1 = operation_8c257e2c((int)((void *)0x8c4dbe40));

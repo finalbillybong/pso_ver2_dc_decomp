@@ -11,7 +11,7 @@ int operation_45910(Object *o)
             if (!(counter % 45) && !(o->flags & 0x02000000)) {
                 void *effect = effect_create_at(o->effect_position, 36, 0x50);
                 if (effect) effect_bind_at(effect, (short)o->id);
-                effect_emit_at(14, o->position, 0, 0);
+                play_se_8c05fbf8(14, o->position, 0, 0);
             }
             return 1;
         }

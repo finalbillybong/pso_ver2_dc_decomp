@@ -25,14 +25,14 @@ typedef struct S_vv1Data {
     int f28;
 } S_vv1Data;
 extern S_L8c4d5ad0 g_8c4d5ad0;
-extern "C" void call_8c011ec0(void *);
+extern "C" void game_free_8c011ec0(void *);
 extern "C" void operation_8c105320(int a0)
 {
     S_vv1 *v1;
     v1 = (S_vv1 *)(&g_8c4d5ad0)->f14;
     while (v1 != 0) {
         if (((S_vv1Data *)v1)->f28 == a0) {
-            call_8c011ec0(((S_vv1Data *)v1)->f20);
+            game_free_8c011ec0(((S_vv1Data *)v1)->f20);
             if (v1 != 0) {
                 v1->v0(1);
             }

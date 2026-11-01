@@ -30,8 +30,8 @@ static inline int key_at(unsigned char key, signed char disabled) {
     }
 }
 #define character_at ((int (*)(void))0x8c01e1f4)
-extern void color_at(unsigned int);
-extern void text_at(unsigned int, const char *, ...);
+extern void njPrintColor_8c38c5b6(unsigned int);
+extern void debug_print_at_8c38cf80(unsigned int, const char *, ...);
 
 int update_text_buffer(TextBuffer *p) {
     signed char disabled = *(signed char *)0x8c41cd04;
@@ -93,20 +93,20 @@ int update_text_buffer(TextBuffer *p) {
     p->field10 = p->field10 < 0 ? 0 :
         (p->field10 < p->length - 1 ? p->field10 : p->length - 1);
     p->buffer[p->length] = 0;
-    color_at(0xfff0f0f0);
-    text_at((p->field04 << 16) | p->field08, format_base, p->buffer);
+    njPrintColor_8c38c5b6(0xfff0f0f0);
+    debug_print_at_8c38cf80((p->field04 << 16) | p->field08, format_base, p->buffer);
     {
         signed char c = p->buffer[p->field10];
         if (c == ' ') {
-            color_at(0xfff0f0f0);
-            text_at(((p->field04 + p->field10 + 1) << 16) | p->field08,
+            njPrintColor_8c38c5b6(0xfff0f0f0);
+            debug_print_at_8c38cf80(((p->field04 + p->field10 + 1) << 16) | p->field08,
                     format_base + 4, '_');
         } else {
-            color_at(0xff00ffff);
-            text_at(((p->field04 + p->field10 + 1) << 16) | p->field08,
+            njPrintColor_8c38c5b6(0xff00ffff);
+            debug_print_at_8c38cf80(((p->field04 + p->field10 + 1) << 16) | p->field08,
                     format_base + 4, c);
         }
     }
-    color_at(0xfff0f0f0);
+    njPrintColor_8c38c5b6(0xfff0f0f0);
     return -1;
 }

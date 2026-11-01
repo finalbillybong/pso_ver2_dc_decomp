@@ -19,12 +19,12 @@ struct S_g8c4db380_42c_8 {
     char unknown0[0x2c];
     S_g8c4db380_42c_8_2c *f2c;
 };
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c0cd588(int, void *, int);
 void operation_8c155e60(void)
 {
     int t1;
-    t1 = call_8c011ecc(0x14);
+    t1 = game_malloc_8c011ecc(0x14);
     if (t1 != 0) {
         call_8c0cd588(t1, (void *)((*(S_g8c4db380 **)0x8c4db380)->f42c->f08->f2c), 0);
     }

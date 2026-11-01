@@ -49,13 +49,13 @@ struct S_g8c4e2de0_42c {
 struct S_x2192 {
     float f00;
 };
-extern "C" void call_8c01d1ec(Object *, void *);
+extern "C" void TObjectShared_ctor_8c01d1ec(Object *, void *);
 extern "C" Object *operation_8c1c6ac8(Object *o, int a1)
 {
     Object **home = &o;
     int v1;
     (void)home;
-    call_8c01d1ec(o, (void *)(*(S_g8c44be98 **)0x8c44be98));
+    TObjectShared_ctor_8c01d1ec(o, (void *)(*(S_g8c44be98 **)0x8c44be98));
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c276758;
     ((ObjectData *)o)->tag = (int)(*(int *)0x8c328d54);
     ((ObjectData *)o)->size = 0xb4;

@@ -12,7 +12,7 @@ extern void hierarchy_output_cycle(void *);
 extern void process_file_task_queue(void);
 extern void call_8c05f9e4(void);
 extern void call_8c184614(void);
-extern void call_8c380516(void);
+extern void wait_vsync_and_flip_8c380516(void);
 void operation_8c17b9ac(void)
 {
     call_8c01daf0();
@@ -24,5 +24,5 @@ void operation_8c17b9ac(void)
     process_file_task_queue();
     call_8c05f9e4();
     call_8c184614();
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

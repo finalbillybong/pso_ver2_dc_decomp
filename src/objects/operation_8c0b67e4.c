@@ -13,12 +13,12 @@ struct Object {
     short f22;
     Arg0_24 *f24;
 };
-extern void call_8c05fbf8(void *, void *, int, int);
+extern void play_se_8c05fbf8(void *, void *, int, int);
 void operation_8c0b67e4(Object *o)
 {
     o->f22 += 1;
     if (o->f22 > o->f20) {
-        call_8c05fbf8((void *)(o->f24), (void *)(((char *)o + 0x28)), 0, 0);
+        play_se_8c05fbf8((void *)(o->f24), (void *)(((char *)o + 0x28)), 0, 0);
         o->f04 |= 1;
     }
 }

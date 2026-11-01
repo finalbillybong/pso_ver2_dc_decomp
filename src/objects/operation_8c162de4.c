@@ -20,7 +20,7 @@ struct S_vv1 {
     char unknown40[0x4];
     float f44;
 };
-S_vv1 *operation_8c162de4(Object *o, int a1)
+S_vv1 *create_floor_item_8c162de4(Object *o, int a1)
 {
     S_vv1 *v1;
     char *v2;

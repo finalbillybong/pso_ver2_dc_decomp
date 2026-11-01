@@ -21,7 +21,7 @@ extern void call_8c01c250(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c198294(int, Object *);
 extern int create_pair_widget_8c1f1880(Object *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 Object *operation_8c1f1610(Object *o)
 {
     Object **home = &o;
@@ -41,6 +41,6 @@ Object *operation_8c1f1610(Object *o)
     }
     t2 = create_pair_widget_8c1f1880(o);
     o->f28 = (int)(t2);
-    call_8c05fbf8(0x50006, 0, 0, 0);
+    play_se_8c05fbf8(0x50006, 0, 0, 0);
     return o;
 }

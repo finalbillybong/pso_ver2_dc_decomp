@@ -15,7 +15,7 @@ extern int pair_grid_view_ready(void *);
 extern void call_8c119c78(void *);
 extern void request_resource_release(void *);
 extern void operation_8c016950(void);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 void operation_8c0168bc(void)
 {
     int t1;
@@ -41,5 +41,5 @@ void operation_8c0168bc(void)
         operation_8c016950();
     }
 L_8c016928:;
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
 }

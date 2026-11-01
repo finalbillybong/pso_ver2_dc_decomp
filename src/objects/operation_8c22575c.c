@@ -32,7 +32,7 @@ struct Frame {
 extern void configure_pair_grid_view(void *, void *, unsigned int);
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_pair_grid_view(void *, unsigned int);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c199b8c(int, void *);
 extern void call_8c225cd0(S_c8c122700 *);
 S_c8c122700 *operation_8c22575c(int a0, int a1)
@@ -55,7 +55,7 @@ S_c8c122700 *operation_8c22575c(int a0, int a1)
         }
         (&frame)->f04 = self->f40 - 18.0f;
         (&frame)->f08 = 0.0f;
-        t2 = call_8c011ecc(8);
+        t2 = game_malloc_8c011ecc(8);
         if (t2 != 0) {
             call_8c199b8c(t2, (void *)(&(&frame)->f04));
         }

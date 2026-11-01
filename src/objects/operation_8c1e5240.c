@@ -65,7 +65,7 @@ extern void operation_8c051d50(void *, void *);
 extern void operation_8c1dc4b8(void *, int, int);
 extern int operation_8c051d04(void *);
 extern int operation_8c051cf0(void *);
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern int operation_8c051d18(void *);
 extern void call_8c2069b4(void *, void *);
 extern int operation_8c257e2c(int);
@@ -154,7 +154,7 @@ void operation_8c1e5240(Object *o)
         if (t4 == 0) {
             return;
         }
-        call_8c18de08((void *)(o->f28));
+        operator_delete_8c18de08((void *)(o->f28));
         t5 = operation_8c051d18((void *)(o->f38));
         o->f28 = (Arg0_28 *)t5;
         call_8c2069b4((void *)(o->f28), (void *)((void *)0x8c4dbe40));
@@ -184,7 +184,7 @@ void operation_8c1e5240(Object *o)
         if (t9 == 0) {
             return;
         }
-        call_8c18de08((void *)(o->f2c));
+        operator_delete_8c18de08((void *)(o->f2c));
         t10 = operation_8c051d18((void *)(o->f38));
         o->f2c = (Arg0_2c *)t10;
         call_8c2069b4((void *)(o->f2c), (void *)((void *)0x8c4dbe40));

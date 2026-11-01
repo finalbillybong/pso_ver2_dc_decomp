@@ -26,8 +26,8 @@ extern void call_8c36a880(void);
 extern int call_8c36a868(void);
 extern void request_game_mode_8c01c1a4(int);
 extern int operation_8c104da8(void);
-extern void call_8c380516(void);
-void operation_8c1cbc88(void)
+extern void wait_vsync_and_flip_8c380516(void);
+void mode_main_frame_8c1cbc88(void)
 {
     S_vv1 *v1;
     int t1;
@@ -82,5 +82,5 @@ L_8c1cbd5a:;
         }
     }
 L_8c1cbd6a:;
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

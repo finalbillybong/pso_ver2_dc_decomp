@@ -21,8 +21,8 @@ struct Object {
     float f60;
 };
 extern S_L8c41cba0 g_8c41cba0;
-extern float call_8c38c154(int);
-extern float call_8c37eb0c(int);
+extern float njCos_8c38c154(int);
+extern float njSin_8c37eb0c(int);
 void operation_8c0a3c80(Object *o)
 {
     int v2;
@@ -63,9 +63,9 @@ void operation_8c0a3c80(Object *o)
             } else if (((v2 & 0x80)) != 0) {
                 v1 = (int)(v1 + 0x4000);
             }
-            t1 = call_8c38c154(v1);
+            t1 = njCos_8c38c154(v1);
             o->f60 = o->f2c * (t1 * 2.1f) + o->f60;
-            t2 = call_8c37eb0c(v1);
+            t2 = njSin_8c37eb0c(v1);
             o->f58 = o->f2c * (t2 * 2.1f) + o->f58;
         }
     }

@@ -6,35 +6,35 @@ typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2eb538;
 typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2eb638;
 
 extern void TObjPlayerSet_ctor_8c08a420(void);
-extern void spawn_object_1ab324_8c0804a8(void);
-extern void spawn_object_0893a8_8c0ed844(void);
-extern void spawn_object_0893a8_8c185394(void);
+extern void TObjParticle_create_8c0804a8(void);
+extern void TObjLight_create_8c0ed844(void);
+extern void TObjRoomId_create_8c185394(void);
 extern void TObjFogCollision_create_8c136738(void);
 extern void TObjEvtCollision_create_8c188120(void);
 extern void TObjEnvSound_create_8c100dd0(void);
-extern void spawn_object_0893a8_8c0104a0(void);
-extern void spawn_object_0893a8_8c1a1400(void);
+extern void TObjCollision_create_8c0104a0(void);
+extern void TObjMapCsn_create_8c1a1400(void);
 extern void TObjQuestCol_create_8c034098(void);
 extern void TObjQuestColA_create_8c0340dc(void);
-extern void spawn_object_1ab324(void);
-extern void spawn_object_1a9c84_8c0341ec(void);
+extern void TObjItemLight_create_8c034164(void);
+extern void TObjRaderCol_create_8c0341ec(void);
 extern void TObjFogCollisionSwitch_create_8c136b34(void);
-extern void spawn_object_0893a8_8c0f2158(void);
-extern void spawn_object_0893a8_8c13ddcc(void);
-extern void spawn_object_0893a8_8c13e090(void);
-extern void spawn_object_0893a8_8c13e37c(void);
+extern void TOCapsuleAncient01_create_8c0f2158(void);
+extern void TOMineIcon01_create_8c13ddcc(void);
+extern void TOMineIcon02_create_8c13e090(void);
+extern void TOMineIcon03_create_8c13e37c(void);
 extern void TOMineIcon04_create_8c13e668(void);
 extern void TOHealGeneral_create_8c19fee0(void);
-extern void spawn_object_0893a8_8c15ce68(void);
+extern void TOSensorAncient01_create_8c15ce68(void);
 extern void TObjGoalWarpAncient_create_8c157f64(void);
 extern void TObjMapWarpAncient_ctor_8c157ac4(void);
-extern void spawn_object_0893a8_8c114058(void);
-extern void spawn_object_0893a8_8c1363b8(void);
+extern void TOKeyAncient02_create_8c114058(void);
+extern void TOKeyAncient03_create_8c1363b8(void);
 extern void TODoorAncient04_create_8c0efc9c(void);
 extern void TODoorAncient06_ctor_8c11e88c(void);
 extern void TODoorAncient08_create_8c130bb4(void);
 extern void TODoorAncient09_create_8c1357e8(void);
-extern void spawn_object_0893a8_8c114610(void);
+extern void TOKeyAncient01_create_8c114610(void);
 extern void TOFenceAncient01_create_8c0f2870(void);
 extern void TOFenceAncient02_create_8c0f2bc0(void);
 extern void TOFenceAncient03_create_8c0f2f10(void);
@@ -56,7 +56,7 @@ extern void TOContainerAncientItemRare_create_8c0342fc(void);
 extern void TOContainerAncientEnemyCommon_ctor_8c1e4ec8(void);
 extern void TOContainerAncientEnemyRare_create_8c034338(void);
 extern void create_dat_object_0160_8c136e20(void);
-extern void spawn_object_1ab324_8c0342b8(void);
+extern void TObjRaderHideCol_create_8c0342b8(void);
 extern void TOKeyCol_create_8c2566fc(void);
 extern void TOAttackableCol_ctor_8c2576f8(void);
 extern void TOSwitchItem_ctor_8c255f2c(void);
@@ -64,13 +64,13 @@ extern void TOSymbolchatColli_ctor_8c25638c(void);
 extern void TOContainerAncientItemNone_create_8c1e47e4(void);
 extern void TODummyKeyCave01_ctor_8c258124(void);
 extern void TOSwitchAttack_ctor_8c2588b4(void);
-extern void spawn_object_0893a8_8c085ec8(void);
+extern void TObjComputer_create_8c085ec8(void);
 extern void TOWreckAncientBrakable05_create_8c0f0e1c(void);
-extern void spawn_object_0893a8_8c081080(void);
-extern void operation_8c14d6d4(void);
+extern void TObjLazerFenceExtra_create_8c081080(void);
+extern void TOTrapAncient02R_create_8c14d6d4(void);
 extern void TOSwitchTimer_ctor_8c25afe0(void);
 extern void TOChatSensor_create_8c25d8b8(void);
-extern void spawn_object_1e7964(void);
+extern void TObjWarpBoss_create_8c034054(void);
 extern void TODoorAncient03_ctor_8c0ef844(void);
 extern void TODoorAncient07_ctor_8c11e390(void);
 extern void TObjAreaWarpForest_create_8c033fcc(void);
@@ -78,39 +78,39 @@ extern void TObjMapWarpForest_create_8c034010(void);
 extern void TObjAreaWarpQuest_create_8c034274(void);
 extern void TObjContainerBase_ctor_8c085638(void);
 extern void TODoorVoShip_create_8c1af6e8(void);
-extern void spawn_object_19d108_8c034374(void);
+extern void TObjWarpBoss03_create_8c034374(void);
 
 const Record_8c2eace8 d_8c2eace8[66] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
-    { 1, (void *)spawn_object_1ab324_8c0804a8, 40000.0f, 0 },
-    { 4, (void *)spawn_object_0893a8_8c0ed844, 84100.0f, 0 },
-    { 14, (void *)spawn_object_0893a8_8c185394, 250000.0f, 0 },
+    { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
+    { 4, (void *)TObjLight_create_8c0ed844, 84100.0f, 0 },
+    { 14, (void *)TObjRoomId_create_8c185394, 250000.0f, 0 },
     { 7, (void *)TObjFogCollision_create_8c136738, 250000.0f, 0 },
     { 8, (void *)TObjEvtCollision_create_8c188120, 250000.0f, 0 },
     { 6, (void *)TObjEnvSound_create_8c100dd0, 250000.0f, 0 },
-    { 9, (void *)spawn_object_0893a8_8c0104a0, 250000.0f, 0 },
-    { 20, (void *)spawn_object_0893a8_8c1a1400, 250000.0f, 0 },
+    { 9, (void *)TObjCollision_create_8c0104a0, 250000.0f, 0 },
+    { 20, (void *)TObjMapCsn_create_8c1a1400, 250000.0f, 0 },
     { 18, (void *)TObjQuestCol_create_8c034098, 250000.0f, 0 },
     { 21, (void *)TObjQuestColA_create_8c0340dc, 250000.0f, 0 },
-    { 22, (void *)spawn_object_1ab324, 250000.0f, 0 },
-    { 23, (void *)spawn_object_1a9c84_8c0341ec, 250000.0f, 0 },
+    { 22, (void *)TObjItemLight_create_8c034164, 250000.0f, 0 },
+    { 23, (void *)TObjRaderCol_create_8c0341ec, 250000.0f, 0 },
     { 24, (void *)TObjFogCollisionSwitch_create_8c136b34, 250000.0f, 0 },
-    { 141, (void *)spawn_object_0893a8_8c0f2158, 250000.0f, 0 },
-    { 10, (void *)spawn_object_0893a8_8c13ddcc, 250000.0f, 0 },
-    { 11, (void *)spawn_object_0893a8_8c13e090, 250000.0f, 0 },
-    { 12, (void *)spawn_object_0893a8_8c13e37c, 250000.0f, 0 },
+    { 141, (void *)TOCapsuleAncient01_create_8c0f2158, 250000.0f, 0 },
+    { 10, (void *)TOMineIcon01_create_8c13ddcc, 250000.0f, 0 },
+    { 11, (void *)TOMineIcon02_create_8c13e090, 250000.0f, 0 },
+    { 12, (void *)TOMineIcon03_create_8c13e37c, 250000.0f, 0 },
     { 13, (void *)TOMineIcon04_create_8c13e668, 250000.0f, 0 },
     { 19, (void *)TOHealGeneral_create_8c19fee0, 250000.0f, 0 },
-    { 332, (void *)spawn_object_0893a8_8c15ce68, 250000.0f, 0 },
+    { 332, (void *)TOSensorAncient01_create_8c15ce68, 250000.0f, 0 },
     { 320, (void *)TObjGoalWarpAncient_create_8c157f64, 250000.0f, 0 },
     { 321, (void *)TObjMapWarpAncient_ctor_8c157ac4, 250000.0f, 0 },
-    { 322, (void *)spawn_object_0893a8_8c114058, 250000.0f, 0 },
-    { 323, (void *)spawn_object_0893a8_8c1363b8, 250000.0f, 0 },
+    { 322, (void *)TOKeyAncient02_create_8c114058, 250000.0f, 0 },
+    { 323, (void *)TOKeyAncient03_create_8c1363b8, 250000.0f, 0 },
     { 326, (void *)TODoorAncient04_create_8c0efc9c, 250000.0f, 0 },
     { 328, (void *)TODoorAncient06_ctor_8c11e88c, 250000.0f, 0 },
     { 330, (void *)TODoorAncient08_create_8c130bb4, 250000.0f, 0 },
     { 331, (void *)TODoorAncient09_create_8c1357e8, 250000.0f, 0 },
-    { 333, (void *)spawn_object_0893a8_8c114610, 250000.0f, 0 },
+    { 333, (void *)TOKeyAncient01_create_8c114610, 250000.0f, 0 },
     { 334, (void *)TOFenceAncient01_create_8c0f2870, 250000.0f, 0 },
     { 335, (void *)TOFenceAncient02_create_8c0f2bc0, 250000.0f, 0 },
     { 336, (void *)TOFenceAncient03_create_8c0f2f10, 250000.0f, 0 },
@@ -132,7 +132,7 @@ const Record_8c2eace8 d_8c2eace8[66] = {
     { 355, (void *)TOContainerAncientEnemyCommon_ctor_8c1e4ec8, 250000.0f, 0 },
     { 356, (void *)TOContainerAncientEnemyRare_create_8c034338, 250000.0f, 0 },
     { 352, (void *)create_dat_object_0160_8c136e20, 250000.0f, 0 },
-    { 31, (void *)spawn_object_1ab324_8c0342b8, 250000.0f, 0 },
+    { 31, (void *)TObjRaderHideCol_create_8c0342b8, 250000.0f, 0 },
     { 34, (void *)TOKeyCol_create_8c2566fc, 250000.0f, 0 },
     { 35, (void *)TOAttackableCol_ctor_8c2576f8, 250000.0f, 0 },
     { 32, (void *)TOSwitchItem_ctor_8c255f2c, 250000.0f, 0 },
@@ -140,10 +140,10 @@ const Record_8c2eace8 d_8c2eace8[66] = {
     { 357, (void *)TOContainerAncientItemNone_create_8c1e47e4, 250000.0f, 0 },
     { 222, (void *)TODummyKeyCave01_ctor_8c258124, 250000.0f, 0 },
     { 36, (void *)TOSwitchAttack_ctor_8c2588b4, 250000.0f, 0 },
-    { 139, (void *)spawn_object_0893a8_8c085ec8, 250000.0f, 0 },
+    { 139, (void *)TObjComputer_create_8c085ec8, 250000.0f, 0 },
     { 358, (void *)TOWreckAncientBrakable05_create_8c0f0e1c, 250000.0f, 0 },
-    { 150, (void *)spawn_object_0893a8_8c081080, 250000.0f, 0 },
-    { 359, (void *)operation_8c14d6d4, 250000.0f, 0 },
+    { 150, (void *)TObjLazerFenceExtra_create_8c081080, 250000.0f, 0 },
+    { 359, (void *)TOTrapAncient02R_create_8c14d6d4, 250000.0f, 0 },
     { 37, (void *)TOSwitchTimer_ctor_8c25afe0, 250000.0f, 0 },
     { 38, (void *)TOChatSensor_create_8c25d8b8, 250000.0f, 0 },
     { 65535, 0, 250000.0f, 0 }
@@ -151,36 +151,36 @@ const Record_8c2eace8 d_8c2eace8[66] = {
 
 const Record_8c2eb108 d_8c2eb108[67] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
-    { 1, (void *)spawn_object_1ab324_8c0804a8, 40000.0f, 0 },
-    { 4, (void *)spawn_object_0893a8_8c0ed844, 84100.0f, 0 },
-    { 14, (void *)spawn_object_0893a8_8c185394, 250000.0f, 0 },
+    { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
+    { 4, (void *)TObjLight_create_8c0ed844, 84100.0f, 0 },
+    { 14, (void *)TObjRoomId_create_8c185394, 250000.0f, 0 },
     { 7, (void *)TObjFogCollision_create_8c136738, 250000.0f, 0 },
     { 8, (void *)TObjEvtCollision_create_8c188120, 250000.0f, 0 },
     { 6, (void *)TObjEnvSound_create_8c100dd0, 250000.0f, 0 },
-    { 9, (void *)spawn_object_0893a8_8c0104a0, 250000.0f, 0 },
-    { 20, (void *)spawn_object_0893a8_8c1a1400, 250000.0f, 0 },
+    { 9, (void *)TObjCollision_create_8c0104a0, 250000.0f, 0 },
+    { 20, (void *)TObjMapCsn_create_8c1a1400, 250000.0f, 0 },
     { 18, (void *)TObjQuestCol_create_8c034098, 250000.0f, 0 },
     { 21, (void *)TObjQuestColA_create_8c0340dc, 250000.0f, 0 },
-    { 22, (void *)spawn_object_1ab324, 250000.0f, 0 },
-    { 23, (void *)spawn_object_1a9c84_8c0341ec, 250000.0f, 0 },
+    { 22, (void *)TObjItemLight_create_8c034164, 250000.0f, 0 },
+    { 23, (void *)TObjRaderCol_create_8c0341ec, 250000.0f, 0 },
     { 24, (void *)TObjFogCollisionSwitch_create_8c136b34, 250000.0f, 0 },
-    { 141, (void *)spawn_object_0893a8_8c0f2158, 250000.0f, 0 },
-    { 10, (void *)spawn_object_0893a8_8c13ddcc, 250000.0f, 0 },
-    { 11, (void *)spawn_object_0893a8_8c13e090, 250000.0f, 0 },
-    { 12, (void *)spawn_object_0893a8_8c13e37c, 250000.0f, 0 },
+    { 141, (void *)TOCapsuleAncient01_create_8c0f2158, 250000.0f, 0 },
+    { 10, (void *)TOMineIcon01_create_8c13ddcc, 250000.0f, 0 },
+    { 11, (void *)TOMineIcon02_create_8c13e090, 250000.0f, 0 },
+    { 12, (void *)TOMineIcon03_create_8c13e37c, 250000.0f, 0 },
     { 13, (void *)TOMineIcon04_create_8c13e668, 250000.0f, 0 },
     { 19, (void *)TOHealGeneral_create_8c19fee0, 250000.0f, 0 },
-    { 332, (void *)spawn_object_0893a8_8c15ce68, 250000.0f, 0 },
+    { 332, (void *)TOSensorAncient01_create_8c15ce68, 250000.0f, 0 },
     { 320, (void *)TObjGoalWarpAncient_create_8c157f64, 250000.0f, 0 },
     { 321, (void *)TObjMapWarpAncient_ctor_8c157ac4, 250000.0f, 0 },
-    { 25, (void *)spawn_object_1e7964, 250000.0f, 0 },
-    { 322, (void *)spawn_object_0893a8_8c114058, 250000.0f, 0 },
-    { 323, (void *)spawn_object_0893a8_8c1363b8, 250000.0f, 0 },
+    { 25, (void *)TObjWarpBoss_create_8c034054, 250000.0f, 0 },
+    { 322, (void *)TOKeyAncient02_create_8c114058, 250000.0f, 0 },
+    { 323, (void *)TOKeyAncient03_create_8c1363b8, 250000.0f, 0 },
     { 325, (void *)TODoorAncient03_ctor_8c0ef844, 250000.0f, 0 },
     { 329, (void *)TODoorAncient07_ctor_8c11e390, 250000.0f, 0 },
     { 330, (void *)TODoorAncient08_create_8c130bb4, 250000.0f, 0 },
     { 331, (void *)TODoorAncient09_create_8c1357e8, 250000.0f, 0 },
-    { 333, (void *)spawn_object_0893a8_8c114610, 250000.0f, 0 },
+    { 333, (void *)TOKeyAncient01_create_8c114610, 250000.0f, 0 },
     { 334, (void *)TOFenceAncient01_create_8c0f2870, 250000.0f, 0 },
     { 335, (void *)TOFenceAncient02_create_8c0f2bc0, 250000.0f, 0 },
     { 336, (void *)TOFenceAncient03_create_8c0f2f10, 250000.0f, 0 },
@@ -202,8 +202,8 @@ const Record_8c2eb108 d_8c2eb108[67] = {
     { 355, (void *)TOContainerAncientEnemyCommon_ctor_8c1e4ec8, 250000.0f, 0 },
     { 356, (void *)TOContainerAncientEnemyRare_create_8c034338, 250000.0f, 0 },
     { 352, (void *)create_dat_object_0160_8c136e20, 250000.0f, 0 },
-    { 139, (void *)spawn_object_0893a8_8c085ec8, 250000.0f, 0 },
-    { 31, (void *)spawn_object_1ab324_8c0342b8, 250000.0f, 0 },
+    { 139, (void *)TObjComputer_create_8c085ec8, 250000.0f, 0 },
+    { 31, (void *)TObjRaderHideCol_create_8c0342b8, 250000.0f, 0 },
     { 34, (void *)TOKeyCol_create_8c2566fc, 250000.0f, 0 },
     { 35, (void *)TOAttackableCol_ctor_8c2576f8, 250000.0f, 0 },
     { 32, (void *)TOSwitchItem_ctor_8c255f2c, 250000.0f, 0 },
@@ -212,8 +212,8 @@ const Record_8c2eb108 d_8c2eb108[67] = {
     { 222, (void *)TODummyKeyCave01_ctor_8c258124, 250000.0f, 0 },
     { 36, (void *)TOSwitchAttack_ctor_8c2588b4, 250000.0f, 0 },
     { 358, (void *)TOWreckAncientBrakable05_create_8c0f0e1c, 250000.0f, 0 },
-    { 150, (void *)spawn_object_0893a8_8c081080, 250000.0f, 0 },
-    { 359, (void *)operation_8c14d6d4, 250000.0f, 0 },
+    { 150, (void *)TObjLazerFenceExtra_create_8c081080, 250000.0f, 0 },
+    { 359, (void *)TOTrapAncient02R_create_8c14d6d4, 250000.0f, 0 },
     { 37, (void *)TOSwitchTimer_ctor_8c25afe0, 250000.0f, 0 },
     { 38, (void *)TOChatSensor_create_8c25d8b8, 250000.0f, 0 },
     { 65535, 0, 250000.0f, 0 }
@@ -221,18 +221,18 @@ const Record_8c2eb108 d_8c2eb108[67] = {
 
 const Record_8c2eb538 d_8c2eb538[16] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
-    { 1, (void *)spawn_object_1ab324_8c0804a8, 40000.0f, 0 },
+    { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
     { 2, (void *)TObjAreaWarpForest_create_8c033fcc, 250000.0f, 0 },
     { 3, (void *)TObjMapWarpForest_create_8c034010, 250000.0f, 0 },
     { 27, (void *)TObjAreaWarpQuest_create_8c034274, 250000.0f, 0 },
     { 6, (void *)TObjEnvSound_create_8c100dd0, 250000.0f, 0 },
     { 7, (void *)TObjFogCollision_create_8c136738, 250000.0f, 0 },
-    { 14, (void *)spawn_object_0893a8_8c185394, 250000.0f, 0 },
+    { 14, (void *)TObjRoomId_create_8c185394, 250000.0f, 0 },
     { 8, (void *)TObjEvtCollision_create_8c188120, 250000.0f, 0 },
     { 18, (void *)TObjQuestCol_create_8c034098, 250000.0f, 0 },
     { 21, (void *)TObjQuestColA_create_8c0340dc, 250000.0f, 0 },
-    { 22, (void *)spawn_object_1ab324, 250000.0f, 0 },
-    { 23, (void *)spawn_object_1a9c84_8c0341ec, 250000.0f, 0 },
+    { 22, (void *)TObjItemLight_create_8c034164, 250000.0f, 0 },
+    { 23, (void *)TObjRaderCol_create_8c0341ec, 250000.0f, 0 },
     { 24, (void *)TObjFogCollisionSwitch_create_8c136b34, 250000.0f, 0 },
     { 146, (void *)TObjContainerBase_ctor_8c085638, 250000.0f, 0 },
     { 65535, 0, 250000.0f, 0 }
@@ -240,22 +240,22 @@ const Record_8c2eb538 d_8c2eb538[16] = {
 
 const Record_8c2eb638 d_8c2eb638[19] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
-    { 1, (void *)spawn_object_1ab324_8c0804a8, 40000.0f, 0 },
+    { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
     { 2, (void *)TObjAreaWarpForest_create_8c033fcc, 250000.0f, 0 },
     { 3, (void *)TObjMapWarpForest_create_8c034010, 250000.0f, 0 },
     { 27, (void *)TObjAreaWarpQuest_create_8c034274, 250000.0f, 0 },
     { 6, (void *)TObjEnvSound_create_8c100dd0, 250000.0f, 0 },
     { 7, (void *)TObjFogCollision_create_8c136738, 250000.0f, 0 },
-    { 14, (void *)spawn_object_0893a8_8c185394, 250000.0f, 0 },
+    { 14, (void *)TObjRoomId_create_8c185394, 250000.0f, 0 },
     { 8, (void *)TObjEvtCollision_create_8c188120, 250000.0f, 0 },
     { 18, (void *)TObjQuestCol_create_8c034098, 250000.0f, 0 },
     { 21, (void *)TObjQuestColA_create_8c0340dc, 250000.0f, 0 },
-    { 22, (void *)spawn_object_1ab324, 250000.0f, 0 },
-    { 23, (void *)spawn_object_1a9c84_8c0341ec, 250000.0f, 0 },
+    { 22, (void *)TObjItemLight_create_8c034164, 250000.0f, 0 },
+    { 23, (void *)TObjRaderCol_create_8c0341ec, 250000.0f, 0 },
     { 24, (void *)TObjFogCollisionSwitch_create_8c136b34, 250000.0f, 0 },
     { 146, (void *)TObjContainerBase_ctor_8c085638, 250000.0f, 0 },
     { 304, (void *)TODoorVoShip_create_8c1af6e8, 250000.0f, 0 },
-    { 141, (void *)spawn_object_0893a8_8c0f2158, 250000.0f, 0 },
-    { 352, (void *)spawn_object_19d108_8c034374, 250000.0f, 0 },
+    { 141, (void *)TOCapsuleAncient01_create_8c0f2158, 250000.0f, 0 },
+    { 352, (void *)TObjWarpBoss03_create_8c034374, 250000.0f, 0 },
     { 65535, 0, 250000.0f, 0 }
 };

@@ -27,7 +27,7 @@ struct S_vv5 {
 };
 extern int g_8c4d5b10;
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern int operation_8c1a8484(int, int);
+extern int gd_read_file_sectors_8c1a8484(int, int);
 extern void TObject_dtor_8c03311c(void *, short);
 static inline void relocate(Frame *f)
 {
@@ -54,7 +54,7 @@ int operation_8c105380(int a0, int a1)
     TObject_ctor_8c0330e4((void *)(&frame), (void *)0);
     (&frame)->f18 = (void *)0x8c26586c;
     g_8c4d5b10 = a0;
-    t1 = operation_8c1a8484(a0, a1);
+    t1 = gd_read_file_sectors_8c1a8484(a0, a1);
     if (t1 > 0) {
         frame.f20 = a1;
         frame.f24 = t1;

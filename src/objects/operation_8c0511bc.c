@@ -19,7 +19,7 @@ struct Object {
 extern int lookup_low_id(int);
 extern float squared_distance_xyz(void *, void *);
 extern void operation_8c0519c8(void *);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c0511bc(Object *o)
 {
     int t1;
@@ -40,6 +40,6 @@ void operation_8c0511bc(Object *o)
                 operation_8c0519c8((void *)o);
             }
         }
-        call_8c05fbf8(0x3000f, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x3000f, (void *)(((char *)o + 0x3c)), 0, 0);
     }
 }

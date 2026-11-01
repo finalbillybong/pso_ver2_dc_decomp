@@ -64,7 +64,7 @@ extern S_g8c462a10 *g_8c462a10;
 extern int g_8c462a14;
 extern int g_8c4703c0;
 extern S_L8c2edd00 g_8c2edd00;
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern void call_8c118ea4(int, int, float, float, float);
 extern void draw_grid_offset_rows(void *, void *, void *, int, void *, void *);
@@ -98,21 +98,21 @@ void operation_8c0384b8(void)
     int t19;
     switch (g_8c4703c0) {
     case 3:
-        t1 = call_8c011ecc(0x440);
+        t1 = game_malloc_8c011ecc(0x440);
         if (t1 != 0) {
             call_8c03d610(t1, 1, (void *)((void *)0x8c2edcf0), 0, 0, 0);
         }
         g_8c462a10 = (S_g8c462a10 *)(int)(t1);
         break;
     default:
-        t2 = call_8c011ecc(0x440);
+        t2 = game_malloc_8c011ecc(0x440);
         if (t2 != 0) {
             call_8c03d610(t2, 1, (void *)((void *)0x8c2edca0), 0, 0, 0);
         }
         g_8c462a10 = (S_g8c462a10 *)(int)(t2);
         break;
     }
-    t3 = call_8c011ecc(0x18);
+    t3 = game_malloc_8c011ecc(0x18);
     if (t3 != 0) {
         call_8c118ea4(t3, 2, 9.0f, 16.0f, 0.7f);
     }

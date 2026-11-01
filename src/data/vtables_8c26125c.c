@@ -3,7 +3,7 @@
 typedef void (*VirtualFunction)(void);
 
 extern void destroy_object_8c01bb30(void);
-extern void fn_8c01b5d0(void);
+extern void check_idle_disconnect_8c01b5d0(void);
 extern void operation_8c01bb74(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
@@ -118,7 +118,7 @@ VirtualFunction const vt_8c26125c[7] = {
     0,
     0,
     destroy_object_8c01bb30,
-    fn_8c01b5d0,
+    check_idle_disconnect_8c01b5d0,
     operation_8c01bb74,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

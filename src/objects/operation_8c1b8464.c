@@ -11,7 +11,7 @@ struct Object {
     float f3b8;
     int f3bc;
 };
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c1b8464(Object *o)
 {
     float v1;
@@ -40,9 +40,9 @@ void operation_8c1b8464(Object *o)
         o->f3bc = 0;
     }
     if ((v1 == 0.0f && o->f3b8 > 0.0f) || (v1 == 1.0f && 1.0f > o->f3b8)) {
-        call_8c05fbf8(0x3002f, (void *)(((char *)o + 0x3c)), 0, 1);
+        play_se_8c05fbf8(0x3002f, (void *)(((char *)o + 0x3c)), 0, 1);
     }
     if (v1 > 0.0f && o->f3b8 == 0.0f) {
-        call_8c05fbf8(0x30030, (void *)(((char *)o + 0x3c)), 0, 1);
+        play_se_8c05fbf8(0x30030, (void *)(((char *)o + 0x3c)), 0, 1);
     }
 }

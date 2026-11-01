@@ -23,7 +23,7 @@ struct S_c8c20a5bc {
 extern int operation_8c051d18(void *);
 extern void call_8c2069b4(int, void *);
 extern void call_8c20a644(void *, void *);
-extern void call_8c18de08(int);
+extern void operator_delete_8c18de08(int);
 extern S_c8c20a5bc *recordb4_8c20a5bc(int);
 void operation_8c217728(Object *o)
 {
@@ -34,7 +34,7 @@ void operation_8c217728(Object *o)
     t1 = operation_8c051d18((void *)(o->f44));
     call_8c2069b4(t1, (void *)((void *)0x8c4dbe40));
     call_8c20a644((void *)(o->f50), (void *)((void *)0x8c4dbe40));
-    call_8c18de08(t1);
+    operator_delete_8c18de08(t1);
     v1 = (int)0;
     v2 = (int)*(int *)0x8c504a24;
     while (v2 > v1) {

@@ -49,7 +49,7 @@ struct Arg0_40 {
     int f00;
 };
 extern int call_8c1334f0(int, void *, Frame *, int, int);
-extern void call_8c011ec0(int);
+extern void game_free_8c011ec0(int);
 extern int operation_8c13f2ac(void *);
 extern void call_8c09b428(void *, int, int);
 extern void call_8c09bf94(int);
@@ -104,7 +104,7 @@ void operation_8c1405bc(Object *o)
         if (v9 != v3) {
             return;
         }
-        call_8c011ec0(t1);
+        game_free_8c011ec0(t1);
         v10 = (int)((*(Arg0_78 **)((char *)((char *)o + 0x78) + (v6)))->f30 == 2);
         if (v10 != 0) {
             v11 = (int)(*(Arg0_78 **)((char *)((char *)o + 0x78) + (v6)))->f2c;
@@ -121,7 +121,7 @@ void operation_8c1405bc(Object *o)
         }
         v14 = (int)0;
         while (6 > v14) {
-            call_8c011ec0((int)(*(S_frame_38 **)((char *)frame.f38 + (v14 << 2))));
+            game_free_8c011ec0((int)(*(S_frame_38 **)((char *)frame.f38 + (v14 << 2))));
             v14 = (int)(v14 + 1);
         }
         return;
@@ -130,7 +130,7 @@ L_8c14069e:;
         if (t3 == 0) {
             v15 = (int)0;
             while (6 > v15) {
-                call_8c011ec0((int)(*(S_frame_38 **)((char *)frame.f38 + (v15 << 2))));
+                game_free_8c011ec0((int)(*(S_frame_38 **)((char *)frame.f38 + (v15 << 2))));
                 v15 = (int)(v15 + 1);
             }
             return;
@@ -152,7 +152,7 @@ L_8c14069e:;
     call_8c09bf94((int)((int)o->f3c + 0x48));
     v18 = (int)0;
     while (6 > v18) {
-        call_8c011ec0((int)(*(S_frame_38 **)((char *)frame.f38 + (v18 << 2))));
+        game_free_8c011ec0((int)(*(S_frame_38 **)((char *)frame.f38 + (v18 << 2))));
         v18 = (int)(v18 + 1);
     }
     o->f40->f00 &= -0x81;

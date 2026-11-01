@@ -32,7 +32,7 @@ extern void func_8c3559f2(void (*)(void), int);
 extern void cb_8c341c80(void);
 extern void func_8c3409a0(int, int, int, int);
 extern volatile int g_8c51b6cc;
-extern void func_8c35575a(void (*)(void), int);
+extern void mwMng_register_lib_a_8c35575a(void (*)(void), int);
 extern void cb_8c3420b2(void);
 extern void func_8c35582c(void (*)(void), int);
 extern void cb_8c342104(void);
@@ -91,7 +91,7 @@ void mwPlyInitSofdec_8c342da6(InitArgs *p)
         func_8c3559f2(cb_8c341c80, 0);
         if (p) func_8c3409a0(p->a, p->b, p->c, p->d);
         g_8c51b6cc = 0;
-        func_8c35575a(cb_8c3420b2, 0);
+        mwMng_register_lib_a_8c35575a(cb_8c3420b2, 0);
         func_8c35582c(cb_8c342104, 0);
         func_8c3558ee(cb_8c342164, 0);
         r = func_8c34283e(0, 1, d_8c3faa80);

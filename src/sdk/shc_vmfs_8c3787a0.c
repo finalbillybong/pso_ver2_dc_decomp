@@ -306,7 +306,7 @@ int fs_step_8c378b98(Fs *fs)
     return ret;
 }
 
-int fs_mount_8c378bf8(int port, char *buf)
+int syFlash_open_partition_8c378bf8(int port, char *buf)
 {
     Fs *fs;
     Info info;
@@ -348,7 +348,7 @@ check:
     return 0;
 }
 
-int fs_format_8c378cfc(int mode)
+int syFlash_check_header_8c378cfc(int mode)
 {
     Fs *fs;
     char *h;

@@ -50,7 +50,7 @@ static inline void relocate(S_c8c122700 *f)
     }
     f->f28 = tail->f10 + f->f20;
 }
-int operation_8c104e9c(int a0)
+int load_resource_8c104e9c(int a0)
 {
     S_c8c122700 *t2;
     int t1;

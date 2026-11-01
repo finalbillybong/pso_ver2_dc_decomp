@@ -30,7 +30,7 @@ struct S_x52688 {
 extern S_c8c010768 *payload_8c010768(void *);
 extern int operation_8c0107b4(void *);
 extern int call_8c010778(Object *);
-extern void call_8c02d368(Object *, int);
+extern void dispatch_game_command_8c02d368(Object *, int);
 extern void operation_8c09cb84(void *);
 void operation_8c02d238(Object *o)
 {
@@ -86,12 +86,12 @@ void operation_8c02d238(Object *o)
         if (*(int *)((char *)o + v10) != 0) {
             q = (S_x52688 *)((char *)o + v9);
             if (q->f00 == 0x1d) {
-                call_8c02d368(o, (int)q);
+                dispatch_game_command_8c02d368(o, (int)q);
             } else {
                 operation_8c09cb84((void *)q);
             }
         } else {
-            call_8c02d368(o, (int)((int)o + v9));
+            dispatch_game_command_8c02d368(o, (int)((int)o + v9));
         }
         *(int *)((char *)o + v6) = 0;
     }

@@ -21,7 +21,7 @@ struct Arg0_20_24 {
 extern char g_8c318df4[];
 extern int operation_8c051cf0(void *);
 extern int operation_8c051d18(void *);
-extern void call_8c18de08(int);
+extern void operator_delete_8c18de08(int);
 extern int call_8c206b08(int);
 extern void operation_8c174250(int);
 static inline int icmp(const unsigned char *a, const unsigned char *b)
@@ -44,7 +44,7 @@ int operation_8c174184(Object *o)
             t2 = operation_8c051d18((void *)(o->f20));
             t3 = icmp((unsigned char *)t2, (unsigned char *)(g_8c318df4 + 0x3c3));
             if (t3 == 0) {
-                call_8c18de08(t2);
+                operator_delete_8c18de08(t2);
                 if (o->f20->f24 != 0) {
                     o->f20->f24->f68 = (unsigned int)o->f20->f24->f68 >> 1 << 1;
                 }
@@ -55,11 +55,11 @@ int operation_8c174184(Object *o)
                 if (o->f20->f24 != 0) {
                     o->f20->f24->f68 = (unsigned int)o->f20->f24->f68 >> 1 << 1;
                 }
-                call_8c18de08(t2);
+                operator_delete_8c18de08(t2);
                 return 0;
             }
             operation_8c174250(t2);
-            call_8c18de08(t2);
+            operator_delete_8c18de08(t2);
             return 1;
         }
     }

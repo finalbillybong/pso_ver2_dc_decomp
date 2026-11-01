@@ -16,22 +16,22 @@ struct Object {
     float fec;
     Arg0_f0 *ff0;
 };
-extern void call_8c38ae68(void);
-extern void call_8c382a40(void *);
-extern void call_8c37df90(int, void *);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void translate_current_matrix_v_8c382a40(void *);
+extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3827d8(void *);
 extern void operation_8c161c78(void *);
 extern void draw_tree_a702(void *, void *, float);
 extern void call_8c161ce4(void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c22a090(Object *o)
 {
     int v1;
     int v2;
     if (!(0x44 > o->fe8)) {
-        call_8c38ae68();
-        call_8c382a40((void *)(((char *)o + 0xd8)));
-        call_8c37df90(0, (void *)(o->fe4));
+        njPushMatrixEx_8c38ae68();
+        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0xd8)));
+        njRotateY_8c37df90(0, (void *)(o->fe4));
         v1 = (int)0;
         while (3 > v1) {
             v2 = (int)(v1 * 0xc);
@@ -45,6 +45,6 @@ void operation_8c22a090(Object *o)
             }
             v1 = (int)(v1 + 1);
         }
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
     }
 }

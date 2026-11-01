@@ -19,5 +19,5 @@ typedef char check_radius[(unsigned long)&((View *)0)->radius==252?1:-1];
 typedef char check_owner_copy[(unsigned long)&((View *)0)->owner_copy==256?1:-1];
 typedef char check_target[(unsigned long)&((View *)0)->target==260?1:-1];
 typedef char check_speed[(unsigned long)&((View *)0)->speed==264?1:-1];
-extern "C" {void begin_at(void),position_at(void *),color_at(int,unsigned int),transform_at(void *),draw_extended_at(void *,void *,float),draw_at(void *),end_at(void);}
-extern "C" void draw_rising_grid_view(View *o) {if(o->visible(o->range,o->radius)) {begin_at();position_at(&o->x);color_at(0,o->color);transform_at(o->transform);if(o->draw_data) draw_extended_at(o->resource,o->draw_data,o->strength);else draw_at(o->resource);end_at();}}
+extern "C" {void njPushMatrixEx_8c38ae68(void),translate_current_matrix_v_8c382a40(void *),njRotateY_8c37df90(int,unsigned int),transform_at(void *),draw_extended_at(void *,void *,float),draw_at(void *),njPopMatrixEx_8c38ad10(void);}
+extern "C" void draw_rising_grid_view(View *o) {if(o->visible(o->range,o->radius)) {njPushMatrixEx_8c38ae68();translate_current_matrix_v_8c382a40(&o->x);njRotateY_8c37df90(0,o->color);transform_at(o->transform);if(o->draw_data) draw_extended_at(o->resource,o->draw_data,o->strength);else draw_at(o->resource);njPopMatrixEx_8c38ad10();}}

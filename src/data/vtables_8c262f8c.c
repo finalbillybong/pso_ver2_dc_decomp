@@ -22,8 +22,8 @@ extern void fn_8c065258(void);
 extern void operation_8c0652e8(void);
 extern void operation_8c073514(void);
 extern void TItem_update_8c073578(void);
-extern void operation_8c073678(void);
-extern void operation_8c073e50(void);
+extern void TItem_render_8c073678(void);
+extern void TItem_render_shadow_8c073e50(void);
 extern void operation_8c073e54(void);
 extern void operation_8c074814(void);
 extern void operation_8c073900(void);
@@ -85,8 +85,8 @@ VirtualFunction const vt_8c262fdc[44] = {
     0,
     operation_8c073514,
     TItem_update_8c073578,
-    operation_8c073678,
-    operation_8c073e50,
+    TItem_render_8c073678,
+    TItem_render_shadow_8c073e50,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,

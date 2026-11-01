@@ -35,7 +35,7 @@ struct Arg0_184 {
     char unknown0[0x14];
     float f14;
 };
-extern void call_8c37f6f0(Frame *, void *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern void normalize_vector_checked(void *);
 void operation_8c047a50(Object *o, Arg1 *a1)
 {
@@ -45,7 +45,7 @@ void operation_8c047a50(Object *o, Arg1 *a1)
     v1 = (int)(o->f308 == 2);
     if (v1 != 1 && ((o->f34 & 0x4000000)) == 0) {
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&a1->f3c;
-        call_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
+        vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
         if (1e-07f > ((&frame)->f00.f00 * (&frame)->f00.f00 + (&frame)->f00.f08 * (&frame)->f00.f08)) {
             o->f318 = 0.0f;
             o->f320 = 0.0f;

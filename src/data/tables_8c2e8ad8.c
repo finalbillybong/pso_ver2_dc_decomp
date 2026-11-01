@@ -3,24 +3,24 @@
 typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2e8ad8;
 
 extern void TObjPlayerSet_ctor_8c08a420(void);
-extern void spawn_object_1ab324_8c0804a8(void);
+extern void TObjParticle_create_8c0804a8(void);
 extern void TObjAreaWarpForest_create_8c033fcc(void);
 extern void TObjMapWarpForest_create_8c034010(void);
-extern void spawn_object_1e7964(void);
-extern void spawn_object_0893a8_8c22a8ec(void);
-extern void spawn_object_0893a8_8c0ed844(void);
+extern void TObjWarpBoss_create_8c034054(void);
+extern void TObjSinBoard_create_8c22a8ec(void);
+extern void TObjLight_create_8c0ed844(void);
 extern void TItem_create_8c073270(void);
-extern void operation_8c10b278(void);
+extern void TShopGenerator_create_8c10b278(void);
 extern void TObjLuker_create_8c191a3c(void);
 extern void TObjEnvSound_create_8c100dd0(void);
 extern void TObjFogCollision_create_8c136738(void);
 extern void TObjEvtCollision_create_8c188120(void);
 extern void TObjQuestCol_create_8c034098(void);
 extern void TObjQuestColA_create_8c0340dc(void);
-extern void spawn_object_0893a8_8c0104a0(void);
-extern void spawn_object_0893a8_8c1a1400(void);
-extern void spawn_object_1a9c84(void);
-extern void spawn_object_1ab324(void);
+extern void TObjCollision_create_8c0104a0(void);
+extern void TObjMapCsn_create_8c1a1400(void);
+extern void TObjBgmCol_create_8c034120(void);
+extern void TObjItemLight_create_8c034164(void);
 extern void TObjCityMainWarp_ctor_8c1bdf60(void);
 extern void TObjCityAreaWarp_ctor_8c1be394(void);
 extern void TObjCityMapWarp_ctor_8c1be710(void);
@@ -42,30 +42,30 @@ extern void TObjCityDoor_Lobby_create_8c1c2420(void);
 extern void TOSwitchItem_ctor_8c255f2c(void);
 extern void TOSymbolchatColli_ctor_8c25638c(void);
 extern void TOSwitchAttack_ctor_8c2588b4(void);
-extern void spawn_object_1e7964_8c0341a8(void);
+extern void TObjCityMainWarpChallenge_create_8c0341a8(void);
 extern void TOSwitchTimer_ctor_8c25afe0(void);
 extern void TOChatSensor_create_8c25d8b8(void);
 
 const Record_8c2e8ad8 d_8c2e8ad8[44] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
-    { 1, (void *)spawn_object_1ab324_8c0804a8, 40000.0f, 0 },
+    { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
     { 2, (void *)TObjAreaWarpForest_create_8c033fcc, 250000.0f, 0 },
     { 3, (void *)TObjMapWarpForest_create_8c034010, 250000.0f, 0 },
-    { 25, (void *)spawn_object_1e7964, 250000.0f, 0 },
-    { 26, (void *)spawn_object_0893a8_8c22a8ec, 250000.0f, 0 },
-    { 4, (void *)spawn_object_0893a8_8c0ed844, 84100.0f, 0 },
+    { 25, (void *)TObjWarpBoss_create_8c034054, 250000.0f, 0 },
+    { 26, (void *)TObjSinBoard_create_8c22a8ec, 250000.0f, 0 },
+    { 4, (void *)TObjLight_create_8c0ed844, 84100.0f, 0 },
     { 5, (void *)TItem_create_8c073270, 250000.0f, 0 },
-    { 64, (void *)operation_8c10b278, 250000.0f, 0 },
+    { 64, (void *)TShopGenerator_create_8c10b278, 250000.0f, 0 },
     { 65, (void *)TObjLuker_create_8c191a3c, 250000.0f, 0 },
     { 6, (void *)TObjEnvSound_create_8c100dd0, 250000.0f, 0 },
     { 7, (void *)TObjFogCollision_create_8c136738, 250000.0f, 0 },
     { 8, (void *)TObjEvtCollision_create_8c188120, 250000.0f, 0 },
     { 18, (void *)TObjQuestCol_create_8c034098, 250000.0f, 0 },
     { 21, (void *)TObjQuestColA_create_8c0340dc, 250000.0f, 0 },
-    { 9, (void *)spawn_object_0893a8_8c0104a0, 250000.0f, 0 },
-    { 20, (void *)spawn_object_0893a8_8c1a1400, 250000.0f, 0 },
-    { 66, (void *)spawn_object_1a9c84, 250000.0f, 0 },
-    { 22, (void *)spawn_object_1ab324, 250000.0f, 0 },
+    { 9, (void *)TObjCollision_create_8c0104a0, 250000.0f, 0 },
+    { 20, (void *)TObjMapCsn_create_8c1a1400, 250000.0f, 0 },
+    { 66, (void *)TObjBgmCol_create_8c034120, 250000.0f, 0 },
+    { 22, (void *)TObjItemLight_create_8c034164, 250000.0f, 0 },
     { 67, (void *)TObjCityMainWarp_ctor_8c1bdf60, 250000.0f, 0 },
     { 68, (void *)TObjCityAreaWarp_ctor_8c1be394, 250000.0f, 0 },
     { 69, (void *)TObjCityMapWarp_ctor_8c1be710, 250000.0f, 0 },
@@ -87,7 +87,7 @@ const Record_8c2e8ad8 d_8c2e8ad8[44] = {
     { 32, (void *)TOSwitchItem_ctor_8c255f2c, 250000.0f, 0 },
     { 33, (void *)TOSymbolchatColli_ctor_8c25638c, 250000.0f, 0 },
     { 36, (void *)TOSwitchAttack_ctor_8c2588b4, 250000.0f, 0 },
-    { 85, (void *)spawn_object_1e7964_8c0341a8, 250000.0f, 0 },
+    { 85, (void *)TObjCityMainWarpChallenge_create_8c0341a8, 250000.0f, 0 },
     { 37, (void *)TOSwitchTimer_ctor_8c25afe0, 250000.0f, 0 },
     { 38, (void *)TOChatSensor_create_8c25d8b8, 250000.0f, 0 },
     { 65535, 0, 250000.0f, 0 }

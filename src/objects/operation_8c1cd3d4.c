@@ -17,7 +17,7 @@ struct Frame {
     float f00;
     float f04;
 };
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c199b8c(int, Frame *);
 void operation_8c1cd3d4(Object *o)
 {
@@ -26,7 +26,7 @@ void operation_8c1cd3d4(Object *o)
     if (o->f94 == 0) {
         (&frame)->f00 = o->f40 - 18.0f;
         (&frame)->f04 = 0.0f;
-        t1 = call_8c011ecc(8);
+        t1 = game_malloc_8c011ecc(8);
         if (t1 != 0) {
             call_8c199b8c(t1, (&frame));
         }

@@ -51,7 +51,7 @@ extern Pair g_8c4d8204;
 extern IPair g_8c4d820c;
 extern int g_8c4d8214;
 extern Triple g_8c4d8218;
-extern Owner *call_8c011ecc(int);
+extern Owner *game_malloc_8c011ecc(int);
 extern void call_8c03d610(Owner *, int, void *, int, int, int);
 extern int load_pvm_file_tls_8c118528(void *);
 void operation_8c1138bc(void)
@@ -60,7 +60,7 @@ void operation_8c1138bc(void)
     Owner *v;
     Model *m;
     int t;
-    o = call_8c011ecc(0x440);
+    o = game_malloc_8c011ecc(0x440);
     if (o != 0) {
         call_8c03d610(o, 5, (void *)0x8c30ff54, 0, 0, 0);
     }

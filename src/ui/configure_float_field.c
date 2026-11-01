@@ -1,6 +1,6 @@
 #include "src/include/float_field.h"
 
-extern int format_at(char *, const char *, ...);
+extern int sprintf_8c12b048(char *, const char *, ...);
 
 void configure_float_field(FloatField *field, float *value, int whole, int fractional) {
     field->value = value;
@@ -11,6 +11,6 @@ void configure_float_field(FloatField *field, float *value, int whole, int fract
     else if (fractional > 7) field->fractional_digits = 7;
     else field->fractional_digits = fractional;
     field->width = field->whole_digits + field->fractional_digits + 1;
-    format_at(field->format, (const char *)0x8c2f1ba0, field->width, field->fractional_digits);
+    sprintf_8c12b048(field->format, (const char *)0x8c2f1ba0, field->width, field->fractional_digits);
     field->cursor = field->fractional_digits + 1;
 }

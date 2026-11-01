@@ -46,8 +46,8 @@ extern "C" void TObject_ctor_8c0330e4(void *, void *);
 extern "C" void call_8c35e6d8(void *);
 extern "C" void memset_8c12b880(void *, int, int);
 extern "C" int call_8c34273e(void *, void *, void *, void *, void *);
-extern "C" int call_8c011e9c(void *);
-extern "C" int call_8c340cb0(void *);
+extern "C" int game_malloc_buffer_8c011e9c(void *);
+extern "C" int mwPlyCreateSofdec_8c340cb0(void *);
 extern "C" void strncpy_8c12b154(void *, int, int);
 extern "C" Object *operation_8c08aefc(Object *o, int a1, int a2, int a3)
 {
@@ -76,13 +76,13 @@ extern "C" Object *operation_8c08aefc(Object *o, int a1, int a2, int a3)
         t1 = call_8c34273e((void *)(p->f24), (void *)(p->f28), (void *)(p->f2c), (void *)(p->f30), (void *)(p->f34));
     }
     o->f3c = (Arg0_3c *)(int)t1;
-    t2 = call_8c011e9c((void *)(o->f3c));
+    t2 = game_malloc_buffer_8c011e9c((void *)(o->f3c));
     o->f38 = (int)t2;
     if (o->f38 == 0) {
         o->f04 |= 1;
         return o;
     }
-    t3 = call_8c340cb0((void *)(&o->f24));
+    t3 = mwPlyCreateSofdec_8c340cb0((void *)(&o->f24));
     o->f20 = (Arg0_20 *)(int)t3;
     if (o->f20 == 0) {
         o->f04 |= 1;

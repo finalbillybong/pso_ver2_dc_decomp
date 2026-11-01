@@ -21,7 +21,7 @@ extern int operation_8c220ce0(void);
 extern int operation_8c106760(Object *);
 extern int operation_8c106798(Object *);
 extern int operation_8c19b054(void);
-extern int call_8c372d98(int);
+extern int bu_check_busy_8c372d98(int);
 extern void memcpy_8c12b77c(void *, void *, int);
 extern void operation_8c1066c0(Object *);
 extern void operation_8c10664c(void *);
@@ -42,7 +42,7 @@ void operation_8c15be6c(Object *o)
             }
         }
         t4 = operation_8c19b054();
-        t5 = call_8c372d98((int)((char)t4));
+        t5 = bu_check_busy_8c372d98((int)((char)t4));
         if (t5 == 0) {
             if (g_8c4db9e4 != 0) {
                 g_8c4db9e4->f248 = (int)(g_8c4db124);

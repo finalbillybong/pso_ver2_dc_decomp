@@ -10,7 +10,7 @@ extern S_g8c4dbaf4 *g_8c4dbaf4;
 extern S_g8c4dbb14 *g_8c4dbb14;
 extern int call_8c372d38(int, void *);
 extern void word_operation_8c18490c(unsigned int);
-extern int operation_8c010240(int, int, int);
+extern int vmu_load_file_8c010240(int, int, int);
 int operation_8c181140(int a0)
 {
     int v1;
@@ -28,7 +28,7 @@ int operation_8c181140(int a0)
             if (t1 == 0) {
                 word_operation_8c18490c((unsigned int)g_8c4dbaf4);
                 g_8c41cb3c = 1;
-                t2 = operation_8c010240((int)g_8c4dbaf4, (int)((void *)0x8c319912), (int)g_8c4dbb14);
+                t2 = vmu_load_file_8c010240((int)g_8c4dbaf4, (int)((void *)0x8c319912), (int)g_8c4dbb14);
                 v1 = (int)t2;
             }
             v21 = (int)v1;

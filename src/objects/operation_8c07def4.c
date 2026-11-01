@@ -53,7 +53,7 @@ extern S_c8c1c7658 *call_8c1c7658(Arg1 *);
 extern S_c8c158520 *operation_8c158520(int, int);
 extern int operation_8c1f2528(void *, int);
 extern void create_effect_777c(void *, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern int operation_8c07dca8(void *, void *);
 int operation_8c07def4(Object *o, Arg1 *a1)
 {
@@ -106,7 +106,7 @@ int operation_8c07def4(Object *o, Arg1 *a1)
             }
             v12 = (int)(v12 + 1);
         }
-        call_8c05fbf8(0x50011, (int)((int)o->f13c + 0x3c), 0, 0);
+        play_se_8c05fbf8(0x50011, (int)((int)o->f13c + 0x3c), 0, 0);
     }
     t4 = operation_8c07dca8((void *)o, (void *)(&(&frame)->f0c));
     return (int)(t4);

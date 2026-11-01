@@ -23,7 +23,7 @@ extern S_g8c46718c *g_8c46718c;
 extern char g_8c41cba0[];
 extern int operation_8c01d844(int, int, int, int);
 extern int operation_8c01d858(int, int, int, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c1e2d64(void *);
 extern void operation_8c1e2dc4(void *);
 extern void operation_8c1e2e84(void *);
@@ -93,7 +93,7 @@ void operation_8c1def88(Object *o)
         }
     }
 L_8c1df080:;
-    call_8c05fbf8(0x50000, 0, 0, 0);
+    play_se_8c05fbf8(0x50000, 0, 0, 0);
     if (((o->f68 & 0x40)) != 0) {
         if ((char)v1 > 0) {
             operation_8c1e2d64((void *)(o->f70));

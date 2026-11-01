@@ -30,8 +30,8 @@ typedef struct Arg0_20Data {
 
 } Arg0_20Data;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern "C" void call_8c380516(void);
-extern "C" void call_8c011ec0(void *);
+extern "C" void wait_vsync_and_flip_8c380516(void);
+extern "C" void game_free_8c011ec0(void *);
 extern "C" void call_8c35e6ee(void);
 extern "C" void TObject_dtor_8c03311c(void *, short);
 extern "C" void call_8c122774(void *, Object *);
@@ -42,16 +42,16 @@ extern "C" Object *operation_8c08b22c(Object *o, int a1)
         o->dispatch = (void *)(void *)0x8c265288;
         if (o->f20 != 0) {
             o->f20->v5();
-            call_8c380516();
-            call_8c380516();
-            call_8c380516();
+            wait_vsync_and_flip_8c380516();
+            wait_vsync_and_flip_8c380516();
+            wait_vsync_and_flip_8c380516();
             o->f20->v3();
-            call_8c380516();
-            call_8c380516();
-            call_8c380516();
+            wait_vsync_and_flip_8c380516();
+            wait_vsync_and_flip_8c380516();
+            wait_vsync_and_flip_8c380516();
         }
         if (o->f38 != 0) {
-            call_8c011ec0((void *)(o->f38));
+            game_free_8c011ec0((void *)(o->f38));
         }
         v20 = (char *)o->f68;
         if (v20 != 0) {

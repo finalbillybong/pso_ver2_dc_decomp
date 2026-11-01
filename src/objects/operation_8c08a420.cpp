@@ -33,7 +33,7 @@ extern int g_8c300198;
 extern S_g8c44be9c *g_8c44be9c;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern "C" void call_8c01d1ec(S_c8c122700 *, void *);
+extern "C" void TObjectShared_ctor_8c01d1ec(S_c8c122700 *, void *);
 extern "C" S_c8c122700 *TObjPlayerSet_ctor_8c08a420(int a0)
 {
     S_c8c122700 *t1;
@@ -42,7 +42,7 @@ extern "C" S_c8c122700 *TObjPlayerSet_ctor_8c08a420(int a0)
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;
         (void)home;
-        call_8c01d1ec(t1, g_8c44be9c);
+        TObjectShared_ctor_8c01d1ec(t1, g_8c44be9c);
         *(void **)((char *)self + 0x18) = (void *)(void *)0x8c26522c;
         ((S_c8c122700Data *)self)->f00 = (int)(g_8c300198);
         ((S_c8c122700Data *)self)->f1e = 0x94;

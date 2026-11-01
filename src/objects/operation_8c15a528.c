@@ -55,7 +55,7 @@ struct Arg0_dc {
 extern S_g8c4da87c *g_8c4da87c;
 extern int g_8c4dab20;
 extern S_c8c021ef8 *lookup_low_id(int);
-extern void call_8c37f6f0(void *, void *);
+extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern void scale_vector_to_length(void *, float);
 extern void call_8c3bdf60(void *, void *);
 extern void call_8c0c5018(void *, void *, void *);
@@ -75,7 +75,7 @@ void operation_8c15a528(Object *o)
     t1 = lookup_low_id((int)(o->f104));
     if (t1 != 0) {
         *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&t1->f324;
-        call_8c37f6f0((void *)(&(&frame)->f0c), (void *)(&o->f3c));
+        vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f0c), (void *)(&o->f3c));
         scale_vector_to_length((void *)(&(&frame)->f0c), g_8c4da87c->f04);
         call_8c3bdf60((void *)(&o->fec), (void *)(&(&frame)->f0c));
         scale_vector_to_length((void *)(&o->fec), g_8c4da87c->f00);

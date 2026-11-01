@@ -80,7 +80,7 @@ extern "C" void call_8c07fd18(Object *, int);
 extern "C" S_c8c1581ac *operation_8c1581ac(int);
 extern "C" void call_8c20775c(void *, char);
 extern "C" void call_8c07f9b0(Object *);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void call_8c07fa4c(Object *);
 extern "C" void operation_8c07f694(Object *o, int a1)
 {
@@ -129,7 +129,7 @@ L_8c07f74c:;
             call_8c07f9b0(o);
         }
         if (((((ObjectData *)o)->fec & 0x40)) == 0) {
-            call_8c05fbf8(0xa, (void *)(((char *)((ObjectData *)o)->f13c + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0xa, (void *)(((char *)((ObjectData *)o)->f13c + 0x3c)), 0, 0);
         }
         call_8c07fa4c(o);
     }

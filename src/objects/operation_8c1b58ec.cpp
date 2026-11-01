@@ -68,7 +68,7 @@ extern S_L8c3268ec g_8c3268ec;
 extern "C" int operation_8c1ae1ec(void *, void *, void *);
 extern "C" int create_context_actor_8c1bbe54(void *);
 extern "C" void create_effect_777c(void *, int);
-extern "C" void call_8c05fbf8(int, S_vv2 *, int, int);
+extern "C" void play_se_8c05fbf8(int, S_vv2 *, int, int);
 extern "C" void mark_effect_for_release(void *);
 extern "C" int call_8c18e6fc(Frame *);
 extern "C" void operation_8c1b58ec(Object *o)
@@ -90,13 +90,13 @@ extern "C" void operation_8c1b58ec(Object *o)
             *(Vector3 *)&(&frame)->f10.f10 = *(Vector3 *)&p->f00;
             if (create_context_actor_8c1bbe54((void *)(&(&frame)->f0c)) != 0) {
                 create_effect_777c((void *)p, 0x7d);
-                call_8c05fbf8(0x30010, p, 0, 1);
+                play_se_8c05fbf8(0x30010, p, 0, 1);
                 o->f3d0 += 1;
             }
         }
     }
     if (o->f3a0 == 0x106) {
-        call_8c05fbf8(0x3000f, p, 0, 1);
+        play_se_8c05fbf8(0x3000f, p, 0, 1);
     }
     if (!(--o->f3a0 >= 0)) {
         o->f3d8 = 5;

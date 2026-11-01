@@ -42,7 +42,7 @@ extern int g_8c467870;
 extern int g_8c467874;
 extern int g_8c467878;
 extern float call_8c12c714(float);
-extern float call_8c37f6c0(float);
+extern float signed_sqrt_8c37f6c0(float);
 extern void scale_vector_to_length(void *, float);
 extern void operation_8c13a344(void *, void *, int);
 void operation_8c139fc4(int a0)
@@ -94,7 +94,7 @@ void operation_8c139fc4(int a0)
                                 dir.x = pos.x;
                                 dir.y = 0.0f;
                                 dir.z = pos.z - fv1;
-                                t2 = call_8c37f6c0(dir.x * dir.x + dir.z * dir.z);
+                                t2 = signed_sqrt_8c37f6c0(dir.x * dir.x + dir.z * dir.z);
                                 if (50.0f > t2) {
                                     scale_vector_to_length((void *)(&dir), 50.0f);
                                     pos.x = dir.x;

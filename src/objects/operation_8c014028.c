@@ -18,9 +18,9 @@ struct S_x3568 {
 };
 extern int get_current_area_8c032b10(void);
 extern void operation_8c105458(int, int, int);
-extern int call_8c011e9c(int);
-extern void call_8c011ec0(int);
-void operation_8c014028(void)
+extern int game_malloc_buffer_8c011e9c(int);
+extern void game_free_8c011ec0(int);
+void reload_light_entries_8c014028(void)
 {
     int v3;
     int v4;
@@ -37,7 +37,7 @@ void operation_8c014028(void)
         operation_8c105458((int)((void *)0x8c2e2f0c), (int)(*(S_g8c4189e4 **)0x8c4189e4), (int)(*(S_g8c4189e8 **)0x8c4189e8));
         return;
     }
-    t1 = call_8c011e9c(0xe58);
+    t1 = game_malloc_buffer_8c011e9c(0xe58);
     if (t1 != 0) {
         v4 = (int)0;
         while (0x36 > v4) {
@@ -45,6 +45,6 @@ void operation_8c014028(void)
             v4 = (int)(v4 + 1);
         }
         operation_8c105458((int)((void *)0x8c2e2f0c), t1, 0xe58);
-        call_8c011ec0(t1);
+        game_free_8c011ec0(t1);
     }
 }

@@ -25,7 +25,7 @@ struct S_g8c4704e4 {
 extern S_g8c4704e0 *g_8c4704e0;
 extern S_g8c4704e4 *g_8c4704e4;
 extern char g_8c308fd0[];
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern S_c8c18de4c *operator_new_8c18de4c(int);
 extern int load_pvm_file_tls_8c118528(void *);
@@ -34,7 +34,7 @@ void operation_8c0efbd0(void)
     int t1;
     S_c8c18de4c *t2;
     int t3;
-    t1 = call_8c011ecc(0x440);
+    t1 = game_malloc_8c011ecc(0x440);
     if (t1 != 0) {
         call_8c03d610(t1, 1, (void *)((void *)0x8c308f90), 0, 0, 0);
     }

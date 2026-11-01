@@ -38,7 +38,7 @@ struct Arg0_s9c {
     int f04;
 };
 extern int g_8c30affc;
-extern "C" void call_8c01d1ec(Object *);
+extern "C" void TObjectShared_ctor_8c01d1ec(Object *);
 extern "C" int get_current_area_8c032b10(void);
 typedef struct Pair8 {
     int a;
@@ -50,7 +50,7 @@ extern "C" Object *operation_8c100b4c(Object *o, int a1, int a2)
     int v1;
     int t1;
     (void)home;
-    call_8c01d1ec(o);
+    TObjectShared_ctor_8c01d1ec(o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c269538;
     ((ObjectData *)o)->tag = (int)(g_8c30affc);
     ((ObjectData *)o)->size = 0xa4;

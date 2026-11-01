@@ -34,7 +34,7 @@ struct Frame {
     float f08;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern void call_8c38ad50(int, void *, void *);
+extern void project_point_to_screen_8c38ad50(int, void *, void *);
 Object *operation_8c245d6c(Object *o, Arg1 *a1, Arg2 *a2, int a3)
 {
     Frame frame;
@@ -46,7 +46,7 @@ Object *operation_8c245d6c(Object *o, Arg1 *a1, Arg2 *a2, int a3)
     o->size = 0x50;
     *(Block20 *)&o->f3c = *(Block20 *)&a2->f00;
     *(Vector3 *)&o->f30 = *(Vector3 *)&a1->f00;
-    call_8c38ad50(0, (void *)(&o->f30), (void *)(&(&frame)->f04));
+    project_point_to_screen_8c38ad50(0, (void *)(&o->f30), (void *)(&(&frame)->f04));
     o->f28 = (&frame)->f04;
     o->f2c = (&frame)->f08;
     o->f20 = o->f28;

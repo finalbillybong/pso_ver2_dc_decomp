@@ -61,7 +61,7 @@ struct Frame {
 extern int operation_8c05bbf8(void);
 extern float object_random_fraction(void *);
 extern void call_8c044410(Object *, void *, float);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c01c5f0(void *);
 extern int query_capped_segment(void *, void *);
 extern void apply_object_velocity(void *);
@@ -86,7 +86,7 @@ void operation_8c0cea60(Object *o)
         o->ff0 = 3;
         call_8c044410(o, (void *)(o->f64), -7.0f);
         o->f398 = 1;
-        call_8c05fbf8(0x30006, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30006, (void *)(((char *)o + 0x3c)), 0, 0);
         o->f3e8 = (int)((*(S_g8c46fab8 **)((o->f384 << 2) + 0x8c46fab8))->f20);
 L_8c0ceb00:;
         o->f34 &= -0x200001;

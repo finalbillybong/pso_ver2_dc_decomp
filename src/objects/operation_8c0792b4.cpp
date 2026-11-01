@@ -167,7 +167,7 @@ extern "C" void operation_8c07a7ec(Object *);
 extern "C" int create_effect_769c(void *, int);
 extern "C" void call_8c0a7608(void *, void *);
 extern "C" void operation_8c027090(int);
-extern "C" void operation_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void operation_8c07ac08(void *);
 extern "C" void call_8c07aad0(Object *);
 extern "C" void create_effect_777c(void *, int);
@@ -278,7 +278,7 @@ L_8c079542:
         }
     }
     operation_8c027090((int)o);
-    operation_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+    minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
     return;
 L_8c0795ac:
     ;

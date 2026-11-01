@@ -13,7 +13,7 @@ struct Object {
     int fd8;
     float fdc;
 };
-extern float call_8c37eb0c(int);
+extern float njSin_8c37eb0c(int);
 void operation_8c0a19f0(Object *o)
 {
     float v1;
@@ -29,7 +29,7 @@ void operation_8c0a19f0(Object *o)
         v4 = (float)(float)(unsigned int)v2;
         o->f68 = 0.0f;
         v1 = (float)(v1 * v4);
-        t1 = call_8c37eb0c((int)((int)((float)v5 * 65536.0f / 360.0f)));
+        t1 = njSin_8c37eb0c((int)((int)((float)v5 * 65536.0f / 360.0f)));
         o->f6c = v1 * t1;
         o->f70 = 0.0f;
     }

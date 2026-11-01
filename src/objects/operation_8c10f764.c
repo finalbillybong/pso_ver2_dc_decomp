@@ -46,12 +46,12 @@ struct Arg4 {
     float f04;
     float f08;
 };
-extern float call_8c37e480(void *);
-extern void call_8c37b630(void *);
-extern void call_8c38ade4(void *);
-extern void call_8c37df90(int, int);
+extern float njScalor_8c37e480(void *);
+extern void njUnitVector_8c37b630(void *);
+extern void njPushMatrix_8c38ade4(void *);
+extern void njRotateY_8c37df90(int, int);
 extern void call_8c3be280(int, void *, void *);
-extern void call_8c38accc(int);
+extern void njPopMatrix_8c38accc(int);
 extern float call_8c3845f0(Frame *, void *);
 void operation_8c10f764(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3, Arg4 *a4)
 {
@@ -62,24 +62,24 @@ void operation_8c10f764(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3, Arg4 *a4)
     (&frame)->f24.f00 = -a3->f00;
     (&frame)->f24.f04 = 0.0f;
     (&frame)->f24.f08 = -a3->f08;
-    t1 = call_8c37e480((void *)(&(&frame)->f24));
+    t1 = njScalor_8c37e480((void *)(&(&frame)->f24));
     if (t1 != 0.0f) {
-        call_8c37b630((void *)(&(&frame)->f24));
+        njUnitVector_8c37b630((void *)(&(&frame)->f24));
     }
-    call_8c38ade4((void *)((void *)0x8c400500));
-    call_8c37df90(0, 0x4000);
+    njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
+    njRotateY_8c37df90(0, 0x4000);
     call_8c3be280(0, (void *)(&(&frame)->f24), (void *)(&(&frame)->f18));
-    call_8c38accc(1);
-    call_8c38ade4((void *)((void *)0x8c400500));
-    call_8c37df90(0, -0x4000);
+    njPopMatrix_8c38accc(1);
+    njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
+    njRotateY_8c37df90(0, -0x4000);
     call_8c3be280(0, (void *)(&(&frame)->f24), (void *)(&(&frame)->f0c));
-    call_8c38accc(1);
+    njPopMatrix_8c38accc(1);
     (&frame)->f00 = a2->f00 - a1->f00;
     (&frame)->f04 = 0.0f;
     (&frame)->f08 = a2->f08 - a1->f08;
-    t2 = call_8c37e480((void *)(&frame));
+    t2 = njScalor_8c37e480((void *)(&frame));
     if (t2 != 0.0f) {
-        call_8c37b630((void *)(&frame));
+        njUnitVector_8c37b630((void *)(&frame));
     }
     t3 = call_8c3845f0((Frame *)((&frame)), (void *)(&(&frame)->f18));
     if (t3 > 0.0f) {

@@ -18,7 +18,7 @@ static inline Contact *query_scaled_contact(View *o,float dx,float dz,float scal
  return query(&o->query_position,&destination,0x400008e0);
 }
 typedef char check_radius[(unsigned long)&((View *)0)->radius==920 && (unsigned long)&((View *)0)->failures==924 ? 1:-1];
-extern float square_root(float);
+extern float signed_sqrt_8c37f6c0(float);
 void clamp_scaled_contact(View *o,Vector3 *out,float dx,float dz,float scale) {
  Contact *contact=query_scaled_contact(o,dx,dz,o->radius+scale);
  if(!contact)o->failures=0;
@@ -27,7 +27,7 @@ void clamp_scaled_contact(View *o,Vector3 *out,float dx,float dz,float scale) {
   o->failures++;
   x=contact->geometry->position.x-o->position.x;
   z=contact->geometry->position.z-o->position.z;
-  scale=square_root(x*x+z*z)-o->radius;
+  scale=signed_sqrt_8c37f6c0(x*x+z*z)-o->radius;
  }
  out->x=dx*scale+o->position.x;
  out->y=o->position.y;

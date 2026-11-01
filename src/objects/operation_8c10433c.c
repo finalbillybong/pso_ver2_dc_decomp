@@ -26,7 +26,7 @@ struct Arg3 {
     Vector3 f00;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern void call_8c37f6f0(void *, void *);
+extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern float normalize_vector_checked(void *);
 Object *operation_8c10433c(Object *o, int a1, Arg2 *a2, Arg3 *a3)
 {
@@ -41,7 +41,7 @@ Object *operation_8c10433c(Object *o, int a1, Arg2 *a2, Arg3 *a3)
     o->f38 = a3->f00;
     o->f20 = o->f2c;
     o->f44 = o->f38;
-    call_8c37f6f0((void *)(&o->f44), (void *)(&o->f2c));
+    vector_sub_in_place_8c37f6f0((void *)(&o->f44), (void *)(&o->f2c));
     t1 = normalize_vector_checked((void *)(&o->f44));
     o->f50 = t1;
     o->f54 = 0.0f;

@@ -15,7 +15,7 @@ extern void call_8c035388(void);
 extern void call_8c17f538(void);
 extern int save_system_file_8c1818c0(void);
 extern void call_8c191504(int);
-extern int call_8c372d98(void *);
+extern int bu_check_busy_8c372d98(void *);
 extern void call_8c184918(void);
 extern int load_system_file_8c181074(void);
 extern void call_8c17f648(void);
@@ -53,7 +53,7 @@ void operation_8c17e194(void)
         return;
     case 6:
         call_8c191504(0);
-        t2 = call_8c372d98(g_8c4dbaf0);
+        t2 = bu_check_busy_8c372d98(g_8c4dbaf0);
         if (t2 != 0) {
             return;
         }
@@ -70,7 +70,7 @@ void operation_8c17e194(void)
         return;
     case 8:
         call_8c191504(0);
-        t4 = call_8c372d98(g_8c4dbaf0);
+        t4 = bu_check_busy_8c372d98(g_8c4dbaf0);
         if (t4 != 0) {
             return;
         }
@@ -91,7 +91,7 @@ void operation_8c17e194(void)
         return;
     case 11:
         call_8c191504(0);
-        t6 = call_8c372d98(g_8c4dbaf0);
+        t6 = bu_check_busy_8c372d98(g_8c4dbaf0);
         if (t6 != 0) {
             return;
         }
@@ -101,7 +101,7 @@ void operation_8c17e194(void)
         return;
     case 13:
         call_8c191504(0);
-        t7 = call_8c372d98(g_8c4dbaf4);
+        t7 = bu_check_busy_8c372d98(g_8c4dbaf4);
         if (t7 != 0) {
             return;
         }
@@ -115,7 +115,7 @@ void operation_8c17e194(void)
         return;
     case 12:
         call_8c191504(0);
-        t8 = call_8c372d98(g_8c4dbaf4);
+        t8 = bu_check_busy_8c372d98(g_8c4dbaf4);
         if (t8 == 0) {
             g_8c4dbaec = 0;
             call_8c184918();

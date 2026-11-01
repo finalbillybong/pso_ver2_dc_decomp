@@ -54,7 +54,7 @@ extern void operation_8c03abf0(void *);
 extern void call_8c03ad3c(Object *);
 extern void call_8c027090(Object *);
 extern void update_context_blend(void *);
-extern void call_8c102cd0(void *, int, int, int);
+extern void minimap_add_marker_8c102cd0(void *, int, int, int);
 void operation_8c03879c(Object *o)
 {
     int t1;
@@ -108,5 +108,5 @@ void operation_8c03879c(Object *o)
     }
     o->f180 += 1.0f;
     update_context_blend((void *)(((char *)o + 0x3b8)));
-    call_8c102cd0((void *)(&o->f3c), -0x5db4, 1, 0);
+    minimap_add_marker_8c102cd0((void *)(&o->f3c), -0x5db4, 1, 0);
 }

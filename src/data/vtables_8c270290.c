@@ -123,8 +123,8 @@ extern void fn_8c1751b8(void);
 extern void operation_8c1754b8(void);
 extern void destroy_object_8c1755f8(void);
 extern void TItem_update_8c073578(void);
-extern void operation_8c073678(void);
-extern void operation_8c073e50(void);
+extern void TItem_render_8c073678(void);
+extern void TItem_render_shadow_8c073e50(void);
 extern void operation_8c051fd4(void);
 extern void operation_8c073e54(void);
 extern void operation_8c0771c4(void);
@@ -321,8 +321,8 @@ VirtualFunction const vt_8c2704a0[61] = {
     0,
     destroy_object_8c1755f8,
     TItem_update_8c073578,
-    operation_8c073678,
-    operation_8c073e50,
+    TItem_render_8c073678,
+    TItem_render_shadow_8c073e50,
     hierarchy_output,
     operation_8c0104fc,
     fn_8c01d694,

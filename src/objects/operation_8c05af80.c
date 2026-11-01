@@ -22,7 +22,7 @@ struct Arg1 {
 struct S_vv1 {
     Vector3 f00;
 };
-extern void call_8c37f6f0(S_vv1 *, void *);
+extern void vector_sub_in_place_8c37f6f0(S_vv1 *, void *);
 extern void rotate_scalar_pair(void *, void *, int);
 void operation_8c05af80(Object *o, Arg1 *a1, int a2)
 {
@@ -30,6 +30,6 @@ void operation_8c05af80(Object *o, Arg1 *a1, int a2)
     *(Vector3 *)&((S_x22768 *)((int)o->fdc + 0x1c + a2 * 0x2c))->f00 = *(Vector3 *)&a1->f00;
     v1 = (S_vv1 *)((int)o->fdc + a2 * 0x2c);
     *(Vector3 *)&v1->f00 = *(Vector3 *)&a1->f00;
-    call_8c37f6f0(v1, (void *)(((char *)o + 0x3c)));
+    vector_sub_in_place_8c37f6f0(v1, (void *)(((char *)o + 0x3c)));
     rotate_scalar_pair((void *)v1, (void *)((int)v1 + 8), (int)(-(int)(o->f64)));
 }

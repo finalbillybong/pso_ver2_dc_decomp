@@ -8,11 +8,11 @@ struct Object {
     char unknown0[0x80];
     char f80;
 };
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c225338(Object *o)
 {
     if (((o->f80 & 1)) == 0) {
-        call_8c05fbf8(0x50016, 0, 0, 0);
+        play_se_8c05fbf8(0x50016, 0, 0, 0);
         o->f80 |= 2;
     }
 }

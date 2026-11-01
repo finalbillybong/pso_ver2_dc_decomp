@@ -32,14 +32,14 @@ typedef struct ObjectData {
     float f9c;
     int fa0;
 } ObjectData;
-extern "C" void call_8c01d1ec(Object *);
+extern "C" void TObjectShared_ctor_8c01d1ec(Object *);
 extern "C" int call_8c18e8a0(void *, int);
 extern "C" Object *operation_8c1a9c84(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    call_8c01d1ec(o);
+    TObjectShared_ctor_8c01d1ec(o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c274690;
     ((ObjectData *)o)->tag = (int)(*(int *)0x8c324d7c);
     ((ObjectData *)o)->size = 0xa4;

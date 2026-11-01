@@ -33,7 +33,7 @@ extern int angle_halfway(int, int);
 extern void operation_8c04a43c(void *, void *, float);
 extern void call_8c0521a0(Object *);
 extern void call_8c05228c(Object *);
-extern void call_8c102cd0(void *, int, int, int);
+extern void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern void call_8c027090(Object *);
 void operation_8c0bf3a4(Object *o)
 {
@@ -78,7 +78,7 @@ void operation_8c0bf3a4(Object *o)
 L_8c0bf44a:;
     call_8c0521a0(o);
     call_8c05228c(o);
-    call_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+    minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
     call_8c027090(o);
     o->f34 &= -0x200001;
 }

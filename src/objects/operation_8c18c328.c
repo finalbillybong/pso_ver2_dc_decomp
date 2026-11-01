@@ -32,7 +32,7 @@ struct S_vv73 {
 };
 extern char g_8c41cba0[];
 extern int operation_8c01d8a8(void *, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c18c768(void *);
 extern void call_8c18cb7c(Object *);
 extern void request_resource_release(void *);
@@ -63,7 +63,7 @@ void operation_8c18c328(Object *o)
                 return;
             }
         }
-        call_8c05fbf8(0x50016, 0, 0, 0);
+        play_se_8c05fbf8(0x50016, 0, 0, 0);
         if (!(o->f52 > 0)) {
             operation_8c18c768((void *)o);
             return;

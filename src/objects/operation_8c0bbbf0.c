@@ -36,7 +36,7 @@ struct S_vv5 {
 struct S_vv6 {
     Vector3 f00;
 };
-extern int call_8c011e9c(int);
+extern int game_malloc_buffer_8c011e9c(int);
 extern void call_8c3bdf60(Frame *, void *);
 void operation_8c0bbbf0(Object *o, int a1, int a2, int a3)
 {
@@ -60,7 +60,7 @@ void operation_8c0bbbf0(Object *o, int a1, int a2, int a3)
         v1 = (S_vv1 *)((char *)v1 + 24);
         o->f20 += 1;
     }
-    t1 = call_8c011e9c((int)(v2 * 0xc));
+    t1 = game_malloc_buffer_8c011e9c((int)(v2 * 0xc));
     o->f30 = (Arg0_30 *)t1;
     v4 = (S_vv4 *)o->f24;
     v5 = (S_vv5 *)o->f28;

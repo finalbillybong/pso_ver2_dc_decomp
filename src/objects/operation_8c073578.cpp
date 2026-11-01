@@ -44,7 +44,7 @@ struct Arg0_13c {
     char unknown0[0x34];
     int f34;
 };
-extern "C" void call_8c07383c(Object *);
+extern "C" void TItem_update_on_floor_8c07383c(Object *);
 extern "C" int lookup_low_id(int);
 extern "C" void operation_8c074d44(void *);
 extern "C" void TItem_update_8c073578(Object *o)
@@ -61,7 +61,7 @@ extern "C" void TItem_update_8c073578(Object *o)
             }
             return;
         }
-        call_8c07383c(o);
+        TItem_update_on_floor_8c07383c(o);
         return;
 L_8c0735a6:;
         ((ObjectData *)o)->f34 &= -0x8000001;

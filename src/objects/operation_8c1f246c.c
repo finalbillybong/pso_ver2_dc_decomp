@@ -46,17 +46,17 @@ struct Arg0_34 {
     int f20;
     int f24;
 };
-extern void call_8c382a40(void *);
-extern void call_8c37df90(int, int);
+extern void translate_current_matrix_v_8c382a40(void *);
+extern void njRotateY_8c37df90(int, int);
 extern void call_8c37ddbc(int, int, int, int);
-extern void call_8c37e2e4(int, float, float, float);
+extern void njScale_8c37e2e4(int, float, float, float);
 void operation_8c1f246c(Object *o)
 {
     int v1;
     int v3;
     int v5;
     int v7;
-    call_8c382a40((void *)(((char *)o + 0xa4)));
+    translate_current_matrix_v_8c382a40((void *)(((char *)o + 0xa4)));
     v1 = (int)(o->f24->f308 == 7);
     if (v1 != 0) {
         v7 = (int)o->f24->f64;
@@ -71,13 +71,13 @@ void operation_8c1f246c(Object *o)
             }
             v7 = (int)v5;
         }
-        call_8c37df90(0, v7);
+        njRotateY_8c37df90(0, v7);
     } else {
-        call_8c37df90(0, (int)(o->f24->f64));
+        njRotateY_8c37df90(0, (int)(o->f24->f64));
     }
-    call_8c382a40((void *)(((char *)o + 0xb0)));
+    translate_current_matrix_v_8c382a40((void *)(((char *)o + 0xb0)));
     if (o->f34 != 0) {
         call_8c37ddbc(0, (int)(o->f34->f1c + (int)o->f38), (int)(o->f34->f20 + (int)o->f3c), (int)(o->f34->f24 + (int)o->f40));
     }
-    call_8c37e2e4(0, o->fcc, o->fcc, o->fcc);
+    njScale_8c37e2e4(0, o->fcc, o->fcc, o->fcc);
 }

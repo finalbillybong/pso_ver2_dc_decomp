@@ -33,14 +33,14 @@ extern int obj_8c400698;
 
 static void copy_words_8c359996(int *d, int *s, int n);
 
-int *palette_table_8c3598d0(void)
+int *DCT_init_8c3598d0(void)
 {
     return str_8c3f6118;
 }
 
 void palette_init_8c3598d6(int *buf)
 {
-    cur_8c548310 = palette_table_8c3598d0();
+    cur_8c548310 = DCT_init_8c3598d0();
     if (buf) {
         buf_a_8c5483b4 = buf;
         buf_b_8c5483b8 = buf + 0x10;

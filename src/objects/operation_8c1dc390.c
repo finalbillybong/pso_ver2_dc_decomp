@@ -20,12 +20,12 @@ struct Object {
 struct Arg0_30_0 {
     int f00;
 };
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void call_8c19a044(void *, int);
 void operation_8c1dc390(Object *o)
 {
     if ((((*(Arg0_30_0 **)((char *)((char *)o->f30 + 0x0) + (o->f84 << 2)))->f00 & 0x80)) == 0) {
-        call_8c05fbf8(0x50001, 0, 0, 0);
+        play_se_8c05fbf8(0x50001, 0, 0, 0);
         o->f80 = (o->f80 & 0xffff) | 2;
         if (o->f88 != 0) {
             call_8c19a044((void *)(o->f88), 2);

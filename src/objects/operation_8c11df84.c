@@ -12,14 +12,14 @@ struct Object {
     Arg0_3d4 *f3d4;
     float f3d8;
 };
-extern float call_8c37eb0c(void *);
+extern float njSin_8c37eb0c(void *);
 void operation_8c11df84(Object *o)
 {
     float v1;
     float t1;
     if (((o->f3a4 & 0x20000)) != 0) {
         *(int *)((char *)o + 0x3d4) += 0x200;
-        t1 = call_8c37eb0c((void *)(o->f3d4));
+        t1 = njSin_8c37eb0c((void *)(o->f3d4));
         o->f3d8 = t1 * 5.0f;
         return;
     }

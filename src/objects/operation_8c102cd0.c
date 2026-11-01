@@ -37,7 +37,7 @@ extern int g_8c4d5948;
 extern S_L8c4d5958 g_8c4d5958;
 extern char g_8c4d5448[];
 extern float distance_xz(void *, void *);
-int operation_8c102cd0(Object *o, int a1, int a2, int a3)
+int minimap_add_marker_8c102cd0(Object *o, int a1, int a2, int a3)
 {
     Frame frame;
     int v6;

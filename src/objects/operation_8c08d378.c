@@ -43,7 +43,7 @@ struct Arg0_5c {
     int f00;
 };
 extern char g_8c3002d8[];
-extern int call_8c011e9c(int);
+extern int game_malloc_buffer_8c011e9c(int);
 extern int operation_8c105420(int, int);
 extern int call_8c18e808(int, int);
 extern S_c8c08d8a8 *call_8c08d8a8(Object *);
@@ -51,10 +51,10 @@ extern int call_8c0329d8(int);
 extern void call_8c0bb9a4(Object *, void *, void *, int, int);
 extern int advance_counter_8c01d5fc(int);
 extern S_c8c08d794 *call_8c08d794(Object *, S_c8c08d8a8 *);
-extern void operation_8c03ef80(void *, ...);
+extern void debug_error_stub_8c03ef80(void *, ...);
 extern int call_8c08db0c(Object *);
 extern int call_8c08db98(Object *, int);
-extern void call_8c011ec0(int);
+extern void game_free_8c011ec0(int);
 void operation_8c08d378(Object *o)
 {
     int t1;
@@ -69,7 +69,7 @@ void operation_8c08d378(Object *o)
     S_c8c08d794 *t7;
     int t8;
     int t9;
-    t1 = call_8c011e9c(0x10000);
+    t1 = game_malloc_buffer_8c011e9c(0x10000);
     if (t1 != 0) {
         t2 = operation_8c105420((int)(g_8c3002d8 + 0x229), t1);
         if (t2 > 0) {
@@ -93,7 +93,7 @@ void operation_8c08d378(Object *o)
                         }
                         t4->f00.f40 = 0;
                     } else {
-                        operation_8c03ef80((void *)((g_8c3002d8 + 0x2aa)));
+                        debug_error_stub_8c03ef80((void *)((g_8c3002d8 + 0x2aa)));
                     }
                 }
 L_8c08d434:;
@@ -106,6 +106,6 @@ L_8c08d434:;
         v36 = (char *)o->f5c->f00;
         t9 = call_8c08db98(o, (int)(v36));
         o->f48 = (int)(t9);
-        call_8c011ec0(t1);
+        game_free_8c011ec0(t1);
     }
 }

@@ -22,8 +22,8 @@ struct Object {
     float f4a0;
     float f4a4;
 };
-extern float call_8c37eb0c(void *);
-extern float call_8c38c154(void *);
+extern float njSin_8c37eb0c(void *);
+extern float njCos_8c38c154(void *);
 extern void call_8c01c5f0(Object *);
 extern void slide_and_dispatch_contact(void *, float, float, float);
 void operation_8c094acc(Object *o, int a1)
@@ -36,8 +36,8 @@ void operation_8c094acc(Object *o, int a1)
     case 4:
         o->ff0 = 0;
         o->f414 = o->f40 + o->f408;
-        *pa = call_8c37eb0c((void *)(o->f64));
-        *pb = call_8c38c154((void *)(o->f64));
+        *pa = njSin_8c37eb0c((void *)(o->f64));
+        *pb = njCos_8c38c154((void *)(o->f64));
         return;
     case 0:
         call_8c01c5f0(o);

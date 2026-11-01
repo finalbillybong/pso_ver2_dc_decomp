@@ -30,7 +30,7 @@ extern char g_8c4ca908[];
 extern void call_8c34ddc0(void);
 extern void call_8c350bbc(void *, int);
 extern int call_8c34ff80(int, int, int);
-extern void operation_8c03ef80(void *, ...);
+extern void debug_error_stub_8c03ef80(void *, ...);
 extern void call_8c35096a(void *, int);
 extern void operation_8c100160();
 void bgm_init_adxt_8c100164(void)
@@ -51,7 +51,7 @@ void bgm_init_adxt_8c100164(void)
         v9 = (int)(v2 << 2);
         *(int *)((char *)&g_8c4d51d4 + (v9)) = (int)(t1);
         if (*(int *)((char *)&g_8c4d51d4 + (v9)) == 0) {
-            operation_8c03ef80((void *)((void *)g_8c30aed8), v2);
+            debug_error_stub_8c03ef80((void *)((void *)g_8c30aed8), v2);
         } else {
             call_8c35096a((void *)(*(S_g8c4d51d4 **)((char *)&g_8c4d51d4 + (v9))), 2);
         }
@@ -65,7 +65,7 @@ void bgm_init_adxt_8c100164(void)
         *(int *)((char *)&g_8c4d51d4.f08 + (v2)) = (int)(t2);
         v9 = v6 << 2;
         if (*(int *)((char *)&g_8c4d51d4.f08 + (v9)) == 0) {
-            operation_8c03ef80((void *)((g_8c30aed8 + 0x1a)), v6);
+            debug_error_stub_8c03ef80((void *)((g_8c30aed8 + 0x1a)), v6);
         }
         v6 = (int)(v6 + 1);
     }

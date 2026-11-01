@@ -30,7 +30,7 @@ extern void blk_sync_wait_8c1fbe0c(void);
 extern int blk_sync_drain_8c1fbe5e(void);
 extern int func_8c1fed74(int, int, int);
 
-int tcp_init_8c203e70(int a, int b, int c, int d)
+int tcppapi_init_8c203e70(int a, int b, int c, int d)
 {
     int v[1];
     v[0] = d_8c2e1470;
@@ -63,7 +63,7 @@ int tcp_init_8c203e70(int a, int b, int c, int d)
 
 int tcp_init_default_8c203f3a(void)
 {
-    return tcp_init_8c203e70(0, 0, 0, 0);
+    return tcppapi_init_8c203e70(0, 0, 0, 0);
 }
 
 int tcp_drain_8c203f44(void)

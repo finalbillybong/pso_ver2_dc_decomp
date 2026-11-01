@@ -28,8 +28,8 @@ void blend_quaternion(float *a,float *b,float *output,float amount) {
 #define draw_dispatch (*(TransformDrawDispatch **)0x8c305fd0)
 #define node_callback (*(void (**)(TransformNode *))0x8c46f520)
 #define prepare_at ((void (*)(void *,float))0x8c0c40f8)
-#define push_at ((void (*)(void))0x8c38ae68)
+#define njPushMatrixEx_8c38ae68 ((void (*)(void))0x8c38ae68)
 #define apply_at ((void (*)(TransformNode *))0x8c0c4590)
-#define pop_at ((void (*)(void))0x8c38ad10)
+#define njPopMatrixEx_8c38ad10 ((void (*)(void))0x8c38ad10)
 #define visit_at ((void (*)(TransformNode *))0x8c0c4408)
 void draw_blended_transform_tree(TransformNode *node,void *input,void (*draw)(void *),float amount){prepare_at(input,amount);draw_dispatch->draw=draw;visit_at(node);}

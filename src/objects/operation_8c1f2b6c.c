@@ -29,10 +29,10 @@ struct Frame {
 extern Vector3 g_8c32c418;
 extern int hierarchy_is_active(void *);
 extern int operation_8c07f914(void *);
-extern void call_8c38ade4(void *);
+extern void njPushMatrix_8c38ade4(void *);
 extern void operation_8c1f246c(void *);
 extern void call_8c3be280(int, Frame *, void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 extern void mark_effect_for_release(void *);
 extern int create_effect_769c(void *, int);
 extern void call_8c0a7608(void *, void *);
@@ -66,11 +66,11 @@ void operation_8c1f2b6c(Object *o)
         if (v12 != 0) {
             t3 = operation_8c07f914((void *)(v12->f20));
             if (t3 == 0) {
-                call_8c38ade4((void *)((void *)0x8c400500));
+                njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
                 operation_8c1f246c((void *)v12);
                 *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&g_8c32c418;
                 call_8c3be280(0, (Frame *)((&frame)), (void *)(&(&frame)->f0c));
-                call_8c38ad10();
+                njPopMatrixEx_8c38ad10();
                 v13 = (int)1;
             } else {
                 v13 = (int)0;

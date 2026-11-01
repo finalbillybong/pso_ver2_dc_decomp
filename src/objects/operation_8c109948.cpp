@@ -71,7 +71,7 @@ struct S_g8c4d7bac {
 };
 extern S_g8c4d7bac *g_8c4d7bac;
 extern "C" void call_8c0c3128(Object *, float);
-extern "C" void call_8c37f6f0(Frame *, void *);
+extern "C" void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern "C" int operation_43fb4(void *, int, void *);
 extern "C" void call_8c109ecc(Object *);
 extern "C" void call_8c01c5f0(Object *);
@@ -101,7 +101,7 @@ extern "C" void operation_8c109948(Object *o)
         }
         if (((ObjectData *)o)->f334 != 0) {
             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((ObjectData *)o)->f334->f3c;
-            call_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
+            vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
             t2 = operation_43fb4((void *)o, (int)(((ObjectData *)o)->f36c->f08), (void *)(&frame));
             v5 = (int)t2;
             if (!(t2 >= 0)) {

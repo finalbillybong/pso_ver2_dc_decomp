@@ -29,8 +29,8 @@ struct Arg1 {
 extern float object_random_fraction(void *);
 extern float call_8c12b570(float);
 extern float operation_8c05b8e8(int, float, float);
-extern float call_8c37eb0c(int);
-extern float call_8c38c154(int);
+extern float njSin_8c37eb0c(int);
+extern float njCos_8c38c154(int);
 int operation_8c066fb8(Object *o, Arg1 *a1)
 {
     int v3;
@@ -60,10 +60,10 @@ int operation_8c066fb8(Object *o, Arg1 *a1)
         v9 = (float)((S_x74128 *)((char *)(int *)((char *)o + 0x6c4) + (v2 << 2)))->f00;
     }
     v10 = (int)(v2 * 0x1555);
-    t4 = call_8c37eb0c(v10);
+    t4 = njSin_8c37eb0c(v10);
     a1->f00 = v9 * t4;
     a1->f04 = 0.0f;
-    t5 = call_8c38c154(v10);
+    t5 = njCos_8c38c154(v10);
     a1->f08 = v9 * t5;
     return 1;
 }

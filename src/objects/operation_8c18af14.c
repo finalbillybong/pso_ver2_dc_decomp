@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern char g_8c319f5c[];
-extern int call_8c104e9c(void *);
+extern int load_resource_8c104e9c(void *);
 void operation_8c18af14(void)
 {
     int t1;
@@ -23,22 +23,22 @@ void operation_8c18af14(void)
             goto L_8c18af58;
         }
     } else {
-        t1 = call_8c104e9c((void *)((g_8c319f5c + 0xe)));
+        t1 = load_resource_8c104e9c((void *)((g_8c319f5c + 0xe)));
         *(int *)0x8c4dbc80 = (int)(t1);
         return;
 L_8c18af3c:;
-        t2 = call_8c104e9c((void *)((g_8c319f5c + 0x25)));
+        t2 = load_resource_8c104e9c((void *)((g_8c319f5c + 0x25)));
         *(int *)0x8c4dbc80 = (int)(t2);
         return;
 L_8c18af4a:;
-        t3 = call_8c104e9c((void *)((g_8c319f5c + 0x3a)));
+        t3 = load_resource_8c104e9c((void *)((g_8c319f5c + 0x3a)));
         *(int *)0x8c4dbc80 = (int)(t3);
         return;
 L_8c18af58:;
-        t4 = call_8c104e9c((void *)((g_8c319f5c + 0x53)));
+        t4 = load_resource_8c104e9c((void *)((g_8c319f5c + 0x53)));
         *(int *)0x8c4dbc80 = (int)(t4);
         return;
     }
-    t5 = call_8c104e9c((void *)((g_8c319f5c + 0xe)));
+    t5 = load_resource_8c104e9c((void *)((g_8c319f5c + 0xe)));
     *(int *)0x8c4dbc80 = (int)(t5);
 }

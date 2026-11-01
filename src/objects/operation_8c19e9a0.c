@@ -25,7 +25,7 @@ struct Arg1 {
 extern int call_8c1c9c38(Arg1 *);
 extern void operation_8c19f504(void *, int, unsigned char, char);
 extern void call_8c1c770c(Arg1 *, void *);
-extern void call_8c18de08(int);
+extern void operator_delete_8c18de08(int);
 extern int operation_8c257e2c(int);
 extern int operator_new_8c18de4c(int);
 extern void strncpy_8c12b154(int, void *, int);
@@ -57,7 +57,7 @@ void operation_8c19e9a0(Object *o, Arg1 *a1, int a2, int a3)
     v9 = (int)o->f20;
     if (v9 != 0 && ((o->tag & 8)) != 0) {
         o->tag &= -9;
-        call_8c18de08(v9);
+        operator_delete_8c18de08(v9);
     }
     if ((void *)0x8c4dbe40 != 0) {
         t1 = operation_8c257e2c((int)((void *)0x8c4dbe40));

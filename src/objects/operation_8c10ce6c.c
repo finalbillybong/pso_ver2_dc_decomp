@@ -53,8 +53,8 @@ struct Arg0_78_94 {
     char unknown0[0x324];
     Block_p0_e0 f324;
 };
-extern float call_8c37e480(Frame *);
-extern void call_8c37b630(Frame *);
+extern float njScalor_8c37e480(Frame *);
+extern void njUnitVector_8c37b630(Frame *);
 int operation_8c10ce6c(Object *o)
 {
     Frame frame;
@@ -65,9 +65,9 @@ int operation_8c10ce6c(Object *o)
                 (&frame)->f00 = o->fe0.f00 - o->f7c->f94->f3c;
                 (&frame)->f08 = o->fe0.f08 - o->f7c->f94->f44;
                 (&frame)->f04 = 0.0f;
-                t1 = call_8c37e480((&frame));
+                t1 = njScalor_8c37e480((&frame));
                 if (t1 != 0.0f) {
-                    call_8c37b630((&frame));
+                    njUnitVector_8c37b630((&frame));
                 }
                 o->fe0.f00 -= o->f58 * (&frame)->f00;
                 o->fe0.f08 -= o->f58 * (&frame)->f08;

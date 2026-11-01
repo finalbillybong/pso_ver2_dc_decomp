@@ -25,7 +25,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4db9e0;
 extern char g_8c2ec0a0[];
 extern void call_8c3806f6(int, int, int);
-extern void call_8c014498(void *, int);
+extern void create_standard_task_tree_8c014498(void *, int);
 extern void call_8c0a1bf8(void);
 extern void call_8c0a2a4c(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
@@ -37,7 +37,7 @@ extern void call_8c08710c(void);
 extern void operation_8c051a90(void);
 extern void call_8c1beba4(int);
 extern void operation_8c1bec9c(void *, int);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern void TObjCMIcon_ctor_8c19584c(void);
 extern void call_8c05f87c(void *);
@@ -46,7 +46,7 @@ extern int get_field_8c0353d4(void);
 extern void operation_8c096488(int);
 extern void operation_8c035494(void);
 extern void call_8c0348bc(void *, int);
-void operation_8c034618(void)
+void load_chara_making_motions_8c034618(void)
 {
     int t1;
     int t2;
@@ -62,7 +62,7 @@ void operation_8c034618(void)
         }
     }
     call_8c3806f6(0, 0, 0);
-    call_8c014498((void *)((void *)0x8c2e2e84), 4);
+    create_standard_task_tree_8c014498((void *)((void *)0x8c2e2e84), 4);
     call_8c0a1bf8();
     call_8c0a2a4c();
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xf8);
@@ -79,7 +79,7 @@ void operation_8c034618(void)
     if (t2 != 0) {
         operation_8c1bec9c((void *)t2, (int)g_8c44be84);
     }
-    t3 = call_8c011ecc(0x440);
+    t3 = game_malloc_8c011ecc(0x440);
     if (t3 != 0) {
         call_8c03d610(t3, 1, (void *)((void *)0x8c2ebfe4), 0, 0, 0);
     }

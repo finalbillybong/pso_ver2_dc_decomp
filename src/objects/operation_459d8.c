@@ -9,7 +9,7 @@ int operation_459d8(Object *o)
             o->flags &= ~0x3c;
             o->flags |= 32;
             if (!(counter % 45)) {
-                effect_emit_at(15, o->position, 0, 0);
+                play_se_8c05fbf8(15, o->position, 0, 0);
             }
             return 1;
         }

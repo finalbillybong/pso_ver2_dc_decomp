@@ -61,7 +61,7 @@ extern void mark_effect_for_release(void *);
 extern int create_effect_769c(void *, int);
 extern void set_effect_bits(void *, unsigned short);
 extern void call_8c0a7608(void *, void *);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c1b1668(void *, int);
 void operation_8c1b2a7c(Object *o)
 {
@@ -162,7 +162,7 @@ L_8c1b2b86:;
                     if (t3 != 0) {
                         set_effect_bits((void *)(v59->f00), (unsigned short)0x40);
                     }
-                    call_8c05fbf8(0x30017, (void *)(((char *)o + 0x3c)), 0, 1);
+                    play_se_8c05fbf8(0x30017, (void *)(((char *)o + 0x3c)), 0, 1);
                 }
                 if (v60->f00 == 0) {
                     t4 = create_effect_769c((void *)(&(&frame)->f0c), 0x13b);

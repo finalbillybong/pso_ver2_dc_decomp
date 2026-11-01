@@ -62,9 +62,9 @@ typedef struct S_c8c169508Data {
 } S_c8c169508Data;
 extern "C" int operation_8c16b2e4(void);
 extern "C" int operation_8c19b054(void);
-extern "C" int call_8c372d98(int);
+extern "C" int bu_check_busy_8c372d98(int);
 extern "C" int call_8c3727a0(int);
-extern "C" void call_8c05fbf8(int, int, int, int);
+extern "C" void play_se_8c05fbf8(int, int, int, int);
 extern "C" int call_8c16a18c(void *, int);
 extern "C" S_c8c169508 *operation_8c169508(void *);
 extern "C" void operation_8c026700(int, int);
@@ -85,7 +85,7 @@ extern "C" void operation_8c02349c(Object *o, int a1, int a2)
     t1 = operation_8c16b2e4();
     if (t1 != 0) {
         t2 = operation_8c19b054();
-        t3 = call_8c372d98((int)((char)t2));
+        t3 = bu_check_busy_8c372d98((int)((char)t2));
         if (t3 == 0) {
             t4 = operation_8c19b054();
             t5 = call_8c3727a0((int)((char)t4));
@@ -93,7 +93,7 @@ extern "C" void operation_8c02349c(Object *o, int a1, int a2)
                 goto L_8c0234ea;
             }
         }
-        call_8c05fbf8(0x50006, 0, 0, 0);
+        play_se_8c05fbf8(0x50006, 0, 0, 0);
         return;
     }
 L_8c0234ea:;

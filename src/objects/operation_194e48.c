@@ -2,7 +2,7 @@
 #include "src/include/widget_record_tables.h"
 #define setup_at ((void (*)(WidgetPayload *,int))0x8c1c9f04)
 #define finish_at ((void (*)(WidgetPayload *))0x8c1c9730)
-#define clear_at ((void (*)(void *,int))0x8c162de4)
+#define create_floor_item_8c162de4 ((void (*)(void *,int))0x8c162de4)
 #define large_table (*(WidgetLargeRecord **)0x8c46ed10)
 #define small_table (*(WidgetSmallRecord **)0x8c46ed0c)
 void handle_6x5F_drop_item_from_box_enemy_8c194e48(WidgetPacket *o){
@@ -29,5 +29,5 @@ void handle_6x5F_drop_item_from_box_enemy_8c194e48(WidgetPacket *o){
         small.value=0xffff;
         if(!(index>0xb9f))*entry=*copy;
     }
-    clear_at(&o->notice.kind,0);
+    create_floor_item_8c162de4(&o->notice.kind,0);
 }

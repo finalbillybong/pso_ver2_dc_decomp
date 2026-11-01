@@ -82,7 +82,7 @@ extern int player_flag9_8c026508(void);
 extern void operation_8c0b62d4(void *, void *, float);
 extern void create_effect_777c(void *, int);
 extern void operation_8c026700(int, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c191f38(Object *);
 void operation_8c191b98(Object *o)
 {
@@ -195,7 +195,7 @@ void operation_8c191b98(Object *o)
             return;
         }
         operation_8c026700((int)t7, 0xa);
-        call_8c05fbf8(0x2001a, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x2001a, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     L_8c191e98:
         ;

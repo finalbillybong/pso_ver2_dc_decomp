@@ -26,7 +26,7 @@ struct S_vv2 {
 struct S_c8c011ecc {
     Block_c8c011ecc_0 f00;
 };
-extern S_c8c011ecc *call_8c011ecc(int);
+extern S_c8c011ecc *game_malloc_8c011ecc(int);
 extern void operation_8c181aa4(void *);
 extern void operation_8c02db24(int);
 extern int call_8c17e620(S_c8c011ecc *);
@@ -44,7 +44,7 @@ int operation_8c1819e8(void)
     if (v2->f00.f428 != -0x5dfa4f9c || ((v2->f00.f420 & 0x10)) != 0) {
         return 5;
     }
-    t1 = call_8c011ecc(0x16fc);
+    t1 = game_malloc_8c011ecc(0x16fc);
     if (t1 != 0) {
         operation_8c181aa4((void *)(((char *)t1 + 0x4)));
         operation_8c02db24((int)(((char *)t1 + 0xc0c)));

@@ -7,8 +7,8 @@ extern void call_8c017ba8(void);
 extern void call_8c02a798(void);
 extern void call_8c1004cc(void);
 extern void call_8c041690(void);
-extern void call_8c01d9dc(void);
-extern void call_8c380516(void);
+extern void reset_controller_state_8c01d9dc(void);
+extern void wait_vsync_and_flip_8c380516(void);
 extern void call_8c01c2b0(void);
 extern void call_8c1a18b8(void);
 extern void call_8c0405b4(void);
@@ -56,7 +56,7 @@ extern void call_8c14fd04(void);
 extern void call_8c21da34(void);
 extern Actor *heap_alloc_8c122700(void *,unsigned int);extern void initialize_at(Actor *,void *,int);extern void *heap,*context;extern int alternate;
 void transition_alternate_scene_actors(void) {
- Temporary temporary;TObject_ctor_8c0330e4(&temporary,0);call_8c017ba8();call_8c02a798();call_8c1004cc();call_8c05fbdc();call_8c041690();call_8c01d9dc();call_8c380516();call_8c380516();load_at(resource_data,resource_id);
+ Temporary temporary;TObject_ctor_8c0330e4(&temporary,0);call_8c017ba8();call_8c02a798();call_8c1004cc();call_8c05fbdc();call_8c041690();reset_controller_state_8c01d9dc();wait_vsync_and_flip_8c380516();wait_vsync_and_flip_8c380516();load_at(resource_data,resource_id);
  {int i;for(i=0;i<12;++i) {Actor *actor=lookup_at(i);if(actor) move_at(actor,&temporary);}}
  prepare_at(global_storage);clear_settings_at(settings);call_8c01c2b0();call_8c1156b4();call_8c186b34();call_8c09d2bc();call_8c173508();call_8c1a18b8();call_8c0405b4();mode_at(1);call_8c173024();call_8c14ffdc();
  if(context) {Actor *created=heap_alloc_8c122700(heap,168);if(created) initialize_at(created,context,0);created->activate();}

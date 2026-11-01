@@ -42,7 +42,7 @@ struct S_L8c4dbaf8 {
     S_L8c4dbaf8_4 *f04;
 };
 extern S_L8c4dbaf8 g_8c4dbaf8;
-extern S_c8c011ecc *call_8c011ecc(int);
+extern S_c8c011ecc *game_malloc_8c011ecc(int);
 extern void operation_8c1acbc0(void *);
 extern void operation_1c7dd4(void *);
 extern void seed_random_state(void *, unsigned int);
@@ -72,11 +72,11 @@ void operation_8c17f210(Object *o)
 {
     S_c8c011ecc *t1;
     S_c8c011ecc *t2;
-    t1 = call_8c011ecc(0x16fc);
+    t1 = game_malloc_8c011ecc(0x16fc);
     if (t1 != 0) {
         init_block(t1);
     }
-    t2 = call_8c011ecc(0x16fc);
+    t2 = game_malloc_8c011ecc(0x16fc);
     if (t2 != 0) {
         init_block(t2);
     }

@@ -1,13 +1,13 @@
 #include "src/include/vector_array.h"
 #define allocate_entries_at ((void (*)(VectorArray *,void *))0x8c0c703c)
-extern void begin_at(void *);
+extern void njPushMatrix_8c38ade4(void *);
 #define fill_at ((int (*)(VectorArray *,void *,int))0x8c0c70dc)
-#define end_at ((void (*)(void))0x8c38ad10)
+#define njPopMatrixEx_8c38ad10 ((void (*)(void))0x8c38ad10)
 VectorArray *initialize_vector_array(VectorArray *array,void *input) {
  array->dispatch=(void *)0x8c2668c0;
  allocate_entries_at(array,input);
- begin_at((void *)0x8c400500);
+ njPushMatrix_8c38ade4((void *)0x8c400500);
  fill_at(array,input,0);
- end_at();
+ njPopMatrixEx_8c38ad10();
  return array;
 }

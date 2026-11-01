@@ -39,7 +39,7 @@ extern int check_range_8c01cf68(void *, float);
 extern void operation_8c166174(void *, void *, void *);
 extern int active_unflagged_8c05b2dc(void *);
 extern void call_8c1667ac(void *, int, void *, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c144ae0(int);
 void operation_8c1496ec(Object *o, int a1, int a2)
 {
@@ -99,7 +99,7 @@ void operation_8c1496ec(Object *o, int a1, int a2)
                 }
             }
         }
-        call_8c05fbf8(0x30003, (void *)(((char *)o + 0x544)), 0, 0);
+        play_se_8c05fbf8(0x30003, (void *)(((char *)o + 0x544)), 0, 0);
         return;
         case 6:
         if (a2 == 0x19) {

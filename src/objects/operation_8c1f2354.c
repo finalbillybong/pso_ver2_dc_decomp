@@ -32,19 +32,19 @@ extern int g_8c4e3164;
 extern int g_8c575570;
 extern Block16 g_8c5755ac;
 extern void apply_resource_3827d8(void *);
-extern void call_8c38ae68(void);
+extern void njPushMatrixEx_8c38ae68(void);
 extern void operation_8c1f246c(void *);
 extern void call_8c3af5ee(void *);
 extern void call_8c3addea(void *, void *, float);
 extern void operation_8c0746c8(int);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c391cc4(void);
 void TItemMagSub_render_8c1f2354(Object *o)
 {
     if (o->f28 != 0) {
         g_8c4e3160 = o;
         apply_resource_3827d8((void *)(o->f30));
-        call_8c38ae68();
+        njPushMatrixEx_8c38ae68();
         operation_8c1f246c((void *)o);
         g_8c4e3164 = 0;
         o->f70 = 0;
@@ -60,7 +60,7 @@ void TItemMagSub_render_8c1f2354(Object *o)
             g_8c4699fc = (void *)0;
         }
         g_8c4e3164 = 0;
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         g_8c4e3160 = (Object *)0;
         if (((o->f68 & 0x20)) != 0) {
             call_8c391cc4();

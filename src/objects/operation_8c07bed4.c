@@ -39,7 +39,7 @@ extern S_g8c469ac0 *g_8c469ac0;
 extern int create_effect_7708(void *, int, int);
 extern void call_8c0a7608(void *, void *);
 extern void create_effect(void *, int, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern int operation_8c065330(void);
 extern void operation_8c067ca0(void *, int);
 void operation_8c07bed4(Object *o)
@@ -85,7 +85,7 @@ void operation_8c07bed4(Object *o)
                 v13->f04 |= 1;
                 o->f48 = (Arg0_48 *)0;
             }
-            call_8c05fbf8(0x3000c, (void *)(&o->f20), 0, 0);
+            play_se_8c05fbf8(0x3000c, (void *)(&o->f20), 0, 0);
             t2 = operation_8c065330();
             operation_8c067ca0((void *)t2, (int)(&o->f20));
         }

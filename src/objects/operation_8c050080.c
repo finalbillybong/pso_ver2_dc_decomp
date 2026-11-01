@@ -8,12 +8,12 @@ typedef struct S_g8c467228 S_g8c467228;
 extern S_g8c467220 *g_8c467220;
 extern S_g8c467228 *g_8c467228;
 extern void call_8c37d534(void *);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void call_8c03dc40(void *, int);
 void operation_8c050080(void)
 {
     call_8c37d534(g_8c467228);
-    call_8c011ec0(g_8c467228);
+    game_free_8c011ec0(g_8c467228);
     g_8c467228 = (S_g8c467228 *)0;
     call_8c03dc40(g_8c467220, 1);
 }

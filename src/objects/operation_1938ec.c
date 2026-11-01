@@ -14,7 +14,7 @@ static inline void reset(ResourceFlagState *o){
         o->field_c=0;
     }
 }
-#define free_buffer_at ((void (*)(void *))0x8c18de08)
+#define operator_delete_8c18de08 ((void (*)(void *))0x8c18de08)
 #define free_at ((void (*)(ResourceFlagState *))0x8c011ed8)
 static inline void destroy_base(ResourceFlagState *o){
     if(o){
@@ -24,7 +24,7 @@ static inline void destroy_base(ResourceFlagState *o){
             o->handle=0;
             o->field_c=0;
         }
-        free_buffer_at(o->buffer);
+        operator_delete_8c18de08(o->buffer);
     }
 }
 ResourceFlagState *operation_1938ec(ResourceFlagState *o,short release){

@@ -42,7 +42,7 @@ extern int g_8c4d7c54;
 extern char g_8c30bb10[];
 extern int operation_8c05bbf8(void);
 extern int operation_8c059f44(void *, int);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern int call_8c03ef88(int, int);
 extern void call_8c0c6fd8(int, void *, float, void *);
@@ -78,7 +78,7 @@ void operation_8c108a24(void)
         t2 = operation_8c059f44((void *)((void *)0x8c30b824), (int)(g_8c30bb10 + 0x139));
         g_8c4d7bbc = (S_g8c4d7bbc *)(int)(t2);
     } else {
-        t3 = call_8c011ecc(0x440);
+        t3 = game_malloc_8c011ecc(0x440);
         if (t3 != 0) {
             call_8c03d610(t3, 5, (void *)((void *)0x8c30b824), 0, 0, 0);
         }
@@ -113,7 +113,7 @@ void operation_8c108a24(void)
     v14 = (char *)g_8c4d7bbc->f42c->f38;
     t7 = call_8c03ef88((int)(v14), 0xd);
     g_8c4d7c50 = (int)(t7);
-    t8 = call_8c011ecc(0xc);
+    t8 = game_malloc_8c011ecc(0xc);
     if (t8 != 0) {
         call_8c0c6fd8(t8, (void *)(g_8c4d7bbc->f42c->f38), 54.0f, (void *)(g_8c4d7bbc->f430->f1c));
     }

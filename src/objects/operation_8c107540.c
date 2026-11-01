@@ -18,8 +18,8 @@ struct Object {
     Arg0_38 *f38;
 };
 extern int call_8c12b944(void);
-extern float call_8c37eb0c(int);
-extern float call_8c38c154(int);
+extern float njSin_8c37eb0c(int);
+extern float njCos_8c38c154(int);
 extern void call_8c3bdf60(Frame *, void *);
 extern void call_8c0a7608(void *, Frame *);
 void operation_8c107540(Object *o)
@@ -31,10 +31,10 @@ void operation_8c107540(Object *o)
     int t3;
     t3 = call_8c12b944();
     v1 = (int)(int)((float)t3 / 32768.0f * 65536.0f);
-    t1 = call_8c37eb0c(v1);
+    t1 = njSin_8c37eb0c(v1);
     (&frame)->f00 = o->f2c * t1;
     (&frame)->f04 = 0.0f;
-    t2 = call_8c38c154(v1);
+    t2 = njCos_8c38c154(v1);
     (&frame)->f08 = o->f2c * t2;
     call_8c3bdf60((Frame *)((&frame)), (void *)(((char *)o + 0x20)));
     call_8c0a7608((void *)(o->f38), (Frame *)((&frame)));

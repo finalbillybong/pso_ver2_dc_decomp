@@ -37,8 +37,8 @@ struct S_L8c46f5a0 {
     float f08;
 };
 extern S_L8c46f5a0 g_8c46f5a0;
-extern float call_8c37eb0c(int);
-extern float call_8c38c154(int);
+extern float njSin_8c37eb0c(int);
+extern float njCos_8c38c154(int);
 extern void normalize_vector_checked(void *);
 extern float call_8c3845f0(void *, Frame *);
 int operation_8c0da4a4(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f0, float f1)
@@ -54,10 +54,10 @@ int operation_8c0da4a4(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f0, float f1
     float t6;
     float t7;
     if (f0 > -1.0f && 1.0f > f0) {
-        t1 = call_8c37eb0c(a3);
+        t1 = njSin_8c37eb0c(a3);
         (&frame)->f0c = t1;
         (&frame)->f10 = 0.0f;
-        t2 = call_8c38c154(a3);
+        t2 = njCos_8c38c154(a3);
         (&frame)->f14 = t2;
         if (f1 == 0.0f) {
             (&frame)->f00 = a1->f00 - o->tag;
@@ -70,9 +70,9 @@ int operation_8c0da4a4(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f0, float f1
             }
             goto L_8c0da5c2;
         }
-        t7 = call_8c37eb0c((int)(a3 + 0x8000));
+        t7 = njSin_8c37eb0c((int)(a3 + 0x8000));
         v1 = (float)(f1 * t7 + o->tag);
-        t4 = call_8c38c154((int)(a3 + 0x8000));
+        t4 = njCos_8c38c154((int)(a3 + 0x8000));
         v2 = f1 * t4 + o->f08;
         (&frame)->f00 = a1->f00 - v1;
         (&frame)->f04 = 0.0f;

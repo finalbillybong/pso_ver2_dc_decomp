@@ -16,21 +16,21 @@ struct Arg0_24 {
     int f20;
 };
 extern int call_8c09a640(int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c096678(Object *o)
 {
     int t1;
     int t2;
     t1 = call_8c09a640(2);
     if (t1 != 0) {
-        call_8c05fbf8(0x50004, 0, 0, 0);
+        play_se_8c05fbf8(0x50004, 0, 0, 0);
         o->f24->f20 = 0;
         o->f20 = 0;
         return;
     }
     t2 = call_8c09a640(4);
     if (t2 != 0) {
-        call_8c05fbf8(0x50001, 0, 0, 0);
+        play_se_8c05fbf8(0x50001, 0, 0, 0);
         o->f24->f20 = 2;
         o->f28 = 0xa;
         o->f20 = 2;

@@ -108,7 +108,7 @@ extern S_g8c4da6b8 *g_8c4da6b8;
 extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c1508b8(void *);
 extern "C" void call_8c027090(Object *);
-extern "C" void call_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void operation_8c150760(Object *o)
 {
     int t1;
@@ -142,7 +142,7 @@ extern "C" void operation_8c150760(Object *o)
         }
         *(Vector3 *)&((ObjectData *)o)->f78 = *(Vector3 *)&((ObjectData *)o)->f324;
         call_8c027090(o);
-        call_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+        minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
         g_8c4da6b8->f18 += 0x4000;
         o->v64();
     }

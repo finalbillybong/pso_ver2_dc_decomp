@@ -8,10 +8,10 @@ struct Object {
     char unknown0[0x34];
     int f34;
 };
-extern void call_8c102cd0(void *, int, int, int);
+extern void minimap_add_marker_8c102cd0(void *, int, int, int);
 void operation_8c05babc(Object *o)
 {
     if (((o->f34 & 0x40800)) == 0) {
-        call_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+        minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
     }
 }

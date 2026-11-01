@@ -30,7 +30,7 @@ struct S_g8c467180_2c {
     S_g8c467180_2c_20c *f20c;
 };
 extern void initialize_base_8c0db1d0(void *, int);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void operation_8c199b20(int, int);
 extern void call_8c1979e8(Object *);
 Object *operation_8c197420(Object *o)
@@ -42,7 +42,7 @@ Object *operation_8c197420(Object *o)
     o->dispatch = (void *)0x8c2728bc;
     o->tag = (int)(*(int *)0x8c31c378);
     o->size = 0x74;
-    t1 = call_8c011ecc(0x24);
+    t1 = game_malloc_8c011ecc(0x24);
     if (t1 != 0) {
         operation_8c199b20(t1, (int)((*(S_g8c467180 **)0x8c467180)->f2c->f20c));
     }

@@ -11,7 +11,7 @@ struct Object {
     int f10ac;
 };
 extern char g_8c2e89c0[];
-extern void call_8c38cf80(int, void *, ...);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c032f50(Object *o)
 {
     int v4;
@@ -23,8 +23,8 @@ void operation_8c032f50(Object *o)
     v4 = (int)0;
     v3 = (int)0x10a0;
     while (*(int *)((char *)((char *)o + 0x0) + (v3)) > v4) {
-        call_8c38cf80((int)(*(int *)((char *)((char *)o + 0x0) + (v2)) << 0x10 | (int)*(int *)((char *)((char *)o + 0x0) + (v1)) + v4), (void *)(((char *)o + (v4 << 5) + 0x20)));
+        debug_print_at_8c38cf80((int)(*(int *)((char *)((char *)o + 0x0) + (v2)) << 0x10 | (int)*(int *)((char *)((char *)o + 0x0) + (v1)) + v4), (void *)(((char *)o + (v4 << 5) + 0x20)));
         v4 = (int)(v4 + 1);
     }
-    call_8c38cf80((int)((int)o->f10a8 + (int)o->f10ac | (int)o->f10a4 + -1 << 0x10), (void *)((g_8c2e89c0 + 0x1)));
+    debug_print_at_8c38cf80((int)((int)o->f10a8 + (int)o->f10ac | (int)o->f10a4 + -1 << 0x10), (void *)((g_8c2e89c0 + 0x1)));
 }

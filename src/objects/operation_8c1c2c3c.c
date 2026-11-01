@@ -16,7 +16,7 @@ struct Object {
     Arg0_184 *f184;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void operation_8c0355fc(void *, int);
 extern void destroy_object_8c01c500(void *, short);
 extern void call_8c122774(void *, Object *);
@@ -25,7 +25,7 @@ Object *operation_8c1c2c3c(Object *o, int a1)
     if (o != 0) {
         o->dispatch = (void *)0x8c275bc0;
         if (o->f118 != 0) {
-            call_8c18de08((void *)(o->f118));
+            operator_delete_8c18de08((void *)(o->f118));
             o->f118 = (Arg0_118 *)0;
         }
         if (o->f184 != 0) {

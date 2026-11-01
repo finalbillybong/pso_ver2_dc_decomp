@@ -32,7 +32,7 @@ struct Arg0_130 {
     int f04;
 };
 extern S_g8c4d9980 *g_8c4d9980;
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c12a010(Object *o, int a1)
 {
     if (o->f30a != a1) {
@@ -40,7 +40,7 @@ void operation_8c12a010(Object *o, int a1)
         switch (o->f30a) {
         case 2:
             if (((o->f34 & 0x8000000)) == 0) {
-                call_8c05fbf8(0x40018, (void *)(((char *)o + 0x3c)), 0, 0);
+                play_se_8c05fbf8(0x40018, (void *)(((char *)o + 0x3c)), 0, 0);
             }
             o->f130 = (Arg0_130 *)g_8c4d9980->f430->f0c;
             o->ff8 = 22.0f;
@@ -49,7 +49,7 @@ void operation_8c12a010(Object *o, int a1)
             return;
         case 1:
             if (((o->f34 & 0x8000000)) == 0) {
-                call_8c05fbf8(0x4001a, (void *)(((char *)o + 0x3c)), 0, 0);
+                play_se_8c05fbf8(0x4001a, (void *)(((char *)o + 0x3c)), 0, 0);
             }
         }
     }

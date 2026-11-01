@@ -11,7 +11,7 @@ struct Frame {
     char unknown0[0x20];
 };
 extern char g_8c319a80[];
-extern void operation_8c03ef80(void *, ...);
+extern void debug_error_stub_8c03ef80(void *, ...);
 extern int get_game_mode_8c01c25c(void);
 extern void call_8c03ef04(Frame *, int, void *);
 extern int file_load_8c104d00(int, void *);
@@ -40,11 +40,11 @@ int operation_8c186380(int a0, int a1, int a2)
             goto L_8c1863be;
         }
     }
-    operation_8c03ef80((void *)((g_8c319a80 + 0x4)));
+    debug_error_stub_8c03ef80((void *)((g_8c319a80 + 0x4)));
     return 0;
 L_8c1863be:;
     if (*(int *)((char *)((char *)v1 + 0x0) + (a1 << 3)) == 0 || a2 > (*(int *)((char *)((char *)v1 + 0x4) + (a1 << 3)) + -1)) {
-        operation_8c03ef80((void *)((g_8c319a80 + 0x4)));
+        debug_error_stub_8c03ef80((void *)((g_8c319a80 + 0x4)));
         return 0;
     }
     v7 = (int)*(int *)((char *)((char *)*(S_vv1_0 **)((char *)((char *)v1 + 0x0) + (a1 << 3)) + 0x4) + (a2 * 0xc));

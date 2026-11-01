@@ -1,6 +1,6 @@
 /* Reads (and optionally byte-swaps) a 5-word identifier block (Hitachi SHC). */
-extern int cmd_begin_8c378bf8(int mode);
-extern int cmd_reset_8c378cfc(int arg);
+extern int syFlash_open_partition_8c378bf8(int mode);
+extern int syFlash_check_header_8c378cfc(int arg);
 extern int cmd_read_8c378d88(int n, char *buf);
 extern int cmd_poll_8c378e04(void);
 extern char *cmd_result_8c37873c(void);
@@ -16,9 +16,9 @@ int flash_id_8c378f3c(int arg)
     int i;
     int n;
 
-    r = cmd_begin_8c378bf8(2);
+    r = syFlash_open_partition_8c378bf8(2);
     if (r == -8) {
-        r = cmd_reset_8c378cfc(0);
+        r = syFlash_check_header_8c378cfc(0);
         if (r) goto fail;
     } else if (r) goto fail;
     goto y0;

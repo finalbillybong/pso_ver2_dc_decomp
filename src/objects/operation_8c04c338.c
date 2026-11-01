@@ -11,7 +11,7 @@ extern int operator_new_8c18de4c(int);
 extern int call_8c379038(int);
 extern int call_8c379108(Frame *);
 extern void call_8c37904a(void);
-extern void call_8c18de08(int);
+extern void operator_delete_8c18de08(int);
 int operation_8c04c338(void)
 {
     Frame frame;
@@ -54,6 +54,6 @@ int operation_8c04c338(void)
         (&frame)->f00 = 1;
         break;
     }
-    call_8c18de08(t1);
+    operator_delete_8c18de08(t1);
     return (int)((&frame)->f00);
 }

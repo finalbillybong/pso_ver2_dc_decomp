@@ -52,7 +52,7 @@ struct Frame {
 };
 extern char g_8c339ca0[];
 extern char g_8c33f788[];
-extern void call_8c12b048(void *, void *, ...);
+extern void sprintf_8c12b048(void *, void *, ...);
 extern int lookup_low_id(int);
 extern void call_8c12b084(void *, int);
 extern int call_8c2383dc(void *);
@@ -76,7 +76,7 @@ void operation_8c250190(int a0, int a1)
     int t4;
     int t5;
     v1 = (int)(a1 + -2);
-    call_8c12b048((void *)((void *)0x8c511020), (void *)((g_8c33f788 + 0x26)), (*(S_g8c467180 **)0x8c467180)->f2c->f538, v1 + 1, 0xff);
+    sprintf_8c12b048((void *)((void *)0x8c511020), (void *)((g_8c33f788 + 0x26)), (*(S_g8c467180 **)0x8c467180)->f2c->f538, v1 + 1, 0xff);
     v3 = (int)0;
     v2 = (int)(v1 << 2);
     v7 = (S_vv7 *)(g_8c339ca0 + 0x274);
@@ -102,7 +102,7 @@ void operation_8c250190(int a0, int a1)
                 }
                 t3 = call_8c2383dc((void *)(v8->f18));
                 operation_8c238204(v9, (void *)(&(&frame)->f14), (void *)(&(&frame)->f10), (void *)(&(&frame)->f0c));
-                call_8c12b048((void *)(&(&frame)->f28), (void *)((g_8c33f788 + 0x42)), (&frame)->f14, (&frame)->f10, (&frame)->f0c, *(S_g8c33f778 **)((char *)0x8c33f778 + (t3 << 2)));
+                sprintf_8c12b048((void *)(&(&frame)->f28), (void *)((g_8c33f788 + 0x42)), (&frame)->f14, (&frame)->f10, (&frame)->f0c, *(S_g8c33f778 **)((char *)0x8c33f778 + (t3 << 2)));
                 call_8c12b084((void *)((void *)0x8c511020), (int)(&(&frame)->f28));
             }
             call_8c12b084((void *)((void *)0x8c511020), (int)(g_8c33f788 + 0x54));
@@ -111,7 +111,7 @@ void operation_8c250190(int a0, int a1)
                 call_8c12b084((void *)((void *)0x8c511020), (int)(g_8c33f788 + 0x57));
             } else {
                 operation_8c238204(t4, (void *)(&(&frame)->f08), (void *)(&(&frame)->f04), (void *)(&frame));
-                call_8c12b048((void *)(&(&frame)->f18), (void *)((g_8c33f788 + 0x60)), (&frame)->f08, (&frame)->f04, (&frame)->f00);
+                sprintf_8c12b048((void *)(&(&frame)->f18), (void *)((g_8c33f788 + 0x60)), (&frame)->f08, (&frame)->f04, (&frame)->f00);
                 call_8c12b084((void *)((void *)0x8c511020), (int)(&(&frame)->f18));
             }
         }

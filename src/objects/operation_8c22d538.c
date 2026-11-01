@@ -8,9 +8,9 @@ struct S_c8c011e9c {
     char unknown0[0x4];
     int f04;
 };
-extern S_c8c011e9c *call_8c011e9c(int);
+extern S_c8c011e9c *game_malloc_buffer_8c011e9c(int);
 extern void call_8c3889a4(S_c8c011e9c *, int, int);
-extern void call_8c011ec0(S_c8c011e9c *, int);
+extern void game_free_8c011ec0(S_c8c011e9c *, int);
 int operation_8c22d538(int a0, unsigned int a1)
 {
     S_c8c011e9c *t1;
@@ -20,7 +20,7 @@ int operation_8c22d538(int a0, unsigned int a1)
     int v5;
     int *p;
     unsigned int k;
-    t1 = call_8c011e9c(a1);
+    t1 = game_malloc_buffer_8c011e9c(a1);
     if (t1 == 0) {
         return 0;
     }
@@ -40,6 +40,6 @@ int operation_8c22d538(int a0, unsigned int a1)
             }
         }
     }
-    call_8c011ec0(t1, v3);
+    game_free_8c011ec0(t1, v3);
     return v1 == (crc ^ -1);
 }

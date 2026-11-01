@@ -18,14 +18,14 @@ struct Object {
 struct Arg3 {
     float f00;
 };
-extern float call_8c37eb0c(int);
-extern float call_8c38c154(int);
+extern float njSin_8c37eb0c(int);
+extern float njCos_8c38c154(int);
 void operation_8c1e9c80(Object *o, int a1, Arg2 *a2, Arg3 *a3)
 {
     float t1;
     float t2;
-    t1 = call_8c37eb0c(a1);
+    t1 = njSin_8c37eb0c(a1);
     a2->f00 = o->f3c + t1 * 8.0f;
-    t2 = call_8c38c154(a1);
+    t2 = njCos_8c38c154(a1);
     a3->f00 = o->f44 + t2 * 8.0f;
 }

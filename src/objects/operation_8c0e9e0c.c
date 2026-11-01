@@ -22,7 +22,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern char g_8c308830[];
 extern void call_8c37e4a8(float, float);
 extern void call_8c3806f6(int, int, int);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 extern void call_8c37e7d4(void *);
 extern void call_8c0142d8(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
@@ -36,8 +36,8 @@ extern void operation_8c01c244(int);
 extern void call_8c1003d0(void *);
 extern void create_descriptor_managers(void);
 extern void operation_8c0e9b88(void *);
-extern void call_8c380516(void);
-void operation_8c0e9e0c(void)
+extern void wait_vsync_and_flip_8c380516(void);
+void mode_ending_init_8c0e9e0c(void)
 {
     Frame frame;
     unsigned int v1;
@@ -45,7 +45,7 @@ void operation_8c0e9e0c(void)
     int t2;
     call_8c37e4a8(1.0f, 0.85f);
     call_8c3806f6(0, 0, 0);
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
     v1 = (unsigned int)0;
     while ((unsigned int)0x80 > v1) {
         *(float *)((char *)frame.f18 + (v1 << 2)) = 0.0f;
@@ -71,5 +71,5 @@ void operation_8c0e9e0c(void)
     if (t2 != 0) {
         operation_8c0e9b88((void *)t2);
     }
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

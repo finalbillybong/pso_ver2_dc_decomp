@@ -22,7 +22,7 @@ extern void process_file_task_queue(void);
 extern void call_8c05f9e4(void);
 extern int call_8c01e180(void);
 extern int operation_8c104da8(void);
-extern int call_8c380516(void);
+extern int wait_vsync_and_flip_8c380516(void);
 int operation_8c17ba24(void)
 {
     int v1;
@@ -58,7 +58,7 @@ int operation_8c17ba24(void)
             (&g_8c41cb00)->f00 = (int)(v1);
             break;
         }
-        t3 = call_8c380516();
+        t3 = wait_vsync_and_flip_8c380516();
         v1 = (int)t3;
     }
     return (int)(v1);

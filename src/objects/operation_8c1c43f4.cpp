@@ -29,12 +29,12 @@ typedef struct ObjectData {
     int f98;
 } ObjectData;
 extern int g_8c328a94;
-extern "C" void call_8c01d1ec(Object *);
+extern "C" void TObjectShared_ctor_8c01d1ec(Object *);
 extern "C" Object *operation_8c1c43f4(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;
-    call_8c01d1ec(o);
+    TObjectShared_ctor_8c01d1ec(o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c275c4c;
     ((ObjectData *)o)->tag = (int)(g_8c328a94);
     ((ObjectData *)o)->size = 0x9c;

@@ -11,7 +11,7 @@ struct Object {
 extern void call_8c19b4e0(Object *);
 extern void call_8c19b4fc(Object *);
 extern void operation_8c19b688(void *);
-extern void call_8c19b710(Object *);
+extern void tekker_window_update_8c19b710(Object *);
 extern void call_8c19b900(Object *);
 extern void operation_8c19bab4(void *);
 extern void operation_8c19be70(void *);
@@ -31,7 +31,7 @@ void operation_8c19b3ec(Object *o)
         operation_8c19b688((void *)o);
         return;
     case 2:
-        call_8c19b710(o);
+        tekker_window_update_8c19b710(o);
         return;
     case 3:
         call_8c19b900(o);

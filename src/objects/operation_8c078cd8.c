@@ -21,10 +21,10 @@ extern int g_8c46f560;
 extern int g_8c575570;
 extern int operation_8c1692c0(void);
 extern void call_8c391cc4(void *);
-extern void call_8c38ae68(void);
+extern void njPushMatrixEx_8c38ae68(void);
 extern void call_8c3827d8(void *);
 extern void call_8c3a944a(void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c078cd8(void)
 {
     int t1;
@@ -33,10 +33,10 @@ void operation_8c078cd8(void)
         g_8c46f560 = (int)(g_8c575570);
         g_8c575570 |= 0x400;
         call_8c391cc4((void *)((void *)&g_8c575570));
-        call_8c38ae68();
+        njPushMatrixEx_8c38ae68();
         call_8c3827d8(g_8c469a64);
         call_8c3a944a((void *)(g_8c469a60->f42c->f08));
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         g_8c575570 = (int)(g_8c46f560);
     }
 }

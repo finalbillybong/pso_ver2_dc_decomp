@@ -53,7 +53,7 @@ extern S_g8c467180 *g_8c467180;
 extern S_g8c46fe20 *g_8c46fe20;
 extern void call_8c019d64(void *, int, int, void *);
 extern void call_8c019a3c(void);
-extern void call_8c12b048(void *, void *, ...);
+extern void sprintf_8c12b048(void *, void *, ...);
 extern int create_fitted_pair_grid_view(void *, void *);
 extern void operation_8c0dc610(void *, float);
 extern void operation_8c119764(int, int, int);
@@ -78,7 +78,7 @@ void operation_8c017bd4(void)
         call_8c019a3c();
         break;
     case 5:
-        call_8c12b048((void *)((void *)0x8c41c7cd), (void *)(g_8c467180->f90->f1c), (void *)((void *)0x8c41bd14));
+        sprintf_8c12b048((void *)((void *)0x8c41c7cd), (void *)(g_8c467180->f90->f1c), (void *)((void *)0x8c41bd14));
         if (g_8c41c614 == 0) {
             *(Block8 *)&(&frame)->f00 = *(Block8 *)&g_8c2e2f64;
             *(Block8 *)&(&frame)->f08 = *(Block8 *)&g_8c2e2f6c;

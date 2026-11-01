@@ -3,7 +3,7 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-char operation_8c23280c(int a0)
+char serial_key_decode_hex_digit_8c23280c(int a0)
 {
     int v2;
     int v1;

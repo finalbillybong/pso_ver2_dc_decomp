@@ -13,7 +13,7 @@ struct Frame {
 };
 extern char g_8c319ad4[];
 extern void call_8c03ef04(Frame *, void *, void *);
-extern int call_8c104d50(Frame *);
+extern int file_last_size_8c104d50(Frame *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void file_load_8c104d00(int, int);
 int operation_8c186b78(int a0, int a1, int a2)
@@ -36,7 +36,7 @@ L_8c186ba4:;
         return 0;
     }
     call_8c03ef04((Frame *)((&frame)), (void *)(*(S_vv1_0_4 **)((char *)((char *)*(S_vv1_0 **)((char *)((char *)v1 + 0x0) + (a1 << 3)) + 0x4) + (a2 * 0xc))), (void *)((g_8c319ad4 + 0x15)));
-    t1 = call_8c104d50((Frame *)((&frame)));
+    t1 = file_last_size_8c104d50((Frame *)((&frame)));
     if (t1 > 0) {
         t2 = heap_alloc_8c122700((void *)(*(S_g8c4dbbec **)0x8c4dbbec), (unsigned int)t1);
         if (t2 != 0) {

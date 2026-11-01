@@ -37,7 +37,7 @@ extern int g_8c4d81a4;
 extern S_L8c30be88 g_8c30be88;
 extern S_L8c4d7ce8 g_8c4d7ce8;
 extern char g_8c4d7d38[];
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void call_8c028430(char, int, void *, int, void *);
 void *operation_8c10baf0(int a0)
 {
@@ -50,7 +50,7 @@ void *operation_8c10baf0(int a0)
     } else {
         *(Block80 *)&(&g_8c4d7ce8)->f00 = *(Block80 *)&((S_x71088 *)((int)g_8c4d7ce4 + a0 * 0x50))->f00;
     }
-    call_8c18de08(g_8c4d7ce4);
+    operator_delete_8c18de08(g_8c4d7ce4);
     v5 = (int)g_8c4703c0;
     g_8c4d7ce4 = (S_g8c4d7ce4 *)0;
     if (v5 >= 0 && 2 >= v5) {

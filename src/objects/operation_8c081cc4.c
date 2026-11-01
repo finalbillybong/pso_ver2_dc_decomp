@@ -20,16 +20,16 @@ struct Object {
 };
 extern char g_8c2ff034[];
 extern void show_key_8c112fbc(void *);
-extern void call_8c38c5b6(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void njPrintColor_8c38c5b6(int);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c081cc4(Object *o)
 {
     show_key_8c112fbc((void *)o);
     *(Vector3 *)&o->f78 = *(Vector3 *)&o->f3c;
     o->f78.f04 += 8.0f;
-    call_8c38c5b6(-0xff0100);
-    call_8c38cf80(0x130020, (void *)((g_8c2ff034 + 0x85)), (void *)(o->f90));
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xff0100);
+    debug_print_at_8c38cf80(0x130020, (void *)((g_8c2ff034 + 0x85)), (void *)(o->f90));
+    njPrintColor_8c38c5b6(-0xf0f10);
     if (!((int)(o->f90) >= 0)) {
         o->f90 = (Arg0_90 *)0;
     }

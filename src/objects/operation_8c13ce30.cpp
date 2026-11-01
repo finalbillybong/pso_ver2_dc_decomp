@@ -142,14 +142,14 @@ extern "C" void call_8c01c5f0(Object *);
 extern "C" int call_8c18e768(int, int);
 extern "C" void set_fields_8c13d384(void *);
 extern "C" void call_8c13d584(Object *);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" int call_8c13d3b4(Object *);
 extern "C" void call_8c05fd7c(int, Object *, void *, int, int);
 extern "C" void call_8c13d940(Object *);
 extern "C" void call_8c13d690(Object *);
 extern "C" int operation_8c13d420(void *);
 extern "C" void call_8c027090(Object *);
-extern "C" void call_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void operation_8c13ce30(Object *o)
 {
     Frame frame;
@@ -221,7 +221,7 @@ L_8c13cfb0:;
         if ((short)--((ObjectData *)o)->f358 > 0) {
             goto L_8c13d342;
         }
-        call_8c05fbf8(0x30006, (void *)(((char *)o + 0x3c)), 0xa, 0);
+        play_se_8c05fbf8(0x30006, (void *)(((char *)o + 0x3c)), 0xa, 0);
         ((ObjectData *)o)->f398 = 2;
         break;
     case 2:
@@ -307,7 +307,7 @@ L_8c13cfb0:;
         break;
     case 10:
         ((ObjectData *)o)->f34 |= 0x4040000;
-        call_8c05fbf8(0x30010, (void *)(((char *)o + 0x3c)), 0xa, 0);
+        play_se_8c05fbf8(0x30010, (void *)(((char *)o + 0x3c)), 0xa, 0);
         ((ObjectData *)o)->f398 = 0xb;
     case 11:
         ((ObjectData *)o)->f34 |= 0x4040000;
@@ -336,7 +336,7 @@ L_8c13cfb0:;
     }
 L_8c13d342:;
     call_8c027090(o);
-    call_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+    minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
     v64 = (int)((ObjectData *)o)->f398;
     if (v64 != -1) {
         ((ObjectData *)o)->f3c0 = (int)v64;

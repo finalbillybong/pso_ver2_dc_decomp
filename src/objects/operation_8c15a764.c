@@ -18,20 +18,20 @@ struct Object {
 };
 extern int g_8c575570;
 extern void call_8c3827d8(void *);
-extern void call_8c38ae68(void);
-extern void call_8c382a40(void *);
-extern void call_8c37dd28(int, void *);
-extern void call_8c37df90(int, void *);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void translate_current_matrix_v_8c382a40(void *);
+extern void njRotateX_8c37dd28(int, void *);
+extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3a944a(void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c15a764(Object *o)
 {
     call_8c3827d8((void *)(o->fe8));
-    call_8c38ae68();
-    call_8c382a40((void *)(((char *)o + 0x3c)));
-    call_8c37dd28(0, (void *)(o->f60));
-    call_8c37df90(0, (void *)(o->f64));
+    njPushMatrixEx_8c38ae68();
+    translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
+    njRotateX_8c37dd28(0, (void *)(o->f60));
+    njRotateY_8c37df90(0, (void *)(o->f64));
     g_8c575570 &= -0x401;
     call_8c3a944a((void *)(o->fe4));
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
 }

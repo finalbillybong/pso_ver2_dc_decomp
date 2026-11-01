@@ -59,7 +59,7 @@ struct S_c8c1583d4 {
 extern S_g8c467180 *g_8c467180;
 extern int g_8c467188;
 extern char g_8c328ef4[];
-extern void call_8c12b048(int, void *, ...);
+extern void sprintf_8c12b048(int, void *, ...);
 extern S_c8c1c7658 *operation_8c1c7658(void *);
 extern int call_8c1c9978(Object *);
 extern void memset_8c12b880(void *, int, int);
@@ -97,7 +97,7 @@ void operation_8c1c770c(Object *o, int a1)
         return;
     }
     if (o->tag == 4) {
-        call_8c12b048(a1, (void *)((void *)g_8c328ef4), o->f10, g_8c467180->f2c->f00);
+        sprintf_8c12b048(a1, (void *)((void *)g_8c328ef4), o->f10, g_8c467180->f2c->f00);
         return;
     }
     t1 = operation_8c1c7658((void *)o);
@@ -116,18 +116,18 @@ void operation_8c1c770c(Object *o, int a1)
             if (((&frame)->f03 + -0x41) == 1) {
                 v6 = (unsigned char)o->f03;
                 if (v6 != 0) {
-                    call_8c12b048(a1, (void *)((g_8c328ef4 + 0x5)), &(&frame)->f04, v6);
+                    sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0x5)), &(&frame)->f04, v6);
                     return;
                 }
-                call_8c12b048(a1, (void *)((g_8c328ef4 + 0xc)), &(&frame)->f04);
+                sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0xc)), &(&frame)->f04);
                 return;
             }
             v7 = (unsigned char)o->f03;
             if (v7 != 0) {
-                call_8c12b048(a1, (void *)((g_8c328ef4 + 0xf)), &(&frame)->f04, v4, v7);
+                sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0xf)), &(&frame)->f04, v4, v7);
                 return;
             }
-            call_8c12b048(a1, (void *)((g_8c328ef4 + 0x19)), &(&frame)->f04, v4);
+            sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0x19)), &(&frame)->f04, v4);
             return;
         }
         t4 = operation_8c1583d4(o->f04);
@@ -141,30 +141,30 @@ void operation_8c1c770c(Object *o, int a1)
             if (v9 == 1) {
                 v11 = (unsigned char)o->f03;
                 if (v11 != 0) {
-                    call_8c12b048(a1, (void *)((g_8c328ef4 + 0x5)), v4, v11);
+                    sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0x5)), v4, v11);
                     return;
                 }
-                call_8c12b048(a1, (void *)((g_8c328ef4 + 0xc)), v4);
+                sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0xc)), v4);
                 return;
             }
-            call_8c12b048(a1, (void *)((g_8c328ef4 + 0xc)), g_8c467180->f0c->f4e0);
+            sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0xc)), g_8c467180->f0c->f4e0);
             return;
         }
         if (t4->f00 != 0) {
             v12 = (unsigned char)o->f03;
             if (v12 != 0) {
-                call_8c12b048(a1, (void *)((g_8c328ef4 + 0xf)), t4, v4, v12);
+                sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0xf)), t4, v4, v12);
                 return;
             }
-            call_8c12b048(a1, (void *)((g_8c328ef4 + 0x19)), t4, v4);
+            sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0x19)), t4, v4);
             return;
         }
         v13 = (unsigned char)o->f03;
         if (v13 != 0) {
-            call_8c12b048(a1, (void *)((g_8c328ef4 + 0x5)), v4, v13);
+            sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0x5)), v4, v13);
             return;
         }
-        call_8c12b048(a1, (void *)((g_8c328ef4 + 0xc)), v4);
+        sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0xc)), v4);
         return;
     }
     if (v5 == 3 && o->f01 == 2) {
@@ -175,20 +175,20 @@ void operation_8c1c770c(Object *o, int a1)
             case 0xe:
             case 0x11:
                 if (g_8c467188 == 0) {
-                    call_8c12b048(a1, (void *)((g_8c328ef4 + 0x1f)), *(S_g8c467180_0_0 **)((char *)((char *)g_8c467180->f00 + 0x0) + ((unsigned char)c << 2)), v4);
+                    sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0x1f)), *(S_g8c467180_0_0 **)((char *)((char *)g_8c467180->f00 + 0x0) + ((unsigned char)c << 2)), v4);
                     return;
                 }
-                call_8c12b048(a1, (void *)((g_8c328ef4 + 0x1f)), v4, *(S_g8c467180_0_0 **)((char *)((char *)g_8c467180->f00 + 0x0) + ((unsigned char)c << 2)));
+                sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0x1f)), v4, *(S_g8c467180_0_0 **)((char *)((char *)g_8c467180->f00 + 0x0) + ((unsigned char)c << 2)));
                 return;
             }
             if (g_8c467188 == 0) {
-                call_8c12b048(a1, (void *)((g_8c328ef4 + 0x24)), *(S_g8c467180_0_0 **)((char *)((char *)g_8c467180->f00 + 0x0) + (v18 << 2)), o->f02 + 1, v4);
+                sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0x24)), *(S_g8c467180_0_0 **)((char *)((char *)g_8c467180->f00 + 0x0) + (v18 << 2)), o->f02 + 1, v4);
                 return;
             }
-            call_8c12b048(a1, (void *)((g_8c328ef4 + 0x2d)), v4, *(S_g8c467180_0_0 **)((char *)((char *)g_8c467180->f00 + 0x0) + (v18 << 2)), o->f02 + 1);
+            sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0x2d)), v4, *(S_g8c467180_0_0 **)((char *)((char *)g_8c467180->f00 + 0x0) + (v18 << 2)), o->f02 + 1);
             return;
         }
-        call_8c12b048(a1, (void *)v4);
+        sprintf_8c12b048(a1, (void *)v4);
         return;
     }
     if (v5 == 1 && o->f01 == 3) {
@@ -220,8 +220,8 @@ void operation_8c1c770c(Object *o, int a1)
                 }
             }
         }
-        call_8c12b048(a1, (void *)((g_8c328ef4 + 0x1f)), v4, (&frame));
+        sprintf_8c12b048(a1, (void *)((g_8c328ef4 + 0x1f)), v4, (&frame));
         return;
     }
-    call_8c12b048(a1, (void *)v4);
+    sprintf_8c12b048(a1, (void *)v4);
 }

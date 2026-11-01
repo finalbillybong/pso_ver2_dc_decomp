@@ -9,7 +9,7 @@ struct S_vv3 {
     int f00;
 };
 extern S_g8c4182e0 *g_8c4182e0;
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c014e3c(int, int);
 extern void call_8c399810(void *);
 int operation_8c014d00(void)
@@ -24,7 +24,7 @@ int operation_8c014d00(void)
     v2 = (int)0;
     while (3 > v2) {
         if (v3->f00 == 0) {
-            t1 = call_8c011ecc(0x2c);
+            t1 = game_malloc_8c011ecc(0x2c);
             if (t1 != 0) {
                 call_8c014e3c(t1, v2);
             }

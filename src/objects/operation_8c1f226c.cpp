@@ -108,11 +108,11 @@ struct Frame {
     char unknown0[0xc];
     Vector3 f0c;
 };
-extern "C" void call_8c38ade4(void *);
+extern "C" void njPushMatrix_8c38ade4(void *);
 extern "C" int call_8c1f232c(Object *);
-extern "C" void call_8c37df90(int, int);
+extern "C" void njRotateY_8c37df90(int, int);
 extern "C" void call_8c3bdf60(void *, Frame *);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c1f226c(Object *o)
 {
     Frame frame;
@@ -124,14 +124,14 @@ extern "C" void operation_8c1f226c(Object *o)
             o->f24->v76(o->f34->f00, &o->fa4);
         }
     }
-    call_8c38ade4((void *)0x8c400500);
+    njPushMatrix_8c38ade4((void *)0x8c400500);
     t1 = call_8c1f232c(o);
-    call_8c37df90(0, t1 + 0x8000);
+    njRotateY_8c37df90(0, t1 + 0x8000);
     {
         Vector3 *p_ = (Vector3 *)&*(Vector3 *)0x8c32c40c;
         *(Vector3 *)&(&frame)->f0c = *p_;
     }
     ((void (*)(int, void *, Frame *))0x8c3be280)(0, &(&frame)->f0c, (&frame));
     call_8c3bdf60(&o->fa4, (&frame));
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
 }

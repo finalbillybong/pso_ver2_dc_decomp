@@ -36,7 +36,7 @@ extern int g_8c4689f0;
 extern int g_8c4689f4;
 extern Object *g_8c469a40;
 extern int g_8c575570;
-extern void call_8c38ade4(void *);
+extern void njPushMatrix_8c38ade4(void *);
 extern void apply_resource_3827d8(void *);
 extern void set_fields_8c0751cc(void);
 extern float operation_8c074dbc(void *);
@@ -48,7 +48,7 @@ extern void operation_8c074d14(void);
 extern void operation_8c075300(void);
 extern void set_fields_8c075220(void);
 extern void operation_8c0745dc(void *, int);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 int operation_8c075730(Object *o, Arg1 *a1, int a2)
 {
     float t1;
@@ -59,7 +59,7 @@ int operation_8c075730(Object *o, Arg1 *a1, int a2)
         return 0;
     }
     g_8c4689f0 = 0;
-    call_8c38ade4((void *)(&*(int *)((char *)((char *)a1->f118 + 0x0) + (a2 << 6))));
+    njPushMatrix_8c38ade4((void *)(&*(int *)((char *)((char *)a1->f118 + 0x0) + (a2 << 6))));
     apply_resource_3827d8((void *)(o->f28));
     if (((o->f34 & 0x8000000)) == 0 && ((o->fec & 0x40)) == 0) {
         g_8c469a40 = o;
@@ -86,7 +86,7 @@ int operation_8c075730(Object *o, Arg1 *a1, int a2)
     } else {
         operation_8c0745dc((void *)o, (int)(a1->f348));
     }
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
     g_8c4689f0 = 0;
     return 1;
 }

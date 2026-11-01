@@ -41,14 +41,14 @@ struct Arg0_f0 {
     char unknown4[0x4];
     float f08;
 };
-extern "C" int call_8c05fbf8(int, void *, int, int);
+extern "C" int play_se_8c05fbf8(int, void *, int, int);
 extern "C" void emit_control_60320(int, int, int);
 extern "C" void operation_8c1c1eb8(Object *o)
 {
     int t1;
     int t2;
     if (!(24.0f > ((ObjectData *)o)->fec) && !(((ObjectData *)o)->fec > 25.0f)) {
-        t1 = call_8c05fbf8(0x40004, (void *)(((char *)o + 0x3c)), 0, 0);
+        t1 = play_se_8c05fbf8(0x40004, (void *)(((char *)o + 0x3c)), 0, 0);
         emit_control_60320(t1, -0x500, 0);
     }
     t2 = o->v15(((ObjectData *)o)->ff0->f08);

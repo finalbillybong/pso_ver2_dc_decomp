@@ -82,17 +82,17 @@ extern int g_8c5755a4;
 extern int g_8c5755a8;
 extern "C" void update_context_blend(void *);
 extern "C" int update_depth_mode(void *, void *);
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c382a40(void *);
-extern "C" void call_8c37df90(int, void *);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void translate_current_matrix_v_8c382a40(void *);
+extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" int operation_8c03d338(void);
 extern "C" int call_8c12b944(void);
 extern "C" void call_8c3827d8(void *);
-extern "C" void call_8c3829bc(int, float, float, float);
+extern "C" void njTranslate_8c3829bc(int, float, float, float);
 extern "C" void call_8c3aa702(void *);
 extern "C" void call_8c391c94(void);
 extern "C" void call_8c391cc4(void);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c1415d8(Object *o)
 {
     Frame frame;
@@ -117,9 +117,9 @@ extern "C" void operation_8c1415d8(Object *o)
         g_8c46f578 = (int)(g_8c5755a8);
         ((Arg0_s374 *)((char *)o + 0x374))->v6();
     }
-    call_8c38ae68();
-    call_8c382a40((void *)(((char *)o + 0x3c)));
-    call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+    njPushMatrixEx_8c38ae68();
+    translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
+    njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
     t3 = operation_8c03d338();
     if (t3 != 1 && !(((ObjectData *)o)->f70 > 0.0f)) {
         t4 = call_8c12b944();
@@ -127,23 +127,23 @@ extern "C" void operation_8c1415d8(Object *o)
         (&frame)->f04 = 0.0f;
         t5 = call_8c12b944();
         (&frame)->f08 = (float)t5 / 32768.0f * 0.1f - 0.05f;
-        call_8c382a40((void *)(&frame));
+        translate_current_matrix_v_8c382a40((void *)(&frame));
     }
     call_8c3827d8((void *)(((ObjectData *)o)->f28));
     v11 = (S_vv11 *)((ObjectData *)o)->f38;
-    call_8c38ae68();
-    call_8c3829bc(0, 0.0f, ((ObjectData *)o)->f70, 0.0f);
-    call_8c382a40((void *)((int)v11 + 8));
+    njPushMatrixEx_8c38ae68();
+    njTranslate_8c3829bc(0, 0.0f, ((ObjectData *)o)->f70, 0.0f);
+    translate_current_matrix_v_8c382a40((void *)((int)v11 + 8));
     call_8c3aa702((void *)(((ObjectData *)o)->f38->f04));
     v12 = (S_vv12 *)v11->f2c;
-    call_8c38ae68();
-    call_8c382a40((void *)((int)v12 + 8));
+    njPushMatrixEx_8c38ae68();
+    translate_current_matrix_v_8c382a40((void *)((int)v12 + 8));
     call_8c391c94();
     call_8c3aa702((void *)(v12->f04));
     call_8c391cc4();
-    call_8c38ad10();
-    call_8c38ad10();
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
+    njPopMatrixEx_8c38ad10();
+    njPopMatrixEx_8c38ad10();
     t6 = update_depth_mode((void *)(((char *)o + 0x374)), (void *)(((char *)o + 0x3c)));
     if (t6 == 1) {
         ((Arg0_s374 *)((char *)o + 0x374))->v7();

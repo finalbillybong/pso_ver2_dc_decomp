@@ -45,7 +45,7 @@ extern Vector3 g_8c33965c;
 extern S_L8c510b80 g_8c510b80;
 extern char g_8c510b2c[];
 extern void create_effect(void *, int, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern int create_effect_78d0(void *, void *, int, int);
 extern void create_effect_777c(void *, int);
 extern void call_8c0a7608(void *, void *);
@@ -80,8 +80,8 @@ void operation_8c236fc0(Object *o)
             if ((((&g_8c510b80)->f10 & v3)) == 0) {
                 goto L_8c237094;
             }
-            call_8c05fbf8(0x20005, (void *)(&o->f20), 0, 0);
-            call_8c05fbf8(0x50015, (void *)(&o->f20), 0, 0);
+            play_se_8c05fbf8(0x20005, (void *)(&o->f20), 0, 0);
+            play_se_8c05fbf8(0x50015, (void *)(&o->f20), 0, 0);
             o->f50 = 1;
             return;
         }
@@ -91,8 +91,8 @@ void operation_8c236fc0(Object *o)
             v4 = (int)2;
         }
         if ((((&g_8c510b80)->f10 & v4)) != 0) {
-            call_8c05fbf8(0x20005, (void *)(&o->f20), 0, 0);
-            call_8c05fbf8(0x50015, (void *)(&o->f20), 0, 0);
+            play_se_8c05fbf8(0x20005, (void *)(&o->f20), 0, 0);
+            play_se_8c05fbf8(0x50015, (void *)(&o->f20), 0, 0);
             o->f50 = 1;
             return;
         }

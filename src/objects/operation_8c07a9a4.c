@@ -28,7 +28,7 @@ struct Object {
 extern void call_8c01c5f0(Object *);
 extern void operation_8c04a43c(void *, float, void *);
 extern void refresh_follow_effect_8c052180(void *);
-extern void call_8c102cd0(void *, int, int, int);
+extern void minimap_add_marker_8c102cd0(void *, int, int, int);
 void operation_8c07a9a4(Object *o)
 {
     short v3;
@@ -67,5 +67,5 @@ void operation_8c07a9a4(Object *o)
             }
         }
     }
-    call_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+    minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
 }

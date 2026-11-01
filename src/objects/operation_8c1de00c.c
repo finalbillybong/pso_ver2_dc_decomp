@@ -10,7 +10,7 @@ struct S_g8c4e3064 {
     int f08;
 };
 extern char g_8c32afac[];
-extern int call_8c104e9c(void *);
+extern int load_resource_8c104e9c(void *);
 extern int operator_new_8c18de4c(int);
 extern int load_pvm_file_tls_8c118528(void *);
 void operation_8c1de00c(void)
@@ -20,7 +20,7 @@ void operation_8c1de00c(void)
     int t3;
     int t4;
     int t5;
-    t1 = call_8c104e9c((void *)((g_8c32afac + 0xe)));
+    t1 = load_resource_8c104e9c((void *)((g_8c32afac + 0xe)));
     *(int *)0x8c4e3060 = (int)(t1);
     t2 = operator_new_8c18de4c(0xc);
     *(int *)0x8c4e3064 = (int)(t2);

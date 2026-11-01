@@ -32,7 +32,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern "C" int player_flag9_8c026508(void);
 extern "C" void operation_8c027090(int);
-extern "C" void operation_8c07383c(Object *o)
+extern "C" void TItem_update_on_floor_8c07383c(Object *o)
 {
     int v2;
     int v3;

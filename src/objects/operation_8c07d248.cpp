@@ -47,7 +47,7 @@ typedef struct Arg0_13cData {
 extern "C" void call_8c07f9b0(Object *);
 extern "C" void operation_8c07dac0(void *, int);
 extern "C" int get_current_area_8c032b10(void);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void operation_8c07d248(Object *o)
 {
     int v1;
@@ -74,6 +74,6 @@ extern "C" void operation_8c07d248(Object *o)
         o->f1d8 |= 0x20;
     }
     if (((o->fec & 0x40)) == 0) {
-        call_8c05fbf8(0xa, (void *)(((char *)o->f13c + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0xa, (void *)(((char *)o->f13c + 0x3c)), 0, 0);
     }
 }

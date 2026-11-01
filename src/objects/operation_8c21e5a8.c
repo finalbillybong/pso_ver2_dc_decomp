@@ -42,7 +42,7 @@ struct S_vv21 {
     S_vv21_20 *f20;
 };
 extern void initialize_base_8c0db1d0(void *, int);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void operation_8c199b20(int, int);
 extern int call_8c17349c(void);
 extern void call_8c0e2278(S_vv21 *, int, int);
@@ -62,7 +62,7 @@ Object *operation_8c21e5a8(Object *o)
     o->dispatch = (void *)0x8c27869c;
     o->tag = (int)(*(int *)0x8c3367f8);
     o->size = 0x70;
-    t1 = call_8c011ecc(0x24);
+    t1 = game_malloc_8c011ecc(0x24);
     if (t1 != 0) {
         operation_8c199b20(t1, (int)((*(S_g8c467180 **)0x8c467180)->f2c->f22c));
     }

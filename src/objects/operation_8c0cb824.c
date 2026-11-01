@@ -36,7 +36,7 @@ struct Frame {
 };
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void call_8c37f6f0(Frame *, void *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern float normalize_vector_checked(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0d0360(int, void *, void *, Frame *, float);
@@ -64,7 +64,7 @@ void operation_8c0cb824(Object *o)
         o->f54.f08 += o->f68;
     }
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f54;
-    call_8c37f6f0((Frame *)((&frame)), (void *)(&o->f3c));
+    vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(&o->f3c));
     t2 = normalize_vector_checked((void *)(&frame));
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x298);
     if (t1 != 0) {

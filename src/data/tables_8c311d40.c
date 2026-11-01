@@ -2,7 +2,7 @@
 
 typedef void (*Function)(void);
 
-extern void operation_8c1879a0(void);
+extern void load_judgement_messages_8c1879a0(void);
 extern void operation_8c187c4c(void);
 extern void operation_8c18af14(void);
 extern void operation_8c18af88(void);
@@ -20,7 +20,7 @@ extern void fn_8c1c0c00(void);
 extern void operation_8c1c0d88(void);
 
 Function const d_8c311d40[16] = {
-    operation_8c1879a0,
+    load_judgement_messages_8c1879a0,
     operation_8c187c4c,
     operation_8c18af14,
     operation_8c18af88,

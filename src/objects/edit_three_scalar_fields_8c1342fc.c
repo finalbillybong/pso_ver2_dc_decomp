@@ -6,7 +6,7 @@ extern signed char initialized;
 extern int axis;
 extern char format[];
 extern int repeat_button(void *,int,int,int);
-extern void set_text_size(int),set_text_color(unsigned int),draw_text(int,const char *,...);
+extern void njPrintSize_8c38c5aa(int),njPrintColor_8c38c5b6(unsigned int),debug_print_at_8c38cf80(int,const char *,...);
 void edit_three_scalar_fields_8c1342fc(Object *o) {
     float values[3];
     if(!initialized) { axis=0; initialized=1; }
@@ -39,8 +39,8 @@ void edit_three_scalar_fields_8c1342fc(Object *o) {
     if(repeat_button(&input[o->player].held,16,6,1)) --axis;
     if(axis<0) axis=2;
     if(axis>2) axis=0;
-    set_text_size(14);
-    set_text_color(0xff00ffff);
-    { int selected=axis; draw_text((selected+25)|0x150000,format+13,*(float *)((char *)values+((unsigned int)selected<<2))); }
-    set_text_color(0xfff0f0f0);
+    njPrintSize_8c38c5aa(14);
+    njPrintColor_8c38c5b6(0xff00ffff);
+    { int selected=axis; debug_print_at_8c38cf80((selected+25)|0x150000,format+13,*(float *)((char *)values+((unsigned int)selected<<2))); }
+    njPrintColor_8c38c5b6(0xfff0f0f0);
 }

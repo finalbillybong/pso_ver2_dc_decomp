@@ -18,13 +18,13 @@ struct Object {
 struct Arg0_30_0 {
     int f00;
 };
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c1dc324(Object *o)
 {
     short v2;
     short v3;
     short v1;
-    call_8c05fbf8(0x50000, 0, 0, 0);
+    play_se_8c05fbf8(0x50000, 0, 0, 0);
     v1 = (short)o->f84;
     v2 = (short)o->f86;
     v3 = (short)v1;

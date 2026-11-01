@@ -78,7 +78,7 @@ extern "C" void operation_8c119764(int, int, int);
 extern "C" int operation_239288(void *);
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void strncpy_8c12b154(int, int, int);
-extern "C" void call_8c12b048(void *, void *, ...);
+extern "C" void sprintf_8c12b048(void *, void *, ...);
 extern "C" int operation_8c244bfc(Object *);
 extern "C" void request_resource_release(void *);
 extern "C" void operation_8c2446a4(Object *);
@@ -148,7 +148,7 @@ extern "C" void operation_8c2426a0(Object *o)
             }
             v8 = (int)(v8 + 1);
         }
-        call_8c12b048((void *)((void *)0x8c510d10), (void *)(o->f40->f18), &(&frame)->f18, &(&frame)->f28, &(&frame)->f38, &(&frame)->f48);
+        sprintf_8c12b048((void *)((void *)0x8c510d10), (void *)(o->f40->f18), &(&frame)->f18, &(&frame)->f28, &(&frame)->f38, &(&frame)->f48);
         operation_8c119764((int)(o->f4c), (int)((void *)0x8c510d10), 0x80);
         o->f30 = 0xf0;
         o->f24 = 4;

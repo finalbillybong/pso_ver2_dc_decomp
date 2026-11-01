@@ -41,8 +41,8 @@ struct Arg0_104 {
 extern int operation_8c051ff4(void *, void *, void *);
 extern float call_8c12c714(float);
 extern float distance_xz(void *, void *);
-extern void call_8c37f6f0(void *, void *);
-extern float call_8c37f6c0(float);
+extern void vector_sub_in_place_8c37f6f0(void *, void *);
+extern float signed_sqrt_8c37f6c0(float);
 void operation_8c0e8a80(Object *o)
 {
     Frame frame;
@@ -96,9 +96,9 @@ L_8c0e8b96:;
         return;
 L_8c0e8bc8:;
         *(Vector3 *)&o->fe8 = *(Vector3 *)&o->f104->f00;
-        call_8c37f6f0((void *)(&o->fe8), (void *)(&o->f128));
+        vector_sub_in_place_8c37f6f0((void *)(&o->fe8), (void *)(&o->f128));
         if ((o->fe8.f00 * o->fe8.f00 + o->fe8.f08 * o->fe8.f08) > 25.0f) {
-            t4 = call_8c37f6c0(o->fe8.f00 * o->fe8.f00 + o->fe8.f08 * o->fe8.f08);
+            t4 = signed_sqrt_8c37f6c0(o->fe8.f00 * o->fe8.f00 + o->fe8.f08 * o->fe8.f08);
             o->f128.f00 = o->fe8.f00 * (0.8f / t4) + o->f128.f00;
             o->f128.f08 = o->fe8.f08 * (0.8f / t4) + o->f128.f08;
             return;

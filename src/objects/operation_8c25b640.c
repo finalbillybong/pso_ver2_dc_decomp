@@ -14,7 +14,7 @@ struct Object {
     Arg0_34 *f34;
 };
 extern int operation_8c051d18(void *);
-extern void call_8c18de08(int);
+extern void operator_delete_8c18de08(int);
 void operation_8c25b640(Object *o)
 {
     int t1;
@@ -26,5 +26,5 @@ void operation_8c25b640(Object *o)
     while (*(char *)((char *)((char *)t1 + 0x0) + (o->f28)) != 0) {
         o->f28 += 1;
     }
-    call_8c18de08(t1);
+    operator_delete_8c18de08(t1);
 }

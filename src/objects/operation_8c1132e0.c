@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern int get_current_area_8c032b10(void);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c1132e0(int a0)
 {
     int t1;
@@ -12,26 +12,26 @@ void operation_8c1132e0(int a0)
     switch (t1) {
     case 1:
     case 2:
-        call_8c05fbf8(0x4000c, (int)(a0 + 0x3c), 0, 0);
+        play_se_8c05fbf8(0x4000c, (int)(a0 + 0x3c), 0, 0);
         return;
     case 3:
     case 4:
     case 5:
-        call_8c05fbf8(0x4000b, (int)(a0 + 0x3c), 0, 0);
+        play_se_8c05fbf8(0x4000b, (int)(a0 + 0x3c), 0, 0);
         return;
     case 6:
     case 7:
-        call_8c05fbf8(0x40005, (int)(a0 + 0x3c), 0, 0);
+        play_se_8c05fbf8(0x40005, (int)(a0 + 0x3c), 0, 0);
         return;
     case 8:
     case 9:
     case 10:
-        call_8c05fbf8(0x4000c, (int)(a0 + 0x3c), 0, 0);
+        play_se_8c05fbf8(0x4000c, (int)(a0 + 0x3c), 0, 0);
         return;
     case 16:
     case 17:
         if (*(int *)0x8c2e2ad8 == 1) {
-            call_8c05fbf8(0x40003, (int)(a0 + 0x3c), 0, 0);
+            play_se_8c05fbf8(0x40003, (int)(a0 + 0x3c), 0, 0);
         }
         return;
     case 0:

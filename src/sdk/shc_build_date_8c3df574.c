@@ -1,7 +1,7 @@
 extern void *memset_8c12b880(void *, int, unsigned int);
 extern void strncpy_8c12b154(void *, void *, int);
 extern int call_8c12b114(char *, char *, int);
-extern int call_8c12b048(char *, char *, ...);
+extern int sprintf_8c12b048(char *, char *, ...);
 extern char *_builtin_strcpy(char *, const char *);
 #define strcpy _builtin_strcpy
 extern char str_8c3f9098[];
@@ -61,7 +61,7 @@ void show_build_8c3df574(void)
         mon = 11;
     else if (!call_8c12b114(str_8c3f9098, str_8c3f90d0, 3))
         mon = 12;
-    call_8c12b048(p = buf, str_8c3f90d4, year, mon, day, str_8c3f90f4[0], str_8c3f90f4[1],
+    sprintf_8c12b048(p = buf, str_8c3f90d4, year, mon, day, str_8c3f90f4[0], str_8c3f90f4[1],
                   str_8c3f90f4[3], str_8c3f90f4[4], str_8c3f90f4[6], str_8c3f90f4[7]);
     flush_8c3e0c3c();
     puts_8c3e0b10(p);
@@ -107,7 +107,7 @@ void get_build_8c3df6d8(char *out)
         mon = 11;
     else if (!call_8c12b114(str_8c3f9098, str_8c3f90d0, 3))
         mon = 12;
-    call_8c12b048(p = buf, str_8c3f90d4, year, mon, day, str_8c3f90f4[0], str_8c3f90f4[1],
+    sprintf_8c12b048(p = buf, str_8c3f90d4, year, mon, day, str_8c3f90f4[0], str_8c3f90f4[1],
                   str_8c3f90f4[3], str_8c3f90f4[4], str_8c3f90f4[6], str_8c3f90f4[7]);
     strcpy(out, p);
 }

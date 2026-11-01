@@ -27,7 +27,7 @@ typedef void (PmfObj::*PMF_0)();
 extern "C" char g_8c300de0[];
 extern "C" int operation_8c09b33c(void);
 extern "C" int operation_8c09a640(int);
-extern "C" void call_8c05fbf8(int, int, int, int);
+extern "C" void play_se_8c05fbf8(int, int, int, int);
 extern "C" int call_8c09a72c(int);
 extern "C" void operation_8c097404(Object *o)
 {
@@ -42,7 +42,7 @@ extern "C" void operation_8c097404(Object *o)
         if (o->f20->f30 == -1) {
             t2 = operation_8c09a640(8);
             if (t2 != 0) {
-                call_8c05fbf8(0x50004, 0, 0, 0);
+                play_se_8c05fbf8(0x50004, 0, 0, 0);
                 o->f38 = 7;
                 o->f30 = 6;
                 return;
@@ -55,14 +55,14 @@ extern "C" void operation_8c097404(Object *o)
             if (v3 >= o->f2c) {
                 o->f34 = 0;
             }
-            call_8c05fbf8(0x50000, 0, 0, 0);
+            play_se_8c05fbf8(0x50000, 0, 0, 0);
         } else {
             t4 = call_8c09a72c(0x10);
             if (t4 != 0) {
                 if (!(--o->f34 >= 0)) {
                     o->f34 = (int)o->f2c + -1;
                 }
-                call_8c05fbf8(0x50000, 0, 0, 0);
+                play_se_8c05fbf8(0x50000, 0, 0, 0);
             }
         }
         t5 = operation_8c09a640(4);

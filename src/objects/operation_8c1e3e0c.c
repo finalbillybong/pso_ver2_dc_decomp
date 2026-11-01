@@ -14,7 +14,7 @@ extern int g_8c4e30c0;
 extern S_g8c4e30c4 *g_8c4e30c4;
 extern char g_8c32b804[];
 extern int get_current_area_8c032b10(void);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern int operator_new_8c18de4c(int);
 extern int load_pvm_file_tls_8c118528(void *);
@@ -40,7 +40,7 @@ void operation_8c1e3e0c(void)
     if (g_8c2e2ad8 == 1) {
         t1 = get_current_area_8c032b10();
         if (t1 == 0x10) {
-            t2 = call_8c011ecc(0x440);
+            t2 = game_malloc_8c011ecc(0x440);
             if (t2 != 0) {
                 call_8c03d610(t2, 1, (void *)((void *)0x8c32b67c), 0, 0, 0);
             }
@@ -59,7 +59,7 @@ void operation_8c1e3e0c(void)
     if (g_8c2e2ad8 == 1) {
         t7 = get_current_area_8c032b10();
         if (t7 == 0x11) {
-            t8 = call_8c011ecc(0x440);
+            t8 = game_malloc_8c011ecc(0x440);
             if (t8 != 0) {
                 call_8c03d610(t8, 1, (void *)((void *)0x8c32b658), 0, 0, 0);
             }
@@ -75,7 +75,7 @@ void operation_8c1e3e0c(void)
             return;
         }
     }
-    t13 = call_8c011ecc(0x440);
+    t13 = game_malloc_8c011ecc(0x440);
     if (t13 != 0) {
         call_8c03d610(t13, 1, (void *)((void *)0x8c32b634), 0, 0, 0);
     }

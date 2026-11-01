@@ -41,9 +41,9 @@ struct S_x74320 {
     float f00;
 };
 extern int g_8c467874;
-extern void call_8c37f6f0(void *, void *);
-extern float call_8c37e480(void *);
-extern void call_8c37b630(void *);
+extern void vector_sub_in_place_8c37f6f0(void *, void *);
+extern float njScalor_8c37e480(void *);
+extern void njUnitVector_8c37b630(void *);
 extern float squared_distance_xz(void *, void *);
 extern void call_8c161a80(Object *, S_vv8 *);
 extern void call_8c3bdf60(void *, void *);
@@ -76,15 +76,15 @@ void operation_8c161908(Object *o)
     pm13 = (Vector3 *)&(&frame)->f18;
     *pm13 = *(&o->f48);
     v1 = v1 * v1;
-    call_8c37f6f0((void *)(&(&frame)->f18), (void *)(&o->f3c));
-    pm9 = call_8c37e480((void *)((&(&frame)->f18)));
+    vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f18), (void *)(&o->f3c));
+    pm9 = njScalor_8c37e480((void *)((&(&frame)->f18)));
     t1 = pm9;
     if (0.0f == t1) {
         float pm10;
         pm10 = 1.0f;
         (&frame)->f18.f00 = pm10;
     }
-    call_8c37b630((void *)(&(&frame)->f18));
+    njUnitVector_8c37b630((void *)(&(&frame)->f18));
     v4 = 0x394;
     v5 = 0x2000a00;
     pm14 = (S_x17872 *)((int)o + v4);

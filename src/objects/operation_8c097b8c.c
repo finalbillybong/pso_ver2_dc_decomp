@@ -50,7 +50,7 @@ extern float g_8c31bf88;
 extern S_g8c467180 *g_8c467180;
 extern int g_8c46ec14;
 extern int call_8c0353ec(Arg0_20 *);
-extern float call_8c37eb0c(int);
+extern float njSin_8c37eb0c(int);
 extern float call_8c12c714(float);
 extern int call_8c04b8dc(int);
 extern void operation_8c04b230(float, float, int, int);
@@ -78,7 +78,7 @@ void operation_8c097b8c(Object *o)
     if (*(int *)((char *)((char *)o->f28 + 0x0) + (o->f34 << 2)) == 9) {
         t1 = call_8c0353ec((Arg0_20 *)(o->f20));
         if (t1 == 0) {
-            t2 = call_8c37eb0c((int)(o->f3c << 0xa));
+            t2 = njSin_8c37eb0c((int)(o->f3c << 0xa));
             t5 = call_8c12c714(t2);
             v5 = (int)((unsigned int)((1.0f - t5 * 0.35f) * 255.0f) << 0x18 | 0xffffff);
             v37 = g_8c31bf88 * 19.0f;

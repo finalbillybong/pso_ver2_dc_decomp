@@ -11,12 +11,12 @@ struct S_vv2 {
 };
 extern S_g8c506300 *g_8c506300;
 extern S_g8c506304 *g_8c506304;
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 void operation_8c22be68(void)
 {
-    call_8c18de08(g_8c506304);
+    operator_delete_8c18de08(g_8c506304);
     g_8c506304 = (S_g8c506304 *)0;
-    call_8c18de08(g_8c506300);
+    operator_delete_8c18de08(g_8c506300);
     g_8c506300 = (S_g8c506300 *)0;
     {
         short i;

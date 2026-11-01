@@ -2,7 +2,7 @@
 
 typedef void (*Function)(void);
 
-extern void fn_8c17327c(void);
+extern void load_city_map_offline_8c17327c(void);
 extern void operation_8c1733bc(void);
 extern void operation_8c088568(void);
 extern void operation_8c0885c8(void);
@@ -219,7 +219,7 @@ extern Function const d_8c2ed0f0[];
 extern Function const d_8c2ed1a8[];
 
 Function const d_8c2ec520[24] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     operation_8c088568,
     operation_8c0885c8,
@@ -246,7 +246,7 @@ Function const d_8c2ec520[24] = {
 };
 
 Function const d_8c2ec580[64] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     operation_8c082048,
     operation_8c0820f4,
@@ -313,7 +313,7 @@ Function const d_8c2ec580[64] = {
 };
 
 Function const d_8c2ec680[68] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     operation_8c082048,
     operation_8c0820f4,
@@ -384,7 +384,7 @@ Function const d_8c2ec680[68] = {
 };
 
 Function const d_8c2ec790[56] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     operation_8c088568,
     operation_8c0885c8,
@@ -443,7 +443,7 @@ Function const d_8c2ec790[56] = {
 };
 
 Function const d_8c2ec870[78] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     operation_8c088568,
     operation_8c0885c8,
@@ -524,7 +524,7 @@ Function const d_8c2ec870[78] = {
 };
 
 Function const d_8c2ec9a8[76] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     operation_8c088568,
     operation_8c0885c8,
@@ -603,7 +603,7 @@ Function const d_8c2ec9a8[76] = {
 };
 
 Function const d_8c2ecad8[70] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     operation_8c13060c,
     operation_8c1306c0,
@@ -676,7 +676,7 @@ Function const d_8c2ecad8[70] = {
 };
 
 Function const d_8c2ecbf0[74] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     operation_8c13060c,
     operation_8c1306c0,
@@ -753,7 +753,7 @@ Function const d_8c2ecbf0[74] = {
 };
 
 Function const d_8c2ecd18[66] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     create_context_resources_8c0f2100,
     operation_8c0f2144,
@@ -822,7 +822,7 @@ Function const d_8c2ecd18[66] = {
 };
 
 Function const d_8c2ece20[66] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     create_context_resources_8c0f2100,
     operation_8c0f2144,
@@ -891,7 +891,7 @@ Function const d_8c2ece20[66] = {
 };
 
 Function const d_8c2ecf28[68] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     create_context_resources_8c0f2100,
     operation_8c0f2144,
@@ -975,7 +975,7 @@ Function const d_8c2ed038[10] = {
 };
 
 Function const d_8c2ed060[16] = {
-    fn_8c17327c,
+    load_city_map_offline_8c17327c,
     operation_8c1733bc,
     create_context_resources_8c0f2100,
     operation_8c0f2144,

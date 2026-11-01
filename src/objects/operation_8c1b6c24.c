@@ -52,7 +52,7 @@ extern int g_8c4703c0;
 extern S_g8c4e2288 *g_8c4e2288;
 extern void refresh_records_8c1ada14(void);
 extern void clear_global_render_resources(void);
-extern void call_8c37b630(Frame *);
+extern void njUnitVector_8c37b630(Frame *);
 extern void operation_8c2281a0(int, int, int, int);
 extern void operation_8c177748(int);
 extern void operation_8c227508(int);
@@ -71,7 +71,7 @@ void operation_8c1b6c24(Object *o)
         *(Vector3 *)&o->f3b4 = *src;
         *(Vector3 *)&(&frame)->f00 = *src;
         (&frame)->f00.f04 = 0.0f;
-        call_8c37b630((Frame *)((&frame)));
+        njUnitVector_8c37b630((Frame *)((&frame)));
         o->f3b4.f00 -= (&frame)->f00.f00 * 75.0f;
         o->f3b4.f08 -= (&frame)->f00.f08 * 75.0f;
         o->f3b4.f04 = 0.0f;

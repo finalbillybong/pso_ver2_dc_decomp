@@ -13,7 +13,7 @@ extern void strncpy_8c12b154(int, void *, int);
 extern int ADXF_LoadPartitionNw_8c34cd84(int, void *, int, void *);
 extern int ADXF_GetPtStat_8c34ce88(int);
 extern void loading_wait_frame_8c104c60(void);
-void operation_8c22bdac(void)
+void load_item_kt_table_8c22bdac(void)
 {
     S_vv28 *v28;
     int v26;

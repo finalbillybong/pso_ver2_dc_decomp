@@ -9,7 +9,7 @@ struct S_vv1 {
 };
 extern char g_8c32bda4[];
 extern void load_resource_small(void *, void *);
-void operation_8c1e6050(void)
+void load_sega_logo_texture_8c1e6050(void)
 {
     {
         short i;

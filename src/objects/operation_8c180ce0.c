@@ -16,7 +16,7 @@ extern void call_8c191504(int);
 extern int operation_8c2324e0(void);
 extern int operation_8c2324c0(void);
 extern void call_8c17f824(void *);
-extern void call_8c17ef78(void);
+extern void build_guild_card_vmu_header_8c17ef78(void);
 extern void decode_record_collection(void *);
 int operation_8c180ce0(void)
 {
@@ -39,7 +39,7 @@ int operation_8c180ce0(void)
             (&g_8c4dbaf8)->f04 = v1;
             (&g_8c4dbaf8)->f00 = v1;
             call_8c17f824(g_8c4db9e8);
-            call_8c17ef78();
+            build_guild_card_vmu_header_8c17ef78();
             decode_record_collection(g_8c4db9e8);
             v21 = (int)1;
         }

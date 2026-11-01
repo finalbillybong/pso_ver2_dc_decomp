@@ -10,7 +10,7 @@ struct S_vv3 {
     char unknown1[0x1];
     unsigned short f02;
 };
-extern void call_8c02d368(void *, S_vv3 *);
+extern void dispatch_game_command_8c02d368(void *, S_vv3 *);
 void operation_8c09cbcc(void)
 {
     int v2;
@@ -23,7 +23,7 @@ void operation_8c09cbcc(void)
 L_8c09cbde:;
     v3 = (S_vv3 *)(*(int *)0x8c46ec20 + v2);
     if ((v3->f00) != 0) {
-        call_8c02d368((void *)(*(S_g8c418a00 **)0x8c418a00), v3);
+        dispatch_game_command_8c02d368((void *)(*(S_g8c418a00 **)0x8c418a00), v3);
         *(int *)0x8c46ec24 += v3->f02;
 L_8c09cc04:;
         v2 = (int)*(int *)0x8c46ec24;

@@ -11,7 +11,7 @@ struct Object {
 extern char g_8c41cba0[];
 extern int operation_8c01d858(int, int, int, int);
 extern int operation_8c01d844(int, int, int, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c22ba9c(Object *o)
 {
     int v1;
@@ -29,7 +29,7 @@ void operation_8c22ba9c(Object *o)
             return;
         }
     }
-    call_8c05fbf8(0x50000, 0, 0, 0);
+    play_se_8c05fbf8(0x50000, 0, 0, 0);
     t3 = operation_8c01d858(v1, 0x10, 6, 1);
     if (t3 == 0) {
         t4 = operation_8c01d844((int)(g_8c41cba0 + 0x110), 0x10, 6, 1);

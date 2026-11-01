@@ -158,7 +158,7 @@ struct Frame {
     float f34;
     float f38;
 };
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" int player_flag9_8c026508(void);
 extern "C" void operation_8c0368a8(void *);
 extern "C" void call_8c01c5f0(Object *);
@@ -179,7 +179,7 @@ extern "C" void operation_8c068660(Object *o, int a1)
         *cnt = 0;
         ((ObjectData *)o)->f5f8 = ((ObjectData *)o)->f40;
         ((ObjectData *)o)->f5fc = 0.0f;
-        call_8c05fbf8(0x30000, (void *)(((char *)o + 0x658)), 0, 0);
+        play_se_8c05fbf8(0x30000, (void *)(((char *)o + 0x658)), 0, 0);
         return;
     case 2:
     case 11:

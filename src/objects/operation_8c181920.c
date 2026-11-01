@@ -11,11 +11,11 @@ extern S_g8c4dbaf4 *g_8c4dbaf4;
 extern S_g8c4dbb0c *g_8c4dbb0c;
 extern S_g8c4dbb14 *g_8c4dbb14;
 extern void word_operation_8c18490c(unsigned int);
-extern void call_8c01024c(void *, void *, void *, void *);
-void operation_8c181920(int a0)
+extern void vmu_save_file_timestamped_8c01024c(void *, void *, void *, void *);
+void save_2gc_file_8c181920(int a0)
 {
     g_8c4dbaf4 = (S_g8c4dbaf4 *)a0;
     word_operation_8c18490c((unsigned int)a0);
     g_8c41cb3c = 1;
-    call_8c01024c(g_8c4dbaf4, (void *)((void *)0x8c319912), g_8c4dbb14, g_8c4dbb0c);
+    vmu_save_file_timestamped_8c01024c(g_8c4dbaf4, (void *)((void *)0x8c319912), g_8c4dbb14, g_8c4dbb0c);
 }

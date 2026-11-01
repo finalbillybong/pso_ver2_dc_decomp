@@ -19,7 +19,7 @@ struct S_vv3 {
 };
 extern char g_8c2feb4c[];
 extern int operation_8c105360(int);
-extern S_c8c011ecc *call_8c011ecc(int);
+extern S_c8c011ecc *game_malloc_8c011ecc(int);
 extern void call_8c193658(S_c8c011ecc *, void *, int);
 void operation_8c07cf34(void)
 {
@@ -38,7 +38,7 @@ void operation_8c07cf34(void)
     t1 = operation_8c105360((int)(g_8c2feb4c + 0x9));
     *(int *)0x8c469b68 = (int)(t1);
     v3 = (S_vv3 *)0;
-    t2 = call_8c011ecc(8);
+    t2 = game_malloc_8c011ecc(8);
     if (t2 != 0) {
         call_8c193658(t2, (void *)((g_8c2feb4c + 0x1b)), 0x1000);
     }

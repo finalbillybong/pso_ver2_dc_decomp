@@ -28,14 +28,14 @@ struct Arg2 {
     char unknown22[0x1a];
     Vector3 f3c;
 };
-extern void call_8c01d1ec(Object *);
+extern void TObjectShared_ctor_8c01d1ec(Object *);
 extern int create_effect_769c(void *, int);
 Object *operation_8c04f854(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    call_8c01d1ec(o);
+    TObjectShared_ctor_8c01d1ec(o);
     o->dispatch = (void *)0x8c261e94;
     if (a2 != 0) {
         o->tag = (int)(*(int *)0x8c2f2cd4);

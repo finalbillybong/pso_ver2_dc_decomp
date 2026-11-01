@@ -12,8 +12,8 @@ struct Object {
     Arg0_88 *f88;
 };
 extern char g_8c30019c[];
-extern void call_8c38c5b6(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void njPrintColor_8c38c5b6(int);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c08a4c0(Object *o)
 {
     if (0.0f > o->f6c) {
@@ -22,8 +22,8 @@ void operation_8c08a4c0(Object *o)
     if (!((int)(o->f88) >= 0)) {
         o->f88 = (Arg0_88 *)0;
     }
-    call_8c38c5b6(-0xff0100);
-    call_8c38cf80(0x13001a, (void *)((g_8c30019c + 0xe)), (int)((int)o->f6c));
-    call_8c38cf80(0x13001e, (void *)((g_8c30019c + 0x21)), (int)(o->f88));
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xff0100);
+    debug_print_at_8c38cf80(0x13001a, (void *)((g_8c30019c + 0xe)), (int)((int)o->f6c));
+    debug_print_at_8c38cf80(0x13001e, (void *)((g_8c30019c + 0x21)), (int)(o->f88));
+    njPrintColor_8c38c5b6(-0xf0f10);
 }

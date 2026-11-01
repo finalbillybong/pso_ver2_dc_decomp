@@ -178,10 +178,10 @@ struct Frame {
     Block_frame_0 f00;
 };
 extern "C" void operation_8c059ea4(void *, int);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" int active_unflagged_8c05b2dc(void *);
 extern "C" void call_8c3bdf60(void *, void *);
-extern "C" void call_8c37f6f0(Frame *, void *);
+extern "C" void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern "C" float normalize_vector_checked(void *);
 extern "C" void operation_8c166964(Object *o, int a1)
 {
@@ -225,7 +225,7 @@ extern "C" void operation_8c166964(Object *o, int a1)
             v2->f00 += 1;
             if (v2->f00 >= 0xf) {
                 v1->f00 = 1;
-                call_8c05fbf8(0x30004, (void *)(((char *)o + 0x324)), 0, 0);
+                play_se_8c05fbf8(0x30004, (void *)(((char *)o + 0x324)), 0, 0);
             }
             ((ObjectData *)o)->f324 = ((ObjectData *)o)->f420 * v3->f00 + ((ObjectData *)o)->f324;
             ((ObjectData *)o)->f32c = ((ObjectData *)o)->f428 * v3->f00 + ((ObjectData *)o)->f32c;
@@ -257,7 +257,7 @@ extern "C" void operation_8c166964(Object *o, int a1)
                 ((ObjectData *)o)->f3ac.f04 += 17.0f;
             }
             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((ObjectData *)o)->f3ac;
-            call_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x324)));
+            vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x324)));
             t2 = normalize_vector_checked((void *)(&frame));
             if (!(t2 > 4.5f)) {
                 v1->f00 = 3;

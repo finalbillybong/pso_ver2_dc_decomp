@@ -14,7 +14,7 @@ struct Object {
 extern void call_8c1cc690(void);
 extern int operation_8c180ce0(void);
 extern int operation_8c19b054(void);
-extern int operation_8c181920(int);
+extern int save_2gc_file_8c181920(int);
 extern void request_resource_release(void *);
 extern void operation_8c0e9aac(int);
 extern void request_game_mode_8c01c1a4(int);
@@ -44,7 +44,7 @@ void operation_8c23024c(Object *o)
             return;
 L_8c230284:;
             t2 = operation_8c19b054();
-            t3 = operation_8c181920((int)((char)t2));
+            t3 = save_2gc_file_8c181920((int)((char)t2));
             if (t3 == 0) {
                 *(int *)0x8c4dbaec = 0xc;
                 o->f20 = 2;

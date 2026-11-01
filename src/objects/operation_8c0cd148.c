@@ -32,13 +32,13 @@ extern int g_8c5755a4;
 extern int g_8c5755a8;
 extern void call_8c3827d8(void *);
 extern void call_8c0cc8bc(void *);
-extern void call_8c38ae68(void);
-extern void call_8c382a40(void *);
-extern void call_8c3829bc(int, float, float, float);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void translate_current_matrix_v_8c382a40(void *);
+extern void njTranslate_8c3829bc(int, float, float, float);
 extern void call_8c38c0e6(int, int);
 extern void call_8c3aa716(void *);
 extern void call_8c3a944a(void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c0cd148(Object *o)
 {
     Entry *e;
@@ -53,9 +53,9 @@ void operation_8c0cd148(Object *o)
             *e->dst = e->a + e->b;
             e++;
         }
-        call_8c38ae68();
-        call_8c382a40(g_8c46fa68);
-        call_8c3829bc(0, 0.0f, o->f38, 0.0f);
+        njPushMatrixEx_8c38ae68();
+        translate_current_matrix_v_8c382a40(g_8c46fa68);
+        njTranslate_8c3829bc(0, 0.0f, o->f38, 0.0f);
         if (o->f3c != 0) {
             g_8c46f560 = g_8c575570;
             g_8c46f574 = g_8c5755a4;
@@ -69,7 +69,7 @@ void operation_8c0cd148(Object *o)
         } else {
             call_8c3a944a(g_8c469a60->f42c->f48);
         }
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         f = g_8c46fa64;
         for (j = 0; j < g_8c46fa60; j++) {
             *f->dst = f->a;

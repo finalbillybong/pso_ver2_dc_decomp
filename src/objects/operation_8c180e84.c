@@ -19,19 +19,19 @@ extern S_L8c4dbaf8 g_8c4dbaf8;
 extern int call_8c372d38(void *, void *);
 extern void visit_hierarchy_10(void *);
 extern void call_8c2280f0(void);
-extern void call_8c380516(void);
+extern void wait_vsync_and_flip_8c380516(void);
 extern int call_8c372c46(void *, void *);
 extern int call_8c3727a0(void *);
-extern int call_8c372d98(void *);
+extern int bu_check_busy_8c372d98(void *);
 extern int operation_8c19b054(void);
 extern int vmu_find_file_8c01018c(int);
 extern void operation_8c191504(int);
 extern int operation_8c2324e0(void);
 extern int operation_8c2324c0(void);
 extern void call_8c17f824(void *);
-extern void call_8c17ef78(void);
+extern void build_guild_card_vmu_header_8c17ef78(void);
 extern void decode_record_collection(void *);
-extern int operation_8c181920(int);
+extern int save_2gc_file_8c181920(int);
 int operation_8c180e84(void)
 {
     int v7;
@@ -67,7 +67,7 @@ L_8c180ece:;
                         visit_hierarchy_10((void *)((void *)0x8c44bec8));
                     }
                     call_8c2280f0();
-                    call_8c380516();
+                    wait_vsync_and_flip_8c380516();
 L_8c180eea:;
                     t3 = call_8c372c46(g_8c4dbaf4, (void *)((void *)0x8c3198c1));
                     if (t3 == 0) {
@@ -96,9 +96,9 @@ L_8c180f1e:;
                         visit_hierarchy_10((void *)((void *)0x8c44bec8));
                     }
                     call_8c2280f0();
-                    call_8c380516();
+                    wait_vsync_and_flip_8c380516();
 L_8c180f40:;
-                    v18 = call_8c372d98(g_8c4dbaf4);
+                    v18 = bu_check_busy_8c372d98(g_8c4dbaf4);
                     if (v18 != 0) {
                         goto L_8c180f04;
                     }
@@ -133,14 +133,14 @@ L_8c180f90:;
                     (&g_8c4dbaf8)->f04 = (int)(v23);
                     (&g_8c4dbaf8)->f00 = (int)(v23);
                     call_8c17f824(g_8c4db9e8);
-                    call_8c17ef78();
+                    build_guild_card_vmu_header_8c17ef78();
                     decode_record_collection(g_8c4db9e8);
                     v26 = (int)1;
                 }
                 v29 = (int)v26;
             }
             if (v29 != 0) {
-                v18 = operation_8c181920((int)g_8c4dbaf4);
+                v18 = save_2gc_file_8c181920((int)g_8c4dbaf4);
                 if (v18 == 0) {
                     g_8c4dbaec = 0xc;
                 }

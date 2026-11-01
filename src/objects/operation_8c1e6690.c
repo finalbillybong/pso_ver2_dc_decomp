@@ -24,8 +24,8 @@ extern void select_state3_8c01c234(void);
 extern void call_8c36a880(void);
 extern int call_8c36a868(void);
 extern void request_game_mode_8c01c1a4(int);
-extern void call_8c380516(void);
-void operation_8c1e6690(void)
+extern void wait_vsync_and_flip_8c380516(void);
+void mode_sega_logo_frame_8c1e6690(void)
 {
     Frame frame;
     int t1;
@@ -56,7 +56,7 @@ void operation_8c1e6690(void)
         request_game_mode_8c01c1a4(0);
         return;
     default:
-        call_8c380516();
+        wait_vsync_and_flip_8c380516();
         return;
     }
 }

@@ -169,15 +169,15 @@ extern "C" void call_8c05fd7c(int, Object *, void *, int, int);
 extern "C" void apply_actor_matrix_frame(void *);
 extern "C" int create_effect_769c(void *, int);
 extern "C" int check_range_8c01cf68(void *, float);
-extern "C" void call_8c05fbf8(int, void *, int, int);
-extern "C" void call_8c38ade4(void *);
-extern "C" void call_8c37df90(int, void *);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
+extern "C" void njPushMatrix_8c38ade4(void *);
+extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3be280(int, void *, void *);
 extern "C" void call_8c3bdf60(void *, void *);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void call_8c0a7608(void *, void *);
 extern "C" void call_8c1549b0(Object *);
-extern "C" float call_8c37eb0c(void *);
+extern "C" float njSin_8c37eb0c(void *);
 extern "C" int lookup_low_id(int);
 extern "C" float distance_xz(void *, void *);
 extern "C" void call_8c15558c(Object *);
@@ -235,17 +235,17 @@ extern "C" void operation_8c154f24(Object *o)
         if (0 == t2) {
             return;
         }
-        call_8c05fbf8(0x30018, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30018, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
         case 2:
         call_8c05fd7c(0x30016, o, (void *)(((char *)o + 0x3c)), 0, 0);
-        call_8c38ade4((void *)((void *)0x8c400500));
+        njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
         t8 = &frame;
         t8->f0c = g_8c316034;
-        call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
         call_8c3be280(0, (void *)(&(&frame)->f0c), (void *)(&(&frame)->f18));
         call_8c3bdf60((void *)(&(&frame)->f18), (void *)((0x3c + (char *)o)));
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         if (!(0 == ((ObjectData *)o)->f494)) {
             call_8c0a7608((void *)(((ObjectData *)o)->f494), (void *)(&(&frame)->f18));
         }
@@ -277,13 +277,13 @@ extern "C" void operation_8c154f24(Object *o)
         if (!(((ObjectData *)o)->f3b6 != 0)) {
             float t3;
             *(int *)((char *)o + 0x528) += 0x400;
-            t3 = call_8c37eb0c((void *)(((ObjectData *)o)->f528));
+            t3 = njSin_8c37eb0c((void *)(((ObjectData *)o)->f528));
             ((ObjectData *)o)->f524 = (t3 * 25.0f) + 75.0f;
         }
-        call_8c38ade4(((void *)0x8c400500));
+        njPushMatrix_8c38ade4(((void *)0x8c400500));
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&g_8c316040;
         (&frame)->f00.f08 = ((ObjectData *)o)->f524;
-        call_8c37df90(0, (void *)(((ObjectData *)o)->f4dc));
+        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f4dc));
         v20 = 0x4e4;
         v21 = 0x4000;
         v22 = 0;
@@ -295,10 +295,10 @@ extern "C" void operation_8c154f24(Object *o)
             v23 = (int)(t1 + v20);
             call_8c3be280(0, (void *)(&frame), (void *)v23);
             call_8c3bdf60((void *)v23, (void *)((0x3c + (char *)o)));
-            call_8c37df90(0, (void *)(int)v21);
+            njRotateY_8c37df90(0, (void *)(int)v21);
             v22 += 1;
         }
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         if (((ObjectData *)o)->f4e0 <= 0) {
             if (((ObjectData *)o)->f3b6 == 0) {
                 int v30;
@@ -350,7 +350,7 @@ extern "C" void operation_8c154f24(Object *o)
             v63 = v63 + 1;
         }
         }
-        call_8c05fbf8(0x30022, (void *)(((0x3c + (char *)o))), 0, 0);
+        play_se_8c05fbf8(0x30022, (void *)(((0x3c + (char *)o))), 0, 0);
         ((ObjectData *)o)->f398 = 6;
         call_8c1549b0(o);
         case 6:
@@ -376,7 +376,7 @@ extern "C" void operation_8c154f24(Object *o)
             if (3 > v21) {
                 ((ObjectData *)o)->f398 = 3;
             } else {
-                call_8c05fbf8(0x30017, (void *)((0x3c + (char *)o)), 0, 0);
+                play_se_8c05fbf8(0x30017, (void *)((0x3c + (char *)o)), 0, 0);
                 o->v66();
                 return;
             }

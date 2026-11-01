@@ -10,11 +10,11 @@ struct Object {
     float ffc;
     Arg0_100 *f100;
 };
-extern float call_8c37eb0c(void *);
+extern float njSin_8c37eb0c(void *);
 void operation_8c082980(Object *o)
 {
     float t1;
     *(int *)((char *)o + 0x100) += 0x300;
-    t1 = call_8c37eb0c((void *)(o->f100));
+    t1 = njSin_8c37eb0c((void *)(o->f100));
     o->ffc = t1 * 0.2f + 0.4f;
 }

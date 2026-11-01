@@ -18,11 +18,11 @@ struct Object {
     float f98;
     float f9c;
 };
-extern void call_8c01d1ec(Object *, void *);
+extern void TObjectShared_ctor_8c01d1ec(Object *, void *);
 Object *operation_8c1c0420(Object *o)
 {
     int v1;
-    call_8c01d1ec(o, (void *)(*(S_g8c44be98 **)0x8c44be98));
+    TObjectShared_ctor_8c01d1ec(o, (void *)(*(S_g8c44be98 **)0x8c44be98));
     o->dispatch = (void *)0x8c27589c;
     o->tag = (int)(*(int *)0x8c328724);
     o->size = 0xb0;

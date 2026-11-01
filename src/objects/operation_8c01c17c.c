@@ -12,7 +12,7 @@ struct S_L8c41cb00 {
 };
 extern int g_8c41cb38;
 extern S_L8c41cb00 g_8c41cb00;
-void operation_8c01c17c(void)
+void set_initial_game_mode_8c01c17c(void)
 {
     if (g_8c41cb38 == 0) {
         (&g_8c41cb00)->f00 = 1;

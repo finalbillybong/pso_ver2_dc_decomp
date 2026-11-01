@@ -15,7 +15,7 @@ extern void init_8c36d1fc(void);
 extern void init_8c36b200(int);
 extern void tmu0_start_8c36e6d0(void);
 extern void init_8c36bb74(void);
-extern void init_8c36e17c(int);
+extern void syG2_init_8c36e17c(int);
 extern void init_8c37a014(void);
 extern void stop_8c37a128(void);
 extern void stop_8c36d2aa(void);
@@ -34,7 +34,7 @@ void start_8c36e598(void)
 void start2_8c36e5c2(void)
 {
     init_8c36bb74();
-    init_8c36e17c(0);
+    syG2_init_8c36e17c(0);
     init_8c37a014();
 }
 

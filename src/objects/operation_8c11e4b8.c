@@ -19,7 +19,7 @@ struct S_g8c4d8464 {
 };
 extern int call_8c0eea7c(float);
 extern void operation_8c05426c(void *, int, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c11e4b8(Object *o)
 {
     int t1;
@@ -31,7 +31,7 @@ void operation_8c11e4b8(Object *o)
         }
         o->fe4 = 1;
         operation_8c05426c((void *)o, 0, 0x10);
-        call_8c05fbf8(0x40008, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x40008, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     }
     o->f28 = (int)((*(S_g8c4d8464 **)0x8c4d8464)->f00);

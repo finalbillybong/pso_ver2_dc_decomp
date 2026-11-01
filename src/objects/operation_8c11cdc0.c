@@ -27,7 +27,7 @@ struct Frame {
     Block_frame_0 f00;
 };
 extern void create_effect_7bc0(void *, void *, int, int, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c11cdc0(Object *o)
 {
     Frame frame;
@@ -35,7 +35,7 @@ void operation_8c11cdc0(Object *o)
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f324;
     (&frame)->f00.f04 += 10.0f;
     create_effect_7bc0((void *)(&frame), (void *)(((char *)o + 0x60)), 0x106, 0x22, 0x3c);
-    call_8c05fbf8(0x3002d, (void *)(((char *)o + 0x3c8)), 0, 0);
-    call_8c05fbf8(0x3002c, (void *)(((char *)o + 0x3e0)), 0, 0);
+    play_se_8c05fbf8(0x3002d, (void *)(((char *)o + 0x3c8)), 0, 0);
+    play_se_8c05fbf8(0x3002c, (void *)(((char *)o + 0x3e0)), 0, 0);
     o->ff0 = 0xa;
 }

@@ -30,13 +30,13 @@ extern char g_8c41cba0[];
 extern int operation_8c051cf0(void *);
 extern int operation_8c051d18(void *);
 extern int call_8c232864(int, int, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c051ce4(void *);
 extern void memset_8c12b880(void *, int, int);
 extern int strlen_8c12b0cc(int);
 extern void memcpy_8c12b77c(void *, int, int);
 extern void request_resource_release(void *);
-extern void call_8c18de08(int);
+extern void operator_delete_8c18de08(int);
 extern int operation_8c01d8a8(void *, int);
 void operation_8c25bb38(Object *o)
 {
@@ -80,7 +80,7 @@ void operation_8c25bb38(Object *o)
                 goto L_8c25bbb0;
             }
         }
-        call_8c05fbf8(0x50006, 0, 0, 0);
+        play_se_8c05fbf8(0x50006, 0, 0, 0);
         operation_8c051ce4((void *)(o->f34));
         goto L_8c25bbe4;
 L_8c25bbb0:;
@@ -94,7 +94,7 @@ L_8c25bbb0:;
         }
         o->f20 = 2;
 L_8c25bbe4:;
-        call_8c18de08(t2);
+        operator_delete_8c18de08(t2);
         return;
     }
     v14 = (int)o->f28;
@@ -105,7 +105,7 @@ L_8c25bbe4:;
         t5 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
         if (t5 != 0) {
 L_8c25bc12:;
-            call_8c05fbf8(0x50016, 0, 0, 0);
+            play_se_8c05fbf8(0x50016, 0, 0, 0);
             v19 = (S_vv19 *)o->f34;
             v19->f04 |= 1;
             o->f34 = (Arg0_34 *)0;

@@ -52,7 +52,7 @@ extern "C" int active_unflagged_8c05b258(void *);
 extern "C" float object_random_fraction(void *);
 extern "C" void operation_8c05b5b4(int, void *);
 extern "C" int call_8c24e644(int, void *);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void operation_8c0d4d18(Object *o)
 {
     int t1;
@@ -81,5 +81,5 @@ extern "C" void operation_8c0d4d18(Object *o)
         }
     }
     t6 = call_8c24e644(0x30013, (void *)(o->f38c));
-    call_8c05fbf8(t6, (void *)(((char *)o + 0x3c)), 0, 0);
+    play_se_8c05fbf8(t6, (void *)(((char *)o + 0x3c)), 0, 0);
 }

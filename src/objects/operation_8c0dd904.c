@@ -11,7 +11,7 @@ struct Object {
     int f28;
 };
 extern int call_8c18e954(int, int);
-extern float call_8c38c154(int);
+extern float njCos_8c38c154(int);
 void operation_8c0dd904(Object *o)
 {
     float v3;
@@ -26,7 +26,7 @@ void operation_8c0dd904(Object *o)
     if (v3 > 50.0f) {
         v6 = (float)(100.0f - v3);
     }
-    t1 = call_8c38c154((int)((int)(v6 / 100.0f * 65536.0f)));
+    t1 = njCos_8c38c154((int)((int)(v6 / 100.0f * 65536.0f)));
     v7 = (float)((t1 + 1.0f) * 0.85f);
     if (((t1 + 1.0f) * 0.85f) > 1.0f) {
         v7 = (float)1.0f;

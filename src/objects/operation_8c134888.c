@@ -21,13 +21,13 @@ struct Object {
     char unknown2c[0x10];
     Vector3 f3c;
 };
-extern void call_8c37b630(Frame *);
+extern void njUnitVector_8c37b630(Frame *);
 extern void operation_8c0c5488(void *, Frame *, int, int);
 void operation_8c134888(Object *o)
 {
     Frame frame;
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f3c;
-    call_8c37b630((Frame *)((&frame)));
+    njUnitVector_8c37b630((Frame *)((&frame)));
     (&frame)->f00.f00 *= 7.0f;
     (&frame)->f00.f04 *= 7.0f;
     (&frame)->f00.f08 *= 7.0f;

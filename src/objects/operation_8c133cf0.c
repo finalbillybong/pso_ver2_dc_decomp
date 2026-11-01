@@ -23,9 +23,9 @@ extern char g_8c4d9aac;
 extern char g_8c312a8c[];
 extern char g_8c41cba0[];
 extern int operation_8c01d844(int, int, int, int);
-extern void call_8c38c5aa(int);
-extern void call_8c38c5b6(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void njPrintSize_8c38c5aa(int);
+extern void njPrintColor_8c38c5b6(int);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c133cf0(Object *o)
 {
     Frame frame;
@@ -97,9 +97,9 @@ void operation_8c133cf0(Object *o)
     if (g_8c4d9aa8 > 2) {
         g_8c4d9aa8 = 0;
     }
-    call_8c38c5aa(0xe);
-    call_8c38c5b6(-0xff0001);
+    njPrintSize_8c38c5aa(0xe);
+    njPrintColor_8c38c5b6(-0xff0001);
     v4 = g_8c4d9aa8;
-    call_8c38cf80((int)(v4 + 0xf | 0xc0000), (void *)((g_8c312a8c + 0x13)), *(float *)((char *)&(&frame)->f00 + (v4 << 2)));
-    call_8c38c5b6(-0xf0f10);
+    debug_print_at_8c38cf80((int)(v4 + 0xf | 0xc0000), (void *)((g_8c312a8c + 0x13)), *(float *)((char *)&(&frame)->f00 + (v4 << 2)));
+    njPrintColor_8c38c5b6(-0xf0f10);
 }

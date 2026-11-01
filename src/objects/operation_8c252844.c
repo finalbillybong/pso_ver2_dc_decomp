@@ -28,8 +28,8 @@ struct Frame {
 };
 extern S_g8c44be9c *g_8c44be9c;
 extern void operation_8c172c50(void *, float, float);
-extern float call_8c37eb0c(int);
-extern float call_8c38c154(int);
+extern float njSin_8c37eb0c(int);
+extern float njCos_8c38c154(int);
 extern void call_8c175918(void *, Object *, int, void *, Frame *);
 void operation_8c252844(Object *o)
 {
@@ -52,10 +52,10 @@ void operation_8c252844(Object *o)
         o->f238 = pm3;
         pm6 = 0x4000;
         v1 = (o->f13c->f64 + pm6);
-        t1 = call_8c37eb0c(v1);
+        t1 = njSin_8c37eb0c(v1);
         (&frame)->f0c = t1;
         (&frame)->f10 = 0.0f;
-        t2 = call_8c38c154(v1);
+        t2 = njCos_8c38c154(v1);
         (&frame)->f14 = t2;
         (&frame)->f00 = 0x4000;
         (&frame)->f04 = (int)(o->f13c->f64);

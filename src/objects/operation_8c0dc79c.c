@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x34];
     int f34;
 };
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c0dc79c(Object *o)
 {
     if (((o->f34 & 1)) == 0) {
@@ -20,7 +20,7 @@ void operation_8c0dc79c(Object *o)
         return;
     }
     if (((o->f34 & 0x20)) == 0) {
-        call_8c05fbf8(0x50004, 0, 0, 0);
+        play_se_8c05fbf8(0x50004, 0, 0, 0);
     }
     o->f34 = (unsigned int)o->f34 >> 1 << 1;
     o->f34 |= 2;

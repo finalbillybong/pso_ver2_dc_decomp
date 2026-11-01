@@ -1,6 +1,6 @@
 #include "src/include/running_profile.h"
 
-#define root_at ((float (*)(float))0x8c37f6c0)
+#define signed_sqrt_8c37f6c0 ((float (*)(float))0x8c37f6c0)
 
 void configure_running_profile(RunningProfile *profile, float acceleration,
                                float deceleration, float distance,
@@ -29,7 +29,7 @@ void configure_running_profile(RunningProfile *profile, float acceleration,
             profile->ramp_time = profile->cruise_end = profile->ramp_distance = profile->braking_start = 0.0f;
             profile->duration = -profile->initial_speed / profile->deceleration;
         } else {
-            profile->peak_speed = root_at(profile->acceleration * 2.0f * profile->deceleration *
+            profile->peak_speed = signed_sqrt_8c37f6c0(profile->acceleration * 2.0f * profile->deceleration *
                                          profile->distance / (profile->deceleration - profile->acceleration));
             peak_speed = profile->peak_speed * profile->peak_speed;
             profile->ramp_time = profile->cruise_end = profile->peak_speed / profile->acceleration;

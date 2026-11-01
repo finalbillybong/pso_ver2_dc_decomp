@@ -33,7 +33,7 @@ struct S_L8c2e3470 {
 };
 extern S_L8c2e3470 g_8c2e3470;
 extern char g_8c41cba0[];
-void operation_8c01d9dc(void)
+void reset_controller_state_8c01d9dc(void)
 {
     int i;
     S_vv2 *p;

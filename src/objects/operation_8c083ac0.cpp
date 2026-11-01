@@ -56,12 +56,12 @@ typedef struct Arg0_s128Data {
 } Arg0_s128Data;
 extern "C" int update_depth_mode(void *, void *);
 extern "C" void call_8c3827d8(void *);
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c382a40(void *);
-extern "C" void call_8c37df90(int, void *);
-extern "C" void call_8c37dd28(int, void *);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void translate_current_matrix_v_8c382a40(void *);
+extern "C" void njRotateY_8c37df90(int, void *);
+extern "C" void njRotateX_8c37dd28(int, void *);
 extern "C" void call_8c3a944a(void *);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c083ac0(Object *o)
 {
     int t1;
@@ -73,18 +73,18 @@ extern "C" void operation_8c083ac0(Object *o)
             ((Arg0_s128 *)((char *)o + 0x128))->v6();
         }
         call_8c3827d8((void *)(((ObjectData *)o)->f28));
-        call_8c38ae68();
-        call_8c382a40((void *)(((char *)o + 0xf8)));
-        call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
-        call_8c37dd28(0, (void *)(((ObjectData *)o)->f60));
+        njPushMatrixEx_8c38ae68();
+        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0xf8)));
+        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+        njRotateX_8c37dd28(0, (void *)(((ObjectData *)o)->f60));
         call_8c3a944a((void *)((*(S_g8c469c60 **)0x8c469c60)->f08));
-        call_8c38ad10();
-        call_8c38ae68();
-        call_8c382a40((void *)(((char *)o + 0x3c)));
-        call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
-        call_8c37dd28(0, (void *)(((ObjectData *)o)->f60));
+        njPopMatrixEx_8c38ad10();
+        njPushMatrixEx_8c38ae68();
+        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
+        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+        njRotateX_8c37dd28(0, (void *)(((ObjectData *)o)->f60));
         call_8c3a944a((void *)((*(S_g8c469c60 **)0x8c469c60)->f04));
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         if (t2 != 0) {
             ((Arg0_s128 *)((char *)o + 0x128))->v7();
         }

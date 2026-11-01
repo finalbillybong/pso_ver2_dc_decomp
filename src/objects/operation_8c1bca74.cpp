@@ -84,13 +84,13 @@ extern char g_8c4e2b42;
 extern S_L8c327e68 g_8c327e68;
 extern "C" char gc_8c327e68[];
 extern "C" int call_8c18e6fc(void *);
-extern "C" float call_8c37eb0c(void *);
+extern "C" float njSin_8c37eb0c(void *);
 extern "C" void call_8c0a7608(void *, void *);
 extern "C" void operation_8c1ad004(void *, int, int);
 extern "C" void call_8c1bbd80(Object *);
 extern "C" void refresh_follow_effect_8c052180(void *);
 extern "C" void call_8c027090(Object *);
-extern "C" void call_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void operation_8c1bca74(Object *o)
 {
     Frame frame;
@@ -128,7 +128,7 @@ extern "C" void operation_8c1bca74(Object *o)
     }
     (((PmfObj *)(o))->*(*(PMF_0 *)(&(&frame)->f18)))();
     if (o->f390 == 2) {
-        t2 = call_8c37eb0c((void *)(o->f3d8));
+        t2 = njSin_8c37eb0c((void *)(o->f3d8));
         o->f3c.f04 += t2 * 0.1f;
         o->f3d8 = (Arg0_3d8 *)((int)o->f3d8 + o->f3dc);
     }
@@ -154,7 +154,7 @@ extern "C" void operation_8c1bca74(Object *o)
     if (v32 != 0) {
         refresh_follow_effect_8c052180((void *)o);
         call_8c027090(o);
-        call_8c102cd0((void *)(&o->f324), -0x5db4, 1, 0);
+        minimap_add_marker_8c102cd0((void *)(&o->f324), -0x5db4, 1, 0);
     }
     o->f3d4 += 1;
 }

@@ -159,7 +159,7 @@ struct Arg0_484 {
 extern Block20 g_8c28500c;
 extern "C" void operation_8c059ef8(void *, int);
 extern "C" void operation_8c059ea4(void *, int);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void call_8c01c5f0(Object *);
 extern "C" int call_8c05c0dc(Object *, float);
 extern "C" void operation_8c05c184(void *);
@@ -196,7 +196,7 @@ extern "C" void operation_8c094348(Object *o, int a1)
         operation_8c059ea4((void *)o, 0xd);
         ((ObjectData *)o)->f330 = 0;
         ((ObjectData *)o)->f34 |= 0x800;
-        call_8c05fbf8(0x3001f, (void *)(((char *)o + 0x324)), 0, 0);
+        play_se_8c05fbf8(0x3001f, (void *)(((char *)o + 0x324)), 0, 0);
         return;
     case 0:
         call_8c01c5f0(o);

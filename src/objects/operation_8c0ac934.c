@@ -113,7 +113,7 @@ extern int call_8c18e768(int, int);
 extern Arg0_14c **operator_new_8c18de4c(int);
 extern Arg0_14c *create_effect_785c(void *, void *, int);
 extern Arg0_14c *create_effect_769c(void *, int);
-extern int call_8c05fbf8(int, void *, int, int);
+extern int play_se_8c05fbf8(int, void *, int, int);
 extern void emit_control_60320(int, int, int);
 Object *operation_8c0ac934(Object *o, int a1, int a2, int a3, int a4)
 {
@@ -198,28 +198,28 @@ Object *operation_8c0ac934(Object *o, int a1, int a2, int a3, int a4)
         Object *self = o;
         switch (self->fcc) {
         case 0:
-            t = call_8c05fbf8(0x20004, (void *)((char *)self + 0x24), 0, 0);
+            t = play_se_8c05fbf8(0x20004, (void *)((char *)self + 0x24), 0, 0);
             if (t >= 0) {
                 emit_control_60320(t, 0x100, 0);
             }
             break;
         case 1:
-            call_8c05fbf8(0x20004, (void *)((char *)self + 0x24), 0, 0);
+            play_se_8c05fbf8(0x20004, (void *)((char *)self + 0x24), 0, 0);
             break;
         case 2:
             s2 = self->fca;
             if (s2 >= 0xf && 0x19 > s2) {
-                t = call_8c05fbf8(0x20004, (void *)((char *)self + 0x24), 0, 0);
+                t = play_se_8c05fbf8(0x20004, (void *)((char *)self + 0x24), 0, 0);
                 if (t >= 0) {
                     emit_control_60320(t, -0x180, 0);
                 }
             } else if (s2 >= 0x19 && 0x1e > s2) {
-                t = call_8c05fbf8(0x20004, (void *)((char *)self + 0x24), 0, 0);
+                t = play_se_8c05fbf8(0x20004, (void *)((char *)self + 0x24), 0, 0);
                 if (t >= 0) {
                     emit_control_60320(t, -0x250, 0);
                 }
             } else {
-                t = call_8c05fbf8(0x20004, (void *)((char *)self + 0x24), 0, 0);
+                t = play_se_8c05fbf8(0x20004, (void *)((char *)self + 0x24), 0, 0);
                 if (t >= 0) {
                     emit_control_60320(t, -0x100, 0);
                 }

@@ -17,7 +17,7 @@ struct Object {
 };
 extern int g_8c467188;
 extern S_L8c41cba0 g_8c41cba0;
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c1dee8c(void *);
 void operation_8c1decf0(Object *o)
 {
@@ -27,7 +27,7 @@ void operation_8c1decf0(Object *o)
     if ((((&g_8c41cba0)->f28 & 0x30000)) == 0) {
         return;
     }
-    call_8c05fbf8(0x50000, 0, 0, 0);
+    play_se_8c05fbf8(0x50000, 0, 0, 0);
     switch (g_8c467188) {
     case 0:
         if (((o->f68 & 1)) != 0) {

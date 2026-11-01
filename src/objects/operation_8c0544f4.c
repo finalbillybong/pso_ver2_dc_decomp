@@ -13,14 +13,14 @@ struct Object {
     Arg0_134 *f134;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void destroy_object_8c01c500(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c0544f4(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c26220c;
-        call_8c18de08((void *)(o->f134));
+        operator_delete_8c18de08((void *)(o->f134));
         destroy_object_8c01c500((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);

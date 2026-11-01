@@ -37,14 +37,14 @@ struct Frame {
     Vector3 f00;
 };
 extern int call_8c07f914(void *);
-extern void call_8c38ade4(void *);
-extern void call_8c382a40(void *);
+extern void njPushMatrix_8c38ade4(void *);
+extern void translate_current_matrix_v_8c382a40(void *);
 extern int call_8c1f232c(Object *);
-extern void call_8c37df90(int, int);
+extern void njRotateY_8c37df90(int, int);
 extern void call_8c37ddbc(int, int, int, int);
-extern void call_8c37e2e4(int, float, float, float);
+extern void njScale_8c37e2e4(int, float, float, float);
 extern void call_8c3be280(int, Frame *, int);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 int operation_8c1f2528(Object *o, int a1)
 {
     Frame frame;
@@ -53,23 +53,23 @@ int operation_8c1f2528(Object *o, int a1)
     int t2;
     t1 = call_8c07f914((void *)(o->f20));
     if (t1 == 0 && a1 != 0) {
-        call_8c38ade4((void *)((void *)0x8c400500));
-        call_8c382a40((void *)(((char *)o + 0xa4)));
+        njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
+        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0xa4)));
         v1 = (int)(o->f24->f308 == 7);
         if (v1 != 0) {
             t2 = call_8c1f232c(o);
-            call_8c37df90(0, t2);
+            njRotateY_8c37df90(0, t2);
         } else {
-            call_8c37df90(0, (int)(o->f24->f64));
+            njRotateY_8c37df90(0, (int)(o->f24->f64));
         }
-        call_8c382a40((void *)(((char *)o + 0xb0)));
+        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0xb0)));
         if (o->f34 != 0) {
             call_8c37ddbc(0, (int)(o->f34->f1c + (int)o->f38), (int)(o->f34->f20 + (int)o->f3c), (int)(o->f34->f24 + (int)o->f40));
         }
-        call_8c37e2e4(0, o->fcc, o->fcc, o->fcc);
+        njScale_8c37e2e4(0, o->fcc, o->fcc, o->fcc);
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&*(Vector3 *)0x8c32c418;
         call_8c3be280(0, (Frame *)((&frame)), a1);
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         return 1;
     }
     return 0;

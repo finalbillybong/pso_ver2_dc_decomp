@@ -92,7 +92,7 @@ extern "C" S_c8c03b55c *call_8c03b55c(int, int);
 extern "C" void call_8c022538(void *, void *);
 extern "C" void call_8c02231c(void *, void *, int);
 extern "C" void operation_8c220ca8(int, int);
-extern "C" void operation_8c1005bc(int);
+extern "C" void game_ADXT_StartFname_wrapper_8c1005bc(int);
 extern "C" void operation_8c19bc58(Object *o)
 {
     Frame frame;
@@ -145,7 +145,7 @@ extern "C" void operation_8c19bc58(Object *o)
                 call_8c02231c((void *)(o->f28), (void *)(o->f38), 0);
                 operation_8c220ca8(0xb, 1);
                 if (*(int *)0x8c4dc4a8 > 0) {
-                    operation_8c1005bc((int)(g_8c31cc44 + 0x35));
+                    game_ADXT_StartFname_wrapper_8c1005bc((int)(g_8c31cc44 + 0x35));
                 }
                 o->f24 = 0;
             }
@@ -156,7 +156,7 @@ extern "C" void operation_8c19bc58(Object *o)
                 call_8c023bb4((void *)(o->f28), (void *)(((char *)o + 0x2c)));
                 operation_8c220ca8(0xb, 1);
                 if (*(int *)0x8c4dc4a8 > 0) {
-                    operation_8c1005bc((int)(g_8c31cc44 + 0x35));
+                    game_ADXT_StartFname_wrapper_8c1005bc((int)(g_8c31cc44 + 0x35));
                 }
                 o->f24 = 0;
             }
@@ -169,7 +169,7 @@ extern "C" void operation_8c19bc58(Object *o)
         call_8c023bb4((void *)(o->f28), (void *)(((char *)o + 0x2c)));
         operation_8c220ca8(0xb, 1);
         if (*(int *)0x8c4dc4a8 > 0) {
-            operation_8c1005bc((int)(g_8c31cc44 + 0x35));
+            game_ADXT_StartFname_wrapper_8c1005bc((int)(g_8c31cc44 + 0x35));
         }
         o->f24 = 0;
     }

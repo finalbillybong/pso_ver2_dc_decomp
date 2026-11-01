@@ -32,13 +32,13 @@ extern S_g8c4dc2e4 *g_8c4dc2e4;
 extern S_g8c4dc2e8 *g_8c4dc2e8;
 extern S_g8c4dc2ec *g_8c4dc2ec;
 extern int g_8c4dc2f0;
-extern "C" void call_8c18de08(void *);
+extern "C" void operator_delete_8c18de08(void *);
 extern "C" void call_8c03dc40(void *, int);
 extern "C" void operation_193cc8(void);
 extern "C" void operation_193764(void);
 extern "C" void operation_8c192ffc(void)
 {
-    call_8c18de08(g_8c4dc2ec);
+    operator_delete_8c18de08(g_8c4dc2ec);
     if (g_8c4dc2e4 != 0) {
         g_8c4dc2e4->v0(1);
     }

@@ -15,7 +15,7 @@ struct Object {
 extern int operation_8c03d338(void);
 extern void operation_8c1ce2e8(Object *);
 extern int operation_03d080(unsigned short);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void create_effect_777c(void *, int);
 extern void call_8c1ce194(Object *);
 extern void operation_8c09e6b4(void *);
@@ -38,7 +38,7 @@ void operation_8c1ce0dc(Object *o)
         t2 = operation_03d080((unsigned short)(o->ff0));
         if ((unsigned char)t2 == 1) {
             o->fec = 1;
-            call_8c05fbf8(0x40011, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x40011, (void *)(((char *)o + 0x3c)), 0, 0);
             create_effect_777c((void *)(((char *)o + 0x3c)), 0x45);
             create_effect_777c((void *)(((char *)o + 0x3c)), 0x46);
             call_8c1ce194(o);

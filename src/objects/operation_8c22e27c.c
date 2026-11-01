@@ -13,17 +13,17 @@ struct Object {
     char unknown5c[0x38];
     int f94;
 };
-extern int call_8c372d98(void *);
+extern int bu_check_busy_8c372d98(void *);
 extern void call_8c184918(void);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 void operation_8c22e27c(Object *o)
 {
     int t1;
-    t1 = call_8c372d98(o->f54);
+    t1 = bu_check_busy_8c372d98(o->f54);
     if (t1 == 0) {
         call_8c184918();
         if (o->f58 != 0) {
-            call_8c011ec0(o->f58);
+            game_free_8c011ec0(o->f58);
             o->f58 = (Arg0_58 *)0;
         }
         o->f94 = 0xb;

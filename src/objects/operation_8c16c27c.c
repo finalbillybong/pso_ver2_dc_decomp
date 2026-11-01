@@ -3,9 +3,9 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern void call_8c16bfd0(int);
+extern void quest_thread_load_context_8c16bfd0(int);
 extern int quest_fetch_byte_8c16c2f8(void);
-extern void call_8c16c0d8(int);
+extern void quest_thread_save_context_8c16c0d8(int);
 int quest_thread_run_8c16c27c(int a0)
 {
     int v1;
@@ -14,7 +14,7 @@ int quest_thread_run_8c16c27c(int a0)
     int v6;
     int t1;
     int t2;
-    call_8c16bfd0(a0);
+    quest_thread_load_context_8c16bfd0(a0);
     *(int *)0x8c4db428 = 0;
     v1 = (int)0x100;
     v7 = (int)a0;
@@ -34,6 +34,6 @@ L_8c16c2c2:;
     if (v8 == 0) {
         goto L_8c16c298;
     }
-    call_8c16c0d8(v7);
+    quest_thread_save_context_8c16c0d8(v7);
     return (int)(v8);
 }

@@ -13,7 +13,7 @@ struct Object {
     int dispatch;
     Arg0_1c *f1c;
 };
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern int operation_8c257e2c(int);
 extern int operator_new_8c18de4c(int);
 extern void strncpy_8c12b154(void *, int, int);
@@ -23,7 +23,7 @@ void operation_8c1db9dc(Object *o, int a1, int a2)
     int t1;
     int t2;
     int t3;
-    call_8c18de08((void *)(o->f1c));
+    operator_delete_8c18de08((void *)(o->f1c));
     o->f1c = (Arg0_1c *)0;
     if (a1 != 0) {
         t1 = operation_8c257e2c(a1);

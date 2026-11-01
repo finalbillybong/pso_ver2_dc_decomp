@@ -10,9 +10,9 @@ extern void  operation_0332a4(void *);
 #define operation_01e180 ((signed char (*)(void))0x8c01e180)
 #define operation_01c234 ((void (*)(void))0x8c01c234)
 #define operation_104da8 ((int (*)(void))0x8c104da8)
-#define operation_380516 ((void (*)(void))0x8c380516)
+#define wait_vsync_and_flip_8c380516 ((void (*)(void))0x8c380516)
 
-void operation_0c5508(void) {
+void mode_movie_frame_8c0c5508(void) {
     operation_01da7c();
     operation_01dea8();
     operation_011eec();
@@ -23,7 +23,7 @@ void operation_0c5508(void) {
     operation_184614();
     if (operation_01e180()) operation_01c234();
     if (!operation_104da8()) {
-        operation_380516();
+        wait_vsync_and_flip_8c380516();
         (*(int *)0x8c418244)++;
     }
 }

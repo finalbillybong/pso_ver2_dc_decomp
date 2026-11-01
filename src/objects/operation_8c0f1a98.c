@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern int get_current_area_8c032b10(void);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 void operation_8c0f1a98(void)
 {
@@ -17,21 +17,21 @@ void operation_8c0f1a98(void)
         if (t1 == 7) {
             goto L_8c0f1af6;
         }
-        t2 = call_8c011ecc(0x440);
+        t2 = game_malloc_8c011ecc(0x440);
         if (t2 != 0) {
             call_8c03d610(t2, 5, (void *)((void *)0x8c3095b4), 0, 0, 0);
         }
         *(int *)0x8c470540 = (int)(t2);
         return;
     }
-    t3 = call_8c011ecc(0x440);
+    t3 = game_malloc_8c011ecc(0x440);
     if (t3 != 0) {
         call_8c03d610(t3, 5, (void *)((void *)0x8c3095d0), 0, 0, 0);
     }
     *(int *)0x8c470540 = (int)(t3);
     return;
 L_8c0f1af6:;
-    t4 = call_8c011ecc(0x440);
+    t4 = game_malloc_8c011ecc(0x440);
     if (t4 != 0) {
         call_8c03d610(t4, 5, (void *)((void *)0x8c3095ec), 0, 0, 0);
     }

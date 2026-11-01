@@ -39,12 +39,12 @@ struct S_g8c46ee80 {
 };
 extern Vector3 g_8c33b1f4;
 extern S_g8c46ee80 *g_8c46ee80;
-extern float call_8c37e494(void *);
-extern void call_8c37b630(void *);
-extern void call_8c38ade4(void *);
-extern void call_8c37df90(int, void *);
+extern float njScalor2_8c37e494(void *);
+extern void njUnitVector_8c37b630(void *);
+extern void njPushMatrix_8c38ade4(void *);
+extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3be38c(int, void *, void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 extern float call_8c3845f0(void *, void *);
 extern float call_8c12c714(float);
 extern int operation_8c011214(int, int, int);
@@ -62,15 +62,15 @@ void operation_8c249a50(Object *o)
     (&frame)->f18 = o->f3c - g_8c46ee80->f90.f00;
     (&frame)->f1c = 0.0f;
     (&frame)->f20 = o->f44 - g_8c46ee80->f90.f08;
-    t1 = call_8c37e494((void *)(&(&frame)->f18));
+    t1 = njScalor2_8c37e494((void *)(&(&frame)->f18));
     if (t1 != 0.0f) {
-        call_8c37b630((void *)(&(&frame)->f18));
+        njUnitVector_8c37b630((void *)(&(&frame)->f18));
     }
-    call_8c38ade4((void *)((void *)0x8c400500));
+    njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
     *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&g_8c33b1f4;
-    call_8c37df90(0, (void *)(g_8c46ee80->fac));
+    njRotateY_8c37df90(0, (void *)(g_8c46ee80->fac));
     call_8c3be38c(0, (void *)(&(&frame)->f0c), (void *)(&(&frame)->f24));
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
     t2 = call_8c3845f0((void *)(&(&frame)->f24), (void *)(&(&frame)->f18));
     o->f98 = t2;
     t3 = call_8c12c714(o->f98);

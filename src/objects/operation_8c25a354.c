@@ -34,7 +34,7 @@ struct S_g8c4e2b80_430 {
     char unknown0[0x3c];
     int f3c;
 };
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern int find_local_actor_in_radius_8c25a9a4(void *, float);
 extern void call_8c259ba0(Object *);
 extern void operation_8c25a848(void *, int);
@@ -59,7 +59,7 @@ void operation_8c25a354(Object *o)
             return;
         }
         o->f190 = 0x12c;
-        call_8c05fbf8(5, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(5, (void *)(((char *)o + 0x3c)), 0, 0);
         o->f110 = 1;
         o->f100 = (int)((*(S_g8c4e2b80 **)0x8c4e2b80)->f42c->f38);
         o->f104 = (int)((*(S_g8c4e2b80 **)0x8c4e2b80)->f430->f3c);

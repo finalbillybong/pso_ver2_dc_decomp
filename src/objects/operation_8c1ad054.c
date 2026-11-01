@@ -14,12 +14,12 @@ struct S_vv3 {
 };
 extern void set_effect_blend_state(float);
 extern void call_8c3827d8(void *);
-extern void call_8c38ae68(void);
-extern void call_8c382a40(S_vv3 *);
-extern void call_8c37df90(int, void *);
-extern void call_8c37dd28(int, void *);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void translate_current_matrix_v_8c382a40(S_vv3 *);
+extern void njRotateY_8c37df90(int, void *);
+extern void njRotateX_8c37dd28(int, void *);
 extern void call_8c3c1f82(int);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 extern void restore_effect_blend_state(void);
 void operation_8c1ad054(void)
 {
@@ -34,12 +34,12 @@ void operation_8c1ad054(void)
     v3 = (S_vv3 *)v1;
     v4 = (int)0;
     while (*(int *)0x8c4e2278 > v4) {
-        call_8c38ae68();
-        call_8c382a40(v3);
-        call_8c37df90(0, (void *)(v3->f10));
-        call_8c37dd28(0, (void *)(v3->f0c));
+        njPushMatrixEx_8c38ae68();
+        translate_current_matrix_v_8c382a40(v3);
+        njRotateY_8c37df90(0, (void *)(v3->f10));
+        njRotateX_8c37dd28(0, (void *)(v3->f0c));
         call_8c3c1f82((int)(v2));
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         v4 = (int)(v4 + 1);
         v3 = (S_vv3 *)((char *)v3 + 20);
     }

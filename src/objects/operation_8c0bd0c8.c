@@ -13,12 +13,12 @@ struct S_L8c46f3c4 {
 extern int g_8c46f3bc;
 extern S_g8c46f3c0 *g_8c46f3c0;
 extern S_L8c46f3c4 g_8c46f3c4;
-extern void call_8c37dd28(int, void *);
+extern void njRotateX_8c37dd28(int, void *);
 extern void transform_in_vector_frame(void *, void *, void *);
 void operation_8c0bd0c8(void)
 {
     if (g_8c46f3bc == 0x18) {
-        call_8c37dd28(0, g_8c46f3c0);
+        njRotateX_8c37dd28(0, g_8c46f3c0);
     }
     if (g_8c46f3bc == 0x1d) {
         (&g_8c46f3c4)->f00 = 0.0f;

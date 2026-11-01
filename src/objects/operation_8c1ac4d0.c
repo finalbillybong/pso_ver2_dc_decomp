@@ -32,7 +32,7 @@ struct Arg1 {
 extern int g_8c324f8c;
 extern int g_8c324fac;
 extern void call_8c1aba3c(Object *, Arg1 *, Vector3 *, Vector3 *, float);
-extern float call_8c37f6c0(float);
+extern float signed_sqrt_8c37f6c0(float);
 extern float call_8c130334(float, float);
 Object *operation_8c1ac4d0(Object *o, Arg1 *a1, Vector3 *a2, Vector3 *a3, float a4)
 {
@@ -47,7 +47,7 @@ Object *operation_8c1ac4d0(Object *o, Arg1 *a1, Vector3 *a2, Vector3 *a3, float 
         self->f5c = a1->f1d4;
         self->f60 = a1->f28;
         if (self->f40 != 0.0f) {
-            self->f2c = -(int)(call_8c130334(self->f40, call_8c37f6c0(self->f3c * self->f3c + self->f44 * self->f44)) * 65536.0f / 6.28318405f);
+            self->f2c = -(int)(call_8c130334(self->f40, signed_sqrt_8c37f6c0(self->f3c * self->f3c + self->f44 * self->f44)) * 65536.0f / 6.28318405f);
             self->f34 = 0;
         } else {
             self->f34 = 0;

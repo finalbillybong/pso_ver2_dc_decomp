@@ -39,7 +39,7 @@ extern void call_8c05fd7c(int, Object *, void *, int, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0c6ab4(int, void *, void *, int, Object *);
 extern void call_8c0c1a4c(Object *, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c044018(Object *);
 extern void operation_8c04a43c(void *, float, void *);
 extern void refresh_follow_effect_8c052180(void *);
@@ -88,7 +88,7 @@ void operation_8c0c07c8(Object *o)
                     call_8c0c6ab4(t1, (void *)(((char *)o + 0x3b8)), (void *)(&o->f334->f324), !(o->f34 & 0x1000000), o);
                 }
                 call_8c0c1a4c(o, 0);
-                call_8c05fbf8(0x30027, (void *)(((char *)o + 0x3c)), 0, 0);
+                play_se_8c05fbf8(0x30027, (void *)(((char *)o + 0x3c)), 0, 0);
                 o->f398 = 3;
             }
         }

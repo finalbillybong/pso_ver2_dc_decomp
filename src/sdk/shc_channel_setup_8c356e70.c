@@ -22,7 +22,7 @@ extern int channel_release_8c3ba068(Channel *);
 
 static void mwRnv2FreeTex_8c356efe(Channel *c, int n);
 
-void channels_setup_8c356e70(Manager *m, int mode, int format)
+void mwRnv2AllocTex_sub2_8c356e70(Manager *m, int mode, int format)
 {
     int i, n, rate, flags, cur;
     Channel *c, *base;

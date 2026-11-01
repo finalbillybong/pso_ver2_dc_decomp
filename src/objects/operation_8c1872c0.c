@@ -27,8 +27,8 @@ extern void call_8c186e28(void *, void *);
 extern void call_8c186d00(void *, void *);
 extern int update_text_buffer(void *);
 extern void call_8c186c6c(void *, void *);
-extern void call_8c38c5b6(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void njPrintColor_8c38c5b6(int);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c1872c0(Object *o)
 {
     int v140;
@@ -86,19 +86,19 @@ L_8c18737c:;
         }
     }
 L_8c1873dc:;
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xf0f10);
     v137 = (int)-0xff0001;
     v138 = (int)-0xf0f10;
     v139 = (int)0x120000;
     v140 = (int)0;
     while (3 > v140) {
         if (v140 == o->f44) {
-            call_8c38c5b6(v137);
+            njPrintColor_8c38c5b6(v137);
         } else {
-            call_8c38c5b6(v138);
+            njPrintColor_8c38c5b6(v138);
         }
-        call_8c38cf80((int)(v140 + 0xa | v139), (void *)(*(S_g8c319afc **)((char *)0x8c319afc + (v140 << 2))));
+        debug_print_at_8c38cf80((int)(v140 + 0xa | v139), (void *)(*(S_g8c319afc **)((char *)0x8c319afc + (v140 << 2))));
         v140 = (int)(v140 + 1);
     }
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xf0f10);
 }

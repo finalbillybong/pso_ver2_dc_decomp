@@ -17,7 +17,7 @@ extern void operation_8c1a7e14(void *, int, int);
 extern void call_8c34d4e8(void *);
 extern void operation_8c03ed70(int);
 extern int call_8c18e768(int, int);
-extern int call_8c011ea8(int, int);
+extern int game_syMalloc_dispatch_alloc_wrapper_8c011ea8(int, int);
 extern void ADXF_ReadNw32_8c34d6ae(void *, int, int);
 extern int ADXF_GetStat_8c34da3c(void *);
 extern void loading_wait_frame_8c104c60(void);
@@ -40,7 +40,7 @@ int operation_8c1a85a8(int a0)
     }
     t2 = call_8c18e768((int)(g_8c4df8a0 + 0x7ff), 0x800);
     v4 = (int)(t2 << 0xb);
-    t1 = call_8c011ea8(v4, a0);
+    t1 = game_syMalloc_dispatch_alloc_wrapper_8c011ea8(v4, a0);
     if (t1 == 0) {
         if ((&frame)->f28 == 0) {
             call_8c34d4e8((void *)((&frame)->f20));

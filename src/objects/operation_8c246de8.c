@@ -19,8 +19,8 @@ struct Object {
     Vector3 f3c;
 };
 extern int lookup_low_id(int);
-extern void call_8c37f6f0(Frame *, int);
-extern float call_8c37e480(Frame *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, int);
+extern float njScalor_8c37e480(Frame *);
 float operation_8c246de8(Object *o)
 {
     Frame frame;
@@ -31,8 +31,8 @@ float operation_8c246de8(Object *o)
         return 65536.0f;
     }
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f3c;
-    call_8c37f6f0((Frame *)((&frame)), (int)(t1 + 0x3c));
+    vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (int)(t1 + 0x3c));
     (&frame)->f00.f04 = 0.0f;
-    t2 = call_8c37e480((Frame *)((&frame)));
+    t2 = njScalor_8c37e480((Frame *)((&frame)));
     return t2;
 }

@@ -30,10 +30,10 @@ struct S_g8c4e2f40_42c {
     int f58;
     int f5c;
 };
-extern void call_8c01d1ec(Object *);
+extern void TObjectShared_ctor_8c01d1ec(Object *);
 Object *operation_8c21a844(Object *o)
 {
-    call_8c01d1ec(o);
+    TObjectShared_ctor_8c01d1ec(o);
     o->dispatch = (void *)0x8c278590;
     o->tag = (int)(*(int *)0x8c3363f0);
     o->size = 0x9c;

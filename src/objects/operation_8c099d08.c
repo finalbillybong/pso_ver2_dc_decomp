@@ -43,12 +43,12 @@ struct Arg0_10 {
 };
 extern void call_8c0a2858(void *);
 extern void call_8c09a658(void *, Frame *);
-extern float call_8c37eb0c(void *);
-extern float call_8c38c154(void *);
+extern float njSin_8c37eb0c(void *);
+extern float njCos_8c38c154(void *);
 extern float call_8c12c714(float);
 extern int operation_8c09a64c(int);
 extern int operation_8c09a640(int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c099d08(Object *o)
 {
     Frame frame;
@@ -87,8 +87,8 @@ void operation_8c099d08(Object *o)
         o->f2c = 1.0f;
     }
     call_8c09a658((void *)(&(&frame)->f04), (Frame *)((&frame)));
-    dx = (&frame)->f00 * call_8c37eb0c((void *)((&frame)->f04)) * 0.0166666675f;
-    dy = (&frame)->f00 * -call_8c38c154((void *)((&frame)->f04)) * 0.0166666675f;
+    dx = (&frame)->f00 * njSin_8c37eb0c((void *)((&frame)->f04)) * 0.0166666675f;
+    dy = (&frame)->f00 * -njCos_8c38c154((void *)((&frame)->f04)) * 0.0166666675f;
     if ((call_8c12c714(dx) + call_8c12c714(dy)) == 0.0f) {
         if (operation_8c09a64c(0x80) != 0) {
             dx = 0.0133333346f;
@@ -114,7 +114,7 @@ void operation_8c099d08(Object *o)
         o->f20->f4c = 0.0f;
     }
     if (operation_8c09a640(6) != 0) {
-        call_8c05fbf8(0x50004, 0, 0, 0);
+        play_se_8c05fbf8(0x50004, 0, 0, 0);
         o->f10->f30 = 0;
         o->f28 = 0;
     }

@@ -24,7 +24,7 @@ extern char g_8c41cba0[];
 extern void operation_8c1cc690(void);
 extern int operation_8c01d858(int, int, int, int);
 extern int operation_8c01d844(int, int, int, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern int operation_8c01d8a8(void *, int);
 extern void operation_8c1a6214(Object *);
 extern void call_8c01c380(void);
@@ -56,7 +56,7 @@ void operation_8c1a56d8(Object *o)
                 goto L_8c1a573c;
             }
         }
-        call_8c05fbf8(0x50000, 0, 0, 0);
+        play_se_8c05fbf8(0x50000, 0, 0, 0);
         o->f260 -= 1;
 L_8c1a573c:;
         t3 = operation_8c01d858(v2, 0x80, 6, 1);
@@ -66,7 +66,7 @@ L_8c1a573c:;
                 goto L_8c1a5774;
             }
         }
-        call_8c05fbf8(0x50000, 0, 0, 0);
+        play_se_8c05fbf8(0x50000, 0, 0, 0);
         o->f260 += 1;
 L_8c1a5774:;
         if (o->f260 >= 3) {
@@ -83,7 +83,7 @@ L_8c1a5774:;
             goto L_8c1a57c4;
         }
     }
-    call_8c05fbf8(0x50001, 0, 0, 0);
+    play_se_8c05fbf8(0x50001, 0, 0, 0);
     v1 = (int)(v1 | 1);
 L_8c1a57c4:;
     if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
@@ -92,7 +92,7 @@ L_8c1a57c4:;
             goto L_8c1a57ee;
         }
     }
-    call_8c05fbf8(0x50016, 0, 0, 0);
+    play_se_8c05fbf8(0x50016, 0, 0, 0);
     v1 = (int)(v1 | 2);
 L_8c1a57ee:;
     if (o->f278 != 0) {

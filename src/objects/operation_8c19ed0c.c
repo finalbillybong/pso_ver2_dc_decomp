@@ -20,7 +20,7 @@ struct Object {
     int f30;
     int f34;
 };
-extern void call_8c18de08(int);
+extern void operator_delete_8c18de08(int);
 extern int operation_8c257e2c(int);
 extern int operator_new_8c18de4c(int);
 extern void strncpy_8c12b154(int, int, int);
@@ -38,7 +38,7 @@ void operation_8c19ed0c(Object *o, int a1, int a2, int a3)
     v1 = (int)o->f20;
     if (v1 != 0 && ((o->tag & 8)) != 0) {
         o->tag &= -9;
-        call_8c18de08(v1);
+        operator_delete_8c18de08(v1);
     }
     if (a2 != 0) {
         t1 = operation_8c257e2c(a2);

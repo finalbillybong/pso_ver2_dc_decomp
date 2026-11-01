@@ -68,7 +68,7 @@ extern int find_node_8c16a3c0(void *, int);
 extern int operation_8c169508(void *);
 extern void update_count_8c1ca1fc(void *, void *);
 extern int operation_8c106798(Object *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern int operation_8c106760(Object *);
 extern int operation_8c1c74dc(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
@@ -112,7 +112,7 @@ void operation_8c106e1c(Object *o)
     t4 = operation_8c106798(o);
     if (t4 != 0) {
         o->f24 = 8;
-        call_8c05fbf8(0x50001, 0, 0, 0);
+        play_se_8c05fbf8(0x50001, 0, 0, 0);
         return;
     }
     t5 = operation_8c106760(o);

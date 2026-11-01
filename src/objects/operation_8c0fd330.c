@@ -15,7 +15,7 @@ struct Object {
     char unknown64[0x2ec];
     int f350;
 };
-extern float call_8c37eb0c(void *);
+extern float njSin_8c37eb0c(void *);
 extern void update_object_center(void *);
 extern void transform_actor_records(void *);
 void operation_8c0fd330(Object *o)
@@ -30,7 +30,7 @@ void operation_8c0fd330(Object *o)
         o->f350 |= 2;
     } else {
         o->f60 = (Arg0_60 *)((int)o->f60 + 0x800);
-        t1 = call_8c37eb0c((void *)(o->f60));
+        t1 = njSin_8c37eb0c((void *)(o->f60));
         o->f40 += t1;
     }
 L_8c0fd39c:;

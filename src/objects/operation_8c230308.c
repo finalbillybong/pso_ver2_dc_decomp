@@ -11,11 +11,11 @@ struct Frame {
     Vector3 f0c;
 };
 extern void call_8c3806f6(int, int, int);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 extern void forward_reviewed_8c104e8c(void);
 extern void operation_8c01c250(int);
 extern void call_8c013620(void *, int);
-extern void call_8c014498(void *, int);
+extern void create_standard_task_tree_8c014498(void *, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TCameraCtrl_ctor_8c0a1448(int, void *);
 extern void call_8c0a1a78(int);
@@ -30,11 +30,11 @@ void operation_8c230308(void)
     int t2;
     int t3;
     call_8c3806f6(0, 0, 0);
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
     forward_reviewed_8c104e8c();
     operation_8c01c250(2);
     call_8c013620((void *)((void *)0x8c338648), 0x28);
-    call_8c014498((void *)((void *)0x8c2e2e84), 4);
+    create_standard_task_tree_8c014498((void *)((void *)0x8c2e2e84), 4);
     t1 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0xf8);
     if (t1 != 0) {
         TCameraCtrl_ctor_8c0a1448(t1, (void *)(*(S_g8c44be88 **)0x8c44be88));

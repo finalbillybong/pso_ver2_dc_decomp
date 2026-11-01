@@ -21,7 +21,7 @@ struct Frame {
     Block_frame_0 f00;
 };
 extern int g_8c467874;
-extern void call_8c37f6f0(Frame *, int);
+extern void vector_sub_in_place_8c37f6f0(Frame *, int);
 extern void scale_vector_to_length(void *, float);
 extern void call_8c3bdf60(void *, Frame *);
 void operation_8c13d584(int a0)
@@ -41,7 +41,7 @@ void operation_8c13d584(int a0)
             break;
         }
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&v3->f3c;
-        call_8c37f6f0((Frame *)((&frame)), (int)(a0 + 0x3c));
+        vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (int)(a0 + 0x3c));
         if (!(((&frame)->f00.f00 * (&frame)->f00.f00 + (&frame)->f00.f08 * (&frame)->f00.f08) > 64.0f)) {
             (&frame)->f00.f04 = 0.0f;
             scale_vector_to_length((void *)(&frame), 13.0f);

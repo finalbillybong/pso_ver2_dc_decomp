@@ -22,8 +22,8 @@ struct Frame {
     int f38;
 };
 extern char g_8c2ff8a0[];
-extern void call_8c38c5b6(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void njPrintColor_8c38c5b6(int);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 extern void operation_8c073e58(Frame *);
 void operation_8c084164(Object *o)
 {
@@ -34,16 +34,16 @@ void operation_8c084164(Object *o)
         o->f37c = 0;
     }
     if (o->f37c != 0) {
-        call_8c38c5b6(-0xff0001);
-        call_8c38cf80(0x13001a, (void *)((g_8c2ff8a0 + 0x10e)));
+        njPrintColor_8c38c5b6(-0xff0001);
+        debug_print_at_8c38cf80(0x13001a, (void *)((g_8c2ff8a0 + 0x10e)));
     } else {
-        call_8c38c5b6(-0xff0100);
-        call_8c38cf80(0x13001a, (void *)((g_8c2ff8a0 + 0x11d)));
-        call_8c38cf80(0x13001e, (void *)((g_8c2ff8a0 + 0x12b)));
+        njPrintColor_8c38c5b6(-0xff0100);
+        debug_print_at_8c38cf80(0x13001a, (void *)((g_8c2ff8a0 + 0x11d)));
+        debug_print_at_8c38cf80(0x13001e, (void *)((g_8c2ff8a0 + 0x12b)));
         frame.f30 = o->f88;
         frame.f34 = o->f8c;
         frame.f38 = o->f90;
         operation_8c073e58((Frame *)((&frame)));
     }
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xf0f10);
 }

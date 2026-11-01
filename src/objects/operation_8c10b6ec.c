@@ -35,7 +35,7 @@ extern S_g8c4d7cc0 *g_8c4d7cc0;
 extern S_g8c4d7cc4 *g_8c4d7cc4;
 extern int g_8c4d7cc8;
 extern char g_8c30be04[];
-extern S_c8c011ecc *call_8c011ecc(int);
+extern S_c8c011ecc *game_malloc_8c011ecc(int);
 extern void call_8c03d610(S_c8c011ecc *, int, void *, int, int, int);
 extern int operator_new_8c18de4c(int);
 extern int load_pvm_file_tls_8c118528(void *);
@@ -45,7 +45,7 @@ void operation_8c10b6ec(void)
     S_c8c011ecc *t1;
     int t2;
     int t3;
-    t1 = call_8c011ecc(0x440);
+    t1 = game_malloc_8c011ecc(0x440);
     if (t1 != 0) {
         call_8c03d610(t1, 1, (void *)((void *)0x8c30bdc4), 0, 0, 0);
     }

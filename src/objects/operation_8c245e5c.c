@@ -23,7 +23,7 @@ struct Object {
     float f40;
 };
 extern void call_8c3be280(int, void *, void *);
-extern void call_8c38ad50(int, void *, Frame *);
+extern void project_point_to_screen_8c38ad50(int, void *, Frame *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c245a9c(int, void *, void *, Object *, float, float);
 void operation_8c245e5c(Object *o)
@@ -32,7 +32,7 @@ void operation_8c245e5c(Object *o)
     int t1;
     call_8c3be280(0, (void *)(((char *)o + 0x30)), (void *)(((char *)(&frame) + 0x8)));
     if (!(0.0f > (&frame)->f10)) {
-        call_8c38ad50(0, (void *)(((char *)o + 0x30)), (Frame *)((&frame)));
+        project_point_to_screen_8c38ad50(0, (void *)(((char *)o + 0x30)), (Frame *)((&frame)));
         if (!(-100.0f > (&frame)->f00) && !((&frame)->f00 > 740.0f) && !(-100.0f > (&frame)->f04) && !((&frame)->f04 > 580.0f)) {
             o->f28 = o->f20;
             o->f2c = o->f24;

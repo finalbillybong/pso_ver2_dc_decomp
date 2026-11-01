@@ -11,7 +11,7 @@ struct Object {
     int f398;
 };
 extern int call_8c12b944(void);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c1ad94c(Object *o)
 {
     int t1;
@@ -25,9 +25,9 @@ void operation_8c1ad94c(Object *o)
         if (!(--*(int *)((char *)o + 0x390) >= 0)) {
             t1 = call_8c12b944();
             if (0.5f > ((float)t1 / 32768.0f)) {
-                call_8c05fbf8(0x30000, 0, 0, 0);
+                play_se_8c05fbf8(0x30000, 0, 0, 0);
             } else {
-                call_8c05fbf8(0x30001, 0, 0, 0);
+                play_se_8c05fbf8(0x30001, 0, 0, 0);
             }
             t2 = call_8c12b944();
             o->f390 = (int)((float)t2 / 32768.0f * 300.0f + 300.0f);

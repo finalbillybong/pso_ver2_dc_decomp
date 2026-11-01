@@ -15,7 +15,7 @@ extern void operation_8c0e7680(void *);
 extern void call_8c01364c(void *, int);
 extern void forward_reviewed_8c104e8c(void);
 extern void operation_8c01c2b0(void);
-extern void call_8c380516(void);
+extern void wait_vsync_and_flip_8c380516(void);
 void operation_8c0e7be8(void)
 {
     clear_global_render_resources();
@@ -28,5 +28,5 @@ void operation_8c0e7be8(void)
     call_8c01364c((void *)((void *)0x8c308198), 0x118);
     forward_reviewed_8c104e8c();
     operation_8c01c2b0();
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

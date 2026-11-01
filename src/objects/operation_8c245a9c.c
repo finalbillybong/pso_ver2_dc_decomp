@@ -33,9 +33,9 @@ struct Arg1 {
     float f04;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern float call_8c37e480(void *);
-extern void call_8c37b630(void *);
-extern float call_8c37f6c0(void *, float);
+extern float njScalor_8c37e480(void *);
+extern void njUnitVector_8c37b630(void *);
+extern float signed_sqrt_8c37f6c0(void *, float);
 Object *operation_8c245a9c(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f0, float f1)
 {
     Frame frame;
@@ -57,9 +57,9 @@ Object *operation_8c245a9c(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f0, floa
     (&frame)->f04 = a2->f00 - a1->f00;
     (&frame)->f08 = a2->f04 - a1->f04;
     (&frame)->f0c = 0.0f;
-    t1 = call_8c37e480((void *)(&(&frame)->f04));
+    t1 = njScalor_8c37e480((void *)(&(&frame)->f04));
     if (t1 != 0.0f) {
-        call_8c37b630((void *)(&(&frame)->f04));
+        njUnitVector_8c37b630((void *)(&(&frame)->f04));
     } else {
         (&frame)->f04 = 0.0f;
         (&frame)->f08 = 0.0f;
@@ -75,7 +75,7 @@ Object *operation_8c245a9c(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f0, floa
         o->f30 = v5;
         o->f28 = v6;
     }
-    t2 = call_8c37f6c0((void *)(&o->f24), (o->f24 - o->f2c) * (o->f24 - o->f2c) + (o->f28 - o->f30) * (o->f28 - o->f30));
+    t2 = signed_sqrt_8c37f6c0((void *)(&o->f24), (o->f24 - o->f2c) * (o->f24 - o->f2c) + (o->f28 - o->f30) * (o->f28 - o->f30));
     o->f20 = t2 * 0.5f / v1;
     return o;
 }

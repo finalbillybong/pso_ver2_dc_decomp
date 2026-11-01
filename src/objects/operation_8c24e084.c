@@ -14,7 +14,7 @@ struct Object {
     int f68;
 };
 extern void initialize_base_8c0db1d0(void *, int);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void operation_192b14(void *, signed char, signed char);
 extern void call_8c24e1f4(Object *);
 Object *operation_8c24e084(Object *o)
@@ -26,7 +26,7 @@ Object *operation_8c24e084(Object *o)
     o->dispatch = (void *)0x8c27e47c;
     o->tag = (int)(*(int *)0x8c33f008);
     o->size = 0x6c;
-    t1 = call_8c011ecc(8);
+    t1 = game_malloc_8c011ecc(8);
     if (t1 != 0) {
         operation_192b14((void *)t1, (signed char)0, (signed char)2);
     }

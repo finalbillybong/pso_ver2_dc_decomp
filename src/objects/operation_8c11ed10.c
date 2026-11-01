@@ -14,20 +14,20 @@ struct S_g8c4d84a4 {
 extern S_g8c4d84a0 *g_8c4d84a0;
 extern S_g8c4d84a4 *g_8c4d84a4;
 extern S_g8c4d84a8 *g_8c4d84a8;
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void call_8c37d534(void *);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void call_8c03dc40(void *, int);
 void operation_8c11ed10(void)
 {
-    call_8c18de08(g_8c4d84a8);
+    operator_delete_8c18de08(g_8c4d84a8);
     g_8c4d84a8 = (S_g8c4d84a8 *)0;
     call_8c37d534((void *)(g_8c4d84a4->f04));
-    call_8c011ec0((void *)(g_8c4d84a4->f04));
+    game_free_8c011ec0((void *)(g_8c4d84a4->f04));
     if (g_8c4d84a0 != 0) {
         call_8c03dc40(g_8c4d84a0, 1);
     }
     if (g_8c4d84a4 != 0) {
-        call_8c18de08((void *)g_8c4d84a4);
+        operator_delete_8c18de08((void *)g_8c4d84a4);
     }
 }

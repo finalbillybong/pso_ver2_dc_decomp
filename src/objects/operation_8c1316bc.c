@@ -9,7 +9,7 @@ struct Object {
     int f108;
 };
 extern int get_current_area_8c032b10(void);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c1316bc(Object *o)
 {
     int t1;
@@ -17,25 +17,25 @@ void operation_8c1316bc(Object *o)
         t1 = get_current_area_8c032b10();
         switch (t1) {
         case 0:
-            call_8c05fbf8(0x40004, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x40004, (void *)(((char *)o + 0x3c)), 0, 0);
             return;
         case 1:
         case 2:
-            call_8c05fbf8(0x40007, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x40007, (void *)(((char *)o + 0x3c)), 0, 0);
             return;
         case 3:
         case 4:
         case 5:
-            call_8c05fbf8(0x40007, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x40007, (void *)(((char *)o + 0x3c)), 0, 0);
             return;
         case 6:
         case 7:
-            call_8c05fbf8(0x40000, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x40000, (void *)(((char *)o + 0x3c)), 0, 0);
             return;
         case 8:
         case 9:
         case 10:
-            call_8c05fbf8(0x40007, (void *)(((char *)o + 0x3c)), 0, 0);
+            play_se_8c05fbf8(0x40007, (void *)(((char *)o + 0x3c)), 0, 0);
             return;
         case 11:
         case 12:

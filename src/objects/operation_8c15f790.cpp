@@ -63,9 +63,9 @@ typedef struct StateRow {
     char unknownc[0xc];
 } StateRow;
 extern "C" StateRow g_8c316c90[];
-extern "C" void call_8c37f6f0(void *, void *);
-extern "C" float call_8c37e480(void *);
-extern "C" void call_8c37b630(void *);
+extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
+extern "C" float njScalor_8c37e480(void *);
+extern "C" void njUnitVector_8c37b630(void *);
 extern "C" float call_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void call_8c15eb34(Object *, void *);
@@ -114,14 +114,14 @@ extern "C" void operation_8c15f790(Object *o)
         return;
     }
     *(Vector3 *)&dir = o->f3a8;
-    call_8c37f6f0((void *)&dir, (void *)((char *)o + 0x3c));
+    vector_sub_in_place_8c37f6f0((void *)&dir, (void *)((char *)o + 0x3c));
     dir.f04 = 0.0f;
-    len = call_8c37e480((void *)&dir);
+    len = njScalor_8c37e480((void *)&dir);
     if (!(len > 0.01f)) {
         dir.f00 = 1.0f;
         dir.f08 = 0.0f;
     } else {
-        call_8c37b630((void *)&dir);
+        njUnitVector_8c37b630((void *)&dir);
     }
     if ((o->f398->f18 & 0x3800000) != 0) {
         t = dir.f00;

@@ -41,7 +41,7 @@ struct Arg0_2c {
     int f00;
 };
 extern void call_8c03dc40(Arg0_6c *, int);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern int call_8c13f47c(void *, int);
 extern void call_8c03d360(int, int, void *, void *, int, int, int);
 void operation_8c13f708(Object *o)
@@ -57,7 +57,7 @@ void operation_8c13f708(Object *o)
         } else {
             return;
         }
-        t1 = call_8c011ecc(0x440);
+        t1 = game_malloc_8c011ecc(0x440);
         if (t1 != 0) {
             t2 = call_8c13f47c((void *)(o->f28), 0);
             call_8c03d360(t1, 6, (void *)(((char *)o + 0x64)), (void *)(((char *)o + 0x68)), 0, 0, t2);

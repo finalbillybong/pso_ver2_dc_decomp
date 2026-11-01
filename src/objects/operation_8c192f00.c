@@ -17,12 +17,12 @@ extern S_g8c4dc2ec *g_8c4dc2ec;
 extern int g_8c4dc2f0;
 extern void operation_193738(void);
 extern void load_item_model_archives_8c193bf8(void);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operator_new_8c18de4c(int);
-void operation_8c192f00(void)
+void load_item_bml_8c192f00(void)
 {
     int v63;
     int t1;
@@ -40,7 +40,7 @@ void operation_8c192f00(void)
     }
     operation_193738();
     load_item_model_archives_8c193bf8();
-    t1 = call_8c011ecc(0x440);
+    t1 = game_malloc_8c011ecc(0x440);
     if (t1 != 0) {
         call_8c03d610(t1, 5, (void *)((void *)0x8c31a310), 0, 0, 0);
     }

@@ -38,8 +38,8 @@ struct Arg0_20 {
     float f44;
 };
 extern S_c8c139fac *call_8c139fac(void);
-extern float call_8c37e480(Frame *);
-extern void call_8c37b630(Frame *);
+extern float njScalor_8c37e480(Frame *);
+extern void njUnitVector_8c37b630(Frame *);
 void operation_8c1cfa2c(Object *o)
 {
     Frame frame;
@@ -53,9 +53,9 @@ void operation_8c1cfa2c(Object *o)
             (&frame)->f00 = o->f20->f3c - t1->f00.f00;
             (&frame)->f08 = o->f20->f44 - t1->f00.f08;
             (&frame)->f04 = 0.0f;
-            t2 = call_8c37e480((Frame *)((&frame)));
+            t2 = njScalor_8c37e480((Frame *)((&frame)));
             if (t2 != 0.0f) {
-                call_8c37b630((Frame *)((&frame)));
+                njUnitVector_8c37b630((Frame *)((&frame)));
                 o->f40 = (&frame)->f00 * 30.0f + o->f20->f3c;
                 o->f44 = o->f20->f40 + 10.0f;
                 o->f48 = (&frame)->f08 * 30.0f + o->f20->f44;

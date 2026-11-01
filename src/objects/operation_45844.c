@@ -9,7 +9,7 @@ int operation_45844(Object *o)
             if (!(counter % 45) && !(o->flags & 0x02000000)) {
                 void *effect = effect_create_at(o->effect_position, 39, 0x50);
                 if (effect) effect_bind_at(effect, (short)o->id);
-                effect_emit_at(13, o->position, 0, 0);
+                play_se_8c05fbf8(13, o->position, 0, 0);
             }
             return 1;
         }

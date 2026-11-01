@@ -14,10 +14,10 @@ struct Object {
     int f3a4;
 };
 extern void call_8c3827d8(void *);
-extern void call_8c38ae68(void);
-extern void call_8c382a40(void *);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void translate_current_matrix_v_8c382a40(void *);
 extern void call_8c3aa716(void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c07a7f0(Object *o)
 {
     if (((o->f34 & 0x800)) == 0) {
@@ -26,9 +26,9 @@ void operation_8c07a7f0(Object *o)
         } else {
             call_8c3827d8(*(S_g8c469aa0 **)0x8c469aa0);
         }
-        call_8c38ae68();
-        call_8c382a40(((char *)o + 0x3d0));
+        njPushMatrixEx_8c38ae68();
+        translate_current_matrix_v_8c382a40(((char *)o + 0x3d0));
         call_8c3aa716(*(S_g8c469aa4 **)0x8c469aa4);
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
     }
 }

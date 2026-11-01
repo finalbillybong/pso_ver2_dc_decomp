@@ -70,7 +70,7 @@ extern "C" int create_effect_777c(void *, int);
 extern "C" void set_effect_bits(void *, unsigned short);
 extern "C" int ring_actor_eligible(unsigned short);
 extern "C" float call_8c38d7d8(void *, int);
-extern "C" void call_8c05fbf8(int, int, int, int);
+extern "C" void play_se_8c05fbf8(int, int, int, int);
 extern "C" void operation_8c191504(int);
 extern "C" void operation_8c1b349c(int a0)
 {
@@ -146,6 +146,6 @@ extern "C" void operation_8c1b349c(int a0)
         }
         v8 = (int)(v8 + 1);
     }
-    call_8c05fbf8(0x30018, 0, 0, 0);
+    play_se_8c05fbf8(0x30018, 0, 0, 0);
     operation_8c191504(1);
 }

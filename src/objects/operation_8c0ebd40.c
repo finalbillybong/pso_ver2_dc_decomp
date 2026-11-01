@@ -17,7 +17,7 @@ extern int g_8c4dbaec;
 extern int g_8c4e2e24;
 extern void operation_8c1cc690(void);
 extern int operation_8c0ebc00(void *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c0ec0e8(void *);
 extern void operation_8c0ec300(void *);
 extern void select_mode7_8c1cc540(void);
@@ -41,12 +41,12 @@ void operation_8c0ebd40(Object *o)
             }
             goto L_8c0ebe16;
         }
-        call_8c05fbf8(0x50001, 0, 0, 0);
+        play_se_8c05fbf8(0x50001, 0, 0, 0);
         o->f151 = 1;
         operation_8c0ec0e8((void *)o);
         goto L_8c0ebe16;
 L_8c0ebd90:;
-        call_8c05fbf8(0x50016, 0, 0, 0);
+        play_se_8c05fbf8(0x50016, 0, 0, 0);
         o->f151 = 1;
         operation_8c0ec0e8((void *)o);
         break;

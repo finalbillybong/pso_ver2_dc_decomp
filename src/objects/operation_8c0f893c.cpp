@@ -51,12 +51,12 @@ extern int g_8c5755a8;
 extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c0f7adc(float, float, float, float);
 extern "C" void call_8c1086fc(void);
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c382a40(Frame *);
-extern "C" void call_8c37df90(int, void *);
-extern "C" void call_8c37e3d0(int, void *);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void translate_current_matrix_v_8c382a40(Frame *);
+extern "C" void njRotateY_8c37df90(int, void *);
+extern "C" void njScaleV_8c37e3d0(int, void *);
 extern "C" void call_8c1000a8(void *);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void call_8c0fad14(Object *);
 extern "C" void operation_8c0f893c(Object *o)
@@ -72,14 +72,14 @@ extern "C" void operation_8c0f893c(Object *o)
                 operation_8c0f7adc(((ObjectData *)o)->f3bc, 0.0f, 0.0f, 0.0f);
             }
             call_8c1086fc();
-            call_8c38ae68();
+            njPushMatrixEx_8c38ae68();
             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((ObjectData *)o)->f3c;
             (&frame)->f00.f04 += ((ObjectData *)o)->f3c0;
-            call_8c382a40((Frame *)((&frame)));
-            call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
-            call_8c37e3d0(0, (void *)(((char *)o + 0x3c4)));
+            translate_current_matrix_v_8c382a40((Frame *)((&frame)));
+            njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+            njScaleV_8c37e3d0(0, (void *)(((char *)o + 0x3c4)));
             call_8c1000a8((void *)(((ObjectData *)o)->f3a4));
-            call_8c38ad10();
+            njPopMatrixEx_8c38ad10();
             call_8c391cc4();
             if (1.0f > ((ObjectData *)o)->f3bc) {
                 g_8c5755a4 = (int)(g_8c46f574);

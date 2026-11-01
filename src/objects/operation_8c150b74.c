@@ -21,7 +21,7 @@ typedef struct Object {
     int f3a8;
 } Object;
 extern void operation_8c01c5f0(Object *);
-extern int call_8c05fbf8(int, int, int, int);
+extern int play_se_8c05fbf8(int, int, int, int);
 extern void refresh_follow_effect_8c052180(void *);
 void operation_8c150b74(Object *o)
 {
@@ -40,7 +40,7 @@ void operation_8c150b74(Object *o)
             o->f398 = 2;
             o->fdc->f18 &= ~4;
             o->fdc->f18 |= 2;
-            call_8c05fbf8(0x30008, (int)&o->f3c, 0, 0);
+            play_se_8c05fbf8(0x30008, (int)&o->f3c, 0, 0);
         }
         break;
     case 2:

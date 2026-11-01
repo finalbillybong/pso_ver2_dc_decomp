@@ -14,7 +14,7 @@ struct Object {
 };
 extern int g_8c46ec14;
 extern int operation_8c09a640(int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c0974e0(Object *o)
 {
     float v3;
@@ -35,7 +35,7 @@ void operation_8c0974e0(Object *o)
     }
     t1 = operation_8c09a640(4);
     if (t1 != 0) {
-        call_8c05fbf8(0x50001, 0, 0, 0);
+        play_se_8c05fbf8(0x50001, 0, 0, 0);
         o->f38 = 7;
         o->f30 = 5;
         return;

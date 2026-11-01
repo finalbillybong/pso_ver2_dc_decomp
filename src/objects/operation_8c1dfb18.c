@@ -17,13 +17,13 @@ struct Object {
     Arg0_70 *f70;
 };
 extern S_L8c41cba0 g_8c41cba0;
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void call_8c1e2bcc(void *);
 void operation_8c1dfb18(Object *o)
 {
     if ((((&g_8c41cba0)->f28 & 2)) != 0 && o->f70 != 0) {
         o->f68 &= -0x41;
-        call_8c05fbf8(0x50016, 0, 0, 0);
+        play_se_8c05fbf8(0x50016, 0, 0, 0);
         call_8c1e2bcc((void *)(o->f70));
     }
 }

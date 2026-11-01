@@ -63,13 +63,13 @@ extern int g_8c46f560;
 extern S_g8c4d9ae4 *g_8c4d9ae4;
 extern int g_8c575570;
 extern "C" void call_8c3827d8(void *);
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c382a40(void *);
-extern "C" void call_8c37df90(int, void *);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void translate_current_matrix_v_8c382a40(void *);
+extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3aa702(void *);
 extern "C" void call_8c38c0f0(void *);
 extern "C" void reset_state_8c391c94(void);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void reset_state_8c391cc4(void);
 extern "C" void operation_8c1351b8(Object *o)
 {
@@ -80,11 +80,11 @@ extern "C" void operation_8c1351b8(Object *o)
     t1 = o->v11(((ObjectData *)o)->ff8, ((ObjectData *)o)->ffc);
     if (t1 != 0) {
         call_8c3827d8((void *)(*(S_g8c4d9ae4_0 **)((((ObjectData *)o)->f10c << 2) + (int)g_8c4d9ae4)));
-        call_8c38ae68();
-        call_8c382a40((void *)(((char *)o + 0x3c)));
-        call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+        njPushMatrixEx_8c38ae68();
+        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
+        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
         v1 = (S_vv1 *)((ObjectData *)o)->f38;
-        call_8c382a40((void *)((int)v1 + 8));
+        translate_current_matrix_v_8c382a40((void *)((int)v1 + 8));
         call_8c3aa702((void *)(v1->f04));
         if (((ObjectData *)o)->f10c != 1) {
             g_8c46f560 = (int)(g_8c575570);
@@ -93,21 +93,21 @@ extern "C" void operation_8c1351b8(Object *o)
         }
         reset_state_8c391c94();
         v4 = (S_vv4 *)v1->f2c;
-        call_8c38ae68();
-        call_8c382a40((void *)(((char *)o + 0x6c)));
-        call_8c382a40((void *)((int)v4 + 8));
+        njPushMatrixEx_8c38ae68();
+        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x6c)));
+        translate_current_matrix_v_8c382a40((void *)((int)v4 + 8));
         call_8c3aa702((void *)(v4->f04));
         v5 = (S_vv5 *)v4->f2c;
-        call_8c38ae68();
-        call_8c382a40((void *)((int)v5 + 8));
+        njPushMatrixEx_8c38ae68();
+        translate_current_matrix_v_8c382a40((void *)((int)v5 + 8));
         call_8c3aa702((void *)(v5->f04));
-        call_8c38ad10();
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         reset_state_8c391cc4();
         if (((ObjectData *)o)->f10c != 1) {
             call_8c38c0f0((void *)((void *)0x8c305fd8));
             g_8c575570 = (int)(g_8c46f560);
         }
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
     }
 }

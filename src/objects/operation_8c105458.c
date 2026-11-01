@@ -12,7 +12,7 @@ struct S_g8c30b618 {
     char unknown10[0x14];
     int f24;
 };
-extern void call_8c380516(void);
+extern void wait_vsync_and_flip_8c380516(void);
 void operation_8c105458(int a0, int a1, int a2)
 {
     (*(S_g8c30b618 **)0x8c30b618)->f00 = 2;
@@ -21,6 +21,6 @@ void operation_8c105458(int a0, int a1, int a2)
     (*(S_g8c30b618 **)0x8c30b618)->f0c = a2;
     (*(S_g8c30b618 **)0x8c30b618)->f24 = 1;
     do {
-        call_8c380516();
+        wait_vsync_and_flip_8c380516();
     } while ((*(S_g8c30b618 **)0x8c30b618)->f24 != 0);
 }

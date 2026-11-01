@@ -32,7 +32,7 @@ struct S_g8c467180 {
 struct S_g8c467180_44 {
     S_g8c467180_44_0 *f00;
 };
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void operation_8c19a044(void *, int);
 extern void clear_global_8c22fff0(void);
 extern void call_8c22e8e4(Object *, void *, int);
@@ -40,7 +40,7 @@ void operation_8c22e7c8(Object *o)
 {
     S_vv61 *v61;
     if (o->f58 != 0) {
-        call_8c011ec0((void *)(o->f58));
+        game_free_8c011ec0((void *)(o->f58));
         o->f58 = (Arg0_58 *)0;
     }
     v61 = (S_vv61 *)o->f84;

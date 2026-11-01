@@ -88,7 +88,7 @@ extern S_g8c4d9e80 *g_8c4d9e80;
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_panel_8c087d8c(void *, void *, void *);
 extern void create_effect_777c(void *, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c141b88(Object *o)
 {
     Frame frame;
@@ -125,5 +125,5 @@ void operation_8c141b88(Object *o)
         initialize_panel_8c087d8c((void *)t3, g_8c44be9c, (void *)(&frame));
     }
     create_effect_777c((void *)(&o->f3c), 0x8b);
-    call_8c05fbf8(0x40012, (void *)(&o->f3c), 0, 0);
+    play_se_8c05fbf8(0x40012, (void *)(&o->f3c), 0, 0);
 }

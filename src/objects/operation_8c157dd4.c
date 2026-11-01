@@ -22,18 +22,18 @@ struct S_g8c4daa80_42c {
 };
 extern char g_8c316250[];
 extern void call_8c089348(Object *);
-extern void call_8c38c5b6(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void njPrintColor_8c38c5b6(int);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c157dd4(Object *o)
 {
     call_8c089348(o);
-    call_8c38c5b6(-0xff0100);
+    njPrintColor_8c38c5b6(-0xff0100);
     if (!(o->f90 >= 0)) {
         o->f108 = (int)(*(int *)0x8c4daa84);
-        call_8c38cf80(0x130020, (void *)((g_8c316250 + 0x173)));
+        debug_print_at_8c38cf80(0x130020, (void *)((g_8c316250 + 0x173)));
     } else {
         o->f108 = (int)((*(S_g8c4daa80 **)0x8c4daa80)->f42c->f1c);
-        call_8c38cf80(0x130020, (void *)((g_8c316250 + 0x18d)));
+        debug_print_at_8c38cf80(0x130020, (void *)((g_8c316250 + 0x18d)));
     }
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xf0f10);
 }

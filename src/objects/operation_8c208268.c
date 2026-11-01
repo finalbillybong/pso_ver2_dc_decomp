@@ -34,7 +34,7 @@ extern S_L8c504968 g_8c504968;
 extern S_L8c5049a4 g_8c5049a4;
 extern int operation_8c01c228(void);
 extern void clear_global_8c01c210(void);
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void request_resource_release(void *);
 extern void operation_8c21da34(void);
 extern void clear_group_flag_08(void *);
@@ -48,11 +48,11 @@ void operation_8c208268(void)
         g_8c4dc844 = 0;
         clear_global_8c01c210();
         if ((&g_8c5049a4)->f38 != 0) {
-            call_8c18de08((void *)((&g_8c5049a4)->f38));
+            operator_delete_8c18de08((void *)((&g_8c5049a4)->f38));
             (&g_8c5049a4)->f38 = (S_L8c5049a4_38 *)0;
         }
         if ((&g_8c504968)->f38 != 0) {
-            call_8c18de08((void *)((&g_8c504968)->f38));
+            operator_delete_8c18de08((void *)((&g_8c504968)->f38));
             (&g_8c504968)->f38 = (S_L8c504968_38 *)0;
         }
         if (g_8c5049e8 != 0) {

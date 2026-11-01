@@ -43,11 +43,11 @@ struct Arg0_34 {
     char unknown0[0x64];
     int f64;
 };
-extern void call_8c38ae68(void);
+extern void njPushMatrixEx_8c38ae68(void);
 extern void call_8c384610(int);
 extern void call_8c38a714(int, void *);
 extern void call_8c3be280(int, void *, void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 extern void operation_8c0bbc90(void *, int);
 void operation_8c0bc414(Object *o)
 {
@@ -59,36 +59,36 @@ void operation_8c0bc414(Object *o)
     int v13;
     if (o->f48 != 0) {
         int v2;
-        call_8c38ae68();
+        njPushMatrixEx_8c38ae68();
         call_8c384610(0);
         v1 = (S_vv1 *)o->f3c;
         v3 = (S_vv3 *)o->f48;
         v2 = (int)0x118;
         while (v1->f00 >= 0) {
             v3->f00 = v1->f04;
-            call_8c38ae68();
+            njPushMatrixEx_8c38ae68();
             call_8c38a714(0, (void *)(& *(int *)((char *)((char *)*(Arg0_34_0 **)((char *)((char *)o->f34 + 0x0) + (v2)) + 0x0) + (v1->f00 << 6))));
             call_8c3be280(0, (void *)((int)v1 + 8), (void *)((int)v3 + 4));
-            call_8c38ad10();
+            njPopMatrixEx_8c38ad10();
             v1 = (S_vv1 *)((char *)v1 + 20);
             v3 = (S_vv3 *)((char *)v3 + 16);
         }
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
     }
-    call_8c38ae68();
+    njPushMatrixEx_8c38ae68();
     call_8c384610(0);
     v12 = (S_vv12 *)o->f38;
     v14 = (S_vv14 *)o->f44;
     v13 = (int)0x118;
     while (v12->f00 >= 0) {
         v14->f00 = o->f34->f64 + v12->f04;
-        call_8c38ae68();
+        njPushMatrixEx_8c38ae68();
         call_8c38a714(0, (void *)(& *(int *)((char *)((char *)*(Arg0_34_0 **)((char *)((char *)o->f34 + 0x0) + (v13)) + 0x0) + (v12->f00 << 6))));
         call_8c3be280(0, (void *)((int)v12 + 8), (void *)((int)v14 + 4));
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         v12 = (S_vv12 *)((char *)v12 + 24);
         v14 = (S_vv14 *)((char *)v14 + 16);
     }
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
     operation_8c0bbc90((void *)o, (int)((void *)0x8c305980));
 }

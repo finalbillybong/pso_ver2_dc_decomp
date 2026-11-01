@@ -33,7 +33,7 @@ struct Arg0_dc {
 extern void call_8c01c5f0(Object *);
 extern int check_range_8c01cf68(void *, float);
 extern int call_8c24e644(int, void *);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void update_last_effect(int);
 extern void call_8c04a43c(Object *, int, float);
 extern void refresh_follow_effect_8c052180(void *);
@@ -45,7 +45,7 @@ void operation_8c03abf0(Object *o)
     t1 = check_range_8c01cf68((void *)o, 0.0f);
     if (t1 != 0) {
         t2 = call_8c24e644(0x30007, (void *)(o->f38c));
-        call_8c05fbf8(t2, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(t2, (void *)(((char *)o + 0x3c)), 0, 0);
         update_last_effect(-0x300);
     }
     o->f320 = 0.0f;

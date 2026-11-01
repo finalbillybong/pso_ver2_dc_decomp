@@ -18,7 +18,7 @@ extern unsigned int g_8c4dbc64;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c18999c(int, Object *, void *);
-extern void call_8c1009e4(int);
+extern void bgm_play_acx_bank_8c1009e4(int);
 extern void operation_8c1c7210(void *, int);
 extern void call_8c207854(int, Object *, int);
 Object *operation_8c189df4(Object *o, int a1)
@@ -39,28 +39,28 @@ Object *operation_8c189df4(Object *o, int a1)
         if (t1 != 0) {
             call_8c18999c(t1, o, (void *)((void *)0x8c319e8c));
         }
-        call_8c1009e4(0);
+        bgm_play_acx_bank_8c1009e4(0);
         break;
     case 1:
         t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x30);
         if (t2 != 0) {
             operation_8c1c7210((void *)t2, (int)o);
         }
-        call_8c1009e4(3);
+        bgm_play_acx_bank_8c1009e4(3);
         break;
     case 3:
         t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x44);
         if (t3 != 0) {
             call_8c207854(t3, o, 1);
         }
-        call_8c1009e4(1);
+        bgm_play_acx_bank_8c1009e4(1);
         break;
     case 4:
         t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x44);
         if (t4 != 0) {
             call_8c207854(t4, o, 0);
         }
-        call_8c1009e4(2);
+        bgm_play_acx_bank_8c1009e4(2);
     case 2:
         break;
     }

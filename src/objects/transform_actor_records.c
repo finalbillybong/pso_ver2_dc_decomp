@@ -4,14 +4,14 @@ typedef struct View { char unknown0[60]; Vector position; char unknown72[28]; in
 typedef char check_layout[sizeof(Vector) == 12 && sizeof(Record) == 44 && (unsigned long)&((Record *)0)->destination == 28 && (unsigned long)&((View *)0)->position == 60 && (unsigned long)&((View *)0)->angle == 100 && (unsigned long)&((View *)0)->records == 220 && (unsigned long)&((View *)0)->count == 224 ? 1 : -1];
 extern char matrix[];
 extern int enabled_at(void);
-extern void load_at(void *), rotate_at(int, int), transform_at(int, Vector *, Vector *), add_at(Vector *, Vector *), pop_at(int);
+extern void njPushMatrix_8c38ade4(void *), njRotateY_8c37df90(int, int), transform_at(int, Vector *, Vector *), add_at(Vector *, Vector *), njPopMatrix_8c38accc(int);
 void transform_actor_records(View *o) {
     if (o && o->records && enabled_at()) {
         int count = o->count;
         int i;
         Vector position;
-        load_at(matrix);
-        rotate_at(0, o->angle);
+        njPushMatrix_8c38ade4(matrix);
+        njRotateY_8c37df90(0, o->angle);
         for (i = 0; i < count; ++i) {
             int offset = i * 44;
             position = *(Vector *)((char *)o->records + offset);
@@ -19,6 +19,6 @@ void transform_actor_records(View *o) {
             add_at(&position, &o->position);
             *(Vector *)((char *)&o->records->destination + offset) = position;
         }
-        pop_at(1);
+        njPopMatrix_8c38accc(1);
     }
 }

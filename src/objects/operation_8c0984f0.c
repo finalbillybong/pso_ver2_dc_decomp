@@ -25,7 +25,7 @@ struct Arg0_20 {
 extern int g_8c469e48;
 extern int g_8c46b064;
 extern int call_8c0353ec(Arg0_20 *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern int call_8c03530c(S_vv3 *);
 extern void operation_8c09857c(void);
 void operation_8c0984f0(Object *o)
@@ -35,10 +35,10 @@ void operation_8c0984f0(Object *o)
     int t2;
     t1 = call_8c0353ec((Arg0_20 *)(o->f20));
     if (t1 == 0) {
-        call_8c05fbf8(0x50006, 0, 0, 0);
+        play_se_8c05fbf8(0x50006, 0, 0, 0);
         return;
     }
-    call_8c05fbf8(0x50001, 0, 0, 0);
+    play_se_8c05fbf8(0x50001, 0, 0, 0);
     v3 = (S_vv3 *)o->f20;
     if (v3->f30 == -1) {
         t2 = call_8c03530c(v3);

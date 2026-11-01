@@ -26,9 +26,9 @@ struct Arg1 {
 struct Arg2 {
     Vector3 f00;
 };
-extern void call_8c37f6f0(Frame *, void *);
-extern float call_8c37e480(Frame *);
-extern void call_8c37b630(Frame *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
+extern float njScalor_8c37e480(Frame *);
+extern void njUnitVector_8c37b630(Frame *);
 extern int operation_8c051ff4(void *, void *, void *);
 extern void call_8c3bdf60(void *, Frame *);
 int operation_8c11b7f0(int a0, Arg1 *a1, Arg2 *a2, float f0, float f1)
@@ -43,12 +43,12 @@ int operation_8c11b7f0(int a0, Arg1 *a1, Arg2 *a2, float f0, float f1)
     pm3 = &a1->f00;
     *(Vector3 *)&(&frame)->f0c = *(Vector3 *)pm3;
     *(Vector3 *)&(&frame)->f00 = *(&a2->f00);
-    call_8c37f6f0(((&frame)), (void *)(&(&frame)->f0c));
-    t1 = call_8c37e480(((&frame)));
+    vector_sub_in_place_8c37f6f0(((&frame)), (void *)(&(&frame)->f0c));
+    t1 = njScalor_8c37e480(((&frame)));
     if (f0 > t1) {
         return 1;
     }
-    call_8c37b630((Frame *)((&frame)));
+    njUnitVector_8c37b630((Frame *)((&frame)));
     v1 = (float)0.0f;
     (&frame)->f00.f00 *= f0;
     (&frame)->f00.f04 *= f0;

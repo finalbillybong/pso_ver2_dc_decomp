@@ -12,12 +12,12 @@ struct Object {
     int f08;
     int f0c;
 };
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void call_8c011ed8(void *);
 Object *operation_8c2456e8(Object *o, int a1)
 {
     if (o != 0) {
-        call_8c18de08(o->f04);
+        operator_delete_8c18de08(o->f04);
         call_8c011ed8(o->tag);
         o->f08 = 0;
         o->f0c = 0;

@@ -38,7 +38,7 @@ struct S_L8c466e20 {
 };
 extern S_L8c466e20 g_8c466e20;
 extern int hierarchy_is_active(void *);
-extern float call_8c38c154(void *);
+extern float njCos_8c38c154(void *);
 extern void append_manager_record(void *, void *);
 void operation_8c0aad98(Object *o)
 {
@@ -47,7 +47,7 @@ void operation_8c0aad98(Object *o)
     float t2;
     t1 = hierarchy_is_active((void *)o);
     if (t1 != 0) {
-        t2 = call_8c38c154((void *)(o->fb0));
+        t2 = njCos_8c38c154((void *)(o->fb0));
         v22 = (float)o->f24->f70 * t2;
         o->f7c = o->f2c * (v22 + 1.0f);
         o->f80 = o->f30 * (1.0f - v22);

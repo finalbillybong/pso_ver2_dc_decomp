@@ -11,7 +11,7 @@ struct Object {
     Arg0_28 *f28;
 };
 extern int call_8c18e8a0(int, void *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c25c664(Object *o)
 {
     char *v41;
@@ -22,7 +22,7 @@ void operation_8c25c664(Object *o)
     }
     t1 = call_8c18e8a0((int)(v41), (void *)(o->f28));
     if (t1 == 0) {
-        call_8c05fbf8(0x20030, 0, 0, 0);
+        play_se_8c05fbf8(0x20030, 0, 0, 0);
     }
     o->f24 -= 1;
 }

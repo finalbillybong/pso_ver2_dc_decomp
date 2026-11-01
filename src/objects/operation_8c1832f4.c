@@ -19,7 +19,7 @@ struct Object {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4dbb24;
 extern void call_8c011ed8(void *);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1832f4(Object *o, int a1)
@@ -33,7 +33,7 @@ Object *operation_8c1832f4(Object *o, int a1)
             call_8c011ed8((void *)(o->f24));
         }
         if (o->f20 != 0) {
-            call_8c011ec0((void *)(o->f20));
+            game_free_8c011ec0((void *)(o->f20));
             o->f20 = (Arg0_20 *)0;
         }
         g_8c4dbb24 = 0;

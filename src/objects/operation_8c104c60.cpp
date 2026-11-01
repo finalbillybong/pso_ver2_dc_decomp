@@ -22,7 +22,7 @@ extern "C" void TObject_debug_describe_8c033330(void *);
 extern "C" int call_8c104da8(void);
 extern "C" void call_8c0308ec(void);
 extern "C" void call_8c379280(void);
-extern "C" void call_8c380516(void);
+extern "C" void wait_vsync_and_flip_8c380516(void);
 extern "C" void loading_wait_frame_8c104c60(void)
 {
     int t1;
@@ -39,5 +39,5 @@ extern "C" void loading_wait_frame_8c104c60(void)
         call_8c0308ec();
         call_8c379280();
     }
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

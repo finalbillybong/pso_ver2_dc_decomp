@@ -33,7 +33,7 @@ extern void call_8c100524(int);
 extern void call_8c03f734(Object *, int);
 extern void operation_8c03f840(Object *);
 extern int call_8c03f868(Object *, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void clear_global_render_resources(void);
 void operation_8c03ff08(Object *o)
 {
@@ -69,7 +69,7 @@ void operation_8c03ff08(Object *o)
     t2 = call_8c03f868(o, (int)(v23));
     if (t2 == 1) {
         g_8c466de4 = 3;
-        call_8c05fbf8(0x40009, 0, 0, 0);
+        play_se_8c05fbf8(0x40009, 0, 0, 0);
         t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x2c);
         if (t3 != 0) {
             initialize_color_rise(t3, g_8c44be84, (void *)((void *)0x8c03f480));

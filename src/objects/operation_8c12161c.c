@@ -13,7 +13,7 @@ extern void file_load_8c104d00(int, void *);
 extern int get_current_area_8c032b10(void);
 extern void call_8c122210(void *, int);
 extern void call_8c391cc4(void);
-void operation_8c12161c(void)
+void select_fog_entry_file_8c12161c(void)
 {
     int t1;
     int t2;

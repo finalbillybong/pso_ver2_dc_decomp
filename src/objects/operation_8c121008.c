@@ -10,7 +10,7 @@ struct Object {
 };
 extern char g_8c311c38[];
 extern int lookup_low_id(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c121008(Object *o)
 {
     int v1;
@@ -19,7 +19,7 @@ void operation_8c121008(Object *o)
     if (v1 != 0) {
         t1 = lookup_low_id((int)(o->fd4 & 0xffff));
         if (t1 != 0) {
-            call_8c38cf80(0x1a0020, (void *)((g_8c311c38 + 0xc)));
+            debug_print_at_8c38cf80(0x1a0020, (void *)((g_8c311c38 + 0xc)));
         }
     }
 }

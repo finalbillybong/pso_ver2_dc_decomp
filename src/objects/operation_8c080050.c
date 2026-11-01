@@ -10,12 +10,12 @@ struct S_c8c104e9c {
 };
 extern S_c8c104e9c *g_8c469b80;
 extern char g_8c2febe8[];
-extern S_c8c104e9c *call_8c104e9c(void *);
+extern S_c8c104e9c *load_resource_8c104e9c(void *);
 extern void copy_resource_fields(void *, void *);
 void operation_8c080050(void)
 {
     S_c8c104e9c *t1;
-    t1 = call_8c104e9c((void *)((void *)g_8c2febe8));
+    t1 = load_resource_8c104e9c((void *)((void *)g_8c2febe8));
     g_8c469b80 = t1;
     copy_resource_fields((void *)((g_8c2febe8 + 0xd)), (void *)(t1->f00));
 }

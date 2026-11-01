@@ -10,13 +10,13 @@ struct Object {
     unsigned char f01;
 };
 extern void call_8c02f0c4(void *, Object *, int);
-extern void call_8c036d04(Object *);
+extern void TGameProtocol_dispatch_local_subcommand_8c036d04(Object *);
 void operation_8c0368a8(Object *o)
 {
     if (*(int *)0x8c418a00 != 0) {
         call_8c02f0c4(*(S_g8c418a00 **)0x8c418a00, o, o->f01 << 2);
     }
     *(int *)0x8c4627c8 = 1;
-    call_8c036d04(o);
+    TGameProtocol_dispatch_local_subcommand_8c036d04(o);
     *(int *)0x8c4627c8 = 0;
 }

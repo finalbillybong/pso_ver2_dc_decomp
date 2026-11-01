@@ -9,10 +9,10 @@ struct Object {
     char unknown0[0x234];
     Arg0_234 *f234;
 };
-extern void call_8c37dd28(int, void *);
+extern void njRotateX_8c37dd28(int, void *);
 void operation_8c24958c(Object *o)
 {
     if (*(int *)0x8c4689f0 == 1) {
-        call_8c37dd28(0, (void *)(o->f234));
+        njRotateX_8c37dd28(0, (void *)(o->f234));
     }
 }

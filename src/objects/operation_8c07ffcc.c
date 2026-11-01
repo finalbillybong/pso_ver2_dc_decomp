@@ -9,10 +9,10 @@ struct Object {
     int ff8;
 };
 extern void set_child_blend(void);
-extern void call_8c38ae68(void);
-extern void call_8c382a40(int);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void translate_current_matrix_v_8c382a40(int);
 extern void call_8c38e354(void *, int, int);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 extern void restore_child_blend(void);
 void operation_8c07ffcc(Object *o)
 {
@@ -23,10 +23,10 @@ void operation_8c07ffcc(Object *o)
     while ((unsigned int)o->ff8 > v1) {
         v2 = (int)(v1 * 0x18);
         if (*(char *)((char *)((char *)o + 0x20) + (v2)) != 0) {
-            call_8c38ae68();
-            call_8c382a40((int)((int)o + v2 + 0x24));
+            njPushMatrixEx_8c38ae68();
+            translate_current_matrix_v_8c382a40((int)((int)o + v2 + 0x24));
             call_8c38e354((void *)((void *)0x8c2feb98), 1, 0x40);
-            call_8c38ad10();
+            njPopMatrixEx_8c38ad10();
         }
         v1 = (unsigned int)(v1 + 1);
     }

@@ -32,8 +32,8 @@ extern void call_8c060724(int);
 extern void clear_hierarchy_groups(void *);
 extern void call_8c0a2b20(void);
 extern void clear_render_flags(void);
-extern void call_8c380516(void);
-void operation_8c184498(void)
+extern void wait_vsync_and_flip_8c380516(void);
+void mode_title_exit_8c184498(void)
 {
     int v23;
     int v24;
@@ -88,5 +88,5 @@ void operation_8c184498(void)
     clear_hierarchy_groups((void *)((void *)0x8c44bec8));
     call_8c0a2b20();
     clear_render_flags();
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

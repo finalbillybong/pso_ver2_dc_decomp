@@ -30,7 +30,7 @@ extern void operation_8c109bd0(void *);
 extern int call_8c18e768(int, int);
 extern void operation_8c109da0(void *);
 extern int call_8c24e644(int, void *);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c109524(Object *o)
 {
     int v4;
@@ -55,7 +55,7 @@ void operation_8c109524(Object *o)
         }
         o->f35a = o->f330;
         t1 = call_8c24e644(0x3000f, (void *)(o->f38c));
-        call_8c05fbf8(t1, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(t1, (void *)(((char *)o + 0x3c)), 0, 0);
         if (((o->f3a4 & 0x40000)) == 0) {
             if (o->f30a != 4) {
                 o->f39c = o->f30a;

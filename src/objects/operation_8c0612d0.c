@@ -31,8 +31,8 @@ struct Object {
 };
 extern float normalize_xz_checked(void *);
 extern float call_8c130334(float, float);
-extern float call_8c37eb0c(void *);
-extern float call_8c38c154(void *);
+extern float njSin_8c37eb0c(void *);
+extern float njCos_8c38c154(void *);
 extern int cross_xz_negative(void *, void *);
 int operation_8c0612d0(Object *o, Arg1 *a1)
 {
@@ -52,9 +52,9 @@ int operation_8c0612d0(Object *o, Arg1 *a1)
     if (t1 != 0.0f) {
         t2 = call_8c130334((&frame)->f0c.f00, (&frame)->f0c.f08);
         a1->f00 = (int)(t2 * 65536.0f / 6.28318405f);
-        t3 = call_8c37eb0c((void *)(o->f64));
+        t3 = njSin_8c37eb0c((void *)(o->f64));
         (&frame)->f00 = t3;
-        t4 = call_8c38c154((void *)(o->f64));
+        t4 = njCos_8c38c154((void *)(o->f64));
         (&frame)->f08 = t4;
         t5 = cross_xz_negative((void *)(&frame), (void *)(&(&frame)->f0c));
         if (t5 != 0) {

@@ -56,7 +56,7 @@ struct Frame {
 extern int g_8c4d7ce0;
 extern void operation_8c1102b8(void *);
 extern void operation_8c110278(void *, int);
-extern float call_8c37e480(Frame *);
+extern float njScalor_8c37e480(Frame *);
 extern void operation_8c10d684(void *);
 extern void operation_8c10d71c(void *);
 extern void call_8c10d790(Object *);
@@ -102,7 +102,7 @@ void operation_8c10d42c(Object *o)
         (&frame)->f00 = o->fb0.f00 - p->f3c;
         (&frame)->f04 = 0.0f;
         (&frame)->f08 = o->fb0.f08 - o->f7c->f94->f44;
-        t1 = call_8c37e480((Frame *)((&frame)));
+        t1 = njScalor_8c37e480((Frame *)((&frame)));
         if (!(t1 > 1.0f)) {
             return;
         }

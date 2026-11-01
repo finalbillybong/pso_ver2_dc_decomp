@@ -15,12 +15,12 @@ struct Object {
     int f3a0;
     int f3a4;
 };
-extern void call_8c05fbf8(void *, void *, int, int);
+extern void play_se_8c05fbf8(void *, void *, int, int);
 void operation_8c15fdd8(Object *o)
 {
     o->f3a0 = 1;
     o->f3a4 = 1;
-    call_8c05fbf8((void *)(*(S_g8c286438 **)((char *)0x8c286438 + (o->f39c << 2))), (void *)(((char *)o + 0x3c)), 0, 0);
+    play_se_8c05fbf8((void *)(*(S_g8c286438 **)((char *)0x8c286438 + (o->f39c << 2))), (void *)(((char *)o + 0x3c)), 0, 0);
     o->fe8 = (unsigned int)o->fe8 >> 1 << 1;
     o->ff0 = 5;
 }

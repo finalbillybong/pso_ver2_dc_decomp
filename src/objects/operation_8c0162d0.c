@@ -18,7 +18,7 @@ extern void call_8c119c78(void *);
 extern void request_resource_release(void *);
 extern void operation_8c016950(void);
 extern void call_8c02fa5c(void *);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 void operation_8c0162d0(void)
 {
     int t1;
@@ -39,5 +39,5 @@ void operation_8c0162d0(void)
         operation_8c016950();
     }
 L_8c016324:;
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
 }

@@ -105,9 +105,9 @@ extern "C" void operation_8c220ca8(int, int);
 extern "C" int operation_8c1cdc80(void *);
 extern "C" void operation_8c023b3c(void *, int, int);
 extern "C" void operation_8c19ca7c(int);
-extern "C" void operation_8c1005bc(int);
+extern "C" void game_ADXT_StartFname_wrapper_8c1005bc(int);
 extern "C" void operation_8c19a044(void *, int);
-extern "C" void operation_8c19b710(Object *o)
+extern "C" void tekker_window_update_8c19b710(Object *o)
 {
     char *v71;
     S_vv7 *v7;
@@ -147,7 +147,7 @@ extern "C" void operation_8c19b710(Object *o)
                             request_resource_release((void *)(o->f158));
                             o->f158 = (Arg0_158 *)0;
                         }
-                        operation_8c1005bc((int)(g_8c31cc44 + 0x18));
+                        game_ADXT_StartFname_wrapper_8c1005bc((int)(g_8c31cc44 + 0x18));
                     }
                     request_resource_release((void *)(o->f15c));
                     o->f15c = (Arg0_15c *)0;

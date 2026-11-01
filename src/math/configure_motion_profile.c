@@ -1,6 +1,6 @@
 #include "src/include/motion_profile.h"
 
-#define root_at ((float (*)(float))0x8c37f6c0)
+#define signed_sqrt_8c37f6c0 ((float (*)(float))0x8c37f6c0)
 
 void configure_motion_profile(MotionProfile *profile, float acceleration,
                               float deceleration, float distance, float speed) {
@@ -15,7 +15,7 @@ void configure_motion_profile(MotionProfile *profile, float acceleration,
     ramp_distance = speed * speed * 0.5f / ramp_distance;
     brake_distance = -(speed * speed) * 0.5f / profile->deceleration;
     if (profile->distance <= ramp_distance + brake_distance) {
-        profile->speed = root_at(profile->acceleration * 2.0f * profile->deceleration *
+        profile->speed = signed_sqrt_8c37f6c0(profile->acceleration * 2.0f * profile->deceleration *
                                 profile->distance / (profile->deceleration - profile->acceleration));
         speed = profile->speed * profile->speed;
         profile->ramp_time = profile->cruise_end = profile->speed / profile->acceleration;

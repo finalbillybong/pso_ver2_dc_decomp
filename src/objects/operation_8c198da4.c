@@ -47,7 +47,7 @@ struct Frame {
 };
 extern void initialize_grid_view(void *, void *);
 extern int lookup_low_id(int);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void operation_8c199b20(int, int);
 extern void call_8c199b8c(int, void *);
 Object *operation_8c198da4(Object *o)
@@ -86,14 +86,14 @@ Object *operation_8c198da4(Object *o)
         o->f82 += 1;
         v5 = (S_vv5 *)((char *)v5 + 12);
     }
-    t2 = call_8c011ecc(0x24);
+    t2 = game_malloc_8c011ecc(0x24);
     if (t2 != 0) {
         operation_8c199b20(t2, (int)((*(S_g8c467180 **)0x8c467180)->f2c->f208));
     }
     o->f88 = (int)(t2);
     (&frame)->f04 = 196.0f;
     (&frame)->f08 = (float)o->f82 * 51.0f + 18.0f;
-    t3 = call_8c011ecc(8);
+    t3 = game_malloc_8c011ecc(8);
     if (t3 != 0) {
         call_8c199b8c(t3, (void *)(&(&frame)->f04));
     }

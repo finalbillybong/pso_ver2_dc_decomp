@@ -14,7 +14,7 @@ extern int g_8c2e2ad8;
 extern int call_8c0eea7c(Object *, float);
 extern void operation_8c05426c(void *, int, int);
 extern int get_current_area_8c032b10(void);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c0eede8(Object *o)
 {
     int t1;
@@ -29,21 +29,21 @@ void operation_8c0eede8(Object *o)
             case 3:
             case 4:
             case 5:
-                call_8c05fbf8(0x40007, (void *)(((char *)o + 0x3c)), 0, 0);
+                play_se_8c05fbf8(0x40007, (void *)(((char *)o + 0x3c)), 0, 0);
                 return;
             case 6:
             case 7:
-                call_8c05fbf8(0x40001, (void *)(((char *)o + 0x3c)), 0, 0);
+                play_se_8c05fbf8(0x40001, (void *)(((char *)o + 0x3c)), 0, 0);
                 return;
             case 8:
             case 9:
             case 10:
-                call_8c05fbf8(0x40008, (void *)(((char *)o + 0x3c)), 0, 0);
+                play_se_8c05fbf8(0x40008, (void *)(((char *)o + 0x3c)), 0, 0);
                 return;
             case 16:
             case 17:
                 if (g_8c2e2ad8 == 1) {
-                    call_8c05fbf8(0x4000b, (void *)(((char *)o + 0x3c)), 0, 0);
+                    play_se_8c05fbf8(0x4000b, (void *)(((char *)o + 0x3c)), 0, 0);
                 }
                 return;
             case 0:

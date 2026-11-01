@@ -9,14 +9,14 @@ struct S_c8c104e9c {
     S_c8c104e9c_0 *f00;
 };
 extern char g_8c304fbc[];
-extern S_c8c104e9c *call_8c104e9c(void *);
+extern S_c8c104e9c *load_resource_8c104e9c(void *);
 extern void copy_resource_fields(void *, void *);
 extern void operation_8c0d0318(void);
 void operation_8c0adb0c(void)
 {
     int v1;
     S_c8c104e9c *t1;
-    t1 = call_8c104e9c((void *)((g_8c304fbc + 0x9)));
+    t1 = load_resource_8c104e9c((void *)((g_8c304fbc + 0x9)));
     *(S_c8c104e9c **)0x8c46f1c0 = t1;
     copy_resource_fields((void *)((g_8c304fbc + 0x15)), (void *)(t1->f00));
     copy_resource_fields((void *)((g_8c304fbc + 0x1d)), (void *)((void *)0x8c3055f4));

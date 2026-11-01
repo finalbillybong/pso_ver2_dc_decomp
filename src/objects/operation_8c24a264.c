@@ -44,7 +44,7 @@ struct S_x49120_0 {
 extern void operation_8c24a6c8(void *);
 extern void call_8c24a6ec(Object *);
 extern S_c8c021ef8 *lookup_low_id(int);
-extern float call_8c37e494(Frame *);
+extern float njScalor2_8c37e494(Frame *);
 extern void operation_8c245f40(void *);
 void operation_8c24a264(Object *o)
 {
@@ -70,7 +70,7 @@ void operation_8c24a264(Object *o)
         (&frame)->f00 = t1->f3c - o->f3c;
         (&frame)->f08 = t1->f44 - o->f44;
         (&frame)->f04 = 0.0f;
-        t2 = call_8c37e494((Frame *)((&frame)));
+        t2 = njScalor2_8c37e494((Frame *)((&frame)));
         if (!(t2 > 14400.0f)) {
             v11 = (int)0;
             v10 = (int)-0x11;

@@ -51,7 +51,7 @@ extern void call_8c198294(int, Object *);
 extern void call_8c199688(int, Object *, int);
 extern int create_fitted_pair_grid_view(void *, void *);
 extern void operation_8c119764(int, int, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 Object *operation_8c1dd718(Object *o)
 {
     Frame frame;
@@ -89,6 +89,6 @@ Object *operation_8c1dd718(Object *o)
     t3 = create_fitted_pair_grid_view((void *)(&(&frame)->f0c), (void *)(&(&frame)->f04));
     o->f50 = (Arg0_50 *)t3;
     operation_8c119764((int)(o->f50), (int)((*(S_g8c467180 **)0x8c467180)->f54->f08), 1);
-    call_8c05fbf8(0x50006, 0, 0, 0);
+    play_se_8c05fbf8(0x50006, 0, 0, 0);
     return o;
 }

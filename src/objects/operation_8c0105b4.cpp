@@ -30,7 +30,7 @@ extern "C" int call_8c01e180(void);
 extern "C" void time_hierarchy_visit(void *);
 extern "C" void hierarchy_output_cycle(void *);
 extern "C" void call_8c2280f0(void);
-extern "C" void call_8c380516(void);
+extern "C" void wait_vsync_and_flip_8c380516(void);
 extern "C" void call_8c1fbb28(int);
 extern "C" int call_8c130384(int);
 static inline int char_class(int c)
@@ -70,7 +70,7 @@ extern "C" int operation_8c0105b4(Object *o, int a1)
             time_hierarchy_visit((void *)((void *)0x8c44bec8));
             hierarchy_output_cycle((void *)((void *)0x8c44bec8));
             call_8c2280f0();
-            call_8c380516();
+            wait_vsync_and_flip_8c380516();
         } while (t3 == v1);
 L_8c010648:;
         switch (t3) {

@@ -6,7 +6,7 @@ extern void fn_8c35290e(void);
 extern void fn_8c352928(void);
 extern void gdCiGetFileSize_8c35293c(void);
 extern void gdCiOpen_8c35299a(void);
-extern void fn_8c352a26(void);
+extern void gdCiSeek_8c352a26(void);
 extern void fn_8c352a44(void);
 extern void fn_8c352a76(void);
 extern void gdCiReqRd_8c352a82(void);
@@ -49,7 +49,7 @@ Function const d_8c3fb4a4[26] = {
     gdCiGetFileSize_8c35293c,
     0,
     gdCiOpen_8c35299a,
-    fn_8c352a26,
+    gdCiSeek_8c352a26,
     fn_8c352a44,
     fn_8c352a76,
     gdCiReqRd_8c352a82,

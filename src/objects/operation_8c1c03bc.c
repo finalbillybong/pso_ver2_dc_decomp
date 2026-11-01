@@ -16,12 +16,12 @@ struct Object {
     Arg0_ac *fac;
     int fb0;
 };
-extern float call_8c37eb0c(void *);
+extern float njSin_8c37eb0c(void *);
 void operation_8c1c03bc(Object *o)
 {
     float t1;
     o->fac = (Arg0_ac *)((int)o->fac + o->fa8);
-    t1 = call_8c37eb0c((void *)(o->fac));
+    t1 = njSin_8c37eb0c((void *)(o->fac));
     o->fa0 = o->f9c * t1;
     o->fb0 += o->f90;
 }

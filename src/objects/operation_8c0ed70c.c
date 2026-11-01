@@ -4,17 +4,17 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern void call_8c3806f6(int, int, int);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 extern void call_8c01c250(int);
 extern void call_8c01c244(int);
-extern void call_8c034618(void);
-extern void call_8c380516(void);
+extern void load_chara_making_motions_8c034618(void);
+extern void wait_vsync_and_flip_8c380516(void);
 void operation_8c0ed70c(void)
 {
     call_8c3806f6(0, 0, 0xff);
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
     call_8c01c250(2);
     call_8c01c244(0xb);
-    call_8c034618();
-    call_8c380516();
+    load_chara_making_motions_8c034618();
+    wait_vsync_and_flip_8c380516();
 }

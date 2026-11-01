@@ -119,7 +119,7 @@ struct Frame {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" char g_8c4da704[];
 extern "C" int lookup_low_id(int);
-extern "C" void call_8c37f6f0(void *, void *);
+extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
 extern "C" void operation_43fb4(void *, int, void *);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c18833c(void *, void *, int, int, void *, float, float);
@@ -127,7 +127,7 @@ extern "C" float scale_vector_to_length(void *, float);
 extern "C" void call_8c3bdf60(void *, void *);
 extern "C" int call_8c13b1f8(Object *);
 extern "C" void call_8c01c5f0(Object *);
-extern "C" void call_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void operation_8c13ad4c(Object *o)
 {
     Frame frame;
@@ -152,7 +152,7 @@ extern "C" void operation_8c13ad4c(Object *o)
         break;
     case 1:
         *(Vector3 *)&((ObjectData *)o)->f318 = *(Vector3 *)&((ObjectData *)o)->f334->f3c;
-        call_8c37f6f0((void *)(((char *)o + 0x318)), (void *)(((char *)o + 0x3c)));
+        vector_sub_in_place_8c37f6f0((void *)(((char *)o + 0x318)), (void *)(((char *)o + 0x3c)));
         operation_43fb4((void *)o, 0x800, (void *)(((char *)o + 0x318)));
         if (--*(int *)((char *)o + 0x3d4) > 0) {
             goto L_8c13af82;
@@ -176,7 +176,7 @@ extern "C" void operation_8c13ad4c(Object *o)
             return;
         }
         *(Vector3 *)&((ObjectData *)o)->f318 = *(Vector3 *)&((ObjectData *)o)->f334->f324;
-        call_8c37f6f0((void *)(((char *)o + 0x318)), (void *)(((char *)o + 0x3c)));
+        vector_sub_in_place_8c37f6f0((void *)(((char *)o + 0x318)), (void *)(((char *)o + 0x3c)));
         scale_vector_to_length((void *)(((char *)o + 0x318)), 5.0f);
         operation_43fb4((void *)o, 0x800, (void *)(((char *)o + 0x318)));
         call_8c3bdf60((void *)(((char *)o + 0x3c)), (void *)(((char *)o + 0x318)));
@@ -193,7 +193,7 @@ extern "C" void operation_8c13ad4c(Object *o)
         break;
     case 4:
         *(Vector3 *)&((ObjectData *)o)->f318 = *(Vector3 *)&((ObjectData *)o)->f3b8;
-        call_8c37f6f0((void *)(((char *)o + 0x318)), (void *)(((char *)o + 0x3c)));
+        vector_sub_in_place_8c37f6f0((void *)(((char *)o + 0x318)), (void *)(((char *)o + 0x3c)));
         t4 = scale_vector_to_length((void *)(((char *)o + 0x318)), 5.0f);
         operation_43fb4((void *)o, 0x800, (void *)(((char *)o + 0x318)));
         call_8c3bdf60((void *)(((char *)o + 0x3c)), (void *)(((char *)o + 0x318)));
@@ -208,5 +208,5 @@ extern "C" void operation_8c13ad4c(Object *o)
     }
 L_8c13af82:;
     call_8c01c5f0(o);
-    call_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+    minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
 }

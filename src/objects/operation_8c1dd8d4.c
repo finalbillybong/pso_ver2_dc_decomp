@@ -27,7 +27,7 @@ extern void request_resource_release(void *);
 extern void operation_8c199b14(void);
 extern void select_mode4_8c1cc4f8(void);
 extern void select_mode0_8c1cc49c(void);
-extern float call_8c37eb0c(int);
+extern float njSin_8c37eb0c(int);
 void operation_8c1dd8d4(Object *o)
 {
     int v22;
@@ -92,6 +92,6 @@ L_8c1dd9b8:;
     if (++o->f24 > 0x3c) {
         o->f24 = 0;
     }
-    t6 = call_8c37eb0c((int)((int)((float)(o->f24 * 6) * 65536.0f / 360.0f)));
+    t6 = njSin_8c37eb0c((int)((int)((float)(o->f24 * 6) * 65536.0f / 360.0f)));
     o->f2c = (unsigned int)((t6 + 1.0f) * 255.0f / 2.0f);
 }

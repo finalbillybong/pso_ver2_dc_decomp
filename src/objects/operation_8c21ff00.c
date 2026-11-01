@@ -39,7 +39,7 @@ struct S_g8c467180_2c {
 };
 extern void initialize_base_8c0db1d0(void *, int);
 extern void call_8c0dc854(Object *);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void operation_8c199b20(int, int);
 Object *operation_8c21ff00(Object *o, Arg1 *a1, int a2)
 {
@@ -57,7 +57,7 @@ Object *operation_8c21ff00(Object *o, Arg1 *a1, int a2)
     o->f69 = 0;
     o->f6a = 0;
     o->f6c = a2;
-    t1 = call_8c011ecc(0x24);
+    t1 = game_malloc_8c011ecc(0x24);
     if (t1 != 0) {
         operation_8c199b20(t1, (int)((*(S_g8c467180 **)0x8c467180)->f2c->f24c));
     }

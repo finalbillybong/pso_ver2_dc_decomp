@@ -10,10 +10,10 @@ struct Object {
     char unknown3a4[0x184];
     int f528;
 };
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c1ba4b4(Object *o)
 {
-    call_8c05fbf8(0x3002b, 0, 0, 0);
+    play_se_8c05fbf8(0x3002b, 0, 0, 0);
     o->f528 = 0;
     o->f3a0 = 0x62;
 }

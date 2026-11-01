@@ -25,7 +25,7 @@ struct S_g8c467180_2c {
 extern S_g8c467180 *g_8c467180;
 extern int g_8c5064f8;
 extern void word_operation_8c18490c(unsigned int);
-extern int operation_8c010298(int, int, int, int);
+extern int vmu_save_file_timestamped_overwrite_8c010298(int, int, int, int);
 extern void operation_8c22e8e4(void *, int, int);
 void operation_8c22e20c(Object *o)
 {
@@ -35,7 +35,7 @@ void operation_8c22e20c(Object *o)
     word_operation_8c18490c((unsigned int)(o->f54));
     pm4 = o->f5c;
     pm3 = o->f54;
-    t1 = operation_8c010298((pm3), (int)((0x68 + (char *)o)), (o->f58), (pm4));
+    t1 = vmu_save_file_timestamped_overwrite_8c010298((pm3), (int)((0x68 + (char *)o)), (o->f58), (pm4));
     if (!(t1 != 0)) {
         void *pm2;
         pm2 = (void *)o;

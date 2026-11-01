@@ -31,7 +31,7 @@ public:
 typedef struct Arg0_s3f8Data {
 
 } Arg0_s3f8Data;
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c0c874c(Object *o, int a1)
 {
@@ -44,13 +44,13 @@ extern "C" void operation_8c0c874c(Object *o, int a1)
         o->f3e8 &= -9;
         ((Arg0_s3f8 *)((char *)o + 0x3f8))->v2();
         o->f3e8 |= 0x400;
-        call_8c05fbf8(0x30015, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30015, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     case 3:
         if (((o->f3e8 & 8)) == 0) {
             return;
         }
-        call_8c05fbf8(0x30016, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30016, (void *)(((char *)o + 0x3c)), 0, 0);
         operation_8c059ea4((void *)o, 1);
         return;
     case 0:

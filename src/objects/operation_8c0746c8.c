@@ -15,13 +15,13 @@ struct S_vv1 {
     S_vv1_2c *f2c;
     S_vv1_30 *f30;
 };
-extern void call_8c38ae68(void);
+extern void njPushMatrixEx_8c38ae68(void);
 extern void call_8c3843a8(void *);
 extern void call_8c0746c8(void *);
-extern void call_8c38ad10(void);
-extern void call_8c382a40(void *);
+extern void njPopMatrixEx_8c38ad10(void);
+extern void translate_current_matrix_v_8c382a40(void *);
 extern void call_8c37dc90(void *, int);
-extern void call_8c37e390(void *);
+extern void scale_current_matrix_v_8c37e390(void *);
 void operation_8c0746c8(int a0)
 {
     char *v2;
@@ -34,7 +34,7 @@ void operation_8c0746c8(int a0)
     do {
         v2 = (char *)v1->f00;
         if (((int)(v2) & 7) == 7) {
-            call_8c38ae68();
+            njPushMatrixEx_8c38ae68();
             if (*(int *)0x8c4689e8 != 0) {
                 call_8c3843a8((void *)(*(S_g8c4689e8 **)0x8c4689e8));
                 *(int *)0x8c4689e8 += 0x40;
@@ -52,17 +52,17 @@ void operation_8c0746c8(int a0)
             if ((((int)(v2) & 0x10)) == 0) {
                 call_8c0746c8((void *)(v1->f2c));
             }
-            call_8c38ad10();
+            njPopMatrixEx_8c38ad10();
         } else {
-            call_8c38ae68();
+            njPushMatrixEx_8c38ae68();
             if ((((int)(v2) & 1)) == 0) {
-                call_8c382a40((void *)((int)v1 + 8));
+                translate_current_matrix_v_8c382a40((void *)((int)v1 + 8));
             }
             if ((((int)(v2) & 2)) == 0) {
                 call_8c37dc90((void *)((int)v1 + 0x14), (int)((int)(v2) & 0x20));
             }
             if ((((int)(v2) & 4)) == 0) {
-                call_8c37e390((void *)((int)v1 + 0x20));
+                scale_current_matrix_v_8c37e390((void *)((int)v1 + 0x20));
             }
             v23 = (char *)*(int *)0x8c4699fc;
             if (v23 != 0) {
@@ -81,7 +81,7 @@ void operation_8c0746c8(int a0)
             if ((((int)(v2) & 0x10)) == 0) {
                 call_8c0746c8((void *)(v1->f2c));
             }
-            call_8c38ad10();
+            njPopMatrixEx_8c38ad10();
         }
         v1 = (S_vv1 *)v1->f30;
     } while (v1 != 0);

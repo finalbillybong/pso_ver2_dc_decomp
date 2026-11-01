@@ -10,7 +10,7 @@ struct Object {
     char unknown4[0x18];
     int f1c;
 };
-extern int call_8c05fbf8(void *, int, int, int);
+extern int play_se_8c05fbf8(void *, int, int, int);
 void operation_8c21f3f0(Object *o)
 {
     int v1;
@@ -18,7 +18,7 @@ void operation_8c21f3f0(Object *o)
     if (((o->tag & 1)) != 0) {
         v1 = (int)((unsigned int)(unsigned int)(unsigned int)o->f1c >> 2 >> 2 >> 1 & 0xf);
         if (v1 >= 0 && !(v1 >= 9)) {
-            t1 = call_8c05fbf8((void *)(*(S_g8c2e18c0 **)((char *)0x8c2e18c0 + (v1 << 2))), 0, 0, 0);
+            t1 = play_se_8c05fbf8((void *)(*(S_g8c2e18c0 **)((char *)0x8c2e18c0 + (v1 << 2))), 0, 0, 0);
             v1 = (int)t1;
         }
     }

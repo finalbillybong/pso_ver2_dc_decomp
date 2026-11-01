@@ -11,8 +11,8 @@ struct Frame {
 };
 extern char g_8c418280[];
 extern void call_8c3be38c(int, void *, void *);
-extern float call_8c37e480(Frame *);
-extern void call_8c37b630(Frame *);
+extern float njScalor_8c37e480(Frame *);
+extern void njUnitVector_8c37b630(Frame *);
 extern void call_8c37e864(int, float, float, float);
 void operation_8c01476c(int a0)
 {
@@ -24,9 +24,9 @@ void operation_8c01476c(int a0)
     (&frame)->f00 = *(float *)(g_8c418280 + 0xc);
     (&frame)->f04 = *(float *)(g_8c418280 + 0x10);
     (&frame)->f08 = *(float *)(g_8c418280 + 0x14);
-    t1 = call_8c37e480((Frame *)((&frame)));
+    t1 = njScalor_8c37e480((Frame *)((&frame)));
     if (t1 != 0.0f) {
-        call_8c37b630((Frame *)((&frame)));
+        njUnitVector_8c37b630((Frame *)((&frame)));
     }
     *(float *)(g_8c418280 + 0xc) = (&frame)->f00;
     *(float *)(g_8c418280 + 0x10) = (&frame)->f04;

@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 typedef struct Object Object;
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void operation_8c218780(void *, int, int);
 int operation_8c21871c(Object *o)
 {
@@ -23,7 +23,7 @@ int operation_8c21871c(Object *o)
             v2 = (int)(v2 + 1);
         }
         if (v1 != 0) {
-            t1 = call_8c011ecc(0x10);
+            t1 = game_malloc_8c011ecc(0x10);
             if (t1 != 0) {
                 operation_8c218780((void *)t1, (int)(o), v1);
             }

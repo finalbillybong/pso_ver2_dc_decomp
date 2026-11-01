@@ -9,7 +9,7 @@ struct S_vv2 {
     S_vv2_0 *f00;
 };
 extern int call_8c37293e(void *, int);
-int operation_8c0101dc(int a0)
+int vmu_find_drive_with_free_blocks_8c0101dc(int a0)
 {
     int v1;
     S_vv2 *v2;

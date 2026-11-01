@@ -119,7 +119,7 @@ extern void operation_8c1d7490(void *);
 extern int call_8c1d7184(Arg0_3c *);
 extern int operation_8c1d7454(void *);
 extern int call_8c1d7324(Arg0_3c *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern int call_8c19117c(Object *);
 extern void operation_8c230538(void *, int);
 extern int operation_8c19113c(Object *);
@@ -318,7 +318,7 @@ void operation_8c19084c(Object *o)
     case 11:
         t17 = call_8c1d7324((Arg0_3c *)(o->f3c));
         if (t17 != 0) {
-            call_8c05fbf8(0x2000f, 0, 0, 0);
+            play_se_8c05fbf8(0x2000f, 0, 0, 0);
             o->f24 = 0;
             o->f20 = 0xc;
         } else {

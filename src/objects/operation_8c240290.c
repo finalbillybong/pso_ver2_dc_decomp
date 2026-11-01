@@ -10,7 +10,7 @@ struct Object {
     Arg0_234 *f234;
 };
 extern void operation_8c074ce4(void);
-extern void call_8c37df90(int, void *);
+extern void njRotateY_8c37df90(int, void *);
 void operation_8c240290(Object *o)
 {
     if (*(int *)0x8c4689f0 != 1) {
@@ -19,9 +19,9 @@ void operation_8c240290(Object *o)
         }
     } else {
         operation_8c074ce4();
-        call_8c37df90(0, (void *)(o->f234));
+        njRotateY_8c37df90(0, (void *)(o->f234));
         return;
     }
     operation_8c074ce4();
-    call_8c37df90(0, (void *)(-(int)(o->f234)));
+    njRotateY_8c37df90(0, (void *)(-(int)(o->f234)));
 }

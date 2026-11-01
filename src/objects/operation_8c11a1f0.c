@@ -10,11 +10,11 @@ struct Object {
     Arg0_88 *f88;
 };
 extern char g_8c3107f8[];
-extern void call_8c38c5b6(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void njPrintColor_8c38c5b6(int);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c11a1f0(Object *o)
 {
-    call_8c38c5b6(-0xff0100);
-    call_8c38cf80(0x13001e, (void *)((g_8c3107f8 + 0x7d)), (void *)(o->f88));
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xff0100);
+    debug_print_at_8c38cf80(0x13001e, (void *)((g_8c3107f8 + 0x7d)), (void *)(o->f88));
+    njPrintColor_8c38c5b6(-0xf0f10);
 }

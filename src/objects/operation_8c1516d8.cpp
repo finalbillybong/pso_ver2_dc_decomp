@@ -61,10 +61,10 @@ extern int g_8c575570;
 extern S_L8c3159fc g_8c3159fc;
 extern "C" int call_8c18e768(void *, int);
 extern "C" void call_8c3827d8(void *);
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c37df90(int, void *);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3a944a(void *);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c1516d8(Object *o)
 {
     int v1;
@@ -105,11 +105,11 @@ extern "C" void operation_8c1516d8(Object *o)
             }
             g_8c315a2c = g_8c4da6d4->f00 + v29 * 0xc;
             call_8c3827d8((void *)((void *)&g_8c315a2c));
-            call_8c38ae68();
+            njPushMatrixEx_8c38ae68();
             g_8c575570 &= -0x401;
-            call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+            njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
             call_8c3a944a((void *)(((ObjectData *)o)->f38));
-            call_8c38ad10();
+            njPopMatrixEx_8c38ad10();
         }
     }
 }

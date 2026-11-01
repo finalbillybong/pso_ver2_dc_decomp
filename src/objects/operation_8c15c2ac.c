@@ -26,7 +26,7 @@ extern int g_8c4db134;
 extern void call_8c220b80(int, int);
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c19c15c(void *, int, int, int);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 void operation_8c15c2ac(Object *o)
 {
     S_c8c122700 *t1;
@@ -44,6 +44,6 @@ void operation_8c15c2ac(Object *o)
     }
     t1->f398 = (void *)0x8c15c764;
     t1->f39c = (void *)0x8c15c780;
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
     o->f24 = 0x11;
 }

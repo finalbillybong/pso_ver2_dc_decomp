@@ -93,13 +93,13 @@ extern S_L8c327d80 g_8c327d80;
 extern "C" char gc_8c327d80[];
 extern "C" void set_fields_8c1bbd54(void *);
 extern "C" int call_8c18e6fc(void *);
-extern "C" float call_8c37eb0c(void *);
+extern "C" float njSin_8c37eb0c(void *);
 extern "C" void call_8c0a7608(void *, Frame *);
 extern "C" void call_8c1bbd80(Object *);
 extern "C" void operation_8c1ad004(void *, int, int);
 extern "C" void refresh_follow_effect_8c052180(void *);
 extern "C" void call_8c027090(Object *);
-extern "C" void call_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void operation_8c1bb5bc(Object *o)
 {
     Frame frame;
@@ -145,7 +145,7 @@ extern "C" void operation_8c1bb5bc(Object *o)
     (((PmfObj *)(o))->*(*(PMF_0 *)(&(&frame)->f0c)))();
     if (o->f390 != 1 && o->f390 != 2) {
     } else {
-        t2 = call_8c37eb0c((void *)(o->f3d8));
+        t2 = njSin_8c37eb0c((void *)(o->f3d8));
         o->f3c.f04 += t2 * 0.1f;
         o->f3d8 = (Arg0_3d8 *)((int)o->f3d8 + o->f3dc);
     }
@@ -194,11 +194,11 @@ L_8c1bb806:;
             o->f3a0->f18 |= 1;
             refresh_follow_effect_8c052180((void *)o);
             call_8c027090(o);
-            call_8c102cd0((void *)(&o->f324), -0x5db4, 1, 0);
+            minimap_add_marker_8c102cd0((void *)(&o->f324), -0x5db4, 1, 0);
         } else {
             o->f3a0->f18 = (unsigned int)o->f3a0->f18 >> 1 << 1;
             if ((o->f3d4 & 1) == (o->f20 & 1)) {
-                call_8c102cd0((void *)(&o->f324), -0x5db4, 1, 0);
+                minimap_add_marker_8c102cd0((void *)(&o->f324), -0x5db4, 1, 0);
             }
         }
     }

@@ -18,7 +18,7 @@ struct Object {
 };
 extern int call_8c1abc70(Object *);
 extern void create_effect_777c(void *, int);
-extern void call_8c37f6f0(Frame *, void *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
 void operation_8c1c5650(Object *o)
 {
     Frame frame;
@@ -33,7 +33,7 @@ void operation_8c1c5650(Object *o)
     v1 = (int)0;
     while (v1 != o->f84) {
         create_effect_777c((void *)(&frame), 0x9c);
-        call_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x88)));
+        vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x88)));
         v1 = (int)(v1 + 1);
     }
 }

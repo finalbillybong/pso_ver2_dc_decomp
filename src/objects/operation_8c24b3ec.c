@@ -11,7 +11,7 @@ struct Object {
     int f108;
 };
 extern int operation_8c0eea7c(int, float);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c24b3ec(Object *o)
 {
     int t1;
@@ -21,9 +21,9 @@ void operation_8c24b3ec(Object *o)
             return;
         }
         o->fe4 = 3;
-        call_8c05fbf8(0x4000b, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x4000b, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     }
     o->fe4 = 3;
-    call_8c05fbf8(0x4000b, (void *)(((char *)o + 0x3c)), 0, 0);
+    play_se_8c05fbf8(0x4000b, (void *)(((char *)o + 0x3c)), 0, 0);
 }

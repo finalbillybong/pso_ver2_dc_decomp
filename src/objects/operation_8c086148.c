@@ -27,13 +27,13 @@ struct Arg2 {
     Vector3 f24;
 };
 extern int g_8c2ffb10;
-extern void call_8c01d1ec(Object *);
+extern void TObjectShared_ctor_8c01d1ec(Object *);
 extern void operation_8c0869d4(void *);
 Object *operation_8c086148(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     (void)home;
-    call_8c01d1ec(o);
+    TObjectShared_ctor_8c01d1ec(o);
     o->dispatch = (void *)0x8c264ed4;
     o->tag = (int)(g_8c2ffb10);
     o->size = 0xc0;

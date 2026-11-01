@@ -8,20 +8,20 @@ typedef struct S_g8c4d97e0 S_g8c4d97e0;
 extern S_g8c44be84 *g_8c44be84;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void call_8c3806f6(int, int, int);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c08aefc(int, void *, void *, void *);
 extern void operation_8c01c250(int);
-extern void call_8c380516(void);
+extern void wait_vsync_and_flip_8c380516(void);
 void operation_8c013688(void)
 {
     int t1;
     call_8c3806f6(0, 0, 0);
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x6c);
     if (t1 != 0) {
         call_8c08aefc(t1, g_8c44be84, (void *)((void *)0x8c2e2e60), (void *)((void *)0x8c01367c));
     }
     operation_8c01c250(2);
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

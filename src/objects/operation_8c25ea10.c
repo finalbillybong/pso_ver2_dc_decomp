@@ -16,11 +16,11 @@ struct Object {
 extern char g_8c340638[];
 extern void operation_8c25eb44(void);
 extern int operation_8c248434(void);
-extern void call_8c1005bc(void *);
+extern void game_ADXT_StartFname_wrapper_8c1005bc(void *);
 extern void operation_8c25ec50(Object *);
 extern void call_8c25ed88(Object *);
 extern void call_8c25ee08(Object *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c25eb84(Object *);
 extern void operation_8c25ebe0(Object *);
 extern void call_8c25ecd4(Object *);
@@ -34,14 +34,14 @@ void operation_8c25ea10(Object *o)
             goto L_8c25ea50;
         }
     } else {
-        call_8c1005bc((void *)((g_8c340638 + 0x13)));
+        game_ADXT_StartFname_wrapper_8c1005bc((void *)((g_8c340638 + 0x13)));
         operation_8c25ec50(o);
         call_8c25ed88(o);
         call_8c25ee08(o);
         o->f04 |= 1;
         return;
 L_8c25ea50:;
-        call_8c05fbf8(0x50012, 0, 0, 0);
+        play_se_8c05fbf8(0x50012, 0, 0, 0);
         operation_8c25ec50(o);
         operation_8c25eb84(o);
         call_8c25ee08(o);

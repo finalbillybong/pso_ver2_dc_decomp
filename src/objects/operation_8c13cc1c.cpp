@@ -127,7 +127,7 @@ extern "C" void set_effect_bits(void *, unsigned short);
 extern "C" void call_8c0a7608(void *, void *);
 extern "C" int operation_8c13d420(void *);
 extern "C" void call_8c027090(Object *);
-extern "C" void call_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void operation_8c13cc1c(Object *o)
 {
     S_vv3 *v3;
@@ -210,5 +210,5 @@ extern "C" void operation_8c13cc1c(Object *o)
     }
 L_8c13cdae:;
     call_8c027090(o);
-    call_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+    minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
 }

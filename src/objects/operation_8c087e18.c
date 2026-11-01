@@ -13,7 +13,7 @@ struct Object {
     Arg0_74 *f74;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c087e18(Object *o, int a1)
@@ -21,7 +21,7 @@ Object *operation_8c087e18(Object *o, int a1)
     if (o != 0) {
         o->dispatch = (void *)0x8c264f98;
         if (o->f74 != 0) {
-            call_8c011ec0((void *)(o->f74));
+            game_free_8c011ec0((void *)(o->f74));
             o->f74 = (Arg0_74 *)0;
         }
         TObject_dtor_8c03311c((void *)o, (short)0);

@@ -11,7 +11,7 @@ typedef char check_setting_seventh[(unsigned long)&((Settings *)0)->seventh==24?
 typedef char check_setting_eighth[(unsigned long)&((Settings *)0)->eighth==28?1:-1];
 extern void call_8c01c2b0(void);
 extern void call_8c172be4(void);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 extern void call_8c01c1c4(void);
 extern void call_8c104e8c(void);
 extern void call_8c1a18b8(void);
@@ -25,7 +25,7 @@ extern void call_8c189d60(void);
 extern void call_8c017ba8(void);
 extern void call_8c13f3f0(void);
 extern void call_8c017bd4(void);
-extern void call_8c380516(void);
+extern void wait_vsync_and_flip_8c380516(void);
 extern void begin_at(int,int,int);
 extern void set_mode_at(int);
 extern void set_phase_at(int);
@@ -60,7 +60,7 @@ extern char configuration[];
 extern char global_storage[];
 void initialize_scene_transition(void) {
  unsigned int value;TimeView stamp;void *small;
- begin_at(0,0,0);call_8c01c2b0();call_8c172be4();call_8c01d9dc();call_8c01c1c4();set_mode_at(2);set_phase_at(16);call_8c104e8c();call_8c1a18b8();call_8c0405b4();call_8c189c94();load_at(load_data,264);call_8c1a9940();configure_at(15,configuration);call_8c0ea6d8();
+ begin_at(0,0,0);call_8c01c2b0();call_8c172be4();reset_controller_state_8c01d9dc();call_8c01c1c4();set_mode_at(2);set_phase_at(16);call_8c104e8c();call_8c1a18b8();call_8c0405b4();call_8c189c94();load_at(load_data,264);call_8c1a9940();configure_at(15,configuration);call_8c0ea6d8();
  if(!existing) {void *p=heap_alloc_8c122700(heap,292);if(p) initialize_large_at(p,parent);}
  if((selected=lookup_at())!=0) {if(state_at(selected)==-1) request_game_mode_8c01c1a4(0);else {call_8c180ae8();set_phase_at(2);request_game_mode_8c01c1a4(27);}call_8c0ea724();call_8c189d60();}
  else {state_at(selected);if(!time_ready_at()) {time_read_at(&stamp);time_convert_at(&stamp,&value);time_set_at(value);}
@@ -70,5 +70,5 @@ void initialize_scene_transition(void) {
  settings.second=15;settings.third=16;settings.fourth=16;settings.fifth=0;settings.sixth=0;settings.seventh=0;settings.first=-1;settings.eighth=0;settings.fourth=0;setting_mode=15;setting_state=0;
  call_8c0ea724();apply_settings_at(&settings);call_8c189d60();call_8c017bd4();prepare_global_at(global_storage);finish_small_at(small);
  }
- reset_first=0;reset_second=0;reset_third=0;call_8c380516();
+ reset_first=0;reset_second=0;reset_third=0;wait_vsync_and_flip_8c380516();
 }

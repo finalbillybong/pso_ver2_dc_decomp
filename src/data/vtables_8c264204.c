@@ -9,7 +9,7 @@ extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void destroy_object_8c07d168(void);
 extern void TItem_update_8c073578(void);
-extern void operation_8c073678(void);
+extern void TItem_render_8c073678(void);
 extern void operation_8c07f068(void);
 extern void operation_8c0104fc(void);
 extern void fn_8c01d694(void);
@@ -82,7 +82,7 @@ VirtualFunction const vt_8c264220[50] = {
     0,
     destroy_object_8c07d168,
     TItem_update_8c073578,
-    operation_8c073678,
+    TItem_render_8c073678,
     operation_8c07f068,
     hierarchy_output,
     operation_8c0104fc,

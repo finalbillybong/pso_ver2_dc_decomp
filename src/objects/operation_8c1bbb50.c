@@ -39,10 +39,10 @@ struct S_c8c021ef8 {
     Vector3 f3c;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-extern float call_8c37eb0c(int);
-extern float call_8c38c154(int);
-extern float call_8c37e480(void *);
-extern void call_8c37b630(void *);
+extern float njSin_8c37eb0c(int);
+extern float njCos_8c38c154(int);
+extern float njScalor_8c37e480(void *);
+extern void njUnitVector_8c37b630(void *);
 extern void call_8c3bdf60(void *, void *);
 void operation_8c1bbb50(Object *o)
 {
@@ -60,9 +60,9 @@ void operation_8c1bbb50(Object *o)
     }
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&t1->f3c;
     v1 = (int)(o->f20 << 0xd);
-    t2 = call_8c37eb0c(v1);
+    t2 = njSin_8c37eb0c(v1);
     (&frame)->f00.f00 += t2 * 8.0f;
-    t3 = call_8c38c154(v1);
+    t3 = njCos_8c38c154(v1);
     (&frame)->f00.f08 += t3 * 8.0f;
     if (o->f3c < (&frame)->f00.f00) {
         o->f3a8 += 0.0291666649f;
@@ -74,10 +74,10 @@ void operation_8c1bbb50(Object *o)
     } else {
         o->f3b0 -= 0.0291666649f;
     }
-    t4 = call_8c37e480((void *)(&o->f3a8));
+    t4 = njScalor_8c37e480((void *)(&o->f3a8));
     o->f3b4 = t4;
     if (o->f3b8 < o->f3b4) {
-        call_8c37b630((void *)(&o->f3a8));
+        njUnitVector_8c37b630((void *)(&o->f3a8));
         o->f3a8 *= o->f3b8;
         o->f3b0 *= o->f3b8;
         o->f3b4 = o->f3b8;

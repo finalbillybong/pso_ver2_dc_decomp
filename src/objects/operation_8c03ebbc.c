@@ -23,7 +23,7 @@ struct S_x64688 {
 extern char g_8c2ef0e4[];
 extern void call_8c03ee90(Frame *, int, void *);
 extern int call_8c1a8310(Frame *, void *);
-extern void operation_8c03ef80(void *, ...);
+extern void debug_error_stub_8c03ef80(void *, ...);
 extern void call_8c3877a8(void *, void *);
 void operation_8c03ebbc(Object *o, int a1, int a2)
 {
@@ -34,7 +34,7 @@ void operation_8c03ebbc(Object *o, int a1, int a2)
     call_8c03ee90((Frame *)((&frame)), a1, (void *)((g_8c2ef0e4 + 0x215)));
     t1 = call_8c1a8310((Frame *)((&frame)), (void *)(*(S_g8c462ce4 **)0x8c462ce4));
     if (t1 > 0x40000) {
-        operation_8c03ef80((void *)((g_8c2ef0e4 + 0x33e)), (Frame *)((&frame)));
+        debug_error_stub_8c03ef80((void *)((g_8c2ef0e4 + 0x33e)), (Frame *)((&frame)));
         return;
     }
     if (t1 > 0) {
@@ -46,6 +46,6 @@ void operation_8c03ebbc(Object *o, int a1, int a2)
     }
     *(int *)((char *)((char *)o->f42c + 0x0) + (a2 << 4)) |= 2;
     if (((o->tag & 4)) == 0) {
-        operation_8c03ef80((void *)((g_8c2ef0e4 + 0x35c)), (Frame *)((&frame)));
+        debug_error_stub_8c03ef80((void *)((g_8c2ef0e4 + 0x35c)), (Frame *)((&frame)));
     }
 }

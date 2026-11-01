@@ -50,7 +50,7 @@ struct Arg0_dc {
 };
 extern S_g8c46f3a4 *g_8c46f3a4;
 extern S_g8c46f3ac *g_8c46f3ac;
-extern void call_8c37f6f0(Frame *, void *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern float call_8c130334(float, float);
 extern void call_8c0121a0(Object *, int, void *, int);
 void operation_8c0bdf2c(Object *o)
@@ -67,7 +67,7 @@ void operation_8c0bdf2c(Object *o)
         }
     }
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f334->f324;
-    call_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x324)));
+    vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x324)));
     t1 = call_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
     a = (int)(t1 * 65536.0f / 6.28318405f);
     o->f30a = 4;

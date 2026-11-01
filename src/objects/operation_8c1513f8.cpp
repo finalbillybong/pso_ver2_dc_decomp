@@ -121,7 +121,7 @@ extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c1516d4(Object *);
 extern "C" void operation_8c151678(void *);
 extern "C" void operation_8c027090(int);
-extern "C" void operation_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" int call_8c12b944(void);
 extern "C" void call_8c0344f0(void *, int, int, int);
 extern "C" int call_8c18e768(int, int);
@@ -170,7 +170,7 @@ extern "C" void operation_8c1513f8(Object *o)
     if (((((ObjectData *)o)->f34 & v14)) == 0) {
         *(Vector3 *)&((ObjectData *)o)->f78 = *(Vector3 *)&((ObjectData *)o)->f324;
         operation_8c027090((int)o);
-        operation_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+        minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
     }
     if (((((ObjectData *)o)->f34 & 0x800)) == 0 && !((short)-- *(short *)((char *)o + 0x3ac) > 0)) {
         ((ObjectData *)o)->f3ac = 3;

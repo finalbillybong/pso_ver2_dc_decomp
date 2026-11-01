@@ -39,7 +39,7 @@ struct Arg0_3c0 {
 extern void refresh_follow_effect_8c0129f4(void *);
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
 extern void operation_8c09e6d0(void *);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c01c5f0(Object *);
 extern void operation_8c0fc020(void *);
 extern void operation_8c1083f8(int);
@@ -76,7 +76,7 @@ void operation_8c12586c(Object *o)
             o->f31c = o->f3d0 / 11.666667f;
             o->f398 = 2;
         }
-        call_8c05fbf8(0x30037, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30037, (void *)(((char *)o + 0x3c)), 0, 0);
         return;
     case 1:
         call_8c01c5f0(o);

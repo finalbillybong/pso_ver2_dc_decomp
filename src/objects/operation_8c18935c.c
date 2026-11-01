@@ -20,7 +20,7 @@ extern int operation_8c1cdc80(void *);
 extern void operation_8c1d5dfc(void *, int);
 extern void call_8c189990(Object *, int);
 extern int call_8c106798(Object *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern int call_8c106760(Object *);
 extern int call_8c189294(Object *);
 extern void call_8c220b80(int, int);
@@ -43,11 +43,11 @@ void operation_8c18935c(Object *o)
     t2 = call_8c106798(o);
     if (t2 != 0) {
         o->f24 = 3;
-        call_8c05fbf8(0x50001, 0, 0, 0);
+        play_se_8c05fbf8(0x50001, 0, 0, 0);
     } else {
         t3 = call_8c106760(o);
         if (t3 != 0) {
-            call_8c05fbf8(0x50001, 0, 0, 0);
+            play_se_8c05fbf8(0x50001, 0, 0, 0);
             t4 = call_8c189294(o);
             switch (t4) {
             case 0:

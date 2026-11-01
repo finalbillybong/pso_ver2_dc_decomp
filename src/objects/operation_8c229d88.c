@@ -39,7 +39,7 @@ extern Vector3 g_8c338084;
 extern S_L8c338078 g_8c338078;
 extern int create_effect_777c(void *, int);
 extern void set_effect_bits(void *, unsigned short);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c191504(int);
 extern int create_effect_769c(void *, int);
 extern void call_8c0a7608(void *, int);
@@ -76,11 +76,11 @@ void operation_8c229d88(Object *o)
         if (t4 != 0) {
             set_effect_bits((void *)t4, (unsigned short)0x40);
         }
-        call_8c05fbf8(0x30009, (void *)(&o->fd8), 0, 1);
+        play_se_8c05fbf8(0x30009, (void *)(&o->fd8), 0, 1);
         operation_8c191504(2);
     }
     if (o->fe8 == 0x72) {
-        call_8c05fbf8(0x30027, (void *)(&o->fd8), 0, 1);
+        play_se_8c05fbf8(0x30027, (void *)(&o->fd8), 0, 1);
     }
     if (o->fe8 >= 0xaa) {
         v29 = (int)0x147;

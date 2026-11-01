@@ -15,7 +15,7 @@ struct S_L8c2f574c {
 extern S_L8c2f574c g_8c2f574c;
 extern char g_8c2ec0a0[];
 extern int operation_8c104da8(void);
-extern int call_8c34ca46(void *, void *, void *, void *);
+extern int ADXF_LoadPartition_8c34ca46(void *, void *, void *, void *);
 void operation_8c034a70(void)
 {
     int v1;
@@ -38,7 +38,7 @@ void operation_8c034a70(void)
             }
             v2 = (int)(v1 << 2);
             v3 = (int)(v1 << 4);
-            t3 = call_8c34ca46((void *)(*(S_g8c2f574c **)((char *)&g_8c2f574c + (v3))), (void *)(*(S_g8c2f5754 **)((char *)&g_8c2f574c.f08 + (v3))), (void *)(*(S_g8c2ebff8 **)((char *)0x8c2ebff8 + (v2))), (void *)(*(S_g8c284750 **)((char *)0x8c284750 + (v2))));
+            t3 = ADXF_LoadPartition_8c34ca46((void *)(*(S_g8c2f574c **)((char *)&g_8c2f574c + (v3))), (void *)(*(S_g8c2f5754 **)((char *)&g_8c2f574c.f08 + (v3))), (void *)(*(S_g8c2ebff8 **)((char *)0x8c2ebff8 + (v2))), (void *)(*(S_g8c284750 **)((char *)0x8c284750 + (v2))));
             if (t3 != 0) {
                 t4 = operation_8c104da8();
                 if (t4 == 0) {
@@ -50,7 +50,7 @@ void operation_8c034a70(void)
         }
         t5 = operation_8c104da8();
         if (t5 == 0) {
-            t6 = call_8c34ca46((void *)0xd6, (void *)((g_8c2ec0a0 + 0x46e)), (void *)((void *)0x8c461854), (void *)0x118);
+            t6 = ADXF_LoadPartition_8c34ca46((void *)0xd6, (void *)((g_8c2ec0a0 + 0x46e)), (void *)((void *)0x8c461854), (void *)0x118);
             if (t6 != 0) {
                 t7 = operation_8c104da8();
                 if (t7 == 0) {

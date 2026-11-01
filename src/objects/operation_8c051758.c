@@ -9,7 +9,7 @@ struct Object {
     short ff0;
 };
 extern int check_range_8c01cf68(void *, float);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c051758(Object *o)
 {
     int t1;
@@ -22,6 +22,6 @@ void operation_8c051758(Object *o)
                 return;
             }
         }
-        call_8c05fbf8(0x3000c, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x3000c, (void *)(((char *)o + 0x3c)), 0, 0);
     }
 }

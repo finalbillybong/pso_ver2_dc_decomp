@@ -12,7 +12,7 @@ struct Object {
 };
 extern int call_8c0eea7c(Object *, float);
 extern void operation_8c05428c(void *, int, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c132c18(Object *o)
 {
     int v1;
@@ -26,5 +26,5 @@ void operation_8c132c18(Object *o)
     }
     o->fe4 = 3;
     operation_8c05428c((void *)o, 0, 0x10);
-    call_8c05fbf8(0x40007, (void *)(((char *)o + 0x3c)), 0, 0);
+    play_se_8c05fbf8(0x40007, (void *)(((char *)o + 0x3c)), 0, 0);
 }

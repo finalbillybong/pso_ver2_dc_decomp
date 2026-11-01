@@ -12,8 +12,8 @@ extern void run_current_resource_start_8c03c3ac(void);
 extern void operation_8c013fc8(void);
 extern void operation_8c122ba0(void);
 extern void create_effect_node_8c080310(void);
-extern void operation_8c1a81a0(void);
-extern void call_8c100850(int);
+extern void TGStream_close_8c1a81a0(void);
+extern void bgm_play_area_8c100850(int);
 void operation_8c09cfb4(void)
 {
     call_8c05f87c((void *)((void *)g_8c301f64));
@@ -24,6 +24,6 @@ void operation_8c09cfb4(void)
     operation_8c013fc8();
     operation_8c122ba0();
     create_effect_node_8c080310();
-    operation_8c1a81a0();
-    call_8c100850(0);
+    TGStream_close_8c1a81a0();
+    bgm_play_area_8c100850(0);
 }

@@ -22,7 +22,7 @@ public:
 typedef struct S_vv1_0Data {
 
 } S_vv1_0Data;
-extern "C" void call_8c18de08(void *);
+extern "C" void operator_delete_8c18de08(void *);
 extern "C" void operation_8c0e1bbc(Object *o)
 {
     char *v2;
@@ -36,7 +36,7 @@ extern "C" void operation_8c0e1bbc(Object *o)
             }
             v1--;
         }
-        call_8c18de08((void *)(o->f04));
+        operator_delete_8c18de08((void *)(o->f04));
         o->tag = 0;
         o->f04 = (Arg0_4 *)0;
     }

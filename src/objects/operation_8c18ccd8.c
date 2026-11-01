@@ -25,7 +25,7 @@ struct Frame {
 };
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_base_8c0db1d0(void *, int);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c199e48(int, void *, int, int);
 S_c8c122700 *operation_8c18ccd8(int a0, int a1, int a2)
 {
@@ -42,7 +42,7 @@ S_c8c122700 *operation_8c18ccd8(int a0, int a1, int a2)
         *(Block8 *)&(&frame)->f04 = *(Block8 *)&*(Block8 *)0x8c31a044;
         self->f00 = (int)(*(int *)0x8c31a020);
         self->f1e = 0x70;
-        t2 = call_8c011ecc(0x24);
+        t2 = game_malloc_8c011ecc(0x24);
         if (t2 != 0) {
             call_8c199e48(t2, (void *)(&(&frame)->f04), a0, 0);
         }

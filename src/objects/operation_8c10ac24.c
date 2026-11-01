@@ -20,7 +20,7 @@ struct Arg0_28_184 {
     int f20;
 };
 extern void call_8c220b80(int, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void call_8c027890(Arg0_28 *);
 extern void call_8c027954(Arg0_28 *);
 extern void apply_setting_8c02c820(void *);
@@ -33,7 +33,7 @@ void operation_8c10ac24(Object *o)
         o->f24 = 0xa;
         return;
     }
-    call_8c05fbf8(0x40008, 0, 0, 0);
+    play_se_8c05fbf8(0x40008, 0, 0, 0);
     call_8c027890((Arg0_28 *)(o->f28));
     call_8c027954((Arg0_28 *)(o->f28));
     apply_setting_8c02c820((void *)(o->f28));

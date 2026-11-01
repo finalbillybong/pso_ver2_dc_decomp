@@ -29,7 +29,7 @@ struct S_vv4 {
 };
 extern int g_8c467874;
 extern int g_8c467878;
-extern void call_8c37f6f0(Frame *, int);
+extern void vector_sub_in_place_8c37f6f0(Frame *, int);
 unsigned short operation_8c04a638(int a0, S_vv4 *a1, float f0)
 {
     Frame frame;
@@ -61,7 +61,7 @@ unsigned short operation_8c04a638(int a0, S_vv4 *a1, float f0)
             out = (Vector3 *)&(&frame)->f0c;
             if (v6 != 0) {
                 *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&v6->f3c;
-                call_8c37f6f0((Frame *)((&frame)), (int)(a0 + 0x3c));
+                vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (int)(a0 + 0x3c));
                 (&frame)->f00.f04 = 0.01f;
                 v18 = (&frame)->f00.f00 * (&frame)->f00.f00 + (&frame)->f00.f08 * (&frame)->f00.f08;
                 if (out != 0) {

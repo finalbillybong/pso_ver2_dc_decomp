@@ -21,7 +21,7 @@ extern void operation_8c04c2f0(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c08aefc(int, void *, void *, void *);
 extern void operation_8c0e991c();
-Object *operation_8c0e97b4(Object *o)
+Object *create_opening_movie_task_8c0e97b4(Object *o)
 {
     Object **home = &o;
     int t1;

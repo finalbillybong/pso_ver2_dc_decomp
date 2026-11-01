@@ -36,7 +36,7 @@ extern int g_8c4db130;
 extern int g_8c4db134;
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_selection_child(void *, void *, int, int, int);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 extern void call_8c220b80(int, int);
 void operation_8c15c358(Object *o)
 {
@@ -62,7 +62,7 @@ void operation_8c15c358(Object *o)
                 }
                 o->f30 = (int)(t1);
             }
-            call_8c01d9dc();
+            reset_controller_state_8c01d9dc();
             call_8c220b80(0x33, 1);
             o->f24 = 5;
             return;

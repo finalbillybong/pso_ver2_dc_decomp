@@ -12,7 +12,7 @@ extern int object_blocked(void *);
 extern int create_effect(void *, int, int);
 extern void bind_id(void *, unsigned short);
 extern int actor_matches_current_mode(void *);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c02af54(Object *o)
 {
     int t1;
@@ -27,6 +27,6 @@ void operation_8c02af54(Object *o)
     }
     t3 = actor_matches_current_mode((void *)o);
     if (t3 != 0) {
-        call_8c05fbf8(0x40008, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x40008, (void *)(((char *)o + 0x3c)), 0, 0);
     }
 }

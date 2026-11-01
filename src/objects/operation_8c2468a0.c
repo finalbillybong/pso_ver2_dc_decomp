@@ -24,8 +24,8 @@ struct S_c8c021ef8 {
 };
 extern int operation_8c246eb0(void);
 extern S_c8c021ef8 *lookup_low_id(int);
-extern void call_8c37f6f0(Frame *, void *);
-extern float call_8c37e480(Frame *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
+extern float njScalor_8c37e480(Frame *);
 int operation_8c2468a0(Object *o)
 {
     Frame frame;
@@ -52,9 +52,9 @@ int operation_8c2468a0(Object *o)
         t2 = lookup_low_id(v2);
         if (t2 != 0) {
             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&t2->f3c;
-            call_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
+            vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
             (&frame)->f00.f04 = 0.0f;
-            t3 = call_8c37e480((Frame *)((&frame)));
+            t3 = njScalor_8c37e480((Frame *)((&frame)));
             if (v1 > t3) {
                 v1 = (float)t3;
             }

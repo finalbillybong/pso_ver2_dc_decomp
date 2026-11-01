@@ -11,7 +11,7 @@ struct Object {
     short f3a8;
 };
 extern short g_8c4d9b74;
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c151adc(Object *);
 extern void emit_effects_8c151b40(void *);
 extern int call_8c18e8a0(int, int);
@@ -37,7 +37,7 @@ void operation_8c151938(Object *o)
             }
             return;
         }
-        call_8c05fbf8(0x30004, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30004, (void *)(((char *)o + 0x3c)), 0, 0);
         call_8c151adc(o);
         emit_effects_8c151b40((void *)o);
         *(char *)((char *)0x8c4da6ec + (o->f3a8)) = 1;

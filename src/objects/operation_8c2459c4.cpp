@@ -36,13 +36,13 @@ typedef struct ObjectData {
     float f3b8;
 } ObjectData;
 extern "C" void call_8c245a70(Object *);
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c382a40(void *);
-extern "C" void call_8c37df90(int, void *);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void translate_current_matrix_v_8c382a40(void *);
+extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3827d8(void *);
 extern "C" void call_8c3a944a(void *);
 extern "C" void call_8c01cc90(Object *);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void call_8c245a7c(Object *);
 extern "C" void operation_8c2459c4(Object *o)
 {
@@ -50,16 +50,16 @@ extern "C" void operation_8c2459c4(Object *o)
     t1 = o->v11(((ObjectData *)o)->f3b4, ((ObjectData *)o)->f3b8);
     if (t1 != 0 && ((ObjectData *)o)->f3ac == 1) {
         call_8c245a70(o);
-        call_8c38ae68();
-        call_8c382a40((void *)(((char *)o + 0x3c)));
-        call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+        njPushMatrixEx_8c38ae68();
+        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
+        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
         call_8c3827d8((void *)(((ObjectData *)o)->f28));
         if (((ObjectData *)o)->f3b0 != 0) {
             call_8c3a944a((void *)(((ObjectData *)o)->f38));
         } else {
             call_8c01cc90(o);
         }
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         call_8c245a7c(o);
     }
 }

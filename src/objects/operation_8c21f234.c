@@ -14,7 +14,7 @@ extern S_g8c467180 *g_8c467180;
 extern int g_8c4db9e4;
 extern int operation_8c104d70(int);
 extern void call_8c3889a4(int, int, int);
-extern void call_8c011ec0(int);
+extern void game_free_8c011ec0(int);
 extern int get_field_8c21f338(int);
 extern void operation_8c21f66c(void *, int);
 extern void call_8c21f2d4(int);
@@ -28,7 +28,7 @@ void load_symbol_chat_data_8c21f234(void)
     v2 = (int)(g_8c4db9e4 + 0x86c);
     t1 = operation_8c104d70((int)((void *)0x8c3369b0));
     call_8c3889a4(v2, t1, 0x420);
-    call_8c011ec0(t1);
+    game_free_8c011ec0(t1);
     v1 = (int)0x123;
     v2 = (int)0;
     while (6 > v2) {

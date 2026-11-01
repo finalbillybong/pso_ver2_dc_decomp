@@ -34,8 +34,8 @@ typedef struct S_vv6Data {
     char unknown6c[0x60];
     float fcc;
 } S_vv6Data;
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c07d4e0(Object *o)
 {
     S_vv6 *v6;
@@ -48,7 +48,7 @@ extern "C" void operation_8c07d4e0(Object *o)
     float v8;
     int v9;
     if (o->f13c != 0 && ((o->f34 & 0x8000000)) == 0 && ((o->fec & 0x40)) == 0) {
-        call_8c38ae68();
+        njPushMatrixEx_8c38ae68();
         v1 = (int)0x13c;
         v9 = (int)0x510;
         v2 = (int)0x1f4;
@@ -72,6 +72,6 @@ extern "C" void operation_8c07d4e0(Object *o)
             }
             v4 = (int)(v4 + 1);
         }
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
     }
 }

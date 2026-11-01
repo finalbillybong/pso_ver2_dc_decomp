@@ -34,7 +34,7 @@ struct S_vv6 {
     char unknown0[0x394];
     int f394;
 };
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c15e880(void *);
 void operation_8c11cf18(Object *o)
 {
@@ -46,7 +46,7 @@ void operation_8c11cf18(Object *o)
     o->f3f8 = 0;
     o->f3a4 = 0x384;
     o->f414 = 1;
-    call_8c05fbf8(0x3002e, (void *)(((char *)o + 0x3c)), 0, 0);
+    play_se_8c05fbf8(0x3002e, (void *)(((char *)o + 0x3c)), 0, 0);
     v3 = (int)1;
     v1 = (S_vv1 *)o->f400;
     if (v1->f394 != 7 && v1->f394 != 8) {

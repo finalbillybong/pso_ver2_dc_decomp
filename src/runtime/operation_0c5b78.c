@@ -1,7 +1,7 @@
 /* Provisional address-based name; preserve the observed call sequence. */
 #define operation_04c270 ((void (*)(void))0x8c04c270)
 #define operation_3806f6 ((void (*)(int,int,int))0x8c3806f6)
-#define operation_01d9dc ((void (*)(void))0x8c01d9dc)
+#define reset_controller_state_8c01d9dc ((void (*)(void))0x8c01d9dc)
 #define load_area_object_assets_8c033f14 ((void (*)(int))0x8c033f14)
 #define operation_03096c ((void (*)(void))0x8c03096c)
 #define operation_09f128 ((void (*)(void))0x8c09f128)
@@ -18,7 +18,7 @@
 void operation_0c5b78(void) {
     operation_04c270();
     operation_3806f6(0,0,0);
-    operation_01d9dc();
+    reset_controller_state_8c01d9dc();
     load_area_object_assets_8c033f14(1);
     operation_03096c();
     operation_09f128();

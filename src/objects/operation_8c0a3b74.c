@@ -32,8 +32,8 @@ struct Arg2 {
 };
 extern S_L8c41cba0 g_8c41cba0;
 extern float call_8c38d7d8(Arg1 *, Arg2 *);
-extern float call_8c38c154(void *);
-extern float call_8c37eb0c(void *);
+extern float njCos_8c38c154(void *);
+extern float njSin_8c37eb0c(void *);
 void operation_8c0a3b74(int a0, Arg1 *a1, Arg2 *a2, Arg3 *a3)
 {
     short v1;
@@ -73,12 +73,12 @@ void operation_8c0a3b74(int a0, Arg1 *a1, Arg2 *a2, Arg3 *a3)
     }
     t4 = call_8c38d7d8(a1, a2);
     v17 = (float)(v11 * t4);
-    t5 = call_8c38c154((void *)(a3->f00));
+    t5 = njCos_8c38c154((void *)(a3->f00));
     v18 = (float)(v17 * t5);
-    t1 = call_8c37eb0c((void *)(a3->f04));
+    t1 = njSin_8c37eb0c((void *)(a3->f04));
     a1->f00 = v18 * t1 + a2->f00;
-    t2 = call_8c37eb0c((void *)(a3->f00));
+    t2 = njSin_8c37eb0c((void *)(a3->f00));
     a1->f04 = a2->f04 - v17 * t2;
-    t3 = call_8c38c154((void *)(a3->f04));
+    t3 = njCos_8c38c154((void *)(a3->f04));
     a1->f08 = v18 * t3 + a2->f08;
 }

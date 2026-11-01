@@ -36,12 +36,12 @@ typedef struct ObjectData {
     Arg0_100 *f100;
 } ObjectData;
 extern "C" char g_8c33b3e8[];
-extern "C" void call_8c38c5b6(int);
-extern "C" void call_8c38cf80(int, void *, ...);
+extern "C" void njPrintColor_8c38c5b6(int);
+extern "C" void debug_print_at_8c38cf80(int, void *, ...);
 extern "C" void operation_8c24b498(Object *o)
 {
     o->v21();
-    call_8c38c5b6(-0xff0100);
-    call_8c38cf80(0x13001e, (void *)((g_8c33b3e8 + 0x47)), (void *)(((ObjectData *)o)->f100));
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xff0100);
+    debug_print_at_8c38cf80(0x13001e, (void *)((g_8c33b3e8 + 0x47)), (void *)(((ObjectData *)o)->f100));
+    njPrintColor_8c38c5b6(-0xf0f10);
 }

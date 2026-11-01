@@ -37,7 +37,7 @@ extern int g_8c506068;
 extern int g_8c50606c;
 extern S_L8c5064f0 g_8c5064f0;
 extern int operation_8c1cdc80(void *);
-extern int call_8c372d98(void *);
+extern int bu_check_busy_8c372d98(void *);
 extern int call_8c377fd0(Frame *, void *);
 extern int operation_8c2324e0(void);
 extern int operation_8c2324c0(void);
@@ -61,7 +61,7 @@ void operation_8c222ab8(Object *o)
     v42 = (char *)o->f22b8;
     if (v42 != 0) {
         t1 = operation_8c1cdc80((void *)v42);
-        t2 = call_8c372d98((void *)(*(Arg0_e0 **)((char *)((char *)o + 0xe0) + (t1 * 0xb8))));
+        t2 = bu_check_busy_8c372d98((void *)(*(Arg0_e0 **)((char *)((char *)o + 0xe0) + (t1 * 0xb8))));
         if (t2 == 0) {
             t3 = call_8c377fd0((Frame *)((&frame)), (void *)(o->f22cc));
             switch (t3) {

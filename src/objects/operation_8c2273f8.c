@@ -13,20 +13,20 @@ struct Object {
     short f22;
     short f24;
 };
-extern int call_8c011e9c(int);
+extern int game_malloc_buffer_8c011e9c(int);
 extern void call_8c379038(int);
 extern void call_8c37908a(Frame *);
 extern void call_8c37904a(void);
-extern void call_8c011ec0(int);
+extern void game_free_8c011ec0(int);
 void operation_8c2273f8(Object *o)
 {
     Frame frame;
     int t1;
-    t1 = call_8c011e9c(0x4000);
+    t1 = game_malloc_buffer_8c011e9c(0x4000);
     call_8c379038(t1);
     call_8c37908a((&frame));
     o->f22 = (&frame)->f00;
     o->f24 = (&frame)->f00;
     call_8c37904a();
-    call_8c011ec0(t1);
+    game_free_8c011ec0(t1);
 }

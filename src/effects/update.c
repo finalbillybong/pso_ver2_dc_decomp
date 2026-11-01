@@ -7,7 +7,7 @@ extern unsigned char effect_spawn_table[];
 #include "src/include/effect_update.h"
 #include "src/include/emit_listener.h"
 #define ready_at ((int (*)(void *))0x8c03347c)
-#define direction_at ((float (*)(int))0x8c37eb0c)
+#define njSin_8c37eb0c ((float (*)(int))0x8c37eb0c)
 #define absolute_at ((float (*)(float))0x8c12c714)
 #define distance_at ((float (*)(void *,void *))0x8c0c5460)
 #define listener ((unsigned char **)0x8c46ee80)
@@ -30,7 +30,7 @@ void update_effect(Effect *e) {
  if(r->field_40==0.0f) e->field_20+=r->field_44*e->field_28;
  else {
   e->field_24+=(int)(r->field_40*65536.0f/360.0f);
-  e->field_20+=((Resource *)e->resource)->field_44*absolute_at(direction_at(e->field_24))*e->field_28;
+  e->field_20+=((Resource *)e->resource)->field_44*absolute_at(njSin_8c37eb0c(e->field_24))*e->field_28;
  }
  if(*listener && !(e->field_30&0x40)) {
   if(!(distance_at(&e->position,*listener+EMIT_LISTENER_OFFSET(EmitListener, x))<22500.0f)) e->field_20=0.0f;

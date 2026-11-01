@@ -68,8 +68,8 @@ struct Arg2 {
     int f18;
     Vector3 f1c;
 };
-extern "C" void call_8c37f6f0(Frame *, int);
-extern "C" float call_8c37f6c0(float);
+extern "C" void vector_sub_in_place_8c37f6f0(Frame *, int);
+extern "C" float signed_sqrt_8c37f6c0(float);
 extern "C" float object_random_fraction(void *);
 extern "C" void copy_object_id_1b6(void *, void *);
 extern "C" int operation_8c046510(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f0)
@@ -83,11 +83,11 @@ extern "C" int operation_8c046510(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f
         v1 = (float)((f0 * (float)a1->f1b2 - (float)((ObjectData *)o)->f1ae * 0.2f) * 0.01f);
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&a2->f1c;
         if (a3 != 0) {
-            call_8c37f6f0((Frame *)((&frame)), a3);
+            vector_sub_in_place_8c37f6f0((Frame *)((&frame)), a3);
         } else {
-            call_8c37f6f0((Frame *)((&frame)), (int)(((char *)a1 + 0x3c)));
+            vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (int)(((char *)a1 + 0x3c)));
         }
-        t2 = call_8c37f6c0((&frame)->f00.f00 * (&frame)->f00.f00 + (&frame)->f00.f08 * (&frame)->f00.f08);
+        t2 = signed_sqrt_8c37f6c0((&frame)->f00.f00 * (&frame)->f00.f00 + (&frame)->f00.f08 * (&frame)->f00.f08);
         v5 = (float)(v1 - t2 * 0.002f);
         if (v5 > 0.0f) {
             t1 = object_random_fraction((void *)o);

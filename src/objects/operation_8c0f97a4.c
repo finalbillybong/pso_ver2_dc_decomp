@@ -20,12 +20,12 @@ struct Arg0_3a8 {
     int f18;
 };
 extern void call_8c0ffdf0(void *, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c0f97a4(Object *o)
 {
     o->f3b0 = 8;
     call_8c0ffdf0((void *)(o->f3a4), 9);
-    call_8c05fbf8(0x3001d, (void *)(((char *)o + 0x3c)), 0, 0);
+    play_se_8c05fbf8(0x3001d, (void *)(((char *)o + 0x3c)), 0, 0);
     o->f3a8->f18 &= -0x14001ad1;
     o->f3a8->f18 |= 0x14000050;
     o->f408 = 0;

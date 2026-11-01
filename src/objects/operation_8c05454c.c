@@ -7,7 +7,7 @@ extern int g_8c4678c0;
 extern char g_8c2f3144[];
 extern int operation_8c05bbf8(void);
 extern int call_8c059f44(void *, void *);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 void operation_8c05454c(void)
 {
@@ -20,7 +20,7 @@ void operation_8c05454c(void)
         g_8c4678c0 = (int)(t2);
         return;
     }
-    t3 = call_8c011ecc(0x440);
+    t3 = game_malloc_8c011ecc(0x440);
     if (t3 != 0) {
         call_8c03d610(t3, 1, (void *)((void *)0x8c2f3120), 0, 0, 0);
     }

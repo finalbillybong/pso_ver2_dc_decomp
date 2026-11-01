@@ -10,7 +10,7 @@ struct Object {
 };
 extern int call_8c03ed64(void);
 extern int call_8c03ed10(void *);
-void operation_8c21d780(Object *o)
+void quest_online_list_init_8c21d780(Object *o)
 {
     int t1;
     int t2;

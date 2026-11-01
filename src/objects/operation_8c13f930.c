@@ -31,7 +31,7 @@ extern int ADXF_GetStat_8c34da3c(void *);
 extern void ADXF_Stop_8c34d79a(void *);
 extern void call_8c34d4e8(void *);
 extern void operation_8c13fa28(void *);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c13f930(Object *o, int a1)
@@ -54,7 +54,7 @@ Object *operation_8c13f930(Object *o, int a1)
         while (o->f5c > v14) {
             v15 = (int)(v14 << 2);
             if (*(int *)((char *)&o->f3c + (v15)) != 0) {
-                call_8c011ec0((void *)(*(Arg0_3c **)((char *)&o->f3c + (v15))));
+                game_free_8c011ec0((void *)(*(Arg0_3c **)((char *)&o->f3c + (v15))));
                 *(int *)((char *)&o->f3c + (v15)) = 0;
             }
             v14 = (int)(v14 + 1);

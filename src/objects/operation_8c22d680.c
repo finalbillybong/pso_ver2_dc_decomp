@@ -28,7 +28,7 @@ struct S_vv7 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c5064f8;
 extern int g_8c506504;
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void request_resource_release(void *);
 extern void operation_8c22e950(void *);
 extern void TObject_dtor_8c03311c(void *, short);
@@ -39,7 +39,7 @@ Object *operation_8c22d680(Object *o, int a1)
     if (o != 0) {
         o->dispatch = (void *)0x8c278ea4;
         if (o->f58 != 0) {
-            call_8c011ec0((void *)(o->f58));
+            game_free_8c011ec0((void *)(o->f58));
             o->f58 = (Arg0_58 *)0;
         }
         if (o->f90 != 0) {

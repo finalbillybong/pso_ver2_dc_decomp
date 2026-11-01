@@ -31,7 +31,7 @@ struct Arg0_20 {
 };
 extern S_c8c06533c *forward_word_operation_8c06533c(void);
 extern int operation_8c065554(void);
-extern void call_8c37f6f0(Frame *, S_c8c06533c *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, S_c8c06533c *);
 extern float call_8c130334(float, float);
 void operation_8c0fc26c(Object *o, int a1)
 {
@@ -50,7 +50,7 @@ void operation_8c0fc26c(Object *o, int a1)
     return;
 L_8c0fc2a0:;
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f20->f3c;
-    call_8c37f6f0((Frame *)((&frame)), t1);
+    vector_sub_in_place_8c37f6f0((Frame *)((&frame)), t1);
     t3 = call_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
     o->fa0 = (int)(t3 * 65536.0f / 6.28318405f);
 }

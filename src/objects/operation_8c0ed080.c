@@ -14,7 +14,7 @@ struct Object {
     Arg0_18c *f18c;
 };
 extern int call_8c0ec9a4(Object *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void request_resource_release(void *);
 extern void operation_8c199b14(void);
 extern void operation_8c1b0308(void);
@@ -25,7 +25,7 @@ void operation_8c0ed080(Object *o)
     o->f2c = (int)(t1);
     switch (o->f2c) {
     case 1:
-        call_8c05fbf8(0x50001, 0, 0, 0);
+        play_se_8c05fbf8(0x50001, 0, 0, 0);
         o->f176 = 1;
         if (o->f18c != 0) {
             request_resource_release((void *)(o->f18c));
@@ -35,7 +35,7 @@ void operation_8c0ed080(Object *o)
         operation_8c1b0308();
         return;
     case 2:
-        call_8c05fbf8(0x50016, 0, 0, 0);
+        play_se_8c05fbf8(0x50016, 0, 0, 0);
         o->f176 = 1;
         if (o->f18c != 0) {
             request_resource_release((void *)(o->f18c));

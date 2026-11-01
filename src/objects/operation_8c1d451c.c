@@ -13,12 +13,12 @@ struct Object {
 extern int call_8c051d18(void *);
 extern void call_8c2069b4(int, void *);
 extern void call_8c20a644(void *, void *);
-extern void call_8c18de08(int);
+extern void operator_delete_8c18de08(int);
 void operation_8c1d451c(Object *o)
 {
     int t1;
     t1 = call_8c051d18(o->f44);
     call_8c2069b4(t1, (void *)0x8c4dbe40);
     call_8c20a644(*(S_g8c505248 **)0x8c505248, (void *)0x8c4dbe40);
-    call_8c18de08(t1);
+    operator_delete_8c18de08(t1);
 }

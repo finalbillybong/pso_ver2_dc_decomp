@@ -27,8 +27,8 @@ struct S_vv5_s60 {
 };
 extern int operation_8c1adfb8(void *);
 extern int call_8c18e768(int, int);
-extern float call_8c37eb0c(int);
-extern float call_8c38c154(int);
+extern float njSin_8c37eb0c(int);
+extern float njCos_8c38c154(int);
 extern void operation_8c0a1b78(void *);
 void operation_8c1adadc(int a0)
 {
@@ -54,9 +54,9 @@ void operation_8c1adadc(int a0)
         v5 = (S_vv5 *)*(S_g8c467240 **)((char *)0x8c467240 + (v4 << 2));
         if (v5 != 0 && *(int *)((char *)((char *)v5 + 0x0) + (v1)) == 0xe) {
             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&(&frame)->f0c;
-            t2 = call_8c37eb0c(v3);
+            t2 = njSin_8c37eb0c(v3);
             (&frame)->f00.f00 += t2 * 12.5f;
-            t3 = call_8c38c154(v3);
+            t3 = njCos_8c38c154(v3);
             (&frame)->f00.f08 += t3 * 12.5f;
             *(Vector3 *)&v5->f3c = *(Vector3 *)&(&frame)->f00;
             *(Vector3 *)&v5->f48 = *(Vector3 *)&v5->f3c;

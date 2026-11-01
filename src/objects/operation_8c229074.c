@@ -44,12 +44,12 @@ extern char g_8c337f78[];
 extern void mark_effect_for_release(void *);
 extern int create_effect_769c(void *, int);
 extern void set_effect_bits(void *, unsigned short);
-extern void call_8c37f6f0(void *, void *);
-extern void call_8c37b630(void *);
+extern void vector_sub_in_place_8c37f6f0(void *, void *);
+extern void njUnitVector_8c37b630(void *);
 extern void call_8c3bdf60(void *, void *);
 extern void call_8c0a7608(Arg0_98 *, void *);
 extern int create_effect_777c(void *, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c191504(int);
 void operation_8c229074(Object *o)
 {
@@ -94,9 +94,9 @@ void operation_8c229074(Object *o)
                             Vector3 *p_ = (Vector3 *)&g_8c337f54;
                             *(Vector3 *)&(&frame)->f0c = *p_;
                         }
-                        call_8c37f6f0((void *)(&(&frame)->f0c), (void *)(&(&frame)->f18));
+                        vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f0c), (void *)(&(&frame)->f18));
                         (&frame)->f0c.f04 = 0.0f;
-                        call_8c37b630((void *)(&(&frame)->f0c));
+                        njUnitVector_8c37b630((void *)(&(&frame)->f0c));
                         (&frame)->f0c.f00 *= 1.95f;
                         (&frame)->f0c.f08 *= 1.95f;
                         call_8c3bdf60((void *)(&(&frame)->f18), (void *)(&(&frame)->f0c));
@@ -130,29 +130,29 @@ L_8c2291bc:;
     }
     switch ((int)o->f94) {
     case 0:
-        call_8c05fbf8(0x30007, (void *)((void *)&g_8c337f54), 0, 1);
-        call_8c05fbf8(0x30004, (void *)((void *)&g_8c337f54), 0, 1);
+        play_se_8c05fbf8(0x30007, (void *)((void *)&g_8c337f54), 0, 1);
+        play_se_8c05fbf8(0x30004, (void *)((void *)&g_8c337f54), 0, 1);
         operation_8c191504(2);
         break;
     case 0x50:
-        call_8c05fbf8(0x30005, (void *)0, 0, 0);
+        play_se_8c05fbf8(0x30005, (void *)0, 0, 0);
     case 0x64:
     case 0x78:
-        call_8c05fbf8(0x30006, (void *)((void *)&g_8c337f54), 0, 1);
+        play_se_8c05fbf8(0x30006, (void *)((void *)&g_8c337f54), 0, 1);
         operation_8c191504(2);
         break;
     case 0x8c:
-        call_8c05fbf8(0x30008, (void *)((void *)&g_8c337f54), 0, 1);
+        play_se_8c05fbf8(0x30008, (void *)((void *)&g_8c337f54), 0, 1);
         operation_8c191504(2);
         break;
     case 0x92:
-        call_8c05fbf8(0x30003, (void *)((void *)&g_8c337f54), 0, 1);
+        play_se_8c05fbf8(0x30003, (void *)((void *)&g_8c337f54), 0, 1);
         break;
     case 0xaa:
-        call_8c05fbf8(0x30009, (void *)((void *)&g_8c337f54), 0, 1);
+        play_se_8c05fbf8(0x30009, (void *)((void *)&g_8c337f54), 0, 1);
         break;
     case 0xc8:
-        call_8c05fbf8(0x30021, (void *)((void *)&g_8c337f54), 0, 1);
+        play_se_8c05fbf8(0x30021, (void *)((void *)&g_8c337f54), 0, 1);
         operation_8c191504(2);
         break;
     }

@@ -17,7 +17,7 @@ struct Object {
     int f78;
 };
 extern int call_8c03ed64(void);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern int call_8c13f47c(void *, int);
 extern void call_8c03d360(int, int, void *, void *, int, int, int);
 void operation_8c13f65c(Object *o)
@@ -49,7 +49,7 @@ void operation_8c13f65c(Object *o)
         v10 = (int)v7;
 L_8c13f69e:;
         if (v10 != 0) {
-            t2 = call_8c011ecc(0x440);
+            t2 = game_malloc_8c011ecc(0x440);
             if (t2 != 0) {
                 t3 = call_8c13f47c(o->f28, 0);
                 call_8c03d360(t2, 6, ((char *)o + 0x64), ((char *)o + 0x68), 0, 0, t3);

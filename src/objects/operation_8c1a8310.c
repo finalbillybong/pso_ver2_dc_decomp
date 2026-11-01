@@ -23,13 +23,13 @@ extern void operation_8c1a7e14(void *, int, int);
 extern void call_8c34d4e8(void *);
 extern void operation_8c03ed70(int);
 extern int call_8c18e768(int, int);
-extern int call_8c011e9c(int);
-extern void operation_8c03ef80(void *, ...);
+extern int game_malloc_buffer_8c011e9c(int);
+extern void debug_error_stub_8c03ef80(void *, ...);
 extern void ADXF_ReadNw32_8c34d6ae(void *, int, int);
 extern int ADXF_GetStat_8c34da3c(void *);
 extern void loading_wait_frame_8c104c60(void);
 extern void call_8c0787cc(int, int);
-extern void call_8c011ec0(int);
+extern void game_free_8c011ec0(int);
 int operation_8c1a8310(int a0, int a1)
 {
     Frame frame;
@@ -57,9 +57,9 @@ int operation_8c1a8310(int a0, int a1)
         v16 = (char *)(&frame)->f28->f28;
         if (v16 != 0) {
             t1 = call_8c18e768((int)(v16 + 0x7ff), 0x800);
-            t2 = call_8c011e9c((int)(t1 << 0xb));
+            t2 = game_malloc_buffer_8c011e9c((int)(t1 << 0xb));
             if (t2 == 0) {
-                operation_8c03ef80((void *)((g_8c323ed4 + 0xd)));
+                debug_error_stub_8c03ef80((void *)((g_8c323ed4 + 0xd)));
             }
             ADXF_ReadNw32_8c34d6ae((void *)((&frame)->f20), t3, t2);
             for (;;) {
@@ -71,7 +71,7 @@ int operation_8c1a8310(int a0, int a1)
             }
             g_8c4df894 = &*(int *)((char *)((char *)g_8c4df894 + 0x0) + (t3 << 11));
             call_8c0787cc(t2, a1);
-            call_8c011ec0(t2);
+            game_free_8c011ec0(t2);
             v9 = (int)(&frame)->f28->f28;
             if ((&frame)->f28 == 0) {
                 call_8c34d4e8((void *)((&frame)->f20));

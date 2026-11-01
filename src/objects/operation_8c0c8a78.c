@@ -24,7 +24,7 @@ extern int record30_8c1794a0(int);
 extern int block32_8c1794b4(int);
 extern int record30_8c1794c8(int);
 extern void initialize_render_resource_lookups(void);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c0cd588(int, void *, int);
 void operation_8c0c8a78(void)
 {
@@ -60,7 +60,7 @@ void operation_8c0c8a78(void)
     *(int *)0x8c46fa00 = 0;
     *(float *)0x8c46f9fc = 0.0f;
     initialize_render_resource_lookups();
-    t8 = call_8c011ecc(0x14);
+    t8 = game_malloc_8c011ecc(0x14);
     if (t8 != 0) {
         call_8c0cd588(t8, (void *)((*(S_g8c46f9f0 **)0x8c46f9f0)->f42c->f08), 2);
     }

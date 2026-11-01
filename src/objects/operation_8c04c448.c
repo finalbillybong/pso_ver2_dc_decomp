@@ -6,7 +6,7 @@ extern char g_8c2f2aac[];
 extern S_g8c467180 *g_8c467180;
 extern int g_8c46718c;
 extern S_g8c467180 *call_8c104ff8(void *);
-void operation_8c04c448(int a0)
+void text_set_language_japanese_8c04c448(int a0)
 {
     switch (a0) {
     case 0:

@@ -1,4 +1,4 @@
-extern void func_8c352e24(void);
+extern void mwRnaInit_8c352e24(void);
 extern void func_8c352ecc(void);
 extern void mwRnaCreate_8c353030(void);
 extern void func_8c35311e(int);
@@ -25,7 +25,7 @@ extern void func_8c35445c(int, int, int *);
 
 void snd_thunk_8c34e0b8(void)
 {
-    func_8c352e24();
+    mwRnaInit_8c352e24();
 }
 
 void snd_thunk_8c34e0be(void)

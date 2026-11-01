@@ -101,11 +101,11 @@ typedef struct Arg1Data {
     char unknown0[0x348];
     Arg1_348 *f348;
 } Arg1Data;
-extern "C" void call_8c38ae68(void);
+extern "C" void njPushMatrixEx_8c38ae68(void);
 extern "C" void call_8c384610(int);
 extern "C" void call_8c38a714(int, void *);
 extern "C" void call_8c3be280(int, Frame *, int);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" int operation_8c075894(Object *o, Arg1 *a1, int a2, int a3)
 {
     Frame frame;
@@ -122,11 +122,11 @@ extern "C" int operation_8c075894(Object *o, Arg1 *a1, int a2, int a3)
                 (&frame)->f08 = 0.0f;
                 (&frame)->f04 = 0.0f;
                 (&frame)->f00 = 0.0f;
-                call_8c38ae68();
+                njPushMatrixEx_8c38ae68();
                 call_8c384610(0);
                 call_8c38a714(0, (void *)(&*(int *)((char *)((char *)((Arg1Data *)a1)->f348 + 0x0) + (a2 << 6))));
                 call_8c3be280(0, (Frame *)((&frame)), a3);
-                call_8c38ad10();
+                njPopMatrixEx_8c38ad10();
             } else {
                 a1->v76(0x30, a3);
             }

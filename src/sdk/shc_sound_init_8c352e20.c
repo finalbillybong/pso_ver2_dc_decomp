@@ -19,7 +19,7 @@ void sound_nop_8c352e20(void)
 {
 }
 
-void sound_init_8c352e24(void)
+void mwRnaInit_8c352e24(void)
 {
     int i;
     int state = d_8c3fb568;

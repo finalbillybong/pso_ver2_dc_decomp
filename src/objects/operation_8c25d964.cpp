@@ -34,14 +34,14 @@ struct S_g8c513444 {
     char unknown0[0x4];
     S_g8c513444_4 *f04;
 };
-extern "C" void call_8c01d1ec(Object *);
+extern "C" void TObjectShared_ctor_8c01d1ec(Object *);
 extern "C" void call_8c25db38(Object *);
 extern "C" void operation_8c25dd0c(void *, int);
 extern "C" Object *operation_8c25d964(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;
-    call_8c01d1ec(o);
+    TObjectShared_ctor_8c01d1ec(o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c281ca4;
     ((ObjectData *)o)->tag = (int)(*(int *)0x8c340548);
     ((ObjectData *)o)->size = 0xd4;

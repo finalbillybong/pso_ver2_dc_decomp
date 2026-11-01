@@ -28,17 +28,17 @@ extern int operation_8c22ae58(void);
 extern int vmu_find_file_8c01018c(int);
 extern int loading_wait_frame_8c104c60(void);
 extern int call_8c372d66(int, void *, Frame *);
-extern int call_8c011e9c(int);
+extern int game_malloc_buffer_8c011e9c(int);
 extern void memset_8c12b880(int, int, int);
-extern void operation_8c010240(int, int, int);
-extern int call_8c372d98(int);
+extern void vmu_load_file_8c010240(int, int, int);
+extern int bu_check_busy_8c372d98(int);
 extern int call_8c377fd0(void *, int);
-extern void call_8c011ec0(int);
+extern void game_free_8c011ec0(int);
 extern void call_8c3889a4(int, int, int);
 extern void call_8c37e9a8(void *, void *, int, int, int);
 extern void call_8c37e9b6(void *, void *, int, int);
 extern void apply_resource_118780(void *);
-void operation_8c22ace8(void)
+void vmu_load_download_file_099_8c22ace8(void)
 {
     Frame frame;
     int v107;
@@ -74,28 +74,28 @@ void operation_8c22ace8(void)
                     t4 = call_8c372d66(v107, g_8c33817c, (Frame *)((&frame)));
                 } while (t4 == v108);
                 if (t4 == 0) {
-                    t5 = call_8c011e9c((int)((unsigned short)(&frame)->f04 << 9));
+                    t5 = game_malloc_buffer_8c011e9c((int)((unsigned short)(&frame)->f04 << 9));
                     if (t5 != 0) {
                         memset_8c12b880(t5, 0, (int)((unsigned short)(&frame)->f04 << 9));
-                        operation_8c010240(v107, (int)g_8c33817c, t5);
+                        vmu_load_file_8c010240(v107, (int)g_8c33817c, t5);
                         goto L_8c22ad76;
 L_8c22ad70:;
                         loading_wait_frame_8c104c60();
 L_8c22ad76:;
-                        t6 = call_8c372d98(v107);
+                        t6 = bu_check_busy_8c372d98(v107);
                         if (t6 != 0) {
                             goto L_8c22ad70;
                         }
                         t7 = call_8c377fd0((void *)(&(&frame)->f14), t5);
                         if (t7 != 0) {
-                            call_8c011ec0(t5);
+                            game_free_8c011ec0(t5);
                             return;
                         }
                         v109 = (int)(&frame)->f70;
                         v108 = (int)v109;
                         v110 = (int)(&frame)->f6c;
                         v107 = (int)v110;
-                        t8 = call_8c011e9c(v108);
+                        t8 = game_malloc_buffer_8c011e9c(v108);
                         g_8c5062a0 = (S_g8c5062a0 *)(int)(t8);
                         if (t8 != 0) {
                             call_8c3889a4(t8, v107, v108);
@@ -105,7 +105,7 @@ L_8c22ad76:;
                             call_8c37e9b6((void *)((void *)0x8c5062a4), (void *)((void *)0x8c5062b8), 0, 0x40000000);
                             apply_resource_118780((void *)((void *)&g_8c5062b0));
                         }
-                        call_8c011ec0(t5);
+                        game_free_8c011ec0(t5);
                     }
                 }
             }

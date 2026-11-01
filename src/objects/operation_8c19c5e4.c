@@ -40,7 +40,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern int operation_8c1cdc80(void *);
 extern void operation_8c1d5dfc(void *, int);
 extern int operation_8c106798(Object *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern int operation_8c106760(Object *);
 extern int call_8c15b8cc(int);
 extern int operation_8c1c74dc(void *);
@@ -88,7 +88,7 @@ void operation_8c19c5e4(Object *o)
     t2 = operation_8c106798(o);
     if (t2 != 0) {
         o->f24 = 5;
-        call_8c05fbf8(0x50001, 0, 0, 0);
+        play_se_8c05fbf8(0x50001, 0, 0, 0);
         return;
     }
     t3 = operation_8c106760(o);

@@ -9,7 +9,7 @@ struct S_vv1 {
 };
 extern char g_8c32c03c[];
 extern void load_resource_small(void *, void *);
-void operation_8c1e62b4(void)
+void load_sonicteam_logo_texture_8c1e62b4(void)
 {
     {
         short i;

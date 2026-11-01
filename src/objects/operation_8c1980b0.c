@@ -31,7 +31,7 @@ struct S_g8c4dc420_42c {
     S_g8c4dc420_42c_48 *f48;
 };
 extern char g_8c31c898[];
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern void call_8c0cd588(int, void *, int);
 extern void load_resource_small(void *, void *);
@@ -52,32 +52,32 @@ void operation_8c1980b0(void)
             }
         }
     }
-    t1 = call_8c011ecc(0x440);
+    t1 = game_malloc_8c011ecc(0x440);
     if (t1 != 0) {
         call_8c03d610(t1, 1, (void *)((void *)0x8c31c67c), 0, 0, 0);
     }
     *(int *)0x8c4dc420 = (int)(t1);
-    t2 = call_8c011ecc(0x14);
+    t2 = game_malloc_8c011ecc(0x14);
     if (t2 != 0) {
         call_8c0cd588(t2, (void *)((*(S_g8c4dc420 **)0x8c4dc420)->f42c->f38), 0);
     }
     *(int *)0x8c4dc42c = (int)(t2);
-    t3 = call_8c011ecc(0x14);
+    t3 = game_malloc_8c011ecc(0x14);
     if (t3 != 0) {
         call_8c0cd588(t3, (void *)((*(S_g8c4dc420 **)0x8c4dc420)->f42c->f48), 0);
     }
     *(int *)0x8c4dc430 = (int)(t3);
-    t4 = call_8c011ecc(0x14);
+    t4 = game_malloc_8c011ecc(0x14);
     if (t4 != 0) {
         call_8c0cd588(t4, (void *)((*(S_g8c4dc420 **)0x8c4dc420)->f42c->f08), 0);
     }
     *(int *)0x8c4dc434 = (int)(t4);
-    t5 = call_8c011ecc(0x14);
+    t5 = game_malloc_8c011ecc(0x14);
     if (t5 != 0) {
         call_8c0cd588(t5, (void *)((*(S_g8c4dc420 **)0x8c4dc420)->f42c->f18), 0);
     }
     *(int *)0x8c4dc438 = (int)(t5);
-    t6 = call_8c011ecc(0x14);
+    t6 = game_malloc_8c011ecc(0x14);
     if (t6 != 0) {
         call_8c0cd588(t6, (void *)((*(S_g8c4dc420 **)0x8c4dc420)->f42c->f28), 0);
     }

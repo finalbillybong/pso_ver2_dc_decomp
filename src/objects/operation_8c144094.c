@@ -82,7 +82,7 @@ struct Arg0_640 {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4da3ac;
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void operation_8c0f3384(int, int);
 extern void operation_8c052124(void *);
 extern void TObject_dtor_8c03311c(void *, short);
@@ -134,7 +134,7 @@ L_8c1440e6:;
         if (6 > v9) {
             goto L_8c1440ce;
         }
-        call_8c18de08((void *)(o->f638));
+        operator_delete_8c18de08((void *)(o->f638));
         o->f638 = (Arg0_638 *)0;
         if (o->f6ec != 0) {
             v10 = (S_vv10 *)o->f6ec;
@@ -212,7 +212,7 @@ L_8c1441f0:;
         if (v40 >= 0) {
             goto L_8c1441dc;
         }
-        call_8c18de08((void *)(o->f63c));
+        operator_delete_8c18de08((void *)(o->f63c));
         operation_8c052124((void *)o);
         v41 = (int)g_8c4da3ac;
         if (v41 == (int)(o)) {

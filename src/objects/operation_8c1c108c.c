@@ -21,13 +21,13 @@ struct Object {
     int fa8;
     int fac;
 };
-extern void call_8c01d1ec(Object *);
+extern void TObjectShared_ctor_8c01d1ec(Object *);
 extern void call_8c1c11a8(Object *);
 Object *operation_8c1c108c(Object *o, int a1, int a2, int a3, float f0)
 {
     Object **home = &o;
     (void)home;
-    call_8c01d1ec(o);
+    TObjectShared_ctor_8c01d1ec(o);
     o->dispatch = (void *)0x8c2758dc;
     o->tag = (int)(*(int *)0x8c3288ec);
     o->size = 0xb0;

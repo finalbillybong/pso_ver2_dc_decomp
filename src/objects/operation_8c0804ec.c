@@ -39,7 +39,7 @@ struct Arg2 {
     Block_p2_24 f24;
 };
 extern int g_8c2fec20;
-extern void call_8c01d1ec(Object *);
+extern void TObjectShared_ctor_8c01d1ec(Object *);
 extern int create_effect_78d0(void *, void *, int, int);
 extern int create_effect_785c(void *, void *, int);
 Object *operation_8c0804ec(Object *o, int a1, Arg2 *a2)
@@ -56,7 +56,7 @@ Object *operation_8c0804ec(Object *o, int a1, Arg2 *a2)
     int t4;
     int t5;
     (void)home;
-    call_8c01d1ec(o);
+    TObjectShared_ctor_8c01d1ec(o);
     o->dispatch = (void *)0x8c2643b0;
     o->tag = (int)(g_8c2fec20);
     o->size = 0x9c;

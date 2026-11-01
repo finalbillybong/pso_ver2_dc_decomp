@@ -17,7 +17,7 @@ extern void *memset_8c12b880(void *, int, unsigned int);
 extern char *strcpy(char *, const char *);
 extern char *strcat(char *, const char *);
 
-void format_name_8c352da0(char *name, Item *item, int kind)
+void gdCi_format_version_8c352da0(char *name, Item *item, int kind)
 {
     NameTable kinds;
     kinds = g_kind_names_8c3f4b68;

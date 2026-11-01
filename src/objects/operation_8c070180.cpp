@@ -227,7 +227,7 @@ extern "C" int player_flag9_8c026508(void);
 extern "C" void operation_8c0368a8(void *);
 extern "C" void call_8c01c5f0(Object *);
 extern "C" int check_range_8c01cf68(void *, float);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void create_effect(void *, int, int);
 extern "C" void operation_8c070180(Object *o, int a1)
 {
@@ -407,7 +407,7 @@ L_8c070330:;
         call_8c01c5f0(o);
         t4 = check_range_8c01cf68((void *)o, 5.0f);
         if (t4 != 0) {
-            call_8c05fbf8(0x30004, (void *)(((char *)o + 0x658)), 0, 0);
+            play_se_8c05fbf8(0x30004, (void *)(((char *)o + 0x658)), 0, 0);
         }
         t5 = check_range_8c01cf68((void *)o, 14.0f);
         if (t5 != 0) {

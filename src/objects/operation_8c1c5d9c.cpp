@@ -85,7 +85,7 @@ typedef struct S_vv28Data {
 } S_vv28Data;
 extern "C" int operation_8c0541b4(short, int);
 extern "C" int create_effect_7708(void *, int, int);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void mark_effect_for_release(void *);
 extern "C" void call_8c0a7608(void *, void *);
 extern "C" void operation_8c1c5d9c(Object *o)
@@ -111,7 +111,7 @@ extern "C" void operation_8c1c5d9c(Object *o)
         o->f30 = (int)t2;
     }
     if (o->f2c == 0xf) {
-        call_8c05fbf8(0x20008, (void *)(&o->f44), 0, 0);
+        play_se_8c05fbf8(0x20008, (void *)(&o->f44), 0, 0);
         t3 = create_effect_7708((void *)(&o->f44), 0x134, 0x40);
         o->f34 = (int)t3;
         o->f3c = 200.0f;

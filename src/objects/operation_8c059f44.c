@@ -18,7 +18,7 @@ struct Frame {
 struct Object {
     Block16 tag;
 };
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, Frame *, int, int, int);
 int operation_8c059f44(Object *o, int a1)
 {
@@ -26,7 +26,7 @@ int operation_8c059f44(Object *o, int a1)
     int t1;
     *(Block16 *)&(&frame)->f00 = *(Block16 *)&o->tag;
     (&frame)->f00.f00 = a1;
-    t1 = call_8c011ecc(0x440);
+    t1 = game_malloc_8c011ecc(0x440);
     if (t1 != 0) {
         call_8c03d610(t1, 1, (Frame *)((&frame)), 0, 0, 0);
     }

@@ -42,7 +42,7 @@ extern S_g8c4db9e0 *g_8c4db9e0;
 extern S_L8c46fec0 g_8c46fec0;
 extern "C" void call_8c3806f6(int, int, int);
 extern "C" void operation_8c01c2b0(void);
-extern "C" void call_8c01d9dc(void);
+extern "C" void reset_controller_state_8c01d9dc(void);
 extern "C" void clear_global_8c01c1c4(void);
 extern "C" void forward_reviewed_8c104e8c(void);
 extern "C" void operation_8c1a18b8(void);
@@ -61,7 +61,7 @@ extern "C" void time_hierarchy_update(void *);
 extern "C" void call_8c02a87c(void);
 extern "C" void operation_8c01c250(int);
 extern "C" void operation_8c01c244(int);
-extern "C" void call_8c380516(void);
+extern "C" void wait_vsync_and_flip_8c380516(void);
 extern "C" void operation_8c0e7750(void)
 {
     int v1;
@@ -70,7 +70,7 @@ extern "C" void operation_8c0e7750(void)
     S_vv5 *v5;
     call_8c3806f6(0, 0, 0);
     operation_8c01c2b0();
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
     clear_global_8c01c1c4();
     forward_reviewed_8c104e8c();
     operation_8c1a18b8();
@@ -123,5 +123,5 @@ extern "C" void operation_8c0e7750(void)
     call_8c02a87c();
     operation_8c01c250(2);
     operation_8c01c244(0xf);
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

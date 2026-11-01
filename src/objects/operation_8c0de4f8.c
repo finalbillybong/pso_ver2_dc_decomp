@@ -3,7 +3,7 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c0de454(int);
 int operation_8c0de4f8(void)
 {
@@ -11,7 +11,7 @@ int operation_8c0de4f8(void)
     if (*(int *)0x8c46fe40 != 0) {
         return *(int *)0x8c46fe40;
     }
-    t1 = call_8c011ecc(0x48);
+    t1 = game_malloc_8c011ecc(0x48);
     if (t1 != 0) {
         call_8c0de454(t1);
     }

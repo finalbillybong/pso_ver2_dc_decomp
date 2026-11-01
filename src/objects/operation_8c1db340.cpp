@@ -49,12 +49,12 @@ typedef struct ObjectData {
 extern int g_8c32adf8;
 extern S_g8c44be98 *g_8c44be98;
 extern int g_8c4e2f60;
-extern "C" void call_8c01d1ec(Object *, void *);
+extern "C" void TObjectShared_ctor_8c01d1ec(Object *, void *);
 extern "C" Object *operation_8c1db340(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;
-    call_8c01d1ec(o, g_8c44be98);
+    TObjectShared_ctor_8c01d1ec(o, g_8c44be98);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c2772c4;
     ((ObjectData *)o)->tag = (int)(g_8c32adf8);
     ((ObjectData *)o)->size = 0xd4;

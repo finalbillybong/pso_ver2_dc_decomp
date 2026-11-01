@@ -12,13 +12,13 @@ int operation_45b8c(Object *o)
                 case 9: {
                     void *effect = effect_create_at(o->effect_position, 507, 0x50);
                     if (effect) effect_bind_at(effect, (short)o->id);
-                    effect_emit_at(131114, o->position, 0, 0);
+                    play_se_8c05fbf8(131114, o->position, 0, 0);
                     break;
                 }
                 case 11: {
                     void *effect = effect_create_at(o->effect_position, 509, 0x50);
                     if (effect) effect_bind_at(effect, (short)o->id);
-                    effect_emit_at(131115, o->position, 0, 0);
+                    play_se_8c05fbf8(131115, o->position, 0, 0);
                     break;
                 }
                 }

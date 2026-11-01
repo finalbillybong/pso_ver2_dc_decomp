@@ -2,14 +2,14 @@
  * float operation order and independent elevation clamps. */
 #include "src/include/effect_control_input.h"
 #define input_at ((EffectControlInput *(*)(int))0x8c36b024)
-#define root_at ((float (*)(float))0x8c37f6c0)
+#define signed_sqrt_8c37f6c0 ((float (*)(float))0x8c37f6c0)
 void update_effect_control_input(EffectControlView *o){
  EffectControlInput *input=input_at(6);
  float x=input->x,y=input->y,magnitude;
  short horizontal,vertical,depth;
  if(x>-12.0f && x<=12.0f)x=0.0f;
  if(y>-12.0f && y<=12.0f)y=0.0f;
- magnitude=root_at(x*x+y*y);
+ magnitude=signed_sqrt_8c37f6c0(x*x+y*y);
  if(magnitude!=0.0f)magnitude/=128.0f;
  if(magnitude>1.0f)magnitude=1.0f;
  horizontal=input->x;vertical=input->y;depth=input->depth;

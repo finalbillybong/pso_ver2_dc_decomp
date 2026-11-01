@@ -17,7 +17,7 @@ struct Object {
     int f3ac;
 };
 extern void operation_8c05426c(void *, int, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c05428c(void *, int, int);
 extern void call_8c01c5f0(Object *);
 void operation_8c0e5a68(Object *o)
@@ -37,7 +37,7 @@ void operation_8c0e5a68(Object *o)
         o->ff0 = 0xb;
         operation_8c05426c((void *)o, 0, 0x14000000);
         o->f34 |= 0x4000000;
-        call_8c05fbf8(0x30032, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30032, (void *)(((char *)o + 0x3c)), 0, 0);
         goto L_8c0e5af2;
 L_8c0e5ac2:;
         if (o->fec != 0x20) {

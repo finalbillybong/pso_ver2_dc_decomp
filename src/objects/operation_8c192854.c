@@ -40,7 +40,7 @@ extern S_g8c4dc348 *g_8c4dc348;
 extern void call_8c1922a0(void);
 extern void call_8c1c9730(void *);
 extern int find_record_8c0744dc(int);
-extern void operation_8c162de4(void *, int);
+extern void create_floor_item_8c162de4(void *, int);
 void operation_8c192854(Object *o)
 {
     int v1;
@@ -95,7 +95,7 @@ void operation_8c192854(Object *o)
             v12 = (S_vv12 *)(g_8c4dc2c4->f00 + v11 * 0x24);
             t1 = find_record_8c0744dc((int)(v12->f1c));
             if (t1 == 0) {
-                operation_8c162de4((void *)v12, 1);
+                create_floor_item_8c162de4((void *)v12, 1);
             }
             v11 = (int)(v11 + 1);
         }

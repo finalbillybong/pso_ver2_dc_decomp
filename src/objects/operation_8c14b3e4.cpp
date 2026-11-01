@@ -87,20 +87,20 @@ extern int g_8c575570;
 extern S_L8c41cba0 g_8c41cba0;
 extern "C" char g_8c418280[];
 extern "C" void operation_8c05baa8(void);
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c382a40(void *);
-extern "C" void call_8c37df90(int, void *);
-extern "C" void call_8c37dd28(int, void *);
-extern "C" void call_8c37e02c(int, void *);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void translate_current_matrix_v_8c382a40(void *);
+extern "C" void njRotateY_8c37df90(int, void *);
+extern "C" void njRotateX_8c37dd28(int, void *);
+extern "C" void njRotateZ_8c37e02c(int, void *);
 extern "C" int operation_8c05bbf8(void);
-extern "C" void call_8c37e390(Frame *);
+extern "C" void scale_current_matrix_v_8c37e390(Frame *);
 extern "C" void call_8c3a9cec(float, float);
 extern "C" void operation_8c175408(void *);
 extern "C" void set_transform_node_callback(void *);
 extern "C" void call_8c3827d8(void *);
 extern "C" void draw_tree_a702(void *, void *, float);
 extern "C" void operation_8c0149c8(void *);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c14ae60();
 extern "C" void operation_8c14b3e4(Object *o)
 {
@@ -122,18 +122,18 @@ extern "C" void operation_8c14b3e4(Object *o)
     o->v11(1000.0f, 1000.0f);
     g_8c46f560 = (int)(g_8c575570);
     operation_8c05baa8();
-    call_8c38ae68();
-    call_8c382a40((void *)(((char *)o + 0x3c)));
-    call_8c37df90(0, (void *)(((ObjectData *)o)->f64));
-    call_8c37dd28(0, (void *)(((ObjectData *)o)->f60));
-    call_8c37e02c(0, (void *)(((ObjectData *)o)->f68));
+    njPushMatrixEx_8c38ae68();
+    translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
+    njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+    njRotateX_8c37dd28(0, (void *)(((ObjectData *)o)->f60));
+    njRotateZ_8c37e02c(0, (void *)(((ObjectData *)o)->f68));
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&g_8c31510c;
     v1 = (float)0.5f;
     t1 = operation_8c05bbf8();
     if (t1 != 0) {
         v1 = (float)(v1 * 1.2f);
     }
-    call_8c37e390((Frame *)((&frame)));
+    scale_current_matrix_v_8c37e390((Frame *)((&frame)));
     call_8c3a9cec(*(float *)(g_8c418280 + 0x1c) * v1, *(float *)(g_8c418280 + 0x20) * v1);
     t1 = (int)0x600;
     for (v5 = 0; v5 < 0xa; v5++) {
@@ -196,5 +196,5 @@ L_8c14b520:;
     draw_tree_a702((void *)(((ObjectData *)o)->f38), (void *)v12, v28);
     set_transform_node_callback((void *)0);
     operation_8c0149c8(g_8c4182cc);
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
 }

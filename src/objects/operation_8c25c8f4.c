@@ -25,7 +25,7 @@ extern S_g8c44be88 *g_8c44be88;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void call_8c37e4a8(float, float);
 extern void call_8c3806f6(int, int, int);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 extern void call_8c37e7d4(void *);
 extern void forward_reviewed_8c104e8c(void);
 extern void call_8c0142d8(void *);
@@ -37,7 +37,7 @@ extern void operation_8c01c250(int);
 extern void operation_8c01c244(int);
 extern void create_descriptor_managers(void);
 extern void operation_8c25cc58(void);
-extern void call_8c380516(void);
+extern void wait_vsync_and_flip_8c380516(void);
 void operation_8c25c8f4(void)
 {
     Frame frame;
@@ -48,7 +48,7 @@ void operation_8c25c8f4(void)
     int t1;
     call_8c37e4a8(1.0f, 0.85f);
     call_8c3806f6(0, 0, 0);
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
     v1 = (unsigned int)0;
     while ((unsigned int)0x80 > v1) {
         *(float *)((char *)frame.f18 + (v1 << 2)) = 0.0f;
@@ -79,5 +79,5 @@ void operation_8c25c8f4(void)
     operation_8c01c244(2);
     create_descriptor_managers();
     operation_8c25cc58();
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

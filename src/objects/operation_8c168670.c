@@ -73,7 +73,7 @@ extern void operation_8c13f1cc(int, int);
 extern void call_8c163fd8(int, Frame *);
 extern void call_8c164824(int, Frame *);
 extern void call_8c178968(int, Frame *);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c168980(Object *);
 void operation_8c168670(Object *o)
 {
@@ -226,7 +226,7 @@ L_8c168934:;
     o->f28 = 0;
     return;
 L_8c16894e:;
-    call_8c05fbf8(0x20027, (void *)(&o->f30), 0, 0);
+    play_se_8c05fbf8(0x20027, (void *)(&o->f30), 0, 0);
     call_8c168980(o);
     o->f04 |= 1;
 }

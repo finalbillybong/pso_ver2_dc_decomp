@@ -80,12 +80,12 @@ extern "C" void call_8c01c5f0(Object *);
 extern "C" int angle_halfway(int, int);
 extern "C" void operation_8c04a43c(void *, float, void *);
 extern "C" int call_8c24e644(int, void *);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" int check_range_8c01cf68(void *, float);
 extern "C" void classify_ratio_8c0bf654(void *);
 extern "C" void call_8c0521a0(Object *);
 extern "C" void call_8c05228c(Object *);
-extern "C" void operation_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void operation_8c0bef68(Object *o)
 {
     int v1;
@@ -119,7 +119,7 @@ extern "C" void operation_8c0bef68(Object *o)
         }
         ((ObjectData *)o)->f34 |= 0x4000000;
         t2 = call_8c24e644(0x30005, (void *)(((ObjectData *)o)->f38c));
-        call_8c05fbf8(t2, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(t2, (void *)(((char *)o + 0x3c)), 0, 0);
         break;
     case 1:
         t3 = check_range_8c01cf68((void *)o, 5.0f);
@@ -149,6 +149,6 @@ extern "C" void operation_8c0bef68(Object *o)
 L_8c0bf0bc:;
     call_8c0521a0(o);
     call_8c05228c(o);
-    operation_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+    minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
     ((ObjectData *)o)->f34 &= -0x200001;
 }

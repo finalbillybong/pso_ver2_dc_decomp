@@ -6,7 +6,7 @@ typedef struct Vector3 {
 extern int g_8c467188;
 extern int g_8c4daac0;
 extern char g_8c31644c[];
-extern int call_8c104e9c(void *);
+extern int load_resource_8c104e9c(void *);
 void load_offline_quest_titles_8c158ad8(void)
 {
     int t1;
@@ -17,23 +17,23 @@ void load_offline_quest_titles_8c158ad8(void)
     g_8c4daac0 = 0;
     switch (g_8c467188) {
     case 0:
-        t1 = call_8c104e9c((void *)((void *)g_8c31644c));
+        t1 = load_resource_8c104e9c((void *)((void *)g_8c31644c));
         g_8c4daac0 = (int)(t1);
         return;
     case 1:
-        t2 = call_8c104e9c((void *)((g_8c31644c + 0x15)));
+        t2 = load_resource_8c104e9c((void *)((g_8c31644c + 0x15)));
         g_8c4daac0 = (int)(t2);
         return;
     case 2:
-        t3 = call_8c104e9c((void *)((g_8c31644c + 0x2a)));
+        t3 = load_resource_8c104e9c((void *)((g_8c31644c + 0x2a)));
         g_8c4daac0 = (int)(t3);
         return;
     case 3:
-        t4 = call_8c104e9c((void *)((g_8c31644c + 0x3f)));
+        t4 = load_resource_8c104e9c((void *)((g_8c31644c + 0x3f)));
         g_8c4daac0 = (int)(t4);
         return;
     case 4:
-        t5 = call_8c104e9c((void *)((g_8c31644c + 0x54)));
+        t5 = load_resource_8c104e9c((void *)((g_8c31644c + 0x54)));
         g_8c4daac0 = (int)(t5);
         return;
     }

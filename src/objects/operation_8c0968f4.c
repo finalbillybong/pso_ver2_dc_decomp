@@ -35,8 +35,8 @@ extern S_g8c460900 *g_8c460900;
 extern int g_8c469e48;
 extern S_L8c41cba0 g_8c41cba0;
 extern void call_8c09a658(void *, void *);
-extern float call_8c37eb0c(void *);
-extern float call_8c38c154(void *);
+extern float njSin_8c37eb0c(void *);
+extern float njCos_8c38c154(void *);
 extern float call_8c09a6f4(void);
 extern float call_8c09a710(void);
 extern int operation_8c09a64c(int);
@@ -63,9 +63,9 @@ void operation_8c0968f4(Object *o)
 L_8c096940:;
     call_8c09a658((void *)(&(&frame)->f08), (void *)(&(&frame)->f04));
     if ((&frame)->f04 != 0.0f) {
-        t1 = call_8c37eb0c((void *)((&frame)->f08));
+        t1 = njSin_8c37eb0c((void *)((&frame)->f08));
         o->f78 = (int)((&frame)->f04 * 1092.0f * t1 + (float)o->f78);
-        t2 = call_8c38c154((void *)((&frame)->f08));
+        t2 = njCos_8c38c154((void *)((&frame)->f08));
         o->f74 = (int)((&frame)->f04 * 1092.0f * t2 + (float)o->f74);
         v18 = (int)0x2bbc;
         if (g_8c460900 != 0 && ((g_8c460900->f34 & 2)) != 0) {

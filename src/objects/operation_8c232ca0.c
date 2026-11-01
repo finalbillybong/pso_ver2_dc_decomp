@@ -57,7 +57,7 @@ extern S_c8c0366dc *operation_8c0366dc(int);
 extern int call_8c036708(int);
 extern void operation_8c0365a8(int);
 extern void call_8c2330c0(Object *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c19a044(void *, int);
 extern void operation_8c233170(void *);
 extern void operation_8c199b14(void);
@@ -96,7 +96,7 @@ void operation_8c232ca0(Object *o)
                         return;
                     }
                 }
-                call_8c05fbf8(0x50006, 0, 0, 0);
+                play_se_8c05fbf8(0x50006, 0, 0, 0);
                 v3 = (S_vv3 *)o->f28;
                 o->f28->f80 = (o->f28->f80 & 0xffff) & -3;
                 if (v3->f98 == 0) {
@@ -115,7 +115,7 @@ void operation_8c232ca0(Object *o)
                         return;
                     }
                 }
-                call_8c05fbf8(0x50006, 0, 0, 0);
+                play_se_8c05fbf8(0x50006, 0, 0, 0);
                 v6 = (S_vv6 *)o->f28;
                 o->f28->f80 = (o->f28->f80 & 0xffff) & -3;
                 if (v6->f98 == 0) {

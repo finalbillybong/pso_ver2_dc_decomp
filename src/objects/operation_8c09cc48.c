@@ -11,7 +11,7 @@ struct S_vv13 {
     unsigned char f01;
 };
 extern void operation_8c09ccfc(void);
-extern void call_8c036d04(S_vv13 *);
+extern void TGameProtocol_dispatch_local_subcommand_8c036d04(S_vv13 *);
 void operation_8c09cc48(void)
 {
     S_vv1 *v1;
@@ -33,7 +33,7 @@ void operation_8c09cc48(void)
         while (v11 > (v12 = *(int *)0x8c46ec24)) {
             v13 = (S_vv13 *)(*(int *)0x8c46ec20 + v12);
             if ((unsigned char)v13->f00 != 0) {
-                call_8c036d04(v13);
+                TGameProtocol_dispatch_local_subcommand_8c036d04(v13);
                 *(int *)0x8c46ec24 += v13->f01;
             } else {
                 *(int *)0x8c46ec2c = 3;

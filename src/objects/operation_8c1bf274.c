@@ -74,12 +74,12 @@ struct S_c8c011ecc_42c_8_2c_30_30_30_4 {
 extern S_c8c011ecc *g_8c4e2be0;
 extern int g_8c4e2bf4;
 extern S_L8c4e2be4 g_8c4e2be4;
-extern S_c8c011ecc *call_8c011ecc(int);
+extern S_c8c011ecc *game_malloc_8c011ecc(int);
 extern void call_8c03d610(S_c8c011ecc *, int, void *, int, int, int);
 void operation_8c1bf274(void)
 {
     S_c8c011ecc *t1;
-    t1 = call_8c011ecc(0x440);
+    t1 = game_malloc_8c011ecc(0x440);
     if (t1 != 0) {
         call_8c03d610(t1, 1, (void *)((void *)0x8c3284ec), 0, 0, 0);
     }

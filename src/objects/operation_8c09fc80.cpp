@@ -30,7 +30,7 @@ extern int g_8c302188;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
-extern "C" void call_8c01d1ec(S_c8c122700 *, void *);
+extern "C" void TObjectShared_ctor_8c01d1ec(S_c8c122700 *, void *);
 extern "C" S_c8c122700 *operation_8c09fc80(int a0)
 {
     S_c8c122700 *t1;
@@ -39,7 +39,7 @@ extern "C" S_c8c122700 *operation_8c09fc80(int a0)
         S_c8c122700 *self = (S_c8c122700 *)t1;
         S_c8c122700 **home = &self;
         (void)home;
-        call_8c01d1ec(t1, g_8c44be98);
+        TObjectShared_ctor_8c01d1ec(t1, g_8c44be98);
         *(void **)((char *)self + 0x18) = (void *)(void *)0x8c26597c;
         ((S_c8c122700Data *)self)->f00 = (int)(g_8c302188);
         ((S_c8c122700Data *)self)->f1e = 0x98;

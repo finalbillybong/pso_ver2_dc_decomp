@@ -52,7 +52,7 @@ extern int g_8c469aa4;
 extern int g_8c469aac;
 extern int g_8c469ab0;
 extern char g_8c2fdbf0[];
-extern S_c8c011ecc *call_8c011ecc(int);
+extern S_c8c011ecc *game_malloc_8c011ecc(int);
 extern void call_8c03d610(S_c8c011ecc *, int, void *, int, int, int);
 extern void operation_8c08a548(void);
 extern void operation_8c07cd8c(void);
@@ -73,7 +73,7 @@ void operation_8c079104(void)
     int t4;
     int t5;
     int t6;
-    t1 = call_8c011ecc(0x440);
+    t1 = game_malloc_8c011ecc(0x440);
     if (t1 != 0) {
         call_8c03d610(t1, 1, (void *)((void *)0x8c2fda10), 0, 0, 0);
     }

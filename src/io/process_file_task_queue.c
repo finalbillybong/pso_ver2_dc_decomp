@@ -13,8 +13,8 @@ typedef char check_new_fields[(unsigned long)&((Task *)0)->buffer == 60 && (unsi
 extern void *active_handle, *scratch_buffer, *large_buffer;
 extern char buffer_pool[];
 extern void start_at(void), stop_at(void), cancel_at(void), remove_at(void), complete_at(void), tick_at(void), loading_wait_frame_8c104c60(void), process_at(void);
-extern void *buffer_at(unsigned int), *heap_at(unsigned int), *large_at(void *);
-extern void init_heap_at(void *, unsigned int, unsigned int), destroy_heap_at(void *, int), release_at(void *), release_large_at(void *), ADXF_ReadNw32_8c34d6ae(void *, int, void *);
+extern void *game_malloc_buffer_8c011e9c(unsigned int), *heap_at(unsigned int), *large_at(void *);
+extern void init_heap_at(void *, unsigned int, unsigned int), destroy_heap_at(void *, int), game_free_8c011ec0(void *), release_large_at(void *), ADXF_ReadNw32_8c34d6ae(void *, int, void *);
 extern int ADXF_GetStat_8c34da3c(void *), named_at(void *, const char *);
 extern void copy_words_at(void *, void *, int), copy_shorts_at(void *, void *, int), copy_bytes_at(void *, void *, int), decode_at(void *, void *);
 void process_file_task_queue(void) {

@@ -9,13 +9,13 @@ struct Object {
     char unknown0[0x238];
     Arg0_238 *f238;
 };
-extern void call_8c37e02c(int, void *);
+extern void njRotateZ_8c37e02c(int, void *);
 void operation_8c078574(Object *o)
 {
     if (*(int *)0x8c4689f0 == 1) {
-        call_8c37e02c(0, (void *)(o->f238));
+        njRotateZ_8c37e02c(0, (void *)(o->f238));
     }
     if (*(int *)0x8c4689f0 == 4) {
-        call_8c37e02c(0, (void *)(-(int)(o->f238)));
+        njRotateZ_8c37e02c(0, (void *)(-(int)(o->f238)));
     }
 }

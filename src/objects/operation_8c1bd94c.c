@@ -12,13 +12,13 @@ struct Object {
     char unknown48[0x30];
     int f78;
 };
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c199b20(int, int);
 void operation_8c1bd94c(Object *o, int a1)
 {
     int t1;
     if (o->f78 == 0) {
-        t1 = call_8c011ecc(0x24);
+        t1 = game_malloc_8c011ecc(0x24);
         if (t1 != 0) {
             call_8c199b20(t1, a1);
         }

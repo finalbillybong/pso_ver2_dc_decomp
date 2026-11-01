@@ -15,14 +15,14 @@ struct Object {
     void *f20;
 };
 extern void call_8c37d534(void *);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void call_8c011ed8(Object *);
 Object *operation_8c0305d8(Object *o, int a1)
 {
     if (o != 0) {
         o->f20 = (void *)0x8c2614ac;
         call_8c37d534((void *)(o->f0c));
-        call_8c011ec0((void *)(o->f14));
+        game_free_8c011ec0((void *)(o->f14));
         if ((short)a1 > 0) {
             call_8c011ed8(o);
         }

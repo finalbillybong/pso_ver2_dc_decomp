@@ -13,10 +13,10 @@ struct S_c8c18de4c {
 extern S_c8c18de4c *operator_new_8c18de4c(int);
 extern void memset_8c12b880(S_c8c18de4c *, int, int);
 extern int call_8c192764(S_c8c18de4c *);
-extern int call_8c011ecc(int);
-extern int call_8c2064b8(int, S_c8c18de4c *, int, void *);
+extern int game_malloc_8c011ecc(int);
+extern int compress_buffer_8c2064b8(int, S_c8c18de4c *, int, void *);
 extern void call_8c011ed8(int);
-extern void call_8c18de08(S_c8c18de4c *);
+extern void operator_delete_8c18de08(S_c8c18de4c *);
 extern void operation_8c0369c0(void *, int);
 void operation_8c01ac34(int a0)
 {
@@ -33,19 +33,19 @@ void operation_8c01ac34(int a0)
         if (t2 != 0) {
             memset_8c12b880(t2, 0, 0x8000);
             t4 = call_8c192764(t2);
-            t3 = call_8c011ecc(0x7230);
+            t3 = game_malloc_8c011ecc(0x7230);
             if (t3 != 0) {
-                t5 = call_8c2064b8(t3, t2, t4, (void *)(((char *)t1 + 0x8)));
+                t5 = compress_buffer_8c2064b8(t3, t2, t4, (void *)(((char *)t1 + 0x8)));
                 call_8c011ed8(t3);
                 v9 = (int)t5;
             }
-            call_8c18de08(t2);
+            operator_delete_8c18de08(t2);
         }
         t1->f00 = 0x6d;
         t1->f01 = 0;
         t1->f02 = 0;
         t1->f04 = ((unsigned int)v9 + 3 >> 2 << 2) + 8;
         operation_8c0369c0((void *)t1, a0);
-        call_8c18de08(t1);
+        operator_delete_8c18de08(t1);
     }
 }

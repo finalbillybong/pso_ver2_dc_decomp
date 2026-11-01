@@ -24,10 +24,10 @@ struct S_vv7 {
     S_vv7_2c *f2c;
     S_vv7_30 *f30;
 };
-extern void call_8c38ae68(void);
+extern void njPushMatrixEx_8c38ae68(void);
 extern void call_8c38a714(int, int);
 extern void call_8c3aa702(void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c0d1f80(void *);
 void operation_8c0d1f80(S_vv1 *a0)
 {
@@ -38,7 +38,7 @@ void operation_8c0d1f80(S_vv1 *a0)
     int v8;
     char *v9;
     do {
-        call_8c38ae68();
+        njPushMatrixEx_8c38ae68();
         v2 = (int)*(int *)0x8c46fd74;
         *(int *)0x8c46fd74 = v2 + 0x40;
         call_8c38a714(0, v2);
@@ -46,12 +46,12 @@ void operation_8c0d1f80(S_vv1 *a0)
         if (((v3 & 8)) == 0) {
             call_8c3aa702((void *)(a0->f04));
         }
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         if (((v3 & 0x10)) == 0) {
             v6 = (int)a0->f2c;
             v7 = (S_vv7 *)v6;
             do {
-                call_8c38ae68();
+                njPushMatrixEx_8c38ae68();
                 v8 = (int)*(int *)0x8c46fd74;
                 *(int *)0x8c46fd74 = v8 + 0x40;
                 call_8c38a714(0, v8);
@@ -59,7 +59,7 @@ void operation_8c0d1f80(S_vv1 *a0)
                 if ((((int)(v9) & 8)) == 0) {
                     call_8c3aa702((void *)(v7->f04));
                 }
-                call_8c38ad10();
+                njPopMatrixEx_8c38ad10();
                 if ((((int)(v9) & 0x10)) == 0) {
                     call_8c0d1f80((void *)(v7->f2c));
                 }

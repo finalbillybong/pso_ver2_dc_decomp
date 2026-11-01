@@ -41,8 +41,8 @@ struct S_x36320 {
 };
 extern S_L8c510e88 g_8c510e88;
 extern int lookup_low_id(int);
-extern void call_8c37f6f0(void *, int);
-extern float call_8c37e480(void *);
+extern void vector_sub_in_place_8c37f6f0(void *, int);
+extern float njScalor_8c37e480(void *);
 int operation_8c2473a8(Object *o)
 {
     Frame frame;
@@ -64,9 +64,9 @@ int operation_8c2473a8(Object *o)
     while (4 > v2) {
         if (v2 != o->fe4 && ((S_x19984 *)((char *)&g_8c510e88.f04 + v2 * 0xc))->f00 != -10000.0f) {
             *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&((S_x36320 *)((char *)&g_8c510e88 + v2 * 0xc))->f00;
-            call_8c37f6f0((void *)(&(&frame)->f0c), pos);
+            vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f0c), pos);
             (&frame)->f0c.f04 = 0.0f;
-            t2 = call_8c37e480((void *)(&(&frame)->f0c));
+            t2 = njScalor_8c37e480((void *)(&(&frame)->f0c));
             if (v3 > t2) {
                 v3 = (float)t2;
             }
@@ -77,9 +77,9 @@ int operation_8c2473a8(Object *o)
         return 0;
     }
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f3c;
-    call_8c37f6f0((void *)(&frame), pos);
+    vector_sub_in_place_8c37f6f0((void *)(&frame), pos);
     (&frame)->f00.f04 = 0.0f;
-    t3 = call_8c37e480((void *)(&frame));
+    t3 = njScalor_8c37e480((void *)(&frame));
     if (!(v3 > t3)) {
         if (t3 != v3) {
             goto L_8c247474;

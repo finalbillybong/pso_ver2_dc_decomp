@@ -29,7 +29,7 @@ struct Arg0_110_0 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c285688 g_8c285688;
 extern void clear_emit_slot(int);
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void destroy_effect_d870(void *, short);
 extern void operation_8c122774(void *, void *);
 Object *operation_8c0b75a4(Object *o, int a1)
@@ -45,7 +45,7 @@ Object *operation_8c0b75a4(Object *o, int a1)
             v1 = (unsigned int)(v1 + 1);
         }
         clear_emit_slot((int)(o->f108));
-        call_8c18de08((void *)(o->f110));
+        operator_delete_8c18de08((void *)(o->f110));
         destroy_effect_d870((void *)o, (short)0);
         if ((short)a1 > 0) {
             operation_8c122774(g_8c4d97e0, (void *)o);

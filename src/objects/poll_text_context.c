@@ -6,5 +6,5 @@ typedef char check_callback[(unsigned long)&((View *)0)->callback==36?1:-1];
 typedef char check_state[(unsigned long)&((View *)0)->state==40?1:-1];
 typedef char check_handle[(unsigned long)&((View *)0)->handle==44?1:-1];
 typedef char check_text[(unsigned long)&((View *)0)->text==48?1:-1];
-extern int busy_at(int),error_at(int);extern void complete_at(void),advance_at(View *);
-void poll_text_context(View *o) {if(!busy_at(o->handle)) {complete_at();if(!error_at(o->handle)) {advance_at(o);o->state=4;}else o->state=5;}}
+extern int bu_check_busy_8c372d98(int),error_at(int);extern void complete_at(void),advance_at(View *);
+void poll_text_context(View *o) {if(!bu_check_busy_8c372d98(o->handle)) {complete_at();if(!error_at(o->handle)) {advance_at(o);o->state=4;}else o->state=5;}}

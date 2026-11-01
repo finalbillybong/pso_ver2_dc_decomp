@@ -15,12 +15,12 @@ struct Object {
     Block32 tag;
 };
 extern S_c8c18de4c *operator_new_8c18de4c(int);
-extern int call_8c378bf8(int, S_c8c18de4c *);
+extern int syFlash_open_partition_8c378bf8(int, S_c8c18de4c *);
 extern void call_8c378d88(int, S_c8c18de4c *);
 extern int call_8c378e04(void);
 extern void call_8c378dc4(int, S_c8c18de4c *);
 extern void call_8c378e98(void);
-extern void call_8c18de08(S_c8c18de4c *);
+extern void operator_delete_8c18de08(S_c8c18de4c *);
 int operation_8c2326f4(Object *o)
 {
     S_c8c18de4c *t3;
@@ -32,7 +32,7 @@ int operation_8c2326f4(Object *o)
     int t5;
     t3 = operator_new_8c18de4c(0x3c);
     t1 = operator_new_8c18de4c(0x4000);
-    t2 = call_8c378bf8(2, t1);
+    t2 = syFlash_open_partition_8c378bf8(2, t1);
     if (t2 == 0) {
         call_8c378d88(7, t3);
         do {
@@ -66,7 +66,7 @@ L_8c232784:;
     } else {
         v7 = (int)2;
     }
-    call_8c18de08(t1);
-    call_8c18de08(t3);
+    operator_delete_8c18de08(t1);
+    operator_delete_8c18de08(t3);
     return (int)(v7);
 }

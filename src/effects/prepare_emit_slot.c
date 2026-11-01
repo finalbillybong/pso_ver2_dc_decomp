@@ -9,9 +9,9 @@ extern unsigned char emit_handles[];
 #define listener ((unsigned char **)0x8c46ee80)
 #define listener_position ((float *)0x8c46885c)
 extern float distance_xz_at(void *,void *);
-#define root_at ((float (*)(float))0x8c37f6c0)
+#define signed_sqrt_8c37f6c0 ((float (*)(float))0x8c37f6c0)
 #define angle_at ((float (*)(float,float))0x8c130334)
-extern float direction_at(int);
+extern float njSin_8c37eb0c(int);
 #define gain_a ((int *)0x8c467a68)
 #define gain_b ((int *)0x8c467a64)
 #define handle_field_at ((void (*)(void *,int,int))0x8c345864)
@@ -29,7 +29,7 @@ int prepare_emit_slot(int slot,int update)
         else {
             float d=distance_xz_at(position,listener_position);
             if (d<90000.0f) {
-                float a=(root_at(d)-40.0f)/260.0f;
+                float a=(signed_sqrt_8c37f6c0(d)-40.0f)/260.0f;
                 a=a>0.0f?a:0.0f;
                 attenuation=(int)(-(a*127.0f));
             } else attenuation=-256;
@@ -57,7 +57,7 @@ int prepare_emit_slot(int slot,int update)
     pan=0;
     if (position && *listener) {
         int converted=(int)(angle_at(position[2]-*(float *)(*listener+EMIT_LISTENER_OFFSET(EmitListener, z)),position[0]-*(float *)(*listener+EMIT_LISTENER_OFFSET(EmitListener, x)))*65536.0f/6.283184051513671875f);
-        pan=(int)(direction_at(converted+*(int *)(*listener+EMIT_LISTENER_OFFSET(EmitListener, angle))+0x4000)*127.0f);
+        pan=(int)(njSin_8c37eb0c(converted+*(int *)(*listener+EMIT_LISTENER_OFFSET(EmitListener, angle))+0x4000)*127.0f);
     } else if (position && (*(unsigned int *)(emit_slots+offset)&0x800)) pan=(int)(position[0]*1.587499976158142f);
     {
         register unsigned char *base = emit_slots + 28;

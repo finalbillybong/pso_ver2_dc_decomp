@@ -4,11 +4,11 @@ typedef char check_layout[sizeof(Parent)==44 && sizeof(Dialog)==940 && (unsigned
 extern void *heap,*context;
 extern Dialog *heap_alloc_8c122700(void *,unsigned int),*construct(Dialog *,void *,Parent *,int,int);
 extern void accept(Parent *);
-extern void cancel(void),reset_input(void);
+extern void cancel(void),reset_controller_state_8c01d9dc(void);
 void create_callback_dialog_8c11280c(Parent *o) {
     Dialog *dialog=heap_alloc_8c122700(heap,940);
     if(dialog)construct(dialog,context,o,o->value,41);
     dialog->accept=accept;dialog->cancel=cancel;
-    reset_input();
+    reset_controller_state_8c01d9dc();
     o->state=5;
 }

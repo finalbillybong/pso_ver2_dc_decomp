@@ -27,7 +27,7 @@ struct S_g8c46fe20 {
 };
 extern char g_8c33fb14[];
 extern int operation_8c156c24(int, int);
-extern void call_8c12b048(void *, void *, ...);
+extern void sprintf_8c12b048(void *, void *, ...);
 extern void operation_8c156d30(Arg0_24 *, void *, int, int);
 extern void call_8c156f50(Arg0_24 *);
 extern void operation_8c253328(void);
@@ -57,7 +57,7 @@ void operation_8c2531ec(Object *o)
         t1 = operation_8c156c24((int)((void *)0x8c33fb0c), 1);
         o->f24 = (Arg0_24 *)t1;
         if (o->f24 != 0) {
-            call_8c12b048((void *)(((char *)o + 0x30)), (void *)((g_8c33fb14 + 0x10)), (void *)(*(S_g8c44be1c **)0x8c44be1c));
+            sprintf_8c12b048((void *)(((char *)o + 0x30)), (void *)((g_8c33fb14 + 0x10)), (void *)(*(S_g8c44be1c **)0x8c44be1c));
             operation_8c156d30((Arg0_24 *)(o->f24), (void *)(((char *)o + 0x30)), 0, 0);
             call_8c156f50((Arg0_24 *)(o->f24));
             o->f24->f80 = (o->f24->f80 & 0xffff) | 0x40;

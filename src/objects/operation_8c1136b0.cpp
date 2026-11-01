@@ -42,13 +42,13 @@ typedef struct ObjectData {
 } ObjectData;
 extern int g_8c44be04;
 extern "C" char g_8c30ff14[];
-extern "C" void operation_8c1005bc(int);
+extern "C" void game_ADXT_StartFname_wrapper_8c1005bc(int);
 extern "C" void operation_03cf50(unsigned short);
 extern "C" void operation_03cfe4(unsigned short);
 extern "C" void operation_8c1136b0(Object *o, Arg1 *a1)
 {
     if (((a1->f0b & 2)) != 0 && a1->f0a == g_8c44be04) {
-        operation_8c1005bc((int)(g_8c30ff14 + 0x15));
+        game_ADXT_StartFname_wrapper_8c1005bc((int)(g_8c30ff14 + 0x15));
     }
     if (((a1->f0b & 1)) != 0) {
         operation_03cf50((unsigned short)(a1->f08));

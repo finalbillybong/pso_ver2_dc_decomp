@@ -42,8 +42,8 @@ typedef struct ObjectData {
 extern Block16 g_8c32a318;
 extern "C" char g_8c32a328[];
 extern "C" void operation_8c0c5480(void *, void *, Frame *);
-extern "C" void call_8c38c5b6(int);
-extern "C" void call_8c38cf80(int, void *, ...);
+extern "C" void njPrintColor_8c38c5b6(int);
+extern "C" void debug_print_at_8c38cf80(int, void *, ...);
 extern "C" void operation_8c1d96bc(Object *o)
 {
     Frame frame;
@@ -66,11 +66,11 @@ extern "C" void operation_8c1d96bc(Object *o)
         operation_8c0c5480((void *)(((char *)o + 0x3c)), (void *)(((char *)o + 0x60)), (Frame *)((&frame)));
     }
     t1 = -0xff0100;
-    call_8c38c5b6(t1);
+    njPrintColor_8c38c5b6(t1);
     pm5 = (void *)((g_8c32a328 + 0x191));
-    call_8c38cf80(0x13001a, pm5);
-    call_8c38cf80(0x13001b, (void *)((g_8c32a328 + 0x19f)));
-    call_8c38cf80(0x13001c, (void *)((g_8c32a328 + 0x1ae)));
-    call_8c38cf80(0x13001e, (void *)((g_8c32a328 + 0x1bc)));
-    call_8c38c5b6(-0xf0f10);
+    debug_print_at_8c38cf80(0x13001a, pm5);
+    debug_print_at_8c38cf80(0x13001b, (void *)((g_8c32a328 + 0x19f)));
+    debug_print_at_8c38cf80(0x13001c, (void *)((g_8c32a328 + 0x1ae)));
+    debug_print_at_8c38cf80(0x13001e, (void *)((g_8c32a328 + 0x1bc)));
+    njPrintColor_8c38c5b6(-0xf0f10);
 }

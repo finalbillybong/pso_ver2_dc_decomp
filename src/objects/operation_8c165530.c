@@ -47,13 +47,13 @@ extern void operation_8c05b9f4(int, int, int, int);
 extern void call_8c38c0f0(Frame *);
 extern void call_8c38c0e6(int, int);
 extern void call_8c37b566(int);
-extern void call_8c38ae68(void);
+extern void njPushMatrixEx_8c38ae68(void);
 extern void call_8c3827d8(void *);
-extern void call_8c382a40(void *);
-extern void call_8c37df90(int, void *);
-extern void call_8c37dd28(int, void *);
+extern void translate_current_matrix_v_8c382a40(void *);
+extern void njRotateY_8c37df90(int, void *);
+extern void njRotateX_8c37dd28(int, void *);
 extern void call_8c3aa716(void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c165530(Object *o)
 {
     Frame frame;
@@ -76,14 +76,14 @@ void operation_8c165530(Object *o)
         call_8c38c0e6(0xff00, 0x800);
         call_8c37b566(0x2500);
     }
-    call_8c38ae68();
+    njPushMatrixEx_8c38ae68();
     call_8c3827d8(g_8c4da284);
-    call_8c382a40((void *)(((char *)o + 0x3c)));
-    call_8c37df90(0, (void *)(o->f64));
-    call_8c37dd28(0, (void *)(o->f60));
+    translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
+    njRotateY_8c37df90(0, (void *)(o->f64));
+    njRotateX_8c37dd28(0, (void *)(o->f60));
     pm1 = (0x8 + (char *)g_8c4da280->f42c);
     call_8c3aa716((void *)(*(S_g8c4da280_42c_8 **)(pm1 + (*(int *)((char *)0x8c2864a0 + (o->fb0 << 2)) << 4))));
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
     pm3 = 0xff00;
     g_8c575570 = (g_8c46f560);
     call_8c38c0e6(pm3, 0);

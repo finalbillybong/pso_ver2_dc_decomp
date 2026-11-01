@@ -10,14 +10,14 @@ extern S_g8c513420 *g_8c513420;
 extern S_g8c513424 *g_8c513424;
 extern S_g8c513428 *g_8c513428;
 extern void apply_resource_37d534(void *);
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void call_8c011ed8(void *);
 void operation_8c25cc00(void)
 {
     apply_resource_37d534(g_8c513420);
-    call_8c18de08(g_8c513428);
+    operator_delete_8c18de08(g_8c513428);
     g_8c513428 = 0;
-    call_8c18de08(g_8c513424);
+    operator_delete_8c18de08(g_8c513424);
     g_8c513424 = 0;
     call_8c011ed8(g_8c513420);
     g_8c513420 = 0;

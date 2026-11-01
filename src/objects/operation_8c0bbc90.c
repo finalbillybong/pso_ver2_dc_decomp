@@ -31,10 +31,10 @@ struct S_vv3 {
     char unknown0[0x4];
     Vector3 f04;
 };
-extern float call_8c37e480(void *);
+extern float njScalor_8c37e480(void *);
 extern void call_8c3bdf60(S_vv4 *, int);
-extern void call_8c37f6f0(S_vv4 *, int);
-extern void call_8c37b630(S_vv4 *);
+extern void vector_sub_in_place_8c37f6f0(S_vv4 *, int);
+extern void njUnitVector_8c37b630(S_vv4 *);
 extern void call_8c0bbd84(Object *, S_vv4 *, float);
 void operation_8c0bbc90(Object *o, int a1)
 {
@@ -53,7 +53,7 @@ void operation_8c0bbc90(Object *o, int a1)
     v3 = (S_vv3 *)o->f28;
     v4 = (S_vv4 *)o->f30;
     while (v2->f00 >= 2) {
-        t2 = call_8c37e480((void *)((int)v2 + 4));
+        t2 = njScalor_8c37e480((void *)((int)v2 + 4));
         *(Vector3 *)&v4->f00 = *(Vector3 *)&v3->f04;
         v4 = (S_vv4 *)((char *)v4 + 12);
         v6 = (int)(v2->f00 + v5);
@@ -62,14 +62,14 @@ void operation_8c0bbc90(Object *o, int a1)
             call_8c3bdf60(v4, a1);
             v7 = (int)-0xc;
             v8 = (int)((int)v4 + v7);
-            call_8c37f6f0(v4, v8);
-            t1 = call_8c37e480((void *)v4);
+            vector_sub_in_place_8c37f6f0(v4, v8);
+            t1 = njScalor_8c37e480((void *)v4);
             if (t1 == 0.0f) {
                 v4->f00.f00 = 0.0f;
                 v4->f00.f04 = -1.0f;
                 v4->f00.f08 = 0.0f;
             } else {
-                call_8c37b630(v4);
+                njUnitVector_8c37b630(v4);
             }
             v4->f00.f00 *= t2;
             v4->f00.f04 *= t2;

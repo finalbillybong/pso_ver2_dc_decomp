@@ -16,8 +16,8 @@ extern int call_8c01e180(void);
 extern void select_state3_8c01c234(void);
 extern int operation_8c104da8(void);
 extern void request_game_mode_8c01c1a4(int);
-extern void call_8c380516(void);
-void operation_8c0e9f68(void)
+extern void wait_vsync_and_flip_8c380516(void);
+void mode_ending_frame_8c0e9f68(void)
 {
     int t1;
     int t2;
@@ -38,5 +38,5 @@ void operation_8c0e9f68(void)
     if (t2 != 0) {
         request_game_mode_8c01c1a4(0);
     }
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

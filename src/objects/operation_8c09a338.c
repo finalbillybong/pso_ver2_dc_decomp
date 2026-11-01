@@ -24,7 +24,7 @@ struct Object {
 extern Block8 g_8c3011cc;
 extern void operation_195990(int, void *, float, float);
 extern void operation_195984(int, void *, void *, float);
-extern float call_8c37eb0c(int);
+extern float njSin_8c37eb0c(int);
 void operation_8c09a338(Object *o)
 {
     Frame frame;
@@ -34,7 +34,7 @@ void operation_8c09a338(Object *o)
     t1 = o->f34 * o->f34;
     *(Block8 *)&(&frame)->f00 = *(Block8 *)&g_8c3011cc;
     operation_195990(0x13, (&frame), -1.6f, t1);
-    call_8c37eb0c(o->f2c << 0xa);
+    njSin_8c37eb0c(o->f2c << 0xa);
     v = o->f34;
     if (v > 0.0f) {
         if (!(0.33f > v)) {
@@ -56,7 +56,7 @@ void operation_8c09a338(Object *o)
         (&frame)->f14 = 124.0f;
         w = w * 232.0f + 115.0f;
         (&frame)->f10 = 115.0f;
-        t1 = call_8c37eb0c(o->f2c << 0xa);
+        t1 = njSin_8c37eb0c(o->f2c << 0xa);
         (&frame)->f10 += t1 * 9.0f;
         (&frame)->f08 = (w - (&frame)->f10) / 48.0f;
         operation_195984(0x1e, &(&frame)->f10, &(&frame)->f08, -3.5f);

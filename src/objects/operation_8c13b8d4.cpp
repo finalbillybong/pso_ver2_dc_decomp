@@ -113,9 +113,9 @@ struct S_vv2 {
 extern "C" int angle_step(int, int, int);
 extern "C" int angle_difference(int, int);
 extern "C" int create_effect_769c(void *, int);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void call_8c01c5f0(Object *);
-extern "C" void call_8c102cd0(void *, int, int, int);
+extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void operation_8c13b8d4(Object *o)
 {
     Frame frame;
@@ -154,7 +154,7 @@ extern "C" void operation_8c13b8d4(Object *o)
         (&frame)->f00.f04 -= 20.0f;
         t3 = create_effect_769c((void *)(&frame), 0x31);
         ((ObjectData *)o)->f3e8 = (Arg0_3e8 *)(int)t3;
-        call_8c05fbf8(0x3001e, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x3001e, (void *)(((char *)o + 0x3c)), 0, 0);
         ((ObjectData *)o)->f398 = 3;
         break;
     case 3:
@@ -174,6 +174,6 @@ extern "C" void operation_8c13b8d4(Object *o)
 L_8c13ba14:;
     call_8c01c5f0(o);
     if (*(int *)0x8c4d9b70 >= 0) {
-        call_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+        minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
     }
 }

@@ -5,12 +5,12 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4dbaf4 S_g8c4dbaf4;
 extern int operation_8c19b054(void);
-extern int call_8c372d98(int);
+extern int bu_check_busy_8c372d98(int);
 extern int call_8c372d38(void *, void *);
 extern int operation_8c181140(int);
 extern int operation_8c1810e0(int);
 extern int vmu_find_file_8c01018c(int);
-extern int call_8c380516(void);
+extern int wait_vsync_and_flip_8c380516(void);
 extern int g_8c4dbb20;
 extern int g_8c4db9e8;
 int operation_8c180d54(void)
@@ -43,7 +43,7 @@ int operation_8c180d54(void)
         if (*(int *)0x8c4dbaec == 0) {
             t1 = operation_8c19b054();
             *(int *)0x8c4dbaf4 = (char)t1;
-            t2 = call_8c372d98((int)((char)t1));
+            t2 = bu_check_busy_8c372d98((int)((char)t1));
             v1 = (int)t2;
             if (t2 == 0) {
                 t3 = call_8c372d38((void *)(*(S_g8c4dbaf4 **)0x8c4dbaf4), (void *)((void *)0x8c319912));
@@ -70,7 +70,7 @@ int operation_8c180d54(void)
                 if ((int)v4 != v3) {
                     break;
                 }
-                call_8c380516();
+                wait_vsync_and_flip_8c380516();
             }
             m1 = -1;
             if ((int)(v4) != m1) {
@@ -87,7 +87,7 @@ int operation_8c180d54(void)
                 if ((int)v6 != v5) {
                     break;
                 }
-                call_8c380516();
+                wait_vsync_and_flip_8c380516();
             }
             v9 = (int)v6;
             if ((int)(v6) != -1) {

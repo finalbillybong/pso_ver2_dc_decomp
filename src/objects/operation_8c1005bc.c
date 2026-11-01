@@ -10,8 +10,8 @@ struct S_L8c4d51d4 {
     S_L8c4d51d4_8 *f08;
 };
 extern S_L8c4d51d4 g_8c4d51d4;
-extern void call_8c350ef8(void *, int);
-void operation_8c1005bc(int a0)
+extern void ADXT_StartFname_8c350ef8(void *, int);
+void game_ADXT_StartFname_wrapper_8c1005bc(int a0)
 {
-    call_8c350ef8((void *)((&g_8c4d51d4)->f08), a0);
+    ADXT_StartFname_8c350ef8((void *)((&g_8c4d51d4)->f08), a0);
 }

@@ -48,7 +48,7 @@ typedef struct S_c8c053d84Data {
 extern int g_8c44be04;
 extern "C" char g_8c30ff14[];
 extern "C" S_c8c053d84 *lookup_object_by_id(unsigned short);
-extern "C" void operation_8c1005bc(int);
+extern "C" void game_ADXT_StartFname_wrapper_8c1005bc(int);
 extern "C" void operation_03cf64(unsigned short, int);
 extern "C" void operation_03cff8(unsigned short, int);
 extern "C" void handle_6x05_write_switch_flag_8c113628(Object *o)
@@ -60,7 +60,7 @@ extern "C" void handle_6x05_write_switch_flag_8c113628(Object *o)
         return;
     }
     if (((o->f0b & 2)) != 0 && o->f0a == g_8c44be04) {
-        operation_8c1005bc((int)(g_8c30ff14 + 0x15));
+        game_ADXT_StartFname_wrapper_8c1005bc((int)(g_8c30ff14 + 0x15));
     }
     if (((o->f0b & 1)) != 0) {
         operation_03cf64((unsigned short)(o->f08), (int)(o->f0a));

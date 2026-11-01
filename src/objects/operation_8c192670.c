@@ -13,7 +13,7 @@ struct S_vv57 {
 extern S_g8c4dc2c4 *g_8c4dc2c4;
 extern S_g8c4dc2c8 *g_8c4dc2c8;
 extern int find_record_8c0744dc(int);
-extern void operation_8c162de4(void *, int);
+extern void create_floor_item_8c162de4(void *, int);
 void operation_8c192670(int a0)
 {
     S_vv57 *v57;
@@ -28,7 +28,7 @@ void operation_8c192670(int a0)
                 v57 = (S_vv57 *)(*(int *)((char *)g_8c4dc2c4 + v60) + v58 * 0x24);
                 t1 = find_record_8c0744dc((int)(v57->f1c));
                 if (t1 == 0) {
-                    operation_8c162de4((void *)v57, 1);
+                    create_floor_item_8c162de4((void *)v57, 1);
                 }
             }
         }

@@ -19,7 +19,7 @@ struct Arg0_58 {
 };
 extern char g_8c41cba0[];
 extern int operation_8c01d844(int, int, int, int);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c19a044(void *, int);
 extern void operation_8c18caac(void *);
 void operation_8c18bd28(Object *o)
@@ -56,7 +56,7 @@ L_8c18bd76:;
         v6 = (int)(v6 + 1);
 L_8c18bd9c:;
         if (v6 != o->f54) {
-            call_8c05fbf8(0x50000, 0, 0, 0);
+            play_se_8c05fbf8(0x50000, 0, 0, 0);
             v12 = (short)o->f52;
             if ((short)v12 > v6) {
                 v13 = (int)5;

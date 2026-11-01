@@ -36,9 +36,9 @@ struct S_vv3 {
     char unknownc[0x10];
     Vector3 f1c;
 };
-extern void call_8c37f6f0(void *, void *);
-extern float call_8c37eb0c(int);
-extern float call_8c38c154(int);
+extern void vector_sub_in_place_8c37f6f0(void *, void *);
+extern float njSin_8c37eb0c(int);
+extern float njCos_8c38c154(int);
 void operation_8c1b4470(Object *o)
 {
     Frame frame;
@@ -53,9 +53,9 @@ void operation_8c1b4470(Object *o)
     while (3 > v2) {
         *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&((S_x44624 *)((int)o + v1 + v2 * 0x18))->f00;
         *(Vector3 *)&v3->f1c = *(Vector3 *)&(&frame)->f0c;
-        call_8c37f6f0((void *)(&(&frame)->f0c), (void *)(((char *)o + 0x3c)));
-        t2 = call_8c37eb0c((int)(-(int)(o->f64)));
-        t1 = call_8c38c154((int)(-(int)(o->f64)));
+        vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f0c), (void *)(((char *)o + 0x3c)));
+        t2 = njSin_8c37eb0c((int)(-(int)(o->f64)));
+        t1 = njCos_8c38c154((int)(-(int)(o->f64)));
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&(&frame)->f0c;
         {
             float x;

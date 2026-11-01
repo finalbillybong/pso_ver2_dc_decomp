@@ -59,7 +59,7 @@ extern "C" int create_effect_769c(void *, int);
 extern "C" void set_effect_bits(void *, unsigned short);
 extern "C" void call_8c05fd7c(int, Object *, void *, int, int);
 extern "C" int create_effect_777c(void *, int);
-extern "C" void call_8c05fbf8(int, void *, int, int);
+extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" S_c8c1794c8 *record30_8c1794c8(int);
 extern "C" void create_effect_b7684(void *, void *, void *, void *);
 extern "C" void create_effect_b7cf0(void *, void *, void *, void *);
@@ -110,7 +110,7 @@ L_8c1b5fe0:;
         if (t2 != 0) {
             set_effect_bits((void *)t2, (unsigned short)0x40);
         }
-        call_8c05fbf8(0x30013, (void *)(((char *)o + 0x3c)), 0, 1);
+        play_se_8c05fbf8(0x30013, (void *)(((char *)o + 0x3c)), 0, 1);
         if (v1 == 0) {
             p = (char *)o + 0x3c0;
             t3 = record30_8c1794c8(0x36);

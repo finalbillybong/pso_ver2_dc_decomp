@@ -8,13 +8,13 @@ struct S_g8c4db520 {
     char unknown0[0x4];
     short f04;
 };
-extern void call_8c22ab48(void);
+extern void vmu_load_download_quest_files_8c22ab48(void);
 void operation_8c16ed6c(void)
 {
     if (*(int *)0x8c4db520 != 0) {
         (*(S_g8c4db520 **)0x8c4db520)->f04 |= 4;
     }
-    call_8c22ab48();
+    vmu_load_download_quest_files_8c22ab48();
     if (*(int *)0x8c4db520 != 0) {
         (*(S_g8c4db520 **)0x8c4db520)->f04 &= -5;
     }

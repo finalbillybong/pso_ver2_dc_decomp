@@ -75,12 +75,12 @@ extern Vector3 g_8c326e68;
 extern Vector3 g_8c326e74;
 extern S_g8c46ee80 *g_8c46ee80;
 extern char g_8c326d64[];
-extern void call_8c38ae68(void);
-extern void call_8c37b5c4(int);
-extern void call_8c382a58(int, void *);
-extern void call_8c37df90(int, void *);
-extern void call_8c38ad10(void);
-extern float call_8c37e480(void *);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void njUnitMatrix_8c37b5c4(int);
+extern void njTranslateV_8c382a58(int, void *);
+extern void njRotateY_8c37df90(int, void *);
+extern void njPopMatrixEx_8c38ad10(void);
+extern float njScalor_8c37e480(void *);
 extern void forward_effect_view(void *, void *);
 void operation_8c1b4e40(Object *o)
 {
@@ -97,10 +97,10 @@ void operation_8c1b4e40(Object *o)
     float t1;
     float fz;
     v1 = (float)0.0f;
-    call_8c38ae68();
-    call_8c37b5c4(0);
-    call_8c382a58(0, (void *)(((char *)o + 0x3c)));
-    call_8c37df90(0, (void *)(o->f64));
+    njPushMatrixEx_8c38ae68();
+    njUnitMatrix_8c37b5c4(0);
+    njTranslateV_8c382a58(0, (void *)(((char *)o + 0x3c)));
+    njRotateY_8c37df90(0, (void *)(o->f64));
     v3 = (int)0;
     v2 = (int)0x3d8;
     while (*(int *)((char *)((char *)o + 0x0) + (v2)) > v3) {
@@ -113,7 +113,7 @@ void operation_8c1b4e40(Object *o)
         ((S_x90336 *)(v5 + (char *)&(&frame)->f4c))->f00 = (&frame)->f38;
         v3 = (int)(v3 + 1);
     }
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
     v2 = (int)0x3d8;
     *(Vector3 *)&(&frame)->f24 = *(Vector3 *)&g_8c46ee80->f90;
     v7 = (int)0;
@@ -125,7 +125,7 @@ void operation_8c1b4e40(Object *o)
         (&frame)->f18 = (&frame)->f24.f00 - ((S_x91296 *)(v6 + (char *)&(&frame)->f48))->f00;
         (&frame)->f20 = fz - ((S_x53568 *)(v6 + (char *)&(&frame)->f4c))->f00;
         (&frame)->f1c = 0.0f;
-        t1 = call_8c37e480((void *)(&(&frame)->f18));
+        t1 = njScalor_8c37e480((void *)(&(&frame)->f18));
         if (v9 > t1 && (v9 - t1) > v8) {
             v8 = (float)(v9 - t1);
         }

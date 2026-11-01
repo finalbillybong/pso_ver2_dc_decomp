@@ -42,13 +42,13 @@ struct S_vv3 {
     S_vv3_4 *f04;
 };
 extern int g_8c4e30c0;
-extern void call_8c38ae68(void);
-extern void call_8c382a40(void *);
-extern void call_8c37df90(int, void *);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void translate_current_matrix_v_8c382a40(void *);
+extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3827d8(void *);
 extern void call_8c3aa702(void *);
 extern void call_8c3a9436(void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c391c94(void);
 extern void call_8c391cc4(void);
 void operation_8c1e4190(Object *o)
@@ -59,28 +59,28 @@ void operation_8c1e4190(Object *o)
     if (g_8c4e30c0 != 0) {
         switch (o->f30a) {
         case 0:
-            call_8c38ae68();
-            call_8c382a40((void *)(((char *)o + 0x3c)));
-            call_8c37df90(0, (void *)(o->f64));
+            njPushMatrixEx_8c38ae68();
+            translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
+            njRotateY_8c37df90(0, (void *)(o->f64));
             call_8c3827d8((void *)(o->f28));
             v1 = (S_vv1 *)o->f38;
-            call_8c38ae68();
-            call_8c382a40((void *)((int)v1 + 8));
+            njPushMatrixEx_8c38ae68();
+            translate_current_matrix_v_8c382a40((void *)((int)v1 + 8));
             call_8c3aa702((void *)(v1->f04));
             v2 = (S_vv2 *)v1->f2c;
-            call_8c38ae68();
-            call_8c382a40((void *)((int)v2 + 8));
+            njPushMatrixEx_8c38ae68();
+            translate_current_matrix_v_8c382a40((void *)((int)v2 + 8));
             call_8c3a9436((void *)(v2->f04));
-            call_8c38ad10();
+            njPopMatrixEx_8c38ad10();
             v3 = (S_vv3 *)v2->f30;
-            call_8c38ae68();
-            call_8c382a40((void *)((int)v3 + 8));
+            njPushMatrixEx_8c38ae68();
+            translate_current_matrix_v_8c382a40((void *)((int)v3 + 8));
             call_8c391c94();
             call_8c3aa702((void *)(v3->f04));
             call_8c391cc4();
-            call_8c38ad10();
-            call_8c38ad10();
-            call_8c38ad10();
+            njPopMatrixEx_8c38ad10();
+            njPopMatrixEx_8c38ad10();
+            njPopMatrixEx_8c38ad10();
         }
     }
 }

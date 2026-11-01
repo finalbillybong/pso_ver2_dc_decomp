@@ -11,7 +11,7 @@ extern char *g_data2_end_8c3f300c;
 extern char *g_data2_rom_8c3f2ff8;
 extern int g_hook_arg_8c3f2fe8;
 extern void game_main_8c01bbec(void);
-extern void hook_init_8c367f02(int);
+extern void syLib_hook_init_8c367f02(int);
 extern void hook_exit_8c367f5a(int);
 
 void init_sections_8c340888(void);
@@ -36,7 +36,7 @@ run:
 
 void startup_hook_8c340878(void)
 {
-    hook_init_8c367f02(g_hook_arg_8c3f2fe8);
+    syLib_hook_init_8c367f02(g_hook_arg_8c3f2fe8);
 }
 
 void shutdown_hook_8c340880(void)

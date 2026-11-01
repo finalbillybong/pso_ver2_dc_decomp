@@ -44,14 +44,14 @@ struct S_g8c469a8c {
 struct Frame {
     Block_frame_0 f00;
 };
-extern float call_8c37e480(void *);
+extern float njScalor_8c37e480(void *);
 extern void create_effect_777c(void *, int);
 extern void call_8c01c5f0(Object *);
 extern int query_capped_segment(void *, void *);
 extern void apply_object_velocity(void *);
 extern void operation_8c04a43c(void *, float, void *);
 extern void refresh_follow_effect_8c052180(void *);
-extern void call_8c102cd0(void *, int, int, int);
+extern void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern void call_8c027090(Object *);
 void operation_8c07a1dc(Object *o)
 {
@@ -73,7 +73,7 @@ void operation_8c07a1dc(Object *o)
         } else {
             o->ff0 = 5;
         }
-        t1 = call_8c37e480((void *)(&o->f318));
+        t1 = njScalor_8c37e480((void *)(&o->f318));
         v3 = (float)(*(S_g8c469a8c **)0x8c469a8c)->f08;
         if (t1 > v3) {
             o->f318 = o->f318 * v3 / t1;
@@ -118,6 +118,6 @@ L_8c07a278:;
     }
     o->f3a4 = (unsigned int)o->f3a4 >> 1 << 1;
 L_8c07a378:;
-    call_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
+    minimap_add_marker_8c102cd0((void *)(((char *)o + 0x3c)), -0x5db4, 1, 0);
     call_8c027090(o);
 }

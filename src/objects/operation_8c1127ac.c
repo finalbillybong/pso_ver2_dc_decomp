@@ -19,7 +19,7 @@ struct S_c8c122700 {
 };
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c188ef0(int, void *, Object *, void *);
-extern void call_8c01d9dc(void);
+extern void reset_controller_state_8c01d9dc(void);
 void operation_8c1127ac(Object *o)
 {
     S_c8c122700 *t1;
@@ -28,6 +28,6 @@ void operation_8c1127ac(Object *o)
         call_8c188ef0((int)t1, *(S_g8c44be98 **)0x8c44be98, o, o->f28);
     }
     t1->f1f4 = (void *)0x8c112924;
-    call_8c01d9dc();
+    reset_controller_state_8c01d9dc();
     o->f24 = 5;
 }

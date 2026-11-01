@@ -24,7 +24,7 @@ struct S_vv4 {
 extern int g_8c306c34;
 extern int g_8c467874;
 extern int g_8c467878;
-extern float call_8c37eb0c(void *);
+extern float njSin_8c37eb0c(void *);
 extern void operation_8c04a43c(void *, void *, float);
 void operation_8c1a0cd0(Object *o)
 {
@@ -39,7 +39,7 @@ void operation_8c1a0cd0(Object *o)
         int *pf1 = (int *)((char *)o + 0x39c);
         *pf1 = (int)((float)*pf1 + 2184.0f);
     }
-    t1 = call_8c37eb0c((void *)(o->f39c));
+    t1 = njSin_8c37eb0c((void *)(o->f39c));
     o->f398 = t1 + 60.0f;
     operation_8c04a43c((void *)o, (void *)(((char *)o + 0x3ac)), o->f398);
     mask = 0x800;

@@ -17,12 +17,12 @@ struct S_vv2 {
 struct S_x99104 {
     int f00;
 };
-extern void call_8c38ae68(void);
-extern void call_8c37b5c4(int);
-extern void call_8c382a40(int);
-extern void call_8c37df90(int, int);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void njUnitMatrix_8c37b5c4(int);
+extern void translate_current_matrix_v_8c382a40(int);
+extern void njRotateY_8c37df90(int, int);
 extern void call_8c3be280(int, void *, void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 extern void transform_actor_records(void *);
 void operation_8c198c70(Object *o, int a1, int a2)
 {
@@ -32,12 +32,12 @@ void operation_8c198c70(Object *o, int a1, int a2)
     v1 = (int)0;
     while (3 > v1) {
         v2 = (S_vv2 *)*(Arg0_20 **)((char *)((char *)o + 0x20) + (v1 << 2));
-        call_8c38ae68();
-        call_8c37b5c4(0);
-        call_8c382a40(a1);
-        call_8c37df90(0, a2);
+        njPushMatrixEx_8c38ae68();
+        njUnitMatrix_8c37b5c4(0);
+        translate_current_matrix_v_8c382a40(a1);
+        njRotateY_8c37df90(0, a2);
         call_8c3be280(0, (void *)((int)v2 + 0xe4), (void *)((int)v2 + 0x3c));
-        call_8c38ad10();
+        njPopMatrixEx_8c38ad10();
         v2->f64 = a2;
         transform_actor_records((void *)v2);
         v3 = (int)0;

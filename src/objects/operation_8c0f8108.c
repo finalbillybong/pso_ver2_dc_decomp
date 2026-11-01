@@ -25,11 +25,11 @@ struct Arg1 {
     Vector3 f00;
 };
 extern float object_random_fraction(void *);
-extern float call_8c37eb0c(int);
-extern float call_8c38c154(int);
-extern float call_8c37e480(Frame *);
-extern void call_8c37b630(Frame *);
-extern void call_8c05fbf8(int, void *, int, int);
+extern float njSin_8c37eb0c(int);
+extern float njCos_8c38c154(int);
+extern float njScalor_8c37e480(Frame *);
+extern void njUnitVector_8c37b630(Frame *);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern int call_8c0f8030(Object *, int, void *, Frame *);
 int operation_8c0f8108(Object *o, Arg1 *a1)
 {
@@ -54,20 +54,20 @@ int operation_8c0f8108(Object *o, Arg1 *a1)
     (&frame)->f0c.f04 += 10.0f;
     t5 = object_random_fraction((void *)o);
     v3 = (int)(int)(t5 * 65535.0f);
-    t1 = call_8c37eb0c(v3);
+    t1 = njSin_8c37eb0c(v3);
     (&frame)->f00 = t1;
     (&frame)->f04 = 0.0f;
-    t2 = call_8c38c154(v3);
+    t2 = njCos_8c38c154(v3);
     (&frame)->f08 = t2;
-    t3 = call_8c37e480((Frame *)((&frame)));
+    t3 = njScalor_8c37e480((Frame *)((&frame)));
     if (!(t3 > 0.01f)) {
         (&frame)->f00 = 1.0f;
         (&frame)->f04 = 0.0f;
         (&frame)->f08 = 0.0f;
     } else {
-        call_8c37b630((Frame *)((&frame)));
+        njUnitVector_8c37b630((Frame *)((&frame)));
     }
-    call_8c05fbf8(0x30019, (void *)(&(&frame)->f0c), 0, 0);
+    play_se_8c05fbf8(0x30019, (void *)(&(&frame)->f0c), 0, 0);
     t4 = call_8c0f8030(o, v1, (void *)(&(&frame)->f0c), (Frame *)((&frame)));
     return (int)(t4);
 }

@@ -8,7 +8,7 @@ typedef struct S_g8c4dc2c8 S_g8c4dc2c8;
 extern S_g8c4dc2c4 *g_8c4dc2c4;
 extern S_g8c4dc2c8 *g_8c4dc2c8;
 extern char g_8c31a2ac[];
-extern void operation_8c03ef80(void *, ...);
+extern void debug_error_stub_8c03ef80(void *, ...);
 int operation_8c1924c0(int a0, int a1)
 {
     int v1;
@@ -45,6 +45,6 @@ int operation_8c1924c0(int a0, int a1)
         }
         return (int)(v8);
     }
-    operation_8c03ef80((void *)((g_8c31a2ac + 0xf)));
+    debug_error_stub_8c03ef80((void *)((g_8c31a2ac + 0xf)));
     return 0;
 }

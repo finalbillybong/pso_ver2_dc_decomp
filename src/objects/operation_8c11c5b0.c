@@ -49,9 +49,9 @@ struct S_vv21 {
 extern void refresh_follow_effect_8c0129f4(void *);
 extern void operation_8c09e6d0(void *);
 extern int call_8c04a52c(Object *, Frame *, float);
-extern float call_8c37eb0c(void *);
-extern float call_8c38c154(void *);
-extern void call_8c05fbf8(int, void *, int, int);
+extern float njSin_8c37eb0c(void *);
+extern float njCos_8c38c154(void *);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c15e8fc(void *);
 extern void dispatch124_8c15e91c(void *);
 void operation_8c11c5b0(Object *o)
@@ -75,15 +75,15 @@ void operation_8c11c5b0(Object *o)
     v1 = (int)5;
     t1 = call_8c04a52c(o, (Frame *)((&frame)), 200.0f);
     if ((unsigned short)t1 != 0xffff) {
-        t2 = call_8c37eb0c((void *)(o->f64));
-        t3 = call_8c38c154((void *)(o->f64));
+        t2 = njSin_8c37eb0c((void *)(o->f64));
+        t3 = njCos_8c38c154((void *)(o->f64));
         if (0.0f > ((&frame)->f00 * t2 + (&frame)->f08 * t3)) {
             v1 = (int)4;
         }
     }
     o->ff0 = v1;
-    call_8c05fbf8(0x30036, (void *)(((char *)o + 0x3c8)), 0, 0);
-    call_8c05fbf8(0x30035, (void *)(((char *)o + 0x3e0)), 0, 0);
+    play_se_8c05fbf8(0x30036, (void *)(((char *)o + 0x3c8)), 0, 0);
+    play_se_8c05fbf8(0x30035, (void *)(((char *)o + 0x3e0)), 0, 0);
     if (o->f3f8 != 0) {
         v8 = (S_vv8 *)o->f400;
         v10 = (int)1;

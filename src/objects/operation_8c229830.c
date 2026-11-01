@@ -21,7 +21,7 @@ extern int create_effect_769c(void *, int);
 extern void set_effect_bits(void *, unsigned short);
 extern void call_8c0a7608(void *, void *);
 extern int create_effect_777c(void *, int);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 void operation_8c229830(Object *o)
 {
     S_vv1 *v1;
@@ -57,7 +57,7 @@ L_8c229890:;
     }
     if (o->fb4 != 0x28 && o->fb4 != 0x3c) {
     } else {
-        call_8c05fbf8(0x3003a, (void *)(((char *)o + 0xa4)), 0, 1);
+        play_se_8c05fbf8(0x3003a, (void *)(((char *)o + 0xa4)), 0, 1);
     }
     if ((o->fb8 += 1.0f) > 119.0f) {
         o->fb8 = 119.0f;

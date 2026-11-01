@@ -40,7 +40,7 @@ struct S_g8c4db9e4 {
     int f0c;
 };
 extern char g_8c3289d4[];
-extern void call_8c12b048(void *, void *, ...);
+extern void sprintf_8c12b048(void *, void *, ...);
 extern int operation_8c04c66c(int);
 extern int call_8c18e808(int, int);
 void operation_8c1c35bc(Object *o)
@@ -55,17 +55,17 @@ void operation_8c1c35bc(Object *o)
     int t2;
     int t3;
     *(Block36 *)&(&frame)->f00 = *(Block36 *)&(*(S_g8c4db9e0 **)0x8c4db9e0)->f34c;
-    call_8c12b048((void *)(((char *)o + 0x188)), (void *)((g_8c3289d4 + 0xc)), (int)((&frame)->f00.f18 + 1));
+    sprintf_8c12b048((void *)(((char *)o + 0x188)), (void *)((g_8c3289d4 + 0xc)), (int)((&frame)->f00.f18 + 1));
     if (((o->f166 & 2)) != 0) {
-        call_8c12b048((void *)(((char *)o + 0x190)), (void *)((g_8c3289d4 + 0x11)), (int)(g_8c3289d4 + 0x15));
+        sprintf_8c12b048((void *)(((char *)o + 0x190)), (void *)((g_8c3289d4 + 0x11)), (int)(g_8c3289d4 + 0x15));
     } else {
-        call_8c12b048((void *)(((char *)o + 0x190)), (void *)((g_8c3289d4 + 0x11)), (int)(*(S_g8c467180_18_0 **)((char *)((char *)(*(S_g8c467180 **)0x8c467180)->f18 + 0x0) + (o->f165 << 2))));
+        sprintf_8c12b048((void *)(((char *)o + 0x190)), (void *)((g_8c3289d4 + 0x11)), (int)(*(S_g8c467180_18_0 **)((char *)((char *)(*(S_g8c467180 **)0x8c467180)->f18 + 0x0) + (o->f165 << 2))));
     }
     if (((o->f166 & 1)) != 0) {
-        call_8c12b048((void *)(((char *)o + 0x1ae)), (void *)((g_8c3289d4 + 0x11)), (int)(g_8c3289d4 + 0x15));
+        sprintf_8c12b048((void *)(((char *)o + 0x1ae)), (void *)((g_8c3289d4 + 0x11)), (int)(g_8c3289d4 + 0x15));
     } else {
         t1 = operation_8c04c66c((int)(o->f164));
-        call_8c12b048((void *)(((char *)o + 0x1ae)), (void *)((g_8c3289d4 + 0x11)), t1);
+        sprintf_8c12b048((void *)(((char *)o + 0x1ae)), (void *)((g_8c3289d4 + 0x11)), t1);
     }
     v5 = (char *)(*(S_g8c4db9e4 **)0x8c4db9e4)->f0c;
     t2 = call_8c18e808((int)(v5), 0xe10);
@@ -80,5 +80,5 @@ void operation_8c1c35bc(Object *o)
     if ((unsigned int)(unsigned char)t3 > (unsigned int)0x3b) {
         v8 = (int)0x3b;
     }
-    call_8c12b048((void *)(((char *)o + 0x1cc)), (void *)((g_8c3289d4 + 0x1b)), (int)((unsigned short)v7), (unsigned char)v8);
+    sprintf_8c12b048((void *)(((char *)o + 0x1cc)), (void *)((g_8c3289d4 + 0x1b)), (int)((unsigned short)v7), (unsigned char)v8);
 }

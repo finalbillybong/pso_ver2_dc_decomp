@@ -62,7 +62,7 @@ extern char g_8c2f2cd8[];
 extern char gc_8c4671cc[];
 extern int operation_8c05bbf8(void);
 extern int operation_8c059f44(void *, int);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void call_8c03d610(int, int, void *, int, int, int);
 extern void call_8c118ea4(int, int, float, float, float);
 extern void draw_grid_selected_rows(void *, void *, void *, int, int);
@@ -96,7 +96,7 @@ void operation_8c04cad8(void)
         t2 = operation_8c059f44((void *)((void *)0x8c2f2bec), (int)(g_8c2f2cd8 + 0xd5));
         g_8c4671d8 = (S_g8c4671d8 *)(int)(t2);
     } else {
-        t3 = call_8c011ecc(0x440);
+        t3 = game_malloc_8c011ecc(0x440);
         if (t3 != 0) {
             call_8c03d610(t3, 1, (void *)((void *)0x8c2f2bec), 0, 0, 0);
         }
@@ -106,14 +106,14 @@ void operation_8c04cad8(void)
     *(float *)(gc_8c4671cc + 0x8) = 0.0f;
     *(float *)(gc_8c4671cc + 0x4) = 0.0f;
     *(float *)(gc_8c4671cc + 0x0) = 0.0f;
-    t4 = call_8c011ecc(0x18);
+    t4 = game_malloc_8c011ecc(0x18);
     if (t4 != 0) {
         v6 = (int)2;
         v7 = (float)0.0f;
         call_8c118ea4(t4, v6, v7, 20.0f, 0.7f);
     }
     g_8c4671dc = (S_g8c4671dc *)(int)(t4);
-    t5 = call_8c011ecc(0x18);
+    t5 = game_malloc_8c011ecc(0x18);
     if (t5 != 0) {
         v11 = (int)2;
         v12 = (float)0.0f;

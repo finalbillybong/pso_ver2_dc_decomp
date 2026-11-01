@@ -9,10 +9,10 @@ extern int g_8c4db944;
 extern int g_8c4db948;
 extern int g_8c4db94c;
 extern int g_8c4db950;
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 void operation_8c1793e8(void)
 {
-    call_8c18de08(g_8c4db940);
+    operator_delete_8c18de08(g_8c4db940);
     g_8c4db940 = (S_g8c4db940 *)0;
     g_8c4db944 = 0;
     g_8c4db948 = 0;

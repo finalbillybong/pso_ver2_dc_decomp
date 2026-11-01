@@ -16,12 +16,12 @@ struct Object {
     Arg0_3ac *f3ac;
 };
 extern int call_8c18e8a0(int, int);
-extern float call_8c38c154(int);
-extern void call_8c38ae68(void);
-extern void call_8c37b5c4(int);
-extern void call_8c37df90(int, void *);
+extern float njCos_8c38c154(int);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void njUnitMatrix_8c37b5c4(int);
+extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3be38c(int, void *, void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c13b3f8(Object *o)
 {
     int t1;
@@ -30,19 +30,19 @@ void operation_8c13b3f8(Object *o)
     t1 = call_8c18e8a0((int)((unsigned short)o->f3ac), 0x2aaa);
     t1 = t1 + -0x1555;
     if (((o->f3a4 & 0x20000)) != 0) {
-        t2 = call_8c38c154(t1);
+        t2 = njCos_8c38c154(t1);
         o->f3a8 = 134.0f / t2;
         o->f40 = 50.0f;
     } else {
-        t3 = call_8c38c154(t1);
+        t3 = njCos_8c38c154(t1);
         o->f3a8 = 128.0f / t3;
         o->f40 = 15.0f;
     }
-    call_8c38ae68();
+    njPushMatrixEx_8c38ae68();
     o->f3c = o->f3a8;
     o->f44 = 0.0f;
-    call_8c37b5c4(0);
-    call_8c37df90(0, (void *)(o->f3ac));
+    njUnitMatrix_8c37b5c4(0);
+    njRotateY_8c37df90(0, (void *)(o->f3ac));
     call_8c3be38c(0, (void *)(&o->f3c), (void *)(&o->f3c));
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
 }

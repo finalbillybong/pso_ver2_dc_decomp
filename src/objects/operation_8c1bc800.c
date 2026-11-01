@@ -44,9 +44,9 @@ extern float g_8c327e24[];
 extern void call_8c1bb138(Object *, int, int);
 extern int call_8c04a52c(Object *, int, float);
 extern S_c8c021ef8 *lookup_low_id(int);
-extern void call_8c37f6f0(void *, void *);
-extern float call_8c37e480(void *);
-extern void call_8c37b630(void *);
+extern void vector_sub_in_place_8c37f6f0(void *, void *);
+extern float njScalor_8c37e480(void *);
+extern void njUnitVector_8c37b630(void *);
 Object *operation_8c1bc800(Object *o, int a1, int a2)
 {
     Object **home = &o;
@@ -77,14 +77,14 @@ L_8c1bc852:;
     *(float *)((char *)o + off) += *(float *)((char *)g_8c327e24 + idx);
     o->f3a8.f08 = *(float *)((char *)(g_8c327e24 + 1) + idx) + o->f3a8.f08;
 L_8c1bc898:;
-    call_8c37f6f0((void *)(&o->f3a8), (void *)(((char *)o + 0x3c)));
+    vector_sub_in_place_8c37f6f0((void *)(&o->f3a8), (void *)(((char *)o + 0x3c)));
     o->f3a8.f04 = 0.0f;
-    t3 = call_8c37e480((void *)(&o->f3a8));
+    t3 = njScalor_8c37e480((void *)(&o->f3a8));
     if (t3 == 0.0f) {
         o->f3a8.f00 = 1.0f;
         o->f3a8.f08 = 0.0f;
     } else {
-        call_8c37b630((void *)(&o->f3a8));
+        njUnitVector_8c37b630((void *)(&o->f3a8));
     }
     o->f3b4 = o->f3bc;
     o->f3a8.f00 *= o->f3b4;

@@ -30,7 +30,7 @@ extern S_L8c506350 g_8c506350;
 extern S_L8c50638c g_8c50638c;
 extern S_L8c5063c8 g_8c5063c8;
 extern void request_resource_release(void *);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void call_8c25decc(int, int);
 void operation_8c22cde8(void)
 {
@@ -39,15 +39,15 @@ void operation_8c22cde8(void)
         g_8c506404 = (S_g8c506404 *)0;
     }
     if ((&g_8c506350)->f38 != 0) {
-        call_8c011ec0((void *)((&g_8c506350)->f38));
+        game_free_8c011ec0((void *)((&g_8c506350)->f38));
         (&g_8c506350)->f38 = (S_L8c506350_38 *)0;
     }
     if ((&g_8c50638c)->f38 != 0) {
-        call_8c011ec0((void *)((&g_8c50638c)->f38));
+        game_free_8c011ec0((void *)((&g_8c50638c)->f38));
         (&g_8c50638c)->f38 = (S_L8c50638c_38 *)0;
     }
     if ((&g_8c5063c8)->f38 != 0) {
-        call_8c011ec0((void *)((&g_8c5063c8)->f38));
+        game_free_8c011ec0((void *)((&g_8c5063c8)->f38));
         (&g_8c5063c8)->f38 = (S_L8c5063c8_38 *)0;
     }
     g_8c5064f8 = 0;

@@ -37,9 +37,9 @@ extern int g_8c467874;
 extern int g_8c467878;
 extern S_L8c32528c g_8c32528c;
 extern float call_8c38d7d8(void *, void *);
-extern void call_8c37f6f0(Frame *, int);
-extern float call_8c37e480(Frame *);
-extern void call_8c37b630(Frame *);
+extern void vector_sub_in_place_8c37f6f0(Frame *, int);
+extern float njScalor_8c37e480(Frame *);
+extern void njUnitVector_8c37b630(Frame *);
 extern void call_8c3bdf60(Frame *, int);
 extern void transform_actor_records(void *);
 void operation_8c1ae374(int a0, int a1)
@@ -75,14 +75,14 @@ void operation_8c1ae374(int a0, int a1)
                         t2 = call_8c38d7d8((void *)((int)v6 + 0x3c), (void *)v8);
                         if (!(t2 > v9)) {
                             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&v6->f3c;
-                            call_8c37f6f0((Frame *)((&frame)), v8);
+                            vector_sub_in_place_8c37f6f0((Frame *)((&frame)), v8);
                             (&frame)->f00.f04 = 0.0f;
-                            t3 = call_8c37e480((Frame *)((&frame)));
+                            t3 = njScalor_8c37e480((Frame *)((&frame)));
                             if (!(t3 > 0.01f)) {
                                 (&frame)->f00.f00 = 0.0f;
                                 (&frame)->f00.f08 = 1.0f;
                             } else {
-                                call_8c37b630((Frame *)((&frame)));
+                                njUnitVector_8c37b630((Frame *)((&frame)));
                             }
                             break;
                         }

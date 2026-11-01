@@ -1,7 +1,7 @@
 extern int trace_8c23157a(int, char *, ...);
 extern void func_8c23178a(void);
 extern void func_8c23174e(int);
-extern void func_8c1fe046(void);
+extern void debug_hexdump_8c1fe046(void);
 extern int func_8c2317aa(void);
 extern void func_8c2317c8(int);
 extern void func_8c2317de(void);
@@ -31,7 +31,7 @@ void blk_sync_drain_8c1fbe5e(void)
     while (done_8c32c490 != 0) {
         func_8c23174e(1);
     }
-    func_8c1fe046();
+    debug_hexdump_8c1fe046();
     trace_8c23157a(1, str_8c2e0db8, str_8c2e0dc8, 0xa1);
     busy_8c32c494 = 0;
 }

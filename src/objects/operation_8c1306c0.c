@@ -19,14 +19,14 @@ struct S_L8c4d9a20 {
 extern S_g8c4d9a28 *g_8c4d9a28;
 extern S_L8c4d9a20 g_8c4d9a20;
 extern void call_8c37d534(void *);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void call_8c03dc40(void *, int);
-extern void call_8c18de08(S_g8c4d9a28 *);
+extern void operator_delete_8c18de08(S_g8c4d9a28 *);
 void operation_8c1306c0(void)
 {
     call_8c37d534((void *)(g_8c4d9a28->f08));
-    call_8c011ec0((void *)(g_8c4d9a28->f08));
+    game_free_8c011ec0((void *)(g_8c4d9a28->f08));
     call_8c03dc40((void *)((&g_8c4d9a20)->f00), 1);
     call_8c03dc40((void *)((&g_8c4d9a20)->f04), 1);
-    call_8c18de08(g_8c4d9a28);
+    operator_delete_8c18de08(g_8c4d9a28);
 }

@@ -49,7 +49,7 @@ extern int g_8c4d8288;
 extern int g_8c5049f0;
 extern "C" char g_8c2e3014[];
 extern "C" S_c8c021ef8 *lookup_low_id(int);
-extern "C" void call_8c12b048(Frame *, void *, ...);
+extern "C" void sprintf_8c12b048(Frame *, void *, ...);
 extern "C" void operation_8c011efc(Frame *);
 extern "C" void strncpy_8c12b154(void *, void *, int);
 extern "C" void request_resource_release(void *);
@@ -71,7 +71,7 @@ extern "C" void operation_8c01a514(int a0, int a1, int a2)
                 if (v2 != 0) {
                     v2->v0(1);
                 }
-                call_8c12b048((Frame *)((&frame)), (void *)((g_8c2e3014 + 0x12e)), (int)(((S_vv2Data *)v2)->f20), (int)(((S_vv2Data *)v2)->f21), (int)(((S_vv2Data *)v2)->f22), (int)(((S_vv2Data *)v2)->f23));
+                sprintf_8c12b048((Frame *)((&frame)), (void *)((g_8c2e3014 + 0x12e)), (int)(((S_vv2Data *)v2)->f20), (int)(((S_vv2Data *)v2)->f21), (int)(((S_vv2Data *)v2)->f22), (int)(((S_vv2Data *)v2)->f23));
                 operation_8c011efc((Frame *)((&frame)));
                 v2 = (S_vv2 *)((char *)v2 + 32);
                 goto L_8c01a5a2;

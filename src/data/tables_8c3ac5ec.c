@@ -3,9 +3,9 @@
 typedef void (*Function)(void);
 
 extern void fn_8c3a9318(void);
-extern void fn_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 
 Function const d_8c3ac5ec[2] = {
     fn_8c3a9318,
-    fn_8c38ad10
+    njPopMatrixEx_8c38ad10
 };

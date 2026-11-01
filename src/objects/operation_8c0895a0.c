@@ -21,12 +21,12 @@ extern void operation_8c0e7720(void *, int, int);
 extern void set_global_8c01c1d0(void);
 extern void call_8c110b74(void *);
 extern void call_8c021cc0(int, void *);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 void operation_8c0895a0(Object *o, int a1)
 {
     operation_8c0e7720((void *)((void *)&g_8c46fec0), (int)(o->ff0), (int)(*(S_g8c4e18c0 **)((char *)0x8c4e18c0 + ((int)(o->ff0) << 3))));
     set_global_8c01c1d0();
     call_8c110b74((void *)((&g_8c46fec0)->f0c));
     call_8c021cc0(a1, (void *)((&g_8c46fec0)->f0c));
-    call_8c05fbf8(5, 0, 0, 0);
+    play_se_8c05fbf8(5, 0, 0, 0);
 }

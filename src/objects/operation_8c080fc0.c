@@ -14,8 +14,8 @@ struct Object {
     short fe8;
 };
 extern char g_8c2fede8[];
-extern void call_8c38c5b6(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void njPrintColor_8c38c5b6(int);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c080fc0(Object *o)
 {
     o->fe8 = o->f88;
@@ -26,9 +26,9 @@ void operation_8c080fc0(Object *o)
     if (o->fe4 > 3) {
         o->fe4 = 3;
     }
-    call_8c38c5b6(-0xff0100);
-    call_8c38cf80(0x13001a, (void *)((g_8c2fede8 + 0xbe)));
-    call_8c38cf80(0x13001e, (void *)((g_8c2fede8 + 0xce)), o->fe8);
-    call_8c38cf80(0x130020, (void *)((g_8c2fede8 + 0xe0)));
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xff0100);
+    debug_print_at_8c38cf80(0x13001a, (void *)((g_8c2fede8 + 0xbe)));
+    debug_print_at_8c38cf80(0x13001e, (void *)((g_8c2fede8 + 0xce)), o->fe8);
+    debug_print_at_8c38cf80(0x130020, (void *)((g_8c2fede8 + 0xe0)));
+    njPrintColor_8c38c5b6(-0xf0f10);
 }

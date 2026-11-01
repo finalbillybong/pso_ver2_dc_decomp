@@ -11,7 +11,7 @@ struct Object {
     unsigned char f01;
 };
 extern int get_game_mode_8c01c25c(void);
-extern void call_8c036d04(int);
+extern void TGameProtocol_dispatch_local_subcommand_8c036d04(int);
 extern void call_8c02f138(void *, void *, Object *, int);
 void operation_8c036964(Object *o)
 {
@@ -19,7 +19,7 @@ void operation_8c036964(Object *o)
     t1 = get_game_mode_8c01c25c();
     if (t1 == 0xf) {
         *(int *)0x8c4627c8 = 1;
-        call_8c036d04((int)o);
+        TGameProtocol_dispatch_local_subcommand_8c036d04((int)o);
         *(int *)0x8c4627c8 = 0;
         return;
     }

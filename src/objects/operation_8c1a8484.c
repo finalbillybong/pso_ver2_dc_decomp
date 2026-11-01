@@ -21,7 +21,7 @@ extern int ADXF_GetStat_8c34da3c(void *);
 extern void loading_wait_frame_8c104c60(void);
 extern int call_8c18e8a0(int, int);
 extern void call_8c3889a4(void *, void *, int);
-int operation_8c1a8484(int a0, int a1)
+int gd_read_file_sectors_8c1a8484(int a0, int a1)
 {
     Frame frame;
     int t1;

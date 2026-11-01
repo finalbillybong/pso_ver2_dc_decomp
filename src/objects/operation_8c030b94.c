@@ -13,9 +13,9 @@ extern int g_8c44be28;
 extern S_g8c44be3c *g_8c44be3c;
 extern char g_8c2e8428[];
 extern void call_8c03ef04(Frame *, int, void *);
-extern int call_8c104d50(Frame *);
+extern int file_last_size_8c104d50(Frame *);
 extern int get_current_area_8c032b10(void);
-extern int call_8c011e9c(void *);
+extern int game_malloc_buffer_8c011e9c(void *);
 extern int call_8c105380(Frame *, int);
 void operation_8c030b94(int a0)
 {
@@ -27,7 +27,7 @@ void operation_8c030b94(int a0)
     g_8c44be28 = 0;
     g_8c44be0c = 0;
     call_8c03ef04((Frame *)((&frame)), a0, (void *)((g_8c2e8428 + 0x30)));
-    t1 = call_8c104d50((Frame *)((&frame)));
+    t1 = file_last_size_8c104d50((Frame *)((&frame)));
     g_8c44be3c = (S_g8c44be3c *)(int)(t1);
     if (t1 > 0) {
         t2 = get_current_area_8c032b10();
@@ -38,7 +38,7 @@ void operation_8c030b94(int a0)
             }
             g_8c44be3c = (S_g8c44be3c *)0xa000;
         }
-        t3 = call_8c011e9c(g_8c44be3c);
+        t3 = game_malloc_buffer_8c011e9c(g_8c44be3c);
         g_8c44be28 = (int)(t3);
         if (t3 != 0) {
             t4 = call_8c105380((Frame *)((&frame)), t3);

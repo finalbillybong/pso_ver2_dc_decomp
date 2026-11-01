@@ -59,17 +59,17 @@ extern int g_8c575570;
 extern "C" void call_8c3827d8(void *);
 extern "C" void call_8c013c58(Object *);
 extern "C" void operation_8c1086fc(void);
-extern "C" void call_8c38ae68(void);
-extern "C" void call_8c382a40(void *);
-extern "C" void call_8c37df90(int, void *);
-extern "C" void call_8c37e2e4(int, float, float, float);
+extern "C" void njPushMatrixEx_8c38ae68(void);
+extern "C" void translate_current_matrix_v_8c382a40(void *);
+extern "C" void njRotateY_8c37df90(int, void *);
+extern "C" void njScale_8c37e2e4(int, float, float, float);
 extern "C" void operation_8c05bc54(float);
 extern "C" int global_byte_set_8c08d7e8(void);
 extern "C" void call_8c3aa716(void *);
 extern "C" void operation_8c01cc90(void *);
 extern "C" void operation_8c01cd20(void *);
 extern "C" void operation_8c05bc94(void);
-extern "C" void call_8c38ad10(void);
+extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c013e74(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void call_8c04a9e0(Object *, int);
@@ -110,13 +110,13 @@ extern "C" void operation_8c05157c(Object *o)
                 call_8c3827d8(pm4);
                 call_8c013c58(base);
                 operation_8c1086fc();
-                call_8c38ae68();
-                call_8c382a40((void *)(((char *)base + 0x3c)));
+                njPushMatrixEx_8c38ae68();
+                translate_current_matrix_v_8c382a40((void *)(((char *)base + 0x3c)));
                 pm11 = 0;
-                call_8c37df90(pm11, (void *)(((ObjectData *)base)->f64));
+                njRotateY_8c37df90(pm11, (void *)(((ObjectData *)base)->f64));
                 pm10 = 0x400;
                 if (0 != (((int)(int)((ObjectData *)base)->f390 & pm10))) {
-                    call_8c37e2e4(0, 2.0f, 1.5f, 2.0f);
+                    njScale_8c37e2e4(0, 2.0f, 1.5f, 2.0f);
                     operation_8c05bc54(0.666666687f);
                 }
                 g_8c575570 &= -0x401;
@@ -133,7 +133,7 @@ extern "C" void operation_8c05157c(Object *o)
                 if (((((ObjectData *)base)->f390 & 0x400)) != 0) {
                     operation_8c05bc94();
                 }
-                call_8c38ad10();
+                njPopMatrixEx_8c38ad10();
                 operation_8c013e74();
                 call_8c391cc4();
                 v12 = (int)((ObjectData *)base)->f34;

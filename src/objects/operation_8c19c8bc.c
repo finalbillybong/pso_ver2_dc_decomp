@@ -33,7 +33,7 @@ extern int operation_8c1cdc80(void *);
 extern int call_8c15b334(int, void *);
 extern void call_8c023b3c(void *, void *, void *);
 extern void operation_8c15b2e0(void);
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void request_resource_release(void *);
 extern void call_8c220b80(int, int);
 void operation_8c19c8bc(Object *o)
@@ -51,14 +51,14 @@ void operation_8c19c8bc(Object *o)
             if (t2 != 0) {
                 call_8c023b3c((void *)(o->f28), (void *)((*(Arg0_2c **)((char *)((char *)o + 0x2c) + (v1)))->fe8), (void *)(o->f37c));
                 operation_8c15b2e0();
-                call_8c05fbf8(0x50001, 0, 0, 0);
+                play_se_8c05fbf8(0x50001, 0, 0, 0);
                 request_resource_release((void *)(o->f38c));
                 o->f38c = (Arg0_38c *)0;
                 o->f24 = 0;
                 return;
             }
             call_8c220b80(0x3b, 1);
-            call_8c05fbf8(0x50006, 0, 0, 0);
+            play_se_8c05fbf8(0x50006, 0, 0, 0);
             request_resource_release((void *)(o->f38c));
             o->f38c = (Arg0_38c *)0;
             o->f24 = 7;

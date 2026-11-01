@@ -12,13 +12,13 @@ typedef struct Object {
     Vector copy;
 } Object;
 
-extern void normalize_8c37b630(Vector *);
+extern void njUnitVector_8c37b630(Vector *);
 
 void set_vector_8c37e864(Object *o, float x, float y, float z)
 {
     o->dir.x = x;
     o->dir.y = y;
     o->dir.z = z;
-    normalize_8c37b630(&o->dir);
+    njUnitVector_8c37b630(&o->dir);
     o->copy = o->dir;
 }

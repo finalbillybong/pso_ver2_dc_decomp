@@ -65,12 +65,12 @@ void video_flush_8c38c5a2(void)
     channel_release_8c3ba068(&obj_8c576400);
 }
 
-void video_set_scale_8c38c5aa(unsigned short s)
+void njPrintSize_8c38c5aa(unsigned short s)
 {
     scale_8c5763fc = (float)s;
 }
 
-void video_set_color_8c38c5b6(int c)
+void njPrintColor_8c38c5b6(int c)
 {
     color_8c5763f8 = c;
 }

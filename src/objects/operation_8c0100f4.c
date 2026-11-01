@@ -15,7 +15,7 @@ struct S_vv1 {
 extern int g_8c417664;
 extern int call_8c372910(int, void *);
 extern void memset_8c12b880(void *, int, int);
-void operation_8c0100f4(int a0, int a1, int a2)
+void vmu_port_event_callback_8c0100f4(int a0, int a1, int a2)
 {
     S_vv1 *v1;
     int t1;

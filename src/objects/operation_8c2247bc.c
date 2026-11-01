@@ -50,7 +50,7 @@ struct Frame {
 };
 extern void initialize_grid_view(void *, void *);
 extern void call_8c0dc854(Object *);
-extern int call_8c011ecc(int);
+extern int game_malloc_8c011ecc(int);
 extern void operation_8c199b20(int, int);
 extern void call_8c199b8c(int, void *);
 Object *operation_8c2247bc(Object *o, Arg1 *a1, int a2, int a3)
@@ -73,14 +73,14 @@ Object *operation_8c2247bc(Object *o, Arg1 *a1, int a2, int a3)
     o->f86 = 0;
     o->f8c = a2;
     o->f90 = a3;
-    t1 = call_8c011ecc(0x24);
+    t1 = game_malloc_8c011ecc(0x24);
     if (t1 != 0) {
         operation_8c199b20(t1, (int)((*(S_g8c467180 **)0x8c467180)->f2c->f24c));
     }
     o->f98 = (int)(t1);
     (&frame)->f04 = 0.0f;
     (&frame)->f08 = 0.0f;
-    t2 = call_8c011ecc(8);
+    t2 = game_malloc_8c011ecc(8);
     if (t2 != 0) {
         call_8c199b8c(t2, (void *)(&(&frame)->f04));
     }

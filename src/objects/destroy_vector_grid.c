@@ -5,4 +5,4 @@ typedef char check_height[(unsigned long)&((Grid *)0)->height==8?1:-1];
 typedef char check_first[(unsigned long)&((Grid *)0)->first==12?1:-1];
 typedef char check_last[(unsigned long)&((Grid *)0)->last==16?1:-1];
 typedef char check_step[(unsigned long)&((Grid *)0)->step==20?1:-1];
-extern void release_at(void *),free_at(void *);Grid *destroy_vector_grid(Grid *o,int release) {if(o) {release_at(o->points);o->points=0;if((short)release>0) free_at(o);}return o;}
+extern void operator_delete_8c18de08(void *),free_at(void *);Grid *destroy_vector_grid(Grid *o,int release) {if(o) {operator_delete_8c18de08(o->points);o->points=0;if((short)release>0) free_at(o);}return o;}

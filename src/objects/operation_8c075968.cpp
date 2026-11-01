@@ -88,7 +88,7 @@ extern "C" int current_mode_active(void);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void operation_8c1ab01c(void *, int, int, int);
 extern "C" void operation_8c1ddc00(int, short, int);
-extern "C" int call_8c05fbf8(int, void *, int, int);
+extern "C" int play_se_8c05fbf8(int, void *, int, int);
 extern "C" void emit_control_60320(int, int, int);
 extern "C" void operation_8c0771fc();
 extern "C" void operation_8c075968(Object *o)
@@ -128,7 +128,7 @@ extern "C" void operation_8c075968(Object *o)
         if (((((ObjectData *)o)->f1fc & 0x200)) != 0) {
             operation_8c1ddc00((int)g_8c44be9c, ((ObjectData *)o)->f13c->f20, 0x23);
         }
-        t4 = call_8c05fbf8(0xa, (void *)(((char *)((ObjectData *)o)->f13c + 0x3c)), 0, 0);
+        t4 = play_se_8c05fbf8(0xa, (void *)(((char *)((ObjectData *)o)->f13c + 0x3c)), 0, 0);
         emit_control_60320(t4, 0x300, 0);
     } else {
         ((ObjectData *)o)->f13c->f384 = 0;

@@ -28,7 +28,7 @@ struct Arg0_394 {
     int f3a8;
 };
 extern void call_8c3bdf60(void *, void *);
-extern float call_8c37e480(Frame *);
+extern float njScalor_8c37e480(Frame *);
 void operation_8c1bcd60(Object *o)
 {
     Frame frame;
@@ -38,7 +38,7 @@ void operation_8c1bcd60(Object *o)
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f3c;
     (&frame)->f00.f04 = 0.0f;
     if (--o->f398 >= 0) {
-        t1 = call_8c37e480((Frame *)((&frame)));
+        t1 = njScalor_8c37e480((Frame *)((&frame)));
         if (!(t1 > 260.0f)) {
             return;
         }

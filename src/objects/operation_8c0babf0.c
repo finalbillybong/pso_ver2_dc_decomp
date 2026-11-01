@@ -42,7 +42,7 @@ struct Arg0_20 {
 extern void operation_8c0ad45c(void *, int, void *, void *, int);
 extern void initialize_effect12_template(void *);
 extern int call_8c18e768(int, int);
-extern int call_8c05fbf8(int, void *, int, int);
+extern int play_se_8c05fbf8(int, void *, int, int);
 extern void emit_control_60320(int, int, int);
 Object *operation_8c0babf0(Object *o, int a1, int a2, int a3, int a4)
 {
@@ -72,15 +72,15 @@ Object *operation_8c0babf0(Object *o, int a1, int a2, int a3, int a4)
                 goto L_8c0baca4;
             }
         } else {
-            t2 = call_8c05fbf8(0x20017, (void *)(&o->f24), 0, 0);
+            t2 = play_se_8c05fbf8(0x20017, (void *)(&o->f24), 0, 0);
             if (t2 >= 0) {
                 emit_control_60320(t2, 0x100, 0);
                 goto L_8c0bacbe;
 L_8c0bac94:;
-                call_8c05fbf8(0x20017, (void *)(&o->f24), 0, 0);
+                play_se_8c05fbf8(0x20017, (void *)(&o->f24), 0, 0);
                 goto L_8c0bacbe;
 L_8c0baca4:;
-                t3 = call_8c05fbf8(0x20017, (void *)(&o->f24), 0, 0);
+                t3 = play_se_8c05fbf8(0x20017, (void *)(&o->f24), 0, 0);
                 if (t3 >= 0) {
                     emit_control_60320(t3, -0x100, 0);
                 }

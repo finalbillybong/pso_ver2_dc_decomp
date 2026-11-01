@@ -123,12 +123,12 @@ extern void initialize_effect4_template(void *);
 extern int call_8c18e768(int, int);
 extern Arg0_14c **operator_new_8c18de4c(int);
 extern Arg0_14c *create_effect_785c(void *, void *, int);
-extern void call_8c38ade4(void *);
-extern void call_8c37df90(int, void *);
+extern void njPushMatrix_8c38ade4(void *);
+extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3be280(int, void *, void *);
-extern void call_8c38accc(int);
+extern void njPopMatrix_8c38accc(int);
 extern Arg0_14c *create_effect_769c(void *, int);
-extern int call_8c05fbf8(int, void *, int, int);
+extern int play_se_8c05fbf8(int, void *, int, int);
 extern void emit_control_60320(int, int, int);
 Object *operation_8c0b11f4(Object *o, int a1, int a2, int a3, int a4)
 {
@@ -176,10 +176,10 @@ Object *operation_8c0b11f4(Object *o, int a1, int a2, int a3, int a4)
             *(Arg0_14c **)(*(char **)((char *)o + off) + (i << 2)) = create_effect_785c((void *)((char *)base + 0x24), (void *)&blk, *(int *)((char *)*(Entry **)((char *)g_8c2853d8 + boff) + sh));
         } else {
             *(Vector3 *)&v = g_8c305188;
-            call_8c38ade4((void *)0x8c400500);
-            call_8c37df90(0, (void *)o->f5c);
+            njPushMatrix_8c38ade4((void *)0x8c400500);
+            njRotateY_8c37df90(0, (void *)o->f5c);
             call_8c3be280(0, (void *)&v, (void *)&v);
-            call_8c38accc(1);
+            njPopMatrix_8c38accc(1);
             pos.x = o->f24 + v.f00;
             pos.y = o->f28 + v.f04;
             pos.z = o->f2c + v.f08;
@@ -214,28 +214,28 @@ Object *operation_8c0b11f4(Object *o, int a1, int a2, int a3, int a4)
         Object *self = o;
         switch (self->fcc) {
         case 0:
-            t = call_8c05fbf8(0x20005, (void *)&self->f24, 0, 0);
+            t = play_se_8c05fbf8(0x20005, (void *)&self->f24, 0, 0);
             if (t >= 0) {
                 emit_control_60320(t, 0x100, 0);
             }
             break;
         case 1:
-            call_8c05fbf8(0x20005, (void *)&self->f24, 0, 0);
+            play_se_8c05fbf8(0x20005, (void *)&self->f24, 0, 0);
             break;
         case 2:
             s2 = self->fca;
             if (s2 >= 0xf && 0x19 > s2) {
-                t = call_8c05fbf8(0x20005, (void *)&self->f24, 0, 0);
+                t = play_se_8c05fbf8(0x20005, (void *)&self->f24, 0, 0);
                 if (t >= 0) {
                     emit_control_60320(t, -0x180, 0);
                 }
             } else if (s2 >= 0x19 && 0x1e > s2) {
-                t = call_8c05fbf8(0x20005, (void *)&self->f24, 0, 0);
+                t = play_se_8c05fbf8(0x20005, (void *)&self->f24, 0, 0);
                 if (t >= 0) {
                     emit_control_60320(t, -0x250, 0);
                 }
             } else {
-                t = call_8c05fbf8(0x20005, (void *)&self->f24, 0, 0);
+                t = play_se_8c05fbf8(0x20005, (void *)&self->f24, 0, 0);
                 if (t >= 0) {
                     emit_control_60320(t, -0x100, 0);
                 }

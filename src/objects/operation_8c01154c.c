@@ -26,8 +26,8 @@ struct S_vv8 {
 extern int g_8c417b80;
 extern int g_8c4dc5e0;
 extern void subtract_vector_components(void *, void *, void *);
-extern float call_8c37f6c0(float);
-extern float call_8c37e494(void *);
+extern float signed_sqrt_8c37f6c0(float);
+extern float njScalor2_8c37e494(void *);
 extern int call_8c011e10(void *, int, int, Frame *, float, float, float);
 extern void operation_8c011e88(void *);
 int operation_8c01154c(int a0, int a1)
@@ -54,13 +54,13 @@ int operation_8c01154c(int a0, int a1)
         v3 = 1e-07f;
     }
     v5 = 1.0f / v3;
-    t3 = call_8c37f6c0(v3);
+    t3 = signed_sqrt_8c37f6c0(v3);
     v6 = 0x100;
     while ((v18 = *v9++) != 0) {
         if (((v18->f14 & 0x40000000)) != 0) {
             v10 = (S_vv10 *)v18;
             subtract_vector_components((void *)a0, (void *)((int)v10 + 4), (void *)((void *)0x8c46f5a0));
-            t1 = call_8c37e494((void *)((void *)0x8c46f5a0));
+            t1 = njScalor2_8c37e494((void *)((void *)0x8c46f5a0));
             v11 = (float)(t3 + v10->f10);
             if (!(t1 > (v11 * v11))) {
                 t2 = call_8c011e10((void *)((int)v10 + 4), a0, a1, (Frame *)((&frame)), v10->f10, v3, v5);

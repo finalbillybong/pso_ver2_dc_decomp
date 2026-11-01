@@ -15,22 +15,22 @@ struct S_g8c4d8484 {
 extern S_g8c4d8480 *g_8c4d8480;
 extern S_g8c4d8484 *g_8c4d8484;
 extern S_g8c4d8488 *g_8c4d8488;
-extern void call_8c18de08(void *);
+extern void operator_delete_8c18de08(void *);
 extern void call_8c37d534(void *);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void call_8c03dc40(void *, int);
 void operation_8c11e814(void)
 {
-    call_8c18de08(g_8c4d8488);
+    operator_delete_8c18de08(g_8c4d8488);
     g_8c4d8488 = (S_g8c4d8488 *)0;
     call_8c37d534((void *)(g_8c4d8484->f04));
     call_8c37d534((void *)(g_8c4d8484->f00));
-    call_8c011ec0((void *)(g_8c4d8484->f04));
-    call_8c011ec0((void *)(g_8c4d8484->f00));
+    game_free_8c011ec0((void *)(g_8c4d8484->f04));
+    game_free_8c011ec0((void *)(g_8c4d8484->f00));
     if (g_8c4d8480 != 0) {
         call_8c03dc40(g_8c4d8480, 1);
     }
     if (g_8c4d8484 != 0) {
-        call_8c18de08((void *)g_8c4d8484);
+        operator_delete_8c18de08((void *)g_8c4d8484);
     }
 }

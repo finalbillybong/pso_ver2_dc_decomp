@@ -21,7 +21,7 @@ extern char g_8c31a2ac[];
 extern int call_8c18e768(int, int);
 extern void memcpy_8c12b77c(int, int, int);
 extern void operation_1c7dd4(void *);
-extern void operation_8c03ef80(void *, ...);
+extern void debug_error_stub_8c03ef80(void *, ...);
 int operation_8c192558(int a0, int a1)
 {
     char *v1;
@@ -71,6 +71,6 @@ int operation_8c192558(int a0, int a1)
         }
         return 0;
     }
-    operation_8c03ef80((void *)((g_8c31a2ac + 0xf)));
+    debug_error_stub_8c03ef80((void *)((g_8c31a2ac + 0xf)));
     return 0;
 }

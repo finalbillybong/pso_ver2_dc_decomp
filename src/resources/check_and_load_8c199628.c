@@ -2,7 +2,7 @@ typedef struct Header { char unknown0[0x4f]; char name[1]; } Header;
 extern Header header_8c31cb24;
 extern char output_8c31cb18[];
 extern int load_resource_small(const char *, void *);
-void check_and_load_8c199628(void)
+void anti_tamper_check_then_load_difficulty_8c199628(void)
 {
     int *word = (int *)0x8c004000;
     short i;

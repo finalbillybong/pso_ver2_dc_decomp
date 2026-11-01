@@ -24,7 +24,7 @@ struct Object {
     float f88;
     float f8c;
 };
-extern float call_8c37e480(Frame *);
+extern float njScalor_8c37e480(Frame *);
 void operation_8c0ad92c(Object *o)
 {
     Frame frame;
@@ -32,7 +32,7 @@ void operation_8c0ad92c(Object *o)
     (&frame)->f00 = o->f24 - o->f84;
     (&frame)->f04 = o->f28 - o->f88;
     (&frame)->f08 = o->f2c - o->f8c;
-    t1 = call_8c37e480((&frame));
+    t1 = njScalor_8c37e480((&frame));
     if (!(t1 > o->f68)) {
         o->f70 += 1;
     }

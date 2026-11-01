@@ -25,7 +25,7 @@ struct Object {
 };
 extern void refresh_follow_effect_8c0129f4(void *);
 extern void operation_8c09e6d0(void *);
-extern void call_8c05fbf8(int, void *, int, int);
+extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c01c5f0(Object *);
 extern void operation_8c04a43c(void *, float, void *);
 extern void create_effect_777c(void *, int);
@@ -40,7 +40,7 @@ void operation_8c0c1760(Object *o)
         refresh_follow_effect_8c0129f4((void *)o);
         operation_8c09e6d0((void *)o);
         o->f358 = 0x1e;
-        call_8c05fbf8(0x30025, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30025, (void *)(((char *)o + 0x3c)), 0, 0);
         if (((o->f34 & 0x1000000)) != 0) {
             o->f424 = -o->f420 * 0.0153846154f;
             o->ff0 = 0xb;
@@ -73,7 +73,7 @@ void operation_8c0c1760(Object *o)
             return;
         }
         create_effect_777c((void *)(((char *)o + 0x3c)), 0xf0);
-        call_8c05fbf8(0x30022, (void *)(((char *)o + 0x3c)), 0, 0);
+        play_se_8c05fbf8(0x30022, (void *)(((char *)o + 0x3c)), 0, 0);
         o->f398 = 3;
         return;
     case 3:

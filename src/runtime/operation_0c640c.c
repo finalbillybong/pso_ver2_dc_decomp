@@ -2,7 +2,7 @@
 #include "src/include/sample_storage.h"
 #define sample_at ((void (*)(Sample12 *))0x8c36d3ca)
 #define convert_at ((void (*)(Sample12 *,unsigned int *))0x8c36d4c0)
-#define yield_at ((void (*)(void))0x8c380516)
+#define wait_vsync_and_flip_8c380516 ((void (*)(void))0x8c380516)
 void operation_0c640c(void){
     Sample12 sample;
     unsigned int value;
@@ -15,7 +15,7 @@ void operation_0c640c(void){
             unsigned int current=value;
             if(current!=*(unsigned int *)0x8c46f6c4 && current>=*(unsigned int *)0x8c46f6c8+170)break;
             *(unsigned int *)0x8c46f6c4=current;
-            yield_at();
+            wait_vsync_and_flip_8c380516();
         }
     }
 }

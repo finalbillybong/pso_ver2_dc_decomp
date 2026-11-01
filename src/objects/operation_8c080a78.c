@@ -9,12 +9,12 @@ extern S_g8c469bc0 *g_8c469bc0;
 extern S_g8c469bc4 *g_8c469bc4;
 extern void call_8c03dc40(void *, int);
 extern void call_8c37d534(void *);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 void operation_8c080a78(void)
 {
     call_8c03dc40(g_8c469bc4, 1);
     g_8c469bc4 = (S_g8c469bc4 *)0;
     call_8c37d534(g_8c469bc0);
-    call_8c011ec0(g_8c469bc0);
+    game_free_8c011ec0(g_8c469bc0);
     g_8c469bc0 = (S_g8c469bc0 *)0;
 }

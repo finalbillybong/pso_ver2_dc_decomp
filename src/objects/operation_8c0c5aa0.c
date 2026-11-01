@@ -18,7 +18,7 @@ extern void call_8c36d4c0(void *, Frame *);
 extern void select_state2_8c01c1b4(void);
 extern void call_8c05f9e4(void);
 extern void operation_0c62e0(void);
-extern void call_8c380516(void);
+extern void wait_vsync_and_flip_8c380516(void);
 void operation_8c0c5aa0(void)
 {
     Frame frame;
@@ -37,5 +37,5 @@ void operation_8c0c5aa0(void)
     *(int *)0x8c46f6c4 = (int)((&frame)->f00);
     call_8c05f9e4();
     operation_0c62e0();
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

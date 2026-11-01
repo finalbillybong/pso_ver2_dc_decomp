@@ -18,11 +18,11 @@ struct Arg2 {
 struct Object {
     float tag;
 };
-extern float call_8c37eb0c(int);
-void operation_8c1f26b8(Object *o, Arg1 *a1, Arg2 *a2)
+extern float njSin_8c37eb0c(int);
+void game_njSin_wrapper_8c1f26b8(Object *o, Arg1 *a1, Arg2 *a2)
 {
     float t1;
     a1->f00 += a2->f0c;
-    t1 = call_8c37eb0c(a1->f00 + a2->f08);
+    t1 = njSin_8c37eb0c(a1->f00 + a2->f08);
     o->tag = a2->f00 * t1;
 }

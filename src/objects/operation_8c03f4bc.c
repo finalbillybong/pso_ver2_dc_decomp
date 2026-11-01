@@ -6,7 +6,7 @@ typedef struct Vector3 {
 extern int g_8c4dbb08;
 extern int g_8c4dbb0c;
 extern int vmu_find_file_8c01018c(int);
-extern int operation_8c0101dc(int);
+extern int vmu_find_drive_with_free_blocks_8c0101dc(int);
 extern void word_operation_8c0e92d4(unsigned int);
 extern void enable_pair_8c1cc4b4(void);
 extern int operation_8c1f1850(void);
@@ -68,7 +68,7 @@ void operation_8c03f4bc(void)
             v1 -= g_8c4dbb0c;
         }
     }
-    t4 = operation_8c0101dc(v1);
+    t4 = vmu_find_drive_with_free_blocks_8c0101dc(v1);
     v3 = (int)-1;
     if (t4 == v3) {
         word_operation_8c0e92d4((unsigned int)0);

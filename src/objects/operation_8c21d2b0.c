@@ -14,7 +14,7 @@ extern void operation_8c21d510(void *);
 extern void call_8c21d598(Object *);
 extern void operation_8c21d81c(void *);
 extern void call_8c21d778(void);
-extern void operation_8c21d780(void *);
+extern void quest_online_list_init_8c21d780(void *);
 extern void call_8c21d7b8(Object *);
 extern void operation_8c21da5c(void *);
 extern void operation_8c21da98(void *);
@@ -42,7 +42,7 @@ void operation_8c21d2b0(Object *o)
         call_8c21d778();
         return;
     case 5:
-        operation_8c21d780((void *)o);
+        quest_online_list_init_8c21d780((void *)o);
         return;
     case 6:
         call_8c21d7b8(o);

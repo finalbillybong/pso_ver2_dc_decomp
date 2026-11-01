@@ -16,14 +16,14 @@ struct Object {
 struct S_vv1 {
     int f00;
 };
-extern void call_8c05fbf8(int, int, int, int);
+extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c19f980(void *);
 void operation_8c1cd854(Object *o)
 {
     S_vv1 *v1;
     v1 = (S_vv1 *)*(Arg0_30_0 **)((char *)((char *)o->f30 + 0x0) + (o->f84 << 2));
     if (((v1->f00 & 0x80)) == 0) {
-        call_8c05fbf8(0x50001, 0, 0, 0);
+        play_se_8c05fbf8(0x50001, 0, 0, 0);
         operation_8c19f980((void *)v1);
     }
 }

@@ -14,8 +14,8 @@ struct Object {
 extern char g_8c30ff94[];
 extern void show_key_8c112fbc(void *);
 extern int call_8c18e8a0(void *, int);
-extern void call_8c38c5b6(int);
-extern void call_8c38cf80(int, void *, ...);
+extern void njPrintColor_8c38c5b6(int);
+extern void debug_print_at_8c38cf80(int, void *, ...);
 void operation_8c113bb0(Object *o)
 {
     int t1;
@@ -25,7 +25,7 @@ void operation_8c113bb0(Object *o)
     }
     t1 = call_8c18e8a0((void *)(o->f90), 4);
     o->f11c = *(volatile unsigned short *)((char *)0x8c285d88 + (t1 << 1)) & 0xffff;
-    call_8c38c5b6(-0xff0100);
-    call_8c38cf80(0x130020, (void *)((g_8c30ff94 + 0xd2)));
-    call_8c38c5b6(-0xf0f10);
+    njPrintColor_8c38c5b6(-0xff0100);
+    debug_print_at_8c38cf80(0x130020, (void *)((g_8c30ff94 + 0xd2)));
+    njPrintColor_8c38c5b6(-0xf0f10);
 }

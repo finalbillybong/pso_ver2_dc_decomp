@@ -17,11 +17,11 @@ struct S_vv5 {
 };
 extern char g_8c301fdc[];
 extern void call_8c03ef04(Frame *, void *, void *);
-extern int call_8c104d50(Frame *);
+extern int file_last_size_8c104d50(Frame *);
 extern int call_8c18e808(int, int);
 extern int operator_new_8c18de4c(int);
 extern void file_load_8c104d00(int, int);
-int operation_8c09d574(int a0, int a1, int a2)
+int load_ad_dat_8c09d574(int a0, int a1, int a2)
 {
     Frame frame;
     S_vv5 *v5;
@@ -49,7 +49,7 @@ L_8c09d598:;
     }
     call_8c03ef04((Frame *)((&frame)), (void *)(v5->f08), (void *)((g_8c301fdc + 0x7)));
 L_8c09d5dc:;
-    t1 = call_8c104d50((Frame *)((&frame)));
+    t1 = file_last_size_8c104d50((Frame *)((&frame)));
     if (!(t1 >= 0)) {
         return 0;
     }

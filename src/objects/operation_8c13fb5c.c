@@ -22,7 +22,7 @@ struct Object {
 extern int call_8c13fd44(Object *);
 extern int call_8c34d43c(void *, int);
 extern int ADXF_GetFsizeSct_8c34d9b8(void *);
-extern int call_8c011e9c(int);
+extern int game_malloc_buffer_8c011e9c(int);
 extern void ADXF_ReadNw32_8c34d6ae(void *, int, void *);
 void operation_8c13fb5c(Object *o)
 {
@@ -37,7 +37,7 @@ void operation_8c13fb5c(Object *o)
         o->f24 = 0;
         o->f28 = 0;
         t3 = ADXF_GetFsizeSct_8c34d9b8((void *)(o->f64));
-        t4 = call_8c011e9c((int)(t3 << 0xb));
+        t4 = game_malloc_buffer_8c011e9c((int)(t3 << 0xb));
         *(int *)((char *)((char *)o + 0x3c) + (o->f60 << 2)) = (int)(t4);
         if (t4 != 0) {
             ADXF_ReadNw32_8c34d6ae((void *)(o->f64), t3, (void *)(*(Arg0_3c **)((char *)((char *)o + 0x3c) + (o->f60 << 2))));

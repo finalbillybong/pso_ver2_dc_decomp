@@ -23,7 +23,7 @@ struct Object {
     int f48c;
 };
 extern void call_8c15564c(Object *);
-extern float call_8c37eb0c(int);
+extern float njSin_8c37eb0c(int);
 void operation_8c1528c4(Object *o)
 {
     float t1;
@@ -33,7 +33,7 @@ void operation_8c1528c4(Object *o)
         call_8c15564c(o);
         o->f398 = 1;
     case 1:
-        t1 = call_8c37eb0c((int)(o->f488 * 0x3000));
+        t1 = njSin_8c37eb0c((int)(o->f488 * 0x3000));
         o->f40 = t1 * 0.75f;
         if (--o->f488 > 0) {
             return;

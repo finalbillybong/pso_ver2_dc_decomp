@@ -9,7 +9,7 @@ extern S_g8c44be94 *g_8c44be94;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c090514(int, void *, int, int);
-int operation_8c090474(int a0)
+int TObjEneMe1Canadin_create_8c090474(int a0)
 {
     int t1;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x4e8);

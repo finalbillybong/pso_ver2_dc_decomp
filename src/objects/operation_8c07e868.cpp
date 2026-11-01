@@ -73,7 +73,7 @@ struct S_c8c1581ac {
 extern "C" S_c8c1581ac *operation_8c1581ac(int);
 extern "C" void call_8c20775c(void *, char);
 extern "C" void call_8c07f9b0(Object *);
-extern "C" void call_8c05fbf8(int, int, int, int);
+extern "C" void play_se_8c05fbf8(int, int, int, int);
 extern "C" void call_8c07fa4c(Object *);
 extern "C" void operation_8c07e868(Object *o)
 {
@@ -89,7 +89,7 @@ extern "C" void operation_8c07e868(Object *o)
         call_8c07f9b0(o);
     }
     if (((((ObjectData *)o)->fec & 0x40)) == 0) {
-        call_8c05fbf8(0xa, (int)(((ObjectData *)o)->f13c + 0x3c), 0, 0);
+        play_se_8c05fbf8(0xa, (int)(((ObjectData *)o)->f13c + 0x3c), 0, 0);
     }
     call_8c07fa4c(o);
 }

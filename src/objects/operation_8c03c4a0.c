@@ -24,12 +24,12 @@ struct S_g8c462a24_0 {
     S_g8c462a24_0_c *f0c;
 };
 extern char g_8c2eefcc[];
-extern S_c8c104e9c *call_8c104e9c(void *);
+extern S_c8c104e9c *load_resource_8c104e9c(void *);
 extern void copy_resource_fields(void *, void *);
 void operation_8c03c4a0(void)
 {
     S_c8c104e9c *t1;
-    t1 = call_8c104e9c((void *)((g_8c2eefcc + 0xc)));
+    t1 = load_resource_8c104e9c((void *)((g_8c2eefcc + 0xc)));
     *(S_c8c104e9c **)0x8c462a24 = t1;
     *(S_c8c104e9c_0 **)0x8c462a28 = t1->f00;
     copy_resource_fields((void *)((g_8c2eefcc + 0x1c)), (void *)(t1->f00->f04));

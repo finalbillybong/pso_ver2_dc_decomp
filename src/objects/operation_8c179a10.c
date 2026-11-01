@@ -9,7 +9,7 @@ struct Object {
     int f234;
 };
 extern void operation_8c074ce4(void);
-extern void call_8c37e390(int);
+extern void scale_current_matrix_v_8c37e390(int);
 void operation_8c179a10(Object *o)
 {
     if (*(int *)0x8c4689f0 != 1) {
@@ -22,11 +22,11 @@ void operation_8c179a10(Object *o)
         return;
     }
     operation_8c074ce4();
-    call_8c37e390((int)(o->f234 * 0xc + 0x8c286758));
+    scale_current_matrix_v_8c37e390((int)(o->f234 * 0xc + 0x8c286758));
     return;
 L_8c179a46:;
     operation_8c074ce4();
-    call_8c37e390((int)(o->f234 * 0xc + 0x8c2867b8));
+    scale_current_matrix_v_8c37e390((int)(o->f234 * 0xc + 0x8c2867b8));
     return;
 L_8c179a62:;
     operation_8c074ce4();

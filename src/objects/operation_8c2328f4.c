@@ -18,7 +18,7 @@ struct S_g8c510900 {
 extern S_g8c510900 *g_8c510900;
 extern char g_8c338c82[];
 extern void memset_8c12b880(void *, int, int);
-extern char operation_8c23280c(char);
+extern char serial_key_decode_hex_digit_8c23280c(char);
 extern void call_8c12b00c(void *, void *, ...);
 int operation_8c2328f4(int a0, Arg1 *a1)
 {
@@ -30,7 +30,7 @@ int operation_8c2328f4(int a0, Arg1 *a1)
         memset_8c12b880((void *)(&(&frame)->f04), 0, 0x10);
         v1 = 0;
         while (8 > v1) {
-            c = operation_8c23280c(*(char *)((char *)a1 + v1));
+            c = serial_key_decode_hex_digit_8c23280c(*(char *)((char *)a1 + v1));
             if (c != 0) {
                 *(char *)((char *)&(&frame)->f04 + v1) = c;
             } else {

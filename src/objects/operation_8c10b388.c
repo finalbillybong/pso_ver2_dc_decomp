@@ -30,7 +30,7 @@ extern int g_8c4dbaec;
 extern S_L8c41cba0 g_8c41cba0;
 extern char g_8c30bcb0[];
 extern int operation_8c19b054(void);
-extern int call_8c372d98(int);
+extern int bu_check_busy_8c372d98(int);
 extern int player_flag9_8c026508(void);
 extern int player_flag13_8c02935c(void);
 extern int lookup_low_id(int);
@@ -52,7 +52,7 @@ void operation_8c10b388(Object *o)
     }
     if (g_8c41bd10 == 0) {
         t1 = operation_8c19b054();
-        t2 = call_8c372d98((int)((char)t1));
+        t2 = bu_check_busy_8c372d98((int)((char)t1));
         if (t2 == 0 && g_8c4dbaec == 0 && g_8c4d7ca0 == 0) {
             t3 = player_flag9_8c026508();
             if (t3 != 1) {

@@ -18,28 +18,28 @@ extern int g_8c46f560;
 extern int g_8c510f84;
 extern int g_8c510f88;
 extern int g_8c575570;
-extern void call_8c38ae68(void);
-extern void call_8c382a40(void *);
+extern void njPushMatrixEx_8c38ae68(void);
+extern void translate_current_matrix_v_8c382a40(void *);
 extern void call_8c37dc90(void *, int);
-extern void call_8c37e390(void *);
+extern void scale_current_matrix_v_8c37e390(void *);
 extern void call_8c38c0f0(int);
 extern void call_8c3aa702(void *);
 extern void call_8c24b1e4(int, void *);
-extern void call_8c38ad10(void);
+extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c24b1e4(int a0, Arg1 *a1)
 {
     char *v1;
     char *v34;
     v1 = (char *)a1->f00;
-    call_8c38ae68();
+    njPushMatrixEx_8c38ae68();
     if ((((int)(v1) & 1)) == 0) {
-        call_8c382a40((void *)(((char *)a1 + 0x8)));
+        translate_current_matrix_v_8c382a40((void *)(((char *)a1 + 0x8)));
     }
     if ((((int)(v1) & 2)) == 0) {
         call_8c37dc90((void *)(((char *)a1 + 0x14)), (int)((int)(v1) & 0x20));
     }
     if ((((int)(v1) & 4)) == 0) {
-        call_8c37e390((void *)(((char *)a1 + 0x20)));
+        scale_current_matrix_v_8c37e390((void *)(((char *)a1 + 0x20)));
     }
     if ((((int)(v1) & 8)) == 0) {
         v34 = (char *)a1->f04;
@@ -60,7 +60,7 @@ L_8c24b27e:;
     if (a1->f2c != 0) {
         call_8c24b1e4(a0, (void *)(a1->f2c));
     }
-    call_8c38ad10();
+    njPopMatrixEx_8c38ad10();
     if (a1->f30 != 0) {
         call_8c24b1e4(a0, (void *)(a1->f30));
     }

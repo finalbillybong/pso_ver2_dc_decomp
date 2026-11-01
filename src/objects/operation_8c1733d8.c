@@ -18,7 +18,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4db520;
 extern int g_8c4db524;
 extern void operation_03cee8_8c173484(void);
-extern void call_8c011ec0(void *);
+extern void game_free_8c011ec0(void *);
 extern void TObject_dtor_8c03311c(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *operation_8c1733d8(Object *o, int a1)
@@ -31,7 +31,7 @@ Object *operation_8c1733d8(Object *o, int a1)
         } else {
             g_8c4db524 = 0;
         }
-        call_8c011ec0((void *)(o->fac));
+        game_free_8c011ec0((void *)(o->fac));
         TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {
             call_8c122774(g_8c4d97e0, o);

@@ -5,10 +5,10 @@ typedef struct Vector3 {
 } Vector3;
 extern void call_8c1cbdd4(void);
 extern void select_mode3_8c1cc4e0(void);
-extern void call_8c380516(void);
+extern void wait_vsync_and_flip_8c380516(void);
 void operation_8c1cbb70(void)
 {
     call_8c1cbdd4();
     select_mode3_8c1cc4e0();
-    call_8c380516();
+    wait_vsync_and_flip_8c380516();
 }

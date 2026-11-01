@@ -24,9 +24,9 @@ extern Block16 g_8c46f564;
 extern int g_8c4e3164;
 extern int g_8c575570;
 extern Block16 g_8c5755ac;
-extern void call_8c37dd28(int, int);
-extern void call_8c37df90(int, int);
-extern void call_8c37e02c(int, int);
+extern void njRotateX_8c37dd28(int, int);
+extern void njRotateY_8c37df90(int, int);
+extern void njRotateZ_8c37e02c(int, int);
 extern void call_8c38c0f0(void *);
 extern void call_8c391c94(void);
 extern void call_8c391cc4(void);
@@ -46,15 +46,15 @@ void operation_8c1f2718(Object *o)
         if (v6 == 0 && g_8c4e3164 == (v5->f00 & 7)) {
             v7 = (int)(((v5->f00 & 0x20)) != 0);
             if (v7 != 0) {
-                call_8c37dd28(0, (int)((int)((float)v5->f02 * 65536.0f / 360.0f)));
+                njRotateX_8c37dd28(0, (int)((int)((float)v5->f02 * 65536.0f / 360.0f)));
             } else {
                 v8 = (int)(((v5->f00 & 0x40)) != 0);
                 if (v8 != 0) {
-                    call_8c37df90(0, (int)((int)((float)v5->f02 * 65536.0f / 360.0f)));
+                    njRotateY_8c37df90(0, (int)((int)((float)v5->f02 * 65536.0f / 360.0f)));
                 } else {
                     v9 = (int)(((v5->f00 & 0x80)) != 0);
                     if (v9 != 0) {
-                        call_8c37e02c(0, (int)((int)((float)v5->f02 * 65536.0f / 360.0f)));
+                        njRotateZ_8c37e02c(0, (int)((int)((float)v5->f02 * 65536.0f / 360.0f)));
                     }
                 }
             }

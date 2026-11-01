@@ -28,9 +28,9 @@ struct Frame {
 };
 extern void refresh_follow_effect_8c0129f4(void *);
 extern int call_8c04a52c(Object *, Frame *, float);
-extern float call_8c37eb0c(void *);
-extern float call_8c38c154(void *);
-extern void call_8c05fbf8(void *, void *, int, int);
+extern float njSin_8c37eb0c(void *);
+extern float njCos_8c38c154(void *);
+extern void play_se_8c05fbf8(void *, void *, int, int);
 void operation_8c15feac(Object *o)
 {
     Frame frame;
@@ -45,13 +45,13 @@ void operation_8c15feac(Object *o)
     o->fe8 = (unsigned int)o->fe8 >> 1 << 1;
     t1 = call_8c04a52c(o, (Frame *)((&frame)), 500.0f);
     if ((unsigned short)t1 != 0xffff) {
-        t2 = call_8c37eb0c((void *)(o->f64));
-        t3 = call_8c38c154((void *)(o->f64));
+        t2 = njSin_8c37eb0c((void *)(o->f64));
+        t3 = njCos_8c38c154((void *)(o->f64));
         if (0.0f > ((&frame)->f00 * t2 + (&frame)->f08 * t3)) {
             v1 = (int)6;
         }
     }
     o->ff0 = v1;
-    call_8c05fbf8((void *)(*(S_g8c286440 **)((char *)0x8c286440 + (o->f39c << 2))), (void *)(((char *)o + 0x3c)), 0, 0);
+    play_se_8c05fbf8((void *)(*(S_g8c286440 **)((char *)0x8c286440 + (o->f39c << 2))), (void *)(((char *)o + 0x3c)), 0, 0);
     o->f3d0 = 0xa4;
 }

@@ -12,7 +12,7 @@ extern void task_8c3462d4(void);
 extern void *create_handler_8c36bbc4(int, void (*)(void), int, int);
 extern unsigned long strlen_8c12b0cc(const char *);
 extern void set_values_8c346118(int, int);
-int init_system_8c3473ac(void)
+int sdSysInit_8c3473ac(void)
 {
     int error;
     int old = _builtin_get_imask();
@@ -26,6 +26,6 @@ int init_system_8c3473ac(void)
     strlen_8c12b0cc(d_8c3f3658);
 done:
     _builtin_set_imask(old);
-    if (error) set_values_8c346118((int)init_system_8c3473ac, error);
+    if (error) set_values_8c346118((int)sdSysInit_8c3473ac, error);
     return error;
 }
