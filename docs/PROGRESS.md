@@ -15,9 +15,9 @@
 | Image coverage (code ranges + typed data) | 42.3523% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
 | Assembly (hand-written), not decompiled | 32,738 bytes in 88 units (1.0689% of the code extent) |
-| Fallback assembly for unmatched code, **not decompiled** | 1,784,422 bytes in 5014 units (58.2615% of the code extent) |
-| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,960,435 bytes (95.1362% of the image) |
-| Dump extracts (untyped bytes from your dump, not reconstructed) | 202,477 bytes in 2662 ranges (4.8638% of the image; untyped_bytes 174,802, zero_run 28,641) |
+| Fallback assembly for unmatched code, **not decompiled** | 1,784,418 bytes in 4917 units (58.2614% of the code extent) |
+| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,960,431 bytes (95.1361% of the image) |
+| Dump extracts (untyped bytes from your dump, not reconstructed) | 202,481 bytes in 2641 ranges (4.8639% of the image; untyped_bytes 173,836, zero_run 28,645) |
 | Retained reference dependence | 0 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
