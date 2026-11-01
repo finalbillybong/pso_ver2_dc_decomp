@@ -126836,6 +126836,64 @@
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_scanf_8c12c760",
+      "source": "src/sdk/shc_scanf_8c12c760.c",
+      "address": "0x8c12c760",
+      "entry": "_scanf_core",
+      "compiler": "shc-v5.1r13-macsave1",
+      "symbols": {
+        "__ctype": "0x8c285e40",
+        "_errno": "0x8c4d9a00",
+        "__digits_to_float": "0x8c12f5f0",
+        "__divls": "0x8c12ba9c",
+        "__divlu": "0x8c12bb50"
+      },
+      "ranges": [
+        {
+          "offset": 1165152,
+          "size": 3712
+        }
+      ],
+      "functions": [
+        {
+          "name": "scanf_core",
+          "address": "0x8c12c760",
+          "size": 1172
+        },
+        {
+          "name": "getint",
+          "address": "0x8c12cbf4",
+          "size": 1084
+        },
+        {
+          "name": "getfloat",
+          "address": "0x8c12d030",
+          "size": 1148
+        },
+        {
+          "name": "scanset",
+          "address": "0x8c12d4ac",
+          "size": 208
+        },
+        {
+          "name": "getch",
+          "address": "0x8c12d57c",
+          "size": 66
+        },
+        {
+          "name": "ungetch",
+          "address": "0x8c12d5be",
+          "size": 34
+        }
+      ],
+      "reference_sha256": "6b5b79ec5906ecf9fdbbc7d0d21c8a14dc970ae4a2c8e01bbf7368c248420df4",
+      "headers": [],
+      "boundary_review": "SHC pool group: 6 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with shc-v5.1r13-macsave1 (fixed SHC flags with -macsave=1; the reference saves MACL in the prologue).",
+      "macsave_evidence": [
+        "0x8c12cc04"
+      ]
+    },
+    {
       "id": "shc_ceilf_8c12e2f8",
       "source": "src/sdk/shc_ceilf_8c12e2f8.c",
       "address": "0x8c12e2f8",
@@ -231434,6 +231492,83 @@
       "reference_sha256": "b06e732fbd3470d6dd43af61a09f8b5849d0d07d1690ea66431e9266c383bb6b",
       "headers": [],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
+    },
+    {
+      "id": "shc_slot_score_8c1f2c64",
+      "source": "src/sdk/shc_slot_score_8c1f2c64.c",
+      "address": "0x8c1f2c64",
+      "entry": "_slot_best_8c1f2c64",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_g_slots_8c4effa0": "0x8c4effa0",
+        "_g_input_mode_8c4f0864": "0x8c4f0864"
+      },
+      "ranges": [
+        {
+          "offset": 1977444,
+          "size": 1852
+        }
+      ],
+      "functions": [
+        {
+          "name": "slot_best_8c1f2c64",
+          "address": "0x8c1f2c64",
+          "size": 112
+        },
+        {
+          "name": "node_cost_8c1f2cd4",
+          "address": "0x8c1f2cd4",
+          "size": 96
+        },
+        {
+          "name": "node_eval_8c1f2d34",
+          "address": "0x8c1f2d34",
+          "size": 154
+        },
+        {
+          "name": "slot_clear_bonus_8c1f2dce",
+          "address": "0x8c1f2dce",
+          "size": 56
+        },
+        {
+          "name": "node_link_bonus_8c1f2e06",
+          "address": "0x8c1f2e06",
+          "size": 114
+        },
+        {
+          "name": "node_is_paren_8c1f2e78",
+          "address": "0x8c1f2e78",
+          "size": 32
+        },
+        {
+          "name": "pair_score_8c1f2e98",
+          "address": "0x8c1f2e98",
+          "size": 348
+        },
+        {
+          "name": "score_a_8c1f2ff4",
+          "address": "0x8c1f2ff4",
+          "size": 236
+        },
+        {
+          "name": "score_b_8c1f30e0",
+          "address": "0x8c1f30e0",
+          "size": 130
+        },
+        {
+          "name": "score_c_8c1f3162",
+          "address": "0x8c1f3162",
+          "size": 296
+        },
+        {
+          "name": "score_d_8c1f328a",
+          "address": "0x8c1f328a",
+          "size": 278
+        }
+      ],
+      "reference_sha256": "bc0dbdbb0b260a1adf043412ed26929258b1c904986c4dfc0da8cad6176a4ca7",
+      "headers": [],
+      "boundary_review": "SHC pool group: 11 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
       "id": "shc_short_or_offset_8c1f33a0",

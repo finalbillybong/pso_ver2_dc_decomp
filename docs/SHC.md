@@ -141,14 +141,14 @@ installation is present.
 
 ## Current units
 
-348 pool-group units, 87,442 bytes, 1180 functions (listed in `config/project.json`
+350 pool-group units, 93,006 bytes, 1197 functions (listed in `config/project.json`
 with `"compiler": "shc-v5.1r13"` or `"shc-v5.0r28"`; sources in `src/sdk/`):
 
 | Region | Compiler | Units | Bytes | Functions |
 | --- | --- | ---: | ---: | ---: |
 | C runtime library `0x8c12b000`–`0x8c131000` | 5.1r13 | 14 | 884 | 14 |
-| C runtime library, MACL-saving routines ([-macsave=1](#-macsave1-units)) | 5.1r13, -macsave=1 | 2 | 752 | 2 |
-| Library block `0x8c1f0000`–`0x8c205000` | 5.1r13 | 25 | 6,306 | 95 |
+| C runtime library, MACL-saving routines ([-macsave=1](#-macsave1-units)) | 5.1r13, -macsave=1 | 3 | 4,464 | 8 |
+| Library block `0x8c1f0000`–`0x8c205000` | 5.1r13 | 26 | 8,158 | 106 |
 | SDK region from `0x8c340000` | 5.1r13 | 293 | 74,200 | 1023 |
 | `0x8c3d0000` region ([second release](#second-release-50r2628)) | 5.0r28 | 14 | 5,300 | 46 |
 
@@ -275,13 +275,38 @@ releases produce the same code without the MACL save and restore.
 | --- | ---: | ---: | --- |
 | `shc_rand_8c12b944` | 44 | 1 | `0x8c12b948` |
 | `shc_strtol_8c12b24c` | 708 | 1 | `0x8c12b25c` |
+| `shc_scanf_8c12c760` (scanf file, 6 functions) | 3,712 | 6 | `0x8c12cc04` (in `getint`) |
 
 `strtol` uses two ordinary forward gotos (`goto bad`, `goto done`) to reach the
 reference's distant error block (errno 1200) and to jump over it, as its branches
 do. The units introduce the extern names `__ctype` (`0x8c285e40`, the character
 class table), `__ptrchk` (`0x8c12f67c`, the range-check callback strtol calls) and
-`__seed` (`0x8c312688`, rand's state) because no admitted names exist for those
-addresses.
+`__seed` (`0x8c312688`, rand's state) and, in the scanf file, `__digits_to_float`
+(`0x8c12f5f0`) because no admitted names exist for those addresses. In the scanf
+file only `getint` saves MACL; the other five functions share its source file and
+therefore its flag set. Its `getfloat` contains two `switch (c->size) { default: ... }`
+statements: the reference loads the size byte (`mov.b @(1,r14)`) at both points and
+then takes one path for every size, because float, double and long double share one
+format under `-fpu=single`. Writing the original size cases (`'l'`, `'L'`) with
+identical bodies adds compares the reference does not have, so the default-only
+form is kept as the one that reproduces the observed loads.
+
+## Unread parameters
+
+A parameter the function never reads is admitted only when the reference's own call
+sites load a value into that argument register and removing the parameter changes
+the bytes: it is then an unused parameter of the original source, not an argument
+added to steer registers. Two units rely on this:
+
+| Function | Parameter | Evidence |
+| --- | --- | --- |
+| `node_cost_8c1f2cd4` (`shc_slot_score_8c1f2c64`) | `idx` (r4) | its in-file callers load idx into r4; the callee overwrites r4 (`mov #0`) on entry; without the parameter the unit is 1,836 bytes instead of 1,852 |
+| `getfloat` (`shc_scanf_8c12c760`) | `conv` (r4) | the caller loads the conversion character (`*p`) into r4 |
+
+`shc_slot_score_8c1f2c64` also keeps an address-taken local (`&v;` in
+`node_link_bonus`) because the reference stores `v` to and reloads it from its
+stack slot, and it uses ordinary forward gotos to blocks the reference's branches
+reach (shared return and bonus blocks).
 
 ## Not accepted
 

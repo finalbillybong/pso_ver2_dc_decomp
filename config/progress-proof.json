@@ -14,14 +14,14 @@
     "fallback_assembly_units_exact"
   ],
   "inputs_sha256": {
-    "config/asm.json": "c0ffa74595c7d398d8f5b850e4ca6d9ca29621617b6c49f59729f234bb2abf38",
+    "config/asm.json": "8498c92522a64b173eda28a4e6ee0ec42a877791fe304aff532289af1ed76023",
     "config/assets.json": "2910dc0f953037df2aac73b4f0ecdef61813693d629ca8ed6959c547f7cb1220",
     "config/compiler-packages.json": "eb4da1077861b8b0e1ce4faf2725e0d701fab79e43e92a95dc1b0d64bbb040d9",
     "config/data.json": "954f6caed9f7d7bf410c50cb093add05e22faa908d02ba03fb3138f9834569a9",
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/extracts.json": "94564682ddcd25616dd8c55bdb5bac5fc0e4b3f5923a8d2e36ba73a8eac3b98a",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "6144e0089948dbd3d96cb4e7f7c36e5542e97b5a944add906128bb67d300b374",
+    "config/project.json": "14288c8bdc403537b91d5f8798a10b3f55bd4a4ad7a2d19f43bccc0241c5685c",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/data/strings_8c284858.c": "cb16255c8ce183afbcb89c956a8f571e4ce6ef906acf5d31baea03f9d8066228",
@@ -14718,6 +14718,7 @@
     "src/sdk/shc_scale_colors_8c37e89c.c": "2fd8c2efc7d5c6aff84989a48589b8f971c5d2aa4c8d386b5e2547772f32e1c8",
     "src/sdk/shc_scale_vectors_8c37e7e0.c": "f390f36c4e06e81060b3c7f4118ba4cfa8cdfa095cb5c86f5207292ada915559",
     "src/sdk/shc_scaled_size_8c356bec.c": "a7839d2b0ef1507882313b46c48aaa45ef21107270ff8d1ae8fdb20f1a93fd03",
+    "src/sdk/shc_scanf_8c12c760.c": "fd9805f6e9569debf2fe4735e2f4adeccc9a28d2834599cab1071bf2e681890f",
     "src/sdk/shc_select_mode_8c3903c0.c": "1034f9dc9553e325f799554754a3ff0e40660733c9e5498aad45b019010ae854",
     "src/sdk/shc_select_track_8c35795c.c": "841b9163d1e3a0d777b39ab529f62f7f542c825911092543078711ad84ac19af",
     "src/sdk/shc_send_command14_8c34853c.c": "cbc9bd14e7255ad7b3750a399e71d148c1471cfeca8d2b6d7d4a887304e1f8fe",
@@ -14756,6 +14757,7 @@
     "src/sdk/shc_slot_ready_8c3cc9bc.c": "239c156a502eae1b6b8334facebd54d341ee07bbd7b30897eed4c2d8bd2a5600",
     "src/sdk/shc_slot_request_8c348454.c": "3658680562555e10dc6691a95eb738644dcfe0c7678ffa52da68b1037e4072b1",
     "src/sdk/shc_slot_reset_8c36d9c8.c": "82331b27f7910cbe8736e89854b8e9a8cb37e609028d22a5c2b4931e87707de6",
+    "src/sdk/shc_slot_score_8c1f2c64.c": "e59697238eeb1ad87735ad75f35672af39ebb73785cfa4282e3d2b475e67df5d",
     "src/sdk/shc_slot_table_8c1f90e4.c": "1c6c3465d2b9d62fb5389fe0164cca5f2e8db8ccf86d9c78a86213f8571afeb3",
     "src/sdk/shc_snd_init_8c34dda4.c": "e8a5ff7bc64e44ad6b1388a4d013c8b3e91e09d3702ff34a624c1a032f456d60",
     "src/sdk/shc_snd_thunks_8c34e0b8.c": "0d5fbc4b859e602b544e834d8b0e44a70167e937c4df6e701dab46bc8349de99",
@@ -68586,6 +68588,13 @@
       "-optimize=1",
       "-macsave=0"
     ],
+    "shc_scanf_8c12c760": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=1"
+    ],
     "shc_ceilf_8c12e2f8": [
       "-cpu=sh4",
       "-endian=little",
@@ -112417,6 +112426,13 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "shc_slot_score_8c1f2c64": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
     ],
     "shc_short_or_offset_8c1f33a0": [
       "-cpu=sh4",
