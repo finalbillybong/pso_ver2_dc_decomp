@@ -21,7 +21,7 @@
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/extracts.json": "9e1bcbf5695c73f4065284520d9b248192ebb4b336160dbbe4bf3d6e59a2e35b",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "139313b2945ab3bafc483c0ec66e0cbff5a55e202eb508b3a55a90e4d2d98ede",
+    "config/project.json": "5e5bec62ab5dd1cafdd873319fd7a0a4b6a3968e52d0fb2c30fc93283ed77cba",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/data/strings_8c284858.c": "cb16255c8ce183afbcb89c956a8f571e4ce6ef906acf5d31baea03f9d8066228",
@@ -7435,6 +7435,7 @@
     "src/objects/operation_8c0adc0c.c": "8e5aeb113806215631b0c638639429b2a5f562439f393d14a721c59916f943c9",
     "src/objects/operation_8c0adc10.c": "b0d3fde203269851eadb53b9ba31bda64c26cebb851b4f879c4f7dc168def58b",
     "src/objects/operation_8c0ae8a0.c": "c4d4e58b52266b29b4b1b35f5420ea683c73a38650d540200cf5a4bbb8a7c620",
+    "src/objects/operation_8c0af2a0.c": "01cf60a894702d0c018f21d56dde3fc3573def7bd86b0b016e518ae354a4ab79",
     "src/objects/operation_8c0af660.c": "7176614687bffbe4d49da8ab8550f5f212e4731ab73827bbbae012efa4d05280",
     "src/objects/operation_8c0afdec.c": "0f2df07fd2814417434df1ea112d4c244356e01683b6f42cb5d15a9631fbf503",
     "src/objects/operation_8c0b03c4.c": "01315a69c38cc01c7bc1bbbb31701fea23363c6aba93b39d21e196af904e65a9",
@@ -10480,6 +10481,7 @@
     "src/objects/operation_8c19a09c.c": "db4ebb2551e5877fab148167c3d06a4efdb1fed3d17be93cde93180a85c7217d",
     "src/objects/operation_8c19a370.c": "d3ef0dd90a0ca2b78837288d8e9b377efd65d840fac62942a232bec174316d77",
     "src/objects/operation_8c19a6c4.c": "b78cccd6951bd2e34fa84db08629ad89a42920eacabbd409e8d8ed3b1aadb00a",
+    "src/objects/operation_8c19a83c.cpp": "c4026f958014232f83a7d25284ced53ab8712ed8eaaa050f774bfb2fbfbb456b",
     "src/objects/operation_8c19b054.c": "a5b57455e06d84dcc91ce35f11b4df58caab2cbde65bb6405c837eb6145d11a1",
     "src/objects/operation_8c19b2a8.c": "c336f95aa3326eb56d3cda181cc08da703d64c09dfece379764a76b89d00bcf9",
     "src/objects/operation_8c19b2b4.c": "5af83d51dd4335f08bbf156aa38b64acc166e63f9a5576468a96561b086bd37b",
@@ -12718,6 +12720,7 @@
     "src/objects/operation_8c22f164.c": "8f22fc7bd1991ad50e0cba95bb53b357968c5998ae396ac7bb2464c77cdc65ca",
     "src/objects/operation_8c22f178.c": "1ddf20d3c3f37cf581cde56fd32cc2388ca3b6b67d5b6c4e94a93c6de46da867",
     "src/objects/operation_8c22f180.c": "db8ea34d7e53b25ea2e99d8d659a3b7090b6b32e0391d50c7c34847c443cfb1e",
+    "src/objects/operation_8c22f4fc.cpp": "5cb953ba648af6c22d52ee29d9a31890542264b06634c94f911c167a34207f73",
     "src/objects/operation_8c22fda4.c": "2b1ecaaca24e95b0144825fb609ff7266b0db3ea1b696c69640e51efb552b15b",
     "src/objects/operation_8c22fffc.c": "9d59c811a19b77d95c0c9ec3c78fe00010f6ecbb1eb74759c0fc2a73962e639b",
     "src/objects/operation_8c230024.c": "c158b428b75bcd7de16e6a06e41a0572a7b94e196f416fd86d16a6fdab2a9117",
@@ -45441,6 +45444,17 @@
       "-O2"
     ],
     "operation_8c0ae8a0": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c0af2a0": [
       "-proc",
       "SH4",
       "-endian",
@@ -91095,6 +91109,19 @@
       "off",
       "-O2"
     ],
+    "operation_8c19a83c": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
+    ],
     "operation_8c19b054": [
       "-proc",
       "SH4",
@@ -121444,6 +121471,19 @@
       "-Cpp_exceptions",
       "off",
       "-O2"
+    ],
+    "operation_8c22f4fc": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2",
+      "-lang",
+      "c++"
     ],
     "operation_8c22fda4": [
       "-proc",
