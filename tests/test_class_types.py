@@ -222,6 +222,39 @@ class ConstructorAndLooseTests(unittest.TestCase):
         self.assertEqual(extras['loose'], [0x108])
 
 
+class Phase2RewriteTests(unittest.TestCase):
+    classes = MergeTests.classes
+
+    def test_float_inside_header_vector3_becomes_member(self):
+        vec = C_UNIT.replace('    char unknown1c[0x54];\n    float f70;', '    char unknown1c[0x54];\n    Vector3 f70;')
+        vec = vec.replace('o->f70 += 1.0f', 'o->f70.x += 1.0f')
+        a, _ = evidence(vec, 'TFoo_v17_8c000000', 'TFoo', uid='a')
+        b, _ = evidence(vec, 'TFoo_v17_8c000000', 'TFoo', uid='b')
+        flt = C_UNIT.replace('float f70;', 'float f70;\n    float f74;').replace('char unknown74[0x94]', 'char unknown78[0x90]')
+        flt = flt.replace('o->f70 += 1.0f;', 'o->f74 += 1.0f;')
+        c, info = evidence(flt, 'TFoo_v17_8c000000', 'TFoo', uid='c')
+        lay = ct.resolve(self.classes, [a, b, c], 'TFoo')
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / 'unit.c').write_text(flt)
+            unit = {'id': 'c', 'source': 'unit.c', 'functions': [{'name': 'TFoo_v17_8c000000'}]}
+            res, why = ct.convert_unit(unit, c, info, lay, root)
+        self.assertEqual(why, '')
+        self.assertIn('o->f70.y += 1.0f;', res['text'])
+
+    def test_size_assertion_on_the_local_view_goes_with_it(self):
+        text = C_UNIT.replace('void TFoo_v17', 'typedef char check_prefix[sizeof(Object)==0x10c?1:-1];\nvoid TFoo_v17')
+        a, info = evidence(text, 'TFoo_v17_8c000000', 'TFoo', uid='a')
+        lay = ct.resolve(self.classes, [a], 'TFoo')
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / 'unit.c').write_text(text)
+            unit = {'id': 'a', 'source': 'unit.c', 'functions': [{'name': 'TFoo_v17_8c000000'}]}
+            res, why = ct.convert_unit(unit, a, info, lay, root)
+        self.assertEqual(why, '')
+        self.assertNotIn('check_prefix', res['text'])
+
+
 class RenameTests(unittest.TestCase):
     classes = MergeTests.classes
 

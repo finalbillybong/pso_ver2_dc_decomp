@@ -1,18 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x69];
-    char f69;
-    char f6a;
-};
+#include "src/include/classes/TWindowSubSymbolChatFaceType.h"
 extern char g_8c41cba0[];
 extern int operation_8c01d844(int, int, int, int);
 extern void play_se_8c05fbf8(int, int, int, int);
-void operation_8c220460(Object *o)
+void operation_8c220460(TWindowSubSymbolChatFaceType *o)
 {
     int v1;
     int t1;

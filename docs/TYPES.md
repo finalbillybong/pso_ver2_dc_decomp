@@ -70,6 +70,30 @@ A unit keeps its local type when its view differs from the header. The conflict 
   pointer, or the reverse. Such a unit keeps only if it compiles and stays byte-exact under
   the header's type; otherwise it goes on the `--skip` list.
 
+## Units not named for a class method
+
+Most matched units are named for what they do, not for a class. `config/class-attribution.json`
+records the units that were adopted onto a class header by evidence instead, with the signals
+that support the attribution:
+
+- `slot`: the function is a vtable slot of the class, or a common ancestor of every class whose
+  vtable has it.
+- `ctor`: it is the class's constructor or destructor (stores its vtable and class name).
+- `callers`: every caller is a method of the class and passes `this`.
+- `layout_unique`: the unit's view of its first parameter matches one class family's header on
+  3 or more fields past the TObject header, within the class size.
+- `layout` / `layout_any`: weaker layout agreement, only counted next to another signal.
+
+A unit is attributed with one strong signal (`slot`, `ctor`, `layout_unique`) or two that agree.
+Any disagreement leaves it unattributed. The unit then converts like any other and must stay
+byte-exact. `convert --attribution config/class-attribution.json` replays the attribution;
+`check` verifies every attributed unit includes its class header.
+
+Two more rewrites are applied during conversion, and again kept only when the unit stays exact:
+- a `float` that falls inside a header `Vector3` becomes a member access (`o->f40` becomes
+  `o->f3c.y`);
+- a static `sizeof` assertion that only guards the unit's local view is dropped with that view.
+
 ## Adding classes
 
 ```

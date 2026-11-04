@@ -1,22 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubMag.h"
 typedef struct S_g8c467180 S_g8c467180;
 typedef struct S_g8c467180_24 S_g8c467180_24;
 typedef struct S_g8c467180_24_0 S_g8c467180_24_0;
-typedef struct Object Object;
-typedef struct Arg0_44 Arg0_44;
-typedef struct Arg0_48 Arg0_48;
-struct Object {
-    char unknown0[0x21];
-    char f21;
-    char unknown22[0x22];
-    Arg0_44 *f44;
-    Arg0_48 *f48;
-};
-struct Arg0_44 {
+typedef struct TWindowSubMag_p44 TWindowSubMag_p44;
+typedef struct TWindowSubMag_p48 TWindowSubMag_p48;
+struct TWindowSubMag_p44 {
     char unknown0[0x69];
     char f69;
 };
@@ -26,7 +14,7 @@ struct S_g8c467180 {
 };
 extern char g_8c31a25c[];
 extern void operation_8c119764(int, int, int);
-void operation_8c191454(Object *o)
+void operation_8c191454(TWindowSubMag *o)
 {
     int v1;
     v1 = (int)*(int *)((char *)((char *)o->f44 + 0x6c) + (o->f44->f69 << 2));

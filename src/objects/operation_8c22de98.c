@@ -1,26 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TQuestVmDownLoadServer.h"
 typedef struct S_g8c467180 S_g8c467180;
 typedef struct S_g8c467180_44 S_g8c467180_44;
 typedef struct S_g8c467180_44_0 S_g8c467180_44_0;
-typedef struct Object Object;
-typedef struct Arg0_84 Arg0_84;
-typedef struct Arg0_88 Arg0_88;
+typedef struct TQuestVmDownLoadServer_p84 TQuestVmDownLoadServer_p84;
+typedef struct TQuestVmDownLoadServer_p88 TQuestVmDownLoadServer_p88;
 typedef struct S_vv201 S_vv201;
 typedef struct S_vv201_90 S_vv201_90;
 typedef struct S_vv202 S_vv202;
 typedef struct S_vv202_90 S_vv202_90;
-struct Object {
-    char unknown0[0x84];
-    Arg0_84 *f84;
-    Arg0_88 *f88;
-    char unknown8c[0x8];
-    int f94;
-};
-struct Arg0_88 {
+struct TQuestVmDownLoadServer_p88 {
     char unknown0[0x80];
     unsigned short f80;
 };
@@ -47,8 +35,8 @@ extern int operation_8c1571f4(void *);
 extern void request_resource_release(void *);
 extern void operation_8c19a044(void *, int);
 extern void clear_global_8c22fff0(void);
-extern void call_8c22e8e4(Object *, void *, int);
-void operation_8c22de98(Object *o)
+extern void call_8c22e8e4(TQuestVmDownLoadServer *, void *, int);
+void operation_8c22de98(TQuestVmDownLoadServer *o)
 {
     S_vv201 *v201;
     S_vv202 *v202;
@@ -59,7 +47,7 @@ void operation_8c22de98(Object *o)
             if (t1 == 0) {
                 if (o->f88 != 0) {
                     request_resource_release((void *)(o->f88));
-                    o->f88 = (Arg0_88 *)0;
+                    o->f88 = (TQuestVmDownLoadServer_p88 *)0;
                 }
                 o->f94 = 7;
                 return;
@@ -67,7 +55,7 @@ void operation_8c22de98(Object *o)
             if (t1 == 1) {
                 if (o->f88 != 0) {
                     request_resource_release((void *)(o->f88));
-                    o->f88 = (Arg0_88 *)0;
+                    o->f88 = (TQuestVmDownLoadServer_p88 *)0;
                 }
                 v201 = (S_vv201 *)o->f84;
                 if (v201 != 0) {
@@ -85,7 +73,7 @@ void operation_8c22de98(Object *o)
         if (((o->f88->f80 & 0xffff & 4)) != 0) {
             if (o->f88 != 0) {
                 request_resource_release((void *)(o->f88));
-                o->f88 = (Arg0_88 *)0;
+                o->f88 = (TQuestVmDownLoadServer_p88 *)0;
             }
             v202 = (S_vv202 *)o->f84;
             if (v202 != 0) {

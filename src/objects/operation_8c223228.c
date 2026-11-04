@@ -1,22 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_22b8 Arg0_22b8;
-typedef struct Arg0_22bc Arg0_22bc;
-typedef struct Arg0_22c0 Arg0_22c0;
-typedef struct Arg0_22c4 Arg0_22c4;
-struct Object {
-    char unknown0[0x22b8];
-    Arg0_22b8 *f22b8;
-    Arg0_22bc *f22bc;
-    Arg0_22c0 *f22c0;
-    Arg0_22c4 *f22c4;
-};
+#include "src/include/classes/TQuestListVM.h"
+typedef struct TQuestListVM_p22b8 TQuestListVM_p22b8;
+typedef struct TQuestListVM_p22bc TQuestListVM_p22bc;
+typedef struct TQuestListVM_p22c0 TQuestListVM_p22c0;
+typedef struct TQuestListVM_p22c4 TQuestListVM_p22c4;
 extern void request_resource_release(void *);
-void operation_8c223228(Object *o)
+void operation_8c223228(TQuestListVM *o)
 {
     if (o->f22bc != 0) {
         request_resource_release(o->f22bc);

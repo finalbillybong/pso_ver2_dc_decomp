@@ -1,21 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xf0];
-    short ff0;
-    char unknownf2[0x8e];
-    float f180;
-    char unknown184[0x186];
-    short f30a;
-};
-extern void call_8c01c5f0(Object *);
+#include "src/include/classes/TContainerAncient01.h"
+extern void call_8c01c5f0(TContainerAncient01 *);
 extern int call_8c18e954(int, int);
 extern void operation_8c129a08(void *, int, int);
-void operation_8c1296f4(Object *o)
+void operation_8c1296f4(TContainerAncient01 *o)
 {
     int t1;
     call_8c01c5f0(o);

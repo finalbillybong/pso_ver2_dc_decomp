@@ -1,22 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    int f20;
-    float f24;
-    int f28;
-    char unknown2c[0x8];
-    int f34;
-    int f38;
-    int f3c;
-};
-void operation_8c25e194(Object *o, int a1, int a2)
+#include "src/include/classes/TDLGraph.h"
+void operation_8c25e194(TDLGraph *o, int a1, int a2)
 {
     o->f34 = o->f20;
     o->f24 = (float)a1 / (float)a2;

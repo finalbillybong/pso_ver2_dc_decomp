@@ -1,14 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemReverseTechPart1.h"
 typedef struct S_c8c03669c S_c8c03669c;
 typedef struct S_g8c44be88 S_g8c44be88;
 typedef struct S_g8c467180 S_g8c467180;
 typedef struct S_g8c467180_70 S_g8c467180_70;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct S_vv13 S_vv13;
 typedef struct S_vv13_20 S_vv13_20;
 typedef struct S_vv13_c S_vv13_c;
@@ -21,17 +16,6 @@ typedef struct S_vv17_c S_vv17_c;
 typedef struct S_vv18 S_vv18;
 typedef struct S_vv18_10 S_vv18_10;
 typedef struct S_vv18_20 S_vv18_20;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x4];
-    int f20;
-    int f24;
-    int f28;
-    int f2c;
-    int f30;
-    int f34;
-};
 struct S_c8c03669c {
     char f00;
 };
@@ -77,11 +61,11 @@ extern int operation_8c0366dc(int);
 extern int call_8c036708(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TAdBack_ctor_8c198294(void *, int);
-extern void TAdTitle_ctor_8c199688(int, Object *, int);
-extern void call_8c232fa0(Object *);
-Object *operation_8c2329b0(Object *o)
+extern void TAdTitle_ctor_8c199688(int, TItemReverseTechPart1 *, int);
+extern void call_8c232fa0(TItemReverseTechPart1 *);
+TItemReverseTechPart1 *operation_8c2329b0(TItemReverseTechPart1 *o)
 {
-    Object **home = &o;
+    TItemReverseTechPart1 **home = &o;
     char *v25;
     char *v1;
     char *v26;

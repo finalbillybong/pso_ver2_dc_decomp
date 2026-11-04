@@ -1,19 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
-typedef struct Arg0_34 Arg0_34;
-struct Object {
-    char unknown0[0x30];
-    Arg0_30 *f30;
-    Arg0_34 *f34;
-};
+#include "src/include/classes/TWindowSubEquip.h"
+typedef struct TWindowSubEquip_p30 TWindowSubEquip_p30;
+typedef struct TWindowSubEquip_p34 TWindowSubEquip_p34;
 extern int operation_8c1cdc80(void *);
 extern void call_8c1d4ba4(int, int);
-void operation_8c1d4b78(Object *o)
+void operation_8c1d4b78(TWindowSubEquip *o)
 {
     int t1;
     int t2;

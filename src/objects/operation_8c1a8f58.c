@@ -1,18 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_24 Arg0_24;
-struct Object {
-    char unknown0[0x24];
-    Arg0_24 *f24;
-    char unknown28[0x8];
-    int f30;
-};
+#include "src/include/classes/TWindowSubTechnique.h"
+typedef struct TWindowSubTechnique_p24 TWindowSubTechnique_p24;
 extern int operation_8c1571f4(void *);
-int operation_8c1a8f58(Object *o)
+int operation_8c1a8f58(TWindowSubTechnique *o)
 {
     int t1;
     int t2;

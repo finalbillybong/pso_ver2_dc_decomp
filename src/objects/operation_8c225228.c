@@ -1,22 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_98 Arg0_98;
-struct Object {
-    char unknown0[0x80];
-    char f80;
-    char unknown81[0x5];
-    short f86;
-    char unknown88[0x10];
-    Arg0_98 *f98;
-};
+#include "src/include/classes/TWindowSubSymbolChatParts.h"
+typedef struct TWindowSubSymbolChatParts_p98 TWindowSubSymbolChatParts_p98;
 extern int operation_8c225448(void *);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void call_8c19a044(void *, int);
-void operation_8c225228(Object *o)
+void operation_8c225228(TWindowSubSymbolChatParts *o)
 {
     int t1;
     t1 = operation_8c225448((void *)o);
@@ -26,5 +13,5 @@ void operation_8c225228(Object *o)
     }
     play_se_8c05fbf8(0x50001, 0, 0, 0);
     o->f80 |= 1;
-    call_8c19a044((void *)(o->f98), 2);
+    call_8c19a044((void *)(o->second), 2);
 }

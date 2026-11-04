@@ -583,7 +583,9 @@
         }
       ],
       "reference_sha256": "367d3abb53ad9dce4461b838e935f179cb9850ddf2d8da9662ff2cec4825e5dd",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowMakeTeam.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -13775,7 +13777,9 @@
         }
       ],
       "reference_sha256": "346447e895e10ef965383de1c52803ff36831b905172464275fc2658b5af973d",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjPlayer.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -17278,7 +17282,9 @@
         }
       ],
       "reference_sha256": "9f7e9b87509dfe2a558f45aaf815bd649eb04ed5c5a8ba9dccb22be78457d9f2",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjPlayer.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -23961,7 +23967,9 @@
         }
       ],
       "reference_sha256": "92f1d08f73554685d7f11d293d96f01065f04e67e4704c53a8a35fc0d802682d",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEnemy.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -27038,7 +27046,9 @@
         }
       ],
       "reference_sha256": "72753c9c6cfd9f35c4e08e55b31a33862f63b3cdbd7bbdfdeb042344b0e530bb",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TAdRicoRing.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -32465,7 +32475,9 @@
         }
       ],
       "reference_sha256": "5044ac69f795f41e569fc5daf1a9ac1ab96661ae1dab4367fe65aeda0ed25539",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TBoss3Volopt.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -34712,7 +34724,9 @@
       "source": "src/objects/destroy_context_8c04fee4.c",
       "address": "0x8c04fee4",
       "entry": "_TObjEneLappy_dtor_8c04fee4",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneLappy.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -34927,7 +34941,9 @@
         }
       ],
       "reference_sha256": "1febe2718ecccfb2c25c6312736ef7bf06d79aa0f8a5621a42809ec4e23476b9",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEnemy.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -35216,7 +35232,9 @@
         }
       ],
       "reference_sha256": "ac25cee9fc6618ae12a6b6a1f15713f53bc83b07ed3de7d26787113d7b70be7f",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneLappy.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -37679,7 +37697,9 @@
         }
       ],
       "reference_sha256": "58dd0ec068bb071c9325caabd2536d2ab1544adffaece3c754a19223749ca940",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneBm3FlyNest.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -40517,7 +40537,9 @@
         }
       ],
       "reference_sha256": "79320fb3f3d5579a2a0cbacd2c54b13f39c888eb358cb7d8c9f6cf7c8da1599a",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TBoss4Zako.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -48940,7 +48962,10 @@
         }
       ],
       "reference_sha256": "ac415b687a2fe2daf4b1b93bbdc1a80946d8fbd346ecf46dba3c005d6d9439d5",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TBoss1DragonEffBreath.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -50234,7 +50259,10 @@
         }
       ],
       "reference_sha256": "08b53f308ecd0a0cc633d885b6efb9908baa29c1cbe0c0886b04b3aba3115ada",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TBoss1DragonEffBullet.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -51285,7 +51313,9 @@
         }
       ],
       "reference_sha256": "0aa93aece65198d7e9a259373cf479aa0aca83231a8f4bdcb75eb322c5f7ce0f",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemMag.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -51337,7 +51367,9 @@
         }
       ],
       "reference_sha256": "af1c48d86fa9b7e68bdfdd60a13e4481bd1964cac7378785effffdc471aa4a31",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemMag.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -51484,7 +51516,9 @@
         }
       ],
       "reference_sha256": "dffac79be7ced3bee785f78c11ffb13992176147f1455a2aef2a2b9a9ec6d0a3",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemMag.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -51822,7 +51856,9 @@
         }
       ],
       "reference_sha256": "0e189b7dc4f087da7d3d9dd5ad8d8ce1da9a6e8b451f5c213b3fad245a88198c",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemMag.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -52070,7 +52106,9 @@
         }
       ],
       "reference_sha256": "bc27612412a0232a31e7ae6ad08fbce19f559def399bb1fd0277b068671923bb",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemMag.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -53209,7 +53247,9 @@
         }
       ],
       "reference_sha256": "5283b659d55a1dc1b92646d2f3979144fc8cd7ee8e7e6e9ba780bc40b2dce679",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjLazerFenceNorm.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -53454,7 +53494,9 @@
         }
       ],
       "reference_sha256": "5283b659d55a1dc1b92646d2f3979144fc8cd7ee8e7e6e9ba780bc40b2dce679",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjLazerFenceExtra.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -54744,7 +54786,10 @@
         }
       ],
       "reference_sha256": "6641882c7c7672827fdb180fe874bee9825eaa07a1819a8e258bae7477f19c87",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TObjContainerIdo.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -55099,7 +55144,9 @@
       "source": "src/objects/destroy_context_8c084258.c",
       "address": "0x8c084258",
       "entry": "_TObjContainerBase_dtor_8c084258",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjContainerBase.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -57848,7 +57895,9 @@
         }
       ],
       "reference_sha256": "2f866fb62653a6f2226e10283c2061f73728060f750820f5184f6b79cba55f37",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjWarpBase.h"
+      ],
       "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -58023,7 +58072,9 @@
         }
       ],
       "reference_sha256": "21b263150ed8d4ce224d8fca39e6addd39c24fa1611710b9676dbd9385d116dd",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjWarpBase.h"
+      ],
       "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -58133,7 +58184,9 @@
         }
       ],
       "reference_sha256": "9e9853597a43505a05cc21db2ec461b6b4ffb067173ac16f04e2e9a1eda4f3f2",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjWarpBase.h"
+      ],
       "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -58243,7 +58296,9 @@
         }
       ],
       "reference_sha256": "92fb83de04cb781e2f0f413b7b32da032182568371ced32f1c7f36dc2b30762e",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjWarpBase.h"
+      ],
       "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -58407,7 +58462,9 @@
         }
       ],
       "reference_sha256": "319f458622e3f185f6f5b075b66aa109419a523b9d6d2f3d347180ba49dacf78",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjWarpBase.h"
+      ],
       "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -58845,7 +58902,9 @@
         }
       ],
       "reference_sha256": "107545703ac1b428fdbe41eb477b0b172ca25d7e4c302a9d03e6288994d198bb",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEZBoneRotPlayer.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -60932,7 +60991,9 @@
         }
       ],
       "reference_sha256": "de1558d7083733aa5eb53db3151141f9d42ba24cb233935151419fb2e548d665",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneMe1Canadin.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -61559,7 +61620,9 @@
         }
       ],
       "reference_sha256": "e846ef9fa05a20cda847f12a7d1ac6fee3323f42899eba16e1515eadbef08338",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneMe1Canadin.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -62408,7 +62471,9 @@
         }
       ],
       "reference_sha256": "88fa2ee11e806d4f426626fcd8513d053c91de88c01180fa882b2a234e78c83f",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemEffHeaven.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -62431,7 +62496,9 @@
         }
       ],
       "reference_sha256": "665ae599e62493bfcf9363755fa88156ca4d7d818b97f852153d13f6b18c1ec4",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemEffHeaven.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -66529,7 +66596,10 @@
         }
       ],
       "reference_sha256": "3b679ee36bd467d4ffdf557b0c3b7563cb2731f8553de9b92ccdd2b42ad3c002",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TEffClitical.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -74347,7 +74417,10 @@
         }
       ],
       "reference_sha256": "8043c068b4f2c7196f52c6fbef294cd7959598fa0755bd91b101023cb1b127f6",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TOSwitchAttackSub.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -74462,7 +74535,10 @@
       "source": "src/effects/destroy_effect_d870_8c0b6c78.c",
       "address": "0x8c0b6c78",
       "entry": "_TTecPlayerInfluence_dtor_8c0b6c78",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TTecPlayerInfluence.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -76479,7 +76555,9 @@
         }
       ],
       "reference_sha256": "89565c0142c18b5f088b196cfafdca5de13b3019f40a1b913f6a4e0a8a2e5de2",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubMag.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -77155,7 +77233,10 @@
       "source": "src/objects/word_operation_8c0bf858.c",
       "address": "0x8c0bf858",
       "entry": "_TObjEneSaver_v10_8c0bf858",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TObjEneSaver.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -77370,7 +77451,9 @@
         }
       ],
       "reference_sha256": "c280629b328e9dd8e48e3d8683475d27a8a2b46f5dc3eac50023067132029c21",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneBm3FlyNest.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -77393,7 +77476,9 @@
         }
       ],
       "reference_sha256": "49d5d377509d31a003409406c092c353ed94d48c0b03128451d0719a1a4184e1",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneBm3FlyNest.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -83819,7 +83904,10 @@
         }
       ],
       "reference_sha256": "5f2267ec91632e7ad99513bfbc4420d2f83c2b29f8afa8bfc41bf989adb5dbb8",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TObjBoss1MokoHill_Solo.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -85877,7 +85965,10 @@
         }
       ],
       "reference_sha256": "bbdee784f92db9a088ba2ff3662406ee93b3d34c17f51babedd824bdff13e104",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TBoss2DeRolLe.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -86223,7 +86314,10 @@
         }
       ],
       "reference_sha256": "19a46b58a187b56eccd0a53bd3d08c9c2622bdc5c945739496749f6889f056c8",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TBoss2DeRolLe.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -87973,7 +88067,9 @@
         }
       ],
       "reference_sha256": "985a248837eefb53fa0d1a2f5b24c6d73380b5b351e488acdfcfd0b752f2f9e5",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowLockOn.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -91240,7 +91336,9 @@
         }
       ],
       "reference_sha256": "95beb009ddf638250af36c8059279307cdf569ce451511bb8c3ccdf84e080ab2",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneBeast.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -91316,7 +91414,9 @@
         }
       ],
       "reference_sha256": "d4d3bf04ad53e613b05afda9385c57bcd284860390e72e98f5bb3351f38a3282",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneBeast.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -91343,7 +91443,9 @@
         }
       ],
       "reference_sha256": "46cc2ccdbebd2fc4c546a383db21eefb41cdd21d491583dd31107a919dc7aab0",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneBeast.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -91870,7 +91972,9 @@
         }
       ],
       "reference_sha256": "3315e4d7306555c4ecd50260dad3e40685bb76824e8a3115ef811238f125a7bc",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEnemy.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -92154,7 +92258,9 @@
         }
       ],
       "reference_sha256": "5ab8996a5a7833c117726ff78c67c64119b5121043d71bd8e249dde1b239d526",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEnemy.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -97862,7 +97968,9 @@
         }
       ],
       "reference_sha256": "1f948258a262d22a90f1a44b38a3fa296f7b6f4c606d961e0a2cf115b8a4a962",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOWreckAncient.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -97891,7 +97999,9 @@
         }
       ],
       "reference_sha256": "d4208422a863c9fd9c0672a5533c9d0f0139b7282b4cdc0aa169ed5636eb7340",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOWreckAncient.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -97920,7 +98030,9 @@
         }
       ],
       "reference_sha256": "e464d8f98ac704d3670b952651e3e0a352e26b4b36bafcb279639dcd93322aba",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOWreckAncient.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -97949,7 +98061,9 @@
         }
       ],
       "reference_sha256": "3ce9e093ad1d11ac3a7e6a4c557b871a5632e0aaad0c8ba33a7b997e0c467f55",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOWreckAncient.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -97978,7 +98092,9 @@
         }
       ],
       "reference_sha256": "026876bca7f313b3da8af177fd617c58bc7c392b5e394fe47be9e1d8bd40863f",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOWreckAncient.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -98007,7 +98123,9 @@
         }
       ],
       "reference_sha256": "015836e7b08de26d2c7d8ff960ae9e91324ffd9d5cdb7dff849829cc06d9967b",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOWreckAncient.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -98090,7 +98208,9 @@
         }
       ],
       "reference_sha256": "57ddb8f4aa26fa2f883f605a818e49175fe9f049d903f664cebf0d658e8050d6",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOWreckAncient.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -99138,7 +99258,9 @@
         }
       ],
       "reference_sha256": "2d379fa0a10a919c501174d76d07c722a6af59aabbbc28bb7ba7bb9a72ef92e6",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOKeyAncient01.h"
+      ],
       "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -114291,7 +114413,9 @@
       "source": "src/objects/destroy_context_8c11208c.c",
       "address": "0x8c11208c",
       "entry": "_TObjGyaranzoMissile_dtor_8c11208c",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjGyaranzoMissile.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -115423,7 +115547,9 @@
         }
       ],
       "reference_sha256": "4698ca65839d0ed31aef22b3dc4dc68615cd324c94ccb158ca46ba354fff1068",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOKey.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -117755,7 +117881,9 @@
         }
       ],
       "reference_sha256": "842d1956c10bb10ed3211afa5521601809c921a435036f7563bc918a0e3fe3fe",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TFogEditor.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -117781,7 +117909,9 @@
         }
       ],
       "reference_sha256": "2e65e9b0c07d6a092ac9a01dc8e3764a0fec0080d70e60e341911ffbf1b1f516",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TFogEditor.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -126063,7 +126193,9 @@
         }
       ],
       "reference_sha256": "6438c55e6d8e490729606fd8422b7bd6c66dbb1df81b04fcf9d3feb0180a27bb",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneGyaranzo.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -126491,7 +126623,9 @@
         }
       ],
       "reference_sha256": "34427cede1da4972547b8b53d7438e0b3d066f79a110539fb95c87662665403e",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TContainerAncient01.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -126514,7 +126648,9 @@
         }
       ],
       "reference_sha256": "f42230a5954740390a83aabb5e3f7caa0a756618faf1ce5cd6c58684b3a33152",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TContainerAncient01.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -128312,7 +128448,9 @@
         }
       ],
       "reference_sha256": "f3f4a69dd6ecb8ee4518a82696b79443364f5ffdae0c9deef881daa39db8941b",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TODoorAncient09.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -128342,7 +128480,9 @@
         }
       ],
       "reference_sha256": "7d0fb792b7acf30b18cc35f60c38ec026abfee51e29e58d12d2f986bc3d65892",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TODoorAncient09.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -131860,7 +132000,9 @@
         }
       ],
       "reference_sha256": "96fcd8a4f7be5243f2fef66135132aec28d8aed14b4ef27d3c4bf4f184b04ab5",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjFogCollision.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -132747,7 +132889,9 @@
         }
       ],
       "reference_sha256": "2c965890f67562114a30f2997d1a58ecabace5ac73a994e8bdaa5d1c109ff39a",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TBoss4Bishi.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -133792,7 +133936,9 @@
       "source": "src/objects/destroy_context_8c13c24c.c",
       "address": "0x8c13c24c",
       "entry": "_TBoss3VoloptP01_dtor_8c13c24c",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TBoss3VoloptP01.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -134227,7 +134373,9 @@
         }
       ],
       "reference_sha256": "c645ec8dfecaf22580bb11416d5b9d11cca35628f5fe98a856bf308a16746e4f",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjEneGyaranzo.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -140623,7 +140771,10 @@
       "source": "src/objects/destroy_context_8c15107c.c",
       "address": "0x8c15107c",
       "entry": "_TBoss3VoloptMonitor_dtor_8c15107c",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TBoss3VoloptMonitor.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -146271,7 +146422,10 @@
         }
       ],
       "reference_sha256": "116e260883039a2449d011335aa72e9af1c214899aa65bfdca1459ea371c917a",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TOSensor.h"
+      ],
       "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -146586,7 +146740,10 @@
         }
       ],
       "reference_sha256": "d5710a025bcb26573b94b7baeee33ed5c5e59bd241624b9ea16c1371113b2614",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TOSensorAncient01.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -146791,7 +146948,10 @@
         }
       ],
       "reference_sha256": "c3499f2099ace83bb55c07a982dfe5d635f503f2e354714e1e776a8ee27fa786",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TOSensorGeneral01.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -148289,7 +148449,10 @@
         }
       ],
       "reference_sha256": "39e33f17b4ea470f05239898cc2d598b0c91803657deef8272ff6d18102b98ef",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TObjEnePanarmsAtkColli.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -148321,7 +148484,10 @@
         }
       ],
       "reference_sha256": "3fb02a68202eac54281aa3d0739dea7455365e34ac02b160804003a70bae008e",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TObjEnePanarmsAtkColli.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -149964,7 +150130,9 @@
       "source": "src/objects/destroy_context_8c1658c4.c",
       "address": "0x8c1658c4",
       "entry": "_TBoss2Mine_dtor_8c1658c4",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TBoss2Mine.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -150381,7 +150549,9 @@
         }
       ],
       "reference_sha256": "f9fa65d02ceed012de9e39e767c6569c65d218984330ab9dc61f5a4fb2d921ae",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TBoss2Mine.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -150484,7 +150654,9 @@
         }
       ],
       "reference_sha256": "23d68a58a5112b7c6c7153e22a5b5c5b1234de11b6433f142a2bbadd1f6ff31b",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TBoss2Mine.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -162218,7 +162390,9 @@
       "source": "src/objects/destroy_context_8c174ed0.c",
       "address": "0x8c174ed0",
       "entry": "_TBoss2Joint_dtor_8c174ed0",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TBoss2Joint.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -163076,7 +163250,9 @@
       "source": "src/objects/set_field_8c175afc.c",
       "address": "0x8c175afc",
       "entry": "_TItemWpnSpreadGunB_v49_8c175afc",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemWpnSpreadGunB.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -163974,7 +164150,9 @@
         }
       ],
       "reference_sha256": "e854d94a327a30f4ea8f5cbb88d9975636c78f13a975206bd56ffb81b17a0bf7",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubSymbolChat.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -167621,7 +167799,9 @@
       "source": "src/objects/set_field_8c17b304.c",
       "address": "0x8c17b304",
       "entry": "_TItemWpnScythe_v51_8c17b304",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemWpnScythe.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -175136,7 +175316,9 @@
         }
       ],
       "reference_sha256": "93740ed1852c10021bb07643f8e8ead2ca742514a46a349a705e8e80ffe73fc5",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowMainMenu.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -176683,7 +176865,9 @@
         }
       ],
       "reference_sha256": "8d56eff186641c5460254e67c6213be129051628cec3c45eefa46f45eb932df1",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubMag.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -176709,7 +176893,9 @@
         }
       ],
       "reference_sha256": "9d771d3b3de5c05dd49b6c89230e37f8ab67a5380d165815d06229c5d254fa3e",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubMag.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -180212,7 +180398,9 @@
         }
       ],
       "reference_sha256": "85cbcee468ded0113e10a56c5342fddab95173066823af193ce9e6d1e171c24d",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubCustomEquip.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -180977,7 +181165,9 @@
       "source": "src/objects/destroy_context_8c198f08.c",
       "address": "0x8c198f08",
       "entry": "_TWindowSubCustomSelect_dtor_8c198f08",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubCustomSelect.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -181088,7 +181278,9 @@
         }
       ],
       "reference_sha256": "23f2a650bde72f506572b3b873b277ec0e202b7f36fc92741c060ea69b262eb0",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubCustomSelect.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -181138,7 +181330,9 @@
         }
       ],
       "reference_sha256": "570877b92e2f0485b9d4c990760582986f94b3314321ee400d5e9c61cdf94cb8",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubCustomSelect.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -184764,7 +184958,9 @@
       "source": "src/objects/word_operation_8c1a0474.c",
       "address": "0x8c1a0474",
       "entry": "_TOHealGeneral_v10_8c1a0474",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -187092,7 +187288,9 @@
         }
       ],
       "reference_sha256": "3c12dbbc647ec70a5edb7d78154f963cc3dd55db466ad3187f0968cf75c99a2a",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubItem.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -187172,7 +187370,9 @@
         }
       ],
       "reference_sha256": "6113bb7dab6142e42f7efff372e22cccd95675b20bc3085d43998619a1068efb",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubItem.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -190644,7 +190844,9 @@
         }
       ],
       "reference_sha256": "53183dddeb600521a9a4dcc4fc71d680539c3326f88d05038a106be971e8729b",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubTechnique.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -191313,7 +191515,9 @@
         }
       ],
       "reference_sha256": "cb34108838a04f346e155b4dc1787a855bc5971bfc3a754ee02e3c125f1a9f67",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjBgmCol.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -191363,7 +191567,9 @@
         }
       ],
       "reference_sha256": "680ac850e0368cc81f8b0a2dbd199042e64f9d924008cc4c808e10941911948c",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjBgmCol.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -192066,7 +192272,9 @@
         }
       ],
       "reference_sha256": "e5782233615de904da75d0c4f97c6973ab0e6ba6537288869a8ed79720b5061c",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TAdRicoRing.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -196325,7 +196533,10 @@
         }
       ],
       "reference_sha256": "0cd4a18a2a656f5b19c91a35c3dd7861f2313f8dfa4268b3d7d5af9cf06b8e6c",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TObjBoss2Dust.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -198032,7 +198243,10 @@
         }
       ],
       "reference_sha256": "4322ecbcb784bc17562976ed19f680dbe8e481db90525b504a8bd4d3b9c66a27",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TBoss4Type1.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -201117,7 +201331,9 @@
         }
       ],
       "reference_sha256": "b086e5106bd8998228839d824d51b195594a5784b5b5406ac14987faf71a3b19",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TBoss4Zako.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -201505,7 +201721,9 @@
         }
       ],
       "reference_sha256": "a4759a6a3b58d112858114b88b643844861d8953d73c48253d0d1d220e3c47f8",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TBoss4Bishi.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -201977,7 +202195,9 @@
         }
       ],
       "reference_sha256": "bce54d72db15822d7a0a369c6730ffa58d24b041bf2844a11648f45bfc5b0ffe",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowInputNumber.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -202002,7 +202222,9 @@
         }
       ],
       "reference_sha256": "efca4bb53e21bcadde719d19cfeb4b7438e5703f82e1f307f07133786ba105bd",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowInputNumber.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -204986,7 +205208,9 @@
         }
       ],
       "reference_sha256": "dcc489fa1563e6858d6dba09eb0fbbc0e8e2f812f4f05ad7d9282424fea52bd8",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjCityDoor_Warp.h"
+      ],
       "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -208746,7 +208970,9 @@
         }
       ],
       "reference_sha256": "659c999ae5b19faf51babe543c0f6196812c7ac59fc58cc3e2ae4b1d33783777",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOSparkMachine01.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -210329,7 +210555,9 @@
         }
       ],
       "reference_sha256": "ca20a555e32b0d6797c0862b32f1212fcc68ac20875ea80709e2784c97773a6b",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubShortMail.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212551,7 +212779,9 @@
         }
       ],
       "reference_sha256": "fabdde5e80edc3e9e515636b0e125a801390ffb83b2f017496ac1db337510f6d",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212576,7 +212806,9 @@
         }
       ],
       "reference_sha256": "16e20b0f2fe5f999b9ea1a7873e72da69c1f1d237a6b197821220ddd78863444",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212601,7 +212833,9 @@
         }
       ],
       "reference_sha256": "abe1dd59d9c2dcf113ad4be03697bf1de00652ba40836cd3b4219f2937f5005d",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212626,7 +212860,9 @@
         }
       ],
       "reference_sha256": "22ccc3ca8b2afae320af1ffbff05c3ac935741020e9c4fb202ede14ddb57b7dc",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212651,7 +212887,9 @@
         }
       ],
       "reference_sha256": "67f0499a3faf8fc5726b4af1a6d3ffc5842d7c1d2eaabcd22339066b5128e83a",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212676,7 +212914,9 @@
         }
       ],
       "reference_sha256": "90b15b69d62e997ff08e0b9b9ba4b66b02d2c3515b27cd289254100541053ec4",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212701,7 +212941,9 @@
         }
       ],
       "reference_sha256": "0261ea50cac411088c294095dfd22004ef1aed347e89756f482945116bad5ca0",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212779,7 +213021,9 @@
         }
       ],
       "reference_sha256": "aef781a7f427384c2a285e44daca587aaed7dfbaf4cf00538ff06e2a939f4a4d",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212809,7 +213053,9 @@
         }
       ],
       "reference_sha256": "a71b72bee1debaab6632ddedb64689f1411f347ba89668ea42189a1e5b200dca",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212834,7 +213080,9 @@
         }
       ],
       "reference_sha256": "b44588d8358228494e8d7980b401c9c41d7b5c66bb2dd7caa2e6e12f7ef7e64c",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212860,7 +213108,9 @@
         }
       ],
       "reference_sha256": "f9f2fa333012a5f3339a83a276d476433c3c2f8c10c9b018d8b00bd6342e5705",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212885,7 +213135,9 @@
         }
       ],
       "reference_sha256": "bbd034b85d7407212294227f4738f1ea7fb6eccdb00e523754cf0356ec43c5f6",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212910,7 +213162,9 @@
         }
       ],
       "reference_sha256": "22270cacc52d10dcaa6c43e884291eea08fbac9c1af616991611eaeb0460d6c2",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -212935,7 +213189,9 @@
         }
       ],
       "reference_sha256": "ad37f34df9c8ab648697eeb1c2fcfcf7e1c1033fe705f55840daa0cd03d4c49a",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -215682,7 +215938,9 @@
         }
       ],
       "reference_sha256": "a462f9504818b31a9ae5fd9eeb7235e0ace38bad9ab57464a75beb239125b8bf",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubEquip.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -215739,7 +215997,9 @@
         }
       ],
       "reference_sha256": "0c977cb0884f1e19ad37c1f88108d82443d4901755e3ccfd70aa69726435f3e6",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubEquip.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -215765,7 +216025,9 @@
         }
       ],
       "reference_sha256": "80b93e0820655174aa29cd0a0f8497541473da78601a2eab83f1e197500369c2",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubEquip.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -219346,7 +219608,9 @@
         }
       ],
       "reference_sha256": "2a6203905fa4b5691c69669d55a60db96a87700547260bef5bfc1f6cd0c7ab2a",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowMenuInfomation.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -219354,7 +219618,9 @@
       "source": "src/objects/destroy_context_8c1dbd44.c",
       "address": "0x8c1dbd44",
       "entry": "_TWindowMenuInfomation_dtor_8c1dbd44",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowMenuInfomation.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -219694,7 +219960,9 @@
         }
       ],
       "reference_sha256": "2aece592c1f501100531d904b45721a21a20c2bbc249f9e12c5ece3b5f70ce7d",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -219719,7 +219987,9 @@
         }
       ],
       "reference_sha256": "1ec583eb9fceb47b9af57862b0e336ab8632fdcfff1c1e9095decf6ac8db46d2",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOHealGeneral.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -220426,7 +220696,9 @@
         }
       ],
       "reference_sha256": "c850f0bfeabfd4a7795a27045a1e0f6d702f354131d753ece38395e3e1affa5d",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowChat.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -221558,7 +221830,9 @@
         }
       ],
       "reference_sha256": "d0ec47adc8ee693f5fa4cfed176b64a326475d2a6f445a903cbd32574fb1e85c",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowKeyBoardSoft.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -223734,7 +224008,9 @@
         }
       ],
       "reference_sha256": "31f0b999acbe783c22d598f3190c3455a26d8b75142407118a92533d1aef1b60",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjContainerBase.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -223977,7 +224253,9 @@
         }
       ],
       "reference_sha256": "874c876a82904dd20bdbaf75fdb8916c7133183034a7f3c9d3bdc3ea01e05208",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjContainerBase.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -224146,7 +224424,9 @@
         }
       ],
       "reference_sha256": "8011392aee53242c94f1608f5e3fe66744b79b9b705a9557da5e4d3e354ca1b0",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOContainerAncientEnemy.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -224324,7 +224604,9 @@
         }
       ],
       "reference_sha256": "b066b65a3da5e4cc7be5a453a6aa0a2a750811b5be4631e504f164b2d31d4b9b",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOContainerAncientEnemy.h"
+      ],
       "language": "c++",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -224418,7 +224700,9 @@
         }
       ],
       "reference_sha256": "97cad61d2b5bcbc8579bb78e528527b3eff949e1c304db70b60296ee0caa6e37",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjContainerBase.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -224579,7 +224863,9 @@
         }
       ],
       "reference_sha256": "578e8d0f41c19f159d36ab2ae76885895348f32ff34bb03e800b7c0c5ee89ab7",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowMakeTeam.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -224605,7 +224891,9 @@
         }
       ],
       "reference_sha256": "efe3c601e84b33b5be1a1768705f147f0450b9830b2e7e7a1f06d658901e5a40",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowMakeTeam.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -227879,7 +228167,10 @@
         }
       ],
       "reference_sha256": "fbf09f038698527fa962dd08d0c23a5b94318d4b53bbaa53972b79e37da3418f",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TObjEneSaver.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -228334,7 +228625,10 @@
         }
       ],
       "reference_sha256": "6323c87349d346a95bf18af07565103a8c32246a0154eae13f88d2eb0daca023",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TObjEneSaver.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -228464,7 +228758,10 @@
         }
       ],
       "reference_sha256": "961e5d0caac7237ea8bc7fd0895418eca25cbed54e5bacc17adb07431259fd33",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TObjEneSaver.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -230204,7 +230501,10 @@
         }
       ],
       "reference_sha256": "df34866d18000019515856089f59f62db4935e7dcb6d422acf3192415cab71b7",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TObjEneSaver.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -230732,7 +231032,10 @@
         }
       ],
       "reference_sha256": "ef22941215548165aff96a2291b9b546a6383bc5bbd656af4d2c6f3da811c28d",
-      "headers": [],
+      "headers": [
+        "src/include/vector3.h",
+        "src/include/classes/TObjEneSaver.h"
+      ],
       "linker": "codewarrior",
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
@@ -235148,7 +235451,9 @@
         }
       ],
       "reference_sha256": "d05a57c8c01a72a36c4596f1ef4389449857e00657a7065a9feeb67b99d45172",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubComCardList.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -239191,7 +239496,9 @@
         }
       ],
       "reference_sha256": "245c6b8cd78c892ecc32e46bba32ecdfbab81a5ff2ea0449ace3f94f5d219f3b",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjLoadGmPlNjReq.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -239807,7 +240114,9 @@
       "source": "src/objects/destroy_context_8c215cdc.c",
       "address": "0x8c215cdc",
       "entry": "_TWindowDD_WS_Word_dtor_8c215cdc",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowDD_WS_Word.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -242448,7 +242757,9 @@
         }
       ],
       "reference_sha256": "5af0287297214721c64a5e778d0245b1d740eca8b633fe253e32cab66903813f",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubComCard.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -242476,7 +242787,9 @@
         }
       ],
       "reference_sha256": "385f32ed376d4116f3000759f91ab0fc343e9924a20d97317e1228fd2c1db9bd",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubShortMail.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -245547,7 +245860,9 @@
         }
       ],
       "reference_sha256": "bd54be9064ea6ceb53276800783371be8038f8e9f07be779a6001aeb23e8a028",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubQuestBoardSelect.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -245623,7 +245938,9 @@
         }
       ],
       "reference_sha256": "a89b1c857379d2289826eb3668297737996be8cc1682aba3cc064d77c6de15bd",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubQuestBoardSelect.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -245648,7 +245965,9 @@
         }
       ],
       "reference_sha256": "0e25f80a7b0def7fe701c0a391e7e1270edd695b1354664149a574020dd7238d",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubQuestBoardSelect.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -246880,7 +247199,9 @@
         }
       ],
       "reference_sha256": "019ad2f417a0c4a4305eed13926236f9dcfd06c05822ffa5f58f45caab0f688f",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubSymbolChatFaceType.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -246906,7 +247227,9 @@
         }
       ],
       "reference_sha256": "85cbcee468ded0113e10a56c5342fddab95173066823af193ce9e6d1e171c24d",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubSymbolChatFaceType.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -247808,7 +248131,10 @@
         }
       ],
       "reference_sha256": "9955d6b4f91f1230e1c32f729a06da91b3586b9705da4a225ab7d20db4b8880b",
-      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs."
+      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs.",
+      "headers": [
+        "src/include/classes/TItemDownLoad.h"
+      ]
     },
     {
       "id": "open_text_context",
@@ -247836,7 +248162,10 @@
         }
       ],
       "reference_sha256": "07e75600644bfd671def2afc61e889bf57afb289dc328a6524b861957ed94378",
-      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs."
+      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs.",
+      "headers": [
+        "src/include/classes/TItemDownLoad.h"
+      ]
     },
     {
       "id": "poll_text_context",
@@ -247863,7 +248192,10 @@
         }
       ],
       "reference_sha256": "6d453849d89b21949e553379b868a113ce3221803af043e6f681bd15be08dc0e",
-      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs."
+      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs.",
+      "headers": [
+        "src/include/classes/TItemDownLoad.h"
+      ]
     },
     {
       "id": "advance_text_context",
@@ -247888,7 +248220,10 @@
         }
       ],
       "reference_sha256": "37d782b21491b2f561f4c42eb3a9bd55c13ea8991ab5988a2e8cb3f7430389f8",
-      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs."
+      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs.",
+      "headers": [
+        "src/include/classes/TItemDownLoad.h"
+      ]
     },
     {
       "id": "complete_text_context",
@@ -247914,7 +248249,10 @@
         }
       ],
       "reference_sha256": "c196e1aec6bce63208b378c233196ef998ba0ccb60c9957c12b4234a3ccfd3f3",
-      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs."
+      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs.",
+      "headers": [
+        "src/include/classes/TItemDownLoad.h"
+      ]
     },
     {
       "id": "get_text_context_buffer",
@@ -247939,7 +248277,10 @@
         }
       ],
       "reference_sha256": "e2dbefaa6396ebeb0ee23a1f66c5fe9cc1a2c94938eae23e4c1c7f01cb623473",
-      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs."
+      "boundary_review": "Complete221134..221388 family raw entries/pools/delay slots reviewed, including state2 no-op,open sentinels-2/-1,unconditional state4 after advance and callback(buffer) ABI. All accessed offsets checked; no speculative state-machine repairs.",
+      "headers": [
+        "src/include/classes/TItemDownLoad.h"
+      ]
     },
     {
       "id": "operation_03cee8_8c221388",
@@ -248894,7 +249235,9 @@
         }
       ],
       "reference_sha256": "8eeec83451c8315d288e6912ad1d3e7128d3d2618f06b4b202e80e266c7df9a5",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TQuestListVM.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -249433,7 +249776,9 @@
         }
       ],
       "reference_sha256": "6c23e93f828839787f7f470fe739a97cfde39cd4bf1f8a30a47b941eaed91cc9",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemTimerEvent.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -250106,7 +250451,9 @@
         }
       ],
       "reference_sha256": "43c4275467e8e5454ee40a23eccc37733342645a1282a987d290539ef81c3a0c",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubSymbolChatPartsSet.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -250131,7 +250478,9 @@
         }
       ],
       "reference_sha256": "57491e8bd33bdaee64ad47dabb94e2d78f701c6f47555eb8be1ce0ee0f2006c6",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubSymbolChatPartsSet.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -250247,7 +250596,9 @@
       "source": "src/objects/destroy_context_8c2248d0.c",
       "address": "0x8c2248d0",
       "entry": "_TWindowSubSymbolChatParts_dtor_8c2248d0",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubSymbolChatParts.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -250479,7 +250830,9 @@
         }
       ],
       "reference_sha256": "edb9c3c8b63d5c9376e65b67fde2e216c9708605b0201b2b278189bb2d38f0e3",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TWindowSubSymbolChatParts.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -253609,7 +253962,9 @@
       "source": "src/objects/destroy_context_8c22b6d0.c",
       "address": "0x8c22b6d0",
       "entry": "_TObjDFDemoF_dtor_8c22b6d0",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjDFDemoF.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -255108,7 +255463,9 @@
         }
       ],
       "reference_sha256": "98061a757c5bbacee5c7ee4336394eaadf597fd08c63bdc9672063aa590542d1",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TQuestVmDownLoadServer.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -255199,7 +255556,9 @@
         }
       ],
       "reference_sha256": "b2adda8196a65c3d09e00f67cfe8370b21d8fb4ad1d5d11a6053746a53690a0f",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TQuestVmDownLoadServer.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -255450,7 +255809,9 @@
         }
       ],
       "reference_sha256": "b7461eae62fe3e583fb067cd3fd4dc891611672ab01377452e08acb711137f1f",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TQuestVmDownLoadServer.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -258127,7 +258488,9 @@
         }
       ],
       "reference_sha256": "f5ecce21492b9549ed949125b4ddb5bd3dc33128b09f90fbd25bf46ea69c4253",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemReverseTechPart1.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -264534,7 +264897,9 @@
       "source": "src/objects/set_field_8c23c6f4.c",
       "address": "0x8c23c6f4",
       "entry": "_TItemWpnDragonClaw_v55_8c23c6f4",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemWpnDragonClaw.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -264672,7 +265037,9 @@
       "source": "src/objects/set_field_8c23c99c.c",
       "address": "0x8c23c99c",
       "entry": "_TItemWpnFast_v54_8c23c99c",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemWpnFast.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -265068,7 +265435,9 @@
       "source": "src/objects/set_field_8c23ce74.c",
       "address": "0x8c23ce74",
       "entry": "_TItemWpnFireWand_v55_8c23ce74",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemWpnFireWand.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -266934,7 +267303,9 @@
       "source": "src/objects/set_field_8c23ea88.c",
       "address": "0x8c23ea88",
       "entry": "_TItemWpnPickel_v51_8c23ea88",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemWpnPickel.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -277836,7 +278207,9 @@
         }
       ],
       "reference_sha256": "5fdb2d15a7792f373a7c63407994b0f454dd616bcf008d08b35f6a7e483e10a2",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOVS2.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -278020,7 +278393,9 @@
         }
       ],
       "reference_sha256": "5c8619b94189873b0e8407fb85f092eca59ccf38f7c84dbc83f0717302c9214d",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TOVS2Wall01.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -283430,7 +283805,9 @@
       "source": "src/objects/set_field_8c252064.c",
       "address": "0x8c252064",
       "entry": "_TItemWpnOnScythe_v51_8c252064",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemWpnOnScythe.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -283997,7 +284374,9 @@
       "source": "src/objects/set_field_8c252964.c",
       "address": "0x8c252964",
       "entry": "_TItemWpnOnSpreadGunB_v59_8c252964",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TItemWpnOnSpreadGunB.h"
+      ],
       "symbols": {},
       "ranges": [
         {
@@ -290898,7 +291277,9 @@
         }
       ],
       "reference_sha256": "8d8df62abf914d7671e35176be18f0f5648e041076751d572962a9c75eb13e17",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TAdPSOPlay.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -290924,7 +291305,9 @@
         }
       ],
       "reference_sha256": "b0754e411af3ff415f5a77cca74ed4ce87326296abd2d8ae0140b6b0ab5daa01",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TAdPSOPlay.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -291741,7 +292124,9 @@
         }
       ],
       "reference_sha256": "77a3a8c8f60b8e91051c261289d079328349f3da81944dc81c3697b2f30af1e4",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TObjWarnChime.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -292991,7 +293376,9 @@
         }
       ],
       "reference_sha256": "f1ee2cb1a6db43c4f5b87a2f72ef14b98c53d644382a10b459c808f83bc666b3",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TDLGraph.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -294640,7 +295027,9 @@
         }
       ],
       "reference_sha256": "8d8df62abf914d7671e35176be18f0f5648e041076751d572962a9c75eb13e17",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TAdHunLicence.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -294666,7 +295055,9 @@
         }
       ],
       "reference_sha256": "e386982ea07dff656a9bb7a072bb35f14b875e8cf77638f9b3b92af986bcdcf5",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TAdHunLicence.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {
@@ -295594,7 +295985,9 @@
         }
       ],
       "reference_sha256": "d072a4ba2a6a2f7eca7c2570d53b4a96aaa7ac38c4ad7d137f5a9690763958f9",
-      "headers": [],
+      "headers": [
+        "src/include/classes/TAdPSOConv.h"
+      ],
       "boundary_review": "Reviewed listing: body ends at rts delay slot; optional alignment then aligned literal pool; next entry follows. Calls only to admitted functions (bound as externs)."
     },
     {

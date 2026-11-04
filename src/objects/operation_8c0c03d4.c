@@ -1,21 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-    char unknown30c[0x84];
-    int f390;
-    int f394;
-    char unknown398[0x4];
-    int f39c;
-    char unknown3a0[0x4];
-    int f3a4;
-};
-void operation_8c0c03d4(Object *o)
+#include "src/include/classes/TObjEneBm3FlyNest.h"
+void operation_8c0c03d4(TObjEneBm3FlyNest *o)
 {
     if (o->f30a != 4) {
         o->f39c = o->f30a;

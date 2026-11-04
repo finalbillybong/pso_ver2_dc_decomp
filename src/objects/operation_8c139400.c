@@ -1,19 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss4Bishi.h"
 typedef struct S_c8c0a53e4 S_c8c0a53e4;
 typedef struct Frame Frame;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x390];
-    int f390;
-    char unknown394[0x4];
-    int f398;
-    char unknown39c[0x4];
-    int f3a0;
-};
 struct Frame {
     char f00;
     char f01;
@@ -30,19 +17,19 @@ struct S_c8c0a53e4 {
     char unknown0[0x2];
     unsigned short f02;
 };
-extern void call_8c139360(Object *);
+extern void call_8c139360(TBoss4Bishi *);
 extern void operation_8c139e6c(void);
 extern void operation_8c1222c8(int, int);
 extern void call_8c0a2144(int);
 extern void call_8c0a5400(void *, int);
-extern void call_8c05fd7c(int, Object *, int, int, int);
+extern void call_8c05fd7c(int, TBoss4Bishi *, int, int, int);
 extern void call_8c122410(int);
 extern S_c8c0a53e4 *get_view_motion_parameters(void);
 extern int lookup_object_by_id(unsigned short);
 extern void request_actor_mode_seven(void *);
 extern void operation_8c0a21a4(void);
 extern void operation_8c139f10(void);
-void operation_8c139400(Object *o)
+void operation_8c139400(TBoss4Bishi *o)
 {
     Frame frame;
     S_c8c0a53e4 *t1;

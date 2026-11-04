@@ -1,5 +1,4 @@
+#include "src/include/classes/TItemWpnPickel.h"
 /* Provisional accessed prefix; not a complete original class. */
-typedef struct View { char unknown0[564]; int value; } View;
-typedef char check_field[(unsigned long)&((View *)0)->value==564?1:-1];
-typedef char check_prefix[sizeof(View)==568?1:-1];
-void TItemWpnPickel_v51_8c23ea88(View *o) { o->value=0; }
+typedef char check_field[(unsigned long)&((TItemWpnPickel *)0)->f234==564?1:-1];
+void TItemWpnPickel_v51_8c23ea88(TItemWpnPickel *o) { o->f234=0; }

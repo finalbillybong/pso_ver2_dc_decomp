@@ -1,28 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_34 Arg0_34;
+#include "src/include/classes/TWindowSubMag.h"
+typedef struct TWindowSubMag_p34 TWindowSubMag_p34;
 typedef struct Arg0_34_0 Arg0_34_0;
-typedef struct Arg0_38 Arg0_38;
-typedef struct Arg0_3c Arg0_3c;
-typedef struct Arg0_44 Arg0_44;
-typedef struct Arg0_48 Arg0_48;
+typedef struct TWindowSubMag_p38 TWindowSubMag_p38;
+typedef struct TWindowSubMag_p3c TWindowSubMag_p3c;
+typedef struct TWindowSubMag_p44 TWindowSubMag_p44;
+typedef struct TWindowSubMag_p48 TWindowSubMag_p48;
 typedef struct S_vv1 S_vv1;
 typedef struct S_vv12 S_vv12;
 typedef struct S_vv14 S_vv14;
 typedef struct S_vv3 S_vv3;
-struct Object {
-    char unknown0[0x34];
-    Arg0_34 *f34;
-    Arg0_38 *f38;
-    Arg0_3c *f3c;
-    char unknown40[0x4];
-    Arg0_44 *f44;
-    Arg0_48 *f48;
-};
 struct S_vv1 {
     char f00;
     char unknown1[0x3];
@@ -39,7 +25,7 @@ struct S_vv12 {
 struct S_vv14 {
     int f00;
 };
-struct Arg0_34 {
+struct TWindowSubMag_p34 {
     char unknown0[0x64];
     int f64;
 };
@@ -49,7 +35,7 @@ extern void call_8c38a714(int, void *);
 extern void call_8c3be280(int, void *, void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void operation_8c0bbc90(void *, int);
-void operation_8c0bc414(Object *o)
+void operation_8c0bc414(TWindowSubMag *o)
 {
     S_vv1 *v1;
     S_vv3 *v3;

@@ -777,6 +777,15 @@ def compatible(ev, layout_, renames=None, extras=None):
     for f in ev['fields']:
         h = by_offset.get(f['offset'])
         where = 'field 0x%x ' % f['offset']
+        # A float inside a header Vector3 becomes a member of it: o->f40 -> o->f3c.y
+        v3 = [g for g in layout_['fields'] if g['type'] == 'Vector3' and g['offset'] <= f['offset'] < g['offset'] + 12]
+        if v3 and f['type'] == 'float' and not f.get('dims') and (f['offset'] - v3[0]['offset']) % 4 == 0 \
+                and renames is not None:
+            target = '%s.%s' % (v3[0]['name'], 'xyz'[(f['offset'] - v3[0]['offset']) // 4])
+            if renames.get(f['name'], target) != target:
+                return False, where + 'float inside Vector3 twice', tags
+            renames[f['name']] = target
+            continue
         if h is None:
             return False, where + 'not in header', tags
         if h['kind'] == 'vptr':
@@ -840,8 +849,14 @@ def convert_unit(unit, ev, info, layout_, root=ROOT, loose=False):
                 return None, 'member rename clashes with %s.%s' % (a.name, sorted(clash)[0])
     text = (root / unit['source']).read_text()
     code = info['code']
-    if 'sizeof' in info['body'] or any(re.search(r'sizeof\s*\(\s*(?:struct\s+)?' + re.escape(v) + r'\s*\)', code) for v in ev['views']):
+    # A static size assertion on the local view only guards that view: it goes with the view.
+    view_alt = '|'.join(re.escape(v) for v in ev['views'])
+    size_assert = re.compile(r'^[ \t]*typedef\s+char\s+\w+\s*\[\s*\(?\s*sizeof\s*\(\s*(?:struct\s+)?(?:' + view_alt +
+                             r')\s*\)\s*\)?\s*==\s*(?:0x[0-9a-fA-F]+|\d+)\s*\?\s*1\s*:\s*-\s*1\s*\]\s*;[ \t]*\n?', re.M)
+    rest = size_assert.sub('', code)
+    if 'sizeof' in info['body'] or re.search(r'sizeof\s*\(\s*(?:struct\s+)?(?:' + view_alt + r')\s*\)', rest):
         return None, 'sizeof of the local view'
+    dropped_asserts = [(m.start(), m.end()) for m in size_assert.finditer(code)]
     if ev['language'] == 'c++' and re.search(r'^(?!extern "C")[^\n#]*\b\w+\s*\([^;{]*\)\s*;', code, re.M):
         # A non-extern "C" prototype would mangle the renamed types.
         for line in code.splitlines():
@@ -890,6 +905,7 @@ def convert_unit(unit, ev, info, layout_, root=ROOT, loose=False):
         extra_headers.append(SHARED_TYPES[tname])
         if tname not in [a.name for a in info['aggregates']] and SHARED_TYPES[tname] not in unit.get('headers', []):
             pass
+    spans += dropped_asserts
     spans.sort()
     pieces, last = [], 0
     for s, e in spans:
@@ -902,7 +918,7 @@ def convert_unit(unit, ev, info, layout_, root=ROOT, loose=False):
     new = ''.join(pieces)
     new = rename_idents(new, mapping)
     if renames:
-        new = re.sub(r'(->|\.)(\s*)(' + '|'.join(map(re.escape, sorted(renames, key=len, reverse=True))) + r')\b',
+        new = re.sub(r'(->|\.)(\s*)(' + '|'.join(map(re.escape, sorted(renames, key=len, reverse=True))) + r')\b(?!\s*\.\s*[xyz]\b)',
                      lambda m: m.group(1) + m.group(2) + renames[m.group(3)], new)
     # A cast view of the object to its own class is now a no-op cast: drop it.
     param = re.escape(info['this']['name'])
@@ -996,9 +1012,18 @@ def cmd_convert(args):
     only = set(args.only or [])
     skip = set(args.skip or [])
     results = []
+    attributed = defaultdict(list)
+    if args.attribution:
+        # Units attributed to a class by other evidence than their name (vtable slot, constructor,
+        # callers, layout); see docs/TYPES.md. They adopt the class header as it stands.
+        for uid, entry in json.loads(Path(args.attribution).read_text())['units'].items():
+            unit = units[uid]
+            ev, _ = unit_evidence(unit)
+            ev['class'], ev['method'] = entry['class'], 'attributed'
+            attributed[entry['class']].append(ev)
     for n in args.classes:
         lay = resolve(classes, evidence, n)
-        for ev in lay['units']:
+        for ev in lay['units'] + attributed.get(n, []):
             if ev.get('pseudo'):
                 continue
             if ev['class'] != n and not args.ancestors:
@@ -1068,6 +1093,13 @@ def check(root=ROOT):
                 problems.append('%s includes undeclared %s' % (unit['id'], inc))
             if 'Vector3' in (root / inc).read_text() and SHARED_TYPES['Vector3'] not in unit.get('headers', []):
                 problems.append('%s lacks %s' % (unit['id'], SHARED_TYPES['Vector3']))
+    attribution = root / 'config/class-attribution.json'
+    if attribution.is_file():
+        by_id = {u['id']: u for u in manifest['units']}
+        for uid, entry in json.loads(attribution.read_text())['units'].items():
+            inc = '#include "%s/%s.h"' % (HEADER_DIR, entry['class'])
+            if uid not in by_id or inc not in (root / by_id[uid]['source']).read_text():
+                problems.append('%s: attributed to %s but does not include its header' % (uid, entry['class']))
     for path in headers:
         name = path.stem
         if name not in classes:
@@ -1128,6 +1160,7 @@ def main(argv=None):
     s.add_argument('--write', action='store_true', help='rewrite sources and config/project.json')
     s.add_argument('--only', nargs='*'); s.add_argument('--skip', nargs='*')
     s.add_argument('--ancestors', action='store_true', help='also convert ancestor-class units to this header')
+    s.add_argument('--attribution', help='JSON {"units": {unit id: {"class": ...}}} of units attributed by evidence')
     s.add_argument('--loose', action='store_true', help='also try pointer-vs-int views with the header type (keep only exact units)')
     s.set_defaults(func=cmd_convert)
     s = sub.add_parser('check'); s.set_defaults(func=cmd_check)

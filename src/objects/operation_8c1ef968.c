@@ -1,24 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjEneSaver.h"
 typedef struct S_g8c2e72d8 S_g8c2e72d8;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0xb0];
-    int fe8;
-    char unknownec[0x94];
-    float f180;
-    char unknown184[0x188];
-    short f30c;
-};
 extern int operation_02c350(void *);
-extern void call_8c01c9e8(Object *, short);
+extern void call_8c01c9e8(TObjEneSaver *, short);
 extern void operation_8c1e8e60(int, int, int);
-void operation_8c1ef968(Object *o)
+void operation_8c1ef968(TObjEneSaver *o)
 {
     short v1;
     int v2;

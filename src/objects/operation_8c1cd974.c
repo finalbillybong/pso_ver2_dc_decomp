@@ -1,24 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOHealGeneral.h"
 typedef struct S_g8c418248 S_g8c418248;
 typedef struct S_g8c467180 S_g8c467180;
 typedef struct S_g8c467180_2c S_g8c467180_2c;
 typedef struct S_g8c467180_2c_0 S_g8c467180_2c_0;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
+typedef struct TOHealGeneral_p30 TOHealGeneral_p30;
 typedef struct Arg0_30_0 Arg0_30_0;
 typedef struct S_vv4 S_vv4;
-struct Object {
-    char unknown0[0x30];
-    Arg0_30 *f30;
-    char unknown34[0x4e];
-    short f82;
-    char unknown84[0x2];
-    short f86;
-};
 struct S_g8c467180 {
     char unknown0[0x2c];
     S_g8c467180_2c *f2c;
@@ -32,7 +19,7 @@ extern int operation_8c03c0ac(void *, int);
 extern void call_8c19f09c(S_vv4 *, void *, int, int);
 extern int current_mode_active(void);
 extern int current_mode_in_range(void);
-void operation_8c1cd974(Object *o, int a1, int a2, int a3)
+void operation_8c1cd974(TOHealGeneral *o, int a1, int a2, int a3)
 {
     int v2;
     S_vv4 *v4;

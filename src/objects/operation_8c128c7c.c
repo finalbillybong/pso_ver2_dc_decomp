@@ -1,22 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObjEneGyaranzo.h"
 typedef struct Arg0_3c0 Arg0_3c0;
 typedef struct Arg0_s3ac Arg0_s3ac;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-    char unknown30c[0x84];
-    int f390;
-    char unknown394[0x4];
-    int f398;
-    int f39c;
-    char unknown3a0[0x4];
-    int f3a4;
-};
 struct Arg0_s3ac {
     char unknown0[0x14];
     Arg0_3c0 *f14;
@@ -27,7 +11,7 @@ struct Arg0_3c0 {
     char unknown18[0x4];
     int f1c;
 };
-void operation_8c128c7c(Object *o)
+void operation_8c128c7c(TObjEneGyaranzo *o)
 {
     int t1;
     switch (o->f398) {

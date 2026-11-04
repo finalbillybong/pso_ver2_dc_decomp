@@ -1,10 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TAdRicoRing.h"
 typedef struct S_c8c0263a4 S_c8c0263a4;
-typedef struct Object Object;
 typedef struct Arg1 Arg1;
 typedef struct S_vv3 S_vv3;
 typedef struct S_vv4 S_vv4;
@@ -24,14 +19,6 @@ struct S_c8c0263a4 {
     char unknown44[0x5c];
     int fa0;
 };
-struct Object {
-    char unknown0[0x20];
-    float f20;
-    float f24;
-    float f28;
-    float f2c;
-    int f30;
-};
 struct S_vv3 {
     short f00;
     short f02;
@@ -42,7 +29,7 @@ struct S_vv4 {
 };
 extern void call_8c1aab30(void *);
 extern S_c8c0263a4 *call_8c0263a4(Arg1 *);
-int operation_8c1aa840(Object *o, Arg1 *a1)
+int operation_8c1aa840(TAdRicoRing *o, Arg1 *a1)
 {
     int v1;
     char *v2;

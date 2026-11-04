@@ -1,19 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x80];
-    char f80;
-    char f81;
-    char f82;
-};
+#include "src/include/classes/TWindowSubCustomSelect.h"
 extern char g_8c41cba0[];
 extern int operation_8c01d844(int, int, int, int);
 extern void play_se_8c05fbf8(int, int, int, int);
-void operation_8c199388(Object *o)
+void operation_8c199388(TWindowSubCustomSelect *o)
 {
     int v1;
     int t1;

@@ -1,5 +1,4 @@
+#include "src/include/classes/TObjEneSaver.h"
 /* Checked provisional accessed prefix; semantic field name unresolved. */
-typedef struct View { unsigned char unknown0[940]; unsigned char value; } View;
-typedef char check_field[(unsigned long)&((View *)0)->value==940?1:-1];
-typedef char check_prefix[sizeof(View)==941?1:-1];
-void *TObjEneSaver_v10_8c0bf858(View *o) { return &o->value; }
+typedef char check_field[(unsigned long)&((TObjEneSaver *)0)->value==940?1:-1];
+void *TObjEneSaver_v10_8c0bf858(TObjEneSaver *o) { return &o->value; }

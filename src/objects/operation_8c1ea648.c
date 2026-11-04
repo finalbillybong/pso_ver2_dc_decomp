@@ -1,21 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjEneSaver.h"
 typedef struct S_g8c2e72d8 S_g8c2e72d8;
-typedef struct Object Object;
 typedef struct Arg0_s754 Arg0_s754;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0xb0];
-    int fe8;
-    char unknownec[0x4];
-    short ff0;
-    char unknownf2[0x21a];
-    short f30c;
-};
 struct Arg0_s754 {
     char unknown0[0xc];
     int f0c;
@@ -24,7 +9,7 @@ extern int actor_animation_ready(void *);
 extern void operation_8c1e8e60(int, int, int);
 extern int call_8c1aaafc(void *);
 extern int operation_02c350(void *);
-void operation_8c1ea648(Object *o)
+void operation_8c1ea648(TObjEneSaver *o)
 {
     int v1;
     int v2;

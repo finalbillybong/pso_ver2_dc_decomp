@@ -1,10 +1,10 @@
+#include "src/include/classes/TAdRicoRing.h"
 typedef struct Vector3 {
     float x;
     float y;
     float z;
 } Vector3;
 typedef struct Frame Frame;
-typedef struct Object Object;
 typedef struct S_x51152 S_x51152;
 typedef struct S_x51152_s20 S_x51152_s20;
 typedef struct Block_frame_0 {
@@ -20,15 +20,6 @@ struct S_x51152_s20 {
     int f18;
     float f1c;
 };
-struct Object {
-    char unknown0[0x20];
-    float f20;
-    float f24;
-    float f28;
-    float f2c;
-    char unknown30[0x4];
-    int f34;
-};
 struct S_x51152 {
     char unknown0[0x3c];
     float f3c;
@@ -38,7 +29,7 @@ extern char g_8c41cba0[];
 extern float call_8c130334(float, float);
 extern float njCos_8c38c154(int);
 extern float njSin_8c37eb0c(int);
-void operation_8c03ca54(Object *o)
+void operation_8c03ca54(TAdRicoRing *o)
 {
     Frame frame;
     float v1;

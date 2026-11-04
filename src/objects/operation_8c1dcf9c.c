@@ -1,29 +1,18 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowChat.h"
 typedef struct S_g8c418248 S_g8c418248;
 typedef struct S_g8c46fe20 S_g8c46fe20;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x20];
-    char f20;
-    char unknown21[0x1];
-    unsigned short f22;
-};
 struct S_g8c46fe20 {
     char unknown0[0x20];
     short f20;
 };
 extern int lookup_low_id(int);
 extern void operation_8c1dd18c(void *);
-extern int call_8c1dd454(Object *);
+extern int call_8c1dd454(TWindowChat *);
 extern void operation_8c1dd128(void *);
 extern void operation_8c0264ac(void);
 extern int operation_8c1dd520(void *);
-extern int call_8c1dd57c(Object *);
-void operation_8c1dcf9c(Object *o)
+extern int call_8c1dd57c(TWindowChat *);
+void operation_8c1dcf9c(TWindowChat *o)
 {
     int t1;
     int t2;

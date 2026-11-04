@@ -1,26 +1,15 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss4Type1.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
 typedef struct S_x22000_0 S_x22000_0;
 typedef struct S_x78448_0 S_x78448_0;
-struct Object {
-    char unknown0[0x3c];
-    Vector3 f3c;
-    char unknown48[0x348];
-    int f390;
-};
 struct Frame {
     Vector3 f00;
 };
 extern void call_8c3bdf60(Frame *, int);
 extern void call_8c0a7608(void *, Frame *);
-extern void call_8c1b3f88(Object *);
-extern void call_8c05fd7c(int, Object *, void *, int, int);
-void operation_8c1b4d80(Object *o)
+extern void call_8c1b3f88(TBoss4Type1 *);
+extern void call_8c05fd7c(int, TBoss4Type1 *, void *, int, int);
+void operation_8c1b4d80(TBoss4Type1 *o)
 {
     Frame frame;
     int v3;

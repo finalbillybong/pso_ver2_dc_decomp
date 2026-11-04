@@ -1,18 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xe8];
-    short fe8;
-    char unknownea[0x2];
-    int fec;
-};
+#include "src/include/classes/TObjLazerFenceExtra.h"
 extern int operation_03d080(unsigned short);
 extern void operation_8c05426c(void *, int, int);
-void operation_8c0813a0(Object *o)
+void operation_8c0813a0(TObjLazerFenceExtra *o)
 {
     int t1;
     t1 = operation_03d080((unsigned short)o->fe8);

@@ -1,50 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_38 Arg0_38;
-typedef struct Arg0_64 Arg0_64;
-typedef struct Arg0_f4 Arg0_f4;
+#include "src/include/classes/TOKeyAncient01.h"
+typedef struct TOKey_p28 TOKey_p28;
+typedef struct TOKey_p38 TOKey_p38;
+typedef struct TOKey_p64 TOKey_p64;
+typedef struct TOKey_pf4 TOKey_pf4;
 typedef struct S_vv1 S_vv1;
 typedef struct S_vv1_14 S_vv1_14;
 typedef struct S_vv1_18 S_vv1_18;
 typedef struct S_vv1_1c S_vv1_1c;
 typedef struct S_vv1_4 S_vv1_4;
-class Object;
-class Object {
-public:
-    char unknown0[0x18];
-    virtual void v0();
-    virtual void v1();
-    virtual void v2();
-    virtual void v3();
-    virtual void v4();
-    virtual void v5();
-    virtual void v6();
-    virtual void v7();
-    virtual void v8();
-    virtual void v9();
-    virtual void v10();
-    virtual int v11(float, float);
-};
-typedef struct ObjectData {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-    char unknown2c[0xc];
-    Arg0_38 *f38;
-    char unknown3c[0x28];
-    Arg0_64 *f64;
-    char unknown68[0x80];
-    float fe8;
-    char unknownec[0x8];
-    Arg0_f4 *ff4;
-    float ff8;
-    float ffc;
-    char unknown100[0x8];
-    int f108;
-} ObjectData;
 struct S_vv1 {
     char unknown0[0x4];
     S_vv1_4 *f04;
@@ -63,20 +26,20 @@ extern "C" void njRotateX_8c37dd28(int, void *);
 extern "C" void scale_current_matrix_v_8c37e390(void *);
 extern "C" void call_8c3aa702(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c0f233c(Object *o)
+extern "C" void operation_8c0f233c(TOKeyAncient01 *o)
 {
     S_vv1 *v1;
     int t1;
-    t1 = o->v11(((ObjectData *)o)->ff8, ((ObjectData *)o)->ffc);
+    t1 = o->v11(o->ff8, o->ffc);
     if (t1 != 0) {
         njPushMatrixEx_8c38ae68();
         translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
-        call_8c3827d8((void *)(((ObjectData *)o)->f28));
-        if (((ObjectData *)o)->f108 == 0) {
-            call_8c3ac53a((void *)(((ObjectData *)o)->f38), (void *)(((ObjectData *)o)->ff4), ((ObjectData *)o)->fe8);
+        njRotateY_8c37df90(0, (void *)(o->f64));
+        call_8c3827d8((void *)(o->f28));
+        if (o->f108 == 0) {
+            call_8c3ac53a((void *)(o->f38), (void *)(o->ff4), o->fe8);
         } else {
-            v1 = (S_vv1 *)((ObjectData *)o)->f38;
+            v1 = (S_vv1 *)o->f38;
             njPushMatrixEx_8c38ae68();
             translate_current_matrix_v_8c382a40((void *)((int)v1 + 8));
             njRotateZ_8c37e02c(0, (void *)(v1->f1c));

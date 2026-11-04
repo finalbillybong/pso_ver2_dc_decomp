@@ -1,17 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x1dc];
-    float f214;
-};
-extern void call_8c07f06c(Object *, int);
-void operation_8c07d79c(Object *o)
+#include "src/include/classes/TItemMag.h"
+extern void call_8c07f06c(TItemMag *, int);
+void operation_8c07d79c(TItemMag *o)
 {
     if (o->f214 > 0.0f) {
         o->f214 -= 1.0f;

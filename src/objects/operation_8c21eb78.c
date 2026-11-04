@@ -1,25 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
+#include "src/include/classes/TWindowSubQuestBoardSelect.h"
+typedef struct TWindowSubQuestBoardSelect_p30 TWindowSubQuestBoardSelect_p30;
 typedef struct Arg0_30_0 Arg0_30_0;
 typedef struct Arg0_30_4 Arg0_30_4;
 typedef struct S_vv29 S_vv29;
 typedef struct S_vv4 S_vv4;
-struct Object {
-    char unknown0[0x30];
-    Arg0_30 *f30;
-    char unknown34[0x34];
-    char f68;
-    char f69;
-};
 struct S_vv4 {
     int f00;
 };
-struct Arg0_30 {
+struct TWindowSubQuestBoardSelect_p30 {
     char unknown0[0x4];
     Arg0_30_4 *f04;
 };
@@ -27,7 +15,7 @@ struct S_vv29 {
     int f00;
 };
 extern int operation_8c21ec0c(int, int);
-void operation_8c21eb78(Object *o)
+void operation_8c21eb78(TWindowSubQuestBoardSelect *o)
 {
     S_vv4 *v4;
     int v3;

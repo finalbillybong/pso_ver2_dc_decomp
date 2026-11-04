@@ -1,25 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xe8];
-    int fe8;
-    char unknownec[0x4];
-    short ff0;
-    char unknownf2[0x8e];
-    float f180;
-    char unknown184[0x188];
-    short f30c;
-};
+#include "src/include/classes/TObjEneSaver.h"
 extern int check_range_8c01cf68(void *, float);
 extern void operation_8c02a764(int, int);
 extern int operation_02c350(void *);
 extern void operation_8c0259f8(void *);
-extern void call_8c025c50(Object *, void *);
-void operation_8c1eeb6c(Object *o)
+extern void call_8c025c50(TObjEneSaver *, void *);
+void operation_8c1eeb6c(TObjEneSaver *o)
 {
     int t1;
     int t2;

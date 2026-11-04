@@ -1,23 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x2f8];
-    short f330;
-    char unknown332[0x24];
-    short f356;
-    short f358;
-    short f35a;
-};
-extern void call_8c01c5f0(Object *);
+#include "src/include/classes/TObjEnemy.h"
+extern void call_8c01c5f0(TObjEnemy *);
 extern void operation_8c04a43c(void *, void *, float);
 extern void refresh_follow_effect_8c052180(void *);
-void operation_8c05113c(Object *o)
+void operation_8c05113c(TObjEnemy *o)
 {
     void *v1;
     float v2;

@@ -1,13 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TEffClitical.h"
 typedef struct Block16 {
     int words[4];
 } Block16;
 typedef struct Frame Frame;
-typedef struct Object Object;
 struct Frame {
     float f00;
     float f04;
@@ -15,21 +10,10 @@ struct Frame {
     Vector3 f0c;
     Block16 f18;
 };
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1e];
-    float f24;
-    float f28;
-    float f2c;
-    char unknown30[0x44];
-    int f74;
-    int f78;
-};
 extern void create_effect_777c(void *, int);
 extern int step_effect_color_alpha(void *, void *, float);
 extern void interpolate_effect_vector(void *, void *, float);
-void TEffClitical_update_8c09fe44(Object *o)
+void TEffClitical_update_8c09fe44(TEffClitical *o)
 {
     Frame frame;
     int v1;
@@ -54,19 +38,19 @@ void TEffClitical_update_8c09fe44(Object *o)
                     goto L_8c09fef4;
                 }
             } else {
-                create_effect_777c((void *)(&o->f24), 7);
+                create_effect_777c((void *)(&o->f24.x), 7);
                 goto L_8c09fefe;
 L_8c09feb0:;
-                create_effect_777c((void *)(&o->f24), 0xb);
+                create_effect_777c((void *)(&o->f24.x), 0xb);
                 goto L_8c09fefe;
 L_8c09febe:;
-                (&frame)->f00 = o->f24;
-                (&frame)->f04 = o->f28 - 20.0f;
-                (&frame)->f08 = o->f2c;
+                (&frame)->f00 = o->f24.x;
+                (&frame)->f04 = o->f24.y - 20.0f;
+                (&frame)->f08 = o->f24.z;
                 create_effect_777c((void *)(&frame), 0xc);
                 goto L_8c09fefe;
 L_8c09fef4:;
-                create_effect_777c((void *)(&o->f24), 0xe);
+                create_effect_777c((void *)(&o->f24.x), 0xe);
             }
 L_8c09fefe:;
             v1 = (int)(v1 + 1);

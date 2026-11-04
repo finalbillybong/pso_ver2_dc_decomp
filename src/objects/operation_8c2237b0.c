@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x28];
-    int f28;
-};
-void operation_8c2237b0(Object *o)
+#include "src/include/classes/TItemTimerEvent.h"
+void operation_8c2237b0(TItemTimerEvent *o)
 {
     o->f28 += 1;
 }

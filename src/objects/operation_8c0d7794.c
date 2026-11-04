@@ -1,19 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss2DeRolLe.h"
 typedef struct S_g8c46fdac S_g8c46fdac;
 typedef struct S_g8c46fdac_42c S_g8c46fdac_42c;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x28];
-    void *f28;
-    char unknown2c[0x348];
-    float f374;
-    char unknown378[0x64];
-    int f3dc;
-};
 struct S_g8c46fdac {
     char unknown0[0x42c];
     S_g8c46fdac_42c *f42c;
@@ -23,8 +10,8 @@ struct S_g8c46fdac_42c {
     int f0c;
 };
 extern int call_8c05a0a8(void);
-extern void call_8c05b92c(Object *, int);
-void operation_8c0d7794(Object *o)
+extern void call_8c05b92c(TBoss2DeRolLe *, int);
+void operation_8c0d7794(TBoss2DeRolLe *o)
 {
     int v1;
     int t1;

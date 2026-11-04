@@ -1,20 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
+#include "src/include/classes/TOHealGeneral.h"
+typedef struct TOHealGeneral_p30 TOHealGeneral_p30;
 typedef struct Arg0_30_0 Arg0_30_0;
 typedef struct S_vv6 S_vv6;
-struct Object {
-    char unknown0[0x30];
-    Arg0_30 *f30;
-    char unknown34[0x4e];
-    short f82;
-    char unknown84[0x2];
-    short f86;
-};
 struct S_vv6 {
     int f00;
     char unknown4[0x4];
@@ -23,7 +10,7 @@ struct S_vv6 {
     char f1c;
 };
 extern void operation_8c19ed0c(void *, int, int, int);
-void operation_8c1cd7c8(Object *o, int a1, int a2, int a3)
+void operation_8c1cd7c8(TOHealGeneral *o, int a1, int a2, int a3)
 {
     S_vv6 *v6;
     int v3;

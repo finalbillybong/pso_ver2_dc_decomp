@@ -1,20 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x68];
-    char f68;
-    char f69;
-};
+#include "src/include/classes/TWindowSubQuestBoardSelect.h"
 extern char g_8c41cba0[];
 extern int operation_8c01d844(int, int, int, int);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern int operation_8c21ec0c(int, char);
 extern void operation_8c21ec3c(void *);
-void operation_8c21e810(Object *o)
+void operation_8c21e810(TWindowSubQuestBoardSelect *o)
 {
     int v4;
     int v1;

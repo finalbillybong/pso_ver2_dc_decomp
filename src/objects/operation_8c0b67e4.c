@@ -1,20 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_24 Arg0_24;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    short f20;
-    short f22;
-    Arg0_24 *f24;
-};
+#include "src/include/classes/TOSwitchAttackSub.h"
+typedef struct TOSwitchAttackSub_p24 TOSwitchAttackSub_p24;
 extern void play_se_8c05fbf8(void *, void *, int, int);
-void operation_8c0b67e4(Object *o)
+void operation_8c0b67e4(TOSwitchAttackSub *o)
 {
     o->f22 += 1;
     if (o->f22 > o->f20) {

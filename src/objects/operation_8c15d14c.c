@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x40];
-    float f40;
-    char unknown44[0xd8];
-    int f11c;
-    int f120;
-};
-extern void call_8c15d1bc(Object *);
-void TOSensorAncient01_v17_8c15d14c(Object *o)
+#include "src/include/classes/TOSensorAncient01.h"
+extern void call_8c15d1bc(TOSensorAncient01 *);
+void TOSensorAncient01_v17_8c15d14c(TOSensorAncient01 *o)
 {
     o->f120 = (int)((float)o->f120 + 1310.0f);
     call_8c15d1bc(o);
@@ -21,5 +9,5 @@ void TOSensorAncient01_v17_8c15d14c(Object *o)
         return;
     }
     o->f11c = 0;
-    o->f40 += 1.0f;
+    o->f3c.y += 1.0f;
 }

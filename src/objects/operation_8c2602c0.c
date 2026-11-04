@@ -1,8 +1,4 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TAdPSOConv.h"
 typedef struct Block8 {
     int words[2];
 } Block8;
@@ -12,17 +8,7 @@ typedef struct S_g8c467180 S_g8c467180;
 typedef struct S_g8c467180_88 S_g8c467180_88;
 typedef struct S_g8c467180_88_0 S_g8c467180_88_0;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_28 Arg0_28;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x4];
-    int f20;
-    int f24;
-    Arg0_28 *f28;
-    int f2c;
-};
+typedef struct TAdPSOConv_p28 TAdPSOConv_p28;
 struct Frame {
     Block8 f04;
     Block8 f0c;
@@ -36,20 +22,20 @@ struct S_g8c467180_88 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void TAdBack_ctor_8c198294(int, Object *);
-extern void TAdTitle_ctor_8c199688(int, Object *, int);
+extern void TAdBack_ctor_8c198294(int, TAdPSOConv *);
+extern void TAdTitle_ctor_8c199688(int, TAdPSOConv *, int);
 extern int create_fitted_pair_grid_view(void *, void *);
 extern void operation_8c119764(int, int, int);
-Object *operation_8c2602c0(Object *o)
+TAdPSOConv *operation_8c2602c0(TAdPSOConv *o)
 {
     Frame frame;
-    Object **home = &o;
+    TAdPSOConv **home = &o;
     int t1;
     int t2;
     int t3;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be88 **)0x8c44be88));
-    o->dispatch = (void *)0x8c281e34;
+    o->vtable = (void *)0x8c281e34;
     o->f20 = 0;
     o->f24 = 0;
     o->f2c = 0;
@@ -64,7 +50,7 @@ Object *operation_8c2602c0(Object *o)
     *(Block8 *)&(&frame)->f0c = *(Block8 *)&*(Block8 *)0x8c3407b8;
     *(Block8 *)&(&frame)->f04 = *(Block8 *)&*(Block8 *)0x8c3407c0;
     t3 = create_fitted_pair_grid_view((void *)(&(&frame)->f0c), (void *)(&(&frame)->f04));
-    o->f28 = (Arg0_28 *)t3;
+    o->f28 = (TAdPSOConv_p28 *)t3;
     operation_8c119764((int)(o->f28), (int)((*(S_g8c467180 **)0x8c467180)->f88->f00), 1);
     return o;
 }

@@ -1,17 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x1ea];
-    short f1ea;
-    short f1ec;
-    short f1ee;
-};
+#include "src/include/classes/TItemMag.h"
 extern int call_8c18e768(int, int);
-int operation_8c07ef4c(Object *o)
+int operation_8c07ef4c(TItemMag *o)
 {
     int v12;
     int v1;

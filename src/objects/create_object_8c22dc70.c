@@ -1,19 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TQuestVmDownLoadServer.h"
 typedef struct S_g8c41c610 S_g8c41c610;
 typedef struct S_g8c467180 S_g8c467180;
 typedef struct S_g8c467180_44 S_g8c467180_44;
 typedef struct S_g8c467180_44_0 S_g8c467180_44_0;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x90];
-    void *f90;
-    int f94;
-};
 struct S_g8c41c610 {
     char unknown0[0x4];
     short f04;
@@ -30,11 +20,11 @@ extern char g_8c44be18;
 extern S_g8c467180 *g_8c467180;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void *heap_alloc_8c122700(void *, int);
-extern void call_8c22f1bc(void *, Object *);
-extern void TAdTitle_ctor_8c199688(void *, Object *, int);
-extern void TAdBack_ctor_8c198294(void *, Object *);
-extern void call_8c22e8e4(Object *, void *, int);
-void create_object_8c22dc70(Object *o)
+extern void call_8c22f1bc(void *, TQuestVmDownLoadServer *);
+extern void TAdTitle_ctor_8c199688(void *, TQuestVmDownLoadServer *, int);
+extern void TAdBack_ctor_8c198294(void *, TQuestVmDownLoadServer *);
+extern void call_8c22e8e4(TQuestVmDownLoadServer *, void *, int);
+void create_object_8c22dc70(TQuestVmDownLoadServer *o)
 {
     void *t1;
     void *t2;

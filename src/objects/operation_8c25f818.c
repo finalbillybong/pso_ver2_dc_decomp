@@ -1,18 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x24];
-    int f24;
-    char unknown28[0x8];
-    int f30;
-};
+#include "src/include/classes/TAdHunLicence.h"
 extern void operation_8c25f860(void);
 extern void operation_8c25f874(void);
-void operation_8c25f818(Object *o)
+void operation_8c25f818(TAdHunLicence *o)
 {
     char *v1;
     v1 = (char *)o->f24;

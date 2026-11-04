@@ -1,20 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowMakeTeam.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
 typedef struct S_vv1 S_vv1;
 struct Frame {
     int f00;
-};
-struct Object {
-    char unknown0[0x20];
-    char f20;
-    char f21;
-    char f22;
-    char f23;
 };
 struct S_vv1 {
     unsigned char f00;
@@ -22,7 +10,7 @@ struct S_vv1 {
     char f02;
     char f03;
 };
-void operation_8c0106f8(Object *o, int a1)
+void operation_8c0106f8(TWindowMakeTeam *o, int a1)
 {
     Frame frame;
     S_vv1 *v1;

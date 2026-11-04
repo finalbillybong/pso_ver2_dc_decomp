@@ -1,11 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjEnePanarmsAtkColli.h"
 typedef struct Frame Frame;
 typedef struct S_g8c467240 S_g8c467240;
-typedef struct Object Object;
 typedef struct S_vv8 S_vv8;
 typedef struct S_x17872 S_x17872;
 typedef struct S_x74320 S_x74320;
@@ -15,13 +10,6 @@ typedef struct Block_frame_18 {
     char unknown4[0x4];
     float f08;
 } Block_frame_18;
-struct Object {
-    char unknown0[0x3c];
-    Vector3 f3c;
-    Vector3 f48;
-    char unknown54[0x340];
-    float f394;
-};
 struct Frame {
     Vector3 f00;
     Vector3 f0c;
@@ -45,10 +33,10 @@ extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern float njScalor_8c37e480(void *);
 extern void njUnitVector_8c37b630(void *);
 extern float squared_distance_xz(void *, void *);
-extern void call_8c161a80(Object *, S_vv8 *);
+extern void call_8c161a80(TObjEnePanarmsAtkColli *, S_vv8 *);
 extern void call_8c3bdf60(void *, void *);
-extern void call_8c161afc(Object *, Frame *);
-void operation_8c161908(Object *o)
+extern void call_8c161afc(TObjEnePanarmsAtkColli *, Frame *);
+void operation_8c161908(TObjEnePanarmsAtkColli *o)
 {
     Frame frame;
     float v1;

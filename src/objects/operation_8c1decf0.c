@@ -1,25 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowKeyBoardSoft.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
-};
-struct Object {
-    char unknown0[0x68];
-    int f68;
-    char unknown6c[0x1];
-    char f6d;
 };
 extern int g_8c467188;
 extern S_L8c41cba0 g_8c41cba0;
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c1dee8c(void *);
-void operation_8c1decf0(Object *o)
+void operation_8c1decf0(TWindowKeyBoardSoft *o)
 {
     char v14;
     int v16;

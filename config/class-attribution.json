@@ -1,0 +1,966 @@
+{
+ "description": "Matched units adopted onto a class header by evidence other than their function name. signals: slot = vtable slot of the class, ctor = constructor/destructor of the class (vtable and class-name store), callers = every caller is a method of the class passing this, layout_unique = the unit's view matches one class family's header on 3+ fields past the TObject header, layout / layout_any = a weaker layout agreement. Accepted with one strong signal (slot, ctor, layout_unique) or two agreeing signals; see docs/TYPES.md.",
+ "units": {
+  "acquire_text_context": {
+   "class": "TItemDownLoad",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "advance_text_context": {
+   "class": "TItemDownLoad",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "complete_text_context": {
+   "class": "TItemDownLoad",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "create_object_8c22dc70": {
+   "class": "TQuestVmDownLoadServer",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "get_text_context_buffer": {
+   "class": "TItemDownLoad",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "initialize_grid_panel_8c1dbd08": {
+   "class": "TWindowMenuInfomation",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "open_text_context": {
+   "class": "TItemDownLoad",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "operation_8c0106f8": {
+   "class": "TWindowMakeTeam",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0277bc": {
+   "class": "TObjPlayer",
+   "signals": [
+    "layout",
+    "slot"
+   ]
+  },
+  "operation_8c02c984": {
+   "class": "TObjPlayer",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c037a68": {
+   "class": "TObjEnemy",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c03ca54": {
+   "class": "TAdRicoRing",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c047438": {
+   "class": "TBoss3Volopt",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c05113c": {
+   "class": "TObjEnemy",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0519c8": {
+   "class": "TObjEneLappy",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c058328": {
+   "class": "TObjEneBm3FlyNest",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c05c1bc": {
+   "class": "TBoss4Zako",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c07d79c": {
+   "class": "TItemMag",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c07d820": {
+   "class": "TItemMag",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c07da88": {
+   "class": "TItemMag",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c07ef4c": {
+   "class": "TItemMag",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c07f984": {
+   "class": "TItemMag",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c080d70": {
+   "class": "TObjLazerFenceNorm",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c0813a0": {
+   "class": "TObjLazerFenceExtra",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c088ff4": {
+   "class": "TObjWarpBase",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c0894c4": {
+   "class": "TObjWarpBase",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c089954": {
+   "class": "TObjWarpBase",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c089e98": {
+   "class": "TObjWarpBase",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c08a330": {
+   "class": "TObjWarpBase",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c08b3a0": {
+   "class": "TObjEZBoneRotPlayer",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c090d48": {
+   "class": "TObjEneMe1Canadin",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c095314": {
+   "class": "TObjEneMe1Canadin",
+   "signals": [
+    "ctor",
+    "layout"
+   ]
+  },
+  "operation_8c097630": {
+   "class": "TItemEffHeaven",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c097670": {
+   "class": "TItemEffHeaven",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0b67e4": {
+   "class": "TOSwitchAttackSub",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0bc414": {
+   "class": "TWindowSubMag",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0c03d4": {
+   "class": "TObjEneBm3FlyNest",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0c0420": {
+   "class": "TObjEneBm3FlyNest",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0d5048": {
+   "class": "TBoss2DeRolLe",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0d7794": {
+   "class": "TBoss2DeRolLe",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0dc854": {
+   "class": "TWindowLockOn",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0e3c4c": {
+   "class": "TObjEneBeast",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0e48c8": {
+   "class": "TObjEneBeast",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0e4938": {
+   "class": "TObjEneBeast",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0e5b34": {
+   "class": "TObjEnemy",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0e692c": {
+   "class": "TObjEnemy",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c0f0474": {
+   "class": "TOWreckAncient",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c0f05c8": {
+   "class": "TOWreckAncient",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c0f0724": {
+   "class": "TOWreckAncient",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c0f087c": {
+   "class": "TOWreckAncient",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c0f09d8": {
+   "class": "TOWreckAncient",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c0f0b34": {
+   "class": "TOWreckAncient",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c0f0dac": {
+   "class": "TOWreckAncient",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c0f233c": {
+   "class": "TOKeyAncient01",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1135b4": {
+   "class": "TOKey",
+   "signals": [
+    "layout_unique",
+    "slot"
+   ]
+  },
+  "operation_8c1166c4": {
+   "class": "TFogEditor",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c116700": {
+   "class": "TFogEditor",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c128c7c": {
+   "class": "TObjEneGyaranzo",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1296f4": {
+   "class": "TContainerAncient01",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c130bf8": {
+   "class": "TODoorAncient09",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c130cf8": {
+   "class": "TODoorAncient09",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c136f48": {
+   "class": "TObjFogCollision",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c139400": {
+   "class": "TBoss4Bishi",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c13d638": {
+   "class": "TObjEneGyaranzo",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c161874": {
+   "class": "TObjEnePanarmsAtkColli",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c161908": {
+   "class": "TObjEnePanarmsAtkColli",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "operation_8c1660f0": {
+   "class": "TBoss2Mine",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c166730": {
+   "class": "TBoss2Mine",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c17749c": {
+   "class": "TWindowSubSymbolChat",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c18c768": {
+   "class": "TWindowMainMenu",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c191428": {
+   "class": "TWindowSubMag",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "operation_8c191454": {
+   "class": "TWindowSubMag",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "operation_8c197804": {
+   "class": "TWindowSubCustomEquip",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c199388": {
+   "class": "TWindowSubCustomSelect",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "operation_8c199578": {
+   "class": "TWindowSubCustomSelect",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c1a3c8c": {
+   "class": "TWindowSubItem",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c1a3de4": {
+   "class": "TWindowSubItem",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c1a8f58": {
+   "class": "TWindowSubTechnique",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c1a9de4": {
+   "class": "TObjBgmCol",
+   "signals": [
+    "layout_unique",
+    "slot"
+   ]
+  },
+  "operation_8c1a9ec4": {
+   "class": "TObjBgmCol",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c1aa840": {
+   "class": "TAdRicoRing",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1b4d80": {
+   "class": "TBoss4Type1",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c1bca48": {
+   "class": "TBoss4Bishi",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c1bda48": {
+   "class": "TWindowInputNumber",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "operation_8c1bdaa4": {
+   "class": "TWindowInputNumber",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "operation_8c1c18ac": {
+   "class": "TObjCityDoor_Warp",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1c6dc4": {
+   "class": "TOSparkMachine01",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c1ca3e4": {
+   "class": "TWindowSubShortMail",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cd638": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cd674": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cd6b4": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cd6f4": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cd734": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cd774": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cd7c8": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cd918": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cd974": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cda60": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cda9c": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cdb14": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cdb50": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1cdb8c": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1d4b78": {
+   "class": "TWindowSubEquip",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c1d4c44": {
+   "class": "TWindowSubEquip",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c1d4cb0": {
+   "class": "TWindowSubEquip",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "operation_8c1dc440": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1dc47c": {
+   "class": "TOHealGeneral",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1dcf9c": {
+   "class": "TWindowChat",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c1decf0": {
+   "class": "TWindowKeyBoardSoft",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c1e40e8": {
+   "class": "TObjContainerBase",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c1e469c": {
+   "class": "TObjContainerBase",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c1e49f0": {
+   "class": "TOContainerAncientEnemy",
+   "signals": [
+    "layout_any",
+    "slot"
+   ]
+  },
+  "operation_8c1e4e00": {
+   "class": "TOContainerAncientEnemy",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c1e507c": {
+   "class": "TObjContainerBase",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c1e5820": {
+   "class": "TWindowMakeTeam",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c1e5854": {
+   "class": "TWindowMakeTeam",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c1ea648": {
+   "class": "TObjEneSaver",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1eb920": {
+   "class": "TObjEneSaver",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1ebdd4": {
+   "class": "TObjEneSaver",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1eeb6c": {
+   "class": "TObjEneSaver",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1ef968": {
+   "class": "TObjEneSaver",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c207160": {
+   "class": "TWindowSubComCardList",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c215020": {
+   "class": "TObjLoadGmPlNjReq",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c21a07c": {
+   "class": "TWindowSubComCard",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c21a0c4": {
+   "class": "TWindowSubShortMail",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c21e810": {
+   "class": "TWindowSubQuestBoardSelect",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c21eb14": {
+   "class": "TWindowSubQuestBoardSelect",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c21eb78": {
+   "class": "TWindowSubQuestBoardSelect",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c220460": {
+   "class": "TWindowSubSymbolChatFaceType",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c2205d0": {
+   "class": "TWindowSubSymbolChatFaceType",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c223228": {
+   "class": "TQuestListVM",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c2237b0": {
+   "class": "TItemTimerEvent",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c224438": {
+   "class": "TWindowSubSymbolChatPartsSet",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c22447c": {
+   "class": "TWindowSubSymbolChatPartsSet",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c225228": {
+   "class": "TWindowSubSymbolChatParts",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "operation_8c22de98": {
+   "class": "TQuestVmDownLoadServer",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "operation_8c22e7c8": {
+   "class": "TQuestVmDownLoadServer",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "operation_8c2329b0": {
+   "class": "TItemReverseTechPart1",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c24c4c4": {
+   "class": "TOVS2",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c24c90c": {
+   "class": "TOVS2Wall01",
+   "signals": [
+    "callers",
+    "layout"
+   ]
+  },
+  "operation_8c25ad8c": {
+   "class": "TAdPSOPlay",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c25adc8": {
+   "class": "TAdPSOPlay",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c25c51c": {
+   "class": "TObjWarnChime",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c25e194": {
+   "class": "TDLGraph",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c25f7dc": {
+   "class": "TAdHunLicence",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c25f818": {
+   "class": "TAdHunLicence",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "operation_8c2602c0": {
+   "class": "TAdPSOConv",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "poll_text_context": {
+   "class": "TItemDownLoad",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  },
+  "set_fields_8c12992c": {
+   "class": "TContainerAncient01",
+   "signals": [
+    "callers",
+    "layout_any"
+   ]
+  },
+  "set_fields_8c1bbd54": {
+   "class": "TBoss4Zako",
+   "signals": [
+    "callers",
+    "layout_unique"
+   ]
+  }
+ }
+}

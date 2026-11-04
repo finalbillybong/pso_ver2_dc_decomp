@@ -1,10 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubSymbolChat.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
 struct S_L8c41cba0 {
     char unknown0[0x20];
     int f20;
@@ -12,19 +7,8 @@ struct S_L8c41cba0 {
     int f28;
     int f2c;
 };
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x4];
-    int f3c;
-    int f40;
-    int f44;
-    int f48;
-    int f4c;
-    int f50;
-};
 extern S_L8c41cba0 g_8c41cba0;
-void operation_8c17749c(Object *o)
+void operation_8c17749c(TWindowSubSymbolChat *o)
 {
     int v33;
     if (((*(int *)((char *)&g_8c41cba0.f28 + (o->f34 * 0x3c)) & 0x20000)) != 0) {

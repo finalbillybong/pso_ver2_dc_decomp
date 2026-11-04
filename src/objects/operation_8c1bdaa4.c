@@ -1,25 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x68];
-    unsigned short f68;
-    char f6a;
-    char f6b;
-};
+#include "src/include/classes/TWindowInputNumber.h"
 extern void play_se_8c05fbf8(int, int, int, int);
-void operation_8c1bdaa4(Object *o)
+void operation_8c1bdaa4(TWindowInputNumber *o)
 {
     play_se_8c05fbf8(0x50000, 0, 0, 0);
-    o->f6b += -1;
-    if (!(o->f6b >= 0)) {
-        if (((o->f68 & 1)) != 0) {
-            o->f6b = 0;
+    o->mode += -1;
+    if (!(o->mode >= 0)) {
+        if (((o->flags & 1)) != 0) {
+            o->mode = 0;
             return;
         }
-        o->f6b = o->f6a + -1;
+        o->mode = o->unknown106 + -1;
     }
 }

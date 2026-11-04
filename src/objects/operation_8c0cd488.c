@@ -1,22 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjBoss1MokoHill_Solo.h"
 typedef struct S_g8c469a60 S_g8c469a60;
 typedef struct S_g8c469a60_42c S_g8c469a60_42c;
 typedef struct S_g8c469a60_42c_48 S_g8c469a60_42c_48;
 typedef struct S_g8c469a64 S_g8c469a64;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x2c];
-    float f2c;
-    char unknown30[0x4];
-    float f34;
-    float f38;
-    char unknown3c[0x10];
-    int f4c;
-};
 struct S_g8c469a60 {
     char unknown0[0x42c];
     S_g8c469a60_42c *f42c;
@@ -41,12 +27,12 @@ extern void call_8c38c0e6(int, int);
 extern void call_8c3aa716(void *);
 extern void call_8c3a944a(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void TObjBoss1MokoHill_Solo_render_8c0cd488(Object *o)
+void TObjBoss1MokoHill_Solo_render_8c0cd488(TObjBoss1MokoHill_Solo *o)
 {
     call_8c3827d8(g_8c469a64);
-    call_8c0cc8bc((void *)(&o->f2c));
+    call_8c0cc8bc((void *)(&o->f2c.x));
     njPushMatrixEx_8c38ae68();
-    njTranslate_8c3829bc(0, o->f2c, o->f38, o->f34);
+    njTranslate_8c3829bc(0, o->f2c.x, o->f38, o->f2c.z);
     if (o->f4c != 0) {
         g_8c46f560 = (int)(g_8c575570);
         g_8c46f574 = (int)(g_8c5755a4);
