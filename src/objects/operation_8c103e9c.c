@@ -1,21 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    Arg0_20 *f20;
-    float f24;
-    char unknown28[0x4];
-    float f2c;
-    float f30;
-};
-struct Arg0_20 {
+#include "src/include/classes/TObjEneDf2Bringer_Eff_Rush.h"
+typedef struct TObjEneDf2Bringer_Eff_Rush_p20 TObjEneDf2Bringer_Eff_Rush_p20;
+struct TObjEneDf2Bringer_Eff_Rush_p20 {
     char unknown0[0x20];
     short f20;
     char unknown22[0x2e6];
@@ -27,7 +12,7 @@ struct Arg0_20 {
 };
 extern int call_8c05b228(short);
 extern int active_unflagged_8c05b2dc(void *);
-void TObjEneDf2Bringer_Eff_Rush_update_8c103e9c(Object *o)
+void TObjEneDf2Bringer_Eff_Rush_update_8c103e9c(TObjEneDf2Bringer_Eff_Rush *o)
 {
     int v1;
     int t1;

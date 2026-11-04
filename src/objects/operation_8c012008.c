@@ -1,43 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObjEnemy.h"
 typedef struct S_x2576 S_x2576;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x14];
-    int f34;
-    char unknown38[0xb0];
-    int fe8;
-    char unknownec[0x244];
-    short f330;
-    char unknown332[0x1e];
-    int f350;
-    unsigned short f354;
-    short f356;
-    short f358;
-    short f35a;
-    int f35c;
-    int f360;
-    int f364;
-    int f368;
-    int f36c;
-    char unknown370[0x14];
-    int f384;
-    int f388;
-    int f38c;
-};
 struct S_x2576 {
     float f00;
 };
-extern void call_8c043418(Object *);
-Object *TObjEnemy_ctor_8c012008(Object *o)
+extern void call_8c043418(TObjEnemy *);
+TObjEnemy *TObjEnemy_ctor_8c012008(TObjEnemy *o)
 {
     int v1;
     int v4;

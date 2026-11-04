@@ -1,31 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_dc Arg0_dc;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0xa4];
-    Arg0_dc *fdc;
-    char unknowne0[0x10];
-    short ff0;
-    char unknownf2[0x218];
-    short f30a;
-    short f30c;
-    char unknown30e[0x82];
-    int f390;
-    char unknown394[0xc];
-    int f3a0;
-    int f3a4;
-};
-struct Arg0_dc {
+#include "src/include/classes/TObjEneMoja.h"
+typedef struct TObjEneMoja_pdc TObjEneMoja_pdc;
+struct TObjEneMoja_pdc {
     char unknown0[0x18];
     int f18;
 };
-void TObjEneMoja_v67_8c03966c(Object *o)
+void TObjEneMoja_v67_8c03966c(TObjEneMoja *o)
 {
     if (o->f30a != 3) {
         o->f30a = 3;

@@ -1,26 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x36];
-    Vector3 f3c;
-    Vector3 f48;
-    char unknown54[0x33c];
-    int f390;
-    float f394;
-    float f398;
-    int f39c;
-};
+#include "src/include/classes/TObjEnePanarmsAtkColli.h"
 extern void call_8c3bdf60(void *, void *);
 extern void operation_8c161874(void *);
-extern void call_8c05fd7c(int, Object *, void *, int, int);
-extern void call_8c161908(Object *);
-void TObjEnePanarmsAtkColli_update_8c1617c8(Object *o)
+extern void call_8c05fd7c(int, TObjEnePanarmsAtkColli *, void *, int, int);
+extern void call_8c161908(TObjEnePanarmsAtkColli *);
+void TObjEnePanarmsAtkColli_update_8c1617c8(TObjEnePanarmsAtkColli *o)
 {
     if (!(--o->f39c >= 0)) {
         o->f04 |= 1;

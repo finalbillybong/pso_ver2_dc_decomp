@@ -1,32 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjEneSaver.h"
 typedef struct Frame Frame;
 typedef struct S_g8c46f3a4 S_g8c46f3a4;
 typedef struct S_g8c46f3a4_0 S_g8c46f3a4_0;
-typedef struct Object Object;
-typedef struct Arg0_334 Arg0_334;
+typedef struct TObjEneSaver_p334 TObjEneSaver_p334;
 typedef struct Arg0_334_dc Arg0_334_dc;
-typedef struct Arg0_64 Arg0_64;
+typedef struct TObjEneSaver_p64 TObjEneSaver_p64;
 typedef struct S_vv1 S_vv1;
 typedef struct S_vv5 S_vv5;
 typedef struct S_vv6 S_vv6;
-struct Object {
-    char unknown0[0x64];
-    Arg0_64 *f64;
-    char unknown68[0x2a2];
-    short f30a;
-    char unknown30c[0x28];
-    Arg0_334 *f334;
-    char unknown338[0x4];
-    int f33c;
-    char unknown340[0x50];
-    int f390;
-    char unknown394[0x4];
-    short f398;
-};
 struct S_vv1 {
     char unknown0[0x34];
     int f34;
@@ -36,7 +17,7 @@ struct Frame {
     char unknown4[0x4];
     float f08;
 };
-struct Arg0_334 {
+struct TObjEneSaver_p334 {
     char unknown0[0xdc];
     Arg0_334_dc *fdc;
 };
@@ -58,7 +39,7 @@ extern S_g8c46f3a4 *g_8c46f3a4;
 extern float object_distance_xz(void *, void *, void *);
 extern float call_8c130334(float, float);
 extern int angle_difference(int, int);
-int TObjEneSaver_v39_8c0bdde4(Object *o)
+int TObjEneSaver_v39_8c0bdde4(TObjEneSaver *o)
 {
     Frame frame;
     S_vv1 *v1;

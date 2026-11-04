@@ -1,19 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xf0];
-    short ff0;
-    char unknownf2[0x218];
-    short f30a;
-    short f30c;
-    char unknown30e[0xba];
-    int f3c8;
-};
-void TObjGrass_v66_8c04d3dc(Object *o)
+#include "src/include/classes/TObjGrass.h"
+void TObjGrass_v66_8c04d3dc(TObjGrass *o)
 {
     int v3;
     if (o->f30a != 0) {

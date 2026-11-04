@@ -1,26 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0xb4];
-    int fec;
-    short ff0;
-    char unknownf2[0x218];
-    short f30a;
-    short f30c;
-    char unknown30e[0x9e];
-    int f3ac;
-};
+#include "src/include/classes/TObjEneBeast.h"
 extern void operation_8c05426c(void *, int, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c05428c(void *, int, int);
-extern void call_8c01c5f0(Object *);
-void TObjEneBeast_v89_8c0e5a68(Object *o)
+extern void call_8c01c5f0(TObjEneBeast *);
+void TObjEneBeast_v89_8c0e5a68(TObjEneBeast *o)
 {
     if (o->f30c != 0) {
         if (o->f30c == 1) {

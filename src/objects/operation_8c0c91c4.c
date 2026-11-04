@@ -1,19 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_dc Arg0_dc;
-struct Object {
-    char unknown0[0xdc];
-    Arg0_dc *fdc;
-};
-struct Arg0_dc {
+#include "src/include/classes/TObjEneRe4Sorcerer.h"
+typedef struct TObjEneRe4Sorcerer_pdc TObjEneRe4Sorcerer_pdc;
+struct TObjEneRe4Sorcerer_pdc {
     char unknown0[0x4];
     float f04;
 };
-void TObjEneRe4Sorcerer_v94_8c0c91c4(Object *o)
+void TObjEneRe4Sorcerer_v94_8c0c91c4(TObjEneRe4Sorcerer *o)
 {
     o->fdc->f04 = 22.0f;
 }

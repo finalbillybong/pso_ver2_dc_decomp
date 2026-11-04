@@ -1,23 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_64 Arg0_64;
-typedef struct Arg0_f0 Arg0_f0;
+#include "src/include/classes/TObjEneRe7BeruraPunch.h"
+typedef struct TObjEneRe7BeruraPunch_p64 TObjEneRe7BeruraPunch_p64;
+typedef struct TObjEneRe7BeruraPunch_pf0 TObjEneRe7BeruraPunch_pf0;
 class Arg0_s130;
-struct Object {
-    char unknown0[0x64];
-    Arg0_64 *f64;
-    char unknown68[0x84];
-    int fec;
-    Arg0_f0 *ff0;
-    char unknownf4[0x10];
-    float f104;
-    char unknown108[0x24];
-    float f12c;
-};
 class Arg0_s130 {
 public:
     char unknown0[0x14];
@@ -44,7 +28,7 @@ extern "C" void njScale_8c37e2e4(int, float, float, float);
 extern "C" void operation_8c0d2028(int);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void call_8c391cc4(void);
-extern "C" void TObjEneRe7BeruraPunch_render_8c0f43d0(Object *o)
+extern "C" void TObjEneRe7BeruraPunch_render_8c0f43d0(TObjEneRe7BeruraPunch *o)
 {
     if (o->fec != 0) {
         operation_8c05b9f4((int)(((char *)o + 0x3c)), (int)(((char *)o + 0x120)), 0, 0);

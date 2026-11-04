@@ -1,23 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0xb8];
-    short ff0;
-    char unknownf2[0x218];
-    short f30a;
-    short f30c;
-    char unknown30e[0x82];
-    int f390;
-    char unknown394[0x10];
-    int f3a4;
-};
-void TObjEneMoja_v66_8c038e14(Object *o)
+#include "src/include/classes/TObjEneMoja.h"
+void TObjEneMoja_v66_8c038e14(TObjEneMoja *o)
 {
     if (o->f30a != 0 && o->f30a != 1 && o->f30a != 2) {
         o->f30c = 0;

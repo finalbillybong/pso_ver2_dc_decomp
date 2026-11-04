@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-};
-extern void call_8c059ea4(Object *, int);
-void TObjEneBm5Wolf_v71_8c060f74(Object *o)
+#include "src/include/classes/TObjEneBm5Wolf.h"
+extern void call_8c059ea4(TObjEneBm5Wolf *, int);
+void TObjEneBm5Wolf_v71_8c060f74(TObjEneBm5Wolf *o)
 {
     if (o->f30a != 0x10 && o->f30a != 0x11) {
         call_8c059ea4(o, 0x10);

@@ -1,25 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_dc Arg0_dc;
+#include "src/include/classes/TObjEneSaver.h"
+typedef struct TObjEneSaver_pdc TObjEneSaver_pdc;
 class Arg0_s3c0;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0xa4];
-    Arg0_dc *fdc;
-    char unknowne0[0x10];
-    short ff0;
-    char unknownf2[0x218];
-    short f30a;
-    short f30c;
-    char unknown30e[0x82];
-    int f390;
-};
-struct Arg0_dc {
+struct TObjEneSaver_pdc {
     char unknown0[0x18];
     int f18;
 };
@@ -39,7 +21,7 @@ public:
 typedef struct Arg0_s3c0Data {
 
 } Arg0_s3c0Data;
-extern "C" void TObjEneSaver_v66_8c0bd5e4(Object *o)
+extern "C" void TObjEneSaver_v66_8c0bd5e4(TObjEneSaver *o)
 {
     int t1;
     switch (o->f30a) {

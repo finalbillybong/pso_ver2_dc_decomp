@@ -1,44 +1,25 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_24 Arg0_24;
-typedef struct Arg0_28 Arg0_28;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    Arg0_24 *f24;
-    Arg0_28 *f28;
-    Vector3 f2c;
-    Vector3 f38;
-    int f44;
-    int f48;
-};
-struct Arg0_24 {
+#include "src/include/classes/TObjEneMe1Canadin_EffLine.h"
+typedef struct TObjEneMe1Canadin_EffLine_p24 TObjEneMe1Canadin_EffLine_p24;
+typedef struct TObjEneMe1Canadin_EffLine_p28 TObjEneMe1Canadin_EffLine_p28;
+struct TObjEneMe1Canadin_EffLine_p24 {
     Vector3 f00;
 };
-struct Arg0_28 {
+struct TObjEneMe1Canadin_EffLine_p28 {
     Vector3 f00;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c12b944(int);
-Object *TObjEneMe1Canadin_EffLine_ctor_8c0cb4d0(Object *o, int a1, int a2, int a3)
+TObjEneMe1Canadin_EffLine *TObjEneMe1Canadin_EffLine_ctor_8c0cb4d0(TObjEneMe1Canadin_EffLine *o, int a1, int a2, int a3)
 {
-    Object **home = &o;
+    TObjEneMe1Canadin_EffLine **home = &o;
     int t1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c266cb0;
     o->tag = (int)(*(int *)0x8c3068e8);
     o->size = 0x4c;
-    o->f24 = (Arg0_24 *)a2;
-    o->f28 = (Arg0_28 *)a3;
+    o->f24 = (TObjEneMe1Canadin_EffLine_p24 *)a2;
+    o->f28 = (TObjEneMe1Canadin_EffLine_p28 *)a3;
     o->f2c = o->f24->f00;
     o->f38 = o->f28->f00;
     o->f44 = -0xffcd;

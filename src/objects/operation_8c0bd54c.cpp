@@ -1,21 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObjEneSaver.h"
 class Arg0_s3c0;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0xb8];
-    short ff0;
-    char unknownf2[0x218];
-    short f30a;
-    short f30c;
-    char unknown30e[0x82];
-    int f390;
-};
 class Arg0_s3c0 {
 public:
     char unknown0[0x14];
@@ -30,7 +14,7 @@ typedef struct Arg0_s3c0Data {
 
 } Arg0_s3c0Data;
 extern "C" int operation_459d8(void *);
-extern "C" int TObjEneSaver_v48_8c0bd54c(Object *o)
+extern "C" int TObjEneSaver_v48_8c0bd54c(TObjEneSaver *o)
 {
     int t1;
     int t2;

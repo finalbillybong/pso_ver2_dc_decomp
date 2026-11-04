@@ -1,30 +1,16 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObjEneRe7BeruraPunch.h"
 typedef struct Arg2 Arg2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0xc8];
-    short fe8;
-};
 struct Arg2 {
     char unknown0[0x20];
     short f20;
 };
 extern int g_8c309ec8;
-extern void call_8c0f3458(Object *, int, Arg2 *, void *, int);
+extern void call_8c0f3458(TObjEneRe7BeruraPunch *, int, Arg2 *, void *, int);
 extern void initialize_object_8c0fbf7c(void *);
-extern void call_8c0f3a50(Object *);
-Object *TObjEneRe7BeruraPunch_ctor_8c0f39dc(Object *o, int a1, Arg2 *a2)
+extern void call_8c0f3a50(TObjEneRe7BeruraPunch *);
+TObjEneRe7BeruraPunch *TObjEneRe7BeruraPunch_ctor_8c0f39dc(TObjEneRe7BeruraPunch *o, int a1, Arg2 *a2)
 {
-    Object **home = &o;
+    TObjEneRe7BeruraPunch **home = &o;
     (void)home;
     call_8c0f3458(o, a1, a2, (void *)((void *)0x8c309e70), 2);
     o->dispatch = (void *)0x8c268820;

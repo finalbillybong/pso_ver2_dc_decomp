@@ -1,17 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObjEneDimedian.h"
 class Arg0_s3c4;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-    short f30c;
-    char unknown30e[0x9e];
-    int f3ac;
-};
 class Arg0_s3c4 {
 public:
     char unknown0[0x14];
@@ -25,10 +13,10 @@ public:
 typedef struct Arg0_s3c4Data {
 
 } Arg0_s3c4Data;
-extern "C" void call_8c01c5f0(Object *);
+extern "C" void call_8c01c5f0(TObjEneDimedian *);
 extern "C" void call_8c1085e4(void *);
 extern "C" void operation_8c0fbfe0(void *);
-extern "C" void TObjEneDimedian_v89_8c0e6898(Object *o)
+extern "C" void TObjEneDimedian_v89_8c0e6898(TObjEneDimedian *o)
 {
     int t1;
     call_8c01c5f0(o);

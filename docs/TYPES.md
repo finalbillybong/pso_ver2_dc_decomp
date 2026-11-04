@@ -56,6 +56,7 @@ A unit keeps its local type when its view differs from the header. The conflict 
 | pointer vs int | `Arg0_90 *f90` against `int f90` |
 | signedness | `unsigned char` against `char` |
 | member rename clash | the unit's name and the header's name differ, and another struct in the unit also uses one of them |
+| beyond size | a view running past the constructor's size field (`Vector3 f38` in a 0x40-byte object) |
 | `sizeof` of the local view | prefix views pinned with `check_prefix[sizeof(...)]` |
 | virtual signature | a slot called with unit-local parameter types (`Frame *`) |
 

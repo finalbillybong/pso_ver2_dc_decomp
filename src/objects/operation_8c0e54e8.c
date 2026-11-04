@@ -1,25 +1,16 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjEneBeast.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct Arg0_3c4 Arg0_3c4;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 struct Arg0_3c4 {
     char unknown0[0x4];
     short f04;
 };
-extern void call_8c012630(Object *);
+extern void call_8c012630(TObjEneBeast *);
 extern void operation_8c052124(void *);
 extern void destroy_field_8c178048(void *, short);
 extern void destroy_object_8c0e3814(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TObjEneBeast_dtor_8c0e54e8(Object *o, int a1)
+extern void call_8c122774(void *, TObjEneBeast *);
+TObjEneBeast *TObjEneBeast_dtor_8c0e54e8(TObjEneBeast *o, int a1)
 {
     int v2;
     int v1;

@@ -1,26 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0xb8];
-    short ff0;
-    char unknownf2[0xc4];
-    unsigned short f1b6;
-    char unknown1b8[0x152];
-    short f30a;
-    char unknown30c[0x84];
-    short f390;
-};
+#include "src/include/classes/TObjEneLappy.h"
 extern int lookup_low_id(int);
 extern float squared_distance_xyz(void *, void *);
 extern void operation_8c0519c8(void *);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void TObjEneLappy_v70_8c0511bc(Object *o)
+void TObjEneLappy_v70_8c0511bc(TObjEneLappy *o)
 {
     int t1;
     float t2;

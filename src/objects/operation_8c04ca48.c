@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjGrass.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct Arg0_3e8 Arg0_3e8;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 struct Arg0_3e8 {
     char unknown0[0x4];
     short f04;
@@ -17,8 +8,8 @@ struct Arg0_3e8 {
 extern void operation_8c052124(void *);
 extern void destroy_field_8c114790(void *, short);
 extern void TObjEnemy_dtor_8c0120f4(void *, int);
-extern void call_8c122774(void *, Object *);
-Object *TObjGrass_dtor_8c04ca48(Object *o, int a1)
+extern void call_8c122774(void *, TObjGrass *);
+TObjGrass *TObjGrass_dtor_8c04ca48(TObjGrass *o, int a1)
 {
     int v2;
     int v1;

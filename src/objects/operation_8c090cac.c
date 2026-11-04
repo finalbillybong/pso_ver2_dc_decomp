@@ -1,17 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjEneMe1Canadin.h"
 typedef struct S_g8c469e10 S_g8c469e10;
 typedef struct S_g8c469e10_42c S_g8c469e10_42c;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x28];
-    int f28;
-    char unknown2c[0xc];
-    int f38;
-};
 struct S_g8c469e10 {
     char unknown0[0x42c];
     S_g8c469e10_42c *f42c;
@@ -23,7 +12,7 @@ struct S_g8c469e10_42c {
     int f1c;
 };
 extern S_g8c469e10 *g_8c469e10;
-void TObjEneMe1Canadin_v111_8c090cac(Object *o)
+void TObjEneMe1Canadin_v111_8c090cac(TObjEneMe1Canadin *o)
 {
     o->f38 = (int)(g_8c469e10->f42c->f08);
     o->f28 = (int)(g_8c469e10->f42c->f1c);

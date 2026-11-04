@@ -1,50 +1,26 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjEneSaver.h"
 typedef struct Frame Frame;
 typedef struct S_g8c46f3a4 S_g8c46f3a4;
 typedef struct S_g8c46f3a4_0 S_g8c46f3a4_0;
 typedef struct S_g8c46f3ac S_g8c46f3ac;
-typedef struct Object Object;
-typedef struct Arg0_334 Arg0_334;
-typedef struct Arg0_dc Arg0_dc;
+typedef struct TObjEneSaver_p334 TObjEneSaver_p334;
+typedef struct TObjEneSaver_pdc TObjEneSaver_pdc;
 typedef struct Block_frame_0 {
     float f00;
     char unknown4[0x4];
     float f08;
 } Block_frame_0;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0xa4];
-    Arg0_dc *fdc;
-    char unknowne0[0x8];
-    int fe8;
-    char unknownec[0x4];
-    short ff0;
-    char unknownf2[0x16];
-    float f108;
-    char unknown10c[0x1fe];
-    short f30a;
-    short f30c;
-    char unknown30e[0x26];
-    Arg0_334 *f334;
-    char unknown338[0x60];
-    short f398;
-};
 struct Frame {
     Block_frame_0 f00;
 };
-struct Arg0_334 {
+struct TObjEneSaver_p334 {
     char unknown0[0x324];
     Vector3 f324;
 };
 struct S_g8c46f3ac {
     float f00;
 };
-struct Arg0_dc {
+struct TObjEneSaver_pdc {
     char unknown0[0x18];
     int f18;
 };
@@ -52,8 +28,8 @@ extern S_g8c46f3a4 *g_8c46f3a4;
 extern S_g8c46f3ac *g_8c46f3ac;
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern float call_8c130334(float, float);
-extern void call_8c0121a0(Object *, int, void *, int);
-void TObjEneSaver_v68_8c0bdf2c(Object *o)
+extern void call_8c0121a0(TObjEneSaver *, int, void *, int);
+void TObjEneSaver_v68_8c0bdf2c(TObjEneSaver *o)
 {
     Frame frame;
     float t1;

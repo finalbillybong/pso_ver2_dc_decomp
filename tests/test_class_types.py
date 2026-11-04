@@ -143,6 +143,16 @@ class MergeTests(unittest.TestCase):
         self.assertIn('0x70', why)
 
 
+class SizeTests(unittest.TestCase):
+    def test_view_past_the_object_size_is_dropped(self):
+        small = {'TFoo': dict(name='TFoo', parent=None, size=0x100, slots=3)}
+        a, _ = evidence(C_UNIT, 'TFoo_v17_8c000000', 'TFoo', uid='a')     # f108 lies past 0x100
+        lay = ct.resolve(small, [a], 'TFoo')
+        self.assertNotIn(0x108, [f['offset'] for f in lay['fields']])
+        self.assertIn((0x108, 'beyond-size'), [(c['offset'], c['kind']) for c in lay['conflicts']])
+        self.assertFalse(ct.compatible(a, lay, {})[0])
+
+
 class RenameTests(unittest.TestCase):
     classes = MergeTests.classes
 

@@ -1,23 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_dc Arg0_dc;
-struct Object {
-    char unknown0[0x40];
-    float f40;
-    char unknown44[0x98];
-    Arg0_dc *fdc;
-    char unknowne0[0x248];
-    float f328;
-};
-struct Arg0_dc {
+#include "src/include/classes/TObjEneRe7Berura.h"
+typedef struct TObjEneRe7Berura_pdc TObjEneRe7Berura_pdc;
+struct TObjEneRe7Berura_pdc {
     char unknown0[0x4];
     float f04;
 };
-void TObjEneRe7Berura_v94_8c0d1c9c(Object *o)
+void TObjEneRe7Berura_v94_8c0d1c9c(TObjEneRe7Berura *o)
 {
     o->fdc->f04 = o->f328 - o->f40;
 }

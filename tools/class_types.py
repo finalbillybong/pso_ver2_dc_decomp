@@ -612,6 +612,12 @@ def resolve(classes, evidence, name):
         else:
             fname = pick_name(names[offset])
         fields.append(dict(offset=offset, size=key[0], type=key[1], kind=key[2], dims=list(key[3]), units=ids, name=fname))
+    size = classes.get(name, {}).get('size')
+    if size:
+        # A view that runs past the constructor's size field cannot be the object's own field.
+        for f in [f for f in fields if f['offset'] + f['size'] > size]:
+            conflicts.append(dict(offset=f['offset'], kind='beyond-size', chosen='', other=f['type'], units=f['units']))
+            fields.remove(f)
     vslots, vconf = {}, []
     for index, sigs in sorted(slots.items()):
         portable = Counter({s: c for s, c in sigs.items() if portable_signature(s)})

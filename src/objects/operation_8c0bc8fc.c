@@ -1,18 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjEneSaver.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_3bc Arg0_3bc;
+typedef struct TObjEneSaver_p3bc TObjEneSaver_p3bc;
 typedef struct Arg0_3dc Arg0_3dc;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x3a0];
-    Arg0_3bc *f3bc;
-};
 struct Arg0_3dc {
     char unknown0[0x4];
     short f04;
@@ -21,8 +10,8 @@ extern void mark_effect_for_release(void *);
 extern void operation_8c052124(void *);
 extern void destroy_field_8c0fbfa4(void *, short);
 extern void TObjEnemy_dtor_8c0120f4(void *, int);
-extern void call_8c122774(void *, Object *);
-Object *TObjEneSaver_dtor_8c0bc8fc(Object *o, int a1)
+extern void call_8c122774(void *, TObjEneSaver *);
+TObjEneSaver *TObjEneSaver_dtor_8c0bc8fc(TObjEneSaver *o, int a1)
 {
     int v2;
     int v1;

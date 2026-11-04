@@ -1,144 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjEneBm5Wolf.h"
 typedef struct Frame Frame;
 typedef struct S_frame_0 S_frame_0;
 typedef struct S_frame_8 S_frame_8;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_400 Arg0_400;
-typedef struct Arg0_64 Arg0_64;
-class Object;
-class Object {
-public:
-    char unknown0[0x18];
-    virtual void v0();
-    virtual void v1();
-    virtual void v2();
-    virtual void v3();
-    virtual void v4();
-    virtual void v5();
-    virtual void v6();
-    virtual void v7();
-    virtual void v8();
-    virtual void v9();
-    virtual void v10();
-    virtual int v11(float, float);
-    virtual int v12(float, float, float);
-    virtual void v13();
-    virtual void v14();
-    virtual void v15();
-    virtual void v16();
-    virtual void v17();
-    virtual void v18();
-    virtual void v19();
-    virtual void v20();
-    virtual void v21();
-    virtual void v22();
-    virtual void v23();
-    virtual void v24();
-    virtual void v25();
-    virtual void v26();
-    virtual void v27();
-    virtual void v28();
-    virtual void v29();
-    virtual void v30();
-    virtual void v31();
-    virtual void v32();
-    virtual void v33();
-    virtual void v34();
-    virtual void v35();
-    virtual void v36();
-    virtual void v37();
-    virtual void v38();
-    virtual void v39();
-    virtual void v40();
-    virtual void v41();
-    virtual void v42();
-    virtual void v43();
-    virtual void v44();
-    virtual void v45();
-    virtual void v46();
-    virtual void v47();
-    virtual void v48();
-    virtual void v49();
-    virtual void v50();
-    virtual void v51();
-    virtual void v52();
-    virtual void v53();
-    virtual void v54();
-    virtual void v55();
-    virtual void v56();
-    virtual void v57();
-    virtual void v58();
-    virtual void v59();
-    virtual void v60();
-    virtual void v61();
-    virtual void v62();
-    virtual void v63();
-    virtual void v64();
-    virtual void v65();
-    virtual void v66();
-    virtual void v67();
-    virtual void v68();
-    virtual void v69();
-    virtual void v70();
-    virtual void v71();
-    virtual void v72();
-    virtual void v73();
-    virtual void v74();
-    virtual void v75();
-    virtual void v76();
-    virtual void v77();
-    virtual void v78();
-    virtual void v79();
-    virtual void v80();
-    virtual void v81();
-    virtual void v82();
-    virtual void v83();
-    virtual void v84();
-    virtual void v85();
-    virtual void v86();
-    virtual void v87();
-    virtual void v88();
-    virtual void v89();
-    virtual void v90();
-    virtual void v91();
-    virtual void v92();
-    virtual void v93();
-    virtual void v94();
-    virtual void v95();
-    virtual void v96();
-    virtual void v97();
-    virtual void v98();
-    virtual void v99();
-    virtual void v100();
-    virtual void v101();
-    virtual void v102();
-    virtual void v103();
-    virtual void v104();
-    virtual void v105();
-    virtual void v106();
-    virtual void v107();
-    virtual void v108();
-    virtual void v109();
-    virtual void v110();
-    virtual void v111();
-};
-typedef struct ObjectData {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-    char unknown2c[0x38];
-    Arg0_64 *f64;
-    char unknown68[0x2a2];
-    short f30a;
-    char unknown30c[0xf4];
-    Arg0_400 *f400;
-    char unknown404[0x20];
-    int f424;
-    float f428;
-} ObjectData;
+typedef struct TObjEneBm5Wolf_p28 TObjEneBm5Wolf_p28;
+typedef struct TObjEneBm5Wolf_p400 TObjEneBm5Wolf_p400;
+typedef struct TObjEneBm5Wolf_p64 TObjEneBm5Wolf_p64;
 struct Frame {
     S_frame_0 *f00;
     char unknown4[0x4];
@@ -160,7 +26,7 @@ extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void njScale_8c37e2e4(int, float, float, float);
 extern "C" void call_8c11a920(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void call_8c05b9dc(Object *);
+extern "C" void call_8c05b9dc(TObjEneBm5Wolf *);
 extern "C" void call_8c3827d8(void *);
 extern "C" int call_8c18e768(void *, int);
 extern "C" void set_transform_node_callback(void *);
@@ -168,9 +34,9 @@ extern "C" void operation_8c05baa8(void);
 extern "C" void call_8c1086fc(void);
 extern "C" void operation_8c01cc90(void *);
 extern "C" void operation_8c01cd20(void *);
-extern "C" void call_8c05b9e8(Object *);
+extern "C" void call_8c05b9e8(TObjEneBm5Wolf *);
 extern "C" void call_8c391cc4(void);
-extern "C" void TObjEneBm5Wolf_render_8c064a4c(Object *o)
+extern "C" void TObjEneBm5Wolf_render_8c064a4c(TObjEneBm5Wolf *o)
 {
     Frame frame;
     int v1;
@@ -184,9 +50,9 @@ extern "C" void TObjEneBm5Wolf_render_8c064a4c(Object *o)
         o->v111();
         return;
     }
-    switch (((ObjectData *)o)->f424 & 2) {
+    switch (o->f424 & 2) {
     case 0:
-        if (((ObjectData *)o)->f30a == 0x11) {
+        if (o->f30a == 0x11) {
             return;
         }
         t2 = operation_8c05bae8();
@@ -203,14 +69,14 @@ extern "C" void TObjEneBm5Wolf_render_8c064a4c(Object *o)
         }
         if (v1 == 0) {
         } else {
-            if (((ObjectData *)o)->f30a != 0x10) {
+            if (o->f30a != 0x10) {
                 call_8c0c5094((void *)(((char *)o + 0x170)), (Frame *)((&frame)), (void *)(&(&frame)->f08));
                 njPushMatrixEx_8c38ae68();
                 translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
                 njTranslate_8c3829bc(0, 0.0f, 0.3f, 0.0f);
                 njRotateZ_8c37e02c(0, (void *)((&frame)->f08));
                 njRotateX_8c37dd28(0, (void *)((&frame)->f00));
-                njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+                njRotateY_8c37df90(0, (void *)(o->f64));
                 njTranslate_8c3829bc(0, 0.0f, 0.0f, -10.0f);
                 njScale_8c37e2e4(0, 1.2f, 1.0f, 3.0f);
                 njRotateX_8c37dd28(0, (void *)-0x4000);
@@ -218,16 +84,16 @@ extern "C" void TObjEneBm5Wolf_render_8c064a4c(Object *o)
                 njPopMatrixEx_8c38ad10();
             }
             call_8c05b9dc(o);
-            call_8c3827d8((void *)(((ObjectData *)o)->f28));
+            call_8c3827d8((void *)(o->f28));
             njPushMatrixEx_8c38ae68();
             translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-            njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+            njRotateY_8c37df90(0, (void *)(o->f64));
             njTranslate_8c3829bc(0, 0.0f, 0.0f, -10.0f);
-            if (((((ObjectData *)o)->f424 & 4)) != 0) {
-                njTranslate_8c3829bc(0, 0.0f, ((ObjectData *)o)->f428, 0.0f);
+            if (((o->f424 & 4)) != 0) {
+                njTranslate_8c3829bc(0, 0.0f, o->f428, 0.0f);
             }
             g_8c4688a8 = 0;
-            t4 = call_8c18e768((void *)(((ObjectData *)o)->f400), 2);
+            t4 = call_8c18e768((void *)(o->f400), 2);
             g_8c4688ac = -t4;
             set_transform_node_callback((void *)((void *)0x8c064a14));
             operation_8c05baa8();

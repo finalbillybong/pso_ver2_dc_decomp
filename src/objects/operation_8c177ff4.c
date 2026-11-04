@@ -1,16 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xf0];
-    short ff0;
-    char unknownf2[0x218];
-    short f30a;
-};
-void TObjNpcBringer_v94_8c177ff4(Object *o)
+#include "src/include/classes/TObjNpcBringer.h"
+void TObjNpcBringer_v94_8c177ff4(TObjNpcBringer *o)
 {
     if (o->f30a != 2) {
         o->ff0 = 0;

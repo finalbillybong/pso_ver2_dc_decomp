@@ -1,25 +1,9 @@
-typedef struct Actor {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[2];
-    short size;
-    char unknown20[0x14];
-    int flags;
-    char unknown38[0x284];
-    int mode_flags;
-    char unknown2c0[0xe4];
-    unsigned int status;
-    char unknown3a8[4];
-    char state[0x28];
-    int counter;
-    float speed;
-} Actor;
-extern void TObjEnemyCustom_ctor_8c0c2354(Actor *);
+#include "src/include/classes/TObjEneBalClaw.h"
+extern void TObjEnemyCustom_ctor_8c0c2354(TObjEneBalClaw *);
 extern void initialize_state_8c0fbf7c(void *);
-Actor *TObjEneBalClaw_ctor_8c11dbd0(Actor *o)
+TObjEneBalClaw *TObjEneBalClaw_ctor_8c11dbd0(TObjEneBalClaw *o)
 {
-    Actor **self = &o;
+    TObjEneBalClaw **self = &o;
     (void)self;
     TObjEnemyCustom_ctor_8c0c2354(o);
     o->dispatch = (void *)0x8c26a220;

@@ -1,12 +1,6 @@
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x358];
-    int f390;
-};
+#include "src/include/classes/TObjEnePanarms.h"
 extern void play_se_8c05fbf8(int, void *, int, int);
-void TObjEnePanarms_v70_8c11bb2c(Object *o)
+void TObjEnePanarms_v70_8c11bb2c(TObjEnePanarms *o)
 {
     switch (o->f390) {
     case 1:

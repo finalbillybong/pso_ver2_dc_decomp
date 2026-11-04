@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x3e4];
-    int f3e4;
-};
+#include "src/include/classes/TObjEneRe4Sorcerer.h"
 extern int capture_current_contact(void *);
-int TObjEneRe4Sorcerer_v108_8c0c921c(Object *o)
+int TObjEneRe4Sorcerer_v108_8c0c921c(TObjEneRe4Sorcerer *o)
 {
     int t1;
     t1 = capture_current_contact((void *)o);

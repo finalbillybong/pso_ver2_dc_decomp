@@ -1,20 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xf8];
-    float ff8;
-    char unknownfc[0x294];
-    int f390;
-    int f394;
-};
-extern void call_8c0fbafc(Object *);
-extern void call_8c0fbc48(Object *, int, void *, float);
+#include "src/include/classes/TObjEneSlimeTailAttack.h"
+extern void call_8c0fbafc(TObjEneSlimeTailAttack *);
+extern void call_8c0fbc48(TObjEneSlimeTailAttack *, int, void *, float);
 extern void operation_8c0fbdf0(int);
-void TObjEneSlimeTailAttack_render_8c0fba40(Object *o)
+void TObjEneSlimeTailAttack_render_8c0fba40(TObjEneSlimeTailAttack *o)
 {
     float v9;
     float pm1;

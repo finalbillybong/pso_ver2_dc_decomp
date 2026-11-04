@@ -1,25 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x198];
-    short f198;
-    char unknown19a[0x170];
-    short f30a;
-    char unknown30c[0x24];
-    short f330;
-    char unknown332[0x28];
-    short f35a;
-    char unknown35c[0x80];
-    int f3dc;
-};
+#include "src/include/classes/TObjEneRe7Berura.h"
 extern int call_8c18e768(int, int);
 extern void reset_segments_8c05a124(void *);
 extern void operation_8c059ea4(void *, int);
-void TObjEneRe7Berura_v70_8c0d1bd4(Object *o)
+void TObjEneRe7Berura_v70_8c0d1bd4(TObjEneRe7Berura *o)
 {
     int t1;
     if (((o->f3dc & 4)) == 0) {
