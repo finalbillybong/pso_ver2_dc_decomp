@@ -1,8 +1,6 @@
 /* Static data 8c2e9d28-8c2ea8b8: record_table objects, in address order. */
 
-typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2e9d28;
-typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2ea138;
-typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2ea4e8;
+typedef struct { int type; const void *factory; float unknown_08; int unknown_0c; } DatConstructorEntry;
 
 extern void TObjPlayerSet_ctor_8c08a420(void);
 extern void TObjParticle_create_8c0804a8(void);
@@ -85,7 +83,7 @@ extern void TOHangerMachine01_ctor_8c1c6f50(void);
 extern void TOTrapAncient02R_create_8c14d6d4(void);
 extern void TOMonumentAncient02_create_8c0f1b60(void);
 
-const Record_8c2e9d28 d_8c2e9d28[65] = {
+const DatConstructorEntry dat_object_ctor_table_8c2e9d28[65] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
     { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
     { 4, (void *)TObjLight_create_8c0ed844, 84100.0f, 0 },
@@ -153,7 +151,7 @@ const Record_8c2e9d28 d_8c2e9d28[65] = {
     { 65535, 0, 250000.0f, 0 }
 };
 
-const Record_8c2ea138 d_8c2ea138[59] = {
+const DatConstructorEntry dat_object_ctor_table_8c2ea138[59] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
     { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
     { 4, (void *)TObjLight_create_8c0ed844, 84100.0f, 0 },
@@ -215,7 +213,7 @@ const Record_8c2ea138 d_8c2ea138[59] = {
     { 65535, 0, 250000.0f, 0 }
 };
 
-const Record_8c2ea4e8 d_8c2ea4e8[61] = {
+const DatConstructorEntry dat_object_ctor_table_8c2ea4e8[61] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
     { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
     { 4, (void *)TObjLight_create_8c0ed844, 84100.0f, 0 },

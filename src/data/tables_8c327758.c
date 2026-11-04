@@ -19,7 +19,7 @@ extern const char str_8c327cf8[];
 extern const char str_8c327cff[];
 extern const char str_8c327d06[];
 extern const char str_8c327d0e[];
-extern const char g_8c327d13[];
+extern const char str_8c327d13[];
 
 const Record_8c327758 d_8c327758[17] = {
     { str_8c327cae, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -38,7 +38,7 @@ const Record_8c327758 d_8c327758[17] = {
     { str_8c327cff, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
     { str_8c327d06, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
     { str_8c327d0e, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-    { g_8c327d13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+    { str_8c327d13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
 };
 
 const Record_8c327a44 d_8c327a44[5] = {

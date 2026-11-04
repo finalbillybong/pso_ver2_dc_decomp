@@ -23,7 +23,7 @@ extern const char str_8c33921b[];
 extern const char str_8c339220[];
 extern const char str_8c339228[];
 extern const char str_8c33922f[];
-extern const char g_8c339238[];
+extern const char str_8c339238[];
 
 const void *const d_8c2e1db8[30] = {
     str_8c3391d8,
@@ -54,6 +54,6 @@ const void *const d_8c2e1db8[30] = {
     d_8c339158,
     str_8c33922f,
     d_8c3390d0,
-    g_8c339238,
+    str_8c339238,
     d_8c3390d0
 };

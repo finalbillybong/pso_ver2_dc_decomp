@@ -1,6 +1,6 @@
 /* Static data 8c2ed3dc-8c2ed874: record_table objects, in address order. */
 
-typedef struct { short f0; short f1; const void *f2; } Record_8c2ed3dc;
+typedef struct { unsigned short subcommand; unsigned short flags; const void *handler; } SubcommandHandler;
 
 extern void handle_6x3E_stop_moving_8c1e92f8(void);
 extern void handle_6x40_walk_8c1e9988(void);
@@ -149,7 +149,7 @@ extern const char handle_6x30_change_player_level_8c024e5c[];
 extern const char handle_6x04_activate_switch_by_token_8c036e8c[];
 extern const char handle_6x76_set_entity_set_flags_8c09eb50[];
 
-const Record_8c2ed3dc d_8c2ed3dc[147] = {
+const SubcommandHandler subcommand_handler_table_8c2ed3dc[147] = {
     { 62, 7, (void *)handle_6x3E_stop_moving_8c1e92f8 },
     { 64, 7, (void *)handle_6x40_walk_8c1e9988 },
     { 66, 7, (void *)handle_6x42_run_8c1ea1e8 },

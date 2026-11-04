@@ -2,7 +2,7 @@
 
 extern const char str_8c2e20dc[];
 
-const int d_8c2e20b8[8] = {
+const int g_vmu_drive_ids_8c2e20b8[8] = {
     0, 1, 2, 3, 4, 5, 6, 7
 };
 

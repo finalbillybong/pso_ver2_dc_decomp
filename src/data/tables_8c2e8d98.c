@@ -1,9 +1,6 @@
 /* Static data 8c2e8d98-8c2e9d28: record_table objects, in address order. */
 
-typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2e8d98;
-typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2e9158;
-typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2e9528;
-typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2e98b8;
+typedef struct { int type; const void *factory; float unknown_08; int unknown_0c; } DatConstructorEntry;
 
 extern void TObjPlayerSet_ctor_8c08a420(void);
 extern void TObjParticle_create_8c0804a8(void);
@@ -93,7 +90,7 @@ extern void TORockCaveSM02_create_8c1ced4c(void);
 extern void TORockCaveSL02_create_8c1ceed8(void);
 extern void TORockCaveBL02_create_8c1cf7c0(void);
 
-const Record_8c2e8d98 d_8c2e8d98[60] = {
+const DatConstructorEntry dat_object_ctor_table_8c2e8d98[60] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
     { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
     { 6, (void *)TObjEnvSound_create_8c100dd0, 250000.0f, 0 },
@@ -156,7 +153,7 @@ const Record_8c2e8d98 d_8c2e8d98[60] = {
     { 65535, 0, 250000.0f, 0 }
 };
 
-const Record_8c2e9158 d_8c2e9158[61] = {
+const DatConstructorEntry dat_object_ctor_table_8c2e9158[61] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
     { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
     { 6, (void *)TObjEnvSound_create_8c100dd0, 250000.0f, 0 },
@@ -220,7 +217,7 @@ const Record_8c2e9158 d_8c2e9158[61] = {
     { 65535, 0, 250000.0f, 0 }
 };
 
-const Record_8c2e9528 d_8c2e9528[57] = {
+const DatConstructorEntry dat_object_ctor_table_8c2e9528[57] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
     { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
     { 4, (void *)TObjLight_create_8c0ed844, 84100.0f, 0 },
@@ -280,7 +277,7 @@ const Record_8c2e9528 d_8c2e9528[57] = {
     { 65535, 0, 250000.0f, 0 }
 };
 
-const Record_8c2e98b8 d_8c2e98b8[71] = {
+const DatConstructorEntry dat_object_ctor_table_8c2e98b8[71] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
     { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
     { 4, (void *)TObjLight_create_8c0ed844, 84100.0f, 0 },

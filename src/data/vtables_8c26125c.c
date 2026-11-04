@@ -157,7 +157,7 @@ VirtualFunction const vt_8c261294[17] = {
 };
 
 /* 8c2612d8: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c2612d8[16] = {
+VirtualFunction const TObjectShared_vtable_8c2612d8[16] = {
     0,
     0,
     destroy_shared_object,

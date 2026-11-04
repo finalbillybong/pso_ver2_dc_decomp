@@ -81,7 +81,7 @@ VirtualFunction const vt_8c261564[7] = {
 };
 
 /* 8c261580: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c261580[7] = {
+VirtualFunction const TObject_vtable_8c261580[7] = {
     0,
     0,
     TObject_dtor_8c03311c,

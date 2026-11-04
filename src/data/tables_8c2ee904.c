@@ -577,7 +577,7 @@ Function const d_8c2eee54[20] = {
     0
 };
 
-const void *const d_8c2eeea4[18] = {
+const void *const g_area_enemy_asset_tables_8c2eeea4[18] = {
     d_8c2ee904,
     d_8c2eea44,
     d_8c2eea84,

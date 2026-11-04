@@ -10,15 +10,17 @@ range. Only typed definitions are accepted:
 * `vtable`: an array of `VirtualFunction` whose entries are `0` or named, declared
   functions. A pointer-valued slot written as an integer is rejected.
 * `string`: a `char` array initialized only by C string literals.
+* `string_table`: a two-dimensional `char` array of fixed-width rows, each row one C string
+  literal shorter than the row width (the rest of the row is zero).
 * `function_table`: a `Function const` array of `0` or declared functions.
 * `pointer_table`: `const void *const` entries that are `0`, `(void *)function` or a
   declared data object.
 * `float_table`, `int_table`, `int16_table`, `byte_table`: arrays of `float`,
   `int`/`unsigned int`, `short`/`unsigned short`, `signed char`/`unsigned char`
   with plain literals.
-* `record_table`: an array of a `Record_<addr>` struct whose fields are `const void *`,
-  `float`, `int`, `unsigned int`, `short` or `unsigned short` (no padding); pointer
-  fields follow the pointer rule.
+* `record_table`: an array of a struct type (`Record_<addr>` or a descriptive name) whose
+  fields are `const void *`, `float`, `int`, `unsigned int`, `short` or `unsigned short`
+  (no padding), named `f0`..`fN` or descriptively; pointer fields follow the pointer rule.
 
 Pointers may also name `fn_<addr>` (a code entry point) or `g_<addr>` (reference-backed
 data or RAM outside the image); `check_external_symbols` requires those names to be
@@ -43,13 +45,16 @@ import matching
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = 'config/data.json'
-KINDS = {'vtable', 'string', 'function_table', 'pointer_table', 'float_table', 'int_table',
+KINDS = {'vtable', 'string', 'string_table', 'function_table', 'pointer_table', 'float_table', 'int_table',
          'int16_table', 'byte_table', 'record_table'}
 POINTER_KINDS = {'vtable', 'function_table', 'pointer_table'}
 ALIGNMENT = {'vtable': 4, 'function_table': 4, 'pointer_table': 4, 'float_table': 4, 'int_table': 4,
-             'record_table': 4, 'int16_table': 2, 'byte_table': 1, 'string': 1}
+             'record_table': 4, 'int16_table': 2, 'byte_table': 1, 'string': 1, 'string_table': 1}
 IDENT = r'[A-Za-z_][A-Za-z_0-9]*'
 R_SH_DIR32 = 1
+C_KEYWORDS = set('''auto break case char const continue default do double else enum extern float for goto
+if inline int long register restrict return short signed sizeof static struct switch typedef union unsigned
+void volatile while VirtualFunction Function'''.split())
 
 
 def read(root=ROOT):
@@ -206,6 +211,19 @@ def _float_bits(text):
     return struct.unpack('<I', struct.pack('<f', float(text[:-1])))[0]
 
 
+def _literal_length(literal):
+    """Number of chars a single C string literal encodes (without the terminator)."""
+    body, n, i = literal[1:-1], 0, 0
+    while i < len(body):
+        if body[i] == '\\':
+            m = re.match(r'\\(?:[0-7]{1,3}|.)', body[i:])
+            i += len(m[0])
+        else:
+            i += 1
+        n += 1
+    return n
+
+
 def lint(text, unit, info=None):
     """Reject anything except the typed forms. Returns the names that must be bound as
     symbols (declared functions and declared data not defined here). When `info` is a
@@ -231,15 +249,18 @@ def lint(text, unit, info=None):
     for s in statements(text):
         if s in ('typedef void (*VirtualFunction)(void)', 'typedef void (*Function)(void)'):
             continue
-        m = re.fullmatch(r'typedef struct \{ (.*) \} (Record_[0-9a-f]{8})', s)
+        m = re.fullmatch(r'typedef struct \{ (.*) \} (' + IDENT + ')', s)
         if m:
+            if m[2] in C_KEYWORDS or m[2] in records:
+                raise ValueError('Invalid or duplicate record type name: ' + m[2])
             fields = [f.strip() for f in m[1].rstrip(';').split(';')]
-            kinds = []
+            kinds, field_names = [], set()
             for i, f in enumerate(fields):
-                fm = re.fullmatch(r'(const void \*|float |int |unsigned int |short |unsigned short )f' + str(i), f)
-                if not fm:
-                    raise ValueError('Record fields must be f0..fN of const void *, float, int, unsigned int,'
-                                     ' short or unsigned short')
+                fm = re.fullmatch(r'(const void \*|float |int |unsigned int |short |unsigned short )(' + IDENT + ')', f)
+                if not fm or fm[2] in C_KEYWORDS or fm[2] in field_names:
+                    raise ValueError('Record fields must be distinct names of const void *, float, int,'
+                                     ' unsigned int, short or unsigned short')
+                field_names.add(fm[2])
                 kinds.append(FIELD_TYPES[fm[1].strip() if fm[1] != 'const void *' else fm[1]])
             offsets, padded = record_layout(kinds)
             if padded != offsets[-1] + FIELD_SIZE[kinds[-1]]:
@@ -252,16 +273,29 @@ def lint(text, unit, info=None):
         if m:
             functions.add(m[1])
             continue
-        m = re.fullmatch(r'extern (VirtualFunction const|Function const|const char|const void \*const|const Record_[0-9a-f]{8}|'
-                         + '|'.join(re.escape(k) for k in SCALARS) + r') (' + IDENT + r')\[\]', s)
+        m = re.fullmatch(r'extern (VirtualFunction const|Function const|const char|const void \*const|'
+                         + '|'.join(re.escape(k) for k in SCALARS) + r'|const ' + IDENT + r') (' + IDENT + r')\[\]', s)
         if m:
-            if m[1].startswith('const Record_') and m[1][6:] not in records:
+            if (m[1] not in ('VirtualFunction const', 'Function const', 'const char', 'const void *const')
+                    and m[1] not in SCALARS and m[1][6:] not in records):
                 raise ValueError('Undeclared record type: ' + m[1])
             data_decls[m[2]] = m[1]
             continue
-        m = re.fullmatch(r'(VirtualFunction const|Function const|const void \*const|const Record_[0-9a-f]{8}|'
-                         + '|'.join(re.escape(k) for k in SCALARS) + r') (' + IDENT + r')\[(\d+)\] = \{(.*)\}', s)
+        m = re.fullmatch(r'const char (' + IDENT + r')\[(\d+)\]\[(\d+)\] = \{(.*)\}', s)
         if m:
+            name, count, width, entries = m[1], int(m[2]), int(m[3]), _split(m[4])
+            if len(entries) != count or not width:
+                raise ValueError('Initializer count differs from the array size: ' + name)
+            for e in entries:
+                if not re.fullmatch(STRING_LITERAL, e) or _literal_length(e) >= width:
+                    raise ValueError('String table rows must be one literal shorter than the row: ' + name)
+            defined.append((name, ('string_table',), count * width))
+            info[name] = {'stride': 1, 'pointers': set(), 'words': []}
+            continue
+        m = re.fullmatch(r'(VirtualFunction const|Function const|const void \*const|'
+                         + '|'.join(re.escape(k) for k in SCALARS) + r'|const ' + IDENT + r') (' + IDENT + r')\[(\d+)\] = \{(.*)\}', s)
+        if m and (m[1] in ('VirtualFunction const', 'Function const', 'const void *const') or m[1] in SCALARS
+                  or m[1][6:] in records):
             ctype, name, count, entries = m[1], m[2], int(m[3]), _split(m[4])
             if len(entries) != count:
                 raise ValueError('Initializer count differs from the array size: ' + name)
@@ -276,10 +310,8 @@ def lint(text, unit, info=None):
                 for e in entries:
                     pointer(e, False)
                 kind, size, stride, pointers = ('pointer_table',), 4 * count, 4, {0}
-            elif ctype.startswith('const Record_'):
-                fields = records.get(ctype[6:])
-                if fields is None:
-                    raise ValueError('Undeclared record type: ' + ctype)
+            elif ctype not in SCALARS:
+                fields = records[ctype[6:]]
                 for e in entries:
                     rm = re.fullmatch(r'\{(.*)\}', e)
                     values = _split(rm[1]) if rm else []

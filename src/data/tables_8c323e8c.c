@@ -15,7 +15,7 @@ extern const char g_8c323fbe[];
 extern const char str_8c323fbf[];
 extern const char str_8c323fd0[];
 
-const void *const d_8c323e8c[18] = {
+const void *const g_area_gsl_table_8c323e8c[18] = {
     str_8c323f08,
     str_8c323f15,
     str_8c323f26,

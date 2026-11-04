@@ -1113,7 +1113,7 @@ Function const d_8c2ed1a8[42] = {
     0
 };
 
-const void *const d_8c2ed250[20] = {
+const void *const g_area_object_asset_tables_8c2ed250[20] = {
     d_8c2ec520,
     d_8c2ec580,
     d_8c2ec680,

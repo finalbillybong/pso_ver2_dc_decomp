@@ -304,5 +304,60 @@ class ZeroRunTests(unittest.TestCase):
         self.assertNotIn('zero_table', static_data.KINDS)
 
 
+class NamedRecordAndStringTableTests(unittest.TestCase):
+    RECORDS = """typedef struct { int this_offset; int vtable_index; const void *function; } Handler;
+
+extern void handle_one(void);
+
+const Handler handlers_00008000[2] = {
+    { 0, -1, (void *)handle_one },
+    { 0, -1, 0 }
+};
+"""
+    TABLE = """const char words_00009000[3][6] = {
+    "abc",
+    "x\\?y",
+    ""
+};
+"""
+
+    def unit(self, name, kind, size, address, text):
+        return {'id': 'u', 'source': 'src/data/u.c', 'address': address,
+                'objects': [{'name': name, 'kind': kind, 'size': size, 'address': address}], 'text': text}
+
+    def test_named_record_types_and_fields(self):
+        info = {}
+        unit = self.unit('handlers_00008000', 'record_table', 24, '0x8000', self.RECORDS)
+        self.assertEqual(static_data.lint(self.RECORDS, unit, info), {'handle_one'})
+        self.assertEqual((info['handlers_00008000']['stride'], info['handlers_00008000']['pointers']), (12, {8}))
+        for old, new in [('int vtable_index;', 'int this_offset;'),           # duplicate field name
+                         ('int vtable_index;', 'int int;'),                   # keyword field name
+                         ('} Handler;', '} float;'),                          # keyword type name
+                         ('const Handler handlers', 'const Other handlers'),  # undeclared type
+                         ('(void *)handle_one', '0x1100'),                    # pointer field as integer
+                         ('const void *function;', 'char function;')]:        # unsupported field type
+            with self.subTest(change=new), self.assertRaises(ValueError):
+                static_data.lint(self.RECORDS.replace(old, new), unit)
+        dup = self.RECORDS.replace('extern void', 'typedef struct { int a; } Handler;\nextern void', 1)
+        with self.assertRaises(ValueError):
+            static_data.lint(dup, unit)
+
+    def test_string_table_rows_are_literals_shorter_than_the_row(self):
+        unit = self.unit('words_00009000', 'string_table', 18, '0x9000', self.TABLE)
+        info = {}
+        self.assertEqual(static_data.lint(self.TABLE, unit, info), set())
+        self.assertEqual(info['words_00009000'], {'stride': 1, 'pointers': set(), 'words': []})
+        self.assertEqual(static_data._literal_length(r'"x\\?y\101\n"'), 6)
+        for old, new in [('"abc"', '"abcdef"'),              # no room for the terminator
+                         ('"abc"', '{ 97, 98, 99 }'),        # bytes, not a literal
+                         ('"abc"', '"a" "bc"'),              # one literal per row
+                         ('[3][6]', '[4][6]'),               # row count differs
+                         ('[3][6]', '[3][7]')]:              # size differs from the manifest
+            with self.subTest(change=new), self.assertRaises(ValueError):
+                static_data.lint(self.TABLE.replace(old, new), unit)
+        self.assertEqual(static_data.ALIGNMENT['string_table'], 1)
+        self.assertIn('string_table', static_data.KINDS)
+
+
 if __name__ == '__main__':
     unittest.main()

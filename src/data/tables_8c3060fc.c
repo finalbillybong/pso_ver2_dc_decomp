@@ -39,7 +39,7 @@ extern const char str_8c30656b[];
 extern const char str_8c30657d[];
 extern const char str_8c30658f[];
 extern const char str_8c3065a1[];
-extern const char g_8c3065b3[];
+extern const char str_8c3065b3[];
 
 const void *const d_8c3060fc[40] = {
     str_8c3063f5,
@@ -81,5 +81,5 @@ const void *const d_8c3060fc[40] = {
     str_8c30657d,
     str_8c30658f,
     str_8c3065a1,
-    g_8c3065b3
+    str_8c3065b3
 };

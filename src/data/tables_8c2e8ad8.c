@@ -1,6 +1,6 @@
 /* Static data 8c2e8ad8-8c2e8d98: record_table objects, in address order. */
 
-typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2e8ad8;
+typedef struct { int type; const void *factory; float unknown_08; int unknown_0c; } DatConstructorEntry;
 
 extern void TObjPlayerSet_ctor_8c08a420(void);
 extern void TObjParticle_create_8c0804a8(void);
@@ -46,7 +46,7 @@ extern void TObjCityMainWarpChallenge_create_8c0341a8(void);
 extern void TOSwitchTimer_ctor_8c25afe0(void);
 extern void TOChatSensor_create_8c25d8b8(void);
 
-const Record_8c2e8ad8 d_8c2e8ad8[44] = {
+const DatConstructorEntry dat_object_ctor_table_8c2e8ad8[44] = {
     { 0, (void *)TObjPlayerSet_ctor_8c08a420, 250000.0f, 0 },
     { 1, (void *)TObjParticle_create_8c0804a8, 40000.0f, 0 },
     { 2, (void *)TObjAreaWarpForest_create_8c033fcc, 250000.0f, 0 },

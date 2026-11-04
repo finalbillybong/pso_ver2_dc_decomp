@@ -1,6 +1,6 @@
 /* Static data 8c2edfc8-8c2ee218: record_table objects, in address order. */
 
-typedef struct { int f0; const void *f1; float f2; int f3; } Record_8c2edfc8;
+typedef struct { int type; const void *factory; float unknown_08; int unknown_0c; } DatConstructorEntry;
 
 extern void TObjNpcFemaleBase_ctor_8c123fb8(void);
 extern void TObjNpcFemaleChild_ctor_8c12416c(void);
@@ -39,7 +39,7 @@ extern void TObjNpcHFW01_create_8c1c4f94(void);
 extern void TObjNpcNFM01_ctor_8c1c4c00(void);
 extern void TObjNpcNFW01_ctor_8c1c4a40(void);
 
-const Record_8c2edfc8 d_8c2edfc8[37] = {
+const DatConstructorEntry dat_enemy_ctor_table_8c2edfc8[37] = {
     { 1, (void *)TObjNpcFemaleBase_ctor_8c123fb8, 250000.0f, 0 },
     { 2, (void *)TObjNpcFemaleChild_ctor_8c12416c, 250000.0f, 0 },
     { 3, (void *)TObjNpcFemaleDwarf_ctor_8c124320, 250000.0f, 0 },

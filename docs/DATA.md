@@ -12,13 +12,14 @@ Only typed source counts:
 | --- | --- | --- |
 | `vtable` | `VirtualFunction const vt_<addr>[N] = { 0, 0, name, ... };` | Header words are the CodeWarrior type-information pointer and this-adjustment (both zero in this build). Every other entry is `0` or a declared function. |
 | `string` | `const char str_<addr>[N] = "...";` | Only C string literals, one object per string. CodeWarrior gives char arrays byte alignment and a section each, so back-to-back strings are separate objects; the terminator and any zero padding come from the array size. |
+| `string_table` | `const char name[N][W] = { "...", "...", "" };` | Fixed-width rows: each row is one string literal shorter than `W`; the rest of the row is zero. |
 | `function_table` | `Function const d_<addr>[N] = { name, 0, ... };` | Entries are `0` or declared functions. |
 | `pointer_table` | `const void *const d_<addr>[N] = { str_..., (void *)name, d_..., 0 };` | Entries are `0`, a declared function cast to `void *`, a declared data object (`vt_`, `str_` or `d_`) at its start, or an external `g_<addr>` (see below). |
 | `float_table` | `const float d_<addr>[N] = { 1.5f, -0.0f, ... };` | Decimal literals with enough digits to round-trip to the exact bits. NaN, infinity and denormals are not accepted. |
 | `int_table` | `const int` or `const unsigned int d_<addr>[N]` | Integer literals within the element type's range. |
 | `int16_table` | `const short` or `const unsigned short d_<addr>[N]` | As above. |
 | `byte_table` | `const unsigned char` or `const signed char d_<addr>[N]` | Small-integer tables only (see below). |
-| `record_table` | `const Record_<addr> d_<addr>[N] = { { ... }, ... };` with `typedef struct { const void *f0; float f1; int f2; ... } Record_<addr>;` | Fields are `const void *`, `float`, `int`, `unsigned int`, `short` or `unsigned short`, laid out without padding; every record has every field; pointer fields follow the pointer-table rule. |
+| `record_table` | `const Record_<addr> d_<addr>[N] = { { ... }, ... };` with `typedef struct { const void *f0; float f1; int f2; ... } Record_<addr>;`, or a descriptive type such as `typedef struct { const void *decode_args; const void *handler; } QuestOpcode;` | Fields are `const void *`, `float`, `int`, `unsigned int`, `short` or `unsigned short`, laid out without padding; every record has every field; pointer fields follow the pointer-table rule. Field names are `f0`..`fN` or distinct descriptive names (see *Named game tables*); names never change bytes. |
 
 **No integer or float word may equal a known symbol address.** That covers admitted
 functions, data objects and every bound symbol; such a word must be written as a
@@ -42,7 +43,9 @@ point. Acceptable evidence is one of:
 When such a function is admitted, its slot can be renamed to the manifest name
 without changing any bytes.
 
-All 1,119 virtual tables in the image are reconstructed (125,976 bytes).
+All 1,118 virtual tables in the image are reconstructed (125,556 bytes). The
+35-entry game-mode table at `8c2e3258`, which the static-data map had filed as a
+virtual table, is a record table of `{init, frame, exit}` functions.
 
 ### Strings
 
@@ -57,7 +60,28 @@ stay reference-backed (587 bytes):
   likely halfword tables.
 
 The last string before a code range keeps only its terminator, so code alignment
-is not claimed as data. Shift-JIS text is not included yet.
+is not claimed as data.
+
+Tranche 6 added 315 strings (5,250 bytes) that lay inside untyped extracts, outside
+the game code and virtual-table regions (below `8c284000`), including 44 Shift-JIS
+strings (login errors, NPC voice-line labels, battle-mode messages). A string is kept
+only when:
+
+* every byte is printable ASCII, tab, newline, carriage return or a valid Shift-JIS
+  double-byte character (lead bytes `81`–`84`, `88`–`9f`, `e0`–`ea`); a Shift-JIS string
+  needs at least two such characters, an ASCII one a word or format specifier and
+  mostly letters;
+* no 4-byte-aligned word inside it is a pointer (`8c000000`–`8d000000`) or a round
+  float such as `0x3f666666` (`"fff?"` = 0.9f), and short strings are not repetitive;
+* it belongs to a run of strings that touches an edge of the extract, or a run of at
+  least three, or its start address is stored as a pointer somewhere. One or two
+  unreferenced strings between numbers are name fields of records (for example the
+  technique names `FOIE`, `BARTA` at `8c304820`) and stay reference-backed;
+* a lone string has at least five characters.
+
+Zero padding up to the next 4-byte boundary belongs to the string; longer zero runs
+stay reference-backed. The chat word-filter list at `8c3348b0` (258 rows of 20
+characters; the filter at `8c2069b4` steps by 20) is a `string_table`.
 
 Raw byte, halfword or word arrays, opaque or high-entropy data (including the
 embedded file at `8c28ad54`), and pointers written as integers earn no credit and
@@ -117,6 +141,23 @@ bytes above `0x7f` (excluded by decision), columns mixing floats and integers or
 pointers and integers, embedded text, NaN/infinity or denormal floats, and partial
 trailing records.
 
+### Named game tables
+
+Some tables have real names and field names where the evidence supports them
+(names from `config/names.json` in the `<name>_<addr>` form `tools/rename.py` uses;
+evidence in [SYSTEMS.md](SYSTEMS.md)). Unknown fields are named by offset
+(`unknown_08`). Names never change bytes.
+
+| Object | Type | Evidence |
+| --- | --- | --- |
+| `g_quest_opcode_table_8c317ba8` | `QuestOpcode { decode_args, handler }[512]` | Opcodes 0x00–0xFF then 0xF800–0xF8FF; handlers match newserv QuestScript.cc. |
+| `game_command_handler_table_8c2e7624` | `GameCommandHandler { this_offset, vtable_index, function }[61]` | CodeWarrior pointer-to-member records `{0, -1, handler}` loaded by `dispatch_game_command` (`0x8c02d368`); handlers match newserv handler tables. `config/names.json` gives `0x8c2e7628`, the second word of the first record. |
+| `subcommand_handler_table_8c2ed3dc` | `SubcommandHandler { subcommand, flags, handler }[147]` | Subcommand numbers and lobby/Pioneer 2/field flags match newserv. |
+| `dat_object_ctor_table_<addr>`, `dat_enemy_ctor_table_<addr>` and their `..._list_8c2ebec8` / `..._list_8c2ee8b8` | `DatConstructorEntry { type, factory, unknown_08, unknown_0c }` | Per-area DAT type → factory tables ending with type `0xFFFF`; types and factories match newserv. `unknown_08` is a float (250000.0 or 2.25e6, perhaps a squared range). A table the map had typed as four entries per record is now one entry per record. |
+| `g_game_mode_table_8c2e3258` | `GameMode { init, frame, exit }[35]` | Indexed by `g_game_mode_state` in `game_main`. |
+| `g_login_server_table_8c2e2f24` | `LoginServer { host0, port0, host1, port1 }[3]` | Host strings and ports 9200/9201. |
+| `g_area_object_asset_tables_8c2ed250`, `g_area_enemy_asset_tables_8c2eeea4`, `g_area_gsl_table_8c323e8c`, `g_se_bank_table_8c2fc788`, `g_vmu_drive_ids_8c2e20b8`, `TObject_vtable_8c261580`, `TObjectShared_vtable_8c2612d8` | unchanged | Renamed only. |
+
 ### External pointer targets (`g_<addr>`)
 
 A pointer whose target is still reference-backed data, or RAM outside the image
@@ -131,6 +172,7 @@ the same convention code modules use for data. `tools/data.py`
 
 When the target is later emitted as typed data, it is renamed to that object. Tranche 5
 renamed 17 such references in 7 earlier modules; their bytes are unchanged.
+Tranche 6 renamed 73 more `g_` references to the strings and tables it typed.
 Every pointer-valued word still goes through a relocation.
 
 Vtable trailing zero words after the last nonzero slot are not evidently part of
@@ -165,7 +207,7 @@ recovered section size.
 data module, after all code modules:
 
 1. `tools/data.py` lint: the source contains only the `VirtualFunction`/`Function`
-   and `Record_<addr>` typedefs, `extern void name(void);` and `extern <type> name[];`
+   and record typedefs, `extern void name(void);` and `extern <type> name[];`
    declarations, and the typed definitions above, in manifest order and size. No
    preprocessor directives, character constants or other statements.
 2. Compile with the pinned compiler and flags; the relocatable object may contain

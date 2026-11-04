@@ -14,16 +14,16 @@ Other releases are not currently supported.
 
 **12304 exact matching functions in 11373 modules**, replacing **1,277,418 bytes** of the
 4,162,912-byte decoded executable (**30.6857% code-range coverage**). Function ranges
-include their literals and padding. **493,028 bytes of typed static data** (virtual
-tables, strings and typed tables, 44.8153% of the estimated static-data extent) are rebuilt from
-source as well, for **42.5290% image coverage**. **0 bytes still come from
+include their literals and padding. **504,218 bytes of typed static data** (virtual
+tables, strings and typed tables, 45.8325% of the estimated static-data extent) are rebuilt from
+source as well, for **42.7978% image coverage**. **0 bytes still come from
 the original reference**, and 380,185 bytes of embedded assets are extracted
 from your own dump at build time (not counted as reconstructed). See [typed static data](docs/DATA.md).
 
 **Assembly is not decompiled code and is never committed** ([ASM.md](docs/ASM.md)): 88 hand-written SH-4
-routines (32,738 bytes) and 4,908 not-decompiled fallback units (1,778,854 bytes) are
-generated locally from your own dump at build time. With them 95.1361% of the image
-builds from source; the remaining 202,481 bytes (untyped data, and code-side bytes that
+routines (32,738 bytes) and 4,908 not-decompiled fallback units (1,777,170 bytes) are
+generated locally from your own dump at build time. With them 95.4075% of the image
+builds from source; the remaining 191,183 bytes (untyped data, and code-side bytes that
 no reference proves to be code) are taken from your dump as dump extracts
 ([DATA.md](docs/DATA.md)), so the source-only build succeeds with your dump.
 

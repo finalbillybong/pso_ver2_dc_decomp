@@ -16,7 +16,7 @@ extern const char str_8c2fc916[];
 extern const char str_8c2fc924[];
 extern const char str_8c2fc932[];
 
-const void *const d_8c2fc788[16] = {
+const void *const g_se_bank_table_8c2fc788[16] = {
     str_8c2fc867,
     str_8c2fc873,
     str_8c2fc882,

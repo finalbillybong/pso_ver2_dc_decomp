@@ -44,7 +44,7 @@ extern void fn_8c2836cc(void);
 extern void operation_8c281ec8(void);
 extern void fn_8c283d44(void);
 extern void fn_8c340848(void);
-extern const int d_8c2e20b8[];
+extern const int g_vmu_drive_ids_8c2e20b8[];
 
 Function const d_8c28460c[43] = {
     operation_8c281e6c,
@@ -93,7 +93,7 @@ Function const d_8c28460c[43] = {
 };
 
 const void *const d_8c2846b8[2] = {
-    d_8c2e20b8,
+    g_vmu_drive_ids_8c2e20b8,
     (void *)fn_8c340848
 };
 
