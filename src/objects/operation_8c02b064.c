@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x2];
-    short f02;
-};
+#include "src/include/types/SubcommandPacket.h"
 extern int g_8c418248;
 extern int g_8c4627c8;
 extern void call_8c02b0c8(int);
-void handle_6x7A_enable_stealth_suit_effect_8c02b064(Object *o)
+void handle_6x7A_enable_stealth_suit_effect_8c02b064(SubcommandPacket *o)
 {
     int v1;
     unsigned short v2;
@@ -20,7 +11,7 @@ void handle_6x7A_enable_stealth_suit_effect_8c02b064(Object *o)
     int v11;
     int v14;
     v1 = (int)g_8c4627c8;
-    v2 = (unsigned short)o->f02;
+    v2 = (unsigned short)o->entity_id;
     v7 = (int)0;
     if (v1 == 0) {
         if ((unsigned short)v2 == g_8c418248) {

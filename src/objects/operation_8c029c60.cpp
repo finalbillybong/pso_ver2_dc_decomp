@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/types/SubcommandPacket.h"
 class S_vv7;
-struct Object {
-    char unknown0[0x2];
-    short f02;
-};
 class S_vv7 {
 public:
     char unknown0[0x18];
@@ -76,18 +67,18 @@ public:
 typedef struct S_vv7Data {
 
 } S_vv7Data;
-extern "C" void handle_6x0E_clear_all_negative_status_effects_8c029c60(Object *o)
+extern "C" void handle_6x0E_clear_all_negative_status_effects_8c029c60(SubcommandPacket *o)
 {
     int v1;
     int v4;
     S_vv7 *v7;
-    if ((unsigned short)o->f02 == 0xffff) {
+    if ((unsigned short)o->entity_id == 0xffff) {
         v7 = (S_vv7 *)0;
     } else {
-        if ((int)(unsigned short)o->f02 >= 0xc) {
+        if ((int)(unsigned short)o->entity_id >= 0xc) {
             v4 = (int)0;
         } else {
-            v1 = (int)*(int *)((char *)0x8c41ce2c + ((unsigned short)o->f02 << 2));
+            v1 = (int)*(int *)((char *)0x8c41ce2c + ((unsigned short)o->entity_id << 2));
             v4 = (int)v1;
         }
         v7 = (S_vv7 *)v4;

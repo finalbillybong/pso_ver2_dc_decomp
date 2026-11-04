@@ -160,6 +160,12 @@ conflict, and every converted unit must be byte-exact. A record has no vtable an
 size. When two offsets carry the same unit name, the later one gets its offset as a suffix
 (`phase_b8`).
 
+A registry entry can give evidenced field names (`"names": {"0x2": "entity_id"}`), and these
+win over the units' mechanical names. `SubcommandPacket` covers only the common 6x header: the
+handlers that read nothing beyond the entity id at +2 use it, and handlers that read a payload
+keep their local views. `convert --loose` also tries a signedness difference against the header,
+and keeps the unit only if it compiles exactly. The unsigned `entity_id` readers did not.
+
 A layout assertion that includes the local view's `sizeof` keeps its offset terms. Only the
 size term goes, and the compile checks the offset terms against the header.
 

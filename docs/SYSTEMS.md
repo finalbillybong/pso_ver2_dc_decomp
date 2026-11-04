@@ -155,7 +155,7 @@ At the SDK level, startup runs `startup_8c340848` → section init `init_section
 ## Player (high)
 
 - `TObjPlayer`: vtable `0x8c261318` (87 slots), size `0xc7c`, three constructors (`0x8c01e920`, `0x8c01ef50`,
-  `0x8c01f4f0`) and destructor `0x8c01fa18`. Player-state subcommands are dispatched to:
+  `0x8c01f4f0`) and destructor `0x8c01fa18`. The player-state subcommand handlers are listed below. Each takes the 6x subcommand packet as its first argument, not the player, and finds the player through the entity id at +2 (`src/include/types/SubcommandPacket.h`):
   - movement: 6x3E stop, 6x3F/6x20 set position, 6x40 walk, 6x42 run;
   - attacks: 6x43–6x46;
   - techniques: 6x47/6x48;
@@ -273,8 +273,9 @@ behaviour (slots 5+) is not yet named. Their constructors and update/render slot
     `0x8c02dac4`, `64` join game is `0x8c02e098`, `13`/`A7` quest/download file writes are
     `0x8c02e224`/`0x8c02e1ec`, and `B2` execute code is `0x8c02fcf4`.
 - **Subcommand table** `0x8c2ed3dc`: 147 records `{u16 cmd, u16 flags, u32 handler}`, ending with
-  `6x00`. The flags (1 = lobby, 2 = Pioneer 2, 4 = field) match newserv. Handlers are spread through
-  the game code next to the systems they drive:
+  `6x00`. The flags (1 = lobby, 2 = Pioneer 2, 4 = field) match newserv. Each handler takes the
+  subcommand packet as its first argument (`SubcommandPacket`: u16 entity id at +2, passed to
+  `lookup_low_id`). Handlers are spread through the game code next to the systems they drive:
   - movement and attacks: `6x3E`–`6x4F` at `0x8c1e92f8`–`0x8c1efad8`;
   - item pickup and drops: `6x59`–`6x63` at `0x8c0739a0`, `0x8c194e48`, …;
   - bosses: `6x10`–`6x19`;

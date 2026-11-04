@@ -1,19 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x2];
-    short f02;
-};
+#include "src/include/types/SubcommandPacket.h"
 extern int g_8c418248;
 extern int g_8c4627c8;
 extern int lookup_low_id(int);
 extern int call_8c02a6d4(int);
 extern void operation_8c1e8e60(int, int, int);
-void handle_6x53_8c1f0260(Object *o)
+void handle_6x53_8c1f0260(SubcommandPacket *o)
 {
     int v1;
     unsigned short v2;
@@ -23,7 +14,7 @@ void handle_6x53_8c1f0260(Object *o)
     int t1;
     int t2;
     v1 = (int)g_8c4627c8;
-    v2 = (unsigned short)o->f02;
+    v2 = (unsigned short)o->entity_id;
     v7 = (int)0;
     if (v1 == 0) {
         v4 = (int)0;

@@ -645,6 +645,8 @@ def resolve(classes, evidence, name):
                 continue
         if name == ROOT_CLASS and offset in ROOT_NAMES and not any(i.startswith('header:') for i in ids):
             fname = ROOT_NAMES[offset]
+        elif name in RECORDS and '0x%x' % offset in RECORDS[name].get('names', {}) and not any(i.startswith('header:') for i in ids):
+            fname = RECORDS[name]['names']['0x%x' % offset]   # an evidenced name from the registry
         elif key[2] == 'vptr':
             fname = c_vptr_names.most_common(1)[0][0] if c_vptr_names else 'vtable'
         else:
@@ -842,7 +844,11 @@ def compatible(ev, layout_, renames=None, extras=None):
                 continue
             return False, where + 'vptr view ' + f['type'] + ' ' + f['name'], tags
         loose = extras is not None and extras.get('loose') is not None
-        if loose and {f['kind'], h['kind']} & {'pointer'} and ({f['kind'], h['kind']} - {'pointer'}) <= set(INT_KINDS) \
+        if loose and f['kind'] != h['kind'] and f['size'] == h['size'] and not f.get('dims') and not h['dims'] \
+                and {f['kind'], h['kind']} in ({'signed 1', 'unsigned 1'}, {'signed 2', 'unsigned 2'}, {'signed 4', 'unsigned 4'}):
+            # Signedness: try the header's type; only an exact compile admits it.
+            extras['loose'].append(f['offset'])
+        elif loose and {f['kind'], h['kind']} & {'pointer'} and ({f['kind'], h['kind']} - {'pointer'}) <= set(INT_KINDS) \
                 and f['kind'] != h['kind']:
             # Pointer against int: try the header's type; only an exact compile admits it.
             extras['loose'].append(f['offset'])
@@ -1206,7 +1212,7 @@ def cmd_convert(args):
             if res['vtable']:
                 notes += ', vtable via TOBJECT_VTABLE'
             if res['loose']:
-                notes += ', pointer/int at ' + ','.join('0x%x' % o for o in res['loose'])
+                notes += ', loose type at ' + ','.join('0x%x' % o for o in res['loose'])
             results.append((ev['id'], n, 'converted, -%d lines%s' % (res['removed'], notes)))
             if args.write:
                 (ROOT / unit['source']).write_text(res['text'])

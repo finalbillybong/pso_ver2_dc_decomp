@@ -296,6 +296,21 @@ class RecordTypeTests(unittest.TestCase):
         finally:
             del ct.RECORDS['RFoo']
 
+    def test_registry_names_and_loose_signedness(self):
+        ct.RECORDS['RFoo'] = {'evidence': 'test', 'units': [], 'names': {'0x108': 'entity_id'}}
+        try:
+            classes = {'RFoo': dict(name='RFoo', parent=None, size=None, slots=0, record=True)}
+            a, _ = evidence(C_UNIT, 'TFoo_v17_8c000000', 'RFoo', uid='a')
+            lay = ct.resolve(classes, [a], 'RFoo')
+            self.assertEqual({f['offset']: f['name'] for f in lay['fields']}[0x108], 'entity_id')
+            u, _ = evidence(C_UNIT.replace('int f108', 'unsigned int f108'), 'TFoo_v17_8c000000', 'RFoo', uid='u')
+            self.assertFalse(ct.compatible(u, lay, {}, {})[0])
+            extras = {'loose': []}
+            self.assertTrue(ct.compatible(u, lay, {}, extras)[0])
+            self.assertEqual(extras['loose'], [0x108])
+        finally:
+            del ct.RECORDS['RFoo']
+
 
 class RenameTests(unittest.TestCase):
     classes = MergeTests.classes

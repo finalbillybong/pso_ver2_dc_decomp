@@ -1,21 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/types/SubcommandPacket.h"
 typedef struct S_vv11 S_vv11;
-struct Object {
-    char unknown0[0x2];
-    short f02;
-};
 struct S_vv11 {
     char unknown0[0x350];
     int f350;
 };
 extern int g_8c418248;
 extern int g_8c4627c8;
-void handle_6x2D_release_hold_8c0268d0(Object *o)
+void handle_6x2D_release_hold_8c0268d0(SubcommandPacket *o)
 {
     int v1;
     unsigned short v2;
@@ -26,7 +17,7 @@ void handle_6x2D_release_hold_8c0268d0(Object *o)
     int v8;
     S_vv11 *v11;
     v1 = (int)g_8c4627c8;
-    v2 = (unsigned short)o->f02;
+    v2 = (unsigned short)o->entity_id;
     v4 = (int)0;
     if (v1 == 0) {
         v4 = (int)0;

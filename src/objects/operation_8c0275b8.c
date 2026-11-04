@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x2];
-    short f02;
-};
+#include "src/include/types/SubcommandPacket.h"
 extern int g_8c418248;
 extern void call_8c184a20(int, short);
 extern void call_8c184cf8(int);
-void handle_6x36_8c0275b8(Object *o)
+void handle_6x36_8c0275b8(SubcommandPacket *o)
 {
     int v1;
     int v4;
@@ -26,7 +17,7 @@ void handle_6x36_8c0275b8(Object *o)
         }
     }
     if (v4 != 0) {
-        call_8c184a20((int)(v4 + 0x418), o->f02);
+        call_8c184a20((int)(v4 + 0x418), o->entity_id);
         call_8c184cf8((int)(v4 + 0x418));
     }
 }

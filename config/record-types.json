@@ -28,6 +28,38 @@
     "update_selection_record_view"
    ]
   },
+  "SubcommandPacket": {
+   "evidence": "the 6x subcommand packet, first argument of the handlers in subcommand_handler_table_8c2ed3dc (src/data/tables_8c2ed3dc.c); the u16 at +2 is the entity id the handlers pass to lookup_low_id (0xffff = none, below 0xc a client slot); only handlers that read nothing past this header use it",
+   "names": {
+    "0x2": "entity_id"
+   },
+   "units": [
+    "operation_8c0268d0",
+    "operation_8c0275b8",
+    "operation_8c0278d4",
+    "operation_8c029c60",
+    "operation_8c02a80c",
+    "operation_8c02a8f0",
+    "operation_8c02abb4",
+    "operation_8c02ac94",
+    "operation_8c02b064",
+    "operation_8c02b13c",
+    "operation_8c02ba5c",
+    "operation_8c02bb28",
+    "operation_8c03b40c",
+    "operation_8c06722c",
+    "operation_8c06728c",
+    "operation_8c0672fc",
+    "operation_8c144cd4",
+    "operation_8c144cfc",
+    "operation_8c1850c0",
+    "operation_8c1eddd8",
+    "operation_8c1efad8",
+    "operation_8c1f0260",
+    "operation_8c1f100c",
+    "operation_8c20aef4"
+   ]
+  },
   "TimerRecord": {
    "evidence": "the timer record of advance_timer_8c25bf48 (ticks at +0x24, kind at +0x38); units pass it to each other as their first argument",
    "layout_units": [

@@ -1,22 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x2];
-    short f02;
-};
+#include "src/include/types/SubcommandPacket.h"
 extern int call_8c012a14(short);
-extern void call_8c144d40(int, Object *);
-void handle_6x14_de_rol_le_boss_actions_8c144cfc(Object *o)
+extern void call_8c144d40(int, SubcommandPacket *);
+void handle_6x14_de_rol_le_boss_actions_8c144cfc(SubcommandPacket *o)
 {
     int t1;
     /* TODO 00000000..00000000
      * 00000000 walker stopped: instruction missing at the range end (data in the listing)
      */
-    t1 = call_8c012a14(o->f02);
+    t1 = call_8c012a14(o->entity_id);
     if (t1 != 0) {
         call_8c144d40(t1, o);
     }
