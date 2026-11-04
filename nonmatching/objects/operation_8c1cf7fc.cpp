@@ -6,7 +6,7 @@
  * compiled size: 316 bytes (-1.2%)
  * differing lines: 54 of 115 reference instruction lines
  * differing bytes: 215
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -4 bytes
@@ -75,17 +75,17 @@ extern int g_8c3294d8;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4e2e60 *g_8c4e2e60;
 extern "C" char g_8c329410[];
-extern "C" void operation_8c051eb8(void *, void *);
-extern "C" void copy_actor_records(void *, void *, int);
-extern "C" void transform_actor_records(void *);
-extern "C" void attach_and_insert_object(void *);
+extern "C" void operation_8c051eb8(Object *, void *);
+extern "C" void copy_actor_records(Object *, void *, int);
+extern "C" void transform_actor_records(Object *);
+extern "C" void attach_and_insert_object(Object *);
 extern "C" Object *operation_8c1cf7fc(Object *o, int a1)
 {
     Object **home = &o;
     (void)home;
     {
         Object *base = o;
-        operation_8c051eb8((void *)base, g_8c44be98);
+        operation_8c051eb8(base, g_8c44be98);
         *(void **)((char *)base + 0x18) = (void *)(void *)0x8c276d18;
         ((ObjectData *)base)->tag = (int)(g_8c329494);
         ((ObjectData *)base)->size = 0xec;
@@ -104,9 +104,9 @@ extern "C" Object *operation_8c1cf7fc(Object *o, int a1)
     ((ObjectData *)o)->f38 = (Arg0_38 *)g_8c4e2e60->f42c->f08;
     ((ObjectData *)o)->f28 = (int)(g_8c4e2e60->f42c->f0c);
     ((ObjectData *)o)->fe8 = ((ObjectData *)o)->f38->f04->f14;
-    copy_actor_records((void *)o, (void *)((g_8c329410 + 0x58)), 1);
-    transform_actor_records((void *)o);
-    attach_and_insert_object((void *)o);
+    copy_actor_records(o, (g_8c329410 + 0x58), 1);
+    transform_actor_records(o);
+    attach_and_insert_object(o);
     ((ObjectData *)o)->ff0 = (int)(((ObjectData *)o)->f88);
     {
         Object *base = o;

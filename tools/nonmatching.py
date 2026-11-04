@@ -43,7 +43,10 @@ BANNED = [
     (re.compile(r'\(\s*([A-Za-z_]\w*)\s*>=\s*0\s*\?\s*\1\s*:\s*\1\s*\)'), '(v >= 0 ? v : v)'),
 ]
 TODO = re.compile(r'/\*\s*TODO')
+OPTIONAL = ['class header']  # present only when the draft's class has a shared header
 HEADER_LINE = re.compile(r'^ \* ([a-z ]+): (.*)$')
+CLASSES = 'src/include/classes'
+CLASS_NOTE = '(shared layout for modders; this draft keeps its own local types)'
 DEFAULT_CONFIDENCE = 'high,medium'
 DEFAULT_SETS = 'curated,extended'
 LONGEST = 0x10000
@@ -63,7 +66,7 @@ def parse_header(text):
     fields, key = {}, None
     for line in text[:end].split('\n')[1:]:
         m = HEADER_LINE.match(line)
-        if m and m.group(1) in FIELDS:
+        if m and m.group(1) in FIELDS + OPTIONAL:
             key = m.group(1)
             fields[key] = m.group(2).strip()
         elif key and line.startswith(' *   '):
@@ -186,8 +189,15 @@ def check(root=ROOT):
         if e.get('function') not in ids:
             problems.append(where + 'function %s is not defined in the file' % e.get('function'))
         for sym in e.get('symbols', {}):
-            if sym not in ids:
+            if sym not in ids and not sym.startswith('_'):  # `_name`: runtime helper the compiler calls implicitly
                 problems.append(where + 'bound symbol %s does not appear in the file' % sym)
+        expected = class_header(root, e.get('function', ''))
+        found = (fields.get('class header') or '').split(' ')[0] or None
+        if found != expected or e.get('class_header') != expected:
+            problems.append(where + 'class header should be %s (header %s, manifest %s); run regenerate'
+                            % (expected, found, e.get('class_header')))
+        if found and not (root / found).is_file():
+            problems.append(where + 'class header %s does not exist' % found)
         problems.extend(where + p for p in quality_issues(text, e))
         hit = overlap(spans, starts, int(addr, 16), e.get('reference_size') or 1)
         if hit:
@@ -212,6 +222,29 @@ def wanted_names(root, confidence, sets):
             if rename.IDENT.fullmatch(f.get('name', '')):
                 out[hex(int(f['address'], 16))] = f['name']
     return out
+
+
+def class_header(root, func, _cache={}):
+    """The shared class header for a function named `<Class>_<member>_<address>`, or None."""
+    d = root / CLASSES
+    key = (str(root), d.stat().st_mtime_ns if d.is_dir() else None)
+    if key not in _cache:
+        _cache[key] = sorted((p.stem for p in d.glob('*.h')), key=len, reverse=True) if d.is_dir() else []
+    for c in _cache[key]:
+        if func.startswith(c + '_'):
+            return '%s/%s.h' % (CLASSES, c)
+    return None
+
+
+def set_class_header(text, header):
+    """Add, update or remove the `class header:` line of an archived draft's header."""
+    end = text.find('*/')
+    head, rest = text[:end], text[end:]
+    lines = [l for l in head.split('\n') if not l.startswith(' * class header:')]
+    if header:
+        at = next((i for i, l in enumerate(lines) if l.startswith(' * compiler:')), len(lines) - 1)
+        lines.insert(at, ' * class header: %s %s' % (header, CLASS_NOTE))
+    return '\n'.join(lines) + rest
 
 
 def default_name(address):
@@ -263,6 +296,11 @@ def regenerate(root=ROOT, confidence=DEFAULT_CONFIDENCE, sets=DEFAULT_SETS, prun
             changes.append('%s: renamed %s' % (rel, ', '.join('%s -> %s' % kv for kv in sorted(mapping.items()))))
         func = mapping.get(func, func)
         symbols = {mapping.get(s, s): a for s, a in symbols.items()}
+        header = class_header(root, func)
+        updated = set_class_header(text, header)
+        if updated != text:
+            changes.append('%s: class header %s' % (rel, header or 'removed'))
+            text = updated
         new_rel = str(Path(rel).with_name(func + path.suffix))
         if new_rel != rel:
             changes.append('%s: moved to %s' % (rel, new_rel))
@@ -273,7 +311,8 @@ def regenerate(root=ROOT, confidence=DEFAULT_CONFIDENCE, sets=DEFAULT_SETS, prun
         entry = {'address': addr, 'file': new_rel, 'function': func, 'language': values['language'],
                  'reference_size': values['reference_size'], 'compiled_size': values['compiled_size'],
                  'differing_lines': values['differing_lines'], 'differing_bytes': values['differing_bytes'],
-                 'provenance': values['provenance'], 'symbols': dict(sorted(symbols.items()))}
+                 'provenance': values['provenance'], 'class_header': header,
+                 'symbols': dict(sorted(symbols.items()))}
         entries.append(entry)
     entries.sort(key=lambda e: e['address'])
     out = dict(manifest, entries=entries)

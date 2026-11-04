@@ -6,7 +6,7 @@
  * compiled size: 308 bytes (+0.0%)
  * differing lines: 112 of 119 reference instruction lines
  * differing bytes: 110
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -18,19 +18,21 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 typedef struct Object Object;
+typedef struct Arg0_390 Arg0_390;
+typedef struct Arg0_64 Arg0_64;
 struct Object {
     char unknown0[0x3c];
     float f3c;
     char unknown40[0x4];
     float f44;
     char unknown48[0x1c];
-    int f64;
+    Arg0_64 *f64;
     char unknown68[0x2b0];
     float f318;
     float f31c;
     float f320;
     char unknown324[0x6c];
-    int f390;
+    Arg0_390 *f390;
     char unknown394[0x4];
     float f398;
     char unknown39c[0x4];
@@ -41,12 +43,12 @@ struct Object {
     int f570;
 };
 extern int angle_between_xz(void *, void *);
-extern int angle_fraction_step(int, int);
-extern int angle_halfway(int, int);
+extern int angle_fraction_step(void *, void *);
+extern int angle_halfway(void *, void *);
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(int);
-extern int call_8c025a44(Object *);
-extern void operation_8c028738(void *, float, float);
+extern int hs_8c025a44(Object *);
+extern void operation_8c028738(Object *, float, float);
 void operation_8c1e9b10(Object *o)
 {
     float v1;
@@ -57,11 +59,11 @@ void operation_8c1e9b10(Object *o)
     float t4;
     float t5;
     int t6;
-    t1 = angle_between_xz((void *)(&o->f3c), (void *)(&o->f398));
-    o->f390 = (int)(t1);
-    t2 = angle_fraction_step((int)(o->f64), (int)(o->f390));
-    o->f64 = (int)(t2);
-    t3 = angle_halfway((int)(o->f64), (int)(o->f390));
+    t1 = angle_between_xz(&o->f3c, &o->f398);
+    o->f390 = (Arg0_390 *)t1;
+    t2 = angle_fraction_step(o->f64, o->f390);
+    o->f64 = (Arg0_64 *)t2;
+    t3 = angle_halfway(o->f64, o->f390);
     v1 = (float)o->f564;
     t4 = njSin_8c37eb0c(t3);
     o->f318 = v1 * t4;
@@ -72,9 +74,9 @@ void operation_8c1e9b10(Object *o)
     if ((o->f564 * 2.0f * (o->f564 * 2.0f)) > ((o->f398 - o->f3c) * (o->f398 - o->f3c) + (o->f3a0 - o->f44) * (o->f3a0 - o->f44))) {
         o->f570 |= 4;
     }
-    t6 = call_8c025a44(o);
+    t6 = hs_8c025a44(o);
     if (t6 != 0) {
         o->f570 |= 4;
     }
-    operation_8c028738((void *)o, 1.0f, 15.0f);
+    operation_8c028738(o, 1.0f, 15.0f);
 }

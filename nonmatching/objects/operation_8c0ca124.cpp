@@ -4,9 +4,9 @@
  * language: c++
  * reference size: 1284 bytes
  * compiled size: 1284 bytes (+0.0%)
- * differing lines: 112 of 463 reference instruction lines
- * differing bytes: 266
- * provenance: hand pass on a generator draft
+ * differing lines: 92 of 463 reference instruction lines
+ * differing bytes: 168
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
@@ -152,6 +152,23 @@ struct S_vv1 {
 struct S_vv2 {
     int f00;
 };
+extern "C" int lookup_object_by_id(int);
+extern "C" void operation_8c059ef8(Object *, int);
+extern "C" void operation_8c059ea4(Object *, int);
+extern "C" void operation_8c01c5f0(Object *);
+extern "C" int actor_mode_allows_action(int);
+extern "C" int hs_8c0c9258(Object *, float, float);
+extern "C" int active_unflagged_8c05b2dc(void *);
+extern "C" void reset_link_8c05bf28(Object *);
+extern "C" void operation_8c05c184(Object *);
+extern "C" void aim_direction_8c05bdd4(Object *);
+extern "C" void set_actor_action_kind(int, int);
+extern "C" float hs_8c130334(float, float);
+extern "C" int angle_step(void *, int, int);
+extern "C" void hs_8c05fd7c(int, Object *, void *, int, int);
+extern "C" int get_actor_state_value(int);
+extern "C" void hs_8c0c96cc(Object *);
+extern "C" void mark_actor_flag_2(int);
 extern "C" void operation_8c0ca124(Object *o, int a1)
 {
     S_vv1 *v1;
@@ -175,7 +192,7 @@ extern "C" void operation_8c0ca124(Object *o, int a1)
     int t13;
     v1 = (S_vv1 *)((char *)o + 0x4ac);
     v2 = (S_vv2 *)((char *)o + 0x4b0);
-    t1 = ((int (*)(int))0x8c053d84)(((ObjectData *)o)->f400);
+    t1 = lookup_object_by_id(((ObjectData *)o)->f400);
     if (a1 != 0) {
         if (a1 != 3) {
             if (a1 != 4) {
@@ -185,7 +202,7 @@ extern "C" void operation_8c0ca124(Object *o, int a1)
                 return;
             }
             ((ObjectData *)o)->ff0 = 0;
-            ((void (*)(Object *, int))0x8c059ef8)(o, 3);
+            operation_8c059ef8(o, 3);
             ((ObjectData *)o)->f3e4 |= 0xa;
             v1->f00 = 0;
             v2->f00 = 0;
@@ -199,16 +216,16 @@ extern "C" void operation_8c0ca124(Object *o, int a1)
             ((ObjectData *)o)->f404 = 0;
         }
         ((ObjectData *)o)->f408 += 1;
-        ((void (*)(Object *, int))0x8c059ea4)(o, 3);
+        operation_8c059ea4(o, 3);
         return;
     }
-    ((void (*)(Object *))0x8c01c5f0)(o);
+    operation_8c01c5f0(o);
     v1->f00 += 1;
     switch (v2->f00) {
     case 0:
         if (t1 == 0) {
         } else {
-            t2 = ((int (*)(int))0x8c0c7d50)(t1);
+            t2 = actor_mode_allows_action(t1);
             if (t2 == 0) {
             } else {
                 v1->f00 = 0;
@@ -220,14 +237,14 @@ extern "C" void operation_8c0ca124(Object *o, int a1)
                     v8 = (int)0;
                 }
                 if (v8 != 0) {
-                    t12 = ((int (*)(Object *, float, float))0x8c0c9258)(o, 10000.0f, 10000.0f);
+                    t12 = hs_8c0c9258(o, 10000.0f, 10000.0f);
                     v11 = (int)t12;
                 } else {
-                    t3 = ((int (*)(void *))0x8c05b2dc)(((ObjectData *)o)->f3ac);
+                    t3 = active_unflagged_8c05b2dc(((ObjectData *)o)->f3ac);
                     if (t3 != 0) {
                         v9 = (int)1;
                     } else {
-                        ((void (*)(Object *))0x8c05bf28)(o);
+                        reset_link_8c05bf28(o);
                         v9 = (int)0;
                     }
                     v11 = (int)v9;
@@ -236,8 +253,8 @@ extern "C" void operation_8c0ca124(Object *o, int a1)
                     v2->f00 = 4;
                     goto L_8c0ca3b0;
                 }
-                ((void (*)(Object *))0x8c05c184)(o);
-                ((void (*)(Object *))0x8c05bdd4)(o);
+                operation_8c05c184(o);
+                aim_direction_8c05bdd4(o);
                 if (!(100.0f > ((ObjectData *)o)->f3c8)) {
                     v2->f00 = 4;
                 } else {
@@ -245,20 +262,20 @@ extern "C" void operation_8c0ca124(Object *o, int a1)
                     ((ObjectData *)o)->ff0 = 1;
                     ((ObjectData *)o)->f3e4 |= 8;
                     if (((ObjectData *)o)->f404 == 0) {
-                        t4 = ((int (*)(int))0x8c053d84)(((ObjectData *)o)->f400);
+                        t4 = lookup_object_by_id(((ObjectData *)o)->f400);
                         if (t4 == 0) {
                             goto L_8c0ca356;
                         }
-                        ((void (*)(int, int))0x8c0c7d84)(t4, 0);
+                        set_actor_action_kind(t4, 0);
                     } else {
-                        t5 = ((int (*)(int))0x8c053d84)(((ObjectData *)o)->f400);
+                        t5 = lookup_object_by_id(((ObjectData *)o)->f400);
                         if (t5 != 0) {
-                            ((void (*)(int, int))0x8c0c7d84)(t5, 1);
+                            set_actor_action_kind(t5, 1);
                         }
                     }
                 }
 L_8c0ca356:;
-                t6 = ((float (*)(float, float))0x8c130334)(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+                t6 = hs_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
                 ((ObjectData *)o)->f64 = (Arg0_64 *)(int)(t6 * 65536.0f / 6.28318405f);
                 goto L_8c0ca3b0;
             }
@@ -267,20 +284,20 @@ L_8c0ca356:;
             v2->f00 = 5;
         }
 L_8c0ca3b0:;
-        ((void (*)(Object *))0x8c05c184)(o);
-        ((void (*)(Object *))0x8c05bdd4)(o);
-        t7 = ((float (*)(float, float))0x8c130334)(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
-        t8 = ((int (*)(void *, int, int))0x8c0c4f90)(((ObjectData *)o)->f64, (int)(t7 * 65536.0f / 6.28318405f), 0xa00);
+        operation_8c05c184(o);
+        aim_direction_8c05bdd4(o);
+        t7 = hs_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+        t8 = angle_step(((ObjectData *)o)->f64, (int)(t7 * 65536.0f / 6.28318405f), 0xa00);
         ((ObjectData *)o)->f64 = (Arg0_64 *)(int)t8;
         if (((ObjectData *)o)->f404 == 0) {
-            ((void (*)(int, Object *, void *, int, int))0x8c05fd7c)(0x30012, o, ((char *)o + 0x3c), 0, 0);
+            hs_8c05fd7c(0x30012, o, ((char *)o + 0x3c), 0, 0);
             goto L_8c0ca5bc;
         }
-        ((void (*)(int, Object *, void *, int, int))0x8c05fd7c)(0x30013, o, ((char *)o + 0x3c), 0, 0);
+        hs_8c05fd7c(0x30013, o, ((char *)o + 0x3c), 0, 0);
         break;
     case 1:
         if (t1 != 0) {
-            t9 = ((int (*)(int))0x8c0c7d50)(t1);
+            t9 = actor_mode_allows_action(t1);
             if (t9 == 0) {
                 v2->f00 = 5;
                 goto L_8c0ca488;
@@ -291,23 +308,23 @@ L_8c0ca3b0:;
             v2->f00 = 3;
         }
 L_8c0ca488:;
-        ((void (*)(Object *))0x8c05c184)(o);
-        ((void (*)(Object *))0x8c05bdd4)(o);
-        t10 = ((float (*)(float, float))0x8c130334)(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
-        t11 = ((int (*)(void *, int, int))0x8c0c4f90)(((ObjectData *)o)->f64, (int)(t10 * 65536.0f / 6.28318405f), 0xa00);
+        operation_8c05c184(o);
+        aim_direction_8c05bdd4(o);
+        t10 = hs_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+        t11 = angle_step(((ObjectData *)o)->f64, (int)(t10 * 65536.0f / 6.28318405f), 0xa00);
         ((ObjectData *)o)->f64 = (Arg0_64 *)(int)t11;
         if (((ObjectData *)o)->f404 == 0) {
-            ((void (*)(int, Object *, void *, int, int))0x8c05fd7c)(0x30012, o, ((char *)o + 0x3c), 0, 0);
+            hs_8c05fd7c(0x30012, o, ((char *)o + 0x3c), 0, 0);
             goto L_8c0ca5bc;
         }
-        ((void (*)(int, Object *, void *, int, int))0x8c05fd7c)(0x30013, o, ((char *)o + 0x3c), 0, 0);
+        hs_8c05fd7c(0x30013, o, ((char *)o + 0x3c), 0, 0);
         break;
     case 2:
     case 3:
         if (!(11.0f > ((ObjectData *)o)->ff8)) {
             if (v2->f00 == 3) {
                 if (t1 != 0) {
-                    t13 = ((int (*)(int))0x8c0c7d6c)(t1);
+                    t13 = get_actor_state_value(t1);
                     v39 = (int)t13;
                 } else {
                     v39 = (int)3;
@@ -318,7 +335,7 @@ L_8c0ca488:;
                     }
                 } else {
                     v2->f00 = 2;
-                    ((void (*)(Object *))0x8c0c96cc)(o);
+                    hs_8c0c96cc(o);
                     goto L_8c0ca58c;
 L_8c0ca588:;
                     v2->f00 = 2;
@@ -333,7 +350,7 @@ L_8c0ca58c:;
         if (t1 == 0) {
             goto L_8c0ca5bc;
         }
-        ((void (*)(int))0x8c0c7dc4)(t1);
+        mark_actor_flag_2(t1);
         break;
     case 4:
         if (v1->f00 >= 0x3c) {
@@ -345,11 +362,11 @@ L_8c0ca58c:;
 L_8c0ca5bc:;
     o->v95();
     o->v94();
-    ((void (*)(int, Object *, void *, int, int))0x8c05fd7c)(0x3001d, o, ((char *)o + 0x3c), 0, 0);
+    hs_8c05fd7c(0x3001d, o, ((char *)o + 0x3c), 0, 0);
     return;
 L_8c0ca5fc:;
     if (t1 != 0) {
-        ((void (*)(int))0x8c0c7dc4)(t1);
+        mark_actor_flag_2(t1);
     }
     ((ObjectData *)o)->f3e4 &= -9;
 }

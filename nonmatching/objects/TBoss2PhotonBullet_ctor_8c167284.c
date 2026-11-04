@@ -6,10 +6,11 @@
  * compiled size: 244 bytes (-1.6%)
  * differing lines: 20 of 92 reference instruction lines
  * differing bytes: 188
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -4 bytes
+ * class header: src/include/classes/TBoss2PhotonBullet.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -54,10 +55,10 @@ struct Arg0_dc {
     float f0c;
 };
 extern int g_8c31753c;
-extern void operation_8c0f33fc(void *, int, int);
+extern void operation_8c0f33fc(Object *, int, int);
 Object *TBoss2PhotonBullet_ctor_8c167284(Object *o, int a1, int a2, Arg3 *a3, Arg4 *a4, float f0)
 {
-    operation_8c0f33fc((void *)o, a1, a2);
+    operation_8c0f33fc(o, a1, a2);
     o->dispatch = (void *)0x8c26feec;
     o->tag = (int)(g_8c31753c);
     o->size = 0x120;

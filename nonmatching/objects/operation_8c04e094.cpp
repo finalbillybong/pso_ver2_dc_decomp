@@ -4,7 +4,7 @@
  * language: c++
  * reference size: 1044 bytes
  * compiled size: 1056 bytes (+1.1%)
- * differing lines: 58 of 377 reference instruction lines
+ * differing lines: 52 of 363 reference instruction lines
  * differing bytes: 372
  * provenance: generator draft (mode switch2)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee

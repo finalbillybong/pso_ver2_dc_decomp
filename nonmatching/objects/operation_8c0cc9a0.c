@@ -6,7 +6,7 @@
  * compiled size: 480 bytes (+0.0%)
  * differing lines: 72 of 204 reference instruction lines
  * differing bytes: 33
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -62,11 +62,11 @@ struct Arg0_20 {
 struct Arg0_1a10 {
     Block316 f00;
 };
-extern void call_8c0cc7fc(Arg0_20 *);
-extern float squared_distance_xz(void *, void *);
+extern void hs_8c0cc7fc(Arg0_20 *);
+extern float squared_distance_xz(Arg0_20 *, void *);
 extern float signed_sqrt_8c37f6c0(float);
-extern float call_8c12c714(float);
-extern void call_8c0cbf48(void *, Arg0_20 *, void *);
+extern float hs_8c12c714(float);
+extern void hs_8c0cbf48(void *, Arg0_20 *, void *);
 void operation_8c0cc9a0(Object *o)
 {
     int v1;
@@ -83,7 +83,7 @@ void operation_8c0cc9a0(Object *o)
     float t1;
     float t2;
     float t3;
-    call_8c0cc7fc((Arg0_20 *)(o->f20));
+    hs_8c0cc7fc(o->f20);
     v1 = (int)o->f1ac8;
     v2 = (int)((int)o->f1acc + v1 + -1);
     v3 = (S_vv3 *)&o->f1acc;
@@ -114,9 +114,9 @@ void operation_8c0cc9a0(Object *o)
     if (o->f1ac8 >= 0x14) {
         o->f1ac8 -= 0x14;
     }
-    t1 = squared_distance_xz((void *)(o->f20), (void *)(&o->f1ab4));
+    t1 = squared_distance_xz(o->f20, &o->f1ab4);
     t2 = signed_sqrt_8c37f6c0(t1);
-    t3 = call_8c12c714(t2);
+    t3 = hs_8c12c714(t2);
     if (0.1f > t3) {
         v18 = (float)o->f1ac4;
         if (!(v18 > 0.0f)) {
@@ -146,5 +146,5 @@ L_8c0cca9c:;
 L_8c0ccaec:;
         *(Block316 *)&(*(Arg0_1a10 **)((char *)((char *)o + 0x1a10) + ((int)o->f1ac8 + (int)o->f1acc << 2)))->f00 = *(Block316 *)&o->f28;
     }
-    call_8c0cbf48((void *)(&o->f28), (Arg0_20 *)(o->f20), (void *)(o->f24));
+    hs_8c0cbf48(&o->f28, o->f20, o->f24);
 }

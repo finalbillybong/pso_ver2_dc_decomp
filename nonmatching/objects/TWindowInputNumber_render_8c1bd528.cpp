@@ -6,10 +6,11 @@
  * compiled size: 132 bytes (+0.0%)
  * differing lines: 12 of 55 reference instruction lines
  * differing bytes: 18
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TWindowInputNumber.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -41,22 +42,22 @@ typedef struct ObjectData {
     char unknown6c[0xc];
     Arg0_78 *f78;
 } ObjectData;
-extern "C" void draw_view_transition_if_active(void *);
-extern "C" void call_8c0db5d4(Object *, int);
-extern "C" void draw_view_nodes(void *, void *, void *);
-extern "C" void call_8c1bd5ac(Object *, int, void *, int);
-extern "C" void call_8c199b80(void *, int);
+extern "C" void draw_view_transition_if_active(Object *);
+extern "C" void hs_8c0db5d4(Object *, int);
+extern "C" void draw_view_nodes(Object *, void *, int);
+extern "C" void hs_8c1bd5ac(Object *, int, void *, int);
+extern "C" void hs_8c199b80(void *, int);
 extern "C" void TWindowInputNumber_render_8c1bd528(Object *o)
 {
     int t1;
     int v1;
     t1 = o->v5();
-    draw_view_transition_if_active((void *)o);
-    call_8c0db5d4(o, t1);
-    draw_view_nodes((void *)o, (void *)(((char *)o + 0x2c)), (void *)t1);
+    draw_view_transition_if_active(o);
+    hs_8c0db5d4(o, t1);
+    draw_view_nodes(o, ((char *)o + 0x2c), t1);
     v1 = (int)(((((ObjectData *)o)->f68 & 2)) != 0);
-    call_8c1bd5ac(o, t1, (void *)(*(Arg0_30_0 **)((char *)((char *)((ObjectData *)o)->f30 + 0x0) + (((ObjectData *)o)->f6b << 2))), v1);
+    hs_8c1bd5ac(o, t1, *(Arg0_30_0 **)((char *)((char *)((ObjectData *)o)->f30 + 0x0) + (((ObjectData *)o)->f6b << 2)), v1);
     if (((ObjectData *)o)->f78 != 0) {
-        call_8c199b80((void *)(((ObjectData *)o)->f78), t1);
+        hs_8c199b80(((ObjectData *)o)->f78, t1);
     }
 }

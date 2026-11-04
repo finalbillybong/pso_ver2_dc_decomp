@@ -6,7 +6,7 @@
  * compiled size: 268 bytes (+0.0%)
  * differing lines: 12 of 103 reference instruction lines
  * differing bytes: 15
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -63,7 +63,7 @@ void operation_8c1cfc40(Object *o)
     (&frame)->f00 = g_8c46ee80->f9c - o->f4c;
     (&frame)->f04 = g_8c46ee80->fa0 - o->f50;
     (&frame)->f08 = g_8c46ee80->fa4 - o->f54;
-    t1 = njScalor_8c37e480((Frame *)((&frame)));
+    t1 = njScalor_8c37e480((&frame));
     o->f60 = t1 * 0.7f / 100.0f;
     t2 = operation_8c0a0f08(o);
     if (t2 != 0) {

@@ -6,7 +6,7 @@
  * compiled size: 264 bytes (+0.0%)
  * differing lines: 18 of 106 reference instruction lines
  * differing bytes: 22
- * provenance: generator draft (mode switch2)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -19,11 +19,13 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct Frame Frame;
 typedef struct Arg1 Arg1;
+typedef struct Arg1_44 Arg1_44;
+typedef struct Arg1_48 Arg1_48;
 class Object;
 struct Arg1 {
     char unknown0[0x44];
-    int f44;
-    int f48;
+    Arg1_44 *f44;
+    Arg1_48 *f48;
 };
 class Object {
 public:
@@ -50,10 +52,8 @@ struct Frame {
     int f04;
     char unknown8[0x20];
 };
+extern int g_8c2e761c;
 extern "C" char g_8c2e7ce0[];
-extern "C" void seed_random_state(void *, unsigned int);
-extern "C" void memset_8c12b880(Frame *, int, int);
-extern "C" void strncpy_8c12b154(void *, void *, int);
 static inline int icmp(const unsigned char *a, const unsigned char *b)
 {
     unsigned char c1, c2;
@@ -62,23 +62,26 @@ static inline int icmp(const unsigned char *a, const unsigned char *b)
     }
     return c1 - c2;
 }
+extern "C" void seed_random_state(void *, void *);
+extern "C" void memset_8c12b880(Frame *, int, int);
+extern "C" void strncpy_8c12b154(void *, void *, int);
 extern "C" void handle_cmd_91_start_encryption_at_login_server_8c02f534(Object *o, Arg1 *a1)
 {
     Frame frame;
     int v1;
     int t1;
     o->v4((g_8c2e7ce0 + 0x550));
-    v1 = (int)*(int *)0x8c2e761c;
+    v1 = (int)g_8c2e761c;
     t1 = icmp((unsigned char *)v1, (unsigned char *)((char *)a1 + 0x4));
     if (t1 == 0) {
-        seed_random_state((void *)(((char *)o + 0x974)), (unsigned int)(a1->f44));
-        seed_random_state((void *)(((char *)o + 0x88c)), (unsigned int)(a1->f48));
+        seed_random_state(((char *)o + 0x974), a1->f44);
+        seed_random_state(((char *)o + 0x88c), a1->f48);
         ((ObjectData *)o)->fa5c = 1;
-        memset_8c12b880((Frame *)((&frame)), 0, 0x28);
+        memset_8c12b880((&frame), 0, 0x28);
         (&frame)->f00 = 0x90;
         (&frame)->f02 = 0x28;
-        strncpy_8c12b154((void *)(&(&frame)->f04), (void *)(((char *)o + 0x3024)), 0x10);
-        strncpy_8c12b154((void *)(((char *)(&frame) + 0x15)), (void *)(((char *)o + 0x3035)), 0x10);
+        strncpy_8c12b154(&(&frame)->f04, ((char *)o + 0x3024), 0x10);
+        strncpy_8c12b154(((char *)(&frame) + 0x15), ((char *)o + 0x3035), 0x10);
         o->v9((&frame), (unsigned short)(&frame)->f02);
         return;
     }

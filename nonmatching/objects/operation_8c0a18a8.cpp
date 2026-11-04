@@ -6,7 +6,7 @@
  * compiled size: 280 bytes (-1.4%)
  * differing lines: 2 of 117 reference instruction lines
  * differing bytes: 137
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -4 bytes
@@ -46,13 +46,13 @@ typedef struct S_vv1Data {
 } S_vv1Data;
 extern int g_8c46f080;
 extern S_L8c46efc8 g_8c46efc8;
-extern "C" void call_8c0a0b6c(S_vv1 *);
-extern "C" void call_8c0a2478(int);
-extern "C" void resolve_contact_position(void *);
-extern "C" void operation_8c0a23e8(void *);
-extern "C" void operation_8c0a2534(void *);
-extern "C" void advance_contact_position(void *, S_vv1 *);
-extern "C" void operation_8c0a19f0(void *);
+extern "C" void hs_8c0a0b6c(S_vv1 *);
+extern "C" void hs_8c0a2478(int);
+extern "C" void resolve_contact_position(int);
+extern "C" void operation_8c0a23e8(int);
+extern "C" void operation_8c0a2534(int);
+extern "C" void advance_contact_position(int, S_vv1 *);
+extern "C" void operation_8c0a19f0(int);
 extern "C" void operation_8c0a18a8(int a0)
 {
     S_vv1 *v1;
@@ -76,29 +76,29 @@ extern "C" void operation_8c0a18a8(int a0)
                 }
             }
         }
-        call_8c0a0b6c(v1);
+        hs_8c0a0b6c(v1);
         v21 = (int)(&g_8c46efc8)->f08;
         if (((v21 & 0x20)) != 0 || ((v21 & 0x800)) != 0) {
-            call_8c0a2478(a0);
+            hs_8c0a2478(a0);
             goto L_8c0a1980;
         }
         if (((((S_vv1Data *)v1)->f3c & 1)) != 0) {
-            resolve_contact_position((void *)a0);
+            resolve_contact_position(a0);
         }
         v26 = (int)((S_vv1Data *)v1)->f3c;
         if (((v26 & 4)) != 0) {
-            operation_8c0a23e8((void *)a0);
+            operation_8c0a23e8(a0);
         } else {
             if (((v26 & 8)) != 0) {
-                operation_8c0a2534((void *)a0);
+                operation_8c0a2534(a0);
             } else {
-                call_8c0a2478(a0);
+                hs_8c0a2478(a0);
             }
         }
         if (((((S_vv1Data *)v1)->f3c & 1)) != 0) {
-            advance_contact_position((void *)a0, v1);
+            advance_contact_position(a0, v1);
         }
-        operation_8c0a19f0((void *)a0);
+        operation_8c0a19f0(a0);
 L_8c0a1980:;
         v1->v10();
     }

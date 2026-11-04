@@ -3,13 +3,13 @@
  * function: operation_8c21648c
  * language: c
  * reference size: 948 bytes
- * compiled size: 956 bytes (+0.8%)
- * differing lines: 536 of 406 reference instruction lines
- * differing bytes: 796
- * provenance: generator draft (mode ccastext)
+ * compiled size: 952 bytes (+0.4%)
+ * differing lines: 526 of 406 reference instruction lines
+ * differing bytes: 760
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
- *   to the original; compiled size differs from the reference by +8 bytes
+ *   to the original; compiled size differs from the reference by +4 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -111,6 +111,15 @@ extern float g_8c2e1568;
 extern float g_8c2e1578;
 extern int g_8c3fc180;
 extern S_g8c46fe00 *g_8c46fe00;
+extern int hs_8c18e768(int, int);
+extern float operation_8c20b160(void *, float, float);
+extern void operation_8c20a89c(void *, int, float);
+extern void operation_8c20b178(void *, int);
+extern void operation_8c20b1b0(Arg1 *, void *);
+extern void hs_8c38d9a0(void *, int, int, int);
+extern float hs_8c20b160_1(float, float);
+extern void hs_8c20b178_1(void *, void *);
+extern float hs_8c384258(float);
 void operation_8c21648c(Object *o, Arg1 *a1)
 {
     Frame frame;
@@ -162,7 +171,7 @@ void operation_8c21648c(Object *o, Arg1 *a1)
     int v55;
     float t3;
     float t4;
-    t2 = ((int (*)(int, int))0x8c18e768)(g_8c46fe00->f00->f08 - g_8c3fc180, 0x44);
+    t2 = hs_8c18e768(g_8c46fe00->f00->f08 - g_8c3fc180, 0x44);
     if (!(a1->f30 >= 0)) {
         return;
     }
@@ -171,10 +180,10 @@ void operation_8c21648c(Object *o, Arg1 *a1)
     if (v99 > 0) {
         v1 = !(o->f68 & 1);
         if (v1 != 0) {
-            t1 = ((float (*)(void *, float, float))0x8c20b160)(&o->f4c, o->f5c, 0.1f);
-            ((void (*)(void *, int, float))0x8c20a89c)(&(&frame)->f14, -1, t1);
-            ((void (*)(void *, int))0x8c20b178)(&(&frame)->f14, 1);
-            ((void (*)(Arg1 *, void *))0x8c20b1b0)(a1, &(&frame)->f14);
+            t1 = operation_8c20b160(&o->f4c, o->f5c, 0.1f);
+            operation_8c20a89c(&(&frame)->f14, -1, t1);
+            operation_8c20b178(&(&frame)->f14, 1);
+            operation_8c20b1b0(a1, &(&frame)->f14);
             v8 = (int)0;
             v2 = (float)(((float)o->f74 * g_8c2e153c + -(o->f54 * 0.5f)) * a1->f2c + (&frame)->f10);
             v3 = (float)(((float)o->f74 * g_8c2e153c + -(o->f54 * 0.5f) + g_8c2e153c) * a1->f2c + (&frame)->f10);
@@ -192,13 +201,13 @@ L_8c2165a2:;
                 v4 = (S_vv4 *)v7;
                 v5 = (int)v8;
             } while (4 > v8);
-            ((void (*)(void *, int, int, int))0x8c38d9a0)(&(&frame)->f14, 8, t2, 1);
+            hs_8c38d9a0(&(&frame)->f14, 8, t2, 1);
         }
     }
-    t3 = ((float (*)(float, float))0x8c20b160)(o->f5c, 0.0f);
-    ((void (*)(void *, int, float))0x8c20a89c)(&(&frame)->f14, -1, t3);
-    ((void (*)(void *, void *))0x8c20b178)(&(&frame)->f14, o->f6c);
-    ((void (*)(Arg1 *, void *))0x8c20b1b0)(a1, &(&frame)->f14);
+    t3 = hs_8c20b160_1(o->f5c, 0.0f);
+    operation_8c20a89c(&(&frame)->f14, -1, t3);
+    hs_8c20b178_1(&(&frame)->f14, o->f6c);
+    operation_8c20b1b0(a1, &(&frame)->f14);
     (&frame)->f0c = a1->f2c;
     v17 = (int)o->f80;
     v18 = (float)o->f54;
@@ -219,7 +228,7 @@ L_8c2165a2:;
     }
     v26 = (float)(v25 * g_8c2e1534);
     (&frame)->f08 *= g_8c2e1534;
-    t4 = ((float (*)(float))0x8c384258)(-o->f90 / v19);
+    t4 = hs_8c384258(-o->f90 / v19);
     v27 = (float)g_8c2e153c;
     v27 = (float)(v27 * t4);
     v43 = (int)v17;
@@ -254,7 +263,7 @@ L_8c216716:;
             v33 = (S_vv33 *)v40;
             v34 = (int)v39;
         } while (4 > v39);
-        ((void (*)(void *, int, int, int))0x8c38d9a0)(&(&frame)->f14, 8, t2, 1);
+        hs_8c38d9a0(&(&frame)->f14, 8, t2, 1);
         v43 = (int)v28;
         v47 = (float)(&frame)->f04;
     }
@@ -288,7 +297,7 @@ L_8c216768:;
                 v58 = (S_vv58 *)((char *)v58 + 48);
                 v59 = (int)(v59 + 1);
             }
-            ((void (*)(void *, int, int, int))0x8c38d9a0)(&(&frame)->f14, 8, t2, 1);
+            hs_8c38d9a0(&(&frame)->f14, 8, t2, 1);
             v56 = (float)v57;
             v55 = (int)(v55 + 1);
         }
@@ -314,6 +323,6 @@ L_8c216812:;
             v67 = (S_vv67 *)v74;
             v68 = (int)v73;
         } while (4 > v73);
-        ((void (*)(void *, int, int, int))0x8c38d9a0)(&(&frame)->f14, 8, t2, 1);
+        hs_8c38d9a0(&(&frame)->f14, 8, t2, 1);
     }
 }

@@ -6,7 +6,7 @@
  * compiled size: 196 bytes (+0.0%)
  * differing lines: 2 of 61 reference instruction lines
  * differing bytes: 4
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -34,18 +34,18 @@ struct Object {
 };
 extern int g_8c2f35d0;
 extern int g_8c2f35d4;
-extern void TObjEnemy_ctor_8c012008(void *);
-extern void reset_link_8c05bf28(void *);
-extern void initialize_float_fields_8c05be40(void *);
-extern void operation_8c05bf44(void *, int);
-extern void operation_8c05c1bc(void *, int);
+extern void TObjEnemy_ctor_8c012008(Object *);
+extern void reset_link_8c05bf28(Object *);
+extern void initialize_float_fields_8c05be40(Object *);
+extern void operation_8c05bf44(Object *, int);
+extern void operation_8c05c1bc(Object *, int);
 Object *operation_8c05bcc0(Object *o)
 {
     Object **home = &o;
     (void)home;
     {
         Object *base = o;
-        TObjEnemy_ctor_8c012008((void *)base);
+        TObjEnemy_ctor_8c012008(base);
         base->dispatch = (void *)0x8c2627b8;
         base->tag = (int)(g_8c2f35d0);
         base->size = 0x3a8;
@@ -59,9 +59,9 @@ Object *operation_8c05bcc0(Object *o)
     o->dispatch = (void *)0x8c2625f8;
     o->tag = (int)(g_8c2f35d4);
     o->size = 0x3dc;
-    reset_link_8c05bf28((void *)o);
-    initialize_float_fields_8c05be40((void *)o);
-    operation_8c05bf44((void *)o, 0x1e);
-    operation_8c05c1bc((void *)o, 0x1e);
+    reset_link_8c05bf28(o);
+    initialize_float_fields_8c05be40(o);
+    operation_8c05bf44(o, 0x1e);
+    operation_8c05c1bc(o, 0x1e);
     return o;
 }

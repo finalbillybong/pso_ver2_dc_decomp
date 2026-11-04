@@ -6,7 +6,7 @@
  * compiled size: 192 bytes (+0.0%)
  * differing lines: 28 of 75 reference instruction lines
  * differing bytes: 38
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -67,15 +67,15 @@ extern "C" int operation_8c02e7a8(Object *o, int a1)
     Frame frame;
     o->v4((g_8c2e7ce0 + 0x346));
     ((ObjectData *)o)->fa9c = a1;
-    memset_8c12b880((Frame *)((&frame)), 0, 0x34);
+    memset_8c12b880((&frame), 0, 0x34);
     (&frame)->f00 = 4;
     (&frame)->f01 = ((ObjectData *)o)->fa9c;
     (&frame)->f02 = 0x34;
     *(Block8 *)&(&frame)->f04 = *(Block8 *)&((ObjectData *)o)->fa64;
     (&frame)->f0c = ((ObjectData *)o)->fa74 & 0xffff;
     (&frame)->f11 = ((ObjectData *)o)->faa0;
-    strncpy_8c12b154((void *)(&(&frame)->f14), (void *)(((char *)o + 0x3046)), 0x10);
-    strncpy_8c12b154((void *)(&(&frame)->f24), (void *)(((char *)o + 0x3076)), 0x10);
+    strncpy_8c12b154(&(&frame)->f14, ((char *)o + 0x3046), 0x10);
+    strncpy_8c12b154(&(&frame)->f24, ((char *)o + 0x3076), 0x10);
     o->v9((&frame), (unsigned short)(&frame)->f02);
     return 0;
 }

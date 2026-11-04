@@ -3,14 +3,14 @@
  * function: operation_8c02ef5c
  * language: c++
  * reference size: 360 bytes
- * compiled size: 364 bytes (+1.1%)
- * differing lines: 24 of 145 reference instruction lines
- * differing bytes: 261
+ * compiled size: 356 bytes (-1.1%)
+ * differing lines: 16 of 145 reference instruction lines
+ * differing bytes: 264
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in stack
  *   frame and spills, instruction or operand order; review found and fixed behaviour defects of
  *   the generator draft; not proven equivalent to the original; compiled size differs from the
- *   reference by +4 bytes
+ *   reference by -4 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -56,11 +56,26 @@ typedef struct ObjectData {
 struct Arg1 {
     Block1052 f00;
 };
+typedef struct Rec28 {
+    char f00;
+    char f01;
+    char f02;
+    char f03;
+    int f04;
+    char f08[0x14];
+} Rec28;
+typedef struct Inner {
+    int f00;
+    Rec28 f04[30];
+    char unknown34c[0x74];
+    char f3c0[0x24];
+    char f3e4[0x38];
+} Inner;
 struct Frame {
     unsigned char f00;
     char f01;
     short f02;
-    Block1052 f04;
+    Inner f04;
     Block188 f420;
     Block24 f4dc;
 };
@@ -94,19 +109,19 @@ extern "C" void operation_8c02ef5c(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3)
     if (((ObjectData *)o)->fa7c != 0) {
         operation_8c034e20((void *)(((char *)a1 + 0x370)));
         *(Block1052 *)&((ObjectData *)o)->faf4 = *(Block1052 *)&a1->f00;
-        operation_8c1acbc0((void *)(((char *)(&frame) + 0x3c4)));
-        operation_8c1acbc0((void *)(((char *)(&frame) + 0x3e8)));
-        v4 = (char *)&(&frame)->f04;
+        operation_8c1acbc0((void *)frame.f04.f3c0);
+        operation_8c1acbc0((void *)frame.f04.f3e4);
+        v4 = (char *)&frame.f04;
         v2 = 0;
         v1 = -1;
         for (; 0x1e > v2; v2++) {
-            v3 = (S_vv3 *)((char *)(v4 + v2 * 0x1c) + 4);
-            v3->f00 = 0;
-            v3->f01 = v1;
-            v3->f04 = 0;
-            v3->f03 = 0;
-            v3->f02 = 0;
-            operation_1c7dd4((void *)((int)v3 + 8));
+            Rec28 *r = &((Inner *)v4)->f04[v2];
+            r->f00 = 0;
+            r->f01 = v1;
+            r->f04 = 0;
+            r->f03 = 0;
+            r->f02 = 0;
+            operation_1c7dd4((void *)r->f08);
         }
         memset_8c12b880((Frame *)((&frame)), 0, 0x4f4);
         (&frame)->f00 = 0x98;

@@ -6,7 +6,7 @@
  * compiled size: 116 bytes (+0.0%)
  * differing lines: 4 of 40 reference instruction lines
  * differing bytes: 4
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -24,21 +24,21 @@ struct Object {
     void *dispatch;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void operation_8c052124(void *);
-extern void destroy_field_8c178048(void *, short);
-extern void destroy_field_8c114790(void *, short);
-extern void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
-extern void operation_8c122774(void *, void *);
+extern void operation_8c052124(Object *);
+extern void destroy_field_8c178048(void *, int);
+extern void destroy_field_8c114790(void *, int);
+extern void TObjEnemyCustom_dtor_8c0c23c8(Object *, int);
+extern void operation_8c122774(void *, Object *);
 Object *operation_8c0bfbf0(Object *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c26649c;
-        operation_8c052124((void *)o);
-        destroy_field_8c178048((void *)(((char *)o + 0x428)), (short)-1);
-        destroy_field_8c114790((void *)(((char *)o + 0x404)), (short)-1);
-        TObjEnemyCustom_dtor_8c0c23c8((void *)o, (short)0);
+        operation_8c052124(o);
+        destroy_field_8c178048(((char *)o + 0x428), -1);
+        destroy_field_8c114790(((char *)o + 0x404), -1);
+        TObjEnemyCustom_dtor_8c0c23c8(o, 0);
         if ((short)a1 > 0) {
-            operation_8c122774(g_8c4d97e0, (void *)o);
+            operation_8c122774(g_8c4d97e0, o);
         }
     }
     return o;

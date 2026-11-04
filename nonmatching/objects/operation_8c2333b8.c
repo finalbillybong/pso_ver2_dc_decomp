@@ -6,7 +6,7 @@
  * compiled size: 40 bytes (+11.1%)
  * differing lines: 18 of 18 reference instruction lines
  * differing bytes: 30
- * provenance: hand pass on a generator draft
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original; compiled size differs from the reference by +4 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
@@ -16,14 +16,16 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
+extern int syFlash_open_partition_8c378bf8(int, int);
+extern int syFlash_check_header_8c378cfc(int);
 int operation_8c2333b8(int a0)
 {
     int *home = &a0;
     int v5;
     (void)home;
-    v5 = ((int (*)(int, int))0x8c378bf8)(2, a0);
+    v5 = syFlash_open_partition_8c378bf8(2, a0);
     if (v5 == -8) {
-        v5 = ((int (*)(int))0x8c378cfc)(0);
+        v5 = syFlash_check_header_8c378cfc(0);
     }
     return v5;
 }

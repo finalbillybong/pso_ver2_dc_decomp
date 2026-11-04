@@ -6,10 +6,11 @@
  * compiled size: 260 bytes (+3.2%)
  * differing lines: 30 of 112 reference instruction lines
  * differing bytes: 250
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +8 bytes
+ * class header: src/include/classes/TAdRicoRing.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -59,14 +60,14 @@ struct S_g8c506320_42c {
 };
 extern int g_8c338350;
 extern S_g8c506320 *g_8c506320;
-extern void TObject_ctor_8c0330e4(void *, void *);
+extern void TObject_ctor_8c0330e4(Object *, int);
 extern int operation_8c01c434(void);
 Object *TAdRicoRing_ctor_8c22c2b8(Object *o, int a1)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    TObject_ctor_8c0330e4((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c278e68;
     o->f30 = 0;
     o->tag = (int)(g_8c338350);
@@ -91,12 +92,16 @@ Object *TAdRicoRing_ctor_8c22c2b8(Object *o, int a1)
     o->f34 = 0x5b0;
     o->f30 |= 4;
     t1 = operation_8c01c434();
-    switch (t1) {
-    case 0:
+    if (t1 != 0) {
+        if (t1 == 1) {
+            goto L_8c22c386;
+        }
+    } else {
         o->f4c = 0x12;
-        break;
-    case 1:
+        goto L_8c22c38e;
+L_8c22c386:;
         o->f4c = 0x15;
     }
+L_8c22c38e:;
     return o;
 }

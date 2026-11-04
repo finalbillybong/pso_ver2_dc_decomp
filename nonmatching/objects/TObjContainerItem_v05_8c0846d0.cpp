@@ -6,10 +6,11 @@
  * compiled size: 132 bytes (+0.0%)
  * differing lines: 4 of 56 reference instruction lines
  * differing bytes: 6
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TObjContainerItem.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -119,9 +120,9 @@ typedef struct ObjectData {
     char unknown6[0x304];
     short f30a;
 } ObjectData;
-extern "C" void operation_8c162e94(void *, int, int);
-extern "C" void operation_8c05428c(void *, int, int);
-extern "C" void operation_8c09e6b4(void *);
+extern "C" void operation_8c162e94(Object *, void *, int);
+extern "C" void operation_8c05428c(Object *, int, int);
+extern "C" void operation_8c09e6b4(Object *);
 extern "C" void TObjContainerItem_v05_8c0846d0(Object *o, Arg1 *a1, int a2)
 {
     if (a2 != 0) {
@@ -129,16 +130,16 @@ extern "C" void TObjContainerItem_v05_8c0846d0(Object *o, Arg1 *a1, int a2)
             return;
         }
         o->v86();
-        operation_8c162e94((void *)o, (int)(((char *)o + 0x3c)), 1);
-        operation_8c05428c((void *)o, 0, 1);
-        operation_8c09e6b4((void *)o);
+        operation_8c162e94(o, ((char *)o + 0x3c), 1);
+        operation_8c05428c(o, 0, 1);
+        operation_8c09e6b4(o);
         ((ObjectData *)o)->f04 |= 1;
         ((ObjectData *)o)->f30a = 1;
         return;
     }
     if (a1->f00 == 1) {
-        operation_8c05428c((void *)o, 0, 1);
-        operation_8c09e6b4((void *)o);
+        operation_8c05428c(o, 0, 1);
+        operation_8c09e6b4(o);
         ((ObjectData *)o)->f04 |= 1;
         ((ObjectData *)o)->f30a = 1;
     }

@@ -6,10 +6,11 @@
  * compiled size: 560 bytes (+2.9%)
  * differing lines: 100 of 207 reference instruction lines
  * differing bytes: 461
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +16 bytes
+ * class header: src/include/classes/TOTrapAncient02R.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -87,8 +88,8 @@ extern int g_8c31563c;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c4da620 *g_8c4da620;
 extern "C" void TOTrapAncient02_ctor_8c14cb90(Object *, void *, int);
-extern "C" void update_object_center(void *);
-extern "C" void call_8c14df2c(Object *);
+extern "C" void update_object_center(Object *);
+extern "C" void hs_8c14df2c(Object *);
 extern "C" Object *TOTrapAncient02R_ctor_8c14d450(Object *o, int a1)
 {
     Object **home = &o;
@@ -102,7 +103,7 @@ extern "C" Object *TOTrapAncient02R_ctor_8c14d450(Object *o, int a1)
     *(Vector3 *)&((ObjectData *)o)->f158 = *(Vector3 *)&((ObjectData *)o)->f3c;
     *(Vector3 *)&((ObjectData *)o)->f164 = *(Vector3 *)&((ObjectData *)o)->f3c;
     *(Vector3 *)&((ObjectData *)o)->f48 = *(Vector3 *)&((ObjectData *)o)->f3c;
-    update_object_center((void *)o);
+    update_object_center(o);
     ((ObjectData *)o)->f38 = (int)(g_8c4da620->f42c->f08);
     ((ObjectData *)o)->f28 = (int)(g_8c4da620->f42c->f0c);
     ((ObjectData *)o)->f30a = 0;
@@ -133,7 +134,7 @@ extern "C" Object *TOTrapAncient02R_ctor_8c14d450(Object *o, int a1)
             }
         }
     }
-    call_8c14df2c(o);
+    hs_8c14df2c(o);
     ((ObjectData *)o)->f380 = (int)((ObjectData *)o)->f70;
     if (1 > ((ObjectData *)o)->f380) {
         ((ObjectData *)o)->f380 = 1;

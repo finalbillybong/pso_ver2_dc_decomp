@@ -6,7 +6,7 @@
  * compiled size: 104 bytes (+0.0%)
  * differing lines: 4 of 39 reference instruction lines
  * differing bytes: 4
- * provenance: generator draft (mode switch2)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -34,21 +34,22 @@ typedef struct ObjectData {
     char unknown0[0x6c];
     Arg0_6c *f6c;
 } ObjectData;
-extern "C" int lookup_low_id(int);
-extern "C" void draw_view_transition_if_active(void *);
-extern "C" void call_8c0db5d4(Object *, int);
-extern "C" void draw_view_nodes(void *, void *, void *);
-extern "C" void call_8c192c20(void *, int);
+extern S_g8c418248 *g_8c418248;
+extern "C" int lookup_low_id(void *);
+extern "C" void draw_view_transition_if_active(Object *);
+extern "C" void hs_8c0db5d4(Object *, int);
+extern "C" void draw_view_nodes(Object *, void *, int);
+extern "C" void hs_8c192c20(void *, int);
 extern "C" void TWindowSubStatusDisp_render_8c194158(Object *o)
 {
     int t1;
     int t2;
-    t1 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));
+    t1 = lookup_low_id(g_8c418248);
     if (t1 != 0) {
         t2 = o->v5();
-        draw_view_transition_if_active((void *)o);
-        call_8c0db5d4(o, t2);
-        draw_view_nodes((void *)o, (void *)(((char *)o + 0x2c)), (void *)t2);
-        call_8c192c20((void *)(((ObjectData *)o)->f6c), t2);
+        draw_view_transition_if_active(o);
+        hs_8c0db5d4(o, t2);
+        draw_view_nodes(o, ((char *)o + 0x2c), t2);
+        hs_8c192c20(((ObjectData *)o)->f6c, t2);
     }
 }

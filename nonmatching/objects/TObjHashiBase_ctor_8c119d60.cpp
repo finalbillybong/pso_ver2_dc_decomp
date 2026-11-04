@@ -6,10 +6,11 @@
  * compiled size: 200 bytes (+0.0%)
  * differing lines: 4 of 70 reference instruction lines
  * differing bytes: 25
- * provenance: generator draft (mode switch2)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TObjHashiBase.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -48,14 +49,15 @@ typedef struct ObjectData {
     float f104;
     float f108;
 } ObjectData;
-extern "C" void operation_8c0ee870(void *);
+extern int g_8c3107e8;
+extern "C" void operation_8c0ee870(Object *);
 extern "C" Object *TObjHashiBase_ctor_8c119d60(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;
-    operation_8c0ee870((void *)o);
+    operation_8c0ee870(o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c26a014;
-    ((ObjectData *)o)->tag = (int)(*(int *)0x8c3107e8);
+    ((ObjectData *)o)->tag = (int)(g_8c3107e8);
     ((ObjectData *)o)->size = 0x10c;
     o->v6(a2);
     ((ObjectData *)o)->fe4 = 0;

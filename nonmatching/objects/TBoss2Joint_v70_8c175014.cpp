@@ -6,10 +6,11 @@
  * compiled size: 188 bytes (+6.8%)
  * differing lines: 64 of 64 reference instruction lines
  * differing bytes: 141
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +12 bytes
+ * class header: src/include/classes/TBoss2Joint.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -147,14 +148,14 @@ typedef struct ObjectData {
     char unknown3ac[0x4];
     int f3b0;
 } ObjectData;
-extern "C" void operation_8c175268(void *, int);
+extern "C" void operation_8c175268(Object *, int);
 extern "C" void operation_8c145184(void *, float, float);
 extern "C" void operation_8c144bc4(void *, int, int);
-extern "C" void reset_segments_8c05a124(void *);
+extern "C" void reset_segments_8c05a124(Object *);
 extern "C" void TBoss2Joint_v70_8c175014(Object *o)
 {
     if (((((ObjectData *)o)->f3a8 & 1)) == 0) {
-        operation_8c175268((void *)o, 0);
+        operation_8c175268(o, 0);
         *(int *)((char *)o + 0x3b0) -= ((ObjectData *)o)->f198 - ((ObjectData *)o)->f330;
         if (((ObjectData *)o)->f3b0 > 0) {
             goto L_8c17507e;
@@ -162,10 +163,10 @@ extern "C" void TBoss2Joint_v70_8c175014(Object *o)
         ((ObjectData *)o)->f3b0 = 0;
         o->v109();
     } else {
-        operation_8c145184((void *)(((char *)o + 0x3c)), 15.0f, 12.0f);
-        operation_8c144bc4((void *)(((ObjectData *)o)->f10), (int)(((ObjectData *)o)->f198 - ((ObjectData *)o)->f330), (int)(((ObjectData *)o)->f1b6));
+        operation_8c145184(((char *)o + 0x3c), 15.0f, 12.0f);
+        operation_8c144bc4(((ObjectData *)o)->f10, ((ObjectData *)o)->f198 - ((ObjectData *)o)->f330, ((ObjectData *)o)->f1b6);
     }
 L_8c17507e:;
     ((ObjectData *)o)->f330 = ((ObjectData *)o)->f198;
-    reset_segments_8c05a124((void *)o);
+    reset_segments_8c05a124(o);
 }

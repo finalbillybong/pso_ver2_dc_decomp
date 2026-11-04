@@ -100,6 +100,23 @@ class NonmatchingArchiveTests(unittest.TestCase):
         self.assertEqual(nonmatching.check(root), [])
         self.assertEqual(nonmatching.regenerate(root), [])
 
+    def test_class_header_pointer_is_added_and_checked(self):
+        root = self.fixture(names=[('0x8c001000', 'TObjThing_update')])
+        (root / 'src/include/classes').mkdir(parents=True)
+        (root / 'src/include/classes/TObjThing.h').write_text('struct TObjThing;\n')
+        (root / 'src/include/classes/TObj.h').write_text('struct TObj;\n')
+        nonmatching.regenerate(root)
+        text = (root / 'nonmatching/objects/TObjThing_update_8c001000.c').read_text()
+        self.assertIn(' * class header: src/include/classes/TObjThing.h ', text)
+        self.assertLess(text.index('class header:'), text.index('*/'))
+        self.assertIn('TObjThing_update_8c001000(int a)', text)  # the draft keeps its own types
+        self.assertEqual(nonmatching.check(root), [])
+        (root / 'src/include/classes/TObjThing.h').unlink()
+        self.assertIn('class header should be', '\n'.join(nonmatching.check(root)))
+        nonmatching.regenerate(root)
+        self.assertNotIn('class header:', (root / 'nonmatching/objects/TObjThing_update_8c001000.c').read_text())
+        self.assertEqual(nonmatching.check(root), [])
+
     def test_publication_allowlist(self):
         self.assertFalse(issues('nonmatching/objects/operation_8c001000.c', b'int x;'))
         self.assertFalse(issues('nonmatching/README.md', b'archive'))

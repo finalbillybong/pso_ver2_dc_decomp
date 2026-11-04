@@ -4,13 +4,14 @@
  * language: c++
  * reference size: 392 bytes
  * compiled size: 392 bytes (+0.0%)
- * differing lines: 4 of 146 reference instruction lines
- * differing bytes: 2
+ * differing lines: 2 of 146 reference instruction lines
+ * differing bytes: 8
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   register allocation, instruction scheduling, instruction or operand order, constant loading;
  *   review found and fixed behaviour defects of the generator draft; not proven equivalent to the
  *   original
+ * class header: src/include/classes/TObjNpcLappy.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -191,9 +192,10 @@ extern "C" Object *TObjNpcLappy_ctor_8c15d8d4(Object *o, int a1, int a2)
     *dst = *src;
     *(Vector3 *)&((ObjectData *)o)->f48 = *src;
     o->v93(0, 1);
+    void (*fn)(Object *, void *, void *, short) = hs_8c01c908;
     ((ObjectData *)o)->f38 = (int)(g_8c467220->f42c->f08);
     ((ObjectData *)o)->f28 = (int)(g_8c467220->f42c->f0c);
-    hs_8c01c908(o, (void *)((void *)0x8c316848), (void *)(g_8c467220->f430), ((ObjectData *)o)->ff0);
+    fn(o, (void *)((void *)0x8c316848), (void *)(g_8c467220->f430), ((ObjectData *)o)->ff0);
     ((ObjectData *)o)->f36c = (void *)(void *)0x8c311bec;
     call_8c043ca4(o, (void *)((void *)0x8c311bc8));
     copy_actor_records((void *)o, (void *)((void *)0x8c3168e8), 1);

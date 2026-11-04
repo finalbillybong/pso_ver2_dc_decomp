@@ -6,10 +6,11 @@
  * compiled size: 148 bytes (+0.0%)
  * differing lines: 8 of 64 reference instruction lines
  * differing bytes: 27
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TItemWpnYasuMachineGun.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -86,6 +87,6 @@ extern "C" void TItemWpnYasuMachineGun_v49_8c24fab0(Object *o)
     } else {
         o->v48(((char *)o + 0x250), 0, 0, 1);
     }
-    create_effect_777c((void *)(((char *)o + 0x244)), 9);
-    create_effect_777c((void *)(((char *)o + 0x250)), 9);
+    create_effect_777c(((char *)o + 0x244), 9);
+    create_effect_777c(((char *)o + 0x250), 9);
 }

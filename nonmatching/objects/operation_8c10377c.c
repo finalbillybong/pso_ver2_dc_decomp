@@ -6,7 +6,7 @@
  * compiled size: 252 bytes (+1.6%)
  * differing lines: 30 of 95 reference instruction lines
  * differing bytes: 179
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +4 bytes
@@ -44,9 +44,9 @@ struct Frame {
 };
 extern S_g8c46fe00 *g_8c46fe00;
 extern void sq_select_8c38aeb4(int);
-extern void call_8c3827d8(void *);
+extern void hs_8c3827d8(void *);
 extern void sq_header_8c38af22(int, int);
-extern void scale_rectangle_fields(void *, void *);
+extern void scale_rectangle_fields(Arg1 *, Frame *);
 extern void sq_quad_8c38b09e(Frame *, float);
 extern void sq_flush_8c38af12(void);
 void operation_8c10377c(Object *o, Arg1 *a1)
@@ -58,7 +58,7 @@ void operation_8c10377c(Object *o, Arg1 *a1)
         v1 = (float)-1.0f;
         v2 = (float)(v1 / o->f5c);
         sq_select_8c38aeb4(1);
-        call_8c3827d8(g_8c46fe00);
+        hs_8c3827d8(g_8c46fe00);
         sq_header_8c38af22(2, -1);
         (&frame)->f00 = o->f48 + 9.0f;
         (&frame)->f04 = o->f4c + 13.0f;
@@ -68,8 +68,8 @@ void operation_8c10377c(Object *o, Arg1 *a1)
         (&frame)->f14 = 0.0f;
         (&frame)->f18 = 0.6171875f;
         (&frame)->f1c = 0.41796875f;
-        scale_rectangle_fields((void *)a1, (void *)(&frame));
-        sq_quad_8c38b09e((Frame *)((&frame)), v2);
+        scale_rectangle_fields(a1, (&frame));
+        sq_quad_8c38b09e((&frame), v2);
         sq_flush_8c38af12();
     }
 }

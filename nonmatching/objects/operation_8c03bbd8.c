@@ -4,7 +4,7 @@
  * language: c
  * reference size: 112 bytes
  * compiled size: 112 bytes (+0.0%)
- * differing lines: 4 of 49 reference instruction lines
+ * differing lines: 4 of 48 reference instruction lines
  * differing bytes: 8
  * provenance: hand pass on a generator draft
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not

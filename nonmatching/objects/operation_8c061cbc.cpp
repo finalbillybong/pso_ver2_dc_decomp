@@ -4,12 +4,11 @@
  * language: c++
  * reference size: 388 bytes
  * compiled size: 388 bytes (+0.0%)
- * differing lines: 38 of 145 reference instruction lines
- * differing bytes: 43
- * provenance: hand pass on a generator draft (behaviour reviewed)
- * known gaps: hand-revised from a generator draft; remaining differences not classified; review
- *   found and fixed behaviour defects of the generator draft; not proven equivalent to the
- *   original
+ * differing lines: 22 of 145 reference instruction lines
+ * differing bytes: 38
+ * provenance: hand pass on a generator draft
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -171,47 +170,80 @@ extern "C" void operation_8c0610c8(void *, int);
 extern "C" void call_8c05c0dc(Object *, float);
 extern "C" void operation_8c061cbc(Object *o, int a1)
 {
+    int t1;
+    ObjectData *pm11;
+    void *pm10;
+    int pm6;
+    ObjectData *pm5;
     S_vv1 *v1;
     float v2;
-    int t1;
-    float t2;
+    void *pm13;
+    int pm3;
+    int pm9;
+    float pm4;
+    float pm8;
+    int pm20;
+    int pm19;
+    float pm15;
+    int pm12;
     v1 = (S_vv1 *)((char *)o + 0x438);
     switch (a1) {
-    case 5:
+        case 5:
         break;
-    case 4:
-        ((ObjectData *)o)->ff0 = 5;
-        operation_8c059ef8((void *)o, 7);
+        case 4:
+        pm5 = (ObjectData *)o;
+        pm6 = 7;
+        (pm5)->ff0 = (short)5;
+        operation_8c059ef8((void *)o, pm6);
         o->v101();
-        v1->f00 = 0;
+        pm19 = 0;
+        v1->f00 = pm19;
         return;
-    case 3:
+        case 3:
         if (!(v1->f00 > 0x3c)) {
             return;
         }
-        operation_8c059ea4((void *)o, 7);
+        pm9 = 7;
+        operation_8c059ea4((void *)o, pm9);
         return;
-    case 0:
+        case 0:
         v1->f00 += 1;
+        pm10 = (void *)o;
         operation_8c01c5f0(o);
-        check_range_8c01cf68((void *)o, 7.0f);
-        t1 = operation_8c05c1f0(o);
+        check_range_8c01cf68(pm10, 7.0f);
+        pm12 = operation_8c05c1f0(o);
+        pm20 = pm12;
+        t1 = pm20;
         if (t1 != 0) {
-            operation_8c05c184((void *)o);
+            float pm16;
+            float pm17;
+            ObjectData *pm14;
+            float pm7;
+            float pm2;
+            pm13 = (void *)o;
+            operation_8c05c184(pm13);
             aim_direction_8c05bdd4((void *)o);
             njSin_8c37eb0c((void *)(((ObjectData *)o)->f64));
-            {
-                float k = 0.0f;
-                v2 = ((ObjectData *)o)->f3c + k;
-            }
+            pm4 = 0.0f;
+            pm14 = (ObjectData *)o;
+            pm11 = pm14;
+            v2 = (pm11)->f3c;
+            v2 = pm4 + v2;
             njCos_8c38c154((void *)(((ObjectData *)o)->f64));
-            {
-                float k = 0.0f;
-                t2 = call_8c130334(((ObjectData *)o)->f3ac->f3c - v2, ((ObjectData *)o)->f3ac->f44 - (((ObjectData *)o)->f44 + k));
-            }
-            operation_8c0610c8((void *)o, (int)((int)(t2 * 65536.0f / 6.28318405f)));
+            pm2 = ((ObjectData *)o)->f3ac->f3c;
+            pm16 = 0.0f;
+            pm8 = ((ObjectData *)o)->f3ac->f44;
+            pm15 = pm16;
+            pm17 = call_8c130334(pm2 - v2, pm8 - (pm15 + ((ObjectData *)o)->f44));
+            pm4 = 65536.0f * pm17;
+            pm7 = pm4 / 6.28318405f;
+            operation_8c0610c8((void *)o, ((int)(pm7)));
         } else {
-            if (((ObjectData *)o)->f3f4 != 0) {
+            pm11 = (ObjectData *)o;
+            a1 = (pm11)->f3f4;
+            pm3 = a1;
+            t1 = pm3;
+            if (!(0 == t1)) {
                 call_8c05c0dc(o, 350.0f);
             } else {
                 call_8c05c0dc(o, 250.0f);

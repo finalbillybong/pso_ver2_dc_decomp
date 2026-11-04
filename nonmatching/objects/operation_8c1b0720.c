@@ -4,8 +4,8 @@
  * language: c
  * reference size: 296 bytes
  * compiled size: 300 bytes (+1.4%)
- * differing lines: 56 of 120 reference instruction lines
- * differing bytes: 134
+ * differing lines: 52 of 120 reference instruction lines
+ * differing bytes: 127
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   register allocation, instruction scheduling, constant loading; review found and fixed
@@ -46,56 +46,50 @@ extern char g_8c4e23a4[];
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(int);
 extern int rand(void);
+extern int g_8c4e23ec[];
+extern char g_8c4e243c[];
+extern int g_8c4e27fc[];
 void operation_8c1b0720(void)
 {
-    int v3;
-    int v2;
-    int v6;
-    int v1;
-    int v4;
-    S_vv5 *v5;
-    S_vv7 *v7;
-    int v8;
-    int v9;
+    int i;
+    int a;
+    int off;
+    int n;
+    int *p;
+    S_vv7 *q;
+    int j;
+    int c;
     float t1;
     float t2;
     int t3;
     int t4;
-    v1 = (int)0;
-    while (6 > v1) {
-        v2 = (int)(int)((float)v1 * 10922.667f);
-        t1 = njSin_8c37eb0c(v2);
-        v3 = (int)(v1 * 0xc);
-        ((S_x29456 *)(v3 + g_8c4e23a4))->f00 = t1 * 0.7f;
-        ((S_x28240 *)(v3 + (char *)(g_8c4e23a4 + 0x4)))->f00 = (float)v1 * 0.0833333358f;
-        t2 = njCos_8c38c154(v2);
-        ((S_x49296 *)(v3 + (char *)(g_8c4e23a4 + 0x8)))->f00 = t2 * 0.7f;
-        v1 = (int)(v1 + 1);
+    for (i = 0; 6 > i; i++) {
+        a = (int)((float)i * 10922.667f);
+        t1 = njSin_8c37eb0c(a);
+        off = i * 0xc;
+        ((S_x29456 *)(off + g_8c4e23a4))->f00 = t1 * 0.7f;
+        ((S_x28240 *)(off + (char *)(g_8c4e23a4 + 0x4)))->f00 = (float)i * 0.0833333358f;
+        t2 = njCos_8c38c154(a);
+        ((S_x49296 *)(off + (char *)(g_8c4e23a4 + 0x8)))->f00 = t2 * 0.7f;
     }
-    v4 = (int)(void *)0x8c4e23ec;
-    v5 = (S_vv5 *)v4;
-    v6 = (int)0;
-    while (0x14 > v6) {
+    p = g_8c4e23ec;
+    for (n = 0; 0x14 > n; n++) {
         t3 = rand();
-        v5->f00 = (int)((float)t3 / 32768.0f * 65536.0f);
-        v6 = (int)(v6 + 1);
-        v5 = (S_vv5 *)((char *)v5 + 4);
+        *p = (int)((float)t3 / 32768.0f * 65536.0f);
+        p++;
     }
-    v7 = (S_vv7 *)(void *)0x8c4e243c;
-    v8 = (int)0;
-    while (0x3c > v8) {
-        v7->f00 = 0.0f;
-        v7->f04 = 0.0f;
-        v7->f08 = 0.0f;
-        v7->f0c = -0x8f6f90;
-        v8 = (int)(v8 + 1);
-        v7 = (S_vv7 *)((char *)v7 + 16);
+    q = (S_vv7 *)g_8c4e243c;
+    c = -0x8f6f90;
+    for (j = 0; 0x3c > j; j++) {
+        q->f00 = 0.0f;
+        q->f04 = 0.0f;
+        q->f08 = 0.0f;
+        q->f0c = c;
+        q++;
     }
-    v9 = (int)0;
-    while (0xa > v9) {
+    for (i = 0; 0xa > i; ) {
         t4 = rand();
-        *(int *)((char *)0x8c4e27fc + (v9 << 2)) = (int)((float)t4 / 32768.0f * 65536.0f);
-        v9 = (int)(v9 + 1);
+        *(int *)((char *)g_8c4e27fc + (i++ << 2)) = (int)((float)t4 / 32768.0f * 65536.0f);
     }
     g_8c4e23a0 = 0;
 }

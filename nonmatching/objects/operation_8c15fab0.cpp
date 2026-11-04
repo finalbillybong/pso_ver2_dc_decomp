@@ -6,10 +6,9 @@
  * compiled size: 472 bytes (-0.8%)
  * differing lines: 18 of 210 reference instruction lines
  * differing bytes: 139
- * provenance: hand pass on a generator draft (behaviour reviewed)
- * known gaps: hand-revised from a generator draft; remaining differences not classified; review
- *   found and fixed behaviour defects of the generator draft; not proven equivalent to the
- *   original; compiled size differs from the reference by -4 bytes
+ * provenance: hand pass on a generator draft
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original; compiled size differs from the reference by -4 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {

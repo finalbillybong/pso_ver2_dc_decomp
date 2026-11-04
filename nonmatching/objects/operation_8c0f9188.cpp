@@ -6,7 +6,7 @@
  * compiled size: 396 bytes (+0.0%)
  * differing lines: 54 of 155 reference instruction lines
  * differing bytes: 218
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -21,7 +21,7 @@ typedef struct S_L8c285bc8 S_L8c285bc8;
 typedef struct S_L8c285bd4 S_L8c285bd4;
 typedef struct Frame Frame;
 typedef struct Object Object;
-typedef struct S_x67056 S_x67056;
+typedef struct S_x63632 S_x63632;
 struct Object {
     char unknown0[0x3a0];
     int f3a0;
@@ -49,7 +49,7 @@ struct S_L8c285bc8 {
 struct Frame {
     Vector3 f00;
 };
-struct S_x67056 {
+struct S_x63632 {
     Vector3 f00;
 };
 struct PmfObj {
@@ -60,7 +60,7 @@ extern S_L8c285bc8 g_8c285bc8;
 extern S_L8c285bd4 g_8c285bd4;
 extern "C" char g_8c30a484[];
 extern "C" float njSin_8c37eb0c(int);
-extern "C" void call_8c18e6fc(Frame *);
+extern "C" void hs_8c18e6fc(Frame *);
 extern "C" void operation_8c0f9188(Object *o)
 {
     Frame frame;
@@ -79,7 +79,7 @@ extern "C" void operation_8c0f9188(Object *o)
         v1 = (float)(v1 - v2);
         v1 = (float)(v1 / 0.199999988f);
     }
-    t1 = njSin_8c37eb0c((int)(o->f3ac << 0xa));
+    t1 = njSin_8c37eb0c(o->f3ac << 0xa);
     v29 = (float)(v1 * (t1 * 0.15f));
     o->f3c4 *= v29 + 1.0f;
     o->f3cc *= 1.0f - v29;
@@ -93,8 +93,8 @@ extern "C" void operation_8c0f9188(Object *o)
     o->f3b4 = v30;
     if (0.0f > v30) {
         o->f3a0 = 0;
-        *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((S_x67056 *)(o->f3a0 * 0x18 + g_8c30a484))->f00;
-        call_8c18e6fc((Frame *)((&frame)));
+        *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((S_x63632 *)(o->f3a0 * 0x18 + g_8c30a484))->f00;
+        hs_8c18e6fc((&frame));
         (((PmfObj *)(o))->*(*(PMF_0 *)((&frame))))();
     }
 }

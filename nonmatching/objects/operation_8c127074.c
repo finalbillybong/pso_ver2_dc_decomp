@@ -6,7 +6,7 @@
  * compiled size: 172 bytes (+0.0%)
  * differing lines: 26 of 67 reference instruction lines
  * differing bytes: 34
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -35,8 +35,8 @@ struct Arg2 {
 extern void njPushMatrixEx_8c38ae68(void);
 extern void njUnitMatrix_8c37b5c4(int);
 extern void njRotateY_8c37df90(int, int);
-extern void call_8c3be280(int, Arg2 *, Arg2 *);
-extern void call_8c3bdf60(Arg2 *, void *);
+extern void hs_8c3be280(int, Arg2 *, Arg2 *);
+extern void hs_8c3bdf60(Arg2 *, void *);
 extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c127074(Object *o, int a1, Arg2 *a2, Arg3 *a3)
 {
@@ -49,7 +49,7 @@ void operation_8c127074(Object *o, int a1, Arg2 *a2, Arg3 *a3)
     a2->f08 = 13.0f;
     njUnitMatrix_8c37b5c4(0);
     njRotateY_8c37df90(0, v1);
-    call_8c3be280(0, a2, a2);
-    call_8c3bdf60(a2, (void *)(((char *)o + 0x3c)));
+    hs_8c3be280(0, a2, a2);
+    hs_8c3bdf60(a2, ((char *)o + 0x3c));
     njPopMatrixEx_8c38ad10();
 }

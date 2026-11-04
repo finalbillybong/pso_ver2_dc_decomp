@@ -6,10 +6,11 @@
  * compiled size: 316 bytes (+0.0%)
  * differing lines: 10 of 116 reference instruction lines
  * differing bytes: 136
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TOKeyAncient03.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -85,20 +86,20 @@ struct Arg0_38_4 {
 extern int g_8c312df4;
 extern S_g8c4d9b20 *g_8c4d9b20;
 extern S_g8c4d9b24 *g_8c4d9b24;
-extern "C" void TOKey_ctor_8c112e74(void *);
-extern "C" void operation_8c112f78(void *);
+extern "C" void TOKey_ctor_8c112e74(Object *);
+extern "C" void operation_8c112f78(Object *);
 extern "C" int get_game_mode_8c01c25c(void);
 extern "C" Object *TOKeyAncient03_ctor_8c13616c(Object *o, int a1, int a2)
 {
     Object **home = &o;
     int t1;
     (void)home;
-    TOKey_ctor_8c112e74((void *)o);
+    TOKey_ctor_8c112e74(o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c26cf24;
     ((ObjectData *)o)->tag = (int)(g_8c312df4);
     ((ObjectData *)o)->size = 0x130;
     o->v6(a2);
-    operation_8c112f78((void *)o);
+    operation_8c112f78(o);
     ((ObjectData *)o)->f28 = (int)(g_8c4d9b24->f00);
     ((ObjectData *)o)->f38 = (Arg0_38 *)g_8c4d9b20->f42c->f08;
     ((ObjectData *)o)->ff8 = 400.0f;

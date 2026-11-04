@@ -6,7 +6,7 @@
  * compiled size: 40 bytes (+0.0%)
  * differing lines: 16 of 17 reference instruction lines
  * differing bytes: 21
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original

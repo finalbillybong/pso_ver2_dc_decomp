@@ -6,7 +6,7 @@
  * compiled size: 100 bytes (-10.7%)
  * differing lines: 58 of 45 reference instruction lines
  * differing bytes: 95
- * provenance: generator draft (mode extern)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -12 bytes
@@ -30,7 +30,7 @@ struct Arg1 {
 struct S_vv3 {
     char f00;
 };
-extern int call_8c1f72f0(char, Arg1 *);
+extern int hs_8c1f72f0(char, Arg1 *);
 int operation_8c1f3a58(int a0, Arg1 *a1, int a2)
 {
     int *home2 = &a2;
@@ -44,7 +44,7 @@ int operation_8c1f3a58(int a0, Arg1 *a1, int a2)
     v3 = (S_vv3 *)a0;
     v1 = (int)1;
     while (v4->f01 != 0 && v2 > 0) {
-        t1 = call_8c1f72f0(a1->f00, a1);
+        t1 = hs_8c1f72f0(a1->f00, a1);
         v4 = (S_vv4 *)a1;
         if (t1 != 0) {
             if (!(v2 > v1)) {

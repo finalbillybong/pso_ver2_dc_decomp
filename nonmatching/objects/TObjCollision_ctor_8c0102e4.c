@@ -6,10 +6,11 @@
  * compiled size: 364 bytes (+2.2%)
  * differing lines: 172 of 140 reference instruction lines
  * differing bytes: 311
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +8 bytes
+ * class header: src/include/classes/TObjCollision.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -76,10 +77,10 @@ struct Arg0_s6c {
     int f08;
 };
 extern int g_8c2e20d8;
-extern void operation_8c051eb8(void *);
-extern float call_8c12c714(float);
-extern void copy_actor_records(void *, void *, int);
-extern void attach_and_insert_object(void *);
+extern void operation_8c051eb8(Object *);
+extern float hs_8c12c714(float);
+extern void copy_actor_records(Object *, void *, int);
+extern void attach_and_insert_object(Object *);
 Object *TObjCollision_ctor_8c0102e4(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
@@ -89,7 +90,7 @@ Object *TObjCollision_ctor_8c0102e4(Object *o, int a1, Arg2 *a2)
     int v1;
     float t1;
     (void)home;
-    operation_8c051eb8((void *)o);
+    operation_8c051eb8(o);
     o->dispatch = (void *)0x8c260ecc;
     o->tag = (int)(g_8c2e20d8);
     o->size = 0x110;
@@ -112,13 +113,13 @@ Object *TObjCollision_ctor_8c0102e4(Object *o, int a1, Arg2 *a2)
     v1 = (int)(0.0f > o->f74);
     o->ff8 = (int)(v1);
     o->ffc = 0x20001;
-    t1 = call_8c12c714(o->f74);
+    t1 = hs_8c12c714(o->f74);
     if (1000.0f > t1) {
         o->ffc &= -0x201;
     } else {
         o->ffc |= 0x200;
     }
-    copy_actor_records((void *)o, (void *)(&o->fe4), 1);
-    attach_and_insert_object((void *)o);
+    copy_actor_records(o, &o->fe4, 1);
+    attach_and_insert_object(o);
     return o;
 }

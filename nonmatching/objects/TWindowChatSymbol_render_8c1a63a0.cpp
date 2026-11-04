@@ -6,10 +6,11 @@
  * compiled size: 160 bytes (+2.6%)
  * differing lines: 24 of 66 reference instruction lines
  * differing bytes: 75
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +4 bytes
+ * class header: src/include/classes/TWindowChatSymbol.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -45,8 +46,8 @@ typedef struct ObjectData {
     char unknown58[0xc];
     int f64;
 } ObjectData;
-extern "C" void call_8c0dbdf4(Object *, S_c0 *);
-extern "C" void draw_view_nodes(void *, void *, void *);
+extern "C" void hs_8c0dbdf4(Object *, S_c0 *);
+extern "C" void draw_view_nodes(Object *, void *, S_c0 *);
 extern "C" void TWindowChatSymbol_render_8c1a63a0(Object *o)
 {
     S_c0 *t1;
@@ -55,8 +56,8 @@ extern "C" void TWindowChatSymbol_render_8c1a63a0(Object *o)
         t1->f28 = (float)((ObjectData *)o)->f64 / 7.5f;
         t1->f2c = t1->f28;
     }
-    call_8c0dbdf4(o, t1);
+    hs_8c0dbdf4(o, t1);
     t1->f10 += (((ObjectData *)o)->f50 - 146.0f) * 0.5f;
     t1->f14 += (((ObjectData *)o)->f54 - 96.0f) * 0.5f;
-    draw_view_nodes((void *)o, (void *)(((char *)o + 0x2c)), (void *)t1);
+    draw_view_nodes(o, ((char *)o + 0x2c), t1);
 }

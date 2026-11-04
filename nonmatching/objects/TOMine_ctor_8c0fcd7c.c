@@ -6,10 +6,11 @@
  * compiled size: 208 bytes (+0.0%)
  * differing lines: 10 of 65 reference instruction lines
  * differing bytes: 18
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TOMine.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -46,10 +47,10 @@ struct Object {
     int f38c;
 };
 extern int g_8c30ab04;
-extern void call_8c043418(Object *);
+extern void hs_8c043418(Object *);
 Object *TOMine_ctor_8c0fcd7c(Object *o)
 {
-    call_8c043418(o);
+    hs_8c043418(o);
     o->dispatch = (void *)0x8c269238;
     o->tag = (int)(g_8c30ab04);
     o->size = 0x390;

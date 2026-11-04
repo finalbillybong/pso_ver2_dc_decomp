@@ -3,13 +3,12 @@
  * function: operation_8c130e20
  * language: c++
  * reference size: 268 bytes
- * compiled size: 268 bytes (+0.0%)
- * differing lines: 22 of 103 reference instruction lines
- * differing bytes: 26
- * provenance: hand pass on a generator draft (behaviour reviewed)
- * known gaps: hand-revised from a generator draft; remaining differences not classified; review
- *   found and fixed behaviour defects of the generator draft; not proven equivalent to the
- *   original
+ * compiled size: 264 bytes (-1.5%)
+ * differing lines: 20 of 103 reference instruction lines
+ * differing bytes: 121
+ * provenance: hand pass on a generator draft
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original; compiled size differs from the reference by -4 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -64,31 +63,54 @@ extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void call_8c130f2c(Object *);
 extern "C" void operation_8c130e20(Object *o)
 {
-    int t1;
+    float pm5;
+    int pm3;
     int t2;
+    ObjectData *pm6;
+    int t1;
+    Arg0_38 *pm7;
+    void *pm8;
+    ObjectData *pm9;
+    ObjectData *pm4;
+    void *pm11;
+    float pm12;
+    int pm13;
     t1 = o->v11(((ObjectData *)o)->ff8, ((ObjectData *)o)->ffc);
     if (t1 != 0) {
-        t2 = operation_8c0eeb00((void *)o, 30.0f);
+        t1 = operation_8c0eeb00((void *)o, 30.0f);
+        t2 = t1;
         if (t2 != 0) {
             switch (((ObjectData *)o)->fe4) {
-            case 1:
-            case 3:
+                case 1:
+                case 3:
                 njPushMatrixEx_8c38ae68();
                 translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-                njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
-                call_8c3827d8((void *)(((ObjectData *)o)->f28));
-                call_8c3addea((void *)(((ObjectData *)o)->f38), ((ObjectData *)o)->fe8, (void *)(((ObjectData *)o)->ff4));
+                pm9 = (ObjectData *)o;
+                pm6 = pm9;
+                pm13 = 0;
+                pm3 = pm13;
+                pm11 = (void *)(((ObjectData *)o)->f64);
+                njRotateY_8c37df90(pm3, pm11);
+                pm11 = (void *)(((ObjectData *)o)->f28);
+                call_8c3827d8(pm11);
+                call_8c3addea((void *)((pm6)->f38), ((ObjectData *)o)->fe8, (void *)(((ObjectData *)o)->ff4));
                 njPopMatrixEx_8c38ad10();
                 return;
-            case 2:
+                case 2:
                 njPushMatrixEx_8c38ae68();
-                translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
+                pm4 = (ObjectData *)o;
+                pm11 = (void *)(((char *)o + 0x3c));
+                translate_current_matrix_v_8c382a40(pm11);
                 njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
                 call_8c3827d8((void *)(((ObjectData *)o)->f28));
-                call_8c3addea((void *)(((ObjectData *)o)->f38), ((ObjectData *)o)->fec - 1.0f, (void *)(((ObjectData *)o)->ff4));
+                pm8 = (void *)((pm4)->ff4);
+                pm7 = ((ObjectData *)o)->f38;
+                pm12 = ((ObjectData *)o)->fec;
+                pm5 = pm12 - 1.0f;
+                call_8c3addea((void *)(pm7), pm5, pm8);
                 njPopMatrixEx_8c38ad10();
                 return;
-            case 0:
+                case 0:
                 call_8c130f2c(o);
             }
         }

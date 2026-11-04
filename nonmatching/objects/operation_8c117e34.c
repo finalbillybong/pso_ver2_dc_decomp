@@ -4,8 +4,8 @@
  * language: c
  * reference size: 440 bytes
  * compiled size: 440 bytes (+0.0%)
- * differing lines: 126 of 200 reference instruction lines
- * differing bytes: 108
+ * differing lines: 120 of 200 reference instruction lines
+ * differing bytes: 134
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   register allocation, instruction scheduling, instruction or operand order, constant loading;
@@ -53,6 +53,7 @@ void operation_8c117e34(int a0, Wave *w, float *out)
     int n0;
     int per;
     int b;
+    b = -0x4000;
     flags = w->flags;
     if (flags & 1) {
         call_8c1224c8(w, out);
@@ -60,7 +61,6 @@ void operation_8c117e34(int a0, Wave *w, float *out)
     }
     if (flags & 2) {
         clear(out);
-        b = -0x4000;
         for (k = 0; k < w->count; k++) {
             amp = *(float *)((char *)w->p + (k + 1 << 3)) * 0.5f;
             phase = b + (*(unsigned char *)((char *)&w->h[0].a + (k << 1)) << 9);
@@ -83,7 +83,7 @@ void operation_8c117e34(int a0, Wave *w, float *out)
         cnt = 0;
         for (j = 0x7f; j >= 0;) {
             if (state == 0) {
-                *(float *)((char *)out + (j << 2)) = amp * (njSin_8c37eb0c(-0x4000 + cnt * per) + 1.0f) + base;
+                *(float *)((char *)out + (j << 2)) = amp * (njSin_8c37eb0c(cnt * per + b) + 1.0f) + base;
                 cnt++;
                 j--;
                 if (cnt >= n1) {

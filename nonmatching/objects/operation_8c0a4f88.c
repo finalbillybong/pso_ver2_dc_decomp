@@ -6,7 +6,7 @@
  * compiled size: 196 bytes (+0.0%)
  * differing lines: 8 of 65 reference instruction lines
  * differing bytes: 14
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -43,10 +43,10 @@ struct Object {
 };
 extern int g_8c46f0c0;
 extern int g_8c46f0c4;
-extern void initialize_follow_base(void *);
+extern void initialize_follow_base(Object *);
 Object *operation_8c0a4f88(Object *o)
 {
-    initialize_follow_base((void *)o);
+    initialize_follow_base(o);
     o->dispatch = (void *)0x8c265bb8;
     o->f3c = 0;
     g_8c46f0c4 = 0;

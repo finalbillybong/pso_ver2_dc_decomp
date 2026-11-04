@@ -3,14 +3,14 @@
  * function: operation_8c21721c
  * language: c
  * reference size: 268 bytes
- * compiled size: 264 bytes (-1.5%)
- * differing lines: 8 of 103 reference instruction lines
- * differing bytes: 188
+ * compiled size: 268 bytes (+0.0%)
+ * differing lines: 6 of 103 reference instruction lines
+ * differing bytes: 8
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   register allocation, instruction scheduling, instruction or operand order, constant loading;
  *   review found and fixed behaviour defects of the generator draft; not proven equivalent to the
- *   original; compiled size differs from the reference by -4 bytes
+ *   original
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -58,12 +58,12 @@ int operation_8c21721c(Object *o, int a1)
     int t2;
     int t3;
     t2 = operation_8c1cdc80((void *)a1);
-    v1 = -1;
-    v6 = v1;
+    v6 = -1;
     g_8c46fe24 = (unsigned int)g_8c46fe24 >> 1 << 1;
     operation_8c1cdcdc((void *)a1);
     operation_8c1cdc94((void *)a1);
     v2 = (int)g_8c504a24;
+    v1 = -1;
     for (v3 = v2 + v1; v3 >= 0; v3--) {
         t1 = recordb4_8c20a5bc(v3);
         operation_8c1cd7c8(a1, t1->fb1, (void *)(((char *)t1 + 0x8)), (void *)(t1->f04));

@@ -6,7 +6,7 @@
  * compiled size: 56 bytes (+21.7%)
  * differing lines: 22 of 23 reference instruction lines
  * differing bytes: 36
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +10 bytes
@@ -17,8 +17,8 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern int call_8c2045b4(int, int, int);
-extern int call_8c204dc2(void);
+extern int hs_8c2045b4(int, int, int);
+extern int hs_8c204dc2(void);
 int operation_8c205b14(int a0, int a1, int a2, int a3)
 {
     int v1;
@@ -31,11 +31,11 @@ int operation_8c205b14(int a0, int a1, int a2, int a3)
             return (int)(a3);
         }
     } else {
-        t1 = call_8c2045b4(a0, a1, a2);
+        t1 = hs_8c2045b4(a0, a1, a2);
         v2 = (int)t1;
         goto L_8c205b3a;
     }
-    t2 = call_8c204dc2();
+    t2 = hs_8c204dc2();
     v2 = (int)t2;
 L_8c205b3a:;
     return (int)(v2);

@@ -6,7 +6,7 @@
  * compiled size: 44 bytes (+22.2%)
  * differing lines: 18 of 13 reference instruction lines
  * differing bytes: 41
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +8 bytes
@@ -24,5 +24,5 @@ void operation_8c12f264(int a0, int a1)
     int *home1 = &a1;
     (void)home;
     (void)home1;
-    memcpy_8c12b77c(a1, (void *)(&*(int *)((char *)0x8c286050 + (a0 << 3))), 8);
+    memcpy_8c12b77c(a1, &*(int *)((char *)0x8c286050 + (a0 << 3)), 8);
 }

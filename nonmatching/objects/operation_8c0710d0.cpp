@@ -6,7 +6,7 @@
  * compiled size: 708 bytes (+0.0%)
  * differing lines: 22 of 272 reference instruction lines
  * differing bytes: 26
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -188,9 +188,9 @@ struct Frame {
 };
 extern S_g8c418248 *g_8c418248;
 extern "C" void operation_8c0368a8(void *);
-extern "C" int lookup_low_id(int);
+extern "C" int lookup_low_id(void *);
 extern "C" void vector_sub_in_place_8c37f6f0(Frame *, int);
-extern "C" float normalize_vector_checked(void *);
+extern "C" float normalize_vector_checked(Frame *);
 extern "C" void operation_8c191654(int, int, int);
 extern "C" void operation_8c0710d0(Object *o, int a1)
 {
@@ -225,7 +225,7 @@ extern "C" void operation_8c0710d0(Object *o, int a1)
             (&frame)->f28 = ((ObjectData *)o)->f3a8 & 0xffff;
             (&frame)->f2c = ((ObjectData *)o)->f6ac;
             (&frame)->f30 = ((ObjectData *)o)->f6b0;
-            operation_8c0368a8((void *)(&(&frame)->f20));
+            operation_8c0368a8(&(&frame)->f20);
             return;
         }
         if (((((ObjectData *)o)->f700->f08 & 2)) == 0) {
@@ -239,7 +239,7 @@ extern "C" void operation_8c0710d0(Object *o, int a1)
             (&frame)->f14 = ((ObjectData *)o)->f3a8 & 0xffff;
             (&frame)->f18 = ((ObjectData *)o)->f6ac;
             (&frame)->f1c = ((ObjectData *)o)->f6b0;
-            operation_8c0368a8((void *)(&(&frame)->f0c));
+            operation_8c0368a8(&(&frame)->f0c);
         }
         return;
     case 7:
@@ -253,11 +253,11 @@ extern "C" void operation_8c0710d0(Object *o, int a1)
     case 0:
         v1->f00 += 1;
         if (v1->f00 > 0xa) {
-            t1 = lookup_low_id((int)g_8c418248);
+            t1 = lookup_low_id(g_8c418248);
             if (t1 != 0) {
                 *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((ObjectData *)o)->f3c;
-                vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (int)(t1 + 0x3c));
-                t2 = normalize_vector_checked((void *)(&frame));
+                vector_sub_in_place_8c37f6f0((&frame), t1 + 0x3c);
+                t2 = normalize_vector_checked((&frame));
                 if (!(700.0f > t2)) {
                     v4 = (int)1;
                 } else {

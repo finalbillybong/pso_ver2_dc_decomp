@@ -6,7 +6,7 @@
  * compiled size: 712 bytes (+0.6%)
  * differing lines: 152 of 301 reference instruction lines
  * differing bytes: 633
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +4 bytes
@@ -97,10 +97,10 @@ extern short g_8c462c80;
 extern S_g8c46ee80 *g_8c46ee80;
 extern S_L8c3032d8 g_8c3032d8;
 extern S_L8c41cba0 g_8c41cba0;
-extern void operation_8c0a3c80(void *, void *);
-extern void operation_8c0a3b74(int, void *, void *, void *);
+extern void operation_8c0a3c80(Object *, void *);
+extern void operation_8c0a3b74(Object *, void *, void *, void *);
 extern void operation_8c03ca54(Object *);
-extern void call_8c0a39bc(Object *);
+extern void hs_8c0a39bc(Object *);
 void TCameraEditor_v06_8c0a36f8(Object *o)
 {
     Frame frame;
@@ -132,8 +132,11 @@ void TCameraEditor_v06_8c0a36f8(Object *o)
     if (o->f2c > 40.0f) {
         o->f2c = 40.0f;
     }
-    switch (o->f44) {
-    case 0:
+    if (o->f44 != 0) {
+        if (o->f44 == 1) {
+            goto L_8c0a385e;
+        }
+    } else {
         {
             Vector3 *p_ = (Vector3 *)&g_8c303360;
             *(Vector3 *)&(&frame)->f00 = *p_;
@@ -147,25 +150,24 @@ void TCameraEditor_v06_8c0a36f8(Object *o)
             v20 = (S_vv20 *)&(&frame)->f0c;
         }
         *(Vector3 *)&o->f64 = *(Vector3 *)&v20->f00;
-        operation_8c0a3c80((void *)o, (void *)(&o->f70));
+        operation_8c0a3c80(o, &o->f70);
         o->f70 = o->f58 + o->f64.f00;
         o->f74 = o->f5c + o->f64.f04;
         o->f78 = o->f60 + o->f64.f08;
-        if ((((&g_8c41cba0)->fa0 & 0x400)) == 0) {
+        if ((((&g_8c41cba0)->fa0 & 0x400)) != 0) {
+            o->f44 = 1;
             goto L_8c0a38d8;
-        }
-        o->f44 = 1;
-        break;
-    case 1:
-        operation_8c0a3b74((int)o, (void *)(&o->f64), (void *)(&o->f70), (void *)(&o->f7c));
-        o->f58 = o->f70 - o->f64.f00;
-        o->f5c = o->f74 - o->f64.f04;
-        o->f60 = o->f78 - o->f64.f08;
-        if ((((&g_8c41cba0)->fa4 & 0x400)) != 0) {
-            o->f20 = o->f64.f00;
-            o->f24 = o->f64.f04;
-            o->f28 = o->f64.f08;
-            o->f44 = 0;
+L_8c0a385e:;
+            operation_8c0a3b74(o, &o->f64, &o->f70, &o->f7c);
+            o->f58 = o->f70 - o->f64.f00;
+            o->f5c = o->f74 - o->f64.f04;
+            o->f60 = o->f78 - o->f64.f08;
+            if ((((&g_8c41cba0)->fa4 & 0x400)) != 0) {
+                o->f20 = o->f64.f00;
+                o->f24 = o->f64.f04;
+                o->f28 = o->f64.f08;
+                o->f44 = 0;
+            }
         }
     }
 L_8c0a38d8:;
@@ -177,5 +179,5 @@ L_8c0a38d8:;
     v1->f50 = o->f74;
     v1->f54 = o->f78;
     operation_8c03ca54(o);
-    call_8c0a39bc(o);
+    hs_8c0a39bc(o);
 }

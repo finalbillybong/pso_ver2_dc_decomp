@@ -6,7 +6,7 @@
  * compiled size: 264 bytes (+0.0%)
  * differing lines: 12 of 103 reference instruction lines
  * differing bytes: 15
- * provenance: hand pass on a generator draft
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
@@ -141,6 +141,7 @@ extern "C" S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern "C" void TObjControl_ctor_8c0130ac(void *, int);
 extern "C" void operation_8c123e18(void *, S_c8c122700 *);
 extern "C" void call_8c121114(S_c8c122700 *);
+extern "C" void hs_8c121114(S_c8c122700 *);
 extern "C" S_c8c122700 *TObjNpcARW00_create_8c1a407c(int a0)
 {
     S_c8c122700 *t1;
@@ -169,7 +170,7 @@ extern "C" S_c8c122700 *TObjNpcARW00_create_8c1a407c(int a0)
         ((S_c8c122700Data *)self)->f48 = *p;
         ((S_c8c122700Data *)self)->f38 = (int)(g_8c4dc6e0->f00);
         ((S_c8c122700Data *)self)->f28 = (int)(g_8c4dc6e4);
-        call_8c121114(self);
+        hs_8c121114(self);
     }
     return t2;
 }

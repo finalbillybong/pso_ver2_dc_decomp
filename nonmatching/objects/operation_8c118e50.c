@@ -6,7 +6,7 @@
  * compiled size: 84 bytes (+0.0%)
  * differing lines: 4 of 30 reference instruction lines
  * differing bytes: 4
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -27,16 +27,16 @@ struct Object {
     Arg0_1a4 *f1a4;
     Arg0_1a8 *f1a8;
 };
-extern void call_8c3827d8(void *);
-extern void call_8c382820(void *);
+extern void hs_8c3827d8(void *);
+extern void hs_8c382820(void *);
 extern void set_child_blend(void);
-extern void call_8c38fa98(void *, int, int);
+extern void hs_8c38fa98(void *, int, int);
 void operation_8c118e50(Object *o)
 {
     if (o->f20 > 1) {
-        call_8c3827d8((void *)(o->f1a4));
-        call_8c382820((void *)(o->f1a8));
+        hs_8c3827d8(o->f1a4);
+        hs_8c382820(o->f1a8);
         set_child_blend();
-        call_8c38fa98((void *)(((char *)o + 0x24)), (int)(o->f20 << 1), 1);
+        hs_8c38fa98(((char *)o + 0x24), o->f20 << 1, 1);
     }
 }

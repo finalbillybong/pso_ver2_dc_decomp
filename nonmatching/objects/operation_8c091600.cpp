@@ -6,7 +6,7 @@
  * compiled size: 468 bytes (+0.9%)
  * differing lines: 32 of 177 reference instruction lines
  * differing bytes: 180
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +4 bytes
@@ -175,12 +175,12 @@ struct Frame {
     Block_frame_0 f00;
     Block_frame_c f0c;
 };
-extern "C" void operation_8c059ef8(void *, int);
-extern "C" void operation_8c059ea4(void *, int);
+extern "C" void operation_8c059ef8(Object *, int);
+extern "C" void operation_8c059ea4(Object *, int);
 extern "C" int active_unflagged_8c05b2dc(void *);
 extern "C" void operation_8c01c5f0(Object *);
-extern "C" void call_8c05c0dc(Object *, float);
-extern "C" void operation_8c090d88(void *, float);
+extern "C" void hs_8c05c0dc(Object *, float);
+extern "C" void operation_8c090d88(Object *, float);
 extern "C" void operation_8c091600(Object *o, int a1)
 {
     Frame frame;
@@ -189,7 +189,7 @@ extern "C" void operation_8c091600(Object *o, int a1)
     switch (a1) {
     case 4:
         ((ObjectData *)o)->ff0 = 0;
-        operation_8c059ef8((void *)o, 2);
+        operation_8c059ef8(o, 2);
         ((ObjectData *)o)->f3e4 &= -0x400001;
         o->v101();
         ((ObjectData *)o)->f418 = 4;
@@ -202,27 +202,27 @@ extern "C" void operation_8c091600(Object *o, int a1)
         }
         if (((((ObjectData *)o)->f3e4 & 1)) != 0) {
             ((ObjectData *)o)->f3e4 = (unsigned int)((ObjectData *)o)->f3e4 >> 1 << 1;
-            operation_8c059ea4((void *)o, 3);
+            operation_8c059ea4(o, 3);
             return;
         }
-        t2 = active_unflagged_8c05b2dc((void *)(((ObjectData *)o)->f3ac));
+        t2 = active_unflagged_8c05b2dc(((ObjectData *)o)->f3ac);
         if (t2 == 0) {
             return;
         }
-        operation_8c059ea4((void *)o, 3);
+        operation_8c059ea4(o, 3);
         return;
     case 0:
         operation_8c01c5f0(o);
         if (((ObjectData *)o)->f3e0 != 1) {
-            call_8c05c0dc(o, 200.0f);
+            hs_8c05c0dc(o, 200.0f);
         }
         if (((ObjectData *)o)->f3e0 == 2) {
-            operation_8c090d88((void *)o, ((ObjectData *)o)->f3c.f04 + 25.0f);
+            operation_8c090d88(o, ((ObjectData *)o)->f3c.f04 + 25.0f);
             *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&((ObjectData *)o)->f3c;
             (&frame)->f0c.f04 = ((ObjectData *)o)->f414;
             o->v107();
         } else {
-            operation_8c090d88((void *)o, ((ObjectData *)o)->f408 + ((ObjectData *)o)->f3c.f04);
+            operation_8c090d88(o, ((ObjectData *)o)->f408 + ((ObjectData *)o)->f3c.f04);
             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((ObjectData *)o)->f3c;
             (&frame)->f00.f04 = ((ObjectData *)o)->f414;
             o->v107((&frame));

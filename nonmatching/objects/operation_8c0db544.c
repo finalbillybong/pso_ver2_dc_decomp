@@ -6,7 +6,7 @@
  * compiled size: 144 bytes (+0.0%)
  * differing lines: 70 of 58 reference instruction lines
  * differing bytes: 59
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -29,7 +29,7 @@ struct Object {
 };
 extern char g_8c3073c4[];
 extern char g_8c3073fc[];
-extern void call_8c0e86c0(void *, void *, float, float);
+extern void hs_8c0e86c0(void *, void *, float, float);
 void operation_8c0db544(Object *o)
 {
     *(float *)(g_8c3073c4 + 0x4) = o->f50 - 18.0f;
@@ -37,5 +37,5 @@ void operation_8c0db544(Object *o)
     *(float *)(g_8c3073c4 + 0x1c) = o->f50 - 18.0f;
     *(float *)(g_8c3073c4 + 0x2c) = o->f54 - 18.0f;
     *(float *)(g_8c3073fc + 0x4) = (o->f50 + o->f54 + 25.4556f) * 2.0f;
-    call_8c0e86c0((void *)(((char *)o + 0x48)), (void *)((void *)g_8c3073fc), (float)o->f64 / 7.5f, o->f5c);
+    hs_8c0e86c0(((char *)o + 0x48), (void *)g_8c3073fc, (float)o->f64 / 7.5f, o->f5c);
 }

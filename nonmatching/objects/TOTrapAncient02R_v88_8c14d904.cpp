@@ -3,14 +3,14 @@
  * function: TOTrapAncient02R_v88_8c14d904
  * language: c++
  * reference size: 1328 bytes
- * compiled size: 1332 bytes (+0.3%)
- * differing lines: 42 of 451 reference instruction lines
- * differing bytes: 515
+ * compiled size: 1328 bytes (+0.0%)
+ * differing lines: 2 of 451 reference instruction lines
+ * differing bytes: 357
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   register allocation, instruction or operand order; review found and fixed behaviour defects of
- *   the generator draft; not proven equivalent to the original; compiled size differs from the
- *   reference by +4 bytes
+ *   the generator draft; not proven equivalent to the original
+ * class header: src/include/classes/TOTrapAncient02R.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -105,14 +105,14 @@ extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3be38c(int, void *, void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" float call_8c130334(float, float);
-#define create_effect_777c ((void (*)(Vector3 *, int))0x8c0a777c)
-#define heap_alloc_8c122700 ((void *(*)(void *, int))0x8c122700)
-#define call_8c0d0788 ((void (*)(void *, int, Vector3 *, Vector3 *, float, float, int, int))0x8c0d0788)
-#define call_8c05fbf8 ((void (*)(int, Vector3 *, int, int))0x8c05fbf8)
-#define create_effect_b0ffc ((void (*)(Object *, Vector3 *, Vector3 *, int))0x8c0b0ffc)
-#define create_effect_b1aa0 ((void (*)(Object *, Vector3 *, int, int))0x8c0b1aa0)
-#define create_effect_b55f0 ((void (*)(Object *, Vector3 *, Vector3 *, int))0x8c0b55f0)
-#define create_effect_b2190 ((void (*)(Object *, Vector3 *, int))0x8c0b2190)
+extern "C" void  create_effect_777c(Vector3 *, int);
+extern "C" void *heap_alloc_8c122700(void *, int);
+extern "C" void  TTecZondeEff_ctor_2_8c0d0788(void *, int, Vector3 *, Vector3 *, float, float, int, int);
+extern "C" void  play_se_8c05fbf8(int, Vector3 *, int, int);
+extern "C" void  create_effect_b0ffc(Object *, Vector3 *, Vector3 *, int);
+extern "C" void  TTecGiBarta_create_8c0b1aa0(Object *, Vector3 *, int, int);
+extern "C" void  TTecMegid_create_8c0b55f0(Object *, Vector3 *, Vector3 *, int);
+extern "C" void  TTecGiFoie_create_8c0b2190(Object *, Vector3 *, int);
 static inline int same_side(Unit *q, Object *o)
 {
     short s = o->f32;
@@ -189,21 +189,21 @@ extern "C" void TOTrapAncient02R_v88_8c14d904(Object *o)
                         create_effect_777c(&g_8c46f5a0, 0xba);
                         e = heap_alloc_8c122700(*(void **)0x8c4d97e0, 0x298);
                         if (e != 0) {
-                            call_8c0d0788(e, *(int *)0x8c44bea0, &g_8c46f5a0, &g_8c46f5c0, o->f350, 1.8f, 0x14000000, 0x14);
+                            TTecZondeEff_ctor_2_8c0d0788(e, *(int *)0x8c44bea0, &g_8c46f5a0, &g_8c46f5c0, o->f350, 1.8f, 0x14000000, 0x14);
                         }
-                        call_8c05fbf8(0x20008, &g_8c46f5a0, 0, 0);
+                        play_se_8c05fbf8(0x20008, &g_8c46f5a0, 0, 0);
                         break;
                     case 0:
                         create_effect_b0ffc(o, &g_8c46f5a0, &o->f334->f324, o->f378);
                         break;
                     case 2:
-                        create_effect_b1aa0(o, &g_8c46f5a0, ang, o->f378);
+                        TTecGiBarta_create_8c0b1aa0(o, &g_8c46f5a0, ang, o->f378);
                         break;
                     case 3:
-                        create_effect_b55f0(o, &g_8c46f5a0, &o->f334->f324, o->f378);
+                        TTecMegid_create_8c0b55f0(o, &g_8c46f5a0, &o->f334->f324, o->f378);
                         break;
                     case 4:
-                        create_effect_b2190(o, &g_8c46f5a0, o->f378);
+                        TTecGiFoie_create_8c0b2190(o, &g_8c46f5a0, o->f378);
                         break;
                     }
                 } else {

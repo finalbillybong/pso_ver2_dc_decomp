@@ -6,10 +6,11 @@
  * compiled size: 216 bytes (+0.0%)
  * differing lines: 8 of 81 reference instruction lines
  * differing bytes: 10
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TOTrap.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -18,9 +19,10 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 typedef struct Object Object;
+typedef struct Arg0_88 Arg0_88;
 struct Object {
     char unknown0[0x88];
-    int f88;
+    Arg0_88 *f88;
     char unknown8c[0x27e];
     short f30a;
     char unknown30c[0x28];
@@ -31,11 +33,11 @@ struct Object {
     unsigned short f358;
 };
 extern int g_8c418248;
-extern void update_object_center(void *);
-extern int call_8c04a52c(Object *, int, float);
+extern void update_object_center(Object *);
+extern int hs_8c04a52c(Object *, int, float);
 extern int lookup_low_id(int);
-extern float squared_distance_xz(void *, void *);
-extern void operation_8c02671c(void *, void *, int, float);
+extern float squared_distance_xz(int, void *);
+extern void operation_8c02671c(int, void *, void *, float);
 void TOTrap_v88_8c140f98(Object *o)
 {
     int v2;
@@ -44,8 +46,8 @@ void TOTrap_v88_8c140f98(Object *o)
     int t1;
     int t2;
     float t3;
-    update_object_center((void *)o);
-    t1 = call_8c04a52c(o, 0, o->f350);
+    update_object_center(o);
+    t1 = hs_8c04a52c(o, 0, o->f350);
     o->f358 = t1;
     v2 = (int)(o->f358 & 0xffff);
     v1 = (int)0xffff;
@@ -55,14 +57,14 @@ void TOTrap_v88_8c140f98(Object *o)
         if (o->f334 == 0) {
             return;
         }
-        t3 = squared_distance_xz((void *)((int)o->f334 + 0x3c), (void *)(((char *)o + 0x3c)));
+        t3 = squared_distance_xz((int)o->f334 + 0x3c, ((char *)o + 0x3c));
         v3 = (float)o->f354;
         if ((v3 * v3) > t3) {
             o->f30a = 3;
             if ((o->f358 & 0xffff) != g_8c418248) {
                 return;
             }
-            operation_8c02671c((void *)t2, (void *)(((char *)o + 0x3c)), (int)(o->f88), o->f354);
+            operation_8c02671c(t2, ((char *)o + 0x3c), o->f88, o->f354);
             return;
         }
         o->f358 = 0xffff;

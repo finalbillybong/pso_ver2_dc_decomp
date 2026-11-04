@@ -6,7 +6,7 @@
  * compiled size: 276 bytes (+0.0%)
  * differing lines: 8 of 100 reference instruction lines
  * differing bytes: 8
- * provenance: hand pass on a generator draft
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
@@ -42,6 +42,7 @@ extern void call_8c3827d8(void *);
 extern void sq_select_8c38aeb4(int);
 extern void sq_header_8c38af22(int, int);
 extern void sq_flush_8c38af12(void);
+extern void sq_quad_8c38b09e(float, void *);
 void operation_8c0ea958(Object *o)
 {
     operation_8c0eac00(o);
@@ -51,12 +52,12 @@ void operation_8c0ea958(Object *o)
     call_8c3827d8(g_8c470360);
     sq_select_8c38aeb4(1);
     sq_header_8c38af22(0, o->f11c << 0x18 | 0xffffff);
-    ((void (*)(void *, float))0x8c38b09e)(((char *)o + 0x4c), 1.0f);
-    ((void (*)(void *, float))0x8c38b09e)(((char *)o + 0x6c), 1.0f);
-    ((void (*)(float, void *))0x8c38b09e)(1.0f, ((char *)o + 0x8c));
-    ((void (*)(float, void *))0x8c38b09e)(0.1f, ((char *)o + 0xac));
-    ((void (*)(float, void *))0x8c38b09e)(0.1f, ((char *)o + 0xcc));
-    ((void (*)(float, void *))0x8c38b09e)(1.0f, ((char *)o + 0xec));
+    sq_quad_8c38b09e(1.0f, ((char *)o + 0x4c));
+    sq_quad_8c38b09e(1.0f, ((char *)o + 0x6c));
+    sq_quad_8c38b09e(1.0f, ((char *)o + 0x8c));
+    sq_quad_8c38b09e(0.1f, ((char *)o + 0xac));
+    sq_quad_8c38b09e(0.1f, ((char *)o + 0xcc));
+    sq_quad_8c38b09e(1.0f, ((char *)o + 0xec));
     sq_flush_8c38af12();
     call_8c380ab8(0, 8);
     call_8c380ab8(1, 6);

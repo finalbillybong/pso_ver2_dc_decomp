@@ -6,7 +6,7 @@
  * compiled size: 84 bytes (-4.5%)
  * differing lines: 52 of 35 reference instruction lines
  * differing bytes: 79
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -4 bytes
@@ -24,7 +24,7 @@ struct Frame {
 };
 extern float g_8c2861f0;
 extern float g_8c286220;
-extern float call_8c12e0bc(float);
+extern float hs_8c12e0bc(float);
 float operation_8c12e2a0(float f0, float f1)
 {
     Frame frame;
@@ -33,7 +33,7 @@ float operation_8c12e2a0(float f0, float f1)
     float t1;
     (&frame)->f04 = f0;
     (&frame)->f00 = f1;
-    t1 = call_8c12e0bc((&frame)->f04 / f1);
+    t1 = hs_8c12e0bc((&frame)->f04 / f1);
     v8 = (float)t1;
     if (((*(int *)&(&frame)->f00 & -0x80000000)) != 0) {
         if (((-0x80000000 & *(int *)&(&frame)->f04)) != 0) {

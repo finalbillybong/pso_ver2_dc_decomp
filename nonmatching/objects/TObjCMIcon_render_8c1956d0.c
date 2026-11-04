@@ -4,8 +4,8 @@
  * language: c
  * reference size: 240 bytes
  * compiled size: 244 bytes (+1.7%)
- * differing lines: 34 of 99 reference instruction lines
- * differing bytes: 135
+ * differing lines: 20 of 99 reference instruction lines
+ * differing bytes: 119
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   instruction scheduling, stack frame and spills, instruction or operand order, constant
@@ -41,26 +41,47 @@ void TObjCMIcon_render_8c1956d0(int a0)
     Frame frame;
     int t1;
     S_vv3 *v3;
-    float base;
-    float k;
-    float v5;
+    int pm3;
+    float pm10;
     S_vv4 *v4;
     int v2;
+    float pm2;
+    float base;
+    float v5;
     int v7;
-    base = 608.0f - *(float *)0x8c4dc3cc;
-    v2 = 0;
+    float pm6;
+    float pm5;
+    void *pm4;
+    char *pm9;
+    float pm11;
     v3 = (S_vv3 *)(void *)0x8c4dc360;
-    v4 = (S_vv4 *)(void *)0x8c31b344;
-    for (; 9 > v2; v2++, v3 = (S_vv3 *)((char *)v3 + 12), v4 = (S_vv4 *)((char *)v4 + 20)) {
-        v5 = v3->f04;
+    v2 = 0;
+    pm2 = 608.0f;
+    pm5 = pm2 - *(float *)0x8c4dc3cc;
+    pm6 = pm5;
+    pm4 = (void *)0x8c31b344;
+    base = pm6;
+    v4 = (S_vv4 *)pm4;
+    while (9 > v2) {
+        float k;
+        pm11 = v3->f04;
+        v5 = pm11;
         (&frame)->f00 = base + v3->f08;
-        (&frame)->f04 = *(float *)0x8c31bf88 * 432.0f;
-        v5 = v5 * v5;
-        k = -2.0f - (1.0f - v5);
-        for (v7 = 0; v4->f00 > v7; v7++) {
-            t1 = operation_1957c0((void *)a0, (int)(*(S_vv4_4 **)((char *)((char *)v4 + 0x4) + (v7 << 2))));
-            operation_195990(t1, (void *)(&frame), k, v5);
-            (&frame)->f00 += (float)(*(short *)((char *)0x8c31b3f8 + (t1 * 0x14)) + 1);
+        pm5 = v5 * v5;
+        pm6 = *(float *)0x8c31bf88;
+        (&frame)->f04 = 432.0f * pm6;
+        pm2 = pm5;
+        v5 = pm2;
+        pm10 = 1.0f;
+        k = -2.0f - (pm10 - v5);
+        v7 = 0;
+        while (v4->f00 > v7) {
+            pm9 = (char *)v4 + 0x4;
+            t1 = operation_1957c0((void *)a0, (int)(*(S_vv4_4 **)((pm9) + (v7 << 2))));
+            operation_195990(t1, (void *)&frame, k, v5);
+            frame.f00 += (float)(1 + *(short *)((char *)0x8c31b3f8 + t1 * 0x14));
+            v7++;
         }
+        v2++, v3 = (S_vv3 *)((char *)v3 + 12), v4 = (S_vv4 *)(20 + (char *)v4);
     }
 }

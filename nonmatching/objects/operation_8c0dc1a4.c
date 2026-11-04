@@ -6,7 +6,7 @@
  * compiled size: 616 bytes (+0.0%)
  * differing lines: 64 of 276 reference instruction lines
  * differing bytes: 479
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -59,9 +59,9 @@ extern Block16 g_8c307420;
 extern S_g8c46fe00 *g_8c46fe00;
 extern void set_child_blend(void);
 extern void sq_select_8c38aeb4(int);
-extern void call_8c3827d8(void *);
+extern void hs_8c3827d8(void *);
 extern void sq_header_8c38af22(int, int);
-extern int clip_and_scale_rectangle(void *, void *);
+extern int clip_and_scale_rectangle(Object *, void *);
 extern void sq_quad_8c38b09e(void *, float);
 extern void sq_flush_8c38af12(void);
 extern void restore_child_blend(void);
@@ -91,7 +91,7 @@ void operation_8c0dc1a4(Object *o, Arg1 *a1, int a2)
     v5 = (float)(-1.0f / (o->f34 + 0.22425f));
     set_child_blend();
     sq_select_8c38aeb4(1);
-    call_8c3827d8(g_8c46fe00);
+    hs_8c3827d8(g_8c46fe00);
     sq_header_8c38af22(1, -1);
     (&frame)->f10 = v4;
     (&frame)->f14 = v3;
@@ -102,9 +102,9 @@ void operation_8c0dc1a4(Object *o, Arg1 *a1, int a2)
     (&frame)->f24 = v1->f04 / 256.0f;
     (&frame)->f28 = (v1->f00 + 16.0f) / 256.0f;
     (&frame)->f2c = (v1->f04 + 18.0f) / 256.0f;
-    t1 = clip_and_scale_rectangle((void *)o, (void *)(&(&frame)->f10));
+    t1 = clip_and_scale_rectangle(o, &(&frame)->f10);
     if (t1 != 0) {
-        sq_quad_8c38b09e((void *)(&(&frame)->f10), v5);
+        sq_quad_8c38b09e(&(&frame)->f10, v5);
     }
     (&frame)->f10 = v4 + o->dispatch - 16.0f;
     (&frame)->f14 = v3;
@@ -114,9 +114,9 @@ void operation_8c0dc1a4(Object *o, Arg1 *a1, int a2)
     (&frame)->f24 = v1->f04 / 256.0f;
     (&frame)->f28 = (v1->f00 + 32.0f + 16.0f) / 256.0f;
     (&frame)->f2c = (v1->f04 + 18.0f) / 256.0f;
-    t2 = clip_and_scale_rectangle((void *)o, (void *)(&(&frame)->f10));
+    t2 = clip_and_scale_rectangle(o, &(&frame)->f10);
     if (t2 != 0) {
-        sq_quad_8c38b09e((void *)(&(&frame)->f10), v5);
+        sq_quad_8c38b09e(&(&frame)->f10, v5);
     }
     (&frame)->f10 = v12;
     (&frame)->f14 = v3;
@@ -126,9 +126,9 @@ void operation_8c0dc1a4(Object *o, Arg1 *a1, int a2)
     (&frame)->f24 = v1->f04 / 256.0f;
     (&frame)->f28 = (v1->f00 + 16.0f + 16.0f) / 256.0f;
     (&frame)->f2c = (v1->f04 + 18.0f) / 256.0f;
-    t3 = clip_and_scale_rectangle((void *)o, (void *)(&(&frame)->f10));
+    t3 = clip_and_scale_rectangle(o, &(&frame)->f10);
     if (t3 != 0) {
-        sq_quad_8c38b09e((void *)(&(&frame)->f10), v5);
+        sq_quad_8c38b09e(&(&frame)->f10, v5);
     }
     sq_flush_8c38af12();
     restore_child_blend();

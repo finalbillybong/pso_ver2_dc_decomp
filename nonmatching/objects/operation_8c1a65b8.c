@@ -6,7 +6,7 @@
  * compiled size: 80 bytes (+5.3%)
  * differing lines: 22 of 36 reference instruction lines
  * differing bytes: 70
- * provenance: hand pass on a generator draft
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original; compiled size differs from the reference by +4 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
@@ -24,7 +24,7 @@ struct Object {
     char unknown0[0x4];
     Arg0_4 *f04;
 };
-extern void call_8c1a661c(void *, void *, int, int, int, int, int);
+extern void hs_8c1a661c(void *, void *, int, int, int, int, int);
 void operation_8c1a65b8(Object *o, int a1, int a2)
 {
     char *b;
@@ -32,5 +32,5 @@ void operation_8c1a65b8(Object *o, int a1, int a2)
     b = (char *)o->f04;
     i = a2 << 2;
     a1 = (unsigned short)a1;
-    call_8c1a661c(*(void **)((char *)(b + 0x4) + i), *(void **)((char *)(b + 0x14) + i), (unsigned char)a1, a1 >> 8 & 7, a1 >> 0xb & 1, a1 >> 0xc & 1, a2);
+    hs_8c1a661c(*(void **)((char *)(b + 0x4) + i), *(void **)((char *)(b + 0x14) + i), (unsigned char)a1, a1 >> 8 & 7, a1 >> 0xb & 1, a1 >> 0xc & 1, a2);
 }

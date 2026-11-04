@@ -6,7 +6,7 @@
  * compiled size: 380 bytes (-1.0%)
  * differing lines: 170 of 171 reference instruction lines
  * differing bytes: 297
- * provenance: generator draft (mode extern)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -4 bytes

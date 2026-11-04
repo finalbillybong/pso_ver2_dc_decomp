@@ -6,7 +6,7 @@
  * compiled size: 236 bytes (+0.0%)
  * differing lines: 38 of 104 reference instruction lines
  * differing bytes: 115
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -19,6 +19,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct Frame Frame;
 typedef struct Object Object;
+typedef struct Arg0_20 Arg0_20;
 typedef struct Block_frame_0 {
     float f00;
     char unknown4[0x4];
@@ -28,7 +29,7 @@ struct Object {
     char unknown0[0x4];
     short f04;
     char unknown6[0x1a];
-    int f20;
+    Arg0_20 *f20;
     int f24;
     float f28;
     float f2c;
@@ -42,7 +43,7 @@ struct Frame {
 extern int rand(void);
 extern float njCos_8c38c154(int);
 extern float njSin_8c37eb0c(int);
-extern void create_effect_7ab8(void *, void *, int);
+extern void create_effect_7ab8(Frame *, void *, void *);
 void operation_8c188418(Object *o)
 {
     Frame frame;
@@ -65,7 +66,7 @@ void operation_8c188418(Object *o)
         (&frame)->f00.f00 += v3 * t1;
         t2 = njSin_8c37eb0c(v1);
         (&frame)->f00.f08 += v3 * t2;
-        create_effect_7ab8((void *)(&frame), (void *)(((char *)o + 0x3c)), (int)(o->f20));
+        create_effect_7ab8((&frame), ((char *)o + 0x3c), o->f20);
         o->f2c -= 1.0f;
     }
     if (!(--o->f24 > 0)) {

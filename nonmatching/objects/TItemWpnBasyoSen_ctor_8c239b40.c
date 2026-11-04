@@ -6,7 +6,7 @@
  * compiled size: 152 bytes (+0.0%)
  * differing lines: 10 of 48 reference instruction lines
  * differing bytes: 11
- * provenance: generator draft (mode switch2)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -37,13 +37,14 @@ struct Object {
     char unknown226[0x6];
     void *f22c;
 };
-extern void call_8c075398(Object *, int, int);
+extern int g_8c33a360;
 extern void TItemShootBasyoSen2_create_8c248e3c();
+extern void hs_8c075398(Object *, int, int);
 Object *TItemWpnBasyoSen_ctor_8c239b40(Object *o, int a1, int a2)
 {
-    call_8c075398(o, a1, a2);
+    hs_8c075398(o, a1, a2);
     o->dispatch = (void *)0x8c279330;
-    o->tag = (int)(*(int *)0x8c33a360);
+    o->tag = (int)(g_8c33a360);
     o->size = 0x234;
     o->f1e0 = 2;
     o->f1e1 = 1;

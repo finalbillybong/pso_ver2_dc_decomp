@@ -6,7 +6,7 @@
  * compiled size: 364 bytes (-1.1%)
  * differing lines: 52 of 136 reference instruction lines
  * differing bytes: 270
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -4 bytes
@@ -65,15 +65,15 @@ struct S_L8c510b80 {
 extern S_L8c510b2c g_8c510b2c;
 extern S_L8c510b80 g_8c510b80;
 extern char gc_8c510b2c[];
-extern void call_8c043418(Object *);
-extern void copy_actor_records(void *, void *, int);
-extern void attach_and_insert_object(void *);
+extern void hs_8c043418(Object *);
+extern void copy_actor_records(Object *, void *, int);
+extern void attach_and_insert_object(Object *);
 Object *operation_8c235858(Object *o)
 {
     Frame frame;
     Object **home = &o;
     (void)home;
-    call_8c043418(o);
+    hs_8c043418(o);
     o->dispatch = (void *)0x8c2790a0;
     o->f380 = 0.0f;
     o->f384 = 0.0f;
@@ -99,8 +99,8 @@ Object *operation_8c235858(Object *o)
     (&frame)->f14 = 1.0f;
     (&frame)->f18 = 1;
     (&frame)->f1c = 0x80207;
-    copy_actor_records((void *)o, (void *)(&(&frame)->f04), 1);
-    attach_and_insert_object((void *)o);
+    copy_actor_records(o, &(&frame)->f04, 1);
+    attach_and_insert_object(o);
     o->f378 = 0;
     (&g_8c510b80)->f10 = 0;
     (&g_8c510b80)->f18 = 0;

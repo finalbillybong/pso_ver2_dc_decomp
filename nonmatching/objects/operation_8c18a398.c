@@ -6,7 +6,7 @@
  * compiled size: 280 bytes (+1.4%)
  * differing lines: 64 of 127 reference instruction lines
  * differing bytes: 252
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +4 bytes
@@ -57,9 +57,9 @@ struct Frame {
 };
 extern Vector3 g_8c319eac;
 extern char g_8c46ee84[];
-extern void call_8c0c5018(void *, void *, void *);
-extern void call_8c3bdf60(void *, void *);
-extern void call_8c0a7608(void *, void *);
+extern void hs_8c0c5018(void *, void *, void *);
+extern void hs_8c3bdf60(void *, void *);
+extern void hs_8c0a7608(void *, void *);
 void operation_8c18a398(Object *o)
 {
     Frame frame;
@@ -69,13 +69,13 @@ void operation_8c18a398(Object *o)
         o->f54 = -*(float *)(g_8c46ee84 + 0xc);
         o->f58 = -*(float *)(g_8c46ee84 + 0x10);
         o->f5c = -*(float *)(g_8c46ee84 + 0x14);
-        call_8c0c5018((void *)(&o->f54), (void *)(&(&frame)->f18), (void *)(((char *)(&frame) + 0x1c)));
+        hs_8c0c5018(&o->f54, &(&frame)->f18, ((char *)(&frame) + 0x1c));
         *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&*(Vector3 *)(g_8c46ee84 + 0x28);
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&*(Vector3 *)(g_8c46ee84 + 0x34);
         (&frame)->f24.f00 = (&frame)->f0c.f00 * o->f24.f00 + (&frame)->f00.f00 * o->f24.f04;
         (&frame)->f24.f04 = (&frame)->f0c.f04 * o->f24.f00 + (&frame)->f00.f04 * o->f24.f04;
         (&frame)->f24.f08 = (&frame)->f0c.f08 * o->f24.f00 + (&frame)->f00.f08 * o->f24.f04;
-        call_8c3bdf60((void *)(&(&frame)->f24), (void *)(((char *)o + 0x48)));
-        call_8c0a7608((void *)(o->f20), (void *)(&(&frame)->f24));
+        hs_8c3bdf60(&(&frame)->f24, ((char *)o + 0x48));
+        hs_8c0a7608(o->f20, &(&frame)->f24);
     }
 }

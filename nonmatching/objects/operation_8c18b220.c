@@ -6,7 +6,7 @@
  * compiled size: 280 bytes (+16.7%)
  * differing lines: 100 of 104 reference instruction lines
  * differing bytes: 202
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +40 bytes
@@ -34,9 +34,9 @@ struct Object {
 extern S_g8c4dbc80 *g_8c4dbc80;
 extern int g_8c4dc5a0;
 extern S_g8c4dc5a4 *g_8c4dc5a4;
-extern int operation_8c18b894(int);
+extern int operation_8c18b894(void *);
 extern int rand(void);
-extern int operation_8c1c9378(int);
+extern int operation_8c1c9378(Object *);
 void operation_8c18b220(Object *o)
 {
     int v3;
@@ -53,7 +53,7 @@ void operation_8c18b220(Object *o)
     int t4;
     v1 = (char *)g_8c4dbc80->f18;
     v2 = (char *)g_8c4dbc80->f1c;
-    t1 = operation_8c18b894((int)g_8c4dc5a4);
+    t1 = operation_8c18b894(g_8c4dc5a4);
     v3 = (int)-1;
     if (t1 != v3) {
         v4 = (int)*(int *)((char *)0x8c31cec0 + (g_8c4dc5a0 << 2));
@@ -77,7 +77,7 @@ void operation_8c18b220(Object *o)
 L_8c18b2ca:;
         o->f03 = v9;
     }
-    t4 = operation_8c1c9378((int)o);
+    t4 = operation_8c1c9378(o);
     if ((unsigned int)o->f03 > (unsigned int)(unsigned char)t4) {
         o->f03 = t4;
     }

@@ -6,7 +6,7 @@
  * compiled size: 180 bytes (+2.3%)
  * differing lines: 50 of 66 reference instruction lines
  * differing bytes: 142
- * provenance: hand pass on a generator draft
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original; compiled size differs from the reference by +4 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
@@ -44,9 +44,9 @@ struct Frame {
     int f14;
 };
 extern int create_effect_785c(void *, void *, int);
+extern void TObjEnePanarmsAtkColli_create_8c161770(int, int, int, int);
 extern float njSin_8c37eb0c(void *);
 extern float njCos_8c38c154(void *);
-extern void TObjEnePanarmsAtkColli_create_8c161770(int, int, int, int);
 void operation_8c11c96c(Object *o)
 {
     Frame frame;
@@ -59,8 +59,8 @@ void operation_8c11c96c(Object *o)
     (&frame)->f14 = 0x4000;
     o->f3b0 = create_effect_785c((void *)(((char *)o + 0x3d4)), (void *)(&(&frame)->f0c), 0x105);
     frame.f04 = 0.0f;
-    frame.f00 = njSin_8c37eb0c((void *)(o->f64));
-    frame.f08 = njCos_8c38c154((void *)(o->f64));
+    frame.f00 = njSin_8c37eb0c(o->f64);
+    frame.f08 = njCos_8c38c154(o->f64);
     TObjEnePanarmsAtkColli_create_8c161770((int)o, (int)(((char *)o + 0x3d4)), (int)(&frame), 0);
     o->ff0 = 7;
     o->f3a4 = 0x5a;

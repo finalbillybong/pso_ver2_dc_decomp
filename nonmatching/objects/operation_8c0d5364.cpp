@@ -6,7 +6,7 @@
  * compiled size: 192 bytes (+0.0%)
  * differing lines: 14 of 75 reference instruction lines
  * differing bytes: 13
- * provenance: generator draft (mode extern)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -156,10 +156,10 @@ public:
 typedef struct Arg0_s404Data {
 
 } Arg0_s404Data;
-extern "C" void operation_8c059ef8(void *, int);
+extern "C" void operation_8c059ef8(Object *, int);
 extern "C" void operation_8c1147cc(void *);
-extern "C" void call_8c108570(Frame *);
-extern "C" void operation_8c059ea4(void *, int);
+extern "C" void hs_8c108570(Frame *);
+extern "C" void operation_8c059ea4(Object *, int);
 extern "C" void operation_8c0d5364(Object *o, int a1)
 {
     Frame frame;
@@ -173,18 +173,18 @@ extern "C" void operation_8c0d5364(Object *o, int a1)
                 return;
             }
             ((ObjectData *)o)->ff0 = 1;
-            operation_8c059ef8((void *)o, 0);
+            operation_8c059ef8(o, 0);
             o->v101();
             ((ObjectData *)o)->f3e0 = (unsigned int)((ObjectData *)o)->f3e0 >> 2 << 2;
-            operation_8c1147cc((void *)(((char *)o + 0x404)));
+            operation_8c1147cc(((char *)o + 0x404));
             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((ObjectData *)o)->f3c;
             (&frame)->f00.f04 = ((ObjectData *)o)->f3e4 - 20.0f;
-            call_8c108570((Frame *)((&frame)));
+            hs_8c108570((&frame));
             return;
         }
         t1 = ((Arg0_s404 *)((char *)o + 0x404))->v5();
         if (t1 != 0) {
-            operation_8c059ea4((void *)o, 2);
+            operation_8c059ea4(o, 2);
         }
     }
 }

@@ -6,7 +6,7 @@
  * compiled size: 160 bytes (+0.0%)
  * differing lines: 12 of 58 reference instruction lines
  * differing bytes: 37
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -31,22 +31,22 @@ extern void operation_8c1086fc(void);
 extern void njPushMatrixEx_8c38ae68(void);
 extern void translate_current_matrix_v_8c382a40(void *);
 extern void njRotateY_8c37df90(int, void *);
-extern void operation_8c1b80dc(void *);
+extern void operation_8c1b80dc(Object *);
 extern void njPopMatrixEx_8c38ad10(void);
-extern void call_8c21aa68(int, float);
+extern void hs_8c21aa68(int, float);
 extern void reset_state_8c391cc4(void);
 void operation_8c1b7dec(Object *o)
 {
     operation_8c1086fc();
     njPushMatrixEx_8c38ae68();
-    translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-    njRotateY_8c37df90(0, (void *)(o->f64));
-    operation_8c1b80dc((void *)o);
+    translate_current_matrix_v_8c382a40(((char *)o + 0x3c));
+    njRotateY_8c37df90(0, o->f64);
+    operation_8c1b80dc(o);
     njPopMatrixEx_8c38ad10();
     njPushMatrixEx_8c38ae68();
-    translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x47c)));
-    njRotateY_8c37df90(0, (void *)(o->f64));
-    call_8c21aa68((int)(o->f3c2), o->f3d0);
+    translate_current_matrix_v_8c382a40(((char *)o + 0x47c));
+    njRotateY_8c37df90(0, o->f64);
+    hs_8c21aa68(o->f3c2, o->f3d0);
     njPopMatrixEx_8c38ad10();
     reset_state_8c391cc4();
 }

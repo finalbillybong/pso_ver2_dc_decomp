@@ -4,8 +4,8 @@
  * language: c++
  * reference size: 356 bytes
  * compiled size: 356 bytes (+0.0%)
- * differing lines: 58 of 163 reference instruction lines
- * differing bytes: 33
+ * differing lines: 26 of 163 reference instruction lines
+ * differing bytes: 15
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in stack
  *   frame and spills; review found and fixed behaviour defects of the generator draft; not proven
@@ -163,6 +163,7 @@ extern "C" int operation_8c09e550(int a0, int a1, Arg2 *a2)
     S_vv11 *v11;
     int v44;
     short v17;
+    short fl;
     int v19;
     S_vv14 *v14;
     int t1;
@@ -188,7 +189,9 @@ extern "C" int operation_8c09e550(int a0, int a1, Arg2 *a2)
     v11 = (S_vv11 *)v10;
     v12 = (int)0;
     while ((&frame)->f00 > v12) {
-        if (((v11->f02 & 8)) == 0 && ((v11->f02 & 2)) == 0 && v11->f0c == (short)a0 && v11->f0e == (short)a1) {
+        fl = v11->f02;
+        if (((fl & 8)) == 0 && ((fl & 2)) == 0 && v11->f0c == (short)a0 && v11->f0e == (short)a1) {
+            v17 = (short)-1;
             t1 = operation_8c09dfec(v11, (void *)(&(&frame)->f04));
             if (t1 >= 0) {
                 v14 = (S_vv14 *)((int (*)(void *))((&frame)->f08))((void *)((int)v11 + 4));
@@ -199,7 +202,6 @@ extern "C" int operation_8c09e550(int a0, int a1, Arg2 *a2)
                 v11->f44 = (S_vv14 *)v14;
                 v11->f02 |= 2;
                 ((S_vv14Data *)v14)->f2c = v11->f0c;
-                v17 = (short)-1;
                 ((S_vv14Data *)v14)->f2e = v11->f0e;
                 ((S_vv14Data *)v14)->f30 = v11->f04;
                 ((S_vv14Data *)v14)->f84 = (S_vv11 *)v11;

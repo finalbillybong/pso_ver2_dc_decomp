@@ -3,13 +3,13 @@
  * function: operation_8c1462e0
  * language: c++
  * reference size: 2324 bytes
- * compiled size: 2324 bytes (+0.0%)
- * differing lines: 1000 of 837 reference instruction lines
- * differing bytes: 2011
- * provenance: generator draft (experimental generator, mode switch2)
+ * compiled size: 2332 bytes (+0.3%)
+ * differing lines: 862 of 837 reference instruction lines
+ * differing bytes: 1468
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
- *   to the original
+ *   to the original; compiled size differs from the reference by +8 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -23,8 +23,8 @@ typedef struct S_vv2 S_vv2;
 typedef struct S_vv3 S_vv3;
 typedef struct S_vv4 S_vv4;
 typedef struct S_vv5 S_vv5;
-typedef struct S_x22032 S_x22032;
-typedef struct S_x24368 S_x24368;
+typedef struct S_x21520 S_x21520;
+typedef struct S_x29904 S_x29904;
 class Object;
 class Arg0_600;
 class Object {
@@ -170,7 +170,7 @@ typedef struct ObjectData {
     char unknown6c0[0x4];
     float f6c4;
 } ObjectData;
-struct S_x24368 {
+struct S_x21520 {
     int f00;
     int f04;
     int f08;
@@ -183,7 +183,7 @@ struct Arg0_s3c {
 struct S_vv3 {
     int f00;
 };
-struct S_x22032 {
+struct S_x29904 {
     float f00;
 };
 struct S_vv4 {
@@ -308,30 +308,38 @@ public:
 typedef struct Arg0_600Data {
 
 } Arg0_600Data;
-extern "C" float call_8c12c714(float);
+extern "C" char g_8c286300[];
+extern "C" float hs_8c12c714(float);
 extern "C" void operation_8c143054(void *);
-extern "C" void send_code_8c14472c(void *, int);
-extern "C" void operation_8c144d8c(void *);
-extern "C" void operation_8c01c5f0(void *);
-extern "C" void operation_8c144a0c(void *);
-extern "C" int operation_8c1430e0(void *);
-extern "C" void operation_8c144938(void *);
+extern "C" float hs_8c12c714_1(int, float);
+extern "C" void send_code_8c14472c(Object *, int);
+extern "C" void operation_8c144d8c(Object *);
+extern "C" void operation_8c01c5f0(Object *);
+extern "C" int operation_8c144a0c(Object *);
+extern "C" void operation_8c1430e0(void *);
+extern "C" int hs_8c1430e0_1(void *);
+extern "C" int operation_8c144938(Object *);
 extern "C" void operation_8c1462e0(Object *o, int a1, int a2, int a3)
 {
     int *home2 = &a2;
     int *home3 = &a3;
     S_vv3 *v3;
     S_vv1 *v1;
+    int v62;
     S_vv4 *v4;
     S_vv2 *v2;
     S_vv5 *v5;
     int v6;
+    int v63;
     int v8;
-    int v34;
-    char *v16;
-    char *v15;
-    char *v14;
-    char *v13;
+    int v64;
+    char *v22;
+    char *v21;
+    char *v20;
+    char *v19;
+    int v35;
+    int v52;
+    int v54;
     float t1;
     float t2;
     float t3;
@@ -342,6 +350,8 @@ extern "C" void operation_8c1462e0(Object *o, int a1, int a2, int a3)
     float t8;
     int t9;
     int t10;
+    int t11;
+    int t12;
     (void)home2;
     (void)home3;
     v1 = (S_vv1 *)((char *)o + 0x704);
@@ -349,7 +359,7 @@ extern "C" void operation_8c1462e0(Object *o, int a1, int a2, int a3)
     v3 = (S_vv3 *)((char *)o + 0x700);
     v4 = (S_vv4 *)((char *)o + 0x720);
     v5 = (S_vv5 *)((char *)o + 0x728);
-    v34 = (int)0x71c;
+    v64 = (int)0x71c;
     switch (a1) {
     case 4:
         ((ObjectData *)o)->ff0 = 1;
@@ -368,64 +378,76 @@ L_8c1463b6:;
         ((ObjectData *)o)->f3dc |= 0x100;
         ((ObjectData *)o)->f674 = a2;
         ((ObjectData *)o)->f678 = a3;
-        ((ObjectData *)o)->f3c = (int)(((S_x24368 *)(((ObjectData *)o)->f674 * 0xc + 0x8c286300))->f00);
-        v16 = (char *)((S_x24368 *)(((ObjectData *)o)->f674 * 0xc + 0x8c286300))->f04;
-        v15 = (char *)v16;
-        v14 = (char *)v15;
-        v13 = (char *)v14;
-        ((Arg0_s3c *)((char *)o + 0x3c))->f04 = (int)v13;
-        ((Arg0_s3c *)((char *)o + 0x3c))->f08 = (int)(((S_x24368 *)(((ObjectData *)o)->f674 * 0xc + 0x8c286300))->f08);
+        v62 = (int)((ObjectData *)o)->f674;
+        ((ObjectData *)o)->f3c = (int)(((S_x21520 *)(v62 * 0xc + g_8c286300))->f00);
+        v22 = (char *)((S_x21520 *)(v62 * 0xc + g_8c286300))->f04;
+        v21 = (char *)v22;
+        v20 = (char *)v21;
+        v19 = (char *)v20;
+        ((Arg0_s3c *)((char *)o + 0x3c))->f04 = (int)v19;
+        v63 = (int)((S_x21520 *)(v62 * 0xc + g_8c286300))->f08;
+        ((Arg0_s3c *)((char *)o + 0x3c))->f08 = (int)v63;
         ((ObjectData *)o)->f6c4 = 0.0f;
         ((ObjectData *)o)->f68 = 0;
         v3->f00 = 0;
-        ((S_x22032 *)((int)o + v34))->f00 = ((ObjectData *)o)->f3c;
+        ((S_x29904 *)((int)o + v64))->f00 = ((ObjectData *)o)->f3c;
         v4->f00 = ((ObjectData *)o)->f44;
-        switch (((ObjectData *)o)->f674) {
-        case 0:
+        if (((ObjectData *)o)->f674 != 0) {
+            if (((ObjectData *)o)->f674 == 1) {
+                goto L_8c146478;
+            }
+            if (((ObjectData *)o)->f674 == 2) {
+                goto L_8c1464a0;
+            }
+            if (((ObjectData *)o)->f674 == 3) {
+                goto L_8c1464c8;
+            }
+        } else {
             v2->f00 = 1.0f;
             if (((ObjectData *)o)->f678 != 1) {
                 if (((ObjectData *)o)->f678 == 3) {
                     goto L_8c146472;
                 }
+            } else {
+                v1->f00 = 1;
                 goto L_8c1464e8;
-            }
-            v1->f00 = 1;
-            goto L_8c1464e8;
 L_8c146472:;
-            v1->f00 = 3;
-            break;
-        case 1:
-            v1->f00 = 2;
-            if (((ObjectData *)o)->f678 != 0) {
-                if (((ObjectData *)o)->f678 != 2) {
+                v1->f00 = 3;
+                goto L_8c1464e8;
+L_8c146478:;
+                v1->f00 = 2;
+                if (((ObjectData *)o)->f678 != 0) {
+                    if (((ObjectData *)o)->f678 != 2) {
+                        goto L_8c1464e8;
+                    }
+                    v2->f00 = 1.0f;
+                } else {
+                    v2->f00 = -1.0f;
                     goto L_8c1464e8;
-                }
-                v2->f00 = 1.0f;
-                goto L_8c1464e8;
-            }
-            v2->f00 = -1.0f;
-            break;
-        case 2:
-            v2->f00 = -1.0f;
-            if (((ObjectData *)o)->f678 != 1) {
-                if (((ObjectData *)o)->f678 == 3) {
-                    goto L_8c1464c2;
-                }
-                goto L_8c1464e8;
-            }
-            v1->f00 = 1;
-            goto L_8c1464e8;
+L_8c1464a0:;
+                    v2->f00 = -1.0f;
+                    if (((ObjectData *)o)->f678 != 1) {
+                        if (((ObjectData *)o)->f678 == 3) {
+                            goto L_8c1464c2;
+                        }
+                    } else {
+                        v1->f00 = 1;
+                        goto L_8c1464e8;
 L_8c1464c2:;
-            v1->f00 = 3;
-            break;
-        case 3:
-            v1->f00 = 0;
-            switch (((ObjectData *)o)->f678) {
-            case 2:
-                v2->f00 = 1.0f;
-                break;
-            case 0:
-                v2->f00 = -1.0f;
+                        v1->f00 = 3;
+                        goto L_8c1464e8;
+L_8c1464c8:;
+                        v1->f00 = 0;
+                        if (((ObjectData *)o)->f678 != 0) {
+                            if (((ObjectData *)o)->f678 != 2) {
+                                goto L_8c1464e8;
+                            }
+                            v2->f00 = 1.0f;
+                        } else {
+                            v2->f00 = -1.0f;
+                        }
+                    }
+                }
             }
         }
 L_8c1464e8:;
@@ -442,7 +464,7 @@ L_8c1464e8:;
             return;
         }
         ((ObjectData *)o)->f680 = 1;
-        t1 = call_8c12c714(-175.0f - ((ObjectData *)o)->f3c);
+        t1 = hs_8c12c714(-175.0f - ((ObjectData *)o)->f3c);
         ((ObjectData *)o)->f684 = 0;
         ((ObjectData *)o)->f688 = 0.08f;
         ((ObjectData *)o)->f68c = 0.08f;
@@ -450,8 +472,8 @@ L_8c1464e8:;
         ((ObjectData *)o)->f694 = 0.0f;
         ((ObjectData *)o)->f698 = t1;
         ((ObjectData *)o)->f69c = 0.0f;
-        operation_8c143054((void *)(((char *)o + 0x684)));
-        t2 = call_8c12c714(25.0f - ((ObjectData *)o)->f44);
+        operation_8c143054(((char *)o + 0x684));
+        t2 = hs_8c12c714(25.0f - ((ObjectData *)o)->f44);
         ((ObjectData *)o)->f6a4 = 0;
         ((ObjectData *)o)->f6a8 = 0.08f;
         ((ObjectData *)o)->f6ac = 0.08f;
@@ -459,12 +481,12 @@ L_8c1464e8:;
         ((ObjectData *)o)->f6b4 = 0.0f;
         ((ObjectData *)o)->f6b8 = t2;
         ((ObjectData *)o)->f6bc = 0.0f;
-        operation_8c143054((void *)(((char *)o + 0x6a4)));
+        operation_8c143054(((char *)o + 0x6a4));
         v5->f00 = 1.0f;
         return;
 L_8c146628:;
         ((ObjectData *)o)->f67c = 0;
-        t3 = call_8c12c714(-((ObjectData *)o)->f3c);
+        t3 = hs_8c12c714_1(v63, -((ObjectData *)o)->f3c);
         ((ObjectData *)o)->f684 = 0;
         ((ObjectData *)o)->f688 = 0.08f;
         ((ObjectData *)o)->f68c = 0.08f;
@@ -472,8 +494,8 @@ L_8c146628:;
         ((ObjectData *)o)->f694 = 0.0f;
         ((ObjectData *)o)->f698 = t3;
         ((ObjectData *)o)->f69c = 0.0f;
-        operation_8c143054((void *)(((char *)o + 0x684)));
-        t4 = call_8c12c714(500.0f - ((ObjectData *)o)->f44);
+        operation_8c143054(((char *)o + 0x684));
+        t4 = hs_8c12c714(500.0f - ((ObjectData *)o)->f44);
         ((ObjectData *)o)->f6a4 = 0;
         ((ObjectData *)o)->f6a8 = 0.08f;
         ((ObjectData *)o)->f6ac = 0.08f;
@@ -481,12 +503,12 @@ L_8c146628:;
         ((ObjectData *)o)->f6b4 = 0.0f;
         ((ObjectData *)o)->f6b8 = t4;
         ((ObjectData *)o)->f6bc = 0.0f;
-        operation_8c143054((void *)(((char *)o + 0x6a4)));
+        operation_8c143054(((char *)o + 0x6a4));
         v5->f00 = 1.0f;
         return;
 L_8c146738:;
         ((ObjectData *)o)->f680 = 0;
-        t5 = call_8c12c714(-175.0f - ((ObjectData *)o)->f3c);
+        t5 = hs_8c12c714_1(v63, -175.0f - ((ObjectData *)o)->f3c);
         ((ObjectData *)o)->f684 = 0;
         ((ObjectData *)o)->f688 = 0.08f;
         ((ObjectData *)o)->f68c = 0.08f;
@@ -494,8 +516,8 @@ L_8c146738:;
         ((ObjectData *)o)->f694 = 0.0f;
         ((ObjectData *)o)->f698 = t5;
         ((ObjectData *)o)->f69c = 0.0f;
-        operation_8c143054((void *)(((char *)o + 0x684)));
-        t6 = call_8c12c714(25.0f - ((ObjectData *)o)->f44);
+        operation_8c143054(((char *)o + 0x684));
+        t6 = hs_8c12c714(25.0f - ((ObjectData *)o)->f44);
         ((ObjectData *)o)->f6a4 = 0;
         ((ObjectData *)o)->f6a8 = 0.2f;
         ((ObjectData *)o)->f6ac = 0.05f;
@@ -503,12 +525,12 @@ L_8c146738:;
         ((ObjectData *)o)->f6b4 = 0.0f;
         ((ObjectData *)o)->f6b8 = t6;
         ((ObjectData *)o)->f6bc = 0.0f;
-        operation_8c143054((void *)(((char *)o + 0x6a4)));
+        operation_8c143054(((char *)o + 0x6a4));
         v5->f00 = -1.0f;
         return;
 L_8c146864:;
         ((ObjectData *)o)->f67c = 0;
-        t7 = call_8c12c714(-((ObjectData *)o)->f3c);
+        t7 = hs_8c12c714_1(v63, -((ObjectData *)o)->f3c);
         ((ObjectData *)o)->f684 = 0;
         ((ObjectData *)o)->f688 = 0.08f;
         ((ObjectData *)o)->f68c = 0.08f;
@@ -516,8 +538,8 @@ L_8c146864:;
         ((ObjectData *)o)->f694 = 0.0f;
         ((ObjectData *)o)->f698 = t7;
         ((ObjectData *)o)->f69c = 0.0f;
-        operation_8c143054((void *)(((char *)o + 0x684)));
-        t8 = call_8c12c714(-250.0f - ((ObjectData *)o)->f44);
+        operation_8c143054(((char *)o + 0x684));
+        t8 = hs_8c12c714(-250.0f - ((ObjectData *)o)->f44);
         ((ObjectData *)o)->f6a4 = 0;
         ((ObjectData *)o)->f6a8 = 0.2f;
         ((ObjectData *)o)->f6ac = 0.05f;
@@ -525,40 +547,53 @@ L_8c146864:;
         ((ObjectData *)o)->f6b4 = 0.0f;
         ((ObjectData *)o)->f6b8 = t8;
         ((ObjectData *)o)->f6bc = 0.0f;
-        operation_8c143054((void *)(((char *)o + 0x6a4)));
+        operation_8c143054(((char *)o + 0x6a4));
         v5->f00 = -1.0f;
         return;
     case 2:
         if (v3->f00 != 1) {
             return;
         }
-        send_code_8c14472c((void *)o, 2);
+        send_code_8c14472c(o, 2);
         return;
     case 9:
         if (v3->f00 != 1) {
             return;
         }
-        operation_8c144d8c((void *)o);
+        operation_8c144d8c(o);
         return;
     case 0:
-        operation_8c01c5f0((void *)o);
-        switch (v1->f00) {
-        case 0:
-            operation_8c144a0c((void *)o);
-            break;
-        case 1:
-            operation_8c1430e0((void *)(((char *)o + 0x6a4)));
-            switch (((ObjectData *)o)->f67c) {
-            case 0:
-                if (!(((ObjectData *)o)->f6bc > 380.0f)) {
-                    goto L_8c146a52;
+        operation_8c01c5f0(o);
+        if (v1->f00 != 0) {
+            if (v1->f00 == 1) {
+                goto L_8c1469f0;
+            }
+            if (v1->f00 == 2) {
+                goto L_8c146aa8;
+            }
+            if (v1->f00 == 3) {
+                goto L_8c146acc;
+            }
+            v54 = (int)0;
+        } else {
+            t11 = operation_8c144a0c(o);
+            v54 = (int)t11;
+            goto L_8c146b78;
+L_8c1469f0:;
+            operation_8c1430e0(((char *)o + 0x6a4));
+            if (((ObjectData *)o)->f67c != 0) {
+                if (((ObjectData *)o)->f67c == 1) {
+                    goto L_8c146a3c;
                 }
-                ((ObjectData *)o)->f67c = 1;
-                break;
-            case 1:
-                t9 = operation_8c1430e0((void *)(((char *)o + 0x684)));
-                if (t9 == 3) {
-                    ((ObjectData *)o)->f67c = 2;
+            } else {
+                if (((ObjectData *)o)->f6bc > 380.0f) {
+                    ((ObjectData *)o)->f67c = 1;
+                    goto L_8c146a52;
+L_8c146a3c:;
+                    t9 = hs_8c1430e0_1(((char *)o + 0x684));
+                    if (t9 == 3) {
+                        ((ObjectData *)o)->f67c = 2;
+                    }
                 }
             }
 L_8c146a52:;
@@ -566,38 +601,46 @@ L_8c146a52:;
             if (((ObjectData *)o)->f100 > 0.9f) {
                 ((ObjectData *)o)->f100 = 0.9f;
             }
+            v35 = (int)(((ObjectData *)o)->f67c == 2);
             ((ObjectData *)o)->f44 = v4->f00 + ((ObjectData *)o)->f6bc;
-            break;
-        case 2:
-            operation_8c144938((void *)o);
+            v54 = (int)v35;
+            goto L_8c146b78;
+L_8c146aa8:;
+            t12 = operation_8c144938(o);
             ((ObjectData *)o)->f44 = v4->f00 - ((ObjectData *)o)->f6bc;
-            break;
-        case 3:
-            operation_8c1430e0((void *)(((char *)o + 0x6a4)));
-            switch (((ObjectData *)o)->f67c) {
-            case 0:
-                ((ObjectData *)o)->f100 = 0.3f;
-                if (!(((ObjectData *)o)->f6bc > 100.0f)) {
-                    goto L_8c146b42;
+            v54 = (int)t12;
+            goto L_8c146b78;
+L_8c146acc:;
+            operation_8c1430e0(((char *)o + 0x6a4));
+            if (((ObjectData *)o)->f67c != 0) {
+                if (((ObjectData *)o)->f67c == 1) {
+                    goto L_8c146b2c;
                 }
-                ((ObjectData *)o)->f67c = 1;
-                break;
-            case 1:
-                t10 = operation_8c1430e0((void *)(((char *)o + 0x684)));
-                if (t10 == 3) {
-                    ((ObjectData *)o)->f67c = 2;
+            } else {
+                ((ObjectData *)o)->f100 = 0.3f;
+                if (((ObjectData *)o)->f6bc > 100.0f) {
+                    ((ObjectData *)o)->f67c = 1;
+                    goto L_8c146b42;
+L_8c146b2c:;
+                    t10 = hs_8c1430e0_1(((char *)o + 0x684));
+                    if (t10 == 3) {
+                        ((ObjectData *)o)->f67c = 2;
+                    }
                 }
             }
 L_8c146b42:;
             if (((ObjectData *)o)->f6bc > 100.0f) {
                 ((ObjectData *)o)->f100 = 0.9f;
             }
+            v52 = (int)(((ObjectData *)o)->f67c == 2);
             ((ObjectData *)o)->f44 = v4->f00 - ((ObjectData *)o)->f6bc;
+            v54 = (int)v52;
         }
-        if (0 != 0) {
+L_8c146b78:;
+        if (v54 != 0) {
             v3->f00 = 1;
         }
-        ((ObjectData *)o)->f3c = ((ObjectData *)o)->f69c * v2->f00 + ((S_x22032 *)((int)o + v34))->f00;
+        ((ObjectData *)o)->f3c = ((ObjectData *)o)->f69c * v2->f00 + ((S_x29904 *)((int)o + v64))->f00;
         ((ObjectData *)o)->f44 = ((ObjectData *)o)->f6bc * v5->f00 + v4->f00;
         return;
     case 5:

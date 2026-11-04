@@ -6,7 +6,7 @@
  * compiled size: 540 bytes (+0.0%)
  * differing lines: 260 of 237 reference instruction lines
  * differing bytes: 124
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -32,8 +32,8 @@ struct Object {
     float f9c;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern int heap_alloc_8c122700(void *, unsigned int);
-extern void operation_8c221978(void *, int);
+extern int heap_alloc_8c122700(void *, int);
+extern void operation_8c221978(int, Object *);
 void operation_8c2215c4(Object *o)
 {
     float v1;
@@ -64,9 +64,9 @@ void operation_8c2215c4(Object *o)
         }
         o->f2c = 1.0f;
         o->f30 = 1.0f;
-        t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xf8);
+        t1 = heap_alloc_8c122700(g_8c4d97e0, 0xf8);
         if (t1 != 0) {
-            operation_8c221978((void *)t1, (int)o);
+            operation_8c221978(t1, o);
         }
         o->f20 = 1;
         return;

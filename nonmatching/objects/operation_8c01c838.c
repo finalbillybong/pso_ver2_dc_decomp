@@ -6,7 +6,7 @@
  * compiled size: 208 bytes (+0.0%)
  * differing lines: 4 of 75 reference instruction lines
  * differing bytes: 2
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -50,13 +50,13 @@ struct Arg0_130 {
     char unknown8[0x2];
     short f0a;
 };
-extern void select_actor_animation(void *, int);
+extern void select_actor_animation(Object *, int);
 void operation_8c01c838(Object *o, int a1)
 {
     S_vv1 *v1;
     o->ff0 = a1;
     o->ff2 = o->ff0;
-    select_actor_animation((void *)o, (int)(o->ff0));
+    select_actor_animation(o, o->ff0);
     v1 = (S_vv1 *)&*(int *)((char *)((char *)o->f110 + 0x0) + (o->ff0 << 4));
     o->f100 = v1->f08;
     o->f12c = v1->f00;

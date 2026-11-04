@@ -3,13 +3,13 @@
  * function: operation_8c1eee5c
  * language: c
  * reference size: 356 bytes
- * compiled size: 348 bytes (-2.2%)
+ * compiled size: 352 bytes (-1.1%)
  * differing lines: 28 of 143 reference instruction lines
  * differing bytes: 112
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
- *   to the original; compiled size differs from the reference by -8 bytes
+ *   to the original; compiled size differs from the reference by -4 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -59,11 +59,12 @@ extern int g_8c418248;
 extern int g_8c41cd2c;
 extern S_g8c46fe20 *g_8c46fe20;
 extern void operation_8c185134(void *);
-extern int operation_8c02ad30(void *);
-extern void call_8c023950(Object *);
+extern int operation_8c02ad30(Object *);
+extern void hs_8c023950(Object *);
 extern int player_flag13_8c02935c(void);
 extern void operation_8c0292ec(void);
-extern void operation_8c0368a8(void *);
+extern void operation_8c0368a8(Frame *);
+extern void hs_8c0368a8_1(void *);
 void operation_8c1eee5c(Object *o)
 {
     Frame frame;
@@ -82,13 +83,13 @@ void operation_8c1eee5c(Object *o)
         }
         g_8c41cd2c = 0;
         o->f508 = 0;
-        operation_8c185134((void *)(((char *)o + 0x418)));
-        t1 = operation_8c02ad30((void *)o);
+        operation_8c185134(((char *)o + 0x418));
+        t1 = operation_8c02ad30(o);
         if (t1 == 0) {
             o->f7e0 |= 2;
         }
     }
-    call_8c023950(o);
+    hs_8c023950(o);
     t2 = player_flag13_8c02935c();
     if (t2 != 0) {
         operation_8c0292ec();
@@ -116,7 +117,7 @@ void operation_8c1eee5c(Object *o)
     (&frame)->f01 = 2;
     (&frame)->f02 = o->f20;
     (&frame)->f04 = o->f1b6 & 0xffff;
-    operation_8c0368a8((void *)(&frame));
+    operation_8c0368a8((&frame));
     (&frame)->f08 = 0x1a;
     (&frame)->f09 = 1;
     (&frame)->f08 = 0x3d;
@@ -126,5 +127,5 @@ void operation_8c1eee5c(Object *o)
     (&frame)->f09 = 2;
     (&frame)->f0a = o->f20;
     (&frame)->f0c = (int)(o->f7e0);
-    operation_8c0368a8((void *)(&(&frame)->f08));
+    hs_8c0368a8_1(&(&frame)->f08);
 }

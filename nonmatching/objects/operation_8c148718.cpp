@@ -4,12 +4,11 @@
  * language: c++
  * reference size: 948 bytes
  * compiled size: 948 bytes (+0.0%)
- * differing lines: 84 of 350 reference instruction lines
- * differing bytes: 31
- * provenance: hand pass on a generator draft (behaviour reviewed)
- * known gaps: hand-revised from a generator draft; remaining differences not classified; review
- *   found and fixed behaviour defects of the generator draft; not proven equivalent to the
- *   original
+ * differing lines: 20 of 350 reference instruction lines
+ * differing bytes: 18
+ * provenance: hand pass on a generator draft
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -26,8 +25,8 @@ typedef struct S_vv2 S_vv2;
 typedef struct S_vv3 S_vv3;
 typedef struct S_vv4 S_vv4;
 typedef struct S_vv5 S_vv5;
-typedef struct S_x45152_0 S_x45152_0;
-typedef struct S_x45488_0 S_x45488_0;
+typedef struct S_x25824_0 S_x25824_0;
+typedef struct S_x26160_0 S_x26160_0;
 class Object;
 class Arg0_600;
 typedef struct Block_frame_4 {
@@ -300,7 +299,7 @@ typedef struct Arg0_600Data {
 extern S_g8c4da36c *g_8c4da36c;
 extern "C" int operation_8c05bbf8(void);
 extern "C" void send_code_8c14472c(void *, int);
-extern "C" void operation_8c144d8c(Object *);
+extern "C" void operation_8c144d8c(void *);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int active_unflagged_8c05b2dc(void *);
 extern "C" float object_random_fraction(void *);
@@ -319,44 +318,44 @@ extern "C" void operation_8c148718(Object *o, int a1, int a2)
     S_vv1 *v1;
     S_vv2 *v2;
     S_vv3 *v3;
-    S_vv4 *v4;
-    int v24;
-    S_vv5 *v5;
-    int v25;
-    int v16;
-    int v17;
-    float v18;
-    int v28;
-    int v33;
+    float t4;
     int v6;
+    int v24;
+    int v28;
+    int v25;
+    float v18;
+    S_vv4 *v4;
+    float t7;
+    S_vv5 *v5;
     int v8;
     int v23;
-    int v26;
-    int v34;
+    float t5;
     int v43;
     int t1;
     int t2;
     int t3;
-    float t4;
-    float t5;
+    int v26;
+    int v34;
     int t6;
-    float t7;
-    (void)home2;
+    int v33;
     v1 = (S_vv1 *)((char *)o + 0x700);
+    (void)home2;
     v2 = (S_vv2 *)((char *)o + 0x704);
     v3 = (S_vv3 *)((char *)o + 0x708);
     v4 = (S_vv4 *)((char *)o + 0x70c);
-    v5 = (S_vv5 *)((char *)o + 0x710);
+    v5 = (S_vv5 *)(0x710 + (char *)o);
     switch (a1) {
-    case 4:
+        case 4:
         o->v102();
         v8 = (int)0;
         goto L_8c1487da;
         v6 = (int)0;
         do {
-            (*(Arg0_600 **)((char *)((char *)o + 0x600) + (v6 << 2)))->v102();
-            v8 = (int)(v6 + 1);
-L_8c1487da:;
+            (*(Arg0_600 **)((v6 << 2) + (char *)((char *)o + 0x600)))->v102();
+            v6 += 1;
+            v8 = (int)v6;
+        L_8c1487da:
+            ;
             v6 = (int)v8;
         } while (0xa > v8);
         *(int *)((char *)o + 0x3dc) &= -5;
@@ -371,16 +370,16 @@ L_8c1487da:;
         }
         ((ObjectData *)o)->f44 = 10.0f;
         ((ObjectData *)o)->f6c4 = 4.0f;
-        if (((ObjectData *)o)->f674 == 0) {
+        if (0 == ((ObjectData *)o)->f674) {
             ((ObjectData *)o)->ff0 = 9;
         } else {
-            ((ObjectData *)o)->ff0 = 0xa;
+            ((ObjectData *)o)->ff0 = (short)0xa;
         }
         v1->f00 = 0;
         v2->f00 = 0;
         v3->f00 = 0;
         t1 = operation_8c05bbf8();
-        if (t1 != 0) {
+        if (0 != t1) {
             v4->f00 = (int)(g_8c4da36c->f24);
             v5->f00 = (int)(g_8c4da36c->f28);
             return;
@@ -388,23 +387,23 @@ L_8c1487da:;
         v4->f00 = 0xb4;
         v5->f00 = 0x78;
         return;
-    case 2:
-        if (v1->f00 != 3) {
+        case 2:
+        if (3 != v1->f00) {
             return;
         }
-        if (((ObjectData *)o)->f674 == 0) {
+        if (!(0 != ((ObjectData *)o)->f674)) {
             send_code_8c14472c((void *)o, 0x16);
             return;
         }
         send_code_8c14472c((void *)o, 0x17);
         return;
-    case 9:
-        if (v1->f00 != 3) {
+        case 9:
+        if (3 != v1->f00) {
             return;
         }
-        operation_8c144d8c(o);
+        operation_8c144d8c((void *)o);
         return;
-    case 0:
+        case 0:
         operation_8c01c5f0(o);
         if (v1->f00 != 0) {
             if (v1->f00 == 1) {
@@ -416,18 +415,17 @@ L_8c1487da:;
             return;
         }
         v2->f00 += 1;
-        v16 = (int)v2->f00;
-        if (!(v16 > 0x28)) {
+        if (!((int)v2->f00 > 0x28)) {
             return;
         }
         v1->f00 = 1;
         v2->f00 = 0;
         v3->f00 = 0;
         return;
-L_8c148952:;
+    L_8c148952:
+        ;
         v2->f00 += 1;
-        v17 = (int)v2->f00;
-        if (!(v17 >= v4->f00)) {
+        if (!((int)v2->f00 >= v4->f00)) {
             return;
         }
         v2->f00 = 0;
@@ -435,6 +433,7 @@ L_8c148952:;
         if (t2 != 0) {
             *(Vector3 *)&(&frame)->f04 = *(Vector3 *)&((ObjectData *)o)->f3ac->f3c;
         } else {
+            Frame *pm8;
             t7 = object_random_fraction((void *)o);
             v18 = (float)(t7 * 120.0f);
             t3 = operation_8c05b90c((int)o);
@@ -442,62 +441,68 @@ L_8c148952:;
             (&frame)->f04.f00 = v18 * t4;
             (&frame)->f04.f04 = -1.85f;
             t5 = njCos_8c38c154(t3);
+            pm8 = &frame;
             (&frame)->f04.f08 = v18 * t5;
-            query_vector_position((void *)(&(&frame)->f04), (void *)(&(&frame)->f04));
+            query_vector_position((void *)(&(pm8)->f04), (void *)(&(&frame)->f04));
         }
         operation_8c142230((void *)(*(Arg0_640 **)((char *)((char *)o + 0x640) + (v3->f00 << 2))), (void *)(&(&frame)->f04), (int)(v5->f00));
         v3->f00 += 1;
-        if (!(v3->f00 >= 4)) {
+        if (!(4 <= v3->f00)) {
             return;
         }
         v2->f00 = 0;
         v1->f00 = 2;
         return;
-L_8c148a2c:;
+    L_8c148a2c:
+        ;
         v23 = (int)1;
-        v2->f00 += 1;
-        v24 = (int)0x640;
         v28 = (int)0;
+        t3 = 1 + v2->f00;
+        v2->f00 = t3;
+        v24 = (int)(short)(0x640);
         goto L_8c148a5e;
         v25 = (int)0;
         do {
-            t6 = current_mode_is_four((void *)(*(S_x45152_0 **)((char *)((char *)((int)o + v24) + 0x0) + (v25 << 2))));
+            t6 = current_mode_is_four((void *)(*(S_x25824_0 **)((char *)((char *)((int)o + v24) + 0x0) + (v25 << 2))));
             if (t6 == 0) {
                 v26 = (int)0;
                 goto L_8c148a64;
             }
-            v28 = (int)(v25 + 1);
-L_8c148a5e:;
+            v25 = v25 + 1;
+            v28 = (int)v25;
+        L_8c148a5e:
+            ;
             v25 = (int)v28;
-        } while (4 > v28);
+        } while (v28 < 4);
         v26 = (int)v23;
-L_8c148a64:;
-        if (v26 == 0) {
-            if (!(v2->f00 > 0x258)) {
-                return;
-            }
+    L_8c148a64:
+        ;
+        if (0 == v26 && !(v2->f00 > 0x258)) {
+            return;
         }
         v1->f00 = 3;
         return;
-    case 6:
+        case 6:
         operation_8c144ae0((int)o);
         return;
-    case 5:
+        case 5:
         v33 = (int)0x640;
         v43 = (int)0;
         goto L_8c148aaa;
         v34 = (int)0;
         do {
-            call_8c142268((void *)(*(S_x45488_0 **)((char *)((char *)((int)o + v33) + 0x0) + (v34 << 2))));
-            v43 = (int)(v34 + 1);
-L_8c148aaa:;
+            call_8c142268((void *)(*(S_x26160_0 **)((char *)((char *)((int)o + v33) + 0x0) + (v34 << 2))));
+            v34 = (int)(v34 + 1);
+            v43 = (int)v34;
+        L_8c148aaa:
+            ;
             v34 = (int)v43;
         } while (4 > v43);
         return;
-    case 1:
-    case 3:
-    case 7:
-    case 8:
+        case 1:
+        case 3:
+        case 7:
+        case 8:
         break;
     }
 }

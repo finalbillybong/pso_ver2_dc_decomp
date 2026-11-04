@@ -10,6 +10,7 @@
  * known gaps: hand-revised from a generator draft; remaining differences not classified; review
  *   found and fixed behaviour defects of the generator draft; not proven equivalent to the
  *   original; compiled size differs from the reference by -4 bytes
+ * class header: src/include/classes/TItemWpnScythe.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {

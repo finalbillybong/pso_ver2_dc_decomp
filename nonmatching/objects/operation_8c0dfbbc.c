@@ -6,7 +6,7 @@
  * compiled size: 656 bytes (+0.0%)
  * differing lines: 60 of 293 reference instruction lines
  * differing bytes: 29
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -44,8 +44,8 @@ extern float g_8c4e2ba8;
 extern float g_8c4e2bac;
 extern float g_8c4e2bb0;
 extern float g_8c4e2bb4;
-extern float call_8c12c714(float);
-extern void call_8c0e0060(Object *, int, void *, float);
+extern float hs_8c12c714(float);
+extern void hs_8c0e0060(Object *, int, void *, float);
 void operation_8c0dfbbc(Object *o)
 {
     float v1;
@@ -68,13 +68,13 @@ void operation_8c0dfbbc(Object *o)
     } else {
         v4 = (float)((v2 - o->f98) * 0.21f);
         v5 = (float)((v3 - o->f9c) * 0.21f);
-        t1 = call_8c12c714(v4);
+        t1 = hs_8c12c714(v4);
         if (0.1f > t1) {
             o->f98 = v2;
         } else {
             o->f98 += v4;
         }
-        t2 = call_8c12c714(v5);
+        t2 = hs_8c12c714(v5);
         if (0.1f > t2) {
             o->f9c = v3;
         } else {
@@ -111,5 +111,5 @@ void operation_8c0dfbbc(Object *o)
     }
     o->f98 = o->f48 + o->f50 * 0.5f;
     o->f9c = o->f4c + o->f54 * 0.5f;
-    call_8c0e0060(o, 0, (void *)(((char *)o + 0xa0)), v35);
+    hs_8c0e0060(o, 0, ((char *)o + 0xa0), v35);
 }

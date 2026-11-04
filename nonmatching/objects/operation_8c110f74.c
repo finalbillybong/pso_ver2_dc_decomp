@@ -6,7 +6,7 @@
  * compiled size: 60 bytes (+0.0%)
  * differing lines: 10 of 25 reference instruction lines
  * differing bytes: 42
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -30,7 +30,7 @@ struct Arg0_7c {
     int f7c;
     int f80;
 };
-extern void call_8c110fb0(Object *);
+extern void hs_8c110fb0(Object *);
 void operation_8c110f74(Object *o)
 {
     if (o->f7c->f7c != o->f7c->f80) {
@@ -39,5 +39,5 @@ void operation_8c110f74(Object *o)
     if (o->f62 >= 3) {
         o->f62 = 0;
     }
-    call_8c110fb0(o);
+    hs_8c110fb0(o);
 }

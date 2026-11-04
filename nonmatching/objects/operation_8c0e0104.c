@@ -4,8 +4,8 @@
  * language: c
  * reference size: 544 bytes
  * compiled size: 544 bytes (+0.0%)
- * differing lines: 62 of 229 reference instruction lines
- * differing bytes: 73
+ * differing lines: 20 of 229 reference instruction lines
+ * differing bytes: 25
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   register allocation, instruction scheduling, stack frame and spills, instruction or operand
@@ -70,6 +70,7 @@ void operation_8c0e0104(Object *o)
     int t8;
     int t9;
     float k;
+    float v;
     t1 = call_8c0dfe4c(o);
     if (t1 != 0) {
         if (o->f83 == -1) {
@@ -84,16 +85,20 @@ void operation_8c0e0104(Object *o)
         if ((*(float *)0x8c4e2ba8 + 20.0f) > o->f38) {
             o->f38 = *(float *)0x8c4e2ba8 + 20.0f;
         }
+        v = *(float *)0x8c4e2bb0 - 20.0f;
         k = 1.0f;
-        if ((*(float *)0x8c4e2bb0 - 20.0f - o->f50 * k) < o->f38) {
-            o->f38 = *(float *)0x8c4e2bb0 - 20.0f - o->f50 * k;
+        v = v - k * o->f50;
+        if (v < o->f38) {
+            o->f38 = v;
         }
         if ((*(float *)0x8c4e2bac + 40.0f) > o->f3c) {
             o->f3c = *(float *)0x8c4e2bac + 40.0f;
         }
+        v = *(float *)0x8c4e2bb4 - 40.0f;
         k = 1.0f;
-        if ((*(float *)0x8c4e2bb4 - 40.0f - o->f54 * k) < o->f3c) {
-            o->f3c = *(float *)0x8c4e2bb4 - 40.0f - o->f54 * k;
+        v = v - k * o->f54;
+        if (v < o->f3c) {
+            o->f3c = v;
         }
         return;
     }

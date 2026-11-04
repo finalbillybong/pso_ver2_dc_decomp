@@ -6,7 +6,7 @@
  * compiled size: 52 bytes (-13.3%)
  * differing lines: 35 of 27 reference instruction lines
  * differing bytes: 50
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -8 bytes
@@ -22,11 +22,11 @@ typedef struct S_frame_0 S_frame_0;
 struct Frame {
     S_frame_0 *f00;
 };
-extern void scanf_core(int, int, void *, int, int);
 typedef struct StkArg {
     int f00;
     int f04;
 } StkArg;
+extern void scanf_core(int, int, void *, int, int);
 void operation_8c12b00c(int a0, int a1, int a2, int a3, int a4, StkArg sp)
 {
     Frame frame;
@@ -37,5 +37,5 @@ void operation_8c12b00c(int a0, int a1, int a2, int a3, int a4, StkArg sp)
     } else {
         v1 = (int)&sp.f00;
     }
-    scanf_core(1, 0, (void *)((&frame)->f00), a4, v1);
+    scanf_core(1, 0, (&frame)->f00, a4, v1);
 }

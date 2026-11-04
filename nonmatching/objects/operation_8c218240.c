@@ -6,7 +6,7 @@
  * compiled size: 216 bytes (+0.0%)
  * differing lines: 4 of 81 reference instruction lines
  * differing bytes: 4
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -38,13 +38,13 @@ struct Frame {
 };
 extern S_g8c44be88 *g_8c44be88;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void TObject_ctor_8c0330e4(void *, void *);
+extern void TObject_ctor_8c0330e4(Object *, void *);
 extern void memset_8c12b880(void *, int, int);
 extern int operation_8c036124(int);
 extern void strncpy_8c12b154(void *, int, int);
 extern void select_mode8_8c1cc558(void);
-extern int heap_alloc_8c122700(void *, unsigned int);
-extern void TAdBack_ctor_8c198294(void *, int);
+extern int heap_alloc_8c122700(void *, int);
+extern void TAdBack_ctor_8c198294(int, Object *);
 extern void TAdTitle_ctor_8c199688(int, Object *, int);
 extern int create_pair_widget_8c218624(Object *);
 Object *operation_8c218240(Object *o)
@@ -58,7 +58,7 @@ Object *operation_8c218240(Object *o)
     int t3;
     int t4;
     (void)home;
-    TObject_ctor_8c0330e4((void *)o, g_8c44be88);
+    TObject_ctor_8c0330e4(o, g_8c44be88);
     o->dispatch = (void *)0x8c278334;
     o->f28 = 0;
     o->f2c = 0;
@@ -67,19 +67,19 @@ Object *operation_8c218240(Object *o)
     o->f34 = 0;
     v1 = (int)0;
     v2 = (int)0x10;
-    memset_8c12b880((void *)(&(&frame)->f04), v1, v2);
+    memset_8c12b880(&(&frame)->f04, v1, v2);
     t1 = operation_8c036124(0);
-    strncpy_8c12b154((void *)(&(&frame)->f04), t1, 0x10);
+    strncpy_8c12b154(&(&frame)->f04, t1, 0x10);
     (&frame)->f04 = 0x31;
     if ((&frame)->f04 != 0) {
         select_mode8_8c1cc558();
         return o;
     }
-    t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x40);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, 0x40);
     if (t2 != 0) {
-        TAdBack_ctor_8c198294((void *)t2, (int)o);
+        TAdBack_ctor_8c198294(t2, o);
     }
-    t3 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xac);
+    t3 = heap_alloc_8c122700(g_8c4d97e0, 0xac);
     if (t3 != 0) {
         TAdTitle_ctor_8c199688(t3, o, 1);
     }

@@ -6,7 +6,7 @@
  * compiled size: 336 bytes (+0.0%)
  * differing lines: 10 of 113 reference instruction lines
  * differing bytes: 24
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -50,11 +50,11 @@ extern void set_effect_blend_state(float);
 extern void njPushMatrixEx_8c38ae68(void);
 extern void translate_current_matrix_v_8c382a40(void *);
 extern void njRotateY_8c37df90(int, void *);
-extern void call_8c3827d8(void *);
+extern void hs_8c3827d8(void *);
 extern void operation_8c161c78(void *);
 extern void draw_tree_a702(void *, void *, float);
 extern void operation_8c161ce4(void *);
-extern int call_8c18e8a0(int, int);
+extern int hs_8c18e8a0(int, int);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void restore_effect_blend_state(void);
 void operation_8c22a55c(Object *o)
@@ -73,18 +73,18 @@ void operation_8c22a55c(Object *o)
             set_effect_blend_state(v1);
         }
         njPushMatrixEx_8c38ae68();
-        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0xd8)));
-        njRotateY_8c37df90(0, (void *)(o->fe4));
-        call_8c3827d8((void *)(o->fac));
-        operation_8c161c78((void *)(o->ff0));
-        draw_tree_a702((void *)(o->fa8), (void *)(o->fb0), o->fec);
-        operation_8c161ce4((void *)(o->ff0));
-        t1 = call_8c18e8a0((int)((int)o->fec), 0x1e);
+        translate_current_matrix_v_8c382a40(((char *)o + 0xd8));
+        njRotateY_8c37df90(0, o->fe4);
+        hs_8c3827d8(o->fac);
+        operation_8c161c78(o->ff0);
+        draw_tree_a702(o->fa8, o->fb0, o->fec);
+        operation_8c161ce4(o->ff0);
+        t1 = hs_8c18e8a0((int)o->fec, 0x1e);
         v11 = (float)(float)t1;
-        call_8c3827d8((void *)(o->fb8));
-        draw_tree_a702((void *)(o->fb4), (void *)(o->fbc), v11);
-        call_8c3827d8((void *)(o->fc4));
-        draw_tree_a702((void *)(o->fc0), (void *)(o->fc8), v11);
+        hs_8c3827d8(o->fb8);
+        draw_tree_a702(o->fb4, o->fbc, v11);
+        hs_8c3827d8(o->fc4);
+        draw_tree_a702(o->fc0, o->fc8, v11);
         njPopMatrixEx_8c38ad10();
         if (1.0f > v1) {
             restore_effect_blend_state();

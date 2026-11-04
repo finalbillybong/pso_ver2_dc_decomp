@@ -11,6 +11,7 @@
  *   instruction scheduling, instruction or operand order; review found and fixed behaviour defects
  *   of the generator draft; not proven equivalent to the original; compiled size differs from the
  *   reference by -8 bytes
+ * class header: src/include/classes/TAdBack.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {

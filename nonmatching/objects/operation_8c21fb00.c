@@ -6,7 +6,7 @@
  * compiled size: 260 bytes (+0.0%)
  * differing lines: 56 of 105 reference instruction lines
  * differing bytes: 172
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -41,7 +41,7 @@ struct S_vv1 {
     float f04;
 };
 extern void sq_header3_8c38b02e(int);
-extern void scale_rectangle_fields(void *, void *);
+extern void scale_rectangle_fields(Arg1 *, Frame *);
 extern void sq_quad_8c38b09e(Frame *, float);
 void operation_8c21fb00(int a0, Arg1 *a1, int a2, int a3)
 {
@@ -59,6 +59,6 @@ void operation_8c21fb00(int a0, Arg1 *a1, int a2, int a3)
     (&frame)->f14 = v1->f04 / 256.0f;
     (&frame)->f18 = (v1->f00 + 16.0f) / 256.0f;
     (&frame)->f1c = (v1->f04 + 16.0f) / 256.0f;
-    scale_rectangle_fields((void *)a1, (void *)(&frame));
-    sq_quad_8c38b09e((Frame *)((&frame)), v2);
+    scale_rectangle_fields(a1, (&frame));
+    sq_quad_8c38b09e((&frame), v2);
 }

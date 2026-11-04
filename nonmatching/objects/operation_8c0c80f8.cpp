@@ -6,7 +6,7 @@
  * compiled size: 424 bytes (+0.0%)
  * differing lines: 50 of 173 reference instruction lines
  * differing bytes: 65
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -167,11 +167,11 @@ struct Frame {
 struct Arg0_3dc {
     Vector3 f00;
 };
-extern "C" void operation_8c059ef8(void *, int);
-extern "C" void operation_8c059ea4(void *, int);
+extern "C" void operation_8c059ef8(Object *, int);
+extern "C" void operation_8c059ea4(Object *, int);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
 extern "C" float normalize_vector_checked(void *);
-extern "C" void call_8c3bdf60(void *, void *);
+extern "C" void hs_8c3bdf60(void *, void *);
 extern "C" void operation_8c0c80f8(Object *o, int a1)
 {
     Frame frame;
@@ -187,32 +187,32 @@ extern "C" void operation_8c0c80f8(Object *o, int a1)
                 }
                 return;
             }
-            operation_8c059ef8((void *)o, 1);
+            operation_8c059ef8(o, 1);
             ((ObjectData *)o)->f3e8 &= -0x1001;
             return;
         }
         v1 = (int)((ObjectData *)o)->f3e8;
         if (((v1 & 1)) != 0) {
             ((ObjectData *)o)->f3e8 = (unsigned int)v1 >> 1 << 1;
-            operation_8c059ea4((void *)o, 2);
+            operation_8c059ea4(o, 2);
             return;
         }
         if (((v1 & 2)) == 0) {
             return;
         }
         ((ObjectData *)o)->f3e8 = v1 & -3;
-        operation_8c059ea4((void *)o, 3);
+        operation_8c059ea4(o, 3);
         return;
     }
     *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&((ObjectData *)o)->f3dc->f00;
     (&frame)->f0c.f04 += ((ObjectData *)o)->f3f4;
-    vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f0c), (void *)(((char *)o + 0x324)));
-    t2 = normalize_vector_checked((void *)(&(&frame)->f0c));
+    vector_sub_in_place_8c37f6f0(&(&frame)->f0c, ((char *)o + 0x324));
+    t2 = normalize_vector_checked(&(&frame)->f0c);
     v2 = (float)(t2 * 0.01f);
     ((ObjectData *)o)->f414 = (((ObjectData *)o)->f414 + (&frame)->f0c.f00 * v2) * 0.9f;
     ((ObjectData *)o)->f418 = (((ObjectData *)o)->f418 + (&frame)->f0c.f04 * v2) * 0.9f;
     ((ObjectData *)o)->f41c = (((ObjectData *)o)->f41c + (&frame)->f0c.f08 * v2) * 0.9f;
-    call_8c3bdf60((void *)(((char *)o + 0x324)), (void *)(((char *)o + 0x414)));
+    hs_8c3bdf60(((char *)o + 0x324), ((char *)o + 0x414));
     ((ObjectData *)o)->f3c = ((ObjectData *)o)->f324.f00;
     ((ObjectData *)o)->f44 = ((ObjectData *)o)->f324.f08;
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((ObjectData *)o)->f324;

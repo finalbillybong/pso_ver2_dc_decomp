@@ -6,6 +6,19 @@
  * compiled size: 1532 bytes (+4.4%)
  * differing lines: 454 of 637 reference instruction lines
  * differing bytes: 1071
+ * provenance: hand pass on a generator draft
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original; compiled size differs from the reference by +64 bytes
+ * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
+ */
+/* NON-MATCHING draft: not built, not admitted, earns no matching or progress credit.
+ * address: 0x8c10f90c
+ * function: operation_8c10f90c
+ * language: c
+ * reference size: 1468 bytes
+ * compiled size: 1532 bytes (+4.4%)
+ * differing lines: 454 of 637 reference instruction lines
+ * differing bytes: 1071
  * provenance: generator draft (mode switch2ext)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent

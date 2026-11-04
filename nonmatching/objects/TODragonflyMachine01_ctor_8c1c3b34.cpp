@@ -6,10 +6,11 @@
  * compiled size: 476 bytes (-0.8%)
  * differing lines: 54 of 175 reference instruction lines
  * differing bytes: 240
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -4 bytes
+ * class header: src/include/classes/TODragonflyMachine01.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -124,7 +125,7 @@ extern "C" Object *TODragonflyMachine01_ctor_8c1c3b34(Object *o, int a1)
     ((ObjectData *)o)->f124 = (float)((ObjectData *)o)->f8c * 0.1f + 1.0f;
     {
         Object *base = o;
-        t2 = njSin_8c37eb0c((void *)(((ObjectData *)base)->f134));
+        t2 = njSin_8c37eb0c(((ObjectData *)base)->f134);
         ((ObjectData *)base)->f128 = ((ObjectData *)base)->f124 * t2;
     }
     ((ObjectData *)o)->f138 = 0;

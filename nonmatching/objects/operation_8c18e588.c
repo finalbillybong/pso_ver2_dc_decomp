@@ -6,7 +6,7 @@
  * compiled size: 160 bytes (-4.8%)
  * differing lines: 48 of 69 reference instruction lines
  * differing bytes: 137
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -8 bytes
@@ -42,7 +42,7 @@ struct Object {
     int fb0;
     int fb4;
 };
-extern void call_8c18e394(int, void *, int);
+extern void hs_8c18e394(int, void *, int);
 void operation_8c18e588(Object *o, Arg1 *a1)
 {
     S_vv1 *v1;
@@ -60,7 +60,7 @@ void operation_8c18e588(Object *o, Arg1 *a1)
         o->fac = 0;
         v6 = (int)((int)v1 + 1);
     }
-    call_8c18e394(v6, (void *)(((char *)o + 0xa0)), 0xb4);
+    hs_8c18e394(v6, ((char *)o + 0xa0), 0xb4);
     o->fa4 = 0;
     if (o->fb4 != 0) {
         o->dispatch = (int)(o->f54);

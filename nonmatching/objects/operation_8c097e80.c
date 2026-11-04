@@ -6,7 +6,7 @@
  * compiled size: 500 bytes (+1.6%)
  * differing lines: 34 of 200 reference instruction lines
  * differing bytes: 303
- * provenance: hand pass on a generator draft
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original; compiled size differs from the reference by +8 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
@@ -39,6 +39,9 @@ struct Frame {
 extern int g_8c461ac4;
 extern char g_8c3011ac[];
 extern char g_8c3011bc[];
+extern void operation_195984(float, int, void *, void *);
+extern void operation_195978(float, int, void *);
+extern void operation_1959b0(int, void *, Frame *, float, float);
 void operation_8c097e80(Object *o)
 {
     Frame frame;
@@ -74,10 +77,10 @@ void operation_8c097e80(Object *o)
             (&frame)->f20 = 0.0f;
             (&frame)->f18 = v2 / 32.0f;
             (&frame)->f1c = 1.0f;
-            ((void (*)(float, int, void *, void *))0x8c195984)(-1.8f, 0x26, &(&frame)->f20, &(&frame)->f18);
+            operation_195984(-1.8f, 0x26, &(&frame)->f20, &(&frame)->f18);
         }
         (&frame)->f20 = v2;
-        ((void (*)(float, int, void *))0x8c195978)(-1.8f, 0x27, &(&frame)->f20);
+        operation_195978(-1.8f, 0x27, &(&frame)->f20);
     }
     v17 = (float)o->f40;
     if (v17 > 0.7f) {
@@ -90,7 +93,7 @@ void operation_8c097e80(Object *o)
         (&frame)->f0c = v21;
         (&frame)->f14 = 67.0f;
         (&frame)->f08 = v21;
-        ((void (*)(float, int, void *, void *))0x8c195984)(-1.7f, 0x28, &(&frame)->f10, &(&frame)->f08);
+        operation_195984(-1.7f, 0x28, &(&frame)->f10, &(&frame)->f08);
     }
     v26 = (float)o->f40;
     v27 = (float)1.0f;
@@ -113,10 +116,10 @@ void operation_8c097e80(Object *o)
     }
     v37 = (int)(g_8c461ac4 == 0);
     if (v37 != 0) {
-        ((void (*)(int, void *, Frame *, float, float))0x8c1959b0)(0x29, (void *)g_8c3011ac, (&frame), -1.62f, v36);
-        ((void (*)(int, void *, Frame *, float, float))0x8c1959b0)(0x2a, (g_8c3011ac + 0x8), (&frame), -1.61f, v36);
+        operation_1959b0(0x29, (void *)g_8c3011ac, (&frame), -1.62f, v36);
+        operation_1959b0(0x2a, (g_8c3011ac + 0x8), (&frame), -1.61f, v36);
         return;
     }
-    ((void (*)(int, void *, Frame *, float, float))0x8c1959b0)(0x2b, (void *)g_8c3011bc, (&frame), -1.62f, v36);
-    ((void (*)(int, void *, Frame *, float, float))0x8c1959b0)(0x2c, (g_8c3011bc + 0x8), (&frame), -1.61f, v36);
+    operation_1959b0(0x2b, (void *)g_8c3011bc, (&frame), -1.62f, v36);
+    operation_1959b0(0x2c, (g_8c3011bc + 0x8), (&frame), -1.61f, v36);
 }

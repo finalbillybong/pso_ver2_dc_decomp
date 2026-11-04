@@ -4,8 +4,8 @@
  * language: c
  * reference size: 160 bytes
  * compiled size: 160 bytes (+0.0%)
- * differing lines: 30 of 68 reference instruction lines
- * differing bytes: 70
+ * differing lines: 28 of 68 reference instruction lines
+ * differing bytes: 71
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   register allocation, instruction scheduling, instruction or operand order, constant loading;
@@ -37,6 +37,7 @@ void operation_8c1929d4(int a0)
 {
     Frame frame;
     int v2;
+    int k;
     int v5;
     int v4;
     unsigned short v6;
@@ -51,8 +52,9 @@ void operation_8c1929d4(int a0)
         v7 = 0;
         v4 = (int)0;
         v5 = (int)0xffff;
+        k = 0x24;
         while (v4 != v3) {
-            v6 = (unsigned short)*(unsigned short *)((char *)((char *)*(S_vv2_0 **)((char *)((char *)v2 + 0x0) + (v1)) + 0xe) + (v4 * 0x24));
+            v6 = (unsigned short)*(unsigned short *)((char *)((char *)*(S_vv2_0 **)((char *)((char *)v2 + 0x0) + (v1)) + 0xe) + (v4 * k));
             if ((unsigned int)(unsigned short)v5 > (unsigned int)(unsigned short)v6) {
                 v7 = (int)v4;
                 v5 = (int)v6;

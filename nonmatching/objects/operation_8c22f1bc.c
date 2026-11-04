@@ -6,7 +6,7 @@
  * compiled size: 764 bytes (+0.0%)
  * differing lines: 162 of 273 reference instruction lines
  * differing bytes: 278
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -73,16 +73,16 @@ struct Object {
     int fe0;
 };
 extern int g_8c506524;
-extern void TObject_ctor_8c0330e4(void *, void *);
-extern int call_8c3727a0(int);
-extern void TAdDrawLineCtrl_create_8c227b34(int, int, float);
+extern void TObject_ctor_8c0330e4(Object *, int);
+extern int hs_8c3727a0(int);
+extern void TAdDrawLineCtrl_create_8c227b34(Object *, int, float);
 Object *operation_8c22f1bc(Object *o, int a1)
 {
     Object **home = &o;
     int v1;
     int t1;
     (void)home;
-    TObject_ctor_8c0330e4((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c278f00;
     o->fe0 = 0xff;
     g_8c506524 = 0;
@@ -136,11 +136,11 @@ Object *operation_8c22f1bc(Object *o, int a1)
     o->fdc = 0.78125f;
     v1 = (int)0;
     while ((unsigned int)8 > (unsigned int)(unsigned char)v1) {
-        t1 = call_8c3727a0((int)((unsigned char)v1));
+        t1 = hs_8c3727a0((unsigned char)v1);
         *(int *)((char *)((char *)o + 0xe4) + ((unsigned char)v1 << 2)) = (int)(t1);
         v1 = (int)(v1 + 1);
     }
-    TAdDrawLineCtrl_create_8c227b34((int)o, 7, 0.0f);
-    TAdDrawLineCtrl_create_8c227b34((int)o, 4, 0.0f);
+    TAdDrawLineCtrl_create_8c227b34(o, 7, 0.0f);
+    TAdDrawLineCtrl_create_8c227b34(o, 4, 0.0f);
     return o;
 }

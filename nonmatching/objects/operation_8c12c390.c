@@ -6,7 +6,7 @@
  * compiled size: 160 bytes (-7.0%)
  * differing lines: 112 of 74 reference instruction lines
  * differing bytes: 161
- * provenance: generator draft (mode extern)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -12 bytes
@@ -27,10 +27,10 @@ struct Frame {
 struct S_vv5 {
     unsigned char f00;
 };
-extern int call_8c12ba9c(int, void *);
+extern int hs_8c12ba9c(int, void *);
 extern void memcpy_8c12b77c(int, int, int);
 extern void bytes_shl(int, int, int);
-extern void call_8c12c12c(int, int, int);
+extern void hs_8c12c12c(int, int, int);
 extern void bytes_shl1(int, int);
 void operation_8c12c390(int a0, int a1, int a2)
 {
@@ -44,14 +44,14 @@ void operation_8c12c390(int a0, int a1, int a2)
     int v8;
     int v3;
     (&frame)->f00 = a0;
-    t1 = call_8c12ba9c(a0, (void *)(&(&frame)->f04));
+    t1 = hs_8c12ba9c(a0, &(&frame)->f04);
     v1 = (int)(t1 + 1);
     v2 = (int)(v1 << 1);
     v3 = (int)(/* ? clobbered */ 0 - v2 + 8);
     v4 = (int)(/* ? clobbered */ 0 - v2 + 8);
     memcpy_8c12b77c(v4, v3, v2);
     bytes_shl(v4, v2, 2);
-    call_8c12c12c(v3, v4, v2);
+    hs_8c12c12c(v3, v4, v2);
     bytes_shl1(v3, v2);
     if (a1 != 0) {
         v5 = (S_vv5 *)((&frame)->f00 + 7);

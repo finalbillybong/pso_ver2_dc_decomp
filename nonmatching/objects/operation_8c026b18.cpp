@@ -4,8 +4,8 @@
  * language: c++
  * reference size: 780 bytes
  * compiled size: 776 bytes (-0.5%)
- * differing lines: 162 of 309 reference instruction lines
- * differing bytes: 646
+ * differing lines: 120 of 309 reference instruction lines
+ * differing bytes: 648
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   instruction or operand order; review found and fixed behaviour defects of the generator draft;
@@ -144,10 +144,12 @@ extern "C" void operation_8c073ef0(void *);
 extern "C" void operation_8c026b18(Player *o, Save *a1)
 {
     int i;
-    int k;
+    int j;
     int k2;
     short s0;
     short s1;
+    int k;
+    int m;
     Unit *u;
     unsigned int v;
     int n;
@@ -175,8 +177,8 @@ extern "C" void operation_8c026b18(Player *o, Save *a1)
     k = 0xbcc;
     s0 = o->f330;
     s1 = o->f332;
-    for (i = 0; i != 0xd; i++) {
-        u = operation_8c03b55c((char *)o + k, i);
+    for (j = 0; j != 0xd; j++) {
+        u = operation_8c03b55c((char *)o + k, j);
         if (u != 0) {
             u->v22(1);
         }
@@ -186,12 +188,12 @@ extern "C" void operation_8c026b18(Player *o, Save *a1)
     a1->f26 = o->f19e;
     k2 = 0x142;
     k = 0x404;
-    for (i = 0; i < 0x13; i++) {
-        split14_8c247870(((char *)o + k)[(short)i], a1->fb4 + i, (char *)a1 + i * 0x1c + k2);
+    for (m = 0; m < 0x13; m++) {
+        split14_8c247870(((char *)o + k)[(short)m], a1->fb4 + m, (char *)a1 + m * 0x1c + k2);
     }
     k = 0xbcc;
-    for (i = 0; i != 0xd; i++) {
-        u = operation_8c03b55c((char *)o + k, i);
+    for (j = 0; j != 0xd; j++) {
+        u = operation_8c03b55c((char *)o + k, j);
         if (u != 0) {
             u->v21(1);
         }

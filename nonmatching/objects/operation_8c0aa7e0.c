@@ -6,7 +6,8 @@
  * compiled size: 668 bytes (+0.0%)
  * differing lines: 272 of 301 reference instruction lines
  * differing bytes: 408
- * provenance: hand pass on a generator draft (behaviour reviewed)
+ * provenance: hand pass on a generator draft (behaviour reviewed; address casts converted to
+ *   prototypes)
  * known gaps: hand-revised from a generator draft; remaining differences not classified; review
  *   found and fixed behaviour defects of the generator draft; not proven equivalent to the
  *   original
@@ -85,6 +86,8 @@ struct S_g8c466e20_2c {
     char unknown0[0xc];
     int f0c;
 };
+extern void initialize_spawn_base(Object *, Arg1 *, int);
+extern int rand(void);
 Object *operation_8c0aa7e0(Object *o, Arg1 *a1, Arg2 *a2, int a3)
 {
     Object **home = &o;
@@ -100,38 +103,38 @@ Object *operation_8c0aa7e0(Object *o, Arg1 *a1, Arg2 *a2, int a3)
     int t10;
     int t11;
     (void)home;
-    ((void (*)(Object *, Arg1 *, int))0x8c0ab3bc)(o, a1, a3);
+    initialize_spawn_base(o, a1, a3);
     o->dispatch = (void *)0x8c265cf4;
-    t1 = ((int (*)(void))0x8c12b944)();
+    t1 = rand();
     o->fa0 = a1->f18 * 2.0f * ((float)t1 / 32768.0f - 0.5f) + a2->f00;
-    t2 = ((int (*)(void))0x8c12b944)();
+    t2 = rand();
     o->fa4 = a1->f20 * 2.0f * ((float)t2 / 32768.0f - 0.5f) + a2->f08;
-    t3 = ((int (*)(void))0x8c12b944)();
+    t3 = rand();
     o->f68 = a1->f1c * 2.0f * ((float)t3 / 32768.0f - 0.5f) + a2->f04;
     o->f34 = a2->f00;
     o->f3c = a2->f08;
     o->f38 = o->f68;
-    t4 = ((int (*)(void))0x8c12b944)();
+    t4 = rand();
     o->f2c = a1->f28 * ((float)t4 / 32768.0f) + a1->f24;
     o->f30 = o->f2c;
-    t5 = ((int (*)(void))0x8c12b944)();
+    t5 = rand();
     if (((a1->f88 & 1)) != 0) {
         o->f50 = 1.0f / (float)(*(S_g8c466e20 **)((char *)0x8c466e20 + (o->f20 << 2)))->f2c->f0c;
     } else {
         o->f50 = 1.0f / (float)(int)((float)a1->f4c * ((float)t5 / 32768.0f) + (float)a1->f48);
     }
-    t6 = ((int (*)(void))0x8c12b944)();
+    t6 = rand();
     o->f40 = a1->f74 * ((float)t6 / 32768.0f) + a1->f30;
-    t7 = ((int (*)(void))0x8c12b944)();
+    t7 = rand();
     o->f44 = a1->f68 * ((float)t7 / 32768.0f) + a1->f34;
-    t8 = ((int (*)(void))0x8c12b944)();
+    t8 = rand();
     o->fac = (int)((float)t8 / 32768.0f * 360.0f * 65536.0f / 360.0f);
-    t9 = ((int (*)(void))0x8c12b944)();
+    t9 = rand();
     o->fa8 = a1->f64 * ((float)t9 / 32768.0f) + a1->f60;
-    t10 = ((int (*)(void))0x8c12b944)();
+    t10 = rand();
     o->fb0 = (int)((float)t10 / 32768.0f * 360.0f * 65536.0f / 360.0f);
     o->f8a = o->fac;
-    t11 = ((int (*)(void))0x8c12b944)();
+    t11 = rand();
     o->f5c = (float)t11 / 32768.0f - 0.5f;
     return o;
 }

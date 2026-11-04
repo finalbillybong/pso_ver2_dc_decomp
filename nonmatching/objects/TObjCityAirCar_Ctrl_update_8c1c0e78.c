@@ -11,6 +11,7 @@
  *   register allocation, instruction scheduling, instruction or operand order, constant loading;
  *   review found and fixed behaviour defects of the generator draft; not proven equivalent to the
  *   original
+ * class header: src/include/classes/TObjCityAirCar_Ctrl.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Group {

@@ -7,6 +7,10 @@ source tree for code that the build still takes from generated assembly (the
 
 **Nothing here matches, and nothing here is built.**
 
+The archive currently holds 2,451 drafts: 1,613 hand passes (289 of them with behaviour
+fixes from review) and 838 generator drafts. 1,685 of them compile to exactly the reference
+size, and 433 belong to a class that has a shared header.
+
 - No file in this directory is compiled by `tools/project.py`, `tools/verify_source.py` or
   any other build step. The build reads `config/project.json` only, and no draft appears there.
 - No draft is admitted, and none counts toward any figure: matching functions, code-range
@@ -43,6 +47,7 @@ Every file starts with a comment block in this form:
  * differing bytes: 311
  * provenance: generator draft (mode extern)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: ...
+ * class header: src/include/classes/TObjCollision.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 ```
@@ -56,7 +61,14 @@ Every file starts with a comment block in this form:
   generator variant that produced the closest result), or `hand pass on a generator draft`
   for a hand revision. `(behaviour reviewed)` means that a review found and fixed behaviour
   defects in the generator draft, such as lost stores, invented arguments or a garbled loop.
+  `address casts converted to prototypes` means that calls written as casts of raw
+  addresses were rewritten as calls to extern prototypes bound by address.
 - **known gaps** lists what is known to be different or unverified.
+- **class header** appears only when the function belongs to a class that has a shared
+  header in `src/include/classes/` (matched by the `<Class>_` prefix of its name). It is a
+  pointer for modders. The draft still declares its own local structs, because its code
+  was compiled and measured with them. Switching a draft to the shared header is part of
+  promoting it, and it must still compile afterwards.
 
 ## Quality gate
 
@@ -87,7 +99,7 @@ that the quality gate holds, that every bound symbol still appears in its file, 
 draft overlaps an admitted unit. After a batch admits functions, `regenerate
 --prune-admitted` deletes the drafts those units replaced. After `config/names.json` changes,
 `regenerate` applies the new names to function and callee identifiers (renaming files to
-match) and rebuilds the manifest from the headers.
+match), adds or removes the `class header:` line, and rebuilds the manifest from the headers.
 
 ## Promoting a draft into `src/`
 

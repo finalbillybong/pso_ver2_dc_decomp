@@ -6,7 +6,7 @@
  * compiled size: 384 bytes (+1.1%)
  * differing lines: 42 of 152 reference instruction lines
  * differing bytes: 286
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +4 bytes
@@ -180,12 +180,12 @@ public:
 typedef struct Arg0_s3e8Data {
 
 } Arg0_s3e8Data;
-extern "C" void operation_8c059ef8(void *, int);
+extern "C" void operation_8c059ef8(Object *, int);
 extern "C" void operation_8c1147cc(void *);
-extern "C" void call_8c108570(void *);
-extern "C" void operation_8c059ea4(void *, int);
+extern "C" void hs_8c108570(void *);
+extern "C" void operation_8c059ea4(Object *, int);
 extern "C" void operation_8c01c5f0(Object *);
-extern "C" void operation_8c090d88(void *, float);
+extern "C" void operation_8c090d88(Object *, float);
 extern "C" void operation_8c091484(Object *o, int a1)
 {
     Frame frame;
@@ -199,30 +199,30 @@ extern "C" void operation_8c091484(Object *o, int a1)
                 return;
             }
             ((ObjectData *)o)->ff0 = 0;
-            operation_8c059ef8((void *)o, 2);
+            operation_8c059ef8(o, 2);
             ((ObjectData *)o)->f3e4 &= -0x400001;
             o->v101();
             ((ObjectData *)o)->f418 = 4;
             ((ObjectData *)o)->f4d4 = 1;
-            operation_8c1147cc((void *)(((char *)o + 0x3e8)));
-            call_8c108570((void *)(((char *)o + 0x3c)));
+            operation_8c1147cc(((char *)o + 0x3e8));
+            hs_8c108570(((char *)o + 0x3c));
             return;
         }
         t1 = ((Arg0_s3e8 *)((char *)o + 0x3e8))->v5();
         if (t1 == 0) {
             return;
         }
-        operation_8c059ea4((void *)o, 2);
+        operation_8c059ea4(o, 2);
         return;
     }
     operation_8c01c5f0(o);
     if (((ObjectData *)o)->f3e0 == 2) {
-        operation_8c090d88((void *)o, ((ObjectData *)o)->f3c.f04 + 25.0f);
+        operation_8c090d88(o, ((ObjectData *)o)->f3c.f04 + 25.0f);
         *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&((ObjectData *)o)->f3c;
         (&frame)->f0c.f04 = ((ObjectData *)o)->f414;
         o->v107();
     } else {
-        operation_8c090d88((void *)o, ((ObjectData *)o)->f408 + ((ObjectData *)o)->f3c.f04);
+        operation_8c090d88(o, ((ObjectData *)o)->f408 + ((ObjectData *)o)->f3c.f04);
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((ObjectData *)o)->f3c;
         (&frame)->f00.f04 = ((ObjectData *)o)->f414;
         o->v107((&frame));

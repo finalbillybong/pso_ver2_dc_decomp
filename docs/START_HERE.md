@@ -47,7 +47,7 @@ regenerated at build time and earn no code or matching credit.
 ## Non-matching draft archive
 
 [`nonmatching/`](../nonmatching/README.md) holds the closest non-matching C/C++ draft of
-2,447 functions that are not yet matched, each with a header that gives its differing lines,
+2,451 functions that are not yet matched, each with a header that gives its differing lines,
 size against the reference, provenance and known gaps. It is for reading, modding and
 porting only. It is never built or admitted and carries no matching credit. A draft is a
 good starting point for a matching attempt; promote it through the normal pipeline, then

@@ -4,8 +4,8 @@
  * language: c
  * reference size: 572 bytes
  * compiled size: 572 bytes (+0.0%)
- * differing lines: 62 of 251 reference instruction lines
- * differing bytes: 35
+ * differing lines: 24 of 251 reference instruction lines
+ * differing bytes: 12
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   register allocation, instruction scheduling; review found and fixed behaviour defects of the
@@ -47,7 +47,6 @@ void operation_8c01dea8(void)
     Pair *q;
     Pad *src;
     int k;
-    short v;
     Rep *r;
     g_8c41cd00 = 0;
     for (port = 0; port < 4; port++) {
@@ -72,7 +71,8 @@ void operation_8c01dea8(void)
     src = g_8c41ccfc;
     prev = g_8c41ccec.cur;
     g_8c41ccec.cur = src->cur;
-    g_8c41ccec.edge = (src->cur ^ prev) & src->cur;
+    k = src->cur;
+    g_8c41ccec.edge = (k ^ prev) & k;
     n = 0;
     for (i = 0; i < 6; i++) {
         c = *((unsigned char *)src->keys + i);
@@ -91,74 +91,94 @@ void operation_8c01dea8(void)
     }
     r = (Rep *)(g_8c41cba0 + 0x110);
     operation_8c01d8d4(r);
-    v = r->count[0];
-    if (r->bits & 0x10) {
-        v++;
-    } else {
-        v = 0;
+    {
+        short v = r->count[0];
+        if (r->bits & 0x10) {
+            v++;
+        } else {
+            v = 0;
+        }
+        r->count[0] = v;
     }
-    r->count[0] = v;
-    v = r->count[1];
-    if (r->bits & 0x20) {
-        v++;
-    } else {
-        v = 0;
+    {
+        short v = r->count[1];
+        if (r->bits & 0x20) {
+            v++;
+        } else {
+            v = 0;
+        }
+        r->count[1] = v;
     }
-    r->count[1] = v;
-    v = r->count[2];
-    if (r->bits & 0x40) {
-        v++;
-    } else {
-        v = 0;
+    {
+        short v = r->count[2];
+        if (r->bits & 0x40) {
+            v++;
+        } else {
+            v = 0;
+        }
+        r->count[2] = v;
     }
-    r->count[2] = v;
-    v = r->count[3];
-    if (r->bits & 0x80) {
-        v++;
-    } else {
-        v = 0;
+    {
+        short v = r->count[3];
+        if (r->bits & 0x80) {
+            v++;
+        } else {
+            v = 0;
+        }
+        r->count[3] = v;
     }
-    r->count[3] = v;
-    v = r->count[4];
-    if (r->bits & 0x100000) {
-        v++;
-    } else {
-        v = 0;
+    {
+        short v = r->count[4];
+        if (r->bits & 0x100000) {
+            v++;
+        } else {
+            v = 0;
+        }
+        r->count[4] = v;
     }
-    r->count[4] = v;
-    v = r->count[5];
-    if (r->bits & 0x200000) {
-        v++;
-    } else {
-        v = 0;
+    {
+        short v = r->count[5];
+        if (r->bits & 0x200000) {
+            v++;
+        } else {
+            v = 0;
+        }
+        r->count[5] = v;
     }
-    r->count[5] = v;
-    v = r->count[6];
-    if (r->bits & 0x400000) {
-        v++;
-    } else {
-        v = 0;
+    {
+        short v = r->count[6];
+        if (r->bits & 0x400000) {
+            v++;
+        } else {
+            v = 0;
+        }
+        r->count[6] = v;
     }
-    r->count[6] = v;
-    v = r->count[7];
-    if (r->bits & 0x800000) {
-        v++;
-    } else {
-        v = 0;
+    {
+        short v = r->count[7];
+        if (r->bits & 0x800000) {
+            v++;
+        } else {
+            v = 0;
+        }
+        r->count[7] = v;
     }
-    r->count[7] = v;
-    v = r->count[8];
-    if (r->bits & 0x20000) {
-        v++;
-    } else {
-        v = 0;
+    {
+        short v = r->count[8];
+        if (r->bits & 0x20000) {
+            v++;
+        } else {
+            v = 0;
+        }
+        r->count[8] = v;
     }
-    r->count[8] = v;
-    v = r->count[9];
-    if (r->bits & 0x10000) {
-        v++;
-    } else {
-        v = 0;
+    {
+        short v = r->count[9];
+        if (r->bits & 0x10000) {
+            v++;
+        } else {
+            v = 0;
+        }
+        r->count[9] = v;
     }
-    r->count[9] = v;
 }

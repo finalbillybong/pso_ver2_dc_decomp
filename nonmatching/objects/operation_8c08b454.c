@@ -6,7 +6,7 @@
  * compiled size: 228 bytes (+0.0%)
  * differing lines: 16 of 104 reference instruction lines
  * differing bytes: 30
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -58,7 +58,7 @@ struct Arg0_24 {
     float f0c;
 };
 extern float njSin_8c37eb0c(int);
-extern void call_8c08b454(Object *, void *, int, int);
+extern void hs_8c08b454(Object *, void *, int, int);
 void operation_8c08b454(Object *o, S_vv1 *a1, int a2, int a3)
 {
     float v2;
@@ -81,7 +81,7 @@ void operation_8c08b454(Object *o, S_vv1 *a1, int a2, int a3)
         }
         o->f8c += 1;
         if (a1->f2c != 0) {
-            call_8c08b454(o, (void *)(a1->f2c), (int)(a2 + o->f24->f08), (int)((int)(o->f24->f0c * (float)a3)));
+            hs_8c08b454(o, a1->f2c, a2 + o->f24->f08, (int)(o->f24->f0c * (float)a3));
         }
         a1 = (S_vv1 *)a1->f30;
     } while (a1 != 0);

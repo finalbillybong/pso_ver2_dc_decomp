@@ -4,8 +4,8 @@
  * language: c
  * reference size: 176 bytes
  * compiled size: 172 bytes (-2.3%)
- * differing lines: 10 of 73 reference instruction lines
- * differing bytes: 93
+ * differing lines: 6 of 73 reference instruction lines
+ * differing bytes: 90
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   register allocation, instruction or operand order; review found and fixed behaviour defects of
@@ -56,7 +56,7 @@ void handle_6x2F_change_player_hp_8c02a624(Object *o)
     }
     if (v5 != 0) {
         v7 = (int)o->f02;
-        v12 = v9 = 0;
+        v9 = v12 = 0;
         if (g_8c4627c8 == 0) {
             v6 = (int)0;
             if (o->f02 == g_8c418248) {
@@ -70,6 +70,9 @@ void handle_6x2F_change_player_hp_8c02a624(Object *o)
             }
         }
         if (v12 != 0) {
+        } else {
+            return;
+        }
         switch (o->f04) {
         case 0:
             set_330((void *)v5, o->f08);
@@ -80,7 +83,6 @@ void handle_6x2F_change_player_hp_8c02a624(Object *o)
         case 2:
             operation_8c04a7a0((void *)v5, v5->f198);
             break;
-        }
         }
     }
 }

@@ -4,12 +4,11 @@
  * language: c++
  * reference size: 552 bytes
  * compiled size: 552 bytes (+0.0%)
- * differing lines: 22 of 194 reference instruction lines
- * differing bytes: 29
- * provenance: hand pass on a generator draft (behaviour reviewed)
- * known gaps: hand-revised from a generator draft; remaining differences not classified; review
- *   found and fixed behaviour defects of the generator draft; not proven equivalent to the
- *   original
+ * differing lines: 18 of 194 reference instruction lines
+ * differing bytes: 239
+ * provenance: hand pass on a generator draft
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -138,7 +137,7 @@ typedef struct ObjectData {
     char unknownec[0x4];
     short ff0;
     char unknownf2[0x2b6];
-    unsigned short f3a8;
+    volatile unsigned short f3a8;
     char unknown3aa[0x32];
     int f3dc;
     char unknown3e0[0x24];
@@ -185,80 +184,108 @@ extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void operation_8c07c18c(void *);
 extern "C" void operation_8c069524(Object *o, int a1)
 {
+    int pm6;
+    ObjectData *pm11;
     Frame frame;
-    S_vv1 *v1;
-    int t1;
     int t2;
-    int t3;
+    S_vv1 *v1;
+    signed char pm7;
+    int t1;
+    int pm8;
+    ObjectData *pm5;
+    int pm9;
+    void *pm10;
     int t4;
-    v1 = (S_vv1 *)((char *)o + 0x82c);
+    int pm13;
+    int pm14;
+    pm8 = 0x82c;
+    v1 = (S_vv1 *)((char *)o + pm8);
     switch (a1) {
-    case 4:
-        ((ObjectData *)o)->ff0 = 7;
+        case 4:
+        ((ObjectData *)o)->ff0 = (short)7;
+        pm11 = (ObjectData *)o;
         o->v102();
         ((ObjectData *)o)->f404 = 0;
-        *(int *)((char *)o + 0x3dc) |= 0x100;
-        ((ObjectData *)o)->f5f8 = ((ObjectData *)o)->f40;
+        a1 = *(int *)(0x3dc + (char *)o);
+        pm14 = 0x100;
+        *(int *)(0x3dc + (char *)o) = pm14 | a1;
+        (pm11)->f5f8 = ((ObjectData *)o)->f40;
         ((ObjectData *)o)->f5fc = 0.0f;
-        ((ObjectData *)o)->f3dc &= -0xc81;
-        ((ObjectData *)o)->f3dc |= 0x200;
+        ((ObjectData *)o)->f3dc = ((ObjectData *)o)->f3dc & -0xc81;
+        ((ObjectData *)o)->f3dc = ((ObjectData *)o)->f3dc | 0x200;
         v1->f00 = 0;
         operation_8c07c1a8((void *)(((ObjectData *)o)->f6a0));
         return;
-    case 2:
-    case 11:
-        if (((((ObjectData *)o)->fe8 & 0x10)) == 0) {
-            return;
+        case 2:
+        case 11:
+        pm8 = ((ObjectData *)o)->fe8 & 0x10;
+        if (!(0 == ((pm8)))) {
+            ObjectData *pm12;
+            pm5 = (ObjectData *)o;
+            o->v93(0x17, 6);
+            (&frame)->f00 = (char)0x12;
+            (&frame)->f01 = (char)5;
+            pm6 = (int)(int)((ObjectData *)o)->f20;
+            (&frame)->f02 = (short)pm6;
+            (&frame)->f04 = 0x17;
+            pm6 = ((ObjectData *)o)->f698;
+            pm12 = (ObjectData *)o;
+            (&frame)->f06 = (short)pm6;
+            (&frame)->f08 = 0xffff & (int)(int)(pm5)->f3a8;
+            (&frame)->f0c = ((ObjectData *)o)->f6ac;
+            pm10 = (void *)(&frame);
+            (&frame)->f10 = (pm12)->f6b0;
+            operation_8c0368a8(pm10);
+        } else {
         }
-        o->v93(0x17, 6);
-        (&frame)->f00 = 0x12;
-        (&frame)->f01 = 5;
-        (&frame)->f02 = ((ObjectData *)o)->f20;
-        (&frame)->f04 = 0x17;
-        (&frame)->f06 = ((ObjectData *)o)->f698;
-        (&frame)->f08 = ((ObjectData *)o)->f3a8 & 0xffff;
-        (&frame)->f0c = ((ObjectData *)o)->f6ac;
-        (&frame)->f10 = ((ObjectData *)o)->f6b0;
-        operation_8c0368a8((void *)(&frame));
         return;
-    case 9:
-        if (((((ObjectData *)o)->fe8 & 0x10)) == 0) {
+        case 9:
+        pm5 = (ObjectData *)o;
+        if (0 == (((pm5)->fe8 & 0x10))) {
             return;
         }
         call_8c06741c(o);
         return;
-    case 0:
+        case 0:
         operation_8c01c5f0(o);
         v1->f00 += 1;
         t1 = check_range_8c01cf68((void *)o, 0.0f);
-        if (t1 == 0) {
+        if (0 == t1) {
             t2 = check_range_8c01cf68((void *)o, 12.0f);
             if (t2 == 0) {
                 goto L_8c069686;
             }
         }
-        play_se_8c05fbf8(0x30009, (void *)(((char *)o + 0x658)), 0, 0);
-L_8c069686:;
-        if (v1->f00 > 1) {
+        pm13 = 0;
+        pm9 = pm13;
+        play_se_8c05fbf8(0x30009, (void *)((0x658 + (char *)o)), 0, pm9);
+    L_8c069686:
+        ;
+        pm7 = 1;
+        t1 = v1->f00;
+        t2 = t1;
+        pm8 = (int)pm7;
+        if (pm8 < t2) {
+            int t3;
             t3 = check_range_8c01cf68((void *)o, 10.0f);
-            if (t3 != 0) {
+            if ((t3 != 0)) {
                 operation_8c07c18c((void *)(((ObjectData *)o)->f6a0));
             } else {
                 t4 = check_range_8c01cf68((void *)o, 23.0f);
-                if (t4 != 0) {
+                if (!(0 == t4)) {
                     operation_8c07c1a8((void *)(((ObjectData *)o)->f6a0));
                 }
             }
             ((ObjectData *)o)->f6a0->v1();
         }
         return;
-    case 1:
-    case 3:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 10:
+        case 1:
+        case 3:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 10:
         break;
     }
 }

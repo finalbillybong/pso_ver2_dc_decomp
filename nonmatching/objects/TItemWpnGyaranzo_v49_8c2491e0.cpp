@@ -6,10 +6,11 @@
  * compiled size: 224 bytes (+0.0%)
  * differing lines: 20 of 94 reference instruction lines
  * differing bytes: 26
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TItemWpnGyaranzo.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -84,19 +85,19 @@ typedef struct ObjectData {
 struct Frame {
     char unknown0[0xc];
 };
-extern "C" void operation_8c075894(void *, void *, int, int);
+extern "C" void operation_8c075894(Object *, void *, int, Frame *);
 extern "C" void TItemWpnGyaranzo_v49_8c2491e0(Object *o)
 {
     Frame frame;
     ((ObjectData *)o)->f238 += 0x2aaa;
     if (((ObjectData *)o)->f38 != 0) {
-        operation_8c075894((void *)o, (void *)(((ObjectData *)o)->f13c), 2, (int)(&frame));
+        operation_8c075894(o, ((ObjectData *)o)->f13c, 2, (&frame));
         o->v48((&frame), 0, 0x4fa, 1);
-        operation_8c075894((void *)o, (void *)(((ObjectData *)o)->f13c), 3, (int)(&frame));
+        operation_8c075894(o, ((ObjectData *)o)->f13c, 3, (&frame));
         o->v48((&frame), 1, 0xe38, 1);
-        operation_8c075894((void *)o, (void *)(((ObjectData *)o)->f13c), 4, (int)(&frame));
+        operation_8c075894(o, ((ObjectData *)o)->f13c, 4, (&frame));
         o->v48((&frame), 2, -0x4fa, 1);
-        operation_8c075894((void *)o, (void *)(((ObjectData *)o)->f13c), 5, (int)(&frame));
+        operation_8c075894(o, ((ObjectData *)o)->f13c, 5, (&frame));
         o->v48((&frame), 3, -0xe38, 1);
     }
 }

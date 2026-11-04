@@ -6,10 +6,9 @@
  * compiled size: 328 bytes (-1.2%)
  * differing lines: 92 of 133 reference instruction lines
  * differing bytes: 300
- * provenance: generator draft (mode switch2ext)
- * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
- *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
- *   to the original; compiled size differs from the reference by -4 bytes
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original; compiled size differs from the reference by -4 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -60,11 +59,11 @@ extern Vector3 g_8c319ecc;
 extern S_g8c44bea0 *g_8c44bea0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern char g_8c2e2e84[];
-extern void TObject_ctor_8c0330e4(void *, void *);
+extern void TObject_ctor_8c0330e4(Object *, void *);
 extern void operation_1932c4(void *, void *, void *);
-extern int create_effect_769c(void *, int);
-extern int heap_alloc_8c122700(void *, unsigned int);
-extern void extra_b6394(void *, void *, void *, int, void *, int, float);
+extern int create_effect_769c(int, int);
+extern int heap_alloc_8c122700(void *, int);
+extern void extra_b6394(int, S_vv1 *, void *, int, float, int, void *);
 Object *TItemEffArmor_ctor_8c18a568(Object *o, int a1, float f0, float f1)
 {
     Frame frame;
@@ -73,12 +72,12 @@ Object *TItemEffArmor_ctor_8c18a568(Object *o, int a1, float f0, float f1)
     int t1;
     int t2;
     (void)home;
-    TObject_ctor_8c0330e4((void *)o, g_8c44bea0);
+    TObject_ctor_8c0330e4(o, g_8c44bea0);
     o->dispatch = (void *)0x8c272228;
     o->tag = (int)(g_8c319ec8);
     o->size = 0x80;
     o->f28 = 0.0f;
-    operation_1932c4((void *)(((char *)o + 0x74)), (void *)(((char *)o + 0x7c)), (void *)(((char *)o + 0x78)));
+    operation_1932c4(((char *)o + 0x74), ((char *)o + 0x7c), ((char *)o + 0x78));
     o->f2c = f0;
     o->f5c = f1;
     o->f70 = a1;
@@ -86,14 +85,14 @@ Object *TItemEffArmor_ctor_8c18a568(Object *o, int a1, float f0, float f1)
     o->f60 = *(float *)(g_8c2e2e84 + 0x20);
     o->f64 = *(float *)(g_8c2e2e84 + 0x1c);
     o->f68 = (1.0f - o->f60) / 14.5f;
-    t1 = create_effect_769c((void *)((int)o->f70 + 0x3c), 0x1ba);
+    t1 = create_effect_769c((int)o->f70 + 0x3c, 0x1ba);
     v1 = (S_vv1 *)(void *)0x8c287280;
     o->f20 = (int)(t1);
     *(Block16 *)&o->f3c = *(Block16 *)&v1->f00;
     *(Vector3 *)&(&frame)->f04 = *(Vector3 *)&g_8c319ecc;
-    t2 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x68);
+    t2 = heap_alloc_8c122700(g_8c4d97e0, 0x68);
     if (t2 != 0) {
-        extra_b6394((void *)t2, (void *)v1, (void *)(&(&frame)->f04.f00), 0x3a, (void *)a1, (int)g_8c44bea0, 0.2f);
+        extra_b6394(t2, v1, &(&frame)->f04.f00, 0x3a, 0.2f, a1, g_8c44bea0);
     }
     return o;
 }

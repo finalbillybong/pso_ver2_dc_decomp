@@ -6,7 +6,7 @@
  * compiled size: 312 bytes (+1.3%)
  * differing lines: 58 of 113 reference instruction lines
  * differing bytes: 231
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +4 bytes
@@ -68,11 +68,11 @@ extern int g_8c31624c;
 extern S_g8c4daa80 *g_8c4daa80;
 extern int g_8c4daa84;
 extern int g_8c510ba0;
-extern void call_8c088f14(Object *, int, int);
+extern void hs_8c088f14(Object *, int, int);
 Object *operation_8c157bc4(Object *o, int a1, int a2)
 {
     int v4;
-    call_8c088f14(o, a1, a2);
+    hs_8c088f14(o, a1, a2);
     o->dispatch = (void *)0x8c26eb84;
     o->tag = (int)(g_8c31624c);
     o->size = 0x11c;

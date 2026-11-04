@@ -3,12 +3,13 @@
  * function: operation_8c0f9314
  * language: c++
  * reference size: 440 bytes
- * compiled size: 436 bytes (-0.9%)
+ * compiled size: 440 bytes (+0.0%)
  * differing lines: 46 of 163 reference instruction lines
- * differing bytes: 370
- * provenance: hand pass on a generator draft
- * known gaps: hand-revised from a generator draft; remaining differences not classified; not
- *   proven equivalent to the original; compiled size differs from the reference by -4 bytes
+ * differing bytes: 333
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
+ * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
+ *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
+ *   to the original
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -20,8 +21,8 @@ typedef struct Frame Frame;
 typedef struct Object Object;
 typedef struct Arg0_3a4 Arg0_3a4;
 typedef struct Arg0_3a8 Arg0_3a8;
-typedef struct S_x31872 S_x31872;
-typedef struct S_x76384 S_x76384;
+typedef struct S_x31808 S_x31808;
+typedef struct S_x79328 S_x79328;
 struct Object {
     char unknown0[0x3a0];
     int f3a0;
@@ -43,10 +44,10 @@ struct Frame {
     Vector3 f00;
     Vector3 f0c;
 };
-struct S_x76384 {
+struct S_x31808 {
     Vector3 f00;
 };
-struct S_x31872 {
+struct S_x79328 {
     Vector3 f00;
 };
 struct Arg0_3a8 {
@@ -58,14 +59,15 @@ struct PmfObj {
 };
 typedef void (PmfObj::*PMF_0)();
 extern "C" char g_8c30a484[];
-extern "C" int call_8c04a52c(Object *, void *, float);
-extern "C" void call_8c18e6fc(void *);
-extern "C" float object_random_fraction(void *);
+extern "C" int hs_8c04a52c(Object *, void *, float);
+extern "C" void hs_8c18e6fc(void *);
+extern "C" float object_random_fraction(Object *);
 extern "C" float njSin_8c37eb0c(int);
 extern "C" float njCos_8c38c154(int);
 extern "C" float njScalor_8c37e480(void *);
+extern "C" void hs_8c18e6fc_1(Frame *);
 extern "C" void njUnitVector_8c37b630(void *);
-extern "C" void call_8c0ffdf0(void *, int);
+extern "C" void hs_8c0ffdf0(void *, int);
 extern "C" void operation_8c0f9314(Object *o)
 {
     Frame frame;
@@ -77,33 +79,33 @@ extern "C" void operation_8c0f9314(Object *o)
     float t5;
     float t6;
     o->f3d0 = 0.0f;
-    t1 = call_8c04a52c(o, (void *)(&o->f3d4), 200.0f);
+    t1 = hs_8c04a52c(o, &o->f3d4, 200.0f);
     if ((unsigned short)t1 == 0xffff) {
         o->f3a0 = 2;
-        *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&((S_x76384 *)(o->f3a0 * 0x18 + g_8c30a484))->f00;
-        call_8c18e6fc((void *)(&(&frame)->f0c));
+        *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&((S_x31808 *)(o->f3a0 * 0x18 + g_8c30a484))->f00;
+        hs_8c18e6fc(&(&frame)->f0c);
         (((PmfObj *)(o))->*(*(PMF_0 *)(&(&frame)->f0c)))();
         return;
     }
-    t6 = object_random_fraction((void *)o);
+    t6 = object_random_fraction(o);
     v1 = (int)(int)(t6 * 1048575.0f);
     t2 = njSin_8c37eb0c(v1);
     o->f3d4 += t2 * 15.0f;
     t3 = njCos_8c38c154(v1);
     o->f3dc += t3 * 15.0f;
-    t4 = njScalor_8c37e480((void *)(&o->f3d4));
+    t4 = njScalor_8c37e480(&o->f3d4);
     if (!(t4 > 0.01f)) {
         o->f3a0 = 2;
-        *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((S_x31872 *)(o->f3a0 * 0x18 + g_8c30a484))->f00;
-        call_8c18e6fc((void *)(&frame));
+        *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((S_x79328 *)(o->f3a0 * 0x18 + g_8c30a484))->f00;
+        hs_8c18e6fc_1((&frame));
         (((PmfObj *)(o))->*(*(PMF_0 *)((&frame))))();
         return;
     }
-    njUnitVector_8c37b630((void *)(&o->f3d4));
-    t5 = object_random_fraction((void *)o);
+    njUnitVector_8c37b630(&o->f3d4);
+    t5 = object_random_fraction(o);
     o->f3b4 = t5 * 20.0f + 50.0f;
     o->f3bc = 1.0f;
-    call_8c0ffdf0((void *)(o->f3a4), 8);
+    hs_8c0ffdf0(o->f3a4, 8);
     o->f3a8->f18 &= -0x14001ad1;
     o->f3a8->f18 |= 0x14000050;
     o->f408 = 0;

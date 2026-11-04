@@ -6,7 +6,7 @@
  * compiled size: 72 bytes (+0.0%)
  * differing lines: 10 of 30 reference instruction lines
  * differing bytes: 6
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -34,7 +34,7 @@ struct S_g8c469b60_4 {
     S_g8c469b60_4_14 *f14;
 };
 extern S_g8c469b60 *g_8c469b60;
-extern void call_8c074ec4(void);
+extern void hs_8c074ec4(void);
 void operation_8c07fd18(Object *o)
 {
     unsigned char v1;
@@ -51,6 +51,6 @@ void operation_8c07fd18(Object *o)
         v4 = (int)0;
     }
     if (4 > v4) {
-        call_8c074ec4();
+        hs_8c074ec4();
     }
 }

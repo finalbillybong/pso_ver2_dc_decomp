@@ -4,7 +4,7 @@
  * language: c
  * reference size: 400 bytes
  * compiled size: 400 bytes (+0.0%)
- * differing lines: 14 of 173 reference instruction lines
+ * differing lines: 10 of 173 reference instruction lines
  * differing bytes: 22
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
@@ -50,6 +50,7 @@ int operation_8c11b480(Object *o, Vector3 *a1)
     int a;
     float s;
     float c;
+    float k;
     r = 0;
     if (!(squared_distance_xz(&o->f3c, (char *)o + 0x54) > 250000.0f)) {
         frame.dir = *a1;
@@ -58,7 +59,8 @@ int operation_8c11b480(Object *o, Vector3 *a1)
             for (i = 1, sign = -1; i < 0x10; i++) {
                 frame.pos = o->f3c;
                 call_8c3bdf60(&frame.pos, &frame.dir);
-                frame.pos.y += 10.0f;
+                k = 10.0f;
+                frame.pos.y = k + frame.pos.y;
                 if (operation_8c051ff4(o, &frame.pos, &frame) != 0 && operation_8c0113bc((int)&o->f3c, (int)&frame.pos) == 0) {
                     o->f48 = o->f3c;
                     r = 1;

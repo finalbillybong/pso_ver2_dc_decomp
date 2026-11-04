@@ -6,7 +6,7 @@
  * compiled size: 84 bytes (+0.0%)
  * differing lines: 4 of 37 reference instruction lines
  * differing bytes: 2
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -36,7 +36,7 @@ struct Frame {
     char unknownc[0x4];
     Block8 f10;
 };
-extern void operation_8c0368a8(void *);
+extern void operation_8c0368a8(Frame *);
 void operation_8c029bc0(Object *o)
 {
     Frame frame;
@@ -53,5 +53,5 @@ void operation_8c029bc0(Object *o)
     (&frame)->f01 = 3;
     (&frame)->f02 = o->f20;
     *(Block8 *)&(&frame)->f04 = *(Block8 *)&(&frame)->f10;
-    operation_8c0368a8((void *)(&frame));
+    operation_8c0368a8((&frame));
 }

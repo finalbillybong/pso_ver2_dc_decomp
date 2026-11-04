@@ -6,7 +6,7 @@
  * compiled size: 200 bytes (+13.6%)
  * differing lines: 98 of 69 reference instruction lines
  * differing bytes: 185
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +24 bytes
@@ -22,7 +22,7 @@ struct Object {
     char tag;
     char f01;
 };
-extern int call_8c1f74b0(int);
+extern int hs_8c1f74b0(int);
 int operation_8c1f3440(Object *o, int a1)
 {
     int v3;
@@ -49,7 +49,7 @@ int operation_8c1f3440(Object *o, int a1)
 L_8c1f3474:;
             v3 = (int)(a1 & 0x24ff);
 L_8c1f3478:;
-            t1 = call_8c1f74b0(v3);
+            t1 = hs_8c1f74b0(v3);
             if ((int)(unsigned char)t1 >= 0x98 && !((int)(unsigned char)t1 >= 0xf7)) {
                 goto L_8c1f34b8;
             }

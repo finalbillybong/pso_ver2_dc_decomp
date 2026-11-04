@@ -6,7 +6,7 @@
  * compiled size: 228 bytes (+0.0%)
  * differing lines: 56 of 70 reference instruction lines
  * differing bytes: 106
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -40,10 +40,10 @@ struct Object {
     float f3bc;
     float f3c0;
 };
-extern void TObjEnemy_ctor_8c012008(void *);
+extern void TObjEnemy_ctor_8c012008(Object *);
 Object *operation_8c0e3730(Object *o)
 {
-    TObjEnemy_ctor_8c012008((void *)o);
+    TObjEnemy_ctor_8c012008(o);
     o->dispatch = (void *)0x8c2677fc;
     o->f30a = 0;
     o->f30c = 0;

@@ -6,7 +6,7 @@
  * compiled size: 128 bytes (+0.0%)
  * differing lines: 20 of 51 reference instruction lines
  * differing bytes: 23
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -31,9 +31,9 @@ struct Object {
     float f24;
     float f28;
 };
-extern void operation_8c014edc(void *);
-extern void operation_8c014ef8(void *);
-extern void operation_8c014f58(void *);
+extern void operation_8c014edc(Object *);
+extern void operation_8c014ef8(Object *);
+extern void operation_8c014f58(Object *);
 Object *operation_8c014e3c(Object *o, int a1)
 {
     o->tag = (int)(*(int *)((char *)0x8c2e2e78 + (a1 << 2)));
@@ -41,13 +41,13 @@ Object *operation_8c014e3c(Object *o, int a1)
     o->f10 = 0.0f;
     o->f0c = 0.0f;
     o->f08 = 0.0f;
-    operation_8c014edc((void *)o);
+    operation_8c014edc(o);
     o->f14 = 5.0f;
     o->dispatch = 30.0f;
-    operation_8c014ef8((void *)o);
+    operation_8c014ef8(o);
     o->f20 = 1.0f;
     o->f24 = 1.0f;
     o->f28 = 1.0f;
-    operation_8c014f58((void *)o);
+    operation_8c014f58(o);
     return o;
 }

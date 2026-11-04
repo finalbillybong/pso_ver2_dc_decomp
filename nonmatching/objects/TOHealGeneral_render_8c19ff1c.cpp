@@ -4,12 +4,12 @@
  * language: c++
  * reference size: 244 bytes
  * compiled size: 244 bytes (+0.0%)
- * differing lines: 24 of 100 reference instruction lines
- * differing bytes: 31
- * provenance: hand pass on a generator draft (behaviour reviewed)
- * known gaps: hand-revised from a generator draft; remaining differences not classified; review
- *   found and fixed behaviour defects of the generator draft; not proven equivalent to the
- *   original
+ * differing lines: 20 of 100 reference instruction lines
+ * differing bytes: 21
+ * provenance: hand pass on a generator draft
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original
+ * class header: src/include/classes/TOHealGeneral.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -88,32 +88,54 @@ extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void njTranslate_8c3829bc(int, float, float, float);
 extern "C" void TOHealGeneral_render_8c19ff1c(Object *o)
 {
-    S_vv1 *v1;
-    S_vv2 *v2;
-    S_vv3 *v3;
+    char *pm5;
+    ObjectData *pm4;
     int t1;
-    float d;
-    t1 = o->v11(((ObjectData *)o)->ff8, ((ObjectData *)o)->ffc);
+    void *pm7;
+    float pm2;
+    int pm6;
+    void *pm9;
+    float pm3;
+    float pm8;
+    pm8 = ((ObjectData *)o)->ffc;
+    pm4 = (ObjectData *)o;
+    pm2 = pm8;
+    t1 = o->v11((pm4)->ff8, pm2);
     if (t1 != 0) {
+        S_vv2 *v2;
+        S_vv3 *v3;
+        S_vv1 *v1;
+        pm5 = (char *)o;
         njPushMatrixEx_8c38ae68();
-        translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+        translate_current_matrix_v_8c382a40((void *)((pm5 + 0x3c)));
+        pm4 = (ObjectData *)o;
+        njRotateY_8c37df90(0, (void *)((pm4)->f64));
         call_8c3827d8((void *)(((ObjectData *)o)->f28));
         v1 = (S_vv1 *)((ObjectData *)o)->f38;
-        translate_current_matrix_v_8c382a40((void *)((int)v1 + 8));
+        t1 = (int)v1 + 8;
+        translate_current_matrix_v_8c382a40((void *)(t1));
         call_8c3a9436((void *)(v1->f04));
         njPushMatrixEx_8c38ae68();
         v2 = (S_vv2 *)v1->f2c;
-        translate_current_matrix_v_8c382a40((void *)((int)v2 + 8));
+        pm6 = (int)v2;
+        t1 = pm6;
+        pm7 = (void *)(8 + t1);
+        translate_current_matrix_v_8c382a40(pm7);
         njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f104));
         call_8c3a9436((void *)(v2->f04));
         njPopMatrixEx_8c38ad10();
         njPushMatrixEx_8c38ae68();
+        pm4 = (ObjectData *)o;
         v3 = (S_vv3 *)v2->f30;
-        d = ((ObjectData *)o)->f108;
-        njTranslate_8c3829bc(0, v3->f08, v3->f0c - d, v3->f10);
-        njRotateY_8c37df90(0, (void *)(-(int)(((ObjectData *)o)->f104)));
-        call_8c3a9436((void *)(v3->f04));
+        pm3 = v3->f08;
+        pm2 = v3->f10;
+        njTranslate_8c3829bc(0, pm3, v3->f0c - ((ObjectData *)o)->f108, pm2);
+        t1 = (int)((pm4)->f104);
+        pm6 = -t1;
+        njRotateY_8c37df90(0, (void *)(pm6));
+        pm9 = (void *)(v3->f04);
+        pm7 = pm9;
+        call_8c3a9436(pm7);
         njPopMatrixEx_8c38ad10();
         njPopMatrixEx_8c38ad10();
     }

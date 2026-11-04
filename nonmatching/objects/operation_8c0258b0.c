@@ -6,7 +6,7 @@
  * compiled size: 352 bytes (+7.3%)
  * differing lines: 136 of 145 reference instruction lines
  * differing bytes: 342
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +24 bytes
@@ -143,8 +143,8 @@ L_8c025964:;
         v33 = (float)v23;
         v34 = (float)((v1 - v26) * v23 / v22 + v16->f0c);
     }
-    t1 = njSin_8c37eb0c((void *)(o->f64), v15, v33);
+    t1 = njSin_8c37eb0c(o->f64, v15, v33);
     a1->f00 = (v34 - v15) * t1;
-    t2 = njCos_8c38c154((void *)(o->f64));
+    t2 = njCos_8c38c154(o->f64);
     a2->f00 = (v34 - v15) * t2;
 }

@@ -6,10 +6,11 @@
  * compiled size: 268 bytes (-1.5%)
  * differing lines: 12 of 99 reference instruction lines
  * differing bytes: 160
- * provenance: generator draft (mode switch2)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -4 bytes
+ * class header: src/include/classes/TOSensorGeneral01.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -78,20 +79,23 @@ struct Arg0_38_4 {
     char unknown0[0x14];
     float f14;
 };
-extern "C" void TOSensor_ctor_8c15c7cc(void *);
-extern "C" void operation_8c112f78(void *);
+extern int g_8c316794;
+extern S_g8c4db160 *g_8c4db160;
+extern S_g8c4db164 *g_8c4db164;
+extern "C" void TOSensor_ctor_8c15c7cc(Object *);
+extern "C" void operation_8c112f78(Object *);
 extern "C" Object *TOSensorGeneral01_ctor_8c15d230(Object *o, int a1, int a2)
 {
     Object **home = &o;
     (void)home;
-    TOSensor_ctor_8c15c7cc((void *)o);
+    TOSensor_ctor_8c15c7cc(o);
     *(void **)((char *)o + 0x18) = (void *)(void *)0x8c26efa4;
-    ((ObjectData *)o)->tag = (int)(*(int *)0x8c316794);
+    ((ObjectData *)o)->tag = (int)(g_8c316794);
     ((ObjectData *)o)->size = 0x128;
     o->v6(a2);
-    operation_8c112f78((void *)o);
-    ((ObjectData *)o)->f28 = (int)((*(S_g8c4db164 **)0x8c4db164)->f00);
-    ((ObjectData *)o)->f38 = (Arg0_38 *)(*(S_g8c4db160 **)0x8c4db160)->f42c->f08;
+    operation_8c112f78(o);
+    ((ObjectData *)o)->f28 = (int)(g_8c4db164->f00);
+    ((ObjectData *)o)->f38 = (Arg0_38 *)g_8c4db160->f42c->f08;
     ((ObjectData *)o)->ff8 = 400.0f;
     ((ObjectData *)o)->ffc = ((ObjectData *)o)->f38->f04->f14;
     ((ObjectData *)o)->f104 = ((ObjectData *)o)->f6c + 50.0f;

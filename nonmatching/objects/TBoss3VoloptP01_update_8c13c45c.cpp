@@ -6,10 +6,11 @@
  * compiled size: 424 bytes (+0.0%)
  * differing lines: 14 of 163 reference instruction lines
  * differing bytes: 9
- * provenance: generator draft (mode retflip2)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TBoss3VoloptP01.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -132,7 +133,7 @@ struct Arg0_dc {
 };
 extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c13c694(Object *);
-extern "C" void operation_8c13c604(void *);
+extern "C" void operation_8c13c604(Object *);
 extern "C" void TBoss3VoloptP01_update_8c13c45c(Object *o)
 {
     int t1;
@@ -153,7 +154,8 @@ extern "C" void TBoss3VoloptP01_update_8c13c45c(Object *o)
         }
     }
     if (((((ObjectData *)o)->f34 & 0x4000)) != 0) {
-        if (--((ObjectData *)o)->f2f8 <= 0) {
+        if (--((ObjectData *)o)->f2f8 > 0) {
+        } else {
             ((ObjectData *)o)->f2f0 = 0;
             ((ObjectData *)o)->f2f4 = 0.0f;
             ((ObjectData *)o)->f2f8 = 0;
@@ -164,12 +166,12 @@ extern "C" void TBoss3VoloptP01_update_8c13c45c(Object *o)
     if (((ObjectData *)o)->f30a != ((ObjectData *)o)->f390) {
         if (((ObjectData *)o)->f398 != -1) {
             ((ObjectData *)o)->f398 = -1;
-            operation_8c13c604((void *)o);
+            operation_8c13c604(o);
         }
         ((ObjectData *)o)->f30a = ((ObjectData *)o)->f390;
         ((ObjectData *)o)->f398 = 0;
     }
-    operation_8c13c604((void *)o);
+    operation_8c13c604(o);
     *(Vector3 *)&((ObjectData *)o)->f324 = *(Vector3 *)&((ObjectData *)o)->f3c;
     ((ObjectData *)o)->f324.f04 = ((ObjectData *)o)->f3a8 + 18.0f + ((ObjectData *)o)->f324.f04;
     ((ObjectData *)o)->fdc->f04 = ((ObjectData *)o)->f3a8 + 18.0f;

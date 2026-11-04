@@ -6,7 +6,7 @@
  * compiled size: 564 bytes (+1.4%)
  * differing lines: 250 of 249 reference instruction lines
  * differing bytes: 347
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +8 bytes
@@ -46,9 +46,9 @@ struct Frame {
 };
 extern S_g8c46fe00 *g_8c46fe00;
 extern void sq_select_8c38aeb4(int);
-extern void call_8c3827d8(void *);
+extern void hs_8c3827d8(void *);
 extern void sq_header_8c38af22(int, int);
-extern void call_8c0db800(Object *, Frame *, Arg1 *);
+extern void hs_8c0db800(Object *, Frame *, Arg1 *);
 extern void sq_flush_8c38af12(void);
 void operation_8c0db5d4(Object *o, Arg1 *a1)
 {
@@ -62,7 +62,7 @@ void operation_8c0db5d4(Object *o, Arg1 *a1)
         return;
     }
     sq_select_8c38aeb4(1);
-    call_8c3827d8(g_8c46fe00);
+    hs_8c3827d8(g_8c46fe00);
     sq_header_8c38af22(1, -1);
     v1 = (int)((int)o->f54 + (4 - ((int)o->f54 & 3) & 3));
     if (64.0f > (float)v1) {
@@ -76,14 +76,14 @@ void operation_8c0db5d4(Object *o, Arg1 *a1)
     (&frame)->f1c = v2 / 256.0f;
     (&frame)->f04 = ((&frame)->f04 - a1->f24) * a1->f2c + a1->f24;
     (&frame)->f0c = ((&frame)->f0c - a1->f24) * a1->f2c + a1->f24;
-    call_8c0db800(o, (Frame *)((&frame)), a1);
+    hs_8c0db800(o, (&frame), a1);
     (&frame)->f04 = o->f4c + (float)v1 - v2;
     (&frame)->f0c = o->f4c + (float)v1;
     (&frame)->f14 = (96.0f - v2) / 256.0f;
     (&frame)->f1c = 0.375f;
     (&frame)->f04 = ((&frame)->f04 - a1->f24) * a1->f2c + a1->f24;
     (&frame)->f0c = ((&frame)->f0c - a1->f24) * a1->f2c + a1->f24;
-    call_8c0db800(o, (Frame *)((&frame)), a1);
+    hs_8c0db800(o, (&frame), a1);
     (&frame)->f04 = o->f4c + 32.0f;
     (&frame)->f14 = 0.125f;
     (&frame)->f1c = 0.25f;
@@ -97,7 +97,7 @@ void operation_8c0db5d4(Object *o, Arg1 *a1)
             v12 = (float)v6;
         }
         (&frame)->f0c = (&frame)->f04 + v12;
-        call_8c0db800(o, (Frame *)((&frame)), a1);
+        hs_8c0db800(o, (&frame), a1);
         (&frame)->f04 += v12;
         v5 = (float)(v5 - 32.0f);
     }

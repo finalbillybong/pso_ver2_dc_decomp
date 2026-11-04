@@ -6,7 +6,7 @@
  * compiled size: 736 bytes (+0.5%)
  * differing lines: 86 of 319 reference instruction lines
  * differing bytes: 420
- * provenance: hand pass on a generator draft
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original; compiled size differs from the reference by +4 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
@@ -51,6 +51,13 @@ struct Frame {
     float f1c;
 };
 extern S_g8c46fe00 *g_8c46fe00;
+extern void sq_select_8c38aeb4(int);
+extern void hs_8c3827d8(void *);
+extern void sq_header_8c38af22(int, int);
+extern void hs_8c0dbc68(Object *, Frame *, Arg1 *);
+extern int clip_and_scale_rectangle(Arg1 *, Frame *);
+extern void sq_quad_8c38b09e(Frame *, float);
+extern void sq_flush_8c38af12(void);
 void operation_8c0db98c(Object *o, Arg1 *a1)
 {
     Frame frame;
@@ -67,9 +74,9 @@ void operation_8c0db98c(Object *o, Arg1 *a1)
     if (!(a1->f30 >= 0)) {
         return;
     }
-    ((void (*)(int))0x8c38aeb4)(1);
-    ((void (*)(void *))0x8c3827d8)(g_8c46fe00);
-    ((void (*)(int, int))0x8c38af22)(0xa, -1);
+    sq_select_8c38aeb4(1);
+    hs_8c3827d8(g_8c46fe00);
+    sq_header_8c38af22(0xa, -1);
     if (64.0f > o->f54) {
         v12 = (float)(o->f54 * 0.5f);
     } else {
@@ -83,7 +90,7 @@ void operation_8c0db98c(Object *o, Arg1 *a1)
     (&frame)->f04 = ((&frame)->f04 - a) * a1->f2c + a;
     a = a1->f24;
     (&frame)->f0c = ((&frame)->f0c - a) * a1->f2c + a;
-    ((void (*)(Object *, Frame *, Arg1 *))0x8c0dbc68)(o, (&frame), a1);
+    hs_8c0dbc68(o, (&frame), a1);
     (&frame)->f04 = o->f4c + o->f54 - v12;
     (&frame)->f0c = o->f4c + o->f54;
     (&frame)->f14 = (96.0f - v12) / 128.0f;
@@ -92,7 +99,7 @@ void operation_8c0db98c(Object *o, Arg1 *a1)
     (&frame)->f04 = ((&frame)->f04 - a) * a1->f2c + a;
     a = a1->f24;
     (&frame)->f0c = ((&frame)->f0c - a) * a1->f2c + a;
-    ((void (*)(Object *, Frame *, Arg1 *))0x8c0dbc68)(o, (&frame), a1);
+    hs_8c0dbc68(o, (&frame), a1);
     (&frame)->f04 = o->f4c + 32.0f;
     (&frame)->f14 = 0.25f;
     (&frame)->f1c = 0.5f;
@@ -106,7 +113,7 @@ void operation_8c0db98c(Object *o, Arg1 *a1)
             (&frame)->f1c = (v5 + 32.0f) / 128.0f;
         }
         (&frame)->f0c = (&frame)->f04 + v12;
-        ((void (*)(Object *, Frame *, Arg1 *))0x8c0dbc68)(o, (&frame), a1);
+        hs_8c0dbc68(o, (&frame), a1);
         (&frame)->f04 += v12;
         v5 -= 32.0f;
     }
@@ -122,12 +129,12 @@ void operation_8c0db98c(Object *o, Arg1 *a1)
             (&frame)->f0c = v16 + 18.0f;
             (&frame)->f14 = 0.78125f;
             (&frame)->f1c = 0.921875f;
-            t1 = ((int (*)(Arg1 *, Frame *))0x8c0de664)(a1, (&frame));
+            t1 = clip_and_scale_rectangle(a1, (&frame));
             if (t1 != 0) {
-                ((void (*)(Frame *, float))0x8c38b09e)((&frame), v15);
+                sq_quad_8c38b09e((&frame), v15);
             }
         }
         v16 = (float)(v16 + 20.0f);
     }
-    ((void (*)(void))0x8c38af12)();
+    sq_flush_8c38af12();
 }

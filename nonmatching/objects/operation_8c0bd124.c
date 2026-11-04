@@ -6,7 +6,7 @@
  * compiled size: 64 bytes (-5.9%)
  * differing lines: 16 of 26 reference instruction lines
  * differing bytes: 64
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -4 bytes
@@ -18,11 +18,12 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 typedef struct Object Object;
+typedef struct Arg0_3b8 Arg0_3b8;
 struct Object {
     char unknown0[0x3b8];
-    int f3b8;
+    Arg0_3b8 *f3b8;
 };
-extern int angle_halfway(int, int);
+extern int angle_halfway(void *, int);
 void operation_8c0bd124(Object *o, int a1)
 {
     int t1;
@@ -33,6 +34,6 @@ void operation_8c0bd124(Object *o, int a1)
             a1 = (int)0x238e;
         }
     }
-    t1 = angle_halfway((int)(o->f3b8), a1);
-    o->f3b8 = (int)(t1);
+    t1 = angle_halfway(o->f3b8, a1);
+    o->f3b8 = (Arg0_3b8 *)t1;
 }

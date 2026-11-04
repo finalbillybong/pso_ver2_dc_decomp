@@ -6,7 +6,7 @@
  * compiled size: 184 bytes (+0.0%)
  * differing lines: 12 of 73 reference instruction lines
  * differing bytes: 24
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -37,13 +37,13 @@ struct Object {
     char unknown330[0x4];
     int f334;
 };
-extern void attach_and_insert_object(void *);
+extern void attach_and_insert_object(Object *);
 void operation_8c059c74(Object *o)
 {
     *(Vector3 *)&o->f48 = *(Vector3 *)&o->f3c;
     *(Vector3 *)&o->f54 = *(Vector3 *)&o->f3c;
     *(Vector3 *)&o->f78 = *(Vector3 *)&o->f3c;
-    attach_and_insert_object((void *)o);
+    attach_and_insert_object(o);
     *(Vector3 *)&o->f324 = *(Vector3 *)&o->f3c;
     o->f318 = 0.0f;
     o->f31c = 0.0f;

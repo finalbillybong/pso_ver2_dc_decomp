@@ -6,7 +6,7 @@
  * compiled size: 136 bytes (+0.0%)
  * differing lines: 8 of 56 reference instruction lines
  * differing bytes: 8
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -37,14 +37,14 @@ struct Arg1 {
 };
 extern S_g8c4d7ce4 *g_8c4d7ce4;
 extern char g_8c324e74[];
-extern void TObject_ctor_8c0330e4(void *, void *);
+extern void TObject_ctor_8c0330e4(Object *, int);
 extern void operation_8c10bac8(void);
-extern void create_file_read_task(void *, void *, void *, void *);
+extern void create_file_read_task(void *, void *, void *, int);
 Object *operation_8c1aa558(Object *o, Arg1 *a1, int a2, int a3, int a4, int a5, int a6)
 {
     Object **home = &o;
     (void)home;
-    TObject_ctor_8c0330e4((void *)o, (void *)a6);
+    TObject_ctor_8c0330e4(o, a6);
     o->dispatch = (void *)0x8c2746d0;
     *(Vector3 *)&o->f20 = *(Vector3 *)&a1->f00;
     o->f2c = a2;
@@ -53,6 +53,6 @@ Object *operation_8c1aa558(Object *o, Arg1 *a1, int a2, int a3, int a4, int a5, 
     o->f30 = 0;
     o->f3c = a5;
     operation_8c10bac8();
-    create_file_read_task((void *)((g_8c324e74 + 0xe)), g_8c4d7ce4, (void *)(&o->f30), (void *)0);
+    create_file_read_task((g_8c324e74 + 0xe), g_8c4d7ce4, &o->f30, 0);
     return o;
 }

@@ -6,10 +6,11 @@
  * compiled size: 404 bytes (+0.0%)
  * differing lines: 64 of 148 reference instruction lines
  * differing bytes: 188
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TOLightMachine01.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -105,7 +106,7 @@ extern "C" Object *TOLightMachine01_ctor_8c1c0040(Object *o, int a1)
     ((ObjectData *)o)->f9c = (float)((ObjectData *)o)->f8c * 0.1f + 0.5f;
     {
         Object *base = o;
-        t2 = njSin_8c37eb0c((void *)(((ObjectData *)base)->fac));
+        t2 = njSin_8c37eb0c(((ObjectData *)base)->fac);
         ((ObjectData *)base)->fa0 = ((ObjectData *)base)->f9c * t2;
     }
     ((ObjectData *)o)->fb0 = 0;

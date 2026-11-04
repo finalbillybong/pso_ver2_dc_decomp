@@ -6,10 +6,11 @@
  * compiled size: 148 bytes (+0.0%)
  * differing lines: 10 of 54 reference instruction lines
  * differing bytes: 12
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TOWreckAncient.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -52,10 +53,10 @@ struct Arg0_38_4 {
 extern int g_8c309204;
 extern S_g8c44be98 *g_8c44be98;
 extern S_g8c470500 *g_8c470500;
-extern void operation_8c051eb8(void *, void *);
+extern void operation_8c051eb8(Object *, void *);
 Object *TOWreckAncient_ctor_8c0f0278(Object *o, int a1)
 {
-    operation_8c051eb8((void *)o, g_8c44be98);
+    operation_8c051eb8(o, g_8c44be98);
     o->dispatch = (void *)0x8c26843c;
     o->tag = (int)(g_8c309204);
     o->size = 0xec;

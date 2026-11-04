@@ -6,7 +6,7 @@
  * compiled size: 152 bytes (+0.0%)
  * differing lines: 4 of 50 reference instruction lines
  * differing bytes: 6
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -30,22 +30,22 @@ struct Object {
 extern int g_8c46ee80;
 extern int g_8c46f560;
 extern int g_8c575570;
-extern float squared_distance_xz(void *, void *);
+extern float squared_distance_xz(void *, int);
 extern void restore_child_blend(void);
-extern void call_8c3827d8(void *);
-extern void call_8c382820(void *);
-extern void call_8c38fa98(void *, int, int);
+extern void hs_8c3827d8(void *);
+extern void hs_8c382820(void *);
+extern void hs_8c38fa98(void *, int, int);
 void operation_8c107d84(Object *o)
 {
     float t1;
     if (o->fc8 > 0.0f) {
-        t1 = squared_distance_xz((void *)(((char *)o + 0x20)), (void *)(g_8c46ee80 + 0x90));
+        t1 = squared_distance_xz(((char *)o + 0x20), g_8c46ee80 + 0x90);
         if (22500.0f > t1) {
             g_8c46f560 = (int)(g_8c575570);
             restore_child_blend();
-            call_8c3827d8((void *)(o->fbc));
-            call_8c382820((void *)(o->fc0));
-            call_8c38fa98((void *)(((char *)o + 0x5c)), 4, 1);
+            hs_8c3827d8(o->fbc);
+            hs_8c382820(o->fc0);
+            hs_8c38fa98(((char *)o + 0x5c), 4, 1);
             g_8c575570 = (int)(g_8c46f560);
         }
     }

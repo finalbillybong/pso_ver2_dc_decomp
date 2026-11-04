@@ -6,7 +6,7 @@
  * compiled size: 260 bytes (+0.0%)
  * differing lines: 74 of 108 reference instruction lines
  * differing bytes: 87
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -42,10 +42,10 @@ struct Arg2 {
     Vector3 f00;
 };
 extern S_g8c44be98 *g_8c44be98;
-extern void TObject_ctor_8c0330e4(void *, void *);
+extern void TObject_ctor_8c0330e4(Object *, void *);
 extern void vector_sub_in_place_8c37f6f0(void *, int);
 extern float njScalor_8c37e480(void *);
-extern void call_8c0c5018(void *, void *, void *);
+extern void hs_8c0c5018(void *, void *, void *);
 extern int rand(void);
 Object *operation_8c176b64(Object *o, int a1, Arg2 *a2, int a3, register int a4)
 {
@@ -55,16 +55,16 @@ Object *operation_8c176b64(Object *o, int a1, Arg2 *a2, int a3, register int a4)
     int t2;
     int t3;
     (void)home;
-    TObject_ctor_8c0330e4((void *)o, g_8c44be98);
+    TObject_ctor_8c0330e4(o, g_8c44be98);
     o->dispatch = (void *)0x8c2708fc;
     o->f20 = a1;
     o->f24 = a2;
     o->f28 = a4;
     *(Vector3 *)&(&frame)->f04 = *(Vector3 *)&a2->f00;
-    vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f04), a1);
-    t1 = njScalor_8c37e480((void *)(&(&frame)->f04));
+    vector_sub_in_place_8c37f6f0(&(&frame)->f04, a1);
+    t1 = njScalor_8c37e480(&(&frame)->f04);
     o->f44 = t1 * 2.0f;
-    call_8c0c5018((void *)(&(&frame)->f04), (void *)(((char *)o + 0x2c)), (void *)(&o->f30));
+    hs_8c0c5018(&(&frame)->f04, ((char *)o + 0x2c), &o->f30);
     t2 = rand();
     o->f30 -= a3 * 0x71c + (int)((float)t2 / 32768.0f * 1820.0f);
     t3 = rand();

@@ -6,7 +6,7 @@
  * compiled size: 136 bytes (-2.9%)
  * differing lines: 70 of 63 reference instruction lines
  * differing bytes: 108
- * provenance: generator draft (mode extern)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -4 bytes
@@ -25,8 +25,8 @@ struct Frame {
     char unknown5[0xb];
 };
 extern void memset_8c12b880(void *, int, int);
-extern void call_8c12c390(void *, int, int);
-extern float call_8c12c194(void *, int, char);
+extern void hs_8c12c390(void *, int, int);
+extern float hs_8c12c194(void *, int, char);
 float operation_8c12f5f0(int a0, Arg1 *a1, int a2, int a3)
 {
     Frame frame;
@@ -48,10 +48,10 @@ float operation_8c12f5f0(int a0, Arg1 *a1, int a2, int a3)
     v4 = (int)0;
     if (v3 >= 0) {
         do {
-            call_8c12c390(v1, (int)(*(char *)((char *)((char *)a1 + 0x0) + (v4)) + -0x30), v4);
+            hs_8c12c390(v1, *(char *)((char *)((char *)a1 + 0x0) + (v4)) + -0x30, v4);
             v4 = (int)(v4 + 1);
         } while (!(v4 > v3));
     }
-    t1 = call_8c12c194(v1, v2, (&frame)->f04);
+    t1 = hs_8c12c194(v1, v2, (&frame)->f04);
     return t1 * (float)(&frame)->f00;
 }

@@ -3,104 +3,22 @@
  * function: operation_8c1c8e50
  * language: c++
  * reference size: 1012 bytes
- * compiled size: 1036 bytes (+2.4%)
- * differing lines: 406 of 400 reference instruction lines
- * differing bytes: 902
+ * compiled size: 1012 bytes (+0.0%)
+ * differing lines: 280 of 400 reference instruction lines
+ * differing bytes: 99
  * provenance: hand pass on a generator draft
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
- *   proven equivalent to the original; compiled size differs from the reference by +24 bytes
+ *   proven equivalent to the original
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct S_c8c0adc1c S_c8c0adc1c;
-typedef struct S_c8c1a7128 S_c8c1a7128;
-typedef struct S_c8c1c7658 S_c8c1c7658;
-typedef struct Frame Frame;
-typedef struct S_g8c418248 S_g8c418248;
-typedef struct S_g8c513360 S_g8c513360;
-typedef struct Object Object;
-typedef struct S_vv3 S_vv3;
-typedef struct S_vv31 S_vv31;
-typedef struct S_vv33 S_vv33;
-typedef struct S_vv35 S_vv35;
-typedef struct S_vv3_184 S_vv3_184;
-typedef struct S_vv41 S_vv41;
-typedef struct S_vv43 S_vv43;
-typedef struct S_vv45 S_vv45;
-class S_c8c03b55c;
-struct Object {
-    unsigned char tag;
-    unsigned char f01;
-    unsigned char f02;
-    char unknown3[0x1];
-    unsigned char f04;
-};
-struct S_c8c1c7658 {
-    char unknown0[0xc];
-    int f0c;
-    unsigned char f10;
-};
-struct S_vv3 {
-    char unknown0[0x184];
-    S_vv3_184 *f184;
-    char unknown188[0x1f4];
-    int f37c;
-};
-struct S_c8c0adc1c {
-    char unknown0[0x18];
-    int f18;
-};
-struct S_vv3_184 {
-    char unknown0[0x2];
-    short f02;
-};
-struct Frame {
-    int f04;
-    char unknown8[0x10];
-};
-struct S_vv31 {
-    short f00;
-};
-struct S_c8c1a7128 {
-    short f00;
-    short f02;
-    short f04;
-    char unknown6[0x2];
-    short f08;
-    short f0a;
-    short f0c;
-};
-struct S_vv33 {
-    char unknown0[0x2];
-    short f02;
-};
-struct S_vv35 {
-    char unknown0[0x4];
-    short f04;
-};
-struct S_vv41 {
-    char unknown0[0x8];
-    short f08;
-};
-struct S_vv43 {
-    char unknown0[0xa];
-    short f0a;
-};
-struct S_vv45 {
-    char unknown0[0xc];
-    short f0c;
-};
-struct S_g8c513360 {
-    char unknown0[0x20];
-    int f20;
-};
-class S_c8c03b55c {
+typedef struct Info { char pad[0x10]; unsigned char f10; } Info;
+typedef struct Rule { char pad[0xc]; int f0c; } Rule;
+typedef struct Item { char pad[0x18]; int f18; } Item;
+typedef struct Stats { short s[7]; } Stats;
+typedef struct Key { unsigned char b[0x14]; } Key;
+class Src {
 public:
-    char unknown0[0x18];
+    char pad0[0x18];
     virtual void v0();
     virtual void v1();
     virtual void v2();
@@ -132,262 +50,163 @@ public:
     virtual void v28();
     virtual void v29();
     virtual void v30();
-    virtual void v31(void *);
+    virtual void v31(Key *);
 };
-typedef struct S_c8c03b55cData {
-
-} S_c8c03b55cData;
-extern S_g8c418248 *g_8c418248;
+typedef struct Player {
+    char pad0[0x184];
+    Stats *f184;
+    char pad188[0x37c - 0x188];
+    int f37c;
+    char pad380[0x3bc - 0x380];
+    char f3bc[0xbcc - 0x3bc];
+    char fbcc[4];
+} Player;
+typedef struct Sys { char pad[0x20]; int f20; } Sys;
+extern int g_8c418248;
 extern int g_8c4dc800;
 extern int g_8c510ba0;
-extern S_g8c513360 *g_8c513360;
-extern "C" int lookup_low_id(int);
-extern "C" int call_8c163428(S_vv3 *, Object *, int);
-extern "C" S_c8c1c7658 *operation_8c1c7658(void *);
-extern "C" int call_8c16337c(S_vv3 *, int);
-extern "C" S_c8c0adc1c *call_8c0adc1c(int, int);
-extern "C" int call_8c247730(void *, int);
-extern "C" S_c8c03b55c *operation_8c03b55c(void *, int);
-extern "C" S_c8c1a7128 *operation_8c1a7128(int);
-extern "C" int operation_8c074b30(int);
-extern "C" int operation_8c074b9c(int);
-extern "C" int operation_8c07faf0(int, int);
-extern "C" int operation_8c1c8e50(Object *o, int a1, int a2)
+extern Sys *g_8c513360;
+extern "C" Player *lookup_low_id(int);
+extern "C" int call_8c163428(Player *, unsigned char *, int);
+extern "C" Rule *operation_8c1c7658(void *);
+extern "C" int call_8c16337c(Player *, int);
+extern "C" Item *call_8c0adc1c(int, int);
+extern "C" char call_8c247730(void *, int);
+extern "C" Src *operation_8c03b55c(void *, int);
+extern "C" Stats *operation_8c1a7128(Player *);
+extern "C" short operation_8c074b30(int);
+extern "C" short operation_8c074b9c(int);
+extern "C" int operation_8c07faf0(Player *, int);
+extern "C" int operation_8c1c8e50(unsigned char *m, unsigned int mask, Player *pl)
 {
-    Frame frame;
-    int *home1 = &a1;
-    int v1;
-    unsigned char v8;
-    int v57;
-    int v59;
-    S_vv3 *v3;
-    unsigned char v25;
-    int v19;
-    int v29;
-    S_vv31 *v31;
-    S_vv33 *v33;
-    S_vv35 *v35;
-    S_vv41 *v41;
-    S_vv43 *v43;
-    S_vv45 *v45;
-    int v9;
-    int v26;
-    int v32;
-    int v34;
-    int v36;
-    int v38;
-    int v40;
-    int v30;
-    int v42;
-    int v44;
-    int v63;
-    int t1;
-    S_c8c1c7658 *t2;
-    int t3;
-    S_c8c0adc1c *t4;
-    int t5;
-    int t6;
-    S_c8c03b55c *t7;
-    S_c8c1c7658 *t8;
-    S_c8c1a7128 *t9;
-    S_c8c1a7128 *t10;
-    S_c8c1a7128 *t11;
-    int t12;
-    int t13;
-    S_c8c1a7128 *t14;
-    S_c8c1a7128 *t15;
-    S_c8c1a7128 *t16;
-    int t17;
-    (void)home1;
-    v1 = (int)0;
-    v3 = (S_vv3 *)a2;
-    if (a2 == 0) {
-        v3 = (S_vv3 *)lookup_low_id((int)g_8c418248);
-    }
-    if (v3 == 0) {
+    unsigned int fl = 0;
+    int on2;
+    if (pl == 0)
+        pl = lookup_low_id(g_8c418248);
+    if (pl == 0)
         return 0;
-    }
-    v8 = (unsigned char)o->tag;
-    switch (v8) {
+    switch (m[0]) {
     case 0:
     case 1:
     case 2:
-        t1 = call_8c163428(v3, o, 0);
-        if (t1 != 0) {
-            v1 = (int)(v1 | 8);
-            goto L_8c1c91e0;
-        }
+        fl |= 8;
+        if (call_8c163428(pl, m, 0) == 0)
+            fl |= 0x10001;
         break;
-    case 3:
-        t2 = operation_8c1c7658((void *)o);
-        if (t2 != 0) {
-            v9 = (int)t2->f0c;
-            if (((v9 & 1)) != 0) {
-                v1 = (int)(v1 | 2);
-            }
-            if (((v9 & 4)) != 0) {
-                v1 = (int)(v1 | 4);
-            }
-            if (((v9 & 8)) == 0) {
-                t3 = call_8c16337c(v3, 0xd7);
-                if (t3 != 0) {
-                    v1 = (int)(v1 | 0x10001);
-                }
-            }
-            if (((v9 & 0x10)) == 0) {
-                if (v3->f37c == 0) {
-                    v1 = (int)(v1 | 1);
-                }
-            }
-            if (((v9 & 0x20)) == 0) {
-                if (v3->f37c >= 0xb) {
-                    v1 = (int)(v1 | 1);
-                }
-            }
-            if (((v9 & 0x40)) == 0) {
-                v19 = (int)(g_8c510ba0 != 0);
-                if (v19 == 1) {
-                    v1 = (int)(v1 | 1);
-                }
+    case 3: {
+        Rule *r = operation_8c1c7658(m);
+        if (r != 0) {
+            int bits = r->f0c;
+            if (bits & 1)
+                fl |= 2;
+            if (bits & 4)
+                fl |= 4;
+            if (!(bits & 8) && call_8c16337c(pl, 0xd7) != 0)
+                fl |= 0x10001;
+            if (!(bits & 0x10) && pl->f37c == 0)
+                fl |= 1;
+            if (!(bits & 0x20) && pl->f37c >= 0xb)
+                fl |= 1;
+            if (!(bits & 0x40)) {
+                int on = g_8c510ba0 != 0;
+                if (on == 1)
+                    fl |= 1;
             }
         }
-        v25 = (unsigned char)o->f01;
-        switch (v25) {
-        case 2:
-            v26 = (int)o->f02;
-            t4 = call_8c0adc1c((int)(o->f04), v26);
-            if (t4 == 0) {
-                goto L_8c1c91e0;
-            }
-            if (t4->f18 > v3->f184->f02) {
-                v1 = (int)(v1 | 0x10001);
-            }
-            t5 = call_8c247730((void *)((int)v3 + 0x3bc), (int)(o->f04));
-            if (o->f02 <= (char)t5) {
-                v1 = (int)(v1 | 0x10001);
-            }
-            t6 = call_8c16337c(v3, 0xfc);
-            if (t6 != 0) {
-                goto L_8c1c91e0;
-            }
-            if (!(v26 > 0xe)) {
-                goto L_8c1c91e0;
-            }
+        switch (m[1]) {
+        case 2: {
+            int lv = m[2];
+            Item *it = call_8c0adc1c(m[4], lv);
+            if (it == 0)
+                break;
+            if (pl->f184->s[1] < it->f18)
+                fl |= 0x10001;
+            if (m[2] <= call_8c247730(pl->f3bc, m[4]))
+                fl |= 0x10001;
+            if (call_8c16337c(pl, 0xfc) != 0)
+                break;
+            if (lv > 14)
+                fl |= 0x10001;
             break;
-        case 10:
-            v29 = (int)((int)v3 + 0xbcc);
-            t7 = operation_8c03b55c((void *)v29, 6);
-            if (t7 != 0) {
-                t7->v31(&(&frame)->f04);
-                t8 = operation_8c1c7658((void *)(&(&frame)->f04));
-                if (t8 == 0) {
-                    goto L_8c1c91e0;
-                }
-                if (!((unsigned int)t8->f10 <= (unsigned int)*(unsigned char *)((char *)(&frame) + 0x7))) {
-                    goto L_8c1c91e0;
-                }
-                v1 = (int)(v1 | 1);
-                goto L_8c1c91e0;
-            }
-            break;
-        case 11:
-            if (v3->f184 == 0) {
-                goto L_8c1c91e0;
-            }
-            v30 = (int)0;
-            switch ((unsigned int)(o->f02)) {
-            case 0:
-                v31 = (S_vv31 *)v3->f184;
-                t9 = operation_8c1a7128((int)v3);
-                if (!(t9->f00 <= v31->f00)) {
+        }
+        case 10: {
+            Src *s = operation_8c03b55c(pl->fbcc, 6);
+            if (s != 0) {
+                Key k;
+                Info *in;
+                s->v31(&k);
+                in = (Info *)operation_8c1c7658(&k);
+                if (in == 0)
                     break;
-                }
-                v32 = (int)1;
-                v30 = (int)v32;
+                if ((unsigned int)in->f10 <= (unsigned int)k.b[3])
+                    fl |= 1;
+            } else {
+                fl |= 1;
+            }
+            break;
+        }
+        case 11: {
+            Stats *q = pl->f184;
+            int ok;
+            if (q == 0)
+                break;
+            ok = 0;
+            switch (m[2]) {
+            case 0:
+                if (operation_8c1a7128(pl)->s[0] <= q->s[0])
+                    ok = 1;
                 break;
             case 1:
-                v33 = (S_vv33 *)v3->f184;
-                t10 = operation_8c1a7128((int)v3);
-                if (!(t10->f02 <= v33->f02)) {
-                    break;
-                }
-                v34 = (int)1;
-                v30 = (int)v34;
+                if (operation_8c1a7128(pl)->s[1] <= q->s[1])
+                    ok = 1;
                 break;
             case 2:
-                v35 = (S_vv35 *)v3->f184;
-                t11 = operation_8c1a7128((int)v3);
-                if (!(t11->f04 <= v35->f04)) {
-                    break;
-                }
-                v36 = (int)1;
-                v30 = (int)v36;
+                if (operation_8c1a7128(pl)->s[2] <= q->s[2])
+                    ok = 1;
                 break;
             case 3:
-                t12 = operation_8c074b30((int)g_8c418248);
-                if (!((short)t12 >= 0xfa)) {
-                    break;
-                }
-                v38 = (int)1;
-                v30 = (int)v38;
+                if (operation_8c074b30(g_8c418248) >= 0xfa)
+                    ok = 1;
                 break;
             case 4:
-                t13 = operation_8c074b9c((int)g_8c418248);
-                if (!((short)t13 >= 0xfa)) {
-                    break;
-                }
-                v40 = (int)1;
-                v30 = (int)v40;
+                if (operation_8c074b9c(g_8c418248) >= 0xfa)
+                    ok = 1;
                 break;
             case 5:
-                v41 = (S_vv41 *)v3->f184;
-                t14 = operation_8c1a7128((int)v3);
-                if (!(t14->f08 <= v41->f08)) {
-                    break;
-                }
-                v42 = (int)1;
-                v30 = (int)v42;
+                if (operation_8c1a7128(pl)->s[4] <= q->s[4])
+                    ok = 1;
                 break;
             case 6:
-                v43 = (S_vv43 *)v3->f184;
-                t15 = operation_8c1a7128((int)v3);
-                if (!(t15->f0a <= v43->f0a)) {
-                    break;
-                }
-                v44 = (int)1;
-                v30 = (int)v44;
+                if (operation_8c1a7128(pl)->s[5] <= q->s[5])
+                    ok = 1;
                 break;
             case 7:
-                v45 = (S_vv45 *)v3->f184;
-                t16 = operation_8c1a7128((int)v3);
-                if (!(t16->f0c <= v45->f0c)) {
-                    break;
-                }
-                v30 = (int)1;
+                if (operation_8c1a7128(pl)->s[6] <= q->s[6])
+                    ok = 1;
+                break;
             }
-            if (v30 == 0) {
-                goto L_8c1c91e0;
-            }
+            if (ok)
+                fl |= 0x10001;
             break;
+        }
         case 12:
-            t17 = operation_8c07faf0((int)v3, (int)(o->f02));
-            if (t17 == 0) {
-                v1 = (int)(v1 | 1);
-            }
+            if (operation_8c07faf0(pl, m[2]) == 0)
+                fl |= 1;
+            break;
         }
+        break;
     }
-L_8c1c91e0:;
-    if (g_8c4dc800 != 0 && o->tag == 3) {
-        if (g_8c513360 != 0) {
-            v57 = (int)(((g_8c513360->f20 & 0x40)) != 0);
-            v59 = (int)v57;
-        } else {
-            v59 = (int)0;
-        }
-        if (v59 == 1) {
-            v1 = (int)(v1 | 0x10001);
-        }
     }
-    v63 = (int)(((v1 & a1)) != 0);
-    return (int)(v63);
+    if (g_8c4dc800 != 0 && m[0] == 3) {
+        if (g_8c513360 != 0)
+            on2 = (g_8c513360->f20 & 0x40) != 0;
+        else
+            on2 = 0;
+        if (on2 == 1)
+            fl |= 0x10001;
+    }
+    {
+        int res = (fl & mask) != 0;
+        return res;
+    }
 }

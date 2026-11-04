@@ -6,7 +6,7 @@
  * compiled size: 244 bytes (+0.0%)
  * differing lines: 20 of 91 reference instruction lines
  * differing bytes: 21
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -33,33 +33,33 @@ struct Object {
     char unknown58c[0x254];
     int f7e0;
 };
-extern void operation_8c1e8e60(int, int, int);
-extern int operation_02c350(void *);
-extern void call_8c01c838(Object *, short);
-extern void call_8c02aecc(Object *, float);
-extern void operation_8c03bfa0(void *, void *);
+extern void operation_8c1e8e60(Object *, int, int);
+extern int operation_02c350(Object *);
+extern void hs_8c01c838(Object *, short);
+extern void hs_8c02aecc(Object *, float);
+extern void operation_8c03bfa0(void *, Object *);
 void operation_8c1ef698(Object *o)
 {
     int v1;
     int t1;
     int t2;
     if (o != 0) {
-        operation_8c1e8e60((int)o, 0xf, 0);
+        operation_8c1e8e60(o, 0xf, 0);
         v1 = (int)(((o->f7e0 & 1)) != 0);
         if (v1 != 0) {
-            t1 = operation_02c350((void *)o);
+            t1 = operation_02c350(o);
             o->ff0 = *(short *)((char *)0x8c2e7432 + ((short)t1 << 1));
         } else {
-            t2 = operation_02c350((void *)o);
+            t2 = operation_02c350(o);
             o->ff0 = *(short *)((char *)0x8c2e748c + ((short)t2 << 1));
         }
-        call_8c01c838(o, o->ff0);
+        hs_8c01c838(o, o->ff0);
         o->ff8 = o->ffc - 1.0f;
-        call_8c02aecc(o, o->ff8);
+        hs_8c02aecc(o, o->ff8);
         o->f580 = 0.0f;
         o->f584 = 0.0f;
         o->f588 = 0.0f;
-        operation_8c03bfa0((void *)(&o->f580), (void *)o);
+        operation_8c03bfa0(&o->f580, o);
         o->fe8 |= 0x40;
         o->fe8 &= -0x21;
         o->f588 = 1.0f;

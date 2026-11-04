@@ -6,7 +6,7 @@
  * compiled size: 392 bytes (+1.0%)
  * differing lines: 128 of 147 reference instruction lines
  * differing bytes: 319
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +4 bytes
@@ -59,10 +59,10 @@ struct Object {
 };
 extern int g_8c31cb20;
 extern char g_8c4dc444;
-extern void TObject_ctor_8c0330e4(void *, void *);
+extern void TObject_ctor_8c0330e4(Object *, int);
 Object *TAdTitle_ctor_8c199688(Object *o, int a1, int a2)
 {
-    TObject_ctor_8c0330e4((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c272994;
     o->tag = (int)(g_8c31cb20);
     o->size = 0xac;

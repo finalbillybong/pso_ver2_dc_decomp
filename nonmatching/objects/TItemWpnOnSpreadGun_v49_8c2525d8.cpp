@@ -6,10 +6,11 @@
  * compiled size: 264 bytes (+0.0%)
  * differing lines: 62 of 119 reference instruction lines
  * differing bytes: 78
- * provenance: generator draft (mode switch2ext)
+ * provenance: generator draft (mode ccastext; address casts converted to prototypes)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
+ * class header: src/include/classes/TItemWpnOnSpreadGun.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -94,22 +95,22 @@ struct S_L8c33fa24 {
     S_L8c33fa24_10 *f10;
 };
 extern S_L8c33fa24 g_8c33fa24;
-extern "C" void operation_8c241658(void *);
-extern "C" void operation_8c075894(void *, void *, int, int);
-extern "C" void create_effect_777c(void *, int);
+extern "C" void operation_8c241658(Object *);
+extern "C" void operation_8c075894(Object *, void *, int, Frame *);
+extern "C" void create_effect_777c(Frame *, int);
 extern "C" void TItemWpnOnSpreadGun_v49_8c2525d8(Object *o)
 {
     Frame frame;
-    operation_8c241658((void *)o);
-    operation_8c075894((void *)o, (void *)(((ObjectData *)o)->f13c), 7, (int)(&frame));
-    create_effect_777c((void *)(&frame), 9);
+    operation_8c241658(o);
+    operation_8c075894(o, ((ObjectData *)o)->f13c, 7, (&frame));
+    create_effect_777c((&frame), 9);
     o->v48((&frame), 0, (&g_8c33fa24)->f00, 1);
-    operation_8c075894((void *)o, (void *)(((ObjectData *)o)->f13c), 3, (int)(&frame));
+    operation_8c075894(o, ((ObjectData *)o)->f13c, 3, (&frame));
     o->v48((&frame), 1, (&g_8c33fa24)->f04, 1);
-    operation_8c075894((void *)o, (void *)(((ObjectData *)o)->f13c), 5, (int)(&frame));
+    operation_8c075894(o, ((ObjectData *)o)->f13c, 5, (&frame));
     o->v48((&frame), 2, (&g_8c33fa24)->f08, 1);
-    operation_8c075894((void *)o, (void *)(((ObjectData *)o)->f13c), 2, (int)(&frame));
+    operation_8c075894(o, ((ObjectData *)o)->f13c, 2, (&frame));
     o->v48((&frame), 3, (&g_8c33fa24)->f0c, 1);
-    operation_8c075894((void *)o, (void *)(((ObjectData *)o)->f13c), 6, (int)(&frame));
+    operation_8c075894(o, ((ObjectData *)o)->f13c, 6, (&frame));
     o->v48((&frame), 4, (&g_8c33fa24)->f10, 1);
 }

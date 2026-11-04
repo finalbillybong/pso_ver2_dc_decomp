@@ -3,13 +3,14 @@
  * function: operation_8c075398
  * language: c++
  * reference size: 552 bytes
- * compiled size: 552 bytes (+0.0%)
- * differing lines: 32 of 208 reference instruction lines
- * differing bytes: 20
+ * compiled size: 556 bytes (+0.7%)
+ * differing lines: 30 of 208 reference instruction lines
+ * differing bytes: 214
  * provenance: hand pass on a generator draft (behaviour reviewed)
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   register allocation, constant loading; review found and fixed behaviour defects of the
- *   generator draft; not proven equivalent to the original
+ *   generator draft; not proven equivalent to the original; compiled size differs from the
+ *   reference by +4 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -106,6 +107,7 @@ extern "C" Object *operation_8c075398(Object *o, int a1, Arg2 *a2)
 {
     Object **home = &o;
     unsigned char v4;
+    int k;
     int v16;
     int v15;
     S_c8c1c7658 *t1;
@@ -163,9 +165,9 @@ L_8c075436:;
     ((ObjectData *)o)->f210 = 0;
     ((ObjectData *)o)->f214 = 0;
     ((ObjectData *)o)->f218 = 0;
-    v4 = ((ObjectData *)o)->f136;
-    if ((unsigned int)0x89 > (unsigned int)v4) {
-        t3 = operation_8c15842c((int)v4);
+    k = ((ObjectData *)o)->f136;
+    if ((unsigned int)0x89 > (unsigned int)(unsigned char)k) {
+        t3 = operation_8c15842c(k);
         ((ObjectData *)o)->f1e7 = t3;
     } else {
         t4 = operation_8c1c9398((void *)a2);

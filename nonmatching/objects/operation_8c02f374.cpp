@@ -6,7 +6,7 @@
  * compiled size: 200 bytes (+0.0%)
  * differing lines: 4 of 90 reference instruction lines
  * differing bytes: 4
- * provenance: hand pass on a generator draft
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
@@ -59,7 +59,7 @@ struct Frame {
     char f37;
 };
 extern "C" char g_8c2e7ce0[];
-extern "C" void strncpy_8c12b154(void *, void *, int);
+extern "C" void strncpy_8c12b154(void *, int, int);
 extern "C" void operation_8c02f374(Object *o, int a1, int a2, int a3, int a4, int a5, int a6)
 {
     Frame frame;
@@ -77,8 +77,8 @@ extern "C" void operation_8c02f374(Object *o, int a1, int a2, int a3, int a4, in
         (&frame)->f35 = a4;
         (&frame)->f36 = a5;
         (&frame)->f37 = a6;
-        strncpy_8c12b154(frame.f14, (void *)a1, 0x10);
-        strncpy_8c12b154(frame.f24, (void *)a2, 0x10);
+        strncpy_8c12b154(frame.f14, a1, 0x10);
+        strncpy_8c12b154(frame.f24, a2, 0x10);
         o->v9(&(&frame)->f08, (unsigned short)(&frame)->f0a);
     }
 }

@@ -6,10 +6,10 @@
  * compiled size: 224 bytes (+0.0%)
  * differing lines: 6 of 86 reference instruction lines
  * differing bytes: 9
- * provenance: generator draft (mode bgotoext)
- * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
- *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
- *   to the original
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
+ * known gaps: hand-revised from a generator draft; remaining differences not classified; not
+ *   proven equivalent to the original
+ * class header: src/include/classes/TObjEneDimedian.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -51,12 +51,12 @@ typedef struct Arg0_3e0Data {
 } Arg0_3e0Data;
 extern S_g8c46feac *g_8c46feac;
 extern S_g8c46feb0 *g_8c46feb0;
-extern "C" int call_8c119190(void *, float);
+extern "C" int hs_8c119190(void *, float);
 extern "C" void njPushMatrixEx_8c38ae68(void);
 extern "C" void njUnitMatrix_8c37b5c4(int);
 extern "C" void translate_current_matrix_v_8c382a40(void *);
 extern "C" void njRotateY_8c37df90(int, void *);
-extern "C" void call_8c3be2dc(int, int, Frame *, int);
+extern "C" void hs_8c3be2dc(int, int, Frame *, int);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void TObjEneDimedian_v91_8c0e69b8(Object *o)
 {
@@ -69,11 +69,11 @@ extern "C" void TObjEneDimedian_v91_8c0e69b8(Object *o)
                 goto L_8c0e69f6;
             }
         } else {
-            v8 = call_8c119190(g_8c46feac, o->ff8);
+            v8 = hs_8c119190(g_8c46feac, o->ff8);
             v1 = (int)0;
             goto L_8c0e6a08;
 L_8c0e69f6:;
-            v8 = call_8c119190(g_8c46feb0, o->ff8);
+            v8 = hs_8c119190(g_8c46feb0, o->ff8);
             v1 = (int)1;
             goto L_8c0e6a08;
         }
@@ -82,9 +82,9 @@ L_8c0e6a08:;
         if (v8 != 0) {
             njPushMatrixEx_8c38ae68();
             njUnitMatrix_8c37b5c4(0);
-            translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-            njRotateY_8c37df90(0, (void *)(o->f64));
-            call_8c3be2dc(0, v8, (Frame *)((&frame)), 2);
+            translate_current_matrix_v_8c382a40(((char *)o + 0x3c));
+            njRotateY_8c37df90(0, o->f64);
+            hs_8c3be2dc(0, v8, (&frame), 2);
             njPopMatrixEx_8c38ad10();
             if (*(int *)((char *)((char *)o + 0x3e0) + (v1 << 2)) != 0) {
                 (*(Arg0_3e0 **)((char *)((char *)o + 0x3e0) + (v1 << 2)))->v5((&frame), &(&frame)->f0c);

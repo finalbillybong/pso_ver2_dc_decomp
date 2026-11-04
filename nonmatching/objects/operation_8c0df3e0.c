@@ -6,7 +6,7 @@
  * compiled size: 832 bytes (+0.0%)
  * differing lines: 58 of 348 reference instruction lines
  * differing bytes: 16
- * provenance: hand pass on a generator draft
+ * provenance: hand pass on a generator draft (address casts converted to prototypes)
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
@@ -48,8 +48,15 @@ struct Rect {
     float f24;
 };
 extern S_g8c467184 *g_8c467184;
+extern int hs_8c087348(void *);
+extern void sq_select_8c38aeb4(int);
+extern void hs_8c3827d8(void *);
+extern void sq_header_8c38af22(int, int);
+extern void scale_rectangle_fields(Arg1 *, void *);
+extern void sq_quad_8c38b09e(void *, float);
+extern void sq_flush_8c38af12(void);
 extern void operation_8c19a370(Arg1 *, int, int, float, float);
-extern void call_8c19a56c(Pos2 *, void *, int, float);
+extern void hs_8c19a56c(Pos2 *, void *, int, float);
 void operation_8c0df3e0(Object *o, Arg1 *a1, int a2)
 {
     Rect r;
@@ -63,7 +70,7 @@ void operation_8c0df3e0(Object *o, Arg1 *a1, int a2)
     if (o->f88 == 0) {
         return;
     }
-    t1 = ((int (*)(void *))0x8c087348)(o->f88);
+    t1 = hs_8c087348(o->f88);
     v4 = (float)(float)t1;
     if (0.0f > (float)t1) {
         v1 = (float)((float)t1 + 4294967296.0f);
@@ -79,9 +86,9 @@ void operation_8c0df3e0(Object *o, Arg1 *a1, int a2)
     pos.f04 = a1->f04 - 10.0f;
     v11 = (float)(-1.0f / (a1->f34 + 0.0598f));
     a2 = a2 & 0xffffff | v22;
-    ((void (*)(int))0x8c38aeb4)(1);
-    ((void (*)(void *))0x8c3827d8)(g_8c467184);
-    ((void (*)(int, int))0x8c38af22)(0, a2);
+    sq_select_8c38aeb4(1);
+    hs_8c3827d8(g_8c467184);
+    sq_header_8c38af22(0, a2);
     r.f08 = pos.f00;
     r.f0c = pos.f04;
     r.f10 = r.f08 + 16.0f;
@@ -90,8 +97,8 @@ void operation_8c0df3e0(Object *o, Arg1 *a1, int a2)
     r.f1c = 0.92578125f;
     r.f20 = 0.62890625f;
     r.f24 = 1.0f;
-    ((void (*)(Arg1 *, void *))0x8c0de7d4)(a1, &r);
-    ((void (*)(void *, float))0x8c38b09e)(&r, v11);
+    scale_rectangle_fields(a1, &r);
+    sq_quad_8c38b09e(&r, v11);
     if (20.0f > v4) {
         r.f08 = pos.f00 + 20.0f - 16.0f + 12.0f;
     } else {
@@ -104,8 +111,8 @@ void operation_8c0df3e0(Object *o, Arg1 *a1, int a2)
     r.f1c = 0.92578125f;
     r.f20 = 0.75390625f;
     r.f24 = 1.0f;
-    ((void (*)(Arg1 *, void *))0x8c0de7d4)(a1, &r);
-    ((void (*)(void *, float))0x8c38b09e)(&r, v11);
+    scale_rectangle_fields(a1, &r);
+    sq_quad_8c38b09e(&r, v11);
     if (v4 > 20.0f) {
         r.f08 = pos.f00 + 16.0f;
         r.f0c = pos.f04;
@@ -115,15 +122,15 @@ void operation_8c0df3e0(Object *o, Arg1 *a1, int a2)
         r.f1c = 0.92578125f;
         r.f20 = 0.69140625f;
         r.f24 = 1.0f;
-        ((void (*)(Arg1 *, void *))0x8c0de7d4)(a1, &r);
-        ((void (*)(void *, float))0x8c38b09e)(&r, v11);
+        scale_rectangle_fields(a1, &r);
+        sq_quad_8c38b09e(&r, v11);
     }
-    ((void (*)(void))0x8c38af12)();
+    sq_flush_8c38af12();
     pos.f00 += 6.0f;
     if (20.0f > v4) {
         pos.f00 += (20.0f - v4) * 0.5f;
     }
     pos.f04 += 3.0f;
     operation_8c19a370(a1, 0, 1, -1.0f / (a1->f34 + 0.07475f), 100000.0f);
-    call_8c19a56c(&pos, o->f88, v22, 1000000.0f);
+    hs_8c19a56c(&pos, o->f88, v22, 1000000.0f);
 }
