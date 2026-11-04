@@ -1,20 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TLazerFenceSw.h"
 typedef struct S_L8c4d820c S_L8c4d820c;
 typedef struct S_L8c4d820c_4 S_L8c4d820c_4;
 typedef struct S_g8c4d820c S_g8c4d820c;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xe8];
-    float fe8;
-    char unknownec[0x4];
-    float ff0;
-    char unknownf4[0x2c];
-    float f120;
-};
 struct S_L8c4d820c {
     S_g8c4d820c *f00;
     S_L8c4d820c_4 *f04;
@@ -28,7 +15,7 @@ struct S_g8c4d820c {
     int f04;
 };
 extern S_L8c4d820c g_8c4d820c;
-void TLazerFenceSw_v17_8c113aa4(Object *o)
+void TLazerFenceSw_v17_8c113aa4(TLazerFenceSw *o)
 {
     int v12;
     int v2;

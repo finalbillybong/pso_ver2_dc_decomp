@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TOMineTrap.h"
 class S_c8c021ef8;
-struct Object {
-    char unknown0[0x390];
-    unsigned short f390;
-};
 class S_c8c021ef8 {
 public:
     char unknown0[0x18];
@@ -31,7 +22,7 @@ typedef struct S_c8c021ef8Data {
 
 } S_c8c021ef8Data;
 extern "C" S_c8c021ef8 *lookup_low_id(int);
-extern "C" int TOMineTrap_v13_8c0fec4c(Object *o)
+extern "C" int TOMineTrap_v13_8c0fec4c(TOMineTrap *o)
 {
     int v1;
     S_c8c021ef8 *t1;

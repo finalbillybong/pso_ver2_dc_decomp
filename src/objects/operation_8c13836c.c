@@ -1,27 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x2e];
-    int f34;
-    char unknown38[0x2b8];
-    int f2f0;
-    float f2f4;
-    int f2f8;
-    char unknown2fc[0xe];
-    short f30a;
-    char unknown30c[0x84];
-    int f390;
-    char unknown394[0x4];
-    int f398;
-};
-extern void call_8c138424(Object *);
-void TBoss3Volopt_update_8c13836c(Object *o)
+#include "src/include/classes/TBoss3Volopt.h"
+extern void call_8c138424(TBoss3Volopt *);
+void TBoss3Volopt_update_8c13836c(TBoss3Volopt *o)
 {
     char *v12;
     v12 = (char *)o->f34;

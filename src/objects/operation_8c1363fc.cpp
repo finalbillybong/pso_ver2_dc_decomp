@@ -1,12 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOKeyAncient03.h"
 typedef struct S_g8c4d9b24 S_g8c4d9b24;
 typedef struct S_g8c4d9b24_0 S_g8c4d9b24_0;
-typedef struct Arg0_38 Arg0_38;
-typedef struct Arg0_64 Arg0_64;
+typedef struct TOKey_p38 TOKey_p38;
+typedef struct TOKey_p64 TOKey_p64;
 typedef struct S_vv1 S_vv1;
 typedef struct S_vv1_2c S_vv1_2c;
 typedef struct S_vv1_4 S_vv1_4;
@@ -15,34 +11,6 @@ typedef struct S_vv4_2c S_vv4_2c;
 typedef struct S_vv4_4 S_vv4_4;
 typedef struct S_vv5 S_vv5;
 typedef struct S_vv5_4 S_vv5_4;
-class Object;
-class Object {
-public:
-    char unknown0[0x18];
-    virtual void v0();
-    virtual void v1();
-    virtual void v2();
-    virtual void v3();
-    virtual void v4();
-    virtual void v5();
-    virtual void v6();
-    virtual void v7();
-    virtual void v8();
-    virtual void v9();
-    virtual void v10();
-    virtual int v11(float, float);
-};
-typedef struct ObjectData {
-    char unknown0[0x38];
-    Arg0_38 *f38;
-    char unknown3c[0x28];
-    Arg0_64 *f64;
-    char unknown68[0x90];
-    float ff8;
-    float ffc;
-    char unknown100[0xc];
-    int f10c;
-} ObjectData;
 struct S_vv1 {
     char unknown0[0x4];
     S_vv1_4 *f04;
@@ -71,22 +39,22 @@ extern "C" void call_8c38c0f0(void *);
 extern "C" void call_8c391c94(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void TOKeyAncient03_render_8c1363fc(Object *o)
+extern "C" void TOKeyAncient03_render_8c1363fc(TOKeyAncient03 *o)
 {
     S_vv1 *v1;
     S_vv4 *v4;
     S_vv5 *v5;
     int t1;
-    t1 = o->v11(((ObjectData *)o)->ff8, ((ObjectData *)o)->ffc);
+    t1 = o->v11(o->ff8, o->ffc);
     if (t1 != 0) {
-        call_8c3827d8(*(void **)((((ObjectData *)o)->f10c << 2) + (int)g_8c4d9b24));
+        call_8c3827d8(*(void **)((o->f10c << 2) + (int)g_8c4d9b24));
         njPushMatrixEx_8c38ae68();
         translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
-        v1 = (S_vv1 *)((ObjectData *)o)->f38;
+        njRotateY_8c37df90(0, (void *)(o->f64));
+        v1 = (S_vv1 *)o->f38;
         translate_current_matrix_v_8c382a40((void *)((int)v1 + 8));
         call_8c3aa702((void *)(v1->f04));
-        if (((ObjectData *)o)->f10c != 1) {
+        if (o->f10c != 1) {
             g_8c46f560 = (int)(g_8c575570);
             g_8c575570 |= 0x10;
             call_8c38c0f0((void *)(((char *)o + 0x11c)));
@@ -104,7 +72,7 @@ extern "C" void TOKeyAncient03_render_8c1363fc(Object *o)
         call_8c391cc4();
         njPopMatrixEx_8c38ad10();
         njPopMatrixEx_8c38ad10();
-        if (((ObjectData *)o)->f10c != 1) {
+        if (o->f10c != 1) {
             call_8c38c0f0((void *)((void *)0x8c305fd8));
             g_8c575570 = (int)(g_8c46f560);
         }

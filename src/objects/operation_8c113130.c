@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x108];
-    int f108;
-};
+#include "src/include/classes/TOKey.h"
 extern int get_current_area_8c032b10(void);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void TOKey_v19_8c113130(Object *o)
+void TOKey_v19_8c113130(TOKey *o)
 {
     int t1;
     t1 = get_current_area_8c032b10();

@@ -1,37 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_38c Arg0_38c;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x160];
-    short f198;
-    char unknown19a[0x170];
-    short f30a;
-    char unknown30c[0x24];
-    short f330;
-    char unknown332[0x28];
-    short f35a;
-    char unknown35c[0x30];
-    Arg0_38c *f38c;
-    int f390;
-    char unknown394[0x8];
-    int f39c;
-    char unknown3a0[0x4];
-    int f3a4;
-    char unknown3a8[0x1c];
-    int f3c4;
-};
+#include "src/include/classes/TObjEneGyaranzo.h"
+typedef struct TObjEnemyCustom_p38c TObjEnemyCustom_p38c;
 extern void operation_8c109bd0(void *);
 extern int call_8c18e768(int, int);
 extern void operation_8c109da0(void *);
 extern int call_8c24e644(int, void *);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void TObjEneGyaranzo_v70_8c109524(Object *o)
+void TObjEneGyaranzo_v70_8c109524(TObjEneGyaranzo *o)
 {
     int v4;
     int t1;

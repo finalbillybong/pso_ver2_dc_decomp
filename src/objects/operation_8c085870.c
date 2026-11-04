@@ -1,21 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjContainerAbeEnemy.h"
 typedef struct S_g8c469c88 S_g8c469c88;
 typedef struct S_g8c469c88_42c S_g8c469c88_42c;
 typedef struct S_g8c469c88_42c_28 S_g8c469c88_42c_28;
 typedef struct S_g8c469c88_42c_38 S_g8c469c88_42c_38;
 typedef struct S_g8c469c8c S_g8c469c8c;
-typedef struct Object Object;
-typedef struct Arg0_64 Arg0_64;
-struct Object {
-    char unknown0[0x64];
-    Arg0_64 *f64;
-    char unknown68[0x2a2];
-    short f30a;
-};
+typedef struct TObjContainerBase_p64 TObjContainerBase_p64;
 struct S_g8c469c88 {
     char unknown0[0x42c];
     S_g8c469c88_42c *f42c;
@@ -34,7 +23,7 @@ extern void translate_current_matrix_v_8c382a40(void *);
 extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void TObjContainerAbeEnemy_v88_8c085870(Object *o)
+void TObjContainerAbeEnemy_v88_8c085870(TObjContainerAbeEnemy *o)
 {
     if (g_8c469c88 != 0) {
         switch (o->f30a) {

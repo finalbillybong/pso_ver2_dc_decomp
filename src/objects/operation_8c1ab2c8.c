@@ -1,22 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_ec Arg0_ec;
-struct Object {
-    char unknown0[0x88];
-    int f88;
-    char unknown8c[0x60];
-    Arg0_ec *fec;
-};
+#include "src/include/classes/TObjMesBase.h"
+typedef struct TObjMesBase_pec TObjMesBase_pec;
 extern char g_8c324f2c[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void TObjMesBase_v09_8c1ab2c8(Object *o)
+void TObjMesBase_v09_8c1ab2c8(TObjMesBase *o)
 {
-    o->fec = (Arg0_ec *)o->f88;
+    o->fec = (TObjMesBase_pec *)o->f88;
     njPrintColor_8c38c5b6(-0xff0100);
     debug_print_at_8c38cf80(0x13001e, (void *)((g_8c324f2c + 0xc)), (void *)(o->fec));
     njPrintColor_8c38c5b6(-0xf0f10);

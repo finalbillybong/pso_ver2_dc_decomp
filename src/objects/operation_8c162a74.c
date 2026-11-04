@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x70];
-    float f70;
-};
-void TOKeyMachine01_v17_8c162a74(Object *o)
+#include "src/include/classes/TOKeyMachine01.h"
+void TOKeyMachine01_v17_8c162a74(TOKeyMachine01 *o)
 {
     if (o->f70 > -0.7f) {
         o->f70 += -0.0233333334f;

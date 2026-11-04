@@ -1,23 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjContainerNoItem.h"
 typedef struct SBlock4 {
     short halves[2];
 } SBlock4;
 typedef struct Frame Frame;
 typedef struct S_g8c46ed0c S_g8c46ed0c;
-typedef struct Object Object;
-typedef struct Arg0_84 Arg0_84;
+typedef struct TObjContainerBase_p84 TObjContainerBase_p84;
 typedef struct S_vv2 S_vv2;
-struct Object {
-    char unknown0[0x20];
-    unsigned short f20;
-    char unknown22[0x62];
-    Arg0_84 *f84;
-};
-struct Arg0_84 {
+struct TObjContainerBase_p84 {
     char unknown0[0x4];
     short f04;
 };
@@ -29,8 +18,8 @@ struct S_vv2 {
     char f00;
 };
 extern S_g8c46ed0c *g_8c46ed0c;
-extern void call_8c05406c(Object *, Frame *);
-static inline int get_entry(Object *o, SBlock4 *out)
+extern void call_8c05406c(TObjContainerNoItem *, Frame *);
+static inline int get_entry(TObjContainerNoItem *o, SBlock4 *out)
 {
     if (o->f84 == 0) {
         return 0;
@@ -41,13 +30,13 @@ static inline int get_entry(Object *o, SBlock4 *out)
     *out = *(SBlock4 *)((char *)g_8c46ed0c + (o->f84->f04 << 2));
     return 1;
 }
-static inline void set_entry(Object *o, SBlock4 *in)
+static inline void set_entry(TObjContainerNoItem *o, SBlock4 *in)
 {
     if (o->f84 != 0 && o->f84->f04 >= 0 && !(o->f84->f04 > 0xb9f)) {
         *(SBlock4 *)((char *)g_8c46ed0c + (o->f84->f04 << 2)) = *in;
     }
 }
-float TObjContainerNoItem_v24_8c084f64(Object *o)
+float TObjContainerNoItem_v24_8c084f64(TObjContainerNoItem *o)
 {
     Frame frame;
     if ((unsigned int)o->f20 >= (unsigned int)0x1000 && o->f84 != 0) {

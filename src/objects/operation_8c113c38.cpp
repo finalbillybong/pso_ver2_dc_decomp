@@ -1,26 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-class Object;
+#include "src/include/classes/TLazerFenceSw.h"
 class Arg0_s124;
-class Object {
-public:
-    char unknown0[0x18];
-    virtual void v0();
-    virtual void v1();
-    virtual void v2();
-    virtual void v3();
-    virtual void v4();
-    virtual void v5();
-    virtual void v6();
-    virtual void v7();
-    virtual void v8();
-    virtual void v9();
-    virtual void v10();
-    virtual int v11(float, float);
-};
 typedef struct ObjectData {
 
 } ObjectData;
@@ -42,7 +21,7 @@ typedef struct Arg0_s124Data {
 extern "C" int operation_8c1f15c8(void *, int);
 extern "C" int call_8c1f15bc(void *);
 extern "C" void call_8c113cc0(int);
-extern "C" void TLazerFenceSw_render_8c113c38(Object *o)
+extern "C" void TLazerFenceSw_render_8c113c38(TLazerFenceSw *o)
 {
     int t1;
     int t2;

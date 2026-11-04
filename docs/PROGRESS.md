@@ -42,7 +42,7 @@ time, for code that has no matching C yet, only so that more of the image builds
 source; it is replaced by C as matches land and is excluded from the code-range,
 matching and image-coverage figures. See ASM.md.
 
-Exact-build verification recorded: **2026-11-01**. Two fresh
+Exact-build verification recorded: **2026-11-04**. Two fresh
 project builds, exact integrated-image comparison, exact typed-data modules and the
 five-function compiler proof passed. Public CI checks the source-bound checkpoint and host-tool tests;
 it does not access a game dump or recompile the game.

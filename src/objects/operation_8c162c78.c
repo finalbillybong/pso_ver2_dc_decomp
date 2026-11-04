@@ -1,17 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x108];
-    int f108;
-    int f10c;
-};
+#include "src/include/classes/TOKeyMachine01.h"
 extern int target_in_radius_8c113490(void *);
-extern int call_8c1134ec(Object *);
-int TOKeyMachine01_v16_8c162c78(Object *o)
+extern int call_8c1134ec(TOKeyMachine01 *);
+int TOKeyMachine01_v16_8c162c78(TOKeyMachine01 *o)
 {
     int v1;
     int t1;

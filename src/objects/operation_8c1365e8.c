@@ -1,18 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x70];
-    float f70;
-    char unknown74[0xac];
-    float f120;
-    char unknown124[0x8];
-    int f12c;
-};
-void TOKeyAncient03_v18_8c1365e8(Object *o)
+#include "src/include/classes/TOKeyAncient03.h"
+void TOKeyAncient03_v18_8c1365e8(TOKeyAncient03 *o)
 {
     if (o->f12c == 1) {
         o->f120 += 0.1f;

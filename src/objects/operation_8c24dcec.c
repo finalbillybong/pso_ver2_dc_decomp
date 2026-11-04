@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemObjMoonAtomizer.h"
 typedef struct S_c8c0d9e2c_sa0 S_c8c0d9e2c_sa0;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-};
-struct Arg0_13c {
+typedef struct TItemObject_p13c TItemObject_p13c;
+struct TItemObject_p13c {
     char unknown0[0x20];
     unsigned short f20;
     char unknown22[0x396];
@@ -23,7 +14,7 @@ struct S_c8c0d9e2c_sa0 {
 extern int g_8c418248;
 extern int find_entry_8c0d9e2c(int, int, int);
 extern void operation_8c1ecfe0(short, short);
-void TItemObjMoonAtomizer_v42_8c24dcec(Object *o)
+void TItemObjMoonAtomizer_v42_8c24dcec(TItemObjMoonAtomizer *o)
 {
     int v1;
     char *v79;

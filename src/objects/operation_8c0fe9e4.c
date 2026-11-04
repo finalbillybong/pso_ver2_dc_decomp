@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x364];
-    int f364;
-};
+#include "src/include/classes/TOMineTrap.h"
 extern void create_effect_777c(void *, int);
-void TOMineTrap_v98_8c0fe9e4(Object *o)
+void TOMineTrap_v98_8c0fe9e4(TOMineTrap *o)
 {
     switch (o->f364) {
     case 8:

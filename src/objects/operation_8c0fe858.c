@@ -1,17 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x2d2];
-    short f30a;
-};
+#include "src/include/classes/TOMineTrap.h"
 extern void operation_8c05426c(void *, int, int);
-void TOMineTrap_v97_8c0fe858(Object *o)
+void TOMineTrap_v97_8c0fe858(TOMineTrap *o)
 {
     o->f30a = 3;
     operation_8c05426c((void *)o, 0, 1);

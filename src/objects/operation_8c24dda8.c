@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
+#include "src/include/classes/TItemObjMagChanger.h"
 extern void TItemObject_ctor_8c0e71c8(void *, int, void *);
-Object *TItemObjMagChanger_ctor_8c24dda8(Object *o, int a1, int a2)
+TItemObjMagChanger *TItemObjMagChanger_ctor_8c24dda8(TItemObjMagChanger *o, int a1, int a2)
 {
     TItemObject_ctor_8c0e71c8((void *)o, a1, (void *)a2);
     o->dispatch = (void *)0x8c27e3a8;

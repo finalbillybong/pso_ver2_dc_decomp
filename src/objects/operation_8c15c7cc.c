@@ -1,23 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x1c];
-    Vector3 f3c;
-    char unknown48[0xc];
-    Vector3 f54;
-};
+#include "src/include/classes/TOSensor.h"
 extern int g_8c3166a8;
 extern void TOKey_ctor_8c112e74(void *);
-Object *TOSensor_ctor_8c15c7cc(Object *o)
+TOSensor *TOSensor_ctor_8c15c7cc(TOSensor *o)
 {
     TOKey_ctor_8c112e74((void *)o);
     o->dispatch = (void *)0x8c26eecc;

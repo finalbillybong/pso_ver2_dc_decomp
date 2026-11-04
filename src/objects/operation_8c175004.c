@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-};
-void TBoss2Joint_v71_8c175004(Object *o)
+#include "src/include/classes/TBoss2Joint.h"
+void TBoss2Joint_v71_8c175004(TBoss2Joint *o)
 {
     o->f34 &= -0x801;
 }

@@ -1,17 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-    char unknown30c[0x74];
-    int f380;
-};
-extern void call_8c027090(Object *);
-void TObjContainerBase_v87_8c0852dc(Object *o)
+#include "src/include/classes/TObjContainerBase.h"
+extern void call_8c027090(TObjContainerBase *);
+void TObjContainerBase_v87_8c0852dc(TObjContainerBase *o)
 {
     switch (o->f30a) {
     case 1:

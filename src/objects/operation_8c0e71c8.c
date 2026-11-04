@@ -1,27 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemObject.h"
 typedef struct S_c8c1c7658 S_c8c1c7658;
-typedef struct Object Object;
 typedef struct Arg2 Arg2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0xcc];
-    int fec;
-    char unknownf0[0x46];
-    unsigned char f136;
-    char unknown137[0x9];
-    char f140;
-    char f141;
-    char unknown142[0x2];
-    int f144;
-};
 struct S_c8c1c7658 {
     char unknown0[0x4];
     short f04;
@@ -33,9 +12,9 @@ struct Arg2 {
 extern void call_8c073288(int);
 extern S_c8c1c7658 *call_8c1c7658(int);
 extern int operation_8c1c74dc(void *);
-Object *TItemObject_ctor_8c0e71c8(Object *o, int a1, Arg2 *a2)
+TItemObject *TItemObject_ctor_8c0e71c8(TItemObject *o, int a1, Arg2 *a2)
 {
-    Object **home = &o;
+    TItemObject **home = &o;
     S_c8c1c7658 *t1;
     int t2;
     (void)home;

@@ -1,21 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjContainerNoItem.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void call_8c053f54(Object *);
+extern void call_8c053f54(TObjContainerNoItem *);
 extern void operation_8c052124(void *);
 extern void destroy_field_8c1f1460(void *, short);
 extern void destroy_object_state(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TObjContainerNoItem_dtor_8c084d34(Object *o, int a1)
+extern void call_8c122774(void *, TObjContainerNoItem *);
+TObjContainerNoItem *TObjContainerNoItem_dtor_8c084d34(TObjContainerNoItem *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c2648d8;

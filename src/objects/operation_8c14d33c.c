@@ -1,23 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOTrapAncient02.h"
 typedef struct S_g8c4da624 S_g8c4da624;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-    char unknown30c[0x5c];
-    int f368;
-};
 extern int g_8c418244;
 extern S_g8c4da624 *g_8c4da624;
 extern int g_8c4da628;
 extern void call_8c0344f0(void *, int, int, int);
 extern int get_current_area_8c032b10(void);
-extern void call_8c05fd7c(int, Object *, void *, int, int);
-void TOTrapAncient02_v91_8c14d33c(Object *o)
+extern void call_8c05fd7c(int, TOTrapAncient02 *, void *, int, int);
+void TOTrapAncient02_v91_8c14d33c(TOTrapAncient02 *o)
 {
     int v2;
     int v1;

@@ -1,19 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjComputer.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 extern void call_8c053f54(void);
 extern void operation_8c052124(void *);
 extern void TObjMesBase_dtor_8c1ab174(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TObjComputer_dtor_8c085dd0(Object *o, int a1)
+extern void call_8c122774(void *, TObjComputer *);
+TObjComputer *TObjComputer_dtor_8c085dd0(TObjComputer *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c264e88;

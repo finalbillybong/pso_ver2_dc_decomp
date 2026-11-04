@@ -1,23 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_e4 Arg0_e4;
-struct Object {
-    char unknown0[0xe4];
-    Arg0_e4 *fe4;
-    int fe8;
-};
+#include "src/include/classes/TObjMesBase.h"
+typedef struct TObjMesBase_pe4 TObjMesBase_pe4;
 extern int hierarchy_is_active(void *);
-void TObjMesBase_v16_8c1ab1f4(Object *o)
+void TObjMesBase_v16_8c1ab1f4(TObjMesBase *o)
 {
     int t1;
     if (o->fe4 != 0) {
         t1 = hierarchy_is_active((void *)(o->fe4));
         if (t1 == 0) {
-            o->fe4 = (Arg0_e4 *)0;
+            o->fe4 = (TObjMesBase_pe4 *)0;
             o->fe8 = 0;
         }
     }

@@ -1,3 +1,4 @@
+#include "src/include/classes/TObjEneDubchik.h"
 typedef struct Vector3 {
     float x;
     float y;
@@ -5,41 +6,10 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct Frame Frame;
 typedef struct S_g8c46fac4 S_g8c46fac4;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_38 Arg0_38;
-typedef struct Arg0_64 Arg0_64;
-class Object;
+typedef struct TObjEnemyCustom_p28 TObjEnemyCustom_p28;
+typedef struct TObjEnemyCustom_p38 TObjEnemyCustom_p38;
+typedef struct TObjEnemyCustom_p64 TObjEnemyCustom_p64;
 class Arg0_s3cc;
-class Object {
-public:
-    char unknown0[0x18];
-    virtual void v0();
-    virtual void v1();
-    virtual void v2();
-    virtual void v3();
-    virtual void v4();
-    virtual void v5();
-    virtual void v6();
-    virtual void v7();
-    virtual void v8();
-    virtual void v9();
-    virtual void v10();
-    virtual void v11();
-    virtual int v12(float, float, float);
-};
-typedef struct ObjectData {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-    char unknown2c[0x8];
-    int f34;
-    Arg0_38 *f38;
-    char unknown3c[0x28];
-    Arg0_64 *f64;
-    char unknown68[0x33c];
-    int f3a4;
-    char unknown3a8[0x6];
-    short f3ae;
-} ObjectData;
 struct Frame {
     Vector3 f00;
 };
@@ -63,7 +33,7 @@ extern Vector3 g_8c306c40;
 extern int g_8c46f560;
 extern S_g8c46fac4 *g_8c46fac4;
 extern int g_8c575570;
-extern "C" void call_8c013c58(Object *);
+extern "C" void call_8c013c58(TObjEneDubchik *);
 extern "C" void call_8c1086fc(void);
 extern "C" void call_8c3827d8(void *);
 extern "C" void njPushMatrixEx_8c38ae68(void);
@@ -78,8 +48,8 @@ extern "C" void operation_8c01cd20(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void operation_8c013e74(void);
 extern "C" void call_8c391cc4(void);
-extern "C" void call_8c04a9e0(Object *, Frame *);
-extern "C" void TObjEneDubchik_render_8c0ce404(Object *o)
+extern "C" void call_8c04a9e0(TObjEneDubchik *, Frame *);
+extern "C" void TObjEneDubchik_render_8c0ce404(TObjEneDubchik *o)
 {
     Frame frame;
     int t1;
@@ -87,7 +57,7 @@ extern "C" void TObjEneDubchik_render_8c0ce404(Object *o)
     int v3;
     int t2;
     int t3;
-    switch (((ObjectData *)o)->f34 & 0x2000000) {
+    switch (o->f34 & 0x2000000) {
     case 0:
         t1 = o->v12(120.0f, 400.0f, 20.0f);
         if (t1 == 0) {
@@ -95,24 +65,24 @@ extern "C" void TObjEneDubchik_render_8c0ce404(Object *o)
         }
         call_8c013c58(o);
         call_8c1086fc();
-        if (((ObjectData *)o)->f3ae != 0) {
+        if (o->f3ae != 0) {
             call_8c3827d8(g_8c46fac4);
         } else {
-            call_8c3827d8((void *)(((ObjectData *)o)->f28));
+            call_8c3827d8((void *)(o->f28));
         }
         v3 = (int)1;
         njPushMatrixEx_8c38ae68();
         g_8c46f560 = (int)(g_8c575570);
         operation_8c0cffe8((void *)o);
         translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+        njRotateY_8c37df90(0, (void *)(o->f64));
         njScale_8c37e2e4(0, 1.3f, 1.3f, 1.3f);
         g_8c575570 &= -0x401;
         t2 = operation_8c03d338();
         if (t2 == 1) {
-            call_8c3aa716((void *)(((ObjectData *)o)->f38));
+            call_8c3aa716((void *)(o->f38));
         } else {
-            if (((((ObjectData *)o)->f3a4 & 4)) != 0) {
+            if (((o->f3a4 & 4)) != 0) {
                 t3 = ((Arg0_s3cc *)((char *)o + 0x3cc))->v8();
                 if (t3 != 0) {
                     ((Arg0_s3cc *)((char *)o + 0x3cc))->v6();
@@ -139,7 +109,7 @@ L_8c0ce524:;
         njPopMatrixEx_8c38ad10();
         operation_8c013e74();
         call_8c391cc4();
-        if (((((ObjectData *)o)->f34 & 0x800)) == 0) {
+        if (((o->f34 & 0x800)) == 0) {
             if (v3 != 0) {
                 {
                     Vector3 *p_ = (Vector3 *)&g_8c306c40;

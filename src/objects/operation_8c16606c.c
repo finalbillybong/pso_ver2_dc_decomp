@@ -1,30 +1,15 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    short f20;
-    char unknown22[0xe];
-    short f30;
-};
+#include "src/include/classes/TBoss2Mine.h"
 extern int g_8c3174d4;
 extern void TObjEneDD_ctor_8c059bc0(void *);
 extern int operation_8c143048(void);
 extern void operation_8c05a0b4(void *, void *);
-extern void call_8c1656bc(Object *, int);
-Object *TBoss2Mine_ctor_8c16606c(Object *o, int a1, int a2, int a3)
+extern void call_8c1656bc(TBoss2Mine *, int);
+TBoss2Mine *TBoss2Mine_ctor_8c16606c(TBoss2Mine *o, int a1, int a2, int a3)
 {
     int t1;
     {
-        Object *self = o;
-        Object **home = &self;
+        TBoss2Mine *self = o;
+        TBoss2Mine **home = &self;
         (void)home;
         TObjEneDD_ctor_8c059bc0((void *)o);
         self->dispatch = (void *)0x8c26fcec;

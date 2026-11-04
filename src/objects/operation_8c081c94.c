@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x11c];
-    int f11c;
-};
+#include "src/include/classes/TObjDoorKey.h"
 extern void play_se_8c05fbf8(int, void *, int, int);
-void TObjDoorKey_v19_8c081c94(Object *o)
+void TObjDoorKey_v19_8c081c94(TObjDoorKey *o)
 {
     play_se_8c05fbf8(0x4000a, (void *)(((char *)o + 0x3c)), 0, 0);
     o->f11c = 1;

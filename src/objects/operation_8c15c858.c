@@ -1,17 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOSensor.h"
 typedef struct S_c8c021ef8 S_c8c021ef8;
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x104];
-    float f104;
-    int f108;
-    int f10c;
-};
 struct S_c8c021ef8 {
     char unknown0[0x34];
     int f34;
@@ -19,7 +8,7 @@ struct S_c8c021ef8 {
 extern S_c8c021ef8 *lookup_low_id(int);
 extern float squared_distance_xz(void *, void *);
 extern int call_8c0dddcc(void);
-int TOSensor_v16_8c15c858(Object *o)
+int TOSensor_v16_8c15c858(TOSensor *o)
 {
     S_c8c021ef8 *t1;
     float t2;

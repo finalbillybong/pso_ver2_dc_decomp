@@ -1,20 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjContainerItem.h"
 typedef struct S_g8c469c84 S_g8c469c84;
-typedef struct Object Object;
-typedef struct Arg0_38 Arg0_38;
-typedef struct Arg0_64 Arg0_64;
-struct Object {
-    char unknown0[0x38];
-    Arg0_38 *f38;
-    char unknown3c[0x28];
-    Arg0_64 *f64;
-    char unknown68[0x2a2];
-    short f30a;
-};
+typedef struct TObjContainerBase_p38 TObjContainerBase_p38;
+typedef struct TObjContainerBase_p64 TObjContainerBase_p64;
 extern void call_8c3827d8(void *);
 extern void njPushMatrixEx_8c38ae68(void);
 extern void translate_current_matrix_v_8c382a40(void *);
@@ -22,7 +9,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void njScale_8c37e2e4(int, float, float, float);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void TObjContainerItem_v88_8c08444c(Object *o)
+void TObjContainerItem_v88_8c08444c(TObjContainerItem *o)
 {
     if (*(int *)0x8c469c80 != 0) {
         if (o->f30a != 0) {

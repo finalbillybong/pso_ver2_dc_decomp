@@ -1,19 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjEneBm3FlyNest.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 extern void operation_8c052124(void *);
 extern void destroy_field_8c178048(void *, short);
 extern void TObjEneDD_dtor_8c059c30(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TObjEneBm3FlyNest_dtor_8c057fa0(Object *o, int a1)
+extern void call_8c122774(void *, TObjEneBm3FlyNest *);
+TObjEneBm3FlyNest *TObjEneBm3FlyNest_dtor_8c057fa0(TObjEneBm3FlyNest *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c262418;

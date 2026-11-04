@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemObjStarAtomizer.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
+typedef struct TItemObject_p13c TItemObject_p13c;
 typedef struct S_x47664 S_x47664;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-};
-struct Arg0_13c {
+struct TItemObject_p13c {
     char unknown0[0x20];
     unsigned short f20;
     char unknown22[0x396];
@@ -31,7 +22,7 @@ struct S_x47664 {
 extern int g_8c418248;
 extern int find_entry_8c0d9e2c(int, int, int);
 extern void operation_8c0368a8(void *);
-void TItemObjStarAtomizer_v42_8c24d97c(Object *o)
+void TItemObjStarAtomizer_v42_8c24d97c(TItemObjStarAtomizer *o)
 {
     Frame frame;
     int v1;
