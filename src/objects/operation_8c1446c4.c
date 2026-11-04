@@ -1,13 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss2DeRolLe.h"
 typedef struct Block24 {
     int words[6];
 } Block24;
 typedef struct Frame Frame;
-typedef struct Object Object;
 typedef struct S_vv1 S_vv1;
 struct Frame {
     Vector3 f00;
@@ -17,15 +12,8 @@ struct Frame {
 struct S_vv1 {
     Vector3 f00;
 };
-struct Object {
-    char unknown0[0x460];
-    Vector3 f460;
-    char unknown46c[0xb4];
-    Vector3 f520;
-    Vector3 f52c;
-};
-extern void call_8c05afe0(Object *, Frame *);
-void TBoss2DeRolLe_v94_8c1446c4(Object *o)
+extern void call_8c05afe0(TBoss2DeRolLe *, Frame *);
+void TBoss2DeRolLe_v94_8c1446c4(TBoss2DeRolLe *o)
 {
     Frame frame;
     S_vv1 *v1;

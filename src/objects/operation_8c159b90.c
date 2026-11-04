@@ -1,17 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjVoloptCage.h"
 typedef struct S_c8c021ef8 S_c8c021ef8;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x338];
-    unsigned short f354;
-};
 struct S_c8c021ef8 {
     char unknown0[0x34];
     int f34;
@@ -25,14 +14,14 @@ extern S_c8c021ef8 *lookup_low_id(int);
 extern void call_8c02688c(S_c8c021ef8 *);
 extern void operation_8c052124(void *);
 extern void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TObjVoloptCage_dtor_8c159b90(Object *o, int a1)
+extern void call_8c122774(void *, TObjVoloptCage *);
+TObjVoloptCage *TObjVoloptCage_dtor_8c159b90(TObjVoloptCage *o, int a1)
 {
     unsigned short v17;
     S_c8c021ef8 *t1;
     int v1;
     if (o != 0) {
-        o->dispatch = (void *)0x8c26ec94;
+        o->vtable = (void *)0x8c26ec94;
         v17 = (unsigned short)o->f354;
         if ((v17 & 0xffff) == g_8c418248) {
             t1 = lookup_low_id((int)(v17 & 0xffff));

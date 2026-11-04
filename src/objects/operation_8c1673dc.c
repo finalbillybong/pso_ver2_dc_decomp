@@ -1,40 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss2PhotonBullet.h"
 typedef struct Block8 {
     int words[2];
 } Block8;
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_110 Arg0_110;
-typedef struct Arg0_11c Arg0_11c;
+typedef struct TBoss2PhotonBullet_p110 TBoss2PhotonBullet_p110;
+typedef struct TBoss2PhotonBullet_p11c TBoss2PhotonBullet_p11c;
 typedef struct Block_frame_0 {
     char unknown0[0x4];
     float f04;
 } Block_frame_0;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x36];
-    float f3c;
-    char unknown40[0x4];
-    float f44;
-    char unknown48[0xa0];
-    float fe8;
-    float fec;
-    char unknownf0[0x4];
-    float ff4;
-    float ff8;
-    float ffc;
-    float f100;
-    char unknown104[0xc];
-    Arg0_110 *f110;
-    int f114;
-    float f118;
-    Arg0_11c *f11c;
-};
 struct Frame {
     Block_frame_0 f00;
 };
@@ -47,7 +21,7 @@ extern int call_8c18e8a0(void *, int);
 extern int operation_8c051ff4(void *, void *, void *);
 extern float operation_8c14490c(void);
 extern int operation_8c0f3630(int, int, int);
-void TBoss2PhotonBullet_update_8c1673dc(Object *o)
+void TBoss2PhotonBullet_update_8c1673dc(TBoss2PhotonBullet *o)
 {
     Frame frame;
     float v15;
@@ -73,7 +47,7 @@ void TBoss2PhotonBullet_update_8c1673dc(Object *o)
     o->f44 = o->f100;
     if (o->f11c == 0) {
         t1 = create_effect_7708((void *)(&o->ff8), 0xdf, 0x40);
-        o->f11c = (Arg0_11c *)t1;
+        o->f11c = (TBoss2PhotonBullet_p11c *)t1;
     } else {
         call_8c0a7608((void *)(o->f11c), (void *)(&o->ff8));
     }
@@ -97,7 +71,7 @@ void TBoss2PhotonBullet_update_8c1673dc(Object *o)
             return;
         }
     }
-    o->f110 = (Arg0_110 *)((int)o->f110 + 1);
+    o->f110 = (TBoss2PhotonBullet_p110 *)((int)o->f110 + 1);
     if ((int)(o->f110) >= 0x78) {
         o->f04 |= 1;
     }

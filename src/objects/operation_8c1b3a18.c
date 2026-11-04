@@ -1,27 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss4Type1.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct S_x13968_0 S_x13968_0;
 typedef struct S_x8464_0 S_x8464_0;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x380];
-    int f39c;
-    char unknown3a0[0xe0];
-    int f480;
-};
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void mark_effect_for_release(void *);
 extern void operation_8c161c38(int);
 extern void operation_8c052124(void *);
 extern void TObjEnemy_dtor_8c0120f4(void *, int);
 extern void operation_8c122774(void *, void *);
-Object *TBoss4Type1_dtor_8c1b3a18(Object *o, int a1)
+TBoss4Type1 *TBoss4Type1_dtor_8c1b3a18(TBoss4Type1 *o, int a1)
 {
     int v2;
     int v1;

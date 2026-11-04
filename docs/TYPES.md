@@ -18,6 +18,11 @@ and use `<Class> *` in place of the local type. **No compiled byte changes.**
   C++ it is the class's virtual slots `v0` to `vN`, so `o->v16()` dispatches through slot 16
   exactly as the local classes did. A slot keeps a signature only when the units that call it
   agree and it uses built-in types only. Every other slot is `void vN()`.
+- When units name a field differently, the header takes a descriptive name (`visible`) over a
+  mechanical one (`f35c`), and an existing header's name always wins. `convert` renames the
+  unit's member accesses (`o->f35c` becomes `o->visible`, `o->dispatch` becomes `o->vtable`)
+  only when no other struct in the unit uses either name. A rename is still only accepted
+  if the unit stays byte-exact.
 - Field names are the units' own names (`fXX` = hex offset; a few, such as `tag`, `size` and
   `dispatch`, come from the TObject layout). Gaps are `char pad_XX[n]`.
 - A pointer to an object the header doesn't describe is an opaque `struct <Base>_pXX *`,
@@ -50,7 +55,7 @@ A unit keeps its local type when its view differs from the header. The conflict 
 | unit-local aggregate | an embedded `Block_p0_78` that no shared header describes |
 | pointer vs int | `Arg0_90 *f90` against `int f90` |
 | signedness | `unsigned char` against `char` |
-| name | `visible` against `f35c` (no member rename yet) |
+| member rename clash | the unit's name and the header's name differ, and another struct in the unit also uses one of them |
 | `sizeof` of the local view | prefix views pinned with `check_prefix[sizeof(...)]` |
 | virtual signature | a slot called with unit-local parameter types (`Frame *`) |
 

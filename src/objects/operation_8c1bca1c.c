@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x390];
-    int f390;
-};
-extern void call_8c012884(Object *);
+#include "src/include/classes/TBoss4Bishi.h"
+extern void call_8c012884(TBoss4Bishi *);
 extern void operation_8c1bca48(void *);
-void TBoss4Bishi_v71_8c1bca1c(Object *o)
+void TBoss4Bishi_v71_8c1bca1c(TBoss4Bishi *o)
 {
     if (o->f390 != 3) {
         call_8c012884(o);

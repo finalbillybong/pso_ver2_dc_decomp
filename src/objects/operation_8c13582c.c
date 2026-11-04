@@ -1,30 +1,15 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TODoorAncient09.h"
 typedef struct S_g8c4d9b04 S_g8c4d9b04;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x28];
-    int f28;
-    char unknown2c[0xb8];
-    int fe4;
-    char unknowne8[0x20];
-    int f108;
-    char unknown10c[0xc];
-    int f118;
-};
 struct S_g8c4d9b04 {
     char unknown0[0x4];
     int f04;
 };
 extern S_g8c4d9b04 *g_8c4d9b04;
-extern int call_8c0eea7c(Object *, float);
+extern int call_8c0eea7c(TODoorAncient09 *, float);
 extern void operation_8c05426c(void *, int, int);
 extern int get_current_area_8c032b10(void);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void TODoorAncient09_v17_8c13582c(Object *o)
+void TODoorAncient09_v17_8c13582c(TODoorAncient09 *o)
 {
     int t1;
     int t2;

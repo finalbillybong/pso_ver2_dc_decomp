@@ -1,20 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TBoss2Fin.h"
 typedef struct S_vv2 S_vv2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x64];
-    int f84;
-    int f88;
-};
 struct S_vv2 {
     float f00;
     float f04;
@@ -22,12 +7,12 @@ struct S_vv2 {
     float f0c;
 };
 extern int g_8c324ef8;
-extern void TObjEZRopeBase_ctor_8c0bbb5c(Object *);
-extern void call_8c1aacac(Object *);
-extern void call_8c0bbbf0(Object *, void *, void *, void *);
-Object *TBoss2Fin_ctor_8c1aabb4(Object *o, int a1, int a2, int a3)
+extern void TObjEZRopeBase_ctor_8c0bbb5c(TBoss2Fin *);
+extern void call_8c1aacac(TBoss2Fin *);
+extern void call_8c0bbbf0(TBoss2Fin *, void *, void *, void *);
+TBoss2Fin *TBoss2Fin_ctor_8c1aabb4(TBoss2Fin *o, int a1, int a2, int a3)
 {
-    Object **home = &o;
+    TBoss2Fin **home = &o;
     S_vv2 *v2;
     int v1;
     (void)home;

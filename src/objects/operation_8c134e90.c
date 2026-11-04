@@ -1,18 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TODoorCave02.h"
 typedef struct S_g8c4d9ac4 S_g8c4d9ac4;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x28];
-    int f28;
-    char unknown2c[0xb8];
-    int fe4;
-    char unknowne8[0x20];
-    int f108;
-};
 struct S_g8c4d9ac4 {
     int f00;
     int f04;
@@ -20,7 +7,7 @@ struct S_g8c4d9ac4 {
 extern int call_8c0eea7c(float);
 extern void operation_8c05428c(void *, int, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void TODoorCave02_v19_8c134e90(Object *o)
+void TODoorCave02_v19_8c134e90(TODoorCave02 *o)
 {
     int t1;
     if ((o->f108 & 1) == 1) {

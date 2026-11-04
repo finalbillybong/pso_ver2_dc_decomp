@@ -1,20 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xe4];
-    int fe4;
-    char unknowne8[0x20];
-    int f108;
-    char unknown10c[0x4];
-    float f110;
-};
-extern int call_8c0eea7c(Object *, float);
+#include "src/include/classes/TODoorCave03.h"
+extern int call_8c0eea7c(TODoorCave03 *, float);
 extern void operation_8c05426c(void *, int, int);
-void TODoorCave03_v17_8c1aecf4(Object *o)
+void TODoorCave03_v17_8c1aecf4(TODoorCave03 *o)
 {
     int t1;
     if ((o->f108 & 1) == 1) {

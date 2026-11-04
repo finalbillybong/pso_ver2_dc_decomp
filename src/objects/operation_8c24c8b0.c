@@ -1,18 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-};
+#include "src/include/classes/TOVS2Wall01.h"
 extern int operation_8c03d338(void);
-extern void operation_8c24cd78(Object *);
+extern void operation_8c24cd78(TOVS2Wall01 *);
 extern void operation_8c24c90c(void *);
 extern void operation_8c24c94c(void *);
-void TOVS2Wall01_update_8c24c8b0(Object *o)
+void TOVS2Wall01_update_8c24c8b0(TOVS2Wall01 *o)
 {
     int t1;
     t1 = operation_8c03d338();

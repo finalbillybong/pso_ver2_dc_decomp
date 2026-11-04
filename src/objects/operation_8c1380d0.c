@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss3Volopt.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 extern unsigned short g_8c313110;
 extern int g_8c313114;
 extern short g_8c313118;
@@ -20,13 +11,13 @@ extern int global_present_8c13a3e0(void);
 extern void operation_8c09e6d0(void *);
 extern void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
 extern void operation_8c122774(void *, void *);
-Object *TBoss3Volopt_dtor_8c1380d0(Object *o, int a1)
+TBoss3Volopt *TBoss3Volopt_dtor_8c1380d0(TBoss3Volopt *o, int a1)
 {
     int v10;
     int v3;
     int t1;
     if (o != 0) {
-        o->dispatch = (void *)0x8c26d0e0;
+        o->vtable = (void *)0x8c26d0e0;
         t1 = global_present_8c13a3e0();
         if (t1 != 0) {
             operation_8c09e6d0((void *)o);

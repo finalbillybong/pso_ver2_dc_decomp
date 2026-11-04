@@ -1,39 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjContainerIdo.h"
 typedef struct S_g8c469c60 S_g8c469c60;
 typedef struct S_g8c469c60_4 S_g8c469c60_4;
 typedef struct S_g8c469c60_8 S_g8c469c60_8;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_60 Arg0_60;
-typedef struct Arg0_64 Arg0_64;
-class Object;
+typedef struct TObjContainerIdo_p28 TObjContainerIdo_p28;
+typedef struct TObjContainerIdo_p60 TObjContainerIdo_p60;
+typedef struct TObjContainerIdo_p64 TObjContainerIdo_p64;
 class Arg0_s128;
-class Object {
-public:
-    char unknown0[0x18];
-    virtual void v0();
-    virtual void v1();
-    virtual void v2();
-    virtual void v3();
-    virtual void v4();
-    virtual void v5();
-    virtual void v6();
-    virtual void v7();
-    virtual void v8();
-    virtual void v9();
-    virtual void v10();
-    virtual int v11(float, float);
-};
-typedef struct ObjectData {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-    char unknown2c[0x34];
-    Arg0_60 *f60;
-    Arg0_64 *f64;
-} ObjectData;
 struct S_g8c469c60 {
     char unknown0[0x4];
     S_g8c469c60_4 *f04;
@@ -62,7 +34,7 @@ extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void njRotateX_8c37dd28(int, void *);
 extern "C" void call_8c3a944a(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void TObjContainerIdo_render_8c083ac0(Object *o)
+extern "C" void TObjContainerIdo_render_8c083ac0(TObjContainerIdo *o)
 {
     int t1;
     int t2;
@@ -72,17 +44,17 @@ extern "C" void TObjContainerIdo_render_8c083ac0(Object *o)
         if (t2 != 0) {
             ((Arg0_s128 *)((char *)o + 0x128))->v6();
         }
-        call_8c3827d8((void *)(((ObjectData *)o)->f28));
+        call_8c3827d8((void *)(o->f28));
         njPushMatrixEx_8c38ae68();
         translate_current_matrix_v_8c382a40((void *)(((char *)o + 0xf8)));
-        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
-        njRotateX_8c37dd28(0, (void *)(((ObjectData *)o)->f60));
+        njRotateY_8c37df90(0, (void *)(o->f64));
+        njRotateX_8c37dd28(0, (void *)(o->f60));
         call_8c3a944a((void *)((*(S_g8c469c60 **)0x8c469c60)->f08));
         njPopMatrixEx_8c38ad10();
         njPushMatrixEx_8c38ae68();
         translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
-        njRotateX_8c37dd28(0, (void *)(((ObjectData *)o)->f60));
+        njRotateY_8c37df90(0, (void *)(o->f64));
+        njRotateX_8c37dd28(0, (void *)(o->f60));
         call_8c3a944a((void *)((*(S_g8c469c60 **)0x8c469c60)->f04));
         njPopMatrixEx_8c38ad10();
         if (t2 != 0) {

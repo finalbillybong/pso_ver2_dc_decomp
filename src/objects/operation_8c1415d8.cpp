@@ -1,53 +1,20 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOTrapAncient01.h"
 typedef struct Frame Frame;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_38 Arg0_38;
+typedef struct TOTrap_p28 TOTrap_p28;
+typedef struct TOTrap_p38 TOTrap_p38;
 typedef struct Arg0_38_4 Arg0_38_4;
-typedef struct Arg0_64 Arg0_64;
+typedef struct TOTrap_p64 TOTrap_p64;
 typedef struct S_vv11 S_vv11;
 typedef struct S_vv11_2c S_vv11_2c;
 typedef struct S_vv12 S_vv12;
 typedef struct S_vv12_4 S_vv12_4;
-class Object;
 class Arg0_s374;
-class Object {
-public:
-    char unknown0[0x18];
-    virtual void v0();
-    virtual void v1();
-    virtual void v2();
-    virtual void v3();
-    virtual void v4();
-    virtual void v5();
-    virtual void v6();
-    virtual void v7();
-    virtual void v8();
-    virtual void v9();
-    virtual void v10();
-    virtual int v11(float, float);
-};
-typedef struct ObjectData {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-    char unknown2c[0xc];
-    Arg0_38 *f38;
-    char unknown3c[0x28];
-    Arg0_64 *f64;
-    char unknown68[0x8];
-    float f70;
-    char unknown74[0x2e8];
-    int f35c;
-} ObjectData;
 struct Frame {
     float f00;
     float f04;
     float f08;
 };
-struct Arg0_38 {
+struct TOTrap_p38 {
     char unknown0[0x4];
     Arg0_38_4 *f04;
 };
@@ -93,7 +60,7 @@ extern "C" void call_8c3aa702(void *);
 extern "C" void call_8c391c94(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void TOTrapAncient01_render_8c1415d8(Object *o)
+extern "C" void TOTrapAncient01_render_8c1415d8(TOTrapAncient01 *o)
 {
     Frame frame;
     S_vv11 *v11;
@@ -106,8 +73,8 @@ extern "C" void TOTrapAncient01_render_8c1415d8(Object *o)
     int t6;
     update_context_blend((void *)(((char *)o + 0x374)));
     t1 = o->v11(400.0f, 20.0f);
-    ((ObjectData *)o)->f35c = (int)t1;
-    if (((ObjectData *)o)->f35c != 1) {
+    o->visible = (int)t1;
+    if (o->visible != 1) {
         return;
     }
     t2 = update_depth_mode((void *)(((char *)o + 0x374)), (void *)(((char *)o + 0x3c)));
@@ -119,9 +86,9 @@ extern "C" void TOTrapAncient01_render_8c1415d8(Object *o)
     }
     njPushMatrixEx_8c38ae68();
     translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-    njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+    njRotateY_8c37df90(0, (void *)(o->f64));
     t3 = operation_8c03d338();
-    if (t3 != 1 && !(((ObjectData *)o)->f70 > 0.0f)) {
+    if (t3 != 1 && !(o->f70 > 0.0f)) {
         t4 = call_8c12b944();
         (&frame)->f00 = (float)t4 / 32768.0f * 0.1f - 0.05f;
         (&frame)->f04 = 0.0f;
@@ -129,12 +96,12 @@ extern "C" void TOTrapAncient01_render_8c1415d8(Object *o)
         (&frame)->f08 = (float)t5 / 32768.0f * 0.1f - 0.05f;
         translate_current_matrix_v_8c382a40((void *)(&frame));
     }
-    call_8c3827d8((void *)(((ObjectData *)o)->f28));
-    v11 = (S_vv11 *)((ObjectData *)o)->f38;
+    call_8c3827d8((void *)(o->f28));
+    v11 = (S_vv11 *)o->f38;
     njPushMatrixEx_8c38ae68();
-    njTranslate_8c3829bc(0, 0.0f, ((ObjectData *)o)->f70, 0.0f);
+    njTranslate_8c3829bc(0, 0.0f, o->f70, 0.0f);
     translate_current_matrix_v_8c382a40((void *)((int)v11 + 8));
-    call_8c3aa702((void *)(((ObjectData *)o)->f38->f04));
+    call_8c3aa702((void *)(o->f38->f04));
     v12 = (S_vv12 *)v11->f2c;
     njPushMatrixEx_8c38ae68();
     translate_current_matrix_v_8c382a40((void *)((int)v12 + 8));

@@ -1,23 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TContainerAncient01.h"
 typedef struct SBlock4 {
     short halves[2];
 } SBlock4;
 typedef struct Frame Frame;
 typedef struct S_g8c46ed0c S_g8c46ed0c;
-typedef struct Object Object;
-typedef struct Arg0_84 Arg0_84;
+typedef struct TContainerAncient01_p84 TContainerAncient01_p84;
 typedef struct S_vv2 S_vv2;
-struct Object {
-    char unknown0[0x20];
-    unsigned short f20;
-    char unknown22[0x62];
-    Arg0_84 *f84;
-};
-struct Arg0_84 {
+struct TContainerAncient01_p84 {
     char unknown0[0x4];
     short f04;
 };
@@ -30,8 +19,8 @@ struct S_vv2 {
 };
 extern S_g8c46ed0c *g_8c46ed0c;
 extern void set_fields_8c12992c(void *);
-extern void call_8c05406c(Object *, Frame *);
-float TContainerAncient01_v24_8c12942c(Object *o)
+extern void call_8c05406c(TContainerAncient01 *, Frame *);
+float TContainerAncient01_v24_8c12942c(TContainerAncient01 *o)
 {
     Frame frame;
     int v4;

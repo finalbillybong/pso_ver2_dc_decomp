@@ -1,21 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TOVS2Wall01.h"
 typedef struct Arg1 Arg1;
 struct Arg1 {
     char unknown0[0x20];
     unsigned short f20;
 };
-struct Object {
-    char unknown0[0x358];
-    int f358;
-};
-extern void call_8c24cadc(Object *, int);
+extern void call_8c24cadc(TOVS2Wall01 *, int);
 extern void create_effect_777c(void *, int);
-float TOVS2Wall01_v25_8c24ce00(Object *o, Arg1 *a1)
+float TOVS2Wall01_v25_8c24ce00(TOVS2Wall01 *o, Arg1 *a1)
 {
     if (a1 != 0 && *(int *)0x8c418248 == a1->f20) {
         *(int *)((char *)o + 0x358) -= 1;

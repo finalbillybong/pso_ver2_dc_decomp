@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_e4 Arg0_e4;
-struct Object {
-    char unknown0[0xe4];
-    Arg0_e4 *fe4;
-};
+#include "src/include/classes/TBoss1DragonEffTail.h"
+typedef struct TBoss1DragonEffTail_pe4 TBoss1DragonEffTail_pe4;
 class Arg1 {
 public:
     char unknown0[0x18];
@@ -43,7 +34,7 @@ typedef struct Arg1Data {
 } Arg1Data;
 extern "C" int operation_8c05bbf8(void);
 extern "C" void operation_8c06522c(void *);
-extern "C" void TBoss1DragonEffTail_v17_8c07c1c4(Object *o, Arg1 *a1)
+extern "C" void TBoss1DragonEffTail_v17_8c07c1c4(TBoss1DragonEffTail *o, Arg1 *a1)
 {
     int t1;
     a1->v24(o->fe4, 1.0f);

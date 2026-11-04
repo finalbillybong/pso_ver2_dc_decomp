@@ -1,41 +1,29 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjEneDarkGunner.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct Arg0_40c Arg0_40c;
-typedef struct Arg0_41c Arg0_41c;
-typedef struct Arg0_420 Arg0_420;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x400];
-    Arg0_41c *f41c;
-    Arg0_420 *f420;
-};
+typedef struct TObjEneDarkGunner_p41c TObjEneDarkGunner_p41c;
+typedef struct TObjEneDarkGunner_p420 TObjEneDarkGunner_p420;
 struct Arg0_40c {
     char unknown0[0x4];
     short f04;
 };
-struct Arg0_41c {
+struct TObjEneDarkGunner_p41c {
     char unknown0[0x4];
     short f04;
 };
-struct Arg0_420 {
+struct TObjEneDarkGunner_p420 {
     char unknown0[0x4];
     short f04;
 };
 extern void operation_8c052124(void *);
 extern void destroy_field_8c0fbfa4(void *, short);
 extern void TObjEnemyCustom_dtor_8c0c23c8(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TObjEneDarkGunner_dtor_8c079058(Object *o, int a1)
+extern void call_8c122774(void *, TObjEneDarkGunner *);
+TObjEneDarkGunner *TObjEneDarkGunner_dtor_8c079058(TObjEneDarkGunner *o, int a1)
 {
     int v1;
     if (o != 0) {
-        o->dispatch = (void *)0x8c263e38;
+        o->vtable = (void *)0x8c263e38;
         operation_8c052124((void *)o);
         v1 = (int)0;
         while (4 > v1) {

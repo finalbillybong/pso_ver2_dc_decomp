@@ -143,6 +143,48 @@ class MergeTests(unittest.TestCase):
         self.assertIn('0x70', why)
 
 
+class RenameTests(unittest.TestCase):
+    classes = MergeTests.classes
+
+    def test_member_rename_to_header_name(self):
+        a, _ = evidence(C_UNIT, 'TFoo_v17_8c000000', 'TFoo', uid='a')
+        b, _ = evidence(CPP_UNIT, 'TFoo_render_8c000004', 'TFoo', 'c++', uid='b')
+        named = C_UNIT.replace('f108', 'state').replace('void *dispatch', 'void *vtable')
+        c, _ = evidence(named, 'TFoo_v17_8c000000', 'TFoo', uid='c')
+        d, _ = evidence(named, 'TFoo_v17_8c000000', 'TFoo', uid='d')
+        lay = ct.resolve(self.classes, [a, b, c, d], 'TFoo')
+        self.assertEqual({f['offset']: f['name'] for f in lay['fields']}[0x108], 'state')   # descriptive and more common
+        self.assertEqual(ct.compatible(a, lay)[0], False)
+        renames = {}
+        self.assertTrue(ct.compatible(a, lay, renames)[0])
+        self.assertEqual(renames['f108'], 'state')
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / 'unit.c').write_text(C_UNIT)
+            unit = {'id': 'a', 'source': 'unit.c', 'functions': [{'name': 'TFoo_v17_8c000000'}]}
+            _, info = ct.unit_evidence(unit, root)
+            res, why = ct.convert_unit(unit, a, info, lay, root)
+        self.assertEqual(why, '')
+        self.assertIn('if (o->state == 1)', res['text'])
+        self.assertNotIn('f108', res['text'])
+
+    def test_rename_refused_when_another_struct_has_the_name(self):
+        a, _ = evidence(C_UNIT, 'TFoo_v17_8c000000', 'TFoo', uid='a')
+        named = C_UNIT.replace('f108', 'state')
+        c, _ = evidence(named, 'TFoo_v17_8c000000', 'TFoo', uid='c')
+        lay = ct.resolve(self.classes, [a, c, c], 'TFoo')
+        other = C_UNIT.replace('void TFoo_v17', 'struct Other { int f108; };\nvoid TFoo_v17')
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / 'unit.c').write_text(other)
+            unit = {'id': 'x', 'source': 'unit.c', 'functions': [{'name': 'TFoo_v17_8c000000'}]}
+            ev, info = ct.unit_evidence(unit, root)
+            ev['class'] = 'TFoo'
+            res, why = ct.convert_unit(unit, ev, info, lay, root)
+        self.assertIsNone(res)
+        self.assertIn('clashes', why)
+
+
 class RepositoryTests(unittest.TestCase):
     def test_committed_class_headers_are_consistent(self):
         self.assertEqual(ct.check(), [])

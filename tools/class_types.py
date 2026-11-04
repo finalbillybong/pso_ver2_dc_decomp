@@ -525,6 +525,12 @@ def conflict_class(a, b):
 SHARED_TYPES = {'Vector3': 'src/include/vector3.h'}   # aggregates a class header may embed
 VPTR = 0x18
 DEPTH = {}
+MECHANICAL = re.compile(r'^(?:f_?[0-9a-fA-F]+|field_?[0-9a-fA-F]*|value_?[0-9a-fA-F]*|unknown\w*|pad\w*)$')
+
+
+def pick_name(counter):
+    """A header's own name first; then a descriptive unit name over a mechanical fXX one."""
+    return max(counter.items(), key=lambda kv: (kv[1] >= 1000, not MECHANICAL.match(kv[0]), kv[1], kv[0]))[0]
 
 
 def header_rank(ids):
@@ -604,7 +610,7 @@ def resolve(classes, evidence, name):
         if key[2] == 'vptr':
             fname = c_vptr_names.most_common(1)[0][0] if c_vptr_names else 'vtable'
         else:
-            fname = names[offset].most_common(1)[0][0]
+            fname = pick_name(names[offset])
         fields.append(dict(offset=offset, size=key[0], type=key[1], kind=key[2], dims=list(key[3]), units=ids, name=fname))
     vslots, vconf = {}, []
     for index, sigs in sorted(slots.items()):
@@ -743,8 +749,9 @@ def rename_idents(text, mapping):
     return ''.join(out)
 
 
-def compatible(ev, layout_):
-    """Every field the unit's this-views declare must be the header's field (same offset, type, name)."""
+def compatible(ev, layout_, renames=None):
+    """Every field the unit's this-views declare must be the header's field (same offset, type, name).
+    With `renames`, a name difference is recorded there (unit name -> header name) instead."""
     by_offset = {f['offset']: f for f in layout_['fields']}
     tags = {}
     for f in ev['fields']:
@@ -755,8 +762,12 @@ def compatible(ev, layout_):
         if h['kind'] == 'vptr':
             if f['kind'] == 'vptr' and ev['language'] == 'c++':
                 continue
-            if ev['language'] == 'c' and f['type'] == 'void*' and f['name'] == h['name']:
-                continue
+            if ev['language'] == 'c' and f['type'] == 'void*':
+                if f['name'] == h['name']:
+                    continue
+                if renames is not None and renames.get(f['name'], h['name']) == h['name']:
+                    renames[f['name']] = h['name']
+                    continue
             return False, where + 'vptr view ' + f['type'] + ' ' + f['name'], tags
         if h['type'] == '<ptr>':
             if f['kind'] != 'pointer':
@@ -771,7 +782,9 @@ def compatible(ev, layout_):
         elif (h['type'], h['size'], h['dims']) != (f['type'], f['size'], f.get('dims', [])):
             return False, where + '%s vs %s' % (f['type'], h['type']), tags
         if h['name'] != f['name']:
-            return False, where + 'name %s vs %s' % (f['name'], h['name']), tags
+            if renames is None or renames.get(f['name'], h['name']) != h['name']:
+                return False, where + 'name %s vs %s' % (f['name'], h['name']), tags
+            renames[f['name']] = h['name']
     for v in ev['virtuals']:
         if v['used'] and layout_['slots'].get(v['index']) != (v['ret'], v['params']):
             return False, 'virtual slot %d signature' % v['index'], tags
@@ -781,9 +794,19 @@ def compatible(ev, layout_):
 def convert_unit(unit, ev, info, layout_, root=ROOT):
     """Rewrite one unit: drop its local this-type definitions, include the class header, rename."""
     cls = layout_['name']
-    ok, why, tags = compatible(ev, layout_)
+    renames = {}
+    ok, why, tags = compatible(ev, layout_, renames)
     if not ok:
         return None, why
+    if renames:
+        # Member renames are safe only when no other aggregate the unit sees has either name.
+        others = [a for a in info['aggregates'] if a.name not in ev['views'] and a.tag not in ev['views']]
+        others += [a for a in info['by_name'].values() if a.name in info['included']]
+        for a in others:
+            members = {m['name'] for m in (a.members or [])} | set(re.findall(r'\b(\w+)\s*(?:\[[^\]]*\])*\s*;', a.body))
+            clash = members & (set(renames) | set(renames.values()))
+            if clash:
+                return None, 'member rename clashes with %s.%s' % (a.name, sorted(clash)[0])
     text = (root / unit['source']).read_text()
     code = info['code']
     if 'sizeof' in info['body'] or any(re.search(r'sizeof\s*\(\s*(?:struct\s+)?' + re.escape(v) + r'\s*\)', code) for v in ev['views']):
@@ -847,6 +870,9 @@ def convert_unit(unit, ev, info, layout_, root=ROOT):
     pieces.append(text[last:])
     new = ''.join(pieces)
     new = rename_idents(new, mapping)
+    if renames:
+        new = re.sub(r'(->|\.)(\s*)(' + '|'.join(map(re.escape, sorted(renames, key=len, reverse=True))) + r')\b',
+                     lambda m: m.group(1) + m.group(2) + renames[m.group(3)], new)
     # A cast view of the object to its own class is now a no-op cast: drop it.
     param = re.escape(info['this']['name'])
     new = re.sub(r'\(\(\s*' + re.escape(cls) + r'\s*\*\s*\)\s*' + param + r'\s*\)(?=\s*->)', info['this']['name'], new)
@@ -865,7 +891,7 @@ def convert_unit(unit, ev, info, layout_, root=ROOT):
     for h in extra_headers + [header]:
         if h not in headers:
             headers.append(h)
-    return dict(text=new, headers=headers, removed=removed + 1), ''
+    return dict(text=new, headers=headers, removed=removed + 1, renames=renames), ''
 
 
 # ---------------------------------------------------------------- commands
@@ -954,12 +980,15 @@ def cmd_convert(args):
             if ev['problems']:
                 results.append((ev['id'], n, 'parse: ' + '; '.join(ev['problems'])))
                 continue
+            if not (ROOT / HEADER_DIR / (n + '.h')).is_file():
+                results.append((ev['id'], n, 'no header for the class (run emit first)'))
+                continue
             _, info = unit_evidence(unit)
             res, why = convert_unit(unit, ev, info, lay)
             if res is None:
                 results.append((ev['id'], n, 'local: ' + why))
                 continue
-            results.append((ev['id'], n, 'converted, -%d lines' % res['removed']))
+            results.append((ev['id'], n, 'converted, -%d lines%s' % (res['removed'], ', renamed ' + ','.join('%s->%s' % kv for kv in sorted(res['renames'].items())) if res['renames'] else '')))
             if args.write:
                 (ROOT / unit['source']).write_text(res['text'])
                 unit['headers'] = res['headers']

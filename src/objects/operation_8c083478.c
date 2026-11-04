@@ -1,42 +1,20 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_104 Arg0_104;
-typedef struct Arg0_114 Arg0_114;
-struct Object {
-    char unknown0[0x3c];
-    Vector3 f3c;
-    char unknown48[0x28];
-    float f70;
-    char unknown74[0x18];
-    int f8c;
-    int f90;
-    char unknown94[0x64];
-    Vector3 ff8;
-    Arg0_104 *f104;
-    char unknown108[0xc];
-    Arg0_114 *f114;
-    int f118;
-    char unknown11c[0x8];
-    float f124;
-};
+#include "src/include/classes/TObjContainerIdo.h"
+typedef struct TObjContainerIdo_p104 TObjContainerIdo_p104;
+typedef struct TObjContainerIdo_p114 TObjContainerIdo_p114;
 extern char g_8c2ff478[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void TObjContainerIdo_v09_8c083478(Object *o)
+void TObjContainerIdo_v09_8c083478(TObjContainerIdo *o)
 {
     int v7;
     int v10;
     int v5;
-    o->f114 = (Arg0_114 *)o->f8c;
+    o->f114 = (TObjContainerIdo_p114 *)o->f8c;
     if (1 > (int)(o->f114)) {
-        o->f114 = (Arg0_114 *)1;
+        o->f114 = (TObjContainerIdo_p114 *)1;
     }
     if ((int)(o->f114) > 4) {
-        o->f114 = (Arg0_114 *)4;
+        o->f114 = (TObjContainerIdo_p114 *)4;
     }
     v5 = (int)0x114;
     v10 = (int)0;

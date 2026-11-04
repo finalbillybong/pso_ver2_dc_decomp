@@ -1,20 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x88];
-    int f88;
-    char unknown8c[0x4];
-    int f90;
-    char unknown94[0x6c];
-    int f100;
-    int f104;
-};
+#include "src/include/classes/TODoorAncient09.h"
 extern int get_game_mode_8c01c25c(void);
-int TODoorAncient09_v21_8c136064(Object *o)
+int TODoorAncient09_v21_8c136064(TODoorAncient09 *o)
 {
     int t1;
     o->f100 = (int)(o->f88);

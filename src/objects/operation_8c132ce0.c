@@ -1,18 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TODoorCave01.h"
 typedef struct Arg1 Arg1;
 struct Arg1 {
     short f00;
 };
-struct Object {
-    char unknown0[0x108];
-    int f108;
-};
-void TODoorCave01_v05_8c132ce0(Object *o, Arg1 *a1)
+void TODoorCave01_v05_8c132ce0(TODoorCave01 *o, Arg1 *a1)
 {
     if (a1->f00 == 1) {
         o->f108 |= 0xf0001;

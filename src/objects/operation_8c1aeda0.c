@@ -1,19 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x40];
-    float f40;
-    char unknown44[0x14];
-    float f58;
-    char unknown5c[0x88];
-    int fe4;
-};
-extern void call_8c05fd7c(int, Object *, void *, int, int);
-void TODoorCave03_v18_8c1aeda0(Object *o)
+#include "src/include/classes/TODoorCave03.h"
+extern void call_8c05fd7c(int, TODoorCave03 *, void *, int, int);
+void TODoorCave03_v18_8c1aeda0(TODoorCave03 *o)
 {
     float v1;
     v1 = (float)o->f58;

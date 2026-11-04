@@ -1,42 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_38 Arg0_38;
-typedef struct Arg0_64 Arg0_64;
-class Object;
+#include "src/include/classes/TOVS2Wall01.h"
+typedef struct TOVS2Wall01_p28 TOVS2Wall01_p28;
+typedef struct TOVS2Wall01_p38 TOVS2Wall01_p38;
+typedef struct TOVS2Wall01_p64 TOVS2Wall01_p64;
 class Arg0_s35c;
-class Object {
-public:
-    char unknown0[0x18];
-    virtual void v0();
-    virtual void v1();
-    virtual void v2();
-    virtual void v3();
-    virtual void v4();
-    virtual void v5();
-    virtual void v6();
-    virtual void v7();
-    virtual void v8();
-    virtual void v9();
-    virtual void v10();
-    virtual int v11(float, float);
-};
-typedef struct ObjectData {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-    char unknown2c[0xc];
-    Arg0_38 *f38;
-    char unknown3c[0x28];
-    Arg0_64 *f64;
-    char unknown68[0x2e8];
-    float f350;
-    float f354;
-    char unknown358[0x20];
-    int f378;
-} ObjectData;
 class Arg0_s35c {
 public:
     char unknown0[0x14];
@@ -66,15 +32,15 @@ extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3827d8(void *);
 extern "C" void call_8c3aa716(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void TOVS2Wall01_render_8c24c78c(Object *o)
+extern "C" void TOVS2Wall01_render_8c24c78c(TOVS2Wall01 *o)
 {
     int t1;
     int t2;
     int t3;
     update_context_blend((void *)(((char *)o + 0x35c)));
-    t1 = o->v11(((ObjectData *)o)->f350, ((ObjectData *)o)->f354);
-    ((ObjectData *)o)->f378 = (int)t1;
-    if (((ObjectData *)o)->f378 == 1) {
+    t1 = o->v11(o->f350, o->f354);
+    o->f378 = (int)t1;
+    if (o->f378 == 1) {
         t2 = update_depth_mode((void *)(((char *)o + 0x35c)), (void *)(((char *)o + 0x3c)));
         if (t2 == 1) {
             g_8c46f560 = (int)(g_8c575570);
@@ -84,9 +50,9 @@ extern "C" void TOVS2Wall01_render_8c24c78c(Object *o)
         }
         njPushMatrixEx_8c38ae68();
         translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
-        call_8c3827d8((void *)(((ObjectData *)o)->f28));
-        call_8c3aa716((void *)(((ObjectData *)o)->f38));
+        njRotateY_8c37df90(0, (void *)(o->f64));
+        call_8c3827d8((void *)(o->f28));
+        call_8c3aa716((void *)(o->f38));
         njPopMatrixEx_8c38ad10();
         t3 = update_depth_mode((void *)(((char *)o + 0x35c)), (void *)(((char *)o + 0x3c)));
         if (t3 == 1) {

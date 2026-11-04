@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x390];
-    int f390;
-    char unknown394[0x2c];
-    unsigned short f3c0;
-    unsigned short f3c2;
-};
+#include "src/include/classes/TBoss4Type3.h"
 extern void operation_8c1b81b4(void *, int);
-void TBoss4Type3_v71_8c1b79b0(Object *o)
+void TBoss4Type3_v71_8c1b79b0(TBoss4Type3 *o)
 {
     if (o->f390 != 3 && o->f390 != 2) {
         o->f3c2 = o->f3c0 = 0xffff;
