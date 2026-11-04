@@ -19,7 +19,7 @@ Only typed source counts:
 | `int_table` | `const int` or `const unsigned int d_<addr>[N]` | Integer literals within the element type's range. |
 | `int16_table` | `const short` or `const unsigned short d_<addr>[N]` | As above. |
 | `byte_table` | `const unsigned char` or `const signed char d_<addr>[N]` | Small-integer tables only (see below). |
-| `record_table` | `const Record_<addr> d_<addr>[N] = { { ... }, ... };` with `typedef struct { const void *f0; float f1; int f2; ... } Record_<addr>;`, or a descriptive type such as `typedef struct { const void *decode_args; const void *handler; } QuestOpcode;` | Fields are `const void *`, `float`, `int`, `unsigned int`, `short` or `unsigned short`, laid out without padding; every record has every field; pointer fields follow the pointer-table rule. Field names are `f0`..`fN` or distinct descriptive names (see *Named game tables*); names never change bytes. |
+| `record_table` | `const Record_<addr> d_<addr>[N] = { { ... }, ... };` with `typedef struct { const void *f0; float f1; int f2; ... } Record_<addr>;`, or a descriptive type such as `typedef struct { const void *decode_args; const void *handler; } QuestOpcode;` | Fields are `const void *`, `float`, `int`, `unsigned int`, `short`, `unsigned short`, `signed char`, `unsigned char` or a `char name[N]` text field initialized by one string literal shorter than `N`, laid out without padding; every record has every field; pointer fields follow the pointer-table rule. Field names are `f0`..`fN` or distinct descriptive names (see *Named game tables*); names never change bytes. |
 
 **No integer or float word may equal a known symbol address.** That covers admitted
 functions, data objects and every bound symbol; such a word must be written as a
@@ -157,6 +157,36 @@ evidence in [SYSTEMS.md](SYSTEMS.md)). Unknown fields are named by offset
 | `g_game_mode_table_8c2e3258` | `GameMode { init, frame, exit }[35]` | Indexed by `g_game_mode_state` in `game_main`. |
 | `g_login_server_table_8c2e2f24` | `LoginServer { host0, port0, host1, port1 }[3]` | Host strings and ports 9200/9201. |
 | `g_area_object_asset_tables_8c2ed250`, `g_area_enemy_asset_tables_8c2eeea4`, `g_area_gsl_table_8c323e8c`, `g_se_bank_table_8c2fc788`, `g_vmu_drive_ids_8c2e20b8`, `TObject_vtable_8c261580`, `TObjectShared_vtable_8c2612d8` | unchanged | Renamed only. |
+
+### Tranche 7: records from the extracts
+
+Tranche 7 typed 15,168 bytes that the earlier rules left in the extracts:
+
+* **Technique parameters** `technique_table_8c3047f8`: 19 records of 64 bytes,
+  `TechniqueParameters`, with a `char name[16]` field at `+0x28` (`FOIE` … `MEGID`).
+  Only the name is established; the other fields are named by offset. The columns are
+  floats at `+0x00`–`+0x08`, small integers at `+0x10`–`+0x1c`, angles in 1/65536 turns
+  at `+0x20`/`+0x24`, and small integers at `+0x38`/`+0x3c`.
+* **Member-function tables** `member_function_table_<addr>` (31 tables, 5,304 bytes):
+  runs of CodeWarrior pointers to member functions, `MemberFunction {this_offset,
+  vtable_index, function}` = `{0, -1, handler}`, with null member pointers `{0, 0, 0}`
+  allowed between non-null records but never at either end. Every handler is an entry
+  point by the virtual-table rules; a register-save prologue (including
+  `fmov.s fr15,@-r15`) that follows a literal pool, padding or a return also counts.
+* **Record tables** at the smallest consistent stride from 8 to 256 bytes (earlier
+  tranches searched 4–64 and needed every pointer to name a typed object). Every 4-byte
+  column is consistently pointers (to typed objects or code entry points), floats
+  (normal, exponent within 2^±40) or integers (below `0x01000000`, or `0xff000000` and
+  above, such as the ARGB colour `0xff8008d4`, written as `unsigned int`). Tables need
+  at least four records, or three of 16 bytes or more; at least 40% nonzero words; two
+  pointers if they have a pointer column; and must cover half of their extract. Four of
+  them are DAT constructor tables (`dat_ctor_table_<addr>`, `DatConstructorEntry`) that
+  the per-area lists do not reach.
+* **JIS X 0208 code table** `d_8c2895b8`: 256 halfwords whose two bytes are both
+  `0x21`–`0x7e`, typed as `unsigned short`.
+
+Byte tables with values above `0x7f` remain extracts: nothing found so far shows them
+to be tables rather than packed or compressed data.
 
 ### External pointer targets (`g_<addr>`)
 

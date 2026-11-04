@@ -359,5 +359,36 @@ const Handler handlers_00008000[2] = {
         self.assertIn('string_table', static_data.KINDS)
 
 
+class ByteAndTextFieldTests(unittest.TestCase):
+    SOURCE = """typedef struct { float power; unsigned char level; signed char delta; short count; char name[8]; int flags; } Spell;
+
+const Spell spells_0000a000[2] = {
+    { 1.5f, 200, -3, 7, "FOIE, 1", 1 },
+    { 0.0f, 0, 0, 0, "", 0 }
+};
+"""
+
+    def unit(self):
+        return {'id': 'u', 'source': 'src/data/u.c', 'address': '0xa000',
+                'objects': [{'name': 'spells_0000a000', 'kind': 'record_table', 'size': 40, 'address': '0xa000'}],
+                'text': self.SOURCE}
+
+    def test_byte_and_text_fields_lay_out_without_padding(self):
+        info = {}
+        self.assertEqual(static_data.lint(self.SOURCE, self.unit(), info), set())
+        self.assertEqual((info['spells_0000a000']['stride'], info['spells_0000a000']['pointers']), (20, set()))
+        self.assertEqual(static_data.record_layout(['float', 'uchar', 'schar', 'short', 'text:8', 'int']),
+                         ([0, 4, 5, 6, 8, 16], 20))
+        for old, new in [('200, -3', '256, -3'),                 # unsigned char out of range
+                         ('200, -3', '200, -129'),               # signed char out of range
+                         ('"FOIE, 1"', '"FOIE, 12"'),            # no room for the terminator
+                         ('"FOIE, 1"', '70'),                    # text field as a number
+                         ('char name[8];', 'char name;'),        # char needs an array size
+                         ('int flags;', 'int flags[2];'),        # only char fields take a size
+                         ('short count;', 'char count[2];')]:    # padding before the next field
+            with self.subTest(change=new), self.assertRaises(ValueError):
+                static_data.lint(self.SOURCE.replace(old, new), self.unit())
+
+
 if __name__ == '__main__':
     unittest.main()

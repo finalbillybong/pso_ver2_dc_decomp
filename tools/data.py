@@ -19,8 +19,10 @@ range. Only typed definitions are accepted:
   `int`/`unsigned int`, `short`/`unsigned short`, `signed char`/`unsigned char`
   with plain literals.
 * `record_table`: an array of a struct type (`Record_<addr>` or a descriptive name) whose
-  fields are `const void *`, `float`, `int`, `unsigned int`, `short` or `unsigned short`
-  (no padding), named `f0`..`fN` or descriptively; pointer fields follow the pointer rule.
+  fields are `const void *`, `float`, `int`, `unsigned int`, `short`, `unsigned short`,
+  `signed char`, `unsigned char` or a `char name[N]` text field initialized by one string
+  literal shorter than N (no padding), named `f0`..`fN` or descriptively; pointer fields
+  follow the pointer rule.
 
 Pointers may also name `fn_<addr>` (a code entry point) or `g_<addr>` (reference-backed
 data or RAM outside the image); `check_external_symbols` requires those names to be
@@ -164,28 +166,52 @@ SCALARS = {'const float': ('float_table', 4, 'float'),
            'const signed char': ('byte_table', 1, (-128, 127)),
            'const unsigned char': ('byte_table', 1, (0, 255))}
 FIELD_TYPES = {'const void *': 'pointer', 'float': 'float', 'int': 'int', 'unsigned int': 'uint',
-               'short': 'short', 'unsigned short': 'ushort'}
-FIELD_SIZE = {'pointer': 4, 'float': 4, 'int': 4, 'uint': 4, 'short': 2, 'ushort': 2}
+               'short': 'short', 'unsigned short': 'ushort', 'signed char': 'schar', 'unsigned char': 'uchar'}
 FIELD_RANGE = {'int': (-2 ** 31, 2 ** 31 - 1), 'uint': (0, 2 ** 32 - 1), 'short': (-2 ** 15, 2 ** 15 - 1),
-               'ushort': (0, 2 ** 16 - 1)}
+               'ushort': (0, 2 ** 16 - 1), 'schar': (-128, 127), 'uchar': (0, 255)}
+
+
+class _FieldSize(dict):
+    """Field kind -> size; a text field `text:N` (char name[N]) has size N."""
+    def __missing__(self, kind):
+        if kind.startswith('text:'):
+            return int(kind[5:])
+        raise KeyError(kind)
+
+
+FIELD_SIZE = _FieldSize({'pointer': 4, 'float': 4, 'int': 4, 'uint': 4, 'short': 2, 'ushort': 2,
+                         'schar': 1, 'uchar': 1})
+
+
+def field_align(kind):
+    return 1 if kind.startswith('text:') else FIELD_SIZE[kind]
 
 
 def record_layout(fields):
     """C layout of a record: field offsets and the padded size (CodeWarrior natural alignment)."""
     offsets, cursor = [], 0
     for f in fields:
-        size = FIELD_SIZE[f]
-        cursor = -(-cursor // size) * size
+        size, step = FIELD_SIZE[f], field_align(f)
+        cursor = -(-cursor // step) * step
         offsets.append(cursor)
         cursor += size
-    align = max(FIELD_SIZE[f] for f in fields)
+    align = max(field_align(f) for f in fields)
     return offsets, -(-cursor // align) * align
 
 
 def _split(body):
     """Top-level comma-separated items of an initializer body."""
-    items, depth, cur = [], 0, ''
-    for c in body:
+    items, depth, cur, i = [], 0, '', 0
+    literal = re.compile(STRING_LITERAL)
+    while i < len(body):
+        c = body[i]
+        if c == '"':
+            m = literal.match(body, i)
+            if not m:
+                raise ValueError('Unsupported string literal')
+            cur += m[0]; i = m.end()
+            continue
+        i += 1
         if c == ',' and depth == 0:
             items.append(cur.strip()); cur = ''
             continue
@@ -256,12 +282,18 @@ def lint(text, unit, info=None):
             fields = [f.strip() for f in m[1].rstrip(';').split(';')]
             kinds, field_names = [], set()
             for i, f in enumerate(fields):
-                fm = re.fullmatch(r'(const void \*|float |int |unsigned int |short |unsigned short )(' + IDENT + ')', f)
-                if not fm or fm[2] in C_KEYWORDS or fm[2] in field_names:
+                fm = re.fullmatch(r'(const void \*|float |int |unsigned int |short |unsigned short |signed char '
+                                  r'|unsigned char |char )(' + IDENT + r')(?:\[([1-9][0-9]*)\])?', f)
+                if (not fm or fm[2] in C_KEYWORDS or fm[2] in field_names
+                        or (fm[1] == 'char ') != (fm[3] is not None)):
                     raise ValueError('Record fields must be distinct names of const void *, float, int,'
-                                     ' unsigned int, short or unsigned short')
+                                     ' unsigned int, short, unsigned short, signed char, unsigned char'
+                                     ' or char name[N]')
                 field_names.add(fm[2])
-                kinds.append(FIELD_TYPES[fm[1].strip() if fm[1] != 'const void *' else fm[1]])
+                if fm[1] == 'char ':
+                    kinds.append('text:' + fm[3])
+                else:
+                    kinds.append(FIELD_TYPES[fm[1].strip() if fm[1] != 'const void *' else fm[1]])
             offsets, padded = record_layout(kinds)
             if padded != offsets[-1] + FIELD_SIZE[kinds[-1]]:
                 raise ValueError('Record types must have no trailing padding: ' + m[2])
@@ -322,6 +354,9 @@ def lint(text, unit, info=None):
                             pointer(v, False)
                         elif f == 'float':
                             words.append(_float_bits(v))
+                        elif f.startswith('text:'):
+                            if not re.fullmatch(STRING_LITERAL, v) or _literal_length(v) >= FIELD_SIZE[f]:
+                                raise ValueError('Text fields take one literal shorter than the field: ' + name)
                         else:
                             value = _int(v, FIELD_RANGE[f])
                             if FIELD_SIZE[f] == 4:
