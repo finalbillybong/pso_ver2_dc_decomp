@@ -1,25 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowQuantity.h"
 typedef struct S_g8c467180 S_g8c467180;
 typedef struct S_g8c467180_2c S_g8c467180_2c;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
+typedef struct TWindowQuantity_p30 TWindowQuantity_p30;
 typedef struct Arg0_30_0 Arg0_30_0;
 typedef struct S_vv5 S_vv5;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x10];
-    Arg0_30 *f30;
-    char unknown34[0x34];
-    float f68;
-};
 struct S_g8c467180 {
     char unknown0[0x2c];
     S_g8c467180_2c *f2c;
@@ -28,7 +12,7 @@ struct S_g8c467180_2c {
     char unknown0[0x4];
     int f04;
 };
-struct Arg0_30 {
+struct TWindowQuantity_p30 {
     Arg0_30_0 *f00;
     int f04;
 };
@@ -40,9 +24,9 @@ extern void initialize_base_8c0db1d0(void *, int);
 extern int call_8c04b8dc(int);
 extern float call_8c19a09c(float);
 extern void call_8c0e2278(void *, int, int);
-Object *TWindowQuantity_ctor_8c1ca088(Object *o)
+TWindowQuantity *TWindowQuantity_ctor_8c1ca088(TWindowQuantity *o)
 {
-    Object **home = &o;
+    TWindowQuantity **home = &o;
     char *v1;
     float v4;
     char *v6;

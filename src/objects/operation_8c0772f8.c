@@ -1,24 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemEffectWeapon.h"
 typedef struct S_g8c469a44 S_g8c469a44;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    short f04;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-    int f28;
-    int f2c;
-};
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TItemEffectWeapon_ctor_8c0772f8(Object *o, int a1, int a2)
+TItemEffectWeapon *TItemEffectWeapon_ctor_8c0772f8(TItemEffectWeapon *o, int a1, int a2)
 {
     int v1;
     char *v2;

@@ -1,30 +1,18 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubMagPhoton.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x2c];
-    int f64;
-    char f68;
-};
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
 };
 extern char g_8c41cba0[];
-extern void call_8c2306c4(Object *);
+extern void call_8c2306c4(TWindowSubMagPhoton *);
 extern int operation_8c01d8a8(void *, int);
 extern void operation_8c2307ac(void *);
 extern void operation_8c2307dc(void *);
 extern void operation_8c2308b0(void *);
-extern void call_8c0db30c(Object *);
+extern void call_8c0db30c(TWindowSubMagPhoton *);
 extern void update_view_nodes(void *, void *);
-void TWindowSubMagPhoton_update_8c2305dc(Object *o)
+void TWindowSubMagPhoton_update_8c2305dc(TWindowSubMagPhoton *o)
 {
     int t1;
     int t2;

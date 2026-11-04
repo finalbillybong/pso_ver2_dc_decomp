@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x238];
-    float f238;
-};
-void TItemWpnBigHarisen_v49_8c23a38c(Object *o)
+#include "src/include/classes/TItemWpnBigHarisen.h"
+void TItemWpnBigHarisen_v49_8c23a38c(TItemWpnBigHarisen *o)
 {
-    o->f238 = 0.1f;
+    o->second = 0.1f;
 }

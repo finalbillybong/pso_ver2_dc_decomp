@@ -1,34 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x48];
-    char f68;
-    char unknown69[0x3];
-    int f6c;
-    int f70;
-    int f74;
-    int f78;
-    char unknown7c[0x28];
-    int fa4;
-    int fa8;
-    Vector3 fac;
-};
+#include "src/include/classes/TWindowHelpItem.h"
 extern void initialize_base_8c0db1d0(void *, int);
 extern int game_malloc_8c011ecc(int);
 extern void operation_192b14(void *, signed char, signed char);
-extern void call_8c1d5f4c(Object *);
-Object *TWindowHelpItem_ctor_8c1d5b24(Object *o)
+extern void call_8c1d5f4c(TWindowHelpItem *);
+TWindowHelpItem *TWindowHelpItem_ctor_8c1d5b24(TWindowHelpItem *o)
 {
-    Object **home = &o;
+    TWindowHelpItem **home = &o;
     int t1;
     (void)home;
     initialize_base_8c0db1d0((void *)o, (int)((void *)0x8c32a040));

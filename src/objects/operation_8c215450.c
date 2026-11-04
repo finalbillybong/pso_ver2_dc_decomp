@@ -1,24 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x44];
-    int f64;
-    char unknown68[0x4];
-    float f6c;
-    float f70;
-    float f74;
-};
+#include "src/include/classes/TWindowDD_WS_ScrollBar.h"
 extern void initialize_base_8c0db1d0(void *, int);
-Object *TWindowDD_WS_ScrollBar_ctor_8c215450(Object *o)
+TWindowDD_WS_ScrollBar *TWindowDD_WS_ScrollBar_ctor_8c215450(TWindowDD_WS_ScrollBar *o)
 {
     initialize_base_8c0db1d0((void *)o, (int)((void *)0x8c335fa0));
     o->dispatch = (void *)0x8c278258;

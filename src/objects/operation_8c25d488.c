@@ -1,30 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemReverseTechPart2.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_154 Arg0_154;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0xe];
-    int f14;
-    char unknown18[0x14];
-    int f2c;
-    char unknown30[0xac];
-    int fdc;
-    char unknowne0[0x28];
-    int f108;
-    char unknown10c[0x48];
-    Arg0_154 *f154;
-    int f158;
-};
+typedef struct TItemReverseTechPart2_p154 TItemReverseTechPart2_p154;
 extern int call_8c18e8a0(void *, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void call_8c25d634(int, Object *, void *);
-void TItemReverseTechPart2_update_8c25d488(Object *o)
+extern void call_8c25d634(int, TItemReverseTechPart2 *, void *);
+void TItemReverseTechPart2_update_8c25d488(TItemReverseTechPart2 *o)
 {
     int t1;
     int t2;
@@ -98,5 +78,5 @@ void TItemReverseTechPart2_update_8c25d488(Object *o)
         }
     }
 L_8c25d5e6:;
-    o->f154 = (Arg0_154 *)((int)o->f154 + 1);
+    o->f154 = (TItemReverseTechPart2_p154 *)((int)o->f154 + 1);
 }

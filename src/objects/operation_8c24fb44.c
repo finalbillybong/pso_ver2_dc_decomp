@@ -1,19 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x234];
-    int f234;
-    char unknown238[0x4];
-    float f23c;
-    char unknown240[0x1c];
-    int f25c;
-    int f260;
-};
-void TItemWpnYasuMachineGun_v53_8c24fb44(Object *o)
+#include "src/include/classes/TItemWpnYasuMachineGun.h"
+void TItemWpnYasuMachineGun_v53_8c24fb44(TItemWpnYasuMachineGun *o)
 {
     if (o->f234 != 1) {
         if (o->f234 == 2) {

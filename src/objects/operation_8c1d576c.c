@@ -1,24 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubAreaMap.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-};
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TWindowSubAreaMapDisp_ctor_8c1d7940(int);
-Object *TWindowSubAreaMap_ctor_8c1d576c(Object *o, int a1)
+TWindowSubAreaMap *TWindowSubAreaMap_ctor_8c1d576c(TWindowSubAreaMap *o, int a1)
 {
-    Object **home = &o;
+    TWindowSubAreaMap **home = &o;
     int t1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
@@ -29,6 +16,6 @@ Object *TWindowSubAreaMap_ctor_8c1d576c(Object *o, int a1)
     if (t1 != 0) {
         TWindowSubAreaMapDisp_ctor_8c1d7940(t1);
     }
-    o->f20 = (int)(t1);
+    o->resource = (int)(t1);
     return o;
 }

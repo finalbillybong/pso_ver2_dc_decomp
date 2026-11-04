@@ -1,19 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x238];
-    float f238;
-};
-void TItemWpnHarisen_v53_8c23ddd8(Object *o)
+#include "src/include/classes/TItemWpnHarisen.h"
+void TItemWpnHarisen_v53_8c23ddd8(TItemWpnHarisen *o)
 {
-    if (1.0f > o->f238) {
-        o->f238 += 0.1f;
-        if (!(1.0f > o->f238)) {
-            o->f238 = 1.0f;
+    if (1.0f > o->second) {
+        o->second += 0.1f;
+        if (!(1.0f > o->second)) {
+            o->second = 1.0f;
         }
     }
 }

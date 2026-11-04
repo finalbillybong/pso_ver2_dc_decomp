@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x238];
-    int f238;
-};
-void TItemWpnBlueCane_v50_8c23a930(Object *o)
+#include "src/include/classes/TItemWpnBlueCane.h"
+void TItemWpnBlueCane_v50_8c23a930(TItemWpnBlueCane *o)
 {
     if (o->f238 != 1 && o->f238 != 0) {
         return;

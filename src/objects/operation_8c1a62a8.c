@@ -1,26 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TWindowChatSymbol.h"
 typedef struct Arg1 Arg1;
 typedef struct Arg2 Arg2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x18];
-    float f38;
-    float f3c;
-    float f40;
-    float f44;
-    char unknown48[0x20];
-    int f68;
-    int f6c;
-};
 struct Arg1 {
     float f00;
     float f04;
@@ -30,10 +10,10 @@ struct Arg2 {
     float f04;
 };
 extern void initialize_base_8c0db1d0(void *, int);
-extern void call_8c0dc854(Object *);
-Object *TWindowChatSymbol_ctor_8c1a62a8(Object *o, Arg1 *a1, Arg2 *a2)
+extern void call_8c0dc854(TWindowChatSymbol *);
+TWindowChatSymbol *TWindowChatSymbol_ctor_8c1a62a8(TWindowChatSymbol *o, Arg1 *a1, Arg2 *a2)
 {
-    Object **home = &o;
+    TWindowChatSymbol **home = &o;
     (void)home;
     initialize_base_8c0db1d0((void *)o, (int)(void *)0x8c31e68c);
     o->dispatch = (void *)0x8c2745b8;

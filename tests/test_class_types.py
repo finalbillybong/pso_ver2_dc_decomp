@@ -153,6 +153,22 @@ class SizeTests(unittest.TestCase):
         self.assertFalse(ct.compatible(a, lay, {})[0])
 
 
+class FunctionPointerTests(unittest.TestCase):
+    def test_function_pointer_field_round_trips(self):
+        classes = {'TFoo': dict(name='TFoo', parent=None, size=0x110, slots=3)}
+        text = C_UNIT.replace('    int f108;', '    void (*callback)(void *);')
+        a, _ = evidence(text, 'TFoo_v17_8c000000', 'TFoo', uid='a')
+        header = ct.emit_header(classes, ct.resolve(classes, [a], 'TFoo'))
+        self.assertIn('void (*callback)(void*);', header)
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / ct.HEADER_DIR).mkdir(parents=True)
+            (root / ct.HEADER_DIR / 'TFoo.h').write_text(header)
+            agg = ct.parse_unit('#include "%s/TFoo.h"\n' % ct.HEADER_DIR, '', root)['by_name']['TFoo']
+        self.assertIsNone(agg.error)
+        self.assertEqual({m['name']: m['offset'] for m in agg.members}['callback'], 0x108)
+
+
 class RenameTests(unittest.TestCase):
     classes = MergeTests.classes
 

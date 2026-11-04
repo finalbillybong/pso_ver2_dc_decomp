@@ -1,23 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemWpnChainSaw.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-};
+typedef struct TItemWpnChainSaw_p13c TItemWpnChainSaw_p13c;
 struct Frame {
     char unknown0[0x4];
     float f04;
     char unknown8[0x4];
 };
-extern void call_8c075894(Object *, void *, int, Frame *);
+extern void call_8c075894(TItemWpnChainSaw *, void *, int, Frame *);
 extern void create_effect_777c(void *, int);
-void TItemWpnChainSaw_v49_8c17be70(Object *o)
+void TItemWpnChainSaw_v49_8c17be70(TItemWpnChainSaw *o)
 {
     Frame frame;
     call_8c075894(o, (void *)(o->f13c), 2, (Frame *)((&frame)));

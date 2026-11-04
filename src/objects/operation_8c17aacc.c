@@ -1,27 +1,16 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
+#include "src/include/classes/TItemWpnPsychowand.h"
+typedef struct TItemWpnPsychowand_p13c TItemWpnPsychowand_p13c;
 typedef struct S_vv21 S_vv21;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-    char unknown140[0xf4];
-    short f234;
-};
 struct S_vv21 {
     char unknown0[0x332];
     short f332;
 };
-struct Arg0_13c {
+struct TItemWpnPsychowand_p13c {
     char unknown0[0x332];
     short f332;
 };
 extern void operation_8c04a8ac(void *, int);
-void TItemWpnPsychowand_v53_8c17aacc(Object *o)
+void TItemWpnPsychowand_v53_8c17aacc(TItemWpnPsychowand *o)
 {
     S_vv21 *v21;
     short v22;

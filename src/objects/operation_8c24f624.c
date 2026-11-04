@@ -1,17 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x234];
-    int f234;
-    float f238;
-    float f23c;
-    float f240;
-};
-void TItemWpnYasumuraShiki2_v50_8c24f624(Object *o)
+#include "src/include/classes/TItemWpnYasumuraShiki2.h"
+void TItemWpnYasumuraShiki2_v50_8c24f624(TItemWpnYasumuraShiki2 *o)
 {
     int v1;
     if (o->f234 == 0) {

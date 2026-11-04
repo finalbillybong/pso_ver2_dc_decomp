@@ -1,19 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_24 Arg0_24;
-struct Object {
-    char unknown0[0x22];
-    unsigned short f22;
-    Arg0_24 *f24;
-};
-extern void call_8c1dcdf0(Object *);
+#include "src/include/classes/TWindowChat.h"
+typedef struct TWindowChat_p24 TWindowChat_p24;
+extern void call_8c1dcdf0(TWindowChat *);
 extern void operation_8c1dcf9c(void *);
 extern int operation_8c1e2330(void *);
-void TWindowChat_update_8c1dcc40(Object *o)
+void TWindowChat_update_8c1dcc40(TWindowChat *o)
 {
     unsigned short v1;
     int t1;

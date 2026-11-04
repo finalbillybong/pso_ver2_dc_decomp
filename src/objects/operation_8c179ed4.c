@@ -1,20 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x138];
-    unsigned char f138;
-    char unknown139[0x3];
-    Arg0_13c *f13c;
-    char unknown140[0x2];
-    short f142;
-};
-extern void call_8c075730(Object *, void *, int);
-void TItemWpnHand_v52_8c179ed4(Object *o)
+#include "src/include/classes/TItemWpnHand.h"
+typedef struct TItemWpnHand_p13c TItemWpnHand_p13c;
+extern void call_8c075730(TItemWpnHand *, void *, int);
+void TItemWpnHand_v52_8c179ed4(TItemWpnHand *o)
 {
     if (o->f138 == 3) {
         *(int *)0x8c4db980 = 0;

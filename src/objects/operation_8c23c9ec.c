@@ -1,18 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_1d4 Arg0_1d4;
+#include "src/include/classes/TItemWpnFast.h"
+typedef struct TItemWpnFast_p1d4 TItemWpnFast_p1d4;
 typedef struct S_vv1 S_vv1;
-struct Object {
-    char unknown0[0x1d4];
-    Arg0_1d4 *f1d4;
-    char unknown1d8[0xa8];
-    int f280;
-};
-struct Arg0_1d4 {
+struct TItemWpnFast_p1d4 {
     char unknown0[0x2c];
     int f2c;
 };
@@ -23,8 +12,8 @@ struct S_vv1 {
     float f24;
     float f28;
 };
-extern void call_8c3aa716(Arg0_1d4 *);
-void TItemWpnFast_v57_8c23c9ec(Object *o)
+extern void call_8c3aa716(TItemWpnFast_p1d4 *);
+void TItemWpnFast_v57_8c23c9ec(TItemWpnFast *o)
 {
     char *v86;
     S_vv1 *v1;
@@ -36,7 +25,7 @@ void TItemWpnFast_v57_8c23c9ec(Object *o)
             v1->f24 = 0.1f;
             v1->f28 = 0.1f;
             v1->f00 &= -5;
-            call_8c3aa716((Arg0_1d4 *)(o->f1d4));
+            call_8c3aa716((TItemWpnFast_p1d4 *)(o->f1d4));
             v1->f00 |= 4;
             v1->f20 = 1.0f;
             v1->f24 = 1.0f;

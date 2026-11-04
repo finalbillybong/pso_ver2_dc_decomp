@@ -1,19 +1,15 @@
+#include "src/include/classes/TItemWpnMaserBeam.h"
 typedef struct Vector3 {
     float x;
     float y;
     float z;
 } Vector3;
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
+typedef struct TItemWpnMaserBeam_p13c TItemWpnMaserBeam_p13c;
 typedef struct S_vv10 S_vv10;
 typedef struct S_vv10_s4 S_vv10_s4;
 typedef struct S_vv2 S_vv2;
 typedef struct S_vv9 S_vv9;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-};
 struct Frame {
     int f00;
     char unknown4[0x58];
@@ -39,7 +35,7 @@ extern int operation_8c075894(void *, void *, int, int);
 extern void call_8c18e044(void *, void *, int, int, int);
 extern void TTecGiZonde_create_8c0b29c8(void *, void *, void *, void *);
 extern void operation_8c07de9c();
-void TItemWpnMaserBeam_v49_8c24fe20(Object *o)
+void TItemWpnMaserBeam_v49_8c24fe20(TItemWpnMaserBeam *o)
 {
     Frame frame;
     int v1;

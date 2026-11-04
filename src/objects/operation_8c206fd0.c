@@ -1,22 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubComCardList.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_9c Arg0_9c;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x80];
-    Arg0_9c *f9c;
-};
+typedef struct TWindowSubComCardList_p9c TWindowSubComCardList_p9c;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_192b28(void *, short);
-extern void TWindowMenu_dtor_8c1567bc(Object *, int);
-extern void call_8c122774(void *, Object *);
-Object *TWindowSubComCardList_dtor_8c206fd0(Object *o, int a1)
+extern void TWindowMenu_dtor_8c1567bc(TWindowSubComCardList *, int);
+extern void call_8c122774(void *, TWindowSubComCardList *);
+TWindowSubComCardList *TWindowSubComCardList_dtor_8c206fd0(TWindowSubComCardList *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c278090;

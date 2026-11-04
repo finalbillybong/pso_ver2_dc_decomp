@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x234];
-    int f234;
-};
-void TItemWpnStarCane_v53_8c24027c(Object *o)
+#include "src/include/classes/TItemWpnStarCane.h"
+void TItemWpnStarCane_v53_8c24027c(TItemWpnStarCane *o)
 {
     o->f234 += 0xccc;
 }

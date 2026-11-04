@@ -1,23 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    short f04;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    short f20;
-    short f22;
-    int f24;
-    int f28;
-};
+#include "src/include/classes/TItemEffFreezeBeam.h"
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TItemEffFreezeBeam_ctor_8c23d89c(Object *o, int a1, int a2, int a3, int a4, unsigned short a5)
+TItemEffFreezeBeam *TItemEffFreezeBeam_ctor_8c23d89c(TItemEffFreezeBeam *o, int a1, int a2, int a3, int a4, unsigned short a5)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27aaa8;

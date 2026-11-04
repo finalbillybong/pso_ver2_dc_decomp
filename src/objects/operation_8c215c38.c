@@ -1,33 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x44];
-    int f64;
-    int f68;
-    int f6c;
-    char unknown70[0x8];
-    int f78;
-    char unknown7c[0x4];
-    int f80;
-    char unknown84[0x8];
-    float f8c;
-    float f90;
-};
+#include "src/include/classes/TWindowDD_WS_Word.h"
 extern void initialize_base_8c0db1d0(void *, int);
 extern void set_fields_8c215ed4(void *);
-extern void call_8c215de0(Object *);
-Object *TWindowDD_WS_Word_ctor_8c215c38(Object *o, int a1, int a2)
+extern void call_8c215de0(TWindowDD_WS_Word *);
+TWindowDD_WS_Word *TWindowDD_WS_Word_ctor_8c215c38(TWindowDD_WS_Word *o, int a1, int a2)
 {
-    Object **home = &o;
+    TWindowDD_WS_Word **home = &o;
     (void)home;
     initialize_base_8c0db1d0((void *)o, (int)((void *)0x8c336064));
     o->dispatch = (void *)0x8c278298;

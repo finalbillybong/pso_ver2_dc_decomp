@@ -1,39 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg1 Arg1;
-struct Object {
-    int tag;
-    short f04;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    Arg1 *f24;
-    int f28;
-    int f2c;
-    int f30;
-    char unknown34[0x34];
-    int f68;
-    char unknown6c[0x14];
-    float f80;
-    float f84;
-    char unknown88[0x44];
-    float fcc;
-};
-struct Arg1 {
+#include "src/include/classes/TItemMagSub.h"
+typedef struct TItemMagSub_p24 TItemMagSub_p24;
+struct TItemMagSub_p24 {
     char unknown0[0x830];
     float f830;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern void call_8c1f1e1c(Object *);
-Object *TItemMagSub_ctor_8c1f1d38(Object *o, Arg1 *a1, int a2)
+extern void call_8c1f1e1c(TItemMagSub *);
+TItemMagSub *TItemMagSub_ctor_8c1f1d38(TItemMagSub *o, TItemMagSub_p24 *a1, int a2)
 {
-    Object **home = &o;
+    TItemMagSub **home = &o;
     int v1;
     float v2;
     int v3;

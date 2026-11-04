@@ -1,20 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x1dc];
-    int f1fc;
-};
+#include "src/include/classes/TItemWpnMaserBeam.h"
 extern void call_8c075398(void);
-Object *TItemWpnMaserBeam_ctor_8c24fd98(Object *o)
+TItemWpnMaserBeam *TItemWpnMaserBeam_ctor_8c24fd98(TItemWpnMaserBeam *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c27e8c0;

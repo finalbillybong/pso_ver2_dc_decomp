@@ -1,18 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemWpnFireWand.h"
 typedef struct S_g8c44be9c S_g8c44be9c;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x38];
-    int f38;
-    char unknown3c[0x1f8];
-    int f234;
-};
 extern void TItemEffFireWand_create_8c23cf18(int, int, int, int);
-void TItemWpnFireWand_v53_8c23cda8(Object *o)
+void TItemWpnFireWand_v53_8c23cda8(TItemWpnFireWand *o)
 {
     int v1;
     v1 = (int)*(int *)0x8c44be04;

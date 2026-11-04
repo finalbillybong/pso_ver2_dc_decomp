@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowCtrlMain.h"
 typedef struct S_g8c44bea4 S_g8c44bea4;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
 extern int g_8c328420;
 extern S_g8c44bea4 *g_8c44bea4;
 extern S_g8c4d97e0 *g_8c4d97e0;
@@ -20,9 +8,9 @@ extern int g_8c4e2bbc;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TWindowCtrlMainKiller_ctor_8c1bee70(int, void *);
-Object *TWindowCtrlMain_ctor_8c1bec9c(Object *o, int a1)
+TWindowCtrlMain *TWindowCtrlMain_ctor_8c1bec9c(TWindowCtrlMain *o, int a1)
 {
-    Object **home = &o;
+    TWindowCtrlMain **home = &o;
     int t1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);

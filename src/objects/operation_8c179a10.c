@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x234];
-    int f234;
-};
+#include "src/include/classes/TItemWpnCSorcer.h"
 extern void operation_8c074ce4(void);
 extern void scale_current_matrix_v_8c37e390(int);
-void TItemWpnCSorcer_v57_8c179a10(Object *o)
+void TItemWpnCSorcer_v57_8c179a10(TItemWpnCSorcer *o)
 {
     if (*(int *)0x8c4689f0 != 1) {
         if (*(int *)0x8c4689f0 == 4) {

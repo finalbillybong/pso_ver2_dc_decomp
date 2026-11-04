@@ -1,24 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemEffectWeapon.h"
 typedef struct S_g8c469a48 S_g8c469a48;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x4];
-    int f20;
-};
 extern int g_8c469a44;
 extern S_g8c469a48 *g_8c469a48;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int call_8c18e768(int, int);
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TItemEffectWeapon_dtor_8c077370(Object *o, int a1)
+extern void call_8c122774(void *, TItemEffectWeapon *);
+TItemEffectWeapon *TItemEffectWeapon_dtor_8c077370(TItemEffectWeapon *o, int a1)
 {
     char *v14;
     int t1;

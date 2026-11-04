@@ -1,17 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x234];
-    float f234;
-    float f238;
-    float f23c;
-    int f240;
-};
-void TItemWpnTessen_v50_8c240744(Object *o)
+#include "src/include/classes/TItemWpnTessen.h"
+void TItemWpnTessen_v50_8c240744(TItemWpnTessen *o)
 {
     o->f240 = 0x2aaa;
     o->f23c = 10.0f;

@@ -1,37 +1,23 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_88 Arg0_88;
-typedef struct Arg0_8c Arg0_8c;
-struct Object {
-    char unknown0[0x64];
-    int f64;
-    char unknown68[0x18];
-    unsigned short f80;
-    char unknown82[0x6];
-    Arg0_88 *f88;
-    Arg0_8c *f8c;
-};
+#include "src/include/classes/TWindowChoiceSetting.h"
+typedef struct TWindowChoiceSetting_p88 TWindowChoiceSetting_p88;
+typedef struct TWindowChoiceSetting_p8c TWindowChoiceSetting_p8c;
 extern char g_8c41cba0[];
 extern int operation_8c01d844(int, int, int, int);
-extern void call_8c1dc2b8(Object *);
-extern void call_8c1dc324(Object *);
+extern void call_8c1dc2b8(TWindowChoiceSetting *);
+extern void call_8c1dc324(TWindowChoiceSetting *);
 extern int operation_8c01d858(int, int, int, int);
 extern int operation_8c01d8a8(void *, int);
 extern void operation_8c1dc390(void *);
 extern void operation_8c1dc3f4(void *);
 extern void call_8c199b74(void *);
 extern void operation_8c199bc4(void *);
-extern void call_8c0db30c(Object *);
-extern void call_8c25506c(Object *);
+extern void call_8c0db30c(TWindowChoiceSetting *);
+extern void call_8c25506c(TWindowChoiceSetting *);
 extern void update_grid_view_parameters(void *);
-extern void call_8c1dc208(Object *);
+extern void call_8c1dc208(TWindowChoiceSetting *);
 extern void position_menu_label_8c1dc1a0(void *);
 extern void update_view_nodes(void *, void *);
-void TWindowChoiceSetting_update_8c254d24(Object *o)
+void TWindowChoiceSetting_update_8c254d24(TWindowChoiceSetting *o)
 {
     int t1;
     int t2;

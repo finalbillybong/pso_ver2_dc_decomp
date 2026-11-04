@@ -1,22 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemWpnBag.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-};
+typedef struct TItemWpnBag_p13c TItemWpnBag_p13c;
 struct Frame {
     char unknown0[0xc];
 };
 extern int call_8c1aaabc(int);
-extern void call_8c075894(Object *, void *, int, Frame *);
+extern void call_8c075894(TItemWpnBag *, void *, int, Frame *);
 extern void create_effect_777c(void *, int);
-void TItemWpnBag_v49_8c241108(Object *o)
+void TItemWpnBag_v49_8c241108(TItemWpnBag *o)
 {
     Frame frame;
     int t1;

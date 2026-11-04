@@ -1,22 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    short f04;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-    int f28;
-};
+#include "src/include/classes/TItemTimer.h"
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TItemTimer_ctor_8c1ab01c(Object *o, int a1, int a2, int a3)
+TItemTimer *TItemTimer_ctor_8c1ab01c(TItemTimer *o, int a1, int a2, int a3)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c274790;

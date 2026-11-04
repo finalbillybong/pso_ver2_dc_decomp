@@ -1,22 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowShortListCtrl.h"
 typedef struct S_g8c418248 S_g8c418248;
 typedef struct S_g8c46fe20 S_g8c46fe20;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 typedef struct S_g8c4dbde0 S_g8c4dbde0;
-typedef struct Object Object;
-typedef struct Arg0_2c Arg0_2c;
-typedef struct Arg0_30 Arg0_30;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x10];
-    Arg0_2c *f2c;
-    Arg0_30 *f30;
-};
+typedef struct TWindowShortListCtrl_p2c TWindowShortListCtrl_p2c;
+typedef struct TWindowShortListCtrl_p30 TWindowShortListCtrl_p30;
 struct S_g8c4dbde0 {
     char unknown0[0x20];
     int f20;
@@ -33,8 +21,8 @@ extern int lookup_low_id(int);
 extern void operation_8c0264ac(void);
 extern void request_resource_release(void *);
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TWindowShortListCtrl_dtor_8c234e04(Object *o, int a1)
+extern void call_8c122774(void *, TWindowShortListCtrl *);
+TWindowShortListCtrl *TWindowShortListCtrl_dtor_8c234e04(TWindowShortListCtrl *o, int a1)
 {
     int v1;
     int t1;
@@ -59,11 +47,11 @@ Object *TWindowShortListCtrl_dtor_8c234e04(Object *o, int a1)
         }
         if (o->f30 != 0) {
             request_resource_release((void *)(o->f30));
-            o->f30 = (Arg0_30 *)0;
+            o->f30 = (TWindowShortListCtrl_p30 *)0;
         }
         if (o->f2c != 0) {
             request_resource_release((void *)(o->f2c));
-            o->f2c = (Arg0_2c *)0;
+            o->f2c = (TWindowShortListCtrl_p2c *)0;
         }
         TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {

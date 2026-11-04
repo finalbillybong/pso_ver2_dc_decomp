@@ -1,29 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x1c0];
-    char f1e0;
-    char f1e1;
-    char unknown1e2[0x1a];
-    int f1fc;
-    char unknown200[0x20];
-    float f220;
-    short f224;
-    char unknown226[0x6];
-    void *f22c;
-};
-extern void call_8c075398(Object *, int, int);
+#include "src/include/classes/TItemWpnBasyoSen2.h"
+extern void call_8c075398(TItemWpnBasyoSen2 *, int, int);
 extern void TItemShootBasyoSen2_create_8c248e3c();
-Object *TItemWpnBasyoSen2_ctor_8c248d14(Object *o, int a1, int a2)
+TItemWpnBasyoSen2 *TItemWpnBasyoSen2_ctor_8c248d14(TItemWpnBasyoSen2 *o, int a1, int a2)
 {
     call_8c075398(o, a1, a2);
     o->dispatch = (void *)0x8c27d074;

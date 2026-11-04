@@ -1,26 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemMag.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-    char unknown140[0xa4];
-    short f1e4;
-    short f1e6;
-    short f1e8;
-    short f1ea;
-    short f1ec;
-    short f1ee;
-    unsigned char f1f0;
-    unsigned char f1f1;
-    unsigned char f1f2;
-};
-struct Arg0_13c {
+typedef struct TItemMag_p13c TItemMag_p13c;
+struct TItemMag_p13c {
     char unknown0[0x350];
     int f350;
 };
@@ -39,7 +20,7 @@ struct Frame {
 extern int operation_8c073e5c(void *, void *);
 extern void call_8c207738(Frame *, int);
 extern void call_8c1c8d90(int, Frame *);
-int TItemMag_v31_8c07d3f8(Object *o, int a1)
+int TItemMag_v31_8c07d3f8(TItemMag *o, int a1)
 {
     Frame frame;
     int v1;

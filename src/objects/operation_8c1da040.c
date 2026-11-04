@@ -1,20 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubLog.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
 typedef struct S_g8c4dbde0 S_g8c4dbde0;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_24 Arg0_24;
+typedef struct TWindowSubLog_p20 TWindowSubLog_p20;
+typedef struct TWindowSubLog_p24 TWindowSubLog_p24;
 typedef struct S_vv46 S_vv46;
-struct Object {
-    char unknown0[0x20];
-    Arg0_20 *f20;
-    Arg0_24 *f24;
-};
-struct Arg0_24 {
+struct TWindowSubLog_p24 {
     char unknown0[0x22];
     unsigned short f22;
 };
@@ -26,7 +16,7 @@ struct S_L8c41cba0 {
     char unknown0[0x20];
     int f20;
 };
-struct Arg0_20 {
+struct TWindowSubLog_p20 {
     char unknown0[0x44];
     float f44;
     char unknown48[0xc];
@@ -40,13 +30,13 @@ extern char g_8c41cba0[];
 extern int process_effect_record(void *);
 extern int operation_8c1dccb4(void *);
 extern int operation_8c1dd614(void *);
-extern void call_8c225abc(Arg0_20 *, float);
+extern void call_8c225abc(TWindowSubLog_p20 *, float);
 extern int operation_8c01d88c(void *, int);
 extern void set_fields_8c225afc(void *);
 extern void set_fields_8c225b14(void *);
 extern int operation_8c01d8a8(void *, int);
 extern void call_8c18c808(S_g8c4dbde0 *);
-void TWindowSubLog_update_8c1da040(Object *o)
+void TWindowSubLog_update_8c1da040(TWindowSubLog *o)
 {
     S_vv46 *v46;
     int v8;
@@ -76,10 +66,10 @@ void TWindowSubLog_update_8c1da040(Object *o)
     }
     t3 = operation_8c1dd614((void *)(o->f24));
     if (t3 != 0) {
-        call_8c225abc((Arg0_20 *)(o->f20), 200.0f);
+        call_8c225abc((TWindowSubLog_p20 *)(o->f20), 200.0f);
         return;
     }
-    call_8c225abc((Arg0_20 *)(o->f20), 408.0f);
+    call_8c225abc((TWindowSubLog_p20 *)(o->f20), 408.0f);
     if (((*(int *)(g_8c41cba0 + 0x20) & 0x10)) == 0) {
         t4 = operation_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x10);
         if (t4 == 0) {

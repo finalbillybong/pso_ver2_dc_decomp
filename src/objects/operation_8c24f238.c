@@ -1,15 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x234];
-    int f234;
-    int f238;
-};
-void TItemWpnNaganoClaw_v55_8c24f238(Object *o)
+#include "src/include/classes/TItemWpnNaganoClaw.h"
+void TItemWpnNaganoClaw_v55_8c24f238(TItemWpnNaganoClaw *o)
 {
     o->f234 = 0;
     o->f238 = 0;

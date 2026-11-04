@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
+#include "src/include/classes/TItemWpnUnknownWand.h"
 extern void call_8c075398(void);
-Object *TItemWpnUnknownWand_ctor_8c253e38(Object *o)
+TItemWpnUnknownWand *TItemWpnUnknownWand_ctor_8c253e38(TItemWpnUnknownWand *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c280298;

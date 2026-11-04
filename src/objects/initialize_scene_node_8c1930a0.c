@@ -1,19 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    short f04;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
-extern void TObject_ctor_8c0330e4(Object *, int);
-Object *TItemLoad_ctor_8c1930a0(Object *o, int a1)
+#include "src/include/classes/TItemLoad.h"
+extern void TObject_ctor_8c0330e4(TItemLoad *, int);
+TItemLoad *TItemLoad_ctor_8c1930a0(TItemLoad *o, int a1)
 {
     TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c27282c;

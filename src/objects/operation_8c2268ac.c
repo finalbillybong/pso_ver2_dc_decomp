@@ -1,41 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSetLevelUp.h"
 typedef struct SBlock26 {
     short halves[13];
 } SBlock26;
-typedef struct Object Object;
 typedef struct Arg2 Arg2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char f20;
-    char unknown21[0x1];
-    short f22;
-    short f24;
-    short f26;
-    short f28;
-    short f2a;
-    short f2c;
-    short f2e;
-    short f30;
-    short f32;
-    short f34;
-    short f36;
-    short f38;
-    short f3a;
-    short f3c;
-};
 struct Arg2 {
     char f00;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TWindowSetLevelUp_ctor_8c2268ac(Object *o, int a1, Arg2 *a2)
+TWindowSetLevelUp *TWindowSetLevelUp_ctor_8c2268ac(TWindowSetLevelUp *o, int a1, Arg2 *a2)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c278b68;

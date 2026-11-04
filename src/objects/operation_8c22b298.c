@@ -1,30 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TWindowEff.h"
 typedef struct Arg1 Arg1;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    float f20;
-    Vector3 f24;
-    char unknown30[0x4];
-    float f34;
-    float f38;
-    float f3c;
-    float f40;
-    int f44;
-};
 struct Arg1 {
     Vector3 f00;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TWindowEff_ctor_8c22b298(Object *o, Arg1 *a1, int a2, int a3)
+TWindowEff *TWindowEff_ctor_8c22b298(TWindowEff *o, Arg1 *a1, int a2, int a3)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a3);
     o->dispatch = (void *)0x8c278db4;

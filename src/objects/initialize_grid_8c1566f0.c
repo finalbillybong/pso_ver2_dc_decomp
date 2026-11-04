@@ -1,28 +1,11 @@
-typedef struct Cell { int first; int second; } Cell;
-typedef struct Grid {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[2];
-    short size;
-    char unknown20[0x60];
-    short cursor;
-    short top;
-    short left;
-    short count;
-    short selected;
-    short last;
-    char unknown8c[4];
-    Cell *cells;
-    int scroll;
-    int offset;
-} Grid;
-extern void initialize_grid_view(Grid *, void *);
-extern Cell *operator_new_8c18de4c(int);
-Grid *TWindowMenu_ctor_8c1566f0(Grid *o, unsigned int count)
+#include "src/include/classes/TWindowMenu.h"
+typedef struct TWindowMenu_p90 { int first; int second; } TWindowMenu_p90;
+extern void initialize_grid_view(TWindowMenu *, void *);
+extern TWindowMenu_p90 *operator_new_8c18de4c(int);
+TWindowMenu *TWindowMenu_ctor_8c1566f0(TWindowMenu *o, unsigned int count)
 {
-    Grid **self = &o;
-    Cell *cell;
+    TWindowMenu **self = &o;
+    TWindowMenu_p90 *cell;
     unsigned int i;
     (void)self;
     initialize_grid_view(o, (void *)0x8c3161c0);

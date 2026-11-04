@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubCustomEquip.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
-typedef struct Arg0_70 Arg0_70;
-struct Object {
-    char unknown0[0x64];
-    int f64;
-    char f68;
-    char unknown69[0x7];
-    Arg0_70 *f70;
-};
+typedef struct TWindowSubCustomEquip_p70 TWindowSubCustomEquip_p70;
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
@@ -24,12 +12,12 @@ extern void operation_8c197804(void *);
 extern void operation_8c197844(void *);
 extern void operation_8c197884(void *);
 extern void operation_8c197ab8(int);
-extern void call_8c1979e8(Object *);
-extern void call_8c197c58(Object *);
+extern void call_8c1979e8(TWindowSubCustomEquip *);
+extern void call_8c197c58(TWindowSubCustomEquip *);
 extern void call_8c199b74(void *);
-extern void call_8c0db30c(Object *);
+extern void call_8c0db30c(TWindowSubCustomEquip *);
 extern void update_view_nodes(void *, void *);
-void TWindowSubCustomEquip_update_8c197514(Object *o)
+void TWindowSubCustomEquip_update_8c197514(TWindowSubCustomEquip *o)
 {
     int t1;
     int t2;
@@ -57,7 +45,7 @@ L_8c19756a:;
     call_8c1979e8(o);
     call_8c197c58(o);
     if (!(7.5f > (float)o->f64)) {
-        call_8c199b74((void *)(o->f70));
+        call_8c199b74((void *)(o->child));
     }
     call_8c0db30c(o);
     update_view_nodes((void *)o, (void *)(((char *)o + 0x2c)));

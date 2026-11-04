@@ -1,22 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowCtrlMainKiller.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-Object *TWindowCtrlMainKiller_ctor_8c1bee70(Object *o, int a1)
+TWindowCtrlMainKiller *TWindowCtrlMainKiller_ctor_8c1bee70(TWindowCtrlMainKiller *o, int a1)
 {
-    Object **home = &o;
+    TWindowCtrlMainKiller **home = &o;
     int t1;
     int t2;
     (void)home;

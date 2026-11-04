@@ -1,20 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemDisconnectCtrl.h"
 typedef struct S_g8c44be9c S_g8c44be9c;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    short f04;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TItemDisconnectCtrl_ctor_8c25f8a0(Object *o)
+TItemDisconnectCtrl *TItemDisconnectCtrl_ctor_8c25f8a0(TItemDisconnectCtrl *o)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)(*(S_g8c44be9c **)0x8c44be9c));
     o->dispatch = (void *)0x8c281dc4;

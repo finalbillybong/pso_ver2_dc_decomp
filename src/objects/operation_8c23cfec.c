@@ -1,25 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemEffFireWand.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_28 Arg0_28;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0xc];
-    Arg0_28 *f28;
-};
-struct Arg0_28 {
+typedef struct TItemEffFireWand_p28 TItemEffFireWand_p28;
+struct TItemEffFireWand_p28 {
     char unknown0[0x4];
     short f04;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TItemEffFireWand_dtor_8c23cfec(Object *o, int a1)
+extern void call_8c122774(void *, TItemEffFireWand *);
+TItemEffFireWand *TItemEffFireWand_dtor_8c23cfec(TItemEffFireWand *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c27a790;

@@ -1,29 +1,16 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
+#include "src/include/classes/TItemWpnCSorcer.h"
+typedef struct TItemWpnCSorcer_p13c TItemWpnCSorcer_p13c;
 typedef struct S_vv30 S_vv30;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-    char unknown140[0xf4];
-    int f234;
-    short f238;
-    short f23a;
-};
 struct S_vv30 {
     char unknown0[0x332];
     short f332;
 };
-struct Arg0_13c {
+struct TItemWpnCSorcer_p13c {
     char unknown0[0x332];
     short f332;
 };
 extern void operation_8c04a8ac(void *, int);
-void TItemWpnCSorcer_v53_8c179964(Object *o)
+void TItemWpnCSorcer_v53_8c179964(TItemWpnCSorcer *o)
 {
     S_vv30 *v30;
     short v31;

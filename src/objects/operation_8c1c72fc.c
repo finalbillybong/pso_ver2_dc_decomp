@@ -1,27 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    short f04;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    short f24;
-    char unknown26[0x2];
-    int f28;
-    int f2c;
-    int f30;
-    char unknown34[0x18];
-    int f4c;
-};
-extern void TObject_ctor_8c0330e4(Object *, int);
-Object *TItemEffShield_ctor_8c1c72fc(Object *o, int a1, int a2, int a3)
+#include "src/include/classes/TItemEffShield.h"
+extern void TObject_ctor_8c0330e4(TItemEffShield *, int);
+TItemEffShield *TItemEffShield_ctor_8c1c72fc(TItemEffShield *o, int a1, int a2, int a3)
 {
     TObject_ctor_8c0330e4(o, a1);
     o->dispatch = (void *)0x8c2767fc;

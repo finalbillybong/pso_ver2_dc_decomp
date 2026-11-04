@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowCtrlMain.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 typedef struct S_g8c4e2bbc S_g8c4e2bbc;
-typedef struct Object Object;
 typedef struct S_vv1 S_vv1;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 struct S_vv1 {
     char unknown0[0x4];
     short f04;
@@ -18,8 +9,8 @@ struct S_vv1 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_g8c4e2bbc *g_8c4e2bbc;
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TWindowCtrlMain_dtor_8c1bed08(Object *o, int a1)
+extern void call_8c122774(void *, TWindowCtrlMain *);
+TWindowCtrlMain *TWindowCtrlMain_dtor_8c1bed08(TWindowCtrlMain *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {

@@ -1,22 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x204];
-    short f224;
-    char unknown226[0x2];
-    void *f228;
-};
+#include "src/include/classes/TItemWpnUnknownRifle.h"
 extern void call_8c075398(void);
-Object *TItemWpnUnknownRifle_ctor_8c25444c(Object *o)
+TItemWpnUnknownRifle *TItemWpnUnknownRifle_ctor_8c25444c(TItemWpnUnknownRifle *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c280850;

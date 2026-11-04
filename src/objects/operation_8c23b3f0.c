@@ -1,20 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x38];
-    int f38;
-    char unknown3c[0x100];
-    Arg0_13c *f13c;
-    char unknown140[0x94];
-    int f1d4;
-};
-extern void call_8c075730(Object *, void *, int);
-void TItemWpnChineseFlypan2_v52_8c23b3f0(Object *o)
+#include "src/include/classes/TItemWpnChineseFlypan2.h"
+typedef struct TItemWpnChineseFlypan2_p13c TItemWpnChineseFlypan2_p13c;
+extern void call_8c075730(TItemWpnChineseFlypan2 *, void *, int);
+void TItemWpnChineseFlypan2_v52_8c23b3f0(TItemWpnChineseFlypan2 *o)
 {
     char *v1;
     v1 = (char *)o->f38;

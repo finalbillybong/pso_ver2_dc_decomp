@@ -1,3 +1,4 @@
+#include "src/include/classes/TItemReverseTech.h"
 typedef struct Vector3 {
     float x;
     float y;
@@ -6,17 +7,9 @@ typedef struct Vector3 {
 typedef struct Frame Frame;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 typedef struct S_g8c513420 S_g8c513420;
-typedef struct Object Object;
 struct Frame {
     Vector3 f00;
     Vector3 f0c;
-};
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1e];
-    int f24;
-    int f28;
 };
 extern Vector3 g_8c3404bc;
 extern Vector3 g_8c3404c8;
@@ -26,8 +19,8 @@ extern void operation_8c0a2144(int);
 extern void operation_8c0a237c(void *, void *);
 extern int hierarchy_is_active(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void TItemReverseTechPart2_ctor_8c25cff0(int, Object *, void *);
-void TItemReverseTech_update_8c25cd7c(Object *o)
+extern void TItemReverseTechPart2_ctor_8c25cff0(int, TItemReverseTech *, void *);
+void TItemReverseTech_update_8c25cd7c(TItemReverseTech *o)
 {
     Frame frame;
     char *v26;

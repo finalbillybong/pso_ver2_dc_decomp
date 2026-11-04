@@ -1,22 +1,14 @@
+#include "src/include/classes/TItemMagGrowEff.h"
 typedef struct Vector3 {
     float x;
     float y;
     float z;
 } Vector3;
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_24 Arg0_24;
-typedef struct Arg0_28 Arg0_28;
+typedef struct TItemMagGrowEff_p24 TItemMagGrowEff_p24;
+typedef struct TItemMagGrowEff_p28 TItemMagGrowEff_p28;
 typedef struct S_vv12 S_vv12;
 typedef struct S_vv12_20 S_vv12_20;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    int f20;
-    Arg0_24 *f24;
-    Arg0_28 *f28;
-};
 struct S_vv12 {
     char unknown0[0x20];
     S_vv12_20 *f20;
@@ -36,7 +28,7 @@ extern void njPopMatrixEx_8c38ad10(void);
 extern void mark_effect_for_release(void *);
 extern int create_effect_769c(void *, int);
 extern void call_8c0a7608(void *, void *);
-void TItemMagGrowEff_update_8c1f2b6c(Object *o)
+void TItemMagGrowEff_update_8c1f2b6c(TItemMagGrowEff *o)
 {
     Frame frame;
     char *v17;
@@ -51,14 +43,14 @@ void TItemMagGrowEff_update_8c1f2b6c(Object *o)
     if (v17 != 0) {
         t1 = hierarchy_is_active((void *)v17);
         if (t1 == 0) {
-            o->f24 = (Arg0_24 *)0;
+            o->f24 = (TItemMagGrowEff_p24 *)0;
         }
     }
     v18 = (char *)o->f28;
     if (v18 != 0) {
         t2 = hierarchy_is_active((void *)v18);
         if (t2 == 0) {
-            o->f28 = (Arg0_28 *)0;
+            o->f28 = (TItemMagGrowEff_p28 *)0;
         }
     }
     if (o->f24 != 0) {
@@ -81,7 +73,7 @@ void TItemMagGrowEff_update_8c1f2b6c(Object *o)
             if (o->f20 == 0xa) {
                 mark_effect_for_release((void *)(o->f24));
                 t4 = create_effect_769c((void *)(&(&frame)->f0c), 0x9e);
-                o->f24 = (Arg0_24 *)t4;
+                o->f24 = (TItemMagGrowEff_p24 *)t4;
             }
             call_8c0a7608((void *)(o->f24), (void *)(&(&frame)->f0c));
             if (o->f20 == 0x14) {

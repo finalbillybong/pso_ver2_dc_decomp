@@ -1,33 +1,19 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubSymbolChatFaceType.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
-typedef struct Arg0_70 Arg0_70;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x2c];
-    int f64;
-    char f68;
-    char unknown69[0x7];
-    Arg0_70 *f70;
-};
+typedef struct TWindowSubSymbolChatFaceType_p70 TWindowSubSymbolChatFaceType_p70;
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
 };
 extern char g_8c41cba0[];
-extern void call_8c220460(Object *);
+extern void call_8c220460(TWindowSubSymbolChatFaceType *);
 extern int operation_8c01d8a8(void *, int);
 extern void operation_8c2205d0(void *);
 extern void operation_8c220610(void *);
 extern void call_8c199b74(void *);
-extern void call_8c0db30c(Object *);
+extern void call_8c0db30c(TWindowSubSymbolChatFaceType *);
 extern void update_view_nodes(void *, void *);
-void TWindowSubSymbolChatFaceType_update_8c220004(Object *o)
+void TWindowSubSymbolChatFaceType_update_8c220004(TWindowSubSymbolChatFaceType *o)
 {
     int t1;
     int t2;
@@ -54,7 +40,7 @@ L_8c22004a:;
     }
 L_8c220068:;
     if (!(7.5f > (float)o->f64)) {
-        call_8c199b74((void *)(o->f70));
+        call_8c199b74((void *)(o->child));
     }
     call_8c0db30c(o);
     update_view_nodes((void *)o, (void *)(((char *)o + 0x2c)));

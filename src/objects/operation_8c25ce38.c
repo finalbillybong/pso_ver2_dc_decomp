@@ -1,29 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemReverseTechPart1.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-    int f28;
-    int f2c;
-    int f30;
-    int f34;
-};
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void initialize_color_fall(int, Object *, void *);
-Object *TItemReverseTechPart1_ctor_8c25ce38(Object *o, int a1)
+extern void initialize_color_fall(int, TItemReverseTechPart1 *, void *);
+TItemReverseTechPart1 *TItemReverseTechPart1_ctor_8c25ce38(TItemReverseTechPart1 *o, int a1)
 {
-    Object **home = &o;
+    TItemReverseTechPart1 **home = &o;
     int t1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);

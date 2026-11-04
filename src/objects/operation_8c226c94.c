@@ -1,48 +1,34 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowOptionCtrl.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_2c Arg0_2c;
-typedef struct Arg0_30 Arg0_30;
-typedef struct Arg0_34 Arg0_34;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0xc];
-    Arg0_28 *f28;
-    Arg0_2c *f2c;
-    Arg0_30 *f30;
-    Arg0_34 *f34;
-};
+typedef struct TWindowOptionCtrl_p28 TWindowOptionCtrl_p28;
+typedef struct TWindowOptionCtrl_p2c TWindowOptionCtrl_p2c;
+typedef struct TWindowOptionCtrl_p30 TWindowOptionCtrl_p30;
+typedef struct TWindowOptionCtrl_p34 TWindowOptionCtrl_p34;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_8c227450(void *);
 extern void request_resource_release(void *);
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TWindowOptionCtrl_dtor_8c226c94(Object *o, int a1)
+extern void call_8c122774(void *, TWindowOptionCtrl *);
+TWindowOptionCtrl *TWindowOptionCtrl_dtor_8c226c94(TWindowOptionCtrl *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c278b84;
         operation_8c227450((void *)o);
         if (o->f34 != 0) {
             request_resource_release((void *)(o->f34));
-            o->f34 = (Arg0_34 *)0;
+            o->f34 = (TWindowOptionCtrl_p34 *)0;
         }
         if (o->f30 != 0) {
             request_resource_release((void *)(o->f30));
-            o->f30 = (Arg0_30 *)0;
+            o->f30 = (TWindowOptionCtrl_p30 *)0;
         }
         if (o->f2c != 0) {
             request_resource_release((void *)(o->f2c));
-            o->f2c = (Arg0_2c *)0;
+            o->f2c = (TWindowOptionCtrl_p2c *)0;
         }
         if (o->f28 != 0) {
             request_resource_release((void *)(o->f28));
-            o->f28 = (Arg0_28 *)0;
+            o->f28 = (TWindowOptionCtrl_p28 *)0;
         }
         TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {

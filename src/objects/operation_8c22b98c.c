@@ -1,28 +1,19 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSoundBalance.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x68];
-    char f68;
-};
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
 };
 extern char g_8c41cba0[];
 extern void call_8c22ba9c(void);
-extern void call_8c22bb7c(Object *);
+extern void call_8c22bb7c(TWindowSoundBalance *);
 extern int operation_8c01d8a8(void *, int);
 extern void operation_8c22bc80(void *);
 extern void operation_8c22bcb0(void *);
-extern void call_8c0db30c(Object *);
+extern void call_8c0db30c(TWindowSoundBalance *);
 extern void interpolate_view_parameters(void *);
 extern void update_view_nodes(void *, void *);
-void TWindowSoundBalance_update_8c22b98c(Object *o)
+void TWindowSoundBalance_update_8c22b98c(TWindowSoundBalance *o)
 {
     int t1;
     int t2;

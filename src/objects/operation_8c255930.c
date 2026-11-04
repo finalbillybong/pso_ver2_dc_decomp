@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
+#include "src/include/classes/TItemProArmorRecalc.h"
 extern void TItemProArmor_ctor_8c0e6d1c(void);
-Object *TItemProArmorRecalc_ctor_8c255930(Object *o)
+TItemProArmorRecalc *TItemProArmorRecalc_ctor_8c255930(TItemProArmorRecalc *o)
 {
     TItemProArmor_ctor_8c0e6d1c();
     o->dispatch = (void *)0x8c28134c;

@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemWpnFast.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x280];
-    int f280;
-};
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void TItemTimer_ctor_8c1ab01c(int, Object *, void *, int);
-void TItemWpnFast_v49_8c23c9a8(Object *o)
+extern void TItemTimer_ctor_8c1ab01c(int, TItemWpnFast *, void *, int);
+void TItemWpnFast_v49_8c23c9a8(TItemWpnFast *o)
 {
     int t1;
     o->f280 = 0;

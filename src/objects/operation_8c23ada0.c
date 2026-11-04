@@ -1,16 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x234];
-    float f234;
-    float f238;
-    float f23c;
-};
-void TItemWpnCatHand_v50_8c23ada0(Object *o)
+#include "src/include/classes/TItemWpnCatHand.h"
+void TItemWpnCatHand_v50_8c23ada0(TItemWpnCatHand *o)
 {
     if (1.0f > o->f23c) {
         o->f23c += 0.3f;

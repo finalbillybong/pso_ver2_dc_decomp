@@ -1,14 +1,6 @@
-typedef struct Tag {
-    int tag;
-    unsigned short flags;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[2];
-    short size;
-    int value;
-} Tag;
-extern void TObject_ctor_8c0330e4(Tag *, void *);
-Tag *TItemList_ctor_8c1694cc(Tag *o, void *parent)
+#include "src/include/classes/TItemList.h"
+extern void TObject_ctor_8c0330e4(TItemList *, void *);
+TItemList *TItemList_ctor_8c1694cc(TItemList *o, void *parent)
 {
     TObject_ctor_8c0330e4(o, parent);
     o->dispatch = (void *)0x8c2701cc;

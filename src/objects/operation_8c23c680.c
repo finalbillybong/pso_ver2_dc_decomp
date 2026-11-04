@@ -1,23 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemWpnDragonClaw.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_1bc Arg0_1bc;
-struct Object {
-    char unknown0[0x38];
-    int f38;
-    char unknown3c[0x180];
-    Arg0_1bc *f1bc;
-    char unknown1c0[0x74];
-    int f234;
-};
+typedef struct TItemWpnDragonClaw_p1bc TItemWpnDragonClaw_p1bc;
 extern int operation_8c076d7c(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TItemEffectWeapon_ctor_8c0772f8(void *, int, int);
-void TItemWpnDragonClaw_v53_8c23c680(Object *o)
+void TItemWpnDragonClaw_v53_8c23c680(TItemWpnDragonClaw *o)
 {
     int v1;
     int t1;

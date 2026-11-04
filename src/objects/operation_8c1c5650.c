@@ -1,25 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemEffBringer.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
 struct Frame {
     Vector3 f00;
 };
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    Vector3 f20;
-    char unknown2c[0x58];
-    int f84;
-};
-extern int call_8c1abc70(Object *);
+extern int call_8c1abc70(TItemEffBringer *);
 extern void create_effect_777c(void *, int);
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
-void TItemEffBringer_v05_8c1c5650(Object *o)
+void TItemEffBringer_v05_8c1c5650(TItemEffBringer *o)
 {
     Frame frame;
     int v1;

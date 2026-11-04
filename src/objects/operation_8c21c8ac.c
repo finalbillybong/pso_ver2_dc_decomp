@@ -1,21 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubShortCutList.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_98 Arg0_98;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x7c];
-    Arg0_98 *f98;
-};
+typedef struct TWindowSubShortCutList_p98 TWindowSubShortCutList_p98;
 extern void operation_192b28(void *, short);
 extern void destroy_context_8c1ccd60(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TWindowSubShortCutList_dtor_8c21c8ac(Object *o, int a1)
+extern void call_8c122774(void *, TWindowSubShortCutList *);
+TWindowSubShortCutList *TWindowSubShortCutList_dtor_8c21c8ac(TWindowSubShortCutList *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c2785d0;

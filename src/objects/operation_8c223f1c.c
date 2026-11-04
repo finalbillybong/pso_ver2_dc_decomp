@@ -1,21 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubSymbolChatPartsSet.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
-typedef struct Arg0_90 Arg0_90;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x2c];
-    int f64;
-    char unknown68[0x8];
-    char f70;
-    char unknown71[0x1f];
-    Arg0_90 *f90;
-};
+typedef struct TWindowSubSymbolChatPartsSet_p90 TWindowSubSymbolChatPartsSet_p90;
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
@@ -26,11 +11,11 @@ extern int operation_8c01d8a8(void *, int);
 extern void operation_8c224438(void *);
 extern void operation_8c22447c(void *);
 extern void update_toggle_8c22426c(void *);
-extern void call_8c2242c8(Object *);
+extern void call_8c2242c8(TWindowSubSymbolChatPartsSet *);
 extern void call_8c199b74(void *);
-extern void call_8c0db30c(Object *);
+extern void call_8c0db30c(TWindowSubSymbolChatPartsSet *);
 extern void update_view_nodes(void *, void *);
-void TWindowSubSymbolChatPartsSet_update_8c223f1c(Object *o)
+void TWindowSubSymbolChatPartsSet_update_8c223f1c(TWindowSubSymbolChatPartsSet *o)
 {
     int t1;
     int t2;

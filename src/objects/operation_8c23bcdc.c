@@ -1,21 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_1d4 Arg0_1d4;
+#include "src/include/classes/TItemWpnDorillArm.h"
+typedef struct TItemWpnDorillArm_p1d4 TItemWpnDorillArm_p1d4;
 typedef struct S_vv1 S_vv1;
 typedef struct S_vv20 S_vv20;
 typedef struct S_vv20_2c S_vv20_2c;
-struct Object {
-    char unknown0[0x1d4];
-    Arg0_1d4 *f1d4;
-    char unknown1d8[0x60];
-    int f238;
-    int f23c;
-    int f240;
-};
 struct S_vv20 {
     char unknown0[0x2c];
     S_vv20_2c *f2c;
@@ -27,7 +14,7 @@ struct S_vv1 {
     char unknown0[0x18];
     int f18;
 };
-void TItemWpnDorillArm_v53_8c23bcdc(Object *o)
+void TItemWpnDorillArm_v53_8c23bcdc(TItemWpnDorillArm *o)
 {
     S_vv20 *v20;
     S_vv1 *v1;

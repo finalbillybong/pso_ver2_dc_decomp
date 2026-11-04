@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x23c];
-    float f23c;
-};
-void TItemWpnNyoibou_v51_8c23e870(Object *o)
+#include "src/include/classes/TItemWpnNyoibou.h"
+void TItemWpnNyoibou_v51_8c23e870(TItemWpnNyoibou *o)
 {
     if (o->f23c > 0.08f) {
         o->f23c -= 0.3f;

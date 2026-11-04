@@ -1,27 +1,16 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x13c];
-    int f13c;
-    char unknown140[0xf4];
-    float f234;
-};
+#include "src/include/classes/TItemWpnSunShade.h"
 extern void call_8c172c50(void *, float, float);
 extern void play_se_8c05fbf8(int, int, int, int);
-void TItemWpnSunShade_v51_8c240440(Object *o)
+void TItemWpnSunShade_v51_8c240440(TItemWpnSunShade *o)
 {
     int v1;
     int v3;
     v3 = (int)0;
-    if (1.0f > o->f234) {
-        o->f234 += 0.14f;
+    if (1.0f > o->first) {
+        o->first += 0.14f;
         v1 = (int)0;
-        if (!(1.0f > o->f234)) {
-            o->f234 = 1.0f;
+        if (!(1.0f > o->first)) {
+            o->first = 1.0f;
             v1 = (int)1;
         }
         v3 = (int)v1;

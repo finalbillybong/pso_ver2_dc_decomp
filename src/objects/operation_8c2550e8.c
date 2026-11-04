@@ -1,20 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x1c4];
-    int f1e4;
-};
+#include "src/include/classes/TItemProShieldModel2.h"
 extern void TItemProShieldModel_ctor_8c255200(void);
-Object *TItemProShieldModel2_ctor_8c2550e8(Object *o)
+TItemProShieldModel2 *TItemProShieldModel2_ctor_8c2550e8(TItemProShieldModel2 *o)
 {
     TItemProShieldModel_ctor_8c255200();
     o->dispatch = (void *)0x8c281010;

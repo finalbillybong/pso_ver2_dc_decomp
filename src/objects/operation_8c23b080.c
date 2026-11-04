@@ -1,15 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x234];
-    int f234;
-    int f238;
-};
-void TItemWpnChaoCane_v53_8c23b080(Object *o)
+#include "src/include/classes/TItemWpnChaoCane.h"
+void TItemWpnChaoCane_v53_8c23b080(TItemWpnChaoCane *o)
 {
     int v1;
     if (o->f238 != 0) {

@@ -1,22 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
+#include "src/include/classes/TItemWpnHand.h"
+typedef struct TItemWpnHand_p13c TItemWpnHand_p13c;
 typedef struct Arg0_13c_s754 Arg0_13c_s754;
-struct Object {
-    char unknown0[0x138];
-    unsigned char f138;
-    char unknown139[0x3];
-    Arg0_13c *f13c;
-};
 struct Arg0_13c_s754 {
     char unknown0[0x8];
     float f08;
 };
-void TItemWpnHand_v54_8c17a044(Object *o)
+void TItemWpnHand_v54_8c17a044(TItemWpnHand *o)
 {
     float v5;
     v5 = 1.0f;

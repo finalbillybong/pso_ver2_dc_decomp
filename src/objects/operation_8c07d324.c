@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-};
-struct Arg0_13c {
+#include "src/include/classes/TItemMag.h"
+typedef struct TItemMag_p13c TItemMag_p13c;
+struct TItemMag_p13c {
     char unknown0[0x308];
     short f308;
     char unknown30a[0x46];
@@ -21,7 +12,7 @@ extern void call_8c1ace6c(void *);
 extern int call_8c207378(int, int);
 extern void call_8c185134(void *);
 extern void operation_8c07da28(void *);
-void TItemMag_v43_8c07d324(Object *o)
+void TItemMag_v43_8c07d324(TItemMag *o)
 {
     int v1;
     int v8;

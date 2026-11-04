@@ -1,28 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x48];
-    int f68;
-    int f6c;
-    int f70;
-    int f74;
-    int f78;
-    int f7c;
-};
+#include "src/include/classes/TWindowKeyBoardHard.h"
 extern void initialize_base_8c0db1d0(void *, int);
 extern void operation_8c1e0000(void *);
-Object *TWindowKeyBoardHard_ctor_8c1dfd28(Object *o, int a1)
+TWindowKeyBoardHard *TWindowKeyBoardHard_ctor_8c1dfd28(TWindowKeyBoardHard *o, int a1)
 {
-    Object **home = &o;
+    TWindowKeyBoardHard **home = &o;
     (void)home;
     initialize_base_8c0db1d0((void *)o, (int)((void *)0x8c32b23c));
     o->dispatch = (void *)0x8c277454;

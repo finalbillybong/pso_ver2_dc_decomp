@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-};
-extern void call_8c075730(Object *, void *, int);
-void TItemWpnUnknownBlade_v52_8c254c70(Object *o)
+#include "src/include/classes/TItemWpnUnknownBlade.h"
+typedef struct TItemWpnUnknownBlade_p13c TItemWpnUnknownBlade_p13c;
+extern void call_8c075730(TItemWpnUnknownBlade *, void *, int);
+void TItemWpnUnknownBlade_v52_8c254c70(TItemWpnUnknownBlade *o)
 {
     call_8c075730(o, (void *)(o->f13c), 0x30);
     call_8c075730(o, (void *)(o->f13c), 0x23);

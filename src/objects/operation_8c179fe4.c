@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemWpnHand.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x138];
-    unsigned char f138;
-};
 struct Frame {
     float f00;
     float f04;
@@ -18,7 +9,7 @@ struct Frame {
     float f14;
 };
 extern void call_8c3889b4(int, Frame *);
-void TItemWpnHand_v57_8c179fe4(Object *o)
+void TItemWpnHand_v57_8c179fe4(TItemWpnHand *o)
 {
     Frame frame;
     if (*(int *)0x8c4689f0 == 0 && o->f138 == 3 && *(int *)0x8c4db980 != 0) {

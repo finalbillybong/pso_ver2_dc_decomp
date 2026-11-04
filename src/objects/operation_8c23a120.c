@@ -1,25 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_38 Arg0_38;
+#include "src/include/classes/TItemWpnBerlaCanon.h"
+typedef struct TItemWpnBerlaCanon_p38 TItemWpnBerlaCanon_p38;
 typedef struct Arg0_38_2c Arg0_38_2c;
-struct Object {
-    char unknown0[0x38];
-    Arg0_38 *f38;
-    char unknown3c[0x1f8];
-    int f234;
-};
-struct Arg0_38 {
+struct TItemWpnBerlaCanon_p38 {
     char unknown0[0x2c];
     Arg0_38_2c *f2c;
 };
 struct Arg0_38_2c {
     int f00;
 };
-void TItemWpnBerlaCanon_v53_8c23a120(Object *o)
+void TItemWpnBerlaCanon_v53_8c23a120(TItemWpnBerlaCanon *o)
 {
     int v2;
     if (o->f38 != 0) {

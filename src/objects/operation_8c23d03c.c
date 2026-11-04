@@ -1,23 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemEffFireWand.h"
 typedef struct S_c8c0744dc S_c8c0744dc;
 typedef struct S_c8c0744dc_13c S_c8c0744dc_13c;
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_24 Arg0_24;
-typedef struct Arg0_28 Arg0_28;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    Arg0_20 *f20;
-    Arg0_24 *f24;
-    Arg0_28 *f28;
-};
+typedef struct TItemEffFireWand_p20 TItemEffFireWand_p20;
+typedef struct TItemEffFireWand_p24 TItemEffFireWand_p24;
+typedef struct TItemEffFireWand_p28 TItemEffFireWand_p28;
 struct S_c8c0744dc {
     char unknown0[0x34];
     int f34;
@@ -36,7 +23,7 @@ extern int operation_8c075894(void *, void *, int, int);
 extern void call_8c0a7608(void *, Frame *);
 extern void clear_effect_bit0(void *);
 extern void set_effect_bit0(void *);
-void TItemEffFireWand_update_8c23d03c(Object *o)
+void TItemEffFireWand_update_8c23d03c(TItemEffFireWand *o)
 {
     Frame frame;
     int v1;

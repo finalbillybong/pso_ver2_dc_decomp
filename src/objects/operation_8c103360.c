@@ -1,26 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemMoney.h"
 typedef struct Arg2 Arg2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x120];
-    int f140;
-};
 struct Arg2 {
     char unknown0[0x10];
     int f10;
 };
 extern int g_8c30b220;
-extern void call_8c073288(Object *, int, Arg2 *);
-Object *TItemMoney_ctor_8c103360(Object *o, int a1, Arg2 *a2)
+extern void call_8c073288(TItemMoney *, int, Arg2 *);
+TItemMoney *TItemMoney_ctor_8c103360(TItemMoney *o, int a1, Arg2 *a2)
 {
     int v1;
     call_8c073288(o, a1, a2);

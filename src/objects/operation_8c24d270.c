@@ -1,28 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemObjectTV.h"
 typedef struct Arg2 Arg2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    short f20;
-    short f22;
-};
 struct Arg2 {
     char unknown0[0x20];
     short f20;
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c22353c(short);
-Object *TItemObjectTV_ctor_8c24d270(Object *o, int a1, Arg2 *a2)
+TItemObjectTV *TItemObjectTV_ctor_8c24d270(TItemObjectTV *o, int a1, Arg2 *a2)
 {
-    Object **home = &o;
+    TItemObjectTV **home = &o;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c27dd38;

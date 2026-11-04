@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x23a];
-    short f23a;
-};
-void TItemWpnCSorcer_v51_8c179948(Object *o)
+#include "src/include/classes/TItemWpnCSorcer.h"
+void TItemWpnCSorcer_v51_8c179948(TItemWpnCSorcer *o)
 {
     if (o->f23a != 1 && o->f23a != 0) {
         return;

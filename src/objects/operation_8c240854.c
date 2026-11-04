@@ -1,32 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x1a0];
-    int f1c0;
-    char unknown1c4[0x1c];
-    char f1e0;
-    char f1e1;
-    char unknown1e2[0x1a];
-    int f1fc;
-    char unknown200[0x18];
-    int f218;
-    char unknown21c[0x24];
-    int f240;
-};
-extern void call_8c075398(Object *, int, int);
+#include "src/include/classes/TItemWpnThunderCane.h"
+extern void call_8c075398(TItemWpnThunderCane *, int, int);
 extern void call_8c18e044(void *, void *, int, int, int);
-Object *TItemWpnThunderCane_ctor_8c240854(Object *o, int a1, int a2)
+TItemWpnThunderCane *TItemWpnThunderCane_ctor_8c240854(TItemWpnThunderCane *o, int a1, int a2)
 {
-    Object **home = &o;
+    TItemWpnThunderCane **home = &o;
     (void)home;
     call_8c075398(o, a1, a2);
     o->dispatch = (void *)0x8c27c688;

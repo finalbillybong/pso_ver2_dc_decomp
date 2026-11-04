@@ -1,30 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemTexLoad.h"
 typedef struct S_g8c506304 S_g8c506304;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-    int f28;
-    char unknown2c[0x8];
-    int f34;
-    char unknown38[0x4];
-    int f3c;
-};
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c38668e(void *, void *, void *, int);
 extern int operator_new_8c18de4c(int);
-Object *TItemTexLoad_ctor_8c22bef8(Object *o, int a1)
+TItemTexLoad *TItemTexLoad_ctor_8c22bef8(TItemTexLoad *o, int a1)
 {
-    Object **home = &o;
+    TItemTexLoad **home = &o;
     int t1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);

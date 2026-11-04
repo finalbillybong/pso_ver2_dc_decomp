@@ -1,31 +1,16 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowShortListCtrl.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
 typedef struct S_c8c0744dc S_c8c0744dc;
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
-typedef struct Arg0_2c Arg0_2c;
-typedef struct Arg0_30 Arg0_30;
+typedef struct TWindowShortListCtrl_p2c TWindowShortListCtrl_p2c;
+typedef struct TWindowShortListCtrl_p30 TWindowShortListCtrl_p30;
 typedef struct S_vv20 S_vv20;
 typedef struct S_vv20_98 S_vv20_98;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1b];
-    unsigned char f21;
-    short f22;
-    char unknown24[0x8];
-    Arg0_2c *f2c;
-    Arg0_30 *f30;
-};
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
 };
-struct Arg0_30 {
+struct TWindowShortListCtrl_p30 {
     char unknown0[0x64];
     int f64;
     char unknown68[0x18];
@@ -35,7 +20,7 @@ struct S_c8c0744dc {
     char unknown0[0xec];
     int fec;
 };
-struct Arg0_2c {
+struct TWindowShortListCtrl_p2c {
     char unknown0[0x80];
     volatile unsigned short f80;
     char unknown82[0x6];
@@ -67,7 +52,7 @@ extern int operation_8c0de37c(void);
 extern void operation_8c0de3b4(void);
 extern void operation_8c023628(void *, int);
 extern void call_8c1a8ec0(void *, void *);
-extern int call_8c2354b8(Object *, void *, void *);
+extern int call_8c2354b8(TWindowShortListCtrl *, void *, void *);
 extern void operation_8c19a044(void *, int);
 extern int operation_8c1571f4(void *);
 extern void operation_8c1ecf70(int);
@@ -76,7 +61,7 @@ extern void operation_8c23551c(int, void *, void *);
 extern void operation_8c235790(int, int, int);
 extern int operation_8c1ecee4(int);
 extern int operation_8c1a8e4c(int);
-void TWindowShortListCtrl_update_8c234ed8(Object *o)
+void TWindowShortListCtrl_update_8c234ed8(TWindowShortListCtrl *o)
 {
     int v31;
     int v35;
@@ -124,7 +109,7 @@ void TWindowShortListCtrl_update_8c234ed8(Object *o)
     case 0:
         if (o->f30 == 0) {
             t1 = TWindowSubEquipKind_ctor_8c1d50b4((int)((void *)0x8c2e1e30), (int)((void *)0x8c2e1e38));
-            o->f30 = (Arg0_30 *)t1;
+            o->f30 = (TWindowShortListCtrl_p30 *)t1;
             o->f30->f80 = (o->f30->f80 & 0xffff) | 0x10;
             operation_8c1d55b0((int)(o->f30));
             o->f30->f64 = 0x1000000;
@@ -162,7 +147,7 @@ void TWindowShortListCtrl_update_8c234ed8(Object *o)
     case 3:
         if (o->f30 == 0) {
             t5 = TWindowSubEquipKind_ctor_8c1d50b4((int)((void *)0x8c2e1e30), (int)((void *)0x8c2e1e38));
-            o->f30 = (Arg0_30 *)t5;
+            o->f30 = (TWindowShortListCtrl_p30 *)t5;
             o->f30->f80 = (o->f30->f80 & 0xffff) | 0x10;
             operation_8c1d55e4((int)(o->f30));
             o->f30->f64 = 0x1000000;
@@ -213,7 +198,7 @@ void TWindowShortListCtrl_update_8c234ed8(Object *o)
     case 6:
         if (o->f30 == 0) {
             t13 = TWindowSubEquipKind_ctor_8c1d50b4((int)((void *)0x8c2e1e30), (int)((void *)0x8c2e1e38));
-            o->f30 = (Arg0_30 *)t13;
+            o->f30 = (TWindowShortListCtrl_p30 *)t13;
             o->f30->f80 = (o->f30->f80 & 0xffff) | 0x10;
             operation_8c1d5618((void *)(o->f30));
             o->f30->f64 = 0x1000000;
@@ -268,7 +253,7 @@ void TWindowShortListCtrl_update_8c234ed8(Object *o)
         if (o->f2c == 0) {
             call_8c1a8ec0((void *)(((char *)o + 0x24)), (void *)(((char *)o + 0x28)));
             t20 = call_8c2354b8(o, (void *)((void *)0x8c2e1e30), (void *)((void *)0x8c2e1e38));
-            o->f2c = (Arg0_2c *)t20;
+            o->f2c = (TWindowShortListCtrl_p2c *)t20;
         }
         v20 = (S_vv20 *)o->f2c;
         o->f2c->f80 = (o->f2c->f80 & 0xffff) & -3;

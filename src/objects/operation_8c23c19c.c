@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x234];
-    int f234;
-};
-void TItemWpnDoubleCanon_v53_8c23c19c(Object *o)
+#include "src/include/classes/TItemWpnDoubleCanon.h"
+void TItemWpnDoubleCanon_v53_8c23c19c(TItemWpnDoubleCanon *o)
 {
     o->f234 += 0xaaa;
 }

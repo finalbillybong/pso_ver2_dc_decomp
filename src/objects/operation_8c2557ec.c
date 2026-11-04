@@ -1,24 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemEffArmorParticle.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_24 Arg0_24;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x8];
-    Arg0_24 *f24;
-};
-struct Arg0_24 {
+typedef struct TItemEffArmorParticle_p24 TItemEffArmorParticle_p24;
+struct TItemEffArmorParticle_p24 {
     char unknown0[0x4];
     short f04;
 };
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TItemEffArmorParticle_dtor_8c2557ec(Object *o, int a1)
+extern void call_8c122774(void *, TItemEffArmorParticle *);
+TItemEffArmorParticle *TItemEffArmorParticle_dtor_8c2557ec(TItemEffArmorParticle *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c281268;

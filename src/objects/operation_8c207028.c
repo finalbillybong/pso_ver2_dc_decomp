@@ -1,19 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_9c Arg0_9c;
-struct Object {
-    char unknown0[0x9c];
-    Arg0_9c *f9c;
-};
+#include "src/include/classes/TWindowSubComCardList.h"
+typedef struct TWindowSubComCardList_p9c TWindowSubComCardList_p9c;
 extern void TWindowMenu_update_8c156838(void *);
 extern int operation_192b4c(void *);
 extern void operation_8c1571d4(void *, int);
 extern void operation_8c207160(void *);
-void TWindowSubComCardList_update_8c207028(Object *o)
+void TWindowSubComCardList_update_8c207028(TWindowSubComCardList *o)
 {
     int t1;
     TWindowMenu_update_8c156838((void *)o);

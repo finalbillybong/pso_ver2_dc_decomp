@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x238];
-    int f238;
-};
+#include "src/include/classes/TItemWpnBlueCane.h"
 extern int call_8c12b944(void);
-void TItemWpnBlueCane_v51_8c23a94c(Object *o)
+void TItemWpnBlueCane_v51_8c23a94c(TItemWpnBlueCane *o)
 {
     int t1;
     if (o->f238 == 3) {

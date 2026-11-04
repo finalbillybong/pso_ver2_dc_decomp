@@ -1,24 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
+#include "src/include/classes/TWindowRoom.h"
+typedef struct TWindowRoom_p30 TWindowRoom_p30;
 typedef struct Arg0_30_0 Arg0_30_0;
 typedef struct S_vv5 S_vv5;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x10];
-    Arg0_30 *f30;
-    char unknown34[0x34];
-    float f68;
-};
-struct Arg0_30 {
+struct TWindowRoom_p30 {
     Arg0_30_0 *f00;
 };
 struct S_vv5 {
@@ -30,9 +14,9 @@ extern int call_8c04b8dc(int);
 extern float call_8c19a09c(float);
 extern void call_8c0e2278(S_vv5 *, int, int);
 extern void operation_8c0dc610(void *, float);
-Object *TWindowRoom_ctor_8c1cb998(Object *o, int a1)
+TWindowRoom *TWindowRoom_ctor_8c1cb998(TWindowRoom *o, int a1)
 {
-    Object **home = &o;
+    TWindowRoom **home = &o;
     float v1;
     float v4;
     S_vv5 *v5;

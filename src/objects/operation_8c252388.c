@@ -1,11 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemWpnOnSlicer.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
+typedef struct TItemWpnOnSlicer_p13c TItemWpnOnSlicer_p13c;
 struct Frame {
     unsigned short f00;
     char unknown2[0x2];
@@ -20,17 +15,7 @@ struct Frame {
     float f20;
     float f24;
 };
-struct Object {
-    char unknown0[0x28];
-    int f28;
-    char unknown2c[0xbc];
-    int fe8;
-    char unknownec[0x50];
-    Arg0_13c *f13c;
-    char unknown140[0x94];
-    int f1d4;
-};
-struct Arg0_13c {
+struct TItemWpnOnSlicer_p13c {
     char unknown0[0x20];
     short f20;
     char unknown22[0x732];
@@ -40,7 +25,7 @@ extern void operation_8c241658(void *);
 extern int call_8c1aaabc(void *);
 extern int call_8c1aaafc(void *);
 extern void operation_8c137998(void *);
-void TItemWpnOnSlicer_v49_8c252388(Object *o)
+void TItemWpnOnSlicer_v49_8c252388(TItemWpnOnSlicer *o)
 {
     Frame frame;
     int t1;

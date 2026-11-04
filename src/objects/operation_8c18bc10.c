@@ -1,24 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowMainMenu.h"
 typedef struct S_g8c418248 S_g8c418248;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct Arg0_58 Arg0_58;
-typedef struct Arg0_70 Arg0_70;
-typedef struct Arg0_74 Arg0_74;
+typedef struct TWindowMainMenu_p70 TWindowMainMenu_p70;
+typedef struct TWindowMainMenu_p74 TWindowMainMenu_p74;
 typedef struct S_vv17 S_vv17;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x4];
-    int f20;
-    char unknown24[0x4c];
-    Arg0_70 *f70;
-    Arg0_74 *f74;
-};
 struct S_vv17 {
     char unknown0[0x4];
     short f04;
@@ -30,8 +16,8 @@ extern int lookup_low_id(int);
 extern void operation_8c0264ac(void);
 extern void request_resource_release(void *);
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TWindowMainMenu_dtor_8c18bc10(Object *o, int a1)
+extern void call_8c122774(void *, TWindowMainMenu *);
+TWindowMainMenu *TWindowMainMenu_dtor_8c18bc10(TWindowMainMenu *o, int a1)
 {
     S_vv17 *v17;
     int v22;
@@ -50,12 +36,12 @@ Object *TWindowMainMenu_dtor_8c18bc10(Object *o, int a1)
         }
         if (o->f70 != 0) {
             request_resource_release((void *)(o->f70));
-            o->f70 = (Arg0_70 *)0;
+            o->f70 = (TWindowMainMenu_p70 *)0;
         }
         if (o->f74 != 0) {
             v17 = (S_vv17 *)o->f74;
             v17->f04 |= 1;
-            o->f74 = (Arg0_74 *)0;
+            o->f74 = (TWindowMainMenu_p74 *)0;
         }
         v21 = (int)5;
         while (v21 >= 0) {

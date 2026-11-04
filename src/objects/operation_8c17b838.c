@@ -1,16 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x208];
-    short f208;
-    short f20a;
-};
+#include "src/include/classes/TItemProUnit.h"
 extern void flag_owner_8c074ddc(void *);
-void TItemProUnit_v15_8c17b838(Object *o)
+void TItemProUnit_v15_8c17b838(TItemProUnit *o)
 {
     short a;
     short b;

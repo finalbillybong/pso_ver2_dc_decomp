@@ -1,38 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char f20;
-    char f21;
-    char unknown22[0x2];
-    int f24;
-    int f28;
-    int f2c;
-    char unknown30[0x4];
-    int f34;
-    int f38;
-    int f3c;
-    int f40;
-    int f44;
-    int f48;
-    int f4c;
-    int f50;
-    int f54;
-    int f58;
-    int f5c;
-    int f60;
-    int f64;
-};
+#include "src/include/classes/TWindowSubSymbolChat.h"
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TWindowSubSymbolChat_ctor_8c1d03c8(Object *o, int a1)
+TWindowSubSymbolChat *TWindowSubSymbolChat_ctor_8c1d03c8(TWindowSubSymbolChat *o, int a1)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c276df0;

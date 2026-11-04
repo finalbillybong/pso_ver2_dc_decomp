@@ -1,37 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemEquipBase.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0xcc];
-    int fec;
-    char unknownf0[0x50];
-    short f140;
-    short f142;
-    char unknown144[0x78];
-    void *f1bc;
-    int f1c0;
-    int f1c4;
-    int f1c8;
-    int f1cc;
-    int f1d0;
-    int f1d4;
-};
-extern void call_8c073288(Object *);
-extern void call_8c20a108(Object *);
+extern void call_8c073288(TItemEquipBase *);
+extern void call_8c20a108(TItemEquipBase *);
 extern void *heap_alloc_8c122700(void *, int);
-extern void TObject_ctor_8c0330e4(void *, Object *);
-Object *TItemEquipBase_ctor_8c20989c(Object *o)
+extern void TObject_ctor_8c0330e4(void *, TItemEquipBase *);
+TItemEquipBase *TItemEquipBase_ctor_8c20989c(TItemEquipBase *o)
 {
-    Object **home = &o;
+    TItemEquipBase **home = &o;
     void *t1;
     (void)home;
     call_8c073288(o);

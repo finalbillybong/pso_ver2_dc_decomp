@@ -1,19 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_24 Arg0_24;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    Arg0_24 *f24;
-};
+#include "src/include/classes/TItemDrop.h"
+typedef struct TItemDrop_p24 TItemDrop_p24;
 extern int g_8c3363a0;
 extern int g_8c3363c4;
 extern int g_8c505900;
@@ -26,9 +12,9 @@ extern int game_malloc_8c011ecc(int);
 extern void construct_seeded_random_state(void *, unsigned int);
 extern void operation_193470(void *, int, int, unsigned int, int);
 extern int call_8c21871c(void *);
-Object *TItemDrop_ctor_8c218998(Object *o, int a1, int a2)
+TItemDrop *TItemDrop_ctor_8c218998(TItemDrop *o, int a1, int a2)
 {
-    Object **home = &o;
+    TItemDrop **home = &o;
     int v1;
     int t1;
     int t2;
@@ -46,7 +32,7 @@ Object *TItemDrop_ctor_8c218998(Object *o, int a1, int a2)
     g_8c3363a0 = (char)a2;
     t1 = operator_new_8c18de4c(0x44);
     v1 = (int)0;
-    o->f24 = (Arg0_24 *)t1;
+    o->f24 = (TItemDrop_p24 *)t1;
     while (v1 != 0x11) {
         u3 = (unsigned int)((float)call_8c12b944() / 32768.0f * 4294967296.0f);
         u4 = (unsigned int)((float)call_8c12b944() / 32768.0f * 65536.0f);

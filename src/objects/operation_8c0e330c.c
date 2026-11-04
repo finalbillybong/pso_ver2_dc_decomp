@@ -1,20 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSimpleStatus.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct Arg0_68 Arg0_68;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void request_resource_release(void *);
 extern void destroy_context_8c0db244(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TWindowSimpleStatus_dtor_8c0e330c(Object *o, int a1)
+extern void call_8c122774(void *, TWindowSimpleStatus *);
+TWindowSimpleStatus *TWindowSimpleStatus_dtor_8c0e330c(TWindowSimpleStatus *o, int a1)
 {
     int v2;
     int v1;

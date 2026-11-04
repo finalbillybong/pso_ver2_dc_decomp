@@ -1,24 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemWpnDevilCane.h"
 typedef struct S_g8c44be9c S_g8c44be9c;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x38];
-    int f38;
-    char unknown3c[0xac];
-    int fe8;
-    char unknownec[0x14c];
-    int f238;
-    int f23c;
-    int f240;
-};
 extern int g_8c44be04;
 extern S_g8c44be9c *g_8c44be9c;
 extern void TItemEffDevilCane_create_8c23b9e8(int, int, int);
-void TItemWpnDevilCane_v53_8c23b8b4(Object *o)
+void TItemWpnDevilCane_v53_8c23b8b4(TItemWpnDevilCane *o)
 {
     int v1;
     int v16;

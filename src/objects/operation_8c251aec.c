@@ -1,20 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemShootRocketPunchON.h"
 typedef struct Arg1 Arg1;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x3c];
-    int f5c;
-    int f60;
-};
 struct Arg1 {
     char unknown0[0x28];
     int f28;
@@ -25,13 +10,13 @@ struct Arg1 {
     int f234;
 };
 extern void TItemShootModel_ctor_8c1abe00(void *, void *, void *, void *);
-Object *TItemShootRocketPunchON_ctor_8c251aec(Object *o, Arg1 *a1, int a2, int a3)
+TItemShootRocketPunchON *TItemShootRocketPunchON_ctor_8c251aec(TItemShootRocketPunchON *o, Arg1 *a1, int a2, int a3)
 {
     int v1;
     int v4;
     int v2;
     TItemShootModel_ctor_8c1abe00((void *)o, (void *)a1, (void *)a2, (void *)a3);
-    o->dispatch = (void *)0x8c27f478;
+    o->vtable = (void *)0x8c27f478;
     o->tag = (int)(*(int *)0x8c33f974);
     o->size = 0x64;
     v1 = (int)(((a1->f234 & 4)) != 0);

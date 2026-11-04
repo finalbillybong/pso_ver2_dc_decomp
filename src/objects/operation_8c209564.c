@@ -1,26 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowGetComCard.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
 typedef struct S_g8c46fe20 S_g8c46fe20;
 typedef struct S_g8c46fe20_58 S_g8c46fe20_58;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_24 Arg0_24;
-struct Object {
-    char unknown0[0x20];
-    Arg0_20 *f20;
-    Arg0_24 *f24;
-    unsigned int f28;
-    int f2c;
-};
+typedef struct TWindowGetComCard_p20 TWindowGetComCard_p20;
+typedef struct TWindowGetComCard_p24 TWindowGetComCard_p24;
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
 };
-struct Arg0_24 {
+struct TWindowGetComCard_p24 {
     char unknown0[0x80];
     unsigned short f80;
 };
@@ -40,7 +28,7 @@ extern void call_8c119c78(void *);
 extern int operation_8c156c6c(int);
 extern int operation_8c1571f4(void *);
 extern void call_8c1dc844(void *);
-void TWindowGetComCard_update_8c209564(Object *o)
+void TWindowGetComCard_update_8c209564(TWindowGetComCard *o)
 {
     int v23;
     int t1;
@@ -65,7 +53,7 @@ void TWindowGetComCard_update_8c209564(Object *o)
             return;
         }
         t2 = operation_8c156c6c((int)((void *)0x8c335e0c));
-        o->f24 = (Arg0_24 *)t2;
+        o->f24 = (TWindowGetComCard_p24 *)t2;
         o->f24->f80 = (o->f24->f80 & 0xffff) | 0x10;
         o->f28 = 3;
     case 3:

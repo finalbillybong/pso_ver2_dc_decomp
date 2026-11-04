@@ -1,37 +1,15 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    float f20;
-    char unknown24[0x10];
-    int f34;
-    char unknown38[0x20];
-    int f58;
-    char unknown5c[0x4];
-    float f60;
-    char unknown64[0x1c];
-    unsigned char f80;
-    unsigned char f81;
-    char unknown82[0x2];
-    short f84;
-};
+#include "src/include/classes/TWindowFukidasi.h"
 extern void operation_8c0e118c(void *, void *);
 extern int operation_8c0e1114(void *, float);
 extern void set_fields_8c0e1170(void *);
-extern void call_8c0e0104(Object *);
+extern void call_8c0e0104(TWindowFukidasi *);
 extern void operation_8c0dc610(void *, float);
 extern void operation_8c0e11f0(void *, void *);
-extern void call_8c0e0f6c(Object *);
+extern void call_8c0e0f6c(TWindowFukidasi *);
 extern void operation_8c0dfb48(void *);
-extern void call_8c0dfbbc(Object *);
+extern void call_8c0dfbbc(TWindowFukidasi *);
 extern void update_view_nodes(void *, void *);
-void TWindowFukidasi_update_8c0dea50(Object *o)
+void TWindowFukidasi_update_8c0dea50(TWindowFukidasi *o)
 {
     int t1;
     int t2;

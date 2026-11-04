@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
+#include "src/include/classes/TItemWpnFlypan.h"
 extern void call_8c075398(void);
-Object *TItemWpnFlypan_ctor_8c179cd8(Object *o)
+TItemWpnFlypan *TItemWpnFlypan_ctor_8c179cd8(TItemWpnFlypan *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c271394;

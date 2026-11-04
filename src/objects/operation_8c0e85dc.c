@@ -1,18 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x1e0];
-    unsigned char f1e0;
-    unsigned char f1e1;
-};
+#include "src/include/classes/TItemProShield.h"
 extern int operation_8c073e5c(void *, void *);
 extern void call_8c1c9334(int, int);
 extern void call_8c1c9340(int, int);
-int TItemProShield_v31_8c0e85dc(Object *o, int a1)
+int TItemProShield_v31_8c0e85dc(TItemProShield *o, int a1)
 {
     int t1;
     t1 = operation_8c073e5c((void *)o, (void *)a1);

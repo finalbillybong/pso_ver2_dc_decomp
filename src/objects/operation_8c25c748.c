@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-};
+#include "src/include/classes/TItemReverseTechCtrl.h"
 extern int keyboard_character(void);
-extern int game_bu_check_busy_wrapper_8c25c884(Object *);
+extern int game_bu_check_busy_wrapper_8c25c884(TItemReverseTechCtrl *);
 extern void request_game_mode_8c01c1a4(int);
-void TItemReverseTechCtrl_update_8c25c748(Object *o)
+void TItemReverseTechCtrl_update_8c25c748(TItemReverseTechCtrl *o)
 {
     int v4;
     int t1;

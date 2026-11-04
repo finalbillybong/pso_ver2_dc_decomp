@@ -1,51 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowCtrl.h"
 typedef struct S_g8c44be84 S_g8c44be84;
 typedef struct S_g8c44bea0 S_g8c44bea0;
-typedef struct S_g8c46fe20 S_g8c46fe20;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_34 Arg0_34;
+typedef struct TWindowCtrl_p34 TWindowCtrl_p34;
 typedef struct Arg0_38 Arg0_38;
-typedef struct Arg0_44 Arg0_44;
-typedef struct Arg0_54 Arg0_54;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    short f20;
-    short f22;
-    short f24;
-    short f26;
-    int f28;
-    unsigned short f2c;
-    char unknown2e[0x2];
-    int f30;
-    Arg0_34 *f34;
-    char unknown38[0xc];
-    Arg0_44 *f44;
-    int f48;
-    int f4c;
-    int f50;
-    Arg0_54 *f54;
-    int f58;
-    char unknown5c[0x10];
-    int f6c;
-    int f70;
-    int f74;
-};
-struct S_g8c46fe20 {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x4a];
-    int f50;
-};
-struct Arg0_34 {
+typedef struct TWindowCtrl_p44 TWindowCtrl_p44;
+typedef struct TWindowCtrl_p54 TWindowCtrl_p54;
+struct TWindowCtrl_p34 {
     char unknown0[0x4];
     short f04;
 };
@@ -53,11 +14,11 @@ struct Arg0_38 {
     char unknown0[0x4];
     short f04;
 };
-struct Arg0_44 {
+struct TWindowCtrl_p44 {
     char unknown0[0x4];
     short f04;
 };
-struct Arg0_54 {
+struct TWindowCtrl_p54 {
     char unknown0[0x22];
     short f22;
 };
@@ -65,7 +26,7 @@ extern int g_8c307498;
 extern int g_8c41cd20;
 extern S_g8c44be84 *g_8c44be84;
 extern S_g8c44bea0 *g_8c44bea0;
-extern S_g8c46fe20 *g_8c46fe20;
+extern TWindowCtrl *g_8c46fe20;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4dbde0;
 extern char g_8c30749c[];
@@ -80,9 +41,9 @@ extern void TWindowSimpleStatus_ctor_8c0e3294(int, int);
 extern void call_8c103424(int);
 extern void TWindowChat_ctor_8c1dca80(void *, int, int);
 extern int TWindowArea_ctor_2_8c24bce8(void *);
-Object *TWindowCtrl_ctor_8c0dc9ac(Object *o, int a1)
+TWindowCtrl *TWindowCtrl_ctor_8c0dc9ac(TWindowCtrl *o, int a1)
 {
-    Object **home = &o;
+    TWindowCtrl **home = &o;
     int v62;
     int v144;
     int t1;
@@ -104,7 +65,7 @@ Object *TWindowCtrl_ctor_8c0dc9ac(Object *o, int a1)
     if (g_8c46fe20 != 0) {
         g_8c46fe20->f04 |= 1;
     }
-    g_8c46fe20 = (S_g8c46fe20 *)o;
+    g_8c46fe20 = (TWindowCtrl *)o;
     t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x9c);
     if (t1 != 0) {
         TWindowMainMenu_ctor_8c18bafc(t1, g_8c44bea0);
@@ -121,7 +82,7 @@ Object *TWindowCtrl_ctor_8c0dc9ac(Object *o, int a1)
     if (t4 != 0) {
         TWindowStatus_ctor_8c0e2648(t4);
     }
-    o->f34 = (Arg0_34 *)t4;
+    o->f34 = (TWindowCtrl_p34 *)t4;
     o->f34->f04 |= 4;
     v62 = (int)0;
     while (3 > v62) {
@@ -142,13 +103,13 @@ Object *TWindowCtrl_ctor_8c0dc9ac(Object *o, int a1)
     if (t7 != 0) {
         call_8c103424(t7);
     }
-    o->f44 = (Arg0_44 *)t7;
+    o->f44 = (TWindowCtrl_p44 *)t7;
     o->f44->f04 |= 4;
     t8 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x3c);
     if (t8 != 0) {
         TWindowChat_ctor_8c1dca80((void *)t8, (int)g_8c44be84, (int)(((char *)o + 0x78)));
     }
-    o->f54 = (Arg0_54 *)t8;
+    o->f54 = (TWindowCtrl_p54 *)t8;
     o->f54->f22 |= 0x40;
     v144 = (int)0;
     while (4 > v144) {

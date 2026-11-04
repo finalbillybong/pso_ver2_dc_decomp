@@ -723,6 +723,10 @@ def emit_header(classes, layout_, evidence_by_id=None):
             if t == '<ptr>':
                 t = 'struct ' + pointer_tag(name, f['offset']) + '*'
             dims = ''.join('[0x%x]' % d for d in f['dims'])
+            if '(*)' in t:
+                lines.append('    %s;' % t.replace('(*)', '(*%s%s)' % (f['name'], dims), 1))
+                offset = f['offset'] + f['size']
+                continue
             stars = len(t) - len(t.rstrip('*'))
             lines.append('    %s %s%s%s;' % (t.rstrip('*').strip(), '*' * stars, f['name'], dims))
         offset = f['offset'] + f['size']

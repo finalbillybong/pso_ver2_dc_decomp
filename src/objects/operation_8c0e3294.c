@@ -1,26 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSimpleStatus.h"
 typedef struct S_g8c4e2ba4 S_g8c4e2ba4;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x40];
-    float f60;
-    char unknown64[0x18];
-    int f7c;
-    int f80;
-};
 extern int g_8c307768;
 extern S_g8c4e2ba4 *g_8c4e2ba4;
 extern void operation_8c0db20c(void *, int, int);
-Object *TWindowSimpleStatus_ctor_8c0e3294(Object *o, int a1)
+TWindowSimpleStatus *TWindowSimpleStatus_ctor_8c0e3294(TWindowSimpleStatus *o, int a1)
 {
     int v1;
     operation_8c0db20c((void *)o, (int)((void *)0x8c307824), (int)g_8c4e2ba4);

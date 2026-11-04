@@ -1,20 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemWpnOnSpreadGunB.h"
 typedef struct Frame Frame;
 typedef struct S_g8c44be9c S_g8c44be9c;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-    char unknown140[0xf4];
-    float f234;
-    int f238;
-};
-struct Arg0_13c {
+typedef struct TItemWpnOnSpreadGunB_p13c TItemWpnOnSpreadGunB_p13c;
+struct TItemWpnOnSpreadGunB_p13c {
     char unknown0[0x64];
     int f64;
 };
@@ -30,8 +18,8 @@ extern S_g8c44be9c *g_8c44be9c;
 extern void operation_8c172c50(void *, float, float);
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(int);
-extern void call_8c175918(void *, Object *, int, void *, Frame *);
-void TItemWpnOnSpreadGunB_v53_8c252844(Object *o)
+extern void call_8c175918(void *, TItemWpnOnSpreadGunB *, int, void *, Frame *);
+void TItemWpnOnSpreadGunB_v53_8c252844(TItemWpnOnSpreadGunB *o)
 {
     Frame frame;
     char *v24;

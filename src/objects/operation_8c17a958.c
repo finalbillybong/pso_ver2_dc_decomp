@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x2b4];
-    int f2b4;
-};
+#include "src/include/classes/TItemWpnPsychowand.h"
 extern void operation_8c172c30(void *, int, int);
 extern void call_8c172c50(void *, float, float);
-void TItemWpnPsychowand_v51_8c17a958(Object *o)
+void TItemWpnPsychowand_v51_8c17a958(TItemWpnPsychowand *o)
 {
     operation_8c172c30((void *)(&o->f2b4), 0x38e, 0x2aaa);
     if (o->f2b4 == 0x2aaa) {

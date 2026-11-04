@@ -1,25 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemWpnYasumuraShiki2.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-    char unknown140[0xe4];
-    short f224;
-    char unknown226[0x1e];
-    int f244;
-};
+typedef struct TItemWpnYasumuraShiki2_p13c TItemWpnYasumuraShiki2_p13c;
 struct Frame {
     char unknown0[0xc];
 };
-extern void call_8c075894(Object *, void *, int, Frame *);
+extern void call_8c075894(TItemWpnYasumuraShiki2 *, void *, int, Frame *);
 extern void create_effect_777c(void *, int);
-void TItemWpnYasumuraShiki2_v49_8c24f4f4(Object *o)
+void TItemWpnYasumuraShiki2_v49_8c24f4f4(TItemWpnYasumuraShiki2 *o)
 {
     Frame frame;
     o->f244 = 2;

@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
+#include "src/include/classes/TItemWpnFlowerCane.h"
 extern void call_8c075398(void);
-Object *TItemWpnFlowerCane_ctor_8c23d138(Object *o)
+TItemWpnFlowerCane *TItemWpnFlowerCane_ctor_8c23d138(TItemWpnFlowerCane *o)
 {
     call_8c075398();
     o->dispatch = (void *)0x8c27a8a0;

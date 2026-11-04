@@ -1,27 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x200];
-    float f220;
-    short f224;
-    char unknown226[0x2];
-    void *f228;
-    void *f22c;
-    void *f230;
-    float f234;
-    int f238;
-};
+#include "src/include/classes/TItemWpnOnSpreadGunB.h"
 extern void operation_8c241158(void *);
-Object *TItemWpnOnSpreadGunB_ctor_8c2527b0(Object *o)
+TItemWpnOnSpreadGunB *TItemWpnOnSpreadGunB_ctor_8c2527b0(TItemWpnOnSpreadGunB *o)
 {
     operation_8c241158((void *)o);
     o->dispatch = (void *)0x8c27fb60;

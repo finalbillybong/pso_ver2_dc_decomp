@@ -1,10 +1,6 @@
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x22];
-    short f22;
-};
-extern void call_8c2269a8(Object *);
-void TWindowSetLevelUp_update_8c22697c(Object *o)
+#include "src/include/classes/TWindowSetLevelUp.h"
+extern void call_8c2269a8(TWindowSetLevelUp *);
+void TWindowSetLevelUp_update_8c22697c(TWindowSetLevelUp *o)
 {
     short v1;
     v1 = o->f22;

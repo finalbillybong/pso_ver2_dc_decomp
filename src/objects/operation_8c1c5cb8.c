@@ -1,29 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    short f04;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    short f20;
-    char unknown22[0x2];
-    int f24;
-    int f28;
-    int f2c;
-    char unknown30[0x10];
-    int f40;
-    float f44;
-    float f48;
-    float f4c;
-};
+#include "src/include/classes/TItemEffHeaven.h"
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TItemEffHeaven_ctor_8c1c5cb8(Object *o, int a1, int a2, int a3, int a4)
+TItemEffHeaven *TItemEffHeaven_ctor_8c1c5cb8(TItemEffHeaven *o, int a1, int a2, int a3, int a4)
 {
     int v1;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);

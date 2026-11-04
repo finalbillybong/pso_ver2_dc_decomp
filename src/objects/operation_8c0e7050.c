@@ -1,24 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemProArmor.h"
 typedef struct Arg1 Arg1;
 struct Arg1 {
     char unknown0[0x5];
     char f05;
 };
-struct Object {
-    char unknown0[0x1d8];
-    unsigned char f1d8;
-    unsigned char f1d9;
-    unsigned char f1da;
-};
 extern int operation_8c073e5c(void *, void *);
 extern void call_8c1c9334(Arg1 *, int);
 extern void call_8c1c9340(Arg1 *, int);
-int TItemProArmor_v31_8c0e7050(Object *o, Arg1 *a1)
+int TItemProArmor_v31_8c0e7050(TItemProArmor *o, Arg1 *a1)
 {
     int t1;
     t1 = operation_8c073e5c((void *)o, (void *)a1);

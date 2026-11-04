@@ -1,23 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_2c Arg0_2c;
-struct Object {
-    char unknown0[0x24];
-    int f24;
-    int f28;
-    Arg0_2c *f2c;
-};
+#include "src/include/classes/TItemTexLoad.h"
+typedef struct TItemTexLoad_p2c TItemTexLoad_p2c;
 extern int ADXF_GetStat_8c34da3c(void *);
 extern void call_8c34d4e8(void *);
 extern int operation_8c03ed64(void);
 extern void operation_8c22c1c4(void *);
 extern void operation_8c22c190(void *);
 extern void operation_8c22c100(void *, int);
-void TItemTexLoad_update_8c22bfcc(Object *o)
+void TItemTexLoad_update_8c22bfcc(TItemTexLoad *o)
 {
     char *v41;
     char *v1;

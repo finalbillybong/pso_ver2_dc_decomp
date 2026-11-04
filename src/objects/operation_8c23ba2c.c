@@ -1,8 +1,4 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemEffDevilCane.h"
 typedef struct Block20 {
     int words[5];
 } Block20;
@@ -10,19 +6,8 @@ typedef struct S_c8c0744dc S_c8c0744dc;
 typedef struct S_c8c0744dc_13c S_c8c0744dc_13c;
 typedef struct Frame Frame;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_24 Arg0_24;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    Arg0_20 *f20;
-    Arg0_24 *f24;
-    int f28;
-};
+typedef struct TItemEffDevilCane_p20 TItemEffDevilCane_p20;
+typedef struct TItemEffDevilCane_p24 TItemEffDevilCane_p24;
 struct S_c8c0744dc {
     char unknown0[0x13c];
     S_c8c0744dc_13c *f13c;
@@ -36,11 +21,11 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern S_c8c0744dc *find_record_8c0744dc(int);
 extern int operation_8c075894(void *, void *, int, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void TEffStarLight2D_ctor_8c245d6c(int, void *, void *, Object *);
-Object *TItemEffDevilCane_ctor_8c23ba2c(Object *o, int a1, int a2, int a3)
+extern void TEffStarLight2D_ctor_8c245d6c(int, void *, void *, TItemEffDevilCane *);
+TItemEffDevilCane *TItemEffDevilCane_ctor_8c23ba2c(TItemEffDevilCane *o, int a1, int a2, int a3)
 {
     Frame frame;
-    Object **home = &o;
+    TItemEffDevilCane **home = &o;
     S_c8c0744dc *t1;
     int t2;
     int t3;
@@ -49,8 +34,8 @@ Object *TItemEffDevilCane_ctor_8c23ba2c(Object *o, int a1, int a2, int a3)
     o->dispatch = (void *)0x8c27a270;
     o->tag = (int)(*(int *)0x8c33a4f4);
     o->size = 0x2c;
-    o->f20 = (Arg0_20 *)a2;
-    o->f24 = (Arg0_24 *)a3;
+    o->f20 = (TItemEffDevilCane_p20 *)a2;
+    o->f24 = (TItemEffDevilCane_p24 *)a3;
     o->f28 = 0;
     t1 = find_record_8c0744dc((int)(o->f20));
     if (t1 != 0) {

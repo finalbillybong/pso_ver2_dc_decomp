@@ -1,19 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubGameEnd.h"
 typedef struct S_g8c44be84 S_g8c44be84;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 typedef struct S_g8c4dbde0 S_g8c4dbde0;
-typedef struct Object Object;
-typedef struct Arg0_24 Arg0_24;
-struct Object {
-    char unknown0[0x24];
-    Arg0_24 *f24;
-    int f28;
-};
-struct Arg0_24 {
+typedef struct TWindowSubGameEnd_p24 TWindowSubGameEnd_p24;
+struct TWindowSubGameEnd_p24 {
     char unknown0[0x80];
     unsigned short f80;
 };
@@ -25,7 +15,7 @@ extern int operation_8c1571f4(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
 extern void operation_8c015ab4(void);
-void TWindowSubGameEnd_update_8c198840(Object *o)
+void TWindowSubGameEnd_update_8c198840(TWindowSubGameEnd *o)
 {
     int t1;
     int t2;

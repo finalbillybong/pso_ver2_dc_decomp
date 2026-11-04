@@ -1,25 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemWpnYasuShotGun.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x13c];
-    Arg0_13c *f13c;
-    char unknown140[0xe4];
-    short f224;
-    char unknown226[0xe];
-    int f234;
-};
+typedef struct TItemWpnYasuShotGun_p13c TItemWpnYasuShotGun_p13c;
 struct Frame {
     char unknown0[0xc];
 };
-extern void call_8c075894(Object *, void *, int, Frame *);
+extern void call_8c075894(TItemWpnYasuShotGun *, void *, int, Frame *);
 extern void create_effect_777c(void *, int);
-void TItemWpnYasuShotGun_v49_8c24f810(Object *o)
+void TItemWpnYasuShotGun_v49_8c24f810(TItemWpnYasuShotGun *o)
 {
     Frame frame;
     o->f234 = 2;

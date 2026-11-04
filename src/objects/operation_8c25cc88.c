@@ -1,30 +1,15 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemReverseTech.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 typedef struct S_g8c513420 S_g8c513420;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x4];
-    int f24;
-    int f28;
-};
 extern char g_8c3404e0[];
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void TItemReverseTechPart1_ctor_8c25ce38(int, Object *, void *);
-extern void call_8c225f04(int, Object *);
+extern void TItemReverseTechPart1_ctor_8c25ce38(int, TItemReverseTech *, void *);
+extern void call_8c225f04(int, TItemReverseTech *);
 extern void call_8c1003d0(void *);
-Object *TItemReverseTech_ctor_8c25cc88(Object *o, int a1)
+TItemReverseTech *TItemReverseTech_ctor_8c25cc88(TItemReverseTech *o, int a1)
 {
-    Object **home = &o;
+    TItemReverseTech **home = &o;
     int t1;
     int t2;
     (void)home;

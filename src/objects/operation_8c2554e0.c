@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x142];
-    short f142;
-};
-extern void call_8c255408(Object *, int);
-void TItemProShieldModel_v26_8c2554e0(Object *o)
+#include "src/include/classes/TItemProShieldModel.h"
+extern void call_8c255408(TItemProShieldModel *, int);
+void TItemProShieldModel_v26_8c2554e0(TItemProShieldModel *o)
 {
     call_8c255408(o, (int)(o->f142));
 }

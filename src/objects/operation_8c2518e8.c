@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x1d0];
-    int f1d0;
-    int f1d4;
-    char unknown1d8[0x5c];
-    int f234;
-};
+#include "src/include/classes/TItemWpnOnRocketPunch.h"
 extern void call_8c3aa716(int);
-void TItemWpnOnRocketPunch_v57_8c2518e8(Object *o)
+void TItemWpnOnRocketPunch_v57_8c2518e8(TItemWpnOnRocketPunch *o)
 {
     int v1;
     int v2;

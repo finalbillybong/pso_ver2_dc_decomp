@@ -1,38 +1,22 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubCustomSelect.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
-typedef struct Arg0_88 Arg0_88;
-typedef struct Arg0_8c Arg0_8c;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x2c];
-    int f64;
-    char unknown68[0x1b];
-    char f83;
-    char unknown84[0x4];
-    Arg0_88 *f88;
-    Arg0_8c *f8c;
-};
+typedef struct TWindowSubCustomSelect_p88 TWindowSubCustomSelect_p88;
+typedef struct TWindowSubCustomSelect_p8c TWindowSubCustomSelect_p8c;
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
 };
 extern char g_8c41cba0[];
-extern void call_8c199388(Object *);
+extern void call_8c199388(TWindowSubCustomSelect *);
 extern int operation_8c01d8a8(void *, int);
 extern void operation_8c199578(void *);
 extern void operation_8c1995bc(void *);
 extern void position_indexed_label(void *);
 extern void call_8c199b74(void *);
 extern void call_8c199bc4(void *);
-extern void call_8c0db30c(Object *);
+extern void call_8c0db30c(TWindowSubCustomSelect *);
 extern void update_view_nodes(void *, void *);
-void TWindowSubCustomSelect_update_8c198f70(Object *o)
+void TWindowSubCustomSelect_update_8c198f70(TWindowSubCustomSelect *o)
 {
     int t1;
     int t2;
@@ -60,8 +44,8 @@ L_8c198fb4:;
 L_8c198fd2:;
     position_indexed_label((void *)o);
     if (!(7.5f > (float)o->f64)) {
-        call_8c199b74((void *)(o->f88));
-        call_8c199bc4((void *)(o->f8c));
+        call_8c199b74((void *)(o->second));
+        call_8c199bc4((void *)(o->first));
     }
     call_8c0db30c(o);
     update_view_nodes((void *)o, (void *)(((char *)o + 0x2c)));

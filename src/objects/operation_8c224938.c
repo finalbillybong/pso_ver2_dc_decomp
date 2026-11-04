@@ -1,38 +1,22 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubSymbolChatParts.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
-typedef struct Arg0_98 Arg0_98;
-typedef struct Arg0_9c Arg0_9c;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x2c];
-    int f64;
-    char unknown68[0x18];
-    char f80;
-    char unknown81[0x17];
-    Arg0_98 *f98;
-    Arg0_9c *f9c;
-};
+typedef struct TWindowSubSymbolChatParts_p98 TWindowSubSymbolChatParts_p98;
+typedef struct TWindowSubSymbolChatParts_p9c TWindowSubSymbolChatParts_p9c;
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
 };
 extern char g_8c41cba0[];
-extern void call_8c225034(Object *);
+extern void call_8c225034(TWindowSubSymbolChatParts *);
 extern int operation_8c01d8a8(void *, int);
 extern void operation_8c225228(void *);
-extern void call_8c22529c(Object *);
+extern void call_8c22529c(TWindowSubSymbolChatParts *);
 extern void operation_8c225338(void *);
 extern void position_indexed_label_8c22519c(void *);
 extern void call_8c199b74(void *);
 extern void call_8c199bc4(void *);
-extern void call_8c0db30c(Object *);
-void TWindowSubSymbolChatParts_update_8c224938(Object *o)
+extern void call_8c0db30c(TWindowSubSymbolChatParts *);
+void TWindowSubSymbolChatParts_update_8c224938(TWindowSubSymbolChatParts *o)
 {
     int t1;
     int t2;
@@ -63,8 +47,8 @@ L_8c22497c:;
 L_8c2249ac:;
     position_indexed_label_8c22519c((void *)o);
     if (!(7.5f > (float)o->f64)) {
-        call_8c199b74((void *)(o->f98));
-        call_8c199bc4((void *)(o->f9c));
+        call_8c199b74((void *)(o->second));
+        call_8c199bc4((void *)(o->first));
     }
     call_8c0db30c(o);
 }

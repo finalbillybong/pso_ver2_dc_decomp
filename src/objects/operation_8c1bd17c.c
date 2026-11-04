@@ -1,34 +1,20 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_78 Arg0_78;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x2c];
-    int f64;
-    unsigned short f68;
-    char unknown6a[0xe];
-    Arg0_78 *f78;
-};
+#include "src/include/classes/TWindowInputNumber.h"
+typedef struct TWindowInputNumber_p78 TWindowInputNumber_p78;
 extern char g_8c41cba0[];
 extern int operation_8c01d844(int, int, int, int);
-extern void call_8c1bdafc(Object *);
-extern void call_8c1bdc24(Object *);
-extern void call_8c1bda48(Object *);
+extern void call_8c1bdafc(TWindowInputNumber *);
+extern void call_8c1bdc24(TWindowInputNumber *);
+extern void call_8c1bda48(TWindowInputNumber *);
 extern void operation_8c1bdaa4(void *);
 extern int operation_8c01d858(int, int, int, int);
 extern int operation_8c01d8a8(void *, int);
 extern void operation_8c1bdd4c(void *);
-extern void call_8c1bddbc(Object *);
+extern void call_8c1bddbc(TWindowInputNumber *);
 extern void call_8c199b74(void *);
-extern void call_8c0db30c(Object *);
+extern void call_8c0db30c(TWindowInputNumber *);
 extern void interpolate_view_parameters(void *);
 extern void update_view_nodes(void *, void *);
-void TWindowInputNumber_update_8c1bd17c(Object *o)
+void TWindowInputNumber_update_8c1bd17c(TWindowInputNumber *o)
 {
     int v4;
     int v9;
@@ -62,14 +48,14 @@ void TWindowInputNumber_update_8c1bd17c(Object *o)
     if (((o->f34 & 2)) == 0) {
         o->f64 = 0x1000000;
     }
-    if (((o->f68 & 2)) != 0) {
+    if (((o->flags & 2)) != 0) {
     } else {
-        if (((o->f68 & 0x10)) == 0) {
+        if (((o->flags & 0x10)) == 0) {
         } else {
             int v3 = (int)(g_8c41cba0 + 0x20);
             t1 = operation_8c01d844(v3, 0x10, 6, 1);
             if (t1 == 0) {
-                if (((o->f68 & 0x20)) != 0) {
+                if (((o->flags & 0x20)) != 0) {
                     v4 = (int)0;
                 } else {
                     t9 = operation_8c01d844((int)(g_8c41cba0 + 0x110), 0x10, 6, 1);
@@ -83,7 +69,7 @@ void TWindowInputNumber_update_8c1bd17c(Object *o)
 L_8c1bd1fe:;
             t2 = operation_8c01d844(v3, 0x20, 6, 1);
             if (t2 == 0) {
-                if (((o->f68 & 0x20)) != 0) {
+                if (((o->flags & 0x20)) != 0) {
                     v9 = (int)0;
                 } else {
                     t10 = operation_8c01d844((int)(g_8c41cba0 + 0x110), 0x20, 6, 1);
@@ -97,7 +83,7 @@ L_8c1bd1fe:;
 L_8c1bd24a:;
             t3 = operation_8c01d844(v3, 0x40, 6, 1);
             if (t3 == 0) {
-                if (((o->f68 & 0x20)) != 0) {
+                if (((o->flags & 0x20)) != 0) {
                     v14 = (int)0;
                 } else {
                     t11 = operation_8c01d844((int)(g_8c41cba0 + 0x110), 0x40, 6, 1);
@@ -111,7 +97,7 @@ L_8c1bd24a:;
 L_8c1bd296:;
             t4 = operation_8c01d844(v3, 0x80, 6, 1);
             if (t4 == 0) {
-                if (((o->f68 & 0x20)) != 0) {
+                if (((o->flags & 0x20)) != 0) {
                     v19 = (int)0;
                 } else {
                     t12 = operation_8c01d844((int)(g_8c41cba0 + 0x110), 0x80, 6, 1);
@@ -127,7 +113,7 @@ L_8c1bd296:;
         v28 = (int)(g_8c41cba0 + 0x20);
         t5 = operation_8c01d858(v28, 0x10, 6, 1);
         if (t5 == 0) {
-            if (((o->f68 & 0x20)) != 0) {
+            if (((o->flags & 0x20)) != 0) {
                 v29 = (int)0;
             } else {
                 t13 = operation_8c01d844((int)(g_8c41cba0 + 0x110), 0x10, 6, 1);
@@ -141,7 +127,7 @@ L_8c1bd296:;
 L_8c1bd34e:;
         t6 = operation_8c01d858(v28, 0x20, 6, 1);
         if (t6 == 0) {
-            if (((o->f68 & 0x20)) != 0) {
+            if (((o->flags & 0x20)) != 0) {
                 v34 = (int)0;
             } else {
                 t14 = operation_8c01d844((int)(g_8c41cba0 + 0x110), 0x20, 6, 1);
@@ -155,7 +141,7 @@ L_8c1bd34e:;
 L_8c1bd39e:;
         t7 = operation_8c01d858(v28, 0x40, 6, 1);
         if (t7 == 0) {
-            if (((o->f68 & 0x20)) != 0) {
+            if (((o->flags & 0x20)) != 0) {
                 v39 = (int)0;
             } else {
                 t15 = operation_8c01d844((int)(g_8c41cba0 + 0x110), 0x40, 6, 1);
@@ -169,7 +155,7 @@ L_8c1bd39e:;
 L_8c1bd3ee:;
         t8 = operation_8c01d858(v28, 0x80, 6, 1);
         if (t8 == 0) {
-            if (((o->f68 & 0x20)) != 0) {
+            if (((o->flags & 0x20)) != 0) {
                 v44 = (int)0;
             } else {
                 t16 = operation_8c01d844((int)(g_8c41cba0 + 0x110), 0x80, 6, 1);
@@ -182,7 +168,7 @@ L_8c1bd3ee:;
         operation_8c1bdaa4((void *)o);
 L_8c1bd442:;
         if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-            if (((o->f68 & 0x20)) != 0) {
+            if (((o->flags & 0x20)) != 0) {
                 v50 = (int)0;
             } else {
                 t17 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
@@ -195,7 +181,7 @@ L_8c1bd442:;
         operation_8c1bdd4c((void *)o);
 L_8c1bd488:;
         if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-            if (((o->f68 & 0x20)) != 0) {
+            if (((o->flags & 0x20)) != 0) {
                 v55 = (int)0;
             } else {
                 t18 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
@@ -208,8 +194,8 @@ L_8c1bd488:;
         call_8c1bddbc(o);
     }
 L_8c1bd4c8:;
-    if (o->f78 != 0 && !(7.5f > (float)o->f64)) {
-        call_8c199b74((void *)(o->f78));
+    if (o->state != 0 && !(7.5f > (float)o->f64)) {
+        call_8c199b74((void *)(o->state));
     }
     call_8c0db30c(o);
     interpolate_view_parameters((void *)o);
