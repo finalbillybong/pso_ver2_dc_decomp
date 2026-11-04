@@ -9,7 +9,7 @@
   "todo_holes": false,
   "steering_forms": false
  },
- "count": 2451,
+ "count": 2449,
  "entries": [
   {
    "address": "0x8c0102e4",
@@ -1352,27 +1352,6 @@
     "call_8c3be280": "0x8c3be280",
     "g_8c46ee84": "0x8c46ee84",
     "project_point_to_screen_8c38ad50": "0x8c38ad50"
-   }
-  },
-  {
-   "address": "0x8c01dea8",
-   "file": "nonmatching/objects/operation_8c01dea8.c",
-   "function": "operation_8c01dea8",
-   "language": "c",
-   "reference_size": 572,
-   "compiled_size": 572,
-   "differing_lines": 24,
-   "differing_bytes": 12,
-   "provenance": "hand pass on a generator draft (behaviour reviewed)",
-   "class_header": null,
-   "symbols": {
-    "call_8c36a9fe": "0x8c36a9fe",
-    "g_8c41cba0": "0x8c41cba0",
-    "g_8c41ccec": "0x8c41ccec",
-    "g_8c41ccfc": "0x8c41ccfc",
-    "g_8c41cd00": "0x8c41cd00",
-    "operation_8c01d8d4": "0x8c01d8d4",
-    "pd_init_print_banner_8c36aa08": "0x8c36aa08"
    }
   },
   {
@@ -4437,36 +4416,6 @@
    "class_header": null,
    "symbols": {
     "g_8c2efec8": "0x8c2efec8"
-   }
-  },
-  {
-   "address": "0x8c040ab8",
-   "file": "nonmatching/objects/TQuadSpriteScl_render_8c040ab8.c",
-   "function": "TQuadSpriteScl_render_8c040ab8",
-   "language": "c",
-   "reference_size": 600,
-   "compiled_size": 600,
-   "differing_lines": 34,
-   "differing_bytes": 23,
-   "provenance": "hand pass on a generator draft (behaviour reviewed)",
-   "class_header": null,
-   "symbols": {
-    "call_8c3827d8": "0x8c3827d8",
-    "call_8c3be280": "0x8c3be280",
-    "g_8c575528": "0x8c575528",
-    "g_8c57555c": "0x8c57555c",
-    "g_8c575560": "0x8c575560",
-    "reset_manager_record_slots": "0x8c0401fc",
-    "reset_state_8c391c94": "0x8c391c94",
-    "reset_state_8c391cc4": "0x8c391cc4",
-    "restore_child_blend": "0x8c0c532c",
-    "set_blend_5_6": "0x8c0c5364",
-    "set_blend_5_7": "0x8c0c5348",
-    "set_child_blend": "0x8c0c5310",
-    "sq_flush_8c38af12": "0x8c38af12",
-    "sq_header_8c38af22": "0x8c38af22",
-    "sq_quad_8c38b09e": "0x8c38b09e",
-    "sq_select_8c38aeb4": "0x8c38aeb4"
    }
   },
   {
@@ -21975,7 +21924,6 @@
    "symbols": {
     "TObject_debug_describe_8c033330": "0x8c033330",
     "call_8c01daf0": "0x8c01daf0",
-    "call_8c01dea8": "0x8c01dea8",
     "call_8c05f9e4": "0x8c05f9e4",
     "call_8c36a868": "0x8c36a868",
     "call_8c36a880": "0x8c36a880",
@@ -21988,6 +21936,7 @@
     "g_8c470365": "0x8c470365",
     "hierarchy_output_cycle": "0x8c03385c",
     "operation_8c01d8a8": "0x8c01d8a8",
+    "operation_8c01dea8": "0x8c01dea8",
     "operation_8c04b230": "0x8c04b230",
     "operation_8c17e194": "0x8c17e194",
     "process_file_task_queue": "0x8c0410b4",

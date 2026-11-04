@@ -21,7 +21,7 @@
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/extracts.json": "a55025a7acfd480df3b59f796c29ce7b33ed43289007106a840998d18c92d3ff",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "bfffe0c8455bb2b5b25e71f10639d556693d6dbc08176576a09ee5e4829f48a9",
+    "config/project.json": "a466af6b35767f061b15dddc068f6a118f1fc6a8581f711e3180373e3b582d92",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/data/strings_8c284858.c": "cb16255c8ce183afbcb89c956a8f571e4ce6ef906acf5d31baea03f9d8066228",
@@ -6434,6 +6434,7 @@
     "src/objects/operation_8c01d988.c": "0f90f9d482be6679eb8552de38f7f67142e6be45871e698344ce117c92eef072",
     "src/objects/operation_8c01d9dc.c": "a0520ecffc5871451dea09967480ab0bea3c1bbc86fd90ba43eda4ffaedcbbaf",
     "src/objects/operation_8c01da7c.c": "525ed2e6409de209968442ee4ff1f564a109a7a106b9054e890b5e9030c870f3",
+    "src/objects/operation_8c01dea8.c": "84c00ead503c8d63888c7ed8d8eb681776d46869afdfa2277d4f96a92502d0d4",
     "src/objects/operation_8c01e0e4.c": "0096833493182248166bfb633adadba9ba7e167ee7296ddbd109deff8c2feeeb",
     "src/objects/operation_8c01e148.c": "9dfbb1a4050b389d2bdb9fd0196e19f5ac981721c9045e63872cc7f711e37a16",
     "src/objects/operation_8c01e1ac.c": "b027a45388eefd205ce82182bbe6ada22f76358401a713a2f43bee6cb30d48da",
@@ -7031,6 +7032,7 @@
     "src/objects/operation_8c040034.c": "c065c9f5b03f9c601252dc6444fa4238c8138f6bd7c28a609f10d3a44ab181b3",
     "src/objects/operation_8c0400b0.c": "c26c524738426728bc168f3aac6e3fc492efdf69e82681952e67a42c18ff28c6",
     "src/objects/operation_8c040804.c": "7d9bb12a1fbf3552c9d6fc35330f8c559f64f337f6e9d29a250d8fe18825e645",
+    "src/objects/operation_8c040ab8.c": "247058cae60185a4bec470f04d1ac5fdf2418a4d0587d1cf68ff4eeb62199f91",
     "src/objects/operation_8c045484.cpp": "8ecbf06ea142597b0696186a1a8497f6c9acc2e9e982842b0b0fa81f5823c115",
     "src/objects/operation_8c046140.c": "2619bdaab451cf3d143c0e32a7a809cc28801c02446ed5fd91b17b302bf4d297",
     "src/objects/operation_8c0461f8.cpp": "a0af2fbf521ad29f4d97652ba3e616e1a4fb1275b981a4f5a6893d6d276ef14b",
@@ -19302,6 +19304,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c01dea8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "operation_8c01e0e4": [
       "-proc",
       "SH4",
@@ -28343,6 +28356,17 @@
       "-O2"
     ],
     "destroy_object_8c040a74": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c040ab8": [
       "-proc",
       "SH4",
       "-endian",

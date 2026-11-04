@@ -1,17 +1,3 @@
-/* NON-MATCHING draft: not built, not admitted, earns no matching or progress credit.
- * address: 0x8c040ab8
- * function: TQuadSpriteScl_render_8c040ab8
- * language: c
- * reference size: 600 bytes
- * compiled size: 600 bytes (+0.0%)
- * differing lines: 34 of 267 reference instruction lines
- * differing bytes: 23
- * provenance: hand pass on a generator draft (behaviour reviewed)
- * known gaps: hand-revised from a generator draft; review reports remaining differences in
- *   register allocation, stack frame and spills, instruction or operand order; review found and
- *   fixed behaviour defects of the generator draft; not proven equivalent to the original
- * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
- */
 typedef struct Vector3 {
     float x;
     float y;
@@ -84,25 +70,24 @@ extern void sq_quad_8c38b09e(float *, float);
 extern void sq_flush_8c38af12(void);
 extern void reset_state_8c391cc4(void);
 extern void reset_manager_record_slots(void *);
-void TQuadSpriteScl_render_8c040ab8(Object *o)
+void operation_8c040ab8(Object *o)
 {
     Frame frame;
     int fl;
-    float sy0;
+    float a;
     float sx0;
+    float sy0;
     float cx;
     float cy;
     int i;
     Sprite *s;
     Rec *r;
-    float z;
-    float x;
-    float sy;
-    float sx;
-    float y;
-    float w;
-    float h;
     float inv;
+    float x;
+    float y;
+    float sx;
+    float sy;
+    float z;
     Def *d;
     if (o->f28 == 0) {
         return;
@@ -119,10 +104,9 @@ void TQuadSpriteScl_render_8c040ab8(Object *o)
     } else {
         set_child_blend();
     }
-    sy0 = g_8c575528.f00;
-    sx0 = sy0;
-    sy0 *= g_8c575560;
-    sx0 *= g_8c57555c;
+    a = g_8c575528.f00;
+    sx0 = a * g_8c57555c;
+    sy0 = a * g_8c575560;
     cx = g_8c575528.f0c;
     cy = g_8c575528.f10;
     sq_select_8c38aeb4(1);
@@ -160,12 +144,14 @@ void TQuadSpriteScl_render_8c040ab8(Object *o)
                     sx = 1.0f;
                     sy = sx;
                 }
-                w = sx * o->f2c->f14 * s->w;
-                h = sy * o->f2c->f18 * s->h;
-                frame.x0 = x - w;
-                frame.x1 = x + w;
-                frame.y0 = y - h;
-                frame.y1 = y + h;
+                sx *= o->f2c->f14;
+                sy *= o->f2c->f18;
+                sx *= s->w;
+                sy *= s->h;
+                frame.x0 = x - sx;
+                frame.x1 = x + sx;
+                frame.y0 = y - sy;
+                frame.y1 = y + sy;
                 sq_quad_8c38b09e(&frame.x0, inv);
             }
         }

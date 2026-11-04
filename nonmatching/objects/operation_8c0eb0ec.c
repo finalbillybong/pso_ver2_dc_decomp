@@ -75,7 +75,7 @@ extern S_g8c470360 *g_8c470360;
 extern char g_8c470365;
 extern S_L8c41cba0 g_8c41cba0;
 extern void call_8c01daf0(void);
-extern void call_8c01dea8(void);
+extern void operation_8c01dea8(void);
 extern void call_8c36a880(void);
 extern int call_8c36a868(void);
 extern void operation_8c04b230(float, float, int, int);
@@ -139,7 +139,7 @@ int operation_8c0eb0ec(int a0)
     (&frame)->f5c = 0.734375f;
     for (;;) {
         call_8c01daf0();
-        call_8c01dea8();
+        operation_8c01dea8();
         call_8c36a880();
         switch (call_8c36a868()) {
         case 6:
