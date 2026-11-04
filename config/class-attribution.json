@@ -53,6 +53,30 @@
     "layout_unique"
    ]
   },
+  "operation_8c022ca0": {
+   "class": "TObjPlayer",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0230e4": {
+   "class": "TObjPlayer",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0245a4": {
+   "class": "TObjPlayer",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c025570": {
+   "class": "TObjPlayer",
+   "signals": [
+    "slot"
+   ]
+  },
   "operation_8c0277bc": {
    "class": "TObjPlayer",
    "signals": [
@@ -61,6 +85,12 @@
    ]
   },
   "operation_8c02c984": {
+   "class": "TObjPlayer",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c02cc1c": {
    "class": "TObjPlayer",
    "signals": [
     "slot"
@@ -76,6 +106,12 @@
    "class": "TAdRicoRing",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c03ceac": {
+   "class": "TEditor",
+   "signals": [
+    "slot"
    ]
   },
   "operation_8c047438": {
@@ -101,6 +137,12 @@
    "class": "TObjEneBm3FlyNest",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c059d2c": {
+   "class": "TObjEneDD",
+   "signals": [
+    "slot"
    ]
   },
   "operation_8c05c1bc": {
@@ -142,6 +184,18 @@
     "layout"
    ]
   },
+  "operation_8c080460": {
+   "class": "TObjBattery",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c08046c": {
+   "class": "TObjBattery",
+   "signals": [
+    "slot"
+   ]
+  },
   "operation_8c080d70": {
    "class": "TObjLazerFenceNorm",
    "signals": [
@@ -154,6 +208,18 @@
    "signals": [
     "callers",
     "layout_any"
+   ]
+  },
+  "operation_8c0840a8": {
+   "class": "TOTrapAncient02R",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c08893c": {
+   "class": "TObjMapWarpAncient",
+   "signals": [
+    "slot"
    ]
   },
   "operation_8c088ff4": {
@@ -192,7 +258,43 @@
     "layout_unique"
    ]
   },
+  "operation_8c090b64": {
+   "class": "TObjEneMe1Canadin",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c090b88": {
+   "class": "TObjEneMe1Canadin",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c090bf8": {
+   "class": "TObjEneMe1Canadin",
+   "signals": [
+    "slot"
+   ]
+  },
   "operation_8c090d48": {
+   "class": "TObjEneMe1Canadin",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c091238": {
+   "class": "TObjEneMe1Canadin",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c094fb0": {
+   "class": "TObjEneMe1Canadin",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c09502c": {
    "class": "TObjEneMe1Canadin",
    "signals": [
     "slot"
@@ -221,6 +323,12 @@
    "class": "TOSwitchAttackSub",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c0b9f98": {
+   "class": "TTecGiZonde",
+   "signals": [
+    "slot"
    ]
   },
   "operation_8c0bc414": {
@@ -289,6 +397,24 @@
     "layout_unique"
    ]
   },
+  "operation_8c0ee1d8": {
+   "class": "TFontSmallTask",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c0ee300": {
+   "class": "TFontSmallTask",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c0f0400": {
+   "class": "TOWreckAncient",
+   "signals": [
+    "slot"
+   ]
+  },
   "operation_8c0f0474": {
    "class": "TOWreckAncient",
    "signals": [
@@ -337,10 +463,113 @@
     "layout_unique"
    ]
   },
+  "operation_8c0fd330": {
+   "class": "TOMine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0fd3cc": {
+   "class": "TOMine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0fd3dc": {
+   "class": "TOMine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0fd5f8": {
+   "class": "TOMine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0fd64c": {
+   "class": "TOMine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0fd718": {
+   "class": "TOMine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0fd740": {
+   "class": "TOMine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0fd8ec": {
+   "class": "TOMine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0fdbe0": {
+   "class": "TOMine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0fed40": {
+   "class": "TOMine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c0fed60": {
+   "class": "TOMine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c100024": {
+   "class": "TEffStarLightChild",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c10393c": {
+   "class": "TAdRicoRing",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1075c8": {
+   "class": "TItemEffHeaven",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1133cc": {
+   "class": "TOKey",
+   "signals": [
+    "layout_any",
+    "slot"
+   ]
+  },
+  "operation_8c113564": {
+   "class": "TOKey",
+   "signals": [
+    "slot"
+   ]
+  },
   "operation_8c1135b4": {
    "class": "TOKey",
    "signals": [
     "layout_unique",
+    "slot"
+   ]
+  },
+  "operation_8c1136b0": {
+   "class": "TOKey",
+   "signals": [
     "slot"
    ]
   },
@@ -356,6 +585,24 @@
    "signals": [
     "callers",
     "layout"
+   ]
+  },
+  "operation_8c11a1f0": {
+   "class": "TObjHashiBase",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c11a240": {
+   "class": "TObjHashiBase",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c11a3b0": {
+   "class": "TObjHashiBase",
+   "signals": [
+    "ctor"
    ]
   },
   "operation_8c128c7c": {
@@ -413,6 +660,30 @@
    "signals": [
     "callers",
     "layout_unique"
+   ]
+  },
+  "operation_8c1659ec": {
+   "class": "TBoss2Mine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c165b84": {
+   "class": "TBoss2Mine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c165c18": {
+   "class": "TBoss2Mine",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c165dac": {
+   "class": "TBoss2Mine",
+   "signals": [
+    "slot"
    ]
   },
   "operation_8c1660f0": {
@@ -488,6 +759,12 @@
     "layout_any"
    ]
   },
+  "operation_8c1a4264": {
+   "class": "TObjNpcHFW00",
+   "signals": [
+    "slot"
+   ]
+  },
   "operation_8c1a8f58": {
    "class": "TWindowSubTechnique",
    "signals": [
@@ -543,7 +820,25 @@
     "layout_unique"
    ]
   },
+  "operation_8c1c16dc": {
+   "class": "TObjCityDoor_Warp",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1c185c": {
+   "class": "TObjCityDoor_Warp",
+   "signals": [
+    "layout_unique"
+   ]
+  },
   "operation_8c1c18ac": {
+   "class": "TObjCityDoor_Warp",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c1c1920": {
    "class": "TObjCityDoor_Warp",
    "signals": [
     "layout_unique"
@@ -699,6 +994,18 @@
     "ctor"
    ]
   },
+  "operation_8c1e4160": {
+   "class": "TOContainerAncientItemCommon",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c1e4190": {
+   "class": "TOContainerAncientItemCommon",
+   "signals": [
+    "slot"
+   ]
+  },
   "operation_8c1e469c": {
    "class": "TObjContainerBase",
    "signals": [
@@ -709,6 +1016,24 @@
    "class": "TOContainerAncientEnemy",
    "signals": [
     "layout_any",
+    "slot"
+   ]
+  },
+  "operation_8c1e4a20": {
+   "class": "TOContainerAncientEnemy",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c1e4af4": {
+   "class": "TOContainerAncientEnemy",
+   "signals": [
+    "slot"
+   ]
+  },
+  "operation_8c1e4b64": {
+   "class": "TOContainerAncientEnemy",
+   "signals": [
     "slot"
    ]
   },
@@ -766,6 +1091,18 @@
    "class": "TObjEneSaver",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c1f1a9c": {
+   "class": "TWindowComCard",
+   "signals": [
+    "ctor"
+   ]
+  },
+  "operation_8c1f1b58": {
+   "class": "TWindowComCard",
+   "signals": [
+    "ctor"
    ]
   },
   "operation_8c207160": {
@@ -881,6 +1218,18 @@
     "layout_unique"
    ]
   },
+  "operation_8c237670": {
+   "class": "TWindowSubComCard",
+   "signals": [
+    "layout_unique"
+   ]
+  },
+  "operation_8c24c01c": {
+   "class": "TOVS2",
+   "signals": [
+    "slot"
+   ]
+  },
   "operation_8c24c4c4": {
    "class": "TOVS2",
    "signals": [
@@ -960,6 +1309,12 @@
    "signals": [
     "callers",
     "layout_unique"
+   ]
+  },
+  "word_operation_8c019b0c": {
+   "class": "TObjPlayer",
+   "signals": [
+    "slot"
    ]
   }
  }

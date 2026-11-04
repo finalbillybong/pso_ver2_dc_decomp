@@ -5,6 +5,10 @@
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TObjDoorKey_pXX`, completed by each unit. */
 #include "src/include/vector3.h"
+struct TOKey_p28;
+struct TOKey_p38;
+struct TOKey_p64;
+struct TOKey_pf4;
 struct TObjDoorKey_p12c;
 #ifdef __cplusplus
 class TObjDoorKey {
@@ -29,7 +33,7 @@ struct TObjDoorKey {
     virtual void v9();
     virtual void v10();
     virtual int v11(float, float);
-    virtual void v12();
+    virtual int v12(float, float, float);
     virtual void v13();
     virtual void v14();
     virtual void v15();
@@ -47,15 +51,27 @@ struct TObjDoorKey {
 #endif
     char pad_1c[0x2];
     short size;
-    char pad_20[0x14];
+    short f20;
+    char pad_22[0x6];
+    struct TOKey_p28 *f28;
+    char pad_2c[0x8];
     int f34;
-    char pad_38[0x4];
+    struct TOKey_p38 *f38;
     Vector3 f3c;
-    char pad_48[0x48];
+    char pad_48[0x1c];
+    struct TOKey_p64 *f64;
+    char pad_68[0x20];
+    int raw;
+    char pad_8c[0x4];
     int f90;
     char pad_94[0x44];
     int fd8;
-    char pad_dc[0x24];
+    char pad_dc[0xc];
+    float fe8;
+    char pad_ec[0x8];
+    struct TOKey_pf4 *ff4;
+    float ff8;
+    float ffc;
     int f100;
     float f104;
     int f108;

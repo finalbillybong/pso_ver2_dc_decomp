@@ -255,6 +255,16 @@ class Phase2RewriteTests(unittest.TestCase):
         self.assertNotIn('check_prefix', res['text'])
 
 
+class GapFillTests(unittest.TestCase):
+    def test_additive_accepts_gap_fill_and_rejects_changes(self):
+        old = 'struct TFoo {\n    char pad_0[0x8];\n    int f8;\n    char pad_c[0x4];\n};\n'
+        filled = 'struct TFoo {\n    char pad_0[0x8];\n    int f8;\n    float fc;\n};\n'
+        changed = 'struct TFoo {\n    char pad_0[0x8];\n    float f8;\n    char pad_c[0x4];\n};\n'
+        self.assertTrue(ct.additive(old, filled, 'TFoo'))
+        self.assertFalse(ct.additive(old, changed, 'TFoo'))
+        self.assertFalse(ct.additive(old, 'struct TFoo {\n    int f8;\n};\n', 'TFoo'))
+
+
 class RenameTests(unittest.TestCase):
     classes = MergeTests.classes
 

@@ -33,7 +33,11 @@ struct TItemShootBasyoSen2 {
     struct TItemShoot_p2c *f2c;
     struct TItemShoot_p30 *f30;
     int f34;
-    char pad_38[0x24];
+    char pad_38[0x4];
+    float f3c;
+    float f40;
+    float f44;
+    char pad_48[0x14];
     /* TItemShootModel */
     struct TItemShootModel_p5c *f5c;
     struct TItemShootModel_p60 *f60;

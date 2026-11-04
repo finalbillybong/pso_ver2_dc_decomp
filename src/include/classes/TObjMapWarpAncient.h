@@ -5,6 +5,7 @@
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TObjMapWarpAncient_pXX`, completed by each unit. */
 struct TObjMapWarpAncient_p64;
+struct TObjMapWarpAncient_pe8;
 struct TObjMapWarpAncient_p124;
 struct TObjMapWarpAncient_p128;
 struct TObjMapWarpAncient_p12c;
@@ -46,7 +47,9 @@ struct TObjMapWarpAncient {
     struct TObjMapWarpAncient_p64 *f64;
     char pad_68[0x24];
     int f8c;
-    char pad_90[0x90];
+    char pad_90[0x58];
+    struct TObjMapWarpAncient_pe8 *fe8;
+    char pad_ec[0x34];
     float f120;
     struct TObjMapWarpAncient_p124 *f124;
     struct TObjMapWarpAncient_p128 *f128;

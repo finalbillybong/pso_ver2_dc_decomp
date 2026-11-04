@@ -4,6 +4,9 @@
  * Inheritance: TOKey. Size 0x11c (constructor size field).
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TOKey_pXX`, completed by each unit. */
+struct TOKey_p28;
+struct TOKey_p38;
+struct TOKey_pf4;
 #ifdef __cplusplus
 class TOKey {
 public:
@@ -24,8 +27,8 @@ struct TOKey {
     virtual void v8();
     virtual void v9();
     virtual void v10();
-    virtual void v11();
-    virtual void v12();
+    virtual int v11(float, float);
+    virtual int v12(float, float, float);
     virtual void v13();
     virtual void v14();
     virtual void v15();
@@ -43,9 +46,21 @@ struct TOKey {
 #endif
     char pad_1c[0x2];
     short size;
-    char pad_20[0xb8];
+    short f20;
+    char pad_22[0x6];
+    struct TOKey_p28 *f28;
+    char pad_2c[0xc];
+    struct TOKey_p38 *f38;
+    char pad_3c[0x4c];
+    int raw;
+    char pad_8c[0x4c];
     int fd8;
-    char pad_dc[0x24];
+    char pad_dc[0xc];
+    float fe8;
+    char pad_ec[0x8];
+    struct TOKey_pf4 *ff4;
+    float ff8;
+    float ffc;
     int f100;
     float f104;
     int f108;

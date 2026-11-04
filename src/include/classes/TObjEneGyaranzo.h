@@ -74,7 +74,7 @@ struct TObjEneGyaranzo {
     virtual void v54();
     virtual void v55();
     virtual void v56();
-    virtual void v57();
+    virtual void v57(int);
     virtual void v58();
     virtual void v59();
     virtual void v60();

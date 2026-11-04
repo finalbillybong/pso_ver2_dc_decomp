@@ -16,7 +16,7 @@ public:
 #else
 struct TQuestThread {
 #endif
-    char pad_0[0x4];
+    int tag;
     short f04;
     char pad_6[0xa];
     struct TObject_p10 *f10;
@@ -30,7 +30,8 @@ struct TQuestThread {
 #else
     void *vtable;
 #endif
-    char pad_1c[0x4];
+    char pad_1c[0x2];
+    short size;
     /* TQuestThread */
     char pad_20[0x8];
     struct TQuestThread_p28 *f28;

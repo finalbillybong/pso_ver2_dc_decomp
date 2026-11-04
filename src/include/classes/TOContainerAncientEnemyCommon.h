@@ -4,7 +4,11 @@
  * Inheritance: TOContainerAncientEnemyCommon -> TOContainerAncientEnemy -> TObjContainerBase. Size 0x384 (constructor size field).
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TOContainerAncientEnemyCommon_pXX`, completed by each unit. */
+struct TObjContainerBase_p28;
+struct TObjContainerBase_p38;
 struct TObjContainerBase_p64;
+struct TObjContainerBase_p84;
+struct TObjContainerBase_p88;
 struct TObjContainerBase_p37c;
 #ifdef __cplusplus
 class TOContainerAncientEnemyCommon {
@@ -12,7 +16,7 @@ public:
 #else
 struct TOContainerAncientEnemyCommon {
 #endif
-    char pad_0[0x4];
+    int tag;
     short f04;
     char pad_6[0x12];
 #ifdef __cplusplus
@@ -108,9 +112,18 @@ struct TOContainerAncientEnemyCommon {
 #else
     void *dispatch;
 #endif
-    char pad_1c[0x48];
+    char pad_1c[0x4];
+    unsigned short f20;
+    char pad_22[0x6];
+    struct TObjContainerBase_p28 *f28;
+    char pad_2c[0xc];
+    struct TObjContainerBase_p38 *f38;
+    char pad_3c[0x28];
     struct TObjContainerBase_p64 *f64;
-    char pad_68[0x2a2];
+    char pad_68[0x1c];
+    struct TObjContainerBase_p84 *f84;
+    struct TObjContainerBase_p88 *f88;
+    char pad_8c[0x27e];
     short f30a;
     char pad_30c[0x50];
     char member;

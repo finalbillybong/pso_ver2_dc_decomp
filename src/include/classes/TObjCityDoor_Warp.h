@@ -20,7 +20,7 @@ struct TObjCityDoor_Warp {
     virtual void v3();
     virtual void v4();
     virtual void v5();
-    virtual void v6();
+    virtual void v6(int);
     virtual void v7();
     virtual void v8();
     virtual void v9();

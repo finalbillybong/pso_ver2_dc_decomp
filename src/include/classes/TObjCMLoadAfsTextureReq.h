@@ -6,6 +6,8 @@
  * this header does not describe are opaque `struct TObjCMLoadAfsTextureReq_pXX`, completed by each unit. */
 struct TObjCMLoadAfsTextureReq_p34;
 struct TObjCMLoadAfsTextureReq_p38;
+struct TObjCMLoadAfsTextureReq_p40;
+struct TObjCMLoadAfsTextureReq_p60;
 struct TObjCMLoadAfsTextureReq_p64;
 #ifdef __cplusplus
 class TObjCMLoadAfsTextureReq {
@@ -25,7 +27,8 @@ struct TObjCMLoadAfsTextureReq {
 #else
     void *vtable;
 #endif
-    char pad_1c[0x4];
+    char pad_1c[0x2];
+    short size;
     /* TObjCMLoadAfsTextureReq */
     int f20;
     char pad_24[0x8];
@@ -34,14 +37,19 @@ struct TObjCMLoadAfsTextureReq {
     struct TObjCMLoadAfsTextureReq_p34 *f34;
     struct TObjCMLoadAfsTextureReq_p38 *f38;
     int f3c;
-    char pad_40[0x1c];
+    struct TObjCMLoadAfsTextureReq_p40 *f40;
+    char pad_44[0xc];
+    int f50;
+    int f54;
+    int f58;
     int f5c;
-    char pad_60[0x4];
+    struct TObjCMLoadAfsTextureReq_p60 *f60;
     struct TObjCMLoadAfsTextureReq_p64 *f64;
     int f68;
     char pad_6c[0x4];
     int f70;
-    char pad_74[0x164];
+    int f74;
+    char pad_78[0x160];
 };
 #ifndef __cplusplus
 typedef struct TObjCMLoadAfsTextureReq TObjCMLoadAfsTextureReq;

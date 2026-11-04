@@ -54,8 +54,8 @@ struct TObjEneBm3FlyNest {
     virtual void v38();
     virtual void v39();
     virtual void v40();
-    virtual void v41();
-    virtual void v42();
+    virtual int v41();
+    virtual int v42();
     virtual void v43();
     virtual void v44();
     virtual void v45();
@@ -103,7 +103,7 @@ struct TObjEneBm3FlyNest {
     virtual void v87();
     virtual void v88();
     virtual int v89();
-    virtual void v90();
+    virtual int v90();
     virtual void v91();
     virtual void v92();
     virtual void v93();

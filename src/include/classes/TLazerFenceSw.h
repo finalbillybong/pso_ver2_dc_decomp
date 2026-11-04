@@ -4,7 +4,11 @@
  * Inheritance: TLazerFenceSw -> TOKey. Size 0x144 (constructor size field).
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TLazerFenceSw_pXX`, completed by each unit. */
+struct TOKey_p28;
+struct TOKey_p38;
+struct TOKey_p64;
 struct TOKey_p90;
+struct TOKey_pf4;
 #ifdef __cplusplus
 class TLazerFenceSw {
 public:
@@ -26,7 +30,7 @@ struct TLazerFenceSw {
     virtual void v9();
     virtual void v10();
     virtual int v11(float, float);
-    virtual void v12();
+    virtual int v12(float, float, float);
     virtual void v13();
     virtual void v14();
     virtual void v15();
@@ -44,9 +48,17 @@ struct TLazerFenceSw {
 #endif
     char pad_1c[0x2];
     short size;
-    char pad_20[0x14];
+    short f20;
+    char pad_22[0x6];
+    struct TOKey_p28 *f28;
+    char pad_2c[0x8];
     int f34;
-    char pad_38[0x58];
+    struct TOKey_p38 *f38;
+    char pad_3c[0x28];
+    struct TOKey_p64 *f64;
+    char pad_68[0x20];
+    int raw;
+    char pad_8c[0x4];
     struct TOKey_p90 *f90;
     char pad_94[0x44];
     int fd8;
@@ -54,7 +66,9 @@ struct TLazerFenceSw {
     float fe8;
     char pad_ec[0x4];
     float ff0;
-    char pad_f4[0xc];
+    struct TOKey_pf4 *ff4;
+    float ff8;
+    float ffc;
     int f100;
     float f104;
     int f108;

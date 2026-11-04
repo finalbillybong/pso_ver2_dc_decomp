@@ -13,7 +13,8 @@ public:
 #else
 struct TObjItemOKWindow {
 #endif
-    char pad_0[0x18];
+    int tag;
+    char pad_4[0x14];
 #ifdef __cplusplus
     virtual void v0();
     virtual void v1();
@@ -23,9 +24,11 @@ struct TObjItemOKWindow {
 #else
     void *vtable;
 #endif
-    char pad_1c[0x4];
+    char pad_1c[0x2];
+    short size;
     /* TObjItemOKWindow */
-    char pad_20[0x40];
+    char pad_20[0x3f];
+    char f5f;
     struct TObjItemOKWindow_p60 *f60;
     struct TObjItemOKWindow_p64 *f64;
     struct TObjItemOKWindow_p68 *f68;

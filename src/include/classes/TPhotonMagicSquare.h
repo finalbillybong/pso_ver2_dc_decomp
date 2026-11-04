@@ -4,13 +4,14 @@
  * Inheritance: TPhotonMagicSquare. Size 0xd4 (constructor size field).
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TPhotonMagicSquare_pXX`, completed by each unit. */
+struct TPhotonMagicSquare_p94;
 #ifdef __cplusplus
 class TPhotonMagicSquare {
 public:
 #else
 struct TPhotonMagicSquare {
 #endif
-    char pad_0[0x4];
+    void *resource;
     short f04;
     char pad_6[0x12];
 #ifdef __cplusplus
@@ -31,11 +32,18 @@ struct TPhotonMagicSquare {
 #else
     void *vtable;
 #endif
-    char pad_1c[0x50];
+    unsigned short unknown28;
+    unsigned short size;
+    char pad_20[0x8];
+    void *mesh;
+    char pad_2c[0xc];
+    void *material;
+    char pad_3c[0x30];
     float f6c;
     char pad_70[0x4];
     float f74;
-    char pad_78[0x20];
+    char pad_78[0x1c];
+    struct TPhotonMagicSquare_p94 *texture;
     float f98;
     float f9c;
     float fa0;
@@ -46,7 +54,7 @@ struct TPhotonMagicSquare {
     char pad_bc[0xc];
     int fc8;
     float fcc;
-    char pad_d0[0x4];
+    int phase;
 };
 #ifndef __cplusplus
 typedef struct TPhotonMagicSquare TPhotonMagicSquare;

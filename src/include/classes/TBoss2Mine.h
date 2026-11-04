@@ -54,8 +54,8 @@ struct TBoss2Mine {
     virtual void v38();
     virtual void v39();
     virtual void v40();
-    virtual void v41();
-    virtual void v42();
+    virtual int v41();
+    virtual int v42();
     virtual void v43();
     virtual void v44();
     virtual void v45();
@@ -103,7 +103,7 @@ struct TBoss2Mine {
     virtual void v87();
     virtual void v88();
     virtual void v89();
-    virtual void v90();
+    virtual int v90();
     virtual void v91();
     virtual void v92();
     virtual void v93();
@@ -122,11 +122,11 @@ struct TBoss2Mine {
     virtual void v106();
     virtual void v107();
     virtual void v108();
-    virtual void v109();
-    virtual void v110();
-    virtual void v111();
-    virtual void v112();
-    virtual void v113();
+    virtual void v109(int);
+    virtual void v110(int);
+    virtual void v111(int);
+    virtual void v112(int);
+    virtual void v113(int);
     virtual void v114();
     virtual void v115();
 #else
@@ -137,7 +137,15 @@ struct TBoss2Mine {
     short f20;
     char pad_22[0xe];
     short f30;
-    char pad_32[0x35e];
+    char pad_32[0x2];
+    int f34;
+    char pad_38[0x160];
+    short f198;
+    char pad_19a[0x170];
+    short f30a;
+    char pad_30c[0x24];
+    short f330;
+    char pad_332[0x5e];
     int f390;
     int f394;
     float f398;
@@ -145,7 +153,8 @@ struct TBoss2Mine {
     int f3a0;
     int f3a4;
     /* TBoss2Mine */
-    char pad_3a8[0x64];
+    int f3a8;
+    char pad_3ac[0x60];
 };
 #ifndef __cplusplus
 typedef struct TBoss2Mine TBoss2Mine;

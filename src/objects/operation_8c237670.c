@@ -1,29 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubComCard.h"
 typedef struct S_L8c510b80 S_L8c510b80;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x26];
-    int f2c;
-    int f30;
-    int f34;
-    int f38;
-    char unknown3c[0x4];
-    int f40;
-    int f44;
-};
 struct S_L8c510b80 {
     char unknown0[0x10];
     short f10;
 };
 extern S_L8c510b80 g_8c510b80;
-extern void call_8c237348(Object *);
-void operation_8c237670(Object *o)
+extern void call_8c237348(TWindowSubComCard *);
+void operation_8c237670(TWindowSubComCard *o)
 {
     int v1;
     int v2;

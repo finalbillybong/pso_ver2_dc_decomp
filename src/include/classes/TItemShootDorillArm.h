@@ -31,7 +31,12 @@ struct TItemShootDorillArm {
     char pad_20[0xc];
     int f2c;
     struct TItemShoot_p30 *f30;
-    char pad_34[0x28];
+    int f34;
+    char pad_38[0x4];
+    float f3c;
+    float f40;
+    float f44;
+    char pad_48[0x14];
     /* TItemShootModel */
     struct TItemShootModel_p5c *f5c;
     struct TItemShootModel_p60 *f60;

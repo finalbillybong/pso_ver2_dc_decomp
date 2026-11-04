@@ -11,7 +11,8 @@ public:
 struct TEffStarLightChild {
 #endif
     int tag;
-    char pad_4[0x14];
+    int f04;
+    char pad_8[0x10];
 #ifdef __cplusplus
     virtual void v0();
     virtual void v1();

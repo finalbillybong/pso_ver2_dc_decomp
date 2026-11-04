@@ -12,7 +12,11 @@ struct TItemReverseTechPart1 {
 #endif
     int tag;
     short f04;
-    char pad_6[0x12];
+    char pad_6[0x2];
+    float f08;
+    float f0c;
+    float f10;
+    float f14;
 #ifdef __cplusplus
     virtual void v0();
     virtual void v1();
@@ -22,7 +26,8 @@ struct TItemReverseTechPart1 {
 #else
     void *dispatch;
 #endif
-    char pad_1c[0x2];
+    char f1c;
+    char f1d;
     short size;
     /* TItemReverseTechPart1 */
     int f20;

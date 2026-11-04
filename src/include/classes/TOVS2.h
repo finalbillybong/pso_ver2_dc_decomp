@@ -4,6 +4,9 @@
  * Inheritance: TOVS2. Size 0x108 (constructor size field).
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TOVS2_pXX`, completed by each unit. */
+struct TOVS2_p28;
+struct TOVS2_p38;
+struct TOVS2_p64;
 struct TOVS2_p100;
 #ifdef __cplusplus
 class TOVS2 {
@@ -24,7 +27,7 @@ struct TOVS2 {
     virtual void v8();
     virtual void v9();
     virtual void v10();
-    virtual void v11();
+    virtual int v11(float, float);
     virtual void v12();
     virtual void v13();
     virtual void v14();
@@ -32,9 +35,17 @@ struct TOVS2 {
 #else
     void *dispatch;
 #endif
-    char pad_1c[0xe4];
+    char pad_1c[0xc];
+    struct TOVS2_p28 *f28;
+    char pad_2c[0xc];
+    struct TOVS2_p38 *f38;
+    char pad_3c[0x28];
+    struct TOVS2_p64 *f64;
+    char pad_68[0x90];
+    float ff8;
+    float ffc;
     struct TOVS2_p100 *f100;
-    char pad_104[0x4];
+    int f104;
 };
 #ifndef __cplusplus
 typedef struct TOVS2 TOVS2;

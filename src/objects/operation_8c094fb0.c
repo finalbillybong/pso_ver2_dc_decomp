@@ -1,18 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x370];
-    float f370;
-    char unknown374[0x70];
-    int f3e4;
-};
+#include "src/include/classes/TObjEneMe1Canadin.h"
 extern int call_8c05a0a8(void);
 extern float call_8c12b570(float);
-void operation_8c094fb0(Object *o)
+void operation_8c094fb0(TObjEneMe1Canadin *o)
 {
     int t1;
     float t2;

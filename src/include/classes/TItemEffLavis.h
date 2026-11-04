@@ -25,9 +25,18 @@ struct TItemEffLavis {
     char pad_1c[0x2];
     short size;
     /* TItemShoot */
-    char pad_20[0x3c];
+    char pad_20[0xc];
+    int f2c;
+    char pad_30[0x4];
+    int f34;
+    char pad_38[0x4];
+    float f3c;
+    float f40;
+    float f44;
+    char pad_48[0x14];
     /* TItemShootModel */
-    char pad_5c[0x8];
+    int f5c;
+    int f60;
 };
 #ifndef __cplusplus
 typedef struct TItemEffLavis TItemEffLavis;

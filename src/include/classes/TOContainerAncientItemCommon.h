@@ -4,13 +4,16 @@
  * Inheritance: TOContainerAncientItemCommon. Size 0x384 (constructor size field).
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TOContainerAncientItemCommon_pXX`, completed by each unit. */
+struct TOContainerAncientItemCommon_p28;
+struct TOContainerAncientItemCommon_p38;
+struct TOContainerAncientItemCommon_p64;
 #ifdef __cplusplus
 class TOContainerAncientItemCommon {
 public:
 #else
 struct TOContainerAncientItemCommon {
 #endif
-    char pad_0[0x4];
+    int tag;
     short f04;
     char pad_6[0x12];
 #ifdef __cplusplus
@@ -106,9 +109,16 @@ struct TOContainerAncientItemCommon {
 #else
     void *dispatch;
 #endif
-    char pad_1c[0x2ee];
+    char pad_1c[0xc];
+    struct TOContainerAncientItemCommon_p28 *f28;
+    char pad_2c[0xc];
+    struct TOContainerAncientItemCommon_p38 *f38;
+    char pad_3c[0x28];
+    struct TOContainerAncientItemCommon_p64 *f64;
+    char pad_68[0x2a2];
     short f30a;
-    char pad_30c[0x78];
+    char pad_30c[0x74];
+    int f380;
 };
 #ifndef __cplusplus
 typedef struct TOContainerAncientItemCommon TOContainerAncientItemCommon;

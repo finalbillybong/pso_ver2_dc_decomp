@@ -89,6 +89,13 @@ Any disagreement leaves it unattributed. The unit then converts like any other a
 byte-exact. `convert --attribution config/class-attribution.json` replays the attribution;
 `check` verifies every attributed unit includes its class header.
 
+Attributed units are evidence too (`emit --attribution FILE`). They can fill a header's gaps,
+and they can give a class its first header. An existing header is only ever extended: every
+field and slot signature it had stays, and `emit` refuses anything else. A new field must not
+overlap or contradict a subclass's committed header, and it must not bring `vector3.h` into a
+header whose users don't declare it. After a header grows, every unit that includes it is
+rebuilt, not just the newly converted ones.
+
 Two more rewrites are applied during conversion, and again kept only when the unit stays exact:
 - a `float` that falls inside a header `Vector3` becomes a member access (`o->f40` becomes
   `o->f3c.y`);

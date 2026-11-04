@@ -26,7 +26,9 @@ struct TTecGiZonde {
 #endif
     char pad_1c[0x4];
     struct TTecGiZonde_p20 *f20;
-    char pad_24[0xb0];
+    char pad_24[0x1c];
+    float f40;
+    char pad_44[0x90];
     float fd4;
     char pad_d8[0xd0];
 };

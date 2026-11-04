@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-};
+#include "src/include/classes/TObjEneMe1Canadin.h"
 extern void operation_8c059ea4(void *, int);
-void operation_8c090b88(Object *o)
+void operation_8c090b88(TObjEneMe1Canadin *o)
 {
     if (o->f30a != 0xc) {
         operation_8c059ea4((void *)o, 0xc);

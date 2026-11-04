@@ -27,7 +27,7 @@ struct TOTrapAncient02R {
     virtual void v8();
     virtual void v9();
     virtual void v10();
-    virtual void v11();
+    virtual int v11(float, float);
     virtual void v12();
     virtual void v13();
     virtual void v14();

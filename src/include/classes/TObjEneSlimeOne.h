@@ -15,7 +15,8 @@ public:
 #else
 struct TObjEneSlimeOne {
 #endif
-    char pad_0[0x18];
+    int tag;
+    char pad_4[0x14];
 #ifdef __cplusplus
     virtual void v0();
     virtual void v1();
@@ -105,21 +106,28 @@ struct TObjEneSlimeOne {
     virtual void v85();
     virtual void v86();
     virtual void v87();
-    virtual void v88();
+    virtual void v88(int);
 #else
     void *dispatch;
 #endif
-    char pad_1c[0x20];
+    char pad_1c[0x2];
+    short size;
+    char pad_20[0x10];
+    short f30;
+    char pad_32[0xa];
     Vector3 f3c;
     char pad_48[0x1c];
     struct TObjEneSlimeOne_p64 *f64;
-    char pad_68[0x33c];
+    char pad_68[0x254];
+    int f2bc;
+    char pad_2c0[0xe4];
     struct TObjEneSlimeOne_p3a4 *f3a4;
     int f3a8;
     char pad_3ac[0x10];
     float f3bc;
     float f3c0;
-    char pad_3c4[0x40];
+    char pad_3c4[0x34];
+    Vector3 f3f8;
     struct TObjEneSlimeOne_p404 *f404;
     char pad_408[0x4];
     struct TObjEneSlimeOne_p40c *f40c;

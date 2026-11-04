@@ -4,6 +4,9 @@
  * Inheritance: TOMineTrap -> TOMine. Size 0x398 (constructor size field).
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TOMineTrap_pXX`, completed by each unit. */
+struct TOMine_p60;
+struct TOMine_p84;
+struct TOMine_pdc;
 #ifdef __cplusplus
 class TOMineTrap {
 public:
@@ -36,7 +39,7 @@ struct TOMineTrap {
     virtual void v21();
     virtual void v22();
     virtual void v23();
-    virtual void v24();
+    virtual void v24(int, float);
     virtual void v25();
     virtual void v26();
     virtual void v27();
@@ -115,17 +118,46 @@ struct TOMineTrap {
 #else
     void *vtable;
 #endif
-    char pad_1c[0x18];
+    char pad_1c[0x4];
+    unsigned short f20;
+    char pad_22[0x10];
+    short f32;
     int f34;
-    char pad_38[0x54];
+    char pad_38[0x8];
+    float f40;
+    char pad_44[0x14];
+    float f58;
+    char pad_5c[0x4];
+    struct TOMine_p60 *f60;
+    char pad_64[0x10];
+    float f74;
+    char pad_78[0xc];
+    struct TOMine_p84 *f84;
+    char pad_88[0x4];
     int f8c;
-    char pad_90[0x27a];
+    int f90;
+    char pad_94[0x48];
+    struct TOMine_pdc *fdc;
+    char pad_e0[0x22a];
     short f30a;
-    char pad_30c[0x28];
+    short f30c;
+    char pad_30e[0x26];
     int f334;
-    char pad_338[0x2c];
+    char pad_338[0x18];
+    int f350;
+    int f354;
+    int f358;
+    float f35c;
+    float f360;
     int f364;
-    char pad_368[0x28];
+    char pad_368[0x4];
+    unsigned short f36c;
+    char pad_36e[0x2];
+    float f370;
+    char pad_374[0xc];
+    int f380;
+    char pad_384[0x8];
+    int f38c;
     /* TOMineTrap */
     unsigned short f390;
     char pad_392[0x6];

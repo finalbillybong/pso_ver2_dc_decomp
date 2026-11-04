@@ -1,12 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_38 Arg0_38;
-typedef struct Arg0_64 Arg0_64;
+#include "src/include/classes/TOContainerAncientItemCommon.h"
+typedef struct TOContainerAncientItemCommon_p28 TOContainerAncientItemCommon_p28;
+typedef struct TOContainerAncientItemCommon_p38 TOContainerAncientItemCommon_p38;
+typedef struct TOContainerAncientItemCommon_p64 TOContainerAncientItemCommon_p64;
 typedef struct S_vv1 S_vv1;
 typedef struct S_vv1_2c S_vv1_2c;
 typedef struct S_vv1_4 S_vv1_4;
@@ -15,16 +10,6 @@ typedef struct S_vv2_30 S_vv2_30;
 typedef struct S_vv2_4 S_vv2_4;
 typedef struct S_vv3 S_vv3;
 typedef struct S_vv3_4 S_vv3_4;
-struct Object {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-    char unknown2c[0xc];
-    Arg0_38 *f38;
-    char unknown3c[0x28];
-    Arg0_64 *f64;
-    char unknown68[0x2a2];
-    short f30a;
-};
 struct S_vv1 {
     char unknown0[0x4];
     S_vv1_4 *f04;
@@ -51,7 +36,7 @@ extern void call_8c3a9436(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c391c94(void);
 extern void call_8c391cc4(void);
-void operation_8c1e4190(Object *o)
+void operation_8c1e4190(TOContainerAncientItemCommon *o)
 {
     S_vv1 *v1;
     S_vv2 *v2;

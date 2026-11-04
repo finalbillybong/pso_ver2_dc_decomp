@@ -1,25 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOMine.h"
 typedef struct SBlock4 {
     short halves[2];
 } SBlock4;
 typedef struct Frame Frame;
 typedef struct S_g8c46ed0c S_g8c46ed0c;
-typedef struct Object Object;
-typedef struct Arg0_84 Arg0_84;
+typedef struct TOMine_p84 TOMine_p84;
 typedef struct S_vv2 S_vv2;
-struct Object {
-    char unknown0[0x20];
-    unsigned short f20;
-    char unknown22[0x62];
-    Arg0_84 *f84;
-    char unknown88[0x282];
-    short f30a;
-};
-struct Arg0_84 {
+struct TOMine_p84 {
     char unknown0[0x4];
     short f04;
 };
@@ -30,8 +17,8 @@ struct Frame {
 struct S_vv2 {
     char f00;
 };
-extern void call_8c05406c(Object *, Frame *);
-float operation_8c0fd740(Object *o)
+extern void call_8c05406c(TOMine *, Frame *);
+float operation_8c0fd740(TOMine *o)
 {
     Frame frame;
     int v6;

@@ -4,6 +4,9 @@
  * Inheritance: TOWreckAncient. Size 0xec (constructor size field).
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TOWreckAncient_pXX`, completed by each unit. */
+struct TOWreckAncient_p28;
+struct TOWreckAncient_p38;
+struct TOWreckAncient_p64;
 #ifdef __cplusplus
 class TOWreckAncient {
 public:
@@ -23,14 +26,22 @@ struct TOWreckAncient {
     virtual void v8();
     virtual void v9();
     virtual void v10();
-    virtual void v11();
+    virtual int v11(float, float);
     virtual void v12();
     virtual void v13();
     virtual void v14();
 #else
     void *dispatch;
 #endif
-    char pad_1c[0xd0];
+    char pad_1c[0xc];
+    struct TOWreckAncient_p28 *f28;
+    char pad_2c[0xc];
+    struct TOWreckAncient_p38 *f38;
+    char pad_3c[0x28];
+    struct TOWreckAncient_p64 *f64;
+    char pad_68[0x7c];
+    float fe4;
+    float fe8;
 };
 #ifndef __cplusplus
 typedef struct TOWreckAncient TOWreckAncient;

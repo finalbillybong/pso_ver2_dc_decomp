@@ -4,6 +4,8 @@
  * Inheritance: TObjPlayer. Size 0xc7c (constructor size field).
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TObjPlayer_pXX`, completed by each unit. */
+struct TObjPlayer_p184;
+struct TObjPlayer_pbc8;
 #ifdef __cplusplus
 class TObjPlayer {
 public:
@@ -31,7 +33,7 @@ struct TObjPlayer {
     virtual void v16();
     virtual void v17();
     virtual void v18();
-    virtual void v19();
+    virtual void v19(void *);
     virtual void v20();
     virtual void v21();
     virtual void v22();
@@ -88,7 +90,7 @@ struct TObjPlayer {
     virtual void v73();
     virtual void v74();
     virtual void v75();
-    virtual void v76();
+    virtual void v76(int, int);
     virtual void v77();
     virtual void v78();
     virtual void v79();
@@ -102,17 +104,34 @@ struct TObjPlayer {
 #else
     void *vtable;
 #endif
-    char pad_1c[0x18];
+    char pad_1c[0x4];
+    short f20;
+    char pad_22[0x12];
     int f34;
-    char pad_38[0x2d0];
+    char pad_38[0x8];
+    float f40;
+    char pad_44[0x140];
+    struct TObjPlayer_p184 *f184;
+    char pad_188[0x10];
+    short f198;
+    short f19a;
+    char pad_19c[0x16c];
     short f308;
     char pad_30a[0x2];
     short f30c;
-    char pad_30e[0x42];
+    char pad_30e[0x2];
+    int f310;
+    char pad_314[0x1c];
+    short f330;
+    short f332;
+    char pad_334[0x1c];
     int f350;
-    char pad_354[0x870];
+    char pad_354[0x490];
+    unsigned char value;
+    char pad_7e5[0x3df];
     int fbc4;
-    char pad_bc8[0xb4];
+    struct TObjPlayer_pbc8 *fbc8;
+    char pad_bcc[0xb0];
 };
 #ifndef __cplusplus
 typedef struct TObjPlayer TObjPlayer;

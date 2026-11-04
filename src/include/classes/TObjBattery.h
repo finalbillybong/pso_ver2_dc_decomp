@@ -24,7 +24,7 @@ struct TObjBattery {
     virtual void v8();
     virtual void v9();
     virtual void v10();
-    virtual void v11();
+    virtual int v11(float, float);
     virtual void v12();
     virtual void v13();
     virtual void v14();
@@ -35,7 +35,9 @@ struct TObjBattery {
 #endif
     char pad_1c[0xc];
     struct TObjBattery_p28 *f28;
-    char pad_2c[0xc0];
+    char pad_2c[0xb8];
+    float fe4;
+    float fe8;
 };
 #ifndef __cplusplus
 typedef struct TObjBattery TObjBattery;

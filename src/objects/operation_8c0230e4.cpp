@@ -1,12 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjPlayer.h"
 typedef struct Frame Frame;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_bc8 Arg0_bc8;
+typedef struct TObjPlayer_pbc8 TObjPlayer_pbc8;
 typedef struct Arg0_bc8_1ac Arg0_bc8_1ac;
 typedef struct Arg0_bc8_1b0 Arg0_bc8_1b0;
 class S_c8c169508;
@@ -61,13 +56,7 @@ struct Frame {
     int f14;
     char unknown18[0x10];
 };
-struct Object {
-    char unknown0[0x20];
-    short f20;
-    char unknown22[0xba6];
-    Arg0_bc8 *fbc8;
-};
-struct Arg0_bc8 {
+struct TObjPlayer_pbc8 {
     char unknown0[0x20];
     short f20;
     char unknown22[0x18a];
@@ -120,8 +109,8 @@ typedef struct S_c8c169508Data {
 } S_c8c169508Data;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" int query_state_8c074980(void *);
-extern "C" void call_8c04a99c(Object *, int);
-extern "C" void call_8c02c048(Object *, int);
+extern "C" void call_8c04a99c(TObjPlayer *, int);
+extern "C" void call_8c02c048(TObjPlayer *, int);
 extern "C" void operation_8c02a764(int, int);
 extern "C" int operation_8c02303c(void *, void *);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
@@ -133,7 +122,7 @@ extern "C" void operation_8c169504(void *, int);
 extern "C" void operation_8c07484c(void *, int);
 extern "C" void reparent_hierarchy_node(void *, void *);
 extern "C" void operation_8c0745b4(void *, short);
-extern "C" int operation_8c0230e4(Object *o, Arg1 *a1)
+extern "C" int operation_8c0230e4(TObjPlayer *o, Arg1 *a1)
 {
     Frame frame;
     unsigned char v2;

@@ -10,7 +10,7 @@ public:
 #else
 struct TFontSmallTask {
 #endif
-    char pad_0[0x4];
+    int tag;
     short f04;
     char pad_6[0x12];
 #ifdef __cplusplus
@@ -22,11 +22,15 @@ struct TFontSmallTask {
 #else
     void *vtable;
 #endif
-    char pad_1c[0x4];
+    char pad_1c[0x2];
+    short size;
     /* TFontSmallTask */
-    char pad_20[0x4];
+    float f20;
     float f24;
-    char pad_28[0x18];
+    float f28;
+    char pad_2c[0xf];
+    char f3b;
+    int f3c;
     int f40;
     int f44;
     int f48;

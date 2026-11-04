@@ -10,7 +10,7 @@ public:
 #else
 struct TAdRicoRing {
 #endif
-    char pad_0[0x4];
+    int tag;
     short f04;
     char pad_6[0x12];
 #ifdef __cplusplus
@@ -22,7 +22,7 @@ struct TAdRicoRing {
 #else
     void *vtable;
 #endif
-    char pad_1c[0x4];
+    float f1c;
     /* TAdRicoRing */
     float f20;
     float f24;

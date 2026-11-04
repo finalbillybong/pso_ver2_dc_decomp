@@ -11,7 +11,8 @@ public:
 struct TWindowSubComCard {
 #endif
     int tag;
-    char pad_4[0x14];
+    short f04;
+    char pad_6[0x12];
 #ifdef __cplusplus
     virtual void v0();
     virtual void v1();

@@ -1,22 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TEffStarLightChild.h"
 typedef struct Arg0_0 Arg0_0;
-struct Object {
-    Arg0_0 *tag;
-    int f04;
-    char unknown8[0x20];
-    float f28;
-    float f2c;
-    float f30;
-};
 extern float g_8c285be4;
 extern char g_8c470761;
 extern void call_8c01c5f0(void *);
-void operation_8c100024(Object *o)
+void operation_8c100024(TEffStarLightChild *o)
 {
     float v1;
     float v6;

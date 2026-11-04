@@ -1,11 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowComCard.h"
 typedef struct S_c8c122700 S_c8c122700;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 struct S_c8c122700 {
     int f00;
     char unknown4[0x14];
@@ -18,16 +13,12 @@ struct S_c8c122700 {
     char unknown40[0x28];
     int f68;
 };
-struct Object {
-    float tag;
-    float f04;
-};
 extern int call_8c1dc6e4(int);
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_base_8c0db1d0(void *, int);
 extern void call_8c0dc854(S_c8c122700 *);
 extern void call_8c1f1c28(void *, int);
-S_c8c122700 *TWindowComCard_ctor_2_8c1f1b58(Object *o, int a1)
+S_c8c122700 *TWindowComCard_ctor_2_8c1f1b58(TWindowComCard *o, int a1)
 {
     int t1;
     S_c8c122700 *t2;

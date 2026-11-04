@@ -72,7 +72,8 @@ struct TItemProUnit {
     int f28;
     char pad_2c[0xc];
     int f38;
-    char pad_3c[0xb0];
+    char pad_3c[0xac];
+    int fe8;
     int fec;
     char pad_f0[0x4c];
     struct TItemEquipBase_p13c *f13c;

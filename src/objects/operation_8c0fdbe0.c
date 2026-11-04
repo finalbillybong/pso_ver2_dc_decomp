@@ -1,20 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x74];
-    float f74;
-    char unknown78[0x18];
-    int f90;
-    char unknown94[0x2c0];
-    int f354;
-    int f358;
-};
+#include "src/include/classes/TOMine.h"
 extern int get_game_mode_8c01c25c(void);
-void operation_8c0fdbe0(Object *o)
+void operation_8c0fdbe0(TOMine *o)
 {
     char *v1;
     int t1;

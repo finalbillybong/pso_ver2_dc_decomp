@@ -4,6 +4,8 @@
  * Inheritance: TObjEneMe1Canadin. Size 0x4e8 (constructor size field).
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TObjEneMe1Canadin_pXX`, completed by each unit. */
+struct TObjEneMe1Canadin_p64;
+struct TObjEneMe1Canadin_pdc;
 struct TObjEneMe1Canadin_p424;
 struct TObjEneMe1Canadin_p4bc;
 #ifdef __cplusplus
@@ -25,7 +27,7 @@ struct TObjEneMe1Canadin {
     virtual void v8();
     virtual void v9();
     virtual void v10();
-    virtual void v11();
+    virtual int v11(float, float);
     virtual void v12();
     virtual void v13();
     virtual void v14();
@@ -129,9 +131,9 @@ struct TObjEneMe1Canadin {
     virtual void v112();
     virtual void v113();
     virtual void v114();
-    virtual void v115();
-    virtual void v116();
-    virtual void v117();
+    virtual void v115(int);
+    virtual void v116(int);
+    virtual void v117(int);
     virtual void v118();
     virtual void v119();
     virtual void v120();
@@ -144,10 +146,23 @@ struct TObjEneMe1Canadin {
     int f28;
     char pad_2c[0xc];
     int f38;
-    char pad_3c[0x3a4];
+    char pad_3c[0x4];
+    float f40;
+    char pad_44[0x20];
+    struct TObjEneMe1Canadin_p64 *f64;
+    char pad_68[0x74];
+    struct TObjEneMe1Canadin_pdc *fdc;
+    char pad_e0[0x22a];
+    short f30a;
+    char pad_30c[0x64];
+    float f370;
+    char pad_374[0x6c];
     int f3e0;
     int f3e4;
-    char pad_3e8[0x3c];
+    char pad_3e8[0x28];
+    float f410;
+    float f414;
+    char pad_418[0xc];
     struct TObjEneMe1Canadin_p424 *f424;
     int f428;
     char pad_42c[0x5c];

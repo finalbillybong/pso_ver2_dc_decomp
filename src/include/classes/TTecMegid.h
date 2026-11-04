@@ -4,6 +4,7 @@
  * Inheritance: TTecMegid. Size 0x194 (constructor size field).
  * Field names are the units' names (fXX = offset); gaps are pad_XX. Pointers to objects
  * this header does not describe are opaque `struct TTecMegid_pXX`, completed by each unit. */
+struct TTecMegid_p20;
 struct TTecMegid_p14c;
 #ifdef __cplusplus
 class TTecMegid {
@@ -11,7 +12,8 @@ public:
 #else
 struct TTecMegid {
 #endif
-    char pad_0[0x18];
+    int tag;
+    char pad_4[0x14];
 #ifdef __cplusplus
     virtual void v0();
     virtual void v1();
@@ -24,11 +26,22 @@ struct TTecMegid {
 #else
     void *dispatch;
 #endif
-    char pad_1c[0xb0];
+    char pad_1c[0x2];
+    short size;
+    struct TTecMegid_p20 *f20;
+    char pad_24[0x34];
+    int f58;
+    char pad_5c[0x4];
+    int f60;
+    char pad_64[0x64];
+    short fc8;
+    short fca;
     int fcc;
-    char pad_d0[0x7c];
+    short fd0;
+    char pad_d2[0x7a];
     struct TTecMegid_p14c *f14c;
-    char pad_150[0x44];
+    char pad_150[0x40];
+    int f190;
 };
 #ifndef __cplusplus
 typedef struct TTecMegid TTecMegid;
