@@ -1,18 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObject.h"
 typedef struct Arg0_0 Arg0_0;
 typedef struct S_vv2 S_vv2;
 typedef struct S_vv4 S_vv4;
 typedef struct S_vv6 S_vv6;
-struct Object {
-    Arg0_0 *tag;
-    char unknown4[0xc];
-    int f10;
-};
 struct S_vv2 {
     unsigned short f00;
 };
@@ -22,7 +12,7 @@ struct S_vv6 {
 struct S_vv4 {
     short f00;
 };
-void operation_8c04be80(Object *o, int a1, int a2)
+void operation_8c04be80(TObject *o, int a1, int a2)
 {
     S_vv2 *v2;
     int v1;
@@ -46,5 +36,5 @@ void operation_8c04be80(Object *o, int a1, int a2)
         v4--;
         v6--;
     } while (v5-- != 0);
-    o->f10 += a2;
+    o->parent += a2;
 }

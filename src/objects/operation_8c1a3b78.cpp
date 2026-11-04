@@ -1,12 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubItem.h"
 typedef struct S_c8c03b55c S_c8c03b55c;
 typedef struct S_c8c03b55c_e8 S_c8c03b55c_e8;
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
 class S_c8c0744dc {
 public:
     char unknown0[0x18];
@@ -46,10 +41,6 @@ typedef struct S_c8c0744dcData {
     char unknown0[0xec];
     int fec;
 } S_c8c0744dcData;
-struct Object {
-    char unknown0[0x20];
-    char f20;
-};
 struct S_c8c03b55c {
     char unknown0[0xe8];
     S_c8c03b55c_e8 *fe8;
@@ -61,7 +52,7 @@ extern "C" void call_8c02330c(int, int, int);
 extern "C" S_c8c03b55c *call_8c03b55c(int, int);
 extern "C" void call_8c022538(int, void *);
 extern "C" void call_8c02231c(int, int, int);
-extern "C" void operation_8c1a3b78(Object *o, int a1, int a2)
+extern "C" void operation_8c1a3b78(TWindowSubItem *o, int a1, int a2)
 {
     int t1;
     S_c8c0744dc *t2;

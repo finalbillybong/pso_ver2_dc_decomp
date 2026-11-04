@@ -1,19 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x1d8];
-    int f1d8;
-    char unknown1dc[0x38];
-    float f214;
-};
-extern int call_8c07fac0(Object *, int);
-extern void call_8c074ac4(Object *, int);
-extern void call_8c07db40(Object *, int);
-void operation_8c07dac0(Object *o, int a1)
+#include "src/include/classes/TItemMag.h"
+extern int call_8c07fac0(TItemMag *, int);
+extern void call_8c074ac4(TItemMag *, int);
+extern void call_8c07db40(TItemMag *, int);
+void operation_8c07dac0(TItemMag *o, int a1)
 {
     int v1;
     int t1;

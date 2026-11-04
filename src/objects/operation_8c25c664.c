@@ -1,18 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObjWarnChime.h"
 typedef struct Arg0_28 Arg0_28;
-struct Object {
-    char unknown0[0x24];
-    int f24;
-    Arg0_28 *f28;
-};
 extern int call_8c18e8a0(int, void *);
 extern void play_se_8c05fbf8(int, int, int, int);
-void operation_8c25c664(Object *o)
+void operation_8c25c664(TObjWarnChime *o)
 {
     char *v41;
     int t1;

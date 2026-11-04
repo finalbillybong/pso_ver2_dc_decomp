@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x3dc];
-    int f3dc;
-};
-extern void call_8c144c30(Object *);
+#include "src/include/classes/TBoss2DeRolLe.h"
+extern void call_8c144c30(TBoss2DeRolLe *);
 extern void call_8c1452f8(int, void *);
-void operation_8c144bf8(Object *o)
+void operation_8c144bf8(TBoss2DeRolLe *o)
 {
     o->f3dc |= 0x88;
     call_8c144c30(o);

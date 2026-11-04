@@ -96,6 +96,19 @@ overlap or contradict a subclass's committed header, and it must not bring `vect
 header whose users don't declare it. After a header grows, every unit that includes it is
 rebuilt, not just the newly converted ones.
 
+Two late signals:
+- `tobject_layout`: the unit's view touches only the documented TObject header, each field at
+  its documented width and kind, with at least two fields or the vtable, and calls no virtual
+  slot past TObject's 5.
+- `callers_propagated`: every caller is already attributed to one class, by name or here, and
+  passes `this`, and the unit's view fits that class's header. This is iterated to a fixpoint.
+
+`TObject.h` describes TObject's own units with the documented names (`tag`, `flags`,
+`link_08`, `link_0c`, `parent`, `child`, `vtable`, `size`). It is the root of nearly every
+class, but its subclasses' flattened headers came first and disagree among themselves in that
+area (`int tag` against `void *name`, `short` against `unsigned short size`). So `TObject.h` is
+not an authority for subclass headers, and TObject-attributed units are not evidence for them.
+
 Two more rewrites are applied during conversion, and again kept only when the unit stays exact:
 - a `float` that falls inside a header `Vector3` becomes a member access (`o->f40` becomes
   `o->f3c.y`);
@@ -130,3 +143,17 @@ A type change is a source-only rewrite and has to prove it changed nothing:
 
 If a header change breaks any unit that already includes the header, fix the header. Never
 change a unit's behaviour to fit the header.
+
+## Future work
+
+This track covers class objects only. Roughly 6,000 matched units still use per-unit types
+because they have no object struct, use a struct that no class header fits, or already use one
+of the older shared views (FollowEffect, ColorEffect, effect views). Most of these are not
+TObject-derived objects at all: they are effect records, render state, resource and list
+nodes, and SDK data. Covering them needs non-class shared types. Each would need its own
+evidence base: allocation sizes, the tables and lists that hold the records, and the functions
+that create and walk them, rather than vtables and class-name strings. The same rules would
+apply: headers are only ever extended, a unit stays local on any conflict, and every changed
+unit must stay byte-exact. The 1,024 units whose view fits several flattened class headers
+could also be revisited once more of the class hierarchy is recovered, since a parent link
+turns several look-alike headers into one family.

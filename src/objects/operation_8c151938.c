@@ -1,24 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x398];
-    int f398;
-    char unknown39c[0xc];
-    short f3a8;
-};
+#include "src/include/classes/TBoss3VoloptMonitor.h"
 extern short g_8c4d9b74;
 extern void play_se_8c05fbf8(int, void *, int, int);
-extern void call_8c151adc(Object *);
+extern void call_8c151adc(TBoss3VoloptMonitor *);
 extern void emit_effects_8c151b40(void *);
 extern int call_8c18e8a0(int, int);
 extern int call_8c18e768(int, int);
 extern int lookup_object_by_id(unsigned short, int, int);
 extern void operation_8c151b98(void *);
-void operation_8c151938(Object *o)
+void operation_8c151938(TBoss3VoloptMonitor *o)
 {
     int v5;
     int v2;

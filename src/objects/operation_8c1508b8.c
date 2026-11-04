@@ -1,18 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-};
+#include "src/include/classes/TBoss3VoloptHiraisin.h"
 extern void operation_8c150c8c(void *);
 extern void update_phase_8c150ad4(void *);
 extern void call_8c150b74(void);
 extern void call_8c150d90(void);
-void operation_8c1508b8(Object *o)
+void operation_8c1508b8(TBoss3VoloptHiraisin *o)
 {
     switch (o->f30a) {
     case 0:

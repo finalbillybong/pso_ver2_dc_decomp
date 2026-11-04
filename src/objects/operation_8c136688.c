@@ -1,10 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOKeyAncient03.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
 struct Frame {
     char f00;
     char f01;
@@ -15,14 +10,8 @@ struct Frame {
     char f0a;
     char f0b;
 };
-struct Object {
-    char unknown0[0x20];
-    short f20;
-    char unknown22[0xde];
-    int f100;
-};
 extern void operation_8c0368a8(void *);
-void operation_8c136688(Object *o, int a1)
+void operation_8c136688(TOKeyAncient03 *o, int a1)
 {
     Frame frame;
     (&frame)->f06 = 0;

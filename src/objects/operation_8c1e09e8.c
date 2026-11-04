@@ -1,16 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TWindowKeyBoardHard.h"
 typedef struct Arg0_78 Arg0_78;
-struct Object {
-    char unknown0[0x74];
-    int f74;
-    Arg0_78 *f78;
-};
-int operation_8c1e09e8(Object *o, int a1)
+int operation_8c1e09e8(TWindowKeyBoardHard *o, int a1)
 {
     unsigned int v2;
     int v1;

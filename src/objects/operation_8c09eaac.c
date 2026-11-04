@@ -1,20 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObject.h"
 typedef struct S_g8c46ec50 S_g8c46ec50;
 typedef struct S_g8c46ec54 S_g8c46ec54;
-typedef struct Object Object;
 typedef struct S_vv15 S_vv15;
 typedef struct S_vv16 S_vv16;
 typedef struct S_vv3 S_vv3;
 typedef struct S_vv4 S_vv4;
-struct Object {
-    int tag;
-    char unknown4[0x4];
-    int f08;
-};
 struct S_vv3 {
     short f00;
     short f02;
@@ -31,7 +21,7 @@ struct S_vv16 {
 };
 extern S_g8c46ec50 *g_8c46ec50;
 extern S_g8c46ec54 *g_8c46ec54;
-void operation_8c09eaac(Object *o)
+void operation_8c09eaac(TObject *o)
 {
     S_vv4 *v4;
     S_vv3 *v3;
@@ -60,7 +50,7 @@ void operation_8c09eaac(Object *o)
         v6++;
         v3 = (S_vv3 *)((int)v3 + 0x44);
     }
-    v16 = (S_vv16 *)((int)o + (int)o->f08);
+    v16 = (S_vv16 *)((int)o + (int)o->link_08);
     n2 = 0;
     v15 = (S_vv15 *)g_8c46ec54;
     v14 = -1;

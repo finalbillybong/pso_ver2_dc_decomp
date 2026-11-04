@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
+#include "src/include/classes/TWindowLoadItemTexture.h"
+typedef struct TWindowLoadItemTexture_p30 TWindowLoadItemTexture_p30;
 typedef struct Arg0_30_0 Arg0_30_0;
 typedef struct S_vv1 S_vv1;
-struct Object {
-    char unknown0[0x30];
-    Arg0_30 *f30;
-};
-struct Arg0_30 {
+struct TWindowLoadItemTexture_p30 {
     Arg0_30_0 *f00;
 };
 struct Arg0_30_0 {
@@ -21,7 +12,7 @@ struct Arg0_30_0 {
 struct S_vv1 {
     int f00;
 };
-void operation_8c22cd34(Object *o)
+void operation_8c22cd34(TWindowLoadItemTexture *o)
 {
     S_vv1 *v1;
     v1 = (S_vv1 *)o->f30->f00;

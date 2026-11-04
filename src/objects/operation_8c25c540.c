@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-};
+#include "src/include/classes/TObjWarnChime.h"
 extern int call_8c25c6a8(void);
-extern void call_8c25c574(Object *);
-extern void call_8c25c664(Object *);
-void operation_8c25c540(Object *o)
+extern void call_8c25c574(TObjWarnChime *);
+extern void call_8c25c664(TObjWarnChime *);
+void operation_8c25c540(TObjWarnChime *o)
 {
     int t1;
     t1 = call_8c25c6a8();

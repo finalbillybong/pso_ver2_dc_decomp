@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x20];
-    char f20;
-};
-void operation_8c1a3b10(Object *o, int a1)
+#include "src/include/classes/TWindowSubItem.h"
+void operation_8c1a3b10(TWindowSubItem *o, int a1)
 {
     switch (a1) {
     case 3:

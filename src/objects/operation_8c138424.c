@@ -1,21 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss3Volopt.h"
 typedef struct S_L8c4d9bac S_L8c4d9bac;
 typedef struct S_L8c4d9bb8 S_L8c4d9bb8;
 typedef struct S_L8c4d9bc4 S_L8c4d9bc4;
 typedef struct S_L8c4d9bd0 S_L8c4d9bd0;
 typedef struct S_g8c4d9b8c S_g8c4d9b8c;
 typedef struct S_g8c4d9b94 S_g8c4d9b94;
-typedef struct Object Object;
 typedef struct S_vv1 S_vv1;
 typedef struct S_vv4 S_vv4;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-};
 struct S_vv1 {
     float f00;
     float f04;
@@ -60,14 +51,14 @@ extern S_L8c4d9bac g_8c4d9bac;
 extern S_L8c4d9bb8 g_8c4d9bb8;
 extern S_L8c4d9bc4 g_8c4d9bc4;
 extern S_L8c4d9bd0 g_8c4d9bd0;
-extern void call_8c139ad8(Object *);
-extern void call_8c139400(Object *);
-extern void call_8c05fd7c(int, Object *, int, int, int);
-extern void call_8c139594(Object *);
+extern void call_8c139ad8(TBoss3Volopt *);
+extern void call_8c139400(TBoss3Volopt *);
+extern void call_8c05fd7c(int, TBoss3Volopt *, int, int, int);
+extern void call_8c139594(TBoss3Volopt *);
 extern void forward_effect_view(void *, void *);
-extern void call_8c13981c(Object *);
+extern void call_8c13981c(TBoss3Volopt *);
 extern void operation_8c1399fc(void *);
-void operation_8c138424(Object *o)
+void operation_8c138424(TBoss3Volopt *o)
 {
     S_vv1 *v1;
     int v2;

@@ -95,7 +95,7 @@ struct TBoss3Volopt {
     virtual void v78();
     virtual void v79();
     virtual void v80();
-    virtual void v81();
+    virtual void v81(int);
     virtual void v82();
     virtual void v83();
     virtual void v84();

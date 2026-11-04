@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xe4];
-    int fe4;
-};
-extern int call_8c0eeb00(Object *);
-int operation_8c24ba5c(Object *o)
+#include "src/include/classes/TODoorVS2Door01.h"
+extern int call_8c0eeb00(TODoorVS2Door01 *);
+int operation_8c24ba5c(TODoorVS2Door01 *o)
 {
     int v3;
     int t1;

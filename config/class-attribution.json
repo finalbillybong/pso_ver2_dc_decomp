@@ -1,11 +1,23 @@
 {
- "description": "Matched units adopted onto a class header by evidence other than their function name. signals: slot = vtable slot of the class, ctor = constructor/destructor of the class (vtable and class-name store), callers = every caller is a method of the class passing this, layout_unique = the unit's view matches one class family's header on 3+ fields past the TObject header, layout / layout_any = a weaker layout agreement. Accepted with one strong signal (slot, ctor, layout_unique) or two agreeing signals; see docs/TYPES.md.",
+ "description": "Matched units adopted onto a class header by evidence other than their function name. signals: slot = vtable slot of the class, ctor = constructor/destructor of the class (vtable and class-name store), callers = every caller is a method of the class passing this, layout_unique = the unit's view matches one class family's header on 3+ fields past the TObject header, layout / layout_any = a weaker layout agreement, tobject_layout = the view touches only the documented TObject header fields, callers_propagated = every caller is attributed to the class (by name or here) and passes this, and the view fits the header. Accepted with one strong signal (slot, ctor, layout_unique) or two agreeing signals; see docs/TYPES.md.",
  "units": {
   "acquire_text_context": {
    "class": "TItemDownLoad",
    "signals": [
     "callers",
     "layout_unique"
+   ]
+  },
+  "advance_request_8c1e8ad0": {
+   "class": "TObjWarpBoss",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "advance_request_8c25a7e8": {
+   "class": "TObjCityMainWarpChallenge",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "advance_text_context": {
@@ -28,16 +40,148 @@
     "layout_any"
    ]
   },
+  "destroy_context_8c03c454": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "destroy_context_8c03f2e8": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "destroy_context_8c0a47dc": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "destroy_context_8c0e9c78": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "destroy_context_8c0f34a0": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "destroy_context_8c127918": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "get_text_context_buffer": {
    "class": "TItemDownLoad",
    "signals": [
     "layout_unique"
    ]
   },
+  "init_header_8c1d0280": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_alternate_grid_view": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_audio_manager_8c014f74": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_base_8c0db1d0": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_context_blend_8c077e2c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_context_blend_8c2514d0": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_context_blend_8c252bfc": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_context_blend_8c254378": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_context_blend_8c254a58": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_effect_node_8c07c980": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_field_manager_8c014948": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_grid_panel_8c1ccd24": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "initialize_grid_panel_8c1dbd08": {
    "class": "TWindowMenuInfomation",
    "signals": [
     "ctor"
+   ]
+  },
+  "initialize_grid_view": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_manager_8c014a7c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_menu_manager_8c014814": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "initialize_session_manager_8c014c1c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
    ]
   },
   "open_text_context": {
@@ -96,6 +240,42 @@
     "slot"
    ]
   },
+  "operation_8c02e154": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c02e168": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c02e25c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c02e3d4": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c02e3e8": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c02e414": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c037a68": {
    "class": "TObjEnemy",
    "signals": [
@@ -114,10 +294,28 @@
     "slot"
    ]
   },
+  "operation_8c03d280": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c047438": {
    "class": "TBoss3Volopt",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c04be80": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c04bee4": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
    ]
   },
   "operation_8c05113c": {
@@ -151,11 +349,23 @@
     "layout_unique"
    ]
   },
+  "operation_8c073514": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c07d79c": {
    "class": "TItemMag",
    "signals": [
     "callers",
     "layout"
+   ]
+  },
+  "operation_8c07d7e0": {
+   "class": "TItemMag",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c07d820": {
@@ -165,10 +375,52 @@
     "layout_any"
    ]
   },
+  "operation_8c07d868": {
+   "class": "TItemMag",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c07d89c": {
+   "class": "TItemMag",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c07d8c0": {
+   "class": "TItemMag",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c07d8e0": {
+   "class": "TItemMag",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c07da28": {
+   "class": "TItemMag",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c07da88": {
    "class": "TItemMag",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c07dac0": {
+   "class": "TItemMag",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c07db40": {
+   "class": "TItemMag",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c07ef4c": {
@@ -208,6 +460,12 @@
    "signals": [
     "callers",
     "layout_any"
+   ]
+  },
+  "operation_8c0822c8": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
    ]
   },
   "operation_8c0840a8": {
@@ -319,6 +577,36 @@
     "layout_unique"
    ]
   },
+  "operation_8c099698": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c099c2c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c09c9a0": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c09eaac": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c0b4694": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c0b67e4": {
    "class": "TOSwitchAttackSub",
    "signals": [
@@ -337,6 +625,12 @@
     "layout_unique"
    ]
   },
+  "operation_8c0bda08": {
+   "class": "TObjEneSaver",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c0c03d4": {
    "class": "TObjEneBm3FlyNest",
    "signals": [
@@ -349,6 +643,18 @@
     "layout_unique"
    ]
   },
+  "operation_8c0c7b80": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c0cffe8": {
+   "class": "TObjEneDubchik",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c0d5048": {
    "class": "TBoss2DeRolLe",
    "signals": [
@@ -359,6 +665,12 @@
    "class": "TBoss2DeRolLe",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c0db20c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
    ]
   },
   "operation_8c0dc854": {
@@ -397,6 +709,12 @@
     "layout_unique"
    ]
   },
+  "operation_8c0e97b4": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c0ee1d8": {
    "class": "TFontSmallTask",
    "signals": [
@@ -407,6 +725,12 @@
    "class": "TFontSmallTask",
    "signals": [
     "ctor"
+   ]
+  },
+  "operation_8c0efb78": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
    ]
   },
   "operation_8c0f0400": {
@@ -461,6 +785,24 @@
    "class": "TOKeyAncient01",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c0f3954": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c0f3970": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c0f3990": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
    ]
   },
   "operation_8c0fd330": {
@@ -547,6 +889,24 @@
     "layout_unique"
    ]
   },
+  "operation_8c108d78": {
+   "class": "TObjEneGyaranzo",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c1108b8": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1119d8": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c1133cc": {
    "class": "TOKey",
    "signals": [
@@ -571,6 +931,12 @@
    "class": "TOKey",
    "signals": [
     "slot"
+   ]
+  },
+  "operation_8c11635c": {
+   "class": "TFogEditor",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c1166c4": {
@@ -618,6 +984,42 @@
     "layout_any"
    ]
   },
+  "operation_8c129a08": {
+   "class": "TContainerAncient01",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c129a54": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c12a2b8": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c12a698": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c12aad8": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c130a9c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c130bf8": {
    "class": "TODoorAncient09",
    "signals": [
@@ -630,10 +1032,34 @@
     "layout_unique"
    ]
   },
+  "operation_8c1354cc": {
+   "class": "TOKeyCave01",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c136688": {
+   "class": "TOKeyAncient03",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c136f48": {
    "class": "TObjFogCollision",
    "signals": [
     "ctor"
+   ]
+  },
+  "operation_8c137c3c": {
+   "class": "TTecSlicer",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c138424": {
+   "class": "TBoss3Volopt",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c139400": {
@@ -642,10 +1068,58 @@
     "layout_unique"
    ]
   },
+  "operation_8c1399fc": {
+   "class": "TBoss3Volopt",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c13a874": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c13d638": {
    "class": "TObjEneGyaranzo",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c13e610": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c144bf8": {
+   "class": "TBoss2DeRolLe",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c1508b8": {
+   "class": "TBoss3VoloptHiraisin",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c151678": {
+   "class": "TBoss3VoloptMonitor",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c151938": {
+   "class": "TBoss3VoloptMonitor",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c159d78": {
+   "class": "TObjVoloptCage",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c161874": {
@@ -660,6 +1134,12 @@
    "signals": [
     "callers",
     "layout_unique"
+   ]
+  },
+  "operation_8c162c24": {
+   "class": "TOKeyMachine01",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c1659ec": {
@@ -698,6 +1178,12 @@
     "ctor"
    ]
   },
+  "operation_8c1734c0": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c17749c": {
    "class": "TWindowSubSymbolChat",
    "signals": [
@@ -708,6 +1194,24 @@
    "class": "TWindowMainMenu",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c1912ac": {
+   "class": "TWindowSubMag",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c1912f0": {
+   "class": "TWindowSubMag",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c1913d8": {
+   "class": "TWindowSubMag",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c191428": {
@@ -731,6 +1235,12 @@
     "layout_any"
    ]
   },
+  "operation_8c197844": {
+   "class": "TWindowSubCustomEquip",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c199388": {
    "class": "TWindowSubCustomSelect",
    "signals": [
@@ -745,11 +1255,83 @@
     "layout"
    ]
   },
+  "operation_8c1995bc": {
+   "class": "TWindowSubCustomSelect",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c19cf78": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c19d57c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c19e040": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c19e09c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c19e0f8": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c19e154": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c19e1b0": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1a0840": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1a3b10": {
+   "class": "TWindowSubItem",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c1a3b78": {
+   "class": "TWindowSubItem",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c1a3c8c": {
    "class": "TWindowSubItem",
    "signals": [
     "callers",
     "layout_any"
+   ]
+  },
+  "operation_8c1a3d00": {
+   "class": "TWindowSubItem",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c1a3de4": {
@@ -763,6 +1345,18 @@
    "class": "TObjNpcHFW00",
    "signals": [
     "slot"
+   ]
+  },
+  "operation_8c1a78f0": {
+   "class": "TQuestScriptChecker",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c1a7964": {
+   "class": "TQuestScriptChecker",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c1a8f58": {
@@ -779,6 +1373,12 @@
     "slot"
    ]
   },
+  "operation_8c1a9e9c": {
+   "class": "TObjBgmCol",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c1a9ec4": {
    "class": "TObjBgmCol",
    "signals": [
@@ -786,10 +1386,22 @@
     "layout"
    ]
   },
+  "operation_8c1aa69c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c1aa840": {
    "class": "TAdRicoRing",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c1b04bc": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
    ]
   },
   "operation_8c1b4d80": {
@@ -826,6 +1438,12 @@
     "layout_unique"
    ]
   },
+  "operation_8c1c1798": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c1c185c": {
    "class": "TObjCityDoor_Warp",
    "signals": [
@@ -851,10 +1469,28 @@
     "layout"
    ]
   },
+  "operation_8c1c7424": {
+   "class": "TItemEffShield",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c1ca1e8": {
+   "class": "TWindowQuantity",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c1ca3e4": {
    "class": "TWindowSubShortMail",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c1cbaf4": {
+   "class": "TWindowRoom",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c1cd638": {
@@ -941,6 +1577,102 @@
     "layout_unique"
    ]
   },
+  "operation_8c1ce2ec": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1ce450": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1ce5b8": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1ce720": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1ce884": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1ce9ec": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1ceb54": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1cecdc": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1cee68": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1ceff0": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1cf154": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1cf2bc": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1cf564": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1cf750": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1cf93c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1d4730": {
+   "class": "TWindowSubComCard",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c1d4b78": {
    "class": "TWindowSubEquip",
    "signals": [
@@ -962,6 +1694,18 @@
     "layout_unique"
    ]
   },
+  "operation_8c1dbb54": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1dbba4": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c1dc440": {
    "class": "TOHealGeneral",
    "signals": [
@@ -981,11 +1725,41 @@
     "layout"
    ]
   },
+  "operation_8c1dd18c": {
+   "class": "TWindowChat",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c1decf0": {
    "class": "TWindowKeyBoardSoft",
    "signals": [
     "callers",
     "layout"
+   ]
+  },
+  "operation_8c1def88": {
+   "class": "TWindowKeyBoardSoft",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c1dfb18": {
+   "class": "TWindowKeyBoardSoft",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c1e0000": {
+   "class": "TWindowKeyBoardHard",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c1e09e8": {
+   "class": "TWindowKeyBoardHard",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c1e40e8": {
@@ -1010,6 +1784,12 @@
    "class": "TObjContainerBase",
    "signals": [
     "ctor"
+   ]
+  },
+  "operation_8c1e4774": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
    ]
   },
   "operation_8c1e49f0": {
@@ -1061,6 +1841,18 @@
    "signals": [
     "callers",
     "layout_any"
+   ]
+  },
+  "operation_8c1e5d48": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c1e7e18": {
+   "class": "TObjWarpBoss",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c1ea648": {
@@ -1118,6 +1910,24 @@
     "layout_unique"
    ]
   },
+  "operation_8c217728": {
+   "class": "TWindowSubShortMail",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c2177c0": {
+   "class": "TWindowSubShortMail",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c2188ac": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c21a07c": {
    "class": "TWindowSubComCard",
    "signals": [
@@ -1130,11 +1940,41 @@
     "layout_unique"
    ]
   },
+  "operation_8c21d3a8": {
+   "class": "TQuestListOnline",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c21d780": {
+   "class": "TQuestListOnline",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c21d7b8": {
+   "class": "TQuestListOnline",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c21e810": {
    "class": "TWindowSubQuestBoardSelect",
    "signals": [
     "callers",
     "layout_any"
+   ]
+  },
+  "operation_8c21e920": {
+   "class": "TWindowSubQuestBoardSelect",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c21e960": {
+   "class": "TWindowSubQuestBoardSelect",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c21eb14": {
@@ -1163,6 +2003,18 @@
    "signals": [
     "callers",
     "layout_any"
+   ]
+  },
+  "operation_8c220610": {
+   "class": "TWindowSubSymbolChatFaceType",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c220778": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
    ]
   },
   "operation_8c223228": {
@@ -1198,6 +2050,42 @@
     "layout_unique"
    ]
   },
+  "operation_8c225338": {
+   "class": "TWindowSubSymbolChatParts",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c22bc80": {
+   "class": "TWindowSoundBalance",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c22bcb0": {
+   "class": "TWindowSoundBalance",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c22c1c4": {
+   "class": "TItemTexLoad",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c22cd34": {
+   "class": "TWindowLoadItemTexture",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c22dd38": {
+   "class": "TQuestVmDownLoadServer",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c22de98": {
    "class": "TQuestVmDownLoadServer",
    "signals": [
@@ -1212,16 +2100,88 @@
     "layout_unique"
    ]
   },
+  "operation_8c22eb20": {
+   "class": "TQuestVmDownLoadServer",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c22f164": {
+   "class": "TWindowDeposit",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c2306c4": {
+   "class": "TWindowSubMagPhoton",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c2307ac": {
+   "class": "TWindowSubMagPhoton",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c2307dc": {
+   "class": "TWindowSubMagPhoton",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c2329b0": {
    "class": "TItemReverseTechPart1",
    "signals": [
     "layout_unique"
    ]
   },
+  "operation_8c2359c8": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c236a74": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
   "operation_8c237670": {
    "class": "TWindowSubComCard",
    "signals": [
     "layout_unique"
+   ]
+  },
+  "operation_8c237cb0": {
+   "class": "TChallenge",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c241a78": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c2425e0": {
+   "class": "TPlayerBattleCtrl",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c24a6ec": {
+   "class": "TObjCamera",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c24ba5c": {
+   "class": "TODoorVS2Door01",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c24c01c": {
@@ -1241,6 +2201,36 @@
    "signals": [
     "callers",
     "layout"
+   ]
+  },
+  "operation_8c24d504": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c251170": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c2543a8": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c25456c": {
+   "class": "TObject",
+   "signals": [
+    "tobject_layout"
+   ]
+  },
+  "operation_8c259b24": {
+   "class": "TObjCityMainWarpChallenge",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c25ad8c": {
@@ -1264,6 +2254,18 @@
     "layout_any"
    ]
   },
+  "operation_8c25c540": {
+   "class": "TObjWarnChime",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
+  "operation_8c25c664": {
+   "class": "TObjWarnChime",
+   "signals": [
+    "callers_propagated"
+   ]
+  },
   "operation_8c25e194": {
    "class": "TDLGraph",
    "signals": [
@@ -1282,6 +2284,12 @@
    "signals": [
     "callers",
     "layout_any"
+   ]
+  },
+  "operation_8c2600e0": {
+   "class": "TObjDeadListWin",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "operation_8c2602c0": {
@@ -1309,6 +2317,12 @@
    "signals": [
     "callers",
     "layout_unique"
+   ]
+  },
+  "update_mode_8c0eea34": {
+   "class": "TORainbowCave01",
+   "signals": [
+    "callers_propagated"
    ]
   },
   "word_operation_8c019b0c": {

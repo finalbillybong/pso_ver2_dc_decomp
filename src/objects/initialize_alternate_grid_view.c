@@ -1,2 +1,3 @@
-typedef struct View {char unknown0[24];void *dispatch;} View;typedef char check_dispatch[(unsigned long)&((View *)0)->dispatch==24?1:-1];extern void base_at(View *),initialize_at(View *,void *);
-View *initialize_alternate_grid_view(View *o,void *context) {View **home=&o;base_at(o);o->dispatch=(void *)0x8c269efc;initialize_at(o,context);return o;}
+#include "src/include/classes/TObject.h"
+typedef char check_dispatch[(unsigned long)&((TObject *)0)->vtable==24?1:-1];extern void base_at(TObject *),initialize_at(TObject *,void *);
+TObject *initialize_alternate_grid_view(TObject *o,void *context) {TObject **home=&o;base_at(o);o->vtable=(void *)0x8c269efc;initialize_at(o,context);return o;}

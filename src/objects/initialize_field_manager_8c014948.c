@@ -1,23 +1,20 @@
-typedef struct Manager {
-    char unknown0[0x18];
-    void *dispatch;
-} Manager;
-extern Manager *field_manager;
-extern void TObject_ctor_8c0330e4(Manager *);
-extern void load_manager_8c0149a8(Manager *);
-extern void reset_manager_8c0149c8(Manager *);
-extern void bind_manager_8c0149e0(Manager *);
-extern void start_manager_8c014a00(Manager *);
-Manager *initialize_field_manager_8c014948(Manager *o)
+#include "src/include/classes/TObject.h"
+extern TObject *field_manager;
+extern void TObject_ctor_8c0330e4(TObject *);
+extern void load_manager_8c0149a8(TObject *);
+extern void reset_manager_8c0149c8(TObject *);
+extern void bind_manager_8c0149e0(TObject *);
+extern void start_manager_8c014a00(TObject *);
+TObject *initialize_field_manager_8c014948(TObject *o)
 {
-    Manager **home = &o;
+    TObject **home = &o;
     (void)home;
     {
-        Manager *base = o;
+        TObject *base = o;
         TObject_ctor_8c0330e4(base);
-        base->dispatch = (void *)0x8c261240;
+        base->vtable = (void *)0x8c261240;
     }
-    o->dispatch = (void *)0x8c2611d0;
+    o->vtable = (void *)0x8c2611d0;
     load_manager_8c0149a8(o);
     reset_manager_8c0149c8(o);
     bind_manager_8c0149e0(o);

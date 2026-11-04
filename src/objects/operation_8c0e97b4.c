@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObject.h"
 typedef struct S_g8c44be84 S_g8c44be84;
 typedef struct S_g8c44be88 S_g8c44be88;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 extern S_g8c44be84 *g_8c44be84;
 extern S_g8c44be88 *g_8c44be88;
 extern int g_8c467188;
@@ -21,9 +12,9 @@ extern void operation_8c04c2f0(void);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TMovie_ctor_8c08aefc(int, void *, void *, void *);
 extern void operation_8c0e991c();
-Object *create_opening_movie_task_8c0e97b4(Object *o)
+TObject *create_opening_movie_task_8c0e97b4(TObject *o)
 {
-    Object **home = &o;
+    TObject **home = &o;
     int t1;
     int t2;
     int t3;
@@ -31,7 +22,7 @@ Object *create_opening_movie_task_8c0e97b4(Object *o)
     int t5;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, g_8c44be88);
-    o->dispatch = (void *)0x8c267f5c;
+    o->vtable = (void *)0x8c267f5c;
     operation_8c04c2f0();
     switch (g_8c467188) {
     case 0:

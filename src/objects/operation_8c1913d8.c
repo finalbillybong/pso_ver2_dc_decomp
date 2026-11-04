@@ -1,22 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubMag.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
 typedef struct Arg0_2c Arg0_2c;
 struct Frame {
     char unknown0[0x10];
 };
-struct Object {
-    char unknown0[0x2c];
-    Arg0_2c *f2c;
-};
 extern void initialize_fields_8c207358(void *);
 extern void call_8c1c8ce4(void *, Frame *);
 extern int call_8c207378(Frame *, int);
-int operation_8c1913d8(Object *o)
+int operation_8c1913d8(TWindowSubMag *o)
 {
     Frame frame;
     int v1;

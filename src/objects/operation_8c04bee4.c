@@ -1,10 +1,5 @@
-typedef struct Object Object;
-struct Object {
-    unsigned short *tag;
-    char unknown4[0xc];
-    int f10;
-};
-void operation_8c04bee4(Object *o, int a1, int a2)
+#include "src/include/classes/TObject.h"
+void operation_8c04bee4(TObject *o, int a1, int a2)
 {
     unsigned short *v2;
     unsigned short *v1;
@@ -14,6 +9,6 @@ void operation_8c04bee4(Object *o, int a1, int a2)
         do {
             *v2++ = *v1;
         } while (*v1++ != 0);
-        o->f10 -= a2;
+        o->parent -= a2;
     }
 }

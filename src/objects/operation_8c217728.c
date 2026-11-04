@@ -1,19 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TWindowSubShortMail.h"
 typedef struct S_c8c20a5bc S_c8c20a5bc;
-typedef struct Object Object;
-typedef struct Arg0_44 Arg0_44;
+typedef struct TWindowSubShortMail_p44 TWindowSubShortMail_p44;
 typedef struct Arg0_50 Arg0_50;
-struct Object {
-    char unknown0[0x44];
-    Arg0_44 *f44;
-    char unknown48[0x8];
-    Arg0_50 *f50;
-    int f54;
-};
 struct S_c8c20a5bc {
     char unknown0[0x4];
     int f04;
@@ -25,7 +13,7 @@ extern void call_8c2069b4(int, void *);
 extern void call_8c20a644(void *, void *);
 extern void operator_delete_8c18de08(int);
 extern S_c8c20a5bc *recordb4_8c20a5bc(int);
-void operation_8c217728(Object *o)
+void operation_8c217728(TWindowSubShortMail *o)
 {
     int v1;
     int v2;

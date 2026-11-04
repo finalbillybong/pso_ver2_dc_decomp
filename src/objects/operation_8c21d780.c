@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x28];
-    int f28;
-};
+#include "src/include/classes/TQuestListOnline.h"
 extern int call_8c03ed64(void);
 extern int call_8c03ed10(void *);
-void quest_online_list_init_8c21d780(Object *o)
+void quest_online_list_init_8c21d780(TQuestListOnline *o)
 {
     int t1;
     int t2;

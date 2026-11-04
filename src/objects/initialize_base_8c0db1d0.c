@@ -1,22 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObject.h"
 typedef struct S_g8c4e2ba0 S_g8c4e2ba0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
-extern void TObject_ctor_8c0330e4(Object *, void *);
-extern void call_8c0dc40c(Object *, int);
-Object *initialize_base_8c0db1d0(Object *o, int a1)
+extern void TObject_ctor_8c0330e4(TObject *, void *);
+extern void call_8c0dc40c(TObject *, int);
+TObject *initialize_base_8c0db1d0(TObject *o, int a1)
 {
-    Object **home = &o;
+    TObject **home = &o;
     (void)home;
     TObject_ctor_8c0330e4(o, *(S_g8c4e2ba0 **)0x8c4e2ba0);
-    o->dispatch = (void *)0x8c26770c;
+    o->vtable = (void *)0x8c26770c;
     call_8c0dc40c(o, a1);
     return o;
 }

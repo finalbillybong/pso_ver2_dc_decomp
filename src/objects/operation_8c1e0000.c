@@ -1,17 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TWindowKeyBoardHard.h"
 typedef struct Arg0_7c Arg0_7c;
-struct Object {
-    char unknown0[0x78];
-    int f78;
-    Arg0_7c *f7c;
-};
 extern void call_8c1e220c(void *);
-void operation_8c1e0000(Object *o)
+void operation_8c1e0000(TWindowKeyBoardHard *o)
 {
     if (o->f7c != 0) {
         call_8c1e220c((void *)(o->f7c));

@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemEffShield.h"
 typedef struct Arg0_28 Arg0_28;
 typedef struct Arg0_28_0 Arg0_28_0;
-struct Object {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-};
 extern void create_effect_7b30(void *, void *, int, int);
-void operation_8c1c7424(Object *o)
+void operation_8c1c7424(TItemEffShield *o)
 {
     int v2;
     int v1;

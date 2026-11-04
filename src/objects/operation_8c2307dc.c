@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x68];
-    char f68;
-};
+#include "src/include/classes/TWindowSubMagPhoton.h"
 extern void play_se_8c05fbf8(int, int, int, int);
-void operation_8c2307dc(Object *o)
+void operation_8c2307dc(TWindowSubMagPhoton *o)
 {
     if (((o->f68 & 1)) == 0) {
         play_se_8c05fbf8(0x50016, 0, 0, 0);

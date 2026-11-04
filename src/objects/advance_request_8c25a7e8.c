@@ -1,16 +1,16 @@
-typedef struct Request { char unknown0[0x100]; int timer; char unknown104[8]; short done; char unknown10e[2]; short state; char unknown112[0x8a]; int resource; } Request;
+#include "src/include/classes/TObjCityMainWarpChallenge.h"
 extern unsigned char operation_03d080(int);
-void advance_request_8c25a7e8(Request *o)
+void advance_request_8c25a7e8(TObjCityMainWarpChallenge *o)
 {
-    switch (o->state) {
+    switch (o->f110) {
     case -1:
         break;
     case 0:
-        o->timer = 0;
-        o->state = 1;
+        o->f100 = 0;
+        o->f110 = 1;
         break;
     case 1:
-        if (o->resource >= 0 && operation_03d080(o->resource) == 1) o->done = 0;
+        if (o->f19c >= 0 && operation_03d080(o->f19c) == 1) o->f10c = 0;
         break;
     }
 }

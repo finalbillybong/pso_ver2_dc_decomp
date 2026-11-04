@@ -1,15 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/object_vtable.h"
+#include "src/include/classes/TObject.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 class S_c8c021ef8;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 class S_c8c021ef8 {
 public:
     char unknown0[0x18];
@@ -21,8 +13,8 @@ typedef struct S_c8c021ef8Data {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void TObject_dtor_8c03311c(void *, short);
-extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *operation_8c1108b8(Object *o, int a1)
+extern "C" void call_8c122774(void *, TObject *);
+extern "C" TObject *operation_8c1108b8(TObject *o, int a1)
 {
     int v4;
     int v1;
@@ -32,7 +24,7 @@ extern "C" Object *operation_8c1108b8(Object *o, int a1)
     int v3;
     S_c8c021ef8 *t1;
     if (o != 0) {
-        o->dispatch = (void *)(void *)0x8c269b38;
+        TOBJECT_VTABLE(o) = (void *)(void *)0x8c269b38;
         v1 = (int)0x308;
         v2 = (int)0x5f8;
         v3 = (int)0xffff;

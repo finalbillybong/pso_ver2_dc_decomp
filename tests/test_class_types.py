@@ -265,6 +265,21 @@ class GapFillTests(unittest.TestCase):
         self.assertFalse(ct.additive(old, 'struct TFoo {\n    int f8;\n};\n', 'TFoo'))
 
 
+class RootClassTests(unittest.TestCase):
+    def test_tobject_units_are_not_evidence_for_subclasses(self):
+        classes = {'TObject': dict(name='TObject', parent=None, size=0x20, slots=5),
+                   'TFoo': dict(name='TFoo', parent='TObject', size=0x110, slots=3)}
+        root = C_UNIT.replace('char unknown1c[0x54];\n    float f70;\n    char unknown74[0x94];\n    int f108;',
+                              'short f1c;').replace('o->f108 == 1', 'o->f1c == 1').replace('o->f70 += 1.0f;', '')
+        r, _ = evidence(root, 'TFoo_v17_8c000000', 'TObject', uid='r')
+        r['method'] = 'attributed'
+        a, _ = evidence(C_UNIT, 'TFoo_v17_8c000000', 'TFoo', uid='a')
+        self.assertNotIn(0x1c, [f['offset'] for f in ct.resolve(classes, [r, a], 'TFoo')['fields']])
+        lay = ct.resolve(classes, [r], 'TObject')
+        self.assertIn(0x1c, [f['offset'] for f in lay['fields']])
+        self.assertEqual({f['offset']: f['name'] for f in lay['fields']}[0x18], 'vtable')
+
+
 class RenameTests(unittest.TestCase):
     classes = MergeTests.classes
 

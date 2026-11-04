@@ -1,23 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemMag.h"
 typedef struct S_vv3 S_vv3;
-struct Object {
-    char unknown0[0x13c];
-    int f13c;
-    char unknown140[0xd8];
-    int f218;
-    int f21c;
-    char unknown220[0x4];
-    int f224;
-};
 struct S_vv3 {
     int f00;
 };
-void operation_8c07da28(Object *o)
+void operation_8c07da28(TItemMag *o)
 {
     int v1;
     int v2;

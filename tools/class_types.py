@@ -480,9 +480,11 @@ def header_evidence(name, root=ROOT):
 def merge(classes, evidence, name):
     """Field evidence for `name`: units of the class and of its ancestors (they see the same bytes)."""
     chain = set(ancestors(classes, name))
-    units = [e for e in evidence if e['class'] in chain]
+    units = [e for e in evidence if e['class'] in chain and not (e['class'] == ROOT_CLASS and e.get('method') == 'attributed' and name != ROOT_CLASS)]
     # Ancestor headers first: their fields are fixed for every class below them.
     for base in reversed(ancestors(classes, name)):
+        if base == ROOT_CLASS and base != name:
+            continue   # see ROOT_CLASS
         pseudo = header_evidence(base)
         if pseudo:
             pseudo['rank'] = len(ancestors(classes, base))
@@ -525,6 +527,13 @@ def conflict_class(a, b):
 SHARED_TYPES = {'Vector3': 'src/include/vector3.h'}   # aggregates a class header may embed
 VPTR = 0x18
 DEPTH = {}
+# TObject is the root of nearly every class, but its subclasses' flattened headers were written
+# first and disagree among themselves in the TObject area (int tag / void *name, short / unsigned
+# short size, ...). TObject.h therefore describes TObject's own units only and is not an authority
+# for its subclasses' headers. Its fields carry the documented names (docs/CLASSES.md).
+ROOT_CLASS = 'TObject'
+ROOT_NAMES = {0x0: 'tag', 0x4: 'flags', 0x8: 'link_08', 0xc: 'link_0c', 0x10: 'parent', 0x14: 'child',
+              0x18: 'vtable', 0x1e: 'size'}
 MECHANICAL = re.compile(r'^(?:f_?[0-9a-fA-F]+|field_?[0-9a-fA-F]*|value_?[0-9a-fA-F]*|unknown\w*|pad\w*)$')
 
 
@@ -613,7 +622,9 @@ def resolve(classes, evidence, name):
             else:
                 conflicts.append(dict(offset=offset, kind='overlap', chosen=prev['type'], other=key[1], units=ids))
                 continue
-        if key[2] == 'vptr':
+        if name == ROOT_CLASS and offset in ROOT_NAMES and not any(i.startswith('header:') for i in ids):
+            fname = ROOT_NAMES[offset]
+        elif key[2] == 'vptr':
             fname = c_vptr_names.most_common(1)[0][0] if c_vptr_names else 'vtable'
         else:
             fname = pick_name(names[offset])
@@ -1046,12 +1057,16 @@ def keep_new_field(classes, name, f, path):
         return True
     if path.is_file() and f['type'] in SHARED_TYPES and SHARED_TYPES[f['type']] not in path.read_text():
         return False
+    if name == ROOT_CLASS:
+        return True    # see ROOT_CLASS
     for sub in classes:
         if name in ancestors(classes, sub)[1:] and (ROOT / HEADER_DIR / (sub + '.h')).is_file():
             for g in header_fields(sub).values():
                 if g['kind'] == 'vptr' or g['offset'] >= f['offset'] + f['size'] or g['offset'] + g['size'] <= f['offset']:
                     continue
                 if (g['offset'], g['size'], g['type'], g['name']) != key:
+                    if g['offset'] == VPTR and f['offset'] == VPTR and g['type'] == key[2]:
+                        continue
                     return False
     return True
 
@@ -1195,12 +1210,15 @@ def check(root=ROOT):
         if not users['%s/%s' % (HEADER_DIR, path.name)]:
             problems.append('%s: included by no unit' % path.name)
         for base in ancestors(classes, name)[1:]:
+            if base == ROOT_CLASS:
+                continue   # see ROOT_CLASS
             if not (root / HEADER_DIR / (base + '.h')).is_file():
                 continue
             theirs = header_fields(base, root)
             for offset, f in theirs.items():
                 g = mine.get(offset)
-                if g and (g['type'], g['size'], g['name']) != (f['type'], f['size'], f['name']):
+                if g and (g['type'], g['size'], g['name']) != (f['type'], f['size'], f['name']) \
+                        and not (offset == VPTR and g['type'] == f['type']):   # C vtable member names may differ
                     problems.append('%s 0x%x %s %s disagrees with %s %s %s' % (name, offset, g['type'], g['name'], base, f['type'], f['name']))
     return problems
 

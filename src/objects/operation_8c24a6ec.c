@@ -1,20 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObjCamera.h"
 typedef struct S_x52112 S_x52112;
 typedef struct S_x63024_0 S_x63024_0;
 struct S_x52112 {
     float f00;
 };
-struct Object {
-    char unknown0[0xe8];
-    float fe8;
-};
 extern void play_se_8c05fbf8(void *, int, int, int);
-void operation_8c24a6ec(Object *o)
+void operation_8c24a6ec(TObjCamera *o)
 {
     int v6;
     int v5;

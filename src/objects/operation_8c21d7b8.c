@@ -1,14 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TQuestListOnline.h"
 typedef struct S_L8c504968 S_L8c504968;
 typedef struct S_L8c504968_38 S_L8c504968_38;
 typedef struct S_L8c5049a4 S_L8c5049a4;
 typedef struct S_L8c5049a4_38 S_L8c5049a4_38;
 typedef struct S_g8c505964 S_g8c505964;
-typedef struct Object Object;
 struct S_L8c5049a4 {
     char unknown0[0x38];
     S_L8c5049a4_38 *f38;
@@ -16,10 +11,6 @@ struct S_L8c5049a4 {
 struct S_L8c504968 {
     char unknown0[0x38];
     S_L8c504968_38 *f38;
-};
-struct Object {
-    char unknown0[0x28];
-    int f28;
 };
 extern S_g8c505964 *g_8c505964;
 extern int g_8c505968;
@@ -29,7 +20,7 @@ extern int g_8c505974;
 extern S_L8c504968 g_8c504968;
 extern S_L8c5049a4 g_8c5049a4;
 extern int call_8c0787cc(void *, void *);
-void operation_8c21d7b8(Object *o)
+void operation_8c21d7b8(TQuestListOnline *o)
 {
     int t1;
     int t2;

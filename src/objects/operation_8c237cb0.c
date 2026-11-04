@@ -1,12 +1,9 @@
-typedef struct Object {
-    char unknown0[0x6c];
-    int f6c;
-} Object;
+#include "src/include/classes/TChallenge.h"
 extern int g_8c418248;
 extern char g_8c339ca0[];
 extern int lookup_low_id(int);
-extern void operation_8c24870c(Object *);
-void operation_8c237cb0(Object *o)
+extern void operation_8c24870c(TChallenge *);
+void operation_8c237cb0(TChallenge *o)
 {
     int found;
     int i;

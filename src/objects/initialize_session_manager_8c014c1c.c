@@ -1,25 +1,22 @@
-typedef struct Manager {
-    char unknown0[0x18];
-    void *dispatch;
-} Manager;
-extern void TObject_ctor_8c0330e4(Manager *);
+#include "src/include/classes/TObject.h"
+extern void TObject_ctor_8c0330e4(TObject *);
 extern int session_ready;
-extern Manager *session_instance;
+extern TObject *session_instance;
 extern void start_manager_8c399810(int);
-extern void load_manager_8c014cc0(Manager *);
-extern void reset_manager_8c014ca0(Manager *);
-extern void bind_manager_8c014ce0(Manager *);
-Manager *initialize_session_manager_8c014c1c(Manager *o)
+extern void load_manager_8c014cc0(TObject *);
+extern void reset_manager_8c014ca0(TObject *);
+extern void bind_manager_8c014ce0(TObject *);
+TObject *initialize_session_manager_8c014c1c(TObject *o)
 {
-    Manager **home = &o;
+    TObject **home = &o;
     int i;
     (void)home;
     {
-        Manager *base = o;
+        TObject *base = o;
         TObject_ctor_8c0330e4(base);
-        base->dispatch = (void *)0x8c261240;
+        base->vtable = (void *)0x8c261240;
     }
-    o->dispatch = (void *)0x8c261198;
+    o->vtable = (void *)0x8c261198;
     session_ready = 1;
     session_instance = o;
     start_manager_8c399810(1);

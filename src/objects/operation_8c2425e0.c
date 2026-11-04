@@ -1,13 +1,4 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-};
+#include "src/include/classes/TPlayerBattleCtrl.h"
 extern void call_8c242678(void);
 extern void call_8c2426a0(void);
 extern void call_8c242988(void);
@@ -15,7 +6,7 @@ extern void call_8c242abc(void);
 extern void call_8c24323c(void);
 extern void call_8c243784(void);
 extern void call_8c243a9c(void);
-void operation_8c2425e0(Object *o)
+void operation_8c2425e0(TPlayerBattleCtrl *o)
 {
     switch (o->f20) {
     case 0:

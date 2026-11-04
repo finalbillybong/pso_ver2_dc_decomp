@@ -1,29 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_dc Arg0_dc;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0xa4];
-    Arg0_dc *fdc;
-    char unknowne0[0x22c];
-    short f30c;
-    char unknown30e[0x26];
-    int f334;
-    char unknown338[0x58];
-    int f390;
-};
-struct Arg0_dc {
+#include "src/include/classes/TObjEneSaver.h"
+typedef struct TObjEneSaver_pdc TObjEneSaver_pdc;
+struct TObjEneSaver_pdc {
     char unknown0[0x18];
     int f18;
 };
 extern void operation_8c04a43c(void *, void *, float);
 extern float squared_distance_xz(void *, void *);
-void operation_8c0bda08(Object *o)
+void operation_8c0bda08(TObjEneSaver *o)
 {
     short v1;
     void *v2;

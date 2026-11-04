@@ -1,25 +1,16 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjDeadListWin.h"
 typedef struct S_c8c021ef8 S_c8c021ef8;
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
 struct S_c8c021ef8 {
     char unknown0[0x34];
     int f34;
-};
-struct Object {
-    char unknown0[0x20];
-    int f20;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int operation_8c238fa4(int);
 extern void strncpy_8c12b154(int, int, int);
 extern int get_current_area_8c032b10(void);
-extern void call_8c260228(Object *);
-void operation_8c2600e0(Object *o)
+extern void call_8c260228(TObjDeadListWin *);
+void operation_8c2600e0(TObjDeadListWin *o)
 {
     char *v3;
     int v4;

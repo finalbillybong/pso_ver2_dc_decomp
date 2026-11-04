@@ -1,20 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObject.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 extern void destroy_context_8c051f28(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *operation_8c19cf78(Object *o, int a1)
+extern void call_8c122774(void *, TObject *);
+TObject *operation_8c19cf78(TObject *o, int a1)
 {
     if (o != 0) {
-        o->dispatch = (void *)0x8c272c0c;
+        o->vtable = (void *)0x8c272c0c;
         *(int *)0x8c4dc4d8 += -1;
         destroy_context_8c051f28((void *)o, (short)0);
         if ((short)a1 > 0) {

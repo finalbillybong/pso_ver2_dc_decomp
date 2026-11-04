@@ -1,18 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-};
+#include "src/include/classes/TBoss3VoloptMonitor.h"
 extern void update_phase_8c151a74(void *);
-extern void call_8c151a44(Object *);
-extern void call_8c151850(Object *);
-extern void call_8c151938(Object *);
-void operation_8c151678(Object *o)
+extern void call_8c151a44(TBoss3VoloptMonitor *);
+extern void call_8c151850(TBoss3VoloptMonitor *);
+extern void call_8c151938(TBoss3VoloptMonitor *);
+void operation_8c151678(TBoss3VoloptMonitor *o)
 {
     if (o->f30a != 0) {
         if (o->f30a == 1) {

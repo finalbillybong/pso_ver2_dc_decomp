@@ -1,21 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
+#include "src/include/classes/TObject.h"
 extern void operation_8c241158(void *);
-Object *operation_8c251170(Object *o)
+TObject *operation_8c251170(TObject *o)
 {
     operation_8c241158((void *)o);
-    o->dispatch = (void *)0x8c27eea8;
+    o->vtable = (void *)0x8c27eea8;
     o->tag = (int)(*(int *)0x8c33f8d0);
     o->size = 0x234;
     return o;

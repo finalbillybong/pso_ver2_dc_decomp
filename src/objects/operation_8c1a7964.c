@@ -1,20 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x80];
-    int f80;
-};
+#include "src/include/classes/TQuestScriptChecker.h"
 extern char g_8c323e1c[];
 extern void njPrintSize_8c38c5aa(int);
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
 extern int update_text_buffer(void *);
 extern void operation_8c1a7d14(void *, int, int);
-void operation_8c1a7964(Object *o)
+void operation_8c1a7964(TQuestScriptChecker *o)
 {
     int t1;
     njPrintSize_8c38c5aa(0xe);
