@@ -35,7 +35,7 @@ extern void operation_8c2237b8(void);
 extern void TItemTimerEvent_dtor_8c22371c(void);
 
 /* 8c278928: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278928[8] = {
+VirtualFunction const TQuestListVM_vtable_8c278928[8] = {
     0,
     0,
     TQuestListVM_dtor_8c22206c,
@@ -47,7 +47,7 @@ VirtualFunction const vt_8c278928[8] = {
 };
 
 /* 8c278948: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278948[7] = {
+VirtualFunction const TItemLockCountCtrl_vtable_8c278948[7] = {
     0,
     0,
     TItemLockCountCtrl_dtor_8c223368,
@@ -175,7 +175,7 @@ VirtualFunction const vt_8c278a84[9] = {
 };
 
 /* 8c278aa8: type-information and this-adjustment header, then 7 slots */
-VirtualFunction const vt_8c278aa8[9] = {
+VirtualFunction const TItemTimerEvent_vtable_8c278aa8[9] = {
     0,
     0,
     TItemTimerEvent_dtor_8c22371c,

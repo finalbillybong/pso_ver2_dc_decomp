@@ -112,7 +112,7 @@ extern void apply_contact_position(void);
 extern void capture_current_contact(void);
 
 /* 8c2627b8: type-information and this-adjustment header, then 109 slots */
-VirtualFunction const vt_8c2627b8[111] = {
+VirtualFunction const TObjEneDD_vtable_8c2627b8[111] = {
     0,
     0,
     TObjEneDD_dtor_8c059c30,

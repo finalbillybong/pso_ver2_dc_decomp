@@ -176,7 +176,7 @@ extern void operation_8c075ed8(void);
 extern void fn_8c076340(void);
 
 /* 8c270290: type-information and this-adjustment header, then 17 slots */
-VirtualFunction const vt_8c270290[19] = {
+VirtualFunction const TPhotonYoulla_vtable_8c270290[19] = {
     0,
     0,
     TPhotonYoulla_dtor_8c174a10,
@@ -199,7 +199,7 @@ VirtualFunction const vt_8c270290[19] = {
 };
 
 /* 8c2702dc: type-information and this-adjustment header, then 111 slots */
-VirtualFunction const vt_8c2702dc[113] = {
+VirtualFunction const TBoss2Joint_vtable_8c2702dc[113] = {
     0,
     0,
     TBoss2Joint_dtor_8c174ed0,
@@ -316,7 +316,7 @@ VirtualFunction const vt_8c2702dc[113] = {
 };
 
 /* 8c2704a0: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c2704a0[61] = {
+VirtualFunction const TItemWpnClaw_vtable_8c2704a0[61] = {
     0,
     0,
     TItemWpnClaw_dtor_8c1755f8,

@@ -68,7 +68,7 @@ extern void TOKeyAncient03_v19_8c136658(void);
 extern void TOKeyAncient03_v20_8c136670(void);
 
 /* 8c26cdd0: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c26cdd0[10] = {
+VirtualFunction const TLightEditor_vtable_8c26cdd0[10] = {
     0,
     0,
     TLightEditor_dtor_8c133718,
@@ -82,7 +82,7 @@ VirtualFunction const vt_8c26cdd0[10] = {
 };
 
 /* 8c26cdf8: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c26cdf8[24] = {
+VirtualFunction const TODoorCave02_vtable_8c26cdf8[24] = {
     0,
     0,
     TODoorCave02_dtor_8c134a54,
@@ -110,7 +110,7 @@ VirtualFunction const vt_8c26cdf8[24] = {
 };
 
 /* 8c26ce58: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c26ce58[27] = {
+VirtualFunction const TOKeyCave01_vtable_8c26ce58[27] = {
     0,
     0,
     TOKeyCave01_dtor_8c135064,
@@ -141,7 +141,7 @@ VirtualFunction const vt_8c26ce58[27] = {
 };
 
 /* 8c26cec4: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c26cec4[24] = {
+VirtualFunction const TODoorAncient09_vtable_8c26cec4[24] = {
     0,
     0,
     TODoorAncient09_dtor_8c1356d0,
@@ -169,7 +169,7 @@ VirtualFunction const vt_8c26cec4[24] = {
 };
 
 /* 8c26cf24: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c26cf24[27] = {
+VirtualFunction const TOKeyAncient03_vtable_8c26cf24[27] = {
     0,
     0,
     TOKeyAncient03_dtor_8c1362a8,

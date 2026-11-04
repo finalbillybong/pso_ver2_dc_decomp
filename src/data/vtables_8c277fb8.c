@@ -58,7 +58,7 @@ VirtualFunction const vt_8c277fe4[7] = {
 };
 
 /* 8c278000: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278000[8] = {
+VirtualFunction const TWindowComCard_vtable_8c278000[8] = {
     0,
     0,
     TWindowComCard_dtor_8c1f19e8,
@@ -70,7 +70,7 @@ VirtualFunction const vt_8c278000[8] = {
 };
 
 /* 8c278020: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278020[7] = {
+VirtualFunction const TItemMagGrowEff_vtable_8c278020[7] = {
     0,
     0,
     TItemMagGrowEff_dtor_8c1f2b08,
@@ -81,7 +81,7 @@ VirtualFunction const vt_8c278020[7] = {
 };
 
 /* 8c27803c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27803c[7] = {
+VirtualFunction const TItemMagSub_vtable_8c27803c[7] = {
     0,
     0,
     TItemMagSub_dtor_8c1f1e94,
@@ -103,7 +103,7 @@ VirtualFunction const vt_8c278058[7] = {
 };
 
 /* 8c278074: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278074[7] = {
+VirtualFunction const TBoss3VoloptCtrl_vtable_8c278074[7] = {
     0,
     0,
     TBoss3VoloptCtrl_dtor_8c206c7c,

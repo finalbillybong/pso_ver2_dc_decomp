@@ -25,7 +25,7 @@ extern void TObject_render_default_8c0111c8(void);
 extern void TMovie_render_shadow_8c08b160(void);
 
 /* 8c26522c: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c26522c[16] = {
+VirtualFunction const TObjPlayerSet_vtable_8c26522c[16] = {
     0,
     0,
     TObjPlayerSet_dtor_8c08a3dc,
@@ -45,7 +45,7 @@ VirtualFunction const vt_8c26522c[16] = {
 };
 
 /* 8c26526c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c26526c[7] = {
+VirtualFunction const TeneFakeTecThunderEff_vtable_8c26526c[7] = {
     0,
     0,
     TeneFakeTecThunderEff_dtor_8c08a63c,
@@ -56,7 +56,7 @@ VirtualFunction const vt_8c26526c[7] = {
 };
 
 /* 8c265288: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c265288[7] = {
+VirtualFunction const TMovie_vtable_8c265288[7] = {
     0,
     0,
     TMovie_dtor_8c08b22c,

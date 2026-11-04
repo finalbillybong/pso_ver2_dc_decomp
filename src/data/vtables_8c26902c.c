@@ -182,7 +182,7 @@ VirtualFunction const vt_8c26902c[16] = {
 };
 
 /* 8c26906c: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c26906c[8] = {
+VirtualFunction const TWindowLockOn_vtable_8c26906c[8] = {
     0,
     0,
     TWindowLockOn_dtor_8c0fc304,
@@ -203,7 +203,7 @@ VirtualFunction const vt_8c26908c[5] = {
 };
 
 /* 8c2690a0: type-information and this-adjustment header, then 100 slots */
-VirtualFunction const vt_8c2690a0[102] = {
+VirtualFunction const TOMineTrap_vtable_8c2690a0[102] = {
     0,
     0,
     TOMineTrap_dtor_8c0fe190,
@@ -309,7 +309,7 @@ VirtualFunction const vt_8c2690a0[102] = {
 };
 
 /* 8c269238: type-information and this-adjustment header, then 100 slots */
-VirtualFunction const vt_8c269238[102] = {
+VirtualFunction const TOMine_vtable_8c269238[102] = {
     0,
     0,
     TOMine_dtor_8c0fce4c,
@@ -415,7 +415,7 @@ VirtualFunction const vt_8c269238[102] = {
 };
 
 /* 8c2693d0: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c2693d0[18] = {
+VirtualFunction const TOSignCave03_vtable_8c2693d0[18] = {
     0,
     0,
     TOSignCave03_dtor_8c0fed94,
@@ -437,7 +437,7 @@ VirtualFunction const vt_8c2693d0[18] = {
 };
 
 /* 8c269418: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c269418[18] = {
+VirtualFunction const TOSignCave02_vtable_8c269418[18] = {
     0,
     0,
     TOSignCave02_dtor_8c0ff1b0,
@@ -459,7 +459,7 @@ VirtualFunction const vt_8c269418[18] = {
 };
 
 /* 8c269460: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c269460[18] = {
+VirtualFunction const TOSignCave01_vtable_8c269460[18] = {
     0,
     0,
     TOSignCave01_dtor_8c0ff534,
@@ -481,7 +481,7 @@ VirtualFunction const vt_8c269460[18] = {
 };
 
 /* 8c2694a8: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c2694a8[18] = {
+VirtualFunction const TOAirconCave01_vtable_8c2694a8[18] = {
     0,
     0,
     TOAirconCave01_dtor_8c0ff8b8,
@@ -525,7 +525,7 @@ VirtualFunction const vt_8c2694f0[18] = {
 };
 
 /* 8c269538: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c269538[16] = {
+VirtualFunction const TObjEnvSound_vtable_8c269538[16] = {
     0,
     0,
     TObjEnvSound_dtor_8c100c38,
@@ -545,7 +545,7 @@ VirtualFunction const vt_8c269538[16] = {
 };
 
 /* 8c269578: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c269578[16] = {
+VirtualFunction const TRaderMapCore_vtable_8c269578[16] = {
     0,
     0,
     TRaderMapCore_dtor_8c101548,

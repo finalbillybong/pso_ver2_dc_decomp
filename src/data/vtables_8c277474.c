@@ -117,7 +117,7 @@ extern void operation_8c1e40e8(void);
 extern void operation_8c085cf8(void);
 
 /* 8c277474: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c277474[8] = {
+VirtualFunction const TWindowKeyBoardBase_vtable_8c277474[8] = {
     0,
     0,
     TWindowKeyBoardBase_dtor_8c1e1020,
@@ -235,7 +235,7 @@ VirtualFunction const vt_8c2774b0[91] = {
 };
 
 /* 8c27761c: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c27761c[91] = {
+VirtualFunction const TOContainerAncientEnemyCommon_vtable_8c27761c[91] = {
     0,
     0,
     TOContainerAncientEnemyCommon_dtor_8c1e4e44,
@@ -330,7 +330,7 @@ VirtualFunction const vt_8c27761c[91] = {
 };
 
 /* 8c277788: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c277788[91] = {
+VirtualFunction const TOContainerAncientEnemy_vtable_8c277788[91] = {
     0,
     0,
     TOContainerAncientEnemy_dtor_8c1e4978,
@@ -615,7 +615,7 @@ VirtualFunction const vt_8c277a60[91] = {
 };
 
 /* 8c277bcc: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c277bcc[91] = {
+VirtualFunction const TOContainerAncientItemCommon_vtable_8c277bcc[91] = {
     0,
     0,
     TOContainerAncientItemCommon_dtor_8c1e4424,

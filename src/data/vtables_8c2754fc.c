@@ -41,7 +41,7 @@ extern void TObjCityMainWarp_v18_8c1be1d4(void);
 extern void operation_8c089240(void);
 
 /* 8c2754fc: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2754fc[8] = {
+VirtualFunction const TWindowInputNumber_vtable_8c2754fc[8] = {
     0,
     0,
     TWindowInputNumber_dtor_8c1bd124,
@@ -53,7 +53,7 @@ VirtualFunction const vt_8c2754fc[8] = {
 };
 
 /* 8c27551c: type-information and this-adjustment header, then 19 slots */
-VirtualFunction const vt_8c27551c[21] = {
+VirtualFunction const TObjCityMapWarp_vtable_8c27551c[21] = {
     0,
     0,
     TObjCityMapWarp_dtor_8c1be6cc,
@@ -78,7 +78,7 @@ VirtualFunction const vt_8c27551c[21] = {
 };
 
 /* 8c275570: type-information and this-adjustment header, then 20 slots */
-VirtualFunction const vt_8c275570[22] = {
+VirtualFunction const TObjCityAreaWarp_vtable_8c275570[22] = {
     0,
     0,
     TObjCityAreaWarp_dtor_8c1be350,
@@ -104,7 +104,7 @@ VirtualFunction const vt_8c275570[22] = {
 };
 
 /* 8c2755c8: type-information and this-adjustment header, then 20 slots */
-VirtualFunction const vt_8c2755c8[22] = {
+VirtualFunction const TObjCityMainWarp_vtable_8c2755c8[22] = {
     0,
     0,
     TObjCityMainWarp_dtor_8c1bdf1c,

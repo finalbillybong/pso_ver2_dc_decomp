@@ -13,7 +13,7 @@ extern void TEffHit_dtor_8c0a0698(void);
 extern void TEffHit_update_8c0a06dc(void);
 
 /* 8c2659d8: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2659d8[7] = {
+VirtualFunction const TEffect_vtable_8c2659d8[7] = {
     0,
     0,
     TEffect_dtor_8c0a0104,
@@ -24,7 +24,7 @@ VirtualFunction const vt_8c2659d8[7] = {
 };
 
 /* 8c2659f4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2659f4[7] = {
+VirtualFunction const TEffGuard_vtable_8c2659f4[7] = {
     0,
     0,
     TEffGuard_dtor_8c0a0578,
@@ -35,7 +35,7 @@ VirtualFunction const vt_8c2659f4[7] = {
 };
 
 /* 8c265a10: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c265a10[7] = {
+VirtualFunction const TEffHit_vtable_8c265a10[7] = {
     0,
     0,
     TEffHit_dtor_8c0a0698,

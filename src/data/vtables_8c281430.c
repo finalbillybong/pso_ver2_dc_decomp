@@ -174,7 +174,7 @@ extern void operation_8c256894(void);
 extern void operation_8c113564(void);
 
 /* 8c281430: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c281430[61] = {
+VirtualFunction const TItemWpnBouquet_vtable_8c281430[61] = {
     0,
     0,
     TItemWpnBouquet_dtor_8c255dac,
@@ -239,7 +239,7 @@ VirtualFunction const vt_8c281430[61] = {
 };
 
 /* 8c281524: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c281524[61] = {
+VirtualFunction const TItemWpnFamitsu_vtable_8c281524[61] = {
     0,
     0,
     TItemWpnFamitsu_dtor_8c255e9c,
@@ -304,7 +304,7 @@ VirtualFunction const vt_8c281524[61] = {
 };
 
 /* 8c281618: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c281618[27] = {
+VirtualFunction const TOSwitchItem_vtable_8c281618[27] = {
     0,
     0,
     TOSwitchItem_dtor_8c255ee0,
@@ -335,7 +335,7 @@ VirtualFunction const vt_8c281618[27] = {
 };
 
 /* 8c281684: type-information and this-adjustment header, then 86 slots */
-VirtualFunction const vt_8c281684[88] = {
+VirtualFunction const TOSymbolchatColli_vtable_8c281684[88] = {
     0,
     0,
     TOSymbolchatColli_dtor_8c2562b4,

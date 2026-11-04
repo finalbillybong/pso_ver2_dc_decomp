@@ -229,7 +229,7 @@ extern void TODoorCave01_v19_8c132c18(void);
 extern void TODoorCave01_v21_8c132c78(void);
 
 /* 8c26b320: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c26b320[7] = {
+VirtualFunction const TFogCtrl_vtable_8c26b320[7] = {
     0,
     0,
     TFogCtrl_dtor_8c1216f0,
@@ -366,7 +366,7 @@ VirtualFunction const vt_8c26b384[100] = {
 };
 
 /* 8c26b514: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26b514[100] = {
+VirtualFunction const TObjNpcFemaleBase_vtable_8c26b514[100] = {
     0,
     0,
     TObjNpcFemaleBase_dtor_8c123f10,
@@ -470,7 +470,7 @@ VirtualFunction const vt_8c26b514[100] = {
 };
 
 /* 8c26b6a4: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26b6a4[100] = {
+VirtualFunction const TObjNpcFemaleChild_vtable_8c26b6a4[100] = {
     0,
     0,
     TObjNpcFemaleChild_dtor_8c1240c4,
@@ -574,7 +574,7 @@ VirtualFunction const vt_8c26b6a4[100] = {
 };
 
 /* 8c26b834: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26b834[100] = {
+VirtualFunction const TObjNpcFemaleDwarf_vtable_8c26b834[100] = {
     0,
     0,
     TObjNpcFemaleDwarf_dtor_8c124278,
@@ -678,7 +678,7 @@ VirtualFunction const vt_8c26b834[100] = {
 };
 
 /* 8c26b9c4: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26b9c4[100] = {
+VirtualFunction const TObjNpcFemaleFat_vtable_8c26b9c4[100] = {
     0,
     0,
     TObjNpcFemaleFat_dtor_8c12442c,
@@ -782,7 +782,7 @@ VirtualFunction const vt_8c26b9c4[100] = {
 };
 
 /* 8c26bb54: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26bb54[100] = {
+VirtualFunction const TObjNpcFemaleMacho_vtable_8c26bb54[100] = {
     0,
     0,
     TObjNpcFemaleMacho_dtor_8c1245e0,
@@ -886,7 +886,7 @@ VirtualFunction const vt_8c26bb54[100] = {
 };
 
 /* 8c26bce4: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26bce4[100] = {
+VirtualFunction const TObjNpcFemaleOld_vtable_8c26bce4[100] = {
     0,
     0,
     TObjNpcFemaleOld_dtor_8c124794,
@@ -990,7 +990,7 @@ VirtualFunction const vt_8c26bce4[100] = {
 };
 
 /* 8c26be74: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26be74[100] = {
+VirtualFunction const TObjNpcFemaleTall_vtable_8c26be74[100] = {
     0,
     0,
     TObjNpcFemaleTall_dtor_8c124948,
@@ -1094,7 +1094,7 @@ VirtualFunction const vt_8c26be74[100] = {
 };
 
 /* 8c26c004: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c26c004[91] = {
+VirtualFunction const TObjEneBalClawBody_vtable_8c26c004[91] = {
     0,
     0,
     TObjEneBalClawBody_dtor_8c124d74,
@@ -1284,7 +1284,7 @@ VirtualFunction const vt_8c26c170[91] = {
 };
 
 /* 8c26c2dc: type-information and this-adjustment header, then 86 slots */
-VirtualFunction const vt_8c26c2dc[88] = {
+VirtualFunction const TContainerAncient01_vtable_8c26c2dc[88] = {
     0,
     0,
     TContainerAncient01_dtor_8c12905c,
@@ -1752,7 +1752,7 @@ VirtualFunction const vt_8c26c874[90] = {
 };
 
 /* 8c26c9dc: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26c9dc[100] = {
+VirtualFunction const TObjNpcSoldierBase_vtable_8c26c9dc[100] = {
     0,
     0,
     TObjNpcSoldierBase_dtor_8c12ae0c,
@@ -1856,7 +1856,7 @@ VirtualFunction const vt_8c26c9dc[100] = {
 };
 
 /* 8c26cb6c: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c26cb6c[27] = {
+VirtualFunction const TOKeyGenericSw_vtable_8c26cb6c[27] = {
     0,
     0,
     TOKeyGenericSw_dtor_8c1305b4,
@@ -1937,7 +1937,7 @@ VirtualFunction const vt_8c26cc38[18] = {
 };
 
 /* 8c26cc80: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c26cc80[18] = {
+VirtualFunction const TODragonfly_vtable_8c26cc80[18] = {
     0,
     0,
     TODragonfly_dtor_8c131a34,
@@ -1959,7 +1959,7 @@ VirtualFunction const vt_8c26cc80[18] = {
 };
 
 /* 8c26ccc8: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c26ccc8[24] = {
+VirtualFunction const TODoorCave01_vtable_8c26ccc8[24] = {
     0,
     0,
     TODoorCave01_dtor_8c132540,

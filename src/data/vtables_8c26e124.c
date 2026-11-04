@@ -9,7 +9,7 @@ extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
 /* 8c26e124: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c26e124[7] = {
+VirtualFunction const TObjBoss2Tunnel_vtable_8c26e124[7] = {
     0,
     0,
     TObjBoss2Tunnel_dtor_8c14ba44,

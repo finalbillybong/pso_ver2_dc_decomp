@@ -9,7 +9,7 @@ extern void TCameraCtrl_render_shadow_8c0a1780(void);
 extern void hierarchy_output(void);
 
 /* 8c265ad4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c265ad4[7] = {
+VirtualFunction const TCameraCtrl_vtable_8c265ad4[7] = {
     0,
     0,
     TCameraCtrl_dtor_8c0a1784,

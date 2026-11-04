@@ -13,7 +13,7 @@ extern void TWindowSubSymbolChatFaceType_update_8c220004(void);
 extern void TWindowSubSymbolChatFaceType_render_8c2200c8(void);
 
 /* 8c278820: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278820[8] = {
+VirtualFunction const TWindowSubSymbolChatHelp_vtable_8c278820[8] = {
     0,
     0,
     TWindowSubSymbolChatHelp_dtor_8c21f7d0,
@@ -25,7 +25,7 @@ VirtualFunction const vt_8c278820[8] = {
 };
 
 /* 8c278840: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278840[8] = {
+VirtualFunction const TWindowSubSymbolChatFaceType_vtable_8c278840[8] = {
     0,
     0,
     TWindowSubSymbolChatFaceType_dtor_8c21ffb0,

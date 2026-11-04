@@ -142,7 +142,7 @@ extern void TItemObjWpnPowerUp_dtor_8c24d0b8(void);
 extern void TItemObjWpnPowerUp_v42_8c24d108(void);
 
 /* 8c27d878: type-information and this-adjustment header, then 86 slots */
-VirtualFunction const vt_8c27d878[88] = {
+VirtualFunction const TOVS2Wall01_vtable_8c27d878[88] = {
     0,
     0,
     TOVS2Wall01_dtor_8c24c6e4,
@@ -256,7 +256,7 @@ VirtualFunction const vt_8c27d9d8[18] = {
 };
 
 /* 8c27da20: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c27da20[18] = {
+VirtualFunction const TOVS2Wreck05_vtable_8c27da20[18] = {
     0,
     0,
     TOVS2Wreck05_dtor_8c24c3f0,
@@ -278,7 +278,7 @@ VirtualFunction const vt_8c27da20[18] = {
 };
 
 /* 8c27da68: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c27da68[18] = {
+VirtualFunction const TOVS2Wreck04_vtable_8c27da68[18] = {
     0,
     0,
     TOVS2Wreck04_dtor_8c24c31c,
@@ -300,7 +300,7 @@ VirtualFunction const vt_8c27da68[18] = {
 };
 
 /* 8c27dab0: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c27dab0[18] = {
+VirtualFunction const TOVS2Wreck03_vtable_8c27dab0[18] = {
     0,
     0,
     TOVS2Wreck03_dtor_8c24c248,
@@ -322,7 +322,7 @@ VirtualFunction const vt_8c27dab0[18] = {
 };
 
 /* 8c27daf8: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c27daf8[18] = {
+VirtualFunction const TOVS2Wreck02_vtable_8c27daf8[18] = {
     0,
     0,
     TOVS2Wreck02_dtor_8c24c174,
@@ -344,7 +344,7 @@ VirtualFunction const vt_8c27daf8[18] = {
 };
 
 /* 8c27db40: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c27db40[18] = {
+VirtualFunction const TOVS2Wreck01_vtable_8c27db40[18] = {
     0,
     0,
     TOVS2Wreck01_dtor_8c24c0a0,
@@ -366,7 +366,7 @@ VirtualFunction const vt_8c27db40[18] = {
 };
 
 /* 8c27db88: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c27db88[18] = {
+VirtualFunction const TOVS2_vtable_8c27db88[18] = {
     0,
     0,
     TOVS2_dtor_8c24bf44,
@@ -388,7 +388,7 @@ VirtualFunction const vt_8c27db88[18] = {
 };
 
 /* 8c27dbd0: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c27dbd0[45] = {
+VirtualFunction const TItemObjHpRecover_vtable_8c27dbd0[45] = {
     0,
     0,
     TItemObjHpRecover_dtor_8c24cf64,
@@ -437,7 +437,7 @@ VirtualFunction const vt_8c27dbd0[45] = {
 };
 
 /* 8c27dc84: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c27dc84[45] = {
+VirtualFunction const TItemObjWpnPowerUp_vtable_8c27dc84[45] = {
     0,
     0,
     TItemObjWpnPowerUp_dtor_8c24d0b8,

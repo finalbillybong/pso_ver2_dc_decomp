@@ -24,7 +24,7 @@ extern void TWindowGetComCard_update_8c209564(void);
 extern void TWindowGetComCard_render_8c20972c(void);
 
 /* 8c2780b0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2780b0[7] = {
+VirtualFunction const TAdFloorLoad_vtable_8c2780b0[7] = {
     0,
     0,
     TAdFloorLoad_dtor_8c207998,
@@ -35,7 +35,7 @@ VirtualFunction const vt_8c2780b0[7] = {
 };
 
 /* 8c2780cc: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c2780cc[10] = {
+VirtualFunction const THunterGuildSeqOnline_Client_vtable_8c2780cc[10] = {
     0,
     0,
     THunterGuildSeqOnline_Client_dtor_8c208d94,
@@ -49,7 +49,7 @@ VirtualFunction const vt_8c2780cc[10] = {
 };
 
 /* 8c2780f4: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c2780f4[10] = {
+VirtualFunction const THunterGuildSeqOnline_Server_vtable_8c2780f4[10] = {
     0,
     0,
     THunterGuildSeqOnline_Server_dtor_8c2084bc,
@@ -63,7 +63,7 @@ VirtualFunction const vt_8c2780f4[10] = {
 };
 
 /* 8c27811c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27811c[7] = {
+VirtualFunction const THunterGuildSeqOnlineTask_vtable_8c27811c[7] = {
     0,
     0,
     THunterGuildSeqOnlineTask_dtor_8c2083b4,
@@ -74,7 +74,7 @@ VirtualFunction const vt_8c27811c[7] = {
 };
 
 /* 8c278138: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278138[7] = {
+VirtualFunction const TWindowGetComCard_vtable_8c278138[7] = {
     0,
     0,
     TWindowGetComCard_dtor_8c2094ac,

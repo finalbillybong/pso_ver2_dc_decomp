@@ -18,7 +18,7 @@ extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
 
 /* 8c272018: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c272018[16] = {
+VirtualFunction const TObjRoomId_vtable_8c272018[16] = {
     0,
     0,
     TObjRoomId_dtor_8c185448,

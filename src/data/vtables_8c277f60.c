@@ -24,7 +24,7 @@ extern void operation_8c0887b4(void);
 extern void operation_8c089240(void);
 
 /* 8c277f60: type-information and this-adjustment header, then 20 slots */
-VirtualFunction const vt_8c277f60[22] = {
+VirtualFunction const TObjWarpBoss_vtable_8c277f60[22] = {
     0,
     0,
     TObjWarpBoss_dtor_8c1e7b58,

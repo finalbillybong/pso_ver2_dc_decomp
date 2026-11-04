@@ -122,7 +122,7 @@ extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 
 /* 8c2615d4: type-information and this-adjustment header, then 99 slots */
-VirtualFunction const vt_8c2615d4[101] = {
+VirtualFunction const TObjEneShark_vtable_8c2615d4[101] = {
     0,
     0,
     TObjEneShark_dtor_8c0372a8,
@@ -227,7 +227,7 @@ VirtualFunction const vt_8c2615d4[101] = {
 };
 
 /* 8c261768: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c261768[91] = {
+VirtualFunction const TObjEneMoja_vtable_8c261768[91] = {
     0,
     0,
     TObjEneMoja_dtor_8c03843c,
@@ -322,7 +322,7 @@ VirtualFunction const vt_8c261768[91] = {
 };
 
 /* 8c2618d4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2618d4[7] = {
+VirtualFunction const TForceOperate_vtable_8c2618d4[7] = {
     0,
     0,
     TForceOperate_dtor_8c03c1d0,

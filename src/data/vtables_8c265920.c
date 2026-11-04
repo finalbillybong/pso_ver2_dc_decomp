@@ -27,7 +27,7 @@ extern void TEffClitical_update_8c09fe44(void);
 extern void TEffClitical_render_8c09ff7c(void);
 
 /* 8c265920: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c265920[16] = {
+VirtualFunction const TSceneSora_vtable_8c265920[16] = {
     0,
     0,
     TSceneSora_dtor_8c09f2ac,
@@ -47,7 +47,7 @@ VirtualFunction const vt_8c265920[16] = {
 };
 
 /* 8c265960: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c265960[7] = {
+VirtualFunction const TEF_PvrWave_vtable_8c265960[7] = {
     0,
     0,
     TEF_PvrWave_dtor_8c09f4b8,
@@ -58,7 +58,7 @@ VirtualFunction const vt_8c265960[7] = {
 };
 
 /* 8c26597c: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c26597c[16] = {
+VirtualFunction const TEF_LensFlare_vtable_8c26597c[16] = {
     0,
     0,
     TEF_LensFlare_dtor_8c09fc3c,
@@ -78,7 +78,7 @@ VirtualFunction const vt_8c26597c[16] = {
 };
 
 /* 8c2659bc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2659bc[7] = {
+VirtualFunction const TEffClitical_vtable_8c2659bc[7] = {
     0,
     0,
     TEffClitical_dtor_8c09fe00,

@@ -10,7 +10,7 @@ extern void hierarchy_output(void);
 extern void operation_8c0dc63c(void);
 
 /* 8c276854: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c276854[8] = {
+VirtualFunction const TWindowRoom_vtable_8c276854[8] = {
     0,
     0,
     TWindowRoom_dtor_8c1cba54,

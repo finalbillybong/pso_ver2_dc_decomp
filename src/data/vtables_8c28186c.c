@@ -97,7 +97,7 @@ extern void operation_8c0134e8(void);
 extern void operation_8c0134ec(void);
 
 /* 8c28186c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c28186c[7] = {
+VirtualFunction const TObjHexLine_vtable_8c28186c[7] = {
     0,
     0,
     TObjHexLine_dtor_8c2572b0,
@@ -108,7 +108,7 @@ VirtualFunction const vt_8c28186c[7] = {
 };
 
 /* 8c281888: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281888[7] = {
+VirtualFunction const TObjHexLine_vtable_8c281888[7] = {
     0,
     0,
     TObjHexLine_dtor_8c256c38,
@@ -119,7 +119,7 @@ VirtualFunction const vt_8c281888[7] = {
 };
 
 /* 8c2818a4: type-information and this-adjustment header, then 86 slots */
-VirtualFunction const vt_8c2818a4[88] = {
+VirtualFunction const TOAttackableCol_vtable_8c2818a4[88] = {
     0,
     0,
     TOAttackableCol_dtor_8c2576a0,

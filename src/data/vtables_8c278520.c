@@ -15,7 +15,7 @@ extern void TObjDFTenchuFuru_dtor_8c21af80(void);
 extern void TObjDFTenchuFuru_update_8c21afd4(void);
 
 /* 8c278520: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278520[7] = {
+VirtualFunction const TObjDFBeamCursor_vtable_8c278520[7] = {
     0,
     0,
     TObjDFBeamCursor_dtor_8c21b5ec,
@@ -26,7 +26,7 @@ VirtualFunction const vt_8c278520[7] = {
 };
 
 /* 8c27853c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27853c[7] = {
+VirtualFunction const TObjDFRecBall_vtable_8c27853c[7] = {
     0,
     0,
     TObjDFRecBall_dtor_8c21b39c,
@@ -37,7 +37,7 @@ VirtualFunction const vt_8c27853c[7] = {
 };
 
 /* 8c278558: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278558[7] = {
+VirtualFunction const TObjDFRecover_vtable_8c278558[7] = {
     0,
     0,
     TObjDFRecover_dtor_8c21b0d0,
@@ -48,7 +48,7 @@ VirtualFunction const vt_8c278558[7] = {
 };
 
 /* 8c278574: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278574[7] = {
+VirtualFunction const TObjDFTenchuFuru_vtable_8c278574[7] = {
     0,
     0,
     TObjDFTenchuFuru_dtor_8c21af80,

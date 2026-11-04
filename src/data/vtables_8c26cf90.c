@@ -9,7 +9,7 @@ extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
 /* 8c26cf90: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c26cf90[7] = {
+VirtualFunction const TObjFogCollision_Manager_vtable_8c26cf90[7] = {
     0,
     0,
     TObjFogCollision_Manager_dtor_8c13735c,

@@ -12,7 +12,7 @@ extern void destroy_timed_owner_effect_8c1c56c0(void);
 extern void operation_8c1c5710(void);
 
 /* 8c27662c: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c27662c[8] = {
+VirtualFunction const TItemEffBringer_vtable_8c27662c[8] = {
     0,
     0,
     TItemEffBringer_dtor_8c1c55e0,

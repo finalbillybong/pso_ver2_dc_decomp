@@ -10,7 +10,7 @@ extern void hierarchy_output(void);
 extern void operation_8c0dc63c(void);
 
 /* 8c2745b8: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2745b8[8] = {
+VirtualFunction const TWindowChatSymbol_vtable_8c2745b8[8] = {
     0,
     0,
     TWindowChatSymbol_dtor_8c1a632c,

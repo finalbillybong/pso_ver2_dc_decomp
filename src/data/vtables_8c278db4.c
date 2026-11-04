@@ -25,7 +25,7 @@ extern void TWindowSoundBalance_render_8c22ba2c(void);
 extern void operation_8c0dc63c(void);
 
 /* 8c278db4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278db4[7] = {
+VirtualFunction const TWindowEff_vtable_8c278db4[7] = {
     0,
     0,
     TWindowEff_dtor_8c22b324,
@@ -36,7 +36,7 @@ VirtualFunction const vt_8c278db4[7] = {
 };
 
 /* 8c278dd0: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c278dd0[16] = {
+VirtualFunction const TObjDFDemoF_vtable_8c278dd0[16] = {
     0,
     0,
     TObjDFDemoF_dtor_8c22b6d0,
@@ -56,7 +56,7 @@ VirtualFunction const vt_8c278dd0[16] = {
 };
 
 /* 8c278e10: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278e10[8] = {
+VirtualFunction const TWindowSoundBalance_vtable_8c278e10[8] = {
     0,
     0,
     TWindowSoundBalance_dtor_8c22b948,

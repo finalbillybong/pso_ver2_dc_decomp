@@ -29,7 +29,7 @@ extern void fn_8c19a83c(void);
 extern void fn_8c19ae94(void);
 
 /* 8c272930: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c272930[17] = {
+VirtualFunction const TBoss1DragonColli_C_vtable_8c272930[17] = {
     0,
     0,
     TBoss1DragonColli_C_dtor_8c198a4c,
@@ -50,7 +50,7 @@ VirtualFunction const vt_8c272930[17] = {
 };
 
 /* 8c272974: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c272974[8] = {
+VirtualFunction const TWindowSubCustomSelect_vtable_8c272974[8] = {
     0,
     0,
     TWindowSubCustomSelect_dtor_8c198f08,
@@ -62,7 +62,7 @@ VirtualFunction const vt_8c272974[8] = {
 };
 
 /* 8c272994: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c272994[7] = {
+VirtualFunction const TAdTitle_vtable_8c272994[7] = {
     0,
     0,
     TAdTitle_dtor_8c19980c,

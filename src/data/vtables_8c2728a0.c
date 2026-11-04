@@ -16,7 +16,7 @@ extern void TAdBack_update_8c1983a0(void);
 extern void TAdBack_render_8c198458(void);
 
 /* 8c2728a0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2728a0[7] = {
+VirtualFunction const TObjCMIcon_vtable_8c2728a0[7] = {
     0,
     0,
     TObjCMIcon_dtor_8c195570,
@@ -27,7 +27,7 @@ VirtualFunction const vt_8c2728a0[7] = {
 };
 
 /* 8c2728bc: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2728bc[8] = {
+VirtualFunction const TWindowSubCustomEquip_vtable_8c2728bc[8] = {
     0,
     0,
     TWindowSubCustomEquip_dtor_8c1974c0,
@@ -39,7 +39,7 @@ VirtualFunction const vt_8c2728bc[8] = {
 };
 
 /* 8c2728dc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2728dc[7] = {
+VirtualFunction const TAdBack_vtable_8c2728dc[7] = {
     0,
     0,
     TAdBack_dtor_8c19835c,

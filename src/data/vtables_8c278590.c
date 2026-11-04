@@ -22,7 +22,7 @@ extern void TWindowSubShortCutList_render_8c21c94c(void);
 extern void fn_8c1192e8(void);
 
 /* 8c278590: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c278590[16] = {
+VirtualFunction const TObjDFUsoTower_vtable_8c278590[16] = {
     0,
     0,
     TObjDFUsoTower_dtor_8c21a8c4,
@@ -42,7 +42,7 @@ VirtualFunction const vt_8c278590[16] = {
 };
 
 /* 8c2785d0: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2785d0[8] = {
+VirtualFunction const TWindowSubShortCutList_vtable_8c2785d0[8] = {
     0,
     0,
     TWindowSubShortCutList_dtor_8c21c8ac,

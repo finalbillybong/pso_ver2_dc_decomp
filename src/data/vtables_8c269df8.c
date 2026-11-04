@@ -61,7 +61,7 @@ VirtualFunction const vt_8c269e24[11] = {
 };
 
 /* 8c269e50: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c269e50[7] = {
+VirtualFunction const TEnemyTaskList_vtable_8c269e50[7] = {
     0,
     0,
     TEnemyTaskList_dtor_8c114b58,
@@ -72,7 +72,7 @@ VirtualFunction const vt_8c269e50[7] = {
 };
 
 /* 8c269e6c: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c269e6c[10] = {
+VirtualFunction const TFogEditor_vtable_8c269e6c[10] = {
     0,
     0,
     TFogEditor_dtor_8c115f80,

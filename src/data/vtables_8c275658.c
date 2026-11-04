@@ -39,7 +39,7 @@ extern void operation_8c1bfe8c(void);
 extern void operation_8c1bfe88(void);
 
 /* 8c275658: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c275658[18] = {
+VirtualFunction const TOCapsuleMachine01_vtable_8c275658[18] = {
     0,
     0,
     TOCapsuleMachine01_dtor_8c1bef80,
@@ -61,7 +61,7 @@ VirtualFunction const vt_8c275658[18] = {
 };
 
 /* 8c2756a0: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c2756a0[20] = {
+VirtualFunction const TOComputerMachine01_vtable_8c2756a0[20] = {
     0,
     0,
     TOComputerMachine01_dtor_8c1bf21c,
@@ -85,7 +85,7 @@ VirtualFunction const vt_8c2756a0[20] = {
 };
 
 /* 8c2756f0: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c2756f0[18] = {
+VirtualFunction const TOCakeshopCave01_vtable_8c2756f0[18] = {
     0,
     0,
     TOCakeshopCave01_dtor_8c1bf660,

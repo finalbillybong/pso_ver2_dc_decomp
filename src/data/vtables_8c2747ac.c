@@ -28,7 +28,7 @@ extern void TFontSmallHelp_update_8c1ab5ec(void);
 extern void fn_8c1ab618(void);
 
 /* 8c2747ac: type-information and this-adjustment header, then 17 slots */
-VirtualFunction const vt_8c2747ac[19] = {
+VirtualFunction const TObjMesBase_vtable_8c2747ac[19] = {
     0,
     0,
     TObjMesBase_dtor_8c1ab174,
@@ -51,7 +51,7 @@ VirtualFunction const vt_8c2747ac[19] = {
 };
 
 /* 8c2747f8: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c2747f8[16] = {
+VirtualFunction const TObjItemLight_vtable_8c2747f8[16] = {
     0,
     0,
     TObjItemLight_dtor_8c1ab3c0,
@@ -71,7 +71,7 @@ VirtualFunction const vt_8c2747f8[16] = {
 };
 
 /* 8c274838: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c274838[7] = {
+VirtualFunction const TFontSmallHelp_vtable_8c274838[7] = {
     0,
     0,
     TFontSmallHelp_dtor_8c1ab5a8,

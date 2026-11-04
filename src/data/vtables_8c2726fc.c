@@ -43,7 +43,7 @@ VirtualFunction const vt_8c272718[7] = {
 };
 
 /* 8c272734: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c272734[7] = {
+VirtualFunction const TWindowSubMag_vtable_8c272734[7] = {
     0,
     0,
     TWindowSubMag_dtor_8c190780,

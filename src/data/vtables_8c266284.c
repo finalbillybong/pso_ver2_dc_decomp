@@ -17,7 +17,7 @@ extern void operation_8c0ba058(void);
 extern void TTecZonde_v07_8c0bb69c(void);
 
 /* 8c266284: type-information and this-adjustment header, then 7 slots */
-VirtualFunction const vt_8c266284[9] = {
+VirtualFunction const TTecZarua_vtable_8c266284[9] = {
     0,
     0,
     TTecZarua_dtor_8c0bad1c,
@@ -30,7 +30,7 @@ VirtualFunction const vt_8c266284[9] = {
 };
 
 /* 8c2662a8: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c2662a8[10] = {
+VirtualFunction const TTecZonde_vtable_8c2662a8[10] = {
     0,
     0,
     TTecZonde_dtor_8c0bb658,

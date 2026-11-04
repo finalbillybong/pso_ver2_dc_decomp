@@ -14,7 +14,7 @@ extern void TMedicalCenterSequence_v06_8c10aa40(void);
 extern void TMedicalCenterSequence_v07_8c10ad64(void);
 
 /* 8c269a54: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c269a54[7] = {
+VirtualFunction const TMedicalCenterMes_vtable_8c269a54[7] = {
     0,
     0,
     TMedicalCenterMes_dtor_8c10ae44,
@@ -25,7 +25,7 @@ VirtualFunction const vt_8c269a54[7] = {
 };
 
 /* 8c269a70: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c269a70[10] = {
+VirtualFunction const TMedicalCenterSequence_vtable_8c269a70[10] = {
     0,
     0,
     TMedicalCenterSequence_dtor_8c10a8e4,

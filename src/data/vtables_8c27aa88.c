@@ -25,7 +25,7 @@ VirtualFunction const vt_8c27aa88[8] = {
 };
 
 /* 8c27aaa8: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27aaa8[7] = {
+VirtualFunction const TItemEffFreezeBeam_vtable_8c27aaa8[7] = {
     0,
     0,
     TItemEffFreezeBeam_dtor_8c23d8f4,

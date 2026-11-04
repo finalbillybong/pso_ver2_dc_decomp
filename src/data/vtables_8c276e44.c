@@ -13,7 +13,7 @@ extern void TWindowSubEquipKind_update_8c1d502c(void);
 extern void TWindowSubEquipKind_render_8c1d5038(void);
 
 /* 8c276e44: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c276e44[8] = {
+VirtualFunction const TWindowSubEquipList_vtable_8c276e44[8] = {
     0,
     0,
     TWindowSubEquipList_dtor_8c1d4cdc,
@@ -25,7 +25,7 @@ VirtualFunction const vt_8c276e44[8] = {
 };
 
 /* 8c276e64: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c276e64[8] = {
+VirtualFunction const TWindowSubEquipKind_vtable_8c276e64[8] = {
     0,
     0,
     TWindowSubEquipKind_dtor_8c1d4fe8,

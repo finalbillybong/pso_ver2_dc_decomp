@@ -141,7 +141,7 @@ VirtualFunction const vt_8c28027c[7] = {
 };
 
 /* 8c280298: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c280298[61] = {
+VirtualFunction const TItemWpnUnknownWand_vtable_8c280298[61] = {
     0,
     0,
     TItemWpnUnknownWand_dtor_8c253e6c,
@@ -206,7 +206,7 @@ VirtualFunction const vt_8c280298[61] = {
 };
 
 /* 8c28038c: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c28038c[61] = {
+VirtualFunction const TItemWpnUnknownCane_vtable_8c28038c[61] = {
     0,
     0,
     TItemWpnUnknownCane_dtor_8c253f6c,
@@ -271,7 +271,7 @@ VirtualFunction const vt_8c28038c[61] = {
 };
 
 /* 8c280480: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c280480[61] = {
+VirtualFunction const TItemWpnUnknownClaw_vtable_8c280480[61] = {
     0,
     0,
     TItemWpnUnknownClaw_dtor_8c254054,
@@ -336,7 +336,7 @@ VirtualFunction const vt_8c280480[61] = {
 };
 
 /* 8c280574: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c280574[61] = {
+VirtualFunction const TItemWpnUnknownHandGun_vtable_8c280574[61] = {
     0,
     0,
     TItemWpnUnknownHandGun_dtor_8c254130,
@@ -401,7 +401,7 @@ VirtualFunction const vt_8c280574[61] = {
 };
 
 /* 8c280668: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c280668[61] = {
+VirtualFunction const TItemWpnUnknownMachineGun_vtable_8c280668[61] = {
     0,
     0,
     TItemWpnUnknownMachineGun_dtor_8c2542e8,
@@ -531,7 +531,7 @@ VirtualFunction const vt_8c28075c[61] = {
 };
 
 /* 8c280850: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c280850[61] = {
+VirtualFunction const TItemWpnUnknownRifle_vtable_8c280850[61] = {
     0,
     0,
     TItemWpnUnknownRifle_dtor_8c254498,
@@ -596,7 +596,7 @@ VirtualFunction const vt_8c280850[61] = {
 };
 
 /* 8c280944: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c280944[61] = {
+VirtualFunction const TItemWpnUnknownRod_vtable_8c280944[61] = {
     0,
     0,
     TItemWpnUnknownRod_dtor_8c254580,
@@ -661,7 +661,7 @@ VirtualFunction const vt_8c280944[61] = {
 };
 
 /* 8c280a38: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c280a38[61] = {
+VirtualFunction const TItemWpnUnknownSaber_vtable_8c280a38[61] = {
     0,
     0,
     TItemWpnUnknownSaber_dtor_8c254644,
@@ -726,7 +726,7 @@ VirtualFunction const vt_8c280a38[61] = {
 };
 
 /* 8c280b2c: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c280b2c[61] = {
+VirtualFunction const TItemWpnUnknownSlicer_vtable_8c280b2c[61] = {
     0,
     0,
     TItemWpnUnknownSlicer_dtor_8c2547d4,
@@ -791,7 +791,7 @@ VirtualFunction const vt_8c280b2c[61] = {
 };
 
 /* 8c280c20: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c280c20[61] = {
+VirtualFunction const TItemWpnUnknownSpreadGun_vtable_8c280c20[61] = {
     0,
     0,
     TItemWpnUnknownSpreadGun_dtor_8c2549c8,
@@ -921,7 +921,7 @@ VirtualFunction const vt_8c280d14[61] = {
 };
 
 /* 8c280e08: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c280e08[61] = {
+VirtualFunction const TItemWpnUnknownTwinSaber_vtable_8c280e08[61] = {
     0,
     0,
     TItemWpnUnknownTwinSaber_dtor_8c254b9c,
@@ -986,7 +986,7 @@ VirtualFunction const vt_8c280e08[61] = {
 };
 
 /* 8c280efc: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c280efc[61] = {
+VirtualFunction const TItemWpnUnknownBlade_vtable_8c280efc[61] = {
     0,
     0,
     TItemWpnUnknownBlade_dtor_8c254c9c,
@@ -1051,7 +1051,7 @@ VirtualFunction const vt_8c280efc[61] = {
 };
 
 /* 8c280ff0: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c280ff0[8] = {
+VirtualFunction const TWindowChoiceSetting_vtable_8c280ff0[8] = {
     0,
     0,
     TWindowChoiceSetting_dtor_8c254ce0,
@@ -1063,7 +1063,7 @@ VirtualFunction const vt_8c280ff0[8] = {
 };
 
 /* 8c281010: type-information and this-adjustment header, then 48 slots */
-VirtualFunction const vt_8c281010[50] = {
+VirtualFunction const TItemProShieldModel2_vtable_8c281010[50] = {
     0,
     0,
     TItemProShieldModel2_dtor_8c2551a4,
@@ -1117,7 +1117,7 @@ VirtualFunction const vt_8c281010[50] = {
 };
 
 /* 8c2810d8: type-information and this-adjustment header, then 48 slots */
-VirtualFunction const vt_8c2810d8[50] = {
+VirtualFunction const TItemProShieldModel_vtable_8c2810d8[50] = {
     0,
     0,
     TItemProShieldModel_dtor_8c255124,
@@ -1171,7 +1171,7 @@ VirtualFunction const vt_8c2810d8[50] = {
 };
 
 /* 8c2811a0: type-information and this-adjustment header, then 48 slots */
-VirtualFunction const vt_8c2811a0[50] = {
+VirtualFunction const TItemProShieldRecalc_vtable_8c2811a0[50] = {
     0,
     0,
     TItemProShieldRecalc_dtor_8c255534,

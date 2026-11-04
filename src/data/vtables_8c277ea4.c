@@ -12,7 +12,7 @@ extern void operation_8c1e5a2c(void);
 extern void operation_8c1e5b74(void);
 
 /* 8c277ea4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c277ea4[7] = {
+VirtualFunction const TWindowMakeTeam_vtable_8c277ea4[7] = {
     0,
     0,
     TWindowMakeTeam_dtor_8c1e51b8,

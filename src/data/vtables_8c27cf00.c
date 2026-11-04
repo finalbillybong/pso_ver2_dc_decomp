@@ -74,7 +74,7 @@ extern void TItemWpnYasumuraShiki_v57_8c248ca0(void);
 extern void fn_8c076340(void);
 
 /* 8c27cf00: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27cf00[7] = {
+VirtualFunction const TEffStarLightChild_vtable_8c27cf00[7] = {
     0,
     0,
     TEffStarLightChild_dtor_8c245be4,
@@ -85,7 +85,7 @@ VirtualFunction const vt_8c27cf00[7] = {
 };
 
 /* 8c27cf1c: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c27cf1c[17] = {
+VirtualFunction const TObjTombstone_vtable_8c27cf1c[17] = {
     0,
     0,
     TObjTombstone_dtor_8c246780,
@@ -106,7 +106,7 @@ VirtualFunction const vt_8c27cf1c[17] = {
 };
 
 /* 8c27cf60: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27cf60[61] = {
+VirtualFunction const TItemWpnYasumuraShiki_vtable_8c27cf60[61] = {
     0,
     0,
     TItemWpnYasumuraShiki_dtor_8c248b34,

@@ -9,7 +9,7 @@ extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
 /* 8c27e9b4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27e9b4[7] = {
+VirtualFunction const TMemberCheck_vtable_8c27e9b4[7] = {
     0,
     0,
     TMemberCheck_dtor_8c250714,

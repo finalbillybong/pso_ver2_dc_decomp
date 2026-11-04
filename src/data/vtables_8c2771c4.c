@@ -113,7 +113,7 @@ VirtualFunction const vt_8c277284[16] = {
 };
 
 /* 8c2772c4: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c2772c4[16] = {
+VirtualFunction const TOSoulDF_vtable_8c2772c4[16] = {
     0,
     0,
     TOSoulDF_dtor_8c1db480,

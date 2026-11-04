@@ -23,7 +23,7 @@ extern void TObject_update_default_8c0111c4(void);
 extern void manager_empty_callback(void);
 
 /* 8c261b58: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c261b58[10] = {
+VirtualFunction const TEditor_vtable_8c261b58[10] = {
     0,
     0,
     TEditor_dtor_8c03ca10,

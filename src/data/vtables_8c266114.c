@@ -11,7 +11,7 @@ extern void TTecPlayerInfluence_v05_8c0b6d08(void);
 extern void TTecPlayerInfluence_v06_8c0b6e08(void);
 
 /* 8c266114: type-information and this-adjustment header, then 7 slots */
-VirtualFunction const vt_8c266114[9] = {
+VirtualFunction const TTecPlayerInfluence_vtable_8c266114[9] = {
     0,
     0,
     TTecPlayerInfluence_dtor_8c0b6c78,

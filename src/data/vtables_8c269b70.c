@@ -43,7 +43,7 @@ VirtualFunction const vt_8c269b70[17] = {
 };
 
 /* 8c269bb4: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c269bb4[17] = {
+VirtualFunction const TObjGyaranzoMissile_vtable_8c269bb4[17] = {
     0,
     0,
     TObjGyaranzoMissile_dtor_8c11208c,

@@ -9,7 +9,7 @@ extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
 /* 8c2782b8: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2782b8[7] = {
+VirtualFunction const TWindowSubShortMail_vtable_8c2782b8[7] = {
     0,
     0,
     TWindowSubShortMail_dtor_8c2169c8,

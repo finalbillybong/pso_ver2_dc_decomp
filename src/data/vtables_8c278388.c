@@ -95,7 +95,7 @@ extern void TObjDFJisin_dtor_8c21b71c(void);
 extern void TObjDFJisin_update_8c21b760(void);
 
 /* 8c278388: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278388[7] = {
+VirtualFunction const TObjDFYutai_vtable_8c278388[7] = {
     0,
     0,
     TObjDFYutai_dtor_8c21c23c,
@@ -106,7 +106,7 @@ VirtualFunction const vt_8c278388[7] = {
 };
 
 /* 8c2783a4: type-information and this-adjustment header, then 86 slots */
-VirtualFunction const vt_8c2783a4[88] = {
+VirtualFunction const TObjDFHorming_vtable_8c2783a4[88] = {
     0,
     0,
     TObjDFHorming_dtor_8c21bc48,
@@ -198,7 +198,7 @@ VirtualFunction const vt_8c2783a4[88] = {
 };
 
 /* 8c278504: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278504[7] = {
+VirtualFunction const TObjDFJisin_vtable_8c278504[7] = {
     0,
     0,
     TObjDFJisin_dtor_8c21b71c,

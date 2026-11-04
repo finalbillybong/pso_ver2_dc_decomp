@@ -12,7 +12,7 @@ extern void TEditor_v06_8c03cea8(void);
 extern void TSeqVarsEdit_v07_8c177700(void);
 
 /* 8c270978: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c270978[10] = {
+VirtualFunction const TSeqVarsEdit_vtable_8c270978[10] = {
     0,
     0,
     TSeqVarsEdit_dtor_8c17729c,

@@ -22,7 +22,7 @@ VirtualFunction const vt_8c27ccc0[7] = {
 };
 
 /* 8c27ccdc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27ccdc[7] = {
+VirtualFunction const TPlayerBattleCtrl_vtable_8c27ccdc[7] = {
     0,
     0,
     TPlayerBattleCtrl_dtor_8c242500,

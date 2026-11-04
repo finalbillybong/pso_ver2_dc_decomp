@@ -11,7 +11,7 @@ extern void TTecReverser_v05_8c0ac284(void);
 extern void operation_8c0ad9a8(void);
 
 /* 8c265d64: type-information and this-adjustment header, then 7 slots */
-VirtualFunction const vt_8c265d64[9] = {
+VirtualFunction const TTecReverser_vtable_8c265d64[9] = {
     0,
     0,
     TTecReverser_dtor_8c0abf3c,

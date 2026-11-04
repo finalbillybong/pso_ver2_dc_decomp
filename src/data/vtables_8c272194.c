@@ -21,7 +21,7 @@ extern void TLoadingCur_update_8c18a0f0(void);
 extern void TLoadingCur_render_8c18a32c(void);
 
 /* 8c272194: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c272194[8] = {
+VirtualFunction const TShopItemListWindow_vtable_8c272194[8] = {
     0,
     0,
     TShopItemListWindow_dtor_8c1885a0,
@@ -33,7 +33,7 @@ VirtualFunction const vt_8c272194[8] = {
 };
 
 /* 8c2721b4: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2721b4[8] = {
+VirtualFunction const TShopArmorListWindow_vtable_8c2721b4[8] = {
     0,
     0,
     TShopArmorListWindow_dtor_8c188f84,
@@ -45,7 +45,7 @@ VirtualFunction const vt_8c2721b4[8] = {
 };
 
 /* 8c2721d4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2721d4[7] = {
+VirtualFunction const TNowLoading_vtable_8c2721d4[7] = {
     0,
     0,
     TNowLoading_dtor_8c189af8,
@@ -56,7 +56,7 @@ VirtualFunction const vt_8c2721d4[7] = {
 };
 
 /* 8c2721f0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2721f0[7] = {
+VirtualFunction const TLoadCtrl_vtable_8c2721f0[7] = {
     0,
     0,
     TLoadCtrl_dtor_8c189ef8,
@@ -67,7 +67,7 @@ VirtualFunction const vt_8c2721f0[7] = {
 };
 
 /* 8c27220c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27220c[7] = {
+VirtualFunction const TLoadingCur_vtable_8c27220c[7] = {
     0,
     0,
     TLoadingCur_dtor_8c18a09c,

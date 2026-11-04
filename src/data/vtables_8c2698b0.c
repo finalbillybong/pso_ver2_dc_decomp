@@ -110,7 +110,7 @@ VirtualFunction const vt_8c2698b0[7] = {
 };
 
 /* 8c2698cc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2698cc[7] = {
+VirtualFunction const TDeadSpot_vtable_8c2698cc[7] = {
     0,
     0,
     TDeadSpot_dtor_8c107c8c,
@@ -121,7 +121,7 @@ VirtualFunction const vt_8c2698cc[7] = {
 };
 
 /* 8c2698e8: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c2698e8[91] = {
+VirtualFunction const TObjEneGyaranzo_vtable_8c2698e8[91] = {
     0,
     0,
     TObjEneGyaranzo_dtor_8c1089b0,

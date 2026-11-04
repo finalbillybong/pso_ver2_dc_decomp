@@ -105,7 +105,7 @@ extern void operation_8c120524(void);
 extern void TObjNpcBringer_v94_8c177ff4(void);
 
 /* 8c2709a0: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c2709a0[100] = {
+VirtualFunction const TObjNpcMoja_vtable_8c2709a0[100] = {
     0,
     0,
     TObjNpcMoja_dtor_8c177c6c,
@@ -209,7 +209,7 @@ VirtualFunction const vt_8c2709a0[100] = {
 };
 
 /* 8c270b30: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c270b30[100] = {
+VirtualFunction const TObjNpcBringer_vtable_8c270b30[100] = {
     0,
     0,
     TObjNpcBringer_dtor_8c177f4c,

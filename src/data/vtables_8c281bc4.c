@@ -37,7 +37,7 @@ VirtualFunction const vt_8c281bc4[7] = {
 };
 
 /* 8c281be0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281be0[7] = {
+VirtualFunction const TObjWarnChime_vtable_8c281be0[7] = {
     0,
     0,
     TObjWarnChime_dtor_8c25c4a8,
@@ -48,7 +48,7 @@ VirtualFunction const vt_8c281be0[7] = {
 };
 
 /* 8c281bfc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281bfc[7] = {
+VirtualFunction const TItemReverseTechCtrl_vtable_8c281bfc[7] = {
     0,
     0,
     TItemReverseTechCtrl_dtor_8c25c8b0,
@@ -70,7 +70,7 @@ VirtualFunction const vt_8c281c18[7] = {
 };
 
 /* 8c281c34: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281c34[7] = {
+VirtualFunction const TItemReverseTechPart2_vtable_8c281c34[7] = {
     0,
     0,
     TItemReverseTechPart2_dtor_8c25d444,
@@ -81,7 +81,7 @@ VirtualFunction const vt_8c281c34[7] = {
 };
 
 /* 8c281c50: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281c50[7] = {
+VirtualFunction const TItemReverseTechPart1_vtable_8c281c50[7] = {
     0,
     0,
     TItemReverseTechPart1_dtor_8c25cec0,
@@ -92,7 +92,7 @@ VirtualFunction const vt_8c281c50[7] = {
 };
 
 /* 8c281c6c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281c6c[7] = {
+VirtualFunction const TItemReverseTech_vtable_8c281c6c[7] = {
     0,
     0,
     TItemReverseTech_dtor_8c25cd24,
@@ -103,7 +103,7 @@ VirtualFunction const vt_8c281c6c[7] = {
 };
 
 /* 8c281c88: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281c88[7] = {
+VirtualFunction const TOChatSensorFolder_vtable_8c281c88[7] = {
     0,
     0,
     TOChatSensorFolder_dtor_8c25dde4,

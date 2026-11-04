@@ -14,7 +14,7 @@ extern void TShopItemTecSequence_dtor_8c1129d8(void);
 extern void TShopItemTecSequence_v05_8c112a6c(void);
 
 /* 8c269bf8: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c269bf8[10] = {
+VirtualFunction const TShopEquipmentGearSequence_vtable_8c269bf8[10] = {
     0,
     0,
     TShopEquipmentGearSequence_dtor_8c1124e0,
@@ -28,7 +28,7 @@ VirtualFunction const vt_8c269bf8[10] = {
 };
 
 /* 8c269c20: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c269c20[10] = {
+VirtualFunction const TShopItemTecSequence_vtable_8c269c20[10] = {
     0,
     0,
     TShopItemTecSequence_dtor_8c1129d8,

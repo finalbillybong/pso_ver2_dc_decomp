@@ -15,7 +15,7 @@ extern void operation_8c1dde54(void);
 extern void TObject_render_default_8c0111c8(void);
 
 /* 8c277354: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c277354[7] = {
+VirtualFunction const TWindowChat_vtable_8c277354[7] = {
     0,
     0,
     TWindowChat_dtor_8c1dcb54,

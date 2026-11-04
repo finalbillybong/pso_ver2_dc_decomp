@@ -66,7 +66,7 @@ extern void operation_8c010510(void);
 extern void operation_8c0104f0(void);
 
 /* 8c264204: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c264204[7] = {
+VirtualFunction const TEneEffHamon_vtable_8c264204[7] = {
     0,
     0,
     TEneEffHamon_dtor_8c07cd48,
@@ -77,7 +77,7 @@ VirtualFunction const vt_8c264204[7] = {
 };
 
 /* 8c264220: type-information and this-adjustment header, then 48 slots */
-VirtualFunction const vt_8c264220[50] = {
+VirtualFunction const TItemMag_vtable_8c264220[50] = {
     0,
     0,
     TItemMag_dtor_8c07d168,
@@ -131,7 +131,7 @@ VirtualFunction const vt_8c264220[50] = {
 };
 
 /* 8c2642e8: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2642e8[7] = {
+VirtualFunction const TObjRain_vtable_8c2642e8[7] = {
     0,
     0,
     TObjRain_dtor_8c07fdb8,
@@ -142,7 +142,7 @@ VirtualFunction const vt_8c2642e8[7] = {
 };
 
 /* 8c264304: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c264304[17] = {
+VirtualFunction const TObjTank_vtable_8c264304[17] = {
     0,
     0,
     TObjTank_dtor_8c080194,

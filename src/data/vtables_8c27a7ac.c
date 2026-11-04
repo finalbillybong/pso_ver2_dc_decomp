@@ -70,7 +70,7 @@ extern void TItemWpnFork_dtor_8c23d27c(void);
 extern void operation_8c07633c(void);
 
 /* 8c27a7ac: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27a7ac[61] = {
+VirtualFunction const TItemWpnFireWand_vtable_8c27a7ac[61] = {
     0,
     0,
     TItemWpnFireWand_dtor_8c23cd64,
@@ -135,7 +135,7 @@ VirtualFunction const vt_8c27a7ac[61] = {
 };
 
 /* 8c27a8a0: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27a8a0[61] = {
+VirtualFunction const TItemWpnFlowerCane_vtable_8c27a8a0[61] = {
     0,
     0,
     TItemWpnFlowerCane_dtor_8c23d16c,
@@ -200,7 +200,7 @@ VirtualFunction const vt_8c27a8a0[61] = {
 };
 
 /* 8c27a994: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27a994[61] = {
+VirtualFunction const TItemWpnFork_vtable_8c27a994[61] = {
     0,
     0,
     TItemWpnFork_dtor_8c23d27c,

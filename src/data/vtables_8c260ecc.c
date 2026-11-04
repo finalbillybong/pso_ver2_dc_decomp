@@ -34,7 +34,7 @@ extern void operation_8c010b54(void);
 extern void fn_8c010bcc(void);
 
 /* 8c260ecc: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c260ecc[17] = {
+VirtualFunction const TObjCollision_vtable_8c260ecc[17] = {
     0,
     0,
     TObjCollision_dtor_8c010448,

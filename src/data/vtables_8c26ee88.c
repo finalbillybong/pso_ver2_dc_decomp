@@ -15,7 +15,7 @@ extern void TCheckRoomSequence_v06_8c15bd04(void);
 extern void TCheckRoomSequence_v07_8c15be6c(void);
 
 /* 8c26ee88: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c26ee88[7] = {
+VirtualFunction const TObjVoloptShutter_vtable_8c26ee88[7] = {
     0,
     0,
     TObjVoloptShutter_dtor_8c15b004,
@@ -26,7 +26,7 @@ VirtualFunction const vt_8c26ee88[7] = {
 };
 
 /* 8c26eea4: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c26eea4[10] = {
+VirtualFunction const TCheckRoomSequence_vtable_8c26eea4[10] = {
     0,
     0,
     TCheckRoomSequence_dtor_8c15bb20,

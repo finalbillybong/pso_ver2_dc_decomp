@@ -210,7 +210,7 @@ extern void operation_8c0e90b8(void);
 extern void fn_8c0e91a4(void);
 
 /* 8c2677bc: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2677bc[8] = {
+VirtualFunction const TWindowStatus_vtable_8c2677bc[8] = {
     0,
     0,
     TWindowStatus_dtor_8c0e2738,
@@ -222,7 +222,7 @@ VirtualFunction const vt_8c2677bc[8] = {
 };
 
 /* 8c2677dc: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2677dc[8] = {
+VirtualFunction const TWindowSimpleStatus_vtable_8c2677dc[8] = {
     0,
     0,
     TWindowSimpleStatus_dtor_8c0e330c,
@@ -339,7 +339,7 @@ VirtualFunction const vt_8c2677fc[101] = {
 };
 
 /* 8c267990: type-information and this-adjustment header, then 99 slots */
-VirtualFunction const vt_8c267990[101] = {
+VirtualFunction const TObjEneBeast_vtable_8c267990[101] = {
     0,
     0,
     TObjEneBeast_dtor_8c0e54e8,
@@ -444,7 +444,7 @@ VirtualFunction const vt_8c267990[101] = {
 };
 
 /* 8c267b24: type-information and this-adjustment header, then 99 slots */
-VirtualFunction const vt_8c267b24[101] = {
+VirtualFunction const TObjEneDimedian_vtable_8c267b24[101] = {
     0,
     0,
     TObjEneDimedian_dtor_8c0e61f8,
@@ -549,7 +549,7 @@ VirtualFunction const vt_8c267b24[101] = {
 };
 
 /* 8c267cb8: type-information and this-adjustment header, then 48 slots */
-VirtualFunction const vt_8c267cb8[50] = {
+VirtualFunction const TItemProArmor_vtable_8c267cb8[50] = {
     0,
     0,
     TItemProArmor_dtor_8c0e70fc,
@@ -603,7 +603,7 @@ VirtualFunction const vt_8c267cb8[50] = {
 };
 
 /* 8c267d80: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c267d80[45] = {
+VirtualFunction const TItemObject_vtable_8c267d80[45] = {
     0,
     0,
     TItemObject_dtor_8c0e7584,
@@ -652,7 +652,7 @@ VirtualFunction const vt_8c267d80[45] = {
 };
 
 /* 8c267e34: type-information and this-adjustment header, then 48 slots */
-VirtualFunction const vt_8c267e34[50] = {
+VirtualFunction const TItemProShield_vtable_8c267e34[50] = {
     0,
     0,
     TItemProShield_dtor_8c0e867c,

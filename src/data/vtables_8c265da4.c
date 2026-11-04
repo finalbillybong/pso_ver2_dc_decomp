@@ -17,7 +17,7 @@ extern void operation_8c0ba058(void);
 extern void TTecBarta_v07_8c0ad1f0(void);
 
 /* 8c265da4: type-information and this-adjustment header, then 7 slots */
-VirtualFunction const vt_8c265da4[9] = {
+VirtualFunction const TTecAnti_vtable_8c265da4[9] = {
     0,
     0,
     TTecAnti_dtor_8c0ac630,
@@ -30,7 +30,7 @@ VirtualFunction const vt_8c265da4[9] = {
 };
 
 /* 8c265dc8: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c265dc8[10] = {
+VirtualFunction const TTecBarta_vtable_8c265dc8[10] = {
     0,
     0,
     TTecBarta_dtor_8c0ad154,

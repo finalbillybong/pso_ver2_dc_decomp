@@ -133,7 +133,7 @@ extern void TObjMapWarpAncient_v09_8c157950(void);
 extern void operation_8c08893c(void);
 
 /* 8c26e688: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c26e688[91] = {
+VirtualFunction const TBoss3VoloptHiraisin_vtable_8c26e688[91] = {
     0,
     0,
     TBoss3VoloptHiraisin_dtor_8c1505b0,
@@ -228,7 +228,7 @@ VirtualFunction const vt_8c26e688[91] = {
 };
 
 /* 8c26e7f4: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c26e7f4[91] = {
+VirtualFunction const TBoss3VoloptMonitor_vtable_8c26e7f4[91] = {
     0,
     0,
     TBoss3VoloptMonitor_dtor_8c15107c,
@@ -418,7 +418,7 @@ VirtualFunction const vt_8c26e960[91] = {
 };
 
 /* 8c26eacc: type-information and this-adjustment header, then 17 slots */
-VirtualFunction const vt_8c26eacc[19] = {
+VirtualFunction const TPhotonLeilla_vtable_8c26eacc[19] = {
     0,
     0,
     TPhotonLeilla_dtor_8c155aa0,
@@ -441,7 +441,7 @@ VirtualFunction const vt_8c26eacc[19] = {
 };
 
 /* 8c26eb18: type-information and this-adjustment header, then 17 slots */
-VirtualFunction const vt_8c26eb18[19] = {
+VirtualFunction const TPhotonPilla_vtable_8c26eb18[19] = {
     0,
     0,
     TPhotonPilla_dtor_8c1561bc,
@@ -464,7 +464,7 @@ VirtualFunction const vt_8c26eb18[19] = {
 };
 
 /* 8c26eb64: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c26eb64[8] = {
+VirtualFunction const TWindowMenu_vtable_8c26eb64[8] = {
     0,
     0,
     TWindowMenu_dtor_8c1567bc,
@@ -502,7 +502,7 @@ VirtualFunction const vt_8c26eb84[22] = {
 };
 
 /* 8c26ebdc: type-information and this-adjustment header, then 19 slots */
-VirtualFunction const vt_8c26ebdc[21] = {
+VirtualFunction const TObjMapWarpAncient_vtable_8c26ebdc[21] = {
     0,
     0,
     TObjMapWarpAncient_dtor_8c1578a4,

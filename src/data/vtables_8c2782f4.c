@@ -13,7 +13,7 @@ extern void TWindowUserSort_update_8c218040(void);
 extern void TWindowUserSort_render_8c218070(void);
 
 /* 8c2782f4: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2782f4[8] = {
+VirtualFunction const TWindowBreakIn_vtable_8c2782f4[8] = {
     0,
     0,
     TWindowBreakIn_dtor_8c217948,
@@ -25,7 +25,7 @@ VirtualFunction const vt_8c2782f4[8] = {
 };
 
 /* 8c278314: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278314[8] = {
+VirtualFunction const TWindowUserSort_vtable_8c278314[8] = {
     0,
     0,
     TWindowUserSort_dtor_8c217ffc,

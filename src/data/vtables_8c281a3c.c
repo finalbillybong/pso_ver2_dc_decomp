@@ -18,7 +18,7 @@ extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
 
 /* 8c281a3c: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c281a3c[16] = {
+VirtualFunction const TODummyKeyCave01_vtable_8c281a3c[16] = {
     0,
     0,
     TODummyKeyCave01_dtor_8c2580d8,

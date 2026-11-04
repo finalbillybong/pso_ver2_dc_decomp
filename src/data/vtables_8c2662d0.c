@@ -12,7 +12,7 @@ extern void TEditor_v06_8c03cea8(void);
 extern void TEditor_v07_8c03cedc(void);
 
 /* 8c2662d0: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c2662d0[10] = {
+VirtualFunction const TGroupEditor_vtable_8c2662d0[10] = {
     0,
     0,
     TGroupEditor_dtor_8c0bb954,

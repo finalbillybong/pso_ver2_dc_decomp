@@ -21,7 +21,7 @@ extern void TDLGraph_update_8c25df4c(void);
 extern void TDLGraph_render_8c25dfa4(void);
 
 /* 8c281ca4: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c281ca4[16] = {
+VirtualFunction const TOChatSensor_vtable_8c281ca4[16] = {
     0,
     0,
     TOChatSensor_dtor_8c25d9f8,
@@ -41,7 +41,7 @@ VirtualFunction const vt_8c281ca4[16] = {
 };
 
 /* 8c281ce4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281ce4[7] = {
+VirtualFunction const TDLGraph_vtable_8c281ce4[7] = {
     0,
     0,
     TDLGraph_dtor_8c25de80,

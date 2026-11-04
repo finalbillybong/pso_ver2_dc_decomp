@@ -125,7 +125,7 @@ VirtualFunction const vt_8c26125c[7] = {
 };
 
 /* 8c261278: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c261278[7] = {
+VirtualFunction const TLobby_vtable_8c261278[7] = {
     0,
     0,
     TLobby_dtor_8c0179a4,
@@ -177,7 +177,7 @@ VirtualFunction const TObjectShared_vtable_8c2612d8[16] = {
 };
 
 /* 8c261318: type-information and this-adjustment header, then 87 slots */
-VirtualFunction const vt_8c261318[89] = {
+VirtualFunction const TObjPlayer_vtable_8c261318[89] = {
     0,
     0,
     TObjPlayer_dtor_8c01fa18,

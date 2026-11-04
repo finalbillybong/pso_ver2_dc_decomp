@@ -75,7 +75,7 @@ extern void destroy_object_8c18ae8c(void);
 extern void operation_8c18ade0(void);
 
 /* 8c272228: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c272228[7] = {
+VirtualFunction const TItemEffArmor_vtable_8c272228[7] = {
     0,
     0,
     TItemEffArmor_dtor_8c18a6b4,
@@ -86,7 +86,7 @@ VirtualFunction const vt_8c272228[7] = {
 };
 
 /* 8c272244: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c272244[61] = {
+VirtualFunction const TItemWpnStingTip_vtable_8c272244[61] = {
     0,
     0,
     TItemWpnStingTip_dtor_8c18a9dc,
@@ -151,7 +151,7 @@ VirtualFunction const vt_8c272244[61] = {
 };
 
 /* 8c272338: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c272338[61] = {
+VirtualFunction const TItemWpnMagicalPiece_vtable_8c272338[61] = {
     0,
     0,
     TItemWpnMagicalPiece_dtor_8c18abb0,
@@ -216,7 +216,7 @@ VirtualFunction const vt_8c272338[61] = {
 };
 
 /* 8c27242c: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27242c[61] = {
+VirtualFunction const TItemWpnCaduseus_vtable_8c27242c[61] = {
     0,
     0,
     TItemWpnCaduseus_dtor_8c18ad0c,

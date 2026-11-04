@@ -27,7 +27,7 @@ VirtualFunction const vt_8c26ec30[7] = {
 };
 
 /* 8c26ec4c: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c26ec4c[8] = {
+VirtualFunction const TQuestListOffline_vtable_8c26ec4c[8] = {
     0,
     0,
     TQuestListOffline_dtor_8c158bec,
@@ -39,7 +39,7 @@ VirtualFunction const vt_8c26ec4c[8] = {
 };
 
 /* 8c26ec6c: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c26ec6c[10] = {
+VirtualFunction const THunterGuildSeqOffline_vtable_8c26ec6c[10] = {
     0,
     0,
     THunterGuildSeqOffline_dtor_8c159270,

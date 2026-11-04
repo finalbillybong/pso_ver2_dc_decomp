@@ -13,7 +13,7 @@ extern void TItemShootWindCane_render_8c239a30(void);
 extern void TItemShootWindCane_v05_8c239a20(void);
 
 /* 8c279200: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c279200[7] = {
+VirtualFunction const TChallenge_vtable_8c279200[7] = {
     0,
     0,
     TChallenge_dtor_8c237998,
@@ -24,7 +24,7 @@ VirtualFunction const vt_8c279200[7] = {
 };
 
 /* 8c27921c: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c27921c[8] = {
+VirtualFunction const TItemShootWindCane_vtable_8c27921c[8] = {
     0,
     0,
     TItemShootWindCane_dtor_8c239aa4,

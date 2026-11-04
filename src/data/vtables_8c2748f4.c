@@ -225,7 +225,7 @@ VirtualFunction const vt_8c2748f4[91] = {
 };
 
 /* 8c274a60: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c274a60[24] = {
+VirtualFunction const TODoorCave03_vtable_8c274a60[24] = {
     0,
     0,
     TODoorCave03_dtor_8c1aea8c,
@@ -253,7 +253,7 @@ VirtualFunction const vt_8c274a60[24] = {
 };
 
 /* 8c274ac0: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c274ac0[24] = {
+VirtualFunction const TODoorMachine02_vtable_8c274ac0[24] = {
     0,
     0,
     TODoorMachine02_dtor_8c1aefc8,
@@ -281,7 +281,7 @@ VirtualFunction const vt_8c274ac0[24] = {
 };
 
 /* 8c274b20: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c274b20[18] = {
+VirtualFunction const TODoorVoShip_vtable_8c274b20[18] = {
     0,
     0,
     TODoorVoShip_dtor_8c1af62c,
@@ -303,7 +303,7 @@ VirtualFunction const vt_8c274b20[18] = {
 };
 
 /* 8c274b68: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c274b68[7] = {
+VirtualFunction const TCineCtrl_vtable_8c274b68[7] = {
     0,
     0,
     TCineCtrl_dtor_8c1afa0c,
@@ -314,7 +314,7 @@ VirtualFunction const vt_8c274b68[7] = {
 };
 
 /* 8c274b84: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c274b84[7] = {
+VirtualFunction const TAdGuideButton_vtable_8c274b84[7] = {
     0,
     0,
     TAdGuideButton_dtor_8c1b0108,

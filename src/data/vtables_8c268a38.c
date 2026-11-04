@@ -121,7 +121,7 @@ VirtualFunction const vt_8c268a38[6] = {
 };
 
 /* 8c268a50: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c268a50[91] = {
+VirtualFunction const TObjEneSlimeTailAttack_vtable_8c268a50[91] = {
     0,
     0,
     TObjEneSlimeTailAttack_dtor_8c0fb694,
@@ -216,7 +216,7 @@ VirtualFunction const vt_8c268a50[91] = {
 };
 
 /* 8c268bbc: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c268bbc[91] = {
+VirtualFunction const TObjEneSlimeWaterBomb_vtable_8c268bbc[91] = {
     0,
     0,
     TObjEneSlimeWaterBomb_dtor_8c0fb0d0,
@@ -311,7 +311,7 @@ VirtualFunction const vt_8c268bbc[91] = {
 };
 
 /* 8c268d28: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c268d28[91] = {
+VirtualFunction const TObjEneSlimeOne_vtable_8c268d28[91] = {
     0,
     0,
     TObjEneSlimeOne_dtor_8c0f8760,
@@ -406,7 +406,7 @@ VirtualFunction const vt_8c268d28[91] = {
 };
 
 /* 8c268e94: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c268e94[91] = {
+VirtualFunction const TObjEneSlime_vtable_8c268e94[91] = {
     0,
     0,
     TObjEneSlime_dtor_8c0f7db4,

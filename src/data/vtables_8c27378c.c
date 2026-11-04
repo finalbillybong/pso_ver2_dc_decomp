@@ -114,7 +114,7 @@ extern void TObjNpcARM00_dtor_8c1a4b50(void);
 extern void TObjNpcARM00_v96_8c1a4d10(void);
 
 /* 8c27378c: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c27378c[100] = {
+VirtualFunction const TObjNpcNHW00_vtable_8c27378c[100] = {
     0,
     0,
     TObjNpcNHW00_dtor_8c1a3e04,
@@ -426,7 +426,7 @@ VirtualFunction const vt_8c273aac[100] = {
 };
 
 /* 8c273c3c: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c273c3c[100] = {
+VirtualFunction const TObjNpcHFW00_vtable_8c273c3c[100] = {
     0,
     0,
     TObjNpcHFW00_dtor_8c1a4290,
@@ -530,7 +530,7 @@ VirtualFunction const vt_8c273c3c[100] = {
 };
 
 /* 8c273dcc: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c273dcc[100] = {
+VirtualFunction const TObjNpcHHM00_vtable_8c273dcc[100] = {
     0,
     0,
     TObjNpcHHM00_dtor_8c1a4450,
@@ -634,7 +634,7 @@ VirtualFunction const vt_8c273dcc[100] = {
 };
 
 /* 8c273f5c: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c273f5c[100] = {
+VirtualFunction const TObjNpcHRM00_vtable_8c273f5c[100] = {
     0,
     0,
     TObjNpcHRM00_dtor_8c1a4610,
@@ -738,7 +738,7 @@ VirtualFunction const vt_8c273f5c[100] = {
 };
 
 /* 8c2740ec: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c2740ec[100] = {
+VirtualFunction const TObjNpcNFM00_vtable_8c2740ec[100] = {
     0,
     0,
     TObjNpcNFM00_dtor_8c1a47d0,
@@ -842,7 +842,7 @@ VirtualFunction const vt_8c2740ec[100] = {
 };
 
 /* 8c27427c: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c27427c[100] = {
+VirtualFunction const TObjNpcNFW00_vtable_8c27427c[100] = {
     0,
     0,
     TObjNpcNFW00_dtor_8c1a4990,
@@ -946,7 +946,7 @@ VirtualFunction const vt_8c27427c[100] = {
 };
 
 /* 8c27440c: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c27440c[100] = {
+VirtualFunction const TObjNpcARM00_vtable_8c27440c[100] = {
     0,
     0,
     TObjNpcARM00_dtor_8c1a4b50,

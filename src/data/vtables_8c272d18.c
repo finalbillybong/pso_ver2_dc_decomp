@@ -195,7 +195,7 @@ VirtualFunction const vt_8c272d18[91] = {
 };
 
 /* 8c272e84: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c272e84[17] = {
+VirtualFunction const TObjMapCsn_vtable_8c272e84[17] = {
     0,
     0,
     TObjMapCsn_dtor_8c1a13a4,

@@ -160,7 +160,7 @@ extern void operation_8c13ebb4(void);
 extern void operation_8c13ec0c(void);
 
 /* 8c26d0a0: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c26d0a0[16] = {
+VirtualFunction const TTecSlicer_vtable_8c26d0a0[16] = {
     0,
     0,
     TTecSlicer_dtor_8c137720,
@@ -180,7 +180,7 @@ VirtualFunction const vt_8c26d0a0[16] = {
 };
 
 /* 8c26d0e0: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c26d0e0[91] = {
+VirtualFunction const TBoss3Volopt_vtable_8c26d0e0[91] = {
     0,
     0,
     TBoss3Volopt_dtor_8c1380d0,
@@ -370,7 +370,7 @@ VirtualFunction const vt_8c26d24c[91] = {
 };
 
 /* 8c26d3b8: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c26d3b8[91] = {
+VirtualFunction const TBoss3VoloptP01_vtable_8c26d3b8[91] = {
     0,
     0,
     TBoss3VoloptP01_dtor_8c13c24c,
@@ -465,7 +465,7 @@ VirtualFunction const vt_8c26d3b8[91] = {
 };
 
 /* 8c26d524: type-information and this-adjustment header, then 100 slots */
-VirtualFunction const vt_8c26d524[102] = {
+VirtualFunction const TOMineIcon01_vtable_8c26d524[102] = {
     0,
     0,
     TOMineIcon01_dtor_8c13dd74,
@@ -571,7 +571,7 @@ VirtualFunction const vt_8c26d524[102] = {
 };
 
 /* 8c26d6bc: type-information and this-adjustment header, then 100 slots */
-VirtualFunction const vt_8c26d6bc[102] = {
+VirtualFunction const TOMineIcon02_vtable_8c26d6bc[102] = {
     0,
     0,
     TOMineIcon02_dtor_8c13e038,
@@ -677,7 +677,7 @@ VirtualFunction const vt_8c26d6bc[102] = {
 };
 
 /* 8c26d854: type-information and this-adjustment header, then 100 slots */
-VirtualFunction const vt_8c26d854[102] = {
+VirtualFunction const TOMineIcon03_vtable_8c26d854[102] = {
     0,
     0,
     TOMineIcon03_dtor_8c13e324,

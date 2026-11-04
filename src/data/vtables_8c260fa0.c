@@ -23,7 +23,7 @@ VirtualFunction const vt_8c260fa0[7] = {
 };
 
 /* 8c260fbc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c260fbc[7] = {
+VirtualFunction const TObjControl_vtable_8c260fbc[7] = {
     0,
     0,
     TObjControl_dtor_8c0130e8,

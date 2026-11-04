@@ -22,7 +22,7 @@ VirtualFunction const vt_8c276ea0[5] = {
 };
 
 /* 8c276eb4: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c276eb4[8] = {
+VirtualFunction const TWindowHelpItem_vtable_8c276eb4[8] = {
     0,
     0,
     TWindowHelpItem_dtor_8c1d5be4,

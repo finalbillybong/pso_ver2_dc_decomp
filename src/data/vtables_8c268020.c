@@ -55,7 +55,7 @@ extern void operation_8c0eff08(void);
 extern void operation_8c0eff68(void);
 
 /* 8c268020: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c268020[16] = {
+VirtualFunction const TObjLight_vtable_8c268020[16] = {
     0,
     0,
     TObjLight_dtor_8c0ed9d4,
@@ -75,7 +75,7 @@ VirtualFunction const vt_8c268020[16] = {
 };
 
 /* 8c268060: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c268060[7] = {
+VirtualFunction const TFontSmallTask_vtable_8c268060[7] = {
     0,
     0,
     TFontSmallTask_dtor_8c0ee430,
@@ -136,7 +136,7 @@ VirtualFunction const vt_8c2680c4[24] = {
 };
 
 /* 8c268124: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c268124[24] = {
+VirtualFunction const TODoorAncient01_vtable_8c268124[24] = {
     0,
     0,
     TODoorAncient01_dtor_8c0ef2c8,
@@ -164,7 +164,7 @@ VirtualFunction const vt_8c268124[24] = {
 };
 
 /* 8c268184: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c268184[24] = {
+VirtualFunction const TODoorAncient03_vtable_8c268184[24] = {
     0,
     0,
     TODoorAncient03_dtor_8c0ef720,

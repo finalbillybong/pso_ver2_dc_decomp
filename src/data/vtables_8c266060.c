@@ -18,7 +18,7 @@ extern void fn_8c0b68f4(void);
 extern void TObject_render_default_8c0111c8(void);
 
 /* 8c266060: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c266060[10] = {
+VirtualFunction const TTecMegid_vtable_8c266060[10] = {
     0,
     0,
     TTecMegid_dtor_8c0b5514,

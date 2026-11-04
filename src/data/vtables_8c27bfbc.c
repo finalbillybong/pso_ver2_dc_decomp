@@ -10,7 +10,7 @@ extern void hierarchy_output(void);
 extern void TItemShootRocketPunch_v05_8c23faf4(void);
 
 /* 8c27bfbc: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c27bfbc[8] = {
+VirtualFunction const TItemShootRocketPunch_vtable_8c27bfbc[8] = {
     0,
     0,
     TItemShootRocketPunch_dtor_8c23fc14,

@@ -28,7 +28,7 @@ extern void TJudgmentSequence_v06_8c187dec(void);
 extern void TShopSequence_v07_8c10664c(void);
 
 /* 8c272058: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c272058[7] = {
+VirtualFunction const TObjBoss2RaftSplash_vtable_8c272058[7] = {
     0,
     0,
     TObjBoss2RaftSplash_dtor_8c185990,
@@ -50,7 +50,7 @@ VirtualFunction const vt_8c272074[7] = {
 };
 
 /* 8c272090: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c272090[7] = {
+VirtualFunction const TBoss2LaserLight_vtable_8c272090[7] = {
     0,
     0,
     TBoss2LaserLight_dtor_8c185b8c,
@@ -72,7 +72,7 @@ VirtualFunction const vt_8c2720ac[7] = {
 };
 
 /* 8c2720c8: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c2720c8[10] = {
+VirtualFunction const TSetEvtScriptTest_vtable_8c2720c8[10] = {
     0,
     0,
     TSetEvtScriptTest_dtor_8c187104,
@@ -86,7 +86,7 @@ VirtualFunction const vt_8c2720c8[10] = {
 };
 
 /* 8c2720f0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2720f0[7] = {
+VirtualFunction const TSetEvtDestroy_vtable_8c2720f0[7] = {
     0,
     0,
     TSetEvtDestroy_dtor_8c187520,
@@ -97,7 +97,7 @@ VirtualFunction const vt_8c2720f0[7] = {
 };
 
 /* 8c27210c: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c27210c[10] = {
+VirtualFunction const TJudgmentSequence_vtable_8c27210c[10] = {
     0,
     0,
     TJudgmentSequence_dtor_8c187cf0,

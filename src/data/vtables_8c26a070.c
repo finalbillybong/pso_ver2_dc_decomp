@@ -174,7 +174,7 @@ extern void TObjNpcBase_dtor_8c120328(void);
 extern void TObjNpcBase_v94_8c12068c(void);
 
 /* 8c26a070: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c26a070[91] = {
+VirtualFunction const TObjEnePanarms_vtable_8c26a070[91] = {
     0,
     0,
     TObjEnePanarms_dtor_8c11aefc,
@@ -269,7 +269,7 @@ VirtualFunction const vt_8c26a070[91] = {
 };
 
 /* 8c26a1dc: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c26a1dc[17] = {
+VirtualFunction const TObjLazerFence4_vtable_8c26a1dc[17] = {
     0,
     0,
     TObjLazerFence4_dtor_8c11d77c,
@@ -290,7 +290,7 @@ VirtualFunction const vt_8c26a1dc[17] = {
 };
 
 /* 8c26a220: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c26a220[91] = {
+VirtualFunction const TObjEneBalClaw_vtable_8c26a220[91] = {
     0,
     0,
     TObjEneBalClaw_dtor_8c11dc84,
@@ -385,7 +385,7 @@ VirtualFunction const vt_8c26a220[91] = {
 };
 
 /* 8c26a38c: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c26a38c[24] = {
+VirtualFunction const TODoorAncient07_vtable_8c26a38c[24] = {
     0,
     0,
     TODoorAncient07_dtor_8c11e1a4,
@@ -413,7 +413,7 @@ VirtualFunction const vt_8c26a38c[24] = {
 };
 
 /* 8c26a3ec: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c26a3ec[24] = {
+VirtualFunction const TODoorAncient06_vtable_8c26a3ec[24] = {
     0,
     0,
     TODoorAncient06_dtor_8c11e6a0,
@@ -441,7 +441,7 @@ VirtualFunction const vt_8c26a3ec[24] = {
 };
 
 /* 8c26a44c: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c26a44c[24] = {
+VirtualFunction const TODoorAncient05_vtable_8c26a44c[24] = {
     0,
     0,
     TODoorAncient05_dtor_8c11eb9c,
@@ -469,7 +469,7 @@ VirtualFunction const vt_8c26a44c[24] = {
 };
 
 /* 8c26a4ac: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c26a4ac[18] = {
+VirtualFunction const TORainbowCave01_vtable_8c26a4ac[18] = {
     0,
     0,
     TORainbowCave01_dtor_8c11f084,
@@ -699,7 +699,7 @@ VirtualFunction const vt_8c26a684[100] = {
 };
 
 /* 8c26a814: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26a814[100] = {
+VirtualFunction const TObjNpcMaleBase_vtable_8c26a814[100] = {
     0,
     0,
     TObjNpcMaleBase_dtor_8c11f750,
@@ -803,7 +803,7 @@ VirtualFunction const vt_8c26a814[100] = {
 };
 
 /* 8c26a9a4: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26a9a4[100] = {
+VirtualFunction const TObjNpcMaleChild_vtable_8c26a9a4[100] = {
     0,
     0,
     TObjNpcMaleChild_dtor_8c11f904,
@@ -907,7 +907,7 @@ VirtualFunction const vt_8c26a9a4[100] = {
 };
 
 /* 8c26ab34: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26ab34[100] = {
+VirtualFunction const TObjNpcMaleDwarf_vtable_8c26ab34[100] = {
     0,
     0,
     TObjNpcMaleDwarf_dtor_8c11fab8,
@@ -1011,7 +1011,7 @@ VirtualFunction const vt_8c26ab34[100] = {
 };
 
 /* 8c26acc4: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26acc4[100] = {
+VirtualFunction const TObjNpcMaleFat_vtable_8c26acc4[100] = {
     0,
     0,
     TObjNpcMaleFat_dtor_8c11fc6c,
@@ -1115,7 +1115,7 @@ VirtualFunction const vt_8c26acc4[100] = {
 };
 
 /* 8c26ae54: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26ae54[100] = {
+VirtualFunction const TObjNpcMaleMacho_vtable_8c26ae54[100] = {
     0,
     0,
     TObjNpcMaleMacho_dtor_8c11fe20,
@@ -1219,7 +1219,7 @@ VirtualFunction const vt_8c26ae54[100] = {
 };
 
 /* 8c26afe4: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26afe4[100] = {
+VirtualFunction const TObjNpcMaleOld_vtable_8c26afe4[100] = {
     0,
     0,
     TObjNpcMaleOld_dtor_8c11ffd4,
@@ -1323,7 +1323,7 @@ VirtualFunction const vt_8c26afe4[100] = {
 };
 
 /* 8c26b174: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26b174[100] = {
+VirtualFunction const TObjNpcBase_vtable_8c26b174[100] = {
     0,
     0,
     TObjNpcBase_dtor_8c120328,

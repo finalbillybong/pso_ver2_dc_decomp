@@ -21,7 +21,7 @@ extern void draw_hex_field(void);
 extern void fn_8c0430dc(void);
 
 /* 8c261c28: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c261c28[7] = {
+VirtualFunction const TQuadSpriteNormal_vtable_8c261c28[7] = {
     0,
     0,
     TQuadSpriteNormal_dtor_8c0407c0,
@@ -32,7 +32,7 @@ VirtualFunction const vt_8c261c28[7] = {
 };
 
 /* 8c261c44: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c261c44[7] = {
+VirtualFunction const TQuadSpriteScl_vtable_8c261c44[7] = {
     0,
     0,
     TQuadSpriteScl_dtor_8c040a74,
@@ -54,7 +54,7 @@ VirtualFunction const vt_8c261c60[7] = {
 };
 
 /* 8c261c7c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c261c7c[7] = {
+VirtualFunction const TQuadSpriteSclColRot_vtable_8c261c7c[7] = {
     0,
     0,
     TQuadSpriteSclColRot_dtor_8c0419e8,

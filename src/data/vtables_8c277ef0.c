@@ -18,7 +18,7 @@ extern void operation_8c1e6968(void);
 extern void operation_8c1e6a58(void);
 
 /* 8c277ef0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c277ef0[7] = {
+VirtualFunction const TAdSEGAlogo_vtable_8c277ef0[7] = {
     0,
     0,
     TAdSEGAlogo_dtor_8c1e6118,
@@ -29,7 +29,7 @@ VirtualFunction const vt_8c277ef0[7] = {
 };
 
 /* 8c277f0c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c277f0c[7] = {
+VirtualFunction const TAdSoniclogo_vtable_8c277f0c[7] = {
     0,
     0,
     TAdSoniclogo_dtor_8c1e637c,

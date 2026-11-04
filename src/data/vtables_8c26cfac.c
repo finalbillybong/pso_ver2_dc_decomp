@@ -72,7 +72,7 @@ VirtualFunction const vt_8c26cff4[18] = {
 };
 
 /* 8c26d03c: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c26d03c[18] = {
+VirtualFunction const TObjFogCollision_vtable_8c26d03c[18] = {
     0,
     0,
     TObjFogCollision_dtor_8c1367f0,

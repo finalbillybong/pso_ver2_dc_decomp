@@ -509,7 +509,7 @@ VirtualFunction const vt_8c276dd0[8] = {
 };
 
 /* 8c276df0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c276df0[7] = {
+VirtualFunction const TWindowSubSymbolChat_vtable_8c276df0[7] = {
     0,
     0,
     TWindowSubSymbolChat_dtor_8c1d0434,
@@ -520,7 +520,7 @@ VirtualFunction const vt_8c276df0[7] = {
 };
 
 /* 8c276e0c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c276e0c[7] = {
+VirtualFunction const TWindowSubComCard_vtable_8c276e0c[7] = {
     0,
     0,
     TWindowSubComCard_dtor_8c1d2554,

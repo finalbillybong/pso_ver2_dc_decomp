@@ -25,7 +25,7 @@ extern void operation_8c0104f0(void);
 extern void TOHangerMachine01_v15_8c1c7200(void);
 
 /* 8c276758: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c276758[16] = {
+VirtualFunction const TOSparkMachine01_vtable_8c276758[16] = {
     0,
     0,
     TOSparkMachine01_dtor_8c1c6bbc,
@@ -45,7 +45,7 @@ VirtualFunction const vt_8c276758[16] = {
 };
 
 /* 8c276798: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c276798[18] = {
+VirtualFunction const TOHangerMachine01_vtable_8c276798[18] = {
     0,
     0,
     TOHangerMachine01_dtor_8c1c6e94,

@@ -108,7 +108,7 @@ extern void fn_8c241398(void);
 extern void operation_8c241394(void);
 
 /* 8c27bfdc: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27bfdc[61] = {
+VirtualFunction const TItemWpnRocketPunch_vtable_8c27bfdc[61] = {
     0,
     0,
     TItemWpnRocketPunch_dtor_8c23f7c4,
@@ -173,7 +173,7 @@ VirtualFunction const vt_8c27bfdc[61] = {
 };
 
 /* 8c27c0d0: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27c0d0[61] = {
+VirtualFunction const TItemWpnSamba_vtable_8c27c0d0[61] = {
     0,
     0,
     TItemWpnSamba_dtor_8c23fd18,
@@ -238,7 +238,7 @@ VirtualFunction const vt_8c27c0d0[61] = {
 };
 
 /* 8c27c1c4: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27c1c4[61] = {
+VirtualFunction const TItemWpnSealNodachi_vtable_8c27c1c4[61] = {
     0,
     0,
     TItemWpnSealNodachi_dtor_8c23feb0,
@@ -303,7 +303,7 @@ VirtualFunction const vt_8c27c1c4[61] = {
 };
 
 /* 8c27c2b8: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27c2b8[61] = {
+VirtualFunction const TItemWpnShuriken_vtable_8c27c2b8[61] = {
     0,
     0,
     TItemWpnShuriken_dtor_8c240000,
@@ -368,7 +368,7 @@ VirtualFunction const vt_8c27c2b8[61] = {
 };
 
 /* 8c27c3ac: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27c3ac[61] = {
+VirtualFunction const TItemWpnStarCane_vtable_8c27c3ac[61] = {
     0,
     0,
     TItemWpnStarCane_dtor_8c2401fc,
@@ -433,7 +433,7 @@ VirtualFunction const vt_8c27c3ac[61] = {
 };
 
 /* 8c27c4a0: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27c4a0[61] = {
+VirtualFunction const TItemWpnSunShade_vtable_8c27c4a0[61] = {
     0,
     0,
     TItemWpnSunShade_dtor_8c24039c,
@@ -498,7 +498,7 @@ VirtualFunction const vt_8c27c4a0[61] = {
 };
 
 /* 8c27c594: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27c594[61] = {
+VirtualFunction const TItemWpnTessen_vtable_8c27c594[61] = {
     0,
     0,
     TItemWpnTessen_dtor_8c240620,
@@ -563,7 +563,7 @@ VirtualFunction const vt_8c27c594[61] = {
 };
 
 /* 8c27c688: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27c688[61] = {
+VirtualFunction const TItemWpnThunderCane_vtable_8c27c688[61] = {
     0,
     0,
     TItemWpnThunderCane_dtor_8c24090c,
@@ -628,7 +628,7 @@ VirtualFunction const vt_8c27c688[61] = {
 };
 
 /* 8c27c77c: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27c77c[61] = {
+VirtualFunction const TItemWpnTwinGun_vtable_8c27c77c[61] = {
     0,
     0,
     TItemWpnTwinGun_dtor_8c240ae8,
@@ -693,7 +693,7 @@ VirtualFunction const vt_8c27c77c[61] = {
 };
 
 /* 8c27c870: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27c870[61] = {
+VirtualFunction const TItemWpnUmbrella_vtable_8c27c870[61] = {
     0,
     0,
     TItemWpnUmbrella_dtor_8c240d60,
@@ -758,7 +758,7 @@ VirtualFunction const vt_8c27c870[61] = {
 };
 
 /* 8c27c964: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27c964[61] = {
+VirtualFunction const TItemWpnWataruLifle_vtable_8c27c964[61] = {
     0,
     0,
     TItemWpnWataruLifle_dtor_8c240fa8,
@@ -823,7 +823,7 @@ VirtualFunction const vt_8c27c964[61] = {
 };
 
 /* 8c27ca58: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27ca58[61] = {
+VirtualFunction const TItemWpnBag_vtable_8c27ca58[61] = {
     0,
     0,
     TItemWpnBag_dtor_8c24106c,

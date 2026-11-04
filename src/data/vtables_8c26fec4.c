@@ -42,7 +42,7 @@ VirtualFunction const vt_8c26fec4[10] = {
 };
 
 /* 8c26feec: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c26feec[20] = {
+VirtualFunction const TBoss2PhotonBullet_vtable_8c26feec[20] = {
     0,
     0,
     TBoss2PhotonBullet_dtor_8c16737c,

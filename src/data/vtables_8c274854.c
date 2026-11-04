@@ -44,7 +44,7 @@ VirtualFunction const vt_8c274874[8] = {
 };
 
 /* 8c274894: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c274894[8] = {
+VirtualFunction const TItemShootParticle_vtable_8c274894[8] = {
     0,
     0,
     TItemShootParticle_dtor_8c1abfe8,
@@ -56,7 +56,7 @@ VirtualFunction const vt_8c274894[8] = {
 };
 
 /* 8c2748b4: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2748b4[8] = {
+VirtualFunction const TItemShootModel_vtable_8c2748b4[8] = {
     0,
     0,
     TItemShootModel_dtor_8c1ac36c,
@@ -68,7 +68,7 @@ VirtualFunction const vt_8c2748b4[8] = {
 };
 
 /* 8c2748d4: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2748d4[8] = {
+VirtualFunction const TItemShoot_vtable_8c2748d4[8] = {
     0,
     0,
     TItemShoot_dtor_8c1abb78,

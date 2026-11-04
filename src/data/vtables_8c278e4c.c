@@ -24,7 +24,7 @@ VirtualFunction const vt_8c278e4c[7] = {
 };
 
 /* 8c278e68: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278e68[7] = {
+VirtualFunction const TAdRicoRing_vtable_8c278e68[7] = {
     0,
     0,
     TAdRicoRing_dtor_8c22c3b4,

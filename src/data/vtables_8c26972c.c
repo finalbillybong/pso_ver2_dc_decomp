@@ -12,7 +12,7 @@ extern void operation_8c103ce4(void);
 extern void operation_8c103d3c(void);
 
 /* 8c26972c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c26972c[7] = {
+VirtualFunction const TObjEneDf2Bringer_Eff_Rush_vtable_8c26972c[7] = {
     0,
     0,
     TObjEneDf2Bringer_Eff_Rush_dtor_8c103e58,

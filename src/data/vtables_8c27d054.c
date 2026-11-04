@@ -10,7 +10,7 @@ extern void hierarchy_output(void);
 extern void TItemShootBasyoSen2_v05_8c248ec4(void);
 
 /* 8c27d054: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c27d054[8] = {
+VirtualFunction const TItemShootBasyoSen2_vtable_8c27d054[8] = {
     0,
     0,
     TItemShootBasyoSen2_dtor_8c248f54,

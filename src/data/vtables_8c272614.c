@@ -27,7 +27,7 @@ VirtualFunction const vt_8c272614[7] = {
 };
 
 /* 8c272630: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c272630[7] = {
+VirtualFunction const TWindowMainMenu_vtable_8c272630[7] = {
     0,
     0,
     TWindowMainMenu_dtor_8c18bc10,
@@ -38,7 +38,7 @@ VirtualFunction const vt_8c272630[7] = {
 };
 
 /* 8c27264c: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c27264c[8] = {
+VirtualFunction const TWindowMainMenuCommand_vtable_8c27264c[8] = {
     0,
     0,
     TWindowMainMenuCommand_dtor_8c18cc18,

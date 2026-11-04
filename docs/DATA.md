@@ -188,6 +188,31 @@ Tranche 7 typed 15,168 bytes that the earlier rules left in the extracts:
 Byte tables with values above `0x7f` remain extracts: nothing found so far shows them
 to be tables rather than packed or compressed data.
 
+### Tranche 8: keyboard tables, more records, class-named vtables
+
+Tranche 8 typed 5,382 bytes and renamed 713 virtual tables:
+
+* **Virtual tables named by class**: `vt_<addr>` becomes `<Class>_vtable_<addr>` where
+  [CLASSES.md](CLASSES.md) binds the table to exactly one class (its constructor stores
+  this vtable and the class-name string). Bytes are unchanged.
+* **Keyboard and kana tables** at `8c2f1f20`–`8c2f28e8` (2,498 bytes, 18 tables). Each
+  table starts at an address that code loads from a literal pool, ends at the next such
+  address, and takes the element width of the instruction that reads it:
+  `mov.b @(r0,key)` gives `unsigned char`, `mov.w @(r0,key*2)` gives `unsigned short`.
+  The byte tables map key codes to ASCII, so they contain letter runs that the
+  byte-table rule above would reject. They are accepted only because of this code
+  evidence; the general rule is unchanged. Two halfword tables list the Shift-JIS kana
+  that take a dakuten (20) or handakuten (5), matching the loop counts in the code that
+  reads them.
+* **Record tables that end inside their extract** (2,884 bytes, 15 tables): the longest
+  run of records with consistent columns, at any stride from 8 to 256 and any base,
+  repeated through each extract. The column rules are tranche 7's. Each table needs at
+  least four records, a float or pointer column next to another nonzero column kind, at
+  least 40% nonzero words and at least 48 bytes.
+
+Columns that mix floats and integers at every stride and base remain extracts. They
+would need unions, which are not a data kind.
+
 ### External pointer targets (`g_<addr>`)
 
 A pointer whose target is still reference-backed data, or RAM outside the image

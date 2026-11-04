@@ -15,7 +15,7 @@ extern void TItemShootModel_render_8c1abeb8(void);
 extern void TItemEffLavis_v05_8c1c6210(void);
 
 /* 8c276684: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c276684[7] = {
+VirtualFunction const TItemEffHeaven_vtable_8c276684[7] = {
     0,
     0,
     TItemEffHeaven_dtor_8c1c5d34,
@@ -26,7 +26,7 @@ VirtualFunction const vt_8c276684[7] = {
 };
 
 /* 8c2766a0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2766a0[7] = {
+VirtualFunction const TItemEffLandHit_vtable_8c2766a0[7] = {
     0,
     0,
     TItemEffLandHit_dtor_8c1c60b0,
@@ -37,7 +37,7 @@ VirtualFunction const vt_8c2766a0[7] = {
 };
 
 /* 8c2766bc: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2766bc[8] = {
+VirtualFunction const TItemEffLavis_vtable_8c2766bc[8] = {
     0,
     0,
     TItemEffLavis_dtor_8c1c61c0,

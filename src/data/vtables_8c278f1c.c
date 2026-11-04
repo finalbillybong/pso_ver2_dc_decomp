@@ -24,7 +24,7 @@ VirtualFunction const vt_8c278f1c[7] = {
 };
 
 /* 8c278f38: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278f38[8] = {
+VirtualFunction const TWindowSubMagPhoton_vtable_8c278f38[8] = {
     0,
     0,
     TWindowSubMagPhoton_dtor_8c230598,

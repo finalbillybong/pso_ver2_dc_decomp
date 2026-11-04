@@ -128,7 +128,7 @@ extern void operation_1ac3cc_8c14f3b4(void);
 extern void fn_8c14f3c8(void);
 
 /* 8c26e15c: type-information and this-adjustment header, then 94 slots */
-VirtualFunction const vt_8c26e15c[96] = {
+VirtualFunction const TOTrapAncient02R_vtable_8c26e15c[96] = {
     0,
     0,
     TOTrapAncient02R_dtor_8c14d670,
@@ -228,7 +228,7 @@ VirtualFunction const vt_8c26e15c[96] = {
 };
 
 /* 8c26e2dc: type-information and this-adjustment header, then 94 slots */
-VirtualFunction const vt_8c26e2dc[96] = {
+VirtualFunction const TOTrapAncient02_vtable_8c26e2dc[96] = {
     0,
     0,
     TOTrapAncient02_dtor_8c14cd44,
@@ -328,7 +328,7 @@ VirtualFunction const vt_8c26e2dc[96] = {
 };
 
 /* 8c26e45c: type-information and this-adjustment header, then 17 slots */
-VirtualFunction const vt_8c26e45c[19] = {
+VirtualFunction const TPhotonGolla_vtable_8c26e45c[19] = {
     0,
     0,
     TPhotonGolla_dtor_8c14e35c,
@@ -351,7 +351,7 @@ VirtualFunction const vt_8c26e45c[19] = {
 };
 
 /* 8c26e4a8: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c26e4a8[16] = {
+VirtualFunction const TPhotonMagicSquare_vtable_8c26e4a8[16] = {
     0,
     0,
     TPhotonMagicSquare_dtor_8c14ef9c,

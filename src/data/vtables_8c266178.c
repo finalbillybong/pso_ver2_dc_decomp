@@ -15,7 +15,7 @@ extern void TTecRaZonde_render_8c0b8c20(void);
 extern void TTecRaZonde_v05_8c0b8cac(void);
 
 /* 8c266178: type-information and this-adjustment header, then 7 slots */
-VirtualFunction const vt_8c266178[9] = {
+VirtualFunction const TTecRaFoie_vtable_8c266178[9] = {
     0,
     0,
     TTecRaFoie_dtor_8c0b7c5c,
@@ -28,7 +28,7 @@ VirtualFunction const vt_8c266178[9] = {
 };
 
 /* 8c26619c: type-information and this-adjustment header, then 7 slots */
-VirtualFunction const vt_8c26619c[9] = {
+VirtualFunction const TTecRaZonde_vtable_8c26619c[9] = {
     0,
     0,
     TTecRaZonde_dtor_8c0b8c24,

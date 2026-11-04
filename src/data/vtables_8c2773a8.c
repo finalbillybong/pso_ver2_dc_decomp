@@ -46,7 +46,7 @@ VirtualFunction const vt_8c2773a8[17] = {
 };
 
 /* 8c2773ec: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c2773ec[18] = {
+VirtualFunction const TOButterflyDF_vtable_8c2773ec[18] = {
     0,
     0,
     TOButterflyDF_dtor_8c1ddfc8,

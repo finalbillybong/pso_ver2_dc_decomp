@@ -35,7 +35,7 @@ VirtualFunction const vt_8c261144[7] = {
 };
 
 /* 8c261160: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c261160[7] = {
+VirtualFunction const TFog_vtable_8c261160[7] = {
     0,
     0,
     TFog_dtor_8c013570,

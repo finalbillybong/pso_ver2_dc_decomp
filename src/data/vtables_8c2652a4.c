@@ -20,7 +20,7 @@ extern void TGroupEnemySetEditor_v06_8c08de70(void);
 extern void TGroupEnemySetEditor_v07_8c08df50(void);
 
 /* 8c2652a4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2652a4[7] = {
+VirtualFunction const TObjEZBoneRotPlayer_vtable_8c2652a4[7] = {
     0,
     0,
     TObjEZBoneRotPlayer_dtor_8c08b714,
@@ -31,7 +31,7 @@ VirtualFunction const vt_8c2652a4[7] = {
 };
 
 /* 8c2652c0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2652c0[7] = {
+VirtualFunction const TObjEZBoneRotBase_vtable_8c2652c0[7] = {
     0,
     0,
     TObjEZBoneRotBase_dtor_8c08b35c,
@@ -42,7 +42,7 @@ VirtualFunction const vt_8c2652c0[7] = {
 };
 
 /* 8c2652dc: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c2652dc[10] = {
+VirtualFunction const TGroupSetEditor_vtable_8c2652dc[10] = {
     0,
     0,
     TGroupSetEditor_dtor_8c08b900,
@@ -56,7 +56,7 @@ VirtualFunction const vt_8c2652dc[10] = {
 };
 
 /* 8c265304: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c265304[10] = {
+VirtualFunction const TGroupEnemySetEditor_vtable_8c265304[10] = {
     0,
     0,
     TGroupEnemySetEditor_dtor_8c08de2c,

@@ -13,7 +13,7 @@ extern void TWindowKeyBoardHard_update_8c1dfde4(void);
 extern void TWindowKeyBoardHard_render_8c1dfe9c(void);
 
 /* 8c277434: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c277434[8] = {
+VirtualFunction const TWindowKeyBoardSoft_vtable_8c277434[8] = {
     0,
     0,
     TWindowKeyBoardSoft_dtor_8c1de194,
@@ -25,7 +25,7 @@ VirtualFunction const vt_8c277434[8] = {
 };
 
 /* 8c277454: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c277454[8] = {
+VirtualFunction const TWindowKeyBoardHard_vtable_8c277454[8] = {
     0,
     0,
     TWindowKeyBoardHard_dtor_8c1dfda0,

@@ -31,7 +31,7 @@ extern void fn_8c05ef44(void);
 extern void operation_8c05f128(void);
 
 /* 8c262b3c: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c262b3c[20] = {
+VirtualFunction const TObjEneRe2Flower_Bomb_vtable_8c262b3c[20] = {
     0,
     0,
     TObjEneRe2Flower_Bomb_dtor_8c05e960,
@@ -55,7 +55,7 @@ VirtualFunction const vt_8c262b3c[20] = {
 };
 
 /* 8c262b8c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c262b8c[7] = {
+VirtualFunction const TObjEneRe2Flower_EffCurse3_vtable_8c262b8c[7] = {
     0,
     0,
     TObjEneRe2Flower_EffCurse3_dtor_8c05f534,

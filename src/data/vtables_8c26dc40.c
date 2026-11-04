@@ -111,7 +111,7 @@ extern void TBoss2Tentacle_render_8c142c8c(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 
 /* 8c26dc40: type-information and this-adjustment header, then 94 slots */
-VirtualFunction const vt_8c26dc40[96] = {
+VirtualFunction const TOTrap_vtable_8c26dc40[96] = {
     0,
     0,
     TOTrap_dtor_8c140b8c,
@@ -211,7 +211,7 @@ VirtualFunction const vt_8c26dc40[96] = {
 };
 
 /* 8c26ddc0: type-information and this-adjustment header, then 94 slots */
-VirtualFunction const vt_8c26ddc0[96] = {
+VirtualFunction const TOTrapAncient01_vtable_8c26ddc0[96] = {
     0,
     0,
     TOTrapAncient01_dtor_8c1414c4,
@@ -311,7 +311,7 @@ VirtualFunction const vt_8c26ddc0[96] = {
 };
 
 /* 8c26df40: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c26df40[7] = {
+VirtualFunction const TBoss2Tentacle_vtable_8c26df40[7] = {
     0,
     0,
     TBoss2Tentacle_dtor_8c1421e0,

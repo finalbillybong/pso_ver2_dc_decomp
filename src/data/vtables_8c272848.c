@@ -13,7 +13,7 @@ extern void TObjBGLifeGame_update_8c1971cc(void);
 extern void TObjBGLifeGame_render_8c197298(void);
 
 /* 8c272848: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c272848[8] = {
+VirtualFunction const TWindowSubStatusDisp_vtable_8c272848[8] = {
     0,
     0,
     TWindowSubStatusDisp_dtor_8c194098,
@@ -25,7 +25,7 @@ VirtualFunction const vt_8c272848[8] = {
 };
 
 /* 8c272868: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c272868[7] = {
+VirtualFunction const TObjBGLifeGame_vtable_8c272868[7] = {
     0,
     0,
     TObjBGLifeGame_dtor_8c196d84,

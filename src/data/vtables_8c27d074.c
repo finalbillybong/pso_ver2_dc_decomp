@@ -83,7 +83,7 @@ extern void TItemWpnSRed_v57_8c24958c(void);
 extern void TItemWpnAnoRifle_dtor_8c2497b0(void);
 
 /* 8c27d074: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27d074[61] = {
+VirtualFunction const TItemWpnBasyoSen2_vtable_8c27d074[61] = {
     0,
     0,
     TItemWpnBasyoSen2_dtor_8c248d98,
@@ -148,7 +148,7 @@ VirtualFunction const vt_8c27d074[61] = {
 };
 
 /* 8c27d168: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27d168[61] = {
+VirtualFunction const TItemWpnChaoBranch_vtable_8c27d168[61] = {
     0,
     0,
     TItemWpnChaoBranch_dtor_8c249024,
@@ -213,7 +213,7 @@ VirtualFunction const vt_8c27d168[61] = {
 };
 
 /* 8c27d25c: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27d25c[61] = {
+VirtualFunction const TItemWpnGyaranzo_vtable_8c27d25c[61] = {
     0,
     0,
     TItemWpnGyaranzo_dtor_8c249174,
@@ -278,7 +278,7 @@ VirtualFunction const vt_8c27d25c[61] = {
 };
 
 /* 8c27d350: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27d350[61] = {
+VirtualFunction const TItemWpnIkedaSythe_vtable_8c27d350[61] = {
     0,
     0,
     TItemWpnIkedaSythe_dtor_8c249410,
@@ -343,7 +343,7 @@ VirtualFunction const vt_8c27d350[61] = {
 };
 
 /* 8c27d444: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27d444[61] = {
+VirtualFunction const TItemWpnSRed_vtable_8c27d444[61] = {
     0,
     0,
     TItemWpnSRed_dtor_8c2496d4,
@@ -408,7 +408,7 @@ VirtualFunction const vt_8c27d444[61] = {
 };
 
 /* 8c27d538: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27d538[61] = {
+VirtualFunction const TItemWpnAnoRifle_vtable_8c27d538[61] = {
     0,
     0,
     TItemWpnAnoRifle_dtor_8c2497b0,

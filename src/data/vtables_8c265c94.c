@@ -15,7 +15,7 @@ extern void TParticleEditor_v06_8c0a7f90(void);
 extern void TParticleEditor_v07_8c0a7f7c(void);
 
 /* 8c265c94: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c265c94[7] = {
+VirtualFunction const TParticleCtrl_vtable_8c265c94[7] = {
     0,
     0,
     TParticleCtrl_dtor_8c0a7238,
@@ -26,7 +26,7 @@ VirtualFunction const vt_8c265c94[7] = {
 };
 
 /* 8c265cb0: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c265cb0[10] = {
+VirtualFunction const TParticleEditor_vtable_8c265cb0[10] = {
     0,
     0,
     TParticleEditor_dtor_8c0a7ed0,

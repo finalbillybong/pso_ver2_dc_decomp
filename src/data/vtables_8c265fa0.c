@@ -24,7 +24,7 @@ extern void operation_8c010510(void);
 extern void set_field_8c0b4d28(void);
 
 /* 8c265fa0: type-information and this-adjustment header, then 7 slots */
-VirtualFunction const vt_8c265fa0[9] = {
+VirtualFunction const TTecJelin_vtable_8c265fa0[9] = {
     0,
     0,
     TTecJelin_dtor_8c0b3af8,

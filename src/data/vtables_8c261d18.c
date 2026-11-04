@@ -222,7 +222,7 @@ VirtualFunction const vt_8c261d18[88] = {
 };
 
 /* 8c261e78: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c261e78[7] = {
+VirtualFunction const TNECFontEORFunction_vtable_8c261e78[7] = {
     0,
     0,
     TNECFontEORFunction_dtor_8c04bb2c,
@@ -233,7 +233,7 @@ VirtualFunction const vt_8c261e78[7] = {
 };
 
 /* 8c261e94: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c261e94[16] = {
+VirtualFunction const TObjGrassWeb_vtable_8c261e94[16] = {
     0,
     0,
     TObjGrassWeb_dtor_8c04f904,
@@ -253,7 +253,7 @@ VirtualFunction const vt_8c261e94[16] = {
 };
 
 /* 8c261ed4: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c261ed4[91] = {
+VirtualFunction const TObjGrass_vtable_8c261ed4[91] = {
     0,
     0,
     TObjGrass_dtor_8c04ca48,
@@ -348,7 +348,7 @@ VirtualFunction const vt_8c261ed4[91] = {
 };
 
 /* 8c262040: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c262040[91] = {
+VirtualFunction const TObjEneLappy_vtable_8c262040[91] = {
     0,
     0,
     TObjEneLappy_dtor_8c04fee4,

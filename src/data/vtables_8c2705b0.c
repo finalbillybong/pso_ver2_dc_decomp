@@ -69,7 +69,7 @@ extern void destroy_object_8c175da0(void);
 extern void operation_8c07633c(void);
 
 /* 8c2705b0: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c2705b0[61] = {
+VirtualFunction const TItemWpnSpreadGunB_vtable_8c2705b0[61] = {
     0,
     0,
     TItemWpnSpreadGunB_dtor_8c175ab8,
@@ -134,7 +134,7 @@ VirtualFunction const vt_8c2705b0[61] = {
 };
 
 /* 8c2706a4: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c2706a4[61] = {
+VirtualFunction const TItemWpnSpreadNeedle_vtable_8c2706a4[61] = {
     0,
     0,
     TItemWpnSpreadNeedle_dtor_8c175cb4,

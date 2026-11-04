@@ -28,7 +28,7 @@ extern void fn_8c07c6e4(void);
 extern void operation_8c0f3884(void);
 
 /* 8c264148: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c264148[20] = {
+VirtualFunction const TBoss1DragonEffTail_vtable_8c264148[20] = {
     0,
     0,
     TBoss1DragonEffTail_dtor_8c07c130,

@@ -52,7 +52,7 @@ VirtualFunction const vt_8c272a0c[7] = {
 };
 
 /* 8c272a28: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c272a28[7] = {
+VirtualFunction const TQuestColCtrl_vtable_8c272a28[7] = {
     0,
     0,
     TQuestColCtrl_dtor_8c19de38,

@@ -10,7 +10,7 @@ extern void hierarchy_output(void);
 extern void TItemShootDorillArm_v05_8c23bf8c(void);
 
 /* 8c27a380: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c27a380[8] = {
+VirtualFunction const TItemShootDorillArm_vtable_8c27a380[8] = {
     0,
     0,
     TItemShootDorillArm_dtor_8c23c030,

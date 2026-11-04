@@ -7,17 +7,17 @@
 | Compiled complete ranges | 1,277,418 bytes |
 | Code-range coverage of the image | 30.6857% |
 | of which Hitachi SHC pool groups | 93,006 bytes in 350 modules / 1197 functions |
-| Typed static data | 519,386 bytes in 12405 objects / 3484 modules |
-| Typed data by kind | byte_table 482, float_table 20,596, function_table 18,512, int16_table 13,930, int_table 26,124, pointer_table 31,676, record_table 150,676, string 126,674, string_table 5,160, vtable 125,556 bytes |
+| Typed static data | 524,768 bytes in 12438 objects / 3517 modules |
+| Typed data by kind | byte_table 1,826, float_table 20,596, function_table 18,512, int16_table 15,084, int_table 26,124, pointer_table 31,676, record_table 153,560, string 126,674, string_table 5,160, vtable 125,556 bytes |
 | Static-data extent | 1,100,132 bytes (estimate) |
-| Typed data share of the static-data extent | 47.2112% |
+| Typed data share of the static-data extent | 47.7005% |
 | Decoded executable | 4,162,912 bytes |
-| Image coverage (code ranges + typed data) | 43.1622% |
+| Image coverage (code ranges + typed data) | 43.2915% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
 | Assembly (hand-written), not decompiled | 32,738 bytes in 88 units (1.0689% of the code extent) |
 | Fallback assembly for unmatched code, **not decompiled** | 1,777,170 bytes in 4895 units (58.0247% of the code extent) |
-| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,986,897 bytes (95.7718% of the image) |
-| Dump extracts (untyped bytes from your dump, not reconstructed) | 176,015 bytes in 2639 ranges (4.2282% of the image; untyped_bytes 141,959, zero_run 34,056) |
+| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,992,279 bytes (95.9011% of the image) |
+| Dump extracts (untyped bytes from your dump, not reconstructed) | 170,633 bytes in 2643 ranges (4.0989% of the image; untyped_bytes 136,571, zero_run 34,062) |
 | Retained reference dependence | 0 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |

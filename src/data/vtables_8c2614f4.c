@@ -92,7 +92,7 @@ VirtualFunction const TObject_vtable_8c261580[7] = {
 };
 
 /* 8c26159c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c26159c[7] = {
+VirtualFunction const TCharaMaking_vtable_8c26159c[7] = {
     0,
     0,
     TCharaMaking_dtor_8c034868,
@@ -103,7 +103,7 @@ VirtualFunction const vt_8c26159c[7] = {
 };
 
 /* 8c2615b8: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2615b8[7] = {
+VirtualFunction const TGameProtocol_vtable_8c2615b8[7] = {
     0,
     0,
     TGameProtocol_dtor_8c036a7c,

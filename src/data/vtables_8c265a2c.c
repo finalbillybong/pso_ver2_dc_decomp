@@ -64,7 +64,7 @@ VirtualFunction const vt_8c265a60[13] = {
 };
 
 /* 8c265a94: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c265a94[16] = {
+VirtualFunction const TCameraBehaiv_vtable_8c265a94[16] = {
     0,
     0,
     TCameraBehaiv_dtor_8c0a127c,

@@ -45,7 +45,7 @@ VirtualFunction const vt_8c269efc[8] = {
 };
 
 /* 8c269f1c: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c269f1c[8] = {
+VirtualFunction const TWindowMessage_vtable_8c269f1c[8] = {
     0,
     0,
     TWindowMessage_dtor_8c11953c,
@@ -57,7 +57,7 @@ VirtualFunction const vt_8c269f1c[8] = {
 };
 
 /* 8c269f3c: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c269f3c[18] = {
+VirtualFunction const TObjHashiVersus2_vtable_8c269f3c[18] = {
     0,
     0,
     TObjHashiVersus2_dtor_8c11a5d8,
@@ -123,7 +123,7 @@ VirtualFunction const vt_8c269fcc[18] = {
 };
 
 /* 8c26a014: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c26a014[18] = {
+VirtualFunction const TObjHashiBase_vtable_8c26a014[18] = {
     0,
     0,
     TObjHashiBase_dtor_8c119e28,

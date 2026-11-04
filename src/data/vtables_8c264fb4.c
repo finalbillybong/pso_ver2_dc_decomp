@@ -202,7 +202,7 @@ VirtualFunction const vt_8c265168[21] = {
 };
 
 /* 8c2651bc: type-information and this-adjustment header, then 19 slots */
-VirtualFunction const vt_8c2651bc[21] = {
+VirtualFunction const TObjWarpBase_vtable_8c2651bc[21] = {
     0,
     0,
     TObjWarpBase_dtor_8c0886a8,

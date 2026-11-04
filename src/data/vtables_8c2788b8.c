@@ -23,7 +23,7 @@ VirtualFunction const vt_8c2788b8[7] = {
 };
 
 /* 8c2788d4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2788d4[7] = {
+VirtualFunction const TItemDownLoad_vtable_8c2788d4[7] = {
     0,
     0,
     TItemDownLoad_dtor_8c221134,

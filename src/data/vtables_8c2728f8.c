@@ -12,7 +12,7 @@ extern void TObject_update_default_8c0111c4(void);
 extern void TObject_render_default_8c0111c8(void);
 
 /* 8c2728f8: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2728f8[7] = {
+VirtualFunction const TWindowSubGameEnd_vtable_8c2728f8[7] = {
     0,
     0,
     TWindowSubGameEnd_dtor_8c1987d8,
@@ -23,7 +23,7 @@ VirtualFunction const vt_8c2728f8[7] = {
 };
 
 /* 8c272914: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c272914[7] = {
+VirtualFunction const TBoss1DragonColli_vtable_8c272914[7] = {
     0,
     0,
     TBoss1DragonColli_dtor_8c198c04,

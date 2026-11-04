@@ -184,7 +184,7 @@ extern void TObjBoss2CeilJunk_render_8c165530(void);
 extern void reset_shared_object(void);
 
 /* 8c26eecc: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c26eecc[27] = {
+VirtualFunction const TOSensor_vtable_8c26eecc[27] = {
     0,
     0,
     TOSensor_dtor_8c15c814,
@@ -215,7 +215,7 @@ VirtualFunction const vt_8c26eecc[27] = {
 };
 
 /* 8c26ef38: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c26ef38[27] = {
+VirtualFunction const TOSensorAncient01_vtable_8c26ef38[27] = {
     0,
     0,
     TOSensorAncient01_dtor_8c15ccec,
@@ -246,7 +246,7 @@ VirtualFunction const vt_8c26ef38[27] = {
 };
 
 /* 8c26efa4: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c26efa4[27] = {
+VirtualFunction const TOSensorGeneral01_vtable_8c26efa4[27] = {
     0,
     0,
     TOSensorGeneral01_dtor_8c15d340,
@@ -277,7 +277,7 @@ VirtualFunction const vt_8c26efa4[27] = {
 };
 
 /* 8c26f010: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26f010[100] = {
+VirtualFunction const TObjNpcGovernorBase_vtable_8c26f010[100] = {
     0,
     0,
     TObjNpcGovernorBase_dtor_8c15d720,
@@ -381,7 +381,7 @@ VirtualFunction const vt_8c26f010[100] = {
 };
 
 /* 8c26f1a0: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26f1a0[100] = {
+VirtualFunction const TObjNpcLappy_vtable_8c26f1a0[100] = {
     0,
     0,
     TObjNpcLappy_dtor_8c15da5c,
@@ -485,7 +485,7 @@ VirtualFunction const vt_8c26f1a0[100] = {
 };
 
 /* 8c26f330: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c26f330[100] = {
+VirtualFunction const TObjNpcSoldierMacho_vtable_8c26f330[100] = {
     0,
     0,
     TObjNpcSoldierMacho_dtor_8c15db28,
@@ -589,7 +589,7 @@ VirtualFunction const vt_8c26f330[100] = {
 };
 
 /* 8c26f4c0: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c26f4c0[91] = {
+VirtualFunction const TObjEnePanBARA_vtable_8c26f4c0[91] = {
     0,
     0,
     TObjEnePanBARA_dtor_8c15e1d0,
@@ -684,7 +684,7 @@ VirtualFunction const vt_8c26f4c0[91] = {
 };
 
 /* 8c26f62c: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c26f62c[91] = {
+VirtualFunction const TObjEnePanarmsAtkColli_vtable_8c26f62c[91] = {
     0,
     0,
     TObjEnePanarmsAtkColli_dtor_8c16172c,
@@ -779,7 +779,7 @@ VirtualFunction const vt_8c26f62c[91] = {
 };
 
 /* 8c26f798: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c26f798[24] = {
+VirtualFunction const TODoorMachine01_vtable_8c26f798[24] = {
     0,
     0,
     TODoorMachine01_dtor_8c161e54,
@@ -807,7 +807,7 @@ VirtualFunction const vt_8c26f798[24] = {
 };
 
 /* 8c26f7f8: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c26f7f8[27] = {
+VirtualFunction const TOKeyMachine01_vtable_8c26f7f8[27] = {
     0,
     0,
     TOKeyMachine01_dtor_8c162754,
@@ -838,7 +838,7 @@ VirtualFunction const vt_8c26f7f8[27] = {
 };
 
 /* 8c26f864: type-information and this-adjustment header, then 17 slots */
-VirtualFunction const vt_8c26f864[19] = {
+VirtualFunction const TPhotonFarlla_vtable_8c26f864[19] = {
     0,
     0,
     TPhotonFarlla_dtor_8c1642c8,
@@ -861,7 +861,7 @@ VirtualFunction const vt_8c26f864[19] = {
 };
 
 /* 8c26f8b0: type-information and this-adjustment header, then 17 slots */
-VirtualFunction const vt_8c26f8b0[19] = {
+VirtualFunction const TPhotonEstlla_vtable_8c26f8b0[19] = {
     0,
     0,
     TPhotonEstlla_dtor_8c164ae8,
@@ -884,7 +884,7 @@ VirtualFunction const vt_8c26f8b0[19] = {
 };
 
 /* 8c26f8fc: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c26f8fc[16] = {
+VirtualFunction const TObjBoss2CeilJunk_vtable_8c26f8fc[16] = {
     0,
     0,
     TObjBoss2CeilJunk_dtor_8c165144,

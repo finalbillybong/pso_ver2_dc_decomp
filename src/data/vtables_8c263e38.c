@@ -93,7 +93,7 @@ extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
 
 /* 8c263e38: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c263e38[91] = {
+VirtualFunction const TObjEneDarkGunner_vtable_8c263e38[91] = {
     0,
     0,
     TObjEneDarkGunner_dtor_8c079058,

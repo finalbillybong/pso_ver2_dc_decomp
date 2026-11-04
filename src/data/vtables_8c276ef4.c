@@ -49,7 +49,7 @@ extern void operation_8c1d84c0(void);
 extern void operation_8c1d81ac(void);
 
 /* 8c276ef4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c276ef4[7] = {
+VirtualFunction const TObjCity_Season_FireWork_vtable_8c276ef4[7] = {
     0,
     0,
     TObjCity_Season_FireWork_dtor_8c1d983c,
@@ -60,7 +60,7 @@ VirtualFunction const vt_8c276ef4[7] = {
 };
 
 /* 8c276f10: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c276f10[16] = {
+VirtualFunction const TObjCity_Season_FireWorkCtrl_vtable_8c276f10[16] = {
     0,
     0,
     TObjCity_Season_FireWorkCtrl_dtor_8c1d9458,
@@ -80,7 +80,7 @@ VirtualFunction const vt_8c276f10[16] = {
 };
 
 /* 8c276f50: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c276f50[16] = {
+VirtualFunction const TObjCity_Season_Board_vtable_8c276f50[16] = {
     0,
     0,
     TObjCity_Season_Board_dtor_8c1d92c4,
@@ -100,7 +100,7 @@ VirtualFunction const vt_8c276f50[16] = {
 };
 
 /* 8c276f90: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c276f90[17] = {
+VirtualFunction const TObjCity_Season_SonicAdv2_vtable_8c276f90[17] = {
     0,
     0,
     TObjCity_Season_SonicAdv2_dtor_8c1d8fe4,
@@ -121,7 +121,7 @@ VirtualFunction const vt_8c276f90[17] = {
 };
 
 /* 8c276fd4: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c276fd4[17] = {
+VirtualFunction const TObjCity_Season_21_21_vtable_8c276fd4[17] = {
     0,
     0,
     TObjCity_Season_21_21_dtor_8c1d8d24,
@@ -142,7 +142,7 @@ VirtualFunction const vt_8c276fd4[17] = {
 };
 
 /* 8c277018: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c277018[16] = {
+VirtualFunction const TObjCity_Season_HalloweenPumpkin_vtable_8c277018[16] = {
     0,
     0,
     TObjCity_Season_HalloweenPumpkin_dtor_8c1d8bc8,
@@ -162,7 +162,7 @@ VirtualFunction const vt_8c277018[16] = {
 };
 
 /* 8c277058: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c277058[16] = {
+VirtualFunction const TObjCity_Season_XmasWreath_vtable_8c277058[16] = {
     0,
     0,
     TObjCity_Season_XmasWreath_dtor_8c1d8a88,
@@ -182,7 +182,7 @@ VirtualFunction const vt_8c277058[16] = {
 };
 
 /* 8c277098: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c277098[17] = {
+VirtualFunction const TObjCity_Season_XmasTree_vtable_8c277098[17] = {
     0,
     0,
     TObjCity_Season_XmasTree_dtor_8c1d87e0,

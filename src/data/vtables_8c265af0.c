@@ -14,7 +14,7 @@ extern void destroy_effect_a4910(void);
 extern void fn_8c0a4964(void);
 
 /* 8c265af0: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c265af0[10] = {
+VirtualFunction const TCameraEditor_vtable_8c265af0[10] = {
     0,
     0,
     TCameraEditor_dtor_8c0a2f7c,

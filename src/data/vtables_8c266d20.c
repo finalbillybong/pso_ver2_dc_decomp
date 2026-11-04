@@ -106,7 +106,7 @@ extern void TFreeCamera_v06_8c0d020c(void);
 extern void TFreeCamera_v07_8c0d025c(void);
 
 /* 8c266d20: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c266d20[7] = {
+VirtualFunction const TObjBoss1MokoHill_SoloM_vtable_8c266d20[7] = {
     0,
     0,
     TObjBoss1MokoHill_SoloM_dtor_8c0ccd7c,
@@ -128,7 +128,7 @@ VirtualFunction const vt_8c266d3c[7] = {
 };
 
 /* 8c266d58: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c266d58[91] = {
+VirtualFunction const TObjEneDubchik_vtable_8c266d58[91] = {
     0,
     0,
     TObjEneDubchik_dtor_8c0cdcb8,
@@ -223,7 +223,7 @@ VirtualFunction const vt_8c266d58[91] = {
 };
 
 /* 8c266ec4: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c266ec4[10] = {
+VirtualFunction const TFreeCamera_vtable_8c266ec4[10] = {
     0,
     0,
     TFreeCamera_dtor_8c0d02b4,

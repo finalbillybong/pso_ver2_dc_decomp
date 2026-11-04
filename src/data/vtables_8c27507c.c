@@ -102,7 +102,7 @@ extern void TBoss4Zako_update_8c1bb5bc(void);
 extern void TBoss4Zako_v71_8c1bb59c(void);
 
 /* 8c27507c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27507c[7] = {
+VirtualFunction const TObjBs4CutAtk_vtable_8c27507c[7] = {
     0,
     0,
     TObjBs4CutAtk_dtor_8c1b7270,
@@ -113,7 +113,7 @@ VirtualFunction const vt_8c27507c[7] = {
 };
 
 /* 8c275098: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c275098[91] = {
+VirtualFunction const TBoss4Bishi_vtable_8c275098[91] = {
     0,
     0,
     TBoss4Bishi_dtor_8c1bc99c,
@@ -208,7 +208,7 @@ VirtualFunction const vt_8c275098[91] = {
 };
 
 /* 8c275204: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c275204[91] = {
+VirtualFunction const TBoss4Uro_vtable_8c275204[91] = {
     0,
     0,
     TBoss4Uro_dtor_8c1bc008,
@@ -303,7 +303,7 @@ VirtualFunction const vt_8c275204[91] = {
 };
 
 /* 8c275370: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c275370[91] = {
+VirtualFunction const TBoss4Zako_vtable_8c275370[91] = {
     0,
     0,
     TBoss4Zako_dtor_8c1bb528,

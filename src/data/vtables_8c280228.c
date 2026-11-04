@@ -11,7 +11,7 @@ extern void TObjCHTimeWin_dtor_8c2533c4(void);
 extern void TObjCHTimeWin_update_8c253408(void);
 
 /* 8c280228: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c280228[7] = {
+VirtualFunction const TObjNewFloorWin_vtable_8c280228[7] = {
     0,
     0,
     TObjNewFloorWin_dtor_8c2531a8,
@@ -22,7 +22,7 @@ VirtualFunction const vt_8c280228[7] = {
 };
 
 /* 8c280244: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c280244[7] = {
+VirtualFunction const TObjCHTimeWin_vtable_8c280244[7] = {
     0,
     0,
     TObjCHTimeWin_dtor_8c2533c4,

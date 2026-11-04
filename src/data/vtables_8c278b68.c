@@ -15,7 +15,7 @@ extern void TAdDrawLineCtrl_update_8c227c68(void);
 extern void TAdDrawLineCtrl_render_8c227c8c(void);
 
 /* 8c278b68: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278b68[7] = {
+VirtualFunction const TWindowSetLevelUp_vtable_8c278b68[7] = {
     0,
     0,
     TWindowSetLevelUp_dtor_8c226938,
@@ -26,7 +26,7 @@ VirtualFunction const vt_8c278b68[7] = {
 };
 
 /* 8c278b84: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278b84[7] = {
+VirtualFunction const TWindowOptionCtrl_vtable_8c278b84[7] = {
     0,
     0,
     TWindowOptionCtrl_dtor_8c226c94,
@@ -37,7 +37,7 @@ VirtualFunction const vt_8c278b84[7] = {
 };
 
 /* 8c278ba0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278ba0[7] = {
+VirtualFunction const TAdDrawLineCtrl_vtable_8c278ba0[7] = {
     0,
     0,
     TAdDrawLineCtrl_dtor_8c227c14,

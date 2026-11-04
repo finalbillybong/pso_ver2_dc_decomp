@@ -13,7 +13,7 @@ extern void TQuestVmDownLoadServer_update_8c22d748(void);
 extern void TObject_render_default_8c0111c8(void);
 
 /* 8c278e84: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278e84[8] = {
+VirtualFunction const TWindowLoadItemTexture_vtable_8c278e84[8] = {
     0,
     0,
     TWindowLoadItemTexture_dtor_8c22cb18,
@@ -25,7 +25,7 @@ VirtualFunction const vt_8c278e84[8] = {
 };
 
 /* 8c278ea4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278ea4[7] = {
+VirtualFunction const TQuestVmDownLoadServer_vtable_8c278ea4[7] = {
     0,
     0,
     TQuestVmDownLoadServer_dtor_8c22d680,

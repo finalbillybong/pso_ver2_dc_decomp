@@ -9,7 +9,7 @@ extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 
 /* 8c27cee4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27cee4[7] = {
+VirtualFunction const TEffStarLight2D_vtable_8c27cee4[7] = {
     0,
     0,
     TEffStarLight2D_dtor_8c245e18,

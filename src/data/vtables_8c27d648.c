@@ -97,7 +97,7 @@ VirtualFunction const vt_8c27d688[16] = {
 };
 
 /* 8c27d6c8: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c27d6c8[18] = {
+VirtualFunction const TObjCamera_vtable_8c27d6c8[18] = {
     0,
     0,
     TObjCamera_dtor_8c24a220,
@@ -119,7 +119,7 @@ VirtualFunction const vt_8c27d6c8[18] = {
 };
 
 /* 8c27d710: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c27d710[17] = {
+VirtualFunction const TObjBigTuitate_vtable_8c27d710[17] = {
     0,
     0,
     TObjBigTuitate_dtor_8c24ac58,
@@ -140,7 +140,7 @@ VirtualFunction const vt_8c27d710[17] = {
 };
 
 /* 8c27d754: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c27d754[17] = {
+VirtualFunction const TObjTuitate_vtable_8c27d754[17] = {
     0,
     0,
     TObjTuitate_dtor_8c24a918,
@@ -161,7 +161,7 @@ VirtualFunction const vt_8c27d754[17] = {
 };
 
 /* 8c27d798: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c27d798[24] = {
+VirtualFunction const TObjDoaEx01_vtable_8c27d798[24] = {
     0,
     0,
     TObjDoaEx01_dtor_8c24afe8,
@@ -189,7 +189,7 @@ VirtualFunction const vt_8c27d798[24] = {
 };
 
 /* 8c27d7f8: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c27d7f8[24] = {
+VirtualFunction const TODoorVS2Door01_vtable_8c27d7f8[24] = {
     0,
     0,
     TODoorVS2Door01_dtor_8c24b614,

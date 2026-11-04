@@ -65,7 +65,7 @@ extern void TItemObjMagChanger_dtor_8c24dddc(void);
 extern void TItemObjMagChanger_v42_8c24de2c(void);
 
 /* 8c27dd54: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c27dd54[45] = {
+VirtualFunction const TItemObjTrapVision_vtable_8c27dd54[45] = {
     0,
     0,
     TItemObjTrapVision_dtor_8c24d1c8,
@@ -114,7 +114,7 @@ VirtualFunction const vt_8c27dd54[45] = {
 };
 
 /* 8c27de08: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c27de08[45] = {
+VirtualFunction const TItemObjTpRecover_vtable_8c27de08[45] = {
     0,
     0,
     TItemObjTpRecover_dtor_8c24d3e4,
@@ -212,7 +212,7 @@ VirtualFunction const vt_8c27debc[45] = {
 };
 
 /* 8c27df70: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c27df70[45] = {
+VirtualFunction const TItemObjTecBook_vtable_8c27df70[45] = {
     0,
     0,
     TItemObjTecBook_dtor_8c24d61c,
@@ -261,7 +261,7 @@ VirtualFunction const vt_8c27df70[45] = {
 };
 
 /* 8c27e024: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c27e024[45] = {
+VirtualFunction const TItemObjStatusUp_vtable_8c27e024[45] = {
     0,
     0,
     TItemObjStatusUp_dtor_8c24d70c,
@@ -310,7 +310,7 @@ VirtualFunction const vt_8c27e024[45] = {
 };
 
 /* 8c27e0d8: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c27e0d8[45] = {
+VirtualFunction const TItemObjStarAtomizer_vtable_8c27e0d8[45] = {
     0,
     0,
     TItemObjStarAtomizer_dtor_8c24d92c,
@@ -359,7 +359,7 @@ VirtualFunction const vt_8c27e0d8[45] = {
 };
 
 /* 8c27e18c: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c27e18c[45] = {
+VirtualFunction const TItemObjSolAtomizer_vtable_8c27e18c[45] = {
     0,
     0,
     TItemObjSolAtomizer_dtor_8c24da94,
@@ -408,7 +408,7 @@ VirtualFunction const vt_8c27e18c[45] = {
 };
 
 /* 8c27e240: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c27e240[45] = {
+VirtualFunction const TItemObjRecovery_vtable_8c27e240[45] = {
     0,
     0,
     TItemObjRecovery_dtor_8c24db7c,
@@ -457,7 +457,7 @@ VirtualFunction const vt_8c27e240[45] = {
 };
 
 /* 8c27e2f4: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c27e2f4[45] = {
+VirtualFunction const TItemObjMoonAtomizer_vtable_8c27e2f4[45] = {
     0,
     0,
     TItemObjMoonAtomizer_dtor_8c24dc9c,
@@ -506,7 +506,7 @@ VirtualFunction const vt_8c27e2f4[45] = {
 };
 
 /* 8c27e3a8: type-information and this-adjustment header, then 43 slots */
-VirtualFunction const vt_8c27e3a8[45] = {
+VirtualFunction const TItemObjMagChanger_vtable_8c27e3a8[45] = {
     0,
     0,
     TItemObjMagChanger_dtor_8c24dddc,

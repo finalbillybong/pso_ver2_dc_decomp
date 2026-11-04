@@ -83,7 +83,7 @@ extern void TItemWpnMaserBeam_v49_8c24fe20(void);
 extern void operation_8c076170(void);
 
 /* 8c27e4f0: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27e4f0[61] = {
+VirtualFunction const TItemWpnNaganoClaw_vtable_8c27e4f0[61] = {
     0,
     0,
     TItemWpnNaganoClaw_dtor_8c24f15c,
@@ -148,7 +148,7 @@ VirtualFunction const vt_8c27e4f0[61] = {
 };
 
 /* 8c27e5e4: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27e5e4[61] = {
+VirtualFunction const TItemWpnYasumuraShiki2_vtable_8c27e5e4[61] = {
     0,
     0,
     TItemWpnYasumuraShiki2_dtor_8c24f4b0,
@@ -213,7 +213,7 @@ VirtualFunction const vt_8c27e5e4[61] = {
 };
 
 /* 8c27e6d8: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27e6d8[61] = {
+VirtualFunction const TItemWpnYasuShotGun_vtable_8c27e6d8[61] = {
     0,
     0,
     TItemWpnYasuShotGun_dtor_8c24f7cc,
@@ -278,7 +278,7 @@ VirtualFunction const vt_8c27e6d8[61] = {
 };
 
 /* 8c27e7cc: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27e7cc[61] = {
+VirtualFunction const TItemWpnYasuMachineGun_vtable_8c27e7cc[61] = {
     0,
     0,
     TItemWpnYasuMachineGun_dtor_8c24fa6c,
@@ -343,7 +343,7 @@ VirtualFunction const vt_8c27e7cc[61] = {
 };
 
 /* 8c27e8c0: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27e8c0[61] = {
+VirtualFunction const TItemWpnMaserBeam_vtable_8c27e8c0[61] = {
     0,
     0,
     TItemWpnMaserBeam_dtor_8c24fddc,

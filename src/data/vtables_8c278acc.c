@@ -23,7 +23,7 @@ extern void TWindowMessage_update_8c119598(void);
 extern void TWindowMessageInfomation_render_8c2267dc(void);
 
 /* 8c278acc: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278acc[8] = {
+VirtualFunction const TWindowSubSymbolChatPartsSet_vtable_8c278acc[8] = {
     0,
     0,
     TWindowSubSymbolChatPartsSet_dtor_8c223ec4,
@@ -35,7 +35,7 @@ VirtualFunction const vt_8c278acc[8] = {
 };
 
 /* 8c278aec: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278aec[8] = {
+VirtualFunction const TWindowSubSymbolChatParts_vtable_8c278aec[8] = {
     0,
     0,
     TWindowSubSymbolChatParts_dtor_8c2248d0,
@@ -47,7 +47,7 @@ VirtualFunction const vt_8c278aec[8] = {
 };
 
 /* 8c278b0c: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278b0c[8] = {
+VirtualFunction const TWindowMessageLog_vtable_8c278b0c[8] = {
     0,
     0,
     TWindowMessageLog_dtor_8c225620,
@@ -70,7 +70,7 @@ VirtualFunction const vt_8c278b2c[7] = {
 };
 
 /* 8c278b48: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278b48[8] = {
+VirtualFunction const TWindowMessageInfomation_vtable_8c278b48[8] = {
     0,
     0,
     TWindowMessageInfomation_dtor_8c226798,

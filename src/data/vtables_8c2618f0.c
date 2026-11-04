@@ -19,7 +19,7 @@ extern void destroy_optional_child_owner(void);
 extern void TObject_update_default_8c0111c4(void);
 
 /* 8c2618f0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2618f0[7] = {
+VirtualFunction const TPlyOnCountOver_vtable_8c2618f0[7] = {
     0,
     0,
     TPlyOnCountOver_dtor_8c03c214,
@@ -30,7 +30,7 @@ VirtualFunction const vt_8c2618f0[7] = {
 };
 
 /* 8c26190c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c26190c[7] = {
+VirtualFunction const TPlyOnCreated_vtable_8c26190c[7] = {
     0,
     0,
     TPlyOnCreated_dtor_8c03c258,

@@ -74,7 +74,7 @@ extern void TItemWpnDragonClaw_v55_8c23c6f4(void);
 extern void operation_8c075ed8(void);
 
 /* 8c27a3a0: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27a3a0[61] = {
+VirtualFunction const TItemWpnDorillArm_vtable_8c27a3a0[61] = {
     0,
     0,
     TItemWpnDorillArm_dtor_8c23bc98,
@@ -139,7 +139,7 @@ VirtualFunction const vt_8c27a3a0[61] = {
 };
 
 /* 8c27a494: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27a494[61] = {
+VirtualFunction const TItemWpnDoubleCanon_vtable_8c27a494[61] = {
     0,
     0,
     TItemWpnDoubleCanon_dtor_8c23c158,
@@ -204,7 +204,7 @@ VirtualFunction const vt_8c27a494[61] = {
 };
 
 /* 8c27a588: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27a588[61] = {
+VirtualFunction const TItemWpnDragonClaw_vtable_8c27a588[61] = {
     0,
     0,
     TItemWpnDragonClaw_dtor_8c23c620,

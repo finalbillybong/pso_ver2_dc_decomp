@@ -21,7 +21,7 @@ extern void TObjBoss1MokoHill_Solo_update_8c0cd3e8(void);
 extern void TObjBoss1MokoHill_Solo_render_8c0cd488(void);
 
 /* 8c266c94: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c266c94[7] = {
+VirtualFunction const TObjEneMe1Canadin_EffDischarge_vtable_8c266c94[7] = {
     0,
     0,
     TObjEneMe1Canadin_EffDischarge_dtor_8c0cb7e0,
@@ -32,7 +32,7 @@ VirtualFunction const vt_8c266c94[7] = {
 };
 
 /* 8c266cb0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c266cb0[7] = {
+VirtualFunction const TObjEneMe1Canadin_EffLine_vtable_8c266cb0[7] = {
     0,
     0,
     TObjEneMe1Canadin_EffLine_dtor_8c0cb578,
@@ -54,7 +54,7 @@ VirtualFunction const vt_8c266ccc[7] = {
 };
 
 /* 8c266ce8: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c266ce8[7] = {
+VirtualFunction const TObjEneMe1Canadin_EffLineFade_vtable_8c266ce8[7] = {
     0,
     0,
     TObjEneMe1Canadin_EffLineFade_dtor_8c0cb374,
@@ -65,7 +65,7 @@ VirtualFunction const vt_8c266ce8[7] = {
 };
 
 /* 8c266d04: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c266d04[7] = {
+VirtualFunction const TObjBoss1MokoHill_Solo_vtable_8c266d04[7] = {
     0,
     0,
     TObjBoss1MokoHill_Solo_dtor_8c0cd398,

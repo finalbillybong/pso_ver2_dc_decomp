@@ -50,7 +50,7 @@ extern void TOKeyAncient01_v17_8c114654(void);
 extern void TOKeyAncient01_v18_8c114660(void);
 
 /* 8c269c48: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c269c48[27] = {
+VirtualFunction const TOKey_vtable_8c269c48[27] = {
     0,
     0,
     TOKey_dtor_8c112efc,
@@ -81,7 +81,7 @@ VirtualFunction const vt_8c269c48[27] = {
 };
 
 /* 8c269cb4: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c269cb4[27] = {
+VirtualFunction const TLazerFenceSw_vtable_8c269cb4[27] = {
     0,
     0,
     TLazerFenceSw_dtor_8c113850,
@@ -112,7 +112,7 @@ VirtualFunction const vt_8c269cb4[27] = {
 };
 
 /* 8c269d20: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c269d20[27] = {
+VirtualFunction const TOKeyAncient02_vtable_8c269d20[27] = {
     0,
     0,
     TOKeyAncient02_dtor_8c113f14,
@@ -143,7 +143,7 @@ VirtualFunction const vt_8c269d20[27] = {
 };
 
 /* 8c269d8c: type-information and this-adjustment header, then 25 slots */
-VirtualFunction const vt_8c269d8c[27] = {
+VirtualFunction const TOKeyAncient01_vtable_8c269d8c[27] = {
     0,
     0,
     TOKeyAncient01_dtor_8c1144b4,

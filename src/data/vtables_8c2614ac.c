@@ -19,7 +19,7 @@ VirtualFunction const vt_8c2614ac[4] = {
 };
 
 /* 8c2614bc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2614bc[7] = {
+VirtualFunction const TScene_vtable_8c2614bc[7] = {
     0,
     0,
     TScene_dtor_8c0313e4,

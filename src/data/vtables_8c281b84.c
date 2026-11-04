@@ -18,7 +18,7 @@ extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
 
 /* 8c281b84: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c281b84[16] = {
+VirtualFunction const TOSwitchTimer_vtable_8c281b84[16] = {
     0,
     0,
     TOSwitchTimer_dtor_8c25af94,

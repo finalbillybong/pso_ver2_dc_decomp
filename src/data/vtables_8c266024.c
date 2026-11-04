@@ -11,7 +11,7 @@ extern void TTecLuker_v05_8c0b4544(void);
 extern void operation_8c0ad9a8(void);
 
 /* 8c266024: type-information and this-adjustment header, then 7 slots */
-VirtualFunction const vt_8c266024[9] = {
+VirtualFunction const TTecLuker_vtable_8c266024[9] = {
     0,
     0,
     TTecLuker_dtor_8c0b4070,

@@ -38,7 +38,7 @@ extern void TObjCMCheck_dtor_8c2608d0(void);
 extern void TObjCMCheck_update_8c260914(void);
 
 /* 8c281d00: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281d00[7] = {
+VirtualFunction const TAdPSOConv_vtable_8c281d00[7] = {
     0,
     0,
     TAdPSOConv_dtor_8c25e34c,
@@ -49,7 +49,7 @@ VirtualFunction const vt_8c281d00[7] = {
 };
 
 /* 8c281d1c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281d1c[7] = {
+VirtualFunction const TObjTagChallenge_vtable_8c281d1c[7] = {
     0,
     0,
     TObjTagChallenge_dtor_8c25e5d8,
@@ -93,7 +93,7 @@ VirtualFunction const vt_8c281d70[7] = {
 };
 
 /* 8c281d8c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281d8c[7] = {
+VirtualFunction const TObjSoloPlayWin_vtable_8c281d8c[7] = {
     0,
     0,
     TObjSoloPlayWin_dtor_8c25f1d8,
@@ -104,7 +104,7 @@ VirtualFunction const vt_8c281d8c[7] = {
 };
 
 /* 8c281da8: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281da8[7] = {
+VirtualFunction const TAdHunLicence_vtable_8c281da8[7] = {
     0,
     0,
     TAdHunLicence_dtor_8c25f598,
@@ -115,7 +115,7 @@ VirtualFunction const vt_8c281da8[7] = {
 };
 
 /* 8c281dc4: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281dc4[7] = {
+VirtualFunction const TItemDisconnectCtrl_vtable_8c281dc4[7] = {
     0,
     0,
     TItemDisconnectCtrl_dtor_8c25f8dc,
@@ -137,7 +137,7 @@ VirtualFunction const vt_8c281de0[7] = {
 };
 
 /* 8c281dfc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281dfc[7] = {
+VirtualFunction const TObjTailsTailsMove_vtable_8c281dfc[7] = {
     0,
     0,
     TObjTailsTailsMove_dtor_8c25fb2c,
@@ -148,7 +148,7 @@ VirtualFunction const vt_8c281dfc[7] = {
 };
 
 /* 8c281e18: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281e18[7] = {
+VirtualFunction const TObjDeadListWin_vtable_8c281e18[7] = {
     0,
     0,
     TObjDeadListWin_dtor_8c26004c,
@@ -170,7 +170,7 @@ VirtualFunction const vt_8c281e34[7] = {
 };
 
 /* 8c281e50: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281e50[7] = {
+VirtualFunction const TObjCMCheck_vtable_8c281e50[7] = {
     0,
     0,
     TObjCMCheck_dtor_8c2608d0,

@@ -11,7 +11,7 @@ extern void TODummyKeyCave01Sound_dtor_8c258728(void);
 extern void TODummyKeyCave01Sound_update_8c25876c(void);
 
 /* 8c281a04: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281a04[7] = {
+VirtualFunction const TItemMenuCtrl_vtable_8c281a04[7] = {
     0,
     0,
     TItemMenuCtrl_dtor_8c257f00,
@@ -22,7 +22,7 @@ VirtualFunction const vt_8c281a04[7] = {
 };
 
 /* 8c281a20: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c281a20[7] = {
+VirtualFunction const TODummyKeyCave01Sound_vtable_8c281a20[7] = {
     0,
     0,
     TODummyKeyCave01Sound_dtor_8c258728,

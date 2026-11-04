@@ -19,7 +19,7 @@ extern void operation_8c010510(void);
 extern void operation_8c0104f0(void);
 
 /* 8c265828: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c265828[17] = {
+VirtualFunction const TCMCharacter_vtable_8c265828[17] = {
     0,
     0,
     TCMCharacter_dtor_8c09b0ac,

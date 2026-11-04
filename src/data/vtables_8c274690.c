@@ -18,7 +18,7 @@ extern void fn_8c01d4c4(void);
 extern void operation_8c010510(void);
 
 /* 8c274690: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c274690[16] = {
+VirtualFunction const TObjBgmCol_vtable_8c274690[16] = {
     0,
     0,
     TObjBgmCol_dtor_8c1a9d14,

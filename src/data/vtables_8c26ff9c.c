@@ -93,7 +93,7 @@ extern void operation_8c1685c8(void);
 extern void TObject_render_default_8c0111c8(void);
 
 /* 8c26ff9c: type-information and this-adjustment header, then 86 slots */
-VirtualFunction const vt_8c26ff9c[88] = {
+VirtualFunction const TPhotonLine_vtable_8c26ff9c[88] = {
     0,
     0,
     TPhotonLine_dtor_8c167bcc,

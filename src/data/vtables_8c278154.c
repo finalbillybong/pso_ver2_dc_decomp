@@ -63,7 +63,7 @@ extern void TWindowDD_WS_ScrollBar_update_8c21551c(void);
 extern void TWindowDD_WS_ScrollBar_render_8c21553c(void);
 
 /* 8c278154: type-information and this-adjustment header, then 48 slots */
-VirtualFunction const vt_8c278154[50] = {
+VirtualFunction const TItemEquipBase_vtable_8c278154[50] = {
     0,
     0,
     TItemEquipBase_dtor_8c20997c,
@@ -117,7 +117,7 @@ VirtualFunction const vt_8c278154[50] = {
 };
 
 /* 8c27821c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27821c[7] = {
+VirtualFunction const TWindowDD_vtable_8c27821c[7] = {
     0,
     0,
     TWindowDD_dtor_8c21108c,
@@ -140,7 +140,7 @@ VirtualFunction const vt_8c278238[8] = {
 };
 
 /* 8c278258: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c278258[8] = {
+VirtualFunction const TWindowDD_WS_ScrollBar_vtable_8c278258[8] = {
     0,
     0,
     TWindowDD_WS_ScrollBar_dtor_8c2154ac,

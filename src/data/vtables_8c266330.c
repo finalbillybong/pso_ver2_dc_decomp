@@ -134,7 +134,7 @@ extern void destroy_color_base(void);
 extern void TObject_update_default_8c0111c4(void);
 
 /* 8c266330: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c266330[91] = {
+VirtualFunction const TObjEneSaver_vtable_8c266330[91] = {
     0,
     0,
     TObjEneSaver_dtor_8c0bc8fc,
@@ -324,7 +324,7 @@ VirtualFunction const vt_8c26649c[91] = {
 };
 
 /* 8c266608: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c266608[91] = {
+VirtualFunction const TObjEnemyCustom_vtable_8c266608[91] = {
     0,
     0,
     TObjEnemyCustom_dtor_8c0c23c8,

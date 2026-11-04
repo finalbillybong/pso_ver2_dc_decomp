@@ -63,7 +63,7 @@ extern void TItemWpnFast_v57_8c23c9ec(void);
 extern void fn_8c076340(void);
 
 /* 8c27a69c: type-information and this-adjustment header, then 59 slots */
-VirtualFunction const vt_8c27a69c[61] = {
+VirtualFunction const TItemWpnFast_vtable_8c27a69c[61] = {
     0,
     0,
     TItemWpnFast_dtor_8c23c958,

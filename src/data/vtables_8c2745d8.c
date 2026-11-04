@@ -27,7 +27,7 @@ extern void TObjBgmColCtrl_update_8c1aa0e8(void);
 extern void TObjBgmColCtrl_render_shadow_8c1aa164(void);
 
 /* 8c2745d8: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c2745d8[8] = {
+VirtualFunction const TShopGetItemWindow_vtable_8c2745d8[8] = {
     0,
     0,
     TShopGetItemWindow_dtor_8c1a6990,
@@ -39,7 +39,7 @@ VirtualFunction const vt_8c2745d8[8] = {
 };
 
 /* 8c2745f8: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c2745f8[10] = {
+VirtualFunction const TQuestScriptChecker_vtable_8c2745f8[10] = {
     0,
     0,
     TQuestScriptChecker_dtor_8c1a769c,
@@ -53,7 +53,7 @@ VirtualFunction const vt_8c2745f8[10] = {
 };
 
 /* 8c274620: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c274620[7] = {
+VirtualFunction const TWindowSubTechnique_vtable_8c274620[7] = {
     0,
     0,
     TWindowSubTechnique_dtor_8c1a87b4,
@@ -86,7 +86,7 @@ VirtualFunction const vt_8c274658[7] = {
 };
 
 /* 8c274674: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c274674[7] = {
+VirtualFunction const TObjBgmColCtrl_vtable_8c274674[7] = {
     0,
     0,
     TObjBgmColCtrl_dtor_8c1a9f90,

@@ -43,7 +43,7 @@ VirtualFunction const vt_8c278660[8] = {
 };
 
 /* 8c278680: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278680[7] = {
+VirtualFunction const TWindowSubQuestBoard_vtable_8c278680[7] = {
     0,
     0,
     TWindowSubQuestBoard_dtor_8c21e478,
@@ -54,7 +54,7 @@ VirtualFunction const vt_8c278680[7] = {
 };
 
 /* 8c27869c: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c27869c[8] = {
+VirtualFunction const TWindowSubQuestBoardSelect_vtable_8c27869c[8] = {
     0,
     0,
     TWindowSubQuestBoardSelect_dtor_8c21e690,

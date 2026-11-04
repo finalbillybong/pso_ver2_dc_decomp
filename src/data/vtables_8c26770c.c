@@ -25,7 +25,7 @@ VirtualFunction const vt_8c26770c[8] = {
 };
 
 /* 8c26772c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c26772c[7] = {
+VirtualFunction const TWindowCtrl_vtable_8c26772c[7] = {
     0,
     0,
     TWindowCtrl_dtor_8c0dcc10,

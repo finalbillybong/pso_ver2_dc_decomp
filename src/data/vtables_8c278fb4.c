@@ -54,7 +54,7 @@ VirtualFunction const vt_8c278fec[7] = {
 };
 
 /* 8c279008: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c279008[10] = {
+VirtualFunction const TPlyPKEditor_vtable_8c279008[10] = {
     0,
     0,
     TPlyPKEditor_dtor_8c23499c,

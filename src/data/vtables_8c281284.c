@@ -56,7 +56,7 @@ extern void TItemProArmor_v42_8c0e6e80(void);
 extern void TItemEquipBase_v43_8c0e7140(void);
 
 /* 8c281284: type-information and this-adjustment header, then 48 slots */
-VirtualFunction const vt_8c281284[50] = {
+VirtualFunction const TItemProArmorParticle_vtable_8c281284[50] = {
     0,
     0,
     TItemProArmorParticle_dtor_8c2558e0,
@@ -110,7 +110,7 @@ VirtualFunction const vt_8c281284[50] = {
 };
 
 /* 8c28134c: type-information and this-adjustment header, then 48 slots */
-VirtualFunction const vt_8c28134c[50] = {
+VirtualFunction const TItemProArmorRecalc_vtable_8c28134c[50] = {
     0,
     0,
     TItemProArmorRecalc_dtor_8c255970,

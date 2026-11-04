@@ -1,0 +1,155 @@
+/* Static data 8c285978-8c285bc8: record_table objects, in address order. */
+
+typedef struct { const void *f0; int f1; } Record_8c285978;
+
+extern const char str_8c308448[];
+extern const char str_8c308451[];
+extern const char str_8c30845e[];
+extern const char str_8c308469[];
+extern const char str_8c308474[];
+extern const char str_8c30847e[];
+extern const char str_8c308488[];
+extern const char str_8c308491[];
+extern const char str_8c30849b[];
+extern const char str_8c3084a7[];
+extern const char str_8c3084b3[];
+extern const char str_8c3084bd[];
+extern const char str_8c3084c7[];
+extern const char str_8c3084d1[];
+extern const char str_8c3084de[];
+extern const char str_8c3084e7[];
+extern const char str_8c3084f3[];
+extern const char str_8c3084fe[];
+extern const char str_8c30850a[];
+extern const char str_8c308515[];
+extern const char str_8c30851f[];
+extern const char str_8c308529[];
+extern const char str_8c308534[];
+extern const char str_8c308541[];
+extern const char str_8c308549[];
+extern const char str_8c308554[];
+extern const char str_8c30855d[];
+extern const char str_8c308566[];
+extern const char str_8c308570[];
+extern const char str_8c30857b[];
+extern const char str_8c308585[];
+extern const char str_8c308590[];
+extern const char str_8c30859d[];
+extern const char str_8c3085aa[];
+extern const char str_8c3085b4[];
+extern const char str_8c3085bf[];
+extern const char str_8c3085c9[];
+extern const char str_8c3085d4[];
+extern const char str_8c3085e1[];
+extern const char str_8c3085ef[];
+extern const char str_8c3085fe[];
+extern const char str_8c308608[];
+extern const char str_8c308612[];
+extern const char str_8c30861b[];
+extern const char str_8c308628[];
+extern const char str_8c308635[];
+extern const char str_8c308641[];
+extern const char str_8c30864b[];
+extern const char str_8c308656[];
+extern const char str_8c308660[];
+extern const char str_8c30866b[];
+extern const char str_8c308677[];
+extern const char str_8c308685[];
+extern const char str_8c30868f[];
+extern const char str_8c308698[];
+extern const char str_8c3086a4[];
+extern const char str_8c3086ae[];
+extern const char str_8c3086b9[];
+extern const char str_8c3086c3[];
+extern const char str_8c3086ce[];
+extern const char str_8c3086d9[];
+extern const char str_8c3086e4[];
+extern const char str_8c3086ed[];
+extern const char str_8c3086f7[];
+extern const char str_8c308703[];
+extern const char str_8c30870d[];
+extern const char str_8c308717[];
+extern const char str_8c308725[];
+extern const char str_8c308732[];
+extern const char str_8c30873f[];
+extern const char str_8c308747[];
+extern const char str_8c308757[];
+extern const char str_8c308446[];
+
+/* 74 records of 8 bytes. */
+const Record_8c285978 d_8c285978[74] = {
+    { str_8c308448, 3825664 },
+    { str_8c308451, 3217408 },
+    { str_8c30845e, 5261312 },
+    { str_8c308469, 5261312 },
+    { str_8c308474, 3493888 },
+    { str_8c30847e, 933888 },
+    { str_8c308488, 2879488 },
+    { str_8c308491, 59670 },
+    { str_8c30849b, 2717696 },
+    { str_8c3084a7, 2910208 },
+    { str_8c3084b3, 5234688 },
+    { str_8c3084bd, 5660672 },
+    { str_8c3084c7, 55890 },
+    { str_8c3084d1, 68472 },
+    { str_8c3084de, 2603008 },
+    { str_8c3084e7, 62082 },
+    { str_8c3084f3, 2746368 },
+    { str_8c3084fe, 32562 },
+    { str_8c30850a, 5199872 },
+    { str_8c308515, 6266880 },
+    { str_8c30851f, 5343232 },
+    { str_8c308529, 3000320 },
+    { str_8c308534, 5005312 },
+    { str_8c308541, 62028 },
+    { str_8c308549, 10151802 },
+    { str_8c308554, 4857856 },
+    { str_8c30855d, 5033984 },
+    { str_8c308566, 103428 },
+    { str_8c308570, 62082 },
+    { str_8c30857b, 103428 },
+    { str_8c308585, 62082 },
+    { str_8c308590, 4376576 },
+    { str_8c30859d, 6273024 },
+    { str_8c3085aa, 103428 },
+    { str_8c3085b4, 62082 },
+    { str_8c3085bf, 4405248 },
+    { str_8c3085c9, 7436288 },
+    { str_8c3085d4, 36558 },
+    { str_8c3085e1, 27486 },
+    { str_8c3085ef, 1298432 },
+    { str_8c3085fe, 16092 },
+    { str_8c308608, 6053888 },
+    { str_8c308612, 62046 },
+    { str_8c30861b, 3278848 },
+    { str_8c308628, 3280896 },
+    { str_8c308635, 3129344 },
+    { str_8c308641, 103428 },
+    { str_8c30864b, 62082 },
+    { str_8c308656, 4370432 },
+    { str_8c308660, 4481024 },
+    { str_8c30866b, 2953216 },
+    { str_8c308677, 35190 },
+    { str_8c308685, 610304 },
+    { str_8c30868f, 11167744 },
+    { str_8c308698, 5283234 },
+    { str_8c3086a4, 103428 },
+    { str_8c3086ae, 62082 },
+    { str_8c3086b9, 103428 },
+    { str_8c3086c3, 62082 },
+    { str_8c3086ce, 4966400 },
+    { str_8c3086d9, 5638144 },
+    { str_8c3086e4, 3819520 },
+    { str_8c3086ed, 4794368 },
+    { str_8c3086f7, 5101568 },
+    { str_8c308703, 62082 },
+    { str_8c30870d, 4943872 },
+    { str_8c308717, 2975744 },
+    { str_8c308725, 2494464 },
+    { str_8c308732, 3241984 },
+    { str_8c30873f, 62136 },
+    { str_8c308747, 3043328 },
+    { str_8c308757, 26190 },
+    { str_8c308446, 0 },
+    { 0, 0 }
+};

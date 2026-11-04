@@ -39,7 +39,7 @@ extern void TObjSinBoard_update_8c22a9bc(void);
 extern void TObjSinBoard_render_8c22a9c0(void);
 
 /* 8c278bbc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278bbc[7] = {
+VirtualFunction const TAdDrawLineTask_vtable_8c278bbc[7] = {
     0,
     0,
     TAdDrawLineTask_dtor_8c227860,
@@ -50,7 +50,7 @@ VirtualFunction const vt_8c278bbc[7] = {
 };
 
 /* 8c278bd8: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c278bd8[16] = {
+VirtualFunction const TObjDFDemo2_vtable_8c278bd8[16] = {
     0,
     0,
     TObjDFDemo2_dtor_8c22838c,
@@ -70,7 +70,7 @@ VirtualFunction const vt_8c278bd8[16] = {
 };
 
 /* 8c278c18: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c278c18[16] = {
+VirtualFunction const TObjDFDemo1_vtable_8c278c18[16] = {
     0,
     0,
     TObjDFDemo1_dtor_8c228848,
@@ -90,7 +90,7 @@ VirtualFunction const vt_8c278c18[16] = {
 };
 
 /* 8c278c58: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c278c58[16] = {
+VirtualFunction const TObjDFDemo0_vtable_8c278c58[16] = {
     0,
     0,
     TObjDFDemo0_dtor_8c228fe4,
@@ -110,7 +110,7 @@ VirtualFunction const vt_8c278c58[16] = {
 };
 
 /* 8c278c98: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c278c98[16] = {
+VirtualFunction const TObjDFDemo3_vtable_8c278c98[16] = {
     0,
     0,
     TObjDFDemo3_dtor_8c229778,
@@ -130,7 +130,7 @@ VirtualFunction const vt_8c278c98[16] = {
 };
 
 /* 8c278cd8: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c278cd8[16] = {
+VirtualFunction const TObjDFDemo4_vtable_8c278cd8[16] = {
     0,
     0,
     TObjDFDemo4_dtor_8c229cdc,
@@ -150,7 +150,7 @@ VirtualFunction const vt_8c278cd8[16] = {
 };
 
 /* 8c278d18: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c278d18[16] = {
+VirtualFunction const TObjDFDemo5_vtable_8c278d18[16] = {
     0,
     0,
     TObjDFDemo5_dtor_8c22a3ec,
@@ -170,7 +170,7 @@ VirtualFunction const vt_8c278d18[16] = {
 };
 
 /* 8c278d58: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c278d58[16] = {
+VirtualFunction const TObjSinBoard_vtable_8c278d58[16] = {
     0,
     0,
     TObjSinBoard_dtor_8c22a978,

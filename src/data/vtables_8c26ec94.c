@@ -103,7 +103,7 @@ extern void TObjVoloptPillar_update_8c15aa8c(void);
 extern void TObjVoloptPillar_render_8c15ad68(void);
 
 /* 8c26ec94: type-information and this-adjustment header, then 89 slots */
-VirtualFunction const vt_8c26ec94[91] = {
+VirtualFunction const TObjVoloptCage_vtable_8c26ec94[91] = {
     0,
     0,
     TObjVoloptCage_dtor_8c159b90,
@@ -219,7 +219,7 @@ VirtualFunction const vt_8c26ee00[17] = {
 };
 
 /* 8c26ee44: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c26ee44[17] = {
+VirtualFunction const TObjVoloptPillar_vtable_8c26ee44[17] = {
     0,
     0,
     TObjVoloptPillar_dtor_8c15a9dc,

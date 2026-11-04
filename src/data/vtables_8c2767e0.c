@@ -16,7 +16,7 @@ extern void TWindowQuantity_render_8c1ca1b0(void);
 extern void operation_8c0dc63c(void);
 
 /* 8c2767e0: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2767e0[7] = {
+VirtualFunction const TAdLoadQuest_vtable_8c2767e0[7] = {
     0,
     0,
     TAdLoadQuest_dtor_8c1c7288,
@@ -27,7 +27,7 @@ VirtualFunction const vt_8c2767e0[7] = {
 };
 
 /* 8c2767fc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2767fc[7] = {
+VirtualFunction const TItemEffShield_vtable_8c2767fc[7] = {
     0,
     0,
     TItemEffShield_dtor_8c1c7464,
@@ -38,7 +38,7 @@ VirtualFunction const vt_8c2767fc[7] = {
 };
 
 /* 8c276818: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c276818[8] = {
+VirtualFunction const TWindowQuantity_vtable_8c276818[8] = {
     0,
     0,
     TWindowQuantity_dtor_8c1ca148,

@@ -12,7 +12,7 @@ extern void operation_8c21a16c(void);
 extern void operation_8c21a578(void);
 
 /* 8c278350: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c278350[7] = {
+VirtualFunction const TItemDrop_vtable_8c278350[7] = {
     0,
     0,
     TItemDrop_dtor_8c218b3c,

@@ -12,7 +12,7 @@ extern void TWindowCtrlMain_update_8c1bed64(void);
 extern void TWindowCtrlMain_render_8c1beda4(void);
 
 /* 8c275620: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c275620[7] = {
+VirtualFunction const TWindowCtrlMainKiller_vtable_8c275620[7] = {
     0,
     0,
     TWindowCtrlMainKiller_dtor_8c1bef00,
@@ -23,7 +23,7 @@ VirtualFunction const vt_8c275620[7] = {
 };
 
 /* 8c27563c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27563c[7] = {
+VirtualFunction const TWindowCtrlMain_vtable_8c27563c[7] = {
     0,
     0,
     TWindowCtrlMain_dtor_8c1bed08,

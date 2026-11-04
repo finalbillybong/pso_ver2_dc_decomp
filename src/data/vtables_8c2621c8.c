@@ -163,7 +163,7 @@ VirtualFunction const vt_8c2621c8[17] = {
 };
 
 /* 8c26220c: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c26220c[17] = {
+VirtualFunction const TObjCGrass_vtable_8c26220c[17] = {
     0,
     0,
     TObjCGrass_dtor_8c0544f4,
@@ -184,7 +184,7 @@ VirtualFunction const vt_8c26220c[17] = {
 };
 
 /* 8c262250: type-information and this-adjustment header, then 112 slots */
-VirtualFunction const vt_8c262250[114] = {
+VirtualFunction const TObjEneBm3Fly_vtable_8c262250[114] = {
     0,
     0,
     TObjEneBm3Fly_dtor_8c054d18,
@@ -302,7 +302,7 @@ VirtualFunction const vt_8c262250[114] = {
 };
 
 /* 8c262418: type-information and this-adjustment header, then 111 slots */
-VirtualFunction const vt_8c262418[113] = {
+VirtualFunction const TObjEneBm3FlyNest_vtable_8c262418[113] = {
     0,
     0,
     TObjEneBm3FlyNest_dtor_8c057fa0,
@@ -419,7 +419,7 @@ VirtualFunction const vt_8c262418[113] = {
 };
 
 /* 8c2625dc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2625dc[7] = {
+VirtualFunction const TObjEneBm3FlyNest_CarryFly_vtable_8c2625dc[7] = {
     0,
     0,
     TObjEneBm3FlyNest_CarryFly_dtor_8c0577b4,

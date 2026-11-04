@@ -18,7 +18,7 @@ extern void operation_8c1733d8(void);
 extern void operation_8c17345c(void);
 
 /* 8c2701cc: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2701cc[7] = {
+VirtualFunction const TItemList_vtable_8c2701cc[7] = {
     0,
     0,
     TItemList_dtor_8c16bf08,
@@ -29,7 +29,7 @@ VirtualFunction const vt_8c2701cc[7] = {
 };
 
 /* 8c2701e8: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c2701e8[7] = {
+VirtualFunction const TObjItemOKWindow_vtable_8c2701e8[7] = {
     0,
     0,
     TObjItemOKWindow_dtor_8c174700,
@@ -40,7 +40,7 @@ VirtualFunction const vt_8c2701e8[7] = {
 };
 
 /* 8c270204: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c270204[7] = {
+VirtualFunction const TObjItemNameSelect_vtable_8c270204[7] = {
     0,
     0,
     TObjItemNameSelect_dtor_8c1743dc,
@@ -51,7 +51,7 @@ VirtualFunction const vt_8c270204[7] = {
 };
 
 /* 8c270220: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c270220[7] = {
+VirtualFunction const TObjItemNameEntry_vtable_8c270220[7] = {
     0,
     0,
     TObjItemNameEntry_dtor_8c1740dc,
@@ -62,7 +62,7 @@ VirtualFunction const vt_8c270220[7] = {
 };
 
 /* 8c27023c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c27023c[7] = {
+VirtualFunction const TQuestThreadBoard_vtable_8c27023c[7] = {
     0,
     0,
     TQuestThreadBoard_dtor_8c173bd8,
@@ -73,7 +73,7 @@ VirtualFunction const vt_8c27023c[7] = {
 };
 
 /* 8c270258: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c270258[7] = {
+VirtualFunction const TQuestThread_vtable_8c270258[7] = {
     0,
     0,
     TQuestThread_dtor_8c173848,

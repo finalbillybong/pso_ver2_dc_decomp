@@ -31,7 +31,7 @@ extern void TOBarrierEnergy01_v20_8c10b9a4(void);
 extern void operation_8c0ef190(void);
 
 /* 8c269a98: type-information and this-adjustment header, then 14 slots */
-VirtualFunction const vt_8c269a98[16] = {
+VirtualFunction const TShopGenerator_vtable_8c269a98[16] = {
     0,
     0,
     TShopGenerator_dtor_8c10b344,
@@ -51,7 +51,7 @@ VirtualFunction const vt_8c269a98[16] = {
 };
 
 /* 8c269ad8: type-information and this-adjustment header, then 22 slots */
-VirtualFunction const vt_8c269ad8[24] = {
+VirtualFunction const TOBarrierEnergy01_vtable_8c269ad8[24] = {
     0,
     0,
     TOBarrierEnergy01_dtor_8c10b694,

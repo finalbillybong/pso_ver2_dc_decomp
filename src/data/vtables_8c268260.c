@@ -235,7 +235,7 @@ VirtualFunction const vt_8c2683f8[17] = {
 };
 
 /* 8c26843c: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c26843c[17] = {
+VirtualFunction const TOWreckAncient_vtable_8c26843c[17] = {
     0,
     0,
     TOWreckAncient_dtor_8c0f030c,
@@ -256,7 +256,7 @@ VirtualFunction const vt_8c26843c[17] = {
 };
 
 /* 8c268480: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c268480[17] = {
+VirtualFunction const TOWreckAncient02_vtable_8c268480[17] = {
     0,
     0,
     TOWreckAncient02_dtor_8c0f0efc,
@@ -277,7 +277,7 @@ VirtualFunction const vt_8c268480[17] = {
 };
 
 /* 8c2684c4: type-information and this-adjustment header, then 15 slots */
-VirtualFunction const vt_8c2684c4[17] = {
+VirtualFunction const TOWreckAncient03_vtable_8c2684c4[17] = {
     0,
     0,
     TOWreckAncient03_dtor_8c0f0fc4,
@@ -322,7 +322,7 @@ VirtualFunction const vt_8c268508[20] = {
 };
 
 /* 8c268558: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c268558[20] = {
+VirtualFunction const TOMonumentAncient01_vtable_8c268558[20] = {
     0,
     0,
     TOMonumentAncient01_dtor_8c0f15fc,
@@ -346,7 +346,7 @@ VirtualFunction const vt_8c268558[20] = {
 };
 
 /* 8c2685a8: type-information and this-adjustment header, then 16 slots */
-VirtualFunction const vt_8c2685a8[18] = {
+VirtualFunction const TOMonumentAncient02_vtable_8c2685a8[18] = {
     0,
     0,
     TOMonumentAncient02_dtor_8c0f1a2c,
@@ -368,7 +368,7 @@ VirtualFunction const vt_8c2685a8[18] = {
 };
 
 /* 8c2685f0: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c2685f0[20] = {
+VirtualFunction const TOCapsuleAncient01_vtable_8c2685f0[20] = {
     0,
     0,
     TOCapsuleAncient01_dtor_8c0f20a8,
@@ -416,7 +416,7 @@ VirtualFunction const vt_8c268640[20] = {
 };
 
 /* 8c268690: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c268690[20] = {
+VirtualFunction const TOFenceAncient01_vtable_8c268690[20] = {
     0,
     0,
     TOFenceAncient01_dtor_8c0f270c,
@@ -440,7 +440,7 @@ VirtualFunction const vt_8c268690[20] = {
 };
 
 /* 8c2686e0: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c2686e0[20] = {
+VirtualFunction const TOFenceAncient02_vtable_8c2686e0[20] = {
     0,
     0,
     TOFenceAncient02_dtor_8c0f2a5c,
@@ -464,7 +464,7 @@ VirtualFunction const vt_8c2686e0[20] = {
 };
 
 /* 8c268730: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c268730[20] = {
+VirtualFunction const TOFenceAncient03_vtable_8c268730[20] = {
     0,
     0,
     TOFenceAncient03_dtor_8c0f2dac,
@@ -488,7 +488,7 @@ VirtualFunction const vt_8c268730[20] = {
 };
 
 /* 8c268780: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c268780[20] = {
+VirtualFunction const TOFenceAncient04_vtable_8c268780[20] = {
     0,
     0,
     TOFenceAncient04_dtor_8c0f3138,
@@ -536,7 +536,7 @@ VirtualFunction const vt_8c2687d0[20] = {
 };
 
 /* 8c268820: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c268820[20] = {
+VirtualFunction const TObjEneRe7BeruraPunch_vtable_8c268820[20] = {
     0,
     0,
     TObjEneRe7BeruraPunch_dtor_8c0f3b00,

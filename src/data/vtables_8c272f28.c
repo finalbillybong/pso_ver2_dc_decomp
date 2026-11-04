@@ -230,7 +230,7 @@ VirtualFunction const vt_8c272f28[100] = {
 };
 
 /* 8c2730b8: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c2730b8[100] = {
+VirtualFunction const TObjNpcExpertBase_vtable_8c2730b8[100] = {
     0,
     0,
     TObjNpcExpertBase_dtor_8c1a1c48,
@@ -334,7 +334,7 @@ VirtualFunction const vt_8c2730b8[100] = {
 };
 
 /* 8c273248: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c273248[100] = {
+VirtualFunction const TObjNpcNurseBase_vtable_8c273248[100] = {
     0,
     0,
     TObjNpcNurseBase_dtor_8c1a1dfc,
@@ -438,7 +438,7 @@ VirtualFunction const vt_8c273248[100] = {
 };
 
 /* 8c2733d8: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c2733d8[100] = {
+VirtualFunction const TObjNpcSecretaryBase_vtable_8c2733d8[100] = {
     0,
     0,
     TObjNpcSecretaryBase_dtor_8c1a1fb0,
@@ -542,7 +542,7 @@ VirtualFunction const vt_8c2733d8[100] = {
 };
 
 /* 8c273568: type-information and this-adjustment header, then 98 slots */
-VirtualFunction const vt_8c273568[100] = {
+VirtualFunction const TObjNpcConnoisseur_vtable_8c273568[100] = {
     0,
     0,
     TObjNpcConnoisseur_dtor_8c1a2164,
@@ -672,7 +672,7 @@ VirtualFunction const vt_8c2736f8[22] = {
 };
 
 /* 8c273750: type-information and this-adjustment header, then 6 slots */
-VirtualFunction const vt_8c273750[8] = {
+VirtualFunction const TWindowSubItemList_vtable_8c273750[8] = {
     0,
     0,
     TWindowSubItemList_dtor_8c1a2754,

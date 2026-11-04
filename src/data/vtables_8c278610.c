@@ -12,7 +12,7 @@ extern void TQuestListOnline_v08_8c21d200(void);
 extern void TQuestListOnline_v09_8c21d2b0(void);
 
 /* 8c278610: type-information and this-adjustment header, then 10 slots */
-VirtualFunction const vt_8c278610[12] = {
+VirtualFunction const TQuestListOnline_vtable_8c278610[12] = {
     0,
     0,
     0,

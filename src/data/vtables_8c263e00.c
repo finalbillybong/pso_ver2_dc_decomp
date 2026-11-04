@@ -12,7 +12,7 @@ extern void TObjBoss1Floor_update_8c078c14(void);
 extern void TObjBoss1Floor_render_8c078cd8(void);
 
 /* 8c263e00: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c263e00[7] = {
+VirtualFunction const TBoss1DragonEffBreath_vtable_8c263e00[7] = {
     0,
     0,
     TBoss1DragonEffBreath_dtor_8c078a5c,
@@ -23,7 +23,7 @@ VirtualFunction const vt_8c263e00[7] = {
 };
 
 /* 8c263e1c: type-information and this-adjustment header, then 5 slots */
-VirtualFunction const vt_8c263e1c[7] = {
+VirtualFunction const TObjBoss1Floor_vtable_8c263e1c[7] = {
     0,
     0,
     TObjBoss1Floor_dtor_8c078ba4,

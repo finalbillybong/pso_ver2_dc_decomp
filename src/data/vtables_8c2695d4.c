@@ -60,7 +60,7 @@ extern void fn_8c0f37ec(void);
 extern void operation_8c0f3884(void);
 
 /* 8c2695d4: type-information and this-adjustment header, then 42 slots */
-VirtualFunction const vt_8c2695d4[44] = {
+VirtualFunction const TItemMoney_vtable_8c2695d4[44] = {
     0,
     0,
     TItemMoney_dtor_8c1033e0,
@@ -120,7 +120,7 @@ VirtualFunction const vt_8c269684[8] = {
 };
 
 /* 8c2696a4: type-information and this-adjustment header, then 18 slots */
-VirtualFunction const vt_8c2696a4[20] = {
+VirtualFunction const TObjEneDf2Bringer_Eff_TpAbsorb1_vtable_8c2696a4[20] = {
     0,
     0,
     TObjEneDf2Bringer_Eff_TpAbsorb1_dtor_8c104574,

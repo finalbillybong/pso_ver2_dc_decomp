@@ -37,7 +37,7 @@ extern void operation_8c0b3738(void);
 extern void fn_8c0b37a0(void);
 
 /* 8c265e4c: type-information and this-adjustment header, then 7 slots */
-VirtualFunction const vt_8c265e4c[9] = {
+VirtualFunction const TTecDeband_vtable_8c265e4c[9] = {
     0,
     0,
     TTecDeband_dtor_8c0b0380,
@@ -64,7 +64,7 @@ VirtualFunction const vt_8c265e70[10] = {
 };
 
 /* 8c265e98: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c265e98[10] = {
+VirtualFunction const TTecGiBarta_vtable_8c265e98[10] = {
     0,
     0,
     TTecGiBarta_dtor_8c0b1a14,
@@ -89,7 +89,7 @@ VirtualFunction const vt_8c265ec0[7] = {
 };
 
 /* 8c265edc: type-information and this-adjustment header, then 7 slots */
-VirtualFunction const vt_8c265edc[9] = {
+VirtualFunction const TTecGiFoie_vtable_8c265edc[9] = {
     0,
     0,
     TTecGiFoie_dtor_8c0b204c,
@@ -102,7 +102,7 @@ VirtualFunction const vt_8c265edc[9] = {
 };
 
 /* 8c265f00: type-information and this-adjustment header, then 8 slots */
-VirtualFunction const vt_8c265f00[10] = {
+VirtualFunction const TTecGiZonde_vtable_8c265f00[10] = {
     0,
     0,
     TTecGiZonde_dtor_8c0b2984,
