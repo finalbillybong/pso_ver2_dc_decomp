@@ -1,23 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
+#include "src/include/types/ViewParameters.h"
+typedef struct ViewParameters_p30 ViewParameters_p30;
 typedef struct Arg0_30_0 Arg0_30_0;
-typedef struct Arg0_90 Arg0_90;
+typedef struct ViewParameters_p90 ViewParameters_p90;
 typedef struct S_vv4 S_vv4;
 typedef struct S_vv8 S_vv8;
-struct Object {
-    char unknown0[0x30];
-    Arg0_30 *f30;
-    char unknown34[0x50];
-    short f84;
-    short f86;
-    char unknown88[0x8];
-    Arg0_90 *f90;
-};
 struct S_vv4 {
     int f00;
 };
@@ -26,7 +12,7 @@ struct S_vv8 {
     char unknown4[0x1c];
     int f20;
 };
-void operation_8c157290(Object *o)
+void operation_8c157290(ViewParameters *o)
 {
     int v3;
     int v1;
@@ -42,7 +28,7 @@ void operation_8c157290(Object *o)
                 break;
             }
             v8 = (S_vv8 *)*(int *)((char *)((char *)o->f30 + 0x0) + (o->f84 << 2));
-            p = (int *)((char *)o->f90 + (o->f84 << 3));
+            p = (int *)((char *)o->secondary + (o->f84 << 3));
             f = *p;
             if ((f & 2) != 0) {
                 *p = f & v3;

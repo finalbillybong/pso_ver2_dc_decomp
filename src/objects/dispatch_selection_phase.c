@@ -1,7 +1,7 @@
-typedef struct Object {char unknown0[176];int phase;} Object;
-typedef char check_phase[(unsigned long)&((Object *)0)->phase==176 ? 1:-1];
-extern void handler0(Object *),handler1(Object *),handler2(Object *),handler3(Object *),handler4(Object *),handler5(Object *),handler6(Object *),handler7(Object *),handler8(Object *),handler9(Object *),handler10(Object *),handler11(Object *),handler12(Object *),handler13(Object *),handler14(Object *),handler15(Object *),handler16(Object *);
-void dispatch_selection_phase(Object *o) {switch(o->phase) {
+#include "src/include/types/ResourceSelection.h"
+typedef char check_phase[(unsigned long)&((ResourceSelection *)0)->category==176 ? 1:-1];
+extern void handler0(ResourceSelection *),handler1(ResourceSelection *),handler2(ResourceSelection *),handler3(ResourceSelection *),handler4(ResourceSelection *),handler5(ResourceSelection *),handler6(ResourceSelection *),handler7(ResourceSelection *),handler8(ResourceSelection *),handler9(ResourceSelection *),handler10(ResourceSelection *),handler11(ResourceSelection *),handler12(ResourceSelection *),handler13(ResourceSelection *),handler14(ResourceSelection *),handler15(ResourceSelection *),handler16(ResourceSelection *);
+void dispatch_selection_phase(ResourceSelection *o) {switch(o->category) {
 case 0:handler0(o);break;
 case 1:case 2:handler1(o);break;
 case 3:handler2(o);break;

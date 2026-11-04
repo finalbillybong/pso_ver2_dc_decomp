@@ -1,24 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/types/TimerRecord.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
 typedef struct S_c8c051d18 S_c8c051d18;
-typedef struct Object Object;
-typedef struct Arg0_2c Arg0_2c;
-typedef struct Arg0_30 Arg0_30;
-typedef struct Arg0_34 Arg0_34;
+typedef struct TimerRecord_p2c TimerRecord_p2c;
+typedef struct TimerRecord_p30 TimerRecord_p30;
+typedef struct TimerRecord_p34 TimerRecord_p34;
 typedef struct S_vv10 S_vv10;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-    int f24;
-    int f28;
-    Arg0_2c *f2c;
-    Arg0_30 *f30;
-    Arg0_34 *f34;
-};
 struct S_c8c051d18 {
     char f00;
 };
@@ -42,7 +28,7 @@ extern void request_resource_release(void *);
 extern void operator_delete_8c18de08(S_c8c051d18 *);
 extern int operation_8c01d8a8(void *, int);
 extern void operation_8c051d50(void *, void *);
-void operation_8c1e71b8(Object *o)
+void operation_8c1e71b8(TimerRecord *o)
 {
     int c9;
     unsigned int v1;
@@ -90,16 +76,16 @@ L_8c1e722e:;
         memcpy_8c12b77c((void *)((void *)0x8c4e3128), t2, t4);
         v10 = (S_vv10 *)o->f34;
         v10->f04 |= 1;
-        o->f34 = (Arg0_34 *)0;
+        o->f34 = (TimerRecord_p34 *)0;
         if (o->f2c != 0) {
             request_resource_release((void *)(o->f2c));
-            o->f2c = (Arg0_2c *)0;
+            o->f2c = (TimerRecord_p2c *)0;
         }
         if (o->f30 != 0) {
             request_resource_release((void *)(o->f30));
-            o->f30 = (Arg0_30 *)0;
+            o->f30 = (TimerRecord_p30 *)0;
         }
-        o->f24 = 0;
+        o->ticks = 0;
         o->f20 = 4;
 L_8c1e727c:;
         operator_delete_8c18de08(t2);
@@ -118,9 +104,9 @@ L_8c1e72aa:;
             operation_8c051d50((void *)(o->f34), (void *)(((char *)o + 0x40)));
             if (o->f30 != 0) {
                 request_resource_release((void *)(o->f30));
-                o->f30 = (Arg0_30 *)0;
+                o->f30 = (TimerRecord_p30 *)0;
             }
-            o->f24 = 0;
+            o->ticks = 0;
             o->f20 = 6;
         }
     }

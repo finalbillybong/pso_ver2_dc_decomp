@@ -1,26 +1,17 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-};
+#include "src/include/types/TimerRecord.h"
 extern void operation_8c1cc690(void);
-extern void call_8c25b9c8(Object *);
+extern void call_8c25b9c8(TimerRecord *);
 extern void operation_8c25bb38(void *);
-extern void call_8c25bca4(Object *);
+extern void call_8c25bca4(TimerRecord *);
 extern void operation_8c25bda4(void *);
 extern void operation_8c25bf18(void *);
 extern void advance_timer_8c25bf48(void *);
-extern void call_8c25bfac(Object *);
-extern void call_8c25b684(Object *);
+extern void call_8c25bfac(TimerRecord *);
+extern void call_8c25b684(TimerRecord *);
 extern void operation_8c25b8c0(void *);
 extern void operation_8c25c070(void *);
-extern void call_8c25c10c(Object *);
-void operation_8c25b550(Object *o)
+extern void call_8c25c10c(TimerRecord *);
+void operation_8c25b550(TimerRecord *o)
 {
     operation_8c1cc690();
     switch (o->f20) {

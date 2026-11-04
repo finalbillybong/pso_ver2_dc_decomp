@@ -1,20 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
+#include "src/include/types/ViewParameters.h"
+typedef struct ViewParameters_p30 ViewParameters_p30;
 typedef struct Arg0_30_0 Arg0_30_0;
 typedef struct S_vv4 S_vv4;
-struct Object {
-    char unknown0[0x30];
-    Arg0_30 *f30;
-    char unknown34[0xc];
-    float f40;
-    char unknown44[0x42];
-    short f86;
-};
 struct S_vv4 {
     char unknown0[0x8];
     float f08;
@@ -25,15 +12,15 @@ struct S_vv4 {
     int f20;
 };
 extern void call_8c0e2328(S_vv4 *, float);
-void operation_8c157138(Object *o)
+void operation_8c157138(ViewParameters *o)
 {
     float v1;
     S_vv4 *v4;
     unsigned int v3;
     float v2;
-    v1 = (float)o->f40;
+    v1 = (float)o->target2;
     v1 = (float)(v1 - 18.0f);
-    v2 = (float)(o->f40 * 0.5f - 9.0f);
+    v2 = (float)(o->target2 * 0.5f - 9.0f);
     v3 = (unsigned int)0;
     while ((unsigned int)o->f86 > v3) {
         v4 = (S_vv4 *)*(Arg0_30_0 **)((char *)((char *)o->f30 + 0x0) + (v3 << 2));

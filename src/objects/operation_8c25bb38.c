@@ -1,23 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/types/TimerRecord.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
-typedef struct Arg0_2c Arg0_2c;
-typedef struct Arg0_30 Arg0_30;
-typedef struct Arg0_34 Arg0_34;
+typedef struct TimerRecord_p2c TimerRecord_p2c;
+typedef struct TimerRecord_p30 TimerRecord_p30;
+typedef struct TimerRecord_p34 TimerRecord_p34;
 typedef struct S_vv19 S_vv19;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-    int f24;
-    int f28;
-    Arg0_2c *f2c;
-    Arg0_30 *f30;
-    Arg0_34 *f34;
-};
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
@@ -38,7 +24,7 @@ extern void memcpy_8c12b77c(void *, int, int);
 extern void request_resource_release(void *);
 extern void operator_delete_8c18de08(int);
 extern int operation_8c01d8a8(void *, int);
-void operation_8c25bb38(Object *o)
+void operation_8c25bb38(TimerRecord *o)
 {
     int c9;
     unsigned int v2;
@@ -90,7 +76,7 @@ L_8c25bbb0:;
         operation_8c051ce4((void *)(o->f34));
         if (o->f30 != 0) {
             request_resource_release((void *)(o->f30));
-            o->f30 = (Arg0_30 *)0;
+            o->f30 = (TimerRecord_p30 *)0;
         }
         o->f20 = 2;
 L_8c25bbe4:;
@@ -108,16 +94,16 @@ L_8c25bc12:;
             play_se_8c05fbf8(0x50016, 0, 0, 0);
             v19 = (S_vv19 *)o->f34;
             v19->f04 |= 1;
-            o->f34 = (Arg0_34 *)0;
+            o->f34 = (TimerRecord_p34 *)0;
             if (o->f2c != 0) {
                 request_resource_release((void *)(o->f2c));
-                o->f2c = (Arg0_2c *)0;
+                o->f2c = (TimerRecord_p2c *)0;
             }
             if (o->f30 != 0) {
                 request_resource_release((void *)(o->f30));
-                o->f30 = (Arg0_30 *)0;
+                o->f30 = (TimerRecord_p30 *)0;
             }
-            o->f24 = 0;
+            o->ticks = 0;
             o->f20 = 5;
         }
     }

@@ -1,21 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/types/TimerRecord.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
 typedef struct S_g8c340614 S_g8c340614;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-    char unknown24[0x4];
-    int f28;
-    char unknown2c[0x4];
-    Arg0_30 *f30;
-};
-struct Arg0_30 {
+typedef struct TimerRecord_p30 TimerRecord_p30;
+struct TimerRecord_p30 {
     char unknown0[0x80];
     unsigned short f80;
 };
@@ -25,14 +12,14 @@ struct S_L8c41cba0 {
 };
 extern S_L8c41cba0 g_8c41cba0;
 extern void call_8c25ebe0(void);
-extern void call_8c25ecd4(Object *);
+extern void call_8c25ecd4(TimerRecord *);
 extern int operation_8c1571f4(void *);
 extern void call_8c248980(void *);
-extern void call_8c25ec50(Object *);
-extern void call_8c25eb44(Object *);
-extern void call_8c25ed88(Object *);
-extern void call_8c25eb84(Object *);
-void operation_8c25e95c(Object *o)
+extern void call_8c25ec50(TimerRecord *);
+extern void call_8c25eb44(TimerRecord *);
+extern void call_8c25ed88(TimerRecord *);
+extern void call_8c25eb84(TimerRecord *);
+void operation_8c25e95c(TimerRecord *o)
 {
     int v22;
     int v42;

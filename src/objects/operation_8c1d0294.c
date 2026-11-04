@@ -1,17 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x84];
-    short f84;
-    char unknown86[0x12];
-    short f98;
-};
+#include "src/include/types/ViewParameters.h"
 extern void operation_8c1cd89c(void *);
-void operation_8c1d0294(Object *o)
+void operation_8c1d0294(ViewParameters *o)
 {
     short v1;
     v1 = (short)o->f84;

@@ -144,6 +144,25 @@ A type change is a source-only rewrite and has to prove it changed nothing:
 If a header change breaks any unit that already includes the header, fix the header. Never
 change a unit's behaviour to fit the header.
 
+## Record types (non-class shared types)
+
+`src/include/types/<Name>.h` holds shared types for data that isn't a TObject class: dialog,
+view and timer records and the like. `config/record-types.json` names each type, states the
+evidence for it, and lists its units:
+- `units`: a family of matched units that pass the record to each other as their first argument
+  (found by clustering this-passing calls among units with no class attribution);
+- `layout_units`: units whose view of their first argument matches that record header, and no
+  other record or class header, on 3 or more fields.
+
+Record headers are built and converted by the same tool and rules as class headers (`emit` /
+`convert` with the record's name). Headers are only ever extended, a unit stays local on any
+conflict, and every converted unit must be byte-exact. A record has no vtable and no assumed
+size. When two offsets carry the same unit name, the later one gets its offset as a suffix
+(`phase_b8`).
+
+A layout assertion that includes the local view's `sizeof` keeps its offset terms. Only the
+size term goes, and the compile checks the offset terms against the header.
+
 ## Future work
 
 This track covers class objects only. Roughly 6,000 matched units still use per-unit types

@@ -31,6 +31,23 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 from shc_units import is_shc  # noqa: E402  (SHC units take no project headers)
 HEADER_DIR = 'src/include/classes'
+# Non-class shared types (records): config/record-types.json names each type and its units.
+RECORD_DIR = 'src/include/types'
+RECORD_REGISTRY = 'config/record-types.json'
+RECORDS = {}
+
+
+def hdir(name):
+    """Header directory for a class or a record type."""
+    return RECORD_DIR if name in RECORDS else HEADER_DIR
+
+
+def load_records(root=None):
+    path = (root or ROOT) / RECORD_REGISTRY
+    RECORDS.clear()
+    if path.is_file():
+        RECORDS.update(json.loads(path.read_text())['types'])
+    return RECORDS
 # Method suffixes whose first parameter is the object itself (not `create`, a factory).
 THIS_METHODS = re.compile(r'^(?:ctor|dtor|update|render|render_shadow|v\d+)(?:_[0-9a-f]{6})?$')
 SCALARS = {
@@ -328,6 +345,9 @@ def load_classes(root=ROOT):
                      ctors=re.findall(r'0x[0-9a-f]+', cells[3]), dtor=cells[4].strip('`'),
                      parent=cells[5] or None, size=int(size, 16) if size else None)
         classes.setdefault(cells[0], entry)
+    for name, entry in load_records(root).items():
+        classes[name] = dict(name=name, vtable=None, slots=0, ctors=[], dtor=None, parent=None,
+                             size=int(entry['size'], 16) if entry.get('size') else None, record=True)
     return classes
 
 
@@ -392,7 +412,7 @@ def unit_evidence(unit, root=ROOT, names=None):
         agg = info['by_name'].get(tname)
         if tname in info['included']:
             ev['shared'] = tname
-            if not (root / HEADER_DIR / (tname + '.h')).is_file() or agg is None or agg.error:
+            if not (root / hdir(tname) / (tname + '.h')).is_file() or agg is None or agg.error:
                 continue
             # A converted unit: its evidence is the header members its body names.
             used = set(re.findall(r'(?:->|\.)\s*(\w+)', info['body']))
@@ -430,7 +450,7 @@ def unit_evidence(unit, root=ROOT, names=None):
 def scan(root=ROOT):
     manifest = json.loads((root / 'config/project.json').read_text())
     classes = load_classes(root)
-    order = sorted(classes, key=len, reverse=True)
+    order = sorted((c for c in classes if c not in RECORDS), key=len, reverse=True)
     out = []
     for unit in manifest['units']:
         function = unit['functions'][0]['name']
@@ -454,12 +474,12 @@ def family_root(classes, name):
 def header_evidence(name, root=ROOT):
     """An existing class header is evidence too, and it outranks units: once committed, its fields
     are the contract later batches extend (new fields go into its gaps) instead of re-deciding."""
-    path = root / HEADER_DIR / (name + '.h')
+    path = root / hdir(name) / (name + '.h')
     if not path.is_file():
         return None
     ev = dict(id='header:' + name, class_=name, pseudo=True, fields=[], virtuals=[], language='h', problems=[])
     for cplusplus in (False, True):
-        info = parse_unit('#include "%s/%s.h"\n' % (HEADER_DIR, name), '', root, cplusplus)
+        info = parse_unit('#include "%s/%s.h"\n' % (hdir(name), name), '', root, cplusplus)
         agg = info['by_name'].get(name)
         if agg is None or agg.error:
             raise ValueError('Unparsable class header: ' + str(path) + ' ' + str(agg and agg.error))
@@ -569,12 +589,13 @@ def resolve(classes, evidence, name):
     units, views, names, slots = merge(classes, evidence, name)
     chosen, conflicts = {}, []
     c_vptr_names = Counter()
-    for offset in sorted(set(views) | {VPTR}):
+    is_record = name in RECORDS
+    for offset in sorted(set(views) | (set() if is_record else {VPTR})):
         opts = views.get(offset, {})
         merged = defaultdict(list)
         pointer_types = set()
         for key, ids in opts.items():
-            if offset == VPTR and (key[2] == 'vptr' or key[1] == 'void*'):
+            if offset == VPTR and not is_record and (key[2] == 'vptr' or key[1] == 'void*'):
                 merged[(4, '<vptr>', 'vptr', ())].extend(ids)
                 if key[1] == 'void*' and any(i.startswith('header:') for i in ids):
                     for u in units:
@@ -594,7 +615,7 @@ def resolve(classes, evidence, name):
                 conflicts.append(dict(offset=offset, kind='local-aggregate', chosen='', other=key[1], units=sorted(set(ids))))
             else:
                 merged[key].extend(ids)
-        if offset == VPTR:
+        if offset == VPTR and not is_record:
             merged.setdefault((4, '<vptr>', 'vptr', ()), [])
             best = ((4, '<vptr>', 'vptr', ()), merged[(4, '<vptr>', 'vptr', ())])
         elif not merged:
@@ -628,6 +649,11 @@ def resolve(classes, evidence, name):
             fname = c_vptr_names.most_common(1)[0][0] if c_vptr_names else 'vtable'
         else:
             fname = pick_name(names[offset])
+        taken = {f['name'] for f in fields}
+        if fname in taken:
+            # Two offsets with the same unit name (e.g. `first`/`second` of embedded pairs): the
+            # later one gets its offset as a suffix (`second_28`).
+            fname = '%s_%x' % (fname, offset)
         fields.append(dict(offset=offset, size=key[0], type=key[1], kind=key[2], dims=list(key[3]), units=ids, name=fname))
     size = classes.get(name, {}).get('size')
     if size:
@@ -663,7 +689,7 @@ def field_name(field):
 
 
 def guard(name):
-    return 'PSO_CLASSES_' + re.sub(r'\W', '_', name).upper() + '_H'
+    return ('PSO_TYPES_' if name in RECORDS else 'PSO_CLASSES_') + re.sub(r'\W', '_', name).upper() + '_H'
 
 
 CLASSES = {}
@@ -690,8 +716,9 @@ def emit_header(classes, layout_, evidence_by_id=None):
     has_vptr = any(f['kind'] == 'vptr' for f in fields)
     lines = ['#ifndef ' + guard(name), '#define ' + guard(name),
              '/* %s: generated by tools/class_types.py from the field views of %d matched units.' % (name, sum(1 for u in layout_['units'] if not u.get('pseudo') and u.get('method') != 'attributed')),
-             ' * Inheritance: %s. Size 0x%x (constructor size field).' % (' -> '.join(chain) or name, size or 0) if size else
-             ' * Inheritance: %s. Size unknown.' % (' -> '.join(chain) or name),
+             (' * Record type (not a class): %s.' % RECORDS[name]['evidence']) if name in RECORDS else
+             (' * Inheritance: %s. Size 0x%x (constructor size field).' % (' -> '.join(chain) or name, size or 0) if size else
+              ' * Inheritance: %s. Size unknown.' % (' -> '.join(chain) or name)),
              ' * Field names are the units\' names (fXX = offset); gaps are pad_XX. Pointers to objects',
              ' * this header does not describe are opaque `struct %s_pXX`, completed by each unit. */' % name]
     for tname in sorted({f['type'] for f in fields} & set(SHARED_TYPES)):
@@ -865,6 +892,13 @@ def convert_unit(unit, ev, info, layout_, root=ROOT, loose=False):
     size_assert = re.compile(r'^[ \t]*typedef\s+char\s+\w+\s*\[\s*\(?\s*sizeof\s*\(\s*(?:struct\s+)?(?:' + view_alt +
                              r')\s*\)\s*\)?\s*==\s*(?:0x[0-9a-fA-F]+|\d+)\s*\?\s*1\s*:\s*-\s*1\s*\]\s*;[ \t]*\n?', re.M)
     rest = size_assert.sub('', code)
+    # In a combined layout assertion, only the view's own size term goes; its offset terms stay
+    # and are checked against the header by the compile.
+    size_term = re.compile(r'sizeof\s*\(\s*(?:struct\s+)?(?:' + view_alt + r')\s*\)\s*==\s*(?:0x[0-9a-fA-F]+|\d+)\s*&&\s*'
+                           r'|&&\s*sizeof\s*\(\s*(?:struct\s+)?(?:' + view_alt + r')\s*\)\s*==\s*(?:0x[0-9a-fA-F]+|\d+)(?=\s*[?)&])')
+    term_spans = [(m.start(), m.end()) for m in size_term.finditer(rest)] if rest == code else []
+    if term_spans:
+        rest = size_term.sub('', rest)
     if 'sizeof' in info['body'] or re.search(r'sizeof\s*\(\s*(?:struct\s+)?(?:' + view_alt + r')\s*\)', rest):
         return None, 'sizeof of the local view'
     dropped_asserts = [(m.start(), m.end()) for m in size_assert.finditer(code)]
@@ -917,6 +951,7 @@ def convert_unit(unit, ev, info, layout_, root=ROOT, loose=False):
         if tname not in [a.name for a in info['aggregates']] and SHARED_TYPES[tname] not in unit.get('headers', []):
             pass
     spans += dropped_asserts
+    spans += term_spans
     spans.sort()
     pieces, last = [], 0
     for s, e in spans:
@@ -939,7 +974,7 @@ def convert_unit(unit, ev, info, layout_, root=ROOT, loose=False):
         new = re.sub(r'\b' + param + r'\s*->\s*' + re.escape(vmember) + r'\b', 'TOBJECT_VTABLE(%s)' % info['this']['name'], new)
         if re.search(r'(->|\.)\s*' + re.escape(vmember) + r'\b', strip_comments(new)):
             return None, 'vtable member used other than through the object'
-    include = '#include "%s/%s.h"\n' % (HEADER_DIR, cls)
+    include = '#include "%s/%s.h"\n' % (hdir(cls), cls)
     if vmember:
         include = '#include "%s"\n' % VTABLE_HEADER + include
     headers = list(unit.get('headers', []))
@@ -952,7 +987,7 @@ def convert_unit(unit, ev, info, layout_, root=ROOT, loose=False):
     lines.insert(pos, include.rstrip('\n'))
     new = '\n'.join(lines)
     removed = text.count('\n') - new.count('\n')
-    header = '%s/%s.h' % (HEADER_DIR, cls)
+    header = '%s/%s.h' % (hdir(cls), cls)
     if vmember:
         extra_headers.append(VTABLE_HEADER)
     for h in extra_headers + [header]:
@@ -1016,6 +1051,22 @@ def load_attributed(path):
     return out
 
 
+def load_record_units(root=None):
+    """Evidence of the units config/record-types.json assigns to each record type."""
+    root = root or ROOT
+    if not RECORDS:
+        return []
+    manifest = json.loads((root / 'config/project.json').read_text())
+    units = {u['id']: u for u in manifest['units']}
+    out = []
+    for name, entry in sorted(RECORDS.items()):
+        for uid in entry['units'] + entry.get('layout_units', []):
+            ev, _ = unit_evidence(units[uid], root)
+            ev['class'], ev['method'] = name, 'record'
+            out.append(ev)
+    return out
+
+
 def additive(old_text, new_text, name):
     """A re-emitted header may only fill gaps: every existing field and slot signature stays."""
     with_dir = lambda text: text
@@ -1073,12 +1124,14 @@ def keep_new_field(classes, name, f, path):
 
 def cmd_emit(args):
     classes, evidence = scan()
-    evidence += load_attributed(args.attribution)
+    evidence += load_attributed(args.attribution) + load_record_units()
     args.classes = expand(classes, args.classes)
     (ROOT / HEADER_DIR).mkdir(parents=True, exist_ok=True)
+    if RECORDS:
+        (ROOT / RECORD_DIR).mkdir(parents=True, exist_ok=True)
     for n in sorted(args.classes, key=lambda c: len(ancestors(classes, c))):
         lay = resolve(classes, evidence, n)
-        path = ROOT / HEADER_DIR / (n + '.h')
+        path = ROOT / hdir(n) / (n + '.h')
         lay['fields'] = [f for f in lay['fields'] if keep_new_field(classes, n, f, path)]
         if not path.is_file():
             # A new base header names the C vtable member as its subclasses' headers do.
@@ -1113,7 +1166,7 @@ def cmd_convert(args):
     results = []
     # Units attributed to a class by other evidence than their name (vtable slot, constructor,
     # callers, layout); see docs/TYPES.md.
-    evidence += load_attributed(args.attribution)
+    evidence += load_attributed(args.attribution) + load_record_units()
     for n in args.classes:
         lay = resolve(classes, evidence, n)
         for ev in lay['units']:
@@ -1139,7 +1192,7 @@ def cmd_convert(args):
             if ev['problems']:
                 results.append((ev['id'], n, 'parse: ' + '; '.join(ev['problems'])))
                 continue
-            if not (ROOT / HEADER_DIR / (n + '.h')).is_file():
+            if not (ROOT / hdir(n) / (n + '.h')).is_file():
                 results.append((ev['id'], n, 'no header for the class (run emit first)'))
                 continue
             _, info = unit_evidence(unit)
@@ -1177,10 +1230,11 @@ def check(root=ROOT):
     classes = load_classes(root)
     manifest = json.loads((root / 'config/project.json').read_text())
     headers = sorted((root / HEADER_DIR).glob('*.h')) if (root / HEADER_DIR).is_dir() else []
+    headers += sorted((root / RECORD_DIR).glob('*.h')) if (root / RECORD_DIR).is_dir() else []
     users = Counter()
     for unit in manifest['units']:
         text = (root / unit['source']).read_text()
-        for inc in re.findall(r'^\s*#\s*include\s+"(%s/[^"]+)"' % re.escape(HEADER_DIR), text, re.M):
+        for inc in re.findall(r'^\s*#\s*include\s+"((?:%s|%s)/[^"]+)"' % (re.escape(HEADER_DIR), re.escape(RECORD_DIR)), text, re.M):
             users[inc] += 1
             if inc not in unit.get('headers', []):
                 problems.append('%s includes undeclared %s' % (unit['id'], inc))
@@ -1207,7 +1261,7 @@ def check(root=ROOT):
         text = path.read_text()
         if size and 'sizeof(%s) == 0x%x ?' % (name, size) not in text:
             problems.append('%s: size check is not 0x%x' % (path.name, size))
-        if not users['%s/%s' % (HEADER_DIR, path.name)]:
+        if not users['%s/%s' % (hdir(name), path.name)]:
             problems.append('%s: included by no unit' % path.name)
         for base in ancestors(classes, name)[1:]:
             if base == ROOT_CLASS:

@@ -1,25 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
+#include "src/include/types/ViewParameters.h"
+typedef struct ViewParameters_p30 ViewParameters_p30;
 typedef struct Arg0_30_0 Arg0_30_0;
-struct Object {
-    char unknown0[0x30];
-    Arg0_30 *f30;
-    char unknown34[0x50];
-    short f84;
-    short f86;
-};
 struct Arg0_30_0 {
     int f00;
 };
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c19f998(void *);
 extern void operation_8c19f980(void *);
-void operation_8c1cd89c(Object *o)
+void operation_8c1cd89c(ViewParameters *o)
 {
     int v1;
     if ((((*(Arg0_30_0 **)((char *)((char *)o->f30 + 0x0) + (o->f84 << 2)))->f00 & 0x80)) == 0) {

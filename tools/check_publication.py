@@ -7,7 +7,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = {'analysis.json', 'asm.json', 'assets.json', 'extracts.json', 'compiler-packages.json', 'data.json', 'decoded.json',
-          'local.example.json', 'matching-packages.json', 'class-attribution.json', 'names.json', 'nonmatching.json', 'progress-proof.json',
+          'local.example.json', 'matching-packages.json', 'class-attribution.json', 'record-types.json', 'names.json', 'nonmatching.json', 'progress-proof.json',
           'project.json', 'reconstruction-targets.json', 'reference.json',
           'samples.json', 'toolchain.example.json'}
 TOP = {'.gitignore', '.gitattributes', 'README.md', 'CONTRIBUTING.md', 'NOTICE.md',

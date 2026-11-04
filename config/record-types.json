@@ -1,0 +1,84 @@
+{
+ "description": "Non-class shared record types (src/include/types/): each type, the evidence for it, the units that pass it to each other as their first argument (units) and the units whose view of their first argument matches this record header and no other record or class header on 3+ fields (layout_units); see docs/TYPES.md.",
+ "types": {
+  "ResourceSelection": {
+   "evidence": "the selection-dialog record of the resource/selection helpers (apply_, choose_, commit_, confirm_, copy_, finalize_, poll_, refresh_, resume_resource_selection, config/names.json); units pass it to each other as their first argument",
+   "units": [
+    "apply_resource_selection_8c214130",
+    "apply_resource_selection_8c2144e8",
+    "choose_resource_selection_kind",
+    "commit_resource_selection",
+    "confirm_resource_selection",
+    "copy_resource_selection",
+    "dispatch_selection_phase",
+    "finalize_resource_selection_8c214d20",
+    "poll_resource_selection",
+    "refresh_resource_selection",
+    "release_resource_member_arrays",
+    "resume_resource_selection_8c214848",
+    "resume_resource_selection_8c21499c",
+    "resume_resource_selection_8c214af0",
+    "transition_resource_selection_8c214090",
+    "transition_resource_selection_8c21420c",
+    "transition_resource_selection_8c2145c8",
+    "transition_resource_selection_8c214628",
+    "update_resource_selection",
+    "update_resource_selection_8c21475c",
+    "update_script_menu_selection",
+    "update_selection_record_view"
+   ]
+  },
+  "TimerRecord": {
+   "evidence": "the timer record of advance_timer_8c25bf48 (ticks at +0x24, kind at +0x38); units pass it to each other as their first argument",
+   "layout_units": [
+    "operation_8c1e6a58",
+    "operation_8c1e71b8",
+    "operation_8c25b640",
+    "operation_8c25e95c"
+   ],
+   "units": [
+    "advance_timer_8c25bf48",
+    "operation_8c25b550",
+    "operation_8c25b8c0",
+    "operation_8c25bb38",
+    "operation_8c25bda4",
+    "operation_8c25bf18",
+    "operation_8c25c070"
+   ]
+  },
+  "ViewParameters": {
+   "evidence": "the interpolated view-parameter record of interpolate_view_parameters (target0-3 / current0-3 / steps / elapsed); units pass it to each other as their first argument",
+   "layout_units": [
+    "draw_view_transition_if_active",
+    "operation_8c157138",
+    "operation_8c157290",
+    "operation_8c1cd168",
+    "operation_8c1dc160",
+    "operation_8c1dc2b8",
+    "operation_8c1dc324"
+   ],
+   "units": [
+    "interpolate_view_parameters",
+    "operation_8c1ccdc8",
+    "operation_8c1cd1a8",
+    "operation_8c1cd480",
+    "operation_8c1cd4ec",
+    "operation_8c1cd558",
+    "operation_8c1cd5ec",
+    "operation_8c1cd89c",
+    "operation_8c1cffdc",
+    "operation_8c1d0294",
+    "operation_8c21dd38",
+    "operation_8c21e000",
+    "operation_8c21e060",
+    "operation_8c21e250",
+    "operation_8c225b2c",
+    "operation_8c225b70",
+    "operation_8c225c2c",
+    "position_menu_label_8c1cd224",
+    "update_grid_view_parameters",
+    "update_view_nodes"
+   ]
+  }
+ }
+}

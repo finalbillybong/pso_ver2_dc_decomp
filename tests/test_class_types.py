@@ -280,6 +280,23 @@ class RootClassTests(unittest.TestCase):
         self.assertEqual({f['offset']: f['name'] for f in lay['fields']}[0x18], 'vtable')
 
 
+class RecordTypeTests(unittest.TestCase):
+    def test_record_type_has_no_vtable_and_lives_in_types(self):
+        ct.RECORDS['RFoo'] = {'evidence': 'test', 'units': []}
+        try:
+            classes = {'RFoo': dict(name='RFoo', parent=None, size=None, slots=0, record=True)}
+            a, _ = evidence(C_UNIT.replace('void *dispatch', 'int f18'), 'TFoo_v17_8c000000', 'RFoo', uid='a')
+            lay = ct.resolve(classes, [a], 'RFoo')
+            self.assertNotIn('vptr', [f['kind'] for f in lay['fields']])
+            header = ct.emit_header(classes, lay)
+            self.assertIn('Record type (not a class): test.', header)
+            self.assertNotIn('__cplusplus', header)
+            self.assertIn('int f18;', header)
+            self.assertEqual(ct.hdir('RFoo'), ct.RECORD_DIR)
+        finally:
+            del ct.RECORDS['RFoo']
+
+
 class RenameTests(unittest.TestCase):
     classes = MergeTests.classes
 
