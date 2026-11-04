@@ -1,21 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1e];
-    float f24;
-    char unknown28[0x18];
-    int f40;
-    int f44;
-    int f48;
-    int f4c;
-};
-void TFontSmallTask_update_8c0ee608(Object *o)
+#include "src/include/classes/TFontSmallTask.h"
+void TFontSmallTask_update_8c0ee608(TFontSmallTask *o)
 {
     int v1;
     switch (o->f4c) {

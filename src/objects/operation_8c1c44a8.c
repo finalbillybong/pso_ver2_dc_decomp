@@ -1,23 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjRaderHideCol.h"
 typedef struct S_g8c418248 S_g8c418248;
 typedef struct S_g8c4d59d8 S_g8c4d59d8;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x94];
-    float f94;
-    int f98;
-};
 struct S_g8c4d59d8 {
     char unknown0[0x4];
     short f04;
 };
 extern int lookup_low_id(int);
 extern float squared_distance_xyz(void *, void *);
-void TObjRaderHideCol_update_8c1c44a8(Object *o)
+void TObjRaderHideCol_update_8c1c44a8(TObjRaderHideCol *o)
 {
     int t1;
     float t2;

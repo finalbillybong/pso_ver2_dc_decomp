@@ -1,18 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xe4];
-    int fe4;
-    char unknowne8[0x20];
-    int f108;
-};
+#include "src/include/classes/TObjDoaEx01.h"
 extern int operation_8c0eea7c(int, float);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void TObjDoaEx01_v19_8c24b3ec(Object *o)
+void TObjDoaEx01_v19_8c24b3ec(TObjDoaEx01 *o)
 {
     int t1;
     if ((o->f108 & 1) == 1) {

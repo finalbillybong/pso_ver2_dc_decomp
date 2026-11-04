@@ -1,24 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObjBoss1MokoHill_SoloM.h"
 typedef struct Arg2 Arg2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    Vector3 f24;
-    float f30;
-    float f34;
-    float f38;
-    int f3c;
-    int f40;
-};
 struct Arg2 {
     Vector3 f00;
 };
@@ -27,13 +8,13 @@ extern Arg2 *g_8c46fa68;
 extern int g_8c46fa6c;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c05bbf8(void);
-Object *TObjBoss1MokoHill_SoloM_ctor_8c0cccd8(Object *o, int a1, Arg2 *a2, int a3)
+TObjBoss1MokoHill_SoloM *TObjBoss1MokoHill_SoloM_ctor_8c0cccd8(TObjBoss1MokoHill_SoloM *o, int a1, Arg2 *a2, int a3)
 {
-    Object **home = &o;
+    TObjBoss1MokoHill_SoloM **home = &o;
     int t1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c266d20;
+    o->vtable = (void *)0x8c266d20;
     o->tag = (int)(g_8c3069ac);
     o->size = 0x44;
     o->f20 = 0;

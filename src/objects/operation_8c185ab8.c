@@ -1,41 +1,18 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_44 Arg0_44;
-struct Object {
-    int tag;
-    short f04;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-    int f28;
-    float f2c;
-    float f30;
-    float f34;
-    float f38;
-    float f3c;
-    float f40;
-    Arg0_44 *f44;
-};
+#include "src/include/classes/TBoss2LaserLight.h"
+typedef struct TBoss2LaserLight_p44 TBoss2LaserLight_p44;
 extern int g_8c319a68;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c014d00(int);
 extern void operation_8c014f28(void *);
 extern void call_8c014f34(void *, void *);
 extern void copy_pair_8c014f10(void *, void *);
-Object *TBoss2LaserLight_ctor_8c185ab8(Object *o, int a1, int a2)
+TBoss2LaserLight *TBoss2LaserLight_ctor_8c185ab8(TBoss2LaserLight *o, int a1, int a2)
 {
-    Object **home = &o;
+    TBoss2LaserLight **home = &o;
     int t1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c272090;
+    o->vtable = (void *)0x8c272090;
     o->tag = (int)(g_8c319a68);
     o->size = 0x48;
     o->f20 = a2;
@@ -48,7 +25,7 @@ Object *TBoss2LaserLight_ctor_8c185ab8(Object *o, int a1, int a2)
     o->f3c = 0.0f;
     o->f40 = 0.0f;
     t1 = call_8c014d00(0);
-    o->f44 = (Arg0_44 *)t1;
+    o->f44 = (TBoss2LaserLight_p44 *)t1;
     if (o->f44 == 0) {
         o->f04 |= 1;
         return o;

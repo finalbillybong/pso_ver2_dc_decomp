@@ -1,28 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TPlyPKEditor.h"
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x3e];
-    char f3e;
-    char f3f;
-    char f40;
-    char f41;
-    char f42;
-    char f43;
-    char f44;
-    char f45;
-    char f46;
-    char f47;
-    char f48;
-    char f49;
-    char f4a;
-    char f4b;
-    char f4c;
-};
 extern void store_bounded_8c2390e0(void *, unsigned char);
 extern void store_bounded3_8c2390f0(void *, unsigned char);
 extern void store_bounded_8c239100(void *, unsigned char);
@@ -40,7 +17,7 @@ extern void operation_8c2391d0(void *, int);
 extern void operation_8c2391b0(void *, char);
 extern int lookup_low_id(int);
 extern void call_8c02b2d8(void);
-void TPlyPKEditor_v07_8c234a0c(Object *o)
+void TPlyPKEditor_v07_8c234a0c(TPlyPKEditor *o)
 {
     int t1;
     store_bounded_8c2390e0((void *)((void *)0x8c41ce5c), (unsigned char)(o->f3e));

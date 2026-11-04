@@ -1,21 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemMag.h"
 typedef struct Arg0_0 Arg0_0;
 typedef struct Arg0_0_s510 Arg0_0_s510;
 typedef struct S_x15888_0 S_x15888_0;
 class S_vv6;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0xb4];
-    int fec;
-    char unknownf0[0x4c];
-    int f13c;
-};
 struct Arg0_0_s510 {
     char unknown0[0x4];
     int f04;
@@ -36,7 +23,7 @@ typedef struct S_vv6Data {
 } S_vv6Data;
 extern "C" void njPushMatrixEx_8c38ae68(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void TItemMag_v26_8c07d4e0(Object *o)
+extern "C" void TItemMag_v26_8c07d4e0(TItemMag *o)
 {
     S_vv6 *v6;
     int v4;

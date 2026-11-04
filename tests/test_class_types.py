@@ -169,6 +169,59 @@ class FunctionPointerTests(unittest.TestCase):
         self.assertEqual({m['name']: m['offset'] for m in agg.members}['callback'], 0x108)
 
 
+CPP_CTOR = '''class Object {
+public:
+    char unknown0[0x18];
+    virtual void v0();
+};
+typedef struct ObjectData {
+    char unknown0[0x18];
+    void *dispatch;
+    char unknown1c[0x54];
+    float f70;
+} ObjectData;
+extern "C" Object *TFoo_ctor_8c000008(Object *o)
+{
+    ((ObjectData *)o)->dispatch = (void *)0x8c260000;
+    ((ObjectData *)o)->f70 = 0.0f;
+    return o;
+}
+'''
+
+
+class ConstructorAndLooseTests(unittest.TestCase):
+    classes = MergeTests.classes
+
+    def test_cpp_constructor_stores_vtable_through_macro(self):
+        a, _ = evidence(C_UNIT, 'TFoo_v17_8c000000', 'TFoo', uid='a')
+        b, _ = evidence(CPP_UNIT, 'TFoo_render_8c000004', 'TFoo', 'c++', uid='b')
+        ctor, _ = evidence(CPP_CTOR, 'TFoo_ctor_8c000008', 'TFoo', 'c++', uid='ctor')
+        lay = ct.resolve(self.classes, [a, b, ctor], 'TFoo')
+        self.assertFalse(ct.compatible(ctor, lay)[0])
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / 'unit.cpp').write_text(CPP_CTOR)
+            unit = {'id': 'ctor', 'source': 'unit.cpp', 'language': 'c++', 'functions': [{'name': 'TFoo_ctor_8c000008'}]}
+            _, info = ct.unit_evidence(unit, root)
+            res, why = ct.convert_unit(unit, ctor, info, lay, root)
+        self.assertEqual(why, '')
+        self.assertIn('TOBJECT_VTABLE(o) = (void *)0x8c260000;', res['text'])
+        self.assertIn('o->f70 = 0.0f;', res['text'])
+        self.assertTrue(res['text'].startswith('#include "src/include/object_vtable.h"\n'))
+        self.assertIn(ct.VTABLE_HEADER, res['headers'])
+
+    def test_pointer_against_int_only_in_loose_mode(self):
+        ptr = C_UNIT.replace('int f108;', 'struct Node *f108;')
+        a, _ = evidence(ptr, 'TFoo_v17_8c000000', 'TFoo', uid='a')
+        b, _ = evidence(ptr, 'TFoo_v17_8c000000', 'TFoo', uid='b')
+        c, _ = evidence(C_UNIT, 'TFoo_v17_8c000000', 'TFoo', uid='c')
+        lay = ct.resolve(self.classes, [a, b, c], 'TFoo')
+        self.assertFalse(ct.compatible(c, lay, {}, {})[0])
+        extras = {'loose': []}
+        self.assertTrue(ct.compatible(c, lay, {}, extras)[0])
+        self.assertEqual(extras['loose'], [0x108])
+
+
 class RenameTests(unittest.TestCase):
     classes = MergeTests.classes
 

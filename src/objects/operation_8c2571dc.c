@@ -1,24 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjHexLine.h"
 typedef struct SBlock4 {
     short halves[2];
 } SBlock4;
 typedef struct Frame Frame;
-typedef struct Object Object;
 typedef struct Arg2 Arg2;
 typedef struct S_vv12 S_vv12;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x80];
-    float fa0;
-};
 struct Frame {
     char f00;
     char unknown1[0x1];
@@ -35,14 +21,14 @@ extern int g_8c33ffb4;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c18e8a0(int, int);
 typedef struct Pair { short a; short b; } Pair;
-Object *TObjHexLine_ctor_8c2571dc(Object *o, int a1, Pair *a2)
+TObjHexLine *TObjHexLine_ctor_8c2571dc(TObjHexLine *o, int a1, Pair *a2)
 {
     Pair frame;
     int v1;
     int v10;
     int v11;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c28186c;
+    o->vtable = (void *)0x8c28186c;
     o->tag = (int)(g_8c33ffb4);
     o->size = 0xa4;
     frame = *a2;

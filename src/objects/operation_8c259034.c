@@ -1,28 +1,17 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOSwitchAttackSub.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_24 Arg0_24;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x8];
-    Arg0_24 *f24;
-};
-struct Arg0_24 {
+typedef struct TOSwitchAttackSub_p24 TOSwitchAttackSub_p24;
+struct TOSwitchAttackSub_p24 {
     char unknown0[0x4];
     short f04;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TOSwitchAttackSub_dtor_8c259034(Object *o, int a1)
+extern void call_8c122774(void *, TOSwitchAttackSub *);
+TOSwitchAttackSub *TOSwitchAttackSub_dtor_8c259034(TOSwitchAttackSub *o, int a1)
 {
     if (o != 0) {
-        o->dispatch = (void *)0x8c281a7c;
+        o->vtable = (void *)0x8c281a7c;
         if (o->f24 != 0) {
             o->f24->f04 |= 1;
         }

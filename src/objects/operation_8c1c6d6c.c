@@ -1,20 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x70];
-    float f70;
-    char unknown74[0x30];
-    char fa4;
-    char unknowna5[0x1];
-    char fa6;
-    char fa7;
-};
-extern void call_8c1c6dc4(Object *, int);
-void TOSparkMachine01_update_8c1c6d6c(Object *o)
+#include "src/include/classes/TOSparkMachine01.h"
+extern void call_8c1c6dc4(TOSparkMachine01 *, int);
+void TOSparkMachine01_update_8c1c6d6c(TOSparkMachine01 *o)
 {
     int v1;
     if (o->f70 > 0.0f) {

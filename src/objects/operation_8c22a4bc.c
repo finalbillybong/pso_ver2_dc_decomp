@@ -1,21 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0xe2];
-    int fe8;
-    float fec;
-};
+#include "src/include/classes/TObjDFDemo5.h"
 extern char g_8c338118[];
-extern void call_8c22a75c(Object *);
+extern void call_8c22a75c(TObjDFDemo5 *);
 extern void game_ADXT_StartFname_wrapper_8c1005bc(int);
 extern void operation_8c191504(int);
-void TObjDFDemo5_update_8c22a4bc(Object *o)
+void TObjDFDemo5_update_8c22a4bc(TObjDFDemo5 *o)
 {
     call_8c22a75c(o);
     if (o->fe8 == 0x8c) {

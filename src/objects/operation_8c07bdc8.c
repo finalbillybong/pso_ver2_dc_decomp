@@ -1,25 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TBoss1DragonEffBullet.h"
 typedef struct Arg2 Arg2;
 typedef struct Arg3 Arg3;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    Vector3 f20;
-    Vector3 f2c;
-    int f38;
-    int f3c;
-    float f40;
-    float f44;
-    int f48;
-};
 struct Arg2 {
     Vector3 f00;
 };
@@ -30,13 +11,13 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern float normalize_vector_checked(void *);
 extern void play_se_8c05fbf8(int, void *, int, int);
-Object *TBoss1DragonEffBullet_ctor_8c07bdc8(Object *o, int a1, Arg2 *a2, Arg3 *a3)
+TBoss1DragonEffBullet *TBoss1DragonEffBullet_ctor_8c07bdc8(TBoss1DragonEffBullet *o, int a1, Arg2 *a2, Arg3 *a3)
 {
-    Object **home = &o;
+    TBoss1DragonEffBullet **home = &o;
     float t1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c26412c;
+    o->vtable = (void *)0x8c26412c;
     o->tag = (int)(*(int *)0x8c2fe7d0);
     o->size = 0x4c;
     o->f20 = a2->f00;

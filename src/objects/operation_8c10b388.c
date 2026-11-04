@@ -1,18 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TShopGenerator.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
 typedef struct S_x68400 S_x68400;
-struct Object {
-    char unknown0[0x88];
-    int f88;
-    char unknown8c[0xc];
-    int f98;
-};
 struct S_x68400 {
     char unknown0[0xc];
     int f0c;
@@ -34,8 +23,8 @@ extern int bu_check_busy_8c372d98(int);
 extern int player_flag9_8c026508(void);
 extern int player_flag13_8c02935c(void);
 extern int lookup_low_id(int);
-extern int TOBarrierEnergy01_ctor_8c10b490(Object *, int, float);
-void TShopGenerator_update_8c10b388(Object *o)
+extern int TOBarrierEnergy01_ctor_8c10b490(TShopGenerator *, int, float);
+void TShopGenerator_update_8c10b388(TShopGenerator *o)
 {
     S_x68400 *p;
     int t1;

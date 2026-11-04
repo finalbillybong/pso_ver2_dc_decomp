@@ -1,17 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/object_vtable.h"
+#include "src/include/classes/TCameraCtrl.h"
 typedef struct S_L8c46efc8 S_L8c46efc8;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct S_vv2_0 S_vv2_0;
 class S_vv3;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 struct S_L8c46efc8 {
     char unknown0[0x4];
     int f04;
@@ -28,14 +20,14 @@ extern int g_8c46ee80;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c46efc8 g_8c46efc8;
 extern "C" void TObject_dtor_8c03311c(void *, short);
-extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *TCameraCtrl_dtor_8c0a1784(Object *o, int a1)
+extern "C" void call_8c122774(void *, TCameraCtrl *);
+extern "C" TCameraCtrl *TCameraCtrl_dtor_8c0a1784(TCameraCtrl *o, int a1)
 {
     int v1;
     int v2;
     S_vv3 *v3;
     if (o != 0) {
-        o->dispatch = (void *)(void *)0x8c265ad4;
+        TOBJECT_VTABLE(o) = (void *)(void *)0x8c265ad4;
         g_8c46ee80 = 0;
         v1 = (int)0;
         while (0xb > v1) {

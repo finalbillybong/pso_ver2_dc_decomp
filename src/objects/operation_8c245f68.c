@@ -1,23 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TEffStarLight2D.h"
 typedef struct S_vv3 S_vv3;
 typedef struct S_vv3_c S_vv3_c;
-struct Object {
-    char unknown0[0x14];
-    int f14;
-};
 struct S_vv3 {
     char unknown0[0xc];
     S_vv3_c *f0c;
 };
 extern int hierarchy_is_active(void *);
-extern void call_8c245fdc(Object *, void *, void *, int, int, int);
+extern void call_8c245fdc(TEffStarLight2D *, void *, void *, int, int, int);
 extern void restore_child_blend(void);
-void TEffStarLight2D_render_8c245f68(Object *o)
+void TEffStarLight2D_render_8c245f68(TEffStarLight2D *o)
 {
     int v2;
     int v7;

@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x8c];
-    int f8c;
-};
+#include "src/include/classes/TObjFogCollision.h"
 extern char g_8c312e90[];
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void TObjFogCollision_v15_8c1368e4(Object *o)
+void TObjFogCollision_v15_8c1368e4(TObjFogCollision *o)
 {
     debug_print_at_8c38cf80(0x13001a, (void *)((g_8c312e90 + 0x58)));
     debug_print_at_8c38cf80(0x13001e, (void *)((g_8c312e90 + 0x5c)));

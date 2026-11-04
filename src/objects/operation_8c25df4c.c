@@ -1,21 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    int f20;
-    char unknown24[0x4];
-    int f28;
-    int f2c;
-    int f30;
-    int f34;
-};
-void TDLGraph_update_8c25df4c(Object *o)
+#include "src/include/classes/TDLGraph.h"
+void TDLGraph_update_8c25df4c(TDLGraph *o)
 {
     char *v11;
     int v1;

@@ -1,24 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    void *f20;
-    int f24;
-    int f28;
-};
+#include "src/include/classes/TObjBs4CutAtk.h"
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TObjBs4CutAtk_ctor_8c1b71f4(Object *o, int a1, int a2, int a3)
+TObjBs4CutAtk *TObjBs4CutAtk_ctor_8c1b71f4(TObjBs4CutAtk *o, int a1, int a2, int a3)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c27507c;
+    o->vtable = (void *)0x8c27507c;
     o->tag = (int)(*(int *)0x8c327528);
     o->size = 0x2c;
     if (a3 == 0) {

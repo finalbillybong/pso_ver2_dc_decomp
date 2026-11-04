@@ -1,23 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObjDFDemoF.h"
 typedef struct Arg0_98 Arg0_98;
 typedef struct Arg0_a4 Arg0_a4;
 typedef struct Arg0_b0 Arg0_b0;
-struct Object {
-    char unknown0[0xbc];
-    float fbc;
-};
 extern void njPushMatrixEx_8c38ae68(void);
 extern void translate_current_matrix_v_8c382a40(void *);
 extern void call_8c3827d8(void *);
 extern void call_8c3aa716(void *, void *);
 extern void draw_tree_a702(void *, void *, float);
 extern void njPopMatrixEx_8c38ad10(void);
-void TObjDFDemoF_render_8c22b758(Object *o)
+void TObjDFDemoF_render_8c22b758(TObjDFDemoF *o)
 {
     int v1;
     int v2;

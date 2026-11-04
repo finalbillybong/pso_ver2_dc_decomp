@@ -1,29 +1,17 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/THunterGuildSeqOnline_Client.h"
 typedef struct S_g8c44be84 S_g8c44be84;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x2e];
-    int f34;
-    int f38;
-};
 extern S_g8c44be84 *g_8c44be84;
 extern int g_8c4d7ca0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int hierarchy_is_active(void *);
 extern int operation_8c220ce0(void);
-extern int operation_8c106760(Object *);
-extern int operation_8c106798(Object *);
+extern int operation_8c106760(THunterGuildSeqOnline_Client *);
+extern int operation_8c106798(THunterGuildSeqOnline_Client *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
 extern void TShopSequence_v07_8c10664c(void *);
-void THunterGuildSeqOnline_Client_v07_8c2092bc(Object *o)
+void THunterGuildSeqOnline_Client_v07_8c2092bc(THunterGuildSeqOnline_Client *o)
 {
     char *v30;
     int t1;

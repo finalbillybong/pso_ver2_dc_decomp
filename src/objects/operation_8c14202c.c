@@ -1,41 +1,12 @@
+#include "src/include/classes/TBoss2Tentacle.h"
 typedef struct Vector3 {
     float x;
     float y;
     float z;
 } Vector3;
 typedef struct S_g8c4d9ea4 S_g8c4d9ea4;
-typedef struct Object Object;
 typedef struct S_x95536 S_x95536;
 typedef struct S_x96144 S_x96144;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-    int f28;
-    char unknown2c[0x4];
-    int f30;
-    char unknown34[0xe0];
-    int f114;
-    float f118;
-    float f11c;
-    int f120;
-    int f124;
-    int f128;
-    int f12c;
-    float f130;
-    float f134;
-    float f138;
-    float f13c;
-    float f140;
-    char unknown144[0xc];
-    int f150;
-    char unknown154[0x4];
-    int f158;
-};
 struct S_x95536 {
     Vector3 f00;
 };
@@ -51,16 +22,16 @@ extern S_g8c4d9ea4 *g_8c4d9ea4;
 extern char g_8c4da184[];
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int call_8c12b944(void);
-Object *TBoss2Tentacle_ctor_8c14202c(Object *o, int a1, int a2, int a3)
+TBoss2Tentacle *TBoss2Tentacle_ctor_8c14202c(TBoss2Tentacle *o, int a1, int a2, int a3)
 {
-    Object **home = &o;
+    TBoss2Tentacle **home = &o;
     int v1;
     int t2;
     char *t3;
     int v2;
     char *t4;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c26df40;
+    o->vtable = (void *)0x8c26df40;
     v1 = 0;
     o->tag = (g_8c314a38);
     o->size = (short)0x15c;

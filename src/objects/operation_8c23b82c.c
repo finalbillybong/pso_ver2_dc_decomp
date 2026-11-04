@@ -1,18 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemWpnDevilCane.h"
 typedef struct Arg0_23c Arg0_23c;
-struct Object {
-    char unknown0[0x23c];
-    Arg0_23c *f23c;
-};
 extern int g_8c4689f0;
 extern void njRotateY_8c37df90(int, void *);
 extern void operation_8c074ce4(void);
-void TItemWpnDevilCane_v57_8c23b82c(Object *o)
+void TItemWpnDevilCane_v57_8c23b82c(TItemWpnDevilCane *o)
 {
     switch (g_8c4689f0) {
     case 1:

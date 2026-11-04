@@ -1,15 +1,15 @@
 #include "src/include/vector3.h"
-typedef struct View {char unknown0[4];unsigned short flags;char unknown6[10];void *parent;char unknown20[24];int ticks;void *child;int state;unsigned short identifier;char unknown58[2];Vector3 position;} View;
+#include "src/include/classes/TObjDFRecover.h"
 typedef struct Actor {char unknown0[804];Vector3 position;} Actor;
-typedef char check_parent[(unsigned long)&((View *)0)->parent==16?1:-1];
-typedef char check_ticks[(unsigned long)&((View *)0)->ticks==44?1:-1];
-typedef char check_child[(unsigned long)&((View *)0)->child==48?1:-1];
-typedef char check_state[(unsigned long)&((View *)0)->state==52?1:-1];
-typedef char check_identifier[(unsigned long)&((View *)0)->identifier==56?1:-1];
-typedef char check_position[(unsigned long)&((View *)0)->position==60?1:-1];
+typedef char check_parent[(unsigned long)&((TObjDFRecover *)0)->parent==16?1:-1];
+typedef char check_ticks[(unsigned long)&((TObjDFRecover *)0)->ticks==44?1:-1];
+typedef char check_child[(unsigned long)&((TObjDFRecover *)0)->child==48?1:-1];
+typedef char check_state[(unsigned long)&((TObjDFRecover *)0)->state==52?1:-1];
+typedef char check_identifier[(unsigned long)&((TObjDFRecover *)0)->identifier==56?1:-1];
+typedef char check_position[(unsigned long)&((TObjDFRecover *)0)->position==60?1:-1];
 typedef char check_actor_position[(unsigned long)&((Actor *)0)->position==804?1:-1];
 extern int ready_at(void);extern Actor *lookup_at(unsigned int);extern void *find_at(Vector3 *,int);extern void set_at(void *,int);extern void move_at(void *,Vector3 *);extern void release_at(void *);extern unsigned int current_identifier;extern void notify_at(int);extern void play_se_8c05fbf8(unsigned int,int,int,int);extern void *TObjDFRecBall_create_8c21b264(void *,const Vector3 *,const Vector3 *);
-void TObjDFRecover_update_8c21b124(View *o) {
+void TObjDFRecover_update_8c21b124(TObjDFRecover *o) {
  Actor *actor;Vector3 position;
  if(!ready_at()) {o->flags|=1;return;}
  if(o->identifier==65535||(actor=lookup_at(o->identifier))==0) {o->flags|=1;return;}

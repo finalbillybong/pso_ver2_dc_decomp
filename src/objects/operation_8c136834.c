@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x88];
-    int f88;
-};
-void TObjFogCollision_v14_8c136834(Object *o)
+#include "src/include/classes/TObjFogCollision.h"
+void TObjFogCollision_v14_8c136834(TObjFogCollision *o)
 {
     int v3;
     v3 = (int)o->f88;

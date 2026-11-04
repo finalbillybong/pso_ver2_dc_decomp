@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemWpnTessen.h"
 typedef struct Arg0_240 Arg0_240;
-struct Object {
-    char unknown0[0x240];
-    Arg0_240 *f240;
-};
 extern void njRotateX_8c37dd28(int, void *);
 extern void scale_current_matrix_v_8c37e390(void *);
-void TItemWpnTessen_v57_8c2407b0(Object *o)
+void TItemWpnTessen_v57_8c2407b0(TItemWpnTessen *o)
 {
     if (*(int *)0x8c4689f0 != 1) {
         if (*(int *)0x8c4689f0 == 2) {

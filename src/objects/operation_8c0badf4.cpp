@@ -1,17 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TTecZarua.h"
 typedef struct Block8 {
     int words[2];
 } Block8;
 typedef struct Frame Frame;
 typedef struct S_g8c44bea0 S_g8c44bea0;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_d4 Arg0_d4;
+typedef struct TTecZarua_p20 TTecZarua_p20;
+typedef struct TTecZarua_pd4 TTecZarua_pd4;
 class Arg1;
 typedef struct Block_frame_0 {
     int f00;
@@ -20,14 +15,6 @@ typedef struct Block_frame_0 {
 struct Frame {
     Block_frame_0 f00;
     Vector3 f08;
-};
-struct Object {
-    char unknown0[0x20];
-    Arg0_20 *f20;
-    char unknown24[0x6c];
-    float f90;
-    char unknown94[0x40];
-    Arg0_d4 *fd4;
 };
 class Arg1 {
 public:
@@ -65,7 +52,7 @@ typedef struct Arg1Data {
     char unknown22[0x302];
     Vector3 f324;
 } Arg1Data;
-struct Arg0_20 {
+struct TTecZarua_p20 {
     char unknown0[0x20];
     unsigned short f20;
 };
@@ -73,7 +60,7 @@ extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_delayed_effect_8c0baee8(void *, void *, short, void *);
 extern "C" int create_effect(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
-extern "C" void TTecZarua_v05_8c0badf4(Object *o, Arg1 *a1)
+extern "C" void TTecZarua_v05_8c0badf4(TTecZarua *o, Arg1 *a1)
 {
     Frame frame;
     int t1;

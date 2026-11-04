@@ -1,3 +1,4 @@
+#include "src/include/classes/TQuadSpriteNormal.h"
 typedef struct Vector3 {
     float x;
     float y;
@@ -10,17 +11,17 @@ typedef struct Node {
     char pad1c[0xd];
     char f29;
 } Node;
-typedef struct Slot {
+typedef struct TQuadSpriteNormal_p20 {
     Node *head;
     char pad04[0x28];
-} Slot;
+} TQuadSpriteNormal_p20;
 typedef struct Rect4 {
     float f00;
     float f04;
     float f08;
     float f0c;
 } Rect4;
-typedef struct Desc {
+typedef struct TQuadSpriteNormal_p2c {
     int f00;
     void *f04;
     int f08;
@@ -29,14 +30,7 @@ typedef struct Desc {
     float f14;
     float f18;
     unsigned int f1c;
-} Desc;
-typedef struct Object {
-    char unknown0[0x20];
-    Slot *f20;
-    char unknown24[0x4];
-    int f28;
-    Desc *f2c;
-} Object;
+} TQuadSpriteNormal_p2c;
 typedef struct View {
     float f00;
     char unknown4[0x8];
@@ -68,7 +62,7 @@ extern void sq_quad_8c38b09e(void *, float);
 extern void sq_flush_8c38af12(void);
 extern void reset_state_8c391cc4(void);
 extern void reset_manager_record_slots(void *);
-void TQuadSpriteNormal_render_8c040804(Object *o)
+void TQuadSpriteNormal_render_8c040804(TQuadSpriteNormal *o)
 {
     Frame frame;
     int flags;
@@ -86,7 +80,7 @@ void TQuadSpriteNormal_render_8c040804(Object *o)
     float sx;
     float sy;
     float z;
-    Desc *d;
+    TQuadSpriteNormal_p2c *d;
     if (o->f28 == 0) {
         return;
     }

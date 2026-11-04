@@ -1,24 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_38 Arg0_38;
+#include "src/include/classes/TTecSlicer.h"
+typedef struct TTecSlicer_p28 TTecSlicer_p28;
+typedef struct TTecSlicer_p38 TTecSlicer_p38;
 typedef struct Arg0_60 Arg0_60;
-typedef struct Arg0_64 Arg0_64;
-typedef struct Arg0_68 Arg0_68;
-struct Object {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-    char unknown2c[0xc];
-    Arg0_38 *f38;
-    char unknown3c[0x24];
-    Arg0_60 *f60;
-    Arg0_64 *f64;
-    Arg0_68 *f68;
-};
+typedef struct TTecSlicer_p64 TTecSlicer_p64;
+typedef struct TTecSlicer_p68 TTecSlicer_p68;
 extern int g_8c46f560;
 extern int g_8c575570;
 extern void apply_resource_3827d8(void *);
@@ -31,7 +16,7 @@ extern void scale_current_matrix_v_8c37e390(void *);
 extern void call_8c38c0f0(void *);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void TTecSlicer_render_8c1378d4(Object *o)
+void TTecSlicer_render_8c1378d4(TTecSlicer *o)
 {
     g_8c46f560 = (int)(g_8c575570);
     g_8c575570 |= 0x10;

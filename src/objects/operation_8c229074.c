@@ -1,3 +1,4 @@
+#include "src/include/classes/TObjDFDemo0.h"
 typedef struct Vector3 {
     float x;
     float y;
@@ -6,24 +7,13 @@ typedef struct Vector3 {
 typedef struct S_L8c337ec4 S_L8c337ec4;
 typedef struct Frame Frame;
 typedef struct S_g8c337ec4 S_g8c337ec4;
-typedef struct Object Object;
-typedef struct Arg0_94 Arg0_94;
+typedef struct TObjDFDemo0_p94 TObjDFDemo0_p94;
 typedef struct Arg0_98 Arg0_98;
 typedef struct Block_frame_c {
     float f00;
     float f04;
     float f08;
 } Block_frame_c;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x8e];
-    Arg0_94 *f94;
-    char unknown98[0x5c];
-    float ff4;
-    float ff8;
-    float ffc;
-};
 struct S_L8c337ec4 {
     char unknown0[0x4];
     int f04;
@@ -51,7 +41,7 @@ extern void call_8c0a7608(Arg0_98 *, void *);
 extern int create_effect_777c(void *, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c191504(int);
-void TObjDFDemo0_update_8c229074(Object *o)
+void TObjDFDemo0_update_8c229074(TObjDFDemo0 *o)
 {
     Frame frame;
     char *v2;
@@ -156,7 +146,7 @@ L_8c2291bc:;
         operation_8c191504(2);
         break;
     }
-    if ((int)(o->f94 = (Arg0_94 *)((int)o->f94 + 1)) >= 0x118) {
+    if ((int)(o->f94 = (TObjDFDemo0_p94 *)((int)o->f94 + 1)) >= 0x118) {
         o->f04 |= 1;
     }
 }

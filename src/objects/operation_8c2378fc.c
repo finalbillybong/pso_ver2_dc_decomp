@@ -1,35 +1,17 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TChallenge.h"
 typedef struct Block1300 {
     int words[325];
 } Block1300;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    char unknown24[0x44];
-    int f68;
-    int f6c;
-    int f70;
-    int f74;
-};
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern void call_8c237c20(Object *);
-extern void operation_8c248614(Object *);
-extern void operation_8c238fcc(Object *);
-Object *TChallenge_ctor_8c2378fc(Object *o, int a1)
+extern void call_8c237c20(TChallenge *);
+extern void operation_8c248614(TChallenge *);
+extern void operation_8c238fcc(TChallenge *);
+TChallenge *TChallenge_ctor_8c2378fc(TChallenge *o, int a1)
 {
-    Object **home = &o;
+    TChallenge **home = &o;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c279200;
+    o->vtable = (void *)0x8c279200;
     o->tag = (int)(*(int *)0x8c339788);
     o->size = 0x78;
     *(Block1300 *)&*(Block1300 *)0x8c339ca0 = *(Block1300 *)&*(Block1300 *)0x8c33978c;

@@ -1,29 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    float f24;
-    int f28;
-};
+#include "src/include/classes/TObjCityAirCar_Ctrl.h"
 extern int g_8c3288e8;
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TObjCityAirCar_Ctrl_ctor_8c1c0dc0(Object *o, int a1)
+TObjCityAirCar_Ctrl *TObjCityAirCar_Ctrl_ctor_8c1c0dc0(TObjCityAirCar_Ctrl *o, int a1)
 {
     char *pm2;
     int *v4;
     int v1;
     int v2;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c27591c;
+    o->vtable = (void *)0x8c27591c;
     o->tag = (int)(g_8c3288e8);
     o->size = 0x7c;
     o->f20 = 0;

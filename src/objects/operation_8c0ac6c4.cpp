@@ -1,16 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TTecAnti.h"
 typedef struct Block8 {
     int words[2];
 } Block8;
 typedef struct Frame Frame;
 typedef struct S_g8c44bea0 S_g8c44bea0;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
+typedef struct TTecPlayerInfluence_p20 TTecPlayerInfluence_p20;
 class Arg1;
 typedef struct Block_frame_0 {
     int f00;
@@ -18,14 +13,6 @@ typedef struct Block_frame_0 {
 } Block_frame_0;
 struct Frame {
     Block_frame_0 f00;
-};
-struct Object {
-    char unknown0[0x20];
-    Arg0_20 *f20;
-    char unknown24[0x54];
-    float f78;
-    char unknown7c[0x4c];
-    int fc8;
 };
 class Arg1 {
 public:
@@ -63,7 +50,7 @@ typedef struct Arg1Data {
     char unknown22[0x2e6];
     short f308;
 } Arg1Data;
-struct Arg0_20 {
+struct TTecPlayerInfluence_p20 {
     char unknown0[0x20];
     unsigned short f20;
 };
@@ -73,7 +60,7 @@ extern "C" void call_8c0ac7fc(int, void *, void *, short, void *);
 extern "C" int create_effect(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
 extern "C" void operation_8c0b6750(void *, void *, int, int, int);
-extern "C" void TTecAnti_v06_8c0ac6c4(Object *o, Arg1 *a1)
+extern "C" void TTecAnti_v06_8c0ac6c4(TTecAnti *o, Arg1 *a1)
 {
     Frame frame;
     int v1;

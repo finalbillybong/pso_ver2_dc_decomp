@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x28];
-    int f28;
-};
+#include "src/include/classes/TObjTailsTailsMove.h"
 extern void call_8c25fba0(void);
 extern void operation_8c25fbdc(void *);
-void TObjTailsTailsMove_update_8c25fb70(Object *o)
+void TObjTailsTailsMove_update_8c25fb70(TObjTailsTailsMove *o)
 {
     if (o->f28 != 0) {
         if (o->f28 != 1) {

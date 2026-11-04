@@ -1,51 +1,16 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_ec Arg0_ec;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x68];
-    int f88;
-    int f8c;
-    char unknown90[0x4c];
-    int fdc;
-    char unknowne0[0x4];
-    float fe4;
-    char unknowne8[0x4];
-    Arg0_ec *fec;
-    int ff0;
-    float ff4;
-    char unknownf8[0x8];
-    int f100;
-    int f104;
-    char unknown108[0x4];
-    short f10c;
-    short f10e;
-    short f110;
-    short f112;
-    char unknown114[0x80];
-    int f194;
-    int f198;
-    int f19c;
-};
-struct Arg0_ec {
+#include "src/include/classes/TObjWarpBoss.h"
+typedef struct TObjWarpBoss_pec TObjWarpBoss_pec;
+struct TObjWarpBoss_pec {
     char unknown0[0x4];
     short f04;
 };
 extern int g_8c32c1a4;
-extern void call_8c088f14(Object *, int, int);
+extern void call_8c088f14(TObjWarpBoss *, int, int);
 extern int get_current_area_8c032b10(void);
 extern void insert_object_by_id(void *);
-Object *TObjWarpBoss_ctor_8c1e7964(Object *o, int a1, int a2)
+TObjWarpBoss *TObjWarpBoss_ctor_8c1e7964(TObjWarpBoss *o, int a1, int a2)
 {
-    Object **home = &o;
+    TObjWarpBoss **home = &o;
     int v12;
     int v11;
     int v1;
@@ -94,7 +59,7 @@ Object *TObjWarpBoss_ctor_8c1e7964(Object *o, int a1, int a2)
         o->f19c = -1;
     } else {
         {
-            Object *base = o;
+            TObjWarpBoss *base = o;
             v1 = (int)base->f8c;
             if (v1 < 0 || v1 > 0xff) {
                 base->f19c = -1;
@@ -117,7 +82,7 @@ L_8c1e7a74:;
     o->f104 = 0;
     if (o->fec != 0) {
         o->fec->f04 |= 1;
-        o->fec = (Arg0_ec *)0;
+        o->fec = (TObjWarpBoss_pec *)0;
     }
     v12 = (int)0;
     v11 = (int)0x174;

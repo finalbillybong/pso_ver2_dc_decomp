@@ -1,10 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TGameProtocol.h"
 typedef struct S_g8c4627c0 S_g8c4627c0;
-typedef struct Object Object;
 typedef struct S_vv2_0 S_vv2_0;
 typedef struct S_vv2_c S_vv2_c;
 class S_vv2;
@@ -33,16 +28,12 @@ typedef struct S_vv2Data {
     char unknown10[0x1b];
     char f2b;
 } S_vv2Data;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-};
 extern "C" char g_8c2ed878[];
 extern "C" void operation_8c011ef0(void *, ...);
 extern "C" void TGameProtocol_dispatch_subcommand_8c036b4c(S_vv2 *);
 extern "C" void operation_8c09caac(void *);
 extern "C" void set_field_8c09ca50(void *);
-extern "C" void TGameProtocol_update_8c036ac8(Object *o)
+extern "C" void TGameProtocol_update_8c036ac8(TGameProtocol *o)
 {
     int v1;
     S_vv2 *v2;

@@ -1,17 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1e];
-    int f24;
-};
+#include "src/include/classes/TODummyKeyCave01Sound.h"
 extern void call_8c258794(void);
-void TODummyKeyCave01Sound_update_8c25876c(Object *o)
+void TODummyKeyCave01Sound_update_8c25876c(TODummyKeyCave01Sound *o)
 {
     o->f24 += -1;
     if (o->f24 == 0) {

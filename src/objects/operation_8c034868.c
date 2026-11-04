@@ -1,23 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TCharaMaking.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 extern int g_8c460900;
 extern int g_8c460904;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TCharaMaking_dtor_8c034868(Object *o, int a1)
+extern void call_8c122774(void *, TCharaMaking *);
+TCharaMaking *TCharaMaking_dtor_8c034868(TCharaMaking *o, int a1)
 {
     if (o != 0) {
-        o->dispatch = (void *)0x8c26159c;
+        o->vtable = (void *)0x8c26159c;
         g_8c460900 = 0;
         g_8c460904 = 0;
         TObject_dtor_8c03311c((void *)o, (short)0);

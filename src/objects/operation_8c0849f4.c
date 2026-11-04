@@ -1,24 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjContainerEnemy.h"
 typedef struct SBlock4 {
     short halves[2];
 } SBlock4;
 typedef struct Frame Frame;
 typedef struct S_g8c46ed0c S_g8c46ed0c;
 typedef struct S_g8c46ed0c_0 S_g8c46ed0c_0;
-typedef struct Object Object;
-typedef struct Arg0_84 Arg0_84;
-struct Object {
-    char unknown0[0x20];
-    unsigned short f20;
-    char unknown22[0x62];
-    Arg0_84 *f84;
-    int f88;
-};
-struct Arg0_84 {
+typedef struct TObjContainerBase_p84 TObjContainerBase_p84;
+struct TObjContainerBase_p84 {
     char unknown0[0x4];
     short f04;
 };
@@ -38,9 +26,9 @@ struct S_g8c46ed0c_0 {
 extern int g_8c418248;
 extern int g_8c44be04;
 extern S_g8c46ed0c *g_8c46ed0c;
-extern void call_8c05406c(Object *, Frame *);
+extern void call_8c05406c(TObjContainerEnemy *, Frame *);
 extern void operation_8c0368a8(void *);
-float TObjContainerEnemy_v24_8c0849f4(Object *o)
+float TObjContainerEnemy_v24_8c0849f4(TObjContainerEnemy *o)
 {
     Frame frame;
     int v6;

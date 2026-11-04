@@ -1,25 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    int f20;
-    int f24;
-    char unknown28[0x4];
-    float f2c;
-    char unknown30[0x4];
-    float f34;
-    float f38;
-    char unknown3c[0x14];
-    float f50;
-};
+#include "src/include/classes/TMainCursor.h"
 extern void play_se_8c05fbf8(int, int, int, int);
-void TMainCursor_update_8c0da980(Object *o)
+void TMainCursor_update_8c0da980(TMainCursor *o)
 {
     int v1;
     int v2;

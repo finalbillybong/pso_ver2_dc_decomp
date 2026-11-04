@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjBgmColCtrl.h"
 typedef struct S_g8c418248 S_g8c418248;
 typedef struct S_g8c4e1a48 S_g8c4e1a48;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-};
 extern S_g8c418248 *g_8c418248;
 extern int g_8c4d5190;
 extern int g_8c4e1a44;
@@ -18,7 +9,7 @@ extern int g_8c4e2f80;
 extern int lookup_low_id(int);
 extern void update_hierarchy(void *);
 extern void call_8c1aa184(void);
-void TObjBgmColCtrl_update_8c1aa0e8(Object *o)
+void TObjBgmColCtrl_update_8c1aa0e8(TObjBgmColCtrl *o)
 {
     int v1;
     int v4;

@@ -1,28 +1,19 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TAdLoadQuest.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct Arg0_20 Arg0_20;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 struct Arg0_20 {
     char unknown0[0x4];
     short f04;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TAdLoadQuest_dtor_8c1c7288(Object *o, int a1)
+extern void call_8c122774(void *, TAdLoadQuest *);
+TAdLoadQuest *TAdLoadQuest_dtor_8c1c7288(TAdLoadQuest *o, int a1)
 {
     int v2;
     int v1;
     if (o != 0) {
-        o->dispatch = (void *)0x8c2767e0;
+        o->vtable = (void *)0x8c2767e0;
         v1 = (int)0;
         while (4 > v1) {
             v2 = (int)(v1 << 2);

@@ -1,19 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemWpnRay.h"
 typedef struct Arg0_234 Arg0_234;
 typedef struct Arg0_238 Arg0_238;
-struct Object {
-    char unknown0[0x234];
-    Arg0_234 *f234;
-    Arg0_238 *f238;
-};
 extern void njRotateZ_8c37e02c(int, int);
 extern void njRotateX_8c37dd28(int, void *);
-void TItemWpnRay_v57_8c17adb4(Object *o)
+void TItemWpnRay_v57_8c17adb4(TItemWpnRay *o)
 {
     if (*(int *)0x8c4689f0 != 1) {
         if (*(int *)0x8c4689f0 == 2) {

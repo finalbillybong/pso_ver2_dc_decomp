@@ -539,6 +539,12 @@ def header_rank(ids):
     return 1000 - min(depths) if depths else 0
 
 
+def portable_element(t):
+    """An array element type a header can state: a scalar, a pointer or a shared aggregate."""
+    plain = ' '.join(w for w in t.split() if w not in QUALIFIERS)
+    return plain.endswith('*') or plain in SCALARS or plain in SHARED_TYPES
+
+
 def portable_signature(sig):
     """A virtual slot signature a shared header can state: built-in types and void pointers only."""
     ret, params = sig
@@ -575,7 +581,7 @@ def resolve(classes, evidence, name):
             elif key[2] == 'pointer':
                 merged[(4, '<ptr>', 'pointer', ())].extend(ids)
                 pointer_types.add(key[1])
-            elif key[2] == 'struct' and key[1] not in SHARED_TYPES:
+            elif (key[2] == 'struct' and key[1] not in SHARED_TYPES) or (key[2] == 'array' and not portable_element(key[1])):
                 conflicts.append(dict(offset=offset, kind='local-aggregate', chosen='', other=key[1], units=sorted(set(ids))))
             else:
                 merged[key].extend(ids)
@@ -759,7 +765,11 @@ def rename_idents(text, mapping):
     return ''.join(out)
 
 
-def compatible(ev, layout_, renames=None):
+INT_KINDS = ('signed 4', 'unsigned 4')
+VTABLE_HEADER = 'src/include/object_vtable.h'
+
+
+def compatible(ev, layout_, renames=None, extras=None):
     """Every field the unit's this-views declare must be the header's field (same offset, type, name).
     With `renames`, a name difference is recorded there (unit name -> header name) instead."""
     by_offset = {f['offset']: f for f in layout_['fields']}
@@ -778,8 +788,18 @@ def compatible(ev, layout_, renames=None):
                 if renames is not None and renames.get(f['name'], h['name']) == h['name']:
                     renames[f['name']] = h['name']
                     continue
+            if extras is not None and ev['language'] == 'c++' and f['kind'] == 'pointer' and \
+                    extras.setdefault('vtable_member', f['name']) == f['name']:
+                # A C++ constructor/destructor storing the vtable pointer as data: it writes
+                # through TOBJECT_VTABLE(o) (src/include/object_vtable.h) instead.
+                continue
             return False, where + 'vptr view ' + f['type'] + ' ' + f['name'], tags
-        if h['type'] == '<ptr>':
+        loose = extras is not None and extras.get('loose') is not None
+        if loose and {f['kind'], h['kind']} & {'pointer'} and ({f['kind'], h['kind']} - {'pointer'}) <= set(INT_KINDS) \
+                and f['kind'] != h['kind']:
+            # Pointer against int: try the header's type; only an exact compile admits it.
+            extras['loose'].append(f['offset'])
+        elif h['type'] == '<ptr>':
             if f['kind'] != 'pointer':
                 return False, where + 'kind %s vs pointer' % f['kind'], tags
             pointee = f['type'][:-1].strip()
@@ -801,11 +821,12 @@ def compatible(ev, layout_, renames=None):
     return True, '', tags
 
 
-def convert_unit(unit, ev, info, layout_, root=ROOT):
+def convert_unit(unit, ev, info, layout_, root=ROOT, loose=False):
     """Rewrite one unit: drop its local this-type definitions, include the class header, rename."""
     cls = layout_['name']
     renames = {}
-    ok, why, tags = compatible(ev, layout_, renames)
+    extras = {'loose': []} if loose else {}
+    ok, why, tags = compatible(ev, layout_, renames, extras)
     if not ok:
         return None, why
     if renames:
@@ -886,7 +907,14 @@ def convert_unit(unit, ev, info, layout_, root=ROOT):
     # A cast view of the object to its own class is now a no-op cast: drop it.
     param = re.escape(info['this']['name'])
     new = re.sub(r'\(\(\s*' + re.escape(cls) + r'\s*\*\s*\)\s*' + param + r'\s*\)(?=\s*->)', info['this']['name'], new)
+    vmember = extras.get('vtable_member')
+    if vmember:
+        new = re.sub(r'\b' + param + r'\s*->\s*' + re.escape(vmember) + r'\b', 'TOBJECT_VTABLE(%s)' % info['this']['name'], new)
+        if re.search(r'(->|\.)\s*' + re.escape(vmember) + r'\b', strip_comments(new)):
+            return None, 'vtable member used other than through the object'
     include = '#include "%s/%s.h"\n' % (HEADER_DIR, cls)
+    if vmember:
+        include = '#include "%s"\n' % VTABLE_HEADER + include
     headers = list(unit.get('headers', []))
     # The include goes after any existing includes, else at the top.
     lines = new.split('\n')
@@ -898,10 +926,13 @@ def convert_unit(unit, ev, info, layout_, root=ROOT):
     new = '\n'.join(lines)
     removed = text.count('\n') - new.count('\n')
     header = '%s/%s.h' % (HEADER_DIR, cls)
+    if vmember:
+        extra_headers.append(VTABLE_HEADER)
     for h in extra_headers + [header]:
         if h not in headers:
             headers.append(h)
-    return dict(text=new, headers=headers, removed=removed + 1, renames=renames), ''
+    return dict(text=new, headers=headers, removed=removed + 1, renames=renames,
+                vtable=bool(vmember), loose=extras.get('loose') or []), ''
 
 
 # ---------------------------------------------------------------- commands
@@ -994,11 +1025,18 @@ def cmd_convert(args):
                 results.append((ev['id'], n, 'no header for the class (run emit first)'))
                 continue
             _, info = unit_evidence(unit)
-            res, why = convert_unit(unit, ev, info, lay)
+            res, why = convert_unit(unit, ev, info, lay, loose=args.loose)
             if res is None:
                 results.append((ev['id'], n, 'local: ' + why))
                 continue
-            results.append((ev['id'], n, 'converted, -%d lines%s' % (res['removed'], ', renamed ' + ','.join('%s->%s' % kv for kv in sorted(res['renames'].items())) if res['renames'] else '')))
+            notes = ''
+            if res['renames']:
+                notes += ', renamed ' + ','.join('%s->%s' % kv for kv in sorted(res['renames'].items()))
+            if res['vtable']:
+                notes += ', vtable via TOBJECT_VTABLE'
+            if res['loose']:
+                notes += ', pointer/int at ' + ','.join('0x%x' % o for o in res['loose'])
+            results.append((ev['id'], n, 'converted, -%d lines%s' % (res['removed'], notes)))
             if args.write:
                 (ROOT / unit['source']).write_text(res['text'])
                 unit['headers'] = res['headers']
@@ -1090,6 +1128,7 @@ def main(argv=None):
     s.add_argument('--write', action='store_true', help='rewrite sources and config/project.json')
     s.add_argument('--only', nargs='*'); s.add_argument('--skip', nargs='*')
     s.add_argument('--ancestors', action='store_true', help='also convert ancestor-class units to this header')
+    s.add_argument('--loose', action='store_true', help='also try pointer-vs-int views with the header type (keep only exact units)')
     s.set_defaults(func=cmd_convert)
     s = sub.add_parser('check'); s.set_defaults(func=cmd_check)
     s = sub.add_parser('report'); s.add_argument('--top', type=int, default=30); s.set_defaults(func=cmd_report)

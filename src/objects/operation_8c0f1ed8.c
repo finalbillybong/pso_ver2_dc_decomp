@@ -1,22 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_84 Arg0_84;
+#include "src/include/classes/TOMonumentAncient02.h"
+typedef struct TOMonumentAncient02_p84 TOMonumentAncient02_p84;
 typedef struct Arg1 Arg1;
 typedef struct S_vv16 S_vv16;
-struct Object {
-    char unknown0[0x84];
-    Arg0_84 *f84;
-    char unknown88[0x5c];
-    int fe4;
-    char unknowne8[0x18];
-    int f100;
-    char unknown104[0x4];
-    int f108;
-};
 struct Arg1 {
     short f00;
     short f02;
@@ -28,7 +13,7 @@ struct S_vv16 {
 extern int g_8c46ed0c;
 extern void operation_8c177748(int);
 extern int operation_8c17796c(int);
-void TOMonumentAncient02_v05_8c0f1ed8(Object *o, Arg1 *a1)
+void TOMonumentAncient02_v05_8c0f1ed8(TOMonumentAncient02 *o, Arg1 *a1)
 {
     S_vv16 *v16;
     int idx;

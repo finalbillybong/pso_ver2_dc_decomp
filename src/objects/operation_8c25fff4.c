@@ -1,25 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-    int f28;
-};
+#include "src/include/classes/TObjDeadListWin.h"
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TObjDeadListWin_ctor_8c25fff4(Object *o, int a1)
+TObjDeadListWin *TObjDeadListWin_ctor_8c25fff4(TObjDeadListWin *o, int a1)
 {
     int v1;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c281e18;
+    o->vtable = (void *)0x8c281e18;
     o->tag = (int)(*(int *)0x8c340788);
     o->size = 0x6c;
     o->f24 = 0;

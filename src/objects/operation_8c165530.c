@@ -1,8 +1,4 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjBoss2CeilJunk.h"
 typedef struct Block16 {
     int words[4];
 } Block16;
@@ -11,23 +7,12 @@ typedef struct S_g8c4da280 S_g8c4da280;
 typedef struct S_g8c4da280_42c S_g8c4da280_42c;
 typedef struct S_g8c4da280_42c_8 S_g8c4da280_42c_8;
 typedef struct S_g8c4da284 S_g8c4da284;
-typedef struct Object Object;
-typedef struct Arg0_60 Arg0_60;
-typedef struct Arg0_64 Arg0_64;
+typedef struct TObjBoss2CeilJunk_p60 TObjBoss2CeilJunk_p60;
+typedef struct TObjBoss2CeilJunk_p64 TObjBoss2CeilJunk_p64;
 typedef struct Block_frame_0 {
     float f00;
     char unknown4[0xc];
 } Block_frame_0;
-struct Object {
-    char unknown0[0x60];
-    Arg0_60 *f60;
-    Arg0_64 *f64;
-    char unknown68[0x44];
-    int fac;
-    int fb0;
-    char unknownb4[0x4];
-    float fb8;
-};
 struct Frame {
     Block_frame_0 f00;
     float f10;
@@ -54,7 +39,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void njRotateX_8c37dd28(int, void *);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void TObjBoss2CeilJunk_render_8c165530(Object *o)
+void TObjBoss2CeilJunk_render_8c165530(TObjBoss2CeilJunk *o)
 {
     Frame frame;
     char *pm1;

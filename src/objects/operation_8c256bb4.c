@@ -1,29 +1,16 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjHexLine.h"
 typedef struct Block16 {
     int words[4];
 } Block16;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-};
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void TObjHexLine_create_8c257198(int, int);
-Object *TObjHexLine_ctor_8c256bb4(Object *o, int a1)
+TObjHexLine *TObjHexLine_ctor_8c256bb4(TObjHexLine *o, int a1)
 {
-    Object **home = &o;
+    TObjHexLine **home = &o;
     int v1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c281888;
+    o->vtable = (void *)0x8c281888;
     o->tag = (int)(*(int *)0x8c33ffb4);
     o->size = 0x24;
     v1 = (int)0;

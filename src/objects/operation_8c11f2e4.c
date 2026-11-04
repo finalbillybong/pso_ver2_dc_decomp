@@ -1,24 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TORainbowCave01.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_38 Arg0_38;
-typedef struct Arg0_64 Arg0_64;
-struct Object {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-    char unknown2c[0x8];
-    int f34;
-    Arg0_38 *f38;
-    char unknown3c[0x28];
-    Arg0_64 *f64;
-    char unknown68[0x9c];
-    float f104;
-};
+typedef struct TORainbowCave01_p28 TORainbowCave01_p28;
+typedef struct TORainbowCave01_p38 TORainbowCave01_p38;
+typedef struct TORainbowCave01_p64 TORainbowCave01_p64;
 struct Frame {
     float f00;
     float f04;
@@ -38,7 +22,7 @@ extern void scale_current_matrix_v_8c37e390(void *);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c391cc4(void);
-void TORainbowCave01_render_8c11f2e4(Object *o)
+void TORainbowCave01_render_8c11f2e4(TORainbowCave01 *o)
 {
     Frame frame;
     int t1;

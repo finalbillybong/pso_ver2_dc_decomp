@@ -1,27 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjBoss1MokoHill_Solo.h"
 typedef struct S_g8c46fa68 S_g8c46fa68;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x26];
-    Vector3 f2c;
-    float f38;
-    float f3c;
-    char unknown40[0x4];
-    int f44;
-    int f48;
-    char unknown4c[0x4];
-    int f50;
-};
 struct S_g8c46fa68 {
     Vector3 f00;
 };
-void TObjBoss1MokoHill_Solo_update_8c0cd3e8(Object *o)
+void TObjBoss1MokoHill_Solo_update_8c0cd3e8(TObjBoss1MokoHill_Solo *o)
 {
     if (o->f48 != 0) {
         if (o->f48 == 1) {

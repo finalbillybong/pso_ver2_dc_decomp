@@ -1,24 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TEffStarLightChild.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
 typedef struct Arg1 Arg1;
 typedef struct Arg2 Arg2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    float f20;
-    float f24;
-    float f28;
-    float f2c;
-    float f30;
-};
 struct Frame {
     float f04;
     float f08;
@@ -36,10 +19,10 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern float njScalor_8c37e480(void *);
 extern void njUnitVector_8c37b630(void *);
 extern float signed_sqrt_8c37f6c0(void *, float);
-Object *TEffStarLightChild_ctor_8c245a9c(Object *o, Arg1 *a1, Arg2 *a2, int a3, float f0, float f1)
+TEffStarLightChild *TEffStarLightChild_ctor_8c245a9c(TEffStarLightChild *o, Arg1 *a1, Arg2 *a2, int a3, float f0, float f1)
 {
     Frame frame;
-    Object **home = &o;
+    TEffStarLightChild **home = &o;
     float v5;
     float v6;
     float v1;
@@ -47,7 +30,7 @@ Object *TEffStarLightChild_ctor_8c245a9c(Object *o, Arg1 *a1, Arg2 *a2, int a3, 
     float t2;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a3);
-    o->dispatch = (void *)0x8c27cf00;
+    o->vtable = (void *)0x8c27cf00;
     o->tag = (int)(*(int *)0x8c33aea4);
     o->size = 0x34;
     v1 = (float)f1;

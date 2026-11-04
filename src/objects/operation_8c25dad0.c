@@ -1,24 +1,15 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOChatSensor.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
 struct Frame {
     float f00;
     float f04;
     float f08;
     float f0c;
 };
-struct Object {
-    char unknown0[0xa0];
-    float fa0;
-};
 extern int operation_8c03d338(void);
 extern float signed_sqrt_8c37f6c0(float);
 extern void operation_8c0c5478(void *, Frame *, float);
-void TOChatSensor_render_8c25dad0(Object *o)
+void TOChatSensor_render_8c25dad0(TOChatSensor *o)
 {
     Frame frame;
     int t1;

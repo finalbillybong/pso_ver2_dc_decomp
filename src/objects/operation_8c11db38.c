@@ -1,19 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x88];
-    int f88;
-    char unknown8c[0x66];
-    unsigned short ff2;
-};
+#include "src/include/classes/TObjLazerFence4.h"
 extern char g_8c3112d4[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void TObjLazerFence4_v09_8c11db38(Object *o)
+void TObjLazerFence4_v09_8c11db38(TObjLazerFence4 *o)
 {
     o->ff2 = o->f88;
     njPrintColor_8c38c5b6(-0xff0100);

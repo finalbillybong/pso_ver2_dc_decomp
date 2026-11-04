@@ -1,3 +1,4 @@
+#include "src/include/classes/TObjRoomId.h"
 typedef struct Vector3 {
     float x;
     float y;
@@ -5,25 +6,12 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_c8c021ef8 S_c8c021ef8;
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_8c Arg0_8c;
+typedef struct TObjRoomId_p8c TObjRoomId_p8c;
 struct Frame {
     float f00;
     float f04;
     float f08;
     Vector3 f0c;
-};
-struct Object {
-    char unknown0[0x3c];
-    float f3c;
-    char unknown40[0x4];
-    float f44;
-    char unknown48[0x24];
-    float f6c;
-    float f70;
-    float f74;
-    char unknown78[0x14];
-    Arg0_8c *f8c;
 };
 struct S_c8c021ef8 {
     char unknown0[0x3c];
@@ -40,7 +28,7 @@ extern void call_8c3be280(int, void *, void *);
 extern void njPopMatrix_8c38accc(int);
 extern float call_8c3845f0(Frame *, void *);
 extern void operation_8c01d778(void *, int);
-void TObjRoomId_update_8c18548c(Object *o)
+void TObjRoomId_update_8c18548c(TObjRoomId *o)
 {
     Frame frame;
     int v3;

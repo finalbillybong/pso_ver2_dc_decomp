@@ -1,23 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_28 Arg0_28;
+#include "src/include/classes/TContainerAncient01.h"
+typedef struct TContainerAncient01_p28 TContainerAncient01_p28;
 typedef struct Arg0_38 Arg0_38;
-typedef struct Arg0_64 Arg0_64;
-struct Object {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-    char unknown2c[0x8];
-    int f34;
-    Arg0_38 *f38;
-    char unknown3c[0x28];
-    Arg0_64 *f64;
-    char unknown68[0x310];
-    int f378;
-};
+typedef struct TContainerAncient01_p64 TContainerAncient01_p64;
 extern void call_8c3827d8(void *);
 extern void njPushMatrixEx_8c38ae68(void);
 extern void translate_current_matrix_v_8c382a40(void *);
@@ -25,9 +9,9 @@ extern void njRotateY_8c37df90(int, void *);
 extern void njScaleV_8c37e3d0(int, void *);
 extern int operation_8c03d338(void);
 extern void call_8c3a944a(void *);
-extern void call_8c01cd20(Object *);
+extern void call_8c01cd20(TContainerAncient01 *);
 extern void njPopMatrixEx_8c38ad10(void);
-void TContainerAncient01_render_8c129328(Object *o)
+void TContainerAncient01_render_8c129328(TContainerAncient01 *o)
 {
     int t1;
     if (((o->f34 & 0x8000000)) == 0) {

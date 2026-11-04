@@ -1,21 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjDFUsoTower.h"
 typedef struct Frame Frame;
 typedef struct S_g8c46ee80 S_g8c46ee80;
-typedef struct Object Object;
 typedef struct Block_frame_0 {
     char unknown0[0x4];
     float f04;
     char unknown8[0x4];
 } Block_frame_0;
-struct Object {
-    char unknown0[0x94];
-    int f94;
-    float f98;
-};
 struct Frame {
     Block_frame_0 f00;
 };
@@ -25,7 +15,7 @@ struct S_g8c46ee80 {
 };
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern float njScalor_8c37e480(Frame *);
-void TObjDFUsoTower_update_8c21a908(Object *o)
+void TObjDFUsoTower_update_8c21a908(TObjDFUsoTower *o)
 {
     Frame frame;
     float v2;

@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TTecGiFoie.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct S_x22352_0 S_x22352_0;
 typedef struct S_x23952_0 S_x23952_0;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 struct S_x23952_0 {
     char unknown0[0x4];
     short f04;
@@ -18,8 +9,8 @@ struct S_x23952_0 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int effect_query_is_true(void *);
 extern void destroy_effect_d870(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TTecGiFoie_dtor_8c0b204c(Object *o, int a1)
+extern void call_8c122774(void *, TTecGiFoie *);
+TTecGiFoie *TTecGiFoie_dtor_8c0b204c(TTecGiFoie *o, int a1)
 {
     int v3;
     int v2;

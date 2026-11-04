@@ -1,21 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjDFDemo0.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct Arg0_98 Arg0_98;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void mark_effect_for_release(void *);
 extern void operation_8c0a21a4(void);
 extern void destroy_shared_object(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TObjDFDemo0_dtor_8c228fe4(Object *o, int a1)
+extern void call_8c122774(void *, TObjDFDemo0 *);
+TObjDFDemo0 *TObjDFDemo0_dtor_8c228fe4(TObjDFDemo0 *o, int a1)
 {
     int v2;
     int v1;

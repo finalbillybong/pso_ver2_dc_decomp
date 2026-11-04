@@ -1,31 +1,22 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TCheckRoomSequence.h"
 typedef struct S_g8c4db9e4 S_g8c4db9e4;
-typedef struct Object Object;
 struct S_g8c4db9e4 {
     char unknown0[0x244];
     int f244;
     int f248;
 };
-struct Object {
-    char unknown0[0x4];
-    short f04;
-};
 extern int g_8c4db120;
 extern int g_8c4db124;
 extern S_g8c4db9e4 *g_8c4db9e4;
 extern int operation_8c220ce0(void);
-extern int operation_8c106760(Object *);
-extern int operation_8c106798(Object *);
+extern int operation_8c106760(TCheckRoomSequence *);
+extern int operation_8c106798(TCheckRoomSequence *);
 extern int operation_8c19b054(void);
 extern int bu_check_busy_8c372d98(int);
 extern void memcpy_8c12b77c(void *, void *, int);
-extern void operation_8c1066c0(Object *);
+extern void operation_8c1066c0(TCheckRoomSequence *);
 extern void TShopSequence_v07_8c10664c(void *);
-void TCheckRoomSequence_v07_8c15be6c(Object *o)
+void TCheckRoomSequence_v07_8c15be6c(TCheckRoomSequence *o)
 {
     int t1;
     int t2;

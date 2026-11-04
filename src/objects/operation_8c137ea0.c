@@ -1,16 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x3a];
-    float f40;
-};
-void TSlicerHistory_update_8c137ea0(Object *o)
+#include "src/include/classes/TSlicerHistory.h"
+void TSlicerHistory_update_8c137ea0(TSlicerHistory *o)
 {
     o->f40 -= 0.2f;
     if (0.0f > o->f40) {

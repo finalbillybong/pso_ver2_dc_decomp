@@ -1,16 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOComputerMachine01.h"
 typedef struct S_L8c4e2be4 S_L8c4e2be4;
 typedef struct S_L8c4e2be4_4 S_L8c4e2be4_4;
 typedef struct S_L8c4e2be4_8 S_L8c4e2be4_8;
 typedef struct S_L8c4e2be4_c S_L8c4e2be4_c;
 typedef struct S_g8c4e2be4 S_g8c4e2be4;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_38 Arg0_38;
-typedef struct Arg0_64 Arg0_64;
+typedef struct TOComputerMachine01_p28 TOComputerMachine01_p28;
+typedef struct TOComputerMachine01_p38 TOComputerMachine01_p38;
+typedef struct TOComputerMachine01_p64 TOComputerMachine01_p64;
 typedef struct S_vv5 S_vv5;
 typedef struct S_vv5_2c S_vv5_2c;
 typedef struct S_vv5_4 S_vv5_4;
@@ -24,36 +20,6 @@ typedef struct S_vv8 S_vv8;
 typedef struct S_vv8_30 S_vv8_30;
 typedef struct S_vv8_30_4 S_vv8_30_4;
 typedef struct S_vv8_4 S_vv8_4;
-class Object;
-class Object {
-public:
-    char unknown0[0x18];
-    virtual void v0();
-    virtual void v1();
-    virtual void v2();
-    virtual void v3();
-    virtual void v4();
-    virtual void v5();
-    virtual void v6();
-    virtual void v7();
-    virtual void v8();
-    virtual void v9();
-    virtual void v10();
-    virtual int v11(float, float);
-};
-typedef struct ObjectData {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-    char unknown2c[0xc];
-    Arg0_38 *f38;
-    char unknown3c[0x28];
-    Arg0_64 *f64;
-    char unknown68[0x90];
-    float ff8;
-    float ffc;
-    char unknown100[0x18];
-    int f118;
-} ObjectData;
 struct S_L8c4e2be4 {
     S_g8c4e2be4 *f00;
     S_L8c4e2be4_4 *f04;
@@ -100,7 +66,7 @@ extern "C" void call_8c3aa702(void *);
 extern "C" void call_8c391c94(void);
 extern "C" void call_8c391cc4(void);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void TOComputerMachine01_render_8c1bf448(Object *o)
+extern "C" void TOComputerMachine01_render_8c1bf448(TOComputerMachine01 *o)
 {
     int v2;
     int v1;
@@ -109,9 +75,9 @@ extern "C" void TOComputerMachine01_render_8c1bf448(Object *o)
     S_vv7 *v7;
     S_vv8 *v8;
     int t1;
-    t1 = o->v11(((ObjectData *)o)->ff8, ((ObjectData *)o)->ffc);
-    ((ObjectData *)o)->f118 = (int)t1;
-    if (((ObjectData *)o)->f118 == 1) {
+    t1 = o->v11(o->ff8, o->ffc);
+    o->f118 = (int)t1;
+    if (o->f118 == 1) {
         v1 = (int)g_8c418244;
         v2 = (int)g_8c4e2bf4;
         if (v2 != v1) {
@@ -123,9 +89,9 @@ extern "C" void TOComputerMachine01_render_8c1bf448(Object *o)
         }
         njPushMatrixEx_8c38ae68();
         translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
-        call_8c3827d8((void *)(((ObjectData *)o)->f28));
-        v5 = (S_vv5 *)((ObjectData *)o)->f38;
+        njRotateY_8c37df90(0, (void *)(o->f64));
+        call_8c3827d8((void *)(o->f28));
+        v5 = (S_vv5 *)o->f38;
         call_8c3aa702((void *)(v5->f04));
         call_8c391c94();
         v6 = (S_vv6 *)v5->f2c;

@@ -1,18 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjRainCtrl.h"
 typedef struct S_g8c44be98 S_g8c44be98;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-};
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TObjRain_ctor_8c07fd68(void *, int, int);
-void TObjRainCtrl_update_8c0802c4(Object *o)
+void TObjRainCtrl_update_8c0802c4(TObjRainCtrl *o)
 {
     int t1;
     if (!(--o->f20 >= 0)) {

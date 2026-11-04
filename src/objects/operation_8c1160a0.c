@@ -1,25 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TFogEditor.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
 typedef struct S_vv30 S_vv30;
 typedef struct S_x12112 S_x12112;
 typedef struct S_x12224 S_x12224;
 typedef struct S_x79568 S_x79568;
-struct Object {
-    char unknown0[0x34];
-    int f34;
-    char unknown38[0x18];
-    int f50;
-    char unknown54[0x4e8];
-    int f53c;
-    int f540;
-    char unknown544[0x14];
-    int f558;
-};
 struct S_L8c41cba0 {
     char unknown0[0x20];
     int f20;
@@ -38,23 +22,23 @@ struct S_x12112 {
     float f00;
 };
 extern S_L8c41cba0 g_8c41cba0;
-extern int call_8c117fec(Object *, int);
+extern int call_8c117fec(TFogEditor *, int);
 extern void operation_8c1163f0(void *);
 extern void operation_8c11649c(void *);
 extern void operation_8c1165f0(void *);
 extern void operation_8c116678(void *);
 extern void operation_8c1166c4(void *);
 extern void operation_8c116700(void *);
-extern void call_8c11673c(Object *);
-extern void call_8c1167a4(Object *);
-extern void call_8c116bf4(Object *);
+extern void call_8c11673c(TFogEditor *);
+extern void call_8c1167a4(TFogEditor *);
+extern void call_8c116bf4(TFogEditor *);
 extern void operation_8c116f60(void *);
 extern void operation_8c11635c(void *);
 extern void operation_8c122380(void *, int);
 extern void call_8c391c94(void);
-extern void call_8c1171c8(Object *);
+extern void call_8c1171c8(TFogEditor *);
 extern void call_8c391cc4(void);
-void TFogEditor_v06_8c1160a0(Object *o)
+void TFogEditor_v06_8c1160a0(TFogEditor *o)
 {
     int v1;
     int v6;
@@ -70,7 +54,7 @@ void TFogEditor_v06_8c1160a0(Object *o)
     }
     for (v1 = 0; 6 > v1; v1++) {
         v7 = v1 << 2;
-        if (((*(int *)((char *)&g_8c41cba0.f20 + (o->f34 * 0x3c)) & *(int *)((char *)0x8c3103bc + v7))) != 0) {
+        if (((*(int *)((char *)&g_8c41cba0.f20 + (o->mode * 0x3c)) & *(int *)((char *)0x8c3103bc + v7))) != 0) {
             ((S_x79568 *)((char *)(int *)((char *)o + 0x828) + v7))->f00 += 1;
         } else {
             *(int *)((char *)((char *)o + 0x828) + v7) = 0;
@@ -80,17 +64,17 @@ void TFogEditor_v06_8c1160a0(Object *o)
         t1 = call_8c117fec(o, 5);
         if (t1 != 0) {
             *(int *)((char *)o + 0x540) += 1;
-            v7 = (int)o->f540;
+            v7 = (int)o->field540;
             if (!(v7 >= 8)) {
                 goto L_8c11615a;
             }
-            o->f540 = 0;
+            o->field540 = 0;
         } else {
             t2 = call_8c117fec(o, 4);
             if (t2 != 0) {
                 *(int *)((char *)o + 0x540) -= 1;
-                if (!(o->f540 >= 0)) {
-                    o->f540 = 7;
+                if (!(o->field540 >= 0)) {
+                    o->field540 = 7;
                 }
             }
         }
@@ -103,11 +87,11 @@ L_8c11615a:;
     operation_8c1166c4((void *)o);
     operation_8c116700((void *)o);
     call_8c11673c(o);
-    if (o->f558 != 0) {
-        if (o->f558 == 1) {
+    if (o->field558 != 0) {
+        if (o->field558 == 1) {
             goto L_8c1161a2;
         }
-        if (o->f558 == 2) {
+        if (o->field558 == 2) {
             goto L_8c1161ac;
         }
     } else {
@@ -123,11 +107,11 @@ L_8c1161b2:;
     operation_8c11635c((void *)o);
     if (((o->f53c & 1)) != 0) {
         o->f53c = (unsigned int)o->f53c >> 1 << 1;
-        if (o->f558 != 0) {
-            if (o->f558 == 1) {
+        if (o->field558 != 0) {
+            if (o->field558 == 1) {
                 goto L_8c1161e8;
             }
-            if (o->f558 == 2) {
+            if (o->field558 == 2) {
                 goto L_8c1161f0;
             }
         } else {

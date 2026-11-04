@@ -1,18 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjHexLine.h"
 typedef struct S_L8c33ff6c S_L8c33ff6c;
 typedef struct S_L8c41cba0 S_L8c41cba0;
 typedef struct S_c8c18e8a0 S_c8c18e8a0;
 typedef struct Frame Frame;
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-};
 struct S_L8c41cba0 {
     char unknown0[0x20];
     int f20;
@@ -35,8 +26,8 @@ extern S_L8c33ff6c g_8c33ff6c;
 extern S_L8c41cba0 g_8c41cba0;
 extern int call_8c18e8a0(void *, int);
 extern void operation_8c0368a8(void *);
-extern void operation_8c256dcc(Object *);
-void TObjHexLine_update_8c256c7c(Object *o)
+extern void operation_8c256dcc(TObjHexLine *);
+void TObjHexLine_update_8c256c7c(TObjHexLine *o)
 {
     Frame frame;
     int flags;

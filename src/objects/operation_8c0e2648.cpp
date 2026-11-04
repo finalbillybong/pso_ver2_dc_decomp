@@ -1,29 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/object_vtable.h"
+#include "src/include/classes/TWindowStatus.h"
 typedef struct S_c8c021ef8 S_c8c021ef8;
 typedef struct S_g8c418248 S_g8c418248;
 typedef struct S_g8c4e2ba4 S_g8c4e2ba4;
-typedef struct Object Object;
-typedef struct Arg0_30 Arg0_30;
+typedef struct TWindowStatus_p30 TWindowStatus_p30;
 typedef struct Arg0_30_18 Arg0_30_18;
 typedef struct Arg0_30_2c Arg0_30_2c;
 class S_vv22;
 class S_vv23;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x10];
-    Arg0_30 *f30;
-    char unknown34[0x2c];
-    float f60;
-};
-struct Arg0_30 {
+struct TWindowStatus_p30 {
     char unknown0[0x18];
     Arg0_30_18 *f18;
     char unknown1c[0x10];
@@ -65,16 +50,16 @@ typedef struct S_vv23Data {
 } S_vv23Data;
 extern "C" void operation_8c0db20c(void *, int, int);
 extern "C" S_c8c021ef8 *lookup_low_id(int);
-extern "C" Object *TWindowStatus_ctor_8c0e2648(Object *o)
+extern "C" TWindowStatus *TWindowStatus_ctor_8c0e2648(TWindowStatus *o)
 {
-    Object **home = &o;
+    TWindowStatus **home = &o;
     S_vv22 *v22;
     S_vv23 *v23;
     int v21;
     S_c8c021ef8 *t1;
     (void)home;
     operation_8c0db20c((void *)o, (int)((void *)0x8c307714), (int)(*(S_g8c4e2ba4 **)0x8c4e2ba4));
-    o->dispatch = (void *)(void *)0x8c2677bc;
+    TOBJECT_VTABLE(o) = (void *)(void *)0x8c2677bc;
     o->tag = (int)(*(int *)0x8c307530);
     o->size = 0x7c;
     o->f60 = -1.0f;

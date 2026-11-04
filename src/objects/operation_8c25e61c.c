@@ -1,23 +1,14 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjTagChallenge.h"
 typedef struct S_g8c46fe20 S_g8c46fe20;
 typedef struct S_g8c46fe20_50 S_g8c46fe20_50;
-typedef struct Object Object;
 struct S_g8c46fe20 {
     char unknown0[0x50];
     S_g8c46fe20_50 *f50;
 };
-struct Object {
-    char unknown0[0x4];
-    short f04;
-};
 extern char g_8c3405f4[];
 extern void request_resource_release(void *);
 extern int TWindowArea_ctor_2_8c24bce8(void *);
-void TObjTagChallenge_update_8c25e61c(Object *o)
+void TObjTagChallenge_update_8c25e61c(TObjTagChallenge *o)
 {
     int t1;
     if (*(int *)0x8c4e2ba0 != 0) {

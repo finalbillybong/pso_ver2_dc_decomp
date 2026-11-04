@@ -1,10 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjCamera.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
 struct Frame {
     float f00;
     char unknown4[0x4];
@@ -12,14 +7,8 @@ struct Frame {
     float f0c;
     float f10;
 };
-struct Object {
-    char unknown0[0x3c];
-    float f3c;
-    float f40;
-    float f44;
-};
 extern char g_8c46ee84[];
-int TObjCamera_v11_8c24a49c(Object *o, float f0, float f1)
+int TObjCamera_v11_8c24a49c(TObjCamera *o, float f0, float f1)
 {
     Frame frame;
     ((void (*)(int, void *, void *))0x8c3be280)(0, &o->f3c, &(&frame)->f08);

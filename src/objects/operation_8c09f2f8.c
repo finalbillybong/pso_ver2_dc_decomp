@@ -1,15 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x64];
-    int f64;
-};
+#include "src/include/classes/TSceneSora.h"
 extern int get_current_area_8c032b10(void);
-void TSceneSora_update_8c09f2f8(Object *o)
+void TSceneSora_update_8c09f2f8(TSceneSora *o)
 {
     int t1;
     t1 = get_current_area_8c032b10();

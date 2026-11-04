@@ -1,14 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x11c];
-    int f11c;
-};
-void TOCapsuleAncient01_v17_8c0f2298(Object *o)
+#include "src/include/classes/TOCapsuleAncient01.h"
+void TOCapsuleAncient01_v17_8c0f2298(TOCapsuleAncient01 *o)
 {
     o->f11c += 0x222;
 }

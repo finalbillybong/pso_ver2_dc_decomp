@@ -1,28 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjDFRecBall.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_48 Arg0_48;
+typedef struct TObjDFRecBall_p48 TObjDFRecBall_p48;
 typedef struct Block_frame_0 {
     float f00;
     float f04;
     float f08;
 } Block_frame_0;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x26];
-    Vector3 f2c;
-    float f38;
-    float f3c;
-    float f40;
-    float f44;
-    Arg0_48 *f48;
-    int f4c;
-};
 struct Frame {
     Block_frame_0 f00;
 };
@@ -32,7 +15,7 @@ extern void njUnitVector_8c37b630(Frame *);
 extern void call_8c3bdf60(void *, void *, float);
 extern void call_8c0a7608(void *, void *);
 extern float call_8c38d7d8(void *, void *);
-void TObjDFRecBall_update_8c21b3f4(Object *o)
+void TObjDFRecBall_update_8c21b3f4(TObjDFRecBall *o)
 {
     Frame frame;
     float t1;

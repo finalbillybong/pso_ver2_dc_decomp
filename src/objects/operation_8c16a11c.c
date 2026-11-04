@@ -1,23 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TPlyItem.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x2c];
-    void *f48;
-};
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TPlyItem_dtor_8c16a11c(Object *o, int a1)
+extern void call_8c122774(void *, TPlyItem *);
+TPlyItem *TPlyItem_dtor_8c16a11c(TPlyItem *o, int a1)
 {
     if (o != 0) {
-        o->dispatch = (void *)0x8c2701a4;
+        o->vtable = (void *)0x8c2701a4;
         if (((char *)o + 0x24) != 0) {
             o->f48 = (void *)0x8c2701c0;
             if (((char *)o + 0x24) != 0) {

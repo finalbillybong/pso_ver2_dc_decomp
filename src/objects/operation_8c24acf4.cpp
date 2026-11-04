@@ -1,15 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjBigTuitate.h"
 typedef struct Frame Frame;
 typedef struct S_g8c510f64 S_g8c510f64;
 typedef struct S_g8c510f64_42c S_g8c510f64_42c;
 typedef struct S_g8c510f64_42c_8 S_g8c510f64_42c_8;
 typedef struct S_g8c510f64_42c_c S_g8c510f64_42c_c;
-typedef struct Arg0_64 Arg0_64;
-class Object;
+typedef struct TObjBigTuitate_p64 TObjBigTuitate_p64;
 class Arg0_se4;
 struct Frame {
     char unknown0[0x8];
@@ -24,26 +19,6 @@ struct S_g8c510f64_42c {
     S_g8c510f64_42c_8 *f08;
     S_g8c510f64_42c_c *f0c;
 };
-class Object {
-public:
-    char unknown0[0x18];
-    virtual void v0();
-    virtual void v1();
-    virtual void v2();
-    virtual void v3();
-    virtual void v4();
-    virtual void v5();
-    virtual void v6();
-    virtual void v7();
-    virtual void v8();
-    virtual void v9();
-    virtual void v10();
-    virtual int v11(float, float);
-};
-typedef struct ObjectData {
-    char unknown0[0x64];
-    Arg0_64 *f64;
-} ObjectData;
 class Arg0_se4 {
 public:
     char unknown0[0x14];
@@ -69,7 +44,7 @@ extern "C" void translate_current_matrix_v_8c382a40(void *);
 extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3a944a(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void TObjBigTuitate_render_8c24acf4(Object *o)
+extern "C" void TObjBigTuitate_render_8c24acf4(TObjBigTuitate *o)
 {
     Frame frame;
     int t1;
@@ -89,7 +64,7 @@ extern "C" void TObjBigTuitate_render_8c24acf4(Object *o)
         call_8c3827d8((void *)((*(S_g8c510f64 **)0x8c510f64)->f42c->f0c));
         njPushMatrixEx_8c38ae68();
         translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
-        njRotateY_8c37df90(0, (void *)(((ObjectData *)o)->f64));
+        njRotateY_8c37df90(0, (void *)(o->f64));
         call_8c3a944a((void *)((*(S_g8c510f64 **)0x8c510f64)->f42c->f08));
         njPopMatrixEx_8c38ad10();
         if (t2 != 0) {

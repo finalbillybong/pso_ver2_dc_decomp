@@ -1,25 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TNowLoading.h"
 typedef struct S_L8c46ee84 S_L8c46ee84;
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_24 Arg0_24;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_2c Arg0_2c;
-struct Object {
-    char unknown0[0x20];
-    Arg0_20 *f20;
-    Arg0_24 *f24;
-    Arg0_28 *f28;
-    Arg0_2c *f2c;
-    float f30;
-    float f34;
-    float f38;
-};
+typedef struct TNowLoading_p20 TNowLoading_p20;
+typedef struct TNowLoading_p24 TNowLoading_p24;
+typedef struct TNowLoading_p28 TNowLoading_p28;
+typedef struct TNowLoading_p2c TNowLoading_p2c;
 struct S_L8c46ee84 {
     float f00;
     float f04;
@@ -36,7 +21,7 @@ struct Frame {
 extern int g_8c46ee80;
 extern S_L8c46ee84 g_8c46ee84;
 extern void call_8c0a7608(void *, void *);
-void TNowLoading_update_8c189b7c(Object *o)
+void TNowLoading_update_8c189b7c(TNowLoading *o)
 {
     Frame frame;
     if (g_8c46ee80 == 0) {

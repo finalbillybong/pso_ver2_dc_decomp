@@ -1,3 +1,4 @@
+#include "src/include/classes/TObjDFDemo4.h"
 typedef struct Vector3 {
     float x;
     float y;
@@ -5,20 +6,9 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_L8c338078 S_L8c338078;
 typedef struct Frame Frame;
-typedef struct Object Object;
 typedef struct Arg0_sd8 Arg0_sd8;
 typedef struct S_vv30 S_vv30;
 typedef struct S_vv30_0 S_vv30_0;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0xd2];
-    int fd8;
-    char unknowndc[0x8];
-    int fe4;
-    int fe8;
-    float fec;
-};
 struct S_vv30 {
     S_vv30_0 *f00;
 };
@@ -44,7 +34,7 @@ extern void operation_8c191504(int);
 extern int create_effect_769c(void *, int);
 extern void call_8c0a7608(void *, int);
 extern void set_view_offsets(void *, void *, void *);
-void TObjDFDemo4_update_8c229d88(Object *o)
+void TObjDFDemo4_update_8c229d88(TObjDFDemo4 *o)
 {
     Frame frame;
     S_vv30 *v30;

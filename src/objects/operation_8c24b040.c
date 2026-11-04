@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x108];
-    int f108;
-};
+#include "src/include/classes/TObjDoaEx01.h"
 extern void call_8c24b070(void);
 extern void call_8c24b130(void);
-void TObjDoaEx01_render_8c24b040(Object *o)
+void TObjDoaEx01_render_8c24b040(TObjDoaEx01 *o)
 {
     if (((o->f108 & 1)) != 0) {
         call_8c24b070();

@@ -1,21 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0xc4];
-    float fe4;
-};
+#include "src/include/classes/TObjWarpBoss03.h"
 extern int g_8c336b10;
-extern void call_8c088f14(Object *, int, int);
-Object *TObjWarpBoss03_ctor_8c220664(Object *o, int a1, int a2)
+extern void call_8c088f14(TObjWarpBoss03 *, int, int);
+TObjWarpBoss03 *TObjWarpBoss03_ctor_8c220664(TObjWarpBoss03 *o, int a1, int a2)
 {
     call_8c088f14(o, a1, a2);
     o->dispatch = (void *)0x8c278860;

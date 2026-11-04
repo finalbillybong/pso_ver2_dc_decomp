@@ -1,23 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOMonumentAncient02.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_120 Arg0_120;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x104];
-    Arg0_120 *f120;
-};
+typedef struct TOMonumentAncient02_p120 TOMonumentAncient02_p120;
 extern void mark_effect_for_release(void *);
-extern void call_8c053f54(Object *);
+extern void call_8c053f54(TOMonumentAncient02 *);
 extern void operation_8c052124(void *);
 extern void destroy_object_8c0ee900(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TOMonumentAncient02_dtor_8c0f1a2c(Object *o, int a1)
+extern void call_8c122774(void *, TOMonumentAncient02 *);
+TOMonumentAncient02 *TOMonumentAncient02_dtor_8c0f1a2c(TOMonumentAncient02 *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c2685a8;

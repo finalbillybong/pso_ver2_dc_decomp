@@ -1,17 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xe4];
-    int fe4;
-    char unknowne8[0x20];
-    int f108;
-};
+#include "src/include/classes/TOFenceAncient04.h"
 extern void operation_8c05426c(void *, int, int);
-void TOFenceAncient04_v16_8c0f32ec(Object *o)
+void TOFenceAncient04_v16_8c0f32ec(TOFenceAncient04 *o)
 {
     int v1;
     o->fe4 = 1;

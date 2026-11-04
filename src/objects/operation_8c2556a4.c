@@ -1,25 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemProArmorParticle.h"
 typedef struct S_g8c44be9c S_g8c44be9c;
-typedef struct Object Object;
 typedef struct Arg0_1e4 Arg0_1e4;
-typedef struct Arg0_e8 Arg0_e8;
-struct Object {
-    char unknown0[0xe6];
-    unsigned short fe6;
-    Arg0_e8 *fe8;
-    char unknownec[0xf4];
-    int f1e0;
-    Arg0_1e4 *f1e4;
-    int f1e8;
-};
+typedef struct TItemEquipBase_pe8 TItemEquipBase_pe8;
 extern int g_8c44be04;
 extern S_g8c44be9c *g_8c44be9c;
 extern void TItemEffArmorParticle_create_8c255704(int, int, int, int);
-void TItemProArmorParticle_v17_8c2556a4(Object *o)
+void TItemProArmorParticle_v17_8c2556a4(TItemProArmorParticle *o)
 {
     int v2;
     int v1;

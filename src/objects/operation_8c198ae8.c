@@ -1,21 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss1DragonColli.h"
 typedef struct Frame Frame;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-    int f28;
-};
 struct Frame {
     float f04;
     float f08;
@@ -25,17 +10,17 @@ extern int g_8c31c9e0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void TBoss1DragonColli_C_ctor_8c198920(int, Object *, int, void *, float);
-Object *TBoss1DragonColli_ctor_8c198ae8(Object *o, int a1)
+extern void TBoss1DragonColli_C_ctor_8c198920(int, TBoss1DragonColli *, int, void *, float);
+TBoss1DragonColli *TBoss1DragonColli_ctor_8c198ae8(TBoss1DragonColli *o, int a1)
 {
     Frame frame;
-    Object **home = &o;
+    TBoss1DragonColli **home = &o;
     int t1;
     int t2;
     int t3;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c272914;
+    o->vtable = (void *)0x8c272914;
     o->tag = (int)(g_8c31c9e0);
     o->size = 0x2c;
     (&frame)->f04 = 0.0f;

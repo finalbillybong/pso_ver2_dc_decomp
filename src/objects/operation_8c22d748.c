@@ -1,23 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_88 Arg0_88;
-typedef struct Arg0_90 Arg0_90;
-struct Object {
-    char unknown0[0x88];
-    Arg0_88 *f88;
-    char unknown8c[0x4];
-    Arg0_90 *f90;
-    int f94;
-};
-struct Arg0_88 {
+#include "src/include/classes/TQuestVmDownLoadServer.h"
+typedef struct TQuestVmDownLoadServer_p88 TQuestVmDownLoadServer_p88;
+typedef struct TQuestVmDownLoadServer_p90 TQuestVmDownLoadServer_p90;
+struct TQuestVmDownLoadServer_p88 {
     char unknown0[0x4];
     short f04;
 };
-struct Arg0_90 {
+struct TQuestVmDownLoadServer_p90 {
     char unknown0[0x4];
     short f04;
 };
@@ -31,13 +19,13 @@ extern void operation_8c22dd38(void *);
 extern void operation_8c22dd9c(void *);
 extern void operation_8c22de98(void *);
 extern void operation_8c22dfc8(void *);
-extern void build_download_vmu_header_8c22e0c4(Object *);
-extern void call_8c22e20c(Object *);
+extern void build_download_vmu_header_8c22e0c4(TQuestVmDownLoadServer *);
+extern void call_8c22e20c(TQuestVmDownLoadServer *);
 extern void operation_8c22e27c(void *);
-extern void call_8c22e2cc(Object *);
-extern void call_8c22e414(Object *);
+extern void call_8c22e2cc(TQuestVmDownLoadServer *);
+extern void call_8c22e414(TQuestVmDownLoadServer *);
 extern void operation_8c22e47c(void *);
-extern void call_8c22e4fc(Object *);
+extern void call_8c22e4fc(TQuestVmDownLoadServer *);
 extern void operation_8c22e684(void *);
 extern void operation_8c22e6ec(void *);
 extern void operation_8c22ea28(void *);
@@ -45,7 +33,7 @@ extern void operation_8c22eb20(void *);
 extern void operation_8c22e7c8(void *);
 extern void operation_8c22e978(void *);
 extern void operation_8c22e78c(void *);
-void TQuestVmDownLoadServer_update_8c22d748(Object *o)
+void TQuestVmDownLoadServer_update_8c22d748(TQuestVmDownLoadServer *o)
 {
     operation_8c22e858((void *)o);
     switch (o->f94) {

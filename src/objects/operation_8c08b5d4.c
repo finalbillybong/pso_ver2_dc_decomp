@@ -1,45 +1,27 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_24 Arg0_24;
-typedef struct Arg0_88 Arg0_88;
-typedef struct Arg0_9c Arg0_9c;
+#include "src/include/classes/TObjEZBoneRotPlayer.h"
+typedef struct TObjEZBoneRotPlayer_p20 TObjEZBoneRotPlayer_p20;
+typedef struct TObjEZBoneRotPlayer_p24 TObjEZBoneRotPlayer_p24;
+typedef struct TObjEZBoneRotPlayer_p88 TObjEZBoneRotPlayer_p88;
+typedef struct TObjEZBoneRotPlayer_p9c TObjEZBoneRotPlayer_p9c;
 typedef struct S_vv1 S_vv1;
-struct Object {
-    char unknown0[0x20];
-    Arg0_20 *f20;
-    Arg0_24 *f24;
-    char unknown28[0x60];
-    Arg0_88 *f88;
-    int f8c;
-    int f90;
-    int f94;
-    float f98;
-    Arg0_9c *f9c;
-    int fa0;
-};
 struct S_vv1 {
     char unknown0[0x64];
     int f64;
     char unknown68[0x2a8];
     int f310;
 };
-struct Arg0_24 {
+struct TObjEZBoneRotPlayer_p24 {
     int f00;
     int f04;
     char unknown8[0x8];
     int f10;
 };
-struct Arg0_9c {
+struct TObjEZBoneRotPlayer_p9c {
     char unknown0[0x64];
     int f64;
 };
-extern void call_8c08b454(Object *, void *, void *, int);
-void TObjEZBoneRotPlayer_update_8c08b5d4(Object *o)
+extern void call_8c08b454(TObjEZBoneRotPlayer *, void *, void *, int);
+void TObjEZBoneRotPlayer_update_8c08b5d4(TObjEZBoneRotPlayer *o)
 {
     int v2;
     S_vv1 *v1;
@@ -72,7 +54,7 @@ L_8c08b654:;
     o->f94 = (int)(((char *)o + 0x28));
     call_8c08b454(o, (void *)(o->f20), (void *)v2, (int)((int)((float)o->f24->f00 * o->f98)));
     if (o->f98 > 0.0f) {
-        o->f88 = (Arg0_88 *)((int)o->f88 + o->f24->f04);
+        o->f88 = (TObjEZBoneRotPlayer_p88 *)((int)o->f88 + o->f24->f04);
     }
     o->fa0 = (int)(o->f9c->f64);
 }

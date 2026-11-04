@@ -1,20 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TAdPSOPlay.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
-typedef struct Object Object;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_2c Arg0_2c;
+typedef struct TAdPSOPlay_p28 TAdPSOPlay_p28;
+typedef struct TAdPSOPlay_p2c TAdPSOPlay_p2c;
 typedef struct S_vv81 S_vv81;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-    int f24;
-    Arg0_28 *f28;
-    Arg0_2c *f2c;
-};
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
@@ -26,13 +14,13 @@ struct S_vv81 {
 extern char g_8c41cba0[];
 extern void operation_8c1cc690(void);
 extern int pair_grid_view_ready(void *);
-extern int call_8c25ad08(Object *);
+extern int call_8c25ad08(TAdPSOPlay *);
 extern int operation_8c01d8a8(void *, int);
 extern void call_8c119c78(void *);
 extern void operation_8c25ad8c(void *);
 extern void operation_8c25adc8(void *);
 extern void select_mode0_8c1cc49c(void);
-void TAdPSOPlay_update_8c25abb0(Object *o)
+void TAdPSOPlay_update_8c25abb0(TAdPSOPlay *o)
 {
     char *v82;
     S_vv81 *v81;
@@ -59,7 +47,7 @@ void TAdPSOPlay_update_8c25abb0(Object *o)
         t1 = pair_grid_view_ready((void *)v82);
         if (t1 != 0) {
             t2 = call_8c25ad08(o);
-            o->f2c = (Arg0_2c *)t2;
+            o->f2c = (TAdPSOPlay_p2c *)t2;
             o->f20 = 1;
             return;
         }

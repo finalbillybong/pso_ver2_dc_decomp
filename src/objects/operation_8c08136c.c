@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xec];
-    int fec;
-};
+#include "src/include/classes/TObjLazerFenceExtra.h"
 extern void call_8c0813dc(void);
 extern void operation_8c0813a0(void *);
-void TObjLazerFenceExtra_update_8c08136c(Object *o)
+void TObjLazerFenceExtra_update_8c08136c(TObjLazerFenceExtra *o)
 {
     if (o->fec != 0) {
         if (o->fec != 1) {

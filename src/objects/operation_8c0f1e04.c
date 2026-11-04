@@ -1,23 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOMonumentAncient02.h"
 typedef struct SBlock4 {
     short halves[2];
 } SBlock4;
 typedef struct Frame Frame;
 typedef struct S_g8c46ed0c S_g8c46ed0c;
 typedef struct S_g8c46ed0c_0 S_g8c46ed0c_0;
-typedef struct Object Object;
-typedef struct Arg0_84 Arg0_84;
-struct Object {
-    char unknown0[0x84];
-    Arg0_84 *f84;
-    char unknown88[0x5c];
-    int fe4;
-};
-struct Arg0_84 {
+typedef struct TOMonumentAncient02_p84 TOMonumentAncient02_p84;
+struct TOMonumentAncient02_p84 {
     char unknown0[0x4];
     short f04;
 };
@@ -32,8 +21,8 @@ extern S_g8c46ed0c *g_8c46ed0c;
 extern int lookup_low_id(int);
 extern int angle_between_xz(void *, void *);
 extern void operation_8c022034(void *, int, int);
-extern void call_8c05406c(Object *, Frame *);
-void TOMonumentAncient02_v14_8c0f1e04(Object *o, int a1)
+extern void call_8c05406c(TOMonumentAncient02 *, Frame *);
+void TOMonumentAncient02_v14_8c0f1e04(TOMonumentAncient02 *o, int a1)
 {
     Frame frame;
     int v4;

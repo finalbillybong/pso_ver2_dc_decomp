@@ -1,26 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TBoss2LaserLight.h"
 typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_44 Arg0_44;
-struct Object {
-    char unknown0[0x20];
-    Arg0_20 *f20;
-    int f24;
-    int f28;
-    char unknown2c[0x10];
-    float f3c;
-    float f40;
-    Arg0_44 *f44;
-};
+typedef struct TBoss2LaserLight_p44 TBoss2LaserLight_p44;
 extern void operation_8c014f1c(void *);
 extern void copy_pair_8c014f10(void *, void *);
 extern void call_8c014ebc(void *, void *);
 extern void operation_8c014f28(void *);
-void TBoss2LaserLight_update_8c185c08(Object *o)
+void TBoss2LaserLight_update_8c185c08(TBoss2LaserLight *o)
 {
     float v3;
     float v5;

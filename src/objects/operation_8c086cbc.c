@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_28 Arg0_28;
-struct Object {
-    char unknown0[0x28];
-    Arg0_28 *f28;
-};
+#include "src/include/classes/TObjBattery.h"
+typedef struct TObjBattery_p28 TObjBattery_p28;
 extern void call_8c3827d8(void *);
-extern void call_8c0803ec(Object *);
-void TObjBattery_v16_8c086cbc(Object *o)
+extern void call_8c0803ec(TObjBattery *);
+void TObjBattery_v16_8c086cbc(TObjBattery *o)
 {
     call_8c3827d8((void *)(o->f28));
     call_8c0803ec(o);

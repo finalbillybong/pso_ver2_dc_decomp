@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOExplosiveMachine.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 extern void destroy_shared_object(void *, short, int);
-extern void call_8c122774(void *, Object *);
-Object *TOExplosiveMachine_dtor_8c1c04c4(Object *o, int a1)
+extern void call_8c122774(void *, TOExplosiveMachine *);
+TOExplosiveMachine *TOExplosiveMachine_dtor_8c1c04c4(TOExplosiveMachine *o, int a1)
 {
     int v1;
     if (o != 0) {

@@ -1,33 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x30c];
-    int f32c;
-    int f330;
-    int f334;
-    int f338;
-    int f33c;
-    int f340;
-    int f344;
-    int f348;
-};
+#include "src/include/classes/TeneFakeTecThunderEff.h"
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern void call_8c08ab24(Object *);
-Object *TeneFakeTecThunderEff_ctor_8c08a590(Object *o, int a1, int a2, int a3, int a4)
+extern void call_8c08ab24(TeneFakeTecThunderEff *);
+TeneFakeTecThunderEff *TeneFakeTecThunderEff_ctor_8c08a590(TeneFakeTecThunderEff *o, int a1, int a2, int a3, int a4)
 {
-    Object **home = &o;
+    TeneFakeTecThunderEff **home = &o;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c26526c;
+    o->vtable = (void *)0x8c26526c;
     o->tag = (int)(*(int *)0x8c3001d8);
     o->size = 0x34c;
     o->f33c = a2;

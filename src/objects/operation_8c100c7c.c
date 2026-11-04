@@ -1,21 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_98 Arg0_98;
+#include "src/include/classes/TObjEnvSound.h"
+typedef struct TObjEnvSound_p98 TObjEnvSound_p98;
 typedef struct Arg0_9c Arg0_9c;
-struct Object {
-    char unknown0[0x94];
-    float f94;
-    Arg0_98 *f98;
-    Arg0_9c *f9c;
-    int fa0;
-};
 extern int operation_8c100e14(int, float);
-extern void call_8c05fd7c(void *, Object *, void *, int, int);
-void TObjEnvSound_update_8c100c7c(Object *o)
+extern void call_8c05fd7c(void *, TObjEnvSound *, void *, int, int);
+void TObjEnvSound_update_8c100c7c(TObjEnvSound *o)
 {
     int t1;
     t1 = operation_8c100e14((int)o, (float)(o->f94 * o->f94));

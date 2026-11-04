@@ -1,19 +1,10 @@
+#include "src/include/classes/TObjDFEnding.h"
 typedef struct Vector3 {
     float x;
     float y;
     float z;
 } Vector3;
 typedef struct Frame Frame;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x9a];
-    int fa0;
-    char unknowna4[0xa4];
-    int f148;
-    float f14c;
-};
 struct Frame {
     char unknown0[0x14];
     int f14;
@@ -27,7 +18,7 @@ extern Vector3 g_8c338b34;
 extern int lookup_low_id(int);
 extern void operation_8c0a2144(int);
 extern void call_8c0a22fc(Frame *);
-void TObjDFEnding_update_8c230bf8(Object *o)
+void TObjDFEnding_update_8c230bf8(TObjDFEnding *o)
 {
     Frame frame;
     int v3;

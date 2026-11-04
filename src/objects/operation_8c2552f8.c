@@ -1,21 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemProShieldModel.h"
 typedef struct S_c8c1931b0 S_c8c1931b0;
-typedef struct Object Object;
 typedef struct Arg0_1c4 Arg0_1c4;
-struct Object {
-    char unknown0[0x28];
-    int f28;
-    char unknown2c[0xc];
-    int f38;
-    char unknown3c[0x188];
-    Arg0_1c4 *f1c4;
-    char unknown1c8[0xc];
-    int f1d4;
-};
 struct S_c8c1931b0 {
     int f00;
     int f04;
@@ -24,7 +9,7 @@ struct S_c8c1931b0 {
 };
 extern int operation_193348(unsigned int);
 extern S_c8c1931b0 *operation_8c1931b0(int);
-void TItemProShieldModel_v17_8c2552f8(Object *o)
+void TItemProShieldModel_v17_8c2552f8(TItemProShieldModel *o)
 {
     char *v61;
     int t1;

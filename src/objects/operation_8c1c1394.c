@@ -1,44 +1,23 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjCityAirCar_Car.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_64 Arg0_64;
-typedef struct Arg0_ac Arg0_ac;
+typedef struct TObjCityAirCar_Car_p64 TObjCityAirCar_Car_p64;
+typedef struct TObjCityAirCar_Car_pac TObjCityAirCar_Car_pac;
 typedef struct Block_frame_0 {
     float f00;
     char unknown4[0x4];
     float f08;
 } Block_frame_0;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x36];
-    Vector3 f3c;
-    char unknown48[0x1c];
-    Arg0_64 *f64;
-    char unknown68[0x2c];
-    float f94;
-    float f98;
-    int f9c;
-    int fa0;
-    int fa4;
-    int fa8;
-    Arg0_ac *fac;
-};
 struct Frame {
     Block_frame_0 f00;
 };
-extern int call_8c1c11a8(Object *);
-extern int call_8c05fd7c(int, Object *, void *, int, int);
+extern int call_8c1c11a8(TObjCityAirCar_Car *);
+extern int call_8c05fd7c(int, TObjCityAirCar_Car *, void *, int, int);
 extern void emit_control_60320(int, int, int);
 extern int create_effect_7708(void *, int, int);
 extern float njSin_8c37eb0c(void *);
 extern float njCos_8c38c154(void *);
 extern void call_8c0a7608(void *, Frame *);
-void TObjCityAirCar_Car_update_8c1c1394(Object *o)
+void TObjCityAirCar_Car_update_8c1c1394(TObjCityAirCar_Car *o)
 {
     Frame frame;
     char *v181;
@@ -79,11 +58,11 @@ L_8c1c1400:;
         if (o->fa8 >= 0x28) {
             o->fa8 = 0;
         }
-        if (o->fac == 0) {
+        if (o->child == 0) {
             t3 = create_effect_7708((void *)(&o->f3c), 0x8a, 0x40);
-            o->fac = (Arg0_ac *)t3;
+            o->child = (TObjCityAirCar_Car_pac *)t3;
         }
-        if (o->fac != 0) {
+        if (o->child != 0) {
             if (o->fa0 == 0) {
                 v138 = (float)20.0f;
             } else {
@@ -94,7 +73,7 @@ L_8c1c1400:;
             (&frame)->f00.f00 -= v138 * t4;
             t5 = njCos_8c38c154((void *)(o->f64));
             (&frame)->f00.f08 -= v138 * t5;
-            call_8c0a7608((void *)(o->fac), (Frame *)((&frame)));
+            call_8c0a7608((void *)(o->child), (Frame *)((&frame)));
         }
     }
 }

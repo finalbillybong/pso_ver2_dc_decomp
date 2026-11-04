@@ -1,20 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TAdBack.h"
 typedef struct S_L8c46ee84 S_L8c46ee84;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    float f20;
-    float f24;
-    float f28;
-};
 struct S_L8c46ee84 {
     float f00;
     float f04;
@@ -27,14 +12,14 @@ extern int g_8c31c894;
 extern S_L8c46ee84 g_8c46ee84;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int get_game_mode_8c01c25c(void);
-Object *TAdBack_ctor_8c198294(Object *o, int a1)
+TAdBack *TAdBack_ctor_8c198294(TAdBack *o, int a1)
 {
-    Object **home = &o;
+    TAdBack **home = &o;
     int v6;
     int t1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c2728dc;
+    o->vtable = (void *)0x8c2728dc;
     o->tag = (int)(g_8c31c894);
     o->size = 0x40;
     t1 = get_game_mode_8c01c25c();

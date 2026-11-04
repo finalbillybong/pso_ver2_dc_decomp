@@ -1,22 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjCity_Season_SonicAdv2.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0xc0];
-    int fdc;
-};
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern void call_8c053f54(Object *);
+extern void call_8c053f54(TObjCity_Season_SonicAdv2 *);
 extern void operation_8c052124(void *);
 extern void destroy_context_8c051f28(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TObjCity_Season_SonicAdv2_dtor_8c1d8fe4(Object *o, int a1)
+extern void call_8c122774(void *, TObjCity_Season_SonicAdv2 *);
+TObjCity_Season_SonicAdv2 *TObjCity_Season_SonicAdv2_dtor_8c1d8fe4(TObjCity_Season_SonicAdv2 *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c276f90;

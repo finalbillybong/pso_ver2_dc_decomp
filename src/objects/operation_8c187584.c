@@ -1,22 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_34 Arg0_34;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    Arg0_20 *f20;
-    char unknown24[0x8];
-    int f2c;
-    int f30;
-    Arg0_34 *f34;
-};
-struct Arg0_20 {
+#include "src/include/classes/TSetEvtDestroy.h"
+typedef struct TSetEvtDestroy_p20 TSetEvtDestroy_p20;
+typedef struct TSetEvtDestroy_p34 TSetEvtDestroy_p34;
+struct TSetEvtDestroy_p20 {
     char unknown0[0x4];
     short f04;
     char unknown6[0x2];
@@ -28,7 +13,7 @@ extern int paired_array_has_active_item(void *);
 extern void store_pair_8c1876c0(void *);
 extern int operation_8c1876d8(void);
 extern void operation_8c110e00(int);
-void TSetEvtDestroy_update_8c187584(Object *o)
+void TSetEvtDestroy_update_8c187584(TSetEvtDestroy *o)
 {
     int t1;
     int t2;

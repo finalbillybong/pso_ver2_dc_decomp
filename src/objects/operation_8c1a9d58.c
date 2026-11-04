@@ -1,18 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjBgmCol.h"
 typedef struct S_g8c324d68 S_g8c324d68;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xa0];
-    int fa0;
-};
 extern int operation_8c1a9ec4(void *);
 extern void call_8c1aa184(void);
 extern void call_8c1003d0(void *);
-void TObjBgmCol_update_8c1a9d58(Object *o)
+void TObjBgmCol_update_8c1a9d58(TObjBgmCol *o)
 {
     int v1;
     int t1;

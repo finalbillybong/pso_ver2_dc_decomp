@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x2c];
-    int f2c;
-};
+#include "src/include/classes/TCineCtrl.h"
 extern void operation_8c1afac8(void *);
 extern void call_8c1afb74(void);
-void TCineCtrl_update_8c1afa58(Object *o)
+void TCineCtrl_update_8c1afa58(TCineCtrl *o)
 {
     if (o->f2c != 0) {
         if (o->f2c != 1) {

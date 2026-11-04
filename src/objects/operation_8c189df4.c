@@ -1,36 +1,24 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TLoadCtrl.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
 extern int g_8c319e88;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern unsigned int g_8c4dbc64;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void TNowLoading_ctor_8c18999c(int, Object *, void *);
+extern void TNowLoading_ctor_8c18999c(int, TLoadCtrl *, void *);
 extern void bgm_play_acx_bank_8c1009e4(int);
 extern void TAdLoadQuest_ctor_8c1c7210(void *, int);
-extern void TAdFloorLoad_ctor_8c207854(int, Object *, int);
-Object *TLoadCtrl_ctor_8c189df4(Object *o, int a1)
+extern void TAdFloorLoad_ctor_8c207854(int, TLoadCtrl *, int);
+TLoadCtrl *TLoadCtrl_ctor_8c189df4(TLoadCtrl *o, int a1)
 {
-    Object **home = &o;
+    TLoadCtrl **home = &o;
     int t1;
     int t2;
     int t3;
     int t4;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c2721f0;
+    o->vtable = (void *)0x8c2721f0;
     o->tag = (int)(g_8c319e88);
     o->size = 0x20;
     switch (g_8c4dbc64) {

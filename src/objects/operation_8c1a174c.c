@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjInfoCol.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
 typedef struct S_c8c021ef8 S_c8c021ef8;
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0xe4];
-    float fe4;
-};
 struct S_L8c41cba0 {
     char unknown0[0x28];
     int f28;
@@ -26,7 +17,7 @@ extern int operation_8c1a1830(int, float);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int player_flag9_8c026508(void);
 extern void call_8c016b78(void);
-void TObjInfoCol_update_8c1a174c(Object *o)
+void TObjInfoCol_update_8c1a174c(TObjInfoCol *o)
 {
     int v3;
     int v5;

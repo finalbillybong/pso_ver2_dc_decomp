@@ -1,18 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOBarrierEnergy01.h"
 typedef struct S_g8c4d7cc4 S_g8c4d7cc4;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x28];
-    int f28;
-    char unknown2c[0xb8];
-    int fe4;
-    char unknowne8[0x20];
-    int f108;
-};
 struct S_g8c4d7cc4 {
     char unknown0[0x4];
     int f04;
@@ -20,7 +7,7 @@ struct S_g8c4d7cc4 {
 extern void call_8c0eeb58(void);
 extern void operation_8c10b9d0(int);
 extern void operation_8c05426c(void *, int, int);
-void TOBarrierEnergy01_v17_8c10b8d0(Object *o)
+void TOBarrierEnergy01_v17_8c10b8d0(TOBarrierEnergy01 *o)
 {
     call_8c0eeb58();
     operation_8c10b9d0((int)o);

@@ -1,14 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TTecGiZonde.h"
 typedef struct Block8 {
     int words[2];
 } Block8;
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
+typedef struct TTecGiZonde_p20 TTecGiZonde_p20;
 class Arg1;
 typedef struct Block_frame_0 {
     int f00;
@@ -16,12 +11,6 @@ typedef struct Block_frame_0 {
 } Block_frame_0;
 struct Frame {
     Block_frame_0 f00;
-};
-struct Object {
-    char unknown0[0x20];
-    Arg0_20 *f20;
-    char unknown24[0xb0];
-    float fd4;
 };
 class Arg1 {
 public:
@@ -56,7 +45,7 @@ public:
 typedef struct Arg1Data {
 
 } Arg1Data;
-extern "C" void TTecGiZonde_v07_8c0b2f34(Object *o, Arg1 *a1)
+extern "C" void TTecGiZonde_v07_8c0b2f34(TTecGiZonde *o, Arg1 *a1)
 {
     Frame frame;
     (&frame)->f00.f04 = o->fd4;

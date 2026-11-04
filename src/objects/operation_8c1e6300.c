@@ -1,30 +1,17 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TAdSoniclogo.h"
 typedef struct S_g8c44be84 S_g8c44be84;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-};
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void call_8c1848e0(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_fall(int, void *, void *);
-Object *TAdSoniclogo_ctor_8c1e6300(Object *o, int a1)
+TAdSoniclogo *TAdSoniclogo_ctor_8c1e6300(TAdSoniclogo *o, int a1)
 {
-    Object **home = &o;
+    TAdSoniclogo **home = &o;
     int t1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c277f0c;
+    o->vtable = (void *)0x8c277f0c;
     o->tag = (int)(*(int *)0x8c32c038);
     o->size = 0x24;
     o->f20 = 0;

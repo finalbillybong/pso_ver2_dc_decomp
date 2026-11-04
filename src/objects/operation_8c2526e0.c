@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemWpnOnSpreadGun.h"
 typedef struct Arg0_238 Arg0_238;
-struct Object {
-    char unknown0[0x238];
-    Arg0_238 *f238;
-};
 extern void njRotateZ_8c37e02c(int, void *);
-void TItemWpnOnSpreadGun_v57_8c2526e0(Object *o)
+void TItemWpnOnSpreadGun_v57_8c2526e0(TItemWpnOnSpreadGun *o)
 {
     if (*(int *)0x8c4689f0 == 1) {
         njRotateZ_8c37e02c(0, (void *)(o->f238));

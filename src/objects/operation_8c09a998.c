@@ -1,28 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    int f20;
-    int f24;
-    int f28;
-    int f2c;
-    float f30;
-    float f34;
-    float f38;
-    float f3c;
-    char unknown40[0x8];
-    float f48;
-    float f4c;
-    float f50;
-    int f54;
-};
-void TObjCMHexTile_update_8c09a998(Object *o)
+#include "src/include/classes/TObjCMHexTile.h"
+void TObjCMHexTile_update_8c09a998(TObjCMHexTile *o)
 {
     float v5;
     float v6;

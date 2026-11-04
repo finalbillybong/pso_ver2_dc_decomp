@@ -1,17 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss3VoloptCtrl.h"
 typedef struct S_g8c44be04 S_g8c44be04;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    int f20;
-};
 extern char g_8c335d04[];
 extern void call_8c138598(int);
 extern void call_8c0a2144(int);
@@ -23,7 +12,7 @@ extern void operation_8c206d8c(int);
 extern void call_8c09e188(void *, int, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c206e2c(void *);
-void TBoss3VoloptCtrl_update_8c206cc0(Object *o)
+void TBoss3VoloptCtrl_update_8c206cc0(TBoss3VoloptCtrl *o)
 {
     int t1;
     int t2;

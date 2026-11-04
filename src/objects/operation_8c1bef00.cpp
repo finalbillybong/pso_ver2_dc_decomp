@@ -1,14 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/object_vtable.h"
+#include "src/include/classes/TWindowCtrlMainKiller.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 class S_g8c4e2ba4 {
 public:
     char unknown0[0x18];
@@ -26,11 +18,11 @@ typedef struct S_g8c4e2ba0Data {
 
 } S_g8c4e2ba0Data;
 extern "C" void TObject_dtor_8c03311c(void *, short);
-extern "C" void call_8c122774(void *, Object *);
-extern "C" Object *TWindowCtrlMainKiller_dtor_8c1bef00(Object *o, int a1)
+extern "C" void call_8c122774(void *, TWindowCtrlMainKiller *);
+extern "C" TWindowCtrlMainKiller *TWindowCtrlMainKiller_dtor_8c1bef00(TWindowCtrlMainKiller *o, int a1)
 {
     if (o != 0) {
-        o->dispatch = (void *)(void *)0x8c275620;
+        TOBJECT_VTABLE(o) = (void *)(void *)0x8c275620;
         if (*(int *)0x8c4e2ba4 != 0) {
             if (*(int *)0x8c4e2ba4 != 0) {
                 (*(S_g8c4e2ba4 **)0x8c4e2ba4)->v0(1);

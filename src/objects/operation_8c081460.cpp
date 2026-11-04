@@ -1,39 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-class Object;
-class Object {
-public:
-    char unknown0[0x18];
-    virtual void v0();
-    virtual void v1();
-    virtual void v2();
-    virtual void v3();
-    virtual void v4();
-    virtual void v5();
-    virtual void v6();
-    virtual void v7();
-    virtual void v8();
-    virtual void v9();
-    virtual void v10();
-    virtual int v11(float, float);
-};
-typedef struct ObjectData {
-    char unknown0[0xec];
-    int fec;
-    char unknownf0[0x20];
-    int f110;
-} ObjectData;
-extern "C" void call_8c081520(Object *);
+#include "src/include/classes/TObjLazerFenceExtra.h"
+extern "C" void call_8c081520(TObjLazerFenceExtra *);
 extern "C" void operation_8c0814c0(void *);
-extern "C" void TObjLazerFenceExtra_render_8c081460(Object *o)
+extern "C" void TObjLazerFenceExtra_render_8c081460(TObjLazerFenceExtra *o)
 {
     int t1;
     t1 = o->v11(300.0f, 40.0f);
-    if (t1 != 0 && ((ObjectData *)o)->f110 != 0) {
-        switch (((ObjectData *)o)->fec) {
+    if (t1 != 0 && o->f110 != 0) {
+        switch (o->fec) {
         case 0:
             call_8c081520(o);
             return;

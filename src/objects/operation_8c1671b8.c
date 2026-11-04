@@ -1,27 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss2PhotonPad.h"
 typedef struct S_L8c286528 S_L8c286528;
 typedef struct S_g8c286528 S_g8c286528;
 typedef struct S_g8c286530 S_g8c286530;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_10 Arg0_10;
-typedef struct Arg0_20 Arg0_20;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0xa];
-    Arg0_10 *f10;
-    char unknown14[0xc];
-    Arg0_20 *f20;
-    char unknown24[0xc];
-    int f30;
-    int f34;
-    int f38;
-};
+typedef struct TObject_p10 TObject_p10;
+typedef struct TBoss2PhotonPad_p20 TBoss2PhotonPad_p20;
 struct S_L8c286528 {
     char unknown0[0x4];
     int f04;
@@ -35,7 +18,7 @@ extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TBoss2PhotonBullet_ctor_8c167284(int, void *, int, void *, float, void *);
 extern int call_8c18e768(void *, void *);
 extern void rotate_scalar_pair(void *, void *, int);
-void TBoss2PhotonPad_update_8c1671b8(Object *o)
+void TBoss2PhotonPad_update_8c1671b8(TBoss2PhotonPad *o)
 {
     int t1;
     int t2;

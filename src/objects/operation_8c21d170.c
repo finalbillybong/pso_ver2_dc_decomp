@@ -1,40 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    int f04;
-    char unknown8[0x14];
-    void *f1c;
-    char unknown20[0x2];
-    short f22;
-    char unknown24[0x4];
-    int f28;
-    char unknown2c[0x4];
-    void *f30;
-    int f34;
-    int f38;
-    char unknown3c[0x4];
-    int f40;
-    int f44;
-    int f48;
-    int f4c;
-    int f50;
-    int f54;
-    char unknown58[0x1c];
-    int f74;
-};
+#include "src/include/classes/TQuestListOnline.h"
 extern int g_8c336690;
-extern Object *g_8c505960;
+extern TQuestListOnline *g_8c505960;
 extern char g_8c278610[];
 extern void TShopWindowBase_ctor_8c1066e4(void *, void *);
 extern void memset_8c12b880(void *, int, int);
-void TQuestListOnline_ctor_8c21d170(Object *o, int a1)
+void TQuestListOnline_ctor_8c21d170(TQuestListOnline *o, int a1)
 {
-    Object **home = &o;
+    TQuestListOnline **home = &o;
     (void)home;
     TShopWindowBase_ctor_8c1066e4((void *)(&o->f04), (void *)a1);
     o->f30 = (void *)g_8c278610;

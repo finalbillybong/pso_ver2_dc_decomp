@@ -1,20 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOWreckAncient.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-};
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void operation_8c053f54(void *);
 extern void operation_8c052124(void *);
 extern void destroy_context_8c051f28(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TOWreckAncient_dtor_8c0f030c(Object *o, int a1)
+extern void call_8c122774(void *, TOWreckAncient *);
+TOWreckAncient *TOWreckAncient_dtor_8c0f030c(TOWreckAncient *o, int a1)
 {
     if (o != 0) {
         o->dispatch = (void *)0x8c26843c;

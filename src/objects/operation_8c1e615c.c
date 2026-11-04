@@ -1,22 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TAdSEGAlogo.h"
 typedef struct S_g8c44be84 S_g8c44be84;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-};
 extern S_g8c44be84 *g_8c44be84;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern char g_8c4e30e4;
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
 extern void TAdSoniclogo_create_8c1e627c();
-void TAdSEGAlogo_update_8c1e615c(Object *o)
+void TAdSEGAlogo_update_8c1e615c(TAdSEGAlogo *o)
 {
     int t1;
     if (g_8c4e30e4 != 0) {

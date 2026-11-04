@@ -1,8 +1,4 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOExplosiveMachine.h"
 typedef struct Block76 {
     int words[19];
 } Block76;
@@ -10,7 +6,6 @@ typedef struct S_c8c021ef8 S_c8c021ef8;
 typedef struct Frame Frame;
 typedef struct S_g8c44be98 S_g8c44be98;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
 typedef struct Block_frame_4c {
     char unknown0[0xc];
     Vector3 f0c;
@@ -31,18 +26,6 @@ struct S_c8c021ef8 {
     char unknown0[0x34];
     int f34;
 };
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x36];
-    Vector3 f3c;
-    char unknown48[0x54];
-    float f9c;
-    int fa0;
-    int fa4;
-    int fa8;
-    int fac;
-};
 struct Frame {
     Block_frame_0 f00;
     Block_frame_4c f4c;
@@ -57,7 +40,7 @@ extern float squared_distance_xz(void *, void *);
 extern void create_effect_777c(void *, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TObjChip_ctor_8c087d8c(void *, void *, void *);
-void TOExplosiveMachine_update_8c1c060c(Object *o)
+void TOExplosiveMachine_update_8c1c060c(TOExplosiveMachine *o)
 {
     Frame frame;
     int v2;

@@ -1,27 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    short f04;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-};
+#include "src/include/classes/TODummyKeyCave01Sound.h"
 extern void TObject_ctor_8c0330e4(void *, void *);
-extern void call_8c258794(Object *);
-Object *TODummyKeyCave01Sound_ctor_8c2586c4(Object *o, int a1, int a2, int a3)
+extern void call_8c258794(TODummyKeyCave01Sound *);
+TODummyKeyCave01Sound *TODummyKeyCave01Sound_ctor_8c2586c4(TODummyKeyCave01Sound *o, int a1, int a2, int a3)
 {
-    Object **home = &o;
+    TODummyKeyCave01Sound **home = &o;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c281a20;
+    o->vtable = (void *)0x8c281a20;
     o->tag = (int)(*(int *)0x8c34007c);
     o->size = 0x28;
     o->f24 = a3;

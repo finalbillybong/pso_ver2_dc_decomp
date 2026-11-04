@@ -1,14 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemMag.h"
 typedef struct S_c8c158520 S_c8c158520;
 typedef struct S_c8c1c7658 S_c8c1c7658;
 typedef struct S_c8c1c7658_0 S_c8c1c7658_0;
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_204 Arg0_204;
+typedef struct TItemMag_p204 TItemMag_p204;
 typedef struct Arg1 Arg1;
 typedef struct S_x1424_0 S_x1424_0;
 struct Frame {
@@ -23,19 +18,6 @@ struct Frame {
 };
 struct Arg1 {
     unsigned char f00;
-};
-struct Object {
-    char unknown0[0xec];
-    int fec;
-    char unknownf0[0x4c];
-    int f13c;
-    char unknown140[0x9c];
-    float f1dc;
-    float f1e0;
-    char unknown1e4[0x20];
-    Arg0_204 *f204;
-    char unknown208[0x1c];
-    int f224;
 };
 struct S_c8c1c7658 {
     S_c8c1c7658_0 *f00;
@@ -55,7 +37,7 @@ extern int operation_8c1f2528(void *, int);
 extern void create_effect_777c(void *, int);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern int operation_8c07dca8(void *, void *);
-int TItemMag_v38_8c07def4(Object *o, Arg1 *a1)
+int TItemMag_v38_8c07def4(TItemMag *o, Arg1 *a1)
 {
     Frame frame;
     int v12;

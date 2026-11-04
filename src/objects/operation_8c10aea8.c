@@ -1,8 +1,4 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TMedicalCenterMes.h"
 typedef struct Block8 {
     int words[2];
 } Block8;
@@ -11,13 +7,6 @@ typedef struct Frame Frame;
 typedef struct S_g8c418248 S_g8c418248;
 typedef struct S_g8c46fe20 S_g8c46fe20;
 typedef struct S_g8c4d59d8 S_g8c4d59d8;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    int f20;
-};
 struct S_g8c46fe20 {
     char unknown0[0x20];
     short f20;
@@ -48,7 +37,7 @@ extern void operation_8c0246d0(void *);
 extern int operation_8c220ce0(void);
 extern void operation_8c024720(void *);
 extern void operation_8c220b5c(void);
-void TMedicalCenterMes_update_8c10aea8(Object *o)
+void TMedicalCenterMes_update_8c10aea8(TMedicalCenterMes *o)
 {
     Frame frame;
     int t1;

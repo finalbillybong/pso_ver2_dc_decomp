@@ -1,34 +1,23 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TBoss1DragonEffBullet.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_48 Arg0_48;
+typedef struct TBoss1DragonEffBullet_p48 TBoss1DragonEffBullet_p48;
 typedef struct S_vv1 S_vv1;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x2c];
-    Arg0_48 *f48;
-};
 struct S_vv1 {
     char unknown0[0x4];
     short f04;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TBoss1DragonEffBullet_dtor_8c07be78(Object *o, int a1)
+extern void call_8c122774(void *, TBoss1DragonEffBullet *);
+TBoss1DragonEffBullet *TBoss1DragonEffBullet_dtor_8c07be78(TBoss1DragonEffBullet *o, int a1)
 {
     S_vv1 *v1;
     if (o != 0) {
-        o->dispatch = (void *)0x8c26412c;
+        o->vtable = (void *)0x8c26412c;
         if (o->f48 != 0) {
             v1 = (S_vv1 *)o->f48;
             v1->f04 |= 1;
-            o->f48 = (Arg0_48 *)0;
+            o->f48 = (TBoss1DragonEffBullet_p48 *)0;
         }
         TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {

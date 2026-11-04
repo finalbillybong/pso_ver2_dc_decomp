@@ -1,20 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemTimer.h"
 typedef struct Arg0_24 Arg0_24;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    int f20;
-    Arg0_24 *f24;
-    int f28;
-};
 extern int hierarchy_is_active(void *);
-void TItemTimer_update_8c1ab0c0(Object *o)
+void TItemTimer_update_8c1ab0c0(TItemTimer *o)
 {
     int t1;
     o->f20 += -1;

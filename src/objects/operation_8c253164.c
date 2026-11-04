@@ -1,25 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-    int f28;
-    int f2c;
-};
+#include "src/include/classes/TObjNewFloorWin.h"
 extern void TObject_ctor_8c0330e4(void *, void *);
-Object *TObjNewFloorWin_ctor_8c253164(Object *o, int a1)
+TObjNewFloorWin *TObjNewFloorWin_ctor_8c253164(TObjNewFloorWin *o, int a1)
 {
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c280228;
+    o->vtable = (void *)0x8c280228;
     o->tag = (int)(*(int *)0x8c33fb08);
     o->size = 0x3c;
     o->f24 = 0;

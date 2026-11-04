@@ -1,15 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjBGLifeGame.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x654];
-    int f654;
-    int f658;
-};
 struct Frame {
     float f00;
     float f04;
@@ -21,7 +11,7 @@ struct Frame {
     float f1c;
 };
 extern void operation_1959b0(int, void *, void *, float, float);
-void TObjBGLifeGame_render_8c197298(Object *o)
+void TObjBGLifeGame_render_8c197298(TObjBGLifeGame *o)
 {
     Frame frame;
     float t;

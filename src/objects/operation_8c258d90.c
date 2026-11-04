@@ -1,24 +1,15 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOSwitchAttack.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
 struct Frame {
     float f00;
     float f04;
     float f08;
     float f0c;
 };
-struct Object {
-    char unknown0[0x98];
-    float f98;
-};
 extern int operation_8c03d338(void);
 extern float signed_sqrt_8c37f6c0(float);
 extern void call_8c0c5478(void *, Frame *, float);
-void TOSwitchAttack_render_8c258d90(Object *o)
+void TOSwitchAttack_render_8c258d90(TOSwitchAttack *o)
 {
     Frame frame;
     int t1;

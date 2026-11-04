@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-};
+#include "src/include/classes/TSceneSora.h"
 extern void TObjectShared_ctor_8c01d1ec(void);
-Object *TSceneSora_ctor_8c09f278(Object *o)
+TSceneSora *TSceneSora_ctor_8c09f278(TSceneSora *o)
 {
     TObjectShared_ctor_8c01d1ec();
     o->dispatch = (void *)0x8c265920;

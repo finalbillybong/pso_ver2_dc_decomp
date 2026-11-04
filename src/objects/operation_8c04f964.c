@@ -1,17 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x94];
-    int f94;
-};
+#include "src/include/classes/TObjGrassWeb.h"
 extern void call_8c04f9a8(void);
 extern void call_8c04fa44(void);
 extern void call_8c04fae8(void);
-void TObjGrassWeb_update_8c04f964(Object *o)
+void TObjGrassWeb_update_8c04f964(TObjGrassWeb *o)
 {
     if (o->f94 != 0) {
         if (o->f94 == 1) {

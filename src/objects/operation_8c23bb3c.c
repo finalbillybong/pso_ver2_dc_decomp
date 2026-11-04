@@ -1,23 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TItemEffDevilCane.h"
 typedef struct S_c8c0744dc S_c8c0744dc;
 typedef struct S_c8c0744dc_13c S_c8c0744dc_13c;
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_24 Arg0_24;
+typedef struct TItemEffDevilCane_p20 TItemEffDevilCane_p20;
+typedef struct TItemEffDevilCane_p24 TItemEffDevilCane_p24;
 typedef struct Arg0_28 Arg0_28;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    Arg0_20 *f20;
-    Arg0_24 *f24;
-    Arg0_28 *f28;
-};
 struct S_c8c0744dc {
     char unknown0[0xe4];
     short fe4;
@@ -33,7 +20,7 @@ extern S_c8c0744dc *find_record_8c0744dc(int);
 extern int call_8c075894(S_c8c0744dc *, void *, void *, Frame *);
 extern void operation_8c246154(void *, void *);
 extern void operation_8c245f40(void *);
-void TItemEffDevilCane_update_8c23bb3c(Object *o)
+void TItemEffDevilCane_update_8c23bb3c(TItemEffDevilCane *o)
 {
     Frame frame;
     S_c8c0744dc *t1;

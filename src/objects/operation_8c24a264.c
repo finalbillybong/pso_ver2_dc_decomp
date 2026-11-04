@@ -1,27 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjCamera.h"
 typedef struct S_c8c021ef8 S_c8c021ef8;
 typedef struct Frame Frame;
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
 typedef struct Arg0_104 Arg0_104;
 typedef struct S_vv12 S_vv12;
 typedef struct S_x49120_0 S_x49120_0;
-struct Object {
-    char unknown0[0x3c];
-    float f3c;
-    char unknown40[0x4];
-    float f44;
-    char unknown48[0xa0];
-    float fe8;
-    float fec;
-    float ff0;
-    char unknownf4[0xc];
-    int f100;
-};
 struct Frame {
     float f00;
     float f04;
@@ -42,11 +25,11 @@ struct S_x49120_0 {
     short f04;
 };
 extern void operation_8c24a6c8(void *);
-extern void call_8c24a6ec(Object *);
+extern void call_8c24a6ec(TObjCamera *);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern float njScalor2_8c37e494(Frame *);
 extern void operation_8c245f40(void *);
-void TObjCamera_update_8c24a264(Object *o)
+void TObjCamera_update_8c24a264(TObjCamera *o)
 {
     Frame frame;
     int v11;

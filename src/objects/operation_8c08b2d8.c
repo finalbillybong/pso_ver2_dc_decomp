@@ -1,26 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_24 Arg0_24;
+#include "src/include/classes/TObjEZBoneRotBase.h"
+typedef struct TObjEZBoneRotBase_p24 TObjEZBoneRotBase_p24;
 typedef struct Arg0_24_10 Arg0_24_10;
 typedef struct S_vv2 S_vv2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    Arg0_24 *f24;
-    char unknown28[0x60];
-    int f88;
-    char unknown8c[0xc];
-    float f98;
-};
-struct Arg0_24 {
+struct TObjEZBoneRotBase_p24 {
     char unknown0[0x10];
     Arg0_24_10 *f10;
 };
@@ -29,20 +11,20 @@ struct S_vv2 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void operation_8c08b3a0(void *, int);
-Object *TObjEZBoneRotBase_ctor_8c08b2d8(Object *o, int a1, int a2, int a3)
+TObjEZBoneRotBase *TObjEZBoneRotBase_ctor_8c08b2d8(TObjEZBoneRotBase *o, int a1, int a2, int a3)
 {
-    Object **home = &o;
+    TObjEZBoneRotBase **home = &o;
     S_vv2 *v2;
     int v3;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c2652c0;
+    o->vtable = (void *)0x8c2652c0;
     o->tag = (int)(*(int *)0x8c300230);
     o->size = 0x9c;
     o->f20 = a2;
-    o->f24 = (Arg0_24 *)a3;
+    o->f24 = (TObjEZBoneRotBase_p24 *)a3;
     {
-        Object *base = o;
+        TObjEZBoneRotBase *base = o;
         v3 = 0;
         v2 = (S_vv2 *)base->f24->f10;
         while (v2->f00 >= 0) {

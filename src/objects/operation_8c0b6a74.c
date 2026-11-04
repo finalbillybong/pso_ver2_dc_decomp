@@ -1,66 +1,24 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TTecPlayerInfluence.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_f8 Arg0_f8;
+typedef struct TTecPlayerInfluence_p20 TTecPlayerInfluence_p20;
+typedef struct TTecPlayerInfluence_pf8 TTecPlayerInfluence_pf8;
 typedef struct Arg2 Arg2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    Arg0_20 *f20;
-    Vector3 f24;
-    float f30;
-    float f34;
-    float f38;
-    float f3c;
-    float f40;
-    float f44;
-    float f48;
-    char unknown4c[0x1c];
-    float f68;
-    char unknown6c[0x8];
-    float f74;
-    char unknown78[0x40];
-    int fb8;
-    short fbc;
-    short fbe;
-    int fc0;
-    unsigned short fc4;
-    char unknownc6[0x2];
-    int fc8;
-    float fcc;
-    float fd0;
-    float fd4;
-    float fd8;
-    float fdc;
-    int fe0;
-    int fe4;
-    char unknowne8[0x10];
-    Arg0_f8 *ff8;
-};
 struct Arg2 {
     Vector3 f00;
 };
-struct Arg0_20 {
+struct TTecPlayerInfluence_p20 {
     char unknown0[0x20];
     unsigned short f20;
     char unknown22[0x12];
     int f34;
 };
-extern void TEffect_ctor_8c0a0058(Object *);
+extern void TEffect_ctor_8c0a0058(TTecPlayerInfluence *);
 extern int heap_alloc_8c122700(void *, int);
-extern void call_8c051eb8(int, Object *);
+extern void call_8c051eb8(int, TTecPlayerInfluence *);
 extern void copy_actor_records(void *, void *, int);
-Object *TTecPlayerInfluence_ctor_8c0b6a74(Object *o, int a1, Arg2 *a2, int a3)
+TTecPlayerInfluence *TTecPlayerInfluence_ctor_8c0b6a74(TTecPlayerInfluence *o, int a1, Arg2 *a2, int a3)
 {
-    Object **home = &o;
+    TTecPlayerInfluence **home = &o;
     int t1;
     (void)home;
     TEffect_ctor_8c0a0058(o);
@@ -94,7 +52,7 @@ Object *TTecPlayerInfluence_ctor_8c0b6a74(Object *o, int a1, Arg2 *a2, int a3)
     o->f40 = 1.0f;
     o->f44 = 1.0f;
     o->f48 = 1.0f;
-    o->f20 = (Arg0_20 *)a1;
+    o->f20 = (TTecPlayerInfluence_p20 *)a1;
     o->f30 = 0.2f;
     o->f34 = 1.0f;
     o->f38 = 1.0f;
@@ -111,9 +69,9 @@ Object *TTecPlayerInfluence_ctor_8c0b6a74(Object *o, int a1, Arg2 *a2, int a3)
     if (t1 != 0) {
         call_8c051eb8(t1, o);
     }
-    o->ff8 = (Arg0_f8 *)t1;
-    if (o->ff8 != 0) {
-        copy_actor_records(o->ff8, &o->fcc, 1);
+    o->resource = (TTecPlayerInfluence_pf8 *)t1;
+    if (o->resource != 0) {
+        copy_actor_records(o->resource, &o->fcc, 1);
     }
     o->fc8 = 1;
     if (o->f20 != 0) {

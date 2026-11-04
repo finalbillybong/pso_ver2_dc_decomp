@@ -1,21 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOAttackableCol.h"
 typedef struct Frame Frame;
-typedef struct Object Object;
-typedef struct Arg0_84 Arg0_84;
+typedef struct TOAttackableCol_p84 TOAttackableCol_p84;
 typedef struct Arg1 Arg1;
 typedef struct S_vv29 S_vv29;
-struct Object {
-    char unknown0[0x84];
-    Arg0_84 *f84;
-    char unknown88[0x282];
-    short f30a;
-    char unknown30c[0x4c];
-    int f358;
-};
 struct Arg1 {
     short f00;
 };
@@ -29,7 +16,7 @@ struct S_vv29 {
 };
 extern int g_8c46ed0c;
 extern void operation_8c05428c(void *, int, int);
-void TOAttackableCol_v05_8c257a50(Object *o, Arg1 *a1, int a2)
+void TOAttackableCol_v05_8c257a50(TOAttackableCol *o, Arg1 *a1, int a2)
 {
     Frame frame;
     S_vv29 *v29;

@@ -1,24 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_13c Arg0_13c;
-struct Object {
-    char unknown0[0x8c];
-    int f8c;
-    char unknown90[0x90];
-    float f120;
-    char unknown124[0x18];
-    Arg0_13c *f13c;
-};
-struct Arg0_13c {
+#include "src/include/classes/TObjMapWarpAncient.h"
+typedef struct TObjMapWarpAncient_p13c TObjMapWarpAncient_p13c;
+struct TObjMapWarpAncient_p13c {
     char unknown0[0x4];
     int f04;
 };
-extern void call_8c0889f0(Object *);
-void TObjMapWarpAncient_update_8c1578e8(Object *o)
+extern void call_8c0889f0(TObjMapWarpAncient *);
+void TObjMapWarpAncient_update_8c1578e8(TObjMapWarpAncient *o)
 {
     float v3;
     if (o->f8c >= 0) {

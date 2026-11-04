@@ -1,26 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjItemNameSelect.h"
 typedef struct Frame Frame;
 typedef struct S_g8c467180 S_g8c467180;
 typedef struct S_g8c467180_2c S_g8c467180_2c;
 typedef struct S_g8c467180_2c_504 S_g8c467180_2c_504;
 typedef struct S_g8c467180_c S_g8c467180_c;
 typedef struct S_g8c467180_c_0 S_g8c467180_c_0;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_24 Arg0_24;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    Arg0_20 *f20;
-    Arg0_24 *f24;
-};
+typedef struct TObjItemNameSelect_p20 TObjItemNameSelect_p20;
+typedef struct TObjItemNameSelect_p24 TObjItemNameSelect_p24;
 struct Frame {
     float f04;
     float f08;
@@ -46,22 +32,22 @@ extern void position_menu_label_8c1576fc(void *);
 extern void operation_8c0dc610(void *, float);
 extern int create_fitted_pair_grid_view(void *, void *);
 extern void operation_8c119764(int, int, int);
-Object *TObjItemNameSelect_ctor_8c174270(Object *o, int a1)
+TObjItemNameSelect *TObjItemNameSelect_ctor_8c174270(TObjItemNameSelect *o, int a1)
 {
     Frame frame;
-    Object **home = &o;
+    TObjItemNameSelect **home = &o;
     int v1;
     int t1;
     int t2;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c270204;
+    o->vtable = (void *)0x8c270204;
     o->tag = (int)(*(int *)0x8c318dec);
     o->size = 0x28;
     (&frame)->f0c = 408.0f;
     (&frame)->f10 = 301.0f;
     t1 = operation_8c156c24((int)(&(&frame)->f0c), 0x19);
-    o->f20 = (Arg0_20 *)t1;
+    o->f20 = (TObjItemNameSelect_p20 *)t1;
     v1 = (int)0;
     while (0x1a > v1) {
         if (v1 > 0) {
@@ -79,7 +65,7 @@ Object *TObjItemNameSelect_ctor_8c174270(Object *o, int a1)
     (&frame)->f04 = 342.0f;
     (&frame)->f08 = 90.0f;
     t2 = create_fitted_pair_grid_view((void *)(&(&frame)->f0c), (void *)(&(&frame)->f04));
-    o->f24 = (Arg0_24 *)t2;
+    o->f24 = (TObjItemNameSelect_p24 *)t2;
     if (o->f24 != 0) {
         operation_8c119764((int)(o->f24), (int)((*(S_g8c467180 **)0x8c467180)->f2c->f504), 0x81);
     }

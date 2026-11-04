@@ -50,15 +50,25 @@ A unit keeps its local type when its view differs from the header. The conflict 
 
 | Class | Example |
 |---|---|
-| C++ unit writes the vtable pointer as data | constructors and destructors that store `dispatch` through an `ObjectData` view |
 | aggregate / overlap | `Vector3 f3c` in one unit, `float f40` in another |
 | unit-local aggregate | an embedded `Block_p0_78` that no shared header describes |
-| pointer vs int | `Arg0_90 *f90` against `int f90` |
+| pointer vs int | `Arg0_90 *f90` against `int f90`, where the header's type doesn't compile exactly in the unit (see `--loose`) |
 | signedness | `unsigned char` against `char` |
 | member rename clash | the unit's name and the header's name differ, and another struct in the unit also uses one of them |
 | beyond size | a view running past the constructor's size field (`Vector3 f38` in a 0x40-byte object) |
 | `sizeof` of the local view | prefix views pinned with `check_prefix[sizeof(...)]` |
 | virtual signature | a slot called with unit-local parameter types (`Frame *`) |
+
+## Constructors and pointer-vs-int views
+
+- A C++ constructor or destructor that installs a vtable can't name the vtable pointer, since
+  in C++ it is the class's implicit vptr. It writes through the `TOBJECT_VTABLE(o)` macro
+  instead (`src/include/object_vtable.h`, `*(void **)((char *)(o) + 0x18)`). `convert` makes
+  this rewrite (`((ObjectData *)o)->dispatch = ...` becomes `TOBJECT_VTABLE(o) = ...`) and
+  adds the header to the unit.
+- `convert --loose` also tries units whose view of a field is `int` where the header has a
+  pointer, or the reverse. Such a unit keeps only if it compiles and stays byte-exact under
+  the header's type; otherwise it goes on the `--skip` list.
 
 ## Adding classes
 
@@ -67,6 +77,7 @@ python3 tools/class_types.py layout @TOKey          # merged layout + conflicts 
 python3 tools/class_types.py emit @TOKey            # write src/include/classes/*.h (bases first)
 python3 tools/class_types.py convert @TOKey         # dry run: converted / local (why) / n/a per unit
 python3 tools/class_types.py convert @TOKey --write # rewrite units and their `headers` in config/project.json
+python3 tools/class_types.py convert @TOKey --loose --write --skip UNIT ...   # also try pointer-vs-int views
 python3 tools/class_types.py check                  # header contract, no compiler needed (also a unit test)
 ```
 

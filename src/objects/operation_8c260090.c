@@ -1,20 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjDeadListWin.h"
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    int f20;
-};
 extern int lookup_low_id(int);
-extern void call_8c2600e0(Object *);
+extern void call_8c2600e0(TObjDeadListWin *);
 extern void update_target_timer_8c2601a8(void *);
-void TObjDeadListWin_update_8c260090(Object *o)
+void TObjDeadListWin_update_8c260090(TObjDeadListWin *o)
 {
     int t1;
     t1 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));

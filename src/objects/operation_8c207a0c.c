@@ -1,27 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TAdFloorLoad.h"
 typedef struct Frame Frame;
 typedef struct S_g8c46ee80 S_g8c46ee80;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_24 Arg0_24;
-typedef struct Arg0_28 Arg0_28;
+typedef struct TAdFloorLoad_p20 TAdFloorLoad_p20;
+typedef struct TAdFloorLoad_p24 TAdFloorLoad_p24;
+typedef struct TAdFloorLoad_p28 TAdFloorLoad_p28;
 typedef struct S_vv1 S_vv1;
-struct Object {
-    char unknown0[0x20];
-    Arg0_20 *f20;
-    Arg0_24 *f24;
-    Arg0_28 *f28;
-    float f2c;
-    float f30;
-    float f34;
-    float f38;
-    float f3c;
-    float f40;
-};
 struct Frame {
     float f00;
     float f04;
@@ -38,7 +21,7 @@ struct S_vv1 {
 };
 extern S_g8c46ee80 *g_8c46ee80;
 extern void call_8c0a7608(void *, void *);
-void TAdFloorLoad_update_8c207a0c(Object *o)
+void TAdFloorLoad_update_8c207a0c(TAdFloorLoad *o)
 {
     Frame frame;
     S_vv1 *v1;

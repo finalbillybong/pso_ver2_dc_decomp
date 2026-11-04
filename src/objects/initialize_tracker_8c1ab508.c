@@ -1,38 +1,20 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TFontSmallHelp.h"
 typedef struct S_c8c021ef8 S_c8c021ef8;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    short f04;
-    char unknown6[0x12];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    char unknown24[0x28];
-    int f4c;
-    int f50;
-    int f54;
-};
 struct S_c8c021ef8 {
     char unknown0[0xc78];
     int fc78;
 };
-extern void TObject_ctor_8c0330e4(Object *, int);
+extern void TObject_ctor_8c0330e4(TFontSmallHelp *, int);
 extern S_c8c021ef8 *lookup_low_id(int);
-extern void call_8c1ab8e8(Object *, int);
-extern void call_8c1ab894(Object *, int);
-Object *TFontSmallHelp_ctor_8c1ab508(Object *o, int a1, int a2, int a3, int a4, int a5)
+extern void call_8c1ab8e8(TFontSmallHelp *, int);
+extern void call_8c1ab894(TFontSmallHelp *, int);
+TFontSmallHelp *TFontSmallHelp_ctor_8c1ab508(TFontSmallHelp *o, int a1, int a2, int a3, int a4, int a5)
 {
-    Object **home = &o;
+    TFontSmallHelp **home = &o;
     S_c8c021ef8 *t1;
     (void)home;
     TObject_ctor_8c0330e4(o, a1);
-    o->dispatch = (void *)0x8c274838;
+    o->vtable = (void *)0x8c274838;
     o->tag = *(int *)0x8c324f68;
     o->size = 0x58;
     t1 = lookup_low_id(a2);

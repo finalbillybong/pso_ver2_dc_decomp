@@ -1,33 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_104 Arg0_104;
+#include "src/include/classes/TTecZarua.h"
+typedef struct TTecZarua_p104 TTecZarua_p104;
 typedef struct Arg0_104_dc Arg0_104_dc;
-typedef struct Arg0_20 Arg0_20;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    Arg0_20 *f20;
-    Vector3 f24;
-    char unknown30[0x4c];
-    short f7c;
-    char unknown7e[0x2];
-    int f80;
-    Vector3 f84;
-    char unknown90[0x8];
-    float f98;
-    char unknown9c[0x34];
-    short fd0;
-    char unknownd2[0x32];
-    Arg0_104 *f104;
-};
-struct Arg0_104 {
+typedef struct TTecZarua_p20 TTecZarua_p20;
+struct TTecZarua_p104 {
     char unknown0[0xdc];
     Arg0_104_dc *fdc;
 };
@@ -35,7 +10,7 @@ struct Arg0_104_dc {
     char unknown0[0xc];
     float f0c;
 };
-struct Arg0_20 {
+struct TTecZarua_p20 {
     char unknown0[0x20];
     short f20;
 };
@@ -44,9 +19,9 @@ extern void initialize_effect12_template(void *);
 extern int call_8c18e768(int, int);
 extern int play_se_8c05fbf8(int, void *, int, int);
 extern void emit_control_60320(int, int, int);
-Object *TTecZarua_ctor_8c0babf0(Object *o, int a1, int a2, int a3, int a4)
+TTecZarua *TTecZarua_ctor_8c0babf0(TTecZarua *o, int a1, int a2, int a3, int a4)
 {
-    Object **home = &o;
+    TTecZarua **home = &o;
     int t1;
     int t2;
     int t3;
@@ -61,7 +36,7 @@ Object *TTecZarua_ctor_8c0babf0(Object *o, int a1, int a2, int a3, int a4)
         o->f104->fdc->f0c = o->f98;
     }
     {
-        Object *base = o;
+        TTecZarua *base = o;
         t1 = call_8c18e768((int)(base->f7c), 5);
         base->f80 = (int)(t1);
         if (o->f80 != 0) {

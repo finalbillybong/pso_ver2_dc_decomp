@@ -1,13 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TSceneSora.h"
 typedef struct S_g8c46ed84 S_g8c46ed84;
 typedef struct S_g8c46ed84_42c S_g8c46ed84_42c;
 typedef struct S_g8c46ed84_42c_8 S_g8c46ed84_42c_8;
 typedef struct S_g8c46ed84_42c_c S_g8c46ed84_42c_c;
-typedef struct Object Object;
 typedef struct Arg0_64 Arg0_64;
 struct S_g8c46ed84 {
     char unknown0[0x42c];
@@ -18,10 +13,6 @@ struct S_g8c46ed84_42c {
     S_g8c46ed84_42c_8 *f08;
     S_g8c46ed84_42c_c *f0c;
 };
-struct Object {
-    char unknown0[0x64];
-    Arg0_64 *f64;
-};
 extern void call_8c391c94(void);
 extern void call_8c3827d8(void *);
 extern void njPushMatrixEx_8c38ae68(void);
@@ -29,7 +20,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3a944a(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c391cc4(void);
-void TSceneSora_render_8c09f328(Object *o)
+void TSceneSora_render_8c09f328(TSceneSora *o)
 {
     call_8c391c94();
     call_8c3827d8((void *)((*(S_g8c46ed84 **)0x8c46ed84)->f42c->f0c));

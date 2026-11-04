@@ -1,18 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-    int f24;
-    int f28;
-};
+#include "src/include/classes/TPlayerBattleCtrl.h"
 extern int g_8c41bd10;
 extern void operation_8c2425e0(void *);
-void TPlayerBattleCtrl_update_8c24259c(Object *o)
+void TPlayerBattleCtrl_update_8c24259c(TPlayerBattleCtrl *o)
 {
     if (g_8c41bd10 == 0) {
         if (o->f20 != o->f28) {

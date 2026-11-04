@@ -1,29 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObjLoadGmPlNjReq.h"
 typedef struct Arg2 Arg2;
 typedef struct Arg2_0 Arg2_0;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-    int f28;
-    int f2c;
-    int f30;
-    char unknown34[0x30];
-    int f64;
-    int f68;
-    int f6c;
-    int f70;
-    int f74;
-};
 struct Arg2 {
     Arg2_0 *f00;
     int f04;
@@ -33,12 +10,12 @@ struct Arg2 {
 };
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void strncpy_8c12b154(void *, void *, int);
-Object *TObjLoadGmPlNjReq_ctor_8c13f504(Object *o, int a1, Arg2 *a2)
+TObjLoadGmPlNjReq *TObjLoadGmPlNjReq_ctor_8c13f504(TObjLoadGmPlNjReq *o, int a1, Arg2 *a2)
 {
-    Object **home = &o;
+    TObjLoadGmPlNjReq **home = &o;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c26dc24;
+    o->vtable = (void *)0x8c26dc24;
     o->tag = *(int *)0x8c314688;
     o->size = 0x7c;
     o->f28 = a2->f08;

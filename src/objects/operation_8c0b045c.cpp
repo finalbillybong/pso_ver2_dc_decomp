@@ -1,16 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TTecDeband.h"
 typedef struct Block8 {
     int words[2];
 } Block8;
 typedef struct Frame Frame;
 typedef struct S_g8c44bea0 S_g8c44bea0;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
+typedef struct TTecPlayerInfluence_p20 TTecPlayerInfluence_p20;
 typedef struct Arg0_c0 Arg0_c0;
 class Arg1;
 typedef struct Block_frame_0 {
@@ -19,16 +14,6 @@ typedef struct Block_frame_0 {
 } Block_frame_0;
 struct Frame {
     Block_frame_0 f00;
-};
-struct Object {
-    char unknown0[0x20];
-    Arg0_20 *f20;
-    char unknown24[0x54];
-    float f78;
-    char unknown7c[0x44];
-    Arg0_c0 *fc0;
-    char unknownc4[0x4];
-    int fc8;
 };
 class Arg1 {
 public:
@@ -66,7 +51,7 @@ typedef struct Arg1Data {
     char unknown22[0x2e6];
     short f308;
 } Arg1Data;
-struct Arg0_20 {
+struct TTecPlayerInfluence_p20 {
     char unknown0[0x20];
     unsigned short f20;
 };
@@ -75,7 +60,7 @@ extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void initialize_effect_pair(void *, void *, void *, void *, unsigned short, void *);
 extern "C" int create_effect(void *, int, int);
 extern "C" void bind_id(void *, unsigned short);
-extern "C" void TTecDeband_v06_8c0b045c(Object *o, Arg1 *a1)
+extern "C" void TTecDeband_v06_8c0b045c(TTecDeband *o, Arg1 *a1)
 {
     Frame frame;
     int v1;

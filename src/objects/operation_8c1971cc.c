@@ -1,20 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x654];
-    int f654;
-    int f658;
-    int f65c;
-    int f660;
-};
+#include "src/include/classes/TObjBGLifeGame.h"
 extern int operation_8c09a64c(int);
-extern void call_8c197044(Object *);
-extern void call_8c196ec4(Object *);
-void TObjBGLifeGame_update_8c1971cc(Object *o)
+extern void call_8c197044(TObjBGLifeGame *);
+extern void call_8c196ec4(TObjBGLifeGame *);
+void TObjBGLifeGame_update_8c1971cc(TObjBGLifeGame *o)
 {
     int v3;
     int t1;

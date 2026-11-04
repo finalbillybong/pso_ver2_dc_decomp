@@ -1,33 +1,12 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x30a];
-    short f30a;
-    short f30c;
-    char unknown30e[0x26];
-    int f334;
-    char unknown338[0x20];
-    unsigned short f358;
-    char unknown35a[0x2];
-    int f35c;
-    float f360;
-    float f364;
-    char unknown368[0x4];
-    int f36c;
-    int f370;
-};
+#include "src/include/classes/TOTrapAncient02R.h"
 extern void operation_8c05426c(void *, int, int);
-extern void call_8c027090(Object *);
-void TOTrapAncient02R_v89_8c14de34(Object *o)
+extern void call_8c027090(TOTrapAncient02R *);
+void TOTrapAncient02R_v89_8c14de34(TOTrapAncient02R *o)
 {
     float v3;
     float v4;
     operation_8c05426c((void *)o, 0, 1);
-    if (o->f35c == 1) {
+    if (o->visible == 1) {
         call_8c027090(o);
     }
     switch (o->f30c) {
@@ -60,8 +39,8 @@ void TOTrapAncient02R_v89_8c14de34(Object *o)
         o->f30a = 0;
         o->f30c = 0;
         o->f360 = 0.0f;
-        o->f358 = 0xffff;
-        o->f334 = 0;
+        o->identifier = 0xffff;
+        o->target = 0;
         return;
     }
 }

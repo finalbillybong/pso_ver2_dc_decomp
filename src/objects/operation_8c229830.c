@@ -1,18 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TObjDFDemo3.h"
 typedef struct S_vv1 S_vv1;
 typedef struct S_vv1_0 S_vv1_0;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0xae];
-    int fb4;
-    float fb8;
-};
 struct S_vv1 {
     S_vv1_0 *f00;
 };
@@ -22,7 +10,7 @@ extern void set_effect_bits(void *, unsigned short);
 extern void call_8c0a7608(void *, void *);
 extern int create_effect_777c(void *, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void TObjDFDemo3_update_8c229830(Object *o)
+void TObjDFDemo3_update_8c229830(TObjDFDemo3 *o)
 {
     S_vv1 *v1;
     int t1;

@@ -1,16 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x24];
-    int f24;
-};
+#include "src/include/classes/TObjVoloptShutter.h"
 extern void operation_8c15b190(void *);
 extern void operation_8c15b130(void *);
-void TObjVoloptShutter_update_8c15b048(Object *o)
+void TObjVoloptShutter_update_8c15b048(TObjVoloptShutter *o)
 {
     if (o->f24 != 0) {
         if (o->f24 != 1) {

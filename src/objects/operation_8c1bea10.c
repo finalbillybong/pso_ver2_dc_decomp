@@ -1,18 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjCityMapWarp.h"
 typedef struct S_g8c327fbc S_g8c327fbc;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x90];
-    int f90;
-};
 extern char g_8c327fc4[];
 extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
-void TObjCityMapWarp_v09_8c1bea10(Object *o)
+void TObjCityMapWarp_v09_8c1bea10(TObjCityMapWarp *o)
 {
     int v1;
     int v2;

@@ -1,42 +1,18 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TPlayerBattleCtrl.h"
 typedef struct S_g8c418248 S_g8c418248;
 typedef struct S_g8c4db9e0 S_g8c4db9e0;
-typedef struct Object Object;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    int f20;
-    int f24;
-    int f28;
-    int f2c;
-    char unknown30[0x10];
-    int f40;
-    char unknown44[0x8];
-    int f4c;
-    int f50;
-    int f54;
-    char unknown58[0xc];
-    int f64;
-};
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int lookup_low_id(int);
 extern void call_8c028264(int, void *);
 extern void clear_global_render_resources(void);
-Object *TPlayerBattleCtrl_ctor_8c242448(Object *o, int a1)
+TPlayerBattleCtrl *TPlayerBattleCtrl_ctor_8c242448(TPlayerBattleCtrl *o, int a1)
 {
-    Object **home = &o;
+    TPlayerBattleCtrl **home = &o;
     int v1;
     int t1;
     (void)home;
     TObject_ctor_8c0330e4((void *)o, (void *)a1);
-    o->dispatch = (void *)0x8c27ccdc;
+    o->vtable = (void *)0x8c27ccdc;
     o->tag = *(int *)0x8c33aad4;
     o->size = 0x274;
     o->f2c = 0;

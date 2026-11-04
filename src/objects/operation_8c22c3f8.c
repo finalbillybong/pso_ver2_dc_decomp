@@ -1,27 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    float f20;
-    float f24;
-    float f28;
-    float f2c;
-    int f30;
-    int f34;
-    float f38;
-    char unknown3c[0x10];
-    int f4c;
-    char unknown50[0x1c];
-    int f6c;
-};
+#include "src/include/classes/TAdRicoRing.h"
 extern void operation_8c22c4dc(void *);
-void TAdRicoRing_update_8c22c3f8(Object *o)
+void TAdRicoRing_update_8c22c3f8(TAdRicoRing *o)
 {
     int v1;
     int v22;

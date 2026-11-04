@@ -1,19 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjVoloptShutter.h"
 typedef struct S_g8c4dab60 S_g8c4dab60;
 typedef struct S_g8c4dab64 S_g8c4dab64;
 typedef struct S_g8c4dab68 S_g8c4dab68;
-typedef struct Object Object;
 typedef struct Arg0_34 Arg0_34;
-struct Object {
-    char unknown0[0x2c];
-    float f2c;
-    float f30;
-    Arg0_34 *f34;
-};
 extern void call_8c1086fc(void);
 extern void call_8c3827d8(void *);
 extern void njPushMatrixEx_8c38ae68(void);
@@ -22,7 +11,7 @@ extern void njTranslate_8c3829bc(int, float, float, float);
 extern void call_8c3a9436(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c391cc4(void);
-void TObjVoloptShutter_render_8c15b07c(Object *o)
+void TObjVoloptShutter_render_8c15b07c(TObjVoloptShutter *o)
 {
     call_8c1086fc();
     call_8c3827d8((void *)(*(S_g8c4dab68 **)0x8c4dab68));

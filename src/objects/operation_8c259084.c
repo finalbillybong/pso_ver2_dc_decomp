@@ -1,19 +1,6 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TOSwitchAttackSub.h"
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
-typedef struct Arg0_24 Arg0_24;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x1a];
-    short f20;
-    short f22;
-    Arg0_24 *f24;
-};
+typedef struct TOSwitchAttackSub_p24 TOSwitchAttackSub_p24;
 extern S_g8c418248 *g_8c418248;
 extern int g_8c46ee80;
 extern int operation_03d080(unsigned short);
@@ -21,7 +8,7 @@ extern int lookup_low_id(int);
 extern float squared_distance_xz(void *, void *);
 extern void set_effect_bit0(void *);
 extern void clear_effect_bit0(void *);
-void TOSwitchAttackSub_update_8c259084(Object *o)
+void TOSwitchAttackSub_update_8c259084(TOSwitchAttackSub *o)
 {
     int v60;
     int t1;

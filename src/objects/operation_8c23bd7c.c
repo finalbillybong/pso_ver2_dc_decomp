@@ -1,22 +1,9 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_1d4 Arg0_1d4;
+#include "src/include/classes/TItemWpnDorillArm.h"
+typedef struct TItemWpnDorillArm_p1d4 TItemWpnDorillArm_p1d4;
 typedef struct Arg0_23c Arg0_23c;
-struct Object {
-    char unknown0[0x1d4];
-    Arg0_1d4 *f1d4;
-    char unknown1d8[0x5c];
-    int f234;
-    char unknown238[0x4];
-    Arg0_23c *f23c;
-};
 extern void njRotateZ_8c37e02c(int, void *);
 extern void call_8c3aa716(void *);
-void TItemWpnDorillArm_v57_8c23bd7c(Object *o)
+void TItemWpnDorillArm_v57_8c23bd7c(TItemWpnDorillArm *o)
 {
     char *v62;
     v62 = (char *)*(int *)0x8c4689f0;

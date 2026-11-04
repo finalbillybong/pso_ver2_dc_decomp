@@ -1,21 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_94 Arg0_94;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x8e];
-    Arg0_94 *f94;
-};
+#include "src/include/classes/TObjParticle.h"
+typedef struct TObjParticle_p94 TObjParticle_p94;
 extern int get_current_area_8c032b10(void);
 extern float squared_distance_xyz(void *, void *);
 extern void call_8c0a7608(void *, void *);
 extern void set_effect_words(void *, void *);
-void TObjParticle_update_8c0806ec(Object *o)
+void TObjParticle_update_8c0806ec(TObjParticle *o)
 {
     float v2;
     int t1;

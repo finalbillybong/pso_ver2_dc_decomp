@@ -1,23 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TPlyPKEditor.h"
 typedef struct S_L8c2e1db8 S_L8c2e1db8;
 typedef struct S_g8c2e1dbc S_g8c2e1dbc;
 typedef struct S_g8c44be88 S_g8c44be88;
-typedef struct Object Object;
 typedef struct S_vv2 S_vv2;
-struct Object {
-    int tag;
-    char unknown4[0x14];
-    void *dispatch;
-    char unknown1c[0x2];
-    short size;
-    char unknown20[0x1c];
-    char f3c;
-    char f3d;
-};
 struct S_L8c2e1db8 {
     char unknown0[0x4];
     S_g8c2e1dbc *f04;
@@ -29,7 +14,7 @@ extern int g_8c3390c0;
 extern S_g8c44be88 *g_8c44be88;
 extern S_L8c2e1db8 g_8c2e1db8;
 extern void TEditor_ctor_8c03c92c(void *, void *);
-Object *TPlyPKEditor_ctor_8c23490c(Object *o)
+TPlyPKEditor *TPlyPKEditor_ctor_8c23490c(TPlyPKEditor *o)
 {
     int v1;
     int v3;

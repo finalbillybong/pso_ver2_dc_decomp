@@ -1,24 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjFogCollision.h"
 typedef struct S_g8c418248 S_g8c418248;
-typedef struct Object Object;
 typedef struct Arg0_88 Arg0_88;
-struct Object {
-    char unknown0[0x6c];
-    float f6c;
-    char unknown70[0x18];
-    Arg0_88 *f88;
-    int f8c;
-    char unknown90[0x8];
-    int f98;
-};
 extern int lookup_low_id(int);
 extern float squared_distance_xz(void *, void *);
 extern void call_8c1373a0(void *, int);
-void TObjFogCollision_update_8c136854(Object *o)
+void TObjFogCollision_update_8c136854(TObjFogCollision *o)
 {
     float v1;
     int v8;

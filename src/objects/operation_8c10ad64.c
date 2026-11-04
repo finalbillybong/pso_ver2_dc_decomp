@@ -1,18 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TMedicalCenterSequence.h"
 typedef struct S_g8c46fe20 S_g8c46fe20;
 typedef struct S_g8c4d59d8 S_g8c4d59d8;
-typedef struct Object Object;
 typedef struct Arg0_28 Arg0_28;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x22];
-    Arg0_28 *f28;
-};
 struct S_g8c46fe20 {
     char unknown0[0x20];
     short f20;
@@ -24,12 +13,12 @@ struct S_g8c4d59d8 {
 extern S_g8c46fe20 *g_8c46fe20;
 extern S_g8c4d59d8 *g_8c4d59d8;
 extern int operation_8c220ce0(void);
-extern int operation_8c106760(Object *);
-extern int operation_8c106798(Object *);
+extern int operation_8c106760(TMedicalCenterSequence *);
+extern int operation_8c106798(TMedicalCenterSequence *);
 extern void operation_8c024720(void *);
 extern int lookup_low_id(int);
 extern void operation_8c02aff0(void *);
-void TMedicalCenterSequence_v07_8c10ad64(Object *o)
+void TMedicalCenterSequence_v07_8c10ad64(TMedicalCenterSequence *o)
 {
     int v4;
     int t1;
@@ -45,8 +34,8 @@ void TMedicalCenterSequence_v07_8c10ad64(Object *o)
                 return;
             }
         }
-        if (o->f28 != 0) {
-            operation_8c024720((void *)(o->f28));
+        if (o->dirty != 0) {
+            operation_8c024720((void *)(o->dirty));
         }
         v4 = (int)0;
         while (4 > v4) {

@@ -1,20 +1,7 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_14 Arg0_14;
+#include "src/include/classes/TObjControl.h"
+typedef struct TObject_p14 TObject_p14;
 typedef struct S_vv1_338 S_vv1_338;
 class S_vv1;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0xe];
-    Arg0_14 *f14;
-    char unknown18[0x8];
-    short f20;
-};
 class S_vv1 {
 public:
     char unknown0[0x18];
@@ -108,7 +95,7 @@ struct S_vv1_338 {
 extern "C" int operation_8c03d338(void);
 extern "C" void call_8c027090(S_vv1 *);
 extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
-extern "C" void TObjControl_update_8c01312c(Object *o)
+extern "C" void TObjControl_update_8c01312c(TObjControl *o)
 {
     S_vv1 *v1;
     int t1;

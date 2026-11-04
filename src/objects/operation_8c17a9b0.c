@@ -1,20 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
+#include "src/include/classes/TItemWpnPsychowand.h"
 typedef struct Arg0_2b4 Arg0_2b4;
-struct Object {
-    char unknown0[0x2b0];
-    float f2b0;
-    Arg0_2b4 *f2b4;
-};
 extern int g_8c4689f0;
 extern void njRotateZ_8c37e02c(int, void *);
 extern void njTranslate_8c3829bc(int, float, float, float);
 extern void operation_8c074ce4(void);
-void TItemWpnPsychowand_v57_8c17a9b0(Object *o)
+void TItemWpnPsychowand_v57_8c17a9b0(TItemWpnPsychowand *o)
 {
     switch (g_8c4689f0) {
     case 2:

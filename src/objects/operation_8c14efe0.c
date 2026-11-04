@@ -1,29 +1,5 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0x66];
-    float f6c;
-    char unknown70[0x4];
-    float f74;
-    char unknown78[0x20];
-    float f98;
-    float f9c;
-    float fa0;
-    float fa4;
-    char unknowna8[0xc];
-    int fb4;
-    int fb8;
-    char unknownbc[0xc];
-    int fc8;
-    float fcc;
-};
-void TPhotonMagicSquare_update_8c14efe0(Object *o)
+#include "src/include/classes/TPhotonMagicSquare.h"
+void TPhotonMagicSquare_update_8c14efe0(TPhotonMagicSquare *o)
 {
     float v3;
     float v9;

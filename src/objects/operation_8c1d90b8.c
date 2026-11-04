@@ -1,20 +1,8 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TObjCity_Season_SonicAdv2.h"
 typedef struct S_g8c4e2edc S_g8c4e2edc;
-typedef struct Object Object;
 typedef struct S_vv4 S_vv4;
 typedef struct S_vv4_430 S_vv4_430;
 typedef struct S_vv4_430_4 S_vv4_430_4;
-struct Object {
-    char unknown0[0x88];
-    int f88;
-    char unknown8c[0x58];
-    int fe4;
-    float fe8;
-};
 struct S_vv4 {
     char unknown0[0x430];
     S_vv4_430 *f430;
@@ -23,7 +11,7 @@ struct S_vv4_430_4 {
     char unknown0[0x4];
     int f04;
 };
-void TObjCity_Season_SonicAdv2_update_8c1d90b8(Object *o)
+void TObjCity_Season_SonicAdv2_update_8c1d90b8(TObjCity_Season_SonicAdv2 *o)
 {
     int v1;
     S_vv4 *v4;

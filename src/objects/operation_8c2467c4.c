@@ -1,23 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0xe2];
-    float fe8;
-    char unknownec[0x174];
-    int f260;
-};
+#include "src/include/classes/TObjTombstone.h"
 extern int call_8c2474a4(void);
-extern float call_8c246de8(Object *);
-extern void call_8c246834(Object *);
-extern int call_8c2468a0(Object *);
-extern void call_8c246954(Object *);
-void TObjTombstone_update_8c2467c4(Object *o)
+extern float call_8c246de8(TObjTombstone *);
+extern void call_8c246834(TObjTombstone *);
+extern int call_8c2468a0(TObjTombstone *);
+extern void call_8c246954(TObjTombstone *);
+void TObjTombstone_update_8c2467c4(TObjTombstone *o)
 {
     int t1;
     float t2;

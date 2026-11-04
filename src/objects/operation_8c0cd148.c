@@ -1,10 +1,4 @@
-typedef struct Object {
-    char unknown0[0x20];
-    int f20;
-    char unknown24[0x14];
-    float f38;
-    int f3c;
-} Object;
+#include "src/include/classes/TObjBoss1MokoHill_SoloM.h"
 typedef struct Entry {
     float *dst;
     float a;
@@ -39,7 +33,7 @@ extern void call_8c38c0e6(int, int);
 extern void call_8c3aa716(void *);
 extern void call_8c3a944a(void *);
 extern void njPopMatrixEx_8c38ad10(void);
-void TObjBoss1MokoHill_SoloM_render_8c0cd148(Object *o)
+void TObjBoss1MokoHill_SoloM_render_8c0cd148(TObjBoss1MokoHill_SoloM *o)
 {
     Entry *e;
     int i;

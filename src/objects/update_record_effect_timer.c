@@ -1,4 +1,4 @@
-typedef struct View { char unknown0[4]; unsigned short flags; char unknown6[66]; int limit,ticks; } View;
-typedef char check_limit[(unsigned long)&((View *)0)->limit==72?1:-1];
-typedef char check_ticks[(unsigned long)&((View *)0)->ticks==76?1:-1];
-void TBoss4Zanzo_update_8c1b319c(View *o) { if(++o->ticks>=o->limit) o->flags|=1; }
+#include "src/include/classes/TBoss4Zanzo.h"
+typedef char check_limit[(unsigned long)&((TBoss4Zanzo *)0)->limit==72?1:-1];
+typedef char check_ticks[(unsigned long)&((TBoss4Zanzo *)0)->ticks==76?1:-1];
+void TBoss4Zanzo_update_8c1b319c(TBoss4Zanzo *o) { if(++o->ticks>=o->limit) o->flags|=1; }

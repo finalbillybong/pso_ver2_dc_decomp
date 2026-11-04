@@ -1,24 +1,11 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TAdFloorLoad.h"
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_20 Arg0_20;
-typedef struct Arg0_24 Arg0_24;
-typedef struct Arg0_28 Arg0_28;
+typedef struct TAdFloorLoad_p20 TAdFloorLoad_p20;
+typedef struct TAdFloorLoad_p24 TAdFloorLoad_p24;
+typedef struct TAdFloorLoad_p28 TAdFloorLoad_p28;
 typedef struct S_vv1 S_vv1;
 typedef struct S_vv5 S_vv5;
 typedef struct S_vv9 S_vv9;
-struct Object {
-    char unknown0[0x18];
-    void *dispatch;
-    char unknown1c[0x4];
-    Arg0_20 *f20;
-    Arg0_24 *f24;
-    Arg0_28 *f28;
-};
 struct S_vv1 {
     char unknown0[0x4];
     short f04;
@@ -33,28 +20,28 @@ struct S_vv9 {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TObject_dtor_8c03311c(void *, short);
-extern void call_8c122774(void *, Object *);
-Object *TAdFloorLoad_dtor_8c207998(Object *o, int a1)
+extern void call_8c122774(void *, TAdFloorLoad *);
+TAdFloorLoad *TAdFloorLoad_dtor_8c207998(TAdFloorLoad *o, int a1)
 {
     S_vv1 *v1;
     S_vv5 *v5;
     S_vv9 *v9;
     if (o != 0) {
-        o->dispatch = (void *)0x8c2780b0;
+        o->vtable = (void *)0x8c2780b0;
         if (o->f20 != 0) {
             v1 = (S_vv1 *)o->f20;
             v1->f04 |= 1;
-            o->f20 = (Arg0_20 *)0;
+            o->f20 = (TAdFloorLoad_p20 *)0;
         }
         if (o->f24 != 0) {
             v5 = (S_vv5 *)o->f24;
             v5->f04 |= 1;
-            o->f24 = (Arg0_24 *)0;
+            o->f24 = (TAdFloorLoad_p24 *)0;
         }
         if (o->f28 != 0) {
             v9 = (S_vv9 *)o->f28;
             v9->f04 |= 1;
-            o->f28 = (Arg0_28 *)0;
+            o->f28 = (TAdFloorLoad_p28 *)0;
         }
         TObject_dtor_8c03311c((void *)o, (short)0);
         if ((short)a1 > 0) {

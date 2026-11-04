@@ -1,21 +1,10 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TAdPSOConv.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
 typedef struct S_g8c467180 S_g8c467180;
 typedef struct S_g8c467180_80 S_g8c467180_80;
 typedef struct S_g8c467180_80_4 S_g8c467180_80_4;
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
-typedef struct Object Object;
-typedef struct Arg0_28 Arg0_28;
-struct Object {
-    char unknown0[0x20];
-    int f20;
-    int f24;
-    Arg0_28 *f28;
-};
+typedef struct TAdPSOConv_p28 TAdPSOConv_p28;
 struct S_g8c467180 {
     char unknown0[0x80];
     S_g8c467180_80 *f80;
@@ -24,7 +13,7 @@ struct S_g8c467180_80 {
     char unknown0[0x4];
     S_g8c467180_80_4 *f04;
 };
-struct Arg0_28 {
+struct TAdPSOConv_p28 {
     char unknown0[0x5c];
     float f5c;
 };
@@ -37,12 +26,12 @@ extern char g_8c41cba0[];
 extern void operation_8c1cc690(void);
 extern int pair_grid_view_ready(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
-extern void TAdGuideButton_ctor_8c1afdb4(int, Object *, void *, void *, float);
+extern void TAdGuideButton_ctor_8c1afdb4(int, TAdPSOConv *, void *, void *, float);
 extern int operation_8c01d8a8(void *, int);
-extern void call_8c119c78(Arg0_28 *);
+extern void call_8c119c78(TAdPSOConv_p28 *);
 extern void request_resource_release(void *);
 extern void select_mode15_8c1cc5e8(void);
-void TAdPSOConv_update_8c25e3b0(Object *o)
+void TAdPSOConv_update_8c25e3b0(TAdPSOConv *o)
 {
     char *v65;
     int v6;
@@ -81,7 +70,7 @@ void TAdPSOConv_update_8c25e3b0(Object *o)
                     return;
                 }
             }
-            call_8c119c78((Arg0_28 *)(o->f28));
+            call_8c119c78((TAdPSOConv_p28 *)(o->f28));
             return;
 L_8c25e44a:;
             if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
@@ -92,7 +81,7 @@ L_8c25e44a:;
             }
             if (o->f28 != 0) {
                 request_resource_release((void *)(o->f28));
-                o->f28 = (Arg0_28 *)0;
+                o->f28 = (TAdPSOConv_p28 *)0;
             }
             o->f20 = 2;
             return;

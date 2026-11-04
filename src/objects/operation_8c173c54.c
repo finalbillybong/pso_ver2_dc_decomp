@@ -1,39 +1,18 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
+#include "src/include/classes/TQuestThreadBoard.h"
 typedef struct S_L8c41cba0 S_L8c41cba0;
 typedef struct S_g8c418248 S_g8c418248;
 typedef struct S_g8c4dbde0 S_g8c4dbde0;
-typedef struct Object Object;
-typedef struct Arg0_10 Arg0_10;
-typedef struct Arg0_28 Arg0_28;
-typedef struct Arg0_2c Arg0_2c;
-typedef struct Arg0_30 Arg0_30;
-typedef struct Arg0_98 Arg0_98;
-typedef struct Arg0_9c Arg0_9c;
-typedef struct Arg0_a0 Arg0_a0;
+typedef struct TObject_p10 TObject_p10;
+typedef struct TQuestThreadBoard_p28 TQuestThreadBoard_p28;
+typedef struct TQuestThreadBoard_p2c TQuestThreadBoard_p2c;
+typedef struct TQuestThreadBoard_p30 TQuestThreadBoard_p30;
+typedef struct TQuestThreadBoard_p98 TQuestThreadBoard_p98;
+typedef struct TQuestThreadBoard_p9c TQuestThreadBoard_p9c;
+typedef struct TQuestThreadBoard_pa0 TQuestThreadBoard_pa0;
 typedef struct S_vv21 S_vv21;
 typedef struct S_vv22 S_vv22;
 typedef struct S_vv23 S_vv23;
-struct Object {
-    char unknown0[0x4];
-    short f04;
-    char unknown6[0xa];
-    Arg0_10 *f10;
-    char unknown14[0x14];
-    Arg0_28 *f28;
-    Arg0_2c *f2c;
-    Arg0_30 *f30;
-    unsigned char f34;
-    char unknown35[0x63];
-    Arg0_98 *f98;
-    Arg0_9c *f9c;
-    Arg0_a0 *fa0;
-    int fa4;
-};
-struct Arg0_10 {
+struct TObject_p10 {
     char unknown0[0x4];
     short f04;
 };
@@ -45,7 +24,7 @@ struct S_g8c4dbde0 {
     char unknown0[0x20];
     int f20;
 };
-struct Arg0_30 {
+struct TQuestThreadBoard_p30 {
     char unknown0[0x80];
     unsigned short f80;
 };
@@ -79,7 +58,7 @@ extern int operation_8c174184(void *);
 extern int operation_8c174444(void *);
 extern int operation_8c17478c(void *);
 extern int operation_8c1747b0(void *);
-void TQuestThreadBoard_update_8c173c54(Object *o)
+void TQuestThreadBoard_update_8c173c54(TQuestThreadBoard *o)
 {
     int v3;
     int v11;
@@ -98,7 +77,7 @@ void TQuestThreadBoard_update_8c173c54(Object *o)
     int t10;
     int t11;
     int t12;
-    Arg0_10 *v10 = o->f10;
+    TObject_p10 *v10 = o->f10;
     switch (o->fa4) {
     case 0:
     case 1:
@@ -156,7 +135,7 @@ void TQuestThreadBoard_update_8c173c54(Object *o)
             t7 = operation_8c1571f4((void *)(o->f30));
             *(int *)((char *)((char *)o->f28 + 0x0) + (o->f34 << 2)) = (int)(t7);
             request_resource_release((void *)(o->f30));
-            o->f30 = (Arg0_30 *)0;
+            o->f30 = (TQuestThreadBoard_p30 *)0;
             o->fa4 = 0;
         }
         if ((((&g_8c41cba0)->f28 & 8)) == 0) {
@@ -171,11 +150,11 @@ void TQuestThreadBoard_update_8c173c54(Object *o)
         }
         if (o->f2c != 0) {
             request_resource_release((void *)(o->f2c));
-            o->f2c = (Arg0_2c *)0;
+            o->f2c = (TQuestThreadBoard_p2c *)0;
         }
         if (o->f30 != 0) {
             request_resource_release((void *)(o->f30));
-            o->f30 = (Arg0_30 *)0;
+            o->f30 = (TQuestThreadBoard_p30 *)0;
         }
         release_scene_8c16c1e4();
         o->f04 |= 1;
@@ -194,7 +173,7 @@ void TQuestThreadBoard_update_8c173c54(Object *o)
         }
         v21 = (S_vv21 *)o->f98;
         v21->f04 |= 1;
-        o->f98 = (Arg0_98 *)0;
+        o->f98 = (TQuestThreadBoard_p98 *)0;
         o->fa4 = 0;
         return;
     case 10:
@@ -205,7 +184,7 @@ void TQuestThreadBoard_update_8c173c54(Object *o)
         g_8c4db658 = (int)(t10);
         v22 = (S_vv22 *)o->f9c;
         v22->f04 |= 1;
-        o->f9c = (Arg0_9c *)0;
+        o->f9c = (TQuestThreadBoard_p9c *)0;
         o->fa4 = 0;
         return;
     case 11:
@@ -215,7 +194,7 @@ void TQuestThreadBoard_update_8c173c54(Object *o)
             *(int *)((char *)((char *)o->f28 + 0x0) + (o->f34 << 2)) = (int)(t12);
             v23 = (S_vv23 *)o->fa0;
             v23->f04 |= 1;
-            o->fa0 = (Arg0_a0 *)0;
+            o->fa0 = (TQuestThreadBoard_pa0 *)0;
             o->fa4 = 0;
         }
         return;

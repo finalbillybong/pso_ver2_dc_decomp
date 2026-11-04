@@ -1,29 +1,13 @@
-typedef struct Vector3 {
-    float x;
-    float y;
-    float z;
-} Vector3;
-typedef struct Object Object;
-typedef struct Arg0_104 Arg0_104;
-struct Object {
-    char unknown0[0xf4];
-    float ff4;
-    char unknownf8[0xc];
-    Arg0_104 *f104;
-    char unknown108[0x4];
-    short f10c;
-    short f10e;
-    short f110;
-    short f112;
-};
-struct Arg0_104 {
+#include "src/include/classes/TObjWarpBoss.h"
+typedef struct TObjWarpBoss_p104 TObjWarpBoss_p104;
+struct TObjWarpBoss_p104 {
     char unknown0[0x4];
     int f04;
 };
 extern int operation_8c03d338(void);
 extern void operation_8c1e7e18(void *);
-extern void call_8c1e8250(Object *);
-void TObjWarpBoss_update_8c1e7bb0(Object *o)
+extern void call_8c1e8250(TObjWarpBoss *);
+void TObjWarpBoss_update_8c1e7bb0(TObjWarpBoss *o)
 {
     short v1;
     float v11;
