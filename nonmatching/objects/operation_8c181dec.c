@@ -149,7 +149,7 @@ extern void memcpy_8c12b77c(S_vv32 *, int, int);
 extern void operation_8c17f210(void *);
 extern int operation_8c2324c0(void);
 extern int operation_8c2324a0(void);
-extern void call_8c17f3a8(S_vv30 *);
+extern void operation_8c17f3a8(S_vv30 *);
 extern int operation_8c232480(void);
 extern void call_8c011ed8(S_vv32 *);
 extern void operation_8c035388(void);
@@ -481,7 +481,7 @@ L_8c182310:;
     }
     memset_8c12b880((int)v30, 0, 0x1550);
     memcpy_8c12b77c((S_vv32 *)v30, (int)(v31 + 0x280), 0x1550);
-    call_8c17f3a8(v30);
+    operation_8c17f3a8(v30);
     v46 = (int)*(int *)0x8c4db9e4;
     v27 = (S_vv27 *)v46;
     if (((int)v30 + 0x420) != 0) {
@@ -518,7 +518,7 @@ L_8c1823b2:;
     ((S_L8c4dbaf8 *)0x8c4dbaf8)->f04 = (int)(t17);
     *(int *)0x8c4dbaf8 = (int)(t17);
     memcpy_8c12b77c((S_vv32 *)v30, (int)(v31 + 0x280), 0x1550);
-    call_8c17f3a8(v30);
+    operation_8c17f3a8(v30);
     v48 = (int)*(int *)0x8c4db9e4;
     v28 = (S_vv28 *)v48;
     if (((int)v30 + 0x420) != 0) {

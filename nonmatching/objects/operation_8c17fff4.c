@@ -134,7 +134,7 @@ extern void operation_8c17f210(void *);
 extern int compare_records_8c181968(void *, void *);
 extern int operation_8c2324c0(void);
 extern int operation_8c2324a0(void);
-extern void call_8c17f3a8(S_vv32 *);
+extern void operation_8c17f3a8(S_vv32 *);
 extern int compare_records_8c1819a8(void *, void *);
 extern int operation_8c232480(void);
 extern void call_8c011ed8(S_vv34 *);
@@ -428,14 +428,14 @@ L_8c180488:;
     t19 = operation_8c2324a0();
     ((S_L8c4dbaf8 *)0x8c4dbaf8)->f04 = (int)(t19);
     *(int *)0x8c4dbaf8 = (int)(t19);
-    call_8c17f3a8(v32);
+    operation_8c17f3a8(v32);
     t20 = compare_records_8c1819a8((void *)((int)v32 + 0x420), (void *)(*(S_g8c4db9e4 **)0x8c4db9e4));
     if (t20 != 6) {
         t21 = operation_8c232480();
         ((S_L8c4dbaf8 *)0x8c4dbaf8)->f04 = (int)(t21);
         *(int *)0x8c4dbaf8 = (int)(t21);
         memcpy_8c12b77c((S_vv34 *)v32, (void *)((int)v33 + 0x280), 0x1550);
-        call_8c17f3a8(v32);
+        operation_8c17f3a8(v32);
         t22 = compare_records_8c1819a8((void *)((int)v32 + 0x420), (void *)(*(S_g8c4db9e4 **)0x8c4db9e4));
         v29 = (int)t22;
         if (v29 == 6) {

@@ -1,18 +1,3 @@
-/* NON-MATCHING draft: not built, not admitted, earns no matching or progress credit.
- * address: 0x8c17f3a8
- * function: operation_8c17f3a8
- * language: c
- * reference size: 400 bytes
- * compiled size: 400 bytes (+0.0%)
- * differing lines: 48 of 168 reference instruction lines
- * differing bytes: 26
- * provenance: hand pass on a generator draft (behaviour reviewed)
- * known gaps: hand-revised from a generator draft; review reports remaining differences in
- *   register allocation, instruction scheduling, instruction or operand order, constant loading;
- *   review found and fixed behaviour defects of the generator draft; not proven equivalent to the
- *   original
- * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
- */
 typedef struct Vector3 {
     float x;
     float y;
@@ -66,34 +51,35 @@ extern void call_8c038020(void *, S_c8c011ecc *, S_c8c011ecc *, int);
 extern void call_8c011ed8(S_c8c011ecc *);
 extern void call_8c03809c(void *, Object *, int);
 extern void call_8c037eb8(void *, Object *, int);
-static inline S_c8c011ecc *create_state(void)
+static inline void init_block(S_c8c011ecc *p)
 {
-    S_c8c011ecc *p;
-    S_vv3 *v3;
+    int m;
     int i;
-    int k;
-    p = game_malloc_8c011ecc(0x1550);
-    if (p != 0) {
-        operation_8c1acbc0((void *)(((char *)p + 0x3c4)));
-        operation_8c1acbc0((void *)(((char *)p + 0x3e8)));
-        for (i = 0, k = -1; i < 0x1e; i++) {
-            v3 = (S_vv3 *)((char *)((char *)(int *)((char *)p + 0x4) + i * 0x1c) + 4);
-            v3->f00 = 0;
-            v3->f01 = k;
-            v3->f04 = 0;
-            v3->f03 = 0;
-            v3->f02 = 0;
-            operation_1c7dd4((void *)((int)v3 + 8));
-        }
+    S_vv3 *e;
+    operation_8c1acbc0((void *)(((char *)p + 0x3c4)));
+    operation_8c1acbc0((void *)(((char *)p + 0x3e8)));
+    for (i = 0, m = -1; i < 0x1e; i++) {
+        e = (S_vv3 *)((char *)((char *)(int *)((char *)p + 0x4) + i * 0x1c) + 4);
+        e->f00 = 0;
+        e->f01 = m;
+        e->f04 = 0;
+        e->f03 = 0;
+        e->f02 = 0;
+        operation_1c7dd4((void *)((int)e + 8));
     }
-    return p;
 }
 void operation_8c17f3a8(Object *o)
 {
     S_c8c011ecc *t1;
     S_c8c011ecc *t2;
-    t1 = create_state();
-    t2 = create_state();
+    t1 = game_malloc_8c011ecc(0x1550);
+    if (t1 != 0) {
+        init_block(t1);
+    }
+    t2 = game_malloc_8c011ecc(0x1550);
+    if (t2 != 0) {
+        init_block(t2);
+    }
     *(Block5456 *)&t1->f00 = *(Block5456 *)&o->tag;
     seed_random_state((void *)((void *)0x8c4db9f8), (unsigned int)((&g_8c4dbaf8)->f04));
     call_8c037f20((void *)((void *)0x8c4db9f8));

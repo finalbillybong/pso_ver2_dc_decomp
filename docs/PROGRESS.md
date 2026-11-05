@@ -2,22 +2,22 @@
 
 | Measure | Value |
 | --- | ---: |
-| Exact matching functions | 12306 |
-| Matching modules | 11375 |
-| Compiled complete ranges | 1,278,590 bytes |
-| Code-range coverage of the image | 30.7138% |
+| Exact matching functions | 12323 |
+| Matching modules | 11392 |
+| Compiled complete ranges | 1,284,654 bytes |
+| Code-range coverage of the image | 30.8595% |
 | of which Hitachi SHC pool groups | 93,006 bytes in 350 modules / 1197 functions |
 | Typed static data | 524,768 bytes in 12438 objects / 3517 modules |
 | Typed data by kind | byte_table 1,826, float_table 20,596, function_table 18,512, int16_table 15,084, int_table 26,124, pointer_table 31,676, record_table 153,560, string 126,674, string_table 5,160, vtable 125,556 bytes |
 | Static-data extent | 1,100,132 bytes (estimate) |
 | Typed data share of the static-data extent | 47.7005% |
 | Decoded executable | 4,162,912 bytes |
-| Image coverage (code ranges + typed data) | 43.3196% |
+| Image coverage (code ranges + typed data) | 43.4653% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
 | Assembly (hand-written), not decompiled | 32,738 bytes in 88 units (1.0689% of the code extent) |
-| Fallback assembly for unmatched code, **not decompiled** | 1,775,998 bytes in 4895 units (57.9865% of the code extent) |
-| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,992,279 bytes (95.9011% of the image) |
-| Dump extracts (untyped bytes from your dump, not reconstructed) | 170,633 bytes in 2643 ranges (4.0989% of the image; untyped_bytes 136,571, zero_run 34,062) |
+| Fallback assembly for unmatched code, **not decompiled** | 1,769,940 bytes in 4895 units (57.7887% of the code extent) |
+| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,992,285 bytes (95.9013% of the image) |
+| Dump extracts (untyped bytes from your dump, not reconstructed) | 170,627 bytes in 2643 ranges (4.0987% of the image; untyped_bytes 136,571, zero_run 34,062) |
 | Retained reference dependence | 0 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
@@ -42,7 +42,7 @@ time, for code that has no matching C yet, only so that more of the image builds
 source; it is replaced by C as matches land and is excluded from the code-range,
 matching and image-coverage figures. See ASM.md.
 
-Exact-build verification recorded: **2026-11-04**. Two fresh
+Exact-build verification recorded: **2026-11-05**. Two fresh
 project builds, exact integrated-image comparison, exact typed-data modules and the
 five-function compiler proof passed. Public CI checks the source-bound checkpoint and host-tool tests;
 it does not access a game dump or recompile the game.

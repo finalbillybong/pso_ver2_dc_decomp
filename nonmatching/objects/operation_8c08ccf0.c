@@ -84,7 +84,7 @@ extern S_g8c44be9c *g_8c44be9c;
 extern S_g8c44bea0 *g_8c44bea0;
 extern S_g8c469da4 *g_8c469da4;
 extern S_c8c08d934 *call_8c08d934(Object *, void *);
-extern int call_8c08da4c(Object *, short);
+extern int operation_8c08da4c(Object *, short);
 extern void operation_8c08dc38(void *, int);
 extern void operation_8c08da44(int, void *);
 extern int operation_8c08db0c(Object *);
@@ -104,7 +104,7 @@ void operation_8c08ccf0(Object *o)
     int t6;
     t1 = call_8c08d934(o, (void *)(&o->f20));
     if (t1 != 0) {
-        t2 = call_8c08da4c(o, t1->f00);
+        t2 = operation_8c08da4c(o, t1->f00);
         if (t2 != 0) {
             *(Block60 *)&o->fc0 = *(Block60 *)&t1->f04;
             *(Block8 *)&o->f20 = *(Block8 *)&o->fc0.f0c;

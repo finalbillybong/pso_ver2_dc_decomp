@@ -76,7 +76,7 @@ extern void memset_8c12b880(void *, int, int);
 extern void operation_8c191504(int);
 extern void operation_8c01c250(int);
 extern void call_8c1003d0(void *);
-extern void call_8c060724(int);
+extern void operation_8c060724(int);
 extern void operation_8c04c270(void);
 extern void call_8c238fd4(void *);
 extern void wait_vsync_and_flip_8c380516(void);
@@ -154,7 +154,7 @@ void mode_title_init_8c184138(void)
     g_8c4dbb38 = 0;
     g_8c4dbb3c = 0;
     call_8c1003d0((void *)((void *)0x8c3199e4));
-    call_8c060724(-0x384);
+    operation_8c060724(-0x384);
     operation_8c04c270();
     call_8c238fd4((void *)((void *)0x8c41ce5c));
     wait_vsync_and_flip_8c380516();

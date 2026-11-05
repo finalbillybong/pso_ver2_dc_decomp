@@ -9,7 +9,7 @@
   "todo_holes": false,
   "steering_forms": false
  },
- "count": 2449,
+ "count": 2432,
  "entries": [
   {
    "address": "0x8c0102e4",
@@ -2006,22 +2006,6 @@
    }
   },
   {
-   "address": "0x8c02631c",
-   "file": "nonmatching/objects/operation_8c02631c.c",
-   "function": "operation_8c02631c",
-   "language": "c",
-   "reference_size": 136,
-   "compiled_size": 136,
-   "differing_lines": 2,
-   "differing_bytes": 32,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "operation_8c026058": "0x8c026058",
-    "select_member_8c026104": "0x8c026104"
-   }
-  },
-  {
    "address": "0x8c02679c",
    "file": "nonmatching/objects/handle_6x2C_impose_hold_8c02679c.c",
    "function": "handle_6x2C_impose_hold_8c02679c",
@@ -2711,26 +2695,6 @@
     "memset_8c12b880": "0x8c12b880",
     "strlen_8c12b0cc": "0x8c12b0cc",
     "strncpy_8c12b154": "0x8c12b154"
-   }
-  },
-  {
-   "address": "0x8c02ef5c",
-   "file": "nonmatching/objects/operation_8c02ef5c.cpp",
-   "function": "operation_8c02ef5c",
-   "language": "c++",
-   "reference_size": 360,
-   "compiled_size": 356,
-   "differing_lines": 16,
-   "differing_bytes": 264,
-   "provenance": "hand pass on a generator draft (behaviour reviewed)",
-   "class_header": null,
-   "symbols": {
-    "g_8c2e7ce0": "0x8c2e7ce0",
-    "memset_8c12b880": "0x8c12b880",
-    "operation_1c7dd4": "0x8c1c7dd4",
-    "operation_8c034e20": "0x8c034e20",
-    "operation_8c073eb4": "0x8c073eb4",
-    "operation_8c1acbc0": "0x8c1acbc0"
    }
   },
   {
@@ -4416,37 +4380,6 @@
    "class_header": null,
    "symbols": {
     "g_8c2efec8": "0x8c2efec8"
-   }
-  },
-  {
-   "address": "0x8c040d84",
-   "file": "nonmatching/objects/operation_8c040d84.c",
-   "function": "operation_8c040d84",
-   "language": "c",
-   "reference_size": 612,
-   "compiled_size": 612,
-   "differing_lines": 8,
-   "differing_bytes": 7,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "call_8c3827d8": "0x8c3827d8",
-    "call_8c3be280": "0x8c3be280",
-    "g_8c575528": "0x8c575528",
-    "g_8c57555c": "0x8c57555c",
-    "g_8c575560": "0x8c575560",
-    "reset_manager_record_slots": "0x8c0401fc",
-    "reset_state_8c391c94": "0x8c391c94",
-    "reset_state_8c391cc4": "0x8c391cc4",
-    "restore_child_blend": "0x8c0c532c",
-    "set_blend_5_6": "0x8c0c5364",
-    "set_blend_5_7": "0x8c0c5348",
-    "set_child_blend": "0x8c0c5310",
-    "sq_flush_8c38af12": "0x8c38af12",
-    "sq_header3_8c38b02e": "0x8c38b02e",
-    "sq_header_8c38af22": "0x8c38af22",
-    "sq_quad_8c38b09e": "0x8c38b09e",
-    "sq_select_8c38aeb4": "0x8c38aeb4"
    }
   },
   {
@@ -7767,26 +7700,6 @@
    }
   },
   {
-   "address": "0x8c060724",
-   "file": "nonmatching/objects/operation_8c060724.c",
-   "function": "operation_8c060724",
-   "language": "c",
-   "reference_size": 76,
-   "compiled_size": 76,
-   "differing_lines": 16,
-   "differing_bytes": 39,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "g_8c467a44": "0x8c467a44",
-    "g_8c467a48": "0x8c467a48",
-    "g_8c467a4c": "0x8c467a4c",
-    "g_8c467a50": "0x8c467a50",
-    "g_8c467a54": "0x8c467a54",
-    "operation_8c100aec": "0x8c100aec"
-   }
-  },
-  {
    "address": "0x8c060824",
    "file": "nonmatching/objects/load_assets_ene_bm5_wolf_8c060824.c",
    "function": "load_assets_ene_bm5_wolf_8c060824",
@@ -10679,21 +10592,6 @@
    "symbols": {}
   },
   {
-   "address": "0x8c08076c",
-   "file": "nonmatching/objects/TObjParticle_render_8c08076c.c",
-   "function": "TObjParticle_render_8c08076c",
-   "language": "c",
-   "reference_size": 36,
-   "compiled_size": 36,
-   "differing_lines": 4,
-   "differing_bytes": 4,
-   "provenance": "hand pass on a generator draft",
-   "class_header": "src/include/classes/TObjParticle.h",
-   "symbols": {
-    "hierarchy_is_active": "0x8c03347c"
-   }
-  },
-  {
    "address": "0x8c080840",
    "file": "nonmatching/objects/TMotorcycle_ctor_8c080840.c",
    "function": "TMotorcycle_ctor_8c080840",
@@ -12018,7 +11916,6 @@
    "class_header": null,
    "symbols": {
     "call_8c08d934": "0x8c08d934",
-    "call_8c08da4c": "0x8c08da4c",
     "call_8c08db98": "0x8c08db98",
     "g_8c44be8c": "0x8c44be8c",
     "g_8c44be98": "0x8c44be98",
@@ -12026,6 +11923,7 @@
     "g_8c44bea0": "0x8c44bea0",
     "g_8c469da4": "0x8c469da4",
     "operation_8c08da44": "0x8c08da44",
+    "operation_8c08da4c": "0x8c08da4c",
     "operation_8c08db0c": "0x8c08db0c",
     "operation_8c08dc38": "0x8c08dc38",
     "operation_8c0bbab8": "0x8c0bbab8"
@@ -12179,21 +12077,6 @@
     "g_8c44be04": "0x8c44be04",
     "g_8c469da8": "0x8c469da8",
     "g_8c46ec50": "0x8c46ec50"
-   }
-  },
-  {
-   "address": "0x8c08da4c",
-   "file": "nonmatching/objects/operation_8c08da4c.c",
-   "function": "operation_8c08da4c",
-   "language": "c",
-   "reference_size": 92,
-   "compiled_size": 92,
-   "differing_lines": 6,
-   "differing_bytes": 3,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "get_current_area_8c032b10": "0x8c032b10"
    }
   },
   {
@@ -15099,30 +14982,6 @@
    }
   },
   {
-   "address": "0x8c0acd00",
-   "file": "nonmatching/objects/TTecBarta_ctor_2_8c0acd00.c",
-   "function": "TTecBarta_ctor_2_8c0acd00",
-   "language": "c",
-   "reference_size": 956,
-   "compiled_size": 956,
-   "differing_lines": 242,
-   "differing_bytes": 750,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "call_8c0ad348": "0x8c0ad348",
-    "call_8c0b99f4": "0x8c0b99f4",
-    "call_8c18e768": "0x8c18e768",
-    "create_effect_769c": "0x8c0a769c",
-    "create_effect_785c": "0x8c0a785c",
-    "emit_control_60320": "0x8c060320",
-    "g_8c2852d0": "0x8c2852d0",
-    "g_8c3047d8": "0x8c3047d8",
-    "operator_new_8c18de4c": "0x8c18de4c",
-    "play_se_8c05fbf8": "0x8c05fbf8"
-   }
-  },
-  {
    "address": "0x8c0ad0c0",
    "file": "nonmatching/objects/TTecBarta_update_8c0ad0c0.c",
    "function": "TTecBarta_update_8c0ad0c0",
@@ -15389,35 +15248,6 @@
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
    "symbols": {
-    "play_se_8c05fbf8": "0x8c05fbf8"
-   }
-  },
-  {
-   "address": "0x8c0b15d4",
-   "file": "nonmatching/objects/TTecGiBarta_ctor_2_8c0b15d4.c",
-   "function": "TTecGiBarta_ctor_2_8c0b15d4",
-   "language": "c",
-   "reference_size": 1012,
-   "compiled_size": 1028,
-   "differing_lines": 220,
-   "differing_bytes": 750,
-   "provenance": "generator draft (experimental generator, mode extern)",
-   "class_header": "src/include/classes/TTecGiBarta.h",
-   "symbols": {
-    "call_8c0b99f4": "0x8c0b99f4",
-    "call_8c18e768": "0x8c18e768",
-    "call_8c3be280": "0x8c3be280",
-    "create_effect_769c": "0x8c0a769c",
-    "create_effect_785c": "0x8c0a785c",
-    "emit_control_60320": "0x8c060320",
-    "g_8c2853d8": "0x8c2853d8",
-    "g_8c305184": "0x8c305184",
-    "g_8c305194": "0x8c305194",
-    "initialize_effect4_template": "0x8c0b1bf8",
-    "njPopMatrix_8c38accc": "0x8c38accc",
-    "njPushMatrix_8c38ade4": "0x8c38ade4",
-    "njRotateY_8c37df90": "0x8c37df90",
-    "operator_new_8c18de4c": "0x8c18de4c",
     "play_se_8c05fbf8": "0x8c05fbf8"
    }
   },
@@ -15860,30 +15690,6 @@
    "class_header": null,
    "symbols": {
     "lookup_low_id": "0x8c021ef8"
-   }
-  },
-  {
-   "address": "0x8c0b5080",
-   "file": "nonmatching/objects/TTecMegid_ctor_2_8c0b5080.c",
-   "function": "TTecMegid_ctor_2_8c0b5080",
-   "language": "c",
-   "reference_size": 844,
-   "compiled_size": 852,
-   "differing_lines": 224,
-   "differing_bytes": 713,
-   "provenance": "hand pass on a generator draft",
-   "class_header": "src/include/classes/TTecMegid.h",
-   "symbols": {
-    "call_8c0b572c": "0x8c0b572c",
-    "call_8c0b99f4": "0x8c0b99f4",
-    "call_8c18e768": "0x8c18e768",
-    "create_effect_769c": "0x8c0a769c",
-    "create_effect_785c": "0x8c0a785c",
-    "emit_control_60320": "0x8c060320",
-    "g_8c285640": "0x8c285640",
-    "g_8c305270": "0x8c305270",
-    "operator_new_8c18de4c": "0x8c18de4c",
-    "play_se_8c05fbf8": "0x8c05fbf8"
    }
   },
   {
@@ -25035,35 +24841,6 @@
    }
   },
   {
-   "address": "0x8c105c78",
-   "file": "nonmatching/objects/operation_8c105c78.cpp",
-   "function": "operation_8c105c78",
-   "language": "c++",
-   "reference_size": 616,
-   "compiled_size": 616,
-   "differing_lines": 8,
-   "differing_bytes": 4,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "find_record_8c0744dc": "0x8c0744dc",
-    "g_8c418248": "0x8c418248",
-    "operation_194d60": "0x8c194d60",
-    "operation_8c02231c": "0x8c02231c",
-    "operation_8c022538": "0x8c022538",
-    "operation_8c023a44": "0x8c023a44",
-    "operation_8c03b55c": "0x8c03b55c",
-    "operation_8c106038": "0x8c106038",
-    "operation_8c1571f4": "0x8c1571f4",
-    "operation_8c18afac": "0x8c18afac",
-    "operation_8c1c74a8": "0x8c1c74a8",
-    "operation_8c1ccb64": "0x8c1ccb64",
-    "operation_8c1cdc80": "0x8c1cdc80",
-    "operation_8c1cdcdc": "0x8c1cdcdc",
-    "request_resource_release": "0x8c0dc7f4"
-   }
-  },
-  {
    "address": "0x8c10629c",
    "file": "nonmatching/objects/operation_8c10629c.c",
    "function": "operation_8c10629c",
@@ -32582,32 +32359,6 @@
    }
   },
   {
-   "address": "0x8c159194",
-   "file": "nonmatching/objects/operation_8c159194.c",
-   "function": "operation_8c159194",
-   "language": "c",
-   "reference_size": 32,
-   "compiled_size": 32,
-   "differing_lines": 14,
-   "differing_bytes": 9,
-   "provenance": "generator draft (mode switch2ext)",
-   "class_header": null,
-   "symbols": {}
-  },
-  {
-   "address": "0x8c1591b4",
-   "file": "nonmatching/objects/operation_8c1591b4.c",
-   "function": "operation_8c1591b4",
-   "language": "c",
-   "reference_size": 32,
-   "compiled_size": 32,
-   "differing_lines": 14,
-   "differing_bytes": 9,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {}
-  },
-  {
    "address": "0x8c159a28",
    "file": "nonmatching/objects/TObjVoloptCage_ctor_8c159a28.c",
    "function": "TObjVoloptCage_ctor_8c159a28",
@@ -34993,19 +34744,6 @@
    }
   },
   {
-   "address": "0x8c173508",
-   "file": "nonmatching/objects/operation_8c173508.c",
-   "function": "operation_8c173508",
-   "language": "c",
-   "reference_size": 32,
-   "compiled_size": 32,
-   "differing_lines": 14,
-   "differing_bytes": 9,
-   "provenance": "generator draft (mode switch2ext)",
-   "class_header": null,
-   "symbols": {}
-  },
-  {
    "address": "0x8c1744b4",
    "file": "nonmatching/objects/operation_8c1744b4.c",
    "function": "operation_8c1744b4",
@@ -35906,7 +35644,6 @@
     "call_8c011ed8": "0x8c011ed8",
     "call_8c027f34": "0x8c027f34",
     "call_8c17f024": "0x8c17f024",
-    "call_8c17f3a8": "0x8c17f3a8",
     "call_8c36d3ca": "0x8c36d3ca",
     "call_8c36d4c0": "0x8c36d4c0",
     "call_8c3727a0": "0x8c3727a0",
@@ -35923,6 +35660,7 @@
     "operation_8c01b9e0": "0x8c01b9e0",
     "operation_8c035388": "0x8c035388",
     "operation_8c17f210": "0x8c17f210",
+    "operation_8c17f3a8": "0x8c17f3a8",
     "operation_8c191504": "0x8c191504",
     "operation_8c19b054": "0x8c19b054",
     "operation_8c1acbc0": "0x8c1acbc0",
@@ -35991,30 +35729,6 @@
     "g_8c4dbaf8": "0x8c4dbaf8",
     "game_malloc_8c011ecc": "0x8c011ecc",
     "next_random_state": "0x8c037e50",
-    "operation_1c7dd4": "0x8c1c7dd4",
-    "operation_8c1acbc0": "0x8c1acbc0",
-    "seed_random_state": "0x8c037d8c"
-   }
-  },
-  {
-   "address": "0x8c17f3a8",
-   "file": "nonmatching/objects/operation_8c17f3a8.c",
-   "function": "operation_8c17f3a8",
-   "language": "c",
-   "reference_size": 400,
-   "compiled_size": 400,
-   "differing_lines": 48,
-   "differing_bytes": 26,
-   "provenance": "hand pass on a generator draft (behaviour reviewed)",
-   "class_header": null,
-   "symbols": {
-    "call_8c011ed8": "0x8c011ed8",
-    "call_8c037eb8": "0x8c037eb8",
-    "call_8c037f20": "0x8c037f20",
-    "call_8c038020": "0x8c038020",
-    "call_8c03809c": "0x8c03809c",
-    "g_8c4dbaf8": "0x8c4dbaf8",
-    "game_malloc_8c011ecc": "0x8c011ecc",
     "operation_1c7dd4": "0x8c1c7dd4",
     "operation_8c1acbc0": "0x8c1acbc0",
     "seed_random_state": "0x8c037d8c"
@@ -36122,7 +35836,6 @@
     "call_8c011ed8": "0x8c011ed8",
     "call_8c027f34": "0x8c027f34",
     "call_8c17f024": "0x8c17f024",
-    "call_8c17f3a8": "0x8c17f3a8",
     "call_8c18e720": "0x8c18e720",
     "call_8c2280f0": "0x8c2280f0",
     "call_8c36d3ca": "0x8c36d3ca",
@@ -36147,6 +35860,7 @@
     "operation_8c177a90": "0x8c177a90",
     "operation_8c17e194": "0x8c17e194",
     "operation_8c17f210": "0x8c17f210",
+    "operation_8c17f3a8": "0x8c17f3a8",
     "operation_8c191504": "0x8c191504",
     "operation_8c19b054": "0x8c19b054",
     "operation_8c1acbc0": "0x8c1acbc0",
@@ -36175,7 +35889,6 @@
     "call_8c011ed8": "0x8c011ed8",
     "call_8c027f34": "0x8c027f34",
     "call_8c17f024": "0x8c17f024",
-    "call_8c17f3a8": "0x8c17f3a8",
     "call_8c18e720": "0x8c18e720",
     "call_8c36d3ca": "0x8c36d3ca",
     "call_8c36d4c0": "0x8c36d4c0",
@@ -36195,6 +35908,7 @@
     "operation_8c177a90": "0x8c177a90",
     "operation_8c17e194": "0x8c17e194",
     "operation_8c17f210": "0x8c17f210",
+    "operation_8c17f3a8": "0x8c17f3a8",
     "operation_8c19b054": "0x8c19b054",
     "operation_8c1acbc0": "0x8c1acbc0",
     "operation_8c232480": "0x8c232480",
@@ -36249,7 +35963,6 @@
     "bu_check_busy_8c372d98": "0x8c372d98",
     "call_8c011ed8": "0x8c011ed8",
     "call_8c17f024": "0x8c17f024",
-    "call_8c17f3a8": "0x8c17f3a8",
     "call_8c18e720": "0x8c18e720",
     "call_8c36d3ca": "0x8c36d3ca",
     "call_8c36d4c0": "0x8c36d4c0",
@@ -36268,6 +35981,7 @@
     "operation_8c01b9e0": "0x8c01b9e0",
     "operation_8c035388": "0x8c035388",
     "operation_8c17f210": "0x8c17f210",
+    "operation_8c17f3a8": "0x8c17f3a8",
     "operation_8c191504": "0x8c191504",
     "operation_8c19b054": "0x8c19b054",
     "operation_8c1acbc0": "0x8c1acbc0",
@@ -36296,7 +36010,6 @@
     "bu_check_busy_8c372d98": "0x8c372d98",
     "call_8c011ed8": "0x8c011ed8",
     "call_8c17f024": "0x8c17f024",
-    "call_8c17f3a8": "0x8c17f3a8",
     "call_8c18e720": "0x8c18e720",
     "call_8c2280f0": "0x8c2280f0",
     "call_8c36d3ca": "0x8c36d3ca",
@@ -36316,6 +36029,7 @@
     "operation_8c01b9e0": "0x8c01b9e0",
     "operation_8c17e194": "0x8c17e194",
     "operation_8c17f210": "0x8c17f210",
+    "operation_8c17f3a8": "0x8c17f3a8",
     "operation_8c191504": "0x8c191504",
     "operation_8c19b054": "0x8c19b054",
     "operation_8c1acbc0": "0x8c1acbc0",
@@ -36344,7 +36058,6 @@
     "bu_check_busy_8c372d98": "0x8c372d98",
     "build_guild_card_vmu_header_8c17ef78": "0x8c17ef78",
     "call_8c011ed8": "0x8c011ed8",
-    "call_8c17f3a8": "0x8c17f3a8",
     "call_8c17f824": "0x8c17f824",
     "call_8c184024": "0x8c184024",
     "call_8c184070": "0x8c184070",
@@ -36385,6 +36098,7 @@
     "operation_8c119764": "0x8c119764",
     "operation_8c1571f4": "0x8c1571f4",
     "operation_8c17f210": "0x8c17f210",
+    "operation_8c17f3a8": "0x8c17f3a8",
     "operation_8c184100": "0x8c184100",
     "operation_8c1845a8": "0x8c1845a8",
     "operation_8c191504": "0x8c191504",
@@ -36438,7 +36152,6 @@
     "TCameraCtrl_ctor_8c0a1448": "0x8c0a1448",
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "TWindowCtrlMain_ctor_8c1bec9c": "0x8c1bec9c",
-    "call_8c060724": "0x8c060724",
     "call_8c0a1a78": "0x8c0a1a78",
     "call_8c0a1bf8": "0x8c0a1bf8",
     "call_8c1003d0": "0x8c1003d0",
@@ -36464,6 +36177,7 @@
     "memset_8c12b880": "0x8c12b880",
     "operation_8c01c250": "0x8c01c250",
     "operation_8c04c270": "0x8c04c270",
+    "operation_8c060724": "0x8c060724",
     "operation_8c0a237c": "0x8c0a237c",
     "operation_8c0a2a4c": "0x8c0a2a4c",
     "operation_8c191504": "0x8c191504",
@@ -37515,30 +37229,6 @@
     "g_8c4dbf40": "0x8c4dbf40",
     "operation_8c257e3c": "0x8c257e3c",
     "strncpy_8c12b154": "0x8c12b154"
-   }
-  },
-  {
-   "address": "0x8c18f0ec",
-   "file": "nonmatching/objects/operation_8c18f0ec.c",
-   "function": "operation_8c18f0ec",
-   "language": "c",
-   "reference_size": 448,
-   "compiled_size": 448,
-   "differing_lines": 48,
-   "differing_bytes": 26,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "call_8c18f570": "0x8c18f570",
-    "call_8c18f630": "0x8c18f630",
-    "g_8c4dbf60": "0x8c4dbf60",
-    "g_8c4dbf64": "0x8c4dbf64",
-    "g_8c4dbf68": "0x8c4dbf68",
-    "g_8c4dc5a4": "0x8c4dc5a4",
-    "g_8c4dc5a8": "0x8c4dc5a8",
-    "operation_1c7dd4": "0x8c1c7dd4",
-    "operation_8c18f418": "0x8c18f418",
-    "rand": "0x8c12b944"
    }
   },
   {
@@ -44977,26 +44667,6 @@
    }
   },
   {
-   "address": "0x8c1ea80c",
-   "file": "nonmatching/objects/handle_6x43_first_attack_8c1ea80c.c",
-   "function": "handle_6x43_first_attack_8c1ea80c",
-   "language": "c",
-   "reference_size": 184,
-   "compiled_size": 184,
-   "differing_lines": 34,
-   "differing_bytes": 22,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "g_8c418248": "0x8c418248",
-    "g_8c4627c8": "0x8c4627c8",
-    "lookup_low_id": "0x8c021ef8",
-    "object_ready": "0x8c02a980",
-    "operation_8c02a6d4": "0x8c02a6d4",
-    "operation_8c1e8e60": "0x8c1e8e60"
-   }
-  },
-  {
    "address": "0x8c1ea8c4",
    "file": "nonmatching/objects/operation_8c1ea8c4.c",
    "function": "operation_8c1ea8c4",
@@ -45077,26 +44747,6 @@
     "operation_8c036840": "0x8c036840",
     "operation_8c0541b4": "0x8c0541b4",
     "operation_8c1aaadc": "0x8c1aaadc"
-   }
-  },
-  {
-   "address": "0x8c1ebad4",
-   "file": "nonmatching/objects/handle_6x44_second_attack_8c1ebad4.c",
-   "function": "handle_6x44_second_attack_8c1ebad4",
-   "language": "c",
-   "reference_size": 196,
-   "compiled_size": 196,
-   "differing_lines": 30,
-   "differing_bytes": 18,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "g_8c418248": "0x8c418248",
-    "g_8c4627c8": "0x8c4627c8",
-    "lookup_low_id": "0x8c021ef8",
-    "object_ready": "0x8c02a980",
-    "operation_8c02a6d4": "0x8c02a6d4",
-    "operation_8c1e8e60": "0x8c1e8e60"
    }
   },
   {
