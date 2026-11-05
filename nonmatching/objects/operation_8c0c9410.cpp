@@ -163,7 +163,7 @@ struct Frame {
     float f08;
     Vector3 f0c;
 };
-extern "C" void operation_8c05c184(Object *);
+extern "C" void set_fields_wrapper_8c05c184(Object *);
 extern "C" void aim_direction_8c05bdd4(Object *);
 extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
@@ -184,7 +184,7 @@ extern "C" void operation_8c0c9410(Object *o, float f0)
     float t2;
     float t3;
     int t4;
-    operation_8c05c184(o);
+    set_fields_wrapper_8c05c184(o);
     aim_direction_8c05bdd4(o);
     t1 = njSin_8c37eb0c(((ObjectData *)o)->f40c);
     (&frame)->f00 = f0 * t1;

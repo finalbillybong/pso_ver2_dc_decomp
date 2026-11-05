@@ -9,7 +9,7 @@ struct Object {
     int f3ac;
 };
 extern void set_fields_8c05c1a4(void *, void *);
-void operation_8c05c184(Object *o)
+void set_fields_wrapper_8c05c184(Object *o)
 {
     if (o->f3ac != 0) {
         set_fields_8c05c1a4((void *)o, (void *)(o->f3ac + 0x3c));

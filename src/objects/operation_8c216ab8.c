@@ -133,8 +133,8 @@ extern int operation_8c051cf0(void *);
 extern void operation_8c051e60(void *);
 extern int create_single_entry_menu_8c217530(void);
 extern int operation_8c2175b4(void);
-extern void operation_8c217728(void *);
-extern void operation_8c2177c0(void *);
+extern void TWindowSubShortMail_update_step_8c217728(void *);
+extern void TWindowSubShortMail_update_step_2_8c2177c0(void *);
 extern void call_8c156e58(Arg0_30 *);
 extern int create_single_entry_menu_8c217604(Object *);
 extern int operation_8c217688(Object *);
@@ -428,14 +428,14 @@ void TWindowSubShortMail_update_8c216ab8(Object *o)
         }
         t19 = operation_8c1571f4((void *)(o->f38));
         if (t19 == 0) {
-            operation_8c217728((void *)o);
+            TWindowSubShortMail_update_step_8c217728((void *)o);
             o->f20 = 1;
             return;
         }
         o->f20 = 0xb;
         return;
     case 15:
-        operation_8c2177c0((void *)o);
+        TWindowSubShortMail_update_step_2_8c2177c0((void *)o);
         o->f20 = 0x10;
     case 16:
         o->f20 = 1;

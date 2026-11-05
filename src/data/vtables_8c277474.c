@@ -14,16 +14,16 @@ extern void fn_8c1e3c9c(void);
 extern void operation_8c1e507c(void);
 extern void operation_8c084074(void);
 extern void operation_8c0840a8(void);
-extern void operation_8c1e4af0(void);
-extern void operation_8c1e4e00(void);
-extern void fn_8c01d694(void);
+extern void TOContainerAncientEnemy_vslot03_8c1e4af0(void);
+extern void TOContainerAncientEnemy_vslot05_8c1e4e00(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c043724(void);
-extern void operation_8c010500(void);
-extern void operation_8c1e4af4(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TOContainerAncientEnemy_vslot09_8c1e4af4(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c04a928(void);
 extern void operation_8c04a950(void);
@@ -34,7 +34,7 @@ extern void operation_8c04a4f4(void);
 extern void operation_8c013474(void);
 extern void operation_8c083f88(void);
 extern void operation_8c085cd0(void);
-extern void operation_8c1e4b64(void);
+extern void TOContainerAncientEnemy_vslot24_8c1e4b64(void);
 extern void operation_8c083fb4(void);
 extern void operation_8c085cd4(void);
 extern void operation_8c085cec(void);
@@ -96,25 +96,25 @@ extern void operation_8c0134e0(void);
 extern void operation_8c0134e4(void);
 extern void operation_8c0134e8(void);
 extern void operation_8c0134ec(void);
-extern void operation_8c1e4c40(void);
-extern void operation_8c1e49f0(void);
-extern void operation_8c1e4a20(void);
+extern void TOContainerAncientEnemy_vslot86_8c1e4c40(void);
+extern void TOContainerAncientEnemy_vslot87_8c1e49f0(void);
+extern void TOContainerAncientEnemy_vslot88_8c1e4a20(void);
 extern void TOContainerAncientEnemyCommon_dtor_8c1e4e44(void);
 extern void TOContainerAncientEnemy_dtor_8c1e4978(void);
 extern void operation_8c1e4774(void);
-extern void operation_8c1e4260(void);
+extern void TOContainerAncientItemCommon_vslot03_8c1e4260(void);
 extern void operation_8c1e4858(void);
 extern void operation_8c084164(void);
 extern void operation_8c083fd8(void);
-extern void operation_8c1e4264(void);
-extern void operation_8c1e4160(void);
-extern void operation_8c1e4190(void);
+extern void TOContainerAncientItemCommon_vslot86_8c1e4264(void);
+extern void TOContainerAncientItemCommon_vslot87_8c1e4160(void);
+extern void TOContainerAncientItemCommon_vslot88_8c1e4190(void);
 extern void operation_8c1e469c(void);
 extern void operation_8c1e4720(void);
 extern void TOContainerAncientItemCommon_dtor_8c1e4424(void);
 extern void TOContainerAncientItemCommon_v05_8c1e4554(void);
 extern void operation_8c1e40e8(void);
-extern void operation_8c085cf8(void);
+extern void TObjContainerBase_vslot05_8c085cf8(void);
 
 /* 8c277474: type-information and this-adjustment header, then 6 slots */
 VirtualFunction const TWindowKeyBoardBase_vtable_8c277474[8] = {
@@ -146,17 +146,17 @@ VirtualFunction const vt_8c2774b0[91] = {
     operation_8c1e507c,
     operation_8c084074,
     operation_8c0840a8,
-    operation_8c1e4af0,
+    TOContainerAncientEnemy_vslot03_8c1e4af0,
     hierarchy_output,
-    operation_8c1e4e00,
-    fn_8c01d694,
+    TOContainerAncientEnemy_vslot05_8c1e4e00,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c1e4af4,
+    TObjectShared_vslot08_8c010500,
+    TOContainerAncientEnemy_vslot09_8c1e4af4,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,
@@ -167,7 +167,7 @@ VirtualFunction const vt_8c2774b0[91] = {
     operation_8c013474,
     operation_8c083f88,
     operation_8c085cd0,
-    operation_8c1e4b64,
+    TOContainerAncientEnemy_vslot24_8c1e4b64,
     operation_8c083fb4,
     operation_8c085cd4,
     operation_8c085cec,
@@ -229,9 +229,9 @@ VirtualFunction const vt_8c2774b0[91] = {
     operation_8c0134e4,
     operation_8c0134e8,
     operation_8c0134ec,
-    operation_8c1e4c40,
-    operation_8c1e49f0,
-    operation_8c1e4a20
+    TOContainerAncientEnemy_vslot86_8c1e4c40,
+    TOContainerAncientEnemy_vslot87_8c1e49f0,
+    TOContainerAncientEnemy_vslot88_8c1e4a20
 };
 
 /* 8c27761c: type-information and this-adjustment header, then 89 slots */
@@ -241,17 +241,17 @@ VirtualFunction const TOContainerAncientEnemyCommon_vtable_8c27761c[91] = {
     TOContainerAncientEnemyCommon_dtor_8c1e4e44,
     operation_8c084074,
     operation_8c0840a8,
-    operation_8c1e4af0,
+    TOContainerAncientEnemy_vslot03_8c1e4af0,
     hierarchy_output,
-    operation_8c1e4e00,
-    fn_8c01d694,
+    TOContainerAncientEnemy_vslot05_8c1e4e00,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c1e4af4,
+    TObjectShared_vslot08_8c010500,
+    TOContainerAncientEnemy_vslot09_8c1e4af4,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,
@@ -262,7 +262,7 @@ VirtualFunction const TOContainerAncientEnemyCommon_vtable_8c27761c[91] = {
     operation_8c013474,
     operation_8c083f88,
     operation_8c085cd0,
-    operation_8c1e4b64,
+    TOContainerAncientEnemy_vslot24_8c1e4b64,
     operation_8c083fb4,
     operation_8c085cd4,
     operation_8c085cec,
@@ -324,9 +324,9 @@ VirtualFunction const TOContainerAncientEnemyCommon_vtable_8c27761c[91] = {
     operation_8c0134e4,
     operation_8c0134e8,
     operation_8c0134ec,
-    operation_8c1e4c40,
-    operation_8c1e49f0,
-    operation_8c1e4a20
+    TOContainerAncientEnemy_vslot86_8c1e4c40,
+    TOContainerAncientEnemy_vslot87_8c1e49f0,
+    TOContainerAncientEnemy_vslot88_8c1e4a20
 };
 
 /* 8c277788: type-information and this-adjustment header, then 89 slots */
@@ -336,17 +336,17 @@ VirtualFunction const TOContainerAncientEnemy_vtable_8c277788[91] = {
     TOContainerAncientEnemy_dtor_8c1e4978,
     operation_8c084074,
     operation_8c0840a8,
-    operation_8c1e4af0,
+    TOContainerAncientEnemy_vslot03_8c1e4af0,
     hierarchy_output,
-    operation_8c1e4e00,
-    fn_8c01d694,
+    TOContainerAncientEnemy_vslot05_8c1e4e00,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c1e4af4,
+    TObjectShared_vslot08_8c010500,
+    TOContainerAncientEnemy_vslot09_8c1e4af4,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,
@@ -357,7 +357,7 @@ VirtualFunction const TOContainerAncientEnemy_vtable_8c277788[91] = {
     operation_8c013474,
     operation_8c083f88,
     operation_8c085cd0,
-    operation_8c1e4b64,
+    TOContainerAncientEnemy_vslot24_8c1e4b64,
     operation_8c083fb4,
     operation_8c085cd4,
     operation_8c085cec,
@@ -419,9 +419,9 @@ VirtualFunction const TOContainerAncientEnemy_vtable_8c277788[91] = {
     operation_8c0134e4,
     operation_8c0134e8,
     operation_8c0134ec,
-    operation_8c1e4c40,
-    operation_8c1e49f0,
-    operation_8c1e4a20
+    TOContainerAncientEnemy_vslot86_8c1e4c40,
+    TOContainerAncientEnemy_vslot87_8c1e49f0,
+    TOContainerAncientEnemy_vslot88_8c1e4a20
 };
 
 /* 8c2778f4: type-information and this-adjustment header, then 89 slots */
@@ -431,17 +431,17 @@ VirtualFunction const vt_8c2778f4[91] = {
     operation_8c1e4774,
     operation_8c084074,
     operation_8c0840a8,
-    operation_8c1e4260,
+    TOContainerAncientItemCommon_vslot03_8c1e4260,
     hierarchy_output,
     operation_8c1e4858,
-    fn_8c01d694,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c084164,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,
@@ -514,9 +514,9 @@ VirtualFunction const vt_8c2778f4[91] = {
     operation_8c0134e4,
     operation_8c0134e8,
     operation_8c0134ec,
-    operation_8c1e4264,
-    operation_8c1e4160,
-    operation_8c1e4190
+    TOContainerAncientItemCommon_vslot86_8c1e4264,
+    TOContainerAncientItemCommon_vslot87_8c1e4160,
+    TOContainerAncientItemCommon_vslot88_8c1e4190
 };
 
 /* 8c277a60: type-information and this-adjustment header, then 89 slots */
@@ -526,17 +526,17 @@ VirtualFunction const vt_8c277a60[91] = {
     operation_8c1e469c,
     operation_8c084074,
     operation_8c0840a8,
-    operation_8c1e4260,
+    TOContainerAncientItemCommon_vslot03_8c1e4260,
     hierarchy_output,
     operation_8c1e4720,
-    fn_8c01d694,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c084164,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,
@@ -609,9 +609,9 @@ VirtualFunction const vt_8c277a60[91] = {
     operation_8c0134e4,
     operation_8c0134e8,
     operation_8c0134ec,
-    operation_8c1e4264,
-    operation_8c1e4160,
-    operation_8c1e4190
+    TOContainerAncientItemCommon_vslot86_8c1e4264,
+    TOContainerAncientItemCommon_vslot87_8c1e4160,
+    TOContainerAncientItemCommon_vslot88_8c1e4190
 };
 
 /* 8c277bcc: type-information and this-adjustment header, then 89 slots */
@@ -621,17 +621,17 @@ VirtualFunction const TOContainerAncientItemCommon_vtable_8c277bcc[91] = {
     TOContainerAncientItemCommon_dtor_8c1e4424,
     operation_8c084074,
     operation_8c0840a8,
-    operation_8c1e4260,
+    TOContainerAncientItemCommon_vslot03_8c1e4260,
     hierarchy_output,
     TOContainerAncientItemCommon_v05_8c1e4554,
-    fn_8c01d694,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c084164,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,
@@ -704,9 +704,9 @@ VirtualFunction const TOContainerAncientItemCommon_vtable_8c277bcc[91] = {
     operation_8c0134e4,
     operation_8c0134e8,
     operation_8c0134ec,
-    operation_8c1e4264,
-    operation_8c1e4160,
-    operation_8c1e4190
+    TOContainerAncientItemCommon_vslot86_8c1e4264,
+    TOContainerAncientItemCommon_vslot87_8c1e4160,
+    TOContainerAncientItemCommon_vslot88_8c1e4190
 };
 
 /* 8c277d38: type-information and this-adjustment header, then 89 slots */
@@ -716,17 +716,17 @@ VirtualFunction const vt_8c277d38[91] = {
     operation_8c1e40e8,
     operation_8c084074,
     operation_8c0840a8,
-    operation_8c1e4260,
+    TOContainerAncientItemCommon_vslot03_8c1e4260,
     hierarchy_output,
-    operation_8c085cf8,
-    fn_8c01d694,
+    TObjContainerBase_vslot05_8c085cf8,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c084164,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,
@@ -799,7 +799,7 @@ VirtualFunction const vt_8c277d38[91] = {
     operation_8c0134e4,
     operation_8c0134e8,
     operation_8c0134ec,
-    operation_8c1e4264,
-    operation_8c1e4160,
-    operation_8c1e4190
+    TOContainerAncientItemCommon_vslot86_8c1e4264,
+    TOContainerAncientItemCommon_vslot87_8c1e4160,
+    TOContainerAncientItemCommon_vslot88_8c1e4190
 };

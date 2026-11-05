@@ -234,7 +234,7 @@ extern "C" void operation_8c059ef8(void *, int);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c01c5f0(int);
 extern "C" int call_8c05c0dc(Object *, float);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" float operation_8c05b8c0(int);
 extern "C" void rotate_scalar_pair(void *, void *, int);
@@ -318,7 +318,7 @@ extern "C" void operation_8c093a1c(Object *o, int a1)
         switch (*v2) {
         case 1:
             if (*v3 == 0) {
-                operation_8c05c184((void *)o);
+                set_fields_wrapper_8c05c184((void *)o);
                 aim_direction_8c05bdd4((void *)o);
                 t = operation_8c05b8c0((int)o);
                 t *= 8192.0f;
@@ -352,7 +352,7 @@ extern "C" void operation_8c093a1c(Object *o, int a1)
             append_position_ring((void *)(((ObjectData *)o)->f424), (void *)(((char *)o + 0x430)), ((ObjectData *)o)->f4d0, 0.8f);
             break;
         case 0:
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
             ((ObjectData *)o)->f64 = angle_step(((ObjectData *)o)->f64, (int)(errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4) * 65536.0f / 6.28318405f), 0x400);
             ((ObjectData *)o)->f64 = (short)((ObjectData *)o)->f64;

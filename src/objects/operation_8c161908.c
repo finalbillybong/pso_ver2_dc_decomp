@@ -36,7 +36,7 @@ extern float squared_distance_xz(void *, void *);
 extern void call_8c161a80(TObjEnePanarmsAtkColli *, S_vv8 *);
 extern void call_8c3bdf60(void *, void *);
 extern void call_8c161afc(TObjEnePanarmsAtkColli *, Frame *);
-void operation_8c161908(TObjEnePanarmsAtkColli *o)
+void TObjEnePanarmsAtkColli_update_step_2_8c161908(TObjEnePanarmsAtkColli *o)
 {
     Frame frame;
     float v1;

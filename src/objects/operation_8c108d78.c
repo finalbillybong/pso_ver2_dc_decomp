@@ -6,7 +6,7 @@ extern void call_8c10962c(void);
 extern void call_8c1097a0(void);
 extern void call_8c10a57c(void);
 extern void call_8c10a6a0(void);
-void operation_8c108d78(TObjEneGyaranzo *o)
+void TObjEneGyaranzo_update_step_8c108d78(TObjEneGyaranzo *o)
 {
     switch (o->f30a) {
     case 0:

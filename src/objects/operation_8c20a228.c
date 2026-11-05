@@ -54,7 +54,7 @@ struct Arg3 {
     short f0a;
     short f0c;
 };
-void operation_8c20a228(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3)
+void TItemProShield_vslot25_8c20a228(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3)
 {
     if (a1 != 0) {
         a1->f00 -= o->f168;

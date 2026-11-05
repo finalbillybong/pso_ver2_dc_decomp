@@ -23,7 +23,7 @@ extern int operation_8c01d844(int, int, int, int);
 extern void call_8c1573f4(Object *);
 extern void call_8c157460(Object *);
 extern int operation_8c01d858(int, int, int, int);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void operation_8c1574cc(void *);
 extern void operation_8c157554(void *);
 extern void call_8c199b74(void *);
@@ -127,7 +127,7 @@ L_8c156990:;
                     if (((o->f80 & 0xffff & 0x200)) != 0) {
                         v29 = (int)0;
                     } else {
-                        t9 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+                        t9 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
                         v29 = (int)t9;
                     }
                     if (v29 == 0) {
@@ -140,7 +140,7 @@ L_8c1569c2:;
                     if (((o->f80 & 0xffff & 0x200)) != 0) {
                         v35 = (int)0;
                     } else {
-                        t10 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+                        t10 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
                         v35 = (int)t10;
                     }
                     if (v35 == 0) {

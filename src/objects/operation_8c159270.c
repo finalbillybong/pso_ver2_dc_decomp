@@ -29,7 +29,7 @@ struct S_vv7 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4daaf0;
 extern int g_8c4daaf4;
-extern void operation_8c220b5c(void);
+extern void request_resource_release_wrapper_8c220b5c(void);
 extern void request_resource_release(void *);
 extern void TShopSequence_dtor_8c106598(void *, short);
 extern void call_8c122774(void *, Object *);
@@ -44,7 +44,7 @@ Object *THunterGuildSeqOffline_dtor_8c159270(Object *o, int a1)
             v1->f04 |= 1;
             o->f34 = (Arg0_34 *)0;
         }
-        operation_8c220b5c();
+        request_resource_release_wrapper_8c220b5c();
         if (o->f30 != 0) {
             request_resource_release((void *)(o->f30));
             o->f30 = (Arg0_30 *)0;

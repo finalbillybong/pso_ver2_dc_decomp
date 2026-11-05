@@ -2,7 +2,7 @@
 extern char g_8c41cba0[];
 extern int operation_8c01d844(int, int, int, int);
 extern void play_se_8c05fbf8(int, int, int, int);
-void operation_8c199388(TWindowSubCustomSelect *o)
+void TWindowSubCustomSelect_update_step_8c199388(TWindowSubCustomSelect *o)
 {
     int v1;
     int t1;

@@ -12,7 +12,7 @@ struct Object {
     char f6d;
 };
 extern int call_8c21c718(int);
-void operation_8c1e31f0(Object *o)
+void TWindowKeyBoardSoft_state07_8c1e31f0(Object *o)
 {
     int t1;
     if (((o->f6a & 8)) == 0 && ((o->f68 & 2)) == 0) {

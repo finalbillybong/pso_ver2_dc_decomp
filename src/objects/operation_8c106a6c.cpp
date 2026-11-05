@@ -113,7 +113,7 @@ extern "C" void operation_8c1d5eb8(void *, int);
 extern "C" int operation_8c1cdc80(void *);
 extern "C" void TWindowQuantity_ctor_8c1ca088(void *);
 extern "C" int find_node_8c16a3c0(void *, int);
-extern "C" int operation_8c169508(void *);
+extern "C" int hierarchy_is_active_wrapper_2_8c169508(void *);
 extern "C" void update_count_8c1ca1fc(void *, void *);
 extern "C" void operation_8c106a6c(Object *o)
 {
@@ -206,7 +206,7 @@ extern "C" void operation_8c106a6c(Object *o)
         o->f39c = (Arg0_39c *)t8;
         t9 = find_node_8c16a3c0((void *)(o->f28->fbc8), (int)(((char *)o + 0x30)));
         if (t9 != 0) {
-            update_count_8c1ca1fc((void *)(o->f39c), (void *)operation_8c169508((void *)t9));
+            update_count_8c1ca1fc((void *)(o->f39c), (void *)hierarchy_is_active_wrapper_2_8c169508((void *)t9));
         } else {
             update_count_8c1ca1fc((void *)(o->f39c), (void *)0);
         }
@@ -216,7 +216,7 @@ extern "C" void operation_8c106a6c(Object *o)
     if (v60 != 0) {
         t11 = find_node_8c16a3c0((void *)(o->f28->fbc8), (int)((int)o + operation_8c1cdc80((void *)v60) * 0x1c + 0x30));
         if (t11 != 0) {
-            update_count_8c1ca1fc((void *)(o->f39c), (void *)operation_8c169508((void *)t11));
+            update_count_8c1ca1fc((void *)(o->f39c), (void *)hierarchy_is_active_wrapper_2_8c169508((void *)t11));
             return;
         }
         update_count_8c1ca1fc((void *)(o->f39c), (void *)0);

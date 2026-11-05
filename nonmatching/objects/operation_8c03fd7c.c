@@ -54,7 +54,7 @@ extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
 extern void operation_8c100524(int);
 extern int create_effect_7a48(void *, int, int);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern float njSin_8c37eb0c(int);
 void operation_8c03fd7c(Object *o)
@@ -88,7 +88,7 @@ void operation_8c03fd7c(Object *o)
     if (((*(int *)(g_8c41cba0 + 0x28) & 8)) != 0 && o->f2c != 0) {
         goto L_8c03fe3e;
     }
-    t5 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+    t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
     if (t5 != 0 && o->f2c != 0) {
 L_8c03fe3e:;
         play_se_8c05fbf8(0x50001, 0, 0, 0);

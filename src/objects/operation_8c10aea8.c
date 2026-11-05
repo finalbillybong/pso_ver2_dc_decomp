@@ -36,7 +36,7 @@ extern int lookup_low_id(int);
 extern void operation_8c0246d0(void *);
 extern int operation_8c220ce0(void);
 extern void operation_8c024720(void *);
-extern void operation_8c220b5c(void);
+extern void request_resource_release_wrapper_8c220b5c(void);
 void TMedicalCenterMes_update_8c10aea8(TMedicalCenterMes *o)
 {
     Frame frame;
@@ -79,7 +79,7 @@ L_8c10af4a:;
         if (t3 != 0) {
             operation_8c024720((void *)t3);
         }
-        operation_8c220b5c();
+        request_resource_release_wrapper_8c220b5c();
         if (g_8c46fe20 != 0) {
             g_8c46fe20->f20 = (unsigned int)g_8c46fe20->f20 >> 1 << 1;
             if (g_8c4d59d8 != 0) {

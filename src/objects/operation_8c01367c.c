@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern void request_game_mode_8c01c1a4(int);
-void operation_8c01367c(void)
+void request_game_mode_wrapper_8c01367c(void)
 {
     request_game_mode_8c01c1a4(2);
 }

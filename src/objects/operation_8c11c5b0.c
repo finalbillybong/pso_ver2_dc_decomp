@@ -54,7 +54,7 @@ extern float njCos_8c38c154(void *);
 extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c15e8fc(void *);
 extern void dispatch124_8c15e91c(void *);
-void operation_8c11c5b0(Object *o)
+void TObjEnePanarms_state08_8c11c5b0(Object *o)
 {
     Frame frame;
     int v1;

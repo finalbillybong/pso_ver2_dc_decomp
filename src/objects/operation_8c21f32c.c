@@ -9,7 +9,7 @@ struct Object {
     Arg0_0 *tag;
 };
 extern void get_field_8c21f338(int);
-void operation_8c21f32c(Object *o)
+void get_field_wrapper_8c21f32c(Object *o)
 {
     get_field_8c21f338((int)(o->tag));
 }

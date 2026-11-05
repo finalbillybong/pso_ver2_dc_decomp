@@ -26,7 +26,7 @@ extern void memset_8c12b880(void *, int, int);
 extern void memcpy_8c12b77c(void *, S_c8c051d18 *, int);
 extern void request_resource_release(void *);
 extern void operator_delete_8c18de08(S_c8c051d18 *);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void operation_8c051d50(void *, void *);
 void operation_8c1e71b8(TimerRecord *o)
 {
@@ -96,7 +96,7 @@ L_8c1e727c:;
         goto L_8c1e72aa;
     }
     if (v16 == 0) {
-        t5 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+        t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
         if (t5 != 0) {
 L_8c1e72aa:;
             operation_8c051ce4((void *)(o->f34));

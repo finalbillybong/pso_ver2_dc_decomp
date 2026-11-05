@@ -5,7 +5,7 @@ typedef struct TWindowSubItem_p2c TWindowSubItem_p2c;
 extern int lookup_low_id(int);
 extern void call_8c024570(int);
 extern void request_resource_release(void *);
-void operation_8c1a3c8c(TWindowSubItem *o, int a1)
+void TWindowSubItem_update_step_3_8c1a3c8c(TWindowSubItem *o, int a1)
 {
     int t1;
     t1 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));

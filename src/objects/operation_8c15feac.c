@@ -31,7 +31,7 @@ extern int call_8c04a52c(Object *, Frame *, float);
 extern float njSin_8c37eb0c(void *);
 extern float njCos_8c38c154(void *);
 extern void play_se_8c05fbf8(void *, void *, int, int);
-void operation_8c15feac(Object *o)
+void TObjEnePanBARA_state14_8c15feac(Object *o)
 {
     Frame frame;
     int v1;

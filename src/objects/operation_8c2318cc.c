@@ -21,7 +21,7 @@ extern S_c8c021ef8 *lookup_low_id(int);
 extern int operation_8c20985c(void);
 extern int call_8c2319e4(void *);
 extern void call_8c1ab894(Object *, int);
-extern int operation_8c247d90(void *);
+extern int get_field_wrapper_2_8c247d90(void *);
 extern void operation_8c1ab8e8(void *, int);
 extern void TFontSmallHelp_update_8c1ab5ec(void *);
 void operation_8c2318cc(Object *o)
@@ -39,7 +39,7 @@ void operation_8c2318cc(Object *o)
             call_8c1ab894(o, t3);
             if (t3 != 0) {
                 if (o->f58 == 3) {
-                    t4 = operation_8c247d90((void *)((int)(o->f54) * 0xbc + g_8c41bd34 + 4));
+                    t4 = get_field_wrapper_2_8c247d90((void *)((int)(o->f54) * 0xbc + g_8c41bd34 + 4));
                     operation_8c1ab8e8((void *)o, t4);
                 } else {
                     operation_8c1ab8e8((void *)o, (int)(t1->f7fc));

@@ -6,7 +6,7 @@ struct TWindowMakeTeam_p28 {
 };
 extern void call_8c1dc55c(void *, int);
 extern void call_8c1dc50c(void *, int);
-void operation_8c1e5820(TWindowMakeTeam *o)
+void TWindowMakeTeam_update_step_8c1e5820(TWindowMakeTeam *o)
 {
     if (o->f28 != 0 && o->f28->f00 != 0) {
         call_8c1dc55c(o->f30, 4);

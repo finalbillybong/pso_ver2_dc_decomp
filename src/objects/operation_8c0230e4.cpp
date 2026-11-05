@@ -117,12 +117,12 @@ extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void TItemList_ctor_8c1694cc(void *, void *);
 extern "C" int call_8c074538(int, int);
 extern "C" int find_node_8c16a3c0(void *, int);
-extern "C" S_c8c169508 *operation_8c169508(void *);
+extern "C" S_c8c169508 *hierarchy_is_active_wrapper_2_8c169508(void *);
 extern "C" void operation_8c169504(void *, int);
 extern "C" void operation_8c07484c(void *, int);
 extern "C" void reparent_hierarchy_node(void *, void *);
 extern "C" void operation_8c0745b4(void *, short);
-extern "C" int operation_8c0230e4(TObjPlayer *o, Arg1 *a1)
+extern "C" int TObjPlayer_vslot74_8c0230e4(TObjPlayer *o, Arg1 *a1)
 {
     Frame frame;
     unsigned char v2;
@@ -186,7 +186,7 @@ extern "C" int operation_8c0230e4(TObjPlayer *o, Arg1 *a1)
             if (t8 == 0) {
                 v3 = (int)1;
             }
-            t9 = operation_8c169508((void *)t6);
+            t9 = hierarchy_is_active_wrapper_2_8c169508((void *)t6);
             if (t9 != 0) {
                 t9->v36(v3);
             }

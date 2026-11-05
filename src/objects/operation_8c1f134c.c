@@ -3,7 +3,7 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern int call_8c02c194(void);
+extern int get_current_area_wrapper_8c02c194(void);
 extern int call_8c01e0e4(int);
 extern int call_8c01e148(int);
 int operation_8c1f134c(void)
@@ -23,7 +23,7 @@ int operation_8c1f134c(void)
     int t13;
     int t14;
     int t15;
-    t1 = call_8c02c194();
+    t1 = get_current_area_wrapper_8c02c194();
     if (t1 != 0) {
         t2 = call_8c01e0e4(4);
         t3 = call_8c01e0e4(0x40);

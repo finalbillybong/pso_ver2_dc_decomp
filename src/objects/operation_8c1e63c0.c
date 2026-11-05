@@ -6,7 +6,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern char g_8c4e3104;
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void initialize_color_rise(int, void *, void *);
-extern void operation_8c1e64e0();
+extern void request_game_mode_wrapper_3_8c1e64e0();
 void TAdSoniclogo_update_8c1e63c0(TAdSoniclogo *o)
 {
     int t1;
@@ -21,7 +21,7 @@ void TAdSoniclogo_update_8c1e63c0(TAdSoniclogo *o)
             g_8c4e3104 = 2;
             t1 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0x2c);
             if (t1 != 0) {
-                initialize_color_rise(t1, g_8c44be84, operation_8c1e64e0);
+                initialize_color_rise(t1, g_8c44be84, request_game_mode_wrapper_3_8c1e64e0);
             }
         }
     }

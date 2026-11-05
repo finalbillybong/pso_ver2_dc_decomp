@@ -106,7 +106,7 @@ public:
 typedef struct S_vv5Data {
     int f00;
 } S_vv5Data;
-extern "C" void operation_8c0fd3dc(TOMine *o)
+extern "C" void TOMine_vslot90_8c0fd3dc(TOMine *o)
 {
     int v3;
     char *v4;

@@ -23,7 +23,7 @@ extern int strlen_8c12b0cc(int);
 extern void memcpy_8c12b77c(void *, int, int);
 extern void request_resource_release(void *);
 extern void operator_delete_8c18de08(int);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 void operation_8c25bb38(TimerRecord *o)
 {
     int c9;
@@ -88,7 +88,7 @@ L_8c25bbe4:;
         goto L_8c25bc12;
     }
     if (v14 == 0) {
-        t5 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+        t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
         if (t5 != 0) {
 L_8c25bc12:;
             play_se_8c05fbf8(0x50016, 0, 0, 0);

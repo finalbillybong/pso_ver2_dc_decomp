@@ -37,7 +37,7 @@ extern void operation_8c1cc690(void);
 extern int pair_grid_view_ready(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TAdGuideButton_ctor_8c1afdb4(int, Object *, void *, void *, float);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void call_8c119c78(Arg0_28 *);
 extern void request_resource_release(void *);
 extern void operation_8c232414(Object *);
@@ -75,7 +75,7 @@ void operation_8c2321ec(Object *o)
         t3 = pair_grid_view_ready((void *)(o->f28));
         if (t3 == 0) {
             if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-                t4 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+                t4 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
                 if (t4 == 0) {
                     return;
                 }
@@ -84,7 +84,7 @@ void operation_8c2321ec(Object *o)
             return;
 L_8c232284:;
             if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-                t5 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+                t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
                 if (t5 == 0) {
                     return;
                 }

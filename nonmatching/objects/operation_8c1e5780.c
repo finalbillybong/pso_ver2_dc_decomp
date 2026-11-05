@@ -24,7 +24,7 @@ struct Object {
 };
 extern int operation_8c156c24(int, int);
 extern int operation_8c1e5928(int);
-extern void operation_8c156d30(int, int, int, int);
+extern void add_wrapper_8c156d30(int, int, int, int);
 extern void operation_8c156f50(int);
 extern void operation_8c157138(void *);
 extern void operation_8c1571d4(void *, int);
@@ -37,14 +37,14 @@ int operation_8c1e5780(Object *o)
     int t5;
     t1 = operation_8c156c24((int)((void *)0x8c2895b0), 4);
     t2 = operation_8c1e5928(0);
-    operation_8c156d30(t1, t2, 6, 0);
+    add_wrapper_8c156d30(t1, t2, 6, 0);
     t3 = operation_8c1e5928(1);
-    operation_8c156d30(t1, t3, 6, 1);
+    add_wrapper_8c156d30(t1, t3, 6, 1);
     t4 = operation_8c1e5928(2);
-    operation_8c156d30(t1, t4, 6, 2);
+    add_wrapper_8c156d30(t1, t4, 6, 2);
     if (o->f24 == 1) {
         t5 = operation_8c1e5928(3);
-        operation_8c156d30(t1, t5, 6, 3);
+        add_wrapper_8c156d30(t1, t5, 6, 3);
     }
     operation_8c156f50(t1);
     operation_8c157138((void *)t1);

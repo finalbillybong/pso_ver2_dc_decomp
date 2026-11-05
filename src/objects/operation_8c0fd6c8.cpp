@@ -37,7 +37,7 @@ typedef struct S_vv5Data {
 
 } S_vv5Data;
 extern "C" float call_8c0fd702(int);
-extern "C" float operation_8c0fd6c8(int a0, int a1, int a2, int a3, int a4)
+extern "C" float TOMine_vslot25_8c0fd6c8(int a0, int a1, int a2, int a3, int a4)
 {
     S_vv5 *v5;
     v5 = (S_vv5 *)a0;

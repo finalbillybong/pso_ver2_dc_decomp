@@ -20,7 +20,7 @@ struct Arg0_3ac {
     int f18;
 };
 extern float object_random_fraction(void *);
-void operation_8c11bf68(Object *o)
+void TObjEnePanarms_state06_8c11bf68(Object *o)
 {
     int v1;
     float t1;

@@ -7,13 +7,13 @@ extern void operation_8c0953b4(void);
 extern void fn_8c094c68(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c043724(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c013448(void);
 extern void operation_8c0104f0(void);
@@ -91,7 +91,7 @@ extern void operation_8c0134ec(void);
 extern void operation_8c05a004(void);
 extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
-extern void operation_8c05c804(void);
+extern void TObjEneBm3Fly_vslot89_8c05c804(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
@@ -147,13 +147,13 @@ Function const d_8c26532c[125] = {
     fn_8c094c68,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -231,7 +231,7 @@ Function const d_8c26532c[125] = {
     operation_8c05a004,
     operation_8c012b98,
     fn_8c012aa8,
-    operation_8c05c804,
+    TObjEneBm3Fly_vslot89_8c05c804,
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
@@ -275,13 +275,13 @@ Function const d_8c265520[125] = {
     fn_8c094c68,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -359,7 +359,7 @@ Function const d_8c265520[125] = {
     operation_8c05a004,
     operation_8c012b98,
     fn_8c012aa8,
-    operation_8c05c804,
+    TObjEneBm3Fly_vslot89_8c05c804,
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,

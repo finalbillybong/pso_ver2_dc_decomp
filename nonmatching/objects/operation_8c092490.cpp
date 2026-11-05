@@ -379,7 +379,7 @@ extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int call_8c05c0dc(Object *, float);
 extern "C" int call_8c05c2dc(Object *);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" int lookup_object_by_id(unsigned short);
 extern "C" int call_8c090e60(Object *, Frame *, float);
@@ -481,7 +481,7 @@ extern "C" void operation_8c092490(Object *o, int a1)
                 return;
             }
         }
-        operation_8c05c184((void *)o);
+        set_fields_wrapper_8c05c184((void *)o);
         switch (v1->f00) {
         case 1:
             aim_direction_8c05bdd4((void *)o);

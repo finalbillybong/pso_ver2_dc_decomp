@@ -52,7 +52,7 @@ extern "C" void call_8c02330c(int, int, int);
 extern "C" S_c8c03b55c *call_8c03b55c(int, int);
 extern "C" void call_8c022538(int, void *);
 extern "C" void call_8c02231c(int, int, int);
-extern "C" void operation_8c1a3b78(TWindowSubItem *o, int a1, int a2)
+extern "C" void TWindowSubItem_update_step_2_8c1a3b78(TWindowSubItem *o, int a1, int a2)
 {
     int t1;
     S_c8c0744dc *t2;

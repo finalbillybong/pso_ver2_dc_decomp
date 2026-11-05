@@ -39,7 +39,7 @@ struct S_c8c156bd8 {
 };
 extern S_g8c467180 *g_8c467180;
 extern S_c8c156bd8 *operation_8c156bd8(int, int, int);
-extern void operation_8c156d30(S_c8c156bd8 *, void *, int, int);
+extern void add_wrapper_8c156d30(S_c8c156bd8 *, void *, int, int);
 extern void operation_8c15700c(void *, float);
 extern void operation_8c157138(void *);
 S_c8c156bd8 *operation_8c1a3750(void)
@@ -48,8 +48,8 @@ S_c8c156bd8 *operation_8c1a3750(void)
     S_c8c156bd8 *t1;
     v1 = (char *)g_8c467180->f2c->f21c;
     t1 = operation_8c156bd8((int)((void *)0x8c31db24), 2, (int)(v1));
-    operation_8c156d30(t1, (void *)(g_8c467180->f2c->f308), 6, 0);
-    operation_8c156d30(t1, (void *)(g_8c467180->f2c->f30c), 6, 1);
+    add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f308), 6, 0);
+    add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f30c), 6, 1);
     t1->f80 = (t1->f80 & 0xffff) | 0x10;
     operation_8c15700c((void *)t1, 224.0f);
     operation_8c157138((void *)t1);

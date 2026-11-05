@@ -26,7 +26,7 @@ struct Object {
 extern char g_8c41cba0[];
 extern void call_8c1cacb4(Object *);
 extern void call_8c1cae24(Object *);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void request_resource_release(void *);
 extern void operation_8c199b14(void);
@@ -44,7 +44,7 @@ void operation_8c1cabb4(Object *o)
         call_8c1cae24(o);
     }
     if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-        t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+        t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
         if (t1 == 0) {
             goto L_8c1cac48;
         }

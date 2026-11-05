@@ -1,8 +1,8 @@
 #include "src/include/classes/TObjEnePanarmsAtkColli.h"
 extern void call_8c3bdf60(void *, void *);
-extern void operation_8c161874(void *);
+extern void TObjEnePanarmsAtkColli_update_step_8c161874(void *);
 extern void call_8c05fd7c(int, TObjEnePanarmsAtkColli *, void *, int, int);
-extern void call_8c161908(TObjEnePanarmsAtkColli *);
+extern void TObjEnePanarmsAtkColli_update_step_2_8c161908(TObjEnePanarmsAtkColli *);
 void TObjEnePanarmsAtkColli_update_8c1617c8(TObjEnePanarmsAtkColli *o)
 {
     if (!(--o->f39c >= 0)) {
@@ -14,10 +14,10 @@ void TObjEnePanarmsAtkColli_update_8c1617c8(TObjEnePanarmsAtkColli *o)
     o->f394 += o->f398;
     switch (o->f390) {
     case 0:
-        operation_8c161874((void *)o);
+        TObjEnePanarmsAtkColli_update_step_8c161874((void *)o);
         return;
     case 1:
         call_8c05fd7c(0x3002a, o, (void *)(&o->f3c), 0, 0);
-        call_8c161908(o);
+        TObjEnePanarmsAtkColli_update_step_2_8c161908(o);
     }
 }

@@ -7,15 +7,15 @@ extern void TObjCollision_update_8c0104e4(void);
 extern void TObjCollision_render_8c0104e8(void);
 extern void TObjCollision_render_shadow_8c0104ec(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void destroy_virtual_context_8c01116c(void);
 extern void TObject_update_default_8c0111c4(void);
@@ -42,15 +42,15 @@ VirtualFunction const TObjCollision_vtable_8c260ecc[17] = {
     TObjCollision_render_8c0104e8,
     TObjCollision_render_shadow_8c0104ec,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0
 };
 

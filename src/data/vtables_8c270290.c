@@ -7,15 +7,15 @@ extern void TPhotonYoulla_update_8c174a5c(void);
 extern void TPhotonYoulla_render_8c174b4c(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c01c544(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c13ebb4(void);
 extern void operation_8c13ec0c(void);
@@ -99,13 +99,13 @@ extern void operation_8c0134ec(void);
 extern void operation_8c05a004(void);
 extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
-extern void operation_8c059d2c(void);
+extern void TObjEneDD_vslot89_8c059d2c(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
 extern void TBoss2Joint_v93_8c175498(void);
 extern void TBoss2Joint_v94_8c1750f4(void);
-extern void operation_8c05b16c(void);
+extern void TObjEneDD_vslot95_8c05b16c(void);
 extern void operation_8c05b19c(void);
 extern void fn_8c05b6b4(void);
 extern void operation_8c05b6fc(void);
@@ -133,19 +133,19 @@ extern void operation_8c073900(void);
 extern void operation_8c075f8c(void);
 extern void operation_8c073674(void);
 extern void operation_8c075fbc(void);
-extern void operation_8c20a430(void);
+extern void TItemProShield_vslot18_8c20a430(void);
 extern void fn_8c209ad8(void);
 extern void fn_8c209eb4(void);
 extern void fn_8c209c48(void);
-extern void operation_8c209fe0(void);
-extern void operation_8c20a35c(void);
+extern void TItemProShield_vslot22_8c209fe0(void);
+extern void TItemProShield_vslot23_8c20a35c(void);
 extern void fn_8c20a160(void);
-extern void operation_8c20a228(void);
+extern void TItemProShield_vslot25_8c20a228(void);
 extern void operation_8c07617c(void);
-extern void operation_8c20a0d8(void);
+extern void TItemProShield_vslot27_8c20a0d8(void);
 extern void operation_8c07623c(void);
 extern void operation_8c0764f0(void);
-extern void operation_8c075b84(void);
+extern void TItemProShield_vslot30_8c075b84(void);
 extern void fn_8c075bec(void);
 extern void operation_8c0770a4(void);
 extern void operation_8c0770e4(void);
@@ -184,15 +184,15 @@ VirtualFunction const TPhotonYoulla_vtable_8c270290[19] = {
     TPhotonYoulla_render_8c174b4c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c01c544,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c13ebb4,
     operation_8c13ec0c
@@ -207,13 +207,13 @@ VirtualFunction const TBoss2Joint_vtable_8c2702dc[113] = {
     TBoss2Joint_render_8c1754bc,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -291,13 +291,13 @@ VirtualFunction const TBoss2Joint_vtable_8c2702dc[113] = {
     operation_8c05a004,
     operation_8c012b98,
     fn_8c012aa8,
-    operation_8c059d2c,
+    TObjEneDD_vslot89_8c059d2c,
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
     TBoss2Joint_v93_8c175498,
     TBoss2Joint_v94_8c1750f4,
-    operation_8c05b16c,
+    TObjEneDD_vslot95_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,
     operation_8c05b6fc,
@@ -324,32 +324,32 @@ VirtualFunction const TItemWpnClaw_vtable_8c2704a0[61] = {
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c073e54,
     operation_8c0771c4,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c074814,
     operation_8c073900,
     operation_8c075f8c,
     operation_8c073674,
     operation_8c075fbc,
-    operation_8c20a430,
+    TItemProShield_vslot18_8c20a430,
     fn_8c209ad8,
     fn_8c209eb4,
     fn_8c209c48,
-    operation_8c209fe0,
-    operation_8c20a35c,
+    TItemProShield_vslot22_8c209fe0,
+    TItemProShield_vslot23_8c20a35c,
     fn_8c20a160,
-    operation_8c20a228,
+    TItemProShield_vslot25_8c20a228,
     operation_8c07617c,
-    operation_8c20a0d8,
+    TItemProShield_vslot27_8c20a0d8,
     operation_8c07623c,
     operation_8c0764f0,
-    operation_8c075b84,
+    TItemProShield_vslot30_8c075b84,
     fn_8c075bec,
     operation_8c0770a4,
     operation_8c0770e4,

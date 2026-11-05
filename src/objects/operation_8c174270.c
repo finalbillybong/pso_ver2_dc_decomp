@@ -26,7 +26,7 @@ struct S_g8c467180_2c {
 extern char g_8c318df4[];
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(void *, void *, int, int);
+extern void add_wrapper_8c156d30(void *, void *, int, int);
 extern void operation_8c1570b4(void *, float, float);
 extern void position_menu_label_8c1576fc(void *);
 extern void operation_8c0dc610(void *, float);
@@ -51,9 +51,9 @@ TObjItemNameSelect *TObjItemNameSelect_ctor_8c174270(TObjItemNameSelect *o, int 
     v1 = (int)0;
     while (0x1a > v1) {
         if (v1 > 0) {
-            operation_8c156d30((void *)(o->f20), (void *)(*(S_g8c467180_c_0 **)((char *)((char *)(*(S_g8c467180 **)0x8c467180)->f0c + 0x0) + (*(int *)((char *)0x8c286668 + (v1 << 2)) << 2))), 6, v1);
+            add_wrapper_8c156d30((void *)(o->f20), (void *)(*(S_g8c467180_c_0 **)((char *)((char *)(*(S_g8c467180 **)0x8c467180)->f0c + 0x0) + (*(int *)((char *)0x8c286668 + (v1 << 2)) << 2))), 6, v1);
         } else {
-            operation_8c156d30((void *)(o->f20), (void *)((g_8c318df4 + 0x3d7)), 6, v1);
+            add_wrapper_8c156d30((void *)(o->f20), (void *)((g_8c318df4 + 0x3d7)), 6, v1);
         }
         v1 = (int)(v1 + 1);
     }

@@ -3,7 +3,7 @@ extern void update_phase_8c151a74(void *);
 extern void call_8c151a44(TBoss3VoloptMonitor *);
 extern void call_8c151850(TBoss3VoloptMonitor *);
 extern void call_8c151938(TBoss3VoloptMonitor *);
-void operation_8c151678(TBoss3VoloptMonitor *o)
+void TBoss3VoloptMonitor_update_step_8c151678(TBoss3VoloptMonitor *o)
 {
     if (o->f30a != 0) {
         if (o->f30a == 1) {

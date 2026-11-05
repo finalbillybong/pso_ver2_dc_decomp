@@ -40,7 +40,7 @@ typedef void (PmfObj::*PMF_0)();
 extern "C" void mark_effect_for_release(void *);
 extern "C" void operation_8c11afa0(int);
 extern "C" int call_8c18e6fc(void *);
-extern "C" void operation_8c11cca4(Object *o)
+extern "C" void TObjEnePanarms_state17_8c11cca4(Object *o)
 {
     Frame frame;
     S_vv1 *v1;

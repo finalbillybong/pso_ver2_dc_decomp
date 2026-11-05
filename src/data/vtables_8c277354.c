@@ -11,7 +11,7 @@ extern void operation_8c1dd878(void);
 extern void operation_8c1dd8d4(void);
 extern void operation_8c1dda64(void);
 extern void destroy_timed_owner_effect_8c1dde04(void);
-extern void operation_8c1dde54(void);
+extern void hierarchy_is_active_wrapper_3_8c1dde54(void);
 extern void TObject_render_default_8c0111c8(void);
 
 /* 8c277354: type-information and this-adjustment header, then 5 slots */
@@ -41,7 +41,7 @@ VirtualFunction const vt_8c27738c[7] = {
     0,
     0,
     destroy_timed_owner_effect_8c1dde04,
-    operation_8c1dde54,
+    hierarchy_is_active_wrapper_3_8c1dde54,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output

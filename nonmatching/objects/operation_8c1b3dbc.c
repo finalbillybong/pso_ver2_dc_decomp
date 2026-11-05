@@ -60,7 +60,7 @@ extern void call_8c3827d8(void *);
 extern void set_effect_color_state(void);
 extern void operation_8c161c78(void *);
 extern void draw_tree_a702(void *, void *, float);
-extern void operation_8c161ce4(void *);
+extern void set_transform_node_callback_wrapper_2_8c161ce4(void *);
 extern void restore_effect_color_state(void);
 extern void call_8c3addea(void *, void *, float);
 void operation_8c1b3dbc(Object *o)
@@ -89,7 +89,7 @@ void operation_8c1b3dbc(Object *o)
             v5 <<= 2;
             operation_8c161c78((void *)(*(S_x30064_0 **)((char *)((char *)((int)o + v2) + 0x0) + (v5))));
             ((void (*)(void *, void *, float))0x8c0c3964)((void *)(*(Arg0_0_0_8 **)((char *)((char *)*(Arg0_0_0 **)((char *)((char *)*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)) + 0x0) + (v2)) + 0x8) + (*(int *)((char *)((char *)v6 + 0x0) + ((int)((void *)0x8c326b54))) << 4))), (void *)(*(Arg0_0_430_4 **)((char *)((char *)(*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)))->f430 + 0x4) + (*(int *)((char *)&*(int *)((char *)g_8c326b6c.f08 + (o->f3e4 << 5)) + (v6)) << 3))), ((S_x28304 *)((int)o + v3))->f00);
-            operation_8c161ce4((void *)(*(S_x37376_0 **)((char *)((char *)((int)o + v2) + 0x0) + (v5))));
+            set_transform_node_callback_wrapper_2_8c161ce4((void *)(*(S_x37376_0 **)((char *)((char *)((int)o + v2) + 0x0) + (v5))));
             if (o->f3dc == 0) {
                 goto L_8c1b3f20;
             }
@@ -98,7 +98,7 @@ void operation_8c1b3dbc(Object *o)
         case 5:
             operation_8c161c78((void *)(o->f480));
             ((void (*)(void *, void *, float))0x8c0c3964)((void *)(*(Arg0_0_0_8 **)((char *)((char *)*(Arg0_0_0 **)((char *)((char *)*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)) + 0x0) + (v2)) + 0x8) + (*(int *)((char *)((char *)v6 + 0x0) + ((int)((void *)0x8c326b54))) << 4))), (void *)(*(Arg0_0_430_4 **)((char *)((char *)(*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)))->f430 + 0x4) + (*(int *)((char *)&*(int *)((char *)g_8c326b6c.f08 + (o->f3e4 << 5)) + (v6)) << 3))), ((S_x40064 *)((int)o + v3))->f00);
-            operation_8c161ce4((void *)(o->f480));
+            set_transform_node_callback_wrapper_2_8c161ce4((void *)(o->f480));
             break;
         default:
             ((void (*)(void *, void *, float))0x8c3addea)((void *)(*(Arg0_0_0_8 **)((char *)((char *)*(Arg0_0_0 **)((char *)((char *)*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)) + 0x0) + (v2)) + 0x8) + (*(int *)((char *)((char *)v6 + 0x0) + ((int)((void *)0x8c326b54))) << 4))), (void *)(*(Arg0_0_430_4 **)((char *)((char *)(*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)))->f430 + 0x4) + (*(int *)((char *)&*(int *)((char *)g_8c326b6c.f08 + (o->f3e4 << 5)) + (v6)) << 3))), ((S_x38496 *)((int)o + v3))->f00);

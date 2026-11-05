@@ -173,21 +173,21 @@ extern "C" void TWindowHelpItem_ctor_8c1d5b24(void *);
 extern "C" void operation_8c1a2c98(void *);
 extern "C" void operation_8c19a044(void *, int);
 extern "C" int operation_8c1cdc80(void *);
-extern "C" void operation_8c1a3de4(void *, int);
+extern "C" void TWindowSubItem_update_step_5_8c1a3de4(void *, int);
 extern "C" void call_8c18c808(void *);
 extern "C" int operation_8c1a36a0(int, int);
 extern "C" void operation_8c156ec0(void *);
 extern "C" int operation_8c1571f4(void *);
 extern "C" void operation_8c2356f0(int);
-extern "C" void call_8c1a3b10(Object *, int);
+extern "C" void TWindowSubItem_update_step_8c1a3b10(Object *, int);
 extern "C" int operation_8c0244c4(void *);
-extern "C" void operation_8c1a3b78(void *, int, int);
+extern "C" void TWindowSubItem_update_step_2_8c1a3b78(void *, int, int);
 extern "C" void operation_8c156e58(void *);
 extern "C" int call_8c1a3750(Object *);
-extern "C" void operation_8c1a3c8c(void *, int);
+extern "C" void TWindowSubItem_update_step_3_8c1a3c8c(void *, int);
 extern "C" void call_8c1a2ce0(Arg0_24 *);
 extern "C" void call_8c1a2d40(Arg0_24 *);
-extern "C" void operation_8c1a3d00(void *);
+extern "C" void TWindowSubItem_update_step_4_8c1a3d00(void *);
 extern "C" S_c8c0744dc *find_record_8c0744dc(int);
 extern "C" int operation_8c1a37e4(int, int);
 extern "C" void operation_8c02349c(void *, int, int);
@@ -282,7 +282,7 @@ extern "C" void TWindowSubItem_update_8c1a2ed4(Object *o)
         o->f20 = 2;
     case 2:
         t3 = operation_8c1cdc80((void *)(o->f24));
-        operation_8c1a3de4((void *)o, t3);
+        TWindowSubItem_update_step_5_8c1a3de4((void *)o, t3);
         v63 = (int)o->f24->f80;
         v69 = (int)(v63 & 0xffff);
         if (((v69 & 4)) != 0) {
@@ -333,7 +333,7 @@ extern "C" void TWindowSubItem_update_8c1a2ed4(Object *o)
             return;
         }
         t8 = operation_8c1571f4((void *)(o->f28));
-        call_8c1a3b10(o, t8);
+        TWindowSubItem_update_step_8c1a3b10(o, t8);
         return;
     case 5:
         if ((((&g_8c41cba0)->f28 & 2)) != 0) {
@@ -345,7 +345,7 @@ extern "C" void TWindowSubItem_update_8c1a2ed4(Object *o)
         }
         t10 = operation_8c1cdc80((void *)(o->f24));
         t11 = operation_8c1571f4((void *)(o->f28));
-        operation_8c1a3b78((void *)o, t10, t11);
+        TWindowSubItem_update_step_2_8c1a3b78((void *)o, t10, t11);
         return;
     case 6:
         operation_8c156e58((void *)(o->f28));
@@ -361,7 +361,7 @@ extern "C" void TWindowSubItem_update_8c1a2ed4(Object *o)
             return;
         }
         t13 = operation_8c1571f4((void *)(o->f2c));
-        operation_8c1a3c8c((void *)o, t13);
+        TWindowSubItem_update_step_3_8c1a3c8c((void *)o, t13);
         return;
     case 8:
         v28 = (short)o->f24->f84;
@@ -415,7 +415,7 @@ extern "C" void TWindowSubItem_update_8c1a2ed4(Object *o)
         if (((v71 & 2)) == 0) {
             return;
         }
-        operation_8c1a3d00((void *)o);
+        TWindowSubItem_update_step_4_8c1a3d00((void *)o);
         v39 = (S_vv39 *)o->f24;
         o->f24->f80 = (o->f24->f80 & 0xffff) & -3;
         if (v39->f90 != 0) {

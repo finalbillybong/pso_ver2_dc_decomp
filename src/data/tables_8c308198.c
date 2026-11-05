@@ -22,9 +22,9 @@ extern void fn_8c051fb8(void);
 extern void load_fog_entries_8c121334(void);
 extern void operation_8c121560(void);
 extern void load_light_entries_8c013f54(void);
-extern void operation_8c013fa4(void);
+extern void game_free_wrapper_8c013fa4(void);
 extern void operation_8c13f3a0(void);
-extern void operation_8c13f3cc(void);
+extern void game_free_wrapper_3_8c13f3cc(void);
 extern void operation_8c01e648(void);
 extern void operation_8c01e734(void);
 extern void operation_8c0731f4(void);
@@ -95,9 +95,9 @@ const void *const d_8c308198[71] = {
     (void *)load_fog_entries_8c121334,
     (void *)operation_8c121560,
     (void *)load_light_entries_8c013f54,
-    (void *)operation_8c013fa4,
+    (void *)game_free_wrapper_8c013fa4,
     (void *)operation_8c13f3a0,
-    (void *)operation_8c13f3cc,
+    (void *)game_free_wrapper_3_8c13f3cc,
     (void *)operation_8c01e648,
     (void *)operation_8c01e734,
     (void *)operation_8c0731f4,

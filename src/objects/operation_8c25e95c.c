@@ -17,7 +17,7 @@ extern int operation_8c1571f4(void *);
 extern void call_8c248980(void *);
 extern void call_8c25ec50(TimerRecord *);
 extern void call_8c25eb44(TimerRecord *);
-extern void call_8c25ed88(TimerRecord *);
+extern void request_resource_release_wrapper_4_8c25ed88(TimerRecord *);
 extern void call_8c25eb84(TimerRecord *);
 void operation_8c25e95c(TimerRecord *o)
 {
@@ -46,7 +46,7 @@ void operation_8c25e95c(TimerRecord *o)
     if (v42 == 0 && (((&g_8c41cba0)->f28 & 2)) == 0) {
         return;
     }
-    call_8c25ed88(o);
+    request_resource_release_wrapper_4_8c25ed88(o);
     call_8c25ec50(o);
     call_8c25eb84(o);
     o->f20 = 1;

@@ -7,11 +7,11 @@ extern char configuration[];
 extern int get_current_area_8c032b10(void);
 extern void add_colored(Menu *,const char *,int,int,unsigned int);
 extern Menu *create(void *,int,const char *);
-extern void add(Menu *,const char *,int,int),position(Menu *,float),refresh(Menu *);
+extern void add_wrapper_8c156d30(Menu *,const char *,int,int),position(Menu *,float),refresh(Menu *);
 Menu *create_conditional_menu_8c1d429c(void) {
     Menu *menu=create(configuration,2,context->resources->title);
-    add(menu,context->resources->first,6,29);
-    if(get_current_area_8c032b10()==15) add(menu,context->resources->second,6,33);
+    add_wrapper_8c156d30(menu,context->resources->first,6,29);
+    if(get_current_area_8c032b10()==15) add_wrapper_8c156d30(menu,context->resources->second,6,33);
     else add_colored(menu,context->resources->second,22,33,0xff686868);
     { unsigned int flags=menu->flags;menu->flags=flags|16; }
     position(menu,220.0f);

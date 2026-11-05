@@ -59,9 +59,9 @@ extern void operation_8c0365a8(int);
 extern void call_8c2330c0(Object *);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c19a044(void *, int);
-extern void operation_8c233170(void *);
+extern void request_resource_release_wrapper_2_8c233170(void *);
 extern void operation_8c199b14(void);
-extern void operation_8c233190(void *);
+extern void request_resource_release_wrapper_3_8c233190(void *);
 extern void select_mode13_8c1cc5d0(void);
 extern void select_mode4_8c1cc4f8(void);
 void operation_8c232ca0(Object *o)
@@ -128,7 +128,7 @@ void operation_8c232ca0(Object *o)
         if (o->f28 == 0 || ((o->f28->f80 & 0xffff & 4)) == 0) {
             break;
         }
-        operation_8c233170((void *)o);
+        request_resource_release_wrapper_2_8c233170((void *)o);
         operation_8c199b14();
         o->f20 = 3;
         o->f24 = 0;
@@ -140,13 +140,13 @@ void operation_8c232ca0(Object *o)
             o->f34 = (int)(t6);
             switch (o->f34) {
             case 1:
-                operation_8c233170((void *)o);
-                operation_8c233190((void *)o);
+                request_resource_release_wrapper_2_8c233170((void *)o);
+                request_resource_release_wrapper_3_8c233190((void *)o);
                 operation_8c199b14();
                 o->f24 = 0;
                 return;
             case 2:
-                operation_8c233190((void *)o);
+                request_resource_release_wrapper_3_8c233190((void *)o);
                 v10 = (S_vv10 *)o->f28;
                 o->f28->f80 = (o->f28->f80 & 0xffff) & -3;
                 if (v10->f98 != 0) {
@@ -158,7 +158,7 @@ void operation_8c232ca0(Object *o)
             }
         }
         if (o->f2c != 0 && ((o->f2c->f80 & 0xffff & 4)) != 0) {
-            operation_8c233190((void *)o);
+            request_resource_release_wrapper_3_8c233190((void *)o);
             v16 = (S_vv16 *)o->f28;
             o->f28->f80 = (o->f28->f80 & 0xffff) & -3;
             if (v16->f98 != 0) {

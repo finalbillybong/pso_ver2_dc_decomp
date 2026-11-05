@@ -25,7 +25,7 @@ extern int g_8c44be04;
 extern int g_8c4689b8;
 extern short g_8c4689bc;
 extern char g_8c41cba0[];
-extern int operation_8c05bae8(void);
+extern int get_game_mode_wrapper_3_8c05bae8(void);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern int call_8c18e8a0(int, int);
 extern void operation_021fcc(void *);
@@ -51,7 +51,7 @@ void operation_8c067e04(Object *o)
     }
     o->f730 = 0x96;
     o->f700 = (g_8c41cba0 + 0x20);
-    t1 = operation_8c05bae8();
+    t1 = get_game_mode_wrapper_3_8c05bae8();
     if (t1 != 0) {
         v13 = g_8c4689bc;
         if ((unsigned short)v13 == 0xffff) {

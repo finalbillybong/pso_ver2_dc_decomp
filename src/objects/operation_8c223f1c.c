@@ -7,9 +7,9 @@ struct S_L8c41cba0 {
 };
 extern char g_8c41cba0[];
 extern void operation_8c2240c4(void *);
-extern int operation_8c01d8a8(void *, int);
-extern void operation_8c224438(void *);
-extern void operation_8c22447c(void *);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
+extern void TWindowSubSymbolChatPartsSet_update_step_8c224438(void *);
+extern void TWindowSubSymbolChatPartsSet_update_step_2_8c22447c(void *);
 extern void update_toggle_8c22426c(void *);
 extern void call_8c2242c8(TWindowSubSymbolChatPartsSet *);
 extern void call_8c199b74(void *);
@@ -25,20 +25,20 @@ void TWindowSubSymbolChatPartsSet_update_8c223f1c(TWindowSubSymbolChatPartsSet *
     if (((o->f70 & 1)) == 0) {
         operation_8c2240c4((void *)o);
         if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-            t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+            t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
             if (t1 == 0) {
                 goto L_8c223f62;
             }
         }
-        operation_8c224438((void *)o);
+        TWindowSubSymbolChatPartsSet_update_step_8c224438((void *)o);
 L_8c223f62:;
         if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-            t2 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+            t2 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
             if (t2 == 0) {
                 goto L_8c223f80;
             }
         }
-        operation_8c22447c((void *)o);
+        TWindowSubSymbolChatPartsSet_update_step_2_8c22447c((void *)o);
     }
 L_8c223f80:;
     update_toggle_8c22426c((void *)o);

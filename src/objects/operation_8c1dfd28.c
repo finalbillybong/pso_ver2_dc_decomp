@@ -1,6 +1,6 @@
 #include "src/include/classes/TWindowKeyBoardHard.h"
 extern void initialize_base_8c0db1d0(void *, int);
-extern void operation_8c1e0000(void *);
+extern void TWindowKeyBoardHard_init_8c1e0000(void *);
 TWindowKeyBoardHard *TWindowKeyBoardHard_ctor_8c1dfd28(TWindowKeyBoardHard *o, int a1)
 {
     TWindowKeyBoardHard **home = &o;
@@ -15,6 +15,6 @@ TWindowKeyBoardHard *TWindowKeyBoardHard_ctor_8c1dfd28(TWindowKeyBoardHard *o, i
     o->f70 = 0;
     o->f74 = 7;
     o->f78 = 3;
-    operation_8c1e0000((void *)o);
+    TWindowKeyBoardHard_init_8c1e0000((void *)o);
     return o;
 }

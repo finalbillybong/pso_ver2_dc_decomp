@@ -42,7 +42,7 @@ struct Arg0_3ac {
     int f18;
 };
 extern int operation_8c051ff4(void *, void *, void *);
-void operation_8c11bc2c(Object *o)
+void TObjEnePanarms_state02_8c11bc2c(Object *o)
 {
     Frame frame;
     int t1;

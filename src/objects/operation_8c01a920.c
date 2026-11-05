@@ -9,7 +9,7 @@ struct S_c8c053d84 {
     int fe8;
 };
 extern S_c8c053d84 *lookup_object_by_id(unsigned short);
-void operation_8c01a920(int a0, int a1, int a2, int a3, int a4, int a5, int a6, int a7)
+void lookup_object_by_id_wrapper_8c01a920(int a0, int a1, int a2, int a3, int a4, int a5, int a6, int a7)
 {
     S_c8c053d84 *t1;
     t1 = lookup_object_by_id((unsigned short)a5);

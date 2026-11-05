@@ -29,7 +29,7 @@ extern void operation_8c051d5c(void *, float, float);
 extern void operation_8c051db4(void *, float, float);
 extern void operation_8c051d88(void *, float, float);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(TObjItemNameEntry_p24 *, void *, int, int);
+extern void add_wrapper_8c156d30(TObjItemNameEntry_p24 *, void *, int, int);
 extern void operation_8c1570b4(void *, float, float);
 extern void operation_8c157138(void *);
 TObjItemNameEntry *TObjItemNameEntry_ctor_8c173f64(TObjItemNameEntry *o, int a1)
@@ -66,7 +66,7 @@ TObjItemNameEntry *TObjItemNameEntry_ctor_8c173f64(TObjItemNameEntry *o, int a1)
     t2 = operation_8c156c24((int)(&(&frame)->f04), 1);
     o->f24 = (TObjItemNameEntry_p24 *)t2;
     if (o->f24 != 0) {
-        operation_8c156d30((TObjItemNameEntry_p24 *)(o->f24), (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f508), 0x81, 0);
+        add_wrapper_8c156d30((TObjItemNameEntry_p24 *)(o->f24), (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f508), 0x81, 0);
     }
     operation_8c1570b4((void *)(o->f24), 442.0f, 64.0f);
     operation_8c157138((void *)(o->f24));

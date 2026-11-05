@@ -22,7 +22,7 @@ struct Object {
 };
 extern int g_8c470324;
 extern S_L8c41cba0 g_8c41cba0;
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void request_resource_release(void *);
 extern int operation_8c0e90f4(void *);
 extern int vmu_find_drive_with_free_blocks_8c0101dc(int);
@@ -44,15 +44,15 @@ void operation_8c0e94cc(Object *o)
     p = (char *)&g_8c41cba0;
     if (((*(int *)(p + 0x28) & 4)) == 0) {
         p += 0x110;
-        t1 = operation_8c01d8a8((void *)p, 4);
+        t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)p, 4);
         if (t1 == 0 && (((&g_8c41cba0)->f28 & 2)) == 0) {
-            t2 = operation_8c01d8a8((void *)p, 2);
+            t2 = replicate_nibble_wrapper_2_8c01d8a8((void *)p, 2);
             if (t2 == 0 && (((&g_8c41cba0)->f28 & 0x400)) == 0) {
-                t3 = operation_8c01d8a8((void *)p, 0x400);
+                t3 = replicate_nibble_wrapper_2_8c01d8a8((void *)p, 0x400);
                 if (t3 == 0 && (((&g_8c41cba0)->f28 & 0x200)) == 0) {
-                    t4 = operation_8c01d8a8((void *)p, 0x200);
+                    t4 = replicate_nibble_wrapper_2_8c01d8a8((void *)p, 0x200);
                     if (t4 == 0 && (((&g_8c41cba0)->f28 & 8)) == 0) {
-                        t5 = operation_8c01d8a8((void *)p, 8);
+                        t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)p, 8);
                         if (t5 == 0) {
                             goto L_8c0e9560;
                         }

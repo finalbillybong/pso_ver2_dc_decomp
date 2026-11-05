@@ -9,7 +9,7 @@ struct Object {
     short f04;
 };
 extern void request_game_mode_8c01c1a4(int);
-void operation_8c1e64e0(Object *o)
+void request_game_mode_wrapper_3_8c1e64e0(Object *o)
 {
     o->f04 |= 1;
     request_game_mode_8c01c1a4(2);

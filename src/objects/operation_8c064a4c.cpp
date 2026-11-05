@@ -15,7 +15,7 @@ extern float g_8c284bd8;
 extern int g_8c4688a8;
 extern int g_8c4688ac;
 extern "C" int operation_8c03d338(void);
-extern "C" int operation_8c05bae8(void);
+extern "C" int get_game_mode_wrapper_3_8c05bae8(void);
 extern "C" void call_8c0c5094(void *, Frame *, void *);
 extern "C" void njPushMatrixEx_8c38ae68(void);
 extern "C" void translate_current_matrix_v_8c382a40(void *);
@@ -55,7 +55,7 @@ extern "C" void TObjEneBm5Wolf_render_8c064a4c(TObjEneBm5Wolf *o)
         if (o->f30a == 0x11) {
             return;
         }
-        t2 = operation_8c05bae8();
+        t2 = get_game_mode_wrapper_3_8c05bae8();
         if (t2 != 0) {
             t5 = o->v12(g_8c284bd8, g_8c284bd4, 20.0f);
             v1 = (int)t5;

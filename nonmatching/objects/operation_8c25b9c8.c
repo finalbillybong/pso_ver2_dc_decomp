@@ -63,7 +63,7 @@ struct S_L8c41cba0 {
 extern char g_8c41cba0[];
 extern int pair_grid_view_ready(void *);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(Arg0_30 *, void *, int, int);
+extern void add_wrapper_8c156d30(Arg0_30 *, void *, int, int);
 extern void operation_8c15700c(Arg0_30 *, float);
 extern void operation_8c1571d4(void *, int);
 extern void operation_8c157138(void *);
@@ -72,7 +72,7 @@ extern void operation_8c051a98(void *, int, int, int, unsigned char);
 extern void operation_8c051d5c(void *, float, float);
 extern void operation_8c051ea0(void *);
 extern void operation_8c051d50(void *, void *);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void call_8c119c78(void *);
 extern char g_8c34041c[];
 void operation_8c25b9c8(Object *o)
@@ -93,8 +93,8 @@ void operation_8c25b9c8(Object *o)
             *(Block8 *)&(&frame)->f00 = *(Block8 *)&*(Block8 *)0x8c3403ec;
             t2 = operation_8c156c24((int)(&frame), 3);
             o->f30 = (Arg0_30 *)t2;
-            operation_8c156d30((Arg0_30 *)(o->f30), (void *)((*(S_g8c467180 **)0x8c467180)->f7c->f04), 2, 0);
-            operation_8c156d30((Arg0_30 *)(o->f30), (void *)g_8c34041c, 6, 1);
+            add_wrapper_8c156d30((Arg0_30 *)(o->f30), (void *)((*(S_g8c467180 **)0x8c467180)->f7c->f04), 2, 0);
+            add_wrapper_8c156d30((Arg0_30 *)(o->f30), (void *)g_8c34041c, 6, 1);
             operation_8c15700c((Arg0_30 *)(o->f30), 442.0f);
             operation_8c1571d4((void *)(o->f30), 1);
             operation_8c157138((void *)(o->f30));
@@ -125,7 +125,7 @@ void operation_8c25b9c8(Object *o)
         t4 = pair_grid_view_ready((void *)(o->f2c));
         if (t4 == 0) {
             if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-                t5 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+                t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
                 if (t5 == 0) {
                     return;
                 }

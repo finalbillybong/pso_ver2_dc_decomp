@@ -9,7 +9,7 @@ struct S_L8c41cba0 {
     int f28;
 };
 extern char g_8c41cba0[];
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 int operation_8c03f868(void)
 {
     int v1;
@@ -19,7 +19,7 @@ int operation_8c03f868(void)
     int t4;
     v1 = (int)0;
     if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-        t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+        t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
         if (t1 == 0) {
             goto L_8c03f88c;
         }
@@ -27,7 +27,7 @@ int operation_8c03f868(void)
     v1 = (int)(v1 | 1);
 L_8c03f88c:;
     if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-        t2 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+        t2 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
         if (t2 == 0) {
             goto L_8c03f8aa;
         }
@@ -35,7 +35,7 @@ L_8c03f88c:;
     v1 = (int)(v1 | 2);
 L_8c03f8aa:;
     if (((*(int *)(g_8c41cba0 + 0x28) & 0x400)) == 0) {
-        t3 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 0x400);
+        t3 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 0x400);
         if (t3 == 0) {
             goto L_8c03f8ca;
         }
@@ -43,7 +43,7 @@ L_8c03f8aa:;
     v1 = (int)(v1 | 4);
 L_8c03f8ca:;
     if (((*(int *)(g_8c41cba0 + 0x28) & 0x200)) == 0) {
-        t4 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 0x200);
+        t4 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 0x200);
         if (t4 == 0) {
             goto L_8c03f8ea;
         }

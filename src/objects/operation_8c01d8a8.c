@@ -9,7 +9,7 @@ struct Object {
     int f38;
 };
 extern int replicate_nibble_8c01d8c4(Object *, int);
-int operation_8c01d8a8(Object *o, int a1)
+int replicate_nibble_wrapper_2_8c01d8a8(Object *o, int a1)
 {
     int t1;
     t1 = replicate_nibble_8c01d8c4(o, a1);

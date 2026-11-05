@@ -214,7 +214,7 @@ extern "C" void operation_8c059ef8(void *, int);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int operation_8c0f5158(int);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int check_range_8c01cf68(void *, float);
@@ -307,7 +307,7 @@ extern "C" void operation_8c0f665c(Object *o, int a1)
             if (((((ObjectData *)o)->fe8 & 0x10)) != 0) {
                 t1 = operation_8c0f5158((int)o);
                 if (t1 != 0) {
-                    operation_8c05c184((void *)o);
+                    set_fields_wrapper_8c05c184((void *)o);
                     aim_direction_8c05bdd4((void *)o);
                     t2 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
                     v4->f00 = (S_vv4_0 *)(unsigned short)(int)(t2 * 65536.0f / 6.28318405f);
@@ -379,7 +379,7 @@ L_8c0f699c:;
                             if (3 > v20) {
                                 t13 = operation_8c0f5158((int)o);
                                 if (t13 != 0) {
-                                    operation_8c05c184((void *)o);
+                                    set_fields_wrapper_8c05c184((void *)o);
                                     aim_direction_8c05bdd4((void *)o);
                                     t14 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
                                     v4->f00 = (S_vv4_0 *)(unsigned short)(int)(t14 * 65536.0f / 6.28318405f);

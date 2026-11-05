@@ -16,7 +16,7 @@ struct Arg0_30 {
     Arg0_30_4 *f04;
 };
 extern void refresh_name_8c0e2b78(void *, int);
-void operation_8c0e2b2c(Object *o)
+void refresh_name_wrapper_8c0e2b2c(Object *o)
 {
     refresh_name_8c0e2b78((void *)(o->f30->f04), (int)(*(S_g8c418248 **)0x8c418248));
 }

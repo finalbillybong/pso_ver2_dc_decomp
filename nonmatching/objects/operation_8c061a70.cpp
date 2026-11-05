@@ -153,7 +153,7 @@ struct S_c8c053d84 {
 extern "C" void operation_8c059ef8(void *, int);
 extern "C" void reset_link_8c05bf28(void *);
 extern "C" void operation_8c059ea4(void *, int);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" S_c8c053d84 *lookup_object_by_id(unsigned short);
 extern "C" void call_8c05c0dc(Object *, float);
 extern "C" void operation_8c01c5f0(Object *);
@@ -183,7 +183,7 @@ extern "C" void operation_8c061a70(Object *o, int a1)
         if (((ObjectData *)o)->f3ac == 0) {
             return;
         }
-        operation_8c05c184((void *)o);
+        set_fields_wrapper_8c05c184((void *)o);
         if (((ObjectData *)o)->f3f4 != 0) {
             operation_8c059ea4((void *)o, 6);
         } else {

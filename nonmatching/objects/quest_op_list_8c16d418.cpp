@@ -48,7 +48,7 @@ extern "C" void strncpy_8c12b154(void *, int, int);
 extern "C" void operation_8c032b70(void *);
 extern "C" void operation_8c032d18(void *, void *);
 extern "C" int operation_8c156c24(int, int);
-extern "C" void operation_8c156d30(S_g8c4db414 *, int, int, int);
+extern "C" void add_wrapper_8c156d30(S_g8c4db414 *, int, int, int);
 extern "C" void operation_8c156f50(void *);
 extern "C" void operation_8c157138(void *);
 extern "C" void operation_8c0dc610(float, void *);
@@ -95,7 +95,7 @@ extern "C" void quest_op_list_8c16d418(int a0, int a1)
         v6 = pm7;
         t2 = 0x20 + v6;
         a1 = t2;
-        operation_8c156d30((S_g8c4db414 *)(*(S_g8c4db414 **)0x8c4db414), (a1), 7, v5);
+        add_wrapper_8c156d30((S_g8c4db414 *)(*(S_g8c4db414 **)0x8c4db414), (a1), 7, v5);
         v5 = v5 + 1;
     }
     pm10 = 0x8c4db414;

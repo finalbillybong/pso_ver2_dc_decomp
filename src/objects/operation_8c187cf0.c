@@ -22,7 +22,7 @@ struct S_vv1 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4dbc40;
 extern int g_8c4dbc44;
-extern void operation_8c220b5c(void);
+extern void request_resource_release_wrapper_8c220b5c(void);
 extern void request_resource_release(void *);
 extern void TShopSequence_dtor_8c106598(void *, short);
 extern void call_8c122774(void *, Object *);
@@ -36,7 +36,7 @@ Object *TJudgmentSequence_dtor_8c187cf0(Object *o, int a1)
             v1->f04 |= 1;
             o->f30 = (Arg0_30 *)0;
         }
-        operation_8c220b5c();
+        request_resource_release_wrapper_8c220b5c();
         if (o->f2c != 0) {
             request_resource_release((void *)(o->f2c));
             o->f2c = (Arg0_2c *)0;

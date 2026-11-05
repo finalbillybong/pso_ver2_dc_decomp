@@ -27,7 +27,7 @@ typedef void (PmfObj::*PMF_0)();
 extern "C" void create_effect_777c(void *, int);
 extern "C" void operation_8c11afa0(int);
 extern "C" int call_8c18e6fc(Frame *);
-extern "C" void operation_8c11ce6c(Object *o)
+extern "C" void TObjEnePanarms_state19_8c11ce6c(Object *o)
 {
     Frame frame;
     int t1;

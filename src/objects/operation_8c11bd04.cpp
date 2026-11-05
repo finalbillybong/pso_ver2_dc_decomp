@@ -33,7 +33,7 @@ extern "C" int call_8c04a52c(Object *, void *, float);
 extern "C" float call_8c130334(float, float);
 extern "C" void operation_8c11afa0(int);
 extern "C" int call_8c18e6fc(Frame *);
-extern "C" void operation_8c11bd04(Object *o)
+extern "C" void TObjEnePanarms_state03_8c11bd04(Object *o)
 {
     Frame frame;
     int v2;

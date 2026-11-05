@@ -32,7 +32,7 @@ struct Arg0_3b8 {
     char unknown48[0x1c];
     int f64;
 };
-void operation_8c15fc8c(Object *o)
+void TObjEnePanBARA_state10_8c15fc8c(Object *o)
 {
     S_vv1 *v1;
     v1 = (S_vv1 *)((char *)o + 0x3c);

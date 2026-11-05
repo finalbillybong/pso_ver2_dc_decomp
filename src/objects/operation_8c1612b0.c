@@ -23,7 +23,7 @@ struct Arg0_398 {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c1612b0(Object *o)
+void TObjEnePanBARA_state30_8c1612b0(Object *o)
 {
     if (o->f39c != 1) {
         o->f398->f18 |= 1;

@@ -190,7 +190,7 @@ struct S_vv50 {
 };
 extern "C" void operation_8c059ef8(void *, int);
 extern "C" int call_8c05c2dc(Object *);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" float object_random_fraction(void *);
 extern "C" S_c8c0d852c *operation_8c0d852c(int, int, int);
 extern "C" int lookup_object_by_id(unsigned short);
@@ -249,7 +249,7 @@ extern "C" void operation_8c0d7f98(Object *o, int a1)
         ((ObjectData *)o)->f3d4 = (int)(((ObjectData *)o)->f3d8);
         t1 = call_8c05c2dc(o);
         if (t1 != 0) {
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
             t2 = object_random_fraction((void *)o);
             v2 = (int)0;
             v3 = (int)0x3f0;

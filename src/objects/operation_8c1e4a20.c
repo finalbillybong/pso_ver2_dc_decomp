@@ -36,7 +36,7 @@ extern void call_8c3a9436(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c391c94(void);
 extern void call_8c391cc4(void);
-void operation_8c1e4a20(TOContainerAncientEnemy *o)
+void TOContainerAncientEnemy_vslot88_8c1e4a20(TOContainerAncientEnemy *o)
 {
     S_vv1 *v1;
     S_vv2 *v2;

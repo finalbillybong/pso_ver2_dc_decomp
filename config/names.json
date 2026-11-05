@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "description": "Proposed descriptive names for functions and globals. Not original symbols and not yet applied to src/; see docs/SYSTEMS.md. \"curated\" is the reviewed priority set, \"extended\" is mechanical class-method, quest-opcode and asset-loader names.",
+ "description": "Proposed descriptive names for functions and globals. Not original symbols and not yet applied to src/; see docs/SYSTEMS.md. \"curated\" is the reviewed priority set, \"extended\" is mechanical class-method, quest-opcode and asset-loader names. \"derived\" names come from vtable slots of named classes, named data tables, caller roles and single-call wrappers.",
  "sources": {
   "newserv": "newserv, the public PSO server project (github.com/fuzziqersoftware/newserv), commit 8a75f6ef: notes/handler-tables.txt, notes/dat-constructor-tables.txt, src/CommandFormats.hh, src/QuestScript.cc, src/PSOGCObjectGraph.cc, system/client-functions (2OPF columns)",
   "image": "structure of the decoded executable: vtables, class-name strings, tables, call graph, SDK version banners and error strings"
@@ -111,6 +111,46 @@
    "evidence": "vtable slot 3 of TObjCollision (vtable 0x8c260ecc); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c0104fc",
+   "kind": "function",
+   "name": "TObjectShared_vslot05",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 5 in 386 vtables (engine base class TObjectShared: its own vtable 0x8c2612d8 holds this slot)"
+  },
+  {
+   "address": "0x8c010500",
+   "kind": "function",
+   "name": "TObjectShared_vslot08",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 8 in 413 vtables (engine base class TObjectShared: its own vtable 0x8c2612d8 holds this slot)"
+  },
+  {
+   "address": "0x8c010504",
+   "kind": "function",
+   "name": "TObjectShared_vslot09",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 9 in 156 vtables (engine base class TObjectShared: its own vtable 0x8c2612d8 holds this slot)"
+  },
+  {
+   "address": "0x8c010508",
+   "kind": "function",
+   "name": "TObjectShared_vslot10",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 10 in 162 vtables (engine base class TObjectShared: its own vtable 0x8c2612d8 holds this slot)"
+  },
+  {
+   "address": "0x8c010510",
+   "kind": "function",
+   "name": "TObjectShared_vslot13",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 13 in 171 vtables (engine base class TObjectShared: its own vtable 0x8c2612d8 holds this slot)"
+  },
+  {
    "address": "0x8c010a1c",
    "kind": "function",
    "name": "TProtocol_wait_send_drain",
@@ -207,6 +247,14 @@
    "evidence": "vtable slot 0 of TObjEnemy (vtable 0x8c260fd8); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c01217c",
+   "kind": "function",
+   "name": "get_game_mode_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to get_game_mode (0x8c01c25c)"
+  },
+  {
    "address": "0x8c012efc",
    "kind": "function",
    "name": "handle_6x0A_update_enemy_state",
@@ -279,12 +327,44 @@
    "evidence": "vtable slot 1 of TFog (vtable 0x8c261160); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c01367c",
+   "kind": "function",
+   "name": "request_game_mode_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "12-byte function whose only reference is a call to request_game_mode (0x8c01c1a4)"
+  },
+  {
+   "address": "0x8c013688",
+   "kind": "function",
+   "name": "game_mode_03_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 3 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0136f0",
+   "kind": "function",
+   "name": "game_mode_03_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 3 in g_game_mode_table_8c2e3258"
+  },
+  {
    "address": "0x8c013f54",
    "kind": "function",
    "name": "load_light_entries",
    "confidence": "high",
    "set": "curated",
    "evidence": "loads \"lightentry.bin\""
+  },
+  {
+   "address": "0x8c013fa4",
+   "kind": "function",
+   "name": "game_free_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to game_free (0x8c011ec0)"
   },
   {
    "address": "0x8c014028",
@@ -301,6 +381,86 @@
    "confidence": "medium",
    "set": "curated",
    "evidence": "called first by nearly every mode init; allocates and initialises the six fixed hierarchy nodes (repo names them input/menu/field/manager/session/audio managers)"
+  },
+  {
+   "address": "0x8c01470c",
+   "kind": "function",
+   "name": "light_set_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to light_set (0x8c37e8bc)"
+  },
+  {
+   "address": "0x8c01472c",
+   "kind": "function",
+   "name": "set_vector_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to set_vector (0x8c37e864)"
+  },
+  {
+   "address": "0x8c01474c",
+   "kind": "function",
+   "name": "set_direction_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to set_direction (0x8c37e800)"
+  },
+  {
+   "address": "0x8c014b00",
+   "kind": "function",
+   "name": "set_light_1_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to set_light_1 (0x8c3c4070)"
+  },
+  {
+   "address": "0x8c014b20",
+   "kind": "function",
+   "name": "set_ambient_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to set_ambient (0x8c3c4016)"
+  },
+  {
+   "address": "0x8c014b40",
+   "kind": "function",
+   "name": "set_spot_pos_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to set_spot_pos (0x8c3c4024)"
+  },
+  {
+   "address": "0x8c014be4",
+   "kind": "function",
+   "name": "set_light_b_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "28-byte function whose only reference is a call to set_light_b (0x8c3c4074)"
+  },
+  {
+   "address": "0x8c014fcc",
+   "kind": "function",
+   "name": "view_set_ofs_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "24-byte function whose only reference is a call to view_set_ofs (0x8c3c1540)"
+  },
+  {
+   "address": "0x8c014fe4",
+   "kind": "function",
+   "name": "view_set_eye_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to view_set_eye (0x8c3c1500)"
+  },
+  {
+   "address": "0x8c015004",
+   "kind": "function",
+   "name": "view_set_at_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to view_set_at (0x8c3c1554)"
   },
   {
    "address": "0x8c015244",
@@ -343,12 +503,28 @@
    "evidence": "vtable slot 0 of TLobby (vtable 0x8c261278); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c019b0c",
+   "kind": "function",
+   "name": "TObjPlayer_vslot13",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 13 of TObjPlayer_vtable_8c261318"
+  },
+  {
    "address": "0x8c01a4e0",
    "kind": "function",
    "name": "handle_6x72_player_done_loading_into_game",
    "confidence": "high",
    "set": "curated",
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x72 (flags 7) to this address; newserv CommandFormats.hh: \"Player done loading into game\""
+  },
+  {
+   "address": "0x8c01a920",
+   "kind": "function",
+   "name": "lookup_object_by_id_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to lookup_object_by_id (0x8c053d84)"
   },
   {
    "address": "0x8c01ae4c",
@@ -471,6 +647,38 @@
    "evidence": "calls TObject_ctor then stores the 14-slot base vtable 0x8c2612d8 (destroy_shared_object, ..., reset_shared_object); 58 callers"
   },
   {
+   "address": "0x8c01d3b0",
+   "kind": "function",
+   "name": "TObjectShared_vslot11",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 11 in 409 vtables (engine base class TObjectShared: its own vtable 0x8c2612d8 holds this slot)"
+  },
+  {
+   "address": "0x8c01d694",
+   "kind": "function",
+   "name": "TObjectShared_vslot06",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 6 in 413 vtables (engine base class TObjectShared: its own vtable 0x8c2612d8 holds this slot)"
+  },
+  {
+   "address": "0x8c01d88c",
+   "kind": "function",
+   "name": "replicate_nibble_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "28-byte function whose only reference is a call to replicate_nibble (0x8c01d8c4)"
+  },
+  {
+   "address": "0x8c01d8a8",
+   "kind": "function",
+   "name": "replicate_nibble_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "28-byte function whose only reference is a call to replicate_nibble (0x8c01d8c4)"
+  },
+  {
    "address": "0x8c01d9dc",
    "kind": "function",
    "name": "reset_controller_state",
@@ -567,6 +775,30 @@
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x26 (flags 6) to this address; newserv CommandFormats.hh: \"Unequip item (protected on GC NTE/V3/V4)\""
   },
   {
+   "address": "0x8c022ca0",
+   "kind": "function",
+   "name": "TObjPlayer_vslot75",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 75 of TObjPlayer_vtable_8c261318"
+  },
+  {
+   "address": "0x8c022d20",
+   "kind": "function",
+   "name": "TObjPlayer_vslot76",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 76 of TObjPlayer_vtable_8c261318"
+  },
+  {
+   "address": "0x8c0230e4",
+   "kind": "function",
+   "name": "TObjPlayer_vslot74",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 74 of TObjPlayer_vtable_8c261318"
+  },
+  {
    "address": "0x8c0233e8",
    "kind": "function",
    "name": "handle_6x29_delete_inventory_item",
@@ -615,6 +847,14 @@
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x28 (flags 6) to this address; newserv CommandFormats.hh: \"Feed MAG (protected on GC NTE/V3/V4)\""
   },
   {
+   "address": "0x8c02450c",
+   "kind": "function",
+   "name": "hierarchy_is_active_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to hierarchy_is_active (0x8c03347c)"
+  },
+  {
    "address": "0x8c02456c",
    "kind": "function",
    "name": "handle_6x98",
@@ -631,12 +871,36 @@
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x99 (flags 7) to this address; newserv CommandFormats.hh: \"Unknown\""
   },
   {
+   "address": "0x8c0245a4",
+   "kind": "function",
+   "name": "TObjPlayer_vslot18",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 18 of TObjPlayer_vtable_8c261318"
+  },
+  {
+   "address": "0x8c0245b4",
+   "kind": "function",
+   "name": "TObjPlayer_vslot19",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 19 of TObjPlayer_vtable_8c261318"
+  },
+  {
    "address": "0x8c024e5c",
    "kind": "function",
    "name": "handle_6x30_change_player_level",
    "confidence": "high",
    "set": "curated",
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x30 (flags 6) to this address; newserv CommandFormats.hh: \"Change player level (protected on GC NTE/V3 but not V4)\""
+  },
+  {
+   "address": "0x8c025570",
+   "kind": "function",
+   "name": "TObjPlayer_vslot80",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 80 of TObjPlayer_vtable_8c261318"
   },
   {
    "address": "0x8c025788",
@@ -671,6 +935,14 @@
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x36 (flags 6) to this address; newserv CommandFormats.hh: \"Unknown (supported; game only)\""
   },
   {
+   "address": "0x8c0277bc",
+   "kind": "function",
+   "name": "TObjPlayer_vslot82",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 82 of TObjPlayer_vtable_8c261318"
+  },
+  {
    "address": "0x8c0278d4",
    "kind": "function",
    "name": "handle_6x31_use_medical_center",
@@ -693,6 +965,14 @@
    "confidence": "high",
    "set": "curated",
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x34 (flags 6) to this address; newserv CommandFormats.hh: \"Unknown\""
+  },
+  {
+   "address": "0x8c029bc0",
+   "kind": "function",
+   "name": "TObjPlayer_vslot85",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 85 of TObjPlayer_vtable_8c261318"
   },
   {
    "address": "0x8c029c14",
@@ -767,6 +1047,14 @@
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x1C (flags 7) to this address; newserv CommandFormats.hh: \"Disable PK mode for player (protected on GC NTE/V3/V4)\""
   },
   {
+   "address": "0x8c02afc0",
+   "kind": "function",
+   "name": "TObjPlayer_vslot20",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 20 of TObjPlayer_vtable_8c261318"
+  },
+  {
    "address": "0x8c02b064",
    "kind": "function",
    "name": "handle_6x7A_enable_stealth_suit_effect",
@@ -823,6 +1111,22 @@
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x8F (flags 7) to this address; newserv CommandFormats.hh: \"Add battle damage scores (not valid on Episode 3)\""
   },
   {
+   "address": "0x8c02c194",
+   "kind": "function",
+   "name": "get_current_area_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "24-byte function whose only reference is a call to get_current_area (0x8c032b10)"
+  },
+  {
+   "address": "0x8c02c368",
+   "kind": "function",
+   "name": "TObjPlayer_vslot24",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 24 of TObjPlayer_vtable_8c261318"
+  },
+  {
    "address": "0x8c02c6c0",
    "kind": "function",
    "name": "TObject_create_02c6c0",
@@ -831,12 +1135,68 @@
    "evidence": "small wrapper: allocate 0x8c122700 then 0x8c0330e4 (TObject ctor)"
   },
   {
+   "address": "0x8c02c984",
+   "kind": "function",
+   "name": "TObjPlayer_vslot72",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 72 of TObjPlayer_vtable_8c261318"
+  },
+  {
    "address": "0x8c02cb40",
    "kind": "function",
    "name": "handle_6x9B_level_up_all_techniques",
    "confidence": "high",
    "set": "curated",
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x9B (flags 6) to this address; newserv CommandFormats.hh: \"Level up all techniques (protected on GC NTE/V3/V4)\""
+  },
+  {
+   "address": "0x8c02cc08",
+   "kind": "function",
+   "name": "TObjPlayer_vslot03",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 3 of TObjPlayer_vtable_8c261318"
+  },
+  {
+   "address": "0x8c02cc0c",
+   "kind": "function",
+   "name": "TObjPlayer_vslot73",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 73 of TObjPlayer_vtable_8c261318"
+  },
+  {
+   "address": "0x8c02cc1c",
+   "kind": "function",
+   "name": "TObjPlayer_vslot79",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 79 of TObjPlayer_vtable_8c261318"
+  },
+  {
+   "address": "0x8c02cc30",
+   "kind": "function",
+   "name": "TObjPlayer_vslot83",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 83 of TObjPlayer_vtable_8c261318"
+  },
+  {
+   "address": "0x8c02cc44",
+   "kind": "function",
+   "name": "TObjPlayer_vslot84",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 84 of TObjPlayer_vtable_8c261318"
+  },
+  {
+   "address": "0x8c02cc58",
+   "kind": "function",
+   "name": "TObjPlayer_vslot86",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 86 of TObjPlayer_vtable_8c261318"
   },
   {
    "address": "0x8c02cc88",
@@ -1567,6 +1927,14 @@
    "evidence": "vtable slot 1 of TCharaMaking (vtable 0x8c26159c); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c034ce4",
+   "kind": "function",
+   "name": "get_game_mode_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "24-byte function whose only reference is a call to get_game_mode (0x8c01c25c)"
+  },
+  {
    "address": "0x8c036a0c",
    "kind": "function",
    "name": "TGameProtocol_ctor",
@@ -1757,6 +2125,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 3 of TObjEneShark (vtable 0x8c2615d4); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c037d54",
+   "kind": "function",
+   "name": "TObjEneShark_vslot97",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 97 of TObjEneShark_vtable_8c2615d4"
   },
   {
    "address": "0x8c038104",
@@ -2071,6 +2447,14 @@
    "evidence": "only in vtable slot 6 of TEditor (vtable 0x8c261b58) and 4 derived vtables; slot role unknown"
   },
   {
+   "address": "0x8c03ceac",
+   "kind": "function",
+   "name": "TEditor_update",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "slot 1 of TEditor_vtable_8c261b58 (inherited by 6 other vtables); TObject slot roles dtor/update/render/render_shadow"
+  },
+  {
    "address": "0x8c03cedc",
    "kind": "function",
    "name": "TEditor_v07",
@@ -2125,6 +2509,14 @@
    "confidence": "medium",
    "set": "curated",
    "evidence": "loads \"s256_1st_title01\""
+  },
+  {
+   "address": "0x8c03f494",
+   "kind": "function",
+   "name": "game_mode_29_frame",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 29 in g_game_mode_table_8c2e3258"
   },
   {
    "address": "0x8c040254",
@@ -2951,12 +3343,76 @@
    "evidence": "vtable slot 0 of TObjEneDD (vtable 0x8c2627b8); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c059d2c",
+   "kind": "function",
+   "name": "TObjEneDD_vslot89",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 89 of TObjEneDD_vtable_8c2627b8 (inherited by 2 other vtables)"
+  },
+  {
    "address": "0x8c05b168",
    "kind": "function",
    "name": "TObjEneDD_v94",
    "confidence": "medium",
    "set": "extended",
    "evidence": "only in vtable slot 94 of TObjEneDD (vtable 0x8c2627b8) and 1 derived vtables; slot role unknown"
+  },
+  {
+   "address": "0x8c05b16c",
+   "kind": "function",
+   "name": "TObjEneDD_vslot95",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 95 of TObjEneDD_vtable_8c2627b8 (inherited by 2 other vtables)"
+  },
+  {
+   "address": "0x8c05b8e8",
+   "kind": "function",
+   "name": "object_random_fraction_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to object_random_fraction (0x8c04aa9c)"
+  },
+  {
+   "address": "0x8c05b90c",
+   "kind": "function",
+   "name": "object_random_fraction_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to object_random_fraction (0x8c04aa9c)"
+  },
+  {
+   "address": "0x8c05bae8",
+   "kind": "function",
+   "name": "get_game_mode_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "24-byte function whose only reference is a call to get_game_mode (0x8c01c25c)"
+  },
+  {
+   "address": "0x8c05bb00",
+   "kind": "function",
+   "name": "get_game_mode_wrapper_4",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "24-byte function whose only reference is a call to get_game_mode (0x8c01c25c)"
+  },
+  {
+   "address": "0x8c05c184",
+   "kind": "function",
+   "name": "set_fields_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to set_fields (0x8c05c1a4)"
+  },
+  {
+   "address": "0x8c05c804",
+   "kind": "function",
+   "name": "TObjEneBm3Fly_vslot89",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 89 of TObjEneBm3Fly_vtable_8c262250"
   },
   {
    "address": "0x8c05c8f8",
@@ -3383,12 +3839,28 @@
    "evidence": "vtable slot 3 (render_shadow) in 176 of the same item vtables"
   },
   {
+   "address": "0x8c073e5c",
+   "kind": "function",
+   "name": "TItemEquipBase_vslot31",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 31 of TItemEquipBase_vtable_8c278154"
+  },
+  {
    "address": "0x8c074a2c",
    "kind": "function",
    "name": "handle_6x61_activate_item_effect",
    "confidence": "high",
    "set": "curated",
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x61 (flags 6) to this address; newserv CommandFormats.hh: \"Activate item effect\""
+  },
+  {
+   "address": "0x8c075b84",
+   "kind": "function",
+   "name": "TItemProShield_vslot30",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 30 in 152 vtables (base TItemProShield: all 152 user vtables extend its vtable and it adds no slot function of its own)"
   },
   {
    "address": "0x8c0772f8",
@@ -4071,6 +4543,22 @@
    "evidence": "vtable slot 0 of TBoss1DragonEffTail (vtable 0x8c264148); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c07c18c",
+   "kind": "function",
+   "name": "process_entries_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "28-byte function whose only reference is a call to process_entries (0x8c0731d8)"
+  },
+  {
+   "address": "0x8c07c1a8",
+   "kind": "function",
+   "name": "process_entries_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "28-byte function whose only reference is a call to process_entries (0x8c0731d8)"
+  },
+  {
    "address": "0x8c07c1c4",
    "kind": "function",
    "name": "TBoss1DragonEffTail_v17",
@@ -4271,6 +4759,22 @@
    "evidence": "only in vtable slot 40 of TItemMag (vtable 0x8c264220); slot role unknown"
   },
   {
+   "address": "0x8c07fd60",
+   "kind": "function",
+   "name": "TItemProShield_vslot46",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 46 in 9 vtables (base TItemProShield: all 9 user vtables extend its vtable and it adds no slot function of its own)"
+  },
+  {
+   "address": "0x8c07fd64",
+   "kind": "function",
+   "name": "TItemProShield_vslot47",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 47 in 9 vtables (base TItemProShield: all 9 user vtables extend its vtable and it adds no slot function of its own)"
+  },
+  {
    "address": "0x8c07fd68",
    "kind": "function",
    "name": "TObjRain_ctor",
@@ -4373,6 +4877,22 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "stores vtable 0x8c264348 (5 slots) and class-name string \"TObjRainCtrl\"; TObject layout name@+0/vtable@+0x18 (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c080458",
+   "kind": "function",
+   "name": "TObjContainerIdo_vslot15",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 15 of TObjContainerIdo_vtable_8c2645b4"
+  },
+  {
+   "address": "0x8c08045c",
+   "kind": "function",
+   "name": "TObjContainerIdo_vslot16",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 16 of TObjContainerIdo_vtable_8c2645b4"
   },
   {
    "address": "0x8c0804a8",
@@ -4527,6 +5047,14 @@
    "evidence": "vtable slot 1 of TObjLazerFenceNorm (vtable 0x8c264480); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c080d70",
+   "kind": "function",
+   "name": "TObjLazerFenceNorm_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjLazerFenceNorm (class-attribution); all 1 caller(s) are TObjLazerFenceNorm_update"
+  },
+  {
    "address": "0x8c080e30",
    "kind": "function",
    "name": "TObjLazerFenceNorm_render",
@@ -4581,6 +5109,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 1 of TObjLazerFenceExtra (vtable 0x8c26443c); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c0813a0",
+   "kind": "function",
+   "name": "TObjLazerFenceExtra_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjLazerFenceExtra (class-attribution); all 1 caller(s) are TObjLazerFenceExtra_update"
   },
   {
    "address": "0x8c081460",
@@ -5271,6 +5807,14 @@
    "evidence": "only in vtable slot 5 of TObjContainerAbeEnemy (vtable 0x8c264600); slot role unknown"
   },
   {
+   "address": "0x8c085cf8",
+   "kind": "function",
+   "name": "TObjContainerBase_vslot05",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 5 of TObjContainerBase_vtable_8c264d1c"
+  },
+  {
    "address": "0x8c085cfc",
    "kind": "function",
    "name": "TObjContainerBase_v86_085cfc",
@@ -5519,6 +6063,14 @@
    "evidence": "vtable slot 0 of TObjWarpBase (vtable 0x8c2651bc); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c08893c",
+   "kind": "function",
+   "name": "TObjMapWarpAncient_vslot16",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 16 of TObjMapWarpAncient_vtable_8c26ebdc"
+  },
+  {
    "address": "0x8c0892a8",
    "kind": "function",
    "name": "handle_6x94_warp",
@@ -5679,6 +6231,14 @@
    "evidence": "small wrapper: allocate 0x8c122700 then 0x8c08b8bc (TGroupSetEditor ctor)"
   },
   {
+   "address": "0x8c08b89c",
+   "kind": "function",
+   "name": "operator_delete_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to operator_delete (0x8c18de08)"
+  },
+  {
    "address": "0x8c08b8bc",
    "kind": "function",
    "name": "TGroupSetEditor_ctor",
@@ -5725,6 +6285,14 @@
    "confidence": "medium",
    "set": "extended",
    "evidence": "small wrapper: allocate 0x8c122700 then 0x8c08dde8 (TGroupEnemySetEditor ctor)"
+  },
+  {
+   "address": "0x8c08ddc8",
+   "kind": "function",
+   "name": "operator_delete_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to operator_delete (0x8c18de08)"
   },
   {
    "address": "0x8c08dde8",
@@ -5967,6 +6535,14 @@
    "evidence": "vtable slot 0 of TCMCharacter (vtable 0x8c265828); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c09b538",
+   "kind": "function",
+   "name": "game_free_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to game_free (0x8c011ec0)"
+  },
+  {
    "address": "0x8c09b55c",
    "kind": "function",
    "name": "TCMCharacter_update",
@@ -5981,6 +6557,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TCMCharacter (vtable 0x8c265828); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c09cd3c",
+   "kind": "function",
+   "name": "file_load_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "20-byte function whose only reference is a call to file_load (0x8c104d00)"
   },
   {
    "address": "0x8c09d574",
@@ -6661,6 +7245,14 @@
    "confidence": "medium",
    "set": "extended",
    "evidence": "small wrapper: allocate 0x8c122700 then 0x8c0acd00 (TTecBarta ctor)"
+  },
+  {
+   "address": "0x8c0ad90c",
+   "kind": "function",
+   "name": "step_vector_toward_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to step_vector_toward (0x8c0c51d8)"
   },
   {
    "address": "0x8c0afe6c",
@@ -7351,6 +7943,14 @@
    "evidence": "small wrapper: allocate 0x8c122700 then 0x8c0b8fb0 (TTecResta ctor)"
   },
   {
+   "address": "0x8c0b9f98",
+   "kind": "function",
+   "name": "TTecGiZonde_vslot02",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 2 of TTecGiZonde_vtable_8c265f00"
+  },
+  {
    "address": "0x8c0ba2cc",
    "kind": "function",
    "name": "TTecSifta_ctor_1",
@@ -7631,6 +8231,14 @@
    "evidence": "only in vtable slot 67 of TObjEneSaver (vtable 0x8c266330); slot role unknown"
   },
   {
+   "address": "0x8c0bda08",
+   "kind": "function",
+   "name": "TObjEneSaver_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjEneSaver (class-attribution); all 1 caller(s) are TObjEneSaver_update"
+  },
+  {
    "address": "0x8c0bdde4",
    "kind": "function",
    "name": "TObjEneSaver_v39",
@@ -7749,6 +8357,118 @@
    "confidence": "medium",
    "set": "curated",
    "evidence": "shared frame callback of g_game_mode_table[18..25], whose inits all index the SFD movie-name table at 0x8c306344 (\"TGS_JAPANESE.SFD\", ...)"
+  },
+  {
+   "address": "0x8c0c55a8",
+   "kind": "function",
+   "name": "request_game_mode_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "12-byte function whose only reference is a call to request_game_mode (0x8c01c1a4)"
+  },
+  {
+   "address": "0x8c0c55b4",
+   "kind": "function",
+   "name": "game_mode_18_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 18 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c56b0",
+   "kind": "function",
+   "name": "game_mode_20_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 20 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c5750",
+   "kind": "function",
+   "name": "game_mode_21_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 21 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c5774",
+   "kind": "function",
+   "name": "game_mode_22_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 22 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c57ec",
+   "kind": "function",
+   "name": "game_mode_22_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 22 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c5810",
+   "kind": "function",
+   "name": "game_mode_23_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 23 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c5888",
+   "kind": "function",
+   "name": "game_mode_23_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 23 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c58e4",
+   "kind": "function",
+   "name": "game_mode_24_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 24 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c5954",
+   "kind": "function",
+   "name": "game_mode_24_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 24 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c598c",
+   "kind": "function",
+   "name": "game_mode_25_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 25 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c5a64",
+   "kind": "function",
+   "name": "game_mode_26_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 26 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c5aa0",
+   "kind": "function",
+   "name": "game_mode_26_frame",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 26 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0c5b38",
+   "kind": "function",
+   "name": "game_mode_26_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 26 in g_game_mode_table_8c2e3258"
   },
   {
    "address": "0x8c0c6530",
@@ -8141,6 +8861,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TObjEneDubchik (vtable 0x8c266d58); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c0cffe8",
+   "kind": "function",
+   "name": "TObjEneDubchik_render_part",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjEneDubchik (class-attribution); all 1 caller(s) are TObjEneDubchik_render"
   },
   {
    "address": "0x8c0d0078",
@@ -8575,6 +9303,14 @@
    "evidence": "vtable slot 2 of TWindowStatus (vtable 0x8c2677bc); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c0e2b2c",
+   "kind": "function",
+   "name": "refresh_name_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "20-byte function whose only reference is a call to refresh_name (0x8c0e2b78)"
+  },
+  {
    "address": "0x8c0e3294",
    "kind": "function",
    "name": "TWindowSimpleStatus_ctor",
@@ -8975,6 +9711,30 @@
    "evidence": "vtable slot 0 of TItemObject (vtable 0x8c267d80); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c0e7750",
+   "kind": "function",
+   "name": "game_mode_15_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 15 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0e790c",
+   "kind": "function",
+   "name": "game_mode_15_frame",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 15 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0e7be8",
+   "kind": "function",
+   "name": "game_mode_15_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 15 in g_game_mode_table_8c2e3258"
+  },
+  {
    "address": "0x8c0e8360",
    "kind": "function",
    "name": "TItemProShield_ctor",
@@ -9023,6 +9783,30 @@
    "evidence": "vtable slot 0 of TItemProShield (vtable 0x8c267e34); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c0e97a8",
+   "kind": "function",
+   "name": "game_mode_init_shared_04_07",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 4,7 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0e97ac",
+   "kind": "function",
+   "name": "game_mode_frame_shared_04_07",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 4,7 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0e97b0",
+   "kind": "function",
+   "name": "game_mode_exit_shared_04_07",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 4,7 in g_game_mode_table_8c2e3258"
+  },
+  {
    "address": "0x8c0e97b4",
    "kind": "function",
    "name": "create_opening_movie_task",
@@ -9037,6 +9821,22 @@
    "confidence": "medium",
    "set": "curated",
    "evidence": "g_game_mode_table[6].init; calls 0x8c0e97b4 which creates the \"pso_op3600.sfd\" playback task"
+  },
+  {
+   "address": "0x8c0e99c4",
+   "kind": "function",
+   "name": "game_mode_06_frame",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 6 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0e9a88",
+   "kind": "function",
+   "name": "game_mode_06_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 6 in g_game_mode_table_8c2e3258"
   },
   {
    "address": "0x8c0e9e0c",
@@ -9061,6 +9861,78 @@
    "confidence": "medium",
    "set": "curated",
    "evidence": "g_game_mode_table[17].exit"
+  },
+  {
+   "address": "0x8c0eaa6c",
+   "kind": "function",
+   "name": "game_mode_14_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 14 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0eaae8",
+   "kind": "function",
+   "name": "game_mode_14_frame",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 14 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0eaba8",
+   "kind": "function",
+   "name": "game_mode_14_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 14 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0ed5c0",
+   "kind": "function",
+   "name": "game_mode_05_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 5 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0ed62c",
+   "kind": "function",
+   "name": "game_mode_05_frame",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 5 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0ed6e0",
+   "kind": "function",
+   "name": "game_mode_05_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 5 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0ed70c",
+   "kind": "function",
+   "name": "game_mode_09_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 9 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0ed758",
+   "kind": "function",
+   "name": "game_mode_09_frame",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 9 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c0ed80c",
+   "kind": "function",
+   "name": "game_mode_09_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 9 in g_game_mode_table_8c2e3258"
   },
   {
    "address": "0x8c0ed844",
@@ -9157,6 +10029,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TFontSmallTask (vtable 0x8c268060); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c0ee944",
+   "kind": "function",
+   "name": "TOKey_vslot02",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 2 of TOKey_vtable_8c269c48"
   },
   {
    "address": "0x8c0ef2c8",
@@ -9357,6 +10237,14 @@
    "confidence": "medium",
    "set": "extended",
    "evidence": "paired release slot after 0x8c0f0364 in the same per-area asset table(s) 0x8c2ecd18,0x8c2ece20"
+  },
+  {
+   "address": "0x8c0f0400",
+   "kind": "function",
+   "name": "TOWreckAncient_vslot02",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 2 of TOWreckAncient_vtable_8c26843c (inherited by 2 other vtables)"
   },
   {
    "address": "0x8c0f04d8",
@@ -10247,6 +11135,102 @@
    "evidence": "only in vtable slot 69 of TObjEneSlimeOne (vtable 0x8c268d28); slot role unknown"
   },
   {
+   "address": "0x8c0f8ee0",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state02",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 2 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
+   "address": "0x8c0f9124",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state04",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 4 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
+   "address": "0x8c0f97a4",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state08",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 8 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
+   "address": "0x8c0f98e4",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state10",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 10 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
+   "address": "0x8c0f99dc",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state12",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 12 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
+   "address": "0x8c0f9ca0",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state14",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 14 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
+   "address": "0x8c0f9e38",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state16",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 16 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
+   "address": "0x8c0fa0b8",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state18",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 18 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
+   "address": "0x8c0fa564",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state22",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 22 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
+   "address": "0x8c0fa6a0",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state24",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 24 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
+   "address": "0x8c0fa798",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state26",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 26 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
+   "address": "0x8c0fa8b0",
+   "kind": "function",
+   "name": "TObjEneSlimeOne_state27",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 27 of member_function_table_8c30a31c (CodeWarrior member-function table); its runtime copy is read only by TObjEneSlimeOne code (3 function(s))"
+  },
+  {
    "address": "0x8c0faf6c",
    "kind": "function",
    "name": "TObjEneSlimeWaterBomb_ctor",
@@ -10383,12 +11367,100 @@
    "evidence": "paired release slot after 0x8c0fce90 in the same per-area asset table(s) 0x8c2ec580,0x8c2ec680"
   },
   {
+   "address": "0x8c0fcff4",
+   "kind": "function",
+   "name": "TOMine_vslot01",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 1 of TOMine_vtable_8c269238 (inherited by 3 other vtables)"
+  },
+  {
+   "address": "0x8c0fd328",
+   "kind": "function",
+   "name": "TOMine_vslot86",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 86 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
    "address": "0x8c0fd32c",
    "kind": "function",
    "name": "TOMine_v99",
    "confidence": "medium",
    "set": "extended",
    "evidence": "only in vtable slot 99 of TOMine (vtable 0x8c269238) and 1 derived vtables; slot role unknown"
+  },
+  {
+   "address": "0x8c0fd330",
+   "kind": "function",
+   "name": "TOMine_vslot88",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 88 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
+   "address": "0x8c0fd3cc",
+   "kind": "function",
+   "name": "TOMine_vslot89",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 89 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
+   "address": "0x8c0fd3dc",
+   "kind": "function",
+   "name": "TOMine_vslot90",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 90 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
+   "address": "0x8c0fd5f8",
+   "kind": "function",
+   "name": "TOMine_vslot96",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 96 of TOMine_vtable_8c269238 (inherited by 3 other vtables)"
+  },
+  {
+   "address": "0x8c0fd64c",
+   "kind": "function",
+   "name": "TOMine_vslot97",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 97 of TOMine_vtable_8c269238 (inherited by 3 other vtables)"
+  },
+  {
+   "address": "0x8c0fd6c8",
+   "kind": "function",
+   "name": "TOMine_vslot25",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 25 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
+   "address": "0x8c0fd718",
+   "kind": "function",
+   "name": "TOMine_vslot26",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 26 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
+   "address": "0x8c0fd740",
+   "kind": "function",
+   "name": "TOMine_vslot24",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 24 of TOMine_vtable_8c269238 (inherited by 3 other vtables)"
+  },
+  {
+   "address": "0x8c0fd7c0",
+   "kind": "function",
+   "name": "TOMine_vslot05",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 5 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
   },
   {
    "address": "0x8c0fd8dc",
@@ -10399,12 +11471,52 @@
    "evidence": "only in vtable slot 98 of TOMine (vtable 0x8c269238) and 1 derived vtables; slot role unknown"
   },
   {
+   "address": "0x8c0fd8ec",
+   "kind": "function",
+   "name": "TOMine_vslot87",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 87 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
    "address": "0x8c0fd95c",
    "kind": "function",
    "name": "TOMine_v92",
    "confidence": "medium",
    "set": "extended",
    "evidence": "only in vtable slot 92 of TOMine (vtable 0x8c269238) and 4 derived vtables; slot role unknown"
+  },
+  {
+   "address": "0x8c0fda3c",
+   "kind": "function",
+   "name": "TOMine_vslot93",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 93 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
+   "address": "0x8c0fdb1c",
+   "kind": "function",
+   "name": "TOMine_vslot94",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 94 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
+   "address": "0x8c0fdbe0",
+   "kind": "function",
+   "name": "TOMine_vslot95",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 95 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
+   "address": "0x8c0fdc44",
+   "kind": "function",
+   "name": "TOMine_vslot03",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 3 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
   },
   {
    "address": "0x8c0fdc48",
@@ -10501,6 +11613,54 @@
    "confidence": "medium",
    "set": "extended",
    "evidence": "only in vtable slot 23 of TOMineTrap (vtable 0x8c2690a0); slot role unknown"
+  },
+  {
+   "address": "0x8c0fed34",
+   "kind": "function",
+   "name": "TOMine_vslot27",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 27 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
+   "address": "0x8c0fed38",
+   "kind": "function",
+   "name": "TOMine_vslot28",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 28 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
+   "address": "0x8c0fed3c",
+   "kind": "function",
+   "name": "TOMine_vslot29",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 29 of TOMine_vtable_8c269238 (inherited by 4 other vtables)"
+  },
+  {
+   "address": "0x8c0fed40",
+   "kind": "function",
+   "name": "TOMine_vslot22",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 22 of TOMine_vtable_8c269238 (inherited by 3 other vtables)"
+  },
+  {
+   "address": "0x8c0fed60",
+   "kind": "function",
+   "name": "TOMine_vslot23",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 23 of TOMine_vtable_8c269238 (inherited by 3 other vtables)"
+  },
+  {
+   "address": "0x8c0fed80",
+   "kind": "function",
+   "name": "TOMine_vslot13",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 13 of TOMine_vtable_8c269238 (inherited by 3 other vtables)"
   },
   {
    "address": "0x8c0fed94",
@@ -11231,6 +12391,14 @@
    "evidence": "paired release slot after 0x8c107fd8 in the same per-area asset table(s) 0x8c2eea44,0x8c2eea84"
   },
   {
+   "address": "0x8c108488",
+   "kind": "function",
+   "name": "create_effect_7cc0_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "20-byte function whose only reference is a call to create_effect_7cc0 (0x8c0a7cc0)"
+  },
+  {
    "address": "0x8c108644",
    "kind": "function",
    "name": "TBreakUpMdl_create",
@@ -11285,6 +12453,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 1 of TObjEneGyaranzo (vtable 0x8c2698e8); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c108d78",
+   "kind": "function",
+   "name": "TObjEneGyaranzo_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjEneGyaranzo (class-attribution); all 1 caller(s) are TObjEneGyaranzo_update"
   },
   {
    "address": "0x8c109064",
@@ -11607,6 +12783,14 @@
    "evidence": "vtable slot 3 of TOBarrierEnergy01 (vtable 0x8c269ad8); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c10baa4",
+   "kind": "function",
+   "name": "process_entries_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to process_entries (0x8c1116a4)"
+  },
+  {
    "address": "0x8c10bc84",
    "kind": "function",
    "name": "load_npc_player_chars",
@@ -11621,6 +12805,14 @@
    "confidence": "high",
    "set": "curated",
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x69 (flags 7) to this address; newserv CommandFormats.hh: \"NPC control\""
+  },
+  {
+   "address": "0x8c111244",
+   "kind": "function",
+   "name": "lookup_low_id_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to lookup_low_id (0x8c021ef8)"
   },
   {
    "address": "0x8c111ec8",
@@ -11759,6 +12951,14 @@
    "evidence": "only in vtable slot 20 of TOKey (vtable 0x8c269c48) and 7 derived vtables; slot role unknown"
   },
   {
+   "address": "0x8c1133cc",
+   "kind": "function",
+   "name": "TOKey_vslot21",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 21 of TOKey_vtable_8c269c48 (inherited by 12 other vtables)"
+  },
+  {
    "address": "0x8c113440",
    "kind": "function",
    "name": "TOKey_v16",
@@ -11767,12 +12967,36 @@
    "evidence": "only in vtable slot 16 of TOKey (vtable 0x8c269c48) and 6 derived vtables; slot role unknown"
   },
   {
+   "address": "0x8c113564",
+   "kind": "function",
+   "name": "TOKey_vslot22",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 22 of TOKey_vtable_8c269c48 (inherited by 11 other vtables)"
+  },
+  {
+   "address": "0x8c1135b4",
+   "kind": "function",
+   "name": "TOKey_vslot14",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 14 of TOKey_vtable_8c269c48 (inherited by 12 other vtables)"
+  },
+  {
    "address": "0x8c113628",
    "kind": "function",
    "name": "handle_6x05_write_switch_flag",
    "confidence": "high",
    "set": "curated",
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x05 (flags 7) to this address; newserv CommandFormats.hh: \"Write switch flag\""
+  },
+  {
+   "address": "0x8c1136b0",
+   "kind": "function",
+   "name": "TOKey_vslot24",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 24 of TOKey_vtable_8c269c48 (inherited by 12 other vtables)"
   },
   {
    "address": "0x8c113750",
@@ -12167,6 +13391,14 @@
    "evidence": "vtable slot 0 of TObjHashiBase (vtable 0x8c26a014); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c11a1f0",
+   "kind": "function",
+   "name": "TObjHashiBase_vslot09",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 9 of TObjHashiBase_vtable_8c26a014"
+  },
+  {
    "address": "0x8c11a2a4",
    "kind": "function",
    "name": "load_assets_fe_obj_hashi",
@@ -12343,6 +13575,182 @@
    "evidence": "only in vtable slot 69 of TObjEnePanarms (vtable 0x8c26a070); slot role unknown"
   },
   {
+   "address": "0x8c11bba0",
+   "kind": "function",
+   "name": "TObjEnePanarms_state00",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 0 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11bbb4",
+   "kind": "function",
+   "name": "TObjEnePanarms_state01",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 1 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11bc2c",
+   "kind": "function",
+   "name": "TObjEnePanarms_state02",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 2 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11bd04",
+   "kind": "function",
+   "name": "TObjEnePanarms_state03",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 3 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11bde0",
+   "kind": "function",
+   "name": "TObjEnePanarms_state04",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 4 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11bf68",
+   "kind": "function",
+   "name": "TObjEnePanarms_state06",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 6 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11c5b0",
+   "kind": "function",
+   "name": "TObjEnePanarms_state08",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 8 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11c71c",
+   "kind": "function",
+   "name": "TObjEnePanarms_state09",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 9 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11c864",
+   "kind": "function",
+   "name": "TObjEnePanarms_state10",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 10 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11c880",
+   "kind": "function",
+   "name": "TObjEnePanarms_state11",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 11 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11ca1c",
+   "kind": "function",
+   "name": "TObjEnePanarms_state13",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 13 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11cad0",
+   "kind": "function",
+   "name": "TObjEnePanarms_state14",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 14 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11caec",
+   "kind": "function",
+   "name": "TObjEnePanarms_state15",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 15 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11cca4",
+   "kind": "function",
+   "name": "TObjEnePanarms_state17",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 17 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11cdc0",
+   "kind": "function",
+   "name": "TObjEnePanarms_state18",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 18 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11ce6c",
+   "kind": "function",
+   "name": "TObjEnePanarms_state19",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 19 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11cf18",
+   "kind": "function",
+   "name": "TObjEnePanarms_state20",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 20 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11d1d0",
+   "kind": "function",
+   "name": "TObjEnePanarms_state22",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 22 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11d28c",
+   "kind": "function",
+   "name": "TObjEnePanarms_state23",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 23 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11d444",
+   "kind": "function",
+   "name": "TObjEnePanarms_state25",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 25 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11d4f0",
+   "kind": "function",
+   "name": "TObjEnePanarms_state26",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 26 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
+   "address": "0x8c11d520",
+   "kind": "function",
+   "name": "TObjEnePanarms_state27",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 27 of member_function_table_8c310a88 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanarms code (2 function(s))"
+  },
+  {
    "address": "0x8c11d5c8",
    "kind": "function",
    "name": "TObjLazerFence4_ctor",
@@ -12445,6 +13853,46 @@
    "confidence": "medium",
    "set": "extended",
    "evidence": "paired release slot after 0x8c11dcdc in the same per-area asset table(s) 0x8c2eec1c,0x8c2eec64"
+  },
+  {
+   "address": "0x8c11e0f8",
+   "kind": "function",
+   "name": "TObjEneBalClaw_vslot45",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 45 of TObjEneBalClaw_vtable_8c26a220 (inherited by 1 other vtables)"
+  },
+  {
+   "address": "0x8c11e124",
+   "kind": "function",
+   "name": "TObjEneBalClaw_vslot48",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 48 of TObjEneBalClaw_vtable_8c26a220 (inherited by 1 other vtables)"
+  },
+  {
+   "address": "0x8c11e198",
+   "kind": "function",
+   "name": "TObjEneBalClaw_vslot69",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 69 of TObjEneBalClaw_vtable_8c26a220 (inherited by 1 other vtables)"
+  },
+  {
+   "address": "0x8c11e19c",
+   "kind": "function",
+   "name": "TObjEneBalClaw_vslot67",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 67 of TObjEneBalClaw_vtable_8c26a220 (inherited by 1 other vtables)"
+  },
+  {
+   "address": "0x8c11e1a0",
+   "kind": "function",
+   "name": "TObjEneBalClaw_vslot39",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 39 of TObjEneBalClaw_vtable_8c26a220 (inherited by 1 other vtables)"
   },
   {
    "address": "0x8c11e1a4",
@@ -12717,6 +14165,14 @@
    "confidence": "high",
    "set": "curated",
    "evidence": "DAT enemy/NPC constructor table entry type 0x000E (tables at 0x8c2e8ad8.. / 0x8c2edfc8.., 16-byte {type, factory, float 250000.0, 0}); newserv notes/dat-constructor-tables.txt type 0x000E = TObjNpcMaleTall (2OEF 8C11F8FC); constructs base …"
+  },
+  {
+   "address": "0x8c11f640",
+   "kind": "function",
+   "name": "play_se_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "20-byte function whose only reference is a call to play_se (0x8c05fbf8)"
   },
   {
    "address": "0x8c11f750",
@@ -13431,6 +14887,22 @@
    "evidence": "only in vtable slot 5 of TContainerAncient01 (vtable 0x8c26c2dc); slot role unknown"
   },
   {
+   "address": "0x8c1296f4",
+   "kind": "function",
+   "name": "TContainerAncient01_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TContainerAncient01 (class-attribution); all 1 caller(s) are TContainerAncient01_update"
+  },
+  {
+   "address": "0x8c129a08",
+   "kind": "function",
+   "name": "create_effect_777c_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to create_effect_777c (0x8c0a777c)"
+  },
+  {
    "address": "0x8c129a2c",
    "kind": "function",
    "name": "TContainerAncient01_v09",
@@ -13693,6 +15165,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 0 of TODragonfly (vtable 0x8c26cc80); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c131fac",
+   "kind": "function",
+   "name": "TODragonfly_vslot15",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 15 of TODragonfly_vtable_8c26cc80 (inherited by 1 other vtables)"
   },
   {
    "address": "0x8c132304",
@@ -14039,6 +15519,14 @@
    "evidence": "only in vtable slot 20 of TOKeyCave01 (vtable 0x8c26ce58); slot role unknown"
   },
   {
+   "address": "0x8c1354cc",
+   "kind": "function",
+   "name": "TOKeyCave01_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TOKeyCave01 (class-attribution); all 1 caller(s) are TOKeyCave01_update"
+  },
+  {
    "address": "0x8c135520",
    "kind": "function",
    "name": "TOKeyCave01_v16",
@@ -14255,6 +15743,14 @@
    "evidence": "only in vtable slot 20 of TOKeyAncient03 (vtable 0x8c26cf24); slot role unknown"
   },
   {
+   "address": "0x8c136688",
+   "kind": "function",
+   "name": "TOKeyAncient03_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TOKeyAncient03 (class-attribution); all 1 caller(s) are TOKeyAncient03_update"
+  },
+  {
    "address": "0x8c1366dc",
    "kind": "function",
    "name": "TOKeyAncient03_v16",
@@ -14325,6 +15821,14 @@
    "confidence": "medium",
    "set": "extended",
    "evidence": "only in vtable slot 15 of TObjFogCollision (vtable 0x8c26d03c); slot role unknown"
+  },
+  {
+   "address": "0x8c136954",
+   "kind": "function",
+   "name": "TObjFogCollision_vslot02",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 2 of TObjFogCollision_vtable_8c26d03c"
   },
   {
    "address": "0x8c136b34",
@@ -14415,6 +15919,14 @@
    "evidence": "vtable slot 2 of TTecSlicer (vtable 0x8c26d0a0); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c137c3c",
+   "kind": "function",
+   "name": "TTecSlicer_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TTecSlicer (class-attribution); all 1 caller(s) are TTecSlicer_update"
+  },
+  {
    "address": "0x8c137e08",
    "kind": "function",
    "name": "TSlicerHistory_ctor",
@@ -14493,6 +16005,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 1 of TBoss3Volopt (vtable 0x8c26d0e0); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c138424",
+   "kind": "function",
+   "name": "TBoss3Volopt_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TBoss3Volopt (class-attribution); all 1 caller(s) are TBoss3Volopt_update"
   },
   {
    "address": "0x8c138594",
@@ -14709,6 +16229,30 @@
    "confidence": "high",
    "set": "curated",
    "evidence": "DAT object constructor table entry type 0x000D (tables at 0x8c2e8ad8.. / 0x8c2edfc8.., 16-byte {type, factory, float 250000.0, 0}); newserv notes/dat-constructor-tables.txt type 0x000D = TOMineIcon04 (2OEF 8C13EA4C); constructs base class …"
+  },
+  {
+   "address": "0x8c13e770",
+   "kind": "function",
+   "name": "create_effect_777c_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "16-byte function whose only reference is a call to create_effect_777c (0x8c0a777c)"
+  },
+  {
+   "address": "0x8c13ef3c",
+   "kind": "function",
+   "name": "set_transform_node_callback_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "12-byte function whose only reference is a call to set_transform_node_callback (0x8c0c4754)"
+  },
+  {
+   "address": "0x8c13f3cc",
+   "kind": "function",
+   "name": "game_free_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to game_free (0x8c011ec0)"
   },
   {
    "address": "0x8c13f504",
@@ -15279,6 +16823,14 @@
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x14 (flags 4) to this address; newserv CommandFormats.hh: \"De Rol Le boss actions (not valid on Episode 3)\""
   },
   {
+   "address": "0x8c1452f8",
+   "kind": "function",
+   "name": "play_se_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "12-byte function whose only reference is a call to play_se (0x8c05fbf8)"
+  },
+  {
    "address": "0x8c145438",
    "kind": "function",
    "name": "TBoss2DeRolLe_v93",
@@ -15615,6 +17167,14 @@
    "evidence": "only in vtable slot 26 of TOTrapAncient02R (vtable 0x8c26e15c); slot role unknown"
   },
   {
+   "address": "0x8c14e014",
+   "kind": "function",
+   "name": "destroy_node_array_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to destroy_node_array (0x8c0cd5fc)"
+  },
+  {
    "address": "0x8c14e034",
    "kind": "function",
    "name": "TPhotonGolla_ctor",
@@ -15759,6 +17319,14 @@
    "evidence": "vtable slot 1 of TBoss3VoloptHiraisin (vtable 0x8c26e688); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1508b8",
+   "kind": "function",
+   "name": "TBoss3VoloptHiraisin_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TBoss3VoloptHiraisin (class-attribution); all 1 caller(s) are TBoss3VoloptHiraisin_update"
+  },
+  {
    "address": "0x8c150934",
    "kind": "function",
    "name": "TBoss3VoloptHiraisin_render",
@@ -15791,12 +17359,28 @@
    "evidence": "stores vtable 0x8c26e7f4 (89 slots) and class-name string \"TBoss3VoloptMonitor\"; TObject layout name@+0/vtable@+0x18 (newserv PSOGCObjectGraph.cc); DAT enemy/NPC constructor table entry type 0x00C6 (tables at 0x8c2e8ad8.. / 0x8c2edfc8.. …"
   },
   {
+   "address": "0x8c1513d8",
+   "kind": "function",
+   "name": "check_items_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to check_items (0x8c37d534)"
+  },
+  {
    "address": "0x8c1513f8",
    "kind": "function",
    "name": "TBoss3VoloptMonitor_update",
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 1 of TBoss3VoloptMonitor (vtable 0x8c26e7f4); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c151678",
+   "kind": "function",
+   "name": "TBoss3VoloptMonitor_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TBoss3VoloptMonitor (class-attribution); all 1 caller(s) are TBoss3VoloptMonitor_update"
   },
   {
    "address": "0x8c1516d8",
@@ -15821,6 +17405,14 @@
    "confidence": "high",
    "set": "curated",
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x18 (flags 7) to this address; newserv CommandFormats.hh: \"Vol Opt phase 2 boss actions (not valid on Episode 3)\""
+  },
+  {
+   "address": "0x8c1557c8",
+   "kind": "function",
+   "name": "destroy_node_array_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to destroy_node_array (0x8c0cd5fc)"
   },
   {
    "address": "0x8c1557e8",
@@ -15853,6 +17445,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TPhotonLeilla (vtable 0x8c26eacc); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c155ea4",
+   "kind": "function",
+   "name": "destroy_node_array_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to destroy_node_array (0x8c0cd5fc)"
   },
   {
    "address": "0x8c155ec4",
@@ -15917,6 +17517,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TWindowMenu (vtable 0x8c26eb64); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c156d30",
+   "kind": "function",
+   "name": "add_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "24-byte function whose only reference is a call to add (0x8c156d48)"
   },
   {
    "address": "0x8c1577b0",
@@ -16071,6 +17679,22 @@
    "evidence": "only in vtable slot 7 of THunterGuildSeqOffline (vtable 0x8c26ec6c); slot role unknown"
   },
   {
+   "address": "0x8c1598bc",
+   "kind": "function",
+   "name": "set_global_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "28-byte function whose only reference is a call to set_global (0x8c01c21c)"
+  },
+  {
+   "address": "0x8c1598d8",
+   "kind": "function",
+   "name": "set_global_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "28-byte function whose only reference is a call to set_global (0x8c01c21c)"
+  },
+  {
    "address": "0x8c159a28",
    "kind": "function",
    "name": "TObjVoloptCage_ctor",
@@ -16093,6 +17717,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 1 of TObjVoloptCage (vtable 0x8c26ec94); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c159d78",
+   "kind": "function",
+   "name": "TObjVoloptCage_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjVoloptCage (class-attribution); all 1 caller(s) are TObjVoloptCage_update"
   },
   {
    "address": "0x8c159dd4",
@@ -16559,6 +18191,222 @@
    "evidence": "only in vtable slot 69 of TObjEnePanBARA (vtable 0x8c26f4c0); slot role unknown"
   },
   {
+   "address": "0x8c15edc0",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state00",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 0 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15edf4",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state01",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 1 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15eed8",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state03",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 3 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15ef68",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state04",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 4 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15f768",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state06",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 6 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15f790",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state07",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 7 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15fa7c",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state08",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 8 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15fc8c",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state10",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 10 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15fce8",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state11",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 11 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15fdd8",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state12",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 12 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15fe30",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state13",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 13 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15feac",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state14",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 14 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c15ff80",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state15",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 15 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c1600cc",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state16",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 16 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c1600f0",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state17",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 17 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c1600f4",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state18",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 18 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c1605f0",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state20",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 20 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c160920",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state22",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 22 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c160b2c",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state24",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 24 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c160e1c",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state26",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 26 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c160e80",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state27",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 27 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c161160",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state28",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 28 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c1611c0",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state29",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 29 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c1612b0",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state30",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 30 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c161310",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state31",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 31 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c1613fc",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state32",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 32 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
+   "address": "0x8c1614b4",
+   "kind": "function",
+   "name": "TObjEnePanBARA_state33",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 33 of member_function_table_8c316af8 (CodeWarrior member-function table); its runtime copy is read only by TObjEnePanBARA code (1 function(s))"
+  },
+  {
    "address": "0x8c161580",
    "kind": "function",
    "name": "TObjEnePanarmsAtkColli_ctor",
@@ -16589,6 +18437,30 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 1 of TObjEnePanarmsAtkColli (vtable 0x8c26f62c); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c161874",
+   "kind": "function",
+   "name": "TObjEnePanarmsAtkColli_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjEnePanarmsAtkColli (class-attribution); all 1 caller(s) are TObjEnePanarmsAtkColli_update"
+  },
+  {
+   "address": "0x8c161908",
+   "kind": "function",
+   "name": "TObjEnePanarmsAtkColli_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjEnePanarmsAtkColli (class-attribution); all 1 caller(s) are TObjEnePanarmsAtkColli_update"
+  },
+  {
+   "address": "0x8c161ce4",
+   "kind": "function",
+   "name": "set_transform_node_callback_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "12-byte function whose only reference is a call to set_transform_node_callback (0x8c0c4754)"
   },
   {
    "address": "0x8c161cf0",
@@ -16767,6 +18639,14 @@
    "evidence": "only in vtable slot 20 of TOKeyMachine01 (vtable 0x8c26f7f8); slot role unknown"
   },
   {
+   "address": "0x8c162c24",
+   "kind": "function",
+   "name": "TOKeyMachine01_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TOKeyMachine01 (class-attribution); all 1 caller(s) are TOKeyMachine01_update"
+  },
+  {
    "address": "0x8c162c78",
    "kind": "function",
    "name": "TOKeyMachine01_v16",
@@ -16807,6 +18687,14 @@
    "evidence": "call target replaced in the 6x5F (drop item) handler by newserv RareDropNotifications; result is a floor item whose byte 0 is its area"
   },
   {
+   "address": "0x8c163fb8",
+   "kind": "function",
+   "name": "destroy_node_array_wrapper_4",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to destroy_node_array (0x8c0cd5fc)"
+  },
+  {
    "address": "0x8c163fd8",
    "kind": "function",
    "name": "TPhotonFarlla_ctor",
@@ -16837,6 +18725,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TPhotonFarlla (vtable 0x8c26f864); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c164804",
+   "kind": "function",
+   "name": "destroy_node_array_wrapper_5",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to destroy_node_array (0x8c0cd5fc)"
   },
   {
    "address": "0x8c164824",
@@ -17077,6 +18973,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "stores vtable 0x8c2701cc (5 slots) and class-name string \"TItemList\"; TObject layout name@+0/vtable@+0x18 (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c169508",
+   "kind": "function",
+   "name": "hierarchy_is_active_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to hierarchy_is_active (0x8c03347c)"
   },
   {
    "address": "0x8c16a014",
@@ -20255,6 +22159,14 @@
    "evidence": "small wrapper: allocate 0x8c122700 then 0x8c1744ec (TObjItemOKWindow ctor)"
   },
   {
+   "address": "0x8c174858",
+   "kind": "function",
+   "name": "destroy_node_array_wrapper_6",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to destroy_node_array (0x8c0cd5fc)"
+  },
+  {
    "address": "0x8c174878",
    "kind": "function",
    "name": "TPhotonYoulla_ctor",
@@ -20685,6 +22597,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 0 of TItemWpnKatana (vtable 0x8c270cec); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c178948",
+   "kind": "function",
+   "name": "destroy_node_array_wrapper_7",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to destroy_node_array (0x8c0cd5fc)"
   },
   {
    "address": "0x8c17963c",
@@ -21389,6 +23309,30 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 0 of TItemProUnit (vtable 0x8c271d1c); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c17b8f8",
+   "kind": "function",
+   "name": "game_mode_19_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 19 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c17b9ac",
+   "kind": "function",
+   "name": "game_mode_19_frame",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 19 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c17bae4",
+   "kind": "function",
+   "name": "game_mode_19_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 19 in g_game_mode_table_8c2e3258"
   },
   {
    "address": "0x8c17bdb8",
@@ -22151,6 +24095,22 @@
    "evidence": "returns \"Allocation Failure\""
   },
   {
+   "address": "0x8c18ee70",
+   "kind": "function",
+   "name": "load_resource_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to load_resource (0x8c104e9c)"
+  },
+  {
+   "address": "0x8c18fabc",
+   "kind": "function",
+   "name": "load_resource_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to load_resource (0x8c104e9c)"
+  },
+  {
    "address": "0x8c190704",
    "kind": "function",
    "name": "TWindowSubMag_ctor",
@@ -22181,6 +24141,46 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TWindowSubMag (vtable 0x8c272734); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c1912ac",
+   "kind": "function",
+   "name": "TWindowSubMag_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubMag (class-attribution); all 1 caller(s) are TWindowSubMag_update"
+  },
+  {
+   "address": "0x8c1912f0",
+   "kind": "function",
+   "name": "TWindowSubMag_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubMag (class-attribution); all 1 caller(s) are TWindowSubMag_update"
+  },
+  {
+   "address": "0x8c1913d8",
+   "kind": "function",
+   "name": "TWindowSubMag_update_step_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubMag (class-attribution); all 1 caller(s) are TWindowSubMag_update"
+  },
+  {
+   "address": "0x8c191428",
+   "kind": "function",
+   "name": "TWindowSubMag_update_step_4",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubMag (class-attribution); all 1 caller(s) are TWindowSubMag_update"
+  },
+  {
+   "address": "0x8c191454",
+   "kind": "function",
+   "name": "TWindowSubMag_update_step_5",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubMag (class-attribution); all 1 caller(s) are TWindowSubMag_update"
   },
   {
    "address": "0x8c191a3c",
@@ -22221,6 +24221,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 1 of TItemLoad (vtable 0x8c27282c); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c193764",
+   "kind": "function",
+   "name": "operator_delete_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to operator_delete (0x8c18de08)"
   },
   {
    "address": "0x8c193bf8",
@@ -22439,6 +24447,22 @@
    "evidence": "vtable slot 2 of TWindowSubCustomEquip (vtable 0x8c2728bc); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c197804",
+   "kind": "function",
+   "name": "TWindowSubCustomEquip_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubCustomEquip (class-attribution); all 1 caller(s) are TWindowSubCustomEquip_update"
+  },
+  {
+   "address": "0x8c197844",
+   "kind": "function",
+   "name": "TWindowSubCustomEquip_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubCustomEquip (class-attribution); all 1 caller(s) are TWindowSubCustomEquip_update"
+  },
+  {
    "address": "0x8c1980b0",
    "kind": "function",
    "name": "load_assets_ad_f_moyouring",
@@ -22591,6 +24615,30 @@
    "evidence": "vtable slot 2 of TWindowSubCustomSelect (vtable 0x8c272974); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c199388",
+   "kind": "function",
+   "name": "TWindowSubCustomSelect_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubCustomSelect (class-attribution); all 1 caller(s) are TWindowSubCustomSelect_update"
+  },
+  {
+   "address": "0x8c199578",
+   "kind": "function",
+   "name": "TWindowSubCustomSelect_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubCustomSelect (class-attribution); all 1 caller(s) are TWindowSubCustomSelect_update"
+  },
+  {
+   "address": "0x8c1995bc",
+   "kind": "function",
+   "name": "TWindowSubCustomSelect_update_step_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubCustomSelect (class-attribution); all 1 caller(s) are TWindowSubCustomSelect_update"
+  },
+  {
    "address": "0x8c199628",
    "kind": "function",
    "name": "anti_tamper_check_then_load_difficulty",
@@ -22639,6 +24687,62 @@
    "evidence": "contains 2OPF patch sites 0x8c19b7e2/0x8c19b7fe of newserv FastTekker.s (\"skips wind-up sound at tekker window\")"
   },
   {
+   "address": "0x8c19ca38",
+   "kind": "function",
+   "name": "load_resource_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to load_resource (0x8c104e9c)"
+  },
+  {
+   "address": "0x8c19d24c",
+   "kind": "function",
+   "name": "TQuestThread_ctor_3_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to TQuestThread_ctor_3 (0x8c1736ac)"
+  },
+  {
+   "address": "0x8c19d430",
+   "kind": "function",
+   "name": "TQuestThread_ctor_3_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to TQuestThread_ctor_3 (0x8c1736ac)"
+  },
+  {
+   "address": "0x8c19d6f4",
+   "kind": "function",
+   "name": "TQuestThread_ctor_3_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to TQuestThread_ctor_3 (0x8c1736ac)"
+  },
+  {
+   "address": "0x8c19d8bc",
+   "kind": "function",
+   "name": "TQuestThread_ctor_3_wrapper_4",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to TQuestThread_ctor_3 (0x8c1736ac)"
+  },
+  {
+   "address": "0x8c19da54",
+   "kind": "function",
+   "name": "TQuestThread_ctor_3_wrapper_5",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to TQuestThread_ctor_3 (0x8c1736ac)"
+  },
+  {
+   "address": "0x8c19dd3c",
+   "kind": "function",
+   "name": "TQuestThread_ctor_3_wrapper_6",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to TQuestThread_ctor_3 (0x8c1736ac)"
+  },
+  {
    "address": "0x8c19de38",
    "kind": "function",
    "name": "TQuestColCtrl_dtor",
@@ -22669,6 +24773,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "stores vtable 0x8c272a28 (5 slots) and class-name string \"TQuestColCtrl\"; TObject layout name@+0/vtable@+0x18 (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c19fa30",
+   "kind": "function",
+   "name": "release_render_mode_four_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "20-byte function whose only reference is a call to release_render_mode_four (0x8c03ce90)"
   },
   {
    "address": "0x8c19fbe0",
@@ -23071,6 +25183,46 @@
    "evidence": "vtable slot 2 of TWindowSubItem (vtable 0x8c273770); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1a3b10",
+   "kind": "function",
+   "name": "TWindowSubItem_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubItem (class-attribution); all 1 caller(s) are TWindowSubItem_update"
+  },
+  {
+   "address": "0x8c1a3b78",
+   "kind": "function",
+   "name": "TWindowSubItem_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubItem (class-attribution); all 1 caller(s) are TWindowSubItem_update"
+  },
+  {
+   "address": "0x8c1a3c8c",
+   "kind": "function",
+   "name": "TWindowSubItem_update_step_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubItem (class-attribution); all 1 caller(s) are TWindowSubItem_update"
+  },
+  {
+   "address": "0x8c1a3d00",
+   "kind": "function",
+   "name": "TWindowSubItem_update_step_4",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubItem (class-attribution); all 1 caller(s) are TWindowSubItem_update"
+  },
+  {
+   "address": "0x8c1a3de4",
+   "kind": "function",
+   "name": "TWindowSubItem_update_step_5",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubItem (class-attribution); all 1 caller(s) are TWindowSubItem_update"
+  },
+  {
    "address": "0x8c1a3e04",
    "kind": "function",
    "name": "TObjNpcNHW00_dtor",
@@ -23109,6 +25261,22 @@
    "confidence": "high",
    "set": "curated",
    "evidence": "DAT enemy/NPC constructor table entry type 0x0026 (tables at 0x8c2e8ad8.. / 0x8c2edfc8.., 16-byte {type, factory, float 250000.0, 0}); newserv notes/dat-constructor-tables.txt type 0x0026 = TObjNpcARW00 (2OEF 8C1A45E4); constructs base …"
+  },
+  {
+   "address": "0x8c1a4184",
+   "kind": "function",
+   "name": "play_se_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "20-byte function whose only reference is a call to play_se (0x8c05fbf8)"
+  },
+  {
+   "address": "0x8c1a4264",
+   "kind": "function",
+   "name": "TObjNpcHFW00_vslot94",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 94 of TObjNpcHFW00_vtable_8c273c3c"
   },
   {
    "address": "0x8c1a4290",
@@ -23399,6 +25567,22 @@
    "evidence": "vtable slot 1 of TQuestScriptChecker (vtable 0x8c2745f8); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1a78f0",
+   "kind": "function",
+   "name": "TQuestScriptChecker_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TQuestScriptChecker (class-attribution); all 1 caller(s) are TQuestScriptChecker_update"
+  },
+  {
+   "address": "0x8c1a7964",
+   "kind": "function",
+   "name": "TQuestScriptChecker_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TQuestScriptChecker (class-attribution); all 1 caller(s) are TQuestScriptChecker_update"
+  },
+  {
    "address": "0x8c1a7d9c",
    "kind": "function",
    "name": "TQuestScriptChecker_v05",
@@ -23479,6 +25663,14 @@
    "evidence": "vtable slot 2 of TWindowSubTechnique (vtable 0x8c274620); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1a8f58",
+   "kind": "function",
+   "name": "TWindowSubTechnique_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubTechnique (class-attribution); all 1 caller(s) are TWindowSubTechnique_update"
+  },
+  {
    "address": "0x8c1a9c84",
    "kind": "function",
    "name": "TObjBgmCol_ctor",
@@ -23517,6 +25709,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 3 of TObjBgmCol (vtable 0x8c274690); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c1a9ec4",
+   "kind": "function",
+   "name": "TObjBgmCol_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjBgmCol (class-attribution); all 1 caller(s) are TObjBgmCol_update"
   },
   {
    "address": "0x8c1a9f90",
@@ -23733,6 +25933,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 0 of TItemShoot (vtable 0x8c2748d4); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c1abbcc",
+   "kind": "function",
+   "name": "TItemShoot_vslot01",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 1 of TItemShoot_vtable_8c2748d4 (inherited by 10 other vtables)"
   },
   {
    "address": "0x8c1abc6c",
@@ -24359,6 +26567,14 @@
    "evidence": "vtable slot 2 of TBoss4Type1 (vtable 0x8c274da4); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1b4d80",
+   "kind": "function",
+   "name": "TBoss4Type1_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TBoss4Type1 (class-attribution); all 1 caller(s) are TBoss4Type1_update"
+  },
+  {
    "address": "0x8c1b6610",
    "kind": "function",
    "name": "TBoss4Type1_v53",
@@ -24493,6 +26709,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TBoss4Type3 (vtable 0x8c274f10); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c1b893c",
+   "kind": "function",
+   "name": "object_random_fraction_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to object_random_fraction (0x8c04aa9c)"
   },
   {
    "address": "0x8c1bb0b8",
@@ -24717,6 +26941,22 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TWindowInputNumber (vtable 0x8c2754fc); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c1bda48",
+   "kind": "function",
+   "name": "TWindowInputNumber_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowInputNumber (class-attribution); all 1 caller(s) are TWindowInputNumber_update"
+  },
+  {
+   "address": "0x8c1bdaa4",
+   "kind": "function",
+   "name": "TWindowInputNumber_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowInputNumber (class-attribution); all 1 caller(s) are TWindowInputNumber_update"
   },
   {
    "address": "0x8c1bdf1c",
@@ -25381,6 +27621,22 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TObjCityAirCar_Car (vtable 0x8c2758dc); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c1c19d8",
+   "kind": "function",
+   "name": "play_se_wrapper_4",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "24-byte function whose only reference is a call to play_se (0x8c05fbf8)"
+  },
+  {
+   "address": "0x8c1c19f0",
+   "kind": "function",
+   "name": "play_se_wrapper_5",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "24-byte function whose only reference is a call to play_se (0x8c05fbf8)"
   },
   {
    "address": "0x8c1c1a80",
@@ -26087,6 +28343,14 @@
    "evidence": "vtable slot 1 of TOSparkMachine01 (vtable 0x8c276758); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1c6dc4",
+   "kind": "function",
+   "name": "TOSparkMachine01_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TOSparkMachine01 (class-attribution); all 1 caller(s) are TOSparkMachine01_update"
+  },
+  {
    "address": "0x8c1c6e90",
    "kind": "function",
    "name": "TOSparkMachine01_render_shadow",
@@ -26207,6 +28471,14 @@
    "evidence": "vtable slot 1 of TItemEffShield (vtable 0x8c2767fc); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1c7424",
+   "kind": "function",
+   "name": "TItemEffShield_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TItemEffShield (class-attribution); all 1 caller(s) are TItemEffShield_update"
+  },
+  {
    "address": "0x8c1c7464",
    "kind": "function",
    "name": "TItemEffShield_dtor",
@@ -26247,6 +28519,14 @@
    "evidence": "vtable slot 2 of TWindowQuantity (vtable 0x8c276818); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1ca1e8",
+   "kind": "function",
+   "name": "TWindowQuantity_render_part",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowQuantity (class-attribution); all 1 caller(s) are TWindowQuantity_render"
+  },
+  {
    "address": "0x8c1cb998",
    "kind": "function",
    "name": "TWindowRoom_ctor",
@@ -26277,6 +28557,86 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TWindowRoom (vtable 0x8c276854) and of 1 derived vtables; slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c1cbaf4",
+   "kind": "function",
+   "name": "TWindowRoom_render_part",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowRoom (class-attribution); all 1 caller(s) are TWindowRoom_render"
+  },
+  {
+   "address": "0x8c1cbb20",
+   "kind": "function",
+   "name": "game_mode_02_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 2 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c1cbb48",
+   "kind": "function",
+   "name": "game_mode_28_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 28 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c1cbb70",
+   "kind": "function",
+   "name": "game_mode_10_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 10 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c1cbb98",
+   "kind": "function",
+   "name": "game_mode_11_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 11 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c1cbbc0",
+   "kind": "function",
+   "name": "game_mode_12_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 12 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c1cbbe8",
+   "kind": "function",
+   "name": "game_mode_13_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 13 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c1cbc10",
+   "kind": "function",
+   "name": "game_mode_34_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 34 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c1cbc38",
+   "kind": "function",
+   "name": "game_mode_33_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 33 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c1cbc60",
+   "kind": "function",
+   "name": "game_mode_08_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 8 in g_game_mode_table_8c2e3258"
   },
   {
    "address": "0x8c1cbc88",
@@ -26541,6 +28901,30 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TWindowSubEquip (vtable 0x8c276e28); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c1d4b78",
+   "kind": "function",
+   "name": "TWindowSubEquip_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubEquip (class-attribution); all 1 caller(s) are TWindowSubEquip_update"
+  },
+  {
+   "address": "0x8c1d4c44",
+   "kind": "function",
+   "name": "TWindowSubEquip_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubEquip (class-attribution); all 1 caller(s) are TWindowSubEquip_update"
+  },
+  {
+   "address": "0x8c1d4cb0",
+   "kind": "function",
+   "name": "TWindowSubEquip_update_step_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubEquip (class-attribution); all 1 caller(s) are TWindowSubEquip_update"
   },
   {
    "address": "0x8c1d4cdc",
@@ -27159,6 +29543,22 @@
    "evidence": "vtable slot 2 of TWindowChat (vtable 0x8c277354); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1dcf9c",
+   "kind": "function",
+   "name": "TWindowChat_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowChat (class-attribution); all 1 caller(s) are TWindowChat_update"
+  },
+  {
+   "address": "0x8c1dde54",
+   "kind": "function",
+   "name": "hierarchy_is_active_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to hierarchy_is_active (0x8c03347c)"
+  },
+  {
    "address": "0x8c1ddec8",
    "kind": "function",
    "name": "TOButterflyDF_ctor",
@@ -27239,6 +29639,30 @@
    "evidence": "vtable slot 2 of TWindowKeyBoardSoft (vtable 0x8c277434); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1decf0",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowKeyBoardSoft (class-attribution); all 1 caller(s) are TWindowKeyBoardSoft_update"
+  },
+  {
+   "address": "0x8c1def88",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowKeyBoardSoft (class-attribution); all 1 caller(s) are TWindowKeyBoardSoft_update"
+  },
+  {
+   "address": "0x8c1dfb18",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_update_step_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowKeyBoardSoft (class-attribution); all 1 caller(s) are TWindowKeyBoardSoft_update"
+  },
+  {
    "address": "0x8c1dfd28",
    "kind": "function",
    "name": "TWindowKeyBoardHard_ctor",
@@ -27269,6 +29693,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TWindowKeyBoardHard (vtable 0x8c277454); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c1e0000",
+   "kind": "function",
+   "name": "TWindowKeyBoardHard_init",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowKeyBoardHard (class-attribution); all 1 caller(s) are TWindowKeyBoardHard_ctor"
   },
   {
    "address": "0x8c1e0f10",
@@ -27303,6 +29735,174 @@
    "evidence": "vtable slot 2 of TWindowKeyBoardBase (vtable 0x8c277474); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1e283c",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state00",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 0 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e29ec",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state19",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 19 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e2a18",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state20",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 20 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e2bcc",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state01",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 1 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e2d64",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state15",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 15 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e2dc4",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state16",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 16 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e2e84",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state18",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 18 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e2f44",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state17",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 17 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e305c",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state03",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 3 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e30c8",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state04",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 4 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e3134",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state05",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 5 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e31a0",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state06",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 6 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e31f0",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state07",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 7 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e3240",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state08",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 8 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e334c",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state09",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 9 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e3458",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state10",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 10 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e34a8",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state11",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 11 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e34f8",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state12",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 12 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e3548",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state13",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 13 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e3598",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state14",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 14 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
+   "address": "0x8c1e3878",
+   "kind": "function",
+   "name": "TWindowKeyBoardSoft_state02",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "entry 2 of member_function_table_8c32b02c (CodeWarrior member-function table); its runtime copy is read only by TWindowKeyBoardSoft code (1 function(s))"
+  },
+  {
    "address": "0x8c1e3e0c",
    "kind": "function",
    "name": "load_assets_o_container_ancient",
@@ -27317,6 +29917,38 @@
    "confidence": "medium",
    "set": "extended",
    "evidence": "paired release slot after 0x8c1e3e0c in the same per-area asset table(s) 0x8c2ecd18,0x8c2ece20"
+  },
+  {
+   "address": "0x8c1e4160",
+   "kind": "function",
+   "name": "TOContainerAncientItemCommon_vslot87",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 87 of TOContainerAncientItemCommon_vtable_8c277bcc"
+  },
+  {
+   "address": "0x8c1e4190",
+   "kind": "function",
+   "name": "TOContainerAncientItemCommon_vslot88",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 88 of TOContainerAncientItemCommon_vtable_8c277bcc"
+  },
+  {
+   "address": "0x8c1e4260",
+   "kind": "function",
+   "name": "TOContainerAncientItemCommon_vslot03",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 3 of TOContainerAncientItemCommon_vtable_8c277bcc"
+  },
+  {
+   "address": "0x8c1e4264",
+   "kind": "function",
+   "name": "TOContainerAncientItemCommon_vslot86",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 86 of TOContainerAncientItemCommon_vtable_8c277bcc"
   },
   {
    "address": "0x8c1e4424",
@@ -27367,6 +29999,62 @@
    "evidence": "vtable slot 0 of TOContainerAncientEnemy (vtable 0x8c277788); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1e49f0",
+   "kind": "function",
+   "name": "TOContainerAncientEnemy_vslot87",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 87 of TOContainerAncientEnemy_vtable_8c277788 (inherited by 1 other vtables)"
+  },
+  {
+   "address": "0x8c1e4a20",
+   "kind": "function",
+   "name": "TOContainerAncientEnemy_vslot88",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 88 of TOContainerAncientEnemy_vtable_8c277788 (inherited by 1 other vtables)"
+  },
+  {
+   "address": "0x8c1e4af0",
+   "kind": "function",
+   "name": "TOContainerAncientEnemy_vslot03",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 3 of TOContainerAncientEnemy_vtable_8c277788 (inherited by 1 other vtables)"
+  },
+  {
+   "address": "0x8c1e4af4",
+   "kind": "function",
+   "name": "TOContainerAncientEnemy_vslot09",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 9 of TOContainerAncientEnemy_vtable_8c277788 (inherited by 1 other vtables)"
+  },
+  {
+   "address": "0x8c1e4b64",
+   "kind": "function",
+   "name": "TOContainerAncientEnemy_vslot24",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 24 of TOContainerAncientEnemy_vtable_8c277788 (inherited by 1 other vtables)"
+  },
+  {
+   "address": "0x8c1e4c40",
+   "kind": "function",
+   "name": "TOContainerAncientEnemy_vslot86",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 86 of TOContainerAncientEnemy_vtable_8c277788 (inherited by 1 other vtables)"
+  },
+  {
+   "address": "0x8c1e4e00",
+   "kind": "function",
+   "name": "TOContainerAncientEnemy_vslot05",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 5 of TOContainerAncientEnemy_vtable_8c277788 (inherited by 1 other vtables)"
+  },
+  {
    "address": "0x8c1e4e44",
    "kind": "function",
    "name": "TOContainerAncientEnemyCommon_dtor",
@@ -27413,6 +30101,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TWindowMakeTeam (vtable 0x8c277ea4); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c1e5820",
+   "kind": "function",
+   "name": "TWindowMakeTeam_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowMakeTeam (class-attribution); all 1 caller(s) are TWindowMakeTeam_update"
   },
   {
    "address": "0x8c1e6050",
@@ -27503,6 +30199,14 @@
    "evidence": "vtable slot 2 of TAdSoniclogo (vtable 0x8c277f0c); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c1e64e0",
+   "kind": "function",
+   "name": "request_game_mode_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "16-byte function whose only reference is a call to request_game_mode (0x8c01c1a4)"
+  },
+  {
    "address": "0x8c1e653c",
    "kind": "function",
    "name": "mode_sega_logo_init",
@@ -27525,6 +30229,14 @@
    "confidence": "medium",
    "set": "curated",
    "evidence": "g_game_mode_table[1].exit"
+  },
+  {
+   "address": "0x8c1e6a9c",
+   "kind": "function",
+   "name": "game_mode_31_frame",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 31 in g_game_mode_table_8c2e3258"
   },
   {
    "address": "0x8c1e77f4",
@@ -27583,12 +30295,28 @@
    "evidence": "only in vtable slot 9 of TObjWarpBoss (vtable 0x8c277f60); slot role unknown"
   },
   {
+   "address": "0x8c1e7e18",
+   "kind": "function",
+   "name": "TObjWarpBoss_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjWarpBoss (class-attribution); all 1 caller(s) are TObjWarpBoss_update"
+  },
+  {
    "address": "0x8c1e8bd0",
    "kind": "function",
    "name": "handle_6x6A_set_boss_warp_flags",
    "confidence": "high",
    "set": "curated",
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x6A (flags 7) to this address; newserv CommandFormats.hh: \"Set boss warp flags (not valid on Episode 3)\""
+  },
+  {
+   "address": "0x8c1e8d88",
+   "kind": "function",
+   "name": "get_game_mode_wrapper_5",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to get_game_mode (0x8c01c25c)"
   },
   {
    "address": "0x8c1e92f8",
@@ -28199,6 +30927,22 @@
    "evidence": "only in vtable slot 7 of THunterGuildSeqOnline_Server (vtable 0x8c2780f4); slot role unknown"
   },
   {
+   "address": "0x8c208d00",
+   "kind": "function",
+   "name": "set_global_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to set_global (0x8c01c21c)"
+  },
+  {
+   "address": "0x8c208d20",
+   "kind": "function",
+   "name": "set_global_wrapper_4",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "28-byte function whose only reference is a call to set_global (0x8c01c21c)"
+  },
+  {
    "address": "0x8c208d3c",
    "kind": "function",
    "name": "THunterGuildSeqOnline_Client_ctor",
@@ -28311,6 +31055,46 @@
    "evidence": "only in vtable slot 42 of TItemEquipBase (vtable 0x8c278154); slot role unknown"
   },
   {
+   "address": "0x8c209fe0",
+   "kind": "function",
+   "name": "TItemProShield_vslot22",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 22 in 152 vtables (base TItemProShield: all 152 user vtables extend its vtable and it adds no slot function of its own)"
+  },
+  {
+   "address": "0x8c20a0d8",
+   "kind": "function",
+   "name": "TItemProShield_vslot27",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 27 in 152 vtables (base TItemProShield: all 152 user vtables extend its vtable and it adds no slot function of its own)"
+  },
+  {
+   "address": "0x8c20a228",
+   "kind": "function",
+   "name": "TItemProShield_vslot25",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 25 in 152 vtables (base TItemProShield: all 152 user vtables extend its vtable and it adds no slot function of its own)"
+  },
+  {
+   "address": "0x8c20a35c",
+   "kind": "function",
+   "name": "TItemProShield_vslot23",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 23 in 152 vtables (base TItemProShield: all 152 user vtables extend its vtable and it adds no slot function of its own)"
+  },
+  {
+   "address": "0x8c20a430",
+   "kind": "function",
+   "name": "TItemProShield_vslot18",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 18 in 152 vtables (base TItemProShield: all 152 user vtables extend its vtable and it adds no slot function of its own)"
+  },
+  {
    "address": "0x8c20aef4",
    "kind": "function",
    "name": "handle_6x74_word_select",
@@ -28333,6 +31117,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 0 of TWindowDD (vtable 0x8c27821c); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c21225c",
+   "kind": "function",
+   "name": "play_se_wrapper_6",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "20-byte function whose only reference is a call to play_se (0x8c05fbf8)"
   },
   {
    "address": "0x8c21272c",
@@ -28493,6 +31285,22 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TWindowSubShortMail (vtable 0x8c2782b8); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c217728",
+   "kind": "function",
+   "name": "TWindowSubShortMail_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubShortMail (class-attribution); all 1 caller(s) are TWindowSubShortMail_update"
+  },
+  {
+   "address": "0x8c2177c0",
+   "kind": "function",
+   "name": "TWindowSubShortMail_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubShortMail (class-attribution); all 1 caller(s) are TWindowSubShortMail_update"
   },
   {
    "address": "0x8c2177f0",
@@ -28999,6 +31807,14 @@
    "evidence": "vtable slot 2 of TQuestListOnline (vtable 0x8c278610); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c21e29c",
+   "kind": "function",
+   "name": "draw_view_nodes_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to draw_view_nodes (0x8c0e1c48)"
+  },
+  {
    "address": "0x8c21e40c",
    "kind": "function",
    "name": "TWindowSubQuestBoard_ctor",
@@ -29063,6 +31879,38 @@
    "evidence": "vtable slot 2 of TWindowSubQuestBoardSelect (vtable 0x8c27869c); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c21e810",
+   "kind": "function",
+   "name": "TWindowSubQuestBoardSelect_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubQuestBoardSelect (class-attribution); all 1 caller(s) are TWindowSubQuestBoardSelect_update"
+  },
+  {
+   "address": "0x8c21e920",
+   "kind": "function",
+   "name": "TWindowSubQuestBoardSelect_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubQuestBoardSelect (class-attribution); all 1 caller(s) are TWindowSubQuestBoardSelect_update"
+  },
+  {
+   "address": "0x8c21e960",
+   "kind": "function",
+   "name": "TWindowSubQuestBoardSelect_update_step_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubQuestBoardSelect (class-attribution); all 1 caller(s) are TWindowSubQuestBoardSelect_update"
+  },
+  {
+   "address": "0x8c21eb78",
+   "kind": "function",
+   "name": "TWindowSubQuestBoardSelect_init",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubQuestBoardSelect (class-attribution); all 1 caller(s) are TWindowSubQuestBoardSelect_ctor"
+  },
+  {
    "address": "0x8c21edc8",
    "kind": "function",
    "name": "load_player_ending_motion",
@@ -29077,6 +31925,14 @@
    "confidence": "high",
    "set": "curated",
    "evidence": "loads \"symbolchat.dat\""
+  },
+  {
+   "address": "0x8c21f32c",
+   "kind": "function",
+   "name": "get_field_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "12-byte function whose only reference is a call to get_field (0x8c21f338)"
   },
   {
    "address": "0x8c21f700",
@@ -29151,6 +32007,30 @@
    "evidence": "vtable slot 2 of TWindowSubSymbolChatFaceType (vtable 0x8c278840); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c220460",
+   "kind": "function",
+   "name": "TWindowSubSymbolChatFaceType_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubSymbolChatFaceType (class-attribution); all 1 caller(s) are TWindowSubSymbolChatFaceType_update"
+  },
+  {
+   "address": "0x8c2205d0",
+   "kind": "function",
+   "name": "TWindowSubSymbolChatFaceType_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubSymbolChatFaceType (class-attribution); all 1 caller(s) are TWindowSubSymbolChatFaceType_update"
+  },
+  {
+   "address": "0x8c220610",
+   "kind": "function",
+   "name": "TWindowSubSymbolChatFaceType_update_step_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubSymbolChatFaceType (class-attribution); all 1 caller(s) are TWindowSubSymbolChatFaceType_update"
+  },
+  {
    "address": "0x8c220664",
    "kind": "function",
    "name": "TObjWarpBoss03_ctor",
@@ -29189,6 +32069,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 3 of TObjWarpBoss03 (vtable 0x8c278860); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c220b5c",
+   "kind": "function",
+   "name": "request_resource_release_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to request_resource_release (0x8c0dc7f4)"
   },
   {
    "address": "0x8c221084",
@@ -29255,6 +32143,14 @@
    "evidence": "references \"quest_vm_load\" (VMU quest download list)"
   },
   {
+   "address": "0x8c223208",
+   "kind": "function",
+   "name": "set_global_wrapper_5",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to set_global (0x8c01c21c)"
+  },
+  {
    "address": "0x8c2232f8",
    "kind": "function",
    "name": "TItemLockCountCtrl_ctor",
@@ -29271,6 +32167,22 @@
    "evidence": "vtable slot 0 of TItemLockCountCtrl (vtable 0x8c278948); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c223640",
+   "kind": "function",
+   "name": "lookup_low_id_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to lookup_low_id (0x8c021ef8)"
+  },
+  {
+   "address": "0x8c223660",
+   "kind": "function",
+   "name": "lookup_low_id_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to lookup_low_id (0x8c021ef8)"
+  },
+  {
    "address": "0x8c2236d0",
    "kind": "function",
    "name": "TItemTimerEvent_ctor",
@@ -29285,6 +32197,22 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 0 of TItemTimerEvent (vtable 0x8c278aa8); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c223760",
+   "kind": "function",
+   "name": "TItemTimerEvent_update",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "slot 1 of TItemTimerEvent_vtable_8c278aa8; TObject slot roles dtor/update/render/render_shadow"
+  },
+  {
+   "address": "0x8c2237b0",
+   "kind": "function",
+   "name": "TItemTimerEvent_vslot06",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 6 of TItemTimerEvent_vtable_8c278aa8"
   },
   {
    "address": "0x8c223dac",
@@ -29319,6 +32247,22 @@
    "evidence": "vtable slot 2 of TWindowSubSymbolChatPartsSet (vtable 0x8c278acc); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c224438",
+   "kind": "function",
+   "name": "TWindowSubSymbolChatPartsSet_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubSymbolChatPartsSet (class-attribution); all 1 caller(s) are TWindowSubSymbolChatPartsSet_update"
+  },
+  {
+   "address": "0x8c22447c",
+   "kind": "function",
+   "name": "TWindowSubSymbolChatPartsSet_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubSymbolChatPartsSet (class-attribution); all 1 caller(s) are TWindowSubSymbolChatPartsSet_update"
+  },
+  {
    "address": "0x8c2247bc",
    "kind": "function",
    "name": "TWindowSubSymbolChatParts_ctor",
@@ -29349,6 +32293,22 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TWindowSubSymbolChatParts (vtable 0x8c278aec); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c225228",
+   "kind": "function",
+   "name": "TWindowSubSymbolChatParts_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubSymbolChatParts (class-attribution); all 1 caller(s) are TWindowSubSymbolChatParts_update"
+  },
+  {
+   "address": "0x8c225338",
+   "kind": "function",
+   "name": "TWindowSubSymbolChatParts_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubSymbolChatParts (class-attribution); all 1 caller(s) are TWindowSubSymbolChatParts_update"
   },
   {
    "address": "0x8c225620",
@@ -29943,6 +32903,22 @@
    "evidence": "vtable slot 2 of TWindowSoundBalance (vtable 0x8c278e10); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c22bc80",
+   "kind": "function",
+   "name": "TWindowSoundBalance_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSoundBalance (class-attribution); all 1 caller(s) are TWindowSoundBalance_update"
+  },
+  {
+   "address": "0x8c22bcb0",
+   "kind": "function",
+   "name": "TWindowSoundBalance_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSoundBalance (class-attribution); all 1 caller(s) are TWindowSoundBalance_update"
+  },
+  {
    "address": "0x8c22bdac",
    "kind": "function",
    "name": "load_item_kt_table",
@@ -29981,6 +32957,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 1 of TItemTexLoad (vtable 0x8c278e30); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c22c1c4",
+   "kind": "function",
+   "name": "TItemTexLoad_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TItemTexLoad (class-attribution); all 1 caller(s) are TItemTexLoad_update"
   },
   {
    "address": "0x8c22c2b8",
@@ -30047,6 +33031,14 @@
    "evidence": "vtable slot 2 of TWindowLoadItemTexture (vtable 0x8c278e84); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c22cd34",
+   "kind": "function",
+   "name": "TWindowLoadItemTexture_render_part",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowLoadItemTexture (class-attribution); all 1 caller(s) are TWindowLoadItemTexture_render"
+  },
+  {
    "address": "0x8c22d5c8",
    "kind": "function",
    "name": "TQuestVmDownLoadServer_ctor",
@@ -30071,12 +33063,36 @@
    "evidence": "vtable slot 1 of TQuestVmDownLoadServer (vtable 0x8c278ea4); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c22dd38",
+   "kind": "function",
+   "name": "TQuestVmDownLoadServer_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TQuestVmDownLoadServer (class-attribution); all 1 caller(s) are TQuestVmDownLoadServer_update"
+  },
+  {
+   "address": "0x8c22de98",
+   "kind": "function",
+   "name": "TQuestVmDownLoadServer_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TQuestVmDownLoadServer (class-attribution); all 1 caller(s) are TQuestVmDownLoadServer_update"
+  },
+  {
    "address": "0x8c22e0c4",
    "kind": "function",
    "name": "build_download_vmu_header",
    "confidence": "medium",
    "set": "curated",
    "evidence": "fills a VMU file header with description \"PSOV2/DOWNLOAD\" (downloaded quests)"
+  },
+  {
+   "address": "0x8c22e7c8",
+   "kind": "function",
+   "name": "TQuestVmDownLoadServer_update_step_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TQuestVmDownLoadServer (class-attribution); all 1 caller(s) are TQuestVmDownLoadServer_update"
   },
   {
    "address": "0x8c22eb58",
@@ -30151,6 +33167,38 @@
    "evidence": "vtable slot 2 of TWindowDeposit (vtable 0x8c278ee0); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c22f164",
+   "kind": "function",
+   "name": "TWindowDeposit_render_part",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowDeposit (class-attribution); all 1 caller(s) are TWindowDeposit_render"
+  },
+  {
+   "address": "0x8c230308",
+   "kind": "function",
+   "name": "game_mode_30_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 30 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c230418",
+   "kind": "function",
+   "name": "game_mode_30_frame",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 30 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c2304cc",
+   "kind": "function",
+   "name": "game_mode_30_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 30 in g_game_mode_table_8c2e3258"
+  },
+  {
    "address": "0x8c230538",
    "kind": "function",
    "name": "TWindowSubMagPhoton_ctor",
@@ -30181,6 +33229,30 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TWindowSubMagPhoton (vtable 0x8c278f38); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c2306c4",
+   "kind": "function",
+   "name": "TWindowSubMagPhoton_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubMagPhoton (class-attribution); all 1 caller(s) are TWindowSubMagPhoton_update"
+  },
+  {
+   "address": "0x8c2307ac",
+   "kind": "function",
+   "name": "TWindowSubMagPhoton_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubMagPhoton (class-attribution); all 1 caller(s) are TWindowSubMagPhoton_update"
+  },
+  {
+   "address": "0x8c2307dc",
+   "kind": "function",
+   "name": "TWindowSubMagPhoton_update_step_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TWindowSubMagPhoton (class-attribution); all 1 caller(s) are TWindowSubMagPhoton_update"
   },
   {
    "address": "0x8c2308d4",
@@ -30223,6 +33295,14 @@
    "evidence": "vtable slot 2 of TObjDFEnding (vtable 0x8c278f58); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c231e98",
+   "kind": "function",
+   "name": "pair_grid_view_ready_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to pair_grid_view_ready (0x8c119cf8)"
+  },
+  {
    "address": "0x8c2327cc",
    "kind": "function",
    "name": "load_prime_prs",
@@ -30245,6 +33325,22 @@
    "confidence": "medium",
    "set": "curated",
    "evidence": "maps a hex digit through \"0123456789ABCDEF\" -> \"5A76D2C1F08B3E94\" substitution (serial/access-key obfuscation)"
+  },
+  {
+   "address": "0x8c233170",
+   "kind": "function",
+   "name": "request_resource_release_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to request_resource_release (0x8c0dc7f4)"
+  },
+  {
+   "address": "0x8c233190",
+   "kind": "function",
+   "name": "request_resource_release_wrapper_3",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "32-byte function whose only reference is a call to request_resource_release (0x8c0dc7f4)"
   },
   {
    "address": "0x8c2348e0",
@@ -30381,6 +33477,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TChallenge (vtable 0x8c279200); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c237cb0",
+   "kind": "function",
+   "name": "TChallenge_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TChallenge (class-attribution); all 1 caller(s) are TChallenge_update"
   },
   {
    "address": "0x8c2395f0",
@@ -33079,6 +36183,14 @@
    "evidence": "DAT enemy/NPC constructor table entry type 0x0047 (tables at 0x8c2e8ad8.. / 0x8c2edfc8.., 16-byte {type, factory, float 250000.0, 0}); newserv notes/dat-constructor-tables.txt type 0x0047 = TObjNpcRico (2OEF 8C250DDC); constructs base …"
   },
   {
+   "address": "0x8c245a88",
+   "kind": "function",
+   "name": "play_se_wrapper_7",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "20-byte function whose only reference is a call to play_se (0x8c05fbf8)"
+  },
+  {
    "address": "0x8c245a9c",
    "kind": "function",
    "name": "TEffStarLightChild_ctor",
@@ -33189,6 +36301,14 @@
    "confidence": "high",
    "set": "curated",
    "evidence": "subcommand table @0x8c2ed3dc ({u16 cmd,u16 flags,u32 handler}, 147 entries, terminated by 6x00) maps 6x96 (flags 4) to this address; newserv CommandFormats.hh: \"Unknown (not valid on Episode 3)\""
+  },
+  {
+   "address": "0x8c247d90",
+   "kind": "function",
+   "name": "get_field_wrapper_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "28-byte function whose only reference is a call to get_field (0x8c247ea4)"
   },
   {
    "address": "0x8c248738",
@@ -33695,6 +36815,14 @@
    "evidence": "only in vtable slot 11 of TObjCamera (vtable 0x8c27d6c8); slot role unknown"
   },
   {
+   "address": "0x8c24a6ec",
+   "kind": "function",
+   "name": "TObjCamera_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjCamera (class-attribution); all 1 caller(s) are TObjCamera_update"
+  },
+  {
    "address": "0x8c24a784",
    "kind": "function",
    "name": "load_assets_fe_obj_tutate",
@@ -33959,6 +37087,14 @@
    "evidence": "vtable slot 2 of TODoorVS2Door01 (vtable 0x8c27d7f8); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c24ba5c",
+   "kind": "function",
+   "name": "TODoorVS2Door01_render_part",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TODoorVS2Door01 (class-attribution); all 1 caller(s) are TODoorVS2Door01_render"
+  },
+  {
    "address": "0x8c24ba8c",
    "kind": "function",
    "name": "TODoorVS2Door01_v17",
@@ -34069,6 +37205,22 @@
    "confidence": "medium",
    "set": "extended",
    "evidence": "paired release slot after 0x8c24bfb8 in the same per-area asset table(s) 0x8c2ed1a8"
+  },
+  {
+   "address": "0x8c24c01c",
+   "kind": "function",
+   "name": "TOVS2_vslot02",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 2 of TOVS2_vtable_8c27db88 (inherited by 5 other vtables)"
+  },
+  {
+   "address": "0x8c24c09c",
+   "kind": "function",
+   "name": "TOVS2_vslot15",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "slot 15 of TOVS2_vtable_8c27db88 (inherited by 5 other vtables)"
   },
   {
    "address": "0x8c24c0a0",
@@ -34197,6 +37349,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 1 of TOVS2Wall01 (vtable 0x8c27d878); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c24c90c",
+   "kind": "function",
+   "name": "TOVS2Wall01_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TOVS2Wall01 (class-attribution); all 1 caller(s) are TOVS2Wall01_update"
   },
   {
    "address": "0x8c24c968",
@@ -37143,6 +40303,22 @@
    "evidence": "only in vtable slot 9 of TObjCityMainWarpChallenge (vtable 0x8c281b10); slot role unknown"
   },
   {
+   "address": "0x8c259b24",
+   "kind": "function",
+   "name": "TObjCityMainWarpChallenge_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjCityMainWarpChallenge (class-attribution); all 1 caller(s) are TObjCityMainWarpChallenge_update"
+  },
+  {
+   "address": "0x8c25aa74",
+   "kind": "function",
+   "name": "get_game_mode_wrapper_6",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to get_game_mode (0x8c01c25c)"
+  },
+  {
    "address": "0x8c25aac4",
    "kind": "function",
    "name": "TAdPSOPlay_ctor",
@@ -37173,6 +40349,22 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TAdPSOPlay (vtable 0x8c281b68); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c25ad8c",
+   "kind": "function",
+   "name": "TAdPSOPlay_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TAdPSOPlay (class-attribution); all 1 caller(s) are TAdPSOPlay_update"
+  },
+  {
+   "address": "0x8c25adc8",
+   "kind": "function",
+   "name": "TAdPSOPlay_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TAdPSOPlay (class-attribution); all 1 caller(s) are TAdPSOPlay_update"
   },
   {
    "address": "0x8c25af94",
@@ -37255,6 +40447,22 @@
    "evidence": "vtable slot 1 of TObjWarnChime (vtable 0x8c281be0); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c25c51c",
+   "kind": "function",
+   "name": "TObjWarnChime_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjWarnChime (class-attribution); all 1 caller(s) are TObjWarnChime_update"
+  },
+  {
+   "address": "0x8c25c540",
+   "kind": "function",
+   "name": "TObjWarnChime_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjWarnChime (class-attribution); all 1 caller(s) are TObjWarnChime_update"
+  },
+  {
    "address": "0x8c25c710",
    "kind": "function",
    "name": "TItemReverseTechCtrl_ctor",
@@ -37285,6 +40493,30 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 0 of TItemReverseTechCtrl (vtable 0x8c281bfc); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c25c8f4",
+   "kind": "function",
+   "name": "game_mode_32_init",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "init of game mode(s) 32 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c25ca3c",
+   "kind": "function",
+   "name": "game_mode_32_exit",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "exit of game mode(s) 32 in g_game_mode_table_8c2e3258"
+  },
+  {
+   "address": "0x8c25ca84",
+   "kind": "function",
+   "name": "game_mode_32_frame",
+   "confidence": "high",
+   "set": "derived",
+   "evidence": "frame of game mode(s) 32 in g_game_mode_table_8c2e3258"
   },
   {
    "address": "0x8c25cc58",
@@ -37551,6 +40783,22 @@
    "evidence": "vtable slot 1 of TObjTagChallenge (vtable 0x8c281d1c); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
   },
   {
+   "address": "0x8c25ed88",
+   "kind": "function",
+   "name": "request_resource_release_wrapper_4",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to request_resource_release (0x8c0dc7f4)"
+  },
+  {
+   "address": "0x8c25ee08",
+   "kind": "function",
+   "name": "request_resource_release_wrapper_5",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "36-byte function whose only reference is a call to request_resource_release (0x8c0dc7f4)"
+  },
+  {
    "address": "0x8c25f16c",
    "kind": "function",
    "name": "TObjSoloPlayWin_create",
@@ -37613,6 +40861,38 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 2 of TAdHunLicence (vtable 0x8c281da8); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c25f7dc",
+   "kind": "function",
+   "name": "TAdHunLicence_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TAdHunLicence (class-attribution); all 1 caller(s) are TAdHunLicence_update"
+  },
+  {
+   "address": "0x8c25f818",
+   "kind": "function",
+   "name": "TAdHunLicence_update_step_2",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TAdHunLicence (class-attribution); all 1 caller(s) are TAdHunLicence_update"
+  },
+  {
+   "address": "0x8c25f860",
+   "kind": "function",
+   "name": "select_mode16_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "20-byte function whose only reference is a call to select_mode16 (0x8c1cc600)"
+  },
+  {
+   "address": "0x8c25f874",
+   "kind": "function",
+   "name": "select_mode10_wrapper",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "20-byte function whose only reference is a call to select_mode10 (0x8c1cc588)"
   },
   {
    "address": "0x8c25f8a0",
@@ -37701,6 +40981,14 @@
    "confidence": "high",
    "set": "extended",
    "evidence": "vtable slot 1 of TObjDeadListWin (vtable 0x8c281e18); slot meaning per TObject vtable {dtor, update, render, render_shadow} (newserv PSOGCObjectGraph.cc)"
+  },
+  {
+   "address": "0x8c2600e0",
+   "kind": "function",
+   "name": "TObjDeadListWin_update_step",
+   "confidence": "medium",
+   "set": "derived",
+   "evidence": "class TObjDeadListWin (class-attribution); all 1 caller(s) are TObjDeadListWin_update"
   },
   {
    "address": "0x8c26080c",

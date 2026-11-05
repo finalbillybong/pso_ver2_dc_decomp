@@ -33,7 +33,7 @@ struct Arg0_398 {
 };
 extern int angle_difference(int, int);
 extern int signed_angle_delta(int, int);
-void operation_8c1613fc(Object *o)
+void TObjEnePanBARA_state32_8c1613fc(Object *o)
 {
     int t1;
     int t2;

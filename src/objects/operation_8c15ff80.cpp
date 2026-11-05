@@ -45,7 +45,7 @@ extern "C" void create_effect_777c(void *, int);
 extern "C" void create_effect_at_8c108394(void *, int);
 extern "C" void create_resource_effect_8c108170(void *, int);
 extern "C" int call_8c18e6fc(Frame *);
-extern "C" void operation_8c15ff80(Object *o)
+extern "C" void TObjEnePanBARA_state15_8c15ff80(Object *o)
 {
     Frame frame;
     float v4;

@@ -12,7 +12,7 @@ extern void operation_8c1dd128(void *);
 extern void operation_8c0264ac(void);
 extern int operation_8c1dd520(void *);
 extern int call_8c1dd57c(TWindowChat *);
-void operation_8c1dcf9c(TWindowChat *o)
+void TWindowChat_update_step_8c1dcf9c(TWindowChat *o)
 {
     int t1;
     int t2;

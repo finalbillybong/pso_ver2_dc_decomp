@@ -201,7 +201,7 @@ extern "C" void clear_words_8c053d64(void);
 extern "C" void call_8c0521a0(Object *);
 extern "C" void call_8c05228c(Object *);
 extern "C" void operation_8c05428c(void *, int, int);
-extern "C" void operation_8c0fcff4(Object *o)
+extern "C" void TOMine_vslot01_8c0fcff4(Object *o)
 {
     int v3;
     S_vv19 *v19;

@@ -1,6 +1,6 @@
 #include "src/include/classes/TWindowDeposit.h"
 extern void call_8c19a0bc(int, int, int, float);
-void operation_8c22f164(TWindowDeposit *o, int a1)
+void TWindowDeposit_render_part_8c22f164(TWindowDeposit *o, int a1)
 {
     call_8c19a0bc(a1, a1 + 0x10, 0, o->f68);
 }

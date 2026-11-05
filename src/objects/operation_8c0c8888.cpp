@@ -162,7 +162,7 @@ struct Arg0_40c {
     int f24;
 };
 extern "C" int operation_8c03d338(void);
-extern "C" int operation_8c05bae8(void);
+extern "C" int get_game_mode_wrapper_3_8c05bae8(void);
 extern "C" void call_8c04a9e0(Object *, Frame *);
 extern "C" void call_8c05b9dc(Object *);
 extern "C" void call_8c3827d8(Arg0_28 *);
@@ -190,7 +190,7 @@ extern "C" void operation_8c0c8888(Object *o)
         o->v111();
         return;
     }
-    t2 = operation_8c05bae8();
+    t2 = get_game_mode_wrapper_3_8c05bae8();
     if (t2 != 0) {
         v2 = (float)*(float *)0x8c284bd4;
     } else {

@@ -7,15 +7,15 @@ extern void update_mode_8c0eea34(void);
 extern void operation_8c107430(void);
 extern void operation_8c0eeb8c(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c1074a4(void);
 extern void destroy_color_rise_8c10766c(void);
@@ -33,15 +33,15 @@ VirtualFunction const vt_8c269828[18] = {
     operation_8c107430,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c1074a4
 };

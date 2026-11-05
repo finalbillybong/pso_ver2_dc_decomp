@@ -3,7 +3,7 @@ typedef struct TAdPSOPlay_p28 TAdPSOPlay_p28;
 typedef struct TAdPSOPlay_p2c TAdPSOPlay_p2c;
 extern void request_resource_release(void *);
 extern int operation_8c1571f4(void *);
-void operation_8c25ad8c(TAdPSOPlay *o)
+void TAdPSOPlay_update_step_8c25ad8c(TAdPSOPlay *o)
 {
     int t1;
     if (o->f28 != 0) {

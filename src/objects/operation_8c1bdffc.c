@@ -28,7 +28,7 @@ struct S_g8c46fe20_54 {
 };
 extern void call_8c1bde30(void);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(TObjCityMainWarp_pe8 *, void *, int, int);
+extern void add_wrapper_8c156d30(TObjCityMainWarp_pe8 *, void *, int, int);
 extern void call_8c156f50(TObjCityMainWarp_pe8 *);
 extern void operation_8c157138(void *);
 void TObjCityMainWarp_v16_8c1bdffc(TObjCityMainWarp *o)
@@ -76,9 +76,9 @@ void TObjCityMainWarp_v16_8c1bdffc(TObjCityMainWarp *o)
                 if (((*(int *)0x8c4e2b60 & 1 << v11)) != 0) {
                     v14 = (int)(*(int *)0x8c510ba0 != 0);
                     if (v14 != 0) {
-                        operation_8c156d30((TObjCityMainWarp_pe8 *)(o->fe8), (void *)((void *)0x8c510bac), 0xe, v12);
+                        add_wrapper_8c156d30((TObjCityMainWarp_pe8 *)(o->fe8), (void *)((void *)0x8c510bac), 0xe, v12);
                     } else {
-                        operation_8c156d30((TObjCityMainWarp_pe8 *)(o->fe8), (void *)(*(S_g8c467180_2c_0 **)((char *)((char *)(*(S_g8c467180 **)0x8c467180)->f2c + 0x0) + (*(int *)((char *)0x8c288f90 + (v11 << 2)) << 2))), 0xe, v12);
+                        add_wrapper_8c156d30((TObjCityMainWarp_pe8 *)(o->fe8), (void *)(*(S_g8c467180_2c_0 **)((char *)((char *)(*(S_g8c467180 **)0x8c467180)->f2c + 0x0) + (*(int *)((char *)0x8c288f90 + (v11 << 2)) << 2))), 0xe, v12);
                     }
                     v12 = (int)(v12 + 1);
                 }

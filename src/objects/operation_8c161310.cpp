@@ -37,7 +37,7 @@ extern "C" S_c8c1794c8 *record30_8c1794c8(int);
 extern "C" void TTecResta_create_8c0b9444(void *, void *, void *);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" int call_8c18e6fc(Frame *);
-extern "C" void operation_8c161310(Object *o)
+extern "C" void TObjEnePanBARA_state31_8c161310(Object *o)
 {
     Frame frame;
     int v14;

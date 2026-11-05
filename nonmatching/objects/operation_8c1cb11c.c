@@ -93,7 +93,7 @@ extern void play_se_8c05fbf8(int, int, int, int);
 extern void clear_global_8c19b29c(void);
 extern int operation_8c19b054(void);
 extern int call_8c372d38(int, void *);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern int operation_8c04b8dc(void *);
 extern Block8 g_8c3290b8;
 void operation_8c1cb11c(Object *o)
@@ -162,7 +162,7 @@ L_8c1cb258:;
     t4 = operation_8c19b054();
     t5 = call_8c372d38((int)((char)t4), (void *)((void *)0x8c319870));
     if (t5 == 0 && ((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-        t6 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+        t6 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
         if (t6 == 0) {
             goto L_8c1cb2e8;
         }

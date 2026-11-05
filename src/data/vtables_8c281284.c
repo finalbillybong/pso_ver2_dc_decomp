@@ -7,32 +7,32 @@ extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
+extern void TObjectShared_vslot08_8c010500(void);
 extern void operation_8c073e54(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c074814(void);
 extern void operation_8c073900(void);
 extern void TItemProArmor_v15_8c0e70b0(void);
 extern void operation_8c073674(void);
 extern void TItemProArmorParticle_v17_8c2556a4(void);
-extern void operation_8c20a430(void);
+extern void TItemProShield_vslot18_8c20a430(void);
 extern void fn_8c209ad8(void);
 extern void fn_8c209eb4(void);
 extern void fn_8c209c48(void);
-extern void operation_8c209fe0(void);
-extern void operation_8c20a35c(void);
+extern void TItemProShield_vslot22_8c209fe0(void);
+extern void TItemProShield_vslot23_8c20a35c(void);
 extern void fn_8c20a160(void);
-extern void operation_8c20a228(void);
+extern void TItemProShield_vslot25_8c20a228(void);
 extern void operation_8c021cbc(void);
-extern void operation_8c20a0d8(void);
+extern void TItemProShield_vslot27_8c20a0d8(void);
 extern void operation_8c022c9c(void);
 extern void operation_8c027388(void);
-extern void operation_8c075b84(void);
+extern void TItemProShield_vslot30_8c075b84(void);
 extern void TItemProArmor_v31_8c0e7050(void);
 extern void operation_8c075338(void);
 extern void operation_8c07533c(void);
@@ -48,8 +48,8 @@ extern void TItemProArmorParticle_v42_8c25560c(void);
 extern void TItemProArmorParticle_v43_8c255688(void);
 extern void TItemProArmor_v44_8c0e6e18(void);
 extern void TItemEquipBase_v45_8c209a88(void);
-extern void operation_8c07fd60(void);
-extern void operation_8c07fd64(void);
+extern void TItemProShield_vslot46_8c07fd60(void);
+extern void TItemProShield_vslot47_8c07fd64(void);
 extern void TItemProArmorRecalc_dtor_8c255970(void);
 extern void TItemProArmorRecalc_v17_8c255964(void);
 extern void TItemProArmor_v42_8c0e6e80(void);
@@ -64,32 +64,32 @@ VirtualFunction const TItemProArmorParticle_vtable_8c281284[50] = {
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c073e54,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c074814,
     operation_8c073900,
     TItemProArmor_v15_8c0e70b0,
     operation_8c073674,
     TItemProArmorParticle_v17_8c2556a4,
-    operation_8c20a430,
+    TItemProShield_vslot18_8c20a430,
     fn_8c209ad8,
     fn_8c209eb4,
     fn_8c209c48,
-    operation_8c209fe0,
-    operation_8c20a35c,
+    TItemProShield_vslot22_8c209fe0,
+    TItemProShield_vslot23_8c20a35c,
     fn_8c20a160,
-    operation_8c20a228,
+    TItemProShield_vslot25_8c20a228,
     operation_8c021cbc,
-    operation_8c20a0d8,
+    TItemProShield_vslot27_8c20a0d8,
     operation_8c022c9c,
     operation_8c027388,
-    operation_8c075b84,
+    TItemProShield_vslot30_8c075b84,
     TItemProArmor_v31_8c0e7050,
     operation_8c075338,
     operation_8c07533c,
@@ -105,8 +105,8 @@ VirtualFunction const TItemProArmorParticle_vtable_8c281284[50] = {
     TItemProArmorParticle_v43_8c255688,
     TItemProArmor_v44_8c0e6e18,
     TItemEquipBase_v45_8c209a88,
-    operation_8c07fd60,
-    operation_8c07fd64
+    TItemProShield_vslot46_8c07fd60,
+    TItemProShield_vslot47_8c07fd64
 };
 
 /* 8c28134c: type-information and this-adjustment header, then 48 slots */
@@ -118,32 +118,32 @@ VirtualFunction const TItemProArmorRecalc_vtable_8c28134c[50] = {
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c073e54,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c074814,
     operation_8c073900,
     TItemProArmor_v15_8c0e70b0,
     operation_8c073674,
     TItemProArmorRecalc_v17_8c255964,
-    operation_8c20a430,
+    TItemProShield_vslot18_8c20a430,
     fn_8c209ad8,
     fn_8c209eb4,
     fn_8c209c48,
-    operation_8c209fe0,
-    operation_8c20a35c,
+    TItemProShield_vslot22_8c209fe0,
+    TItemProShield_vslot23_8c20a35c,
     fn_8c20a160,
-    operation_8c20a228,
+    TItemProShield_vslot25_8c20a228,
     operation_8c021cbc,
-    operation_8c20a0d8,
+    TItemProShield_vslot27_8c20a0d8,
     operation_8c022c9c,
     operation_8c027388,
-    operation_8c075b84,
+    TItemProShield_vslot30_8c075b84,
     TItemProArmor_v31_8c0e7050,
     operation_8c075338,
     operation_8c07533c,
@@ -159,6 +159,6 @@ VirtualFunction const TItemProArmorRecalc_vtable_8c28134c[50] = {
     TItemEquipBase_v43_8c0e7140,
     TItemProArmor_v44_8c0e6e18,
     TItemEquipBase_v45_8c209a88,
-    operation_8c07fd60,
-    operation_8c07fd64
+    TItemProShield_vslot46_8c07fd60,
+    TItemProShield_vslot47_8c07fd64
 };

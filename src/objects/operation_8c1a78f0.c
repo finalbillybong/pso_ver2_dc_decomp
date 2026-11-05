@@ -5,7 +5,7 @@ extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
 extern int update_text_buffer(void *);
 extern void operation_8c1a7d14(void *, int, int);
-void operation_8c1a78f0(TQuestScriptChecker *o)
+void TQuestScriptChecker_update_step_8c1a78f0(TQuestScriptChecker *o)
 {
     int t1;
     njPrintSize_8c38c5aa(0xe);

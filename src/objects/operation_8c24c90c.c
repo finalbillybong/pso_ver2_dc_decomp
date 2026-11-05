@@ -1,7 +1,7 @@
 #include "src/include/classes/TOVS2Wall01.h"
 extern void call_8c027090(void);
 extern void call_8c24cadc(TOVS2Wall01 *, int);
-void operation_8c24c90c(TOVS2Wall01 *o)
+void TOVS2Wall01_update_step_8c24c90c(TOVS2Wall01 *o)
 {
     if (o->f378 == 1) {
         call_8c027090();

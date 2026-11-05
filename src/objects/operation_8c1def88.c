@@ -11,11 +11,11 @@ extern char g_8c41cba0[];
 extern int operation_8c01d844(int, int, int, int);
 extern int operation_8c01d858(int, int, int, int);
 extern void play_se_8c05fbf8(int, int, int, int);
-extern void operation_8c1e2d64(void *);
-extern void operation_8c1e2dc4(void *);
-extern void operation_8c1e2e84(void *);
-extern void operation_8c1e2f44(void *);
-void operation_8c1def88(TWindowKeyBoardSoft *o)
+extern void TWindowKeyBoardSoft_state15_8c1e2d64(void *);
+extern void TWindowKeyBoardSoft_state16_8c1e2dc4(void *);
+extern void TWindowKeyBoardSoft_state18_8c1e2e84(void *);
+extern void TWindowKeyBoardSoft_state17_8c1e2f44(void *);
+void TWindowKeyBoardSoft_update_step_2_8c1def88(TWindowKeyBoardSoft *o)
 {
     int v1;
     int v2;
@@ -83,20 +83,20 @@ L_8c1df080:;
     play_se_8c05fbf8(0x50000, 0, 0, 0);
     if (((o->f68 & 0x40)) != 0) {
         if ((char)v1 > 0) {
-            operation_8c1e2d64((void *)(o->f70));
+            TWindowKeyBoardSoft_state15_8c1e2d64((void *)(o->f70));
         } else {
             if (!((char)v1 >= 0)) {
-                operation_8c1e2dc4((void *)(o->f70));
+                TWindowKeyBoardSoft_state16_8c1e2dc4((void *)(o->f70));
             }
         }
         if ((char)v2 > 0) {
-            operation_8c1e2e84((void *)(o->f70));
+            TWindowKeyBoardSoft_state18_8c1e2e84((void *)(o->f70));
             return;
         }
         if ((char)v2 >= 0) {
             return;
         }
-        operation_8c1e2f44((void *)(o->f70));
+        TWindowKeyBoardSoft_state17_8c1e2f44((void *)(o->f70));
         return;
     }
     if ((char)v1 > 0) {

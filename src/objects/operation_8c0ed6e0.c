@@ -6,7 +6,7 @@ typedef struct Vector3 {
 extern void clear_global_render_resources(void);
 extern void clear_hierarchy_groups(void *);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c0ed6e0(void)
+void game_mode_05_exit_8c0ed6e0(void)
 {
     clear_global_render_resources();
     clear_hierarchy_groups((void *)((void *)0x8c44bec8));

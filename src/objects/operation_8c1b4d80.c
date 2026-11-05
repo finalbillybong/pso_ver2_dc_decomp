@@ -9,7 +9,7 @@ extern void call_8c3bdf60(Frame *, int);
 extern void call_8c0a7608(void *, Frame *);
 extern void call_8c1b3f88(TBoss4Type1 *);
 extern void call_8c05fd7c(int, TBoss4Type1 *, void *, int, int);
-void operation_8c1b4d80(TBoss4Type1 *o)
+void TBoss4Type1_update_step_8c1b4d80(TBoss4Type1 *o)
 {
     Frame frame;
     int v3;

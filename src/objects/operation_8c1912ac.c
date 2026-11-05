@@ -1,5 +1,5 @@
 #include "src/include/classes/TWindowSubMag.h"
-void operation_8c1912ac(TWindowSubMag *o, int a1)
+void TWindowSubMag_update_step_8c1912ac(TWindowSubMag *o, int a1)
 {
     switch (a1) {
     case 1:

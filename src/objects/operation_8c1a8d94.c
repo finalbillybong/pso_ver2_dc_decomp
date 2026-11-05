@@ -11,7 +11,7 @@ struct S_g8c467180 {
 extern int operation_8c1a8e18(int);
 extern void call_8c156d48(int, int, int, int, int);
 extern int operation_8c1a8e4c(int);
-extern void operation_8c156d30(int, int, int, int);
+extern void add_wrapper_8c156d30(int, int, int, int);
 void operation_8c1a8d94(int a0, int a1)
 {
     char *v1;
@@ -28,5 +28,5 @@ void operation_8c1a8d94(int a0, int a1)
         call_8c156d48(a1, (int)(v1), 0x16, (int)((short)a0), -0x2c6ff);
         return;
     }
-    operation_8c156d30(a1, (int)(v1), 6, (int)((short)a0));
+    add_wrapper_8c156d30(a1, (int)(v1), 6, (int)((short)a0));
 }

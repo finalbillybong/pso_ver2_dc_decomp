@@ -41,7 +41,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3827d8(void *);
 extern void operation_8c161c78(void *);
 extern void draw_tree_a702(void *, void *, float);
-extern void operation_8c161ce4(void *);
+extern void set_transform_node_callback_wrapper_2_8c161ce4(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void restore_effect_blend_state(void);
 void TObjDFDemo3_render_8c229948(Object *o)
@@ -67,7 +67,7 @@ void TObjDFDemo3_render_8c229948(Object *o)
         call_8c3827d8((void *)(o->f9c));
         operation_8c161c78((void *)(o->fbc));
         draw_tree_a702((void *)(o->f98), (void *)(o->fa0), o->fb8);
-        operation_8c161ce4((void *)(o->fbc));
+        set_transform_node_callback_wrapper_2_8c161ce4((void *)(o->fbc));
         njPopMatrixEx_8c38ad10();
         if (1.0f > v5) {
             restore_effect_blend_state();

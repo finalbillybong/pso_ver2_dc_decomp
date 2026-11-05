@@ -19,7 +19,7 @@ extern Pad *g_8c41ccfc;
 extern Pair *g_8c41cd00;
 extern Pad g_8c41ccec;
 extern char g_8c41cba0[];
-extern Pad *call_8c36aa08(void *);
+extern Pad *pd_init_print_banner_8c36aa08(void *);
 extern Pair *call_8c36a9fe(void *);
 extern void operation_8c01d8d4(void *);
 void operation_8c01dea8(void)
@@ -37,7 +37,7 @@ void operation_8c01dea8(void)
     g_8c41cd00 = 0;
     for (port = 0; port < 4; port++) {
         k = port << 2;
-        g_8c41ccfc = call_8c36aa08(*(void **)((char *)0x8c2e34e0 + k));
+        g_8c41ccfc = pd_init_print_banner_8c36aa08(*(void **)((char *)0x8c2e34e0 + k));
         if (g_8c41ccfc != 0) {
             g_8c41cd00 = call_8c36a9fe(*(void **)((char *)0x8c2e34e0 + k));
             break;

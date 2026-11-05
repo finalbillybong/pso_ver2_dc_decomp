@@ -12,7 +12,7 @@ struct Object {
     int fbc;
 };
 extern void call_8c04bfc8(void *, int);
-void operation_8c1e29ec(Object *o)
+void TWindowKeyBoardSoft_state19_8c1e29ec(Object *o)
 {
     if (((o->fbc & 0x80)) == 0) {
         call_8c04bfc8(o->f70, 0x20);

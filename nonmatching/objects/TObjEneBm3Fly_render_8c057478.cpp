@@ -157,7 +157,7 @@ extern float g_8c284bd4;
 extern float g_8c284bd8;
 extern Vector3 g_8c2f3244;
 extern "C" int operation_8c03d338(void);
-extern "C" int operation_8c05bae8(void);
+extern "C" int get_game_mode_wrapper_3_8c05bae8(void);
 extern "C" void call_8c05ba9c(Object *);
 extern "C" void call_8c05b9dc(Object *);
 extern "C" void call_8c3827d8(void *);
@@ -185,7 +185,7 @@ extern "C" void TObjEneBm3Fly_render_8c057478(Object *o)
         return;
     }
     if (((((ObjectData *)o)->f444 & 1)) == 0) {
-        t2 = operation_8c05bae8();
+        t2 = get_game_mode_wrapper_3_8c05bae8();
         if (t2 != 0) {
             t4 = o->v12(g_8c284bd8, g_8c284bd4, 15.0f);
             v1 = (int)t4;

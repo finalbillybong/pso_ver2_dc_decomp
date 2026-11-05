@@ -18,7 +18,7 @@ typedef struct Vector3 {
 } Vector3;
 extern int g_8c4db940;
 extern int g_8c4db954;
-extern int operation_8c05bae8(void);
+extern int get_game_mode_wrapper_3_8c05bae8(void);
 extern int operator_new_8c18de4c(int);
 extern void file_load_8c104d00(int, int);
 extern void call_8c3889a4(char *, int, int);
@@ -31,7 +31,7 @@ void load_battle_params_8c17963c(void)
     int v2;
     int v3;
     v2 = 0x8c286728;
-    if (operation_8c05bae8() != 0) {
+    if (get_game_mode_wrapper_3_8c05bae8() != 0) {
         v2 = 0x8c28673d;
     }
     t2 = operator_new_8c18de4c(0xf600);

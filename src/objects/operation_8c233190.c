@@ -10,7 +10,7 @@ struct Object {
     Arg0_2c *f2c;
 };
 extern void request_resource_release(void *);
-void operation_8c233190(Object *o)
+void request_resource_release_wrapper_3_8c233190(Object *o)
 {
     if (o->f2c != 0) {
         request_resource_release(o->f2c);

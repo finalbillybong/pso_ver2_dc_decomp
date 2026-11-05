@@ -2,7 +2,7 @@
 extern int lookup_low_id(int);
 extern int angle_between_xz(void *, void *);
 extern void operation_8c022034(void *, int, int);
-void operation_8c1135b4(TOKey *o, int a1)
+void TOKey_vslot14_8c1135b4(TOKey *o, int a1)
 {
     int t1;
     int t2;

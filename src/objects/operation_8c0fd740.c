@@ -18,7 +18,7 @@ struct S_vv2 {
     char f00;
 };
 extern void call_8c05406c(TOMine *, Frame *);
-float operation_8c0fd740(TOMine *o)
+float TOMine_vslot24_8c0fd740(TOMine *o)
 {
     Frame frame;
     int v6;

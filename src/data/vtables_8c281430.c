@@ -7,32 +7,32 @@ extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItem_render_shadow_8c073e50(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
+extern void TObjectShared_vslot08_8c010500(void);
 extern void operation_8c073e54(void);
 extern void operation_8c0771c4(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c074814(void);
 extern void operation_8c073900(void);
 extern void operation_8c075f8c(void);
 extern void operation_8c073674(void);
 extern void operation_8c075fbc(void);
-extern void operation_8c20a430(void);
+extern void TItemProShield_vslot18_8c20a430(void);
 extern void fn_8c209ad8(void);
 extern void fn_8c209eb4(void);
 extern void fn_8c209c48(void);
-extern void operation_8c209fe0(void);
-extern void operation_8c20a35c(void);
+extern void TItemProShield_vslot22_8c209fe0(void);
+extern void TItemProShield_vslot23_8c20a35c(void);
 extern void fn_8c20a160(void);
-extern void operation_8c20a228(void);
+extern void TItemProShield_vslot25_8c20a228(void);
 extern void operation_8c07617c(void);
-extern void operation_8c20a0d8(void);
+extern void TItemProShield_vslot27_8c20a0d8(void);
 extern void operation_8c07623c(void);
 extern void operation_8c0764f0(void);
-extern void operation_8c075b84(void);
+extern void TItemProShield_vslot30_8c075b84(void);
 extern void fn_8c075bec(void);
 extern void operation_8c0770a4(void);
 extern void operation_8c0770e4(void);
@@ -68,19 +68,19 @@ extern void TOSwitchItem_update_8c255fb4(void);
 extern void TOSwitchItem_render_8c256198(void);
 extern void operation_8c0eeb8c(void);
 extern void TOSwitchItem_v09_8c256194(void);
-extern void operation_8c010508(void);
-extern void operation_8c010510(void);
-extern void operation_8c1135b4(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot13_8c010510(void);
+extern void TOKey_vslot14_8c1135b4(void);
 extern void TOKey_v15_8c082044(void);
 extern void TOKey_v16_8c113440(void);
 extern void TOKey_v17_8c1130e0(void);
 extern void TOKey_v18_8c1130e4(void);
 extern void TOKey_v19_8c113130(void);
 extern void TOKey_v20_8c1132e0(void);
-extern void operation_8c1133cc(void);
+extern void TOKey_vslot21_8c1133cc(void);
 extern void TOSwitchItem_v22_8c256254(void);
 extern void update_cycle_8c113060(void);
-extern void operation_8c1136b0(void);
+extern void TOKey_vslot24_8c1136b0(void);
 extern void TOSymbolchatColli_dtor_8c2562b4(void);
 extern void TOSymbolchatColli_update_8c256424(void);
 extern void TOSymbolchatColli_render_8c2564a0(void);
@@ -171,7 +171,7 @@ extern void operation_8c256888(void);
 extern void operation_8c25688c(void);
 extern void operation_8c256890(void);
 extern void operation_8c256894(void);
-extern void operation_8c113564(void);
+extern void TOKey_vslot22_8c113564(void);
 
 /* 8c281430: type-information and this-adjustment header, then 59 slots */
 VirtualFunction const TItemWpnBouquet_vtable_8c281430[61] = {
@@ -182,32 +182,32 @@ VirtualFunction const TItemWpnBouquet_vtable_8c281430[61] = {
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c073e54,
     operation_8c0771c4,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c074814,
     operation_8c073900,
     operation_8c075f8c,
     operation_8c073674,
     operation_8c075fbc,
-    operation_8c20a430,
+    TItemProShield_vslot18_8c20a430,
     fn_8c209ad8,
     fn_8c209eb4,
     fn_8c209c48,
-    operation_8c209fe0,
-    operation_8c20a35c,
+    TItemProShield_vslot22_8c209fe0,
+    TItemProShield_vslot23_8c20a35c,
     fn_8c20a160,
-    operation_8c20a228,
+    TItemProShield_vslot25_8c20a228,
     operation_8c07617c,
-    operation_8c20a0d8,
+    TItemProShield_vslot27_8c20a0d8,
     operation_8c07623c,
     operation_8c0764f0,
-    operation_8c075b84,
+    TItemProShield_vslot30_8c075b84,
     fn_8c075bec,
     operation_8c0770a4,
     operation_8c0770e4,
@@ -247,32 +247,32 @@ VirtualFunction const TItemWpnFamitsu_vtable_8c281524[61] = {
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c073e54,
     operation_8c0771c4,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c074814,
     operation_8c073900,
     operation_8c075f8c,
     operation_8c073674,
     operation_8c075fbc,
-    operation_8c20a430,
+    TItemProShield_vslot18_8c20a430,
     fn_8c209ad8,
     fn_8c209eb4,
     fn_8c209c48,
-    operation_8c209fe0,
-    operation_8c20a35c,
+    TItemProShield_vslot22_8c209fe0,
+    TItemProShield_vslot23_8c20a35c,
     fn_8c20a160,
-    operation_8c20a228,
+    TItemProShield_vslot25_8c20a228,
     operation_8c07617c,
-    operation_8c20a0d8,
+    TItemProShield_vslot27_8c20a0d8,
     operation_8c07623c,
     operation_8c0764f0,
-    operation_8c075b84,
+    TItemProShield_vslot30_8c075b84,
     fn_8c075bec,
     operation_8c0770a4,
     operation_8c0770e4,
@@ -312,26 +312,26 @@ VirtualFunction const TOSwitchItem_vtable_8c281618[27] = {
     TOSwitchItem_render_8c256198,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TOSwitchItem_v09_8c256194,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
-    operation_8c1135b4,
+    TObjectShared_vslot13_8c010510,
+    TOKey_vslot14_8c1135b4,
     TOKey_v15_8c082044,
     TOKey_v16_8c113440,
     TOKey_v17_8c1130e0,
     TOKey_v18_8c1130e4,
     TOKey_v19_8c113130,
     TOKey_v20_8c1132e0,
-    operation_8c1133cc,
+    TOKey_vslot21_8c1133cc,
     TOSwitchItem_v22_8c256254,
     update_cycle_8c113060,
-    operation_8c1136b0
+    TOKey_vslot24_8c1136b0
 };
 
 /* 8c281684: type-information and this-adjustment header, then 86 slots */
@@ -343,15 +343,15 @@ VirtualFunction const TOSymbolchatColli_vtable_8c281684[88] = {
     TOSymbolchatColli_render_8c2564a0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TOSymbolchatColli_v09_8c25649c,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,
@@ -435,24 +435,24 @@ VirtualFunction const vt_8c2817e4[27] = {
     operation_8c2567e4,
     operation_8c25693c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     show_key_8c112fbc,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
-    operation_8c1135b4,
+    TObjectShared_vslot13_8c010510,
+    TOKey_vslot14_8c1135b4,
     operation_8c256938,
     operation_8c2568ec,
     operation_8c256888,
     operation_8c25688c,
     operation_8c256890,
     operation_8c256894,
-    operation_8c1133cc,
-    operation_8c113564,
+    TOKey_vslot21_8c1133cc,
+    TOKey_vslot22_8c113564,
     update_cycle_8c113060,
-    operation_8c1136b0
+    TOKey_vslot24_8c1136b0
 };

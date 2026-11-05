@@ -90,7 +90,7 @@ extern int operation_8c03613c(void);
 extern void TTcpSocket_ctor_8c02cc88(S_c8c122700 *, Object *, int, void *, int, int, int);
 extern void operation_8c01a514();
 extern void operation_8c01a8a4();
-extern void operation_8c01a920();
+extern void lookup_object_by_id_wrapper_8c01a920();
 extern void operation_8c01a944();
 extern void operation_8c01aa54();
 extern void operation_8c01ba80();
@@ -174,7 +174,7 @@ Object *TLobby_ctor_8c015244(Object *o, int a1)
     (*(S_g8c418a00 **)0x8c418a00)->fb154 = 0;
     (*(S_g8c418a00 **)0x8c418a00)->fb158 = (void *)0x8c019b18;
     (*(S_g8c418a00 **)0x8c418a00)->fb144 = (void *)0x8c019410;
-    (*(S_g8c418a00 **)0x8c418a00)->fb15c = operation_8c01a920;
+    (*(S_g8c418a00 **)0x8c418a00)->fb15c = lookup_object_by_id_wrapper_8c01a920;
     (*(S_g8c418a00 **)0x8c418a00)->fb164 = (void *)0x8c019f54;
     (*(S_g8c418a00 **)0x8c418a00)->fb168 = operation_8c01a514;
     (*(S_g8c418a00 **)0x8c418a00)->fb16c = (void *)0x8c01a648;

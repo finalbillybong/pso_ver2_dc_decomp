@@ -10,7 +10,7 @@ struct Object {
     int f70;
 };
 extern int operation_8c20a7d0(int, int);
-extern void operation_8c21225c(void);
+extern void play_se_wrapper_6_8c21225c(void);
 void operation_8c2150d0(Object *o)
 {
     char *v1;
@@ -46,6 +46,6 @@ void operation_8c2150d0(Object *o)
         }
     }
     if (o->f70 != (int)(v1)) {
-        operation_8c21225c();
+        play_se_wrapper_6_8c21225c();
     }
 }

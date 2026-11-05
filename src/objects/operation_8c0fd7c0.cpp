@@ -131,7 +131,7 @@ extern "C" void operation_8c09e6b4(void *);
 extern "C" void operation_8c05426c(void *, int, int);
 extern "C" void update_object_center(void *);
 extern "C" void transform_actor_records(void *);
-extern "C" void operation_8c0fd7c0(Object *o, Arg1 *a1, int a2)
+extern "C" void TOMine_vslot05_8c0fd7c0(Object *o, Arg1 *a1, int a2)
 {
     int v = a1->f00;
     if (v == 5) {

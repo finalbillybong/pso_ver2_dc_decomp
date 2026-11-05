@@ -47,7 +47,7 @@ struct S_c8c156bd8 {
 };
 extern S_g8c467180 *g_8c467180;
 extern S_c8c156bd8 *operation_8c156bd8(int, int, int);
-extern void operation_8c156d30(S_c8c156bd8 *, void *, int, int);
+extern void add_wrapper_8c156d30(S_c8c156bd8 *, void *, int, int);
 extern int get_game_mode_8c01c25c(void);
 extern void call_8c156d48(S_c8c156bd8 *, void *, int, int, int);
 extern void operation_8c15700c(void *, float);
@@ -57,13 +57,13 @@ S_c8c156bd8 *operation_8c1d37dc(void)
     S_c8c156bd8 *t1;
     int t2;
     t1 = operation_8c156bd8((int)((void *)0x8c289370), 5, (int)(g_8c467180->f2c->f1f4));
-    operation_8c156d30(t1, (void *)(g_8c467180->f2c->f2dc), 6, 3);
-    operation_8c156d30(t1, (void *)(g_8c467180->f2c->f2e0), 6, 0xb);
-    operation_8c156d30(t1, (void *)(g_8c467180->f2c->f2e4), 6, 0x19);
+    add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f2dc), 6, 3);
+    add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f2e0), 6, 0xb);
+    add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f2e4), 6, 0x19);
     t2 = get_game_mode_8c01c25c();
     if (t2 == 0x10) {
-        operation_8c156d30(t1, (void *)(g_8c467180->f2c->f510), 6, 0x23);
-        operation_8c156d30(t1, (void *)(g_8c467180->f2c->f348), 6, 0x2f);
+        add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f510), 6, 0x23);
+        add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f348), 6, 0x2f);
     } else {
         call_8c156d48(t1, (void *)(g_8c467180->f2c->f510), 0x16, 0x23, -0x979798);
         call_8c156d48(t1, (void *)(g_8c467180->f2c->f348), 0x16, 0x2f, -0x979798);

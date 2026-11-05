@@ -65,7 +65,7 @@ extern int create_fitted_pair_grid_view(void *, void *);
 extern void operation_8c0dc610(void *, float);
 extern void operation_8c119764(int, int, int);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(int, void *, int, int);
+extern void add_wrapper_8c156d30(int, void *, int, int);
 extern void operation_8c156f50(S_g8c41c61c *);
 extern void operation_8c157138(void *);
 extern void operation_8c01787c(void);
@@ -87,16 +87,16 @@ void operation_8c016b78(void)
     if (0xa > g_8c41bd00) {
         t2 = operation_8c156c24((int)(&(&frame)->f10), 3);
         g_8c41c61c = (S_g8c41c61c *)(int)(t2);
-        operation_8c156d30(t2, (void *)(g_8c467180->f90->fd4), 6, 0);
-        operation_8c156d30((int)g_8c41c61c, (void *)(g_8c467180->f90->fd8), 6, 1);
-        operation_8c156d30((int)g_8c41c61c, (void *)(g_8c467180->f90->f1a0), 6, 2);
+        add_wrapper_8c156d30(t2, (void *)(g_8c467180->f90->fd4), 6, 0);
+        add_wrapper_8c156d30((int)g_8c41c61c, (void *)(g_8c467180->f90->fd8), 6, 1);
+        add_wrapper_8c156d30((int)g_8c41c61c, (void *)(g_8c467180->f90->f1a0), 6, 2);
     } else {
         t3 = operation_8c156c24((int)(&(&frame)->f10), 4);
         g_8c41c61c = (S_g8c41c61c *)(int)(t3);
-        operation_8c156d30(t3, (void *)(g_8c467180->f90->fd4), 6, 0);
-        operation_8c156d30((int)g_8c41c61c, (void *)(g_8c467180->f90->fd8), 6, 1);
-        operation_8c156d30((int)g_8c41c61c, (void *)(g_8c467180->f90->f1a0), 6, 2);
-        operation_8c156d30((int)g_8c41c61c, (void *)(g_8c467180->f90->f1b0), 6, 3);
+        add_wrapper_8c156d30(t3, (void *)(g_8c467180->f90->fd4), 6, 0);
+        add_wrapper_8c156d30((int)g_8c41c61c, (void *)(g_8c467180->f90->fd8), 6, 1);
+        add_wrapper_8c156d30((int)g_8c41c61c, (void *)(g_8c467180->f90->f1a0), 6, 2);
+        add_wrapper_8c156d30((int)g_8c41c61c, (void *)(g_8c467180->f90->f1b0), 6, 3);
     }
     operation_8c156f50(g_8c41c61c);
     operation_8c157138((void *)g_8c41c61c);

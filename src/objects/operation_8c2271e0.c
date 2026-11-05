@@ -11,7 +11,7 @@ struct S_c8c156c24 {
 };
 extern int operation_8c22752c(void);
 extern S_c8c156c24 *operation_8c156c24(int, int);
-extern void operation_8c156d30(S_c8c156c24 *, void *, int, int);
+extern void add_wrapper_8c156d30(S_c8c156c24 *, void *, int, int);
 extern void operation_8c1570b4(void *, float, float);
 extern void call_8c157138(S_c8c156c24 *);
 S_c8c156c24 *operation_8c2271e0(void)
@@ -31,7 +31,7 @@ S_c8c156c24 *operation_8c2271e0(void)
     t2->f80 = (t2->f80 & 0xffff) | 0x100;
     v3 = (int)0;
     while (v2 > v3) {
-        operation_8c156d30(t2, (void *)(*(S_g8c33772c **)((char *)0x8c33772c + (v3 << 2))), 0x26, v3);
+        add_wrapper_8c156d30(t2, (void *)(*(S_g8c33772c **)((char *)0x8c33772c + (v3 << 2))), 0x26, v3);
         v3 = (int)(v3 + 1);
     }
     t2->f80 = (t2->f80 & 0xffff) | 0x400;

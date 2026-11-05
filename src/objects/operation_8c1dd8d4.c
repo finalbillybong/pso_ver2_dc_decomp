@@ -22,7 +22,7 @@ struct S_L8c41cba0 {
 extern int g_8c4e3044;
 extern S_L8c41cba0 g_8c41cba0;
 extern void operation_8c1cc690(void);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void request_resource_release(void *);
 extern void operation_8c199b14(void);
 extern void select_mode4_8c1cc4f8(void);
@@ -43,19 +43,19 @@ void operation_8c1dd8d4(Object *o)
     case 0:
         if ((((&g_8c41cba0)->f28 & 4)) == 0) {
             pad = (char *)&g_8c41cba0 + 0x110;
-            t1 = operation_8c01d8a8((void *)pad, 4);
+            t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)pad, 4);
             if (t1 == 0) {
                 if ((((&g_8c41cba0)->f28 & 2)) == 0) {
-                    t2 = operation_8c01d8a8((void *)pad, 2);
+                    t2 = replicate_nibble_wrapper_2_8c01d8a8((void *)pad, 2);
                     if (t2 == 0) {
                         if ((((&g_8c41cba0)->f28 & 0x400)) == 0) {
-                            t3 = operation_8c01d8a8((void *)pad, 0x400);
+                            t3 = replicate_nibble_wrapper_2_8c01d8a8((void *)pad, 0x400);
                             if (t3 == 0) {
                                 if ((((&g_8c41cba0)->f28 & 0x200)) == 0) {
-                                    t4 = operation_8c01d8a8((void *)pad, 0x200);
+                                    t4 = replicate_nibble_wrapper_2_8c01d8a8((void *)pad, 0x200);
                                     if (t4 == 0) {
                                         if ((((&g_8c41cba0)->f28 & 8)) == 0) {
-                                            t5 = operation_8c01d8a8((void *)pad, 8);
+                                            t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)pad, 8);
                                             if (t5 == 0) {
                                                 goto L_8c1dd9b8;
                                             }

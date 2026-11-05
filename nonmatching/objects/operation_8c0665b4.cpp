@@ -165,7 +165,7 @@ extern int g_8c4689b8;
 extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c09e6d0(void *);
 extern "C" void operation_8c067f24(void *);
-extern "C" int operation_8c05bae8(void);
+extern "C" int get_game_mode_wrapper_3_8c05bae8(void);
 extern "C" int call_8c05bb18(Object *);
 extern "C" int call_8c05bb24(void);
 extern "C" int operation_8c066dd8(Object *);
@@ -213,7 +213,7 @@ extern "C" void operation_8c0665b4(Object *o)
         operation_8c067f24((void *)o);
         ((ObjectData *)o)->f730 += 1;
     } else {
-        t2 = operation_8c05bae8();
+        t2 = get_game_mode_wrapper_3_8c05bae8();
         if (t2 != 0 && ((ObjectData *)o)->f6fc == 0) {
             v1 = (int)((ObjectData *)o)->f400;
             t3 = call_8c05bb18(o);

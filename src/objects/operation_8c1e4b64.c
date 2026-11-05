@@ -28,7 +28,7 @@ extern int g_8c44be04;
 extern S_g8c46ed0c *g_8c46ed0c;
 extern void call_8c05406c(TOContainerAncientEnemy *, Frame *);
 extern void operation_8c0368a8(void *);
-float operation_8c1e4b64(TOContainerAncientEnemy *o)
+float TOContainerAncientEnemy_vslot24_8c1e4b64(TOContainerAncientEnemy *o)
 {
     Frame frame;
     int v6;

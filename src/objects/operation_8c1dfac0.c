@@ -17,13 +17,13 @@ struct Object {
     Arg0_70 *f70;
 };
 extern S_L8c41cba0 g_8c41cba0;
-extern void call_8c1e2a18(void *);
+extern void TWindowKeyBoardSoft_state20_8c1e2a18(void *);
 extern int call_8c1e2354(void *);
 void operation_8c1dfac0(Object *o)
 {
     int t1;
     if ((((&g_8c41cba0)->f28 & 0x400)) != 0 && o->f70 != 0) {
-        call_8c1e2a18(o->f70);
+        TWindowKeyBoardSoft_state20_8c1e2a18(o->f70);
         t1 = call_8c1e2354(o->f70);
         if (t1 != 0) {
             o->f68 |= 0x40;

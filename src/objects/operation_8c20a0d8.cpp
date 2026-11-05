@@ -34,7 +34,7 @@ typedef struct ObjectData {
     short fe4;
 } ObjectData;
 extern "C" void operation_8c0749b4(void *);
-extern "C" void operation_8c20a0d8(Object *o)
+extern "C" void TItemProShield_vslot27_8c20a0d8(Object *o)
 {
     if (((ObjectData *)o)->fe4 == 2) {
         o->v20();

@@ -230,7 +230,7 @@ extern "C" void operation_8c059ea4(void *, int);
 extern "C" void call_8c055170(Object *);
 extern "C" void operation_8c01c5f0(int);
 extern "C" int call_8c05c2dc(Object *);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" void vector_sub_in_place_8c37f6f0(S_vv4 *, S_vv5 *);
 extern "C" float call_8c3845f0(void *, void *);
@@ -326,7 +326,7 @@ extern "C" void operation_8c055a64(Object *o, int a1)
             return;
         }
     }
-    operation_8c05c184((void *)o);
+    set_fields_wrapper_8c05c184((void *)o);
     ((ObjectData *)o)->f3b4 = ((ObjectData *)o)->f40 + ((ObjectData *)o)->f468;
     aim_direction_8c05bdd4((void *)o);
     *(Vector3 *)&v4->f00 = *(Vector3 *)&((ObjectData *)o)->f324;

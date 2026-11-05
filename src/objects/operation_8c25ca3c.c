@@ -11,7 +11,7 @@ struct S_vv2 {
 extern char g_8c340468[];
 extern void clear_hierarchy_groups(void *);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c25ca3c(void)
+void game_mode_32_exit_8c25ca3c(void)
 {
     int v1;
     S_vv2 *v2;

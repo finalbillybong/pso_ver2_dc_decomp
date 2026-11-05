@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c4da640 S_g8c4da640;
 extern void destroy_node_array(void *, short);
-void operation_8c14e014(void)
+void destroy_node_array_wrapper_8c14e014(void)
 {
     destroy_node_array((void *)(*(S_g8c4da640 **)0x8c4da640), (short)1);
     *(int *)0x8c4da640 = 0;

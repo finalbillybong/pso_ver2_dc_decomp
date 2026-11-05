@@ -44,7 +44,7 @@ struct Arg0_404 {
 };
 extern void create_effect_7bc0(void *, void *, int, int, int);
 extern void operation_8c15e8f0(int);
-void operation_8c11d1d0(Object *o)
+void TObjEnePanarms_state22_8c11d1d0(Object *o)
 {
     Frame frame;
     int k;

@@ -239,7 +239,7 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern "C" void operation_8c0368a8(void *);
 extern "C" void call_8c06741c(Object *);
 extern "C" int operation_8c05c1f0(Object *);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
 extern "C" void operation_8c01c5f0(Object *);
@@ -325,7 +325,7 @@ extern "C" void operation_8c068f70(Object *o, int a1)
     case 6:
         t1 = operation_8c05c1f0(o);
         if (t1 != 0) {
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
         } else {
             t2 = njSin_8c37eb0c((void *)(((ObjectData *)o)->f64));
             ((ObjectData *)o)->f3b0 = ((ObjectData *)o)->f42c + t2 * 115.0f;

@@ -15,9 +15,9 @@ extern void operation_8c22d95c(void *);
 extern void operation_8c22da28(void *);
 extern void create_object_8c22dc70(void *);
 extern void operation_8c22db2c(void *);
-extern void operation_8c22dd38(void *);
+extern void TQuestVmDownLoadServer_update_step_8c22dd38(void *);
 extern void operation_8c22dd9c(void *);
-extern void operation_8c22de98(void *);
+extern void TQuestVmDownLoadServer_update_step_2_8c22de98(void *);
 extern void operation_8c22dfc8(void *);
 extern void build_download_vmu_header_8c22e0c4(TQuestVmDownLoadServer *);
 extern void call_8c22e20c(TQuestVmDownLoadServer *);
@@ -30,7 +30,7 @@ extern void operation_8c22e684(void *);
 extern void operation_8c22e6ec(void *);
 extern void operation_8c22ea28(void *);
 extern void operation_8c22eb20(void *);
-extern void operation_8c22e7c8(void *);
+extern void TQuestVmDownLoadServer_update_step_3_8c22e7c8(void *);
 extern void operation_8c22e978(void *);
 extern void operation_8c22e78c(void *);
 void TQuestVmDownLoadServer_update_8c22d748(TQuestVmDownLoadServer *o)
@@ -66,13 +66,13 @@ void TQuestVmDownLoadServer_update_8c22d748(TQuestVmDownLoadServer *o)
         if (o->f90 != 0) {
             o->f90->f04 &= -5;
         }
-        operation_8c22dd38((void *)o);
+        TQuestVmDownLoadServer_update_step_8c22dd38((void *)o);
         return;
     case 5:
         operation_8c22dd9c((void *)o);
         return;
     case 6:
-        operation_8c22de98((void *)o);
+        TQuestVmDownLoadServer_update_step_2_8c22de98((void *)o);
         return;
     case 7:
         operation_8c22dfc8((void *)o);
@@ -111,7 +111,7 @@ void TQuestVmDownLoadServer_update_8c22d748(TQuestVmDownLoadServer *o)
         operation_8c22eb20((void *)o);
         return;
     case 17:
-        operation_8c22e7c8((void *)o);
+        TQuestVmDownLoadServer_update_step_3_8c22e7c8((void *)o);
         return;
     case 18:
         operation_8c22e978((void *)o);

@@ -1,5 +1,5 @@
 #include "src/include/classes/TOMine.h"
-void operation_8c0fd8ec(TOMine *o)
+void TOMine_vslot87_8c0fd8ec(TOMine *o)
 {
     if (((o->f350 & 1)) != 0) {
         o->f370 += 0.05f;

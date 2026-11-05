@@ -11,7 +11,7 @@ struct Object {
     short f6c;
 };
 extern char g_8c41cba0[];
-extern int operation_8c01d88c(void *, int);
+extern int replicate_nibble_wrapper_8c01d88c(void *, int);
 extern void operation_8c22bd64(void *, short);
 extern void operation_8c22bd14(void *, short);
 void operation_8c22bb7c(Object *o)
@@ -28,9 +28,9 @@ void operation_8c22bb7c(Object *o)
     int t5;
     int t6;
     v1 = (int)(g_8c41cba0 + 0x20);
-    t1 = operation_8c01d88c((void *)v1, 0xc0);
+    t1 = replicate_nibble_wrapper_8c01d88c((void *)v1, 0xc0);
     if (t1 == 0) {
-        t2 = operation_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0xc0);
+        t2 = replicate_nibble_wrapper_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0xc0);
         if (t2 == 0) {
             return;
         }
@@ -43,18 +43,18 @@ void operation_8c22bb7c(Object *o)
         v6 = (int)0xfa;
     }
     v9 = (int)(int)((float)(short)v6 * 0.025f);
-    t3 = operation_8c01d88c((void *)v1, 0x80);
+    t3 = replicate_nibble_wrapper_8c01d88c((void *)v1, 0x80);
     if (t3 == 0) {
-        t4 = operation_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x80);
+        t4 = replicate_nibble_wrapper_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x80);
         if (t4 == 0) {
             goto L_8c22bbfa;
         }
     }
     v8 = v8 + v9;
 L_8c22bbfa:;
-    t5 = operation_8c01d88c((void *)v1, 0x40);
+    t5 = replicate_nibble_wrapper_8c01d88c((void *)v1, 0x40);
     if (t5 == 0) {
-        t6 = operation_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x40);
+        t6 = replicate_nibble_wrapper_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x40);
         if (t6 == 0) {
             goto L_8c22bc18;
         }

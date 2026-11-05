@@ -13,7 +13,7 @@ extern void process_file_task_queue(void);
 extern void call_8c05f9e4(void);
 extern void call_8c184614(void);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c17b9ac(void)
+void game_mode_19_frame_8c17b9ac(void)
 {
     call_8c01daf0();
     call_8c01dea8();

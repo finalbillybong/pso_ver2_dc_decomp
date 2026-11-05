@@ -25,7 +25,7 @@ struct S_c8c122700 {
 extern void set_configuration_pair(void *, int);
 extern S_c8c122700 *heap_alloc_8c122700(void *, unsigned int);
 extern void TWindowMenu_ctor_8c1566f0(void *, unsigned int);
-extern void call_8c156d30(int, void *, int, int);
+extern void add_wrapper_8c156d30(int, void *, int, int);
 extern void call_8c15700c(int, float);
 extern void call_8c157138(int);
 S_c8c122700 *operation_8c156c6c(int a0)
@@ -36,8 +36,8 @@ S_c8c122700 *operation_8c156c6c(int a0)
     if (t1 != 0) {
         TWindowMenu_ctor_8c1566f0((void *)t1, (unsigned int)2);
     }
-    call_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f300, 6, 0);
-    call_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f304, 6, 1);
+    add_wrapper_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f300, 6, 0);
+    add_wrapper_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f304, 6, 1);
     call_8c15700c((int)t1, 104.0f);
     call_8c157138((int)t1);
     t1->f80 = (t1->f80 & 0xffff) | 1;

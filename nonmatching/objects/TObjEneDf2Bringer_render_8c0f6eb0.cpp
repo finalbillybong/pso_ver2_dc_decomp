@@ -211,7 +211,7 @@ extern int g_8c470628;
 extern S_g8c470630 *g_8c470630;
 extern int g_8c575570;
 extern "C" int operation_8c03d338(void);
-extern "C" int operation_8c05bae8(void);
+extern "C" int get_game_mode_wrapper_3_8c05bae8(void);
 extern "C" void call_8c05ba9c(Object *);
 extern "C" void call_8c05b9dc(Object *);
 extern "C" void operation_8c05baa8(void);
@@ -247,7 +247,7 @@ extern "C" void TObjEneDf2Bringer_render_8c0f6eb0(Object *o)
     if (((((ObjectData *)o)->f3dc & 1)) != 0) {
         v1 = (int)0;
     } else {
-        t2 = operation_8c05bae8();
+        t2 = get_game_mode_wrapper_3_8c05bae8();
         if (t2 != 0) {
             v1 = o->v12(g_8c284bd8, g_8c284bd4, 15.0f);
         } else {

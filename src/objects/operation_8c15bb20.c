@@ -30,7 +30,7 @@ struct S_vv1 {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern int g_8c4db128;
-extern void operation_8c220b5c(void);
+extern void request_resource_release_wrapper_8c220b5c(void);
 extern void request_resource_release(void *);
 extern void operation_8c15c7a4(void *);
 extern void game_free_8c011ec0(void *);
@@ -46,7 +46,7 @@ Object *TCheckRoomSequence_dtor_8c15bb20(Object *o, int a1)
             v1->f04 |= 1;
             o->f48 = (Arg0_48 *)0;
         }
-        operation_8c220b5c();
+        request_resource_release_wrapper_8c220b5c();
         if (o->f30 != 0) {
             request_resource_release((void *)(o->f30));
             o->f30 = (Arg0_30 *)0;

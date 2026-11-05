@@ -15,7 +15,7 @@ struct S_vv29 {
     int f00;
 };
 extern int operation_8c21ec0c(int, int);
-void operation_8c21eb78(TWindowSubQuestBoardSelect *o)
+void TWindowSubQuestBoardSelect_init_8c21eb78(TWindowSubQuestBoardSelect *o)
 {
     S_vv4 *v4;
     int v3;

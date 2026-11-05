@@ -65,7 +65,7 @@ extern S_g8c4dbc20 *g_8c4dbc20;
 extern int operation_8c1cdc80(void *);
 extern void operation_8c1d5eb8(void *, int);
 extern int find_node_8c16a3c0(void *, int);
-extern int operation_8c169508(void *);
+extern int hierarchy_is_active_wrapper_2_8c169508(void *);
 extern void update_count_8c1ca1fc(void *, void *);
 extern int operation_8c106798(Object *);
 extern void play_se_8c05fbf8(int, int, int, int);
@@ -74,7 +74,7 @@ extern int operation_8c1c74dc(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TWindowInputNumber_ctor_8c1bd074(void *, void *, int, int, int);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(Arg0_394 *, void *, int, int);
+extern void add_wrapper_8c156d30(Arg0_394 *, void *, int, int);
 extern void call_8c156f50(Arg0_394 *);
 extern void operation_8c157138(void *);
 void operation_8c106e1c(Object *o)
@@ -101,7 +101,7 @@ void operation_8c106e1c(Object *o)
         if (o->f39c != 0 && t1 != o->f388) {
             t2 = find_node_8c16a3c0((void *)(o->f28->fbc8), (int)((int)o + t1 * 0x1c + 0x30));
             if (t2 != 0) {
-                t3 = operation_8c169508((void *)t2);
+                t3 = hierarchy_is_active_wrapper_2_8c169508((void *)t2);
                 update_count_8c1ca1fc((void *)(o->f39c), (void *)t3);
             } else {
                 update_count_8c1ca1fc((void *)(o->f39c), (void *)0);
@@ -136,8 +136,8 @@ void operation_8c106e1c(Object *o)
             *(Block8 *)&(&frame)->f00 = *(Block8 *)&g_8c30b6c4;
             t9 = operation_8c156c24((int)(&frame), 2);
             o->f394 = (Arg0_394 *)t9;
-            operation_8c156d30((Arg0_394 *)(o->f394), (void *)(g_8c4dbc20->f00->f18), 6, 0);
-            operation_8c156d30((Arg0_394 *)(o->f394), (void *)(g_8c4dbc20->f00->f1c), 6, 1);
+            add_wrapper_8c156d30((Arg0_394 *)(o->f394), (void *)(g_8c4dbc20->f00->f18), 6, 0);
+            add_wrapper_8c156d30((Arg0_394 *)(o->f394), (void *)(g_8c4dbc20->f00->f1c), 6, 1);
             call_8c156f50((Arg0_394 *)(o->f394));
             operation_8c157138((void *)(o->f394));
             o->f394->f80 = (o->f394->f80 & 0xffff) | 1;

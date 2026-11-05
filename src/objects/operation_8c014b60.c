@@ -12,7 +12,7 @@ struct S_vv1 {
 extern char g_8c418280[];
 extern void call_8c3c4016(float, float, float);
 extern void call_8c3c4070(float, float, float);
-extern void operation_8c014be4(void *);
+extern void set_light_b_wrapper_8c014be4(void *);
 extern void operation_8c014c00(void *);
 extern void call_8c3c40be(void);
 void operation_8c014b60(void)
@@ -27,7 +27,7 @@ void operation_8c014b60(void)
     while (3 > v2) {
         v3 = (char *)*(int *)((char *)0x8c4182e4 + (v2 << 2));
         if (v3 != 0) {
-            operation_8c014be4((void *)v3);
+            set_light_b_wrapper_8c014be4((void *)v3);
             operation_8c014c00((void *)v3);
         }
         v2 = (int)(v2 + 1);

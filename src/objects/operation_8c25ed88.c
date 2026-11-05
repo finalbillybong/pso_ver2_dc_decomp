@@ -9,7 +9,7 @@ struct S_vv1 {
     S_vv1_0 *f00;
 };
 extern void request_resource_release(void *);
-void operation_8c25ed88(int a0)
+void request_resource_release_wrapper_4_8c25ed88(int a0)
 {
     S_vv1 *v1;
     v1 = (S_vv1 *)(a0 + 0x30);

@@ -17,7 +17,7 @@ struct S_L8c41cba0 {
     int f20;
 };
 extern char g_8c41cba0[];
-extern int operation_8c01d88c(void *, int);
+extern int replicate_nibble_wrapper_8c01d88c(void *, int);
 extern void operation_8c102eec(float);
 extern void operation_8c102f40(float);
 extern void operation_8c103020(float);
@@ -31,7 +31,7 @@ void operation_8c1d7fa0(Object *o)
         return;
     }
     if (((*(int *)(g_8c41cba0 + 0x20) & 0x10)) == 0) {
-        t1 = operation_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x10);
+        t1 = replicate_nibble_wrapper_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x10);
         if (t1 == 0) {
             goto L_8c1d7fda;
         }
@@ -39,7 +39,7 @@ void operation_8c1d7fa0(Object *o)
     o->f6c += 6.0f;
 L_8c1d7fda:;
     if (((*(int *)(g_8c41cba0 + 0x20) & 0x20)) == 0) {
-        t2 = operation_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x20);
+        t2 = replicate_nibble_wrapper_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x20);
         if (t2 == 0) {
             goto L_8c1d8000;
         }
@@ -47,7 +47,7 @@ L_8c1d7fda:;
     o->f6c -= 6.0f;
 L_8c1d8000:;
     if (((*(int *)(g_8c41cba0 + 0x20) & 0x40)) == 0) {
-        t3 = operation_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x40);
+        t3 = replicate_nibble_wrapper_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x40);
         if (t3 == 0) {
             goto L_8c1d8026;
         }
@@ -55,7 +55,7 @@ L_8c1d8000:;
     o->f68 += 6.0f;
 L_8c1d8026:;
     if (((*(int *)(g_8c41cba0 + 0x20) & 0x80)) == 0) {
-        t4 = operation_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x80);
+        t4 = replicate_nibble_wrapper_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x80);
         if (t4 == 0) {
             goto L_8c1d804e;
         }

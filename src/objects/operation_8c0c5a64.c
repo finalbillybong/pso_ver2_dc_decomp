@@ -7,7 +7,7 @@ extern void operation_0c638c(void);
 extern void operation_0c6270(int);
 extern void operation_0c63c4(void);
 extern void operation_8c01c244(int);
-void operation_8c0c5a64(void)
+void game_mode_26_init_8c0c5a64(void)
 {
     operation_0c638c();
     operation_0c6270(4);

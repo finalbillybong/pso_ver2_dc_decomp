@@ -10,7 +10,7 @@ extern void hierarchy_output(void);
 extern void operation_8c0dc63c(void);
 extern void destroy_object_8c21e20c(void);
 extern void operation_8c21e250(void);
-extern void operation_8c21e29c(void);
+extern void draw_view_nodes_wrapper_8c21e29c(void);
 extern void TWindowSubQuestBoard_dtor_8c21e478(void);
 extern void TWindowSubQuestBoard_update_8c21e4d0(void);
 extern void TWindowSubQuestBoard_render_8c21e5a4(void);
@@ -36,7 +36,7 @@ VirtualFunction const vt_8c278660[8] = {
     0,
     destroy_object_8c21e20c,
     operation_8c21e250,
-    operation_8c21e29c,
+    draw_view_nodes_wrapper_8c21e29c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0dc63c

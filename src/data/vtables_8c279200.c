@@ -8,7 +8,7 @@ extern void TChallenge_render_8c237bcc(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void TItemShootWindCane_dtor_8c239aa4(void);
-extern void operation_1abbcc(void);
+extern void TItemShoot_vslot01_8c1abbcc(void);
 extern void TItemShootWindCane_render_8c239a30(void);
 extern void TItemShootWindCane_v05_8c239a20(void);
 
@@ -28,7 +28,7 @@ VirtualFunction const TItemShootWindCane_vtable_8c27921c[8] = {
     0,
     0,
     TItemShootWindCane_dtor_8c239aa4,
-    operation_1abbcc,
+    TItemShoot_vslot01_8c1abbcc,
     TItemShootWindCane_render_8c239a30,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,

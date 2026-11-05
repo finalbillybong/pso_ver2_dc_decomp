@@ -6,7 +6,7 @@ extern int operation_8c01d844(int, int, int, int);
 extern void call_8c1cd480(ViewParameters *);
 extern void call_8c1cd4ec(ViewParameters *);
 extern int operation_8c01d858(int, int, int, int);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void operation_8c1d0294(void *);
 extern void operation_8c1cd5ec(void *);
 extern void call_8c1cd28c(ViewParameters *);
@@ -69,7 +69,7 @@ L_8c1d008e:;
         }
 L_8c1d00b8:;
         if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-            t9 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+            t9 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
             if (t9 == 0) {
                 goto L_8c1d00d6;
             }
@@ -77,7 +77,7 @@ L_8c1d00b8:;
         operation_8c1d0294((void *)o);
 L_8c1d00d6:;
         if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-            t10 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+            t10 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
             if (t10 == 0) {
                 goto L_8c1d00f4;
             }

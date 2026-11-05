@@ -10,7 +10,7 @@ extern int operation_8c238fa4(int);
 extern void strncpy_8c12b154(int, int, int);
 extern int get_current_area_8c032b10(void);
 extern void call_8c260228(TObjDeadListWin *);
-void operation_8c2600e0(TObjDeadListWin *o)
+void TObjDeadListWin_update_step_8c2600e0(TObjDeadListWin *o)
 {
     char *v3;
     int v4;

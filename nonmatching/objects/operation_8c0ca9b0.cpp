@@ -162,7 +162,7 @@ extern "C" void operation_8c059ea4(Object *, int);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int actor_mode_allows_action(int);
 extern "C" int active_unflagged_8c05b2dc(void *);
-extern "C" void operation_8c05c184(Object *);
+extern "C" void set_fields_wrapper_8c05c184(Object *);
 extern "C" void aim_direction_8c05bdd4(Object *);
 extern "C" void set_actor_action_kind(int, int);
 extern "C" float errno_wrap_8c130334(float, float);
@@ -236,7 +236,7 @@ extern "C" void operation_8c0ca9b0(Object *o, int a1)
                 } else {
                     v6 = (int)((ObjectData *)o)->f3ac;
                     if (v6 != (int)(o)) {
-                        operation_8c05c184(o);
+                        set_fields_wrapper_8c05c184(o);
                         aim_direction_8c05bdd4(o);
                         if (!(100.0f > ((ObjectData *)o)->f3c8)) {
                             v2->f00 = 4;

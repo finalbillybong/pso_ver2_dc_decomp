@@ -11,7 +11,7 @@ extern void operation_8c13c438(void);
 extern void operation_8c13a99c(void);
 extern void operation_8c152240(void);
 extern void operation_8c15073c(void);
-extern void operation_193764_8c1513d8(void);
+extern void check_items_wrapper_8c1513d8(void);
 void release_assets_boss3_volopt_8c1382d8(void)
 {
     operation_8c159ed4();
@@ -20,5 +20,5 @@ void release_assets_boss3_volopt_8c1382d8(void)
     operation_8c13a99c();
     operation_8c152240();
     operation_8c15073c();
-    operation_193764_8c1513d8();
+    check_items_wrapper_8c1513d8();
 }

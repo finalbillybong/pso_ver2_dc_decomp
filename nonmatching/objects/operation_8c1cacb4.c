@@ -53,7 +53,7 @@ struct S_g8c467180_44 {
     int f28;
 };
 extern char g_8c41cba0[];
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern int operation_8c19b054(void);
 extern int call_8c372d38(int, void *);
 extern void play_se_8c05fbf8(int, int, int, int);
@@ -77,7 +77,7 @@ void operation_8c1cacb4(Object *o)
     int pm7;
     Frame *pm8;
     if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-        t1 = operation_8c01d8a8((void *)(((char *)(0x110 + g_8c41cba0))), 4);
+        t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)(((char *)(0x110 + g_8c41cba0))), 4);
         if (0 == t1) {
             return;
         }

@@ -23,9 +23,9 @@ extern void fn_8c051fb8(void);
 extern void load_fog_entries_8c121334(void);
 extern void operation_8c121560(void);
 extern void load_light_entries_8c013f54(void);
-extern void operation_8c013fa4(void);
+extern void game_free_wrapper_8c013fa4(void);
 extern void operation_8c13f3a0(void);
-extern void operation_8c13f3cc(void);
+extern void game_free_wrapper_3_8c13f3cc(void);
 extern void operation_8c01e648(void);
 extern void operation_8c01e734(void);
 extern void operation_8c0731f4(void);
@@ -90,9 +90,9 @@ Function const d_8c310238[66] = {
     load_fog_entries_8c121334,
     operation_8c121560,
     load_light_entries_8c013f54,
-    operation_8c013fa4,
+    game_free_wrapper_8c013fa4,
     operation_8c13f3a0,
-    operation_8c13f3cc,
+    game_free_wrapper_3_8c13f3cc,
     operation_8c01e648,
     operation_8c01e734,
     operation_8c0731f4,

@@ -3,7 +3,7 @@ typedef struct TAdHunLicence_p28 TAdHunLicence_p28;
 typedef struct TAdHunLicence_p2c TAdHunLicence_p2c;
 extern void request_resource_release(void *);
 extern int operation_8c1571f4(void *);
-void operation_8c25f7dc(TAdHunLicence *o)
+void TAdHunLicence_update_step_8c25f7dc(TAdHunLicence *o)
 {
     int t1;
     if (o->f28 != 0) {

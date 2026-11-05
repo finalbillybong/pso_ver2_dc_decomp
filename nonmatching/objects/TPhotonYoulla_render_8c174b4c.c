@@ -76,7 +76,7 @@ extern void hs_8c38c0e6(int, int);
 extern void hs_8c38c0f0(void *);
 extern void operation_8c13ef08(Object *);
 extern void operation_8c01cc90(Object *);
-extern void operation_8c13ef3c(Object *);
+extern void set_transform_node_callback_wrapper_8c13ef3c(Object *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void reset_state_8c391cc4(void);
 void TPhotonYoulla_render_8c174b4c(Object *o)
@@ -108,7 +108,7 @@ void TPhotonYoulla_render_8c174b4c(Object *o)
         hs_8c38c0f0(((char *)o + 0x1bc));
         operation_8c13ef08(o);
         operation_8c01cc90(o);
-        operation_8c13ef3c(o);
+        set_transform_node_callback_wrapper_8c13ef3c(o);
         v1->f00 = (int)(g_8c46f574);
         v2->f00 = (int)(g_8c46f578);
         *(Block16 *)&(&g_8c5755ac)->f00 = *(Block16 *)&(&g_8c46f564)->f00;

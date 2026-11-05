@@ -19,7 +19,7 @@ struct Object {
     int fe8;
 };
 extern void call_8c074ea0(void);
-int operation_8c073e5c(Object *o, Arg1 *a1)
+int TItemEquipBase_vslot31_8c073e5c(Object *o, Arg1 *a1)
 {
     int v1;
     if (a1 != 0) {

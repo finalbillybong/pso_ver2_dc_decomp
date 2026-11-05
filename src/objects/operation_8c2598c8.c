@@ -21,7 +21,7 @@ struct Arg0_104 {
     int f04;
 };
 extern int operation_8c03d338(void);
-extern void operation_8c259b24(void *);
+extern void TObjCityMainWarpChallenge_update_step_8c259b24(void *);
 extern void call_8c259f40(Object *);
 void TObjCityMainWarpChallenge_update_8c2598c8(Object *o)
 {
@@ -34,13 +34,13 @@ void TObjCityMainWarpChallenge_update_8c2598c8(Object *o)
             v1 = (short)-1;
             if (o->f110 != v1) {
                 o->f110 = -1;
-                operation_8c259b24((void *)o);
+                TObjCityMainWarpChallenge_update_step_8c259b24((void *)o);
             }
             o->f10e = o->f10c;
             o->f110 = 0;
         }
         call_8c259f40(o);
-        operation_8c259b24((void *)o);
+        TObjCityMainWarpChallenge_update_step_8c259b24((void *)o);
         if (o->f104 != 0) {
             o->ff4 += 4.0f;
             v11 = o->ff4 + 1.0f;

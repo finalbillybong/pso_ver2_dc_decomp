@@ -11,7 +11,7 @@ struct Frame {
     char f0b;
 };
 extern void operation_8c0368a8(void *);
-void operation_8c136688(TOKeyAncient03 *o, int a1)
+void TOKeyAncient03_update_step_8c136688(TOKeyAncient03 *o, int a1)
 {
     Frame frame;
     (&frame)->f06 = 0;

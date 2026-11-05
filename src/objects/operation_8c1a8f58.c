@@ -1,7 +1,7 @@
 #include "src/include/classes/TWindowSubTechnique.h"
 typedef struct TWindowSubTechnique_p24 TWindowSubTechnique_p24;
 extern int operation_8c1571f4(void *);
-int operation_8c1a8f58(TWindowSubTechnique *o)
+int TWindowSubTechnique_update_step_8c1a8f58(TWindowSubTechnique *o)
 {
     int t1;
     int t2;

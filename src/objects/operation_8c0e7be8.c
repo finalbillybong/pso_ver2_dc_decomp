@@ -16,7 +16,7 @@ extern void call_8c01364c(void *, int);
 extern void forward_reviewed_8c104e8c(void);
 extern void operation_8c01c2b0(void);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c0e7be8(void)
+void game_mode_15_exit_8c0e7be8(void)
 {
     clear_global_render_resources();
     call_8c05fbdc();

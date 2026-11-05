@@ -78,7 +78,7 @@ extern void operation_8c119764(int, int, int);
 extern void sprintf_8c12b048(int, void *, ...);
 extern void operator_delete_8c18de08(int);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(Arg0_30 *, void *, int, int);
+extern void add_wrapper_8c156d30(Arg0_30 *, void *, int, int);
 extern void operation_8c15700c(Arg0_30 *, float);
 extern void operation_8c1571d4(void *, int);
 extern void operation_8c157138(void *);
@@ -123,8 +123,8 @@ void operation_8c1e6ac8(Object *o)
     if (o->f30 != 0) {
         t4 = operation_8c156c24((int)(&frame), 2);
         o->f30 = (Arg0_30 *)t4;
-        operation_8c156d30((Arg0_30 *)(o->f30), (void *)(g_8c467180->f60->f10), 6, 0);
-        operation_8c156d30((Arg0_30 *)(o->f30), (void *)(g_8c467180->f60->f14), 6, 1);
+        add_wrapper_8c156d30((Arg0_30 *)(o->f30), (void *)(g_8c467180->f60->f10), 6, 0);
+        add_wrapper_8c156d30((Arg0_30 *)(o->f30), (void *)(g_8c467180->f60->f14), 6, 1);
         operation_8c15700c((Arg0_30 *)(o->f30), 442.0f);
         operation_8c1571d4((void *)(o->f30), 1);
         operation_8c157138((void *)(o->f30));

@@ -3,7 +3,7 @@ extern int call_8c03b55c(void *, int);
 extern int call_8c1acc80(void *, int);
 extern int current_mode_active(void);
 extern void operation_8c184a38(void *, float);
-void operation_8c0277bc(TObjPlayer *o, float f0)
+void TObjPlayer_vslot82_8c0277bc(TObjPlayer *o, float f0)
 {
     int v1;
     v1 = (int)(o->f308 == 1);

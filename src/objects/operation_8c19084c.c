@@ -101,19 +101,19 @@ extern void operation_8c0dc610(void *, float);
 extern void operation_8c1d5530(int, int);
 extern void operation_8c19a044(void *, int);
 extern void call_8c1cd35c(Arg0_30 *, float);
-extern void operation_8c191428(void *);
+extern void TWindowSubMag_update_step_4_8c191428(void *);
 extern void operation_8c22cd48(void *, void *);
 extern void call_8c18c808(void *);
 extern int operation_8c1cdc80(void *);
 extern int call_8c190f60(Object *, int);
 extern int operation_8c1571f4(void *);
-extern void call_8c1912ac(Object *, int);
+extern void TWindowSubMag_update_step_8c1912ac(Object *, int);
 extern int operation_8c0244c4(void *);
-extern void operation_8c1912f0(void *, int, int);
+extern void TWindowSubMag_update_step_2_8c1912f0(void *, int, int);
 extern void raise_marker_8c1cd2f4(void *);
 extern void operation_8c1d5dd0(void *, int);
 extern int operation_8c190f00(Object *);
-extern int call_8c1913d8(Object *);
+extern int TWindowSubMag_update_step_3_8c1913d8(Object *);
 extern void operation_8c024260(void *, int, int);
 extern void operation_8c1d7490(void *);
 extern int call_8c1d7184(Arg0_3c *);
@@ -123,7 +123,7 @@ extern void play_se_8c05fbf8(int, int, int, int);
 extern int call_8c19117c(Object *);
 extern void TWindowSubMagPhoton_ctor_8c230538(void *, int);
 extern int operation_8c19113c(Object *);
-extern void operation_8c191454(void *);
+extern void TWindowSubMag_update_step_5_8c191454(void *);
 void TWindowSubMag_update_8c19084c(Object *o)
 {
     S_vv8 *v8;
@@ -189,7 +189,7 @@ void TWindowSubMag_update_8c19084c(Object *o)
         call_8c1cd35c((Arg0_30 *)(o->f30), 188.0f);
         o->f20 = 2;
     case 2:
-        operation_8c191428((void *)o);
+        TWindowSubMag_update_step_4_8c191428((void *)o);
         o->f2c = (Arg0_2c *)o->f3c->f70;
         operation_8c22cd48((void *)(o->f40), (void *)(o->f3c->f70));
         if (((o->f30->f80 & 0xffff & 4)) != 0) {
@@ -238,7 +238,7 @@ void TWindowSubMag_update_8c19084c(Object *o)
             return;
         }
         t6 = operation_8c1571f4((void *)(o->f38));
-        call_8c1912ac(o, t6);
+        TWindowSubMag_update_step_8c1912ac(o, t6);
         return;
     case 5:
         if ((((&g_8c41cba0)->f28 & 2)) != 0) {
@@ -251,7 +251,7 @@ void TWindowSubMag_update_8c19084c(Object *o)
         }
         t8 = operation_8c1cdc80((void *)(o->f30));
         t9 = operation_8c1571f4((void *)(o->f38));
-        operation_8c1912f0((void *)o, t8, t9);
+        TWindowSubMag_update_step_2_8c1912f0((void *)o, t8, t9);
         return;
     case 6:
         if (o->f38 != 0) {
@@ -290,7 +290,7 @@ void TWindowSubMag_update_8c19084c(Object *o)
         if (t11 == 0) {
             return;
         }
-        t12 = call_8c1913d8(o);
+        t12 = TWindowSubMag_update_step_3_8c1913d8(o);
         o->f22 = t12;
         t13 = operation_8c1cdc80((void *)(o->f30));
         t14 = operation_8c1cdc80((void *)(o->f34));
@@ -338,7 +338,7 @@ void TWindowSubMag_update_8c19084c(Object *o)
         o->f20 = 0xb;
         return;
     case 13:
-        t19 = call_8c1913d8(o);
+        t19 = TWindowSubMag_update_step_3_8c1913d8(o);
         if (o->f22 != t19) {
             o->f24 = 0;
             operation_8c1d5dd0((void *)(o->f3c), 2);
@@ -379,7 +379,7 @@ void TWindowSubMag_update_8c19084c(Object *o)
         v42 = (int)0x10;
         o->f20 = v42;
     case 16:
-        operation_8c191454((void *)o);
+        TWindowSubMag_update_step_5_8c191454((void *)o);
         if (((o->f44->f68 & 2)) != 0) {
             o->f20 = 3;
             return;

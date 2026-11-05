@@ -25,7 +25,7 @@ extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void TFogEditor_dtor_8c115f80(void);
-extern void operation_8c03ceac(void);
+extern void TEditor_update_8c03ceac(void);
 extern void TFogEditor_v05_8c1162b8(void);
 extern void TFogEditor_v06_8c1160a0(void);
 extern void TFogEditor_v07_8c116328(void);
@@ -76,7 +76,7 @@ VirtualFunction const TFogEditor_vtable_8c269e6c[10] = {
     0,
     0,
     TFogEditor_dtor_8c115f80,
-    operation_8c03ceac,
+    TEditor_update_8c03ceac,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,

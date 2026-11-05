@@ -36,7 +36,7 @@ struct S_vv6 {
 };
 extern void play_se_8c05fbf8(int, void *, int, int);
 extern void operation_8c15e880(void *);
-void operation_8c11cf18(Object *o)
+void TObjEnePanarms_state20_8c11cf18(Object *o)
 {
     S_vv1 *v1;
     int v3;

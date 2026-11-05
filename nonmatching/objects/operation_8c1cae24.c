@@ -38,12 +38,12 @@ struct Frame {
 };
 extern char g_8c3290d0[];
 extern char g_8c41cba0[];
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void set_global_8c19b290(void);
 extern int operation_8c1cab38(Object *);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(void *, void *, int, int);
+extern void add_wrapper_8c156d30(void *, void *, int, int);
 extern void operation_8c156f50(void *);
 extern void operation_8c157138(void *);
 void operation_8c1cae24(Object *o)
@@ -54,7 +54,7 @@ void operation_8c1cae24(Object *o)
     int t3;
     int t4;
     if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-        t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+        t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
         if (t1 == 0) {
             return;
         }
@@ -70,14 +70,14 @@ void operation_8c1cae24(Object *o)
             if (t2 != 0) {
                 t3 = operation_8c156c24((int)(&frame), 3);
                 o->f34 = (Arg0_34 *)t3;
-                operation_8c156d30((void *)(o->f34), (void *)((g_8c3290d0 + 0xa)), 6, 0);
-                operation_8c156d30((void *)(o->f34), (void *)((g_8c3290d0 + 0xd)), 6, 1);
-                operation_8c156d30((void *)(o->f34), (void *)((g_8c3290d0 + 0x1b)), 6, 2);
+                add_wrapper_8c156d30((void *)(o->f34), (void *)((g_8c3290d0 + 0xa)), 6, 0);
+                add_wrapper_8c156d30((void *)(o->f34), (void *)((g_8c3290d0 + 0xd)), 6, 1);
+                add_wrapper_8c156d30((void *)(o->f34), (void *)((g_8c3290d0 + 0x1b)), 6, 2);
             } else {
                 t4 = operation_8c156c24((int)(&frame), 2);
                 o->f34 = (Arg0_34 *)t4;
-                operation_8c156d30((void *)(o->f34), (void *)((g_8c3290d0 + 0xa)), 6, 0);
-                operation_8c156d30((void *)(o->f34), (void *)((g_8c3290d0 + 0x1b)), 6, 2);
+                add_wrapper_8c156d30((void *)(o->f34), (void *)((g_8c3290d0 + 0xa)), 6, 0);
+                add_wrapper_8c156d30((void *)(o->f34), (void *)((g_8c3290d0 + 0x1b)), 6, 2);
             }
             operation_8c156f50((void *)(o->f34));
             operation_8c157138((void *)(o->f34));

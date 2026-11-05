@@ -10,15 +10,15 @@ extern void hierarchy_output(void);
 extern void TObjDFDemo2_dtor_8c22838c(void);
 extern void TObjDFDemo2_update_8c2283d0(void);
 extern void TObjDFDemo2_render_8c2284c0(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void reset_shared_object(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void TObjDFDemo1_dtor_8c228848(void);
 extern void TObjDFDemo1_update_8c2288d8(void);
 extern void TObjDFDemo1_render_8c228ae8(void);
@@ -58,15 +58,15 @@ VirtualFunction const TObjDFDemo2_vtable_8c278bd8[16] = {
     TObjDFDemo2_render_8c2284c0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };
 
 /* 8c278c18: type-information and this-adjustment header, then 14 slots */
@@ -78,15 +78,15 @@ VirtualFunction const TObjDFDemo1_vtable_8c278c18[16] = {
     TObjDFDemo1_render_8c228ae8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };
 
 /* 8c278c58: type-information and this-adjustment header, then 14 slots */
@@ -98,15 +98,15 @@ VirtualFunction const TObjDFDemo0_vtable_8c278c58[16] = {
     TObjDFDemo0_render_8c229458,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };
 
 /* 8c278c98: type-information and this-adjustment header, then 14 slots */
@@ -118,15 +118,15 @@ VirtualFunction const TObjDFDemo3_vtable_8c278c98[16] = {
     TObjDFDemo3_render_8c229948,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };
 
 /* 8c278cd8: type-information and this-adjustment header, then 14 slots */
@@ -138,15 +138,15 @@ VirtualFunction const TObjDFDemo4_vtable_8c278cd8[16] = {
     TObjDFDemo4_render_8c229f80,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };
 
 /* 8c278d18: type-information and this-adjustment header, then 14 slots */
@@ -158,15 +158,15 @@ VirtualFunction const TObjDFDemo5_vtable_8c278d18[16] = {
     TObjDFDemo5_render_8c22a53c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };
 
 /* 8c278d58: type-information and this-adjustment header, then 14 slots */
@@ -178,13 +178,13 @@ VirtualFunction const TObjSinBoard_vtable_8c278d58[16] = {
     TObjSinBoard_render_8c22a9c0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };

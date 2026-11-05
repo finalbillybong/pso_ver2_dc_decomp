@@ -60,7 +60,7 @@ extern "C" void call_8c1b4470(Object *);
 extern "C" void refresh_follow_effect_8c052180(void *);
 extern "C" void call_8c027090(Object *);
 extern "C" void call_8c1b4910(Object *);
-extern "C" void call_8c1b4d80(Object *);
+extern "C" void TBoss4Type1_update_step_8c1b4d80(Object *);
 extern "C" void call_8c1b4e40(Object *);
 extern "C" void TBoss4Type1_update_8c1b3b48(Object *o)
 {
@@ -90,6 +90,6 @@ extern "C" void TBoss4Type1_update_8c1b3b48(Object *o)
     refresh_follow_effect_8c052180((void *)o);
     call_8c027090(o);
     call_8c1b4910(o);
-    call_8c1b4d80(o);
+    TBoss4Type1_update_step_8c1b4d80(o);
     call_8c1b4e40(o);
 }

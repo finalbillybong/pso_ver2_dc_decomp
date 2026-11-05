@@ -8,7 +8,7 @@ extern void clear_hierarchy_groups(void *);
 extern void release_hierarchy_children(void *);
 extern void call_8c01364c(void *, int);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c0eaba8(void)
+void game_mode_14_exit_8c0eaba8(void)
 {
     clear_global_render_resources();
     clear_hierarchy_groups((void *)((void *)0x8c44bec8));

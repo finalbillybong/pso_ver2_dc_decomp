@@ -16,7 +16,7 @@ struct S_g8c467180_2c {
 };
 extern int get_current_area_8c032b10(void);
 extern void call_8c156d48(int, void *, int, int, int);
-extern void call_8c156d30(int, void *, int, int);
+extern void add_wrapper_8c156d30(int, void *, int, int);
 void operation_8c1a3864(int a0, int a1)
 {
     int t1;
@@ -25,5 +25,5 @@ void operation_8c1a3864(int a0, int a1)
         call_8c156d48(a1, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f310), 0x16, 6, -0x979798);
         return;
     }
-    call_8c156d30(a1, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f310), 6, 6);
+    add_wrapper_8c156d30(a1, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f310), 6, 6);
 }

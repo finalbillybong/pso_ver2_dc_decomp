@@ -16,7 +16,7 @@ struct Object {
     int f3a4;
 };
 extern void play_se_8c05fbf8(void *, void *, int, int);
-void operation_8c15fdd8(Object *o)
+void TObjEnePanBARA_state12_8c15fdd8(Object *o)
 {
     o->f3a0 = 1;
     o->f3a4 = 1;

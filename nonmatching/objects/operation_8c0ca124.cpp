@@ -160,7 +160,7 @@ extern "C" int actor_mode_allows_action(int);
 extern "C" int hs_8c0c9258(Object *, float, float);
 extern "C" int active_unflagged_8c05b2dc(void *);
 extern "C" void reset_link_8c05bf28(Object *);
-extern "C" void operation_8c05c184(Object *);
+extern "C" void set_fields_wrapper_8c05c184(Object *);
 extern "C" void aim_direction_8c05bdd4(Object *);
 extern "C" void set_actor_action_kind(int, int);
 extern "C" float errno_wrap_8c130334(float, float);
@@ -253,7 +253,7 @@ extern "C" void operation_8c0ca124(Object *o, int a1)
                     v2->f00 = 4;
                     goto L_8c0ca3b0;
                 }
-                operation_8c05c184(o);
+                set_fields_wrapper_8c05c184(o);
                 aim_direction_8c05bdd4(o);
                 if (!(100.0f > ((ObjectData *)o)->f3c8)) {
                     v2->f00 = 4;
@@ -284,7 +284,7 @@ L_8c0ca356:;
             v2->f00 = 5;
         }
 L_8c0ca3b0:;
-        operation_8c05c184(o);
+        set_fields_wrapper_8c05c184(o);
         aim_direction_8c05bdd4(o);
         t7 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
         t8 = angle_step(((ObjectData *)o)->f64, (int)(t7 * 65536.0f / 6.28318405f), 0xa00);
@@ -308,7 +308,7 @@ L_8c0ca3b0:;
             v2->f00 = 3;
         }
 L_8c0ca488:;
-        operation_8c05c184(o);
+        set_fields_wrapper_8c05c184(o);
         aim_direction_8c05bdd4(o);
         t10 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
         t11 = angle_step(((ObjectData *)o)->f64, (int)(t10 * 65536.0f / 6.28318405f), 0xa00);

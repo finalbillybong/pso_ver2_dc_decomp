@@ -4,7 +4,7 @@ extern int operation_8c01d844(int, int, int, int);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern int operation_8c21ec0c(int, char);
 extern void operation_8c21ec3c(void *);
-void operation_8c21e810(TWindowSubQuestBoardSelect *o)
+void TWindowSubQuestBoardSelect_update_step_8c21e810(TWindowSubQuestBoardSelect *o)
 {
     int v4;
     int v1;

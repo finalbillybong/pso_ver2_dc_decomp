@@ -12,7 +12,7 @@ struct Arg0_30_0 {
 struct S_vv1 {
     int f00;
 };
-void operation_8c22cd34(TWindowLoadItemTexture *o)
+void TWindowLoadItemTexture_render_part_8c22cd34(TWindowLoadItemTexture *o)
 {
     S_vv1 *v1;
     v1 = (S_vv1 *)o->f30->f00;

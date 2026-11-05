@@ -41,7 +41,7 @@ extern "C" char g_8c316c90[];
 extern "C" int call_8c18e6fc(Frame *);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" int angle_step(int, int, int);
-extern "C" void operation_8c1611c0(Object *o)
+extern "C" void TObjEnePanBARA_state29_8c1611c0(Object *o)
 {
     Frame frame;
     int v7;

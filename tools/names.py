@@ -20,7 +20,7 @@ MANIFEST = 'config/names.json'
 IDENT = re.compile(r'[A-Za-z_][A-Za-z0-9_]*')
 KINDS = {'function', 'global'}
 CONFIDENCE = {'high', 'medium'}
-SETS = {'curated', 'extended'}
+SETS = {'curated', 'extended', 'derived'}
 RAM_END = 0x8d000000  # 16 MB of Dreamcast main RAM: globals may live in BSS after the image
 C_KEYWORDS = set('''auto break case char const continue default do double else enum extern float for goto if
 inline int long register restrict return short signed sizeof static struct switch typedef union unsigned void

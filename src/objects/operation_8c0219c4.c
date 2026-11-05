@@ -40,7 +40,7 @@ extern void operation_8c03bdcc(void *);
 extern void call_8c38c0e0(int);
 extern void operation_8c026e24(void *);
 extern void call_8c3827d8(void *);
-extern int operation_8c02c194(void);
+extern int get_current_area_wrapper_8c02c194(void);
 extern void operation_8c01ceb0(void *);
 extern void operation_8c01ce18(void *);
 extern void operation_8c021b50(void *);
@@ -68,7 +68,7 @@ void operation_8c0219c4(Object *o, int a1)
     call_8c38c0e0(8);
     operation_8c026e24((void *)o);
     call_8c3827d8((void *)(((char *)o + 0xbbc)));
-    t1 = operation_8c02c194();
+    t1 = get_current_area_wrapper_8c02c194();
     if (t1 != 0) {
         operation_8c01ceb0((void *)o);
     } else {

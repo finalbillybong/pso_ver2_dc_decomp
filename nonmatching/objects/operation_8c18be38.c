@@ -65,7 +65,7 @@ struct S_vv26 {
     short f04;
 };
 extern char g_8c41cba0[];
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c18cb7c(Object *);
 extern void request_resource_release(void *);
@@ -128,7 +128,7 @@ void operation_8c18be38(Object *o)
         switch (o->f20 & 4) {
         case 0:
             if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-                t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+                t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
                 if (t1 == 0) {
                     goto L_8c18c30c;
                 }

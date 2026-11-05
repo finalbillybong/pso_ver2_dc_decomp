@@ -13,9 +13,9 @@ extern Range input_range;
 extern void TObject_ctor_8c0330e4(Manager *);
 extern void initialize_table_8c38c1f4(char *, int);
 extern void configure_input_8c3be38c(int, char *, char *);
-extern void load_manager_8c01470c(Manager *);
-extern void reset_manager_8c01472c(Manager *);
-extern void bind_manager_8c01474c(Manager *);
+extern void light_set_wrapper_8c01470c(Manager *);
+extern void set_vector_wrapper_8c01472c(Manager *);
+extern void set_direction_wrapper_8c01474c(Manager *);
 Manager *initialize_input_manager_8c014694(Manager *o)
 {
     Manager **home = &o;
@@ -28,9 +28,9 @@ Manager *initialize_input_manager_8c014694(Manager *o)
     o->dispatch = (void *)0x8c261208;
     initialize_table_8c38c1f4(o->table, 0x10);
     configure_input_8c3be38c(0, input_range.first, input_range.second);
-    load_manager_8c01470c(o);
-    reset_manager_8c01472c(o);
-    bind_manager_8c01474c(o);
+    light_set_wrapper_8c01470c(o);
+    set_vector_wrapper_8c01472c(o);
+    set_direction_wrapper_8c01474c(o);
     input_manager = o;
     return o;
 }

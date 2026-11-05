@@ -300,10 +300,10 @@ extern "C" int operation_8c05bbf8(void);
 extern "C" void set_position_8c0f3504(void *, void *);
 extern "C" void call_8c0f363c(Arg0_73c *, void *, int);
 extern "C" void call_8c05b54c(Object *, void *);
-extern "C" int operation_8c05b90c(int);
+extern "C" int object_random_fraction_wrapper_2_8c05b90c(int);
 extern "C" float njSin_8c37eb0c(int);
 extern "C" float njCos_8c38c154(int);
-extern "C" float operation_8c05b8e8(int, float, float);
+extern "C" float object_random_fraction_wrapper_8c05b8e8(int, float, float);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void call_8c07c918(int, void *, void *, void *);
 extern "C" void operation_8c06c27c(Object *o, int a1)
@@ -556,15 +556,15 @@ extern "C" void operation_8c06c27c(Object *o, int a1)
                     ((ObjectData *)o)->f404 = 2;
                 }
             }
-            t10 = operation_8c05b90c((int)o);
+            t10 = object_random_fraction_wrapper_2_8c05b90c((int)o);
             t11 = njSin_8c37eb0c(t10);
             t12 = njCos_8c38c154(t10);
             (&frame)->f3c = ((ObjectData *)o)->f3b0 + t11 * 20.0f;
             (&frame)->f40 = ((ObjectData *)o)->f3b4;
             (&frame)->f44 = ((ObjectData *)o)->f3b8 + t12 * 20.0f;
-            t13 = operation_8c05b8e8((int)o, 2.0f, 0.5f);
+            t13 = object_random_fraction_wrapper_8c05b8e8((int)o, 2.0f, 0.5f);
             (&frame)->f30 = t11 * t13;
-            t14 = operation_8c05b8e8((int)o, 10.0f, 4.0f);
+            t14 = object_random_fraction_wrapper_8c05b8e8((int)o, 10.0f, 4.0f);
             (&frame)->f34 = t14;
             (&frame)->f38 = t12 * t13;
             t15 = heap_alloc_8c122700((void *)(*(S_g8c4d97e0 **)0x8c4d97e0), (unsigned int)0x58);

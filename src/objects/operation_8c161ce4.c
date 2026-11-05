@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern void set_transform_node_callback(int);
-void operation_8c161ce4(void)
+void set_transform_node_callback_wrapper_2_8c161ce4(void)
 {
     set_transform_node_callback(0);
 }

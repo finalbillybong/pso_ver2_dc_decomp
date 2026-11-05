@@ -13,7 +13,7 @@ extern void call_8c2069b4(int, void *);
 extern void call_8c20a644(void *, void *);
 extern void operator_delete_8c18de08(int);
 extern S_c8c20a5bc *recordb4_8c20a5bc(int);
-void operation_8c217728(TWindowSubShortMail *o)
+void TWindowSubShortMail_update_step_8c217728(TWindowSubShortMail *o)
 {
     int v1;
     int v2;

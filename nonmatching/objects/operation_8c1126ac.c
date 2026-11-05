@@ -54,7 +54,7 @@ struct S_vv9 {
     volatile unsigned short f80;
 };
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(Arg0_2c *, void *, int, int);
+extern void add_wrapper_8c156d30(Arg0_2c *, void *, int, int);
 extern void operation_8c156f50(void *);
 extern void operation_8c157138(void *);
 extern int operation_8c1571f4(void *);
@@ -70,8 +70,8 @@ void operation_8c1126ac(Object *o)
         *(Block8 *)&(&frame)->f00 = *(Block8 *)&*(Block8 *)0x8c30fec4;
         t1 = operation_8c156c24((int)(&frame), 2);
         o->f2c = (Arg0_2c *)t1;
-        operation_8c156d30((Arg0_2c *)(o->f2c), (void *)((*(S_g8c4dbc20 **)0x8c4dbc20)->f00->f10), 6, 0);
-        operation_8c156d30((Arg0_2c *)(o->f2c), (void *)((*(S_g8c4dbc20 **)0x8c4dbc20)->f00->f18), 6, 1);
+        add_wrapper_8c156d30((Arg0_2c *)(o->f2c), (void *)((*(S_g8c4dbc20 **)0x8c4dbc20)->f00->f10), 6, 0);
+        add_wrapper_8c156d30((Arg0_2c *)(o->f2c), (void *)((*(S_g8c4dbc20 **)0x8c4dbc20)->f00->f18), 6, 1);
         operation_8c156f50((void *)(o->f2c));
         operation_8c157138((void *)(o->f2c));
         o->f2c->f80 = (o->f2c->f80 & 0xffff) | 1;

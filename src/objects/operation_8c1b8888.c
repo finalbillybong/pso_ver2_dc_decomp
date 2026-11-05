@@ -19,7 +19,7 @@ struct S_c8c021ef8 {
 };
 extern int operation_8c1ae23c(void);
 extern int ring_actor_eligible(unsigned short);
-extern int operation_8c1b893c(int);
+extern int object_random_fraction_wrapper_3_8c1b893c(int);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern float call_8c130334(float, float);
 int operation_8c1b8888(int a0)
@@ -37,7 +37,7 @@ int operation_8c1b8888(int a0)
             goto L_8c1b88b6;
         }
     }
-    t3 = operation_8c1b893c(a0);
+    t3 = object_random_fraction_wrapper_3_8c1b893c(a0);
     return (int)(t3);
 L_8c1b88b6:;
     t4 = lookup_low_id((int)((unsigned short)t1));

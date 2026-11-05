@@ -72,7 +72,7 @@ typedef struct S_c8c03b55cData {
 extern "C" int current_mode_active(void);
 extern "C" S_c8c03b55c *call_8c03b55c(int, int);
 extern "C" void call_8c1851d8(void *);
-extern "C" int operation_8c02c194(void);
+extern "C" int get_current_area_wrapper_8c02c194(void);
 extern "C" int create_tracker_8c231984(int, int);
 extern "C" int call_8c02b1c4(Object *);
 extern "C" void call_8c02b0ec(Object *);
@@ -104,7 +104,7 @@ extern "C" void operation_8c020f28(Object *o)
             call_8c1851d8(((char *)o + 0x418));
         }
     }
-    t5 = operation_8c02c194();
+    t5 = get_current_area_wrapper_8c02c194();
     if (t5 != 0) {
         if (o->f50c == 0) {
             t6 = create_tracker_8c231984((int)o, (int)o->f20);

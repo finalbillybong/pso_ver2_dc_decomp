@@ -13,7 +13,7 @@ struct Object {
     int f84;
 };
 extern void call_8c04bd00(void *);
-void operation_8c1e3878(Object *o)
+void TWindowKeyBoardSoft_state02_8c1e3878(Object *o)
 {
     if (((o->f68 & 2)) != 0) {
         call_8c04bd00((void *)(((char *)o + 0x8c)));

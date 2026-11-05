@@ -27,14 +27,14 @@ extern void fn_8c0e1d14(void);
 extern void TOMineTrap_dtor_8c0fe190(void);
 extern void TOMineTrap_update_8c0fe344(void);
 extern void fn_8c0fcef4(void);
-extern void operation_8c0fdc44(void);
-extern void operation_8c0fd7c0(void);
-extern void fn_8c01d694(void);
+extern void TOMine_vslot03_8c0fdc44(void);
+extern void TOMine_vslot05_8c0fd7c0(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c043724(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void TOMineTrap_v13_8c0fec4c(void);
 extern void operation_8c0104f0(void);
@@ -48,11 +48,11 @@ extern void operation_8c013474(void);
 extern void TOMineTrap_v22_8c0fed0c(void);
 extern void TOMineTrap_v23_8c0fed20(void);
 extern void TOMineTrap_v24_8c0fea90(void);
-extern void operation_8c0fd6c8(void);
-extern void operation_8c0fd718(void);
-extern void operation_8c0fed34(void);
-extern void operation_8c0fed38(void);
-extern void operation_8c0fed3c(void);
+extern void TOMine_vslot25_8c0fd6c8(void);
+extern void TOMine_vslot26_8c0fd718(void);
+extern void TOMine_vslot27_8c0fed34(void);
+extern void TOMine_vslot28_8c0fed38(void);
+extern void TOMine_vslot29_8c0fed3c(void);
 extern void operation_8c0461f8(void);
 extern void operation_8c04621c(void);
 extern void operation_8c0462a0(void);
@@ -109,37 +109,37 @@ extern void operation_8c0134e0(void);
 extern void operation_8c0134e4(void);
 extern void operation_8c0134e8(void);
 extern void operation_8c0134ec(void);
-extern void operation_8c0fd328(void);
-extern void operation_8c0fd8ec(void);
-extern void operation_8c0fd330(void);
-extern void operation_8c0fd3cc(void);
-extern void operation_8c0fd3dc(void);
+extern void TOMine_vslot86_8c0fd328(void);
+extern void TOMine_vslot87_8c0fd8ec(void);
+extern void TOMine_vslot88_8c0fd330(void);
+extern void TOMine_vslot89_8c0fd3cc(void);
+extern void TOMine_vslot90_8c0fd3dc(void);
 extern void fn_8c0fd4b8(void);
 extern void TOMine_v92_8c0fd95c(void);
-extern void operation_8c0fda3c(void);
-extern void operation_8c0fdb1c(void);
-extern void operation_8c0fdbe0(void);
+extern void TOMine_vslot93_8c0fda3c(void);
+extern void TOMine_vslot94_8c0fdb1c(void);
+extern void TOMine_vslot95_8c0fdbe0(void);
 extern void TOMineTrap_v96_8c0fe828(void);
 extern void TOMineTrap_v97_8c0fe858(void);
 extern void TOMineTrap_v98_8c0fe9e4(void);
 extern void TOMine_v99_8c0fd32c(void);
 extern void TOMine_dtor_8c0fce4c(void);
-extern void operation_8c0fcff4(void);
-extern void operation_8c0fed80(void);
-extern void operation_8c0fed40(void);
-extern void operation_8c0fed60(void);
-extern void operation_8c0fd740(void);
-extern void operation_8c0fd5f8(void);
-extern void operation_8c0fd64c(void);
+extern void TOMine_vslot01_8c0fcff4(void);
+extern void TOMine_vslot13_8c0fed80(void);
+extern void TOMine_vslot22_8c0fed40(void);
+extern void TOMine_vslot23_8c0fed60(void);
+extern void TOMine_vslot24_8c0fd740(void);
+extern void TOMine_vslot96_8c0fd5f8(void);
+extern void TOMine_vslot97_8c0fd64c(void);
 extern void TOMine_v98_8c0fd8dc(void);
 extern void TOSignCave03_dtor_8c0fed94(void);
 extern void update_mode_8c0eea34(void);
 extern void TOSignCave03_render_8c0feee8(void);
 extern void operation_8c0eeb8c(void);
-extern void operation_8c0104fc(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010508(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0eea78(void);
 extern void TOSignCave02_dtor_8c0ff1b0(void);
 extern void TOSignCave02_render_8c0ff304(void);
@@ -209,15 +209,15 @@ VirtualFunction const TOMineTrap_vtable_8c2690a0[102] = {
     TOMineTrap_dtor_8c0fe190,
     TOMineTrap_update_8c0fe344,
     fn_8c0fcef4,
-    operation_8c0fdc44,
+    TOMine_vslot03_8c0fdc44,
     hierarchy_output,
-    operation_8c0fd7c0,
-    fn_8c01d694,
+    TOMine_vslot05_8c0fd7c0,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     TOMineTrap_v13_8c0fec4c,
     operation_8c0104f0,
@@ -231,11 +231,11 @@ VirtualFunction const TOMineTrap_vtable_8c2690a0[102] = {
     TOMineTrap_v22_8c0fed0c,
     TOMineTrap_v23_8c0fed20,
     TOMineTrap_v24_8c0fea90,
-    operation_8c0fd6c8,
-    operation_8c0fd718,
-    operation_8c0fed34,
-    operation_8c0fed38,
-    operation_8c0fed3c,
+    TOMine_vslot25_8c0fd6c8,
+    TOMine_vslot26_8c0fd718,
+    TOMine_vslot27_8c0fed34,
+    TOMine_vslot28_8c0fed38,
+    TOMine_vslot29_8c0fed3c,
     operation_8c0461f8,
     operation_8c04621c,
     operation_8c0462a0,
@@ -292,16 +292,16 @@ VirtualFunction const TOMineTrap_vtable_8c2690a0[102] = {
     operation_8c0134e4,
     operation_8c0134e8,
     operation_8c0134ec,
-    operation_8c0fd328,
-    operation_8c0fd8ec,
-    operation_8c0fd330,
-    operation_8c0fd3cc,
-    operation_8c0fd3dc,
+    TOMine_vslot86_8c0fd328,
+    TOMine_vslot87_8c0fd8ec,
+    TOMine_vslot88_8c0fd330,
+    TOMine_vslot89_8c0fd3cc,
+    TOMine_vslot90_8c0fd3dc,
     fn_8c0fd4b8,
     TOMine_v92_8c0fd95c,
-    operation_8c0fda3c,
-    operation_8c0fdb1c,
-    operation_8c0fdbe0,
+    TOMine_vslot93_8c0fda3c,
+    TOMine_vslot94_8c0fdb1c,
+    TOMine_vslot95_8c0fdbe0,
     TOMineTrap_v96_8c0fe828,
     TOMineTrap_v97_8c0fe858,
     TOMineTrap_v98_8c0fe9e4,
@@ -313,19 +313,19 @@ VirtualFunction const TOMine_vtable_8c269238[102] = {
     0,
     0,
     TOMine_dtor_8c0fce4c,
-    operation_8c0fcff4,
+    TOMine_vslot01_8c0fcff4,
     fn_8c0fcef4,
-    operation_8c0fdc44,
+    TOMine_vslot03_8c0fdc44,
     hierarchy_output,
-    operation_8c0fd7c0,
-    fn_8c01d694,
+    TOMine_vslot05_8c0fd7c0,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c0fed80,
+    TOMine_vslot13_8c0fed80,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,
@@ -334,14 +334,14 @@ VirtualFunction const TOMine_vtable_8c269238[102] = {
     query_position_height,
     operation_8c04a4f4,
     operation_8c013474,
-    operation_8c0fed40,
-    operation_8c0fed60,
-    operation_8c0fd740,
-    operation_8c0fd6c8,
-    operation_8c0fd718,
-    operation_8c0fed34,
-    operation_8c0fed38,
-    operation_8c0fed3c,
+    TOMine_vslot22_8c0fed40,
+    TOMine_vslot23_8c0fed60,
+    TOMine_vslot24_8c0fd740,
+    TOMine_vslot25_8c0fd6c8,
+    TOMine_vslot26_8c0fd718,
+    TOMine_vslot27_8c0fed34,
+    TOMine_vslot28_8c0fed38,
+    TOMine_vslot29_8c0fed3c,
     operation_8c0461f8,
     operation_8c04621c,
     operation_8c0462a0,
@@ -398,18 +398,18 @@ VirtualFunction const TOMine_vtable_8c269238[102] = {
     operation_8c0134e4,
     operation_8c0134e8,
     operation_8c0134ec,
-    operation_8c0fd328,
-    operation_8c0fd8ec,
-    operation_8c0fd330,
-    operation_8c0fd3cc,
-    operation_8c0fd3dc,
+    TOMine_vslot86_8c0fd328,
+    TOMine_vslot87_8c0fd8ec,
+    TOMine_vslot88_8c0fd330,
+    TOMine_vslot89_8c0fd3cc,
+    TOMine_vslot90_8c0fd3dc,
     fn_8c0fd4b8,
     TOMine_v92_8c0fd95c,
-    operation_8c0fda3c,
-    operation_8c0fdb1c,
-    operation_8c0fdbe0,
-    operation_8c0fd5f8,
-    operation_8c0fd64c,
+    TOMine_vslot93_8c0fda3c,
+    TOMine_vslot94_8c0fdb1c,
+    TOMine_vslot95_8c0fdbe0,
+    TOMine_vslot96_8c0fd5f8,
+    TOMine_vslot97_8c0fd64c,
     TOMine_v98_8c0fd8dc,
     TOMine_v99_8c0fd32c
 };
@@ -423,15 +423,15 @@ VirtualFunction const TOSignCave03_vtable_8c2693d0[18] = {
     TOSignCave03_render_8c0feee8,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0eea78
 };
@@ -445,15 +445,15 @@ VirtualFunction const TOSignCave02_vtable_8c269418[18] = {
     TOSignCave02_render_8c0ff304,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0eea78
 };
@@ -467,15 +467,15 @@ VirtualFunction const TOSignCave01_vtable_8c269460[18] = {
     TOSignCave01_render_8c0ff688,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0eea78
 };
@@ -489,15 +489,15 @@ VirtualFunction const TOAirconCave01_vtable_8c2694a8[18] = {
     TOAirconCave01_render_8c0ffa10,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     TOAirconCave01_v15_8c0ffac0
 };
@@ -511,15 +511,15 @@ VirtualFunction const vt_8c2694f0[18] = {
     operation_8c0ffcb0,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0ffdbc
 };
@@ -533,15 +533,15 @@ VirtualFunction const TObjEnvSound_vtable_8c269538[16] = {
     TObject_render_default_8c0111c8,
     TObjEnvSound_render_shadow_8c100dcc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TObjEnvSound_v09_8c100cf4,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };
 
 /* 8c269578: type-information and this-adjustment header, then 14 slots */
@@ -553,13 +553,13 @@ VirtualFunction const TRaderMapCore_vtable_8c269578[16] = {
     TRaderMapCore_render_8c10165c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };

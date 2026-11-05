@@ -175,13 +175,13 @@ public:
 typedef struct Arg0_6a0Data {
 
 } Arg0_6a0Data;
-extern "C" void operation_8c07c1a8(void *);
+extern "C" void process_entries_wrapper_2_8c07c1a8(void *);
 extern "C" void operation_8c0368a8(void *);
 extern "C" void call_8c06741c(Object *);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int check_range_8c01cf68(void *, float);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
-extern "C" void operation_8c07c18c(void *);
+extern "C" void process_entries_wrapper_8c07c18c(void *);
 extern "C" void operation_8c069524(Object *o, int a1)
 {
     int pm6;
@@ -214,7 +214,7 @@ extern "C" void operation_8c069524(Object *o, int a1)
         ((ObjectData *)o)->f3dc = ((ObjectData *)o)->f3dc & -0xc81;
         ((ObjectData *)o)->f3dc = ((ObjectData *)o)->f3dc | 0x200;
         v1->f00 = 0;
-        operation_8c07c1a8((void *)(((ObjectData *)o)->f6a0));
+        process_entries_wrapper_2_8c07c1a8((void *)(((ObjectData *)o)->f6a0));
         return;
         case 2:
         case 11:
@@ -269,11 +269,11 @@ extern "C" void operation_8c069524(Object *o, int a1)
             int t3;
             t3 = check_range_8c01cf68((void *)o, 10.0f);
             if ((t3 != 0)) {
-                operation_8c07c18c((void *)(((ObjectData *)o)->f6a0));
+                process_entries_wrapper_8c07c18c((void *)(((ObjectData *)o)->f6a0));
             } else {
                 t4 = check_range_8c01cf68((void *)o, 23.0f);
                 if (!(0 == t4)) {
-                    operation_8c07c1a8((void *)(((ObjectData *)o)->f6a0));
+                    process_entries_wrapper_2_8c07c1a8((void *)(((ObjectData *)o)->f6a0));
                 }
             }
             ((ObjectData *)o)->f6a0->v1();

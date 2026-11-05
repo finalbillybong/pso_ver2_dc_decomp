@@ -36,7 +36,7 @@ struct S_c8c156bd8 {
     unsigned short f80;
 };
 extern S_c8c156bd8 *call_8c156bd8(void *, int, void *);
-extern void call_8c156d30(int, void *, int, int);
+extern void add_wrapper_8c156d30(int, void *, int, int);
 extern void call_8c156d48(int, void *, int, int, int);
 extern void call_8c1570b4(S_c8c156bd8 *, float, float);
 extern void call_8c157138(S_c8c156bd8 *);
@@ -44,14 +44,14 @@ S_c8c156bd8 *operation_8c1d1a1c(Object *o)
 {
     S_c8c156bd8 *t1;
     t1 = call_8c156bd8((void *)0x8c32996c, 3, (*(S_g8c467180 **)0x8c467180)->f2c->f414);
-    call_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f440, 6, 8);
+    add_wrapper_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f440, 6, 8);
     if (((o->f34->f00 & 1)) != 0) {
-        call_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f444, 6, 0x1e);
+        add_wrapper_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f444, 6, 0x1e);
     } else {
         call_8c156d48((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f444, 0x16, 0x1e, -0x979798);
     }
     if (*(char *)0x8c5059fc > 0) {
-        call_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f448, 6, 0x20);
+        add_wrapper_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f448, 6, 0x20);
     } else {
         call_8c156d48((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f448, 0x16, 0x20, -0x979798);
     }

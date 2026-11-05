@@ -3,7 +3,7 @@
 typedef void (*VirtualFunction)(void);
 
 extern void destroy_object_8c167070(void);
-extern void operation_8c03ceac(void);
+extern void TEditor_update_8c03ceac(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
@@ -13,15 +13,15 @@ extern void fn_8c1670cc(void);
 extern void TBoss2PhotonBullet_dtor_8c16737c(void);
 extern void TBoss2PhotonBullet_update_8c1673dc(void);
 extern void TBoss2PhotonBullet_render_8c1675d0(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c0f3780(void);
 extern void fn_8c0f37ec(void);
@@ -32,7 +32,7 @@ VirtualFunction const vt_8c26fec4[10] = {
     0,
     0,
     destroy_object_8c167070,
-    operation_8c03ceac,
+    TEditor_update_8c03ceac,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
@@ -50,15 +50,15 @@ VirtualFunction const TBoss2PhotonBullet_vtable_8c26feec[20] = {
     TBoss2PhotonBullet_render_8c1675d0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0f3780,
     fn_8c0f37ec,

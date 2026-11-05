@@ -8,7 +8,7 @@ struct S_vv5 {
 extern float squared_distance_xz(void *, void *);
 extern void call_8c161a80(TObjEnePanarmsAtkColli *, S_vv5 *);
 extern void call_8c161afc(TObjEnePanarmsAtkColli *, void *);
-void operation_8c161874(TObjEnePanarmsAtkColli *o)
+void TObjEnePanarmsAtkColli_update_step_8c161874(TObjEnePanarmsAtkColli *o)
 {
     S_vv5 *v5;
     int v4;

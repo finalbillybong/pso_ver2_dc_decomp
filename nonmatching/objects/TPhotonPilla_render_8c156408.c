@@ -79,7 +79,7 @@ extern void operation_8c13ef08(void *);
 extern void call_8c38c0e6(int, int);
 extern void call_8c38c0f0(void *);
 extern void operation_8c01cc90(void *);
-extern void operation_8c13ef3c(Object *);
+extern void set_transform_node_callback_wrapper_8c13ef3c(Object *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void reset_state_8c391cc4(void);
 void TPhotonPilla_render_8c156408(Object *o)
@@ -117,7 +117,7 @@ void TPhotonPilla_render_8c156408(Object *o)
         v2->f00 = *v6;
         *(Block16 *)&(&g_8c5755ac)->f00 = *(Block16 *)&(&g_8c46f564)->f00;
         g_8c575570 = (int)(g_8c46f560);
-        operation_8c13ef3c(o);
+        set_transform_node_callback_wrapper_8c13ef3c(o);
         njPopMatrixEx_8c38ad10();
         reset_state_8c391cc4();
     }

@@ -7,15 +7,15 @@ extern void TObjMesBase_update_8c1ab1b8(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
+extern void TObjectShared_vslot08_8c010500(void);
 extern void TObjMesBase_v09_8c1ab2c8(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void TObjMesBase_v14_8c1ab228(void);
 extern void TObjMesBase_v15_8c1ab1f0(void);
 extern void TObjMesBase_v16_8c1ab1f4(void);
@@ -36,15 +36,15 @@ VirtualFunction const TObjMesBase_vtable_8c2747ac[19] = {
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TObjMesBase_v09_8c1ab2c8,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     TObjMesBase_v14_8c1ab228,
     TObjMesBase_v15_8c1ab1f0,
     TObjMesBase_v16_8c1ab1f4
@@ -59,15 +59,15 @@ VirtualFunction const TObjItemLight_vtable_8c2747f8[16] = {
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TObjItemLight_v09_8c1ab4b8,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };
 
 /* 8c274838: type-information and this-adjustment header, then 5 slots */

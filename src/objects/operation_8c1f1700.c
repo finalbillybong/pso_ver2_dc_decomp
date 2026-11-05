@@ -30,7 +30,7 @@ extern int call_8c372d38(int, void *);
 extern void operation_8c1f195c(void *);
 extern int pair_grid_view_ready(void *);
 extern int call_8c1f18d8(Object *);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void call_8c119c78(void *);
 extern void operation_8c1f19a0(void *);
 extern void select_mode19_8c1cc648(void);
@@ -66,7 +66,7 @@ void operation_8c1f1700(Object *o)
             return;
         }
         if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-            t6 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+            t6 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
             if (t6 == 0) {
                 return;
             }

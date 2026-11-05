@@ -7,13 +7,13 @@ extern void TBoss3VoloptHiraisin_update_8c150760(void);
 extern void TBoss3VoloptHiraisin_render_8c150934(void);
 extern void actor_render_noop_a(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c043724(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c013448(void);
 extern void operation_8c0104f0(void);
@@ -105,8 +105,8 @@ extern void TPhotonLeilla_update_8c155afc(void);
 extern void TPhotonLeilla_render_8c155cc4(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void fn_8c01c544(void);
-extern void operation_8c010508(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c13ebb4(void);
 extern void operation_8c13ec0c(void);
 extern void TPhotonPilla_dtor_8c1561bc(void);
@@ -130,7 +130,7 @@ extern void TObjMapWarpAncient_dtor_8c1578a4(void);
 extern void TObjMapWarpAncient_update_8c1578e8(void);
 extern void TObjMapWarpAncient_render_8c1579d8(void);
 extern void TObjMapWarpAncient_v09_8c157950(void);
-extern void operation_8c08893c(void);
+extern void TObjMapWarpAncient_vslot16_8c08893c(void);
 
 /* 8c26e688: type-information and this-adjustment header, then 89 slots */
 VirtualFunction const TBoss3VoloptHiraisin_vtable_8c26e688[91] = {
@@ -141,13 +141,13 @@ VirtualFunction const TBoss3VoloptHiraisin_vtable_8c26e688[91] = {
     TBoss3VoloptHiraisin_render_8c150934,
     actor_render_noop_a,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -236,13 +236,13 @@ VirtualFunction const TBoss3VoloptMonitor_vtable_8c26e7f4[91] = {
     TBoss3VoloptMonitor_render_8c1516d8,
     actor_render_noop_a,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -331,13 +331,13 @@ VirtualFunction const vt_8c26e960[91] = {
     fn_8c1525ec,
     actor_render_noop_a,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -426,15 +426,15 @@ VirtualFunction const TPhotonLeilla_vtable_8c26eacc[19] = {
     TPhotonLeilla_render_8c155cc4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c01c544,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c13ebb4,
     operation_8c13ec0c
@@ -449,15 +449,15 @@ VirtualFunction const TPhotonPilla_vtable_8c26eb18[19] = {
     TPhotonPilla_render_8c156408,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c01c544,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c13ebb4,
     operation_8c13ec0c
@@ -484,15 +484,15 @@ VirtualFunction const vt_8c26eb84[22] = {
     fn_8c157e74,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c157dd4,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c088744,
     operation_8c089060,
@@ -510,18 +510,18 @@ VirtualFunction const TObjMapWarpAncient_vtable_8c26ebdc[21] = {
     TObjMapWarpAncient_render_8c1579d8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TObjMapWarpAncient_v09_8c157950,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c088744,
-    operation_8c08893c,
+    TObjMapWarpAncient_vslot16_8c08893c,
     operation_8c08876c,
     operation_8c0887b4
 };

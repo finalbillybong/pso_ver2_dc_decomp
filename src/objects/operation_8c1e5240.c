@@ -54,7 +54,7 @@ struct Arg0_34 {
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void request_resource_release(void *);
 extern void operation_8c19a044(void *, int);
-extern void operation_8c1e5820(void *);
+extern void TWindowMakeTeam_update_step_8c1e5820(void *);
 extern int operation_8c1dc5d8(void *);
 extern void operation_8c1e5884(void *, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
@@ -116,7 +116,7 @@ void TWindowMakeTeam_update_8c1e5240(Object *o)
         if (v10->f88 != 0) {
             operation_8c19a044((void *)(v10->f88), 1);
         }
-        operation_8c1e5820((void *)o);
+        TWindowMakeTeam_update_step_8c1e5820((void *)o);
         o->f20 = 2;
     case 2:
         if (((o->f30->f80 & 0xffff & 4)) != 0) {

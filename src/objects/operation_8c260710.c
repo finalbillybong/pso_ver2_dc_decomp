@@ -31,7 +31,7 @@ struct S_vv9 {
 };
 extern char g_8c41cba0[];
 extern S_c8c051d18 *operation_8c051d18(void *);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void request_resource_release(void *);
 extern void operator_delete_8c18de08(S_c8c051d18 *);
@@ -47,7 +47,7 @@ void operation_8c260710(Object *o)
         goto L_8c260748;
     }
     if ((char)v1 == 0) {
-        t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+        t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
         if (t1 != 0) {
 L_8c260748:;
             play_se_8c05fbf8(0x50016, 0, 0, 0);

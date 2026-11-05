@@ -12,7 +12,7 @@ struct Object {
     char unknown3b0[0xc];
     float f3bc;
 };
-void operation_8c0fa8b0(Object *o)
+void TObjEneSlimeOne_state27_8c0fa8b0(Object *o)
 {
     if (0.0f > (o->f3bc += -0.2f)) {
         o->f3bc = 0.0f;

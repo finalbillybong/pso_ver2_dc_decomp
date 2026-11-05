@@ -43,7 +43,7 @@ typedef struct ObjectData {
     char unknown114[0x98];
     int f1ac;
 } ObjectData;
-extern "C" int operation_8c1e8d88(void);
+extern "C" int get_game_mode_wrapper_5_8c1e8d88(void);
 extern "C" int find_local_actor_in_radius(void *, float);
 extern "C" void operation_8c1e8b78(int, int);
 extern "C" void operation_8c1e8788(Object *o)
@@ -67,7 +67,7 @@ extern "C" void operation_8c1e8788(Object *o)
         ((ObjectData *)o)->f104 = (int)(*(int *)0x8c4e3154);
         return;
 L_8c1e87d8:;
-        t1 = operation_8c1e8d88();
+        t1 = get_game_mode_wrapper_5_8c1e8d88();
         if (t1 == 0) {
             t2 = find_local_actor_in_radius((void *)o, ((ObjectData *)o)->fe4);
             if (t2 != 0) {

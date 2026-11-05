@@ -3,7 +3,7 @@ typedef struct TOMine_p60 TOMine_p60;
 extern float njSin_8c37eb0c(void *);
 extern void update_object_center(void *);
 extern void transform_actor_records(void *);
-void operation_8c0fd330(TOMine *o)
+void TOMine_vslot88_8c0fd330(TOMine *o)
 {
     float t1;
     if (((o->f350 & 2)) == 0) {

@@ -315,7 +315,7 @@ extern "C" void TObjBoss1MokoHill_SoloM_ctor_8c0cccd8(void *, int, void *, int);
 extern "C" void start_context_blend(void *);
 extern "C" int operation_8c05bbf8(void);
 extern "C" void operation_8c0f33fc(void *, int, int);
-extern "C" int operation_8c05bae8(void);
+extern "C" int get_game_mode_wrapper_3_8c05bae8(void);
 extern "C" int call_8c05bb18(Object *);
 extern "C" void call_8c066db4(Object *);
 extern "C" Object *operation_8c065c24(Object *o, int a1, int a2)
@@ -519,7 +519,7 @@ L_8c06619a:;
     ((ObjectData *)o)->f700 = (void *)(g_8c41cba0 + 0x98);
     ((ObjectData *)o)->f6fc = 0;
     ((ObjectData *)o)->f30a = 0;
-    t8 = operation_8c05bae8();
+    t8 = get_game_mode_wrapper_3_8c05bae8();
     if (t8 != 0) {
         t9 = call_8c05bb18(o);
         if (t9 != 0) {

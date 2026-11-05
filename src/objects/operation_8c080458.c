@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c080458(void)
+void TObjContainerIdo_vslot15_8c080458(void)
 {
 }

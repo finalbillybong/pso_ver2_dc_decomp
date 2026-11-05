@@ -191,7 +191,7 @@ extern int g_8c575570;
 extern int g_8c5755a4;
 extern int g_8c5755a8;
 extern "C" int operation_8c03d338(void);
-extern "C" int operation_8c05bae8(void);
+extern "C" int get_game_mode_wrapper_3_8c05bae8(void);
 extern "C" void call_8c05ba9c(Object *, Frame *);
 extern "C" int update_depth_mode(void *, void *);
 extern "C" void call_8c05b9dc(Object *);
@@ -227,7 +227,7 @@ extern "C" void TObjEneBm3FlyNest_render_8c0595e4(Object *o)
     ((ObjectData *)o)->f3c8 = 0;
     if (((ObjectData *)o)->f30a == 9) {
     } else {
-        t2 = operation_8c05bae8();
+        t2 = get_game_mode_wrapper_3_8c05bae8();
         if (t2 != 0) {
             v1 = o->v12(g_8c284bd8 + 25.0f, g_8c284bd4 + 50.0f, 120.0f);
         } else {

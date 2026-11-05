@@ -1,6 +1,6 @@
 #include "src/include/classes/TObjWarnChime.h"
-extern void operation_8c25c51c(void *);
-extern void operation_8c25c540(void *);
+extern void TObjWarnChime_update_step_8c25c51c(void *);
+extern void TObjWarnChime_update_step_2_8c25c540(void *);
 void TObjWarnChime_update_8c25c4ec(TObjWarnChime *o)
 {
     if (o->f20 != 0) {
@@ -8,8 +8,8 @@ void TObjWarnChime_update_8c25c4ec(TObjWarnChime *o)
             return;
         }
     } else {
-        operation_8c25c51c((void *)o);
+        TObjWarnChime_update_step_8c25c51c((void *)o);
         return;
     }
-    operation_8c25c540((void *)o);
+    TObjWarnChime_update_step_2_8c25c540((void *)o);
 }

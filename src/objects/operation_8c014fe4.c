@@ -11,7 +11,7 @@ struct S_vv1 {
 };
 extern char g_8c418280[];
 extern void call_8c3c1500(float, float, float);
-void operation_8c014fe4(void)
+void view_set_eye_wrapper_8c014fe4(void)
 {
     S_vv1 *v1;
     v1 = (S_vv1 *)(g_8c418280 + 0xc);

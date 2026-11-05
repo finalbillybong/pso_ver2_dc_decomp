@@ -18,7 +18,7 @@ typedef struct ObjectData {
     char unknown0[0x70];
     int f70;
 } ObjectData;
-extern "C" void operation_8c0ad90c(void *, int, int, int);
+extern "C" void step_vector_toward_wrapper_8c0ad90c(void *, int, int, int);
 extern "C" void operation_8c0ad92c(void *);
 extern "C" void operation_8c0ad8cc(Object *o, int a1, int a2, int a3)
 {
@@ -27,7 +27,7 @@ extern "C" void operation_8c0ad8cc(Object *o, int a1, int a2, int a3)
             return;
         }
     } else {
-        operation_8c0ad90c((void *)o, a1, a2, a3);
+        step_vector_toward_wrapper_8c0ad90c((void *)o, a1, a2, a3);
         operation_8c0ad92c((void *)o);
         return;
     }

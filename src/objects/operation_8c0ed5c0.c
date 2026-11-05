@@ -12,7 +12,7 @@ extern void call_8c01c244(int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c0ed1e4(int);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c0ed5c0(void)
+void game_mode_05_init_8c0ed5c0(void)
 {
     int t1;
     call_8c37e4a8(1.0f, 1.0f);

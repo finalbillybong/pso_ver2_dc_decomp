@@ -12,7 +12,7 @@ struct Object {
     Arg0_20 *f20;
 };
 extern int hierarchy_is_active(void *);
-void operation_8c1dde54(Object *o)
+void hierarchy_is_active_wrapper_3_8c1dde54(Object *o)
 {
     int t1;
     t1 = hierarchy_is_active((void *)(o->f20));

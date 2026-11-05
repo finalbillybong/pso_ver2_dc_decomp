@@ -39,7 +39,7 @@ struct Arg0_70 {
 extern int call_8c1f556c(void *, Frame *);
 extern void operation_8c1e2058(int, unsigned int);
 extern void call_8c1e1988(Object *);
-void operation_8c1e2dc4(Object *o)
+void TWindowKeyBoardSoft_state16_8c1e2dc4(Object *o)
 {
     int v9;
     Frame frame;

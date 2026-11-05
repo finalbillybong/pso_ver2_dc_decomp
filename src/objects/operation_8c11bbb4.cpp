@@ -23,7 +23,7 @@ typedef void (PmfObj::*PMF_0)();
 extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c11afa0(int);
 extern "C" int call_8c18e6fc(Frame *);
-extern "C" void operation_8c11bbb4(Object *o)
+extern "C" void TObjEnePanarms_state01_8c11bbb4(Object *o)
 {
     Frame frame;
     int t1;

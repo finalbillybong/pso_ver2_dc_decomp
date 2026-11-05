@@ -146,7 +146,7 @@ struct S_vv12 {
     short f332;
 };
 extern "C" void set_330(void *, short);
-extern "C" void operation_8c20a35c(Object *o)
+extern "C" void TItemProShield_vslot23_8c20a35c(Object *o)
 {
     S_vv41 *v41;
     short v2;

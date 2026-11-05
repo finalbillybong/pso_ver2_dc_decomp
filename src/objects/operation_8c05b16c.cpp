@@ -108,7 +108,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern "C" void call_8c0521a0(int);
 extern "C" void call_8c05228c(int);
-extern "C" void operation_8c05b16c(Object *o)
+extern "C" void TObjEneDD_vslot95_8c05b16c(Object *o)
 {
     o->v94();
     call_8c0521a0((int)(o));

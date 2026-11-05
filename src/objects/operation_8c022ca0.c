@@ -1,6 +1,6 @@
 #include "src/include/classes/TObjPlayer.h"
 extern int call_8c03b55c(void *, int);
-int operation_8c022ca0(TObjPlayer *o)
+int TObjPlayer_vslot75_8c022ca0(TObjPlayer *o)
 {
     int t1;
     t1 = call_8c03b55c((void *)(((char *)o + 0xbcc)), 6);

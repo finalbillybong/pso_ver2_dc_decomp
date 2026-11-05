@@ -24,7 +24,7 @@ struct Arg0_398 {
     int f18;
 };
 extern float object_random_fraction(void *);
-void operation_8c1605f0(Object *o)
+void TObjEnePanBARA_state20_8c1605f0(Object *o)
 {
     float t1;
     o->f398->f18 |= 1;

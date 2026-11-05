@@ -1,6 +1,6 @@
 #include "src/include/classes/TOKeyMachine01.h"
 extern "C" void operation_8c1130e8(void *);
-extern "C" void call_8c162c24(TOKeyMachine01 *, int);
+extern "C" void TOKeyMachine01_update_step_8c162c24(TOKeyMachine01 *, int);
 extern "C" void TOKeyMachine01_update_8c1629d4(TOKeyMachine01 *o)
 {
     int t1;
@@ -12,7 +12,7 @@ extern "C" void TOKeyMachine01_update_8c1629d4(TOKeyMachine01 *o)
         if (t1 != 1) {
             return;
         }
-        call_8c162c24(o, 1);
+        TOKeyMachine01_update_step_8c162c24(o, 1);
         o->v19();
         o->f10c = 1;
         return;
@@ -20,7 +20,7 @@ extern "C" void TOKeyMachine01_update_8c1629d4(TOKeyMachine01 *o)
     o->v17();
     t2 = o->v16();
     if (t2 != 1) {
-        call_8c162c24(o, 0);
+        TOKeyMachine01_update_step_8c162c24(o, 0);
         o->v20();
         o->f10c = 0;
     }

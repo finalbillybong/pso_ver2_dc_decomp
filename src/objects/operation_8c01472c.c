@@ -11,7 +11,7 @@ struct S_vv1 {
 };
 extern char g_8c418280[];
 extern void call_8c37e864(int, float, float, float);
-void operation_8c01472c(int a0)
+void set_vector_wrapper_8c01472c(int a0)
 {
     S_vv1 *v1;
     v1 = (S_vv1 *)(g_8c418280 + 0xc);

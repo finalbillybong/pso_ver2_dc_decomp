@@ -25,7 +25,7 @@ extern void operation_8c1cc690(void);
 extern int operation_8c01d858(int, int, int, int);
 extern int operation_8c01d844(int, int, int, int);
 extern void play_se_8c05fbf8(int, int, int, int);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void operation_8c1a6214(Object *);
 extern void call_8c01c380(void);
 extern void operation_8c1a6240(Object *);
@@ -78,7 +78,7 @@ L_8c1a5774:;
     }
     o->f261 = o->f260;
     if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-        t5 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+        t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
         if (t5 == 0) {
             goto L_8c1a57c4;
         }
@@ -87,7 +87,7 @@ L_8c1a5774:;
     v1 = (int)(v1 | 1);
 L_8c1a57c4:;
     if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-        t6 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+        t6 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
         if (t6 == 0) {
             goto L_8c1a57ee;
         }

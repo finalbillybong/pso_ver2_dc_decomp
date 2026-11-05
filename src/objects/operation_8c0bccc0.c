@@ -48,7 +48,7 @@ extern void call_8c0344f0(void *, int, int, int);
 extern int operation_8c03d338(void);
 extern void operation_8c0bf850(Object *);
 extern void initialize_link_node_8c0bd6c8(void *);
-extern void call_8c0bda08(Object *);
+extern void TObjEneSaver_update_step_8c0bda08(Object *);
 extern void call_8c0bdabc(Object *);
 extern void call_8c0bdbc4(Object *);
 extern void call_8c0be124(Object *);
@@ -81,7 +81,7 @@ void TObjEneSaver_update_8c0bccc0(Object *o)
         initialize_link_node_8c0bd6c8((void *)o);
         break;
     case 1:
-        call_8c0bda08(o);
+        TObjEneSaver_update_step_8c0bda08(o);
         break;
     case 2:
         call_8c0bdabc(o);

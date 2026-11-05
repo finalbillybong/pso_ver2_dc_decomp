@@ -43,7 +43,7 @@ extern int call_8c1e3d6c(Object *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c051a98(void *, int, int, int, unsigned char);
 extern void operation_8c051d5c(void *, float, float);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void call_8c119c78(void *);
 extern int operation_8c051cf0(void *);
 extern S_c8c051d18 *operation_8c051d18(void *);
@@ -103,7 +103,7 @@ void operation_8c1e3a58(Object *o)
     switch (t4) {
     case 0:
         if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-            t5 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+            t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
             if (t5 == 0) {
                 return;
             }

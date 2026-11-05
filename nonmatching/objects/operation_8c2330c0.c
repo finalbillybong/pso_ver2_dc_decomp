@@ -51,7 +51,7 @@ struct Arg0_2c {
 extern Block8 g_8c338ca0;
 extern S_g8c467180 *g_8c467180;
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(Arg0_2c *, void *, int, int);
+extern void add_wrapper_8c156d30(Arg0_2c *, void *, int, int);
 extern void operation_8c15700c(Arg0_2c *, float);
 extern void operation_8c1571d4(void *, int);
 extern void operation_8c157138(void *);
@@ -62,9 +62,9 @@ void operation_8c2330c0(Object *o)
     *(Block8 *)&(&frame)->f00 = *(Block8 *)&g_8c338ca0;
     t1 = operation_8c156c24((int)(&frame), 3);
     o->f2c = (Arg0_2c *)t1;
-    operation_8c156d30((Arg0_2c *)(o->f2c), (void *)(g_8c467180->f70->f14), 2, 0);
-    operation_8c156d30((Arg0_2c *)(o->f2c), (void *)(g_8c467180->f70->f18), 6, 1);
-    operation_8c156d30((Arg0_2c *)(o->f2c), (void *)(g_8c467180->f70->f1c), 6, 2);
+    add_wrapper_8c156d30((Arg0_2c *)(o->f2c), (void *)(g_8c467180->f70->f14), 2, 0);
+    add_wrapper_8c156d30((Arg0_2c *)(o->f2c), (void *)(g_8c467180->f70->f18), 6, 1);
+    add_wrapper_8c156d30((Arg0_2c *)(o->f2c), (void *)(g_8c467180->f70->f1c), 6, 2);
     operation_8c15700c((Arg0_2c *)(o->f2c), 442.0f);
     operation_8c1571d4((void *)(o->f2c), 2);
     operation_8c157138((void *)(o->f2c));

@@ -43,7 +43,7 @@ typedef struct ObjectData {
     short f140;
     short f142;
 } ObjectData;
-extern "C" void operation_8c20a430(Object *o, int a1)
+extern "C" void TItemProShield_vslot18_8c20a430(Object *o, int a1)
 {
     int t1;
     ((ObjectData *)o)->f140 = a1;

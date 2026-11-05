@@ -17,7 +17,7 @@ struct S_g8c467180_2c {
 extern int current_mode_active(void);
 extern int current_mode_in_range(void);
 extern void call_8c156d48(int, void *, int, int, int);
-extern void operation_8c156d30(int, void *, int, int);
+extern void add_wrapper_8c156d30(int, void *, int, int);
 void operation_8c1a38c4(int a0, int a1, int a2)
 {
     int v1;
@@ -38,5 +38,5 @@ void operation_8c1a38c4(int a0, int a1, int a2)
     call_8c156d48(a1, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f4e8), 0x36, v1, -0x979798);
     return;
 L_8c1a390a:;
-    operation_8c156d30(a1, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f4e8), 0x26, v1);
+    add_wrapper_8c156d30(a1, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f4e8), 0x26, v1);
 }

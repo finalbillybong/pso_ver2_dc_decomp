@@ -30,7 +30,7 @@ struct S_g8c46fe20_54 {
     short f22;
 };
 extern int operation_8c156c24(int, int);
-extern void call_8c156d30(Arg0_e8 *, void *, int, int);
+extern void add_wrapper_8c156d30(Arg0_e8 *, void *, int, int);
 extern void call_8c156f50(Arg0_e8 *);
 extern void call_8c157138(Arg0_e8 *);
 void operation_8c1a268c(Object *o)
@@ -44,7 +44,7 @@ void operation_8c1a268c(Object *o)
     o->fe8 = (Arg0_e8 *)t1;
     v1 = (int)0;
     while (0xf > v1) {
-        call_8c156d30((Arg0_e8 *)(o->fe8), (void *)(*(S_g8c31d9c0 **)((char *)0x8c31d9c0 + (v1 << 2))), 6, v1);
+        add_wrapper_8c156d30((Arg0_e8 *)(o->fe8), (void *)(*(S_g8c31d9c0 **)((char *)0x8c31d9c0 + (v1 << 2))), 6, v1);
         v1 = (int)(v1 + 1);
     }
     call_8c156f50((Arg0_e8 *)(o->fe8));

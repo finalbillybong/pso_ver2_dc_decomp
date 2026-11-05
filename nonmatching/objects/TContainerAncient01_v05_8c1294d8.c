@@ -28,7 +28,7 @@ struct Object {
     int f378;
 };
 extern void operation_8c05428c(Object *, int, int);
-extern void operation_8c129a08(Object *, void *, int);
+extern void create_effect_777c_wrapper_8c129a08(Object *, void *, int);
 void TContainerAncient01_v05_8c1294d8(Object *o, Arg1 *a1, int a2)
 {
     if (a2 != 0) {
@@ -37,8 +37,8 @@ void TContainerAncient01_v05_8c1294d8(Object *o, Arg1 *a1, int a2)
         }
         o->f378 = 1;
         operation_8c05428c(o, 0, 1);
-        operation_8c129a08(o, ((char *)o + 0x3c), 0x45);
-        operation_8c129a08(o, ((char *)o + 0x3c), 0x46);
+        create_effect_777c_wrapper_8c129a08(o, ((char *)o + 0x3c), 0x45);
+        create_effect_777c_wrapper_8c129a08(o, ((char *)o + 0x3c), 0x46);
         o->f378 = 1;
         return;
     }

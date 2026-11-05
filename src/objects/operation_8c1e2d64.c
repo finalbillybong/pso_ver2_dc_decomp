@@ -22,7 +22,7 @@ struct Arg0_70 {
 };
 extern void call_8c1e1a54(void);
 extern void call_8c1e18bc(void);
-void operation_8c1e2d64(Object *o)
+void TWindowKeyBoardSoft_state15_8c1e2d64(Object *o)
 {
     if (((o->f68 & 4)) != 0) {
         if (((o->f6a & 1)) != 0 && ((o->fbc & 0x20)) == 0) {

@@ -36,7 +36,7 @@ extern void refresh_follow_effect_8c0129f4(void *);
 extern void play_se_8c05fbf8(int, void *, int, int);
 extern void create_effect_777c(void *, int);
 extern void call_8c0ffdf0(void *, int);
-void operation_8c0fa798(Object *o)
+void TObjEneSlimeOne_state26_8c0fa798(Object *o)
 {
     char *v18;
     int v2;

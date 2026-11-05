@@ -23,7 +23,7 @@ extern void game_free_8c011ec0(void *);
 extern void operation_8c19a044(void *, int);
 extern void clear_global_8c22fff0(void);
 extern void call_8c22e8e4(TQuestVmDownLoadServer *, void *, int);
-void operation_8c22e7c8(TQuestVmDownLoadServer *o)
+void TQuestVmDownLoadServer_update_step_3_8c22e7c8(TQuestVmDownLoadServer *o)
 {
     S_vv61 *v61;
     if (o->f58 != 0) {

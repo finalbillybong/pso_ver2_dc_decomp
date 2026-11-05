@@ -29,7 +29,7 @@ extern void TFog_create_8c0134f0(int);
 extern void call_8c03096c(void);
 extern void operation_8c01e648(void);
 extern void operation_8c0731f4(void);
-extern void operation_8c01217c(void);
+extern void get_game_mode_wrapper_8c01217c(void);
 extern void call_8c0a1bf8(void);
 extern void operation_8c08710c(void);
 extern void operation_8c087770(void);
@@ -61,7 +61,7 @@ void operation_8c0c60b0(void)
     call_8c03096c();
     operation_8c01e648();
     operation_8c0731f4();
-    operation_8c01217c();
+    get_game_mode_wrapper_8c01217c();
     call_8c0a1bf8();
     operation_8c08710c();
     operation_8c087770();

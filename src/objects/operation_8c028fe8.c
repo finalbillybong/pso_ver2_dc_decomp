@@ -32,7 +32,7 @@ struct S_c8c169508 {
 };
 extern void operation_1c7dd4(void *);
 extern int find_node_8c16a3c0(void *, int);
-extern S_c8c169508 *operation_8c169508(void *);
+extern S_c8c169508 *hierarchy_is_active_wrapper_2_8c169508(void *);
 extern int call_8c0240f0(Object *, void *);
 extern int operation_8c02c1ac(void *);
 extern void operation_8c0368a8(void *);
@@ -58,7 +58,7 @@ int operation_8c028fe8(Object *o, int a1, int a2)
     if (t1 == 0) {
         return 0;
     }
-    t2 = operation_8c169508((void *)t1);
+    t2 = hierarchy_is_active_wrapper_2_8c169508((void *)t1);
     if (t2 == 0) {
         return 0;
     }
@@ -92,7 +92,7 @@ L_8c029094:;
     if (t5 == 0) {
         return 0;
     }
-    t6 = operation_8c169508((void *)t5);
+    t6 = hierarchy_is_active_wrapper_2_8c169508((void *)t5);
     if (t6 == 0) {
         return 0;
     }

@@ -12,7 +12,7 @@ extern void call_8c013620(void *, int);
 extern int call_8c03651c(void);
 extern void select_state2_8c01c1b4(void);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c0eaa6c(void)
+void game_mode_14_init_8c0eaa6c(void)
 {
     int t1;
     call_8c37e4a8(1.0f, 1.0f);

@@ -8,7 +8,7 @@ extern int g_8c467188;
 extern S_L8c41cba0 g_8c41cba0;
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c1dee8c(void *);
-void operation_8c1decf0(TWindowKeyBoardSoft *o)
+void TWindowKeyBoardSoft_update_step_8c1decf0(TWindowKeyBoardSoft *o)
 {
     char v14;
     int v16;

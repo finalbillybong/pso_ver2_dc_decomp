@@ -42,7 +42,7 @@ struct Object {
     float f3c8;
 };
 extern int active_unflagged_8c05b2dc(void *);
-extern void operation_8c05c184(void *);
+extern void set_fields_wrapper_8c05c184(void *);
 extern void aim_direction_8c05bdd4(void *);
 extern float errno_wrap_8c130334(float, float);
 extern float njSin_8c37eb0c(void *);
@@ -58,7 +58,7 @@ int operation_8c0613a4(Object *o)
     float t4;
     t1 = active_unflagged_8c05b2dc((void *)(o->f3ac));
     if (t1 != 0) {
-        operation_8c05c184((void *)o);
+        set_fields_wrapper_8c05c184((void *)o);
         aim_direction_8c05bdd4((void *)o);
         if (((o->f20 & 1)) != 0) {
             v2 = (float)7.0f;

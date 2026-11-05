@@ -174,7 +174,7 @@ extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int call_8c05c0dc(Object *, float);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" void operation_8c05c404(void *, int);
 extern "C" void call_8c05c580(Object *, int, float);
@@ -234,7 +234,7 @@ extern "C" void operation_8c0d5a70(Object *o, int a1)
     case 0:
         operation_8c01c5f0(o);
         if (call_8c05c0dc(o, 200.0f) != 0) {
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
             t8 = njSin_8c37eb0c((void *)(((ObjectData *)o)->f64));
             t7 = njCos_8c38c154((void *)(((ObjectData *)o)->f64));

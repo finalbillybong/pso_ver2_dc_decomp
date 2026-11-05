@@ -22,7 +22,7 @@ struct Arg0_3b8 {
     char unknown0[0x3c];
     Vector3 f3c;
 };
-void operation_8c15edf4(Object *o)
+void TObjEnePanBARA_state01_8c15edf4(Object *o)
 {
     *(Vector3 *)&o->f3c = *(Vector3 *)&o->f3b8->f3c;
     o->f3c.f00 += 1000.0f;

@@ -25,7 +25,7 @@ extern int operation_8c19b054(void);
 extern int call_8c372d38(int, void *);
 extern void call_8c372c46(int, void *);
 extern void operation_8c1ca7e8(void *);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 void operation_8c1cb510(Object *o)
 {
     S_vv32 *v32;
@@ -55,7 +55,7 @@ void operation_8c1cb510(Object *o)
         }
     }
     if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-        t5 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+        t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
         if (t5 == 0) {
             goto L_8c1cb596;
         }

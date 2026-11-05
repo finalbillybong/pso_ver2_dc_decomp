@@ -14,7 +14,7 @@ struct S_g8c467180 {
 };
 extern char g_8c31a25c[];
 extern void operation_8c119764(int, int, int);
-void operation_8c191454(TWindowSubMag *o)
+void TWindowSubMag_update_step_5_8c191454(TWindowSubMag *o)
 {
     int v1;
     v1 = (int)*(int *)((char *)((char *)o->f44 + 0x6c) + (o->f44->f69 << 2));

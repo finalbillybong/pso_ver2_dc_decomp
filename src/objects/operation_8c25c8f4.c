@@ -38,7 +38,7 @@ extern void operation_8c01c244(int);
 extern void create_descriptor_managers(void);
 extern void TItemReverseTech_create_8c25cc58(void);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c25c8f4(void)
+void game_mode_32_init_8c25c8f4(void)
 {
     Frame frame;
     unsigned int v1;

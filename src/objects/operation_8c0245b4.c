@@ -46,7 +46,7 @@ struct S_c8c011308_4 {
     Vector3 f60;
 };
 extern S_c8c011308 *operation_8c011308(int, void *, int);
-S_c8c011308 *operation_8c0245b4(Object *o, Arg1 *a1)
+S_c8c011308 *TObjPlayer_vslot19_8c0245b4(Object *o, Arg1 *a1)
 {
     Frame frame;
     int v1;

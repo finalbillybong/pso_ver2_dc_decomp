@@ -16,7 +16,7 @@ struct Frame {
     Block8 f04;
 };
 extern void operation_8c0368a8(void *);
-void operation_8c029bc0(Object *o, Block8 b)
+void TObjPlayer_vslot85_8c029bc0(Object *o, Block8 b)
 {
     Frame frame;
     int v1;

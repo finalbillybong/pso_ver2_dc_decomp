@@ -22,7 +22,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3827d8(void *);
 extern void operation_8c161c78(void *);
 extern void draw_tree_a702(void *, void *, float);
-extern void call_8c161ce4(void *);
+extern void set_transform_node_callback_wrapper_2_8c161ce4(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c22a090(Object *o)
 {
@@ -41,7 +41,7 @@ void operation_8c22a090(Object *o)
             }
             draw_tree_a702((void *)(*(Arg0_b4 **)((char *)((char *)o + 0xb4) + (v2))), (void *)(*(Arg0_bc **)((char *)((char *)o + 0xbc) + (v2))), o->fec);
             if (v1 == 0) {
-                call_8c161ce4((void *)(o->ff0));
+                set_transform_node_callback_wrapper_2_8c161ce4((void *)(o->ff0));
             }
             v1 = (int)(v1 + 1);
         }

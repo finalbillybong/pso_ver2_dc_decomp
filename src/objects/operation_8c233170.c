@@ -10,7 +10,7 @@ struct Object {
     Arg0_28 *f28;
 };
 extern void request_resource_release(void *);
-void operation_8c233170(Object *o)
+void request_resource_release_wrapper_2_8c233170(Object *o)
 {
     if (o->f28 != 0) {
         request_resource_release(o->f28);

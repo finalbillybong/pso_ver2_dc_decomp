@@ -85,7 +85,7 @@ extern void sq_select_8c38aeb4(int);
 extern void sq_header_8c38af22(int, int);
 extern void sq_quad_8c38b09e(Frame *, float);
 extern void sq_flush_8c38af12(void);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void time_hierarchy_update(void *);
 extern void time_hierarchy_visit(void *);
 extern void TObject_debug_describe_8c033330(void *);
@@ -191,11 +191,11 @@ int operation_8c0eb0ec(int a0)
             call_8c380ab8(0, 8);
             call_8c380ab8(1, 6);
             }
-            if ((((&g_8c41cba0)->f28 & 4)) != 0 || operation_8c01d8a8((void *)keys, 4) != 0
-                || (((&g_8c41cba0)->f28 & 2)) != 0 || operation_8c01d8a8((void *)keys, 2) != 0
-                || (((&g_8c41cba0)->f28 & m400)) != 0 || operation_8c01d8a8((void *)keys, m400) != 0
-                || (((&g_8c41cba0)->f28 & m200)) != 0 || operation_8c01d8a8((void *)keys, m200) != 0
-                || (((&g_8c41cba0)->f28 & 8)) != 0 || operation_8c01d8a8((void *)keys, 8) != 0) {
+            if ((((&g_8c41cba0)->f28 & 4)) != 0 || replicate_nibble_wrapper_2_8c01d8a8((void *)keys, 4) != 0
+                || (((&g_8c41cba0)->f28 & 2)) != 0 || replicate_nibble_wrapper_2_8c01d8a8((void *)keys, 2) != 0
+                || (((&g_8c41cba0)->f28 & m400)) != 0 || replicate_nibble_wrapper_2_8c01d8a8((void *)keys, m400) != 0
+                || (((&g_8c41cba0)->f28 & m200)) != 0 || replicate_nibble_wrapper_2_8c01d8a8((void *)keys, m200) != 0
+                || (((&g_8c41cba0)->f28 & 8)) != 0 || replicate_nibble_wrapper_2_8c01d8a8((void *)keys, 8) != 0) {
                 break;
             }
         }

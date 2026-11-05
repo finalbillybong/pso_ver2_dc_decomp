@@ -2,7 +2,7 @@
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" int operation_8c059d2c(TObjEneDD *o)
+extern "C" int TObjEneDD_vslot89_8c059d2c(TObjEneDD *o)
 {
     int t1;
     int t2;

@@ -1,7 +1,7 @@
 #include "src/include/classes/TOVS2Wall01.h"
 extern int operation_8c03d338(void);
 extern void operation_8c24cd78(TOVS2Wall01 *);
-extern void operation_8c24c90c(void *);
+extern void TOVS2Wall01_update_step_8c24c90c(void *);
 extern void operation_8c24c94c(void *);
 void TOVS2Wall01_update_8c24c8b0(TOVS2Wall01 *o)
 {
@@ -17,7 +17,7 @@ void TOVS2Wall01_update_8c24c8b0(TOVS2Wall01 *o)
         }
         o->f30a = 0;
     }
-    operation_8c24c90c((void *)o);
+    TOVS2Wall01_update_step_8c24c90c((void *)o);
     return;
 L_8c24c8ea:;
     operation_8c24c94c((void *)o);

@@ -15,7 +15,7 @@ struct Object {
 };
 extern void operation_8c1e2770(void *, int);
 extern int call_8c21c718(int);
-void operation_8c1e30c8(Object *o)
+void TWindowKeyBoardSoft_state04_8c1e30c8(Object *o)
 {
     int t1;
     if (((o->f6a & 8)) == 0) {

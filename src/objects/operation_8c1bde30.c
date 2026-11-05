@@ -3,7 +3,7 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-extern int operation_8c05bae8(void);
+extern int get_game_mode_wrapper_3_8c05bae8(void);
 extern int operation_8c17796c(int);
 void operation_8c1bde30(void)
 {
@@ -15,7 +15,7 @@ void operation_8c1bde30(void)
     int t3;
     int t4;
     *(int *)0x8c4e2b60 |= 1;
-    t1 = operation_8c05bae8();
+    t1 = get_game_mode_wrapper_3_8c05bae8();
     if (t1 != 0) {
         v4 = (int)0x17;
         v2 = (int)0x20;

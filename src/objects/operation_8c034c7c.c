@@ -12,7 +12,7 @@ struct Object {
     char f32;
     char f33;
 };
-extern int operation_8c034ce4(void);
+extern int get_game_mode_wrapper_2_8c034ce4(void);
 int operation_8c034c7c(Object *o)
 {
     int t1;
@@ -22,7 +22,7 @@ int operation_8c034c7c(Object *o)
     if (o->f33 <= 0 || o->f1c < 0 || o->f1c >= 5) {
         return o->f31;
     }
-    t1 = operation_8c034ce4();
+    t1 = get_game_mode_wrapper_2_8c034ce4();
     if (t1 != 0) {
         return o->f1c + 9;
     }

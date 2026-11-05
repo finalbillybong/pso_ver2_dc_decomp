@@ -1,7 +1,7 @@
 #include "src/include/classes/TAdPSOPlay.h"
 extern void operation_8c25ae10(void);
 extern void call_8c25ae24(void);
-void operation_8c25adc8(TAdPSOPlay *o)
+void TAdPSOPlay_update_step_2_8c25adc8(TAdPSOPlay *o)
 {
     char *v1;
     v1 = (char *)o->f24;

@@ -22,7 +22,7 @@ struct Arg1 {
     float f04;
     float f08;
 };
-extern int operation_8c05b90c(int);
+extern int object_random_fraction_wrapper_2_8c05b90c(int);
 extern float object_random_fraction(void *);
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(int);
@@ -36,7 +36,7 @@ void operation_8c090ccc(int a0, Arg1 *a1)
     int t1;
     int pm6;
     float pm5;
-    pm6 = operation_8c05b90c(a0);
+    pm6 = object_random_fraction_wrapper_2_8c05b90c(a0);
     t4 = object_random_fraction((void *)a0);
     v1 = (t4 * 30.0f);
     t1 = pm6;

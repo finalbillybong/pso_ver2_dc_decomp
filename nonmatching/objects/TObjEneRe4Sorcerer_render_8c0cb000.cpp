@@ -182,7 +182,7 @@ typedef struct Arg0_s490Data {
 
 } Arg0_s490Data;
 extern "C" int operation_8c03d338(void);
-extern "C" int operation_8c05bae8(void);
+extern "C" int get_game_mode_wrapper_3_8c05bae8(void);
 extern "C" void call_8c05ba9c(Object *, int);
 extern "C" void call_8c05b9dc(Object *);
 extern "C" void call_8c3827d8(void *);
@@ -217,7 +217,7 @@ extern "C" void TObjEneRe4Sorcerer_render_8c0cb000(Object *o)
     if (((((ObjectData *)o)->f3e4 & 2)) == 0) {
         v1 = (int)0;
     } else {
-        t2 = operation_8c05bae8();
+        t2 = get_game_mode_wrapper_3_8c05bae8();
         if (t2 != 0) {
             v1 = o->v12(*(float *)0x8c284bd8, *(float *)0x8c284bd4, 15.0f);
         } else {

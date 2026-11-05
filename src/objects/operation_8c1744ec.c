@@ -43,16 +43,16 @@ struct S_g8c467180_2c {
     int f50c;
 };
 extern char g_8c318df4[];
-extern void initialize_hierarchy_node(void *, void *);
+extern void TObject_ctor_8c0330e4(void *, void *);
 extern int operation_8c156c6c(int);
 extern void operation_8c1570b4(void *, float, float);
 extern void operation_8c157138(void *);
 extern int operation_8c156c24(int, int);
-extern void call_8c12b048(void *, void *, ...);
-extern void operation_8c156d30(Arg0_60 *, void *, int, int);
+extern void sprintf_8c12b048(void *, void *, ...);
+extern void add_wrapper_8c156d30(Arg0_60 *, void *, int, int);
 extern int create_fitted_pair_grid_view(void *, void *);
 extern void operation_8c119764(int, int, int);
-Object *operation_8c1744ec(Object *o, int a1)
+Object *TObjItemOKWindow_ctor_8c1744ec(Object *o, int a1)
 {
     Frame frame;
     Object **home = &o;
@@ -61,7 +61,7 @@ Object *operation_8c1744ec(Object *o, int a1)
     int t2;
     int t3;
     (void)home;
-    initialize_hierarchy_node((void *)o, (void *)a1);
+    TObject_ctor_8c0330e4((void *)o, (void *)a1);
     o->dispatch = (void *)0x8c2701e8;
     o->tag = (int)(*(int *)0x8c318df0);
     o->size = 0x6c;
@@ -86,12 +86,12 @@ Object *operation_8c1744ec(Object *o, int a1)
             v4 = (int)(g_8c318df4 + 0x3c3);
         }
         if (v4 != 0) {
-            call_8c12b048((void *)(((char *)base + 0x20)), (void *)((g_8c318df4 + 0x3f0)), (void *)0x8c4db64c, v4);
+            sprintf_8c12b048((void *)(((char *)base + 0x20)), (void *)((g_8c318df4 + 0x3f0)), (void *)0x8c4db64c, v4);
         } else {
-            call_8c12b048((void *)(((char *)base + 0x20)), (void *)((g_8c318df4 + 0x3f6)), (void *)0x8c4db64c);
+            sprintf_8c12b048((void *)(((char *)base + 0x20)), (void *)((g_8c318df4 + 0x3f6)), (void *)0x8c4db64c);
         }
         o->f5f = 0;
-        operation_8c156d30((Arg0_60 *)(o->f60), (void *)(((char *)o + 0x20)), 0x81, 0);
+        add_wrapper_8c156d30((Arg0_60 *)(o->f60), (void *)(((char *)o + 0x20)), 0x81, 0);
     }
     }
     operation_8c1570b4((void *)(o->f60), 442.0f, 64.0f);

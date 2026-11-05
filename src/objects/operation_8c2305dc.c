@@ -5,10 +5,10 @@ struct S_L8c41cba0 {
     int f28;
 };
 extern char g_8c41cba0[];
-extern void call_8c2306c4(TWindowSubMagPhoton *);
-extern int operation_8c01d8a8(void *, int);
-extern void operation_8c2307ac(void *);
-extern void operation_8c2307dc(void *);
+extern void TWindowSubMagPhoton_update_step_8c2306c4(TWindowSubMagPhoton *);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
+extern void TWindowSubMagPhoton_update_step_2_8c2307ac(void *);
+extern void TWindowSubMagPhoton_update_step_3_8c2307dc(void *);
 extern void operation_8c2308b0(void *);
 extern void call_8c0db30c(TWindowSubMagPhoton *);
 extern void update_view_nodes(void *, void *);
@@ -20,22 +20,22 @@ void TWindowSubMagPhoton_update_8c2305dc(TWindowSubMagPhoton *o)
         o->f64 = 0x1000000;
     }
     if (((o->f68 & 1)) == 0) {
-        call_8c2306c4(o);
+        TWindowSubMagPhoton_update_step_8c2306c4(o);
         if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-            t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+            t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
             if (t1 == 0) {
                 goto L_8c230622;
             }
         }
-        operation_8c2307ac((void *)o);
+        TWindowSubMagPhoton_update_step_2_8c2307ac((void *)o);
 L_8c230622:;
         if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-            t2 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+            t2 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
             if (t2 == 0) {
                 goto L_8c230640;
             }
         }
-        operation_8c2307dc((void *)o);
+        TWindowSubMagPhoton_update_step_3_8c2307dc((void *)o);
     }
 L_8c230640:;
     operation_8c2308b0((void *)o);

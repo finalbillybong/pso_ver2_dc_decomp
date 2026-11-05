@@ -504,10 +504,10 @@
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "TTcpSocket_ctor_8c02cc88": "0x8c02cc88",
     "heap_alloc_8c122700": "0x8c122700",
+    "lookup_object_by_id_wrapper_8c01a920": "0x8c01a920",
     "memset_8c12b880": "0x8c12b880",
     "operation_8c01a514": "0x8c01a514",
     "operation_8c01a8a4": "0x8c01a8a4",
-    "operation_8c01a920": "0x8c01a920",
     "operation_8c01a944": "0x8c01a944",
     "operation_8c01aa54": "0x8c01aa54",
     "operation_8c01b98c": "0x8c01b98c",
@@ -675,6 +675,7 @@
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "create_fitted_pair_grid_view": "0x8c11968c",
     "g_8c2e2f54": "0x8c2e2f54",
     "g_8c2e2f5c": "0x8c2e2f5c",
@@ -688,7 +689,6 @@
     "operation_8c0dc610": "0x8c0dc610",
     "operation_8c119764": "0x8c119764",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138"
    }
@@ -705,8 +705,8 @@
    "provenance": "generator draft (mode retflip2)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156e58": "0x8c156e58",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138"
@@ -724,11 +724,11 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "create_fitted_pair_grid_view": "0x8c11968c",
     "operation_8c0dc610": "0x8c0dc610",
     "operation_8c119764": "0x8c119764",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156e58": "0x8c156e58",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
@@ -747,9 +747,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c41c620": "0x8c41c620",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156e58": "0x8c156e58",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138"
@@ -767,6 +767,7 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c2e2fa4": "0x8c2e2fa4",
     "g_8c2e3014": "0x8c2e3014",
     "g_8c41bce4": "0x8c41bce4",
@@ -782,7 +783,6 @@
     "operation_8c051a98": "0x8c051a98",
     "operation_8c051d5c": "0x8c051d5c",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "request_resource_release": "0x8c0dc7f4"
@@ -1561,12 +1561,12 @@
     "call_8c02ae70": "0x8c02ae70",
     "current_mode_active": "0x8c032ad0",
     "g_8c41cd30": "0x8c41cd30",
+    "get_current_area_wrapper_8c02c194": "0x8c02c194",
     "operation_1e9610": "0x8c1e9610",
     "operation_8c026554": "0x8c026554",
     "operation_8c02656c": "0x8c02656c",
     "operation_8c02668c": "0x8c02668c",
     "operation_8c02aff0": "0x8c02aff0",
-    "operation_8c02c194": "0x8c02c194",
     "operation_8c1e92e4": "0x8c1e92e4",
     "operation_8c1ef548": "0x8c1ef548"
    }
@@ -4316,9 +4316,9 @@
     "heap_alloc_8c122700": "0x8c122700",
     "initialize_color_rise": "0x8c0c49bc",
     "njSin_8c37eb0c": "0x8c37eb0c",
-    "operation_8c01d8a8": "0x8c01d8a8",
     "operation_8c100524": "0x8c100524",
-    "play_se_8c05fbf8": "0x8c05fbf8"
+    "play_se_8c05fbf8": "0x8c05fbf8",
+    "replicate_nibble_wrapper_2_8c01d8a8": "0x8c01d8a8"
    }
   },
   {
@@ -5976,7 +5976,7 @@
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TObjEneBm3Fly.h",
    "symbols": {
-    "operation_8c05b16c": "0x8c05b16c"
+    "TObjEneDD_vslot95_8c05b16c": "0x8c05b16c"
    }
   },
   {
@@ -6040,7 +6040,7 @@
     "normalize_xz_checked": "0x8c041d80",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
-    "operation_8c05c184": "0x8c05c184",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "slide_and_dispatch_contact": "0x8c05ae38",
     "update_last_effect": "0x8c060770",
     "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
@@ -6075,9 +6075,9 @@
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c05b5e0": "0x8c05b5e0",
     "operation_8c05bbf8": "0x8c05bbf8",
-    "operation_8c05c184": "0x8c05c184",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "reset_link_8c05bf28": "0x8c05bf28",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "update_last_effect": "0x8c060770"
    }
   },
@@ -6106,7 +6106,7 @@
     "object_random_fraction": "0x8c04aa9c",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
-    "operation_8c05c184": "0x8c05c184",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "slide_and_dispatch_contact": "0x8c05ae38",
     "update_last_effect": "0x8c060770"
    }
@@ -6131,11 +6131,11 @@
     "call_8c24e644": "0x8c24e644",
     "njCos_8c38c154": "0x8c38c154",
     "njSin_8c37eb0c": "0x8c37eb0c",
+    "object_random_fraction_wrapper_2_8c05b90c": "0x8c05b90c",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c05b0ec": "0x8c05b0ec",
     "operation_8c05b8c0": "0x8c05b8c0",
-    "operation_8c05b90c": "0x8c05b90c",
     "scale_by_half_angle": "0x8c042080",
     "update_last_effect": "0x8c060770"
    }
@@ -6232,6 +6232,7 @@
     "g_8c284bd4": "0x8c284bd4",
     "g_8c284bd8": "0x8c284bd8",
     "g_8c2f3244": "0x8c2f3244",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
     "njRotateY_8c37df90": "0x8c37df90",
@@ -6240,7 +6241,6 @@
     "operation_8c01cd20": "0x8c01cd20",
     "operation_8c03d338": "0x8c03d338",
     "operation_8c05baa8": "0x8c05baa8",
-    "operation_8c05bae8": "0x8c05bae8",
     "operation_8c1086fc": "0x8c1086fc",
     "reset_state_8c391cc4": "0x8c391cc4"
    }
@@ -6537,10 +6537,10 @@
     "create_resource_effect_8c108044": "0x8c108044",
     "njCos_8c38c154": "0x8c38c154",
     "njSin_8c37eb0c": "0x8c37eb0c",
+    "object_random_fraction_wrapper_2_8c05b90c": "0x8c05b90c",
+    "object_random_fraction_wrapper_8c05b8e8": "0x8c05b8e8",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
-    "operation_8c05b8e8": "0x8c05b8e8",
-    "operation_8c05b90c": "0x8c05b90c",
     "operation_8c108428": "0x8c108428",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "refresh_follow_effect_8c0129f4": "0x8c0129f4",
@@ -6608,6 +6608,7 @@
     "g_8c575570": "0x8c575570",
     "g_8c5755a4": "0x8c5755a4",
     "g_8c5755a8": "0x8c5755a8",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
     "njRotateY_8c37df90": "0x8c37df90",
@@ -6618,7 +6619,6 @@
     "operation_8c05952c": "0x8c05952c",
     "operation_8c05956c": "0x8c05956c",
     "operation_8c05baa8": "0x8c05baa8",
-    "operation_8c05bae8": "0x8c05bae8",
     "operation_8c1086fc": "0x8c1086fc",
     "reset_state_8c391cc4": "0x8c391cc4",
     "set_transform_node_callback": "0x8c0c4754",
@@ -7099,7 +7099,7 @@
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05a24c": "0x8c05a24c",
     "operation_8c05a4d8": "0x8c05a4d8",
-    "operation_8c05c184": "0x8c05c184"
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -7274,6 +7274,7 @@
     "call_8c05ba9c": "0x8c05ba9c",
     "call_8c3827d8": "0x8c3827d8",
     "draw_with_alternate_dispatch": "0x8c0c76d0",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
     "njRotateY_8c37df90": "0x8c37df90",
@@ -7283,7 +7284,6 @@
     "operation_8c01cd20": "0x8c01cd20",
     "operation_8c03d338": "0x8c03d338",
     "operation_8c05baa8": "0x8c05baa8",
-    "operation_8c05bae8": "0x8c05bae8",
     "operation_8c05e36c": "0x8c05e36c",
     "operation_8c1086fc": "0x8c1086fc",
     "reset_state_8c391cc4": "0x8c391cc4",
@@ -7752,8 +7752,8 @@
    "symbols": {
     "normalize_xz_checked": "0x8c041d80",
     "object_random_fraction": "0x8c04aa9c",
+    "object_random_fraction_wrapper_8c05b8e8": "0x8c05b8e8",
     "operation_8c011214": "0x8c011214",
-    "operation_8c05b8e8": "0x8c05b8e8",
     "rotate_scalar_pair": "0x8c041fe4"
    }
   },
@@ -7774,7 +7774,7 @@
     "errno_wrap_8c130334": "0x8c130334",
     "njCos_8c38c154": "0x8c38c154",
     "njSin_8c37eb0c": "0x8c37eb0c",
-    "operation_8c05c184": "0x8c05c184"
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -7819,8 +7819,8 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
-    "reset_link_8c05bf28": "0x8c05bf28"
+    "reset_link_8c05bf28": "0x8c05bf28",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -7844,9 +7844,9 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c05c1f0": "0x8c05c1f0",
-    "operation_8c0610c8": "0x8c0610c8"
+    "operation_8c0610c8": "0x8c0610c8",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -7898,11 +7898,11 @@
     "njCos_8c38c154": "0x8c38c154",
     "njSin_8c37eb0c": "0x8c37eb0c",
     "object_random_fraction": "0x8c04aa9c",
+    "object_random_fraction_wrapper_8c05b8e8": "0x8c05b8e8",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05af28": "0x8c05af28",
-    "operation_8c05b8e8": "0x8c05b8e8",
     "operation_8c0610c8": "0x8c0610c8",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "scale_by_half_angle": "0x8c042080",
@@ -7933,9 +7933,9 @@
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05af28": "0x8c05af28",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c0610c8": "0x8c0610c8",
     "play_se_8c05fbf8": "0x8c05fbf8",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "update_last_effect": "0x8c060770"
    }
   },
@@ -7962,9 +7962,9 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c0610c8": "0x8c0610c8",
     "play_se_8c05fbf8": "0x8c05fbf8",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "slide_and_apply_contact": "0x8c05abd8",
     "update_last_effect": "0x8c060770"
    }
@@ -7989,11 +7989,11 @@
     "njCos_8c38c154": "0x8c38c154",
     "njSin_8c37eb0c": "0x8c37eb0c",
     "object_random_fraction": "0x8c04aa9c",
+    "object_random_fraction_wrapper_8c05b8e8": "0x8c05b8e8",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05af28": "0x8c05af28",
-    "operation_8c05b8e8": "0x8c05b8e8",
     "operation_8c0610c8": "0x8c0610c8",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "set_field_8c05af48": "0x8c05af48",
@@ -8346,13 +8346,13 @@
     "g_8c46ed10": "0x8c46ed10",
     "g_8c4d97e0": "0x8c4d97e0",
     "game_malloc_8c011ecc": "0x8c011ecc",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "heap_alloc_8c122700": "0x8c122700",
     "initialize_context_blend": "0x8c178018",
     "operation_8c059f94": "0x8c059f94",
     "operation_8c05a02c": "0x8c05a02c",
     "operation_8c05b92c": "0x8c05b92c",
     "operation_8c05b950": "0x8c05b950",
-    "operation_8c05bae8": "0x8c05bae8",
     "operation_8c05bbf8": "0x8c05bbf8",
     "operation_8c05bf44": "0x8c05bf44",
     "operation_8c05c1bc": "0x8c05c1bc",
@@ -8404,9 +8404,9 @@
     "call_8c102e38": "0x8c102e38",
     "g_8c418248": "0x8c418248",
     "g_8c4689b8": "0x8c4689b8",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "latch_counter_8c059ee4": "0x8c059ee4",
     "operation_8c03d338": "0x8c03d338",
-    "operation_8c05bae8": "0x8c05bae8",
     "operation_8c0669ec": "0x8c0669ec",
     "operation_8c066b00": "0x8c066b00",
     "operation_8c066ba4": "0x8c066ba4",
@@ -8614,11 +8614,11 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c0368a8": "0x8c0368a8",
     "operation_8c05bbf8": "0x8c05bbf8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c05c1f0": "0x8c05c1f0",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "scale_by_half_angle": "0x8c042080",
     "set_fields_8c05c1a4": "0x8c05c1a4",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
    }
   },
@@ -8650,10 +8650,10 @@
     "normalize_xz_checked": "0x8c041d80",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c0368a8": "0x8c0368a8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c05c1f0": "0x8c05c1f0",
     "set_effect_bit0": "0x8c0a727c",
-    "set_effect_words": "0x8c0a764c"
+    "set_effect_words": "0x8c0a764c",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -8672,9 +8672,9 @@
     "check_range_8c01cf68": "0x8c01cf68",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c0368a8": "0x8c0368a8",
-    "operation_8c07c18c": "0x8c07c18c",
-    "operation_8c07c1a8": "0x8c07c1a8",
-    "play_se_8c05fbf8": "0x8c05fbf8"
+    "play_se_8c05fbf8": "0x8c05fbf8",
+    "process_entries_wrapper_2_8c07c1a8": "0x8c07c1a8",
+    "process_entries_wrapper_8c07c18c": "0x8c07c18c"
    }
   },
   {
@@ -8761,9 +8761,9 @@
     "njCos_8c38c154": "0x8c38c154",
     "njSin_8c37eb0c": "0x8c37eb0c",
     "normalize_xz_checked": "0x8c041d80",
+    "object_random_fraction_wrapper_2_8c05b90c": "0x8c05b90c",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c0368a8": "0x8c0368a8",
-    "operation_8c05b90c": "0x8c05b90c",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "rotate_vector_xz": "0x8c042030",
     "signed_angle_delta": "0x8c0c52e4",
@@ -8943,10 +8943,10 @@
     "heap_alloc_8c122700": "0x8c122700",
     "njCos_8c38c154": "0x8c38c154",
     "njSin_8c37eb0c": "0x8c37eb0c",
+    "object_random_fraction_wrapper_2_8c05b90c": "0x8c05b90c",
+    "object_random_fraction_wrapper_8c05b8e8": "0x8c05b8e8",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c0368a8": "0x8c0368a8",
-    "operation_8c05b8e8": "0x8c05b8e8",
-    "operation_8c05b90c": "0x8c05b90c",
     "operation_8c05bbf8": "0x8c05bbf8",
     "operation_8c066fb8": "0x8c066fb8",
     "operation_8c07c4b4": "0x8c07c4b4",
@@ -9026,8 +9026,8 @@
     "offset_effect_threshold_reached": "0x8c0cce24",
     "operation_8c0368a8": "0x8c0368a8",
     "operation_8c05bbf8": "0x8c05bbf8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c191654": "0x8c191654",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "set_position_8c0f3504": "0x8c0f3504",
     "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
    }
@@ -9632,7 +9632,7 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
-    "operation_8c073e5c": "0x8c073e5c",
+    "TItemEquipBase_vslot31_8c073e5c": "0x8c073e5c",
     "operation_8c1c7658": "0x8c1c7658",
     "operation_8c1c93e0": "0x8c1c93e0"
    }
@@ -12344,7 +12344,7 @@
     "njCos_8c38c154": "0x8c38c154",
     "njSin_8c37eb0c": "0x8c37eb0c",
     "object_random_fraction": "0x8c04aa9c",
-    "operation_8c05b90c": "0x8c05b90c"
+    "object_random_fraction_wrapper_2_8c05b90c": "0x8c05b90c"
    }
   },
   {
@@ -12427,9 +12427,9 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c090d88": "0x8c090d88",
-    "play_se_8c05fbf8": "0x8c05fbf8"
+    "play_se_8c05fbf8": "0x8c05fbf8",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -12451,8 +12451,8 @@
     "errno_wrap_8c130334": "0x8c130334",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
-    "operation_8c090d88": "0x8c090d88"
+    "operation_8c090d88": "0x8c090d88",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -12475,8 +12475,8 @@
     "g_8c284fe8": "0x8c284fe8",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
-    "operation_8c090d88": "0x8c090d88"
+    "operation_8c090d88": "0x8c090d88",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -12508,10 +12508,10 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c090d88": "0x8c090d88",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "set_effect_bit0": "0x8c0a727c",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
    }
   },
@@ -12547,9 +12547,9 @@
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05b228": "0x8c05b228",
     "operation_8c05b32c": "0x8c05b32c",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c090d88": "0x8c090d88",
     "play_se_8c05fbf8": "0x8c05fbf8",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "signed_inv_sqrt_8c37f6d8": "0x8c37f6d8"
    }
   },
@@ -12576,9 +12576,9 @@
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05b8c0": "0x8c05b8c0",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c090d88": "0x8c090d88",
     "rotate_scalar_pair": "0x8c041fe4",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
    }
   },
@@ -12713,6 +12713,7 @@
     "g_8c469e18": "0x8c469e18",
     "g_8c46f560": "0x8c46f560",
     "g_8c575570": "0x8c575570",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
     "njRotateY_8c37df90": "0x8c37df90",
@@ -12722,7 +12723,6 @@
     "operation_8c01cd20": "0x8c01cd20",
     "operation_8c03d338": "0x8c03d338",
     "operation_8c05baa8": "0x8c05baa8",
-    "operation_8c05bae8": "0x8c05bae8",
     "operation_8c094bb4": "0x8c094bb4",
     "operation_8c1086fc": "0x8c1086fc",
     "reset_state_8c391cc4": "0x8c391cc4",
@@ -12829,9 +12829,9 @@
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05bed8": "0x8c05bed8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c090d88": "0x8c090d88",
-    "play_se_8c05fbf8": "0x8c05fbf8"
+    "play_se_8c05fbf8": "0x8c05fbf8",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -12853,8 +12853,8 @@
     "errno_wrap_8c130334": "0x8c130334",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
-    "operation_8c090d88": "0x8c090d88"
+    "operation_8c090d88": "0x8c090d88",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -17549,10 +17549,10 @@
     "g_8c4689e0": "0x8c4689e0",
     "g_8c4d97e0": "0x8c4d97e0",
     "g_8c4db9e0": "0x8c4db9e0",
+    "get_game_mode_wrapper_8c01217c": "0x8c01217c",
     "heap_alloc_8c122700": "0x8c122700",
     "initialize_color_fall": "0x8c0c4ad8",
     "lookup_low_id": "0x8c021ef8",
-    "operation_8c01217c": "0x8c01217c",
     "operation_8c01e648": "0x8c01e648",
     "operation_8c01e790": "0x8c01e790",
     "operation_8c04c270": "0x8c04c270",
@@ -17589,9 +17589,9 @@
     "call_8c0a1bf8": "0x8c0a1bf8",
     "call_8c1003d0": "0x8c1003d0",
     "g_8c306344": "0x8c306344",
+    "get_game_mode_wrapper_8c01217c": "0x8c01217c",
     "heap_alloc_8c122700": "0x8c122700",
     "lookup_low_id": "0x8c021ef8",
-    "operation_8c01217c": "0x8c01217c",
     "operation_8c01e648": "0x8c01e648",
     "operation_8c01e790": "0x8c01e790",
     "operation_8c04c270": "0x8c04c270",
@@ -18028,8 +18028,8 @@
     "njSin_8c37eb0c": "0x8c37eb0c",
     "normalize_xz_checked": "0x8c041d80",
     "operation_8c05b0ec": "0x8c05b0ec",
-    "operation_8c05c184": "0x8c05c184",
     "reset_actor_motion": "0x8c0c7f20",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
    }
   },
@@ -18110,8 +18110,8 @@
     "errno_wrap_8c130334": "0x8c130334",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
-    "reset_link_8c05bf28": "0x8c05bf28"
+    "reset_link_8c05bf28": "0x8c05bf28",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -18135,11 +18135,11 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "reset_actor_motion": "0x8c0c7f20",
     "run_actor_activation_callbacks": "0x8c0c7eac",
-    "run_actor_release_callbacks": "0x8c0c7edc"
+    "run_actor_release_callbacks": "0x8c0c7edc",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -18190,9 +18190,9 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
     "reset_link_8c05bf28": "0x8c05bf28",
-    "set_actor_action_kind": "0x8c0c7d84"
+    "set_actor_action_kind": "0x8c0c7d84",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -18222,9 +18222,9 @@
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05bc18": "0x8c05bc18",
-    "operation_8c05c184": "0x8c05c184",
     "reset_link_8c05bf28": "0x8c05bf28",
-    "set_actor_action_kind": "0x8c0c7d84"
+    "set_actor_action_kind": "0x8c0c7d84",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -18285,6 +18285,7 @@
     "call_8c0cd63c": "0x8c0cd63c",
     "call_8c3827d8": "0x8c3827d8",
     "call_8c397c90": "0x8c397c90",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
     "njRotateY_8c37df90": "0x8c37df90",
@@ -18293,7 +18294,6 @@
     "operation_8c01cd20": "0x8c01cd20",
     "operation_8c03d338": "0x8c03d338",
     "operation_8c05baa8": "0x8c05baa8",
-    "operation_8c05bae8": "0x8c05bae8",
     "operation_8c0caf84": "0x8c0caf84",
     "operation_8c1086fc": "0x8c1086fc",
     "reset_state_8c391cc4": "0x8c391cc4",
@@ -19181,8 +19181,8 @@
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05bbf8": "0x8c05bbf8",
-    "operation_8c05c184": "0x8c05c184",
-    "play_se_8c05fbf8": "0x8c05fbf8"
+    "play_se_8c05fbf8": "0x8c05fbf8",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -19244,10 +19244,10 @@
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05b60c": "0x8c05b60c",
     "operation_8c05bbf8": "0x8c05bbf8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c05c1f0": "0x8c05c1f0",
     "operation_8c11895c": "0x8c11895c",
     "play_se_8c05fbf8": "0x8c05fbf8",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "translate_current_matrix_v_8c382a40": "0x8c382a40"
    }
   },
@@ -19362,6 +19362,7 @@
     "g_8c46fd64": "0x8c46fd64",
     "g_8c46fd68": "0x8c46fd68",
     "g_8c575570": "0x8c575570",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
     "njRotateY_8c37df90": "0x8c37df90",
@@ -19369,7 +19370,6 @@
     "operation_8c01cd20": "0x8c01cd20",
     "operation_8c03d338": "0x8c03d338",
     "operation_8c05baa8": "0x8c05baa8",
-    "operation_8c05bae8": "0x8c05bae8",
     "operation_8c0d3c00": "0x8c0d3c00",
     "operation_8c0d3d1c": "0x8c0d3d1c",
     "operation_8c1086fc": "0x8c1086fc",
@@ -19515,8 +19515,8 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
     "play_se_8c05fbf8": "0x8c05fbf8",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "set_stream_mode_8c3ab8f8": "0x8c3ab8f8"
    }
   },
@@ -19540,8 +19540,8 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
-    "operation_8c05c404": "0x8c05c404"
+    "operation_8c05c404": "0x8c05c404",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -19574,12 +19574,12 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c0d4c80": "0x8c0d4c80",
     "operation_8c11895c": "0x8c11895c",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "set_field_8c05af48": "0x8c05af48",
     "set_field_8c05af54": "0x8c05af54",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "slide_and_apply_contact": "0x8c05abd8",
     "slide_and_dispatch_contact": "0x8c05ae38",
     "translate_current_matrix_v_8c382a40": "0x8c382a40"
@@ -19606,8 +19606,8 @@
     "njSin_8c37eb0c": "0x8c37eb0c",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
-    "operation_8c11895c": "0x8c11895c"
+    "operation_8c11895c": "0x8c11895c",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -19632,11 +19632,11 @@
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05bbf8": "0x8c05bbf8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c0d4c80": "0x8c0d4c80",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "set_field_8c05af48": "0x8c05af48",
-    "set_field_8c05af54": "0x8c05af54"
+    "set_field_8c05af54": "0x8c05af54",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -19666,13 +19666,13 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c05a420": "0x8c05a420",
-    "operation_8c05c184": "0x8c05c184",
     "rotate_scalar_pair": "0x8c041fe4",
     "set_effect_bit0": "0x8c0a727c",
     "set_effect_bits": "0x8c0a763c",
     "set_effect_words": "0x8c0a764c",
     "set_field_8c05af48": "0x8c05af48",
     "set_field_8c05af54": "0x8c05af54",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
    }
   },
@@ -19691,12 +19691,12 @@
     "TBreakUpMdl_create_8c108644": "0x8c108644",
     "call_8c24e644": "0x8c24e644",
     "check_range_8c01cf68": "0x8c01cf68",
+    "create_effect_7cc0_wrapper_8c108488": "0x8c108488",
     "g_8c46fdd4": "0x8c46fdd4",
     "njCos_8c38c154": "0x8c38c154",
     "njSin_8c37eb0c": "0x8c37eb0c",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c1083c4": "0x8c1083c4",
-    "operation_8c108488": "0x8c108488",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "refresh_follow_effect_8c05a194": "0x8c05a194",
     "rotate_and_submit_vector_xz": "0x8c042198"
@@ -19723,6 +19723,7 @@
     "g_8c46fdb8": "0x8c46fdb8",
     "g_8c46fdbc": "0x8c46fdbc",
     "g_8c575570": "0x8c575570",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
     "njRotateY_8c37df90": "0x8c37df90",
@@ -19731,7 +19732,6 @@
     "operation_8c01cd20": "0x8c01cd20",
     "operation_8c03d338": "0x8c03d338",
     "operation_8c05baa8": "0x8c05baa8",
-    "operation_8c05bae8": "0x8c05bae8",
     "operation_8c0d755c": "0x8c0d755c",
     "operation_8c1086fc": "0x8c1086fc",
     "reset_state_8c391cc4": "0x8c391cc4",
@@ -19852,11 +19852,11 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c0d852c": "0x8c0d852c",
     "operation_8c0d89e0": "0x8c0d89e0",
     "play_se_8c05fbf8": "0x8c05fbf8",
-    "set_effect_bit0": "0x8c0a727c"
+    "set_effect_bit0": "0x8c0a727c",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -20822,9 +20822,9 @@
     "call_8c0db30c": "0x8c0db30c",
     "call_8c0e2e98": "0x8c0e2e98",
     "interpolate_view_parameters": "0x8c0db430",
-    "operation_8c0e2b2c": "0x8c0e2b2c",
     "operation_8c0e2b40": "0x8c0e2b40",
     "operation_8c0e30c8": "0x8c0e30c8",
+    "refresh_name_wrapper_8c0e2b2c": "0x8c0e2b2c",
     "update_view_nodes": "0x8c0e1c08"
    }
   },
@@ -21680,11 +21680,11 @@
     "g_8c470360": "0x8c470360",
     "g_8c470365": "0x8c470365",
     "hierarchy_output_cycle": "0x8c03385c",
-    "operation_8c01d8a8": "0x8c01d8a8",
     "operation_8c01dea8": "0x8c01dea8",
     "operation_8c04b230": "0x8c04b230",
     "operation_8c17e194": "0x8c17e194",
     "process_file_task_queue": "0x8c0410b4",
+    "replicate_nibble_wrapper_2_8c01d8a8": "0x8c01d8a8",
     "sq_flush_8c38af12": "0x8c38af12",
     "sq_header_8c38af22": "0x8c38af22",
     "sq_quad_8c38b09e": "0x8c38b09e",
@@ -21827,8 +21827,8 @@
     "g_8c4703c4": "0x8c4703c4",
     "operation_8c01d844": "0x8c01d844",
     "operation_8c01d858": "0x8c01d858",
-    "operation_8c01d8a8": "0x8c01d8a8",
-    "play_se_8c05fbf8": "0x8c05fbf8"
+    "play_se_8c05fbf8": "0x8c05fbf8",
+    "replicate_nibble_wrapper_2_8c01d8a8": "0x8c01d8a8"
    }
   },
   {
@@ -22655,7 +22655,7 @@
     "errno_wrap_8c130334": "0x8c130334",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184"
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -22710,8 +22710,8 @@
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c05c1f0": "0x8c05c1f0",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "step_clamped_angle_velocity": "0x8c042114"
    }
   },
@@ -22744,7 +22744,6 @@
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05af28": "0x8c05af28",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c05c1f0": "0x8c05c1f0",
     "operation_8c0f4fd8": "0x8c0f4fd8",
     "play_se_8c05fbf8": "0x8c05fbf8",
@@ -22753,6 +22752,7 @@
     "rotate_scalar_pair": "0x8c041fe4",
     "set_field_8c05af48": "0x8c05af48",
     "set_field_8c05af54": "0x8c05af54",
+    "set_fields_wrapper_8c05c184": "0x8c05c184",
     "step_clamped_angle_velocity": "0x8c042114",
     "update_last_effect": "0x8c060770",
     "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
@@ -22825,12 +22825,12 @@
     "operation_8c059ea4": "0x8c059ea4",
     "operation_8c059ef8": "0x8c059ef8",
     "operation_8c05bbf8": "0x8c05bbf8",
-    "operation_8c05c184": "0x8c05c184",
     "operation_8c0f5158": "0x8c0f5158",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "set_effect_bit0": "0x8c0a727c",
     "set_effect_bits": "0x8c0a763c",
-    "set_effect_words": "0x8c0a764c"
+    "set_effect_words": "0x8c0a764c",
+    "set_fields_wrapper_8c05c184": "0x8c05c184"
    }
   },
   {
@@ -22881,6 +22881,7 @@
     "g_8c470628": "0x8c470628",
     "g_8c470630": "0x8c470630",
     "g_8c575570": "0x8c575570",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
     "njRotateY_8c37df90": "0x8c37df90",
@@ -22888,7 +22889,6 @@
     "operation_8c01cd20": "0x8c01cd20",
     "operation_8c03d338": "0x8c03d338",
     "operation_8c05baa8": "0x8c05baa8",
-    "operation_8c05bae8": "0x8c05bae8",
     "operation_8c1086fc": "0x8c1086fc",
     "reset_state_8c391cc4": "0x8c391cc4",
     "set_transform_node_callback": "0x8c0c4754",
@@ -24772,9 +24772,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c4dbc20": "0x8c4dbc20",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138"
    }
@@ -24791,11 +24791,11 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c220b80": "0x8c220b80",
     "g_8c30b664": "0x8c30b664",
     "g_8c4dbc20": "0x8c4dbc20",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571f4": "0x8c1571f4",
@@ -25802,9 +25802,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c220b80": "0x8c220b80",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571f4": "0x8c1571f4",
@@ -25823,11 +25823,11 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c220b80": "0x8c220b80",
     "g_8c30feec": "0x8c30feec",
     "g_8c4dbc20": "0x8c4dbc20",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571f4": "0x8c1571f4",
@@ -27771,8 +27771,8 @@
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": "src/include/classes/TContainerAncient01.h",
    "symbols": {
-    "operation_8c05428c": "0x8c05428c",
-    "operation_8c129a08": "0x8c129a08"
+    "create_effect_777c_wrapper_8c129a08": "0x8c129a08",
+    "operation_8c05428c": "0x8c05428c"
    }
   },
   {
@@ -27803,9 +27803,9 @@
    "class_header": null,
    "symbols": {
     "call_8c18e954": "0x8c18e954",
+    "create_effect_777c_wrapper_8c129a08": "0x8c129a08",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c129958": "0x8c129958",
-    "operation_8c129a08": "0x8c129a08",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "set_fields_8c12992c": "0x8c12992c"
    }
@@ -29634,10 +29634,10 @@
    "class_header": null,
    "symbols": {
     "TBreakUpMdl_create_8c108644": "0x8c108644",
+    "create_effect_7cc0_wrapper_8c108488": "0x8c108488",
     "interrupt_state_8c13be60": "0x8c13be60",
     "operation_8c01c5f0": "0x8c01c5f0",
     "operation_8c1083c4": "0x8c1083c4",
-    "operation_8c108488": "0x8c108488",
     "operation_8c13bb4c": "0x8c13bb4c",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "refresh_follow_effect_8c052180": "0x8c052180"
@@ -30244,9 +30244,9 @@
     "call_8c1451f4": "0x8c1451f4",
     "call_8c1764f8": "0x8c1764f8",
     "g_8c4d97e0": "0x8c4d97e0",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "heap_alloc_8c122700": "0x8c122700",
     "latch_counter_8c059ee4": "0x8c059ee4",
-    "operation_8c05bae8": "0x8c05bae8",
     "operation_8c09e6d0": "0x8c09e6d0",
     "operation_8c144594": "0x8c144594",
     "operation_8c144698": "0x8c144698",
@@ -30487,8 +30487,8 @@
     "njCos_8c38c154": "0x8c38c154",
     "njSin_8c37eb0c": "0x8c37eb0c",
     "object_random_fraction": "0x8c04aa9c",
+    "object_random_fraction_wrapper_2_8c05b90c": "0x8c05b90c",
     "operation_8c01c5f0": "0x8c01c5f0",
-    "operation_8c05b90c": "0x8c05b90c",
     "operation_8c05bbf8": "0x8c05bbf8",
     "operation_8c142230": "0x8c142230",
     "operation_8c144ae0": "0x8c144ae0",
@@ -31026,9 +31026,9 @@
     "njRotateY_8c37df90": "0x8c37df90",
     "operation_8c01cc90": "0x8c01cc90",
     "operation_8c13ef08": "0x8c13ef08",
-    "operation_8c13ef3c": "0x8c13ef3c",
     "reset_state_8c391c94": "0x8c391c94",
     "reset_state_8c391cc4": "0x8c391cc4",
+    "set_transform_node_callback_wrapper_8c13ef3c": "0x8c13ef3c",
     "translate_current_matrix_v_8c382a40": "0x8c382a40"
    }
   },
@@ -31861,9 +31861,9 @@
     "njTranslate_8c3829bc": "0x8c3829bc",
     "operation_8c01cc90": "0x8c01cc90",
     "operation_8c13ef08": "0x8c13ef08",
-    "operation_8c13ef3c": "0x8c13ef3c",
     "reset_state_8c391c94": "0x8c391c94",
-    "reset_state_8c391cc4": "0x8c391cc4"
+    "reset_state_8c391cc4": "0x8c391cc4",
+    "set_transform_node_callback_wrapper_8c13ef3c": "0x8c13ef3c"
    }
   },
   {
@@ -31974,9 +31974,9 @@
     "njTranslate_8c3829bc": "0x8c3829bc",
     "operation_8c01cc90": "0x8c01cc90",
     "operation_8c13ef08": "0x8c13ef08",
-    "operation_8c13ef3c": "0x8c13ef3c",
     "reset_state_8c391c94": "0x8c391c94",
-    "reset_state_8c391cc4": "0x8c391cc4"
+    "reset_state_8c391cc4": "0x8c391cc4",
+    "set_transform_node_callback_wrapper_8c13ef3c": "0x8c13ef3c"
    }
   },
   {
@@ -32369,11 +32369,11 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c220b80": "0x8c220b80",
     "g_8c31666c": "0x8c31666c",
     "g_8c4dbc20": "0x8c4dbc20",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571f4": "0x8c1571f4",
@@ -32392,11 +32392,11 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c220b80": "0x8c220b80",
     "g_8c316674": "0x8c316674",
     "g_8c4dbc20": "0x8c4dbc20",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571f4": "0x8c1571f4",
@@ -32415,11 +32415,11 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c220b80": "0x8c220b80",
     "g_8c31667c": "0x8c31667c",
     "g_8c4dbc20": "0x8c4dbc20",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571f4": "0x8c1571f4",
@@ -33967,13 +33967,13 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "heap_alloc_8c122700": "0x8c122700",
     "initialize_buffer_node_8c032bd8": "0x8c032bd8",
     "operation_8c032b70": "0x8c032b70",
     "operation_8c032d18": "0x8c032d18",
     "operation_8c0dc610": "0x8c0dc610",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "strncpy_8c12b154": "0x8c12b154"
@@ -34262,9 +34262,9 @@
    "symbols": {
     "g_8c418248": "0x8c418248",
     "g_8c4db408": "0x8c4db408",
+    "hierarchy_is_active_wrapper_2_8c169508": "0x8c169508",
     "lookup_low_id": "0x8c021ef8",
     "operation_8c023b3c": "0x8c023b3c",
-    "operation_8c169508": "0x8c169508",
     "operation_8c16a18c": "0x8c16a18c"
    }
   },
@@ -34283,10 +34283,10 @@
     "find_node_8c16a3c0": "0x8c16a3c0",
     "g_8c418248": "0x8c418248",
     "g_8c4db408": "0x8c4db408",
+    "hierarchy_is_active_wrapper_2_8c169508": "0x8c169508",
     "lookup_low_id": "0x8c021ef8",
     "operation_1c7dd4": "0x8c1c7dd4",
-    "operation_8c023b3c": "0x8c023b3c",
-    "operation_8c169508": "0x8c169508"
+    "operation_8c023b3c": "0x8c023b3c"
    }
   },
   {
@@ -34657,9 +34657,9 @@
     "njRotateY_8c37df90": "0x8c37df90",
     "operation_8c01cc90": "0x8c01cc90",
     "operation_8c13ef08": "0x8c13ef08",
-    "operation_8c13ef3c": "0x8c13ef3c",
     "reset_state_8c391c94": "0x8c391c94",
     "reset_state_8c391cc4": "0x8c391cc4",
+    "set_transform_node_callback_wrapper_8c13ef3c": "0x8c13ef3c",
     "translate_current_matrix_v_8c382a40": "0x8c382a40"
    }
   },
@@ -35148,7 +35148,7 @@
     "file_load_8c104d00": "0x8c104d00",
     "g_8c4db940": "0x8c4db940",
     "g_8c4db954": "0x8c4db954",
-    "operation_8c05bae8": "0x8c05bae8",
+    "get_game_mode_wrapper_3_8c05bae8": "0x8c05bae8",
     "operator_delete_8c18de08": "0x8c18de08",
     "operator_new_8c18de4c": "0x8c18de4c"
    }
@@ -35957,11 +35957,11 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c467180": "0x8c467180",
     "g_8c4dbb34": "0x8c4dbb34",
     "operation_8c0dc610": "0x8c0dc610",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c184100": "0x8c184100"
    }
@@ -36295,6 +36295,7 @@
    "class_header": null,
    "symbols": {
     "TWindowInputNumber_ctor_8c1bd074": "0x8c1bd074",
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c18e768": "0x8c18e768",
     "g_8c319e1c": "0x8c319e1c",
     "g_8c319e24": "0x8c319e24",
@@ -36303,7 +36304,6 @@
     "heap_alloc_8c122700": "0x8c122700",
     "item_capacity_8c022f5c": "0x8c022f5c",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1cdc80": "0x8c1cdc80"
@@ -36321,13 +36321,13 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c319e2c": "0x8c319e2c",
     "g_8c418248": "0x8c418248",
     "g_8c4dbc20": "0x8c4dbc20",
     "operation_194d60": "0x8c194d60",
     "operation_8c023a44": "0x8c023a44",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571f4": "0x8c1571f4",
@@ -36385,10 +36385,10 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c319e4c": "0x8c319e4c",
     "g_8c4dbc20": "0x8c4dbc20",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138"
    }
@@ -36661,7 +36661,6 @@
     "g_8c41cba0": "0x8c41cba0",
     "heap_alloc_8c122700": "0x8c122700",
     "initialize_object_8c1902c8": "0x8c1902c8",
-    "operation_8c01d8a8": "0x8c01d8a8",
     "operation_8c0dc610": "0x8c0dc610",
     "operation_8c18c904": "0x8c18c904",
     "operation_8c18c96c": "0x8c18c96c",
@@ -36675,6 +36674,7 @@
     "operation_8c2097a8": "0x8c2097a8",
     "operation_8c21a07c": "0x8c21a07c",
     "play_se_8c05fbf8": "0x8c05fbf8",
+    "replicate_nibble_wrapper_2_8c01d8a8": "0x8c01d8a8",
     "request_resource_release": "0x8c0dc7f4",
     "set_fields_8c18cddc": "0x8c18cddc"
    }
@@ -37175,6 +37175,7 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c156d48": "0x8c156d48",
     "call_8c1c8ce4": "0x8c1c8ce4",
     "call_8c207378": "0x8c207378",
@@ -37183,7 +37184,6 @@
     "lookup_low_id": "0x8c021ef8",
     "operation_8c074560": "0x8c074560",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138"
    }
@@ -38657,9 +38657,9 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c467180": "0x8c467180",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138"
    }
@@ -39090,9 +39090,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c467180": "0x8c467180",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138"
    }
@@ -39109,9 +39109,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c467180": "0x8c467180",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138"
    }
@@ -39734,9 +39734,9 @@
     "draw_tree_a702": "0x8c0c3964",
     "g_8c326594": "0x8c326594",
     "operation_8c161c78": "0x8c161c78",
-    "operation_8c161ce4": "0x8c161ce4",
     "restore_effect_color_state": "0x8c21c660",
-    "set_effect_color_state": "0x8c21c5d4"
+    "set_effect_color_state": "0x8c21c5d4",
+    "set_transform_node_callback_wrapper_2_8c161ce4": "0x8c161ce4"
    }
   },
   {
@@ -39988,9 +39988,9 @@
     "draw_tree_a702": "0x8c0c3964",
     "g_8c326b6c": "0x8c326b6c",
     "operation_8c161c78": "0x8c161c78",
-    "operation_8c161ce4": "0x8c161ce4",
     "restore_effect_color_state": "0x8c21c660",
-    "set_effect_color_state": "0x8c21c5d4"
+    "set_effect_color_state": "0x8c21c5d4",
+    "set_transform_node_callback_wrapper_2_8c161ce4": "0x8c161ce4"
    }
   },
   {
@@ -41868,13 +41868,13 @@
     "call_8c372d38": "0x8c372d38",
     "create_fitted_pair_grid_view": "0x8c11968c",
     "g_8c41cba0": "0x8c41cba0",
-    "operation_8c01d8a8": "0x8c01d8a8",
     "operation_8c0dc610": "0x8c0dc610",
     "operation_8c119764": "0x8c119764",
     "operation_8c199b14": "0x8c199b14",
     "operation_8c19b054": "0x8c19b054",
     "operation_8c1b0308": "0x8c1b0308",
     "play_se_8c05fbf8": "0x8c05fbf8",
+    "replicate_nibble_wrapper_2_8c01d8a8": "0x8c01d8a8",
     "request_resource_release": "0x8c0dc7f4",
     "set_global_8c19b290": "0x8c19b290"
    }
@@ -41891,15 +41891,15 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c3290d0": "0x8c3290d0",
     "g_8c41cba0": "0x8c41cba0",
-    "operation_8c01d8a8": "0x8c01d8a8",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1cab38": "0x8c1cab38",
     "play_se_8c05fbf8": "0x8c05fbf8",
+    "replicate_nibble_wrapper_2_8c01d8a8": "0x8c01d8a8",
     "set_global_8c19b290": "0x8c19b290"
    }
   },
@@ -41915,11 +41915,11 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c3290a8": "0x8c3290a8",
     "g_8c467180": "0x8c467180",
     "operation_8c0dc610": "0x8c0dc610",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -41942,7 +41942,6 @@
     "create_fitted_pair_grid_view": "0x8c11968c",
     "g_8c3290b8": "0x8c3290b8",
     "g_8c41cba0": "0x8c41cba0",
-    "operation_8c01d8a8": "0x8c01d8a8",
     "operation_8c04b8dc": "0x8c04b8dc",
     "operation_8c119764": "0x8c119764",
     "operation_8c156c6c": "0x8c156c6c",
@@ -41953,6 +41952,7 @@
     "operation_8c19b054": "0x8c19b054",
     "operation_8c1b0308": "0x8c1b0308",
     "play_se_8c05fbf8": "0x8c05fbf8",
+    "replicate_nibble_wrapper_2_8c01d8a8": "0x8c01d8a8",
     "request_resource_release": "0x8c0dc7f4",
     "sprintf_8c12b048": "0x8c12b048"
    }
@@ -42464,9 +42464,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c467180": "0x8c467180",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138"
    }
@@ -42483,12 +42483,12 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c156d48": "0x8c156d48",
     "call_8c21f454": "0x8c21f454",
     "call_8c21f468": "0x8c21f468",
     "g_8c467180": "0x8c467180",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c1570b4": "0x8c1570b4",
     "operation_8c157138": "0x8c157138"
    }
@@ -42505,9 +42505,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c467180": "0x8c467180",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c1570b4": "0x8c1570b4",
     "operation_8c157138": "0x8c157138"
    }
@@ -42564,11 +42564,11 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c156d48": "0x8c156d48",
     "g_8c467180": "0x8c467180",
     "get_game_mode_8c01c25c": "0x8c01c25c",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138"
    }
@@ -42585,9 +42585,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c467180": "0x8c467180",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138"
    }
@@ -42604,9 +42604,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c467180": "0x8c467180",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138"
    }
@@ -42623,11 +42623,11 @@
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c156d48": "0x8c156d48",
     "g_8c3299bc": "0x8c3299bc",
     "g_8c46fe24": "0x8c46fe24",
     "g_8c505244": "0x8c505244",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c1571d4": "0x8c1571d4",
     "operation_8c1571f4": "0x8c1571f4",
@@ -42690,8 +42690,8 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c1570b4": "0x8c1570b4",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4",
@@ -43594,6 +43594,8 @@
    "class_header": null,
    "symbols": {
     "TWindowEff_ctor_8c22b298": "0x8c22b298",
+    "TWindowKeyBoardSoft_state00_8c1e283c": "0x8c1e283c",
+    "TWindowKeyBoardSoft_state19_8c1e29ec": "0x8c1e29ec",
     "__ptmf_scall": "0x8c18e6e4",
     "call_8c21c6fc": "0x8c21c6fc",
     "g_8c32b02c": "0x8c32b02c",
@@ -43628,8 +43630,6 @@
     "operation_8c1dee8c": "0x8c1dee8c",
     "operation_8c1e2354": "0x8c1e2354",
     "operation_8c1e25fc": "0x8c1e25fc",
-    "operation_8c1e283c": "0x8c1e283c",
-    "operation_8c1e29ec": "0x8c1e29ec",
     "play_se_8c05fbf8": "0x8c05fbf8"
    }
   },
@@ -43972,10 +43972,10 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c32b610": "0x8c32b610",
     "g_8c467180": "0x8c467180",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -44075,8 +44075,8 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4",
@@ -44095,8 +44095,8 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4",
@@ -44115,10 +44115,10 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c32bb80": "0x8c32bb80",
     "g_8c467180": "0x8c467180",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -44154,6 +44154,7 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "create_fitted_pair_grid_view": "0x8c11968c",
     "g_8c32c114": "0x8c32c114",
     "g_8c32c11c": "0x8c32c11c",
@@ -44163,7 +44164,6 @@
     "memcpy_8c12b77c": "0x8c12b77c",
     "operation_8c119764": "0x8c119764",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4",
@@ -44184,13 +44184,13 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c32c10c": "0x8c32c10c",
     "g_8c32c13c": "0x8c32c13c",
     "g_8c467180": "0x8c467180",
     "operation_8c051d50": "0x8c051d50",
     "operation_8c051ea0": "0x8c051ea0",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -44208,11 +44208,11 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c32c10c": "0x8c32c10c",
     "g_8c32c13c": "0x8c32c13c",
     "g_8c467180": "0x8c467180",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -44230,6 +44230,7 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "create_fitted_pair_grid_view": "0x8c11968c",
     "g_8c32c10c": "0x8c32c10c",
     "g_8c32c12c": "0x8c32c12c",
@@ -44244,7 +44245,6 @@
     "operation_8c051ea0": "0x8c051ea0",
     "operation_8c119764": "0x8c119764",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -45144,9 +45144,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c467180": "0x8c467180",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -46516,9 +46516,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c467180": "0x8c467180",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138"
    }
@@ -46615,10 +46615,10 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c336390": "0x8c336390",
     "g_8c467180": "0x8c467180",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -46801,11 +46801,11 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c156d48": "0x8c156d48",
     "call_8c21c6fc": "0x8c21c6fc",
     "g_8c467180": "0x8c467180",
     "operation_8c156bd8": "0x8c156bd8",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1cdc80": "0x8c1cdc80"
@@ -47059,13 +47059,13 @@
    "symbols": {
     "call_8c21c6fc": "0x8c21c6fc",
     "g_8c418248": "0x8c418248",
+    "get_field_wrapper_8c21f32c": "0x8c21f32c",
     "operation_8c1cda9c": "0x8c1cda9c",
     "operation_8c1cdc94": "0x8c1cdc94",
     "operation_8c1cdcdc": "0x8c1cdcdc",
     "operation_8c1cdd08": "0x8c1cdd08",
     "operation_8c20b478": "0x8c20b478",
     "operation_8c21c8a8": "0x8c21c8a8",
-    "operation_8c21f32c": "0x8c21f32c",
     "operation_8c21f370": "0x8c21f370"
    }
   },
@@ -47857,9 +47857,9 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c337834": "0x8c337834",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138"
    }
@@ -48152,9 +48152,9 @@
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
     "njRotateY_8c37df90": "0x8c37df90",
     "operation_8c161c78": "0x8c161c78",
-    "operation_8c161ce4": "0x8c161ce4",
     "restore_effect_blend_state": "0x8c21c5a0",
     "set_effect_blend_state": "0x8c21c508",
+    "set_transform_node_callback_wrapper_2_8c161ce4": "0x8c161ce4",
     "translate_current_matrix_v_8c382a40": "0x8c382a40"
    }
   },
@@ -48246,9 +48246,9 @@
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
     "njRotateY_8c37df90": "0x8c37df90",
     "operation_8c161c78": "0x8c161c78",
-    "operation_8c161ce4": "0x8c161ce4",
     "restore_effect_blend_state": "0x8c21c5a0",
     "set_effect_blend_state": "0x8c21c508",
+    "set_transform_node_callback_wrapper_2_8c161ce4": "0x8c161ce4",
     "translate_current_matrix_v_8c382a40": "0x8c382a40"
    }
   },
@@ -48270,7 +48270,7 @@
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
     "njRotateY_8c37df90": "0x8c37df90",
     "operation_8c161c78": "0x8c161c78",
-    "operation_8c161ce4": "0x8c161ce4",
+    "set_transform_node_callback_wrapper_2_8c161ce4": "0x8c161ce4",
     "translate_current_matrix_v_8c382a40": "0x8c382a40"
    }
   },
@@ -48908,11 +48908,11 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c338c98": "0x8c338c98",
     "g_8c467180": "0x8c467180",
     "operation_8c036610": "0x8c036610",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -48930,10 +48930,10 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c338ca0": "0x8c338ca0",
     "g_8c467180": "0x8c467180",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -50231,6 +50231,7 @@
    "symbols": {
     "TDuelEffectCtrl_ctor_8c24e6d8": "0x8c24e6d8",
     "TWindowDuelResult_ctor_8c24e084": "0x8c24e084",
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c1196d4": "0x8c1196d4",
     "call_8c2436e4": "0x8c2436e4",
     "call_8c243cd4": "0x8c243cd4",
@@ -50252,7 +50253,6 @@
     "operation_8c02641c": "0x8c02641c",
     "operation_8c119764": "0x8c119764",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571f4": "0x8c1571f4",
@@ -51537,10 +51537,10 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c33fe38": "0x8c33fe38",
     "g_8c467180": "0x8c467180",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -51975,10 +51975,10 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c3403a4": "0x8c3403a4",
     "g_8c467180": "0x8c467180",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -52070,6 +52070,7 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "create_fitted_pair_grid_view": "0x8c11968c",
     "g_8c3403f4": "0x8c3403f4",
     "g_8c3403fc": "0x8c3403fc",
@@ -52079,7 +52080,6 @@
     "memcpy_8c12b77c": "0x8c12b77c",
     "operation_8c119764": "0x8c119764",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4",
@@ -52100,21 +52100,21 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c119c78": "0x8c119c78",
     "g_8c34041c": "0x8c34041c",
     "g_8c41cba0": "0x8c41cba0",
     "heap_alloc_8c122700": "0x8c122700",
-    "operation_8c01d8a8": "0x8c01d8a8",
     "operation_8c051a98": "0x8c051a98",
     "operation_8c051d50": "0x8c051d50",
     "operation_8c051d5c": "0x8c051d5c",
     "operation_8c051ea0": "0x8c051ea0",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4",
-    "pair_grid_view_ready": "0x8c119cf8"
+    "pair_grid_view_ready": "0x8c119cf8",
+    "replicate_nibble_wrapper_2_8c01d8a8": "0x8c01d8a8"
    }
   },
   {
@@ -52129,12 +52129,12 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c3403ec": "0x8c3403ec",
     "g_8c467180": "0x8c467180",
     "operation_8c051d50": "0x8c051d50",
     "operation_8c051ea0": "0x8c051ea0",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -52152,10 +52152,10 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "g_8c3403ec": "0x8c3403ec",
     "g_8c467180": "0x8c467180",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -52173,6 +52173,7 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "create_fitted_pair_grid_view": "0x8c11968c",
     "heap_alloc_8c122700": "0x8c122700",
     "operation_8c051a98": "0x8c051a98",
@@ -52181,7 +52182,6 @@
     "operation_8c051ea0": "0x8c051ea0",
     "operation_8c119764": "0x8c119764",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -52273,8 +52273,8 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c156f50": "0x8c156f50",
     "operation_8c1571d4": "0x8c1571d4",
     "request_resource_release": "0x8c0dc7f4"
@@ -52292,8 +52292,8 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4"
@@ -52328,21 +52328,21 @@
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
+    "add_wrapper_8c156d30": "0x8c156d30",
     "call_8c119c78": "0x8c119c78",
     "g_8c340828": "0x8c340828",
     "g_8c41cba0": "0x8c41cba0",
     "g_8c467180": "0x8c467180",
     "g_8c4d97e0": "0x8c4d97e0",
     "heap_alloc_8c122700": "0x8c122700",
-    "operation_8c01d8a8": "0x8c01d8a8",
     "operation_8c051a98": "0x8c051a98",
     "operation_8c051d5c": "0x8c051d5c",
     "operation_8c156c24": "0x8c156c24",
-    "operation_8c156d30": "0x8c156d30",
     "operation_8c15700c": "0x8c15700c",
     "operation_8c157138": "0x8c157138",
     "operation_8c1571d4": "0x8c1571d4",
-    "pair_grid_view_ready": "0x8c119cf8"
+    "pair_grid_view_ready": "0x8c119cf8",
+    "replicate_nibble_wrapper_2_8c01d8a8": "0x8c01d8a8"
    }
   },
   {

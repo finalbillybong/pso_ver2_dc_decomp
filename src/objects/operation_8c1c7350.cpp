@@ -115,7 +115,7 @@ struct S_vv13 {
 };
 extern "C" int lookup_low_id(int);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
-extern "C" void operation_8c1c7424(void *);
+extern "C" void TItemEffShield_update_step_8c1c7424(void *);
 extern "C" void TItemEffShield_update_8c1c7350(Object *o)
 {
     S_vv13 *v13;
@@ -135,7 +135,7 @@ extern "C" void TItemEffShield_update_8c1c7350(Object *o)
             case 0:
                 if (((int)o->f2c + -1) == v13->f20) {
                     play_se_8c05fbf8(0x1001e, (void *)(((char *)o + 0x34)), 0, 0);
-                    operation_8c1c7424((void *)o);
+                    TItemEffShield_update_step_8c1c7424((void *)o);
                     o->f30 += 1;
                     o->f2c = 0;
                     return;
@@ -144,7 +144,7 @@ extern "C" void TItemEffShield_update_8c1c7350(Object *o)
                 return;
             }
             if (o->f2c == v13->f24) {
-                operation_8c1c7424((void *)o);
+                TItemEffShield_update_step_8c1c7424((void *)o);
                 o->f30 += 1;
                 o->f2c = 0;
                 return;

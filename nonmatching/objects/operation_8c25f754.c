@@ -37,7 +37,7 @@ struct S_g8c467180_84 {
     S_g8c467180_84_8 *f08;
 };
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(int, void *, int, int);
+extern void add_wrapper_8c156d30(int, void *, int, int);
 extern void operation_8c15700c(int, float);
 extern void operation_8c1571d4(void *, int);
 extern void operation_8c157138(void *);
@@ -47,8 +47,8 @@ int operation_8c25f754(void)
     int t1;
     *(Block8 *)&(&frame)->f00 = *(Block8 *)&*(Block8 *)0x8c3406a4;
     t1 = operation_8c156c24((int)(&frame), 2);
-    operation_8c156d30(t1, (void *)((*(S_g8c467180 **)0x8c467180)->f84->f04), 6, 0);
-    operation_8c156d30(t1, (void *)((*(S_g8c467180 **)0x8c467180)->f84->f08), 6, 1);
+    add_wrapper_8c156d30(t1, (void *)((*(S_g8c467180 **)0x8c467180)->f84->f04), 6, 0);
+    add_wrapper_8c156d30(t1, (void *)((*(S_g8c467180 **)0x8c467180)->f84->f08), 6, 1);
     operation_8c15700c(t1, 442.0f);
     operation_8c1571d4((void *)t1, 0);
     operation_8c157138((void *)t1);

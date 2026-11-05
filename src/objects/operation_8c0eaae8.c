@@ -18,7 +18,7 @@ extern void call_8c36a880(void);
 extern int call_8c36a868(void);
 extern void request_game_mode_8c01c1a4(int);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c0eaae8(void)
+void game_mode_14_frame_8c0eaae8(void)
 {
     int t1;
     int t2;

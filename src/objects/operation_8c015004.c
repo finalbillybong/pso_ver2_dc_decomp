@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern char g_8c418280[];
 extern void call_8c3c1554(float, float, float);
-void operation_8c015004(void)
+void view_set_at_wrapper_8c015004(void)
 {
     call_8c3c1554(*(float *)(g_8c418280 + 0x28), *(float *)(g_8c418280 + 0x2c), *(float *)(g_8c418280 + 0x30));
 }

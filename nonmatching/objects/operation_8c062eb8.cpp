@@ -238,7 +238,7 @@ extern "C" float njCos_8c38c154(void *);
 extern "C" void operation_8c01c5f0(void *);
 extern "C" int call_8c05c2dc(Object *);
 extern "C" float signed_inv_sqrt_8c37f6d8(float);
-extern "C" float operation_8c05b8e8(int, float, float);
+extern "C" float object_random_fraction_wrapper_8c05b8e8(int, float, float);
 extern "C" int cross_xz_negative(void *, void *);
 extern "C" int check_range_8c01cf68(void *, float);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
@@ -402,7 +402,7 @@ extern "C" void operation_8c062eb8(Object *o, int a1)
             v6->f04 = 0.0f;
             v6->f08 = v13 * t5;
             v2->f00 = v89 * t5;
-            t6 = operation_8c05b8e8((int)o, 50.0f, 80.0f);
+            t6 = object_random_fraction_wrapper_8c05b8e8((int)o, 50.0f, 80.0f);
             ((S_x88384 *)((int)o + v88))->f00 = t6;
             t7 = njSin_8c37eb0c((void *)(((ObjectData *)o)->f64));
             (&frame)->f18 = t7;

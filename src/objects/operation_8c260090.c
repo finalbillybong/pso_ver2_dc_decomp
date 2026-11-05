@@ -1,7 +1,7 @@
 #include "src/include/classes/TObjDeadListWin.h"
 typedef struct S_g8c418248 S_g8c418248;
 extern int lookup_low_id(int);
-extern void call_8c2600e0(TObjDeadListWin *);
+extern void TObjDeadListWin_update_step_8c2600e0(TObjDeadListWin *);
 extern void update_target_timer_8c2601a8(void *);
 void TObjDeadListWin_update_8c260090(TObjDeadListWin *o)
 {
@@ -16,7 +16,7 @@ void TObjDeadListWin_update_8c260090(TObjDeadListWin *o)
             return;
         }
     } else {
-        call_8c2600e0(o);
+        TObjDeadListWin_update_step_8c2600e0(o);
         return;
     }
     update_target_timer_8c2601a8((void *)o);

@@ -9,7 +9,7 @@ struct S_L8c41cba0 {
     int f28;
 };
 extern char g_8c41cba0[];
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 int operation_8c106760(void)
 {
     int v1;
@@ -17,7 +17,7 @@ int operation_8c106760(void)
     if (((*(int *)(g_8c41cba0 + 0x28) & 4)) != 0) {
         return 1;
     }
-    t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+    t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
     v1 = (int)(t1 != 0);
     return (int)(v1);
 }

@@ -35,7 +35,7 @@ extern char g_8c3299bc[];
 extern int operation_8c1571f4(void *);
 extern void operation_8c15761c(void *);
 extern S_c8c217d3c *recordbc_8c217d3c(int);
-extern void operation_8c156d30(Arg1 *, void *, int, void *);
+extern void add_wrapper_8c156d30(Arg1 *, void *, int, void *);
 extern void call_8c156d48(Arg1 *, void *, int, int, int);
 extern void operation_8c15700c(Arg1 *, float);
 extern void operation_8c1571d4(void *, short);
@@ -58,7 +58,7 @@ void operation_8c1d3d8c(int a0, Arg1 *a1)
     v1 = -1;
     for (v4 = v3 + v1; v4 >= 0; v4--) {
         t1 = recordbc_8c217d3c(v4);
-        operation_8c156d30(a1, (void *)(((char *)t1 + 0x8)), 7, (void *)(t1->f04));
+        add_wrapper_8c156d30(a1, (void *)(((char *)t1 + 0x8)), 7, (void *)(t1->f04));
         if (t2 == (int)(t1->f04)) {
             v5 = -1;
             v7 = v3 + v5 - v4;

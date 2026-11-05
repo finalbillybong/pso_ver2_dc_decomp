@@ -303,7 +303,7 @@ extern "C" void operation_8c144d8c(void *);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int active_unflagged_8c05b2dc(void *);
 extern "C" float object_random_fraction(void *);
-extern "C" int operation_8c05b90c(int);
+extern "C" int object_random_fraction_wrapper_2_8c05b90c(int);
 extern "C" float njSin_8c37eb0c(int);
 extern "C" float njCos_8c38c154(int);
 extern "C" void query_vector_position(void *, void *);
@@ -436,7 +436,7 @@ extern "C" void operation_8c148718(Object *o, int a1, int a2)
             Frame *pm8;
             t7 = object_random_fraction((void *)o);
             v18 = (float)(t7 * 120.0f);
-            t3 = operation_8c05b90c((int)o);
+            t3 = object_random_fraction_wrapper_2_8c05b90c((int)o);
             t4 = njSin_8c37eb0c(t3);
             (&frame)->f04.f00 = v18 * t4;
             (&frame)->f04.f04 = -1.85f;

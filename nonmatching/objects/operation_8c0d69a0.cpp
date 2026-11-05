@@ -244,7 +244,7 @@ extern "C" void call_8c05be98(Object *, int);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c01c5f0(int);
 extern "C" int active_unflagged_8c05b2dc(void *);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" void rotate_scalar_pair(void *, void *, int);
 extern "C" void clamp_scaled_contact(void *, void *, float, float, float);
@@ -314,7 +314,7 @@ extern "C" void operation_8c0d69a0(Object *o, int a1)
         operation_8c01c5f0((int)o);
         *p420 += 1;
         if (active_unflagged_8c05b2dc((void *)(((ObjectData *)o)->f3ac)) != 0) {
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
         }
         aim_direction_8c05bdd4((void *)o);
         rotate_scalar_pair((void *)(((char *)o + 0x3bc)), (void *)(((char *)o + 0x3c4)), (int)(v3->f00));

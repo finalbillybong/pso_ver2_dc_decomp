@@ -7,13 +7,13 @@ extern void operation_8c120374(void);
 extern void operation_8c120524(void);
 extern void operation_8c121330(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c043724(void);
-extern void operation_8c010500(void);
+extern void TObjectShared_vslot08_8c010500(void);
 extern void operation_8c1211c8(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c013448(void);
 extern void fn_8c121058(void);
@@ -98,12 +98,12 @@ extern void fn_8c1209d8(void);
 extern void operation_8c120f08(void);
 extern void operation_8c123ee4(void);
 extern void operation_8c121008(void);
-extern void operation_8c11f640(void);
+extern void play_se_wrapper_8c11f640(void);
 extern void operation_8c12132c(void);
 extern void destroy_object_8c1a3fc4(void);
-extern void operation_8c1a4184(void);
+extern void play_se_wrapper_3_8c1a4184(void);
 extern void destroy_object_8c1a41f8(void);
-extern void operation_8c1a4264(void);
+extern void TObjNpcHFW00_vslot94_8c1a4264(void);
 extern void TObjNpcHFW00_dtor_8c1a4290(void);
 extern void TObjNpcHHM00_dtor_8c1a4450(void);
 extern void operation_8c11f724(void);
@@ -122,13 +122,13 @@ VirtualFunction const TObjNpcNHW00_vtable_8c27378c[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -213,7 +213,7 @@ VirtualFunction const TObjNpcNHW00_vtable_8c27378c[100] = {
     operation_8c120f08,
     operation_8c123ee4,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -226,13 +226,13 @@ VirtualFunction const vt_8c27391c[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -317,7 +317,7 @@ VirtualFunction const vt_8c27391c[100] = {
     operation_8c120f08,
     operation_8c123ee4,
     operation_8c121008,
-    operation_8c1a4184,
+    play_se_wrapper_3_8c1a4184,
     operation_8c12132c
 };
 
@@ -330,13 +330,13 @@ VirtualFunction const vt_8c273aac[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -419,9 +419,9 @@ VirtualFunction const vt_8c273aac[100] = {
     fn_8c1207a0,
     fn_8c1209d8,
     operation_8c120f08,
-    operation_8c1a4264,
+    TObjNpcHFW00_vslot94_8c1a4264,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -434,13 +434,13 @@ VirtualFunction const TObjNpcHFW00_vtable_8c273c3c[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -523,9 +523,9 @@ VirtualFunction const TObjNpcHFW00_vtable_8c273c3c[100] = {
     fn_8c1207a0,
     fn_8c1209d8,
     operation_8c120f08,
-    operation_8c1a4264,
+    TObjNpcHFW00_vslot94_8c1a4264,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -538,13 +538,13 @@ VirtualFunction const TObjNpcHHM00_vtable_8c273dcc[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -629,7 +629,7 @@ VirtualFunction const TObjNpcHHM00_vtable_8c273dcc[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -642,13 +642,13 @@ VirtualFunction const TObjNpcHRM00_vtable_8c273f5c[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -733,7 +733,7 @@ VirtualFunction const TObjNpcHRM00_vtable_8c273f5c[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -746,13 +746,13 @@ VirtualFunction const TObjNpcNFM00_vtable_8c2740ec[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -837,7 +837,7 @@ VirtualFunction const TObjNpcNFM00_vtable_8c2740ec[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -850,13 +850,13 @@ VirtualFunction const TObjNpcNFW00_vtable_8c27427c[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -941,7 +941,7 @@ VirtualFunction const TObjNpcNFW00_vtable_8c27427c[100] = {
     operation_8c120f08,
     operation_8c123ee4,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -954,13 +954,13 @@ VirtualFunction const TObjNpcARM00_vtable_8c27440c[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,

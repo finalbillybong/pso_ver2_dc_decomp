@@ -7,13 +7,13 @@ extern void operation_8c1ad870(void);
 extern void operation_8c1ad8d8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c043724(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c013448(void);
 extern void operation_8c0104f0(void);
@@ -96,8 +96,8 @@ extern void operation_8c0eec28(void);
 extern void TODoorCave03_render_8c1aebd8(void);
 extern void TODoorCave03_render_shadow_8c1aeea0(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010508(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void TODoorCave03_v15_8c1aee9c(void);
 extern void operation_8c0eed3c(void);
 extern void TODoorCave03_v17_8c1aecf4(void);
@@ -138,13 +138,13 @@ VirtualFunction const vt_8c2748f4[91] = {
     operation_8c1ad8d8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -233,15 +233,15 @@ VirtualFunction const TODoorCave03_vtable_8c274a60[24] = {
     TODoorCave03_render_8c1aebd8,
     TODoorCave03_render_shadow_8c1aeea0,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     TODoorCave03_v15_8c1aee9c,
     operation_8c0eed3c,
@@ -261,15 +261,15 @@ VirtualFunction const TODoorMachine02_vtable_8c274ac0[24] = {
     TODoorMachine02_render_8c1af190,
     TODoorVoShip_ctor_8c1af428,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     TODoorMachine02_v15_8c1af424,
     operation_8c0eed3c,
@@ -289,15 +289,15 @@ VirtualFunction const TODoorVoShip_vtable_8c274b20[18] = {
     TODoorVoShip_render_8c1af72c,
     TODoorVoShip_render_shadow_8c1af9bc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     TODoorVoShip_v15_8c1af9b8
 };
@@ -333,14 +333,14 @@ VirtualFunction const vt_8c274ba0[17] = {
     fn_8c1b05b4,
     operation_8c1b071c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0
 };

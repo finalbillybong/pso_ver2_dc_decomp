@@ -105,7 +105,7 @@ typedef struct ObjectData {
     int f3ac;
 } ObjectData;
 extern "C" int lookup_low_id(int);
-extern "C" int operation_8c05c804(Object *o)
+extern "C" int TObjEneBm3Fly_vslot89_8c05c804(Object *o)
 {
     int v1;
     int t1;

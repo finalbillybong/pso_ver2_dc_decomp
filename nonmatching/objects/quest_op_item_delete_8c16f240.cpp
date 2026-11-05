@@ -70,7 +70,7 @@ extern int g_8c418248;
 extern int *g_8c4db408;
 extern "C" Low *lookup_low_id(int);
 extern "C" int operation_8c16a18c(void *, int);
-extern "C" Unit *operation_8c169508(int);
+extern "C" Unit *hierarchy_is_active_wrapper_2_8c169508(int);
 extern "C" void operation_8c023b3c(void *, int, int);
 extern "C" void quest_op_item_delete_8c16f240(unsigned char a0, unsigned char a1)
 {
@@ -87,7 +87,7 @@ extern "C" void quest_op_item_delete_8c16f240(unsigned char a0, unsigned char a1
         k = a0 << 2;
         r = operation_8c16a18c(t->fbc8, *(int *)((char *)g_8c4db408 + k));
         if (r != 0) {
-            u = operation_8c169508(r);
+            u = hierarchy_is_active_wrapper_2_8c169508(r);
             if (u != 0) {
                 u->v31(&frame);
                 *(int *)((char *)g_8c4db408 + (a1++ << 2)) = frame.f00;

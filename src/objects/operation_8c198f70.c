@@ -7,10 +7,10 @@ struct S_L8c41cba0 {
     int f28;
 };
 extern char g_8c41cba0[];
-extern void call_8c199388(TWindowSubCustomSelect *);
-extern int operation_8c01d8a8(void *, int);
-extern void operation_8c199578(void *);
-extern void operation_8c1995bc(void *);
+extern void TWindowSubCustomSelect_update_step_8c199388(TWindowSubCustomSelect *);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
+extern void TWindowSubCustomSelect_update_step_2_8c199578(void *);
+extern void TWindowSubCustomSelect_update_step_3_8c1995bc(void *);
 extern void position_indexed_label(void *);
 extern void call_8c199b74(void *);
 extern void call_8c199bc4(void *);
@@ -24,22 +24,22 @@ void TWindowSubCustomSelect_update_8c198f70(TWindowSubCustomSelect *o)
         o->f64 = 0x1000000;
     }
     if (((o->f83 & 1)) == 0) {
-        call_8c199388(o);
+        TWindowSubCustomSelect_update_step_8c199388(o);
         if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-            t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+            t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
             if (t1 == 0) {
                 goto L_8c198fb4;
             }
         }
-        operation_8c199578((void *)o);
+        TWindowSubCustomSelect_update_step_2_8c199578((void *)o);
 L_8c198fb4:;
         if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-            t2 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+            t2 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
             if (t2 == 0) {
                 goto L_8c198fd2;
             }
         }
-        operation_8c1995bc((void *)o);
+        TWindowSubCustomSelect_update_step_3_8c1995bc((void *)o);
     }
 L_8c198fd2:;
     position_indexed_label((void *)o);

@@ -192,7 +192,7 @@ typedef struct Arg0_s410Data {
 
 } Arg0_s410Data;
 extern "C" int operation_8c03d338(void);
-extern "C" int operation_8c05bae8(void);
+extern "C" int get_game_mode_wrapper_3_8c05bae8(void);
 extern "C" void call_8c05ba9c(Object *, Frame *);
 extern "C" void call_8c05b9dc(Object *);
 extern "C" void call_8c3827d8(Arg0_28 *);
@@ -233,7 +233,7 @@ extern "C" void TObjEneRe2Flower_render_8c05e3dc(Object *o)
     if (((ObjectData *)o)->f30a == 0xb) {
         return;
     }
-    t2 = operation_8c05bae8();
+    t2 = get_game_mode_wrapper_3_8c05bae8();
     if (t2 != 0) {
         v1 = o->v12(*(float *)0x8c284bd8, *(float *)0x8c284bd4, 20.0f);
     } else {

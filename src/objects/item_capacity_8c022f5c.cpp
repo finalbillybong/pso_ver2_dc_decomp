@@ -40,7 +40,7 @@ public:
 };
 extern "C" int item_valid_8c1c9358(unsigned char *);
 extern "C" void *find_node_8c16a3c0(Holder *, unsigned char *);
-extern "C" Object *node_object_8c169508(void *);
+extern "C" Object *hierarchy_is_active_wrapper_2_8c169508(void *);
 extern "C" int item_count_8c1c74dc(unsigned char *);
 extern "C" int item_capacity_8c022f5c(char *o, unsigned char *item)
 {
@@ -51,7 +51,7 @@ extern "C" int item_capacity_8c022f5c(char *o, unsigned char *item)
         if ((unsigned char)*item == 4) return 1;
         node = find_node_8c16a3c0(*(Holder **)(o + 0xbc8), item);
         if (!node) return (*(Holder **)(o + 0xbc8))->count >= 30 ? 0 : 10;
-        object = node_object_8c169508(node);
+        object = hierarchy_is_active_wrapper_2_8c169508(node);
         if (!object) return 0;
         room = 10 - object->used();
         if (item_count_8c1c74dc(item) > room) room = 0;

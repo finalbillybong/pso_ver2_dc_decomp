@@ -47,7 +47,7 @@ extern void operation_8c199b20(int, int);
 extern int call_8c17349c(void);
 extern void call_8c0e2278(S_vv21 *, int, int);
 extern int call_8c04b8dc(void *);
-extern void call_8c21eb78(Object *);
+extern void TWindowSubQuestBoardSelect_init_8c21eb78(Object *);
 extern void operation_8c21eb14(void *);
 Object *TWindowSubQuestBoardSelect_ctor_8c21e5a8(Object *o)
 {
@@ -75,7 +75,7 @@ Object *TWindowSubQuestBoardSelect_ctor_8c21e5a8(Object *o)
     t3 = call_8c04b8dc((void *)(v21->f20));
     v21->f08 = 205.0f - (float)(unsigned int)t3 * 0.5f;
     o->f69 = -1;
-    call_8c21eb78(o);
+    TWindowSubQuestBoardSelect_init_8c21eb78(o);
     operation_8c21eb14((void *)o);
     return o;
 }

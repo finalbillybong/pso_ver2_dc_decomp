@@ -7,13 +7,13 @@ extern void TObjEnePanarms_update_8c11aff0(void);
 extern void TObjEnePanarms_render_8c11b13c(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c043724(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c013448(void);
 extern void operation_8c0104f0(void);
@@ -97,20 +97,20 @@ extern void TObjLazerFence4_render_8c11d8f0(void);
 extern void TObjLazerFence4_render_shadow_8c11db34(void);
 extern void operation_8c051fd4(void);
 extern void TObjLazerFence4_v09_8c11db38(void);
-extern void operation_8c010508(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void TObjEneBalClaw_dtor_8c11dc84(void);
 extern void operation_8c0c240c(void);
 extern void draw_actor_model(void);
 extern void actor_render_noop_a(void);
 extern void operation_8c0c258c(void);
-extern void operation_8c11e1a0(void);
-extern void operation_8c11e0f8(void);
-extern void operation_8c11e124(void);
+extern void TObjEneBalClaw_vslot39_8c11e1a0(void);
+extern void TObjEneBalClaw_vslot45_8c11e0f8(void);
+extern void TObjEneBalClaw_vslot48_8c11e124(void);
 extern void request_actor_mode_zero(void);
-extern void operation_8c11e19c(void);
+extern void TObjEneBalClaw_vslot67_8c11e19c(void);
 extern void request_actor_mode_two(void);
-extern void operation_8c11e198(void);
+extern void TObjEneBalClaw_vslot69_8c11e198(void);
 extern void request_actor_mode_four_8c11deb4(void);
 extern void request_actor_mode_five(void);
 extern void transform_actor_model_origin(void);
@@ -161,7 +161,7 @@ extern void fn_8c1209d8(void);
 extern void operation_8c120f08(void);
 extern void operation_8c11f724(void);
 extern void operation_8c121008(void);
-extern void operation_8c11f640(void);
+extern void play_se_wrapper_8c11f640(void);
 extern void operation_8c12132c(void);
 extern void destroy_object_8c11f6b8(void);
 extern void TObjNpcMaleBase_dtor_8c11f750(void);
@@ -182,13 +182,13 @@ VirtualFunction const TObjEnePanarms_vtable_8c26a070[91] = {
     TObjEnePanarms_render_8c11b13c,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -277,15 +277,15 @@ VirtualFunction const TObjLazerFence4_vtable_8c26a1dc[17] = {
     TObjLazerFence4_render_8c11d8f0,
     TObjLazerFence4_render_shadow_8c11db34,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TObjLazerFence4_v09_8c11db38,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0
 };
 
@@ -298,13 +298,13 @@ VirtualFunction const TObjEneBalClaw_vtable_8c26a220[91] = {
     draw_actor_model,
     actor_render_noop_a,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -332,16 +332,16 @@ VirtualFunction const TObjEneBalClaw_vtable_8c26a220[91] = {
     operation_8c046498,
     operation_8c0c258c,
     operation_8c0133f8,
-    operation_8c11e1a0,
+    TObjEneBalClaw_vslot39_8c11e1a0,
     object_blocked_8c013418,
     object_blocked_8c013428,
     object_blocked_8c01343c,
     object_blocked_8c0133ec,
     operation_455ac,
-    operation_8c11e0f8,
+    TObjEneBalClaw_vslot45_8c11e0f8,
     operation_45844,
     operation_45910,
-    operation_8c11e124,
+    TObjEneBalClaw_vslot48_8c11e124,
     operation_45a8c,
     operation_45b8c,
     operation_45d6c,
@@ -360,9 +360,9 @@ VirtualFunction const TObjEneBalClaw_vtable_8c26a220[91] = {
     fn_8c047268,
     operation_8c047438,
     request_actor_mode_zero,
-    operation_8c11e19c,
+    TObjEneBalClaw_vslot67_8c11e19c,
     request_actor_mode_two,
-    operation_8c11e198,
+    TObjEneBalClaw_vslot69_8c11e198,
     request_actor_mode_four_8c11deb4,
     request_actor_mode_five,
     operation_8c013478,
@@ -393,15 +393,15 @@ VirtualFunction const TODoorAncient07_vtable_8c26a38c[24] = {
     TODoorAncient07_render_8c11e5c0,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TODoorAncient07_v09_8c11e5bc,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0eed38,
     operation_8c0eed3c,
@@ -421,15 +421,15 @@ VirtualFunction const TODoorAncient06_vtable_8c26a3ec[24] = {
     TODoorAncient06_render_8c11eabc,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TODoorAncient06_v09_8c11eab8,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0eed38,
     operation_8c0eed3c,
@@ -449,15 +449,15 @@ VirtualFunction const TODoorAncient05_vtable_8c26a44c[24] = {
     TODoorAncient05_render_8c11efa4,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TODoorAncient05_v09_8c11efa0,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0eed38,
     operation_8c0eed3c,
@@ -477,15 +477,15 @@ VirtualFunction const TORainbowCave01_vtable_8c26a4ac[18] = {
     TORainbowCave01_render_8c11f2e4,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     TORainbowCave01_v15_8c11f3d8
 };
@@ -499,13 +499,13 @@ VirtualFunction const vt_8c26a4f4[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -590,7 +590,7 @@ VirtualFunction const vt_8c26a4f4[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -603,13 +603,13 @@ VirtualFunction const vt_8c26a684[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -694,7 +694,7 @@ VirtualFunction const vt_8c26a684[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -707,13 +707,13 @@ VirtualFunction const TObjNpcMaleBase_vtable_8c26a814[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -798,7 +798,7 @@ VirtualFunction const TObjNpcMaleBase_vtable_8c26a814[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -811,13 +811,13 @@ VirtualFunction const TObjNpcMaleChild_vtable_8c26a9a4[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -902,7 +902,7 @@ VirtualFunction const TObjNpcMaleChild_vtable_8c26a9a4[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -915,13 +915,13 @@ VirtualFunction const TObjNpcMaleDwarf_vtable_8c26ab34[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -1006,7 +1006,7 @@ VirtualFunction const TObjNpcMaleDwarf_vtable_8c26ab34[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -1019,13 +1019,13 @@ VirtualFunction const TObjNpcMaleFat_vtable_8c26acc4[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -1110,7 +1110,7 @@ VirtualFunction const TObjNpcMaleFat_vtable_8c26acc4[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -1123,13 +1123,13 @@ VirtualFunction const TObjNpcMaleMacho_vtable_8c26ae54[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -1214,7 +1214,7 @@ VirtualFunction const TObjNpcMaleMacho_vtable_8c26ae54[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -1227,13 +1227,13 @@ VirtualFunction const TObjNpcMaleOld_vtable_8c26afe4[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -1318,7 +1318,7 @@ VirtualFunction const TObjNpcMaleOld_vtable_8c26afe4[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -1331,13 +1331,13 @@ VirtualFunction const TObjNpcBase_vtable_8c26b174[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -1422,6 +1422,6 @@ VirtualFunction const TObjNpcBase_vtable_8c26b174[100] = {
     operation_8c120f08,
     TObjNpcBase_v94_8c12068c,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };

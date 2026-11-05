@@ -17,7 +17,7 @@ extern void forward_reviewed_8c2213dc(void);
 extern void operation_8c221888(void);
 extern void operation_8c221924(void);
 extern void operation_8c13f3a0(void);
-extern void operation_8c13f3cc(void);
+extern void game_free_wrapper_3_8c13f3cc(void);
 extern void operation_8c0731f4(void);
 extern void operation_8c073240(void);
 extern void load_player_ending_motion_8c21edc8(void);
@@ -43,7 +43,7 @@ Function const d_8c3087b8[24] = {
     operation_8c221888,
     operation_8c221924,
     operation_8c13f3a0,
-    operation_8c13f3cc,
+    game_free_wrapper_3_8c13f3cc,
     operation_8c0731f4,
     operation_8c073240,
     load_player_ending_motion_8c21edc8,

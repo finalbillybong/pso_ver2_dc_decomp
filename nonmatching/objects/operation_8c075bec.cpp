@@ -82,7 +82,7 @@ struct S_c8c1c7658 {
     char unknown0[0x12];
     unsigned char f12;
 };
-extern "C" int operation_8c073e5c(void *, void *);
+extern "C" int TItemEquipBase_vslot31_8c073e5c(void *, void *);
 extern "C" void operation_8c1c93e0(void *, int);
 extern "C" S_c8c1c7658 *operation_8c1c7658(void *);
 typedef struct Pair2 {
@@ -99,7 +99,7 @@ extern "C" int operation_8c075bec(Object *o, Arg1 *a1)
     int t1;
     int t2;
     int v3;
-    t1 = operation_8c073e5c((void *)o, (void *)a1);
+    t1 = TItemEquipBase_vslot31_8c073e5c((void *)o, (void *)a1);
     if (t1 == 1) {
         v2 = (int)((char *)a1 + 0x6);
         v1 = (int)((char *)o + 0x1e8);

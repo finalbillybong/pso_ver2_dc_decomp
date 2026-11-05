@@ -119,7 +119,7 @@ extern int g_8c4d9b70;
 extern int g_8c4da6d8;
 extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c1516d4(Object *);
-extern "C" void operation_8c151678(void *);
+extern "C" void TBoss3VoloptMonitor_update_step_8c151678(void *);
 extern "C" void operation_8c027090(int);
 extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" int call_8c12b944(void);
@@ -156,12 +156,12 @@ extern "C" void TBoss3VoloptMonitor_update_8c1513f8(Object *o)
     if (((ObjectData *)o)->f30a != ((ObjectData *)o)->f390) {
         if (((ObjectData *)o)->f398 != -1) {
             ((ObjectData *)o)->f398 = -1;
-            operation_8c151678((void *)o);
+            TBoss3VoloptMonitor_update_step_8c151678((void *)o);
         }
         ((ObjectData *)o)->f30a = ((ObjectData *)o)->f390;
         ((ObjectData *)o)->f398 = 0;
     }
-    operation_8c151678((void *)o);
+    TBoss3VoloptMonitor_update_step_8c151678((void *)o);
     *(Vector3 *)&((ObjectData *)o)->f324 = *(Vector3 *)&((ObjectData *)o)->f3c;
     if (((ObjectData *)o)->f184 != 0) {
         ((ObjectData *)o)->f324.f04 += ((ObjectData *)o)->f184->f10 * 0.5f;

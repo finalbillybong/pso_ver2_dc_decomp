@@ -25,7 +25,7 @@ typedef struct ObjectData {
     int f2c;
 } ObjectData;
 extern "C" int lookup_low_id(int);
-extern "C" void operation_8c223760(Object *o)
+extern "C" void TItemTimerEvent_update_8c223760(Object *o)
 {
     int t1;
     t1 = lookup_low_id((int)(((ObjectData *)o)->f20));

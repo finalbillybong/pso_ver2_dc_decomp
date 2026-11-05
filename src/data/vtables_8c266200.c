@@ -4,7 +4,7 @@ typedef void (*VirtualFunction)(void);
 
 extern void destroy_context_8c0b9ce8(void);
 extern void refresh_follow_effect_8c0b9d48(void);
-extern void operation_8c0b9f98(void);
+extern void TTecGiZonde_vslot02_8c0b9f98(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
 extern void operation_8c0ad458(void);
@@ -20,7 +20,7 @@ VirtualFunction const vt_8c266200[10] = {
     0,
     destroy_context_8c0b9ce8,
     refresh_follow_effect_8c0b9d48,
-    operation_8c0b9f98,
+    TTecGiZonde_vslot02_8c0b9f98,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0ad458,

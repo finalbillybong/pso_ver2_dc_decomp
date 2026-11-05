@@ -15,14 +15,14 @@ extern void TOAttackableCol_update_8c2577f0(void);
 extern void TOAttackableCol_render_8c2577ec(void);
 extern void TOAttackableCol_render_shadow_8c257df0(void);
 extern void TOAttackableCol_v05_8c257a50(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c043724(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c04a928(void);
 extern void operation_8c04a950(void);
@@ -128,14 +128,14 @@ VirtualFunction const TOAttackableCol_vtable_8c2818a4[88] = {
     TOAttackableCol_render_shadow_8c257df0,
     hierarchy_output,
     TOAttackableCol_v05_8c257a50,
-    fn_8c01d694,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,

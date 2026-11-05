@@ -106,7 +106,7 @@ struct S_g8c4da6b8 {
 };
 extern S_g8c4da6b8 *g_8c4da6b8;
 extern "C" int operation_8c03d338(void);
-extern "C" void operation_8c1508b8(void *);
+extern "C" void TBoss3VoloptHiraisin_update_step_8c1508b8(void *);
 extern "C" void call_8c027090(Object *);
 extern "C" void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern "C" void TBoss3VoloptHiraisin_update_8c150760(Object *o)
@@ -130,12 +130,12 @@ extern "C" void TBoss3VoloptHiraisin_update_8c150760(Object *o)
         if (((ObjectData *)o)->f390 != ((ObjectData *)o)->f30a) {
             if (((ObjectData *)o)->f398 != -1) {
                 ((ObjectData *)o)->f398 = -1;
-                operation_8c1508b8((void *)o);
+                TBoss3VoloptHiraisin_update_step_8c1508b8((void *)o);
             }
             ((ObjectData *)o)->f30a = ((ObjectData *)o)->f390;
             ((ObjectData *)o)->f398 = 0;
         }
-        operation_8c1508b8((void *)o);
+        TBoss3VoloptHiraisin_update_step_8c1508b8((void *)o);
         *(Vector3 *)&((ObjectData *)o)->f324 = *(Vector3 *)&((ObjectData *)o)->f3c;
         if (((ObjectData *)o)->f30a != 5) {
             ((ObjectData *)o)->f324.f04 -= 30.0f;

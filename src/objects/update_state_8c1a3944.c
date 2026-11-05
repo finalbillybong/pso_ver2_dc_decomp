@@ -38,7 +38,7 @@ extern S_c8c0744dc *find_record_8c0744dc(int);
 extern int forward_state_8c074944(void *, int);
 extern int get_current_area_8c032b10(void);
 extern void call_8c156d48(int, void *, int, int, int);
-extern void call_8c156d30(int, void *, int, int);
+extern void add_wrapper_8c156d30(int, void *, int, int);
 extern int lookup_low_id(int);
 extern int call_8c074560(S_c8c0744dc *, int, Frame *);
 extern int slot_ready_8c1a3d50(void *, void *);
@@ -71,7 +71,7 @@ void update_state_8c1a3944(int a0, int a1, int a2)
         call_8c156d48(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f314, 0x16, 0, -0x979798);
         goto L_8c1a39b4;
 L_8c1a39a0:;
-        call_8c156d30(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f314, 6, 0);
+        add_wrapper_8c156d30(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f314, 6, 0);
     }
 L_8c1a39b4:;
     if ((unsigned int)2 >= (unsigned int)t1->f134) {
@@ -81,7 +81,7 @@ L_8c1a39b4:;
                 call_8c156d48(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f318, 0x16, 2, -0x979798);
                 goto L_8c1a3a6e;
             }
-            call_8c156d30(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f318, 6, 2);
+            add_wrapper_8c156d30(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f318, 6, 2);
         } else {
             t6 = lookup_low_id((int)*(S_g8c418248 **)0x8c418248);
             if (t6 != 0) {
@@ -91,7 +91,7 @@ L_8c1a39b4:;
                     if (t8 != 0) {
                         t9 = get_current_area_8c032b10();
                         if (t9 != 0xf) {
-                            call_8c156d30(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f31c, 6, 1);
+                            add_wrapper_8c156d30(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f31c, 6, 1);
                             goto L_8c1a3a6e;
                         }
                     }
@@ -105,7 +105,7 @@ L_8c1a3a6e:;
     if (t10 == 0xf) {
         call_8c156d48(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f310, 0x16, 3, -0x979798);
     } else {
-        call_8c156d30(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f310, 6, 3);
+        add_wrapper_8c156d30(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f310, 6, 3);
     }
-    call_8c156d30(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f320, 6, 7);
+    add_wrapper_8c156d30(a1, (*(S_g8c467180 **)0x8c467180)->f2c->f320, 6, 7);
 }

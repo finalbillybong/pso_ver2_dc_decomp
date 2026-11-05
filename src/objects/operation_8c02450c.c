@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern void *hierarchy_is_active(int);
-int operation_8c02450c(int a0)
+int hierarchy_is_active_wrapper_8c02450c(int a0)
 {
     void *t1;
     if (a0 != 0) {

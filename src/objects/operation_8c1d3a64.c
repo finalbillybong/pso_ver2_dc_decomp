@@ -23,7 +23,7 @@ struct S_c8c156bd8 {
 extern char g_8c3299bc[];
 extern S_c8c156bd8 *call_8c156bd8(void *, int, void *);
 extern int lookup_low_id(int);
-extern void operation_8c156d30(S_c8c156bd8 *, int, int, int);
+extern void add_wrapper_8c156d30(S_c8c156bd8 *, int, int, int);
 extern void call_8c156d48(S_c8c156bd8 *, void *, int, int, int);
 extern void operation_8c1570b4(void *, float, float);
 S_c8c156bd8 *operation_8c1d3a64(void)
@@ -47,7 +47,7 @@ S_c8c156bd8 *operation_8c1d3a64(void)
                 if (v4 == 0) {
                     v5 = (int)(*(short *)((char *)((char *)t1 + 0x0) + (v1)) == 3);
                     if (v5 == 0 && (t1 + v2) != 0) {
-                        operation_8c156d30(t2, (int)(t1 + v2), 7, v3);
+                        add_wrapper_8c156d30(t2, (int)(t1 + v2), 7, v3);
                     }
                 }
             }

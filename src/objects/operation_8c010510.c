@@ -3,7 +3,7 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-int operation_8c010510(void)
+int TObjectShared_vslot13_8c010510(void)
 {
     return 0;
 }

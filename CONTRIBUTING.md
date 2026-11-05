@@ -64,7 +64,8 @@ compiler emits implicitly and the compiler-proof samples, and never changes unit
 
 1. Edit `config/names.json`, run `python3 tools/names.py --lint`.
 2. Preview: `python3 tools/rename.py --dry-run --report rename.diff` (add `--confidence high,medium` or
-   `--sets curated,extended` for later passes); read the skip summary and the diff.
+   `--sets curated,extended,derived` for later passes); read the skip summary and the diff. The
+   `derived` set holds names inferred from vtable slots, class roles, typed handler tables and wrappers.
 3. Apply with `--apply` in a dedicated commit with no other change; a second dry run must report nothing to do.
 4. Names change source text but must not change bytes: run `tools/verify_source.py` (both fresh builds,
    every unit exact, the integrated and source-only images), then `tools/progress.py --record`/`--check`,

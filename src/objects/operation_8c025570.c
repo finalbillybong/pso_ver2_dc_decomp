@@ -2,7 +2,7 @@
 extern float operation_8c1a70d4(int);
 extern float operation_8c1a70f4(void *);
 extern void call_8c0439bc(TObjPlayer *, int, int, int, float, float);
-void operation_8c025570(TObjPlayer *o)
+void TObjPlayer_vslot80_8c025570(TObjPlayer *o)
 {
     short v14;
     short v2;

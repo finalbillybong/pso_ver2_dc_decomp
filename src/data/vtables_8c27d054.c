@@ -3,7 +3,7 @@
 typedef void (*VirtualFunction)(void);
 
 extern void TItemShootBasyoSen2_dtor_8c248f54(void);
-extern void operation_1abbcc(void);
+extern void TItemShoot_vslot01_8c1abbcc(void);
 extern void TItemShootBasyoSen2_render_8c248ed4(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
@@ -14,7 +14,7 @@ VirtualFunction const TItemShootBasyoSen2_vtable_8c27d054[8] = {
     0,
     0,
     TItemShootBasyoSen2_dtor_8c248f54,
-    operation_1abbcc,
+    TItemShoot_vslot01_8c1abbcc,
     TItemShootBasyoSen2_render_8c248ed4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,

@@ -18,8 +18,8 @@ extern void operation_8c25eb44(void);
 extern int operation_8c248434(void);
 extern void game_ADXT_StartFname_wrapper_8c1005bc(void *);
 extern void operation_8c25ec50(Object *);
-extern void call_8c25ed88(Object *);
-extern void call_8c25ee08(Object *);
+extern void request_resource_release_wrapper_4_8c25ed88(Object *);
+extern void request_resource_release_wrapper_5_8c25ee08(Object *);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c25eb84(Object *);
 extern void operation_8c25ebe0(Object *);
@@ -36,16 +36,16 @@ void operation_8c25ea10(Object *o)
     } else {
         game_ADXT_StartFname_wrapper_8c1005bc((void *)((g_8c340638 + 0x13)));
         operation_8c25ec50(o);
-        call_8c25ed88(o);
-        call_8c25ee08(o);
+        request_resource_release_wrapper_4_8c25ed88(o);
+        request_resource_release_wrapper_5_8c25ee08(o);
         o->f04 |= 1;
         return;
 L_8c25ea50:;
         play_se_8c05fbf8(0x50012, 0, 0, 0);
         operation_8c25ec50(o);
         operation_8c25eb84(o);
-        call_8c25ee08(o);
-        call_8c25ed88(o);
+        request_resource_release_wrapper_5_8c25ee08(o);
+        request_resource_release_wrapper_4_8c25ed88(o);
         o->f2c = 0x1e;
         o->f20 = 4;
         return;
@@ -53,7 +53,7 @@ L_8c25ea50:;
     if (o->f24 != 0 && o->f28 == 0) {
         operation_8c25ec50(o);
         operation_8c25ebe0(o);
-        call_8c25ee08(o);
+        request_resource_release_wrapper_5_8c25ee08(o);
         call_8c25ecd4(o);
         o->f20 = 2;
     }

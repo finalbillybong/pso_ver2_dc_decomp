@@ -11,7 +11,7 @@ typedef struct Object {
     int f1c4;
 } Object;
 extern int call_8c1931d4(short, unsigned char, unsigned char, int);
-void operation_8c2552bc(Object *o)
+void TItemProShieldModel_v44_8c2552bc(Object *o)
 {
     int t1;
     t1 = call_8c1931d4(o->f13c->f20, 1, o->f138 - 0x27, -1);

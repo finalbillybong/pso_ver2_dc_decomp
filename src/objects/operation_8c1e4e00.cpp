@@ -4,7 +4,7 @@ struct Arg1 {
     short f00;
 };
 extern "C" void operation_8c09e6b4(void *);
-extern "C" void operation_8c1e4e00(TOContainerAncientEnemy *o, Arg1 *a1, int a2)
+extern "C" void TOContainerAncientEnemy_vslot05_8c1e4e00(TOContainerAncientEnemy *o, Arg1 *a1, int a2)
 {
     if (a1->f00 == 1) {
         if (a2 != 0) {

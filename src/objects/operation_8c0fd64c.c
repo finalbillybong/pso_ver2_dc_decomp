@@ -19,7 +19,7 @@ struct S_vv2 {
 };
 extern S_g8c46ed0c *g_8c46ed0c;
 extern void call_8c05406c(TOMine *, Frame *);
-void operation_8c0fd64c(TOMine *o)
+void TOMine_vslot97_8c0fd64c(TOMine *o)
 {
     Frame frame;
     int v6;

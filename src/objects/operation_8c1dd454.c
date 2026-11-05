@@ -35,7 +35,7 @@ struct S_c8c21c6fc {
 };
 extern void operation_8c1e22ec(void *);
 extern S_c8c21c6fc *call_8c21c6fc(int);
-extern int operation_8c21f32c(void *);
+extern int get_field_wrapper_8c21f32c(void *);
 extern void call_8c21f3f0(int);
 extern void call_8c1e23d4(Arg0_24 *, void *);
 int operation_8c1dd454(Object *o)
@@ -60,7 +60,7 @@ int operation_8c1dd454(Object *o)
         if (o->f38->f00.f00 != 3) {
             goto L_8c1dd4fa;
         }
-        t2 = operation_8c21f32c((void *)(((char *)o->f38 + 0x4)));
+        t2 = get_field_wrapper_8c21f32c((void *)(((char *)o->f38 + 0x4)));
         call_8c21f3f0(t2);
     } else {
         call_8c1e23d4((Arg0_24 *)(o->f24), (void *)(((char *)o->f38 + 0x4)));

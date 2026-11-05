@@ -148,7 +148,7 @@ extern "C" void operation_8c059ef8(void *, int);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" void call_8c01c5f0(Object *);
 extern "C" int call_8c05c0dc(Object *, float);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" void operation_8c0d2770(Object *o, int a1)
 {
@@ -198,7 +198,7 @@ extern "C" void operation_8c0d2770(Object *o, int a1)
         case 0:
             t2 = call_8c05c0dc(o, 400.0f);
             if (t2 != 0) {
-                operation_8c05c184((void *)o);
+                set_fields_wrapper_8c05c184((void *)o);
                 aim_direction_8c05bdd4((void *)o);
                 v1->f00 = 2;
                 goto L_8c0d288e;

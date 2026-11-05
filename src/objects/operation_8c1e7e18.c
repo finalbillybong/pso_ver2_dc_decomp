@@ -4,7 +4,7 @@ extern void call_8c1e8670(void);
 extern void call_8c1e8788(void);
 extern void update_overlay_menu(void *);
 extern void advance_request_8c1e8ad0(void *);
-void operation_8c1e7e18(TObjWarpBoss *o)
+void TObjWarpBoss_update_step_8c1e7e18(TObjWarpBoss *o)
 {
     switch (o->f10e) {
     case 0:

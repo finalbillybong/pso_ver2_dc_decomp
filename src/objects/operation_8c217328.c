@@ -26,7 +26,7 @@ struct S_c8c156bd8 {
     unsigned short f80;
 };
 extern S_c8c156bd8 *call_8c156bd8(void *, int, void *);
-extern void call_8c156d30(int, void *, int, int);
+extern void add_wrapper_8c156d30(int, void *, int, int);
 extern void call_8c156d48(int, void *, int, int, int);
 extern void call_8c15700c(S_c8c156bd8 *, float);
 extern void call_8c157138(S_c8c156bd8 *);
@@ -34,9 +34,9 @@ S_c8c156bd8 *operation_8c217328(void)
 {
     S_c8c156bd8 *t1;
     t1 = call_8c156bd8((void *)0x8c2e1790, 2, (*(S_g8c467180 **)0x8c467180)->f2c->f1f4);
-    call_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f2f0, 6, 3);
+    add_wrapper_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f2f0, 6, 3);
     if (*(int *)0x8c504a24 > 0) {
-        call_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f4ac, 6, 7);
+        add_wrapper_8c156d30((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f4ac, 6, 7);
     } else {
         call_8c156d48((int)t1, (*(S_g8c467180 **)0x8c467180)->f2c->f4ac, 0x16, 7, -0x979798);
     }

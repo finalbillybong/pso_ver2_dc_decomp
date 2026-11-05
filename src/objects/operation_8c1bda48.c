@@ -1,6 +1,6 @@
 #include "src/include/classes/TWindowInputNumber.h"
 extern void play_se_8c05fbf8(int, int, int, int);
-void operation_8c1bda48(TWindowInputNumber *o)
+void TWindowInputNumber_update_step_8c1bda48(TWindowInputNumber *o)
 {
     char v1;
     play_se_8c05fbf8(0x50000, 0, 0, 0);

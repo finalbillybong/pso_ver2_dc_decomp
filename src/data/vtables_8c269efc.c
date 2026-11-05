@@ -15,21 +15,21 @@ extern void TObjHashiVersus2_dtor_8c11a5d8(void);
 extern void fn_8c119e6c(void);
 extern void draw_rising_grid_view(void);
 extern void draw_grid_view_records(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
+extern void TObjectShared_vslot08_8c010500(void);
 extern void TObjHashiVersus2_v09_8c11a63c(void);
-extern void operation_8c010508(void);
+extern void TObjectShared_vslot10_8c010508(void);
 extern void grid_view_visible(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c0eea78(void);
 extern void operation_8c11a3b0(void);
 extern void operation_8c11a414(void);
 extern void operation_8c11a240(void);
-extern void operation_8c11a1f0(void);
+extern void TObjHashiBase_vslot09_8c11a1f0(void);
 extern void TObjHashiBase_dtor_8c119e28(void);
 
 /* 8c269efc: type-information and this-adjustment header, then 6 slots */
@@ -65,15 +65,15 @@ VirtualFunction const TObjHashiVersus2_vtable_8c269f3c[18] = {
     draw_rising_grid_view,
     draw_grid_view_records,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TObjHashiVersus2_v09_8c11a63c,
-    operation_8c010508,
+    TObjectShared_vslot10_8c010508,
     grid_view_visible,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0eea78
 };
@@ -87,15 +87,15 @@ VirtualFunction const vt_8c269f84[18] = {
     draw_rising_grid_view,
     draw_grid_view_records,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c11a414,
-    operation_8c010508,
+    TObjectShared_vslot10_8c010508,
     grid_view_visible,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0eea78
 };
@@ -109,15 +109,15 @@ VirtualFunction const vt_8c269fcc[18] = {
     draw_rising_grid_view,
     draw_grid_view_records,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c11a1f0,
-    operation_8c010508,
+    TObjectShared_vslot08_8c010500,
+    TObjHashiBase_vslot09_8c11a1f0,
+    TObjectShared_vslot10_8c010508,
     grid_view_visible,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0eea78
 };
@@ -131,15 +131,15 @@ VirtualFunction const TObjHashiBase_vtable_8c26a014[18] = {
     draw_rising_grid_view,
     draw_grid_view_records,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c11a1f0,
-    operation_8c010508,
+    TObjectShared_vslot08_8c010500,
+    TObjHashiBase_vslot09_8c11a1f0,
+    TObjectShared_vslot10_8c010508,
     grid_view_visible,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c0eea78
 };

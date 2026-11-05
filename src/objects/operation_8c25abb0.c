@@ -15,10 +15,10 @@ extern char g_8c41cba0[];
 extern void operation_8c1cc690(void);
 extern int pair_grid_view_ready(void *);
 extern int call_8c25ad08(TAdPSOPlay *);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void call_8c119c78(void *);
-extern void operation_8c25ad8c(void *);
-extern void operation_8c25adc8(void *);
+extern void TAdPSOPlay_update_step_8c25ad8c(void *);
+extern void TAdPSOPlay_update_step_2_8c25adc8(void *);
 extern void select_mode0_8c1cc49c(void);
 void TAdPSOPlay_update_8c25abb0(TAdPSOPlay *o)
 {
@@ -54,7 +54,7 @@ void TAdPSOPlay_update_8c25abb0(TAdPSOPlay *o)
         t3 = pair_grid_view_ready((void *)(o->f28));
         if (t3 == 0) {
             if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-                t4 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+                t4 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
                 if (t4 == 0) {
                     return;
                 }
@@ -64,16 +64,16 @@ void TAdPSOPlay_update_8c25abb0(TAdPSOPlay *o)
 L_8c25ac1c:;
             v81 = (S_vv81 *)o->f2c;
             if (((v81->f80 & 0xffff & 2)) != 0) {
-                operation_8c25ad8c((void *)o);
+                TAdPSOPlay_update_step_8c25ad8c((void *)o);
                 o->f20 = 2;
                 return;
             }
             if (((v81->f80 & 0xffff & 4)) != 0) {
-                operation_8c25ad8c((void *)o);
+                TAdPSOPlay_update_step_8c25ad8c((void *)o);
                 o->f20 = 3;
                 return;
 L_8c25ac4e:;
-                operation_8c25adc8((void *)o);
+                TAdPSOPlay_update_step_2_8c25adc8((void *)o);
                 return;
 L_8c25ac58:;
                 v3 = (int)o->f24;

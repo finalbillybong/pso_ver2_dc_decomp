@@ -44,7 +44,7 @@ struct S_c8c156bd8 {
 };
 extern S_g8c467180 *g_8c467180;
 extern S_c8c156bd8 *operation_8c156bd8(int, int, int);
-extern void operation_8c156d30(S_c8c156bd8 *, void *, int, int);
+extern void add_wrapper_8c156d30(S_c8c156bd8 *, void *, int, int);
 extern void operation_8c15700c(S_c8c156bd8 *, float);
 extern void operation_8c157138(void *);
 S_c8c156bd8 *operation_8c1a8be8(void)
@@ -54,11 +54,11 @@ S_c8c156bd8 *operation_8c1a8be8(void)
     v1 = (char *)g_8c467180->f2c->f23c;
     t1 = operation_8c156bd8((int)((void *)0x8c323fec), 5, (int)(v1));
     t1->f80 = (t1->f80 & 0xffff) | 0x100;
-    operation_8c156d30(t1, (void *)(g_8c467180->f2c->f3e4), 6, 0);
-    operation_8c156d30(t1, (void *)(g_8c467180->f2c->f3e8), 6, 1);
-    operation_8c156d30(t1, (void *)(g_8c467180->f2c->f3ec), 6, 2);
-    operation_8c156d30(t1, (void *)(g_8c467180->f2c->f3f0), 6, 3);
-    operation_8c156d30(t1, (void *)(g_8c467180->f2c->f3f4), 6, 4);
+    add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f3e4), 6, 0);
+    add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f3e8), 6, 1);
+    add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f3ec), 6, 2);
+    add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f3f0), 6, 3);
+    add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f3f4), 6, 4);
     t1->f80 = (t1->f80 & 0xffff) | 0x10;
     operation_8c15700c(t1, 179.0f);
     operation_8c157138((void *)t1);

@@ -1,6 +1,6 @@
 #include "src/include/classes/TObjLazerFenceExtra.h"
 extern void call_8c0813dc(void);
-extern void operation_8c0813a0(void *);
+extern void TObjLazerFenceExtra_update_step_8c0813a0(void *);
 void TObjLazerFenceExtra_update_8c08136c(TObjLazerFenceExtra *o)
 {
     if (o->fec != 0) {
@@ -11,5 +11,5 @@ void TObjLazerFenceExtra_update_8c08136c(TObjLazerFenceExtra *o)
         call_8c0813dc();
         return;
     }
-    operation_8c0813a0((void *)o);
+    TObjLazerFenceExtra_update_step_8c0813a0((void *)o);
 }

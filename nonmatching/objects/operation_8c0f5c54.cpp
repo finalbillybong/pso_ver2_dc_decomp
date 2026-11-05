@@ -203,7 +203,7 @@ extern "C" void rotate_scalar_pair(void *, void *, int);
 extern "C" void call_8c3bdf60(void *, void *);
 extern "C" void create_effect_777c(void *, int);
 extern "C" int operation_8c05c1f0(Object *);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
@@ -317,7 +317,7 @@ L_8c0f5dce:;
         }
         t3 = operation_8c05c1f0(o);
         if (t3 != 0) {
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
         }
         t4 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);

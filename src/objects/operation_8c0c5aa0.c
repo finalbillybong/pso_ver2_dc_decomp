@@ -19,7 +19,7 @@ extern void select_state2_8c01c1b4(void);
 extern void call_8c05f9e4(void);
 extern void operation_0c62e0(void);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c0c5aa0(void)
+void game_mode_26_frame_8c0c5aa0(void)
 {
     Frame frame;
     int t1;

@@ -17,7 +17,7 @@ struct S_c8c169508 {
 extern int operation_2391f4(void *);
 extern int operation_239218(void *);
 extern int call_8c16a18c(void *, int);
-extern S_c8c169508 *operation_8c169508(void *);
+extern S_c8c169508 *hierarchy_is_active_wrapper_2_8c169508(void *);
 extern int operation_239228(void *);
 int operation_8c02b818(Object *o, int a1)
 {
@@ -39,7 +39,7 @@ int operation_8c02b818(Object *o, int a1)
             if (t3 == 0) {
                 return 0;
             }
-            t4 = operation_8c169508((void *)t3);
+            t4 = hierarchy_is_active_wrapper_2_8c169508((void *)t3);
             if (t4 == 0) {
                 return 0;
             }
@@ -53,7 +53,7 @@ int operation_8c02b818(Object *o, int a1)
             if (t6 == 0) {
                 return 0;
             }
-            t7 = operation_8c169508((void *)t6);
+            t7 = hierarchy_is_active_wrapper_2_8c169508((void *)t6);
             if (t7 == 0) {
                 return 0;
             }

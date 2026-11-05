@@ -11,32 +11,32 @@ extern void TItemMag_dtor_8c07d168(void);
 extern void TItem_update_8c073578(void);
 extern void TItem_render_8c073678(void);
 extern void TItemMag_render_shadow_8c07f068(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
+extern void TObjectShared_vslot08_8c010500(void);
 extern void operation_8c073e54(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c074814(void);
 extern void operation_8c073900(void);
 extern void TItemMag_v15_8c07d5cc(void);
 extern void TItemMag_v16_8c07d65c(void);
 extern void TItemMag_v17_8c07d668(void);
-extern void operation_8c20a430(void);
+extern void TItemProShield_vslot18_8c20a430(void);
 extern void fn_8c209ad8(void);
 extern void fn_8c209eb4(void);
 extern void fn_8c209c48(void);
-extern void operation_8c209fe0(void);
-extern void operation_8c20a35c(void);
+extern void TItemProShield_vslot22_8c209fe0(void);
+extern void TItemProShield_vslot23_8c20a35c(void);
 extern void fn_8c20a160(void);
-extern void operation_8c20a228(void);
+extern void TItemProShield_vslot25_8c20a228(void);
 extern void TItemMag_v26_8c07d4e0(void);
-extern void operation_8c20a0d8(void);
+extern void TItemProShield_vslot27_8c20a0d8(void);
 extern void operation_8c022c9c(void);
 extern void operation_8c027388(void);
-extern void operation_8c075b84(void);
+extern void TItemProShield_vslot30_8c075b84(void);
 extern void TItemMag_v31_8c07d3f8(void);
 extern void operation_8c075338(void);
 extern void operation_8c07533c(void);
@@ -52,8 +52,8 @@ extern void TItemMag_v42_8c07d248(void);
 extern void TItemMag_v43_8c07d324(void);
 extern void TItemMag_v44_8c07d1ac(void);
 extern void TItemMag_v45_8c07d1f0(void);
-extern void operation_8c07fd60(void);
-extern void operation_8c07fd64(void);
+extern void TItemProShield_vslot46_8c07fd60(void);
+extern void TItemProShield_vslot47_8c07fd64(void);
 extern void TObjRain_dtor_8c07fdb8(void);
 extern void TObjRain_update_8c07fdfc(void);
 extern void TObjRain_render_8c07fe08(void);
@@ -61,8 +61,8 @@ extern void TObjTank_dtor_8c080194(void);
 extern void TObjTank_update_8c0801ec(void);
 extern void TObjTank_render_8c0801f0(void);
 extern void TObjTank_render_shadow_8c08027c(void);
-extern void operation_8c010504(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot09_8c010504(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 
 /* 8c264204: type-information and this-adjustment header, then 5 slots */
@@ -85,32 +85,32 @@ VirtualFunction const TItemMag_vtable_8c264220[50] = {
     TItem_render_8c073678,
     TItemMag_render_shadow_8c07f068,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c073e54,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c074814,
     operation_8c073900,
     TItemMag_v15_8c07d5cc,
     TItemMag_v16_8c07d65c,
     TItemMag_v17_8c07d668,
-    operation_8c20a430,
+    TItemProShield_vslot18_8c20a430,
     fn_8c209ad8,
     fn_8c209eb4,
     fn_8c209c48,
-    operation_8c209fe0,
-    operation_8c20a35c,
+    TItemProShield_vslot22_8c209fe0,
+    TItemProShield_vslot23_8c20a35c,
     fn_8c20a160,
-    operation_8c20a228,
+    TItemProShield_vslot25_8c20a228,
     TItemMag_v26_8c07d4e0,
-    operation_8c20a0d8,
+    TItemProShield_vslot27_8c20a0d8,
     operation_8c022c9c,
     operation_8c027388,
-    operation_8c075b84,
+    TItemProShield_vslot30_8c075b84,
     TItemMag_v31_8c07d3f8,
     operation_8c075338,
     operation_8c07533c,
@@ -126,8 +126,8 @@ VirtualFunction const TItemMag_vtable_8c264220[50] = {
     TItemMag_v43_8c07d324,
     TItemMag_v44_8c07d1ac,
     TItemMag_v45_8c07d1f0,
-    operation_8c07fd60,
-    operation_8c07fd64
+    TItemProShield_vslot46_8c07fd60,
+    TItemProShield_vslot47_8c07fd64
 };
 
 /* 8c2642e8: type-information and this-adjustment header, then 5 slots */
@@ -150,14 +150,14 @@ VirtualFunction const TObjTank_vtable_8c264304[17] = {
     TObjTank_render_8c0801f0,
     TObjTank_render_shadow_8c08027c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0
 };

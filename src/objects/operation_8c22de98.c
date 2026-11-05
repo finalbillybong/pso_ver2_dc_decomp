@@ -36,7 +36,7 @@ extern void request_resource_release(void *);
 extern void operation_8c19a044(void *, int);
 extern void clear_global_8c22fff0(void);
 extern void call_8c22e8e4(TQuestVmDownLoadServer *, void *, int);
-void operation_8c22de98(TQuestVmDownLoadServer *o)
+void TQuestVmDownLoadServer_update_step_2_8c22de98(TQuestVmDownLoadServer *o)
 {
     S_vv201 *v201;
     S_vv202 *v202;

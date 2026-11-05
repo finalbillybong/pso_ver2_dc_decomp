@@ -81,7 +81,7 @@ static inline int is_type_7_or_8(Object *o)
     }
     return r;
 }
-extern "C" void operation_8c160e80(Object *o)
+extern "C" void TObjEnePanBARA_state27_8c160e80(Object *o)
 {
     Frame frame;
     int v6;

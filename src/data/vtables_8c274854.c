@@ -3,7 +3,7 @@
 typedef void (*VirtualFunction)(void);
 
 extern void operation_8c1ac62c(void);
-extern void operation_1abbcc(void);
+extern void TItemShoot_vslot01_8c1abbcc(void);
 extern void reconstruct_8c1ac5b4(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
@@ -24,7 +24,7 @@ VirtualFunction const vt_8c274854[8] = {
     0,
     0,
     operation_8c1ac62c,
-    operation_1abbcc,
+    TItemShoot_vslot01_8c1abbcc,
     reconstruct_8c1ac5b4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
@@ -36,7 +36,7 @@ VirtualFunction const vt_8c274874[8] = {
     0,
     0,
     operation_8c1ac698,
-    operation_1abbcc,
+    TItemShoot_vslot01_8c1abbcc,
     operation_1ac3e0,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
@@ -48,7 +48,7 @@ VirtualFunction const TItemShootParticle_vtable_8c274894[8] = {
     0,
     0,
     TItemShootParticle_dtor_8c1abfe8,
-    operation_1abbcc,
+    TItemShoot_vslot01_8c1abbcc,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
@@ -60,7 +60,7 @@ VirtualFunction const TItemShootModel_vtable_8c2748b4[8] = {
     0,
     0,
     TItemShootModel_dtor_8c1ac36c,
-    operation_1abbcc,
+    TItemShoot_vslot01_8c1abbcc,
     TItemShootModel_render_8c1abeb8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
@@ -72,7 +72,7 @@ VirtualFunction const TItemShoot_vtable_8c2748d4[8] = {
     0,
     0,
     TItemShoot_dtor_8c1abb78,
-    operation_1abbcc,
+    TItemShoot_vslot01_8c1abbcc,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,

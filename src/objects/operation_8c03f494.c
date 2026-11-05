@@ -6,7 +6,7 @@ typedef struct Vector3 {
 extern void operation_8c17b8ac(void);
 extern void word_operation_8c1ddaf0(unsigned int);
 extern void request_game_mode_8c01c1a4(int);
-void operation_8c03f494(void)
+void game_mode_29_frame_8c03f494(void)
 {
     /* TODO 00000000..00000000
      * 00000000 walker stopped: instruction missing at the range end (data in the listing)

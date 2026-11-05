@@ -25,7 +25,7 @@ struct PmfObj {
 typedef void (PmfObj::*PMF_0)();
 extern "C" char g_8c316c90[];
 extern "C" int call_8c18e6fc(Frame *);
-extern "C" void operation_8c15fe30(Object *o)
+extern "C" void TObjEnePanBARA_state13_8c15fe30(Object *o)
 {
     Frame frame;
     int v1;

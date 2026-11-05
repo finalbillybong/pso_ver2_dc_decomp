@@ -9,7 +9,7 @@ struct Object {
     unsigned short f02;
 };
 extern int get_field_8c247ea4(int);
-int operation_8c247d90(Object *o)
+int get_field_wrapper_2_8c247d90(Object *o)
 {
     int t1;
     if (o == 0) {

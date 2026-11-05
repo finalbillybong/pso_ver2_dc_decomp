@@ -31,7 +31,7 @@ public:
 };
 extern "C" int current_mode_active(void);
 extern "C" Child *operation_03b55c(void *, int);
-extern "C" int operation_02450c(Child *);
+extern "C" int hierarchy_is_active_wrapper_8c02450c(Child *);
 extern "C" void restore_child_blend(void);
 extern "C" void notify_children_8c021c4c(char *o)
 {
@@ -40,7 +40,7 @@ extern "C" void notify_children_8c021c4c(char *o)
         int offset = 0xbcc;
         for (i = 0; i < 13; i++) {
             Child *child = operation_03b55c(o + offset, i);
-            if (operation_02450c(child)) {
+            if (hierarchy_is_active_wrapper_8c02450c(child)) {
                 child->notify(o);
                 restore_child_blend();
             }

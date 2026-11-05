@@ -31,7 +31,7 @@ extern int operation_8c257e2c(int);
 extern void call_8c1e1db4(Object *, Arg0_a8 *);
 extern void call_8c1e1d04(Object *, void *);
 extern void call_8c1e1a54(Object *);
-void operation_8c1e2e84(Object *o)
+void TWindowKeyBoardSoft_state18_8c1e2e84(Object *o)
 {
     Frame frame;
     unsigned short v1;

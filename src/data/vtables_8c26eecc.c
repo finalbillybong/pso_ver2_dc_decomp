@@ -7,26 +7,26 @@ extern void TOKey_update_8c112fb0(void);
 extern void TOSensor_render_8c15cb74(void);
 extern void operation_8c0eeb8c(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
+extern void TObjectShared_vslot08_8c010500(void);
 extern void show_key_8c112fbc(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
-extern void operation_8c1135b4(void);
+extern void TObjectShared_vslot13_8c010510(void);
+extern void TOKey_vslot14_8c1135b4(void);
 extern void TOSensor_v15_8c15cb70(void);
 extern void TOSensor_v16_8c15c858(void);
 extern void TOSensor_v17_8c15c9f8(void);
 extern void TOSensor_v18_8c15c9fc(void);
 extern void TOKey_v19_8c113130(void);
 extern void TOKey_v20_8c1132e0(void);
-extern void operation_8c1133cc(void);
-extern void operation_8c113564(void);
+extern void TOKey_vslot21_8c1133cc(void);
+extern void TOKey_vslot22_8c113564(void);
 extern void TOSensor_v23_8c15c914(void);
-extern void operation_8c1136b0(void);
+extern void TOKey_vslot24_8c1136b0(void);
 extern void TOSensorAncient01_dtor_8c15ccec(void);
 extern void TOSensorAncient01_render_8c15ceac(void);
 extern void TOSensorAncient01_v15_8c15d22c(void);
@@ -126,7 +126,7 @@ extern void fn_8c1209d8(void);
 extern void operation_8c120f08(void);
 extern void operation_8c11f724(void);
 extern void operation_8c121008(void);
-extern void operation_8c11f640(void);
+extern void play_se_wrapper_8c11f640(void);
 extern void operation_8c12132c(void);
 extern void TObjNpcLappy_dtor_8c15da5c(void);
 extern void TObjNpcLappy_v94_8c15db04(void);
@@ -135,7 +135,7 @@ extern void TObjEnePanBARA_dtor_8c15e1d0(void);
 extern void TObjEnePanBARA_update_8c15e24c(void);
 extern void TObjEnePanBARA_render_8c15e538(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
-extern void operation_8c010504(void);
+extern void TObjectShared_vslot09_8c010504(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c013434(void);
 extern void fn_8c045200(void);
@@ -192,26 +192,26 @@ VirtualFunction const TOSensor_vtable_8c26eecc[27] = {
     TOSensor_render_8c15cb74,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     show_key_8c112fbc,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
-    operation_8c1135b4,
+    TObjectShared_vslot13_8c010510,
+    TOKey_vslot14_8c1135b4,
     TOSensor_v15_8c15cb70,
     TOSensor_v16_8c15c858,
     TOSensor_v17_8c15c9f8,
     TOSensor_v18_8c15c9fc,
     TOKey_v19_8c113130,
     TOKey_v20_8c1132e0,
-    operation_8c1133cc,
-    operation_8c113564,
+    TOKey_vslot21_8c1133cc,
+    TOKey_vslot22_8c113564,
     TOSensor_v23_8c15c914,
-    operation_8c1136b0
+    TOKey_vslot24_8c1136b0
 };
 
 /* 8c26ef38: type-information and this-adjustment header, then 25 slots */
@@ -223,26 +223,26 @@ VirtualFunction const TOSensorAncient01_vtable_8c26ef38[27] = {
     TOSensorAncient01_render_8c15ceac,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     show_key_8c112fbc,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
-    operation_8c1135b4,
+    TObjectShared_vslot13_8c010510,
+    TOKey_vslot14_8c1135b4,
     TOSensorAncient01_v15_8c15d22c,
     TOSensor_v16_8c15c858,
     TOSensorAncient01_v17_8c15d14c,
     TOSensorAncient01_v18_8c15d1a0,
     TOKey_v19_8c113130,
     TOKey_v20_8c1132e0,
-    operation_8c1133cc,
-    operation_8c113564,
+    TOKey_vslot21_8c1133cc,
+    TOKey_vslot22_8c113564,
     TOSensor_v23_8c15c914,
-    operation_8c1136b0
+    TOKey_vslot24_8c1136b0
 };
 
 /* 8c26efa4: type-information and this-adjustment header, then 25 slots */
@@ -254,26 +254,26 @@ VirtualFunction const TOSensorGeneral01_vtable_8c26efa4[27] = {
     TOSensorGeneral01_render_8c15d494,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     show_key_8c112fbc,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
-    operation_8c1135b4,
+    TObjectShared_vslot13_8c010510,
+    TOKey_vslot14_8c1135b4,
     TOSensor_v15_8c15cb70,
     TOSensor_v16_8c15c858,
     TOSensorGeneral01_v17_8c15d634,
     TOSensorGeneral01_v18_8c15d6f8,
     TOKey_v19_8c113130,
     TOKey_v20_8c1132e0,
-    operation_8c1133cc,
-    operation_8c113564,
+    TOKey_vslot21_8c1133cc,
+    TOKey_vslot22_8c113564,
     TOSensor_v23_8c15c914,
-    operation_8c1136b0
+    TOKey_vslot24_8c1136b0
 };
 
 /* 8c26f010: type-information and this-adjustment header, then 98 slots */
@@ -285,13 +285,13 @@ VirtualFunction const TObjNpcGovernorBase_vtable_8c26f010[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -376,7 +376,7 @@ VirtualFunction const TObjNpcGovernorBase_vtable_8c26f010[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -389,13 +389,13 @@ VirtualFunction const TObjNpcLappy_vtable_8c26f1a0[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -480,7 +480,7 @@ VirtualFunction const TObjNpcLappy_vtable_8c26f1a0[100] = {
     operation_8c120f08,
     TObjNpcLappy_v94_8c15db04,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -493,13 +493,13 @@ VirtualFunction const TObjNpcSoldierMacho_vtable_8c26f330[100] = {
     operation_8c120524,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -584,7 +584,7 @@ VirtualFunction const TObjNpcSoldierMacho_vtable_8c26f330[100] = {
     operation_8c120f08,
     operation_8c11f724,
     operation_8c121008,
-    operation_8c11f640,
+    play_se_wrapper_8c11f640,
     operation_8c12132c
 };
 
@@ -597,13 +597,13 @@ VirtualFunction const TObjEnePanBARA_vtable_8c26f4c0[91] = {
     TObjEnePanBARA_render_8c15e538,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -692,13 +692,13 @@ VirtualFunction const TObjEnePanarmsAtkColli_vtable_8c26f62c[91] = {
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -787,15 +787,15 @@ VirtualFunction const TODoorMachine01_vtable_8c26f798[24] = {
     TODoorMachine01_render_8c16201c,
     TODoorMachine01_render_shadow_8c162614,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     TODoorMachine01_v15_8c162610,
     TODoorMachine01_v16_8c162310,
@@ -815,26 +815,26 @@ VirtualFunction const TOKeyMachine01_vtable_8c26f7f8[27] = {
     TOKeyMachine01_render_8c1628a8,
     TOKeyMachine01_render_shadow_8c162cc8,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     show_key_8c112fbc,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
-    operation_8c1135b4,
+    TObjectShared_vslot13_8c010510,
+    TOKey_vslot14_8c1135b4,
     TOKeyMachine01_v15_8c162cc4,
     TOKeyMachine01_v16_8c162c78,
     TOKeyMachine01_v17_8c162a74,
     TOKeyMachine01_v18_8c162a94,
     TOKeyMachine01_v19_8c162b04,
     TOKeyMachine01_v20_8c162b94,
-    operation_8c1133cc,
-    operation_8c113564,
+    TOKey_vslot21_8c1133cc,
+    TOKey_vslot22_8c113564,
     update_cycle_8c113060,
-    operation_8c1136b0
+    TOKey_vslot24_8c1136b0
 };
 
 /* 8c26f864: type-information and this-adjustment header, then 17 slots */
@@ -846,15 +846,15 @@ VirtualFunction const TPhotonFarlla_vtable_8c26f864[19] = {
     TPhotonFarlla_render_8c1645a4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c01c544,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c13ebb4,
     operation_8c13ec0c
@@ -869,15 +869,15 @@ VirtualFunction const TPhotonEstlla_vtable_8c26f8b0[19] = {
     TPhotonEstlla_render_8c164cd8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c01c544,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c13ebb4,
     operation_8c13ec0c
@@ -892,13 +892,13 @@ VirtualFunction const TObjBoss2CeilJunk_vtable_8c26f8fc[16] = {
     TObjBoss2CeilJunk_render_8c165530,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };

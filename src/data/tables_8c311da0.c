@@ -14,13 +14,13 @@ extern void fn_8c100f60(void);
 extern void operation_8c101094(void);
 extern void fn_8c09d4c0(void);
 extern void operation_8c09d54c(void);
-extern void operation_8c01217c(void);
+extern void get_game_mode_wrapper_8c01217c(void);
 extern void operation_8c01219c(void);
 extern void operation_0c64c4(void);
 extern void operation_8c0c64e8(void);
 extern void select_fog_entry_file_8c12161c(void);
 extern void operation_8c1216bc(void);
-extern void operation_8c10baa4(void);
+extern void process_entries_wrapper_3_8c10baa4(void);
 extern void clear_global_8c10be4c(void);
 extern void set_global_8c1aa2c4(void);
 extern void set_global_8c1aa2d0(void);
@@ -49,13 +49,13 @@ Function const d_8c311da0[24] = {
     operation_8c101094,
     fn_8c09d4c0,
     operation_8c09d54c,
-    operation_8c01217c,
+    get_game_mode_wrapper_8c01217c,
     operation_8c01219c,
     operation_0c64c4,
     operation_8c0c64e8,
     select_fog_entry_file_8c12161c,
     operation_8c1216bc,
-    operation_8c10baa4,
+    process_entries_wrapper_3_8c10baa4,
     clear_global_8c10be4c,
     set_global_8c1aa2c4,
     set_global_8c1aa2d0,

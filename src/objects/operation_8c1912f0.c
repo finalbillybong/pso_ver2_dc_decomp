@@ -19,7 +19,7 @@ extern S_c8c03b55c *call_8c03b55c(int, int);
 extern void call_8c022538(int, void *);
 extern void call_8c02231c(int, void *, int);
 extern void call_8c02349c(int, int, int);
-void operation_8c1912f0(TWindowSubMag *o, int a1, int a2)
+void TWindowSubMag_update_step_2_8c1912f0(TWindowSubMag *o, int a1, int a2)
 {
     int t1;
     int t2;

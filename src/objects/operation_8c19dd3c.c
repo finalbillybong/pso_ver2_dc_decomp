@@ -16,7 +16,7 @@ struct Object {
 };
 extern S_g8c4db648 *g_8c4db648;
 extern void TQuestThread_ctor_3_8c1736ac(int);
-void operation_8c19dd3c(Object *o)
+void TQuestThread_ctor_3_wrapper_6_8c19dd3c(Object *o)
 {
     if (g_8c4db648 != 0) {
         g_8c4db648->f04 |= 1;

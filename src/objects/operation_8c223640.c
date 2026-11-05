@@ -9,7 +9,7 @@ struct S_c8c021ef8 {
     int f34;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-void operation_8c223640(int a0)
+void lookup_low_id_wrapper_2_8c223640(int a0)
 {
     S_c8c021ef8 *t1;
     t1 = lookup_low_id((int)((unsigned short)a0));

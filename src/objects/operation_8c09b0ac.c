@@ -7,7 +7,7 @@ struct S_vv3 {
     int f00;
 };
 extern void operation_8c09c56c(void *);
-extern void operation_8c09b538(void *);
+extern void game_free_wrapper_2_8c09b538(void *);
 extern void call_8c03dc40(void *, int);
 extern void operation_8c09b2ec(TCMCharacter *);
 extern void operator_delete_8c18de08(void *);
@@ -30,7 +30,7 @@ TCMCharacter *TCMCharacter_dtor_8c09b0ac(TCMCharacter *o, int a1)
             }
             v3 = (S_vv3 *)((char *)v3 + 940);
         }
-        operation_8c09b538((void *)o);
+        game_free_wrapper_2_8c09b538((void *)o);
         call_8c03dc40((void *)(*(S_g8c46ec10 **)0x8c46ec10), 1);
         *(int *)0x8c46ec10 = 0;
         operation_8c09b2ec(o);

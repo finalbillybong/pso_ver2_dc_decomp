@@ -104,7 +104,7 @@ struct S_c8c169508 {
 };
 extern "C" void operation_1c7dd4(void *);
 extern "C" int find_node_8c16a3c0(void *, int);
-extern "C" S_c8c169508 *operation_8c169508(void *);
+extern "C" S_c8c169508 *hierarchy_is_active_wrapper_2_8c169508(void *);
 extern "C" void operation_8c02c998(void *);
 extern "C" int operation_8c02c1ac(void *);
 extern "C" void operation_8c0368a8(void *);
@@ -127,7 +127,7 @@ extern "C" int operation_8c02ad64(Object *o)
     (&frame)->f0d = 9;
     t1 = find_node_8c16a3c0((void *)(((ObjectData *)o)->fbc8), (int)(&(&frame)->f0c));
     if (t1 != 0) {
-        t2 = operation_8c169508((void *)t1);
+        t2 = hierarchy_is_active_wrapper_2_8c169508((void *)t1);
         if (t2 == 0) {
             return 0;
         }

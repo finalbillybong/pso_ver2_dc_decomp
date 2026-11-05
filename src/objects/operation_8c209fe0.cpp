@@ -176,7 +176,7 @@ struct S_vv10 {
 extern "C" void operation_8c04a814(void *, short);
 extern "C" void operation_8c04a8dc(void *, short);
 extern "C" void operation_8c20a108(int);
-extern "C" void operation_8c209fe0(Object *o, int a1)
+extern "C" void TItemProShield_vslot22_8c209fe0(Object *o, int a1)
 {
     S_vv1 *v1;
     short v41;

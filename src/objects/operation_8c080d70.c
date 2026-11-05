@@ -1,7 +1,7 @@
 #include "src/include/classes/TObjLazerFenceNorm.h"
 extern int operation_03d080(unsigned short);
 extern void operation_8c05426c(void *, int, int);
-void operation_8c080d70(TObjLazerFenceNorm *o)
+void TObjLazerFenceNorm_update_step_8c080d70(TObjLazerFenceNorm *o)
 {
     int t1;
     t1 = operation_03d080((unsigned short)o->fe8);

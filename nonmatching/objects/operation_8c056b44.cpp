@@ -170,7 +170,7 @@ struct S_g8c4678ec {
     float f00;
 };
 extern "C" float operation_8c05b8c0(int);
-extern "C" int operation_8c05b90c(int);
+extern "C" int object_random_fraction_wrapper_2_8c05b90c(int);
 extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
 extern "C" float scale_by_half_angle(int, float);
@@ -217,7 +217,7 @@ extern "C" void operation_8c056b44(Object *o, int a1)
         ((ObjectData *)o)->f444 |= 2;
         t1 = operation_8c05b8c0((int)o);
         ((ObjectData *)o)->f460 = ((ObjectData *)o)->f43c + 45.0f + t1 * 2.0f;
-        t2 = operation_8c05b90c((int)o);
+        t2 = object_random_fraction_wrapper_2_8c05b90c((int)o);
         ((ObjectData *)o)->f464 = (Arg0_464 *)(int)t2;
         t3 = njSin_8c37eb0c((void *)(((ObjectData *)o)->f464));
         ((ObjectData *)o)->f3b0 = ((ObjectData *)o)->f438 + t3 * 30.0f;

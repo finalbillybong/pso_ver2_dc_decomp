@@ -11,7 +11,7 @@ extern int lookup_low_id(int);
 extern int operation_8c1cdc80(void *);
 extern S_c8c03b55c *call_8c03b55c(int, int);
 extern void call_8c1d5e2c(void *, int);
-void operation_8c1d4c44(TWindowSubEquip *o)
+void TWindowSubEquip_update_step_2_8c1d4c44(TWindowSubEquip *o)
 {
     int v2;
     int t1;

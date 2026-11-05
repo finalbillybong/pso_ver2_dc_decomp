@@ -21,7 +21,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3827d8(void *);
 extern void call_8c161c78(void *);
 extern void call_8c01cc90(Object *);
-extern void call_8c161ce4(void *);
+extern void set_transform_node_callback_wrapper_2_8c161ce4(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c11b200(Object *o)
 {
@@ -31,6 +31,6 @@ void operation_8c11b200(Object *o)
     call_8c3827d8(o->f28);
     call_8c161c78(o->f3b8);
     call_8c01cc90(o);
-    call_8c161ce4(o->f3b8);
+    set_transform_node_callback_wrapper_2_8c161ce4(o->f3b8);
     njPopMatrixEx_8c38ad10();
 }

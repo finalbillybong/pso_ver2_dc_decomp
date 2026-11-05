@@ -5,7 +5,7 @@ typedef struct Vector3 {
 } Vector3;
 extern void clear_hierarchy_groups(void *);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c0e9a88(void)
+void game_mode_06_exit_8c0e9a88(void)
 {
     clear_hierarchy_groups((void *)((void *)0x8c44bec8));
     wait_vsync_and_flip_8c380516();

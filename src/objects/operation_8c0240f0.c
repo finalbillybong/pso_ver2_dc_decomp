@@ -26,9 +26,9 @@ struct Frame {
     short f02;
     int f04;
 };
-extern int operation_8c02c194(void);
+extern int get_current_area_wrapper_8c02c194(void);
 extern int operation_8c16a18c(void *, int);
-extern int operation_8c169508(void *);
+extern int hierarchy_is_active_wrapper_2_8c169508(void *);
 extern int operation_8c028ef8(void *, void *);
 extern void operation_8c0368a8(void *);
 int operation_8c0240f0(Object *o, int a1)
@@ -50,7 +50,7 @@ int operation_8c0240f0(Object *o, int a1)
             break;
         }
     }
-    t1 = operation_8c02c194();
+    t1 = get_current_area_wrapper_8c02c194();
     if (t1 != 0) {
         return 0;
     }
@@ -58,7 +58,7 @@ int operation_8c0240f0(Object *o, int a1)
     if (t2 == 0) {
         return 0;
     }
-    t3 = operation_8c169508((void *)t2);
+    t3 = hierarchy_is_active_wrapper_2_8c169508((void *)t2);
     if (t3 == 0) {
         return 0;
     }

@@ -24,7 +24,7 @@ struct Arg0_3a8 {
 extern void create_effect_777c(void *, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
 extern void call_8c0ffdf0(void *, int);
-void operation_8c0fa6a0(Object *o)
+void TObjEneSlimeOne_state24_8c0fa6a0(Object *o)
 {
     o->f3cc = 1.0f;
     o->f3c8 = 1.0f;

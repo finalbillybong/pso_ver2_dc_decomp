@@ -196,7 +196,7 @@ extern "C" void operation_8c2436b8(int, int, int);
 extern "C" int call_8c1196d4(void *, void *, int);
 extern "C" void operation_8c119764(int, int, int);
 extern "C" int operation_8c156c24(int, int);
-extern "C" void operation_8c156d30(Arg0_50 *, void *, int, int);
+extern "C" void add_wrapper_8c156d30(Arg0_50 *, void *, int, int);
 extern "C" void operation_8c156f50(Arg0_50 *);
 extern "C" void operation_8c157138(void *);
 extern "C" int operation_8c1571f4(void *);
@@ -371,9 +371,9 @@ extern "C" void operation_8c242abc(Object *o)
                 if (o->f50 == 0) {
                     t12 = operation_8c156c24((int)((void *)0x8c2e1e58), 3);
                     o->f50 = (Arg0_50 *)(int)t12;
-                    operation_8c156d30((Arg0_50 *)(o->f50), (void *)(o->f40->f04), 6, 1);
-                    operation_8c156d30((Arg0_50 *)(o->f50), (void *)(o->f40->f08), 6, 2);
-                    operation_8c156d30((Arg0_50 *)(o->f50), (void *)(o->f40->f0c), 6, 3);
+                    add_wrapper_8c156d30((Arg0_50 *)(o->f50), (void *)(o->f40->f04), 6, 1);
+                    add_wrapper_8c156d30((Arg0_50 *)(o->f50), (void *)(o->f40->f08), 6, 2);
+                    add_wrapper_8c156d30((Arg0_50 *)(o->f50), (void *)(o->f40->f0c), 6, 3);
                     operation_8c156f50((Arg0_50 *)(o->f50));
                     operation_8c157138((void *)(o->f50));
                     o->f50->f80 = (o->f50->f80 & 0xffff) | 1;

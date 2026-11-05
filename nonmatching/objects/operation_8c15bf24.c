@@ -57,7 +57,7 @@ struct S_vv9 {
 extern Block8 g_8c31666c;
 extern S_g8c4dbc20 *g_8c4dbc20;
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(Arg0_38 *, void *, int, int);
+extern void add_wrapper_8c156d30(Arg0_38 *, void *, int, int);
 extern void operation_8c156f50(Arg0_38 *);
 extern void operation_8c157138(void *);
 extern int operation_8c1571f4(void *);
@@ -75,8 +75,8 @@ void operation_8c15bf24(Object *o)
             *(Block8 *)&(&frame)->f00 = *(Block8 *)&g_8c31666c;
             t1 = operation_8c156c24((int)(&frame), 2);
             o->f38 = (Arg0_38 *)t1;
-            operation_8c156d30((Arg0_38 *)(o->f38), (void *)(g_8c4dbc20->f00->f20), 6, 0);
-            operation_8c156d30((Arg0_38 *)(o->f38), (void *)(g_8c4dbc20->f00->f24), 6, 1);
+            add_wrapper_8c156d30((Arg0_38 *)(o->f38), (void *)(g_8c4dbc20->f00->f20), 6, 0);
+            add_wrapper_8c156d30((Arg0_38 *)(o->f38), (void *)(g_8c4dbc20->f00->f24), 6, 1);
             operation_8c156f50((Arg0_38 *)(o->f38));
             operation_8c157138((void *)(o->f38));
             o->f38->f80 = (o->f38->f80 & 0xffff) | 1;

@@ -81,7 +81,7 @@ extern void call_8c38c0e6(int, int);
 extern void call_8c38c0f0(void *);
 extern void operation_8c13ef08(void *);
 extern void operation_8c01cc90(void *);
-extern void operation_8c13ef3c(Object *);
+extern void set_transform_node_callback_wrapper_8c13ef3c(Object *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void reset_state_8c391cc4(void);
 void TPhotonLeilla_render_8c155cc4(Object *o)
@@ -111,7 +111,7 @@ void TPhotonLeilla_render_8c155cc4(Object *o)
         call_8c38c0f0((void *)(((char *)o + 0x1b8)));
         operation_8c13ef08((void *)o);
         operation_8c01cc90((void *)o);
-        operation_8c13ef3c(o);
+        set_transform_node_callback_wrapper_8c13ef3c(o);
         v1->f00 = (int)(g_8c46f574);
         v2->f00 = (int)(g_8c46f578);
         *(Block16 *)&(&g_8c5755ac)->f00 = *(Block16 *)&(&g_8c46f564)->f00;

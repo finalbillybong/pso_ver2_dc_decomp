@@ -35,7 +35,7 @@ extern int g_8c4dc2f0;
 extern "C" void operator_delete_8c18de08(void *);
 extern "C" void call_8c03dc40(void *, int);
 extern "C" void operation_193cc8(void);
-extern "C" void operation_193764(void);
+extern "C" void operator_delete_wrapper_3_8c193764(void);
 extern "C" void operation_8c192ffc(void)
 {
     operator_delete_8c18de08(g_8c4dc2ec);
@@ -52,7 +52,7 @@ extern "C" void operation_8c192ffc(void)
     g_8c4dc2e8 = (S_g8c4dc2e8 *)0;
     g_8c4dc2ec = (S_g8c4dc2ec *)0;
     operation_193cc8();
-    operation_193764();
+    operator_delete_wrapper_3_8c193764();
     {
         short i;
         unsigned int *p = (unsigned int *)0x8c004000;

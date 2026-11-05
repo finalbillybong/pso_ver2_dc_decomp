@@ -166,7 +166,7 @@ extern "C" void create_effect_777c(void *, int);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void update_last_effect(int);
 extern "C" int call_8c05c2dc(Object *);
-extern "C" void operation_8c05c184(Object *);
+extern "C" void set_fields_wrapper_8c05c184(Object *);
 extern "C" void aim_direction_8c05bdd4(Object *);
 extern "C" void call_8c05c580(Object *, int, float);
 extern "C" void njSin_8c37eb0c(void *);
@@ -238,7 +238,7 @@ extern "C" void operation_8c06269c(Object *o, int a1)
         if (t5 == 0) {
             return;
         }
-        operation_8c05c184(o);
+        set_fields_wrapper_8c05c184(o);
         aim_direction_8c05bdd4(o);
         if (!(15.0f > ((ObjectData *)o)->ff8)) {
             ((ObjectData *)o)->f420 *= 0.9f;

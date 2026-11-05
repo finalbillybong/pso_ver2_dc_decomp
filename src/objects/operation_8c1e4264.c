@@ -89,7 +89,7 @@ extern void TObjChip_ctor_8c087d8c(void *, void *, void *);
 extern void create_effect_777c(void *, int);
 extern int get_current_area_8c032b10(void);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c1e4264(Object *o)
+void TOContainerAncientItemCommon_vslot86_8c1e4264(Object *o)
 {
     Frame frame;
     S_vv15 *v15;

@@ -11,15 +11,15 @@ extern void operation_8c0dc63c(void);
 extern void TObjCityMapWarp_dtor_8c1be6cc(void);
 extern void TObjCityMapWarp_update_8c1be894(void);
 extern void TObjCityMapWarp_render_8c1be910(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
+extern void TObjectShared_vslot08_8c010500(void);
 extern void TObjCityMapWarp_v09_8c1bea10(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c088744(void);
 extern void TObjCityMapWarp_v16_8c1be7a4(void);
@@ -61,15 +61,15 @@ VirtualFunction const TObjCityMapWarp_vtable_8c27551c[21] = {
     TObjCityMapWarp_render_8c1be910,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TObjCityMapWarp_v09_8c1bea10,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c088744,
     TObjCityMapWarp_v16_8c1be7a4,
@@ -86,15 +86,15 @@ VirtualFunction const TObjCityAreaWarp_vtable_8c275570[22] = {
     TObjCityAreaWarp_render_8c1be540,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TObjCityAreaWarp_v09_8c1be5fc,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c088744,
     TObjCityAreaWarp_v16_8c1be41c,
@@ -112,15 +112,15 @@ VirtualFunction const TObjCityMainWarp_vtable_8c2755c8[22] = {
     TObjCityMainWarp_render_8c1be288,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     TObjCityMainWarp_v09_8c1be34c,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     TObjCityMainWarp_v15_8c1be1a0,
     TObjCityMainWarp_v16_8c1bdffc,

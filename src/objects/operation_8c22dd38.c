@@ -19,7 +19,7 @@ extern S_g8c467180 *g_8c467180;
 extern S_L8c41cba0 g_8c41cba0;
 extern void set_global_8c22ffe4(void);
 extern void call_8c22e8e4(TQuestVmDownLoadServer *, void *, int);
-void operation_8c22dd38(TQuestVmDownLoadServer *o)
+void TQuestVmDownLoadServer_update_step_8c22dd38(TQuestVmDownLoadServer *o)
 {
     if ((((&g_8c41cba0)->f28 & 4)) != 0) {
         set_global_8c22ffe4();

@@ -230,7 +230,7 @@ extern "C" void call_8c06741c(Object *);
 extern "C" int call_8c05c0dc(Object *, float);
 extern "C" int call_8c18e8a0(void *, int);
 extern "C" int operation_8c05c1f0(Object *);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void set_fields_8c05c1a4(void *, void *);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int check_range_8c01cf68(void *, float);
@@ -359,7 +359,7 @@ L_8c068b70:;
         }
         t8 = operation_8c05c1f0(o);
         if (t8 != 0) {
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
         } else {
             set_fields_8c05c1a4((void *)o, (void *)((void *)0x8c284c60));
         }
@@ -383,7 +383,7 @@ L_8c068b70:;
         ((ObjectData *)o)->f3cc = (int)(((ObjectData *)o)->f3d0);
         t9 = call_8c05c0dc(o, 1000.0f);
         if (t9 != 0) {
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
         } else {
             set_fields_8c05c1a4((void *)o, (void *)((void *)0x8c284c60));
         }

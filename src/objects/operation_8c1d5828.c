@@ -10,13 +10,13 @@ struct S_L8c41cba0 {
     int f28;
 };
 extern char g_8c41cba0[];
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void call_8c18c808(void *);
 void TWindowSubAreaMap_update_8c1d5828(void)
 {
     int t1;
     if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-        t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+        t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
         if (t1 == 0) {
             return;
         }

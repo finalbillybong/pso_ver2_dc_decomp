@@ -3,7 +3,7 @@ typedef struct TWindowSubSymbolChatParts_p98 TWindowSubSymbolChatParts_p98;
 extern int operation_8c225448(void *);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void call_8c19a044(void *, int);
-void operation_8c225228(TWindowSubSymbolChatParts *o)
+void TWindowSubSymbolChatParts_update_step_8c225228(TWindowSubSymbolChatParts *o)
 {
     int t1;
     t1 = operation_8c225448((void *)o);

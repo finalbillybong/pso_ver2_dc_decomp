@@ -89,7 +89,7 @@ extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TObjChip_ctor_8c087d8c(void *, void *, void *);
 extern int get_current_area_8c032b10(void);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c1e4c40(Object *o)
+void TOContainerAncientEnemy_vslot86_8c1e4c40(Object *o)
 {
     Frame frame;
     S_vv15 *v15;

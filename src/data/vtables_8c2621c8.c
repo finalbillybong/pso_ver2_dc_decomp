@@ -7,15 +7,15 @@ extern void TObject_update_default_8c0111c4(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void TObjCGrass_dtor_8c0544f4(void);
 extern void TObjCGrass_update_8c0545c8(void);
@@ -101,7 +101,7 @@ extern void operation_8c0134ec(void);
 extern void operation_8c05a004(void);
 extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
-extern void operation_8c05c804(void);
+extern void TObjEneBm3Fly_vslot89_8c05c804(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
@@ -131,10 +131,10 @@ extern void TObjEneBm3FlyNest_v37_8c058194(void);
 extern void TObjEneBm3FlyNest_v69_8c058234(void);
 extern void TObjEneBm3FlyNest_v70_8c0581d8(void);
 extern void TObjEneBm3FlyNest_v71_8c058198(void);
-extern void operation_8c059d2c(void);
+extern void TObjEneDD_vslot89_8c059d2c(void);
 extern void TObjEneBm3FlyNest_v93_8c0580c4(void);
 extern void TObjEneBm3FlyNest_v94_8c058254(void);
-extern void operation_8c05b16c(void);
+extern void TObjEneDD_vslot95_8c05b16c(void);
 extern void TObjEneBm3FlyNest_v109_8c0594c4(void);
 extern void TObjEneBm3FlyNest_v110_8c0598d0(void);
 extern void TObjEneBm3FlyNest_CarryFly_dtor_8c0577b4(void);
@@ -150,15 +150,15 @@ VirtualFunction const vt_8c2621c8[17] = {
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0
 };
 
@@ -171,15 +171,15 @@ VirtualFunction const TObjCGrass_vtable_8c26220c[17] = {
     TObjCGrass_render_8c0547b4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c01c544,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0
 };
 
@@ -192,13 +192,13 @@ VirtualFunction const TObjEneBm3Fly_vtable_8c262250[114] = {
     TObjEneBm3Fly_render_8c057478,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -276,7 +276,7 @@ VirtualFunction const TObjEneBm3Fly_vtable_8c262250[114] = {
     operation_8c05a004,
     operation_8c012b98,
     fn_8c012aa8,
-    operation_8c05c804,
+    TObjEneBm3Fly_vslot89_8c05c804,
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
@@ -310,13 +310,13 @@ VirtualFunction const TObjEneBm3FlyNest_vtable_8c262418[113] = {
     TObjEneBm3FlyNest_render_8c0595e4,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -394,13 +394,13 @@ VirtualFunction const TObjEneBm3FlyNest_vtable_8c262418[113] = {
     operation_8c05a004,
     operation_8c012b98,
     fn_8c012aa8,
-    operation_8c059d2c,
+    TObjEneDD_vslot89_8c059d2c,
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
     TObjEneBm3FlyNest_v93_8c0580c4,
     TObjEneBm3FlyNest_v94_8c058254,
-    operation_8c05b16c,
+    TObjEneDD_vslot95_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,
     operation_8c05b6fc,

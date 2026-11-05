@@ -15,7 +15,7 @@ extern "C" void TSlicerHistory_ctor_8c137e08(void *, void *, int, void *);
 extern "C" void call_8c137a38(TTecSlicer *);
 extern "C" void advance_scaled_position(void *);
 extern "C" void operation_8c246154(void *, void *);
-extern "C" void operation_8c137c3c(void *);
+extern "C" void TTecSlicer_update_step_8c137c3c(void *);
 extern "C" void TTecSlicer_update_8c137778(TTecSlicer *o)
 {
     int v22;
@@ -57,7 +57,7 @@ L_8c1377ca:;
         return;
     }
     o->f60 += -0x2aaa;
-    operation_8c137c3c((void *)o);
+    TTecSlicer_update_step_8c137c3c((void *)o);
     t4 = o->v11(400.0f, 20.0f);
     if (t4 != 0) {
         o->f04 &= -0x11;

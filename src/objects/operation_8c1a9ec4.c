@@ -1,6 +1,6 @@
 #include "src/include/classes/TObjBgmCol.h"
 extern int target_within_xyz_8c1a9f14(void *, float);
-int operation_8c1a9ec4(TObjBgmCol *o)
+int TObjBgmCol_update_step_8c1a9ec4(TObjBgmCol *o)
 {
     int t1;
     t1 = target_within_xyz_8c1a9f14((void *)o, (float)(o->f9c * o->f9c));

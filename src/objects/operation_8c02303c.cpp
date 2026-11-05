@@ -69,7 +69,7 @@ typedef struct S_c8c169508Data {
 } S_c8c169508Data;
 extern "C" int operation_8c1c9358(void *);
 extern "C" int find_node_8c16a3c0(void *, int);
-extern "C" S_c8c169508 *operation_8c169508(void *);
+extern "C" S_c8c169508 *hierarchy_is_active_wrapper_2_8c169508(void *);
 extern "C" int operation_8c1c74dc(void *);
 extern "C" int operation_8c02303c(Object *o, Arg1 *a1)
 {
@@ -89,7 +89,7 @@ extern "C" int operation_8c02303c(Object *o, Arg1 *a1)
         }
         t2 = find_node_8c16a3c0((void *)(o->fbc8), (int)a1);
         if (t2 != 0) {
-            t3 = operation_8c169508((void *)t2);
+            t3 = hierarchy_is_active_wrapper_2_8c169508((void *)t2);
             if (t3 == 0) {
                 return 0;
             }

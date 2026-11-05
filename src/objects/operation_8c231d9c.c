@@ -9,7 +9,7 @@ struct Object {
     int f20;
 };
 extern void call_8c231df0(void);
-extern void operation_8c231e98(void *);
+extern void pair_grid_view_ready_wrapper_8c231e98(void *);
 extern void call_8c231ebc(Object *);
 extern void operation_8c231f60(void *);
 void operation_8c231d9c(Object *o)
@@ -24,7 +24,7 @@ void operation_8c231d9c(Object *o)
         }
         return;
     }
-    operation_8c231e98((void *)o);
+    pair_grid_view_ready_wrapper_8c231e98((void *)o);
     return;
 L_8c231dc4:;
     call_8c231ebc(o);

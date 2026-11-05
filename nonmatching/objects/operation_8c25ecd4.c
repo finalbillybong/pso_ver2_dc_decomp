@@ -42,7 +42,7 @@ struct S_vv1_0 {
 };
 extern void request_resource_release(void *);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(S_vv1_0 *, void *, int, int);
+extern void add_wrapper_8c156d30(S_vv1_0 *, void *, int, int);
 extern void operation_8c156f50(S_vv1_0 *);
 extern void operation_8c1571d4(void *, int);
 void operation_8c25ecd4(int a0)
@@ -57,9 +57,9 @@ void operation_8c25ecd4(int a0)
     t1 = operation_8c156c24((int)((void *)0x8c340620), 3);
     v1->f00 = (S_vv1_0 *)t1;
     if (v1->f00 != 0) {
-        operation_8c156d30((S_vv1_0 *)(v1->f00), (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f558), 5, 0);
-        operation_8c156d30((S_vv1_0 *)(v1->f00), (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f55c), 5, 1);
-        operation_8c156d30((S_vv1_0 *)(v1->f00), (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f560), 5, 2);
+        add_wrapper_8c156d30((S_vv1_0 *)(v1->f00), (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f558), 5, 0);
+        add_wrapper_8c156d30((S_vv1_0 *)(v1->f00), (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f55c), 5, 1);
+        add_wrapper_8c156d30((S_vv1_0 *)(v1->f00), (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f560), 5, 2);
         operation_8c156f50((S_vv1_0 *)(v1->f00));
         v1->f00->f80 = (v1->f00->f80 & 0xffff) | 0x200;
         operation_8c1571d4((void *)(v1->f00), 2);

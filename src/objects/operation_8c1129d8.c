@@ -25,7 +25,7 @@ extern int g_8c4d81e0;
 extern int g_8c4d81ec;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void request_resource_release(void *);
-extern void operation_8c220b5c(void);
+extern void request_resource_release_wrapper_8c220b5c(void);
 extern void TShopSequence_dtor_8c106598(void *, short);
 extern void call_8c122774(void *, Object *);
 Object *TShopItemTecSequence_dtor_8c1129d8(Object *o, int a1)
@@ -42,7 +42,7 @@ Object *TShopItemTecSequence_dtor_8c1129d8(Object *o, int a1)
             request_resource_release((void *)(o->f2c));
             o->f2c = (Arg0_2c *)0;
         }
-        operation_8c220b5c();
+        request_resource_release_wrapper_8c220b5c();
         if (o->f30 != 0) {
             request_resource_release((void *)(o->f30));
             o->f30 = (Arg0_30 *)0;

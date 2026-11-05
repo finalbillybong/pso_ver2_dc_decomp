@@ -12,7 +12,7 @@ struct Object {
     Arg0_28 *f28;
 };
 extern void *pair_grid_view_ready(void *);
-void operation_8c231e98(Object *o)
+void pair_grid_view_ready_wrapper_8c231e98(Object *o)
 {
     void *t1;
     if (o->f28 != 0) {

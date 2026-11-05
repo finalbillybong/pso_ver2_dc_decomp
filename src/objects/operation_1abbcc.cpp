@@ -3,7 +3,7 @@
 #define query_at ((BaseChildParentState *(*)(void *))0x8c0744dc)
 #define add_at ((void (*)(Vector3 *,Vector3 *))0x8c3bdf60)
 #define position_at ((void (*)(BaseChildLink *,Vector3 *))0x8c246154)
-extern "C" void operation_1abbcc(BaseChildView *o){
+extern "C" void TItemShoot_vslot01_8c1abbcc(BaseChildView *o){
     BaseChildParentState *parent=query_at(o->parent);
     if(!parent){
         o->flags|=16;

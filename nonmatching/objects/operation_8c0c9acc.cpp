@@ -178,7 +178,7 @@ extern "C" void call_8c0c7e48(int);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c01c5f0(int);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
@@ -273,7 +273,7 @@ L_8c0c9bac:;
     }
     if (!(-0.75f > ((ObjectData *)o)->f418)) {
         operation_8c01c5f0(v22);
-        operation_8c05c184((void *)o);
+        set_fields_wrapper_8c05c184((void *)o);
         aim_direction_8c05bdd4((void *)o);
         t3 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
         t4 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t3 * 65536.0f / 6.28318405f)), 0xa00);

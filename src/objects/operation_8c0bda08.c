@@ -6,7 +6,7 @@ struct TObjEneSaver_pdc {
 };
 extern void operation_8c04a43c(void *, void *, float);
 extern float squared_distance_xz(void *, void *);
-void operation_8c0bda08(TObjEneSaver *o)
+void TObjEneSaver_update_step_8c0bda08(TObjEneSaver *o)
 {
     short v1;
     void *v2;

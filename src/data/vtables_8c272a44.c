@@ -7,36 +7,36 @@ extern void operation_8c19cfc8(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void fn_8c19d02c(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
+extern void TObjectShared_vslot08_8c010500(void);
 extern void operation_8c19dd60(void);
-extern void operation_8c010508(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c19dc34(void);
-extern void operation_8c19dd3c(void);
+extern void TQuestThread_ctor_3_wrapper_6_8c19dd3c(void);
 extern void operation_8c19e09c(void);
 extern void operation_8c19da78(void);
 extern void operation_8c19d9c4(void);
-extern void operation_8c19da54(void);
+extern void TQuestThread_ctor_3_wrapper_5_8c19da54(void);
 extern void operation_8c19e0f8(void);
 extern void operation_8c19d038(void);
 extern void operation_8c19d850(void);
-extern void operation_8c19d8bc(void);
+extern void TQuestThread_ctor_3_wrapper_4_8c19d8bc(void);
 extern void operation_8c19d57c(void);
 extern void fn_8c19d718(void);
 extern void operation_8c19d5ec(void);
-extern void operation_8c19d6f4(void);
+extern void TQuestThread_ctor_3_wrapper_3_8c19d6f4(void);
 extern void operation_8c19e154(void);
 extern void operation_8c19d334(void);
-extern void operation_8c19d430(void);
+extern void TQuestThread_ctor_3_wrapper_2_8c19d430(void);
 extern void operation_8c19e1b0(void);
 extern void operation_8c19d1cc(void);
-extern void operation_8c19d24c(void);
+extern void TQuestThread_ctor_3_wrapper_8c19d24c(void);
 extern void operation_8c19cf78(void);
 extern void operation_8c19d028(void);
 extern void operation_8c19d024(void);
@@ -53,18 +53,18 @@ VirtualFunction const vt_8c272a44[19] = {
     TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c19dd60,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c19dc34,
-    operation_8c19dd3c
+    TQuestThread_ctor_3_wrapper_6_8c19dd3c
 };
 
 /* 8c272a90: type-information and this-adjustment header, then 17 slots */
@@ -76,18 +76,18 @@ VirtualFunction const vt_8c272a90[19] = {
     TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c19da78,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c19d9c4,
-    operation_8c19da54
+    TQuestThread_ctor_3_wrapper_5_8c19da54
 };
 
 /* 8c272adc: type-information and this-adjustment header, then 17 slots */
@@ -99,18 +99,18 @@ VirtualFunction const vt_8c272adc[19] = {
     TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c19d038,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c19d850,
-    operation_8c19d8bc
+    TQuestThread_ctor_3_wrapper_4_8c19d8bc
 };
 
 /* 8c272b28: type-information and this-adjustment header, then 17 slots */
@@ -122,18 +122,18 @@ VirtualFunction const vt_8c272b28[19] = {
     TObject_render_default_8c0111c8,
     fn_8c19d718,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c19d038,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c19d5ec,
-    operation_8c19d6f4
+    TQuestThread_ctor_3_wrapper_3_8c19d6f4
 };
 
 /* 8c272b74: type-information and this-adjustment header, then 17 slots */
@@ -145,18 +145,18 @@ VirtualFunction const vt_8c272b74[19] = {
     TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c19d038,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c19d334,
-    operation_8c19d430
+    TQuestThread_ctor_3_wrapper_2_8c19d430
 };
 
 /* 8c272bc0: type-information and this-adjustment header, then 17 slots */
@@ -168,18 +168,18 @@ VirtualFunction const vt_8c272bc0[19] = {
     TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c19d038,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c19d1cc,
-    operation_8c19d24c
+    TQuestThread_ctor_3_wrapper_8c19d24c
 };
 
 /* 8c272c0c: type-information and this-adjustment header, then 17 slots */
@@ -191,15 +191,15 @@ VirtualFunction const vt_8c272c0c[19] = {
     TObject_render_default_8c0111c8,
     fn_8c19d02c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c19d038,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c19d028,
     operation_8c19d024

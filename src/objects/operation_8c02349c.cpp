@@ -66,7 +66,7 @@ extern "C" int bu_check_busy_8c372d98(int);
 extern "C" int call_8c3727a0(int);
 extern "C" void play_se_8c05fbf8(int, int, int, int);
 extern "C" int call_8c16a18c(void *, int);
-extern "C" S_c8c169508 *operation_8c169508(void *);
+extern "C" S_c8c169508 *hierarchy_is_active_wrapper_2_8c169508(void *);
 extern "C" void operation_8c026700(int, int);
 extern "C" void operation_8c1c74a8(void *, int);
 extern "C" void call_8c16be70(int, void *, Object *, Frame *, int);
@@ -99,7 +99,7 @@ extern "C" void operation_8c02349c(Object *o, int a1, int a2)
 L_8c0234ea:;
     t6 = call_8c16a18c((void *)(o->fbc8), a1);
     if (t6 != 0) {
-        t7 = operation_8c169508((void *)t6);
+        t7 = hierarchy_is_active_wrapper_2_8c169508((void *)t6);
         if (t7 != 0) {
             operation_8c026700((int)o, 0x384);
             o->f350 |= 2;

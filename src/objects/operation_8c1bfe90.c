@@ -22,7 +22,7 @@ extern int operation_8c156c24(int, int);
 extern int get_field_8c21f338(int);
 extern int call_8c21f370(int);
 extern int operation_8c21f354(void *);
-extern void operation_8c156d30(Arg0_20 *, int, int, int);
+extern void add_wrapper_8c156d30(Arg0_20 *, int, int, int);
 extern void call_8c156d48(Arg0_20 *, int, int, int, int);
 extern void operation_8c1570b4(void *, float, float);
 extern void operation_8c157138(void *);
@@ -50,7 +50,7 @@ Object *operation_8c1bfe90(Object *o, int a1)
         t4 = call_8c21f370(t2);
         t3 = operation_8c21f354((void *)t2);
         if (t3 != 0) {
-            operation_8c156d30((Arg0_20 *)(o->f20), t4, 0x26, v1);
+            add_wrapper_8c156d30((Arg0_20 *)(o->f20), t4, 0x26, v1);
         } else {
             call_8c156d48((Arg0_20 *)(o->f20), t4, 0x16, v1, v2);
         }

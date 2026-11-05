@@ -62,7 +62,7 @@ extern "C" void call_8c02a87c(void);
 extern "C" void operation_8c01c250(int);
 extern "C" void operation_8c01c244(int);
 extern "C" void wait_vsync_and_flip_8c380516(void);
-extern "C" void operation_8c0e7750(void)
+extern "C" void game_mode_15_init_8c0e7750(void)
 {
     int v1;
     int v4;

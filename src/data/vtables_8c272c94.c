@@ -12,15 +12,15 @@ extern void TOHealGeneral_dtor_8c19fdf0(void);
 extern void TOHealGeneral_update_8c1a0010(void);
 extern void TOHealGeneral_render_8c19ff1c(void);
 extern void TOHealGeneral_render_shadow_8c1a0470(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
 extern void TOHealGeneral_v10_8c1a0474(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void TOHealGeneral_v15_8c1a046c(void);
 
@@ -45,15 +45,15 @@ VirtualFunction const TOHealGeneral_vtable_8c272cb4[18] = {
     TOHealGeneral_render_8c19ff1c,
     TOHealGeneral_render_shadow_8c1a0470,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     TOHealGeneral_v10_8c1a0474,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     TOHealGeneral_v15_8c1a046c
 };

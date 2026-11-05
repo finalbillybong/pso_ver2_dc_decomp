@@ -2,7 +2,7 @@
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" void operation_8c0fd3cc(TOMine *o)
+extern "C" void TOMine_vslot89_8c0fd3cc(TOMine *o)
 {
     o->v88();
 }

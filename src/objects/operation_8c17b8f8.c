@@ -19,7 +19,7 @@ extern void call_8c013620(void *, int);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void call_8c1a4dcc(int);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c17b8f8(void)
+void game_mode_19_init_8c17b8f8(void)
 {
     Frame frame;
     unsigned int v1;

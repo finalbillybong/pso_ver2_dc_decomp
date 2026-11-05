@@ -53,7 +53,7 @@ typedef struct S_c8c169508Data {
 
 } S_c8c169508Data;
 extern "C" int operation_8c16a18c(void *, int);
-extern "C" S_c8c169508 *operation_8c169508(void *);
+extern "C" S_c8c169508 *hierarchy_is_active_wrapper_2_8c169508(void *);
 extern "C" void handle_6x27_use_item_8c0241d0(Object *o)
 {
     int v1;
@@ -89,7 +89,7 @@ extern "C" void handle_6x27_use_item_8c0241d0(Object *o)
     if (v13 != 0 && v4 != 0) {
         t1 = operation_8c16a18c((void *)(v4->fbc8), (int)(o->f04));
         if (t1 != 0) {
-            t2 = operation_8c169508((void *)t1);
+            t2 = hierarchy_is_active_wrapper_2_8c169508((void *)t1);
             if (t2 != 0) {
                 t2->v28(v4);
             }

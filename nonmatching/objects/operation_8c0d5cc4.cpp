@@ -248,7 +248,7 @@ extern "C" void set_field_8c05af48(void *);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int call_8c05c2dc(Object *);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
@@ -338,7 +338,7 @@ extern "C" void operation_8c0d5cc4(Object *o, int a1)
             operation_8c01c5f0(o);
             t2 = call_8c05c2dc(o);
             if (t2 != 0) {
-                operation_8c05c184((void *)o);
+                set_fields_wrapper_8c05c184((void *)o);
                 aim_direction_8c05bdd4((void *)o);
                 t15 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
                 v7 = (int)(int)(t15 * 65536.0f / 6.28318405f);
@@ -358,7 +358,7 @@ extern "C" void operation_8c0d5cc4(Object *o, int a1)
             operation_8c01c5f0(o);
             t5 = call_8c05c2dc(o);
             if (t5 != 0) {
-                operation_8c05c184((void *)o);
+                set_fields_wrapper_8c05c184((void *)o);
                 aim_direction_8c05bdd4((void *)o);
             }
             if (14.0f > (((ObjectData *)o)->ff8 + ((ObjectData *)o)->f100)) {

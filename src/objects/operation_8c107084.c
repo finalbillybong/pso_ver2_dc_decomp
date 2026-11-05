@@ -48,7 +48,7 @@ struct Arg0_398 {
     int f74;
 };
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(Arg0_394 *, void *, int, int);
+extern void add_wrapper_8c156d30(Arg0_394 *, void *, int, int);
 extern void call_8c156f50(Arg0_394 *);
 extern void call_8c157138(Arg0_394 *);
 extern void request_resource_release(void *);
@@ -63,8 +63,8 @@ void operation_8c107084(Object *o)
             *(Block8 *)&(&frame)->f00 = *(Block8 *)&*(Block8 *)0x8c30b6cc;
             t1 = operation_8c156c24((int)(&frame), 2);
             o->f394 = (Arg0_394 *)t1;
-            operation_8c156d30((Arg0_394 *)(o->f394), (void *)((*(S_g8c4dbc20 **)0x8c4dbc20)->f00->f18), 6, 0);
-            operation_8c156d30((Arg0_394 *)(o->f394), (void *)((*(S_g8c4dbc20 **)0x8c4dbc20)->f00->f1c), 6, 1);
+            add_wrapper_8c156d30((Arg0_394 *)(o->f394), (void *)((*(S_g8c4dbc20 **)0x8c4dbc20)->f00->f18), 6, 0);
+            add_wrapper_8c156d30((Arg0_394 *)(o->f394), (void *)((*(S_g8c4dbc20 **)0x8c4dbc20)->f00->f1c), 6, 1);
             call_8c156f50((Arg0_394 *)(o->f394));
             call_8c157138((Arg0_394 *)(o->f394));
             o->f394->f80 = (o->f394->f80 & 0xffff) | 1;

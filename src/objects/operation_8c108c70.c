@@ -33,7 +33,7 @@ struct Arg0_184 {
 extern int operation_8c03d338(void);
 extern void call_8c109228(Object *);
 extern void call_8c108e30(Object *);
-extern void operation_8c108d78(void *);
+extern void TObjEneGyaranzo_update_step_8c108d78(void *);
 extern void call_8c027090(Object *);
 extern void minimap_add_marker_8c102cd0(void *, int, int, int);
 extern void update_context_blend_fast(void *);
@@ -49,12 +49,12 @@ void TObjEneGyaranzo_update_8c108c70(Object *o)
     if (o->f30a != o->f390) {
         if (o->f398 != -1) {
             o->f398 = -1;
-            operation_8c108d78((void *)o);
+            TObjEneGyaranzo_update_step_8c108d78((void *)o);
         }
         o->f30a = o->f390;
         o->f398 = 0;
     }
-    operation_8c108d78((void *)o);
+    TObjEneGyaranzo_update_step_8c108d78((void *)o);
     o->f324 = o->f3c;
     if (o->f184 != 0) {
         o->f324.f04 += o->f184->f10 * 0.5f;

@@ -26,7 +26,7 @@ struct S_c8c169508 {
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void operation_1c7dd4(void *);
 extern int find_node_8c16a3c0(void *, int);
-extern S_c8c169508 *operation_8c169508(void *);
+extern S_c8c169508 *hierarchy_is_active_wrapper_2_8c169508(void *);
 void quest_op_find_inventory_item_8c16f5a0(int a0, int a1)
 {
     Frame frame;
@@ -43,7 +43,7 @@ void quest_op_find_inventory_item_8c16f5a0(int a0, int a1)
         (&frame)->f02 = *(int *)((char *)((char *)v1 + 0x0) + ((unsigned char)a0 << 2));
         t2 = find_node_8c16a3c0((void *)(t1->fbc8), (int)(&frame));
         if (t2 != 0) {
-            t3 = operation_8c169508((void *)t2);
+            t3 = hierarchy_is_active_wrapper_2_8c169508((void *)t2);
             if (t3 != 0) {
                 *(int *)((char *)((char *)*(S_g8c4db408 **)0x8c4db408 + 0x0) + ((unsigned char)a1 << 2)) = (int)(t3->fe8);
                 return;

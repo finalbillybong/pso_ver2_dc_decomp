@@ -76,7 +76,7 @@ struct S_g8c4d9960_42c {
 };
 extern "C" int operation_8c03d338(void);
 extern "C" void operation_8c12964c(void *);
-extern "C" void operation_8c1296f4(void *);
+extern "C" void TContainerAncient01_update_step_8c1296f4(void *);
 extern "C" void call_8c129788(Object *);
 extern "C" void call_8c027090(Object *);
 extern "C" void operation_8c162e94(void *, int, int);
@@ -110,7 +110,7 @@ extern "C" void TContainerAncient01_update_8c129160(Object *o)
                 operation_8c12964c((void *)o);
                 goto L_8c1291f6;
 L_8c1291c2:;
-                operation_8c1296f4((void *)o);
+                TContainerAncient01_update_step_8c1296f4((void *)o);
                 goto L_8c1291f6;
 L_8c1291cc:;
                 call_8c129788(o);

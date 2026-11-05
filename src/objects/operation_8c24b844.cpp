@@ -61,7 +61,7 @@ struct S_vv7 {
     S_vv7_4 *f04;
 };
 extern S_g8c510fa4 *g_8c510fa4;
-extern "C" int operation_8c24ba5c(void *, float);
+extern "C" int TODoorVS2Door01_render_part_8c24ba5c(void *, float);
 extern "C" void njPushMatrixEx_8c38ae68(void);
 extern "C" void translate_current_matrix_v_8c382a40(void *);
 extern "C" void njRotateY_8c37df90(int, void *);
@@ -83,7 +83,7 @@ extern "C" void TODoorVS2Door01_render_8c24b844(TODoorVS2Door01 *o)
     S_vv7 *v7;
     int t1;
     t1 = o->v11(o->ff8, o->ffc);
-    if (t1 == 0 || operation_8c24ba5c((void *)o, 30.0f) == 0) {
+    if (t1 == 0 || TODoorVS2Door01_render_part_8c24ba5c((void *)o, 30.0f) == 0) {
         return;
     }
     njPushMatrixEx_8c38ae68();

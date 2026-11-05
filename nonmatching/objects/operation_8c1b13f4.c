@@ -52,7 +52,7 @@ extern void call_8c3827d8(void *);
 extern void call_8c397c90(void *, float, float);
 extern void operation_8c161c78(void *);
 extern void draw_tree_a702(void *, void *, float);
-extern void operation_8c161ce4(void *);
+extern void set_transform_node_callback_wrapper_2_8c161ce4(void *);
 extern void set_effect_color_state(void);
 extern void call_8c3addea(void *, void *, float);
 extern void restore_effect_color_state(void);
@@ -80,7 +80,7 @@ void operation_8c1b13f4(Object *o)
             call_8c397c90((void *)((void *)0x8c575570), 0.0f, o->f3c8);
             operation_8c161c78((void *)(o->f44c));
             draw_tree_a702((void *)(*(Arg0_0_0_8 **)((char *)((char *)*(Arg0_0_0 **)((char *)((char *)*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)) + 0x0) + (v2)) + 0x8) + (*(int *)((char *)((char *)v7 + 0x0) + ((int)((void *)0x8c32658c))) << 4))), (void *)(*(Arg0_0_430_4 **)((char *)((char *)(*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)))->f430 + 0x4) + (*(int *)((char *)&*(int *)((char *)((char *)g_8c326594 + 8) + (o->f3d0 << 4)) + (v7)) << 3))), ((S_x68736 *)((int)o + v3))->f00);
-            operation_8c161ce4((void *)(o->f44c));
+            set_transform_node_callback_wrapper_2_8c161ce4((void *)(o->f44c));
             *(int *)0x8c575570 &= -0x20001;
             break;
         default:

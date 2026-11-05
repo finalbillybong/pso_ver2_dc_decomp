@@ -11,9 +11,9 @@ extern void TQuestListVM_v05_8c222138(void);
 extern void TItemLockCountCtrl_dtor_8c223368(void);
 extern void TObject_update_default_8c0111c4(void);
 extern void destroy_color_rise_8c223adc(void);
-extern void operation_8c223760(void);
+extern void TItemTimerEvent_update_8c223760(void);
 extern void operation_8c223a70(void);
-extern void operation_8c2237b0(void);
+extern void TItemTimerEvent_vslot06_8c2237b0(void);
 extern void destroy_color_rise_8c223b2c(void);
 extern void operation_8c223a04(void);
 extern void destroy_color_rise_8c223b7c(void);
@@ -62,12 +62,12 @@ VirtualFunction const vt_8c278964[9] = {
     0,
     0,
     destroy_color_rise_8c223adc,
-    operation_8c223760,
+    TItemTimerEvent_update_8c223760,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c223a70,
-    operation_8c2237b0
+    TItemTimerEvent_vslot06_8c2237b0
 };
 
 /* 8c278988: type-information and this-adjustment header, then 7 slots */
@@ -75,12 +75,12 @@ VirtualFunction const vt_8c278988[9] = {
     0,
     0,
     destroy_color_rise_8c223b2c,
-    operation_8c223760,
+    TItemTimerEvent_update_8c223760,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c223a04,
-    operation_8c2237b0
+    TItemTimerEvent_vslot06_8c2237b0
 };
 
 /* 8c2789ac: type-information and this-adjustment header, then 7 slots */
@@ -88,12 +88,12 @@ VirtualFunction const vt_8c2789ac[9] = {
     0,
     0,
     destroy_color_rise_8c223b7c,
-    operation_8c223760,
+    TItemTimerEvent_update_8c223760,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c223984,
-    operation_8c2237b0
+    TItemTimerEvent_vslot06_8c2237b0
 };
 
 /* 8c2789d0: type-information and this-adjustment header, then 7 slots */
@@ -101,12 +101,12 @@ VirtualFunction const vt_8c2789d0[9] = {
     0,
     0,
     destroy_color_rise_8c223bcc,
-    operation_8c223760,
+    TItemTimerEvent_update_8c223760,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c2238f8,
-    operation_8c2237b0
+    TItemTimerEvent_vslot06_8c2237b0
 };
 
 /* 8c2789f4: type-information and this-adjustment header, then 7 slots */
@@ -114,12 +114,12 @@ VirtualFunction const vt_8c2789f4[9] = {
     0,
     0,
     destroy_color_rise_8c223c1c,
-    operation_8c223760,
+    TItemTimerEvent_update_8c223760,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c2238d0,
-    operation_8c2237b0
+    TItemTimerEvent_vslot06_8c2237b0
 };
 
 /* 8c278a18: type-information and this-adjustment header, then 7 slots */
@@ -127,12 +127,12 @@ VirtualFunction const vt_8c278a18[9] = {
     0,
     0,
     destroy_color_rise_8c223c6c,
-    operation_8c223760,
+    TItemTimerEvent_update_8c223760,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c2238ac,
-    operation_8c2237b0
+    TItemTimerEvent_vslot06_8c2237b0
 };
 
 /* 8c278a3c: type-information and this-adjustment header, then 7 slots */
@@ -140,12 +140,12 @@ VirtualFunction const vt_8c278a3c[9] = {
     0,
     0,
     destroy_color_rise_8c223cbc,
-    operation_8c223760,
+    TItemTimerEvent_update_8c223760,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c223888,
-    operation_8c2237b0
+    TItemTimerEvent_vslot06_8c2237b0
 };
 
 /* 8c278a60: type-information and this-adjustment header, then 7 slots */
@@ -153,7 +153,7 @@ VirtualFunction const vt_8c278a60[9] = {
     0,
     0,
     destroy_color_rise_8c223d0c,
-    operation_8c223760,
+    TItemTimerEvent_update_8c223760,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
@@ -166,7 +166,7 @@ VirtualFunction const vt_8c278a84[9] = {
     0,
     0,
     destroy_color_rise_8c223d5c,
-    operation_8c223760,
+    TItemTimerEvent_update_8c223760,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
@@ -179,10 +179,10 @@ VirtualFunction const TItemTimerEvent_vtable_8c278aa8[9] = {
     0,
     0,
     TItemTimerEvent_dtor_8c22371c,
-    operation_8c223760,
+    TItemTimerEvent_update_8c223760,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     0,
-    operation_8c2237b0
+    TItemTimerEvent_vslot06_8c2237b0
 };

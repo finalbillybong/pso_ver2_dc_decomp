@@ -16,7 +16,7 @@ struct S_vv4 {
     S_vv4_bc8 *fbc8;
 };
 extern int operation_8c16a18c(void *, int);
-extern int operation_8c169508(void *);
+extern int hierarchy_is_active_wrapper_2_8c169508(void *);
 extern void release_child_slot_8c022624(void *, void *);
 void handle_6x26_unequip_item_8c022594(Object *o)
 {
@@ -54,7 +54,7 @@ void handle_6x26_unequip_item_8c022594(Object *o)
         if (v13 != 0) {
             t1 = operation_8c16a18c((void *)(v4->fbc8), (int)(o->f04));
             if (t1 != 0) {
-                t2 = operation_8c169508((void *)t1);
+                t2 = hierarchy_is_active_wrapper_2_8c169508((void *)t1);
                 if (t2 != 0) {
                     release_child_slot_8c022624((void *)v4, (void *)t2);
                 }

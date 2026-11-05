@@ -108,7 +108,7 @@ struct Arg0_184 {
 };
 extern "C" int operation_8c03d338(void);
 extern "C" void actor_render_noop_b(Object *);
-extern "C" void operation_8c159d78(void *);
+extern "C" void TObjVoloptCage_update_step_8c159d78(void *);
 extern "C" void call_8c027090(Object *);
 extern "C" void TObjVoloptCage_update_8c159c44(Object *o)
 {
@@ -134,12 +134,12 @@ extern "C" void TObjVoloptCage_update_8c159c44(Object *o)
     if (((ObjectData *)o)->f390 != ((ObjectData *)o)->f30a) {
         if (((ObjectData *)o)->f398 != -1) {
             ((ObjectData *)o)->f398 = -1;
-            operation_8c159d78((void *)o);
+            TObjVoloptCage_update_step_8c159d78((void *)o);
         }
         ((ObjectData *)o)->f30a = ((ObjectData *)o)->f390;
         ((ObjectData *)o)->f398 = 0;
     }
-    operation_8c159d78((void *)o);
+    TObjVoloptCage_update_step_8c159d78((void *)o);
     *(Vector3 *)&((ObjectData *)o)->f324 = *(Vector3 *)&((ObjectData *)o)->f3c;
     if (((ObjectData *)o)->f184 != 0) {
         ((ObjectData *)o)->f324.f04 += ((ObjectData *)o)->f184->f10 * 0.5f;

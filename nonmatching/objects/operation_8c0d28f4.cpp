@@ -185,7 +185,7 @@ extern "C" void operation_8c01c5f0(Object *);
 extern "C" int check_range_8c01cf68(void *, float);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" int call_8c05c0dc(Object *, float);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" int active_unflagged_8c05b2dc(void *);
 extern "C" float errno_wrap_8c130334(float, float);
@@ -262,7 +262,7 @@ extern "C" void operation_8c0d28f4(Object *o, int a1)
             play_se_8c05fbf8(0x3001f, (void *)(((char *)o + 0x3c)), 0, 0);
         }
         if (call_8c05c0dc(o, 400.0f) != 0) {
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
         }
         switch (v2->f00) {
@@ -287,7 +287,7 @@ extern "C" void operation_8c0d28f4(Object *o, int a1)
         case 2:
             if (operation_8c05bbf8() != 0) {
                 if (call_8c0d1cc0(o) != 0) {
-                    operation_8c05c184((void *)o);
+                    set_fields_wrapper_8c05c184((void *)o);
                     aim_direction_8c05bdd4((void *)o);
                     v2->f00 = 3;
                     break;
@@ -309,7 +309,7 @@ extern "C" void operation_8c0d28f4(Object *o, int a1)
                     v51 = !(*(int *)((char *)((char *)o + 0x434) + (((ObjectData *)o)->f410 << 2)) & 2);
                     if (v51 != 0 && call_8c0d1cc0(o) != 0) {
                         v1->f00 = 0;
-                        operation_8c05c184((void *)o);
+                        set_fields_wrapper_8c05c184((void *)o);
                         aim_direction_8c05bdd4((void *)o);
                         v2->f00 = 3;
                         goto apply;

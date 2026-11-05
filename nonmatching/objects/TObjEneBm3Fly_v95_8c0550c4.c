@@ -26,11 +26,11 @@ struct Object {
     char unknown32c[0x11c];
     float f448;
 };
-extern void operation_8c05b16c(void *);
+extern void TObjEneDD_vslot95_8c05b16c(void *);
 void TObjEneBm3Fly_v95_8c0550c4(Object *o)
 {
     float v1;
-    operation_8c05b16c((void *)o);
+    TObjEneDD_vslot95_8c05b16c((void *)o);
     {
         float *p;
         v1 = (float)o->f40;

@@ -21,7 +21,7 @@ struct Arg0_3a8 {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c0f8ee0(Object *o)
+void TObjEneSlimeOne_state02_8c0f8ee0(Object *o)
 {
     o->f3a8->f18 &= -0x14001ad1;
     o->f3a8->f18 |= 0x14000a50;

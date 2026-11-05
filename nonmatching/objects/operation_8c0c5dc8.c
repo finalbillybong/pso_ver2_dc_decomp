@@ -56,7 +56,7 @@ extern void call_8c03096c(void);
 extern void operation_8c01e648(void);
 extern void operation_8c0731f4(void);
 extern void operation_8c051f7c(void);
-extern void operation_8c01217c(void);
+extern void get_game_mode_wrapper_8c01217c(void);
 extern void call_8c0a1bf8(void);
 extern void run_current_resource_start(void);
 extern void run_current_resource_start_8c03c3ac(void);
@@ -91,7 +91,7 @@ void operation_8c0c5dc8(void)
     operation_8c01e648();
     operation_8c0731f4();
     operation_8c051f7c();
-    operation_8c01217c();
+    get_game_mode_wrapper_8c01217c();
     call_8c0a1bf8();
     run_current_resource_start();
     run_current_resource_start_8c03c3ac();

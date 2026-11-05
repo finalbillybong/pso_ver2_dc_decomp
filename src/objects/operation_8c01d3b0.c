@@ -19,7 +19,7 @@ struct Object {
     float f44;
 };
 extern char g_8c46ee84[];
-int operation_8c01d3b0(Object *o, float f0, float f1)
+int TObjectShared_vslot11_8c01d3b0(Object *o, float f0, float f1)
 {
     Frame frame;
     ((void (*)(int, void *, void *))0x8c3be280)(0, &o->f3c, &(&frame)->f08);

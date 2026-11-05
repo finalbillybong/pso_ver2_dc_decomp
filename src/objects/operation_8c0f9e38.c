@@ -20,7 +20,7 @@ struct Arg0_3a8 {
 };
 extern float object_random_fraction(void *);
 extern void call_8c0ffdf0(void *, int);
-void operation_8c0f9e38(Object *o)
+void TObjEneSlimeOne_state16_8c0f9e38(Object *o)
 {
     float t1;
     t1 = object_random_fraction((void *)o);

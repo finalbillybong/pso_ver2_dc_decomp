@@ -80,7 +80,7 @@ extern int call_8c18e768(int, void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TWindowInputNumber_ctor_8c1bd074(void *, void *, int, int, int);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(Arg0_34 *, void *, int, int);
+extern void add_wrapper_8c156d30(Arg0_34 *, void *, int, int);
 extern void operation_8c156f50(Arg0_34 *);
 extern void operation_8c157138(void *);
 void operation_8c188b10(Object *o)
@@ -120,8 +120,8 @@ void operation_8c188b10(Object *o)
         *(Block8 *)&(&frame)->f00 = *(Block8 *)&g_8c319e24;
         t4 = operation_8c156c24((int)(&frame), 2);
         o->f34 = (Arg0_34 *)t4;
-        operation_8c156d30((Arg0_34 *)(o->f34), (void *)(g_8c4dbc20->f00->f10), 6, 0);
-        operation_8c156d30((Arg0_34 *)(o->f34), (void *)(g_8c4dbc20->f00->f14), 6, 1);
+        add_wrapper_8c156d30((Arg0_34 *)(o->f34), (void *)(g_8c4dbc20->f00->f10), 6, 0);
+        add_wrapper_8c156d30((Arg0_34 *)(o->f34), (void *)(g_8c4dbc20->f00->f14), 6, 1);
         operation_8c156f50((Arg0_34 *)(o->f34));
         operation_8c157138((void *)(o->f34));
         o->f34->f80 = (o->f34->f80 & 0xffff) | 1;

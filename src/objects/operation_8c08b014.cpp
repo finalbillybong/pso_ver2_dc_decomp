@@ -32,7 +32,7 @@ typedef struct Arg0_20Data {
 extern "C" char g_8c41cba0[];
 extern "C" void call_8c355cf8(void);
 extern "C" int operation_8c0e9ab8(void);
-extern "C" int operation_8c01d8a8(void *, int);
+extern "C" int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern "C" void operation_8c01c244(int);
 extern "C" void call_8c355d04(void);
 extern "C" void TMovie_update_8c08b014(Object *o)
@@ -74,9 +74,9 @@ L_8c08b046:;
                                             if (((v3 & 0x20000)) == 0) {
                                                 if (((v3 & 0x10000)) == 0) {
                                                     p += 0x110;
-                                                    t4 = operation_8c01d8a8((void *)p, 4);
+                                                    t4 = replicate_nibble_wrapper_2_8c01d8a8((void *)p, 4);
                                                     if (t4 == 0) {
-                                                        t5 = operation_8c01d8a8((void *)p, 2);
+                                                        t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)p, 2);
                                                         if (t5 == 0) {
                                                             goto L_8c08b122;
                                                         }
@@ -101,9 +101,9 @@ L_8c08b046:;
         if (((v3 & 2)) == 0) {
             if (((v3 & 8)) == 0) {
                 p += 0x110;
-                t6 = operation_8c01d8a8((void *)p, 4);
+                t6 = replicate_nibble_wrapper_2_8c01d8a8((void *)p, 4);
                 if (t6 == 0) {
-                    t7 = operation_8c01d8a8((void *)p, 2);
+                    t7 = replicate_nibble_wrapper_2_8c01d8a8((void *)p, 2);
                     if (t7 == 0) {
                         goto L_8c08b122;
                     }

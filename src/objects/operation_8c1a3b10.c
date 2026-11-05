@@ -1,5 +1,5 @@
 #include "src/include/classes/TWindowSubItem.h"
-void operation_8c1a3b10(TWindowSubItem *o, int a1)
+void TWindowSubItem_update_step_8c1a3b10(TWindowSubItem *o, int a1)
 {
     switch (a1) {
     case 3:

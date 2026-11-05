@@ -17,7 +17,7 @@ struct Frame {
     char f0e;
     char unknownf[0x1];
 };
-extern int operation_8c073e5c(void *, void *);
+extern int TItemEquipBase_vslot31_8c073e5c(void *, void *);
 extern void call_8c207738(Frame *, int);
 extern void call_8c1c8d90(int, Frame *);
 int TItemMag_v31_8c07d3f8(TItemMag *o, int a1)
@@ -27,7 +27,7 @@ int TItemMag_v31_8c07d3f8(TItemMag *o, int a1)
     int v2;
     int v5;
     int t1;
-    t1 = operation_8c073e5c((void *)o, (void *)a1);
+    t1 = TItemEquipBase_vslot31_8c073e5c((void *)o, (void *)a1);
     if (t1 == 1) {
         v5 = (int)0;
         if (o->f13c != 0) {

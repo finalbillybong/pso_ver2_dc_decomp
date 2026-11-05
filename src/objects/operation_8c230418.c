@@ -18,7 +18,7 @@ extern void select_state3_8c01c234(void);
 extern int operation_8c104da8(void);
 extern void request_game_mode_8c01c1a4(int);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c230418(void)
+void game_mode_30_frame_8c230418(void)
 {
     int t1;
     int t2;

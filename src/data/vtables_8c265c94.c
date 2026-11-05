@@ -8,7 +8,7 @@ extern void TObject_render_default_8c0111c8(void);
 extern void TParticleCtrl_render_shadow_8c0a7db4(void);
 extern void hierarchy_output(void);
 extern void TParticleEditor_dtor_8c0a7ed0(void);
-extern void operation_8c03ceac(void);
+extern void TEditor_update_8c03ceac(void);
 extern void TParticleEditor_render_shadow_8c0a9654(void);
 extern void TParticleEditor_v05_8c0a7f14(void);
 extern void TParticleEditor_v06_8c0a7f90(void);
@@ -30,7 +30,7 @@ VirtualFunction const TParticleEditor_vtable_8c265cb0[10] = {
     0,
     0,
     TParticleEditor_dtor_8c0a7ed0,
-    operation_8c03ceac,
+    TEditor_update_8c03ceac,
     TObject_render_default_8c0111c8,
     TParticleEditor_render_shadow_8c0a9654,
     hierarchy_output,

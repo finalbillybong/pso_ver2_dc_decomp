@@ -52,7 +52,7 @@ struct S_c8c011214_4 {
 extern float normalize_xz_checked(void *);
 extern float object_random_fraction(void *);
 extern void rotate_scalar_pair(void *, void *, int);
-extern float operation_8c05b8e8(int, float, float);
+extern float object_random_fraction_wrapper_8c05b8e8(int, float, float);
 extern S_c8c011214 *operation_8c011214(int, int, int);
 void operation_8c061170(Object *o)
 {
@@ -69,7 +69,7 @@ void operation_8c061170(Object *o)
     normalize_xz_checked((void *)(&frame));
     t1 = object_random_fraction((void *)o);
     rotate_scalar_pair((void *)(&frame), (void *)(&(&frame)->f08), (int)((int)(t1 * 32768.0f) + 0x4000));
-    t3 = operation_8c05b8e8((int)o, 0.3f, 1.0f);
+    t3 = object_random_fraction_wrapper_8c05b8e8((int)o, 0.3f, 1.0f);
     v1 = (float)(t3 * 120.0f);
     o->f3b0 = (&frame)->f00 * v1 + o->f410;
     o->f3b8 = (&frame)->f08 * v1 + o->f418;

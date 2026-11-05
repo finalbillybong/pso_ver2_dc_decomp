@@ -7,7 +7,7 @@ struct Frame {
 extern void initialize_fields_8c207358(void *);
 extern void call_8c1c8ce4(void *, Frame *);
 extern int call_8c207378(Frame *, int);
-int operation_8c1913d8(TWindowSubMag *o)
+int TWindowSubMag_update_step_3_8c1913d8(TWindowSubMag *o)
 {
     Frame frame;
     int v1;

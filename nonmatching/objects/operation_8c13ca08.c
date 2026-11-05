@@ -47,7 +47,7 @@ struct S_vv1 {
     char unknown0[0x18];
     int f18;
 };
-extern void operation_8c108488(int, int);
+extern void create_effect_7cc0_wrapper_8c108488(int, int);
 extern void operation_8c13bb4c(int, int);
 extern void interrupt_state_8c13be60(int);
 extern void operation_8c01c5f0(Object *);
@@ -75,7 +75,7 @@ void operation_8c13ca08(Object *o)
             o->ff0 = 4;
             o->f398 = 1;
             o->f358 = 0x5a;
-            operation_8c108488((int)(((char *)o + 0x324)), (int)(o->f358));
+            create_effect_7cc0_wrapper_8c108488((int)(((char *)o + 0x324)), (int)(o->f358));
             if (o->f3c4 != 0) {
                 *(int *)0x8c4d9b84 = 1;
                 operation_8c13bb4c((int)(o->f1b6), 0);

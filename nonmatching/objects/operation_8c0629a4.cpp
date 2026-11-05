@@ -201,7 +201,7 @@ extern "C" int call_8c05c2dc(Object *);
 extern "C" void create_effect_777c(void *, int);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void update_last_effect(int);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" int angle_step(int, int, int);
 extern "C" void slide_and_apply_contact(void *, float, float, float);
@@ -291,7 +291,7 @@ extern "C" void operation_8c0629a4(Object *o, int a1)
         t8 = check_range_8c01cf68((void *)o, 15.0f);
         if (t8 == 0) {
         } else {
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
             if (v2->f00 == 0) {
                 v2->f00 = 1;

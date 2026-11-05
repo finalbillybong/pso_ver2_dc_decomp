@@ -1,6 +1,6 @@
 #include "src/include/classes/TODoorVS2Door01.h"
 extern int call_8c0eeb00(TODoorVS2Door01 *);
-int operation_8c24ba5c(TODoorVS2Door01 *o)
+int TODoorVS2Door01_render_part_8c24ba5c(TODoorVS2Door01 *o)
 {
     int v3;
     int t1;

@@ -5,28 +5,28 @@ typedef void (*VirtualFunction)(void);
 extern void destroy_object_8c21f1d0(void);
 extern void operation_8c21ee08(void);
 extern void fn_8c21ee0c(void);
-extern void operation_8c02cc08(void);
+extern void TObjPlayer_vslot03_8c02cc08(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c021164(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void word_operation_8c019b0c(void);
+extern void TObjPlayer_vslot13_8c019b0c(void);
 extern void operation_8c0104f0(void);
 extern void fn_8c02b258(void);
 extern void operation_8c04a950(void);
 extern void operation_8c013468(void);
-extern void operation_8c0245a4(void);
-extern void operation_8c0245b4(void);
-extern void operation_8c02afc0(void);
+extern void TObjPlayer_vslot18_8c0245a4(void);
+extern void TObjPlayer_vslot19_8c0245b4(void);
+extern void TObjPlayer_vslot20_8c02afc0(void);
 extern void operation_8c013474(void);
 extern void fn_8c045f04(void);
 extern void operation_8c046510(void);
-extern void operation_02c368(void);
+extern void TObjPlayer_vslot24_8c02c368(void);
 extern void fn_8c047b24(void);
 extern void fn_8c048c24(void);
 extern void operation_8c047a50(void);
@@ -74,21 +74,21 @@ extern void operation_8c013410(void);
 extern void operation_8c013414(void);
 extern void operation_8c013424(void);
 extern void operation_8c013438(void);
-extern void operation_8c02c984(void);
-extern void operation_8c02cc0c(void);
-extern void operation_8c0230e4(void);
-extern void operation_8c022ca0(void);
-extern void operation_8c022d20(void);
+extern void TObjPlayer_vslot72_8c02c984(void);
+extern void TObjPlayer_vslot73_8c02cc0c(void);
+extern void TObjPlayer_vslot74_8c0230e4(void);
+extern void TObjPlayer_vslot75_8c022ca0(void);
+extern void TObjPlayer_vslot76_8c022d20(void);
 extern void operation_8c0134bc(void);
 extern void fn_8c1eb11c(void);
-extern void operation_8c02cc1c(void);
-extern void operation_8c025570(void);
+extern void TObjPlayer_vslot79_8c02cc1c(void);
+extern void TObjPlayer_vslot80_8c025570(void);
 extern void operation_8c02cc5c(void);
-extern void operation_8c0277bc(void);
-extern void operation_8c02cc30(void);
-extern void operation_8c02cc44(void);
-extern void fn_8c029bc0(void);
-extern void operation_8c02cc58(void);
+extern void TObjPlayer_vslot82_8c0277bc(void);
+extern void TObjPlayer_vslot83_8c02cc30(void);
+extern void TObjPlayer_vslot84_8c02cc44(void);
+extern void TObjPlayer_vslot85_8c029bc0(void);
+extern void TObjPlayer_vslot86_8c02cc58(void);
 
 /* 8c2786bc: type-information and this-adjustment header, then 87 slots */
 VirtualFunction const vt_8c2786bc[89] = {
@@ -97,28 +97,28 @@ VirtualFunction const vt_8c2786bc[89] = {
     destroy_object_8c21f1d0,
     operation_8c21ee08,
     fn_8c21ee0c,
-    operation_8c02cc08,
+    TObjPlayer_vslot03_8c02cc08,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c021164,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    word_operation_8c019b0c,
+    TObjPlayer_vslot13_8c019b0c,
     operation_8c0104f0,
     fn_8c02b258,
     operation_8c04a950,
     operation_8c013468,
-    operation_8c0245a4,
-    operation_8c0245b4,
-    operation_8c02afc0,
+    TObjPlayer_vslot18_8c0245a4,
+    TObjPlayer_vslot19_8c0245b4,
+    TObjPlayer_vslot20_8c02afc0,
     operation_8c013474,
     fn_8c045f04,
     operation_8c046510,
-    operation_02c368,
+    TObjPlayer_vslot24_8c02c368,
     fn_8c047b24,
     fn_8c048c24,
     operation_8c047a50,
@@ -166,19 +166,19 @@ VirtualFunction const vt_8c2786bc[89] = {
     operation_8c013414,
     operation_8c013424,
     operation_8c013438,
-    operation_8c02c984,
-    operation_8c02cc0c,
-    operation_8c0230e4,
-    operation_8c022ca0,
-    operation_8c022d20,
+    TObjPlayer_vslot72_8c02c984,
+    TObjPlayer_vslot73_8c02cc0c,
+    TObjPlayer_vslot74_8c0230e4,
+    TObjPlayer_vslot75_8c022ca0,
+    TObjPlayer_vslot76_8c022d20,
     operation_8c0134bc,
     fn_8c1eb11c,
-    operation_8c02cc1c,
-    operation_8c025570,
+    TObjPlayer_vslot79_8c02cc1c,
+    TObjPlayer_vslot80_8c025570,
     operation_8c02cc5c,
-    operation_8c0277bc,
-    operation_8c02cc30,
-    operation_8c02cc44,
-    fn_8c029bc0,
-    operation_8c02cc58
+    TObjPlayer_vslot82_8c0277bc,
+    TObjPlayer_vslot83_8c02cc30,
+    TObjPlayer_vslot84_8c02cc44,
+    TObjPlayer_vslot85_8c029bc0,
+    TObjPlayer_vslot86_8c02cc58
 };

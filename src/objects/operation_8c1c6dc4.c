@@ -16,7 +16,7 @@ struct S_x9840 {
     float f00;
 };
 extern int call_8c12b944(int);
-void operation_8c1c6dc4(TOSparkMachine01 *o, int a1)
+void TOSparkMachine01_update_step_8c1c6dc4(TOSparkMachine01 *o, int a1)
 {
     int v1;
     int v24;

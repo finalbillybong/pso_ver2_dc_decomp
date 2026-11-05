@@ -184,8 +184,8 @@ extern "C" void rotate_scalar_pair(void *, void *, int);
 extern "C" void call_8c3bdf60(void *, void *);
 extern "C" void create_resource_effect_8c108044(void *, int);
 extern "C" void operation_8c108428(int, int, float);
-extern "C" float operation_8c05b8e8(int, float, float);
-extern "C" int operation_8c05b90c(int);
+extern "C" float object_random_fraction_wrapper_8c05b8e8(int, float, float);
+extern "C" int object_random_fraction_wrapper_2_8c05b90c(int);
 extern "C" float njSin_8c37eb0c(int);
 extern "C" float njCos_8c38c154(int);
 extern "C" void create_effect_777c(void *, int);
@@ -243,8 +243,8 @@ extern "C" void operation_8c0590c4(Object *o, int a1)
             if (25.0f > ((ObjectData *)o)->ff8) {
                 v1->f00 += 1;
                 if (v1->f00 >= 4) {
-                    t2 = operation_8c05b8e8((int)o, 5.0f, 10.0f);
-                    t1 = operation_8c05b90c((int)o);
+                    t2 = object_random_fraction_wrapper_8c05b8e8((int)o, 5.0f, 10.0f);
+                    t1 = object_random_fraction_wrapper_2_8c05b90c((int)o);
                     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((ObjectData *)o)->f324;
                     t3 = njSin_8c37eb0c(t1);
                     (&frame)->f00.f00 = t2 * t3 + (&frame)->f00.f00;

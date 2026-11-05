@@ -17,7 +17,7 @@ struct Arg0_398 {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c15f768(Object *o)
+void TObjEnePanBARA_state06_8c15f768(Object *o)
 {
     o->f398->f18 |= 1;
     o->fe8 = (unsigned int)o->fe8 >> 1 << 1;

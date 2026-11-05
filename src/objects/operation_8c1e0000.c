@@ -1,7 +1,7 @@
 #include "src/include/classes/TWindowKeyBoardHard.h"
 typedef struct Arg0_7c Arg0_7c;
 extern void call_8c1e220c(void *);
-void operation_8c1e0000(TWindowKeyBoardHard *o)
+void TWindowKeyBoardHard_init_8c1e0000(TWindowKeyBoardHard *o)
 {
     if (o->f7c != 0) {
         call_8c1e220c((void *)(o->f7c));

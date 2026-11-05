@@ -22,7 +22,7 @@ struct Arg0_3ac {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c11bde0(Object *o)
+void TObjEnePanarms_state04_8c11bde0(Object *o)
 {
     o->f394 = 0.0f;
     o->f398 = 7.5f;

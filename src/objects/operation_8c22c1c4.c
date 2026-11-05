@@ -15,7 +15,7 @@ extern void call_8c3877a8(int, void *);
 extern void operation_8c03ed70(int);
 extern void apply_resource_37d534(void *);
 extern void call_8c34d4e8(void *);
-void operation_8c22c1c4(TItemTexLoad *o)
+void TItemTexLoad_update_step_8c22c1c4(TItemTexLoad *o)
 {
     Frame frame;
     int t1;

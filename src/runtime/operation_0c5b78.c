@@ -8,7 +8,7 @@
 #define operation_01e648 ((void (*)(void))0x8c01e648)
 #define operation_0731f4 ((void (*)(void))0x8c0731f4)
 #define operation_051f7c ((void (*)(void))0x8c051f7c)
-#define operation_01217c ((void (*)(void))0x8c01217c)
+#define get_game_mode_wrapper_8c01217c ((void (*)(void))0x8c01217c)
 #define load_area_enemy_assets_8c03c3ec ((void (*)(int))0x8c03c3ec)
 #define operation_0a1bf8 ((void (*)(void))0x8c0a1bf8)
 #define operation_08710c ((void (*)(void))0x8c08710c)
@@ -25,7 +25,7 @@ void operation_0c5b78(void) {
     operation_01e648();
     operation_0731f4();
     operation_051f7c();
-    operation_01217c();
+    get_game_mode_wrapper_8c01217c();
     load_area_enemy_assets_8c03c3ec(1);
     operation_0a1bf8();
     operation_08710c();

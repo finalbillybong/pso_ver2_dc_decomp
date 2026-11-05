@@ -11,7 +11,7 @@ struct Object {
     int ff4;
 };
 extern void process_entries_8c0731d8(void *);
-void operation_8c07c18c(Object *o)
+void process_entries_wrapper_8c07c18c(Object *o)
 {
     o->ff4 = 0;
     process_entries_8c0731d8((void *)(o->ff0));

@@ -20,7 +20,7 @@ struct Arg0_3a8 {
     int f18;
 };
 extern void call_8c0ffdf0(void *, int);
-void operation_8c0fa0b8(Object *o)
+void TObjEneSlimeOne_state18_8c0fa0b8(Object *o)
 {
     o->f3ac = 0x5a;
     o->f3b0 = 0x13;

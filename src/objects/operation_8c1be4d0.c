@@ -14,13 +14,13 @@ struct S_g8c4e2b80_430_2c {
     char unknown0[0x4];
     int f04;
 };
-extern int operation_8c05bae8(void);
+extern int get_game_mode_wrapper_3_8c05bae8(void);
 extern void call_8c08914c(TObjCityAreaWarp *);
 void TObjCityAreaWarp_update_8c1be4d0(TObjCityAreaWarp *o)
 {
     float v3;
     int t1;
-    t1 = operation_8c05bae8();
+    t1 = get_game_mode_wrapper_3_8c05bae8();
     if (t1 != 0) {
         v3 = (float)(float)(unsigned int)((*(S_g8c4e2b80 **)0x8c4e2b80)->f430->f2c->f04 + -1);
         o->ff4 += 4.0f;

@@ -8,7 +8,7 @@ struct Object {
     char unknown0[0x140];
     short f140;
 };
-short operation_8c075b84(Object *o)
+short TItemProShield_vslot30_8c075b84(Object *o)
 {
     return o->f140;
 }

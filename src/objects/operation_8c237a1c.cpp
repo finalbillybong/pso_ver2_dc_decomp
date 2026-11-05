@@ -34,13 +34,13 @@ extern Vector3 g_8c33a1cc;
 extern char g_8c510bcc;
 extern S_L8c33a1d8 g_8c33a1d8;
 extern "C" char gc_8c33a1d8[];
-extern "C" void call_8c237cb0(Object *);
+extern "C" void TChallenge_update_step_8c237cb0(Object *);
 extern "C" int call_8c18e6fc(Frame *);
 extern "C" void TChallenge_update_8c237a1c(Object *o)
 {
     Frame frame;
     int t1;
-    call_8c237cb0(o);
+    TChallenge_update_step_8c237cb0(o);
     if (g_8c510bcc == 0) {
         *(Vector3 *)&*(Vector3 *)(gc_8c33a1d8 + 0x0) = *(Vector3 *)&g_8c33a1b4;
         *(Vector3 *)&*(Vector3 *)(gc_8c33a1d8 + 0xc) = *(Vector3 *)&g_8c33a1c0;

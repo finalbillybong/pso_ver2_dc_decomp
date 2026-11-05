@@ -27,7 +27,7 @@ struct Arg1 {
     Vector3 f18;
     Vector3 f24;
 };
-void operation_8c01d694(Object *o, Arg1 *a1)
+void TObjectShared_vslot06_8c01d694(Object *o, Arg1 *a1)
 {
     int n;
     int v1;

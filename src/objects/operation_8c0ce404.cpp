@@ -37,7 +37,7 @@ extern "C" void call_8c013c58(TObjEneDubchik *);
 extern "C" void call_8c1086fc(void);
 extern "C" void call_8c3827d8(void *);
 extern "C" void njPushMatrixEx_8c38ae68(void);
-extern "C" void operation_8c0cffe8(void *);
+extern "C" void TObjEneDubchik_render_part_8c0cffe8(void *);
 extern "C" void translate_current_matrix_v_8c382a40(void *);
 extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void njScale_8c37e2e4(int, float, float, float);
@@ -73,7 +73,7 @@ extern "C" void TObjEneDubchik_render_8c0ce404(TObjEneDubchik *o)
         v3 = (int)1;
         njPushMatrixEx_8c38ae68();
         g_8c46f560 = (int)(g_8c575570);
-        operation_8c0cffe8((void *)o);
+        TObjEneDubchik_render_part_8c0cffe8((void *)o);
         translate_current_matrix_v_8c382a40((void *)(((char *)o + 0x3c)));
         njRotateY_8c37df90(0, (void *)(o->f64));
         njScale_8c37e2e4(0, 1.3f, 1.3f, 1.3f);

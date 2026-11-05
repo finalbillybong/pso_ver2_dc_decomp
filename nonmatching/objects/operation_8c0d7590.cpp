@@ -172,7 +172,7 @@ extern int g_8c46fdb8;
 extern Vector3 g_8c46fdbc;
 extern int g_8c575570;
 extern "C" int operation_8c03d338(void);
-extern "C" int operation_8c05bae8(void);
+extern "C" int get_game_mode_wrapper_3_8c05bae8(void);
 extern "C" void call_8c3827d8(void *);
 extern "C" void call_8c05b9dc(Object *);
 extern "C" void operation_8c05baa8(void);
@@ -207,7 +207,7 @@ extern "C" void operation_8c0d7590(Object *o)
         v1 = (unsigned char)(0);
     } else {
         int t2;
-        t2 = operation_8c05bae8();
+        t2 = get_game_mode_wrapper_3_8c05bae8();
         if (0 != t2) {
             float pm7;
             float pm6;

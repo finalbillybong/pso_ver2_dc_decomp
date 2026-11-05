@@ -7,13 +7,13 @@ extern void TObject_update_default_8c0111c4(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c043724(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c013448(void);
 extern void operation_8c0104f0(void);
@@ -91,12 +91,12 @@ extern void operation_8c0134ec(void);
 extern void operation_8c05a004(void);
 extern void operation_8c012b98(void);
 extern void fn_8c012aa8(void);
-extern void operation_8c059d2c(void);
+extern void TObjEneDD_vslot89_8c059d2c(void);
 extern void operation_8c059de0(void);
 extern void operation_8c059e2c(void);
 extern void operation_8c059e88(void);
 extern void TObjEneDD_v94_8c05b168(void);
-extern void operation_8c05b16c(void);
+extern void TObjEneDD_vslot95_8c05b16c(void);
 extern void operation_8c05b19c(void);
 extern void fn_8c05b6b4(void);
 extern void operation_8c05b6fc(void);
@@ -120,13 +120,13 @@ VirtualFunction const TObjEneDD_vtable_8c2627b8[111] = {
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     operation_8c0104f0,
@@ -204,13 +204,13 @@ VirtualFunction const TObjEneDD_vtable_8c2627b8[111] = {
     operation_8c05a004,
     operation_8c012b98,
     fn_8c012aa8,
-    operation_8c059d2c,
+    TObjEneDD_vslot89_8c059d2c,
     operation_8c059de0,
     operation_8c059e2c,
     operation_8c059e88,
     0,
     TObjEneDD_v94_8c05b168,
-    operation_8c05b16c,
+    TObjEneDD_vslot95_8c05b16c,
     operation_8c05b19c,
     fn_8c05b6b4,
     operation_8c05b6fc,

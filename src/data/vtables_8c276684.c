@@ -10,7 +10,7 @@ extern void hierarchy_output(void);
 extern void TItemEffLandHit_dtor_8c1c60b0(void);
 extern void TItemEffLandHit_update_8c1c60f4(void);
 extern void TItemEffLavis_dtor_8c1c61c0(void);
-extern void operation_1abbcc(void);
+extern void TItemShoot_vslot01_8c1abbcc(void);
 extern void TItemShootModel_render_8c1abeb8(void);
 extern void TItemEffLavis_v05_8c1c6210(void);
 
@@ -41,7 +41,7 @@ VirtualFunction const TItemEffLavis_vtable_8c2766bc[8] = {
     0,
     0,
     TItemEffLavis_dtor_8c1c61c0,
-    operation_1abbcc,
+    TItemShoot_vslot01_8c1abbcc,
     TItemShootModel_render_8c1abeb8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,

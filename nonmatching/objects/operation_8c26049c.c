@@ -63,14 +63,14 @@ extern S_g8c4d97e0 *g_8c4d97e0;
 extern S_L8c41cba0 g_8c41cba0;
 extern int pair_grid_view_ready(void *);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(Arg0_2c *, void *, int, int);
+extern void add_wrapper_8c156d30(Arg0_2c *, void *, int, int);
 extern void operation_8c15700c(void *, float);
 extern void operation_8c1571d4(void *, int);
 extern void operation_8c157138(void *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void operation_8c051a98(void *, int, int, int, unsigned char);
 extern void operation_8c051d5c(void *, float, float);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void call_8c119c78(void *);
 void operation_8c26049c(Object *o)
 {
@@ -85,9 +85,9 @@ void operation_8c26049c(Object *o)
         *(Block8 *)&(&frame)->f00 = *(Block8 *)&g_8c340828;
         t2 = operation_8c156c24((int)(&frame), 3);
         o->f2c = (Arg0_2c *)t2;
-        operation_8c156d30((Arg0_2c *)(o->f2c), (void *)(g_8c467180->f88->f04), 2, 0);
-        operation_8c156d30((Arg0_2c *)(o->f2c), (void *)((void *)0x8c340830), 6, 1);
-        operation_8c156d30((Arg0_2c *)(o->f2c), (void *)((void *)0x8c340830), 2, 2);
+        add_wrapper_8c156d30((Arg0_2c *)(o->f2c), (void *)(g_8c467180->f88->f04), 2, 0);
+        add_wrapper_8c156d30((Arg0_2c *)(o->f2c), (void *)((void *)0x8c340830), 6, 1);
+        add_wrapper_8c156d30((Arg0_2c *)(o->f2c), (void *)((void *)0x8c340830), 2, 2);
         operation_8c15700c((void *)(o->f2c), 442.0f);
         operation_8c1571d4((void *)(o->f2c), 1);
         operation_8c157138((void *)(o->f2c));
@@ -104,7 +104,7 @@ void operation_8c26049c(Object *o)
     t4 = pair_grid_view_ready((void *)(o->f28));
     if (t4 == 0) {
         if ((((&g_8c41cba0)->f28 & 4)) == 0) {
-            t5 = operation_8c01d8a8((void *)((void *)((char *)&g_8c41cba0 + 0x110)), 4);
+            t5 = replicate_nibble_wrapper_2_8c01d8a8((void *)((void *)((char *)&g_8c41cba0 + 0x110)), 4);
             if (t5 == 0) {
                 return;
             }

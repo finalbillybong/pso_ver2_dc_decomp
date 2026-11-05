@@ -3,6 +3,6 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-void operation_8c010500(void)
+void TObjectShared_vslot08_8c010500(void)
 {
 }

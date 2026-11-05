@@ -19,7 +19,7 @@ typedef struct Vector3 {
 } Vector3;
 typedef struct S_g8c418248 S_g8c418248;
 extern void call_8c0e2e98(int);
-extern void operation_8c0e2b2c(void *);
+extern void refresh_name_wrapper_8c0e2b2c(void *);
 extern void operation_8c0e2b40(void *);
 extern void operation_8c0e30c8(int, void *, int, void *);
 extern void call_8c0db30c(int);
@@ -28,7 +28,7 @@ extern void update_view_nodes(void *, void *);
 void TWindowStatus_update_8c0e27b4(int a0)
 {
     call_8c0e2e98(a0);
-    operation_8c0e2b2c((void *)a0);
+    refresh_name_wrapper_8c0e2b2c((void *)a0);
     operation_8c0e2b40((void *)a0);
     operation_8c0e30c8(a0, (void *)((void *)0x8c285920), (int)(a0 + 0x68), (void *)(*(S_g8c418248 **)0x8c418248));
     call_8c0db30c(a0);

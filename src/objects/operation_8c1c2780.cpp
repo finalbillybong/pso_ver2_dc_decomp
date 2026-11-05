@@ -25,7 +25,7 @@ typedef struct ObjectData {
     char unknown0[0x64];
     Arg0_64 *f64;
 } ObjectData;
-extern "C" int operation_8c05bb00(void);
+extern "C" int get_game_mode_wrapper_4_8c05bb00(void);
 extern "C" void call_8c3827d8(void *);
 extern "C" void njPushMatrixEx_8c38ae68(void);
 extern "C" void translate_current_matrix_v_8c382a40(void *);
@@ -38,7 +38,7 @@ extern "C" void operation_8c1c2780(Object *o)
     int t1;
     int t2;
     int t3;
-    t1 = operation_8c05bb00();
+    t1 = get_game_mode_wrapper_4_8c05bb00();
     if (t1 != 0) {
         t2 = o->v11(400.0f, 70.0f);
         if (t2 != 0) {

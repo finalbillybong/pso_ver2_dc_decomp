@@ -25,7 +25,7 @@ struct S_x49120_0 {
     short f04;
 };
 extern void operation_8c24a6c8(void *);
-extern void call_8c24a6ec(TObjCamera *);
+extern void TObjCamera_update_step_8c24a6ec(TObjCamera *);
 extern S_c8c021ef8 *lookup_low_id(int);
 extern float njScalor2_8c37e494(Frame *);
 extern void operation_8c245f40(void *);
@@ -46,7 +46,7 @@ void TObjCamera_update_8c24a264(TObjCamera *o)
         operation_8c24a6c8((void *)o);
     }
     if (o->f100 != 0) {
-        call_8c24a6ec(o);
+        TObjCamera_update_step_8c24a6ec(o);
     }
     t1 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));
     if (t1 != 0) {

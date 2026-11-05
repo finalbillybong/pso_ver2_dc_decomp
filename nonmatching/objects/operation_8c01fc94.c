@@ -44,7 +44,7 @@ extern void call_8c01c908(Object *, void *, void *, int);
 extern void call_8c02ae70(Object *);
 extern void operation_8c1e92e4(void *);
 extern void operation_8c1ef548(void *);
-extern int operation_8c02c194(void);
+extern int get_current_area_wrapper_8c02c194(void);
 extern void operation_8c02aff0(void *);
 extern void operation_8c02668c(int);
 void operation_8c01fc94(Object *o)
@@ -71,7 +71,7 @@ void operation_8c01fc94(Object *o)
     } else {
         operation_8c1ef548((void *)o);
     }
-    t4 = operation_8c02c194();
+    t4 = get_current_area_wrapper_8c02c194();
     if (t4 != 0) {
         operation_8c02aff0((void *)o);
         v5 = (int)(o->f308 == 2);

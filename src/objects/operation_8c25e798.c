@@ -19,8 +19,8 @@ extern void operation_8c25ea10(void *);
 extern void operation_8c25eadc(void *);
 extern int operation_8c25ee2c(void);
 extern void operation_8c25ec50(Object *);
-extern void operation_8c25ed88(int);
-extern void operation_8c25ee08(int);
+extern void request_resource_release_wrapper_4_8c25ed88(int);
+extern void request_resource_release_wrapper_5_8c25ee08(int);
 void operation_8c25e798(Object *o)
 {
     int t1;
@@ -46,8 +46,8 @@ void operation_8c25e798(Object *o)
     t2 = operation_8c25ee2c();
     if (t2 == 0) {
         operation_8c25ec50(o);
-        operation_8c25ed88((int)o);
-        operation_8c25ee08((int)o);
+        request_resource_release_wrapper_4_8c25ed88((int)o);
+        request_resource_release_wrapper_5_8c25ee08((int)o);
         o->f04 |= 1;
     }
 }

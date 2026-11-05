@@ -20,7 +20,7 @@ extern void call_8c384610(int);
 extern void call_8c38a714(int, void *);
 extern void call_8c3be280(int, Frame *, int);
 extern void njPopMatrixEx_8c38ad10(void);
-void operation_8c022d20(Object *o, int a1, int a2)
+void TObjPlayer_vslot76_8c022d20(Object *o, int a1, int a2)
 {
     Frame frame;
     (&frame)->f08 = 0.0f;

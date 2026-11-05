@@ -8,7 +8,7 @@ extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3827d8(void *);
 extern "C" void call_8c3aa716(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c0f0400(TOWreckAncient *o)
+extern "C" void TOWreckAncient_vslot02_8c0f0400(TOWreckAncient *o)
 {
     int t1;
     t1 = o->v11(o->fe4, o->fe8);

@@ -95,7 +95,7 @@ static inline void set_state(Object *o, int n)
         (((PmfObj *)o)->*fn)();
     }
 }
-extern "C" void operation_8c15f790(Object *o)
+extern "C" void TObjEnePanBARA_state07_8c15f790(Object *o)
 {
     Block_frame_24 dir;
     float len;

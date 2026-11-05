@@ -44,7 +44,7 @@ extern char g_8c3109c8[];
 extern void create_effect_777c(void *, int);
 extern void create_effect_at_8c108394(void *, int);
 extern void create_resource_effect_8c108170(void *, int);
-void operation_8c11c71c(Object *o)
+void TObjEnePanarms_state09_8c11c71c(Object *o)
 {
     Frame frame;
     S_vv4 *v4;

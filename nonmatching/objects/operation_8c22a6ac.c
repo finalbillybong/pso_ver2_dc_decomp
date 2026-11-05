@@ -40,7 +40,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void call_8c3827d8(void *);
 extern void operation_8c161c78(void *);
 extern void draw_tree_a702(void *, void *, float);
-extern void operation_8c161ce4(void *);
+extern void set_transform_node_callback_wrapper_2_8c161ce4(void *);
 extern void njPopMatrixEx_8c38ad10(void);
 void operation_8c22a6ac(Object *o)
 {
@@ -53,7 +53,7 @@ void operation_8c22a6ac(Object *o)
         operation_8c161c78((void *)(o->f10c));
         v9 = o->fec;
         draw_tree_a702((void *)(o->fcc), (void *)(o->fd4), v9);
-        operation_8c161ce4((void *)(o->f10c));
+        set_transform_node_callback_wrapper_2_8c161ce4((void *)(o->f10c));
         njPopMatrixEx_8c38ad10();
     }
 }

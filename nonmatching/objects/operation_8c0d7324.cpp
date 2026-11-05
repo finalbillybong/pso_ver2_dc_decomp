@@ -178,7 +178,7 @@ extern "C" int check_range_8c01cf68(void *, float);
 extern "C" int call_8c24e644(int, void *);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void rotate_and_submit_vector_xz(void *, void *, int);
-extern "C" void operation_8c108488(int, int);
+extern "C" void create_effect_7cc0_wrapper_8c108488(int, int);
 extern "C" void TBreakUpMdl_create_8c108644(int, int, int, int, int);
 extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
@@ -231,7 +231,7 @@ L_8c0d73d6:;
             (&frame)->f10 = 10.0f;
             (&frame)->f14 = 20.0f;
             rotate_and_submit_vector_xz((void *)(&(&frame)->f0c), (void *)(((char *)o + 0x3c)), (int)(((ObjectData *)o)->f64));
-            operation_8c108488((int)(&(&frame)->f0c), 0x14);
+            create_effect_7cc0_wrapper_8c108488((int)(&(&frame)->f0c), 0x14);
             return;
         case 1:
             v2->f00 += 1;

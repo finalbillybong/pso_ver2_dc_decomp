@@ -50,7 +50,7 @@ extern int operation_8c1571f4(void *);
 extern int operation_8c1a8cd4(Object *, int);
 extern void call_8c1a8ec0(void *, void *);
 extern void operation_8c19a044(void *, int);
-extern int operation_8c1a8f58(void *);
+extern int TWindowSubTechnique_update_step_8c1a8f58(void *);
 extern int operation_8c1a8ecc(void *, void *);
 extern void call_8c1a8d24(Object *, Arg0_28 *, int);
 extern void operation_8c1571d4(void *, int);
@@ -105,7 +105,7 @@ void TWindowSubTechnique_update_8c1a882c(Object *o)
         }
         o->f20 = 2;
     case 2:
-        t3 = operation_8c1a8f58((void *)o);
+        t3 = TWindowSubTechnique_update_step_8c1a8f58((void *)o);
         if (t3 != 1) {
             t4 = operation_8c1a8ecc((void *)(((char *)o + 0x36)), (void *)(((char *)o + 0x38)));
             if (t4 == 0) {

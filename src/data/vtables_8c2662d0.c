@@ -3,7 +3,7 @@
 typedef void (*VirtualFunction)(void);
 
 extern void TGroupEditor_dtor_8c0bb954(void);
-extern void operation_8c03ceac(void);
+extern void TEditor_update_8c03ceac(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
@@ -16,7 +16,7 @@ VirtualFunction const TGroupEditor_vtable_8c2662d0[10] = {
     0,
     0,
     TGroupEditor_dtor_8c0bb954,
-    operation_8c03ceac,
+    TEditor_update_8c03ceac,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,

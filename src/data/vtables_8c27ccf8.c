@@ -7,13 +7,13 @@ extern void operation_8c120374(void);
 extern void operation_8c2459c4(void);
 extern void operation_8c121330(void);
 extern void hierarchy_output(void);
-extern void operation_8c0104fc(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c043724(void);
-extern void operation_8c010500(void);
+extern void TObjectShared_vslot08_8c010500(void);
 extern void operation_8c1211c8(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
 extern void operation_8c013448(void);
 extern void fn_8c121058(void);
@@ -98,16 +98,16 @@ extern void fn_8c1209d8(void);
 extern void operation_8c120f08(void);
 extern void operation_8c123ee4(void);
 extern void operation_8c121008(void);
-extern void operation_8c245a88(void);
+extern void play_se_wrapper_7_8c245a88(void);
 extern void operation_8c12132c(void);
 extern void operation_8c246310(void);
 extern void operation_8c246370(void);
 extern void operation_8c246414(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void reset_shared_object(void);
-extern void operation_8c010504(void);
-extern void operation_8c010508(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot09_8c010504(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c246164(void);
 extern void fn_8c2461b0(void);
 extern void operation_8c2462d8(void);
@@ -121,13 +121,13 @@ VirtualFunction const vt_8c27ccf8[100] = {
     operation_8c2459c4,
     operation_8c121330,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c1211c8,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c013448,
     fn_8c121058,
@@ -212,7 +212,7 @@ VirtualFunction const vt_8c27ccf8[100] = {
     operation_8c120f08,
     operation_8c123ee4,
     operation_8c121008,
-    operation_8c245a88,
+    play_se_wrapper_7_8c245a88,
     operation_8c12132c
 };
 
@@ -225,15 +225,15 @@ VirtualFunction const vt_8c27ce88[16] = {
     operation_8c246414,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     reset_shared_object,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510
+    TObjectShared_vslot13_8c010510
 };
 
 /* 8c27cec8: type-information and this-adjustment header, then 5 slots */

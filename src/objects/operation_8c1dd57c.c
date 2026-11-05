@@ -28,7 +28,7 @@ struct S_vv1 {
     int f00;
 };
 extern int operation_8c1571f4(void *);
-extern int operation_8c21f32c(void *);
+extern int get_field_wrapper_8c21f32c(void *);
 extern void call_8c21f3f0(int);
 int operation_8c1dd57c(Object *o)
 {
@@ -54,7 +54,7 @@ int operation_8c1dd57c(Object *o)
     t1 = operation_8c1571f4((void *)v5);
     v1->f00 = (int)(t1);
     if (((o->f22 & 0x80)) != 0) {
-        t2 = operation_8c21f32c((void *)v1);
+        t2 = get_field_wrapper_8c21f32c((void *)v1);
         call_8c21f3f0(t2);
     }
     return 1;

@@ -5,7 +5,7 @@ struct S_x52112 {
     float f00;
 };
 extern void play_se_8c05fbf8(void *, int, int, int);
-void operation_8c24a6ec(TObjCamera *o)
+void TObjCamera_update_step_8c24a6ec(TObjCamera *o)
 {
     int v6;
     int v5;

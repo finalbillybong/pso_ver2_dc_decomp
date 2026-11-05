@@ -23,7 +23,7 @@ extern void call_8c0a237c(void *, Frame *);
 extern void create_descriptor_managers(void);
 extern void TWindowCtrlMain_ctor_8c1bec9c(void *, int);
 extern void call_8c230028(int);
-void operation_8c230308(void)
+void game_mode_30_init_8c230308(void)
 {
     Frame frame;
     int t1;

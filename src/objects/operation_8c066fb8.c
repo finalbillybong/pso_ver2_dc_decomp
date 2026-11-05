@@ -28,7 +28,7 @@ struct Arg1 {
 };
 extern float object_random_fraction(void *);
 extern float call_8c12b570(float);
-extern float operation_8c05b8e8(int, float, float);
+extern float object_random_fraction_wrapper_8c05b8e8(int, float, float);
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(int);
 int operation_8c066fb8(Object *o, Arg1 *a1)
@@ -53,7 +53,7 @@ int operation_8c066fb8(Object *o, Arg1 *a1)
                 v2 = 0;
             }
         }
-        t2 = operation_8c05b8e8((int)o, 100.0f, 220.0f);
+        t2 = object_random_fraction_wrapper_8c05b8e8((int)o, 100.0f, 220.0f);
         ((S_x32560 *)((char *)(int *)((char *)o + 0x6c4) + v3))->f00 = t2;
         v9 = (float)t2;
     } else {

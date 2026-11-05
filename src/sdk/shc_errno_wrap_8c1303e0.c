@@ -1,7 +1,7 @@
 extern float fimpl_8c12e624(float);
 extern volatile int errno;
 
-float errno_wrap_8c1303e0(float x)
+float TOKeyGenericSw_ctor_8c1303e0(float x)
 {
     float r;
 

@@ -3,7 +3,7 @@
 typedef void (*VirtualFunction)(void);
 
 extern void TItemEffBringer_dtor_8c1c55e0(void);
-extern void operation_1abbcc(void);
+extern void TItemShoot_vslot01_8c1abbcc(void);
 extern void TObject_render_default_8c0111c8(void);
 extern void TObject_render_shadow_default_8c0111cc(void);
 extern void hierarchy_output(void);
@@ -16,7 +16,7 @@ VirtualFunction const TItemEffBringer_vtable_8c27662c[8] = {
     0,
     0,
     TItemEffBringer_dtor_8c1c55e0,
-    operation_1abbcc,
+    TItemShoot_vslot01_8c1abbcc,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,

@@ -5,10 +5,10 @@ typedef char check_layout[sizeof(Menu)==130 && sizeof(Resources)==656 && sizeof(
 extern Context *context;
 extern char configuration[];
 extern Menu *create(void *,int,const char *);
-extern void add(Menu *,const char *,int,int),position(Menu *,float,float);
+extern void add_wrapper_8c156d30(Menu *,const char *,int,int),position(Menu *,float,float);
 Menu *create_single_entry_menu(void) {
     Menu *menu=create(configuration,1,context->resources->title);
-    add(menu,context->resources->item,0,0);
+    add_wrapper_8c156d30(menu,context->resources->item,0,0);
     { unsigned int value=menu->flags; menu->flags=value|64; }
     { unsigned int value=menu->flags; menu->flags=value|128; }
     position(menu,191.0f,68.0f);

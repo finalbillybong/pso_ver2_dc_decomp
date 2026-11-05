@@ -86,7 +86,7 @@ extern S_g8c4db408 *g_8c4db408;
 extern "C" S_c8c021ef8 *lookup_low_id(int);
 extern "C" void operation_1c7dd4(void *);
 extern "C" int find_node_8c16a3c0(void *, int);
-extern "C" S_c8c169508 *operation_8c169508(void *);
+extern "C" S_c8c169508 *hierarchy_is_active_wrapper_2_8c169508(void *);
 extern "C" void operation_8c023b3c(void *, int, int);
 extern "C" void quest_op_item_delete_by_type_8c16f3e0(int a0, int a1)
 {
@@ -109,7 +109,7 @@ extern "C" void quest_op_item_delete_by_type_8c16f3e0(int a0, int a1)
         t2 = find_node_8c16a3c0((void *)(t1->fbc8), (int)(&frame));
         if (t2 == 0) {
         } else {
-            t3 = operation_8c169508((void *)t2);
+            t3 = hierarchy_is_active_wrapper_2_8c169508((void *)t2);
             if (t3 != 0) {
                 t3->v31((&frame));
                 *(int *)((char *)((char *)g_8c4db408 + 0x0) + ((unsigned char)a1++ << 2)) = (&frame)->f00;

@@ -7,7 +7,7 @@ struct Arg1 {
 typedef struct ObjectData {
 
 } ObjectData;
-extern "C" float operation_8c0fd718(TOMine *o, Arg1 *a1)
+extern "C" float TOMine_vslot26_8c0fd718(TOMine *o, Arg1 *a1)
 {
     if (a1->f302 != 0) {
         o->v24(0, 1.0f);

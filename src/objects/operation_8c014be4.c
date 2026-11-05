@@ -13,7 +13,7 @@ struct Object {
     float f10;
 };
 extern void call_8c3c4074(void *, float, float, float);
-void operation_8c014be4(Object *o)
+void set_light_b_wrapper_8c014be4(Object *o)
 {
     call_8c3c4074(o->tag, o->f08, o->f0c, o->f10);
 }

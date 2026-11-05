@@ -1,6 +1,6 @@
 #include "src/include/classes/TOKey.h"
 extern "C" void call_8c027090(TOKey *);
-extern "C" void operation_8c1133cc(TOKey *o)
+extern "C" void TOKey_vslot21_8c1133cc(TOKey *o)
 {
     int t1;
     int t2;

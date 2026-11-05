@@ -19,7 +19,7 @@ struct Arg0_3ac {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c11d4f0(Object *o)
+void TObjEnePanarms_state26_8c11d4f0(Object *o)
 {
     o->f3ac->f18 |= 1;
     o->f3a4 = 0x1e;

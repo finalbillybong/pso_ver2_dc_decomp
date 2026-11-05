@@ -54,13 +54,13 @@ struct Arg1 {
     char unknown0[0x4];
     char f04;
 };
-extern "C" int operation_8c073e5c(void *, void *);
+extern "C" int TItemEquipBase_vslot31_8c073e5c(void *, void *);
 extern "C" void operation_8c1c74a8(void *, int);
 extern "C" int operation_8c0e727c(Object *o, Arg1 *a1)
 {
     int t1;
     int t2;
-    t1 = operation_8c073e5c((void *)o, (void *)a1);
+    t1 = TItemEquipBase_vslot31_8c073e5c((void *)o, (void *)a1);
     if (t1 != 0) {
         if (((ObjectData *)o)->f136 == 2) {
             a1->f04 = ((ObjectData *)o)->f141;

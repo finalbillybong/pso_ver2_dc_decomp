@@ -53,7 +53,7 @@ extern S_c8c156bd8 *operation_8c156bd8(int, int, int);
 extern int call_8c21f468(void);
 extern int call_8c21f454(void);
 extern void call_8c156d48(S_c8c156bd8 *, void *, int, int, int);
-extern void operation_8c156d30(S_c8c156bd8 *, void *, int, int);
+extern void add_wrapper_8c156d30(S_c8c156bd8 *, void *, int, int);
 extern void operation_8c1570b4(void *, float, float);
 extern void operation_8c157138(void *);
 S_c8c156bd8 *operation_8c1d1ccc(Object *o)
@@ -70,11 +70,11 @@ S_c8c156bd8 *operation_8c1d1ccc(Object *o)
         call_8c156d48(t2, (void *)(g_8c467180->f2c->f434), 0x16, 0x16, -0x979798);
         call_8c156d48(t2, (void *)(g_8c467180->f2c->f438), 0x16, 0x1a, -0x979798);
     } else {
-        operation_8c156d30(t2, (void *)(g_8c467180->f2c->f434), 6, 0x16);
-        operation_8c156d30(t2, (void *)(g_8c467180->f2c->f438), 6, 0x1a);
+        add_wrapper_8c156d30(t2, (void *)(g_8c467180->f2c->f434), 6, 0x16);
+        add_wrapper_8c156d30(t2, (void *)(g_8c467180->f2c->f438), 6, 0x1a);
     }
     if (((o->f34->f00 & 1)) != 0) {
-        operation_8c156d30(t2, (void *)(g_8c467180->f2c->f43c), 6, 0x1c);
+        add_wrapper_8c156d30(t2, (void *)(g_8c467180->f2c->f43c), 6, 0x1c);
     } else {
         call_8c156d48(t2, (void *)(g_8c467180->f2c->f43c), 0x16, 0x1c, -0x979798);
     }

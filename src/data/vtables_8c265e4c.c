@@ -30,7 +30,7 @@ extern void TTecGiFoie_v05_8c0b20d8(void);
 extern void operation_8c0ad9a8(void);
 extern void TTecGiZonde_dtor_8c0b2984(void);
 extern void TTecGiZonde_update_8c0b28b0(void);
-extern void operation_8c0b9f98(void);
+extern void TTecGiZonde_vslot02_8c0b9f98(void);
 extern void TTecGiZonde_v07_8c0b2f34(void);
 extern void destroy_object_8c0b36f4(void);
 extern void operation_8c0b3738(void);
@@ -107,7 +107,7 @@ VirtualFunction const TTecGiZonde_vtable_8c265f00[10] = {
     0,
     TTecGiZonde_dtor_8c0b2984,
     TTecGiZonde_update_8c0b28b0,
-    operation_8c0b9f98,
+    TTecGiZonde_vslot02_8c0b9f98,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
     operation_8c0ad458,

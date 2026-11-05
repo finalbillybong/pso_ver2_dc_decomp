@@ -10,7 +10,7 @@ extern void hierarchy_output(void);
 extern void TObjEZBoneRotBase_dtor_8c08b35c(void);
 extern void TObject_update_default_8c0111c4(void);
 extern void TGroupSetEditor_dtor_8c08b900(void);
-extern void operation_8c03ceac(void);
+extern void TEditor_update_8c03ceac(void);
 extern void TGroupSetEditor_v05_8c08b9a8(void);
 extern void TGroupSetEditor_v06_8c08b944(void);
 extern void TGroupSetEditor_v07_8c08ba38(void);
@@ -46,7 +46,7 @@ VirtualFunction const TGroupSetEditor_vtable_8c2652dc[10] = {
     0,
     0,
     TGroupSetEditor_dtor_8c08b900,
-    operation_8c03ceac,
+    TEditor_update_8c03ceac,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,
@@ -60,7 +60,7 @@ VirtualFunction const TGroupEnemySetEditor_vtable_8c265304[10] = {
     0,
     0,
     TGroupEnemySetEditor_dtor_8c08de2c,
-    operation_8c03ceac,
+    TEditor_update_8c03ceac,
     TObject_render_default_8c0111c8,
     TObject_render_shadow_default_8c0111cc,
     hierarchy_output,

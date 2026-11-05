@@ -469,7 +469,7 @@ extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int call_8c05c0dc(Object *, float);
 extern "C" int call_8c05c2dc(Object *);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
@@ -576,7 +576,7 @@ extern "C" void operation_8c092e5c(Object *o, int a1)
         }
         switch (v1->f00) {
         case 0:
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
             t4 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
             t5 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t4 * 65536.0f / 6.28318405f)), 0x400);
@@ -628,7 +628,7 @@ L_8c093250:;
             break;
         case 1:
             if (v2->f00 == 0) {
-                operation_8c05c184((void *)o);
+                set_fields_wrapper_8c05c184((void *)o);
                 aim_direction_8c05bdd4((void *)o);
                 v58 = (float)1800.0f;
                 t9 = signed_inv_sqrt_8c37f6d8(v58);
@@ -660,7 +660,7 @@ L_8c093250:;
             append_position_ring((void *)(((ObjectData *)o)->f424), (void *)(((char *)o + 0x430)), (int)(((ObjectData *)o)->f4d0), 1.2f);
             break;
         case 2:
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
             t10 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
             t11 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t10 * 65536.0f / 6.28318405f)), 0x400);
@@ -694,7 +694,7 @@ L_8c093250:;
             call_8c05c750(o, 0x200, ((ObjectData *)o)->f484->f00);
             break;
         case 3:
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
             t12 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
             t13 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t12 * 65536.0f / 6.28318405f)), 0x400);

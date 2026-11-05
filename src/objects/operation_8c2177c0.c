@@ -4,7 +4,7 @@ typedef struct Arg0_50 Arg0_50;
 extern int operation_8c1cdc80(void *);
 extern void operation_8c1dc6e4(int);
 extern void call_8c217ed8(void *);
-void operation_8c2177c0(TWindowSubShortMail *o)
+void TWindowSubShortMail_update_step_2_8c2177c0(TWindowSubShortMail *o)
 {
     int t1;
     t1 = operation_8c1cdc80((void *)(o->f24));

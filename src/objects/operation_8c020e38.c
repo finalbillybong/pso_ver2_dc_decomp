@@ -33,7 +33,7 @@ struct Arg1 {
 struct S_vv104 {
     int f00;
 };
-extern int operation_8c02c194(void);
+extern int get_current_area_wrapper_8c02c194(void);
 extern void operation_8c02afd8(void *);
 extern void apply_setting_8c02c820(void *);
 void operation_8c020e38(Object *o, Arg1 *a1)
@@ -46,7 +46,7 @@ void operation_8c020e38(Object *o, Arg1 *a1)
     o->f332 = o->f19a;
     v1 = (int)(o->f308 == 2);
     if (v1 != 0) {
-        t1 = operation_8c02c194();
+        t1 = get_current_area_wrapper_8c02c194();
         if (t1 == 0) {
             v2 = (int)(*(int *)0x8c4dc800 == 1);
             if (v2 == 0) {

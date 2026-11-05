@@ -206,7 +206,7 @@ extern "C" void play_se_8c05fbf8(int, void *, int, int);
 extern "C" void update_last_effect(int);
 extern "C" int operation_8c05af28(void *, int);
 extern "C" void call_8c061170(Object *);
-extern "C" float operation_8c05b8e8(int, float, float);
+extern "C" float object_random_fraction_wrapper_8c05b8e8(int, float, float);
 extern "C" void call_8c05c580(Object *, int, float);
 extern "C" void operation_8c06206c(Object *o, int a1)
 {
@@ -368,7 +368,7 @@ L_8c0623ea:;
         if (t10 != 0) {
             v2->f00 = 0;
             call_8c061170(o);
-            t11 = operation_8c05b8e8((int)o, 0.3f, 1.0f);
+            t11 = object_random_fraction_wrapper_8c05b8e8((int)o, 0.3f, 1.0f);
             ((ObjectData *)o)->f41c = t11;
             t12 = scale_by_half_angle(0x200, ((ObjectData *)o)->f41c);
             v4->f00 = t12 + 2.0f;
@@ -409,7 +409,7 @@ L_8c0624f6:;
 L_8c062566:;
         if (!(((ObjectData *)o)->f420 > 0.1f)) {
             v1->f00 = 2;
-            t15 = operation_8c05b8e8((int)o, 240.0f, 360.0f);
+            t15 = object_random_fraction_wrapper_8c05b8e8((int)o, 240.0f, 360.0f);
             v2->f00 = (int)t15;
             ((ObjectData *)o)->ff0 = 0;
         }
@@ -421,7 +421,7 @@ L_8c0625f0:;
         v2->f00 -= 1;
         if (!(v2->f00 > 0)) {
             call_8c061170(o);
-            t16 = operation_8c05b8e8((int)o, 0.3f, 1.0f);
+            t16 = object_random_fraction_wrapper_8c05b8e8((int)o, 0.3f, 1.0f);
             ((ObjectData *)o)->f41c = t16;
             ((ObjectData *)o)->f420 = 0.0f;
             t17 = scale_by_half_angle(0x200, ((ObjectData *)o)->f41c);

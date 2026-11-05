@@ -24,7 +24,7 @@ typedef struct ObjectData {
     int f70;
 } ObjectData;
 extern "C" int active_payload_8c22c05c(void *);
-extern "C" void call_8c22cd34(Object *);
+extern "C" void TWindowLoadItemTexture_render_part_8c22cd34(Object *);
 extern "C" void call_8c0db5d4(Object *, int);
 extern "C" void draw_view_nodes(void *, void *, void *);
 extern "C" void TWindowLoadItemTexture_render_8c22cb98(Object *o)
@@ -35,7 +35,7 @@ extern "C" void TWindowLoadItemTexture_render_8c22cb98(Object *o)
         t1 = active_payload_8c22c05c((void *)(((ObjectData *)o)->f6c));
         ((ObjectData *)o)->f70 = (int)t1;
         if (((ObjectData *)o)->f70 != 0) {
-            call_8c22cd34(o);
+            TWindowLoadItemTexture_render_part_8c22cd34(o);
             ((ObjectData *)o)->f68 = 1;
         }
     }

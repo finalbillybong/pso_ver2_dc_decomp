@@ -2,7 +2,7 @@
 typedef struct Arg0_28 Arg0_28;
 typedef struct Arg0_28_0 Arg0_28_0;
 extern void create_effect_7b30(void *, void *, int, int);
-void operation_8c1c7424(TItemEffShield *o)
+void TItemEffShield_update_step_8c1c7424(TItemEffShield *o)
 {
     int v2;
     int v1;

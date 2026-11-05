@@ -31,7 +31,7 @@ struct S_vv73 {
     S_vv73_78 *f78;
 };
 extern char g_8c41cba0[];
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void play_se_8c05fbf8(int, int, int, int);
 extern void operation_8c18c768(void *);
 extern void call_8c18cb7c(Object *);
@@ -58,7 +58,7 @@ void operation_8c18c328(Object *o)
     int t1;
     if (((o->f20 & 1)) != 0 && ((o->f20 & 4)) == 0) {
         if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-            t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+            t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
             if (t1 == 0) {
                 return;
             }

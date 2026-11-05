@@ -141,7 +141,7 @@ struct S_vv2 {
 extern "C" void operation_8c059ef8(void *, int);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" int call_8c05c0dc(Object *, float);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" float call_8c12b570(float);
 extern "C" void call_8c05fd7c(int, Object *, void *, int, int);
@@ -199,7 +199,7 @@ extern "C" void operation_8c0d23dc(Object *o, int a1)
                 goto L_8c0d2578;
             }
             v1->f00 = 1;
-            operation_8c05c184((void *)o);
+            set_fields_wrapper_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
             break;
         case 1:

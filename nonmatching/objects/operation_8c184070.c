@@ -34,7 +34,7 @@ extern S_g8c467180 *g_8c467180;
 extern S_g8c4dbb34 *g_8c4dbb34;
 extern void operation_8c184100(void);
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(int, void *, int, int);
+extern void add_wrapper_8c156d30(int, void *, int, int);
 extern void operation_8c15700c(void *, float);
 extern void operation_8c0dc610(void *, float);
 void operation_8c184070(void)
@@ -43,8 +43,8 @@ void operation_8c184070(void)
     operation_8c184100();
     t1 = operation_8c156c24((int)((void *)0x8c287274), 2);
     g_8c4dbb34 = (S_g8c4dbb34 *)(int)(t1);
-    operation_8c156d30(t1, (void *)(g_8c467180->f2c->f84), 6, 0);
-    operation_8c156d30((int)g_8c4dbb34, (void *)(g_8c467180->f2c->f88), 6, 1);
+    add_wrapper_8c156d30(t1, (void *)(g_8c467180->f2c->f84), 6, 0);
+    add_wrapper_8c156d30((int)g_8c4dbb34, (void *)(g_8c467180->f2c->f88), 6, 1);
     operation_8c15700c(g_8c4dbb34, 289.0f);
     operation_8c0dc610(g_8c4dbb34, 0.1f);
 }

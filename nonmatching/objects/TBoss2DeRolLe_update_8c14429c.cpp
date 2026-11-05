@@ -162,7 +162,7 @@ extern "C" int call_8c05a0a8(void);
 extern "C" void operation_8c09e6d0(void *);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void call_8c1764f8(int, Object *, void *);
-extern "C" int operation_8c05bae8(void);
+extern "C" int get_game_mode_wrapper_3_8c05bae8(void);
 extern "C" int call_8c05bb18(Object *);
 extern "C" void operation_8c144d8c(Object *);
 extern "C" int call_8c05bb24(void);
@@ -207,7 +207,7 @@ extern "C" void TBoss2DeRolLe_update_8c14429c(Object *o)
             call_8c1764f8(t2, o, (void *)(((ObjectData *)o)->f638));
         }
     }
-    t3 = operation_8c05bae8();
+    t3 = get_game_mode_wrapper_3_8c05bae8();
     if (t3 != 0 && ((ObjectData *)o)->f3e4 == 0) {
         t4 = call_8c05bb18(o);
         if (t4 != 0) {

@@ -9,7 +9,7 @@ struct Object {
     int f3f8;
     int f3fc;
 };
-void operation_8c11bba0(Object *o)
+void TObjEnePanarms_state00_8c11bba0(Object *o)
 {
     o->f3fc = 1;
     o->f3f8 = 1;

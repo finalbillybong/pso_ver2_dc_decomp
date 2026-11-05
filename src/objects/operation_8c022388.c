@@ -19,7 +19,7 @@ struct S_vv4 {
 extern int g_8c418248;
 extern int g_8c4627c8;
 extern int operation_8c16a18c(void *, int);
-extern int operation_8c169508(void *);
+extern int hierarchy_is_active_wrapper_2_8c169508(void *);
 extern void operation_8c022428(void *, void *, int);
 void handle_6x25_equip_item_8c022388(Object *o)
 {
@@ -57,7 +57,7 @@ void handle_6x25_equip_item_8c022388(Object *o)
         if (v14 != 0) {
             t1 = operation_8c16a18c((void *)(v4->fbc8), (int)(base->f04));
             if (t1 != 0) {
-                t2 = operation_8c169508((void *)t1);
+                t2 = hierarchy_is_active_wrapper_2_8c169508((void *)t1);
                 if (t2 != 0) {
                     operation_8c022428((void *)v4, (void *)t2, (int)(base->f08));
                 }

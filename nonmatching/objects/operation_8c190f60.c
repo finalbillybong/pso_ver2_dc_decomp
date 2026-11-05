@@ -66,7 +66,7 @@ extern void initialize_fields_8c207358(void *);
 extern S_c8c0744dc *find_record_8c0744dc(int);
 extern S_c8c156bd8 *operation_8c156bd8(int, int, int);
 extern void call_8c156d48(S_c8c156bd8 *, void *, int, int, int);
-extern void operation_8c156d30(S_c8c156bd8 *, void *, int, int);
+extern void add_wrapper_8c156d30(S_c8c156bd8 *, void *, int, int);
 extern void call_8c1c8ce4(void *, void *);
 extern int call_8c207378(void *, int);
 extern int lookup_low_id(int);
@@ -87,29 +87,29 @@ S_c8c156bd8 *operation_8c190f60(Object *o, int a1)
     if (!(2.0f > t1->f1e0)) {
         call_8c156d48(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f328), 0x16, 1, -0x979798);
     } else {
-        operation_8c156d30(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f328), 6, 1);
+        add_wrapper_8c156d30(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f328), 6, 1);
     }
     call_8c1c8ce4((void *)(o->f2c), (void *)(((char *)(&frame) + 0x2)));
     t3 = call_8c207378((void *)(((char *)(&frame) + 0x2)), 0);
     if (t3 != -1) {
-        operation_8c156d30(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f324), 6, 0);
+        add_wrapper_8c156d30(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f324), 6, 0);
     } else {
         call_8c156d48(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f324), 0x16, 0, -0x979798);
     }
     if (((t1->fec & 8)) != 0) {
-        operation_8c156d30(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f318), 6, 3);
+        add_wrapper_8c156d30(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f318), 6, 3);
     } else {
         t4 = lookup_low_id((int)(*(S_g8c418248 **)0x8c418248));
         if (t4 != 0) {
             t5 = operation_8c074560(t1, t4, (Frame *)((&frame)));
             if (t5 != 0) {
-                operation_8c156d30(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f31c), 6, 2);
+                add_wrapper_8c156d30(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f31c), 6, 2);
             } else {
                 call_8c156d48(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f31c), 0x16, 2, -0x7f7f80);
             }
         }
     }
-    operation_8c156d30(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f310), 6, 4);
+    add_wrapper_8c156d30(t2, (void *)((*(S_g8c467180 **)0x8c467180)->f2c->f310), 6, 4);
     t2->f80 = (t2->f80 & 0xffff) | 0x10;
     operation_8c15700c(t2, 182.0f);
     operation_8c157138((void *)t2);

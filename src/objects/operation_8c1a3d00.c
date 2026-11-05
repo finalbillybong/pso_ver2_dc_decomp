@@ -5,7 +5,7 @@ extern int lookup_low_id(int);
 extern int operation_8c1cdc80(void *);
 extern int operation_8c1a2da0(void *);
 extern void call_8c02452c(int, int, int);
-void operation_8c1a3d00(TWindowSubItem *o)
+void TWindowSubItem_update_step_4_8c1a3d00(TWindowSubItem *o)
 {
     int t1;
     int t2;

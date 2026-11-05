@@ -24,7 +24,7 @@ extern int operation_8c156c24(int, int);
 extern void call_8c156d48(TObjMapWarpAncient_pe8 *, void *, int, int, int);
 extern void call_8c156f50(TObjMapWarpAncient_pe8 *);
 extern void call_8c157138(TObjMapWarpAncient_pe8 *);
-void operation_8c08893c(TObjMapWarpAncient *o)
+void TObjMapWarpAncient_vslot16_8c08893c(TObjMapWarpAncient *o)
 {
     Frame frame;
     int t1;

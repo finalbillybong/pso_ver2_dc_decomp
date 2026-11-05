@@ -58,7 +58,7 @@ extern void call_8c139594(TBoss3Volopt *);
 extern void forward_effect_view(void *, void *);
 extern void call_8c13981c(TBoss3Volopt *);
 extern void operation_8c1399fc(void *);
-void operation_8c138424(TBoss3Volopt *o)
+void TBoss3Volopt_update_step_8c138424(TBoss3Volopt *o)
 {
     S_vv1 *v1;
     int v2;

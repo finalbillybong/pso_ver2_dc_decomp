@@ -25,7 +25,7 @@ extern void operation_8c051a94(void);
 extern void load_title_logo_texture_8c03f14c(void);
 extern void forward_reviewed_8c03f1bc(void);
 extern void operation_8c13f3a0(void);
-extern void operation_8c13f3cc(void);
+extern void game_free_wrapper_3_8c13f3cc(void);
 extern void operation_8c19a6c4(void);
 extern void query_global_entries_8c19a6ec(void);
 extern void load_assets_charamakingmot_8c1c2a70(void);
@@ -109,7 +109,7 @@ Function const d_8c32915c[70] = {
     load_title_logo_texture_8c03f14c,
     forward_reviewed_8c03f1bc,
     operation_8c13f3a0,
-    operation_8c13f3cc,
+    game_free_wrapper_3_8c13f3cc,
     operation_8c19a6c4,
     query_global_entries_8c19a6ec,
     load_assets_charamakingmot_8c1c2a70,

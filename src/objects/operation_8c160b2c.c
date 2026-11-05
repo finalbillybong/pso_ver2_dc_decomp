@@ -26,7 +26,7 @@ struct Arg0_398 {
     int f18;
 };
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c160b2c(Object *o)
+void TObjEnePanBARA_state24_8c160b2c(Object *o)
 {
     if (o->f39c != 1) {
         o->f398->f18 |= 1;

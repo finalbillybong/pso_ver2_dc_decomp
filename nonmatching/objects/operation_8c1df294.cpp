@@ -123,11 +123,11 @@ extern "C" char gc_8c32b128[];
 extern "C" void operation_8c1dee8c(void *);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void TWindowEff_ctor_8c22b298(void *, void *, int, int);
-extern "C" void operation_8c1e283c(void *);
+extern "C" void TWindowKeyBoardSoft_state00_8c1e283c(void *);
 extern "C" int operation_8c1e2354(void *);
 extern "C" void play_se_8c05fbf8(int, int, int, int);
 extern "C" S_c8c21c6fc *call_8c21c6fc(int);
-extern "C" void operation_8c1e29ec(void *);
+extern "C" void TWindowKeyBoardSoft_state19_8c1e29ec(void *);
 extern "C" void operation_8c1e25fc(void *, int);
 extern "C" void operation_8c1df294(Object *o)
 {
@@ -253,7 +253,7 @@ extern "C" void operation_8c1df294(Object *o)
 L_8c1df7b8:;
     v31 = (int)o->f68;
     if (((v31 & 0x40)) != 0) {
-        operation_8c1e283c((void *)(o->f70));
+        TWindowKeyBoardSoft_state00_8c1e283c((void *)(o->f70));
         t8 = operation_8c1e2354((void *)(o->f70));
         if (t8 != 0) {
         } else {
@@ -346,7 +346,7 @@ L_8c1df8d8:;
         if (!(0x41 > (int)(unsigned short)v32) && !((int)(unsigned short)v32 > 0x5a)) {
             goto L_8c1dfa94;
         }
-        operation_8c1e29ec((void *)(o->f70));
+        TWindowKeyBoardSoft_state19_8c1e29ec((void *)(o->f70));
         return;
     }
 L_8c1dfa94:;

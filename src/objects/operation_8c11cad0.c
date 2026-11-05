@@ -15,7 +15,7 @@ struct Arg0_3ac {
     char unknown0[0x18];
     int f18;
 };
-void operation_8c11cad0(Object *o)
+void TObjEnePanarms_state14_8c11cad0(Object *o)
 {
     o->f3ac->f18 |= 1;
     o->ff0 = 8;

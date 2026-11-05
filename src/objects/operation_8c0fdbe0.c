@@ -1,6 +1,6 @@
 #include "src/include/classes/TOMine.h"
 extern int get_game_mode_8c01c25c(void);
-void operation_8c0fdbe0(TOMine *o)
+void TOMine_vslot95_8c0fdbe0(TOMine *o)
 {
     char *v1;
     int t1;

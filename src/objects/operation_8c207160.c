@@ -11,7 +11,7 @@ struct S_vv3 {
 extern int g_8c4db9e8;
 extern char g_8c335d2c[];
 extern void operation_8c15761c(void *);
-extern void operation_8c156d30(TWindowSubComCardList *, void *, int, int);
+extern void add_wrapper_8c156d30(TWindowSubComCardList *, void *, int, int);
 extern void call_8c156d48(TWindowSubComCardList *, void *, int, int, int);
 void operation_8c207160(TWindowSubComCardList *o)
 {
@@ -29,7 +29,7 @@ void operation_8c207160(TWindowSubComCardList *o)
         if (((v3->f79 & 1)) == 0) {
             goto L_8c2071c0;
         }
-        operation_8c156d30(o, (void *)((int)v3 + 8), 7, v2);
+        add_wrapper_8c156d30(o, (void *)((int)v3 + 8), 7, v2);
         v1 = (int)(v1 + 1);
         v2 = (int)(v2 + 1);
         v3 = (S_vv3 *)((char *)v3 + 128);

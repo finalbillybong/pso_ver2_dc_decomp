@@ -20,7 +20,7 @@ struct S_L8c41cba0 {
     int f28;
 };
 extern char g_8c41cba0[];
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 void operation_8c1caa08(Object *o)
 {
     int t1;
@@ -44,7 +44,7 @@ void operation_8c1caa08(Object *o)
             if (*(char *)0x8c4e2e20 == 1) {
                 o->f60 = 1;
                 if (((*(int *)(g_8c41cba0 + 0x28) & 4)) == 0) {
-                    t1 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
+                    t1 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 4);
                     if (t1 == 0) {
                         return;
                     }

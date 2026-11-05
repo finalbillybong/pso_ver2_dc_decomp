@@ -49,7 +49,7 @@ extern "C" void call_8c3ac53a(void *, float);
 extern "C" void call_8c3aa716(void *);
 extern "C" void call_8c3a944a(void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" void operation_8c0ee944(Object *o)
+extern "C" void TOKey_vslot02_8c0ee944(Object *o)
 {
     int t1;
     int t2;

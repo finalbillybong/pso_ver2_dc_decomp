@@ -61,7 +61,7 @@ struct S_g8c4e2b80_430 {
     char unknown0[0x3c];
     int f3c;
 };
-extern "C" int operation_8c25aa74(void);
+extern "C" int get_game_mode_wrapper_6_8c25aa74(void);
 extern "C" int find_local_actor_in_radius_8c25a9a4(void *, float);
 extern "C" void operation_8c25a890(int, int);
 extern "C" void operation_8c25a47c(Object *o)
@@ -85,7 +85,7 @@ extern "C" void operation_8c25a47c(Object *o)
         ((ObjectData *)o)->f104 = (int)((*(S_g8c4e2b80 **)0x8c4e2b80)->f430->f3c);
         return;
 L_8c25a4da:;
-        t1 = operation_8c25aa74();
+        t1 = get_game_mode_wrapper_6_8c25aa74();
         if (t1 == 0) {
             t2 = find_local_actor_in_radius_8c25a9a4((void *)o, ((ObjectData *)o)->fe4);
             if (t2 != 0) {

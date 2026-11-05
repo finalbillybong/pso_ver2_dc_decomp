@@ -252,7 +252,7 @@ extern "C" void call_8c06741c(Object *);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int call_8c066e30(Object *, S_vv5 *);
 extern "C" float errno_wrap_8c130334(float, float);
-extern "C" int operation_8c05b90c(int);
+extern "C" int object_random_fraction_wrapper_2_8c05b90c(int);
 extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
 extern "C" int signed_angle_delta(int, int);
@@ -365,7 +365,7 @@ extern "C" void operation_8c06a184(Object *o, int a1)
             t2 = errno_wrap_8c130334(v5->f00.f00 - ((ObjectData *)o)->f3c.f00, v5->f00.f08 - ((ObjectData *)o)->f3c.f08);
             v4->f00 = (S_vv4_0 *)(int)(t2 * 65536.0f / 6.28318405f);
         } else {
-            t3 = operation_8c05b90c((int)o);
+            t3 = object_random_fraction_wrapper_2_8c05b90c((int)o);
             v4->f00 = (S_vv4_0 *)(int)t3;
             t4 = njSin_8c37eb0c((void *)(v4->f00));
             v5->f00.f00 = t4 * 125.0f;

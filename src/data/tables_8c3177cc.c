@@ -1,19 +1,19 @@
 /* Static data 8c3177cc-8c317834: pointer_table objects, in address order. */
 
 extern void operation_8c14dfd0(void);
-extern void operation_8c14e014(void);
+extern void destroy_node_array_wrapper_8c14e014(void);
 extern void operation_8c155e60(void);
-extern void operation_8c155ea4(void);
+extern void destroy_node_array_wrapper_3_8c155ea4(void);
 extern void operation_8c155784(void);
-extern void operation_8c1557c8(void);
+extern void destroy_node_array_wrapper_2_8c1557c8(void);
 extern void operation_8c163f78(void);
-extern void operation_8c163fb8(void);
+extern void destroy_node_array_wrapper_4_8c163fb8(void);
 extern void operation_8c1647bc(void);
-extern void operation_8c164804(void);
+extern void destroy_node_array_wrapper_5_8c164804(void);
 extern void operation_8c174810(void);
-extern void operation_8c174858(void);
+extern void destroy_node_array_wrapper_6_8c174858(void);
 extern void operation_8c178900(void);
-extern void operation_8c178948(void);
+extern void destroy_node_array_wrapper_7_8c178948(void);
 extern void operation_8c14eb64(void);
 extern void operation_8c14eb68(void);
 extern void operation_8c14f268(void);
@@ -29,19 +29,19 @@ extern const char str_8c317a9c[];
 
 const void *const d_8c3177cc[26] = {
     (void *)operation_8c14dfd0,
-    (void *)operation_8c14e014,
+    (void *)destroy_node_array_wrapper_8c14e014,
     (void *)operation_8c155e60,
-    (void *)operation_8c155ea4,
+    (void *)destroy_node_array_wrapper_3_8c155ea4,
     (void *)operation_8c155784,
-    (void *)operation_8c1557c8,
+    (void *)destroy_node_array_wrapper_2_8c1557c8,
     (void *)operation_8c163f78,
-    (void *)operation_8c163fb8,
+    (void *)destroy_node_array_wrapper_4_8c163fb8,
     (void *)operation_8c1647bc,
-    (void *)operation_8c164804,
+    (void *)destroy_node_array_wrapper_5_8c164804,
     (void *)operation_8c174810,
-    (void *)operation_8c174858,
+    (void *)destroy_node_array_wrapper_6_8c174858,
     (void *)operation_8c178900,
-    (void *)operation_8c178948,
+    (void *)destroy_node_array_wrapper_7_8c178948,
     (void *)operation_8c14eb64,
     (void *)operation_8c14eb68,
     (void *)operation_8c14f268,

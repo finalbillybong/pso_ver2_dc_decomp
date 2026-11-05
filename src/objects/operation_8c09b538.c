@@ -10,7 +10,7 @@ struct Object {
     Arg0_134 *f134;
 };
 extern void game_free_8c011ec0(void *);
-void operation_8c09b538(Object *o)
+void game_free_wrapper_2_8c09b538(Object *o)
 {
     game_free_8c011ec0(o->f134);
     o->f134 = (Arg0_134 *)0;

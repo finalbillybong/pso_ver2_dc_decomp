@@ -21,7 +21,7 @@ struct Arg0_3a8 {
 };
 extern void call_8c0ffdf0(void *, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c0f97a4(Object *o)
+void TObjEneSlimeOne_state08_8c0f97a4(Object *o)
 {
     o->f3b0 = 8;
     call_8c0ffdf0((void *)(o->f3a4), 9);

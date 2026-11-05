@@ -28,7 +28,7 @@ struct Frame {
 };
 extern void create_effect_7bc0(void *, void *, int, int, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
-void operation_8c11cdc0(Object *o)
+void TObjEnePanarms_state18_8c11cdc0(Object *o)
 {
     Frame frame;
     o->f3ac->f18 = (unsigned int)o->f3ac->f18 >> 1 << 1;

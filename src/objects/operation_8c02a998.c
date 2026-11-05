@@ -4,7 +4,7 @@ typedef struct Vector3 {
     float z;
 } Vector3;
 extern int get_game_mode_8c01c25c(void);
-extern int operation_8c02c194(void);
+extern int get_current_area_wrapper_8c02c194(void);
 extern void call_8c3a944a(int);
 extern void call_8c3aa716(int);
 void operation_8c02a998(int a0)
@@ -19,7 +19,7 @@ void operation_8c02a998(int a0)
             goto L_8c02a9c6;
         }
     }
-    t3 = operation_8c02c194();
+    t3 = get_current_area_wrapper_8c02c194();
     if (t3 != 0) {
         call_8c3a944a(a0);
         return;

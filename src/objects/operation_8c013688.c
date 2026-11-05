@@ -13,7 +13,7 @@ extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TMovie_ctor_8c08aefc(int, void *, void *, void *);
 extern void operation_8c01c250(int);
 extern void wait_vsync_and_flip_8c380516(void);
-void operation_8c013688(void)
+void game_mode_03_init_8c013688(void)
 {
     int t1;
     call_8c3806f6(0, 0, 0);

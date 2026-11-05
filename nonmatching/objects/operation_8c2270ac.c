@@ -18,19 +18,19 @@ typedef struct Vector3 {
 } Vector3;
 extern char g_8c337834[];
 extern int operation_8c156c24(int, int);
-extern void operation_8c156d30(int, void *, int, int);
+extern void add_wrapper_8c156d30(int, void *, int, int);
 extern void operation_8c15700c(int, float);
 extern void operation_8c157138(void *);
 int operation_8c2270ac(void)
 {
     int t1;
     t1 = operation_8c156c24((int)((void *)0x8c2e19a8), 6);
-    operation_8c156d30(t1, (void *)((g_8c337834 + 0x1b)), 6, 3);
-    operation_8c156d30(t1, (void *)((g_8c337834 + 0x2b)), 6, 5);
-    operation_8c156d30(t1, (void *)((g_8c337834 + 0x3b)), 6, 7);
-    operation_8c156d30(t1, (void *)((g_8c337834 + 0x53)), 6, 9);
-    operation_8c156d30(t1, (void *)((g_8c337834 + 0x6d)), 6, 0xb);
-    operation_8c156d30(t1, (void *)((g_8c337834 + 0x83)), 6, 0xd);
+    add_wrapper_8c156d30(t1, (void *)((g_8c337834 + 0x1b)), 6, 3);
+    add_wrapper_8c156d30(t1, (void *)((g_8c337834 + 0x2b)), 6, 5);
+    add_wrapper_8c156d30(t1, (void *)((g_8c337834 + 0x3b)), 6, 7);
+    add_wrapper_8c156d30(t1, (void *)((g_8c337834 + 0x53)), 6, 9);
+    add_wrapper_8c156d30(t1, (void *)((g_8c337834 + 0x6d)), 6, 0xb);
+    add_wrapper_8c156d30(t1, (void *)((g_8c337834 + 0x83)), 6, 0xd);
     operation_8c15700c(t1, 480.0f);
     operation_8c157138((void *)t1);
     return (int)(t1);

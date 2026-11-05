@@ -53,7 +53,7 @@ extern void njRotateY_8c37df90(int, void *);
 extern void hs_8c3827d8(void *);
 extern void operation_8c161c78(void *);
 extern void draw_tree_a702(void *, void *, float);
-extern void operation_8c161ce4(void *);
+extern void set_transform_node_callback_wrapper_2_8c161ce4(void *);
 extern int hs_8c18e8a0(int, int);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void restore_effect_blend_state(void);
@@ -78,7 +78,7 @@ void operation_8c22a55c(Object *o)
         hs_8c3827d8(o->fac);
         operation_8c161c78(o->ff0);
         draw_tree_a702(o->fa8, o->fb0, o->fec);
-        operation_8c161ce4(o->ff0);
+        set_transform_node_callback_wrapper_2_8c161ce4(o->ff0);
         t1 = hs_8c18e8a0((int)o->fec, 0x1e);
         v11 = (float)(float)t1;
         hs_8c3827d8(o->fb8);

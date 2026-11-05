@@ -8,14 +8,14 @@ extern void TOVS2Wall01_render_8c24c78c(void);
 extern void TOVS2Wall01_render_shadow_8c24cd7c(void);
 extern void hierarchy_output(void);
 extern void TOVS2Wall01_v05_8c24c968(void);
-extern void fn_8c01d694(void);
+extern void TObjectShared_vslot06_8c01d694(void);
 extern void fn_8c043724(void);
-extern void operation_8c010500(void);
-extern void operation_8c010504(void);
+extern void TObjectShared_vslot08_8c010500(void);
+extern void TObjectShared_vslot09_8c010504(void);
 extern void word_operation_8c01345c(void);
-extern void operation_8c01d3b0(void);
+extern void TObjectShared_vslot11_8c01d3b0(void);
 extern void fn_8c01d4c4(void);
-extern void operation_8c010510(void);
+extern void TObjectShared_vslot13_8c010510(void);
 extern void operation_8c0104f0(void);
 extern void operation_8c04a928(void);
 extern void operation_8c04a950(void);
@@ -90,12 +90,12 @@ extern void operation_8c0134e8(void);
 extern void operation_8c0134ec(void);
 extern void operation_8c24c4c4(void);
 extern void update_mode_8c0eea34(void);
-extern void operation_8c24c01c(void);
+extern void TOVS2_vslot02_8c24c01c(void);
 extern void operation_8c0eeb8c(void);
-extern void operation_8c0104fc(void);
+extern void TObjectShared_vslot05_8c0104fc(void);
 extern void operation_8c051fd4(void);
-extern void operation_8c010508(void);
-extern void operation_8c24c09c(void);
+extern void TObjectShared_vslot10_8c010508(void);
+extern void TOVS2_vslot15_8c24c09c(void);
 extern void TOVS2Wreck05_dtor_8c24c3f0(void);
 extern void TOVS2Wreck04_dtor_8c24c31c(void);
 extern void TOVS2Wreck03_dtor_8c24c248(void);
@@ -151,14 +151,14 @@ VirtualFunction const TOVS2Wall01_vtable_8c27d878[88] = {
     TOVS2Wall01_render_shadow_8c24cd7c,
     hierarchy_output,
     TOVS2Wall01_v05_8c24c968,
-    fn_8c01d694,
+    TObjectShared_vslot06_8c01d694,
     fn_8c043724,
-    operation_8c010500,
-    operation_8c010504,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
     word_operation_8c01345c,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
     operation_8c04a928,
     operation_8c04a950,
@@ -239,20 +239,20 @@ VirtualFunction const vt_8c27d9d8[18] = {
     0,
     operation_8c24c4c4,
     update_mode_8c0eea34,
-    operation_8c24c01c,
+    TOVS2_vslot02_8c24c01c,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
-    operation_8c24c09c
+    TOVS2_vslot15_8c24c09c
 };
 
 /* 8c27da20: type-information and this-adjustment header, then 16 slots */
@@ -261,20 +261,20 @@ VirtualFunction const TOVS2Wreck05_vtable_8c27da20[18] = {
     0,
     TOVS2Wreck05_dtor_8c24c3f0,
     update_mode_8c0eea34,
-    operation_8c24c01c,
+    TOVS2_vslot02_8c24c01c,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
-    operation_8c24c09c
+    TOVS2_vslot15_8c24c09c
 };
 
 /* 8c27da68: type-information and this-adjustment header, then 16 slots */
@@ -283,20 +283,20 @@ VirtualFunction const TOVS2Wreck04_vtable_8c27da68[18] = {
     0,
     TOVS2Wreck04_dtor_8c24c31c,
     update_mode_8c0eea34,
-    operation_8c24c01c,
+    TOVS2_vslot02_8c24c01c,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
-    operation_8c24c09c
+    TOVS2_vslot15_8c24c09c
 };
 
 /* 8c27dab0: type-information and this-adjustment header, then 16 slots */
@@ -305,20 +305,20 @@ VirtualFunction const TOVS2Wreck03_vtable_8c27dab0[18] = {
     0,
     TOVS2Wreck03_dtor_8c24c248,
     update_mode_8c0eea34,
-    operation_8c24c01c,
+    TOVS2_vslot02_8c24c01c,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
-    operation_8c24c09c
+    TOVS2_vslot15_8c24c09c
 };
 
 /* 8c27daf8: type-information and this-adjustment header, then 16 slots */
@@ -327,20 +327,20 @@ VirtualFunction const TOVS2Wreck02_vtable_8c27daf8[18] = {
     0,
     TOVS2Wreck02_dtor_8c24c174,
     update_mode_8c0eea34,
-    operation_8c24c01c,
+    TOVS2_vslot02_8c24c01c,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
-    operation_8c24c09c
+    TOVS2_vslot15_8c24c09c
 };
 
 /* 8c27db40: type-information and this-adjustment header, then 16 slots */
@@ -349,20 +349,20 @@ VirtualFunction const TOVS2Wreck01_vtable_8c27db40[18] = {
     0,
     TOVS2Wreck01_dtor_8c24c0a0,
     update_mode_8c0eea34,
-    operation_8c24c01c,
+    TOVS2_vslot02_8c24c01c,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
-    operation_8c24c09c
+    TOVS2_vslot15_8c24c09c
 };
 
 /* 8c27db88: type-information and this-adjustment header, then 16 slots */
@@ -371,20 +371,20 @@ VirtualFunction const TOVS2_vtable_8c27db88[18] = {
     0,
     TOVS2_dtor_8c24bf44,
     update_mode_8c0eea34,
-    operation_8c24c01c,
+    TOVS2_vslot02_8c24c01c,
     operation_8c0eeb8c,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
-    operation_8c010504,
-    operation_8c010508,
-    operation_8c01d3b0,
+    TObjectShared_vslot08_8c010500,
+    TObjectShared_vslot09_8c010504,
+    TObjectShared_vslot10_8c010508,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
-    operation_8c010510,
+    TObjectShared_vslot13_8c010510,
     operation_8c0104f0,
-    operation_8c24c09c
+    TOVS2_vslot15_8c24c09c
 };
 
 /* 8c27dbd0: type-information and this-adjustment header, then 43 slots */
@@ -396,13 +396,13 @@ VirtualFunction const TItemObjHpRecover_vtable_8c27dbd0[45] = {
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c073e54,
     operation_8c0e73f0,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c074814,
     operation_8c073900,
@@ -445,13 +445,13 @@ VirtualFunction const TItemObjWpnPowerUp_vtable_8c27dc84[45] = {
     TItem_render_8c073678,
     TItem_render_shadow_8c073e50,
     hierarchy_output,
-    operation_8c0104fc,
-    fn_8c01d694,
+    TObjectShared_vslot05_8c0104fc,
+    TObjectShared_vslot06_8c01d694,
     operation_8c051fd4,
-    operation_8c010500,
+    TObjectShared_vslot08_8c010500,
     operation_8c073e54,
     operation_8c0e73f0,
-    operation_8c01d3b0,
+    TObjectShared_vslot11_8c01d3b0,
     fn_8c01d4c4,
     operation_8c074814,
     operation_8c073900,

@@ -27,7 +27,7 @@ struct S_vv1 {
     int f18;
 };
 extern void call_8c0ffdf0(void *, int);
-void operation_8c0f9124(Object *o)
+void TObjEneSlimeOne_state04_8c0f9124(Object *o)
 {
     S_vv1 *v1;
     o->f3b4 = 1.0f;

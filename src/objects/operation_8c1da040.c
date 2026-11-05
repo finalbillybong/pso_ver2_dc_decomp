@@ -31,10 +31,10 @@ extern int process_effect_record(void *);
 extern int operation_8c1dccb4(void *);
 extern int operation_8c1dd614(void *);
 extern void call_8c225abc(TWindowSubLog_p20 *, float);
-extern int operation_8c01d88c(void *, int);
+extern int replicate_nibble_wrapper_8c01d88c(void *, int);
 extern void set_fields_8c225afc(void *);
 extern void set_fields_8c225b14(void *);
-extern int operation_8c01d8a8(void *, int);
+extern int replicate_nibble_wrapper_2_8c01d8a8(void *, int);
 extern void call_8c18c808(S_g8c4dbde0 *);
 void TWindowSubLog_update_8c1da040(TWindowSubLog *o)
 {
@@ -71,7 +71,7 @@ void TWindowSubLog_update_8c1da040(TWindowSubLog *o)
     }
     call_8c225abc((TWindowSubLog_p20 *)(o->f20), 408.0f);
     if (((*(int *)(g_8c41cba0 + 0x20) & 0x10)) == 0) {
-        t4 = operation_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x10);
+        t4 = replicate_nibble_wrapper_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x10);
         if (t4 == 0) {
             goto L_8c1da0de;
         }
@@ -79,7 +79,7 @@ void TWindowSubLog_update_8c1da040(TWindowSubLog *o)
     set_fields_8c225afc((void *)(o->f20));
 L_8c1da0de:;
     if (((*(int *)(g_8c41cba0 + 0x20) & 0x20)) == 0) {
-        t5 = operation_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x20);
+        t5 = replicate_nibble_wrapper_8c01d88c((void *)((g_8c41cba0 + 0x110)), 0x20);
         if (t5 == 0) {
             goto L_8c1da0fc;
         }
@@ -88,7 +88,7 @@ L_8c1da0de:;
 L_8c1da0fc:;
     if (o->f20->f44 == o->f20->f54) {
         if (((*(int *)(g_8c41cba0 + 0x28) & 2)) == 0) {
-            t6 = operation_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
+            t6 = replicate_nibble_wrapper_2_8c01d8a8((void *)((g_8c41cba0 + 0x110)), 2);
             if (t6 == 0) {
                 return;
             }

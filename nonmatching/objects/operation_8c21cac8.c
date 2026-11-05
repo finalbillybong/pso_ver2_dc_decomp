@@ -38,7 +38,7 @@ extern S_c8c21c6fc *call_8c21c6fc(int);
 extern void operation_8c1cda9c(void *, int, int, int, int);
 extern int operation_8c21c8a8(int);
 extern void operation_8c20b478(int, void *, void *);
-extern int operation_8c21f32c(void *);
+extern int get_field_wrapper_8c21f32c(void *);
 extern int operation_8c21f370(void *);
 extern void operation_8c1cdd08(void *);
 void operation_8c21cac8(Object *o)
@@ -79,7 +79,7 @@ L_8c21cb38:;
             operation_8c1cda9c((void *)o, (int)(v3), 0x10, (int)((void *)0x8c4dbe40), (int)(v3));
             goto L_8c21cb74;
 L_8c21cb56:;
-            t3 = operation_8c21f32c((void *)(((char *)t1 + 0x4)));
+            t3 = get_field_wrapper_8c21f32c((void *)(((char *)t1 + 0x4)));
             t4 = operation_8c21f370((void *)t3);
             operation_8c1cda9c((void *)o, (int)(v3), 0x11, t4, (int)(v3));
         }

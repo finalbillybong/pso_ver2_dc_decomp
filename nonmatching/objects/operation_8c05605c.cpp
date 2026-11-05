@@ -240,7 +240,7 @@ extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int call_8c05c2dc(Object *);
 extern "C" void reset_link_8c05bf28(void *);
-extern "C" void operation_8c05c184(void *);
+extern "C" void set_fields_wrapper_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
@@ -332,7 +332,7 @@ extern "C" void operation_8c05605c(Object *o, int a1)
         switch (v1->f00) {
             case 0:
             if (!(0 == ((ObjectData *)o)->f3ac)) {
-                operation_8c05c184((void *)o);
+                set_fields_wrapper_8c05c184((void *)o);
                 ((ObjectData *)o)->f3b4 = ((ObjectData *)o)->f40 + ((ObjectData *)o)->f46c;
             }
             aim_direction_8c05bdd4((void *)o);
