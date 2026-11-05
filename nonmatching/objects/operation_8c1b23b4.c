@@ -46,7 +46,7 @@ struct Object {
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern float njScalor_8c37e480(void *);
 extern void njUnitVector_8c37b630(void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(int);
 void operation_8c1b23b4(Object *o)
@@ -83,7 +83,7 @@ void operation_8c1b23b4(Object *o)
         pm9 = pm7;
         njUnitVector_8c37b630(pm9);
     }
-    pm13 = call_8c130334(o->f3f8.f00, o->f3f8.f08);
+    pm13 = errno_wrap_8c130334(o->f3f8.f00, o->f3f8.f08);
     t4 = pm13;
     v6 = (int)((t4 * 65536.0f) / 6.28318405f);
     if (!(0 != o->f390 - 6)) {

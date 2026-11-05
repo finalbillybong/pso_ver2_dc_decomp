@@ -245,7 +245,7 @@ extern "C" float njCos_8c38c154(void *);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" float normalize_xz_checked(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void call_8c05fd7c(int, Object *, void *, int, int);
 extern "C" void call_8c0c5094(void *, void *, void *);
@@ -353,7 +353,7 @@ extern "C" void operation_8c068f70(Object *o, int a1)
         ((ObjectData *)o)->f5f0 = ((ObjectData *)o)->f3b8 - ((ObjectData *)o)->f434;
         t4 = normalize_xz_checked((void *)(((char *)o + 0x5e8)));
         ((ObjectData *)o)->f5f4 = t4;
-        t5 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+        t5 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
         t6 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t5 * 65536.0f / 6.28318405f)), 0xa0);
         ((ObjectData *)o)->f64 = (Arg0_64 *)(int)t6;
         ((ObjectData *)o)->f64 = (Arg0_64 *)(short)((ObjectData *)o)->f64;

@@ -61,7 +61,7 @@ extern void TTecGrants_ctor_8c0b3178(Object *, int, void *, int);
 extern void TTecRaFoie_create_8c0b7ca0(void *, void *, void *, void *);
 extern void vector_sub_in_place_8c37f6f0(Frame *, int);
 extern void TTecRaZonde_create_8c0b8c68(void *, void *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void TTecGiBarta_create_8c0b1aa0(void *, void *, void *, void *);
 int operation_8c0c96cc(Object *o)
 {
@@ -116,7 +116,7 @@ int operation_8c0c96cc(Object *o)
                 t7 = operation_8c05bc18((int)(v14));
                 TTecRaZonde_create_8c0b8c68((void *)o, (void *)v3, (void *)t7);
             } else {
-                t8 = call_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
+                t8 = errno_wrap_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
                 v15 = (char *)g_8c46f9ec->f1c;
                 t9 = operation_8c05bc18((int)(v15));
                 TTecGiBarta_create_8c0b1aa0((void *)o, (void *)v3, (void *)(int)((int)(t8 * 65536.0f / 6.28318405f)), (void *)t9);

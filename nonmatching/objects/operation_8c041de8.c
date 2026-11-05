@@ -30,7 +30,7 @@ struct Object {
 extern void njUnitMatrix_8c37b5c4(int);
 extern void njTranslate_8c3829bc(int, float, float, float);
 extern float signed_sqrt_8c37f6c0(float);
-extern float call_8c1302e4(float);
+extern float errno_wrap_8c1302e4(float);
 extern void njRotateY_8c37df90(int, int);
 extern void njRotateX_8c37dd28(int, int);
 extern void njRotateZ_8c37e02c(int, void *);
@@ -50,21 +50,21 @@ void operation_8c041de8(Object *o)
     t1 = signed_sqrt_8c37f6c0(o->f0c * o->f0c + o->f14 * o->f14);
     t2 = signed_sqrt_8c37f6c0(o->f10 * o->f10 + t1 * t1);
     if (!(o->f0c < 0.0f)) {
-        t5 = call_8c1302e4(o->f14 / t1);
+        t5 = errno_wrap_8c1302e4(o->f14 / t1);
         v2 = (int)(int)(t5 * 65536.0f / 6.28318405f);
     }
     if (0.0f > o->f0c) {
-        t6 = call_8c1302e4(o->f14 / t1);
+        t6 = errno_wrap_8c1302e4(o->f14 / t1);
         v7 = (int)-(int)(t6 * 65536.0f / 6.28318405f);
         v2 = (int)v7;
     }
     njRotateY_8c37df90(0, v2);
     if (!(0.0f > o->f10)) {
-        t3 = call_8c1302e4(t1 / t2);
+        t3 = errno_wrap_8c1302e4(t1 / t2);
         v2 = (int)-(int)(t3 * 65536.0f / 6.28318405f);
     }
     if (0.0f > o->f10) {
-        t4 = call_8c1302e4(t1 / t2);
+        t4 = errno_wrap_8c1302e4(t1 / t2);
         v2 = (int)(int)(t4 * 65536.0f / 6.28318405f);
     }
     njRotateX_8c37dd28(0, v2);

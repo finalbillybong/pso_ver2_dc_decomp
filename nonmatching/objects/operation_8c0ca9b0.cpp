@@ -165,7 +165,7 @@ extern "C" int active_unflagged_8c05b2dc(void *);
 extern "C" void operation_8c05c184(Object *);
 extern "C" void aim_direction_8c05bdd4(Object *);
 extern "C" void set_actor_action_kind(int, int);
-extern "C" float hs_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void hs_8c05fd7c(int, Object *, void *, int, int);
 extern "C" int get_actor_state_value(int);
 extern "C" int get_actor_position(int);
@@ -249,7 +249,7 @@ extern "C" void operation_8c0ca9b0(Object *o, int a1)
                                 set_actor_action_kind(t4, 2);
                             }
                         }
-                        t5 = hs_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+                        t5 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
                         ((ObjectData *)o)->f64 = (int)(t5 * 65536.0f / 6.28318405f);
                         goto L_8c0cad4a;
                     }

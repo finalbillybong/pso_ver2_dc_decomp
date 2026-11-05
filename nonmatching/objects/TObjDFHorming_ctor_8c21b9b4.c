@@ -69,7 +69,7 @@ extern void call_8c043418(Object *);
 extern float signed_sqrt_8c37f6c0(void *, float);
 extern int rand(void);
 extern S_c8c021ef8 *lookup_low_id(int);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(int);
 extern S_c8c1794c8 *record30_8c1794c8(int);
@@ -114,7 +114,7 @@ Object *TObjDFHorming_ctor_8c21b9b4(Object *o, int a1, Arg2 *a2, int a3)
     if (t1 != 0) {
         v4 = (int)0;
     } else {
-        t9 = call_8c130334(t1->f3c - 10000.0f, t1->f44);
+        t9 = errno_wrap_8c130334(t1->f3c - 10000.0f, t1->f44);
         v5 = (int)((int)(((float)t8 / 32768.0f - 0.5f) * 16384.0f) + (int)(t9 * 65536.0f / 6.28318405f));
         v4 = (int)v5;
     }

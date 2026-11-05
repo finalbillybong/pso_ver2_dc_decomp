@@ -108,7 +108,7 @@ extern "C" void njTranslate_8c3829bc(int, float, float, float);
 extern "C" void translate_current_matrix_v_8c382a40(void *);
 extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3be280(int, Frame *, Frame *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_difference(int, int);
 extern "C" void njPopMatrixEx_8c38ad10(void);
 extern "C" void vector_sub_in_place_8c37f6f0(Frame *, void *);
@@ -143,7 +143,7 @@ extern "C" int operation_8c045f04(Object *o, Arg1 *a1, float f0)
                 d = frame.f00.f00 * frame.f00.f00 + frame.f00.f08 * frame.f00.f08;
                 rr = (*(Arg1_33c **)((char *)a1 + k))->f08 + *(float *)((char *)(int *)((char *)((ObjectData *)o)->fdc + 0xc) + off);
                 rr = rr * rr;
-                t1 = call_8c130334(frame.f00.f00, frame.f00.f08);
+                t1 = errno_wrap_8c130334(frame.f00.f00, frame.f00.f08);
                 t2 = angle_difference(a1->f64, (int)(t1 * 65536.0f / 6.28318405f));
                 if (rr > d && (*(Arg1_33c **)((char *)a1 + k))->f0c > t2) {
                     r = i;
@@ -161,7 +161,7 @@ extern "C" int operation_8c045f04(Object *o, Arg1 *a1, float f0)
             rr = a1->f33c->f08;
             rr = rr * rr;
             rr = rr * rr;
-            t1 = call_8c130334(frame.f00.f00, frame.f00.f08);
+            t1 = errno_wrap_8c130334(frame.f00.f00, frame.f00.f08);
             t2 = angle_difference(a1->f64, (int)(t1 * 65536.0f / 6.28318405f));
             if (d > rr || t2 > a1->f33c->f0c) {
                 return 0;

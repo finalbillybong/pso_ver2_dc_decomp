@@ -21,7 +21,7 @@
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/extracts.json": "a55025a7acfd480df3b59f796c29ce7b33ed43289007106a840998d18c92d3ff",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "1ddd021c8c3a3f7c39c9666366a5fff8182385ae76c9562a90bb713235ae4ae6",
+    "config/project.json": "afb111199c60d61b78124bc9d997159a9f333016ec6eff048c8a41b12c8ef26f",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/data/strings_8c284858.c": "cb16255c8ce183afbcb89c956a8f571e4ce6ef906acf5d31baea03f9d8066228",
@@ -15372,6 +15372,13 @@
     "src/sdk/shc_enable_midi_8c348404.c": "d8996ea4e93e82da0f12349e1e0b8fe025ba848cdee38629c434a9b22ec68765",
     "src/sdk/shc_entry_table_8c1fb6a4.c": "21422eb61ce30b5be4cb425019e96328fe7597115f9f341bfa5e2d8ddaa32abe",
     "src/sdk/shc_entry_value_8c364cbc.c": "021cb03d988de26fc5cc4eb1098747c272b4e2519adf1962defe0770266aa6d4",
+    "src/sdk/shc_errno_wrap_8c12b634.c": "cf6315623ba9fcb2f4d7cbbf8bffa8fc6731a004485fd99b48acdbb9846ea1fc",
+    "src/sdk/shc_errno_wrap_8c12b898.c": "541cf434440dde6c55c4844d2bd729dba20a52a89d1de69164e66d75a3f8e5ae",
+    "src/sdk/shc_errno_wrap_8c12b8f4.c": "0436952388bf243285e26b3feb0e4c2243ef6baafc85aea5edaf97a6ecd5b389",
+    "src/sdk/shc_errno_wrap_8c1302e4.c": "2f22abab171b75ccd824f3270601b1a437c60f859e2c3b44dbad41e5a7689282",
+    "src/sdk/shc_errno_wrap_8c130334.c": "a8d0ec6284c59364a7e5545a266bb7e3e23d1964a7123579304440afd6f96884",
+    "src/sdk/shc_errno_wrap_8c130390.c": "4370d22f1ca457cd0dd5bab9a81ca4f6f4e83278075b74235e4a375077af1657",
+    "src/sdk/shc_errno_wrap_8c1303e0.c": "cbd6188670ccb4c65a993f3e86115d6831c1e50c3a737b1f00225c97aba36c8a",
     "src/sdk/shc_file_accessors_8c369f08.c": "fd86d21bb3709e97f57aa804abb54db9eb022ba5e365344541ca7d4807d466ec",
     "src/sdk/shc_file_stream_8c349930.c": "ac4936ec3b89d86b5cc817a63a69b1622299eb8d5d269c1727e7be539cae75ce",
     "src/sdk/shc_find_buffer_8c36333c.c": "07616be98f4eae7f3a75c9c47834f9d7ade550bfe90f0f4b34cc6c858a7304f6",
@@ -15554,6 +15561,7 @@
     "src/sdk/shc_set_window_8c345864.c": "353674acb6f7a70897829a77ea7a1bd1491f6e0dea01b663b85ee64e643694be",
     "src/sdk/shc_setup_channel_8c36dd5c.c": "f3bf2df2098dd975562aef934dc59d4fbc0333327ed1388ae68327371f2a3e5f",
     "src/sdk/shc_short_or_offset_8c1f33a0.c": "356a90493e4e94dcc7961f78ad96a5ad1897dbf76745582349814393e6cffcb5",
+    "src/sdk/shc_short_to_bytes_8c12f140.c": "174b8ed9ee73faa3464202e3848aead0d67d8526d70e068855f8acf4144a8e0c",
     "src/sdk/shc_slot_alloc_8c34e1f4.c": "7cd83dcabdbc09444e00523e63573b98142b9840aabbc6ad3e9eb99d4610d5a7",
     "src/sdk/shc_slot_pool_8c354640.c": "66f24c568ef048c0d27bb5f8148290fa159c17f5d8af9200876ce58a7d357806",
     "src/sdk/shc_slot_ready_8c3cc9bc.c": "239c156a502eae1b6b8334facebd54d341ee07bbd7b30897eed4c2d8bd2a5600",
@@ -69542,6 +69550,13 @@
       "-optimize=1",
       "-macsave=0"
     ],
+    "shc_errno_wrap_8c12b634": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "shc_math_errno_8c12b684": [
       "-cpu=sh4",
       "-endian=little",
@@ -69550,6 +69565,20 @@
       "-macsave=0"
     ],
     "shc_memmove_8c12b83c": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_errno_wrap_8c12b898": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_errno_wrap_8c12b8f4": [
       "-cpu=sh4",
       "-endian=little",
       "-fpu=single",
@@ -69612,6 +69641,13 @@
       "-optimize=1",
       "-macsave=0"
     ],
+    "shc_short_to_bytes_8c12f140": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "shc_make_float_8c12f160": [
       "-cpu=sh4",
       "-endian=little",
@@ -69619,7 +69655,35 @@
       "-optimize=1",
       "-macsave=0"
     ],
+    "shc_errno_wrap_8c1302e4": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_errno_wrap_8c130334": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
     "shc_atoi_8c130384": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_errno_wrap_8c130390": [
+      "-cpu=sh4",
+      "-endian=little",
+      "-fpu=single",
+      "-optimize=1",
+      "-macsave=0"
+    ],
+    "shc_errno_wrap_8c1303e0": [
       "-cpu=sh4",
       "-endian=little",
       "-fpu=single",

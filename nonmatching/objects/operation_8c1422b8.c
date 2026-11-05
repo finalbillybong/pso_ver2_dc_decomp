@@ -74,7 +74,7 @@ struct S_x51280 {
 };
 extern char g_8c4da184[];
 extern void operation_8c1424d8(Object *, float, float, float, float);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float signed_sqrt_8c37f6c0(int, float);
 void operation_8c1422b8(Object *o, float f0)
 {
@@ -137,7 +137,7 @@ void operation_8c1422b8(Object *o, float f0)
         v13 = (float)(v13 - v10);
         v14 = (float)((S_x47584 *)((char *)(int *)((char *)o + 0x34) + v11))->f00;
         v15 = (float)((S_x50272 *)((char *)(int *)((char *)o + 0x38) + v11))->f00;
-        t1 = call_8c130334(v13, v12);
+        t1 = errno_wrap_8c130334(v13, v12);
         v39 = (float)(t1 * 65536.0f / 6.28318405f);
         *(int *)((char *)((char *)o + 0xd8) + (v5 << 2)) = (int)v39 - v7;
         t2 = signed_sqrt_8c37f6c0((int)((int)v39), v13 * v13 + v12 * v12);

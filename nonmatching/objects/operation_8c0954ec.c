@@ -59,7 +59,7 @@ struct S_vv23 {
 };
 extern S_g8c44be94 *g_8c44be94;
 extern S_g8c4d97e0 *g_8c4d97e0;
-extern float call_8c130390(float);
+extern float errno_wrap_8c130390(float);
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(int);
 extern void call_8c3bdf60(void *, void *);
@@ -78,7 +78,7 @@ void operation_8c0954ec(Object *o)
     int b5;
     int t2;
     int *q;
-    n = (int)call_8c130390((float)o->f4e8 / (float)o->f484->f2c);
+    n = (int)errno_wrap_8c130390((float)o->f4e8 / (float)o->f484->f2c);
     if (1 > n) {
         n = 1;
     }

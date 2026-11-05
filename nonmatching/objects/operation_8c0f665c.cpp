@@ -216,7 +216,7 @@ extern "C" void operation_8c01c5f0(Object *);
 extern "C" int operation_8c0f5158(int);
 extern "C" void operation_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int check_range_8c01cf68(void *, float);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void TObjEneDf2Bringer_Eff_TpAbsorb1_ctor_8c104070(void *, int, void *, float);
@@ -309,7 +309,7 @@ extern "C" void operation_8c0f665c(Object *o, int a1)
                 if (t1 != 0) {
                     operation_8c05c184((void *)o);
                     aim_direction_8c05bdd4((void *)o);
-                    t2 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+                    t2 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
                     v4->f00 = (S_vv4_0 *)(unsigned short)(int)(t2 * 65536.0f / 6.28318405f);
                     v1->f00 = 1;
                     ((ObjectData *)o)->ff0 = 1;
@@ -381,7 +381,7 @@ L_8c0f699c:;
                                 if (t13 != 0) {
                                     operation_8c05c184((void *)o);
                                     aim_direction_8c05bdd4((void *)o);
-                                    t14 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+                                    t14 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
                                     v4->f00 = (S_vv4_0 *)(unsigned short)(int)(t14 * 65536.0f / 6.28318405f);
                                     v1->f00 = 1;
                                     ((ObjectData *)o)->ff0 = 1;

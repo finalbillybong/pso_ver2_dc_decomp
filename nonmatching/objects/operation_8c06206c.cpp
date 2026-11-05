@@ -199,7 +199,7 @@ extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c01c5f0(int);
 extern "C" int call_8c05c0dc(Object *, float);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void operation_8c0610c8(void *, int);
 extern "C" int check_range_8c01cf68(void *, float);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
@@ -316,7 +316,7 @@ extern "C" void operation_8c06206c(Object *o, int a1)
         v54 = (float)((ObjectData *)o)->f3c;
         v54 = (float)(v54 + 0.0f);
         njCos_8c38c154((int)(((ObjectData *)o)->f64));
-        t7 = call_8c130334(((ObjectData *)o)->f3ac->f3c - v54, ((ObjectData *)o)->f3ac->f44 - (((ObjectData *)o)->f44 + 0.0f));
+        t7 = errno_wrap_8c130334(((ObjectData *)o)->f3ac->f3c - v54, ((ObjectData *)o)->f3ac->f44 - (((ObjectData *)o)->f44 + 0.0f));
         operation_8c0610c8((void *)o, (int)((int)(t7 * 65536.0f / 6.28318405f)));
     } else {
         operation_8c0610c8((void *)o, (int)(((ObjectData *)o)->f64));

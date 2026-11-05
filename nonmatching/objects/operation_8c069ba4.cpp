@@ -231,7 +231,7 @@ extern S_g8c46891c *g_8c46891c;
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" int operation_8c05bbf8(void);
 extern "C" void configure_motion_profile(void *, float, float, float, float);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int signed_angle_delta(int, int);
 extern "C" void operation_8c0368a8(void *);
 extern "C" void call_8c06741c(Object *);
@@ -283,7 +283,7 @@ extern "C" void operation_8c069ba4(Object *o, int a1)
             configure_motion_profile((void *)(((char *)o + 0x610)), 0.1f, -0.1f, ((ObjectData *)o)->f3c8, 2.0f);
         }
         *(Vector3 *)&v4->f00 = *(Vector3 *)&((ObjectData *)o)->f3c;
-        t2 = call_8c130334(((ObjectData *)o)->f3bc.f00, ((ObjectData *)o)->f3bc.f08);
+        t2 = errno_wrap_8c130334(((ObjectData *)o)->f3bc.f00, ((ObjectData *)o)->f3bc.f08);
         t3 = signed_angle_delta((int)(((ObjectData *)o)->f64), (int)((int)(t2 * 65536.0f / 6.28318405f)));
         if (t3 >= 0) {
             ((ObjectData *)o)->f678 = 1;

@@ -280,7 +280,7 @@ struct Arg0_73c_dc {
 };
 extern "C" char g_8c284c60[];
 extern "C" char g_8c284c9c[];
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int signed_angle_delta(int, int);
 extern "C" float signed_sqrt_8c37f6c0(float);
 extern "C" void operation_8c0368a8(void *);
@@ -356,7 +356,7 @@ extern "C" void operation_8c06c27c(Object *o, int a1)
         v2->f00 = 0.0f;
         ((ObjectData *)o)->f870 = 0;
         ((ObjectData *)o)->f840 = 0;
-        t1 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+        t1 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
         (&frame)->f04->f00 = (int)(t1 * 65536.0f / 6.28318405f);
         ((ObjectData *)o)->f3c8 += 5.0f;
         v66 = (int)(&frame)->f04->f00;
@@ -501,7 +501,7 @@ extern "C" void operation_8c06c27c(Object *o, int a1)
             ((ObjectData *)o)->f5fc += v2->f00;
             ((ObjectData *)o)->f5f8 = ((ObjectData *)o)->f3c.f04 + ((ObjectData *)o)->f5fc;
             if (0.0f > v2->f00) {
-                t7 = call_8c130334(v2->f00, ((ObjectData *)o)->f848);
+                t7 = errno_wrap_8c130334(v2->f00, ((ObjectData *)o)->f848);
                 if (-(int)(t7 * 65536.0f / 6.28318405f) > ((ObjectData *)o)->f60) {
                     ((ObjectData *)o)->f60 = -(int)(t7 * 65536.0f / 6.28318405f);
                 }

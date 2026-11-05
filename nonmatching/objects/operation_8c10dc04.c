@@ -71,7 +71,7 @@ extern float squared_distance_xz(void *, void *);
 extern void operation_8c10e8c0(void *, float, int);
 extern void operation_8c10e884(void *, float);
 extern void operation_8c10e8fc(Arg0_7c *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void call_8c10f344(Arg0_7c *);
 extern int operation_8c10ea5c(void *);
 extern void operation_8c110278(void *, int);
@@ -95,7 +95,7 @@ void operation_8c10dc04(Object *o)
     }
     operation_8c10e8fc((Arg0_7c *)(o->f7c));
     v18 = (S_vv18 *)o->f7c->f94;
-    t2 = call_8c130334(o->fe0 - v18->f3c, o->fe8 - v18->f44);
+    t2 = errno_wrap_8c130334(o->fe0 - v18->f3c, o->fe8 - v18->f44);
     o->f7c->f98 = (int)(t2 * 65536.0f / 6.28318405f);
     call_8c10f344((Arg0_7c *)(o->f7c));
     t3 = operation_8c10ea5c((void *)(o->f7c));

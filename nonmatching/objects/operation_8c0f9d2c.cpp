@@ -47,7 +47,7 @@ struct PmfObj {
 typedef void (PmfObj::*PMF_0)();
 extern "C" char g_8c30a484[];
 extern "C" int operation_8c04a638(Object *, void *, float);
-extern "C" float call_8c130334(int, float, float);
+extern "C" float errno_wrap_8c130334(int, float, float);
 extern "C" int angle_difference(int, int);
 extern "C" void call_8c18e6fc(Frame *);
 extern "C" void operation_8c0f9d2c(Object *o)
@@ -64,7 +64,7 @@ extern "C" void operation_8c0f9d2c(Object *o)
     t1 = operation_8c04a638(o, (void *)(&(&frame)->f0c), 500.0f);
     o->f34 &= -0x2000001;
     if ((unsigned short)t1 != 0xffff) {
-        t3 = call_8c130334((int)((unsigned short)t1), (&frame)->f0c, (&frame)->f14);
+        t3 = errno_wrap_8c130334((int)((unsigned short)t1), (&frame)->f0c, (&frame)->f14);
         v2 = (int)(int)(t3 * 65536.0f / 6.28318405f);
         t2 = angle_difference((int)(o->f64), v2);
         if (0x444 > t2) {

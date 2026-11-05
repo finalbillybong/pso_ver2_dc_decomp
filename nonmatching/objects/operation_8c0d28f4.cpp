@@ -188,7 +188,7 @@ extern "C" int call_8c05c0dc(Object *, float);
 extern "C" void operation_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" int active_unflagged_8c05b2dc(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int call_8c0d2074(Object *, void *, int);
 extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
@@ -268,7 +268,7 @@ extern "C" void operation_8c0d28f4(Object *o, int a1)
         switch (v2->f00) {
         case 0:
             if (active_unflagged_8c05b2dc((void *)(((ObjectData *)o)->f3ac)) != 0) {
-                t6 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+                t6 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
                 v3->f00 = (S_vv3_0 *)(unsigned short)(int)(t6 * 65536.0f / 6.28318405f);
             } else {
                 v3->f00 = (S_vv3_0 *)((ObjectData *)o)->f64;
@@ -293,7 +293,7 @@ extern "C" void operation_8c0d28f4(Object *o, int a1)
                     break;
                 }
                 if (active_unflagged_8c05b2dc((void *)(((ObjectData *)o)->f3ac)) != 0) {
-                    t6 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+                    t6 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
                     v3->f00 = (S_vv3_0 *)(unsigned short)(int)(t6 * 65536.0f / 6.28318405f);
                 } else {
                     v3->f00 = (S_vv3_0 *)((ObjectData *)o)->f64;

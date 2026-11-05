@@ -110,7 +110,7 @@ typedef void (PmfObj::*PMF_0)();
 extern "C" char g_8c316c90[];
 extern "C" int call_8c18e6fc(void *);
 extern "C" int call_8c04a52c(Object *, void *, float);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_difference(int, int);
 extern "C" int angle_step(int, int, int);
 extern "C" S_c8c021ef8 *lookup_low_id(int);
@@ -256,7 +256,7 @@ extern "C" void operation_8c15efec(Object *o)
     v34 = (int)0;
     v33 = (int)(unsigned short)t24;
     if (v33 != 0xffff) {
-        t25 = call_8c130334((&frame)->f60, (&frame)->f68);
+        t25 = errno_wrap_8c130334((&frame)->f60, (&frame)->f68);
         v35 = (int)(int)(t25 * 65536.0f / 6.28318405f);
         t3 = angle_difference((int)(o->f64), v35);
         if (0x208 > t3) {
@@ -412,7 +412,7 @@ L_8c15f302:;
         if (v81 == 0) {
             goto L_8c15f62c;
         }
-        t15 = call_8c130334((&frame)->f18, (&frame)->f20);
+        t15 = errno_wrap_8c130334((&frame)->f18, (&frame)->f20);
         t16 = angle_difference((int)(o->f64), (int)((int)(t15 * 65536.0f / 6.28318405f)));
         if (!(0x400 > t16)) {
             goto L_8c15f62c;
@@ -434,7 +434,7 @@ L_8c15f302:;
             }
         }
         if (v89 != 0) {
-            t18 = call_8c130334((&frame)->f18, (&frame)->f20);
+            t18 = errno_wrap_8c130334((&frame)->f18, (&frame)->f20);
             t19 = angle_difference((int)(o->f64), (int)((int)(t18 * 65536.0f / 6.28318405f)));
             if (0x400 > t19) {
                 v88 = (int)1;

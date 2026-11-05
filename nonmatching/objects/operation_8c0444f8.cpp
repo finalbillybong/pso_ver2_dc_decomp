@@ -72,7 +72,7 @@ typedef struct ObjectData {
 extern "C" int call_8c0441d8(Object *, Vector3);
 extern "C" int operation_8c051ff4(void *, void *, void *);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void njPushMatrix_8c38ade4(void *);
 extern "C" void njRotateY_8c37df90(int, int);
 extern "C" void call_8c3be38c(int, void *, void *);
@@ -107,7 +107,7 @@ extern "C" void operation_8c0444f8(Object *o, float f0, Vector3 sp)
         ((ObjectData *)o)->f320 = 0.0f;
         ((ObjectData *)o)->f318 = 0.0f;
     } else {
-        t5 = call_8c130334((&frame)->f24.f00, (&frame)->f24.f08);
+        t5 = errno_wrap_8c130334((&frame)->f24.f00, (&frame)->f24.f08);
         v6 = (int)(int)(t5 * 65536.0f / 6.28318405f);
         (&frame)->f24.f04 = 0.0f;
         (&frame)->f24.f00 = 0.0f;

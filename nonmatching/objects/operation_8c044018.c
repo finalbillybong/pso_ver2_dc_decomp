@@ -36,7 +36,7 @@ struct Object {
     Arg0_64 *f64;
 };
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int angle_halfway(int, int);
 extern void angle_difference(int, int);
 void operation_8c044018(Object *o)
@@ -49,7 +49,7 @@ void operation_8c044018(Object *o)
     v1 = (S_vv1 *)((char *)o + 0x164);
     *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&v1->f00;
     vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
-    t2 = call_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
+    t2 = errno_wrap_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
     t1 = angle_halfway((int)(o->f64), v2 = (int)(t2 * 65536.0f / 6.28318405f));
     o->f64 = (Arg0_64 *)t1;
     angle_difference((int)(o->f64), v2);

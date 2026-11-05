@@ -43,7 +43,7 @@ struct S_c8c021ef8 {
     Block_c8c021ef8_3c f3c;
 };
 extern S_c8c021ef8 *lookup_low_id(int);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void operation_8c036840(int);
 void operation_8c1114d8(int a0, int a1)
 {
@@ -87,7 +87,7 @@ void operation_8c1114d8(int a0, int a1)
             (&frame)->f00 = (char)0x3e;
             pm12 = 6;
             (&frame)->f01 = (char)pm12;
-            t3 = call_8c130334(t2->f3c.f00 - t1->f3c.f00, t2->f3c.f08 - t1->f3c.f08);
+            t3 = errno_wrap_8c130334(t2->f3c.f00 - t1->f3c.f00, t2->f3c.f08 - t1->f3c.f08);
             pm10 = 65536.0f * t3;
             (&frame)->f02 = a0;
             pm13 = (Vector3 *)&t1->f3c;

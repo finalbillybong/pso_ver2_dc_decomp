@@ -85,7 +85,7 @@ extern void update_last_effect(int);
 extern void operation_8c01c5f0(Object *);
 extern float call_8c04500c(Object *, int, float, Vector3);
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int angle_difference(int, int);
 extern void call_8c044bd4(Object *, int, float, float, Vector3);
 extern float squared_distance_xz(void *, void *);
@@ -139,7 +139,7 @@ void operation_8c04db94(Object *o)
         t6 = call_8c04500c(o, v5, v7 * 0.125f, *(Vector3 *)&o->f334->f324);
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f334->f324;
         vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x324)));
-        t3 = call_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
+        t3 = errno_wrap_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
         t4 = angle_difference((int)(o->f64), (int)((int)(t3 * 65536.0f / 6.28318405f)));
         v16 = (float)t6;
         v17 = (float)(v7 * 0.125f);

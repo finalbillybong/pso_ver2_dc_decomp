@@ -167,7 +167,7 @@ extern "C" int operation_43fb4(void *, int, void *);
 extern "C" void operation_8c04a43c(void *, void *, float);
 extern "C" int call_8c24e644(int, void *);
 extern "C" void call_8c05fd7c(int, Object *, void *, int, int);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_difference(int, int);
 extern "C" float signed_sqrt_8c37f6c0(float);
 extern "C" void create_effect_7ab8(void *, void *, int);
@@ -232,17 +232,17 @@ L_8c04ede6:;
         } else {
             *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&o->f334->f324;
             vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f0c), (void *)(((char *)o + 0x324)));
-            t4 = call_8c130334((&frame)->f0c.f00, (&frame)->f0c.f08);
+            t4 = errno_wrap_8c130334((&frame)->f0c.f00, (&frame)->f0c.f08);
             t5 = angle_difference((int)(o->f64), (int)((int)(t4 * 65536.0f / 6.28318405f)));
             if (!(g_8c4671a4->f04->f0c > t5)) {
             } else {
                 *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&o->f334->f3c;
                 vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f0c), (void *)(((char *)o + 0x39c)));
                 t6 = signed_sqrt_8c37f6c0((&frame)->f0c.f00 * (&frame)->f0c.f00 + (&frame)->f0c.f04 * (&frame)->f0c.f04);
-                t7 = call_8c130334((&frame)->f0c.f08, t6);
+                t7 = errno_wrap_8c130334((&frame)->f0c.f08, t6);
                 (&frame)->f00 = (int)(t7 * 65536.0f / 6.28318405f);
                 (&frame)->f04 = 0;
-                t8 = call_8c130334((&frame)->f0c.f00, (&frame)->f0c.f04);
+                t8 = errno_wrap_8c130334((&frame)->f0c.f00, (&frame)->f0c.f04);
                 (&frame)->f08 = -(int)(t8 * 65536.0f / 6.28318405f);
                 create_effect_7ab8((void *)(((char *)o + 0x39c)), (void *)(&frame), 0xca);
                 if (o->fec == 4) {

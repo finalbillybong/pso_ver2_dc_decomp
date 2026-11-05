@@ -38,7 +38,7 @@ struct S_x5888 {
     float f00;
 };
 extern float floor_e(float);
-extern float call_8c130390(float);
+extern float errno_wrap_8c130390(float);
 extern int operator_new_8c18de4c(int);
 Object *operation_8c118ea4(Object *o, int a1, float f0, float f1, float f2)
 {
@@ -50,7 +50,7 @@ Object *operation_8c118ea4(Object *o, int a1, float f0, float f1, float f2)
     o->f04 = a1;
     t1 = floor_e(f0 / o->f14);
     o->f0c = t1;
-    t2 = call_8c130390(f1 / o->f14);
+    t2 = errno_wrap_8c130390(f1 / o->f14);
     o->f10 = t2;
     o->f08 = (int)(o->f10 - o->f0c + 1.0f);
     o->f0c *= o->f14;

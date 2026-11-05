@@ -63,7 +63,7 @@ extern Mgr *g_8c46ee80;
 extern int hierarchy_is_active(void *);
 extern float njScalor_8c37e480(Vector3 *);
 extern void project_point_to_screen_8c38ad50(int, Vector3 *, Vec2 *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void njPushMatrix_8c38ade4(void *);
 extern void njRotateY_8c37df90(int, int);
 extern void call_8c3be38c(int, Vector3 *, Vector3 *);
@@ -105,7 +105,7 @@ void operation_8c0a9cbc(Object *o)
         project_point_to_screen_8c38ad50(0, &b, &d);
         d.x -= e.x;
         d.y -= e.y;
-        t = call_8c130334(d.y, d.x) * 65536.0f;
+        t = errno_wrap_8c130334(d.y, d.x) * 65536.0f;
         o->angle = (short)(t / 6.28318405f);
         o->f7c = o->model->sx * s;
         o->f80 = o->model->sy * s;

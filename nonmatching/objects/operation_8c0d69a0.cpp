@@ -251,7 +251,7 @@ extern "C" void clamp_scaled_contact(void *, void *, float, float, float);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
 extern "C" float normalize_xz_checked(void *);
 extern "C" void clamp_and_apply_contact(void *, float, float, float);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int create_effect_769c(void *, int);
 extern "C" void set_effect_bit0(void *);
 extern "C" void set_effect_bits(void *, unsigned short);
@@ -357,7 +357,7 @@ extern "C" void operation_8c0d69a0(Object *o, int a1)
             vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f20), (void *)(((char *)o + 0x3c)));
             clamp_and_apply_contact((void *)o, (&frame)->f20, (&frame)->f28, normalize_xz_checked((void *)(&(&frame)->f20)));
         }
-        ((ObjectData *)o)->f64 = (int)(call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4) * 65536.0f / 6.28318405f);
+        ((ObjectData *)o)->f64 = (int)(errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4) * 65536.0f / 6.28318405f);
         if (v3->f00 != 0) {
             (&frame)->f14 = 0;
             if (v3->f00 > 0) {

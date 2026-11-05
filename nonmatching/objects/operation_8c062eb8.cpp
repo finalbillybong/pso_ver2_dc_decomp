@@ -246,7 +246,7 @@ extern "C" void update_last_effect(int);
 extern "C" int operation_8c05af28(void *, int);
 extern "C" void set_field_8c05af54(void *);
 extern "C" void slide_and_apply_contact(void *, float, float, float);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void operation_8c0610c8(void *, int);
 extern "C" void operation_8c062eb8(Object *o, int a1)
@@ -547,7 +547,7 @@ L_8c06344a:;
             }
         }
 L_8c0634d4:;
-        t18 = call_8c130334(((ObjectData *)o)->f3c - ((ObjectData *)o)->f48, ((ObjectData *)o)->f44 - ((ObjectData *)o)->f50);
+        t18 = errno_wrap_8c130334(((ObjectData *)o)->f3c - ((ObjectData *)o)->f48, ((ObjectData *)o)->f44 - ((ObjectData *)o)->f50);
         t19 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t18 * 65536.0f / 6.28318405f)), 0x200);
         ((ObjectData *)o)->f64 = (Arg0_64 *)(int)t19;
         ((ObjectData *)o)->f64 = (Arg0_64 *)(short)((ObjectData *)o)->f64;
@@ -556,7 +556,7 @@ L_8c0634d4:;
         v85 = (float)((ObjectData *)o)->f3c;
         v85 = (float)(v85 + 0.0f);
         njCos_8c38c154((void *)(((ObjectData *)o)->f64));
-        t20 = call_8c130334(((ObjectData *)o)->f3ac->f3c.f00 - v85, ((ObjectData *)o)->f3ac->f3c.f08 - (((ObjectData *)o)->f44 + 0.0f));
+        t20 = errno_wrap_8c130334(((ObjectData *)o)->f3ac->f3c.f00 - v85, ((ObjectData *)o)->f3ac->f3c.f08 - (((ObjectData *)o)->f44 + 0.0f));
         operation_8c0610c8((void *)o, (int)((int)(t20 * 65536.0f / 6.28318405f)));
         o->v95();
         if (((((ObjectData *)o)->fdc->f18 & 0x700000)) == 0) {

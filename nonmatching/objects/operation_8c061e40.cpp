@@ -184,7 +184,7 @@ extern "C" int lookup_object_by_id(short);
 extern "C" int operation_8c05c1f0(Object *);
 extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void operation_8c0610c8(Object *, int);
 extern "C" void call_8c05c0dc(Object *, float);
 extern "C" void operation_8c061e40(Object *o, int a1)
@@ -254,7 +254,7 @@ extern "C" void operation_8c061e40(Object *o, int a1)
         if (((ObjectData *)o)->ff0 == 0x10) {
             v16 = ((ObjectData *)o)->f3c + njSin_8c37eb0c(((ObjectData *)o)->f64) * 0.0f;
             v17 = ((ObjectData *)o)->f44 + njCos_8c38c154(((ObjectData *)o)->f64) * 0.0f;
-            t4 = call_8c130334(((ObjectData *)o)->f3ac->f3c - v16, ((ObjectData *)o)->f3ac->f44 - v17);
+            t4 = errno_wrap_8c130334(((ObjectData *)o)->f3ac->f3c - v16, ((ObjectData *)o)->f3ac->f44 - v17);
             operation_8c0610c8(o, (int)(t4 * 65536.0f / 6.28318405f));
             goto L_8c061fb8;
         }

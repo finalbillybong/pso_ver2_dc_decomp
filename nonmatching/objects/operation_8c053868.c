@@ -73,7 +73,7 @@ struct S_vv19_4 {
 extern int g_8c418248;
 extern float squared_distance_xz(void *, void *);
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int signed_angle_delta(int, int);
 extern void njPushMatrix_8c38ade4(void *);
 extern void njRotateY_8c37df90(int, int);
@@ -107,7 +107,7 @@ int operation_8c053868(Object *o, int a1, Arg2 *a2)
     }
     *(Vector3 *)&(&frame)->f18 = *(Vector3 *)&a2->f1c;
     vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f18), (void *)(&o->f48));
-    t2 = call_8c130334((&frame)->f18.f00, (&frame)->f18.f08);
+    t2 = errno_wrap_8c130334((&frame)->f18.f00, (&frame)->f18.f08);
     t3 = signed_angle_delta((int)((int)(t2 * 65536.0f / 6.28318405f)), (int)(o->f64));
     v1 = (int)0x4000;
     if (v1 > (unsigned short)t3) {

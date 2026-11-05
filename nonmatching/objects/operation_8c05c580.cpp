@@ -78,7 +78,7 @@ struct S_c0_4 {
     char unknown0[0xc];
     Vector3 f0c;
 };
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
@@ -92,7 +92,7 @@ extern "C" S_c0 *operation_8c05c580(Object *o, int a1, float f0)
     float t3;
     float t4;
     S_c0 *t5;
-    t1 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+    t1 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
     t2 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t1 * 65536.0f / 6.28318405f)), a1);
     ((ObjectData *)o)->f64 = (Arg0_64 *)(short)t2;
     t3 = njSin_8c37eb0c((void *)(((ObjectData *)o)->f64));

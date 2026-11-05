@@ -63,7 +63,7 @@ extern void scale_vector_to_length(void *, float);
 extern void call_8c3bdf60(void *, void *);
 extern S_c8c011214 *operation_8c011214(int, int, int);
 extern float call_8c3845f0(void *, int);
-extern float call_8c1302e4(float);
+extern float errno_wrap_8c1302e4(float);
 extern void call_8c38a8e8(void *, int, void *);
 extern void njPushMatrix_8c38ade4(void *);
 extern void njRotateY_8c37df90(int, int);
@@ -99,7 +99,7 @@ void operation_8c0c2ebc(Object *o, float f0, float f1)
     t1 = operation_8c011214((int)(&o->f324), (int)(&(&frame)->f3c), -1);
     if (t1 != 0) {
         t2 = call_8c3845f0((void *)(&o->f318), (int)(t1->f04 + 0xc));
-        t6 = call_8c1302e4(t2);
+        t6 = errno_wrap_8c1302e4(t2);
         (&frame)->f2c = 0.0f;
         (&frame)->f24 = 0.0f;
         (&frame)->f28 = 1.0f;

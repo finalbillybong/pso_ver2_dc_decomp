@@ -241,7 +241,7 @@ extern "C" void rotate_scalar_pair(void *, void *, int);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
 extern "C" float normalize_xz_checked(void *);
 extern "C" void clamp_and_dispatch_contact(void *, float, float, float);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void append_position_ring(void *, void *, int, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void operation_8c090d88(void *, float);
@@ -348,13 +348,13 @@ extern "C" void operation_8c093a1c(Object *o, int a1)
             vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f14), (void *)(((char *)o + 0x3c)));
             t4 = normalize_xz_checked((void *)(&(&frame)->f14));
             clamp_and_dispatch_contact((void *)o, (&frame)->f14, (&frame)->f1c, t4);
-            ((ObjectData *)o)->f64 = (int)(call_8c130334(v6->x, v6->z) * 65536.0f / 6.28318405f) + 0x8000;
+            ((ObjectData *)o)->f64 = (int)(errno_wrap_8c130334(v6->x, v6->z) * 65536.0f / 6.28318405f) + 0x8000;
             append_position_ring((void *)(((ObjectData *)o)->f424), (void *)(((char *)o + 0x430)), ((ObjectData *)o)->f4d0, 0.8f);
             break;
         case 0:
             operation_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
-            ((ObjectData *)o)->f64 = angle_step(((ObjectData *)o)->f64, (int)(call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4) * 65536.0f / 6.28318405f), 0x400);
+            ((ObjectData *)o)->f64 = angle_step(((ObjectData *)o)->f64, (int)(errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4) * 65536.0f / 6.28318405f), 0x400);
             ((ObjectData *)o)->f64 = (short)((ObjectData *)o)->f64;
             operation_8c090d88((void *)o, ((ObjectData *)o)->f404 + ((ObjectData *)o)->f3c.f04);
             *(Vector3 *)&(&frame)->f08 = *(Vector3 *)&((ObjectData *)o)->f3c;

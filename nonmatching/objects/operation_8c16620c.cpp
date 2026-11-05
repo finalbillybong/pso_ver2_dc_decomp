@@ -184,7 +184,7 @@ struct S_vv4 {
 };
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
 extern "C" float normalize_xz_checked(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" float signed_sqrt_8c37f6c0(float);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" void operation_8c16620c(Object *o, int a1)
@@ -217,7 +217,7 @@ extern "C" void operation_8c16620c(Object *o, int a1)
         vector_sub_in_place_8c37f6f0((void *)(((char *)o + 0x3b8)), (void *)(((char *)o + 0x324)));
         t1 = normalize_xz_checked((void *)(((char *)o + 0x3b8)));
         v3->f00 = t1;
-        t2 = call_8c130334(((ObjectData *)o)->f3b8.f00, ((ObjectData *)o)->f3b8.f08);
+        t2 = errno_wrap_8c130334(((ObjectData *)o)->f3b8.f00, ((ObjectData *)o)->f3b8.f08);
         ((ObjectData *)o)->f64 = (int)(t2 * 65536.0f / 6.28318405f);
         ((ObjectData *)o)->f60 = 0x4000;
         t3 = signed_sqrt_8c37f6c0((((ObjectData *)o)->f328 - ((ObjectData *)o)->f3ac.f04) * 2.0f / 0.2f);

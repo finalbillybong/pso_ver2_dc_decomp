@@ -57,7 +57,7 @@ extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c3bdf60(void *, void *);
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern int normalize_vector_tiny(void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 int operation_8c131e3c(Object *o, float f0)
 {
     int t1;
@@ -81,7 +81,7 @@ int operation_8c131e3c(Object *o, float f0)
     if (t3 == 1) {
         o->fe4 = 1;
         o->f104 = 0;
-        t4 = call_8c130334((&g_8c46f5a0)->f00.f00, (&g_8c46f5a0)->f00.f08);
+        t4 = errno_wrap_8c130334((&g_8c46f5a0)->f00.f00, (&g_8c46f5a0)->f00.f08);
         o->f64 = (int)(t4 * 65536.0f / 6.28318405f);
         o->f118 = (&g_8c46f5a0)->f00.f00 * o->f74;
         o->f11c = (&g_8c46f5a0)->f00.f04 * o->f74;

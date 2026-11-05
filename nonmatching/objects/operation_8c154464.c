@@ -48,7 +48,7 @@ struct S_x36432 {
 };
 extern int g_8c467874;
 extern void vector_sub_in_place_8c37f6f0(Frame *, int);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int angle_difference(int, int);
 int operation_8c154464(Object *o)
 {
@@ -81,7 +81,7 @@ int operation_8c154464(Object *o)
         if (v5->f37c == 0xd && ((v5->f34 & 0x2000800)) == 0) {
             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((S_x36432 *)((int)v5 + v1))->f00;
             vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (int)((int)o + v1));
-            if (v2 >= angle_difference((int)((int)o->f64 + 0x8000), (int)(call_8c130334((&frame)->f00.f00, (&frame)->f00.f08) * 65536.0f / 6.28318405f))) {
+            if (v2 >= angle_difference((int)((int)o->f64 + 0x8000), (int)(errno_wrap_8c130334((&frame)->f00.f00, (&frame)->f00.f08) * 65536.0f / 6.28318405f))) {
                 pf1 = (short *)((char *)o + off);
                 v7 = *pf1;
                 i = v7;

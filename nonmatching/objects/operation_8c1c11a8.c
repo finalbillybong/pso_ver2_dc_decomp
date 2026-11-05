@@ -57,7 +57,7 @@ extern S_c8c1beb7c *operation_8c1beb7c(int);
 extern void set_stream_mode_8c3ab8f8(S_c8c1beb7c *, float);
 extern void call_8c3ac038(void *, int);
 extern void call_8c3bdf60(void *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int signed_angle_delta(int, int);
 int operation_8c1c11a8(Object *o)
 {
@@ -115,7 +115,7 @@ int operation_8c1c11a8(Object *o)
     o->f3c.f00 *= 0.5f;
     o->f3c.f04 *= 0.5f;
     o->f3c.f08 *= 0.5f;
-    t4 = call_8c130334((&frame)->f00.f00 - (&frame)->f0c, (&frame)->f00.f08 - (&frame)->f14);
+    t4 = errno_wrap_8c130334((&frame)->f00.f00 - (&frame)->f0c, (&frame)->f00.f08 - (&frame)->f14);
     v13 = (int)(int)(t4 * 65536.0f / 6.28318405f);
     t3 = signed_angle_delta((int)(o->f64), v13);
     o->f64 = (int)(v13);

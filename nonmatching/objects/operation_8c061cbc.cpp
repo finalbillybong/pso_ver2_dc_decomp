@@ -165,7 +165,7 @@ extern "C" void operation_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" void njSin_8c37eb0c(void *);
 extern "C" void njCos_8c38c154(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void operation_8c0610c8(void *, int);
 extern "C" void call_8c05c0dc(Object *, float);
 extern "C" void operation_8c061cbc(Object *o, int a1)
@@ -234,7 +234,7 @@ extern "C" void operation_8c061cbc(Object *o, int a1)
             pm16 = 0.0f;
             pm8 = ((ObjectData *)o)->f3ac->f44;
             pm15 = pm16;
-            pm17 = call_8c130334(pm2 - v2, pm8 - (pm15 + ((ObjectData *)o)->f44));
+            pm17 = errno_wrap_8c130334(pm2 - v2, pm8 - (pm15 + ((ObjectData *)o)->f44));
             pm4 = 65536.0f * pm17;
             pm7 = pm4 / 6.28318405f;
             operation_8c0610c8((void *)o, ((int)(pm7)));

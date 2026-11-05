@@ -99,7 +99,7 @@ extern S_g8c44bea0 *g_8c44bea0;
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TItemShoot_ctor_8c1aba3c(Object *, Arg1 *, int, int);
 extern float signed_sqrt_8c37f6c0(float);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern Block_frame_2c call_8c075ccc(Arg1 *);
 extern int heap_alloc_8c122700(void *, unsigned int);
 extern void TEffStarLight2D_ctor_8c245d6c(void *, void *, void *, int);
@@ -124,7 +124,7 @@ Object *operation_8c1ac17c(Object *o, Arg1 *a1, int a2, int a3)
         self->f5c = (int)(a1->f1d4);
         self->f60 = (int)(a1->f28);
         if (self->f40 != 0.0f) {
-            self->f2c = -(int)(call_8c130334(self->f40, signed_sqrt_8c37f6c0(((S_vv1 *)self)->f3c * ((S_vv1 *)self)->f3c + ((S_vv1 *)self)->f44 * ((S_vv1 *)self)->f44)) * 65536.0f / 6.28318405f);
+            self->f2c = -(int)(errno_wrap_8c130334(self->f40, signed_sqrt_8c37f6c0(((S_vv1 *)self)->f3c * ((S_vv1 *)self)->f3c + ((S_vv1 *)self)->f44 * ((S_vv1 *)self)->f44)) * 65536.0f / 6.28318405f);
             self->f34 = 0;
         } else {
             self->f34 = 0;

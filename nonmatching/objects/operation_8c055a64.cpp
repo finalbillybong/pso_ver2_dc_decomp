@@ -240,7 +240,7 @@ extern "C" void call_8c3bdf60(void *, S_vv5 *);
 extern "C" float normalize_xz_checked(void *);
 extern "C" int slide_and_dispatch_contact(void *, float, float, float);
 extern "C" float call_8c12c714(float);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int call_8c24e644(int, void *);
 extern "C" void call_8c05fd7c(int, Object *, void *, int, int);
 extern "C" void update_last_effect(int);
@@ -411,7 +411,7 @@ L_8c055db6:;
         ((ObjectData *)o)->f448 = v67 + 1.2f;
     }
     ((ObjectData *)o)->f324.f04 = ((ObjectData *)o)->f448;
-    t9 = call_8c130334(((ObjectData *)o)->f44c.f00, ((ObjectData *)o)->f44c.f08);
+    t9 = errno_wrap_8c130334(((ObjectData *)o)->f44c.f00, ((ObjectData *)o)->f44c.f08);
     ((ObjectData *)o)->f64 = (int)(t9 * 65536.0f / 6.28318405f);
     o->v95();
     v4->f00.f00 -= ((ObjectData *)o)->f3c;

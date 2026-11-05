@@ -80,7 +80,7 @@ typedef struct ObjectData {
 } ObjectData;
 extern "C" float squared_distance_xz(void *, void *);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void njPushMatrix_8c38ade4(void *);
 extern "C" void njRotateY_8c37df90(int, int);
 extern "C" void call_8c3be38c(int, void *, void *);
@@ -117,7 +117,7 @@ extern "C" void operation_8c044bd4(Object *o, int a1, float f0, float f1, Vector
     }
     *(Vector3 *)&(&frame)->f30 = sp;
     vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f30), (void *)(((char *)o + 0x324)));
-    t9 = call_8c130334((&frame)->f30.f00, (&frame)->f30.f08);
+    t9 = errno_wrap_8c130334((&frame)->f30.f00, (&frame)->f30.f08);
     v6 = (int)(int)(t9 * 65536.0f / 6.28318405f);
     (&frame)->f30.f04 = 0.0f;
     (&frame)->f30.f00 = 0.0f;
@@ -138,7 +138,7 @@ extern "C" void operation_8c044bd4(Object *o, int a1, float f0, float f1, Vector
 L_8c044d1c:;
     *(Vector3 *)&(&frame)->f18 = *(Vector3 *)&((ObjectData *)o)->f164;
     vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f18), (void *)(((char *)o + 0x3c)));
-    t10 = call_8c130334((&frame)->f18.f00, (&frame)->f18.f08);
+    t10 = errno_wrap_8c130334((&frame)->f18.f00, (&frame)->f18.f08);
     v13 = (int)(int)(t10 * 65536.0f / 6.28318405f);
     t7 = angle_step((int)(((ObjectData *)o)->f64), v13, a1);
     ((ObjectData *)o)->f64 = (int)t7;

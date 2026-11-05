@@ -44,7 +44,7 @@ struct Arg0_3dc {
     char unknown0[0x3e4];
     int f3e4;
 };
-extern float call_8c130390(float);
+extern float errno_wrap_8c130390(float);
 extern int lookup_object_by_id(int);
 extern int call_8c18e768(void *, int);
 void operation_8c095760(Object *o, int a1)
@@ -75,7 +75,7 @@ void operation_8c095760(Object *o, int a1)
     }
 L_8c0957a2:;
     if (o->f510 == 3) {
-        t1 = call_8c130390((float)(int)o->f4e8 / (float)o->f484->f2c);
+        t1 = errno_wrap_8c130390((float)(int)o->f4e8 / (float)o->f484->f2c);
         if (((int)o->f4e8 - (int)t1) >= o->f4ec) {
             t2 = lookup_object_by_id((unsigned short)(o->f4e4));
             o->f3dc = (Arg0_3dc *)t2;

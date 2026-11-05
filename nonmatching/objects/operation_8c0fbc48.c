@@ -57,7 +57,7 @@ extern void vector_sub_in_place_8c37f6f0(void *);
 extern float njScalor_8c37e480(void *);
 extern void njPushMatrixEx_8c38ae68(void);
 extern void translate_current_matrix_v_8c382a40(Frame *, float);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void njRotateY_8c37df90(int, int);
 extern void njScale_8c37e2e4(int, float, float, float);
 extern void call_8c3827d8(void *);
@@ -83,7 +83,7 @@ void operation_8c0fbc48(Object *o, Arg1 *a1, Arg2 *a2, float f0)
     v3 = (float)(v2 * (&frame)->f0c.f08 + (&frame)->f00.f08);
     (&frame)->f00.f08 = v3;
     translate_current_matrix_v_8c382a40((Frame *)((&frame)), v3);
-    t1 = call_8c130334((&frame)->f0c.f00, (&frame)->f0c.f08);
+    t1 = errno_wrap_8c130334((&frame)->f0c.f00, (&frame)->f0c.f08);
     njRotateY_8c37df90(0, (int)((int)(t1 * 65536.0f / 6.28318405f)));
     njScale_8c37e2e4(0, 1.0f, 0.5f, (1.0f - f0) * t2 / 10.0f);
     call_8c3827d8((void *)(o->f28));

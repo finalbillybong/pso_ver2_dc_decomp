@@ -215,7 +215,7 @@ extern "C" float object_random_fraction(void *);
 extern "C" int call_8c18e768(void *, int);
 extern "C" int slide_and_dispatch_contact(void *, float, float, float);
 extern "C" float call_8c12c714(float);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int call_8c24e644(int, void *);
 extern "C" void call_8c05fd7c(int, Object *, void *, int, int);
 extern "C" void update_last_effect(int);
@@ -415,7 +415,7 @@ L_8c056960:;
             ((ObjectData *)o)->f448 = v56 + 1.2f;
         }
         ((ObjectData *)o)->f328 = ((ObjectData *)o)->f448;
-        t14 = call_8c130334(((ObjectData *)o)->f3ac->f3c - ((ObjectData *)o)->f3c, ((ObjectData *)o)->f3ac->f44 - ((ObjectData *)o)->f44);
+        t14 = errno_wrap_8c130334(((ObjectData *)o)->f3ac->f3c - ((ObjectData *)o)->f3c, ((ObjectData *)o)->f3ac->f44 - ((ObjectData *)o)->f44);
         ((ObjectData *)o)->f64 = (int)(t14 * 65536.0f / 6.28318405f);
         o->v95();
         t15 = call_8c24e644(0x30022, (void *)(((ObjectData *)o)->f38c));

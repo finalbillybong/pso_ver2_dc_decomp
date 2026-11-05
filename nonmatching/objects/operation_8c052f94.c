@@ -176,7 +176,7 @@ extern void call_8c3be38c(int, void *, void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void call_8c3bdf60(void *, void *);
 extern int operation_8c011308(int, void *, int);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int angle_difference(int, int);
 int operation_8c052f94(Object *o, Arg1 *a1, Arg2 *a2)
 {
@@ -488,7 +488,7 @@ L_8c053762:;
             }
         }
     }
-    t1 = call_8c130334((&frame)->f60.f00, (&frame)->f60.f08);
+    t1 = errno_wrap_8c130334((&frame)->f60.f00, (&frame)->f60.f08);
     t2 = angle_difference((int)((int)(t1 * 65536.0f / 6.28318405f)), (int)(o->f64));
     if (0x3000 > t2) {
         return 0;

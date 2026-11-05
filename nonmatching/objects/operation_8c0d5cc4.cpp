@@ -250,7 +250,7 @@ extern "C" void operation_8c01c5f0(Object *);
 extern "C" int call_8c05c2dc(Object *);
 extern "C" void operation_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" int check_range_8c01cf68(void *, float);
 extern "C" int operation_8c0d4c80(void *, int, float);
@@ -340,7 +340,7 @@ extern "C" void operation_8c0d5cc4(Object *o, int a1)
             if (t2 != 0) {
                 operation_8c05c184((void *)o);
                 aim_direction_8c05bdd4((void *)o);
-                t15 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+                t15 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
                 v7 = (int)(int)(t15 * 65536.0f / 6.28318405f);
             } else {
                 v7 = (int)((ObjectData *)o)->f64;

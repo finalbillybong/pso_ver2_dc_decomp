@@ -206,7 +206,7 @@ struct Arg0_73c_0 {
 extern Block20 g_8c2fd304;
 extern S_g8c46891c *g_8c46891c;
 extern "C" void normalize_xz_checked(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void activate_offset_effect_immediately(void *);
 extern "C" void operation_8c0368a8(void *);
 extern "C" int offset_effect_threshold_reached(void *);
@@ -244,7 +244,7 @@ extern "C" void operation_8c071b18(Object *o, int a1)
         ((ObjectData *)o)->f3c0 = 0.0f;
         ((ObjectData *)o)->f3c4 = -((ObjectData *)o)->f44;
         normalize_xz_checked((void *)(((char *)o + 0x3bc)));
-        t1 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+        t1 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
         ((ObjectData *)o)->f64 = (int)(t1 * 65536.0f / 6.28318405f);
         activate_offset_effect_immediately((void *)(((ObjectData *)o)->f6f4));
         return;

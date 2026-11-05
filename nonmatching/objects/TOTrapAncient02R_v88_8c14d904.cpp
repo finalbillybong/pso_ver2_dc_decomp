@@ -104,7 +104,7 @@ extern "C" void njPushMatrix_8c38ade4(void *);
 extern "C" void njRotateY_8c37df90(int, void *);
 extern "C" void call_8c3be38c(int, void *, void *);
 extern "C" void njPopMatrixEx_8c38ad10(void);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void  create_effect_777c(Vector3 *, int);
 extern "C" void *heap_alloc_8c122700(void *, int);
 extern "C" void  TTecZondeEff_ctor_2_8c0d0788(void *, int, Vector3 *, Vector3 *, float, float, int, int);
@@ -179,7 +179,7 @@ extern "C" void TOTrapAncient02R_v88_8c14d904(Object *o)
                         call_8c3be38c(0, &g_8c46f5c0, &g_8c46f5c0);
                         njPopMatrixEx_8c38ad10();
                     }
-                    ang = (int)(call_8c130334(g_8c46f5c0.x, g_8c46f5c0.z) * 65536.0f / 6.2831855f);
+                    ang = (int)(errno_wrap_8c130334(g_8c46f5c0.x, g_8c46f5c0.z) * 65536.0f / 6.2831855f);
                     switch (o->f374) {
                     case 1:
                         arg.a = 3;

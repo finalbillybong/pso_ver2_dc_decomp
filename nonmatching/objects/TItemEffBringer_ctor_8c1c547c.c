@@ -63,7 +63,7 @@ extern void call_8c384610(int);
 extern void call_8c3be280(int, void *, void *);
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern void njPopMatrixEx_8c38ad10(void);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float njSin_8c37eb0c(int);
 Object *TItemEffBringer_ctor_8c1c547c(Object *o, int a1, Arg2 *a2, int a3)
 {
@@ -90,7 +90,7 @@ Object *TItemEffBringer_ctor_8c1c547c(Object *o, int a1, Arg2 *a2, int a3)
     *(Vector3 *)&(&frame)->f1c = *(Vector3 *)&a2->f00;
     vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f1c), (void *)(&(&frame)->f10));
     njPopMatrixEx_8c38ad10();
-    t1 = call_8c130334((&frame)->f1c.f00, (&frame)->f1c.f08);
+    t1 = errno_wrap_8c130334((&frame)->f1c.f00, (&frame)->f1c.f08);
     t2 = njSin_8c37eb0c((int)((int)o->f30 - (int)(t1 * 65536.0f / 6.28318405f)));
     if (0.0f > t2) {
         t2 = t2 * -1.0f;

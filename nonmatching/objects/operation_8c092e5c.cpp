@@ -471,7 +471,7 @@ extern "C" int call_8c05c0dc(Object *, float);
 extern "C" int call_8c05c2dc(Object *);
 extern "C" void operation_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" int lookup_object_by_id(unsigned short);
 extern "C" int call_8c090e60(Object *, Frame *, float);
@@ -578,7 +578,7 @@ extern "C" void operation_8c092e5c(Object *o, int a1)
         case 0:
             operation_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
-            t4 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+            t4 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
             t5 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t4 * 65536.0f / 6.28318405f)), 0x400);
             ((ObjectData *)o)->f64 = (int)t5;
             ((ObjectData *)o)->f64 = (short)((ObjectData *)o)->f64;
@@ -662,7 +662,7 @@ L_8c093250:;
         case 2:
             operation_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
-            t10 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+            t10 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
             t11 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t10 * 65536.0f / 6.28318405f)), 0x400);
             ((ObjectData *)o)->f64 = (int)t11;
             ((ObjectData *)o)->f64 = (short)((ObjectData *)o)->f64;
@@ -696,7 +696,7 @@ L_8c093250:;
         case 3:
             operation_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
-            t12 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+            t12 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
             t13 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t12 * 65536.0f / 6.28318405f)), 0x400);
             ((ObjectData *)o)->f64 = (int)t13;
             ((ObjectData *)o)->f64 = (short)((ObjectData *)o)->f64;

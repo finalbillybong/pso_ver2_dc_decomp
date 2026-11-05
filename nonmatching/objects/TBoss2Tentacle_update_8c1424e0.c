@@ -86,7 +86,7 @@ extern void call_8c3be280(int, Frame *, void *);
 extern void njPopMatrixEx_8c38ad10(void);
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
 extern float normalize_xz_checked(void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int operation_8c143048(void);
 extern void operation_8c144884(void *, int);
 extern void play_se_8c05fbf8(int, void *, int, int);
@@ -229,7 +229,7 @@ L_8c1427e0:;
         *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f130;
         vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x144)));
         t3 = normalize_xz_checked((void *)(&frame));
-        t2 = call_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
+        t2 = errno_wrap_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
         o->f120 = (int)(t2 * 65536.0f / 6.28318405f) + 0x8000;
         *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&o->f130;
         if (o->f28 != 0) {

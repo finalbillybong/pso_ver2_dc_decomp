@@ -171,7 +171,7 @@ extern "C" void aim_direction_8c05bdd4(Object *);
 extern "C" void call_8c05c580(Object *, int, float);
 extern "C" void njSin_8c37eb0c(void *);
 extern "C" void njCos_8c38c154(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void operation_8c0610c8(Object *, int);
 static inline float add_offset(float v, float d)
 {
@@ -269,7 +269,7 @@ L_8c062868:;
         njSin_8c37eb0c(((ObjectData *)o)->f64);
         v21 = add_offset(((ObjectData *)o)->f3c, 0.0f);
         njCos_8c38c154(((ObjectData *)o)->f64);
-        t6 = call_8c130334(((ObjectData *)o)->f3ac->f3c - v21, ((ObjectData *)o)->f3ac->f44 - add_offset(((ObjectData *)o)->f44, 0.0f));
+        t6 = errno_wrap_8c130334(((ObjectData *)o)->f3ac->f3c - v21, ((ObjectData *)o)->f3ac->f44 - add_offset(((ObjectData *)o)->f44, 0.0f));
         operation_8c0610c8(o, (int)(t6 * 65536.0f / 6.28318405f));
         o->v95();
         return;

@@ -173,7 +173,7 @@ struct S_vv3 {
 extern "C" void operation_8c059ef8(void *, int);
 extern "C" void operation_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int operation_8c0d4c80(void *, int, float);
 extern "C" void set_field_8c05af48(void *);
 extern "C" void operation_8c059ea4(void *, int);
@@ -217,7 +217,7 @@ extern "C" void operation_8c0d65a8(Object *o, int a1)
         if (t1 != 0) {
             operation_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
-            t2 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+            t2 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
             v2->f00 = (int)(t2 * 65536.0f / 6.28318405f);
             t3 = operation_8c0d4c80((void *)o, (int)(v2->f00 + 0x8000), 80.0f);
             if (t3 == 0) {

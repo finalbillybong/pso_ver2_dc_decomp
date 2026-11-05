@@ -85,7 +85,7 @@ extern void play_se_8c05fbf8(int, void *, int, int);
 extern int check_range_8c01cf68(void *, float);
 extern void call_8c044410(Object *, void *, float);
 extern int call_8c04a52c(Object *, Frame *, float);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int angle_difference(int, int);
 extern int call_8c0517b0(Object *);
 extern void create_effect_777c(void *, int);
@@ -188,7 +188,7 @@ L_8c050ca8:;
                     if ((float)o->f3b0 > 15.0f) {
                         t5 = call_8c04a52c(o, (Frame *)((&frame)), 300.0f);
                         if ((unsigned short)t5 != 0xffff) {
-                            t6 = call_8c130334((&frame)->f00, (&frame)->f08);
+                            t6 = errno_wrap_8c130334((&frame)->f00, (&frame)->f08);
                             t7 = angle_difference((int)(o->f64), (int)((int)(t6 * 65536.0f / 6.28318405f)));
                             if (0xaaa > t7) {
                                 t8 = object_random_fraction((void *)o);

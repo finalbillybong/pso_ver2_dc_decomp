@@ -76,7 +76,7 @@ extern "C" float squared_distance_xz(void *, void *);
 extern "C" int call_8c0441d8(Object *, Vector3);
 extern "C" int operation_8c051ff4(void *, void *, void *);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void angle_difference(int, int);
 extern "C" void njPushMatrix_8c38ade4(void *);
@@ -114,7 +114,7 @@ extern "C" void operation_8c04500c(Object *o, int a1, float f0, Vector3 sp)
 L_8c045098:;
     *(Vector3 *)&(&frame)->f18 = *(Vector3 *)&((ObjectData *)o)->f164;
     vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f18), (void *)(((char *)o + 0x3c)));
-    t7 = call_8c130334((&frame)->f18.f00, (&frame)->f18.f08);
+    t7 = errno_wrap_8c130334((&frame)->f18.f00, (&frame)->f18.f08);
     v9 = (int)(int)(t7 * 65536.0f / 6.28318405f);
     t5 = angle_step((int)(((ObjectData *)o)->f64), v9, a1);
     ((ObjectData *)o)->f64 = (int)t5;

@@ -205,7 +205,7 @@ extern "C" void create_effect_777c(void *, int);
 extern "C" int operation_8c05c1f0(Object *);
 extern "C" void operation_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" int step_clamped_angle_velocity(int, int, int, int, int);
 extern "C" int query_scaled_contact(void *, float, float, float);
@@ -320,7 +320,7 @@ L_8c0f5dce:;
             operation_8c05c184((void *)o);
             aim_direction_8c05bdd4((void *)o);
         }
-        t4 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+        t4 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
         t5 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t4 * 65536.0f / 6.28318405f)), 0x280);
         ((ObjectData *)o)->f64 = (Arg0_64 *)(int)t5;
         v17 = (char *)((ObjectData *)o)->f64;

@@ -193,7 +193,7 @@ struct Arg0_3ac {
 extern "C" void operation_8c059ef8(void *, int);
 extern "C" float njSin_8c37eb0c(int);
 extern "C" float njCos_8c38c154(int);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void operation_8c059ea4(void *, int);
 extern "C" int check_range_8c01cf68(void *, float);
 extern "C" void operation_8c01c5f0(Object *);
@@ -253,7 +253,7 @@ extern "C" void operation_8c0629a4(Object *o, int a1)
         t1 = njCos_8c38c154(0x1c71);
         v6->f00.f08 = ((ObjectData *)o)->f3c4 * t1 - ((ObjectData *)o)->f3bc * t2;
         v6->f00.f00 = t2 * ((ObjectData *)o)->f3c4 + t1 * ((ObjectData *)o)->f3bc;
-        t3 = call_8c130334(v6->f00.f00, v6->f00.f08);
+        t3 = errno_wrap_8c130334(v6->f00.f00, v6->f00.f08);
         t3 *= 65536.0f;
         v3->f00 = (int)(t3 / 6.28318405f);
         *(Vector3 *)&v5->f00 = *(Vector3 *)&v6->f00;
@@ -299,7 +299,7 @@ extern "C" void operation_8c0629a4(Object *o, int a1)
                 t9 = njCos_8c38c154(-0x1c71);
                 v6->f00.f08 = ((ObjectData *)o)->f3c4 * t9 - ((ObjectData *)o)->f3bc * t10;
                 v6->f00.f00 = t10 * ((ObjectData *)o)->f3c4 + t9 * ((ObjectData *)o)->f3bc;
-                t11 = call_8c130334(v6->f00.f00, v6->f00.f08);
+                t11 = errno_wrap_8c130334(v6->f00.f00, v6->f00.f08);
                 v3->f00 = (int)(t11 * 65536.0f / 6.28318405f);
             } else {
                 v2->f00 = 0;
@@ -307,7 +307,7 @@ extern "C" void operation_8c0629a4(Object *o, int a1)
                 t12 = njCos_8c38c154(0x1c71);
                 v6->f00.f08 = ((ObjectData *)o)->f3c4 * t12 - ((ObjectData *)o)->f3bc * t13;
                 v6->f00.f00 = t13 * ((ObjectData *)o)->f3c4 + t12 * ((ObjectData *)o)->f3bc;
-                t14 = call_8c130334(v6->f00.f00, v6->f00.f08);
+                t14 = errno_wrap_8c130334(v6->f00.f00, v6->f00.f08);
                 v3->f00 = (int)(t14 * 65536.0f / 6.28318405f);
             }
         }
@@ -349,7 +349,7 @@ L_8c062de8:;
         v30 = (float)((ObjectData *)o)->f3c;
         v30 = (float)(v30 + 0.0f);
         njCos_8c38c154((int)(((ObjectData *)o)->f64));
-        t17 = call_8c130334(((ObjectData *)o)->f3ac->f3c - v30, ((ObjectData *)o)->f3ac->f44 - (((ObjectData *)o)->f44 + 0.0f));
+        t17 = errno_wrap_8c130334(((ObjectData *)o)->f3ac->f3c - v30, ((ObjectData *)o)->f3ac->f44 - (((ObjectData *)o)->f44 + 0.0f));
         operation_8c0610c8((void *)o, (int)((int)(t17 * 65536.0f / 6.28318405f)));
         o->v95();
         return;

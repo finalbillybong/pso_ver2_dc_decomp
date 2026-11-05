@@ -44,7 +44,7 @@ extern int call_8c18e8a0(int, int);
 extern void njPrintColor_8c38c5b6(int);
 extern void call_8c38c8ac(int, int, int);
 extern void operation_8c03ce70(int, void *, int, int);
-extern float call_8c12b8f4(float, float);
+extern float errno_wrap_8c12b8f4(float, float);
 void operation_8c03cbe8(Object *o, Arg1 *a1, Arg2 *a2, int a3, int a4, int a5)
 {
     int v2;
@@ -86,7 +86,7 @@ void operation_8c03cbe8(Object *o, Arg1 *a1, Arg2 *a2, int a3, int a4, int a5)
         }
     }
     operation_8c03ce70((int)o, (void *)a2, 0, a5);
-    t4 = call_8c12b8f4(10.0f, (float)a2->f00);
+    t4 = errno_wrap_8c12b8f4(10.0f, (float)a2->f00);
     v29 = (float)(t4 * 0.01f);
     if (((*(int *)((char *)&g_8c41cba0.f20 + (o->f34 * 0x3c)) & 0x400)) != 0) {
         v16 = (int)*(int *)((char *)&g_8c41cba0.f28 + (o->f34 * 0x3c));

@@ -219,7 +219,7 @@ extern "C" int active_unflagged_8c05b2dc(void *);
 extern "C" int next_random_state(void *);
 extern "C" int heap_alloc_8c122700(void *, unsigned int);
 extern "C" void TBoss1DragonEffBullet_ctor_8c07bdc8(void *, int, void *, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int signed_angle_delta(int, int);
 extern "C" void operation_8c06a9ec(Object *o, int a1)
 {
@@ -380,7 +380,7 @@ extern "C" void operation_8c06a9ec(Object *o, int a1)
                     }
                 }
                 ((ObjectData *)o)->f60 = 0;
-                t9 = call_8c130334(-((ObjectData *)o)->f3c, -((ObjectData *)o)->f44);
+                t9 = errno_wrap_8c130334(-((ObjectData *)o)->f3c, -((ObjectData *)o)->f44);
                 *v6 = (int)(t9 * 65536.0f / 6.28318405f);
                 v1->f00 = 5;
                 goto L_8c06b00c;

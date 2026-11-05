@@ -51,7 +51,7 @@ extern void njPrintColor_8c38c5b6(int);
 extern void debug_print_at_8c38cf80(int, void *, ...);
 extern int operation_8c01e0e4(int);
 extern int operation_8c01e148(int);
-extern float call_8c12b8f4(float, float);
+extern float errno_wrap_8c12b8f4(float, float);
 void operation_8c1ae53c(Object *o, Arg1 *a1, int a2, int a3, int a4)
 {
     Frame frame;
@@ -166,7 +166,7 @@ L_8c1ae5e0:;
             v36 = (float)-1.0f;
         }
     }
-    t10 = call_8c12b8f4(10.0f, (float)((int)a1->f10 - (int)a1->f04));
+    t10 = errno_wrap_8c12b8f4(10.0f, (float)((int)a1->f10 - (int)a1->f04));
     o->tag += v36 * t10;
     v40 = (float)o->tag;
     v41 = (float)a1->f08;

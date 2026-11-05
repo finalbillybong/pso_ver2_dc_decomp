@@ -53,7 +53,7 @@ struct PmfObj {
 typedef void (PmfObj::*PMF_0)();
 extern "C" char g_8c30a484[];
 extern "C" void object_distance_by_id(void *, unsigned short, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" int angle_difference(int, int);
 extern "C" float njScalor_8c37e480(void *);
@@ -82,7 +82,7 @@ extern "C" void operation_8c0f9e98(Object *o)
         (&frame)->f1c = 0.0f;
         (&frame)->f20 = 0.0f;
     }
-    t8 = call_8c130334((&frame)->f18, (&frame)->f20);
+    t8 = errno_wrap_8c130334((&frame)->f18, (&frame)->f20);
     v6 = (int)(int)(t8 * 65536.0f / 6.28318405f);
     t1 = angle_step((int)(o->f64), v6, 0x200);
     o->f64 = (int)t1;

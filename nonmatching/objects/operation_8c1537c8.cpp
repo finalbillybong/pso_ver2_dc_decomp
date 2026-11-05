@@ -140,7 +140,7 @@ struct Arg0_334 {
 };
 extern "C" int lookup_low_id(int);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" void call_8c1549b0(Object *);
@@ -183,7 +183,7 @@ extern "C" void operation_8c1537c8(Object *o)
         if (((ObjectData *)o)->f334 != 0) {
             *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&((ObjectData *)o)->f334->f3c;
             vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f0c), (void *)(((char *)o + 0x3c)));
-            t2 = call_8c130334((&frame)->f0c.f00, (&frame)->f0c.f08);
+            t2 = errno_wrap_8c130334((&frame)->f0c.f00, (&frame)->f0c.f08);
             t3 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t2 * 65536.0f / 6.28318405f) + 0x8000), 0x566);
             ((ObjectData *)o)->f64 = (int)t3;
         }

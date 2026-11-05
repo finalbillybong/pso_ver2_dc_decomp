@@ -45,7 +45,7 @@ extern S_L8c46f5a0 g_8c46f5a0;
 extern char gc_8c46f5a0[];
 extern int operation_8c051ff4(void *, void *, void *);
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void njPushMatrix_8c38ade4(void *);
 extern void njRotateY_8c37df90(int, int);
 extern void call_8c3be38c(int, void *, void *);
@@ -67,7 +67,7 @@ int operation_8c0441d8(Object *o, Vector3 sp)
         (&frame)->f00.f04 = o->f328;
         if (o->fdc != 0) {
             vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x324)));
-            t4 = call_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
+            t4 = errno_wrap_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
             v1 = (int)(int)(t4 * 65536.0f / 6.28318405f);
             *(float *)(gc_8c46f5a0 + 0x4) = 0.0f;
             *(float *)(gc_8c46f5a0 + 0x0) = 0.0f;

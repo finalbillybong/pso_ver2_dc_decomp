@@ -91,7 +91,7 @@ typedef void (PmfObj::*PMF_0)();
 extern int g_8c467874;
 extern "C" char g_8c310bd8[];
 extern "C" int operation_8c04a638(Object *, void *, float);
-extern "C" float call_8c130334(int, float, float);
+extern "C" float errno_wrap_8c130334(int, float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" int call_8c04a52c(Object *, void *, float);
 extern "C" float njScalor_8c37e480(void *);
@@ -167,7 +167,7 @@ extern "C" void operation_8c11c00c(Object *o)
                     o->f64 = (Arg0_64 *)((int)o->f64 + v4);
                     goto L_8c11c19c;
                 }
-                t2 = call_8c130334((int)((unsigned short)t1), (&frame)->f48, (&frame)->f50);
+                t2 = errno_wrap_8c130334((int)((unsigned short)t1), (&frame)->f48, (&frame)->f50);
                 t3 = angle_step((int)(o->f64), (int)((int)(t2 * 65536.0f / 6.28318405f)), v4);
                 o->f64 = (Arg0_64 *)(int)t3;
                 v2 = (int)v4;
@@ -188,7 +188,7 @@ L_8c11c158:;
                         v10 = (int)(v10 * -1);
                     }
 L_8c11c168:;
-                    t6 = ((float (*)(float, float))call_8c130334)((&frame)->f3c, (&frame)->f44);
+                    t6 = ((float (*)(float, float))errno_wrap_8c130334)((&frame)->f3c, (&frame)->f44);
                     t7 = angle_step((int)(o->f64), (int)(v10 + (int)(t6 * 65536.0f / 6.28318405f)), 0x100);
                     o->f64 = (Arg0_64 *)(int)t7;
                     v2 = (int)(v10 + (int)(t6 * 65536.0f / 6.28318405f));

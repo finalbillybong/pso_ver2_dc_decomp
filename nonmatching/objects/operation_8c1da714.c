@@ -63,7 +63,7 @@ extern void call_8c3be38c(int, void *, void *);
 extern void njPopMatrix_8c38accc(int);
 extern void call_8c3bdf60(void *, void *);
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int angle_step(int, int, int);
 extern float squared_distance_xz(void *, void *);
 void operation_8c1da714(Object *o)
@@ -106,7 +106,7 @@ void operation_8c1da714(Object *o)
     case 1:
         *(Vector3 *)&(&g_8c46f5a0)->f00 = *(Vector3 *)&o->fc8;
         vector_sub_in_place_8c37f6f0((void *)((void *)&g_8c46f5a0), (void *)(((char *)o + 0x3c)));
-        t5 = call_8c130334((&g_8c46f5a0)->f00.f00, (&g_8c46f5a0)->f00.f08);
+        t5 = errno_wrap_8c130334((&g_8c46f5a0)->f00.f00, (&g_8c46f5a0)->f00.f08);
         t6 = angle_step((int)(o->f64), (int)((int)(t5 * 65536.0f / 6.28318405f)), 0x100);
         o->f64 = (Arg0_64 *)t6;
         *(float *)(gc_8c46f5c0 + 0x4) = 0.0f;

@@ -49,7 +49,7 @@ struct S_L8c285418 {
 extern S_L8c285418 g_8c285418;
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void call_8c0a7608(void *, void *);
 extern void set_effect_words(void *, void *);
 void operation_8c0b23cc(Object *o)
@@ -74,7 +74,7 @@ void operation_8c0b23cc(Object *o)
     o->f30 = o->f3c * t2 + o->f24;
     t3 = njSin_8c37eb0c((int)(o->f40));
     o->f38 = o->f3c * t3 + o->f2c;
-    t4 = call_8c130334(o->f30 - o->f24, o->f38 - o->f2c);
+    t4 = errno_wrap_8c130334(o->f30 - o->f24, o->f38 - o->f2c);
     (&frame)->f04 = (int)(t4 * 65536.0f / 6.28318405f);
     (&frame)->f00 = (&frame)->f04 + -0x8000;
     (&frame)->f04 = 0;

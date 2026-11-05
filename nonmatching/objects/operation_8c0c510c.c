@@ -31,16 +31,16 @@ struct Arg1 {
 struct Arg2 {
     int f00;
 };
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float signed_sqrt_8c37f6c0(float);
 void operation_8c0c510c(Object *o, Arg1 *a1, Arg2 *a2)
 {
     float t1;
     float t2;
     float t3;
-    t1 = call_8c130334(o->f08, o->tag);
+    t1 = errno_wrap_8c130334(o->f08, o->tag);
     a1->f00 = -(int)(t1 * 65536.0f / 6.28318405f);
     t2 = signed_sqrt_8c37f6c0(o->f08 * o->f08 + o->tag * o->tag);
-    t3 = call_8c130334(o->f04, t2);
+    t3 = errno_wrap_8c130334(o->f04, t2);
     a2->f00 = (int)(t3 * 65536.0f / 6.28318405f);
 }

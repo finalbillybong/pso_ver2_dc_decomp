@@ -40,7 +40,7 @@ struct Frame {
 };
 extern float distance_xz(void *, void *);
 extern void vector_sub_in_place_8c37f6f0(Frame *, int);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float njCos_8c38c154(int);
 extern float njSin_8c37eb0c(int);
 extern void call_8c3bdf60(Frame *, int);
@@ -64,7 +64,7 @@ void operation_8c1549b0(int a0)
             if (!(t1 > 1225.0f)) {
                 *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&v3->f3c;
                 vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (int)(a0 + 0x3c));
-                t4 = call_8c130334((&frame)->f00.f08, (&frame)->f00.f00);
+                t4 = errno_wrap_8c130334((&frame)->f00.f08, (&frame)->f00.f00);
                 v4 = (int)(int)(65536.0f * t4 / 6.28318405f);
                 t2 = njCos_8c38c154(v4);
                 (&frame)->f00.f00 = t2 * 50.0f;

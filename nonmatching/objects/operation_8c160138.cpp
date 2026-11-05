@@ -103,7 +103,7 @@ extern "C" int call_8c18e6fc(void *);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
 extern "C" float njScalor_8c37e480(void *);
 extern "C" void njUnitVector_8c37b630(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void call_8c15eb34(Object *, void *);
 extern "C" float squared_distance_xz(void *, void *);
@@ -179,7 +179,7 @@ extern "C" void operation_8c160138(Object *o)
     } else {
         njUnitVector_8c37b630((void *)(&(&frame)->f48));
     }
-    t4 = call_8c130334((&frame)->f48.f00, (&frame)->f48.f08);
+    t4 = errno_wrap_8c130334((&frame)->f48.f00, (&frame)->f48.f08);
     t5 = angle_step((int)(o->f64), (int)((int)(t4 * 65536.0f / 6.28318405f)), 0x101);
     o->f64 = (int)t5;
     if (o->f3d0 > 0) {

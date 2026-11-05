@@ -62,7 +62,7 @@ struct S_c8c011214 {
 };
 extern Vector3 g_8c305f74;
 extern Vector3 g_8c305f80;
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void njPushMatrix_8c38ade4(void *);
 extern void njRotateY_8c37df90(int, int);
 extern void call_8c3be280(int, void *, int);
@@ -84,7 +84,7 @@ void operation_8c0c3544(Object *o, Arg1 *a1, float f0, float f1)
     S_c8c011214 *t1;
     float t2;
     float t3;
-    t3 = call_8c130334(a1->f00, a1->f08);
+    t3 = errno_wrap_8c130334(a1->f00, a1->f08);
     v2 = (int)(int)(t3 * 65536.0f / 6.28318405f);
     v6 = (char *)v2;
     v1 = (float)10.0f;

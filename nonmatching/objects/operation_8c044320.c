@@ -26,7 +26,7 @@ struct Object {
     float f320;
 };
 extern void vector_sub_in_place_8c37f6f0(Vector3 *, Vector3 *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void njPushMatrix_8c38ade4(void *);
 extern void njRotateY_8c37df90(int, int);
 extern void call_8c3be38c(int, Vector3 *, Vector3 *);
@@ -43,7 +43,7 @@ void operation_8c044320(Object *o, float f0, Vector3 a2, Vector3 a3)
         o->f318 = 0.0f;
         return;
     }
-    t1 = call_8c130334(v.x, v.z);
+    t1 = errno_wrap_8c130334(v.x, v.z);
     v1 = (int)(t1 * 65536.0f / 6.28318405f);
     v.y = 0.0f;
     v.x = 0.0f;

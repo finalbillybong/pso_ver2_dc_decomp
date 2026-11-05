@@ -55,7 +55,7 @@ extern void njUnitVector_8c37b630(void *);
 extern void call_8c3bdf60(void *, void *);
 extern int call_8c0441d8(Object *, Vector3);
 extern int operation_8c051ff4(void *, void *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float squared_distance_xz(void *, void *);
 float operation_8c044964(Object *o, float f0, Vector3 pv)
 {
@@ -98,7 +98,7 @@ float operation_8c044964(Object *o, float f0, Vector3 pv)
             o->f320 = 0.0f;
             o->f318 = 0.0f;
         } else {
-            ang = (int)(call_8c130334((&frame)->f24.f00, (&frame)->f24.f08) * 65536.0f / 6.28318405f);
+            ang = (int)(errno_wrap_8c130334((&frame)->f24.f00, (&frame)->f24.f08) * 65536.0f / 6.28318405f);
             (&frame)->f24.f04 = 0.0f;
             (&frame)->f24.f00 = 0.0f;
             (&frame)->f24.f08 = f0;

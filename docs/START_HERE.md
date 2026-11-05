@@ -32,7 +32,7 @@ credit. Check every proposed range against existing modules before integration.
 ## Second compiler (Hitachi SHC)
 
 SDK and library code compiled with Hitachi SHC can now be admitted as pool-group
-units ([SHC.md](SHC.md)). 350 pool groups (93,006 bytes, 1197 functions) are in.
+units ([SHC.md](SHC.md)). 358 pool groups (93,608 bytes, 1205 functions) are in.
 Candidate groups: the `0x8c1f0000`–`0x8c205000` library block (about 61 KB
 SHC-shaped) and the SDK region from `0x8c340888`; a unit needs every function that
 shares its literal pool.

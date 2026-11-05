@@ -42,7 +42,7 @@ struct Frame {
     float f08;
     float f0c;
 };
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void operation_8c02af2c(void *);
 extern void operation_8c0368a8(void *);
 void operation_8c1ee8b4(Object *o)
@@ -50,7 +50,7 @@ void operation_8c1ee8b4(Object *o)
     Frame frame;
     int v1;
     float t1;
-    t1 = call_8c130334(o->f318, o->f320);
+    t1 = errno_wrap_8c130334(o->f318, o->f320);
     o->f64 = (int)(t1 * 65536.0f / 6.28318405f) + 0x8000;
     operation_8c02af2c((void *)o);
     if (o != 0) {

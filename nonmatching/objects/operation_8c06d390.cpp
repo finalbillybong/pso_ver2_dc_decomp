@@ -236,7 +236,7 @@ extern "C" void operation_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" int offset_effect_threshold_reached(void *);
 extern "C" void set_position_8c0f3504(void *, void *);
@@ -346,7 +346,7 @@ extern "C" void operation_8c06d390(Object *o, int a1)
         return;
     case 0:
         aim_direction_8c05bdd4((void *)o);
-        t6 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+        t6 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
         t7 = angle_step((int)(((ObjectData *)o)->f64), (int)((int)(t6 * 65536.0f / 6.28318405f)), 0x600);
         ((ObjectData *)o)->f64 = (Arg0_64 *)(int)t7;
         t8 = njSin_8c37eb0c((void *)(((ObjectData *)o)->f64));

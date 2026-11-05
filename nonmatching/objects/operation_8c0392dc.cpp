@@ -133,7 +133,7 @@ extern int g_8c467870;
 extern S_L8c46f5a0 g_8c46f5a0;
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" int check_range_8c01cf68(void *, float);
 extern "C" float signed_sqrt_8c37f6c0(float);
@@ -177,7 +177,7 @@ extern "C" void operation_8c0392dc(Object *o)
     }
     *(Vector3 *)&(&g_8c46f5a0)->f00 = *(Vector3 *)&o->f54;
     vector_sub_in_place_8c37f6f0((void *)((void *)&g_8c46f5a0), (void *)(&o->f3c));
-    t1 = call_8c130334((&g_8c46f5a0)->f00.f00, (&g_8c46f5a0)->f00.f08);
+    t1 = errno_wrap_8c130334((&g_8c46f5a0)->f00.f00, (&g_8c46f5a0)->f00.f08);
     v31 = (char *)o->f36c->f08;
     t2 = angle_step((int)(o->f64), (int)((int)(t1 * 65536.0f / 6.28318405f)), (int)(v31));
     o->f64 = (int)t2;

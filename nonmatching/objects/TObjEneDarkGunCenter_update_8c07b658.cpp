@@ -75,7 +75,7 @@ extern "C" void operation_8c07b914(Object *);
 extern "C" void call_8c07b918(Object *);
 extern "C" int call_8c04a52c(Object *, int, float);
 extern "C" int lookup_low_id(int);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" S_c8c012a14 *operation_8c012a14(int);
 extern "C" void call_8c07bd40(Object *);
 extern "C" void call_8c07bb94(Object *);
@@ -117,7 +117,7 @@ extern "C" void TObjEneDarkGunCenter_update_8c07b658(Object *o)
         if ((unsigned short)t3 != 0xffff) {
             t4 = lookup_low_id((int)((unsigned short)t3));
             ((ObjectData *)o)->f334 = (Arg0_334 *)(int)t4;
-            t8 = call_8c130334(((ObjectData *)o)->f334->f44 - ((ObjectData *)o)->f44, ((ObjectData *)o)->f334->f3c - ((ObjectData *)o)->f3c);
+            t8 = errno_wrap_8c130334(((ObjectData *)o)->f334->f44 - ((ObjectData *)o)->f44, ((ObjectData *)o)->f334->f3c - ((ObjectData *)o)->f3c);
             v1 = (int)0x3a0;
             v2 = (int)0x1555;
             v3 = (int)0x398;

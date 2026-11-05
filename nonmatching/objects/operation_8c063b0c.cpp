@@ -327,7 +327,7 @@ extern "C" void update_last_effect(int);
 extern "C" int angle_step(int, int, int);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" void call_8c05c580(S_vv23 *, int, float);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void operation_8c0610c8(void *, int);
 extern "C" void operation_8c063b0c(Object *o, int a1)
 {
@@ -439,7 +439,7 @@ extern "C" void operation_8c063b0c(Object *o, int a1)
         call_8c05c580((S_vv23 *)o, 0x500, ((S_vv23Data *)o)->f420);
         x = ((S_vv23Data *)o)->f3c + njSin_8c37eb0c((void *)(((S_vv23Data *)o)->f64)) * 0.0f;
         z = ((S_vv23Data *)o)->f44 + njCos_8c38c154((void *)(((S_vv23Data *)o)->f64)) * 0.0f;
-        t12 = call_8c130334(((S_vv23Data *)o)->f3ac->f3c - x, ((S_vv23Data *)o)->f3ac->f44 - z);
+        t12 = errno_wrap_8c130334(((S_vv23Data *)o)->f3ac->f3c - x, ((S_vv23Data *)o)->f3ac->f44 - z);
         operation_8c0610c8((void *)o, (int)(t12 * 65536.0f / 6.28318405f));
         ((S_vv23 *)o)->v95();
         break;

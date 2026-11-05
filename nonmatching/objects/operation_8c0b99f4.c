@@ -83,7 +83,7 @@ struct Arg0_20 {
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern void TEffect_ctor_8c0a0058(Object *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float njScalor_8c37e480(void *);
 extern void njUnitVector_8c37b630(void *);
 extern void call_8c0c5094(void *, void *, void *);
@@ -126,7 +126,7 @@ L_8c0b9a32:;
     v8 = (float)a3->f04;
     v9 = (float)(v7 - a2->f08);
     v10 = (float)(v8 - a2->f04);
-    t1 = call_8c130334(v6, v9);
+    t1 = errno_wrap_8c130334(v6, v9);
     o->f24 = a2->f00;
     o->f28 = a2->f04;
     o->f2c = a2->f08;

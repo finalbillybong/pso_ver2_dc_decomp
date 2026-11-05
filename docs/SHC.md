@@ -141,12 +141,12 @@ installation is present.
 
 ## Current units
 
-350 pool-group units, 93,006 bytes, 1197 functions (listed in `config/project.json`
+358 pool-group units, 93,608 bytes, 1205 functions (listed in `config/project.json`
 with `"compiler": "shc-v5.1r13"` or `"shc-v5.0r28"`; sources in `src/sdk/`):
 
 | Region | Compiler | Units | Bytes | Functions |
 | --- | --- | ---: | ---: | ---: |
-| C runtime library `0x8c12b000`–`0x8c131000` | 5.1r13 | 14 | 884 | 14 |
+| C runtime library `0x8c12b000`–`0x8c131000` | 5.1r13 | 22 | 1,486 | 22 |
 | C runtime library, MACL-saving routines ([-macsave=1](#-macsave1-units)) | 5.1r13, -macsave=1 | 3 | 4,464 | 8 |
 | Library block `0x8c1f0000`–`0x8c205000` | 5.1r13 | 26 | 8,158 | 106 |
 | SDK region from `0x8c340000` | 5.1r13 | 293 | 74,200 | 1023 |
@@ -251,6 +251,15 @@ the release that reproduces it byte for byte.
 Assembly of the symbol module and the link always use the pinned 5.1r13 `asmsh` and
 `LNK`: the link only places section P and binds absolute symbols, one linker keeps
 that step identical for every unit, and not every release ships one.
+
+## C runtime errno wrappers and byte helpers
+
+`shc_errno_wrap_*` units are one-function files that call a math routine and set
+`errno` to 0x44c or 0x44d when the result is an infinity or a NaN (the same shape as
+`shc_floor_errno_8c12b570`); `shc_errno_wrap_8c12b898` also passes an out-pointer.
+`shc_short_to_bytes_8c12f140` is the two-byte twin of `long_to_bytes`; it ends two
+bytes before a zero halfword that pads to the next routine (`make_float`), and that
+padding stays outside the unit.
 
 ## -macsave=1 units
 

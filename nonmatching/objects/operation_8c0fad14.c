@@ -67,7 +67,7 @@ extern int g_8c5755a4;
 extern int g_8c5755a8;
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern void call_8c3bdf60(void *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float njScalor_8c37e480(void *);
 extern void call_8c38c0e6(int, int);
 extern void call_8c38c0f0(Frame *);
@@ -96,7 +96,7 @@ void operation_8c0fad14(Object *o)
     *(Vector3 *)&(&frame)->f28 = *(Vector3 *)&o->f390;
     call_8c3bdf60((void *)(&(&frame)->f28), (void *)(&(&frame)->f10));
     (&frame)->f28.f04 += -1.125f;
-    t2 = call_8c130334((&frame)->f10.f00, (&frame)->f10.f08);
+    t2 = errno_wrap_8c130334((&frame)->f10.f00, (&frame)->f10.f08);
     v2 = (int)(int)(t2 * 65536.0f / 6.28318405f);
     (&frame)->f1c = 1.25f;
     (&frame)->f20 = 0.214285716f;

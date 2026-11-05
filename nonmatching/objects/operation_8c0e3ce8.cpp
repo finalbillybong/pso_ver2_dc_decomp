@@ -188,7 +188,7 @@ extern "C" void call_8c0123d8(Object *);
 extern "C" void call_8c012810(Object *, S_vv20 *, Object *);
 extern "C" float squared_distance_xz(void *, void *);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void njPushMatrix_8c38ade4(void *);
 extern "C" void njRotateY_8c37df90(int, int);
 extern "C" void call_8c3be38c(int, void *, void *);
@@ -314,7 +314,7 @@ L_8c0e3d82:;
         *(Vector3 *)&((ObjectData *)o)->f48 = *(Vector3 *)&((ObjectData *)o)->f3c;
         *(Vector3 *)&(&g_8c46f5a0)->f00 = *(Vector3 *)&((ObjectData *)o)->f54;
         vector_sub_in_place_8c37f6f0((void *)((void *)&g_8c46f5a0), (void *)(((char *)o + 0x3c)));
-        t12 = call_8c130334((&g_8c46f5a0)->f00.f00, (&g_8c46f5a0)->f00.f08);
+        t12 = errno_wrap_8c130334((&g_8c46f5a0)->f00.f00, (&g_8c46f5a0)->f00.f08);
         v35 = (int)(int)(t12 * 65536.0f / 6.28318405f);
         *(float *)(gc_8c46f5c0 + 0x4) = 0.0f;
         *(float *)(gc_8c46f5c0 + 0x0) = 0.0f;
@@ -336,10 +336,10 @@ L_8c0e3d82:;
         t5 = call_8c12c714((&g_8c46f5a0)->f00.f00);
         t4 = call_8c12c714((&g_8c46f5a0)->f00.f08);
         if (t4 > t5) {
-            t13 = call_8c130334((&g_8c46f5a0)->f00.f00, 0.0f);
+            t13 = errno_wrap_8c130334((&g_8c46f5a0)->f00.f00, 0.0f);
             v38 = (int)(int)(t13 * 65536.0f / 6.28318405f);
         } else {
-            t15 = call_8c130334(0.0f, (&g_8c46f5a0)->f00.f08);
+            t15 = errno_wrap_8c130334(0.0f, (&g_8c46f5a0)->f00.f08);
             v36 = (int)(int)(t15 * 65536.0f / 6.28318405f);
             v38 = (int)v36;
         }
@@ -363,10 +363,10 @@ L_8c0e3d82:;
         t9 = call_8c12c714((&g_8c46f5a0)->f00.f00);
         t8 = call_8c12c714((&g_8c46f5a0)->f00.f08);
         if (t8 > t9) {
-            t14 = call_8c130334(0.0f, (&g_8c46f5a0)->f00.f08);
+            t14 = errno_wrap_8c130334(0.0f, (&g_8c46f5a0)->f00.f08);
             v46 = (int)(int)(t14 * 65536.0f / 6.28318405f);
         } else {
-            t16 = call_8c130334((&g_8c46f5a0)->f00.f00, 0.0f);
+            t16 = errno_wrap_8c130334((&g_8c46f5a0)->f00.f00, 0.0f);
             v44 = (int)(int)(t16 * 65536.0f / 6.28318405f);
             v46 = (int)v44;
         }

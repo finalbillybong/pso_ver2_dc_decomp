@@ -84,7 +84,7 @@ extern S_L8c466e20 g_8c466e20;
 extern int hierarchy_is_active(void *);
 extern float njScalor_8c37e480(void *);
 extern void project_point_to_screen_8c38ad50(int, void *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void append_manager_record(void *, void *);
 typedef struct Vector2 {
     float x;
@@ -123,7 +123,7 @@ void operation_8c0ab92c(Object *o)
         project_point_to_screen_8c38ad50(0, (void *)&q, (void *)&c);
         c.x -= d.x;
         c.y -= d.y;
-        t3 = call_8c130334(c.y, c.x);
+        t3 = errno_wrap_8c130334(c.y, c.x);
         o->f8a = (int)(t3 * 65536.0f / 6.28318405f);
         o->f7c = o->f24->f60 * t2;
         o->f80 = o->f24->f64 * t2;

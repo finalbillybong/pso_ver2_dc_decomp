@@ -49,7 +49,7 @@ struct Arg2 {
 extern void call_8c0e0060(Object *, void *, int);
 extern float call_8c38d7d8(int, void *);
 extern float signed_sqrt_8c37f6c0(float);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float njCos_8c38c154(int);
 extern float njSin_8c37eb0c(int);
 extern void call_8c0dfa54(Object *, int, Frame *);
@@ -113,7 +113,7 @@ int operation_8c0e0428(Object *o, Arg1 *a1, Arg2 *a2)
     if (3.0f > t1) {
         v9 = (int)0xd400;
     } else {
-        t18 = call_8c130334(v6, v4);
+        t18 = errno_wrap_8c130334(v6, v4);
         v7 = (int)(int)(t18 * 65536.0f / 6.28318405f);
         t2 = njCos_8c38c154(v7);
         (&frame)->f00 = v4 - v2 * t2;
@@ -121,11 +121,11 @@ int operation_8c0e0428(Object *o, Arg1 *a1, Arg2 *a2)
         (&frame)->f04 = v6 - v2 * t3;
         (&frame)->f00 = (&frame)->f00 / (o->f50 + 19.0f);
         (&frame)->f04 = (&frame)->f04 / (o->f54 + 13.0f);
-        t19 = call_8c130334((&frame)->f04, (&frame)->f00);
+        t19 = errno_wrap_8c130334((&frame)->f04, (&frame)->f00);
         v9 = (int)(int)(t19 * 65536.0f / 6.28318405f);
     }
     call_8c0dfa54(o, v9, (Frame *)((&frame)));
-    t20 = call_8c130334((&frame)->f04, (&frame)->f00);
+    t20 = errno_wrap_8c130334((&frame)->f04, (&frame)->f00);
     v13 = (int)(int)(t20 * 65536.0f / 6.28318405f);
     t4 = njCos_8c38c154(v13);
     (&frame)->f00 += v2 * t4;
@@ -174,7 +174,7 @@ int operation_8c0e0428(Object *o, Arg1 *a1, Arg2 *a2)
     }
     t10 = rand();
     call_8c0dfa54(o, (int)((int)((float)v13 + ((float)t10 / 32768.0f * 32768.0f - 16384.0f))), (Frame *)((&frame)));
-    t22 = call_8c130334((&frame)->f04, (&frame)->f00);
+    t22 = errno_wrap_8c130334((&frame)->f04, (&frame)->f00);
     v19 = (int)(int)(t22 * 65536.0f / 6.28318405f);
     t11 = njCos_8c38c154(v19);
     (&frame)->f00 += v2 * t11;
@@ -208,7 +208,7 @@ int operation_8c0e0428(Object *o, Arg1 *a1, Arg2 *a2)
     }
     t14 = rand();
     call_8c0dfa54(o, (int)((int)((float)t14 / 32768.0f * 65536.0f)), (Frame *)((&frame)));
-    t23 = call_8c130334((&frame)->f04, (&frame)->f00);
+    t23 = errno_wrap_8c130334((&frame)->f04, (&frame)->f00);
     v24 = (int)(int)(t23 * 65536.0f / 6.28318405f);
     t15 = njCos_8c38c154(v24);
     (&frame)->f00 += v2 * t15;

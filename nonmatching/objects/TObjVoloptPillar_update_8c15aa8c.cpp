@@ -127,7 +127,7 @@ extern "C" void clear_words_8c053d64(void);
 extern "C" void operation_8c0521a0(Object *);
 extern "C" void njPushMatrix_8c38ade4(void *);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void njRotateY_8c37df90(int, int);
 extern "C" void call_8c3be280(int, void *, int);
 extern "C" void njPopMatrixEx_8c38ad10(void);
@@ -183,7 +183,7 @@ extern "C" void TObjVoloptPillar_update_8c15aa8c(Object *o)
                     njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
                     *(Vector3 *)&(&frame)->f20 = *(Vector3 *)&((S_vv4Data *)v4)->f3c;
                     vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f20), (void *)((void *)0x8c4d9b64));
-                    t1 = call_8c130334((&frame)->f20.f00, (&frame)->f20.f08);
+                    t1 = errno_wrap_8c130334((&frame)->f20.f00, (&frame)->f20.f08);
                     ang = (int)(t1 * 65536.0f / 6.28318405f);
                     *(Vector3 *)&(&frame)->f14 = *(Vector3 *)&g_8c3165e0;
                     (&frame)->f14.f00 = g_8c4da87c->f08;

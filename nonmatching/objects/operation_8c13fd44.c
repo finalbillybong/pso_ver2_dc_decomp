@@ -42,7 +42,7 @@ struct S_L8c2f574c {
 };
 extern S_L8c2f574c g_8c2f574c;
 extern float math_e8a4(float);
-extern float call_8c130390(float);
+extern float errno_wrap_8c130390(float);
 static inline int icmp(const unsigned char *a, const unsigned char *b)
 {
     unsigned char c1, c2;
@@ -72,7 +72,7 @@ int operation_8c13fd44(Object *o)
     v1 = (int)*(int *)((char *)&g_8c2f574c.f04 + (o->f74 << 4));
     t1 = math_e8a4((float)v1);
     t2 = math_e8a4(2.0f);
-    t4 = call_8c130390(t1 / t2);
+    t4 = errno_wrap_8c130390(t1 / t2);
     v4 = (int)-1;
     v3 = (int)*(int *)((char *)&g_8c2f574c.f0c + (o->f74 << 4));
     v10 = (int)(v1 + 1 >> 1);

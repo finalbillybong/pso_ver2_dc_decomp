@@ -251,7 +251,7 @@ extern "C" void operation_8c0368a8(void *);
 extern "C" void call_8c06741c(Object *);
 extern "C" void operation_8c01c5f0(Object *);
 extern "C" int call_8c066e30(Object *, S_vv5 *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int operation_8c05b90c(int);
 extern "C" float njSin_8c37eb0c(void *);
 extern "C" float njCos_8c38c154(void *);
@@ -362,7 +362,7 @@ extern "C" void operation_8c06a184(Object *o, int a1)
         }
         t1 = call_8c066e30(o, v5);
         if (t1 != 0) {
-            t2 = call_8c130334(v5->f00.f00 - ((ObjectData *)o)->f3c.f00, v5->f00.f08 - ((ObjectData *)o)->f3c.f08);
+            t2 = errno_wrap_8c130334(v5->f00.f00 - ((ObjectData *)o)->f3c.f00, v5->f00.f08 - ((ObjectData *)o)->f3c.f08);
             v4->f00 = (S_vv4_0 *)(int)(t2 * 65536.0f / 6.28318405f);
         } else {
             t3 = operation_8c05b90c((int)o);

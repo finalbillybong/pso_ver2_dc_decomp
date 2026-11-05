@@ -56,7 +56,7 @@ extern void call_8c3be38c(int, void *, void *);
 extern void njPopMatrix_8c38accc(int);
 extern void call_8c3bdf60(void *, void *);
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int angle_difference(int, int);
 int operation_8c045200(Object *o)
 {
@@ -99,7 +99,7 @@ int operation_8c045200(Object *o)
                                     d = b.x * b.x + b.z * b.z;
                                     r = (*(Range **)((char *)o + k2))->r + *(float *)((char *)&(*(Object **)((char *)o + k))->recs->r + off);
                                     r = r * r;
-                                    ang = angle_difference(o->f64, (int)(call_8c130334(b.x, b.z) * 65536.0f / 6.28318405f));
+                                    ang = angle_difference(o->f64, (int)(errno_wrap_8c130334(b.x, b.z) * 65536.0f / 6.28318405f));
                                     if (r > d && (*(Range **)((char *)o + k2))->angle > ang) {
                                         return 1;
                                     }
@@ -118,7 +118,7 @@ int operation_8c045200(Object *o)
                             } else {
                                 d = 100000000.0f;
                             }
-                            ang = angle_difference(o->f64, (int)(call_8c130334(v.x, v.z) * 65536.0f / 6.28318405f));
+                            ang = angle_difference(o->f64, (int)(errno_wrap_8c130334(v.x, v.z) * 65536.0f / 6.28318405f));
                             if (o->target->recs != 0) {
                                 r = o->range->r + o->target->recs->r;
                                 r = r * r;

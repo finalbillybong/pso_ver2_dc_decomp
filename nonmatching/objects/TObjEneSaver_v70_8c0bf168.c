@@ -55,7 +55,7 @@ struct Arg0_dc {
 };
 extern S_c8c021ef8 *lookup_low_id(int);
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int angle_difference(int, int);
 void TObjEneSaver_v70_8c0bf168(Object *o)
 {
@@ -69,7 +69,7 @@ void TObjEneSaver_v70_8c0bf168(Object *o)
         if (t1 != 0) {
             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&t1->f324;
             vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x324)));
-            t2 = call_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
+            t2 = errno_wrap_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
             t3 = angle_difference((int)(o->f64), (int)((int)(t2 * 65536.0f / 6.28318405f)));
             v1 = (int)t3;
         } else {

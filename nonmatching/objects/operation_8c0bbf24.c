@@ -72,9 +72,9 @@ extern void vector_sub_in_place_8c37f6f0(Frame *, S_vv4 *);
 extern float njScalor_8c37e480(Frame *);
 extern void njUnitVector_8c37b630(Frame *);
 extern float call_8c12c714(float);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void njRotateY_8c37df90(int, int);
-extern float call_8c1302e4(float);
+extern float errno_wrap_8c1302e4(float);
 extern void njRotateX_8c37dd28(int, int);
 extern void call_8c3aa716(void *);
 extern void njPopMatrixEx_8c38ad10(void);
@@ -133,12 +133,12 @@ void operation_8c0bbf24(Object *o)
             t3 = call_8c12c714((&frame)->f00.f08);
             v14 = (int)v11;
             if ((t2 + t3) != 0.0f) {
-                t5 = call_8c130334(-(&frame)->f00.f00, -(&frame)->f00.f08);
+                t5 = errno_wrap_8c130334(-(&frame)->f00.f00, -(&frame)->f00.f08);
                 v12 = (int)(int)(t5 * 65536.0f / 6.28318405f);
                 njRotateY_8c37df90(v11, v12);
                 v14 = (int)v12;
             }
-            t4 = call_8c1302e4(-(&frame)->f00.f04);
+            t4 = errno_wrap_8c1302e4(-(&frame)->f00.f04);
             njRotateX_8c37dd28(0, (int)((int)(t4 * 65536.0f / 6.28318405f)));
             njRotateY_8c37df90(0, (int)(v5->f00 - v14));
             if (v7 == 1) {

@@ -44,7 +44,7 @@ struct Object {
 extern int active_unflagged_8c05b2dc(void *);
 extern void operation_8c05c184(void *);
 extern void aim_direction_8c05bdd4(void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float njSin_8c37eb0c(void *);
 extern float njCos_8c38c154(void *);
 int operation_8c0613a4(Object *o)
@@ -70,7 +70,7 @@ int operation_8c0613a4(Object *o)
         o->f3b0.f00 = v4 * v2 + v3 * 2.0f + o->f3b0.f00;
         o->f3b0.f08 = v4 * 2.0f - v3 * v2 + o->f3b0.f08;
         aim_direction_8c05bdd4((void *)o);
-        t2 = call_8c130334(o->f3bc, o->f3c4);
+        t2 = errno_wrap_8c130334(o->f3bc, o->f3c4);
         return (int)(t2 * 65536.0f / 6.28318405f);
     }
     t3 = njSin_8c37eb0c((void *)(o->f64));

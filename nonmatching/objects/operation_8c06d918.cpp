@@ -236,7 +236,7 @@ extern "C" float object_random_fraction(void *);
 extern "C" float njSin_8c37eb0c(int);
 extern "C" float njCos_8c38c154(int);
 extern "C" void activate_offset_effect_immediately(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int offset_effect_threshold_reached(void *);
 extern "C" int operation_8c05bbf8(void);
 extern "C" void set_position_8c0f3504(void *, void *);
@@ -353,7 +353,7 @@ extern "C" void operation_8c06d918(Object *o, int a1)
         activate_offset_effect_immediately((void *)(((ObjectData *)o)->f6f4));
         ((ObjectData *)o)->f3c.f00 = ((ObjectData *)o)->f6b4;
         ((ObjectData *)o)->f3c.f08 = ((ObjectData *)o)->f6b8;
-        t3 = call_8c130334(((ObjectData *)o)->f3c.f00, ((ObjectData *)o)->f3c.f08);
+        t3 = errno_wrap_8c130334(((ObjectData *)o)->f3c.f00, ((ObjectData *)o)->f3c.f08);
         v6->f00 = (S_vv6_0 *)(int)(t3 * 65536.0f / 6.28318405f);
         return;
 L_8c06dc5c:;

@@ -166,7 +166,7 @@ extern "C" void operation_8c01c5f0(Object *);
 extern "C" int check_range_8c01cf68(void *, float);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
 extern "C" int operation_43fb4(void *, int, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_difference(int, int);
 extern "C" void operation_8c04a43c(void *, float, void *);
 extern "C" void refresh_follow_effect_8c052180(void *);
@@ -226,7 +226,7 @@ L_8c0e4482:;
             if (t4 != 0) {
                 *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&((ObjectData *)o)->f334->f324;
                 vector_sub_in_place_8c37f6f0((void *)(&frame), (void *)(((char *)o + 0x324)));
-                t5 = call_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
+                t5 = errno_wrap_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
                 t6 = angle_difference((int)(((ObjectData *)o)->f64), (int)((int)(t5 * 65536.0f / 6.28318405f)));
                 if (!(22500.0f > ((&frame)->f00.f00 * (&frame)->f00.f00 + (&frame)->f00.f08 * (&frame)->f00.f08))) {
                     if (((ObjectData *)o)->f368 != 0) {

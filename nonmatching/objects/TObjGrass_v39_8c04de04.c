@@ -86,7 +86,7 @@ extern int g_8c2e2ad8;
 extern S_g8c4671a4 *g_8c4671a4;
 extern void call_8c0121a0(Object *, int, void *, int);
 extern float object_distance_xz(void *, void *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int angle_difference(int, int);
 int TObjGrass_v39_8c04de04(Object *o)
 {
@@ -118,7 +118,7 @@ int TObjGrass_v39_8c04de04(Object *o)
                     return 1;
                 }
                 t2 = object_distance_xz((void *)o, (void *)v28, (void *)(&frame));
-                t1 = call_8c130334((&frame)->f00, (&frame)->f08);
+                t1 = errno_wrap_8c130334((&frame)->f00, (&frame)->f08);
                 t3 = angle_difference((int)(o->f64), (int)((int)(t1 * 65536.0f / 6.28318405f)));
                 v1 = (S_vv1 *)o->f334;
                 if (v1->fdc != 0) {

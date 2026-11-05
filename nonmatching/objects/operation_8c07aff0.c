@@ -72,7 +72,7 @@ extern S_g8c469a8c *g_8c469a8c;
 extern void scale_vector_to_length(void *, float);
 extern void call_8c3bdf60(void *, void *);
 extern S_c8c011214 *operation_8c011214(int, int, int);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int signed_angle_delta(int, int);
 extern int rand(void);
 extern void njPushMatrix_8c38ade4(void *);
@@ -106,9 +106,9 @@ void operation_8c07aff0(Object *o)
     call_8c3bdf60(v1, (void *)(&(&frame)->f18));
     t1 = operation_8c011214((int)(&o->f324), (int)v1, -1);
     if (t1 != 0) {
-        t6 = call_8c130334(o->f318.f00, o->f318.f08);
+        t6 = errno_wrap_8c130334(o->f318.f00, o->f318.f08);
         v2 = (int)(int)(t6 * 65536.0f / 6.28318405f);
-        t2 = call_8c130334(t1->f04->f0c, t1->f04->f14);
+        t2 = errno_wrap_8c130334(t1->f04->f0c, t1->f04->f14);
         v15 = (float)(t2 * 65536.0f / 6.28318405f);
         t3 = signed_angle_delta(v2, (int)((int)v15));
         o->f3c4 = (int)v15 - (0x8000 - t3);

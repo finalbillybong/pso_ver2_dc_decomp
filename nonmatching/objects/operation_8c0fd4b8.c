@@ -65,7 +65,7 @@ extern void njUnitVector_8c37b630(Frame *);
 extern void call_8c3bdf60(void *, Frame *);
 extern void operation_8c05237c(void *);
 extern void update_object_center(void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void transform_actor_records(void *);
 void operation_8c0fd4b8(Object *o)
 {
@@ -91,7 +91,7 @@ void operation_8c0fd4b8(Object *o)
     t1 = o->f48.f04;
     o->f3c.f04 = (o->f334->f3c.f04 + 25.0f - t1) * 0.5f + t1;
     update_object_center((void *)o);
-    t2 = call_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
+    t2 = errno_wrap_8c130334((&frame)->f00.f00, (&frame)->f00.f08);
     o->f64 = (int)(t2 * 65536.0f / 6.28318405f);
     transform_actor_records((void *)o);
 }

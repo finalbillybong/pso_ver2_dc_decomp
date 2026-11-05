@@ -131,7 +131,7 @@ extern "C" void call_8c3be38c(int, void *, void *);
 extern "C" void njPopMatrix_8c38accc(int);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
 extern "C" int check_range_8c01cf68(void *, float);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" float signed_sqrt_8c37f6c0(float);
 extern "C" void call_8c044320(Object *, float, Vector3, Vector3);
 extern "C" float squared_distance_xz(void *, void *);
@@ -186,7 +186,7 @@ extern "C" void operation_8c038f04(Object *o)
     *(Vector3 *)&o->f158 = *(Vector3 *)&o->f3c;
     *(Vector3 *)&(&frame)->f08 = *(Vector3 *)&o->f164;
     vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f08), (void *)(&o->f3c));
-    t2 = call_8c130334((&frame)->f08.f00, (&frame)->f08.f08);
+    t2 = errno_wrap_8c130334((&frame)->f08.f00, (&frame)->f08.f08);
     o->f64 = (Arg0_64 *)(int)(t2 * 65536.0f / 6.28318405f);
     t3 = signed_sqrt_8c37f6c0((&frame)->f08.f00 * (&frame)->f08.f00 + (&frame)->f08.f08 * (&frame)->f08.f08);
     o->f394 = t3;

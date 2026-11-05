@@ -85,7 +85,7 @@ extern void operation_8c04a43c(void *, float, void *);
 extern int check_range_8c01cf68(void *, float);
 extern void play_se_8c05fbf8(int, void *, int, int);
 extern void vector_sub_in_place_8c37f6f0(Frame *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int angle_difference(int, int);
 extern int call_8c18e768(int, int);
 extern void call_8c044410(Object *, float, void *);
@@ -144,7 +144,7 @@ L_8c0c051a:;
             *(Vector3 *)&(&frame)->f00 = *(Vector3 *)&o->f334->f3c;
             vector_sub_in_place_8c37f6f0((Frame *)((&frame)), (void *)(((char *)o + 0x3c)));
             if (!(((&frame)->f00.f00 * (&frame)->f00.f00 + (&frame)->f00.f08 * (&frame)->f00.f08) > 160000.0f)) {
-                t3 = call_8c130334((&frame)->f00.f08, (&frame)->f00.f00);
+                t3 = errno_wrap_8c130334((&frame)->f00.f08, (&frame)->f00.f00);
                 t4 = angle_difference((int)(-(int)(t3 * 65536.0f / 6.28318405f) + 0x4000), (int)(o->f64));
                 if (0xaaa > t4) {
                     t5 = call_8c18e768((int)(o->f198), 4);

@@ -274,7 +274,7 @@ extern "C" int operation_8c066fb8(void *, void *);
 extern "C" void aim_direction_8c05bdd4(void *);
 extern "C" float normalize_xz_checked(void *);
 extern "C" float signed_sqrt_8c37f6c0(float);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" void operation_8c07c4b4(int, int);
 extern "C" void create_effect(void *, int, int);
 extern "C" void operation_8c0a1ed0(int);
@@ -397,10 +397,10 @@ extern "C" void operation_8c06de90(Object *o, int a1)
                 v10 = (float)37.3333359f;
                 t3 = signed_sqrt_8c37f6c0(298.6667f);
                 v3->f00 = t2 / (v10 + t3);
-                t4 = call_8c130334(v3->f00, 15.0f);
+                t4 = errno_wrap_8c130334(v3->f00, 15.0f);
                 ((ObjectData *)o)->f60 = (int)(t4 * 65536.0f / 6.28318405f);
             }
-            t5 = call_8c130334(v6->f00, v6->f08);
+            t5 = errno_wrap_8c130334(v6->f00, v6->f08);
             ((ObjectData *)o)->f64 = (int)(t5 * 65536.0f / 6.28318405f);
             v4->f00 = 15.0f;
             v6->f00 *= v3->f00;

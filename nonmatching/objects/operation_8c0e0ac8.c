@@ -33,7 +33,7 @@ typedef struct Object {
 } Object;
 extern void call_8c0e0060(Object *, Vector3 *, int);
 extern float call_8c38d7d8(int, Vector3 *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float njCos_8c38c154(int);
 extern float njSin_8c37eb0c(int);
 extern void call_8c0dfa54(Object *, int, Vec2 *);
@@ -77,17 +77,17 @@ int operation_8c0e0ac8(Object *o, Vec2 *a1, Vec2 *a2)
     k = 1000.0f / call_8c38d7d8(*(int *)0x8c46ee80 + 0x90, &pos);
     x = a1->x + o->f50 * 0.5f - o->fa0;
     y = a1->y + o->f54 * 0.5f - o->fa4;
-    ang = (int)(call_8c130334(y, x) * 65536.0f / 6.28318405f);
+    ang = (int)(errno_wrap_8c130334(y, x) * 65536.0f / 6.28318405f);
     d.x = x - k * njCos_8c38c154(ang);
     d.y = y - k * njSin_8c37eb0c(ang);
     d.x = d.x / (o->f50 + 19.0f);
     d.y = d.y / (o->f54 + 13.0f);
-    call_8c0dfa54(o, (int)(call_8c130334(d.y, d.x) * 65536.0f / 6.28318405f) + 0x8000, &d);
-    ang = (int)(call_8c130334(d.y, d.x) * 65536.0f / 6.28318405f);
+    call_8c0dfa54(o, (int)(errno_wrap_8c130334(d.y, d.x) * 65536.0f / 6.28318405f) + 0x8000, &d);
+    ang = (int)(errno_wrap_8c130334(d.y, d.x) * 65536.0f / 6.28318405f);
     if (place(o, &d, a2, k, ang, 1.0f) != 0) return 0;
     if (operation_8c0dc92c(o, a2, &o->f40) == 0) return 1;
     call_8c0dfa54(o, (int)((float)ang + ((float)rand() / 32768.0f * 32768.0f - 16384.0f)), &d);
-    ang = (int)(call_8c130334(d.y, d.x) * 65536.0f / 6.28318405f);
+    ang = (int)(errno_wrap_8c130334(d.y, d.x) * 65536.0f / 6.28318405f);
     if (place(o, &d, a2, k, ang, 1.0f) != 0) return 0;
     return operation_8c0dc92c(o, a2, &o->f40) == 0;
 }

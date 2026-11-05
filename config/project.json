@@ -128469,6 +128469,33 @@
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_errno_wrap_8c12b634",
+      "source": "src/sdk/shc_errno_wrap_8c12b634.c",
+      "address": "0x8c12b634",
+      "entry": "_errno_wrap_8c12b634",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_fimpl_8c12e56c": "0x8c12e56c",
+        "_errno": "0x8c4d9a00"
+      },
+      "ranges": [
+        {
+          "offset": 1160756,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "errno_wrap_8c12b634",
+          "address": "0x8c12b634",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "a6285fd803857ecee10c47b1bd88997ae9ea591b57a8bb9cbd8e67173d878e99",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
       "id": "shc_math_errno_8c12b684",
       "source": "src/sdk/shc_math_errno_8c12b684.c",
       "address": "0x8c12b684",
@@ -128516,6 +128543,60 @@
         }
       ],
       "reference_sha256": "3d6b0c1a097b81622ece8e8f933c5b5ad520319e52f9022fdaf5bbc167692d92",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_errno_wrap_8c12b898",
+      "source": "src/sdk/shc_errno_wrap_8c12b898.c",
+      "address": "0x8c12b898",
+      "entry": "_errno_wrap_8c12b898",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_fimpl_8c12e588": "0x8c12e588",
+        "_errno": "0x8c4d9a00"
+      },
+      "ranges": [
+        {
+          "offset": 1161368,
+          "size": 92
+        }
+      ],
+      "functions": [
+        {
+          "name": "errno_wrap_8c12b898",
+          "address": "0x8c12b898",
+          "size": 92
+        }
+      ],
+      "reference_sha256": "7645eafb2d53dd3a6d56d4bcdc1f7bd03344c63a082a0824003dfedb25a8e778",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_errno_wrap_8c12b8f4",
+      "source": "src/sdk/shc_errno_wrap_8c12b8f4.c",
+      "address": "0x8c12b8f4",
+      "entry": "_errno_wrap_8c12b8f4",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_fimpl_8c12e9d0": "0x8c12e9d0",
+        "_errno": "0x8c4d9a00"
+      },
+      "ranges": [
+        {
+          "offset": 1161460,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "errno_wrap_8c12b8f4",
+          "address": "0x8c12b8f4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "9044c0ede5151f63e915a90e7698c3956c3b73b4be536341cca584296c0ce24b",
       "headers": [],
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
@@ -128757,6 +128838,30 @@
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_short_to_bytes_8c12f140",
+      "source": "src/sdk/shc_short_to_bytes_8c12f140.c",
+      "address": "0x8c12f140",
+      "entry": "_short_to_bytes_8c12f140",
+      "compiler": "shc-v5.1r13",
+      "symbols": {},
+      "ranges": [
+        {
+          "offset": 1175872,
+          "size": 30
+        }
+      ],
+      "functions": [
+        {
+          "name": "short_to_bytes_8c12f140",
+          "address": "0x8c12f140",
+          "size": 30
+        }
+      ],
+      "reference_sha256": "1f7ce957d81700805daede9c16eff44cd210d1e09ac2ce8662ee85e2e15262ca",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
       "id": "shc_make_float_8c12f160",
       "source": "src/sdk/shc_make_float_8c12f160.c",
       "address": "0x8c12f160",
@@ -128784,6 +128889,60 @@
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },
     {
+      "id": "shc_errno_wrap_8c1302e4",
+      "source": "src/sdk/shc_errno_wrap_8c1302e4.c",
+      "address": "0x8c1302e4",
+      "entry": "_errno_wrap_8c1302e4",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_fimpl_8c12dfac": "0x8c12dfac",
+        "_errno": "0x8c4d9a00"
+      },
+      "ranges": [
+        {
+          "offset": 1180388,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "errno_wrap_8c1302e4",
+          "address": "0x8c1302e4",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "7305b52e3a04d5def89477dcd86355f18b78b3c419bccc91f0e2391e488a6941",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_errno_wrap_8c130334",
+      "source": "src/sdk/shc_errno_wrap_8c130334.c",
+      "address": "0x8c130334",
+      "entry": "_errno_wrap_8c130334",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_fimpl_8c12e2a0": "0x8c12e2a0",
+        "_errno": "0x8c4d9a00"
+      },
+      "ranges": [
+        {
+          "offset": 1180468,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "errno_wrap_8c130334",
+          "address": "0x8c130334",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "a6d1497e44e3bf75e84ca68cb84dffb5fbbe8b3c598c44b9bcd5855e0c5f6b30",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
       "id": "shc_atoi_8c130384",
       "source": "src/sdk/shc_atoi_8c130384.c",
       "address": "0x8c130384",
@@ -128806,6 +128965,60 @@
         }
       ],
       "reference_sha256": "3873c042cfecfa80a61372a48d6a03fb99c32be972e5d269cd8d5f8e649a831a",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_errno_wrap_8c130390",
+      "source": "src/sdk/shc_errno_wrap_8c130390.c",
+      "address": "0x8c130390",
+      "entry": "_errno_wrap_8c130390",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_ceilf": "0x8c12e2f8",
+        "_errno": "0x8c4d9a00"
+      },
+      "ranges": [
+        {
+          "offset": 1180560,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "errno_wrap_8c130390",
+          "address": "0x8c130390",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "b6d1ca84eee4f53b37d5a7ff0a0ce20636f68894311388d3e2728174160c5873",
+      "headers": [],
+      "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
+    },
+    {
+      "id": "shc_errno_wrap_8c1303e0",
+      "source": "src/sdk/shc_errno_wrap_8c1303e0.c",
+      "address": "0x8c1303e0",
+      "entry": "_errno_wrap_8c1303e0",
+      "compiler": "shc-v5.1r13",
+      "symbols": {
+        "_fimpl_8c12e624": "0x8c12e624",
+        "_errno": "0x8c4d9a00"
+      },
+      "ranges": [
+        {
+          "offset": 1180640,
+          "size": 80
+        }
+      ],
+      "functions": [
+        {
+          "name": "errno_wrap_8c1303e0",
+          "address": "0x8c1303e0",
+          "size": 80
+        }
+      ],
+      "reference_sha256": "72d9116b81634595cd7ba7ac7a121d86cee25b1c9c97a8e9a757643b9602192e",
       "headers": [],
       "boundary_review": "SHC pool group: 1 function(s) followed by their literal pool; starts on a four-byte boundary after the previous group's pool; byte-exact over the full range with the pinned SHC settings."
     },

@@ -54,7 +54,7 @@ extern int g_8c467874;
 extern int ring_actor_eligible(short);
 extern float hs_8c38d7d8(Frame *, void *);
 extern float object_random_fraction(Object *);
-extern float hs_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern float njSin_8c37eb0c(int);
 extern float njCos_8c38c154(int);
 void operation_8c1b47bc(Object *o, Arg1 *a1)
@@ -102,7 +102,7 @@ void operation_8c1b47bc(Object *o, Arg1 *a1)
     t5 = object_random_fraction(o);
     v15 = (float)(t5 * 200.625f);
     t6 = object_random_fraction(o);
-    t7 = hs_8c130334(-o->f3c, -o->f44);
+    t7 = errno_wrap_8c130334(-o->f3c, -o->f44);
     v16 = (int)((int)(t6 * 49152.0f) + -0x6000 + (int)(t7 * 65536.0f / 6.28318405f));
     t3 = njSin_8c37eb0c(v16);
     a1->f00.f00 = v15 * t3;

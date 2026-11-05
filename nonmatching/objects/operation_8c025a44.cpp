@@ -73,7 +73,7 @@ struct Arg0_dc {
     int f18;
 };
 extern "C" int operation_8c026934(Object *, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" float njScalor_8c37e480(void *);
 extern "C" float njSin_8c37eb0c(int);
 extern "C" float njCos_8c38c154(int);
@@ -114,7 +114,7 @@ extern "C" int operation_8c025a44(Object *o)
         ((ObjectData *)o)->f318 = 0.0f;
         return 1;
     }
-    t5 = call_8c130334(((ObjectData *)o)->f318, ((ObjectData *)o)->f320);
+    t5 = errno_wrap_8c130334(((ObjectData *)o)->f318, ((ObjectData *)o)->f320);
     v1 = (int)(int)(t5 * 65536.0f / 6.28318405f);
     t6 = njScalor_8c37e480((void *)(((char *)o + 0x318)));
     v2 = (float)(t6 + ((ObjectData *)o)->fdc->f0c);

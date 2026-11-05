@@ -60,7 +60,7 @@ extern void TObject_ctor_8c0330e4(void *, void *);
 extern void vector_sub_in_place_8c37f6f0(void *, Arg2 *);
 extern float njScalor_8c37e480(void *);
 extern void njUnitVector_8c37b630(void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void call_8c0c5094(void *, void *, void *);
 Object *TItemShoot_ctor_8c1aba3c(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3, float f0)
 {
@@ -84,7 +84,7 @@ Object *TItemShoot_ctor_8c1aba3c(Object *o, Arg1 *a1, Arg2 *a2, Arg3 *a3, float 
     o->f3c.f00 *= v1;
     o->f3c.f04 *= v1;
     o->f3c.f08 *= v1;
-    t1 = call_8c130334(o->f3c.f00, o->f3c.f08);
+    t1 = errno_wrap_8c130334(o->f3c.f00, o->f3c.f08);
     o->f30 = (int)(t1 * 65536.0f / 6.28318405f);
     call_8c0c5094((void *)(&o->f3c), (void *)(((char *)o + 0x2c)), (void *)(((char *)o + 0x34)));
     o->f54 = 0;

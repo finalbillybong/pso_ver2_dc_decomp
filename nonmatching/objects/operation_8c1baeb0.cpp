@@ -71,7 +71,7 @@ extern S_L8c327758 g_8c327758;
 extern "C" void operation_8c1b841c(int);
 extern "C" int call_8c18e6fc(void *);
 extern "C" S_c8c021ef8 *lookup_low_id(int);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void operation_8c191504(int);
 extern "C" void operation_8c1baeb0(Object *o)
@@ -110,7 +110,7 @@ extern "C" void operation_8c1baeb0(Object *o)
     if (v66 != v1) {
         t2 = lookup_low_id(v66);
         if (t2 != 0) {
-            t3 = call_8c130334(t2->f3c - 10000.0f, t2->f44);
+            t3 = errno_wrap_8c130334(t2->f3c - 10000.0f, t2->f44);
             t4 = angle_step((int)(o->f64), (int)((int)(t3 * 65536.0f / 6.28318405f)), 0x888);
             o->f64 = (int)t4;
             o->f3b4 = -((int)o->f64 + 0x800) >> 0xc & 0xf;

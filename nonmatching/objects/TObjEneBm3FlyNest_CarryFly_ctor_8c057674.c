@@ -73,7 +73,7 @@ extern S_g8c467910 *g_8c467910;
 extern void TObject_ctor_8c0330e4(void *, void *);
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
 extern void normalize_vector_checked(void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 Object *TObjEneBm3FlyNest_CarryFly_ctor_8c057674(Object *o, int a1, int a2, int a3, int a4, int a5, int a6)
 {
     Frame frame;
@@ -94,7 +94,7 @@ Object *TObjEneBm3FlyNest_CarryFly_ctor_8c057674(Object *o, int a1, int a2, int 
         vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f04), (void *)(self->f38));
     }
     normalize_vector_checked((void *)(&(&frame)->f04));
-    t1 = call_8c130334((&frame)->f04.f00, (&frame)->f04.f08);
+    t1 = errno_wrap_8c130334((&frame)->f04.f00, (&frame)->f04.f08);
     o->f44 = (int)(t1 * 65536.0f / 6.28318405f);
     o->f20 = (&frame)->f04.f00 * 6.0f;
     o->f24 = 6.0f;

@@ -189,7 +189,7 @@ extern "C" void call_8c05be98(Object *, int);
 extern "C" int call_8c05c2dc(Object *);
 extern "C" void operation_8c05c184(void *);
 extern "C" void aim_direction_8c05bdd4(void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void operation_8c05d34c(Object *o, int a1)
 {
@@ -293,7 +293,7 @@ L_8c05d4fa:;
         operation_8c05c184((void *)o);
         aim_direction_8c05bdd4((void *)o);
         v1->f00 += 1;
-        t5 = call_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
+        t5 = errno_wrap_8c130334(((ObjectData *)o)->f3bc, ((ObjectData *)o)->f3c4);
         v2->f00 = (int)(t5 * 65536.0f / 6.28318405f);
         t6 = angle_step((int)(((ObjectData *)o)->f64), (int)(v2->f00), (int)(((ObjectData *)o)->f36c->f08));
         ((ObjectData *)o)->f64 = (int)t6;

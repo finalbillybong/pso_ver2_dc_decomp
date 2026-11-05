@@ -69,7 +69,7 @@ extern "C" S_c8c053d84 *lookup_object_by_id(unsigned short);
 extern "C" int call_8c18e6fc(void *);
 extern "C" void operation_8c15eca4(void *, int);
 extern "C" void play_se_8c05fbf8(int, void *, int, int);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void operation_8c160974(Object *o)
 {
@@ -110,7 +110,7 @@ L_8c1609f4:;
             play_se_8c05fbf8(0x3002f, (void *)(&o->f3c), 0, 0);
         }
         if (5.0f > o->ff8) {
-            t3 = call_8c130334(t1->f3c - o->f3c, t1->f44 - o->f44);
+            t3 = errno_wrap_8c130334(t1->f3c - o->f3c, t1->f44 - o->f44);
             t5 = *(int *)((char *)0x8c286448 + (o->f39c << 2));
             t4 = angle_step((int)(o->f64), t5 + (int)(t3 * 65536.0f / 6.28318405f), 0x200);
             o->f64 = (int)t4;

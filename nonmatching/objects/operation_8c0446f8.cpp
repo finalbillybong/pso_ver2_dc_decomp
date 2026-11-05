@@ -87,7 +87,7 @@ extern "C" void njPopMatrix_8c38accc(int);
 extern "C" void call_8c3bdf60(void *, void *);
 extern "C" void call_8c0441d8(Object *, Vector3);
 extern "C" void vector_sub_in_place_8c37f6f0(void *, void *);
-extern "C" float call_8c130334(float, float);
+extern "C" float errno_wrap_8c130334(float, float);
 extern "C" int angle_step(int, int, int);
 extern "C" void angle_difference(int, int);
 extern "C" int operation_8c051ff4(void *, void *, void *);
@@ -133,7 +133,7 @@ extern "C" float operation_8c0446f8(Object *o, int a1, float f0, float f1, float
 L_8c0447de:;
     *(Vector3 *)&(&frame)->f18 = *(Vector3 *)&((ObjectData *)o)->f164;
     vector_sub_in_place_8c37f6f0((void *)(&(&frame)->f18), (void *)(((char *)o + 0x3c)));
-    t6 = call_8c130334((&frame)->f18.f00, (&frame)->f18.f08);
+    t6 = errno_wrap_8c130334((&frame)->f18.f00, (&frame)->f18.f08);
     v5 = (int)(int)(t6 * 65536.0f / 6.28318405f);
     t3 = angle_step((int)(((ObjectData *)o)->f64), v5, a1);
     ((ObjectData *)o)->f64 = (int)t3;

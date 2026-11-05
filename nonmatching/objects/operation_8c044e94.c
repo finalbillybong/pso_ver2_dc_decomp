@@ -44,7 +44,7 @@ struct Frame {
     Vector3 f18;
 };
 extern void vector_sub_in_place_8c37f6f0(void *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern void njPushMatrix_8c38ade4(void *);
 extern void njRotateY_8c37df90(int, int);
 extern void call_8c3be38c(int, void *, void *);
@@ -65,7 +65,7 @@ void operation_8c044e94(Object *o, float f0, Vector3 pos)
         o->f320 = 0.0f;
         o->f318 = 0.0f;
     } else {
-        t1 = call_8c130334((&frame)->f18.x, (&frame)->f18.z);
+        t1 = errno_wrap_8c130334((&frame)->f18.x, (&frame)->f18.z);
         ang = (int)(t1 * 65536.0f / 6.28318405f);
         (&frame)->f18.y = 0.0f;
         (&frame)->f18.x = 0.0f;

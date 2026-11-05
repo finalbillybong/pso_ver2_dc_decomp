@@ -89,7 +89,7 @@ struct S_x63312 {
 };
 extern S_g8c462a04 *g_8c462a04;
 extern float object_distance_xz(void *, void *, void *);
-extern float call_8c130334(float, float);
+extern float errno_wrap_8c130334(float, float);
 extern int angle_difference(int, int);
 extern float object_random_fraction(void *);
 extern void call_8c0441d8(Object *, Vector3);
@@ -122,7 +122,7 @@ int TObjEneMoja_v39_8c039924(Object *o)
                 switch (v32->f34 & 0x2000800) {
                 case 0:
                     t2 = object_distance_xz((void *)o, (void *)v32, (void *)(&frame));
-                    t1 = call_8c130334((&frame)->f00, (&frame)->f08);
+                    t1 = errno_wrap_8c130334((&frame)->f00, (&frame)->f08);
                     t3 = angle_difference((int)(o->f64), (int)((int)(t1 * 65536.0f / 6.28318405f)));
                     if (o->f334->fdc != 0) {
                         v1 = (float)o->f334->fdc->f0c;
