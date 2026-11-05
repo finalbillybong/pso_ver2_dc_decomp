@@ -42,7 +42,8 @@ by mismatch symptom, with source examples and recorded limitations.
 [Non-matching draft archive](nonmatching/README.md): readable C/C++ drafts of
 2,386 functions that are not yet matched, for reading, modding and porting. They
 are labelled NON-MATCHING, are never built or admitted, and carry no matching or
-progress credit. The build still uses fallback assembly for that code.
+progress credit. The build still uses fallback assembly for that code. 378 drafts ran
+equal to the original in emulator A/B tests, and 10 are marked as known to diverge.
 
 [Modding and porting guide](docs/MODDING.md): what the tree contains, how to build and find
 things, and what is and is not supported when you change behaviour.

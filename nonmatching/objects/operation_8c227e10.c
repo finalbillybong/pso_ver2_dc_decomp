@@ -10,8 +10,8 @@
  * known gaps: hand-revised from a generator draft; remaining differences not classified; review
  *   found and fixed behaviour defects of the generator draft; not proven equivalent to the
  *   original; compiled size differs from the reference by +16 bytes
- * runtime: DIVERGED on offline start: new character to Pioneer 2 (RAM differs outside the function
- *   (132 bytes in heap/buffers), call I/O equal); known incorrect
+ * runtime: DIVERGED on offline start: new character to Pioneer 2 (98 RAM bytes differ outside
+ *   timing noise, in heap/buffers); known incorrect
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {

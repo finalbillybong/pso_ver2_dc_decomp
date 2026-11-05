@@ -162,10 +162,13 @@ class NonmatchingArchiveTests(unittest.TestCase):
         a, b = nonmatching.RUNTIME_SCENARIOS[:2]
         self.assertEqual(nonmatching.runtime_line({'verdict': 'equal', 'scenarios': [a, b]}),
                          'equal on boot+title+opening movie; menu to registration screen '
-                         '(emulator A/B: RAM, trace and first-16-call I/O); not proof')
+                         '(emulator A/B: RAM, trace and sampled call I/O); not proof')
         self.assertEqual(nonmatching.runtime_line({'verdict': 'suspect', 'scenarios': [a], 'bytes_differ': 24}),
                          'suspect on boot+title+opening movie (24 bytes differ, I/O equal); not proof')
         self.assertIn('replaces a draft that DIVERGED', nonmatching.runtime_line({'verdict': 'unverified', 'scenarios': [a]}))
+        self.assertIn('offline start: Pioneer 2 office walk and NPC dialogue', nonmatching.RUNTIME_SCENARIOS)
+        self.assertEqual(nonmatching.runtime_issues({'verdict': 'diverged', 'scenarios': list(nonmatching.RUNTIME_SCENARIOS),
+                                                     'first_divergence': 'crashes the emulator at vblank 8014'}), [])
 
     def test_register_holes_fail_the_gate(self):
         self.assertIn('register or value hole', '\n'.join(nonmatching.check(self.fixture(expr='call_8c002000(a /* ? r3 */)'))))

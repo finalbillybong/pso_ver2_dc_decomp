@@ -4,11 +4,13 @@
  * language: c
  * reference size: 224 bytes
  * compiled size: 224 bytes (+0.0%)
- * differing lines: 80 of 96 reference instruction lines
- * differing bytes: 123
+ * differing lines: 82 of 96 reference instruction lines
+ * differing bytes: 58
  * provenance: hand pass on a generator draft
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original
+ * runtime: unverified; replaces a draft that DIVERGED on offline start: new character to Pioneer
+ *   2; not yet run
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -39,27 +41,29 @@ int operation_8c03df30(Object *o, unsigned int a1, int a2, int a3)
 {
     Frame frame;
     int off;
+    int v1;
     int v2;
     unsigned int v3;
     S_vv4 *v4;
     char *v5;
     int t1;
+    v1 = (int)0x42c;
     off = a2 << 4;
-    *(int *)((char *)((char *)*(Arg0_0 **)((char *)o + 0x42c) + 0x8) + off) = 0;
-    *(int *)((char *)((char *)*(Arg0_0 **)((char *)o + 0x42c) + 0xc) + off) = 0;
+    *(int *)((char *)((char *)*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)) + 0x8) + off) = 0;
+    *(int *)((char *)((char *)*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)) + 0xc) + off) = 0;
     (&frame)->f04 = 0;
     while (a1 > (unsigned int)(&frame)->f04) {
         t1 = operation_8c03ec84((void *)o, a3, (int)(&(&frame)->f04), (int)(&frame));
         v2 = (int)(&frame)->f00;
         switch (v2) {
         case 1313489741:
-            *(int *)((char *)((char *)*(Arg0_0 **)((char *)o + 0x42c) + 0x8) + off) = (int)(t1);
+            *(int *)((char *)((char *)*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)) + 0x8) + off) = (int)(t1);
             break;
         case 1313494092:
-            *(int *)((char *)((char *)*(Arg0_0 **)((char *)o + 0x42c) + 0xc) + off) = (int)(t1);
+            *(int *)((char *)((char *)*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)) + 0xc) + off) = (int)(t1);
             v3 = (unsigned int)0;
             v4 = (S_vv4 *)t1;
-            while ((unsigned int)(*(Arg0_0_c **)((char *)((char *)*(Arg0_0 **)((char *)o + 0x42c) + 0xc) + off))->f04 > v3) {
+            while ((unsigned int)(*(Arg0_0_c **)((char *)((char *)*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)) + 0xc) + off))->f04 > v3) {
                 v5 = (char *)v4->f00;
                 *(void **)((char *)((char *)v5 + 0x0) + (v3 * 0xc)) = (void *)0x8c466d20;
                 v4 = (S_vv4 *)v5;

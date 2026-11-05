@@ -9,8 +9,9 @@
  * provenance: hand pass on a generator draft
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original
- * runtime: equal on menu to registration screen; offline start: new character to Pioneer 2
- *   (emulator A/B: RAM, trace and first-16-call I/O); not proof
+ * runtime: equal on menu to registration screen; offline start: new character to Pioneer 2;
+ *   offline start: Pioneer 2 office walk and NPC dialogue (emulator A/B: RAM, trace and sampled
+ *   call I/O); not proof
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 extern int g_8c2fc704;

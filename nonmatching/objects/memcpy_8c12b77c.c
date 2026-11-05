@@ -11,8 +11,8 @@
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by +12 bytes
  * runtime: DIVERGED on boot+title+opening movie; menu to registration screen; offline start: new
- *   character to Pioneer 2 (called 166 times where the original is called 1623 times); known
- *   incorrect
+ *   character to Pioneer 2; offline start: Pioneer 2 office walk and NPC dialogue (called 166
+ *   times where the original is called 1623 times); known incorrect
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {

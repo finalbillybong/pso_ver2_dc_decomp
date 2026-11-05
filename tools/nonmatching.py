@@ -47,7 +47,8 @@ HOLE = re.compile(r'/\*\s*\?')  # `/* ? r3 */`-style register or value holes
 OPTIONAL = ['class header', 'runtime']  # present only when they apply
 # Emulator A/B runs (local tooling; receipts are never committed): the per-draft verdict only.
 RUNTIME_SCENARIOS = ('boot+title+opening movie', 'menu to registration screen',
-                     'offline start: new character to Pioneer 2')
+                     'offline start: new character to Pioneer 2',
+                     'offline start: Pioneer 2 office walk and NPC dialogue')
 RUNTIME_VERDICTS = ('equal', 'suspect', 'diverged', 'unverified')
 HEADER_LINE = re.compile(r'^ \* ([a-z ]+): (.*)$')
 CLASSES = 'src/include/classes'
@@ -256,7 +257,7 @@ def runtime_line(rt):
     sc = '; '.join(rt['scenarios'])
     v = rt['verdict']
     if v == 'equal':
-        return 'equal on %s (emulator A/B: RAM, trace and first-16-call I/O); not proof' % sc
+        return 'equal on %s (emulator A/B: RAM, trace and sampled call I/O); not proof' % sc
     if v == 'suspect':
         n = rt['bytes_differ']
         return 'suspect on %s (%d %s, I/O equal); not proof' % (sc, n, 'byte differs' if n == 1 else 'bytes differ')

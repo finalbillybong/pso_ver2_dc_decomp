@@ -9,9 +9,9 @@ source tree for code that the build still takes from generated assembly (the
 
 The archive currently holds 2,386 drafts: 1,578 hand passes (282 of them with behaviour
 fixes from review) and 808 generator drafts. 1,658 of them compile to exactly the reference
-size, and 422 belong to a class that has a shared header. 193 carry a runtime verdict from an
-emulator A/B run (184 equal, 1 suspect, 6 diverged, 2 unverified replacements); see
-[Runtime verdicts](#runtime-verdicts).
+size, and 422 belong to a class that has a shared header. 393 carry a runtime verdict from
+emulator A/B runs (378 equal, 3 suspect, 10 diverged, 2 unverified replacements); 1,993 were
+not reached by any scenario. See [Runtime verdicts](#runtime-verdicts).
 
 - No file in this directory is compiled by `tools/project.py`, `tools/verify_source.py` or
   any other build step. The build reads `config/project.json` only, and no draft appears there.
@@ -50,7 +50,7 @@ Every file starts with a comment block in this form:
  * provenance: generator draft (mode extern)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: ...
  * runtime: equal on offline start: new character to Pioneer 2 (emulator A/B: RAM, trace and
- *   first-16-call I/O); not proof
+ *   sampled call I/O); not proof
  * class header: src/include/classes/TObjCollision.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
@@ -97,30 +97,34 @@ is never archived.
 Some drafts have been run in the Flycast emulator against the original. Each run is an A/B
 test: the same scenario is played twice from the same start, once with the original code
 and once with the draft compiled and placed in the running image instead of the original
-function. Three scripted scenarios are used: `boot+title+opening movie`,
-`menu to registration screen`, and `offline start: new character to Pioneer 2`. The test
-compares three things:
+function. Four scripted scenarios are used: `boot+title+opening movie`,
+`menu to registration screen`, `offline start: new character to Pioneer 2`, and
+`offline start: Pioneer 2 office walk and NPC dialogue`. The test compares three things:
 
 - **RAM**: full memory dumps at fixed frames, outside the draft's own code block, with
   known timing noise masked;
 - **trace**: the per-frame execution trace;
-- **I/O**: the arguments and return values of the first 16 calls of the function, and its
-  call count.
+- **I/O**: a sample of the function's calls: the arguments, return values and preserved
+  registers of the first 8 calls and then of calls 8, 12, 18, 27, ... (each index 1.5 times
+  the last, up to 32 records), plus the total call count and a checksum over every call.
 
 The verdict for each draft is recorded in the optional `runtime` field of
 `config/nonmatching.json` and in a matching `runtime:` header line:
 
 | Verdict | Header line | Meaning |
 | --- | --- | --- |
-| `equal` | `runtime: equal on <scenarios> (emulator A/B: RAM, trace and first-16-call I/O); not proof` | No difference was seen in the scenarios that called the draft. |
-| `suspect` | `runtime: suspect on <scenarios> (<n> bytes differ, I/O equal); not proof` | Calls matched, but a few RAM bytes differed, such as stack scratch. |
-| `diverged` | `runtime: DIVERGED on <scenarios> (<first divergence>); known incorrect` | The draft behaves differently, e.g. a different return value or call count. |
+| `equal` | `runtime: equal on <scenarios> (emulator A/B: RAM, trace and sampled call I/O); not proof` | No difference was seen in the scenarios that called the draft. |
+| `suspect` | `runtime: suspect on <scenarios> (<n> bytes differ, I/O equal); not proof` | Calls matched, but a few RAM bytes differed, such as stack scratch or buffers. |
+| `diverged` | `runtime: DIVERGED on <scenarios> (<first divergence>); known incorrect` | The draft behaves differently: a different return value or call count, RAM changes outside timing noise, or a crash. |
 | `unverified` | `runtime: unverified; replaces a draft that DIVERGED on <scenarios>; not yet run` | The previous draft diverged, and this next-best draft passing the gate replaced it. It has not been run. |
 
-A draft that no scenario reached has no `runtime` line. What this does **not** show:
+The scenarios listed are those in which that verdict was observed; a draft may be equal in
+other scenarios. A draft that no scenario reached has no `runtime` line. What this does
+**not** show:
 
-- An `equal` verdict covers only the paths those scenarios took, and only the first 16
-  calls are compared argument by argument. It is evidence, not proof of equivalence.
+- An `equal` verdict covers only the paths those scenarios took, and only the sampled calls
+  are compared argument by argument (the rest only through the count and checksum). It is
+  evidence, not proof of equivalence.
 - Unexercised branches, other game modes, online play and save-file paths are not tested.
 - A verdict belongs to the exact draft that was run. If a draft is replaced, its `runtime`
   field must be removed or re-measured. Renames do not affect it.

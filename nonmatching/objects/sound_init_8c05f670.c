@@ -3,12 +3,12 @@
  * function: sound_init_8c05f670
  * language: c
  * reference size: 440 bytes
- * compiled size: 448 bytes (+1.8%)
- * differing lines: 72 of 146 reference instruction lines
- * differing bytes: 347
+ * compiled size: 456 bytes (+3.6%)
+ * differing lines: 96 of 146 reference instruction lines
+ * differing bytes: 386
  * provenance: hand pass on a generator draft
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
- *   proven equivalent to the original; compiled size differs from the reference by +8 bytes
+ *   proven equivalent to the original; compiled size differs from the reference by +16 bytes
  * runtime: unverified; replaces a draft that DIVERGED on boot+title+opening movie; menu to
  *   registration screen; offline start: new character to Pioneer 2; not yet run
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
@@ -66,16 +66,7 @@ int sound_init_8c05f670(void)
     int t1;
     int v2;
     int t2;
-    g_8c467a40 = 0;
-    g_8c46880c = 0;
-    g_8c468814 = 0;
-    g_8c468810 = 0;
-    g_8c468808 = 0;
-    g_8c468804 = 0;
-    g_8c46881c = 0;
-    g_8c468816 = 0;
-    g_8c468817 = 0;
-    g_8c46881d = 0;
+    g_8c46881d = g_8c468817 = g_8c468816 = g_8c46881c = g_8c468804 = g_8c468808 = g_8c468810 = g_8c468814 = g_8c46880c = g_8c467a40 = 0;
     t1 = call_8c36a7b2((void *)((void *)0x8c2fc7c8));
     if (t1 != 0) {
         file_get_size_8c369f22(t1, (Frame *)((&frame)));

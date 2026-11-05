@@ -140,7 +140,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -227,7 +228,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -256,7 +258,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {}
@@ -341,6 +344,12 @@
    "differing_bytes": 204,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c418000": "0x8c418000",
     "seed_random_state": "0x8c037d8c"
@@ -357,6 +366,13 @@
    "differing_bytes": 27,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c4189dc": "0x8c4189dc",
     "gc_8c4182fc": "0x8c4182fc"
@@ -388,6 +404,13 @@
    "differing_bytes": 16,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3a8b38": "0x8c3a8b38",
     "call_8c3a8b7e": "0x8c3a8b7e",
@@ -1288,6 +1311,12 @@
    "differing_bytes": 36,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -1346,7 +1375,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -1364,6 +1394,13 @@
    "differing_bytes": 10,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3be280": "0x8c3be280",
     "g_8c46ee84": "0x8c46ee84",
@@ -1386,7 +1423,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {}
@@ -1752,6 +1790,12 @@
    "differing_bytes": 1019,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c418248": "0x8c418248",
     "g_8c41cd30": "0x8c41cd30",
@@ -1772,6 +1816,13 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TObjPlayer.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "actor_elevated_position": "0x8c03bca8",
     "operation_8c01c5f0": "0x8c01c5f0",
@@ -1910,6 +1961,13 @@
    "differing_bytes": 223,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "TWindowSetLevelUp_create_8c0ddb98": "0x8c0ddb98",
     "call_8c024c88": "0x8c024c88",
@@ -2045,7 +2103,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -2071,7 +2130,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -2095,6 +2155,13 @@
    "differing_bytes": 36,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c418248": "0x8c418248",
     "g_8c4627c8": "0x8c4627c8",
@@ -2148,6 +2215,12 @@
    "differing_bytes": 92,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c418248": "0x8c418248"
    }
@@ -2163,6 +2236,13 @@
    "differing_bytes": 175,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "create_bound_effect_8c02a728": "0x8c02a728",
     "g_8c418248": "0x8c418248",
@@ -2339,7 +2419,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -2404,7 +2485,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -2924,6 +3006,12 @@
    "differing_bytes": 5,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c369eb8": "0x8c369eb8",
     "copy_resource_fields": "0x8c033c84",
@@ -2960,6 +3048,12 @@
    "differing_bytes": 261,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "call_8c38c0e0": "0x8c38c0e0",
@@ -3069,7 +3163,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -3088,6 +3183,13 @@
    "differing_bytes": 208,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c37dc90": "0x8c37dc90",
     "call_8c3827d8": "0x8c3827d8",
@@ -3135,6 +3237,13 @@
    "differing_bytes": 67,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c0324b0": "0x8c0324b0",
     "call_8c3845f0": "0x8c3845f0",
@@ -3193,6 +3302,13 @@
    "differing_bytes": 45,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "operation_8c032614": "0x8c032614",
     "operation_8c032648": "0x8c032648"
@@ -3209,6 +3325,13 @@
    "differing_bytes": 56,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c44be0c": "0x8c44be0c"
    }
@@ -3224,6 +3347,13 @@
    "differing_bytes": 77,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c44be0c": "0x8c44be0c",
     "g_8c44be30": "0x8c44be30"
@@ -3240,6 +3370,12 @@
    "differing_bytes": 32,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c44be0c": "0x8c44be0c"
    }
@@ -3303,6 +3439,12 @@
    "differing_bytes": 12,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e8a0": "0x8c18e8a0"
    }
@@ -3318,6 +3460,12 @@
    "differing_bytes": 45,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c206b08": "0x8c206b08",
     "strncpy_8c12b154": "0x8c12b154"
@@ -3529,7 +3677,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -4113,6 +4262,12 @@
    "differing_bytes": 43,
    "provenance": "generator draft (mode switch2)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0272d8": "0x8c0272d8",
     "lookup_low_id": "0x8c021ef8",
@@ -4279,10 +4434,16 @@
    "language": "c",
    "reference_size": 224,
    "compiled_size": 224,
-   "differing_lines": 80,
-   "differing_bytes": 123,
+   "differing_lines": 82,
+   "differing_bytes": 58,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "unverified",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "debug_error_stub_8c03ef80": "0x8c03ef80",
     "g_8c2ef0e4": "0x8c2ef0e4",
@@ -4416,6 +4577,14 @@
    "differing_bytes": 372,
    "provenance": "hand pass on a generator draft (behaviour reviewed; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2ef854": "0x8c2ef854",
     "g_8c466dc2": "0x8c466dc2",
@@ -4445,6 +4614,14 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "create_effect_7a48": "0x8c0a7a48",
     "g_8c41cba0": "0x8c41cba0",
@@ -4496,7 +4673,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -4574,6 +4752,12 @@
    "differing_bytes": 137,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -4971,6 +5155,13 @@
    "differing_bytes": 14,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c2f1bc0": "0x8c2f1bc0",
     "g_8c44be04": "0x8c44be04",
@@ -5016,6 +5207,13 @@
    "differing_bytes": 24,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c0c5094": "0x8c0c5094",
     "call_8c11a920": "0x8c11a920",
@@ -5111,7 +5309,8 @@
     "verdict": "equal",
     "scenarios": [
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -5135,7 +5334,8 @@
     "verdict": "equal",
     "scenarios": [
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -5206,7 +5406,8 @@
     "verdict": "equal",
     "scenarios": [
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -5260,6 +5461,12 @@
    "differing_bytes": 257,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c04bdf8": "0x8c04bdf8",
     "call_8c04bf14": "0x8c04bf14"
@@ -5922,6 +6129,13 @@
    "differing_bytes": 458,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3bdf60": "0x8c3bdf60",
     "call_8c3be38c": "0x8c3be38c",
@@ -7472,9 +7686,9 @@
    "function": "sound_init_8c05f670",
    "language": "c",
    "reference_size": 440,
-   "compiled_size": 448,
-   "differing_lines": 72,
-   "differing_bytes": 347,
+   "compiled_size": 456,
+   "differing_lines": 96,
+   "differing_bytes": 386,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "runtime": {
@@ -7580,7 +7794,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -7613,7 +7828,8 @@
     "verdict": "equal",
     "scenarios": [
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -7642,7 +7858,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -9641,6 +9858,12 @@
    "differing_bytes": 11,
    "provenance": "generator draft (mode switch2)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -9698,6 +9921,12 @@
    "differing_bytes": 14,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c076e38": "0x8c076e38",
     "operation_8c1931d4": "0x8c1931d4"
@@ -9714,6 +9943,13 @@
    "differing_bytes": 11,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "TItemEquipBase_vslot31_8c073e5c": "0x8c073e5c",
     "operation_8c1c7658": "0x8c1c7658",
@@ -10440,6 +10676,12 @@
    "differing_bytes": 27,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TItemMag.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TItemEquipBase_ctor_8c20989c": "0x8c20989c",
     "call_8c074fb4": "0x8c074fb4",
@@ -10550,6 +10792,12 @@
    "differing_bytes": 301,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TItemMagGrowEff_ctor_8c1f2a78": "0x8c1f2a78",
     "TItemMagSub_ctor_8c1f1d38": "0x8c1f1d38",
@@ -10576,6 +10824,12 @@
    "differing_bytes": 50,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c207378": "0x8c207378",
     "operation_8c1acdf8": "0x8c1acdf8",
@@ -10593,6 +10847,12 @@
    "differing_bytes": 4,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "memcpy_8c12b77c": "0x8c12b77c",
     "operation_8c1581ac": "0x8c1581ac"
@@ -11365,7 +11625,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -11562,6 +11823,12 @@
    "differing_bytes": 8,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3be280": "0x8c3be280",
     "g_8c2fff44": "0x8c2fff44",
@@ -12975,6 +13242,12 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "__ptmf_scall": "0x8c18e6e4",
     "call_8c096dfc": "0x8c096dfc",
@@ -13000,6 +13273,14 @@
    "differing_bytes": 21,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c469e48": "0x8c469e48",
     "g_8c4d97e0": "0x8c4d97e0",
@@ -13018,6 +13299,12 @@
    "differing_bytes": 45,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c0352d4": "0x8c0352d4"
    }
@@ -13033,6 +13320,12 @@
    "differing_bytes": 9,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "njCos_8c38c154": "0x8c38c154",
     "njSin_8c37eb0c": "0x8c37eb0c"
@@ -13049,6 +13342,12 @@
    "differing_bytes": 5,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "angle_step": "0x8c0c4f90"
    }
@@ -13064,6 +13363,12 @@
    "differing_bytes": 35,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "__ptmf_scall": "0x8c18e6e4",
     "call_8c09a498": "0x8c09a498",
@@ -13100,6 +13405,12 @@
    "differing_bytes": 40,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c38ef2c": "0x8c38ef2c",
     "g_8c30111c": "0x8c30111c",
@@ -13118,6 +13429,12 @@
    "differing_bytes": 8,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c38ef2c": "0x8c38ef2c"
    }
@@ -13133,6 +13450,12 @@
    "differing_bytes": 303,
    "provenance": "hand pass on a generator draft (address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c3011ac": "0x8c3011ac",
     "g_8c3011bc": "0x8c3011bc",
@@ -13287,6 +13610,12 @@
    "differing_bytes": 13,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0353ec": "0x8c0353ec",
     "heap_alloc_8c122700": "0x8c122700",
@@ -13314,6 +13643,12 @@
    "differing_bytes": 122,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": "src/include/classes/TObjCMHexTile.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "g_8c30128c": "0x8c30128c",
@@ -13369,6 +13704,12 @@
    "differing_bytes": 50,
    "provenance": "generator draft (experimental generator, mode bgotoext)",
    "class_header": "src/include/classes/TCMCharacter.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c01c838": "0x8c01c838",
     "call_8c03d610": "0x8c03d610",
@@ -13402,6 +13743,12 @@
    "differing_bytes": 160,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2f5b38": "0x8c2f5b38",
     "g_8c460900": "0x8c460900",
@@ -13421,6 +13768,12 @@
    "differing_bytes": 6,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c01d074": "0x8c01d074",
     "operation_8c09b34c": "0x8c09b34c",
@@ -13438,6 +13791,12 @@
    "differing_bytes": 23,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "create_file_read_task": "0x8c041484",
     "g_8c460900": "0x8c460900",
@@ -13456,6 +13815,12 @@
    "differing_bytes": 51,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c09b228": "0x8c09b228",
     "call_8c09bf94": "0x8c09bf94",
@@ -13506,6 +13871,12 @@
    "differing_bytes": 109,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c034cfc": "0x8c034cfc",
     "operation_8c09bb80": "0x8c09bb80"
@@ -13522,6 +13893,12 @@
    "differing_bytes": 557,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "float_from_bits": "0x8c0c5380",
     "float_to_bits": "0x8c0c538c",
@@ -13541,6 +13918,12 @@
    "differing_bytes": 8,
    "provenance": "generator draft (mode extern)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c46b06c": "0x8c46b06c"
    }
@@ -13556,6 +13939,12 @@
    "differing_bytes": 20,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0356ac": "0x8c0356ac",
     "g_8c2f5b38": "0x8c2f5b38",
@@ -13575,6 +13964,12 @@
    "differing_bytes": 296,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjCMLoadAfsTextureReq_create_8c13f81c": "0x8c13f81c",
     "call_8c09c42c": "0x8c09c42c",
@@ -13644,6 +14039,12 @@
    "differing_bytes": 11,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c44be04": "0x8c44be04",
     "g_8c46ec40": "0x8c46ec40",
@@ -13669,6 +14070,12 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3be280": "0x8c3be280",
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
@@ -13816,6 +14223,12 @@
    "differing_bytes": 5,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c302018": "0x8c302018",
     "g_8c46ed60": "0x8c46ed60",
@@ -13861,6 +14274,12 @@
    "differing_bytes": 14,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c03d360": "0x8c03d360",
     "call_8c369ed0": "0x8c369ed0",
@@ -13988,6 +14407,14 @@
    "differing_bytes": 36,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c418248": "0x8c418248",
     "lookup_low_id": "0x8c021ef8"
@@ -14004,6 +14431,14 @@
    "differing_bytes": 90,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3be280": "0x8c3be280",
     "g_8c418248": "0x8c418248",
@@ -14045,7 +14480,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -14064,6 +14500,14 @@
    "differing_bytes": 367,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "suspect",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen"
+    ],
+    "bytes_differ": 36
+   },
    "symbols": {
     "call_8c0a4dd4": "0x8c0a4dd4",
     "call_8c37e4c0": "0x8c37e4c0",
@@ -14141,7 +14585,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -14258,7 +14703,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {}
@@ -14290,6 +14736,12 @@
    "differing_bytes": 143,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c46efc8": "0x8c46efc8",
     "g_8c46efd4": "0x8c46efd4"
@@ -14328,6 +14780,14 @@
    "differing_bytes": 34,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c37e4c0": "0x8c37e4c0",
     "call_8c380c5a": "0x8c380c5a",
@@ -14482,6 +14942,13 @@
    "differing_bytes": 4,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "adjust_vector_scaled": "0x8c0a4d28",
     "g_8c285108": "0x8c285108",
@@ -14523,7 +14990,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -14559,6 +15027,14 @@
    "differing_bytes": 14,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c46f0c0": "0x8c46f0c0",
     "g_8c46f0c4": "0x8c46f0c4",
@@ -14640,6 +15116,13 @@
    "differing_bytes": 93,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "adjust_scalar_scaled": "0x8c0a4e4c",
     "call_8c3be280": "0x8c3be280",
@@ -14663,6 +15146,14 @@
    "differing_bytes": 310,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c37e4c0": "0x8c37e4c0",
     "call_8c382a24": "0x8c382a24",
@@ -14690,6 +15181,13 @@
    "differing_bytes": 41,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3be280": "0x8c3be280",
     "g_8c303bd4": "0x8c303bd4",
@@ -14728,6 +15226,13 @@
    "differing_bytes": 58,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "forward_effect_view": "0x8c0a6cd0",
     "get_current_area_8c032b10": "0x8c032b10",
@@ -14745,6 +15250,13 @@
    "differing_bytes": 43,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3be280": "0x8c3be280",
     "njPopMatrix_8c38accc": "0x8c38accc",
@@ -14896,6 +15408,13 @@
    "differing_bytes": 669,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "suspect",
+    "scenarios": [
+     "boot+title+opening movie"
+    ],
+    "bytes_differ": 6
+   },
    "symbols": {
     "initialize_spawn_base": "0x8c0ab3bc",
     "rand": "0x8c12b944",
@@ -14913,6 +15432,14 @@
    "differing_bytes": 29,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "append_manager_record": "0x8c040230",
     "call_8c3845f0": "0x8c3845f0",
@@ -14973,6 +15500,14 @@
    "differing_bytes": 285,
    "provenance": "generator draft (mode ccastext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -15002,6 +15537,14 @@
    "differing_bytes": 25,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "append_manager_record": "0x8c040230",
     "errno_wrap_8c130334": "0x8c130334",
@@ -15022,6 +15565,14 @@
    "differing_bytes": 154,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3bdf60": "0x8c3bdf60",
     "finish_spawn_motion": "0x8c0abe64",
@@ -17318,7 +17869,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {}
@@ -17337,7 +17889,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -17359,7 +17912,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {}
@@ -17406,6 +17960,13 @@
    "differing_bytes": 27,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c0c3a8c": "0x8c0c3a8c"
    }
@@ -17438,6 +17999,14 @@
    "differing_bytes": 27,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "backup_render_state": "0x8c0a2d30",
     "call_8c380ab8": "0x8c380ab8",
@@ -17456,6 +18025,13 @@
    "differing_bytes": 27,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "backup_render_state": "0x8c0a2d30",
     "call_8c380ab8": "0x8c380ab8",
@@ -17477,7 +18053,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {}
@@ -17518,7 +18095,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20063,6 +20641,12 @@
    "differing_bytes": 14,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "set_fields_8c0daf8c": "0x8c0daf8c"
    }
@@ -20078,6 +20662,13 @@
    "differing_bytes": 7,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "TMainCursor_ctor_8c0da758": "0x8c0da758",
     "heap_alloc_8c122700": "0x8c122700"
@@ -20094,6 +20685,13 @@
    "differing_bytes": 20,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c0d93a4": "0x8c0d93a4",
     "lookup_low_id": "0x8c021ef8",
@@ -20112,6 +20710,13 @@
    "differing_bytes": 255,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c0d92a4": "0x8c0d92a4",
     "g_8c46ee80": "0x8c46ee80",
@@ -20161,6 +20766,13 @@
    "differing_bytes": 145,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c0d9134": "0x8c0d9134",
     "lookup_object_by_id": "0x8c053d84"
@@ -20177,6 +20789,13 @@
    "differing_bytes": 240,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c0d9568": "0x8c0d9568",
     "current_mode_active": "0x8c032ad0",
@@ -20199,6 +20818,13 @@
    "differing_bytes": 580,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c0da128": "0x8c0da128"
    }
@@ -20230,7 +20856,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20257,7 +20884,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20278,6 +20906,13 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TMainCursor.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "call_8c1accac": "0x8c1accac",
@@ -20512,7 +21147,8 @@
     "verdict": "equal",
     "scenarios": [
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20554,7 +21190,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {}
@@ -20608,6 +21245,14 @@
    "differing_bytes": 244,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c46fe40": "0x8c46fe40"
    }
@@ -20626,7 +21271,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20655,7 +21301,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20682,7 +21329,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20703,7 +21351,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20724,7 +21373,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20771,7 +21421,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20797,7 +21448,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20821,7 +21473,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20938,7 +21591,8 @@
     "verdict": "equal",
     "scenarios": [
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -20970,6 +21624,13 @@
    "differing_bytes": 27,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c04b3e4": "0x8c04b3e4",
     "call_8c04b428": "0x8c04b428",
@@ -21004,7 +21665,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -21029,7 +21691,8 @@
     "verdict": "equal",
     "scenarios": [
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -21050,6 +21713,13 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TWindowStatus.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c0db30c": "0x8c0db30c",
     "call_8c0e2e98": "0x8c0e2e98",
@@ -21074,7 +21744,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -21104,7 +21775,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -21128,7 +21800,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -21151,7 +21824,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -21173,6 +21847,13 @@
    "differing_bytes": 35,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": "src/include/classes/TWindowSimpleStatus.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c418248": "0x8c418248",
     "hs_8c0db30c": "0x8c0db30c",
@@ -21638,6 +22319,12 @@
    "differing_bytes": 4,
    "provenance": "generator draft (mode switch2)",
    "class_header": "src/include/classes/TItemProArmor.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TItemEquipBase_ctor_8c20989c": "0x8c20989c",
     "operation_8c1c7658": "0x8c1c7658",
@@ -21656,6 +22343,12 @@
    "differing_bytes": 14,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TItemProArmor.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TItemTimerEvent_ctor_8c2236d0": "0x8c2236d0",
     "g_8c4d97e0": "0x8c4d97e0",
@@ -21729,7 +22422,7 @@
     "scenarios": [
      "offline start: new character to Pioneer 2"
     ],
-    "bytes_differ": 1
+    "bytes_differ": 2
    },
    "symbols": {
     "draw_dispatch_8c38e2d0": "0x8c38e2d0",
@@ -21966,6 +22659,12 @@
    "differing_bytes": 23,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0ec220": "0x8c0ec220",
     "call_8c380ab8": "0x8c380ab8",
@@ -21989,6 +22688,12 @@
    "differing_bytes": 23,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -22002,6 +22707,12 @@
    "differing_bytes": 46,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c467180": "0x8c467180",
     "operation_8c04b244": "0x8c04b244"
@@ -22135,6 +22846,12 @@
    "differing_bytes": 133,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": "src/include/classes/TObjLight.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjectShared_ctor_8c01d1ec": "0x8c01d1ec",
     "g_8c308dc8": "0x8c308dc8",
@@ -22152,6 +22869,13 @@
    "differing_bytes": 372,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TObjLight.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c01399c": "0x8c01399c",
     "call_8c3be280": "0x8c3be280",
@@ -23166,6 +23890,13 @@
    "differing_bytes": 1033,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "clip_and_scale_rectangle": "0x8c0de664",
@@ -23191,7 +23922,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {}
@@ -24303,6 +25035,12 @@
    "differing_bytes": 18,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c03d610": "0x8c03d610",
     "call_8c369eb8": "0x8c369eb8",
@@ -24855,6 +25593,13 @@
    "differing_bytes": 400,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "clip_and_scale_rectangle": "0x8c0de664",
@@ -25413,6 +26158,13 @@
    "differing_bytes": 136,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": "src/include/classes/TOBarrierEnergy01.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3845f0": "0x8c3845f0",
     "call_8c3be38c": "0x8c3be38c",
@@ -26545,6 +27297,15 @@
    "differing_bytes": 118,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "diverged",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ],
+    "first_divergence": "43399 RAM bytes differ outside timing noise, in BSS/globals"
+   },
    "symbols": {
     "operation_8c0dc63c": "0x8c0dc63c"
    }
@@ -26625,6 +27386,13 @@
    "differing_bytes": 111,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c37ebdc": "0x8c37ebdc",
     "call_8c380ab8": "0x8c380ab8",
@@ -27055,6 +27823,12 @@
    "differing_bytes": 186,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -27077,6 +27851,12 @@
    "differing_bytes": 18,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -27099,6 +27879,12 @@
    "differing_bytes": 186,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -27121,6 +27907,12 @@
    "differing_bytes": 18,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -27166,6 +27958,13 @@
    "differing_bytes": 10,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -27206,6 +28005,13 @@
    "differing_bytes": 2,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "lookup_low_id": "0x8c021ef8",
     "operation_8c026700": "0x8c026700"
@@ -27222,6 +28028,12 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "attach_and_insert_object": "0x8c053f34",
     "call_8c043ca4": "0x8c043ca4",
@@ -27239,6 +28051,12 @@
    "differing_bytes": 206,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TFogCtrl_EOR_ctor_8c1225a4": "0x8c1225a4",
     "file_load_8c104d00": "0x8c104d00",
@@ -27281,6 +28099,12 @@
    "differing_bytes": 61,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -27441,6 +28265,12 @@
    "differing_bytes": 18,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -27463,6 +28293,12 @@
    "differing_bytes": 185,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -27507,6 +28343,12 @@
    "differing_bytes": 184,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -28188,6 +29030,12 @@
    "differing_bytes": 18,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -28251,7 +29099,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -28274,7 +29123,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {}
@@ -28290,6 +29140,13 @@
    "differing_bytes": 57,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "diverged",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ],
+    "first_divergence": "66 RAM bytes differ outside timing noise, in heap/buffers"
+   },
    "symbols": {}
   },
   {
@@ -28303,6 +29160,13 @@
    "differing_bytes": 59,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -28372,6 +29236,12 @@
    "differing_bytes": 109,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c4d9a00": "0x8c4d9a00"
    }
@@ -28392,7 +29262,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ],
     "first_divergence": "called 166 times where the original is called 1623 times"
    },
@@ -28435,7 +29306,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -28563,7 +29435,8 @@
    "runtime": {
     "verdict": "diverged",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ],
     "first_divergence": "called 218300 times where the original is called 216717 times"
    },
@@ -28587,7 +29460,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -28611,7 +29485,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -28636,7 +29511,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -28658,6 +29534,14 @@
    "differing_bytes": 25,
    "provenance": "generator draft (mode passext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c12e8a4": "0x8c12e8a4",
     "g_8c285f58": "0x8c285f58"
@@ -30193,6 +31077,12 @@
    "differing_bytes": 268,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "ADXF_GetStat_8c34da3c": "0x8c34da3c",
     "call_8c34d4e8": "0x8c34d4e8",
@@ -30213,6 +31103,12 @@
    "differing_bytes": 182,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "errno_wrap_8c130390": "0x8c130390",
     "g_8c2f574c": "0x8c2f574c",
@@ -30253,6 +31149,12 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjAfsLoad_create_8c140848": "0x8c140848",
     "call_8c09bc54": "0x8c09bc54",
@@ -32277,6 +33179,12 @@
    "differing_bytes": 4,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": "src/include/classes/TWindowMenu.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen"
+    ]
+   },
    "symbols": {
     "draw_view_nodes": "0x8c0e1c48",
     "draw_view_transition_if_active": "0x8c0db51c",
@@ -32727,6 +33635,12 @@
    "differing_bytes": 186,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -32770,6 +33684,12 @@
    "differing_bytes": 18,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -34063,7 +34983,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -34190,6 +35111,13 @@
    "differing_bytes": 92,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c467870": "0x8c467870",
     "g_8c467874": "0x8c467874",
@@ -34753,6 +35681,12 @@
    "differing_bytes": 11,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "TQuestThread_ctor_1_8c173578": "0x8c173578",
@@ -36226,7 +37160,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {}
@@ -36314,6 +37249,12 @@
    "differing_bytes": 89,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c418248": "0x8c418248",
     "lookup_low_id": "0x8c021ef8"
@@ -36671,6 +37612,12 @@
    "differing_bytes": 252,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c319eac": "0x8c319eac",
     "g_8c46ee84": "0x8c46ee84",
@@ -36879,7 +37826,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -36929,7 +37877,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -37046,7 +37995,8 @@
     "scenarios": [
      "boot+title+opening movie",
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -37093,6 +38043,14 @@
    "differing_bytes": 40,
    "provenance": "generator draft (mode extern)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -37571,6 +38529,14 @@
    "differing_bytes": 4,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "TObject_dtor_8c03311c": "0x8c03311c",
@@ -37691,6 +38657,12 @@
    "differing_bytes": 119,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_1957c0": "0x8c1957c0",
     "operation_195990": "0x8c195990"
@@ -37707,6 +38679,12 @@
    "differing_bytes": 1482,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c38ef2c": "0x8c38ef2c",
     "g_8c28777c": "0x8c28777c",
@@ -37732,6 +38710,12 @@
    "differing_bytes": 297,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "rand": "0x8c12b944"
    }
@@ -37747,6 +38731,12 @@
    "differing_bytes": 360,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c31c25c": "0x8c31c25c"
    }
@@ -37850,6 +38840,13 @@
    "differing_bytes": 18,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c03dc40": "0x8c03dc40",
     "check_items_8c37d534": "0x8c37d534",
@@ -37870,6 +38867,13 @@
    "differing_bytes": 161,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": "src/include/classes/TAdBack.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -37883,6 +38887,13 @@
    "differing_bytes": 537,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": "src/include/classes/TAdBack.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0cd63c": "0x8c0cd63c",
     "call_8c37eb1c": "0x8c37eb1c",
@@ -38001,6 +39012,12 @@
    "differing_bytes": 8,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c467180": "0x8c467180",
     "g_8c4dc444": "0x8c4dc444",
@@ -38018,6 +39035,12 @@
    "differing_bytes": 57,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c380ab8": "0x8c380ab8",
     "call_8c3827d8": "0x8c3827d8",
@@ -38099,7 +39122,8 @@
     "verdict": "diverged",
     "scenarios": [
      "menu to registration screen",
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ],
     "first_divergence": "call 9 returns 1 where the original returns 0"
    },
@@ -38135,7 +39159,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -38774,6 +39799,12 @@
    "differing_bytes": 185,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -38796,6 +39827,12 @@
    "differing_bytes": 18,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -38818,6 +39855,12 @@
    "differing_bytes": 185,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -38840,6 +39883,12 @@
    "differing_bytes": 18,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -38862,6 +39911,12 @@
    "differing_bytes": 186,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjControl_ctor_8c0130ac": "0x8c0130ac",
     "call_8c121114": "0x8c121114",
@@ -39820,6 +40875,13 @@
    "differing_bytes": 59,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": "src/include/classes/TCineCtrl.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "backup_render_state": "0x8c0a2d30",
     "call_8c380ab8": "0x8c380ab8",
@@ -39865,6 +40927,13 @@
    "differing_bytes": 57,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c380ab8": "0x8c380ab8",
     "call_8c3827d8": "0x8c3827d8",
@@ -41106,6 +42175,13 @@
    "differing_bytes": 43,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": "src/include/classes/TObjCityMainWarp.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "call_8c3a944a": "0x8c3a944a",
@@ -41131,6 +42207,13 @@
    "differing_bytes": 27,
    "provenance": "generator draft (mode ccastext)",
    "class_header": "src/include/classes/TObjCityAreaWarp.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c4e2b80": "0x8c4e2b80",
     "g_8c4e2b84": "0x8c4e2b84"
@@ -41325,6 +42408,12 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0cd588": "0x8c0cd588",
     "call_8c3ac038": "0x8c3ac038",
@@ -41352,6 +42441,13 @@
    "differing_bytes": 29,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": "src/include/classes/TObjCityAirCar_Ctrl.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "TObjCityAirCar_Car_ctor_8c1c108c": "0x8c1c108c",
     "floor_e": "0x8c12b570",
@@ -41374,6 +42470,13 @@
    "differing_bytes": 240,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3ac038": "0x8c3ac038",
     "call_8c3bdf60": "0x8c3bdf60",
@@ -41394,6 +42497,13 @@
    "differing_bytes": 31,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TObjCityDoor_Shop.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "call_8c3ac53a": "0x8c3ac53a",
@@ -41416,6 +42526,13 @@
    "differing_bytes": 11,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": "src/include/classes/TObjCityDoor_Guild.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c4e2b84": "0x8c4e2b84",
     "hs_8c3827d8": "0x8c3827d8",
@@ -41439,6 +42556,13 @@
    "differing_bytes": 11,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TObjCityDoor_Warp.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "call_8c3ac53a": "0x8c3ac53a",
@@ -41461,6 +42585,13 @@
    "differing_bytes": 11,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TObjCityDoor_Med.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "call_8c3ac53a": "0x8c3ac53a",
@@ -42046,7 +43177,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -43521,6 +44653,13 @@
    "differing_bytes": 14,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c4e2ef4": "0x8c4e2ef4"
    }
@@ -43536,6 +44675,13 @@
    "differing_bytes": 86,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TObjCity_Season_XmasTree.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "call_8c3aa716": "0x8c3aa716",
@@ -43558,6 +44704,13 @@
    "differing_bytes": 28,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": "src/include/classes/TObjCity_Season_21_21.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c0cd63c": "0x8c0cd63c",
     "call_8c3827d8": "0x8c3827d8",
@@ -43582,6 +44735,13 @@
    "differing_bytes": 120,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TObjCity_Season_SonicAdv2.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "call_8c3addea": "0x8c3addea",
@@ -43623,6 +44783,12 @@
    "differing_bytes": 513,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c03d610": "0x8c03d610",
     "call_8c0cd588": "0x8c0cd588",
@@ -43897,6 +45063,13 @@
    "differing_bytes": 72,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "g_8c46718c": "0x8c46718c",
@@ -43921,6 +45094,13 @@
    "differing_bytes": 1930,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TWindowEff_ctor_8c22b298": "0x8c22b298",
     "TWindowKeyBoardSoft_state00_8c1e283c": "0x8c1e283c",
@@ -44031,6 +45211,12 @@
    "differing_bytes": 4,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": "src/include/classes/TWindowKeyBoardBase.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "destroy_context_8c0db244": "0x8c0db244",
     "g_8c4d97e0": "0x8c4d97e0",
@@ -44050,6 +45236,12 @@
    "differing_bytes": 199,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c04b3e4": "0x8c04b3e4",
     "call_8c1e12b0": "0x8c1e12b0",
@@ -44071,6 +45263,12 @@
    "differing_bytes": 151,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c04b428": "0x8c04b428",
     "operation_8c04b794": "0x8c04b794",
@@ -44111,6 +45309,12 @@
    "differing_bytes": 307,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c1f538c": "0x8c1f538c",
     "call_8c1f53aa": "0x8c1f53aa",
@@ -44594,6 +45798,12 @@
    "differing_bytes": 61,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c03d610": "0x8c03d610",
     "game_malloc_8c011ecc": "0x8c011ecc",
@@ -44664,6 +45874,12 @@
    "differing_bytes": 14,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0c4f08": "0x8c0c4f08",
     "g_8c418248": "0x8c418248",
@@ -44684,6 +45900,13 @@
    "differing_bytes": 16,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c418248": "0x8c418248",
     "g_8c4627c8": "0x8c4627c8",
@@ -44707,7 +45930,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -44732,7 +45956,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -44759,7 +45984,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -44781,6 +46007,13 @@
    "differing_bytes": 15,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
+    ]
+   },
    "symbols": {
     "g_8c418248": "0x8c418248",
     "g_8c4627c8": "0x8c4627c8",
@@ -44804,7 +46037,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -44829,7 +46063,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -44856,7 +46091,8 @@
    "runtime": {
     "verdict": "equal",
     "scenarios": [
-     "offline start: new character to Pioneer 2"
+     "offline start: new character to Pioneer 2",
+     "offline start: Pioneer 2 office walk and NPC dialogue"
     ]
    },
    "symbols": {
@@ -44981,6 +46217,13 @@
    "differing_bytes": 2,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "diverged",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ],
+    "first_divergence": "crashes the emulator at vblank 8014"
+   },
    "symbols": {
     "angle_between_xz": "0x8c0c539c",
     "operation_8c029b3c": "0x8c029b3c",
@@ -45553,6 +46796,12 @@
    "differing_bytes": 27,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -45598,6 +46847,12 @@
    "differing_bytes": 186,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c469b68": "0x8c469b68"
    }
@@ -46054,6 +47309,12 @@
    "differing_bytes": 4,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "get_current_area_8c032b10": "0x8c032b10",
     "operation_8c07484c": "0x8c07484c",
@@ -46073,6 +47334,12 @@
    "differing_bytes": 74,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c1c8094": "0x8c1c8094",
     "consume_8c20a420": "0x8c20a420",
@@ -46132,6 +47399,12 @@
    "differing_bytes": 10,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c504a20": "0x8c504a20",
     "g_8c504a24": "0x8c504a24"
@@ -46185,6 +47458,12 @@
    "differing_bytes": 141,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -46198,6 +47477,12 @@
    "differing_bytes": 100,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c20a80c": "0x8c20a80c",
     "call_8c210a0c": "0x8c210a0c",
@@ -48347,6 +49632,12 @@
    "differing_bytes": 147,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c227cb4": "0x8c227cb4"
    }
@@ -48367,7 +49658,7 @@
     "scenarios": [
      "offline start: new character to Pioneer 2"
     ],
-    "first_divergence": "RAM differs outside the function (132 bytes in heap/buffers), call I/O equal"
+    "first_divergence": "98 RAM bytes differ outside timing noise, in heap/buffers"
    },
    "symbols": {
     "backup_render_state": "0x8c0a2d30",
@@ -48727,6 +50018,12 @@
    "differing_bytes": 24,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TWindowEff.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -48740,6 +50037,12 @@
    "differing_bytes": 193,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": "src/include/classes/TWindowEff.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "backup_render_state": "0x8c0a2d30",
     "call_8c3827d8": "0x8c3827d8",
@@ -49934,10 +51237,11 @@
    "provenance": "hand pass on a generator draft",
    "class_header": null,
    "runtime": {
-    "verdict": "unverified",
+    "verdict": "diverged",
     "scenarios": [
      "offline start: new character to Pioneer 2"
-    ]
+    ],
+    "first_divergence": "crashes the emulator at vblank 7955"
    },
    "symbols": {
     "operation_2394dc": "0x8c2394dc",
@@ -52765,6 +54069,14 @@
    "differing_bytes": 182,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c300d68": "0x8c300d68",
     "g_8c300d74": "0x8c300d74",
@@ -52790,6 +54102,14 @@
    "differing_bytes": 10,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c46fee0": "0x8c46fee0",
     "operation_1c7dd4": "0x8c1c7dd4",
@@ -52807,6 +54127,14 @@
    "differing_bytes": 634,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c30a31c": "0x8c30a31c",
     "g_8c30a328": "0x8c30a328",
@@ -52852,6 +54180,14 @@
    "differing_bytes": 10,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c4d7d38": "0x8c4d7d38",
     "operation_1c7dd4": "0x8c1c7dd4",
@@ -52869,6 +54205,14 @@
    "differing_bytes": 589,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c310a88": "0x8c310a88",
     "g_8c310a94": "0x8c310a94",
@@ -52912,6 +54256,14 @@
    "differing_bytes": 690,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c316af8": "0x8c316af8",
     "g_8c316b04": "0x8c316b04",
@@ -52961,6 +54313,14 @@
    "differing_bytes": 260,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c31d634": "0x8c31d634",
     "g_8c31d650": "0x8c31d650",
@@ -52987,6 +54347,14 @@
    "differing_bytes": 870,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2875c0": "0x8c2875c0",
     "g_8c32613c": "0x8c32613c",
@@ -53040,6 +54408,14 @@
    "differing_bytes": 766,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2875c0": "0x8c2875c0",
     "g_8c3267b4": "0x8c3267b4",
@@ -53082,6 +54458,14 @@
    "differing_bytes": 1296,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2875c0": "0x8c2875c0",
     "g_8c326f60": "0x8c326f60",
@@ -53137,6 +54521,14 @@
    "differing_bytes": 1017,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2875c0": "0x8c2875c0",
     "g_8c327530": "0x8c327530",
@@ -53199,6 +54591,14 @@
    "differing_bytes": 285,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2e1534": "0x8c2e1534",
     "g_8c2e1550": "0x8c2e1550",

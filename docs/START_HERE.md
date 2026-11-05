@@ -49,7 +49,8 @@ regenerated at build time and earn no code or matching credit.
 
 [`nonmatching/`](../nonmatching/README.md) holds the closest non-matching C/C++ draft of
 2,386 functions that are not yet matched, each with a header that gives its differing lines,
-size against the reference, provenance and known gaps. It is for reading, modding and
+size against the reference, provenance, known gaps and, for 393 of them, an emulator A/B
+verdict (378 equal, 3 suspect, 10 diverged, 2 unverified). It is for reading, modding and
 porting only. It is never built or admitted and carries no matching credit. A draft is a
 good starting point for a matching attempt; promote it through the normal pipeline, then
 run `tools/nonmatching.py regenerate --prune-admitted`.

@@ -9,8 +9,9 @@
  * provenance: hand pass on a generator draft
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original; compiled size differs from the reference by -16 bytes
- * runtime: DIVERGED on menu to registration screen; offline start: new character to Pioneer 2
- *   (call 9 returns 1 where the original returns 0); known incorrect
+ * runtime: DIVERGED on menu to registration screen; offline start: new character to Pioneer 2;
+ *   offline start: Pioneer 2 office walk and NPC dialogue (call 9 returns 1 where the original
+ *   returns 0); known incorrect
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
