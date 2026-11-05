@@ -62,7 +62,7 @@ struct Arg0_5c {
     int f00;
 };
 extern S_c8c08ff88 *call_8c08ff88(Object *, void *);
-extern int call_8c0900a0(Object *, short);
+extern int operation_8c0900a0(Object *, short);
 extern void operation_8c090238(void *, int);
 extern void operation_8c090098(Object *, S_c8c08ff88 *);
 extern int operation_8c09010c(Object *);
@@ -81,7 +81,7 @@ void operation_8c08f4c8(Object *o)
     int t6;
     t1 = call_8c08ff88(o, (void *)(&o->f20));
     if (t1 != 0) {
-        t2 = call_8c0900a0(o, t1->f00);
+        t2 = operation_8c0900a0(o, t1->f00);
         if (t2 != 0) {
             *(Block64 *)&o->fbc = *(Block64 *)&t1->f04;
             *(Vector3 *)&o->f20 = *(Vector3 *)&o->fbc.f10;

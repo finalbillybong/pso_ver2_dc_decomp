@@ -9,7 +9,7 @@
   "todo_holes": false,
   "steering_forms": false
  },
- "count": 2432,
+ "count": 2430,
  "entries": [
   {
    "address": "0x8c0102e4",
@@ -4334,37 +4334,6 @@
     "operation_8c01d8a8": "0x8c01d8a8",
     "operation_8c100524": "0x8c100524",
     "play_se_8c05fbf8": "0x8c05fbf8"
-   }
-  },
-  {
-   "address": "0x8c0402c8",
-   "file": "nonmatching/objects/TQuadSpriteCol_render_8c0402c8.c",
-   "function": "TQuadSpriteCol_render_8c0402c8",
-   "language": "c",
-   "reference_size": 584,
-   "compiled_size": 584,
-   "differing_lines": 6,
-   "differing_bytes": 6,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "call_8c3827d8": "0x8c3827d8",
-    "call_8c3be280": "0x8c3be280",
-    "g_8c575528": "0x8c575528",
-    "g_8c57555c": "0x8c57555c",
-    "g_8c575560": "0x8c575560",
-    "reset_manager_record_slots": "0x8c0401fc",
-    "reset_state_8c391c94": "0x8c391c94",
-    "reset_state_8c391cc4": "0x8c391cc4",
-    "restore_child_blend": "0x8c0c532c",
-    "set_blend_5_6": "0x8c0c5364",
-    "set_blend_5_7": "0x8c0c5348",
-    "set_child_blend": "0x8c0c5310",
-    "sq_flush_8c38af12": "0x8c38af12",
-    "sq_header3_8c38b02e": "0x8c38b02e",
-    "sq_header_8c38af22": "0x8c38af22",
-    "sq_quad_8c38b09e": "0x8c38b09e",
-    "sq_select_8c38aeb4": "0x8c38aeb4"
    }
   },
   {
@@ -12159,9 +12128,9 @@
    "class_header": null,
    "symbols": {
     "call_8c08ff88": "0x8c08ff88",
-    "call_8c0900a0": "0x8c0900a0",
     "call_8c090198": "0x8c090198",
     "operation_8c090098": "0x8c090098",
+    "operation_8c0900a0": "0x8c0900a0",
     "operation_8c09010c": "0x8c09010c",
     "operation_8c090238": "0x8c090238",
     "operation_8c0bbab8": "0x8c0bbab8"
@@ -12229,21 +12198,6 @@
     "g_8c44be04": "0x8c44be04",
     "g_8c469dc8": "0x8c469dc8",
     "g_8c46ec54": "0x8c46ec54"
-   }
-  },
-  {
-   "address": "0x8c0900a0",
-   "file": "nonmatching/objects/operation_8c0900a0.c",
-   "function": "operation_8c0900a0",
-   "language": "c",
-   "reference_size": 92,
-   "compiled_size": 92,
-   "differing_lines": 8,
-   "differing_bytes": 4,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "get_current_area_8c032b10": "0x8c032b10"
    }
   },
   {

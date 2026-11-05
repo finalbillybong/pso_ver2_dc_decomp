@@ -21,7 +21,7 @@
     "config/decoded.json": "01389036e9422e6ea122422f145d1617a05bd26c264a7052819518a58d620c51",
     "config/extracts.json": "a55025a7acfd480df3b59f796c29ce7b33ed43289007106a840998d18c92d3ff",
     "config/matching-packages.json": "dfd312a9a20a9548f011d4bfbdbc26a2ed73bdcfceab55813ef532f0cf62b5a4",
-    "config/project.json": "a76479821309f5442da8d6667587c687be821442bc6e68b3cb11aa4e50c68549",
+    "config/project.json": "9e0d43b272d1ed15ff724cefecbc1209142f4966cfb17f3670f402395134e335",
     "config/samples.json": "1f6e71872de847f95c2cb5a85bfcec23b93706e87d4a601d600f8f66846c7b39",
     "pso.py": "cc12deabcd6b335641108713bbf4bd8f2b93a4e1692b73af30a879f34a6ca536",
     "src/data/strings_8c284858.c": "cb16255c8ce183afbcb89c956a8f571e4ce6ef906acf5d31baea03f9d8066228",
@@ -7037,6 +7037,7 @@
     "src/objects/operation_8c03ff08.c": "e00bd4d13aac4231ec3f2f5680bbb68d428a98ba8a22da40e4cd0b180ffa02f6",
     "src/objects/operation_8c040034.c": "c065c9f5b03f9c601252dc6444fa4238c8138f6bd7c28a609f10d3a44ab181b3",
     "src/objects/operation_8c0400b0.c": "c26c524738426728bc168f3aac6e3fc492efdf69e82681952e67a42c18ff28c6",
+    "src/objects/operation_8c0402c8.c": "e1a5dc6ff591a8056a253a775f7f928fa98623908a1df7032a80d3bf18fc39a1",
     "src/objects/operation_8c040804.c": "7d9bb12a1fbf3552c9d6fc35330f8c559f64f337f6e9d29a250d8fe18825e645",
     "src/objects/operation_8c040ab8.c": "247058cae60185a4bec470f04d1ac5fdf2418a4d0587d1cf68ff4eeb62199f91",
     "src/objects/operation_8c040d84.c": "4046c5eb30be4440e9df908351bad8e11931adc34540b8cf53f12fce257be704",
@@ -7951,6 +7952,7 @@
     "src/objects/operation_8c08feb8.c": "ecc85b374ad110c9c97f40ada520153e9d2510aa22c2ee5833795ac1e1cb197f",
     "src/objects/operation_8c08fefc.c": "28d748ef10fc2d9b734e7dc32661510192e705f315ca06c96ab7196f6ee08f19",
     "src/objects/operation_8c090098.c": "1c48d4ecfdbc352dd500fa248b54bd5651ff66823df50aec4148ae8e746c7a31",
+    "src/objects/operation_8c0900a0.c": "d69b0e0d3f882484d58b7e74bbc517e0ae8c6a1104dc6f8e36b0f164b543789e",
     "src/objects/operation_8c0900fc.c": "fa9a7237b5e528028faffd276bfe30bc7dddc8020733a47d9973e2e0e2df183f",
     "src/objects/operation_8c09010c.c": "cbd739950a6e8825e73886858d52b4f6cd4358a2dad1cc931a210c55297f7b54",
     "src/objects/operation_8c090238.c": "c777f589e977f0bae005f3ddb6a18bbbaedabf1fe322f11f21b7010006331b27",
@@ -28312,6 +28314,17 @@
       "off",
       "-O2"
     ],
+    "operation_8c0402c8": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
     "create_descriptor_managers": [
       "-proc",
       "SH4",
@@ -41511,6 +41524,17 @@
       "-O2"
     ],
     "operation_8c090098": [
+      "-proc",
+      "SH4",
+      "-endian",
+      "little",
+      "-mw_fp",
+      "hardware",
+      "-Cpp_exceptions",
+      "off",
+      "-O2"
+    ],
+    "operation_8c0900a0": [
       "-proc",
       "SH4",
       "-endian",
