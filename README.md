@@ -44,6 +44,9 @@ by mismatch symptom, with source examples and recorded limitations.
 are labelled NON-MATCHING, are never built or admitted, and carry no matching or
 progress credit. The build still uses fallback assembly for that code.
 
+[Modding and porting guide](docs/MODDING.md): what the tree contains, how to build and find
+things, and what is and is not supported when you change behaviour.
+
 ## Building
 
 You must supply your own matching game dump. No game binaries, assets, SDK

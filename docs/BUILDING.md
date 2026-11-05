@@ -95,8 +95,11 @@ local validation summaries are ignored by Git.
 python3 -B tools/project.py build --source-only
 ```
 
-**Expected to fail** while reference gaps remain (currently 4,158,972 bytes).
-That rejection is an intentional completion gate. No fallback is silently used.
+This builds the whole image without copying any byte from the reference: matched C/C++,
+typed data, SHC units, hand and fallback assembly generated from your dump, and the
+assets and dump extracts. It reports `source_only_build_exact: true` when the result
+equals the decoded image. Fallback assembly and dump extracts earn no matching credit;
+see [PROGRESS.md](PROGRESS.md) for the separate figures.
 
 To compare unresolved candidates:
 

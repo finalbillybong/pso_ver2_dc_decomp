@@ -6,6 +6,7 @@ Typed static data adds 524,768 bytes ([DATA.md](DATA.md)), for **43.4850% image 
 It retains **0 reference bytes**. This is a hybrid build; code-only completion and total function count are
 unknown. See [PROGRESS.md](PROGRESS.md) for source-bound verification and
 [BUILDING.md](BUILDING.md) to configure a new checkout with your own game dump.
+For reading, modding or porting rather than matching, start with [MODDING.md](MODDING.md).
 
 ## Parked unresolved targets
 
@@ -111,7 +112,7 @@ python3 -B tools/project.py build --source-only
 python3 -B tools/check_publication.py
 ```
 
-The source-only command is expected to reject the current gaps. Record progress
+The source-only command must report `source_only_build_exact: true`. Record progress
 after fresh exact verification and before tests of the source-bound public
 checkpoint. Admit only full matches, update queue status explicitly, and preserve
 source snapshots, hypotheses and compiler/comparison receipts for each experiment.
