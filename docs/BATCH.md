@@ -1,21 +1,24 @@
-# Reconstruction batch: 284: expanded candidate pool, part 88
+# Reconstruction batch: 285: expanded candidate pool, part 89
 
-2 new matching functions / 676 bytes. All 12323 prior functions preserved.
+2 new matching functions / 144 bytes. All 12325 prior functions preserved.
 
-12325 exact functions in 11394 modules; 1,285,330 compiled function-range bytes; 524,768 typed static-data bytes; 0 retained reference bytes. Code-range coverage 30.8757%, image coverage 43.4815%; neither is code completion.
+12327 exact functions in 11396 modules; 1,285,474 compiled function-range bytes; 524,768 typed static-data bytes; 0 retained reference bytes. Code-range coverage 30.8792%, image coverage 43.4850%; neither is code completion.
 
 | Function | Address | Complete bytes |
 | --- | --- | ---: |
-| operation_8c0402c8 | 0x8c0402c8 | 584 |
-| operation_8c0900a0 | 0x8c0900a0 | 92 |
+| operation_8c029bc0 | 0x8c029bc0 | 84 |
+| operation_8c2552bc | 0x8c2552bc | 60 |
 
 ## Method
 
-Batch 284 consists of two sources ported from admitted sibling functions.
+Batch 285 consists of two sources ported from admitted sibling functions.
 
-**Sibling ports, round 2.** The similarity search was repeated against the admitted set after batch 283, at a looser threshold: opcode-sequence ratio of at least 0.80, size within 15%. This gave 1,209 pairs over 177 unmatched functions. One new CodeWarrior target became exact by porting a function admitted in batch 283. Two further exact sources need the Hitachi SHC compiler and go through the SHC track separately.
+**Sibling ports, round 3.** This round looked for siblings by what functions reference rather than by instruction similarity. Admitted functions were ranked for each unmatched function by the Jaccard similarity of their referenced callees and globals (at least 0.5), with these further conditions:
+- size within ±25%;
+- the same number of calls;
+- an opcode-sequence ratio of at least 0.70.
 
-**Second attempt at `0x8c0402c8`.** In batch 283 the first trial of this unit failed to link: its source included a shared class header the trial unit could not declare, and the inlined form was compiled as C++ and mangled the entry symbol. That trial is recorded as non-exact. The resubmitted source is self-contained C: the class layout is defined in the unit and there is no include. It is recorded as a new, distinct hypothesis that addresses the recorded blocker. The history guard accepted it; it was not forced.
+This gave 146 pairs over 77 unmatched functions. Two targets became exact by adapting their sibling's C.
 
 These still hold:
 - full-range exact only, with the padding rule;
@@ -33,30 +36,26 @@ Before admission, the boundaries of every unit were checked:
 
 ## Measured attempts
 
-2 recorded attempts on 2 targets, both exact (one is the second hypothesis for `0x8c0402c8`, after the non-exact first trial in batch 283). 2 units / 2 functions / 676 bytes were admitted after two independent reproductions each, both hand-finished sources.
+2 recorded attempts on 2 targets, both exact. 2 units / 2 functions / 144 bytes were admitted after two independent reproductions each, both hand-finished sources.
 
 Disclosure:
 - Both admitted functions were first found exact in a scratch comparison, as logged in the pass's attempt log.
 - **Per function**, the change that made each source exact:
-  - `0x8c0402c8` (584 bytes), a quad-sprite render ported from the admitted `TQuadSpriteNormal_render_8c040804`:
-    - no early return;
-    - `sq_header3` at the top of the visible branch;
-    - the flush inside the group loop.
-    - The `TQuadSpriteNormal` layout is defined in the unit, with its dispatch pointer at 0x18.
-  - `0x8c0900a0` (92 bytes), an area-table lookup ported from the batch-283 admission `operation_8c08da4c`:
-    - table 0x8c2ee8b8;
-    - compare `k == id`;
-    - the index is incremented before the 16-byte entry step, and this statement order decides the add placement.
+  - `0x8c029bc0` (84 bytes): a packet send ported from `operation_8c02688c`.
+    - The packet header is overwritten to 0x0c/3, the same way the sibling overwrites 0x1a/1 with 0x2d/1.
+    - It also takes an 8-byte struct parameter, passed on the caller's stack and copied into the frame at +4.
+  - `0x8c2552bc` (60 bytes): an item update ported from `TItemMag_v44_8c07d1ac`.
+    - It calls `call_8c1931d4(o->f13c->f20, 1, o->f138 - 0x27, -1)` without the sibling's clamp and stores the result to f1c4.
+    - The struct layout is copied in under a neutral name; the source does not claim the sibling's class.
 
 Signatures are provisional. Parameter and return types come from the instruction shape and literal use; they are not confirmed against callers. Identifiers are mechanical, except where applied names are used.
 
 ## Parked and unresolved
 
-- The new sibling near misses are parked. Their residues are:
-  - delay-slot argument order;
-  - argument scheduling for `draw_extended_at`;
-  - the home-reload placement in `TFontSmallTask` constructor variants;
-  - register choice for a record copy.
+- The new near misses are parked. Their residues:
+  - scratch-register choice for a block-local draw pointer and an OR temporary;
+  - callee-saved colouring in a quest-opcode reader;
+  - delay-slot argument order.
 - Previously blocked targets stay blocked, and the three drafts held back in batch 224 remain held back.
 
 Code-only completion and total function count remain unknown.
