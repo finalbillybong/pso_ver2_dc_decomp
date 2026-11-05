@@ -3,12 +3,12 @@
  * function: TTecMegid_update_8c0b53cc
  * language: c
  * reference size: 328 bytes
- * compiled size: 332 bytes (+1.2%)
- * differing lines: 42 of 134 reference instruction lines
- * differing bytes: 193
+ * compiled size: 328 bytes (+0.0%)
+ * differing lines: 46 of 134 reference instruction lines
+ * differing bytes: 145
  * provenance: hand pass on a generator draft
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
- *   proven equivalent to the original; compiled size differs from the reference by +4 bytes
+ *   proven equivalent to the original
  * class header: src/include/classes/TTecMegid.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
@@ -41,7 +41,7 @@ struct Object {
     Arg0_5c *f5c;
     char unknown60[0x6c];
     int fcc;
-    unsigned short fd0;
+    short fd0;
 };
 struct Frame {
     float f00;
@@ -69,40 +69,27 @@ void TTecMegid_update_8c0b53cc(Object *o)
     Frame frame;
     unsigned int v2;
     int v3;
-    char *v4;
     int v1;
-    int t1;
-    t1 = lookup_object_by_id((unsigned short)(o->fd0));
-    o->f20 = (int)(t1);
+    o->f20 = lookup_object_by_id((unsigned short)o->fd0);
     if (o->f20 == 0) {
         o->f04 |= 1;
         return;
     }
-    v1 = (int)0x14c;
-    v2 = (unsigned int)0;
-    goto L_8c0b54a4;
-    v3 = (int)/* ? clobbered */ 0;
-    v4 = (char *)v2;
-L_8c0b53f8:;
-    if (((*(int *)((char *)((char *)*(S_vv3_0 **)((char *)((char *)v3 + 0x0) + ((int)((void *)&g_8c285640))) + 0x4) + ((int)(v4) << 3)) & 4)) != 0) {
-        *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&g_8c305274;
-        njPushMatrix_8c38ade4((void *)((void *)0x8c400500));
-        njRotateY_8c37df90(0, (void *)(o->f5c));
-        call_8c3be280(0, (void *)(&(&frame)->f0c), (void *)(&(&frame)->f0c));
-        njPopMatrix_8c38accc(1);
-        (&frame)->f00 = o->f24 + (&frame)->f0c.f00;
-        (&frame)->f04 = o->f28 + (&frame)->f0c.f04;
-        (&frame)->f08 = o->f2c + (&frame)->f0c.f08;
-        call_8c0a7608((void *)(*(Arg0_0_0 **)((char *)((char *)*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)) + 0x0) + ((int)(v4) << 2))), (Frame *)((&frame)));
-    } else {
-        call_8c0a7608((void *)(*(Arg0_0_0 **)((char *)((char *)*(Arg0_0 **)((char *)((char *)o + 0x0) + (v1)) + 0x0) + ((int)(v4) << 2))), (Frame *)(&o->f24));
-    }
-    v2 = (unsigned int)(v4 + 1);
-L_8c0b54a4:;
-    v3 = (int)(o->fcc << 3);
-    v4 = (char *)v2;
-    if ((unsigned int)*(int *)((char *)&g_8c285640.f04 + (o->fcc << 3)) > v2) {
-        goto L_8c0b53f8;
+    v1 = 0x14c;
+    for (v2 = 0; (v3 = o->fcc << 3, *(unsigned int *)((char *)&g_8c285640.f04 + v3) > v2); v2++) {
+        if ((*(int *)(*(char **)((char *)&g_8c285640 + v3) + 4 + (v2 << 3)) & 4) != 0) {
+            *(Vector3 *)&(&frame)->f0c = *(Vector3 *)&g_8c305274;
+            njPushMatrix_8c38ade4((void *)0x8c400500);
+            njRotateY_8c37df90(0, (void *)(o->f5c));
+            call_8c3be280(0, (void *)(&(&frame)->f0c), (void *)(&(&frame)->f0c));
+            njPopMatrix_8c38accc(1);
+            (&frame)->f00 = o->f24 + (&frame)->f0c.f00;
+            (&frame)->f04 = o->f28 + (&frame)->f0c.f04;
+            (&frame)->f08 = o->f2c + (&frame)->f0c.f08;
+            call_8c0a7608((void *)(*(Arg0_0_0 **)(*(char **)((char *)o + v1) + (v2 << 2))), &frame);
+        } else {
+            call_8c0a7608((void *)(*(Arg0_0_0 **)(*(char **)((char *)o + v1) + (v2 << 2))), (Frame *)(&o->f24));
+        }
     }
     operation_8c0b9d68(o);
     operation_8c0b9f74(o);

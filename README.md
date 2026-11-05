@@ -40,7 +40,7 @@ An exact hybrid image is not evidence of a complete decompilation.
 by mismatch symptom, with source examples and recorded limitations.
 
 [Non-matching draft archive](nonmatching/README.md): readable C/C++ drafts of
-2,451 functions that are not yet matched, for reading, modding and porting. They
+2,386 functions that are not yet matched, for reading, modding and porting. They
 are labelled NON-MATCHING, are never built or admitted, and carry no matching or
 progress credit. The build still uses fallback assembly for that code.
 

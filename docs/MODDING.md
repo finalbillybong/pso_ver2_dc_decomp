@@ -364,6 +364,9 @@ that address. Example header (`nonmatching/objects/bgm_play_area_8c100850.c`):
 - **known gaps** lists what is known to differ or be unverified.
 - **class header**, when present, points at the shared layout in `src/include/classes/`; the
   draft still uses its own local structs.
+- **runtime**, when present, is an emulator A/B verdict (`equal`, `suspect`, `DIVERGED` or
+  `unverified`); a `DIVERGED` draft is known to be incorrect. See
+  [Runtime verdicts](../nonmatching/README.md#runtime-verdicts).
 
 A draft is not proven equivalent to the original. Check it against the generated assembly
 (`<scratch>/project-build/asm-gen/`) before relying on it for a port.

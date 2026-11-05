@@ -117,6 +117,59 @@ class NonmatchingArchiveTests(unittest.TestCase):
         self.assertNotIn('class header:', (root / 'nonmatching/objects/TObjThing_update_8c001000.c').read_text())
         self.assertEqual(nonmatching.check(root), [])
 
+    def set_runtime(self, root, runtime):
+        path = root / 'config/nonmatching.json'
+        manifest = json.loads(path.read_text())
+        manifest['entries'][0]['runtime'] = runtime
+        path.write_text(json.dumps(manifest))
+
+    def test_runtime_verdict_line_is_written_preserved_and_validated(self):
+        root = self.fixture()
+        scenario = nonmatching.RUNTIME_SCENARIOS[2]
+        self.set_runtime(root, {'verdict': 'diverged', 'scenarios': [scenario],
+                                'first_divergence': 'call 1 returns 0 where the original returns 1'})
+        self.assertIn('runtime header line does not match', '\n'.join(nonmatching.check(root)))
+        nonmatching.regenerate(root)
+        path = root / 'nonmatching/objects/operation_8c001000.c'
+        text = path.read_text()
+        self.assertIn(' * runtime: DIVERGED on offline start: new character to Pioneer 2 (call 1 returns 0', text)
+        self.assertIn('known incorrect', text)
+        self.assertLess(text.index('runtime:'), text.index('*/'))
+        self.assertEqual(nonmatching.check(root), [])
+        # regenerate keeps the record and re-renders the (wrapped) line unchanged
+        self.assertEqual(nonmatching.regenerate(root), [])
+        self.assertEqual(json.loads((root / 'config/nonmatching.json').read_text())['entries'][0]['runtime']['verdict'], 'diverged')
+        self.assertEqual(nonmatching.parse_header(path.read_text())['runtime'],
+                         nonmatching.runtime_line({'verdict': 'diverged', 'scenarios': [scenario],
+                                                   'first_divergence': 'call 1 returns 0 where the original returns 1'}))
+        for bad, msg in [({'verdict': 'equal', 'scenarios': ['my house']}, 'scenarios must be'),
+                         ({'verdict': 'passed', 'scenarios': [scenario]}, 'verdict must be'),
+                         ({'verdict': 'suspect', 'scenarios': [scenario]}, 'needs exactly the keys'),
+                         ({'verdict': 'suspect', 'scenarios': [scenario], 'bytes_differ': 0}, 'positive integer')]:
+            with self.subTest(runtime=bad):
+                self.set_runtime(root, bad)
+                self.assertIn(msg, '\n'.join(nonmatching.check(root)))
+        self.set_runtime(root, None)
+        manifest = json.loads((root / 'config/nonmatching.json').read_text())
+        del manifest['entries'][0]['runtime']
+        (root / 'config/nonmatching.json').write_text(json.dumps(manifest))
+        self.assertIn('runtime header line without', '\n'.join(nonmatching.check(root)))
+        nonmatching.regenerate(root)
+        self.assertNotIn('runtime:', path.read_text())
+        self.assertEqual(nonmatching.check(root), [])
+
+    def test_runtime_lines(self):
+        a, b = nonmatching.RUNTIME_SCENARIOS[:2]
+        self.assertEqual(nonmatching.runtime_line({'verdict': 'equal', 'scenarios': [a, b]}),
+                         'equal on boot+title+opening movie; menu to registration screen '
+                         '(emulator A/B: RAM, trace and first-16-call I/O); not proof')
+        self.assertEqual(nonmatching.runtime_line({'verdict': 'suspect', 'scenarios': [a], 'bytes_differ': 24}),
+                         'suspect on boot+title+opening movie (24 bytes differ, I/O equal); not proof')
+        self.assertIn('replaces a draft that DIVERGED', nonmatching.runtime_line({'verdict': 'unverified', 'scenarios': [a]}))
+
+    def test_register_holes_fail_the_gate(self):
+        self.assertIn('register or value hole', '\n'.join(nonmatching.check(self.fixture(expr='call_8c002000(a /* ? r3 */)'))))
+
     def test_publication_allowlist(self):
         self.assertFalse(issues('nonmatching/objects/operation_8c001000.c', b'int x;'))
         self.assertFalse(issues('nonmatching/README.md', b'archive'))

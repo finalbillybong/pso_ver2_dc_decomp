@@ -3,12 +3,13 @@
  * function: operation_8c0c95ac
  * language: c++
  * reference size: 108 bytes
- * compiled size: 112 bytes (+3.7%)
- * differing lines: 6 of 41 reference instruction lines
- * differing bytes: 58
- * provenance: hand pass on a generator draft
- * known gaps: hand-revised from a generator draft; remaining differences not classified; not
- *   proven equivalent to the original; compiled size differs from the reference by +4 bytes
+ * compiled size: 116 bytes (+7.4%)
+ * differing lines: 18 of 44 reference instruction lines
+ * differing bytes: 71
+ * provenance: generator draft (mode bgotoext)
+ * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
+ *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
+ *   to the original; compiled size differs from the reference by +8 bytes
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {
@@ -127,23 +128,27 @@ typedef struct ObjectData {
 } ObjectData;
 extern "C" int lookup_object_by_id(unsigned short);
 extern "C" void run_actor_activation_callbacks(void *);
-extern "C" Object *operation_8c0c95ac(Object *o)
+extern "C" void operation_8c0c95ac(Object *o)
 {
     int v2;
-    int v3;
+    int v6;
     int v1;
     int t1;
     o->v97();
     o->v100();
-    v3 = (int)o;
     v1 = (int)0x400;
-    while (2 > v2) {
-        t1 = lookup_object_by_id((unsigned short)(*(unsigned short *)((char *)((char *)(v3 + v1) + 0x0) + (v2 << 1))));
-        if (t1 != 0) {
-            run_actor_activation_callbacks((void *)t1);
-        }
-        v3 = (int)/* ? clobbered */ 0;
-        v2 = (int)(v2 + 1);
+    v6 = (int)0;
+    goto L_8c0c95f4;
+    v2 = (int)0;
+L_8c0c95d6:;
+    t1 = lookup_object_by_id((unsigned short)(*(unsigned short *)((char *)((char *)(o + v1) + 0x0) + (v2 << 1))));
+    if (t1 != 0) {
+        run_actor_activation_callbacks((void *)t1);
     }
-    return o;
+    v6 = (int)(v2 + 1);
+L_8c0c95f4:;
+    v2 = (int)v6;
+    if (2 > v6) {
+        goto L_8c0c95d6;
+    }
 }

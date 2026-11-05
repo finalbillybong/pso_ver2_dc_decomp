@@ -9,6 +9,8 @@
  * provenance: hand pass on a generator draft
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original; compiled size differs from the reference by +4 bytes
+ * runtime: equal on boot+title+opening movie; menu to registration screen; offline start: new
+ *   character to Pioneer 2 (emulator A/B: RAM, trace and first-16-call I/O); not proof
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 int strlen_8c12b0cc(char *s)

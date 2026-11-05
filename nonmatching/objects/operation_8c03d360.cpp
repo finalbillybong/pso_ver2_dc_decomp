@@ -11,6 +11,8 @@
  *   register allocation, instruction scheduling, stack frame and spills, instruction or operand
  *   order; review found and fixed behaviour defects of the generator draft; not proven equivalent
  *   to the original; compiled size differs from the reference by +4 bytes
+ * runtime: equal on offline start: new character to Pioneer 2 (emulator A/B: RAM, trace and
+ *   first-16-call I/O); not proof
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Rec {

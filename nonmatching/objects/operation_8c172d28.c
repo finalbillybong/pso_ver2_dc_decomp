@@ -6,7 +6,7 @@
  * compiled size: 348 bytes (+0.0%)
  * differing lines: 10 of 138 reference instruction lines
  * differing bytes: 11
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode switch2ext)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original
@@ -20,7 +20,6 @@ typedef struct Vector3 {
 typedef struct S_g8c4d97e0 S_g8c4d97e0;
 typedef struct Object Object;
 typedef struct Arg0_ac Arg0_ac;
-typedef struct S_vv5 S_vv5;
 struct Object {
     char unknown0[0x4];
     short f04;
@@ -30,10 +29,6 @@ struct Object {
     Arg0_ac *fac;
     char unknownb0[0x4];
     int fb4;
-};
-struct S_vv5 {
-    char unknown0[0x4];
-    short f04;
 };
 extern S_g8c4d97e0 *g_8c4d97e0;
 extern Object *g_8c4db520;
@@ -51,7 +46,6 @@ extern void operation_03cee8_8c173484(void);
 Object *operation_8c172d28(Object *o, int a1, int a2, int a3)
 {
     Object **home = &o;
-    S_vv5 *v5;
     int t1;
     int t2;
     int t3;
@@ -64,12 +58,8 @@ Object *operation_8c172d28(Object *o, int a1, int a2, int a3)
     o->dispatch = (void *)0x8c270274;
     o->fb4 = a3;
     o->fac = (Arg0_ac *)0;
-    if (o->fb4 != 0) {
-        if (o->fb4 == 1) {
-            goto L_8c172de4;
-        }
-        v5 = (S_vv5 *)o;
-    } else {
+    switch (o->fb4) {
+    case 0:
         call_8c369eb8((void *)((void *)g_8c318df4));
         t1 = file_last_size_8c104d50(a2);
         t2 = game_malloc_buffer_8c011e9c((int)(t1 + 0x400));
@@ -83,7 +73,6 @@ Object *operation_8c172d28(Object *o, int a1, int a2, int a3)
             call_8c16bf4c((void *)(o->fac), (void *)(((char *)o + 0x28)));
             t4 = heap_alloc_8c122700(g_8c4d97e0, (unsigned int)0xa8);
             if (t4 == 0) {
-L_8c172dc8:;
                 for (;;) {
                 }
             }
@@ -92,25 +81,23 @@ L_8c172dc8:;
             }
         }
         operation_03cee8_8c173484();
-        v5 = (S_vv5 *)/* ? clobbered */ 0;
-        goto L_8c172e30;
-L_8c172de4:;
+        break;
+    case 1:
         t5 = file_last_size_8c104d50(a2);
         t6 = game_malloc_buffer_8c011e9c((int)(t5 + 0x400));
         o->fac = (Arg0_ac *)t6;
         t7 = file_load_8c104d00(a2, (void *)(o->fac));
         if (!(t7 >= 0)) {
             o->f04 |= 1;
-            v5 = (S_vv5 *)o;
             goto L_8c172e30;
         }
         g_8c4db524 = o;
         call_8c16bf4c((void *)(o->fac), (void *)(((char *)o + 0x28)));
-        v5 = (S_vv5 *)/* ? clobbered */ 0;
-        goto L_8c172e30;
-        v5 = (S_vv5 *)/* ? clobbered */ 0;
+        break;
+    default:
+        o->f04 |= 1;
+        break;
     }
-    v5->f04 |= 1;
 L_8c172e30:;
     return o;
 }

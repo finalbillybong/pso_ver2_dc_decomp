@@ -7,9 +7,10 @@
   "compiles_with_pinned_compiler": true,
   "size_tolerance": 0.25,
   "todo_holes": false,
-  "steering_forms": false
+  "steering_forms": false,
+  "register_holes": false
  },
- "count": 2421,
+ "count": 2386,
  "entries": [
   {
    "address": "0x8c0102e4",
@@ -92,27 +93,6 @@
    }
   },
   {
-   "address": "0x8c010bcc",
-   "file": "nonmatching/objects/operation_8c010bcc.cpp",
-   "function": "operation_8c010bcc",
-   "language": "c++",
-   "reference_size": 480,
-   "compiled_size": 480,
-   "differing_lines": 54,
-   "differing_bytes": 98,
-   "provenance": "hand pass on a generator draft (behaviour reviewed)",
-   "class_header": null,
-   "symbols": {
-    "call_8c037eb8": "0x8c037eb8",
-    "call_8c2280f0": "0x8c2280f0",
-    "call_8c3ca534": "0x8c3ca534",
-    "g_8c4621a8": "0x8c4621a8",
-    "operation_8c010dac": "0x8c010dac",
-    "operation_8c036544": "0x8c036544",
-    "wait_vsync_and_flip_8c380516": "0x8c380516"
-   }
-  },
-  {
    "address": "0x8c010e54",
    "file": "nonmatching/objects/operation_8c010e54.c",
    "function": "operation_8c010e54",
@@ -157,6 +137,12 @@
    "differing_bytes": 37,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c011e10": "0x8c011e10",
     "g_8c417b80": "0x8c417b80",
@@ -195,6 +181,12 @@
    "differing_bytes": 112,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c4dc5e0": "0x8c4dc5e0"
    }
@@ -232,30 +224,16 @@
    "differing_bytes": 474,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3845f0": "0x8c3845f0",
     "call_8c38a8e8": "0x8c38a8e8",
     "g_8c46f5a0": "0x8c46f5a0",
-    "g_8c46f620": "0x8c46f620",
-    "njScalor_8c37e480": "0x8c37e480",
-    "operation_8c011e8c": "0x8c011e8c",
-    "operation_8c011e90": "0x8c011e90",
-    "operation_8c011e94": "0x8c011e94",
-    "subtract_vector_components": "0x8c0c4f68"
-   }
-  },
-  {
-   "address": "0x8c011b94",
-   "file": "nonmatching/objects/operation_8c011b94.c",
-   "function": "operation_8c011b94",
-   "language": "c",
-   "reference_size": 636,
-   "compiled_size": 756,
-   "differing_lines": 480,
-   "differing_bytes": 694,
-   "provenance": "generator draft (mode extern)",
-   "class_header": null,
-   "symbols": {
     "g_8c46f620": "0x8c46f620",
     "njScalor_8c37e480": "0x8c37e480",
     "operation_8c011e8c": "0x8c011e8c",
@@ -275,6 +253,12 @@
    "differing_bytes": 12,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -429,6 +413,12 @@
    "differing_bytes": 52,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "call_8c013814": "0x8c013814",
@@ -457,6 +447,14 @@
    "differing_bytes": 431,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c418280": "0x8c418280",
     "g_8c44be8c": "0x8c44be8c",
@@ -1008,7 +1006,7 @@
    "compiled_size": 588,
    "differing_lines": 126,
    "differing_bytes": 230,
-   "provenance": "generator draft (mode bgotoext)",
+   "provenance": "generator draft (mode extern)",
    "class_header": null,
    "symbols": {
     "g_8c2e3014": "0x8c2e3014",
@@ -1303,6 +1301,12 @@
    "differing_bytes": 2,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "select_actor_animation": "0x8c01d17c"
    }
@@ -1318,6 +1322,12 @@
    "differing_bytes": 2,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "select_actor_animation": "0x8c01d17c"
    }
@@ -1333,6 +1343,12 @@
    "differing_bytes": 299,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "select_actor_animation": "0x8c01d17c"
    }
@@ -1365,6 +1381,14 @@
    "differing_bytes": 20,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -1378,6 +1402,13 @@
    "differing_bytes": 1199,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TObjPlayer.h",
+   "runtime": {
+    "verdict": "diverged",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ],
+    "first_divergence": "called 0 times where the original is called 1 time"
+   },
    "symbols": {
     "call_8c01fbe8": "0x8c01fbe8",
     "call_8c01fd90": "0x8c01fd90",
@@ -1535,6 +1566,12 @@
    "differing_bytes": 7,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c01c908": "0x8c01c908",
     "call_8c02ae70": "0x8c02ae70",
@@ -1582,6 +1619,12 @@
    "differing_bytes": 31,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c023d38": "0x8c023d38",
     "operation_8c023df0": "0x8c023df0",
@@ -1615,6 +1658,12 @@
    "differing_bytes": 27,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0439bc": "0x8c0439bc",
     "operation_8c0265b4": "0x8c0265b4",
@@ -1650,6 +1699,12 @@
    "differing_bytes": 218,
    "provenance": "generator draft (mode ccastext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -1678,6 +1733,12 @@
    "differing_bytes": 137,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -1946,6 +2007,12 @@
    "differing_bytes": 12,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -1975,6 +2042,12 @@
    "differing_bytes": 62,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "errno_wrap_8c130334": "0x8c130334",
     "njCos_8c38c154": "0x8c38c154",
@@ -1995,6 +2068,12 @@
    "differing_bytes": 70,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "errno_wrap_8c130334": "0x8c130334",
     "njCos_8c38c154": "0x8c38c154",
@@ -2120,6 +2199,12 @@
    "differing_bytes": 79,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c467188": "0x8c467188",
     "init_bytes": "0x8c027cd4",
@@ -2139,6 +2224,12 @@
    "differing_bytes": 50,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c025178": "0x8c025178",
     "operation_8c1a7194": "0x8c1a7194",
@@ -2245,6 +2336,12 @@
    "differing_bytes": 223,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c028860": "0x8c028860",
     "lookup_object_by_id": "0x8c053d84",
@@ -2304,6 +2401,12 @@
    "differing_bytes": 4,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
     "njPushMatrixEx_8c38ae68": "0x8c38ae68",
@@ -2917,6 +3020,12 @@
    "differing_bytes": 31,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c03153c": "0x8c03153c",
     "call_8c0315d8": "0x8c0315d8",
@@ -2935,6 +3044,12 @@
    "differing_bytes": 2,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e768": "0x8c18e768",
     "g_8c44be30": "0x8c44be30"
@@ -2951,6 +3066,12 @@
    "differing_bytes": 2,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e768": "0x8c18e768",
     "g_8c44be30": "0x8c44be30"
@@ -3124,21 +3245,6 @@
    }
   },
   {
-   "address": "0x8c0345cc",
-   "file": "nonmatching/objects/operation_8c0345cc.c",
-   "function": "operation_8c0345cc",
-   "language": "c",
-   "reference_size": 76,
-   "compiled_size": 80,
-   "differing_lines": 18,
-   "differing_bytes": 70,
-   "provenance": "generator draft (mode bgotoext)",
-   "class_header": null,
-   "symbols": {
-    "call_8c034484": "0x8c034484"
-   }
-  },
-  {
    "address": "0x8c034b20",
    "file": "nonmatching/objects/operation_8c034b20.c",
    "function": "operation_8c034b20",
@@ -3149,6 +3255,12 @@
    "differing_bytes": 308,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "strncpy_8c12b154": "0x8c12b154"
    }
@@ -3164,6 +3276,12 @@
    "differing_bytes": 6,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjCMLoadPlDataReq_create_8c13fe54": "0x8c13fe54",
     "call_8c034b20": "0x8c034b20",
@@ -3287,6 +3405,14 @@
    "differing_bytes": 533,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c2334de": "0x8c2334de",
     "call_8c233584": "0x8c233584",
@@ -3400,6 +3526,12 @@
    "differing_bytes": 2,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TGameProtocol.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2ed3dc": "0x8c2ed3dc",
     "g_8c2ed878": "0x8c2ed878",
@@ -3584,6 +3716,12 @@
    "differing_bytes": 24,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e808": "0x8c18e808",
     "memcpy_8c12b77c": "0x8c12b77c"
@@ -3600,6 +3738,12 @@
    "differing_bytes": 21,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e808": "0x8c18e808",
     "memcpy_8c12b77c": "0x8c12b77c"
@@ -4058,6 +4202,12 @@
    "differing_bytes": 592,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c03dd80": "0x8c03dd80",
     "call_8c1a86d0": "0x8c1a86d0",
@@ -4075,42 +4225,6 @@
    }
   },
   {
-   "address": "0x8c03d610",
-   "file": "nonmatching/objects/operation_8c03d610.c",
-   "function": "operation_8c03d610",
-   "language": "c",
-   "reference_size": 1508,
-   "compiled_size": 1500,
-   "differing_lines": 343,
-   "differing_bytes": 1023,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "call_8c03df30": "0x8c03df30",
-    "call_8c0787cc": "0x8c0787cc",
-    "call_8c18e768": "0x8c18e768",
-    "call_8c1a7f48": "0x8c1a7f48",
-    "call_8c3877a8": "0x8c3877a8",
-    "create_named_file_task": "0x8c0418ac",
-    "debug_error_stub_8c03ef80": "0x8c03ef80",
-    "drain_file_task_queue": "0x8c041970",
-    "g_8c2ef0e4": "0x8c2ef0e4",
-    "game_free_8c011ec0": "0x8c011ec0",
-    "game_malloc_buffer_8c011e9c": "0x8c011e9c",
-    "operation_8c03dbf4": "0x8c03dbf4",
-    "operation_8c03e010": "0x8c03e010",
-    "operation_8c03eb90": "0x8c03eb90",
-    "operation_8c03ebbc": "0x8c03ebbc",
-    "operation_8c03ef84": "0x8c03ef84",
-    "operation_8c1a7e14": "0x8c1a7e14",
-    "operation_8c1a7ef8": "0x8c1a7ef8",
-    "operation_8c1a8060": "0x8c1a8060",
-    "operation_8c1a8290": "0x8c1a8290",
-    "operator_new_8c18de4c": "0x8c18de4c",
-    "strncpy_8c12b154": "0x8c12b154"
-   }
-  },
-  {
    "address": "0x8c03dc40",
    "file": "nonmatching/objects/operation_8c03dc40.c",
    "function": "operation_8c03dc40",
@@ -4121,6 +4235,13 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c011ed8": "0x8c011ed8",
     "cancel_file_task": "0x8c04193c",
@@ -4157,10 +4278,10 @@
    "function": "operation_8c03df30",
    "language": "c",
    "reference_size": 224,
-   "compiled_size": 232,
-   "differing_lines": 54,
-   "differing_bytes": 125,
-   "provenance": "generator draft (mode bgotoext)",
+   "compiled_size": 224,
+   "differing_lines": 80,
+   "differing_bytes": 123,
+   "provenance": "hand pass on a generator draft",
    "class_header": null,
    "symbols": {
     "debug_error_stub_8c03ef80": "0x8c03ef80",
@@ -4195,6 +4316,13 @@
    "differing_bytes": 1751,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "diverged",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ],
+    "first_divergence": "called 4309 times where the original is called 37 times"
+   },
    "symbols": {
     "ADXF_GetFsizeSct_8c34d9b8": "0x8c34d9b8",
     "ADXF_GetStat_8c34da3c": "0x8c34da3c",
@@ -4250,6 +4378,14 @@
    "differing_bytes": 8,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TItemReverseTechCtrl_ctor_8c25c710": "0x8c25c710",
     "TObject_ctor_8c0330e4": "0x8c0330e4",
@@ -4332,41 +4468,16 @@
    "differing_bytes": 31,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2efec8": "0x8c2efec8"
-   }
-  },
-  {
-   "address": "0x8c041a2c",
-   "file": "nonmatching/objects/TQuadSpriteSclColRot_render_8c041a2c.c",
-   "function": "TQuadSpriteSclColRot_render_8c041a2c",
-   "language": "c",
-   "reference_size": 788,
-   "compiled_size": 784,
-   "differing_lines": 302,
-   "differing_bytes": 587,
-   "provenance": "hand pass on a generator draft (behaviour reviewed)",
-   "class_header": null,
-   "symbols": {
-    "call_8c3827d8": "0x8c3827d8",
-    "call_8c38b150": "0x8c38b150",
-    "call_8c3be280": "0x8c3be280",
-    "g_8c575528": "0x8c575528",
-    "g_8c57555c": "0x8c57555c",
-    "g_8c575560": "0x8c575560",
-    "njCos_8c38c154": "0x8c38c154",
-    "njSin_8c37eb0c": "0x8c37eb0c",
-    "reset_manager_record_slots": "0x8c0401fc",
-    "reset_state_8c391c94": "0x8c391c94",
-    "reset_state_8c391cc4": "0x8c391cc4",
-    "restore_child_blend": "0x8c0c532c",
-    "set_blend_5_6": "0x8c0c5364",
-    "set_blend_5_7": "0x8c0c5348",
-    "set_child_blend": "0x8c0c5310",
-    "sq_flush_8c38af12": "0x8c38af12",
-    "sq_header3_8c38b02e": "0x8c38b02e",
-    "sq_header_8c38af22": "0x8c38af22",
-    "sq_select_8c38aeb4": "0x8c38aeb4"
    }
   },
   {
@@ -4380,6 +4491,14 @@
    "differing_bytes": 9,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "errno_wrap_8c1302e4": "0x8c1302e4",
     "njRotateX_8c37dd28": "0x8c37dd28",
@@ -4403,45 +4522,6 @@
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
    "symbols": {}
-  },
-  {
-   "address": "0x8c042488",
-   "file": "nonmatching/objects/capture_frame_buffer_8c042488.cpp",
-   "function": "capture_frame_buffer_8c042488",
-   "language": "c++",
-   "reference_size": 1112,
-   "compiled_size": 1116,
-   "differing_lines": 280,
-   "differing_bytes": 747,
-   "provenance": "hand pass on a generator draft (behaviour reviewed)",
-   "class_header": null,
-   "symbols": {
-    "bu_check_busy_8c372d98": "0x8c372d98",
-    "call_8c0422d4": "0x8c0422d4",
-    "call_8c18e720": "0x8c18e720",
-    "call_8c36b024": "0x8c36b024",
-    "call_8c3727a0": "0x8c3727a0",
-    "call_8c37284a": "0x8c37284a",
-    "call_8c377d84": "0x8c377d84",
-    "call_8c38c8ac": "0x8c38c8ac",
-    "floor_e": "0x8c12b570",
-    "g_8c467874": "0x8c467874",
-    "get_current_area_8c032b10": "0x8c032b10",
-    "get_game_mode_8c01c25c": "0x8c01c25c",
-    "memcpy_8c12b77c": "0x8c12b77c",
-    "memset_8c12b880": "0x8c12b880",
-    "net_call_8c37293e": "0x8c37293e",
-    "operation_8c017ba8": "0x8c017ba8",
-    "operation_8c017bd4": "0x8c017bd4",
-    "operation_8c03ed10": "0x8c03ed10",
-    "operation_8c03ed64": "0x8c03ed64",
-    "operation_8c03ed70": "0x8c03ed70",
-    "operation_8c0c349c": "0x8c0c349c",
-    "reset_state_8c391cc4": "0x8c391cc4",
-    "strncpy_8c12b154": "0x8c12b154",
-    "vmu_save_file_timestamped_8c01024c": "0x8c01024c",
-    "wait_vsync_and_flip_8c380516": "0x8c380516"
-   }
   },
   {
    "address": "0x8c0430dc",
@@ -4470,6 +4550,12 @@
    "differing_bytes": 233,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e044": "0x8c18e044",
     "construct_random_state": "0x8c037d5c",
@@ -4501,6 +4587,12 @@
    "differing_bytes": 22,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -4869,22 +4961,6 @@
    "symbols": {}
   },
   {
-   "address": "0x8c04a3bc",
-   "file": "nonmatching/objects/operation_8c04a3bc.cpp",
-   "function": "operation_8c04a3bc",
-   "language": "c++",
-   "reference_size": 128,
-   "compiled_size": 108,
-   "differing_lines": 42,
-   "differing_bytes": 77,
-   "provenance": "generator draft (mode bgotoext)",
-   "class_header": null,
-   "symbols": {
-    "operation_04ab50": "0x8c04ab50",
-    "operation_8c027784": "0x8c027784"
-   }
-  },
-  {
    "address": "0x8c04a52c",
    "file": "nonmatching/objects/operation_8c04a52c.c",
    "function": "operation_8c04a52c",
@@ -4963,6 +5039,14 @@
    "differing_bytes": 99,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TNECFontEORFunction_ctor_8c04baf8": "0x8c04baf8",
     "call_8c38278e": "0x8c38278e",
@@ -4993,6 +5077,13 @@
    "differing_bytes": 106,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c04b3e4": "0x8c04b3e4",
     "call_8c04b428": "0x8c04b428",
@@ -5016,6 +5107,13 @@
    "differing_bytes": 6,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c04b48c": "0x8c04b48c",
     "g_8c467134": "0x8c467134",
@@ -5033,6 +5131,13 @@
    "differing_bytes": 11,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c04b5c8": "0x8c04b5c8",
     "g_8c467130": "0x8c467130",
@@ -5050,6 +5155,13 @@
    "differing_bytes": 162,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c04b6e0": "0x8c04b6e0",
     "g_8c467120": "0x8c467120",
@@ -5070,6 +5182,13 @@
    "differing_bytes": 168,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -5083,6 +5202,13 @@
    "differing_bytes": 27,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c284b00": "0x8c284b00",
     "g_8c46fe20": "0x8c46fe20"
@@ -5099,6 +5225,12 @@
    "differing_bytes": 39,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c04b794": "0x8c04b794",
     "operation_8c04b8b0": "0x8c04b8b0"
@@ -5159,6 +5291,14 @@
    "differing_bytes": 8,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "call_8c38a984": "0x8c38a984",
@@ -5772,30 +5912,6 @@
    }
   },
   {
-   "address": "0x8c052f94",
-   "file": "nonmatching/objects/operation_8c052f94.c",
-   "function": "operation_8c052f94",
-   "language": "c",
-   "reference_size": 2260,
-   "compiled_size": 2278,
-   "differing_lines": 560,
-   "differing_bytes": 2058,
-   "provenance": "generator draft (mode switch2)",
-   "class_header": null,
-   "symbols": {
-    "angle_difference": "0x8c0c52f4",
-    "call_8c3bdf60": "0x8c3bdf60",
-    "call_8c3be38c": "0x8c3be38c",
-    "errno_wrap_8c130334": "0x8c130334",
-    "njPopMatrixEx_8c38ad10": "0x8c38ad10",
-    "njPushMatrix_8c38ade4": "0x8c38ade4",
-    "njRotateY_8c37df90": "0x8c37df90",
-    "operation_8c011308": "0x8c011308",
-    "operation_8c054228": "0x8c054228",
-    "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
-   }
-  },
-  {
    "address": "0x8c053868",
    "file": "nonmatching/objects/operation_8c053868.c",
    "function": "operation_8c053868",
@@ -5838,32 +5954,6 @@
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
     "njPushMatrix_8c38ade4": "0x8c38ade4",
     "njRotateY_8c37df90": "0x8c37df90"
-   }
-  },
-  {
-   "address": "0x8c0542b0",
-   "file": "nonmatching/objects/TObjCGrass_ctor_8c0542b0.c",
-   "function": "TObjCGrass_ctor_8c0542b0",
-   "language": "c",
-   "reference_size": 580,
-   "compiled_size": 576,
-   "differing_lines": 110,
-   "differing_bytes": 523,
-   "provenance": "generator draft (mode extern)",
-   "class_header": "src/include/classes/TObjCGrass.h",
-   "symbols": {
-    "call_8c01c838": "0x8c01c838",
-    "call_8c3be38c": "0x8c3be38c",
-    "g_8c2f3140": "0x8c2f3140",
-    "g_8c44be9c": "0x8c44be9c",
-    "g_8c4678c0": "0x8c4678c0",
-    "njPopMatrix_8c38accc": "0x8c38accc",
-    "njPushMatrix_8c38ade4": "0x8c38ade4",
-    "njRotateY_8c37df90": "0x8c37df90",
-    "operation_8c011308": "0x8c011308",
-    "operation_8c01c488": "0x8c01c488",
-    "operator_new_8c18de4c": "0x8c18de4c",
-    "rand": "0x8c12b944"
    }
   },
   {
@@ -6078,36 +6168,6 @@
     "play_se_8c05fbf8": "0x8c05fbf8",
     "reset_link_8c05bf28": "0x8c05bf28",
     "set_fields_wrapper_8c05c184": "0x8c05c184",
-    "update_last_effect": "0x8c060770"
-   }
-  },
-  {
-   "address": "0x8c05659c",
-   "file": "nonmatching/objects/operation_8c05659c.cpp",
-   "function": "operation_8c05659c",
-   "language": "c++",
-   "reference_size": 1448,
-   "compiled_size": 1452,
-   "differing_lines": 338,
-   "differing_bytes": 1001,
-   "provenance": "generator draft (mode bgotoext)",
-   "class_header": null,
-   "symbols": {
-    "aim_direction_8c05bdd4": "0x8c05bdd4",
-    "call_8c055170": "0x8c055170",
-    "call_8c05c2dc": "0x8c05c2dc",
-    "call_8c05fd7c": "0x8c05fd7c",
-    "call_8c12c714": "0x8c12c714",
-    "call_8c18e768": "0x8c18e768",
-    "call_8c24e644": "0x8c24e644",
-    "errno_wrap_8c130334": "0x8c130334",
-    "njCos_8c38c154": "0x8c38c154",
-    "njSin_8c37eb0c": "0x8c37eb0c",
-    "object_random_fraction": "0x8c04aa9c",
-    "operation_8c01c5f0": "0x8c01c5f0",
-    "operation_8c059ea4": "0x8c059ea4",
-    "set_fields_wrapper_8c05c184": "0x8c05c184",
-    "slide_and_dispatch_contact": "0x8c05ae38",
     "update_last_effect": "0x8c060770"
    }
   },
@@ -7241,23 +7301,6 @@
    }
   },
   {
-   "address": "0x8c05e0a4",
-   "file": "nonmatching/objects/operation_8c05e0a4.cpp",
-   "function": "operation_8c05e0a4",
-   "language": "c++",
-   "reference_size": 688,
-   "compiled_size": 692,
-   "differing_lines": 34,
-   "differing_bytes": 456,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "call_8c05b410": "0x8c05b410",
-    "create_effect": "0x8c0a77e8",
-    "play_se_8c05fbf8": "0x8c05fbf8"
-   }
-  },
-  {
    "address": "0x8c05e3dc",
    "file": "nonmatching/objects/TObjEneRe2Flower_render_8c05e3dc.cpp",
    "function": "TObjEneRe2Flower_render_8c05e3dc",
@@ -7431,9 +7474,17 @@
    "reference_size": 440,
    "compiled_size": 448,
    "differing_lines": 72,
-   "differing_bytes": 346,
+   "differing_bytes": 347,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "unverified",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "bgm_init_adxt_8c100164": "0x8c100164",
     "call_8c34756c": "0x8c34756c",
@@ -7481,6 +7532,14 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c05fbdc": "0x8c05fbdc",
     "call_8c18e768": "0x8c18e768",
@@ -7516,6 +7575,14 @@
    "differing_bytes": 29,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c345918": "0x8c345918",
     "g_8c418248": "0x8c418248",
@@ -7542,6 +7609,13 @@
    "differing_bytes": 8,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3452e0": "0x8c3452e0",
     "call_8c3456fc": "0x8c3456fc",
@@ -7565,6 +7639,12 @@
    "differing_bytes": 11,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3452e0": "0x8c3452e0",
     "call_8c3456fc": "0x8c3456fc",
@@ -7626,6 +7706,14 @@
    "differing_bytes": 9,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c467a58": "0x8c467a58",
     "g_8c467a5c": "0x8c467a5c",
@@ -7649,6 +7737,14 @@
    "differing_bytes": 103,
    "provenance": "generator draft (mode switch2)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c100b20": "0x8c100b20"
    }
@@ -8178,37 +8274,6 @@
     "set_field_8c05af48": "0x8c05af48",
     "set_field_8c05af54": "0x8c05af54",
     "update_last_effect": "0x8c060770"
-   }
-  },
-  {
-   "address": "0x8c064ddc",
-   "file": "nonmatching/objects/TObjEneBm5Wolf_v111_8c064ddc.cpp",
-   "function": "TObjEneBm5Wolf_v111_8c064ddc",
-   "language": "c++",
-   "reference_size": 604,
-   "compiled_size": 600,
-   "differing_lines": 108,
-   "differing_bytes": 495,
-   "provenance": "generator draft (mode bgotoext)",
-   "class_header": "src/include/classes/TObjEneBm5Wolf.h",
-   "symbols": {
-    "call_8c05a0a8": "0x8c05a0a8",
-    "call_8c05ba9c": "0x8c05ba9c",
-    "call_8c3827d8": "0x8c3827d8",
-    "call_8c3addea": "0x8c3addea",
-    "debug_print_at_8c38cf80": "0x8c38cf80",
-    "g_8c2fcb6c": "0x8c2fcb6c",
-    "g_8c4688dc": "0x8c4688dc",
-    "lookup_object_by_id": "0x8c053d84",
-    "njPopMatrixEx_8c38ad10": "0x8c38ad10",
-    "njPushMatrixEx_8c38ae68": "0x8c38ae68",
-    "njRotateY_8c37df90": "0x8c37df90",
-    "njTranslate_8c3829bc": "0x8c3829bc",
-    "operation_8c0c5488": "0x8c0c5488",
-    "operation_8c1086fc": "0x8c1086fc",
-    "pack_ids_8c05a09c": "0x8c05a09c",
-    "reset_state_8c391cc4": "0x8c391cc4",
-    "translate_current_matrix_v_8c382a40": "0x8c382a40"
    }
   },
   {
@@ -9443,6 +9508,12 @@
    "differing_bytes": 99,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c074e48": "0x8c074e48",
     "clamp_int": "0x8c0c51c8",
@@ -9536,6 +9607,12 @@
    "differing_bytes": 49,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -9594,6 +9671,12 @@
    "differing_bytes": 214,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TItemEquipBase_ctor_8c20989c": "0x8c20989c",
     "operation_1ac120": "0x8c1ac120",
@@ -9648,6 +9731,12 @@
    "differing_bytes": 260,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c074dbc": "0x8c074dbc",
     "operation_8c1580b0": "0x8c1580b0"
@@ -10042,6 +10131,12 @@
    "differing_bytes": 27,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -11267,6 +11362,12 @@
    "differing_bytes": 135,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c469d20": "0x8c469d20"
    }
@@ -11561,6 +11662,12 @@
    "differing_bytes": 22,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2fff7c": "0x8c2fff7c",
     "g_8c2fff94": "0x8c2fff94",
@@ -13036,25 +13143,6 @@
    }
   },
   {
-   "address": "0x8c098178",
-   "file": "nonmatching/objects/operation_8c098178.c",
-   "function": "operation_8c098178",
-   "language": "c",
-   "reference_size": 628,
-   "compiled_size": 632,
-   "differing_lines": 92,
-   "differing_bytes": 312,
-   "provenance": "generator draft (mode extern)",
-   "class_header": null,
-   "symbols": {
-    "g_8c300de0": "0x8c300de0",
-    "njSin_8c37eb0c": "0x8c37eb0c",
-    "operation_195984": "0x8c195984",
-    "operation_195990": "0x8c195990",
-    "operation_8c09b33c": "0x8c09b33c"
-   }
-  },
-  {
    "address": "0x8c098734",
    "file": "nonmatching/objects/operation_8c098734.c",
    "function": "operation_8c098734",
@@ -13243,6 +13331,12 @@
    "differing_bytes": 38,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -13256,6 +13350,12 @@
    "differing_bytes": 252,
    "provenance": "generator draft (mode uctern)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -13623,6 +13723,12 @@
    "differing_bytes": 12,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -13934,6 +14040,14 @@
    "differing_bytes": 318,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c46ee80": "0x8c46ee80",
     "g_8c46efc8": "0x8c46efc8"
@@ -13996,6 +14110,14 @@
    "differing_bytes": 13,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": "src/include/classes/TCameraCtrl.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "g_8c303330": "0x8c303330",
@@ -14014,6 +14136,14 @@
    "differing_bytes": 137,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "advance_contact_position": "0x8c0a2608",
     "g_8c46efc8": "0x8c46efc8",
@@ -14037,6 +14167,14 @@
    "differing_bytes": 68,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c46ee80": "0x8c46ee80",
     "g_8c46efc8": "0x8c46efc8"
@@ -14053,6 +14191,14 @@
    "differing_bytes": 17,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c37e4c0": "0x8c37e4c0",
     "call_8c37e774": "0x8c37e774",
@@ -14109,6 +14255,12 @@
    "differing_bytes": 69,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -14154,6 +14306,12 @@
    "differing_bytes": 15,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c46efc8": "0x8c46efc8",
     "g_8c46efd4": "0x8c46efd4"
@@ -14360,6 +14518,14 @@
    "differing_bytes": 7,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "errno_wrap_8c130334": "0x8c130334",
     "signed_sqrt_8c37f6c0": "0x8c37f6c0"
@@ -15133,29 +15299,6 @@
    }
   },
   {
-   "address": "0x8c0b0b3c",
-   "file": "nonmatching/objects/operation_8c0b0b3c.c",
-   "function": "operation_8c0b0b3c",
-   "language": "c",
-   "reference_size": 840,
-   "compiled_size": 848,
-   "differing_lines": 220,
-   "differing_bytes": 789,
-   "provenance": "generator draft (mode bgotoext)",
-   "class_header": null,
-   "symbols": {
-    "call_8c0b99f4": "0x8c0b99f4",
-    "call_8c18e768": "0x8c18e768",
-    "create_effect_785c": "0x8c0a785c",
-    "create_effect_7ab8": "0x8c0a7ab8",
-    "emit_control_60320": "0x8c060320",
-    "g_8c285378": "0x8c285378",
-    "initialize_effect0_template": "0x8c0b10e4",
-    "operator_new_8c18de4c": "0x8c18de4c",
-    "play_se_8c05fbf8": "0x8c05fbf8"
-   }
-  },
-  {
    "address": "0x8c0b0e84",
    "file": "nonmatching/objects/operation_8c0b0e84.c",
    "function": "operation_8c0b0e84",
@@ -15321,31 +15464,6 @@
    }
   },
   {
-   "address": "0x8c0b262c",
-   "file": "nonmatching/objects/TTecGiZonde_ctor_8c0b262c.c",
-   "function": "TTecGiZonde_ctor_8c0b262c",
-   "language": "c",
-   "reference_size": 644,
-   "compiled_size": 640,
-   "differing_lines": 166,
-   "differing_bytes": 330,
-   "provenance": "hand pass on a generator draft",
-   "class_header": "src/include/classes/TTecGiZonde.h",
-   "symbols": {
-    "call_8c0b9730": "0x8c0b9730",
-    "call_8c18e044": "0x8c18e044",
-    "call_8c18e768": "0x8c18e768",
-    "create_effect_7ab8": "0x8c0a7ab8",
-    "create_effect_7cc0": "0x8c0a7cc0",
-    "emit_control_60320": "0x8c060320",
-    "g_8c285450": "0x8c285450",
-    "g_8c3051d0": "0x8c3051d0",
-    "initialize_effect7_template": "0x8c0b2f78",
-    "operation_8c07de9c": "0x8c07de9c",
-    "play_se_8c05fbf8": "0x8c05fbf8"
-   }
-  },
-  {
    "address": "0x8c0b28b0",
    "file": "nonmatching/objects/TTecGiZonde_update_8c0b28b0.c",
    "function": "TTecGiZonde_update_8c0b28b0",
@@ -15441,28 +15559,6 @@
     "heap_alloc_8c122700": "0x8c122700",
     "initialize_effect9_template": "0x8c0b38f4",
     "operation_8c0ad660": "0x8c0ad660"
-   }
-  },
-  {
-   "address": "0x8c0b32c0",
-   "file": "nonmatching/objects/operation_8c0b32c0.c",
-   "function": "operation_8c0b32c0",
-   "language": "c",
-   "reference_size": 468,
-   "compiled_size": 468,
-   "differing_lines": 4,
-   "differing_bytes": 4,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "TObject_ctor_8c0330e4": "0x8c0330e4",
-    "bind_id": "0x8c0a7628",
-    "call_8c18e768": "0x8c18e768",
-    "create_effect_7708": "0x8c0a7708",
-    "emit_control_60320": "0x8c060320",
-    "g_8c2854f8": "0x8c2854f8",
-    "operator_new_8c18de4c": "0x8c18de4c",
-    "play_se_8c05fbf8": "0x8c05fbf8"
    }
   },
   {
@@ -15637,9 +15733,9 @@
    "function": "TTecMegid_update_8c0b53cc",
    "language": "c",
    "reference_size": 328,
-   "compiled_size": 332,
-   "differing_lines": 42,
-   "differing_bytes": 193,
+   "compiled_size": 328,
+   "differing_lines": 46,
+   "differing_bytes": 145,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TTecMegid.h",
    "symbols": {
@@ -15860,29 +15956,6 @@
    }
   },
   {
-   "address": "0x8c0b7080",
-   "file": "nonmatching/objects/TTecRaBarta_ctor_2_8c0b7080.c",
-   "function": "TTecRaBarta_ctor_2_8c0b7080",
-   "language": "c",
-   "reference_size": 976,
-   "compiled_size": 972,
-   "differing_lines": 204,
-   "differing_bytes": 520,
-   "provenance": "generator draft (experimental generator, mode extern)",
-   "class_header": "src/include/classes/TTecRaBarta.h",
-   "symbols": {
-    "call_8c18e768": "0x8c18e768",
-    "create_effect_769c": "0x8c0a769c",
-    "emit_control_60320": "0x8c060320",
-    "g_8c285688": "0x8c285688",
-    "g_8c305300": "0x8c305300",
-    "initialize_effect5_template": "0x8c0b778c",
-    "operation_8c0ad45c": "0x8c0ad45c",
-    "operator_new_8c18de4c": "0x8c18de4c",
-    "play_se_8c05fbf8": "0x8c05fbf8"
-   }
-  },
-  {
    "address": "0x8c0b7450",
    "file": "nonmatching/objects/TTecRaBarta_update_8c0b7450.c",
    "function": "TTecRaBarta_update_8c0b7450",
@@ -15978,25 +16051,6 @@
    }
   },
   {
-   "address": "0x8c0b7fcc",
-   "file": "nonmatching/objects/operation_8c0b7fcc.c",
-   "function": "operation_8c0b7fcc",
-   "language": "c",
-   "reference_size": 564,
-   "compiled_size": 592,
-   "differing_lines": 238,
-   "differing_bytes": 526,
-   "provenance": "generator draft (mode extern)",
-   "class_header": null,
-   "symbols": {
-    "TObject_ctor_8c0330e4": "0x8c0330e4",
-    "create_effect_777c": "0x8c0a777c",
-    "g_8c2856f8": "0x8c2856f8",
-    "g_8c3053a8": "0x8c3053a8",
-    "g_8c46f380": "0x8c46f380"
-   }
-  },
-  {
    "address": "0x8c0b8200",
    "file": "nonmatching/objects/operation_8c0b8200.c",
    "function": "operation_8c0b8200",
@@ -16046,37 +16100,6 @@
     "njScale_8c37e2e4": "0x8c37e2e4",
     "step_effect_color_alpha": "0x8c0a03f4",
     "translate_current_matrix_v_8c382a40": "0x8c382a40"
-   }
-  },
-  {
-   "address": "0x8c0b871c",
-   "file": "nonmatching/objects/TTecRaZonde_ctor_8c0b871c.c",
-   "function": "TTecRaZonde_ctor_8c0b871c",
-   "language": "c",
-   "reference_size": 1140,
-   "compiled_size": 1172,
-   "differing_lines": 404,
-   "differing_bytes": 933,
-   "provenance": "hand pass on a generator draft",
-   "class_header": "src/include/classes/TTecRaZonde.h",
-   "symbols": {
-    "TTecZondeEff_ctor_2_8c0d0788": "0x8c0d0788",
-    "call_8c18e768": "0x8c18e768",
-    "create_effect_777c": "0x8c0a777c",
-    "create_effect_7cc0": "0x8c0a7cc0",
-    "emit_control_60320": "0x8c060320",
-    "g_8c285728": "0x8c285728",
-    "g_8c305358": "0x8c305358",
-    "g_8c44bea0": "0x8c44bea0",
-    "g_8c4d97e0": "0x8c4d97e0",
-    "heap_alloc_8c122700": "0x8c122700",
-    "initialize_effect8_template": "0x8c0b8cf0",
-    "njCos_8c38c154": "0x8c38c154",
-    "njScalor_8c37e480": "0x8c37e480",
-    "njSin_8c37eb0c": "0x8c37eb0c",
-    "njUnitVector_8c37b630": "0x8c37b630",
-    "operation_8c0ad45c": "0x8c0ad45c",
-    "play_se_8c05fbf8": "0x8c05fbf8"
    }
   },
   {
@@ -17292,6 +17315,12 @@
    "differing_bytes": 36,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -17305,6 +17334,12 @@
    "differing_bytes": 8,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c305fb8": "0x8c305fb8",
     "g_8c46f440": "0x8c46f440"
@@ -17321,6 +17356,12 @@
    "differing_bytes": 5,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -17433,6 +17474,12 @@
    "differing_bytes": 56,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -17446,6 +17493,12 @@
    "differing_bytes": 7,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "errno_wrap_8c130334": "0x8c130334",
     "signed_sqrt_8c37f6c0": "0x8c37f6c0"
@@ -17462,6 +17515,12 @@
    "differing_bytes": 7,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "errno_wrap_8c130334": "0x8c130334",
     "signed_sqrt_8c37f6c0": "0x8c37f6c0"
@@ -18039,10 +18098,10 @@
    "function": "operation_8c0c95ac",
    "language": "c++",
    "reference_size": 108,
-   "compiled_size": 112,
-   "differing_lines": 6,
-   "differing_bytes": 58,
-   "provenance": "hand pass on a generator draft",
+   "compiled_size": 116,
+   "differing_lines": 18,
+   "differing_bytes": 71,
+   "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
    "symbols": {
     "lookup_object_by_id": "0x8c053d84",
@@ -18573,6 +18632,14 @@
    "differing_bytes": 10,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "count_node_array_tree": "0x8c0cd7b4",
     "fill_node_array_tree": "0x8c0cd920",
@@ -18593,6 +18660,13 @@
    "differing_bytes": 115,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e8a0": "0x8c18e8a0"
    }
@@ -18608,6 +18682,14 @@
    "differing_bytes": 171,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -18621,6 +18703,14 @@
    "differing_bytes": 111,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -19948,6 +20038,12 @@
    "differing_bytes": 284,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "call_8c18e044": "0x8c18e044",
@@ -20131,6 +20227,12 @@
    "differing_bytes": 32,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0da5f4": "0x8c0da5f4",
     "hierarchy_is_active": "0x8c03347c",
@@ -20152,6 +20254,12 @@
    "differing_bytes": 93,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3845f0": "0x8c3845f0",
     "njCos_8c38c154": "0x8c38c154",
@@ -20192,6 +20300,14 @@
    "differing_bytes": 22,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3827d8": "0x8c3827d8",
     "call_8c38a984": "0x8c38a984",
@@ -20217,6 +20333,13 @@
    "differing_bytes": 59,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c3073c4": "0x8c3073c4",
     "g_8c3073fc": "0x8c3073fc",
@@ -20234,6 +20357,13 @@
    "differing_bytes": 347,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c46fe00": "0x8c46fe00",
     "hs_8c0db800": "0x8c0db800",
@@ -20254,6 +20384,13 @@
    "differing_bytes": 335,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "sq_quad_8c38b09e": "0x8c38b09e"
    }
@@ -20341,6 +20478,12 @@
    "differing_bytes": 479,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen"
+    ]
+   },
    "symbols": {
     "clip_and_scale_rectangle": "0x8c0de664",
     "g_8c307420": "0x8c307420",
@@ -20365,6 +20508,13 @@
    "differing_bytes": 4,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0e196c": "0x8c0e196c",
     "g_8c3073c0": "0x8c3073c0",
@@ -20401,6 +20551,12 @@
    "differing_bytes": 2,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -20431,6 +20587,14 @@
    "differing_bytes": 113,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -20459,6 +20623,12 @@
    "differing_bytes": 42,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TWindowFukidasi.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0e0060": "0x8c0e0060",
     "g_8c3074b0": "0x8c3074b0",
@@ -20482,6 +20652,12 @@
    "differing_bytes": 659,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0df074": "0x8c0df074",
     "call_8c3827d8": "0x8c3827d8",
@@ -20503,6 +20679,12 @@
    "differing_bytes": 73,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c38b150": "0x8c38b150"
    }
@@ -20518,6 +20700,12 @@
    "differing_bytes": 343,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c46ee80": "0x8c46ee80"
    }
@@ -20533,6 +20721,12 @@
    "differing_bytes": 16,
    "provenance": "hand pass on a generator draft (address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c467184": "0x8c467184",
     "hs_8c087348": "0x8c087348",
@@ -20574,6 +20768,12 @@
    "differing_bytes": 29,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c4e2ba8": "0x8c4e2ba8",
     "g_8c4e2bac": "0x8c4e2bac",
@@ -20594,6 +20794,12 @@
    "differing_bytes": 2,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "lookup_object_by_id": "0x8c053d84",
     "njPopMatrixEx_8c38ad10": "0x8c38ad10",
@@ -20612,6 +20818,12 @@
    "differing_bytes": 25,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0dfe4c": "0x8c0dfe4c",
     "call_8c0e0428": "0x8c0e0428",
@@ -20722,6 +20934,13 @@
    "differing_bytes": 562,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c1048b0": "0x8c1048b0",
     "call_8c104958": "0x8c104958",
@@ -20782,6 +21001,12 @@
    "differing_bytes": 12,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e768": "0x8c18e768",
     "call_8c18e8a0": "0x8c18e8a0",
@@ -20800,6 +21025,13 @@
    "differing_bytes": 4,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c257e3c": "0x8c257e3c",
     "operator_delete_8c18de08": "0x8c18de08",
@@ -20839,6 +21071,12 @@
    "differing_bytes": 520,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0e2d6c": "0x8c0e2d6c",
     "call_8c37e29c": "0x8c37e29c",
@@ -20863,6 +21101,12 @@
    "differing_bytes": 8,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "lookup_low_id": "0x8c021ef8",
     "normalize_rectangle_fields": "0x8c104bec",
@@ -20881,6 +21125,12 @@
    "differing_bytes": 126,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c391be0": "0x8c391be0",
     "njCos_8c38c154": "0x8c38c154",
@@ -20898,6 +21148,12 @@
    "differing_bytes": 91,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0e1f40": "0x8c0e1f40",
     "call_8c0f7830": "0x8c0f7830",
@@ -20988,47 +21244,6 @@
     "operation_8c011214": "0x8c011214",
     "operation_8c012a14": "0x8c012a14",
     "query_capped_segment": "0x8c0440dc",
-    "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
-   }
-  },
-  {
-   "address": "0x8c0e3ce8",
-   "file": "nonmatching/objects/operation_8c0e3ce8.cpp",
-   "function": "operation_8c0e3ce8",
-   "language": "c++",
-   "reference_size": 1536,
-   "compiled_size": 1552,
-   "differing_lines": 244,
-   "differing_bytes": 1243,
-   "provenance": "generator draft (mode switch2ext)",
-   "class_header": null,
-   "symbols": {
-    "TEffHit_create_8c0a061c": "0x8c0a061c",
-    "angle_step": "0x8c0c4f90",
-    "call_8c0123d8": "0x8c0123d8",
-    "call_8c012810": "0x8c012810",
-    "call_8c0446f8": "0x8c0446f8",
-    "call_8c12c714": "0x8c12c714",
-    "call_8c3bdf60": "0x8c3bdf60",
-    "call_8c3be38c": "0x8c3be38c",
-    "errno_wrap_8c130334": "0x8c130334",
-    "g_8c467874": "0x8c467874",
-    "g_8c46f5a0": "0x8c46f5a0",
-    "g_8c46f5c0": "0x8c46f5c0",
-    "gc_8c46f5c0": "0x8c46f5c0",
-    "minimap_add_marker_8c102cd0": "0x8c102cd0",
-    "njPopMatrix_8c38accc": "0x8c38accc",
-    "njPushMatrix_8c38ade4": "0x8c38ade4",
-    "njRotateY_8c37df90": "0x8c37df90",
-    "operation_8c01c5f0": "0x8c01c5f0",
-    "operation_8c04a43c": "0x8c04a43c",
-    "operation_8c051ff4": "0x8c051ff4",
-    "operation_8c05428c": "0x8c05428c",
-    "operation_8c0e4ffc": "0x8c0e4ffc",
-    "operation_8c0e50e0": "0x8c0e50e0",
-    "set_330": "0x8c04a7d8",
-    "squared_distance_xz": "0x8c0c5460",
-    "transform_actor_records": "0x8c053c70",
     "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
    }
   },
@@ -21509,6 +21724,13 @@
    "differing_bytes": 64,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "suspect",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ],
+    "bytes_differ": 1
+   },
    "symbols": {
     "draw_dispatch_8c38e2d0": "0x8c38e2d0",
     "njCos_8c38c154": "0x8c38c154",
@@ -21705,6 +21927,12 @@
    "differing_bytes": 42,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TAdBack_ctor_8c198294": "0x8c198294",
     "TAdDrawLineCtrl_create_8c227b34": "0x8c227b34",
@@ -21790,6 +22018,12 @@
    "differing_bytes": 877,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TAdBack_ctor_8c198294": "0x8c198294",
     "TAdDrawLineCtrl_create_8c227b34": "0x8c227b34",
@@ -22954,6 +23188,12 @@
    "differing_bytes": 64,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -23788,36 +24028,6 @@
    }
   },
   {
-   "address": "0x8c0fdc48",
-   "file": "nonmatching/objects/TOMineTrap_ctor_8c0fdc48.c",
-   "function": "TOMineTrap_ctor_8c0fdc48",
-   "language": "c",
-   "reference_size": 1352,
-   "compiled_size": 1352,
-   "differing_lines": 410,
-   "differing_bytes": 741,
-   "provenance": "hand pass on a generator draft",
-   "class_header": "src/include/classes/TOMineTrap.h",
-   "symbols": {
-    "TOMine_ctor_8c0fcd7c": "0x8c0fcd7c",
-    "attach_and_insert_object": "0x8c053f34",
-    "copy_actor_records": "0x8c052098",
-    "g_8c2e2ad8": "0x8c2e2ad8",
-    "g_8c30ab08": "0x8c30ab08",
-    "g_8c30ab0c": "0x8c30ab0c",
-    "g_8c30ab10": "0x8c30ab10",
-    "g_8c44be04": "0x8c44be04",
-    "g_8c44be98": "0x8c44be98",
-    "g_8c4703c0": "0x8c4703c0",
-    "g_8c4706a0": "0x8c4706a0",
-    "g_8c4706a4": "0x8c4706a4",
-    "get_current_area_8c032b10": "0x8c032b10",
-    "lookup_low_id": "0x8c021ef8",
-    "operation_2391f4": "0x8c2391f4",
-    "update_object_center": "0x8c043950"
-   }
-  },
-  {
    "address": "0x8c0fe888",
    "file": "nonmatching/objects/operation_8c0fe888.c",
    "function": "operation_8c0fe888",
@@ -24047,6 +24257,12 @@
    "differing_bytes": 83,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "ADXT_StartMemIdx_8c350fda": "0x8c350fda",
     "call_8c350152": "0x8c350152",
@@ -24121,6 +24337,12 @@
    "differing_bytes": 364,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjectShared_ctor_8c01d1ec": "0x8c01d1ec",
     "TObject_ctor_8c0330e4": "0x8c0330e4",
@@ -24597,6 +24819,12 @@
    "differing_bytes": 89,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "initialize_fields_8c0e14ac": "0x8c0e14ac"
    }
@@ -24650,6 +24878,14 @@
    "differing_bytes": 18,
    "provenance": "generator draft (mode switch2)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "g_8c30b61c": "0x8c30b61c",
@@ -24673,6 +24909,14 @@
    "differing_bytes": 4,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c037eb8": "0x8c037eb8",
     "call_8c0787cc": "0x8c0787cc",
@@ -25582,6 +25826,12 @@
    "differing_bytes": 2,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "call_8c10be58": "0x8c10be58",
@@ -26116,6 +26366,14 @@
    "differing_bytes": 315,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c011eb4": "0x8c011eb4",
     "call_8c18e768": "0x8c18e768",
@@ -26302,6 +26560,13 @@
    "differing_bytes": 13,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TWindowMessage_ctor_8c119470": "0x8c119470",
     "g_8c31064c": "0x8c31064c",
@@ -26320,6 +26585,13 @@
    "differing_bytes": 16,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0e2278": "0x8c0e2278",
     "operation_8c0e2328": "0x8c0e2328",
@@ -26871,6 +27143,12 @@
    "differing_bytes": 10,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObjEnemy_ctor_8c012008": "0x8c012008",
     "g_8c311c34": "0x8c311c34",
@@ -27947,6 +28225,12 @@
    "differing_bytes": 50,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "scanf_core": "0x8c12c760"
    }
@@ -27962,6 +28246,14 @@
    "differing_bytes": 50,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "vsprintf_8c12d5e0": "0x8c12d5e0"
    }
@@ -27977,6 +28269,14 @@
    "differing_bytes": 16,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -28087,6 +28387,15 @@
    "differing_bytes": 199,
    "provenance": "generator draft (mode extern)",
    "class_header": null,
+   "runtime": {
+    "verdict": "diverged",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ],
+    "first_divergence": "called 166 times where the original is called 1623 times"
+   },
    "symbols": {}
   },
   {
@@ -28100,32 +28409,14 @@
    "differing_bytes": 18,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
-   "symbols": {}
-  },
-  {
-   "address": "0x8c12bdc8",
-   "file": "nonmatching/objects/operation_8c12bdc8.c",
-   "function": "operation_8c12bdc8",
-   "language": "c",
-   "reference_size": 12,
-   "compiled_size": 12,
-   "differing_lines": 12,
-   "differing_bytes": 12,
-   "provenance": "generator draft (mode bgotoext)",
-   "class_header": null,
-   "symbols": {}
-  },
-  {
-   "address": "0x8c12bdd4",
-   "file": "nonmatching/objects/operation_8c12bdd4.c",
-   "function": "operation_8c12bdd4",
-   "language": "c",
-   "reference_size": 16,
-   "compiled_size": 12,
-   "differing_lines": 12,
-   "differing_bytes": 15,
-   "provenance": "generator draft (mode bgotoext)",
-   "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -28139,6 +28430,14 @@
    "differing_bytes": 40,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c285de8": "0x8c285de8"
    }
@@ -28193,25 +28492,6 @@
     "make_float": "0x8c12f160",
     "memcpy_8c12b77c": "0x8c12b77c",
     "memset_8c12b880": "0x8c12b880"
-   }
-  },
-  {
-   "address": "0x8c12c390",
-   "file": "nonmatching/objects/operation_8c12c390.c",
-   "function": "operation_8c12c390",
-   "language": "c",
-   "reference_size": 172,
-   "compiled_size": 160,
-   "differing_lines": 112,
-   "differing_bytes": 161,
-   "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
-   "class_header": null,
-   "symbols": {
-    "bytes_shl": "0x8c12ef9c",
-    "bytes_shl1": "0x8c12ef54",
-    "hs_8c12ba9c": "0x8c12ba9c",
-    "hs_8c12c12c": "0x8c12c12c",
-    "memcpy_8c12b77c": "0x8c12b77c"
    }
   },
   {
@@ -28280,6 +28560,13 @@
    "differing_bytes": 69,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "diverged",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ],
+    "first_divergence": "called 218300 times where the original is called 216717 times"
+   },
    "symbols": {
     "g_8c4d9a00": "0x8c4d9a00"
    }
@@ -28295,6 +28582,14 @@
    "differing_bytes": 25,
    "provenance": "generator draft (mode passext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c12dfc8": "0x8c12dfc8",
     "g_8c2861f8": "0x8c2861f8"
@@ -28311,6 +28606,14 @@
    "differing_bytes": 79,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2861f0": "0x8c2861f0",
     "g_8c286220": "0x8c286220",
@@ -28328,6 +28631,14 @@
    "differing_bytes": 178,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2861d0": "0x8c2861d0",
     "g_8c2861d4": "0x8c2861d4",
@@ -28404,28 +28715,6 @@
    }
   },
   {
-   "address": "0x8c12f288",
-   "file": "nonmatching/objects/operation_8c12f288.c",
-   "function": "operation_8c12f288",
-   "language": "c",
-   "reference_size": 340,
-   "compiled_size": 340,
-   "differing_lines": 202,
-   "differing_bytes": 270,
-   "provenance": "generator draft (mode extern)",
-   "class_header": null,
-   "symbols": {
-    "call_8c12ba9c": "0x8c12ba9c",
-    "call_8c12bc48": "0x8c12bc48",
-    "call_8c12f0b4": "0x8c12f0b4",
-    "call_8c12f1cc": "0x8c12f1cc",
-    "call_8c12f3dc": "0x8c12f3dc",
-    "g_8c2861c0": "0x8c2861c0",
-    "memcpy_8c12b77c": "0x8c12b77c",
-    "memset_8c12b880": "0x8c12b880"
-   }
-  },
-  {
    "address": "0x8c12f4c8",
    "file": "nonmatching/objects/operation_8c12f4c8.c",
    "function": "operation_8c12f4c8",
@@ -28435,19 +28724,6 @@
    "differing_lines": 51,
    "differing_bytes": 74,
    "provenance": "generator draft (mode bgotoext)",
-   "class_header": null,
-   "symbols": {}
-  },
-  {
-   "address": "0x8c12f514",
-   "file": "nonmatching/objects/operation_8c12f514.c",
-   "function": "operation_8c12f514",
-   "language": "c",
-   "reference_size": 88,
-   "compiled_size": 88,
-   "differing_lines": 52,
-   "differing_bytes": 77,
-   "provenance": "generator draft (mode uctern)",
    "class_header": null,
    "symbols": {}
   },
@@ -28762,6 +29038,12 @@
    "differing_bytes": 206,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3889a4": "0x8c3889a4",
     "game_malloc_buffer_8c011e9c": "0x8c011e9c"
@@ -28952,10 +29234,10 @@
    "function": "TTecSlicer_ctor_8c137460",
    "language": "c",
    "reference_size": 704,
-   "compiled_size": 700,
-   "differing_lines": 146,
-   "differing_bytes": 617,
-   "provenance": "generator draft (mode bgotoext)",
+   "compiled_size": 656,
+   "differing_lines": 398,
+   "differing_bytes": 663,
+   "provenance": "generator draft (mode extern)",
    "class_header": "src/include/classes/TTecSlicer.h",
    "symbols": {
     "TObjectShared_ctor_8c01d1ec": "0x8c01d1ec",
@@ -29022,21 +29304,6 @@
    "symbols": {
     "operation_8c0541b4": "0x8c0541b4",
     "squared_distance_xz": "0x8c0c5460"
-   }
-  },
-  {
-   "address": "0x8c137d40",
-   "file": "nonmatching/objects/operation_8c137d40.c",
-   "function": "operation_8c137d40",
-   "language": "c",
-   "reference_size": 200,
-   "compiled_size": 200,
-   "differing_lines": 14,
-   "differing_bytes": 11,
-   "provenance": "generator draft (mode bgotoext)",
-   "class_header": null,
-   "symbols": {
-    "operation_8c0541b4": "0x8c0541b4"
    }
   },
   {
@@ -29904,6 +30171,12 @@
    "differing_bytes": 31,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c4d9e20": "0x8c4d9e20",
     "g_8c4d9e24": "0x8c4d9e24"
@@ -29957,6 +30230,12 @@
    "differing_bytes": 65,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TObjCMLoadPlDataReq.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "g_8c3146d8": "0x8c3146d8",
@@ -30373,38 +30652,6 @@
     "operation_8c144a0c": "0x8c144a0c",
     "operation_8c144d8c": "0x8c144d8c",
     "send_code_8c14472c": "0x8c14472c"
-   }
-  },
-  {
-   "address": "0x8c146bf4",
-   "file": "nonmatching/objects/operation_8c146bf4.cpp",
-   "function": "operation_8c146bf4",
-   "language": "c++",
-   "reference_size": 2712,
-   "compiled_size": 3012,
-   "differing_lines": 1486,
-   "differing_bytes": 2896,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "call_8c12c714": "0x8c12c714",
-    "call_8c3abda0": "0x8c3abda0",
-    "call_8c3be280": "0x8c3be280",
-    "check_range_8c01cf68": "0x8c01cf68",
-    "g_8c286300": "0x8c286300",
-    "njPopMatrixEx_8c38ad10": "0x8c38ad10",
-    "njPushMatrix_8c38ade4": "0x8c38ade4",
-    "njScale_8c37e2e4": "0x8c37e2e4",
-    "object_random_fraction": "0x8c04aa9c",
-    "operation_8c01c5f0": "0x8c01c5f0",
-    "operation_8c05b8c0": "0x8c05b8c0",
-    "operation_8c143054": "0x8c143054",
-    "operation_8c1430e0": "0x8c1430e0",
-    "operation_8c144d8c": "0x8c144d8c",
-    "operation_8c18582c": "0x8c18582c",
-    "play_se_8c05fbf8": "0x8c05fbf8",
-    "send_code_8c14472c": "0x8c14472c",
-    "set_stream_mode_8c3ab8f8": "0x8c3ab8f8"
    }
   },
   {
@@ -32051,6 +32298,12 @@
    "differing_bytes": 22,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen"
+    ]
+   },
    "symbols": {
     "call_8c0e2278": "0x8c0e2278",
     "initialize_fields_8c0e24e8": "0x8c0e24e8",
@@ -32288,38 +32541,6 @@
     "operation_8c18833c": "0x8c18833c",
     "play_se_8c05fbf8": "0x8c05fbf8",
     "vector_sub_in_place_8c37f6f0": "0x8c37f6f0"
-   }
-  },
-  {
-   "address": "0x8c15ad68",
-   "file": "nonmatching/objects/TObjVoloptPillar_render_8c15ad68.cpp",
-   "function": "TObjVoloptPillar_render_8c15ad68",
-   "language": "c++",
-   "reference_size": 348,
-   "compiled_size": 348,
-   "differing_lines": 46,
-   "differing_bytes": 60,
-   "provenance": "generator draft (mode switch2ext)",
-   "class_header": null,
-   "symbols": {
-    "call_8c013c58": "0x8c013c58",
-    "call_8c11a920": "0x8c11a920",
-    "call_8c3827d8": "0x8c3827d8",
-    "call_8c3aa716": "0x8c3aa716",
-    "g_8c4dab40": "0x8c4dab40",
-    "g_8c4dab44": "0x8c4dab44",
-    "g_8c4dab48": "0x8c4dab48",
-    "g_8c4dab4c": "0x8c4dab4c",
-    "njPopMatrixEx_8c38ad10": "0x8c38ad10",
-    "njPushMatrixEx_8c38ae68": "0x8c38ae68",
-    "njRotateX_8c37dd28": "0x8c37dd28",
-    "njRotateY_8c37df90": "0x8c37df90",
-    "njScale_8c37e2e4": "0x8c37e2e4",
-    "njTranslate_8c3829bc": "0x8c3829bc",
-    "operation_8c013e74": "0x8c013e74",
-    "operation_8c1086fc": "0x8c1086fc",
-    "reset_state_8c391cc4": "0x8c391cc4",
-    "translate_current_matrix_v_8c382a40": "0x8c382a40"
    }
   },
   {
@@ -33000,6 +33221,12 @@
    "differing_bytes": 12,
    "provenance": "generator draft (mode retflip2)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -33554,10 +33781,10 @@
    "function": "TPhotonLine_update_8c167c24",
    "language": "c",
    "reference_size": 436,
-   "compiled_size": 440,
-   "differing_lines": 88,
-   "differing_bytes": 292,
-   "provenance": "hand pass on a generator draft",
+   "compiled_size": 444,
+   "differing_lines": 120,
+   "differing_bytes": 305,
+   "provenance": "generator draft (mode extern)",
    "class_header": "src/include/classes/TPhotonLine.h",
    "symbols": {
     "call_8c3bdf60": "0x8c3bdf60",
@@ -33673,6 +33900,12 @@
    "differing_bytes": 11,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TPlyItem.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "call_8c18e044": "0x8c18e044",
@@ -33806,6 +34039,12 @@
    "differing_bytes": 6,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "memset_8c12b880": "0x8c12b880"
    }
@@ -33821,6 +34060,12 @@
    "differing_bytes": 25,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c4db400": "0x8c4db400",
     "g_8c4db404": "0x8c4db404",
@@ -34456,6 +34701,12 @@
    "differing_bytes": 153,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c12b00c": "0x8c12b00c",
     "call_8c18e720": "0x8c18e720",
@@ -34500,7 +34751,7 @@
    "compiled_size": 348,
    "differing_lines": 10,
    "differing_bytes": 11,
-   "provenance": "generator draft (mode bgotoext)",
+   "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
@@ -34527,7 +34778,7 @@
    "compiled_size": 416,
    "differing_lines": 2,
    "differing_bytes": 4,
-   "provenance": "generator draft (mode bgotoext)",
+   "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
@@ -35143,6 +35394,12 @@
    "differing_bytes": 65,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c3889a4": "0x8c3889a4",
     "file_load_8c104d00": "0x8c104d00",
@@ -35372,6 +35629,14 @@
    "differing_bytes": 7919,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c17df16": "0x8c17df16",
     "call_8c17e580": "0x8c17e580",
@@ -35419,6 +35684,12 @@
    "differing_bytes": 20,
    "provenance": "generator draft (mode switch2)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c027a24": "0x8c027a24",
     "call_8c36d3ca": "0x8c36d3ca",
@@ -35447,6 +35718,14 @@
    "differing_bytes": 22,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c36d3ca": "0x8c36d3ca",
     "call_8c36d4c0": "0x8c36d4c0",
@@ -35550,6 +35829,12 @@
    "differing_bytes": 25,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c011ed8": "0x8c011ed8",
     "call_8c037eb8": "0x8c037eb8",
@@ -35626,6 +35911,12 @@
    "differing_bytes": 451,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c011ed8": "0x8c011ed8",
     "call_8c18e044": "0x8c18e044",
@@ -35648,105 +35939,6 @@
     "operation_8c2324a0": "0x8c2324a0",
     "operation_8c2324c0": "0x8c2324c0",
     "operation_8c2324e0": "0x8c2324e0"
-   }
-  },
-  {
-   "address": "0x8c17fff4",
-   "file": "nonmatching/objects/operation_8c17fff4.c",
-   "function": "operation_8c17fff4",
-   "language": "c",
-   "reference_size": 2744,
-   "compiled_size": 2804,
-   "differing_lines": 1198,
-   "differing_bytes": 2631,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "bu_check_busy_8c372d98": "0x8c372d98",
-    "call_8c011ed8": "0x8c011ed8",
-    "call_8c027f34": "0x8c027f34",
-    "call_8c17f024": "0x8c17f024",
-    "call_8c18e720": "0x8c18e720",
-    "call_8c2280f0": "0x8c2280f0",
-    "call_8c36d3ca": "0x8c36d3ca",
-    "call_8c36d4c0": "0x8c36d4c0",
-    "call_8c3727a0": "0x8c3727a0",
-    "call_8c372d38": "0x8c372d38",
-    "call_8c372ebc": "0x8c372ebc",
-    "call_8c377d84": "0x8c377d84",
-    "compare_records_8c181968": "0x8c181968",
-    "compare_records_8c1819a8": "0x8c1819a8",
-    "game_free_8c011ec0": "0x8c011ec0",
-    "game_malloc_8c011ecc": "0x8c011ecc",
-    "game_malloc_buffer_8c011e9c": "0x8c011e9c",
-    "get_current_area_8c032b10": "0x8c032b10",
-    "get_game_mode_8c01c25c": "0x8c01c25c",
-    "memcpy_8c12b77c": "0x8c12b77c",
-    "memset_8c12b880": "0x8c12b880",
-    "operation_1c7dd4": "0x8c1c7dd4",
-    "operation_2391f4": "0x8c2391f4",
-    "operation_8c01b9e0": "0x8c01b9e0",
-    "operation_8c035388": "0x8c035388",
-    "operation_8c177a90": "0x8c177a90",
-    "operation_8c17e194": "0x8c17e194",
-    "operation_8c17f210": "0x8c17f210",
-    "operation_8c17f3a8": "0x8c17f3a8",
-    "operation_8c191504": "0x8c191504",
-    "operation_8c19b054": "0x8c19b054",
-    "operation_8c1acbc0": "0x8c1acbc0",
-    "operation_8c232480": "0x8c232480",
-    "operation_8c2324a0": "0x8c2324a0",
-    "operation_8c2324c0": "0x8c2324c0",
-    "operation_8c2324e0": "0x8c2324e0",
-    "save_system_file_8c1818c0": "0x8c1818c0",
-    "visit_hierarchy_10": "0x8c0332a4",
-    "wait_vsync_and_flip_8c380516": "0x8c380516"
-   }
-  },
-  {
-   "address": "0x8c1811a0",
-   "file": "nonmatching/objects/operation_8c1811a0.c",
-   "function": "operation_8c1811a0",
-   "language": "c",
-   "reference_size": 1824,
-   "compiled_size": 1852,
-   "differing_lines": 484,
-   "differing_bytes": 1334,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "bu_check_busy_8c372d98": "0x8c372d98",
-    "call_8c011ed8": "0x8c011ed8",
-    "call_8c027f34": "0x8c027f34",
-    "call_8c17f024": "0x8c17f024",
-    "call_8c18e720": "0x8c18e720",
-    "call_8c36d3ca": "0x8c36d3ca",
-    "call_8c36d4c0": "0x8c36d4c0",
-    "call_8c3727a0": "0x8c3727a0",
-    "call_8c372d38": "0x8c372d38",
-    "call_8c372ebc": "0x8c372ebc",
-    "call_8c377d84": "0x8c377d84",
-    "compare_records_8c181968": "0x8c181968",
-    "compare_records_8c1819a8": "0x8c1819a8",
-    "game_free_8c011ec0": "0x8c011ec0",
-    "game_malloc_8c011ecc": "0x8c011ecc",
-    "game_malloc_buffer_8c011e9c": "0x8c011e9c",
-    "memcpy_8c12b77c": "0x8c12b77c",
-    "memset_8c12b880": "0x8c12b880",
-    "operation_1c7dd4": "0x8c1c7dd4",
-    "operation_8c035388": "0x8c035388",
-    "operation_8c177a90": "0x8c177a90",
-    "operation_8c17e194": "0x8c17e194",
-    "operation_8c17f210": "0x8c17f210",
-    "operation_8c17f3a8": "0x8c17f3a8",
-    "operation_8c19b054": "0x8c19b054",
-    "operation_8c1acbc0": "0x8c1acbc0",
-    "operation_8c232480": "0x8c232480",
-    "operation_8c2324a0": "0x8c2324a0",
-    "operation_8c2324c0": "0x8c2324c0",
-    "operation_8c2324e0": "0x8c2324e0",
-    "save_system_file_8c1818c0": "0x8c1818c0",
-    "wait_vsync_and_flip_8c380516": "0x8c380516"
    }
   },
   {
@@ -36029,6 +36221,14 @@
    "differing_bytes": 18,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -36042,6 +36242,12 @@
    "differing_bytes": 57,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e044": "0x8c18e044",
     "operation_8c01ef40": "0x8c01ef40",
@@ -36146,6 +36352,12 @@
    "differing_bytes": 73,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c1861cc": "0x8c1861cc",
     "g_8c41cb84": "0x8c41cb84",
@@ -36404,6 +36616,12 @@
    "differing_bytes": 69,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TNowLoading.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TLoadingCur_ctor_8c189f84": "0x8c189f84",
     "TObject_ctor_8c0330e4": "0x8c0330e4",
@@ -36428,6 +36646,12 @@
    "differing_bytes": 60,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "call_8c0c5094": "0x8c0c5094",
@@ -36630,6 +36854,12 @@
    "differing_bytes": 241,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TWindowMainMenu.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "g_8c319fc8": "0x8c319fc8"
@@ -36646,6 +36876,12 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TWindowSubAreaMap_ctor_8c1d576c": "0x8c1d576c",
     "TWindowSubComCard_ctor_8c1d24bc": "0x8c1d24bc",
@@ -36690,6 +36926,12 @@
    "differing_bytes": 44,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c0a2858": "0x8c0a2858",
     "call_8c0a29a0": "0x8c0a29a0"
@@ -36799,6 +37041,14 @@
    "differing_bytes": 45,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e4d8": "0x8c18e4d8",
     "call_8c36cd20": "0x8c36cd20",
@@ -36841,7 +37091,7 @@
    "compiled_size": 36,
    "differing_lines": 16,
    "differing_bytes": 40,
-   "provenance": "generator draft (mode bgotoext)",
+   "provenance": "generator draft (mode extern)",
    "class_header": null,
    "symbols": {}
   },
@@ -36884,6 +37134,14 @@
    "differing_bytes": 106,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -36897,6 +37155,12 @@
    "differing_bytes": 141,
    "provenance": "generator draft (mode extern)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -36992,6 +37256,12 @@
    "differing_bytes": 35,
    "provenance": "generator draft (mode switch2ext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -37005,6 +37275,12 @@
    "differing_bytes": 15,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -37702,6 +37978,12 @@
    "differing_bytes": 319,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "g_8c31cb20": "0x8c31cb20",
@@ -37813,6 +38095,14 @@
    "differing_bytes": 425,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "diverged",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ],
+    "first_divergence": "call 9 returns 1 where the original returns 0"
+   },
    "symbols": {
     "call_8c04b3e4": "0x8c04b3e4",
     "call_8c04b428": "0x8c04b428",
@@ -37842,6 +38132,12 @@
    "differing_bytes": 15,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c087120": "0x8c087120",
     "call_8c0871ac": "0x8c0871ac",
@@ -39043,6 +39339,14 @@
    "differing_bytes": 45,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e768": "0x8c18e768",
     "call_8c3889a4": "0x8c3889a4",
@@ -39188,8 +39492,8 @@
    "language": "c",
    "reference_size": 508,
    "compiled_size": 508,
-   "differing_lines": 42,
-   "differing_bytes": 25,
+   "differing_lines": 50,
+   "differing_bytes": 24,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TBoss2Fin.h",
    "symbols": {
@@ -39534,6 +39838,13 @@
    "differing_bytes": 271,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "g_8c32600c": "0x8c32600c",
@@ -41683,6 +41994,12 @@
    "differing_bytes": 1596,
    "provenance": "generator draft (mode uctern)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c18e768": "0x8c18e768",
     "call_8c1c8ce4": "0x8c1c8ce4",
@@ -41707,6 +42024,12 @@
    "differing_bytes": 117,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {}
   },
   {
@@ -41720,6 +42043,12 @@
    "differing_bytes": 2,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_8c207304": "0x8c207304"
    }
@@ -43634,23 +43963,6 @@
    }
   },
   {
-   "address": "0x8c1e04b0",
-   "file": "nonmatching/objects/operation_8c1e04b0.cpp",
-   "function": "operation_8c1e04b0",
-   "language": "c++",
-   "reference_size": 1336,
-   "compiled_size": 1336,
-   "differing_lines": 520,
-   "differing_bytes": 714,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "__ptmf_scall": "0x8c18e6e4",
-    "operation_8c1e25c8": "0x8c1e25c8",
-    "operation_8c20978c": "0x8c20978c"
-   }
-  },
-  {
    "address": "0x8c1e0a34",
    "file": "nonmatching/objects/operation_8c1e0a34.c",
    "function": "operation_8c1e0a34",
@@ -43691,6 +44003,13 @@
    "differing_bytes": 23,
    "provenance": "hand pass on a generator draft",
    "class_header": "src/include/classes/TWindowKeyBoardBase.h",
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c04bc48": "0x8c04bc48",
     "g_8c32b5a0": "0x8c32b5a0",
@@ -43876,6 +44195,13 @@
    "differing_bytes": 8,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c04bdf8": "0x8c04bdf8"
    }
@@ -43891,6 +44217,13 @@
    "differing_bytes": 11,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c04bdf8": "0x8c04bdf8",
     "g_8c467188": "0x8c467188",
@@ -44371,6 +44704,12 @@
    "differing_bytes": 32,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_021f88": "0x8c021f88",
     "operation_8c0257ec": "0x8c0257ec",
@@ -44390,6 +44729,12 @@
    "differing_bytes": 110,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "angle_between_xz": "0x8c0c539c",
     "angle_fraction_step": "0x8c0c4fe0",
@@ -44411,6 +44756,12 @@
    "differing_bytes": 22,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c025c50": "0x8c025c50",
     "compute_default_scale": "0x8c03b4a8",
@@ -44450,6 +44801,12 @@
    "differing_bytes": 38,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_021f88": "0x8c021f88",
     "operation_02c350": "0x8c02c350",
@@ -44469,6 +44826,12 @@
    "differing_bytes": 110,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "angle_between_xz": "0x8c0c539c",
     "angle_fraction_step": "0x8c0c4fe0",
@@ -44490,6 +44853,12 @@
    "differing_bytes": 15,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c025c50": "0x8c025c50",
     "njCos_8c38c154": "0x8c38c154",
@@ -45468,6 +45837,12 @@
    "differing_bytes": 8,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c2069b4": "0x8c2069b4",
     "memset_8c12b880": "0x8c12b880",
@@ -45520,6 +45895,12 @@
    "differing_bytes": 4,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c2e14f0": "0x8c2e14f0",
     "g_8c2e14f3": "0x8c2e14f3",
@@ -45867,6 +46248,12 @@
    "differing_bytes": 264,
    "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c5051e0": "0x8c5051e0",
     "g_8c5051f4": "0x8c5051f4",
@@ -46003,6 +46390,12 @@
    "differing_bytes": 107,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c20af34": "0x8c20af34",
     "g_8c5051e0": "0x8c5051e0",
@@ -47931,6 +48324,12 @@
    "differing_bytes": 325,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TObject_ctor_8c0330e4": "0x8c0330e4",
     "g_8c337d98": "0x8c337d98",
@@ -47963,6 +48362,13 @@
    "differing_bytes": 608,
    "provenance": "hand pass on a generator draft (behaviour reviewed)",
    "class_header": null,
+   "runtime": {
+    "verdict": "diverged",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ],
+    "first_divergence": "RAM differs outside the function (132 bytes in heap/buffers), call I/O equal"
+   },
    "symbols": {
     "backup_render_state": "0x8c0a2d30",
     "call_8c38d81c": "0x8c38d81c",
@@ -47991,6 +48397,12 @@
    "differing_bytes": 114,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c227e10": "0x8c227e10",
     "g_8c506288": "0x8c506288",
@@ -48741,6 +49153,12 @@
    "differing_bytes": 134,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "TAdBack_ctor_8c198294": "0x8c198294",
     "TObject_ctor_8c0330e4": "0x8c0330e4",
@@ -48794,61 +49212,6 @@
     "reset_state_8c391c94": "0x8c391c94",
     "reset_state_8c391cc4": "0x8c391cc4",
     "translate_current_matrix_v_8c382a40": "0x8c382a40"
-   }
-  },
-  {
-   "address": "0x8c2311b4",
-   "file": "nonmatching/objects/operation_8c2311b4.c",
-   "function": "operation_8c2311b4",
-   "language": "c",
-   "reference_size": 288,
-   "compiled_size": 304,
-   "differing_lines": 200,
-   "differing_bytes": 263,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "call_8c12bc48": "0x8c12bc48",
-    "g_8c506560": "0x8c506560",
-    "g_8c506580": "0x8c506580",
-    "g_8c50658c": "0x8c50658c"
-   }
-  },
-  {
-   "address": "0x8c2312d4",
-   "file": "nonmatching/objects/operation_8c2312d4.c",
-   "function": "operation_8c2312d4",
-   "language": "c",
-   "reference_size": 148,
-   "compiled_size": 148,
-   "differing_lines": 60,
-   "differing_bytes": 111,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "call_8c12bc48": "0x8c12bc48",
-    "g_8c506564": "0x8c506564"
-   }
-  },
-  {
-   "address": "0x8c231368",
-   "file": "nonmatching/objects/operation_8c231368.c",
-   "function": "operation_8c231368",
-   "language": "c",
-   "reference_size": 312,
-   "compiled_size": 316,
-   "differing_lines": 192,
-   "differing_bytes": 276,
-   "provenance": "hand pass on a generator draft",
-   "class_header": null,
-   "symbols": {
-    "call_8c12bc48": "0x8c12bc48",
-    "call_8c36c674": "0x8c36c674",
-    "g_8c506568": "0x8c506568",
-    "g_8c506570": "0x8c506570",
-    "g_8c506574": "0x8c506574",
-    "g_8c506578": "0x8c506578",
-    "g_8c50657c": "0x8c50657c"
    }
   },
   {
@@ -48950,6 +49313,14 @@
    "differing_bytes": 16,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "fs_poll_8c378e04": "0x8c378e04"
    }
@@ -48965,6 +49336,14 @@
    "differing_bytes": 81,
    "provenance": "generator draft (mode bgotoext)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "g_8c338cb4": "0x8c338cb4"
    }
@@ -48996,6 +49375,14 @@
    "differing_bytes": 30,
    "provenance": "hand pass on a generator draft (address casts converted to prototypes)",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "syFlash_check_header_8c378cfc": "0x8c378cfc",
     "syFlash_open_partition_8c378bf8": "0x8c378bf8"
@@ -49028,6 +49415,14 @@
    "differing_bytes": 73,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "call_8c233230": "0x8c233230",
     "call_8c2333dc": "0x8c2333dc",
@@ -49497,6 +49892,14 @@
    "differing_bytes": 64,
    "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "equal",
+    "scenarios": [
+     "boot+title+opening movie",
+     "menu to registration screen",
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_2392fc": "0x8c2392fc",
     "operation_239310": "0x8c239310",
@@ -49525,11 +49928,17 @@
    "function": "operation_8c239400",
    "language": "c",
    "reference_size": 168,
-   "compiled_size": 188,
-   "differing_lines": 106,
-   "differing_bytes": 163,
-   "provenance": "generator draft (mode ccastext; address casts converted to prototypes)",
+   "compiled_size": 168,
+   "differing_lines": 124,
+   "differing_bytes": 140,
+   "provenance": "hand pass on a generator draft",
    "class_header": null,
+   "runtime": {
+    "verdict": "unverified",
+    "scenarios": [
+     "offline start: new character to Pioneer 2"
+    ]
+   },
    "symbols": {
     "operation_2394dc": "0x8c2394dc",
     "operation_2395d0": "0x8c2395d0"

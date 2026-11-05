@@ -6,7 +6,7 @@
  * compiled size: 36 bytes (-18.2%)
  * differing lines: 16 of 20 reference instruction lines
  * differing bytes: 40
- * provenance: generator draft (mode bgotoext)
+ * provenance: generator draft (mode extern)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -8 bytes
@@ -17,28 +17,23 @@ typedef struct Vector3 {
     float y;
     float z;
 } Vector3;
-typedef struct S_vv11 S_vv11;
-struct S_vv11 {
+typedef struct S_vv12 S_vv12;
+struct S_vv12 {
     int f00;
 };
 void operation_8c18df6c(void)
 {
-    int v2;
-    int v1;
-    S_vv11 *v11;
-    v11 = (S_vv11 *)(void *)0x8c28460c;
+    int v11;
+    S_vv12 *v12;
     if ((void *)0x8c28460c != 0) {
-        v11 = (S_vv11 *)(void *)0x8c28460c;
+        v12 = (S_vv12 *)(void *)0x8c28460c;
         goto L_8c18df84;
-        v1 = (int)(void *)0x8c28460c;
-        v2 = (int)/* ? r0 */ 0;
 L_8c18df7e:;
-        ((void (*)(void))(v2))();
-        v11 = (S_vv11 *)(v1 + 4);
+        ((void (*)(void))(v11))();
+        v12 = (S_vv12 *)((char *)v12 + 4);
 L_8c18df84:;
-        v1 = (int)v11;
-        v2 = (int)v11->f00;
-        if (v11->f00 != 0) {
+        v11 = (int)v12->f00;
+        if (v11 != 0) {
             goto L_8c18df7e;
         }
     }

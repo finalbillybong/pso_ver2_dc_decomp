@@ -10,6 +10,8 @@
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: callee
  *   signatures, types and control-flow shape are inferred and may be wrong; not proven equivalent
  *   to the original; compiled size differs from the reference by -12 bytes
+ * runtime: DIVERGED on offline start: new character to Pioneer 2 (called 218300 times where the
+ *   original is called 216717 times); known incorrect
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {

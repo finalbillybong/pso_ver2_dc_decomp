@@ -43,7 +43,12 @@ BANNED = [
     (re.compile(r'\(\s*([A-Za-z_]\w*)\s*>=\s*0\s*\?\s*\1\s*:\s*\1\s*\)'), '(v >= 0 ? v : v)'),
 ]
 TODO = re.compile(r'/\*\s*TODO')
-OPTIONAL = ['class header']  # present only when the draft's class has a shared header
+HOLE = re.compile(r'/\*\s*\?')  # `/* ? r3 */`-style register or value holes
+OPTIONAL = ['class header', 'runtime']  # present only when they apply
+# Emulator A/B runs (local tooling; receipts are never committed): the per-draft verdict only.
+RUNTIME_SCENARIOS = ('boot+title+opening movie', 'menu to registration screen',
+                     'offline start: new character to Pioneer 2')
+RUNTIME_VERDICTS = ('equal', 'suspect', 'diverged', 'unverified')
 HEADER_LINE = re.compile(r'^ \* ([a-z ]+): (.*)$')
 CLASSES = 'src/include/classes'
 CLASS_NOTE = '(shared layout for modders; this draft keeps its own local types)'
@@ -117,6 +122,8 @@ def quality_issues(text, entry):
         out.append('compiled size %s is not within 25%% of the reference size %s' % (got, ref))
     if TODO.search(text):
         out.append('contains a /* TODO hole')
+    if HOLE.search(text):
+        out.append('contains a /* ? */ register or value hole')
     code = _strip_comments(text)
     for rx, label in BANNED:
         if rx.search(code):
@@ -191,6 +198,14 @@ def check(root=ROOT):
         for sym in e.get('symbols', {}):
             if sym not in ids and not sym.startswith('_'):  # `_name`: runtime helper the compiler calls implicitly
                 problems.append(where + 'bound symbol %s does not appear in the file' % sym)
+        rt = e.get('runtime')
+        if rt is not None:
+            problems.extend(where + p for p in runtime_issues(rt))
+        if rt is not None and not runtime_issues(rt):
+            if fields.get('runtime') != runtime_line(rt):
+                problems.append(where + 'runtime header line does not match the manifest runtime record')
+        elif fields.get('runtime'):
+            problems.append(where + 'runtime header line without a valid manifest runtime record')
         expected = class_header(root, e.get('function', ''))
         found = (fields.get('class header') or '').split(' ')[0] or None
         if found != expected or e.get('class_header') != expected:
@@ -234,6 +249,69 @@ def class_header(root, func, _cache={}):
         if func.startswith(c + '_'):
             return '%s/%s.h' % (CLASSES, c)
     return None
+
+
+def runtime_line(rt):
+    """The `runtime:` header value for a manifest runtime record."""
+    sc = '; '.join(rt['scenarios'])
+    v = rt['verdict']
+    if v == 'equal':
+        return 'equal on %s (emulator A/B: RAM, trace and first-16-call I/O); not proof' % sc
+    if v == 'suspect':
+        n = rt['bytes_differ']
+        return 'suspect on %s (%d %s, I/O equal); not proof' % (sc, n, 'byte differs' if n == 1 else 'bytes differ')
+    if v == 'diverged':
+        return 'DIVERGED on %s (%s); known incorrect' % (sc, rt['first_divergence'])
+    return 'unverified; replaces a draft that DIVERGED on %s; not yet run' % sc
+
+
+def runtime_issues(rt):
+    if not isinstance(rt, dict) or rt.get('verdict') not in RUNTIME_VERDICTS:
+        return ['runtime verdict must be one of ' + ', '.join(RUNTIME_VERDICTS)]
+    out = []
+    sc = rt.get('scenarios')
+    if not isinstance(sc, list) or not sc or any(x not in RUNTIME_SCENARIOS for x in sc) or len(set(sc)) != len(sc):
+        out.append('runtime scenarios must be distinct names from: ' + '; '.join(RUNTIME_SCENARIOS))
+    want = {'verdict', 'scenarios'} | {'suspect': {'bytes_differ'}, 'diverged': {'first_divergence'}}.get(rt['verdict'], set())
+    if set(rt) != want:
+        out.append('runtime %s record needs exactly the keys %s' % (rt['verdict'], ', '.join(sorted(want))))
+    elif rt['verdict'] == 'suspect' and not (isinstance(rt['bytes_differ'], int) and rt['bytes_differ'] > 0):
+        out.append('runtime bytes_differ must be a positive integer')
+    elif rt['verdict'] == 'diverged':
+        f = rt['first_divergence']
+        if not isinstance(f, str) or not f or '\n' in f or len(f) > 160 or ';' in f:
+            out.append('runtime first_divergence must be one short line')
+    return out
+
+
+def set_runtime_line(text, rt):
+    """Add, update or remove the (possibly wrapped) `runtime:` line of an archived draft's header."""
+    end = text.find('*/')
+    head, rest = text[:end], text[end:]
+    lines, skip = [], False
+    for l in head.split('\n'):
+        if l.startswith(' * runtime:'):
+            skip = True
+            continue
+        if skip and l.startswith(' *   '):
+            continue
+        skip = False
+        lines.append(l)
+    if rt:
+        at = next((i for i, l in enumerate(lines) if l.startswith(' * class header:') or l.startswith(' * compiler:')), len(lines) - 1)
+        lines[at:at] = wrap_field('runtime', runtime_line(rt))
+    return '\n'.join(lines) + rest
+
+
+def wrap_field(key, value, width=100):
+    lines, cur = [], ' * %s: ' % key
+    for w in value.split(' '):
+        if len(cur) + len(w) + 1 > width and cur != ' * %s: ' % key:
+            lines.append(cur.rstrip())
+            cur = ' *   '
+        cur += w + ' '
+    lines.append(cur.rstrip())
+    return lines
 
 
 def set_class_header(text, header):
@@ -296,6 +374,11 @@ def regenerate(root=ROOT, confidence=DEFAULT_CONFIDENCE, sets=DEFAULT_SETS, prun
             changes.append('%s: renamed %s' % (rel, ', '.join('%s -> %s' % kv for kv in sorted(mapping.items()))))
         func = mapping.get(func, func)
         symbols = {mapping.get(s, s): a for s, a in symbols.items()}
+        rt = prev.get('runtime')
+        updated = set_runtime_line(text, rt)
+        if updated != text:
+            changes.append('%s: runtime line %s' % (rel, 'updated' if rt else 'removed'))
+            text = updated
         header = class_header(root, func)
         updated = set_class_header(text, header)
         if updated != text:
@@ -312,6 +395,7 @@ def regenerate(root=ROOT, confidence=DEFAULT_CONFIDENCE, sets=DEFAULT_SETS, prun
                  'reference_size': values['reference_size'], 'compiled_size': values['compiled_size'],
                  'differing_lines': values['differing_lines'], 'differing_bytes': values['differing_bytes'],
                  'provenance': values['provenance'], 'class_header': header,
+                 **({'runtime': rt} if rt else {}),
                  'symbols': dict(sorted(symbols.items()))}
         entries.append(entry)
     entries.sort(key=lambda e: e['address'])

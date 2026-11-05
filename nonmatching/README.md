@@ -7,9 +7,11 @@ source tree for code that the build still takes from generated assembly (the
 
 **Nothing here matches, and nothing here is built.**
 
-The archive currently holds 2,451 drafts: 1,613 hand passes (289 of them with behaviour
-fixes from review) and 838 generator drafts. 1,685 of them compile to exactly the reference
-size, and 433 belong to a class that has a shared header.
+The archive currently holds 2,386 drafts: 1,578 hand passes (282 of them with behaviour
+fixes from review) and 808 generator drafts. 1,658 of them compile to exactly the reference
+size, and 422 belong to a class that has a shared header. 193 carry a runtime verdict from an
+emulator A/B run (184 equal, 1 suspect, 6 diverged, 2 unverified replacements); see
+[Runtime verdicts](#runtime-verdicts).
 
 - No file in this directory is compiled by `tools/project.py`, `tools/verify_source.py` or
   any other build step. The build reads `config/project.json` only, and no draft appears there.
@@ -47,6 +49,8 @@ Every file starts with a comment block in this form:
  * differing bytes: 311
  * provenance: generator draft (mode extern)
  * known gaps: machine-generated from the reviewed listing and not hand-reviewed: ...
+ * runtime: equal on offline start: new character to Pioneer 2 (emulator A/B: RAM, trace and
+ *   first-16-call I/O); not proof
  * class header: src/include/classes/TObjCollision.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
@@ -64,6 +68,8 @@ Every file starts with a comment block in this form:
   `address casts converted to prototypes` means that calls written as casts of raw
   addresses were rewritten as calls to extern prototypes bound by address.
 - **known gaps** lists what is known to be different or unverified.
+- **runtime** appears only when the draft has been run in an emulator A/B test; see
+  [Runtime verdicts](#runtime-verdicts).
 - **class header** appears only when the function belongs to a class that has a shared
   header in `src/include/classes/` (matched by the `<Class>_` prefix of its name). It is a
   pointer for modders. The draft still declares its own local structs, because its code
@@ -76,7 +82,7 @@ A draft enters the archive only if all of these hold:
 
 - it compiles with the pinned compiler and flags;
 - its compiled size is within 25% of the reference size;
-- it has no `/* TODO` holes;
+- it has no `/* TODO` holes and no `/* ? r3 */`-style register or value holes;
 - it uses none of the code-generation steering forms `if (0)`, `if (1)`, `while (0)`,
   `do {} while (0)` or `(v >= 0 ? v : v)`.
 
@@ -85,6 +91,46 @@ preferred when it is at least as close. When a review found behaviour defects in
 generator draft, only the fixed hand revision is eligible. Exact drafts are not archived,
 because they belong in the matching pipeline. A function that already has an admitted unit
 is never archived.
+
+## Runtime verdicts
+
+Some drafts have been run in the Flycast emulator against the original. Each run is an A/B
+test: the same scenario is played twice from the same start, once with the original code
+and once with the draft compiled and placed in the running image instead of the original
+function. Three scripted scenarios are used: `boot+title+opening movie`,
+`menu to registration screen`, and `offline start: new character to Pioneer 2`. The test
+compares three things:
+
+- **RAM**: full memory dumps at fixed frames, outside the draft's own code block, with
+  known timing noise masked;
+- **trace**: the per-frame execution trace;
+- **I/O**: the arguments and return values of the first 16 calls of the function, and its
+  call count.
+
+The verdict for each draft is recorded in the optional `runtime` field of
+`config/nonmatching.json` and in a matching `runtime:` header line:
+
+| Verdict | Header line | Meaning |
+| --- | --- | --- |
+| `equal` | `runtime: equal on <scenarios> (emulator A/B: RAM, trace and first-16-call I/O); not proof` | No difference was seen in the scenarios that called the draft. |
+| `suspect` | `runtime: suspect on <scenarios> (<n> bytes differ, I/O equal); not proof` | Calls matched, but a few RAM bytes differed, such as stack scratch. |
+| `diverged` | `runtime: DIVERGED on <scenarios> (<first divergence>); known incorrect` | The draft behaves differently, e.g. a different return value or call count. |
+| `unverified` | `runtime: unverified; replaces a draft that DIVERGED on <scenarios>; not yet run` | The previous draft diverged, and this next-best draft passing the gate replaced it. It has not been run. |
+
+A draft that no scenario reached has no `runtime` line. What this does **not** show:
+
+- An `equal` verdict covers only the paths those scenarios took, and only the first 16
+  calls are compared argument by argument. It is evidence, not proof of equivalence.
+- Unexercised branches, other game modes, online play and save-file paths are not tested.
+- A verdict belongs to the exact draft that was run. If a draft is replaced, its `runtime`
+  field must be removed or re-measured. Renames do not affect it.
+
+A diverged draft stays in the archive only when no other draft passes the gate. It is kept
+as a reading aid, and its header says it is known to be incorrect.
+
+The emulator tooling, scenario inputs, memory dumps, traces, screenshots and receipts are
+local-only. They come from your own dump and registration and are never committed. Only the
+per-draft verdict is in this repository.
 
 ## Checking and regenerating
 
@@ -95,11 +141,13 @@ python3 -B tools/nonmatching.py regenerate --prune-admitted
 ```
 
 `check` confirms that the manifest and the files agree, that every header is complete,
-that the quality gate holds, that every bound symbol still appears in its file, and that no
+that the quality gate holds, that every bound symbol still appears in its file, that every
+`runtime` record is well formed and agrees with its header line, and that no
 draft overlaps an admitted unit. After a batch admits functions, `regenerate
 --prune-admitted` deletes the drafts those units replaced. After `config/names.json` changes,
 `regenerate` applies the new names to function and callee identifiers (renaming files to
-match), adds or removes the `class header:` line, and rebuilds the manifest from the headers.
+match), adds or removes the `class header:` line, rewrites the `runtime:` line from the
+manifest's `runtime` record (which it preserves), and rebuilds the manifest from the headers.
 
 ## Promoting a draft into `src/`
 

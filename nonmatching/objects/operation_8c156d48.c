@@ -9,6 +9,8 @@
  * provenance: hand pass on a generator draft
  * known gaps: hand-revised from a generator draft; remaining differences not classified; not
  *   proven equivalent to the original
+ * runtime: equal on menu to registration screen (emulator A/B: RAM, trace and first-16-call I/O);
+ *   not proof
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
 typedef struct Vector3 {

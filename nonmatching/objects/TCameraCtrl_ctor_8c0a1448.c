@@ -10,6 +10,8 @@
  * known gaps: hand-revised from a generator draft; review reports remaining differences in
  *   register allocation; review found and fixed behaviour defects of the generator draft; not
  *   proven equivalent to the original
+ * runtime: equal on boot+title+opening movie; menu to registration screen; offline start: new
+ *   character to Pioneer 2 (emulator A/B: RAM, trace and first-16-call I/O); not proof
  * class header: src/include/classes/TCameraCtrl.h (shared layout for modders; this draft keeps its own local types)
  * compiler: CodeWarrior for Dreamcast 2.4, -O2 (the pinned matching compiler); see nonmatching/README.md
  */
