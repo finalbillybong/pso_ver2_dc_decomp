@@ -15,9 +15,9 @@
 | Image coverage (code ranges + typed data) | 43.4995% |
 | Assets extracted from your dump (not reconstructed) | 380,185 bytes in 2 assets (9.1327% of the image) |
 | Assembly (hand-written), not decompiled | 32,738 bytes in 88 units (1.0689% of the code extent) |
-| Fallback assembly for unmatched code, **not decompiled** | 1,768,518 bytes in 4895 units (57.7422% of the code extent) |
-| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,992,285 bytes (95.9013% of the image) |
-| Dump extracts (untyped bytes from your dump, not reconstructed) | 170,627 bytes in 2643 ranges (4.0987% of the image; untyped_bytes 136,571, zero_run 34,062) |
+| Fallback assembly for unmatched code, **not decompiled** | 1,768,160 bytes in 4861 units (57.7306% of the code extent) |
+| Source-buildable with your dump (C, SHC, data, assets and all assembly) | 3,991,927 bytes (95.8927% of the image) |
+| Dump extracts (untyped bytes from your dump, not reconstructed) | 170,985 bytes in 2638 ranges (4.1073% of the image; untyped_bytes 136,921, zero_run 34,064) |
 | Retained reference dependence | 0 bytes |
 | Code-only completion percentage | Unknown |
 | Total game function count | Unknown |
@@ -42,7 +42,7 @@ time, for code that has no matching C yet, only so that more of the image builds
 source; it is replaced by C as matches land and is excluded from the code-range,
 matching and image-coverage figures. See ASM.md.
 
-Exact-build verification recorded: **2026-11-05**. Two fresh
+Exact-build verification recorded: **2026-11-06**. Two fresh
 project builds, exact integrated-image comparison, exact typed-data modules and the
 five-function compiler proof passed. Public CI checks the source-bound checkpoint and host-tool tests;
 it does not access a game dump or recompile the game.
